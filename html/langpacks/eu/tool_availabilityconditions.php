@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['manageplugins'] = 'Kudeatu baldintza-motak';
+$string['manageplugins'] = 'Kudeatu eskuragarritasun-murrizketak';
 $string['pluginname'] = 'Eskuragarritasun-baldintzen kudeaketa';
 $string['privacy:metadata'] = 'Eskuragarritasun-baldintzen kudeaketa pluginak ez du datu pertsonalik biltzen.';

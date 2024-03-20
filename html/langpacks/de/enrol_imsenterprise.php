@@ -39,7 +39,7 @@ $string['createnewcategories_desc'] = 'Wenn das &lt;org&gt;&lt;orgunit&gt;-Eleme
 Wenn keine Kategorie mit dem Namen existiert, wird diese neu als verborgene Kategorie angelegt.';
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';
 $string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer/innen nicht verfügbar ist.';
-$string['createnewusers'] = 'Erstelle neue Nutzerzugänge, wenn Nutzer noch nicht in Moodle registriert';
+$string['createnewusers'] = 'Erstelle neue Nutzerzugänge, wenn Nutzer/innen noch nicht in Moodle registriert';
 $string['createnewusers_desc'] = 'IMS Enterprise-Registrierungsdaten enthalten normalerweise eine Liste von Nutzer/innen. Wenn die Option aktiviert ist, können Konten für Nutzer/innen erstellt werden, die bisher nicht in Moodle gefunden werden.
 
 Nutzer/innen werden zuerst nach ihrer ID-Nummer und dann nach ihrem Moodle-Anmeldenamen gesucht. Kennwörter werden vom IMS-Enterprise-Plugin nicht importiert. Zur Authentifizierung der Nutzer/innen wird die Verwendung eines Authentifizierungs-Plugins empfohlen.';

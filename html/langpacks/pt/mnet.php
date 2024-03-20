@@ -205,7 +205,7 @@ $string['remotecourses'] = 'Disciplinas externo';
 $string['remotehost'] = 'Servidor externo';
 $string['remotehosts'] = 'Servidores externos';
 $string['remoteuser'] = 'Utilizador externo {$a->remotetype}';
-$string['remoteuserinfo'] = 'Utilizador externo {$a->remotetype} - perfil obtido a partir de <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuserinfo'] = 'Perfil obtido de <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'A rede requer a instalação da extensão OpenSSL do PHP';
 $string['restore'] = 'Restaurar';
 $string['returnvalue'] = 'Valor de retorno';

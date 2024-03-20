@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'خطأ عند الاتصال بالمخدم لتحويل الأوقات';
 $string['conditiontitle'] = 'أيام من البدء';
-$string['full_days'] = 'متاح عند يوم <strong>{$a}</strong> بدءاً من تاريخ بدء المساق';
+$string['full_days'] = 'متاح عند يوم <strong>{$a}</strong> بدءاً من تاريخ بدء المقرر الدراسي';
 $string['pluginname'] = 'التقييد حسب مقدار من الأيام من تاريخ البدء';
 $string['short_days'] = 'متاح عند يوم <strong>{$a}</strong>';
 $string['title'] = 'أيام';

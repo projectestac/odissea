@@ -38,4 +38,4 @@ $string['privacy:metadata:profilefield_datetime:userid'] = '日付/時間ユー�
 $string['specifydatedefault'] = 'または特定日付';
 $string['startyear'] = '開始年';
 $string['startyearafterend'] = '開始年は終了年の後に設定できません。';
-$string['wanttime'] = '時間を含みますか?';
+$string['wanttime'] = '時間を含めますか?';

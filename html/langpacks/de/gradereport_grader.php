@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Klicken Sie in dieses Feld, um es zu entfernen';
 $string['ajaxerror'] = 'Fehler';
 $string['ajaxfailedupdate'] = 'Aktualisierung [1] nach [2] nicht möglich';
 $string['ajaxfieldchanged'] = 'Das von Ihnen aktuell bearbeitete Feld hat sich geändert. Möchten Sie den aktualisierten Wert benutzen?';
+$string['editingmode_title'] = 'Bewerterübersicht bearbeiten';
 $string['eventgradereportviewed'] = 'Bewertungsübersicht angezeigt';
 $string['grader:manage'] = 'Bewertungsübersicht verwalten';
 $string['grader:view'] = 'Bewertungsübersicht anzeigen';

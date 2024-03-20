@@ -40,7 +40,7 @@ $string['last_calc_online_session_logout'] = 'نهاية آخر جلسة تسج�
 $string['last_site_access'] = 'آخر نشاط في الموقع';
 $string['last_site_login'] = 'آخر دخول إلى الموقع';
 $string['myattendanceregisteraggregates'] = 'قيم إجماليات تسجيلات حضوري';
-$string['offline_refcourse_duration'] = 'الوقت بدون الاتصال، المساق:';
+$string['offline_refcourse_duration'] = 'الوقت بدون الاتصال، المقرر:';
 $string['offline_sessions_total_duration'] = 'الوقت الإجمالي بدون الاتصال';
 $string['online'] = 'عبر الإنترنت';
 $string['online_offline'] = 'متصل/غير متصل';
@@ -53,5 +53,5 @@ $string['sessions_grandtotal_duration'] = 'الإجمالي الكلي للوق�
 $string['sessiontimeout'] = 'انتهت مهلة الجلسة ذات الاتصال بالإنترنت';
 $string['total_time_offline'] = 'الوقت الإجمالي بدون الاتصال';
 $string['total_time_online'] = 'الوقت الإجمالي مع الاتصال';
-$string['type_category'] = 'كل المساقات في نفس التصنيف';
+$string['type_category'] = 'كل المقررات في نفس التصنيف';
 $string['updating_online_sessions_of'] = 'تحديث جلسات {$a} المتصلة بالإنترنت';

@@ -119,7 +119,7 @@ $string['groupmode_help'] = '* Não há grupos
 
 O modo de grupo definido ao nível da disciplina será o modo predefinido para todas as atividades nessa disciplina. Se o modo de grupo for forçado ao nível da disciplina, o modo de grupo não poderá ser alterado nas atividades.';
 $string['groupmodeforce'] = 'Forçar modo de grupo';
-$string['groupmodeforce_help'] = 'O modo de grupo está forçado para todas as atividades e não pode ser alterado nas atividades.';
+$string['groupmodeforce_help'] = 'O modo de grupo é forçado para todas as atividades e não pode ser alterado nas atividades.';
 $string['groupmy'] = 'Meu grupo';
 $string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo \'{$a}\' já existe nesta disciplina, escolha outro.';

@@ -334,12 +334,12 @@ class haxe_Unserializer {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $DEFAULT_RESOLVER;
 	static $BASE64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:";
@@ -362,7 +362,7 @@ class haxe_Unserializer {
 	function __toString() { return 'haxe.Unserializer'; }
 }
 haxe_Unserializer::$DEFAULT_RESOLVER = _hx_qtype("Type");
-function haxe_Unserializer_0(&$»this, &$buf, &$codes, &$i, &$len, &$rest) {
+function haxe_Unserializer_0(&$Â»this, &$buf, &$codes, &$i, &$len, &$rest) {
 	if($rest >= 2) {
 		return $rest - 1;
 	} else {

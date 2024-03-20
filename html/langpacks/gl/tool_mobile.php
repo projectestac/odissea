@@ -131,6 +131,8 @@ $string['qrcodetypelogin'] = 'Código QR con acceso automático';
 $string['qrcodetypeurl'] = 'Código QR co URL do sitio';
 $string['qrkeyttl'] = 'Duración da clave de autenticación do QR';
 $string['qrkeyttl_desc'] = 'Lapso de tempo durante o que é válido un código QR para o acceso automático.';
+$string['qrsameipcheck'] = 'Autenticación QR comprobación da mesma IP';
+$string['qrsameipcheck_desc'] = 'Se os usuarios deben usar a mesma rede tanto para xerar como para escanear un código QR para iniciar sesión. Desactivalo só se os usuarios informan de problemas co acceso con de QR.';
 $string['qrsiteadminsnotallowed'] = 'Por motivos de seguridade, os administradores do sitio non poden acceder a través do código QR ou se accedeu como outro usuario.';
 $string['readingthisemailgettheapp'] = 'Lendo isto nun correo electrónico? <a href="{$a}">Descargar a apli móbil e recibir notificacións no seu dispositivo móbil</a> .';
 $string['remoteaddons'] = 'Complementos remotos';

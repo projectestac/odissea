@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Table HTML';
-$string['privacy:metadata'] = 'Le plugin format de données HTML n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format de données HTML n’enregistre aucune donnée personnelle.';
 $string['shortname'] = 'HTML';

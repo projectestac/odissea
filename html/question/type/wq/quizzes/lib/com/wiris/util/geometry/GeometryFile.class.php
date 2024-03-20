@@ -91,12 +91,12 @@ class com_wiris_util_geometry_GeometryFile {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $ELEMENTS = "elements";
 	static $CONSTRAINTS = "constraints";
@@ -133,8 +133,8 @@ class com_wiris_util_geometry_GeometryFile {
 					}
 				}
 			}
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$t = $_ex_;
 			{
 				return false;
@@ -144,28 +144,28 @@ class com_wiris_util_geometry_GeometryFile {
 	}
 	function __toString() { return 'com.wiris.util.geometry.GeometryFile'; }
 }
-function com_wiris_util_geometry_GeometryFile_0(&$»this, &$a) {
+function com_wiris_util_geometry_GeometryFile_0(&$Â»this, &$a) {
 	if($a === null) {
 		return 0;
 	} else {
 		return $a->length;
 	}
 }
-function com_wiris_util_geometry_GeometryFile_1(&$»this, &$a) {
+function com_wiris_util_geometry_GeometryFile_1(&$Â»this, &$a) {
 	if($a !== null) {
-		return $»this->getConstraints()->length;
+		return $Â»this->getConstraints()->length;
 	} else {
 		return 0;
 	}
 }
-function com_wiris_util_geometry_GeometryFile_2(&$»this, &$a) {
+function com_wiris_util_geometry_GeometryFile_2(&$Â»this, &$a) {
 	if($a !== null) {
 		return $a->length;
 	} else {
 		return 0;
 	}
 }
-function com_wiris_util_geometry_GeometryFile_3(&$»this, &$a) {
+function com_wiris_util_geometry_GeometryFile_3(&$Â»this, &$a) {
 	if($a !== null) {
 		return $a->length;
 	} else {

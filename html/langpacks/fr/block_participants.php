@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Ajouter un bloc personnes';
 $string['pluginname'] = 'Personnes';
-$string['privacy:metadata'] = 'Le bloc Participants affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Participants affiche seulement des données enregistrées à d’autres endroits.';

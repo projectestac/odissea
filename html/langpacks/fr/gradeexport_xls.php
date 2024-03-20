@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Notes exportées en format XLS';
 $string['pluginname'] = 'Feuille de calcul Excel';
-$string['privacy:metadata'] = 'Le plugin d\'exportation de notes Feuille de calcul Excel n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin d’exportation de notes Feuille de calcul Excel n’enregistre aucune donnée personnelle.';
 $string['timeexported'] = 'Dernier téléchargement depuis ce cours';
-$string['xls:publish'] = 'Publier l\'exportation des notes au format Excel';
+$string['xls:publish'] = 'Publier l’exportation des notes au format Excel';
 $string['xls:view'] = 'Exporter les notes au format Excel';

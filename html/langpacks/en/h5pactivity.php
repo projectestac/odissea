@@ -30,6 +30,7 @@ $string['answer_checked'] = 'Answer checked';
 $string['answer_correct'] = 'Your answer is correct';
 $string['answer_fail'] = 'Incorrect answer';
 $string['answer_incorrect'] = 'Your answer is incorrect';
+$string['answer_noanswer'] = 'None';
 $string['answer_pass'] = 'Correct answer';
 $string['answer_text'] = 'Answer text';
 $string['answer_unchecked'] = 'Answer unchecked';

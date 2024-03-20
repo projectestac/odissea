@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['export'] = 'Exporter';
-$string['exportallnodisc'] = 'Aucun fil de discussion sélectionné pour l\'export';
+$string['exportallnodisc'] = 'Aucun fil de discussion sélectionné pour l’export';
 $string['pluginname'] = 'Exportation des messages';

@@ -202,6 +202,7 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Errore durante l\'aggi
 $string['errorupdatinggradecategoryaggregation'] = 'Errore durante l\'aggiornamento del tipo di aggregazione nella categoria ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Errore durante l\'aggiornamento del coefficiente di aggregazione (peso o credito extra) nella categoria ID {$a->id}';
 $string['eventgradedeleted'] = 'Eliminazione valutazione';
+$string['eventgradeexported'] = 'Esportazione valutazioni';
 $string['eventgradeitemcreated'] = 'Creazione elemento di valutazione';
 $string['eventgradeitemdeleted'] = 'Eliminazione elemento di valutazione';
 $string['eventgradeitemupdated'] = 'Aggiornamento elemento di valutazione';

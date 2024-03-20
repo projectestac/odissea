@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_bookmarks:addinstance'] = 'Gehitu kudeatzailearen markak bloke berria';
-$string['admin_bookmarks:myaddinstance'] = 'Gehitu kudeatzailearen markak bloke berria Aginte-panelean';
-$string['pluginname'] = 'Kudeatzailearen markak';
-$string['privacy:metadata'] = 'Kudeatzailearen markak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
+$string['admin_bookmarks:addinstance'] = 'Gehitu kudeatzailearen laster-markak bloke berria';
+$string['admin_bookmarks:myaddinstance'] = 'Gehitu kudeatzailearen laster-markak bloke berria Aginte-panelean';
+$string['pluginname'] = 'Kudeatzailearen laster-markak';
+$string['privacy:metadata'] = 'Kudeatzailearen laster-markak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_results:addinstance'] = 'Добавлять новый блок «Оценки за элемент курса»';
 $string['bestgrade'] = 'Самая высокая оценка:';
-$string['bestgrades'] = '{$a} самых высоких оценок:';
+$string['bestgrades'] = 'Лучшие оценки ({$a}):';
 $string['bestgroupgrade'] = 'Группа с наивысшим средним:';
 $string['bestgroupgrades'] = 'Группы ({$a}) с наивысшим средним:';
 $string['config_decimalplaces'] = 'Знаков после запятой для отображения';

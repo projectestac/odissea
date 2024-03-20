@@ -130,6 +130,7 @@ $string['coursecompleted'] = 'Курс завершен';
 $string['coursecompletedmessage'] = '<p>Поздравляем!</p> <p>Вы успешно завершили курс  <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Завершение курса';
 $string['coursecompletioncondition'] = 'Условие: {$a}';
+$string['coursecompletionnavigation'] = 'Третичная навигация по завершению курса';
 $string['coursegrade'] = 'Оценка за курс';
 $string['coursesavailable'] = 'Доступные курсы';
 $string['coursesavailableexplaination'] = 'Примечание: состояние завершения курса должно быть установлено для курса в приведенном выше списке.';

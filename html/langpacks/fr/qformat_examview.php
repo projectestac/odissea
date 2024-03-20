@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
-$string['pluginname_help'] = 'Le format Examview permet l\'importation de questions à partir de fichiers XML Examview 4. Pour des versions plus récentes de Examview, le format Blackboard peut être utilisé.';
-$string['privacy:metadata'] = 'Le plugin de format de question Examview n\'enregistre aucune donnée personnelle.';
+$string['pluginname_help'] = 'Le format Examview permet l’importation de questions à partir de fichiers XML Examview 4. Pour des versions plus récentes de Examview, le format Blackboard peut être utilisé.';
+$string['privacy:metadata'] = 'Le plugin de format de question Examview n’enregistre aucune donnée personnelle.';

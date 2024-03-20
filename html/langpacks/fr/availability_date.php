@@ -26,20 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'Erreur lors de la connexion au serveur de conversion du temps';
-$string['description'] = 'Empêcher l\'accès jusqu\'à (ou à partir) d\'une date et heure donnée.';
+$string['description'] = 'Empêcher l’accès jusqu’à (ou à partir) d’une date et heure donnée.';
 $string['direction_before'] = 'Date';
 $string['direction_from'] = 'à partir du';
 $string['direction_label'] = 'Direction';
-$string['direction_until'] = 'jusqu\'au';
-$string['error_dateconflict'] = 'En conflit avec d\'autres restrictions de date';
+$string['direction_until'] = 'jusqu’au';
+$string['error_dateconflict'] = 'En conflit avec d’autres restrictions de date';
 $string['full_from'] = 'La date soit postérieure au <strong>{$a}</strong>';
 $string['full_from_date'] = 'La date soit postérieure ou égale au <strong>{$a}</strong>';
 $string['full_until'] = 'La date soit antérieure au <strong>{$a}</strong>';
 $string['full_until_date'] = 'La date soit antérieure ou égale au <strong>{$a}</strong>';
 $string['pluginname'] = 'Restriction par date';
-$string['privacy:metadata'] = 'Le plugin Restriction par date n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Restriction par date n’enregistre aucune donnée personnelle.';
 $string['short_from'] = 'Disponible à partir du <strong>{$a}</strong>';
 $string['short_from_date'] = 'Disponible à partir du <strong>{$a}</strong>';
-$string['short_until'] = 'Disponible jusqu\'au <strong>{$a}</strong>';
-$string['short_until_date'] = 'Disponible jusqu\'à minuit le <strong>{$a}</strong>';
+$string['short_until'] = 'Disponible jusqu’au <strong>{$a}</strong>';
+$string['short_until_date'] = 'Disponible jusqu’à minuit le <strong>{$a}</strong>';
 $string['title'] = 'Date';

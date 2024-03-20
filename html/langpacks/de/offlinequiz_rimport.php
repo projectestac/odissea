@@ -62,6 +62,7 @@ $string['newformsinqueue'] = '{$a} Antwortbögen warten auf Auswertung.';
 $string['pluginname'] = 'Offline-Test Ergebnis-Auswertung';
 $string['privacy:metadata'] = 'Dieses Plugin speichert keine personenbezogenen Daten.';
 $string['processingformsinqueue'] = '{$a} Antwortbögen werden gerade ausgewertet';
+$string['scanerrorlistnumber'] = 'Die Listennummer scheint außerhalb des Bereichs zu liegen. Bitte überprüfen Sie das gescannte Formular auf Barcode-Unregelmäßigkeiten für den Listennummerncode (rechte untere Ecke) und scannen Sie dieses ggf. erneut mit höherer Auflösung!';
 $string['showpage'] = 'Seite anzeigen';
 $string['username'] = 'Benutzername';
 $string['waitingforanalysis'] = 'Wartet auf Auswertung';

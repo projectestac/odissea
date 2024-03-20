@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Grégorien';
 $string['pluginname'] = 'Type de calendrier grégorien';
-$string['privacy:metadata'] = 'Le plugin format de calendrier Grégorien n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format de calendrier Grégorien n’enregistre aucune donnée personnelle.';

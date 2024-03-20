@@ -12,8 +12,8 @@ class com_wiris_quizzes_wrap_QuestionRequestWrap implements com_wiris_quizzes_ap
 			$r = $this->impl->serialize();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -27,8 +27,8 @@ class com_wiris_quizzes_wrap_QuestionRequestWrap implements com_wiris_quizzes_ap
 			$res = $this->impl->isEmpty();
 			$this->wrapper->stop();
 			return $res;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -41,8 +41,8 @@ class com_wiris_quizzes_wrap_QuestionRequestWrap implements com_wiris_quizzes_ap
 			$this->wrapper->start();
 			$this->impl->addMetaProperty($name, $value);
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -55,12 +55,12 @@ class com_wiris_quizzes_wrap_QuestionRequestWrap implements com_wiris_quizzes_ap
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	function __toString() { return 'com.wiris.quizzes.wrap.QuestionRequestWrap'; }
 }

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['additionaldelimiters'] = 'Délimiteurs d\'équation supplémentaires';
+$string['additionaldelimiters'] = 'Délimiteurs d’équation supplémentaires';
 $string['additionaldelimiters_help'] = 'Le filtre MathJax détecte dans le texte les équations entre certains délimiteurs.
 
 La liste des délimiteurs reconnus peut être complétée ici (p. ex. AsciiMath utilise `). Les délimiteurs peuvent être constitués de plusieurs caractères, et différents délimiteurs peuvent être indiqués, séparés par des virgules.';
@@ -35,11 +35,11 @@ $string['httpsurl_help'] = 'URL complète vers la bibliothèque MathJax.';
 $string['localinstall'] = 'Installation MathJax locale';
 $string['localinstall_help'] = 'La configuration par défaut de MathJax utilise la version CDN de MathJax, mais MathJax peut être installé en local si nécessaire, par exemple pour économiser la bande passante ou en raison de restrictions locales de proxy.
 
-Pour utiliser une installation locale de MathJax, veuillez d\'abord télécharger la bibliothèque complète de MathJax sur https://www.mathjax.org/, puis l\'installer sur un serveur web. Pour terminer, modifiez les paramètres httpurl et/ou httpsurl de la configuration du filtre MathJax de façon à les faire pointer vers l\'URL locale du fichier MathJax.js.';
+Pour utiliser une installation locale de MathJax, veuillez d’abord télécharger la bibliothèque complète de MathJax sur https://www.mathjax.org/, puis l’installer sur un serveur web. Pour terminer, modifiez les paramètres httpurl et/ou httpsurl de la configuration du filtre MathJax de façon à les faire pointer vers l’URL locale du fichier MathJax.js.';
 $string['mathjaxsettings'] = 'Configuration MathJax';
 $string['mathjaxsettings_desc'] = 'La configuration MathJax par défaut devrait être adéquate pour la plupart des utilisateurs. Cependant, MathJax possède de nombreuses possibilités de configurations standards, qui peuvent être ajoutées ici.';
-$string['privacy:metadata'] = 'Le plugin Mathjax n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Mathjax n’enregistre aucune donnée personnelle.';
 $string['texfiltercompatibility'] = 'Compatibilité filtre TeX';
 $string['texfiltercompatibility_help'] = 'Le filtre MathJax peut être utilisé en remplacement du filtre TeX.
 
-Pour supporter tous les délimiteurs du filtre TeX, MathJax sera configuré de sorte à afficher les équations dans le corps du texte à l\'aide de TeX.';
+Pour supporter tous les délimiteurs du filtre TeX, MathJax sera configuré de sorte à afficher les équations dans le corps du texte à l’aide de TeX.';

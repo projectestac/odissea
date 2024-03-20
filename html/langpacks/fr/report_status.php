@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Statut du système';
-$string['privacy:metadata'] = 'Ce plugin n\'enregistre aucune donnée personnelle';
+$string['privacy:metadata'] = 'Ce plugin n’enregistre aucune donnée personnelle';
 $string['status:view'] = 'Consulter le statut du système';

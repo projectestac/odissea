@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verrouillage de fichiers';
-$string['privacy:metadata'] = 'Le plugin Verrouillage de fichier n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Verrouillage de fichier n’enregistre aucune donnée personnelle.';

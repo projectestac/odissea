@@ -208,7 +208,7 @@ $string['hide'] = 'Alles samenklappen';
 $string['httpwarning'] = 'Gegevens die gedownload worden van deze site zijn mogelijk niet geëncrypteerd. Contacteer je systeembeheerder en vraag om SSL te installeren op deze site.';
 $string['inherit'] = 'Overerven';
 $string['lawfulbases'] = 'Wettelijke basis';
-$string['lawfulbases_help'] = 'Selecteer minstens één optie die als wettelijke basis dient voor het verwerken van persoonlijke gegevens. Voor details over deze wettelijke basis, zie <a href="https://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm" target=_blank">AVG Art. 6.1</a>';
+$string['lawfulbases_help'] = 'Selecteer minstens één optie die als wettelijke basis dient voor het verwerken van persoonlijke gegevens. Voor details over deze wettelijke basis, zie <a href="https://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm" target="_blank">AVG Art. 6.1</a>';
 $string['markcomplete'] = 'Markeer als voltooid';
 $string['markedcomplete'] = 'Uw aanvraag is door de privacy officer als voltooid gemarkeerd.';
 $string['message'] = 'Bericht';

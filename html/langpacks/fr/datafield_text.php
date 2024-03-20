@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Texte court';
 $string['pluginname'] = 'Texte court';
-$string['privacy:metadata'] = 'Le composant Champ texte court n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['privacy:metadata'] = 'Le composant Champ texte court n’enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
 $string['sample'] = 'Ceci est un texte court';

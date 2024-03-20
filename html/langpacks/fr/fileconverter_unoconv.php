@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pathtounoconv'] = 'Chemin d\'accès du convertisseur de documents <em>unoconv</em>';
-$string['pathtounoconv_help'] = 'Chemin d\'accès du programme « unoconv ». Ce programme permet de convertir les documents d\'un format supporté par LibreOffice à un autre. Ce réglage est optionnel. Cependant, s\'il est renseigné correctement, Moodle utilisera ce programme pour convertir automatiquement les documents au besoin. Notamment, cette fonctionnalité est utilisée pour permettre l\'annotation PDF des devoirs avec un plus grand nombre de types de fichiers.';
+$string['pathtounoconv'] = 'Chemin d’accès du convertisseur de documents <em>unoconv</em>';
+$string['pathtounoconv_help'] = 'Chemin d’accès du programme « unoconv ». Ce programme permet de convertir les documents d’un format supporté par LibreOffice à un autre. Ce réglage est optionnel. Cependant, s’il est renseigné correctement, Moodle utilisera ce programme pour convertir automatiquement les documents au besoin. Notamment, cette fonctionnalité est utilisée pour permettre l’annotation PDF des devoirs avec un plus grand nombre de types de fichiers.';
 $string['pluginname'] = 'Unoconv';
-$string['privacy:metadata'] = 'Le plugin format de données Unoconv n\'enregistre aucune donnée personnelle.';
-$string['test_unoconv'] = 'Tester le chemin d\'accès à <em>unoconv</em>';
-$string['test_unoconvdoesnotexist'] = 'Le chemin d\'accès à <em>unoconv</em> ne pointe pas vers le programme correct. Veuillez contrôler le réglage.';
+$string['privacy:metadata'] = 'Le plugin format de données Unoconv n’enregistre aucune donnée personnelle.';
+$string['test_unoconv'] = 'Tester le chemin d’accès à <em>unoconv</em>';
+$string['test_unoconvdoesnotexist'] = 'Le chemin d’accès à <em>unoconv</em> ne pointe pas vers le programme correct. Veuillez contrôler le réglage.';
 $string['test_unoconvdownload'] = 'Télécharger le fichier PDF de test.';
-$string['test_unoconvempty'] = 'Le chemin d\'accès à <em>unoconv</em> n\'est pas défini. Veuillez contrôler ce réglage.';
-$string['test_unoconvisdir'] = 'Le chemin d\'accès à <em>unoconv</em> pointe vers un dossier. Veuillez inclure le nom du programme dans le chemin indiqué.';
+$string['test_unoconvempty'] = 'Le chemin d’accès à <em>unoconv</em> n’est pas défini. Veuillez contrôler ce réglage.';
+$string['test_unoconvisdir'] = 'Le chemin d’accès à <em>unoconv</em> pointe vers un dossier. Veuillez inclure le nom du programme dans le chemin indiqué.';
 $string['test_unoconvnotestfile'] = 'Le document de test à convertir en PDF est manquant.';
-$string['test_unoconvnotexecutable'] = 'Le chemin d\'accès à <em>unoconv</em> pointe vers un programme qui n\'est pas exécutable.';
-$string['test_unoconvok'] = 'Le chemin d\'accès à <em>unoconv</em> est configuré adéquatement.';
-$string['test_unoconvversionnotsupported'] = 'La version installée de <em>unoconv</em> n\'est pas supportée.';
+$string['test_unoconvnotexecutable'] = 'Le chemin d’accès à <em>unoconv</em> pointe vers un programme qui n’est pas exécutable.';
+$string['test_unoconvok'] = 'Le chemin d’accès à <em>unoconv</em> est configuré adéquatement.';
+$string['test_unoconvversionnotsupported'] = 'La version installée de <em>unoconv</em> n’est pas supportée.';

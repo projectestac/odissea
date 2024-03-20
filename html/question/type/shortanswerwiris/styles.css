@@ -17,3 +17,8 @@ div.rightanswer .wrsUI_app.wrsUI_graph {
     max-width: 800px;
     height: 453px;
 }
+
+div .answer .wrsUI_quizzesAnswerField .wrsUI_mathTypeComponent .wrsUI_inlineMathEditor {
+    display: flex;
+    flex-direction: row;
+}

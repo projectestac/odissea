@@ -114,7 +114,7 @@ $string['auth_ntlmsso_type'] = 'Método de autenticação configurado no servido
 $string['auth_ntlmsso_type_key'] = 'Tipo de autenticação';
 $string['cannotmaprole'] = 'O papel "{$a->rolename}" não pode ser mapeado porque o nome curto "{$a->shortname}" é muito longo ou contém hifens. Para permitir que seja mapeado, o nome curto precisa se ser reduzido para {$a->charlimit} caracteres ou remover os hifens. <a href="{$a->link}">Edite o papel aqui</a>';
 $string['connectingldap'] = 'A ligar ao servidor LDAP…';
-$string['connectingldapsuccess'] = 'A ligação ao servidor LDAP foi bem sucedida';
+$string['connectingldapsuccess'] = 'A ligação ao servidor LDAP foi bem-sucedida';
 $string['creatingtemptable'] = 'A criar tabela temporária {$a}';
 $string['diag_contextnotfound'] = 'O contexto {$a} não existe ou não pode ser lido pelo DN de ligação.';
 $string['diag_emptycontext'] = 'Encontrado contexto vazio.';
@@ -153,7 +153,7 @@ $string['rootdseerror'] = 'Erro ao comunicar com rootDSE para Ative Directory';
 $string['start_tls'] = 'Usar o serviço LDAP normal (porta 389) com encriptação TLS';
 $string['start_tls_key'] = 'Usar TLS';
 $string['syncroles'] = 'Sincronizar papéis do sistema desde LDAP';
-$string['synctask'] = 'Tarefa de sincronização dos utilizadores do LDAP';
+$string['synctask'] = 'Sincronização de utilizadores LDAP';
 $string['systemrolemapping'] = 'Mapeamento de papéis do sistema';
 $string['updatepasserror'] = 'Erro na função user_update_password() com código  {$a->errno} e mensagem " {$a->errstring} "';
 $string['updatepasserrorexpire'] = 'Erro na função user_update_password() ao ler o momento de expiração da senha. Código do erro: {$a->errno}; Mensagem do erro: {$a->errstring}';

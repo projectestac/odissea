@@ -26,18 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anunexpectederroroccured'] = 'Une erreur inconnue est survenue';
-$string['cannotassigntoconstant'] = 'Impossible d\'affecter à la constante « {$a} »';
+$string['cannotassigntoconstant'] = 'Impossible d’affecter à la constante « {$a} »';
 $string['cannotredefinebuiltinfunction'] = 'Impossible de redéfinir la fonction pré-installée « {$a}() »';
 $string['divisionbyzero'] = 'Division par zéro';
 $string['expectingaclosingbracket'] = 'Parenthèse fermante attendue';
 $string['illegalcharactergeneral'] = 'Caractère illégal « {$a} »';
 $string['illegalcharacterunderscore'] = 'Caractère illégal « _ »';
-$string['implicitmultiplicationnotallowed'] = 'Opérateur attendu. La multiplication implicite n\'est pas autorisée.';
+$string['implicitmultiplicationnotallowed'] = 'Opérateur attendu. La multiplication implicite n’est pas autorisée.';
 $string['internalerror'] = 'Erreur interne';
-$string['operatorlacksoperand'] = 'L\'opérateur « {$a} » n\'a pas d\'opérande';
+$string['operatorlacksoperand'] = 'L’opérateur « {$a} » n’a pas d’opérande';
 $string['undefinedvariable'] = 'Variable non définie « {$a} »';
 $string['undefinedvariableinfunctiondefinition'] = 'Variable non définie « {$a} » dans la définition de la fonction';
 $string['unexpectedclosingbracket'] = 'Parenthèse fermante superflue';
 $string['unexpectedcomma'] = 'Virgule superflue';
 $string['unexpectedoperator'] = 'Opérateur « {$a} » superflu';
-$string['wrongnumberofarguments'] = 'Nombre d\'arguments incorrect ({$a->given} donnés, {$a->expected} attendus)';
+$string['wrongnumberofarguments'] = 'Nombre d’arguments incorrect ({$a->given} donnés, {$a->expected} attendus)';

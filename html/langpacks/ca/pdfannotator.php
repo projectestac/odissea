@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['author'] = 'Autor/a';
 $string['edit'] = 'Edita';
 $string['fullscreen'] = 'Pantalla completa';
 $string['markasread'] = 'Marca com a llegit';

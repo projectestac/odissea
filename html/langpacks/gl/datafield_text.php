@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Campo de texto';
 $string['pluginname'] = 'Entrada de texto';
 $string['privacy:metadata'] = 'O compoñente de campo de texto non almacena ningún dato persoal, usa táboas definidas en mod_data.';
+$string['sample'] = 'Este é un texto breve';

@@ -44,6 +44,8 @@ A nota predefinida de toda a pergunta é a soma de todas as notas das partes.
 Nota: Se o campo da nota desta parte for deixado em branco, a parte será excluída quando a pergunta for guardada.';
 $string['answermulti'] = 'Resposta à parte {$a->part}';
 $string['answerno'] = 'Parte {$a}';
+$string['answernotunique'] = 'Existem outras respostas corretas.';
+$string['answernotunique_help'] = 'Se ativar esta opção, o aluno verá "Uma resposta correta é: ..." em vez de "Resposta correta é: ..." quando rever a tentativa.';
 $string['answersingle'] = 'Resposta';
 $string['answertype'] = 'Tipo de resposta';
 $string['answertype_help'] = 'Existem quatro tipos de resposta.
@@ -197,6 +199,7 @@ $string['subqtext_help'] = 'Os campos de texto e os campos de resposta podem ser
 Os <tt>{_0}, {_1}, {_2}</tt> são os campos de entrada para valores e o <tt> {_u} </tt> é o campo de entrada para a unidade.
 
 Todos os campos em falta são anexados automaticamente no final do texto da parte. Um caso especial é quando <tt>{_0}, {_u}</tt> são especificados consecutivamente e há apenas uma campo de resposta e unidade, ou seja, <tt>{_0}{_u}</tt>, serão combinados num único e longo campo de entrada da resposta para a resposta e unidade.';
+$string['uniquecorrectansweris'] = 'Resposta correta é: {$a}';
 $string['unit'] = 'Unidade';
 $string['unitpenalty'] = 'Desconto por unidade errada (0-1) *';
 $string['unitpenalty_help'] = 'Esta opção especifica o valor de penalização ao aluno por uma unidade errada.

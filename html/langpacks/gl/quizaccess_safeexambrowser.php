@@ -32,6 +32,7 @@ $string['allowedbrowserkeyssyntax'] = 'Ten que escribir a lista de teclas permit
 $string['allowedkeys_adv'] = 'As teclas son una configuración avanzada';
 $string['allowedkeys_adv_desc'] = 'Se esta opción está activada, a lista de teclas permitidas do navegador é un campo avanzado no formulario de configuración da proba.';
 $string['pluginname'] = 'Regra de acceso á proba co navegador seguro de exame';
+$string['privacy:metadata'] = 'O complemento de Regra de acceso para Navegador de exame seguro non almacena ningún dato persoal.';
 $string['safebrowserdownloadurl'] = 'URL para descargar o navegador seguro de exame';
 $string['safebrowserdownloadurl_desc'] = 'Se escribe aquí un URL, informaráselle aos usuarios que poden descargar a versión requirida do navegador seguro de exame desde alí.';
 $string['safebrowsermustbeused'] = 'Ten que empregar unha versión aprobada do navegador seguro de exame para tentar esta proba.';

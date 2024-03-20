@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Service de proxy d\'outil';
-$string['privacy:metadata'] = 'Le plugin Service de proxy d\'outil n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Service de proxy d’outil';
+$string['privacy:metadata'] = 'Le plugin Service de proxy d’outil n’enregistre aucune donnée personnelle.';

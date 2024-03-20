@@ -27,8 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addlanguage'] = 'Gehitu hizkuntza eskuz';
 $string['addlanguage_desc'] = 'Aukera hau hautatzen baduzu, hizkuntzak eskuz gehitu ahalko dituzu hizkuntzari dagokion ISO kodea azpiko testu-kutxan sartuta. Bestela, Hizkuntza-paketeak atalean gutxienez 2 hizkuntza instalatuta izan beharko dituzu.';
-$string['fallbackspantag'] = 'Onartu &lt;span&gt; etiketak';
-$string['fallbackspantag_desc'] = '{mlang} sintaxiaz gain baimendu ohiko &lt;span class="multilang"&gt; etiketak erabiltzea.';
 $string['helplinktext'] = 'Eduki eleaniztuna (2.bertsioa)';
 $string['highlight'] = 'Nabarmendu bereizleak';
 $string['highlight_desc'] = 'Bisualki nabarmendu WYSIWYG editorean eduki eleaniztunaren bereizleak ({mlang XX} eta {mlang} erakoak).';
@@ -52,7 +50,9 @@ $string['language_options_desc'] = 'Aukeratu Hizkuntza botoian zabaltzen den men
 $string['language_setting'] = 'Hizkuntza botoiaren ezarpenak';
 $string['languageoptions'] = 'Hizkuntza';
 $string['multilang2:desc'] = 'Eduki eleaniztuna gehitzen laguntzen du (aurretik eduki eleaniztuna (2.bertsioa) iragazkia gaituta izan behar duzu)';
+$string['multilang2:langTagsInSelection'] = 'Aukeratutako testuak hizkuntza-etiketak dauzka. Egin klik etiketa batean etiketa hori aukeratzeko.';
 $string['multilang2:language'] = 'Hizkuntza';
+$string['multilang2:multiBlockElements'] = 'Aukeratutako testuak hainbat paragrafo/bloke barne hartzen ditu. Aukeratu bakar bat, mesedez.';
 $string['multilang2:other'] = 'Besteak';
 $string['multilang2:removetag'] = 'Kendu hizkuntza etiketa';
 $string['multilang2:viewlanguagemenu'] = 'Ikusi hizkuntzen aukera-menua TinyMCE editorean';
@@ -61,6 +61,5 @@ $string['privacy:metadata'] = 'Tiny editorearentzako eduki eleaniztuna (2.bertsi
 $string['removealltags'] = 'Kendu hizkuntza etiketa guztiak';
 $string['requiremultilang2'] = 'Behartu Eduki eleaniztuna (2.bertsioa) iragazkia';
 $string['requiremultilang2_desc'] = 'Gaituz gero, hizkuntzen aukera-menua soilik egongo da ikusgai Eduki eleaniztuna (2.bertsioa) iragazkia gaituta badago.';
-$string['settings'] = 'Tiny editorearentzako eduki eleaniztunaren (2.bertsioa) ezarpenak';
 $string['showalllangs'] = 'Erakutsi hizkuntza guztiak';
 $string['showalllangs_desc'] = 'Gaituz gero, hizkuntzen aukera-menuak Moodlek onartzen dituen hizkuntza guztiak erakutsiko ditu. Bestela, soilik gune honetan instalatuta eta gaituta dauden hizkuntzak erakutsiko dira.';

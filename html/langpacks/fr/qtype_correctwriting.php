@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['parseerror'] = 'Erreur lors de l\'analyse ! Veuillez re-vérifier votre réponse et la corriger';
+$string['parseerror'] = 'Erreur lors de l’analyse ! Veuillez re-vérifier votre réponse et la corriger';
 $string['pluginname_link'] = 'question/type/correctwriting';

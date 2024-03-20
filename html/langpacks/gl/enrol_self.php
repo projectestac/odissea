@@ -95,6 +95,7 @@ De se especificar unha chave, a calquera usuario que tente matricularse no curso
 $string['passwordinvalid'] = 'Chave para matriculación incorrecta, ténteo outra vez';
 $string['passwordinvalidhint'] = 'A chave utilizada é incorrecta, ténteo outra vez<br />
 (Consello: Comeza por «{$a}»)';
+$string['passwordmatchesgroupkey'] = 'Enrolment key matches an existing group enrolment key';
 $string['pluginname'] = 'Automatriculación';
 $string['pluginname_desc'] = 'O engadido de automatriculación permítelle aos usuarios escoller en que cursos queren participar. Os cursos poden estar protexidos por unha chave de matriculación. Internamente a matriculación faise por medio do engadido de matriculación manual que ten que estar activado en tal curso.';
 $string['privacy:metadata'] = 'O engadido de automatriculación non almacena ningún dato persoal.';

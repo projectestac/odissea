@@ -10,8 +10,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$this->quizzes = com_wiris_quizzes_impl_QuizzesImpl::getInstance();
 			$this->setReferrerPHP();
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -51,8 +51,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = $this->quizzes->getResourceUrl($name);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -66,8 +66,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_ConfigurationWrap($this->quizzes->getConfiguration());
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -81,8 +81,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_MathFilterWrap($this->quizzes->getMathFilter());
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -96,8 +96,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuizzesServiceWrap($this->quizzes->getQuizzesService());
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -115,8 +115,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newFeedbackRequest($html, $instance));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -136,8 +136,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newMultipleAnswersGradeRequest($correctAnswers, $studentAnswers));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -151,8 +151,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newSimpleGradeRequest($correctAnswer, $studentAnswer));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -170,8 +170,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newGradeRequest($instance));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -189,8 +189,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newVariablesRequestWithQuestionData($html, $instance));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -208,8 +208,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->quizzes->newVariablesRequest($html, $instance));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -227,8 +227,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionInstanceWrap($this->quizzes->readQuestionInstance($xml, $question));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -242,8 +242,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionWrap($this->quizzes->readQuestion($xml));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -261,8 +261,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionInstanceWrap($this->quizzes->newQuestionInstance($question));
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -276,8 +276,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuestionWrap($this->quizzes->newQuestion());
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -291,8 +291,8 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 			$r = new com_wiris_quizzes_wrap_QuizzesComponentBuilderWrap($this->quizzes->getQuizzesComponentBuilder());
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -305,12 +305,12 @@ class com_wiris_quizzes_wrap_QuizzesWrap extends com_wiris_quizzes_api_Quizzes {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $wrap;
 	static function getInstance() {

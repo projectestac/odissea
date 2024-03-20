@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['placeholder'] = 'Qu\'avez-vous besoin de faire ?';
+$string['placeholder'] = 'Qu’avez-vous besoin de faire ?';
 $string['pluginname'] = 'Ma liste de tâches personnelle';
 $string['todo:myaddinstance'] = 'Ajouter un nouveau bloc « Ma liste de tâches personnelle »';

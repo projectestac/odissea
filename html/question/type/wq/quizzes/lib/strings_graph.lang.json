@@ -96,6 +96,9 @@
 		"tt_download": "${tt_download}",
 		"tt_settingsSection": "${tt_settings}",
 		"tt_settings": "${tt_settings}",
+		"tt_showHiddenElements": "${tt_showHiddenElements}",
+		"tt_hideElement": "${tt_hideElement}",
+		"tt_restoreInitialContent": "${tt_restoreInitialContent}",
 
 		"tt_view": "${tt_view}",
 		"tt_maximize": "${tt_maximize}",

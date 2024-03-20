@@ -3,7 +3,7 @@
 class com_wiris_quizzes_api_QuizzesConstants {
 	public function __construct() { 
 	}
-	static function __meta__() { $»args = func_get_args(); return call_user_func_array(self::$__meta__, $»args); }
+	static function __meta__() { $Â»args = func_get_args(); return call_user_func_array(self::$__meta__, $Â»args); }
 	static $__meta__;
 	static $OPTION_RELATIVE_TOLERANCE = "relative_tolerance";
 	static $OPTION_TOLERANCE = "tolerance";

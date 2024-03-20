@@ -63,6 +63,7 @@ $string['completion_setby:auto:todo'] = 'Para facer: {$a->condition} (estabeleci
 $string['completion_setby:manual:done'] = '{$a->activityname} está marcado por {$a->setby} como feito. Prema para desfacer.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} está marcado por {$a->setby} como non feito. Prema para marcar como feito.';
 $string['completionrequirements'] = 'Requisitos de completado para {$a}';
+$string['courseaccess'] = 'Acceso ao curso';
 $string['coursealreadyfinished'] = 'Curso xa rematado';
 $string['coursecontentnotification'] = 'Enviar unha notificación de cambio de contido';
 $string['coursecontentnotification_help'] = 'Marque a caixa para notificarlle aos participantes do curso esta actividade ou recurso novo ou modificado. Só recibirán a notificación os usuarios que poidan acceder á actividade ou recurso.';
@@ -72,6 +73,7 @@ $string['coursecontentnotifupdate'] = '{$a->coursename} ten cambios no seu conti
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> foi modificado no curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambie as súas preferencias de notificación</a></p>';
 $string['coursenotyetfinished'] = 'O curso aínda non rematou';
 $string['coursenotyetstarted'] = 'O curso aínda non comezou';
+$string['courseparticipants'] = 'Participantes no curso';
 $string['coursetoolong'] = 'O curso é longo de máis';
 $string['customfield_islocked'] = 'Bloqueado';
 $string['customfield_islocked_help'] = 'Se o campo está bloqueado, só os usuarios con capacidade para cambiar os campos personalizados bloqueados (por omisión usuarios só co rol de xestor predeterminado) poderán cambialo nos axustes do curso.';
@@ -81,6 +83,7 @@ $string['customfield_visibility_help'] = 'Este axuste determina quen pode ver o 
 $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Profesores';
 $string['customfieldsettings'] = 'Axustes comúns dos campos personalizados do curso';
+$string['daystakingcourse'] = 'Días de curso';
 $string['downloadcontent'] = 'Incluír na descarga de contidos do curso';
 $string['downloadcontent_help'] = 'Esta actividade ou recurso debería incluírse no ficheiro zip do contido do curso dispoñíbel para descargar? O ficheiro, o cartafol, a páxina e a etiqueta pódense descargar completamente. Para todas as demais actividades e recursos, só se descargan o nome e a descrición. Esta opción require que a descarga de contido do curso estea activada na configuración do curso.
 
@@ -94,6 +97,7 @@ $string['favourite'] = 'Curso destacado';
 $string['gradetopassnotset'] = 'Este curso non ten estabelecida unha cualificación de aprobado. Pódese definir no elemento de cualificación do curso (configuración do caderno de notas).';
 $string['informationformodule'] = 'Información sobre a actividade de {$a}';
 $string['module'] = 'Actividade';
+$string['namewithlink'] = 'Nome da categoría con ligazón';
 $string['noaccesssincestartinfomessage'] = 'Ola {$a->userfirstname},
 <p>Un certo número de alumnos de {$a->coursename} nunca accederon ao curso.</p>';
 $string['nocourseactivity'] = 'Non hai actividade de curso suficiente entre o inicio e o final do curso';

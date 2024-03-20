@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fichiers source Qedoc';
-$string['privacy:metadata'] = 'Le plugin Fichiers source Qedoc n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Fichiers source Qedoc n’enregistre aucune donnée personnelle.';

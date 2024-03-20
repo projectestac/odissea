@@ -25,23 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Nécessite que l\'étudiant saisisse un mot de passe.';
+$string['description'] = 'Nécessite que l’étudiant saisisse un mot de passe.';
 $string['enterpassword'] = 'Saisir le mot de passe';
 $string['enterpasswordfor'] = 'Saisir le mot de passe pour {$a}';
 $string['error_setpassword'] = 'Vous devez spécifier un mot de passe';
 $string['password:addinstance'] = 'Ajouter une condition de mot de passe';
-$string['passwordintro'] = 'L\'accès à <em>{$a}</em> est protégé par un mot de passe.<br />Si vous ne connaissez pas le mot de passe, demandez à votre enseignant.';
+$string['passwordintro'] = 'L’accès à <em>{$a}</em> est protégé par un mot de passe.<br />Si vous ne connaissez pas le mot de passe, demandez à votre enseignant.';
 $string['passwordprotection'] = 'Protection par mot de passe';
 $string['permanently'] = 'Permanente';
 $string['pluginname'] = 'Restriction par mot de passe';
 $string['privacy:metadata:availability_password_grant'] = 'Informations sur tous les utilisateurs ayant correctement saisi le mot de passe pour une activité donnée.';
-$string['privacy:metadata:availability_password_grant:cmid'] = 'L\'ID du module de cours pour lequel le mot de passe a été saisi.';
-$string['privacy:metadata:availability_password_grant:courseid'] = 'L\'ID du cours pour lequel le mot de passe a été saisi.';
+$string['privacy:metadata:availability_password_grant:cmid'] = 'L’ID du module de cours pour lequel le mot de passe a été saisi.';
+$string['privacy:metadata:availability_password_grant:courseid'] = 'L’ID du cours pour lequel le mot de passe a été saisi.';
 $string['privacy:metadata:availability_password_grant:password'] = 'Le mot de passe qui a été saisi.';
-$string['privacy:metadata:availability_password_grant:userid'] = 'L\'ID de l\'utilisateur qui a saisi le mot de passe.';
+$string['privacy:metadata:availability_password_grant:userid'] = 'L’ID de l’utilisateur qui a saisi le mot de passe.';
 $string['rememberpassword'] = 'Mémoriser le mot de passe saisi';
-$string['requires_nopassword'] = 'Vous n\'avez pas saisi le bon mot de passe';
+$string['requires_nopassword'] = 'Vous n’avez pas saisi le bon mot de passe';
 $string['requires_password'] = 'Vous avez saisi le bon mot de passe';
 $string['title'] = 'Mot de passe';
-$string['untillogout'] = 'Jusqu\'à la déconnexion de l\'utilisateur';
+$string['untillogout'] = 'Jusqu’à la déconnexion de l’utilisateur';
 $string['wrongpassword'] = 'Mot de passe incorrect';

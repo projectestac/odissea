@@ -15,13 +15,15 @@ class com_wiris_util_geometry_GeometryElementStyle {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
+	static function __meta__() { $Â»args = func_get_args(); return call_user_func_array(self::$__meta__, $Â»args); }
+	static $__meta__;
 	static $REFER = "ref";
 	static $PARENT = "ref_parent";
 	static $STROKE = "stroke";
@@ -35,6 +37,7 @@ class com_wiris_util_geometry_GeometryElementStyle {
 	static $POINT_SIZE = "point_size";
 	static $POINT_STYLE = "point_style";
 	static $LABEL = "label";
+	static $LABEL_VISIBILITY = "label_visibility";
 	static $LABEL_COLOR = "label_color";
 	static $LABEL_BOLD = "label_bold";
 	static $LABEL_ITALIC = "label_italic";
@@ -76,3 +79,4 @@ class com_wiris_util_geometry_GeometryElementStyle {
 	}
 	function __toString() { return 'com.wiris.util.geometry.GeometryElementStyle'; }
 }
+com_wiris_util_geometry_GeometryElementStyle::$__meta__ = _hx_anonymous(array("statics" => _hx_anonymous(array("LABEL" => _hx_anonymous(array("Deprecated" => null))))));

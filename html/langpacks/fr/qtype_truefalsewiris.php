@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingtruefalsewiris'] = 'Ajout d\'une question vrai/faux - mathématiques et sciences par WIRIS';
-$string['editingtruefalsewiris'] = 'Modification d\'une question vrai/faux - mathématiques et sciences par WIRIS';
+$string['addingtruefalsewiris'] = 'Ajout d’une question vrai/faux - mathématiques et sciences par WIRIS';
+$string['editingtruefalsewiris'] = 'Modification d’une question vrai/faux - mathématiques et sciences par WIRIS';
 $string['pluginname'] = 'Vrai/Faux - science';
 $string['pluginname_help'] = 'Comme le vrai/faux standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. Vous pouvez définir dynamiquement si la bonne réponse est vraie ou fausse. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['pluginnameadding'] = 'Ajout d\'une question vrai/faux - mathématiques et sciences par WIRIS';
-$string['pluginnameediting'] = 'Modification d\'une question vrai/faux - mathématiques et sciences par WIRIS';
+$string['pluginnameadding'] = 'Ajout d’une question vrai/faux - mathématiques et sciences par WIRIS';
+$string['pluginnameediting'] = 'Modification d’une question vrai/faux - mathématiques et sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme le vrai/faux standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. Vous pouvez définir dynamiquement si la bonne réponse est vraie ou fausse. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question Vrai/Faux de Wiris Quiz n\'affecte ni ne stocke aucune donnée en soi.';
+$string['privacy:null_reason'] = 'Le type de question Vrai/Faux de Wiris Quiz n’affecte ni n’enregistre aucune donnée en soi.';
 $string['truefalsewiris'] = 'Vrai/Faux - science';
 $string['truefalsewiris_algorithm'] = 'Algorithme';
 $string['truefalsewiris_correct_answer_variable'] = 'Variable de réponse correcte';
@@ -41,5 +41,5 @@ $string['truefalsewiris_feedback_wrong_response'] = 'Commentaires pour la mauvai
 $string['truefalsewiris_help'] = 'Comme le vrai/faux standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. Vous pouvez définir dynamiquement si la bonne réponse est vraie ou fausse. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['truefalsewiris_wiris_variables'] = 'Variables WIRIS';
 $string['truefalsewirisoverrideanswer_identifier'] = 'Variable de réponse correcte';
-$string['truefalsewirisoverrideanswer_identifier_help'] = 'Si elle est définie, cette valeur remplacera le champ Réponse correcte ci-dessous. Écrivez dans l\'onglet Variables un algorithme pour définir cette variable sur « true » ou « false ».';
+$string['truefalsewirisoverrideanswer_identifier_help'] = 'Si elle est définie, cette valeur remplacera le champ Réponse correcte ci-dessous. Écrivez dans l’onglet Variables un algorithme pour définir cette variable sur « true » ou « false ».';
 $string['truefalsewirissummary'] = 'Comme le vrai/faux standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. Vous pouvez définir dynamiquement si la bonne réponse est vraie ou fausse. La rétroaction peut également utiliser les valeurs aléatoires.';

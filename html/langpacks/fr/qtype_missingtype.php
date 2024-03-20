@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerno'] = 'Réponse {$a}';
-$string['cannotchangeamissingqtype'] = 'Vous ne pouvez pas modifier de question d\'un type manquant.';
+$string['cannotchangeamissingqtype'] = 'Vous ne pouvez pas modifier de question d’un type manquant.';
 $string['deletedquestion'] = 'Question manquante';
-$string['deletedquestiontext'] = 'Cette question est manquante. Impossible d\'afficher quoi que ce soit.';
-$string['missing'] = 'Question d\'un type non installé sur ce système';
-$string['missingqtypewarning'] = 'Cette question est d\'un type qui n\'est pas actuellement installé sur ce système. Vous ne pouvez rien faire avec cette question.';
+$string['deletedquestiontext'] = 'Cette question est manquante. Impossible d’afficher quoi que ce soit.';
+$string['missing'] = 'Question d’un type non installé sur ce système';
+$string['missingqtypewarning'] = 'Cette question est d’un type qui n’est pas actuellement installé sur ce système. Vous ne pouvez rien faire avec cette question.';
 $string['pluginname'] = 'Paramètre fictif pour type de question manquant';
-$string['pluginnameadding'] = 'L\'ajout d\'une question de ce type n\'est pas possible sur ce site.';
-$string['pluginnameediting'] = 'Modification d\'une question dont le type n\'est pas installé sur ce système';
-$string['privacy:metadata'] = 'Le plugin de type de question Type manquant n\'enregistre aucune donnée personnelle.';
-$string['warningmissingtype'] = '<b>Le type de cette question n\'a pas encore été installé sur votre Moodle.<br />Veuillez en informer l\'administrateur de votre Moodle.</b>';
+$string['pluginnameadding'] = 'L’ajout d’une question de ce type n’est pas possible sur ce site.';
+$string['pluginnameediting'] = 'Modification d’une question dont le type n’est pas installé sur ce système';
+$string['privacy:metadata'] = 'Le plugin de type de question Type manquant n’enregistre aucune donnée personnelle.';
+$string['warningmissingtype'] = '<b>Le type de cette question n’a pas encore été installé sur votre Moodle.<br />Veuillez en informer l’administrateur de votre Moodle.</b>';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enabledock'] = 'Permettre à l\'utilisateur de placer ce bloc dans le dock';
+$string['enabledock'] = 'Permettre à l’utilisateur de placer ce bloc dans le dock';
 $string['pluginname'] = 'Administration';
-$string['privacy:metadata'] = 'Le bloc Administration affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Administration affiche seulement des données enregistrées à d’autres endroits.';
 $string['settings:addinstance'] = 'Ajouter un bloc administration';
-$string['settings:myaddinstance'] = 'Ajouter un bloc d\'administration au tableau de bord';
+$string['settings:myaddinstance'] = 'Ajouter un bloc d’administration au tableau de bord';

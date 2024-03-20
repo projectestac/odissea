@@ -38,6 +38,7 @@ $string['colorPickerErrRgbCode'] = 'Ungültiger RGB-Farbcode: {0}';
 $string['colorPickerSave'] = 'Anwenden';
 $string['colorPickerTitle'] = 'Farbauswahl';
 $string['customColor'] = 'Andere Farbe';
+$string['helplinktext'] = 'Tiny Schriftfarbe';
 $string['menuItemBgcolor'] = 'Hintergrundfarbe';
 $string['menuItemFgcolor'] = 'Textfarbe';
 $string['placeholdercolorname'] = 'Farbname';

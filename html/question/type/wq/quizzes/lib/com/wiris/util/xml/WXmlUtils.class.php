@@ -175,8 +175,8 @@ class com_wiris_util_xml_WXmlUtils {
 	static function safeParseXML($xml) {
 		try {
 			return com_wiris_util_xml_WXmlUtils::parseXML($xml);
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				return Xml::createDocument();

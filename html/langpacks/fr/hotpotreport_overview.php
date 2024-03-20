@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Rapport d\'ensemble';
-$string['privacy:metadata'] = 'Le plugin Rapport d\'ensemble n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Rapport d’ensemble';
+$string['privacy:metadata'] = 'Le plugin Rapport d’ensemble n’enregistre aucune donnée personnelle.';

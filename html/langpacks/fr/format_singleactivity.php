@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitytype'] = 'Type d\'activité';
-$string['activitytype_help'] = 'Le type d\'activité ou de ressource à utiliser dans ce cours';
-$string['defactivitytype'] = 'Type d\'activité par défaut';
-$string['defactivitytypedesc'] = 'Indiquez le type d\'activité qui sera sélectionné par défaut lors de la création d\'un nouveau cours';
-$string['erroractivitytype'] = 'Le type d\'activité n\'est pas défini dans les paramètres du cours';
+$string['activitytype'] = 'Type d’activité';
+$string['activitytype_help'] = 'Le type d’activité ou de ressource à utiliser dans ce cours';
+$string['defactivitytype'] = 'Type d’activité par défaut';
+$string['defactivitytypedesc'] = 'Indiquez le type d’activité qui sera sélectionné par défaut lors de la création d’un nouveau cours';
+$string['erroractivitytype'] = 'Le type d’activité n’est pas configuré dans les paramètres du cours';
 $string['orphaned'] = 'Orphelin';
 $string['orphanedwarning'] = 'Ces activités ne peuvent pas être atteintes par les utilisateurs !';
 $string['pluginname'] = 'Activité unique';
-$string['privacy:metadata'] = 'Le plugin format activité unique n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format activité unique n’enregistre aucune donnée personnelle.';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Lorsque vous changez le format d\'un cours existant au format « Activité unique », assurez-vous d\'avoir supprimé du cours toutes les activités supplémentaires, y compris les « Annonces ». La structure des sections pourrait être modifiée.';
+$string['warningchangeformat'] = 'Lorsque vous changez le format d’un cours existant au format « Activité unique », assurez-vous d’avoir supprimé du cours toutes les activités supplémentaires, y compris les « Annonces ». La structure des sections pourrait être modifiée.';

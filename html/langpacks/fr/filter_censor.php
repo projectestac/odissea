@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'merde, enculé, bite, couille, pute, putain, niquer, gode, godemichet, nègre';
 $string['filtername'] = 'Caviardage';
-$string['privacy:metadata'] = 'Le plugin Caviardage n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Caviardage n’enregistre aucune donnée personnelle.';

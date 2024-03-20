@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Общественная деятельность';
-$string['privacy:metadata'] = 'Блок «Общественная деятельность» только показывает данные, хранящиеся в других местах.';
-$string['social_activities:addinstance'] = 'Добавлять новый блок «Общественная деятельность»';
+$string['pluginname'] = 'Социальные мероприятия';
+$string['privacy:metadata'] = 'Блок «Социальные мероприятия» только показывает данные, хранящиеся в других местах.';
+$string['social_activities:addinstance'] = 'Добавлять новый блок «Социальные мероприятия»';

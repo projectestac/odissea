@@ -33,6 +33,8 @@ $string['crontask'] = 'Procesamento en segundo plano para o repositorio Dropbox'
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Ver un cartafol de Dropbox';
 $string['instruction'] = 'Pode obter a súa chave de API  e «segredo» dos <a href="http://www.dropbox.com/developers/apps">desenvolvedores de Dropbox</a>. Ao axustar a súa chave, seleccione «Todo Dropbox» como o «Nivel de acceso».';
+$string['issuer'] = 'Servizo OAuth 2';
+$string['issuer_help'] = 'Seleccione o servizo OAuth 2 que está configurado para falar coa API de Dropbox. Se o servizo aínda non existe, terá que crealo.';
 $string['logoutdesc'] = '(Cerrar a sesión cando remate de usar Dropbox)';
 $string['notitle'] = 'sen-título';
 $string['oauth2redirecturi'] = 'URI de redirección OAuth 2';

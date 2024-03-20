@@ -36,4 +36,4 @@ $string['comparisonlevel6'] = '60% de tolérance';
 $string['comparisonlevel7'] = '70% de tolérance';
 $string['comparisonlevel8'] = '80% de tolérance';
 $string['comparisonlevel9'] = '90% de tolérance';
-$string['pluginname'] = 'Comparaison avec l\'évaluation la plus importante';
+$string['pluginname'] = 'Comparaison avec l’évaluation la plus importante';

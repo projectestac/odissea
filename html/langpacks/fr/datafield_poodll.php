@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backimageurl'] = 'URL de l\'image de fond du tableau blanc';
-$string['backimageurl_desc'] = 'Facultatif. Laissez ce champ vide s\'il est inutile.';
+$string['backimageurl'] = 'URL de l’image de fond du tableau blanc';
+$string['backimageurl_desc'] = 'Facultatif. Laissez ce champ vide s’il est inutile.';
 $string['clicktoplay'] = 'Cliquez pour lancer';
 $string['fieldtypelabel'] = 'PoodLL';
-$string['maxbytes'] = 'Taille maximale de l\'objet intégré (en octets)';
+$string['maxbytes'] = 'Taille maximale de l’objet intégré (en octets)';
 $string['maxbytes_desc'] = 'Si le réglage est sur 0, la taille est par défaut illimitée';
 $string['namepoodll'] = 'PoodLL';
 $string['pluginname'] = 'PoodLL';
 $string['poodll'] = 'PoodLL';
-$string['privacy:metadata'] = 'Le plugin Data Activity Poodll Field n\'enregistre aucune donnée personnelle.';
-$string['responsetype'] = 'Widget PoodLL (type d\'objet)';
+$string['privacy:metadata'] = 'Le plugin Data Activity Poodll Field n’enregistre aucune donnée personnelle.';
+$string['responsetype'] = 'Widget PoodLL (type d’objet)';

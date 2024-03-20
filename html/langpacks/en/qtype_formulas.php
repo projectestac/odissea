@@ -48,6 +48,8 @@ The mark for the answer of this part, which should be a number greater than 0.
 Note: If this part\'s mark field is left blank, the part will be deleted when the question is saved.';
 $string['answermulti'] = 'Answer for part {$a->part}';
 $string['answerno'] = 'Part {$a}';
+$string['answernotunique'] = 'There are other correct answers.';
+$string['answernotunique_help'] = 'If this option is checked, the student will see "One correct answer is: ..." instead of "The correct answer is: ..." when reviewing their attempt.';
 $string['answersingle'] = 'Answer';
 $string['answertype'] = 'Answer type';
 $string['answertype_help'] = 'There are four answer types.
@@ -211,6 +213,7 @@ $string['subqtext_help'] = 'Part text and answer fields places can be specified 
 The <tt> {_0}, {_1}, {_2} </tt> are the different input fields for values and <tt> {_u} </tt> is the input field for unit.
 
 All missing fields are automatically appended at the end of the part\'s text. A special case is that if <tt> {_0}, {_u} </tt> are specified consecutively, and there is only one answer field and unit, i.e. <tt> {_0}{_u} </tt>, they will be combined into a single long input answer field for both answer and unit.';
+$string['uniquecorrectansweris'] = 'The correct answer is: {$a}';
 $string['unit'] = 'Unit';
 $string['unitpenalty'] = 'Deduction for wrong unit (0-1)*';
 $string['unitpenalty_help'] = 'This option specify the mark you want to penalize the student for a wrong unit.

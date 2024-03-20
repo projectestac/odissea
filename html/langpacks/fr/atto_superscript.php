@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Exposant';
-$string['privacy:metadata'] = 'Le plugin atto_superscript n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_superscript n’enregistre aucune donnée personnelle.';

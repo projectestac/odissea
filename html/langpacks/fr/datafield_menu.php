@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Liste déroulante';
 $string['pluginname'] = 'Liste déroulante';
-$string['privacy:metadata'] = 'Le composant Champ liste déroulante n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['privacy:metadata'] = 'Le composant Champ liste déroulante n’enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

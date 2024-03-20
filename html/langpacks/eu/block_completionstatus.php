@@ -31,5 +31,5 @@ $string['criteriagroup'] = 'Irizpide-multzoa';
 $string['firstofsecond'] = '{$a->second}(e)tik  {$a->first}';
 $string['pluginname'] = 'Ikastaro-osaketaren egoera';
 $string['privacy:metadata'] = 'Ikastaro-osaketaren egoera blokeak ikastaroaren osaketaren inguruko informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';
-$string['requirement'] = 'Betekizuna';
+$string['requirement'] = 'Baldintza';
 $string['returntocourse'] = 'Itzuli ikastarora';

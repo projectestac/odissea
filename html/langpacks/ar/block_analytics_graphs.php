@@ -63,6 +63,7 @@ $string['typename_certificate'] = 'الشهادة';
 $string['typename_customcert'] = 'شهادة مخصصة';
 $string['typename_feedback'] = 'الإفادة';
 $string['typename_forum'] = 'المنتدى';
+$string['typename_glossary'] = 'قاموس المصطلحات';
 $string['typename_hvp'] = 'محتوى تفاعلي';
 $string['typename_icontent'] = 'صفحات المحتوى';
 $string['typename_page'] = 'الصفحة';

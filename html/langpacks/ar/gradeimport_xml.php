@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['errbadxmlformat'] = 'خطأ - تنسيق XML خاطئ';
 $string['errduplicategradeidnumber'] = 'خطأ - هناك مفردتا تقييم تحملان الرمز التعريفي \'{$a}\' في هذا المساق. ينبغي أن يكون ذلك مستحيلاً.';
 $string['errduplicateidnumber'] = 'خطأ - تكرار في الرمز التعريفي';
-$string['errincorrectgradeidnumber'] = 'خطأ - الرمز التعريفي \'{$a}\' من ملف الاستيراد لا يطابق أي مفردة تقييم.';
+$string['errincorrectgradeidnumber'] = 'خطأ - الرمز التعريفي \'{$a}\' من ملف الاستيراد لا يطابق أي عنصر تقييم.';
 $string['errincorrectidnumber'] = 'خطأ - رمز تعريفي خاطئ';
 $string['errincorrectuseridnumber'] = 'خطأ - الرمز التعريفي \'{$a}\' من ملف الاستيراد لا يطابق أي مستخدم.';
 $string['error'] = 'وقعت أخطاء';

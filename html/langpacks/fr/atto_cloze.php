@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Éditeur Cloze';
-$string['privacy:metadata'] = 'Le plugin Éditeur Atto Cloze n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Éditeur Atto Cloze n’enregistre aucune donnée personnelle.';

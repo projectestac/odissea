@@ -378,6 +378,7 @@ $string['gradetype_help'] = '<p>Especifica el tipo de calificación usado: <b>Ni
    El tipo de calificación para un ítem de calificación basado en una actividad es
    establecido en la página de actualización de la actividad.</p>';
 $string['gradevaluetoobig'] = 'Uno de los valores de calificación es mayor que la calificación máxima permitida de {$a}';
+$string['gradevaluetoosmall'] = 'Uno de los valores de calificación es menor que la calificación mínima permitida para {$a}';
 $string['gradeview'] = 'Ver calificación';
 $string['gradewasmodifiedduringediting'] = 'La calificación puesta por {$a->itemname} para {$a->username} ha sido ignorada ya que alguien la actualizó recientemente.';
 $string['gradeweighthelp'] = 'Ayuda sobre ponderación de calificaciones';

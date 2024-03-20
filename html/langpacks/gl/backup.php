@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Configuración da copia de seguridade automatizada'
 $string['automatedstorage'] = 'Almacenamento da copia de seguridade automatizada';
 $string['automatedstoragehelp'] = 'Escolla a localización onde quere almacenar as copias de seguridade creadas automaticamente.';
 $string['backupactivity'] = 'Copia de seguridade da actividade: {$a}';
+$string['backupautoactivitiesdescription'] = 'Establece os valores predeterminados para incluír actividades nunha copia de seguridade. Para que o cesto do lixo funcione, debe estar activado este axuste.';
 $string['backupcourse'] = 'Copia de seguridade do curso: {$a}';
 $string['backupcoursedetails'] = 'Detalles do curso';
 $string['backupcoursesection'] = 'Selección: {$a}';

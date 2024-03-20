@@ -183,9 +183,7 @@ $string['showprogressbars'] = 'Mostrar barras de progresso';
 $string['showupdateablemymoodle'] = 'Mostrar apenas listas de verificação atualizáveis no Painel do utilizador';
 $string['student_comment_created'] = 'Comentário do aluno criado';
 $string['student_comment_updated'] = 'Comentário do aluno atualizado';
-$string['student_comment_updated_desc'] = 'The user with id {$a->userid} has updated a comment in the checklist with course module id {$a->cmid} to have text \'{$a->commenttext}\'
-
-O utilizador com o ID {$a->userid} atualizou um comentário na lista de verificação no módulo da disciplina com ID {$a->cmid} para o seguinte texto: \'{$a->commenttext}\'';
+$string['student_comment_updated_desc'] = 'O utilizador com o ID {$a->userid} atualizou um comentário na lista de verificação no módulo da disciplina com ID {$a->cmid} para o seguinte texto: \'{$a->commenttext}\'';
 $string['studentcomments'] = 'O utilizador pode adicionar os seus próprios comentários aos itens da lista de verificação';
 $string['teacheralongsidecheck'] = 'Alunos e professores';
 $string['teachercomments'] = 'Professores podem adicionar comentários';

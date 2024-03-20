@@ -64,6 +64,21 @@
 .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentCorrect::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentWarning::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentError::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentCorrect::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentWarning::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentError::after {
   right: 23px;
 }
+.wrsUI_app.wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_movable > .wrsUI_aux_titleBar, .wrsUI_app .wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_movable > .wrsUI_aux_titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  font-size: 15px;
+  background: #077680;
+  color: white;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_movable > .wrsUI_aux_titleBar > .wrsUI_aux_titleBar_buttons > .wrsUI_button > .wrsUI_aux_icon, .wrsUI_app .wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_movable > .wrsUI_aux_titleBar > .wrsUI_aux_titleBar_buttons > .wrsUI_button > .wrsUI_aux_icon {
+  color: white;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_resizable > .wrsUI_button_resize_bar > .wrsUI_bottom_right_resizer, .wrsUI_app .wrsUI_quizzesAnswerField .wrsUI_aux_window > .wrsUI_aux_windowContent.wrsUI_resizable > .wrsUI_button_resize_bar > .wrsUI_bottom_right_resizer {
+  color: #077680;
+}
 
 .wrsUI_app.wrsUI_quizzesAuthoringField {
   background: transparent !important;
@@ -506,7 +521,7 @@
   color: rgba(0, 0, 0, 0.54);
 }
 .wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_calcmeButton {
-  color: #1e6193;
+  color: rgb(30, 97, 147);
   border-color: rgba(30, 97, 147, 0.4);
 }
 .wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_gettingStartedAboutUsButton {
@@ -534,7 +549,7 @@
   background: rgba(7, 118, 128, 0.32);
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_label {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_labelImportant {
   font-size: 16px;
@@ -806,11 +821,29 @@
   min-width: 72px;
   font-weight: 400;
   display: inline-flex;
-  color: black;
+  color: rgb(0, 0, 0);
   justify-content: flex-end !important;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRow .wrsUI_aux_dropdown_container {
   margin-left: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRowDisplay {
+  width: 400px;
+  display: flex;
+  margin-left: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRowDisplay .wrsUI_label {
+  min-width: 150px;
+  font-weight: 400;
+  display: inline-flex;
+  color: rgb(0, 0, 0);
+  justify-content: flex-end !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRowDisplay .wrsUI_aux_dropdown_container {
+  margin-left: 24px;
+  width: 200px;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer {
   min-height: 60px;

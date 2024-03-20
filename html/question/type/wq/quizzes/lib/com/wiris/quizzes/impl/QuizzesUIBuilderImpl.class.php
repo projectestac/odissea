@@ -101,7 +101,7 @@ class com_wiris_quizzes_impl_QuizzesUIBuilderImpl implements com_wiris_quizzes_a
 	public function setLanguage($lang) {
 		com_wiris_quizzes_api_Quizzes::getInstance()->getQuizzesComponentBuilder()->setLanguage($lang);
 	}
-	static function __meta__() { $»args = func_get_args(); return call_user_func_array(self::$__meta__, $»args); }
+	static function __meta__() { $Â»args = func_get_args(); return call_user_func_array(self::$__meta__, $Â»args); }
 	static $__meta__;
 	function __toString() { return 'com.wiris.quizzes.impl.QuizzesUIBuilderImpl'; }
 }

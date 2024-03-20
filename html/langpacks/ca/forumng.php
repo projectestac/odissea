@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['author'] = 'Autor/a: &lsquo;{$a}&rsquo;';
 $string['event:discussionviewed'] = 'Visualitza el debat';
 $string['filterdiscussions'] = 'Visualitza els debats amb etiqueta';
 $string['forumng:viewdiscussion'] = 'Visualitza els debats';

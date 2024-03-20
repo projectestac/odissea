@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuration fichiers personnels';
-$string['emptyfilelist'] = 'Il n\'y a aucun fichier à afficher';
+$string['emptyfilelist'] = 'Il n’y a aucun fichier à afficher';
 $string['pluginname'] = 'Fichiers personnels';
-$string['pluginname_help'] = 'Fichiers de la zone privée de l\'utilisateur';
-$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers personnels n\'enregistre et ne transmet aucune donnée personnelle.';
+$string['pluginname_help'] = 'Fichiers de la zone privée de l’utilisateur';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers personnels n’enregistre et ne transmet aucune donnée personnelle.';
 $string['user:view'] = 'Consulter les fichiers personnels';

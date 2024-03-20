@@ -435,7 +435,7 @@ $string['not_registered'] = 'Ainda não está registado!';
 $string['not_synced_reg_present'] = 'não existem registos sincronizados';
 $string['notenoughregs'] = 'O utilizador precisa de mais registos!';
 $string['nothing_to_push'] = 'Nada para forçar!';
-$string['notification:group_recreated'] = 'O grupo <a href="{$a->groupurl}" mosaico="{$a->groupname}">{$a->groupname}</a> foi recriado devido ao facto da ferramenta de grupos <a href="{$a->grouptoolurl}" mosaico="{$a->grouptoolname}">$a->grouptoolname}</a> estar definida para recriar grupos apagados.';
+$string['notification:group_recreated'] = 'O grupo <a href="{$a->groupurl}" title="{$a->groupname}">{$a->groupname}</a> foi recriado devido ao grouptool <a href="{$a->grouptoolurl}" title="{$a->grouptoolname}">{$a->grouptoolname}</a> ter sido configurado para recriar grupos eliminados.';
 $string['notification:registrations_recreated'] = 'Os membros do grupo <a href="{$a->groupurl}" mosaico="{$a->groupname}">{$a->groupname}</a> foram adicionados novamente devido ao facto da ferramenta de grupos <a href="{$a->grouptoolurl}" mosaico="{$a->grouptoolname}">$a->grouptoolname}</a> estar definida para recriar grupos apagados. O próprio grupo foi recriado por outra instância da ferramenta de grupos.';
 $string['nowhere_queued'] = 'Não colocado em fila';
 $string['number_of_groups'] = 'Número de N grupos';

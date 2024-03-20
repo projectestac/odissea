@@ -31,7 +31,7 @@ $string['adminauthorizeccapture'] = 'Configuração de alterações de pedidos e
 $string['adminauthorizeemail'] = 'Configurações de envio de e-mail';
 $string['adminauthorizesettings'] = 'Configurações da conta de cliente Authorize.net';
 $string['adminauthorizewide'] = 'Configurações gerais';
-$string['adminconfighttps'] = 'Verifique se ativou "<a href="$a->url">  loginhttps</a>" para usar este módulo. Esta configuração está em Administração - Variáveis - Segurança - Segurança HTTP';
+$string['adminconfighttps'] = 'Certifique-se de que tem "<a href="{$a->url}">ativado o loginhttps</a>" para utilizar este plugin<br />em Admin >> Variáveis >> Segurança >> Segurança HTTP.';
 $string['adminconfighttpsgo'] = 'Consulte a <a href="{$a->url}">página segura</a> para configurar este módulo.';
 $string['admincronsetup'] = 'O script de manutenção cron.php não é executado há mais de 24 horas.<br /> O cron tem que estar ativo se quiser utilizar a opção de captação programada.<br /><strong>Ative o módulo</strong> "Authorize.net" e <strong>configure o cron</strong> de forma adequada; ou <strong>desative a opção an_review</strong> novamente.<br />Se desativar a captação programada as transações serão canceladas, a menos que as reveja no prazo de 30 dias.<br />Ative a opção <strong>an_review</strong> e introduza "0" (zero) no campo <strong>an_capture_day</strong><br />para aceitar/negar os pagamentos a 30 dias de forma manual.';
 $string['adminemailexpiredsort'] = 'Quando o número de pedidos pendentes a expirar são enviados por e-mail aos professores qual é o mais importante?';
@@ -44,11 +44,11 @@ $string['adminneworder'] = 'Caro Administrador,
 
 Recebeu um novo pedido que está pendente:
 
-ID do Pedido: $a->orderid
-ID da Transação : $a->transid
-Utilizador: $a->user
-Disciplina: $a->course
-Valor: $a->amount
+ID do Pedido: {$a->orderid}
+ID da Transação : {$a->transid}
+Utilizador: {$a->user}
+Disciplina: {$a->course}
+Valor: {$a->amount}
 
 CAPTAÇÃO PROGRAMADA ACTIVA?: {$a->acstatus}
 
@@ -58,7 +58,7 @@ Caso contrário, o pedido expirará em {$a->expireon}, não podendo ser captado 
 Pode optar por aceitar/negar o pagamento para inscrever o aluno, imediatamente, seguindo este link:
 {$a->url}';
 $string['adminnewordersubject'] = 'Disciplina {$a->course}: Novo pedido pendente; {$a->orderid}';
-$string['adminpendingorders'] = 'Desativou a opção de captação programada.<br />Um total de {$a->count} transações com estatuto de "Captação Autorizada/Pendente" será cancelado, a não ser que as reveja.<br />Para aceitar/negar pagamentos consulte a página <a href="$a->url">Gestão de Pagamentos</a>.';
+$string['adminpendingorders'] = 'Desativou a opção de captação programada.<br />Um total de {$a->count} transações com estatuto de "Captação Autorizada/Pendente" será cancelado, a não ser que as reveja.<br />Para aceitar/negar pagamentos consulte a página <a href="{$a->url}">Gestão de Pagamentos</a>.';
 $string['adminteachermanagepay'] = 'Os professores podem gerir os pagamentos da disciplina.';
 $string['allpendingorders'] = 'Todos os pedidos pendentes';
 $string['amount'] = 'Valor';
@@ -193,7 +193,7 @@ Clique na hiperligação e leia o ficheiro de ajuda disponível em {$a->url}';
 $string['pendingechecksubject'] = 'Disciplina: {$a->course}:  {$a->count} eChecks pendentes';
 $string['pendingordersemail'] = 'Caro(a) administrador(a),
 
-{$a->pending} transações relativas à disciplina "$a->course" estão prester a expirar, a menos que aceite os pagamentos nos próximos {$a->days} dias.
+{$a->pending} transações relativas à disciplina "{$a->course}" estão prester a expirar, a menos que aceite os pagamentos nos próximos {$a->days} dias.
 
 Esta mensagem de aviso foi enviada porque não ativou a captação programada.
 Tal significa que terá que aceitar ou recusar os pagamentos manualmente.
@@ -209,7 +209,7 @@ Estes pedidos serão cancelados em breve se estes pagamentos não forem aceites 
 Estes pagamentos terão que ser aceites/recusados manualmente porque o administrador não ativou a captação programada.
 
 {$a->url}';
-$string['pendingorderssubject'] = 'AVISO: Os $a->pending pedido(s) pendente(s) da disciplinas {$a->course} expirará(ão) dentro de {$a->days} dia(s).';
+$string['pendingorderssubject'] = 'AVISO: Os {$a->pending} pedido(s) pendente(s) da disciplinas {$a->course} expirará(ão) dentro de {$a->days} dia(s).';
 $string['pluginname'] = 'Authorize.Net';
 $string['reason11'] = 'Foi submetida uma transação em duplicado.';
 $string['reason13'] = 'A identificação da conta de cliente é inválida ou a conta não está ativa.';

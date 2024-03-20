@@ -80,4 +80,4 @@ $string['auth_casnotinstalled'] = 'Não pode utilizar o método de autenticaçã
 $string['noldapserver'] = 'Não existem servidores LDAP configurados para CAS! A sincronização está desativada..';
 $string['pluginname'] = 'Servidor CAS (SSO)';
 $string['privacy:metadata'] = 'O módulo de autenticação Servidor CAS (SSO) não armazena quaisquer dados pessoais.';
-$string['synctask'] = 'Tarefa de sincronização dos utilizadores de CAS';
+$string['synctask'] = 'Sincronização de utilizadores CAS';

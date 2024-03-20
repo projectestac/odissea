@@ -30,6 +30,7 @@ $string['answer_checked'] = 'تم فحص الإجابة';
 $string['answer_correct'] = 'إجابتك صحيحة';
 $string['answer_fail'] = 'إجابة خاطئة';
 $string['answer_incorrect'] = 'إجابتك غير صحيحة';
+$string['answer_noanswer'] = 'لا أحد';
 $string['answer_pass'] = 'اجابة صحيحة';
 $string['answer_text'] = 'أجب على النص';
 $string['answer_unchecked'] = 'الإجابة أُلغي تأشيرها';

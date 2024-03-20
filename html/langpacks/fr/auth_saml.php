@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_saml_db_reset_button'] = 'Réinitialiser les valeurs aux réglages d\'usine';
+$string['auth_saml_db_reset_button'] = 'Réinitialiser les valeurs aux réglages d’usine';
 $string['auth_saml_form_error'] = 'Il y a des erreurs dans le formulaire. Regardez ci-dessous pour les corriger';
 $string['auth_saml_ignoreinactivecourses_description'] = 'Si non coché le plugin désinscrira les utilisateurs « inactifs » des cours';
 $string['auth_saml_logo_path'] = 'Image SAML';
 $string['auth_saml_mapping_export'] = 'Les exporter dans un fichier CSV';
 $string['auth_saml_missed_data'] = 'Il manque des attributs dans les données suivantes  :';
-$string['auth_saml_not_authorize'] = '{\\$a} n\'a pas de cours actif CAV.';
+$string['auth_saml_not_authorize'] = '{\\$a} n’a pas de cours actif CAV.';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingessaywiris'] = 'Ajout d\'une composition - question de mathématiques et de sciences par WIRIS';
-$string['editingessaywiris'] = 'Édition d\'une composition - question de mathématiques et de sciences par WIRIS';
+$string['addingessaywiris'] = 'Ajout d’une composition - question de mathématiques et de sciences par WIRIS';
+$string['editingessaywiris'] = 'Édition d’une composition - question de mathématiques et de sciences par WIRIS';
 $string['essaywiris'] = 'Composition - science';
 $string['essaywiris_algorithm'] = 'Algorithme';
 $string['essaywiris_help'] = 'Comme la question de composition standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
@@ -34,7 +34,7 @@ $string['essaywiris_wiris_variables'] = 'Variables WIRIS';
 $string['essaywirissummary'] = 'Comme la question de composition standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['pluginname'] = 'Composition - science';
 $string['pluginname_help'] = 'Comme la question de composition standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['pluginnameadding'] = 'Ajout d\'une composition - question de mathématiques et de sciences par WIRIS';
-$string['pluginnameediting'] = 'Édition d\'une composition - question de mathématiques et de sciences par WIRIS';
+$string['pluginnameadding'] = 'Ajout d’une composition - question de mathématiques et de sciences par WIRIS';
+$string['pluginnameediting'] = 'Édition d’une composition - question de mathématiques et de sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme la question de composition standard, mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question test de Composition Wiris ne modifie ni n\'enregistre aucune donnée personnelle.';
+$string['privacy:null_reason'] = 'Le type de question test de Composition Wiris ne modifie ni n’enregistre aucune donnée personnelle.';

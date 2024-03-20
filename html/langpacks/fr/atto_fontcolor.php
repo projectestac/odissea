@@ -32,4 +32,4 @@ $string['color_red'] = 'Rouge';
 $string['color_white'] = 'Blanc';
 $string['color_yellow'] = 'Jaune';
 $string['pluginname'] = 'Couleur de police';
-$string['privacy:metadata'] = 'Le plugin atto_fontcolor n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_fontcolor n’enregistre aucune donnée personnelle.';

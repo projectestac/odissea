@@ -62,6 +62,15 @@ class manager {
     public static $mode;
 
     /**
+     * Reset the state of the task manager.
+     */
+    public static function reset_state(): void {
+        self::$miniqueue = null;
+        self::$numtasks = null;
+        self::$mode = null;
+    }
+
+    /**
      * Given a component name, will load the list of tasks in the db/tasks.php file for that component.
      *
      * @param string $componentname - The name of the component to fetch the tasks for.
@@ -1407,10 +1416,38 @@ class manager {
             $command = "{$phpbinary} {$scriptpath} {$taskarg}";
 
             // Execute it.
-            passthru($command);
+            self::passthru_via_mtrace($command);
         }
 
         return true;
+    }
+
+    /**
+     * This behaves similar to passthru but filters every line via
+     * the mtrace function so it can be post processed.
+     *
+     * @param string $command to run
+     * @return void
+     */
+    public static function passthru_via_mtrace(string $command) {
+        $descriptorspec = [
+            0 => ['pipe', 'r'], // STDIN.
+            1 => ['pipe', 'w'], // STDOUT.
+            2 => ['pipe', 'w'], // STDERR.
+        ];
+        flush();
+        $process = proc_open($command, $descriptorspec, $pipes, realpath('./'));
+        if (is_resource($process)) {
+            while ($s = fgets($pipes[1])) {
+                mtrace($s, '');
+                flush();
+            }
+        }
+
+        fclose($pipes[0]);
+        fclose($pipes[1]);
+        fclose($pipes[2]);
+        proc_close($process);
     }
 
     /**

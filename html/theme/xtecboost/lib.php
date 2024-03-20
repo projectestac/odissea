@@ -119,7 +119,9 @@ function theme_xtecboost_get_pre_scss($theme): string {
     }
 
     if (!empty($theme->settings->fontsize)) {
-        $scss .= '$font-size-base: ' . (1 / 100 * $theme->settings->fontsize) . "rem !default;\n";
+        $scss .= '$fontsize: ' . (1 / 100 * $theme->settings->fontsize) . "rem !default;\n";
+    } else {
+        $scss .= '$fontsize: 0.9375rem !default;' . "\n";
     }
 
     if (!empty($theme->settings->coursecontentmaxwidth)) {

@@ -532,7 +532,7 @@ $string['pluginadministration'] = 'Administració del fòrum';
 $string['pluginname'] = 'Fòrum';
 $string['postadded'] = '<p>S\'ha afegit el vostre missatge.</p> <p>Teniu {$a} per editar-lo si voleu fer algun canvi.</p>';
 $string['postaddedsuccess'] = 'S\'ha afegit correctament el vostre missatge.';
-$string['postaddedtimeleft'] = 'Teniu {$a} per a editar-lo si voleu fer-hi algun canvi.';
+$string['postaddedtimeleft'] = 'Teniu {$a} per a editar-lo si voleu fer-hi cap canvi.';
 $string['postbymailsuccess'] = 'La vostra resposta «{$a->subject}» s\'ha afegit amb èxit: {$a->discussionurl}';
 $string['postbymailsuccess_html'] = 'La vostra resposta <a href="{$a->discussionurl}">{$a->subject}</a> s\'ha publicat amb èxit.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';

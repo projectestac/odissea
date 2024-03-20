@@ -66,6 +66,7 @@ Sono disponibili molte opzioni di visualizzazione per aprire l\'URL, ad esempio 
 Da notare che è possibile aggiungere URL ad altri tipi di risorse o attività tramite l\'editor di testo.';
 $string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL';
+$string['name'] = 'Nome';
 $string['page-mod-url-x'] = 'Qualsiasi pagina con modulo URL';
 $string['parameterinfo'] = '&amp;parametro=variabile';
 $string['parametersheader'] = 'Parametri URL';

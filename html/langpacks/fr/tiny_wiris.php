@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_connection'] = 'Une erreur s\'est produite lors du chargement de MathType';
+$string['error_connection'] = 'Une erreur s’est produite lors du chargement de MathType';
 $string['pluginname'] = 'MathType par WIRIS';
 $string['privacy:metadata'] = 'MathType pour TinyMCE 6 ne modifie ou enregistre aucune donnée.';

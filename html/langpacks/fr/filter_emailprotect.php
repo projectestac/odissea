@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Protection des adresses de courriel';
-$string['privacy:metadata'] = 'Le plugin Protection des adresses de courriel n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Protection des adresses de courriel n’enregistre aucune donnée personnelle.';

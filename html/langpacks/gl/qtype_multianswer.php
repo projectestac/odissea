@@ -40,6 +40,7 @@ $string['layoutselectinline'] = 'Menú despregábel en liña no texto';
 $string['layoutundefined'] = 'Deseño sen definir';
 $string['layoutvertical'] = 'Columna vertical de botóns de opción';
 $string['missingsubquestion'] = 'Falta esta subpregunta no seu sistema e non pode amosarse.';
+$string['multichoicex'] = 'Escolla múltiple {$a}';
 $string['nooptionsforsubquestion'] = 'Non foi posíbel obter as opcións para a pregunta part # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'A pregunta Cloze (multiresposta) «<strong>{$a}</strong>» non contén ningunha pregunta';
 $string['pleaseananswerallparts'] = 'Responda a todas as partes da pregunta.';
@@ -66,6 +67,7 @@ $string['questionsmore'] = '{$a} pregunta(s) máis ca na pregunta de multirespos
 $string['questiontypechanged'] = 'Tipo de pregunta cambiado';
 $string['questiontypechangedcomment'] = 'Cando menos cambiouse un tipo de pregunta.<br >Engadiu, eliminou ou moveu a pregunta?<br >Mire máis adiante.';
 $string['questionusedinquiz'] = 'A pregunta utilízase en {$a->nb_of_quiz} proba(s), cun total de intento(s) : {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'O número de subpreguntas incrustadas na pregunta cambiou.';
 $string['storedqtype'] = 'Gardouse o tipo de pregunta {$a}';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo de pregunta descoñecida: {$a->type} da parte da pregunta # {$a->sub}';

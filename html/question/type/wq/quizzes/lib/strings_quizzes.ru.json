@@ -558,6 +558,20 @@
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Заблокировать начальное содержимое",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Запрещает студенту изменять ответ за пределами пустых полей для заполнения, оставленных в начальном содержимом. В этом режиме студент может лишь заполнять поля в начальном содержимом.",
 
+		"quizzes_studio_input_options_answer_input_method_display_settings_label": "Настройки отображения",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_name": "Отображение названий меток",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_value": "Отображение значений меток",
+		"quizzes_studio_input_options_answer_input_method_display_settings_helper_text": "Выберите настройку отображения для названий и значений меток. Вы можете определить, когда учащийся будет видеть значения меток: всегда, никогда или когда они в центре внимания.",
+		"always": "Всегда",
+		"focus": "В центре внимания",
+		"never": "Никогда",
+
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label": "Настройки магнитной сетки",
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text": "Выберите вариант магнитной сетки для поля ответа учащегося.",
+		"force": "Применить",
+		"snap": "Снимок",
+		"disabled": "Отключено",
+
 		"quizzes_studio_home_random_variables_title": "Случайные переменные",
 		"quizzes_studio_home_random_variables_title_basic_mode": "Основной режим",
 		"quizzes_studio_home_advanced_random_variables_button_text": "Расширенный режим",
@@ -611,7 +625,9 @@
 		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Нажмите кнопку «Проверить данный вопрос», чтобы узнать, что увидит студент.",
 		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Эскиз равен",
 		"quizzes_demo_sketch_title_menu" : "Эскиз",
-		"home_getting_started_documentation_button_text" : "Документация"
+		"home_getting_started_documentation_button_text" : "Документация", 
+
+		"close_mathtype_popup" : "Закрыть MathType"
 	}
 }
 

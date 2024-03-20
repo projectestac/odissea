@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Nombre de discussions';
 $string['numberdiscussions_help'] = 'Ce réglage détermine le nombre de discussions à afficher';
 $string['pluginname'] = 'Informel';
-$string['privacy:metadata'] = 'Le plugin format informel n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format informel n’enregistre aucune donnée personnelle.';
 $string['sectionname'] = 'section';

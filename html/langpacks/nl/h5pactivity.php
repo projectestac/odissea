@@ -30,6 +30,7 @@ $string['answer_checked'] = 'Antwoord gecontroleerd';
 $string['answer_correct'] = 'Jouw antwoord is juist';
 $string['answer_fail'] = 'Fout antwoord';
 $string['answer_incorrect'] = 'Jouw antwoord is fout';
+$string['answer_noanswer'] = 'Geen';
 $string['answer_pass'] = 'Juist antwoord';
 $string['answer_text'] = 'Antwoordtekst';
 $string['answer_unchecked'] = 'Antwoord niet aangevinkt';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Letra-tamaina';
+$string['privacy:metadata'] = 'Letra-tamaina Atto-ko pluginak ez du datu pertsonalik biltzen.';

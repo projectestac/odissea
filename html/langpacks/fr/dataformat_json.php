@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Javascript Object Notation (.json)';
-$string['privacy:metadata'] = 'Le plugin format de données JavaScript Object Notation (JSON) n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format de données JavaScript Object Notation (JSON) n’enregistre aucune donnée personnelle.';
 $string['shortname'] = 'JavaScript Object Notation (JSON)';

@@ -65,6 +65,9 @@ $string['firstattempts'] = 'Erste Versuche';
 $string['firstattemptsavg'] = 'Durchschnitt bei erstem Versuch';
 $string['firstattemptscount'] = 'Anzahl der vollständig bewerteten ersten Versuche';
 $string['frequency'] = 'Frequenz';
+$string['getstatslockprogress'] = 'Warten auf laufende Aufgabe. Warten Sie bitte oder versuchen Sie es später noch einmal.';
+$string['getstatslocktimeout'] = 'Timeout bei der Statistikberechnungssperre';
+$string['getstatslocktimeoutdesc'] = 'Wie viele Sekunden auf eine Sperre gewartet werden muss, wenn versucht wird, eine Statistikberechnung für ein Quiz durchzuführen. Diese Einstellung dient hauptsächlich zum Testen. Ändern Sie sie nicht, es sei denn, Sie wissen, was Sie tun.';
 $string['highestattempts'] = 'bestbewerteter Versuch';
 $string['highestattemptsavg'] = 'Durchschnitt der bestbewerteten Versuche';
 $string['intended_weight'] = 'Beabsichtigte Gewichtung';
@@ -83,6 +86,7 @@ $string['negcovar_help'] = '<p>Die Bewertung dieser Frage in diesem Satz von Ver
 <p>Unsere Gleichung für eine effektive Fragen-Gewichtung kann in diesem Fall nicht berechnet werden. Die Berechnungen der effektiven Fragen-Gewichtung für andere Fragen in diesem Test sind gleich der effektiven Fragen-Gewichtung für diese Fragen, wenn den hervorgehobenen Fragen mit einer negativen Kovarianz die maximale Bewertung von Null gegeben wird.</p>
 <p>Wenn Sie einen Test bearbeiten und dieser/n Frage(n) mit einer negativen Kovarianz eine maximale Bewertung von Null zuweisen, wird die effektive Fragen-Gewichtung dieser Fragen Null sein und die echte effektive Fragen-Gewichtung anderer Fragen ist gleich der eben berechneten.</p>';
 $string['nogradedattempts'] = 'Bei diesem Quiz wurden keine Versuche gemacht oder alle Versuche beinhalten Fragen, die manueller Bewertung bedürfen.';
+$string['nostats'] = 'Die Statistikberechnung konnte nicht abgeschlossen werden. Möglicherweise läuft eine Berechnung mit langer Laufzeit. ersuchen Sie es bitte später noch einmal.';
 $string['nostudentsingroup'] = 'In dieser Gruppe sind bisher keine Teilnehmer/innen';
 $string['optiongrade'] = 'Teilweise Bewertung';
 $string['partofquestion'] = 'Teil der Frage';

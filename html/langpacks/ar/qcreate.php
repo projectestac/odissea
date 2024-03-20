@@ -35,6 +35,7 @@ $string['eventquestiongraded'] = 'سؤال تم منح علامته';
 $string['eventquestionregraded'] = 'سؤال تمت إعادة منح علامته';
 $string['exportnaming'] = 'إسبق أسماء الأسئلة المصدرة بـ';
 $string['modulename_link'] = 'mod/qcreate/view';
+$string['overview'] = 'نظرة عامة';
 $string['pagesize'] = 'عدد الأسئلة المعروضة لكل صفحة';
 $string['qcreateeventcloses'] = '{$a} يُغلق';
 $string['qcreateeventopens'] = '{$a} يُفتح';

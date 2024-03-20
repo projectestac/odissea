@@ -46,8 +46,8 @@ class com_wiris_util_sys_StoreCache implements com_wiris_util_sys_Cache{
 		if($s->exists()) {
 			try {
 				return haxe_io_Bytes::ofData($s->readBinary());
-			}catch(Exception $»e) {
-				$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			}catch(Exception $Â»e) {
+				$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 				$t = $_ex_;
 				{
 					haxe_Log::trace("Unable to read cache file \"" . $s->toString() . "\".", _hx_anonymous(array("fileName" => "StoreCache.hx", "lineNumber" => 43, "className" => "com.wiris.util.sys.StoreCache", "methodName" => "get")));
@@ -62,8 +62,8 @@ class com_wiris_util_sys_StoreCache implements com_wiris_util_sys_Cache{
 		$s = $this->getItemStore($key);
 		try {
 			$s->writeBinary($value->b);
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$t = $_ex_;
 			{
 				throw new HException("Unable to write the cache file \"" . $s->toString() . "\".");
@@ -74,12 +74,12 @@ class com_wiris_util_sys_StoreCache implements com_wiris_util_sys_Cache{
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	function __toString() { return 'com.wiris.util.sys.StoreCache'; }
 }

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventreportviewed'] = 'Показан отчет об участии.';
+$string['eventreportviewed'] = 'Просмотрен отчет об участии';
 $string['nologreaderenabled'] = 'ПО для чтения журналов не включено';
 $string['page-report-participation-index'] = 'Отчет об участии в курсе';
 $string['page-report-participation-x'] = 'Любой отчет об участии';

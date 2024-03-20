@@ -126,7 +126,7 @@ O comentário efetuado em \'{$a->commenttime}\' à sua pergunta \'{$a->questionn
 Comentário apagado: \'{$a->commenttext}\'
 
 Pode rever a pergunta aqui: {$a->questionurl}.';
-$string['emailcommentdeletedsmall'] = 'O comentário à sua pergunta foi apagado por {$a->actorname}.';
+$string['emailcommentdeletedsmall'] = 'O comentário à sua pergunta \'{$a->questionname}\' foi apagado por {$a->actorname}.';
 $string['emailcommentdeletedsubject'] = 'Comentário apagado da pergunta: {$a->questionname}';
 $string['emaildigestbody'] = 'O resumo das notificações {$a->digesttype} da atividade Auto-Teste \'<b>{$a->modulename}</b>\', está disponível aqui:';
 $string['emaildigestbody_section_content'] = 'A sua pergunta <b>{$a->questionname}</b> foi <b>{$a->actiontype}</b> por <b>{$a->actorname}</b>';

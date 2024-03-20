@@ -113,11 +113,9 @@ $string['groupmembers'] = 'Membri del gruppo';
 $string['groupmemberssee'] = 'Visualizza membri del gruppo';
 $string['groupmembersselected'] = 'Membri del gruppo selezionato';
 $string['groupmode'] = 'Modalità gruppo';
-$string['groupmode_help'] = 'L\'impostazione ha 3 opzioni:
-
-* Senza gruppi
-* Gruppi separati - ciascun partecipante è membro del gruppo al quale è stato assegnato e non ha facoltà di vedere i lavoro svolto dai membri degli altri gruppi
-* Gruppi visibili - ciascun partecipante è membro del gruppo al quale è stato assegnato ma può vedere il lavoro svolto dagli altri gruppi.
+$string['groupmode_help'] = '* Senza gruppi
+* Gruppi separati : ciascun partecipante è membro del gruppo al quale è stato assegnato e non ha facoltà di vedere i lavoro svolto dai membri degli altri gruppi
+* Gruppi visibili: ciascun partecipante è membro del gruppo al quale è stato assegnato ma può vedere il lavoro svolto dagli altri gruppi.
 
 La modalità gruppo definita nelle impostazioni del corso è la modalità di default per le attività del corso. La modalità gruppo può essere gestita per ciascuna attività del corso purché l\'attività supporti i gruppi e la modalità gruppo non sia stata forzata a livello di corso.';
 $string['groupmodeforce'] = 'Forza modalità gruppo';

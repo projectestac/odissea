@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cursorinfo'] = 'Une flèche indique l\'emplacement où les nouveaux éléments de la bibliothèque seront insérés.';
-$string['editequation'] = 'Éditer équation à l\'aide de <a href="{$a}" target="_blank">TeX</a>';
+$string['cursorinfo'] = 'Une flèche indique l’emplacement où les nouveaux éléments de la bibliothèque seront insérés.';
+$string['editequation'] = 'Éditer équation à l’aide de <a href="{$a}" target="_blank">TeX</a>';
 $string['librarygroup1'] = 'Opérateurs';
-$string['librarygroup1_desc'] = 'Commandes TeX affichées dans l\'onglet opérateurs.';
+$string['librarygroup1_desc'] = 'Commandes TeX affichées dans l’onglet opérateurs.';
 $string['librarygroup2'] = 'Flèches';
-$string['librarygroup2_desc'] = 'Commandes TeX affichées dans l\'onglet flèches.';
+$string['librarygroup2_desc'] = 'Commandes TeX affichées dans l’onglet flèches.';
 $string['librarygroup3'] = 'Symboles grecs';
-$string['librarygroup3_desc'] = 'Commandes TeX affichées dans l\'onglet symboles grecs.';
+$string['librarygroup3_desc'] = 'Commandes TeX affichées dans l’onglet symboles grecs.';
 $string['librarygroup4'] = 'Avancé';
-$string['librarygroup4_desc'] = 'Commandes TeX affichées dans l\'onglet avancé.';
-$string['pluginname'] = 'Éditeur d\'équations';
-$string['preview'] = 'Prévisualisation de l\'équation';
-$string['privacy:metadata'] = 'Le plugin atto_equation n\'enregistre aucune donnée personnelle.';
+$string['librarygroup4_desc'] = 'Commandes TeX affichées dans l’onglet avancé.';
+$string['pluginname'] = 'Éditeur d’équations';
+$string['preview'] = 'Prévisualisation de l’équation';
+$string['privacy:metadata'] = 'Le plugin atto_equation n’enregistre aucune donnée personnelle.';
 $string['saveequation'] = 'Enregistrer équation';
-$string['settings'] = 'Réglages de l\'éditeur d\'équations';
+$string['settings'] = 'Réglages de l’éditeur d’équations';
 $string['update'] = 'Modifier';

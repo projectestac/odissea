@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'Accessibilità';
-$string['accesshelp'] = 'Assistenza accessibilità';
+$string['accesshelp'] = 'Aiuto accessibilità';
 $string['accesskey'] = 'Tasti di accesso rapido, {$a}';
 $string['accessstatement'] = 'Dichiarazione di accessibilità';
 $string['activitynext'] = 'Attività successiva';

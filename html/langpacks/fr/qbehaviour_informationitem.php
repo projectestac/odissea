@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Comportement des éléments d\'information';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Comportement des éléments d\'information n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Comportement des éléments d’information';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Comportement des éléments d’information n’enregistre aucune donnée personnelle.';
 $string['seen'] = 'Vu';

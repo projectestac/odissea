@@ -44,7 +44,7 @@ $string['bigbluebuttonbn:publishrecordings'] = 'نشر التسجيلات';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'إلغاء حماية التسجيلات';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'إلغاء نشر التسجيلات';
 $string['bigbluebuttonbn:view'] = 'معاينة غرفة BBB';
-$string['bigbluebuttondisablednotification'] = 'لقد تم تعطيل وحدة نشاط BigBlueButton ونشاطات المساقات المتعلقة به لم تعد متاحة. قبل إعادة تمكين هذه الإضافة، يرجى التأكد من أنك قد قرأت  ووافقت على <a href="{$a}" target="_blank">اتفاقية معالجة البيانات</a> مع شركة Blindside Networks Inc.';
+$string['bigbluebuttondisablednotification'] = 'لقد تم تعطيل وحدة نشاط BigBlueButton ونشاطات المقررات المتعلقة به لم تعد متاحة. قبل إعادة تمكين هذه الإضافة، يرجى التأكد من أنك قد قرأت  ووافقت على <a href="{$a}" target="_blank">اتفاقية معالجة البيانات</a> مع شركة Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'وحدة نشاط BBB معطلة.';
 $string['cachedef_currentfetch'] = 'بيانات لاستعراض أي تسجيلات تم جلبها مؤخرًا.';
 $string['cachedef_recordings'] = 'البيانات الوصفية للتسجيل';
@@ -121,7 +121,7 @@ $string['config_importrecordings_description'] = 'هذه الإعدادات مت
 $string['config_importrecordings_enabled'] = 'استيراد التسجيلات مُمَكَّن';
 $string['config_importrecordings_enabled_description'] = 'عند تمكينه مع تمكين ميزة التسجيل، سيكون ممكنًا استيراد التسجيلات من مقررات دراسية مختلفة إلى النشاط.';
 $string['config_importrecordings_from_deleted_enabled'] = 'استيراد التسجيلات من نشاطات محذوفة مُمَكَّن';
-$string['config_importrecordings_from_deleted_enabled_description'] = 'عند تمكين ميزة التسجيل والاستيراد ، فمن الممكن استيراد التسجيلات من الأنشطة التي لم تعد موجودة في المساق.';
+$string['config_importrecordings_from_deleted_enabled_description'] = 'عند تمكين ميزة التسجيل والاستيراد ، فمن الممكن استيراد التسجيلات من الأنشطة التي لم تعد موجودة في المقرر.';
 $string['config_locksettings'] = 'التهيئة لإعدادات التأمين';
 $string['config_locksettings_description'] = 'هذه الإعدادات تُمكن أو تُعطل الخيارات في واجهة المستخدم لإعدادات التأمين، وكذلك تعرِّف القيم الافتراضية لتلك الخيارات.';
 $string['config_meetingevents_enabled'] = 'تسجيل الجلسات المباشرة';
@@ -269,7 +269,7 @@ $string['guest_invitation_small_message'] = 'مرحبًا،
 كلمة المرور: {$a->guestpassword}
 
 إن كنت بحاجة إلى مساعدة، يرجى التواصل مع {$a->sender}.';
-$string['guest_invitation_subject'] = 'الدعوة: {$a->name} وهي جلسة ضمن المساق {$a->course_fullname}';
+$string['guest_invitation_subject'] = 'الدعوة: {$a->name} وهي جلسة ضمن المقرر {$a->course_fullname}';
 $string['guestaccess_activitynotfound'] = 'تعذر العثور على النشاط.';
 $string['guestaccess_add'] = 'إضافة الضيوف';
 $string['guestaccess_add_no_id'] = 'لم يتم تقديم مُعرَّف مثيل BigblueButton.';

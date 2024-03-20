@@ -1,0 +1,271 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'repository', language 'ro', version '4.1'.
+ *
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['accessiblefilepicker'] = 'Selector de fișiere accesibil';
+$string['activaterep'] = 'Depozite active';
+$string['activerepository'] = 'Plugin-uri depozit disponibile';
+$string['activitybackup'] = 'Activitate de backup';
+$string['add'] = 'Adăugă';
+$string['addfile'] = 'Adăugați ...';
+$string['addfiletext'] = 'Adăugați fișier';
+$string['addplugin'] = 'Adaugă un plugin depozit';
+$string['aliaseschange'] = 'Există {$a} alias / fișiere de comenzi rapide care folosesc acest fișier ca sursă. Dacă continuați, acele aliasuri vor fi convertite în copii adevărate.';
+$string['allowexternallinks'] = 'Permiteți link-uri externe';
+$string['areacategoryintro'] = 'Introducerea categoriei';
+$string['areacourseintro'] = 'Introducerea cursului';
+$string['areacourseoverviewfiles'] = 'Imaginea cursului';
+$string['areamainfile'] = 'Fișier principal';
+$string['arearoot'] = 'Sistem';
+$string['areauserbackup'] = 'Backup utilizator';
+$string['areauserdraft'] = 'Schițe';
+$string['areauserpersonal'] = 'Fișiere private';
+$string['areauserprofile'] = 'Profil';
+$string['attachedfiles'] = 'Fișiere atașate';
+$string['attachment'] = 'Atașament';
+$string['author'] = 'Autor';
+$string['automatedbackup'] = 'Backup-uri automate';
+$string['back'] = 'Înapoi';
+$string['backtodraftfiles'] = 'Înapoi la administrarea fișierelor schiță';
+$string['cachecleared'] = 'Fișierele cache sunt eliminate';
+$string['cacheexpire'] = 'Cache expiră';
+$string['cannotaccessparentwin'] = 'Când utilizați HTTPS, depozitul nu este actualizat automat. În schimb, trebuie să reveniți la selectorul de fișiere și să selectați din nou depozitul.';
+$string['cannotdelete'] = 'Nu se poate șterge acest fișier.';
+$string['cannotdownload'] = 'Nu poți descărca acest fișier';
+$string['cannotdownloaddir'] = 'Nu poți descărca acest dosar';
+$string['cannotinitplugin'] = 'Apelul către plugin_init nu a reușit';
+$string['cannotunzipcontentunreadable'] = 'Nu se poate dezarhiva acest fișier deoarece nu se poate citi conținutul fișierului.';
+$string['cannotunzipextractfileerror'] = 'Nu se poate dezarhiva acest fișier deoarece unul sau mai multe dintre fișierele sale nu pot fi citite.';
+$string['cannotunzipquotaexceeded'] = 'Nu se poate dezarhiva acest fișier, deoarece dimensiunea maximă permisă în această zonă de schiță va fi depășită.';
+$string['choosealink'] = 'Alege o legătură ...';
+$string['chooselicense'] = 'Alege licență';
+$string['chooselicense_help'] = 'Urmați aceste linkuri pentru informații suplimentare despre opțiunile de licență disponibile:';
+$string['cleancache'] = 'Șterge fișierele mele cache';
+$string['close'] = 'Închide';
+$string['commonrepositorysettings'] = 'Setări obișnuite ale depozitelor';
+$string['configallowexternallinks'] = 'Această opțiune permite tuturor utilizatorilor să aleagă dacă fișierele media sunt sau nu copiate în Moodle. În cazul în care această opțiune este dezactivată, fișierele media sunt întotdeauna copiate în Moodle (de obicei, este cea mai bună opțiune pentru integritatea datelor și pentru securitate). În cazul în care această opțiune este activă, utilizatorii pot alege dacă fișierele sunt copiate în Moodle de fiecare dată când adaugă fișiere media unui text.';
+$string['configcacheexpire'] = 'Perioada de timp în care fișierele sunt păstrate sub formă cache la nivel local (în secunde) în timpul căutării în depozitele externe.';
+$string['configgetfiletimeout'] = 'Timeout în câteva secunde pentru descărcarea unui fișier extern în Moodle.';
+$string['configsaved'] = 'Configurare salvată!';
+$string['configsyncfiletimeout'] = 'Timeout în secunde pentru sincronizarea dimensiunii fișierului extern.';
+$string['configsyncimagetimeout'] = 'Timp de expirare în secunde pentru descărcarea unui fișier imagine din depozitul extern în timpul sincronizării.';
+$string['confirmdelete'] = 'Sunteți sigur că doriți să ștergeți depozitul {$a}? Dacă alegeți "Continuă și descarcă", referințele fișierului despre conținutul extern vor fi descărcate în Moodle. S-ar putea să fie nevoie de mult timp pentru procesare.';
+$string['confirmdeletefile'] = 'Sunteți sigur că doriți să ștergeți acest fișier?';
+$string['confirmdeletefilewithhref'] = 'Sunteți sigur că doriți să ștergeți acest fișier? Există {$a} fișiere alias/ shortcut-uri care folosesc acest fișier ca fiind sursa lor. Dacă continuați, atunci aceste alias-uri vor fi convertite în copii autentice.';
+$string['confirmdeletefolder'] = 'Sunteți sigur că doriți să ștergeți acest fișier? Toate fișierele și sub-directoarele vor fi șterse.';
+$string['confirmdeleteselectedfile'] = 'Sunteți sigur că doriți să ștergeți fișierul(e) slectat(e)?';
+$string['confirmremove'] = 'Sunteți sigur că doriți să ștergeți acest plugin depozit, opțiunile sale și <strong>toate exemplele sale</strong> - {$a}? Dacă alegeți "Continuă și descarcă", referințele despre fișier către conținutul extern vor fi descărcate în Moodle. S-ar putea să fie nevoie de o perioadă de timp pentru procesare.';
+$string['confirmrenamefile'] = 'Sigur doriți să redenumiți / mutați acest fișier?';
+$string['confirmrenamefolder'] = 'Sunteți sigur că doriți să mutați/redenumiți acest fișier? Orice fișiere alias/shortcut-uri care fac referire la fișiere din acest folder vor fi convertite în copii autentice.';
+$string['continueuninstall'] = 'Continuă';
+$string['continueuninstallanddownload'] = 'Continuă și descarcă';
+$string['copying'] = 'Se copiază';
+$string['coursebackup'] = 'Backup-uri curs';
+$string['create'] = 'Creare';
+$string['createfolder'] = 'Creează folder';
+$string['createfolderfail'] = 'Nu se poate crea acest folder';
+$string['createfoldersuccess'] = 'Creare folderul cu succes';
+$string['createinstance'] = 'Creați o instanță de depozit';
+$string['createrepository'] = 'Creați o instanță de depozit';
+$string['createxxinstance'] = 'Creați instanță "{$a}"';
+$string['date'] = 'Data';
+$string['datecreated'] = 'Creat';
+$string['deleted'] = 'Depozit șters';
+$string['deleterepository'] = 'Ștergeți acest depozit';
+$string['detailview'] = 'Vezi detalii';
+$string['dimensions'] = 'Dimensiuni';
+$string['disabled'] = 'Dezactivat';
+$string['displayasdetails'] = 'Afișează ca detalii de fișiere';
+$string['displayasicons'] = 'Afișează ca pictograme ale fișierelor';
+$string['displayastree'] = 'Afișează ca fișier tree';
+$string['displaydetails'] = 'Arată folderul cu detaliile fișierului';
+$string['displayicons'] = 'Afișează folderul cu pictogramele fișierului';
+$string['displaytree'] = 'Afișează folderul sub formă de arbore';
+$string['download'] = 'Descarcă';
+$string['downloadallfiles'] = 'Descarcă toate fișierele';
+$string['downloadfolder'] = 'Descarcă toate';
+$string['downloadsucc'] = 'Fișierul a fost descărcat cu succes';
+$string['draftareanofiles'] = 'Nu poate fi descărcat, deoarece nu există fișiere atașate';
+$string['editrepositoryinstance'] = 'Editare instanță depozit';
+$string['emptylist'] = 'Listă goală';
+$string['emptytype'] = 'Nu se poate crea tipul de depozit: numele tipului este gol';
+$string['enablecourseinstances'] = 'Permite utilizatorilor să adauge o instanță depozit în cursul';
+$string['enableuserinstances'] = 'Permite utilizatorilor să adauge o instanță depozit în contextul utilizator';
+$string['enter'] = 'Introduce';
+$string['entername'] = 'Vă rugăm să introduceți numele dosarului';
+$string['enternewname'] = 'Vă rugăm introduceți numele fișierului nou';
+$string['error'] = 'A apărut o eroare necunoscută!';
+$string['errordoublereference'] = 'Nu se poate suprascrie fișierul cu un link pentru că există deja link-uri către acest fișier.';
+$string['errornotyourfile'] = 'Puteți alage doar fișierul care a fost adăugat de dumneavoastră.';
+$string['errorpostmaxsize'] = 'Fișierul pe care ați încercat să îl încărcați este prea mare pentru ca serverul să îl poată procesa.';
+$string['erroruniquename'] = 'Denumirea depozitului trebuie să fie unică.';
+$string['errorwhilecommunicatingwith'] = 'Eroare în timpul comunicării cu depozitul de \'{$a}\'.';
+$string['errorwhiledownload'] = 'A apărut o eroare în timp ce se descărca fișierul: {$a}';
+$string['existingrepository'] = 'Depozitul există deja,';
+$string['federatedsearch'] = 'Căutare federativă';
+$string['fileexists'] = 'Numele de fișier este deja folosit, vă rugăm să alegeți alt nume';
+$string['fileexistsdialog_editor'] = 'Un fișier cu acest nume a fost deja atașat textului pe care îl editați';
+$string['fileexistsdialog_filemanager'] = 'Un fișier cu acest nume a fost deja atașat.';
+$string['fileexistsdialogheader'] = 'Fișierul există';
+$string['filename'] = 'Nume fișier';
+$string['filenotnull'] = 'Trebuie să selectați un fișier pentru upload.';
+$string['filepicker'] = 'Selector de fișiere';
+$string['filesaved'] = 'Fișierul a fost salvat';
+$string['filesizenull'] = 'Nu se poate determina mărimea fișierului.';
+$string['folderexists'] = 'Numele folderului este deja folosit, vă rugăm să folosiți alt nume';
+$string['foldernotfound'] = 'Dosarul nu a fost găsit';
+$string['folderrecurse'] = 'Folderul nu poate fi mutat în propriul său subfolder.';
+$string['getfile'] = 'Selectați acest fișier';
+$string['getfiletimeout'] = 'Timeout fișier';
+$string['help'] = 'Ajutor';
+$string['iconview'] = 'Vezi ca pictograme';
+$string['imagesize'] = '{$a->width} x {$a->height} px';
+$string['instance'] = 'instanță';
+$string['instancedeleted'] = 'Instanță eliminată';
+$string['instances'] = 'Instanțe depozit';
+$string['instancesforcourses'] = '{$a} Instanță(e) comune și generale în curs';
+$string['instancesforsite'] = '{$a} Instanță(e) comune și generale în site';
+$string['instancesforusers'] = '{$a} Exemplul(exemplele) privat(e) ale utilizatorului';
+$string['invalidfiletype'] = '{$a} tipul de fișier nu poate fi acceptat.';
+$string['invalidjson'] = 'Șir de caractere JSON invalid';
+$string['invalidparams'] = 'Parametrii invalizi';
+$string['invalidplugin'] = 'Plug-in depozit invalid {$a}';
+$string['invalidrepositoryid'] = 'ID depozit invalid';
+$string['isactive'] = 'Activ?';
+$string['keyword'] = 'Cuvinte cheie';
+$string['lastmodified'] = 'Modificat ultima dată';
+$string['license'] = 'Licență';
+$string['linkexternal'] = 'Legătură externă';
+$string['listview'] = 'Vezi ca listă';
+$string['loading'] = 'Încărcare ...';
+$string['login'] = 'Autentificare în contul dumneavoastră';
+$string['logintoaccount'] = 'Autentificați-vă în contul dumneavoastră {$a}';
+$string['logout'] = 'Logout';
+$string['lostsource'] = 'Eroare. Sursa lipsește. {$a}';
+$string['makefilecontrolledlink'] = 'Creați un link pentru fișier care să aibă accesul controlat';
+$string['makefileinternal'] = 'Faceți o copie a fișierului';
+$string['makefilelink'] = 'Link către fișierul extern';
+$string['makefilereference'] = 'Link către fișier';
+$string['manage'] = 'Gestionați depozite';
+$string['manageinstances'] = 'Admininstrează instanțele';
+$string['manageurl'] = 'Administrare';
+$string['manageuserrepository'] = 'Gestionați depozitele individuale';
+$string['missingsourcekey'] = 'Cheia sursă lipsește. Această cheie trebuie furnizată și pentru a prelua fișierul.';
+$string['moving'] = 'Mutarea';
+$string['name'] = 'Nume';
+$string['newfolder'] = 'Folder nou';
+$string['newfoldername'] = 'Numele folderului nou';
+$string['noenter'] = 'Nu este inserat nimic';
+$string['nofilesattached'] = 'Nu există fișiere atașate';
+$string['nofilesavailable'] = 'Nu sunt fișiere disponibile';
+$string['nofilesselected'] = 'Nu există fișiere selectate';
+$string['nolicenses'] = 'Nu există fișiere disponibile';
+$string['nomorefiles'] = 'Nu sunt permise mai multe atașamente';
+$string['nopathselected'] = 'Încă nu ați selectat calea de destinație (dublu click pe tree node entru a selecta)';
+$string['nopermissiontoaccess'] = 'Nu aveți permisiunea să accesați acest depozit.';
+$string['norepositoriesavailable'] = 'Ne pare rău, niciunul dintre depozitele dumneavoastră curente nu pot returna fișiere în formatul cerut.';
+$string['norepositoriesexternalavailable'] = 'Ne pare rău, niciunul dintre depozitele dumneavoastră curente nu  pot returna fișiere externe.';
+$string['noresult'] = 'Niciun rezultat al căutării';
+$string['notyourinstances'] = 'Nu puteți vizualiza/edita exemplele de depozite ale altui utilizator';
+$string['off'] = 'Activat, dar ascuns';
+$string['on'] = 'Activat și vizibil';
+$string['openpicker'] = 'Alegeți un fișier...';
+$string['operation'] = 'Operație';
+$string['original'] = 'Original';
+$string['originalextensionchange'] = 'Extensia originală a fișierului a fost modificată ca parte a modificării numelui fișierului. Schimbarea extensiei din „.{$a->originalextension}” în„.{$a->newextension}” poate duce la un fișier care nu poate fi deschis.';
+$string['originalextensionremove'] = 'Extensia de fișier originală a fost eliminată ca parte a modificării numelui fișierului. Eliminarea extensiei „.{$a}” va duce probabil la un fișier care nu poate fi deschis.';
+$string['overwrite'] = 'Suprascriere';
+$string['overwriteall'] = 'Suprascrie toate';
+$string['path'] = 'Cale';
+$string['plugin'] = 'Plugin-urile depozitului';
+$string['pluginerror'] = 'Erori în plugin-ul depozitului.';
+$string['pluginname'] = 'Numele plugin-ului depozitului';
+$string['pluginnamehelp'] = 'Dacă nu completați, se va folosi numele implicit';
+$string['popup'] = 'Faceți clic pe butonul "Autentificare" ca să te autentifici';
+$string['popupblockeddownload'] = 'Fereastra de download este blocată, vă rugăm să acceptați fereastra popup și să încercați din nou.';
+$string['preview'] = 'Previzualizare';
+$string['privacy:metadata:repository'] = 'Componenta Depozit stochează tipurile de depozit în subsistemul principal.';
+$string['privacy:metadata:repository_instances'] = 'Componenta plugin-uri Depozit stochează date de instanțe ale utilizatorilor din subsistemul de bază.';
+$string['privacy:metadata:repository_instances:name'] = 'Numele personalizat al instanței de depozit.';
+$string['privacy:metadata:repository_instances:password'] = 'Parola opțională configurată pentru instanța de depozit.';
+$string['privacy:metadata:repository_instances:timecreated'] = 'Data / ora de creare a instanței de depozit.';
+$string['privacy:metadata:repository_instances:timemodified'] = 'Data / ora modificării instanței de depozit.';
+$string['privacy:metadata:repository_instances:typeid'] = 'Tipul de ID al instanței de depozit.';
+$string['privacy:metadata:repository_instances:userid'] = 'ID-ul utilizatorului care deține instanța de depozit.';
+$string['privacy:metadata:repository_instances:username'] = 'Numele de utilizator opțional configurat pentru instanța de depozit.';
+$string['privatefilesof'] = '{$a} fișiere private';
+$string['readonlyinstance'] = 'Nu puteți edita/ șterge un exemplu read-only';
+$string['referencesexist'] = 'Există {$a} link-uri către acest fișier.';
+$string['referenceslist'] = 'Link-uri';
+$string['refresh'] = 'Actualizați';
+$string['refreshnonjsfilepicker'] = 'Vă rugăm să închideți această fereastră și reîncărcați selectorul de fișiere non-javascript';
+$string['removed'] = 'Depozit eliminat';
+$string['renameall'] = 'Redenumiți toate';
+$string['renameto'] = 'Redenumiți ca "{$a}"';
+$string['repositories'] = 'Depozitele';
+$string['repository'] = 'Depozit';
+$string['repositorycourse'] = 'Depozite pentru curs';
+$string['repositoryerror'] = 'Depozitul de la distanță a dat eroare: {$a}';
+$string['repositoryicon'] = 'Pictogramă depozit';
+$string['save'] = 'Salvare';
+$string['saveas'] = 'Salvare ca';
+$string['saved'] = 'Salvat';
+$string['saving'] = 'Salvare';
+$string['search'] = 'Căutați';
+$string['searching'] = 'Căutare în';
+$string['searchrepo'] = 'Căutare depozit';
+$string['sectionbackup'] = 'Backup secțiuni';
+$string['select'] = 'Selectare';
+$string['setmainfile'] = 'Setați fișierul principal';
+$string['setmainfile_help'] = 'Dacă există mai multe fișiere în folder, fișierul principal este cel care apare pe pagina de vizualizare. Alte fișiere, cum ar fi imagini sau clipuri video pot fi încorporate în ea. În filemanager fișierul principal are titlul cu litere îngroșate .';
+$string['settings'] = 'Setări';
+$string['setupdefaultplugins'] = 'Configurare plugin-uri depozitare implicite';
+$string['siteinstances'] = 'Instanțe depozite ale site-ului';
+$string['size'] = 'Dimensiune';
+$string['sourcekeymismatch'] = 'Adresa URL sursă nu se potrivește cu cheia sursă.';
+$string['submit'] = 'Trimite';
+$string['sync'] = 'Sincronizați';
+$string['syncfiletimeout'] = 'Timeout sincronizare fișiere';
+$string['syncimagetimeout'] = 'Timeout sincronizare imagine';
+$string['thumbview'] = 'Vezi ca pictograme';
+$string['title'] = 'Alegeți un fișier ...';
+$string['type'] = 'Tip';
+$string['typenotvisible'] = 'Tipul nu este vizibil';
+$string['undisclosedreference'] = '(Confidențial)';
+$string['undisclosedsource'] = '(Confidențial)';
+$string['unknownoriginal'] = 'Necunoscut';
+$string['unknownsource'] = 'Sursă necunoscută';
+$string['unzipped'] = 'Dezarhivat cu succes';
+$string['upload'] = 'Încărcați acest fișier';
+$string['uploading'] = 'Se încarcă ...';
+$string['uploadsucc'] = 'Fișierul a fost încărcat cu succes';
+$string['uselatestfile'] = 'Utilizați cel mai recent fișier';
+$string['usenonjsfilemanager'] = 'Deschide managerul de fișiere într-o fereastră nouă';
+$string['usenonjsfilepicker'] = 'Deschide selectorul de fișiere în fereastră nouă';
+$string['usercontextrepositorydisabled'] = 'Nu puteți edita acest depozit în contextul de utilizator';
+$string['wrongcontext'] = 'Nu puteți accesa acest context';
+$string['xhtmlerror'] = 'Probabil utilizați un header XHTML strict. Anumite componente  YUI nu funcționează în acest mod; vă rugăm să îl închideți.';
+$string['ziped'] = 'Folder comprimat cu succes';

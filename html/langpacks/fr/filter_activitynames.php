@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Liens automatiques des activités';
-$string['privacy:metadata'] = 'Le plugin Liens automatiques des activités n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Liens automatiques des activités n’enregistre aucune donnée personnelle.';

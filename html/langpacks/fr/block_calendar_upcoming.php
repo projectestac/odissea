@@ -29,4 +29,4 @@ $string['calendar_upcoming:addinstance'] = 'Ajouter un bloc événements à veni
 $string['calendar_upcoming:myaddinstance'] = 'Ajouter un bloc événements à venir au tableau de bord';
 $string['gotocalendar'] = 'Vers le calendrier…';
 $string['pluginname'] = 'Événements à venir';
-$string['privacy:metadata'] = 'Le bloc Événements à venir affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Événements à venir affiche seulement des données enregistrées à d’autres endroits.';

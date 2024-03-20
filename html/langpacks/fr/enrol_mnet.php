@@ -25,26 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_multiplehost'] = 'Des instances du plugin d\'inscription MNet existes déjà pour ce serveur. Une seule instance par serveur et/ou une pour tous les serveurs est autorisée.';
-$string['instancename'] = 'Nom de la méthode d\'inscription';
-$string['instancename_help'] = 'Vous pouvez renommer cette instance du plugin d\'inscription MNet. Si le champ n\'est pas renseigné, le nom par défaut sera utilisé. Ce nom comprend le nom du serveur distant et le rôle attribué à ses utilisateurs.';
-$string['mnet:config'] = 'Configurer les instances d\'inscription MNet';
+$string['error_multiplehost'] = 'Des instances du plugin d’inscription MNet existes déjà pour ce serveur. Une seule instance par serveur et/ou une pour tous les serveurs est autorisée.';
+$string['instancename'] = 'Nom de la méthode d’inscription';
+$string['instancename_help'] = 'Vous pouvez renommer cette instance du plugin d’inscription MNet. Si le champ n’est pas renseigné, le nom par défaut sera utilisé. Ce nom comprend le nom du serveur distant et le rôle attribué à ses utilisateurs.';
+$string['mnet:config'] = 'Configurer les instances d’inscription MNet';
 $string['mnet_enrol_description'] = 'En publiant ce service, vous autorisez les administrateurs de {$a} à inscrire leurs étudiants à des cours sur votre Moodle.<br />
 <ul>
-<li><em>Dépendance</em> : vous devez également <strong>vous abonner</strong> au service SSO (fournisseur d\'identité) de {$a}.</li>
+<li><em>Dépendance</em> : vous devez également <strong>vous abonner</strong> au service SSO (fournisseur d’identité) de {$a}.</li>
 <li><em>Dépendance</em> : vous devez également <strong>publier</strong> le service SSO (fournisseur de service) pour {$a}.</li>
 </ul><br />
 En vous abonnant à ce service, vous pourrez inscrire vos étudiants aux cours sur {$a}.<br />
 <ul>
-<li><em>Dépendance</em> : vous devez également <strong>publier</strong> le service SSO (fournisseur d\'identité) pour {$a}.</li>
+<li><em>Dépendance</em> : vous devez également <strong>publier</strong> le service SSO (fournisseur d’identité) pour {$a}.</li>
 <li><em>Dépendance</em> : vous devez également <strong>vous abonner</strong> au service SSO (fournisseur de service) de {$a}.</li>
 </ul><br />';
-$string['mnet_enrol_name'] = 'Service d\'inscription à distance';
+$string['mnet_enrol_name'] = 'Service d’inscription à distance';
 $string['pluginname'] = 'Inscriptions MNet';
-$string['pluginname_desc'] = 'Permet à un serveur MNet distant d\'inscrire ses utilisateurs dans nos cours.';
-$string['privacy:metadata'] = 'Le plugin Inscriptions MNet n\'enregistre aucune donnée personnelle.';
+$string['pluginname_desc'] = 'Permet à un serveur MNet distant d’inscrire ses utilisateurs dans nos cours.';
+$string['privacy:metadata'] = 'Le plugin Inscriptions MNet n’enregistre aucune donnée personnelle.';
 $string['remotesubscriber'] = 'Serveur distant';
-$string['remotesubscriber_help'] = 'Sélectionnez « Tous les serveurs » pour ouvrir ce cours à tous les serveurs MNet auxquels nous offrons le service d\'inscription à distance. Alternativement, un seul serveur peut être sélectionné pour ne donner accès à ce cours qu\'à ses utilisateurs.';
+$string['remotesubscriber_help'] = 'Sélectionnez « Tous les serveurs » pour ouvrir ce cours à tous les serveurs MNet auxquels nous offrons le service d’inscription à distance. Alternativement, un seul serveur peut être sélectionné pour ne donner accès à ce cours qu’à ses utilisateurs.';
 $string['remotesubscribersall'] = 'Tous les serveurs';
 $string['roleforremoteusers'] = 'Rôles pour utilisateurs distants';
 $string['roleforremoteusers_help'] = 'Le rôle qui sera attribué aux utilisateurs provenant du serveur sélectionné';

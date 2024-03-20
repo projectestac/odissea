@@ -33,4 +33,5 @@ $string['honestycheckrequiredoption'] = 'debe ser recoñecida antes de iniciar u
 $string['honestycheckstatement'] = 'Entendo que é importante que o intento que estou a piques de facer sexa un traballo totalmente meu. Entendo que é o que constituiría un plaxio ou unha axuda fraudulenta, e non realizarei tales actividades.';
 $string['notrequired'] = 'non requirida';
 $string['pluginname'] = 'Regra de acceso á declaración de recoñecemento de plaxio';
+$string['privacy:metadata'] = 'O complemento de Regras de acceso para recoñecer a declaración de plaxio non almacena ningún dato persoal.';
 $string['youmustagree'] = 'Ten que aceptar esta declaración antes de iniciar a proba.';

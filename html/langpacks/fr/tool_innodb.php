@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Convertisseur vers InnoDB';
-$string['privacy:metadata'] = 'Le plugin Convertisseur vers InnoDB n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Convertisseur vers InnoDB n’enregistre aucune donnée personnelle.';

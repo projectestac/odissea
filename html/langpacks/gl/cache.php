@@ -58,6 +58,7 @@ $string['cachedef_coursesectionspreferences'] = 'Preferencias da sección do cur
 $string['cachedef_databasemeta'] = 'Meta Información da base de datos';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas dun usuario concreto';
+$string['cachedef_file_imageinfo'] = 'Información da imaxe do ficheiro p. ex. dimensións';
 $string['cachedef_fontawesomeiconmapping'] = 'Asignación de iconas para a familia Awesome';
 $string['cachedef_grade_categories'] = 'Consulta de categoría de cualificación';
 $string['cachedef_grade_letters'] = 'Consultas de carta de cualificación';

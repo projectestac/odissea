@@ -664,7 +664,7 @@ $string['environmentxmlerror'] = 'Fehler beim Auslesen der Serverumgebungsdaten 
 $string['errordeletingconfig'] = 'Fehler beim Löschen der Konfigurationsdaten für das Plugin \'{$a}\'';
 $string['errorsetting'] = 'Einige Einstellungen konnten nicht gespeichert werden:';
 $string['errorwithsettings'] = 'Einige Einstellungen wurden wegen eines Fehlers nicht geändert:';
-$string['eventshandlersinuse'] = 'Die folgenden Plugins verwenden veraltete Verarbeitungsprozesse gemäß der \'Events 1 API\' \'{$a}\'. Aktualisieren Sie diese Plugins auf die \'Events 2 API\'. Informationen unter https://docs.moodle.org/dev/Event_2#Event_dispatching_and_observers.';
+$string['eventshandlersinuse'] = 'Die folgenden Plugins verwenden veraltete Handler für die  Events 1 API: \'{$a}\'. Aktualisieren Sie diese Plugins bitte, um die Events 2 API zu verwenden. Siehe https://docs.moodle.org/dev/Events_API#Event_dispatching_and_observers.';
 $string['everyonewhocan'] = 'Alle, die \'{$a}\' können';
 $string['exceptions'] = 'Ausnahmen';
 $string['execpathnotallowed'] = 'Das Setzen von Systempfaden ist in der config.php deaktiviert.';
@@ -811,19 +811,19 @@ $string['lockoutduration'] = 'Kontosperrdauer';
 $string['lockoutduration_desc'] = 'Die Kontosperrung wird automatisch nach dieser Zeit aufgehoben.';
 $string['lockoutemailbody'] = 'Guten Tag,
 
-Ihr Konto mit dem Anmeldenamen {$a->username} wurde nach mehreren ungültigen Login-Versuchen auf dem Server \'{$a->sitename}\' gesperrt.
+Ihr Konto mit dem Anmeldenamen \'{$a->username}\' wurde nach mehreren ungültigen Anmeldeversuchen auf dem Server \'{$a->sitename}\' gesperrt.
 
-Um das Konto sofort zu entsperren, gehen Sie auf folgende Adresse {$a->link}. In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
+Um das Konto sofort zu entsperren, gehen Sie auf die folgende Adresse {$a->link}. In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
-Um Hilfe zu bekommen, wenden Sie sich an {$a->admin}.
+Falls Sie Hilfe benötigen, wenden Sie sich an {$a->admin}.
 
 Ihr E-Learning-Team';
-$string['lockoutemailsubject'] = 'Ihr Konto auf \'{$a}\' wurde gesperrt';
+$string['lockoutemailsubject'] = 'Ihr Konto auf \'{$a}\' wurde gesperrt.';
 $string['lockouterrorunlock'] = 'Ungültige Daten zur Kontofreigabe';
 $string['lockoutthreshold'] = 'Schwelle zur Kontosperrung';
 $string['lockoutthreshold_desc'] = 'Nach wie vielen erfolglosen Anmeldeversuchen soll ein Nutzerkonto vorübergehend gesperrt werden? Mit dieser Option werden Angriffe auf Ihr System erschwert.';
-$string['lockoutwindow'] = 'Kontrollzeitraum zur Kontosperrung';
-$string['lockoutwindow_desc'] = 'Kontrollzeitraum für die Schwelle zur Kontosperrung. Wenn keine weiteren Fehlversuche erfolgten, wird der Zähler nach dieser Zeit zurückgesetzt.';
+$string['lockoutwindow'] = 'Beobachtungszeit zur Kontosperrung';
+$string['lockoutwindow_desc'] = 'Beobachtungszeit zur Kontosperrung. Wenn während dieser Zeit keine weiteren Fehlversuche erfolgten, wird der Zähler nach dieser Zeit zurückgesetzt.';
 $string['lockrequestcategory'] = 'Kursbereichsauswahl sperren';
 $string['log'] = 'Logdaten';
 $string['logguests'] = 'Gastzugriff loggen';
@@ -1302,6 +1302,8 @@ $string['sitemaintenancetitle'] = '{$a} wird gewartet';
 $string['sitemaintenancewarning'] = 'Die Website ist momentan im Wartungsmodus. Die Anmeldung ist ausschließlich für Administrator/innen möglich. <br /><a href="maintenance.php"> Wartungsmodus beenden </a>.';
 $string['sitemaintenancewarning2'] = 'Die Website ist momentan im Wartungsmodus. Die Anmeldung ist ausschließlich für Administrator/innen möglich. <br /><a href="{$a}"> Wartungsmodus beenden </a>.';
 $string['sitemenubar'] = 'Site-Navigation';
+$string['sitenameintitle'] = 'Website-Namen in den Seitentitel einbeziehen';
+$string['sitenameintitle_help'] = 'Mit dieser Einstellung wird der Website-Name am Ende des Seitentitels angehängt. Es wird empfohlen, den Website-Namen in den Seitentitel aufzunehmen, da dies die Barrierefreiheit der Website verbessert. Die besuchte Website ist so schnell zu identifizieren.';
 $string['sitepolicies'] = 'Sicherheitseinstellungen';
 $string['sitepolicy'] = 'URL zur Datenschutzinformation';
 $string['sitepolicy_help'] = 'Wenn Sie eine Datenschutzinformation verwenden, die alle Personen vor der Nutzung der Website akzeptieren müssen, können Sie hier die URL angeben. Die Einstellung ist nur wirksam, wenn die Methode Standard (core) gewählt wurde.';
@@ -1503,6 +1505,7 @@ $string['unsupportedphpversion74'] = 'PHP 7.4 (und höher) wird nicht unterstüt
 $string['unsupportedphpversion80'] = 'PHP 8.0 (und höher) wird nicht unterstützt.';
 $string['unsupportedphpversion81'] = 'PHP 8.1 (und höher) wird nicht unterstützt.';
 $string['unsupportedphpversion82'] = 'PHP Version 8.2 und höher werden nicht unterstützt';
+$string['unsupportedphpversion83'] = 'PHP 8.3 und höher werden nicht unterstützt';
 $string['unsuspenduser'] = 'Nutzerkonto aktivieren';
 $string['updateaccounts'] = 'Bestehende Nutzerkonten aktualisieren';
 $string['updateautocheck'] = 'Automatisch auf Aktualisierungen prüfen';
@@ -1517,7 +1520,7 @@ $string['updateavailableinstall'] = 'Aktualisierung ausführen';
 $string['updateavailableinstallall'] = 'Aktualisierungen ausführen ({$a})';
 $string['updateavailableinstallallhead'] = 'Verfügbare Aktualisierungen werden installiert.';
 $string['updateavailablenot'] = 'Moodle ist aktuell!';
-$string['updateavailablerecommendation'] = 'Sie sollten unbedingt die Software dieser Website auf die neueste Version aktualisieren, um alle neuen Sicherheits- und Fehlerkorrekturen zu erhalten.';
+$string['updateavailablerecommendation'] = 'Sie sollten unbedingt die Software dieser Website auf die neueste Version aktualisieren, um alle Sicherheits- und Fehlerkorrekturen zu erhalten.';
 $string['updatecomponent'] = 'Komponente aktualisieren';
 $string['updateminmaturity'] = 'Entwicklungsstand prüfen';
 $string['updateminmaturity_desc'] = 'Auf Aktualisierungen wird hingewiesen, sobald der verfügbare Code den ausgewählten Entwicklungsstand erreicht. Wenn Plugins Ihren Entwicklungsstand nicht dokumentieren, werden Aktualisierungen von Plugins unabhängig von dieser Einstellung trotzdem aufgeführt.';

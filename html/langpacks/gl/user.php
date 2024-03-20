@@ -157,3 +157,4 @@ $string['supportmessagesentforloggedoutuser'] = 'Teña coidado con esta mensaxe.
 $string['target:upcomingactivitiesdue'] = 'Actividades pendentes de entrega';
 $string['target:upcomingactivitiesdue_help'] = 'Este destino xera recordatorios para as actividades pendentes de entrega.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí están listadas todas as actividades vindeiras estimadas. Estes alumnos recibiron estas estimacións directamente.';
+$string['userprofile'] = 'Perfil do usuario';

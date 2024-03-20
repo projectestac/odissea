@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['Error'] = 'Erro';
-$string['Info'] = 'Informação';
-$string['Warning'] = 'Aviso';
 $string['absolutedeadline'] = 'Data limite das inscrições';
 $string['absolutedeadline_help'] = 'Marque esta opção para definir o momento após o qual não é permitido mais ações aos alunos.';
 $string['actionlink_delete'] = 'apagar';
@@ -311,7 +308,6 @@ $string['err_location'] = 'Tem de indicar um local!';
 $string['err_noslots'] = 'Nenhuma vaga foi selecionada!';
 $string['err_posint'] = 'Tem de inserir um número inteiro!';
 $string['err_startdate'] = 'A data de início não pode ser definida antes da data de hoje ({$a->now})!';
-$string['eval_allow_new_appointments'] = 'Permitir reinscrição';
 $string['eval_attended'] = 'Participou';
 $string['eval_feedback'] = 'Feedback';
 $string['eval_grade'] = 'Avaliar';
@@ -463,7 +459,6 @@ $string['groupmodeslotgroups'] = 'Criação de grupo por vaga vazia';
 $string['groupmodeslotgroupsappointment'] = 'Criação de grupo por vaga reservada';
 $string['groupoptions'] = 'Configurações do grupo';
 $string['grouporganizer_desc_hasgroup'] = 'Este organizador é para grupos. Ao clicar no botão de inscrição, todos os membros do seu grupo {$a->groupname} ficarão inscritos nesta vaga. Todos os membros do grupo podem mudar e comentar a inscrição.';
-$string['grouporganizer_desc_nogroup'] = 'Este organizador é para grupos. Os alunos podem inscrever os seus grupos em compromissos. Todos os membros do grupo podem mudar e comentar a inscrição.';
 $string['grouppicker'] = 'Escolher grupo';
 $string['groupwarning'] = 'Verifique abaixo as opções do grupo!';
 $string['headerfooter'] = 'Imprimir cabeçalho/rodapé';
@@ -489,8 +484,6 @@ $string['infobox_deadlines_title'] = 'Prazos limite';
 $string['infobox_description_title'] = 'Descrição do organizador';
 $string['infobox_feedback_title'] = 'Feedback';
 $string['infobox_group'] = 'O meu grupo: {$a->groupname}';
-$string['infobox_hidelegend'] = 'Ocultar legenda';
-$string['infobox_legend_title'] = 'Legenda';
 $string['infobox_messages_title'] = 'Mensagens do sistema';
 $string['infobox_messaging_title'] = '';
 $string['infobox_mycomments_title'] = 'Meus comentários';
@@ -501,7 +494,6 @@ $string['infobox_organizer_expires'] = 'Este organizador irá expirar {$a->date}
 $string['infobox_organizer_never_expires'] = 'Este organizador não expira.';
 $string['infobox_showfreeslots'] = 'Vagas livres';
 $string['infobox_showhiddenslots'] = 'Vagas ocultas';
-$string['infobox_showlegend'] = 'Mostrar legenda';
 $string['infobox_showmyslotsonly'] = 'As minhas vagas';
 $string['infobox_showregistrationsonly'] = 'Vagas reservadas';
 $string['infobox_showslots'] = 'Também vagas passadas';
@@ -517,20 +509,6 @@ $string['isgrouporganizer_help'] = 'Marque esta opção se pretender que este Or
 "Usar grupos existentes": um único membro do grupo reserva uma vaga para o grupo.
 "Criação de grupo por vaga vazia": É criado um grupo da disciplina para  cada nova vaga.
 "Criação de grupo por vaga reservada": É criado um grupo da disciplina para cada vaga reservada.';
-$string['legend_anonymous'] = 'Vaga anónima';
-$string['legend_comments'] = 'Comentários do aluno/professor';
-$string['legend_due'] = 'Vaga expirada';
-$string['legend_evaluated'] = 'Vaga avaliada';
-$string['legend_feedback'] = 'Feedback do professor';
-$string['legend_group_applicant'] = 'Requerente do grupo';
-$string['legend_halfanonymous'] = 'Visível apenas aos participantes da própria vaga';
-$string['legend_no_participants'] = 'Vaga não teve participantes';
-$string['legend_not_occured'] = 'O compromisso ainda não ocorreu';
-$string['legend_organizer_expired'] = 'Organizador expirou';
-$string['legend_past_deadline'] = 'Vaga fora do prazo';
-$string['legend_pending'] = 'Pendente de avaliação';
-$string['legend_section_details'] = 'Ícones de detalhes da vaga';
-$string['legend_section_status'] = 'Ícones de estado';
 $string['location'] = 'Local';
 $string['location_help'] = 'O local onde a vaga ocorre.';
 $string['locationlink'] = 'URL para o local';
@@ -550,20 +528,10 @@ $string['message_error_slot_full_group'] = 'Este intervalo de tempo já está oc
 $string['message_error_slot_full_single'] = 'Este intervalo de tempo não tem lugares vazios!';
 $string['message_error_unknown_unqueue'] = 'A sua entrada na lista de espera não pôde ser removida! Erro desconhecido.';
 $string['message_error_unknown_unregister'] = 'A sua inscrição não pode ser removida! Erro desconhecido.';
-$string['message_info_available'] = 'Existem {$a->freeslots} vagas vazias disponíveis para {$a->notregistered} utilizadores sem qualquer compromisso.';
-$string['message_info_available_group'] = 'Existem {$a->freeslots} vagas vazias disponíveis para {$a->notregistered} grupos sem qualquer compromisso.';
 $string['message_info_reminders_sent_pl'] = 'Foram enviados {$a->count} lembretes.';
 $string['message_info_reminders_sent_sg'] = 'Foi enviado {$a->count} lembrete.';
 $string['message_info_slots_added_pl'] = 'Foram adicionadas {$a->count} vagas.';
 $string['message_info_slots_added_sg'] = 'Foi adicionada {$a->count} vaga.';
-$string['message_info_slots_deleted'] = 'As seguintes vagas foram apagadas:<br/>
-{$a->deleted} vagas apagadas.<br/>
-{$a->notified} utilizadores foram notificados.';
-$string['message_info_slots_deleted_group'] = 'As seguintes vagas foram apagadas:<br/>
-{$a->deleted} vagas apagadas.<br/>
-{$a->notified} utilizadores foram notificados.';
-$string['message_warning_available'] = '<span style="color:red;">Aviso:</span> Existem {$a->freeslots} vagas vazias disponíveis para {$a->notregistered} utilizadores sem qualquer compromisso.';
-$string['message_warning_available_group'] = '<span style="color:red;">Aviso:</span> Existem {$a->freeslots} vagas vazias disponíveis para {$a->notregistered} grupos sem qualquer compromisso.';
 $string['message_warning_no_slots_added'] = 'Não foram adicionadas novas vagas!';
 $string['message_warning_no_slots_selected'] = 'Primeiro tem de selecionar, pelo menos, uma vaga!';
 $string['message_warning_no_visible_slots_selected'] = 'Primeiro tem de selecionar, pelo menos, uma vaga VISÍVEL!';
@@ -695,20 +663,16 @@ $string['printsubmit'] = 'Mostrar tabela de impressão';
 $string['queue'] = 'Filas de espera';
 $string['queue_help'] = 'As filas de espera permitem que os utilizadores se inscrevam num intervalo de tempo mesmo que o número máximo de participantes já tenha sido atingido.
 Os utilizadores são adicionados a uma fila de espera e atribuídos à vaga (por ordem) assim que a vaga se tornar disponível.';
-$string['queuebody'] = 'A sua inscrição para um intervalo de tempo foi promovida do estado de "lista de espera" para o estado "reservado".';
-$string['queuesubject'] = 'Organizador Moodle: Promoção na fila de espera';
 $string['recipientname'] = '&lt;nome do destinatário&gt;';
 $string['reg_status'] = 'Estado das inscrições';
 $string['reg_status_not_registered'] = 'Não inscrito';
 $string['reg_status_organizer_expired'] = 'Organizador expirado';
 $string['reg_status_registered'] = 'Inscrito';
 $string['reg_status_slot_attended'] = 'Participou';
-$string['reg_status_slot_attended_reapp'] = 'Participou, reinscrição permitida';
 $string['reg_status_slot_available'] = 'Vaga disponível';
 $string['reg_status_slot_expired'] = 'Vaga expirada';
 $string['reg_status_slot_full'] = 'Vaga preenchida';
 $string['reg_status_slot_not_attended'] = 'Não participou';
-$string['reg_status_slot_not_attended_reapp'] = 'Não participou, reinscrição permitida';
 $string['reg_status_slot_past_deadline'] = 'Vaga fora do prazo';
 $string['reg_status_slot_pending'] = 'Pendente de avaliação';
 $string['register_notify_teacher:queue:fullmessage'] = 'Olá {$a->receivername}!

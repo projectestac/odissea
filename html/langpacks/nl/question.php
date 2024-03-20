@@ -195,7 +195,7 @@ $string['exportcategory_help'] = 'Deze instelling bepaalt de categorie van waaru
 
 Bij sommige importformaten, zoals GIFT en Moodle XML, kun je categorie en contextgegevens opnemen in het exportbestand, waardoor je ze opnieuw kan aanmaken bij import (optioneel). Indien je dat wenst, moet je de nodige selectievakjes aanduiden.';
 $string['exporterror'] = 'Fouten opgetreden tijdens exporteren!';
-$string['exportfilename'] = 'quiz';
+$string['exportfilename'] = 'vragen';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportonequestion'] = 'Download deze vraag in Moodle XML-formaat';
 $string['exportquestions'] = 'Exporteer vragen naar bestand';

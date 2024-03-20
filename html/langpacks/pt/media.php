@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['audioextensions'] = 'Áudio: {$a}';
 $string['defaultheight'] = 'Altura predefinida';
-$string['defaultheightdesc'] = 'Altura do Leitor de Multimédia se a altura não for especificada e a altura atual do ficheiro de media não puder ser determinada pelo leitor.';
+$string['defaultheightdesc'] = 'Altura do leitor de multimédia se a altura não for especificada e a altura atual do ficheiro multimédia não puder ser determinada pelo leitor.';
 $string['defaultwidth'] = 'Largura predefinida';
-$string['defaultwidthdesc'] = 'Largura do Leitor de Multimédia se a largura não for especificada e a largura atual do ficheiro de media não puder ser determinada pelo leitor.';
+$string['defaultwidthdesc'] = 'Largura do leitor de multimédia se a largura não for especificada e a largura atual do ficheiro multimédia não puder ser determinada pelo leitor.';
 $string['extensions'] = 'Extensões: {$a}';
 $string['managemediaplayers'] = 'Gerir leitores de multimédia';
 $string['mediaformats'] = 'Leitores de multimédia disponíveis';

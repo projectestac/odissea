@@ -42,4 +42,4 @@ $string['invalidh5purl'] = 'URL non valide';
 $string['modaltitle'] = 'Insérer contenu H5P';
 $string['noh5pcontent'] = 'Pas de contenu H5P ajouté';
 $string['pluginname'] = 'Insérer H5P Tiny';
-$string['privacy:metadata'] = 'Le plugin H5P pour TinyMCE n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin H5P pour TinyMCE n’enregistre aucune donnée personnelle.';

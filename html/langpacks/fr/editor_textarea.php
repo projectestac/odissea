@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Zone de texte pur';
-$string['privacy:metadata'] = 'Le plugin Zone de texte pur n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Zone de texte pur n’enregistre aucune donnée personnelle.';

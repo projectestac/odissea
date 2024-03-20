@@ -126,7 +126,25 @@ $string['defaulttoggleborderradiustr_desc'] = 'Raio do canto superior direito do
 $string['defaulttoggleiconposition'] = 'Posição do ícone';
 $string['defaulttoggleiconposition_desc'] = 'Define se o ícone deve estar à esquerda ou à direita do texto do botão';
 $string['defaulttoggleiconset'] = 'Ícones do botão';
-$string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Seta</td><td>{$a->arrow}</td></tr><tr><td>Lâmpada</td><td>{$a->bulb}</td></tr><tr><td>Nuvem</td><td>{$a->cloud}</td></tr><tr><td>Olho</td><td>{$a->eye}</td></tr><tr><td>Pasta</td><td>{$a->folder}</td></tr><tr><td>Sinal de massa/td><td>{$a->groundsignal}</td></tr><tr><td>Díodo emissor de luz</td><td>{$a->led}</td></tr><tr><td>Ponto</td><td>{$a->point}</td></tr><tr><td>Pólo</td><td>{$a->power}</td></tr><tr><td>Botão rádio</td><td>{$a->radio}</td></tr><tr><td>Sorriso/td><td>{$a->smiley}</td></tr><tr><td>Quadrado</td><td>{$a->square}</td></tr><tr><td>Sol/Lua</td><td>{$a->sunmoon}</td></tr><tr><td>Interruptor</td><td>{$a->switch}</td></tr></tbody></table>';
+$string['defaulttoggleiconset_desc'] = '<table>
+  <tbody>
+    <tr><td>Seta</td><td>{$a->seta}</td></tr>
+    <tr><td>Lâmpada</td><td>{$a->lampada}</td></tr>
+    <tr><td>Nuvem</td><td>{$a->nuvem}</td></tr>
+    <tr><td>Olho</td><td>{$a->olho}</td></tr>
+    <tr><td>Pasta</td><td>{$a->pasta}</td></tr>
+    <tr><td>Sinal de Solo</td><td>{$a->sinaldesolo}</td></tr>
+    <tr><td>Díodo Emissor de Luz</td><td>{$a->led}</td></tr>
+    <tr><td>Ponto</td><td>{$a->ponto}</td></tr>
+    <tr><td>Alimentação</td><td>{$a->alimentacao}</td></tr>
+    <tr><td>Rádio</td><td>{$a->radio}</td></tr>
+    <tr><td>Sorriso</td><td>{$a->sorriso}</td></tr>
+    <tr><td>Quadrado</td><td>{$a->quadrado}</td></tr>
+    <tr><td>Sol / Lua</td><td>{$a->sollua}</td></tr>
+    <tr><td>Interruptor</td><td>{$a->interruptor}</td></tr>
+    <tr><td>Fonte de Ícones</td><td>{$a->fontedeicones}</td></tr>
+  </tbody>
+</table>';
 $string['defaulttoggleiconsize'] = 'Tamanho do ícone do botão';
 $string['defaulttoggleiconsize_desc'] = 'Tamanho do ícone: Pequeno = 16px, Médio = 24px e Grande = 32px.';
 $string['defaulttogglepersistence'] = 'Persistência dos botões';

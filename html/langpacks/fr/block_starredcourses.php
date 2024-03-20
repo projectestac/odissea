@@ -29,5 +29,5 @@ $string['displaycategories'] = 'Afficher les catégories';
 $string['displaycategories_help'] = 'Affiche la catégorie de cours dans le bloc cours favoris.';
 $string['nocourses'] = 'Aucun cours marqué comme favori';
 $string['pluginname'] = 'Cours favoris';
-$string['privacy:metadata'] = 'Le bloc cours favoris n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le bloc cours favoris n’enregistre aucune donnée personnelle.';
 $string['starredcourses:myaddinstance'] = 'Ajouter un bloc cours favoris au tableau de bord';

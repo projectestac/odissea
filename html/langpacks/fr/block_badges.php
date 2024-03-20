@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'Ajouter un bloc Derniers badges';
 $string['badges:myaddinstance'] = 'Ajouter un bloc Derniers badges au tableau de bord';
-$string['nothingtodisplay'] = 'Vous n\'avez pas de badge à afficher';
+$string['nothingtodisplay'] = 'Vous n’avez pas de badge à afficher';
 $string['numbadgestodisplay'] = 'Nombre de derniers badges à afficher';
 $string['pluginname'] = 'Derniers badges';
-$string['privacy:metadata'] = 'Le bloc Dernier badges affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Dernier badges affiche seulement des données enregistrées à d’autres endroits.';

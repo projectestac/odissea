@@ -81,6 +81,7 @@ $string['how_selectactivities_works'] = '活動の含みはどのように動作
 $string['how_selectactivities_works_help'] = '<p>手動で選択した活動をバーに含みます。「含まれる活動」に「選択された活動」が設定されていることを確認してください。</p>
 <p>活動完了設定が設定された活動のみ含むことができます。</p>
 <p>複数の活動を選択するにはCTRLキーを押したままにしてください。</p>';
+$string['indeterminate'] = '?';
 $string['lastonline'] = '最終コースアクセス';
 $string['mouse_over_prompt'] = '情報を表示するにはバーの上にマウスポインタを移動するかバーをタッチしてください。';
 $string['no_activities_config_message'] = '活動完了が設定された活動またはリソースがないか活動またはリソースが選択されていません。活動およびリソースの活動完了を設定した後、このブロックを設定してください。';
@@ -98,6 +99,7 @@ $string['pluginname'] = '完了プログレス';
 $string['privacy:metadata'] = '完了プログレスブロックは既存の完了データのみ表示します。';
 $string['progress'] = '進捗';
 $string['progressbar'] = '完了プログレス';
+$string['selectitem'] = '「 {$a} 」を選択する';
 $string['shortname'] = 'コース省略名';
 $string['showallinfo'] = 'すべての情報を表示する';
 $string['showinactive'] = '活動していない学生を概要に表示する';

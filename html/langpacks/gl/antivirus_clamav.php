@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Neste momento existe un problema co escaneo do AntiVirus. O seu ficheiro {$a->item} non foi cargado. Ténteo de novo máis tarde.';
 $string['clamfailed'] = 'Non foi posíbel executar Clam AV. A mensaxe de erro devolvida foi «{$a}». Esta é a saída de Clam:';
 $string['clamfailureonupload'] = 'Produciuse un fallo en ClamAV';
 $string['configclamactlikevirus'] = 'Tratar ficheiros como virus';
 $string['configclamdonothing'] = 'Tratar ficheiros como bos';
 $string['configclamfailureonupload'] = 'Se configurou o clam para comprobar ficheiros transferidos, mais a configuración é incorrecta ou hai un erro de execución por calquera motivo, que debe facer? Se escolle «Tratar ficheiros como virus», estes ficheiros serán enviados para a área de corentena ou serán eliminados. Se escolle «Tratar ficheiros como bos» os ficheiros serán enviados para o directorio de destino. De calquera xeito, cando falle o clam avisarase aos administradores. Se escolle «Tratar ficheiros como virus» e por algunha razón o clam continúa fallando (porque introduciu unha ruta de acceso a clam incorrecta), TODOS os ficheiros enviados moveranse para a área de corentena ou serán eliminados. Teña coidado á hora de escoller un destes axustes.';
+$string['configclamtryagain'] = 'Rexeitar o envío, ténteo de novo';
 $string['errorcantopensocket'] = 'A conexión ao «socket» de dominio Unix deu como resultado un erro {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV non responde; verifique o estado de execución do servizo.';
 $string['errornounixsocketssupported'] = 'Non se admite o transporte de socket de dominio Unix neste sistema. Use a opción da liña de ordes.';
@@ -44,5 +46,14 @@ $string['quarantinedir'] = 'Directorio de corentena';
 $string['runningmethod'] = 'Método de execución';
 $string['runningmethodcommandline'] = 'Liña de ordes';
 $string['runningmethoddesc'] = 'Método de execución do ClamAV. A liña de ordes úsase de xeito predeterminado, mais en sistemas Unix pódese obter un mellor desenvolvemento mediante o uso de «sockets» do sistema.';
+$string['runningmethodtcpsocket'] = 'Conectador TCP';
 $string['runningmethodunixsocket'] = '«Socket» do dominio Unix';
+$string['tcpsockethost'] = 'Nome do servidor do conectador TCP';
+$string['tcpsockethostdesc'] = 'Nome de dominio do servidor ClamAV';
+$string['tcpsocketport'] = 'Porto do conectador TCP';
+$string['tcpsocketportdesc'] = 'O porto a usar ao conectar ao ClamAV';
+$string['tries'] = 'Intentos de escaneo';
+$string['tries_desc'] = 'Número de intentos realizados por ClamAV se hai un erro durante o proceso de escaneo.';
+$string['tries_notice'] = 'O escaneo de Clamav tentouse {$a-> tries} vez(ces).
+{$a->notice}';
 $string['unknownerror'] = 'Produciuse un erro descoñecido con ClamAV.';

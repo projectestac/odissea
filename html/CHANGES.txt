@@ -4,6 +4,61 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 24.03.19
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.9+
+- Updated langpacks
+- Hot Potatoes: Upgraded module and question format
+- local_agora: Updated script to configure oAuth2 client for IDI
+- tool_oauth2: Fixed loading of form to create a custom service
+- Theme xtecboost: Reduced the size of the icons of the activities in the course view
+- Wiris: Upgraded all components
+
+
+Changes 24.01.25
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.8+
+- Updated langpacks
+- GeoGebra: Upgraded module
+- langs: Removed limitation by code
+- Wiris: Upgraded all components
+
+
+Changes 23.12.18
+---------------------------------------------------------------------------------------
+- Updated langpacks
+- lesson: Fixed Matching questions does not match with expected response (MDL-79937)
+- Theme xtecboost: Fixed scroll in list of conversations
+
+
+Changes 23.11.28
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.6+
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- Completion progress: Upgraded module
+- Wiris: Upgraded all components
+
+
+Changes 23.10.17
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.6
+- Updated langpacks
+- Question Type Numerical: Fixed PHP 8.x compatibility error
+- Wiris: Upgraded all components
+
+
+Changes 23.09.27
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.5+
+- Updated langpacks
+- Hot Potatoes: Upgraded module
+- Hot Potatoes: Upgraded question format
+- local_oauth: Upgraded module
+- Questionnaire: Upgraded module
+
+
 Changes 23.07.10
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.1.4+

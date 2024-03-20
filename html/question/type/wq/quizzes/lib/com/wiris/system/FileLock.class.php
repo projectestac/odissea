@@ -8,8 +8,8 @@ class com_wiris_system_FileLock {
 	public function release() {
 		try {
 			@unlink($this->filename);
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 			}
@@ -19,12 +19,12 @@ class com_wiris_system_FileLock {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static function getLock($file, $wait, $remaining) {
 		$startwait = haxe_Timer::stamp();
@@ -35,8 +35,8 @@ class com_wiris_system_FileLock {
 				if(($ft !== FALSE) && ($ft + 10 < time())) {
 					@unlink($lockfile);
 				}
-			}catch(Exception $»e) {
-				$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			}catch(Exception $Â»e) {
+				$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 				$e = $_ex_;
 				{
 				}
@@ -47,8 +47,8 @@ class com_wiris_system_FileLock {
 			}
 			@fclose($lh);
 			return new com_wiris_system_FileLock($lockfile);
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				if($remaining < 0) {

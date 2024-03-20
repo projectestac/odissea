@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Animation Flash';
-$string['pluginname_help'] = 'Fichiers avec l\'extension .swf. Pour des raisons de sécurité, ce filtre n\'est utilisé que dans des textes fiables.';
-$string['privacy:metadata'] = 'Le plugin média Animation Flash n\'enregistre aucune donnée personnelle.';
+$string['pluginname_help'] = 'Fichiers avec l’extension .swf. Pour des raisons de sécurité, ce filtre n’est utilisé que dans des textes fiables.';
+$string['privacy:metadata'] = 'Le plugin média Animation Flash n’enregistre aucune donnée personnelle.';

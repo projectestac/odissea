@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['availablecolors'] = 'Couleurs disponibles';
-$string['availablecolors_desc'] = 'Vous pouvez définir des couleurs disponibles en les inscrivant ici, comme vous souhaitez qu\'elles apparaissent dans le menu déroulant de couleurs de fond de police de caractères. Si vous souhaitez afficher un tableau de 4x4 couleurs, entrez 4 lignes de 4 couleurs en codes hexadécimaux, séparés par des espaces.<br><br> Changer ces valeurs affecte seulement l\'apparence du menu de Couleur de fond de Police de caractères, mais n\'affecte pas les textes colorés existants.';
+$string['availablecolors_desc'] = 'Vous pouvez définir des couleurs disponibles en les inscrivant ici, comme vous souhaitez qu’elles apparaissent dans le menu déroulant de couleurs de fond de police de caractères. Si vous souhaitez afficher un tableau de 4x4 couleurs, entrez 4 lignes de 4 couleurs en codes hexadécimaux, séparés par des espaces.<br><br> Changer ces valeurs affecte seulement l’apparence du menu de Couleur de fond de Police de caractères, mais n’affecte pas les textes colorés existants.';
 $string['custom'] = 'Couleur de fond de police de caractère personnalisée (en code hexadécimal)';
 $string['customcolor'] = 'Couleur de fond de police de caractère personnalisée';
 $string['hexadecimal'] = 'Hexadécimal :';
 $string['hsl'] = 'HSL :';
 $string['luminance'] = 'Luminance :';
 $string['pluginname'] = 'Plus de couleurs de fond de police';
-$string['privacy:metadata'] = 'Le plugin atto_morebackcolors n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_morebackcolors n’enregistre aucune donnée personnelle.';
 $string['rgb'] = 'RGB :';
 $string['saturation'] = 'Saturation ';
 $string['setting_custom'] = 'Permettre la personnalisation des couleurs';

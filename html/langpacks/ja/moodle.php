@@ -439,7 +439,8 @@ $string['courserequestdetails'] = 'あなたがリクエストしているコー
 $string['courserequestfailed'] = 'あなたのコースリクエストを何らかの理由で保存できませんでした。';
 $string['courserequestintro'] = 'あなたのコース作成をリクエストをするにはこのフォームを使用してください。<br />コース開設の理由を管理者が理解して承認するために必要な情報を可能な限りく<br />多く入力してください。';
 $string['courserequestreason'] = 'このコースを開設したい理由';
-$string['courserequestsuccess'] = 'あなたのコースリクエストが正常に保存されました。あなたのリクエスト承認の可否に関するメールが送信されます。';
+$string['courserequestroleerror'] = '新しいコース設定の作成者ロールが無効です。<a href="{$a}">ユーザポリシ</a>をご覧ください。';
+$string['courserequestsuccess'] = 'コースリクエストが送信されました。';
 $string['courserequestsupport'] = '管理者がこのリクエストを判断するための支援情報';
 $string['courserequestwarning'] = 'このコースをリクエストしたユーザは自動的に「 {$a} 」ロールが割り当てられた上で登録されます。';
 $string['courserestore'] = 'コースリストア';
@@ -452,7 +453,8 @@ $string['coursesearch_help'] = 'あなたは同時に複数の語句で検索で
 * +語句 : 厳密に語句に合致するもののみを検索します。
 * -語句 : この語句を含まないものを検索をします。';
 $string['coursesectionsummaries'] = 'コースセクション概要';
-$string['coursesectiontitle'] = 'コース: {$a->course} - {$a->sectionname}: {$a->sectiontitle}';
+$string['coursesectiontitle'] = '{$a->sectionname}: {$a->sectiontitle} | {$a->course}';
+$string['coursesectiontitleediting'] = '編集 {$a->sectionname}: {$a->sectiontitle} | {$a->course}';
 $string['coursesettings'] = 'コースデフォルト設定';
 $string['coursesmovedout'] = '{$a} からコースを移動しました。';
 $string['coursespending'] = '承認審査中コース';
@@ -460,6 +462,7 @@ $string['coursestart'] = 'コース開始';
 $string['coursesummary'] = 'コース概要';
 $string['coursesummary_help'] = 'あなたのコースの簡単な説明です。あなたがここに追加したコンテンツは検索可能です。';
 $string['coursetitle'] = 'コース: {$a->course}';
+$string['coursetitleediting'] = 'コース編集: {$a->course}';
 $string['courseupdates'] = 'コース更新内容';
 $string['coursevisibility'] = 'コース可視性';
 $string['coursevisibility_help'] = '* 表示: コースはコース一覧に表示されます。学生はアクセスできます。
@@ -978,14 +981,14 @@ $string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas (https://moodle.co
 
 このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
-詳細はMoodleライセンス情報をご覧ください: https://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
+詳細はMoodleライセンス情報をご覧ください: https://moodledev.io/general/license';
 $string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (https://moodle.com)
 
 このプログラムはフリーソフトウェアです。あなたはこれをフリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
 
 このプログラムは有用であることを願って頒布されますが*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
-詳細はMoodleライセンス情報をご覧ください: https://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
+詳細はMoodleライセンス情報をご覧ください: https://moodledev.io/general/license';
 $string['gpllicense'] = 'GPLライセンス';
 $string['grade'] = '評点';
 $string['gradenoun'] = '評点';
@@ -1834,7 +1837,7 @@ $string['rssarticles'] = '最近の記事のRSS数';
 $string['rsserror'] = 'RSSデータの読み込み中にエラーが発生しました。';
 $string['rsserrorauth'] = 'あなたのRSSリンクには有効な認証トークンが含まれていません。';
 $string['rsserrorguest'] = 'このフィードはデータへのアクセスにゲストアクセスを使用しますが、データを読むためのパーミッションがありません。このフィードのオリジナルロケーション (URL) に有効なユーザでアクセスした後、新しいRSSリンクを取得してください。';
-$string['rsskeyshelp'] = '<p>セキュリティおよびプライバシーを保証するため、RSSフィードURLにはユーザを識別するための特別なトークンを含みます。これにより、RSSフィード経由でアクセスできないMoodleエリアにユーザがアクセスすることを防ぎます。</p><p>このトークンはMoodleがRSSフィードを生成する場所にあなたが初回アクセスした時点で自動的に作成されます。RSSフィードトークンに問題が漏洩したと思われる場合、あなたはリセットリンクをクリックすることで新しいトークンをリクエストすることができます。この場合、あなたの現在のRSSフィードURLが無効になることに留意してください。</p>';
+$string['rsskeyshelp'] = '<p>セキュリティおよびプライバシーを保証するため、RSSフィードURLにはユーザを識別するための特別なトークンを含みます。これでRSSフィード経由でアクセスできないMoodleエリアにユーザがアクセスすることを防ぎます。</p><p>このトークンはMoodleがRSSフィードを生成する場所にあなたが初回アクセスした時点で自動的に作成されます。RSSフィードトークンに問題が漏洩したと思われる場合、あなたはリセットリンクをクリックすることで新しいトークンをリクエストすることができます。この場合、あなたの現在のRSSフィードURLが無効になることに留意してください。</p>';
 $string['rsstype'] = 'この活動のRSSフィード';
 $string['save'] = '保存';
 $string['saveandnext'] = '保存して次を表示する';
@@ -2307,7 +2310,7 @@ $string['weekhide'] = '{$a} からこの週を隠す';
 $string['weeklyoutline'] = 'ウィークリーアウトライン';
 $string['weeks'] = '週';
 $string['weekshow'] = '{$a} にこの週を表示する';
-$string['welcomeback'] = 'おかえりなさい {$a->lastname} さん! 👋';
+$string['welcomeback'] = 'こんにちは {$a->lastname} さん! 👋';
 $string['welcometocourse'] = '{$a} へようこそ';
 $string['welcometocoursetext'] = '{$a->coursename} へようこそ!
 

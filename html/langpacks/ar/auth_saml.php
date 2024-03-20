@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_saml_coursemapping_head'] = 'يمكن لـ IdP استعمال الاسم المختصر/المُعرَّف الخاص به للمقررات الدراسية. حدد في هذا المقطع التقابل ما بين مقررات دراسية IdP ومساقات مودل. يتقبل قيم متعددة مفصولة بفوارز.';
 $string['auth_saml_db_reset_button'] = 'إعادة تعيين القيم إلى إعدادات المصنع';
 $string['auth_saml_db_reset_error'] = 'خطأ عند إعادة ضبط قيم إضافة saml';
-$string['auth_saml_error_attribute_course_mapping'] = 'خطأ في أسماء السمات (الفهرس) لتعيين جدول المساق. تحقق من صياغة externalcoursemappingsql';
+$string['auth_saml_error_attribute_course_mapping'] = 'خطأ في أسماء السمات (الفهرس) لتعيين جدول المقرر الدراسي. تحقق من صياغة externalcoursemappingsql';
 $string['auth_saml_error_attribute_role_mapping'] = 'خطأ في أسماء السمات (الفهرس) لتعيين جدول الأدوار. تحقق من صياغة externalrolemappingsql';
 $string['auth_saml_error_authentication_process'] = 'خطأ في عملية المصادقة {\\$a}';
 $string['auth_saml_initialize_roles'] = 'تهيئة الدور';

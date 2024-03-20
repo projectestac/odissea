@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Behartu ikasleak Mobile aplikazioaren bidez sartzera (edo ez sartzera).';
 $string['label_access'] = 'Sarbide-mota:';
-$string['pluginname'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun baldintza';
-$string['privacy:metadata'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen';
+$string['pluginname'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun murrizketa';
+$string['privacy:metadata'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun murrizketa pluginak ez du datu pertsonalik biltzen';
 $string['requires_app'] = 'Mobile aplikazioa erabilita sartzea';
 $string['requires_notapp'] = 'Mobile aplikazioa erabili GABE sartzea';
 $string['title'] = 'Mobile aplikazioa';

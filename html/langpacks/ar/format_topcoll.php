@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['coursesectionactivityfurtherinformation'] = 'المعلومات الإضافية لصفحة المساق';
+$string['coursesectionactivityfurtherinformation'] = 'المعلومات الإضافية لصفحة المقرر';
 $string['coursesectionactivityfurtherinformationfeedback'] = 'إظهار معلومات الإفادة';
 $string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'إظهار معلومات الإفادة. بالنسبة إلى المعلمين / المشرفين، إظهار عدد التسليمات.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'إظهار معلومات الاختبار';
@@ -74,7 +74,7 @@ $string['settogglealignment_help'] = 'ضبط محاذاة النص في التب
 $string['settogglebackgroundcolour_help'] = 'تعيين لون خلفية التبديل.';
 $string['settogglebackgroundhovercolour_help'] = 'تعيين لون خلفية التبديل عند تحريك الماوس فوقه.';
 $string['showadditionalmoddata'] = 'إظهار معلومات إضافية عن: {$a} في المساق';
-$string['showadditionalmoddata_help'] = 'السماح لكل المستخدمين بمشاهدة الموعد النهائي للنشاط، والمساح للمستخدمين ذوي صلاحية التقييم بمشاهدة عدد تسليمات النشاطات في صفحة المساق.';
+$string['showadditionalmoddata_help'] = 'السماح لكل المستخدمين بمشاهدة الموعد النهائي للنشاط، والمساح للمستخدمين ذوي صلاحية التقييم بمشاهدة عدد تسليمات النشاطات في صفحة المقرر.';
 $string['small'] = 'صغير';
 $string['topcoll:changetogglealignment'] = 'تغيير أو إعادة تعيين محاذاة التبديل';
 $string['topcollclosed'] = 'إغلاق الكل';

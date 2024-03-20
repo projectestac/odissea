@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Cases à cocher';
 $string['pluginname'] = 'Cases à cocher';
-$string['privacy:metadata'] = 'Le composant Champ cases à cocher n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['privacy:metadata'] = 'Le composant Champ cases à cocher n’enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

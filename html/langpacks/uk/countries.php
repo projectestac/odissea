@@ -1,0 +1,276 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'countries', language 'uk', version '4.1'.
+ *
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['AD'] = 'Андорра';
+$string['AE'] = 'Об\'єднані Арабські Емірати';
+$string['AF'] = 'Афганістан';
+$string['AG'] = 'Antigua and Barbuda';
+$string['AI'] = 'Анґілья';
+$string['AL'] = 'Албанія';
+$string['AM'] = 'Вірменія';
+$string['AO'] = 'Анґола';
+$string['AQ'] = 'Антарктика';
+$string['AR'] = 'Аргентина';
+$string['AS'] = 'Американське Самоа';
+$string['AT'] = 'Австрія';
+$string['AU'] = 'Австралія';
+$string['AW'] = 'Аруба';
+$string['AX'] = 'Аландські острови';
+$string['AZ'] = 'Азербайджан';
+$string['BA'] = 'Bosnia and Herzegovina';
+$string['BB'] = 'Барбадос';
+$string['BD'] = 'Банґладеш';
+$string['BE'] = 'Бельгія';
+$string['BF'] = 'Буркіна-Фасо';
+$string['BG'] = 'Болгарія';
+$string['BH'] = 'Бахрейн';
+$string['BI'] = 'Бурунді';
+$string['BJ'] = 'Бенін';
+$string['BL'] = 'СантБарталам\'ю';
+$string['BM'] = 'Бермуди';
+$string['BN'] = 'Бруней';
+$string['BO'] = 'Bolivia (Plurinational State of)';
+$string['BQ'] = 'Bonaire, Sint Eustatius and Saba';
+$string['BR'] = 'Бразилія';
+$string['BS'] = 'Багами';
+$string['BT'] = 'Бутан';
+$string['BV'] = 'о. Буве';
+$string['BW'] = 'Ботсвана';
+$string['BY'] = 'Бєларусь';
+$string['BZ'] = 'Беліз';
+$string['CA'] = 'Канада';
+$string['CC'] = 'Кокосові (Кілінґ) Острови';
+$string['CD'] = 'Congo (the Democratic Republic of the)';
+$string['CF'] = 'Центральноафриканська Республіка';
+$string['CG'] = 'Конґо';
+$string['CH'] = 'Швейцарія';
+$string['CI'] = 'Côte d\'Ivoire';
+$string['CK'] = 'о-ви Кука';
+$string['CL'] = 'Чилі';
+$string['CM'] = 'Камерун';
+$string['CN'] = 'Китай';
+$string['CO'] = 'Колумбія';
+$string['CR'] = 'Коста-Ріка';
+$string['CU'] = 'Куба';
+$string['CV'] = 'Кабо-Верде';
+$string['CW'] = 'Кюрасао';
+$string['CX'] = 'о. Різдва';
+$string['CY'] = 'Кіпр';
+$string['CZ'] = 'Czechia';
+$string['DE'] = 'Німеччина';
+$string['DJ'] = 'Джібуті';
+$string['DK'] = 'Данія';
+$string['DM'] = 'Домініка';
+$string['DO'] = 'Домініканська Республіка';
+$string['DZ'] = 'Алжир';
+$string['EC'] = 'Еквадор';
+$string['EE'] = 'Естонія';
+$string['EG'] = 'Єгипет';
+$string['EH'] = 'Західна Сахара';
+$string['ER'] = 'Еритрея';
+$string['ES'] = 'Іспанія';
+$string['ET'] = 'Ефіопія';
+$string['FI'] = 'Фінляндія';
+$string['FJ'] = 'Фіджі';
+$string['FK'] = 'Фолклендські (Мальвінські) Острови';
+$string['FM'] = 'Micronesia (Federated States of)';
+$string['FO'] = 'Фарерські Острови';
+$string['FR'] = 'Франція';
+$string['GA'] = 'Ґабон';
+$string['GB'] = 'Велика Британія';
+$string['GD'] = 'Ґренада';
+$string['GE'] = 'Грузія';
+$string['GF'] = 'Французька Гвіана';
+$string['GG'] = 'Гернсей';
+$string['GH'] = 'Гана';
+$string['GI'] = 'Ґібралтар';
+$string['GL'] = 'Ґренландія';
+$string['GM'] = 'Ґамбія';
+$string['GN'] = 'Ґвінея';
+$string['GP'] = 'Ґваделупа';
+$string['GQ'] = 'Екваторіальна Ґвінея';
+$string['GR'] = 'Греція';
+$string['GS'] = 'South Georgia and the South Sandwich Islands';
+$string['GT'] = 'Ґватемала';
+$string['GU'] = 'Ґуам';
+$string['GW'] = 'Ґвінея-Бісау';
+$string['GY'] = 'Ґайана';
+$string['HK'] = 'Ґонконг (Сянґон)';
+$string['HM'] = 'Heard Island and McDonald Islands';
+$string['HN'] = 'Гондурас';
+$string['HR'] = 'Хорватія';
+$string['HT'] = 'Гаїті';
+$string['HU'] = 'Угорщина';
+$string['ID'] = 'Індонезія';
+$string['IE'] = 'Ірландія';
+$string['IL'] = 'Ізраїль';
+$string['IM'] = 'Isle of Man';
+$string['IN'] = 'Індія';
+$string['IO'] = 'Британська територія в Індійському океані';
+$string['IQ'] = 'Ірак';
+$string['IR'] = 'Iran (Islamic Republic of)';
+$string['IS'] = 'Ісландія';
+$string['IT'] = 'Італія';
+$string['JE'] = 'Джерсей';
+$string['JM'] = 'Ямайка';
+$string['JO'] = 'Йорданія';
+$string['JP'] = 'Японія';
+$string['KE'] = 'Кенія';
+$string['KG'] = 'Киргизстан';
+$string['KH'] = 'Камбоджа';
+$string['KI'] = 'Кірибаті';
+$string['KM'] = 'Комори';
+$string['KN'] = 'Saint Kitts and Nevis';
+$string['KP'] = 'Korea (the Democratic People\'s Republic of)';
+$string['KR'] = 'Korea (the Republic of)';
+$string['KW'] = 'Кувейт';
+$string['KY'] = 'Кайманові Острови';
+$string['KZ'] = 'Казахстан';
+$string['LA'] = 'Лаос';
+$string['LB'] = 'Ліван';
+$string['LC'] = 'Сент-Люсія';
+$string['LI'] = 'Ліхтенштейн';
+$string['LK'] = 'Шрі-Ланка';
+$string['LR'] = 'Ліберія';
+$string['LS'] = 'Лесото';
+$string['LT'] = 'Литва';
+$string['LU'] = 'Люксембурґ';
+$string['LV'] = 'Латвія';
+$string['LY'] = 'Лівія';
+$string['MA'] = 'Марокко';
+$string['MC'] = 'Монако';
+$string['MD'] = 'Moldova (the Republic of)';
+$string['ME'] = 'Чорногорія';
+$string['MF'] = 'Saint Martin (French part)';
+$string['MG'] = 'Мадаґаскар';
+$string['MH'] = 'Маршаллові Острови';
+$string['MK'] = 'North Macedonia';
+$string['ML'] = 'Малі';
+$string['MM'] = 'М\'янма';
+$string['MN'] = 'Монголія';
+$string['MO'] = 'Макау';
+$string['MP'] = 'Північні Маріанські Острови';
+$string['MQ'] = 'Мартиніка';
+$string['MR'] = 'Мавританія';
+$string['MS'] = 'Монтсеррат';
+$string['MT'] = 'Мальта';
+$string['MU'] = 'Маврикій';
+$string['MV'] = 'Мальдіви';
+$string['MW'] = 'Малаві';
+$string['MX'] = 'Мексика';
+$string['MY'] = 'Малайзія';
+$string['MZ'] = 'Мозамбік';
+$string['NA'] = 'Намібія';
+$string['NC'] = 'Нова Каледонія';
+$string['NE'] = 'Ніґер';
+$string['NF'] = 'о. Норфолк';
+$string['NG'] = 'Ніґерія';
+$string['NI'] = 'Нікараґуа';
+$string['NL'] = 'Нідерланди';
+$string['NO'] = 'Норвегія';
+$string['NP'] = 'Непал';
+$string['NR'] = 'Науру';
+$string['NU'] = 'Ніуе';
+$string['NZ'] = 'Нова Зеландія';
+$string['OM'] = 'Оман';
+$string['PA'] = 'Панама';
+$string['PE'] = 'Перу';
+$string['PF'] = 'Французька Полінезія';
+$string['PG'] = 'Папуа Нова Ґвінея';
+$string['PH'] = 'Філіппіни';
+$string['PK'] = 'Пакистан';
+$string['PL'] = 'Польща';
+$string['PM'] = 'Saint Pierre and Miquelon';
+$string['PN'] = 'Піткерн';
+$string['PR'] = 'Пуерто-Рико';
+$string['PS'] = 'Palestine, State of';
+$string['PT'] = 'Португалія';
+$string['PW'] = 'Палау';
+$string['PY'] = 'Параґвай';
+$string['QA'] = 'Катар';
+$string['RE'] = 'Реюньйон';
+$string['RO'] = 'Румунія';
+$string['RS'] = 'Сербія';
+$string['RU'] = 'Росія';
+$string['RW'] = 'Руанда';
+$string['SA'] = 'Саудівська Аравія';
+$string['SB'] = 'Соломонові Острови';
+$string['SC'] = 'Сейшельські Острови';
+$string['SD'] = 'Судан';
+$string['SE'] = 'Швеція';
+$string['SG'] = 'Сінґапур';
+$string['SH'] = 'Saint Helena, Ascension and Tristan da Cunha';
+$string['SI'] = 'Словенія';
+$string['SJ'] = 'Svalbard and Jan Mayen';
+$string['SK'] = 'Словаччина';
+$string['SL'] = 'Сьєрра-Леоне';
+$string['SM'] = 'Сан-Марино';
+$string['SN'] = 'Сенеґал';
+$string['SO'] = 'Сомалі';
+$string['SR'] = 'Суринам';
+$string['SS'] = 'Південний Судан';
+$string['ST'] = 'Sao Tome and Principe';
+$string['SV'] = 'Сальвадор';
+$string['SX'] = 'Sint Maarten (Dutch part)';
+$string['SY'] = 'Сирія';
+$string['SZ'] = 'Eswatini';
+$string['TC'] = 'Turks and Caicos Islands';
+$string['TD'] = 'Чад';
+$string['TF'] = 'Французькі Південнополярні території';
+$string['TG'] = 'Тоґо';
+$string['TH'] = 'Таїланд';
+$string['TJ'] = 'Таджикистан';
+$string['TK'] = 'Токелау';
+$string['TL'] = 'Тімор-Лесте';
+$string['TM'] = 'Туркменістан';
+$string['TN'] = 'Туніс';
+$string['TO'] = 'Тонґа';
+$string['TR'] = 'Туреччина';
+$string['TT'] = 'Trinidad and Tobago';
+$string['TV'] = 'Тувалу';
+$string['TW'] = 'Тайвань';
+$string['TZ'] = 'Tanzania, the United Republic of';
+$string['UA'] = 'Україна';
+$string['UG'] = 'Уґанда';
+$string['UM'] = 'США віддалені острови';
+$string['US'] = 'Сполучені Штати Америки';
+$string['UY'] = 'Уруґвай';
+$string['UZ'] = 'Узбекистан';
+$string['VA'] = 'Holy See';
+$string['VC'] = 'Saint Vincent and the Grenadines';
+$string['VE'] = 'Venezuela (Bolivarian Republic of)';
+$string['VG'] = 'Virgin Islands (British)';
+$string['VI'] = 'Virgin Islands (U.S.)';
+$string['VN'] = 'В\'єтнам';
+$string['VU'] = 'Вануату';
+$string['WF'] = 'Уолліс і Футуна';
+$string['WS'] = 'Самоа';
+$string['YE'] = 'Ємен';
+$string['YT'] = 'Майотта';
+$string['ZA'] = 'Південна Африка';
+$string['ZM'] = 'Замбія';
+$string['ZW'] = 'Зімбабве';

@@ -30,6 +30,6 @@ $string['height'] = 'Hauteur';
 $string['jmol'] = 'JMol';
 $string['jmoloptions'] = 'Options JMol';
 $string['optiondownloadlink'] = 'Afficher le lien de téléchargement';
-$string['optionhelplink'] = 'Afficher le lien de l\'aide';
+$string['optionhelplink'] = 'Afficher le lien de l’aide';
 $string['submit'] = 'Envoyer';
 $string['width'] = 'Largeur';

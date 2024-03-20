@@ -29,32 +29,32 @@ $string['configdisplayoptions'] = 'Veuillez sélectionner toutes les options à 
 $string['content'] = 'Contenu de la page';
 $string['contentheader'] = 'Contenu';
 $string['createpage'] = 'Créer une ressource page';
-$string['displayoptions'] = 'Options d\'affichage disponibles';
+$string['displayoptions'] = 'Options d’affichage disponibles';
 $string['displayselect'] = 'Affichage';
-$string['displayselectexplain'] = 'Sélectionner le type d\'affichage.';
+$string['displayselectexplain'] = 'Sélectionner le type d’affichage.';
 $string['indicator:cognitivedepth'] = 'Page : aspect cognitif';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Page.';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l’étudiant dans une ressource Page.';
 $string['indicator:cognitivedepthdef'] = 'Page : aspect cognitif';
-$string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Page » (niveaux : pas de vue, vue).';
+$string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d’analyse ce pourcentage d’engagement cognitif offert par les ressources « Page » (niveaux : pas de vue, vue).';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Page : aspect social';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Page.';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l’interaction sociale atteinte par l’étudiant dans une ressource Page.';
 $string['indicator:socialbreadthdef'] = 'Page : aspect social';
-$string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Page » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d’analyse ce pourcentage d’engagement social offert par les ressources « Page » (niveaux : pas de participation, participant seul).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['legacyfiles'] = 'Migration d\'un ancien fichier de cours';
+$string['legacyfiles'] = 'Migration d’un ancien fichier de cours';
 $string['legacyfilesactive'] = 'Actif';
 $string['legacyfilesdone'] = 'Terminé';
 $string['modulename'] = 'Page';
-$string['modulename_help'] = 'Le module page permet à l\'enseignant de créer une page web à l\'aide de l\'éditeur de texte. Une page peut contenir du texte, des images, des sons, des vidéos, des liens web et du code intégré, par exemple une Google map.
+$string['modulename_help'] = 'Le module page permet à l’enseignant de créer une page web à l’aide de l’éditeur de texte. Une page peut contenir du texte, des images, des sons, des vidéos, des liens web et du code intégré, par exemple une Google map.
 
-L\'avantage d\'utiliser une page plutôt qu\'un fichier réside dans le fait que la ressource est plus accessible, par exemple pour les utilisateurs avec des appareils mobiles, et plus facile à modifier.
+L’avantage d’utiliser une page plutôt qu’un fichier réside dans le fait que la ressource est plus accessible, par exemple pour les utilisateurs avec des appareils mobiles, et plus facile à modifier.
 
-Pour des contenus de grande ampleur, il est recommandé d\'utiliser plutôt un livre qu\'une page.
+Pour des contenus de grande ampleur, il est recommandé d’utiliser plutôt un livre qu’une page.
 
 Une page peut être utilisée pour :
 
-* présenter les conditions et objectifs d\'un cours ou d\'un module de formation
+* présenter les conditions et objectifs d’un cours ou d’un module de formation
 * intégrer plusieurs vidéos ou sons avec des textes explicatifs';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pages';
@@ -74,5 +74,5 @@ $string['printintro'] = 'Afficher la description de la page';
 $string['printintroexplain'] = 'Afficher la description de la page au-dessus de son contenu ?';
 $string['printlastmodified'] = 'Afficher la date de dernière modification';
 $string['printlastmodifiedexplain'] = 'Afficher la date de la dernière modification au-dessous du contenu ?';
-$string['privacy:metadata'] = 'Le plugin de ressource Page n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de ressource Page n’enregistre aucune donnée personnelle.';
 $string['search:activity'] = 'Page';

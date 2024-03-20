@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Galería de imaxes';
+$string['modulename_help'] = 'Use este predefinido para a recolleita de imaxes.';
 $string['pluginname'] = 'Galería de imaxes';
 $string['privacy:metadata'] = 'O engadido de galería de imaxes non almacena ningún dato persoal.';

@@ -440,7 +440,8 @@ $string['courserequestdetails'] = 'Eskatzen ari zaren ikastaroaren xehetasunak';
 $string['courserequestfailed'] = 'Zure ikastaro-eskaria arrazoi ezezagunengatik ezin izan da gorde';
 $string['courserequestintro'] = 'Erabili formulario hau ikastaroa sortzeko eskaria egiteko.<br />Kudeatzaileek ikastaroa zergatik eskatzen duzun jakin dezaten<br />ahalik eta informazio gehien eman, mesedez.';
 $string['courserequestreason'] = 'Ikastaroa eskatzeko arrazoiak';
-$string['courserequestsuccess'] = 'Ikastaro-eskaria ondo gorde da. Gutxi barru erantzuna  posta elektroniko bidez bidaliko zaizu eskaria onartu den edo ez jakinarazteko.';
+$string['courserequestroleerror'] = 'Ikastaro berrietako sortzailearen rolaren konfigurazioa baliogabea da. Ikusi mesedez <a href="{$a}">erabiltzaile-politikak</a>.';
+$string['courserequestsuccess'] = 'Ikastaro-eskaria bidalita.';
 $string['courserequestsupport'] = 'Informazio lagungarria kudeatzaileak eskari hau ebaluatzeko';
 $string['courserequestwarning'] = 'Ikastaro honetan sartzeko eskatu duen erabiltzailea automatikoki matrikulatuko da eta {$a} rola esleituko zaio.';
 $string['courserestore'] = 'Ikastaroa berreskuratu';
@@ -453,7 +454,8 @@ $string['coursesearch_help'] = 'Hitz asko batera bila ditzakezu eta bilaketak ho
 * Hitz batzuk (+) ikurrak bananduta idatziz gero, hitz horiek guztiak orden berean duten emaitza guztiak erakutsiko dira.
 * (-) ikurra hitzaren aurretik jarriz gero, hitz hori duten emaitzak ez dira erakutsiko.</p>';
 $string['coursesectionsummaries'] = 'Ikastaro-atalen laburpenak';
-$string['coursesectiontitle'] = 'Ikastaroa: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
+$string['coursesectiontitle'] = '{$a->sectionname}: {$a->sectiontitle} | {$a->course}';
+$string['coursesectiontitleediting'] = 'Editatu {$a->sectionname}: {$a->sectiontitle} | {$a->course}';
 $string['coursesettings'] = 'Ikastaroaren ezarpen lehenetsiak';
 $string['coursesmovedout'] = '{$a}-tik kanpora mugitutako ikastaroak';
 $string['coursespending'] = 'Onarpenaren zain dauden ikastaroak';
@@ -461,6 +463,7 @@ $string['coursestart'] = 'Ikastaro-hasiera';
 $string['coursesummary'] = 'Ikastaroaren laburpena';
 $string['coursesummary_help'] = 'Zure ikastaroaren deskribapen laburra. Ikastaroen bilaketak egiterakoan hemen gehitutako edukia erabiliko da.';
 $string['coursetitle'] = 'Ikastaroa: {$a->course}';
+$string['coursetitleediting'] = 'Editatu ikastaroa: {$a->course}';
 $string['courseupdates'] = 'Ikastaroen eguneraketak';
 $string['coursevisibility'] = 'Ikastaroaren ikusgarritasuna';
 $string['coursevisibility_help'] = '* Erakutsi: ikastaroa eskuragarri dauden ikastaroen zerrendan agertzen da eta ikasleek bertara sarbidea dute.
@@ -694,7 +697,7 @@ $string['emaildigest'] = 'Posta elektroniko bidez laburpen-mezuak jasotzeko modu
 $string['emaildigest_help'] = 'Hau foroek eguneko jakinarazpen-mezuak bidaltzeko modu lehenetsian erabiliko duten ezarpena da.
 
 * Laburpenik ez - foroetako mezu bakoitzeko e-mail bana jasoko duzu;
-* Laburpena - mezuak osorik - egun bakoitzean foro bakoitzeko mezuen eduki guztiak dituen laburpen-mezu bat jasoko duzu;
+* Laburpena - mezu osoak - egun bakoitzean foro bakoitzeko mezuen eduki guztiak dituen laburpen-mezu bat jasoko duzu;
 * Laburpena - gaiak soilik - egun bakoitzean foro bakoitzeko mezuen izenburuak dituen laburpen-mezu bat jasoko duzu.
 
 Nahi izanez gero, foro bakoitzean ezarpen ezberdin bat aukeratu dezakezu.';
@@ -957,7 +960,7 @@ $string['formatplain'] = 'Testu laua';
 $string['formattext'] = 'Moodle formatu automatikoa';
 $string['forumpreferences'] = 'Foroen hobespenak';
 $string['framesetinfo'] = 'Dokumentu honek hau du:';
-$string['from'] = 'Igorlea';
+$string['from'] = 'Nondik';
 $string['frontpagecategorycombo'] = 'Ikastaro eta kategorien zerrenda';
 $string['frontpagecategorynames'] = 'Kategorien zerrenda';
 $string['frontpagecourselist'] = 'Ikastaroen zerrenda';
@@ -989,14 +992,14 @@ Programa hau doako softwarea da. Berriz banatu edo eta alda dezakezu, beti ere G
 Aplikazioa erabilgarria izango zaizulakoan banatzen da, baina INOLAKO BERMERIK GABE; ezta MERKATAL-BANAKETA
 edo ASMO PARTIKULAR BATEN EGOKITZAPENAren bermerik ere.
 
-Ikusi Moodle Lizentziaren informazio orria xehetasunetarako: https://docs.moodle.org/eu/Lizentzia';
+Ikusi Moodle Lizentziaren informazio orria xehetasunetarako: https://moodledev.io/general/license https://docs.moodle.org/eu/Lizentzia';
 $string['gpl3'] = 'Copyright (C) 1999tik aurrera Martin Dougiamas (https://moodle.com)
 
 Programa hau software librea da: banatu edota aldatu egin dezakezu Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren (GPL) baldintzen arabera, Lizentziaren 3. bertsioaren baldintzetan edo edozein bertsio berriagorenetan (zeuk aukeratu).
 
 Programa hau erabilgarri izateko helburuarekin baina INONGO BERMERIK GABE banatzen da, baita KOMERTZIALIZATU edo BESTE EDOZEIN HELBURU baterako BERMERIK GABE ere.
 
-Ikusi Moodle Lizentziaren informazio-orria zehaztasun gehiagorako: https://docs.moodle.org/eu/Lizentzia';
+Ikusi Moodle Lizentziaren informazio-orria zehaztasun gehiagorako: https://moodledev.io/general/license https://docs.moodle.org/eu/Lizentzia';
 $string['gpllicense'] = 'GPL Lizentzia';
 $string['grade'] = 'Kalifikazioa';
 $string['gradenoun'] = 'Kalifikazioa';
@@ -1339,13 +1342,13 @@ $string['modulesetup'] = 'Moduluen taulak falta dira';
 $string['modulesuccess'] = '{$a} taulak ondo ezarri dira';
 $string['modulesused'] = 'Erabilitako moduluak';
 $string['modvisible'] = 'Eskuragarritasuna';
-$string['modvisible_help'] = '* Erakutsi ikastaro-orrian: Ikasleentzako eskuragarri (bestelako eskuragarritasun baldintzek baimentzen badute).
+$string['modvisible_help'] = '* Erakutsi ikastaro-orrian: Ikasleentzako eskuragarri (bestelako eskuragarritasun murrizketek baimentzen badute).
 * Ezkutatu ikasleei: Ez eskuragarri ikasleentzat.';
 $string['modvisiblehiddensection'] = 'Eskuragarritasuna';
 $string['modvisiblehiddensection_help'] = '* Ezkutatu ikasleei: Ez eskuragarri ikasleentzat.
 * Jarri eskuragarri baina ez erakutsi ikastaro-orrian (jarduera sekretua): Ikasleentzat eskuragarri nonbait esteka eskainiz gero. Jarduerek kalifikazio-txostenean eta bestelako txostenetan agertzen jarraituko dute.';
 $string['modvisiblewithstealth'] = 'Eskuragarritasuna';
-$string['modvisiblewithstealth_help'] = '* Erakutsi ikastaro-orrian: Ikasleentzako eskuragarri (bestelako eskuragarritasun baldintzek baimentzen badute).
+$string['modvisiblewithstealth_help'] = '* Erakutsi ikastaro-orrian: Ikasleentzako eskuragarri (bestelako eskuragarritasun murrizketek baimentzen badute).
 * Ezkutatu ikasleei: Ez eskuragarri ikasleentzat.
 * Jarri eskuragarri baina ez erakutsi ikastaro-orrian (jarduera sekretua): Ikasleentzat eskuragarri nonbait esteka eskainiz gero. Jarduerek kalifikazio-txostenean eta bestelako txostenetan agertzen jarraituko dute.';
 $string['month'] = 'Hilabetea';
@@ -2180,7 +2183,7 @@ $string['timesplitting:upcomingfortnight_help'] = 'Analisi-tarte honek aurreikus
 $string['timesplitting:upcomingweek'] = 'Datorren astea';
 $string['timesplitting:upcomingweek_help'] = 'Analisi-tarte honek aurreikuspenak astero sortzen ditu. Adierazleen kalkuluak hurrengo astean oinarrituko da.';
 $string['timezone'] = 'Ordu eremua';
-$string['to'] = 'Jasotzailea';
+$string['to'] = 'Nora';
 $string['tocontent'] = '"{$a}" elementuaren aurrera';
 $string['tocreatenewaccount'] = 'Salto egin kontu berria sortzera';
 $string['today'] = 'Gaur';
@@ -2320,7 +2323,7 @@ $string['weekhide'] = 'Ezkutatu aste hau {$a}(e)ri';
 $string['weeklyoutline'] = 'Astea hitz bitan';
 $string['weeks'] = 'aste';
 $string['weekshow'] = 'Erakutsi aste hau {$a}(e)ri';
-$string['welcomeback'] = 'Kaixo berriz ere, {$a->firstname}! 👋';
+$string['welcomeback'] = 'Kaixo, {$a->firstname}! 👋';
 $string['welcometocourse'] = 'Ongi etorri {$a} gunera';
 $string['welcometocoursetext'] = 'Ongi etorri {$a->coursename} ikastarora!
 

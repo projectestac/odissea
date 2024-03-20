@@ -25,8 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Mostra més elements';
 $string['noitems'] = 'No hi ha elements recents';
 $string['pluginname'] = 'Elements visitats recentment';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'El bloc d\'Elements visitats recentment emmagatzema informació sobre els elements als quals l\'usuari ha accedit recentment';
+$string['privacy:metadata:cmid'] = 'L\'ID de l\'activitat o el recurs';
+$string['privacy:metadata:courseid'] = 'Curs al qual pertany l\'element';
+$string['privacy:metadata:timeaccess'] = 'L\'hora en què l\'usuari va accedir per última vegada a l\'element';
+$string['privacy:metadata:userid'] = 'L\'ID de l\'usuari que ha accedit a l\'element';
 $string['privacy:recentlyaccesseditemspath'] = 'Elements visitats recentment';
 $string['recentlyaccesseditems:myaddinstance'] = 'Afegeix al Tauler un nou bloc d\'elements visitats recentment';

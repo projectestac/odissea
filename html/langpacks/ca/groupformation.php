@@ -118,3 +118,4 @@ $string['eval_max_text_extraversion'] = 'La introversió i l\'extraversió són 
 $string['eval_max_text_interest'] = 'L\'interès és una dimensió de la motivació, que es deriva de l\'apreciació del contingut d\'una tasca. L\'interès s\'expressa, entre d\'altres, en el fet que les tasques es duen a terme de manera voluntària i entusiasta. Especialment quan les tasques es fan de manera autodirigida i amb l\'objectiu d\'entendre-les en profunditat, l\'interès contribueix enormement a un aprenentatge satisfactori.';
 $string['export'] = 'Exporta';
 $string['import'] = 'Importa';
+$string['user_list_progress'] = 'Progrés';

@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['informationtext'] = 'Texte informatif';
 $string['pluginname'] = 'Description';
-$string['pluginname_help'] = 'Une description n\'est pas réellement un type de question. Elle permet simplement d\'afficher du texte à afficher sans demander de réponse, comme une étiquette dans la page de cours.
+$string['pluginname_help'] = 'Une description n’est pas réellement un type de question. Elle permet simplement d’afficher du texte à afficher sans demander de réponse, comme une étiquette dans la page de cours.
 
-Le texte de la « question » est affiché lors de la tentative et de la relecture. Le feedback général n\'est affiché que lors de la relecture.';
-$string['pluginnameadding'] = 'Ajout d\'une description';
-$string['pluginnameediting'] = 'Modification d\'une description';
-$string['pluginnamesummary'] = 'Il ne s\'agit pas d\'une véritable question. C\'est plutôt une façon d\'insérer des instructions, indications ou autres informations dans le test, de la même façon que les étiquettes sur la page du cours.';
-$string['privacy:metadata'] = 'Le plugin de type de question Description n\'enregistre aucune donnée personnelle.';
+Le texte de la « question » est affiché lors de la tentative et de la relecture. Le feedback général n’est affiché que lors de la relecture.';
+$string['pluginnameadding'] = 'Ajout d’une description';
+$string['pluginnameediting'] = 'Modification d’une description';
+$string['pluginnamesummary'] = 'Il ne s’agit pas d’une véritable question. C’est plutôt une façon d’insérer des instructions, indications ou autres informations dans le test, de la même façon que les étiquettes sur la page du cours.';
+$string['privacy:metadata'] = 'Le plugin de type de question Description n’enregistre aucune donnée personnelle.';

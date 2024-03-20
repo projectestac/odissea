@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Contenu multilingue';
-$string['forceoldsyntax'] = 'Imposer l\'ancienne syntaxe';
-$string['forceoldsyntax_desc'] = 'Imposer l\'ancienne syntaxe du filtre multilingue : &lt;span&gt; sans class="multilang" et &lt;lang&gt;';
-$string['privacy:metadata'] = 'Le plugin Contenu multilingue n\'enregistre aucune donnée personnelle.';
+$string['forceoldsyntax'] = 'Imposer l’ancienne syntaxe';
+$string['forceoldsyntax_desc'] = 'Imposer l’ancienne syntaxe du filtre multilingue : &lt;span&gt; sans class="multilang" et &lt;lang&gt;';
+$string['privacy:metadata'] = 'Le plugin Contenu multilingue n’enregistre aucune donnée personnelle.';

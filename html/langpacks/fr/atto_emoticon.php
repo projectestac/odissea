@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insertemoticon'] = 'Insérer binette';
 $string['pluginname'] = 'Binette';
-$string['privacy:metadata'] = 'Le plugin atto_emoticon n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_emoticon n’enregistre aucune donnée personnelle.';

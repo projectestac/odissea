@@ -26,18 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clidriverlist'] = 'Pilotes de base de données disponibles pour la migration';
-$string['cliheading'] = 'Migration de la base de données. Assurez-vous que personne n\'accède au serveur durant la migration !';
-$string['climigrationnotice'] = 'Migration de la base de données en cours. Veuillez attendre la fin de la migration et la mise à jour de la configuration et la suppression du fichier $CFG->dataroot/climaintenance.html par l\'administrateur du serveur.';
-$string['convertinglogdisplay'] = 'Conversion des journaux d\'affichage d\'actions';
+$string['cliheading'] = 'Migration de la base de données. Assurez-vous que personne n’accède au serveur durant la migration !';
+$string['climigrationnotice'] = 'Migration de la base de données en cours. Veuillez attendre la fin de la migration et la mise à jour de la configuration et la suppression du fichier $CFG->dataroot/climaintenance.html par l’administrateur du serveur.';
+$string['convertinglogdisplay'] = 'Conversion des journaux d’affichage d’actions';
 $string['dbexport'] = 'Exportation de base de données';
 $string['dbtransfer'] = 'Migration de base de données';
 $string['enablemaintenance'] = 'Activer le mode de maintenance';
-$string['enablemaintenance_help'] = 'Cette option permet d\'activer le mode de maintenance durant et après la migration de la base de données, empêchant ainsi l\'accès de tous les utilisateurs jusqu\'à la fin de la migration. Pour revenir au fonctionnement normal l\'administrateur devra supprimer manuellement le fichier $CFG->dataroot/climaintenance.html après avoir mis à jour les réglages du fichier config.php.';
+$string['enablemaintenance_help'] = 'Cette option permet d’activer le mode de maintenance durant et après la migration de la base de données, empêchant ainsi l’accès de tous les utilisateurs jusqu’à la fin de la migration. Pour revenir au fonctionnement normal l’administrateur devra supprimer manuellement le fichier $CFG->dataroot/climaintenance.html après avoir mis à jour les réglages du fichier config.php.';
 $string['exportdata'] = 'Exporter les données';
 $string['notargetconectexception'] = 'Impossible de se connecter à la base de données cible.';
 $string['options'] = 'Options';
 $string['pluginname'] = 'Exportation base de données';
-$string['privacy:metadata'] = 'Le plugin Exportation base de données n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Exportation base de données n’enregistre aucune donnée personnelle.';
 $string['targetdatabase'] = 'Base de données cible';
 $string['targetdatabasenotempty'] = 'La base de données cible ne doit contenir aucune table avec le préfixe indiqué !';
 $string['transferdata'] = 'Transférer les données';

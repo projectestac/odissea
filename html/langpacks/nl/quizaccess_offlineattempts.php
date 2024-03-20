@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowofflineattempts'] = 'Toestaan dat deze test offline geprobeerd wordt via de mobiele app';
-$string['allowofflineattempts_help'] = 'Indien ingeschakeld kan een mobiele app-gebruiker de test downloaden en offline maken.
+$string['allowofflineattempts_help'] = 'Indien ingeschakeld, kan een gebruiker van een mobiele app de test downloaden en offline proberen.
 
-Merk op: het is niet mogelijk om een test met een tijdslimiet offline te maken, of wanneer er een vereist netwerkadres is ingesteld of wanneer er een vraaggedrag ingesteld is dat anders is dan uitgestelde feedback (met of zonder CBM)';
+Let op: Het is niet mogelijk om een test offline uit te voeren als deze een tijdslimiet heeft, of een netwerkadres vereist, of ander vraaggedrag gebruikt dan uitgestelde feedback (met of zonder CBM), of sequentiële navigatie gebruikt.';
 $string['confirmdatasaved'] = 'Ik bevestig dat ik geen niet-bewaard werk op een mobiel toestel heb.';
 $string['mobileapp'] = 'Mobiele app';
-$string['offlineattemptserror'] = 'Een test met een tijdsbeperking, met een vereist netwerkadres of met een ander vraaggedrag dan uitgestelde feedback kan niet offline gebruikt worden (met of zonder CBM)';
+$string['offlineattemptserror'] = 'Het is niet mogelijk om een test offline uit te voeren als deze een tijdslimiet heeft, een netwerkadres vereist, of ander vraaggedrag gebruikt dan uitgestelde feedback (met of zonder CBM), of sequentiële navigatie gebruikt.';
 $string['offlinedatamessage'] = 'Je hebt aan deze poging gewerkt met en mobiel toestel. De gegevens werden het laatst {$a} geleden bewaard op deze site.';
 $string['pleaseconfirm'] = 'Controleer en bevestig dat je geen onbewaard werk meer hebt.';
 $string['pluginname'] = 'Toegangsregel voor offline pogingen';

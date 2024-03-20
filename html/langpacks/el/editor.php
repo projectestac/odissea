@@ -58,6 +58,7 @@ $string['cutpastemozilla'] = 'Δυστυχώς, δεν μπορείτε αυτή
 $string['delete'] = 'Διαγραφή';
 $string['editors'] = 'Επεξεργαστές κειμένου';
 $string['editorsettings'] = 'Διαχείριση επεξεργαστών κειμένου';
+$string['editorxformat'] = '{$a} μορφοποίηση';
 $string['enterurlfirst'] = 'Πρέπει να εισάγετε ένα URL πρώτα';
 $string['filebrowser'] = 'Περιηγητής αρχείων';
 $string['findwhat'] = 'Εύρεση';

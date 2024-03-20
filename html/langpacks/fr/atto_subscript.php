@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Indice';
-$string['privacy:metadata'] = 'Le plugin atto_subscript n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_subscript n’enregistre aucune donnée personnelle.';

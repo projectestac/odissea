@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Liste non numérotée';
-$string['privacy:metadata'] = 'Le plugin atto_unorderedlist n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_unorderedlist n’enregistre aucune donnée personnelle.';

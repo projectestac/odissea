@@ -73,7 +73,7 @@ $string['duedate_import'] = 'Aprovação até';
 $string['duedate_upload'] = 'Enviar até';
 $string['duedatevalidation'] = 'Data limite de submissão tem de ser depois da data incial.';
 $string['edit_timeover'] = 'Os ficheiros só podem ser editados durante o período de alteração.';
-$string['edit_uploads'] = 'Editar/Enviar ficheiros';
+$string['edit_uploads'] = 'Editar/enviar ficheiros';
 $string['emailstudentsmail'] = '{$a->username} alterou o estado da aprovação de \'{$a->filename}\'
 em \'{$a->publication}\' para {$a->apstatus} ({$a->dayupdated} às {$a->timeupdated}).
 

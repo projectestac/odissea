@@ -12,8 +12,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->copy($model);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -27,8 +27,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->serialize();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -41,8 +41,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$this->wrapper->start();
 			$this->authorAnswer->setWeight($weight);
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -56,8 +56,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->getWeight();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -70,8 +70,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$this->wrapper->start();
 			$this->authorAnswer->removeValidation($validation);
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -85,8 +85,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->getValidation($name);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -100,8 +100,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->addNewValidation($name);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -116,8 +116,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = php_Lib::toPhpArray($r);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -131,8 +131,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->getComparison();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -146,8 +146,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->setComparison($name);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -160,8 +160,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$this->wrapper->start();
 			$this->authorAnswer->setValue($value);
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -175,8 +175,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->getFilterableValue();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -190,8 +190,8 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			$r = $this->authorAnswer->getValue();
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -204,12 +204,12 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	function __toString() { return 'com.wiris.quizzes.wrap.AuthorAnswerWrap'; }
 }

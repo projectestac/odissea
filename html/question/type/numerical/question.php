@@ -373,6 +373,12 @@ class qtype_numerical_answer extends question_answer {
         // yield false. See MDL-3225.
         $tolerance = abs($this->tolerance) + $epsilon;
 
+        // XTEC ************ AFEGIT - Fix for exception: abs(): Argument #1 ($num) must be of type int|float, string given
+        // 2023.10.04 aginard
+        $this->tolerance = (float)$this->tolerance;
+        $this->answer = (float)$this->answer;
+        // ************ FI
+
         switch ($this->tolerancetype) {
             case 1: case 'relative':
                 $range = abs($this->answer) * $tolerance;

@@ -558,6 +558,20 @@
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lås opprinnelig innhold",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Ikke tillat studenten å endre svaret utenfor de tomme plassholdere som er igjen i opprinnelige innholdet. Hvis denne innstillinga er slått på vil studenten bare bli i stand til å fylle boksene i den opprinnelige innholdet.",
 
+		"quizzes_studio_input_options_answer_input_method_display_settings_label": "Visningsinnstillinger",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_name": "Synlighet for etikettens navn",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_value": "Synlighet for etikettens verdi",
+		"quizzes_studio_input_options_answer_input_method_display_settings_helper_text": "Velg visningsinnstilling for etikettens navn og verdi. Du kan bestemme om eleven skal kunne se etikettenes verdi alltid, aldri eller bare når de er i fokus.",
+		"always": "Alltid",
+		"focus": "I fokus",
+		"never": "Aldri",
+
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label": "Innstillinger for magnetisk rutenett",
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text": "Velg det magnetiske rutenettalternativet for elevens svarfelt.",
+		"force": "Kraft",
+		"snap": "Øyeblikksbilde",
+		"disabled": "Deaktivert",
+
 		"quizzes_studio_home_random_variables_title": "Tilfeldige variabler",
 		"quizzes_studio_home_random_variables_title_basic_mode": "Grunnleggende modus",
 		"quizzes_studio_home_advanced_random_variables_button_text": "Avansert modus",
@@ -611,7 +625,9 @@
 		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Bruk knappen 'test dette spørsmålet' for å se hvordan det vises for studentene.",
 		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Skissere i samme forhold",
 		"quizzes_demo_sketch_title_menu" : "Skissere",
-		"home_getting_started_documentation_button_text" : "Dokumentasjon"
+		"home_getting_started_documentation_button_text" : "Dokumentasjon", 
+
+		"close_mathtype_popup" : "Lukk MathType"
 	}
 }
 

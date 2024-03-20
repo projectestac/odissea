@@ -91,21 +91,21 @@ $string['completiondetail:completionstatuscompleted'] = 'Jarduera osatzea';
 $string['completiondetail:completionstatuscompletedorpassed'] = 'Jarduera osatu eta gainditzea';
 $string['completiondetail:completionstatuspassed'] = 'Jarduera gainditzea';
 $string['completionscorerequired'] = 'Gutxieneko puntuazioa beharrezkoa da';
-$string['completionscorerequired_help'] = 'Ezarpen hau gaituz gero, ikasleari SCORM jarduera osatutzat emateko, puntuazio minimoa izan beharko du eta jarduera-osaketarako beste eskakizunak bete beharko ditu.';
+$string['completionscorerequired_help'] = 'Ezarpen hau gaituz gero, ikasleari SCORM jarduera osatutzat emateko, puntuazio minimoa izan beharko du eta jarduera-osaketarako beste baldintzak ere bete beharko ditu.';
 $string['completionscorerequireddesc'] = 'Jarduera osatzeko {$a}-eko gutxieneko kalifikazioa beharrezkoa da.';
 $string['completionstatus_completed'] = 'Osatua';
 $string['completionstatus_passed'] = 'Gaindituta';
 $string['completionstatusallscos'] = 'Behartu SCO guztiek osatze-egoerara bueltatzea';
 $string['completionstatusallscos_help'] = 'SCORM pakete batzuk osagai anitz edo "sco" dituzte - aukera hau gaitzean paketeko sco guztiek lesson_status balioa bueltatu behar dute jarduera hau osatutzat emateko.';
 $string['completionstatusrequired'] = 'Egoera ezarri gabe';
-$string['completionstatusrequired_help'] = 'Egoera bat edo gehiago aukeratuz gero, erabiltzaileei SCORM jarduera gainditutzat emateko, lortu beharko dute: gutxienez, aukeratutako egoeretako bat eta jarduera-osaketarako beste eskakizunak bete.';
+$string['completionstatusrequired_help'] = 'Egoera bat edo gehiago aukeratuz gero, erabiltzaileei SCORM jarduera gainditutzat emateko, lortu beharko dute: gutxienez, aukeratutako egoeretako bat eta jarduera-osaketarako beste baldintzak ere bete beharko ditu.';
 $string['completionstatusrequireddesc'] = 'Ikaslea gutxienez hurrengo egoeretako batera heldu behar da: {$a}';
 $string['confirmloosetracks'] = 'KONTUZ: Badirudi paketea aldatu egin dela. Paketearen egitura aldatu egin bada zenbait erabiltzaileren pistak agian galdu egingo ziren eguneratze-prozesuan.';
 $string['contents'] = 'Edukiak';
 $string['coursepacket'] = 'Ikastaro-paketea';
-$string['coursestruct'] = 'Ikastaro-egitura';
+$string['coursestruct'] = 'Edukiaren egitura';
 $string['crontask'] = 'SCORM-eko atzeko planoko prozesamendua';
-$string['currentwindow'] = 'Oraingo leihoa';
+$string['currentwindow'] = 'Leiho berean';
 $string['datadir'] = 'Fitxategi-sistema errorea: Ikastaroko datuen karpeta ezin da sortu';
 $string['defaultdisplaysettings'] = 'Erakusteko ezarpen lehenetsiak';
 $string['defaultgradesettings'] = 'Lehenetsitako kalifikazio-ezarpenak';
@@ -123,7 +123,7 @@ $string['displayactivityname_help'] = 'SCORM erreproduzigailuaren gainean jardue
 $string['displayattemptstatus'] = 'Erakutsi saiakeren egoera';
 $string['displayattemptstatus_help'] = 'Gaituz gero, erabiltzailearen saiakeren laburpena Aginte-paneleko ikastaroaren ikuspegi orokorreko blokean edota SCORM-en laburpen-orrian erakutsiko dira.';
 $string['displayattemptstatusdesc'] = 'Erakutsi erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean Aginte-panelean edota SCORM-en laburpen-orrian.';
-$string['displaycoursestructure'] = 'Erakutsi ikastaro-egitura sarrera-orrian';
+$string['displaycoursestructure'] = 'Erakutsi edukiaren egitura sarrera-orrian';
 $string['displaycoursestructure_help'] = 'Gaituz gero, edukien taula SCORM-en laburpen-orrian erakutsiko da';
 $string['displaycoursestructuredesc'] = 'Gaituz gero, edukien taula SCORM-en laburpen-orrian erakutsiko da.';
 $string['displaydesc'] = 'SCORM paketea leiho berri batean erakutsi ala ez.';
@@ -200,7 +200,7 @@ $string['hidebrowse_help'] = 'Aurrebista-moduak ikasleei saiakera egin aurretik 
 $string['hidebrowsedesc'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera arakatzea saiakera egin aurretik.';
 $string['hideexit'] = 'Ezkutatu irteera esteka';
 $string['hidereview'] = 'Ezkutatu berrikusketa esteka';
-$string['hidetoc'] = 'Erakutsi ikastaroaren egitura erreproduzigailuan';
+$string['hidetoc'] = 'Erakutsi edukiaren egitura erreproduzigailuan';
 $string['hidetoc_help'] = 'Nola erakutsiko den edukien taula SCORM erreproduzigailuan.';
 $string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den edukien taula SCORM erreproduzigailuan.';
 $string['highestattempt'] = 'Puntuazio altuena duen saiakera';
@@ -381,9 +381,9 @@ $string['selectall'] = 'Aukeratu guztiak';
 $string['selectnone'] = 'Desmarkatu guztiak';
 $string['show'] = 'Erakutsi';
 $string['sided'] = 'Albo batean';
-$string['skipview'] = 'Ikasleak ez dio jaramonik egingo orriaren eduki-egiturari';
-$string['skipview_help'] = 'Aukera honek zehaztuko du orriaren eduki-egiturari jaramonik ez egiteko (ez erakusteko) aukeraren balio lehenetsia. Paketeak ikasteko objektu bakarra badu, eduki-egiturari beti salto egin dakioke.';
-$string['skipviewdesc'] = 'Orriaren eduki-egiturari jaramonik ez egiteko aukeraren balio lehenetsia';
+$string['skipview'] = 'Ikasleak ez dio jaramonik egingo orriaren edukiaren egiturari';
+$string['skipview_help'] = 'Aukera honek zehaztuko du orriaren edukiaren egiturari jaramonik ez egiteko (ez erakusteko) aukeraren balio lehenetsia. Paketeak ikasteko objektu bakarra badu, edukiaren egiturari beti salto egin dakioke.';
+$string['skipviewdesc'] = 'Orriaren edukiaren egiturari jaramonik ez egiteko aukeraren balio lehenetsia';
 $string['slashargs'] = 'KONTUZ: slash argumentuak ez daude gaituta gune honetan eta litekeena da behar bezala ez funtzionatzea';
 $string['stagesize'] = 'Markoaren edo leihoaren tamaina';
 $string['stagesize_help'] = 'Bi ezarpen hauek zehazten dute ikasteko objektuen markoa/leihoaren zabalera eta altuera.';
@@ -453,7 +453,7 @@ $string['whatgrade_help'] = 'Saiakera anizkoitzak onartzen badira, aukera honek 
 
 Saiakera anizkoitzei buruzko oharrak:
 
-* Saiakera berria hasteko, eduki-egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretarako sarbidea aukera anizkoitzak onartu nahi badituzu.
+* Saiakera berria hasteko, edukiaren egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretarako sarbidea aukera anizkoitzak onartu nahi badituzu.
 * SCORM pakete batzuk barne logika bat jarraitzen dute saiakera anizkoitzei dagokienez, gehienek ez dute ezer berezirik egiten arlo honetan. Beraz, ikaslea saiakera batean berriro sartzen bada, SCORM edukiak ez badu kasu hau modu berezi batean tratatzen, gerta liteke aurreko saiakeraren balioak berridaztea, nahiz eta saiakeraren egoera \'osatua\' edo \'gainditua\' izan.
 * Aukera anizkoitzak kudeatzeko aukera gehigarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
 $string['whatgradedesc'] = 'Kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den, saiakera anizkoitzak gaituz gero.';

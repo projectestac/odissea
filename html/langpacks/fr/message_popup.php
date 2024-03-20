@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Web';
-$string['privacy:metadata'] = 'Le plugin de messagerie Web n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de messagerie Web n’enregistre aucune donnée personnelle.';

@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Autoriser uniquement les étudiants qui ont déjà (ou pas encore) terminé ce cours.';
 $string['getdescription'] = 'Vous avez terminé ce cours.';
-$string['getdescriptionnot'] = 'Vous n\'avez <b>pas</b> terminé ce cours.';
+$string['getdescriptionnot'] = 'Vous n’avez <b>pas</b> terminé ce cours.';
 $string['missing'] = '(Vous devez décider si le cours doit être terminé ou non)';
 $string['pluginname'] = 'Restriction par achèvement de cours';
-$string['privacy:metadata'] = 'Le plugin Restriction par achèvement de cours n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Restriction par achèvement de cours n’enregistre aucune donnée personnelle.';
 $string['requires_completed'] = 'Vous avez terminé ce cours';
-$string['requires_notcompleted'] = 'Vous n\'avez <b>pas</b> terminé ce cours';
+$string['requires_notcompleted'] = 'Vous n’avez <b>pas</b> terminé ce cours';
 $string['title'] = 'Cours terminé';

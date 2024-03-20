@@ -64,6 +64,7 @@ $string['deleteservice'] = 'Eliminar o servizo: {$a->name} (ID: {$a->id})';
 $string['deleteserviceconfirm'] = 'Eliminar un servizo tamén eliminará os testemuños relacionados con este servizo. Confirma que quere eliminar o servizo externo «{$a}»?';
 $string['deletetoken'] = 'Eliminar o testemuño';
 $string['deletetokenconfirm'] = 'Confirma que quere eliminar este testemuño do servizo web para <strong>{$a->user}</strong> no servizo <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Obsoleto';
 $string['disabledwarning'] = 'Todos os protocolos de servizos web están desactivados. O parámetro «Activar servizos web» pode atopalo en «Características avanzadas».';
 $string['doc'] = 'Documentación';
 $string['docaccessrefused'] = 'Vostede non ten permisos para ver a documentación deste testemuño';

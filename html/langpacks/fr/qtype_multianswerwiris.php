@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingmultianswerwiris'] = 'Ajout d\'une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
+$string['addingmultianswerwiris'] = 'Ajout d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
 $string['contentnotviewable'] = 'Le contenu ne peut pas être affiché.';
-$string['editingmultianswerwiris'] = 'Modification d\'une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
+$string['editingmultianswerwiris'] = 'Modification d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
 $string['multianswerwiris'] = 'Cloze - science';
 $string['multianswerwiris_algorithm'] = 'Algorithme';
 $string['multianswerwiris_help'] = 'Comme la question standard à réponses intégrées (Cloze), mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
@@ -35,7 +35,7 @@ $string['multianswerwiris_wiris_variables'] = 'Variables WIRIS';
 $string['multianswerwirissummary'] = 'Comme la question standard à réponses intégrées (Cloze), mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['pluginname'] = 'Cloze - science';
 $string['pluginname_help'] = 'Comme la question standard à réponses intégrées (Cloze), mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['pluginnameadding'] = 'Ajout d\'une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
-$string['pluginnameediting'] = 'Modification d\'une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
+$string['pluginnameadding'] = 'Ajout d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
+$string['pluginnameediting'] = 'Modification d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme la question standard à réponses intégrées (Cloze), mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question Wiris Quizzes Cloze  ne modifie ni n\'enregistre aucune donnée personnelle.';
+$string['privacy:null_reason'] = 'Le type de question Wiris Quizzes Cloze  ne modifie ni n’enregistre aucune donnée personnelle.';

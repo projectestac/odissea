@@ -196,7 +196,7 @@ $string['fixold'] = 'Usar existente';
 $string['force_ssl'] = 'Forçar SSL';
 $string['force_ssl_help'] = 'Selecionar esta opção obriga todas as inicializações desta ferramenta a usarem SSL.
 
-Além disso, todas as solicitações de web services do fornecedor de ferramenta usarão SSL.
+Além disso, todas as solicitações do web services do fornecedor da ferramenta usarão SSL.
 
 Se usar esta opção, confirme que este site Moodle e o fornecedor da ferramenta suportam SSL.';
 $string['forced_help'] = 'Esta configuração foi forçada numa disciplina ou a nível da ferramenta. Não pode mudá-la a partir desta interface.';
@@ -320,7 +320,7 @@ $string['noservers'] = 'Não foram encontrados servidores';
 $string['notypes'] = 'De momento, não existem ferramentas LTI configuradas no Moodle. Clique na hiperligação acima para adicionar algumas.';
 $string['noviewusers'] = 'Não foram encontrados utilizadores com permissões para usar esta ferramenta';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
-$string['opensslconfiginvalid'] = 'O LTI 1.3 requer um \'openssl.cnf\' válido para ser configurado e disponibilizado para o seu servidor web. Entre em contacto com o administrador do site para ativar e configurar o openssl para este site.';
+$string['opensslconfiginvalid'] = 'O LTI 1.3 requer um \'openssl.cnf\' válido para ser configurado e disponibilizado para o seu servidor web. Contacte o administrador do site para ativar e configurar o openssl para este site.';
 $string['optionalsettings'] = 'Configurações opcionais';
 $string['organization'] = 'Detalhes da organização';
 $string['organizationdescr'] = 'Descrição da organização';

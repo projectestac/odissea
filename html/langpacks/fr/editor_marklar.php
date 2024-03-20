@@ -28,11 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['insertimage'] = 'Insérer une image';
 $string['insertlink'] = 'Insérer un fichier';
 $string['pluginname'] = 'Marklar';
-$string['preferences'] = 'Préférences pour l\'éditeur Marklar';
+$string['preferences'] = 'Préférences pour l’éditeur Marklar';
 $string['preferencesformat'] = 'Autres formats de texte pouvant être édités avec Marklar';
-$string['preferencesformat_help'] = 'Marklar gère nativement les textes au format Markdown. Il peut également être utilisé pour rédiger dans d\'autres formats. Sélectionnez les autres formats de texte que vous souhaitez pouvoir également utiliser avec l\'éditeur Marklar.
+$string['preferencesformat_help'] = 'Marklar gère nativement les textes au format Markdown. Il peut également être utilisé pour rédiger dans d’autres formats. Sélectionnez les autres formats de texte que vous souhaitez pouvoir également utiliser avec l’éditeur Marklar.
 
-Par défaut, Marklar est paramétré pour prendre en charge les textes rédigés aux Format Moodle et Format texte. Pour rédiger en HTML, d\'autres éditeurs de texte riche (comme Atto ou TinyMCE) seront utilisés.';
+Par défaut, Marklar est paramétré pour prendre en charge les textes rédigés aux Format Moodle et Format texte. Pour rédiger en HTML, d’autres éditeurs de texte riche (comme Atto ou TinyMCE) seront utilisés.';
 $string['previewloading'] = 'Chargement de la prévisualisation...';
 $string['previewoff'] = 'Modifier';
 $string['previewon'] = 'Prévisualiser';
@@ -51,7 +51,7 @@ $string['syntax-format1'] = '<dl>
  <dd><code>&lt;p&gt;Paragraphe&lt;/p&gt;</code></dd>
  <dd><code>Retour&lt;br&gt;chariot</code></dd>
 </dl>';
-$string['syntax-format2'] = '<p> Ce format est utile lorsque vous avez besoin de présenter du code ou du HTML, sans qu\'il soit interprété. En effet, s\'il tient tout de même compte des espaces et retours à la ligne, il n\'agit pas sur le contenu textuel. </p>';
+$string['syntax-format2'] = '<p> Ce format est utile lorsque vous avez besoin de présenter du code ou du HTML, sans qu’il soit interprété. En effet, s’il tient tout de même compte des espaces et retours à la ligne, il n’agit pas sur le contenu textuel. </p>';
 $string['syntax-format4'] = '<dl>
 <dt>Liens</dt>
  <dd><code>[link text](https://example.com)</code></dd>
@@ -67,7 +67,7 @@ $string['syntax-format4'] = '<dl>
 <dt>Paragraphes et retours chariot</dt>
  <dd>Les paragraphes sont séparés via une ligne vide. Pour un retour chariot, terminez une ligne par 2 espaces ou plus.</dd>
 <dt>Guillemets</dt>
- <dd><code>&gt; Style de guillemets que l\'on retrouve dans les courriels</code></dd>
+ <dd><code>&gt; Style de guillemets que l’on retrouve dans les courriels</code></dd>
 <dt>Listes</dt>
  <dd><code>* Entrée de liste à puces</code></dd>
  <dd><code>1. Entrée de liste ordonnée</code></dd>
@@ -84,6 +84,6 @@ $string['syntax-format4'] = '<dl>
 </dl>
 <hr>
 <p><a target="_blank" href="https://daringfireball.net/projects/markdown/syntax">Documentation complète de la syntaxe Markdown</a></p>';
-$string['syntaxloading'] = 'Chargement de l\'aide syntaxique';
+$string['syntaxloading'] = 'Chargement de l’aide syntaxique';
 $string['syntaxoff'] = 'Cacher la syntaxe';
 $string['syntaxon'] = 'Montrer la syntaxe';

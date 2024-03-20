@@ -65,6 +65,9 @@ $string['firstattempts'] = 'eerste pogingen';
 $string['firstattemptsavg'] = 'Gemiddelde cijfer voor eerste poging';
 $string['firstattemptscount'] = 'Aantal volledig beoordeelde eerste pogingen';
 $string['frequency'] = 'Frequentie';
+$string['getstatslockprogress'] = 'Wachten op een lopende taak. Probeer later opnieuw';
+$string['getstatslocktimeout'] = 'Statistiekberekening time-out slot';
+$string['getstatslocktimeoutdesc'] = 'Hoeveel seconden er op een slot gewacht moet worden wanneer er een statistieksberekening gebeurt voor een test. Deze instelling bestaat vooral voor testdoeleinden. Wijzig ze niet, tenzij je weet wat je doet.';
 $string['highestattempts'] = 'hoogst beoordeelde poging';
 $string['highestattemptsavg'] = 'Gemiddeld cijfer van de hoogst beoordeelde pogingen';
 $string['intended_weight'] = 'Bedoelde weging';
@@ -85,6 +88,7 @@ Onze vergelijking voor effectieve vraagweging kan in dit geval niet berekend wor
 
 Als je een test bewerkt en de vragen met een negatieve covariantie een maximumcijfer 0 geeft, dat zal de weging van deze vraag 0 zijn en zal de echte weging van deze vraag 0 zijn en zullen de echte effectieve wegingen van de andere vragen berekend worden.';
 $string['nogradedattempts'] = 'Er zijn nog geen pogingen gemaakt voor deze test, of alle pogingen hebben vragen die manueel beoordeeld moeten worden.';
+$string['nostats'] = 'Kon de statistieksberekening niet voltooien. Er kan nog een lang lopende berekening bezig zijn. Probeer later opnieuw.';
 $string['nostudentsingroup'] = 'Er zijn nog geen leerlingen in deze groep';
 $string['optiongrade'] = 'Gedeeltelijke puntscore';
 $string['partofquestion'] = 'Deel van vraag';

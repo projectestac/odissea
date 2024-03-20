@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Ezabatzeko egin klik laukitxo honetan';
 $string['ajaxerror'] = 'Errorea';
 $string['ajaxfailedupdate'] = 'Ezin da [1] [2]-rako eguneratu';
 $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi al duzu eguneratutako balioa erabili?';
+$string['editingmode_title'] = 'Kalifikatzaile-txostena editatzen';
 $string['eventgradereportviewed'] = 'Kalifikatzaile-txostena ikusi da';
 $string['grader:manage'] = 'Kudeatu kalifikatzaile-txostena';
 $string['grader:view'] = 'Ikusi kalifikatzaile-txostena';

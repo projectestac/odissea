@@ -47,6 +47,7 @@ $string['deletecondition'] = 'Delete condition';
 $string['force'] = 'Force enrolments now';
 $string['group'] = 'Group assignement';
 $string['group_help'] = 'You can assign none or multiples groups';
+$string['listitem_description'] = 'The "equals" operator checks for strict equality. The "listitem" operator allows to check if a value is in a list of values. The list of values is a semicolon separated list of values. The listitem operator is case sensitive.';
 $string['mappings'] = 'Shibboleth mappings';
 $string['mappings_desc'] = 'When using Shibboleth authentication, this plugin can automatically update a user\'s profile upon each login.<br><br>For instance, if you want to update the user\'s <code>homeorganizationtype</code> profile field with the Shibboleth attribute <code>Shib-HomeOrganizationType</code> (provided that is the environment variable available to the server during login), you can enter on one line: <code>Shib-HomeOrganizationType:homeorganizationtype</code><br>You may enter as many lines as needed.<br><br>To not use this feature or if you don\'t use Shibboleth authentication, simple leave this empty.';
 $string['no_custom_field'] = 'There seems to be no custom field. Head to <a href="{$a}" target="_blank">user settings</a> to add one.';

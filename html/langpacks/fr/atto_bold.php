@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Gras';
-$string['privacy:metadata'] = 'Le plugin atto_bold n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_bold n’enregistre aucune donnée personnelle.';

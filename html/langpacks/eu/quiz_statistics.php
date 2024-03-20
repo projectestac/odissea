@@ -65,6 +65,9 @@ $string['firstattempts'] = 'ikasleen lehenengo saiakerak';
 $string['firstattemptsavg'] = 'Lehenengo saiakeren batez besteko kalifikazioa';
 $string['firstattemptscount'] = 'Osorik kalifikaturiko lehen saiakera-kopurua';
 $string['frequency'] = 'Maiztasuna';
+$string['getstatslockprogress'] = 'Martxan dauden atazen zain. Itxaron ala beranduago saiatu zaitez, mesedez.';
+$string['getstatslocktimeout'] = 'Estatistiken kalkuluaren blokeoaren denbora-muga';
+$string['getstatslocktimeoutdesc'] = 'Galdetegi baten estatistiken kalkulua egiten saiatzean blokeoaren zain egon beharreko segundo kopurua. Ezarpen hau batez ere probetarako dago, ez zenuke aldatu beharko zer egiten ari zaren ez badakizu.';
 $string['highestattempts'] = 'ikasle bakoitzaren kalifikazio altueneko saiakera';
 $string['highestattemptsavg'] = 'Kalifikazio altueneko saiakeren batez besteko kalifikazioa';
 $string['intended_weight'] = 'Planifikatutako pisua';
@@ -85,6 +88,7 @@ Gure benetako pisua kalkulatzeko ekuazioa ezin da kalkulatu kasu honetan. Galdet
 
 Galdetegia editatzen baduzu kobariantza negatiboa duten nabarmandutako galdera hauen gehieneko kalifikazioa zero izateko, orduan galdera hauen benetako pisua zero izango da eta beste galderen benetako pisua orain kalkulatu dena izango da.';
 $string['nogradedattempts'] = 'Ez da saiakerarik egin galdetegi honetan, edo egindako saiakera guztiek eskuzko kalifikazioa behar dute.';
+$string['nostats'] = 'Ezin izan da estatistiken kalkulua egin. Baliteke denbora luzez martxan dagoen kalkulu bat egotea. Saiatu zaitez beranduago, mesedez.';
 $string['nostudentsingroup'] = 'Oraindik ez dago ikaslerik talde honetan';
 $string['optiongrade'] = 'Kalifikazio partziala';
 $string['partofquestion'] = 'Galdera zati bat';

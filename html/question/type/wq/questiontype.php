@@ -99,6 +99,8 @@ class qtype_wq extends question_type {
     }
 
     protected function initialise_question_instance(question_definition $question, $questiondata) {
+        global $CFG;
+        
         $this->base->initialise_question_instance($question->base, $questiondata);
 
         $question->id = &$question->base->id;
@@ -118,7 +120,11 @@ class qtype_wq extends question_type {
         $question->penalty = &$question->base->penalty;
         $question->stamp = &$question->base->stamp;
         $question->version = &$question->base->version;
-        $question->hidden = &$question->base->hidden;
+        if ($CFG->version >= 2022041900 /* v4.0.0 */) {
+            $question->status = &$question->base->status;
+        } else {
+            $question->hidden = &$question->base->hidden;
+        }
         $question->timecreated = &$question->base->timecreated;
         $question->timemodified = &$question->base->timemodified;
         $question->createdby = &$question->base->createdby;

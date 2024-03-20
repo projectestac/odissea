@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Klik hier om te verwijderen';
 $string['ajaxerror'] = 'Fout';
 $string['ajaxfailedupdate'] = 'Kan [1] niet updaten voor [2]';
 $string['ajaxfieldchanged'] = 'Het veld dat je nu aan het bewerken bent, is gewijzigd. Wil je de aangepaste waarde gebruiken?';
+$string['editingmode_title'] = 'Beoordelersrapport bewerken';
 $string['eventgradereportviewed'] = 'Beoordelaarsrapport bekeken';
 $string['grader:manage'] = 'Beheer rapportage';
 $string['grader:view'] = 'Bekijk rapportage';

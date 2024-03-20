@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bp_title'] = 'Nom';
 $string['name'] = 'Nom';
 $string['perioddescription'] = 'Descripció';
+$string['report_select_all'] = 'Selecciona-ho tot';
 $string['reports'] = 'Informes';
+$string['select_all'] = 'Selecciona-ho tot';
 $string['showall'] = 'Mostra-ho tot';

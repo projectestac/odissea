@@ -99,7 +99,7 @@ Pode revê-lo aqui:
 <a href="{$a->url}">Relatório do Certificado</a>.';
 $string['emailteachers'] = 'Enviar e-mail aos professores';
 $string['emailteachers_help'] = 'Se ativar esta opção, os professores serão alertados através de e-mail sempre que forem atribuídos certificados aos alunos';
-$string['entercode'] = 'Introduza o código do certificado a verificar:';
+$string['entercode'] = 'Indique o código do certificado a verificar:';
 $string['fontsans'] = 'Família de tipos de letra sans-serif';
 $string['fontsans_desc'] = 'Família de tipos de letra \'sans-serif\' para certificados com fontes incorporadas';
 $string['fontserif'] = 'Família de tipos de letra serif';

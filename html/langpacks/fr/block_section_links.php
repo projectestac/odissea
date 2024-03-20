@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'Augmenter de';
-$string['incby1_help'] = 'Chaque fois qu\'un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
+$string['incby1_help'] = 'Chaque fois qu’un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
 $string['incby2'] = 'Augmenter de (alternative)';
-$string['incby2_help'] = 'Chaque fois qu\'un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
+$string['incby2_help'] = 'Chaque fois qu’un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
 $string['jumptocurrenttopic'] = 'Section actuelle';
 $string['jumptocurrentweek'] = 'Semaine actuelle';
 $string['numsections1'] = 'Nombre de sections';
-$string['numsections1_help'] = 'Lorsque le nombre de section d\'un cours atteint ce nombre, la valeur d\'incrément est utilisée.';
+$string['numsections1_help'] = 'Lorsque le nombre de section d’un cours atteint ce nombre, la valeur d’incrément est utilisée.';
 $string['numsections2'] = 'Nombre de sections (alternatif)';
-$string['numsections2_help'] = 'Lorsque le nombre de section d\'un cours atteint ce nombre, la valeur d\'incrément alternative est utilisée.';
+$string['numsections2_help'] = 'Lorsque le nombre de section d’un cours atteint ce nombre, la valeur d’incrément alternative est utilisée.';
 $string['pluginname'] = 'Liens vers sections';
-$string['privacy:metadata'] = 'Le bloc Liens vers sections affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Liens vers sections affiche seulement des données enregistrées à d’autres endroits.';
 $string['section_links:addinstance'] = 'Ajouter un bloc liens vers sections';
 $string['showsectionname'] = 'Afficher le nom de section';
 $string['showsectionname_help'] = 'Afficher le nom de section en plus de son numéro';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowadditionalcssclasses'] = 'Permettre des classes CSS supplémentaires';
 $string['configallowadditionalcssclasses'] = 'Ajoute aux blocs Texte une option de configuration permettant de définir des classes CSS supplémentaires.';
 $string['configclasses'] = 'Classes CSS supplémentaires';
-$string['configclasses_help'] = 'L\'objectif de cette option est de permettre de différentier les blocs Texte les uns des autres pour faciliter la personnalisation de son aspect. Les classes CSS spécifiées ici (séparées par des espaces) seront ajoutées aux classes existantes du bloc.';
+$string['configclasses_help'] = 'L’objectif de cette option est de permettre de différentier les blocs Texte les uns des autres pour faciliter la personnalisation de son aspect. Les classes CSS spécifiées ici (séparées par des espaces) seront ajoutées aux classes existantes du bloc.';
 $string['configcontent'] = 'Contenu';
 $string['configtitle'] = 'Titre du bloc Texte';
 $string['html:addinstance'] = 'Ajouter un bloc Texte';

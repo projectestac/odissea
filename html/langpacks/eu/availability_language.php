@@ -29,6 +29,6 @@ $string['description'] = 'Behartu ikasleak hizkuntza jakin bat erabiltzera.';
 $string['getdescription'] = 'Ikaslearen hizkuntza {$a} da';
 $string['getdescriptionnot'] = 'Ikaslearen hizkuntza ez da {$a}';
 $string['missing'] = 'Hizkuntza bat aukeratu behar duzu.';
-$string['pluginname'] = 'Hizkuntzaren araberako eskuragarritasun baldintza';
+$string['pluginname'] = 'Hizkuntzaren araberako eskuragarritasun murrizketa';
 $string['privacy:metadata'] = 'Hizkuntzaren araberako baldintza pluginak  ez du datu pertsonalik biltzen.';
 $string['title'] = 'Hizkuntza';

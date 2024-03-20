@@ -143,7 +143,7 @@ $string['pleasesetonegroupor'] = 'Por favor, cree al menos un grupo dentro de es
 <li><a href="{$a->linkcourse}">regresar al curso</a></li>
 </ul>';
 $string['pluginadministration'] = 'Administración de la elección';
-$string['pluginname'] = 'Selección de grupo.';
+$string['pluginname'] = 'Selección de grupo';
 $string['privacy'] = 'Privacidad de los resultados';
 $string['privacy:metadata'] = 'El plugin Choice Group (Elección de Grupo) no almacena ningún dato personal. Todos los datos son almacenados por el componente del núcleo de Moodle (core_group).';
 $string['publish'] = 'Publicar resultados';

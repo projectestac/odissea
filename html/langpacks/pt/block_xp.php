@@ -31,20 +31,31 @@ $string['addacondition'] = 'Adicionar uma condição';
 $string['addarule'] = 'Adicionar uma regra';
 $string['addinstructions'] = 'Adicionar mais informação';
 $string['additionalresources'] = 'Recursos adicionais';
+$string['addlevel'] = 'Adicionar nível';
 $string['addoninstallationerror'] = 'Foi detetado um problema com o complemento (local_xp). Parece não estar instalado corretamente. Um administrador deve finalizar a sua instalação.';
 $string['addonnotactivated'] = 'Este suplemento não está ativado.';
 $string['addrulesformhelp'] = 'A última coluna define a quantidade de pontos obtidos de experiência quando um critério é cumprido.';
 $string['admindefaultrulesintro'] = 'As regras mostradas a seguir serão usadas como regras predefinidas nas disciplinas às quais o bloco seja adicionado.';
 $string['admindefaultsettingsintro'] = 'As configurações abaixo serão usadas como predefinições quando o bloco for adicionado a uma disciplina. Algumas configurações podem ser bloqueadas e, neste caso, o seu valor é estritamente aplicado em todas as instâncias do módulo.';
 $string['admindefaultvisualsintro'] = 'A seguinte configuração será usada como predefinição quando o bloco for adicionado a uma disciplina.';
+$string['adminscanearnxp'] = 'Os administradores podem ganhar pontos';
+$string['adminscanearnxp_desc'] = 'Por padrão, os administradores não estão incluídos no grupo de utilizadores que podem ganhar pontos. Isso ocorre porque os administradores sempre têm a permissão _block/xp:earnxp_, permitindo-lhes recolher continuamente pontos em todos os lugares. Pode usar esta configuração para permitir que os administradores também ganhem pontos.';
 $string['anonymity'] = 'Anonimato';
 $string['anonymity_help'] = 'Esta configuração controla se os participantes podem, ou não, ver o nome e o avatar dos outros.';
+$string['apply'] = 'Aplicar';
 $string['awardaxpwhen'] = '<strong>{$a}</strong> pontos de experiência são atribuídos quando:';
+$string['badgeaward'] = 'Distintivo a atribuir';
+$string['badgeawarddesc'] = 'Um distintivo a atribuir quando o utilizador atinge o nível.';
+$string['basepoints'] = 'Pontos base';
+$string['basepointslineardesc'] = 'O incremento mínimo entre cada nível.';
+$string['basepointsrelativedesc'] = 'O número de pontos para começar.';
 $string['basexp'] = 'Algoritmo base';
 $string['blockappearance'] = 'Aparência do bloco';
 $string['blockappearancemovedtopluginsettings'] = 'As configurações de aparência do bloco foram movidas para a página de configurações do módulo.';
 $string['cachedef_filters'] = 'Filtros de nível';
 $string['cachedef_ruleevent_eventslist'] = 'Lista de alguns eventos';
+$string['cannotbesetindefaults'] = 'Isso não pode ser definido nos valores padrão.';
+$string['cannotearnpoints'] = 'Não pode ganhar pontos.';
 $string['cannotshowblockconfig'] = 'Normalmente são mostradas aqui  as configurações da aparência mas não foi possível encontrar o bloco. Para alterar a aparência do bloco, volte [aqui]({$a}) (ou onde adicionou o bloco), ative o modo de edição e siga a opção "Configurar o bloco" na lista pendente do bloco. Se não encontrar o bloco, adicione-o novamente à sua disciplina.';
 $string['cannotshowblockconfigsys'] = 'Normalmente são mostradas aqui as configurações da aparência mas não foi possível encontrar o bloco. Pode estar em falta na [página inicial]({$a->fp}) e no [painel predefinido] ({$a->mysys}) dos utilizadores ou presente em ambos. Para editar as configurações aqui, verifique se aparecem apenas em alguma delas.';
 $string['changelevelformhelp'] = 'Se alterar o número de níveis, as medalhas personalizadas de cada nível serão temporariamente desativadas para prevenir níveis sem medalhas. Se alterar o número de níveis vá à página \'Visuais\' para reativar as medalhas personalizadas após guardar este formulário.';
@@ -53,6 +64,7 @@ $string['clicktoselectcm'] = 'Clique para selecionar uma atividade ou recurso';
 $string['cmselector'] = 'Seletor de módulo da disciplina';
 $string['coefxp'] = 'Coeficiente do algorítmo';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['compatibilitycheck'] = 'Verificação de compatibilidade';
 $string['configblockrankingsnapshot'] = 'Mostrar instantâneo da grelha de classificação';
 $string['configblockrankingsnapshot_help'] = 'O instantâneo da grelha de classificação exibe a classificação do utilizador. Também tentará exibir as duas pessoas ao redor do utilizador. Esta funcionalidade requer que a tabela de classificação seja ativada e que sejam mostradas as classificações.';
 $string['configdescription'] = 'Introdução';
@@ -70,18 +82,31 @@ $string['courserules'] = 'Regras da disciplina';
 $string['courseselectedcolon'] = 'Disciplina selecionada:';
 $string['coursesettings'] = 'Configurações da disciplina';
 $string['coursevisuals'] = 'Visuais da disciplina';
+$string['currencysign'] = 'Símbolo de pontos';
+$string['currencysign_help'] = 'Com esta configuração, pode alterar o significado dos pontos. Será exibido ao lado da quantidade de pontos que cada utilizador tem como substituto da referência a _pontos de experiência_. Escolha um dos símbolos fornecidos ou faça o upload do seu próprio!';
+$string['currencysignxp'] = 'XP (Pontos de Experiência)';
 $string['customizelevels'] = 'Personalizar os níveis';
 $string['dangerzone'] = 'Zona de perigo';
 $string['defaultlevels'] = 'Níveis predefinidos';
 $string['defaultrules'] = 'Regras predefinidas';
 $string['defaultrulesformhelp'] = 'Estas são as regras predefinidas fornecidas pelo módulo. Fornecem automaticamente pontos predefinidos e ignoram alguns eventos redundantes. As regras que definir têm precedência sobre elas.';
 $string['defaultsettings'] = 'Configurações predefinidas';
-$string['defaultvisuals'] = 'Aparência predefinida';
+$string['defaultvisuals'] = 'Aparência padrão';
 $string['deletecondition'] = 'Apagar condição';
 $string['deleterule'] = 'Apagar regra';
 $string['description'] = 'Descrição';
 $string['difference'] = 'Dif.';
-$string['discoverlevelupplus'] = 'Descubra a versão Plus';
+$string['difficulty'] = 'Método de cálculo de pontos';
+$string['difficultyflat'] = 'Igual';
+$string['difficultyflatdesc'] = 'Todos os níveis requerem o mesmo número de pontos para atingir.';
+$string['difficultylinear'] = 'Crescente';
+$string['difficultylineardesc'] = 'Os níveis demoram progressivamente mais tempo para atingir.';
+$string['difficultylinearincrdesc'] = 'O número de pontos usado para a dificuldade progressiva.';
+$string['difficultypointincrease'] = 'Aumento de pontos';
+$string['difficultyrelative'] = 'Acumulativo';
+$string['difficultyrelativedesc'] = 'Os níveis tornam-se exponencialmente mais difíceis de atingir.';
+$string['difficultyrelativeincrdesc'] = 'A percentagem de pontos a aumentar a partir do nível anterior.';
+$string['discoverlevelupplus'] = 'Descobre o Level Up XP+';
 $string['dismissnotice'] = 'Dispensar aviso';
 $string['displayeveryone'] = 'Mostrar todos';
 $string['displaynneighbours'] = 'Mostrar {$a} vizinhos';
@@ -90,6 +115,10 @@ $string['displayparticipantsidentity'] = 'Mostrar a identidade dos participantes
 $string['displayrank'] = 'Mostrar classificação';
 $string['displayrelativerank'] = 'Mostrar classificação relativa';
 $string['documentation'] = 'Documentação';
+$string['drops'] = 'Drops';
+$string['drops_help'] = 'Em videojogos, alguns personagens podem _largar_ itens ou pontos de experiência no chão para o jogador apanhar. Esses itens e pontos são comumente chamados de drops. No Level Up XP, drops são códigos abreviados (por exemplo, `[xpdrop abcdef]`) que um instrutor pode colocar no conteúdo regular do Moodle. Quando encontrados por um utilizador, esses drops serão _apanhados_ e uma certa quantidade de pontos será atribuída. Atualmente, os drops são invisíveis para o utilizador e atribuem pontos passivamente na primeira vez que são encontrados. Os drops podem ser usados para atribuir pontos de forma inteligente quando um determinado tipo de conteúdo é consumido por um estudante. Aqui estão algumas ideias: - Coloque um drop no feedback de um teste apenas visível para pontuações perfeitas - Coloque um drop em conteúdo profundo para recompensar seu consumo - Coloque um drop numa discussão interessante no fórum - Coloque um drop numa página de difícil acesso num módulo de lições [Mais informações](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
+$string['dropsintro'] = 'Drops são trechos de código colocados diretamente no conteúdo que atribuem pontos quando encontrados por um utilizador.';
+$string['editingdefaultsettingsinwholesitemodenotice'] = '**Atenção!** Não está a modificar as configurações atualmente ativas; em vez disso, está a editar os valores padrão. Como o Level Up XP é usado em todo o site, a sua intenção é provavelmente alterar as configurações em todo o site. [Navegue aqui]({$a->url}) para alterar essas configurações ou siga o link "Configurações" do bloco XP.';
 $string['editinstructions'] = 'Editar informação';
 $string['enablecheatguard'] = 'Ativar prevenção de fraude';
 $string['enablecheatguard_help'] = 'A prevenção de fraude oferece um mecanismo simples e barato para evitar que os alunos abusem do sistema ao usar técnicas óbvias, como atualizar a mesma página indefinidamente ou repetir a mesma ação várias vezes.
@@ -115,11 +144,11 @@ $string['errornotalllevelsbadgesprovided'] = 'Não foram definidas medalhas para
 $string['errorunknownevent'] = 'Erro: evento desconhecido';
 $string['errorunknownmodule'] = 'Erro: módulo desconhecido';
 $string['errorxprequiredlowerthanpreviouslevel'] = 'Os pontos são menores ou iguais à do nível anterior.';
-$string['event_user_leveledup'] = 'Utilizador subiu de nível';
+$string['event_user_leveledup'] = '';
 $string['eventis'] = 'O evento é {$a}';
 $string['eventname'] = 'Nome do evento';
 $string['eventproperty'] = 'Propriedades do evento';
-$string['eventsrules'] = 'Regras dos eventos';
+$string['eventsrules'] = '';
 $string['eventsrules_help'] = 'Este módulo usa os eventos para atribuir pontuação às ações executadas pelos alunos.
 Pode usar o formulário abaixo para adicionar as suas próprias regras e modificar as regras predefinidas.
 
@@ -129,6 +158,7 @@ Recursos adicionais:
 
 - [Como são calculados os pontos de experiência?] (https://docs.levelup.plus/xp/docs/getting-started/points-calculation?ref=blockxp_help)
 - [Regras de resolução de problemas] (https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
+$string['eventsrulesintro'] = 'Observa ações e atribui pontos aos estudantes à medida que as realizam.';
 $string['eventtime'] = 'Data do evento';
 $string['filterbyuser'] = 'Filtrar por utilizador';
 $string['filtermodules'] = 'Módulos de filtro';
@@ -140,9 +170,23 @@ $string['forever'] = 'Para sempre';
 $string['forthewholesite'] = 'No site';
 $string['give'] = 'dar';
 $string['gotofullladder'] = 'Ir para grelha de classificação geral';
+$string['graderules'] = 'Regras de notas';
+$string['graderules_help'] = 'Os estudantes ganharão tantos pontos quanto as suas notas. Uma nota de 5/10 e uma nota de 5/100 atribuirão ao estudante 5 pontos. Quando a nota do estudante muda várias vezes, ele ganhará pontos equivalentes à nota máxima que recebeu. Os pontos nunca são retirados dos estudantes, e as notas negativas são ignoradas. Exemplo: Alice envia um trabalho e recebe a nota de 40/100. No _Level Up XP_, Alice recebe 40 pontos pela sua nota. Alice tenta novamente o trabalho, mas desta vez a sua nota é reduzida para 25/100. Os pontos de Alice no _Level Up XP_ não mudam. Na sua última tentativa, Alice marca 60/100, ela ganha mais 20 pontos no _Level Up XP_, o seu total de pontos ganhos é 60. [Mais em _Level Up XP_ documentação](https://docs.levelup.plus/xp/docs/how-to/grade-based-rewards?ref=blockxp_help)';
+$string['graderulesintro'] = 'As regras de notas permitem que os utilizadores recebam pontos iguais às notas que recebem.';
 $string['grid'] = 'Grelha';
+$string['hasbadgeaward'] = 'Conjunto de distintivo a atribuir';
+$string['hasdescription'] = 'Conjunto de descrição';
+$string['hasname'] = 'Conjunto de nome';
+$string['hasnobadgeaward'] = 'Sem distintivo a atribuir';
+$string['hasnodescription'] = 'Sem descrição';
+$string['hasnoname'] = 'Sem nome';
+$string['hasnopopupmessage'] = 'Sem mensagem popup';
+$string['haspopupmessage'] = 'Conjunto de mensagem popup';
 $string['hideparticipantsidentity'] = 'Ocultar a identidade dos participantes';
 $string['hiderank'] = 'Ocultar classificação';
+$string['importpoints'] = 'Importar pontos';
+$string['importpoints_help'] = 'A importação pode ser utilizada para _aumentar_ os pontos dos alunos ou para os _substituir_ pelo valor fornecido. Note que a importação __não utiliza__ o mesmo formato que o relatório exportado. O formato necessário está descrito na [documentação](https://docs.levelup.plus/xp/docs/how-to/import-points/importing-points-from-csv?ref=localxp_help), onde está disponível um [ficheiro de exemplo](https://docs.levelup.plus/xp/docs/how-to/import-points/importing-points-from-csv?ref=localxp_help#sample-file).';
+$string['importpointsintro'] = 'Importar pontos de um ficheiro CSV e, opcionalmente, enviar uma mensagem ao destinatário.';
 $string['incourses'] = 'Nas disciplinas';
 $string['ineffective'] = 'Ineficaz';
 $string['infos'] = 'Informação';
@@ -157,15 +201,22 @@ $string['ladderempty'] = 'A grelha de classificação está vazia, certifique-se
 $string['learnmore'] = 'Saber mais';
 $string['level'] = 'Nível';
 $string['levelbadges'] = 'Medalhas dos níveis';
+$string['levelbadges_help'] = 'Carregar imagens para substituir a aparência de níveis individuais. Os ficheiros devem ter o nome [nível].[extensão do ficheiro], por exemplo, 1.png, 2.jpg, etc. Recomendamos imagens com o tamanho de 100x100 pixels, em qualquer um dos seguintes tipos: GIF, JPEG, PNG e SVG.';
 $string['levelbadgesformhelp'] = 'Nomes dos ficheiros: [nivel].[extensão do ficheiro]. Por exemplo: 1.png, 2.jpg, etc...<br/>Tamanho da imagem recomendado: 100 x 100 (px).';
 $string['levelcount'] = 'Número de níveis';
 $string['leveldesc'] = 'Descrição do nível';
 $string['leveldesc_help'] = 'Breve descrição do nível que é mostrada na página de informações ao lado do próprio nível. Pode usar para descrever uma recompensa para os alunos que atingem o nível, para incluir instruções sobre como trabalhar nesse nível, para descrever o nível de uma maneira lúdica (por exemplo, apenas as almas mais corajosas são conhecidas por atingir este nível), etc.';
+$string['leveldescriptiondesc'] = 'Breve descrição do nível, exibida aos alunos na página de informação.';
 $string['levelname'] = 'Nome do nível';
 $string['levelname_help'] = 'Um nome abreviado para mostrar em vez do predefinido _Nível # 1_, _Nível # 2_, etc, que é mostrado em determinadas ocasiões. Se atribuir nomes a alguns níveis, recomendamos que dê um nome a todos os níveis!';
+$string['levelpointslength'] = 'Comprimento';
+$string['levelpointsstart'] = 'Iniciar';
 $string['levels'] = 'Níveis';
+$string['levelsappearance'] = 'Aparência dos Níveis';
+$string['levelssaved'] = 'Os níveis foram guardados.';
 $string['levelswillbereset'] = 'Atenção! Ao guardar este formulário serão recalculados os níveis de todos os participantes!';
 $string['levelup'] = 'Subir de nível';
+$string['levelupoptionsunavailableforlevelone'] = 'Opções relacionadas com a obtenção do nível não estão disponíveis para o primeiro nível.';
 $string['levelupplus'] = 'Subir de nível Plus';
 $string['levelx'] = 'Nível #{$a}';
 $string['likenotice'] = '<strong>Gosta deste módulo?</strong> Por favor, <a href="{$a->moodleorg}" target="_blank">adicione-o aos seus favoritos</a> em Moodle.org e <a href="{$a->github}" target="_blank">marque-o com uma estrela</a> no GitHub.';
@@ -182,6 +233,12 @@ $string['missing'] = 'Em falta';
 $string['movecondition'] = 'Mover condição';
 $string['moverule'] = 'Mover regra';
 $string['name'] = 'Nome';
+$string['navbardisplay'] = 'Mostrar na barra de navegação';
+$string['navbardisplay_desc'] = 'Quando ativado, o nível do utilizador será exibido na barra de navegação superior. Se o plugin for usado "Por cursos", só aparecerá nos cursos. Note que esta funcionalidade depende muito do tema e pode não funcionar bem, ou mesmo não funcionar, com temas de terceiros. [Saiba mais](https://docs.levelup.plus/xp/docs/navbar-display)';
+$string['navdrops'] = 'Quedas';
+$string['naveventrules'] = 'Regras do evento';
+$string['navgraderules'] = 'Regras de avaliação';
+$string['navimport'] = 'Importar';
 $string['navinfos'] = 'Informação';
 $string['navladder'] = 'Grelha de classificação';
 $string['navlevels'] = 'Níveis';
@@ -195,10 +252,17 @@ $string['navsettings'] = 'Configurações';
 $string['navvisuals'] = 'Aparência';
 $string['nextlevelin'] = 'próximo nível em';
 $string['nodescription'] = 'Sem descrição';
+$string['noissuesidentified'] = 'Não foram identificados problemas';
 $string['nologsrecordedyet'] = 'Ainda não existem registos guardados.';
 $string['noname'] = 'Sem nome';
+$string['notecompatibilityissues'] = 'Por favor, note os problemas de compatibilidade identificados abaixo:';
 $string['notesomesettingslocked'] = 'Tenha em atenção que algumas configurações podem não ser editáveis se forem bloqueadas por um administrador.';
+$string['numberoflevels'] = 'Número de níveis';
 $string['occasionally'] = 'Ocasionalmente';
+$string['outofsync'] = 'Fora de sincronia';
+$string['outofsyncexcessive'] = 'Fora de sincronia excessiva';
+$string['outofsyncexcessiveinfo'] = 'O XP+ é excessivamente mais antigo que o XP, o que pode levar a problemas inesperados. Para evitar malfuncionamento, o XP+ pode desativar-se automaticamente no futuro.';
+$string['outofsyncinfo'] = 'Os plugins de XP não são compatíveis entre si, o que pode levar a problemas inesperados.';
 $string['participant'] = 'Participante';
 $string['participants'] = 'Participantes';
 $string['participatetolevelup'] = 'Participe na disciplina para ganhar pontos de experiência e subir de nível!';
@@ -211,8 +275,13 @@ $string['pluginshortcodesdesc'] = 'Este módulo permite que os instrutores perso
 $string['pluginsoutofsync'] = '_Os módulos não estão em sincronia! __
 
 Isto significa que atualizou o _Subir de nível_ mas não _Subir de nível Plus_. Embora façamos o nosso melhor para tentar evitar quaisquer problemas, algumas funcionalidades podem não funcionar corretamente, incluindo o próprio _Subir de nível_. Recomendamos que atualize o _Subir de nível Plus_ para a última versão. [Ler mais] ({$a->url})';
+$string['pluginxmaybeincompatible'] = 'Esta versão de {$a->name} ({$a->componente}) pode ser incompatível com o Moodle {$a->versão}.';
 $string['pointsintimelinker'] = 'por';
+$string['pointsperlevel'] = 'Pontos por nível';
 $string['pointsrequired'] = 'Pontos necessários';
+$string['popupnotificationmessage'] = 'Mensagem de notificação pop-up';
+$string['popupnotificationmessagedesc'] = 'Mensagem opcional a ser exibida na notificação pop-up que parabeniza o utilizador por atingir o nível.';
+$string['potentialmoodleincompatibility'] = 'Incompatibilidade potencial com o Moodle';
 $string['privacy:metadata:log'] = 'Guardar registo dos eventos';
 $string['privacy:metadata:log:eventname'] = 'Nome do evento';
 $string['privacy:metadata:log:time'] = 'A data em que ocorreu';
@@ -237,8 +306,9 @@ $string['promocontactintro'] = 'Contacte-nos para mais informações. Não morde
 $string['promocontactus'] = 'Contactar';
 $string['promoemailusat'] = 'Envie um e-mail para _levelup@branchup.tech_.';
 $string['promoerrorsendingemail'] = 'Ohh! Não foi possível enviar a mensagem... envie-nos um e-mail diretamente para: {$a}. Obrigado!';
+$string['promogetnow'] = 'Obtenha o XP+ agora!';
 $string['promoifpreferemailusat'] = 'Psst! Se preferir, envie-nos um e-mail diretamente para _ {$a} _.';
-$string['promointro'] = 'Torne-se o mestre do jogo e use o Subir de nível! em todo o seu potencial. Desbloqueie funcionalidades adicionais com o Subir de nível Plus.';
+$string['promointro'] = 'Torne-se o mestre do jogo! Desbloqueie funcionalidades adicionais e leve a gamificação a um patamar totalmente novo com o Level Up XP+!';
 $string['promointroinstalled'] = 'O suplemento _Subir de nível Plus_ está instalado no seu sistema e todos as funcionalidades foram ativadas.';
 $string['promorulesdidyouknow'] = 'Sabia que com <em>Subir de nível Plus</em> os alunos podem receber pontos para <em>concluírem as disciplinas</em> e <em>atividades</em>, ou até receber pontos de acordo com as suas <em>notas</em>? <a href="{$a->url}">Saiba mais aqui</a>.';
 $string['promoyourmessagewassent'] = 'Obrigado. A sua mensagem foi enviada. Entraremos em contacto consigo em breve.';
@@ -248,9 +318,10 @@ $string['property:crud'] = 'CRUD do evento';
 $string['property:eventname'] = 'Nome do evento';
 $string['property:target'] = 'Alvo do evento';
 $string['questreleasenotice'] = 'Temos o prazer de anunciar o nosso **novo módulo de gamificação**: **Subir de nível Quest** 🥳. Transforme as suas disciplinas em **aventuras emocionantes**, repletas de **estratégias de compromisso** e **comemorações** 🤯! Confira o [site da Quest]({$a->questurl}) e a nossa [nota de lançamento]({$a->questblogurl}).';
+$string['quickeditpoints'] = 'Edição rápida de pontos';
 $string['rank'] = 'Posição';
 $string['ranking'] = 'Classificação';
-$string['ranking_help'] = 'A classificação é a posição absoluta do utilizador atual na grelha de classificação. A classificação relativa é a diferença dos pontos de experiência entre um utilizador e os seus vizinhos.';
+$string['ranking_help'] = 'O rank é a posição absoluta do utilizador atual no quadro de líderes. O rank relativo é a diferença em pontos de experiência entre um utilizador e os seus vizinhos.';
 $string['reallydeleteuserstate'] = 'Apagar um utilizador só é útil para removê-lo da grelha de classificação. Para qualquer outro motivo, recomenda-se que defina a pontuação do utilizador como 0. Tenha em atenção que apagar um utilizador não afeta a capacidade de ganhar pontos no futuro.
 
 Importante: quando está a usar o _Subir de nível_ para todo o site, apagá-los fará com que deixem de constar nos relatórios. Neste caso, não poderá atribuir novamente os pontos. No entanto, se estiver a usar o _Subir de nível _ por disciplina, o aluno poderá ainda aparecer nos relatórios, se estiver inscrito na disciplina.
@@ -264,11 +335,14 @@ Importante: quando está a usar o _Subir de nível_ para todo o site, apagá-los
 
 Tem a certeza absoluta de que pretende apagar os pontos e registo deste utilizador?';
 $string['reallyresetallcoursestodefaults'] = 'Tem a certeza de que pretende repor todas as disciplinas para os valores predefinidos? Esta ação é irreversível.';
+$string['reallyresetcourselevelstodefaults'] = 'Reiniciar realmente os níveis do curso para os níveis padrão? Esta ação não é reversível.';
 $string['reallyresetcourserulestodefaults'] = 'Tem a certeza de que pretende repor as regras da disciplina para os valores predefinidos? Esta ação é irreversível.';
+$string['reallyresetcoursevisualstodefaults'] = 'Reiniciar realmente a aparência dos níveis do curso para a aparência padrão? Esta ação não é reversível.';
 $string['reallyresetdata'] = 'Pretende realmente reinicializar os níveis e pontos de todos os participantes desta disciplina?';
 $string['reallyresetgroupdata'] = 'Pretende realmente reinicializar os níveis e pontos para todos os elementos deste grupo?';
 $string['reallyreverttopluginsdefaults'] = 'Tem a certeza de que pretende redefinir as regras para as predefinições sugeridas pelo módulo? Esta ação é irreversível.';
 $string['recentrewards'] = 'Reconhecimentos recentes';
+$string['recommended'] = 'Recomendado';
 $string['recommendedplugins'] = 'Módulos recomendados';
 $string['releasenotes'] = 'Notas de lançamento';
 $string['remaining'] = 'remanescente';
@@ -281,6 +355,8 @@ $string['resetallcoursestodefaultsintro'] = 'Clique no botão abaixo para repor 
 $string['resetcoursedata'] = 'Reinicializar os dados da disciplina';
 $string['resetcourserulestodefaults'] = 'Repor as regras da disciplina para os valores predefinidos';
 $string['resetgroupdata'] = 'Reinicializar informações do grupo';
+$string['resetlevelstodefaults'] = 'Redefinir níveis para padrões';
+$string['resetvisualstodefaults'] = 'Redefinir aparência para padrões';
 $string['resultsfilteredforn'] = 'Resultados filtrados para {$a}.';
 $string['reverttopluginsdefaults'] = 'Reverter para as predefinições do módulo';
 $string['reverttopluginsdefaultsintro'] = 'Use o botão abaixo se pretender reverter as configurações acima para as predefinições do módulo. As regras de disciplinas já existentes não serão afetadas.';
@@ -354,31 +430,7 @@ Nunca é mostrado porque o nível do utilizador nunca pode ser menor ou igual a 
 
 Note que estes códigos de configuração NÃO PODEM ser aninhados uns dentro dos outros.';
 $string['shortcode:xpladder'] = 'Mostrar uma parte da grelha de classificação';
-$string['shortcode:xpladder_help'] = 'Por predefinição,  será mostrada uma parte da grelha de classificação em torno do utilizador atual.
-
-```
-[xpladder]
-```
-
-Para mostrar os 10 melhores alunos em vez dos vizinhos do utilizador atual, defina o parâmetro `top`. Também pode, opcionalmente, definir o número de utilizadores a serem mostrados, por exemplo, `top = 20`.
-
-```
-[xpladder top]
-[xpladder top=15]
-```
-Uma hiperligação para a grelha de classificação completa será automaticamente mostrada abaixo da tabela. Caso não pretenda mostrar a hiperligação, adicione o argumento `hidelink`.
-
-```
-[xpladder hidelink]
-```
-
-Por predefinição, a tabela não inclui a coluna de progresso que mostra a barra de progressão. Se a coluna foi selecionada nas colunas adicionais nas configurações da grelha de classificação, pode usar o argumento `withprogress` para mostrá-la.
-
-```
-[xpladder withprogress]
-```
-
-Tenha em atenção que quando uma disciplina está a usar grupos, a grelha de classificação tentará "adivinhar" de qual grupo deve ser mostrada a a respetiva grelha de classificação.';
+$string['shortcode:xpladder_help'] = 'Por padrão, será exibida uma parte da tabela de classificação em torno do utilizador atual.```[xpladder]```Para exibir os 10 melhores alunos em vez dos vizinhos do utilizador atual, defina o parâmetro `top`. Pode opcionalmente definir o número de utilizadores a serem exibidos como `top=20`.```[xpladder top][xpladder top=15]```Um link para a tabela completa será exibido automaticamente abaixo da tabela. Se não quiser exibir tal link, adicione o argumento `hidelink`.```[xpladder hidelink]```Por padrão, a tabela não inclui a coluna de progresso que exibe a barra de progresso. Se tal coluna tiver sido selecionada nas colunas adicionais nas configurações da tabela de classificação, pode usar o argumento `withprogress` para a exibir.```[xpladder withprogress]```Note que quando um curso está a usar grupos, a tabela de classificação adivinhará qual grupo exibir.';
 $string['shortcode:xplevelname'] = 'Mostrar o nome do nível';
 $string['shortcode:xplevelname_help'] = 'Por predefinição, a etiqueta mostra o nome do nível do utilizador atual.
 Como alternativa, pode usar o argumento \'level\' para exibir o nome de um nível específico.
@@ -390,6 +442,7 @@ Como alternativa, pode usar o argumento \'level\' para exibir o nome de um níve
 
 Se o argumento \'level\' for indicado e o nível não existir, nada será exibido.';
 $string['shortcode:xppoints'] = 'Exibe um número de pontos formatados como pontos de experiência.';
+$string['shortcode:xppoints_help'] = 'Por padrão, isto mostra o número de pontos do utilizador atual. Alternativamente, pode especificar um número para substituir este valor. A estilização dos pontos dependerá de ser exibido um valor arbitrário ou os pontos do utilizador atual. Pode usar o argumento `plain` para remover qualquer estilização.```[xppoints][xppoints 500][xppoints 123 plain]```';
 $string['shortcode:xpprogressbar'] = 'Barra de progressão do utilizador atual para o próximo nível.';
 $string['somefeaturesrequireotherplugins'] = 'Algumas funcionalidades requerem a instalação de módulos adicionais.';
 $string['someoneelse'] = 'Outra pessoa';
@@ -398,7 +451,7 @@ $string['taskcollectionloggerpurge'] = 'Limpar todos os registos (logs)';
 $string['taskusagereport'] = 'Relatório de utilização';
 $string['thankyou'] = 'Obrigado!';
 $string['timebetweensameactions'] = 'Intervalo de tempo obrigatório entre ações idênticas';
-$string['timebetweensameactions_help'] = 'O tempo mínimo, em segundos, requerido entre ações idênticas. Uma ação é considerada idêntica se ocorrer no mesmo contexto e objeto. A leitura de uma publicação de fórum será considerada idêntica se a mesma publicação é lida de novo.';
+$string['timebetweensameactions_help'] = 'O tempo mínimo necessário antes de uma ação que já aconteceu anteriormente ser aceite novamente. Uma ação é considerada idêntica se for colocada no mesmo contexto e objeto; ler um post num fórum será considerado idêntico se o mesmo post for lido novamente. Quando este valor está vazio ou igual a zero, não se aplica.';
 $string['timeformaxactions'] = 'Intervalo de tempo para o máximo de ações';
 $string['timeformaxactions_help'] = 'O intervalo de tempo (em segundos) durante o qual o utilizador não pode exceder um número máximo de ações.';
 $string['tinytimedays'] = '{$a}d';
@@ -410,7 +463,9 @@ $string['tinytimeseconds'] = '{$a}s';
 $string['tinytimeweeks'] = '{$a}s';
 $string['tinytimewithinayearformat'] = '%b %e';
 $string['total'] = 'Total';
+$string['unknownbadgea'] = 'Distintivo desconhecido ({$a})';
 $string['unknowneventa'] = 'Evento desconhecido ({$a})';
+$string['unlockfeaturewithxpplus'] = 'Desbloqueie esta funcionalidade com o XP+. <a href="{$a}">Saiba mais</a>';
 $string['updateandpreview'] = 'Atualizar e visualizar';
 $string['upgradingplugins'] = 'A atualizar os módulos';
 $string['urlaccessdeprecated'] = 'O acesso por via deste URL foi preterido. Atualize as suas hiperligações.';
@@ -425,7 +480,7 @@ $string['valuessaved'] = 'Os valores foram guardados com sucesso.';
 $string['viewas'] = 'Visualizar como';
 $string['viewlogs'] = 'Ver registos';
 $string['viewtheladder'] = 'Visualizar a lista de classificação';
-$string['visualsintro'] = 'Enviar/carregar imagens para personalizar a aparência dos níveis.';
+$string['visualsintro'] = 'Personalize a aparência dos níveis e o significado dos pontos.';
 $string['wewillreplyat'] = 'Responderemos em: _ {$a} _.';
 $string['when'] = 'Quando';
 $string['wherearexpused'] = 'Onde são usados os pontos?';
@@ -440,9 +495,11 @@ $string['xp:view'] = 'Visualizar o bloco e páginas relacionadas';
 $string['xp:viewlogs'] = 'Visualizar registos';
 $string['xp:viewreport'] = 'Ver relatório';
 $string['xpgaindisabled'] = 'Ganho de pontos desativado';
+$string['xpplusrequired'] = 'XP+ necessário';
 $string['xprequired'] = 'XP obrigatório';
 $string['xptogo'] = '[[{$a}]] para terminar';
+$string['youleveledupexcl'] = 'Subiste de nível!';
 $string['youreachedlevel'] = 'Atingiu o nível:';
-$string['youreachedlevela'] = 'Alcançou o nível {$a}!';
+$string['youreachedlevela'] = 'Alcançaste o nível {$a}!';
 $string['yourmessage'] = 'Sua mensagem';
 $string['yourownrules'] = 'Regras pessoais';

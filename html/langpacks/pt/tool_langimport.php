@@ -56,5 +56,5 @@ $string['search'] = 'Pesquisar os pacotes de idiomas disponíveis';
 $string['selectlangs'] = 'Selecione os pacotes linguísticos que pretende desinstalar';
 $string['uninstall'] = 'Desinstalar os pacotes linguísticos selecionados';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s): {$a}. Tem a certeza?';
-$string['updatelangs'] = 'Atualizar todos os pacotes linguísticos instalados';
+$string['updatelangs'] = 'Atualização de todos os pacotes linguísticos instalados';
 $string['updatelangsnote'] = 'Atualizar todos os pacotes linguísticos instalados (ao clicar no botão) pode demorar muito tempo e esgotar o tempo limite. Em vez disso, é recomendado usar a tarefa agendada \'{$a->taskname}\' (que é executada todos os dias, por predefinição).';

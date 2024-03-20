@@ -95,7 +95,6 @@ $string['snapwarning'] = 'Het is misschien mogelijk om je cursus in Tegels-indel
 $string['snapwarning_help'] = 'Theme_settings # Allow_user_themes';
 $string['tileicons'] = 'Tegeliconen';
 $string['tileoutcome'] = 'Uitslag voor deze tegel';
-$string['tip'] = 'Tip';
 $string['tootall'] = 'te hoog voor deze tegel';
 $string['toowide'] = 'te breed voor deze tegel';
 $string['transparenttitleadjustments_desc'] = 'Op fototegels met transparante titelachtergronden, afhankelijk van je thema, wil je deze misschien aanpassen om ervoor te zorgen dat de transparante lijnen van de titel elkaar niet overlappen wanneer ze worden ingepakt.

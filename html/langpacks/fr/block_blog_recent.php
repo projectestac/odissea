@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_recent:addinstance'] = 'Ajouter un bloc articles récents de blog';
 $string['norecentblogentries'] = 'Aucun article récent';
-$string['numentriestodisplay'] = 'Nombre d\'articles récents à afficher';
+$string['numentriestodisplay'] = 'Nombre d’articles récents à afficher';
 $string['pluginname'] = 'Articles de blog récents';
-$string['privacy:metadata'] = 'Le bloc Articles de blog récents affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Articles de blog récents affiche seulement des données enregistrées à d’autres endroits.';
 $string['recentinterval'] = 'Durée considérée comme récente';

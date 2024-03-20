@@ -370,6 +370,7 @@ $string['gradetype_help'] = '4 kalifikazio mota daude:
 
 Soilik balioa eta eskala motako kalifikazioak batu daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezarpenek orrian aukeratzen da.';
 $string['gradevaluetoobig'] = 'Kalifikazioren batek gehienez baimendutako {$a} balioa baino balio handiagoa du.';
+$string['gradevaluetoosmall'] = 'Balioetako bat baimendutako gutxienezko kalifikazioa ({$a}) baino txikiagoa da';
 $string['gradeview'] = 'Ikusi kalifikazioa';
 $string['gradewasmodifiedduringediting'] = '{$a->username}(r)en {$a->itemname}(r)entzat sartutako kalifikazioa alde batera utzi da beste norbaitek orain dela gutxiago eguneratu duelako.';
 $string['gradeweighthelp'] = 'Kalifikazioen pisuari buruzko laguntza';

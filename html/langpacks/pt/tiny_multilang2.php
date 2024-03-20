@@ -27,8 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addlanguage'] = 'Adicionar idioma manualmente';
 $string['addlanguage_desc'] = 'Se ativar esta opção, poderá adicionar idiomas manualmente inserindo o código iso do idioma na caixa de texto abaixo. Caso contrário, deverá instalar pelo menos 2 idiomas nos Pacotes linguísticos.';
-$string['fallbackspantag'] = 'Suporte a tags &lt;span&gt;';
-$string['fallbackspantag_desc'] = 'Para além da sintaxe {mlang} preserva as tradicional tags &lt;span class="multilang"&gt;.';
 $string['helplinktext'] = 'Conteúdo Multilingue (v2)';
 $string['highlight'] = 'Destacar delimitadores';
 $string['highlight_desc'] = 'Destacar visualmente no editor os delimitadores de conteúdos multilingue (por exemplo: {mlang XX} e {mlang}) no editor WYSIWYG).';
@@ -62,6 +60,5 @@ $string['privacy:metadata'] = 'O módulo Conteúdo Multilingue (v2) para o Tiny 
 $string['removealltags'] = 'Remover todas as tags de idioma';
 $string['requiremultilang2'] = 'Requer o Filtro Conteúdo Multilingue (v2)';
 $string['requiremultilang2_desc'] = 'Se ativar esta opção, a lista pendente de idiomas fica visível apenas quando o Filtro Conteúdo Multilingue (v2) está ativado.';
-$string['settings'] = 'Configuração do Conteúdo Multilingue (v2) para o Tiny';
 $string['showalllangs'] = 'Mostrar todos os idiomas';
 $string['showalllangs_desc'] = 'Se ativar esta opção, a lista pendente de idiomas conterá todos os idiomas suportados pelo Moodle. Caso contrário, apenas os idiomas instalados e ativados serão mostrados.';

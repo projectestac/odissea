@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['braceerror'] = 'Impossible de trouver une paire d\'accolades {…} autour des réponses';
+$string['braceerror'] = 'Impossible de trouver une paire d’accolades {…} autour des réponses';
 $string['giftleftbraceerror'] = 'Impossible de trouver une accolade {';
-$string['giftmatchingformat'] = 'Les réponses de la question d\'appariement ne sont pas formatées correctement';
+$string['giftmatchingformat'] = 'Les réponses de la question d’appariement ne sont pas formatées correctement';
 $string['giftnonumericalanswers'] = 'Aucune réponse trouvée pour la question numérique';
 $string['giftnovalidquestion'] = 'Pas de question valide trouvée';
-$string['giftqtypenotset'] = 'Le type de question n\'est pas défini';
+$string['giftqtypenotset'] = 'Le type de question n’est pas défini';
 $string['giftrightbraceerror'] = 'Impossible de trouver une }';
-$string['importminerror'] = 'Il y a une erreur dans la question. Il n\'y a pas assez de réponses pour ce type de question';
+$string['importminerror'] = 'Il y a une erreur dans la question. Il n’y a pas assez de réponses pour ce type de question';
 $string['nohandler'] = 'Pas de traitement pour le type de question {$a}';
 $string['pluginname'] = 'Format GIFT';
-$string['pluginname_help'] = 'Le format GIFT permet l\'importation et l\'exportation de questions à choix multiple, vrai/faux, à réponses courtes, d\'appariement, mot manquant, numériques et de composition par l\'intermédiaire d\'un fichier texte.';
+$string['pluginname_help'] = 'Le format GIFT permet l’importation et l’exportation de questions à choix multiple, vrai/faux, à réponses courtes, d’appariement, mot manquant, numériques et de composition par l’intermédiaire d’un fichier texte.';
 $string['pluginname_link'] = 'qformat/gift';
-$string['privacy:metadata'] = 'Le plugin de format de question GIFT n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de format de question GIFT n’enregistre aucune donnée personnelle.';

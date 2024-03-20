@@ -96,6 +96,7 @@ $string['privacy:metadata:journal_entries'] = 'A record of journal entry';
 $string['privacy:metadata:journal_entries:entrycomment'] = 'The comment received by user to journal';
 $string['privacy:metadata:journal_entries:modified'] = 'The start time of the journal entries.';
 $string['privacy:metadata:journal_entries:rating'] = 'The rating received by user to journl';
+$string['privacy:metadata:journal_entries:teacher'] = 'The teacher that has given feedback to user on journal';
 $string['privacy:metadata:journal_entries:text'] = 'The text written by user';
 $string['privacy:metadata:journal_entries:userid'] = 'The ID of the user';
 $string['rate'] = 'Rate';

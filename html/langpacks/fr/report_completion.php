@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clicktomarkusercomplete'] = 'Cliquer pour signaler l\'achèvement du cours par l\'utilisateur';
-$string['completion:view'] = 'Consulter le rapport d\'achèvement du cours';
-$string['completiondate'] = 'Date d\'achèvement';
-$string['eventreportviewed'] = 'Rapport d\'achèvement consulté';
-$string['eventuserreportviewed'] = 'Rapport utilisateur d\'achèvement consulté';
+$string['clicktomarkusercomplete'] = 'Cliquer pour signaler l’achèvement du cours par l’utilisateur';
+$string['completion:view'] = 'Consulter le rapport d’achèvement du cours';
+$string['completiondate'] = 'Date d’achèvement';
+$string['eventreportviewed'] = 'Rapport d’achèvement consulté';
+$string['eventuserreportviewed'] = 'Rapport utilisateur d’achèvement consulté';
 $string['id'] = 'ID';
 $string['name'] = 'Nom';
-$string['nocapability'] = 'Impossible d\'accéder au rapport d\'achèvement de l\'utilisateur';
-$string['page-report-completion-index'] = 'Rapport d\'achèvement de cours';
-$string['page-report-completion-user'] = 'Rapport utilisateur d\'achèvement de cours';
-$string['page-report-completion-x'] = 'Tout rapport d\'achèvement';
+$string['nocapability'] = 'Impossible d’accéder au rapport d’achèvement de l’utilisateur';
+$string['page-report-completion-index'] = 'Rapport d’achèvement de cours';
+$string['page-report-completion-user'] = 'Rapport utilisateur d’achèvement de cours';
+$string['page-report-completion-x'] = 'Tout rapport d’achèvement';
 $string['pluginname'] = 'Achèvement de cours';
-$string['privacy:metadata'] = 'Le Rapport d\'achèvement de cours affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le Rapport d’achèvement de cours affiche seulement des données enregistrées à d’autres endroits.';

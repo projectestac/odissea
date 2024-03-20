@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mode adaptatif (tout ou rien)';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Mode adaptatif (tout ou rien) n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Mode adaptatif (tout ou rien) n’enregistre aucune donnée personnelle.';

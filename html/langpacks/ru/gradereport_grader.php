@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Щелкните по этому блоку, чт
 $string['ajaxerror'] = 'Ошибка';
 $string['ajaxfailedupdate'] = 'Не удается изменить [1] для [2]';
 $string['ajaxfieldchanged'] = 'Поле, которое вы сейчас редактируете, обновилось. Вы хотели бы использовать обновленное значение?';
+$string['editingmode_title'] = 'Редактирование отчета оценщика';
 $string['eventgradereportviewed'] = 'Отчет «Отчет по оценкам» просмотрен';
 $string['grader:manage'] = 'Настроить отчет по оценкам';
 $string['grader:view'] = 'Просматривать отчет оценщика';

@@ -200,7 +200,7 @@ class behat_general extends behat_base {
     /**
      * Switches to the specified window. Useful when interacting with popup windows.
      *
-     * @Given /^I switch to "(?P<window_name_string>(?:[^"]|\\")*)" window$/
+     * @Given /^I switch to "(?P<window_name_string>(?:[^"]|\\")*)" (window|tab)$/
      * @param string $windowname
      */
     public function switch_to_window($windowname) {
@@ -232,7 +232,7 @@ class behat_general extends behat_base {
     /**
      * Switches to the main Moodle window. Useful when you finish interacting with popup windows.
      *
-     * @Given /^I switch to the main window$/
+     * @Given /^I switch to the main (window|tab)$/
      */
     public function switch_to_the_main_window() {
         $this->switch_to_window(self::MAIN_WINDOW_NAME);
@@ -1466,12 +1466,19 @@ EOF;
         $datahash = $data->getHash();
 
         foreach ($datahash as $row) {
-            $firstcell = null;
-            foreach ($row as $column => $value) {
-                if ($firstcell === null) {
-                    $firstcell = $value;
-                } else {
-                    $this->row_column_of_table_should_contain($firstcell, $column, $table, $value);
+
+            // Row contains only a single column, just assert it's present in the table.
+            if (count($row) === 1) {
+                $this->execute('behat_general::assert_element_contains_text', [reset($row), $table, 'table']);
+            } else {
+                // Iterate over all columns.
+                $firstcell = null;
+                foreach ($row as $column => $value) {
+                    if ($firstcell === null) {
+                        $firstcell = $value;
+                    } else {
+                        $this->row_column_of_table_should_contain($firstcell, $column, $table, $value);
+                    }
                 }
             }
         }
@@ -1491,18 +1498,25 @@ EOF;
         $datahash = $data->getHash();
 
         foreach ($datahash as $value) {
-            $row = array_shift($value);
-            foreach ($value as $column => $value) {
-                try {
-                    $this->row_column_of_table_should_contain($row, $column, $table, $value);
-                    // Throw exception if found.
-                } catch (ElementNotFoundException $e) {
-                    // Table row/column doesn't contain this value. Nothing to do.
-                    continue;
+
+            // Row contains only a single column, just assert it's not present in the table.
+            if (count($value) === 1) {
+                $this->execute('behat_general::assert_element_not_contains_text', [reset($value), $table, 'table']);
+            } else {
+                // Iterate over all columns.
+                $row = array_shift($value);
+                foreach ($value as $column => $value) {
+                    try {
+                        $this->row_column_of_table_should_contain($row, $column, $table, $value);
+                        // Throw exception if found.
+                    } catch (ElementNotFoundException $e) {
+                        // Table row/column doesn't contain this value. Nothing to do.
+                        continue;
+                    }
+                    throw new ExpectationException('"' . $column . '" with value "' . $value . '" is present in "' .
+                        $row . '"  row for table "' . $table . '"', $this->getSession()
+                    );
                 }
-                throw new ExpectationException('"' . $column . '" with value "' . $value . '" is present in "' .
-                    $row . '"  row for table "' . $table . '"', $this->getSession()
-                );
             }
         }
     }
@@ -2280,4 +2294,36 @@ EOF;
         }
     }
 
+    /**
+     * Check that the page title contains a given string.
+     *
+     * @Given the page title should contain ":title"
+     * @param string $title The string that should be present on the page title.
+     */
+    public function the_page_title_should_contain(string $title): void {
+        $session = $this->getSession();
+        if ($this->running_javascript()) {
+            // When running on JS, the page title can be changed via JS, so it's more reliable to get the actual page title via JS.
+            $actualtitle = $session->evaluateScript("return document.title");
+        } else {
+            $titleelement = $session->getPage()->find('css', 'head title');
+            if ($titleelement === null) {
+                // Throw an exception if a page title is not present on the page.
+                throw new ElementNotFoundException(
+                    $this->getSession(),
+                    '<title> element',
+                    'css',
+                    'head title'
+                );
+            }
+            $actualtitle = $titleelement->getText();
+        }
+
+        if (strpos($actualtitle, $title) === false) {
+            throw new ExpectationException(
+                "'$title' was not found from the current page title '$actualtitle'",
+                $session
+            );
+        }
+    }
 }

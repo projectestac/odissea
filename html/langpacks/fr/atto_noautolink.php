@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Empêcher la liaison automatique';
-$string['privacy:metadata'] = 'Le plugin atto_noautolink n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_noautolink n’enregistre aucune donnée personnelle.';

@@ -53,6 +53,6 @@ $string['relation_querverweis'] = 'مرتبط مع';
 $string['state_complete'] = 'مكتمل';
 $string['time_visited'] = 'آخر دخول';
 $string['usermeta_empty_headline'] = 'لم يتم ضبط تفضيلاتك الشخصية بعد';
-$string['usermeta_update'] = '<p>تفضيلاتك الشخصية ينبغي تحديثها للمساعدة في جعل هيكلية هذا المساق في الوضع المثالي.</p>';
+$string['usermeta_update'] = '<p>تفضيلاتك الشخصية ينبغي تحديثها للمساعدة في جعل هيكلية هذا المقرر في الوضع المثالي.</p>';
 $string['usermeta_update_headline'] = 'تفضيلاتك الشخصية قديمة';
 $string['value_unknown'] = 'لا تتوفر أي قيمة';

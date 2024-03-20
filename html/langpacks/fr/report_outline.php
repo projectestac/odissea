@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventactivityreportviewed'] = 'Rapport d\'activité consulté';
+$string['eventactivityreportviewed'] = 'Rapport d’activité consulté';
 $string['eventoutlinereportviewed'] = 'Rapport résumé consulté';
 $string['neverseen'] = 'Jamais consulté';
-$string['nocapability'] = 'Impossible d\'accéder au rapport résumé de l\'utilisateur';
+$string['nocapability'] = 'Impossible d’accéder au rapport résumé de l’utilisateur';
 $string['nologreaderenabled'] = 'Aucun lecteur de journaux activé';
 $string['numviews'] = '{$a->numviews} consultations par {$a->distinctusers} utilisateurs';
-$string['outline:view'] = 'Consulter le rapport d\'activité du cours';
-$string['outline:viewuserreport'] = 'Consulter le rapport d\'activité de l\'utilisateur';
+$string['outline:view'] = 'Consulter le rapport d’activité du cours';
+$string['outline:viewuserreport'] = 'Consulter le rapport d’activité de l’utilisateur';
 $string['page-report-outline-index'] = 'Rapport résumé de cours';
 $string['page-report-outline-user'] = 'Rapport utilisateur de résumé de cours';
 $string['page-report-outline-x'] = 'Tout rapport résumé';
 $string['pluginname'] = 'Activités du cours';
-$string['privacy:metadata'] = 'Le plugin Activités du cours n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Activités du cours n’enregistre aucune donnée personnelle.';

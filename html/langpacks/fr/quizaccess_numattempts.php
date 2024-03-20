@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Tentatives autorisées : {$a}';
 $string['pluginname'] = 'Nombre de tentatives autorisées';
-$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Nombre de tentatives autorisées n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de restriction d’accès au test Nombre de tentatives autorisées n’enregistre aucune donnée personnelle.';

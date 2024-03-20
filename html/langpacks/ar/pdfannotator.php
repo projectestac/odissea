@@ -119,6 +119,7 @@ $string['noanswerssubscribed'] = 'ليست هناك إجابات على الإس
 $string['nomyposts'] = 'لم تقم بطرح سؤال أو تقديم جواب في هذا المساق بعد.';
 $string['noquestions'] = 'لا توجد أسئلة في هذه الصفحة!';
 $string['notificationsubject:newanswer'] = 'إجابة جديدة على سؤال مشترك فيه في {$a}';
+$string['overview'] = 'نظرة عامة';
 $string['ownpoststabicon_help'] = 'هذه الصفحة تعرض كل التعليقات التي نشرتها في هذا المساق.';
 $string['pdfannotator:create'] = 'إنشاء التعليقات والشروحات';
 $string['pdfannotator:deleteany'] = 'حذف أي تعليقات وشروحات';

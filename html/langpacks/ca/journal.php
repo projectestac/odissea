@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessdenied'] = 'Accés denegat';
+$string['alwaysopen'] = 'Sempre obert';
 $string['daysavailable'] = 'Dies disponible';
-$string['modulename'] = '';
+$string['modulename'] = 'Diari';
 $string['modulename_link'] = 'mod/journal/view';
-$string['modulenameplural'] = '';
-$string['pluginname'] = '';
+$string['modulenameplural'] = 'Diaris';
+$string['pluginname'] = 'Diari';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Consulter le rapport résumé du cours';
-$string['pluginname'] = 'Vue d\'ensemble des cours';
-$string['privacy:metadata'] = 'Le plugin Vue d\'ensemble des cours n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Vue d’ensemble des cours';
+$string['privacy:metadata'] = 'Le plugin Vue d’ensemble des cours n’enregistre aucune donnée personnelle.';

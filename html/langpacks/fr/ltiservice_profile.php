@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Service de profil utilisateur d\'outil LTI';
-$string['privacy:metadata'] = 'Le plugin Service de profil utilisateur d\'outil LTI n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Service de profil utilisateur d’outil LTI';
+$string['privacy:metadata'] = 'Le plugin Service de profil utilisateur d’outil LTI n’enregistre aucune donnée personnelle.';

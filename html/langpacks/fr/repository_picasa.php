@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID client';
 $string['configplugin'] = 'Configuration Picasa';
-$string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d\'abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>au cours du processus d\'enregistrement, vous devrez saisir l\'URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l\'enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive et Picasa.</p>';
+$string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d’abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>au cours du processus d’enregistrement, vous devrez saisir l’URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l’enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive et Picasa.</p>';
 $string['picasa:view'] = 'Consulter un dépôt Picasa';
 $string['pluginname'] = 'Album web Picasa';
-$string['privacy:metadata:repository_picasa'] = 'Le plugin de dépôt Album web Picasa n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
+$string['privacy:metadata:repository_picasa'] = 'Le plugin de dépôt Album web Picasa n’enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
 $string['privacy:metadata:repository_picasa:searchtext'] = 'La requête de recherche utilisateur du dépôt Picasa.';
 $string['secret'] = 'Secret';

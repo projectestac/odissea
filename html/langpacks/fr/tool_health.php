@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['healthnoproblemsfound'] = 'Aucun problème n\'a été détecté !';
-$string['healthproblemsdetected'] = 'Problèmes d\'intégrité détectés !';
+$string['healthnoproblemsfound'] = 'Aucun problème n’a été détecté !';
+$string['healthproblemsdetected'] = 'Problèmes d’intégrité détectés !';
 $string['healthproblemsolution'] = 'Solution proposée';
 $string['healthreturntomain'] = 'Continuer';
 $string['healthsolution'] = 'Solution';
 $string['pluginname'] = 'Diagnostic et aide à la résolution de problèmes';
-$string['privacy:metadata'] = 'Le plugin Diagnostic et aide à la résolution de problèmes n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Diagnostic et aide à la résolution de problèmes n’enregistre aucune donnée personnelle.';

@@ -1,0 +1,300 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'tool_lp', language 'ro', version '4.1'.
+ *
+ * @package     tool_lp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['actions'] = 'Acțiuni';
+$string['activities'] = 'Activități';
+$string['addcohorts'] = 'Adăugați cohorte';
+$string['addcohortstosync'] = 'Adăugați cohorte pentru sincronizare';
+$string['addcompetency'] = 'Adaugă competență';
+$string['addcoursecompetencies'] = 'Adaugă competențe în curs';
+$string['addcrossreferencedcompetency'] = 'Adăugați o competență încrucișată';
+$string['addingcompetencywillresetparentrule'] = 'Adăugarea unei noi competențe va elimina regula setată pe „{$a}”. Doriți să continuați?';
+$string['addnewcompetency'] = 'Adaugă competență nouă';
+$string['addnewcompetencyframework'] = 'Adăugați un nou cadru de competențe';
+$string['addnewplan'] = 'Adaugă un nou plan de învățare';
+$string['addnewtemplate'] = 'Adăugați un nou șablon de plan de învățare';
+$string['addnewuserevidence'] = 'Adăugați dovezi noi';
+$string['addtemplatecompetencies'] = 'Adăugați competențe la șablonul de plan de învățare';
+$string['aisrequired'] = '\'{$a}\' este necesar';
+$string['aplanswerecreated'] = '{$a} planuri de învățare au fost create';
+$string['aplanswerecreatedmoremayrequiresync'] = 'Au fost create {$a} planuri de învățare; mai multe vor fi create în timpul următoarei sincronizări.';
+$string['assigncohorts'] = 'Atribuiți cohorte';
+$string['averageproficiencyrate'] = 'Rata medie de competență pentru planurile de învățare finalizate pe baza acestui șablon este de {$a}%.';
+$string['cancelreviewrequest'] = 'Anulați solicitarea de examinare';
+$string['cannotaddrules'] = 'Această competență nu poate fi configurată.';
+$string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Nu pot fi create noi planuri de învățare. Data scadenței șablonului a expirat sau este pe cale să expire.';
+$string['cannotcreateuserplanswhentemplatehidden'] = 'Nu se pot crea noi planuri de învățare în timp ce acest șablon este ascuns.';
+$string['category'] = 'Categorie';
+$string['chooserating'] = 'Alegeți o evaluare ...';
+$string['cohortssyncedtotemplate'] = 'Cohorte sincronizate cu acest șablon de plan de învățare';
+$string['competenciesforframework'] = 'Competențe pentru {$a}';
+$string['competenciesmostoftennotproficient'] = 'Competențele de cele mai multe ori nu sunt competente în planurile de învățare finalizate';
+$string['competenciesmostoftennotproficientincourse'] = 'Competențele de cele mai multe ori nu sunt competente în acest curs';
+$string['competencycannotbedeleted'] = 'Competența „{$a}” nu poate fi ștearsă';
+$string['competencycreated'] = 'Competență creată';
+$string['competencycrossreferencedcompetencies'] = '{$a} competențe cu referințe încrucișate';
+$string['competencyframework'] = 'Cadrul de competențe';
+$string['competencyframeworkcreated'] = 'Cadrul de competențe creat';
+$string['competencyframeworkname'] = 'Nume';
+$string['competencyframeworkroot'] = 'Fără părinte (competență de nivel superior)';
+$string['competencyframeworks'] = 'Cadrul de competențe';
+$string['competencyframeworksrepository'] = 'Depozit cadrul de competențe';
+$string['competencyframeworkupdated'] = 'Cadrul de competențe actualizat';
+$string['competencyoutcome_complete'] = 'Marcați ca fiind completă';
+$string['competencyoutcome_evidence'] = 'Atașați o dovadă';
+$string['competencyoutcome_none'] = 'Niciuna';
+$string['competencyoutcome_recommend'] = 'Recomandați competența';
+$string['competencypicker'] = 'Selector de competențe';
+$string['competencyrule'] = 'Regula competenței';
+$string['competencyupdated'] = 'Competență actualizată';
+$string['completeplan'] = 'Completează acestplan de învățare';
+$string['completeplanconfirm'] = 'Setați planul de învățare „{$a}” ca finalizat? Dacă da, starea actuală a tuturor competențelor utilizatorilor va fi înregistrată, iar planul va avea status doar pentru citire.';
+$string['configurecoursecompetencysettings'] = 'Configurați competențele cursului';
+$string['configurescale'] = 'Configurează scale';
+$string['coursecompetencies'] = 'Competențe de curs';
+$string['coursecompetencyratingsarenotpushedtouserplans'] = 'Evaluările de competență din acest curs nu afectează planurile de învățare.';
+$string['coursecompetencyratingsarepushedtouserplans'] = 'Evaluările de competență din acest curs sunt actualizate imediat în planurile de învățare.';
+$string['coursecompetencyratingsquestion'] = 'Când este evaluată competența unui curs, evaluarea actualizează competența în planurile de învățare sau se aplică doar cursului?';
+$string['coursesusingthiscompetency'] = 'Cursuri legate de această competență';
+$string['coveragesummary'] = '{$a->competenciescoveredcount} din {$a->competenciescount} competențe sunt acoperite ({$a->acoperirepercentaj}%)';
+$string['createlearningplans'] = 'Creează planuri de învățare';
+$string['createplans'] = 'Creează planuri de învățare';
+$string['crossreferencedcompetencies'] = 'Competențe încrucișate';
+$string['default'] = 'Implicit';
+$string['deletecompetency'] = 'Ștergeți competența \'{$a}\'?';
+$string['deletecompetencyframework'] = 'Ștergeți cadrul de competențe „{$a}”?';
+$string['deletecompetencyparenthasrule'] = 'Ștergeți competența „{$a}”? Aceasta va elimina, de asemenea, regula setată pentru părintele său.';
+$string['deleteplan'] = 'Șterge planul de învățare \'{$a}\'?';
+$string['deleteplans'] = 'Ștergeți planurile de învățare';
+$string['deletetemplate'] = 'Ștergeți șablonul de plan de învățare „{$a}”?';
+$string['deletetemplatewithplans'] = 'Acest șablon are planuri de învățare asociate. Trebuie să indicați cum să procesați aceste planuri.';
+$string['deletethisplan'] = 'Șterge acest plan de învățare';
+$string['deletethisuserevidence'] = 'Ștergeți aceste dovezi';
+$string['deleteuserevidence'] = 'Ștergeți dovezile învățării anterioare „{$a}”?';
+$string['description'] = 'Descriere';
+$string['duedate'] = 'Data scadentă';
+$string['duedate_help'] = 'Data la care un plan de învățare ar trebui finalizat.';
+$string['editcompetency'] = 'Editează competența';
+$string['editcompetencyframework'] = 'Editați cadrul competențelor';
+$string['editplan'] = 'Editați planul de învățare';
+$string['editrating'] = 'Editați evaluarea';
+$string['edittemplate'] = 'Editeazî șablonul planului de învățare';
+$string['editthisplan'] = 'Editează acest plan de învățare';
+$string['editthisuserevidence'] = 'Editează aceste dovezi';
+$string['edituserevidence'] = 'Editați dovezile';
+$string['evidence'] = 'Dovezi';
+$string['filterbyactivity'] = 'Filtrează competențele după resurse sau activitate';
+$string['findcourses'] = 'Găsește cursuri';
+$string['frameworkcannotbedeleted'] = 'Cadrul de competențe „{$a}” nu poate fi șters';
+$string['hidden'] = 'Ascuns';
+$string['hiddenhint'] = '(ascuns)';
+$string['idnumber'] = 'Număr ID';
+$string['inheritfromframework'] = 'Moștenit din cadrul competențelor (implicit)';
+$string['itemstoadd'] = 'Elemente de adăugat';
+$string['jumptocompetency'] = 'Salt la competență';
+$string['jumptouser'] = 'Salt la utilizator';
+$string['learningplancompetencies'] = 'Competențele planului de învățare';
+$string['learningplans'] = 'Planuri de învățare';
+$string['levela'] = 'Nivel {$a}';
+$string['linkcompetencies'] = 'Legați competențe';
+$string['linkcompetency'] = 'Legați competență';
+$string['linkedcompetencies'] = 'Competențe legate';
+$string['linkedcourses'] = 'Cursuri legate';
+$string['linkedcourseslist'] = 'Cursuri legate:';
+$string['listcompetencyframeworkscaption'] = 'Lista cadrelor de competență';
+$string['listofevidence'] = 'Lista dovezilor';
+$string['listplanscaption'] = 'Lista planurilor de învățare';
+$string['listtemplatescaption'] = 'Lista șabloanelor planului de învățare';
+$string['loading'] = 'Se încarcă...';
+$string['locatecompetency'] = 'Localizați competența';
+$string['managecompetenciesandframeworks'] = 'Gestionați competențele și cadrele competențelor';
+$string['modcompetencies'] = 'Competențe de curs';
+$string['modcompetencies_help'] = 'Competențe de curs legate de această activitate.';
+$string['move'] = 'Mută';
+$string['movecompetency'] = 'Mută competența';
+$string['movecompetencyafter'] = 'Mută competența după \'{$a}\'';
+$string['movecompetencyframework'] = 'Mută cadrul competenței';
+$string['movecompetencytochildofselfwillresetrules'] = 'Mutarea competenței va elimina propria regulă și regulile stabilite pentru părintele și destinația sa. Doriți să continuați?';
+$string['movecompetencywillresetrules'] = 'Mutarea competenței va elimina regulile stabilite pentru părinte și destinație. Doriți să continuați?';
+$string['moveframeworkafter'] = 'Mutați cadrul de competență după „{$a}”';
+$string['movetonewparent'] = 'Relocare';
+$string['myplans'] = 'Planurile mele de învățare';
+$string['nfiles'] = '{$a} fișier(e)';
+$string['noactivities'] = 'Fără activități';
+$string['nocompetencies'] = 'Nu au fost create competențe în acest cadru.';
+$string['nocompetenciesinactivity'] = 'Nicio competență nu a fost legată de această activitate sau resursă.';
+$string['nocompetenciesincourse'] = 'Nicio competență nu a fost legată de acest curs.';
+$string['nocompetenciesinevidence'] = 'Nicio competență nu a fost legată de aceste dovezi.';
+$string['nocompetenciesinlearningplan'] = 'Nicio competență nu a fost legată de acest plan de învățare.';
+$string['nocompetenciesinlist'] = 'Nu au fost selectate competențe.';
+$string['nocompetenciesintemplate'] = 'Nici o competență nu a fost legată de acest șablon de plan de învățare.';
+$string['nocompetencyframeworks'] = 'Nu au fost create încă cadre de competență.';
+$string['nocompetencyselected'] = 'Nicio competență selectată';
+$string['nocrossreferencedcompetencies'] = 'Nicio altă competență nu a fost încrucișată la această competență.';
+$string['noevidence'] = 'Nicio dovadă';
+$string['nofiles'] = 'Nu există fișiere';
+$string['nolinkedcourses'] = 'Niciun curs nu este legat de această competență';
+$string['noparticipants'] = 'Nu au fost găsiți participanți';
+$string['noplanswerecreated'] = 'Nu au fost create planuri de învățare.';
+$string['notemplates'] = 'Nu s-au creat încă șabloane de planuri de învățare.';
+$string['nourl'] = 'Nu există URL';
+$string['nouserevidence'] = 'Nu s-au adăugat încă dovezi ale învățării anterioare.';
+$string['nouserplans'] = 'Nu s-au creat încă planuri de învățare.';
+$string['oneplanwascreated'] = 'A fost creat un plan de învățare';
+$string['outcome'] = 'Rezultat';
+$string['overridegrade'] = 'Înlocuiește nota competenței obținute când este încheiată activitatea.';
+$string['parentcompetency'] = 'Părinte';
+$string['parentcompetency_edit'] = 'Editează părintele';
+$string['parentcompetency_help'] = 'Definiți părintele sub care va fi adăugată competența. Poate fi fie o altă competență în același cadru, fie rădăcina cadrului de competență pentru o competență de nivel superior.';
+$string['path'] = 'Cale:';
+$string['planapprove'] = 'Faceți activ';
+$string['plancompleted'] = 'Plan de învățare finalizat';
+$string['plancreated'] = 'Plan de învățare creat';
+$string['plandescription'] = 'Descriere';
+$string['planname'] = 'Nume';
+$string['plantemplate'] = 'Selectați șablonul planului de învățare';
+$string['plantemplate_help'] = 'Un plan de învățare creat dintr-un șablon va conține o listă de competențe care se potrivesc cu șablonul. Actualizările la șablon vor fi reflectate în orice plan creat din acel șablon.';
+$string['planunapprove'] = 'Trimite înapoi la status de schiță';
+$string['planupdated'] = 'Planul de învățare a fost actualizat';
+$string['pluginname'] = 'Planuri de învățare';
+$string['points'] = 'Puncte';
+$string['pointsgivenfor'] = 'Puncte oferite pentru \'{$a}\'';
+$string['privacy:metadata'] = 'Pluginul Planuri de învățare nu stochează date personale.';
+$string['proficient'] = 'Competent';
+$string['progress'] = 'Progres';
+$string['rate'] = 'Evaluare';
+$string['ratecomment'] = 'Informații de dovadă';
+$string['rating'] = 'Evaluare';
+$string['ratingaffectsonlycourse'] = 'Evaluarea unei competențe actualizează doar competența din acest curs';
+$string['ratingaffectsuserplans'] = 'Evaluarea unei competențe actualizează competența în toate planurile de învățare';
+$string['reopenplan'] = 'Deschide acest plan de învățare';
+$string['reopenplanconfirm'] = 'Deschideți planul de învățare „{$a}”? Dacă da, starea competențelor utilizatorilor care a fost înregistrată în momentul în care planul a fost finalizat anterior va fi ștearsă, iar planul va deveni din nou activ.';
+$string['requestreview'] = 'Solicitați revizuirea';
+$string['reviewer'] = 'Referent revizuire';
+$string['reviewstatus'] = 'Status revizuire';
+$string['savechanges'] = 'Salvează modificările';
+$string['scale'] = 'Scală';
+$string['scale_help'] = 'O scală determină modul în care se măsoară competența într-o competență. După selectarea unei scale, aceasta trebuie configurată.
+
+* Elementul selectat ca „Implicit” este evaluarea dată când o competență este completată automat.
+* Elementul (elementele) selectat (e) ca fiind „Competent” indică valoarea (valorile) care va (vor) marca competențele ca fiind competente atunci când sunt evaluate.';
+$string['scalevalue'] = 'Valoarea scalei';
+$string['search'] = 'Caută...';
+$string['selectcohortstosync'] = 'Selectează cohorte pentru sincronizare';
+$string['selectcompetencymovetarget'] = 'Selectează o locație pentru a muta această competență:';
+$string['selectedcompetency'] = 'Competență selectată';
+$string['selectuserstocreateplansfor'] = 'Selectează utilizatorii pentru care creați planuri de învățare';
+$string['sendallcompetenciestoreview'] = 'Trimiteți toate competențele în revizuire pentru dovezi ale învățării anterioare „{$a}”';
+$string['sendcompetenciestoreview'] = 'Trimiteți competențe pentru revizuire';
+$string['shortname'] = 'Nume';
+$string['sitedefault'] = '(Site implicit)';
+$string['startreview'] = 'Începeți recenzia';
+$string['state'] = 'Status';
+$string['status'] = 'Status';
+$string['stopreview'] = 'Finalizează recenzia';
+$string['stopsyncingcohort'] = 'Nu mai sincroniza cohorta';
+$string['taxonomies'] = 'Taxonomii';
+$string['taxonomy_add_behaviour'] = 'Adăugați un comportament';
+$string['taxonomy_add_competency'] = 'Adaugă competență';
+$string['taxonomy_add_concept'] = 'Adaugă concept';
+$string['taxonomy_add_domain'] = 'Adaugă domeniu';
+$string['taxonomy_add_indicator'] = 'Adăugați indicator';
+$string['taxonomy_add_level'] = 'Adaugă nivel';
+$string['taxonomy_add_outcome'] = 'Adăugați rezultat';
+$string['taxonomy_add_practice'] = 'Adăugați practică';
+$string['taxonomy_add_proficiency'] = 'Adăugați competență';
+$string['taxonomy_add_skill'] = 'Adăugați abilități';
+$string['taxonomy_add_value'] = 'Adaugă valoare';
+$string['taxonomy_edit_behaviour'] = 'Editați comportamentul';
+$string['taxonomy_edit_competency'] = 'Editează competența';
+$string['taxonomy_edit_concept'] = 'Editează conceptul';
+$string['taxonomy_edit_domain'] = 'Editează domeniul';
+$string['taxonomy_edit_indicator'] = 'Indicator de editare';
+$string['taxonomy_edit_level'] = 'Editează nivelul';
+$string['taxonomy_edit_outcome'] = 'Editați rezultatul';
+$string['taxonomy_edit_practice'] = 'Editați practica';
+$string['taxonomy_edit_proficiency'] = 'Editați competența';
+$string['taxonomy_edit_skill'] = 'Editați abilitatea';
+$string['taxonomy_edit_value'] = 'Editează valoarea';
+$string['taxonomy_parent_behaviour'] = 'Comportament părinte';
+$string['taxonomy_parent_competency'] = 'Competență părinte';
+$string['taxonomy_parent_concept'] = 'Concept părinte';
+$string['taxonomy_parent_domain'] = 'Domeniu părinte';
+$string['taxonomy_parent_indicator'] = 'Indicator părinte';
+$string['taxonomy_parent_level'] = 'Nivel părinte';
+$string['taxonomy_parent_outcome'] = 'Rezultat părinte';
+$string['taxonomy_parent_practice'] = 'Practică părinte';
+$string['taxonomy_parent_proficiency'] = 'Competență părinte';
+$string['taxonomy_parent_skill'] = 'Abilitate părinte';
+$string['taxonomy_parent_value'] = 'Valoare părinte';
+$string['taxonomy_selected_behaviour'] = 'Comportament selectat';
+$string['taxonomy_selected_competency'] = 'Competența selectată';
+$string['taxonomy_selected_concept'] = 'Conceptul selectat';
+$string['taxonomy_selected_domain'] = 'Domeniul selectat';
+$string['taxonomy_selected_indicator'] = 'Indicator selectat';
+$string['taxonomy_selected_level'] = 'Nivel selectat';
+$string['taxonomy_selected_outcome'] = 'Rezultat selectat';
+$string['taxonomy_selected_practice'] = 'Practică selectată';
+$string['taxonomy_selected_proficiency'] = 'Competență selectată';
+$string['taxonomy_selected_skill'] = 'Abilitate selectată';
+$string['taxonomy_selected_value'] = 'Valoare selectată';
+$string['template'] = 'Șablon de plan de învățare';
+$string['templatebased'] = 'Bazat pe șabloane';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'Cohortele nu vor fi sincronizate dacă data scadenței șablonului a trecut.';
+$string['templatecohortnotsyncedwhilehidden'] = 'Cohortele nu vor fi sincronizate în timp ce acest șablon este ascuns.';
+$string['templatecompetencies'] = 'Competențe șablon de plan de învățare';
+$string['templatecreated'] = 'A fost creat un șablon de plan de învățare';
+$string['templatename'] = 'Nume';
+$string['templates'] = 'Șabloane de planuri de învățare';
+$string['templateupdated'] = 'Șablonul planului de învățare a fost actualizat';
+$string['totalrequiredtocomplete'] = 'Total necesar pentru finalizare';
+$string['unlinkcompetencycourse'] = 'Deconectați competența „{$a}” de la curs?';
+$string['unlinkcompetencyplan'] = 'Deconectează competența „{$a}” de planul de învățare?';
+$string['unlinkcompetencytemplate'] = 'Deconectează competența „{$a}” de șablonul planului de învățare?';
+$string['unlinkplanstemplate'] = 'Deconectați planurile de învățare de șablonul lor';
+$string['unlinkplantemplate'] = 'Deconectați de la șablonul de plan de învățare';
+$string['unlinkplantemplateconfirm'] = 'Deconectați planul de învățare „{$a}” de șablonul său? Orice modificare adusă șablonului nu va mai fi aplicată planului. Această acțiune nu poate fi anulată.';
+$string['uponcoursecompletion'] = 'La finalizarea cursului:';
+$string['uponcoursemodulecompletion'] = 'La finalizarea activității:';
+$string['usercompetencyfrozen'] = 'Această înregistrare este acum blocată. Acesta reflectă starea competenței utilizatorului atunci când planul de învățare a fost marcat ca fiind complet.';
+$string['userevidence'] = 'Dovezi ale învățării anterioare';
+$string['userevidencecreated'] = 'S-au creat dovezi ale învățării anterioare';
+$string['userevidencedescription'] = 'Descriere';
+$string['userevidencefiles'] = 'Fișiere';
+$string['userevidencename'] = 'Nume';
+$string['userevidencesummary'] = 'Sumar';
+$string['userevidenceupdated'] = 'Dovezi ale învățării anterioare actualizate';
+$string['userevidenceurl'] = 'URL';
+$string['userevidenceurl_help'] = 'Adresa URL trebuie să înceapă cu „http://” sau „https://”.';
+$string['viewdetails'] = 'Vezi detalii';
+$string['visible'] = 'Vizibil';
+$string['visible_help'] = 'Un cadru de competență poate fi ascuns în timp ce este configurat sau actualizat la o nouă versiune.';
+$string['when'] = 'Când';
+$string['xcompetencieslinkedoutofy'] = '{$a->x} din {$a->y} competențe legate de cursuri';
+$string['xcompetenciesproficientoutofy'] = 'Competențele {$a->x} din {$a->y} sunt competente';
+$string['xcompetenciesproficientoutofyincourse'] = 'Ești competent(ă) în {$a->x} din {$a->y} competențe în acest curs.';
+$string['xplanscompletedoutofy'] = '{$a->x} din {$a->y} planuri de învățare finalizate pentru acest șablon';

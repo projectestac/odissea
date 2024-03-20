@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Liaison automatique des bases de données';
-$string['privacy:metadata'] = 'Le plugin Liaison automatique des bases de données n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Liaison automatique des bases de données n’enregistre aucune donnée personnelle.';

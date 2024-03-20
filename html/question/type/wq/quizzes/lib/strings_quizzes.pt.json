@@ -558,6 +558,20 @@
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Bloquear conteúdo inicial",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Não permita que o aluno modifique a resposta fora dos espaços vazios reservados deixados no conteúdo inicial. Se esta configuração estiver habilitada o aluno só poderá preencher as caixas do conteúdo inicial.",
 
+		"quizzes_studio_input_options_answer_input_method_display_settings_label": "Definições de visualização",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_name": "Visibilidade do nome das etiquetas",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_value": "Visibilidade do valor das etiquetas",
+		"quizzes_studio_input_options_answer_input_method_display_settings_helper_text": "Seleccione a definição de visualização do nome e do valor das etiquetas. Pode decidir se o aluno vê o valor das etiquetas sempre, nunca ou quando estão em foco.",
+		"always": "Sempre",
+		"focus": "Foco",
+		"never": "Nunca",
+
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label": "Definições de grelha magnética",
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text": "Selecione a opção de grelha magnética para o campo de respostas do aluno.",
+		"force": "Força",
+		"snap": "Ajustar",
+		"disabled": "Desativado",
+
 		"quizzes_studio_home_random_variables_title": "Variáveis aleatórias",
 		"quizzes_studio_home_random_variables_title_basic_mode": "Modo básico",
 		"quizzes_studio_home_advanced_random_variables_button_text": "Modo avançado",
@@ -611,7 +625,9 @@
 		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Utilize o botão “testar esta pergunta” para ver a opinião do aluno.",
 		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Esboçar igual",
 		"quizzes_demo_sketch_title_menu" : "Esboço",
-		"home_getting_started_documentation_button_text" : "Documentação"
+		"home_getting_started_documentation_button_text" : "Documentação", 
+
+		"close_mathtype_popup" : "Fechar MathType"
 	}
 }
 

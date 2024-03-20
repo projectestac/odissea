@@ -37,6 +37,6 @@ $string['levelnrequiredtoaccess'] = 'Estás en nivel {$a} o superior.';
 $string['levelnumber'] = 'Número de nivel';
 $string['opequalto'] = 'Exactamente igual a';
 $string['opgreaterorequalto'] = 'Mayor o igual a';
-$string['pluginname'] = 'Disponibilidad Nivel';
+$string['pluginname'] = 'Disponibilidad Sube de Nivel XP';
 $string['privacy:metadata'] = 'Este plugin no almacena ningún dato personal.';
 $string['title'] = 'Nivel';

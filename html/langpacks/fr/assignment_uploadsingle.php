@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Déposer un travail';
-$string['privacy:metadata'] = 'Le plugin Déposer un travail n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Déposer un travail n’enregistre aucune donnée personnelle.';

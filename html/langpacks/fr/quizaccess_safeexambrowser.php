@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedbrowserkeys'] = 'Clefs de navigateur autorisées';
-$string['allowedbrowserkeys_help'] = 'Dans cette zone vous pouvez entrer les clefs de navigateur autorisées pour les versions de Safe Exam Browser autorisées à accéder à ce test. Si aucune clef n\'est entrée, Safe Exam Browser n\'est pas exigé pour ce test.';
+$string['allowedbrowserkeys_help'] = 'Dans cette zone vous pouvez entrer les clefs de navigateur autorisées pour les versions de Safe Exam Browser autorisées à accéder à ce test. Si aucune clef n’est entrée, Safe Exam Browser n’est pas exigé pour ce test.';
 $string['allowedbrowserkeysdistinct'] = 'Les clefs doivent toutes être différentes.';
 $string['allowedbrowserkeyssyntax'] = 'Vous devez saisir une clef autorisée par ligne. Une clef doit être une chaîne de caractères hexadécimale de 64 caractères.';
 $string['allowedkeys_adv'] = 'Les clefs sont un réglage avancé';
 $string['allowedkeys_adv_desc'] = 'Si cette option est activée, la liste des clefs de navigateur autorisées est un champ avancé du formulaire de paramétrage du test.';
-$string['pluginname'] = 'Règles d\'accès Safe Exam Browser';
-$string['privacy:metadata'] = 'Le plugin Règles d\'accès Safe Exam Browser n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Règles d’accès Safe Exam Browser';
+$string['privacy:metadata'] = 'Le plugin Règles d’accès Safe Exam Browser n’enregistre aucune donnée personnelle.';
 $string['safebrowserdownloadurl'] = 'Adresse (URL) de téléchargement de Safe Exam Browser.';
-$string['safebrowserdownloadurl_desc'] = 'Si vous saisissez une adresse (URL) ici, les utilisateurs seront avertis qu\'ils peuvent télécharger la version requise de Safe Exam Browser depuis celle-ci.';
+$string['safebrowserdownloadurl_desc'] = 'Si vous saisissez une adresse (URL) ici, les utilisateurs seront avertis qu’ils peuvent télécharger la version requise de Safe Exam Browser depuis celle-ci.';
 $string['safebrowsermustbeused'] = 'Vous devez utiliser une version officielle de Safe Exam Browser pour réaliser ce test.';
 $string['safebrowsermustbeusedwithlink'] = 'Vous devez utiliser une version officielle de Safe Exam Browser pour réaliser ce test. Vous pouvez la télécharger depuis {$a->link}.';
 $string['safeexambrowser:exemptfromcheck'] = 'Pas de vérification de Safe Exam Browser';

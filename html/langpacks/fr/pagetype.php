@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['page-admin-current'] = 'La page actuelle d\'administration du site';
-$string['page-admin-x'] = 'Toute page d\'administration du site';
+$string['page-admin-current'] = 'La page actuelle d’administration du site';
+$string['page-admin-x'] = 'Toute page d’administration du site';
 $string['page-course-index'] = 'La page de la catégorie principale';
 $string['page-course-index-category'] = 'La page de la catégorie actuelle';
 $string['page-course-index-x'] = 'Toute page de catégorie';
 $string['page-course-report-x'] = 'Tout rapport de cours';
 $string['page-course-search'] = 'Page de recherche de cours';
-$string['page-course-view-x'] = 'Toute page d\'accueil de cours';
+$string['page-course-view-x'] = 'Toute page d’accueil de cours';
 $string['page-course-x'] = 'Toute page de cours';
-$string['page-mod-x'] = 'Toute page de module d\'activité';
-$string['page-mod-x-view'] = 'Toute page principale de module d\'activité';
+$string['page-mod-x'] = 'Toute page de module d’activité';
+$string['page-mod-x-view'] = 'Toute page principale de module d’activité';
 $string['page-my-index'] = 'Page « Tableau de bord »';
 $string['page-report-x'] = 'Toute page de rapport';
-$string['page-site-index'] = 'Seulement la page d\'accueil';
+$string['page-site-index'] = 'Seulement la page d’accueil';
 $string['page-site-x'] = 'Toute page au niveau principal du site';
 $string['page-user-profile'] = 'Pages de profils utilisateur seulement';
 $string['page-user-view'] = 'Seulement les pages de profil utilisateur';

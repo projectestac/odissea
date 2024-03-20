@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Esta proba non está dispoñíbel';
+$string['notavailable'] = 'Esta proba non está dispoñíbel.';
 $string['pluginname'] = 'Regra de acceso para datas de apertura e peche';
 $string['privacy:metadata'] = 'O engadido de regra de acceso por data de apertura e peche non almacena ningún dato persoal.';
 $string['quiznotavailable'] = 'A proba non estará dispoñíbel ata: {$a}';

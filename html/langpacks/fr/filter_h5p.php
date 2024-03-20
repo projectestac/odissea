@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Filtre H5P';
 $string['pluginname'] = 'Filtre H5P';
-$string['privacy:metadata'] = 'Ce plugin n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Ce plugin n’enregistre aucune donnée personnelle.';

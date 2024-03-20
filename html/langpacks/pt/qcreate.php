@@ -89,7 +89,7 @@ $string['gradeavailabletext'] = '{$a->username} avaliou a questão elaborada \'{
 Pode visualizar na página da atividade:
 
 {$a->url}';
-$string['gradecomment'] = 'Exportar as melhores perguntas';
+$string['gradecomment'] = 'Comentário para a pergunta \'{$a->qname}\' criado por {$a->user}';
 $string['graded'] = 'Avaliada';
 $string['grademixed'] = 'A avaliação é {$a->automatic}% automática e {$a->manual}% manual.';
 $string['gradequestions'] = 'Avaliar questões';

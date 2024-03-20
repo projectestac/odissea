@@ -3,7 +3,6 @@ $colorcontrast: white !default;
 $fontcolor: #007377 !default; //color4
 $linkscolor: #910048 !default; //color5
 $headerbg: #f8f8f8 !default;
-$fontsize: 1rem !default;
 $fontfamily: null !default;
 $texttransform: null !default;
 
@@ -722,4 +721,10 @@ div#alexandria_restore div.tab-content #accordion .accordion-group .container-fl
 /* Fix for logo being cropped in top bar */
 .navbar.fixed-top .navbar-brand .logo {
     max-height: calc(60px - (0.25rem * 5));
+}
+
+/* Reduce the size of the icons of the activities in the course view */
+.activitytitle .activityiconcontainer {
+    width: 30px;
+    height: 30px;
 }

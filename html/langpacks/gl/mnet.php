@@ -118,6 +118,7 @@ $string['is_in_range'] = 'O enderezo IP  <code>{$a}</code>  constitúe un servid
 $string['ispublished'] = '{$a} Moodle activou este servizo para ti.';
 $string['issubscribed'] = '{$a} Moodle estase subscribindo a este servizo do seu servidor.';
 $string['keydeleted'] = 'A súa chave eliminouse e substituíuse con éxito.';
+$string['keydeletedcancelled'] = 'Non se fixeron cambios na chave.';
 $string['keymismatch'] = 'A chave pública que posúe para este servidor é diferente da publicada neste momento.';
 $string['last_connect_time'] = 'Última conexión';
 $string['last_connect_time_help'] = 'O tempo que permaneceu conectado a este servidor.';

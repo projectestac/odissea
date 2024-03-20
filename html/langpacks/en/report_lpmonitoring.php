@@ -40,6 +40,7 @@ $string['comments'] = 'Comments';
 $string['commentsedit'] = 'View or add comments';
 $string['commentseditshort'] = 'View/Add';
 $string['commentsnumber'] = '<strong>({$a})</strong> comment(s)';
+$string['competencyreports'] = 'Competency reports';
 $string['contd'] = 'cont\'d';
 $string['course'] = 'Course';
 $string['dategenerated'] = 'Report generated: {$a}';

@@ -85,11 +85,6 @@ $CFG->langotherroot = __DIR__ . '/langpacks/';
 $CFG->langlocalroot = __DIR__ . '/langpacks/';
 $CFG->skiplangupgrade = true;
 
-// Only allow some of the languages
-if (!$CFG->iseoi) {
-    $CFG->langlist = 'ca,en,es,fr,de';
-}
-
 // Path of the cacheconfig.php file, to have only one MUC file for Àgora (instead of having one for each site in moodledata/usuX/muc/config.php).
 $CFG->altcacheconfigpath = __DIR__ . '/local/agora/muc/';
 $CFG->siteidentifier = $CFG->dbuser;

@@ -558,6 +558,20 @@
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_label}",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text}",
 
+		"quizzes_studio_input_options_answer_input_method_display_settings_label": "${quizzes_studio_input_options_answer_input_method_display_settings_label}",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_name": "${quizzes_studio_input_options_answer_input_method_display_settings_label_name}",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_value": "${quizzes_studio_input_options_answer_input_method_display_settings_label_value}",
+		"quizzes_studio_input_options_answer_input_method_display_settings_helper_text": "${quizzes_studio_input_options_answer_input_method_display_settings_helper_text}",
+		"always": "${always}",
+		"focus": "${focus}",
+		"never": "${never}",
+
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label": "${quizzes_studio_input_options_answer_input_method_magnetic_grid_label}",
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text": "${quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text}",
+		"force": "${force}",
+		"snap": "${snap}",
+		"disabled": "${disabled}",
+
 		"quizzes_studio_home_random_variables_title": "${quizzes_studio_home_random_variables_title}",
 		"quizzes_studio_home_random_variables_title_basic_mode": "${quizzes_studio_home_random_variables_title_basic_mode}",
 		"quizzes_studio_home_advanced_random_variables_button_text": "${quizzes_studio_home_advanced_random_variables_button_text}",
@@ -611,7 +625,9 @@
 		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "${quizzes_studio_home_correct_answer_description_sketch_paragraph_2}",
 		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "${quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label}",
 		"quizzes_demo_sketch_title_menu" : "${quizzes_demo_sketch_title_menu}",
-		"home_getting_started_documentation_button_text" : "${home_getting_started_documentation_button_text}"
+		"home_getting_started_documentation_button_text" : "${home_getting_started_documentation_button_text}", 
+
+		"close_mathtype_popup" : "${close_mathtype_popup}"
 	}
 }
 

@@ -370,9 +370,6 @@ $output = '';
 
 $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
 
-require_once($CFG->dirroot . '/lib/editor/tinymce/lib.php');
-$tinyeditor = new tinymce_texteditor();
-
 $rb = com_wiris_quizzes_api_Quizzes::getInstance();
 
 $questionxml = '<question><wirisCasSession>&lt;session lang=&quot;en&quot; version=&quot;2.0&quot;' .

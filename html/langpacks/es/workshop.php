@@ -70,7 +70,7 @@ $string['assessmentend'] = 'Fecha límite para las evaluaciones';
 $string['assessmentendbeforestart'] = 'La fecha límite para terminar la evaluación no puede estar programada para antes de la fecha en que empezarán las evaluaciones';
 $string['assessmentenddatetime'] = 'Plazo de evaluación: {$a->daydatetime} ({$a->distanceday})';
 $string['assessmentendevent'] = '{$a} fecha límite para la evaluación';
-$string['assessmentform'] = 'Formato de evaluación';
+$string['assessmentform'] = 'Formulario de evaluación';
 $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Evaluación</a> de <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Evaluación de referencia';
 $string['assessmentreferenceconflict'] = 'No es posible evaluar un ejemplo de trabajo enviado para el que Usted realizó una evaluación de referencia.';
@@ -83,7 +83,7 @@ $string['assessmentstartevent'] = '{$a} se abre para evaluación';
 $string['assessmentweight'] = 'Ponderación de la evaluación';
 $string['assignedassessments'] = 'Envíos asignados para evaluar';
 $string['assignedassessmentsnone'] = 'No tiene envíos asignados para evaluar';
-$string['backtoeditform'] = 'Volver al formato de edición';
+$string['backtoeditform'] = 'Volver a la edición del formulario';
 $string['byfullname'] = 'por <a href="{$a->url}">{$a->name}</a>';
 $string['byfullnamewithoutlink'] = 'por {$a}';
 $string['calculategradinggrades'] = 'Calcular calificaciones de evaluación';
@@ -95,7 +95,7 @@ $string['clearaggregatedgrades'] = 'Borrar todas las calificaciones agrupadas';
 $string['clearaggregatedgrades_help'] = 'Las calificaciones agregadas por el envío y las calificaciones de evaluación se restablecerán. Puede volver a calcular estas calificaciones desde el principio en la Fase de Calificación de evaluaciones.';
 $string['clearaggregatedgradesconfirm'] = '¿Está seguro de que desea borrar las calificaciones calculadas para los envíos y las calificaciones de la evaluación?';
 $string['clearassessments'] = 'Borrar evaluaciones';
-$string['clearassessments_help'] = 'Las calificaciones calculadas para los envíos y las calificaciones de evaluación se restablecerán. La información sobre cómo llenar los formatos de evaluación se conserva, pero todos los evaluadores deberán abrir el formato de evaluación de nuevo y volver a guardarlo, para que se vuelvan a calcular las calificaciones de nuevo.';
+$string['clearassessments_help'] = 'Las calificaciones calculadas para los envíos y las calificaciones de evaluación se restablecerán. La información sobre cómo llenar los formularios de evaluación se conserva, pero todos los evaluadores deberán abrir el formato de evaluación de nuevo y volver a guardarlo, para que se vuelvan a calcular las calificaciones de nuevo.';
 $string['clearassessmentsconfirm'] = '¿Está seguro que desea borrar todas las calificaciones de evaluación?. No podrá obtener de nuevo la información por si mismo, los evaluadores tendrán que volver a evaluar las entregas asignadas.';
 $string['conclusion'] = 'Conclusión';
 $string['conclusion_help'] = 'El texto de conclusión se muestra a los participantes al final de la actividad.';
@@ -114,12 +114,12 @@ $string['daystomorrow'] = 'mañana';
 $string['daysyesterday'] = 'ayer';
 $string['deadlinesignored'] = 'Las restricciones de tiempo no se le aplican a usted';
 $string['deletesubmission'] = 'Eliminar envío';
-$string['editassessmentform'] = 'Editar formato de evaluación';
-$string['editassessmentformstrategy'] = 'Editar formato de evaluación ({$a})';
-$string['editingassessmentform'] = 'Editando formato de evaluación';
+$string['editassessmentform'] = 'Editar formulario de evaluación';
+$string['editassessmentformstrategy'] = 'Editar formulario de evaluación ({$a})';
+$string['editingassessmentform'] = 'Editando formulario de evaluación';
 $string['editingsubmission'] = 'Editando lo enviado';
 $string['editsubmission'] = 'Editar lo enviado';
-$string['err_multiplesubmissions'] = 'Mientras se estaba editando este formato, otra versión de la entrega se ha guardado. No se permiten envíos múltiples por usuario.';
+$string['err_multiplesubmissions'] = 'Mientras se estaba editando este formulario, otra versión de la entrega se ha guardado. No se permiten envíos múltiples por usuario.';
 $string['err_removegrademappings'] = 'No se pueden eliminar los mapeos de calificaciones';
 $string['evaluategradeswait'] = 'Por favor, espere hasta que se hayan realizado las evaluaciones y calculado las calificaciones';
 $string['evaluation'] = 'Evaluación de calificaciones';
@@ -216,7 +216,7 @@ $string['modulename_help'] = 'El módulo de actividad taller permite la recopila
 
 Los estudiantes pueden enviar cualquier contenido digital (archivos), tales como documentos de procesador de texto o de hojas de cálculo y también pueden escribir el texto directamente en un campo empleando un editor de texto (dentro de Moodle).
 
-Los envíos son evaluados empleando un formato de evaluación de criterios múltiples definido por el profesor. El proceso de revisión por pares  y el formato para comprender cómo funciona la evaluación se pueden practicar por anticipado con envíos de ejemplo proporcionados por el maestro, junto con una evaluación de referencia. A los estudiantes se les dará la oportunidad de evaluar uno o más de los envíos de sus pares estudiantes. Los que envían y los que evalúan pueden permanecer anónimos si se requiere así.
+Los envíos son evaluados empleando un formulario de evaluación de criterios múltiples definido por el profesor. El proceso de revisión por pares  y el formulario para comprender cómo funciona la evaluación se pueden practicar por anticipado con envíos de ejemplo proporcionados por el maestro, junto con una evaluación de referencia. A los estudiantes se les dará la oportunidad de evaluar uno o más de los envíos de sus pares estudiantes. Los que envían y los que evalúan pueden permanecer anónimos si se requiere así.
 
 Los estudiantes tendrán dos calificaciones para la actividad de taller: una calificación por  enviarlo y otra por la evaluación de sus pares. Ambas calificaciones se guardan en el libro de calificaciones.';
 $string['modulename_link'] = 'mod/workshop/view';

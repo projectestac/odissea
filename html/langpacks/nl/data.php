@@ -448,6 +448,7 @@ $string['savetemplate'] = 'Bewaar sjabloon';
 $string['search'] = 'Zoek';
 $string['search:activity'] = 'Informatie databank-activiteit';
 $string['search:entry'] = 'Databank - inhoud';
+$string['searchresults'] = 'Items die "{$a}" bevatten';
 $string['selectedrequired'] = 'Alle geselecteerde vereist';
 $string['selectexportoptions'] = 'Selecteer exportopties';
 $string['selectfields'] = 'Selecteer velden';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = '変数を選択する ...';
-$string['clicktoopen'] = 'リソース開くには {$a} をクリックしてください。';
+$string['clicktoopen'] = 'リソースを開くには {$a} をクリックしてください。';
 $string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['configframesize'] = 'フレーム内にウェブページまたはアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
 $string['configrolesinparams'] = 'カスタマイズされたロール名 (コース設定から) をURLパラメータの変数として利用できるようにしますか?';

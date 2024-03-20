@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'Abandonné';
-$string['abandonhotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici, mais vous ne pourrez pas reprendre ou redémarrer cette activité plus tard.';
-$string['activitycloses'] = 'L\'activité se ferme';
-$string['activitygrade'] = 'Note de l\'activité';
-$string['activityopens'] = 'L\'activité ouvre';
+$string['abandonhotpot'] = 'Vos résultats seront sauvegardés jusqu’ici, mais vous ne pourrez pas reprendre ou redémarrer cette activité plus tard.';
+$string['activitycloses'] = 'L’activité se ferme';
+$string['activitygrade'] = 'Note de l’activité';
+$string['activityopens'] = 'L’activité ouvre';
 $string['added'] = 'Ajouté';
-$string['addquizchain'] = 'Ajouter un enchaînement d\'activités';
+$string['addquizchain'] = 'Ajouter un enchaînement d’activités';
 $string['addquizchain_help'] = 'Est-ce que tous les tests de la suite de tests doivent être ajoutés ?
 
 **Non**
@@ -47,7 +47,7 @@ $string['allowpaste'] = 'Autoriser le collage';
 $string['allowpaste_help'] = 'Si ce paramètre est activé, les étudiants seront autorisés à copier, coller et faire glisser du texte dans la boîte à texte.';
 $string['allowreview'] = 'Permettre la relecture';
 $string['allowreview_help'] = 'Si activé, les étudiants pourront relire leurs tentatives après la fermeture du test.';
-$string['analysisreport'] = 'Analyse de l\'élément';
+$string['analysisreport'] = 'Analyse de l’élément';
 $string['attempted'] = 'Essayé';
 $string['attemptlimit'] = 'Limite de tentatives';
 $string['attemptlimit_help'] = 'Nombre maximum de tentatives auquel à droit un étudiant dans cette activité HotPotatoes';
@@ -63,8 +63,8 @@ $string['bodystylescolor'] = 'Couleur du texte';
 $string['bodystylesfont'] = 'Famille et taille de la police';
 $string['bodystylesmargin'] = 'Marge droite et gauche';
 $string['cacherecords'] = 'Enregistrements en cache de HotPotatoes';
-$string['canrestarthotpot'] = 'Vos résultats jusqu\'ici seront sauvegardés et vous pourrez refaire « {$a} » plus tard';
-$string['canresumehotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici et vous pourrez reprendre « {$a} » plus tard.';
+$string['canrestarthotpot'] = 'Vos résultats jusqu’ici seront sauvegardés et vous pourrez refaire « {$a} » plus tard';
+$string['canresumehotpot'] = 'Vos résultats seront sauvegardés jusqu’ici et vous pourrez reprendre « {$a} » plus tard.';
 $string['checks'] = 'Vérifications';
 $string['checksomeboxes'] = 'Veuillez vérifier les champs';
 $string['clearcache'] = 'Nettoyer le cache HotPotatoes';
@@ -72,7 +72,7 @@ $string['cleardetails'] = 'Nettoyer les détails HotPotatoes';
 $string['clearedcache'] = 'Le cache HotPotatoes a été nettoyé';
 $string['cleareddetails'] = 'Les détails HotPotatoes ont été nettoyés';
 $string['clickreporting'] = 'Activer les rapports de clic';
-$string['clickreporting_help'] = 'Si cette option est activée, un enregistrement séparé est conservé à chaque clic sur un des boutons « aide », « indice » ou « vérifier ». Cela permet à l\'enseignant d\'avoir accès à un rapport très détaillé, affichant l\'état du test à chaque clic. Sinon, un seul enregistrement par tentative sera conservé.';
+$string['clickreporting_help'] = 'Si cette option est activée, un enregistrement séparé est conservé à chaque clic sur un des boutons « aide », « indice » ou « vérifier ». Cela permet à l’enseignant d’avoir accès à un rapport très détaillé, affichant l’état du test à chaque clic. Sinon, un seul enregistrement par tentative sera conservé.';
 $string['clicktrailreport'] = 'Cheminement des clics';
 $string['closed'] = 'Cette activité est fermée';
 $string['clues'] = 'Indices';
@@ -81,22 +81,22 @@ $string['completioncompleted'] = 'Requiert le statut de complété';
 $string['completionmingrade'] = 'Requiert la note minimum';
 $string['completionpass'] = 'Requiert la note de passage';
 $string['completionwarning'] = 'Ces champs sont désactivés si la note limite pour cette activité est « Pas de note » ou si la pondération de la note est « Pas de pondération »';
-$string['configbodystyles'] = 'Par défaut, les styles du thème Moodle passe outre les styles de HotPot. Cependant, pour tout style sélectionné ici, le style de l\'activité HotPot sera prioritaire au style de Moodle.';
-$string['configenablecache'] = 'Le cache HotPotatoes peut considérablement accélérer l\'affichage des tests aux participants.';
+$string['configbodystyles'] = 'Par défaut, les styles du thème Moodle passe outre les styles de HotPot. Cependant, pour tout style sélectionné ici, le style de l’activité HotPot sera prioritaire au style de Moodle.';
+$string['configenablecache'] = 'Le cache HotPotatoes peut considérablement accélérer l’affichage des tests aux participants.';
 $string['configenablecron'] = 'Indiquez les heures dans votre fuseau horaire dans lesquelles le cron HotPotatoes peut fonctionner';
 $string['configenablemymoodle'] = 'Ce paramètre détermine si les activités HotPotatoes sont affichées sur le Tableau de bord';
 $string['configenableobfuscate'] = 'Dissimuler le code javascript pour insérer les lecteurs multimédia rend plus difficile de déterminer le nom du fichier média et de deviner ce que le fichier contient.';
-$string['configenableswf'] = 'Autoriser l\'intégration de fichiers SWF dans les activités HotPotatoes. Si l\'option est activée, elle passe avant le réglage « mediaplugin_enable_swf ».';
+$string['configenableswf'] = 'Autoriser l’intégration de fichiers SWF dans les activités HotPotatoes. Si l’option est activée, elle passe avant le réglage « mediaplugin_enable_swf ».';
 $string['configfile'] = 'Fichier de configuration';
 $string['configframeheight'] = 'Quand un test est affiché dans un cadre, cette valeur correspond à la hauteur (en pixels) du cadre supérieur contenant la barre de navigation de Moodle.';
 $string['configlocation'] = 'Emplacement du fichier de configuration';
-$string['configlockframe'] = 'Si ce paramètre est activé, le cadre de navigation, s\'il est utilisé, sera fixé et ne se déroulera pas, ne se redimensionnera pas et n\'aura pas de bordure';
-$string['configmaxeventlength'] = 'Si une activité HotPotatoes a une date d\'ouverture et de fermeture définies, et que la différence est plus importante que le nombre de jours spécifiés ici, alors deux événements différents seront indiqués dans le calendrier du cours. Pour des durées plus courtes, ou alors si seulement l\'un des paramètres est renseigné, seul un événement sera ajouté au calendrier du cours. S\'il n\'y a pas d\'indication de temps ni d\'indication de date, aucun événement ne sera ajouté.';
-$string['configstoredetails'] = 'Si ce paramètre est activé, alors les détails bruts en XML des tentatives du test HotPotatoes seront enregistrés dans la table hotpot_details. Cela permettra de renoter le test ultérieurement pour l\'aligner avec une éventuelle modification du système de notation des tests HotPotatoes. Attention ! L\'activation de cette option sur un site très utilisé fera croître la base hotpot_detail de manière très importante.';
+$string['configlockframe'] = 'Si ce paramètre est activé, le cadre de navigation, s’il est utilisé, sera fixé et ne se déroulera pas, ne se redimensionnera pas et n’aura pas de bordure';
+$string['configmaxeventlength'] = 'Si une activité HotPotatoes a une date d’ouverture et de fermeture définies, et que la différence est plus importante que le nombre de jours spécifiés ici, alors deux événements différents seront indiqués dans le calendrier du cours. Pour des durées plus courtes, ou alors si seulement l’un des paramètres est renseigné, seul un événement sera ajouté au calendrier du cours. S’il n’y a pas d’indication de temps ni d’indication de date, aucun événement ne sera ajouté.';
+$string['configstoredetails'] = 'Si ce paramètre est activé, alors les détails bruts en XML des tentatives du test HotPotatoes seront enregistrés dans la table hotpot_details. Cela permettra de renoter le test ultérieurement pour l’aligner avec une éventuelle modification du système de notation des tests HotPotatoes. Attention ! L’activation de cette option sur un site très utilisé fera croître la base hotpot_detail de manière très importante.';
 $string['confirmdeleteattempts'] = 'Voulez-vous vraiment supprimer ces tentatives ?';
 $string['confirmstop'] = 'Voulez-vous vraiment quitter cette page ?';
 $string['correct'] = 'Correct';
-$string['couldnotinsertsubmissionform'] = 'Impossible d\'insérer le formulaire d\'envoi';
+$string['couldnotinsertsubmissionform'] = 'Impossible d’insérer le formulaire d’envoi';
 $string['d_index'] = 'Index de discrimination';
 $string['delay1'] = 'Délai 1';
 $string['delay1_help'] = 'Le délai minimm entre la première et la seconde tentative.';
@@ -113,13 +113,13 @@ $string['delay3_help'] = 'Ce paramètre définit le délai entre la fin du test 
 ** Utiliser les paramètres du fichier source/modèle **
 : Le retour à Moodle aura lieu après le temps spécifié en secondes au sein du fichier source.
 
-** Attendre que l\'étudiant clique sur OK **
+** Attendre que l’étudiant clique sur OK **
 : Le retour à Moodle aura lieu après que participant a cliqué sur le bouton OK du message de fin du test.
 
 ** Ne pas continuer automatiquement **
 : Le retour à Moodle ne sera pas automatique. Le participant pourra aller où bon lui semble.
 
-Dans tous les cas, le résultat du test est envoyé immédiatement après la fin du test ou à l\'abandon du test, indépendamment de ce paramètre.';
+Dans tous les cas, le résultat du test est envoyé immédiatement après la fin du test ou à l’abandon du test, indépendamment de ce paramètre.';
 $string['delay3afterok'] = 'Attendre que les participants cliquent sur OK';
 $string['delay3disable'] = 'Ne pas continuer automatiquement';
 $string['delay3specific'] = 'Utiliser une durée spécifique (en secondes)';
@@ -133,15 +133,15 @@ $string['enablecache'] = 'Activer le cache HotPotatoes';
 $string['enablecron'] = 'Activer le cron HotPotatoes';
 $string['enablemymoodle'] = 'Afficher HotPotatoes dans le Tableau de bord';
 $string['enableobfuscate'] = 'Activer la dissimulation du code du lecteur multimédia';
-$string['enableswf'] = 'Autoriser l\'intégration de fichiers SWF dans les activités HotPotatoes';
+$string['enableswf'] = 'Autoriser l’intégration de fichiers SWF dans les activités HotPotatoes';
 $string['entry_attempts'] = 'Tentatives';
 $string['entry_dates'] = 'Dates';
 $string['entry_grading'] = 'Évaluation';
-$string['entry_title'] = 'Nom de l\'unité en tant que titre';
+$string['entry_title'] = 'Nom de l’unité en tant que titre';
 $string['entrycm'] = 'Activité précédente';
 $string['entrycm_help'] = 'Ce paramètre définit une activité Moodle et une note minimale à atteindre pour une activité nécessaire avant la tentative de ce test.
 
-L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix :
+L’enseignant peut spécifier une activité bien précise ou l’un de ces choix :
 
 * activité précédente de ce cours
 * activité précédente de cette section de cours
@@ -150,48 +150,48 @@ L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix�
 $string['entrycmcourse'] = 'Activité précédente dans ce cours';
 $string['entrycmsection'] = 'Activité précédente dans cette section de cours';
 $string['entrycompletionwarning'] = 'Avant de commencer cette activité, vous devez consulter {$a}';
-$string['entrygrade'] = 'Note de l\'activité récédente';
-$string['entrygradewarning'] = 'Vous ne pouvez pas commencer cette activité tant que votre score ne dépasse pas {$a->entrygrade}% sur {$a->entryactivity}. Pour l\'instant, votre note pour cette activité est {$a->usergrade} % ';
+$string['entrygrade'] = 'Note de l’activité récédente';
+$string['entrygradewarning'] = 'Vous ne pouvez pas commencer cette activité tant que votre score ne dépasse pas {$a->entrygrade}% sur {$a->entryactivity}. Pour l’instant, votre note pour cette activité est {$a->usergrade} % ';
 $string['entryhotpotcourse'] = 'Activité HotPotatoes précédente dans ce cours';
 $string['entryhotpotsection'] = 'Activité HotPotatoes précédente dans cette section de cours';
 $string['entryoptions'] = 'Options de la page initiale';
-$string['entryoptions_help'] = 'Ces cases à cocher activent ou désactivent l\'affichage d\'éléments sur la page initiale de l\'activité HotPotatoes.
+$string['entryoptions_help'] = 'Ces cases à cocher activent ou désactivent l’affichage d’éléments sur la page initiale de l’activité HotPotatoes.
 
-** Nom de l\'unité en tant que titre **
-: Si coché, le nom de l\'unité sera utilisé comme titre de la page initiale.
+** Nom de l’unité en tant que titre **
+: Si coché, le nom de l’unité sera utilisé comme titre de la page initiale.
 
 ** Notation **
-: Si coché, les informations d\'évaluation de l\'activité HotPotatoes seront affichées sur la page initiale.
+: Si coché, les informations d’évaluation de l’activité HotPotatoes seront affichées sur la page initiale.
 
 ** Dates **
-: Si coché, les dates d\'ouverture et de fermeture de l\'activité HotPotatoes seront affichées sur la page initiale.
+: Si coché, les dates d’ouverture et de fermeture de l’activité HotPotatoes seront affichées sur la page initiale.
 
 ** Tentatives **
 : Si coché, un tableau détaillant les tentatives précédentes du participants sera affiché sur la page initiale. Les tentatives qui peuvent être continuées auront un bouton correspondant affiché dans la colonne de droite.';
 $string['entrypage'] = 'Afficher la page initiale';
-$string['entrypage_help'] = 'Est-ce que les participants doivent voir la page initiale avant de commencer l\'activité HotPotatoes ?
+$string['entrypage_help'] = 'Est-ce que les participants doivent voir la page initiale avant de commencer l’activité HotPotatoes ?
 
 ** Oui **
 : La page initiale sera affichée aux participants avant de commencer le test. Le contenu de cette page est déterminé dans les options de la page initiale HotPotatoes.
 
 **Non**
-: La page initiale ne s\'affichera pas et les participants commenceront le test immédiatement.';
+: La page initiale ne s’affichera pas et les participants commenceront le test immédiatement.';
 $string['entrypagehdr'] = 'Page initiale';
 $string['entrytext'] = 'Texte de la page initiale';
 $string['event_attempt_reviewed'] = 'Tentative HotPot révisée';
-$string['event_attempt_reviewed_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a révisé une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_reviewed_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a révisé une tentative dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_attempt_reviewed_explanation'] = 'Un utilisateur a révisé une tentative dans une activité HotPot';
 $string['event_attempt_started'] = 'Activité HotPot commencée';
-$string['event_attempt_started_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a commencé une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_started_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a commencé une tentative dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_attempt_started_explanation'] = 'Un utilisateur vient juste de commencer une tentative dans une activité HotPot';
 $string['event_attempt_submitted'] = 'Tentative HotPot soumise';
-$string['event_attempt_submitted_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a soumis une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_submitted_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a soumis une tentative dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_attempt_submitted_explanation'] = 'Un utilisateur vient juste de soumettre une tentative dans une activité HotPot';
 $string['event_base'] = 'Evénement HotPot détecté';
-$string['event_base_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a initié un événement dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_base_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a initié un événement dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_base_explanation'] = 'Un événement a été détecté par le module HotPot';
 $string['event_report_viewed'] = 'Rapport HotPot consulté';
-$string['event_report_viewed_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a consulté un rapport de tentatives dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_report_viewed_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a consulté un rapport de tentatives dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_report_viewed_explanation'] = 'Un utilisateur vient juste de consulter un rapport à propos de tentatives dans une activité HotPot';
 $string['exit_areyouok'] = 'Coucou, vous êtes encore là ?';
 $string['exit_attemptscore'] = 'Votre score pour cette tentative est {$a}';
@@ -200,10 +200,10 @@ $string['exit_course_text'] = 'Retour à la page principale du cours';
 $string['exit_encouragement'] = 'Encouragement';
 $string['exit_excellent'] = 'Excellent !';
 $string['exit_feedback'] = 'Quitter la page de feedback';
-$string['exit_feedback_help'] = 'Cette option active ou désactive l\'affichage de feedbacks sur la page de sortie.
+$string['exit_feedback_help'] = 'Cette option active ou désactive l’affichage de feedbacks sur la page de sortie.
 
-** Nom de l\'unité en tant que titre **
-: Si activé, le nom de l\'unité est affiché en tant que titre de la page de sortie.
+** Nom de l’unité en tant que titre **
+: Si activé, le nom de l’unité est affiché en tant que titre de la page de sortie.
 
 **Encouragements**
 : Si activé, des encouragements seront affichés dans la page de sortie. Les encouragements dépendent de la note HotPotatoes :
@@ -215,29 +215,29 @@ $string['exit_feedback_help'] = 'Cette option active ou désactive l\'affichage 
 ** Note de la tentative**
 : Si activé, la note de la tentative qui vient de se terminer sera affichée sur la page.
 
-**Note de l\'unité**
+**Note de l’unité**
 : Si activé, la note HotPotatoes sera affichée sur la page.
 
-De plus, si la note de la tentative est plus grande que lors des tentatives précédentes, un message s\'affichera pour le signaler.';
+De plus, si la note de la tentative est plus grande que lors des tentatives précédentes, un message s’affichera pour le signaler.';
 $string['exit_goodtry'] = 'Bien essayé !';
 $string['exit_grades'] = 'Notes';
 $string['exit_grades_text'] = 'Voir vos notes actuelles pour ce cours';
 $string['exit_hotpotgrade'] = 'Votre note pour cette activité est {$a}';
-$string['exit_hotpotgrade_average'] = 'Votre moyenne jusqu\'à maintenant pour cette activité est {$a}';
-$string['exit_hotpotgrade_highest'] = 'Votre plus haute note jusqu\'à maintenant pour cette activité est {$a}';
+$string['exit_hotpotgrade_average'] = 'Votre moyenne jusqu’à maintenant pour cette activité est {$a}';
+$string['exit_hotpotgrade_highest'] = 'Votre plus haute note jusqu’à maintenant pour cette activité est {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Vous avez égalisé votre meilleur résultat pour cette activité !';
 $string['exit_hotpotgrade_highest_previous'] = 'Votre plus haute note précédente pour cette activité était {$a}';
-$string['exit_hotpotgrade_highest_zero'] = 'Vous n\'avez pas dépassé {$a} pour cette activité';
+$string['exit_hotpotgrade_highest_zero'] = 'Vous n’avez pas dépassé {$a} pour cette activité';
 $string['exit_index'] = 'Index';
-$string['exit_index_text'] = 'Aller à l\'index des activités';
+$string['exit_index_text'] = 'Aller à l’index des activités';
 $string['exit_links'] = 'Quitter la page de lien';
-$string['exit_links_help'] = 'Ces options activent ou désactivent l\'affichage de certains liens de navigation sur la page de sortie HotPotatoes.
+$string['exit_links_help'] = 'Ces options activent ou désactivent l’affichage de certains liens de navigation sur la page de sortie HotPotatoes.
 
 **Ré-essayer**
 : Si les tentatives multiples sont autorisées et que le participant a encore des tentatives non effectuées, le lien permettant de refaire le test sera activé.
 
 **Accueil**
-: Si activé, un lien vers la page d\'accueil sera affiché.
+: Si activé, un lien vers la page d’accueil sera affiché.
 
 **Cours**
 : Si activé, un lien pour retourner au cours Moodle sera activé.
@@ -245,36 +245,36 @@ $string['exit_links_help'] = 'Ces options activent ou désactivent l\'affichage 
 **Notes**
 : Si activé, un lien pour accéder au carnet de notes de Moodle sera affiché.';
 $string['exit_next'] = 'Suivant';
-$string['exit_next_text'] = 'Essayer l\'activité suivante';
+$string['exit_next_text'] = 'Essayer l’activité suivante';
 $string['exit_noscore'] = 'Vous avez terminé cette activité avec succès !';
 $string['exit_retry'] = 'Ré-essayer';
 $string['exit_retry_text'] = 'Ré-essayer cette activité';
 $string['exit_welldone'] = 'Bien joué !';
 $string['exit_whatnext_0'] = 'Que voulez vous faire ensuite ?';
 $string['exit_whatnext_1'] = 'Choisissez votre destinée…';
-$string['exit_whatnext_default'] = 'Veuillez choisir l\'une des options suivantes :';
+$string['exit_whatnext_default'] = 'Veuillez choisir l’une des options suivantes :';
 $string['exitcm'] = 'Activité suivante';
 $string['exitcm_help'] = 'Ce paramètre définit une activité Moodle qui doit être effectuée après que le test est terminé.
 
-L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix :
+L’enseignant peut spécifier une activité bien précise ou l’un de ces choix :
 
 * activité suivante de ce cours
 * activité suivante de cette section de cours
 * activité HotPotatoes suivante de ce cours
 * activité HotPotatoes suivante de cette section de cours
 
-Si d\'autres options de page de sortie sont désactivées, le participant ira à la prochaine activité. Sinon, il verra un lien pour l\'emmener vers la prochaine activité.';
+Si d’autres options de page de sortie sont désactivées, le participant ira à la prochaine activité. Sinon, il verra un lien pour l’emmener vers la prochaine activité.';
 $string['exitcmcourse'] = 'Activité suivante de ce cours';
 $string['exitcmsection'] = 'Activité suivante de cette section de cours';
-$string['exitgrade'] = 'Niveau d\'activité suivant';
+$string['exitgrade'] = 'Niveau d’activité suivant';
 $string['exithotpotcourse'] = 'Activité HotPotatoes suivante de ce cours';
 $string['exithotpotsection'] = 'Activité HopPotatoes suivante dans cette section de cours';
-$string['exitoptions'] = 'Quitter la page d\'options';
+$string['exitoptions'] = 'Quitter la page d’options';
 $string['exitpage'] = 'Afficher la page de sortie';
 $string['exitpage_help'] = 'Détermine si une page de sortie doit être affichée après avoir effectué le test.
 
 **Oui**
-: Une page de sortie s\'affichera pour les participants quand le test sera terminé. Le contenu de la page de sortie est déterminé par les paramètres correspondant aux feedbacks et liens de la page de sortie HotPotatoes.
+: Une page de sortie s’affichera pour les participants quand le test sera terminé. Le contenu de la page de sortie est déterminé par les paramètres correspondant aux feedbacks et liens de la page de sortie HotPotatoes.
 
 **Non**
 : Le participant ne verra pas de page de sortie. À la place, il sera dirigé tout de suite vers la prochaine activité ou vers la page principale du cours Moodle.';
@@ -292,7 +292,7 @@ $string['forceplugins'] = 'Lecteurs multimédias compatibles';
 $string['forceplugins_help'] = 'Si activé, un lecteur multimédia compatible avec Moodle jouera les fichiers de type avi, mpeg, mpg, mp3, mov et wmv. Sinon, Moodle ne changera pas les paramètres des lecteurs multimédias du test.';
 $string['frameheight'] = 'Hauteur du cadre';
 $string['giveup'] = 'Abandonner';
-$string['grademethod'] = 'Méthode d\'évaluation';
+$string['grademethod'] = 'Méthode d’évaluation';
 $string['grademethod_help'] = 'Ce paramètre définit comment la note HotPotatoes est calculée en fonction des scores des tentatives.
 
 **Meilleure note**
@@ -312,15 +312,15 @@ $string['highestscore'] = 'Plus haut score';
 $string['hints'] = 'Conseils';
 $string['hotpot:addinstance'] = 'Ajouter une nouvelle activité HotPot';
 $string['hotpot:attempt'] = 'Effectuer un Hot Potatoes et envoyer les résultats';
-$string['hotpot:deleteallattempts'] = 'Supprimer toutes les tentatives d\'une activité HotPotatoes';
-$string['hotpot:deletemyattempts'] = 'Supprimer ses propres tentatives d\'une activité HotPotatoes';
+$string['hotpot:deleteallattempts'] = 'Supprimer toutes les tentatives d’une activité HotPotatoes';
+$string['hotpot:deletemyattempts'] = 'Supprimer ses propres tentatives d’une activité HotPotatoes';
 $string['hotpot:ignoretimelimits'] = 'Ignorer les limites de temps sur une activité HotPotatoes';
-$string['hotpot:manage'] = 'Modifier les paramètres d\'une activité HotPotatoes';
+$string['hotpot:manage'] = 'Modifier les paramètres d’une activité HotPotatoes';
 $string['hotpot:preview'] = 'Prévisualiser une activité HotPotatoes';
-$string['hotpot:reviewallattempts'] = 'Voir toutes les tentatives d\'une activité HotPotatoes';
-$string['hotpot:reviewmyattempts'] = 'Voir ses propres tentatives d\'une activité HotPotatoes';
-$string['hotpot:view'] = 'Afficher la première page d\'un Hot Potatoes';
-$string['hotpotname'] = 'Nom de l\'activité HotPotatoes';
+$string['hotpot:reviewallattempts'] = 'Voir toutes les tentatives d’une activité HotPotatoes';
+$string['hotpot:reviewmyattempts'] = 'Voir ses propres tentatives d’une activité HotPotatoes';
+$string['hotpot:view'] = 'Afficher la première page d’un Hot Potatoes';
+$string['hotpotname'] = 'Nom de l’activité HotPotatoes';
 $string['ignored'] = 'Ignoré';
 $string['inprogress'] = 'En cours';
 $string['isgreaterthan'] = 'est plus grand que';
@@ -333,11 +333,11 @@ $string['mediafilter_hotpot'] = 'Filtre multimédia de HotPotatoes';
 $string['mediafilter_moodle'] = 'Filtre multimédia standard de Moodle';
 $string['migratingfiles'] = 'Migration des fichiers du test HotPotatoes';
 $string['migratinglogs'] = 'Migration des logs Hot Potatoes';
-$string['missingsourcetype'] = 'Fichier source manquant pour l\'enregistrement HotPotatoes';
+$string['missingsourcetype'] = 'Fichier source manquant pour l’enregistrement HotPotatoes';
 $string['modulename'] = 'Hot Potatoes';
-$string['modulename_help'] = 'Le module HotPot permet aux enseignants de distribuer du matériel d\'apprentissage interactif à leurs étudiants via Moodle et afficher des rapports sur les réponses et les résultats des élèves.
+$string['modulename_help'] = 'Le module HotPot permet aux enseignants de distribuer du matériel d’apprentissage interactif à leurs étudiants via Moodle et afficher des rapports sur les réponses et les résultats des étudiants.
 
-Une activité HotPot unique se compose d\'une page d\'entrée optionnelle, un seul exercice, et une page de sortie optionnelle. L\'exercice peut être une page Web statique ou une page Web interactive qui offre aux élèves du contenu texte, audio et visuels et enregistre leurs réponses. L\'exercice est créé sur ordinateur en utilisant le logiciel de création de l\'enseignant, puis téléchargé sur Moodle.
+Une activité HotPot unique se compose d’une page d’entrée optionnelle, un seul exercice, et une page de sortie optionnelle. L’exercice peut être une page Web statique ou une page Web interactive qui offre aux étudiants du contenu texte, audio et visuels et enregistre leurs réponses. L’exercice est créé sur ordinateur en utilisant le logiciel de création de l’enseignant, puis téléchargé sur Moodle.
 
 Une activité HotPot peut gérer les exercices créés avec les logiciels de création qui suivent :
 
@@ -349,7 +349,7 @@ Une activité HotPot peut gérer les exercices créés avec les logiciels de cr�
 $string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'Hot Potatoes';
 $string['nameadd'] = 'Nom';
-$string['nameadd_help'] = 'Le nom peut être un texte saisi par l\'enseignant ou généré automatiquement.
+$string['nameadd_help'] = 'Le nom peut être un texte saisi par l’enseignant ou généré automatiquement.
 
 **Obtenir à partir du fichier source**
 : Le nom sera extrait du fichier source.
@@ -361,7 +361,7 @@ $string['nameadd_help'] = 'Le nom peut être un texte saisi par l\'enseignant ou
 : Le chemin du fichier source sera utilisé comme nom. Tous les « / » du chemin seront remplacés par des espaces.
 
 **Texte spécifique**
-: Un texte saisi par l\'enseignant sera utilisé comme nom.';
+: Un texte saisi par l’enseignant sera utilisé comme nom.';
 $string['nameedit'] = 'Nom';
 $string['nameedit_help'] = 'Ce texte est affiché aux participants';
 $string['navigation'] = 'Navigation';
@@ -380,7 +380,7 @@ $string['navigation_help'] = 'Ce paramètre définit la barre de navigation du t
 : La barre de navigation de Moodle sera affichée intégrée dans le test HotPotatoes.
 
 **Aides de navigation originales**
-: Le test sera affiché avec les boutons de navigation définis dans le test, s\'il y en a.
+: Le test sera affiché avec les boutons de navigation définis dans le test, s’il y en a.
 
 ** Un simple bouton « Abandonner »**
 : Le test sera affiché avec un simple bouton « Abandonner » au sommet de la page.
@@ -393,57 +393,57 @@ $string['navigation_original'] = 'Aides à la navigation originale';
 $string['navigation_topbar'] = 'Barre de navigation haute de Moodle seulement (pas de barre de coté)';
 $string['noactivity'] = 'Aucune activité';
 $string['nohotpots'] = 'Aucune activité HotPotatoes';
-$string['nomoreattempts'] = 'Désolé, vous n\'avez plus de tentatives restantes pour cette activité';
-$string['noresponses'] = 'Aucune information n\'a été trouvée sur les questions et les réponses individuelles.';
-$string['noreview'] = 'Désolé, vous n\'êtes pas autorisé à voir les détails de cette tentative.';
+$string['nomoreattempts'] = 'Désolé, vous n’avez plus de tentatives restantes pour cette activité';
+$string['noresponses'] = 'Aucune information n’a été trouvée sur les questions et les réponses individuelles.';
+$string['noreview'] = 'Désolé, vous n’êtes pas autorisé à voir les détails de cette tentative.';
 $string['noreviewafterclose'] = 'Désolé, ce test est fermé. vous ne pouvez plus voir les détails de cette tentative.';
-$string['noreviewbeforeclose'] = 'Désolé, vous n\'êtes pas autorisé à voir les détails de cette tentative avant {$a}';
-$string['nosourcefilesettings'] = 'Information du fichier source manquant pour l\'enregistrement HotPotatoes';
+$string['noreviewbeforeclose'] = 'Désolé, vous n’êtes pas autorisé à voir les détails de cette tentative avant {$a}';
+$string['nosourcefilesettings'] = 'Information du fichier source manquant pour l’enregistrement HotPotatoes';
 $string['notattemptedyet'] = 'Pas encore tenté';
-$string['notavailable'] = 'Désolé, cette activité n\'est pas disponible pour vous pour l\'instant.';
-$string['outputformat'] = 'Format d\'affichage';
+$string['notavailable'] = 'Désolé, cette activité n’est pas disponible pour vous pour l’instant.';
+$string['outputformat'] = 'Format d’affichage';
 $string['outputformat_best'] = 'Meilleur';
 $string['outputformat_help'] = 'Le format de sortie précise de quelle manière le contenu sera affiché au participant.
 
-Les formats de sortie disponibles dépendent du type de fichier source. Certains fichiers source n\'ont qu\'un format de sortie, alors que d\'autres en proposent plusieurs.
+Les formats de sortie disponibles dépendent du type de fichier source. Certains fichiers source n’ont qu’un format de sortie, alors que d’autres en proposent plusieurs.
 
 Le paramètre « meilleur » affichera le contenu en optimisant le format de sortie en fonction du navigateur du participant.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: Standard';
 $string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier DropDown';
-$string['outputformat_hp_6_jcloze_html_findit_a'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (a)';
-$string['outputformat_hp_6_jcloze_html_findit_b'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'Html à partir d’une source HP6 : Rottmeier FindIt (a)';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'Html à partir d’une source HP6 : Rottmeier FindIt (b)';
 $string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Rottmeier JGloss';
-$string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d\'une source HP6 xml: ANCT-Scan';
-$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier DropDown';
-$string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier FindIt (a)';
-$string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier FindIt (b)';
-$string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier JGloss';
-$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze à partir d\'une source HP6 xml: Standard';
-$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze à partir d\'une source HP6 xml: Avancé';
+$string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d’une source HP6 xml: ANCT-Scan';
+$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d’une source HP6 xml: Rottmeier DropDown';
+$string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d’une source HP6 xml: Rottmeier FindIt (a)';
+$string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze à partir d’une source HP6 xml: Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze à partir d’une source HP6 xml: Rottmeier JGloss';
+$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze à partir d’une source HP6 xml: Standard';
+$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze à partir d’une source HP6 xml: Avancé';
 $string['outputformat_hp_6_jcross_html'] = 'JCross HP6 html';
-$string['outputformat_hp_6_jcross_xml_v6'] = 'JCross à partir d\'une source HP6 xml';
-$string['outputformat_hp_6_jmatch_html'] = 'JMatch à partir d\'une source html';
-$string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch Sort à partir d\'une source html';
-$string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch à partir d\'une source HP6 xml: Flashcard';
-$string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMatch à partir d\'une source HP6 xml: Rottmeier JMemori';
-$string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch Sort à partir d\'une source xml';
-$string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch à partir d\'une source HP6 xml: Standard';
-$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch à partir d\'une source HP6 xml: Drag and Drop';
-$string['outputformat_hp_6_jmix_html'] = 'JMix à partir d\'une source HP6 html';
-$string['outputformat_hp_6_jmix_xml_v6'] = 'JMix à partir d\'une source HP6 xml: Standard';
-$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix à partir d\'une source HP6 xml: Drag and Drop';
-$string['outputformat_hp_6_jmix_xml_v6_plus_deluxe'] = 'JMix à partir d\'une source HP6 xml: avec préfixe et suffixe';
-$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix à partir d\'une source HP6 xml: Drag and Drop with key press';
+$string['outputformat_hp_6_jcross_xml_v6'] = 'JCross à partir d’une source HP6 xml';
+$string['outputformat_hp_6_jmatch_html'] = 'JMatch à partir d’une source html';
+$string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch Sort à partir d’une source html';
+$string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch à partir d’une source HP6 xml: Flashcard';
+$string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMatch à partir d’une source HP6 xml: Rottmeier JMemori';
+$string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch Sort à partir d’une source xml';
+$string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch à partir d’une source HP6 xml: Standard';
+$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch à partir d’une source HP6 xml: Drag and Drop';
+$string['outputformat_hp_6_jmix_html'] = 'JMix à partir d’une source HP6 html';
+$string['outputformat_hp_6_jmix_xml_v6'] = 'JMix à partir d’une source HP6 xml: Standard';
+$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix à partir d’une source HP6 xml: Drag and Drop';
+$string['outputformat_hp_6_jmix_xml_v6_plus_deluxe'] = 'JMix à partir d’une source HP6 xml: avec préfixe et suffixe';
+$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix à partir d’une source HP6 xml: Drag and Drop with key press';
 $string['outputformat_hp_6_jquiz_html'] = 'JQuiz HP6 html';
-$string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz à partir d\'une source HP6 xml: Standard';
-$string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz à partir d\'une source HP6 xml: Auto-advance';
-$string['outputformat_hp_6_jquiz_xml_v6_exam'] = 'JQuiz à partir d\'une source HP6 xml: Exam';
-$string['outputformat_hp_6_rhubarb_html'] = 'WebRhubarb (v6) à partir d\'une source html';
-$string['outputformat_hp_6_rhubarb_xml'] = 'WebRhubarb (v6) à partir d\'une source xml';
-$string['outputformat_hp_6_sequitur_html'] = 'WebSequitur (v6) à partir d\'une source html';
-$string['outputformat_hp_6_sequitur_html_incremental'] = 'WebSequitur (v6) à partir d\'une source html, notation incrémentielle';
-$string['outputformat_hp_6_sequitur_xml'] = 'WebSequitur (v6) à partir d\'une source xml';
-$string['outputformat_hp_6_sequitur_xml_incremental'] = 'WebSequitur (v6) à partir d\'une source xml, notation incrémentielle';
+$string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz à partir d’une source HP6 xml: Standard';
+$string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz à partir d’une source HP6 xml: Auto-advance';
+$string['outputformat_hp_6_jquiz_xml_v6_exam'] = 'JQuiz à partir d’une source HP6 xml: Exam';
+$string['outputformat_hp_6_rhubarb_html'] = 'WebRhubarb (v6) à partir d’une source html';
+$string['outputformat_hp_6_rhubarb_xml'] = 'WebRhubarb (v6) à partir d’une source xml';
+$string['outputformat_hp_6_sequitur_html'] = 'WebSequitur (v6) à partir d’une source html';
+$string['outputformat_hp_6_sequitur_html_incremental'] = 'WebSequitur (v6) à partir d’une source html, notation incrémentielle';
+$string['outputformat_hp_6_sequitur_xml'] = 'WebSequitur (v6) à partir d’une source xml';
+$string['outputformat_hp_6_sequitur_xml_incremental'] = 'WebSequitur (v6) à partir d’une source xml, notation incrémentielle';
 $string['outputformat_html_ispring'] = 'Fichier iSpring HTML';
 $string['outputformat_html_xerte'] = 'Fichier Xerte HTML';
 $string['outputformat_html_xhtml'] = 'Fichier standard HTML';
@@ -455,16 +455,16 @@ $string['pluginadministration'] = 'Administration Hot Potatoes';
 $string['pluginname'] = 'Module Hot Potatoes';
 $string['pressoktocontinue'] = 'Cliquer sur OK pour continuer, ou Annuler pour rester sur la page actuelle.';
 $string['privacy'] = 'Confidentialité des résultats';
-$string['privacy:metadata:hotpot_attempts'] = 'Informations sur les tentatives de l\'utilisateur lors d\'activités HotPot';
-$string['privacy:metadata:hotpot_attempts:timemodified'] = 'Le timemodified indiquant quand les tentatives de HotPot ont été modifiées par l\'utilisateur';
-$string['privacy:metadata:hotpot_attempts:timestart'] = 'Heure de début indiquant le moment où l\'utilisateur a lancé les tentatives';
+$string['privacy:metadata:hotpot_attempts'] = 'Informations sur les tentatives de l’utilisateur lors d’activités HotPot';
+$string['privacy:metadata:hotpot_attempts:timemodified'] = 'Le timemodified indiquant quand les tentatives de HotPot ont été modifiées par l’utilisateur';
+$string['privacy:metadata:hotpot_attempts:timestart'] = 'Heure de début indiquant le moment où l’utilisateur a lancé les tentatives';
 $string['questionshort'] = 'Q-{$a}';
-$string['quizname_help'] = 'texte d\'aide pour le nom du test';
+$string['quizname_help'] = 'texte d’aide pour le nom du test';
 $string['quizzes'] = 'Tests';
 $string['responses'] = 'Réponses';
 $string['responsesreport'] = 'Réponses';
 $string['reviewafterattempt'] = 'Autoriser la révision après la tentative';
-$string['reviewafterclose'] = 'Autoriser la révision après la fermeture de l\'activité HotPot';
+$string['reviewafterclose'] = 'Autoriser la révision après la fermeture de l’activité HotPot';
 $string['reviewduringattempt'] = 'Autoriser la révision pendant la tentative';
 $string['reviewoptions'] = 'Options de révision';
 $string['score'] = 'Score';
@@ -475,39 +475,39 @@ $string['sourcefile'] = 'Nom du fichier source';
 $string['sourcefile_help'] = 'Ce paramètre définit le fichier de contenu qui sera affiché aux participants.
 
 Habituellement, ce fichier a été créé en dehors de Moodle, puis déposé dans la zone de fichiers du cours Moodle.
-Cela peut être un fichier html ou un fichier d\'un autre type généré à partir d\'un logiciel ce création de type HotPotatoes ou Qedoc.
+Cela peut être un fichier html ou un fichier d’un autre type généré à partir d’un logiciel ce création de type HotPotatoes ou Qedoc.
 
-L\'emplacement du fichier source doit être indiqué comme un dossier ou un chemin de fichiers dans la zone de fichiers du cours Moodle, ou il peut être indiqué comme une URL commençant par http:// ou https://
+L’emplacement du fichier source doit être indiqué comme un dossier ou un chemin de fichiers dans la zone de fichiers du cours Moodle, ou il peut être indiqué comme une URL commençant par http:// ou https://
 
-Pour les documents Qedoc, le fichier source doit être indiqué comme une URL d\'un module Qedoc déposé sur le serveur Qedoc. Par exemple : http://www.qedoc.net/library/ABCDE_123.zip
+Pour les documents Qedoc, le fichier source doit être indiqué comme une URL d’un module Qedoc déposé sur le serveur Qedoc. Par exemple : http://www.qedoc.net/library/ABCDE_123.zip
 
-Pour plus d\'informations sur le dépôt de source Qedoc, visitez le site [Qedoc documentation: Uploading_modules](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
+Pour plus d’informations sur le dépôt de source Qedoc, visitez le site [Qedoc documentation: Uploading_modules](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
 $string['sourcefilenotfound'] = 'Fichier source non trouvé (ou vide) : {$a}';
 $string['status'] = 'Statut';
 $string['stopbutton'] = 'Afficher le bouton stop';
 $string['stopbutton_help'] = 'Si ce paramètre est activé, un bouton stop est ajouté au test.
 
-Si l\'étudiant clique sur le bouton stop, le résultat obtenu jusqu\'ici sera envoyé à Moodle et la tentative de test sera considérée comme abandonnée.
+Si l’étudiant clique sur le bouton stop, le résultat obtenu jusqu’ici sera envoyé à Moodle et la tentative de test sera considérée comme abandonnée.
 
-Le texte affiché sur le bouton stop peut être issu du paquetage de langue Moodle ou définie par l\'enseignant pour créer son propre bouton stop.';
+Le texte affiché sur le bouton stop peut être issu du paquetage de langue Moodle ou définie par l’enseignant pour créer son propre bouton stop.';
 $string['stopbutton_langpack'] = 'À partir du paquetage de langue';
 $string['stopbutton_specific'] = 'Utiliser un texte spécifique';
 $string['stoptext'] = 'Texte du bouton stop';
 $string['storedetails'] = 'Enregistrer les détails bruts XML des tentatives HotPotatoes.';
-$string['studentfeedback'] = 'Feedback de l\'édudiant';
-$string['studentfeedback_help'] = 'Si l\'option est activée, une fenêtre de feedback s\'ouvrira quand le participant cliquera sur le bouton « Vérifier ». Cette fenêtre permettra de discuter du test avec l\'enseignant et avec les autres participants d\'une de ces manières :
+$string['studentfeedback'] = 'Feedback de l’édudiant';
+$string['studentfeedback_help'] = 'Si l’option est activée, une fenêtre de feedback s’ouvrira quand le participant cliquera sur le bouton « Vérifier ». Cette fenêtre permettra de discuter du test avec l’enseignant et avec les autres participants d’une de ces manières :
 
 **Page web**
-: Nécessite l\'URL d\'une page web existante, par exemple http://myserver.com/feedbackform.html
+: Nécessite l’URL d’une page web existante, par exemple http://myserver.com/feedbackform.html
 
 **Formulaire de feedback**
-: Nécessite l\'URL d\'un formulaire existant, par exemple http://myserver.com/cgi-bin/formmail.pl
+: Nécessite l’URL d’un formulaire existant, par exemple http://myserver.com/cgi-bin/formmail.pl
 
 **Forum Moodle**
 : Le forum de base du cours Moodle sera affiché.
 
 **Messagerie instantanée Moodle**
-: La messagerie instantanée de Moodle s\'affichera. Si le cours est géré par plusieurs enseignants, le participant devra sélectionner l\'enseignant de son choix avant que la messagerie n\'apparaisse.';
+: La messagerie instantanée de Moodle s’affichera. Si le cours est géré par plusieurs enseignants, le participant devra sélectionner l’enseignant de son choix avant que la messagerie n’apparaisse.';
 $string['submits'] = 'Envois';
 $string['subplugintype_hotpotattempt'] = 'Format de sortie';
 $string['subplugintype_hotpotattempt_plural'] = 'Formats de sortie';
@@ -518,12 +518,12 @@ $string['subplugintype_hotpotsource_plural'] = 'Fichiers source';
 $string['textsourcefile'] = 'Obtenir à partir du fichier source';
 $string['textsourcefilename'] = 'Utiliser le nom du fichier source';
 $string['textsourcefilepath'] = 'Utiliser le chemin du fichier source';
-$string['textsourcequiz'] = 'Tirer de l\'activité';
+$string['textsourcequiz'] = 'Tirer de l’activité';
 $string['textsourcespecific'] = 'Texte spécifique';
-$string['timeclose'] = 'Disponible jusqu\'au';
+$string['timeclose'] = 'Disponible jusqu’au';
 $string['timedout'] = 'En pause';
 $string['timelimit'] = 'Limite de temps';
-$string['timelimit_help'] = 'Ce paramètre spécifie la durée maximale d\'une tentative.
+$string['timelimit_help'] = 'Ce paramètre spécifie la durée maximale d’une tentative.
 
 ** Utilisez les paramètres du fichier source / modèle**
 : La durée sera tirée du fichier source ou modèle pour ce format de sortie.
@@ -540,31 +540,31 @@ $string['timelimitspecific'] = 'Utiliser un temps spécifique';
 $string['timelimitsummary'] = 'Limite de temps pour une tentative';
 $string['timelimittemplate'] = 'Utiliser les paramètres du fichier source/modèle';
 $string['timeopen'] = 'Disponible à partir de';
-$string['timeopenclose'] = 'Dates d\'ouverture et de fermeture';
-$string['timeopenclose_help'] = 'Vous pouvez spécifier quand les participant peuvent faire des tentatives pour ce test. Le test ne sera pas accessible avant l\'heure d\'ouverture et après l\'heure de fermeture.';
+$string['timeopenclose'] = 'Dates d’ouverture et de fermeture';
+$string['timeopenclose_help'] = 'Vous pouvez spécifier quand les participant peuvent faire des tentatives pour ce test. Le test ne sera pas accessible avant l’heure d’ouverture et après l’heure de fermeture.';
 $string['title'] = 'Titre';
 $string['title_help'] = 'Ce paramètre spécifie le titre à afficher sur la page Web.
 
-** Nom de l\'activité HotPotatoes**
+** Nom de l’activité HotPotatoes**
 : Le nom de cette activité HotPotatoes sera affiché comme du titre de la page Web.
 
 ** Tirer du fichier source **
-: Le titre défini dans le fichier source, s\'il existe, sera utilisé comme titre de la page Web.
+: Le titre défini dans le fichier source, s’il existe, sera utilisé comme titre de la page Web.
 
 ** Utiliser le nom du fichier source **
-: Le nom du fichier source, à l\'exclusion des noms de dossier, sera utilisé comme titre de la page Web.
+: Le nom du fichier source, à l’exclusion des noms de dossier, sera utilisé comme titre de la page Web.
 
 ** Utiliser le chemin du fichier source **
 : Le chemin du fichier source, y compris tous les noms de dossiers, sera utilisé comme titre de la page Web.';
 $string['toolsindex'] = 'Index des outils HotPot';
-$string['unitname_help'] = 'texte d\'aide pour le nom de l\'unité';
-$string['unrecognizedsourcefile'] = 'Désolé, le module HotPot n\'a pas pu détecter le type du fichier source : {$a}';
+$string['unitname_help'] = 'texte d’aide pour le nom de l’unité';
+$string['unrecognizedsourcefile'] = 'Désolé, le module HotPot n’a pas pu détecter le type du fichier source : {$a}';
 $string['updated'] = 'Mis à jour';
 $string['updatinggrades'] = 'Mise à jour des notes HotPot';
 $string['usefilters'] = 'Utiliser des filtres';
-$string['usefilters_help'] = 'Si ce paramètre est activé, le contenu passera par les filtres Moodle avant d\'être affiché par le navigateur.';
+$string['usefilters_help'] = 'Si ce paramètre est activé, le contenu passera par les filtres Moodle avant d’être affiché par le navigateur.';
 $string['useglossary'] = 'Utiliser un glossaire';
-$string['useglossary_help'] = 'Si ce paramètre est activé, le contenu passera par le filtre de glossaire automatique de Moodle avant d\'être affiché par le navigateur.
+$string['useglossary_help'] = 'Si ce paramètre est activé, le contenu passera par le filtre de glossaire automatique de Moodle avant d’être affiché par le navigateur.
 
 Notez que ce paramètre passe avant le paramètre du site concernant le filtre de glossaire automatique.';
 $string['usemediafilter'] = 'Utiliser le filtre multimédia';
@@ -581,14 +581,14 @@ $string['usemediafilter_help'] = 'Ce paramètre définit le filtre multimédia q
 : La syntaxe est la suivante : <code>[url player width height options]</code>
 
 **URL**
-: L\'URL absolue ou relative du fichier source.
+: L’URL absolue ou relative du fichier source.
 
 **Lecteur** (facultatif)
 : Le nom du lecteur à insérer. La valeur par défaut est Moodle. Mais la version standard de HotPotatoes propose aussi :
 :**drew** : un lecteur MP3
 :**dyer** : un lecteur MP3 par Bernard Dyer
 :**hbs** : un lecteur MP3 de Half-Backed Software
-:**image** : insère une image à partir d\'internet
+:**image** : insère une image à partir d’internet
 :**link** : insère un lien vers une autre page web
 
 **Largeur** (facultatif)
@@ -598,7 +598,7 @@ La largeur désirée pour le lecteur.
 La hauteur désirée pour le lecteur. Si non indiquée, la valeur sera la même que la largeur.
 
 **Options** (facultatif)
-: Une liste d\'options passées au lecteur, séparées par des virgules. Chaque option peut être un simple interrupteur on/off ou un nom d\'option avec sa valeur correspondante.
+: Une liste d’options passées au lecteur, séparées par des virgules. Chaque option peut être un simple interrupteur on/off ou un nom d’option avec sa valeur correspondante.
 : **nom=valeur**
 : **nom=« valeur avec des espaces »**';
 $string['viewreports'] = 'Voir le rapport pour {$a} utilisateur(s)';

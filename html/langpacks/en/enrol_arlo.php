@@ -91,6 +91,7 @@ $string['coretask'] = 'Sync Arlo core information';
 $string['courseenrolment'] = 'Course enrolment';
 $string['coursewelcome'] = 'Course welcome';
 $string['creategroup'] = 'Create new group';
+$string['createwebhook'] = 'Create webhook';
 $string['customwelcomemessage'] = 'Custom welcome message';
 $string['customwelcomemessage_help'] = 'A custom welcome message may be added as plain text or Moodle-auto format, including HTML tags and multi-lang tags.
 
@@ -121,6 +122,8 @@ $string['emaillocalpartrandomnumber'] = 'Email local part and random number';
 $string['emaillocalpartrandomnumber_desc'] = 'Use email username address before @ symbol + random number';
 $string['emailrandomnumber'] = 'Email and random number';
 $string['emailrandomnumber_desc'] = 'Use full email address + random number';
+$string['enablewebhook'] = 'Enable webhook';
+$string['enablewebhook_desc'] = 'Enable webhook for Arlo.';
 $string['enrolment'] = 'Enrolment';
 $string['enrolmentfailure'] = 'Enrolment failure has occurred';
 $string['enrolmentinstancedisabled'] = 'Enrolment instance disabled.';
@@ -161,6 +164,7 @@ $string['event'] = 'Event';
 $string['eventcreated'] = 'Event created';
 $string['eventresultpushingdisabled'] = 'Event result pushing disabled at site configuration.';
 $string['events'] = 'Events';
+$string['eventtypes'] = 'Event types';
 $string['eventupdated'] = 'Event updated';
 $string['expiredaction'] = 'Enrolment expiration action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
@@ -176,6 +180,7 @@ $string['failed'] = 'Failed';
 $string['failures'] = 'Failures';
 $string['firstnamelastnamerandomnumber'] = 'First name, last name and random number';
 $string['firstnamelastnamerandomnumber_desc'] = 'Use first 3 letters of firstname + first 3 letters of lastname + random number';
+$string['format'] = 'FORMAT';
 $string['httpstatus:200'] = 'OK';
 $string['httpstatus:201'] = 'Created';
 $string['httpstatus:302'] = 'Found';
@@ -200,6 +205,7 @@ $string['invalidcredentials_fullmessagehtml'] = '<h3>Moodle cannot connect to Ar
 <p>Moodle Arlo connection settings: <a href="{$a->url}">{$a->url}</a></p>';
 $string['invalidcredentials_smallmessage'] = 'Moodle cannot connect to Arlo API. Please check connection settings: {$a->url}';
 $string['invalidcredentials_subject'] = 'Moodle cannot connect to Arlo API';
+$string['json'] = 'JSON';
 $string['locktimeout'] = 'The operation timed out while waiting for a lock';
 $string['longtime'] = 'This process can take a long time';
 $string['managearlo'] = 'Manage Arlo';
@@ -266,6 +272,8 @@ $string['newuserdefaultemail_help'] = 'New user default email';
 $string['noassociateduser'] = 'No associated Moodle user account.';
 $string['noeventsoractivitiesfound'] = 'No "Active" Events or Online Activities found.';
 $string['nomatchingenrolmentinstance'] = 'No matching enrolment instance.';
+$string['nomembershipjobfound'] = 'No membership job found for enrolment instance {$a}';
+$string['nooutcomejobfound'] = 'No outcome job found for enrolment instance {$a}';
 $string['notifyexpiry'] = 'Notify expiry';
 $string['notok'] = 'Not OK';
 $string['notstarted'] = 'Not started';
@@ -326,7 +334,9 @@ $string['pushonlineactivityresults_help'] = 'Push result information from enrolm
 $string['queued'] = 'Queued';
 $string['reattemptenrolment'] = 'Re-attempt enrolment';
 $string['reattemptenrolmentconfirm'] = 'Please ensure you have actioned all issues found in the failure reports before re-attempting the enrolment or the enrolment will fail again. Re-attempt enrolment?';
+$string['regcreated'] = 'Registration created';
 $string['registrationstatus'] = 'Registration status';
+$string['regupdated'] = 'Registration updated';
 $string['remove'] = 'Remove';
 $string['removeallarloenrolmentsquestion'] = 'Are you sure you want to remove all Arlo linked enrolments for {$a}?';
 $string['removetemplatedanger'] = '<div class="alert alert-danger" role="alert">
@@ -361,6 +371,7 @@ $string['synchroniseinstancefor'] = 'Manually synchronise Arlo enrolments and ou
 $string['synchroniseoperationiscurrentlylocked'] = 'The Arlo enrolment synchronise operation for this instance is currently locked by another running process.';
 $string['synchronize'] = 'Synchronize';
 $string['synchronizeinstance'] = 'Manually pull new registrations and push new results for an enrolment instance';
+$string['technicalcontact'] = 'Contact email';
 $string['template'] = 'Template';
 $string['timelogged'] = 'Time logged';
 $string['timemodified'] = 'Time modified';
@@ -384,6 +395,8 @@ $string['unsuccessfulenrolments'] = 'Unsuccessful enrolments';
 $string['unsuccessfulenrolmentscount'] = 'Unsuccessful enrolments: {$a}';
 $string['updatecontactstask'] = 'Update Moodle user information based on updated Arlo contact information';
 $string['uri'] = 'URI';
+$string['useadhoctask'] = 'Use webhook adhoc task';
+$string['useadhoctask_desc'] = 'Use adhoc task for Arlo weebhook events.';
 $string['useraccountcreation'] = 'User account creation';
 $string['useraccountmatching'] = 'User account matching';
 $string['userassociationfailurereport'] = 'User association report';
@@ -391,6 +404,15 @@ $string['usercreation'] = 'User creation';
 $string['usernamegeneration_desc'] = '<p>The order in which different username formats are used to generate a username for a new Moodle user account. If existing account found with same username as generated, the next format in order will be tried.</p><br>';
 $string['userrecordinformation'] = 'User record information';
 $string['viewreport'] = 'View report';
+$string['webhookapiurl'] = 'Arlo webhook API URL';
+$string['webhookapiurl_desc'] = 'Arlo webhook API URL for webhook requests.';
+$string['webhookdisabled'] = '<div class="alert alert-danger" role="alert">Webhook is disabled.</div>';
+$string['webhookenabled'] = '<div class="alert alert-success" role="alert">Webhook is configured and active.</div>';
+$string['webhookinactive'] = '<div class="alert alert-warning" role="alert">Webhook not configured or inactive.</div>';
+$string['webhookname'] = 'Arlo webhook name';
+$string['webhooksecret'] = 'Arlo webhook secret';
+$string['webhooksecret_desc'] = 'Arlo webhook secret for validating webhook requests.';
+$string['webhookstatus'] = 'Webhook status';
 $string['welcometocourse'] = 'Welcome to {$a}';
 $string['welcometocoursetext'] = 'Welcome to {$a->coursename}!
 
@@ -405,3 +427,4 @@ You can reset your password using following url:
 You may access this course at the following url:
 
   {$a->courseurl}';
+$string['xml'] = 'XML';

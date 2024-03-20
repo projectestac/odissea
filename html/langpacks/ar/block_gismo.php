@@ -30,12 +30,14 @@ $string['chats_over_time_chart_title'] = 'النشاطات: المشاركات �
 $string['completion_quiz_chart_title'] = 'إكمالات الاختبارات';
 $string['completion_quiz_menu'] = 'الاختبارات';
 $string['err_block_instance_id_not_set'] = 'مُعرَّف عينة الكتلة غير مُعَين!';
+$string['err_missing_data'] = 'لا يمكن مواصلة التحليل لأنه لا توجد بيانات للعمل عليها';
 $string['exportalllogs'] = 'تصدير كل سجلات الوقوعات';
 $string['exportcourselogs'] = 'تصدير المقررات الدراسية ذات كتلة gismo فقط';
 $string['exportlogs'] = 'تصدير سجلات الوقوعات';
 $string['forums_over_time'] = 'المنتديات بمرور الوقت';
 $string['forums_over_time_chart_title'] = 'النشاطات: المشاركات في المنتديات بمرور الوقت';
 $string['gismo:addinstance'] = 'إضافة كتلة جديدة من gismo';
+$string['help_docs'] = 'نظرة عامة قصيرة';
 $string['home'] = 'الصفحة الرئيسية لـ Gismo';
 $string['homepage_chart_activities_assignments_overview'] = 'النشاطات: استعراض الواجبات';
 $string['homepage_chart_resources_access_overview'] = 'الموارد: استعراض الدخولات';

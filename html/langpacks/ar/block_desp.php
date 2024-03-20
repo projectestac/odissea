@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['arbeitmitschwerpunktauf'] = 'العمل مع التركيز على';
+$string['aufgabenchecklisten'] = 'نظرة عامة';
 $string['begegnungen_sprachenundkulturen'] = 'ملاقاة اللغات والثقافات';
 $string['beispiel_liste'] = '<th>أي لغة؟<br />أي لهجة؟</th>
 					<th>مع من؟</th>
@@ -59,6 +60,7 @@ $string['desp:student'] = 'وصول الطالب';
 $string['dokumentiertmit'] = '<td colspan="2">موثق باستعمال: الفلم، الصورة، النص (رسالة، تقرير، نشرة، دفتر ملاحظات مقروء...)، كراس، إلخ.';
 $string['einigezeitspaeter'] = 'بعد فترة معينة من الوقت:';
 $string['feedbackansehen'] = 'أنظر إلى الإفادة';
+$string['index'] = 'نظرة عامة';
 $string['keinelernpartnerschaft'] = 'ليست هناك شراكات تعلم مع الطلبة الآخرين!';
 $string['kulturbegegnung'] = 'اللقاءات مع اللغات والثقافات';
 $string['kurzbeschreibung_begegnung'] = 'وصف موجز لعلاقتك مع اللغات والثقافات';

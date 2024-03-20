@@ -39,6 +39,7 @@ $string['activities_help'] = 'Les activitats, com ara fòrums, qüestionaris i w
 $string['activity'] = 'Activitat';
 $string['activityclipboard'] = 'S\'està movent aquesta activitat: {$a}';
 $string['activityheader'] = 'Menú d\'activitat';
+$string['activityicon'] = 'Icona {$a}';
 $string['activityiscurrentlyhidden'] = 'Actualment aquesta activitat està oculta';
 $string['activitymodule'] = 'Mòdul d\'activitat';
 $string['activitymodules'] = 'Mòduls d\'activitat';
@@ -300,6 +301,7 @@ $string['closewindow'] = 'Tanca aquesta finestra';
 $string['collapse'] = 'Redueix';
 $string['collapseall'] = 'Contreu-ho tot';
 $string['collapsecategory'] = 'Redueix {$a}';
+$string['comebacklater'] = 'Torneu més tard.';
 $string['commentincontext'] = 'Mostra aquest comentari en context';
 $string['comments'] = 'Comentaris';
 $string['commentscount'] = 'Comentaris ({$a})';
@@ -335,19 +337,11 @@ $string['cookiesenabled_help'] = 'Aquest lloc utilitza dues galetes:
 L\'essencial és la galeta de sessió, generalment anomenada MoodleSession. Heu de permetre aquesta galeta al vostre navegador per donar continuïtat i mantenir la connexió en navegar pel lloc. En finalitzar la sessió o tancar el navegador, aquesta galeta es destrueix (al vostre ordinador i al servidor).
 
 L\'altra galeta, sovint anomenada MOODLEID o alguna cosa semblant, és purament per comoditat. Simplement recorda el vostre nom d\'usuari dins del navegador. Això vol dir que quan torneu a aquest lloc el camp d\'usuari de la pàgina d\'entrada ja estarà emplenat amb el vostre nom. Refusar aquesta galeta és segur: en aquest cas simplement haureu d\'escriure el vostre nom d\'usuari cada vegada que inicieu la sessió.';
-$string['cookiesenabled_help_html'] = 'Aquest lloc web empra dues galetes:<br/><br/>\\n
-\\n
-L\'essencial és la galeta de sessió, anomenada usualment MoodleSession.
-Heu de permetre aquesta galeta al vostre navegador per tal de tenir
-continuïtat i romandre connectat mentre navegueu pel lloc web.
-Quan us desconnecteu o tanqueu el navegador, aquesta galeta es destrueix
-(tant al vostre navegador com al lloc web).<br/><br/>\\n
-\\n
-L\'altra galeta, anomenada MOODLEID o semblantment, és purament
-de conveniència. Simplement recorda el vostre nom d\'usuari al navegador.
-Això vol dir que quan retorneu a aquest lloc, s\'omplirà automàticament
-el nom d\'usuari a la pàgina d\'entrada. Podeu refusar aquesta galeta:
-simplement haureu de reescriure el nom d\'usuari cada vegada que torneu a entrar.';
+$string['cookiesenabled_help_html'] = 'Aquest lloc web empra dues galetes:<br/><br/>
+
+L\'essencial és la galeta de sessió, anomenada usualment MoodleSession. Heu de permetre aquesta galeta al vostre navegador per tal de tenir continuïtat i romandre connectat mentre navegueu pel lloc web. Quan us desconnecteu o tanqueu el navegador, aquesta galeta es destrueix (tant al vostre navegador com al servidor).<br/><br/>
+
+L\'altra galeta, anomenada MOODLEID o similar, és purament de conveniència. Tan sols recorda el vostre nom d\'usuari al navegador. Això vol dir que quan retorneu a aquest lloc, s\'omplirà automàticament el nom d\'usuari a la pàgina d\'entrada. Podeu refusar aquesta galeta: en aquest cas només haureu de reescriure el nom d\'usuari cada vegada que torneu a entrar.';
 $string['cookiesenabledonlysession'] = 'Les galetes han d\'estar habilitades en el vostre navegador';
 $string['cookiesenabledonlysession_help'] = 'Aquest lloc utilitza una sessió de galetes, anomenada MoodleSession. Heu de permetre l\'ús d\'aquestes galetes al vostre navegador per poder continuar i romandre autenticat mentre navegueu pel lloc. Quan tanqueu la sessió o tanqueu el navegador, aquestes galetes seran eliminades (del vostre navegador i del servidor).';
 $string['cookiesnotenabled'] = 'Malauradament no teniu les galetes habilitades al navegador';
@@ -446,6 +440,7 @@ $string['courserequestdetails'] = 'Detalls del curs que sol·liciteu';
 $string['courserequestfailed'] = 'Per alguna raó no s\'ha pogut desar la vostra sol·licitud';
 $string['courserequestintro'] = 'Utilitzeu aquest formulari per sol·licitar la creació d\'un curs.<br />Introduïu tota la informació que pugueu per tal que<br />els administradors entenguin bé la motivació del curs.';
 $string['courserequestreason'] = 'Motivació del curs';
+$string['courserequestroleerror'] = 'El rol dels creadors a la configuració de nous cursos no és vàlid. Consulteu les <a href="{$a}">polítiques d\'usuari</a>.';
 $string['courserequestsuccess'] = 'S\'ha desat la vostra sol·licitud de nou curs. Pròximament rebreu un correu per informar-vos si la vostra petició ha estat acceptada.';
 $string['courserequestsupport'] = 'Informació complementària que voleu fer arribar a la persona que avaluarà la sol·licitud';
 $string['courserequestwarning'] = 'L\'usuari que demana aquest curs quedarà automàticament inscrit amb el rol de {$a}.';
@@ -460,6 +455,7 @@ $string['coursesearch_help'] = 'Podeu cercar diverses paraules de cop i refinar 
 * -paraula - exclou els resultats que contenen aquesta paraula';
 $string['coursesectionsummaries'] = 'Resums de les seccions del curs';
 $string['coursesectiontitle'] = 'Curs: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
+$string['coursesectiontitleediting'] = 'Edita {$a->sectionname}: {$a->sectiontitle} | {$a->course}';
 $string['coursesettings'] = 'Paràmetres per defecte del curs';
 $string['coursesmovedout'] = 'S\'han tret els cursos de: {$a}';
 $string['coursespending'] = 'Cursos pendents d\'aprovació';
@@ -467,6 +463,7 @@ $string['coursestart'] = 'Inici del curs';
 $string['coursesummary'] = 'Resum del curs';
 $string['coursesummary_help'] = 'El resum del curs s\'inclou a la llista de cursos. Quan se cerca un curs, aquesta cerca no només es fa pel nom, també s\'hi inclou el text del resum del curs.';
 $string['coursetitle'] = 'Curs: {$a->course}';
+$string['coursetitleediting'] = 'Edita el curs: {$a->course}';
 $string['courseupdates'] = 'Actualitzacions del curs';
 $string['coursevisibility'] = 'Visibilitat del curs';
 $string['coursevisibility_help'] = 'Aquest paràmetre determina si el curs apareix a la llista de cursos i si els estudiants poden accedir-hi. Si es defineix com a Oculta, l\'accés estarà restringit als usuaris amb permís per veure cursos ocults (com ara els professors).';
@@ -975,7 +972,7 @@ $string['frontpagesettings'] = 'Paràmetres de la pàgina inicial del lloc';
 $string['fulllistofcourses'] = 'Tots els cursos';
 $string['fullname'] = 'Nom complet';
 $string['fullnamecourse'] = 'Nom complet del curs';
-$string['fullnamecourse_help'] = 'El nom complet del curs apareix al capdamunt de totes les pàgines del curs i també a la llista de cursos.';
+$string['fullnamecourse_help'] = 'El nom que es mostra a Els meus cursos i a la llista de cursos disponibles a la pàgina d\'inici.';
 $string['fullnamedisplay'] = '{$a->firstname} {$a->lastname}';
 $string['fullnameuser'] = 'Nom complet de l\'usuari';
 $string['fullprofile'] = 'Perfil complet';
@@ -1214,7 +1211,7 @@ $string['loginagain'] = 'Torneu a iniciar la sessió';
 $string['loginalready'] = 'Ja heu iniciat sessió';
 $string['loginas'] = 'Inicia sessió com a';
 $string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
-$string['loginguest'] = 'Inicia sessió com a visitant';
+$string['loginguest'] = 'Accediu com a visitant';
 $string['loginsite'] = 'Inicia sessió en aquest lloc';
 $string['loginsteps'] = 'Per tenir accés complet a aquest lloc, cal que us creeu abans un compte d\'usuari.';
 $string['loginstepsnone'] = '<p>Per tal de tenir accés complet als cursos us heu de crear un compte d\'usuari.</p>
@@ -1386,7 +1383,7 @@ $string['movecontent'] = 'Mou  {$a}';
 $string['movecontentafter'] = 'Després de: «{$a}»';
 $string['movecontentstoanothercategory'] = 'Mou els continguts a una altra categoria';
 $string['movecontenttothetop'] = 'Cap a la part superior de la llista';
-$string['movecoursemodule'] = 'Mou el recurs';
+$string['movecoursemodule'] = 'Mou l\'activitat';
 $string['movecoursesection'] = 'Mou la secció';
 $string['movecourseto'] = 'Mou curs a:';
 $string['movedown'] = 'avall';
@@ -1644,10 +1641,10 @@ $string['phone'] = 'Telèfon';
 $string['phone1'] = 'Telèfon';
 $string['phone2'] = 'Telèfon mòbil';
 $string['phpinfo'] = 'informació PHP';
-$string['picture'] = 'Foto';
+$string['picture'] = 'Fotografia';
 $string['pictureof'] = 'Imatge {$a}';
 $string['pictureofuser'] = 'Imatge de l\'usuari';
-$string['placeholdertypeorselect'] = 'Escriviu o seleccioneu...';
+$string['placeholdertypeorselect'] = 'Escriu o selecciona...';
 $string['pleaseclose'] = 'Tanqueu aquesta finestra.';
 $string['pleasesearchmore'] = 'Cerqueu més encara';
 $string['pleaseusesearch'] = 'Utilitzeu la cerca';
@@ -1655,7 +1652,7 @@ $string['plugin'] = 'Connector';
 $string['pluginarea'] = 'Àrea';
 $string['plugincheck'] = 'Comprovació de connectors';
 $string['plugindeletefiles'] = 'Totes les dades associades amb el connector «{$a->name}» s\'han esborrat de la base de dades. Per prevenir la reinstal·lació del connector, és recomanable que suprimiu el directori següent del servidor: {$a->directory}';
-$string['pluginitemid'] = 'ID d\'item';
+$string['pluginitemid'] = 'ID de l\'element';
 $string['pluginsetup'] = 'S\'estan configurant les taules de connectors';
 $string['policyaccept'] = 'Entès i conforme';
 $string['policyagree'] = 'Heu d\'acceptar la normativa abans d\'entrar en aquest lloc. Hi esteu d\'acord?';

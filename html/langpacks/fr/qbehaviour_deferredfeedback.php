@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Feedback a posteriori';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Feedback a posteriori n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Feedback a posteriori n’enregistre aucune donnée personnelle.';

@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Menu déroulant';
 $string['privacy:metadata:profilefield_menu:data'] = 'Données du champ de profil utilisateur Menu déroulant';
 $string['privacy:metadata:profilefield_menu:dataformat'] = 'Le format des données du champ de profil utilisateur Menu déroulant';
-$string['privacy:metadata:profilefield_menu:fieldid'] = 'L\'identifiant du champ de profil';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'L’identifiant du champ de profil';
 $string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Informations de profil additionnelles';
-$string['privacy:metadata:profilefield_menu:userid'] = 'L\'identifiant de l\'utilisateur dont les données sont enregistrées par le champ de profil utilisateur Menu déroulant';
+$string['privacy:metadata:profilefield_menu:userid'] = 'L’identifiant de l’utilisateur dont les données sont enregistrées par le champ de profil utilisateur Menu déroulant';

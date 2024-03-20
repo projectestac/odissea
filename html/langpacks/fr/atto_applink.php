@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addusername'] = 'Ajouter nom d\'utilisateur';
+$string['addusername'] = 'Ajouter nom d’utilisateur';
 $string['browserepositories'] = 'Parcourir les dépôts…';
 $string['createlink'] = 'Créer un lien';
 $string['enterurl'] = 'Entrer une URL';
-$string['openinapp'] = 'Ouvrir dans l\'app';
+$string['openinapp'] = 'Ouvrir dans l’app';
 $string['openinnewwindow'] = 'Ouvrir dans une nouvelle fenêtre';
 $string['pluginname'] = 'Lien Moodle App';
-$string['privacy:metadata'] = 'Le plugin atto_applink n\'enregistre aucune donnée personnelle.';
-$string['urlscheme'] = 'Schéma d\'URL';
-$string['urlscheme_help'] = 'Si vous voulez appliquer un schéma d\'URL spécifique à cette URL, indiquez-le ici. Si vous le laissez vide, le schéma d\'URL par défaut sera appliqué.';
-$string['username'] = 'Nom d\'utilisateur';
-$string['username_help'] = 'Si vous souhaitez que l\'application soit ouverte avec un utilisateur spécifique, spécifiez le nom d\'utilisateur ici. Si « Ajouter un nom d\'utilisateur » est activé et que ce champ est vide, il utilisera le nom d\'utilisateur de l\'utilisateur qui visualise le lien.';
+$string['privacy:metadata'] = 'Le plugin atto_applink n’enregistre aucune donnée personnelle.';
+$string['urlscheme'] = 'Schéma d’URL';
+$string['urlscheme_help'] = 'Si vous voulez appliquer un schéma d’URL spécifique à cette URL, indiquez-le ici. Si vous le laissez vide, le schéma d’URL par défaut sera appliqué.';
+$string['username'] = 'Nom d’utilisateur';
+$string['username_help'] = 'Si vous souhaitez que l’application soit ouverte avec un utilisateur spécifique, spécifiez le nom d’utilisateur ici. Si « Ajouter un nom d’utilisateur » est activé et que ce champ est vide, il utilisera le nom d’utilisateur de l’utilisateur qui visualise le lien.';

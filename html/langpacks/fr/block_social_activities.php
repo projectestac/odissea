@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activités sociales';
-$string['privacy:metadata'] = 'Le bloc Activités sociales affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Activités sociales affiche seulement des données enregistrées à d’autres endroits.';
 $string['social_activities:addinstance'] = 'Ajouter un bloc activités sociales';

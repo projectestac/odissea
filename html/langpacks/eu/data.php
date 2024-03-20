@@ -425,6 +425,7 @@ $string['savetemplate'] = 'Gorde txantiloia';
 $string['search'] = 'Bilatu';
 $string['search:activity'] = 'Datu-basea - jardueraren informazioa';
 $string['search:entry'] = 'Datu-basea - sarrerak';
+$string['searchresults'] = '"{$a}" duten sarrerak';
 $string['selectedrequired'] = 'Aukeratutako guztia beharrezko da';
 $string['selectexportoptions'] = 'Hautatu esportatze-aukerak';
 $string['selectfields'] = 'Aukeratu eremuak';

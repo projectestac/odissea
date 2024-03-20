@@ -155,4 +155,4 @@ $string['trainmodels'] = 'تدريب النماذج';
 $string['versionnotsame'] = 'الملف المستورد كان من إصدار مختلف ({$a->importedversion}) عن الإصدار الحالي ({$a->version})';
 $string['viewlog'] = 'سجل التقييم';
 $string['weeksenddateautomaticallyset'] = 'تاريخ الانتهاء المحدد تلقائياً بناءً على تاريخ البدء وعدد المقاطع';
-$string['weeksenddatedefault'] = 'تاريخ الانتهاء المحسوب تلقائياً من تاريخ بدء المساق.';
+$string['weeksenddatedefault'] = 'تاريخ الانتهاء المحسوب تلقائياً من تاريخ بدء المقرر.';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'Importer des notes à partir d\'un fichier CSV';
+$string['csv:view'] = 'Importer des notes à partir d’un fichier CSV';
 $string['pluginname'] = 'Fichier CSV';
-$string['privacy:metadata'] = 'Le plugin d\'importation de notes Fichier CSV n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin d’importation de notes Fichier CSV n’enregistre aucune donnée personnelle.';

@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Nécessite que les étudiants utilisent une langue spécifique.';
-$string['getdescription'] = 'La langue de l\'étudiant est {$a}';
-$string['getdescriptionnot'] = 'La langue de l\'étudiant n\'est pas {$a}';
+$string['getdescription'] = 'La langue de l’étudiant est {$a}';
+$string['getdescriptionnot'] = 'La langue de l’étudiant n’est pas {$a}';
 $string['missing'] = 'Vous devez sélectionner une langue.';
 $string['pluginname'] = 'Restriction par langue';
-$string['privacy:metadata'] = 'Le plugin availability_language n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin availability_language n’enregistre aucune donnée personnelle.';
 $string['title'] = 'Langue';

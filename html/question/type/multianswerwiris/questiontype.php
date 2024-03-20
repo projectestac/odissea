@@ -165,6 +165,7 @@ class qtype_multianswerwiris extends qtype_wq {
     }
 
     public function initialise_question_instance(question_definition $question, $questiondata) {
+        global $CFG;
         parent::initialise_question_instance($question, $questiondata);
 
         $question->subquestions = $question->base->subquestions;
@@ -177,10 +178,15 @@ class qtype_multianswerwiris extends qtype_wq {
         // Change wiris subquestions by moodle standard implementation in base object.
         foreach ($question->base->subquestions as $key => $subquestion) {
             if (isset($subquestion->base)) {
-                // Put maxmark to base. It was set up by multianswer
+                // Put defaultmark to base. It was set up by multianswer
                 // get_question_options because subquestions don't have entry
                 // to quiz_question_instance table.
-                $subquestion->base->maxmark = &$subquestion->maxmark;
+
+                if ($CFG->version >= 2023042402 /* v4.2.2 */) {
+                    $subquestion->base->defaultmark = &$subquestion->defaultmark;
+                } else {
+                    $subquestion->base->maxmark = &$subquestion->maxmark;
+                }
                 $question->base->subquestions[$key] = $subquestion->base;
             }
         }

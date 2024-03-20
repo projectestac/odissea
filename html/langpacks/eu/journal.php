@@ -93,6 +93,7 @@ $string['privacy:metadata:journal_entries'] = 'Egunkariko sarreraren erregistro 
 $string['privacy:metadata:journal_entries:entrycomment'] = 'Erabiltzaileak egunkarian jasotako iruzkina';
 $string['privacy:metadata:journal_entries:modified'] = 'Egunkariko sarreren hasierako denbora';
 $string['privacy:metadata:journal_entries:rating'] = 'Erabiltzaileak egunkarian jasotako sailkapena';
+$string['privacy:metadata:journal_entries:teacher'] = 'Irakasleak erabiltzaileari egunkarian feedbacka eman dio';
 $string['privacy:metadata:journal_entries:text'] = 'Erabiltzaileak idatzitako testua';
 $string['privacy:metadata:journal_entries:userid'] = 'Erabiltzailearen IDa';
 $string['rate'] = 'Kalifikazioa';

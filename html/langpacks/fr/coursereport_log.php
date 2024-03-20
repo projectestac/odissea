@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['log:viewlive'] = 'Consulter les historiques en direct';
 $string['loglive'] = 'Historiques en direct';
 $string['pluginname'] = 'Historiques';
-$string['pluginpagetype'] = 'Rapport d\'historiques de cours';
+$string['pluginpagetype'] = 'Rapport d’historiques de cours';

@@ -425,6 +425,7 @@ $string['savetemplate'] = 'Salva il modello';
 $string['search'] = 'Cerca';
 $string['search:activity'] = 'Database - Informazioni sull\'attività';
 $string['search:entry'] = 'Database - record';
+$string['searchresults'] = 'Record contenenti "{$a}"';
 $string['selectedrequired'] = 'Necessari tutti i selezionati';
 $string['selectexportoptions'] = 'Seleziona opzioni di esportazione';
 $string['selectfields'] = 'Seleziona campi';

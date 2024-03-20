@@ -38,4 +38,4 @@ $string['instructions'] = 'Le contenu H5P peut être inséré <strong>soit</stro
 $string['invalidh5purl'] = 'URL non valide';
 $string['noh5pcontent'] = 'Pas de contenu H5P ajouté';
 $string['pluginname'] = 'Insérer H5P';
-$string['privacy:metadata'] = 'Le plugin atto_h5p n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_h5p n’enregistre aucune donnée personnelle.';

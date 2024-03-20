@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'YouTube';
 $string['pluginname_help'] = 'Le site de partage de vidéos YouTube. Les liens de vidéos et de listes de vidéos (playlists) sont supportés.';
-$string['privacy:metadata'] = 'Le plugin média YouTube n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin média YouTube n’enregistre aucune donnée personnelle.';
 $string['supportsplaylist'] = 'Listes de lecture YouTube';
 $string['supportsvideo'] = 'Vidéos YouTube';

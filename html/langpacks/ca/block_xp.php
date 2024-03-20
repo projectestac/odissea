@@ -62,6 +62,7 @@ $string['navsettings'] = 'Configuració';
 $string['participant'] = 'Participant';
 $string['participatetolevelup'] = 'Participa en el curs per guanyar punts d\'experiència (xp) i pujar de nivell!';
 $string['pluginname'] = 'Puja de nivell!';
+$string['progress'] = 'Progrés';
 $string['recentrewards'] = 'Recompenses recents';
 $string['rule'] = 'Regla';
 $string['ruleset:all'] = 'TOTES les condicions són certes';

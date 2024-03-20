@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['defaultname'] = 'Question importée {$a}';
-$string['errormanifest'] = 'Erreur lors de l\'analyse du document manifeste IMS';
+$string['errormanifest'] = 'Erreur lors de l’analyse du document manifeste IMS';
 $string['filenothandled'] = 'Cette archive contient une référence vers un fichier {$a} qui ne peut pas être traitée par importation';
-$string['imagenotfound'] = 'Le fichier image de chemin {$a} n\'a pas été trouvé dans le fichier d\'importation.';
+$string['imagenotfound'] = 'Le fichier image de chemin {$a} n’a pas été trouvé dans le fichier d’importation.';
 $string['importedcategory'] = 'Catégorie importée {$a}';
 $string['importnotext'] = 'Texte de la question manquant dans le fichier XML';
-$string['notenoughtsubans'] = 'Impossible d\'importer la question d\'appariement « {$a} ». Une telle question doit comporter au moins deux questions et trois réponses.';
+$string['notenoughtsubans'] = 'Impossible d’importer la question d’appariement « {$a} ». Une telle question doit comporter au moins deux questions et trois réponses.';
 $string['pluginname'] = 'Blackboard';
-$string['pluginname_help'] = 'Le format Blackboard permet d\'importer des questions enregistrées dans tous les formats d\'exportation de Blackboard, en fichier DAT ou ZIP. Pour les fichiers ZIP, l\'importation des images est supporté.';
-$string['privacy:metadata'] = 'Le plugin de format de question Blackboard n\'enregistre aucune donnée personnelle.';
+$string['pluginname_help'] = 'Le format Blackboard permet d’importer des questions enregistrées dans tous les formats d’exportation de Blackboard, en fichier DAT ou ZIP. Pour les fichiers ZIP, l’importation des images est supporté.';
+$string['privacy:metadata'] = 'Le plugin de format de question Blackboard n’enregistre aucune donnée personnelle.';
 $string['unhandledpresblock'] = 'Bloc de présentation non supporté';

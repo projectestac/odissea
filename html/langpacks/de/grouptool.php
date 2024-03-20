@@ -142,7 +142,11 @@ $string['completionregister'] = 'Teilnehmer/in muss in Gruppen angemeldet sein:'
 $string['condition_prevent_access'] = 'Die derzeitigen Umstände erlauben Ihnen keinen Zugriff auf die Gruppenverwaltung!';
 $string['confirm_delete'] = 'Sie sind dabei, diese Gruppe komplett zu löschen. Dies wird alle bisherigen Mitglieder unwiederbringlich aus der Gruppe entfernen. Sind Sie SICHER, dass Sie fortfahren möchten?';
 $string['confirm_delete_title'] = 'Wollen Sie dieses Element wirklich löschen?';
-$string['copied_grade_feedback'] = 'Gruppenbenotung<br /> Abgabe von: <strong>{$a->student}</strong><br /> Note von: <strong>{$a->teacher}</strong><br /> Original Datum/Zeit: <strong>{$a->date}</strong><br /> Feedback: <strong>{$a->feedback}</strong>';
+$string['copied_grade_feedback'] = 'Gruppenbewertung<br />
++Abgabe von: <strong>{$a->student}</strong><br />
++Note von: <strong>{$a->teacher}</strong><br />
++Original Datum/Zeit: <strong>{$a->date}</strong><br />
++Kommentar: <strong>{$a->feedback}</strong>';
 $string['copy'] = 'Übertragen';
 $string['copy_chosen'] = 'Übertrage Gewählte';
 $string['copy_grade_confirm'] = 'Sind Sie sich wirklich SICHER?';
@@ -151,7 +155,7 @@ $string['copy_grades_confirm'] = 'Sind Sie sich wirklich SICHER?';
 $string['copy_grades_errors'] = 'Zumindest 1 Fehler trat während des Übertragens der Bewertungen auf:';
 $string['copy_grades_overwrite_confirm'] = 'Sind Sie sich wirklich SICHER? Existierende Bewertungen werden überschrieben!';
 $string['copy_grades_success'] = 'Die folgenden Bewertungen wurden erfolgreich aktualisiert:';
-$string['copy_refgrades_feedback'] = 'Übertrage Referenzbewertungen und Feedback der gewählten Gruppen auf andere Gruppenmitglieder';
+$string['copy_refgrades_feedback'] = 'Referenzbewertungen und Kommentar der gewählten Gruppen auf andere Gruppenmitglieder übertragen';
 $string['copygrade'] = 'Bewertung kopieren';
 $string['could_not_add'] = 'Konnte <strong>{$a->username}</strong> nicht zu Gruppe <strong>{$a->groupname}</strong> hinzufügen!';
 $string['couldnt_move_down'] = 'Gruppe konnte nicht nach unten verschoben werden!';
@@ -422,7 +426,7 @@ $string['noregistrationdue'] = 'unbeschränkt';
 $string['nosmallgroups'] = 'Verhindere kleine Gruppen';
 $string['nosmallgroups_help'] = 'Wenn aktiviert, wird sichergestellt, dass jede Gruppe zumindest zu 70% der angegebenen Größe gefüllt ist! Die Teilnehmer/innen der unter Umständen vorhandenen letzten kleineren Gruppe, werden auf die übrigen Gruppen aufgeteilt. Es kann daher vorkommen, dass diese Gruppen mehr Mitglieder als spezifiziert haben!';
 $string['not_allowed_to_show_members'] = 'Sie haben keine Berechtigung diese Information anzuzeigen!';
-$string['not_graded_by_me'] = 'Wurde von jemand anders benotet';
+$string['not_graded_by_me'] = 'Von jemand anders bewertet';
 $string['not_in_queue_or_registered'] = '<strong>{$a->username}</strong> ist weder in der Gruppe <strong>{$a->groupname}</strong> angemeldet noch in deren Warteliste gereiht.';
 $string['not_permitted'] = 'Nicht erlaubt';
 $string['not_registered'] = 'Sie sind noch nirgends angemeldet!';

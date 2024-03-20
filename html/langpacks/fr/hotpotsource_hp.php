@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fichiers source Hot Potatoes';
-$string['privacy:metadata'] = 'Le plugin Fichiers source Hot Potatoes n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Fichiers source Hot Potatoes n’enregistre aucune donnée personnelle.';

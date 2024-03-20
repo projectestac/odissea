@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowofflineattempts'] = 'Permitir que o teste seja respondido offline através da Aplicação móvel';
 $string['allowofflineattempts_help'] = 'Se ativar esta opção, um utilizador da Aplicação móvel pode descarregar o teste e realizar uma tentativa offline.
 
-Nota: Não é possível responder offline a um teste caso este tenha sido configurado com um tempo limite, tenha definido endereços de rede autorizados ou utilize outro modo de comportamento das perguntas que não seja o feedback diferido (com ou sem ABGC).';
+Nota: Não é possível responder offline a um teste se: este tenha sido configurado com um tempo limite, tenha definido endereços de rede autorizados, utilize outro modo de comportamento das perguntas que não seja o feedback diferido (com ou sem ABGC) ou use modo de navegação sequencial.';
 $string['confirmdatasaved'] = 'Confirmo que não tenho nenhum trabalho por guardar num dispositivo móvel.';
 $string['mobileapp'] = 'Aplicação móvel';
-$string['offlineattemptserror'] = 'Não é possível responder offline a um teste caso este tenha sido configurado com um limite de tempo, tenha definido endereços de rede autorizados ou utilize outro modo de comportamento de perguntas que não seja o feedback diferido (com ou sem ABGC).';
+$string['offlineattemptserror'] = 'Não é possível responder offline a um teste se: este tenha sido configurado com um tempo limite, tenha definido endereços de rede autorizados, utilize outro modo de comportamento das perguntas que não seja o feedback diferido (com ou sem ABGC) ou use modo de navegação sequencial.';
 $string['offlinedatamessage'] = 'Já esteve nesta tentativa através de um dispositivo móvel. Os dados foram guardados pela última vez neste site há {$a} atrás.';
 $string['pleaseconfirm'] = 'Por favor, verifique e confirme que não tem qualquer trabalho por guardar.';
 $string['pluginname'] = 'Regra de acesso baseada em tentativas offline';

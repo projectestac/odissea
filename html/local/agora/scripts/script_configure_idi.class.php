@@ -57,7 +57,7 @@ class script_configure_idi extends agora_script_base {
         $data->baseurl = '';
         $data->image = $params['image'];
         $data->showonloginpage = 2;
-        $data->loginpagename = $params['loginpagename'];
+        $data->loginpagename = !empty($params['loginpagename']) ? $params['loginpagename'] : 'IDI';
         $data->loginscopes = $params['loginscopes'];
         $data->loginscopesoffline = $params['loginscopesoffline'];
         $data->loginparams = '';

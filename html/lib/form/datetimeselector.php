@@ -50,7 +50,7 @@ class MoodleQuickForm_date_time_selector extends MoodleQuickForm_group {
      * timezone => int|float|string (optional) timezone modifier used for edge case only.
      *      If not specified, then date is caclulated based on current user timezone.
      *      Note: dst will be calculated for string timezones only
-     *      {@link http://docs.moodle.org/dev/Time_API#Timezone}
+     *      {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
      * step => step to increment minutes by
      * optional => if true, show a checkbox beside the date to turn it on (or off)
      * @var array
@@ -134,26 +134,27 @@ class MoodleQuickForm_date_time_selector extends MoodleQuickForm_group {
         // If optional we add a checkbox which the user can use to turn if on.
         if ($this->_options['optional']) {
             $this->_elements[] = $this->createFormElement('checkbox', 'enabled', null,
-                get_string('enable'), $this->getAttributes(), true);
+                get_string('enable'), $this->getAttributesForFormElement(), true);
         }
         $dateformat = $calendartype->get_date_order($this->_options['startyear'], $this->_options['stopyear']);
         if (right_to_left()) {   // Display time to the right of date, in RTL mode.
             $this->_elements[] = $this->createFormElement('select', 'minute', get_string('minute', 'form'),
-                $minutes, $this->getAttributes(), true);
+                $minutes, $this->getAttributesForFormElement(), true);
             $this->_elements[] = $this->createFormElement('select', 'hour', get_string('hour', 'form'),
-                $hours, $this->getAttributes(), true);
+                $hours, $this->getAttributesForFormElement(), true);
             // Reverse date element (Should be: Day, Month, Year), in RTL mode.
             $dateformat = array_reverse($dateformat);
         }
         foreach ($dateformat as $key => $date) {
             // E_STRICT creating elements without forms is nasty because it internally uses $this
-            $this->_elements[] = $this->createFormElement('select', $key, get_string($key, 'form'), $date, $this->getAttributes(), true);
+            $this->_elements[] = $this->createFormElement('select', $key, get_string($key, 'form'), $date,
+                $this->getAttributesForFormElement(), true);
         }
         if (!right_to_left()) {   // Display time to the left of date, in LTR mode.
             $this->_elements[] = $this->createFormElement('select', 'hour', get_string('hour', 'form'), $hours,
-                $this->getAttributes(), true);
+                $this->getAttributesForFormElement(), true);
             $this->_elements[] = $this->createFormElement('select', 'minute', get_string('minute', 'form'), $minutes,
-                $this->getAttributes(), true);
+                $this->getAttributesForFormElement(), true);
         }
         // The YUI2 calendar only supports the gregorian calendar type so only display the calendar image if this is being used.
         if ($calendartype->get_name() === 'gregorian') {

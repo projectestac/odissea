@@ -1,0 +1,1071 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'quiz', language 'ro', version '4.1'.
+ *
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['accessnoticesheader'] = 'Puteți vizualiza acest test, dar dacă ar fi o încercare reală, ați fi blocat deoarece:';
+$string['action'] = 'Acțiune';
+$string['activityoverview'] = 'Aveți teste care expiră';
+$string['adaptive'] = 'Mod adaptiv';
+$string['adaptive_help'] = 'Dacă este activată această opțiune, mai multe răspunsuri la o întrebare sunt permise în cadrul aceleiași încercări la test. Deci, de exemplu, dacă un răspuns este marcat ca fiind incorect, studentul va avea voie să încerce din nou imediat. Cu toate acestea, în funcție de setarea „Aplicați penalități”, o penalizare va fi de obicei aplicată pentru fiecare încercare greșită.';
+$string['add'] = 'Adăugați întrebări';
+$string['addaquestion'] = 'O nouă întrebare';
+$string['addarandomquestion'] = 'Din banca de întrebări (aleatorie)';
+$string['addarandomquestion_help'] = 'Când se adaugă o întrebare aleatorie, rezultă o întrebare aleasă la întâmplare din categoria care este inserată în test. Aceasta înseamnă că diferiți cursanți pot primi o selecție diferită de întrebări, iar atunci când un test permite multiple încercări, atunci fiecare încercare este posibil să conțină o nouă selecție de întrebări.';
+$string['addarandomselectedquestion'] = 'Adăugați o întrebare selectată aleatoriu ...';
+$string['addasection'] = 'Un nou antet al secțiunii';
+$string['adddescriptionlabel'] = 'Adaugă un element al descrierii';
+$string['addingquestion'] = 'Adăugarea unei întrebări';
+$string['addingquestions'] = '<p>Această parte a paginii este unde se administrează banca de întrebări. Întrebările sunt organizate în categorii pentru a putea fi mai ușor folosite în teste din cursul tău sau alte cursuri dacă alegi să le exporți. </p>
+<p>După ce selectezi sau creezi o categorie de întrebări vei putea crea sau edita întrebări. Poți selecta oricare din aceste întrebări să le incluzi în teste.</p>';
+$string['addmoreoverallfeedbacks'] = 'Adăugați {no} câmpuri de feedback';
+$string['addnewgroupoverride'] = 'Adaugă suprascrierea grupului';
+$string['addnewpagesafterselected'] = 'Adaugă pagini noi după întrebările selectate';
+$string['addnewquestionsqbank'] = 'Adaugă întrebări în categoria {$a->catname}: {$a->link}';
+$string['addnewuseroverride'] = 'Adăugare suprascriere reguli pentru utilizator';
+$string['addpagebreak'] = 'Adaugă pagină nouă';
+$string['addpagehere'] = 'Adăugați o pagină aici';
+$string['addquestion'] = 'Adăugați o întrebare';
+$string['addquestionfrombankatend'] = 'La final adaugă din banca de întrebări';
+$string['addquestionfrombanktopage'] = 'Adaugă din banca de întrebări pe pagina {$a}';
+$string['addquestions'] = 'Adăugați întrebări';
+$string['addquestionstoquiz'] = 'Adăugați întrebări la testul curent';
+$string['addrandom'] = 'Adăugați {$a} întrebări aleatorii';
+$string['addrandom1'] = '<< Adăugați';
+$string['addrandom2'] = 'întrebări aleatorii';
+$string['addrandomfromcategory'] = 'Adaugă întrebări aleatoare din categoria:';
+$string['addrandomquestion'] = 'Adaugă întrebări aleatorii';
+$string['addrandomquestionatend'] = 'La final adaugă întrebare';
+$string['addrandomquestiontopage'] = 'Adaugă o întrebare aleatoare pe pagina {$a}';
+$string['addrandomquestiontoquiz'] = 'Adaugă o întrebare aleatoare la test {$a}';
+$string['addselectedquestionstoquiz'] = 'Adăugați întrebările selectate la test';
+$string['addselectedtoquiz'] = 'Adăugați datele selectate la test';
+$string['addtoquiz'] = 'Adăugați la test';
+$string['affectedstudents'] = '{$a} afectate';
+$string['aftereachquestion'] = 'După ce se adaugă fiecare întrebare';
+$string['afternquestions'] = 'După adăugarea a {$a} întrebări';
+$string['age'] = 'vârstă';
+$string['allattempts'] = 'Toate încercările';
+$string['allinone'] = 'Nelimitat';
+$string['allowreview'] = 'Permiteți examinarea';
+$string['alreadysubmitted'] = 'Este probabil să fi trimis deja această încercare';
+$string['alternativeunits'] = 'Unități alternative';
+$string['alwaysavailable'] = 'Întotdeauna disponibil';
+$string['alwayslatest'] = 'Întotdeauna cel mai recent';
+$string['analysisoptions'] = 'Opțiuni de analiză';
+$string['analysistitle'] = 'Tabel analiză itemi';
+$string['answer'] = 'Răspuns';
+$string['answered'] = 'Răspuns';
+$string['answerhowmany'] = 'Tip de opțiuni de răspuns.';
+$string['answers'] = 'Răspunsuri';
+$string['answersingleno'] = 'Cu mai multe opțiuni corecte';
+$string['answersingleyes'] = 'Un singur răspuns';
+$string['answertoolong'] = 'Răspunsul este prea lung după linia {$a} (maximum 255 de caractere)';
+$string['anytags'] = 'Orice etichete';
+$string['aon'] = 'Format AON';
+$string['areyousureremoveselected'] = 'Sigur doriți să eliminați toate întrebările selectate?';
+$string['asshownoneditscreen'] = 'Așa cum este afișat pe ecranul de editare';
+$string['attempt'] = 'Încercare {$a}';
+$string['attemptalreadyclosed'] = 'Această încercare a fost deja finalizată.';
+$string['attemptclosed'] = 'Încercarea nu s-a încheiat încă';
+$string['attemptduration'] = 'Timp de parcurgere test';
+$string['attemptedon'] = 'Încercat';
+$string['attempterror'] = 'Nu aveți permisiunea să participați la acest test deoarece: {$a}';
+$string['attempterrorcontentchange'] = 'Această previzualizare a testului nu mai există. (Când este modificat un test, toate previzualizările curente sunt șterse automat.)';
+$string['attempterrorcontentchangeforuser'] = 'Încercarea la test nu mai există.';
+$string['attempterrorinvalid'] = 'ID-ul încercării la test nu este valid';
+$string['attemptfirst'] = 'Prima încercare';
+$string['attemptgradeddelay'] = 'Întârzierea notificării despre evaluarea încercării';
+$string['attemptgradeddelay_desc'] = 'Se aplică o întârziere înainte de trimiterea notificărilor de notare a parcurgerii testului pentru a acorda timp profesorului să editeze nota.';
+$string['attemptincomplete'] = 'Această încercare (de {$a}) nu este încă finalizată.';
+$string['attemptlast'] = 'Ultima incercare';
+$string['attemptnumber'] = 'Încercare';
+$string['attemptquiz'] = 'Începeți testul';
+$string['attemptquiznow'] = 'Începeți testul acum';
+$string['attemptreviewtitle'] = '{$a}: Revizuirea încercării';
+$string['attemptreviewtitlepaged'] = '{$a->name}: Revizuirea încercării (page {$a->currentpage} din {$a->totalpages})';
+$string['attempts'] = 'Încercări';
+$string['attempts_help'] = 'Numărul total de încercări permise (nu numărul de extra încercări).';
+$string['attemptsallowed'] = 'Încercari permise';
+$string['attemptsdeleted'] = 'Încercările de test au fost șterse';
+$string['attemptselection'] = 'Selectați ce încercări de analiză pe utilizator:';
+$string['attemptsexist'] = 'Nu mai puteți adăuga sau elimina întrebări.';
+$string['attemptsnum'] = 'Încercări: {$a}';
+$string['attemptsnumthisgroup'] = 'Încercări: {$a->total} ({$a->group} din acest grup)';
+$string['attemptsnumyourgroups'] = 'Încercări: {$a->total} ({$a->group} din grupurile dvs.)';
+$string['attemptsonly'] = 'Arătați numai studenților cu încercări';
+$string['attemptstate'] = 'Status';
+$string['attemptstillinprogress'] = 'Încercare încă în desfășurare';
+$string['attemptsummarytitle'] = '{$a}: Rezumatul încercării';
+$string['attemptsunlimited'] = 'Încercări nelimitate';
+$string['attempttitle'] = '{$a}';
+$string['attempttitlepaged'] = '{$a->name} (page {$a->currentpage} din {$a->totalpages})';
+$string['autosaveperiod'] = 'Amânarea auto-salvării';
+$string['autosaveperiod_desc'] = 'Răspunsurile pot fi salvate automat în timpul încercărilor din test. Răspunsurile sunt salvate ori de câte ori unul din ele este schimbat iar apoi după această întârziere. Există un compromis: o întârziere mai mică crește încărcarea pe server, dar reduce șansa ca elevii să își piardă activitatea. Dacă veți reduce această întârziere mult mai scurtă, ar trebui să modificați treptat valoarea și să monitorizați încărcarea pe server. Dacă încărcarea pe sever devine prea mare, setați întîrzierea din nou mai mare. Setarea întârzierii la 0 dezactivează salvarea automată.';
+$string['back'] = 'Înapoi la previzualizarea întrebării';
+$string['backtocourse'] = 'Înapoi la curs';
+$string['backtoquestionlist'] = 'Înapoi la lista de întrebări';
+$string['backtoquiz'] = 'Înapoi la editarea testului';
+$string['basicideasofquiz'] = 'Ideile de bază ale creării unui test';
+$string['bestgrade'] = 'Cea mai bună notă';
+$string['bothattempts'] = 'Afișează cursanții cu și fără încercări';
+$string['browsersecurity'] = 'Securitatea browser-ului';
+$string['browsersecurity_help'] = 'Dacă este selectat „Pop-up pe ecran complet cu o oarecare securitate JavaScript”,
+
+* Chestionarul va începe numai dacă cursantul are un browser web cu JavaScript activat
+* Testul apare într-o fereastră pop-up cu ecran complet care acoperă toate celelalte ferestre și nu are controlul de navigării
+* Cursanții sunt împiedicați, în măsura posibilităților, să utilizeze facilități precum copierea și lipirea';
+$string['cachedef_overrides'] = 'Suprascrierea informațiilor despre utilizator și grup';
+$string['calculated'] = 'Calculat';
+$string['calculatedquestion'] = 'Întrebarea de tip Calculat nu este permisă la linia {$a}. Întrebarea va fi ignorată';
+$string['cannotcreatepath'] = 'Calea nu poate fi creată ({$a})';
+$string['cannoteditafterattempts'] = 'Nu puteți adăuga sau elimina întrebări, deoarece acest test a avut încercări. ({$a})';
+$string['cannotfindprevattempt'] = 'Nu se poate găsi încercarea anterioară pe care să vă bazați';
+$string['cannotfindquestionregard'] = 'Nu s-au putut obține întrebările pentru renotare!';
+$string['cannotinsert'] = 'Nu se poate insera întrebarea';
+$string['cannotinsertrandomquestion'] = 'Nu s-a putut insera întrebarea nouă aleatorie!';
+$string['cannotloadquestion'] = 'Nu se pot încărca opțiunile întrebării';
+$string['cannotloadtypeinfo'] = 'Nu s-a putut încărca informațiile pentru acest tip de întrebare specifică';
+$string['cannotopen'] = 'Nu se poate deschide fişierul de export ({$a})';
+$string['cannotremoveallsectionslots'] = 'Ați selectat toate întrebările din secțiunea de început \'{$a}\'. Nu este permisă ștergerea întrebărilor din secțiunea de început.';
+$string['cannotremoveslots'] = 'Nu se poate șterge întrebarea';
+$string['cannotrestore'] = 'Nu se pot restaura sesiunile de întrebări';
+$string['cannotreviewopen'] = 'Nu puteți revizui această încercere, este încă deschisă.';
+$string['cannotsavelayout'] = 'Nu se poate salva layout-ul';
+$string['cannotsavenumberofquestion'] = 'Nu se poate salva numărul de întrebări pe pagină';
+$string['cannotsavequestion'] = 'Nu se poate salva lista de întrebări';
+$string['cannotsetgrade'] = 'Nu s-a putut seta o nouă notă maximă pentru test';
+$string['cannotsetsumgrades'] = 'Nu s-a putut configura suma notelor';
+$string['cannotstartgradesmismatch'] = 'Nu se poate începe o încercare la acest test. Testul este setat pentru a fi notat din {$a->grade}, dar niciuna dintre întrebările din test nu are o notă. Acest lucru poate fi editat pe pagina „Editare test”.';
+$string['cannotstartmissingquestion'] = 'Nu se poate începe o încercare la acest test. Definiția testului include o întrebare care nu există.';
+$string['cannotstartnoquestions'] = 'Nu se poate începe o încercare la acest test. Chestionarul nu a fost încă creat. Nu au fost adăugate întrebări.';
+$string['cannotwrite'] = 'Nu se poate scrie în fișierul de export ({$a})';
+$string['canredoquestions'] = 'Permiteți corectarea într-o încercare';
+$string['canredoquestions_desc'] = 'Dacă este activat, după terminarea încercării unei întrebări, apare un buton „Încercați o altă întrebare ca aceasta”. Acest lucru permite încercarea unei întrebări similare (selectate la întâmplare) sau aceeași întrebare din nou, fără ca întreaga încercare de testare să fie trimisă și să înceapă o altă încercare. Această opțiune este utilă pentru testele de practică.
+
+Această setare afectează numai întrebări și funcționalități (cum ar fi feedback-ul imediat sau interactiv cu mai multe încercări), unde este posibil să închei o întrebare înainte de a fi trimisă încercarea.';
+$string['canredoquestions_help'] = 'Dacă este activat, după terminarea încercării unei întrebări, apare un buton „Încercați o altă întrebare ca aceasta”. Acest lucru permite încercarea unei întrebări similare (selectate la întâmplare) sau aceeași întrebare din nou, fără ca întreaga încercare de testare să fie trimisă și să înceapă o altă încercare. Această opțiune este utilă pentru testele de practică.
+
+Această setare afectează numai întrebări și funcționalități (cum ar fi feedback-ul imediat sau interactiv cu mai multe încercări), unde este posibil să închei o întrebare înainte de a fi trimisă încercarea.';
+$string['canredoquestionsyes'] = 'Da, oferiți opțiunea unei alte întrebări';
+$string['caseno'] = 'Nu, cazul nu este important';
+$string['casesensitive'] = 'Sensibil la majuscule';
+$string['caseyes'] = 'Da, majusculele și minuscurile trebuie să corespundă';
+$string['categoryadded'] = 'A fost adăugată categoria \'{$a}\\';
+$string['categorydeleted'] = 'Categoria \'{$a}\' a fost ștearsă';
+$string['categorynoedit'] = 'Nu aveți privilegii de editare în categoria \'{$a}\'.';
+$string['categoryupdated'] = 'Categoria a fost actualizată cu succes';
+$string['close'] = 'Închideți fereastra';
+$string['closebeforeopen'] = 'Nu s-a putut actualiza testul. Ați specificat o dată de închidere înainte de data de deschidere.';
+$string['closed'] = 'Închis';
+$string['closepreview'] = 'Închideți previzualizarea';
+$string['closereview'] = 'Închideți evaluarea';
+$string['comment'] = 'Comentariu';
+$string['commentorgrade'] = 'Faceți comentarii sau suprascrieți nota';
+$string['comments'] = 'Comentarii';
+$string['completedon'] = 'Completat pe';
+$string['completionattemptsexhausted'] = 'Din toate încercările completate';
+$string['completionattemptsexhausted_help'] = 'Marcați testul ca fiind este complet atunci când studentul a epuizat numărul maxim de încercări.';
+$string['completionattemptsexhausteddesc'] = 'Încheiați dacă toate încercările disponibile sunt epuizate';
+$string['completiondetail:minattempts'] = 'Începeți încercările: {$a}';
+$string['completiondetail:passgrade'] = 'Primește o notă de trecere';
+$string['completiondetail:passorexhaust'] = 'Primește o notă de trecere sau finalizează toate încercările disponibile';
+$string['completionminattempts'] = 'Numărul minim de încercări:';
+$string['completionminattemptsdesc'] = 'Numărul minim de încercări necesare: {$a}';
+$string['completionminattemptserror'] = 'Numărul minim de încercări trebuie să fie mai mic sau minim cu numărul de încercări permise.';
+$string['completionminattemptsgroup'] = 'Sunt necesare încercări';
+$string['completionpass'] = 'Este necesară notă de trecere';
+$string['completionpass_help'] = 'Dacă este activată, se consideră completat când cursantul primește o notă de trecere (așa cum este specificat în setările testului) sau mai mare.';
+$string['completionpassdesc'] = 'Cursanții trebuie să obțină o notă de trrecere pentru a completa această activitate';
+$string['completionpassorattemptsexhausteddesc'] = 'Cursantul trebuie să obțină o notă de trecere sau să folosească toate încercările disponibile pentru a încheia această activitate.';
+$string['configadaptive'] = 'Dacă alegeți opțiunea Da, studentului i se vor permite răspunsuri multiple la o întrebare chiar și în cadrul aceleiași încercări la test.';
+$string['configattemptsallowed'] = 'Restricție în ceea ce privește numărul de încercări pe care le are un cursant la test.';
+$string['configdecimaldigits'] = 'Numărul de cifre care trebuie afișate după punctul zecimal la afișarea notelor.';
+$string['configdecimalplaces'] = 'Numărul de cifre care trebuie afișate după punctul zecimal la afișarea notelor la test.';
+$string['configdecimalplacesquestion'] = 'Numărul de cifre care ar trebui afișat după punctul zecimal când se afișează punctajul unei întrebări.';
+$string['configdelay1'] = 'Dacă setați o întârziere de timp, atunci un student trebuie să aștepte înainte de a putea da un test după prima încercare.';
+$string['configdelay1st2nd'] = 'Dacă setați o întârziere de timp aici, cursantul nu poate începe a doua încercare decât după ce a trecut acest timp de la sfârșitul primei încercări.';
+$string['configdelay2'] = 'Dacă setați o întârziere de timp aici, atunci un cursant trebuie să aștepte acel moment înainte de a putea face a treia încercare sau următoarele.';
+$string['configdelaylater'] = 'Dacă ați stabilit o întârziere de timp aici, cursantul nu poate începe a treia, a patra, ... încercare până când nu a trecut acest timp de la sfârșitul încercării anterioare.';
+$string['configeachattemptbuildsonthelast'] = 'Dacă sunt permise mai multe întrebări, atunci fiecare nouă întrebare conține rezultatele încercării precedente.';
+$string['configgrademethod'] = 'Când sunt permise mai multe încercări, care metodă ar trebui folosită pentru a calcula nota finală a cursantului la test.';
+$string['configintro'] = 'Valorile setate aici definesc valorile implicite care sunt utilizate în formularul de setări atunci când creați un test nou. Puteți configura, de asemenea, ce setări ale testului sunt considerate avansate.';
+$string['configmaximumgrade'] = 'Nota implicită din care nota la test este setată pentru scalare.';
+$string['confignavmethod'] = 'În Navigare liber[, întrebările pot primi răspuns în orice ordine folosind navigarea. În Secvențial[, la întrebări trebuie să se răspundă într-o ordine strictă.';
+$string['confignewpageevery'] = 'Când adăugați întrebări în test, paginile noi vor fi inserate automat în funcție de setarea pe care o alegeți aici.';
+$string['configoutcomesadvanced'] = 'Dacă această opțiune este activată, atunci vor fi vizibile setările Rezultatelor la nivel de test.';
+$string['configpenaltyscheme'] = 'Penalizări scăzute pentru fiecare răspuns greșit în modul adaptativ.';
+$string['configpopup'] = 'Forțați încercarea să se deschidă într-o fereastră pop-up și utilizați tricks JavaScript pentru a încerca să restricționați copierea și lipirea etc. în timpul încercărilor la test.';
+$string['configrequirepassword'] = 'Cursanții trebuie să insereze parola înainte de a a accesa testul.';
+$string['configrequiresubnet'] = 'Cursanții pot accesa testul doar de pe aceste computere.';
+$string['configreviewoptions'] = 'Aceste opțiuni controlează informațiile pe care utilizatorii le pot vedea atunci când examinează o încercare de testare sau se uită la rapoartele de testare.';
+$string['configshowblocks'] = 'Afișați block-urile în timpul încercărilor la teste.';
+$string['configshowuserpicture'] = 'Afișează fotografia utilizatorului pe ecran în timpul încercării.';
+$string['configshufflewithin'] = 'Dacă activați această opțiune, atunci componentele care alcătuiesc întrebările individuale vor fi amestecate la întâmplare de fiecare dată când un cursant începe o încercare la acest test, cu condiția ca opțiunea să fie activată și în setările întrebării.';
+$string['configtimelimit'] = 'Limita implicită de timp pentru test în minute. 0 înseamnă că nu este limită de timp.';
+$string['configtimelimitsec'] = 'Limita implicită de timp pentru test în secunde. 0 înseamnă că nu este limită de timp.';
+$string['configurerandomquestion'] = 'Configurați întrebarea';
+$string['confirmclose'] = 'După ce trimiți răspunsurile, nu le vei mai putea modifica.';
+$string['confirmremovequestion'] = 'Sunteți sigur că doriți să ștergeți această {$a} întrebare?';
+$string['confirmremovesectionheading'] = 'Sunteți sigur că doriți să ștergeți secțiunea de început \'{$a}\'?';
+$string['confirmserverdelete'] = 'Sigur doriți să eliminați serverul <b>{$a}</b> din listă?';
+$string['connectionerror'] = 'S-a pierdut conexiunea la rețea. (Auto-salvarea a eșuat).
+
+Notează orice răspunsuri inserate pe această pagină în ultimele minute, apoi încearcă să te conectezi din nou.
+
+După stabilirea conexiunii, răspunsurile dvs. ar trebui să fie salvate și acest mesaj va dispărea.';
+$string['connectionok'] = 'S-a refăcut conexiunea la rețea. Puteți continua în siguranță.';
+$string['containercategorycreated'] = 'Această categorie a fost creată, pentru a stoca toate categoriile originale mutate la nivelul site-ului urmare a cauzelor specificate mai jos.';
+$string['continueattemptquiz'] = 'Continuați-vă ultima încercare';
+$string['continuepreview'] = 'Continuați ultima previzualizare';
+$string['copyingfrom'] = 'Crearea unei copii a întrebării \'{$a}\\';
+$string['copyingquestion'] = 'Copierea unei întrebări';
+$string['correct'] = 'Corect';
+$string['correctanswer'] = 'Răspuns corect';
+$string['correctanswerformula'] = 'Formula de răspuns corect';
+$string['correctansweris'] = 'Răspuns corect: {$a}';
+$string['correctanswerlength'] = 'Valori importante';
+$string['correctanswers'] = 'Răspunsuri corecte';
+$string['correctanswershows'] = 'Răspunsul corect arată';
+$string['corrresp'] = 'Răspuns corect';
+$string['countdown'] = 'Numărătoarea inversă';
+$string['countdownfinished'] = 'Testul se închide, trebuie să trimiteți răspunsurile acum.';
+$string['countdowntenminutes'] = 'Testul se va închide în zece minute.';
+$string['coursetestmanager'] = 'Formatul cursului Test Manager';
+$string['createcategoryandaddrandomquestion'] = 'Creează categorie și adaugă întrebări aleatoare';
+$string['createfirst'] = 'Mai întâi trebuie să creați câteva întrebări cu răspuns scurt.';
+$string['createmultiple'] = 'Adăugați mai multe întrebări aleatorii la test';
+$string['createnewquestion'] = 'Creați o întrebare nouă';
+$string['createquestionandadd'] = 'Creați o întrebare nouă și adăugați-o la test.';
+$string['custom'] = 'Format personalizat';
+$string['dataitemneed'] = 'Trebuie să adăugați cel puțin un set de articole de date, pentru a obține o întrebare validă';
+$string['datasetdefinitions'] = 'Definiții de seturi de date reutilizabile pentru categoria {$a}';
+$string['datasetnumber'] = 'Număr';
+$string['daysavailable'] = 'Zile disponibile';
+$string['decimaldigits'] = 'Cifre zecimale în note';
+$string['decimalplaces'] = 'Puncte zecimale în note';
+$string['decimalplaces_help'] = 'Această setare specifică numărul de cifre afișate după punctul zecimal la afișarea notelor. Aceasta afectează numai afișarea notelor, nu și notele stocate în baza de date și nici calculele interne, care sunt efectuate cu deplină exactitate.';
+$string['decimalplacesquestion'] = 'Punctele zecimale în punctajele la întrebărilor';
+$string['decimalplacesquestion_help'] = 'Numărul de cifre afișat după punctul zecimal când se afișează notele la o întrebare.';
+$string['decimalpoints'] = 'Puncte zecimale';
+$string['default'] = 'Mod implicit';
+$string['defaultgrade'] = 'Gradul implicit de întrebare';
+$string['defaultinfo'] = 'Categoria implicită pentru întrebări.';
+$string['delay1'] = 'Timp de așteptare între prima și a doua încercare';
+$string['delay1st2nd'] = 'Timp de așteptare impus între prima și a doua încercare';
+$string['delay1st2nd_help'] = 'Dacă este activată această opțiune, un student trebuie să aștepte să treacă timpul specificat înainte de a putea da testul a doua oară.';
+$string['delay2'] = 'Întârzierea de timp dintre încercările ulterioare';
+$string['delaylater'] = 'Întârzierea de timp impusă dintre încercările ulterioare';
+$string['delaylater_help'] = 'Dacă este activată această opțiune, un student trebuie să aștepte să treacă timpul specificat înainte de a da testul a treia oară și de mai multe ori în continuare.';
+$string['deleteattemptcheck'] = 'Sunteți sigur că doriți să ștergeți aceste încercări?';
+$string['deleteselected'] = 'Șterge selecția';
+$string['deletingquestionattempts'] = 'Ștergerea încercărilor de a răspunde la întrebări';
+$string['description'] = 'Descriere';
+$string['disabled'] = 'Dezactivat';
+$string['displayoptions'] = 'Opțiuni de afișare';
+$string['donotuseautosave'] = 'Nu utiliza auto-save';
+$string['download'] = 'Faceți click, pentru a descărca fișierul de categorie exportat';
+$string['downloadextra'] = '(fișierul este stocat și în folderul/backupdata/quiz)';
+$string['dragtoafter'] = 'După {$a}';
+$string['dragtostart'] = 'La început';
+$string['duplicateresponse'] = 'Această trimitere a fost ignorată, deoarece ați oferit un răspuns echivalent mai devreme.';
+$string['eachattemptbuildsonthelast'] = 'Fiecare încercare se bazează pe ultima încercare';
+$string['eachattemptbuildsonthelast_help'] = 'Dacă sunt permise mai multe încercări și această setare este activată, fiecare nouă încercare de testare va conține rezultatele încercării anterioare. Aceasta permite finalizarea unui test pe baza mai multor încercări.';
+$string['editcategories'] = 'Editează categoriile';
+$string['editcategory'] = 'Editează categoria';
+$string['editcatquestions'] = 'Editează întrebările de categorie';
+$string['editingquestion'] = 'Editarea unei întrebări';
+$string['editingquiz'] = 'Editarea testului';
+$string['editingquiz_help'] = 'La crearea unui test, conceptele principale sunt:
+
+* Testul care conține întrebări pe una sau mai multe pagini
+* Banca de întrebări care stochează copii ale tuturor întrebărilor organizate pe categorii
+* Întrebări aleatorii - Un elev primește întrebări diferite de fiecare dată când încearcă testul iar cursanți diferiți pot primi întrebări diferite';
+$string['editingquiz_link'] = 'mod/test/editare';
+$string['editingquizx'] = 'Editarea testului: {$a}';
+$string['editmaxmark'] = 'Editează punctaj maxim';
+$string['editoverride'] = 'Editează suprascrierea';
+$string['editqcats'] = 'Editați categoriile de întrebări';
+$string['editquestion'] = 'Editați întrebarea';
+$string['editquestions'] = 'Editați întrebările';
+$string['editquiz'] = 'Gestionează întrebările din acest test';
+$string['editquizquestions'] = 'Editează întrebările testului';
+$string['emailconfirmautosubmitsmall'] = 'Vă mulțumim pentru că ați trimis răspunsurile la \'{$a->quizname}\'';
+$string['emailconfirmbody'] = 'Bună {$a->username},
+
+Mulţumim pentru răspunsurile trimise la testul \'{$a->quizname}\'
+de la cursul \'{$a->coursename}\' în data de {$a->submissiontime}.
+
+Prin acest mesaj confirmăm faptul că răspunsurile dumneavoastră au fost salvate.
+
+Puteți accesa testul aici: {$a->quizurl}.';
+$string['emailconfirmbodyautosubmit'] = 'Bună, {$a->username},
+
+Durata testului \'{$a->quizname}\' din cursul \'{$a->coursename}\' a expirat. Răspunsurile dumneavoastră au fost trimise automat la {$a->submissiontime}.
+
+Acest mesaj confirmă că răspunsurile dumneavoastră au fost salvate.
+
+Puteți accesa acest test la {$a->quizurl}.';
+$string['emailconfirmsmall'] = 'Vă mulțumim pentru că ați trimis răspunsurile la \'{$a->quizname}\'';
+$string['emailconfirmsubject'] = 'Confirmarea trimiterii: {$a->quizname}';
+$string['emailmanualgradedbody'] = 'Bună, {$a->studentname},
+
+Răspunsurile dumneavoastră la \'{$a->quizname}\' în cursul la {$a->attempttimefinish} au fost notate.
+
+Veți putea vedea nota și feedback-ul dumneavoastră vizitând \'{$a->quizurl}\' și revizuindu-vă încercarea.';
+$string['emailmanualgradedsubject'] = 'Încercarea dumneavoastră la {$a->quizname} a fost notată';
+$string['emailnotifybody'] = 'Bună, {$a->username},
+
+{$a->studentname} a completat \'{$a->quizname}\' ({$a->quizurl}) în cursul \'{$a->coursename}\'.
+
+Puteți vedea această încercare la {$a->quizreviewurl}.';
+$string['emailnotifysmall'] = '{$a->studentname} a finalizat {$a->quizname}. Consultați {$a->quizreviewurl}';
+$string['emailnotifysubject'] = '{$a->studentname} a finalizat {$a->quizname}';
+$string['emailoverduebody'] = 'Bună, {$a->studentname},
+
+Ați început o încercare la \'{$a->quizname}\' în cursul  \'{$a->coursename}\', dar nu ați trimis-o. Ar fi trebuit să fie trimisă până la {$a->attemptduedate}.
+
+Dacă mai doriți să trimiteți această încercare, vă rugăm să mergeți la {$a->attemptsummaryurl} și să dați click pe butonul Submit. Trebuie să faceți asta înainte de {$a->attemptgraceend} altfel, încercarea dumneavoastră nu va fi luată în considerare.';
+$string['emailoverduesmall'] = 'Nu ați trimis încercarea la {$a->quizname}. Vă rugăm să mergeți la {$a->attemptsummaryurl}  înainte {$a->attemptgraceend}  dacă mai doriți să trimiteți încercarea.';
+$string['emailoverduesubject'] = 'Încercarea este acum expirată: {$a->quizname}';
+$string['empty'] = 'Necompletat';
+$string['enabled'] = 'Activat';
+$string['endtest'] = 'Trimite testul pentru evaluare';
+$string['erroraccessingreport'] = 'Nu puteți accesa acest raport';
+$string['errorinquestion'] = 'Eroare în cauză';
+$string['errormissingquestion'] = 'Eroare: întrebarea cu identificatorul {$a} lipsește din sistem';
+$string['errornotnumbers'] = 'Eroare - răspunsurile trebuie să fie numerice';
+$string['errorunexpectedevent'] = 'Un eveniment neașteptat, cod {$a->event} a fost găsit pentru întrebarea  {$a->questionid} în încercarea {$a->attemptid}.';
+$string['essay'] = 'Eseu';
+$string['essayquestions'] = 'Întrebări';
+$string['eventattemptautosaved'] = 'Încercare la test salvată în mod complet';
+$string['eventattemptdeleted'] = 'Încercarea a fost ștearsă';
+$string['eventattemptmanualgradingcomplete'] = 'Evaluare manuală a testului a fost finalizată';
+$string['eventattemptpreviewstarted'] = 'A început previzualizarea încercării testului';
+$string['eventattemptquestionrestarted'] = 'Evaluare manuală a testului a fost reîncepută';
+$string['eventattemptreviewed'] = 'Încercarea la test a fost revizuită';
+$string['eventattemptsummaryviewed'] = 'S-a vizualizat rezumatul încercării testului';
+$string['eventattemptupdated'] = 'Încercarea a fost actualizată';
+$string['eventattemptviewed'] = 'Încercarea a fost vizualizată';
+$string['eventeditpageviewed'] = 'Pagina de editare a testului a fost vizualizată';
+$string['eventoverridecreated'] = 'Suprascrierea testului a fost creată';
+$string['eventoverridedeleted'] = 'Suprascrierea testului a fost ștearsă';
+$string['eventoverrideupdated'] = 'Suprascrierea testului a fost actualizată';
+$string['eventpagebreakcreated'] = 'Pagină nouă creată';
+$string['eventpagebreakdeleted'] = 'Pagină nouă ștearsă';
+$string['eventquestionmanuallygraded'] = 'Întrebare notată manual';
+$string['eventquizattemptabandoned'] = 'Încercarea la test a fost abandonată';
+$string['eventquizattemptregraded'] = 'Încercarea la test a fost notată din nou';
+$string['eventquizattemptstarted'] = 'A început încercarea la test';
+$string['eventquizattemptsubmitted'] = 'Încercarea la test a fost trimisă';
+$string['eventquizattempttimelimitexceeded'] = 'S-a depășit limita de timp a încercării de testare';
+$string['eventquizgradeupdated'] = 'Nota la test a fost actualizată';
+$string['eventquizrepaginated'] = 'Test re-paginat';
+$string['eventreportviewed'] = 'A fost vizualizat raportul testului';
+$string['eventsectionbreakcreated'] = 'Secțiune nouă creată';
+$string['eventsectionbreakdeleted'] = 'Secțiune nouă ștearsă';
+$string['eventsectionshuffleupdated'] = 'Amestecarea ordinii secțiunii este actualizată';
+$string['eventsectiontitleupdated'] = 'A fost actualizat titlul secțiunii';
+$string['eventslotcreated'] = 'Interval creat';
+$string['eventslotdeleted'] = 'Interval șters';
+$string['eventslotmarkupdated'] = 'Intervalul de notare a fost actualizat';
+$string['eventslotmoved'] = 'Interval mutat';
+$string['eventslotrequirepreviousupdated'] = 'Intervalul necesită actualizare anterioară';
+$string['everynquestions'] = 'Câte {$a} întrebări pe o pagină';
+$string['everyquestion'] = 'O singură întrebare pe pagină';
+$string['everythingon'] = 'Totul în';
+$string['existingcategory'] = 'Categorie existentă';
+$string['exportcategory'] = 'categoria de export';
+$string['exporterror'] = 'A apărut o eroare în timpul procesării exportului';
+$string['exportingquestions'] = 'Întrebările sunt exportate în fișier';
+$string['exportname'] = 'Nume de fișier';
+$string['exportquestions'] = 'Exportă întrebări în fișier';
+$string['extraattemptrestrictions'] = 'Extra restricții la încercări';
+$string['false'] = 'Fals';
+$string['feedback'] = 'Feedback';
+$string['feedbackerrorboundaryformat'] = 'Limitele feedback-ului la note trebuie să fie un procent sau un număr. Valoarea pe care ați introdus-o la limita {$a} nu este recunoscută.';
+$string['feedbackerrorboundaryoutofrange'] = 'Limitele gradului de feedback trebuie să fie între 0% și 100%. Valoarea pe care ați introdus-o la limita {$a} nu este în acest interval.';
+$string['feedbackerrorjunkinboundary'] = 'Nu trebuie lăsat spațiu când completezi valoarea intervalului.';
+$string['feedbackerrorjunkinfeedback'] = 'Trebuie să completați căsuțele de feedback fără a lăsa spații necompletate.';
+$string['feedbackerrororder'] = 'Limitele gradului de feedback trebuie să fie ordonate, cele mai înalte primele. Valoarea pe care ați introdus-o la limita {$a} nu este în acest interval.';
+$string['file'] = 'Fişier';
+$string['fileformat'] = 'Tipul fișierului';
+$string['fillcorrect'] = 'Completează cu varianta corectă';
+$string['filloutnumericalanswer'] = 'Furnizați cel puțin un răspuns și o toleranță posibile. Primul răspuns potrivit va fi folosit pentru a determina nota și feedback-ul. Dacă furnizați un feedback fără răspuns la sfârșit, acesta va fi afișat cursanților al căror răspuns nu este egal cu niciunul dintre celelalte răspunsuri.';
+$string['filloutoneanswer'] = 'Trebuie să completezi măcar un răspus posibil. Câmpurile necompletate nu vor fi arătate. \'*\' poate fi folosit ca un wildcard pentru a se potrivi cu orice caracter. Primul răspuns potrivit va fi folosit pentru a determina nota și feedback-ul.';
+$string['filloutthreequestions'] = 'Trebuie să furnizați cel puțin trei întrebări cu răspunsuri corespunzătoare. Puteți oferi răspunsuri greșite în plus, dând un răspuns cu o întrebare necompletată. Înscrierile în care atât întrebarea cât și răspunsul sunt necompletate vor fi ignorate.';
+$string['fillouttwochoices'] = 'Trebuie să completezi măcar două variante. Câmpurile necompletate nu vor fi utilizate.';
+$string['finishattemptdots'] = 'Trimite testul pentru evaluare';
+$string['finishreview'] = 'Finalizați evaluarea';
+$string['forceregeneration'] = 'forțează regenerarea';
+$string['formatnotfound'] = 'Formatul de import/ export {$a} nu a fost găsit';
+$string['formulaerror'] = 'Eroare la formulă!';
+$string['fractionsaddwrong'] = 'Notele pozitive pe care le-ați ales nu însumează 100% <br /> În schimb, ele însumează {$a}% <br /> Doriți să reveniți și să remediați această întrebare?';
+$string['fractionsnomax'] = 'Unul dintre răspunsuri ar trebui să fie 100%, astfel încât să se<br/>poată obține o notă completă pentru această întrebare.<br/>Doriți să reveniți și să reanalizați această întrebare?';
+$string['fromfile'] = 'din fișier:';
+$string['functiondisabledbysecuremode'] = 'Această funcționalitate este dezactivată în prezent';
+$string['generalfeedback'] = 'Feedback general';
+$string['generalfeedback_help'] = 'Feedbackul general este un text care este afișat după ce a fost finalizată o întrebare. Spre deosebire de feedback-ul pentru o întrebare specifică care depinde de răspunsul dat, același feedback general este întotdeauna afișat.';
+$string['gobacktoquiz'] = 'Mergi înapoi';
+$string['graceperiod'] = 'Perioada de grație pentru finalizarea testului';
+$string['graceperiod_desc'] = 'Dacă ce trebuie făcut atunci când expiră timpul este setat la „Există o perioadă de grație ...”, atunci aceasta este valoarea implicită de timp suplimentar permis.';
+$string['graceperiod_help'] = 'Dacă ce trebuie făcut atunci când expiră timpul este setat la „Există o perioadă de grație ...”, atunci aceasta este cantitatea de timp suplimentar permisă.';
+$string['graceperiodmin'] = 'Perioada de grație a ultimei încercări';
+$string['graceperiodmin_desc'] = 'Există o posibilă problemă chiar la sfârșitul chestionarului. Pe de o parte, dorim să îi lăsăm pe cursanți să continue să lucreze chiar până în ultima secundă - cu ajutorul cronometrului care trimite automat testul la expirarea timpului. Pe de altă parte, serverul poate fi apoi supraîncărcat și va dura un timp până la procesarea răspunsurilor. Prin urmare, vom accepta răspunsuri până la expirarea acestui timp, astfel încât răspunsurile să nu fie penalizate pentru că serverul este lent. Cu toate acestea, studentul ar putea să trișeze și să obțină astfel mai mult timp în plus pentru a răspunde la întrebare. Trebuie să faceți un compromis în funcție de cât de multă încredere aveți  în performanțele serverului dvs. în timpul testelor.';
+$string['graceperiodtoosmall'] = 'Perioada de grație trebuie să fie mai mare de {$a}.';
+$string['grade'] = 'Notă obținută';
+$string['gradeall'] = 'Notați toate';
+$string['gradeaverage'] = 'Nota medie';
+$string['gradeboundary'] = 'Interval de notă';
+$string['gradeessays'] = 'Notare eseuri';
+$string['gradehighest'] = 'Cea mai mare notă';
+$string['grademethod'] = 'Metoda de notare';
+$string['grademethod_help'] = 'Când sunt permise mai multe încercări, sunt disponibile următoarele metode pentru calcularea notei finale la test:
+
+* Cea mai mare notă a tuturor încercărilor
+* Nota medie a tuturor încercărilor
+* Prima încercare (toate celelalte încercări sunt ignorate)
+* Ultima încercare (toate celelalte încercări sunt ignorate)';
+$string['gradesdeleted'] = 'Notele la test au fost șterse';
+$string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassmustbeset'] = 'Nota de trecere nu poate fi zero, deoarece acest test are metoda de completare setată pentru a necesita o notă de trecere. Vă rugăm să setați o valoare diferită de zero.';
+$string['gradetopassnotset'] = 'Acest test nu are încă setată o notă de trecere. Poate fi setată în setările testului la secțiunea Note.';
+$string['gradetopassoutof'] = 'Notă de trecere: {$a->grade} din maxim {$a->maxgrade}';
+$string['gradingdetails'] = 'Notă pentru aceste răspunsuri: {$a->raw}/{$a->max}.';
+$string['gradingdetailsadjustment'] = 'Cu penalități anterioare se obține <strong>{$a->cur}/{$a->max}</strong>.';
+$string['gradingdetailspenalty'] = 'Această depunere a atras o penalizare de {$a}.';
+$string['gradingdetailszeropenalty'] = 'Nu ați fost penalizat pentru această trimitere.';
+$string['gradingmethod'] = 'Metoda de notare: {$a}';
+$string['groupoverrides'] = 'Suprascrieri ale grupului';
+$string['groupoverridesdeleted'] = 'Suprascrieri ale grupului șterse';
+$string['groupsnone'] = 'Nu există grupuri la care să aveți acces.';
+$string['guestsno'] = 'Ne pare rău, persoanele fără cont nu pot vedea sau încerca teste';
+$string['hidebreaks'] = 'Ascunde paginile noi';
+$string['hidereordertool'] = 'Ascunde instrumentul de ordonare';
+$string['history'] = 'Istoricul răspunsurilor:';
+$string['howquestionsbehave_desc'] = 'Setarea implicită pentru funcționalitatea întrebărilor într-un test.';
+$string['imagedisplay'] = 'Imagine de afișat';
+$string['import_help'] = 'Această funcție vă permite să importați întrebări din fișiere text externe.
+
+Dacă fișierul dvs. conține caractere non-ascii, atunci acesta trebuie să utilizeze codificarea UTF-8. Fiți deosebit de precaut cu fișierele generate de aplicațiile Microsoft Office, deoarece acestea folosesc de obicei o codificare specială care nu va fi folosită corect.
+
+Formatele de import și export sunt o resursă conectabilă. Alte formate opționale pot fi disponibile în baza de date Module și Plugins.';
+$string['import_link'] = 'întrebare / import';
+$string['importcategory'] = 'categoria de import';
+$string['importerror'] = 'A apărut o eroare în timpul procesării importului';
+$string['importfilearea'] = 'Importă din fișierul aflat deja în fișiere de curs...';
+$string['importfileupload'] = 'Import din încărcarea fișierului...';
+$string['importfromthisfile'] = 'Importă din acest fișier';
+$string['importingquestions'] = 'Se importă {$a} întrebări din fișier';
+$string['importmax10error'] = 'Există o eroare la întrebare. Nu puteți să aveți mai mult de zece răsounsuri.';
+$string['importmaxerror'] = 'Există o eroare în întrebare. Există prea multe răspunsuri.';
+$string['importquestions'] = 'Importă întrebări din fișier';
+$string['inactiveoverridehelp'] = '* Această suprascriere este inactivă, deoarece accesul utilizatorului la activitate este restricționat. Acest lucru se poate datora atribuirilor de grup sau de rol, altor restricții de acces sau activității ascunse.';
+$string['incorrect'] = 'Incorect';
+$string['indicator:cognitivedepth'] = 'Test cognitiv';
+$string['indicator:cognitivedepth_help'] = 'Acest indicator se bazează pe profunzimea cognitivă atinsă de student într-o activitate de test.';
+$string['indicator:cognitivedepthdef'] = 'Test cognitiv';
+$string['indicator:cognitivedepthdef_help'] = 'Participantul a atins acest procent din implicarea cognitivă oferită de activitățile \'Test\' în timpul acestui interval de analiză (Nivele = Fără vizualizare, Vizualizare, Trimitere, Vizualizare feedback, Comentariu la feedback, Retrimitere după vizualizare feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Test social';
+$string['indicator:socialbreadth_help'] = 'Acest indicator se bazează pe implicarea socială atinsă de student într-o activitate de test.';
+$string['indicator:socialbreadthdef'] = 'Test social';
+$string['indicator:socialbreadthdef_help'] = 'Participantul a atins acest procent din implicarea socială oferită de activitățile \'Test\' în timpul acestui interval de analiză (Nivele = Fără participare, Participant singur, Participant cu alții)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['indivresp'] = 'Răspunsurile participanților la fiecare item';
+$string['info'] = 'Info';
+$string['infoshort'] = 'i';
+$string['initialnumfeedbacks'] = 'Numărul inițial de câmpuri de feedback general';
+$string['initialnumfeedbacks_desc'] = 'Când creați un nou test, furnizați numeroase casete de feedback general necompletate. Odată ce testul a fost creat, formularul afișează numărul de câmpuri necesare pentru numărul de feedback-uri din test. Setarea trebuie să fie de cel puțin 1.';
+$string['inprogress'] = 'În desfășurare';
+$string['introduction'] = 'Descriere';
+$string['invalidattemptid'] = 'Nu există Identificatorul încercării';
+$string['invalidcategory'] = 'Identificatorul categoriei nu este valid';
+$string['invalidoverrideid'] = 'Identificatorul suprascrierii nu este valid';
+$string['invalidquestionid'] = 'Identificatorul întrebării nu este valid';
+$string['invalidquizid'] = 'Identificatorul testului nu este valid';
+$string['invalidrandomslot'] = 'Identificatorul incorect al lotului de întrebări.';
+$string['invalidsource'] = 'Sursa nu este acceptată ca validă.';
+$string['invalidsourcetype'] = 'Tip sursă invalid.';
+$string['invalidstateid'] = 'Identificator incorect de status';
+$string['lastanswer'] = 'Ultimul tău răspuns a fost';
+$string['layout'] = 'Afișare';
+$string['layoutasshown'] = 'Aspectul paginii așa cum este afișat.';
+$string['layoutasshownwithpages'] = 'Aspectul paginii așa cum este afișat. <small>(Automatic new page every {$a} questions.)</small>';
+$string['layoutshuffledandpaged'] = 'Întrebări amestecate aleator cu {$a} întrebări pe pagină.';
+$string['layoutshuffledsinglepage'] = 'Întrebări amestecate aleatoriu, toate pe o pagină,';
+$string['legacyquizaccessrulescron'] = 'Raport standard de rulare a CRON-ului';
+$string['legacyquizreportscron'] = 'Cron de rapoarte de teste vechi, ne mai folosit.';
+$string['link'] = 'Link';
+$string['listitems'] = 'Listarea elementelor în test';
+$string['literal'] = 'Literal';
+$string['loadingquestionsfailed'] = 'Încărcarea întrebărilor a eșuat: {$a}';
+$string['makecopy'] = 'Salvare ca întrebare nouă';
+$string['managetypes'] = 'Gestionați tipurile de întrebări și serverele';
+$string['manualgradequestion'] = 'Notează manual întrebarea {$a->question} în {$a->quiz} de către {$a->user}';
+$string['manualgrading'] = 'Notare';
+$string['mark'] = 'Trimitere';
+$string['markall'] = 'Trimitere pagină';
+$string['marks'] = 'Puncte';
+$string['marks_help'] = 'Punctele numerice pentru fiecare întrebare și scorul general al încercării.';
+$string['match'] = 'Care corespunde';
+$string['matchanswer'] = 'Răspuns care corespunde';
+$string['matchanswerno'] = 'Răspuns care corespunde {$a}';
+$string['max'] = 'Max';
+$string['maxmark'] = 'Notă maximă';
+$string['messageprovider:attempt_grading_complete'] = 'Notificare că încercarea dumneavoastră a fost notată';
+$string['messageprovider:attempt_overdue'] = 'Avertisment când încercarea de testare devine expirată';
+$string['messageprovider:confirmation'] = 'Confirmarea propriilor teste finalizate';
+$string['messageprovider:submission'] = 'Notificare pentru trimiterea testelor';
+$string['min'] = 'Min';
+$string['minutes'] = 'Minute';
+$string['missingcorrectanswer'] = 'Trebuie specificat răspunsul corect';
+$string['missingitemtypename'] = 'Lipsă nume';
+$string['missingquestion'] = 'Se pare că nu mai există această întrebare';
+$string['modulename'] = 'Test';
+$string['modulename_help'] = 'Activitatea de testare permite profesorului să creeze teste cuprinzând întrebări de diferite tipuri, inclusiv alegere multiplă, potrivire, răspuns scurt și numeric.
+
+Profesorul poate permite ca testul să fie parcurs de mai multe ori, cu întrebările amestecate sau selectate aleatoriu din banca de întrebări. Se poate seta o limită de timp pentru finalizarea testului.
+
+Fiecare încercare este marcată automat, cu excepția întrebărilor de tip eseu, iar nota este înregistrată în catalogul de note din platformă.
+
+Profesorul poate alege când și dacă sunt prezentate elevilor sugestii, feedback și răspunsuri corecte.
+
+Testele pot fi folosite:
+* Ca examene de curs
+* Ca mini teste pentru sarcini de lectură sau la sfârșitul unui subiect
+* Ca practică de examen folosind întrebări de la examenele anterioare
+* Pentru a oferi feedback imediat despre performanță
+* Pentru autoevaluare';
+$string['modulename_link'] = 'mod/test/vedere';
+$string['modulenameplural'] = 'Teste';
+$string['moveselectedonpage'] = 'Mută întrebările selectate pe pagină: {$a}';
+$string['multichoice'] = 'Opțiune multiplă';
+$string['multipleanswers'] = 'Alegeți cel puțin un răspuns.';
+$string['mustbesubmittedby'] = 'Încercarea trebuie trimisă de {$a}.';
+$string['name'] = 'Nume';
+$string['navigatenext'] = 'Pagina următoare';
+$string['navigateprevious'] = 'Pagina precedentă';
+$string['navmethod'] = 'Metoda de navigare';
+$string['navmethod_free'] = 'Navigare liberă';
+$string['navmethod_help'] = 'Când navigarea secvențială este activată, elevul trebuie să parcurgă testul în ordine și nu poate să revină la paginile anterioare sau să treacă mai departe.';
+$string['navmethod_seq'] = 'Navigare secvențială';
+$string['navnojswarning'] = 'Avertisment: aceste link-uri nu vă vor salva răspunsurile. Folosiți butonul următor din partea de jos a paginii.';
+$string['neverallononepage'] = 'Toate întrebările pe o singură pagină';
+$string['newattemptfail'] = 'Eroare: Nu s-a putut începe o nouă încercare la test';
+$string['newcategory'] = 'Categorie nouă';
+$string['newpage'] = 'Câte întrebări să fie afișate pe pagină';
+$string['newpage_help'] = 'Pentru teste cu mai multe întrebări este recomandat să afișați testul pe mai multe pagini, limitând numărul de întrebări pe o pagină. Când adăugați întrebări la test, delimitatorul de pagină vor fi inserate automat în conformitate cu această setare. Cu toate acestea, delimitatoarele de pagină pot fi mutate ulterior manual din pagina de editare a testului.';
+$string['newpageevery'] = 'Deschideți automat o pagină nouă';
+$string['newsectionheading'] = 'Antet nou';
+$string['noanswers'] = 'Nu au fost selectate răspunsuri!';
+$string['noattempts'] = 'Nu s-au făcut încercări la acest test';
+$string['noattemptsfound'] = 'Nu s-au găsit întrebări.';
+$string['noattemptstoshow'] = 'Nu există încercări de afișat';
+$string['nocategory'] = 'Categorie nespecificată sau incorectă';
+$string['noclose'] = 'Nu este dată de încheiere';
+$string['nocommentsyet'] = 'Niciun comentariu încă.';
+$string['noconnection'] = 'În prezent, nu există conexiune la un serviciu web care să poată prelucra această întrebare. Vă rugăm să contactați administratorul';
+$string['nodataset'] = 'nimic - nu este un wild card';
+$string['nodatasubmitted'] = 'Nu au fost trimise date.';
+$string['noessayquestionsfound'] = 'Nu s-au găsit întrebări gradate manual';
+$string['nogradewarning'] = 'Acest test nu este notat, deci nu puteți seta feedback-ul general diferit în funcție de notă.';
+$string['nomoreattempts'] = 'Nu mai sunt permise alte încercări';
+$string['none'] = 'Niciunul';
+$string['noopen'] = 'Fără dată de începere';
+$string['nooverridedata'] = 'Trebuie să suprascrieți cel puțin una din setările testului.';
+$string['nopossibledatasets'] = 'Nu există seturi de date posibile';
+$string['noquestionintext'] = 'Textul întrebării nu conține întrebări încorporate';
+$string['noquestions'] = 'Nicio întrebare nu a fost adăugată încă';
+$string['noquestionsfound'] = 'Nu s-au găsit întrebări';
+$string['noquestionsinquiz'] = 'Nu există întrebări în acest test.';
+$string['noquestionsnotinuse'] = 'Această întrebare aleatorie nu este folosită, deoarece categoria sa este necompletată.';
+$string['noquestionsonpage'] = 'Pagina goală';
+$string['noresponse'] = 'Niciun răspuns';
+$string['noreview'] = 'Nu aveți voie să examinați acest test';
+$string['noreviewattempt'] = 'Nu aveți permisiunea să revizuiți această încercere.';
+$string['noreviewshort'] = 'Nu este permis';
+$string['noreviewuntil'] = 'Nu aveți permisiunea de a examina acest test până la {$a}';
+$string['noreviewuntilshort'] = 'Disponibil {$a}';
+$string['noscript'] = 'JavaScript trebuie să fie activat pentru a continua!';
+$string['notavailabletostudents'] = 'Notă: Acest test nu este în prezent disponibil pentru cursanții tăi.';
+$string['notenoughrandomquestions'] = 'Nu există suficiente întrebări în categoria {$a->category} pentru a crea întrebarea {$a->name} ({$a->id}).';
+$string['notenoughsubquestions'] = 'Nu au fost definite suficiente subîntrebări! <br /> Doriți să reveniți și să remediați această întrebare?';
+$string['notifyattemptsgradedtask'] = 'Trimiteți notificări cu grad de încercare de chestionar';
+$string['notimedependentitems'] = 'Întrebările cu o limită de timp nu sunt acceptate în prezent de modulul test. Ca o soluție, stabiliți o limită de timp pentru întregul test. Doriți să alegeți un alt item (sau să utilizați elementul curent indiferent)?';
+$string['notyetgraded'] = 'Nu este încă notat';
+$string['notyetviewed'] = 'Nu a fost vizualizat încă';
+$string['notyourattempt'] = 'Aceasta nu este încercarea dumneavoastră!';
+$string['noview'] = 'Utilizatorul autentificat nu are permisiunea de a vedea acest test';
+$string['numattempts'] = '{$a->studentnum} {$a->studentstring} au avut {$a->attemptnum} încercări';
+$string['numberabbr'] = '#';
+$string['numerical'] = 'Numeric';
+$string['numquestionsx'] = 'Întrebări: {$a}';
+$string['oneminute'] = '1 minut';
+$string['onlyteachersexport'] = 'Numai formatorii pot exporta întrebări';
+$string['onlyteachersimport'] = 'Numai formatorii cu drepturi de editare pot importa întrebări';
+$string['onthispage'] = 'Această pagină';
+$string['open'] = 'Fără răspuns';
+$string['openafterclose'] = 'Nu s-a putut actualiza testul. Ați specificat o dată de deschidere care e după data de închidere.';
+$string['openclosedatesupdated'] = 'Datele de începere și încheiere a testului au fost actualizate';
+$string['optional'] = 'opțional';
+$string['orderandpaging'] = 'Ordonare și paginare';
+$string['orderandpaging_help'] = 'Numerele 10, 20, 30, ... opuse fiecărei întrebări indică ordinea întrebărilor. Numerele cresc din 10 în 10 pentru a lăsa spațiu pentru a fi inserate întrebări suplimentare. Pentru a reordona întrebările, schimbați numerele, apoi faceți click pe butonul „Reordonați întrebările”.
+
+Pentru a adăuga pagini noi după anumite întrebări, bifați casetele de lângă întrebări, apoi faceți click pe butonul „Adăugați pagini noi după întrebările selectate”.
+
+Pentru a aranja întrebările pe mai multe pagini, faceți click pe butonul Repaginare și selectați numărul dorit de întrebări pe pagină.';
+$string['orderingquiz'] = 'Ordonare și paginare';
+$string['orderingquizx'] = 'Ordonare și paginare: {$a}';
+$string['outcomesadvanced'] = 'Rezultatele sunt setări avansate';
+$string['outof'] = '{$a->grade} din {$a->maxgrade}';
+$string['outofpercent'] = '{$a->grade} din {$a->maxgrade} ({$a->percent}%)';
+$string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
+$string['overallfeedback'] = 'Feedback-ul general al testului';
+$string['overallfeedback_help'] = 'Feedback-ul general este textul care este afișat după ce a fost finalizat un test. Prin specificarea limitelor de notă suplimentare (ca procent sau ca număr), textul afișat poate depinde de nota obținută.';
+$string['overdue'] = 'Depășite';
+$string['overduehandling'] = 'Când timpul expiră';
+$string['overduehandling_desc'] = 'Ce ar trebui să se întâmple implicit dacă un student nu trimite testul înainte de expirarea timpului.';
+$string['overduehandling_help'] = 'Această setare controlează ce se întâmplă dacă un cursant nu reușește să trimită testul înainte de expirarea timpului. Dacă cursantul lucrează activ la test la momentul respectiv, atunci contorul va trimite întotdeauna automat încercarea pentru el, dar dacă s-a deconectat, atunci această setare controlează ce se întâmplă.';
+$string['overduehandling_link'] = 'mod/test/timp';
+$string['overduehandlingautoabandon'] = 'Încercările trebuie trimise înainte de expirarea timpului, altfel nu sunt luate în considerare';
+$string['overduehandlingautosubmit'] = 'Încercările deschise sunt trimise automat';
+$string['overduehandlinggraceperiod'] = 'Există o perioadă de grație când se pot finaliza încercările deschise, dar nu se mai răspunde la întrebări';
+$string['overduemustbesubmittedby'] = 'Această încercare este acum întârziată. Ar fi trebuit deja închisă. Dacă doriți ca acest test să fie notat, trebuie să îl trimiteți până la {$a}. Dacă nu îl trimiteți până atunci, nu vor fi luate în considerare nicio întrebare cu răspuns dat din această încercare.';
+$string['override'] = 'Suprascriere';
+$string['overridedeletegroupsure'] = 'Sunteți sigur că doriți să ștergeți suprascrierea pentru grupul {$a}?';
+$string['overridedeleteusersure'] = 'Sunteți sigur că doriți să ștergeți suprascrierea pentru utilizatorul {$a}?';
+$string['overridegroup'] = 'Suprascrie grupul';
+$string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
+$string['overrides'] = 'Suprascrieri';
+$string['overridesforquiz'] = 'Suprascrieri setări : {$a}';
+$string['overridesnoneforgroups'] = 'Nu s-au creat modificări ale setărilor de grup pentru acest test.';
+$string['overridesnoneforusers'] = 'Nu s-au creat modificări ale setărilor utilizatorului pentru acest test.';
+$string['overridessummary'] = 'Sunt efectuate suprascrieri ale setărilor ({$a})';
+$string['overridessummarygroup'] = 'Grupuri: {$a}';
+$string['overridessummarythisgroup'] = 'Sunt efectuate suprascrieri ale setărilor ({$a}) pentru acest grup';
+$string['overridessummaryuser'] = 'Utilizatori: {$a}';
+$string['overridessummaryyourgroups'] = 'Sunt efectuate suprascrieri ale setărilor ({$a}) pentru grupul tău';
+$string['overrideuser'] = 'Suprascriere reguli pentru utilizatorul';
+$string['overrideusereventname'] = '{$a->quiz} - Suprascrie';
+$string['page-mod-quiz-attempt'] = 'Pagina de încercare a testului';
+$string['page-mod-quiz-edit'] = 'Editează pagina care conține testul';
+$string['page-mod-quiz-report'] = 'Orice pagină de raport a testului';
+$string['page-mod-quiz-review'] = 'Verificați pagina de încercare a testului';
+$string['page-mod-quiz-summary'] = 'Pagina de sumar a testului';
+$string['page-mod-quiz-view'] = 'Pagina cu informații despte test';
+$string['page-mod-quiz-x'] = 'Orice pagină a modulului test';
+$string['pageshort'] = 'P';
+$string['pagesize'] = 'Mărimea paginii';
+$string['parent'] = 'Părinte';
+$string['parentcategory'] = 'Categoria părinte';
+$string['parsingquestions'] = 'Se analizează informațiile din fișierul de import.';
+$string['partiallycorrect'] = 'Parțial corect';
+$string['penalty'] = 'Penalizare';
+$string['penaltyscheme'] = 'Aplică penalizări';
+$string['penaltyscheme_help'] = 'Dacă este activată, o penalizare este scăzută din nota finală a unei întrebări pentru un răspuns greșit. Suma penalizării este specificată în setările întrebării. Această setare se aplică numai dacă \'modul adaptiv\' este activat.';
+$string['percentcorrect'] = 'Procent corect';
+$string['pleaseclose'] = 'Solicitarea dvs. a fost procesată. Acum puteți închide această fereastră';
+$string['pluginadministration'] = 'Administrarea testelor';
+$string['pluginname'] = 'Test';
+$string['popup'] = 'Afişează testul într-o fereastră "securizată"';
+$string['popupblockerwarning'] = 'Această secțiune a testului este în modul de siguranță, asta înseamnă că trebuie să faceți testul într-o fereastră sigură. Vă rugăm să dezactivați popup-ul. Vă mulțumim.';
+$string['popupnotice'] = 'Cursanții vor vedea acest test într-o fereastră sigură';
+$string['preprocesserror'] = 'Eroare apărută în timpul pre-procesării!';
+$string['preview'] = 'Previzualizare';
+$string['previewquestion'] = 'Previzualizarea întrebării';
+$string['previewquiz'] = 'Previzualizare {$a}';
+$string['previewquiznow'] = 'Previzualizează testul acum';
+$string['previewquizstart'] = 'Previzualizare test';
+$string['previous'] = 'Starea anterioară';
+$string['privacy:metadata:core_question'] = 'Activitatea test stochează informațiile de utilizare a întrebărilor în subsistemul core_question.';
+$string['privacy:metadata:quiz'] = 'Activitatea la test utilizează rapoartele la test.';
+$string['privacy:metadata:quiz_attempts'] = 'Detalii despre fiecare încercare de la un test.';
+$string['privacy:metadata:quiz_attempts:attempt'] = 'Numărul încercării.';
+$string['privacy:metadata:quiz_attempts:currentpage'] = 'Pagina unde se află utilizatorul.';
+$string['privacy:metadata:quiz_attempts:gradednotificationsenttime'] = 'Momentul în care utilizatorul a fost notificat că evaluarea manuală a încercării sale a fost finalizată';
+$string['privacy:metadata:quiz_attempts:preview'] = 'Dacă este o previzualizare a testului.';
+$string['privacy:metadata:quiz_attempts:state'] = 'Status-ul actual al încercării';
+$string['privacy:metadata:quiz_attempts:sumgrades'] = 'Suma notelor din încercare.';
+$string['privacy:metadata:quiz_attempts:timecheckstate'] = 'Când a fost verificat status-ul.';
+$string['privacy:metadata:quiz_attempts:timefinish'] = 'Când a fost finalizată încercarea.';
+$string['privacy:metadata:quiz_attempts:timemodified'] = 'Când a fost actualizată încercarea';
+$string['privacy:metadata:quiz_attempts:timemodifiedoffline'] = 'Când încercarea a fost actualizată printr-o actualizare offline.';
+$string['privacy:metadata:quiz_attempts:timestart'] = 'Când a început încercarea';
+$string['privacy:metadata:quiz_grades'] = 'Detalii despre nota generală la acest test.';
+$string['privacy:metadata:quiz_grades:grade'] = 'Nota totală la acest test.';
+$string['privacy:metadata:quiz_grades:quiz'] = 'Testul care a fost notat.';
+$string['privacy:metadata:quiz_grades:timemodified'] = 'Când a fost modificată nota.';
+$string['privacy:metadata:quiz_grades:userid'] = 'Utilizatorul care a fost notat.';
+$string['privacy:metadata:quiz_overrides'] = 'Detalii despre suprascrierile testului';
+$string['privacy:metadata:quiz_overrides:quiz'] = 'Testul cu informație suprascrisă';
+$string['privacy:metadata:quiz_overrides:timeclose'] = 'Noua dată de încheiere a testului.';
+$string['privacy:metadata:quiz_overrides:timelimit'] = 'Noua limită de timp pentru test.';
+$string['privacy:metadata:quiz_overrides:timeopen'] = 'Noul timp deschis pentru test.';
+$string['privacy:metadata:quiz_overrides:userid'] = 'Testul care este suprascris';
+$string['privacy:metadata:quizaccess'] = 'Activitatea testului folosește regulile de acces la test.';
+$string['publish'] = 'Publicare';
+$string['publishedit'] = 'Trebuie să aveți drepturi în cursul publicat pentru a adăuga sau a edita întrebări din această categorie';
+$string['qbrief'] = 'Î. {$a}';
+$string['qname'] = 'nume';
+$string['qti'] = 'Format IMS QTI';
+$string['qtypename'] = 'tip, nume';
+$string['question'] = 'Întrebare';
+$string['questionbank'] = 'Din banca de întrebări (alegere manuală)';
+$string['questionbankmanagement'] = 'Administrarea băncii de întrebări';
+$string['questionbehaviour'] = 'Funcționalitate întrebare';
+$string['questioncats'] = 'Categorii de întrebări';
+$string['questiondeleted'] = 'Această întrebare a fost ștearsă. Vă rugăm să vă contactați formatorul';
+$string['questiondependencyadd'] = 'Nicio restricție cu privire la momentul în care se poate încerca întrebarea {$a-> thisq} • Faceți clic pentru a modifica';
+$string['questiondependencyfree'] = 'Nu există restricții cu privire la această întrebare';
+$string['questiondependencyremove'] = 'Nu puteți avea o încercare la întrebarea {$a->thisq} până când întrebarea anterioară {$a->previousq} a fost completată • Click pentru a modifica';
+$string['questiondependsonprevious'] = 'Această întrebare nu poate fi încercată până când nu s-a finalizat întrebarea anterioară.';
+$string['questiondraftonly'] = 'Întrebarea {$a} este în status-ul ciornă. Pentru a o folosi în test, mergi la banca de întrebări și modifică status-ul întrebării în pregătit.';
+$string['questiondraftwillnotwork'] = 'Această întrebare are status-ul ciornă. Pentru a o folosi în test, accesați banca de întrebări și schimbați status-ul în pregătit.';
+$string['questioninuse'] = 'Întrebarea \'{$a->questionname}\' este utilizată în prezent în:<br/>{$a->quiznames}<br/>Întrebarea nu va fi ștearsă din aceste teste, ci doar din lista de categorii.';
+$string['questionmissing'] = 'Lipseste întrebarea pentru această sesiune';
+$string['questionname'] = 'Denumirea întrebării';
+$string['questionnonav'] = '<span class="accesshide">Întrebare </span>{$a->number}<span class="accesshide"> {$a->attributes}</span>';
+$string['questionnonavinfo'] = '<span class="accesshide">Information </span>{$a->number}<span class="accesshide"> {$a->attributes}</span>';
+$string['questionnotloaded'] = 'Întrebarea {$a} nu a fost încărcată din baza de date';
+$string['questionorder'] = 'Ordinea întrebărilor';
+$string['questionposition'] = 'Poziție nouă pentru întrebarea {$a}';
+$string['questions'] = 'Întrebări';
+$string['questionsetpreview'] = 'Vizualizarea setului de întrebări';
+$string['questionsinclhidden'] = 'Întrebări (inclusiv ascunse)';
+$string['questionsinthisquiz'] = 'Întrebări din acest test';
+$string['questionsmatchingfilter'] = 'Întrebări care corespund acestui filtru: {$a}';
+$string['questionsperpage'] = 'Întrebări pe pagină';
+$string['questionsperpageselected'] = 'Întrebările pe pagină au fost setate astfel încât paginarea este în prezent stabilită. Drept urmare, controlul paginării a fost dezactivat. Puteți modifica acest lucru în {$a}.';
+$string['questionsperpagex'] = 'Întrebări pe pagină: {$a}';
+$string['questiontext'] = 'Textul întrebării';
+$string['questiontextisempty'] = '[Nu este completat textul întrebării]';
+$string['questiontype'] = 'Tip de întrebare {$a}';
+$string['questiontypesetupoptions'] = 'Opțiuni de configurare pentru tipurile de întrebări:';
+$string['questionversion'] = 'v{$a}';
+$string['questionversionlatest'] = 'v{$a} (cel mai recent)';
+$string['quiz:addinstance'] = 'Adaugă un nou test';
+$string['quiz:attempt'] = 'Încearcă testele';
+$string['quiz:deleteattempts'] = 'Ștergeți încercările testului';
+$string['quiz:emailconfirmsubmission'] = 'Primiți confirmarea trimiterilor răspunsurilor la testele dvs.';
+$string['quiz:emailnotifyattemptgraded'] = 'Primește notificare când încercarea ta a fost notată';
+$string['quiz:emailnotifysubmission'] = 'Primește notificare când testul a fost încheiat de către utilizator';
+$string['quiz:emailwarnoverdue'] = 'Primește avertizare atunci când o încercare a întârziat';
+$string['quiz:grade'] = 'Notează testele manual';
+$string['quiz:ignoretimelimits'] = 'Ignorați limita de timp a testului';
+$string['quiz:manage'] = 'Gestionează testele';
+$string['quiz:manageoverrides'] = 'Administrați suprascrierile setărilor testului';
+$string['quiz:preview'] = 'Previzualizare teste';
+$string['quiz:regrade'] = 'Renotați încercările la test';
+$string['quiz:reviewmyattempts'] = 'Reevaluează-ți propriile încercări';
+$string['quiz:view'] = 'Vizualizează informații despre test';
+$string['quiz:viewoverrides'] = 'Vizualizați suprascrierile setărilor testului';
+$string['quiz:viewreports'] = 'Vezi rapoartele testului';
+$string['quizavailable'] = 'Testul este disponibil până la: {$a}';
+$string['quizclose'] = 'Testul se închide';
+$string['quizclosed'] = 'Acest test s-a încheiat în data de {$a}';
+$string['quizcloses'] = 'Testul se închide';
+$string['quizcloseson'] = 'Acest test se va încheia la {$a}';
+$string['quizeventcloses'] = 'Obiectul {$a} se închide';
+$string['quizeventopens'] = '{$a} se deschide';
+$string['quizisclosed'] = 'Acest test este închis';
+$string['quizisclosedwillopen'] = 'Test închis (se deschide {$a})';
+$string['quizisopen'] = 'Acest test este deschis';
+$string['quizisopenwillclose'] = 'Test deschis (se închide {$a})';
+$string['quiznavigation'] = 'Navigare în test';
+$string['quizopen'] = 'Testul se deschide';
+$string['quizopenclose'] = 'Datele de deschidere și de încheiere';
+$string['quizopenclose_help'] = 'Cursanții își pot începe încercările lor numai după ora de deschidere a testului și trebuie să își finalizeze încercările înainte de ora de închidere.';
+$string['quizopenclose_link'] = 'mod/test/timp';
+$string['quizopened'] = 'Acest test este deschis.';
+$string['quizopenedon'] = 'Testul s-a deschis la {$a}';
+$string['quizopens'] = 'Testul se deschide';
+$string['quizopenwillclose'] = 'Testul este deschis, se va închide în {$a} la';
+$string['quizordernotrandom'] = 'Ordinea testului nu este amestecată';
+$string['quizorderrandom'] = '* Ordinea testului este amestecată';
+$string['quizreport'] = 'Raport la test';
+$string['quizsettings'] = 'Setări test';
+$string['quiztimer'] = 'Timer test';
+$string['quizwillopen'] = 'Acest test se va deschide {$a}';
+$string['random'] = 'Întrebare aleatorie';
+$string['randomcreate'] = 'Creează întrebări aleatorii';
+$string['randomediting'] = 'Editează o întrebare aleatoare';
+$string['randomfromcategory'] = 'Întrebare aleatorie din categorie:';
+$string['randomfromexistingcategory'] = 'Întrebare aleatoare dintr-o categorie existentă';
+$string['randomfromunavailabletag'] = '{$a} (indisponibil)';
+$string['randomnosubcat'] = 'Întrebări doar din această categorie, nu din subcategoriile ei.';
+$string['randomnumber'] = 'Numărul de întrebări aleatorii';
+$string['randomquestion'] = 'Întrebări aleatorii';
+$string['randomquestion_help'] = 'O \'întrebare aleatorie\' este un mod de a insera o întrebare aleasă în mode aleatoriu dintr-o categorie specificată sau printr-o etichetă specificată într-o activitate.';
+$string['randomquestiontags'] = 'Etichete';
+$string['randomquestiontags_help'] = 'Puteți restrânge criteriile de selecție în continuare prin specificarea unor etichete de întrebare aici.
+
+Întrebările „aleatorii” vor fi selectate dintre întrebările care au toate aceste etichete.';
+$string['randomquestionusinganewcategory'] = 'Întrebare aleatorie utilizând o categorie nouă';
+$string['randomwithsubcat'] = 'Întrebări din această categorie și subcategorii.';
+$string['readytosend'] = 'Sunteți pe cale să trimiteți întregul test, pentru a fi notat. Sigur doriți să continuați?';
+$string['reattemptquiz'] = 'Încearcă din nou testul';
+$string['recentlyaddedquestion'] = 'Întrebare adăugată recent';
+$string['recurse'] = 'Include întrebări și din subcategorii';
+$string['redoesofthisquestion'] = 'Alte întrebări încercate aici: {$a}';
+$string['redoquestion'] = 'Încercați o nouă întrebare similară';
+$string['regrade'] = 'Reevaluează toate încercările';
+$string['regradecomplete'] = 'Toate încercările au fost reevaluate';
+$string['regradecount'] = '{$a->changed} din {$a->attempt} note au fost schimbate';
+$string['regradedisplayexplanation'] = 'Încercările care se modifică în timpul recalculării notelor sunt afișate ca hyperlink-uri către fereastra de examinare a întrebărilor';
+$string['regradenotallowed'] = 'Nu aveți permisiunea de a reevalua acest test';
+$string['regradingquestion'] = 'Reevaluarea "{$a}".';
+$string['regradingquiz'] = 'Renotarea testului "{$a}"';
+$string['remove'] = 'Șterge';
+$string['removeallgroupoverrides'] = 'Ștergeți toate suprascrierile grupului';
+$string['removeallquizattempts'] = 'Șterge toate încercările de test';
+$string['removealluseroverrides'] = 'Ștergeți toate suprascrierile utilizatorului';
+$string['removeemptypage'] = 'Șterge pagina goală';
+$string['removepagebreak'] = 'Ștergeți pagina nouă';
+$string['removeselected'] = 'Ștergeți ce ați selectat';
+$string['rename'] = 'Redenumește';
+$string['renderingserverconnectfailed'] = 'Serverul {$a} nu a reușit să proceseze o cerere RQP. Verificați dacă adresa URL este corectă.';
+$string['reorderquestions'] = 'Reordonați întrebările';
+$string['reordertool'] = 'Arată instrumentul de ordonare';
+$string['repaginate'] = 'Repaginează cu {$a} întrebări pe pagină';
+$string['repaginatecommand'] = 'Repaginează';
+$string['repaginatenow'] = 'Repaginează acum';
+$string['replace'] = 'Înlocuire';
+$string['replacementoptions'] = 'Opţiuni de înlocuire';
+$string['report'] = 'Rapoarte';
+$string['reportanalysis'] = 'Analiza articolelor';
+$string['reportattemptsfrom'] = 'Încercări de la';
+$string['reportattemptsthatare'] = 'Încercări care sunt';
+$string['reportdisplayoptions'] = 'Opțiunile de afișare';
+$string['reportfullstat'] = 'Statistici detaliate';
+$string['reportmulti_percent'] = 'Multi-procente';
+$string['reportmulti_q_x_student'] = 'Alegeri multi-utilizator';
+$string['reportmulti_resp'] = 'Răspunsuri individuale';
+$string['reportmustselectstate'] = 'Trebuie să selectați cel puțin un status.';
+$string['reportnotfound'] = 'Raport necunoscut  ({$a})';
+$string['reportoverview'] = 'Prezentare generală';
+$string['reportregrade'] = 'Reevaluare încercări';
+$string['reportresponses'] = 'Răspunsuri detaliate';
+$string['reports'] = 'Rapoarte';
+$string['reportshowonly'] = 'Afișează doar încercările';
+$string['reportshowonlyfinished'] = 'Afișează cel mult o încercare finalizată per utilizator ({$a})';
+$string['reportsimplestat'] = 'Statistici simple';
+$string['reportusersall'] = 'toți utilizatorii care au dat testul';
+$string['reportuserswith'] = 'utilizatori înscriși care au dat testul';
+$string['reportuserswithorwithout'] = 'utilizatori înscriși care au completat sau nu testul';
+$string['reportuserswithout'] = 'utilizatorii care nu au dat testul';
+$string['reportwhattoinclude'] = 'Ce trebuie inclus în raport';
+$string['requirepassword'] = 'Solicită o parolă';
+$string['requirepassword_help'] = 'daca este specificată o parolă, utilzatorul trebuie să o insereze pentru a completa testul.';
+$string['requiresubnet'] = 'Se solicită o adresă IP de rețea';
+$string['requiresubnet_help'] = 'Accesul la test poate fi limitat la anumite subrețele din rețeaua locală (LAN) sau Internet, specificând o listă separată prin virgulă a numerelor de adrese IP parțiale sau complete. Acest lucru poate fi util pentru un test controlat, pentru a vă asigura că numai persoanele dintr-o anumită locație pot accesa testul.';
+$string['response'] = 'Răspuns';
+$string['responses'] = 'Răspunsuri';
+$string['results'] = 'Rezultate';
+$string['returnattempt'] = 'Înapoi la încercare';
+$string['reuseifpossible'] = 'refolosirea eliminată anterior';
+$string['reverttodefaults'] = 'Resetează setările implicite ale testului';
+$string['review'] = 'Analizare';
+$string['reviewafter'] = 'Permiteți revizuirea după ce testul este închis';
+$string['reviewalways'] = 'Permiteți oricând revizuirea';
+$string['reviewattempt'] = 'Revizuiți încercarea';
+$string['reviewbefore'] = 'Permiteți revizuirea când testul este deschis';
+$string['reviewclosed'] = 'După ce testul s-a închis';
+$string['reviewduring'] = 'În timpul încercării';
+$string['reviewimmediately'] = 'Imediat după încercare';
+$string['reviewnever'] = 'Nu permiteți niciodată revizuirea';
+$string['reviewofquestion'] = 'Revizuirea întrebării {$a->question} în {$a->quiz} de către {$a->user}';
+$string['reviewopen'] = 'Mai târziu, când testul e încă disponibil';
+$string['reviewoptions'] = 'Cursanții pot revizui';
+$string['reviewoptionsheading'] = 'Opțiuni pentru revizuire';
+$string['reviewoptionsheading_help'] = 'Aceste opțiuni controlează informațiile pe care cursanții le pot vedea atunci când examinează o încercare de test sau se uită la rapoartele de test.
+
+** În timpul încercării ** setările sunt relevante numai pentru anumite comportamente, cum ar fi „interactiv cu mai multe încercări”, care pot afișa feedback în timpul încercării.
+
+** Imediat după încercare ** setările se aplică în primele două minute după ce se face clic pe „Trimiteți totul și terminați”.
+
+** Mai târziu, în timp ce testul este încă deschis ** setările se aplică după acesta și înainte de data închiderii testului.
+
+** După închiderea testului ** setările se aplică după ce data de închidere a testului a trecut. Dacă testul nu are o dată de închidere, această stare nu este atinsă niciodată.';
+$string['reviewoverallfeedback'] = 'Feedback-ul general al testului';
+$string['reviewoverallfeedback_help'] = 'Feedback-ul dat la sfârșitul încercării, în funcție de nota totală a elevului.';
+$string['reviewresponse'] = 'Revizuiți răspunsul';
+$string['reviewresponsetoq'] = 'Revizuiți răspunsul (întrebare {$a})';
+$string['reviewthisattempt'] = 'Revizuiți răspunsul dumneavoastră la această întrebare';
+$string['rqp'] = 'Întrebări din alt context';
+$string['rqps'] = 'Întrebări';
+$string['sameasoverall'] = 'La fel ca pentru toate notele';
+$string['save'] = 'Salvare';
+$string['saveandedit'] = 'Salvează modificările și editează întrebările';
+$string['saveattemptfailed'] = 'Nu s-a putut salva încercarea actuală la test.';
+$string['savedfromdeletedcourse'] = 'Salvat de la cursul șters "{$a}"';
+$string['savegrades'] = 'Salvează notele';
+$string['savemyanswers'] = 'Salvează răspunsurile mele';
+$string['savenosubmit'] = 'Salvați fără a trimite';
+$string['saveoverrideandstay'] = 'Salvați și inserați altă suprascriere';
+$string['savequiz'] = 'Salvează acest test';
+$string['saving'] = 'Salvare în curs';
+$string['savingnewgradeforquestion'] = 'Se salvează o nouă notă pentru id-ul întrebării {$a}.';
+$string['savingnewmaximumgrade'] = 'Se salvează noua notă maximă.';
+$string['score'] = 'Scor brut';
+$string['scores'] = 'Scoruri';
+$string['search:activity'] = 'Test - informații despre activitate';
+$string['sectionheadingedit'] = 'Editează antetul \'{$a}\'';
+$string['sectionheadingremove'] = 'Elimină antetul \'{$a}\'';
+$string['sectionnoname'] = 'Secțiune fără titlu';
+$string['seequestions'] = '(Vezi întrebările)';
+$string['select'] = 'Selectează';
+$string['selectall'] = 'Selectează tot';
+$string['selectattempt'] = 'Selectează încercarea';
+$string['selectcategory'] = 'Selectează categoria';
+$string['selectedattempts'] = 'Încercări salvate...';
+$string['selectmultipleitems'] = 'Selectați itemi multipli';
+$string['selectmultipletoolbar'] = 'Selectează bară de instrumente multiplă';
+$string['selectnone'] = 'Deselectează toate';
+$string['selectquestionslot'] = 'Selectează întrebare {$a}';
+$string['selectquestiontype'] = '-- Selectați tipul de întrebare --';
+$string['serveradded'] = 'Server adăugat';
+$string['serveridentifier'] = 'Identificator';
+$string['serverinfo'] = 'Informații despre server';
+$string['servers'] = 'Servere';
+$string['serverurl'] = 'URL server';
+$string['shortanswer'] = 'Răspuns scurt';
+$string['show'] = 'Afișează';
+$string['showall'] = 'Afișează toate întrebările pe o singură pagină';
+$string['showblocks'] = 'Afișează blocurile în timpul parcurgerii testului';
+$string['showblocks_help'] = 'Dacă este setat da, atunci block-urile normale vor fi afișate în timpul încercărilor la teste';
+$string['showbreaks'] = 'Arată delimitatoarele de pagini';
+$string['showcategorycontents'] = 'Afișați conținuturile categoriei {$a->arrow}';
+$string['showcorrectanswer'] = 'În feedback, să se afișeze răspunsul corect?';
+$string['showdetailedmarks'] = 'Arată detaliile punctelor';
+$string['showeachpage'] = 'Afișați câte o pagină pe rând';
+$string['showfeedback'] = 'După ce ați răspuns, doriți să se afișeze feedback-ul?';
+$string['showinsecurepopup'] = 'Utilizați o fereastră pop-up „securizată” pentru încercări';
+$string['showlargeimage'] = 'Imagine mare';
+$string['shownoattempts'] = 'Afișează cursanții fără încercări';
+$string['shownoattemptsonly'] = 'Afișați numai cursanții fără încercări';
+$string['shownoimage'] = 'Nicio imagine';
+$string['showreport'] = 'Afișează raportul';
+$string['showsmallimage'] = 'Imagine mică';
+$string['showteacherattempts'] = 'Afișează încercările formatorului';
+$string['showuserpicture'] = 'Afișați imaginea utilizatorului';
+$string['showuserpicture_help'] = 'Dacă este activat, numele și imaginea unui student vor fi afișate pe ecran în timpul încercării și pe ecranul de revizuire, facilitând verificarea faptului că un cursant este conectat ca el însuși la un examen controlat.';
+$string['shuffle'] = 'Amestecă';
+$string['shuffleanswers'] = 'Răspunsuri amestecate';
+$string['shuffledrandomly'] = 'Amestecate aleatoriu';
+$string['shufflequestions'] = 'Amestecă';
+$string['shufflequestions_help'] = 'Dacă este activat, de fiecare dată când se încearcă testul, ordinea întrebărilor din această secțiune va fi amestecată într-o altă ordine aleatorie.
+
+Acest lucru poate face mai dificil pentru cursanți să împărtășească răspunsurile, dar, de asemenea, face mai dificil pentru cursanți să discute o anumită întrebare cu profesorul.';
+$string['shufflewithin'] = 'Amestecă ordinea răspunsurile din întrebare';
+$string['shufflewithin_help'] = 'Dacă este activată, părțile care alcătuiesc fiecare întrebare vor fi amestecate aleatoriu de fiecare dată când un cursant începe testul, cu condiția ca opțiunea să fie activată și în setările întrebării. Această setare se aplică numai întrebărilor care au mai multe părți, cum ar fi întrebări cu opțiuni multiple sau întrebări de tip potrivire.';
+$string['singleanswer'] = 'Alege un răspuns.';
+$string['sortage'] = 'Sortează după vârstă';
+$string['sortalpha'] = 'Sortează dupa nume';
+$string['sortquestionsbyx'] = 'Sortează întrebările după: {$a}';
+$string['sortsubmit'] = 'Sortează întrebările';
+$string['sorttypealpha'] = 'Sortează după tip, nume';
+$string['specificapathnotonquestion'] = 'Calea specificată pentru fișier nu se află în întrebarea specificată';
+$string['specificquestionnotonquiz'] = 'Întrebarea specificată nu este în testul specificat';
+$string['startagain'] = 'Incepe din nou';
+$string['startattempt'] = 'Începeți încercarea';
+$string['startedon'] = 'Început pe';
+$string['startnewpreview'] = 'Începeți o previzualizare nouă';
+$string['stateabandoned'] = 'Nu au fost trimise niciodată';
+$string['statefinished'] = 'Finalizate';
+$string['statefinisheddetails'] = 'Trimis {$a}';
+$string['stateinprogress'] = 'În desfășurare';
+$string['statenotloaded'] = 'Starea pentru întrebarea {$a} nu a fost încărcată din baza de date';
+$string['stateoverdue'] = 'Depășite';
+$string['stateoverduedetails'] = 'Trebuie să fie trimis de către {$a}';
+$string['status'] = 'Stare';
+$string['stoponerror'] = 'Oprește eroarea';
+$string['submission_confirmation'] = 'Trimiți răspunsurile și finalizezi?';
+$string['submission_confirmation_unanswered'] = 'Întrebări fără un răspuns: {$a}';
+$string['submitallandfinish'] = 'Trimite testul pentru evaluare';
+$string['subneterror'] = 'Ne pare rău, acest test a fost blocat astfel încât să fie accesibil numai din anumite locații. În prezent computerul dumneavoastră nu este unul dintre cele de pe care puteți să dați acest test.';
+$string['subnetnotice'] = 'Acest test a fost blocat astfel încât să fie accesibil numai din anumite locații. Computerul dvs. nu se află într-o subrețea permisă. În calitate de profesor aveți permisiunea de a previzualiza oricum.';
+$string['subplugintype_quiz'] = 'Raport';
+$string['subplugintype_quiz_plural'] = 'Rapoarte';
+$string['subplugintype_quizaccess'] = 'Regula de acces';
+$string['subplugintype_quizaccess_plural'] = 'Reguli de acces';
+$string['substitutedby'] = 'va fi înlocuit cu';
+$string['summaryofattempt'] = 'Rezumatul încercării';
+$string['summaryofattempts'] = 'Rezumatul încercărilor tale anterioare';
+$string['temporaryblocked'] = 'Nu puteți voie acum să încercați din nou testul.<br /> Veți putea să mai încercați în:';
+$string['theattempt'] = 'Încercarea';
+$string['theattempt_help'] = 'Specifică dacă studentul poate revedea sau nu încercarea.';
+$string['time'] = 'Timp';
+$string['timecompleted'] = 'Finalizat';
+$string['timedelay'] = 'Nu aveți voie să parcurgeți testul deoarece nu a trecut timpul limită pentru începerea următoarei încercări.';
+$string['timeleft'] = 'Timp rămas';
+$string['timelimit'] = 'Limita de timp';
+$string['timelimit_help'] = 'Dacă este activată, limita de timp este indicată pe pagina inițială a testului și un cronometru este afișat în blocul de navigare a testului.';
+$string['timelimit_link'] = 'mod/test/timp';
+$string['timelimitexeeded'] = 'Ne pare rău! Limita de timp a testului a fost depășită!';
+$string['timestr'] = '%O:%M:%S on %z/%l/%a';
+$string['timesup'] = 'Timpul s-a terminat!';
+$string['timetaken'] = 'Timp de parcurgere test';
+$string['timing'] = 'Data și ora';
+$string['tofile'] = 'în fișier';
+$string['tolerance'] = 'Toleranţă';
+$string['toomanyrandom'] = 'Numărul de întrebări aleatorii necesare este mai mare decât numărul celor disponibile în categorie!';
+$string['top'] = 'Clasament';
+$string['totalmarksx'] = 'Total puncte: {$a}';
+$string['totalquestionsinrandomqcategory'] = 'Totalul de {$a} întrebări în categorie.';
+$string['true'] = 'Adevărat';
+$string['truefalse'] = 'Adevărat/fals';
+$string['type'] = 'Tip';
+$string['unfinished'] = 'deschis';
+$string['ungraded'] = 'Fără notă';
+$string['unit'] = 'Unitate';
+$string['unknowntype'] = 'Tipul de întrebare nu este acceptat la linia {$a}. Întrebarea va fi ignorată';
+$string['updateoverdueattemptstask'] = 'Actualizarea încercărilor de testare cu timp depășit';
+$string['updatequizslotswithrandomxofy'] = 'Actualizarea loturilor de teste cu întrebări „aleatorii” ({$a->done}/{$a->total})';
+$string['updatesettings'] = 'Actualizează setările testului';
+$string['updatingatttemptgrades'] = 'Se actualizează notele la încercare.';
+$string['updatingfinalgrades'] = 'Se actualizează notele finale.';
+$string['updatingthegradebook'] = 'Se actualizează catalogul';
+$string['upgradesure'] = '<div> În special modulul de testare va efectua o schimbare extinsă a tabelelor de teste și această actualizare nu a fost încă testată suficient. Sunteți îndemnat să copiați tabelele bazei de date înainte de a continua. </div>';
+$string['upgradingquizattempts'] = 'Actualizarea încercărilor de test: test {$a->done}/{$a->out} (Testul este {$a->info})';
+$string['upgradingveryoldquizattempts'] = 'Actualizarea încercărilor de test foarte vechi: {$a->done}/{$a->out}';
+$string['url'] = 'URL';
+$string['usedcategorymoved'] = 'Această categorie a fost păstrată și mutată la nivelul site-ului, deoarece este o categorie publicată și încă folosită de alte cursuri.';
+$string['useroverrides'] = 'Suprascrieri la nivel de utilizator';
+$string['useroverridesdeleted'] = 'Suprascrierile de utilizator au fost șterse';
+$string['usersnone'] = 'Niciun cursant nu are acces la acest test';
+$string['validate'] = 'Validare';
+$string['viewallanswers'] = 'Vizualizați {$a} încercări de test';
+$string['viewallreports'] = 'Vizualizați rapoarte pentru {$a} încercări';
+$string['viewed'] = 'Vizualizat';
+$string['warningmissingtype'] = '<b>Această întrebare este de un tip care nu a fost încă instalat pe Moodle. <br /> Vă rugăm să vă informați administratorul Moodle.</b>';
+$string['wheregrade'] = 'Unde e nota mea?';
+$string['wildcard'] = 'Wild card';
+$string['windowclosing'] = 'Această fereastră se va închide în scurt timp.';
+$string['withsummary'] = 'cu sumarul Statisticilor';
+$string['wronguse'] = 'Nu puteți utiliza această pagină astfel';
+$string['xhtml'] = 'XHTML';
+$string['youneedtoenrol'] = 'Trebuie să vă înscrieți la acest curs înainte de a putea încerca acest test';
+$string['yourfinalgradeis'] = 'Nota dvs. finală pentru acest test este {$a}.';

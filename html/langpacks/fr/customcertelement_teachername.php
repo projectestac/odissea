@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Nom de l\'enseignant';
-$string['privacy:metadata'] = 'Le plugin Nom de l\'enseignant n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Nom de l’enseignant';
+$string['privacy:metadata'] = 'Le plugin Nom de l’enseignant n’enregistre aucune donnée personnelle.';
 $string['teacher'] = 'Enseignant';
-$string['teacher_help'] = 'Le nom de l\'enseignant qui s\'affichera sur le certificat PDF.';
+$string['teacher_help'] = 'Le nom de l’enseignant qui s’affichera sur le certificat PDF.';

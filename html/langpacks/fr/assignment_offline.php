@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Hors ligne';
-$string['privacy:metadata'] = 'Le plugin Devoir hors ligne n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Devoir hors ligne n’enregistre aucune donnée personnelle.';

@@ -63,7 +63,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'معلومات عن م�
 $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'عنوان البريد الالكتروني أو مُعرَّف حساب PayPal لمستلم الدفعة المالية (أي التاجر)';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'مُعرَّف المساق المباع';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'مُعرَّف عينة الانضمام في المساق';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'الاسم الكامل للمساق الدراسي الذي تم بيع الانضمام إليه';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'الاسم الكامل للمقرر الدراسي الدراسي الذي تم بيع الانضمام إليه';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'الملاحظة التي أدخلها المشتري في حقل الملاحظة لموقع مبيعات PayPal';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'الاسم الكامل للمشتري';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'في حالة إعادة المال، إلغاء الشراء، أو إلغاء إلغاء الشراء، هذا سيكون مُعرَّف المعاملة المالية الأصلية.';

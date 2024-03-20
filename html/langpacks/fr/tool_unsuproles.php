@@ -30,4 +30,4 @@ $string['contextlevel'] = 'Niveau de contexte';
 $string['count'] = 'Nombre';
 $string['noprolbems'] = 'Aucune attribution non supportée de rôle';
 $string['pluginname'] = 'Attributions non supportées de rôles';
-$string['privacy:metadata'] = 'Le plugin Attributions non supportées de rôles n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Attributions non supportées de rôles n’enregistre aucune donnée personnelle.';

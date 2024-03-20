@@ -279,7 +279,7 @@ $string['surveytype_help'] = 'Er zijn drie types van onderzoek beschikbaar:
 
 * \'Attitudes to Thinking and Learning Survey (ATTLS, Houdingen ten opzichte van denken en leren) - Dit onderzoek meet de mate waarin een persoon een \'verbonden kenner\' is (die eerder het leren aangenaam vindt, en vaak meer coöperatief, aangenaam, en bereid is om voort te bouwen op de ideeën van anderen) of een \'aparte kenner\' (neemt bij het leren eerder een kritische en argumentatieve houding aan)
 * \'Critical incidents survey\'
-* \'Constructivist On-line Learning Environment Survey (COLLES) - Gaat na in welke mate de interactive mogelijkheden van het World Wide Web gebruikt kunnen worden om studenten te engageren in dynamische lespraktijken.';
+* \'Constructivist On-line Learning Environment Survey (COLLES) - Gaat na in welke mate de interactive mogelijkheden van het World Wide Web gebruikt kunnen worden om leerlingen te engageren in dynamische lespraktijken.';
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Bedankt voor het invullen van dit onderzoek, {$a}';
 $string['time'] = 'Tijd';

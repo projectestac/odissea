@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Audio HTML5';
 $string['pluginname_help'] = 'Fichiers audio lus par le lecteur natif du navigateur (le support des formats dépend du navigateur).';
-$string['privacy:metadata'] = 'Le plugin média Audio HTML5 n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin média Audio HTML5 n’enregistre aucune donnée personnelle.';

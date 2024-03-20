@@ -25,23 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'Éléments d\'évaluation mis en cache pour l\'évaluation de la disponibilité conditionnelle';
-$string['cachedef_scores'] = 'Notes de l\'utilisateur mises en cache pour l\'évaluation de la disponibilité conditionnelle';
-$string['description'] = 'Requiert l\'atteinte d\'une note minimale par les étudiants';
-$string['error_backwardrange'] = 'Lors de l\'indication d\'un intervalle de notes, le minimum doit être inférieur au maximum.';
+$string['cachedef_items'] = 'Éléments d’évaluation mis en cache pour l’évaluation de la disponibilité conditionnelle';
+$string['cachedef_scores'] = 'Notes de l’utilisateur mises en cache pour l’évaluation de la disponibilité conditionnelle';
+$string['description'] = 'Requiert l’atteinte d’une note minimale par les étudiants';
+$string['error_backwardrange'] = 'Lors de l’indication d’un intervalle de notes, le minimum doit être inférieur au maximum.';
 $string['error_invalidnumber'] = 'Les intervalles de notes doivent être indiqués avec des pourcentages valides.';
-$string['error_selectgradeid'] = 'Vous devez sélectionner un élément d\'évaluation pour la condition de note.';
+$string['error_selectgradeid'] = 'Vous devez sélectionner un élément d’évaluation pour la condition de note.';
 $string['label_max'] = 'Pourcentage de note maximum (exclusif)';
 $string['label_min'] = 'Pourcentage de note minimum (inclusif)';
 $string['missing'] = '(activité manquante)';
 $string['option_max'] = 'doit être <';
 $string['option_min'] = 'doit être ≥';
 $string['pluginname'] = 'Restriction par note';
-$string['privacy:metadata'] = 'Le plugin Restriction par note n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Restriction par note n’enregistre aucune donnée personnelle.';
 $string['requires_any'] = 'Vous ayez une note dans <strong>{$a}</strong>';
-$string['requires_max'] = 'Vous obteniez une note plus base qu\'un certain score dans <strong>{$a}</strong>';
-$string['requires_min'] = 'Vous obteniez une note plus élevée qu\'un certain score dans <strong>{$a}</strong>';
-$string['requires_notany'] = 'Vous n\'ayez pas de note dans <strong>{$a}</strong>';
-$string['requires_notgeneral'] = 'Vous n\'obteniez pas des notes particulières dans <strong>{$a}</strong>';
+$string['requires_max'] = 'Vous obteniez une note plus basse qu’un certain score dans <strong>{$a}</strong>';
+$string['requires_min'] = 'Vous obteniez une note plus élevée qu’un certain score dans <strong>{$a}</strong>';
+$string['requires_notany'] = 'Vous n’ayez pas de note dans <strong>{$a}</strong>';
+$string['requires_notgeneral'] = 'Vous n’obteniez pas des notes particulières dans <strong>{$a}</strong>';
 $string['requires_range'] = 'Vous obteniez une note dans un certain intervalle dans <strong>{$a}</strong>';
 $string['title'] = 'Note';

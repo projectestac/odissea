@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Délai entre les tentatives de test';
-$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Délai entre les tentatives de test n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de restriction d’accès au test Délai entre les tentatives de test n’enregistre aucune donnée personnelle.';
 $string['youcannotwait'] = 'Ce test se termine avant que vous ne puissiez effectuer une nouvelle tentative.';
 $string['youmustwait'] = 'Vous devez attendre avant de pouvoir refaire une tentative de ce test. Vous pourrez effectuer une nouvelle tentative après le {$a}.';

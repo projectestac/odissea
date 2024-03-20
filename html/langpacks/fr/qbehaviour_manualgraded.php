@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Noté manuellement';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Noté manuellement n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Noté manuellement n’enregistre aucune donnée personnelle.';

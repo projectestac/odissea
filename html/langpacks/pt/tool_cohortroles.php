@@ -51,5 +51,5 @@ $string['removecohortroleassignmentconfirm'] = 'Tem a certeza de que pretende re
 $string['selectcohorts'] = 'Selecionar Grupos globais';
 $string['selectrole'] = 'Selecionar papel';
 $string['selectusers'] = 'Selecionar utilizadores para atribuir o papel';
-$string['taskname'] = 'Sincronizar atribuições de papel do Grupo global';
+$string['taskname'] = 'Sincronização de atribuições de papel do Grupo global';
 $string['thisuserroles'] = 'Papéis atribuídos em relação a este utilizador';

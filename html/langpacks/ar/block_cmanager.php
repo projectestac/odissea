@@ -73,7 +73,7 @@ $string['namingConvetion_option4'] = 'الاسم المختصر - الاسم ا�
 $string['namingConvetion_option5'] = 'الاسم الكامل (السنة)';
 $string['privacy:metadata:db:block_cmanager_comments:dt'] = 'وقت الإنشاء';
 $string['privacy:metadata:db:block_cmanager_records:createdate'] = 'وقت الإنشاء';
-$string['privacy:metadata:db:block_cmanager_records:modname'] = 'الاسم الكامل للمساق المطلوب';
+$string['privacy:metadata:db:block_cmanager_records:modname'] = 'الاسم الكامل للمقرر الدراسي المطلوب';
 $string['requestReview_courseName'] = 'اسم المقرر';
 $string['requestReview_moduleName'] = 'اسم المقرر';
 $string['request_rule1'] = 'يرجى إدخال قيمة في هذا الحقل';

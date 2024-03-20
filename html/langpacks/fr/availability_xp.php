@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Requiert un niveau d\'expérience de l\'utilisateur';
+$string['description'] = 'Requiert un niveau d’expérience de l’utilisateur';
 $string['invalidlevel'] = 'Niveau invalide';
-$string['levelgreaterorequalto'] = 'Le niveau d\'expérience doit être supérieur ou égal à';
+$string['levelgreaterorequalto'] = 'Le niveau d’expérience doit être supérieur ou égal à';
 $string['levelnnotrequiredtoaccess'] = 'Votre niveau ne soit pas {$a} ou plus.';
 $string['levelnrequiredtoaccess'] = 'Votre niveau soit {$a} ou plus.';
-$string['pluginname'] = 'Restriction par niveau d\'expérience';
+$string['pluginname'] = 'Restriction par niveau d’expérience';
 $string['title'] = 'Niveau';

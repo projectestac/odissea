@@ -75,6 +75,6 @@ $string['settingsheaderdb'] = 'Ligação à base de dados externa';
 $string['settingsheaderlocal'] = 'Mapeamento local de campos';
 $string['settingsheadernewcourses'] = 'Criação de novas disciplinas';
 $string['settingsheaderremote'] = 'Sincronização externa de inscrições';
-$string['syncenrolmentstask'] = 'Tarefa de sincronização das inscrições com base de dados externa';
+$string['syncenrolmentstask'] = 'Sincronização de inscrições com base de dados externa';
 $string['templatecourse'] = 'Modelo para novas disciplinas';
 $string['templatecourse_desc'] = 'Opcional: as configurações das disciplinas criadas autonomamente poder ser copiadas de uma outra disciplina já existente. Indique neste campo o nome curto da disciplina a usar como modelo.';

@@ -38,6 +38,7 @@ $string['importformat'] = 'Configure os formatos de importación predeterminados
 $string['internal'] = 'Interno (ficheiros almacenados en Moodle)';
 $string['issuer'] = 'Servizo OAuth 2';
 $string['issuer_help'] = 'Seleccione o servizo OAuth 2 que está configurado para falar coa API de Google Drive. Se o servizo aínda non existe, terá que crealo.';
+$string['mydrive'] = 'O meu Drive';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Link to OAuth 2 services configuration">Configuración de servizos OAuth 2</a>';
 $string['owner'] = 'Propiedade de: {$a}';
 $string['pluginname'] = 'Google Drive';
@@ -47,5 +48,6 @@ $string['privacy:metadata:repository_googledocs:email'] = 'O correo do usuario d
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'A consulta de busca de texto de usuario do repositorio Google Drive.';
 $string['searchfor'] = 'Buscar por: {$a}';
 $string['servicenotenabled'] = 'O acceso non está configurado. Asegúrese de que o servizo «Drive API» está activo.';
+$string['shareddrives'] = 'Unidades compartidas';
 $string['spreadsheetformat'] = 'Formato de importación predeterminado de folla de cálculo';
 $string['supportedreturntypes'] = 'Ficheiros admitidos';

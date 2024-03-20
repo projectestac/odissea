@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Notes exportées en format XML';
 $string['pluginname'] = 'Fichier XML';
-$string['privacy:metadata'] = 'Le plugin d\'exportation de notes Fichier XML n\'enregistre aucune donnée personnelle.';
-$string['xml:publish'] = 'Publier l\'exportation des notes au format XML';
+$string['privacy:metadata'] = 'Le plugin d’exportation de notes Fichier XML n’enregistre aucune donnée personnelle.';
+$string['xml:publish'] = 'Publier l’exportation des notes au format XML';
 $string['xml:view'] = 'Exporter les notes au format XML';

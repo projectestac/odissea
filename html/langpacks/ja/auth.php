@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = '利用可能な認証プラグイン';
 $string['allowaccountssameemail'] = '同一メールのアカウントを許可する';
-$string['allowaccountssameemail_desc'] = 'この設定を有効にした場合、2つ以上のユーザアカウントが同一メールアドレスを共有できるようになります。これにより、例えばパスワード変更確認メールのようにセキュリティまたはプライバシーに関する問題が発生する可能性があります。';
+$string['allowaccountssameemail_desc'] = 'この設定を有効にした場合、2つ以上のユーザアカウントが同一メールアドレスを共有できるようになります。これで例えばパスワード変更確認メールのようにセキュリティまたはプライバシーに関する問題が発生する可能性があります。';
 $string['alternatelogin'] = 'ここにURLを入力した場合、このサイトのログインページとして使用されます。ログインページではaction属性に<strong>「 {$a} 」</strong>をセットして<strong>username</strong>フィールドおよび <strong>password</strong>フィールドをMoodleに渡してください。<br />間違ったURLを設定した場合、あなたのサイトから締め出されることになりますので注意してください。<br />デフォルトのログイン画面を使用する場合、空白のままにしてください。';
 $string['alternateloginurl'] = '代替ログインURL';
 $string['auth_changepasswordhelp'] = 'パスワード変更のヘルプ';

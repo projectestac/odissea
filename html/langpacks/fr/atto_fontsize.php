@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Taille de police';
+$string['privacy:metadata'] = 'Le plugin Atto Taille de caractère n’enregistre aucune donnée personnelle.';

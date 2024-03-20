@@ -97,9 +97,13 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
         if (!$answer) {
             return '';
         }
+
+        $slots = $qa->get_question()->wirisquestion->question->getSlots();
+        $initialcontent = isset($slots[0]) ? $slots[0]->getInitialContent() : null;
+
         $wrap = com_wiris_system_CallWrapper::getInstance();
         $wrap->start();
-        $filterableanswer = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->answerToFilterableValue($answer['answer']);
+        $filterableanswer = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->answerToFilterableValue($answer['answer'], $initialcontent);
         $wrap->stop();
         $text = get_string('correctansweris', 'qtype_shortanswer', $filterableanswer);
         return $question->format_text($text, FORMAT_HTML, $qa, 'question', 'correctanswer', $question->id);

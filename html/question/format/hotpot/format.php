@@ -106,7 +106,7 @@ class qformat_hotpot extends qformat_default {
             $this->error('HotPot import class missing: '.$classname);
             return false;
         }
-        $source = new $classname(implode($lines, ' '), $this);
+        $source = new $classname(implode(' ', $lines), $this);
 
         // build XML tree for this HotPot
         $source->xml_get_filecontents();

@@ -54,11 +54,16 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
     private $subq;
 
     public function __construct($subq) {
+        global $CFG;
         $this->subq = $subq;
 
         $this->qtype = &$this->subq->base->qtype; // Base shortanswer qtype.
 
-        $this->maxmark = &$this->subq->maxmark;
+        if ($CFG->version >= 2023042402 /* v4.2.2 */) {
+            $this->defaultmark = &$this->subq->defaultmark;
+        } else {
+            $this->maxmark = &$this->subq->maxmark;
+        }
         $this->answers = &$this->subq->answers;
     }
     // Shortanswerwiris grading.

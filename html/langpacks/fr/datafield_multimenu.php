@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Liste à sélection multiple';
 $string['pluginname'] = 'Liste à sélection multiple';
-$string['privacy:metadata'] = 'Le composant Champ liste à sélection multiple n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['privacy:metadata'] = 'Le composant Champ liste à sélection multiple n’enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

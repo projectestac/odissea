@@ -32,21 +32,21 @@ $string['deploymenterror'] = 'Erreur dans le contenu du paquetage !';
 $string['imscp:addinstance'] = 'Ajouter un paquetage IMS';
 $string['imscp:view'] = 'Consulter une activité IMS Content';
 $string['indicator:cognitivedepth'] = 'IMS : aspect cognitif';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l’étudiant dans une ressource Paquetage IMS content.';
 $string['indicator:cognitivedepthdef'] = 'IMS : aspect cognitif';
-$string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Paquetage IMS » (niveaux : pas de vue, vue).';
+$string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d’analyse ce pourcentage d’engagement cognitif offert par les ressources « Paquetage IMS » (niveaux : pas de vue, vue).';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'IMS : aspect social';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l’interaction sociale atteinte par l’étudiant dans une ressource Paquetage IMS content.';
 $string['indicator:socialbreadthdef'] = 'IMS : aspect social';
-$string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Paquetage IMS » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d’analyse ce pourcentage d’engagement social offert par les ressources « Paquetage IMS » (niveaux : pas de participation, participant seul).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Archiver les paquetages';
 $string['keepoldexplain'] = 'Combien de paquetages doivent être archivés ?';
 $string['modulename'] = 'Paquetage IMS Content';
-$string['modulename_help'] = 'Un paquetage IMS content est un ensemble de fichiers combinés suivant la spécification IMS Content Packaging, afin d\'être réutilisé dans différents systèmes. Le module IMS content package permet de déposer de tels paquetages sous la forme de fichiers compressés ZIP et de les ajouter comme ressource dans un cours.
+$string['modulename_help'] = 'Un paquetage IMS content est un ensemble de fichiers combinés suivant la spécification IMS Content Packaging, afin d’être réutilisé dans différents systèmes. Le module IMS content package permet de déposer de tels paquetages sous la forme de fichiers compressés ZIP et de les ajouter comme ressource dans un cours.
 
-Le contenu est en principe affiché sur plusieurs pages avec une navigation permettant de passer d\'une page à l\'autre. Il y a diverses options d\'affichage, dans une fenêtre surgissante, avec une table des matières, avec des boutons de navigation, etc.
+Le contenu est en principe affiché sur plusieurs pages avec une navigation permettant de passer d’une page à l’autre. Il y a diverses options d’affichage, dans une fenêtre surgissante, avec une table des matières, avec des boutons de navigation, etc.
 
 Un paquetage IMS content peut être utilisé pour présenter des contenus multimédias ou des animations.';
 $string['modulename_link'] = 'mod/imscp/view';
@@ -56,6 +56,6 @@ $string['packagefile'] = 'Fichier paquetage';
 $string['page-mod-imscp-x'] = 'Toute page du module IMS content package';
 $string['pluginadministration'] = 'Administration IMSCP';
 $string['pluginname'] = 'Paquetage IMS Content';
-$string['privacy:metadata'] = 'Le plugin Paquetage IMS Content n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Paquetage IMS Content n’enregistre aucune donnée personnelle.';
 $string['search:activity'] = 'Paquetage IMS – information sur la ressource';
 $string['toc'] = 'TDM';

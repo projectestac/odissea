@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'اسم الاستاذ';
+$string['pluginname'] = 'اسم المدرس';
 $string['privacy:metadata'] = 'إن إضافة اسم المعلم لا تخزن أي بيانات شخصية.';
-$string['teacher'] = 'استاذ';
-$string['teacher_help'] = 'هذه اسم الاستاذ الذي سوف يظهر';
+$string['teacher'] = 'مدرس';
+$string['teacher_help'] = 'هذه اسم المدرس الذي سوف يظهر';

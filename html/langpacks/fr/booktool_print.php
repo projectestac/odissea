@@ -33,4 +33,4 @@ $string['printbook'] = 'Imprimer tout le livre';
 $string['printchapter'] = 'Imprimer ce chapitre';
 $string['printdate'] = 'Date';
 $string['printedby'] = 'Imprimé par';
-$string['privacy:metadata'] = 'Le plugin Impression de livre n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Impression de livre n’enregistre aucune donnée personnelle.';

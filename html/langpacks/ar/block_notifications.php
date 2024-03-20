@@ -27,11 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_event'] = 'حدث التقويم';
 $string['events_explanation'] = 'تمكين الأحداث التي سيتم إرسال إشعارات بها هنا.';
+$string['glossary'] = 'قاموس المصطلحات';
 $string['notifications:addinstance'] = 'إضافة كتلة الإشعارات';
 $string['notifications:myaddinstance'] = 'إضافة كتلة الإشعارات إلى صفحة مودل الخاصة بي';
 $string['page'] = 'الصفحة';
 $string['quiz'] = 'الاختبار';
 $string['quizport'] = 'منفذ الاختبار';
-$string['set_mobile_number_instructions'] = 'إذهب إلى صفحة المساق وأنقر على اسمك في الزاوية العليا اليمنى، ثم انقر على تعديل الملف الشخصي واذهب إلى أسفل الصفحة. ضع رقمك في حقل رقم الجوال ثم انقر على تحديث الملف الشخصي للحفظ.';
+$string['set_mobile_number_instructions'] = 'إذهب إلى صفحة المقرر وأنقر على اسمك في الزاوية العليا اليمنى، ثم انقر على تعديل الملف الشخصي واذهب إلى أسفل الصفحة. ضع رقمك في حقل رقم الجوال ثم انقر على تحديث الملف الشخصي للحفظ.';
 $string['sms_icon_phone_number_missing_tooltip'] = 'لم يتم وضع رقم الجوال. أنقر للوصول إلى معلومات عن كيفية المتابعة من أجل وضع رقمك الشخصي.';
 $string['user_preference_settings'] = 'الإعدادات الشخصية';

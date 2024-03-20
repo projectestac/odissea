@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['connectionratiorow'] = 'Connexions par jour';
-$string['dedication:addinstance'] = 'Permettre d\'ajouter le bloc Implication';
+$string['dedication:addinstance'] = 'Permettre d’ajouter le bloc Implication';
 $string['dedicationall'] = 'Implication de tous les membres du cours. Cliquez sur un nom pour visualiser le détail de son implication dans le cours.';
 $string['dedicationrow'] = 'Implication dans le cours';
 $string['period'] = 'Période du <em>{$a->mintime}</em> au <em>{$a->maxtime}</em>';
-$string['perioddiff'] = '<strong>Temps écoulé :</strong>  {$a}';
+$string['perioddiff'] = '<strong>Temps écoulé :</strong> {$a}';
 $string['pluginname'] = 'Implication dans le cours';
 $string['sessionduration'] = 'Durée';
 $string['sessionstart'] = 'Début de la session';
-$string['userdedication'] = 'Détails de l\'implication dans le cours de <em>{$a}</em>.';
+$string['userdedication'] = 'Détails de l’implication dans le cours de <em>{$a}</em>.';

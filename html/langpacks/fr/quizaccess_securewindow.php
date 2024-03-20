@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sécurité Javascript';
 $string['popupwithjavascriptsupport'] = 'Nouvelle fenêtre plein écran avec un peu de sécurité Javascript';
-$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Sécurité Javascript n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de restriction d’accès au test Sécurité Javascript n’enregistre aucune donnée personnelle.';

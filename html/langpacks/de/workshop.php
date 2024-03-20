@@ -344,10 +344,10 @@ $string['sortdesc'] = 'Abwärts sortieren';
 $string['strategy'] = 'Bewertungsstrategie';
 $string['strategy_help'] = 'Die Bewertungsstrategie legt den verwendeten Beurteilungsbogen und die Methode für das Bewerten von Einreichungen fest. Es gibt vier Optionen:
 
-* Aufsummierte Bewertung – anhand von festgelegten Kriterien werden die eingereichten Arbeiten mit Punkten und Kommentaren bewertet.
-* Kommentare – anhand von festgelegten Kriterien werden die eingereichten Arbeiten kommentiert, jedoch keine Punkte vergeben.
-* Aussagen zustimmen oder ablehnen – die eingereichten Arbeiten werden in der Form Ja / Nein (d.h. Akzeptiert / Nicht akzeptiert, Bestanden / Nicht bestanden) bewertet. Zusätzlich können Kommentare hinzugefügt werden.
-* Bewertungskriterien – anhand von festgelegten Kriterien wird eine Bewertung von Aspekten der eingereichten Arbeiten vorgenommen.';
+* Aufsummierte Bewertung: Verwendet ein Formular mit gewichteten Kriterien, die individuell bewertet werden. Die Gesamtbewertung ist ein gewichtetes Mittel der normalisierten Bewertungen.
+* Kommentare: Nutzt ein Formular ohne Punkte oder Skalenwerte, stattdessen werden Kommentare hinterlegt und die Gesamtbewertung auf 100% gesetzt. Ideal für wiederholte Einreichungen.
+* Aussagen zustimmen oder ablehnen: Das Formular besteht aus Kriterien, die als zutreffend oder nicht zutreffend markiert werden.
+* Bewertungskriterien: Das Formular besteht aus Kriterien mit beschreibenden Niveaustufen und zugeordneten Punktzahlen. Bewerter/innen wählen die passende Niveaustufe für jedes Kriterium.';
 $string['strategyhaschanged'] = 'Die Punktestrategie der gegenseitigen Beurteilung wurde seit dem Beginn der Änderungen geändert.';
 $string['submission'] = 'Einreichung';
 $string['submissionattachment'] = 'Dateianhang';

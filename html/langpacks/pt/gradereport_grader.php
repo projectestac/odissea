@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Clique nesta caixa para removê-la';
 $string['ajaxerror'] = 'Erro';
 $string['ajaxfailedupdate'] = 'Não é possível atualizar [1] [2]';
 $string['ajaxfieldchanged'] = 'O campo que está a editar alterou-se, gostaria de usar o valor atualizado?';
+$string['editingmode_title'] = 'A editar o relatório do avaliador';
 $string['eventgradereportviewed'] = 'Relatório de avaliador visualizado';
 $string['grader:manage'] = 'Gerir relatório de avaliação';
 $string['grader:view'] = 'Ver relatório de avaliação';

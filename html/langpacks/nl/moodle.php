@@ -440,7 +440,8 @@ $string['courserequestdetails'] = 'Details van je gevraagde cursus';
 $string['courserequestfailed'] = 'Door een onbekende fout kon je aanvraag voor een nieuwe cursus niet bewaard worden.';
 $string['courserequestintro'] = 'Gebruik dit formulier om je site-beheerders te vragen een nieuwe cursus te maken.<br />Probeer zo veel mogelijk informatie te geven, zodat de site-beheerders begrijpen waarom je deze nieuwe cursus zou willen.';
 $string['courserequestreason'] = 'Motiveer je aanvraag voor een nieuwe cursus';
-$string['courserequestsuccess'] = 'Je aanvraag voor een nieuwe cursus is bewaard. Je kunt binnen enkele dagen een e-mail verwachten met een antwoord op je vraag';
+$string['courserequestroleerror'] = 'De rol van de maker in de nieuwe cursusconfiguratie is niet geldig. Zie <a href="{$a}">user policies</a>.';
+$string['courserequestsuccess'] = 'Cursusaanvraag ingestuurd.';
 $string['courserequestsupport'] = 'Meer informatie die de beheerder helpt met het evalueren van deze aanvraag';
 $string['courserequestwarning'] = 'De gebruiker die deze cursus vraagt zal automatisch aangemeld worden met  "{$a}" als rol.';
 $string['courserestore'] = 'Back-up van cursussen terugzetten';
@@ -453,7 +454,8 @@ $string['coursesearch_help'] = 'Je kunt naar meer woorden tegelijkertijd zoeken 
 * +woord : alleen precies passende woorden worden gevonden.
 * -woord : de resultaten waar dit woord in voorkomt worden niet getoond.';
 $string['coursesectionsummaries'] = 'Cursus sectiesamenvattingen';
-$string['coursesectiontitle'] = 'Cursus: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
+$string['coursesectiontitle'] = '{$a->sectionname}: {$a->sectiontitle} | {$a->course}';
+$string['coursesectiontitleediting'] = 'Bewerk {$a->sectionname}: {$a->sectiontitle} | {$a->course}';
 $string['coursesettings'] = 'Standaardinstellingen van de cursus';
 $string['coursesmovedout'] = 'Cursussen verplaatst uit {$a}';
 $string['coursespending'] = 'Cursussen die wachten om goedgekeurd te worden';
@@ -461,6 +463,7 @@ $string['coursestart'] = 'Cursus start';
 $string['coursesummary'] = 'Samenvatting cursus';
 $string['coursesummary_help'] = 'Een korte beschrijving van je cursus. Wat je hier toevoegt, verschijnt in zoekresultaten.';
 $string['coursetitle'] = 'Cursus: {$a->course}';
+$string['coursetitleediting'] = 'Cursus bewerken: {$a->course}';
 $string['courseupdates'] = 'Cursusupdates';
 $string['coursevisibility'] = 'Cursus zichtbaarheid';
 $string['coursevisibility_help'] = '* Toon: de cursus verschijnt in de lijst met cursussen en de leerlingen hebben er toegang toe.
@@ -984,16 +987,16 @@ $string['gpl'] = 'Copyright (C) 1999 en verder Martin Dougiamas
 
 Dit programma is gratis software; je kunt het redistribueren en/of wijzigen volgens de voorwaarden van de GNU General Public License zoals deze is gepubliceerd door de Free Software Foundation; versie 2 van de licentie (of een latere versie als daar je voorkeur naar uit gaat).
 
-Dit programma is gedistribueerd met de hoop dat het bruikbaar is, maar ZONDER ENIGE GARANTIE; zelfs zonder een geïmpliceerde garantie tot VERKOOPBAARHEID (merchantability) of BRUIKBAARHEID VOOR EEN BEPAALDE DOELSTELLING (fitness for a particular purpose). Bekijk de Moodle License information pagina voor meer details:
+Dit programma is gedistribueerd met de hoop dat het bruikbaar is, maar ZONDER ENIGE GARANTIE; zelfs zonder een geïmpliceerde garantie tot VERKOOPBAARHEID (merchantability) of BRUIKBAARHEID VOOR EEN BEPAALDE DOELSTELLING (fitness for a particular purpose).
 
-https://docs.moodle.org/dev/License';
+Bekijk de Moodle License information pagina voor meer details: https://moodledev.io/general/license';
 $string['gpl3'] = 'Copyright (C) 1999 en verder Martin Dougiamas (http://moodle.com)
 
 Dit programma is vrije software: je mag het herverdelen en/of wijzigen volgens de bepalingen van de GNU Public licence zoals gepubliceerd door de Free Software Foundation, Versie 3 of (volgens jouw keuze) latere versie.
 
 Dit programma wordt verdeeld met de hoop dat het bruikbaar is, maar  ZONDER ENIGE GARANTIE; zonder zelfs de veronderstelde garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.
 
-Bekijk de Moodle-licentie informatiepagina voor alle details (Engels):  http://docs.moodle.org/dev/License';
+Bekijk de Moodle-licentie informatiepagina voor alle details (Engels):  https://moodledev.io/general/license';
 $string['gpllicense'] = 'GPL Licentie';
 $string['grade'] = 'Cijfer';
 $string['gradenoun'] = 'Cijfer';
@@ -2338,7 +2341,7 @@ $string['weekhide'] = 'Verberg deze week voor {$a}';
 $string['weeklyoutline'] = 'Overzicht van de weken';
 $string['weeks'] = 'weken';
 $string['weekshow'] = 'Toon deze week aan  {$a}';
-$string['welcomeback'] = 'Welkom terug, {$a->firstname}! 👋';
+$string['welcomeback'] = 'Hallo, {$a->firstname}! 👋';
 $string['welcometocourse'] = 'Welkom bij {$a}';
 $string['welcometocoursetext'] = 'Welkom bij {$a->coursename}!
 

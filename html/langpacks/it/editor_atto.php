@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Non è stato possibile collegarsi al server per salvare una copia temporanea del testo in redazione. Prima di inviare il testo, accertarsi di essere collegati.';
 $string['autosavefrequency'] = 'Frequenza salvataggio automatico';
 $string['autosavefrequency_desc'] = 'Il numero di secondi che intercorrono tra salvataggi automatici. Atto salverà automaticamente il testo presente nell\'editor in base a questa impostazione. Il testo potrà essere ripristinato quando lo stesso utente accederà lo stesso form.';
+$string['autosaves'] = 'Informazioni di salvataggio automatico dell\'editor';
 $string['autosavesucceeded'] = 'Bozza salvata.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';

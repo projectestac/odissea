@@ -313,13 +313,13 @@ $string['questioncannotberestored'] = 'الأسئلة  "{$a->name}" لا يمك�
 $string['recyclebin_desc'] = 'لاحظ أن تلك الإعدادات سيتم استعمالها أيضاً مع سلة المحذوفات.';
 $string['replacerestoredefaults'] = 'استعادة الإعدادات الافتراضية عند الاستعادة إلى مادة أخرى محذوفة المحتويات';
 $string['restoreactivity'] = 'استرجاع النشاط';
-$string['restorecourse'] = 'استرجاع المساق';
-$string['restorecoursesettings'] = 'إعدادات المساق';
-$string['restoredcourseid'] = 'مُعرَّف المساق المستعاد: {$a}';
-$string['restoreexecutionsuccess'] = 'تم استرجاع المساق بنجاح.';
+$string['restorecourse'] = 'استرجاع المقرر الدراسي';
+$string['restorecoursesettings'] = 'إعدادات المقرر الدراسي';
+$string['restoredcourseid'] = 'مُعرَّف المقرر الدراسي المستعاد: {$a}';
+$string['restoreexecutionsuccess'] = 'تم استرجاع المقرر الدراسي بنجاح.';
 $string['restorefileweremissing'] = 'بعض الملفات لا يمكن استعادتها لعدم توفرها في النسخة الاحتياطية .';
-$string['restorenewcoursefullname'] = 'اسم المساق الجديد';
-$string['restorenewcourseshortname'] = 'مختصر اسم المساق الجديد';
+$string['restorenewcoursefullname'] = 'اسم المقرر الدراسي الجديد';
+$string['restorenewcourseshortname'] = 'مختصر اسم المقرر الدراسي الجديد';
 $string['restorenewcoursestartdate'] = 'تاريخ البدء جديد';
 $string['restorerolemappings'] = 'استرجاع مخططات الدور';
 $string['restorerootsettings'] = 'استرجاع الإعدادات';
@@ -340,13 +340,13 @@ $string['restorestage8'] = 'مخطط';
 $string['restorestage8action'] = 'التالي';
 $string['restoretarget'] = 'استرجاع الهدف';
 $string['restoretocourse'] = 'الاستعادة للمساق :';
-$string['restoretocurrentcourse'] = 'الاستعادة في هذا المساق';
-$string['restoretocurrentcourseadding'] = 'دمج المساق الاحتياطي مع هذا المساق';
-$string['restoretocurrentcoursedeleting'] = 'احذف محتويات هذا المساق ثم قم باسترجاعه';
+$string['restoretocurrentcourse'] = 'الاستعادة في هذا المقرر الدراسي';
+$string['restoretocurrentcourseadding'] = 'دمج المقرر الاحتياطي مع هذا المقرر الدراسي';
+$string['restoretocurrentcoursedeleting'] = 'احذف محتويات هذا المقرر الدراسي ثم قم باسترجاعه';
 $string['restoretoexistingcourse'] = 'الاسترجاع إلى مساق موجود';
-$string['restoretoexistingcourseadding'] = 'دمج المساق الاحتياطي مع المساق الموجود';
-$string['restoretoexistingcoursedeleting'] = 'حذف محتويات المساق الموجود ثم القيام بالاسترجاع';
-$string['restoretonewcourse'] = 'الاسترجاع كمساق جديد';
+$string['restoretoexistingcourseadding'] = 'دمج المقرر الدراسي الاحتياطي مع المقرر الموجود';
+$string['restoretoexistingcoursedeleting'] = 'حذف محتويات المقرر الدراسي الموجود ثم القيام بالاسترجاع';
+$string['restoretonewcourse'] = 'الاسترجاع كمقرر جديد';
 $string['restoringcourse'] = 'عملية الاسترجاع في تقدم';
 $string['restoringcourseshortname'] = 'الاسترجاع';
 $string['rootenrolmanual'] = 'الاستعادة كملتحقين يدوياً';
@@ -369,8 +369,8 @@ $string['rootsettinggradehistories'] = 'تضمين ماضي التقديرات';
 $string['rootsettinggroups'] = 'تضمين المجموعات والتجميعات';
 $string['rootsettingimscc1'] = 'تحويل إلى IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'تحويل إلى IMS Common Cartridge 1.1';
-$string['rootsettinglegacyfiles'] = 'تضمين ملفات المساق القديمة';
-$string['rootsettinglogs'] = 'تضمن سجلات وقوعات المساق';
+$string['rootsettinglegacyfiles'] = 'تضمين ملفات المقرر الدراسي القديمة';
+$string['rootsettinglogs'] = 'تضمن سجلات وقوعات المقرر الدراسي';
 $string['rootsettingpermissions'] = 'تضمين تجاوزات الصلاحيات';
 $string['rootsettingquestionbank'] = 'تضمين بنك الأسئلة';
 $string['rootsettingroleassignments'] = 'تضمن تعيينات أدوار المستخدمين';
@@ -382,15 +382,15 @@ $string['sectionactivities'] = 'الأنشطة';
 $string['sectioninc'] = 'تم تضمينها في الحفظ الاحتياطي (بدون معلومات المستخدمين)';
 $string['sectionincanduser'] = 'تم التضمين في الحفظ الاحتياطي مع معلومات المستخدم';
 $string['selectacategory'] = 'إختر التصنيف';
-$string['selectacourse'] = 'إختر المساق';
+$string['selectacourse'] = 'إختر المقرر الدراسي';
 $string['setting_course_fullname'] = 'اسم المقرر';
-$string['setting_course_shortname'] = 'الاسم المختصر للمساق';
+$string['setting_course_shortname'] = 'الاسم المختصر للمقرر الدراسي';
 $string['setting_course_startdate'] = 'تاريخ بدء المقرر';
 $string['setting_keep_groups_and_groupings'] = 'أبقِ على المجموعات الحالية والتجميعات';
 $string['setting_keep_roles_and_enrolments'] = 'أبق على الأدوار الحالية والانضمامات';
 $string['setting_overwrite_conf'] = 'استبدال اعدادات المقرر';
-$string['setting_overwrite_course_fullname'] = 'استبدال الاسم الكامل للمساق';
-$string['setting_overwrite_course_shortname'] = 'استبدال الاسم المختصر للمساق';
+$string['setting_overwrite_course_fullname'] = 'استبدال الاسم الكامل للمقرر الدراسي';
+$string['setting_overwrite_course_shortname'] = 'استبدال الاسم المختصر للمقرر الدراسي';
 $string['setting_overwrite_course_startdate'] = 'استبدال تاريخ بدء المقرر';
 $string['showtypes'] = 'إظهار خيارات الأنواع';
 $string['sitecourseformatwarning'] = 'هذه نسخة احتياطية لواجهة الموقع، لاحظ أن هذه النسخة لا يمكن استعادتها إلا إلى تلك الواجهة.';

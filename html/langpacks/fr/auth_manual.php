@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_manualdescription'] = 'Cette méthode supprime pour les utilisateurs la possibilité de créer eux-mêmes leur compte. Tous les comptes doivent être créés par l\'administrateur.';
-$string['expiration'] = 'Activer l\'échéance des mots de passe';
+$string['auth_manualdescription'] = 'Cette méthode supprime pour les utilisateurs la possibilité de créer eux-mêmes leur compte. Tous les comptes doivent être créés par l’administrateur.';
+$string['expiration'] = 'Activer l’échéance des mots de passe';
 $string['expiration_desc'] = 'Si ce réglage est activé, les mots de passe arriveront à échéance après une durée spécifiée.';
 $string['expiration_warning'] = 'Délai de notification';
-$string['expiration_warning_desc'] = 'Durée en jours entre l\'envoi d\'une notification et l\'échéance du mot de passe.';
-$string['passwdexpire_settings'] = 'Réglages d\'échéance des mots de passe';
+$string['expiration_warning_desc'] = 'Durée en jours entre l’envoi d’une notification et l’échéance du mot de passe.';
+$string['passwdexpire_settings'] = 'Réglages d’échéance des mots de passe';
 $string['passwdexpiretime'] = 'Durée des mots de passe';
 $string['passwdexpiretime_desc'] = 'Durée de validité des mots de passe.';
 $string['pluginname'] = 'Comptes manuels';

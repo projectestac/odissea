@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = 'Champ de profil';
-$string['description'] = 'Contrôle l\'accès sur la base des champs du profil de l\'étudiant';
+$string['description'] = 'Contrôle l’accès sur la base des champs du profil de l’étudiant';
 $string['error_selectfield'] = 'Veuillez sélectionner un champ de profil.';
 $string['error_setvalue'] = 'Vous devez saisir une valeur';
 $string['label_operator'] = 'Méthode de comparaison';
@@ -37,10 +37,10 @@ $string['op_doesnotcontain'] = 'ne contient pas';
 $string['op_endswith'] = 'se termine par';
 $string['op_isempty'] = 'est vide';
 $string['op_isequalto'] = 'est égal à';
-$string['op_isnotempty'] = 'n\'est pas vide';
+$string['op_isnotempty'] = 'n’est pas vide';
 $string['op_startswith'] = 'commence par';
 $string['pluginname'] = 'Restriction par profil';
-$string['privacy:metadata'] = 'Le plugin Restriction par profil n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Restriction par profil n’enregistre aucune donnée personnelle.';
 $string['requires_contains'] = 'Votre <strong>{$a->field}</strong> contienne <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Votre <strong>{$a->field}</strong> ne contienne pas <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Votre <strong>{$a->field}</strong> se termine par <strong>{$a->value}</strong>';

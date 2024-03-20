@@ -23,9 +23,9 @@
  * install or upgrade operation. All plugins support this.
  *
  * For more information, take a look to the documentation available:
- *     - Webservices API: {@link http://docs.moodle.org/dev/Web_services_API}
- *     - External API: {@link http://docs.moodle.org/dev/External_functions_API}
- *     - Upgrade API: {@link http://docs.moodle.org/dev/Upgrade_API}
+ *     - Webservices API: {@link https://moodledev.io/docs/apis/subsystems/external/writing-a-service}
+ *     - External API: {@link https://moodledev.io/docs/apis/subsystems/external/functions}
+ *     - Upgrade API: {@link https://moodledev.io/docs/guides/upgrade}
  *
  * @package    core_webservice
  * @category   webservice
@@ -966,6 +966,13 @@ $functions = array(
     'core_grades_get_groups_for_search_widget' => [
         'classname' =>  'core_grades\external\get_groups_for_search_widget',
         'description' => 'Get the group/(s) for a course',
+        'type' => 'read',
+        'ajax' => true,
+        'services' => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
+    'core_grades_get_gradable_users' => [
+        'classname' => 'core_grades\external\get_gradable_users',
+        'description' => 'Returns the gradable users in a course',
         'type' => 'read',
         'ajax' => true,
         'services' => [MOODLE_OFFICIAL_MOBILE_SERVICE],

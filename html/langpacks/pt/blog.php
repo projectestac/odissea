@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewentry'] = 'Adicionar nova mensagem';
 $string['addnewexternalblog'] = 'Registar um blogue externo';
-$string['assocdescription'] = 'Se está a escrever sobre uma disciplina/ou atividade selecione-a aqui.';
+$string['assocdescription'] = 'Se está a escrever sobre uma disciplina/ou atividade, selecione-a aqui.';
 $string['associated'] = 'Associado a {$a}';
 $string['associatewithcourse'] = 'Blogue da disciplina \'{$a->coursename}\'';
 $string['associatewithmodule'] = 'Blogue sobre {$a->modtype}: {$a->modname}';
@@ -80,7 +80,7 @@ $string['editentry'] = 'Editar mensagem';
 $string['editexternalblog'] = 'Editar este blogue externo';
 $string['emptybody'] = 'As mensagens do blogue têm de conter texto';
 $string['emptyrssfeed'] = 'O URL que indicou não aponta para uma lista RSS válida';
-$string['emptytitle'] = 'O título das entradas do blogue tem de conter texto';
+$string['emptytitle'] = 'O título das mensagens do blogue tem de conter texto';
 $string['emptyurl'] = 'Tem de indicar um URL que aponte para uma lista RSS válida';
 $string['entrybody'] = 'Texto da mensagem';
 $string['entrybodyonlydesc'] = 'Descrição da mensagem';
@@ -93,8 +93,8 @@ $string['eventblogentriesviewed'] = 'Entradas de blogue visualizadas';
 $string['eventblogexternaladded'] = 'Blogue externo registado';
 $string['eventblogexternalremoved'] = 'Cancelado o registo do blogue externo';
 $string['eventblogexternalupdated'] = 'Blogue externo atualizado';
-$string['evententryadded'] = 'Entrada de blogue adicionada';
-$string['evententrydeleted'] = 'Entrada de blogue eliminada';
+$string['evententryadded'] = 'Mensagem de blogue adicionada';
+$string['evententrydeleted'] = 'Mensagem de blogue eliminada';
 $string['evententryupdated'] = 'A mensagem do blogue foi atualizada';
 $string['eventexternalblogsviewed'] = 'Visualizados os blogues externos registados';
 $string['externalblogcrontime'] = 'Agendar cron do blogue externo';
@@ -144,25 +144,25 @@ $string['privacy:metadata:external:name'] = 'Nome da lista';
 $string['privacy:metadata:external:timefetched'] = 'A data e hora em que a lista foi recuperada pela última vez';
 $string['privacy:metadata:external:timemodified'] = 'A data e hora em que a associação foi modificada pela última vez';
 $string['privacy:metadata:external:url'] = 'O URL da lista';
-$string['privacy:metadata:external:userid'] = 'ID do utilizador que adicionou a entrada de blogue externo';
+$string['privacy:metadata:external:userid'] = 'ID do utilizador que adicionou a mensagem de blogue externo';
 $string['privacy:metadata:post'] = 'Informação relacionada com entradas no blogue';
-$string['privacy:metadata:post:content'] = 'Conteúdo de uma entrada de blogue externa';
-$string['privacy:metadata:post:created'] = 'Data em que a entrada foi criada';
-$string['privacy:metadata:post:lastmodified'] = 'Data em que a entrada de blogue foi modificada pela última vez';
-$string['privacy:metadata:post:publishstate'] = 'Se a entrada é visível, ou não, para os outros';
-$string['privacy:metadata:post:subject'] = 'O título da entrada do blogue';
-$string['privacy:metadata:post:summary'] = 'O texto da entrada do blogue';
-$string['privacy:metadata:post:uniquehash'] = 'Identificador único para uma entrada externa, geralmente um URL';
-$string['privacy:metadata:post:userid'] = 'ID do utilizador que adicionou a entrada de blogue';
-$string['privacy:metadata:post:usermodified'] = 'O utilizador que modificou a entrada pela última vez';
+$string['privacy:metadata:post:content'] = 'Conteúdo de uma mensagem de blogue externa';
+$string['privacy:metadata:post:created'] = 'Data em que a mensagem foi criada';
+$string['privacy:metadata:post:lastmodified'] = 'Data em que a mensagem do blogue foi modificada pela última vez';
+$string['privacy:metadata:post:publishstate'] = 'Se a mensagem é visível, ou não, para os outros';
+$string['privacy:metadata:post:subject'] = 'O título da mensagem do blogue';
+$string['privacy:metadata:post:summary'] = 'O texto da mensagem do blogue';
+$string['privacy:metadata:post:uniquehash'] = 'Identificador único para uma mensagem externa, geralmente um URL';
+$string['privacy:metadata:post:userid'] = 'ID do utilizador que adicionou a mensagem de blogue';
+$string['privacy:metadata:post:usermodified'] = 'O utilizador que modificou a mensagem pela última vez';
 $string['privacy:path:blogassociations'] = 'Tópicos de blogues associados';
 $string['privacy:unknown'] = 'Desconhecido';
 $string['publishto'] = 'Publicar para';
 $string['publishto_help'] = 'Existem 3 opções:
 
-* O próprio (rascunho) - Apenas você e o administrador podem ver a mensagem
+* O próprio (rascunho) - Apenas o autor e os administradores podem ver a mensagem
 * Qualquer pessoa neste site - Quem estiver registado no site pode ler a mensagem
-* Todos - Qualquer pessoa, incluindo visitantes, pode ler esta mensagem';
+* Todos - Qualquer pessoa pode ler esta mensagem, inclusive visitantes,';
 $string['publishtocourse'] = 'Os utilizadores partilham uma disciplina consigo';
 $string['publishtocourseassoc'] = 'Membros da disciplina associada';
 $string['publishtocourseassocparam'] = 'Membros de {$a}';

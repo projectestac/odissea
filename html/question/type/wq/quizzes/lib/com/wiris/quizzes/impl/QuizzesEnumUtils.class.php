@@ -174,6 +174,10 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_GRAPH_TOOLBAR, com_wiris_quizzes_api_PropertyName::$GRAPH_TOOLBAR);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_CAS_HIDE_FILE_MENU, com_wiris_quizzes_api_PropertyName::$AUXILIARY_CAS_HIDE_FILE_MENU);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_ELEMENTS_TO_HANDWRITE, com_wiris_quizzes_api_PropertyName::$ELEMENTS_TO_HANDWRITE);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_LOCK_INITIAL_CONTENT, com_wiris_quizzes_api_PropertyName::$GRAPH_LOCK_INITIAL_CONTENT);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_SHOW_NAME_IN_LABEL, com_wiris_quizzes_api_PropertyName::$GRAPH_SHOW_NAME_IN_LABEL);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_SHOW_VALUE_IN_LABEL, com_wiris_quizzes_api_PropertyName::$GRAPH_SHOW_VALUE_IN_LABEL);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_MAGNETIC_GRID, com_wiris_quizzes_api_PropertyName::$GRAPH_MAGNETIC_GRID);
 		}
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames;
 	}
@@ -182,6 +186,21 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 	}
 	static function propertyName2String($name) {
 		return com_wiris_util_type_HashUtils::getKey($name, com_wiris_quizzes_impl_QuizzesEnumUtils::getPropertyNames());
+	}
+	static $graphModes;
+	static function getGraphModes() {
+		if(com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes === null) {
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes = new Hash();
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes->set(com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_STANDARD, com_wiris_util_geometry_GraphMode::$STANDARD);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes->set(com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_SKETCH, com_wiris_util_geometry_GraphMode::$SKETCH);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes->set(com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_PIE_CHART, com_wiris_util_geometry_GraphMode::$PIE_CHART);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes->set(com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_BAR_CHART, com_wiris_util_geometry_GraphMode::$BAR_CHART);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes->set(com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_LINE_CHART, com_wiris_util_geometry_GraphMode::$LINE_CHART);
+		}
+		return com_wiris_quizzes_impl_QuizzesEnumUtils::$graphModes;
+	}
+	static function string2GraphMode($mode) {
+		return com_wiris_quizzes_impl_QuizzesEnumUtils::getGraphModes()->get($mode);
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.QuizzesEnumUtils'; }
 }

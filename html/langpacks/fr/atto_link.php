@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Parcourir les dépôts…';
 $string['createlink'] = 'Créer lien';
-$string['enterurl'] = 'Saisir l\'URL';
+$string['enterurl'] = 'Saisir l’URL';
 $string['openinnewwindow'] = 'Ouvrir dans une nouvelle fenêtre';
 $string['pluginname'] = 'Lien';
-$string['privacy:metadata'] = 'Le plugin atto_link n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_link n’enregistre aucune donnée personnelle.';
 $string['texttodisplay'] = 'Texte à afficher';
 $string['unlink'] = 'Supprimer le lien';

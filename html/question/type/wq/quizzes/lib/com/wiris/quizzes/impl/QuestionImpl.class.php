@@ -1184,7 +1184,23 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 								if($name === com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_CAS_HIDE_FILE_MENU) {
 									return com_wiris_quizzes_impl_LocalData::$VALUE_AUXILIARY_CAS_HIDE_FILE_MENU_FALSE;
 								} else {
-									return null;
+									if($name === com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_LOCK_INITIAL_CONTENT) {
+										return "false";
+									} else {
+										if($name === com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_SHOW_NAME_IN_LABEL) {
+											return com_wiris_quizzes_impl_LocalData::$VALUE_ALWAYS;
+										} else {
+											if($name === com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_SHOW_VALUE_IN_LABEL) {
+												return com_wiris_quizzes_impl_LocalData::$VALUE_FOCUS;
+											} else {
+												if($name === com_wiris_quizzes_impl_LocalData::$KEY_GRAPH_MAGNETIC_GRID) {
+													return com_wiris_quizzes_impl_LocalData::$VALUE_SNAP;
+												} else {
+													return null;
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -1470,12 +1486,12 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $defaultOptions = null;
 	static $TAGNAME = "question";
@@ -1550,26 +1566,26 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.QuestionImpl'; }
 }
-function com_wiris_quizzes_impl_QuestionImpl_0(&$»this, &$_g, &$_g1, &$a, &$assertionsCopy, &$correctAnswers, &$i, &$overrideDeprecated, &$slotId) {
-	if($»this->slots->length > 0) {
-		return _hx_array_get($»this->slots, $»this->slots->length - 1)->localData;
+function com_wiris_quizzes_impl_QuestionImpl_0(&$Â»this, &$_g, &$_g1, &$a, &$assertionsCopy, &$correctAnswers, &$i, &$overrideDeprecated, &$slotId) {
+	if($Â»this->slots->length > 0) {
+		return _hx_array_get($Â»this->slots, $Â»this->slots->length - 1)->localData;
 	}
 }
-function com_wiris_quizzes_impl_QuestionImpl_1(&$»this) {
-	if($»this->assertions === null) {
+function com_wiris_quizzes_impl_QuestionImpl_1(&$Â»this) {
+	if($Â»this->assertions === null) {
 		return 0;
 	} else {
-		return $»this->assertions->length;
+		return $Â»this->assertions->length;
 	}
 }
-function com_wiris_quizzes_impl_QuestionImpl_2(&$»this) {
-	if($»this->correctAnswers === null) {
+function com_wiris_quizzes_impl_QuestionImpl_2(&$Â»this) {
+	if($Â»this->correctAnswers === null) {
 		return 0;
 	} else {
-		return $»this->correctAnswers->length;
+		return $Â»this->correctAnswers->length;
 	}
 }
-function com_wiris_quizzes_impl_QuestionImpl_3(&$»this, &$a, &$correctAnswer, &$name, &$names, &$parameters, &$userAnswer) {
+function com_wiris_quizzes_impl_QuestionImpl_3(&$Â»this, &$a, &$correctAnswer, &$name, &$names, &$parameters, &$userAnswer) {
 	if($parameters->length < $names->length) {
 		return $parameters->length;
 	} else {

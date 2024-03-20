@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Menu principal';
-$string['privacy:metadata'] = 'Le bloc Menu principal affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Menu principal affiche seulement des données enregistrées à d’autres endroits.';
 $string['site_main_menu:addinstance'] = 'Ajouter un bloc menu principal';

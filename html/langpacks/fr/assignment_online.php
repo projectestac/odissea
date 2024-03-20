@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'Texte en ligne déposé';
 $string['pluginname'] = 'En ligne';
-$string['privacy:metadata'] = 'Le plugin Devoir en ligne n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Devoir en ligne n’enregistre aucune donnée personnelle.';

@@ -607,6 +607,7 @@ $string['useradminodelete'] = 'Gli account di amministratore non possono essere 
 $string['userautherror'] = 'Plugin d autenticazione sconosciuta';
 $string['userauthunsupported'] = 'Plugin di autenticazione non supportato';
 $string['useremailduplicate'] = 'Indirizzo duplicato';
+$string['userisfilteredout'] = 'Questo utente non corrisponde ai filtri e alle preferenze della tabella.';
 $string['usermustbemnet'] = 'Gli utenti presenti nella access control list MNET devono essere utenti remoti MNET';
 $string['usernamelowercase'] = 'Lo username deve contener solamente caratteri minuscoli';
 $string['usernotaddederror'] = 'Errore - L\'utente "{$a}" non è stato aggiunto';

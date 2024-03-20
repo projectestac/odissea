@@ -43,5 +43,4 @@ $string['lastxviewed'] = 'Últimas {$a} visualizadas';
 $string['loading'] = 'A carregar...';
 $string['nocourses'] = 'Não está inscrito em qualquer disciplina.';
 $string['pluginname'] = 'Menu personalizado de disciplinas';
-$string['privacy:metadata'] = 'O módulo não armazena quaisquer dados pessoais.';
 $string['showsearch'] = 'Mostrar caixa de pesquisa de disciplinas';

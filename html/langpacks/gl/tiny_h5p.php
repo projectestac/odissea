@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Examinar repositorios';
+$string['buttontitle'] = 'Configurar o contido H5P';
+$string['copyrightbutton'] = 'Botón de dereitos de autoría';
 $string['downloadbutton'] = 'Permitir descarga';
 $string['embedbutton'] = 'Botón de incrustado';
 $string['h5p:addembed'] = 'Engadir H5P incrustado';
@@ -33,6 +35,11 @@ $string['h5pfile'] = 'Subida de ficheiro H5P';
 $string['h5pfileorurl'] = 'URL do H5P ou subida do arquivo';
 $string['h5poptions'] = 'Opcións H5P';
 $string['h5purl'] = 'URL do H5P';
+$string['helplinktext'] = 'Axudante H5P';
+$string['insert'] = 'Inserir contido H5P';
 $string['instructions'] = 'Podes inserir contido H5P <strong>ben</strong> escribindo un URL <strong>ou</strong> subindo un ficheiro H5P.';
 $string['invalidh5purl'] = 'URL non válido';
+$string['modaltitle'] = 'Inserir contido H5P';
 $string['noh5pcontent'] = 'Non se engadiu contido H5P';
+$string['pluginname'] = 'Inserir H5P «diminuto»';
+$string['privacy:metadata'] = 'O complemento de H5P para TinyMCE non almacena ningún dato persoal.';

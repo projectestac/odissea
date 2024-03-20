@@ -27,8 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adaptivequizname'] = 'Nome';
 $string['answer'] = 'Resposta';
-$string['answerdistgraph_numrightwrong'] = 'Num errado (-)  /  Num Correcto (+)';
-$string['answerdistgraph_questiondifficulty'] = 'Nível da questão';
 $string['answers_display_name'] = 'Respostas';
 $string['attempt_questiondetails'] = 'Detalhes da Questão';
 $string['attempt_user'] = 'Utilizador';
@@ -36,7 +34,6 @@ $string['attemptfirst'] = 'Primeira tentativa';
 $string['attemptlast'] = 'Ultima tentativa';
 $string['attemptquestion_ability'] = 'Medição de habilidade';
 $string['attemptquestion_level'] = 'Nível da Questão';
-$string['attemptquestion_num'] = '#';
 $string['attemptquestion_rightwrong'] = 'Correcto/errado';
 $string['attemptsallowed'] = 'Tentativas Permitidas';
 $string['attemptstate'] = 'Estado da tentativa';

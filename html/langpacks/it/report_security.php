@@ -102,8 +102,8 @@ $string['check_publicpaths_generic'] = 'I file {$a} non devono essere pubblici';
 $string['check_publicpaths_name'] = 'Controllare tutti i percorsi pubblici/privati';
 $string['check_publicpaths_ok'] = 'Tutti i percorsi interni non sono accessibili pubblicamente';
 $string['check_publicpaths_warning'] = 'Alcuni percorsi interni sono accessibili pubblicamente';
-$string['check_riskadmin_detailsok'] = '<p>Per favore verifica il seguente elenco di amministratori:</p>{$a}';
-$string['check_riskadmin_detailswarning'] = '<p>Per favore verifica il seguente elenco di amministratori:
+$string['check_riskadmin_detailsok'] = '<p>Per favore verificare il seguente elenco di amministratori:</p>{$a}';
+$string['check_riskadmin_detailswarning'] = '<p>Per favore verificare il seguente elenco di amministratori:
 </p>{$a->admins}
 <p>Si raccomanda di assegnare il ruolo di amministratore solamente nel contesto di sito. I seguenti utenti hanno l\'assegnazione del ruolo amministratore in altri contesti (non supportata):</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Amministratori';

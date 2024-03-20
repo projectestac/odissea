@@ -80,7 +80,7 @@ $string['copyright_help'] = 'Això defineix quina llicència de copyright s\'est
 $string['createdby'] = 'Creat per: {$a}';
 $string['creator'] = 'Creat per';
 $string['datecreated'] = 'Data de creació';
-$string['deletegallery'] = 'Suprimeix galeria';
+$string['deletegallery'] = 'Suprimeix la galeria';
 $string['deleteitem'] = 'Suprimeix l\'element';
 $string['deleteitemtype'] = 'Suprimeix {$a}';
 $string['disablestandardgallery'] = 'Inhabilita les galeries estàndard';
@@ -171,6 +171,7 @@ $string['thumbnail_help'] = 'Podeu seleccionar una imatge per utilitzar-la com l
 Si no en proporcioneu cap, se us generarà una imatge a partir del recurs carregat (per a les imatges) o una icona del tipus de fitxer utilitzat (per a altres fitxers).';
 $string['thumbnailsperpage'] = 'Miniatures per pàgina';
 $string['thumbnailsperrow'] = 'Miniatures per fila';
+$string['top'] = 'Part superior';
 $string['typeall'] = 'Tots els fitxers';
 $string['typeaudio'] = 'Àudio';
 $string['typeimage'] = 'Imatge';

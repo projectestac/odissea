@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_results:addinstance'] = 'Ajouter un bloc de résultats d\'activité';
+$string['activity_results:addinstance'] = 'Ajouter un bloc de résultats d’activité';
 $string['bestgrade'] = 'La note la plus haute :';
 $string['bestgrades'] = 'Les {$a} notes les plus hautes :';
 $string['bestgroupgrade'] = 'Groupe avec la moyenne la plus élevée :';
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'Ce cours ne comporte encore aucune 
 $string['config_select_activity'] = 'Activité dont les résultats sont affichés dans ce bloc';
 $string['config_show_best'] = 'Nombre de notes les plus élevées à afficher (0 pour désactiver)';
 $string['config_show_worst'] = 'Nombre de notes les plus basses à afficher (0 pour désactiver)';
-$string['config_use_groups'] = 'Afficher les groupes au lieu des étudiants (ne fonctionne que si l\'activité supporte les groupes)';
-$string['configuredtoshownothing'] = 'La configuration actuelle de ce bloc ne permet pas d\'afficher de résultat.';
+$string['config_use_groups'] = 'Afficher les groupes au lieu des étudiants (ne fonctionne que si l’activité supporte les groupes)';
+$string['configuredtoshownothing'] = 'La configuration actuelle de ce bloc ne permet pas d’afficher de résultat.';
 $string['defaultdecimalplaces'] = 'Décimales';
 $string['defaultdecimalplaces_desc'] = 'Nombre de décimales à afficher par défaut';
 $string['defaultgradedisplay'] = 'Afficher les notes comme';
@@ -54,16 +54,16 @@ $string['defaulthighestgrades_desc'] = 'Nombre de notes les plus hautes à affic
 $string['defaultlowestgrades'] = 'Notes les plus basses affichées par défaut';
 $string['defaultlowestgrades_desc'] = 'Nombre de notes les plus basses à afficher par défaut';
 $string['defaultnameoptions'] = 'Confidentialité des résultats';
-$string['defaultnameoptions_desc'] = 'Mode d\'identification des étudiants par défaut';
+$string['defaultnameoptions_desc'] = 'Mode d’identification des étudiants par défaut';
 $string['defaultshowgroups'] = 'Afficher les groupes par défaut';
-$string['defaultshowgroups_desc'] = 'Afficher par défaut les groupes au lieu des étudiants (seulement si l\'activité permet les groupes)';
-$string['error_emptyactivityid'] = 'Veuillez configurer ce bloc et choisir l\'activité dont les résultats doivent être affichés.';
-$string['error_emptyactivityrecord'] = 'Erreur : l\'activité choisie n\'existe pas dans la base de données.';
+$string['defaultshowgroups_desc'] = 'Afficher par défaut les groupes au lieu des étudiants (seulement si l’activité permet les groupes)';
+$string['error_emptyactivityid'] = 'Veuillez configurer ce bloc et choisir l’activité dont les résultats doivent être affichés.';
+$string['error_emptyactivityrecord'] = 'Erreur : l’activité choisie n’existe pas dans la base de données.';
 $string['error_nogroupsexist'] = 'Erreur : le bloc est configuré pour afficher les résultats de groupes, mais le cours ne comporte pas de groupe.';
-$string['error_unsupportedgradetype'] = 'Erreur : l\'activité choisie utilise une méthode d\'évaluation non supportée par ce bloc.';
+$string['error_unsupportedgradetype'] = 'Erreur : l’activité choisie utilise une méthode d’évaluation non supportée par ce bloc.';
 $string['notyetgraded'] = 'Pas encore évalué';
-$string['pluginname'] = 'Résultats d\'activité';
-$string['privacy:metadata'] = 'Le bloc Résultats d\'activités affiche seulement des données enregistrées à d\'autres endroits.';
+$string['pluginname'] = 'Résultats d’activité';
+$string['privacy:metadata'] = 'Le bloc Résultats d’activités affiche seulement des données enregistrées à d’autres endroits.';
 $string['unknown'] = 'Barème inconnu';
 $string['worstgrade'] = 'La note la plus basse :';
 $string['worstgrades'] = 'Les {$a} notes les plus basses :';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Télécharger les données au format';
 $string['missingrequiredfields'] = 'Un ou plusieurs filtres requis manquent ({$a})';
-$string['privacy:metadata'] = 'L\'API de tableau n\'enregistre actuellement aucune donnée personnelle';
+$string['privacy:metadata'] = 'L’API de tableau n’enregistre actuellement aucune donnée personnelle';

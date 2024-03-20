@@ -65,6 +65,9 @@ $string['firstattempts'] = 'primeiras tentativas';
 $string['firstattemptsavg'] = 'Nota média das primeiras tentativas';
 $string['firstattemptscount'] = 'Número de primeiras tentativas terminadas e avaliadas';
 $string['frequency'] = 'Frequência';
+$string['getstatslockprogress'] = 'A aguardar tarefa em execução. Aguarde ou tente novamente mais tarde.';
+$string['getstatslocktimeout'] = 'Tempo limite de bloqueio do cálculo das estatísticas';
+$string['getstatslocktimeoutdesc'] = 'Quantos segundos deve esperar antes de bloquear quando tenta realizar cálculo das estatísticas de um teste. Esta configuração existe principalmente para ensaios, não a modifique a menos que saiba o que está a fazer.';
 $string['highestattempts'] = 'nota mais alta';
 $string['highestattemptsavg'] = 'nota média das notas mais altas';
 $string['intended_weight'] = 'Peso pretendido';
@@ -85,6 +88,7 @@ A nossa equação para o peso efetivo da pergunta não pode ser calculada neste 
 
 Se editar um teste e atribuir a estas perguntas com covariância negativa a nota máxima de zero, o peso efetivo destas perguntas será zero e o peso real efetivo das outras perguntas será como o calculado agora.';
 $string['nogradedattempts'] = 'Não existem tentativas de resposta a este teste, ou em todas as tentativas existem perguntas que precisam de avaliação manual.';
+$string['nostats'] = 'Não foi possível concluir o cálculo das estatísticas. Pode haver um cálculo de longa duração em execução. Por favor, tente novamente mais tarde.';
 $string['nostudentsingroup'] = 'Ainda não existem alunos neste grupo';
 $string['optiongrade'] = 'Crédito parcial';
 $string['partofquestion'] = 'Parte da pergunta';

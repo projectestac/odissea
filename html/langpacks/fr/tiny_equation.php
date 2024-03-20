@@ -25,21 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['buttontitle'] = 'Éditeur d\'équation';
+$string['buttontitle'] = 'Éditeur d’équation';
 $string['cursorinfo'] = 'Une flèche indique la position où les nouveaux éléments seront insérés.';
-$string['editequation'] = 'Modifier l\'équation avec <a href="{$a}" target="_blank">TeX</a>';
+$string['editequation'] = 'Modifier l’équation avec <a href="{$a}" target="_blank">TeX</a>';
 $string['helplinktext'] = 'Aide équation';
 $string['librarygroup1'] = 'Opérateurs';
-$string['librarygroup1_desc'] = 'Commandes TeX affichées dans l\'onglet opérateurs.';
+$string['librarygroup1_desc'] = 'Commandes TeX affichées dans l’onglet opérateurs.';
 $string['librarygroup2'] = 'Flèches';
-$string['librarygroup2_desc'] = 'Commandes TeX affichées dans l\'onglet flèches.';
+$string['librarygroup2_desc'] = 'Commandes TeX affichées dans l’onglet flèches.';
 $string['librarygroup3'] = 'Symboles grecs';
-$string['librarygroup3_desc'] = 'Commandes TeX affichées dans l\'onglet symboles grecs.';
+$string['librarygroup3_desc'] = 'Commandes TeX affichées dans l’onglet symboles grecs.';
 $string['librarygroup4'] = 'Avancé';
-$string['librarygroup4_desc'] = 'Commandes TeX affichées dans l\'onglet avancé.';
-$string['modaltitle'] = 'Éditeur d\'équation';
-$string['pluginname'] = 'Éditeur d\'équation Tiny';
+$string['librarygroup4_desc'] = 'Commandes TeX affichées dans l’onglet avancé.';
+$string['modaltitle'] = 'Éditeur d’équation';
+$string['pluginname'] = 'Éditeur d’équation Tiny';
 $string['preview'] = 'Prévisualiser équation';
-$string['privacy:metadata'] = 'L\'éditeur d\'équation de TinyMCE n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'L’éditeur d’équation de TinyMCE n’enregistre aucune donnée personnelle.';
 $string['saveequation'] = 'Enregistrer équation';
-$string['settings'] = 'Réglages éditeur d\'équation';
+$string['settings'] = 'Réglages éditeur d’équation';

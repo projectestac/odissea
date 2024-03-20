@@ -92,6 +92,7 @@ $string['privacy:metadata:journal_entries'] = 'Datensatz zum Journaleintrag';
 $string['privacy:metadata:journal_entries:entrycomment'] = 'Empfangener Kommentar von Nutzer/in zum Journal';
 $string['privacy:metadata:journal_entries:modified'] = 'Startzeit der Journaleinträge';
 $string['privacy:metadata:journal_entries:rating'] = 'Empfangene Wertung von Nutzer/in zum Journal';
+$string['privacy:metadata:journal_entries:teacher'] = 'Trainer/in hat ein Feedback für Nutzer/in zum Journal gegeben';
 $string['privacy:metadata:journal_entries:text'] = 'Text von Nutzer/in geschrieben';
 $string['privacy:metadata:journal_entries:userid'] = 'Nutzer-ID';
 $string['rate'] = 'Bewertung';

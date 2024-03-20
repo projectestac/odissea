@@ -72,6 +72,7 @@ $string['normalsearch'] = 'Cerca normal';
 $string['notitle'] = 'Sense títol';
 $string['openedon'] = 'obert';
 $string['optimize'] = 'Optimitza';
+$string['progress'] = 'Progrés';
 $string['resultsreturnedfor'] = 'resultats per a';
 $string['runindexer'] = 'Executa l\'indexador (real)';
 $string['runindexertest'] = 'Executa la prova d\'indexació';

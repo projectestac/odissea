@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['embedimages'] = 'Intégrer des images';
-$string['embedimages_desc'] = 'Remplace les URLs d\'images par les images, dans les formats de texte choisis.';
+$string['embedimages_desc'] = 'Remplace les URLs d’images par les images, dans les formats de texte choisis.';
 $string['filtername'] = 'Convertir les URLs en liens et images';
-$string['privacy:metadata'] = 'Le plugin Convertir les URLs en liens et images n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Convertir les URLs en liens et images n’enregistre aucune donnée personnelle.';
 $string['settingformats'] = 'Appliquer aux formats';
 $string['settingformats_desc'] = 'Le filtre sera appliqué uniquement aux textes écrits initialement dans les formats sélectionnés.';

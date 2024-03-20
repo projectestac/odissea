@@ -315,7 +315,7 @@ class qtype_wq_question extends question_graded_automatically {
     public function join_question_text() {
         $text = $this->questiontext;
         foreach ($this->hints as $hint) {
-            $tet .= ' ' . $hint->hint;
+            $text .= ' ' . $hint->hint;
         }
         return $text;
     }

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fallbackspantag'] = '&lt;span&gt;-Tags unterstützen';
-$string['fallbackspantag_desc'] = 'Zusätzlich zur {mlang}-Syntax sind die herkömmlichen &lt;span class="multilang"&gt;-Tags weiterhin erlaubt.';
+$string['addlanguage'] = 'Sprache manuell hinzufügen';
+$string['addlanguage_desc'] = 'Wenn Sie diese Option wählen, können Sie Sprachen manuell hinzufügen, indem Sie den ISO-Code der Sprache in das nachfolgende Textfeld eingeben. Andernfalls müssen Sie mindestens zwei Sprachen im Sprachpaket installieren.';
 $string['helplinktext'] = 'Multi-Language-Content (v2)';
 $string['highlight'] = 'Trennzeichen hervorheben';
 $string['highlight_desc'] = 'Die Trennzeichen für sprachabhängige Inhalte sollen im Editor hervorgehoben werden (z.B. {mlang XX} und {mlang}).';
@@ -45,14 +45,20 @@ Wenn Sie die Sprache anzeigen möchten, die in einem sprachabhängigen Block ver
     color: #ffffff;
 }
 </pre>';
+$string['language_options_desc'] = 'Wählen Sie Optionen für das Dropdown-Menü der Schaltfläche "Sprache" aus.
+                              <br>Die vollständige Liste ist unter <small><a href=\'https://www.w3schools.com/tags/ref_lingual_codes.asp\'> verfügbar
+                              <u>https://www.w3schools.com/tags/ref_lingual_codes.asp</u></a></small>';
+$string['language_setting'] = 'Einstellungen der Sprachtaste';
+$string['languageoptions'] = 'Sprache';
 $string['multilang2:desc'] = 'Unterstützung zum Hinzufügen von sprachabhängigen Inhalten. Der Filter "Multi-Language-Content (v2)" muss aktiviert sein.';
 $string['multilang2:language'] = 'Sprache';
 $string['multilang2:other'] = 'Andere';
+$string['multilang2:removetag'] = 'Sprach-Tag entfernen';
 $string['multilang2:viewlanguagemenu'] = 'Sprachen als Dropdown-Menü im Editor anzeigen';
 $string['pluginname'] = 'Multi-Language-Content (v2)';
 $string['privacy:metadata'] = 'Das Plugin "Multi-Language-Content (v2)" speichert keine personenbezogenen Daten.';
+$string['removealltags'] = 'Alle Sprach-Tags entfernen';
 $string['requiremultilang2'] = 'Filter "Multi-Language-Content (v2)" notwendig';
 $string['requiremultilang2_desc'] = 'Wenn diese Option aktiviert ist, wird das Sprachenmenü im Editor nur dann angezeigt, wenn der Filter Multi-Language-Content (v2) aktiv ist.';
-$string['settings'] = 'Einstellungen Multi-Language-Content (v2)';
 $string['showalllangs'] = 'Alle Sprachen anzeigen';
 $string['showalllangs_desc'] = 'Wenn diese Option aktiviert ist, werden im Editor alle Sprachen angezeigt, die von Moodle unterstützt werden. Andernfalls werden nur die installierten und aktiven Sprachen angezeigt.';

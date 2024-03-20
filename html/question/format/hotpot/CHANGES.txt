@@ -2,6 +2,9 @@
 Change log for qformat_hotpot
 ========================================
 
+2024-02-15 (27)
+ - Merge pull request #3 (buschettu) and #4 (vassper888) to fix order of arguments implode() function. Thanks guys.
+
 2022-10-26 (26)
  - Merge pull request #1 from danielneis/composer  adding composer.json
 

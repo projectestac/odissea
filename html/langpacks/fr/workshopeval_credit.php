@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mode'] = 'Mode d\'évaluation';
-$string['mode_desc'] = 'Le mode d\'évaluation par défaut utilisé par la méthode _Crédit de participation_.';
-$string['mode_help'] = 'Le mode d\'évaluation détermine comment les notes seront calculées pour le processus d\'évaluation.
+$string['mode'] = 'Mode d’évaluation';
+$string['mode_desc'] = 'Le mode d’évaluation par défaut utilisé par la méthode _Crédit de participation_.';
+$string['mode_help'] = 'Le mode d’évaluation détermine comment les notes seront calculées pour le processus d’évaluation.
 
-* Tout ou rien - L\'évaluateur doit évaluer toutes les remises qui lui sont allouées pour obtenir la note maximale ; sinon il reçoit la note de zéro.
-* Proportionnel - La note obtenue est proportionnelle au nombre d\'évaluations. Si toutes les remises allouées sont évaluées, l\'évaluateur recevra la note maximale ; si la moitié des remises allouées sont évaluées, l\'évaluateur recevra 50% de la note maximale.
-* Au moins une - L\'évaluateur doit évaluer au moins une remise qui lui est allouée pour obtenir la note maximale.';
+* Tout ou rien - L’évaluateur doit évaluer toutes les remises qui lui sont allouées pour obtenir la note maximale ; sinon il reçoit la note de zéro.
+* Proportionnel - La note obtenue est proportionnelle au nombre d’évaluations. Si toutes les remises allouées sont évaluées, l’évaluateur recevra la note maximale ; si la moitié des remises allouées sont évaluées, l’évaluateur recevra 50% de la note maximale.
+* Au moins une - L’évaluateur doit évaluer au moins une remise qui lui est allouée pour obtenir la note maximale.';
 $string['modeall'] = 'Tout ou rien';
 $string['modeone'] = 'Au moins une';
 $string['modeproportional'] = 'Proportionnel';
 $string['pluginname'] = 'Crédit de participation';
-$string['privacy:metadata'] = 'Le plugin Crédit de participation n\'enregistre aucune donnée personnelle';
+$string['privacy:metadata'] = 'Le plugin Crédit de participation n’enregistre aucune donnée personnelle';

@@ -88,7 +88,6 @@ $string['attendkey_help'] = '半自動モードで出欠を取る場合，学生
 「ランダムキー」にチェックを入れた場合は，5文字の小文字が自動生成されます．<br />
 自動モード・手動モードの場合は，設定しても無視されます．';
 $string['attendnotstarted'] = 'このコースに対する出欠確認は，まだ開始されていません';
-$string['attendpercent'] = '出席率';
 $string['attendreport'] = '出欠レポート';
 $string['attendsubmiterr'] = '出席を送信できませんでした';
 $string['attendsubmitted'] = '出席が送信されました';
@@ -206,10 +205,6 @@ $string['newsessionsummertime'] = '新夏時間';
 $string['noattforuser'] = 'ユーザが存在しません';
 $string['nodescription'] = 'なし';
 $string['nonclass'] = 'クラスなし';
-$string['noofdaysabsent'] = '欠席数';
-$string['noofdaysexcused'] = '早退数';
-$string['noofdayslate'] = '遅刻数';
-$string['noofdayspresent'] = '出席数';
 $string['nosessiondayselected'] = '授業日が選択されませんでした';
 $string['nosessionexists'] = 'このコースにはまだ授業が登録されていません<br />
 最初に「登録」タブで授業を登録してください';

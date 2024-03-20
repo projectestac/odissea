@@ -37,11 +37,6 @@ $string['adaptivequizname_help'] = 'Introduzca el nombre del cuestionario adapta
 $string['all_attempts_deleted'] = 'Todos los intentos del cuestionario adaptativo han sido borrados';
 $string['all_grades_removed'] = 'Todos las calificaciones de cuestionarios adaptativos han sido borradas';
 $string['answer'] = 'Respuesta';
-$string['answerdistgraph_numrightwrong'] = 'Número incorrecto (-)  /   Número correcto (+)';
-$string['answerdistgraph_questiondifficulty'] = 'Nivel de pregunta';
-$string['answerdistgraph_right'] = 'Derecha';
-$string['answerdistgraph_title'] = 'Distribución de respuesta para  {$a->firstname} {$a->lastname}';
-$string['answerdistgraph_wrong'] = 'Erroneo';
 $string['answers_display_name'] = 'Respuestas';
 $string['attempt_questiondetails'] = 'Detalles de la pregunta';
 $string['attempt_state'] = 'Estado del intento';
@@ -61,9 +56,7 @@ $string['attemptquestion_ability'] = 'Medida de capacidad';
 $string['attemptquestion_abilitylogits'] = 'Capacidad medida (logits)';
 $string['attemptquestion_difficulty'] = 'Dificultad de la pregunta (logits)';
 $string['attemptquestion_diffsum'] = 'Suma de dificultad';
-$string['attemptquestion_error'] = 'Error estándar (&plusmn;&nbsp;x%)';
 $string['attemptquestion_level'] = 'Nivel de pregunta';
-$string['attemptquestion_num'] = '#';
 $string['attemptquestion_rightwrong'] = 'Correcto/Incorrecto';
 $string['attemptquestion_stderr'] = 'Error estándar (&plusmn;&nbsp;logits)';
 $string['attemptquestionsprogress'] = 'Progreso de preguntas: {$a}';
@@ -118,7 +111,6 @@ $string['grademethod_help'] = 'Cuando se permiten múltiples intentos, para calc
 * Primer intento (el resto de intentos se ignoran)
 * Último intento (el resto de intentos se ignoran)';
 $string['graphlegend_error'] = 'Error estándar';
-$string['graphlegend_target'] = 'Nivel objetivo';
 $string['highestlevel'] = 'Nivel más alto de dificultad';
 $string['highestlevel_help'] = 'El nivel más alto de dificultad que pueden tener las preguntas seleccionadas para esta tarea. Durante un intento la actividad no sobrepasará este nivel de dificultad';
 $string['highlevelusers'] = 'Usuarios por encima del nivel de pregunta';
@@ -138,6 +130,23 @@ $string['missingtagprefix'] = 'Falta el prefijo de etiqueta';
 $string['modformshowattemptprogress'] = 'Mostrar progreso del examen a estudiantes';
 $string['modformshowattemptprogress_help'] = 'Cuando es seleccionado, un estudiante verá una barra de progreso que ilustra cuantas preguntas están contestadas del número máximo.';
 $string['modulename'] = 'Cuestionario adaptado';
+$string['modulename_help'] = 'La actividad Cuestionario Adaptativo, en inglés Adaptive Quiz, permite al profesor crear pruebas que miden de manera eficiente las habilidades de los participantes. Los cuestionarios adaptativos se componen de preguntas seleccionadas del banco de preguntas que están etiquetadas con una puntuación de dificultad. Las preguntas se eligen para que coincidan con el nivel de capacidad estimado del examinado actual. Si el examinado tiene éxito en una pregunta, a continuación se presenta una pregunta más desafiante. Si el examinado responde una pregunta incorrectamente, a continuación se presenta una pregunta menos desafiante. Esta técnica se desarrollará en una secuencia de preguntas que convergerán en el nivel de capacidad efectiva del examinado. La prueba se detiene cuando se determina la capacidad del examinado con la precisión requerida.
+
+Esta actividad es más adecuada para determinar una medida de capacidad a lo largo de una escala unidimensional. Si bien la escala puede ser muy amplia, todas las preguntas deben proporcionar una medida de capacidad o aptitud en la misma escala. En una prueba de nivel, por ejemplo, las preguntas de nivel inferior en la escala que los principiantes pueden responder correctamente también deberían ser respondidas por expertos, mientras que las preguntas de nivel más alto de la escala solo deberían ser respondidas por expertos o por una suposición afortunada. Las preguntas que no discriminan entre participantes de diferentes habilidades harán que la prueba sea ineficaz y pueden proporcionar resultados no concluyentes.
+
+Las preguntas utilizadas en el cuestionario adaptativo deben
+
+  * calificarse automáticamente como correcto/incorrecto
+  * ser etiquetadas con su dificultad al usar \'adpq_\' seguido de un número entero positivo que esté dentro del rango del cuestionario
+
+El cuestionario adaptativo se puede configurar para
+
+  * definir el rango de preguntas-dificultades/habilidades del usuario que se medirán. 1-10, 1-16 y 1-100 son ejemplos de rangos válidos.
+  * definir la precisión requerida antes de que se detenga el cuestionario. Con frecuencia, un error del 5% en la medida de la capacidad es una regla de parada adecuada.
+  * requieren un número mínimo de preguntas a ser respondidas.
+  * requieren un número máximo de preguntas que puedan ser respondidas
+
+Esta descripción y el proceso de prueba en esta actividad se basan en <a href="http://www.rasch.org/memo69.pdf">Computer-Adaptive Testing: A Methodology Whose Time Has Come</a> by John Michael Linacre, Ph.D. MESA Psychometric Laboratory - University of Chicago. MESA Memorandum No. 69.';
 $string['modulenameplural'] = 'Cuestionario adaptado';
 $string['na'] = 'n/a';
 $string['name'] = 'Nombre';
@@ -147,8 +156,6 @@ $string['nopermission'] = 'No tiene permiso para ver este recurso';
 $string['notinprogress'] = 'Este intento no está en curso.';
 $string['notyourattempt'] = 'Este no es su intento en la actividad';
 $string['numofattemptshdr'] = 'Número de intentos';
-$string['numright'] = 'Número correcto';
-$string['numwrong'] = 'Número incorrecto';
 $string['percent_correct_display_name'] = '% Correctas';
 $string['pluginadministration'] = 'Cuestionario adaptado';
 $string['pluginname'] = 'Cuestionario adaptado';
@@ -165,7 +172,6 @@ $string['recentattemptstate'] = 'Estado del intento:';
 $string['recentcomplete'] = 'Completado';
 $string['recentinprogress'] = 'En progreso';
 $string['reportattemptanswerdistributiontab'] = 'Distribución de Respuesta';
-$string['reportattemptanswerdistributiontabletitle'] = 'Vista de Tabla de Distribución de Respuesta';
 $string['reportattemptgraphtab'] = 'Gráfica de Intento';
 $string['reportattemptgraphtabletitle'] = 'Vista de Tabla de Gráfica de Intento';
 $string['reportattemptquestionsdetailstab'] = 'Detalles de la pregunta';

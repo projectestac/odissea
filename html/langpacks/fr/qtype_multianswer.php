@@ -41,22 +41,22 @@ $string['layoutundefined'] = 'Disposition non définie';
 $string['layoutvertical'] = 'Colonne verticale de boutons radio';
 $string['missingsubquestion'] = 'Cette sous-question manque dans votre système et ne peut pas être affichée.';
 $string['multichoicex'] = 'Choix multiple {$a}';
-$string['nooptionsforsubquestion'] = 'Impossible d\'obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
+$string['nooptionsforsubquestion'] = 'Impossible d’obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La question Cloze (multianswer) « <strong>{$a}</strong> » ne contient aucune question';
 $string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';
 $string['pluginname'] = 'Cloze (réponses intégrées)';
-$string['pluginname_help'] = 'Les questions à réponses intégrées (Cloze) sont formées d\'un texte au sein duquel sont incluses des questions à choix multiple et des questions à réponse courte.';
+$string['pluginname_help'] = 'Les questions à réponses intégrées (Cloze) sont formées d’un texte au sein duquel sont incluses des questions à choix multiple et des questions à réponse courte.';
 $string['pluginname_link'] = 'question/type/multianswer';
-$string['pluginnameadding'] = 'Ajout d\'une question Cloze';
-$string['pluginnameediting'] = 'Modification d\'une question Cloze';
-$string['pluginnamesummary'] = 'Les questions de ce type sont très flexibles, mais ne peuvent être créées qu\'en tapant du texte suivant un format particulier avec des codes spécifiques qui crééent des questions à choix multiple, des questions à réponses courtes et des questions numériques intégrées.';
-$string['privacy:metadata'] = 'Le plugin de type de question Cloze (réponses intégrées) n\'enregistre aucune donnée personnelle.';
+$string['pluginnameadding'] = 'Ajout d’une question Cloze';
+$string['pluginnameediting'] = 'Modification d’une question Cloze';
+$string['pluginnamesummary'] = 'Les questions de ce type sont très flexibles, mais ne peuvent être créées qu’en tapant du texte suivant un format particulier avec des codes spécifiques qui crééent des questions à choix multiple, des questions à réponses courtes et des questions numériques intégrées.';
+$string['privacy:metadata'] = 'Le plugin de type de question Cloze (réponses intégrées) n’enregistre aucune donnée personnelle.';
 $string['qtypenotrecognized'] = 'Le type de question {$a} est inconnu';
 $string['questiondefinition'] = 'Définition de question';
 $string['questiondeleted'] = 'Question supprimée';
 $string['questioninquiz'] = '<ul>
   <li>ajouter ou supprimer des questions,</li>
-  <li>modifier l\'ordre des questions dans le texte,</li>
+  <li>modifier l’ordre des questions dans le texte,</li>
   <li>modifier le type de question (numérique, à réponse courte, à choix multiple).</li>
 </ul>';
 $string['questionnotfound'] = 'Impossible de trouver la partie {$a} de la question';

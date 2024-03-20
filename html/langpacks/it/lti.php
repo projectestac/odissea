@@ -291,8 +291,9 @@ I tool esterni si differenziano da una risorsa di tipo URL per diversi aspetti:
 * I tool esterni possono leggere, aggiornare ed eliminare le valutazioni associate alla istanza dell\'attività.
 * Le configurazioni di I tool esterni creano una relazione di trust tra Moodle e il tool provider, assicurando un canale di comunicazione sicuro.';
 $string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'Tool Esterni';
-$string['modulenamepluralformatted'] = 'Istanze LTI';
+$string['modulenamepluralformatted'] = 'Tool esterni';
 $string['name'] = 'Nome';
 $string['never'] = 'Mai';
 $string['new_window'] = 'Nuova finestra';

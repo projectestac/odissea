@@ -5,9 +5,9 @@ class Lambda {
 	static function harray($it) {
 		$a = new _hx_array(array());
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$i = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$i = $Â»it->next();
 			$a->push($i);
 		}
 		return $a;
@@ -15,9 +15,9 @@ class Lambda {
 	static function hlist($it) {
 		$l = new HList();
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$i = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$i = $Â»it->next();
 			$l->add($i);
 		}
 		return $l;
@@ -25,9 +25,9 @@ class Lambda {
 	static function map($it, $f) {
 		$l = new HList();
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			$l->add(call_user_func_array($f, array($x)));
 		}
 		return $l;
@@ -36,9 +36,9 @@ class Lambda {
 		$l = new HList();
 		$i = 0;
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			$l->add(call_user_func_array($f, array($i++, $x)));
 		}
 		return $l;
@@ -46,18 +46,18 @@ class Lambda {
 	static function has($it, $elt, $cmp = null) {
 		if($cmp === null) {
 			if(null == $it) throw new HException('null iterable');
-			$»it = $it->iterator();
-			while($»it->hasNext()) {
-				$x = $»it->next();
+			$Â»it = $it->iterator();
+			while($Â»it->hasNext()) {
+				$x = $Â»it->next();
 				if($x == $elt) {
 					return true;
 				}
 			}
 		} else {
 			if(null == $it) throw new HException('null iterable');
-			$»it = $it->iterator();
-			while($»it->hasNext()) {
-				$x = $»it->next();
+			$Â»it = $it->iterator();
+			while($Â»it->hasNext()) {
+				$x = $Â»it->next();
 				if(call_user_func_array($cmp, array($x, $elt))) {
 					return true;
 				}
@@ -67,9 +67,9 @@ class Lambda {
 	}
 	static function exists($it, $f) {
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			if(call_user_func_array($f, array($x))) {
 				return true;
 			}
@@ -78,9 +78,9 @@ class Lambda {
 	}
 	static function hforeach($it, $f) {
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			if(!call_user_func_array($f, array($x))) {
 				return false;
 			}
@@ -89,18 +89,18 @@ class Lambda {
 	}
 	static function iter($it, $f) {
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			call_user_func_array($f, array($x));
 		}
 	}
 	static function filter($it, $f) {
 		$l = new HList();
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			if(call_user_func_array($f, array($x))) {
 				$l->add($x);
 			}
@@ -109,9 +109,9 @@ class Lambda {
 	}
 	static function fold($it, $f, $first) {
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			$first = call_user_func_array($f, array($x, $first));
 		}
 		return $first;
@@ -120,16 +120,16 @@ class Lambda {
 		$n = 0;
 		if($pred === null) {
 			if(null == $it) throw new HException('null iterable');
-			$»it = $it->iterator();
-			while($»it->hasNext()) {
-				$_ = $»it->next();
+			$Â»it = $it->iterator();
+			while($Â»it->hasNext()) {
+				$_ = $Â»it->next();
 				$n++;
 			}
 		} else {
 			if(null == $it) throw new HException('null iterable');
-			$»it = $it->iterator();
-			while($»it->hasNext()) {
-				$x = $»it->next();
+			$Â»it = $it->iterator();
+			while($Â»it->hasNext()) {
+				$x = $Â»it->next();
 				if(call_user_func_array($pred, array($x))) {
 					$n++;
 				}
@@ -143,9 +143,9 @@ class Lambda {
 	static function indexOf($it, $v) {
 		$i = 0;
 		if(null == $it) throw new HException('null iterable');
-		$»it = $it->iterator();
-		while($»it->hasNext()) {
-			$v2 = $»it->next();
+		$Â»it = $it->iterator();
+		while($Â»it->hasNext()) {
+			$v2 = $Â»it->next();
 			if($v == $v2) {
 				return $i;
 			}
@@ -156,15 +156,15 @@ class Lambda {
 	static function concat($a, $b) {
 		$l = new HList();
 		if(null == $a) throw new HException('null iterable');
-		$»it = $a->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $a->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			$l->add($x);
 		}
 		if(null == $b) throw new HException('null iterable');
-		$»it = $b->iterator();
-		while($»it->hasNext()) {
-			$x = $»it->next();
+		$Â»it = $b->iterator();
+		while($Â»it->hasNext()) {
+			$x = $Â»it->next();
 			$l->add($x);
 		}
 		return $l;

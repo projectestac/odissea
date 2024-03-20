@@ -30,22 +30,22 @@ class com_wiris_quizzes_impl_HttpImpl extends haxe_Http {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HttpImpl'; }
 }
-function com_wiris_quizzes_impl_HttpImpl_0(&$»this, &$listener, &$url, $msg) {
+function com_wiris_quizzes_impl_HttpImpl_0(&$Â»this, &$listener, &$url, $msg) {
 	{
-		$»this->listener->onError($msg);
+		$Â»this->listener->onError($msg);
 	}
 }
-function com_wiris_quizzes_impl_HttpImpl_1(&$»this, &$listener, &$url, $data) {
+function com_wiris_quizzes_impl_HttpImpl_1(&$Â»this, &$listener, &$url, $data) {
 	{
-		$»this->listener->onData($data);
+		$Â»this->listener->onData($data);
 	}
 }

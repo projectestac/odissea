@@ -85,7 +85,7 @@ if ($mform && $mform->is_cancelled()) {
         // XTEC ************ AFEGIT - Only xtecadmin can configure oAuth2 client for IDI (Azure AD).
         // 2022.11.28 @aginard
         $iditext = get_string('IDI', 'local_agora');
-        $isIDI = method_exists($issuer, 'get') && is_number(strpos($issuer->get('loginpagename'), $iditext));
+        $isIDI = is_object($issuer) && method_exists($issuer, 'get') && is_number(strpos($issuer->get('loginpagename'), $iditext));
         if ((!$isIDI && is_agora()) || get_protected_agora()) {
         // ************ FI
 

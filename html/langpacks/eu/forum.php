@@ -234,16 +234,16 @@ $string['editdiscussiontopic'] = 'Editatu eztabaidaren gaia';
 $string['editedby'] = '{$a->name}(e)k {$a->date} editatu du';
 $string['editedpostupdated'] = '{$a}(r)en mezua eguneratu da';
 $string['editing'] = 'Editatzen';
-$string['emaildigestcompleteshort'] = 'Mezu osoak';
+$string['emaildigestcompleteshort'] = 'Laburpena - Mezu osoak';
 $string['emaildigestdefault'] = 'Lehenetsitakoa ({$a})';
 $string['emaildigestoffshort'] = 'Laburpenik ez';
-$string['emaildigestsubjectsshort'] = 'Gaiak soilik';
+$string['emaildigestsubjectsshort'] = 'Laburpena - Gaiak soilik';
 $string['emaildigesttype'] = 'Posta elektroniko bidezko laburpen-mezuen aukerak';
 $string['emaildigesttype_help'] = 'Foro bakoitzetik jasoko duzun jakinarazpen mota.
 
 * Lehenetsitakoa - erabiltzailearen profilean ezarritakoa aplikatzen da. Zure profila eguneratzen baduzu, aldaketa hori hemen ere islatuko da;
 * Laburpenik ez - foroetako mezu bakoitzeko e-mail bana jasoko duzu;
-* Laburpena - mezuak osorik - egun bakoitzean foro bakoitzeko mezuen eduki guztiak dituen laburpen-mezu bat jasoko duzu;
+* Laburpena - mezu osoak - egun bakoitzean foro bakoitzeko mezuen eduki guztiak dituen laburpen-mezu bat jasoko duzu;
 * Laburpena - gaiak soilik - egun bakoitzean foro bakoitzeko mezuen izenburuak dituen laburpen-mezu bat jasoko duzu.';
 $string['emptymessage'] = 'Zerbait oker dabil zure mezuarekin. Agian hutsik utzi duzu, edo eranskina handiegia da.  Zure aldaketak EZ dira gorde.';
 $string['errorcannotlock'] = 'Ez duzu eztabaidak blokeatzeko baimenik.';
@@ -703,6 +703,8 @@ $string['smallmessagedigest'] = 'Foroetako laburpenak {$a} mezu dauzka';
 $string['starredonly'] = 'Bilatu nabarmendutako elkarrizketak soilik';
 $string['startedby'] = 'Nork hasia';
 $string['subject'] = 'Gaia';
+$string['subplugintype_forumreport'] = 'Foro-txostena';
+$string['subplugintype_forumreport_plural'] = 'Foro-txostenak';
 $string['subscribe'] = 'Harpidetu forora';
 $string['subscribeall'] = 'Harpidetu denak foro honetara';
 $string['subscribed'] = 'Harpidetuta';

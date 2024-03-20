@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuration dépôt fichiers disponibles';
 $string['currentusefiles'] = 'Fichiers utilisés actuellement';
-$string['emptyfilelist'] = 'Il n\'y a aucun fichier à afficher';
+$string['emptyfilelist'] = 'Il n’y a aucun fichier à afficher';
 $string['local:view'] = 'Consulter le dépôt fichiers disponibles';
 $string['notitle'] = 'sans titre';
 $string['pluginname'] = 'Fichiers disponibles';
 $string['pluginname_help'] = 'Fichiers déjà déposés sur le serveur Moodle';
-$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers disponibles n\'enregistre et ne transmet aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers disponibles n’enregistre et ne transmet aucune donnée personnelle.';
 $string['remember'] = 'Enregistrer';

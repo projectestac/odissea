@@ -34,7 +34,7 @@ $string['calendareventdescriptionbooking'] = 'لقد حصلت على حجز في
 $string['calendareventdescriptionsession'] = 'لقد أنشأت <a href="{$a}">جلسة وجه لوجه</a> هذه.';
 $string['capacity_help'] = '**الاستيعاب** هو عدد المقاعد المتاحة في الجلسة.
 
-عندما تصل جلسة وجهًا لوجه إلى حد استيعابها، لا تظهر تفاصيل الجلسة في صفحة المساق. ستظهر التفاصيل بلون رمادي في صفحة \'معاينة كل الجلسات\' ولن يعود المتعلم قادرًا على الانضمام إلى الجلسة.
+عندما تصل جلسة وجهًا لوجه إلى حد استيعابها، لا تظهر تفاصيل الجلسة في صفحة المقرر. ستظهر التفاصيل بلون رمادي في صفحة \'معاينة كل الجلسات\' ولن يعود المتعلم قادرًا على الانضمام إلى الجلسة.
 &nbsp;';
 $string['confirmmanageremailaddress'] = 'تأكيد عنوان البريد الالكتروني للمدير';
 $string['confirmmanageremailaddressquestion'] = 'هل لا زال <b>{$a}</b> العنوان البريدي لمديرك؟';
@@ -89,7 +89,7 @@ $string['feedbackupdated'] = 'الإفادة تم تحديثها لـ {$a} من 
 $string['goback'] = 'رجوع';
 $string['location_help'] = '**الموقع** يصف أرجاء الجلسة (المدينة، البلد، المنطقة، إلخ).
 
-**الموقع** يُعرض في صفحة المساق، \'صفحة التسجيل\'، صفحة \'معاينة كل الجلسات\'، وفي كل إشعارات البريد الالكتروني.
+**الموقع** يُعرض في صفحة المقرر، \'صفحة التسجيل\'، صفحة \'معاينة كل الجلسات\'، وفي كل إشعارات البريد الالكتروني.
 
 في صفحة \'معاينة كل الجلسات\'، يمكن ترشيح الجلسات المعروضة حسب الموقع.';
 $string['modulename_help'] = 'تُمكن وحدة نشاط وجه لوجه المعلم من تهيئة نظام حجز طوعي لواحد أو أكثر من الجلسات الصفية/الخصوصية.
@@ -129,12 +129,8 @@ $string['sessiondatetime'] = 'تاريخ/وقت الجلسة';
 $string['sessiondatetimeknown'] = 'تاريخ/وقت الجلسة معلومان';
 $string['sessionfinishtime'] = 'وقت إنتهاء الجلسة';
 $string['sessioninprogress'] = 'الجلسة قيد التنفيذ';
-$string['sessionsoncoursepage'] = 'الجلسات المعروضة في صفحة المساق';
-$string['sessionsoncoursepage_help'] = 'هذا هو عدد الجلسات لكل نشاط من أنشطة وجه لوجه التي سيتم إظهارها في صفحة المساق الرئيسية.';
-$string['sessionstartdateandtime'] = '{$a->startdate}، {$a->starttime} - {$a->endtime} (المنطقة الزمنية: {$a->timezone})';
-$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}، {$a->starttime} - {$a->endtime}';
-$string['sessionstartfinishdateandtime'] = '{$a->startdate} - {$a->enddate}، {$a->starttime} - {$a->endtime} (المنطقة الزمنية: {$a->timezone})';
-$string['sessionstartfinishdateandtimewithouttimezone'] = '{$a->startdate} - {$a->enddate}، {$a->starttime} - {$a->endtime}';
+$string['sessionsoncoursepage'] = 'الجلسات المعروضة في صفحة المقرر';
+$string['sessionsoncoursepage_help'] = 'هذا هو عدد الجلسات لكل نشاط من أنشطة وجه لوجه التي سيتم إظهارها في صفحة المقرر الرئيسية.';
 $string['sessionstarttime'] = 'وقت بدء الجلسة';
 $string['sessionvenue'] = 'مكان الجلسة';
 $string['setting:defaultcancellationmessagedefault'] = 'هذا إبلاغ لك بأن حجزك في المساق أدناه قد ألغي:

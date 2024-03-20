@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Séparé par des virgules (.csv)';
-$string['privacy:metadata'] = 'Le plugin format de données CSV n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin format de données CSV n’enregistre aucune donnée personnelle.';
 $string['shortname'] = 'CSV';

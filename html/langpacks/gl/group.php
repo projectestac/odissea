@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Membro do grupo engadido';
 $string['eventgroupmemberremoved'] = 'Membro do grupo retirado';
 $string['eventgroupupdated'] = 'Grupo actualizado';
 $string['existingmembers'] = 'Membros existentes: {$a}';
+$string['exportgroupsgroupings'] = 'Descargar grupos e agrupamentos como';
 $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
 $string['groupaddedsuccesfully'] = 'O grupo {$a} foi engadido correctamente';

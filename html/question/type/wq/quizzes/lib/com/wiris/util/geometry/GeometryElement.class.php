@@ -216,12 +216,12 @@ class com_wiris_util_geometry_GeometryElement {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $POINT = "point";
 	static $LINE = "line";
@@ -294,9 +294,9 @@ class com_wiris_util_geometry_GeometryElement {
 	}
 	function __toString() { return 'com.wiris.util.geometry.GeometryElement'; }
 }
-function com_wiris_util_geometry_GeometryElement_0(&$»this) {
-	if($»this->data->exists(com_wiris_util_geometry_GeometryElement::$ELEMENTS)) {
-		return com_wiris_util_json_JSon::getArray($»this->data->get(com_wiris_util_geometry_GeometryElement::$ELEMENTS))->length;
+function com_wiris_util_geometry_GeometryElement_0(&$Â»this) {
+	if($Â»this->data->exists(com_wiris_util_geometry_GeometryElement::$ELEMENTS)) {
+		return com_wiris_util_json_JSon::getArray($Â»this->data->get(com_wiris_util_geometry_GeometryElement::$ELEMENTS))->length;
 	} else {
 		return 0;
 	}

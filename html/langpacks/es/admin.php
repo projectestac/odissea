@@ -629,7 +629,7 @@ $string['environmentxmlerror'] = 'Error leyendo la información sobre el entorno
 $string['errordeletingconfig'] = 'Ha ocurrido un error al eliminar los registros de configuración del plugin \'{$a}\'.';
 $string['errorsetting'] = 'No pudo guardarse el ajuste:';
 $string['errorwithsettings'] = 'Algunos ajustes no se han cambiado debido a un error:';
-$string['eventshandlersinuse'] = 'Los siguientes plugins de tu sistema están usando manejadores obsoletos para la API Events 1: \'{$a}\'. Por favor, actualízalos para utilizar la API Events 2. Consulta https://docs.moodle.org/dev/Event_2#Event_dispatching_and_observers.';
+$string['eventshandlersinuse'] = 'Los siguientes plugins de tu sistema están usando manejadores obsoletos para la API Events 1: "{$a}". Por favor, actualícelos para utilizar la API Events 2. Consulte https://docs.moodle.org/dev/Events_API#Event_dispatching_and_observers.';
 $string['everyonewhocan'] = 'Todos los que puedan \'{$a}\'';
 $string['exceptions'] = 'excepciones';
 $string['execpathnotallowed'] = 'La configuración de rutas locales y rutas hacia ejecutables está deshabilitada en config.php';
@@ -1265,6 +1265,8 @@ $string['sitemaintenancetitle'] = '{$a} en mantenimiento';
 $string['sitemaintenancewarning'] = 'El sitio está en modo mantenimiento (sólo los administradores tienen acceso). Para ponerlo en funcionamiento de nuevo, <a href="maintenance.php">desactive el modo de mantenimiento</a>.';
 $string['sitemaintenancewarning2'] = 'Su sitio se encuentra actualmente en modo de mantenimiento (solo los administradores pueden iniciar sesión). Para devolver este sitio a la operación normal, <a href="{$a}">desactive el modo de mantenimiento</a>.';
 $string['sitemenubar'] = 'Navegación del sitio';
+$string['sitenameintitle'] = 'Incluir el nombre del sitio en el título de la página';
+$string['sitenameintitle_help'] = 'Este ajuste añadirá el nombre del sitio al final del título de la página. Está pensado para incluir el nombre del sitio en el título de la página para mejorar la accesibilidad del sitio permitiendo a los usuarios identificar rápidamente en qué página se encuentran en este momento.';
 $string['sitepolicies'] = 'Políticas de seguridad del sitio';
 $string['sitepolicy'] = 'URL con la política del sitio';
 $string['sitepolicy_help'] = 'La URL de la política del sitio que todos los usuarios registrados deben ver y aceptar antes de acceder al sitio. Tenga en cuenta que esta configuración solo tendrá efecto si el controlador de políticas del sitio está configurado como predeterminado (core).';
@@ -1465,6 +1467,7 @@ $string['unsupportedphpversion74'] = 'La versión 7.4 de PHP y superiores no sop
 $string['unsupportedphpversion80'] = 'La versión de PHP 8.0 y superiores no soportadas.';
 $string['unsupportedphpversion81'] = 'Versión de PHP 8.1 y superiores no soportadas.';
 $string['unsupportedphpversion82'] = 'Versión de PHP 8.2 y superior no soportada.';
+$string['unsupportedphpversion83'] = 'Las versiones PHP 8.3 y superiores no están soportadas.';
 $string['unsuspenduser'] = 'Activar cuenta de usuario';
 $string['updateaccounts'] = 'Actualizar cuentas existentes';
 $string['updateautocheck'] = 'Compruebe automáticamente las actualizaciones disponibles';

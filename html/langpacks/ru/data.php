@@ -151,7 +151,7 @@ $string['emptypresetname'] = 'Имена заготовки или файла н
 $string['enabletemplateeditorcheck'] = 'Вы действительно хотите включить редактор? Это может привести к изменению содержимого при сохранении шаблона.';
 $string['entries'] = 'Записи';
 $string['entrieslefttoadd'] = 'Вы должны добавить ещё записи ({$a->entriesleft}), чтобы этот активный элемент считался выполненным';
-$string['entrieslefttoaddtoview'] = 'Вы должны добавить ещё {$a->entriesleft} запись(и, ей), чтобы иметь возможность видеть записи других участников';
+$string['entrieslefttoaddtoview'] = 'Вы должны добавить ещё {$a->entrieslefttoview} запись(и, ей), чтобы иметь возможность видеть записи других участников';
 $string['entry'] = 'Запись';
 $string['entrysaved'] = 'Ваша запись сохранена';
 $string['errormustbeteacher'] = 'Вы должны быть преподавателем, чтобы работать с этой страницей!';
@@ -211,8 +211,8 @@ $string['filesnotgenerated'] = 'Не все файлы были созданы: 
 $string['filtername'] = 'Автосвязывание Базы данных';
 $string['footer'] = 'Нижний колонтитул';
 $string['forcelinkname'] = 'Принудительное название для ссылки';
-$string['foundnorecords'] = 'Не найдено ни одной записи (<a href="{$a->reseturl}">Сбросить фильтры</a>)';
-$string['foundrecords'] = 'Найдено записей: {$a->num}/{$a->max}. (<a href="{$a->reseturl}">Сбросить фильтры</a>)';
+$string['foundnorecords'] = 'Не найдено ни одной записи (<a href="{$a->reseturl}">Очистить все фильтры</a>)';
+$string['foundrecords'] = 'Найдено записей: {$a->num}/{$a->max}. (<a href="{$a->reseturl}">Очистить все фильтры</a>)';
 $string['fromfile'] = 'Импортировать из ZIP архива';
 $string['fromfile_help'] = 'Импорт из ZIP-архива позволяет просматривать и загружать заготовки шаблонов и полей из ZIP-файла.';
 $string['generateerror'] = 'Созданы не все файлы!';
@@ -422,6 +422,7 @@ $string['savetemplate'] = 'Сохранить шаблон';
 $string['search'] = 'Поиск';
 $string['search:activity'] = 'База данных — информация об элементе курса';
 $string['search:entry'] = 'База данных - записи';
+$string['searchresults'] = 'Записи, содержащие «{$a}»';
 $string['selectedrequired'] = 'Все выбранные требуются';
 $string['selectexportoptions'] = 'Выберите параметры экспорта';
 $string['selectfields'] = 'Выберите поля';

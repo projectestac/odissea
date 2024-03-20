@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rapport des scores';
-$string['privacy:metadata'] = 'Le plugin Rapport des scores n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Rapport des scores n’enregistre aucune donnée personnelle.';

@@ -537,7 +537,7 @@ $string['sessioncannotobtainlock'] = '<p>Die Sperre für die Sitzungs-ID {$a->id
 <p>Sie können bis zum Timeout der Sitzungssperre ({$a->lockexpire}) warten oder Ihre Browsersitzung neu starten. Wenn dieser Fehler weiterhin besteht, fragen Sie bitte die Administrator/innen.</p>';
 $string['sessioncookiesdisable'] = 'Fehlerhafte Verwendung von  require_key_login() - Session Cookie sollte deaktiviert werden!';
 $string['sessiondiskfull'] = 'Die Session-Partition ist voll. Ein Login ist zurzeit nicht möglich. Bitte benachrichtigen Sie die Server-Administrator/innen.';
-$string['sessionerroruser'] = 'Ihre Session ist ungültig. Sie müssen sich neu anmelden.';
+$string['sessionerroruser'] = 'Die Session ist abgelaufen. Melden Sie sich neu an.';
 $string['sessionerroruser2'] = 'Ein Serverfehler ist aufgetreten, der Ihre Anmeldung betrifft. Melden Sie sich bitte neu an oder starten Sie Ihren Browser noch einmal.';
 $string['sessionexpired'] = 'Sitzung abgelaufen';
 $string['sessionhandlerproblem'] = 'Der Session-Handler ist falsch konfiguriert';

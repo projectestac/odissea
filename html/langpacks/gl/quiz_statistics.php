@@ -65,6 +65,9 @@ $string['firstattempts'] = 'primeiros intentos';
 $string['firstattemptsavg'] = 'Cualificación media dos primeiros intentos';
 $string['firstattemptscount'] = 'Número de primeiros intentos completos cualificados';
 $string['frequency'] = 'Frecuencia';
+$string['getstatslockprogress'] = 'Waiting for task in progress. Please wait or try again later.';
+$string['getstatslocktimeout'] = 'Statistics calculation lock timeout';
+$string['getstatslocktimeoutdesc'] = 'How many seconds to wait for a lock when attempting to perform a statistics calculation for a quiz. This setting primarily exists for testing, do not modify it unless you know what you are doing.';
 $string['highestattempts'] = 'intento con máxima cualificación';
 $string['highestattemptsavg'] = 'Cualificación media dos intentos con mellores cualificacións';
 $string['intended_weight'] = 'Ponderación desexada';
@@ -85,6 +88,7 @@ A nosa ecuación para a ponderación efectiva da pregunta non pode calcularse ne
 
 Se edita unha proba e ponlle a esta(s) pregunta(s) con covarianza negativa unha cualificación máxima de cero, entón a ponderación efectiva destas preguntas será cero e a ponderación efectiva real da pregunta será como se calcule agora.';
 $string['nogradedattempts'] = 'Non se realizaron intentos nesta proba, ou todos os intentos teñen preguntas que precisan a cualificación manual.';
+$string['nostats'] = 'Could not complete the statistics calculation. There may be a long-running calculation in progress. Please try again later.';
 $string['nostudentsingroup'] = 'Aínda non hai alumnos neste grupo';
 $string['optiongrade'] = 'Crédito parcial';
 $string['partofquestion'] = 'Parte da pregunta';
@@ -106,6 +110,7 @@ $string['random_guess_score'] = 'Cualificación estimada ao chou';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Intervalo de estatísticas para estas preguntas';
 $string['recalculatenow'] = 'Recalcular agora';
+$string['recalculatetask'] = 'Recalcular as estatísticas das preguntas';
 $string['reportsettings'] = 'Axustes de cálculos estatísticos';
 $string['response'] = 'Resposta';
 $string['skewness'] = 'Asimetría da distribución de puntuacións (para {$a})';

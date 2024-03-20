@@ -69,8 +69,8 @@ $string['changeteamteacher'] = 'Gestions des équipes';
 $string['clasification'] = 'Classement';
 $string['comment'] = 'commentaire';
 $string['commentby'] = 'commenté par';
-$string['commentsforteacher'] = 'Commentaires pour l\'enseignant';
-$string['commentsteacher'] = 'Commentaire général de l\'enseignant';
+$string['commentsforteacher'] = 'Commentaires pour l’enseignant';
+$string['commentsteacher'] = 'Commentaire général de l’enseignant';
 $string['confirmdelete'] = 'confirmer effacer';
 $string['confirmdeletionofthisitem'] = 'confirmer lannulation de {$a}';
 $string['correct'] = 'correct';
@@ -259,9 +259,9 @@ $string['notavailable'] = 'Non disponible';
 $string['noteonassessmentelements'] = 'La note se divise en plusieurs « élément dévaluation ».<br />
 Cela rend la note plus simple et plus consistante. En tant que professeur vous devez ajouter ces<br />
 Éléments avant de mettre le travail à disposition des étudiants. On les obtient<br />
-En cliquant sur le travail en cours, et sil n\'y a pas d\'élément il vous sera demandé<br />
+En cliquant sur le travail en cours, et sil n’y a pas d’élément il vous sera demandé<br />
 De les ajouter. Vous pouvez changer le nombre d’élément en utilisant la page Éditer Travail,<br />
-L\'élément en soi peut  être rectifier depuis la page "Administrer Travail ".';
+L’élément en soi peut  être rectifier depuis la page "Administrer Travail ".';
 $string['notgraded'] = 'Sans note';
 $string['notsubmittedyet'] = 'Aucun thème envoyé';
 $string['nsubmissions'] = 'nbr de thème';
@@ -283,7 +283,7 @@ $string['phase2quest'] = 'En cours';
 $string['phase2short'] = 'Envois';
 $string['phase2submission'] = 'demmarage en cours';
 $string['phase3'] = 'Concours {$a} fermé';
-$string['phase3answer'] = 'Évaluée par l\'enseignant';
+$string['phase3answer'] = 'Évaluée par l’enseignant';
 $string['phase3quest'] = 'Terminé';
 $string['phase3short'] = 'Les deux';
 $string['phase3submission'] = 'Question en cours';
@@ -292,7 +292,7 @@ $string['phase4answer'] = 'Evaluée Correct. par Auteur';
 $string['phase4short'] = 'Évaluations';
 $string['phase4submission'] = 'Question close';
 $string['phase5'] = 'Calcul de la note finale';
-$string['phase5answer'] = 'Évalué correct par l\'enseignant';
+$string['phase5answer'] = 'Évalué correct par l’enseignant';
 $string['phase5short'] = 'Calcul';
 $string['phase5submission'] = 'Evalué. En cours de validation';
 $string['phase6'] = 'Afficher la note finale';
@@ -389,7 +389,7 @@ $string['tinitial'] = 'Temps initial';
 $string['title'] = 'Titre';
 $string['typecalification'] = 'Type de notation';
 $string['typegrade'] = 'Obtenir les notes de';
-$string['typeindividual'] = 'Élèves';
+$string['typeindividual'] = 'Étudiants';
 $string['typeofscale'] = 'Type dechelle';
 $string['typeteam'] = 'Équipes';
 $string['usepassword'] = 'Utiliser mot de passe';

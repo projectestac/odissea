@@ -2184,7 +2184,7 @@ function get_user_preferences($name = null, $default = null, $user = null) {
  * @param int $minute The minute part to create timestamp of
  * @param int $second The second part to create timestamp of
  * @param int|float|string $timezone Timezone modifier, used to calculate GMT time offset.
- *             if 99 then default user's timezone is used {@link http://docs.moodle.org/dev/Time_API#Timezone}
+ *             if 99 then default user's timezone is used {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
  * @param bool $applydst Toggle Daylight Saving Time, default true, will be
  *             applied only if timezone is 99 or string.
  * @return int GMT timestamp
@@ -2310,7 +2310,7 @@ function format_time($totalsecs, $str = null) {
  *        get_string('strftime...', 'langconfig');
  * @param int|float|string $timezone by default, uses the user's time zone. if numeric and
  *        not 99 then daylight saving will not be added.
- *        {@link http://docs.moodle.org/dev/Time_API#Timezone}
+ *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
  * @param bool $fixday If true (default) then the leading zero from %d is removed.
  *        If false then the leading zero is maintained.
  * @param bool $fixhour If true (default) then the leading zero from %I is removed.
@@ -2332,7 +2332,7 @@ function userdate($date, $format = '', $timezone = 99, $fixday = true, $fixhour 
  *        get_string('strftime...', 'langconfig');
  * @param int|float|string $timezone by default, uses the user's time zone. if numeric and
  *        not 99 then daylight saving will not be added.
- *        {@link http://docs.moodle.org/dev/Time_API#Timezone}
+ *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
  * @param bool $fixday If true (default) then the leading zero from %d is removed.
  *        If false then the leading zero is maintained.
  * @param bool $fixhour If true (default) then the leading zero from %I is removed.
@@ -2495,7 +2495,7 @@ function usertimezone($timezone=99) {
  * @category time
  * @param float|int|string $tz timezone to calculate GMT time offset before
  *        calculating user timezone, 99 is default user timezone
- *        {@link http://docs.moodle.org/dev/Time_API#Timezone}
+ *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
  * @return float|string
  */
 function get_user_timezone($tz = 99) {
@@ -4976,7 +4976,7 @@ function get_complete_user_data($field, $value, $mnethostid = null, $throwexcept
 function check_password_policy($password, &$errmsg, $user = null) {
     global $CFG;
 
-    if (!empty($CFG->passwordpolicy)) {
+    if (!empty($CFG->passwordpolicy) && !isguestuser($user)) {
         $errmsg = '';
         if (core_text::strlen($password) < $CFG->minpasswordlength) {
             $errmsg .= '<div>'. get_string('errorminpasswordlength', 'auth', $CFG->minpasswordlength) .'</div>';
@@ -10228,8 +10228,14 @@ function setup_lang_from_browser() {
         // Clean it properly for include.
         $lang = strtolower(clean_param($lang, PARAM_SAFEDIR));
         if (get_string_manager()->translation_exists($lang, false)) {
-            // Lang exists, set it in session.
-            $SESSION->lang = $lang;
+            // If the translation for this language exists then try to set it
+            // for the rest of the session, if this is a read only session then
+            // we can only set it temporarily in $CFG.
+            if (defined('READ_ONLY_SESSION') && !empty($CFG->enable_read_only_sessions)) {
+                $CFG->lang = $lang;
+            } else {
+                $SESSION->lang = $lang;
+            }
             // We have finished. Go out.
             break;
         }

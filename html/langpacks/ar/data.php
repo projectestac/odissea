@@ -48,7 +48,7 @@ $string['autogenallforms'] = 'قم بتوليد كل القوالب الافتر
 $string['autolinkurl'] = 'ربط عنوان الإنترنت تلقائياً';
 $string['availablefromdate'] = 'متاح من';
 $string['availabletags'] = 'الوسوم المتاحة';
-$string['availabletags_help'] = 'الوسوم هي عناصر نائبة في المظهر، والتي سيتم استبدالها ببيانات أو مفردات أخرى، مثل أيقونة التحرير عند تحرير أو معاينة المدخلات.
+$string['availabletags_help'] = 'الوسوم هي عناصر نائبة في المظهر، والتي سيتم استبدالها ببيانات أو عناصر أخرى، مثل أيقونة التحرير عند تحرير أو معاينة المدخلات.
 
 الحقول تكون بشكل [[fieldname]]. كل الوسوم الأخرى تكون بشكل ##sometag##.
 
@@ -133,7 +133,7 @@ $string['deleted'] = 'تم الحذف';
 $string['deleteentry'] = 'حذف الإدخال';
 $string['deletefield'] = 'حذف الحقل';
 $string['deletenotenrolled'] = 'إحذف مدخلات المستخدمين غير المنضمين';
-$string['deletewarning'] = 'حذف التحضير المسبق يزيله من قائمة التحضيرات المسبقة المتاحة في كل المساقات.';
+$string['deletewarning'] = 'حذف التحضير المسبق يزيله من قائمة التحضيرات المسبقة المتاحة في كل المقررات.';
 $string['descending'] = 'تنازليا';
 $string['directorynotapreset'] = '{$a->directory}  لا يوجد تعيين مسبق: ملفات مفقودة {$a->missing_files}';
 $string['disapprove'] = 'إلغاء الموافقة';
@@ -424,6 +424,7 @@ $string['savetemplate'] = 'حفظ القالب';
 $string['search'] = 'بحث';
 $string['search:activity'] = 'قاعدة البيانات - معلومات النشاط';
 $string['search:entry'] = 'قاعدة البيانات - المدخلات';
+$string['searchresults'] = 'المُدخلات التي تتضمن "{$a}"';
 $string['selectedrequired'] = 'كل المختار مطلوب';
 $string['selectexportoptions'] = 'حدد خيارات التصدير';
 $string['selectfields'] = 'إختر الحقول';

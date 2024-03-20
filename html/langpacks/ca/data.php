@@ -374,6 +374,7 @@ $string['search'] = 'Cerca';
 $string['search:activity'] = 'Base de dades: informació de l\'activitat';
 $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
 $string['showall'] = 'Mostra totes les entrades';
+$string['showmore'] = 'Mostra\'n més';
 $string['single'] = 'Visualitza una entrada';
 $string['singletemplate'] = 'Plantilla única';
 $string['singleview'] = 'Visualització d\'una entrada';

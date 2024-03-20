@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Permettre de faire le test hors ligne au moyen de l\'App mobile.';
+$string['allowofflineattempts'] = 'Permettre de faire le test hors ligne au moyen de l’App mobile.';
 $string['allowofflineattempts_help'] = 'Si ce réglage est activé, le participant pourra télécharger le test pour le passer hors ligne.
 
-Il n\'est pas possible de faire hors ligne les tests avec limite de temps, ni ceux avec une restriction d\'accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori (avec ou sans indication de certitude).';
-$string['confirmdatasaved'] = 'Je confirme que je n\'ai pas de travail non enregistré sur mon appareil mobile.';
+Il n’est pas possible de faire hors ligne les tests avec limite de temps, ni ceux avec une restriction d’accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori (avec ou sans indication de certitude) ou qui utilisent la navigation séquentielle.';
+$string['confirmdatasaved'] = 'Je confirme que je n’ai pas de travail non enregistré sur mon appareil mobile.';
 $string['mobileapp'] = 'App mobile';
-$string['offlineattemptserror'] = 'Il n\'est pas possible de faire hors ligne les tests avec limite de temps, ni ceux avec une restriction d\'accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori (avec ou sans indication de certitude).';
-$string['offlinedatamessage'] = 'Vous avez travaillé sur cette tentative à partir d\'un appareil mobile. Les données ont été enregistrées sur le site il y a {$a}.';
-$string['pleaseconfirm'] = 'Veuillez vérifier et confirmer que vous n\'avez pas de données non enregistrées.';
-$string['pluginname'] = 'Règle d\'accès des tentatives hors ligne';
-$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Tentatives hors ligne n\'enregistre aucune donnée personnelle.';
+$string['offlineattemptserror'] = 'Il n’est pas possible de faire hors ligne les tests avec limite de temps, ni ceux avec une restriction d’accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori (avec ou sans indication de certitude) ou qui utilisent la navigation séquentielle.';
+$string['offlinedatamessage'] = 'Vous avez travaillé sur cette tentative à partir d’un appareil mobile. Les données ont été enregistrées sur le site il y a {$a}.';
+$string['pleaseconfirm'] = 'Veuillez vérifier et confirmer que vous n’avez pas de données non enregistrées.';
+$string['pluginname'] = 'Règle d’accès des tentatives hors ligne';
+$string['privacy:metadata'] = 'Le plugin de restriction d’accès au test Tentatives hors ligne n’enregistre aucune donnée personnelle.';

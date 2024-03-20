@@ -34,10 +34,10 @@ $string['breakdownbycertainty'] = 'Decompor por grau de certeza';
 $string['cbmbonus'] = 'Bónus ABGC (Avaliação com Base no Grau de Certeza)';
 $string['cbmgradeexplanation'] = 'Para avaliação com base no grau de certeza, a nota acima é mostrada em função do valor máximo para C=1 (totalmente correto).';
 $string['cbmgrades'] = 'Notas ABGC';
-$string['cbmgrades_help'] = 'Na Avaliação com Base no Grau de Certeza (ABCG) ter todas as questões corretas com C=1 (grau de certeza baixo) equivale a uma pontuação de 100%. As notas podem ser tão altas quanto 300%, se todas as questões estiverem corretas com C=3 (grau de certeza alto). Equívocos (ou seja, respostas erradas dadas com um grau de certeza alto) diminuem muito mais as notas do que quando se reconhece que as respostas erradas foram dadas com um grau de certeza baixo. Isto poderá até resultar em notas globais negativas.
+$string['cbmgrades_help'] = 'Na Avaliação com Base no Grau de Certeza (ABGC) ter todas as questões corretas com C=1 (grau de certeza baixo) equivale a uma pontuação de 100%. As notas podem ser tão altas quanto 300%, se todas as perguntas estiverem corretas com C=3 (grau de certeza alto). Equívocos (ou seja, respostas erradas dadas com um grau de certeza alto) diminuem muito mais as notas do que quando se reconhece que as respostas erradas foram dadas com um grau de certeza baixo. Isto poderá até resultar em notas globais negativas.
 
 **Precisão** é a % da resposta correta ignorando a certeza, mas ponderada para a nota máxima de cada pergunta. Distinguir com sucesso respostas mais e menos confiáveis dá uma nota melhor do que selecionar a mesma certeza para cada pergunta. Isso é refletido no **Bónus ABGC**.
-**Precisão** + **Bónus ABGC** é uma medida de conhecimento melhor que **Precisão**. Equívocos podem levar a um bónus negativo, um aviso para analisar cuidadosamente o que é e o que não é conhecido.';
+**Precisão** + **Bónus ABGC** é uma melhor medida de conhecimento que **Precisão**. Equívocos podem levar a um bónus negativo, um aviso para analisar cuidadosamente o que é e o que não é conhecido.';
 $string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Nota da ABGC {$a}';
 $string['certainty'] = 'Certeza';

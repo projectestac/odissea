@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cleanuptask'] = 'Tarefa de limpeza do bloco Atividade recente';
+$string['cleanuptask'] = 'Limpeza do bloco Atividade recente';
 $string['pluginname'] = 'Atividade recente';
 $string['privacy:metadata'] = 'O bloco atividade recente contém dados de cache armazenados noutro local no Moodle.';
 $string['privacy:metadata:block_recent_activity'] = 'Registo temporário da atividade recente do professor. Removido depois de dois dias.';

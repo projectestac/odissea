@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Feedback différé avec indication de certitude et validation explicite';
-$string['privacy:metadata'] = 'Le plugin Feedback différé avec indication de certitude et validation explicite n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Feedback différé avec indication de certitude et validation explicite n’enregistre aucune donnée personnelle.';

@@ -25,25 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acccesstypesnotfound'] = 'Désolé, pas de type d\'accès installés ou autorisés. Veuillez contacter votre administrateur pour plus de détails.';
+$string['acccesstypesnotfound'] = 'Désolé, pas de type d’accès installés ou autorisés. Veuillez contacter votre administrateur pour plus de détails.';
 $string['access'] = 'Accès';
-$string['accessadd'] = 'Ajouter un contexte à l\'accès.';
+$string['accessadd'] = 'Ajouter un contexte à l’accès.';
 $string['accessedit'] = 'Modifier « {$a} »';
 $string['accessenabled'] = 'Activé';
 $string['accessnew'] = 'Nouveau {$a}';
 $string['actions'] = 'Actions de fiche';
-$string['activityadministration'] = 'Administration de l\'activité';
-$string['activityicon'] = 'Icône d\'activité';
-$string['activityicon_help'] = 'Vous pouvez téléverser un fichier image pour remplacer l\'icône d\'activité Dataform par défaut qui s\'affiche sur la page de cours à côté du lien vers l\'activité.';
+$string['activityadministration'] = 'Administration de l’activité';
+$string['activityicon'] = 'Icône d’activité';
+$string['activityicon_help'] = 'Vous pouvez déposer un fichier image pour remplacer l’icône d’activité Dataform par défaut qui s’affiche sur la page de cours à côté du lien vers l’activité.';
 $string['alignment'] = 'Alignement';
 $string['and'] = 'ET';
 $string['andor'] = 'et/ou';
 $string['anonymousentries'] = 'Fiches anonymes';
 $string['ascending'] = 'Ascendant';
 $string['author'] = 'Auteur';
-$string['authorinfo'] = 'Informations sur l\'auteur';
+$string['authorinfo'] = 'Informations sur l’auteur';
 $string['availablefrom'] = 'Ouvert à partir de';
-$string['availableto'] = 'Ouvert jusqu\'à';
+$string['availableto'] = 'Ouvert jusqu’à';
 $string['between'] = 'Entre';
 $string['browse'] = 'Naviguer';
 $string['cancel'] = 'Annuler';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Barré';
-$string['privacy:metadata'] = 'Le plugin atto_strike n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_strike n’enregistre aucune donnée personnelle.';

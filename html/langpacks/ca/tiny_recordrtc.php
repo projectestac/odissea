@@ -33,6 +33,7 @@ $string['audiobitrate'] = 'Taxa de bits d\'àudio';
 $string['audiobitrate_desc'] = 'Qualitat de l\'enregistrament d\'àudio (com més alt és el número, millor qualitat)';
 $string['audiotimelimit'] = 'Límit de temps de l\'àudio en segons';
 $string['audiotimelimit_desc'] = 'Durada màxima permesa per a l\'enregistrament de clips d\'àudio';
+$string['audiotitle'] = 'Enregistra àudio';
 $string['confirm_yes'] = 'Sí';
 $string['gumabort'] = 'Ha passat alguna cosa estranya que ha impedit l\'accés a la càmera o al micròfon.';
 $string['gumabort_title'] = 'Ha passat alguna cosa';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autoria';
+$string['author'] = 'Autor/a';
 $string['choosecontext'] = 'Trieu un curs o una categoria...';
 $string['close'] = 'Tanca';
 $string['contentbank'] = 'Banc de contingut';

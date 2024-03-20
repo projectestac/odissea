@@ -66,6 +66,12 @@ Hai un certo número de opcións de presentación do URL, incorporada ou para ab
 Vexa que os URL tamén poden engadirse a calquera outro recurso ou tipo de actividade a través do editor de texto.';
 $string['modulename_link'] = 'mod/url/vista';
 $string['modulenameplural'] = 'URL';
+$string['name'] = 'Nome';
+$string['name_help'] = 'Isto servirá como texto da ligazón para o URL.
+
+Introduza un texto significativo que describa concisamente o propósito do URL.
+
+Evite o uso da palabra «ligazón». Isto axudará aos usuarios de lectores de pantalla, xa que os lectores de pantalla anuncian ligazóns (por exemplo, «ligazón a Moodle.org») polo que non hai necesidade de incluír a palabra «ligazón» no campo de nome.';
 $string['page-mod-url-x'] = 'Calquera URL do módulo páxina';
 $string['parameterinfo'] = '&amp;parámetro=variábel';
 $string['parametersheader'] = 'Variábeis de URL';

@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Montrer/cacher les boutons avancés';
-$string['privacy:metadata'] = 'Le plugin atto_collapse n\'enregistre aucune donnée personnelle.';
-$string['settings'] = 'Réglages de la barre d\'outils repliée';
+$string['privacy:metadata'] = 'Le plugin atto_collapse n’enregistre aucune donnée personnelle.';
+$string['settings'] = 'Réglages de la barre d’outils repliée';
 $string['showfewer'] = 'Afficher moins de boutons';
 $string['showgroups'] = 'Afficher les (n) premiers groupes quand repliée.';
-$string['showgroups_desc'] = 'Ce réglage définit le nombre de groupes affichés en une fois, lorsque la barre d\'outils est repliée (par défaut).';
+$string['showgroups_desc'] = 'Ce réglage définit le nombre de groupes affichés en une fois, lorsque la barre d’outils est repliée (par défaut).';
 $string['showmore'] = 'Afficher plus de boutons';
-$string['youareonsecondrow'] = 'Vous êtes maintenant sur une autre rangée de la barre d\'outils de l\'éditeur, où se trouvent d\'autres boutons.';
+$string['youareonsecondrow'] = 'Vous êtes maintenant sur une autre rangée de la barre d’outils de l’éditeur, où se trouvent d’autres boutons.';

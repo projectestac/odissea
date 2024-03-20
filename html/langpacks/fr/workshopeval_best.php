@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comparison'] = 'Comparaison des évaluations';
-$string['comparison_help'] = 'Ce réglage détermine à quel point la comparaison des évaluations doit être stricte. Plus la comparaison est stricte, plus les évaluations doivent être semblables afin d\'obtenir une bonne note.';
+$string['comparison_help'] = 'Ce réglage détermine à quel point la comparaison des évaluations doit être stricte. Plus la comparaison est stricte, plus les évaluations doivent être semblables afin d’obtenir une bonne note.';
 $string['comparisonlevel1'] = 'Très strict';
 $string['comparisonlevel3'] = 'Strict';
 $string['comparisonlevel5'] = 'Normal';
@@ -34,4 +34,4 @@ $string['comparisonlevel7'] = 'Indulgent';
 $string['comparisonlevel9'] = 'Très indulgent';
 $string['configcomparison'] = 'Valeur par défaut du facteur influençant la notation des évaluations.';
 $string['pluginname'] = 'Comparaison avec la meilleure évaluation';
-$string['privacy:metadata'] = 'Le plugin Comparaison avec la meilleure évaluation n\'enregistre aucune donnée personnelle. Les données personnelles en lien avec les notes de l\'utilisateur sont enregistrées par le module Atelier et jointes aux données exportées des travaux remis et des évaluations.';
+$string['privacy:metadata'] = 'Le plugin Comparaison avec la meilleure évaluation n’enregistre aucune donnée personnelle. Les données personnelles en lien avec les notes de l’utilisateur sont enregistrées par le module Atelier et jointes aux données exportées des travaux remis et des évaluations.';

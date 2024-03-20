@@ -82,7 +82,7 @@ $string['maxenrolled'] = 'Matrikulatutako gehieneko erabiltzaileak';
 $string['maxenrolled_help'] = 'Gehienez matrikula daitekeen erabiltzaile-kopurua zehazten du. Zero jarriz gero ez dago mugarik.';
 $string['maxenrolledreached'] = 'Matrikula daitekeen erabiltzaile-kopuruaren mugara iritsi da.';
 $string['messageprovider:expiry_notification'] = 'Matrikulazio automatikoaren iraungitze-jakinarazpenak';
-$string['newenrols'] = 'Baimendu matrikula berriak';
+$string['newenrols'] = 'Baimendu matrikulazio automatiko berriak';
 $string['newenrols_desc'] = 'Baimendu ikastaro berrietan erabiltzaileak beren burua matrikulatzea modu lehenetsian.';
 $string['newenrols_help'] = 'Ezarpen honek erabiltzaile batek bere burua ikastaro honetan matrikulatu dezakeen zehazten du.';
 $string['nopassword'] = 'Ez da matrikulazio-gakoa behar.';
@@ -95,6 +95,7 @@ Matrikulazio-gako bat zehaztuz gero, matrikulatzen saiatzen den edozein erabiltz
 $string['passwordinvalid'] = 'Matrikulazio-gakoa ez da zuzena, mesedez, saiatu berriro';
 $string['passwordinvalidhint'] = 'Matrikulazio-gako hori ez da zuzena, mesedez saiatu berriro<br/>
 (Laguntza txiki bat - honela hasten da: \'{$a}\')';
+$string['passwordmatchesgroupkey'] = 'Matrikulazio-gako hau dagoeneko taldeen matrikulazio-gako gisa erabiltzen da.';
 $string['pluginname'] = 'Matrikulazio automatikoa';
 $string['pluginname_desc'] = 'Matrikulazio automatikoko pluginak erabiltzaileari parte-hartu nahi duen ikastaroak hautatzeko aukera ematen dio. Ikastaroek matrikulazio-gakoa eskatu dezakete. Barrutik matrikulazioa eskuzko matrikulazio gehigarriaren bitartez egiten da, eta beraz gehigarri hori ere ikastaro horretan gaituta egon behar da.';
 $string['privacy:metadata'] = 'Matrikulazio automatikoa pluginak ez du datu pertsonalik biltzen.';
@@ -112,16 +113,16 @@ $string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro 
 $string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa ataza';
 $string['showhint'] = 'Erakutsi argibidea';
 $string['showhint_desc'] = 'Erakutsi gonbidatuen sarbide-gakoaren lehenbiziko letra';
-$string['status'] = 'Baimendu existitzen diren matrikulazioak';
+$string['status'] = 'Mantendu aktiboak existitzen diren matrikulazioak';
 $string['status_desc'] = 'Gaitu matrikulazio automatikoa ikastaro berrietan';
-$string['status_help'] = '\'Baimendu matrikula berriak\' aukerarekin batera gaituz gero, soilik aurretik auto-matrikulatutako erabiltzaileek izango dute ikastarorako sarbidea. Desgaituz gero matrikulazio automatikoki gehigarria desgaituko da, existitzen diren matrikulazioak etengo direlako eta erabiltzaile berriek ezingo dutelako bere burua matrikulatu.';
+$string['status_help'] = 'Ez zehaztuz gero, aurretik ikastaroan euren burua matrikulatu duten erabiltzaileek ez dute sarbiderik izango.';
 $string['syncenrolmentstask'] = 'Matrikulazio automatikoen sinkronizazio ataza';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
 $string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula "{$a}" ikastarotik?';
 $string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['usepasswordpolicy'] = 'Erabili pasahitzen politika';
-$string['usepasswordpolicy_desc'] = 'Aplikatu pasahitz-politika estandarra matrikulazio-giltzei.';
+$string['usepasswordpolicy_desc'] = 'Aplikatu pasahitz-politika estandarra matrikulazio-gakoei.';
 $string['welcometocourse'] = 'Ongi etorri {$a} gunera';
 $string['welcometocoursetext'] = 'Ongi etorri {$a->coursename} ikastarora!
 

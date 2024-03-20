@@ -32,6 +32,7 @@ $string['default_help'] = 'When set, this submission method is enabled by defaul
 $string['download'] = 'Download';
 $string['enabled'] = 'OneNote submissions';
 $string['enabled_help'] = 'If enabled, students are able to upload one or more OneNote pages as their submission.';
+$string['erroremptyothervalue'] = 'The \'filesubmissioncount\' value must be set in other.';
 $string['eventassessableuploaded'] = 'A OneNote page has been uploaded.';
 $string['maxbytes'] = 'Maximum OneNote page size';
 $string['maxfilessubmission'] = 'Maximum number of uploaded OneNote pages';

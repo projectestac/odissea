@@ -29,4 +29,4 @@ $string['getletter'] = 'Demander une lettre';
 $string['getword'] = 'Demander un mot';
 $string['getwordorpunctuation'] = 'Demander un mot ou un signe de ponctuation';
 $string['pluginname'] = 'Mode RegExp Adaptatif avec aide (sans pénalités)';
-$string['privacy:metadata'] = 'Le plugin Mode RegExp Adaptatif n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Mode RegExp Adaptatif n’enregistre aucune donnée personnelle.';

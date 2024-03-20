@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Souligné';
-$string['privacy:metadata'] = 'Le plugin atto_underline n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_underline n’enregistre aucune donnée personnelle.';

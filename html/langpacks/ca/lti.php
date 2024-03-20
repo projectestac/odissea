@@ -132,6 +132,7 @@ $string['donot'] = 'No ho enviïs';
 $string['donotaccept'] = 'No ho acceptis';
 $string['donotallow'] = 'No ho permetis';
 $string['duplicateregurl'] = 'Aquest URL per al registre ja està en ús';
+$string['dynreg_update_version'] = 'Versió de LTI';
 $string['editdescription'] = 'Feu clic aquí per donar una descripció a aquesta eina';
 $string['edittype'] = 'Edita l\'eina preconfigurada';
 $string['embed'] = 'Incrustada';
@@ -234,6 +235,7 @@ $string['lti_tool_request_added'] = 'La petició de configuració de l\'eina s\'
 $string['lti_tool_request_existing'] = 'S\'ha enviat una configuració d\'eina per al domini de l\'eina.';
 $string['ltisettings'] = 'Paràmetres LTI';
 $string['ltiunknownserviceapicall'] = 'Crida API a servei de LTI desconegut';
+$string['ltiversion'] = 'Versió de LTI';
 $string['main_admin'] = 'Ajuda general';
 $string['main_admin_help'] = 'Les eines externes permeten als usuaris de Moodle interaccionar de forma fluida amb recursos d\'aprenentatge allotjats de manera remota. Mitjançant un protocol de llançament especial, l\'eina remota té accés a informació general sobre l\'usuari que l\'executa; per exemple, el nom de la institució, l\'ID del curs, l\'ID de l\'usuari, i altres informacions com el nom de l\'usuari o l\'adreça de correu electrònic.
 

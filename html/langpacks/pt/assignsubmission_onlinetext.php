@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowonlinetextsubmissions'] = 'Ativo';
+$string['allowonlinetextsubmissions'] = 'Ativado';
 $string['default'] = 'Ativo por predefinição';
-$string['default_help'] = 'Se ativar esta opção, este método estará ativo por predefinição para todos os trabalhos.';
+$string['default_help'] = 'Se ativar esta opção, este método estará ativo por predefinição para todos os novos trabalhos.';
 $string['enabled'] = 'Texto online';
 $string['enabled_help'] = 'Se ativar esta opção, os alunos podem submeter um texto diretamente através do editor de texto do Moodle quando submetem o seu trabalho.';
 $string['eventassessableuploaded'] = 'Foi carregado um texto online';

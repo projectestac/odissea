@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'La data d\'obertura ha de ser anterior a la de tancament.';
+$string['activitydate:exceeded'] = 'S\'ha superat la data de venciment.';
+$string['activitydate:hasopened'] = 'Oberta el:';
+$string['activitydate:notavailableyet'] = 'Encara no disponible.';
+$string['activitydate:willclose'] = 'Es tanca el';
+$string['activitydate:willopen'] = 'S\'obre el';
 $string['add'] = 'Afegeix';
 $string['add_group'] = 'Afegeix grup';
 $string['add_grouping'] = 'Afegeix agrupament';
@@ -65,6 +71,7 @@ $string['choicetext'] = 'Text de l\'opció';
 $string['chooseaction'] = 'Escull una acció...';
 $string['choosegroup'] = 'Escull un grup';
 $string['collapse_all_groupings'] = 'Minimitza tots els agrupaments';
+$string['completiondetail:submit'] = 'Trieu un grup';
 $string['completionsubmit'] = 'Mostra com a completat quan l\'usuari/ària triï una opció';
 $string['createdate'] = 'Data de creació del grup';
 $string['defaultsettings'] = 'Paràmetres per defecte';
@@ -99,7 +106,9 @@ $string['limitanswers'] = 'Limita el nombre de respostes permeses';
 $string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit, ningú més no pot seleccionar aquesta opció.
 
 Si els límits estan inhabilitats, qualsevol nombre de participants pot seleccionar qualsevol de les opcions.';
-$string['members/'] = 'Ocupació';
+$string['maxenrollments'] = 'Màxim d\'inscrits';
+$string['maxenrollments_help'] = 'Aquesta opció permet limitar el nombre d\'inscrits als grups. Useu el valor **0** si no voleu un límit.';
+$string['members/'] = 'Membres';
 $string['members/max'] = 'Ocupació / Capacitat';
 $string['modulename'] = 'Elecció de grup';
 $string['modulename_help'] = 'El mòdul Tria grup permet als estudiants afegir-se ells mateixos a un grup d\'un curs. El professor pot escollir quins grups podran escollir els estudiants i el màxim de membres en cada grup';
@@ -107,9 +116,11 @@ $string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Elecció de grups';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
 $string['multipleenrollmentspossible'] = 'Permet la inscripció a diferents grups';
+$string['mustchoosemax'] = 'Heu de triar un màxim de {$a} grups. No s\'ha desat res.';
 $string['mustchooseone'] = 'Heu de triar una resposta abans de desar. No s\'ha desat res.';
 $string['name'] = 'Nom';
 $string['neverresultsviewable'] = 'Els resultats no són visibles.';
+$string['nogroupincourse'] = 'No s\'han creat grups al curs.';
 $string['noguestchoose'] = 'Els visitants no tenen permís per fer canvis.';
 $string['noresultsviewable'] = 'Els resultats no es poden veure en aquests moments.';
 $string['notanswered'] = 'Encara no s\'ha respost';
@@ -117,12 +128,20 @@ $string['notenrolledchoose'] = 'Només els usuaris inscrits poden respondre cons
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['notyetresultsviewable'] = 'Els resultats seran visibles un cop es tanqui l\'activitat.';
 $string['numberofuser'] = 'Nombre d\'usuaris';
+$string['onlyactive'] = 'Exclou les dades de les respostes d\'usuaris amb inscripcions caducades o suspeses';
 $string['option'] = 'Grup';
 $string['page-mod-choice-x'] = 'Pàgina del mòdul Elecció de grup qualsevol';
+$string['pleaseselectonegroup'] = 'Cal que seleccioneu almenys un grup.';
 $string['pleasesetgroups'] = 'Creeu almenys dos grups al curs.';
+$string['pleasesetonegroupor'] = 'Cal que creeu almenys un grup al curs.<br /><br />
+<ul>
+<li><a href="{$a->linkgroups}">gestiona els grups del curs</a></li>
+<li><a href="{$a->linkcourse}">torna al curs</a></li>
+</ul>';
 $string['pluginadministration'] = 'Administració de l\'elecció';
 $string['pluginname'] = 'Elecció de grup';
 $string['privacy'] = 'Privacitat dels resultats';
+$string['privacy:metadata'] = 'El connector Elecció de grup no desa cap dada personal. Totes les dades dels usuaris es desen al nucli de Moodle (core_group).';
 $string['publish'] = 'Publica resultats';
 $string['publishafteranswer'] = 'Mostra els resultats als estudiants un cop hagin respost';
 $string['publishafterclose'] = 'Mostra els resultats als estudiants només després que l\'activitat s\'hagi tancat';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Annuler/rétablir';
-$string['privacy:metadata'] = 'Le plugin atto_undo n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_undo n’enregistre aucune donnée personnelle.';
 $string['redo'] = 'Répéter';
 $string['undo'] = 'Annuler';

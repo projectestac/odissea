@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2023063000;
-$plugin->requires  = 2020061500;
+$plugin->version   = 2023110100;
+$plugin->requires  = 2022112800;
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = 'Version for Moodle 3.9 onwards';
+$plugin->release   = 'Version for Moodle 4.1 onwards';
 $plugin->component = 'block_completion_progress';

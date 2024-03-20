@@ -30,6 +30,7 @@ $string['answer_checked'] = 'Resposta verificada';
 $string['answer_correct'] = 'A sua resposta está correta';
 $string['answer_fail'] = 'Resposta incorreta';
 $string['answer_incorrect'] = 'A sua resposta está incorreta';
+$string['answer_noanswer'] = 'Nenhuma';
 $string['answer_pass'] = 'Resposta correta';
 $string['answer_text'] = 'Texto da resposta';
 $string['answer_unchecked'] = 'Resposta não verificada';

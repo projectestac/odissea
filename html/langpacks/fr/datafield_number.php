@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Nombre';
 $string['pluginname'] = 'Nombre';
-$string['privacy:metadata'] = 'Le composant Champ nombre n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['privacy:metadata'] = 'Le composant Champ nombre n’enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

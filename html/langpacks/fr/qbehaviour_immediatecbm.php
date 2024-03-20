@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Veuillez sélectionner un niveau de certitude.';
 $string['pluginname'] = 'Feedback immédiat avec indication de la certitude';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Feedback immédiat avec indication de la certitude n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Feedback immédiat avec indication de la certitude n’enregistre aucune donnée personnelle.';

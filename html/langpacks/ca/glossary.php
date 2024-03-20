@@ -67,7 +67,7 @@ $string['attachment_help'] = '<p>Opcionalment, podeu adjuntar UN fitxer des del 
 <p>Si torneu a editar una entrada i adjunteu un nou fitxer, qualsevol fitxer adjunt anterior serà reemplaçat.</p>
 
 <p>Si torneu a editar una entrada amb un fitxer adjunt i deixeu aquest espai en blanc, es conservarà l\'adjunt original.</p>';
-$string['author'] = 'autor/a';
+$string['author'] = 'Autor/a';
 $string['authorview'] = 'Ordenat per autor';
 $string['back'] = 'Enrere';
 $string['cachedef_concepts'] = 'Vinculació de conceptes';

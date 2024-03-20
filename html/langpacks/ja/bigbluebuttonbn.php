@@ -224,7 +224,7 @@ $string['config_waitformoderator_ping_interval_description'] = 'モデレータ�
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButtonは非推奨のグローバル変数を持つconfig.phpを使用しています。今後のバージョンではサポートされないため、ファイルを変換してください。';
 $string['config_warning_curl_not_installed'] = 'この機能ではPHPのcURL拡張モジュールがインストールおよび有効にされている必要があります。この条件に合致している場合のみ、設定にアクセスすることができます。';
 $string['config_welcome_default'] = 'デフォルトウェルカムメッセージ';
-$string['config_welcome_default_description'] = 'ルームへの参加者の入室時に表示されるウェルカムメッセージです。フィールドを空白にした場合、BigBlueButtonサーバに設定されているメッセージが表示されます。';
+$string['config_welcome_default_description'] = 'ルームへの参加者の入室時に表示されるウェルカムメッセージです。フィールドを空白のままにした場合、BigBlueButtonサーバに設定されているメッセージが表示されます。';
 $string['config_welcome_editable'] = 'デフォルトのウェルカムメッセージは教師が編集可能です。';
 $string['config_welcome_editable_description'] = 'インスタンスの追加または更新時にウェルカムメッセージの編集が可能です。';
 $string['dpainfonotsigned'] = 'このプラグインを有効にする前にあなたは<a href="{$a}">Blindside Networksデータ処理契約</a>を確実に読んで承諾する必要があります。';
@@ -378,7 +378,7 @@ $string['mod_form_field_wait'] = 'モデレータを待つ';
 $string['mod_form_field_wait_help'] = '視聴者は入室までモデレータを待つ必要がありますか?';
 $string['mod_form_field_welcome'] = 'ウェルカムメッセージ';
 $string['mod_form_field_welcome_default'] = '%%CONFNAME%% にようこそ';
-$string['mod_form_field_welcome_help'] = 'ルームへの参加者の入室時に表示されるウェルカムメッセージです。フィールドを空白にした場合、サイト管理に設定されているデフォルトメッセージが表示されます。';
+$string['mod_form_field_welcome_help'] = 'ルームへの参加者の入室時に表示されるウェルカムメッセージです。フィールドを空白のままにした場合、サイト管理に設定されているデフォルトメッセージが表示されます。';
 $string['mod_form_locksettings'] = 'ロック設定';
 $string['modulename'] = 'BigBlueButton';
 $string['modulename_help'] = 'BigBlueButtonはオンライン学習用に設計されたオープンソースのウェブ会議システムです。音声、ビデオ、チャット、スライド、画面共有、マルチユーザホワイトボード、ブレイクアウトルーム、投票、絵文字等のリアルタイム共有に対応しています。

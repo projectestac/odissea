@@ -25,19 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backgroundcolorpicker'] = 'Testuaren atzeko planorako kolore hautatzailea';
+$string['backgroundcolorpicker_desc'] = 'Testuaren atzeko planorako kolore hautatzailea eskuragarri egon behar den ala ez';
+$string['backgroundcolors'] = 'Testuaren atzeko planorako eskuragarri dauden koloreak';
+$string['backgroundcolors_desc'] = 'Koloreen izenen zerrenda ezkerrean eta euren RGB kolore-kodea, esaterako "#000000". Balioak hautatzeko leihoan erakutsiko diren koloreak dira. Izenak sagua koloreen gainean pasatzerakoan erakutsiko dira.';
 $string['btnBgcolor'] = 'Testuaren atzeko planoaren kolorea';
 $string['btnFgcolor'] = 'Testuaren kolorea';
 $string['colorPickerCancel'] = 'Utzi';
 $string['colorPickerColor'] = 'Kolorea';
+$string['colorPickerErrHexCode'] = 'Kolore-kode hamaseitarra ez ba zuzena: {0}';
+$string['colorPickerErrRgbCode'] = 'RGB balioa ez da zuzena: {0}';
 $string['colorPickerSave'] = 'Aplikatu';
 $string['colorPickerTitle'] = 'Kolore hautatzailea';
 $string['customColor'] = 'Kolore pertsonalizatua';
+$string['helplinktext'] = 'Tiny testuaren kolorea';
 $string['menuItemBgcolor'] = 'Testuaren atzeko planoaren kolorea';
 $string['menuItemFgcolor'] = 'Testuaren kolorea';
 $string['placeholdercolorname'] = 'Kolorearen izen adierazgarria';
+$string['placeholdercolorvalue'] = 'Kolorearen kode hamaseitarraren balioa';
 $string['pluginname'] = 'Tiny testuaren kolorea';
 $string['privacy:metadata'] = 'Tiny testuaren kolorea pluginak ez du datu pertsonalik biltzen.';
 $string['removeColor'] = 'Kendu kolorea';
 $string['settings'] = 'Tiny testuaren eta testuaren atzeko planoaren kolorearen ezarpenak';
 $string['textcolorpicker'] = 'Testuaren kolorearentzako kolore hautatzailea';
+$string['textcolorpicker_desc'] = 'Testuaren kolorearentzako kolore hautatzailea eskuragarri egon behar den ala ez';
 $string['textcolors'] = 'Eskuragarri dauden testuaren koloreak';
+$string['textcolors_desc'] = 'Koloreen izenen zerrenda ezkerrean eta euren RGB kolore-kodea, esaterako "#000000". Balioak hautatzeko leihoan erakutsiko diren koloreak dira. Izenak sagua koloreen gainean pasatzerakoan erakutsiko dira.';

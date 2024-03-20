@@ -47,7 +47,7 @@ $string['dashboardlinktext'] = 'Чтобы удалить или изменит�
 $string['datecreated'] = 'Дата создания';
 $string['description'] = 'Описание';
 $string['eventcertificatecreated'] = 'Сертификат опубликован на сайте Accredible.com';
-$string['gotodashboard'] = 'Чтобы обновить свои значки или сертификаты, посетите: <a href="https://www.accredible.com/issuer/dashboard" target="_blank">https://www.accredible.com/issuer/dashboard</a>';
+$string['gotodashboard'] = 'Чтобы обновить свои значки или сертификаты, посетите: <a href="https://dashboard.accredible.com" target="_blank">https://dashboard.accredible.com</a>';
 $string['gradeissueheader'] = 'Критерий автоматического получения: оценка за итоговый тест';
 $string['groupselect'] = 'Группа';
 $string['id'] = 'Идентификатор';

@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'Centré';
 $string['leftalign'] = 'Aligné à gauche';
 $string['pluginname'] = 'Alignement du texte';
-$string['privacy:metadata'] = 'Le plugin atto_align n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin atto_align n’enregistre aucune donnée personnelle.';
 $string['rightalign'] = 'Aligné à droite';

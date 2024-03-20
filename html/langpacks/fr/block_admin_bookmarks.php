@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = 'Ajouter un bloc marque-pages administrateur';
 $string['admin_bookmarks:myaddinstance'] = 'Ajouter un bloc marque-pages administrateur au tableau de bord';
 $string['pluginname'] = 'Marque-pages administrateur';
-$string['privacy:metadata'] = 'Le bloc Marque-pages administration affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Marque-pages administration affiche seulement des données enregistrées à d’autres endroits.';

@@ -25,21 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blockedpath'] = 'Chemin d\'accès bloqué';
+$string['blockedpath'] = 'Chemin d’accès bloqué';
 $string['configplugin'] = 'Configuration pour dépôt système de fichiers';
 $string['crontask'] = 'Traitement en tâche de fond du dépôt système de fichier';
-$string['donotusesysdir'] = 'N\'utilisez pas le dossier système comme dépôt de fichiers, notamment';
-$string['enablecourseinstances'] = 'Permettre aux utilisateurs d\'ajouter un dépôt système de fichiers dans les cours (ne peut être configuré que par les administrateurs)';
-$string['enableuserinstances'] = 'Permettre aux utilisateurs d\'ajouter un dépôt système de fichier dans leur espace personnel (ne peut être configuré que par les administrateurs)';
+$string['donotusesysdir'] = 'N’utilisez pas le dossier système comme dépôt de fichiers, notamment';
+$string['enablecourseinstances'] = 'Permettre aux utilisateurs d’ajouter un dépôt système de fichiers dans les cours (ne peut être configuré que par les administrateurs)';
+$string['enableuserinstances'] = 'Permettre aux utilisateurs d’ajouter un dépôt système de fichier dans leur espace personnel (ne peut être configuré que par les administrateurs)';
 $string['filesystem:view'] = 'Consulter un dépôt système de fichiers';
 $string['information'] = 'Ces dossiers sont situés dans le dossier <b>{$a}</b>.';
-$string['invalidpath'] = 'Chemin d\'accès non valide';
+$string['invalidpath'] = 'Chemin d’accès non valide';
 $string['nosubdir'] = 'Vous devez créer au moins un dossier dans le dossier <b>{$a}</b>, afin de pouvoir le sélectionner ici.';
 $string['path'] = 'Sélectionner un sous-dossier';
 $string['pluginname'] = 'Système de fichiers';
-$string['pluginname_help'] = 'Créer un dépôt à partir d\'un dossier local';
-$string['privacy:metadata'] = 'Le plugin de dépôt Système de fichiers n\'enregistre et ne transmet aucune donnée personnelle.';
+$string['pluginname_help'] = 'Créer un dépôt à partir d’un dossier local';
+$string['privacy:metadata'] = 'Le plugin de dépôt Système de fichiers n’enregistre et ne transmet aucune donnée personnelle.';
 $string['relativefiles'] = 'Permettre les fichiers relatifs';
-$string['relativefiles_desc'] = 'Ce réglage permet l\'accès à tous les fichiers du dépôt au moyen de liens relatifs.';
+$string['relativefiles_desc'] = 'Ce réglage permet l’accès à tous les fichiers du dépôt au moyen de liens relatifs.';
 $string['root'] = 'Racine';
 $string['searchresults'] = 'Résultats de recherche';

@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'Este estado comproba se se detectou ou non un erro recente en función do limiar definido nos axustes principais do antivirus.';
+$string['check_antivirus_error'] = 'Detectáronse {$a->errors} erros dentro do último {$a->lookback}';
+$string['check_antivirus_info'] = 'Actualmente non hai activado ningún escáner antivirus';
+$string['check_antivirus_logstore_not_supported'] = 'Non foi posíbel verificar o estado dos escáneres antivirus por mor do tipo de almacén de rexistros escollido';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = '{$a->scanners} escáner(es) antivirus activado(s), no se detectou ningún problema no último {$a->lookback}';
 $string['check_configrw_details'] = '<p>Recoméndase que os permisos do ficheiro config.php se cambien após a instalación para que este ficheiro non sexa modificado polo servidor web.
 Teña en conta que esta medida non mellora a seguridade do servidor de forma significativa, pero si que pode atrasar ou limitar «exploits» xenéricos.</p>';
 $string['check_configrw_name'] = 'Ficheiro config.php escribíbel';
@@ -32,6 +38,7 @@ $string['check_configrw_ok'] = 'O config.php non pode ser modificado por scripts
 $string['check_configrw_warning'] = 'Os scripts PHP poden modificar o config.php.';
 $string['check_cookiesecure_details'] = '<p>De activar a comunicación https, recoméndase permitir o envío de cookies seguras. Debería ter unha redirección permanente de http a https e idealmente servir tamén cabeceiras HSTS.</p>';
 $string['check_cookiesecure_error'] = 'Active as cookies seguras';
+$string['check_cookiesecure_http'] = 'Debe activar https para poder utilizar cookies seguras';
 $string['check_cookiesecure_name'] = 'Cookies seguras';
 $string['check_cookiesecure_ok'] = 'As cookies seguras están activadas.';
 $string['check_crawlers_details'] = '<p>A opción «Aberto aos motores de busca» permítelles aos motores de busca entrar nos cursos nos que se dá acceso a convidados. Se non se permite o acceso a convidados non ten sentido activar esta opción.</p>';
@@ -45,10 +52,12 @@ $string['check_defaultuserrole_error'] = 'O rol do usuario predeterminado «{$a}
 $string['check_defaultuserrole_name'] = 'Rol predeterminado para todos os usuarios';
 $string['check_defaultuserrole_notset'] = 'Non se estabeleceu o rol predeterminado.';
 $string['check_defaultuserrole_ok'] = 'O rol predeterminado para todos os usuarios é correcto.';
+$string['check_dirindex_info'] = 'Non se debe habilitar o índice de directorios';
 $string['check_displayerrors_details'] = '<p>Non se recomenda activar a opción PHP <code>display_errors</code> en sitios en produción xa que algunhas mensaxes de erro poden revelar información sensíbel sobre o seu servidor.</p>';
 $string['check_displayerrors_error'] = 'A opción de PHP para presentar errores está activada. Recoméndase que se desactive.';
 $string['check_displayerrors_name'] = 'Presentación de erros de PHP';
 $string['check_displayerrors_ok'] = 'A presentación de erros de PHP está desactivada.';
+$string['check_dotfiles_info'] = 'Todos os ficheiros de punto agás /.well-known/* non deben ser públicos';
 $string['check_emailchangeconfirmation_details'] = '<p>Recoméndase que se requira pasar por un correo de confirmación para cambiar o enderezo de correo dos usuarios no seu perfil. De estar desactivado, os emisores de correo lixo tentarán explotar iso no servidor para enviar correo lixo.</p>
 <p>O campo de correo tamén se pode bloquear con engadidos de autenticación, esta posibilidade non se considera aquí.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Os usuarios poden escribir calquera enderezo de correo.';
@@ -91,6 +100,11 @@ $string['check_preventexecpath_details'] = '<p>Permitir que se configuren rutas 
 $string['check_preventexecpath_name'] = 'Rutas executábeis';
 $string['check_preventexecpath_ok'] = 'As rutas executábeis só poden estabelecerse en config.php.';
 $string['check_preventexecpath_warning'] = 'Os camiños executábeis pódense configurar na IGU de administración.';
+$string['check_publicpaths_403'] = '(Devolve un 403, o ideal debería ser 404)';
+$string['check_publicpaths_generic'] = '{$a} ficheiros non deben ser públicos';
+$string['check_publicpaths_name'] = 'Comprobar todas as rutas públicas / privadas';
+$string['check_publicpaths_ok'] = 'Todas as rutas internas non son accesíbeis publicamente';
+$string['check_publicpaths_warning'] = 'Algunhas rutas internas son de acceso público';
 $string['check_riskadmin_detailsok'] = '<p>Comprobe a seguinte lista de administradores do sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Comprobe a seguinte lista de administradores do sistema:</p>{$a->admins}
 <p>Recoméndase asignar un rol de administrador soamente no contexto do sistema. Os seguintes usuarios teñen (incompatíbeis) asignación de rol de administración noutros contextos:</p>{$a->unsupported}';
@@ -128,6 +142,7 @@ $string['check_webcron_warning'] = 'Os usuarios anónimos poden acceder a cron.'
 $string['configuration'] = 'Configuración';
 $string['description'] = 'Descrición';
 $string['details'] = 'Detalles';
+$string['eventreportviewed'] = 'Viuse o informe de comprobación de seguridade';
 $string['issue'] = 'Incidencia';
 $string['pluginname'] = 'Vista xeral de seguridade';
 $string['privacy:metadata'] = 'O engadido de vista xeral de seguridade non almacena ningún dato persoal.';

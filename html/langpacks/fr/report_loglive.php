@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventcomponent'] = 'Composant';
-$string['eventcontext'] = 'Contexte de l\'événement';
+$string['eventcontext'] = 'Contexte de l’événement';
 $string['eventloggedas'] = '{$a->realusername} en tant que {$a->asusername}';
 $string['eventorigin'] = 'Origine';
 $string['eventrelatedfullnameuser'] = 'Utilisateur concerné';
 $string['eventreportviewed'] = 'Journal en direct consulté';
-$string['livelogs'] = 'Actions effectuées durant l\'heure écoulée';
+$string['livelogs'] = 'Actions effectuées durant l’heure écoulée';
 $string['livelogswithupdate'] = 'Journaux en direct de la dernière heure ({$a})';
 $string['loglive:view'] = 'Consulter le journal en direct';
 $string['nologreaderenabled'] = 'Aucun lecteur de journaux activé';
 $string['pause'] = 'Suspendre la mise à jour en direct';
 $string['pluginname'] = 'Journal en direct';
-$string['privacy:metadata'] = 'Le plugin Journal en direct n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Journal en direct n’enregistre aucune donnée personnelle.';
 $string['resume'] = 'Reprendre la mise à jour en direct';
 $string['selectlogreader'] = 'Sélectionner un lecteur de journaux';

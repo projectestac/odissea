@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['course_summary:addinstance'] = 'Ajouter un bloc résumé du cours/site';
 $string['coursesummary'] = 'Résumé du cours';
 $string['pluginname'] = 'Résumé du cours/du site';
-$string['privacy:metadata'] = 'Le bloc Résumé de cours/de site affiche des informations sur les cours et et n\'enregistre aucune donnée.';
+$string['privacy:metadata'] = 'Le bloc Résumé de cours/de site affiche des informations sur les cours et et n’enregistre aucune donnée.';

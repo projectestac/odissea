@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add_all'] = 'إضافة الكل';
 $string['all'] = 'الكل';
-$string['all_courses'] = 'كل المساقات';
+$string['all_courses'] = 'كل المقررات';
 $string['all_mentees'] = 'كل التلاميذ';
 $string['all_mentors'] = 'كل المرشدين';
 $string['all_students'] = 'كل الطلاب';
 $string['allcategories'] = 'كل التصنيفات';
-$string['allcourses'] = 'كل المساقات';
+$string['allcourses'] = 'كل المقررات';
 $string['allgroups'] = 'كل المجموعات';
 $string['allstudents'] = 'كل الطلاب';
 $string['blockinfo'] = 'معلومات الكتلة';

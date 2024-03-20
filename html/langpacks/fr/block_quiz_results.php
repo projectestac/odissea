@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Résultats de test (désactivé)';
-$string['privacy:metadata'] = 'Le bloc Résultats de test affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Résultats de test affiche seulement des données enregistrées à d’autres endroits.';
 $string['quiz_results:addinstance'] = 'Ajouter un bloc résultats de test';

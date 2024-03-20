@@ -31,13 +31,13 @@ $string['auth_oauth2description'] = 'Autenticació basada en l\'estàndard OAuth
 $string['auth_oauth2settings'] = 'Configuració de l\'autenticació OAuth 2.';
 $string['confirmaccountemail'] = 'Hola, {$a->fullname},
 
-S\'ha fet una sol·licitud per enllaçar l\'autenticació de {$a->issuername} {$a->linkedemail} al vostre compte al lloc «{$a->sitename}» mitjançant la vostra adreça de correu electrònic.
+S\'ha fet la sol·licitud d\'un compte nou amb la vostra adreça de correu electrònic a \'{$a->sitename}\'.
 
 Per confirmar aquesta sol·licitud i enllaçar aquests accessos, feu clic a aquesta adreça web:
 
 {$a->link}
 
-A la majoria de programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
+A la majoria dels programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
 
 Si necessiteu ajuda, poseu-vos en contacte amb l’administrador del lloc, {$a->admin}
 
@@ -54,7 +54,7 @@ Per confirmar aquesta sol·licitud i enllaçar aquests accessos, feu clic a aque
 
 {$a->link}
 
-A la majoria de programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
+A la majoria dels programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
 
 Si necessiteu ajuda, poseu-vos en contacte amb l’administrador del lloc, {$a->admin}
 

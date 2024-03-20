@@ -46,4 +46,4 @@ $string['pluginnamesummary'] = 'Permite uma resposta de uma ou poucas palavras q
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Resposta curta permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
 $string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das perguntas é \'Interativo com múltiplas tentativas\' ou \'Modo adaptável\'.';
-$string['privacy:preference:usecase'] = 'Se as respostas devem, ou não, ser sensíveis a maiúsculas e minúsculas.';
+$string['privacy:preference:usecase'] = 'Se as respostas devem, ou não, ser respeitar maiúsculas/minúsculas.';

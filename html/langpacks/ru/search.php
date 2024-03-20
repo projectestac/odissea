@@ -84,7 +84,7 @@ $string['gradualreindex_confirm'] = 'Вы уверены, что хотите п
 $string['gradualreindex_queued'] = 'Переиндексация была запрошена для {$a->name} ({$a->count} контекстов). Эта индексация будет выполняться запланированной задачей «Построение глобального поискового индекса».';
 $string['incourse'] = 'в курсе «{$a}»';
 $string['index'] = 'Индекс';
-$string['indexwhendisabledfullnotice'] = 'В настоящее время индексирование не разрешено при отключенном поиске. Чтобы включить его, просмотрите настройку <a href="{$a-> url} ">Индексировать при отключении (searchindexwhendisabled) </a>.';
+$string['indexwhendisabledfullnotice'] = 'В настоящее время индексирование не разрешено при отключенном поиске. Чтобы включить его, просмотрите настройку <a href="{$a->url} ">Индексировать при отключении (searchindexwhendisabled) </a>.';
 $string['indexwhendisabledshortnotice'] = 'Индексирование недоступно.';
 $string['invalidindexerror'] = 'Папка индекса содержит не корректный индекс или пуста';
 $string['ittook'] = 'Принято';

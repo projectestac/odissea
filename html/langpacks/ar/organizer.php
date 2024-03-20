@@ -264,27 +264,10 @@ $string['infobox_showregistrationsonly'] = 'الفسحات المحجوزة';
 $string['infobox_showslots'] = 'الفسحات الماضية';
 $string['infobox_slotoverview_title'] = 'استعراض الفسحة';
 $string['introeditor_error'] = 'لا بد من إعطاء وصف المنظِّم!';
-$string['legend_anonymous'] = 'فسحة غير مشخصنة';
-$string['legend_due'] = 'الفسحة مستوجبة';
-$string['legend_evaluated'] = 'الفسحة مُقيَّمة';
-$string['legend_feedback'] = 'إفادة المعلم';
-$string['legend_halfanonymous'] = 'فقط المشاركون في فسحته مرئيون';
-$string['legend_no_participants'] = 'ليس للفسحة أي مشاركين';
-$string['legend_past_deadline'] = 'الفسحة تجاوزت موعدها النهائي';
-$string['legend_pending'] = 'الفسحة تنتظر التقييم';
-$string['legend_section_details'] = 'ايقونات تفاصيل الفسحة';
 $string['message_custommessage_help'] = 'استعمل هذا الحقل لإدخال نص شخصي في الرسالة المولدة آليًا.';
 $string['message_error_slot_full_group'] = 'هذه الفسحة الزمنية محجوزة مسبقًا!';
 $string['message_info_slots_added_pl'] = '{$a->count} من الفسحات الجديدة تمت إضافتها.';
 $string['message_info_slots_added_sg'] = 'فسحة جديدة واحدة تمت إضافتها.';
-$string['message_info_slots_deleted'] = 'الفسحات الآتية تم حذفها:<br/>
-{$a->deleted} من الفسحات تم تحذفها.<br/>
-{$a->notified} من المستخدمين تم إشعارهم.';
-$string['message_info_slots_deleted_group'] = 'الفسحات الآتية تم حذفها:<br/>
-{$a->deleted} من الفسحات تم تحذفها.<br/>
-{$a->notified} من المستخدمين تم إشعارهم.';
-$string['message_warning_available'] = '<span style="color:red;">تنبيه</span> هناك {$a->freeslots} من الفسحات الزمنية الخالية لـ {$a->notregistered} من المستخدمين الذين ليس لهم مواعيد.';
-$string['message_warning_available_group'] = '<span style="color:red;">تنبيه</span> هناك {$a->freeslots} من الفسحات الزمنية الخالية لـ {$a->notregistered} من المجموعات التي ليس لها مواعيد.';
 $string['message_warning_no_slots_added'] = 'لم تتم إضافة فسحات جديدة!';
 $string['message_warning_no_slots_selected'] = 'ينبغي عليك تحديد فسحة واحدة على الأقل!';
 $string['message_warning_no_visible_slots_selected'] = 'ينبغي عليك أولاً تحديد فسحة واحدة مرئية على الأقل!';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Schriftgröße';
+$string['privacy:metadata'] = 'Das Plugin Atto Schriftgröße speichert keine personenbezogenen Daten.';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingmatchwiris'] = 'Ajout d\'une question de correspondance - maths et sciences par WIRIS';
-$string['editingmatchwiris'] = 'Édition d\'une question de correspondance - maths et sciences par WIRIS';
+$string['addingmatchwiris'] = 'Ajout d’une question de correspondance - maths et sciences par WIRIS';
+$string['editingmatchwiris'] = 'Édition d’une question de correspondance - maths et sciences par WIRIS';
 $string['matchwiris'] = 'Correspondance - sciences';
 $string['matchwiris_algorithm'] = 'Algorithme';
 $string['matchwiris_help'] = 'Comme la correspondance standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
@@ -34,7 +34,7 @@ $string['matchwiris_wiris_variables'] = 'Variables WIRIS';
 $string['matchwirissummary'] = 'Comme la correspondance standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['pluginname'] = 'Correspondance - sciences';
 $string['pluginname_help'] = 'Comme la correspondance standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['pluginnameadding'] = 'Ajout d\'une question de correspondance - maths et sciences par WIRIS';
-$string['pluginnameediting'] = 'Édition d\'une question de correspondance - maths et sciences par WIRIS';
+$string['pluginnameadding'] = 'Ajout d’une question de correspondance - maths et sciences par WIRIS';
+$string['pluginnameediting'] = 'Édition d’une question de correspondance - maths et sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme la correspondance standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question Correspondance Wiris ne modifie ni n\'enregistre aucune donnée personnelle.';
+$string['privacy:null_reason'] = 'Le type de question Correspondance Wiris ne modifie ni n’enregistre aucune donnée personnelle.';

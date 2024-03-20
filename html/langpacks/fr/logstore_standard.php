@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['buffersize'] = 'Taille du tampon d\'écriture';
+$string['buffersize'] = 'Taille du tampon d’écriture';
 $string['jsonformat'] = 'Format JSON';
 $string['jsonformat_desc'] = 'Utiliser pour le champ de base de données « other » le format standard JSON au lieu des données PHP sérialisées.';
 $string['pluginname'] = 'Journaux standards';
 $string['pluginname_desc'] = 'Un plugin qui enregistre les journaux dans une table de la base de données de Moodle.';
 $string['privacy:metadata:log'] = 'Une collection des événements passés';
-$string['privacy:metadata:log:anonymous'] = 'Si l\'événement a été marqué comme anonyme';
-$string['privacy:metadata:log:eventname'] = 'Le nom de l\'événement';
-$string['privacy:metadata:log:ip'] = 'L\'adresse IP utilisée au moment de l\'événement';
-$string['privacy:metadata:log:origin'] = 'L\'origine de l\'événement';
-$string['privacy:metadata:log:other'] = 'Informations supplémentaires sur l\'événement';
-$string['privacy:metadata:log:realuserid'] = 'L\'identifiant de l\'utilisateur réel de l\'événement, lorsqu\'un utilisateur est masqué.';
-$string['privacy:metadata:log:relateduserid'] = 'L\'identifiant d\'un utilisateur en lien avec cet événement';
-$string['privacy:metadata:log:timecreated'] = 'La date et l\'heure de la survenue de l\'événement';
-$string['privacy:metadata:log:userid'] = 'L\'identifiant de l\'utilisateur qui a déclenché cet événement';
+$string['privacy:metadata:log:anonymous'] = 'Si l’événement a été marqué comme anonyme';
+$string['privacy:metadata:log:eventname'] = 'Le nom de l’événement';
+$string['privacy:metadata:log:ip'] = 'L’adresse IP utilisée au moment de l’événement';
+$string['privacy:metadata:log:origin'] = 'L’origine de l’événement';
+$string['privacy:metadata:log:other'] = 'Informations supplémentaires sur l’événement';
+$string['privacy:metadata:log:realuserid'] = 'L’identifiant de l’utilisateur réel de l’événement, lorsqu’un utilisateur est masqué.';
+$string['privacy:metadata:log:relateduserid'] = 'L’identifiant d’un utilisateur en lien avec cet événement';
+$string['privacy:metadata:log:timecreated'] = 'La date et l’heure de la survenue de l’événement';
+$string['privacy:metadata:log:userid'] = 'L’identifiant de l’utilisateur qui a déclenché cet événement';
 $string['taskcleanup'] = 'Nettoyage de la table des journaux';

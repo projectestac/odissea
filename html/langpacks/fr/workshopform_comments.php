@@ -30,4 +30,4 @@ $string['dimensioncommentfor'] = 'Commentaire pour {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensionnumber'] = 'Aspect {$a}';
 $string['pluginname'] = 'Commentaires';
-$string['privacy:metadata'] = 'Le plugin Évaluation des commentaires n\'enregistre que des informations sur le formulaire d\'évaluation. Les données personnelles récoltées sont enregistrées par le plugin Atelier lui-même et sont annexées aux évaluations exportées.';
+$string['privacy:metadata'] = 'Le plugin Évaluation des commentaires n’enregistre que des informations sur le formulaire d’évaluation. Les données personnelles récoltées sont enregistrées par le plugin Atelier lui-même et sont annexées aux évaluations exportées.';

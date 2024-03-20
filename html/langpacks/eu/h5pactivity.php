@@ -30,6 +30,7 @@ $string['answer_checked'] = 'Markatutako erantzuna';
 $string['answer_correct'] = 'Zure erantzuna zuzena da';
 $string['answer_fail'] = 'Erantzun okerra';
 $string['answer_incorrect'] = 'Zure erantzuna ez da zuzena';
+$string['answer_noanswer'] = 'Bat ere ez';
 $string['answer_pass'] = 'Erantzun zuzena';
 $string['answer_text'] = 'Erantzunaren testua';
 $string['answer_unchecked'] = 'Markatu gabeko erantzuna';

@@ -52,6 +52,7 @@ $string['cachedef_coursecatrecords'] = 'Record delle categorie di corso';
 $string['cachedef_coursecattree'] = 'Alberatura delle categorie di corso';
 $string['cachedef_coursecompletion'] = 'Stati di completamento corso';
 $string['cachedef_coursecontacts'] = 'Elenco dei gestori dei corsi';
+$string['cachedef_courseeditorstate'] = 'Chiavi della sessione del corso per rilevare i cambiamenti del corso nel frontend';
 $string['cachedef_coursemodinfo'] = 'Informazioni accumulate sui moduli e delle sezioni di ciascun corso';
 $string['cachedef_coursesectionspreferences'] = 'Preferenze sezione del corso';
 $string['cachedef_databasemeta'] = 'Meta informazioni database';

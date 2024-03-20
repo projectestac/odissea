@@ -424,6 +424,7 @@ $string['savetemplate'] = 'Save template';
 $string['search'] = 'Search';
 $string['search:activity'] = 'Database - activity information';
 $string['search:entry'] = 'Database - entries';
+$string['searchresults'] = 'Entries containing "{$a}"';
 $string['selectedrequired'] = 'All selected required';
 $string['selectexportoptions'] = 'Select export options';
 $string['selectfields'] = 'Select fields';

@@ -558,6 +558,20 @@
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "锁定初始内容",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "不允许学生在初始内容中留下的空占位符之外修改答案。如果启用此设置，学生将只能填写初始内容的方框。",
 
+		"quizzes_studio_input_options_answer_input_method_display_settings_label": "显示设置",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_name": "标签名称的可见性",
+		"quizzes_studio_input_options_answer_input_method_display_settings_label_value": "标签值的可见性",
+		"quizzes_studio_input_options_answer_input_method_display_settings_helper_text": "选择标签名称和值的显示设置。您可以选择标签值对学生的显示方式：始终显示、从不显示或关注时显示。",
+		"always": "始终",
+		"focus": "关注",
+		"never": "从不",
+
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label": "磁栅设置",
+		"quizzes_studio_input_options_answer_input_method_magnetic_grid_label_text": "为学生答案字段选择磁栅选项。",
+		"force": "力",
+		"snap": "快照",
+		"disabled": "已禁用",
+
 		"quizzes_studio_home_random_variables_title": "随机变量",
 		"quizzes_studio_home_random_variables_title_basic_mode": "基本模式",
 		"quizzes_studio_home_advanced_random_variables_button_text": "高级模式",
@@ -611,7 +625,9 @@
 		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "请使用“测试该问题”按钮查看学生界面。",
 		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "等效草图",
 		"quizzes_demo_sketch_title_menu" : "草图",
-		"home_getting_started_documentation_button_text" : "文档"
+		"home_getting_started_documentation_button_text" : "文档", 
+
+		"close_mathtype_popup" : "关闭MathType"
 	}
 }
 

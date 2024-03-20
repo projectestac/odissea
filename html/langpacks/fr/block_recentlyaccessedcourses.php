@@ -29,5 +29,5 @@ $string['displaycategories'] = 'Afficher les catégories';
 $string['displaycategories_help'] = 'Affiche la catégorie de cours dans le bloc des cours consultés récemment.';
 $string['nocourses'] = 'Pas de cours récent';
 $string['pluginname'] = 'Cours consultés récemment';
-$string['privacy:metadata'] = 'Le bloc Cours consultés récemment n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le bloc Cours consultés récemment n’enregistre aucune donnée personnelle.';
 $string['recentlyaccessedcourses:myaddinstance'] = 'Ajouter au tableau de bord un bloc cours consultés récemment';

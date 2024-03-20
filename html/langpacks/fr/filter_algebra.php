@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Expression algébrique';
 $string['filtername'] = 'Notation Algebra';
-$string['privacy:metadata'] = 'Le plugin Notation Algebra n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Notation Algebra n’enregistre aucune donnée personnelle.';

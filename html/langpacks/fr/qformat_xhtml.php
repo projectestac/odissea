@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Format XHTML';
-$string['pluginname_help'] = 'Le format XHTML permet d\'exporter toutes les questions d\'une catégorie dans une page en XHTML strict pour utilisation dans une autre application.';
+$string['pluginname_help'] = 'Le format XHTML permet d’exporter toutes les questions d’une catégorie dans une page en XHTML strict pour utilisation dans une autre application.';
 $string['pluginname_link'] = 'qformat/xhtml';
-$string['privacy:metadata'] = 'Le plugin de format de question XHTML n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de format de question XHTML n’enregistre aucune donnée personnelle.';

@@ -902,6 +902,18 @@ class com_wiris_util_xml_WCharacterBase {
 			return com_wiris_util_xml_WCharacterBase_5($c);
 		}
 	}
+	static function containsGreek($text) {
+		if($text === null) {
+			return false;
+		}
+		$it = com_wiris_system_Utf8::getIterator($text);
+		while($it->hasNext()) {
+			if(com_wiris_util_xml_WCharacterBase::isGreek($it->next())) {
+				return true;
+			}
+		}
+		return false;
+	}
 	function __toString() { return 'com.wiris.util.xml.WCharacterBase'; }
 }
 com_wiris_util_xml_WCharacterBase::$ALIGNMENT_RELATION_OPERATORS = new _hx_array(array(61, 8801, 8764, 8776, 8771, 8773, 8800, 8802, 8769, 62, 60, 8805, 8804, 10878, 10877, 10887, 10888, 8810, 8811, 8733, 8826, 8827, 8882, 8883));

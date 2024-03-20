@@ -230,6 +230,7 @@ $string['customrolename_help'] = 'Os nomes dos roles estándar localizase automa
 $string['defaultrole'] = 'Rol predeterminado';
 $string['defaultx'] = 'Predeterminado/a: {$a}';
 $string['defineroles'] = 'Definir roles';
+$string['definitionofrolex'] = 'Definición de rol «{$a}»';
 $string['deletecourseoverrides'] = 'Eliminar todas as anulacións do curso';
 $string['deletelocalroles'] = 'Eliminar todas as asignacións de rol locais';
 $string['deleterolesure'] = 'Conforma que quere eliminar o rol «{$a->name} ({$a->shortname})»?</p><p>Actualmente este rol está asignado a {$a->count} usuarios.';

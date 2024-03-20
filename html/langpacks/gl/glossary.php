@@ -170,6 +170,7 @@ $string['errconceptalreadyexists'] = 'Este concepto xa existe. Non se permiten d
 $string['errdeltimeexpired'] = 'Non pode editar isto. O tempo esgotouse!';
 $string['erredittimeexpired'] = 'O tempo de edición desta entrada expirou.';
 $string['errorparsingxml'] = 'Os erros producidos mentres se procesou o ficheiro. Asegúrese de que é unha sintaxe XML válida.';
+$string['errreservedkeywords'] = 'Unha ou máis palabras clave conteñen un carácter especial que non se pode usar.';
 $string['eventcategorycreated'] = 'A categoría foi creada';
 $string['eventcategorydeleted'] = 'A categoría foi eliminada';
 $string['eventcategoryupdated'] = 'A categoría foi actualizada';

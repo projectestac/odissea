@@ -15,8 +15,8 @@ class haxe_Serializer {
 		$this->serialize($e);
 	}
 	public function serialize($v) {
-		$»t = (Type::typeof($v));
-		switch($»t->index) {
+		$Â»t = (Type::typeof($v));
+		switch($Â»t->index) {
 		case 0:
 		{
 			$this->buf->add("n");
@@ -48,7 +48,7 @@ class haxe_Serializer {
 			$this->buf->add((($v) ? "t" : "f"));
 		}break;
 		case 6:
-		$c = $»t->params[0];
+		$c = $Â»t->params[0];
 		{
 			if($c == _hx_qtype("String")) {
 				$this->serializeString($v);
@@ -97,9 +97,9 @@ class haxe_Serializer {
 				$this->buf->add("l");
 				$v1 = $v;
 				if(null == $v1) throw new HException('null iterable');
-				$»it = $v1->iterator();
-				while($»it->hasNext()) {
-					$i = $»it->next();
+				$Â»it = $v1->iterator();
+				while($Â»it->hasNext()) {
+					$i = $Â»it->next();
 					$this->serialize($i);
 				}
 				$this->buf->add("h");
@@ -113,9 +113,9 @@ class haxe_Serializer {
 				$this->buf->add("b");
 				$v1 = $v;
 				if(null == $v1) throw new HException('null iterable');
-				$»it = $v1->keys();
-				while($»it->hasNext()) {
-					$k = $»it->next();
+				$Â»it = $v1->keys();
+				while($Â»it->hasNext()) {
+					$k = $Â»it->next();
 					$this->serializeString($k);
 					$this->serialize($v1->get($k));
 				}
@@ -125,9 +125,9 @@ class haxe_Serializer {
 				$this->buf->add("q");
 				$v1 = $v;
 				if(null == $v1) throw new HException('null iterable');
-				$»it = $v1->keys();
-				while($»it->hasNext()) {
-					$k = $»it->next();
+				$Â»it = $v1->keys();
+				while($Â»it->hasNext()) {
+					$k = $Â»it->next();
 					$this->buf->add(":");
 					$this->buf->add($k);
 					$this->serialize($v1->get($k));
@@ -195,7 +195,7 @@ class haxe_Serializer {
 			$this->serializeFields($v);
 		}break;
 		case 7:
-		$e = $»t->params[0];
+		$e = $Â»t->params[0];
 		{
 			if($this->useCache && $this->serializeRef($v)) {
 				return;
@@ -290,12 +290,12 @@ class haxe_Serializer {
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $USE_CACHE = false;
 	static $USE_ENUM_INDEX = false;

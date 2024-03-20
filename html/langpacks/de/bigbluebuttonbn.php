@@ -198,7 +198,7 @@ $string['config_server_url_description'] = 'Standardmäßig sind Daten für eine
 <li>Webcams von Teilnehmer/innen sind nur für Moderator/innen sichtbar.</li>
 </ol>';
 $string['config_shared_secret'] = 'BigBlueButton Shared Secret';
-$string['config_shared_secret_description'] = 'Das "Security Secret" sichert die Verbindung zum BigBlueButton-Server ab. Der standardmäßig eingetragene Wert gehört zum freien BigBlueButton-Service von Blindside Networks.</p>';
+$string['config_shared_secret_description'] = 'Das "Shared Secret" sichert die Verbindung zum BigBlueButton-Server ab. Der standardmäßig eingetragene Wert gehört zum freien BigBlueButton-Service von Blindside Networks.</p>';
 $string['config_uidelegation_enabled'] = 'Die Weitergabe der Werkzeuge ist aktiviert';
 $string['config_uidelegation_enabled_description'] = 'Diese Einstellungen aktivieren oder deaktivieren die Weitergabe der Werkzeuge.';
 $string['config_userlimit'] = 'Maximale Anzahl von Nutzer/innen';

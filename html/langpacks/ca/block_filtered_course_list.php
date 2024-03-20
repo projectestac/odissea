@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confighideallcourseslink'] = 'Oculta l\'enllaç «Tots els cursos» que hi ha al capdavall del bloc. <br>El fet d\'ocultar-lo no afecta la visualització del gestor';
 $string['hideallcourseslink'] = 'Oculta l\'enllaç «Tots els cursos»';
+$string['top'] = 'Part superior';

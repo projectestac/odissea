@@ -45,6 +45,8 @@ Die Standardbewertung für die gesamte Frage ist die Summe der Bewertungen aller
 Hinweis: Wenn das Bewertungsfeld für diesen Teil leer bleibt, wird der Teil beim Speichern der Frage gelöscht.';
 $string['answermulti'] = 'Antwort für Teilfragen {$a->part}';
 $string['answerno'] = 'Teilfrage {$a}';
+$string['answernotunique'] = 'Es gibt weitere richtige Antworten.';
+$string['answernotunique_help'] = 'Wenn diese Option aktiviert ist, wird beim Überprüfen eines Versuchs "Eine mögliche Antwort ist: …" statt "Die richtige Antwort ist: …" angezeigt.';
 $string['answersingle'] = 'Antwort';
 $string['answertype'] = 'Antworttyp';
 $string['answertype_help'] = 'Es gibt vier Antworttypen.
@@ -192,7 +194,7 @@ $string['ruleid_help'] = 'Dieser Fragetyp verfügt über ein integriertes System
 
 Die grundlegenden Regeln sind die "Gemeinsamen SI-Einheiten", die Standardeinheiten umrechnen, wie z. B. die Längeneinheiten km, m, cm und mm. Diese Option hat keine Auswirkung, wenn keine Einheit verwendet wurde.';
 $string['settingusepopup'] = 'Tooltips verwenden';
-$string['settingusepopup_desc'] = 'Anzeige der richtigen Antwort und des Feedbacks in einem Tooltip';
+$string['settingusepopup_desc'] = 'Richtigen Antwort und des Feedbacks in einem Tooltipp anzeigen';
 $string['subqoptions'] = 'Einstellungen der Einheit';
 $string['subqtext'] = 'Text des Frageteils';
 $string['subqtext_help'] = 'Hier können die Texte für den Frageteil und die Antwortfelder angegeben werden. Die Platzhalter, die für die Angabe von Antwortfeldern verwendet werden können, sind:
@@ -202,11 +204,12 @@ $string['subqtext_help'] = 'Hier können die Texte für den Frageteil und die An
 Das  <tt> {_0}, {_1}, {_2} </tt> sind verschiedene Input-Felder für Variablen und <tt> {_u} </tt> ist das Input-Feld für die Einheit.
 
 Alle fehlenden Felder werden automatisch an das Ende des Textes des Teils angehängt. Ein Sonderfall ist, wenn <tt> {_0}, {_u} </tt> nacheinander angegeben werden und es nur ein Antwortfeld und eine Einheit gibt, d. h. <tt> {_0}{_u} </tt>, dann werden sie zu einem einzigen langen Eingabeantwortfeld für Antwort und Einheit zusammengefasst.';
+$string['uniquecorrectansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['unit'] = 'Einheit';
 $string['unitpenalty'] = 'Abzug für falsche Einheit (0-1)*';
-$string['unitpenalty_help'] = 'Mit dieser Option legen Sie die Bewertung fest, die Sie dem Schüler für eine falsche Einheit geben wollen.
+$string['unitpenalty_help'] = 'Mit dieser Option legen Sie die Bewertung fest, die Sie Teilnehmer/innen für eine falsche Einheit geben wollen.
 
-Sie hat einen Wert zwischen 0 und 1. Wenn sie den Wert 1 hat, müssen die Einheit und die Antwort gleichzeitig richtig sein, um eine Bewertung zu erhalten. Das heißt, die Einheit und Antwort werden als eine Einheit behandelt. Nimmt sie hingegen den Wert 0 an, können die Teilnehmer*innen nur für die richtige Antwort die volle Punktzahl erhalten, alle zufälligen Zeichenfolge am Ende der Antwort haben keine Auswirkung .
+Sie hat einen Wert zwischen 0 und 1. Wenn sie den Wert 1 hat, müssen die Einheit und die Antwort gleichzeitig richtig sein, um eine Bewertung zu erhalten. Das heißt, die Einheit und Antwort werden als eine Einheit behandelt. Nimmt sie hingegen den Wert 0 an, können die Teilnehmer/innen nur für die richtige Antwort die volle Punktzahl erhalten, alle zufälligen Zeichenfolge am Ende der Antwort haben keine Auswirkung .
 
 Es wird daher empfohlen, den Wert 1 zu verwenden, wenn die Antwort keine zugehörige Einheit hat.';
 $string['unsupportedformulafunction'] = 'Die Funktion {$a} wird nicht unterstützt.';
@@ -229,4 +232,4 @@ $string['varsrandom_help'] = 'Zu Beginn eines jeden Versuchs werden für diese V
 Die Elemente können Zahlen, Zeichenketten oder Listen davon sein. Zu Beginn eines neuen Versuchs wird ein Element aus der Menge gezogen und der Variablen auf der linken Seite zugewiesen.  Für eine Menge von Zahlen kann auch die Bereichsschreibweise wie 10:100:10 verwendet werden (siehe Beispiel E oben).';
 $string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Statistik';
-$string['yougotnright'] = 'Sie haben {$a->num} Teilfragen dieser Aufgabe korrekt beantwortet.';
+$string['yougotnright'] = 'Sie haben {$a->num} Teilfragen dieser Aufgabe richtig beantwortet.';

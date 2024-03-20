@@ -153,6 +153,8 @@ $string['difficultytitlediff'] = 'Diferença';
 $string['disableimgnewlines'] = 'Desativar novas linhas antes e depois das imagens';
 $string['disableimgnewlines_help'] = 'Esta opção desativa novas linhas antes e depois das imagens nos formulário das perguntas em PDF. Aviso: pode levar a problemas de formatação.';
 $string['displayoptions'] = 'Opções de visualização';
+$string['documentschanged'] = 'Uma ou mais perguntas no Teste Offline foram alteradas desde a criação dos documentos.<br>Os resultados futuros serão reavaliados automaticamente durante a avaliação para a versão atual da(s) pergunta(s) escolhida(s) aqui. Nos documentos ainda é mostrada a versão original da(s) pergunta(s).';
+$string['documentschangedwithresults'] = 'Uma ou mais perguntas no este Offline foram alteradas desde a criação dos documentos.<br>Os resultados existentes foram reavaliados automaticamente para a versão atual das perguntas escolhidas aqui. Nos documentos ainda é mostrada a versão original da(s) pergunta(s).';
 $string['done'] = 'concluído';
 $string['downloadallzip'] = 'Descarregar tudo num ficheiro ZIP';
 $string['downloadpartpdf'] = 'Descarregar ficheiro PDF da lista \'{$a}\'';
@@ -182,6 +184,7 @@ $string['editthislist'] = 'Editar esta lista';
 $string['emptygroups'] = 'Alguns grupos do Teste Offline estão vazios. Por favor, adicione algumas perguntas.';
 $string['enroluser'] = 'Inscrever utilizador';
 $string['erroraccessingreport'] = 'Não tem permissão para visualizar este relatório.';
+$string['errormultiuserinlist'] = 'O utilizador está listado mais de uma vez nas folhas de presença!';
 $string['errorreport'] = 'Relatório dos erros da importação';
 $string['evaluated'] = 'Avaliado:';
 $string['evaluation'] = 'Avaliação';
@@ -271,8 +274,8 @@ $string['importlinkverify'] = 'Hiperligação para as verificações: {$a}';
 $string['importmailsubject'] = 'Notificação de importação do Teste Offline';
 $string['importnew'] = 'Avaliar';
 $string['importnew_help'] = '<p>
-Pode carregar um ficheiro de imagem digitalizada de cada vez ou vários ficheiros de imagens digitalizadas num ficheiro ZIP. O módulo de Teste Offline irá processar os ficheiros de imagem em segundo plano.
-Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres especiais, tais como ä, ö ou üs. As imagens devem ser GIFs, PNGs ou TIFs. Recomenda-se uma resolução entre 200 e 300 dpi.</p>';
+Pode carregar um ficheiro de imagem digitalizada de cada vez ou vários ficheiros de imagens digitalizadas num ficheiro ZIP. O módulo Teste Offline processará os ficheiros de imagem em segundo plano.
+Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres especiais, tais como ä, ö ou üs. As imagens devem ser GIF, PNG ou TIF. Recomenda-se uma resolução entre 200 e 300 dpi.</p>';
 $string['importnumberexisting'] = 'Número de formulários duplicados: {$a}';
 $string['importnumberpages'] = 'Número de páginas importadas com sucesso: {$a}';
 $string['importnumberresults'] = 'Número de importados: {$a}';
@@ -435,7 +438,7 @@ $string['participantsusage'] = 'Registar presenças';
 $string['participantsusage_help'] = 'Esta opção determina se pode, ou não, registar a presença dos participantes com listas de presença. As listas de presença são projetadas para Testes Offline grandes, com muitos participantes. Podem ser usadas para verificar quais os alunos que participaram no teste e se todos os resultados foram avaliados corretamente.';
 $string['partimportnew'] = 'A carregar folha de participantes';
 $string['partimportnew_help'] = '<p>
-Neste separador pode carregar as listas dos participantes já preenchidas. Pode enviar um único ficheiro de imagem digitalizada ou vários ficheiros de imagens digitalizadas num ficheiro ZIP. O módulo de Teste Offline processará os ficheiros de imagem em segundo plano.
+Neste separador pode carregar as listas dos participantes já preenchidas. Pode enviar um único ficheiro de imagem digitalizada ou vários ficheiros de imagens digitalizadas num ficheiro ZIP. O módulo Teste Offline processará os ficheiros de imagem em segundo plano.
 Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres especiais, tais como ä, ö ou üs. As imagens devem ser GIF, PNG ou TIF. Recomenda-se uma resolução entre 200 e 300 dpi.</p>';
 $string['partuncheckedwithoutresult'] = '{$a} participantes não verificados sem resultado';
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} participantes não verificados com resultado</a>';
@@ -566,7 +569,7 @@ Em todos os casos, apenas as opções marcadas em "A revisão inclui" são exibi
 $string['qversioncannotupdate'] = 'A versão da pergunta não pode ser atualizada';
 $string['qversionnumbersdiffer'] = 'O número de respostas difere entre a versão antiga e a nova. Isto levaria a inconsistências.';
 $string['qversionupdated'] = 'Versão da pergunta atualizada';
-$string['qversionupdatedwarning'] = 'Os formulários foram criados com outra versão desta pergunta. Verifique se houve alguma alteração significativa.';
+$string['qversionupdatedwarning'] = 'Os formulários já foram criados.<br>Se existirem resultados, eles serão reavaliados automaticamente para a versão atual da pergunta alterada escolhida aqui. Nos documentos ainda é mostrada a versão original da pergunta.';
 $string['qversionupdateerror'] = 'Ocorreu um erro ao atualizar a versão da pergunta.';
 $string['randomfromexistingcategory'] = 'Pergunta aleatória a partir de uma categoria existente';
 $string['randomnumber'] = 'Número de perguntas aleatórias';

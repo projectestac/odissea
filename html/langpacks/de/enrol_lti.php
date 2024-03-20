@@ -129,7 +129,7 @@ $string['privacy:metadata:enrol_lti_users'] = 'Liste der Nutzer, die über den L
 $string['privacy:metadata:enrol_lti_users:lastaccess'] = 'Zeitpunkt zu dem Nutzer zuletzt den Kurs genutzt hat';
 $string['privacy:metadata:enrol_lti_users:lastgrade'] = 'Letzte Bewertung, die für den Nutzer erstellt wurde';
 $string['privacy:metadata:enrol_lti_users:timecreated'] = 'Datum, an dem eine Person eingeschrieben wurde';
-$string['privacy:metadata:enrol_lti_users:userid'] = 'ID des Nutzers';
+$string['privacy:metadata:enrol_lti_users:userid'] = 'ID von Nutzer/in';
 $string['provisioningmode'] = 'Bereitstellungsmodus';
 $string['provisioningmode_help'] = 'Diese Einstellung legt fest, wie Konten beim ersten Start behandelt werden. Mehrere Modi werden unterstützt:
 <ul>

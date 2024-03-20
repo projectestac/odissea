@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowcompletedevents'] = 'السماح بالأحداث المكتملة';
 $string['allowcompletedevents_help'] = 'سيكون بالإمكان تحديد الأحداث المكتملة وربطها مع عيِّنة الانضمام.';
 $string['allowcompletedevents_text'] = 'الأحداث المكتملة يمكن ربطها';
-$string['allowhiddencourses'] = 'السماح بالمساقات المخفية';
+$string['allowhiddencourses'] = 'السماح بالمقررات المخفية';
 $string['apipassword_desc'] = 'هل نسيت كلمة مرورك؟ <a title="{$a->title}" href="{$a->url}" target="_blank">تعلم كيفية إعادة تعيينها.</a>';
 $string['apiusername_desc'] = 'مهم: حسابك في Arlo ينبغي تمكين واجهة برمجة التطبيق فيه، <a title="{$a->title}" href="{$a->url}" target="_blank">تعلم المزيد.</a>';
 $string['arlo:synchronizecore'] = 'سحب الموارد الجديدة للنواة يدوياً';

@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alfresco:view'] = 'Consulter un dépôt Alfresco';
 $string['alfresco_url'] = 'URL Alfresco';
-$string['alfrescourltext'] = 'L\'URL de l\'API Alfresco devrait être : http://yoursite.com/alfresco/api ou http://yoursite.com/alfresco/soapapi pour Alfresco 4.2.d ou ultérieur.';
+$string['alfrescourltext'] = 'L’URL de l’API Alfresco devrait être : http://yoursite.com/alfresco/api ou http://yoursite.com/alfresco/soapapi pour Alfresco 4.2.d ou ultérieur.';
 $string['configplugin'] = 'Configuration Alfresco';
 $string['notitle'] = 'Sans titre';
 $string['password'] = 'Mot de passe';
 $string['pluginname'] = 'Dépôt Alfresco';
 $string['pluginname_help'] = 'Un plugin pour le CMS Alfresco';
-$string['soapmustbeenabled'] = 'L\'extension SOAP de PHP doit être activée pour utiliser le plugin alfresco';
+$string['soapmustbeenabled'] = 'L’extension SOAP de PHP doit être activée pour utiliser le plugin alfresco';
 $string['space'] = 'Espace';
-$string['username'] = 'Nom d\'utilisateur';
+$string['username'] = 'Nom d’utilisateur';

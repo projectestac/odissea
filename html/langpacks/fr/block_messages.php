@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['messages:addinstance'] = 'Ajouter un bloc messages';
 $string['messages:myaddinstance'] = 'Ajouter un bloc messages au tableau de bord';
 $string['pluginname'] = 'Messages personnels';
-$string['privacy:metadata'] = 'Le bloc Messages affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata'] = 'Le bloc Messages affiche seulement des données enregistrées à d’autres endroits.';

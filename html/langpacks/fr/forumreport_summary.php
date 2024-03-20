@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['attachmentcount'] = 'Nombre d\'annexes';
+$string['attachmentcount'] = 'Nombre d’annexes';
 $string['charcount'] = 'Nombre de caractères';
 $string['earliestpost'] = 'Message le plus ancien';
 $string['eventreportdownloaded'] = 'Rapport résumé de forum téléchargé';
@@ -48,11 +48,11 @@ $string['latestpost'] = 'Message le plus récent';
 $string['nodetitle'] = 'Rapport résumé du forum';
 $string['pluginname'] = 'Rapport résumé de forum';
 $string['postcount'] = 'Nombre de discussions lancées';
-$string['privacy:metadata'] = 'Le plugin Rapport résumé de forum n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Rapport résumé de forum n’enregistre aucune donnée personnelle.';
 $string['replycount'] = 'Nombre de réponses envoyées';
-$string['summary:view'] = 'Consulter le rapport résumé d\'un ou plusieurs forums';
-$string['summary:viewall'] = 'Consulter les données de chaque utilisateur dans le rapport résumé d\'un ou plusieurs forums';
+$string['summary:view'] = 'Consulter le rapport résumé d’un ou plusieurs forums';
+$string['summary:viewall'] = 'Consulter les données de chaque utilisateur dans le rapport résumé d’un ou plusieurs forums';
 $string['summarytitle'] = 'Rapport résumé du forum - {$a}';
-$string['viewcount'] = 'Nombre d\'affichages';
-$string['viewsdisclaimer'] = 'La colonne nombre d\'affichage n\'est pas filtrée par groupe';
+$string['viewcount'] = 'Nombre d’affichages';
+$string['viewsdisclaimer'] = 'La colonne nombre d’affichage n’est pas filtrée par groupe';
 $string['wordcount'] = 'Nombre de mots';

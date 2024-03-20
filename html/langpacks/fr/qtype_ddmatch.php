@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['draganswerhere'] = 'Faites glisser votre réponse ici';
-$string['editingddmatch'] = 'Édition d\'une question appariement par glisser-déposer';
+$string['editingddmatch'] = 'Édition d’une question appariement par glisser-déposer';
 $string['pluginname'] = 'Appariement par glisser-déposer';
 $string['pluginname_help'] = 'La réponse à chaque sous-question doit être appariée par glisser-déposer parmi une liste de possibilités prédéfinies.';
 $string['pluginname_link'] = 'question/type/ddmatch';
-$string['pluginnameadding'] = 'Ajout d\'une question appariement par glisser-déposer';
-$string['pluginnameediting'] = 'Édition d\'une question appariement par glisser-déposer';
-$string['pluginnamesummary'] = 'Une extension des questions appariement où l\'utilisateur doit déplacer les réponses sur chaque sous question pour indiquer ses choix';
+$string['pluginnameadding'] = 'Ajout d’une question appariement par glisser-déposer';
+$string['pluginnameediting'] = 'Édition d’une question appariement par glisser-déposer';
+$string['pluginnamesummary'] = 'Une extension des questions appariement où l’utilisateur doit déplacer les réponses sur chaque sous question pour indiquer ses choix';

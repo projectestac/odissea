@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'Afegeix seccions';
+$string['all'] = 'Tots';
 $string['allowphototiles_desc'] = 'Si se selecciona aquesta opció, els professors podran pujar-hi una foto perquè serveixi com a fons del mosaic. Així mateix, podran continuar emprant icones estàndard dins el mateix curs. (Si no se selecciona aquesta opció, només es permetrà l\'ús d\'icones del mosaic, i s\'ignorarà la configuració següent de fotos de mosaic.)';
 $string['asfraction'] = 'Mostra\'l com una fracció';
 $string['aspercentagedial'] = 'Mostra\'l com un % dins un cercle';
@@ -61,6 +62,7 @@ $string['displayfilterbar_help'] = '<p>Quan se selecciona aquesta opció, es mos
 $string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_mp3'] = 'Àudio';
 $string['documentation'] = 'Documentació';
+$string['editsection'] = 'Edita el mosaic';
 $string['editsectionname'] = 'Edita el nom de la secció';
 $string['entersection'] = 'Entra a la secció';
 $string['expand'] = 'Amplia';
@@ -70,7 +72,7 @@ $string['filterboth'] = 'Mostra botons basats en el nombre de mosaics i els resu
 $string['filternumbers'] = 'Mostra botons basats en el nombre de mosaics';
 $string['filteroutcomes'] = 'Mostra botons basats en els resultats del curs';
 $string['guidance'] = 'Guia';
-$string['hide'] = 'Amaga\'l';
+$string['hide'] = 'Amaga-ho';
 $string['hidefromothers'] = 'Amaga el mosaic';
 $string['home'] = 'Pàgina d\'inici del curs';
 $string['icontitle-address-book-o'] = 'Llibreta d\'adreces';
@@ -189,6 +191,7 @@ $string['picknewicon'] = 'Tria una icona nova';
 $string['picknewiconphoto'] = 'Tria una icona o una imatge de fons nova';
 $string['pluginname'] = 'Format de mosaics';
 $string['previoustopic'] = 'Tema anterior';
+$string['progress'] = 'Progrés';
 $string['revealcontents'] = 'Deixa veure els continguts del mosaic';
 $string['showoverallprogress'] = 'Mostra l\'indicador general del progrés';
 $string['showoverallprogress_desc'] = 'Mostra l\'indicador «Progrés general %» a la part superior dreta del curs (el valor que s\'hi mostra representa l\'agregació del % complet de cada mosaic, basat en la compleció d\'activitats, no en la compleció del curs)';

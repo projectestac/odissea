@@ -770,8 +770,8 @@ function grade_get_plugin_info($courseid, $active_type, $active_plugin) {
             break;
         }
         foreach ($plugins as $plugin) {
-            if (is_a($plugin, 'grade_plugin_info')) {
-                if ($active_plugin == $plugin->id) {
+            if (is_a($plugin, grade_plugin_info::class)) {
+                if ($plugin_type === $active_type && $active_plugin == $plugin->id) {
                     $plugin_info['strings']['active_plugin_str'] = $plugin->string;
                 }
             }
@@ -786,18 +786,12 @@ function grade_get_plugin_info($courseid, $active_type, $active_plugin) {
  *
  * @param int $courseid The course ID.
  * @param int|null $groupid The group ID (optional).
+ * @param bool $onlyactiveenrol Include only active enrolments.
  * @return array $users A list of enrolled gradable users.
  */
-function get_gradable_users(int $courseid, ?int $groupid = null): array {
-    global $CFG;
-
-    $context = context_course::instance($courseid);
-    // Create a graded_users_iterator because it will properly check the groups etc.
-    $defaultgradeshowactiveenrol = !empty($CFG->grade_report_showonlyactiveenrol);
-    $onlyactiveenrol = get_user_preferences('grade_report_showonlyactiveenrol', $defaultgradeshowactiveenrol) ||
-        !has_capability('moodle/course:viewsuspendedusers', $context);
-
+function get_gradable_users(int $courseid, ?int $groupid = null, bool $onlyactiveenrol = false): array {
     $course = get_course($courseid);
+    // Create a graded_users_iterator because it will properly check the groups etc.
     $gui = new graded_users_iterator($course, null, $groupid);
     $gui->require_active_enrolment($onlyactiveenrol);
     $gui->init();
@@ -880,7 +874,7 @@ class grade_plugin_info {
  * @param string|null $headerhelpidentifier The help string identifier if required.
  * @param string|null $headerhelpcomponent The component for the help string.
  * @param stdClass|null $user The user object for use with the user context header.
- * @param actionbar|null $actionbar The actions bar which will be displayed on the page if $shownavigation is set
+ * @param action_bar|null $actionbar The actions bar which will be displayed on the page if $shownavigation is set
  *                                  to true. If $actionbar is not explicitly defined, the general action bar
  *                                  (\core_grades\output\general_action_bar) will be used by default.
  * @param boolean $showtitle If set to false just show course full name as a title.
@@ -890,6 +884,12 @@ function print_grade_page_head(int $courseid, string $active_type, ?string $acti
        bool $return = false, $buttons = false, bool $shownavigation = true, ?string $headerhelpidentifier = null,
        ?string $headerhelpcomponent = null, ?stdClass $user = null, ?action_bar $actionbar = null, $showtitle = true) {
     global $CFG, $OUTPUT, $PAGE, $USER;
+
+    if ($heading !== false) {
+        // Make sure to trim heading, including the non-breaking space character.
+        $heading = str_replace("&nbsp;", " ", $heading);
+        $heading = trim($heading);
+    }
 
     // Put a warning on all gradebook pages if the course has modules currently scheduled for background deletion.
     require_once($CFG->dirroot . '/course/lib.php');
@@ -922,7 +922,29 @@ function print_grade_page_head(int $courseid, string $active_type, ?string $acti
     } else {
         $PAGE->set_pagelayout('admin');
     }
-    $PAGE->set_title(get_string('grades') . ': ' . $stractive_type);
+    $coursecontext = context_course::instance($courseid);
+    // Title will be constituted by information starting from the unique identifying information for the page.
+    if ($heading) {
+        // If heading is supplied, use this for the page title.
+        $uniquetitle = $heading;
+    } else if (in_array($active_type, ['report', 'settings'])) {
+        // For grade reports or settings pages of grade plugins, use the plugin name for the unique title.
+        $uniquetitle = $stractive_plugin;
+        // But if editing mode is turned on, check if the report plugin has an editing mode title string and use it if present.
+        if ($PAGE->user_is_editing() && $active_type === 'report') {
+            $strcomponent = "gradereport_{$active_plugin}";
+            if (get_string_manager()->string_exists('editingmode_title', $strcomponent)) {
+                $uniquetitle = get_string('editingmode_title', $strcomponent);
+            }
+        }
+    } else {
+        $uniquetitle = $stractive_type . ': ' . $stractive_plugin;
+    }
+    $titlecomponents = [
+        $uniquetitle,
+        $coursecontext->get_context_name(false),
+    ];
+    $PAGE->set_title(implode(moodle_page::TITLE_SEPARATOR, $titlecomponents));
     $PAGE->set_heading($title);
     $PAGE->set_secondary_active_tab('grades');
 
@@ -988,8 +1010,7 @@ function print_grade_page_head(int $courseid, string $active_type, ?string $acti
         echo $output;
     }
 
-    $returnval .= print_natural_aggregation_upgrade_notice($courseid, context_course::instance($courseid), $PAGE->url,
-        $return);
+    $returnval .= print_natural_aggregation_upgrade_notice($courseid, $coursecontext, $PAGE->url, $return);
 
     if ($return) {
         return $returnval;

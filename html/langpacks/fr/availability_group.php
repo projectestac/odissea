@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anygroup'] = '(N\'importe quel groupe)';
-$string['description'] = 'N\'autoriser que les étudiants membres d\'un groupe spécifié ou de tous les groupes.';
+$string['anygroup'] = '(N’importe quel groupe)';
+$string['description'] = 'N’autoriser que les étudiants membres d’un groupe spécifié ou de tous les groupes.';
 $string['error_selectgroup'] = 'Veuillez sélectionner un groupe.';
 $string['missing'] = '(Groupe manquant)';
 $string['pluginname'] = 'Restriction par groupe';
-$string['privacy:metadata'] = 'Le plugin Restriction par groupe n\'enregistre aucune donnée personnelle.';
-$string['requires_anygroup'] = 'Vous soyez membre d\'un groupe';
+$string['privacy:metadata'] = 'Le plugin Restriction par groupe n’enregistre aucune donnée personnelle.';
+$string['requires_anygroup'] = 'Vous soyez membre d’un groupe';
 $string['requires_group'] = 'Vous soyez membre de <strong>{$a}</strong>';
-$string['requires_notanygroup'] = 'Vous ne soyez membre d\'aucun groupe';
+$string['requires_notanygroup'] = 'Vous ne soyez membre d’aucun groupe';
 $string['requires_notgroup'] = 'Vous ne soyez pas membre de <strong>{$a}</strong>';
 $string['title'] = 'Groupe';

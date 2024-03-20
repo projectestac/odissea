@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['author'] = 'Autor/a original';
 $string['description'] = 'Descripció';
 $string['name'] = 'Nom';

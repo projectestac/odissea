@@ -34,6 +34,18 @@
                   "id": "newRayFromPointThroughPoint"
                 },
                 {
+                  "id": "midpointOfLineSegment"
+                },
+                {
+                  "id": "mediatrixOfLineSegment"
+                },
+                {
+                  "id": "newLineParallelToLineThroughPoint"
+                },
+                {
+                  "id": "newLinePerpendicularToLineThroughPoint"
+                },
+                {
                   "id": "newVectorByPoints"
                 },
                 {
@@ -121,7 +133,13 @@
               "id": "redo"
             },
             {
+              "id": "showHiddenElements"
+            },
+            {
               "id": "deleteAll"
+            },
+            {
+              "id": "restoreInitialContent"
             }
           ]
         },
@@ -205,6 +223,9 @@
           "items": [
             {
               "id": "deleteElement"
+            },
+            {
+              "id": "hideElement"
             }
           ]
         }
@@ -292,6 +313,9 @@
           "items": [
             {
               "id": "deleteLabel"
+            },
+            {
+              "id": "hideLabel"
             }
           ]
         }

@@ -293,12 +293,12 @@ $string['error:backpackdatainvalid'] = 'Motxilak itzulitako datuak ez dira egoki
 $string['error:backpackemailnotfound'] = '\'{$a}\' helbide elektronikoa ez dago inongo motxilarekin lotuta. <a href="http://backpack.openbadges.org"> motxila bat sortu behar duzu</a> kontu horretarako edo saioa beste helbide elektroniko batekin hasi.';
 $string['error:backpacknotavailable'] = 'Zure gunea ez dago internet bidez eskuragarri eta, beraz, gune honetan emandako edozein domina kanpoko motxila-zerbitzuek ezin izango dute egiaztatu.';
 $string['error:backpackproblem'] = 'Arazo bat dago zure motxila-zerbitzu hornitzailearekin konektatzeko. Mesedez, saiatu zaitez berriro beranduago.';
-$string['error:badgeawardnotfound'] = 'Ezin da emandako domina hau egiaztatu. Baliteke domina hau kendu izana.';
+$string['error:badgeawardnotfound'] = 'Ezin da emandako domina hau egiaztatu. Baliteke domina hau baliogabetu izana.';
 $string['error:badgenotfound'] = 'Domina ez da aurkitu';
 $string['error:cannotact'] = 'Ezin da domina aktibatu.';
 $string['error:cannotawardbadge'] = 'Ezin zaio domina erabiltzaile bati eman.';
 $string['error:cannotdeletecriterion'] = 'Irizpide hau ezin da ezabatu.';
-$string['error:cannotrevokebadge'] = 'Ezin zaio erabiltzaile bati domina bat kendu';
+$string['error:cannotrevokebadge'] = 'Ezin zaio erabiltzaile bati domina bat baliogabetu';
 $string['error:clone'] = 'Ezin da domina klonatu.';
 $string['error:connectionunknownreason'] = 'Konexioa ez da modu egokian burutu, baina arrazoia ez dakigu.';
 $string['error:duplicatename'] = 'Badago aldez aurretik izen hori duen domina sisteman.';
@@ -341,7 +341,7 @@ $string['eventbadgedisabled'] = 'Domina desgaitu da';
 $string['eventbadgeduplicated'] = 'Domina bikoiztu da';
 $string['eventbadgeenabled'] = 'Domina gaitu da';
 $string['eventbadgelistingviewed'] = 'Dominen zerrenda ikusi da';
-$string['eventbadgerevoked'] = 'Domina kendu da';
+$string['eventbadgerevoked'] = 'Domina baliogabetu da';
 $string['eventbadgeupdated'] = 'Domina eguneratu da';
 $string['eventbadgeviewed'] = 'Domina ikusi da';
 $string['evidence'] = 'Ebidentzia';
@@ -523,7 +523,7 @@ $string['reviewconfirm'] = '<p> hau eginda, erabiltzaileek zure domina ikusi aha
 <p> Domina lehenengoz eman orduko <strong>blokeatu</strong> egingo da - hainbat ezarpen, irizpideak eta iraungitze ezarpenak barne, ezin izango dira aldatu. </p>
 
 <p> Ziur zaude \'{$a}\' dominarako sarbidea baimendu nahi duzula? </p>';
-$string['revoke'] = 'Kendu domina';
+$string['revoke'] = 'Baliogabetu domina';
 $string['save'] = 'Gorde';
 $string['searchname'] = 'BIlatu izenaren arabera';
 $string['selectaward'] = 'Mesedez, aukeratu zein rol erabili nahi duzun domina hau emateko:';
@@ -552,7 +552,7 @@ Domina bat gutxienez behin eman bada, automatikoki pasako da **BLOKEATUTA** egoe
 
 * Zertarako blokeatzen ditugu dominak? *
 
-Domina bat irabazteko erabiltzaile guztiek baldintza berberak dituztela ziurtatzeko. Une honetan ezin da dominarik kendu. Dominen baldintzak edonoiz aldatzen uzten badugu, oso litekeena da azkenean domina bera duten erabiltzaileek baldintza erabat ezberdinak beteta lortu izana.';
+Domina bat irabazteko erabiltzaile guztiek baldintza berberak dituztela ziurtatzeko. Une honetan ezin da dominarik baliogabetu. Dominen baldintzak edonoiz aldatzen uzten badugu, oso litekeena da azkenean domina bera duten erabiltzaileek baldintza erabat ezberdinak beteta lortu izana.';
 $string['statusmessage_0'] = 'Domina hau ez dago une honetan erabiltzaileek erabiltzeko moduan. Gaitu sarbidea erabiltzaileek domina hau irabazi ahal izatea nahi baduzu.';
 $string['statusmessage_1'] = 'Domina hau une honetan erabiltzaileek erabiltzeko moduan dago. Desgaitu sarbidea edozein aldaketa egiteko.';
 $string['statusmessage_2'] = 'Domina hau ez dago une hontan erabiltzaileek erabiltzeko moduan eta irizpideak blokeatuta daude. Gaitu sarbidea erabiltzaileek domina hau irabazi ahal izatea nahi baduzu.';

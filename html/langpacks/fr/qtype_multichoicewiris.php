@@ -25,17 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingmultichoicewiris'] = 'Ajout d\'une question à choix multiples - mathématiques et sciences par WIRIS';
-$string['editingmultichoicewiris'] = 'Modification d\'une question à choix multiples - mathématiques et sciences par WIRIS';
+$string['addingmultichoicewiris'] = 'Ajout d’une question à choix multiples - mathématiques et sciences par WIRIS';
+$string['editingmultichoicewiris'] = 'Modification d’une question à choix multiples - mathématiques et sciences par WIRIS';
 $string['multichoicewiris'] = 'Choix multiples - sciences';
 $string['multichoicewiris_algorithm'] = 'Algorithme';
-$string['multichoicewiris_cantimportoverride'] = 'La question à choix multiples - mathématiques et sciences n\'a pas pu être importée correctement à partir du format Moodle 1.9. La question peut être résolue manuellement en suivant les instructions sur <a href="http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1">http://www.wiris.com/ quiz/docs/moodle/manual/multiple-choice#frommoodle1</a>.';
+$string['multichoicewiris_cantimportoverride'] = 'La question à choix multiples - mathématiques et sciences n’a pas pu être importée correctement à partir du format Moodle 1.9. La question peut être résolue manuellement en suivant les instructions sur <a href="http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1">http://www.wiris.com/ quiz/docs/moodle/manual/multiple-choice#frommoodle1</a>.';
 $string['multichoicewiris_help'] = 'Comme le choix multiple standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['multichoicewiris_wiris_variables'] = 'Variables WIRIS';
 $string['multichoicewirissummary'] = 'Comme le choix multiple standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
 $string['pluginname'] = 'Choix multiples - sciences';
 $string['pluginname_help'] = 'Comme le choix multiple standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['pluginnameadding'] = 'Ajout d\'une question à choix multiples - mathématiques et sciences par WIRIS';
-$string['pluginnameediting'] = 'Modification d\'une question à choix multiples - mathématiques et sciences par WIRIS';
+$string['pluginnameadding'] = 'Ajout d’une question à choix multiples - mathématiques et sciences par WIRIS';
+$string['pluginnameediting'] = 'Modification d’une question à choix multiples - mathématiques et sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme le choix multiple standard, mais vous pouvez proposer un texte de question et des choix différents en insérant des nombres, des formules ou des tracés aléatoires. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question Test Wiris à choix multiple ne modifie ni n\'enregistre aucune donnée personnelle.';
+$string['privacy:null_reason'] = 'Le type de question Test Wiris à choix multiple ne modifie ni n’enregistre aucune donnée personnelle.';

@@ -6,8 +6,8 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		parent::__construct($url,$listener);
 		try {
 			$this->max_connections = Std::parseInt(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS));
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$t = $_ex_;
 			{
 				$this->max_connections = 10;
@@ -22,8 +22,8 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		if($data !== null) {
 			try {
 				$connections = haxe_Unserializer::run($data);
-			}catch(Exception $»e) {
-				$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			}catch(Exception $Â»e) {
+				$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 				$t = $_ex_;
 				{
 					$connections = null;
@@ -95,12 +95,12 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	static $CONNECTION_TIMEOUT = 60;
 	static $DATA_KEY_MAX_CONNECTIONS = "wiris_maxconnections";

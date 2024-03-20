@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mode adaptatif (questions en plusieurs parties)';
-$string['privacy:metadata'] = 'Le plugin Mode adaptatif (questions en plusieurs parties) n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Mode adaptatif (questions en plusieurs parties) n’enregistre aucune donnée personnelle.';

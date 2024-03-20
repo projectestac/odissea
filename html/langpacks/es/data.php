@@ -444,6 +444,7 @@ $string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
 $string['search:activity'] = 'Base de datos - información de actividad';
 $string['search:entry'] = 'Base de datos - entradas';
+$string['searchresults'] = 'Entradas que continen "{$a}"';
 $string['selectedrequired'] = 'Se requieren todos los seleccionados';
 $string['selectexportoptions'] = 'Seleccionar opciones de exportación';
 $string['selectfields'] = 'Seleccionar campos';

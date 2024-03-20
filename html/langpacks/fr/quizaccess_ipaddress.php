@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Restriction par adresse IP';
-$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Restriction par adresse IP n\'enregistre aucune donnée personnelle.';
-$string['subnetwrong'] = 'Ce test n\'est disponible que depuis certains lieux, et cet ordinateur n\'est pas dans la liste autorisée.';
+$string['privacy:metadata'] = 'Le plugin de restriction d’accès au test Restriction par adresse IP n’enregistre aucune donnée personnelle.';
+$string['subnetwrong'] = 'Ce test n’est disponible que depuis certains lieux, et cet ordinateur n’est pas dans la liste autorisée.';

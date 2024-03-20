@@ -439,7 +439,8 @@ $string['courserequestdetails'] = 'Details zum beantragten Kurs';
 $string['courserequestfailed'] = 'Ihr Kursantrag konnte nicht gespeichert werden.';
 $string['courserequestintro'] = 'Mit diesem Formular wird die Einrichtung eines neuen Kurses beantragt.<br />Nur wenn alle Informationen eingetragen sind, kann der Antrag bearbeitet werden.';
 $string['courserequestreason'] = 'Begründung des Kursantrags';
-$string['courserequestsuccess'] = 'Ihr Kursantrag wurde gespeichert. In Kürze erhalten Sie eine Mitteilung, ob der Kursantrag bestätigt wurde.';
+$string['courserequestroleerror'] = 'Die Rolle \'Kursersteller/in\' in der Konfiguration neuer Kurse ist ungültig. Beachten Sie bitte die <a href="{$a}">Nutzerrichtlinien</a>.';
+$string['courserequestsuccess'] = 'Der Kursantrag wurde übermittelt.';
 $string['courserequestsupport'] = 'Info für Administrator/innen, um diese Kursanfrage prüfen zu können';
 $string['courserequestwarning'] = 'Nutzer/innen, die einen Kurs beantragen, werden automatisch mit der Rolle \'{$a}\' dort eingeschrieben.';
 $string['courserestore'] = 'Kurswiederherstellung';
@@ -709,7 +710,7 @@ $string['emaildisableclick'] = 'Klicken Sie hier, um den E-Mail-Versand an diese
 $string['emaildisplay'] = 'Sichtbarkeit der E-Mail-Adresse';
 $string['emaildisplay_help'] = '* Verborgen - ausschließlich entsprechend berechtigte Personen (z.B. Trainer/innen) können die E-Mail-Adresse sehen
 * Sichtbar für alle - Alle auf der Website können die E-Mail-Adresse sehen
-* Sichtbar für Teilnehmer/innen im Kurs - Nur Teilnehmer/innen, die in Ihren Kursen eingeschriebensind, können die E-Mail-Adresse sehen';
+* Sichtbar für Teilnehmer/innen im Kurs - Nur Teilnehmer/innen, die in Ihren Kursen eingeschrieben sind, können die E-Mail-Adresse sehen';
 $string['emaildisplaycourse'] = 'Sichtbar für Teilnehmer/innen im Kurs';
 $string['emaildisplaycoursemembersonly'] = '(sichtbar für andere Teilnehmer/innen im Kurs)';
 $string['emaildisplayeveryone'] = '(sichtbar für alle)';
@@ -989,18 +990,18 @@ $string['gettheselogs'] = 'Logdaten holen';
 $string['go'] = 'Start';
 $string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas https://moodle.com
 
-Dieses Programm ist freie Software. Sie können die Software unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License weitergeben und / oder ändern. Es gilt die Lizenzversion 2 oder (falls Sie es möchten) auch jede spätere Version.
+Dieses Programm ist freie Software. Sie können die Software weitergeben und / oder unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License ändern. Es gilt die Lizenzversion 2 oder (falls Sie es möchten) auch jede spätere Version.
 
 Dieses Programm wird in der Absicht verbreitet, dass es nützlich sein könnte, jedoch OHNE JEGLICHE GARANTIE, also auch ohne die implizite Garantie der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
 
-Details finden Sie in den Moodle-Lizenzinfos: https://docs.moodle.org/dev/License';
+Details finden Sie in den Moodle-Lizenzinfos: https://moodledev.io/general/license';
 $string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas https://moodle.com
 
-Dieses Programm ist freie Software. Sie können die Software unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License weitergeben und / oder ändern. Es gilt die Lizenzversion 3 oder (falls Sie es möchten) auch jede spätere Version.
+Dieses Programm ist freie Software. Sie können die Software weitergeben und / oder unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License ändern. Es gilt die Lizenzversion 3 oder (falls Sie es möchten) auch jede spätere Version.
 
 Dieses Programm wird in der Absicht verbreitet, dass es nützlich sein könnte, jedoch OHNE JEGLICHE GARANTIE, also auch ohne die implizite Garantie der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
 
-Details finden Sie in den Moodle-Lizenzinfos: https://docs.moodle.org/dev/License';
+Details finden Sie in den Moodle-Lizenzinfos: https://moodledev.io/general/license';
 $string['gpllicense'] = 'GPL-Lizenz';
 $string['grade'] = 'Bewertung';
 $string['gradenoun'] = 'Bewertung';
@@ -1043,7 +1044,7 @@ $string['helpprefix2'] = 'Hilfe für {$a}';
 $string['helpwiththis'] = 'Hilfe für dies';
 $string['hiddenassign'] = 'Verborgene Zuweisung';
 $string['hiddenfromstudents'] = 'Für Teilnehmer/innen verborgen';
-$string['hiddenoncoursepage'] = 'Verfügbar, aber auf Kursseite verborgen';
+$string['hiddenoncoursepage'] = 'Verfügbar, aber auf Kursseite nicht anzeigen';
 $string['hiddensections'] = 'Verborgene Abschnitte';
 $string['hiddensections_help'] = 'Verborgene Abschnitte können den Teilnehmer/innen auf der Kursseite als "nicht verfügbar" angezeigt oder vollständig ausgeblendet bleiben.';
 $string['hiddensectionscollapsed'] = 'Verborgene Abschnitte werden als nicht verfügbar angezeigt';
@@ -1053,7 +1054,7 @@ $string['hide'] = 'Verbergen';
 $string['hideadvancedsettings'] = 'Optionale Felder verbergen';
 $string['hidechartdata'] = 'Grafikdaten verbergen';
 $string['hidefromstudents'] = 'Auf der Kursseite verbergen';
-$string['hideoncoursepage'] = 'Verfügbar, aber auf der Kursseite nicht anzeigen';
+$string['hideoncoursepage'] = 'Verfügbar, aber auf Kursseite nicht anzeigen';
 $string['hidepicture'] = 'Bild verbergen';
 $string['hidepopoverwindow'] = 'Popover-Fenster verbergen';
 $string['hidesection'] = 'Abschnitt {$a} verbergen';
@@ -1346,11 +1347,11 @@ $string['modvisible_help'] = '* Auf Kursseite anzeigen: Verfügbar für Teilnehm
 * Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.';
 $string['modvisiblehiddensection'] = 'Verfügbarkeit';
 $string['modvisiblehiddensection_help'] = '* Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.
-* Verfügbar, aber auf der Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, wenn sie einen Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
+* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
 $string['modvisiblewithstealth'] = 'Verfügbarkeit';
 $string['modvisiblewithstealth_help'] = '* Auf Kursseite anzeigen: Verfügbar für Teilnehmer/innen (vorbehaltlich eventuell festgelegter Zugriffsbeschränkungen).
 * Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.
-* Verfügbar, aber auf der Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, wenn sie einen Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
+* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
 $string['month'] = 'Monat';
 $string['months'] = 'Monate';
 $string['moodledocs'] = 'Dokumentation';
@@ -1736,7 +1737,7 @@ $string['publicsitefileswarning'] = 'Achtung: Jeder könnte die hier befindliche
 $string['publicsitefileswarning2'] = 'Achtung: Jeder könnte die hier befindlichen Dateien herunterladen, der die URL kennt (oder erraten kann). Aus Sicherheitsgründen sollten alle hochgeladenen Kurssicherungen sofort nach der Wiederherstellung gelöscht werden.';
 $string['publicsitefileswarning3'] = 'Achtung: Jeder könnte diese Dateien herunterladen, wenn er die URL kennt (oder sie erraten kann). Aus Sicherheitsgründen sollten Kurssicherungen ausschließlich im geschützen Verzeichnis \'backupdata\' liegen.';
 $string['question'] = 'Frage';
-$string['questionsinthequestionbank'] = 'Fragen in der Fragenliste';
+$string['questionsinthequestionbank'] = 'Fragen in der Fragensammlung';
 $string['queued'] = 'In Warteschlange';
 $string['quotausage'] = 'Aktuell sind {$a->used} vom möglichen Speicher {$a->total} belegt.';
 $string['readinginfofrombackup'] = 'Informationen der Sicherung lesen';
@@ -2278,7 +2279,7 @@ $string['uploadthisfile'] = 'Datei hochladen';
 $string['url'] = 'URL';
 $string['used'] = 'Verwendet';
 $string['usedinnplaces'] = 'An {$a} Stellen verwendet';
-$string['user'] = 'Nutzer';
+$string['user'] = 'Nutzer/in';
 $string['useraccount'] = 'Nutzerkonto';
 $string['useractivity'] = 'Aktivität';
 $string['userconfirmed'] = '{$a} bestätigt';
@@ -2337,7 +2338,7 @@ $string['weekhide'] = 'Diese Woche verbergen für {$a}';
 $string['weeklyoutline'] = 'Kursthemen';
 $string['weeks'] = 'Wochen';
 $string['weekshow'] = 'Diese Woche für {$a} anzeigen';
-$string['welcomeback'] = 'Willkommen zurück, {$a->firstname} {$a->lastname}! 👋';
+$string['welcomeback'] = 'Hallo, {$a->firstname} {$a->lastname}! 👋';
 $string['welcometocourse'] = 'Willkommen zu {$a}';
 $string['welcometocoursetext'] = 'Willkommen im Kurs \'{$a->coursename}\'!
 

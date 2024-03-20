@@ -87,6 +87,8 @@ class repository_upload extends repository {
         }
         // ************ FI
 
+        \core\session\manager::write_close();
+
         if ((is_array($types) and in_array('*', $types)) or $types == '*') {
             $this->mimetypes = '*';
         } else {

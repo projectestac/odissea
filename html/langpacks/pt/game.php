@@ -89,6 +89,7 @@ $string['cross_found_one'] = 'Existe';
 $string['cross_layout'] = 'Estrutura';
 $string['cross_layout0'] = 'Frases na parte de baixo da cruz';
 $string['cross_layout1'] = 'Frases na parte direita da cruz';
+$string['cross_layout2'] = 'Sem frases';
 $string['cross_max_attempts'] = 'Número máximo de tentativas';
 $string['cross_maxcols'] = 'Número máximo de colunas/linhas';
 $string['cross_maxcomputetime'] = 'Tempo máximo de cálculo (em segundos)';

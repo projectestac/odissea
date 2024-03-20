@@ -14,8 +14,8 @@ class com_wiris_quizzes_service_ServiceRouter {
 			$res->setHeader("Content-Length", "" . _hx_string_rec($data->length, ""));
 			$res->writeBinary($data);
 			$res->close();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$t = $_ex_;
 			{
 				$res->sendError(500, "Unable to read file.");

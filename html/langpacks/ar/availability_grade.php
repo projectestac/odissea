@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'مفردات التقييم المخبأة لتقييم التوافر الشرطي';
+$string['cachedef_items'] = 'عناصر التقييم المخبأة لتقييم التوافر الشرطي';
 $string['cachedef_scores'] = 'تقديرات المستخدم المخزنة مؤقتًا لتقييم الإتاحة المشروطة';
 $string['description'] = 'يتطلب من الطلاب تحقيق علامة محددة.';
 $string['error_backwardrange'] = 'عند تحديد نطاق التقدير ، يجب أن يكون الحد الأدنى أقل من الحد الأقصى.';

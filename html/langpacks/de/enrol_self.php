@@ -102,6 +102,7 @@ Wenn das Feld leer bleibt, können sich alle Nutzer/innen im Kurs einschreiben.
 Wenn ein Einschreibeschlüssel angegeben ist, müssen alle Nutzer/innen notwendigerweise bei der Kurseinschreibung den Einschreibeschlüssel eingeben. Beachten Sie, dass Nutzer/innen den Einschreibeschlüssel nur einmal bei der Kurseinschreibung eingeben müssen und danach dauerhaft eingeschriebene Kursteilnehmer/innen sind.';
 $string['passwordinvalid'] = 'Falscher Einschreibeschlüssel';
 $string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel. Das erste Zeichen ist \'{$a}\'.';
+$string['passwordmatchesgroupkey'] = 'Der Einschreibeschlüssel wird bereits als Gruppeneinschreibeschlüssel verwendet.';
 $string['pluginname'] = 'Selbsteinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Selbsteinschreibung\' erlaubt es Nutzer/innen, selber einen Kurs zur Teilnahme auszuwählen. Kurse können mit einem Einschreibeschlüssel gesichert oder ohne Einschreibeschlüssel offen sein. Intern nutzt die Selbsteinschreibung das Plugin \'Manuelle Einschreibung\', welches deswegen im Kurs ebenfalls aktiviert sein muss.';
 $string['privacy:metadata'] = 'Das Plugin Selbsteinschreibung speichert keine personenbezogenen Daten.';
@@ -119,9 +120,9 @@ $string['sendcoursewelcomemessage_help'] = 'Wenn ein Nutzer/innen sich in den Ku
 $string['sendexpirynotificationstask'] = 'Task zur Erinnerung an den Ablauf von Selbsteinschreibungen';
 $string['showhint'] = 'Hinweis zeigen';
 $string['showhint_desc'] = 'Erstes Zeichen des Einschreibeschlüssels zeigen';
-$string['status'] = 'Existierende Einschreibungen erlauben';
+$string['status'] = 'Existierende Einschreibungen aktiv halten';
 $string['status_desc'] = 'Selbsteinschreibung für neue Kurse aktivieren';
-$string['status_help'] = 'Wenn diese Option aktiviert und \'Neue Einschreibungen erlauben\' deaktiviert ist, können alle vorhandenen Selbsteinschreibungen weiter auf den Kurs zugreifen. Wenn die Option deaktiviert ist, werden alle vorhandenen Selbsteinschreibungen deaktiviert und keine neuen Selbsteinschreibungen zugelassen.';
+$string['status_help'] = 'Wenn die Option deaktiviert ist, werden alle vorhandenen Selbsteinschreibungen deaktiviert und haben keinen Zugriff mehr zum Kurs';
 $string['syncenrolmentstask'] = 'Synchronisierung von Selbsteinschreibungen';
 $string['unenrol'] = 'Nutzer/in abmelden';
 $string['unenrolselfconfirm'] = 'Möchten Sie sich selbst wirklich vom Kurs \'{$a}\' abmelden?';

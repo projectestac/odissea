@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Galerie d\'images';
+$string['modulename'] = 'Galerie d’images';
 $string['modulename_help'] = 'Utiliser ce préréglage pour collecter des images.';
-$string['pluginname'] = 'Galerie d\'images';
-$string['privacy:metadata'] = 'Le plugin Galerie d\'images n\'enregistre aucune donnée personnelle.';
+$string['pluginname'] = 'Galerie d’images';
+$string['privacy:metadata'] = 'Le plugin Galerie d’images n’enregistre aucune donnée personnelle.';

@@ -11,8 +11,8 @@ class com_wiris_quizzes_wrap_ConfigurationWrap implements com_wiris_quizzes_api_
 			$this->wrapper->start();
 			$this->config->set($key, $value);
 			$this->wrapper->stop();
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -26,8 +26,8 @@ class com_wiris_quizzes_wrap_ConfigurationWrap implements com_wiris_quizzes_api_
 			$r = $this->config->get($key);
 			$this->wrapper->stop();
 			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+		}catch(Exception $Â»e) {
+			$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 			$e = $_ex_;
 			{
 				$this->wrapper->stop();
@@ -40,12 +40,12 @@ class com_wiris_quizzes_wrap_ConfigurationWrap implements com_wiris_quizzes_api_
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
 	function __toString() { return 'com.wiris.quizzes.wrap.ConfigurationWrap'; }
 }

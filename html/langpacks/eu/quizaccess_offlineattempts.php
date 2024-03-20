@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowofflineattempts'] = 'Baimendu galdetegia lineaz-kanpo mobile aplikazioa erabiliz erantzuten saiatzea';
 $string['allowofflineattempts_help'] = 'Gaituz gero, mobile aplikazioaren erabiltzaile batek galdetegia jaitsi eta lineaz kanpo erantzuteko aukera izango du.
 
-Oharra: Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, edo beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu.';
+Oharra: Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu edo nabigazio sekuentziala erabiltzen badu.';
 $string['confirmdatasaved'] = 'Baieztatzen dut ez dudala gorde gabeko lanik gailu mugikorrean.';
 $string['mobileapp'] = 'Aplikazio mugikorra';
-$string['offlineattemptserror'] = 'Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, edo beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu.';
+$string['offlineattemptserror'] = 'Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu edo nabigazio sekuentziala erabiltzen badu.';
 $string['offlinedatamessage'] = 'Saiakera honetan gailu mugikor batetik lanean aritu zara. Datuak gunean orain dela {$a} gorde ziren azkenekoz.';
 $string['pleaseconfirm'] = 'Mesedez aztertu eta berretsi ezazu ez duzula gorde gabeko inolako lanik.';
 $string['pluginname'] = 'Lineaz kanpoko saiakerentzako sarbide-araua';

@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['areafiles:view'] = 'Consulter un dépôt fichiers intégrés';
 $string['configplugin'] = 'Configuration du dépôt Fichiers intégrés';
 $string['pluginname'] = 'Fichiers intégrés';
-$string['pluginname_help'] = 'Les fichiers intégrés dans l\'éditeur de texte actuel';
-$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers intégrés n\'enregistre et ne transmet aucune donnée personnelle.';
+$string['pluginname_help'] = 'Les fichiers intégrés dans l’éditeur de texte actuel';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers intégrés n’enregistre et ne transmet aucune donnée personnelle.';

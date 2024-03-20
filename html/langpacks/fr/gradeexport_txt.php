@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Notes exportées en format TXT';
 $string['pluginname'] = 'Fichier texte';
-$string['privacy:metadata'] = 'Le plugin d\'exportation de notes Fichier texte n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin d’exportation de notes Fichier texte n’enregistre aucune donnée personnelle.';
 $string['timeexported'] = 'Dernier téléchargement depuis ce cours';
-$string['txt:publish'] = 'Publier l\'exportation des notes au format texte';
+$string['txt:publish'] = 'Publier l’exportation des notes au format texte';
 $string['txt:view'] = 'Exporter les notes au format texte';

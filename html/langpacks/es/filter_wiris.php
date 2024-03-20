@@ -94,6 +94,7 @@ $string['rendertype_help'] = 'Especifica cómo renderizar las fórmulas<br>- PHP
 $string['securitysettings'] = 'Ajustes de seguridad';
 $string['securitysettings_text'] = '&nbsp;';
 $string['tinymce'] = 'TinyMCE';
+$string['tinymceincompatibility'] = 'MathType para TinyMCE (obsoleto) no está soportado en Moodle 4.2 o superior. Debe desinstalar el plugin localizado en "./lib/editor/tinymce/plugins/tiny_mce_wiris" e instalar el plugin MathType para TinyMCE 6. Puede <a href="https://moodle.org/plugins/tiny_wiris">instalarlo aquí';
 $string['title'] = 'Página de prueba de filtro MathType';
 $string['version'] = 'versión';
 $string['versionsdontmatch'] = 'las versiones no coinciden';

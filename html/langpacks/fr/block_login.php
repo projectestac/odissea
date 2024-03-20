@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Ajouter un bloc connexion';
 $string['pluginname'] = 'Connexion';
-$string['privacy:metadata'] = 'Le bloc Connexion fournit un moyen de se connecter et n\'enregistre aucune donnée.';
+$string['privacy:metadata'] = 'Le bloc Connexion fournit un moyen de se connecter et n’enregistre aucune donnée.';

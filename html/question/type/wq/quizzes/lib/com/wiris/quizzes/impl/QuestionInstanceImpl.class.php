@@ -341,7 +341,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$this->userData->randomSeed = $seed;
 	}
 	public function parseTextBoolean($text) {
-		$trues = new _hx_array(array("true", "cierto", "cert", "tÃƒÂµene", "ziur", "vrai", "wahr", "vero", "waar", "verdadeiro", "certo"));
+		$trues = new _hx_array(array("true", "cierto", "cert", "t" . com_wiris_quizzes_impl_QuestionInstanceImpl_1($this, $text) . "ene", "ziur", "vrai", "wahr", "vero", "waar", "verdadeiro", "certo"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $trues->length;
@@ -680,8 +680,8 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 							$n = $m;
 						}
 						unset($m);
-					}catch(Exception $»e) {
-						$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+					}catch(Exception $Â»e) {
+						$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 						$e = $_ex_;
 						{
 						}
@@ -747,7 +747,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$i = 0;
 			$sb = new StringBuf();
 			while($i < $l && $j < $n) {
-				$c = com_wiris_quizzes_impl_QuestionInstanceImpl_1($this, $content, $d, $i, $j, $l, $n, $s, $sb);
+				$c = com_wiris_quizzes_impl_QuestionInstanceImpl_2($this, $content, $d, $i, $j, $l, $n, $s, $sb);
 				$digit = $this->isNumberPart($c);
 				if($digit) {
 					$sb->add($c);
@@ -757,8 +757,8 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$t = 0.0;
 					try {
 						$t = Std::parseFloat($sb->b);
-					}catch(Exception $»e) {
-						$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+					}catch(Exception $Â»e) {
+						$_ex_ = ($Â»e instanceof HException) ? $Â»e->e : $Â»e;
 						$e = $_ex_;
 						{
 						}
@@ -896,7 +896,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$_g1 = 0; $_g = $distribution->length - 1;
 					while($_g1 < $_g) {
 						$i = $_g1++;
-						$grade += $distribution->»a[$i] * $this->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $i, $q);
+						$grade += $distribution->Â»a[$i] * $this->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $i, $q);
 						unset($i);
 					}
 				}
@@ -1298,6 +1298,19 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 	}
+	public function expandVariablesTextEval($text) {
+		$h = new com_wiris_quizzes_impl_HTMLTools();
+		$h->setPlotterLoadingSrc(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getResourceUrl("plotter_loading.png"));
+		$h->setProxyUrl(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL));
+		if($this->variables === null || $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT_EVAL) === null) {
+			return $this->expandVariablesText($text);
+		} else {
+			$newvars = new Hash();
+			$this->addAllHashElements($this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT), $newvars);
+			$this->addAllHashElements($this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT_EVAL), $newvars);
+			return $h->expandVariablesText($text, $newvars);
+		}
+	}
 	public function expandVariablesText($text) {
 		if($text === null) {
 			return null;
@@ -1492,14 +1505,14 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);
-		else if(isset($this->»dynamics[$m]) && is_callable($this->»dynamics[$m]))
-			return call_user_func_array($this->»dynamics[$m], $a);
+		else if(isset($this->Â»dynamics[$m]) && is_callable($this->Â»dynamics[$m]))
+			return call_user_func_array($this->Â»dynamics[$m], $a);
 		else if('toString' == $m)
 			return $this->__toString();
 		else
-			throw new HException('Unable to call «'.$m.'»');
+			throw new HException('Unable to call Â«'.$m.'Â»');
 	}
-	static function __meta__() { $»args = func_get_args(); return call_user_func_array(self::$__meta__, $»args); }
+	static function __meta__() { $Â»args = func_get_args(); return call_user_func_array(self::$__meta__, $Â»args); }
 	static $__meta__;
 	static $tagName = "questionInstance";
 	static $base64;
@@ -1508,14 +1521,21 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	function __toString() { return 'com.wiris.quizzes.impl.QuestionInstanceImpl'; }
 }
 com_wiris_quizzes_impl_QuestionInstanceImpl::$__meta__ = _hx_anonymous(array("fields" => _hx_anonymous(array("getCompoundAnswerGrade" => _hx_anonymous(array("Deprecated" => null)), "getAnswerGrade" => _hx_anonymous(array("Deprecated" => null)), "getMatchingCorrectAnswer" => _hx_anonymous(array("Deprecated" => null)), "isAnswerMatching" => _hx_anonymous(array("Deprecated" => null))))));
-function com_wiris_quizzes_impl_QuestionInstanceImpl_0(&$»this) {
-	if($»this->userData->answers !== null) {
-		return $»this->userData->answers->length;
+function com_wiris_quizzes_impl_QuestionInstanceImpl_0(&$Â»this) {
+	if($Â»this->userData->answers !== null) {
+		return $Â»this->userData->answers->length;
 	} else {
 		return 0;
 	}
 }
-function com_wiris_quizzes_impl_QuestionInstanceImpl_1(&$»this, &$content, &$d, &$i, &$j, &$l, &$n, &$s, &$sb) {
+function com_wiris_quizzes_impl_QuestionInstanceImpl_1(&$Â»this, &$text) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(245);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_QuestionInstanceImpl_2(&$Â»this, &$content, &$d, &$i, &$j, &$l, &$n, &$s, &$sb) {
 	{
 		$s1 = new haxe_Utf8(null);
 		$s1->addChar(haxe_Utf8::charCodeAt($s, $i));

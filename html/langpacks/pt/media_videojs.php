@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['audiocssclass'] = 'Classe CSS para áudio';
 $string['audioextensions'] = 'Extensões de ficheiros de áudio';
-$string['configaudiocssclass'] = 'Uma classe CSS que será adicionada ao elemento <audio>.';
-$string['configaudioextensions'] = 'Uma lista de extensões de ficheiros de áudio suportadas, separados por vírgulas. O VideoJS tentará usar o leitor de vídeo nativo do navegador quando estiver disponível ou a funcionalidade VideoJS nativa.';
+$string['configaudiocssclass'] = 'Uma classe CSS que será adicionada ao elemento &lt;audio&gt;.';
+$string['configaudioextensions'] = 'Uma lista de extensões de ficheiros de áudio suportadas, separados por vírgulas. O VideoJS tentará usar o leitor de vídeo nativo do navegador, quando estiver disponível, ou a funcionalidade nativa VideoJS.';
 $string['configlimitsize'] = 'Se ativar esta opção, e se a largura e altura não forem especificadas, o vídeo será exibido com a largura e a altura predefinidas. Caso contrário, irá esticar até à largura máxima possível.';
 $string['configrtmp'] = 'Se ativar esta opção, as hiperligações que começam com rtmp:// serão manipulados pelo módulo, independentemente se a extensão estiver ativada, ou não, na configuração das extensões do ficheiro de vídeo (videoextensions). O fallback do Flash deve estar ativado para que o RTMP funcione.';
 $string['configuseflash'] = 'Utilizar o leitor de Flash se o formato de vídeo não for suportado nativamente pelo navegador e/ou nativamente pelo leitor VideoJS. Se ativar esta opção, o VideoJS será usado para qualquer extensão de ficheiro da lista acima sem verificação do navegador. Tenha em atenção que o Flash não está disponível nos navegadores de dispositivos móveis e é desaconselhado em muitos computadores.';

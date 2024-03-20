@@ -47,5 +47,7 @@ $string['privacy:metadata'] = 'O complemento de tipo de pregunta coincidente per
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';
 $string['privacy:preference:penalty'] = 'A penalización por cada intento incorrecto cando se executan preguntas mediante o comportamento «Interactivo con intentos múltiples» ou «Modo adaptativo».';
 $string['privacy:preference:shuffleanswers'] = 'Indica se as respostas deben ser baralladas automaticamente.';
+$string['regradeissuenumchoiceschanged'] = 'O número de opcións cambiou.';
+$string['regradeissuenumstemschanged'] = 'O número de subpreguntas cambiou.';
 $string['shuffle'] = 'Barallar preguntas';
 $string['shuffle_help'] = 'De estar activado, a orde das preguntas barállanse ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade. Nunha pregunta coincidente, só as preguntas se ven afectadas por este parámetro. As opcións de resposta barallaranse sempre.';

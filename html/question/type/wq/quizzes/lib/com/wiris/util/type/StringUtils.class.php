@@ -115,5 +115,52 @@ class com_wiris_util_type_StringUtils {
 		}
 		return $count;
 	}
+	static function splitOnGreek($text) {
+		$length = haxe_Utf8::length($text);
+		if($length === 0) {
+			return null;
+		}
+		$runs = null;
+		$runStartIndex = 0;
+		$currentIndex = 0;
+		$currentGreekRun = true;
+		$it = com_wiris_system_Utf8::getIterator($text);
+		while($it->hasNext()) {
+			$codepoint = $it->next();
+			$isGreek = com_wiris_util_xml_WCharacterBase::isGreek($codepoint);
+			if($isGreek && !$currentGreekRun) {
+				if($runs === null) {
+					$runs = new _hx_array(array());
+				}
+				$runText = haxe_Utf8::sub($text, $runStartIndex, $currentIndex - $runStartIndex);
+				$runs->push($runText);
+				unset($runText);
+			}
+			if($isGreek) {
+				if($runs === null) {
+					$runs = new _hx_array(array());
+				}
+				$runs->push(com_wiris_util_type_StringUtils_0($codepoint, $currentGreekRun, $currentIndex, $isGreek, $it, $length, $runStartIndex, $runs, $text));
+			}
+			if($isGreek !== $currentGreekRun) {
+				$runStartIndex = $currentIndex;
+				$currentGreekRun = $isGreek;
+			}
+			$currentIndex += 1;
+			unset($isGreek,$codepoint);
+		}
+		if($runs !== null && !$currentGreekRun) {
+			$runText = haxe_Utf8::sub($text, $runStartIndex, $currentIndex - $runStartIndex);
+			$runs->push($runText);
+		}
+		return $runs;
+	}
 	function __toString() { return 'com.wiris.util.type.StringUtils'; }
+}
+function com_wiris_util_type_StringUtils_0(&$codepoint, &$currentGreekRun, &$currentIndex, &$isGreek, &$it, &$length, &$runStartIndex, &$runs, &$text) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar($codepoint);
+		return $s->toString();
+	}
 }

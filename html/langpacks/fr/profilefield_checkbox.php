@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Case à cocher';
 $string['privacy:metadata:profilefield_checkbox:data'] = 'Les données du champ de profil utilisateur Case à cocher';
 $string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Le format des données du champ de profil utilisateur Case à cocher';
-$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'L\'identifiant du champ de profil';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'L’identifiant du champ de profil';
 $string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Informations de profil additionnelles';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'L\'identifiant de l\'utilisateur dont les données sont enregistrées par le champ de profil utilisateur Case à cocher';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'L’identifiant de l’utilisateur dont les données sont enregistrées par le champ de profil utilisateur Case à cocher';

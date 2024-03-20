@@ -443,7 +443,8 @@ $string['courserequestdetails'] = 'Detalles del curso que solicita';
 $string['courserequestfailed'] = 'Por alguna razón desconocida, su solicitud de curso no ha podido guardarse';
 $string['courserequestintro'] = 'Utilice este formulario para solcitar la creación de un curso.<br />Suministre toda la información posible para facilitar<br />a los administradores la comprensión de las razones por las que solicita el curso.';
 $string['courserequestreason'] = 'Razones para solicitar el curso';
-$string['courserequestsuccess'] = 'Su solicitud de curso se ha guardado con éxito. Dentro de unos días se le notificará el resultado por correo electrónico.';
+$string['courserequestroleerror'] = 'El rol de creador en la configuración de nuevos cursos no es válido. Por favor, consulte <a href="{$a}">políticas de usuario</a>.';
+$string['courserequestsuccess'] = 'Su solicitud de curso se ha guardado con éxito.';
 $string['courserequestsupport'] = 'Información de apoyo para ayudar al administrador a evaluar esta solicitud';
 $string['courserequestwarning'] = 'El usuario que solicite este curso será automáticamente matriculado y se le asignará el rol de {$a}.';
 $string['courserestore'] = 'Restaurar curso';
@@ -883,7 +884,7 @@ $string['eventuserinfofieldupdated'] = 'Campo de perfil de usuario actualizado';
 $string['eventuserlistviewed'] = 'Lista de usuarios vista';
 $string['eventuserloggedout'] = 'Usuario desconectado';
 $string['eventuserpasswordpolicyfailed'] = 'Fallo de contraseña de usuario por políticas de contraseña';
-$string['eventuserpasswordupdated'] = 'Contraseña usuario acutalizada';
+$string['eventuserpasswordupdated'] = 'Contraseña de usuario actualizada';
 $string['eventuserprofileviewed'] = 'Perfil de usuario visto';
 $string['eventuserupdated'] = 'Usuario actualizado';
 $string['everybody'] = 'Todos';
@@ -993,21 +994,20 @@ $string['general'] = 'General';
 $string['geolocation'] = 'latitud - longitud';
 $string['gettheselogs'] = 'Conseguir estos registros';
 $string['go'] = 'Ir';
-$string['gpl'] = 'Copyright (C) 1999 en adelante, Martin Dougiamas (http://moodle.com)
+$string['gpl'] = 'Copyright (C) 1999 en adelante, Martin Dougiamas (https://moodle.com)
 
-Este programa es software libre; usted puede redistribuirlo y /o modificarlo bajo los términos de la GNU (General Public License) publicada por The Free Software Foundation; incluso de la versión 2 de la Licencia, o (a su elección) alguna posterior.
+Este programa es software libre; usted puede redistribuirlo y /o modificarlo bajo los términos de la GNU (General Public License) publicada por The Free Software Foundation; tanto la versión 2 de la Licencia, o (a su elección) alguna posterior.
 
 Este programa se distribuye con la esperanza de que resulte útil, pero SIN GARANTÍA ALGUNA; incluso sin la garantía implícita de DISTRIBUCIÓN MERCANTIL o AJUSTE A UN PROPÓSITO PARTICULAR.
 
-Para más detalles, vea la página de información de Licencia de Moodle: http://docs.moodle.org/dev/License';
-$string['gpl3'] = 'Copyright (C) 1999 en adelante, Martin Dougiamas (http://moodle.com)
+Para más detalles, vea la página de información de Licencia de Moodle: https://moodledev.io/general/license';
+$string['gpl3'] = 'Copyright (C) 1999 en adelante, Martin Dougiamas (https://moodle.com)
 
-Este programa es software libre: usted puede redistribuirlo y
-/o modificarlo bajo los términos de la GNU (General Public License) publicada por la Fundación para el Software Libre, ya sea la versión 3 de dicha Licencia, o (a su elección) cualquier versión posterior.
+Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU (General Public License) publicada por la Fundación para el Software Libre, ya sea la versión 3 de dicha Licencia, o (a su elección) cualquier versión posterior.
 
 Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA; sin la garantía implícita de COMERCIALIZACIÓN o IDONEIDAD PARA UN PROPÓSITO PARTICULAR.
 
-Vea la página de información de Licencia de Moodle para más detalles: http://docs.moodle.org/en/License';
+Vea la página de información de Licencia de Moodle para más detalles: https://moodledev.io/general/license';
 $string['gpllicense'] = 'Licencia GPL';
 $string['grade'] = 'Calificación';
 $string['gradenoun'] = 'Calificación';
@@ -2340,7 +2340,7 @@ $string['weekhide'] = 'Ocultar esta semana a {$a}';
 $string['weeklyoutline'] = 'Diagrama semanal';
 $string['weeks'] = 'semanas';
 $string['weekshow'] = 'Mostrar esta semana a {$a}';
-$string['welcomeback'] = '¡Bienvenido/a de nuevo, {$a->firstname}! 👋';
+$string['welcomeback'] = '¡Hola, {$a->firstname}! 👋';
 $string['welcometocourse'] = 'Bienvenido/a a {$a}';
 $string['welcometocoursetext'] = 'Bienvenido/a a {$a->coursename}
 

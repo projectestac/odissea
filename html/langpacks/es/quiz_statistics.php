@@ -65,6 +65,9 @@ $string['firstattempts'] = 'primeros intentos';
 $string['firstattemptsavg'] = 'Promedio de los primeros intentos';
 $string['firstattemptscount'] = 'Número de primeros intentos completos calificados';
 $string['frequency'] = 'Frecuencia';
+$string['getstatslockprogress'] = 'Esperando tarea en progreso. Por favor, espere o vuelva a intentarlo más tarde.';
+$string['getstatslocktimeout'] = 'Tiempo de espera para bloqueo de cálculo de estadísticas';
+$string['getstatslocktimeoutdesc'] = 'Cuántos segundos a esperar para bloquear cuando se intenta realizar un cálculo de estadísticas de un cuestionario. Este ajuste primariamente existe para pruebas, no lo modifique salvo que sepa lo que está haciendo.';
 $string['highestattempts'] = 'intentos con mejores calificaciones';
 $string['highestattemptsavg'] = 'Calificación media de los mejores intentos';
 $string['intended_weight'] = 'Ponderación deseada';
@@ -85,6 +88,7 @@ Nuestra ecuación para la ponderación efectiva de la pregunta no puede calcular
 
 Si edita un cuestionario y les pone a estas preguntas con covarianza negativa una calificación máxima de cero, entonces  la ponderación efectiva de estas preguntas será cero y la ponderación efectiva real de las otras preguntas será como se está calculando ahora.';
 $string['nogradedattempts'] = 'No se han hecho intentos de resolver este cuestionario; o bien, todos los intentos tienen preguntas que necesitan calificación manual.';
+$string['nostats'] = 'No se pudo completar el cálculo de estadísticas. Puede que haya un cálculo muy largo en progreso. Por favor, inténtelo más tarde.';
 $string['nostudentsingroup'] = 'Aún no hay estudiantes en este grupo';
 $string['optiongrade'] = 'Crédito parcial';
 $string['partofquestion'] = 'Parte de la pregunta';

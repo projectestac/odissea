@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['Error'] = 'Error';
-$string['Info'] = 'Información';
-$string['Warning'] = 'Advertencia';
 $string['absolutedeadline'] = 'Fin del registro';
 $string['absolutedeadline_help'] = 'Active esto para definir el tiempo después del cual ya no serán posibles más acciones del estudiante.';
 $string['actionlink_delete'] = 'eliminar';

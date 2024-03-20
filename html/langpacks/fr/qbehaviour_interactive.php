@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactif avec essais multiples';
-$string['privacy:metadata'] = 'Le plugin de comportement de question Interactif avec essais multiples n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Interactif avec essais multiples n’enregistre aucune donnée personnelle.';
 $string['triesremaining'] = 'Essais restants : {$a}';
 $string['tryagain'] = 'Essayez encore';
