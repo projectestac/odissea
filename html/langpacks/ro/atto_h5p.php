@@ -36,6 +36,6 @@ $string['h5poptions'] = 'Opțiuni H5P';
 $string['h5purl'] = 'URL H5P';
 $string['instructions'] = 'Puteți insera conținut H5P <strong> fie </strong> introducând o adresă URL <strong> fie </strong> încărcând un fișier H5P.';
 $string['invalidh5purl'] = 'URL-ul nu este valid';
-$string['noh5pcontent'] = 'Nu există conținut H5P adăugat';
+$string['noh5pcontent'] = 'Fără conținut H5P adăugat';
 $string['pluginname'] = 'Inserați H5P';
 $string['privacy:metadata'] = 'Plugin-ul atto_h5p nu stochează date personale.';

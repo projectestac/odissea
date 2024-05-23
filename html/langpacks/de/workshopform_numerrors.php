@@ -41,5 +41,5 @@ $string['grademapping'] = 'Tabelle maximale Punkte';
 $string['maperror'] = 'Gewichtete Anzahl der Ablehnungen ist gleich oder kleiner als ';
 $string['mapgrade'] = 'max. Punkte für Einreichung';
 $string['pluginname'] = 'Aussagen zustimmen oder ablehnen';
-$string['privacy:export:metadata:map'] = 'Wenn die gewichtete Anzahl der Fehler den Wert {$a->nonegative} erreicht ist die Note {$a->grade}  Prozent';
+$string['privacy:export:metadata:map'] = 'Wenn die gewichtete Anzahl der Fehler den Wert {$a->nonegative} erreicht ist die Bewertung {$a->grade}  Prozent';
 $string['privacy:metadata'] = 'Das Plugin für Anzahl der Fehler speichert keine persönlichen Daten. Die aktuellen Daten, wie das Formular ausgefüllt wurde, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und an die exportierten Aufgaben angehängt.';

@@ -399,7 +399,7 @@ $string['tiny:the_url_you_entered_seems_to_be_an_email_address._do_you_want_to_a
 $string['tiny:the_url_you_entered_seems_to_be_an_external_link._do_you_want_to_add_the_required_ht1'] = 'O URL que inseriu parece ser um endereço externo. Pretende adicionar o prefixo obrigatório https://?';
 $string['tiny:the_url_you_entered_seems_to_be_an_external_link._do_you_want_to_add_the_required_htt'] = 'O URL que inseriu parece ser um endereço externo. Pretende adicionar o prefixo obrigatório http://?';
 $string['tiny:title'] = 'Título';
-$string['tiny:to_open_the_popup_press_shiftenter'] = 'Para abrir o popup, pressione Shift+Enter';
+$string['tiny:to_open_the_popup_press_shiftenter'] = 'Para abrir o pop-up, pressione Shift+Enter';
 $string['tiny:tools'] = 'Ferramentas';
 $string['tiny:top'] = 'Superior';
 $string['tiny:travel_and_places'] = 'Viagens e Lugares';

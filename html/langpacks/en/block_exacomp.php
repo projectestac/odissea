@@ -244,6 +244,7 @@ $string['exacomp:admin'] = 'overview of administrator actions in a course';
 $string['exacomp:assignstudents'] = 'Assign external trainers';
 $string['exacomp:deleteexamples'] = 'delete examples';
 $string['exacomp:editingteacher'] = 'Editing teacher';
+$string['exacomp:getfullcompetencegridforprofile'] = 'for WebService block_exacomp_get_fullcompetence_grid_for_profile';
 $string['exacomp:myaddinstance'] = 'Add a Exabis Competence Grid block to my moodle';
 $string['exacomp:student'] = 'overview of student actions in a course';
 $string['exacomp:teacher'] = 'overview of trainer actions in a course';

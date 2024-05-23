@@ -30,4 +30,4 @@ $string['displaycategories_help'] = 'Afișați categoria de cursuri pe elementel
 $string['nocourses'] = 'Nu există cursuri importante';
 $string['pluginname'] = 'Cursuri importante';
 $string['privacy:metadata'] = 'Block Cursuri importante nu stochează date personale.';
-$string['starredcourses:myaddinstance'] = 'Adaugă un nou block Cursuri importante';
+$string['starredcourses:myaddinstance'] = 'Adaugă un nou bloc Cursuri importante';

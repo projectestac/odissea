@@ -62,6 +62,7 @@ $string['newformsinqueue'] = '{$a} grille(s) de réponses est/sont en attente d�
 $string['pluginname'] = 'Import des évaluations de test hors-ligne';
 $string['privacy:metadata'] = 'Ce plugin n’enregistre aucune donnée personnelle.';
 $string['processingformsinqueue'] = '{$a} grille(s) de réponses est/sont en traitement';
+$string['scanerrorlistnumber'] = 'La listnumber dépasse la portée. Veuillez vérifier les documents numérisés pour des erreurs de barre de code concernant le code listnumber (coin inférieur droit) et les numériser à plus haute résolution au besoin !';
 $string['showpage'] = 'Afficher';
 $string['username'] = 'Nom d’utilisateur';
 $string['waitingforanalysis'] = 'En attente d’analyse';

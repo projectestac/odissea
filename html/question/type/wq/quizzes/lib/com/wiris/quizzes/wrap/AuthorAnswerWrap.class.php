@@ -169,6 +169,21 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 			}
 		}
 	}
+	public function getValueAsMathML() {
+		try {
+			$this->wrapper->start();
+			$r = $this->authorAnswer->getValueAsMathML();
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getFilterableValue() {
 		try {
 			$this->wrapper->start();

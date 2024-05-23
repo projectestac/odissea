@@ -103,7 +103,8 @@ $string['offline_session_ref_course'] = 'Curso de Referencia';
 $string['offline_session_ref_course_help'] = 'Seleccione el curso para el que se hizo este trabajo fuera de línea o el curso que cubre el tema de trabajo';
 $string['offline_session_saved'] = 'Nueva sesión fuera de línea grabada';
 $string['offline_session_start'] = 'Empezar';
-$string['offline_session_start_help'] = 'Elegir las fechas de principio y fin  &amp; Hora de la sesión de trabajo fuera de línea que desea anotar.<br /> TLa sesión fuera de línea no puede traslaparse con ninguna sesión previamente grabada, ni en línea ni fuera de línea, ni con la sesión en línea actual.';
+$string['offline_session_start_help'] = 'Elegir las fechas de principio y fin &amp; Hora de la sesión de trabajo fuera de línea que desea anotar.<br />
+La sesión fuera de línea no puede solaparse con ninguna sesión previamente grabada, ni en línea ni fuera de línea, ni con la sesión en línea actual.';
 $string['offline_sessions_certification'] = 'Sesiones de trabajo fuera de línea';
 $string['offline_sessions_certification_help'] = 'Les permite a los usuarios insertar sesiones de trabajo fuera de línea.<br /> Esto es una forma de <i>Auto-Certificación</i> del trabajo realizado.<br /> Esto puede ser útil si la "burocracia" requiere que se mantengan registros de todas las actividades de los estudiantes.<br /> Solamente los usuarios reales pueden añadir sesiones fuera de línea: <i>Los que se identificaron como...</i> administradores ¡no pueden hacerlo!';
 $string['offline_sessions_total_duration'] = 'Tiempo total fuera de línea';

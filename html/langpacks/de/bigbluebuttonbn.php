@@ -224,7 +224,8 @@ $string['config_waitformoderator_ping_interval_description'] = 'Wie häufig soll
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton verwendet config.php mit einer globalen Variable, die veraltet ist. Bearbeiten Sie bitte die Datei, da die Variable in künftigen Versionen nicht unterstützt wird.';
 $string['config_warning_curl_not_installed'] = 'Die Funktion erfordert die PHP-Extension CURL, die installiert und aktiviert sein muss. Die Einstellungen stehen nur zur Verfügung, wenn diese Voraussetzung erfüllt ist.';
 $string['config_welcome_default'] = 'Begrüßungstext';
-$string['config_welcome_default_description'] = 'Der standardmäßige Begrüßungstext wird angezeigt, wenn Teilnehmer/innen das Meeting betreten. Wenn das Feld leer ist, wird eine Mitteilung vom BigBlueButton-Server angezeigt.';
+$string['config_welcome_default_description'] = 'Der standardmäßige Begrüßungstext wird angezeigt, wenn Teilnehmer/innen das Meeting betreten. Wenn das Feld leer ist, wird der Text
+mod_bigbluebuttonbn/mod_form_field_welcome_default aus dem Moodle-Sprachpaket genutzt.';
 $string['config_welcome_editable'] = 'Begrüßungstext bearbeitbar';
 $string['config_welcome_editable_description'] = 'Der standardmäßige Begrüßungstext kann geändert werden, wenn diese Aktivität angelegt oder bearbeitet wird.';
 $string['dpainfonotsigned'] = 'Bevor Sie dieses Plugin aktivieren, müssen Sie bestätigen, dass Sie die <a href="{$a}">Datenverarbeitungsvereinbarung von Blindside Networks</a> gelesen und akzeptiert haben.';

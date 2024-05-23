@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Permiteți clasele adiționale CSS';
-$string['configallowadditionalcssclasses'] = 'Adaugă o opțiune de configurare pentru exemplele block HTML care permit claselor CSS suplimentare să fie setate.';
+$string['configallowadditionalcssclasses'] = 'Adaugă o opțiune de configurare pentru exemplele bloc HTML care permit claselor CSS suplimentare să fie setate.';
 $string['configclasses'] = 'Clasele adiționale CSS';
 $string['configclasses_help'] = 'Scopul acestei configurații este de a ajuta la tematică, ajutând la distingerea blocurilor de text unele de altele. Orice clasă CSS introdusă aici (delimitat de spațiu) va fi atașată la clasele implicite ale blocului.';
 $string['configcontent'] = 'Conținut';
-$string['configtitle'] = 'Denumirea block-ului text';
-$string['html:addinstance'] = 'Adăugați un nou block text';
-$string['html:myaddinstance'] = 'Adăugați un nou block text în Tabloul de bord';
+$string['configtitle'] = 'Denumirea blocului text';
+$string['html:addinstance'] = 'Adăugați un nou bloc text';
+$string['html:myaddinstance'] = 'Adăugați un nou bloc text în Tabloul de bord';
 $string['newhtmlblock'] = '(bloc text nou)';
 $string['pluginname'] = 'Text';
 $string['privacy:metadata:block'] = 'Blocul Text stochează toate datele sale în subsistemul bloc.';
-$string['search:content'] = 'Conținutul block-ului text';
+$string['search:content'] = 'Conținutul blocului text';

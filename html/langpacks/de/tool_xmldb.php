@@ -138,7 +138,7 @@ $string['integerincorrectlength'] = 'Falsche Feldlänge (integer)';
 $string['key'] = 'Schlüssel';
 $string['keynameempty'] = 'Die Key Bezeichnung darf nicht leer bleiben';
 $string['keys'] = 'Schlüssel';
-$string['listreservedwords'] = 'Liste von reservierten Wörtern<br/>auf dem aktuellen Stand: <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>';
+$string['listreservedwords'] = 'Liste von reservierten Wörtern<br/>auf dem aktuellen Stand: <a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>';
 $string['load'] = 'Laden';
 $string['main_view'] = 'Hauptübersicht';
 $string['masterprimaryuniqueordernomatch'] = 'Die Felder in Ihrem Fremdschlüssel (foreign key) müssen in der gleichen Reihenfolge haben, wie in UNIQUE KEY in der Referenztabelle eingetragen sind.';

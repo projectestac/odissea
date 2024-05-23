@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_upcoming:addinstance'] = 'Adăugați un nou block evenimente următoare';
-$string['calendar_upcoming:myaddinstance'] = 'Adaugă un nou block evenimente următoare în Tabloul de bord';
+$string['calendar_upcoming:addinstance'] = 'Adăugați un nou bloc evenimente următoare';
+$string['calendar_upcoming:myaddinstance'] = 'Adaugă un nou bloc evenimente următoare în Tabloul de bord';
 $string['gotocalendar'] = 'Accesează calendarul ...';
 $string['pluginname'] = 'Evenimente următoare';
 $string['privacy:metadata'] = 'Blocul Evenimente viitoare afișează doar date calendaristice existente.';

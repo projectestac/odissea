@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['access'] = 'Sartu';
+$string['access'] = 'Sarbidea';
 $string['actions'] = 'Ekintzak';
 $string['addaudience'] = 'Gehitu \'{$a}\' publikoa';
 $string['addcolumn'] = 'Gehitu \'{$a}\' zutabea';

@@ -37,7 +37,7 @@ $string['applyto'] = 'Se aplică la';
 $string['categoryrole'] = 'Rol categorie';
 $string['contains'] = 'conține';
 $string['content'] = 'Conținut';
-$string['contentandheadings'] = 'Conținut și rubrici';
+$string['contentandheadings'] = 'Conținut și antete';
 $string['coursecategory'] = 'categorie curs';
 $string['courserole'] = 'Rol curs';
 $string['courserolelabel'] = '{$a->label} este {$a->rolename} în {$a->coursename} de la {$a->categoryname}';
@@ -50,7 +50,7 @@ $string['defaultx'] = '({$a}) implicit';
 $string['disabled'] = 'Dezactivat';
 $string['doesnotcontain'] = 'nu conține';
 $string['endswith'] = 'se termină în';
-$string['filterallwarning'] = 'Aplicarea de filtre pentru rubrici și pentru conținut poate crește foarte mult sarcina pe server. Vă rugăm sa folositi setarea "Aplică la" cu moderație. Utilizarea principală este cu filtrul multilang.';
+$string['filterallwarning'] = 'Aplicarea de filtre pentru antete și pentru conținut poate crește foarte mult sarcina pe server. Vă rugăm sa folositi setarea "Aplică la" cu moderație. Utilizarea principală este cu filtrul multilang.';
 $string['filtersettings'] = 'Setările de filtrare';
 $string['filtersettings_help'] = 'Această pagină vă permite să opriți filtre într-o anumită parte a site-ului.
 

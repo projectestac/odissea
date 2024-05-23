@@ -964,6 +964,7 @@ $string['opensslrecommended'] = 'Настоятельно рекомендует
 $string['opensslrequired'] = 'Расширение PHP OpenSSL требуется Moodle для обеспечения более надежных криптографических услуг.';
 $string['opentowebcrawlers'] = 'Открыть для Google';
 $string['optionalmaintenancemessage'] = 'Сообщение о техническом обслуживании (необязательно)';
+$string['oracledatabaseinuse'] = 'Мы меняем поддержку базы данных Oracle в Moodle LMS. Версия Moodle 4.5 будет последней версией, поддерживающей  базу данных Oracle. Дополнительную информацию можно <a href="https://moodle.org/mod/forum/discuss.php?d=456122" target="_blank">найти здесь</a>.';
 $string['order1'] = 'Первый';
 $string['order2'] = 'Второй';
 $string['order3'] = 'Третий';

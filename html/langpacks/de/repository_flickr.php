@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'API-Key';
 $string['callbackurl'] = 'Rücksprung-URL';
-$string['callbackurltext'] = '<ol><li>Besuchen Sie die Seite für <a href="http://www.flickr.com/services/api/keys/">Flickr-API-Schlüssel</a> wieder.</li>
+$string['callbackurltext'] = '<ol><li>Besuchen Sie die Seite für <a href="https://www.flickr.com/services/api/keys/">Flickr-API-Schlüssel</a> wieder.</li>
 <li>Vergewissern Sie sich, die Rücksprung-URL für diesen Flickr-Schlüssel auf <strong>{$a}</strong> zu setzen</li></ol>';
 $string['callbackwarning'] = '<ol>
-<li>Holen Sie <a href="http://www.flickr.com/services/api/keys/">Flickr API-Key und Secret</a> für dieses Moodle</li>
+<li>Holen Sie <a href="https://www.flickr.com/services/api/keys/">Flickr API-Key und Secret</a> für dieses Moodle</li>
 <li>Tragen Sie diese Daten hier ein und klicken Sie auf \'Speichern\'. Moodle erzeugt in diesem Moment eine \'Callback URL\' </li>
-<li>Bearbeiten Sie erneut die Details für den <a href="http://www.flickr.com/services/api/keys/">Flickr API Key</a> und tragen Sie die \'Callback URL\' ein</li></ol>';
+<li>Bearbeiten Sie erneut die Details für den <a href="https://www.flickr.com/services/api/keys/">Flickr API Key</a> und tragen Sie die \'Callback URL\' ein</li></ol>';
 $string['configplugin'] = 'Einstellungen für Flickr';
 $string['emailaddress'] = 'E-Mail-Adresse';
 $string['flickr:view'] = 'Bilder bei Flickr anzeigen';

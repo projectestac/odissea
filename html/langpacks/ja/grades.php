@@ -31,7 +31,7 @@ $string['addcategoryerror'] = 'カテゴリを追加できませんでした。'
 $string['addexceptionerror'] = 'userid:gradeitemの例外追加中にエラーが発生しました。';
 $string['addfeedback'] = 'フィードバックを追加する';
 $string['addgradeletter'] = '評定文字を追加する';
-$string['addidnumbers'] = 'IDナンバーを追加する';
+$string['addidnumbers'] = 'IDナンバを追加する';
 $string['additem'] = '評定項目を追加する';
 $string['additionalfeedback'] = '追加フィードバック';
 $string['addoutcome'] = 'アウトカムを追加する';
@@ -95,7 +95,7 @@ $string['allgrades'] = 'すべてのカテゴリごとの評点';
 $string['allstudents'] = 'すべての学生';
 $string['allusers'] = 'すべてのユーザ';
 $string['autosort'] = '自動並べ替え';
-$string['availableidnumbers'] = '利用可能なIDナンバー';
+$string['availableidnumbers'] = '利用可能なIDナンバ';
 $string['average'] = '平均';
 $string['averagesdecimalpoints'] = 'カラム平均の小数点以下桁数';
 $string['averagesdecimalpoints_help'] = 'この設定ではそれぞれの平均点に表示される小数位以下桁数、または全体のカテゴリ設定または評定項目で全体の小数位設定を使用 (継承) するかどうか決定します。';
@@ -109,7 +109,7 @@ $string['bonuspoints'] = 'ボーナスポイント';
 $string['bulkcheckboxes'] = 'バルクチェックボックス';
 $string['calculatedgrade'] = '計算済み評定';
 $string['calculation'] = '計算';
-$string['calculation_help'] = '評定計算は評定の決定に使用される公式です。公式は等号 (=) で始まり、max、minおよびsumのような一般的な数学演算子が使用されます。必要であれば、2重角括弧に入れたIDナンバーを使用して他の評定項目を計算に含むことができます。';
+$string['calculation_help'] = '評定計算は評定の決定に使用される公式です。公式は等号 (=) で始まり、max、minおよびsumのような一般的な数学演算子が使用されます。必要であれば、2重角括弧に入れたIDナンバを使用して他の評定項目を計算に含むことができます。';
 $string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = '計算を追加する';
 $string['calculationedit'] = '計算を編集する';
@@ -406,7 +406,7 @@ $string['highgradeascending'] = '高評点の昇順で並べ替える';
 $string['highgradedescending'] = '高評点の降順で並べ替える';
 $string['highgradeletter'] = '上限';
 $string['identifier'] = 'ユーザ識別方法:';
-$string['idnumbers'] = 'IDナンバー';
+$string['idnumbers'] = 'IDナンバ';
 $string['ignore'] = '無視';
 $string['import'] = 'インポート';
 $string['importas'] = 'インポート形式:';
@@ -416,7 +416,7 @@ $string['importcsv_help'] = '以下のフォーマットのCSVファイルを使
 * ファイルのそれぞれの行には1レコードを含めてださい。
 * それぞれのレコードは選択されたセパレータで区切られた一連のデータです。
 * 先頭レコードにはファイルの残りのフォーマットを定義するフィールド名一覧を含みます。
-* ユーザ識別データを含むフィールド名 (ユーザ名、IDナンバーまたはメールアドレス) は必須です。
+* ユーザ識別データを含むフィールド名 (ユーザ名、IDナンバまたはメールアドレス) は必須です。
 
 最初に評定をエクスポートして正しいフォーマットのファイルを取得できます。そのファイルを編集してCSVファイルとして保存できます。';
 $string['importcsv_link'] = 'grade/import/csv/index';
@@ -424,7 +424,7 @@ $string['importcustom'] = 'カスタムアウトカムとしてインポート�
 $string['importdata'] = 'データ';
 $string['importdata_help'] = '評定はOpenDocumentまたはExcelスプレッドシートから直接貼り付けることができます。
 
-* 少なくとも1つの列にはユーザ名、メールアドレス、IDナンバー等のユーザ識別データを含む必要があります。
+* 少なくとも1つの列にはユーザ名、メールアドレス、IDナンバ等のユーザ識別データを含む必要があります。
 * その他の列には既存の活動または評定項目に応じた見出しを付ける必要があります。
 
 正しいフォーマットのスプレッドシートは最初にいくつかの評定をエクスポートして入手できます。次にスプレッドシートを編集して成績を追加および保存できます。
@@ -570,7 +570,7 @@ $string['noexistingscales'] = '既存の尺度はありません。';
 $string['noforce'] = '強制しない';
 $string['nogradeletters'] = '評定文字が設定されていません。';
 $string['nogradesreturned'] = '評点がありません。';
-$string['noidnumber'] = 'IDナンバーなし';
+$string['noidnumber'] = 'IDナンバなし';
 $string['nolettergrade'] = '評定文字がありません:';
 $string['nomode'] = 'NA';
 $string['nonnumericweight'] = '数値ではありません:';
@@ -877,7 +877,7 @@ $string['userfields_show'] = 'ユーザフィールドを表示する';
 $string['userfields_show_help'] = 'メールアドレスのような追加ユーザフィールドを評定者レポートに表示します。表示される特定フィールドは「showuseridentity」サイト設定でコントロールされます。';
 $string['usergrade'] = '評定項目 {$a->gradeidnumber} のユーザ {$a->fullname} ({$a->useridnumber})';
 $string['userid'] = 'ユーザID';
-$string['useridnumberwarning'] = 'インポートできないため、IDナンバーのないユーザはエクスポートから除外されます。';
+$string['useridnumberwarning'] = 'インポートできないため、IDナンバのないユーザはエクスポートから除外されます。';
 $string['usermappingerror'] = 'ユーザマッピングエラー: 「 {$a->field} 」が「 {$a->value} 」のユーザを見つけることができませんでした。';
 $string['usermappingerrorcurrentgroup'] = 'ユーザは現在のグループのメンバではありません。';
 $string['usermappingerrormultipleusersfound'] = 'ユーザマッピングエラー: 「 {$a->value} 」の {$a->field} に複数のユーザが見つかりました。さらにユニークなマッピングフィールドを使用してください。';

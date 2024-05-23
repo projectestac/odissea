@@ -308,7 +308,7 @@
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_helper_text": "Defina su propia función de evaluación de la respuesta del estudiante en el panel para definir variables aleatorias y funciones.",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_name_dropdown_label": "Nombre de la función",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_define_function_button_label": "Defina una nueva función",
-		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "No evalúes los argumentos",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Sin evaluar",
 		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_helper_text": "La respuesta del estudiante no se evaluará y se pasará como una expresión de CalcMe a la función de evaluación. Esta opción es muy avanzada.",
 
 		"quizzes_studio_validation_options_numbers_title": "Números",
@@ -627,7 +627,21 @@
 		"quizzes_demo_sketch_title_menu" : "Boceto",
 		"home_getting_started_documentation_button_text" : "Documentación", 
 
-		"close_mathtype_popup" : "Cerrar MathType"
+		"close_mathtype_popup" : "Cerrar MathType",
+
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_evaluated_label": "Evaluada",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Sin evaluar",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_string_label": "Texto",
+		"quizzes_studio_validation_options_student_answer_comparison_arguments_helper_text": "Defina cómo se pasará la respuesta del estudiante como argumento a la función de calificación. Esta opción es muy avanzada.",
+
+		"quizzes_studio_import_deprecated_message_title" : "Opciones obsoletas",
+		"quizzes_studio_import_deprecated_message_text" : "La pregunta que está tratando de importar usa opciones obsoletas. Es posible que el comportamiento de la pregunta cambie ligeramente al ser importada. Por favor, compruebe que su pregunta sigue funcionando como usted espera antes de guardar los cambios.\n    Las opciones obsoletas son las siguientes:",
+
+		"quizzes_studio_equivalent_set_assertion": "Igual como lista ya no está disponible",
+		"quizzes_studio_syntax_list_assertion": "Lista ya no está disponible",
+		"quizzes_studio_text_logic_operators" : "Operadores lógicos ya no están disponibles",
+		"quizzes_studio_equivalent_unit_literal" : "Unidad literalmente equivalente ya no está disponible"
+
 	}
 }
 

@@ -41,7 +41,7 @@ $string['creativecommonscommercial'] = 'Nur Creative Commons Kommerziell';
 $string['emailaddress'] = 'E-Mail-Adresse';
 $string['flickr_public:view'] = 'Bilder von Flickr public in der Dateiauswahl nutzen';
 $string['fulltext'] = 'Ausführlicher Text';
-$string['information'] = '<div>Holen Sie einen <a href="http://www.flickr.com/services/api/keys/">Flickr API-Key</a> für Ihr Moodle.</div>';
+$string['information'] = '<div>Holen Sie einen <a href="https://www.flickr.com/services/api/keys/">Flickr API-Key</a> für Ihr Moodle.</div>';
 $string['invalidemail'] = 'Ungültige E-Mail-Adresse für Flickr';
 $string['license'] = 'Lizenz';
 $string['modification'] = 'Es soll möglich sein, die Bilder zu verändern';

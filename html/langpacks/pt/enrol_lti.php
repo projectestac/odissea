@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Adicionar à pauta';
 $string['allowframeembedding'] = 'Nota: Recomenda-se a ativação da configuração "Permitir incorporar em frames" em Administração do Site / Segurança / Segurança HTTP para que estas ferramentas sejam mostradas numa frame em vez de numa nova janela.';
 $string['authltimustbeenabled'] = 'Nota: Este módulo requer que o módulo de autenticação LTI também esteja ativo.';
 $string['cartridgeurl'] = 'URL do Cartridge';
+$string['cookiesarerequired'] = 'Os cookies estão bloqueados pelo seu navegador';
+$string['cookiesarerequiredinfo'] = 'Esta ferramenta não pode ser iniciada porque o seu navegador parece estar a bloquear cookies de terceiros.
+<br><br>
+Para usar esta ferramenta, tente alterar as configurações de cookies do seu navegador ou usar um navegador diferente.';
 $string['copiedtoclipboard'] = '{$a} copiado para a área de transferência';
 $string['copytoclipboard'] = 'Copiar para a área de transferência';
 $string['couldnotestablishproxy'] = 'Não foi possível estabelecer um proxy com o consumidor.';

@@ -25,8 +25,12 @@ class qtype_multianswerwiris_renderer extends qtype_wq_renderer {
     }
 }
 class qtype_multianswerwiris_helper_renderer extends qtype_multianswer_renderer {
-    public function subquestion(question_attempt $qa, question_display_options $options, $index,
-                                $subq) {
+    public function subquestion(
+        question_attempt $qa,
+        question_display_options $options,
+        $index,
+        $subq
+    ) {
         if ($subq->get_type_name() == 'shortanswerwiris') {
             $renderer = $this->page->get_renderer('qtype_multianswerwiris', 'wirisanswerfield');
             $text = $renderer->subquestion($qa, $options, $index, new qtype_multianswerwiris_shortanswer_helper_question($subq));
@@ -66,6 +70,7 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
         }
         $this->answers = &$this->subq->answers;
     }
+
     // Shortanswerwiris grading.
     public function get_matching_answer(array $response) {
         if (isset($response['answer']) || $response['answer'] == null) {
@@ -75,18 +80,28 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
             } else {
                 // This is called to know how to render the input field (correct,
                 // partially correct, incorrect, etc).
-                if (!$this->subq->step->is_error()) {
-                    if (!is_null($this->subq->step->get_var('_matching_answer'))) {
+
+                if (!is_null($response['answer'])) {
+                    $matchinganswer = $this->subq->step->get_var_in_answer_cache(
+                        '_matching_answer',
+                        $response['answer']
+                    );
+                    if (!is_null($matchinganswer)) {
                         return $this->subq->get_matching_answer($response);
                     }
-                    // This code is for retro-compatibility. The attempts graded
-                    // with previous versions of Wiris Quizzes don't have the
-                    // '_matching_answer' var but a '_fraction' var. We re-grade
-                    // such answers in order to have the new data and therefore
-                    // have the good rendering of correct/incorrect responses.
-                    if (!is_null($this->subq->step->get_var('_fraction'))) {
-                        return $this->subq->get_matching_answer($response);
-                    }
+                }
+
+                if (!is_null($this->subq->step->get_var('_matching_answer'))) {
+                    return $this->subq->get_matching_answer($response);
+                }
+
+                // This code is for retro-compatibility. The attempts graded
+                // with previous versions of Wiris Quizzes don't have the
+                // '_matching_answer' var but a '_fraction' var. We re-grade
+                // such answers in order to have the new data and therefore
+                // have the good rendering of correct/incorrect responses.
+                if (!is_null($this->subq->step->get_var('_fraction'))) {
+                    return $this->subq->get_matching_answer($response);
                 }
             }
         }
@@ -99,8 +114,7 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
         $correct['correct_response'] = true;
         return $correct;
     }
-    public function format_text($text, $format, $qa, $component, $filearea, $itemid, $clean = false)
-    {
+    public function format_text($text, $format, $qa, $component, $filearea, $itemid, $clean = false) {
         return $this->subq->format_text($text, $format, $qa, $component, $filearea, $itemid, $clean);
     }
 
@@ -117,12 +131,17 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
  * subquestions. Replaces the qtype_multianswer_textfield_renderer class.
  */
 class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer_subq_renderer_base {
-    public function subquestion(question_attempt $qa, question_display_options $options,
-            $index, question_graded_automatically $subq) {
+    public function subquestion(
+        question_attempt $qa,
+        question_display_options $options,
+        $index,
+        question_graded_automatically $subq
+    ) {
         $fieldprefix = 'sub' . $index . '_';
         $fieldname = $fieldprefix . 'answer';
 
         $response = $qa->get_last_qt_var($fieldname);
+
         if ($subq->qtype->name() == 'shortanswer') {
             $matchinganswer = $subq->get_matching_answer(array('answer' => $response));
         } else if ($subq->qtype->name() == 'numerical') {
@@ -205,7 +224,7 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
         $subquestionclasses = 'subquestion';
 
         $useLegacyPopup = !method_exists($this, 'get_feedback_image');
-        
+
         if ($useLegacyPopup) {
             $correctanswerrender = s($correctanswer->answer);
         } else {
@@ -219,26 +238,39 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
             }
         }
 
-        $feedbackpopup = parent::feedback_popup($subq, $matchinganswer->fraction,
-                $subq->format_text($matchinganswer->feedback, $matchinganswer->feedbackformat,
-                        $qa, 'question', 'answerfeedback', $matchinganswer->id),
-                $correctanswerrender, $options);
+        $feedbackpopup = parent::feedback_popup(
+            $subq,
+            $matchinganswer->fraction,
+            $subq->format_text(
+                $matchinganswer->feedback,
+                $matchinganswer->feedbackformat,
+                $qa,
+                'question',
+                'answerfeedback',
+                $matchinganswer->id
+            ),
+            $correctanswerrender,
+            $options
+        );
 
 
         $output = html_writer::start_tag('span', array('class' => $subquestionclasses));
-        $output .= html_writer::tag('label', get_string('answer'),
-                array('class' => 'subq accesshide', 'for' => $inputattributes['id']));
+        $output .= html_writer::tag(
+            'label',
+            get_string('answer'),
+            array('class' => 'subq accesshide', 'for' => $inputattributes['id'])
+        );
         $output .= html_writer::empty_tag('input', $inputattributes);
 
         if ($useLegacyPopup) {
-                $output .= $feedbackpopup;
+            $output .= $feedbackpopup;
         } else {
             if ($options->correctness) {
                 $feedbackimg = $this->feedback_image($matchinganswer->fraction);
-                $output .= $this->get_feedback_image($feedbackimg, $feedbackpopup);    
+                $output .= $this->get_feedback_image($feedbackimg, $feedbackpopup);
             }
         }
-        
+
         $output .= html_writer::end_tag('span');
 
         return $output;
@@ -253,14 +285,12 @@ class qtype_multianswerwiris_multichoice_inline_renderer extends qtype_multiansw
 
     private $originalsubq;
 
-    public function subquestion(question_attempt $qa, question_display_options $options, $index, question_graded_automatically $subq)
-    {
+    public function subquestion(question_attempt $qa, question_display_options $options, $index, question_graded_automatically $subq) {
         $this->originalsubq = $subq;
         return parent::subquestion($qa, $options, $index, $subq->base);
     }
 
-    protected function feedback_popup(question_graded_automatically $subq, $fraction, $feedbacktext, $rightanswer, question_display_options $options)
-    {
+    protected function feedback_popup(question_graded_automatically $subq, $fraction, $feedbacktext, $rightanswer, question_display_options $options) {
         global $CFG;
         $useLegacyPopup = $CFG->version < 2022041908 || ($CFG->version > 2022112800 && $CFG->version < 2022112803);
 
@@ -270,7 +300,7 @@ class qtype_multianswerwiris_multichoice_inline_renderer extends qtype_multiansw
             $rightanswer = $quizzes->getMathFilter()->filter($rightanswer);
         }
 
-  
+
         return parent::feedback_popup($subq, $fraction, $feedbacktext, $rightanswer, $options);
     }
 }

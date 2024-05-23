@@ -233,6 +233,7 @@ $string['repeatevent'] = 'Повторять это событие';
 $string['repeatnone'] = 'Не повторять';
 $string['repeatweeksl'] = 'Повторять еженедельно, создать всего:';
 $string['repeatweeksr'] = 'события';
+$string['requiresaction'] = '{$a} требует действия';
 $string['sat'] = 'Сб';
 $string['saturday'] = 'Суббота';
 $string['showeventtype'] = 'Показать события {$a}';

@@ -963,6 +963,7 @@ $string['opensslrecommended'] = 'OpenSSL hautazko liburutegia oso da gomendagarr
 $string['opensslrequired'] = 'PHPko OpenSSL hedapena orain beharrezkoa da Moodlen zerbitzu kriptografiko sendoagoak eskaintzeko.';
 $string['opentowebcrawlers'] = 'Ireki bilaketa-motorrei';
 $string['optionalmaintenancemessage'] = 'Mantenuari buruzko hautazko mezua';
+$string['oracledatabaseinuse'] = 'Moodle LMSaren Oracle DBko sostengua aldatzera goaz. Moodleko 4.5 bertsioa izango da Oracle datu-baseko arkitektura gisa onartuko duen azkena. Informazio gehiago  <a href="https://moodle.org/mod/forum/discuss.php?d=456122" target="_blank">hemen</a> topatu dezakezu.';
 $string['order1'] = 'Lehena';
 $string['order2'] = 'Bigarrena';
 $string['order3'] = 'Hirugarrena';

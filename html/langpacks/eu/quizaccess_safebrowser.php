@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Safe Exam Browser sarbide-araua';
+$string['pluginname'] = 'Safe Exam Browser galdetegietarako sarbide-araua';
 $string['privacy:metadata'] = 'Safe Exam Browser galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['requiresafeexambrowser'] = 'Behartu Safe Exam Browser erabiltzera';
 $string['safebrowsererror'] = 'Galdetegi honetako saiakerak soilik Safe Exam Browser erabilita egiteko prestatu da. Ezin duzu saiakera web-nabigatzaile honekin egin.';

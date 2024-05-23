@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apikey'] = 'API-Key';
 $string['contenttype'] = 'Inhaltstypen';
 $string['err_noapikey'] = 'Kein API-Key';
-$string['err_noapikey_help'] = 'Für dieses Plugin wurde kein API-Key angegeben. Sie erhalten diesen Schlüssel über <a href="http://flickr.com/services/api/keys/apply" target="_blank">flickr.com</a>.';
+$string['err_noapikey_help'] = 'Für dieses Plugin wurde kein API-Key angegeben. Sie erhalten diesen Schlüssel über <a href="https://flickr.com/services/api/keys/apply" target="_blank">flickr.com</a>.';
 $string['hidefrompublicsearches'] = 'Diese Bilder vor öffentlichen Suchen verstecken?';
 $string['isfamily'] = 'Sichtbar für die Familie';
 $string['isfriend'] = 'Sichtbar für Freunde';

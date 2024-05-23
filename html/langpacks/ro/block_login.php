@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Adăugați un nou block Logare';
+$string['login:addinstance'] = 'Adăugați un nou bloc Logare';
 $string['pluginname'] = 'Logare';
 $string['privacy:metadata'] = 'Blocul de autentificare oferă doar o modalitate de autentificare și nu stochează niciun fel de date.';

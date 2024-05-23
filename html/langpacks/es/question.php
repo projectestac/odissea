@@ -529,4 +529,4 @@ $string['wrongprefix'] = 'Prefijo de nombre formateado erróneamente {$a}.';
 $string['xoutofmax'] = '{$a->mark} sobre {$a->max}';
 $string['yougotnright'] = 'Ha seleccionado correctamente {$a->num}.';
 $string['youmustselectaqtype'] = 'Debe seleccionar un tipo de pregunta';
-$string['yourfileshoulddownload'] = 'Su archivo de exportación debería comenzar a descargarse en seguida. De no ser así, por favor <a href="{$a}">haga clic aquí</a>. Se ha cambiado el padre para solucionar el problema.';
+$string['yourfileshoulddownload'] = 'Su archivo de exportación debería comenzar a descargarse en seguida. De no ser así, por favor <a href="{$a}">haga clic aquí</a>.';

@@ -220,7 +220,7 @@ Die Einreichungen werden anhand eines von dem/der Trainer/in festgelegten Beurte
 
 Hinweis: Es müssen nicht alle Schritte aktiviert werden.
 
-Die Teilnehmer/innen erhalten in einer gegenseitigen Beurteilung zwei Bewertungen - eine Bewertung für ihre Einreichung und eine Bewertung für die Beurteilung der Einreichungen ihrer Kollegen. Beide Noten werden in den Bewertungen festgehalten.';
+Die Teilnehmer/innen erhalten in einer gegenseitigen Beurteilung zwei Bewertungen - eine Bewertung für ihre Einreichung und eine Bewertung für die Beurteilung der Einreichungen ihrer Kollegen. Beide Werte werden in den Bewertungen festgehalten.';
 $string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Gegenseitige Beurteilungen';
 $string['myassessments'] = 'Meine Beurteilungen';

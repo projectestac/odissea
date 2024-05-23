@@ -86,6 +86,8 @@ class qtype_wirisstep {
      * @throws dml_exception
      */
     public function set_var($name, $value, $subquesbool = true) {
+        $name = $this->trim_name($name);
+
         if ($subquesbool && $this->step != null) {
             $this->step->set_qt_var($name, $value);
             return;
@@ -100,11 +102,6 @@ class qtype_wirisstep {
 
         $name = $this->get_step_var_internal($name, $subquesbool);
 
-        if (strlen($name) > 32) {
-            // Database only allows keys up to length 32.
-            $name = substr($name, 0, 32);
-        }
-
         $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
         if ($gc == null) {
             $gc = new stdClass();
@@ -113,11 +110,68 @@ class qtype_wirisstep {
             $gc->value = $value;
             $DB->insert_record('question_attempt_step_data', $gc);
         } else {
-            $DB->set_field('question_attempt_step_data', 'value',
-                    $value, array('attemptstepid' => $this->step_id, 'name' => $name));
+            $DB->set_field(
+                'question_attempt_step_data',
+                'value',
+                $value,
+                array('attemptstepid' => $this->step_id, 'name' => $name)
+            );
+        }
+    }
+
+    public function set_var_in_answer_cache(string $name, string $value, string $answer) {
+        $this->put_answer_in_cache($answer);
+
+        $hash = md5($answer);
+        $this->set_var('_' . substr($hash, 0, 6) . $name, $value, true);
+    }
+
+    public function get_var_in_answer_cache(string $name, string $answer) {
+        $responsehash = md5($answer);
+
+        $data = $this->get_var('_' . substr($responsehash, 0, 6) . $name);
+
+        if (empty($data)) {
+            $data = $this->get_var($name);
         }
 
+        return $data;
     }
+
+    public function put_answer_in_cache(string $answer) {
+        if ($this->is_answer_cached($answer)) {
+            return;
+        }
+
+        $hash = md5($answer);
+        $cache = $this->get_var('_response_hash') ?? '';
+
+        $this->set_var('_response_hash', $cache ? ($cache . ',' . $hash) : $hash, true);
+    }
+
+    public function is_answer_cached(string $answer): bool {
+        $cachedresponses = $this->get_var('_response_hash') ?? '';
+        $responsehash = md5($answer);
+
+        return strpos($cachedresponses, $responsehash) !== false;
+    }
+
+    private function trim_name(string $name) {
+        while ($this->get_name_length($name) > 32) {
+            $name = substr($name, 0, -1);
+        }
+
+        return $name;
+    }
+
+    private function get_name_length(string $name) {
+        return strlen(
+            $this->step instanceof question_attempt_step_subquestion_adapter ?
+                $this->step->add_prefix($name) :
+                $name
+        );
+    }
+
     public function get_qt_data() {
         if ($this->step != null) {
             return $this->step->get_qt_data();
@@ -132,8 +186,11 @@ class qtype_wirisstep {
      * @return null
      */
     public function get_var($name, $subquesbool = true) {
+        $name = $this->trim_name($name);
+
         if ($subquesbool && $this->step != null) {
-            return $this->step->get_qt_var($name);
+            $value = $this->step->get_qt_var($name);
+            return $value;
         }
 
         if (!isset($this->step_id) || $this->step_id == 0) {
@@ -144,10 +201,6 @@ class qtype_wirisstep {
         $DB = $this->get_db();
 
         $name = $this->get_step_var_internal($name, $subquesbool);
-
-        if (strlen($name) > 32) {
-            $name = substr($name, 0, 32);
-        }
 
         $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
         if ($gc == null) {
@@ -259,8 +312,7 @@ class question_attempt_step_subquestion_adapter_wiris extends question_attempt_s
         // In Moodle 4.1 and earlier the variable $this->realstep was misspelled as $this->realqas.
         // Therefore we need to check for both possibilities. In Moodle 4.2 we use this extension class
         // because $this->realstep is protected.
-        return 
-            (isset($this->realqas) && ($this->realqas instanceof question_attempt_step_read_only)) ||
+        return (isset($this->realqas) && ($this->realqas instanceof question_attempt_step_read_only)) ||
             (isset($this->realstep) && ($this->realstep instanceof question_attempt_step_read_only));
     }
 }

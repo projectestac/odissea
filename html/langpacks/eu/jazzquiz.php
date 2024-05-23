@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['a_out_of_b_responded'] = '{$a->b}tatik {$a->a}k erantzun dute';
-$string['a_out_of_b_voted'] = '{$a->b}tatik {$a->a}k bozkatu dute';
+$string['a_out_of_b_responded'] = '{$a->b}(e)tik {$a->a}(e)k erantzun dute';
+$string['a_out_of_b_voted'] = '{$a->b}(e)tik {$a->a}(e)k bozkatu dute';
 $string['a_responses'] = '{$a} erantzun';
 $string['a_students_answered'] = '<b>{$a}</b> ikaslek gutxienez galdera bati erantzuna eman diote.';
 $string['a_students_joined_quiz'] = 'Galdetegia <b>{$a}</b> ikaslek hasi dute.';
@@ -38,12 +38,13 @@ $string['anonymous'] = 'Anonimoa';
 $string['anonymous_answers'] = 'Erantzun anonimoak (partaidetza ikus daiteke)';
 $string['anonymous_answers_info'] = 'Saio honetako erantzunak anonimoak dira, baina partaidetza erregistratzen da.';
 $string['answer'] = 'Erantzuna';
+$string['ask_teacher'] = 'Zalantzarik baldin baduzu, galdetu irakasleari.';
 $string['attempt_started'] = 'Honez gero, saiakera bat hasi duzu, egin klik behealdean irekitako saiora joateko';
 $string['attempts'] = 'Saiakerak';
 $string['attendance'] = 'Agerraldiak';
 $string['attendance_list'] = 'Agerraldi-zerrenda';
 $string['click_to_show_original_results'] = 'Egin klik hasierako emaitzak ikusteko';
-$string['click_to_show_vote_results'] = 'Click to show vote results';
+$string['click_to_show_vote_results'] = 'Egin klik bozka-emaitzak ikusteko';
 $string['closing_session'] = 'Saioa ixten...';
 $string['create_new_question'] = 'Sortu galdera berria';
 $string['default_question_time'] = 'Galdera erantzuteko lehenetsitako denbora';
@@ -70,9 +71,10 @@ $string['fullscreen'] = 'Pantaila osoa';
 $string['fully_anonymous'] = 'Guztiz anonimoa';
 $string['fully_anonymous_info'] = 'Saio honetako erantzunak eta partaidetza guztiz anonimoak izango dira.';
 $string['goto_session'] = 'Sartu irekitako saio batean';
+$string['guest_login'] = 'Ez zaude ikastaro honetan izena emanda, eta ez dago galdetegirik gonbidatuentzat zabalik une honetan.';
 $string['improvise'] = 'Inprobisatu';
 $string['instructions_for_instructor'] = '<h3>Irakurri argibideak, mesedez:</h3>
-    <p>Sarrera-eremu bat aukeratu ez denean, hainbat tekla-lasterbide.</p>
+    <p>Sarrera-eremu bat aukeratu ez denean, hainbat tekla-lasterbide daude eskuragarri.</p>
     <table>
         <tr>
                <th>Kontrol</th>
@@ -128,6 +130,15 @@ $string['instructions_for_instructor'] = '<h3>Irakurri argibideak, mesedez:</h3>
                 Jarraitu aukeratutako galdera-zerrendako hurrengo galdera.
             </td>
         </tr>
+       <tr>
+            <td>
+                <i class="fa fa-random"></i> Ausaz
+            </td>
+            <td>m</td>
+            <td>
+                Galdera bat hasiko du ausaz galdera-zerrendatik.
+            </td>
+        </tr>
         <tr>
             <td>
                 <i class="fa fa-close"></i> Amaitu
@@ -175,31 +186,32 @@ $string['instructions_for_instructor'] = '<h3>Irakurri argibideak, mesedez:</h3>
         </tr>
     </table>';
 $string['instructions_for_student'] = '<p>Itxaron irakasleak galdetegiari hasiera eman diezaion, mesedez.</p>';
-$string['instructor_sessions_going'] = 'Honez gero saioa hasita dago. Saiora sartzeko egin klik beheko botoian.o';
-$string['invalid_question_time'] = 'Galdera-denborak 0tik gorako integer bat izan behar du';
-$string['jazzquiz:addinstance'] = 'Gehitu jazzgaldetegi bat';
-$string['jazzquiz:attempt'] = 'Hasi Jazz Galdetegia';
-$string['jazzquiz:control'] = 'Kontrolatu Jazz Galdetegi bat. (Normalean irakasleentzat bakarrik)';
-$string['jazzquiz:editquestions'] = 'Editatu Jazz Galdetegi baten galderak.';
+$string['instructor_sessions_going'] = 'Honez gero saioa hasita dago. Saiora sartzeko egin klik beheko botoian';
+$string['invalid_question_time'] = 'Galdera-denborak 0tik gorako zenbaki oso bat izan behar du';
+$string['jazzquiz:addinstance'] = 'Gehitu JazzQuiz instantzia bat';
+$string['jazzquiz:attempt'] = 'Egin JazzQuiz saiakera bat';
+$string['jazzquiz:control'] = 'Kontrolatu JazzQuiz bat. (Normalean irakasleentzat bakarrik)';
+$string['jazzquiz:editquestions'] = 'Editatu JazzQuiz baten galderak.';
 $string['jazzquiz:seeresponses'] = 'Ikusi beste ikasleen erantzunak kalifikatu ahal izateko';
-$string['jazzquizsettings'] = 'Jazz Galdetegiaren ezarpen orokorrak';
-$string['join_quiz'] = 'Sartu Galdetegira';
+$string['jazzquizsettings'] = 'JazzQuizen ezarpen orokorrak';
+$string['join_quiz'] = 'Sartu galdetegira';
 $string['join_quiz_instructions'] = 'Egin klik behealdean galdetegira sartzeko';
 $string['jump'] = 'Jauzi';
 $string['loading'] = 'Kargatzen...';
-$string['modulename'] = 'Jazz Galdetegia';
+$string['modulename'] = 'JazzQuiz';
 $string['modulename_help'] = '<p>
-    Jazz Galdetegia jarduera-moduluak irakasleei ahalbidetzen die galdetegiak unean sortzen eta kudeatzen. JazzGaldetegian galdera mota estandar guztiak erabil daitezke.
+    JazzQuiz jarduera-moduluak irakasleei ahalbidetzen die galdetegiak unean sortzen eta kudeatzen. JazzGaldetegian galdera mota estandar guztiak erabil daitezke.
 </p>
 <p>
     Irakasleak saioan bertan edozein galderatara joateko aukera dauka.
     Erantzunak zuzenean barra grafiko batean erakusten dira, proiektoreetarako egokiturik. Pantaila osoko modua ere eskuragarri dago.
     Galdera amaitzeko epe-muga automatikoa ezar daiteke. Bestela, irakasleak galdera eskuz amaitu eta hurrengora pasa daiteke.
 </p>';
-$string['modulenameplural'] = 'Jazz Galdetegiak';
+$string['modulenameplural'] = 'JazzQuizak';
 $string['multichoice_options'] = 'Erantzun anizkoitzeko aukerak';
 $string['next'] = 'Hurrengoa';
 $string['no_attempts_found'] = 'Ez da saiakerarik aurkitu.';
+$string['no_guests'] = 'Baliteke oraindik irakasleak galdetegi honen saiorik hasi ez izana, eta agian aurrerago saiakera egin dezakezu. Izan daiteke baita ere ikasle bezala sartu behar izatea, eta ikastaroan izena emanda egon behar izatea parte hartu ahal izateko.';
 $string['no_session'] = 'Ez dago saio irekirik';
 $string['no_sessions_exist'] = 'Oraindik ez dago saiorik.';
 $string['no_students_have_joined'] = 'Ez da ikaslerik sartu.';
@@ -208,10 +220,10 @@ $string['no_time_limit_help'] = 'Aukeratu eremu hau denbora honetan denborarik e
 $string['nonanonymous_session'] = 'Saio ez-anonimoa';
 $string['nonanonymous_session_info'] = 'Saio hau ez da anonimoa. Zure partaidetza nahiz erantzunak erregistratutako dira.';
 $string['one_student_has_joined'] = 'Ikasle 1 sartu da.';
-$string['pluginadministration'] = 'Jazz Galdetegiaren kudeaketa';
-$string['pluginname'] = 'Jazz Galdetegia';
-$string['privacy:metadata:core_question'] = 'Jazz Galdetegiko jarduerak galderen erabileraz informazioa biltzen du core_question azpisisteman.';
-$string['privacy:metadata:jazzquiz_attempts'] = 'Jazz Galdetegiko saioko saiakerez xehetasunak';
+$string['pluginadministration'] = 'JazzQuizen kudeaketa';
+$string['pluginname'] = 'JazzQuiz';
+$string['privacy:metadata:core_question'] = 'JazzQuiz jarduerak galderen erabileraz informazioa biltzen du core_question azpisisteman.';
+$string['privacy:metadata:jazzquiz_attempts'] = 'JazzQuiz saioko saiakerez xehetasunak';
 $string['privacy:metadata:jazzquiz_attempts:responded'] = 'Azken galdera erantzunik izan duen ala ez.';
 $string['privacy:metadata:jazzquiz_attempts:timefinish'] = 'Saiakerako azken galdera noiz amaitu den.';
 $string['privacy:metadata:jazzquiz_attempts:timemodified'] = 'Saiakerako azken galdera noiz aldatu den.';
@@ -243,7 +255,7 @@ $string['short_answer'] = 'Erantzun laburra';
 $string['short_math_answer'] = 'Zenbakizko erantzun laburra';
 $string['showing_original_results'] = 'Hasierako emaitzak erakusten';
 $string['showing_vote_results'] = 'Bozketaren emaitzak erakusten';
-$string['start_session'] = 'Hasi Saioa';
+$string['start_session'] = 'Hasi saioa';
 $string['startquiz'] = 'Eman hasiera galdetegiari';
 $string['student'] = 'Ikaslea';
 $string['teacher_start_instructions'] = '<p>Eman hasiera galdetegi bati ikasleek egin dezaten.</p><p>Eman saioaren izena beranduago, emaitzak bilatzen laguntzearren.</p>';
@@ -253,7 +265,7 @@ $string['vote'] = 'Bozkatu';
 $string['wait_for_instructor'] = 'Itxoin irakasleak hurrengo galdera abiarazi arte, mesedez.';
 $string['wait_for_question_time'] = 'Itxoin galdera hasi arte';
 $string['wait_for_question_time_help'] = 'Galdera hasteko itxaron beharreko denbora-epea.';
-$string['wait_for_students'] = 'Ikasleak konektatzearen zain';
-$string['x_seconds_left'] = '{$a} segundo falta da';
+$string['wait_for_students'] = 'Ikasleak konektatzeko zain';
+$string['x_seconds_left'] = '{$a} segundo falta dira';
 $string['x_students_have_joined'] = '{$a} ikasle sartu dira.';
 $string['you_already_voted'] = 'Barkatu, baina honez gero botoa eman duzu.';

@@ -84,7 +84,7 @@ $string['emailchangecancel'] = 'Utzi helbide elektronikoaren aldaketa';
 $string['emailchangepending'] = 'Egin gabeko aldaketa. Ireki bidalitako esteka hemen {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Zure profilari ezarri nahi diozun helbide elektronikoa beste erabiltzaile bati ezarri zaio zuk eskaria egin zenuenetik. Helbide elektronikoa aldatzeko eskaera bertan behera geratu da, beraz; baina, nahi izanez gero beste helbide elektroniko batekin egin dezakezu eskaera berria.';
 $string['emailupdate'] = 'Eguneratu helbide elektronikoa';
-$string['emailupdatemessage'] = '{$a->fullname} agurgarria,
+$string['emailupdatemessage'] = 'Kaixo, {$a->user}:
 
 Zure kontuko helbide elektronikoa aldatzeko eskaria egin duzu {$a->site} gunean. Aldaketa hau baieztatzeko joan mesedez ondorengo web helbidera:
 

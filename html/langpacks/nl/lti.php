@@ -481,7 +481,7 @@ $string['tooldescription_help'] = 'De beschrijving van de tool zal aan leraren g
 Die zou moeten beschrijven waarvoor de tool dient, wat het doet en alle andere bijkomende informatie die een leraar zou kunnen nodig hebben.';
 $string['tooldetailsaccesstokenurl'] = 'Toegang token URL';
 $string['tooldetailsauthrequesturl'] = 'Verificatie-aanvraag URL';
-$string['tooldetailsclientid'] = 'Verificatie-aanvraag URL';
+$string['tooldetailsclientid'] = 'Client ID';
 $string['tooldetailsdeploymentid'] = 'Implementatie-ID';
 $string['tooldetailsmailtosubject'] = 'LTI-toolconfiguratie';
 $string['tooldetailsmodalemail'] = 'E-mail';

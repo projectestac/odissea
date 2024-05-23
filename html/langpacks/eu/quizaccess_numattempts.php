@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Baimendutako saiakerak: {$a}';
-$string['pluginname'] = 'Saiakera-kopuruaren arabera sartzeko araua';
+$string['pluginname'] = 'Saiakera-kopuruaren araberako galdetegietarako sarbide-araua';
 $string['privacy:metadata'] = 'Saiakera-kopuruaren araberako galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';

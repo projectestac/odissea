@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'エラー - 不正なXMLフォーマットです。';
-$string['errduplicategradeidnumber'] = 'エラー - このコースのIDナンバー「 {$a} 」には2つの評定項目があります。インポートすることはできません。';
-$string['errduplicateidnumber'] = 'エラー - IDナンバーが重複しています。';
-$string['errincorrectgradeidnumber'] = 'エラー - インポートファイルのIDナンバー「 {$a} 」がどの評定項目とも合致しません。';
-$string['errincorrectidnumber'] = 'エラー - IDナンバーが正しくありません。';
-$string['errincorrectuseridnumber'] = 'エラー - インポートファイルのIDナンバー「 {$a} 」がどのユーザとも合致しません。';
+$string['errduplicategradeidnumber'] = 'エラー - このコースのIDナンバ「 {$a} 」には2つの評定項目があります。インポートすることはできません。';
+$string['errduplicateidnumber'] = 'エラー - IDナンバが重複しています。';
+$string['errincorrectgradeidnumber'] = 'エラー - インポートファイルのIDナンバ「 {$a} 」がどの評定項目とも合致しません。';
+$string['errincorrectidnumber'] = 'エラー - IDナンバが正しくありません。';
+$string['errincorrectuseridnumber'] = 'エラー - インポートファイルのIDナンバ「 {$a} 」がどのユーザとも合致しません。';
 $string['error'] = 'エラーが発生しました。';
 $string['errorduringimport'] = 'インポート中にエラーが発生しました: {$a}';
 $string['fileurl'] = 'リモートファイルURL';
 $string['fileurl_help'] = 'リモートファイルURLフィールドは学生情報システム等のリモートサーバからデータを取得するためのものです。';
 $string['importxml'] = 'XMLインポート';
-$string['importxml_help'] = '評定はユーザIDナンバーおよび活動IDナンバーを含むXMLファイルによりインポートすることができます。正しいフォーマットを取得するには最初にXMLファイルに評定をエクスポートしてファイルを確認してください。';
+$string['importxml_help'] = '評定はユーザIDナンバおよび活動IDナンバを含むXMLファイルによりインポートすることができます。正しいフォーマットを取得するには最初にXMLファイルに評定をエクスポートしてファイルを確認してください。';
 $string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XMLファイル';
 $string['privacy:metadata'] = 'XMLから評定をインポートするプラグインはいかなる個人データも保存しません。';

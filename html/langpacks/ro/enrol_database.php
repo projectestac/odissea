@@ -77,4 +77,4 @@ $string['settingsheadernewcourses'] = 'Generarea unui curs nou';
 $string['settingsheaderremote'] = 'Sincronizarea înscrierilor la distanță';
 $string['syncenrolmentstask'] = 'Sincronizați sarcina de înscrieri din baza de date externă';
 $string['templatecourse'] = 'Șablon curs nou';
-$string['templatecourse_desc'] = 'Opțional: cursurile create automat își pot copia setările dintr-un curs șablon. Tastați aici denumirea prescurtată a cursului șablon.';
+$string['templatecourse_desc'] = 'Opțional: cursurile create automat își pot copia setările dintr-un curs șablon. Tastați aici denumirea scurtă a cursului șablon.';

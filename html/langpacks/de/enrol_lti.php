@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Zu den Bewertungen hinzufügen';
 $string['allowframeembedding'] = 'Hinweis: Die Einstellung "Frame-Einbettung erlauben" sollte aktiviert werden, damit LTI Tools in einem Frame statt in einem neuen Fenster angezeigt werden.';
 $string['authltimustbeenabled'] = 'Hinweis: Dieses Plugin benötigt auch der Aktivierung des Plugins "LTI Authentifizierung"';
 $string['cartridgeurl'] = 'Cartridge URL';
+$string['cookiesarerequired'] = 'Cookies sind in Ihrem Browser blockiert.';
+$string['cookiesarerequiredinfo'] = 'Dieses Tool kann nicht gestartet werden, da Ihr Browser offenbar Cookies von Drittanbietern blockiert.
+<br><br>
+Um dieses Tool zu verwenden, versuchen Sie, die Cookie-Einstellungen Ihres Browsers zu ändern oder einen anderen Browser zu verwenden.';
 $string['copiedtoclipboard'] = '{$a} in die Zwischenablage kopiert';
 $string['copytoclipboard'] = 'In die Zwischenablage kopieren';
 $string['couldnotestablishproxy'] = 'Proxy mit Consumer konnte nicht hergestellt werden.';

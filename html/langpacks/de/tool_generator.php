@@ -55,7 +55,7 @@ $string['error_noforumreplies'] = 'Der ausgewählte Kurs enthält keine Forenant
 $string['error_nonexistingcourse'] = 'Der ausgewählte Kurs existiert nicht';
 $string['error_nopageinstances'] = 'Der ausgewählte Kurs enthält keine Testseitenaktivitäten';
 $string['error_notdebugging'] = 'Auf diesem Server nicht verfügbar, da der Debug-Wert Entwickler nicht gesetzt wurde.';
-$string['error_nouserspassword'] = 'Sie müssen $CFG->tool_generator_users_password in der Datei config.php setzne, um den Testplan zu erstellen.';
+$string['error_nouserspassword'] = 'Sie müssen $CFG->tool_generator_users_password in der Datei config.php setzen, um den Testplan zu erstellen.';
 $string['fullname'] = 'Testkurs: {$a->size}';
 $string['maketestcourse'] = 'Testkurs erstellen';
 $string['maketestplan'] = 'JMeterTestplan erstellen';
@@ -90,16 +90,15 @@ $string['smallfiles'] = 'Kleine Dateien';
 $string['targetcourse'] = 'Zielkurs testen';
 $string['testplanexplanation'] = 'Dieses Tool erstellt eine JMeter-Testplandatei zusammen mit der Datei mit den Nutzeranmeldeinfos.
 
-Dieser Testplan ist so konzipiert, dass er mit {$a} zusammenarbeitet, was die Ausführung des Testplans in einer bestimmten Moodle-Umgebung erleichtert, Informationen über die Läufe sammelt und die Ergebnisse vergleicht. Sie den Testplan herunterladen und sein Script test_runner. sh  verwende. Befolgen Sie die Installations- und Verwendungsanweisungen.
+Dieser Testplan ist so konzipiert, dass er mit {$a} zusammenarbeitet, was die Ausführung des Testplans in einer bestimmten Moodle-Umgebung erleichtert, Informationen über die Läufe sammelt und die Ergebnisse vergleicht. Sie müssen den Testplan herunterladen und sein Script test_runner. sh  verwenden. Befolgen Sie die Installations- und Gebrauchsanweisungen.
 
 Sie müssen in der config.php ein Passwort für die Kursnutzer/innen festlegen (z. B. $CFG->tool_generator_users_password = \'moodle\';). Es gibt keinen Standardwert für dieses Kennwort, um eine unbeabsichtigte Verwendung des Tools zu verhindern. Sie müssen die Option zum Aktualisieren von Passwörtern verwenden, falls Ihre Kursnutzer/innen andere Passwörter haben oder diese von tool_generator generiert wurden, ohne jedoch einen Wert für $CFG->tool_generator_users_password festzulegen.
 
-Es ist Teil von tool_generator und funktioniert daher gut mit den von den Kursen und den Website-Generatoren generierten Kursen
-auch mit jedem Kurs verwendet werden, der mindestens Folgendes enthält:
+Es ist Teil von tool_generator, so dass es gut mit den Kursen funktioniert, die von den Kursen und den Site-Generatoren generiert werden; es kann aber auch mit jedem Kurs verwendet werden, der mindestens enthält:
 
 * Genügend eingeschriebene Nutzer/innen (abhängig von der von Ihnen gewählten Testplangröße) mit dem auf „moodle“ zurückgesetzten Passwort
-* Eine Seitenmodulinstanz
-* Eine Forenmodulinstanz mit mindestens einer Diskussion und einer Antwort
+* Eine Textseiten-Instanz
+* Eine Foren-Instanz mit mindestens einer Diskussion und einer Antwort
 
 Sie sollten die Serverkapazität beim Ausführen großer Testpläne berücksichtigen. Die von JMeter generierte Last kann sehr groß sein. Die Ramp-up-Periode wurde entsprechend der Anzahl der Threads (Nutzer/innen) angepasst, um diese Art von Problemen zu reduzieren, aber die Last wird immer noch riesig sein.
 
@@ -111,4 +110,4 @@ $string['testplansize_3'] = 'L ({$a->users} Nutzer, {$a->loops} Schleifen und {$
 $string['testplansize_4'] = 'XL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
 $string['testplansize_5'] = 'XXL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
 $string['updateuserspassword'] = 'Aktualisierung Zugangskennwort für Nutzer/innen';
-$string['updateuserspassword_help'] = 'JMeter benötigt einen Login als Kursnutzer/in. Das Nutzerkennwort können Sie mit der Variable $CFG->tool_generator_users_password in der config.php erzeugen; Diese Einstellung aktualisiert das Kennwort, das zu  $CFG->tool_generator_users_password gehört. Dies kann hilfreich sein wenn ein Kurs verwandt wird, der nicht mit dem Tool-Generator oder über  $CFG->tool_generator_users_password nicht beim Erstellen der Testkurse erstellt wurde.';
+$string['updateuserspassword_help'] = 'JMeter benötigt einen Login als Kursnutzer/in. Das Nutzerkennwort können Sie mit der Variable $CFG->tool_generator_users_password in der config.php erzeugen; Diese Einstellung aktualisiert das Kennwort, das zu  $CFG->tool_generator_users_password gehört. Dies kann hilfreich sein, wenn ein Kurs verwandt wird, der nicht mit dem Tool-Generator generiert wurde, oder wenn $CFG->tool_generator_users_password nicht gesetzt wurde, als Sie die Testkurse erstellt haben.';

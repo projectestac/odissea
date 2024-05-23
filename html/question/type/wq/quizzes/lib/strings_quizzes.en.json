@@ -308,7 +308,7 @@
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_helper_text": "Define your own custom function to check the student answer at Define random variables and functions panel.",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_name_dropdown_label": "Function name",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_define_function_button_label": "Define a new function",
-		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Keep arguments unevaluated",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Unevaluated",
 		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_helper_text": "The student answer will not be evaluated and will be given to the function as a CalcMe Expression. This is a very advanced feature.",
 
 		"quizzes_studio_validation_options_numbers_title": "Numbers",
@@ -627,7 +627,21 @@
 		"quizzes_demo_sketch_title_menu" : "Sketch",
 		"home_getting_started_documentation_button_text" : "Documentation", 
 
-		"close_mathtype_popup" : "Close MathType"
+		"close_mathtype_popup" : "Close MathType",
+
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_evaluated_label": "Evaluated",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Unevaluated",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_string_label": "String",
+		"quizzes_studio_validation_options_student_answer_comparison_arguments_helper_text": "Define how the student answer will be passed as an argument to the grading function. This is a very advanced feature.",
+
+		"quizzes_studio_import_deprecated_message_title" : "Deprecated features",
+		"quizzes_studio_import_deprecated_message_text" : "The question you are about to open contains deprecated features. The import process may change slightly the behavior of the question. It is highly recommended that you carefully test de question after import. \n    The deprecated features are the following ones:",
+
+		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
+		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
+		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+
 	}
 }
 

@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Añadir al libro de calificaciones';
 $string['allowframeembedding'] = 'Nota: Se recomienda que la configuración de administración del sitio \'Permitir incrustación de marcos\' esté habilitada para que las herramientas se muestren dentro de un marco en lugar de en una nueva ventana.';
 $string['authltimustbeenabled'] = 'Nota: Este plugin requiere que el plugin de autenticación LTI esté también habilitado.';
 $string['cartridgeurl'] = 'URL del cartucho';
+$string['cookiesarerequired'] = 'Las cookies están bloqueadas por su navegador';
+$string['cookiesarerequiredinfo'] = 'Esta herramienta no se puede lanzar porque su navegador parece estar bloqueando cookies de terceros.
+<br><br>
+Para usar esta herramienta, intente cambiar la configuración de cookies de su navegador o pruebe con un navegador distinto.';
 $string['copiedtoclipboard'] = '{$a} copiado al portapapeles';
 $string['copytoclipboard'] = 'Copiar al portapapeles';
 $string['couldnotestablishproxy'] = 'No se pudo establecer un proxy con el cliente.';

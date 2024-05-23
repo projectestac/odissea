@@ -301,6 +301,7 @@ Als Trainer/in können Sie Einträge kommentieren und bewerten. Sie können den 
 Wenn der Filter für automatische Datenbankverknüpfung aktiviert ist, werden alle Einträge der Datenbank automatisch dort verknüpft, wo Wörter oder Sätze im Kurs erscheinen.
 
 Sie können die Datenbank verwenden,
+
 * um eine gemeinsame Sammlung von Links, Büchern, Buchbesprechungen, Zeitschriftenreferenzen usw. zu erstellen
 * um von Teilnehmer/innen erstellte Fotos, Poster, Websites oder Gedichte zu sammeln und mit Peer-Kommentare und -Rezensionen zu versehen.';
 $string['modulename_link'] = 'mod/data/view';

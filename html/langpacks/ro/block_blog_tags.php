@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Adăugați un nou block etichete blog';
+$string['blog_tags:addinstance'] = 'Adăugați un nou bloc etichete blog';
 $string['configtitle'] = 'Titlu bloc etichete blog';
 $string['pluginname'] = 'Etichete blog';
 $string['privacy:metadata'] = 'Blocul Etichete blog afișează doar date stocate în alte locații.';

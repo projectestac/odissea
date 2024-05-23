@@ -502,7 +502,6 @@ Die Basis-URL von *www.tool.com/quizzes* hingegen passt für folgendes:
 * tool.com/quizzes/quiz.php?id=20
 * www.tool.com/quizzes
 
-
 Die Basis-URL von *quiz.tool.com* hingegen passt für folgendes:
 
 * quiz.tool.com/

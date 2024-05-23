@@ -97,7 +97,7 @@ $string['filtername'] = 'Hiperligações automáticas às páginas wiki';
 $string['firstpagetitle'] = 'Nome da primeira página';
 $string['firstpagetitle_help'] = 'Título da primeira página do wiki. Depois da criação do wiki, o título não poderá ser alterado.';
 $string['forceformat'] = 'Forçar formato';
-$string['forceformat_help'] = 'Se ativar a opção, não será possível escolher outro formato ao editar uma página wiki.';
+$string['forceformat_help'] = 'Se ativar esta opção, não será possível escolher outro formato ao editar uma página wiki.';
 $string['format'] = 'Formato';
 $string['format_help'] = '* HTML - O editor HTML está disponível
 * Creole - Uma linguagem de markup comum de wiki para os quais uma barra de edição pequena está disponível

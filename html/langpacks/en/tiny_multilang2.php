@@ -50,7 +50,7 @@ $string['language_options_desc'] = 'Select options for the Language button drop-
                              <u>https://www.w3schools.com/tags/ref_language_codes.asp</u></a></small>';
 $string['language_setting'] = 'Language button settings';
 $string['languageoptions'] = 'Language';
-$string['multilang2:desc'] = 'Helps adding multilingual content (you need the Multi-Language Content (v2) filter enabled)';
+$string['multilang2:desc'] = 'Add multilingual tags for content.';
 $string['multilang2:langTagsInSelection'] = 'Selected text contains language tags. Please click on a tag to select it.';
 $string['multilang2:language'] = 'Language';
 $string['multilang2:multiBlockElements'] = 'Selected text spans multiple paragraphs/block elements. Please select one only.';

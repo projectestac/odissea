@@ -44,14 +44,14 @@ $string['notifyenroller'] = '登録に責任のあるユーザに通知する';
 $string['pluginname'] = 'フラットファイル (CSV)';
 $string['pluginname_desc'] = 'この方法ではあなたが指定した場所に置いた特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。ファイルはカンマ区切りのファイルであり、1行あたり4個または6個のフィールドを持つと想定されます:
 
-処理, ロール, IDナンバー (ユーザ), IDナンバー (コース) [, 開始日時, 終了日時]
+処理, ロール, IDナンバ (ユーザ), IDナンバ (コース) [, 開始日時, 終了日時]
 
 詳細:
 
 * 処理 = add | del
 * ロール = student | teacher | teacheredit
-* IDナンバー (ユーザ) = userテーブルのidnumber (idではなく)
-* IDナンバー (コース) = courseテーブルのidnumber (idではなく)
+* IDナンバ (ユーザ) = userテーブルのidnumber (idではなく)
+* IDナンバ (コース) = courseテーブルのidnumber (idではなく)
 * 開始日時 = 開始日時 (UNIXエポックからの秒数) - 任意
 * 終了日時 = 終了日時 (UNIXエポックからの秒数) - 任意
 

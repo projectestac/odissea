@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['advancedsearch'] = 'Căutare avansată';
 $string['pluginname'] = 'Caută în forumuri';
 $string['privacy:metadata'] = 'Blocul Căutare forumuri afișează doar datele stocate în alte locații.';
-$string['search_forums:addinstance'] = 'Adaugă un nlou block Caută în forumuri';
+$string['search_forums:addinstance'] = 'Adaugă un nlou bloc Caută în forumuri';

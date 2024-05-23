@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['availablecolors'] = 'Culori disponibile';
+$string['custom'] = 'Culoarea personalizată a fontului (în hex)';
 $string['customcolor'] = 'Particularizare culori font';
 $string['hexadecimal'] = 'Hexadecimal:';
 $string['hsl'] = 'HSL:';

@@ -4,6 +4,15 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 24.04.30
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.10
+- Updated langpacks
+- Course format simple: Show content of labels in non-editing view
+- coursequotas: Fixed lang string
+- Wiris: Upgraded all components
+
+
 Changes 24.03.19
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.1.9+

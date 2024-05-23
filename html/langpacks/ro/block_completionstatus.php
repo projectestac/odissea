@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completionprogressdetails'] = 'Detalii progres completare';
-$string['completionstatus:addinstance'] = 'Adaugă un nou block Status-ul completării cursului';
+$string['completionstatus:addinstance'] = 'Adaugă un nou bloc Status-ul completării cursului';
 $string['criteriagroup'] = 'Criterii de grup';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
 $string['pluginname'] = 'Status finalizare curs';

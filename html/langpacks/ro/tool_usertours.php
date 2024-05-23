@@ -33,8 +33,8 @@ $string['backdrop_help'] = 'Puteți utiliza un fundal pentru a evidenția partea
 
 Notă: Fundalurile nu sunt compatibile cu anumite părți ale paginii, cum ar fi bara de navigare.';
 $string['below'] = 'Mai jos';
-$string['block'] = 'Block';
-$string['block_named'] = 'Block-ul denumit \'{$a}\'';
+$string['block'] = 'Bloc';
+$string['block_named'] = 'Blocul denumit \'{$a}\'';
 $string['cachedef_stepdata'] = 'Lista pașilor turului utilizatorilor';
 $string['cachedef_tourdata'] = 'Lista cu informații despre tururile utilizatorului activate care sunt preluate pe fiecare pagină';
 $string['confirmstepremovalquestion'] = 'Sigur doriți să eliminați acest pas?';
@@ -146,7 +146,7 @@ $string['reflex_help'] = 'Treceți la pasul următor când se face clic pe țint
 $string['resettouronpage'] = 'Resetați turul utilizatorului pe această pagină';
 $string['resumetour'] = 'Reia';
 $string['right'] = 'Dreapta';
-$string['select_block'] = 'Selectează un block';
+$string['select_block'] = 'Selectează un bloc';
 $string['selector_defaulttitle'] = 'Inserează un titlu descriptiv';
 $string['selectordisplayname'] = 'Un selector CSS care se potrivește cu „{$a}”';
 $string['selecttype'] = 'Selectați tipul de pas';
@@ -154,7 +154,7 @@ $string['sharedtourslink'] = 'Depozit de tururi';
 $string['skip'] = 'Omite';
 $string['skip_tour'] = 'Omite turul';
 $string['target'] = 'Target';
-$string['target_block'] = 'Block';
+$string['target_block'] = 'Bloc';
 $string['target_heading'] = 'Pasul țintă';
 $string['target_selector'] = 'Selector';
 $string['target_selector_targetvalue'] = 'Selectori CSS';
@@ -170,28 +170,28 @@ $string['title'] = 'Titlu';
 $string['title_help'] = 'Titlul unui pas poate fi adăugat ca text simplu, inclus în etichete multilang (pentru utilizare cu filtrul de conținut în mai multe limbi), dacă este necesar.
 
 Alternativ, un ID de șir de limbă poate fi introdus în identificatorul de format, componentă (fără paranteze sau spațiu după virgulă).';
-$string['tour1_content_addingblocks'] = 'De fapt, gândiți-vă cu atenție la includerea blocurilor pe paginile dvs. Blocurile nu sunt afișate în aplicația Moodle, deci, ca regulă generală, este mult mai bine să vă asigurați că site-ul dvs. funcționează bine fără blocuri.';
+$string['tour1_content_addingblocks'] = 'De fapt, gândiți-vă cu atenție la includerea blocurilor pe paginile dumneavoastră. Blocurile nu sunt afișate în aplicația Moodle, deci, ca regulă generală, este mult mai bine să vă asigurați că site-ul dumneavoastră funcționează bine fără blocuri.';
 $string['tour1_content_blockregion'] = 'Există încă o regiune de bloc aici. Vă recomandăm să eliminați complet blocurile de navigare și administrare, întrucât toate funcționalitățile se află în altă parte în tema Boost.';
 $string['tour1_content_customisation'] = 'Pentru a personaliza aspectul site-ului dumneavoastră și al paginii principale, utilizați meniul de setări din colțul acestui antet. Încercați să activați editarea chiar acum.';
 $string['tour1_content_end'] = 'Acesta este sfârșitul turului dvs. de utilizator. Nu se va afișa din nou decât dacă îl resetați folosind linkul din subsol. În calitate de administrator, îți poți crea propriile tururi de genul acesta!';
 $string['tour1_content_navigation'] = 'Navigarea majoră este acum prin acest sertar nav. Conținutul se actualizează în funcție de locul în care vă aflați pe site. Folosiți butonul din partea de sus pentru a-l ascunde sau a-l afișa.';
 $string['tour1_content_welcome'] = 'Bine ai venit la tema Boost. Dacă ai făcut upgrade de la o versiune anterioară, este posibil ca unele lucruri să arate puțin diferite cu această temă.';
-$string['tour1_title_addingblocks'] = 'Se adaugă block-uri';
+$string['tour1_title_addingblocks'] = 'Se adaugă blocuri';
 $string['tour1_title_blockregion'] = 'Regiunea de blocare';
 $string['tour1_title_customisation'] = 'Particularizare';
 $string['tour1_title_end'] = 'Finalul turului';
 $string['tour1_title_navigation'] = 'Navigare';
 $string['tour1_title_welcome'] = 'Bine ai venit';
-$string['tour2_content_addblock'] = 'Dacă activați editarea, puteți adăuga blocuri din sertarul nav. Cu toate acestea, gândiți-vă cu atenție la includerea blocurilor pe paginile dvs. Blocurile nu sunt afișate în aplicația Moodle, deci pentru cea mai bună experiență a utilizatorului, este mai bine să vă asigurați că cursul dvs. funcționează bine fără blocuri.';
-$string['tour2_content_addingblocks'] = 'Puteți adăuga blocuri la această pagină folosind acest buton. Cu toate acestea, gândiți-vă cu atenție la includerea blocurilor pe paginile dvs. Blocurile nu sunt afișate în aplicația Moodle, deci pentru cea mai bună experiență a utilizatorului, este mai bine să vă asigurați că cursul dvs. funcționează bine fără blocuri.';
+$string['tour2_content_addblock'] = 'Dacă activați editarea, puteți adăuga blocuri din sertarul nav. Cu toate acestea, gândiți-vă cu atenție la includerea blocurilor pe paginile dumneavoastră. Blocurile nu sunt afișate în aplicația Moodle, deci pentru cea mai bună experiență a utilizatorului, este mai bine să vă asigurați că cursul dumneavoasră funcționează bine fără blocuri.';
+$string['tour2_content_addingblocks'] = 'Puteți adăuga blocuri la această pagină folosind acest buton. Cu toate acestea, gândiți-vă cu atenție la includerea blocurilor pe paginile dumneavoastră. Blocurile nu sunt afișate în aplicația Moodle, deci pentru cea mai bună experiență a utilizatorului, este mai bine să vă asigurați că cursul dumneavoastră funcționează bine fără blocuri.';
 $string['tour2_content_customisation'] = 'Pentru a modifica setările cursului, utilizați meniul de setări din colțul acestui antet. Veți găsi un meniu de setări similar și pe pagina de pornire a fiecărei activități. Încercați să activați editarea chiar acum.';
 $string['tour2_content_end'] = 'Acesta este sfârșitul turului dvs. de utilizator. Nu se va afișa din nou decât dacă îl resetați folosind linkul din subsol. Administratorul site-ului poate crea și alte tururi pentru acest site, dacă este necesar.';
 $string['tour2_content_navigation'] = 'Navigarea se face acum prin acest sertar nav. Folosiți butonul din partea de sus pentru a-l ascunde sau a-l afișa. Veți vedea că există linkuri pentru secțiunile cursului dvs.';
 $string['tour2_content_opendrawer'] = 'Încercați să deschideți sertarul de navă acum.';
 $string['tour2_content_participants'] = 'Vizualizați participanții aici. Aici mergeți și pentru a adăuga sau a elimina studenți.';
 $string['tour2_content_welcome'] = 'Bine ai venit la tema Boost. Dacă site-ul dvs. a fost actualizat de la o versiune anterioară, s-ar putea să găsiți că lucrurile arată puțin diferit aici, pe pagina cursului.';
-$string['tour2_title_addblock'] = 'Adaugă un block';
-$string['tour2_title_addingblocks'] = 'Se adaugă block-uri';
+$string['tour2_title_addblock'] = 'Adaugă un bloc';
+$string['tour2_title_addingblocks'] = 'Se adaugă blocuri';
 $string['tour2_title_customisation'] = 'Particularizare';
 $string['tour2_title_end'] = 'Încheierea turului';
 $string['tour2_title_navigation'] = 'Navigare';
@@ -205,15 +205,15 @@ De asemenea, puteți alege să afișați cursurile într-o listă, cu informați
 $string['tour3_content_overview'] = 'Blocul Prezentare generală a cursurilor arată toate cursurile la care sunteți înscris.
 
 Puteți alege să afișați cursuri în curs de desfășurare, în trecut sau în viitor sau cursuri pe care le-ați marcat.';
-$string['tour3_content_recentcourses'] = 'Blocul Cursuri accesate recent prezintă cursurile pe care le-ați vizitat ultima dată, permițându-vă să intrați direct înapoi.';
+$string['tour3_content_recentcourses'] = 'Blocul Cursuri accesate recent prezintă cursurile pe care le-ați vizitat ultima dată, permițându-vă să mergeți înapoi.';
 $string['tour3_content_starring'] = 'Puteți alege să marcați un curs pentru a-l scoate în evidență sau să ascundeți un curs care nu mai este important pentru dvs.
 
 Aceste acțiuni vă afectează doar vizualizarea.
 
 Puteți alege, de asemenea, să afișați cursurile într-o listă, sau cu informații de rezumat, sau vizualizarea implicită „card”.';
-$string['tour3_content_timeline'] = 'Blocul Cronologie arată evenimentele dvs. importante viitoare.
+$string['tour3_content_timeline'] = 'Blocul Cronologie afișează evenimentele viitoare importante ale dumneavoastră.
 
-Puteți alege să afișați activități în săptămâna următoare, luna sau mai departe în viitor.
+Puteți alege să afișați activități în săptămâna următoare, luna următoare sau mai departe în viitor.
 
 Puteți afișa, de asemenea, elemente care sunt restante.';
 $string['tour3_title_dashboard'] = 'Tabloul dvs. de bord';
@@ -264,8 +264,8 @@ $string['tour_navigation_course_teacher_tour_des'] = 'Modul de editare, drag și
 $string['tour_navigation_course_teacher_tour_name'] = 'Editare curs';
 $string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Acest panou lateral poate să conțină mai multe funcții.';
 $string['tour_navigation_dashboard_title'] = 'Expandați pentru a explora';
-$string['tour_navigation_dashboard_tour_des'] = 'Unde se găsesc block-urile';
-$string['tour_navigation_dashboard_tour_name'] = 'Sertar de block-uri';
+$string['tour_navigation_dashboard_tour_des'] = 'Unde pot fi găsite blocurile';
+$string['tour_navigation_dashboard_tour_name'] = 'Sertar cu blocuri';
 $string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Adaugă, copiază, șterge și ascunde cursuri din acest meniu.';
 $string['tour_navigation_mycourses_endtourlabel'] = 'Înțeleg';
 $string['tour_navigation_mycourses_title'] = 'Cursuri și categorii';

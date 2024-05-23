@@ -62,7 +62,8 @@ $string['completed'] = 'Completato';
 $string['completedunlocked'] = 'Opzioni di completamento sbloccate';
 $string['completedunlockedtext'] = 'Salvando le modifiche, sarà eliminato e ove possibile ricalcolato lo stato di completamento di tutti gli studenti. Se non si desidera questo, uscire dalla pagina senza salvare.';
 $string['completedwarning'] = 'Opzioni di completamento bloccate';
-$string['completedwarningtext'] = 'Questa attività risulta completata da uno o più studenti. Sbloccando le impostazioni, sarà eliminato e ove possibile ricalcolato lo stato di completamento di tutti gli studenti. Per le attività spuntate manualmente per indicarle completate non sarà possibile ricalcolare il completamenti e gli studenti dovranno spuntarle nuovamente.';
+$string['completedwarningtext'] = 'Questa attività risulta completata da uno o più studenti. Sbloccando le impostazioni, sarà eliminato e ove possibile ricalcolato lo stato di completamento di tutti gli studenti.
+Se l\'attività prevede la spunta manuale del completamento, non sarà possibile effettuare il ricalcolo automatico. In tal caso gli studenti dovranno spuntarla nuovamente.';
 $string['completion'] = 'Tracciamento del completamento';
 $string['completion-alt-auto-enabled'] = 'Il sistema traccia automaticamente il completamento di questa attività in base alle seguenti condizioni: {$a}';
 $string['completion-alt-auto-fail'] = 'Completato: {$a} (senza raggiungere la sufficienza)';

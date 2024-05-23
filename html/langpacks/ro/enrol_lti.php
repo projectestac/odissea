@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Adaugă la catalog';
 $string['allowframeembedding'] = 'Notă: Se recomandă ca setarea de administrare a site-ului „Permite încorporarea cadrelor” să fie activată, astfel încât instrumentele să fie afișate într-un cadru, mai degrabă decât într-o fereastră nouă.';
 $string['authltimustbeenabled'] = 'Notă: Acest plugin necesită și plugin-ul de autentificare LTI.';
 $string['cartridgeurl'] = 'URL cartuș';
+$string['cookiesarerequired'] = 'Cookies sunt blocate de browser-ul tău';
+$string['cookiesarerequiredinfo'] = 'Acest instrument nu poate fi lansat deoarece browser-ul tău blochează third-party cookies.
+<br><br>
+Pentru a utiliza acest instrument, încercați să modificați setările cookies ale browser-ului tău sau folosiți un alt browser.';
 $string['copiedtoclipboard'] = '{$a} copiat în clipboard';
 $string['copytoclipboard'] = 'Copiat în clipboard';
 $string['couldnotestablishproxy'] = 'Nu s-a putut stabili un proxy cu consumatorul.';
@@ -84,7 +88,7 @@ $string['lti13launchdetails'] = 'Detaliile lansării';
 $string['lti13launchdetails_help'] = 'The launch URL and custom properties are only required when manually configuring a resource link in the platform. Where possible, teachers should favour the content selection (deep linking) process for the creation of resource links.';
 $string['lti:config'] = 'Configurați instanțele „Publicați ca instrument LTI”';
 $string['lti:unenrol'] = 'Anulați înscrierea utilizatorilor la curs';
-$string['ltiadvdynregerror:invalidopenidconfigjson'] = '';
+$string['ltiadvdynregerror:invalidopenidconfigjson'] = 'A apărut o problemă la preluarea configurației OpenID de pe platformă. Rezultatul nu a fost JSON valid. Acest lucru poate fi cauzat și de configurația gazdelor blocate. Asigură-te că site-ul tău este configurat pentru a se conecta la domeniul platformei și încearcă din nou folosind o nouă adresă URL de înregistrare.';
 $string['ltiadvlauncherror:invaliddeployment'] = 'Datele de lansare sau configurarea instrumentului nu sunt valide. Versiunea nu a putut fi găsită (identificator versiune: {$a}).';
 $string['ltiadvlauncherror:invalidid'] = 'Datele de lansare nu sunt valide. Resursa \'{$a}\' nu este disponibilă sau nu există.';
 $string['ltiadvlauncherror:invalidregistration'] = 'Invalid launch data or tool configuration. A platform registration could not be found (issuer: {$a->platform}, client ID: {$a->clientid}).';

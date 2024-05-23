@@ -76,7 +76,7 @@ $string['alternativefullnameformat'] = 'Vollständiger Name - Alternative';
 $string['alternativefullnameformat_desc'] = 'Diese Option legt fest, wie Namen für Nutzer/innen angezeigt werden, die über die Berechtigung  \'viewfullname\' verfügen. Dies sind normalerweise: Manager/innen, Trainer/innen sowie Trainer/innen ohne Bearbeitungsrecht. Es können die gleichen Platzhalter verwendet werden wie für die Einstellungen zum \'Vollständigen Namen\'.';
 $string['always'] = 'Immer';
 $string['appearance'] = 'Darstellung';
-$string['aspellpath'] = 'Pfad zu <i>aspell</i>';
+$string['aspellpath'] = 'Pfad zu aspell';
 $string['authentication'] = 'Authentifizierung';
 $string['authpreventaccountcreation'] = 'Accounterstellung während Authentifizierung verhindern';
 $string['authpreventaccountcreation_help'] = 'Wenn sich Nutzer/innen authentifizieren, werden auf der Website automatisch Nutzerkonten angelegt, falls diese noch nicht existieren. Diese Option sollte aktiviert werden, wenn eine externe Datenbank wie z.B. LDAP zur Authentifizierung genutzt wird und sich nur bereits existierende Nutzer/innen authentifizieren sollen. Neue Nutzerkonten müssen dann von Hand oder Nutzerupload per cvs angelegt werden. Hinweis: diese Einstellung gilt nicht für die MNet-Authentifizierung.';
@@ -217,7 +217,7 @@ $string['configcoursesperpage'] = 'Geben Sie die Anzahl von Kursen an, die pro S
 $string['configcourseswithsummarieslimit'] = 'Diese Option legt fest, wie viele Kurse mit Beschreibung in einer Kursübersicht maximal angezeigt werden. Bei einer größeren Kursanzahl wird eine andere Darstellung gewählt.';
 $string['configcronclionly'] = 'Die Ausführung von Cron im Webbrowser könnte vertrauliche Informationen anzeigen. Sie sollten deswegen Cron ausschließlich über die Befehlszeile erlauben oder im Webbrowser zusätzlich ein Cron-Kennwort zu verlangen.';
 $string['configcronremotepassword'] = 'Diese Option legt fest, dass das Script cron.php nicht im Webbrowser aufgerufen werden kann, ohne das Kennwort folgendermaßen an die URL anzuhängen: <pre>
-http://www.beispiel.de/admin/cron.php?password=geheim
+https://www.beispiel.de/admin/cron.php?password=geheim
 </pre>Falls das Feld leer ist, wird kein Kennwort benötigt.';
 $string['configcurlcache'] = 'Speicherzeit für cURL Cache (in Sekunden)';
 $string['configcustommenuitems'] = 'Das nutzerdefinierte Menü wird auf allen Seiten in der Kopfzeile angezeigt.
@@ -297,7 +297,7 @@ $string['configfrontpageloggedin'] = 'Die ausgewählten Elemente werden auf der 
 $string['configfullnamedisplay'] = 'Diese Option legt fest, wie Namen vollständig angezeigt werden sollen. Der Standardwert \'language\' verwendet den Eintrag \'fullnamedisplay\' aus dem jeweiligen Sprachpaket. Manche Sprachen haben unterschiedliche Regeln.
 
 Für die meisten einsprachigen Websites ist die Einstellung \'firstname lastname\' am besten geeignet, aber Sie könnten auch den Vor- oder den Nachnamen ausblenden. Mögliche Platzhalter sind: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, alternatename.';
-$string['configgeoipfile'] = 'Pfad zur binären Datei GeoLite2 City. Diese Datei ist kein Bestandteil von Moodle und muss separat von <a href="http://www.maxmind.com/">MaxMind</a> bezogen werden. Die Ortsdatenbank GeoIPCity gibt es als kommerzielle oder als freie Version. Sie müssen sich registrieren, um die City-Datenbankdatei herunterzuladen, und zwar unter <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Sobald Sie sich registriert und die Datei heruntergeladen haben, speichern Sie sie in das Verzeichnis "{$a}" auf Ihrem Server.';
+$string['configgeoipfile'] = 'Pfad zur binären Datei GeoLite2 City. Diese Datei ist kein Bestandteil von Moodle und muss separat von <a href="https://www.maxmind.com/">MaxMind</a> bezogen werden. Die Ortsdatenbank GeoIPCity gibt es als kommerzielle oder als freie Version. Sie müssen sich registrieren, um die City-Datenbankdatei herunterzuladen, und zwar unter <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Sobald Sie sich registriert und die Datei heruntergeladen haben, speichern Sie sie in das Verzeichnis "{$a}" auf Ihrem Server.';
 $string['configgetremoteaddrconf'] = 'Wenn Ihr Server hinter einem Reverse Proxy steht, können sie mit diesen Einträgen festlegen, welche HTTP-Header vertraut wird, dass sie die Remote-IP Adresse enthalten. Die Header werden in der angegebenen Reihenfolge ausgelesen. Die erste verfügbare wird verwandt.';
 $string['configgradebookroles'] = 'Diese Einstellung erlaubt Ihnen die Kontrolle, wer in den Bewertungen erscheint. Teilnehmer/innen müssen zuerst eine der Rollen in einem Kurs einnehmen, bevor sie in den Bewertungen dieses Kurses angezeigt werden.';
 $string['configgradeexport'] = 'Wählen Sie ein bevorzugtes Exportformat für die Bewertungen aus. Das gewählte Plugin wird dann das Feld "zuletzt exportiert" in jeder Bewertung setzen und benutzen. Dies wird beispielsweise die exportierten Daten als "neu" oder "geändert" markieren. Wenn Sie nicht sicher sind, wählen Sie nichts aus.';
@@ -627,7 +627,7 @@ $string['enabledevicedetection'] = 'Geräteerkennung';
 $string['enableglobalsearch'] = 'Globale Suche aktivieren';
 $string['enableglobalsearch_desc'] = 'Diese Option aktiviert einen regelmäßigen Task zur Indizierung und Synchronisierung.';
 $string['enablegravatar'] = 'Gravatar aktivieren';
-$string['enablegravatar_help'] = 'Wenn diese Option aktiviert ist, versucht Moodle ein Profilbild von Gravatar anzuzeigen, falls Nutzer/innen kein eigenes Profilbild hochgeladen haben.';
+$string['enablegravatar_help'] = 'Wenn diese Option aktiviert ist, versucht Moodle ein Profilbild von Gravatar anzuzeigen, falls Nutzer/innen selber kein eigenes Profilbild hochgeladen haben.';
 $string['enablemobilewebservice'] = 'Webservice für mobile Endgeräte aktivieren';
 $string['enablerecordcache'] = 'Datencache erlauben';
 $string['enablerssfeeds'] = 'RSS Feeds aktivieren';
@@ -724,7 +724,10 @@ $string['gradebook'] = 'Bewertungen';
 $string['gradebookroles'] = 'Bewertete Rollen';
 $string['gradeexport'] = 'Exportformat für die Bewertungen';
 $string['gravatardefaulturl'] = 'Gravatar Standardbild';
-$string['gravatardefaulturl_help'] = 'Gravatar benötigt ein Standardbild, wenn für bestimmte Nutzer/innen kein Profilbild gefunden werden kann. Sie haben mehrere Möglichkeiten: (1) Das Feld bleibt leer und Moodle verwendet ein vorgegebenes Bild. (2) Sie geben ein von Ihnen gewählten Bild über eine vollständige URL vor. (3) Oder Sie lassen <a href="https://en.gravatar.com/site/implement/images/#default-image">Standardbilder von Gravatar</a> erzeugen.';
+$string['gravatardefaulturl_help'] = 'Gravatar benötigt ein Standardbild zum Anzeigen, wenn es für eine Person kein Bild bei sich finden kann. Sie haben mehrere Möglichkeiten zur Nutzung: <br>
+(1) Sie lassen dieses Feld leer und Moodle verwendet ein vorgegebenes Bild. <br>
+(2) Sie geben ein von Ihnen gewähltes Bild über eine vollständige URL vor. <br>
+(3) Sie lassen <a href="https://en.gravatar.com/site/implement/images/#default-image">Standardbilder von Gravatar</a> für Ihr Moodle erzeugen.';
 $string['groupenrolmentkeypolicy'] = 'Regeln für Einschreibeschlüssel zu Gruppen';
 $string['groupenrolmentkeypolicy_desc'] = 'Diese Option legt fest, dass für Einschreibeschlüssel zu Gruppen die gleichen Regeln gelten wie für Nutzerkennwörter.';
 $string['guestroleid'] = 'Rolle für Gäste';
@@ -772,10 +775,10 @@ $string['ipblocked'] = 'Diese Website ist im Moment nicht verfügbar.';
 $string['ipblocker'] = 'IP-Blocker';
 $string['ipblockersyntax'] = 'Schreiben Sie jeden IP-Eintrag in eine neue Zeile. Gültig sind vollständige IP-Adressen für ein einzelnes Gerät (z.B. <b>192.168.10.1</b>) oder eine teilweise Angabe (z.B. <b>192.168.</b>) für alle IP-Adressen, die mit diesen Zahlen beginnen. Ebenfalls gültig sind IP-Adressbereiche (z.B. <b>192.168.10.20-50</b>) für alle IP-Adressen im Bereich (hier 20 bis 50) oder IP-Adressen in der CIDR-Schreibweise (z.B. <b>231.54.211.0/20</b>). Die Angabe von Domainnamen (z.B. \'beispiel.de\') ist nicht erlaubt. Leere Zeilen und Inhalte nach einem \'#\' Zeichen werden ignoriert.';
 $string['iplookup'] = 'IP-Adressen-Suche';
-$string['iplookupgeoplugin'] = 'Ortsdaten werden aktuell durch den Dienst <a href="http://www.geoplugin.com">geoPlugin</a> bereitgestellt. Bessere Ergebnisse erhalten Sie mit der Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite  von MaxMind.com</a>\'.';
+$string['iplookupgeoplugin'] = 'Ortsdaten werden aktuell durch den Dienst <a href="https://www.geoplugin.com">geoPlugin</a> bereitgestellt. Bessere Ergebnisse erhalten Sie mit der Ortsdatenbank \'<a href="https://www.maxmind.com">GeoLite  von MaxMind.com</a>\'.';
 $string['iplookupinfo'] = 'Der kostenlose NetGeo-Server wird zum Anzeigen von IP-Adressstandorten verwendet. Die Datenbank wird jedoch nicht mehr gepflegt und kann falsche Daten zurückgeben. Es wird empfohlen, eine lokale Kopie der kostenlosen GeoLite2-City-Datenbank von MaxMind zu installieren.<br />
 Wenn ein Google Maps API V3-Schlüssel bereitgestellt wird, wird der Standort der IP-Adresse mithilfe von Google Maps dargestellt. Sie benötigen ein Google-Konto und müssen einen Google Maps-API-Schlüssel beantragen. Wenn kein Google Maps API V3-Schlüssel bereitgestellt wird, wird der Standort der IP-Adresse mithilfe von OpenStreetMap angezeigt.';
-$string['iplookupmaxmindnote'] = 'Moodle benutzt zur Darstellung die Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite2</a>\'.';
+$string['iplookupmaxmindnote'] = 'Moodle benutzt zur Darstellung die Ortsdatenbank \'<a href="https://www.maxmind.com">GeoLite2</a>\'.';
 $string['iscustomadminwarnings'] = 'Es wurde festgestellt, dass Ihre Website ein nutzerdefiniertes Verzeichnis für die Administration verwendet. Diese Funktion wird nicht mehr unterstützt und wird nach Moodle 4.2 entfernt.';
 $string['ishttpswarning'] = 'Diese Website wird nicht über HTTPS abgesichert. Es wird dringend empfohlen, die Website auf HTTPS umzustellen, um die Sicherheit zu erhöhen und die Integration anderer Systeme zu verbessern.';
 $string['keeptagnamecase'] = 'Schreibweise von Tags beibehalten';
@@ -988,6 +991,7 @@ $string['opensslrecommended'] = 'Die Installation der optionalen OpenSSL Bibliot
 $string['opensslrequired'] = 'Die PHP Extension OpenSSL ist für Moodle notwendig, um stärkere Krypto-Dienste bereit zu stellen.';
 $string['opentowebcrawlers'] = 'Offen für Suchmaschinen';
 $string['optionalmaintenancemessage'] = 'Optionale Wartungsinfos';
+$string['oracledatabaseinuse'] = 'Die Oracle-DB-Unterstützung in Moodle LMS wird sich ändern. Moodle 4.5 wird die letzte Version sein, die Oracle als Datenbankarchitektur unterstützt. Weitere Informationen finden Sie <a href="https://moodle.org/mod/forum/discuss.php?d=456122" target="_blank">hier</a>';
 $string['order1'] = 'Erstens';
 $string['order2'] = 'Zweitens';
 $string['order3'] = 'Drittens';
@@ -1004,20 +1008,20 @@ $string['passwordpolicycheckonlogin'] = 'Überprüfen Sie das Kennwort beim Anme
 $string['passwordresettime'] = 'Max. Zeit zur Bestätigung einer Kennwortrücksetzung';
 $string['passwordreuselimit'] = 'Wiederholungsbeschränkung für Kennwörter';
 $string['passwordreuselimit_desc'] = 'Diese Option legt fest, wie oft Nutzer/innen ein anderes Kennwort verwenden müssen, bevor sie ein altes Kennwort wiederbenutzen dürfen. Die Hashwerte der bisher benutzten Kennwörter werden intern gespeichert. Diese Option funktioniert nicht mit allen externen Authentifizierungen.';
-$string['pathtodot'] = 'Pfad zu <i>dot</i>';
+$string['pathtodot'] = 'Pfad zu dot';
 $string['pathtodot_help'] = 'Pfad zu dot, üblicherweise /usr/bin/dot. Unter Windows meist C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe. Und unter Mac /opt/local/bin/dot. Um Grafiken aus DOT-Dateien generieren zu können, muss das Programm dot installiert und hier darauf verwiesen sein.';
-$string['pathtodu'] = 'Pfad zu <i>du</i>';
-$string['pathtogs'] = 'Pfad zu Ghostscript';
+$string['pathtodu'] = 'Pfad zu du';
+$string['pathtogs'] = 'Pfad zu ghostscript';
 $string['pathtogs_help'] = 'In den meisten Linux-Installationen kann die Einstellung \'/usr/bin/gs\' bleiben. Bei Windows könnte die Einstellung  \'c:\\gs\\bin\\gswin32c.exe\'  richtig sein. Der Pfad darf keine Leerzeichen enthalten. Falls nötig, kopieren Sie die Dateien \'gswin32c.exe\' und \'gsdll32.dll\' in ein neues Verzeichnis ohne Leerzeichen im Pfad.';
 $string['pathtopdftoppm'] = 'Pfad zu pdftoppm';
 $string['pathtopdftoppm_help'] = '<a href="https://poppler.freedesktop.org/">Poppler</a> ist eine PDF-Rendering-Bibliothek, die das Tool pdftoppm zum Konvertieren von PDF-Dateien in png enthält. Die Leistung ist allgemein besser als bei der Verwendung von Ghostscript, insbesondere bei großen Dateien. Falls verfügbar, wird pdftoppm gegenüber Ghostscript bevorzugt. Bei den meisten Linux-Installationen kann der Pfad als /usr/bin/pdftoppm belassen werden. Andernfalls müssen Sie die Pakete poppler-utils oder poppler abhängig von Ihrer Linux-Distribution installieren. Bei Windows wird es von Cygwin-Installationen bereitgestellt.';
-$string['pathtopgdump'] = 'Pfad zu <i>pg_dump</i>';
+$string['pathtopgdump'] = 'Pfad zu pg_dump';
 $string['pathtopgdumpdesc'] = 'Sie benötigen diese Einstellung nur, wenn mehr als ein pg_dump auf dem System vorhanden ist (z.B. wenn mehr als eine Version von PostgreSQL installiert ist).';
-$string['pathtopgdumpinvalid'] = 'Ungültiger Pfad zu pg_dump - entweder falscher Pfad oder nicht ausführbar';
+$string['pathtopgdumpinvalid'] = 'Ungültiger Pfad zu pg_dump - entweder ist der Pfad falsch oder nicht ausführbar';
 $string['pathtophp'] = 'Pfad zu PHP CLI';
-$string['pathtopsql'] = 'Pfad zu <i>psql</i>';
+$string['pathtopsql'] = 'Pfad zu psql';
 $string['pathtopsqldesc'] = 'Sie benötigen diese Einstellung nur, wenn mehr als ein psql auf dem System vorhanden ist (z.B. wenn mehr als eine Version von PostgreSQL installiert ist).';
-$string['pathtopsqlinvalid'] = 'Ungültiger Pfad zu psql - entweder falscher Pfad oder nicht ausführbar';
+$string['pathtopsqlinvalid'] = 'Ungültiger Pfad zu psql - entweder ist der Pfad falsch oder nicht ausführbar';
 $string['pathtopython'] = 'Pfad zu Python';
 $string['pathtopythondesc'] = 'Pfad zu einer ausführbaren Python-Binärdatei. Python 2 und Python 3 sind möglich.';
 $string['pathtosassc'] = 'Pfad zu SassC';
@@ -1067,7 +1071,7 @@ $string['profilefield'] = 'Profilfeld';
 $string['profilefieldcolumns'] = 'Spalten';
 $string['profilefieldispassword'] = 'Ist dies ein Kennwortfeld?';
 $string['profilefieldlink'] = 'Link';
-$string['profilefieldlink_help'] = 'Um den Text in einen Link umzuwandeln, geben Sie eine URL mit $$ an, wobei $$ durch den Text ersetzt wird. Um z.B. eine Twitter-ID in einen Link umzuwandeln, schreiben Sie http://twitter.com/$$.';
+$string['profilefieldlink_help'] = 'Um den Text in einen Link umzuwandeln, geben Sie eine URL mit $$ an, wobei $$ durch den Text ersetzt wird. Um z.B. eine Twitter-ID in einen Link umzuwandeln, schreiben Sie https://twitter.com/$$.';
 $string['profilefieldlinktarget'] = 'Verlinkungsziel';
 $string['profilefieldmaxlength'] = 'Maximale Zeichenzahl';
 $string['profilefieldmaxlength_help'] = 'Um dieses Feld in der Einstellung "Nutzeridentität anzeigen" zu verwenden, muss die Zeichenzahl 255 oder weniger sein.';

@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Competențe care trebuie revizuite';
-$string['lp:addinstance'] = 'Adăugați un nou block Planuri de învățare';
-$string['lp:myaddinstance'] = 'Adăugați un nou block Planuri de învățare în Tabloul de bord';
+$string['lp:addinstance'] = 'Adăugați un nou bloc Planuri de învățare';
+$string['lp:myaddinstance'] = 'Adăugați un nou bloc Planuri de învățare în Tabloul de bord';
 $string['myplans'] = 'Planurile mele';
 $string['noactiveplans'] = 'Nu există planuri active în acest moment';
 $string['planstoreview'] = 'Planuri care trebuie revizuite';
 $string['pluginname'] = 'Planuri de învățare';
-$string['privacy:metadata'] = 'Block-ul Planuri de învățare afișează doar date stocate în alte locații.';
+$string['privacy:metadata'] = 'Blocul Planuri de învățare afișează doar date stocate în alte locații.';
 $string['viewmore'] = 'Vezi mai mult...';
 $string['viewotherplans'] = 'Vezi alte planuri';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addedby'] = '追加 - {$a}';
+$string['addedby'] = '追加: {$a}';
 $string['addgroup'] = 'グループにユーザを追加する';
 $string['addgroupstogrouping'] = 'グルーピングにグループを追加する';
 $string['addgroupstogroupings'] = 'グループを追加/削除する';
@@ -35,9 +35,9 @@ $string['anygrouping'] = '[すべてのグルーピング]';
 $string['autocreategroups'] = 'グループを自動作成する';
 $string['backtogroupings'] = 'グルーピングに戻る';
 $string['backtogroups'] = 'グループに戻る';
-$string['badnamingscheme'] = '「@」または「#」を厳密に１つ含む必要があります。';
+$string['badnamingscheme'] = '「@」または「#」の文字を厳密に１つ含む必要があります。';
 $string['byfirstname'] = '名、姓のアルファベット順';
-$string['byidnumber'] = 'IDナンバーのアルファベット順';
+$string['byidnumber'] = 'IDナンバのアルファベット順';
 $string['bylastname'] = '姓、名のアルファベット順';
 $string['createautomaticgrouping'] = '自動グルーピングを作成する';
 $string['creategroup'] = 'グループを作成する';

@@ -119,7 +119,7 @@ Incorporado -  A ferramenta é exibida incorporada na janela do Moodle, de uma f
 Incorporado, sem blocos -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação na parte superior da página.
 Nova janela - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
 
-Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
+Dependendo do navegador, esta vai abrir num novo separador ou numa janela pop-up.
 
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['delegate'] = 'Delegar ao professor';
@@ -241,7 +241,7 @@ Incorporado -  A ferramenta é exibida incorporada na janela do Moodle, de uma f
 Incorporado, sem blocos -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação na parte superior da página.
 Nova janela - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
 
-Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
+Dependendo do navegador, esta vai abrir num novo separador ou numa janela pop-up.
 
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['launchoptions'] = 'Opções de arranque';

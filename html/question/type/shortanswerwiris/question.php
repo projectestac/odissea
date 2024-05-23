@@ -19,7 +19,7 @@ require_once($CFG->dirroot . '/question/type/wq/question.php');
 require_once($CFG->dirroot . '/question/type/wq/step.php');
 
 class qtype_shortanswerwiris_question extends qtype_wq_question
-        implements question_automatically_gradable, question_response_answer_comparer {
+implements question_automatically_gradable, question_response_answer_comparer {
     /**
      * A link to last question attempt step and also a helper class for some
      * grading issues.
@@ -81,12 +81,15 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         $answer = $this->get_matching_answer($response);
         if ($answer) {
             $fraction = $answer->fraction;
+
             // Multiply Moodle fraction by quizzes grade (due to custom function
             // grading or compound grade distribution).
-            $grade = $this->step->get_var('_matching_answer_grade');
+            $grade = $this->step->get_var_in_answer_cache('_matching_answer_grade', $response['answer']);
+
             if (!empty($grade)) {
                 $fraction = $fraction * $grade;
             }
+
             $state = question_state::graded_state_for_fraction($fraction);
             return array($fraction, $state);
         } else if ($this->step->is_error()) {
@@ -109,8 +112,11 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         $conditiona = isset($CFG->wq_fail_shortanswer_grade) && $CFG->wq_fail_shortanswer_grade;
         if ($conditiona && $CFG->wq_fail_shortanswer_grade != 'false') {
             $fail = explode("@", $CFG->wq_fail_shortanswer_grade);
-            $attemptid = $DB->get_record('question_attempt_steps',
-                    array('id' => $this->step->step_id), 'questionattemptid')->questionattemptid;
+            $attemptid = $DB->get_record(
+                'question_attempt_steps',
+                array('id' => $this->step->step_id),
+                'questionattemptid'
+            )->questionattemptid;
             $attemptid = $DB->get_record('question_attempts', array('id' => $attemptid), 'questionusageid')->questionusageid;
             $activity = $DB->get_field('question_usages', 'component', array('id' => $attemptid));
             if ($activity == 'mod_quiz') {
@@ -133,8 +139,11 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         }
         // Used to simulate a grade failure when doing tests!
         if ($error) {
-            throw new moodle_exception(get_string('failedtogradetest', 'qtype_shortanswerwiris',
-                                                 ($this->step->get_attempts() + 1)), 'qtype_wq');
+            throw new moodle_exception(get_string(
+                'failedtogradetest',
+                'qtype_shortanswerwiris',
+                ($this->step->get_attempts() + 1)
+            ), 'qtype_wq');
         }
         // END TEST.
     }
@@ -145,10 +154,13 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             if (!isset($response['answer']) || $response['answer'] === null) {
                 return null;
             }
+
             // Optimization in order to avoid a service call.
-            $responsehash = md5($response['answer']);
-            if ($this->step->get_var('_response_hash') == $responsehash) {
-                $matchinganswer = $this->step->get_var('_matching_answer');
+            $answer = $response['answer'];
+            $responsehash = md5($answer);
+
+            if ($this->step->is_answer_cached($answer)) {
+                $matchinganswer = $this->step->get_var_in_answer_cache('_matching_answer', $answer);
                 if (!empty($matchinganswer)) {
                     return $this->base->answers[$matchinganswer];
                 } else if (!is_null($matchinganswer)) {
@@ -160,6 +172,11 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             // The same question should not be graded more than N times with failure.
             if ($this->step->is_attempt_limit_reached()) {
                 return null;
+            }
+
+            if ($this->parent) {
+                // Questions with parent should be graded together in multianswerwiris qtype!
+                throw new moodle_exception('Questions with parent should be graded together');
             }
 
             // Test code:
@@ -192,7 +209,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             $max = 0.0;
             $maxwqgrade = 0.0;
             $matchinganswerposition = -1;
-            
+
             for ($i = 0; $i < count($correctanswers); $i++) {
                 $wqgrade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
                 $grade = $wqgrade * $correctanswers[$i]->fraction;
@@ -210,7 +227,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             // Backup matching answer.
             $matchinganswerid = 0;
             $answer = null;
-            
+
             // Reset variable.
             $this->step->set_var('_matching_answer_grade', null);
             if ($matchinganswerposition != -1) {
@@ -219,8 +236,9 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
                 if ($max < 1.0) {
                     $this->step->set_var('_matching_answer_grade', $maxwqgrade, true);
                 }
-                $this->step->set_var('_matching_answer_wq_position', $matchinganswerposition, true);
+                $this->step->set_var('_matching_answer_wq', $matchinganswerposition, true);
             }
+
             $this->step->set_var('_matching_answer', $matchinganswerid, true);
             $this->step->set_var('_response_hash', $responsehash, true);
             $this->step->set_var('_qi', $qi->serialize(), true);

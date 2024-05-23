@@ -233,8 +233,8 @@ $string['howquestionsbehave_help'] = '学生は小テスト内の問題に対し
 
 恐らく、これらは最も一般的に使用される動作モードです。';
 $string['howquestionsbehave_link'] = 'question/behaviour';
-$string['idnumber'] = 'IDナンバー';
-$string['idnumber_help'] = '使用する場合、IDナンバーはそれぞれのコースカテゴリ内でユニークにする必要があります。これは問題を識別するための別の便利な方法を提供しますが、通常は空白にすることができます。';
+$string['idnumber'] = 'IDナンバ';
+$string['idnumber_help'] = '使用する場合、IDナンバはそれぞれのコースカテゴリ内でユニークにする必要があります。これは問題を識別するための別の便利な方法を提供しますが、通常は空白にすることができます。';
 $string['ignorebroken'] = 'リンク切れを無視する';
 $string['import'] = 'インポート';
 $string['importcategory'] = 'インポートカテゴリ';

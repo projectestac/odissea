@@ -4,6 +4,9 @@ class com_wiris_quizzes_impl_QuestionInternal extends com_wiris_util_xml_Seriali
 	public function __construct() { if(!php_Boot::$skip_constructor) {
 		parent::__construct();
 	}}
+	public function getDeprecationWarnings() {
+		return null;
+	}
 	public function getProperty($name) {
 		return null;
 	}

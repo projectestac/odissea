@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_menu:addinstance'] = 'Adăugați un nou block meniu blog';
+$string['blog_menu:addinstance'] = 'Adăugați un nou bloc meniu blog';
 $string['pluginname'] = 'Meniu blog';
 $string['privacy:metadata'] = 'Blocul meniului Blog afișează doar date stocate în alte locații.';

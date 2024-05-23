@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activități sociale';
 $string['privacy:metadata'] = 'Blocul Activități sociale arată doar datele stocate în alte locații.';
-$string['social_activities:addinstance'] = 'Adăugați un nou block Activități sociale';
+$string['social_activities:addinstance'] = 'Adăugați un nou bloc Activități sociale';

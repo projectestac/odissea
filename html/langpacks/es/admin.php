@@ -953,6 +953,7 @@ $string['opensslrecommended'] = 'Instalar la librería opcional OpenSSL es altam
 $string['opensslrequired'] = 'La extensión OpenSSL PHP es requerida por Moodle para brindar mayor fortaleza a los servicios criptográficos.';
 $string['opentowebcrawlers'] = 'Abrir a Google';
 $string['optionalmaintenancemessage'] = 'Mensaje de mantenimiento opcional';
+$string['oracledatabaseinuse'] = 'Estamos modificando el soporte de Oracle DB en Moodle LMS. La versión 4.5 será la última que soporte Oracle como arquitectura de base de datos. Se puede encontrar más información <a href="https://moodle.org/mod/forum/discuss.php?d=456122" target="_blank">aquí</a>';
 $string['order1'] = 'Primero';
 $string['order2'] = 'Segundo';
 $string['order3'] = 'Tercero';

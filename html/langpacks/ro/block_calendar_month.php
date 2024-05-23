@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_month:addinstance'] = 'Adăugați un nou block calendar';
-$string['calendar_month:myaddinstance'] = 'Adăugați un nou block calendar în Dashboard';
+$string['calendar_month:addinstance'] = 'Adăugați un nou bloc calendar';
+$string['calendar_month:myaddinstance'] = 'Adăugați un nou bloc calendar în Dashboard';
 $string['pluginname'] = 'Calendar';
 $string['privacy:metadata'] = 'Blocul Calendar afișează doar date calendaristice existente.';

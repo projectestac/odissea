@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['checkin'] = 'Guardar strings no pacote linguístico';
 $string['checkout'] = 'Abrir pacote linguístico para edição';
 $string['checkoutdone'] = 'A carregar pacote linguístico';
-$string['checkoutinprogress'] = 'A inserir strings no tradutor';
+$string['checkoutinprogress'] = 'A carregar o pacote linguístico';
 $string['cliexportfileexists'] = 'O ficheiro para o idioma {$a->lang} já existe. Será ignorado. Se pretende substituir, adicione a opção --override=true.';
 $string['cliexportfilenotfoundforcomponent'] = 'Não foi encontrado o ficheiro {$a->filepath} para o idioma {$a->lang}. O ficheiro será ignorado.';
 $string['cliexportheading'] = 'A iniciar a exportação dos ficheiros lang.';

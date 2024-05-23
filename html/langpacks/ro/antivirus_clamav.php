@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = 'În acest moment există o problemă cu scanarea AntiVirus. Fișierul dvs. {$a->item} nu a fost încărcat. Vă rugăm să încercați din nou mai târziu.';
+$string['antivirusfailed'] = 'În acest moment apare o problemă cu scanarea AntiVirus. Fișierul dumneavoastră {$a->item} nu a fost încărcat. Vă rugăm să încercați din nou mai târziu.';
 $string['clamfailed'] = 'Programul Clam AV nu a putut fi rulat.  Mesajul de eroare primit a fost {$a}. Iată rezultatul produs de Clam:';
 $string['clamfailureonupload'] = 'Eșec al ClamAV';
 $string['configclamactlikevirus'] = 'Consideră fișierele ca fiind virusuri';
@@ -53,7 +53,7 @@ $string['tcpsockethostdesc'] = 'Numele de domeniu al serverului ClamAV';
 $string['tcpsocketport'] = 'Port soclu TCP';
 $string['tcpsocketportdesc'] = 'Portul de utilizat la conectarea la ClamAV';
 $string['tries'] = 'Încercări de scanare';
-$string['tries_desc'] = 'Numărul de încercări făcute de ClamAV dacă există o eroare în timpul procesului de scanare.';
+$string['tries_desc'] = 'Numărul de încercări făcute de ClamAV dacă apare o eroare în timpul procesului de scanare.';
 $string['tries_notice'] = 'Scanarea Clamav a încercat de {$a->tries} ori.
 {$a->notice}';
 $string['unknownerror'] = 'A apărut o eroare necunoscută ClamAV.';

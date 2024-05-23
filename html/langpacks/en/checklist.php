@@ -103,6 +103,7 @@ $string['emailoncompletesubjectown'] = 'You have completed checklist \'{$a->chec
 $string['enterurl'] = 'Enter url ...';
 $string['errorchecklistitemnotvalid'] = 'Checklist item id does not belong to this course module!';
 $string['eventchecklistcomplete'] = 'Checklist complete';
+$string['eventchecklistupdated'] = 'Checklist updated';
 $string['eventeditpageviewed'] = 'Edit page viewed';
 $string['eventreportviewed'] = 'Report viewed';
 $string['eventstudentchecksupdated'] = 'Student checks updated';

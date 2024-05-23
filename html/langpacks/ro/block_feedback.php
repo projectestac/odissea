@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Sugestii și reclamații';
-$string['feedback:addinstance'] = 'Adăugați un nou block feedback';
+$string['feedback:addinstance'] = 'Adăugați un nou bloc feedback';
 $string['pluginname'] = 'Sugestii și reclamații';
 $string['privacy:metadata'] = 'Blocul Feedback afișează doar date stocate în alte locații.';

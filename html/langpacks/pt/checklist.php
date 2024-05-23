@@ -103,6 +103,7 @@ $string['emailoncompletesubjectown'] = 'Concluiu a checklist \'{$a->checklist}\'
 $string['enterurl'] = 'Digite o url...';
 $string['errorchecklistitemnotvalid'] = 'O ID do item da lista de verificação não pertence a este módulo da disciplina!';
 $string['eventchecklistcomplete'] = 'Checklist concluída';
+$string['eventchecklistupdated'] = 'Checklist atualizada';
 $string['eventeditpageviewed'] = 'Página de edição visualizada';
 $string['eventreportviewed'] = 'Relatório visualizado';
 $string['eventstudentchecksupdated'] = 'Verificações do aluno atualizadas';

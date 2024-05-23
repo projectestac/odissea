@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Adăugați un nou block Ultimele anunțuri';
-$string['news_items:myaddinstance'] = 'Adăugați un nou block Ultimele anunțuri în Dashboard';
+$string['news_items:addinstance'] = 'Adăugați un nou bloc Ultimele anunțuri';
+$string['news_items:myaddinstance'] = 'Adăugați un nou bloc Ultimele anunțuri în Dashboard';
 $string['pluginname'] = 'Ultimele anunțuri';
 $string['privacy:metadata'] = 'Blocul Ultimele anunțuri arată doar datele stocate în forum și nu stochează datele în sine.';

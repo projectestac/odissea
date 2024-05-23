@@ -6,6 +6,22 @@ class com_wiris_quizzes_wrap_QuestionWrap implements com_wiris_quizzes_api_Quest
 		$this->question = $question;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function getDeprecationWarnings() {
+		try {
+			$this->wrapper->start();
+			$r = $this->question->getDeprecationWarnings();
+			$r = php_Lib::toPhpArray($r);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function removeSlot($slot) {
 		try {
 			$this->wrapper->start();

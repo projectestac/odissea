@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fișierele mele personale';
 $string['privacy:metadata'] = 'Blocul Fișiere private oferă doar o vizualizare și un link către fișierele private ale utilizatorului.';
-$string['private_files:addinstance'] = 'Adaugă un nou block fișiere private';
+$string['private_files:addinstance'] = 'Adaugă un nou bloc fișiere private';
 $string['private_files:myaddinstance'] = 'Adaugă un nou block fișiere private în Dashboard';
 $string['privatefiles'] = 'Fișierele private';

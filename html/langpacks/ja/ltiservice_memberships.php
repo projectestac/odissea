@@ -36,4 +36,4 @@ $string['privacy:metadata:firstname'] = 'LTIコンシューマを使用するユ
 $string['privacy:metadata:fullname'] = 'LTIコンシューマを使用するユーザのフルネームです。';
 $string['privacy:metadata:lastname'] = 'LTIコンシューマを使用するユーザの姓です。';
 $string['privacy:metadata:userid'] = 'LTIコンシューマを使用するユーザのIDです。';
-$string['privacy:metadata:useridnumber'] = 'LTIコンシューマを使用するユーザのIDナンバーです。';
+$string['privacy:metadata:useridnumber'] = 'LTIコンシューマを使用するユーザのIDナンバです。';

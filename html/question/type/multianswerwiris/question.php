@@ -96,6 +96,7 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
             if ($this->step->is_attempt_limit_reached()) {
                 return;
             }
+
             // Build list of shortanswerwiris subquestions.
             $indexes = array();
             $needsgrade = false;
@@ -105,8 +106,8 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
                     if (!$needsgrade) {
                         $substep = $this->get_substep(null, $i);
                         $subresp = $substep->filter_array($response);
-                        $subresphash = isset($subresp['answer']) ? md5($subresp['answer']) : null;
-                        if (!is_null($subresphash) && ($subresphash != $subquestion->step->get_var('_response_hash'))) {
+
+                        if (isset($subresp['answer']) && !$this->step->is_answer_cached($subresp['answer'])) {
                             $needsgrade = true;
                         }
                     }
@@ -217,15 +218,20 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
                     $numsubans++;
                 }
                 $matchinganswerid = 0;
+
+                $subanswer = $subresp['answer'];
+
                 if (!empty($matching)) {
                     $matchinganswerid = $matching->id;
                     if ($maxgrade < 1.0) {
-                        $subquestion->step->set_var('_matching_answer_grade', $maxgrade, true);
+                        $subquestion->step->set_var_in_answer_cache('_matching_answer_grade', $maxgrade, $subanswer);
                     }
                 }
-                $subresphash = md5($subresp['answer']);
-                $subquestion->step->set_var('_response_hash', $subresphash, true);
-                $subquestion->step->set_var('_matching_answer', $matchinganswerid, true);
+
+                $subquestion->step->set_var_in_answer_cache('_matching_answer', $matchinganswerid, $subanswer);
+                $subquestion->step->set_var('_matching_answer', '0');
+
+                $subquestion->step->reset_attempts();
                 $numsubq++;
             }
             // Update question instance.
@@ -277,8 +283,10 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
                     $choices = array();
                     $dummyqa = new question_attempt($subq, $this->contextid);
                     foreach ($subq->get_order($dummyqa) as $ansid) {
-                        $choices[] = $this->html_to_text($subq->answers[$ansid]->answer,
-                                $subq->answers[$ansid]->answerformat);
+                        $choices[] = $this->html_to_text(
+                            $subq->answers[$ansid]->answer,
+                            $subq->answers[$ansid]->answerformat
+                        );
                     }
                     $answerbit = '{' . implode('; ', $choices) . '}';
                     break;
@@ -343,7 +351,7 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
         $text = parent::join_question_text();
         // Subquestions.
         if (method_exists($question, 'join_question_text')) {
-            $text .= ' ' .$question->join_question_text();
+            $text .= ' ' . $question->join_question_text();
         }
         return $text;
     }

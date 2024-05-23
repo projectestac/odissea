@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedtypes'] = 'Tipuri permise';
-$string['allowedtypes_desc'] = 'Ce butoane de înregistrare ar trebui să apară în Atto. În plus față de această setare, există și capabilități care pot controla accesul la butoane pentru anumiți utilizatori în anumite contexte.';
+$string['allowedtypes_desc'] = 'Ce butoane de înregistrare ar trebui să apară în Atto. În plus față de această setare, se găsesc și capabilități care pot controla accesul la butoane pentru anumiți utilizatori în anumite contexte.';
 $string['attachrecording'] = 'Atașați înregistrarea';
 $string['audioandvideo'] = 'Audio și video';
 $string['audiobitrate'] = 'Audio bitrate';
@@ -38,16 +38,16 @@ $string['gumabort'] = 'S-a întâmplat ceva ciudat care a împiedicat utilizarea
 $string['gumabort_title'] = 'S-a întâmplat ceva';
 $string['gumnotallowed'] = 'Utilizatorul trebuie să permită accesul browserului la camera web / microfon';
 $string['gumnotallowed_title'] = 'Permisiuni greșite';
-$string['gumnotfound'] = 'Nu există niciun dispozitiv de intrare conectat sau activat';
+$string['gumnotfound'] = 'Nu apare niciun dispozitiv de intrare conectat sau activat';
 $string['gumnotfound_title'] = 'Dispozitivul lipsește';
 $string['gumnotreadable'] = 'Ceva împiedică browserul să acceseze camera web / microfonul';
 $string['gumnotreadable_title'] = 'Eroare hardware';
 $string['gumnotsupported'] = 'Browserul dvs. nu acceptă înregistrarea printr-o conexiune nesigură și trebuie să închidă pluginul';
-$string['gumnotsupported_title'] = 'Nu există suport pentru conexiuni nesigure';
+$string['gumnotsupported_title'] = 'Fără suport pentru conexiuni nesigure';
 $string['gumoverconstrained'] = 'Camera web / microfonul actual nu poate produce un flux cu restricțiile necesare';
 $string['gumoverconstrained_title'] = 'Problemă cu restricțiile active';
 $string['gumsecurity'] = 'Browserul dvs. nu acceptă înregistrarea printr-o conexiune nesigură și trebuie să închidă pluginul';
-$string['gumsecurity_title'] = 'Nu există suport pentru conexiunea nesigură';
+$string['gumsecurity_title'] = 'Fără suport pentru conexiunea nesigură';
 $string['gumtype'] = 'Am încercat să obțin flux de pe camera web / microfon, dar nu au fost specificate restricții';
 $string['gumtype_title'] = 'Nu sunt specificate restricții';
 $string['insecurealert'] = 'Este posibil ca browserul dvs. să nu permită acestui plugin să funcționeze decât dacă este utilizat printr-o conexiune HTTPS';

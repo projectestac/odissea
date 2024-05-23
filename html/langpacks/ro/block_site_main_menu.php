@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Meniu principal';
 $string['privacy:metadata'] = 'Blocul Meniu principal afișează doar datele stocate în alte locații.';
-$string['site_main_menu:addinstance'] = 'Adăugați un block nou meniu principal';
+$string['site_main_menu:addinstance'] = 'Adăugați un bloc nou meniu principal';

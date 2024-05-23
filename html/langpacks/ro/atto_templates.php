@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cancel'] = 'Anulează';
 $string['cleanhtml'] = 'Curățare HTML';
+$string['cleanhtml_desc'] = 'Dacă este bifat, șablonul HTML va fi curățat de Moodle înainte de a fi afișat. Acest lucru va ordona HTML-ul,
+  dar vor rămâne ID-uri și clase.';
 $string['description'] = 'Selectează un șablon pentru a vedea cum arată, apoi dați click pe Inserare';
 $string['dialogtitle'] = 'Inserează conținut predefinit al șablonului';
 $string['insert'] = 'Inserează';

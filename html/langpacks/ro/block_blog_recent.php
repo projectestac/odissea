@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Adăugați un nou block postări recente';
+$string['blog_recent:addinstance'] = 'Adăugați un nou bloc postări recente';
 $string['norecentblogentries'] = 'Nu există înregistrări recente';
 $string['numentriestodisplay'] = 'Numărul de intrări recente pentru a fi afișate';
 $string['pluginname'] = 'Articolele recente din blog';

@@ -83,6 +83,17 @@ class com_wiris_quizzes_impl_AuthorAnswerImpl extends com_wiris_util_xml_Seriali
 	public function getFilterableValue() {
 		return com_wiris_quizzes_impl_QuizzesImpl::getInstance()->mathContentToFilterableValue($this->value, $this->slot->getInitialContent());
 	}
+	public function getValueAsMathML() {
+		if($this->value->type === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
+			return $this->value->content;
+		} else {
+			if($this->value->type === com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) {
+				$html = new com_wiris_quizzes_impl_HTMLTools();
+				return $html->textToMathML($this->value->content);
+			}
+		}
+		throw new HException("Type not compatible with MathML");
+	}
 	public function getValue() {
 		return $this->value->content;
 	}

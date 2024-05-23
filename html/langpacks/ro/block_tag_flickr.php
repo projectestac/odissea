@@ -41,4 +41,4 @@ $string['privacy:metadata:block_tag_flickr'] = 'Pluginul pentru blocul Flickr nu
 $string['privacy:metadata:block_tag_flickr:tags'] = 'Valorile etichetei trimise ca format CSV pentru a căuta imagini Flickr.';
 $string['relevance'] = 'Relevanţă';
 $string['sortby'] = 'Sortează după';
-$string['tag_flickr:addinstance'] = 'Adăugați un nou block flickr';
+$string['tag_flickr:addinstance'] = 'Adăugați un nou bloc flickr';

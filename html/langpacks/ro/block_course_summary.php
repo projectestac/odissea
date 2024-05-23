@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['course_summary:addinstance'] = 'Adăugați un nou block rezumat curs/site';
+$string['course_summary:addinstance'] = 'Adăugați un nou bloc rezumat curs/site';
 $string['coursesummary'] = 'Rezumat curs';
 $string['pluginname'] = 'Descriere curs/site';
 $string['privacy:metadata'] = 'Blocul Rezumatul cursului / site-ului afișează doar informații despre cursuri și nu stochează datele în sine.';

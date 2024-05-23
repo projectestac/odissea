@@ -131,7 +131,7 @@ $string['aftercompletedtext_help'] = 'Lascia vuoto questo campo per utilizzare i
 </ul>';
 $string['agreetobookingpolicy'] = 'Ho letto e accetto le seguenti condizioni di prenotazione';
 $string['alertrecalculate'] = '<b>Attenzione!</b> Tutti i prezzi verranno ricalcolati e tutti i vecchi prezzi verranno sovrascritti.';
-$string['allbookingoptions'] = 'Scarica gli utenti per tutte le opzioni di prenotazione';
+$string['allbookingoptions'] = 'Tutte le opzioni di prenotazione';
 $string['allchangessaved'] = 'Tutte le modifiche sono state salvate.';
 $string['allcomments'] = 'Tutti possono commentare';
 $string['allmailssend'] = 'Tutte le e-mail agli utenti sono state inviate!';
@@ -1458,6 +1458,7 @@ $string['rule_optionfield_bookingclosingtime'] = 'Fine del periodo di prenotazio
 $string['rule_optionfield_bookingopeningtime'] = 'Inizio del periodo di prenotazione consentito (bookingopeningtime)';
 $string['rule_optionfield_courseendtime'] = 'Fine (courseendtime)';
 $string['rule_optionfield_coursestarttime'] = 'Inizio (coursestarttime)';
+$string['rule_optionfield_location'] = 'Luogo (luogo)';
 $string['rule_optionfield_text'] = 'Nome dell\'opzione di prenotazione (text)';
 $string['rule_react_on_event'] = 'Reagire all\'evento';
 $string['rule_react_on_event_desc'] = 'Scegliere un evento che deve attivare la regola.';
@@ -1513,6 +1514,7 @@ $string['sendmailtobooker_help'] = 'Attiva questa opzione per inviare mail di co
 $string['sendpollurltoteachers'] = 'Invia URL sondaggio';
 $string['sendreminderemail'] = 'Invia e-mail di promemoria';
 $string['sendreminderemailsuccess'] = 'L\'e-mail di notifica è stata inviata!';
+$string['sessionnotifications'] = 'Notifiche via e-mail per ogni sessione';
 $string['sessionremindermailmessage'] = '<p>Tenete presente che: Siete prenotati per la sessione successiva:</p>
 <p>{$a->optiontimes}</p>
 <p>##########################################</p>
@@ -1567,6 +1569,7 @@ $string['signinsheetaddress'] = 'Indirizzo:';
 $string['signinsheetdate'] = 'Data(e):';
 $string['signinsheetdatetofillin'] = 'Data:';
 $string['signinsheetfields'] = 'Campi del foglio firme (PDF)';
+$string['signinsheetlocation'] = 'Luogo:';
 $string['spaceleft'] = 'spazio disponibile';
 $string['spacesleft'] = 'spazi disponibili';
 $string['startendtimeknown'] = 'L\'ora di inizio e di fine del corso è nota';

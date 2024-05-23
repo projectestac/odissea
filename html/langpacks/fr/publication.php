@@ -50,7 +50,7 @@ $string['assignment_notset'] = 'Aucun devoir n’a été choisi';
 $string['autoimport'] = 'Synchroniser automatiquement avec le Devoir';
 $string['autoimport_help'] = 'Si activé, les nouveaux dépôts de travaux dans le Devoir correspondant seront importés automatiquement dans cette activité. Optionnellement, l’approbation de l’étudiant doit être obtenue à nouveau pour les nouveaux fichiers.';
 $string['availability'] = 'Intervalle de temps pour le dépôt et l’approbation';
-$string['choose'] = 'veuillez sélectionner…';
+$string['choose'] = 'Veuillez sélectionner…';
 $string['configautoimport'] = 'Si vous préférez que les nouveaux devoirs soient automatiquement importés dans les instances du Partage de fichiers. Cette fonctionnalité peut être activée/désactivée pour chaque instance de l’activité.';
 $string['configmaxbytes'] = 'Taille maximale par défaut des fichiers dans un partage de fichiers.';
 $string['configmaxfiles'] = 'Nombre maximal par défaut de fichiers permis par utilisateur.';
@@ -70,9 +70,9 @@ $string['duedate'] = 'Date d’échéance';
 $string['duedate_help'] = 'Les envois seront toujours acceptés après cette date, mais seront marqués comme en retard. Pour ne pas autoriser les envois après une certaine date, utilisez la date de fin.';
 $string['duedate_import'] = 'Approbation jusqu’à';
 $string['duedate_upload'] = 'Dépôt possible jusqu’à';
-$string['duedatevalidation'] = 'La date d’échéance ne peut être antérieure à la date depuis laquelle les envois sont autorisés.';
+$string['duedatevalidation'] = 'La date d’échéance doit être postérieure à la date depuis laquelle les envois sont autorisés.';
 $string['edit_timeover'] = 'Les fichiers ne peuvent être modifiés que durant la période de modification.';
-$string['edit_uploads'] = 'modifier/déposer des fichiers';
+$string['edit_uploads'] = 'Modifier/déposer des fichiers';
 $string['emailstudentsmail'] = '{$a->username} a modifié le statut d’approbation de « {$a->filename} » pour « {$a->publication} » à {$a->apstatus} approuvé, le {$a->dayupdated} à {$a->timeupdated}. Il est disponible ici : {$a->url}';
 $string['emailstudentsmailhtml'] = '{$a->username} a modifié le statut d’approbation de « {$a->filename} » pour <i>« {$a->publication} »</i> à <b>{$a->apstatus} approuvé</b> le {$a->dayupdated} à {$a->timeupdated}</i><br /><br /> Il est <a href="{$a->url}">disponible ici</a>.';
 $string['emailteachermail'] = '---------------------------------------------------------------------\\n{$a->username} a déposé le fichier « {$a->filename} » pour « {$a->publication} » le {$a->dayupdated} à {$a->timeupdated}.
@@ -83,7 +83,7 @@ Il est disponible ici :
 $string['emailteachermailhtml'] = '{$a->username} a déposé le fichier « {$a->filename} » pour <i> « {$a->publication} » le {$a->dayupdated} à {$a->timeupdated}</i><br /><br /> Il est <a href="{$a->url}">disponible ici</a>.';
 $string['entiresperpage'] = 'Nombre de participants à afficher par page';
 $string['eventpublicationapprovalchanged'] = 'L’approbation du fichier a changé';
-$string['eventpublicationduedateextended'] = 'La date de rendue de la publication a été étendue';
+$string['eventpublicationduedateextended'] = 'La date de rendu de la publication a été étendue';
 $string['eventpublicationfiledeleted'] = 'Le fichier de la publication a été supprimé';
 $string['eventpublicationfileimported'] = 'Un fichier a été importé';
 $string['eventpublicationfileuploaded'] = 'Un fichier a été déposé';
@@ -94,7 +94,7 @@ $string['extensionto'] = 'Prolongation jusqu’à';
 $string['filedetails'] = 'Détails';
 $string['filesofthesetypes'] = 'Ces types de fichier sont autorisés :';
 $string['go'] = 'Envoyer';
-$string['grantextension'] = 'accorder/modifier une prolongation';
+$string['grantextension'] = 'Accorder/modifier une prolongation';
 $string['groupapprovalmode'] = 'Mode d’approbation pour les groupes';
 $string['groupapprovalmode_all'] = 'TOUS les membres du groupe doivent approuver';
 $string['groupapprovalmode_help'] = 'Définit si l’approbation de tous les membres du groupe ou d’au moins un membre est nécessaire pour rendre les fichiers visibles.';
@@ -126,7 +126,7 @@ $string['nofilestozip'] = 'Aucun fichier à zipper';
 $string['nonexistentfiletypes'] = 'Les fichiers suivants n’ont pas été reconnus: {$a}';
 $string['nopublicationsincourse'] = 'Il n’existe aucune instance de partage de fichiers dans ce cours.';
 $string['nothing_to_show_groups'] = 'rien à afficher - aucun groupe disponible';
-$string['nothing_to_show_users'] = 'rien à afficher - aucun étudiant disponible';
+$string['nothing_to_show_users'] = 'Rien à afficher - aucun étudiant disponible';
 $string['nothingtodisplay'] = 'Aucun élément à afficher';
 $string['notice'] = 'Information :';
 $string['notice_groupimportrequireallapproval'] = 'Décidez si vos fichiers doivent être visibles par tour. Tous les membres du groupe doivent donner leur approbation pour que les fichiers soient visibles.';
@@ -148,12 +148,7 @@ $string['obtainstudentapproval_help'] = 'L’approbation des étudiants est-elle
 <li> non - la visibilité des fichiers est déterminée par l’enseignant uniquement.</li>
 </ul>';
 $string['obtainteacherapproval'] = 'Approuvé par défaut';
-$string['obtainteacherapproval_help'] = 'Les fichiers sont-ils rendus visibles immédiatement après leur dépôt ?
-<br>
-<ul>
-<li> oui - tous les fichiers sont rendus visibles immédiatement</li>
-<li> non - les fichiers ne sont rendus visibles qu’après l’approbation de l’enseignant</li>
-</ul>';
+$string['obtainteacherapproval_help'] = 'Les fichiers seront-ils visibles immédiatement après leur téléchargement ou non : <br><ul><li>Oui - tous les fichiers seront visibles par tous immédiatement</li><li>Non - les fichiers ne seront publiés qu\'après l\'approbation de l\'enseignant</li></ul>';
 $string['optionalsettings'] = 'Options';
 $string['pending'] = 'En attente';
 $string['pluginadministration'] = 'Administration du partage de fichiers';
@@ -174,11 +169,11 @@ $string['privacy:metadata:timecreated'] = 'L’heure et la date de création de 
 $string['privacy:metadata:timemodified'] = 'L’heure et la date de la modification la plus récente de l’enregistrement de données.';
 $string['privacy:metadata:type'] = 'Indique l’origine du fichier (déposé par l’étudiant, importé depuis un devoir de type fichier ou de type texte en ligne).';
 $string['privacy:metadata:userid'] = 'Identifiant de l’utilisateur.';
-$string['privacy:path:files'] = 'fichiers';
-$string['privacy:path:resources'] = 'ressources';
-$string['privacy:type:import'] = 'fichier importé';
-$string['privacy:type:onlinetext'] = 'texte en ligne importé';
-$string['privacy:type:upload'] = 'fichier déposé';
+$string['privacy:path:files'] = 'Fichiers';
+$string['privacy:path:resources'] = 'Ressources';
+$string['privacy:type:import'] = 'Fichier importé';
+$string['privacy:type:onlinetext'] = 'Texte en ligne importé';
+$string['privacy:type:upload'] = 'Fichier déposé';
 $string['publication:addinstance'] = 'Ajouter un nouveau partage de fichiers';
 $string['publication:approve'] = 'Décider si les fichiers doivent être visibles par tous les étudiants';
 $string['publication:grantextension'] = 'Accorder une prolongation';
@@ -201,13 +196,13 @@ $string['saveteacherapproval'] = 'Enregistrer approbation';
 $string['search:activity'] = 'Partage de fichiers - informations sur l’activité';
 $string['show_details'] = 'Montrer détails';
 $string['status'] = 'Statut';
-$string['status:approved'] = 'approuvé';
-$string['status:approvednot'] = 'rejeté';
-$string['student_approve'] = 'approuver';
-$string['student_approved'] = 'approuvé';
+$string['status:approved'] = 'Approuvé';
+$string['status:approvednot'] = 'Rejeté';
+$string['student_approve'] = 'Approuver';
+$string['student_approved'] = 'Approuvé';
 $string['student_pending'] = 'non visible (non approuvé)';
-$string['student_reject'] = 'rejeter';
-$string['student_rejected'] = 'rejeté';
+$string['student_reject'] = 'Rejeter';
+$string['student_rejected'] = 'Rejeté';
 $string['studentapproval'] = 'Statut';
 $string['studentapproval_help'] = 'Représente l’état de l’approbation par l’étudiant :
 
@@ -218,7 +213,7 @@ $string['teacher_approved'] = 'visible (approuvé)';
 $string['teacher_pending'] = 'confirmation en attente';
 $string['teacher_rejected'] = 'rejeté';
 $string['teacherapproval'] = 'Approbation';
-$string['total'] = 'total';
+$string['total'] = 'Total';
 $string['updatefiles'] = 'Mettre à jour les fichiers';
 $string['updatefileswarning'] = 'Les fichiers de chaque étudiant seront mis à jour avec leur travail rendu dans l’activité Devoir. Les fichiers déjà visibles ici seront remplacés aussi, s’ils ont été supprimés ou modifiés. Les réglages de visibilité (approbation) de l’étudiant ne seront pas modifiés.';
 $string['uploaded'] = 'Déposé';

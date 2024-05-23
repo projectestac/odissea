@@ -173,7 +173,7 @@ $string['what_actions_can_be_monitored_help'] = '<p>Es sind mehrere Aktionen fü
     </ul>
 </p>
 <h3>Bestehen</h3>
-<p>Bei den Aktivitäten Aufgabe, Lektion und Test gibt es eine "Bewertung zum Bestehen".<a href="https://docs.moodle.org/30/de/Bewertungsaspekte" target="_blank">Weitere Hilfe...</a></p>';
+<p>Bei den Aktivitäten Aufgabe, Lektion und Test gibt es eine "Bestehensgrenze".<a href="https://docs.moodle.org/30/de/Bewertungsaspekte" target="_blank">Weitere Hilfe...</a></p>';
 $string['what_does_monitored_mean'] = 'Was das „Überwachen” bedeutet?';
 $string['what_does_monitored_mean_help'] = '<p>Zweck dieses Blocks ist es, Lernende zu ermutigen, ihre Zeit effektiv zu nutzen. Jeder Lernende kann seine Fortschritte bei der Vollendung von Aktivitäten und dem Ansehen von Dateien überwachen.</p>
 <p>Auf der Konfigurationsseite finden Sie eine Liste aller Module, die Sie erstellt haben, die durch den Fortschrittsbalken überwacht werden können. Das Modul wird nur überwacht werden und als kleiner Block in der Statusleiste erscheinen, wenn es entsprechend markiert wurde .</p>';

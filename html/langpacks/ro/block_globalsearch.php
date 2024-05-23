@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['globalsearch:addinstance'] = 'Adăugați un nou block  "Căutare generală "';
-$string['globalsearch:myaddinstance'] = 'Adăugați un nou block  "Căutare generală " în Tabloul de bord';
+$string['globalsearch:addinstance'] = 'Adăugați un nou bloc "Căutare generală "';
+$string['globalsearch:myaddinstance'] = 'Adăugați un nou bloc "Căutare generală " în Tabloul de bord';
 $string['pluginname'] = 'Căutare generală';
 $string['privacy:metadata'] = 'Blocul de căutare globală afișează doar date stocate în alte locații.';

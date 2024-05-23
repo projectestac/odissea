@@ -38,7 +38,7 @@ $string['config_grade_format'] = '評点の表示:';
 $string['config_name_format'] = '結果のプライバシー';
 $string['config_names_anon'] = '匿名結果';
 $string['config_names_full'] = 'フルネームを表示する';
-$string['config_names_id'] = 'IDナンバーのみ表示する';
+$string['config_names_id'] = 'IDナンバのみ表示する';
 $string['config_no_activities_in_course'] = 'このコースにはまだ活動がありません。';
 $string['config_select_activity'] = 'どの活動の結果をこのブロックで表示しますか?';
 $string['config_show_best'] = '何件の最高評点を表示しますか (0 = 無効) ?';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'În platformă există deja un cont cu acest nume de utilizator. Dacă acesta este contul dvs., conectați-vă introducând numele de utilizator și parola și adăugați-le ca login conectat prin intermediul paginii de preferințe.';
+$string['accountexists'] = 'În platformă există deja un cont cu acest nume de utilizator. Dacă acesta este contul dumneavoastră, conectați-vă introducând numele de utilizator și parola și adăugați-le ca login conectat prin intermediul paginii de preferințe.';
 $string['alreadylinked'] = 'Acest cont extern este deja conectat la un cont de pe acest site';
 $string['auth_oauth2description'] = 'Autentificarea bazată pe standardele OAuth 2';
 $string['auth_oauth2settings'] = 'Setări de autentificare OAuth 2.';

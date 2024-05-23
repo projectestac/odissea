@@ -627,7 +627,21 @@
 		"quizzes_demo_sketch_title_menu" : "${quizzes_demo_sketch_title_menu}",
 		"home_getting_started_documentation_button_text" : "${home_getting_started_documentation_button_text}", 
 
-		"close_mathtype_popup" : "${close_mathtype_popup}"
+		"close_mathtype_popup" : "${close_mathtype_popup}",
+
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_evaluated_label": "${quizzes_studio_validation_options_student_answer_comparison_keep_arguments_evaluated_label}",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "${quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label}",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_string_label": "${quizzes_studio_validation_options_student_answer_comparison_keep_arguments_string_label}",
+		"quizzes_studio_validation_options_student_answer_comparison_arguments_helper_text": "${quizzes_studio_validation_options_student_answer_comparison_arguments_helper_text}",
+
+		"quizzes_studio_import_deprecated_message_title" : "${quizzes_studio_import_deprecated_message_title}",
+		"quizzes_studio_import_deprecated_message_text" : "${quizzes_studio_import_deprecated_message_text}",
+
+		"quizzes_studio_equivalent_set_assertion": "${quizzes_studio_equivalent_set_assertion}",
+		"quizzes_studio_syntax_list_assertion": "${quizzes_studio_syntax_list_assertion}",
+		"quizzes_studio_text_logic_operators" : "${quizzes_studio_text_logic_operators}",
+		"quizzes_studio_equivalent_unit_literal" : "${quizzes_studio_equivalent_unit_literal}"
+
 	}
 }
 

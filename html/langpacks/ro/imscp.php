@@ -43,7 +43,7 @@ $string['indicator:socialbreadthdef_help'] = 'Participantul a atins acest procen
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Arhivați pachetele';
 $string['keepoldexplain'] = 'Câte pachete ar trebuie să fie arhivate?';
-$string['modulename'] = 'Conținutul pachetului IMS';
+$string['modulename'] = 'Conținut pachet IMS';
 $string['modulename_help'] = 'Un pachet de conținut IMS este o colecție de fișiere care sunt ambalate conform unui standard convenit, astfel încât să poată fi refolosite în diferite sisteme. Modulul pachet de conținut IMS permite ca astfel de pachete de conținut să fie încărcate ca fișier zip și adăugate la un curs ca resursă.
 
 Conținutul este de obicei afișat pe mai multe pagini, cu navigare între pagini. Există diverse opțiuni pentru afișarea conținutului într-o fereastră pop-up, cu un meniu de navigare sau butoane etc.
@@ -55,7 +55,7 @@ $string['navigation'] = 'Navigare';
 $string['packagefile'] = 'Fișier pachet';
 $string['page-mod-imscp-x'] = 'Orice pagină a modulului de pachet de conținut IMS';
 $string['pluginadministration'] = 'Adminstrare IMSCP';
-$string['pluginname'] = 'Conținutul pachetului IMS';
+$string['pluginname'] = 'Conținut pachet IMS';
 $string['privacy:metadata'] = 'Pluginul pachetului de conținut IMS nu stochează date personale.';
 $string['search:activity'] = 'Pachet de conținut IMS - informații despre resurse';
 $string['toc'] = 'TOC';

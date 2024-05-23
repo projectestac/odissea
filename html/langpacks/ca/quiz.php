@@ -968,6 +968,7 @@ $string['stateoverdue'] = 'Vençut';
 $string['stateoverduedetails'] = 'Ha de trametre\'s abans de {$a}';
 $string['status'] = 'Estat';
 $string['stoponerror'] = 'Atura si es produeix un error';
+$string['submission_confirmation_unanswered'] = 'Preguntes sense resposta: {$a}';
 $string['submitallandfinish'] = 'Envia-ho tot i acaba';
 $string['subneterror'] = 'Aquest qüestionari ha estat blocat i només és accessible des de certes ubicacions. A hores d\'ara el vostre ordinador no és cap dels que han estat autoritzats per emprar aquest qüestionari.';
 $string['subnetnotice'] = 'Aquest qüestionari ha estat blocat de manera que només sigui accessible des de certes ubicacions. El vostre ordinador no es troba en una subxarxa autoritzada. Tanmateix com a professor podeu previsualitzar-lo.';

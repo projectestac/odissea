@@ -70,6 +70,9 @@ $string['deliveryoptiondownload'] = 'Send to the browser and force a file downlo
 $string['deliveryoptioninline'] = 'Send the file inline to the browser';
 $string['deliveryoptions'] = 'Delivery options';
 $string['description'] = 'Description';
+$string['downloadallissuedcertificates'] = 'Download all issued certificates';
+$string['downloadallsitecertificates'] = 'Download all site certificates';
+$string['downloadallsitecertificatesdesc'] = 'This will download all the certificates on the site in a zip file.';
 $string['duplicate'] = 'Duplicate';
 $string['duplicateconfirm'] = 'Duplicate confirmation';
 $string['duplicatetemplateconfirm'] = 'Are you sure you want to duplicate this certificate template?';
@@ -200,6 +203,7 @@ $string['showposxy'] = 'Show position X and Y';
 $string['showposxy_desc'] = 'This will show the X and Y position when editing of an element, allowing the user to accurately specify the location.
 
 This isn\'t required if you plan on solely using the drag and drop interface for this purpose.';
+$string['subplugintype_customcertelement_plural'] = 'Elements';
 $string['taskemailcertificate'] = 'Handles emailing certificates.';
 $string['templatename'] = 'Template name';
 $string['templatenameexists'] = 'That template name is currently in use, please choose another.';

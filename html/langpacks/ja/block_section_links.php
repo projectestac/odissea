@@ -39,6 +39,6 @@ $string['pluginname'] = 'セクションリンク';
 $string['privacy:metadata'] = 'セクションリンクブロックは他の場所で保存されたデータのみ表示します。';
 $string['section_links:addinstance'] = '新しいセクションリンクブロックを追加する';
 $string['showsectionname'] = 'セクション名を表示する';
-$string['showsectionname_help'] = 'セクションナンバーに加えてセクション名を表示します。';
+$string['showsectionname_help'] = 'セクションナンバに加えてセクション名を表示します。';
 $string['topics'] = 'トピック';
 $string['weeks'] = '週';

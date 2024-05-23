@@ -41,13 +41,13 @@ Elemente der Liste können verborgen werden, indem Sie das danebenstehende \'Ver
 Wenn Sie die automatisch hinzugefügten Elemente wieder aus der Liste entfernen möchten, ändern Sie diese Einstellung auf \'Nein\' und klicken Sie auf \'Kurselemente entfernen\' auf der \'Bearbeiten\'-Seite.';
 $string['autoupdate'] = 'Abhaken, wenn Aktivitäten abgeschlossen sind';
 $string['autoupdate2'] = 'Abhaken, wenn Kurse oder Module abgeschlossen sind';
-$string['autoupdate2_help'] = 'Mit dieser Einstellung können die Einträge in Ihrer Fortschrittsliste automatisch abgehakt werden wenn die zugehörige Aktivität im Kurs abgeschlossen wurde.<br /> \'Abschließen\' variiert dabei von der einen zur anderen Aktivität - ein Arbeitsmaterial \'ansehen\', einen Test oder eine Aufgabe \'einreichen\', in einem Forum eine Nachricht \'schreiben\' oder an einem Chat \'teilnehmen\' etc.<br /> Wenn die Abschlussverfolgung für eine Aktivität aktiviert ist, wird diese genutzt um die Aktivität in der Fortschrittsliste abzuhaken.<br /> Bei Detailfragen, wann genau eine Aktivität als \'abgeschlossen\' markiert wird, bitten Sie bitte Ihren Administrator in die Datei \'mod/checklist/autoupdate.php\' zu sehen.<br /> Hinweis: Es kann, wenn Sie die Abschlussverfolgung nutzen, kurz dauern bis die Aktivität in der Fortschrittsliste eines Teilnehmers abgehakt ist.<br>
-Wenn ein Element mit einem Kurs verknüpft ist und dieser Kurs für ihn abgeschlossen ist, wird das Element aktualisiert, wenn dieser Kurs als abgeschlossen markiert ist.';
-$string['autoupdate_help'] = 'Mit dieser Einstellung können die Einträge in Ihrer Fortschrittsliste automatisch abgehakt werden wenn die zugehörige Aktivität im Kurs abgeschlossen wurde.<br />
-\'Abschließen\' variiert dabei von der einen zur anderen Aktivität - ein Arbeitsmaterial \'ansehen\', einen Test oder eine Aufgabe \'einreichen\', in einem Forum eine Nachricht \'schreiben\' oder an einem Chat \'teilnehmen\' etc.<br />
-Wenn die Abschlussverfolgung für eine Aktivität aktiviert ist, wird diese genutzt um die Aktivität in der Fortschrittsliste abzuhaken.<br />
-Bei Detailfragen, wann genau eine Aktivität als \'abgeschlossen\' markiert wird, bitten Sie bitte Ihren Administrator in die Datei \'mod/checklist/autoupdate.php\' zu sehen.<br />
-Hinweis: Es kann, wenn Sie die Abschlussverfolgung nutzen, kurz dauern bis die Aktivität in der Fortschrittsliste eines Teilnehmers abgehakt ist.';
+$string['autoupdate2_help'] = 'Diese Einstellung markiert Einträger in Ihrer Fortschrittsliste automatisch als abgeschlossen, wenn die zugehörige Aktivität im Kurs abgeschlossen wurde.<br />
+Wenn die Abschlussverfolgung für eine Aktivität aktiviert wurde, wird diese für die Markierung als abgeschlossen verwendet.<br>
+\'Abschließen\' variiert von einer Aktivität zur Anderen - ein Arbeitsmaterial \'ansehen\', einen Test oder eine Aufgabe \'einreichen\', in einem Forum eine Nachricht \'schreiben\' oder an einem Chat \'teilnehmen\' etc. Bei Fragen, wann genau eine Aktivität als \'abgeschlossen\' markiert wird, wenden Sie sich an Ihren Systemadministrator oder sehen Sie in der Datei \'mod/checklist/autoupdate.php\' nach.<br />
+Wenn ein Element mit einem Kurs verknüpft ist und in diesem Kurs die Abschlussverfolgung aktiviert ist, wird das Element aktualisiert, wenn dieser Kurs als abgeschlossen markiert wird.';
+$string['autoupdate_help'] = 'Diese Einstellung markiert Einträger in Ihrer Fortschrittsliste automatisch als abgeschlossen, wenn die zugehörige Aktivität im Kurs abgeschlossen wurde.<br />
+Wenn die Abschlussverfolgung für eine Aktivität aktiviert wurde, wird diese für die Markierung als abgeschlossen verwendet.<br>
+\'Abschließen\' variiert von einer Aktivität zur Anderen - ein Arbeitsmaterial \'ansehen\', einen Test oder eine Aufgabe \'einreichen\', in einem Forum eine Nachricht \'schreiben\' oder an einem Chat \'teilnehmen\' etc. Bei Fragen, wann genau eine Aktivität als \'abgeschlossen\' markiert wird, wenden Sie sich an Ihren Systemadministrator oder sehen Sie in der Datei \'mod/checklist/autoupdate.php\' nach.<br />';
 $string['autoupdatenote'] = 'Der Eintrag für "Teilnehmer/innen" wird automatisch abgehakt - auf "Nur Trainer/innen"-Fortschrittslisten werden keine automatischen Änderungen vorgenommen';
 $string['autoupdatewarning_both'] = 'Auf dieser Fortschrittsliste sind Elemente, die automatisch abgehakt werden (wenn Teilnehmer die entsprechende Aktivität abschließen). Da dies aber eine \'Teilnehmer-Trainer\'-Fortschrittsliste ist, wird der Fortschrittsbalken erst dann aktualisiert, wenn der Lehrer die Kennzeichnungen freigibt.';
 $string['autoupdatewarning_student'] = 'Auf dieser Fortschrittsliste sind Elemente, die automatisch abgehakt werden (wenn Teilnehmer die entsprechende Aktivität abschließen).';
@@ -91,7 +91,7 @@ $string['editdatesstart'] = 'Termine bearbeiten';
 $string['editdatesstop'] = 'Termine bearbeiten beenden';
 $string['edititem'] = 'Dieses Element bearbeiten';
 $string['emailoncomplete'] = 'E-Mail versenden, wenn die Fortschrittsliste erledigt ist';
-$string['emailoncomplete_help'] = 'Sobald eine Fortschrittsliste erledigt ist, kann eine Benachrichtigung sowohl an Teilnehmer/innen, die sie abgeschlossen hat, als auch an alle Trainer/innen des Kurses, versendet werden.<br />
+$string['emailoncomplete_help'] = 'Sobald eine Fortschrittsliste erledigt ist, kann eine Benachrichtigung sowohl an Teilnehmer/innen, die sie abgeschlossen haben, als auch an alle Trainer/innen des Kurses, versendet werden.<br />
 Der Administrator kann über die Berechtigung \'mod:checklist/emailoncomplete\' beeinflussen, wer die E-Mail erhält - standardmäßig sind das alle Trainer/innen mit und ohne Bearbeitungsrecht.';
 $string['emailoncompletebody'] = '{$a->user} hat die Fortschrittsliste \'{$a->checklist}\' im Kurs \'{$a->coursename}\' erledigt. Prüfen Sie die Ergebnisse hier:';
 $string['emailoncompletebodyown'] = 'Sie haben die Fortschrittsliste \'{$a->checklist}\' im Kurs {$a->coursename}\' erledigt.
@@ -101,6 +101,7 @@ $string['emailoncompletesubjectown'] = 'Sie haben die Fortschrittsliste \'{$a->c
 $string['enterurl'] = 'URL eingeben ...';
 $string['errorchecklistitemnotvalid'] = 'Die Fortschritslisten-Element-ID gehört nicht zu diesem Kursmodul!';
 $string['eventchecklistcomplete'] = 'Fortschrittsliste abgeschlossen';
+$string['eventchecklistupdated'] = 'Fortschrittsliste aktualisiert';
 $string['eventeditpageviewed'] = 'Bearbeiten-Seite angesehen';
 $string['eventreportviewed'] = 'Bericht angesehen';
 $string['eventstudentchecksupdated'] = 'Teilnehmermarkierungen aktualisiert';

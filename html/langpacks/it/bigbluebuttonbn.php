@@ -274,6 +274,7 @@ $string['guestaccess_meeting_invalid_password'] = 'Password errata.';
 $string['guestaccess_meeting_link'] = 'Collegamento al meeting';
 $string['guestaccess_meeting_password'] = 'Password del meeting';
 $string['guestaccess_password'] = 'Password';
+$string['guestaccess_title'] = 'Aggiungi ospiti al meeting';
 $string['guestaccess_username'] = 'Username dell\'ospite';
 $string['index_confirm_end'] = 'Vuoi terminare la sessione?';
 $string['index_disabled'] = 'disabilitato';

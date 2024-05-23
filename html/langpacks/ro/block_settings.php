@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Permite utilizatorului să acosteze acest bloc';
 $string['pluginname'] = 'Administrare';
 $string['privacy:metadata'] = 'Block-ul Administrare afișează doar date stocate în alte locuri.';
-$string['settings:addinstance'] = 'Adaugă un nou block administrare';
-$string['settings:myaddinstance'] = 'Adaugă un nou block administrare în Dashboard';
+$string['settings:addinstance'] = 'Adaugă un nou bloc administrare';
+$string['settings:myaddinstance'] = 'Adaugă un nou bloc administrare în Dashboard';

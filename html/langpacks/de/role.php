@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addinganewrole'] = 'Neue Rolle wird hinzugefügt';
+$string['addinganewrole'] = 'Neue Rolle hinzufügen';
 $string['addrole'] = 'Neue Rolle hinzufügen';
 $string['advancedoverride'] = 'Erweiterte Rollenänderung';
 $string['allow'] = 'Erlauben';
@@ -491,7 +491,7 @@ $string['user:changeownpassword'] = 'Eigenes Kennwort ändern';
 $string['user:create'] = 'Nutzer/innen anlegen';
 $string['user:delete'] = 'Nutzer/innen löschen';
 $string['user:editmessageprofile'] = 'Mitteilungseinstellungen';
-$string['user:editownmessageprofile'] = 'Eigenes Mitteilungsprofil bearbeiten';
+$string['user:editownmessageprofile'] = 'Eigenes Systemnachrichtenprofil bearbeiten';
 $string['user:editownprofile'] = 'Eigenes Nutzerprofil bearbeiten';
 $string['user:editprofile'] = 'Nutzerprofile bearbeiten';
 $string['user:ignoreuserquota'] = 'Obergrenze des Nutzerquota ignorieren';

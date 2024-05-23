@@ -32,7 +32,7 @@ $string['cohortnonmemberinfo'] = 'Soilik \'{$a}\' kohorteko kideak matrikula dai
 $string['cohortonly'] = 'Soilik kohorteko partaideak';
 $string['cohortonly_help'] = 'Matrikulazio automatikoa soilik kohorte bateko kideentzat egon daiteke eskuragarri. Kontuan izan ezarpen hau aldatzeak ez duela eraginik existitzen diren matrikulazioetan.';
 $string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
-$string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
+$string['customwelcomemessage'] = 'Pertsonalizatu ongi-etorria emateko mezua';
 $string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodleko formatu automatikoan, HTML etiketak eta etiketa eleaniztunak barne.
 
 Mezuan hurrengo gakoak sar daitezke:
@@ -108,8 +108,8 @@ $string['self:holdkey'] = 'Agertu matrikulazio automatikoaren gako-zain gisa';
 $string['self:manage'] = 'Kudeatu matrikulatutako erabiltzaileak';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';
-$string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
-$string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri e-maila jasoko dute. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
+$string['sendcoursewelcomemessage'] = 'Bidali ikastarorako ongi-etorri mezua';
+$string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi-etorri e-maila jasoko dute. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa ataza';
 $string['showhint'] = 'Erakutsi argibidea';
 $string['showhint_desc'] = 'Erakutsi gonbidatuen sarbide-gakoaren lehenbiziko letra';

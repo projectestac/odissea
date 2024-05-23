@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Gehitu kalifikazio-liburura';
 $string['allowframeembedding'] = 'Oharra: Gunearen kudeaketan \'Baimendu markoa enbotatzea\' gaituta egotea gomendatzen da, erremintak markoaren barruan erakuts daitezen, leiho berri batean izan beharrean.';
 $string['authltimustbeenabled'] = 'Oharra: Plugin honek LTI autentifikazio-plugina ere gaituta egotea behar du.';
 $string['cartridgeurl'] = 'Cartridge URLa';
+$string['cookiesarerequired'] = 'Zure nabigatzailea cookie-ak blokeatzen ari da';
+$string['cookiesarerequiredinfo'] = 'Ezin da tresna hau abiarazi zure nabigatzailea hirugarrengoen cookie-ak blokeatzen ari delako.
+<br><br>
+Tresna hau erabiltzeko, saiatu zure nabigatzailearen cookie-n ezarpenak aldatzen edo beste nabigatzaile bat erabiltzen saiatu zaitez.';
 $string['copiedtoclipboard'] = '{$a} arbelera kopiatu da';
 $string['copytoclipboard'] = 'Kopiatu arbelera';
 $string['couldnotestablishproxy'] = 'Ezin izan da proxy-a kontsumitzailearekin ezarri.';

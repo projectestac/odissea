@@ -26,6 +26,9 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 			$this->id = _hx_substr($tag, $s, $e - $s);
 		}
 	}}
+	public function getDeprecationWarnings() {
+		return $this->getImpl()->getDeprecationWarnings();
+	}
 	public function addNewSlotFromModel($slot) {
 		return $this->getImpl()->addNewSlotFromModel($slot);
 	}

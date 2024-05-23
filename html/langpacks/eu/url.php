@@ -74,7 +74,7 @@ URLaren helburua ondo deskribatzen duen testu esanguratsu bat idatzi ezazu.
 Ekidin ezazu "esteka" hitza. Honek pantaila-irakurleak erabiltzen dituzten erabiltzaileei lagunduko die pantaila-irakurleek estekak iragartzen dituztelako (esaterako "Moodle.org, esteka") eta beraz ez dago "esteka" hitza testuaren eremuan gehitzeko beharrik.';
 $string['page-mod-url-x'] = 'URL moduluaren edozein orria';
 $string['parameterinfo'] = '&amp;parametroa=aldagaia';
-$string['parametersheader'] = 'URL aldagaiak';
+$string['parametersheader'] = 'URLko aldagaiak';
 $string['parametersheader_help'] = 'Atal honek informazioa URLaren barruan bidaltzea ahalbidetzen dizu. Hau erabilgarria da URLa parametroak jasotzen dituen web-orri interaktibo batena bada eta esaterako oraingo erabiltzailearen izena bidali nahi baduzu. Idatzi zure URLko aldagaiaren izena testu-kutxan eta ondoren aukeratu guneko zein aldagairekin lotu behar den.';
 $string['pluginadministration'] = 'URLen kudeaketa';
 $string['pluginname'] = 'URLa';
@@ -85,7 +85,7 @@ $string['popupwidthexplain'] = 'Zehaztu popup leihoaren zabalera lehenetsia.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
 $string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
 $string['privacy:metadata'] = 'URLa baliabide-pluginak ez du datu pertsonalik biltzen.';
-$string['rolesinparams'] = 'Rol-izenak URLaren aldagaietan';
+$string['rolesinparams'] = 'Rol-izenak URLko aldagaietan';
 $string['search:activity'] = 'URLa';
 $string['serverurl'] = 'Zerbitzariaren URLa';
 $string['url:addinstance'] = 'Gehitu URL berria';

@@ -283,7 +283,7 @@ $string['configgeoipfile'] = 'Localização do ficheiro binário de dados do Geo
 $string['configgetremoteaddrconf'] = 'Se o acesso ao Moodle for feito através de um <em>Reverse Proxy</em> é possível especificar neste campo que cabeçalhos HTTP são mais fiávies para obter o endereço IP externo. Os cabeçalhos são lidos por ordem sendo usado o primeiro que se encontrar disponível.';
 $string['configgradebookroles'] = 'Esta opção permite controlar quem aparece na pauta. Só constarão na pauta duma disciplina os utilizadores com pelo menos um destes papéis nessa disciplina.';
 $string['configgradeexport'] = 'Selecione os formatos principais que usa para exportar as notas da pauta. Os módulos selecionados configurarão e usarão o campo "Última exportação" associado a cada nota. Por exemplo, isto poderá fazer com que os registos exportados sejam identificados como "novos" ou "atualizados". Se não tiver a certeza sobre como configurar esta opção, não selecione qualquer formato.';
-$string['confighiddenuserfields'] = 'Selecione os campos de informação do utilizador que pretende ocultar dos outros utilizadores, que não os professores e administradores. Isto aumentará a privacidade dos alunos. No Windows, mantenha pressionada a tecla Ctrl para selecionar vários campos.';
+$string['confighiddenuserfields'] = 'Selecione os campos de informação do utilizador que pretende ocultar dos outros utilizadores, que não os professores e administradores. Isto aumentará a privacidade dos alunos. No Windows, mantenha a tecla Ctrl pressionada para selecionar vários campos.';
 $string['configidnumber'] = 'Esta opção especifica se: (a) não é pedido aos utilizadores um número de identificação (ID), (b) é pedido um número de identificação (ID) aos utilizadores mas este pode ser deixado em branco, ou (c) é pedido um número de identificação (ID) aos utilizadores e este não pode ficar em branco. Se for fornecido, o número de identificação (ID) do utilizador será mostrado no seu perfil.';
 $string['configintro'] = 'Nesta página pode configurar as variáveis relacionadas com o correto funcionamento do Moodle no seu servidor. Não se preocupe muito com esta página - em geral, os valores por predefinição funcionam bem e poderá sempre voltar a esta página e mudar as configurações.';
 $string['configintroadmin'] = 'Nesta página deve configurar a sua conta de Administrador principal a qual terá um controlo absoluto de todo o site. Não se esqueça de indicar um nome de utilizador e senha seguros, bem como um endereço e-mail válido. Posteriormente poderá criar mais contas de Administrador.';
@@ -947,6 +947,7 @@ $string['opensslrecommended'] = 'É altamente recomendada a instalação da opci
 $string['opensslrequired'] = 'A extensão OpenSSL do PHP é agora obrigatória pelo Moodle para os melhores serviços criptográficos.';
 $string['opentowebcrawlers'] = 'Permitir acesso aos motores de busca';
 $string['optionalmaintenancemessage'] = 'Mensagem de manutenção (opcional)';
+$string['oracledatabaseinuse'] = 'Estamos a mudar o suporte do Oracle DB no Moodle LMS. A versão 4.5 do Moodle será a última versão que suportará Oracle como arquitetura de base de dados. Para mais informações, consulte <a href="https://moodle.org/mod/forum/discuss.php?d=456122"  target="_blank">aqui</a>';
 $string['order1'] = 'Primeiro';
 $string['order2'] = 'Segundo';
 $string['order3'] = 'Terceiro';
@@ -1500,22 +1501,23 @@ $string['upgradepluginsinfo_link'] = 'admin/upgradepluginsinfo';
 $string['upgradesettings'] = 'Novas configurações';
 $string['upgradesettingsintro'] = 'As configurações mostradas abaixo foram adicionadas durante a última atualização do Moodle. Modifique as que achar necessário e quando terminar clique no botão \'Guardar alterações\' no fim da página.';
 $string['upgradestalefiles'] = 'Foram detetados ficheiros de instalação inválidos. A atualização não pode continuar.';
-$string['upgradestalefilesinfo'] = 'O processo de atualização do Moodle foi interrompido porque foram detetados scripts PHP de, pelo menos, duas versões anteriores do Moodle na pasta do Moodle.
+$string['upgradestalefilesinfo'] = 'O processo de atualização do Moodle foi interrompido porque foram detetados scripts PHP de, pelo menos, duas versões maiores do Moodle na pasta do Moodle.
 
 Isto poderá causar problemas significativos mais tarde. Para prosseguir, deverá certificar-se que a pasta do Moodle contém apenas os ficheiros de uma única versão do Moodle.
 
-Recomenda-se o seguinte procedimento para limpar a sua pasta do Moodle:<br>
-* Atribua um novo nome à pasta atual do Moodle (por exemplo, "moodle_antiga");<br>
-* Crie uma nova pasta do Moodle que contenha apenas os ficheiros extraídos de um pacote Moodle ou a partir do repositório Moodle Git;<br>
-* Mova o ficheiro original \'config.php\' e todos os outros módulos não padrão da pasta "moodle_antiga" para a nova pasta do Moodle.
+Recomenda-se o seguinte procedimento para limpar a sua pasta do Moodle:
+
+* Atribua um novo nome à pasta atual do Moodle (por exemplo, "moodle_antiga")
+* Crie uma nova pasta do Moodle que contenha apenas os ficheiros extraídos de um pacote Moodle ou a partir do repositório Moodle Git
+* Mova o ficheiro original \'config.php\' e todos os outros módulos não padrão da pasta "moodle_antiga" para a nova pasta do Moodle
 
 Quando tiver uma pasta do Moodle limpa, recarregue esta página para retomar o processo de atualização do Moodle.
 
 Este aviso é frequentemente causado quando um pacote do Moodle é extraído de uma pasta comprimida (zip ou tgz) na mesma pasta de uma versão anterior do Moodle. Apesar de ser aceitável para atualizações menores, é altamente desaconselhado em atualizações maiores do Moodle.
 
-Este aviso também pode ser causado por uma verificação incompleta ou por uma operação de atualização a partir do repositório Git. Neste caso, terá de aguardar que a operação termine ou talvez executar o comando adequado de limpeza e repetir a operação.
+Este aviso também pode ser causado por uma verificação incompleta ou por uma operação de atualização a partir do repositório Git, que neste caso, terá de aguardar que a operação termine ou talvez executar o comando adequado de limpeza e repetir a operação.
 
-Pode obter mais informações sobre atualizações na documentação: <a href="{$a}">{$a}</a>.';
+Pode consultar mais informações sobre atualizações na documentação: <a href="{$a}">{$a}</a>.';
 $string['upgradestart'] = 'Atualizar agora a base de dados do Moodle';
 $string['upgradesure'] = '<p>Os ficheiros do seu Moodle foram alterados e está prestes a proceder à atualização do seu servidor para a nova versão:</p>
 <p><strong>{$a}</strong></p>

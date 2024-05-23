@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'JavaScript segurtasunaren araberako sarbide-araua';
+$string['pluginname'] = 'JavaScript segurtasunaren araberako galdetegietarako sarbide-araua';
 $string['popupwithjavascriptsupport'] = 'JavaScript segurtasuna duen pantaila osoko popup-a';
 $string['privacy:metadata'] = 'JavaScript segurtasunaren araberako galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';

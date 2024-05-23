@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['authpluginnotfound'] = 'Nu s-a găsit plugin-ul de autentificare {$a}.';
-$string['blocknotexist'] = 'Block-ul {$a} nu există.';
+$string['blocknotexist'] = 'Blocul {$a} nu există.';
 $string['cannotbenull'] = '{$a} nu poate fi nul!';
 $string['cannotdowngrade'] = 'Nu se poate face downgrade la {$a->plugin} de la {$a->oldversion} la {$a->newversion}.';
 $string['cannotfindadmin'] = 'Nu s-a găsit un administrator!';

@@ -41,6 +41,7 @@ t = timp
 v = vocabular
 ... = semne de punctuație
 ? = altele';
+$string['corrtypes_desc'] = 'Te rugăm să inserezi câte un tip de corectură pe rând în formularul "abreviere = descriere".<br><strong>Avertizare:</strong> fiecare abreviere trebuie să fie unică!';
 $string['dialogtitle'] = 'Adaugă/Modifică o corectură';
 $string['displayfulltext'] = 'Afișează text cu corecturi';
 $string['fulltexttitle'] = 'Text cu corecturi';

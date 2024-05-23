@@ -39,5 +39,5 @@ $string['tagcollection'] = 'Colecția de etichete';
 $string['tagcollection_help'] = 'Selectați colecția de etichete din care să afișați etichete. Dacă alegeți „Orice” vor fi afișate etichetele din toate colecțiile, cu excepția celor marcate cu *';
 $string['taggeditemscontext'] = 'Contextul articolelor etichetate';
 $string['taggeditemscontext_help'] = 'Puteți limita norul de etichete la etichetele care sunt prezente în categoria de curs, curs sau module';
-$string['tags:addinstance'] = 'Adaugă un nou block etichete';
-$string['tags:myaddinstance'] = 'Adaugă un nou block etichete în Tabloul de bord';
+$string['tags:addinstance'] = 'Adaugă un nou bloc etichete';
+$string['tags:myaddinstance'] = 'Adaugă un nou bloc etichete în Tabloul de bord';

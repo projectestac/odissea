@@ -21,7 +21,11 @@ class com_wiris_quizzes_impl_QuestionRequestImpl extends com_wiris_util_xml_Seri
 		if($this->processes === null) {
 			$this->processes = new _hx_array(array());
 		}
-		$this->processes->push($p);
+		if(Std::is($p, _hx_qtype("com.wiris.quizzes.impl.ProcessGetVariables"))) {
+			$this->processes->insert(0, $p);
+		} else {
+			$this->processes->push($p);
+		}
 	}
 	public function variables($names, $type) {
 		$p = new com_wiris_quizzes_impl_ProcessGetVariables();

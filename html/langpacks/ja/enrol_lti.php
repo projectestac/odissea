@@ -35,6 +35,10 @@ $string['addtogradebook'] = '評定表に追加する';
 $string['allowframeembedding'] = '注意: ツールを新しいウィンドウではなくフレーム内に表示するため、サイト管理設定「フレーム内埋め込みを許可する」を有効にすることをお勧めします。';
 $string['authltimustbeenabled'] = '注意: このプラグインではLTI認証プラグインも有効にする必要があります。';
 $string['cartridgeurl'] = 'カートリッジURL';
+$string['cookiesarerequired'] = 'あなたのブラウザでクッキーがブロックされいます。';
+$string['cookiesarerequiredinfo'] = 'あなたのブラウザがサードパーティのクッキーをブロックしているため、このツールを起動できません。
+<br><br>
+このツールを使用するにはブラウザのクッキー設定を変更するか、別のブラウザを使用してください。';
 $string['copiedtoclipboard'] = '{$a} がクリップボードにコピーされました。';
 $string['copytoclipboard'] = 'クリップボードにコピーする';
 $string['couldnotestablishproxy'] = 'コンシューマでプロキシを確立できませんでした。';

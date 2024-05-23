@@ -29,5 +29,5 @@ $string['displaycategories'] = 'Afișați categoriile';
 $string['displaycategories_help'] = 'Afișați categoria de cursuri pe elementele blocului de cursuri recent accesate.';
 $string['nocourses'] = 'Nu există cursuri recente';
 $string['pluginname'] = 'Cursuri accesate recent';
-$string['privacy:metadata'] = 'Block-ul Cursuri accesate recent nu stochează date personale.';
-$string['recentlyaccessedcourses:myaddinstance'] = 'Adaugă un nou block Cursuri accesate recent pe Panoul de Bord';
+$string['privacy:metadata'] = 'Bloc-ul Cursuri accesate recent nu stochează date personale.';
+$string['recentlyaccessedcourses:myaddinstance'] = 'Adaugă un nou bloc Cursuri accesate recent pe Panoul de Bord';

@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['Error'] = 'Σφάλμα';
-$string['Info'] = 'Πληροφορίες';
-$string['Warning'] = 'Προειδοποίηση';
 $string['actionlink_delete'] = 'διαγραφή';
 $string['actionlink_edit'] = 'επεξεργασία';
 $string['actionlink_eval'] = 'βαθμός';
@@ -249,12 +246,6 @@ $string['infobox_slotoverview_title'] = 'Επισκόπηση χρονοθυρί
 $string['invalidgrouping'] = 'Πρέπει να επιλεγεί μια έγκυρη ομαδοποίηση!';
 $string['inwaitingqueue'] = 'Λίστα αναμονής';
 $string['isgrouporganizer'] = 'Ομαδικά ραντεβού';
-$string['legend_anonymous'] = 'Ανώνυμη χρονοθυρίδα';
-$string['legend_comments'] = 'Σχόλια Μαθητή / Διδάσκοντα';
-$string['legend_due'] = 'Η χρονοθυρίδα έληξε';
-$string['legend_evaluated'] = 'Η χρονοθυρίδα αξιολογήθηκε';
-$string['legend_feedback'] = 'Ανατροφοδότηση διδάσκοντα';
-$string['legend_section_status'] = 'Εικονίδια κατάστασης';
 $string['location'] = 'Τοποθεσία';
 $string['message_custommessage'] = 'Προσαρμοσμένο μήνυμα';
 $string['min'] = 'λεπτό';

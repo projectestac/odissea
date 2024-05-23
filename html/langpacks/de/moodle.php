@@ -712,9 +712,9 @@ $string['emaildisplay_help'] = '* Verborgen - ausschließlich entsprechend berec
 * Sichtbar für alle - Alle auf der Website können die E-Mail-Adresse sehen
 * Sichtbar für Teilnehmer/innen im Kurs - Nur Teilnehmer/innen, die in Ihren Kursen eingeschrieben sind, können die E-Mail-Adresse sehen';
 $string['emaildisplaycourse'] = 'Sichtbar für Teilnehmer/innen im Kurs';
-$string['emaildisplaycoursemembersonly'] = '(sichtbar für andere Teilnehmer/innen im Kurs)';
+$string['emaildisplaycoursemembersonly'] = '(sichtbar für Teilnehmer/innen im Kurs)';
 $string['emaildisplayeveryone'] = '(sichtbar für alle)';
-$string['emaildisplayhide'] = '(Verborgen außer für entsprechend berechtigte Personen)';
+$string['emaildisplayhide'] = '(verborgen außer für entsprechend berechtigte Personen)';
 $string['emaildisplayno'] = 'Verborgen';
 $string['emaildisplayyes'] = 'Sichtbar für alle';
 $string['emailenable'] = 'E-Mail-Adresse ist aktiviert';
@@ -1007,7 +1007,7 @@ $string['grade'] = 'Bewertung';
 $string['gradenoun'] = 'Bewertung';
 $string['grades'] = 'Bewertungen';
 $string['gradeverb'] = 'Bewerten';
-$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatar</a> ist für diese Website aktiviert. Wenn Sie kein eigenes Profilbild hochladen, zeigt Moodle ein Profilbild von Gravatar an.';
+$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatar</a> ist für diese Website aktiviert. Wenn Sie selber kein eigenes Profilbild hochladen, zeigt Moodle ein Profilbild von Gravatar an.';
 $string['group'] = 'Gruppe';
 $string['groupadd'] = 'Neue Gruppe hinzufügen';
 $string['groupaddusers'] = 'Auswahl zur Gruppe hinzufügen';

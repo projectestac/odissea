@@ -308,7 +308,7 @@
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_helper_text": "Definiu la vostra pròpia funció d'avaluació de la resposta de l'estudiante al panell per definir variables aleatòries i funcions.",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_name_dropdown_label": "Nom de la funció",
 		"quizzes_studio_validation_options_student_answer_comparison_custom_grading_function_define_function_button_label": "Definiu una nova funció",
-		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "No avaluïs els arguments",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Sense avaluar",
 		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_helper_text": "La resposta de l'estudiant no s'avaluarà i es passarà com una expressió de CalcMe a la funció d'avaluació. Aquesta opció és molt avançada.",
 
 		"quizzes_studio_validation_options_numbers_title": "Nombres",
@@ -627,7 +627,21 @@
 		"quizzes_demo_sketch_title_menu" : "Esbós",
 		"home_getting_started_documentation_button_text" : "Documentació", 
 
-		"close_mathtype_popup" : "Tancar MathType"
+		"close_mathtype_popup" : "Tancar MathType",
+
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_evaluated_label": "Avaluada",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_unevaluated_label": "Sense avaluar",
+		"quizzes_studio_validation_options_student_answer_comparison_keep_arguments_string_label": "Text",
+		"quizzes_studio_validation_options_student_answer_comparison_arguments_helper_text": "Definiu com es passarà la resposta de l'estudiant com a argument a la funció d'avaluació. Aquesta opció és molt avançada.",
+
+		"quizzes_studio_import_deprecated_message_title" : "Opcions obsoletes",
+		"quizzes_studio_import_deprecated_message_text" : "La pregunta que voleu importar fa servir opcions obsoletes. És possible que el comportament de la pregunta canvii lleugerament al ser importada. Si us plau, comproveu que la vostra pregunta sigueix funcionant com espereu abans de desar els canvis. \n    Les opcions obsoletes son les següents:",
+
+		"quizzes_studio_equivalent_set_assertion": "Igual com a llista ja no està disponible",
+		"quizzes_studio_syntax_list_assertion": "Llista ja no està disponible",
+		"quizzes_studio_text_logic_operators" : "Operadors lògics ja no estan disponibles",
+		"quizzes_studio_equivalent_unit_literal" : "Unitat literalment equivalent ja no està disponible"
+
 	}
 }
 

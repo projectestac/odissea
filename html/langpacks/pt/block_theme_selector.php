@@ -25,9 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aliasedtheme'] = 'Nome a usar para o tema {$a}';
+$string['aliasedtheme_desc'] = 'O texto inserido aqui será usado em vez do nome do tema no seletor';
 $string['by'] = 'por';
 $string['changetheme'] = 'Alterar tema:';
 $string['createwindow'] = 'Criar janela';
+$string['excludedthemes'] = 'Temas excluídos';
+$string['excludedthemes_desc'] = 'Os temas excluídos não estarão disponíveis para seleção.';
 $string['pluginname'] = 'Mudar Tema';
 $string['resetthemecache'] = 'Apagar cache dos temas';
 $string['siteconfigwarning'] = 'Apenas os utilizadores com a permissão \'moodle/site:config\' podem mudar os temas. Peça a um utilizador que tenha a capacidade de ativar \'Switching URL\' para o bloco.';

@@ -38,7 +38,7 @@ $string['quotas_updated'] = 'La informació d\'ús de la quota s\'ha actualitzat
 $string['lastest_update'] = 'Darrera actualització';
 $string['update_long_time'] = 'La informació mostrada pot no estar actualitzada. Podeu fer clic al botó següent per actualitzar-la. Si la vostra quota és molt gran és possible que doni error. En aquest cas, contacteu-nos al fòrum per demanar que us l\'actualitzin';
 $string['update_now'] = 'Actualitza ara';
-$string['disk_quota_missing'] = 'Hi ha {$a} GB que no estan localitzats';
+$string['disk_quota_missing'] = 'Hi ha {$a} MB que no estan localitzats';
 
 // File manager
 $string['filemanager'] = 'Gestor de fitxers';

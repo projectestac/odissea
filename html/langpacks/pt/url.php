@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escolha uma variável…';
 $string['clicktoopen'] = 'Clique em {$a} para abrir o recurso.';
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as onfigurações existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis. As configurações existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página Web ou um ficheiro é exibido numa frame, este valor é a altura (em píxeis) da frame superior (que contém a barra de navegação).';
 $string['configrolesinparams'] = 'Os nomes dos papéis locais (das configurações das disciplinas) devem estar disponíveis como parâmetros do URL?';
 $string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um código encriptado que pode ser enviado para alguns servidores como parâmetro. O código  encriptado é produzido por um valor md5 do endereço IP do utilizador atual concatenado com a sua frase secreta. Isto é, código = md5(IP.frasesecreta). Tenha em atenção que não é fiável porque o endereço IP pode mudar e muitas vezes é partilhado por diferentes computadores.';
@@ -84,9 +84,9 @@ $string['parametersheader_help'] = 'Esta secção permite que passe informaçõe
 $string['pluginadministration'] = 'Administração do URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Altura da janela pop-up (em píxeis)';
-$string['popupheightexplain'] = 'Especifique a altura predefinida da janela de pop-up.';
+$string['popupheightexplain'] = 'Especifique a altura predefinida da janela pop-up.';
 $string['popupwidth'] = 'Largura da janela pop-up (em píxeis)';
-$string['popupwidthexplain'] = 'Especifique a largura predefinida da janela de pop-up.';
+$string['popupwidthexplain'] = 'Especifique a largura predefinida da janela pop-up.';
 $string['printintro'] = 'Mostrar descrição do URL';
 $string['printintroexplain'] = 'Mostrar a descrição do URL abaixo do conteúdo? Alguns modos de exibição não apresentam a descrição do recurso, mesmo com esta configuração ativa.';
 $string['privacy:metadata'] = 'O módulo do recurso URL não armazena quaisquer dados pessoais.';

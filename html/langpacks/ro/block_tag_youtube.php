@@ -51,5 +51,5 @@ $string['privacy:metadata'] = 'Blocarea YouTube afișează doar datele stocate �
 $string['requesterror'] = 'Datele nu au putut fi obținute de la server. Contactați administratorul, dacă problema persistă.';
 $string['scienceandtech'] = 'Știință și Tehnologie';
 $string['sports'] = 'Sport';
-$string['tag_youtube:addinstance'] = 'Adăugați un nou block YouTube';
+$string['tag_youtube:addinstance'] = 'Adăugați un nou bloc YouTube';
 $string['travel'] = 'Călătorii și Destinaţii';

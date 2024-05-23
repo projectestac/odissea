@@ -116,7 +116,7 @@ class qtype_wq_question extends question_graded_automatically {
             $response = $this->call_wiris_service($request);
             $this->wirisquestioninstance->update($response);
             // Save the result.
-             $step->set_qt_var('_qi', $this->wirisquestioninstance->serialize());
+            $step->set_qt_var('_qi', $this->wirisquestioninstance->serialize());
         }
     }
 
@@ -239,9 +239,8 @@ class qtype_wq_question extends question_graded_automatically {
             !empty($newresponse['_sqi']) && $newresponse['_sqi'] == $prevresponse['_sqi']));
         $auxiliarcompare = ((empty($newresponse['auxiliar_text']) && empty($prevresponse['auxiliar_text'])) ||
             (!empty($prevresponse['auxiliar_text']) &&
-            !empty($newresponse['auxiliar_text']) && $newresponse['auxiliar_text'] == $prevresponse['auxiliar_text']));
+                !empty($newresponse['auxiliar_text']) && $newresponse['auxiliar_text'] == $prevresponse['auxiliar_text']));
         return $baseresponse && $sqicompare && $auxiliarcompare;
-
     }
 
     public function summarise_response(array $response) {
@@ -277,8 +276,14 @@ class qtype_wq_question extends question_graded_automatically {
         return $this->expand_variables_text($text);
     }
     public function format_hint(question_hint $hint, question_attempt $qa) {
-        return $this->format_text($hint->hint, $hint->hintformat, $qa,
-                'question', 'hint', $hint->id);
+        return $this->format_text(
+            $hint->hint,
+            $hint->hintformat,
+            $qa,
+            'question',
+            'hint',
+            $hint->id
+        );
     }
     /**
      * interface question_automatically_gradable_with_countback
@@ -332,11 +337,17 @@ class qtype_wq_question extends question_graded_automatically {
     public function call_wiris_service($request) {
         global $COURSE;
         global $USER;
+        global $CFG;
 
         $builder = com_wiris_quizzes_api_Quizzes::getInstance();
         $metaproperty = ((!empty($COURSE) ? $COURSE->id : '') . '/' . (!empty($question) ? $question->id : ''));
+
+        // Add meta properties
         $request->addMetaProperty('questionref', $metaproperty);
         $request->addMetaProperty('userref', (!empty($USER) ? $USER->id : ''));
+        $request->addMetaProperty('qtype', $this->qtype->name());
+        $request->addMetaProperty('wqversion', $builder->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$VERSION));
+        $request->addMetaProperty('moodleversion', explode(' ', $CFG->release)[0]);
 
         $service = $builder->getQuizzesService();
 

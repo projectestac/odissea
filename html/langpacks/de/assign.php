@@ -39,11 +39,11 @@ $string['addnewattemptfromprevious'] = 'Neuen Versuch basierend auf der vorherig
 $string['addnewattemptfromprevious_help'] = 'Hiermit kopieren Sie den Inhalt Ihrer vorherigen Lösung, um eine neue Lösung zu erstellen.';
 $string['addnewgroupoverride'] = 'Gruppenänderung hinzufügen';
 $string['addnewuseroverride'] = 'Nutzeränderung hinzufügen';
-$string['addsubmission'] = 'Abgabe hinzufügen';
+$string['addsubmission'] = 'Aufgabenlösung hinzufügen';
 $string['addsubmission_help'] = 'Sie haben bisher keine Lösungen abgegeben.';
 $string['allocatedmarker'] = 'Zugeordnete/r Bewerter/in';
-$string['allocatedmarker_help'] = 'Bewerter/in, der/die dieser Abgabe zugeordnet ist';
-$string['allowsubmissions'] = 'Nutzer/in erlauben, für diese Aufgabe weiter Lösungen abzugeben';
+$string['allocatedmarker_help'] = 'Person, der diese Abgabe zur Bewertung zugeordnet ist';
+$string['allowsubmissions'] = 'Nutzer/in erlauben, für diese Aufgabe weitere Lösungen abzugeben';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Die Aufgabendetails und die Lösungsabgabe sind verfügbar ab <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Abgabebeginn';
 $string['allowsubmissionsfromdate_help'] = 'Wenn diese Option aktiviert ist, können Lösungen nicht vor diesem Zeitpunkt abgegeben werden. Wenn diese Option deaktiviert ist, ist die Abgabe sofort möglich.';
@@ -106,7 +106,7 @@ $string['attemptreopenmethod_help'] = 'Die Einstellung legt fest, ob Teilnehmer/
 
 * Nie - Es ist nur ein Versuch möglich.
 * Manuell - Zusätzliche Versuche können von Trainer/innen zugelassen werden.
-* Automatisch bis zum Bestehen - Zusätzliche Versuche sind automatisch zulässig, bis Teilnehmer/innen die im Notenbuch für diese Aufgabe festgelegte Bestehensnote erreicht haben.';
+* Automatisch bis zum Bestehen - Zusätzliche Versuche sind automatisch zulässig, bis Teilnehmer/innen die für diese Aufgabe in den Bewertungen festgelegte Bestehensgrenze erreicht haben.';
 $string['attemptreopenmethod_manual'] = 'Manuell';
 $string['attemptreopenmethod_none'] = 'Nie';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch bis zum Bestehen';
@@ -266,7 +266,7 @@ $string['fixrescalednullgradesconfirm'] = 'Möchten Sie die fehlerhaften Bewertu
 $string['fixrescalednullgradesdone'] = 'Bewertungen korrigiert';
 $string['gradeabovemaximum'] = 'Bewertung muss kleiner oder gleich {$a} sein.';
 $string['gradebelowzero'] = 'Bewertung muss größer oder gleich Null sein.';
-$string['gradebreakdown'] = 'Notenaufschlüsselung';
+$string['gradebreakdown'] = 'Bewertungsaufschlüsselung';
 $string['gradecanbechanged'] = 'Bewertung kann geändert werden';
 $string['gradechangessaveddetail'] = 'Die Änderungen für Bewertung und Feedback wurden gespeichert.';
 $string['graded'] = 'Bewertet';

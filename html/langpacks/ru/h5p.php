@@ -292,3 +292,4 @@ $string['year'] = 'Год';
 $string['years'] = 'Год(ы)';
 $string['yearsfrom'] = 'Годы (с)';
 $string['yearsto'] = 'Годы (до)';
+$string['zip'] = 'Zip';

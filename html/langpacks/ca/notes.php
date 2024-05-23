@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Afegeix una nota nova a {$a} persones';
+$string['addbulknotedone'] = 'Nota afegida a {$a} persones';
+$string['addbulknotedonesingle'] = 'Nota afegida a 1 persona';
+$string['addbulknotesingle'] = 'Afegeix una nota nova a 1 persona';
 $string['addnewnote'] = 'Afegeix una anotació';
 $string['addnewnoteselect'] = 'Selecciona usuaris per fer-hi anotacions';
 $string['author'] = 'Autor/a';
@@ -57,11 +61,19 @@ $string['page-notes-index'] = 'Pàgina principal d\'anotacions';
 $string['page-notes-x'] = 'Qualsevol pàgina d\'anotacions';
 $string['personal'] = 'personal';
 $string['personalnotes'] = 'Anotacions personals';
+$string['privacy:metadata:core_notes'] = 'El component Notes emmagatzema les notes d\'usuari dins del nucli del subsistema.';
+$string['privacy:metadata:core_notes:content'] = 'El contingut de la nota.';
+$string['privacy:metadata:core_notes:courseid'] = 'L\'ID del curs associat amb la nota';
+$string['privacy:metadata:core_notes:created'] = 'La data/hora de creació de la nota.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'La darrera data/hora modificada de la nota.';
+$string['privacy:metadata:core_notes:publishstate'] = 'L\'estat de publicació de la nota.';
+$string['privacy:metadata:core_notes:userid'] = 'L\'ID de l\'usuari associat amb la nota';
 $string['publishstate'] = 'Context';
 $string['publishstate_help'] = 'El context d\'una anotació determina qui la pot veure.
 * Personal - L\'anotació serà visible només per a vós
 * Curs - L\'anotació serà visible per al professorat del curs
 * Lloc - L\'anotació serà visible per al professorat de tots els cursos';
+$string['recipient'] = 'Destinatari';
 $string['site'] = 'Lloc';
 $string['sitenotes'] = 'Anotacions del lloc';
 $string['unknown'] = 'desconegut';

@@ -82,6 +82,7 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_USE_SPACES, com_wiris_quizzes_api_assertion_ComparisonParameterName::$MATCH_SPACES);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_ELEMENTS_TO_GRADE, com_wiris_quizzes_api_assertion_ComparisonParameterName::$ELEMENTS_TO_GRADE);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_NOT_EVALUATE, com_wiris_quizzes_api_assertion_ComparisonParameterName::$NOT_EVALUATE);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_FUNCTION_ARGUMENT_MODE, com_wiris_quizzes_api_assertion_ComparisonParameterName::$FUNCTION_ARGUMENT_MODE);
 		}
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonParameterNames;
 	}

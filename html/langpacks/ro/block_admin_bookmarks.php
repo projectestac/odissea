@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_bookmarks:addinstance'] = 'Adaugă un nou block admin bookmarks';
-$string['admin_bookmarks:myaddinstance'] = 'Adaugă un nou block admin bookmarks în Dashboard';
+$string['admin_bookmarks:addinstance'] = 'Adaugă un nou bloc admin bookmarks';
+$string['admin_bookmarks:myaddinstance'] = 'Adaugă un nou bloc admin bookmarks în Dashboard';
 $string['pluginname'] = 'Favorite Admin';
 $string['privacy:metadata'] = 'Blocul de marcaje Admin afișează doar datele stocate în alte locații.';

@@ -289,7 +289,7 @@ $string['donotaward'] = 'Derzeit ist der Badge nicht verfügbar, d.h. er kann ni
 $string['enablebadges'] = 'Badges aktivieren';
 $string['endorsement'] = 'Bestätigung';
 $string['error:backpackdatainvalid'] = 'Die vom Backpack gelieferten Daten sind ungültig!';
-$string['error:backpackemailnotfound'] = 'Die E-Mail \'{$a}\' ist nicht mit einem Backpack verbunden. Sie müssen sich für dieses Konto ein <a href="http://backpack.openbadges.org">Backpack anlegen</a> oder sich mit einer anderen E-Mail-Adresse anmelden.';
+$string['error:backpackemailnotfound'] = 'Die E-Mail \'{$a}\' ist nicht mit einem Backpack verbunden. Sie müssen sich für dieses Konto ein <a href="https://backpack.openbadges.org">Backpack anlegen</a> oder sich mit einer anderen E-Mail-Adresse anmelden.';
 $string['error:backpacknotavailable'] = 'Die Website ist nicht aus dem Internet erreichbar. Die Badges, die auf dieser Website verliehen werden, können von externen Backpack-Diensten nicht verifiziert werden.';
 $string['error:backpackproblem'] = 'Die Verbindung zu Ihrem Backpack-Provider ist fehlgeschlagen. Versuchen Sie es später noch einmal.';
 $string['error:badgeawardnotfound'] = 'Dieser Badge kann nicht verifiziert werden. Möglicherweise wurde er zurückgezogen.';

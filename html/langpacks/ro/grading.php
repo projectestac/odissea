@@ -39,7 +39,7 @@ $string['gradingmanagementtitle'] = 'Notare avansată: {$a->component} ({$a->are
 $string['gradingmethod'] = 'Metodă de notare';
 $string['gradingmethod_help'] = 'Alegeți metoda de notare avansată care ar trebui să fie utilizată pentru calcularea notelor în contextul dat.
 
-Pentru a dezactiva notarea avansată și a reveni la mecanismul de notare implicit, alegeți "clasificare directă simplă".';
+Pentru a dezactiva notarea avansată și a reveni la mecanismul de notare implicit, alegeți "Notare simplă directă".';
 $string['gradingmethodnone'] = 'Notare simplă directă';
 $string['gradingmethods'] = 'Metode de notare';
 $string['manageactionclone'] = 'Creează formular nou de notare dintr-un șablon';

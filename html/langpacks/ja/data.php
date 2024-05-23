@@ -29,7 +29,7 @@ $string['action'] = '操作';
 $string['actionsmenu'] = 'アクションメニュー';
 $string['add'] = 'エントリを追加する';
 $string['addcomment'] = 'コメントを追加する';
-$string['addedby'] = '翻訳:';
+$string['addedby'] = '追加:';
 $string['addentries'] = 'エントリを追加する';
 $string['addtemplate'] = 'エントリテンプレートを追加する';
 $string['advancedsearch'] = '高度な検索';
@@ -193,7 +193,7 @@ $string['fieldids'] = 'フィールドID';
 $string['fieldmappings'] = 'フィールドマッピング';
 $string['fieldmappings_help'] = 'このメニューでは既存のデータベースのデータを保持することができます。フィールドのデータを保持するにはそのフィールドをデータが表示されることになる新しいフィールドにマップする必要があります。どのフィールドでも空白のまましてデータをコピーしないこともできます。新しいフィールドにマップされない古いフィールドおよび関連するすべてのデータは削除されます。
 
-あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンメニューには他のフィールドも表示される場合があります。古いフィールドを2個以上の新しいフィールドにマップしないよう気をつけてください。';
+あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンメニューにはその他のフィールドも表示される場合があります。古いフィールドを2個以上の新しいフィールドにマップしないよう気をつけてください。';
 $string['fieldname'] = 'フィールド名';
 $string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'あなたのファイル内の次のフィールドは不明なフィールドです: {$a}';
@@ -263,7 +263,7 @@ $string['latlongboth'] = '緯度および経度の両方とも必須です。';
 $string['latlongdownloadallhint'] = 'すべてのエントリのリンクをKMLとしてダウンロードする';
 $string['latlongkmllabelling'] = 'KMLファイル (Google Earth) でのラベルのつけ方';
 $string['latlonglinkservicesdisplayed'] = '表示するLink-outサービス';
-$string['latlongotherfields'] = '他のフィールド';
+$string['latlongotherfields'] = 'その他のフィールド';
 $string['list'] = '一覧表示';
 $string['listtemplate'] = '一覧表示用テンプレート';
 $string['listview'] = 'リストビュー';

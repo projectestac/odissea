@@ -62,10 +62,11 @@ $string['gradingtype_help'] = 'Wählen Sie die Art, wie die Bewertung berechnet 
 : Ein Element wird als richtig betrachtet, wenn das vorausgehende und das nachfolgende Element sich auf den gleichen Positionen befinden wie in der Musterlösung. Die Reihenfolge der vorausgehenden und der nachfolgenden Elemente ist nicht von Belang. Daraus folgt, wenn ***n*** Elemente dem/der Teilnehmer/in präsentiert werden, ist die Anzahl der Bewertungen für jedes Element ***(n-1)***. Die höchst mögliche Punktzahl für die Frage ist ***n x (n -1)***, was dasselbe ist wie ***(n^2 - n)***
 
 **Längste geordnete Teilmenge **
-: Die Note ergibt sich aus der längsten geordneten Teilmenge. Die höchst mögliche Punktzahl entspricht der Anzahl der dargestellten Elemente. Eine Teilmenge muss aus mindestens zwei Elementen bestehen. Teilmengen müssen nicht beim ersten Element anfangen (was sie aber können) und sie müssen auch nicht zusammenhängend sein (aber sie können es sein). Wenn es mehrere Teilmengen derselben Länge gibt, werden die Elemente, der zuerst gefundenen Teilmenge bei der Suche von links nach rechts, als richtig angezeigt. Andere Elemente werden als falsch markiert.
+: Die Bewertung ergibt sich aus der längsten geordneten Teilmenge. Die höchst mögliche Punktzahl entspricht der Anzahl der dargestellten Elemente. Eine Teilmenge muss aus mindestens zwei Elementen bestehen. Teilmengen müssen nicht beim ersten Element anfangen (was sie aber können) und sie müssen auch nicht zusammenhängend sein (aber sie können es sein). Wenn es mehrere Teilmengen derselben Länge gibt, werden die Elemente, der zuerst gefundenen Teilmenge bei der Suche von links nach rechts, als richtig angezeigt. Andere Elemente werden als falsch markiert.
 
 **Längste zusammenhängende Teilmenge**
-: Die Note ergibt sich aus der Anzahl der Elemente der längsten zusammenhängenden Teilmenge.  Die höchst mögliche Punktzahl entspricht der Anzahl der dargestellten Elemente. Eine Teilmenge muss aus mindestens zwei Elementen bestehen. Teilmengen müssen nicht beim ersten Element anfangen (was sie aber können) aber sie MÜSSEN zusammenhängend sein. Wenn es mehrere Teilmengen derselben Länge gibt, werden die Elemente, der zuerst gefundenen Teilmenge bei der Suche von links nach rechts, als richtig angezeigt. Andere Elemente werden als falsch markiert.';
+: Die Bewertung ergibt sich aus der Anzahl der Elemente der längsten zusammenhängenden Teilmenge.  Die höchst mögliche Punktzahl entspricht der Anzahl der dargestellten Elemente. Eine Teilmenge muss aus mindestens zwei Elementen bestehen. Teilmengen müssen nicht beim ersten Element anfangen (was sie aber können) aber sie MÜSSEN zusammenhängend sein. Wenn es mehrere Teilmengen derselben Länge gibt, werden die Elemente, der zuerst gefundenen Teilmenge bei der Suche von links nach rechts, als richtig angezeigt. Andere Elemente werden als falsch markiert.';
+$string['highlightresponse'] = 'Antwort als richtig oder falsch markieren';
 $string['horizontal'] = 'Horizontal';
 $string['layouttype'] = 'Anordnung der Elemente';
 $string['layouttype_help'] = 'Auswählen, ob die Elemente vertikal oder horizontal angeordnet werden sollen.';
@@ -91,6 +92,7 @@ $string['pluginnameediting'] = 'Eine Anordnungsfrage bearbeiten';
 $string['pluginnamesummary'] = 'Ordnen Sie die zufällig angeordneten Elemente in eine sinnvolle Reihenfolge.';
 $string['positionx'] = 'Position {$a}';
 $string['privacy:metadata'] = 'Der Fragetyp \'Anordnung\' speichert keine personenbezogenen Daten.';
+$string['regradeissuenumitemschanged'] = 'Die Anzahl der beweglichen Elemente hat sich geändert.';
 $string['relativeallpreviousandnext'] = 'Relativ zu ALLEN vorausgehenden und nachfolgenden Elementen';
 $string['relativenextexcludelast'] = 'Relativ zum nächsten Element (letztes Element ausgeschlossen)';
 $string['relativenextincludelast'] = 'Relativ zum nächsten Element (letztes Element eingeschlossen)';

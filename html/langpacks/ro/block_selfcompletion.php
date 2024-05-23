@@ -29,5 +29,5 @@ $string['alreadyselfcompleted'] = 'V-ați marcat deja ca fiind complet în acest
 $string['completecourse'] = 'Curs complet';
 $string['pluginname'] = 'Auto finalizare';
 $string['privacy:metadata'] = 'Blocul de completare automată arată doar datele stocate în alte locații.';
-$string['selfcompletion:addinstance'] = 'Adaugă un nou block auto completare';
+$string['selfcompletion:addinstance'] = 'Adaugă un nou bloc auto completare';
 $string['selfcompletionnotenabled'] = 'Criteriul de auto finalizare nu a fost activat pentru acest curs';

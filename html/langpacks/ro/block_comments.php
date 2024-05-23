@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['comments:addinstance'] = 'Adaugă un nou block comentarii';
-$string['comments:myaddinstance'] = 'Adăugați un nou block comentarii în Tabloul de bord';
+$string['comments:addinstance'] = 'Adaugă un nou bloc comentarii';
+$string['comments:myaddinstance'] = 'Adăugați un nou bloc comentarii în Tabloul de bord';
 $string['pluginname'] = 'Comentarii';
 $string['privacy:metadata:core_comment'] = 'S-a adăugat o jurnalizare a comentariilor.';

@@ -302,4 +302,4 @@ $string['use_one_line_for_each_value'] = 'それぞれの回答に1行使用し�
 $string['use_this_template'] = 'このテンプレートを使用する';
 $string['using_templates'] = 'テンプレートを使用する';
 $string['vertical'] = '垂直';
-$string['whatfor'] = '何をしたいですか?';
+$string['whatfor'] = '何をしますか?';

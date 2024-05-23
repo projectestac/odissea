@@ -52,5 +52,5 @@ $string['searchevents'] = 'Caută după activitate sau nume';
 $string['sortbycourses'] = 'Sortează după cursuri';
 $string['sortbydates'] = 'Sortează după dată';
 $string['timeline'] = 'Cronologie';
-$string['timeline:myaddinstance'] = 'Adaugă un nou block Cronologie pe Tabloul de bord';
+$string['timeline:myaddinstance'] = 'Adaugă un nou bloc Cronologie pe Tabloul de bord';
 $string['viewcourse'] = 'Vezi cursul';
