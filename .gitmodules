@@ -8,3 +8,6 @@
 [submodule "html/auth/saml2"]
 	path = html/auth/saml2
 	url = https://github.com/projectestac/moodle-auth_saml2.git
+[submodule "html/course/format/tiles"]
+	path = html/course/format/tiles
+	url = https://bitbucket.org/dw8/moodle-format_tiles.git
