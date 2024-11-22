@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Paràmetres de venciment de contrasenyes';
 $string['passwdexpiretime'] = 'Durada de la contrasenya';
 $string['passwdexpiretime_desc'] = 'Temps durant el qual és vàlida una contrasenya.';
 $string['pluginname'] = 'Comptes manuals';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'La data de l\'últim canvi de contrasenya.';

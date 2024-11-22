@@ -914,13 +914,7 @@ function attendance_construct_sessions_data_for_add($formdata, mod_attendance_st
         }
     } else {
         $sess = new stdClass();
-        $sess->sessdate = make_timestamp(
-            date("Y", $formdata->sessiondate),
-            date("m", $formdata->sessiondate),
-            date("d", $formdata->sessiondate),
-            $formdata->sestime['starthour'],
-            $formdata->sestime['startminute']
-        );
+        $sess->sessdate = $sessiondate;
         $sess->duration = $duration;
         $sess->descriptionitemid = $formdata->sdescription['itemid'];
         $sess->description = $formdata->sdescription['text'];
@@ -1252,6 +1246,7 @@ function attendance_session_get_highest_status(mod_attendance_structure $att, $a
  * @return array
  */
 function attendance_get_automarkoptions() {
+    global $COURSE;
 
     $options = array();
 
@@ -1260,7 +1255,9 @@ function attendance_get_automarkoptions() {
         $options[ATTENDANCE_AUTOMARK_ALL] = get_string('automarkall', 'attendance');
     }
     $options[ATTENDANCE_AUTOMARK_CLOSE] = get_string('automarkclose', 'attendance');
-    $options[ATTENDANCE_AUTOMARK_ACTIVITYCOMPLETION] = get_string('onactivitycompletion', 'attendance');
+    if ($COURSE->id == SITEID || $COURSE->enablecompletion == COMPLETION_ENABLED) {
+        $options[ATTENDANCE_AUTOMARK_ACTIVITYCOMPLETION] = get_string('onactivitycompletion', 'attendance');
+    }
 
     return $options;
 }
@@ -1444,7 +1441,7 @@ function attendance_renderqrcoderotate($session) {
     echo '
     <script type="text/javascript">
         let qrCodeRotate = new attendance_QRCodeRotate();
-        qrCodeRotate.start(' . $session->id . ', document.getElementById("qrcode"), document.getElementById("rotate-time"));
+        qrCodeRotate.start(' . $session->id . ', document.getElementById("qrcode"), document.getElementById("rotate-time"), '. time() .');
     </script>';
 }
 

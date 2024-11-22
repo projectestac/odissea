@@ -46,9 +46,17 @@
 }}
 {{=<% %>=}}
 <div class="attendance_mobile_teacher_form">
+    <%#attendance.intro%>
     <span class="description">
-    <core-course-module-description description="<% attendance.intro %>" component="mod_attendance" componentId="<% cmid %>"></core-course-module-description>
+        <ion-card>
+            <ion-item class="ion-text-wrap">
+                <ion-label>
+                    <core-format-text text="<%attendance.intro%>" component="mod_attendance" componentId="<%cmid%>" collapsible-item />
+                </ion-label>
+            </ion-item>
+        </ion-card>
     </span>
+    <%/attendance.intro%>
     <%#showmessage%>
         <%#messages%>
             <span class="messages">
@@ -67,8 +75,7 @@
 
             <span class="radiolabel">
                 <ion-item class="ion-text-wrap">
-                    <ion-label><% acronym %></ion-label>
-                    <ion-radio value="<% stid %>"></ion-radio>
+                    <ion-radio value="<% stid %>"><% acronym %></ion-radio>
                 </ion-item>
             </span>
         <%/statuses%>
@@ -89,8 +96,7 @@
         <%#statuses%>
         <span class="radiolabel">
             <ion-item class="ion-text-wrap">
-                <ion-label><% acronym %></ion-label>
-                <ion-radio value="<% stid %>"></ion-radio>
+                <ion-radio value="<% stid %>"><% acronym %></ion-radio>
             </ion-item>
         </span>
         <%/statuses%>

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = '逗号分隔值（.csv）';
 $string['privacy:metadata'] = 'CSV数据格式插件不存储任何个人数据。';
+$string['shortname'] = 'CSV';

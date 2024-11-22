@@ -145,7 +145,7 @@ $string['config_presentation_default_description'] = 'Pode ser fornecido um fich
 $string['config_preuploadpresentation'] = 'Pré-carregar a apresentação';
 $string['config_preuploadpresentation_description'] = 'Estas configurações ativam ou desativam opções na interface do utilizador (IU) e também definem os respetivos valores predefinidos. Esta funcionalidade só funciona se o servidor do Moodle estiver acessível para o BigBlueButton.';
 $string['config_preuploadpresentation_editable'] = 'Pré-carregamento da apresentação editável';
-$string['config_preuploadpresentation_editable_description'] = 'O recurso de pré-carregamento da apresentação está editável na IU quando a sala ou conferência é adicionada ou atualizada.';
+$string['config_preuploadpresentation_editable_description'] = 'A funcionalidade de pré-carregamento da apresentação está editável na IU quando a sala ou conferência é adicionada ou atualizada.';
 $string['config_recording'] = 'Gravação';
 $string['config_recording_all_from_start_default'] = 'Iniciar gravação desde o início';
 $string['config_recording_all_from_start_default_description'] = 'A configuração \'Iniciar gravação desde o início\' deve estar ativada por predefinição ao adicionar uma nova sala BigBlueButton?';
@@ -187,7 +187,7 @@ $string['config_recordings_preview_editable_description'] = 'Se ativar esta opç
 $string['config_scheduled'] = 'Sessões agendadas';
 $string['config_scheduled_description'] = 'Estas configurações definem o comportamento predefinido para as sessões agendadas.';
 $string['config_scheduled_pre_opening'] = 'Disponível antes de hora de início';
-$string['config_scheduled_pre_opening_description'] = 'O período de tempo, em minutos, que a sala abre antes do horário de abertura programado.';
+$string['config_scheduled_pre_opening_description'] = 'O intervalo de tempo, em minutos, que a sala abre antes do horário de abertura programado.';
 $string['config_server_url'] = 'URL do servidor BigBlueButton';
 $string['config_server_url_description'] = 'As credenciais padrão são para um <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">serviço BigBlueButton gratuito para o Moodle</a > (abre numa nova janela) fornecido pela Blindside Networks com as seguintes restrições:
 <ol>
@@ -429,7 +429,7 @@ $string['resetevents'] = 'Apagar eventos';
 $string['resetlogs'] = 'Apagar registos personalizados';
 $string['resetlogs_help'] = 'Ao apagar os registos perderá as referências às gravações.';
 $string['resetrecordings'] = 'Apagar gravações';
-$string['resetrecordings_help'] = 'Se apagar as gravações, torna-as inacessíveis de qualquer lugar. Esta operação é irreversível';
+$string['resetrecordings_help'] = 'Se apagar as gravações, torna-as inacessíveis de qualquer lugar. Esta operação é irreversível!';
 $string['resettags'] = 'Apagar palavras-chave';
 $string['search:activity'] = 'BigBlueButton - informação da atividade';
 $string['search:tags'] = 'BigBlueButton - informação das palavras-chave';

@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = 'No es pot connectar a la base de dades externa.';
+$string['auth_dbcannotreadtable'] = 'No es pot llegir la taula externa.';
 $string['auth_dbcantconnect'] = 'No s\'ha pogut establir una connexió amb la base de dades d\'autenticació...';
 $string['auth_dbchangepasswordurl_key'] = 'URL de canvi de contrasenya';
+$string['auth_dbcolumnlist'] = 'La taula externa conté les següents columnes:<br />{$a}';
 $string['auth_dbdebugauthdb'] = 'Depura ADOdb';
 $string['auth_dbdebugauthdbhelp'] = 'Depuració de la connexió ADOdb amb una base de dades externa: utilitzeu aquesta opció si apareix una pàgina en blanc durant l\'inici de sessió. Opció no apta per a llocs en producció.';
 $string['auth_dbdeleteuser'] = 'S\'ha suprimit l\'usuari {$a->name} amb ID {$a->id}';
@@ -46,6 +49,8 @@ $string['auth_dbinsertuserduplicate'] = 'Error en inserir l\'usuari {$a->usernam
 $string['auth_dbinsertusererror'] = 'S\'ha produït un error en inserir l\'usuari {$a}';
 $string['auth_dbname'] = 'El nom de la base de dades. Deixeu-lo buit si esteu utilitzant un NFD (DSN) ODBC.';
 $string['auth_dbname_key'] = 'Nom de la base de dades';
+$string['auth_dbnoexttable'] = 'No s\'ha especificat la taula externa.';
+$string['auth_dbnouserfield'] = 'No s\'ha especificat el camp d\'usuari extern.';
 $string['auth_dbpass'] = 'Contrasenya corresponent al nom d\'usuari anterior';
 $string['auth_dbpass_key'] = 'Contrasenya';
 $string['auth_dbpasstype'] = '<p>Especifiqueu el format que utilitza el camp de la contrasenya.</p>
@@ -63,8 +68,10 @@ $string['auth_dbsybasequotinghelp'] = 'Alteració de cometes estil Sybase: neces
 $string['auth_dbsyncuserstask'] = 'Tasca de sincronització dels usuaris';
 $string['auth_dbtable'] = 'Nom de la taula en la base de dades';
 $string['auth_dbtable_key'] = 'Taula';
+$string['auth_dbtableempty'] = 'La taula externa és buida.';
 $string['auth_dbtype'] = 'El tipus de base de dades (per a més informació, vegeu la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentació sobre ADOdb</a>)';
 $string['auth_dbtype_key'] = 'Base de dades';
+$string['auth_dbupdateerror'] = 'S\'ha produït un error en actualitzar la base de dades externa.';
 $string['auth_dbupdateusers'] = 'Actualitza els usuaris';
 $string['auth_dbupdateusers_description'] = 'A més d\'afegir usuaris nous, actualitza els ja existents.';
 $string['auth_dbupdatinguser'] = 'S\'està actualitzant l\'usuari {$a->name} amb ID {$a->id}';
@@ -73,3 +80,4 @@ $string['auth_dbuser_key'] = 'Usuari de la base de dades';
 $string['auth_dbuserstoadd'] = 'Registres d\'usuari per afegir: {$a}';
 $string['auth_dbuserstoremove'] = 'Registres d\'usuari per suprimir: {$a}';
 $string['pluginname'] = 'Base de dades externa';
+$string['privacy:metadata'] = 'El complement d\'autenticació de base de dades externa no emmagatzema cap dada personal.';

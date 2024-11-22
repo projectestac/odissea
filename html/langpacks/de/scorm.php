@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activation'] = 'Aktivierung';
 $string['activityloading'] = 'Sie werden automatisch zur Aktivität weitergeleitet:';
-$string['activityoverview'] = 'Lernpakete erfordern Ihre Aufmerksamkeit.';
+$string['activityoverview'] = 'Sie haben Lernpakete, die Ihre Aufmerksamkeit fordern.';
 $string['activitypleasewait'] = 'Aktivität wird geladen. Bitte warten ....';
 $string['adminsettings'] = 'Admin-Einstellungen';
 $string['advanced'] = 'Einstellungen';
@@ -162,7 +162,7 @@ $string['forcecompleted_help'] = 'Mit dieser Einstellung \'Abschluss einfordern\
 $string['forcecompleteddesc'] = 'Diese Einstellung setzt den Standardwert für die Einstellung \'Abschluss einfordern\'';
 $string['forcejavascript'] = 'Aktivierung von JavaScript einfordern';
 $string['forcejavascript_desc'] = 'Lernpakete erfordern JavaScript zur Kommunikation zwischen dem Lernpaket und Moodle, z.B. um Bewertungen zu übergeben. Mit dieser Funktion wird der Zugriff auf ein Lernpaket lesend möglich, wenn JavaScript im Browser nicht verfügbar ist. Es werden jedoch keine Bewertungen abgespeichert. Es wird empfohlen, diese Funktion zu aktivieren.';
-$string['forcejavascriptmessage'] = 'Um dieses Objekt anzuzeigen ist JavaScript notwendig. Bitte aktivieren Sie JavaScript für Ihren Browser und versuchen Sie es nochmal.';
+$string['forcejavascriptmessage'] = 'Um dieses Objekt anzuzeigen, ist JavaScript notwendig. Aktivieren Sie bitte JavaScript für Ihren Browser und versuchen Sie es nochmal.';
 $string['forcenewattempts'] = 'Neuen Versuch einfordern';
 $string['forcenewattempts_help'] = 'Es gibt drei Optionen:
 
@@ -279,7 +279,7 @@ $string['noattemptsallowed'] = 'Zahl zulässiger Versuche';
 $string['noattemptsmade'] = 'Zahl Ihrer Versuche';
 $string['nolimit'] = 'Unbegrenzte Zahl der Versuche';
 $string['nomanifest'] = 'Falsches Dateipaket - die Datei imsmanifest.xml oder AICCC Struktur wird nicht gefunden';
-$string['noprerequisites'] = 'Sie haben die Zugangvoraussetzungen zu diesem Lernobjekt noch nicht erfüllt.';
+$string['noprerequisites'] = 'Sie haben die Zugangsvoraussetzungen zu diesem Lernobjekt noch nicht erfüllt.';
 $string['noreports'] = 'Kein Bericht zum Anzeigen vorhanden';
 $string['normal'] = 'Normal';
 $string['noscriptnoscorm'] = 'Ihr Browser unterstützt kein Javascript oder Javascript ist ausgeschaltet. Das Lernpaket wird deswegen eventuell nicht richtig angezeigt und kann Daten nicht korrekt speichern.';
@@ -315,7 +315,7 @@ $string['popuplaunched'] = 'Dieses Lernpaket wurde in einem Popup-Fenster gestar
 $string['popupmenu'] = 'In einem Dropdown-Menü';
 $string['popupopen'] = 'Lernpaket in neuem Fenster öffnen';
 $string['popupsblocked'] = 'Es scheint so als ob Popup-Fenster blockiert sind. Das Lernpaket kann nicht angezeigt werden. Bitte prüfen Sie Ihre Browsereinstellungen, bevor Sie es noch einmal probieren.';
-$string['position_error'] = 'Das Tag {$a-tag} kann nicht Untereinheit (Child) des Tags {$a->parent} sein';
+$string['position_error'] = 'Das Tag {$a->tag} kann nicht Untereinheit (Child) des Tags {$a->parent} sein';
 $string['preferencespage'] = 'Einstellungen für diese Seite';
 $string['preferencesuser'] = 'Einstellungen für diese Übersicht';
 $string['prev'] = 'Zurück';

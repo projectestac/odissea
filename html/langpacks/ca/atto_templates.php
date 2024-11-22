@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Selecciona una plantilla, per previsualitzar quina aparença tindrà, i després fes clic a Insereix';
+$string['preview'] = 'Previsualització';

@@ -398,7 +398,7 @@ Nur Werte und Skalen können weiter als Grundlage für Berechnungen genutzt werd
 $string['gradevaluetoobig'] = 'Eine der Bewertungen ist größer als der zulässige Höchstwert der Bewertungen {$a}';
 $string['gradevaluetoosmall'] = 'Eine der Bewertungen ist kleiner als die erlaubte minimale Bewertung von {$a}.';
 $string['gradeview'] = 'Bewertung ansehen';
-$string['gradewasmodifiedduringediting'] = 'Die Bewertung für {$a-<itemname} für {$a-<username} wurde ignoriert, da diese kürzlich von jemand anderem aktualisiert worden ist.';
+$string['gradewasmodifiedduringediting'] = 'Die Bewertung für {$a->itemname} für {$a->username} wurde ignoriert, da diese kürzlich von jemand anderem aktualisiert worden ist.';
 $string['gradeweighthelp'] = 'Hilfe zur Bewertung';
 $string['gradingmodulename'] = 'Bewertung ({$a})';
 $string['groupavg'] = 'Gruppendurchschnitt';

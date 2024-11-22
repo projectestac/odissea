@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['addsessions'] = 'Afegeix una sessió';
 $string['attendance'] = 'Assistència';
 $string['audio'] = 'Àudio';
+$string['grade'] = 'Qualificació';
 $string['overallprogress'] = 'Progrés general';

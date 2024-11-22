@@ -238,7 +238,7 @@ Un wiki est un outil web permettant la co-édition d’une séries de pages. Dan
 Le OU wiki offre différentes options. Voir l’aide individuelle de chaque paramètre pour plus d’information.
 </p>';
 $string['modulenameplural'] = 'OU wikis';
-$string['mustspecify2'] = 'Vous devez spécifier exactement deux versions &agrave; comparer.';
+$string['mustspecify2'] = 'Vous devez spécifier exactement deux versions à comparer.';
 $string['myparticipation'] = 'Ma participation';
 $string['newerversion'] = 'Nouvelle version';
 $string['newpage'] = 'première version';
@@ -282,7 +282,7 @@ $string['pagecheckboxlabel'] = 'Importer page, {$a}';
 $string['pagedeletedinfo'] = 'Des versions supprimées sont visibles dans la liste ci-dessous. Celles-ci ne sont visibles qu’aux utilisateurs ayant la permission de supprimer des versions. Les utilisateurs ordinaires ne les voient pas.';
 $string['pagedoesnotexist'] = 'Cette page n’existe pas encore dans le wiki.';
 $string['pageedits'] = 'Modifications de page';
-$string['pagelockeddetails'] = '{$a->name} a commencé &agrave; éditer cette page &agrave; {$a->lockedat}, et était toujours en train de l’éditer &agrave; {$a->seenat}. Vous ne pouvez pas l’éditer avant qu’ils aient terminé.';
+$string['pagelockeddetails'] = '{$a->name} a commencé à éditer cette page à {$a->lockedat}, et était toujours en train de l’éditer à {$a->seenat}. Vous ne pouvez pas l’éditer avant qu’ils aient terminé.';
 $string['pagelockeddetailsnojs'] = '{$a->name} ont commencé à éditer cette page à {$a->lockedat}. Ils ont jusqu’à {$a->nojs} pour terminer. Vous ne pouvez pas éditer cette page avant qu’ils aient terminé.';
 $string['pagelockedoverride'] = 'Vous disposez d’un accès spécial vous permettant d’annuler leurs modifications en cours et de déverrouiller la page.
 Si vous faites ceci, leurs modifications seront perdues !
@@ -363,7 +363,7 @@ Si vous rédigez un résumé, il sera affiché sur la page de démarrage du wiki
 <p>
 Le résumé n’est pas nécessaire. Vous pouvez laisser la zone de saisie vide si vous n’en avez pas besoin.
 </p>';
-$string['system'] = 'le syst&agrave;me';
+$string['system'] = 'le système';
 $string['tab_annotate'] = 'Annoter';
 $string['tab_discuss'] = 'Discuster';
 $string['tab_edit'] = 'Editer';
@@ -459,4 +459,4 @@ $string['wikirecentchanges_from'] = 'Modifications sur le wiki (page {$a})';
 $string['words'] = 'Mots';
 $string['wordsadded'] = 'Mots ajoutés';
 $string['wordsdeleted'] = 'Mots supprimés';
-$string['wouldyouliketocreate'] = 'Voulez-vous la créer?';
+$string['wouldyouliketocreate'] = 'Voulez-vous la créer ?';

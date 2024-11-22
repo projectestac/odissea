@@ -145,6 +145,9 @@ class restore_attendance_activity_structure_step extends restore_activity_struct
             $data->lasttaken = 0;
             $data->lasttakenby = 0;
         }
+        if (!isset($data->allowupdatestatus)) {
+            $data->allowupdatestatus = 0;
+        }
 
         $newitemid = $DB->insert_record('attendance_sessions', $data);
         $data->id = $newitemid;

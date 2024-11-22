@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseoverview:view'] = 'Просматривать отчет «Сводка по курсам»';
-$string['pluginname'] = 'Сводка по курсам';
+$string['courseoverview:view'] = 'Просматривать отчет «Обзор курсов»';
+$string['pluginname'] = 'Обзор курсов';
 $string['privacy:metadata'] = 'Плагин обзора курса не хранит никаких личных данных.';

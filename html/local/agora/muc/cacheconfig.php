@@ -958,6 +958,22 @@ global $CFG;
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
+    'format_tiles/modalcmids' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 30,
+      'invalidationevents' => 
+      array (
+        0 => 'format_tiles/modaladminsettingchanged',
+      ),
+      'component' => 'format_tiles',
+      'area' => 'modalcmids',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
     'repository_googledocs/folder' => 
     array (
       'mode' => 1,

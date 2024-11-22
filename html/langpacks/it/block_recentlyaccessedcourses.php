@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'Visualizza categorie';
+$string['displaycategories_help'] = 'Visualizza la categoria del corso nel blocco Corsi acceduti di recente.';
 $string['nocourses'] = 'Non ci sono corsi visitati recentemente';
 $string['pluginname'] = 'Corsi visitati recentemente';
 $string['privacy:metadata'] = 'Il blocco Corsi visitati recentemente non memorizza dati personali';

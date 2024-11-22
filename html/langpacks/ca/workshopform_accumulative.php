@@ -41,6 +41,7 @@ $string['mustchoosegrade'] = 'Heu de seleccionar una qualificació per aquest as
 $string['pluginname'] = 'Qualificació acumulativa';
 $string['poor'] = 'Pobre';
 $string['present'] = 'Present';
+$string['privacy:metadata'] = 'L\'extensió de qualificació acumulativa només emmagatzema els detalls del formulari d\'avaluació. Les dades personals de com s\'ha emplenat el formulari les emmagatzema el mòdul Taller i s\'adjunten a les avaluacions exportades.';
 $string['scalename0'] = 'Sí/No (2 punts)';
 $string['scalename1'] = 'Present/Absent (2 punts)';
 $string['scalename2'] = 'Correcte/Incorrecte (2 punts)';

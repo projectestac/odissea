@@ -31,7 +31,7 @@ $string['accept_grades_admin'] = 'Onartu kalifikazioak tresnatik';
 $string['accept_grades_admin_help'] = 'Zehaztu tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
 Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.';
-$string['accept_grades_help'] = 'Zehaztu tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
+$string['accept_grades_help'] = 'Zehaztu kanpoko tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
 Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.
 
@@ -42,8 +42,8 @@ $string['activate'] = 'Aktibatu';
 $string['activatetoadddescription'] = 'Tresna hau aktibatu behar duzu deskribapena gehitu baino lehen.';
 $string['active'] = 'Aktiboa';
 $string['activity'] = 'Jarduera';
-$string['add_ltiadv'] = 'Gehitu LTI Advantage';
-$string['add_ltilegacy'] = 'Gehitu Legacy LTI';
+$string['add_ltiadv'] = 'Gehitu LTI Advantage bat';
+$string['add_ltilegacy'] = 'Gehitu Zaharkitutako LTI (1.1/2.0) bat';
 $string['addnewapp'] = 'Gaitu kanpoko aplikazioa';
 $string['addserver'] = 'Gehitu konfiantzazko beste zerbitzari bat';
 $string['addtype'] = 'Gehitu aurretik konfiguratutako tresna';
@@ -84,7 +84,7 @@ $string['configpreferwidth'] = 'Lehenetsitako zabalera';
 $string['configresourceurl'] = 'Baliabideen lehenetsitako URLa';
 $string['configtoolurl'] = 'Urrutiko tresnan lehenetsitako URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
-$string['configured'] = 'Konfiguratua';
+$string['configured'] = 'Konfiguratuta';
 $string['confirmtoolactivation'] = 'Ziur zaude tresna hau aktibatu nahi duzula?';
 $string['contentitem'] = 'Eduki-Item Mezua';
 $string['contentitem_deeplinking'] = 'Estekatze Sakona (Deep Linking) onartzen du  (Content-Item Message)';
@@ -217,7 +217,7 @@ $string['initiatelogin_help'] = 'Saio-hasiera abiarazteko bidaliko diren eskaera
 $string['invalidid'] = 'LTIren IDa ez zen egokia';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['keytype'] = 'Gako-publiko mota';
-$string['keytype_help'] = 'Tresna hau balidatzeko erabilitako autentifikazio-metodoa.';
+$string['keytype_help'] = 'Tresna hau balioztatzeko erabilitako autentifikazio-metodoa.';
 $string['keytype_keyset'] = 'Gako-multzoaren URLa';
 $string['keytype_rsa'] = 'RSA gakoa';
 $string['launch_in_moodle'] = 'Abiarazi tresna Moodlen';
@@ -241,13 +241,13 @@ $string['launchoptions'] = 'Abiarazte-aukerak';
 $string['leaveblank'] = 'Hutsik utzi behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
-$string['lti:addinstance'] = 'Gehitu kanpoko beste tresna bat';
+$string['lti:addinstance'] = 'Gehitu kanpoko tresna berri bat';
 $string['lti:addmanualinstance'] = 'Gehitu eskuz konfiguratutako tresna bat';
 $string['lti:addpreconfiguredinstance'] = 'Gehitu aurretik konfiguratutako tresna bat';
 $string['lti:admin'] = 'Tresna abiaraztean izan zaitez kudeatzailea';
 $string['lti:grade'] = 'Ikusi kanpoko tresnak itzuli dituen kalifikazioak';
 $string['lti:manage'] = 'Irakaslea izan erreminta abiarazten denean';
-$string['lti:requesttooladd'] = 'Tresnaren eskaera gune osorako ezarri da';
+$string['lti:requesttooladd'] = 'Tresnaren eskaera gune mailan konfiguratuta dago';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['lti_administration'] = 'Editatu aurretik konfiguratutako tresna';
 $string['lti_errormsg'] = 'Tresnak ondoko errore-mezua itzuli du: "{$a}"';
@@ -263,7 +263,7 @@ $string['lti_tool_request_existing'] = 'Tresnaren domeinurako tresna-ezarpena da
 $string['ltisettings'] = 'LTIren ezarpenak';
 $string['ltiunknownserviceapicall'] = 'LTI zerbitzu ezezagun baten API deia';
 $string['ltiversion'] = 'LTI bertsioa';
-$string['ltiversion_help'] = 'Mezuak sinatu eta zerbitzu-eskaeretan erabiliko den LTI bertsioa: LTI 1.0/1.1 eta LTI 2.0 bertsioek OAuth 1.0A segurtasun profila erabiltzen dute; LTI 3.0 bertsioak JWTak erabiltzen du.';
+$string['ltiversion_help'] = 'Mezuak sinatu eta zerbitzu-eskaeretan erabiliko den LTI bertsioa: LTI 1.0/1.1 eta LTI 2.0 bertsioek OAuth 1.0A segurtasun profila erabiltzen dute; LTI 1.3.0 bertsioak JWTak erabiltzen ditu.';
 $string['main_admin'] = 'Laguntza orokorra';
 $string['main_admin_help'] = 'Kanpoko tresnek Moodle-ko erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo helbide elektronikoa bezalako informazioa.
 
@@ -277,11 +277,11 @@ $string['manage_external_tools'] = 'Kudeatu tresnak';
 $string['manage_tool_proxies'] = 'Kudeatu kanpoko tresnen erregistroak';
 $string['manage_tools'] = 'Kudeatu aurretik konfiguratutako tresnak';
 $string['manuallyaddtype'] = 'Bestela, <a href="{$a}">tresna eskuz konfigura dezakezu</a>.';
-$string['miscellaneous'] = 'Denetarikoak';
+$string['miscellaneous'] = 'Bestelakoak';
 $string['misconfiguredtools'] = 'Gaizki konfiguratutako tresna-instantziak atzeman dira';
 $string['missingparameterserror'] = 'Orria gaizki konfiguratuta dago: "{$a}"';
 $string['module_class_type'] = 'Moodleko jarduera-mota';
-$string['modulename'] = 'Kanpoko tresna';
+$string['modulename'] = 'Kanpoko tresnak';
 $string['modulename_help'] = 'Kanpoko tresna jarduerak ikasleen eta beste webguneetako irakaskuntza jarduera eta baliabideen arteko interakzioa ahalbidetzen du. Esaterako, kanpoko tresna batek jarduera mota ezberdin baterako edo editore baten irakaskuntza-materialetarako sarbidea eman dezake.
 
 Kanpoko tresna jarduera bat sortzeko, LTI (Learning Tools Interoperability) onartzen duen erreminta hornitzaile bat behar da. Irakasleak kanpoko tresna jarduera bat sortu edo kudeatzaileak aurrez konfiguraturiko bat erabil dezake.
@@ -298,7 +298,7 @@ $string['modulenamepluralformatted'] = 'Kanpoko tresnak';
 $string['name'] = 'Izena';
 $string['never'] = 'Inoiz ez';
 $string['new_window'] = 'Leiho berria';
-$string['no_lti_configured'] = 'Ez dago kanpoko tresna aktiborik konfiguratu.';
+$string['no_lti_configured'] = 'Ez dago kanpoko tresna aktiborik konfiguratuta.';
 $string['no_lti_pending'] = 'Ez dago zain dagoen kanpoko tresnarik.';
 $string['no_lti_rejected'] = 'Ez dago onartu gabeko kanpoko tresnarik.';
 $string['no_lti_tools'] = 'Ez dago konfiguratutako kanpoko tresnarik.';
@@ -347,7 +347,7 @@ Sekretu partekatua tresnaren sarbide kautotua lortzeko moduko pasahitza gisa jo 
 Baliteke Moodlerekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek sekretu partekatuaren beharrik ez izatea.';
 $string['pending'] = 'Zain';
 $string['pluginadministration'] = 'Kanpoko tresnaren kudeaketa';
-$string['pluginname'] = 'Kanpoko tresna';
+$string['pluginname'] = 'Kanpoko tresnak';
 $string['preferheight'] = 'Hobetsitako altuera';
 $string['preferwidget'] = 'Gailuaren abiarazteko hobetsitako widget-a';
 $string['preferwidth'] = 'Hobetsitako zabalera';

@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fontselectlist'] = 'Tipos de letra disponíveis';
 $string['pluginname'] = 'Tipo de letra';
+$string['privacy:metadata'] = 'O módulo Tipo de letra Atto não armazena quaisquer dados pessoais.';
 $string['settings'] = 'Configurações do tipo de letra';

@@ -21,7 +21,6 @@ require_once($CFG->dirroot . '/question/type/multianswer/edit_multianswer_form.p
 
 
 class qtype_multianswerwiris_edit_form extends qtype_wq_edit_form {
-
     protected function definition_inner($mform) {
         global $CFG;
         parent::definition_inner($mform);
@@ -45,5 +44,22 @@ class qtype_multianswerwiris_edit_form extends qtype_wq_edit_form {
 
     public function qtype() {
         return 'multianswerwiris';
+    }
+}
+
+class qtype_multianswer_edit_form_helper extends qtype_multianswer_edit_form {
+    protected function definition_inner($mform) {
+        // Remove wiris particle from subquestion qtypes so the multianswer form does not think
+        // we are changing the qtypes when we are not actually doing it.
+        if (isset($this->savedquestiondisplay)) {
+            foreach ($this->savedquestiondisplay->options->questions as $subq) {
+                $qtype = $subq->qtype;
+                if (substr($qtype, -5) == 'wiris') {
+                    $subq->qtype = substr($qtype, 0, strlen($qtype) - 5);
+                }
+            }
+        }
+
+        parent::definition_inner($mform);
     }
 }

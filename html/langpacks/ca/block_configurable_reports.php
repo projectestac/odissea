@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activitypost'] = 'Publicacions d\'activitat';
 $string['activityview'] = 'Vistes d\'activitat';
+$string['add'] = 'Afegeix';
 $string['addreport'] = 'Afegeix un informe';
 $string['anyone'] = 'Qualsevol';
 $string['anyone_summary'] = 'Qualsevol usuari del campus podrà visualitzar aquest informe';
@@ -261,6 +262,7 @@ $string['head_data'] = 'Dades del gràfic';
 $string['head_size'] = 'Mida del gràfic';
 $string['header'] = 'Capçalera';
 $string['height'] = 'Alçària';
+$string['idnumber'] = 'Número ID';
 $string['importfromrepository'] = 'Importa un informe del repositori';
 $string['importreport'] = 'Importa un informe';
 $string['includesubcats'] = 'Inclou les subcategories';

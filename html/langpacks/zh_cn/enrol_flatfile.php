@@ -36,24 +36,24 @@ $string['flatfileenrolments'] = '文本文件 (CSV)选课';
 $string['flatfilesync'] = '以文本文件格式同步选课';
 $string['location'] = '文件位置';
 $string['location_desc'] = '指定选课文件完整路径。这个文件在处理之后会自动删除';
-$string['mapping'] = '文本文件映射';
+$string['mapping'] = '文本文件角色映射';
 $string['messageprovider:flatfile_enrolment'] = '文本文件选课消息';
 $string['notifyadmin'] = '通知管理员';
 $string['notifyenrolled'] = '通知已选课用户';
 $string['notifyenroller'] = '通知已注册用户';
 $string['pluginname'] = '文本文件（CSV）';
-$string['pluginname_desc'] = '该方法会反复在您指定的位置检查和处理一个特殊格式的文本文件。此文件每行应有四个或六个用逗号分隔的字段：
+$string['pluginname_desc'] = '该方法会反复在您指定的位置检查并处理特殊格式的文本文件。此文件每行应有四个或六个用逗号分隔的字段：
 
-<pre class="informationbox">
-*  operation, role, idnumber(用户), idnumber(课程) [, starttime, endtime]
+   operation, role, idnumber(用户), idnumber(课程) [, starttime, endtime]
+
 其中：
-*  operation        = add | del
-*  role             = student | teacher | teacheredit
-*  idnumber(用户)   = 用户表中的学号（不是id）
-*  idnumber(课程) = 课程表中的编号（不是id）
-*  starttime        = 开始时间（从epoch以来的秒数）- 可选
-*  endtime          = 结束时间（从epoch以来的秒数）- 可选
-</pre>
+*  operation - add | del
+*  role - student | teacher | teacheredit
+*  用户 idnumber - 用户表中的学号（不是id）
+*  课程 idnumber - 课程表中的编号（不是id）
+*  starttime - 开始时间（从epoch以来的秒数）- 可选
+*  endtime - 结束时间（从epoch以来的秒数）- 可选
+
 例如：
 <pre class="informationbox">
    add, student, 5, CF101

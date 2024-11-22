@@ -73,6 +73,7 @@ $string['hidecourse'] = 'Rimuovi dalla visualizzazione';
 $string['inprogress'] = 'In svolgimento';
 $string['lastaccessed'] = 'Ultima visita';
 $string['layouts'] = 'Impaginazioni disponibili';
+$string['layouts_help'] = 'Layout della panoramica del corso disponibili per la selezione da parte degli utenti. Se non ne viene selezionato nessuno, verrà utilizzato il layout schede.';
 $string['list'] = 'Elenco';
 $string['myoverview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi alla dashboard';
 $string['nocustomvalue'] = 'Nessun {$a}';

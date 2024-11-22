@@ -54,6 +54,7 @@ $string['invalidtheme'] = 'Il tema "{$a}" non è instalalto e sarà ignorato.';
 $string['invalidupdatetype'] = 'Non è possibile utilizzare questa opzione con il \'Tipo di caricamento\' selezionato.';
 $string['invaliduserdata'] = 'Sono stati individuati dati non validi per l\'utente {$a} e sono stati puliti automaticamente.';
 $string['linex'] = 'Linea {$a}';
+$string['matchemail'] = 'Corrispondenza con l\'indirizzo email';
 $string['nochanges'] = 'Nessuna modifica';
 $string['notheme'] = 'L\'utente non ha nessun tema impostato.';
 $string['pluginname'] = 'Caricamento utenti';

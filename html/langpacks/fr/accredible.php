@@ -78,6 +78,7 @@ $string['pluginname'] = 'Accredible Certificats & badges';
 $string['privacy:metadata:accredible'] = 'Pour s’intégrer dans Accredible, les données des utilisateurs doivent être échangées avec ce service.';
 $string['privacy:metadata:accredible:email'] = 'Votre adresse électronique est envoyée à Accredible pour l’émission d’un justificatif d’identité.';
 $string['privacy:metadata:accredible:fullname'] = 'Votre nom complet est envoyé à Accredible pour l’émission d’une accréditation.';
+$string['privacy:metadata:accredible:quizgrade'] = 'Votre note pour le test peut être communiquée à Accredible afin d\'obtenir une référence.';
 $string['recipient'] = 'Destinataire';
 $string['templatename'] = 'Nom de la cohorte (depuis le tableau de bord)';
 $string['unissueddescription'] = 'Ces utilisateurs ont répondus aux critères d’obtention de ce certificat mais ne l’ont pas encore reçu. Sélectionnez ceux auxquels vous désirez émettre les certificats.';

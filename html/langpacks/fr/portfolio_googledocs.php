@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'ID client';
 $string['noauthtoken'] = 'Aucun jeton d’authentification n’a été reçu de Google. Veuillez vous assurer que vous autorisez Moodle à accéder à votre compte Google';
 $string['nooauthcredentials'] = 'Accréditation OAuth requise.';
-$string['nooauthcredentials_help'] = 'Pour utiliser le plugin de portfolio Google Drive, vous devez configurer d’abord l\'accréditation OAuth dans les réglages de portfolio.';
+$string['nooauthcredentials_help'] = 'Pour utiliser le plugin de portfolio Google Drive, vous devez configurer d’abord l’accréditation OAuth dans les réglages de portfolio.';
 $string['nosessiontoken'] = 'Il n’y a pas de jeton de session, ce qui empêche l’exportation vers Google.';
 $string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d’abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>Au cours du processus d’enregistrement, vous devrez saisir l’URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l’enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive.</p>';
 $string['pluginname'] = 'Google Drive';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comments'] = 'Commentaires';
 $string['formatcreole_link'] = 'mod/socialwiki/creole';
 $string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
 $string['modulename_link'] = 'mod/socialwiki/view';
+$string['nocomments'] = 'Il n’y a pas de commentaire';

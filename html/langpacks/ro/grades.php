@@ -80,7 +80,7 @@ $string['aggregationcoefextraweight'] = 'Pondere extra credit';
 $string['aggregationcoefextraweight_help'] = 'Dacă ponderea creditului suplimentar este stabilită la o valoare mai mare decât zero atunci nota va avea o însemnătate mai mare la cumulare. Numărul va constitui factorul cu care se înmulţeşte nota înainte de a fi adăugată la totalul obținut din calculul mediei.';
 $string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = 'Pondere element';
-$string['aggregationcoefweight_help'] = 'Ponderea elementului se utilizează pentru a influenţa importanţa elementului, comparativ cu alte elemente din aceeaşi categorie atunci când se cumulează notele din categoria respectivă. ';
+$string['aggregationcoefweight_help'] = 'Ponderea elementului se utilizează pentru a influenţa importanţa elementului, comparativ cu alte elemente de notare din aceeaşi categorie atunci când se cumulează notele din categoria respectivă.';
 $string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Scăzut )';
 $string['aggregationhintexcluded'] = '( Exclus )';
@@ -109,13 +109,13 @@ $string['bonuspoints'] = 'Puncte bonus';
 $string['bulkcheckboxes'] = 'Bulk checkboxes';
 $string['calculatedgrade'] = 'Nota calculată';
 $string['calculation'] = 'Calculare';
-$string['calculation_help'] = 'Un calcul pentru note este o formulă utilizată pentru a determina notele. Formula trebuie să înceapă cu un semn egal (=) şi se pot utiliza operațiile matematice cunoscute, cum ar fi Max, Min şi Sum (la fel ca in M. Excel). Dacă se doreşte, și alte elemente ale notei pot fi incluse în calcul, prin tastarea numerelor de identificare în paranteze pătrate duble.';
+$string['calculation_help'] = 'Un calcul pentru note este o formulă utilizată pentru a determina notele. Formula trebuie să înceapă cu un semn egal (=) şi se pot utiliza operațiile matematice cunoscute, cum ar fi Max, Min şi Sum (la fel ca in M. Excel). Dacă se doreşte, și alte elemente de notare pot fi incluse în calcul, prin tastarea numerelor de identificare în paranteze pătrate duble.';
 $string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = 'Adaugă calculare';
 $string['calculationedit'] = 'Editare calculare';
 $string['calculationsaved'] = 'Calculare salvată';
 $string['calculationview'] = 'Afişează calculare';
-$string['cannotaccessgroup'] = 'Ne pare rău dar notele grupului selectat nu pot fi accesate.';
+$string['cannotaccessgroup'] = 'Ne pare rău, notele grupului selectat nu pot fi accesate.';
 $string['categories'] = 'Categorii';
 $string['category'] = 'Categorie';
 $string['categoryedit'] = 'Modificați categoria';
@@ -188,7 +188,7 @@ $string['editverbose'] = 'Editare {$a->category} {$a->itemmodule} {$a->itemname}
 $string['enableajax'] = 'Activează AJAX';
 $string['enableajax_help'] = 'Adaugă funcţionalitate AJAX la raportul notelor, simplificând și accelerând calculele obișnuite.  Javascript trebuie să fie activat în browser-ul utilizatorului.';
 $string['enableoutcomes'] = 'Activați rezultatele';
-$string['enableoutcomes_help'] = 'Dacă este activată, elementele de notare pot fi clasificate folosind una sau mai multe scale legate de declarațiile de rezultat.';
+$string['enableoutcomes_help'] = 'Dacă este activată, elementele de notare pot fi clasificate folosind una sau mai multe scale în funcție de rezultate.';
 $string['encoding'] = 'Codare';
 $string['encoding_help'] = 'Selectați codificarea caracterelor folosită pentru date. (Codificarea standard este UTF-8.) Dacă codificarea greșită este selectată din greșeală, aceasta va fi vizibilă la previzualizarea datelor pentru import.';
 $string['errorcalculationbroken'] = 'Probabil referință circulară sau formulă de calcul greșită';
@@ -226,7 +226,7 @@ $string['export'] = 'Export';
 $string['exportalloutcomes'] = 'Exportă toate rezultatele';
 $string['exportas'] = 'Export ca';
 $string['exportfeedback'] = 'Include feedback în export';
-$string['exportfeedback_desc'] = 'Acest lucru poate fi suprascris în timpul exportului.';
+$string['exportfeedback_desc'] = 'Poate fi suprascris în timpul exportului.';
 $string['exportformatoptions'] = 'Opțiuni pentru formatul exportului';
 $string['exportonlyactive'] = 'Exclude utilizatorii suspendați';
 $string['exportonlyactive_help'] = 'Include în export doar studenții a căror înscriere este activă și nu a fost suspendată';
@@ -281,7 +281,7 @@ $string['gradeboundary_help'] = 'Această setare determină numărul minim peste
 $string['gradecategories'] = 'Categorii note';
 $string['gradecategory'] = 'Categorie notă';
 $string['gradecategoryonmodform'] = 'Categorie notă';
-$string['gradecategoryonmodform_help'] = 'Această setare controlează categoria în care notele de la această  activitate clasele sunt trecute în catalog.';
+$string['gradecategoryonmodform_help'] = 'Această setare setează categoria în care notele de la această activitate sunt trecute în catalog.';
 $string['gradecategorysettings'] = 'Setări categorie notă';
 $string['gradedisplay'] = 'Afişare notă';
 $string['gradedisplaytype'] = 'Tip afişare notă';
@@ -312,16 +312,16 @@ $string['gradeimportfailed'] = 'Importul notelor nu s-a finalizat cu succes. Det
 $string['gradeitem'] = 'Element notă';
 $string['gradeitemaddusers'] = 'Exclude din notare';
 $string['gradeitemadvanced'] = 'Opțiuni avansate pentru elemente de notă';
-$string['gradeitemadvanced_help'] = 'Selectaţi toate elementele care ar trebui să fie afişate ca fiind avansate atunci când editați elemente de notat. ';
+$string['gradeitemadvanced_help'] = 'Selectaţi toate elementele care ar trebui să fie afişate ca fiind avansate atunci când editați elemente de notare';
 $string['gradeitemislocked'] = 'Această activitate este blocată în catalog. Modificările care sunt aduse notelor în această activitate nu vor fi copiate în catalog până când acesta este deblocat.';
 $string['gradeitemlocked'] = 'Notare blocată';
 $string['gradeitemmembersselected'] = 'Exclus din notare';
-$string['gradeitemminmax'] = 'Notele minime și maxime specificate în setările itemului notei';
+$string['gradeitemminmax'] = 'Notele minime și maxime specificate în setările elementului notei';
 $string['gradeitemnonmembers'] = 'Inclus în notare';
 $string['gradeitemremovemembers'] = 'Include în notare';
-$string['gradeitems'] = 'Elemente notare';
+$string['gradeitems'] = 'Elemente de notare';
 $string['gradeitemsettings'] = 'Setări elemente notare';
-$string['gradeitemsinc'] = 'Elemente notare care să fie incluse';
+$string['gradeitemsinc'] = 'Elemente de notare care să fie incluse';
 $string['gradeletter'] = 'Litere note';
 $string['gradeletter_help'] = 'Notele pot fi de asemenea litere: A, B, C, ..., sau cuvinte, de exemplu: Admis, Respins .... Acestea pot fi utilizate pentru a reprezenta o serie de note.';
 $string['gradeletternote'] = 'Pentru a șterge o literă de notă, trebuie doar să goliți oricare dintre cele <br /> trei zone de text pentru acea literă și să faceți clic pe trimitere.';
@@ -339,7 +339,7 @@ $string['gradeoutcomeitem'] = 'Elementul rezultatului notei';
 $string['gradeoutcomes'] = 'Rezultate';
 $string['gradeoutcomescourses'] = 'Rezultate curs';
 $string['gradepass'] = 'Notă de trecere';
-$string['gradepass_help'] = 'Această setare determină nota minimă obligatorie pentru trecere. Nota va determina completarea activității și a finalizării cursului, şi va apărea de asemenea în catalog unde notele de trecere sunt evidențiate cu verde, iar cele de respingere sunt evidențiate de culoarea roșie.';
+$string['gradepass_help'] = 'Această setare determină nota minimă obligatorie pentru trecere. Nota va determina completarea activității și a finalizării cursului şi va apărea, de asemenea, în catalog unde notele de trecere sunt evidențiate cu verde, iar cele de respingere sunt evidențiate de culoarea roșie.';
 $string['gradepassgreaterthangrade'] = 'Nota de trecere nu poate fi mai mare decât nota maximă posibilă {$a}';
 $string['gradepointdefault'] = 'Nivel implicit al notei';
 $string['gradepointdefault_help'] = 'Această setare determină valoarea implicită pentru valoarea punctelor disponibile într-un element de notă.';
@@ -355,7 +355,7 @@ $string['gradepublishinglink'] = 'Descarcă: {$a}';
 $string['gradereport'] = 'Raport al notelor';
 $string['graderreport'] = 'Raportul evaluatorului';
 $string['grades'] = 'Note';
-$string['gradesforuser'] = 'Notele pentru {$a->user}';
+$string['gradesforuser'] = 'Notele lui {$a->user}';
 $string['gradesmoduledeletionpendingwarning'] = 'Avertizare: Are loc ștergerea activității! Unele note urmează să fie șterse.';
 $string['gradesmoduledeletionprefix'] = '[Eliminare în curs]';
 $string['gradesonly'] = 'Doar note';
@@ -395,9 +395,9 @@ $string['hidenooutcomes'] = 'Afișează rezultatele';
 $string['hidequickfeedback'] = 'Ascunde Quick Feedback';
 $string['hideranges'] = 'Ascundeți intervalele';
 $string['hidetotalifhiddenitems'] = 'Nu mai afișa totalurile dacă acestea conțin elemente ascunse';
-$string['hidetotalifhiddenitems_help'] = 'Această setare specifică dacă totalurile care conţin elemente ascunse de notare sunt afișate cursanților sau înlocuite cu o cratimă (-). În cazul în care sunt afișate, totalul poate fi calculat fie prin excluderea, fie prin includerea elementelor ascunse.
+$string['hidetotalifhiddenitems_help'] = 'Această setare specifică dacă totalurile care conţin elemente de notare ascunse sunt afișate cursanților sau înlocuite cu o cratimă (-). În cazul în care sunt afișate, totalul poate fi calculat fie prin excluderea, fie prin includerea elementelor ascunse.
 
-În cazul în care elementele ascunse sunt excluse, totalul va fi diferit de cel văzut de către profesor în raportul notelor, deoarece profesorul vede întotdeauna totalurile calculate din toate elementele indiferent dacă acestea sunt ascunse sau vizibile pentru cursanți. În cazul în care elementele ascunse sunt incluse, studenţii ar putea fi în măsură să calculeze elementele ascunse.';
+În cazul în care elementele ascunse sunt excluse, totalul va fi diferit de cel văzut de către profesor în raportul notelor, deoarece profesorul vede întotdeauna totalurile calculate din toate elementele indiferent dacă acestea sunt ascunse sau vizibile pentru cursanți. În cazul în care elementele ascunse sunt incluse, cursanții ar putea să calculeze elementele ascunse.';
 $string['hidetotalshowexhiddenitems'] = 'Afișați totalurile excluzând elementele ascunse';
 $string['hidetotalshowinchiddenitems'] = 'Afișați totalurile, inclusiv elementele ascunse';
 $string['hideverbose'] = 'Ascunde {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -421,10 +421,10 @@ Un fișier cu formatul corect poate fi obținut prin exportarea mai întâi a un
 $string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Import sub formă de rezultate personalizate (numai acest curs)';
 $string['importdata'] = 'Date';
-$string['importdata_help'] = 'Notele pot fi lipite direct dintr-o foaie de calcul OpenDocument sau Excel cu formatul după cum urmează:
+$string['importdata_help'] = 'Notele pot fi lipite direct dintr-o foaie de calcul OpenDocument sau Excel având formatul după cum urmează:
 
-* Cel puțin o coloană trebuie să conțină date de identitate a utilizatorului - nume de utilizator, adresa de e-mail sau numărul de identificare.
-* Alte coloane ar trebui să aibă titluri ca pentru activitățile existente sau articolele de calificare.
+* Cel puțin o coloană trebuie să conțină date despre identitatea utilizatorului - nume de utilizator, adresa de e-mail sau numărul de identificare.
+* Celelalte coloane ar trebui să aibă anteturi ca pentru activitățile existente sau elemente de notare.
 
 O foaie de calcul formatată corect poate fi obținută prin exportarea mai întâi a unor note. Foaia de calcul poate fi apoi editată pentru a adăuga mai multe note și salvată.
 
@@ -460,7 +460,7 @@ $string['item'] = 'Element';
 $string['iteminfo'] = 'Info element';
 $string['iteminfo_help'] = 'Această setare oferă spaţiu pentru a introduce informaţii despre element. Informaţia nu este afişată în altă parte.';
 $string['itemname'] = 'Nume element';
-$string['itemnamehelp'] = 'Numele acestui item, dat de modul.';
+$string['itemnamehelp'] = 'Numele acestui element dat de modul.';
 $string['items'] = 'Elemente';
 $string['itemsedit'] = 'Editare element notă';
 $string['keephigh'] = 'Păstrează pe cele mai mari';
@@ -504,7 +504,7 @@ $string['min'] = 'Cel mai mic';
 $string['minimum_show'] = 'Afișează nota minimă';
 $string['minimum_show_help'] = 'Nota minimă se utilizează la calcularea notelor și la pondere. În cazul în care nu este afișată, nota minimă va implicit zero și nu poate fi editată.';
 $string['minmaxtouse'] = 'Notele minime și maxime admise în calcul';
-$string['minmaxtouse_desc'] = 'Această setare determină dacă se utilizează notele minime și maxime inițiale de la data acordării notei sau notele minime și maxime specificate în setările pentru elementul de notă, atunci când se calculează nota afișată în registrul de note. Este recomandat ca această setare să fie modificată într-un moment de vârf, deoarece toate notele vor fi recalculate, ceea ce poate duce la o încărcare mare a serverului.';
+$string['minmaxtouse_desc'] = 'Această setare determină dacă se utilizează notele minime și maxime inițiale de la data acordării notei sau notele minime și maxime specificate în setările pentru elementul de notă, atunci când se calculează nota afișată în registrul de note. Este recomandat ca această setare să nu fie modificată într-un moment esențial, deoarece toate notele vor fi recalculate, ceea ce poate duce la o încărcare mare a serverului.';
 $string['minmaxtouse_help'] = 'Această setare determină utilizarea notelor maxime și minime inițiale din momentul în care s-a primit nota, sau notele minime și maxime așa cum este specificat în setările pentru elementule notei, atunci când se calculează nota afișată în catalog.';
 $string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Notă: Unele note au fost modificate în scopul de a elimina o neconcordanță din catalog cauzată de o modificare a notelor minime și maxime utilizate la calcularea notei afișate. Se recomandă ca modificările să fie revizuite și acceptate.';
@@ -515,19 +515,19 @@ $string['missingscale'] = 'Trebuie să selectaţi o scală';
 $string['mode'] = 'Mod';
 $string['modgrade'] = 'Notă';
 $string['modgrade_help'] = 'Selectați tipul de notare utilizat pentru această activitate. Dacă se alege „scală”, puteți alege scala din meniul derulant. Dacă utilizați note, puteți introduce nota maximă disponibilă pentru această activitate.';
-$string['modgradecantchangegradetype'] = 'Nu puteți schimba tipul, deoarece există deja note pentru acest item.';
+$string['modgradecantchangegradetype'] = 'Nu puteți schimba tipul, deoarece există deja note pentru acest element.';
 $string['modgradecantchangegradetypemsg'] = 'Unele note au fost deja acordate, astfel încât tipul de notă nu poate fi schimbat. În cazul în care doriți să schimbați nota maximă, trebuie să alegeți mai întâi dacă redimensionați sau nu notele existente.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Unele note au fost deja acordate, astfel încât tipul de notă și scala nu pot fi schimbate.';
 $string['modgradecantchangeratingmaxgrade'] = 'Nu poți modifica nota maximă atunci când există deja note pentru o activitate cu rating.';
-$string['modgradecantchangescale'] = 'Nu puteți schimba scala, deoarece există deja note pentru acest item.';
-$string['modgradecategorycantchangegradetypemsg'] = 'Această categorie are asociate elemente de notă care au fost suprascrise. Prin urmare, unele note au fost deja acordate, astfel încât tipul de notă nu poate fi modificat. Dacă doriți să modificați nota maximă, trebuie mai întâi să alegeți dacă doriți sau nu să modificați din nou notele existente.';
-$string['modgradecategorycantchangegradetyporscalemsg'] = 'Această categorie are asociate elemente ale notei care au fost înlocuite. Prin urmare, unele note au fost deja acordate, așadar tipul de notă și scala nu pot fi schimbate.';
+$string['modgradecantchangescale'] = 'Nu puteți schimba scala, deoarece există deja note pentru acest element.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Această categorie are asociate elemente de notare care au fost suprascrise. Prin urmare, unele note au fost deja acordate, astfel încât tipul de notă nu poate fi modificat. Dacă doriți să modificați nota maximă, trebuie mai întâi să alegeți dacă doriți sau nu să modificați din nou notele existente.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Această categorie are asociate elemente de notare care au fost surpascrise. Prin urmare, unele note au fost deja acordate, așadar tipul de notă și scala nu pot fi schimbate.';
 $string['modgradecategoryrescalegrades'] = 'Rescalează notele suprascrise';
 $string['modgradecategoryrescalegrades_help'] = 'Atunci când modificați notele maxime pentru un articol din notă, trebuie să specificați dacă acest lucru va determina sau nu să se schimbe și notele procentuale existente.
 
 Dacă această opțiune este setată la „Da”, orice notă existentă va fi modificată, astfel încât gradul procentual să rămână același.
 
-De exemplu, dacă această opțiune este setată la „Da”, modificarea notei maxime pentru un articol de la 10 la 20 ar determina recalificarea unei note de 6/10 (60%) la 12/20 (60%). Cu această opțiune setată la „Nu”, nota va rămâne neschimbată, necesitând ajustarea manuală a elementelor de notă pentru a asigura scorurile corecte.';
+De exemplu, dacă această opțiune este setată la „Da”, modificarea notei maxime pentru un articol de la 10 la 20 ar determina recalificarea unei note de 6/10 (60%) la 12/20 (60%). Cu această opțiune setată la „Nu”, nota va rămâne neschimbată, necesitând ajustarea manuală a elementelor de notare pentru a asigura scorurile corecte.';
 $string['modgradedonotmodify'] = 'Nu modifica notele existente';
 $string['modgradeerrorbadpoint'] = 'Valoare nevalidă a notei. Trebuie să fie un număr întreg între 1 și {$a}';
 $string['modgradeerrorbadscale'] = 'Scală nevalidă selectată. Asigurați-vă că selectați o scală de mai jos.';
@@ -537,7 +537,7 @@ $string['modgraderescalegrades_help'] = 'Când se schimbă notele maxime în cat
 
 Dacă setați \'Da\', toate notele existente vor fi rescalate, astfel încât nota procentuală să rămână aceeași.
 
-De exemplu, în cazul în care această opțiune este setată "Da", schimbarea notei maximă  de la 10 la 20 ar însemna o notă de 6/10 (60%), care urmează să fie rescalată la 12/20 (60%). Când această opțiune este setată "Nu", nota se va schimba de la 6/10 (60%), la 6/20 (30%), necesitând ajustarea manuală a notei pentru a avea nota corectă.';
+De exemplu, în cazul în care această opțiune este setată "Da", schimbarea notei maximă  de la 10 la 20 ar însemna o notă de 6/10 (60%), care urmează să fie rescalată la 12/20 (60%). Când această opțiune este setată "Nu", nota se va schimba de la 6/10 (60%), la 6/20 (30%), necesitând ajustarea manuală a elementelor de notare pentru a avea nota corectă.';
 $string['modgradetype'] = 'Tip';
 $string['modgradetypenone'] = 'Nici una';
 $string['modgradetypepoint'] = 'Punct';
@@ -558,7 +558,7 @@ $string['navmethod'] = 'Metodă navigare';
 $string['neverdeletehistory'] = 'Istoricul nu se şterge niciodată';
 $string['newcategory'] = 'Categorie nouă';
 $string['newitem'] = 'Element notă nou';
-$string['newoutcomeitem'] = 'Un nou item rezultat';
+$string['newoutcomeitem'] = 'Un nou element rezultat';
 $string['no'] = 'Nu';
 $string['nocategories'] = 'Ctaegoriile de note nu au putut fi adăugate sau găsite în acest curs';
 $string['nocategoryname'] = 'Nu a fost atribuit niciun nume de categorie.';
@@ -603,7 +603,7 @@ $string['outcomeconfirmdelete'] = 'Sunteți sigur(ă) că doriți să ștergeți
 $string['outcomecreate'] = 'Adaugă un nou rezultat';
 $string['outcomedelete'] = 'Șterge rezultat';
 $string['outcomefullname'] = 'Nume complet';
-$string['outcomeitem'] = 'Element de rezultat';
+$string['outcomeitem'] = 'Element rezultat';
 $string['outcomeitemsedit'] = 'Editați itemul rezultat';
 $string['outcomereport'] = 'Raport rezultate';
 $string['outcomes'] = 'Rezultat';
@@ -678,7 +678,7 @@ $string['privacy:metadata:grades:usermodified'] = 'ID-ul utilizatorului care a m
 $string['privacy:metadata:gradeshistory'] = 'Lista notelor anteriore';
 $string['privacy:metadata:history:loggeduser'] = 'ID-ul utilizatorului care a fost conectat când a avut loc modificarea notei';
 $string['privacy:metadata:history:timemodified'] = 'Momentul în care a avut loc modificarea notei';
-$string['privacy:metadata:itemshistory'] = 'O înregistrare a versiunilor anterioare ale notelor';
+$string['privacy:metadata:itemshistory'] = 'O înregistrare a versiunilor anterioare ale elementelor de notare';
 $string['privacy:metadata:outcomes'] = 'O listă de rezultate';
 $string['privacy:metadata:outcomes:timemodified'] = 'Ora când a fost modificată înregistrarea';
 $string['privacy:metadata:outcomes:usermodified'] = 'Utilizatorul care a modificat ultima dată înregistrarea';
@@ -719,9 +719,9 @@ $string['recovergradesdefault_help'] = 'În mod implicit, recuperați notele vec
 $string['refreshpreview'] = 'Actualizați previzualizarea';
 $string['regradeanyway'] = 'Notează din nou oricum';
 $string['removeallcoursegrades'] = 'Şterge toate notele';
-$string['removeallcoursegrades_help'] = 'Dacă este bifat, toate elementele de notă care au fost adăugate manual în registrul de note vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele clasificate asociate activităților.';
+$string['removeallcoursegrades_help'] = 'Dacă este bifat, toate elementele de notare care au fost adăugate manual în catalog vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele clasificate asociate activităților.';
 $string['removeallcourseitems'] = 'Şterge toate elementele şi categoriile';
-$string['removeallcourseitems_help'] = 'Dacă este bifat, toate categoriile și elementele de notare care au fost adăugate manual în registrul de note vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele de note asociate activităților.';
+$string['removeallcourseitems_help'] = 'Dacă este bifat, toate categoriile și elementele de notare care au fost adăugate manual în registrul de note vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele de notare asociate activităților.';
 $string['report'] = 'Raport';
 $string['reportdefault'] = 'Raport implicit ({$a})';
 $string['reportplugins'] = 'Plugin-uri rapoarte';
@@ -783,11 +783,11 @@ $string['showgrade'] = 'Afișează note';
 $string['showgrade_help'] = 'Afișați coloana cu note?';
 $string['showgroups'] = 'Afişează grupuri';
 $string['showhiddenitems'] = 'Afişează elemente ascunse';
-$string['showhiddenitems_help'] = 'Această setare determină dacă numele elementelor ascunse sunt vizibile de către cursanți.
+$string['showhiddenitems_help'] = 'Această setare determină dacă elementele de notare ascunse sunt vizibile de către cursanți.
 
-* Arată ascunse - Numele elementelor ascunse sunt prezentate însă notele rămân ascunse
-* Ascunse până la un moment dat - Elementele care au o dată specificată în setarea "ascunde până la" sunt ascunse complet până la data stabilită, după care se va afișa întreg elementul
-* Nu afişaţi - elementelor ascunse rămân  ascunse';
+* Arată pe cele ascunse - Denumirea elementelor de notare ascunse este afișată însă notele rămân ascunse
+* Ascunse până la un moment dat - Elementele de notare care au o dată specificată în setarea "ascunde până la" sunt ascunse complet până la data stabilită, după care se va afișa întreg elementul
+* Nu afişaţi - elementelele de notare ascunse rămân ascunse';
 $string['showhiddenuntilonly'] = 'Ascuns doar până la';
 $string['showingaggregatesonly'] = 'Se afișează doar agregatele';
 $string['showingfullmode'] = 'Se afișează imaginea completă';
@@ -798,7 +798,7 @@ $string['showlocks'] = 'Arată elemente blocate';
 $string['showlocks_help'] = 'Dacă se activează opțiunea, atunci când este activat modul de editare, o pictogramă blocare/deblocare va fi afișată pentru fiecare notă. Astfel se poate controla dacă nota se poate actualiza automat de către activitatea respectivă.  ';
 $string['shownohidden'] = 'Nu afișa';
 $string['shownooutcomes'] = 'Ascunde rezultate';
-$string['shownumberofgrades'] = 'Afișează numărul de clase în medii';
+$string['shownumberofgrades'] = 'Afișează numărul de note în medii';
 $string['shownumberofgrades_help'] = 'Dacă se activează opțiunea, numărul de note folosite la calcularea mediei aritmetice va fi afişat în paranteze după fiecare medie.';
 $string['showonlyactiveenrol'] = 'Afișează doar înrolările active';
 $string['showonlyactiveenrol_help'] = 'Această setare determină dacă doar utilizatorii activi inscriși vor fi vizibili în raportul din catalog. Dacă este dezactivată, utilizatorii suspendați nu vor fi afișați în catalog.';
@@ -813,7 +813,7 @@ $string['showrange_help'] = 'Afișează coloana pentru interval?';
 $string['showranges'] = 'Afişează intervale';
 $string['showranges_help'] = 'Dacă se activează opțiunea, raportul notelor va conţine un rând suplimentar care va afișa gama de note pentru fiecare categorie şi element al notei.';
 $string['showrank'] = 'Afișează rang';
-$string['showrank_help'] = 'Dacă se arată poziția cursantului în raport cu restul clasei pentru fiecare element de notă.';
+$string['showrank_help'] = 'Dacă se afișează poziția cursantului în raport cu restul clasei pentru fiecare element de notă.';
 $string['showuserimage'] = 'Afişează imagini profil utilizatori';
 $string['showuserimage_help'] = 'Afișează sau nu imaginea profilului utilizatorului lângă nume, în raportul notelor.';
 $string['showverbose'] = 'Afişează {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -849,7 +849,7 @@ $string['turnfeedbackoff'] = 'Dezactivează feedback';
 $string['turnfeedbackon'] = 'Activează feedback';
 $string['typenone'] = 'Nici una';
 $string['typescale'] = 'Scală';
-$string['typescale_help'] = 'Această setare determină scara utilizată atunci când se utilizează sistemul de notare scalar. Scara pentru notele activităților se stabilește pe pagina Setări Activitate.';
+$string['typescale_help'] = 'Această setare determină scala utilizată atunci când se utilizează sistemul de notare scalar. Scala pentru notele activităților se stabilește pe pagina Setări Activitate.';
 $string['typetext'] = 'Text';
 $string['typevalue'] = 'Valoare';
 $string['uncategorised'] = 'Fără categorie';
@@ -889,7 +889,7 @@ $string['viewas'] = 'Vizualizare raport ca';
 $string['viewbygroup'] = 'Grup';
 $string['viewgrades'] = 'Afişează note';
 $string['weight'] = 'Pondere';
-$string['weight_help'] = 'O valoare utilizată pentru a determina valoarea relativă a mai multor elemente ale notei într-o categorie sau într-un curs.';
+$string['weight_help'] = 'O valoare utilizată pentru a determina valoarea relativă a mai multor elemente de notare într-o categorie sau într-un curs.';
 $string['weightcourse'] = 'Foloseşte note ponderate în cadrul cursului';
 $string['weightedascending'] = 'Sortare în ordine crescătoare în funcţie de procentajul ponderat';
 $string['weighteddescending'] = 'Sortare în ordine descrescătoare în funcţie de procentajul ponderat';

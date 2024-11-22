@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['dataformat'] = 'Valori separate prin virgulă (.vsv)';
+$string['dataformat'] = 'Valori separate prin virgulă (.csv)';
 $string['privacy:metadata'] = 'Pluginul pentru formatul de date CSV nu stochează date personale.';
 $string['shortname'] = 'CSV';

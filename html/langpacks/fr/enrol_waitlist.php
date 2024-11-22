@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmation'] = 'Si vous continuez, vous serez inscrit au cours.<br><br>Êtes-vous bien certain de vouloir continuer?';
+$string['confirmation'] = 'Si vous continuez, vous serez inscrit au cours.<br><br>Voulez-vous vraiment continuer ?';
 $string['confirmation_cancel'] = 'Annuler';
 $string['confirmation_no'] = 'Non';
 $string['confirmation_yes'] = 'Oui';
@@ -48,7 +48,7 @@ $string['groupkey_desc'] = 'Utilisation des clés d’inscription de groupe par 
 $string['groupkey_help'] = 'En plus de restreindre l’accès au cours aux utilisateurs disposant de la clé, l’utilisation d’une clé d’inscription de groupe signifie que les utilisateurs seront automatiquement ajoutés au groupe au moment de l’inscription.
 
 Pour utiliser une clé d’inscription de groupe, vous devez définir une clé d’inscription dans les réglages du cours et une clé d’inscription de groupe dans les réglages du groupe.';
-$string['lineconfirm'] = '<br>Êtes-vous bien certain de vouloir continuer ?';
+$string['lineconfirm'] = '<br>Voulez-vous vraiment continuer ?';
 $string['lineinfo'] = '<br>Nombre de personnes en ligne devant vous :';
 $string['longtimenosee'] = 'Désinscrire un utilisateur inactif après';
 $string['longtimenosee_help'] = 'Les utilisateurs qui n’ont pas accédé au cours pendant une longue période sont automatiquement désinscrits. Ce paramètre permet de définir ladite période.';
@@ -63,7 +63,7 @@ Un champ vide permet à tous les utilisateurs de s’inscrire.
 Si une clé d’inscription est précisée, les utilisateurs qui tentent de s’inscrire au cours devront la fournir. À noter que les utilisateurs ne doivent fournir cette clé qu’UNE SEULE fois, au moment de l’inscription.';
 $string['passwordinvalid'] = 'Clé erronée. Veuillez essayer de nouveau';
 $string['passwordinvalidhint'] = 'La clé d’inscription n’est pas valide, veuillez essayer de nouveau<br />
-(Indice : Elle débute par « {$a} »&nbsp;)';
+(Indice : elle débute par « {$a} »&nbsp;)';
 $string['pluginname'] = 'Liste d’attente d’inscription';
 $string['pluginname_desc'] = 'Le plugiciel de liste d’attente d’inscription permet aux utilisateurs de sélectionner des cours, lesquels peuvent être protégés par une clé d’inscription. À l’interne, l’inscription se fait au moyen du plugiciel d’inscription manuel qui doit être activé dans le même cours.';
 $string['requirepassword'] = 'Clé d’inscription requise';

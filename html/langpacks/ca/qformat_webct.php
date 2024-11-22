@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} error(s) detectat(s)';
 $string['missinganswer'] = 'Massa poc :RESPOSTA, les declaracions :Lx, :Rx de la pregunta de la línia {$a}. Heu de definir almenys dues respostes possibles.';
-$string['missingquestion'] = 'No hi ha l\'etiqueta de la pregunta després de la línia {$a}';
+$string['missingquestion'] = 'Falta l\'etiqueta de la pregunta després de la línia {$a}';
 $string['pluginname'] = 'Format WebCT';
 $string['pluginname_help'] = 'El format WebCT permet importar preguntes del tipus respostes múltiples i resposta breu desades en format WebCT.';
 $string['pluginname_link'] = 'qformat/webct';

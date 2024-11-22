@@ -62,6 +62,7 @@ $string['newformsinqueue'] = '{$a} formulário(s) das resposta está/estão pend
 $string['pluginname'] = 'Importação de resultados do Teste Offline';
 $string['privacy:metadata'] = 'Este módulo não armazena quaisquer dados pessoais.';
 $string['processingformsinqueue'] = '{$a} formulário(s) das respostas em processamento';
+$string['scanerrorlistnumber'] = 'O número da lista parece estar fora do intervalo. Verifique se existem irregularidades no código de barras do documento digitalizado para o código do número da lista (canto inferior direito) e volte a digitalizar com uma maior resolução, se necessário!';
 $string['showpage'] = 'Mostrar';
 $string['username'] = 'Nome de utilizador';
 $string['waitingforanalysis'] = 'A aguardar análise';

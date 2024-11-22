@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['content'] = 'Contingut';
+$string['save'] = 'Desa els paràmetres';

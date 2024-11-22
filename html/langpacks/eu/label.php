@@ -53,7 +53,7 @@ Testua eta multimedia eremua erabil dezakezu
 
 * Ikastaroko jarduera zerrenda luzeak goiburu edo irudien bitartez zatitzeko
 * Ikastaroan bertan txertatutako bideoak erakusteko
-* Ikastaroaren atal bati azalpen txiki bat gehitzeko';
+* Ikastaro-atal bati azalpen txiki bat gehitzeko';
 $string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Testua eta multimedia eremuak';
 $string['pluginadministration'] = 'Testua eta multimedia eremuen kudeaketa';

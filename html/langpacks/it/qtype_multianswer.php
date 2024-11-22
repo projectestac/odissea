@@ -31,6 +31,7 @@ $string['correctanswer'] = 'Risposta corretta';
 $string['correctanswerandfeedback'] = 'Risposta corretta e feedback';
 $string['corruptedquestion'] = 'Questa domanda è danneggiata e contiene sotto domande che non sono presenti nel sistema.';
 $string['decodeverifyquestiontext'] = 'Decodifica e verifica il testo della domanda';
+$string['invalidmultianswerquestion'] = 'Domanda (Cloze) con risposte incorporate non valide ({$a}).';
 $string['layout'] = 'Impaginazione';
 $string['layouthorizontal'] = 'Riga orizzontale di pulsanti radio';
 $string['layoutmultiple_horizontal'] = 'Caselle di spunta in linea orizzontale';

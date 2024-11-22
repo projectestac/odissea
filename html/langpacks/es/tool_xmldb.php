@@ -227,10 +227,10 @@ $string['wrongoraclesemantics'] = 'Se ha encontrado semántica incorrecta de Ora
 $string['wrongreservedwords'] = 'Palabras reservadas utilizadas actualmente <br /> (tenga en cuenta que los nombres de las tablas no son importantes si se usa el prefijo $CFG->)';
 $string['yesextraindexesfound'] = 'Se encontraron los siguientes índices adicionales.';
 $string['yesmissingindexesfound'] = '<p>Se han detectado que faltan algunos índices en su base de datos. Aquí están sus detalles y las instrucciones SQL necesarias para ser ejecutadas con su interfaz SQL favorita para crear todos. ¡Recuerde hacer antes una copia de seguridad de sus datos!</p>
-<p>Después de hacer eso, es muy recomendable ejecutar esta utilidad de nuevo para verificar que no se encuentren más índices que falten.</p>';
+<p>Después de hacer eso, es muy recomendable ejecutar esta herramienta de nuevo para verificar que no se encuentren más índices que falten.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Se han encontrado algunos valores por defecto inconsistentes en su Base de Datos. Aquí se presentan los detalles y los comandos SQL que deben ejecutarse en su interfaz SQL favorita para arreglarlos todos. ¡No olvide hacer una copia de seguridad de sus datos!.</p>
-<p>Una vez realizado, se recomienda ejecutar de nuevo esta utilidad para comprobar que no hay más valores por defecto inconsistentes.</p>';
+<p>Una vez realizado, se recomienda ejecutar de nuevo esta herramienta para comprobar que no hay más valores por defecto inconsistentes.</p>';
 $string['yeswrongintsfound'] = '<p>Se han encontrado algunos enteros erróneos en su BD. Aquí se presentan los detalles y los comandos SQL que deben ejecutarse en su interfaz SQL favorita para repararlos. ¡No olvide hacer una copia de seguridad de sus datos antes!</p>
-<p>Una vez reparados, se recomienda ejecutar de nuevo esta utilidad para comprobar que no hay más enteros erróneos.</p>';
+<p>Una vez reparados, se recomienda ejecutar de nuevo esta herramienta para comprobar que no hay más enteros erróneos.</p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>Se han encontrado algunas columnas de Oracle que utilizan semántica BYTE en su base de datos. Aquí están sus detalles y las declaraciones SQL necesarias para ser ejecutadas con su interfaz SQL favorita para convertirlas todas. ¡Recuerde hacer una copia de seguridad de sus datos antes!</p>
-<p>Después de hacer eso, es muy recomendable ejecutar esta utilidad nuevamente para verificar que no se encuentren más semánticas incorrectas.</p>';
+<p>Después de hacer eso, es muy recomendable ejecutar esta herramienta nuevamente para verificar que no se encuentren más semánticas incorrectas.</p>';

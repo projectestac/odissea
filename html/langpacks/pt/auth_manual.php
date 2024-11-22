@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Este método elimina qualquer hipótese dos utilizadores poderem criar as suas próprias contas. Todas as contas terão que ser criadas manualmente pelo administrador.';
 $string['expiration'] = 'Ativar validade da senha';
-$string['expiration_desc'] = 'Permitir que as senhas expirem após um período de tempo específico.';
+$string['expiration_desc'] = 'Permitir que as senhas expirem após um intervalo de tempo específico.';
 $string['expiration_warning'] = 'Limite de notificação';
 $string['expiration_warning_desc'] = 'Número de dias antes da senha expirar para enviar notificação.';
 $string['passwdexpire_settings'] = 'Configurações de expiração da senha';
 $string['passwdexpiretime'] = 'Duração da senha';
-$string['passwdexpiretime_desc'] = 'Período de tempo durante o qual uma senha é válida.';
+$string['passwdexpiretime_desc'] = 'Intervalo de tempo durante o qual uma senha é válida.';
 $string['pluginname'] = 'Contas manuais';
 $string['privacy:metadata:preference:passwordupdatetime'] = 'A data da última alteração de senha.';

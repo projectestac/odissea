@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Просмотр репозиториев...';
+$string['browserepositories'] = 'Обзор репозиториев...';
 $string['buttontitle'] = 'Контент H5P';
 $string['copyrightbutton'] = 'Кнопка авторских прав';
 $string['downloadbutton'] = 'Разрешить скачивание';

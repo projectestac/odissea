@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = '添加标准';
 $string['additionalfeedback'] = '附加反馈';
-$string['alwaysshowdefinition'] = '允许用户预览模块中使用的量规（不然只有在评分之后才能看到）';
+$string['alwaysshowdefinition'] = '允许用户预览评分量规（否则仅在评分后显示）';
 $string['backtoediting'] = '返回编辑';
 $string['confirmdeletecriterion'] = '您确定要删除此标准吗？';
 $string['confirmdeletelevel'] = '您确定要删除这个级别吗？';
@@ -41,18 +41,18 @@ $string['criterionmoveup'] = '上移';
 $string['criterionremark'] = '标准备注{$a->description}: {$a->remark}';
 $string['definerubric'] = '定义量规';
 $string['description'] = '描述';
-$string['enableremarks'] = '允许评分人对每个标准添加文本评论';
+$string['enableremarks'] = '允许评分者为每个条件添加文本注释';
 $string['err_mintwolevels'] = '每条标准必须至少有两个级别';
 $string['err_nocriteria'] = '量规必须至少包含一个标准';
 $string['err_nodefinition'] = '级别定义不能为空';
 $string['err_nodescription'] = '标准的描述不能为空';
 $string['err_novariations'] = '评分标准不同级别不能赋予相同分数值';
-$string['err_scoreformat'] = '每个级别的分数必须是一个有效的非负数';
+$string['err_scoreformat'] = '每个级别的分数必须是有效的数字';
 $string['err_totalscore'] = '量规中最大可用的分数必须大于零';
 $string['gradingof'] = '{$a} 评分';
 $string['level'] = '等级 {$a->definition}，{$a->score} 分。';
 $string['leveldefinition'] = '等级 {$a} 定义';
-$string['leveldelete'] = '删除级别';
+$string['leveldelete'] = '删除级别{$a}';
 $string['levelempty'] = '单击编辑级别';
 $string['levelsgroup'] = '等级小组';
 $string['lockzeropoints'] = '为评分量规计算可以取得的最低分数';
@@ -75,9 +75,11 @@ $string['regradeoption1'] = '标记重新评分';
 $string['restoredfromdraft'] = '注意：上一次对该人的评分未能成功保存，所以恢复了草稿。如果您希望取消这些变化，请使用下面的“取消”按钮。';
 $string['rubric'] = '量规';
 $string['rubricmapping'] = '分数与评级的映射规则';
-$string['rubricmappingexplained'] = '该量规的最小分数为<b> {$a->minscore} 分</b>，它对应于该模块中的最低级别（通常为 0，除非使用了比例范围）。最高分数为<b> {$a->maxscore} 分</b>，它对应于该模块中的最高级别。
-中间的分数取整后根据<b>距离最近的级别</b>进行转换。
-如果使用比例范围代替分级并且分数是连续的整数，分数将转换为比例元素。';
+$string['rubricmappingexplained'] = '此评分标准的最低可能分数为 <b>{$a->minscore} 分</b>。它将被转换为活动可用的最低成绩（除非使用量表，否则为 0）。<b>最高分 {$a->maxscore} 分</b>将转换为最高分。中级分数将分别转换。
+
+如果使用量表进行评分，则分数将四舍五入转换为量表元素，就好像它们是连续的整数一样。
+
+可以通过编辑表格并勾选“计算等级，其最低分数等于评分标准的最低可达到等级”框来更改此成绩计算。';
 $string['rubricnotcompleted'] = '请为每个标准选择';
 $string['rubricoptions'] = '量规的选项';
 $string['rubricstatus'] = '当前量规状态';

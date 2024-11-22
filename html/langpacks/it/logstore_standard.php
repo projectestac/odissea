@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Dimensione buffer scrittura';
 $string['jsonformat'] = 'Formato JSON';
+$string['jsonformat_desc'] = 'Utilizza il formato JSON standard anziché i dati serializzati PHP nel campo \'other\' del database .';
 $string['pluginname'] = 'Log standard';
 $string['pluginname_desc'] = 'Plugin che memorizza i dati di log in una tabella del database di Moodle.';
 $string['privacy:metadata:log'] = 'Raccolta di eventi passati.';
@@ -35,6 +36,7 @@ $string['privacy:metadata:log:eventname'] = 'Nome dell\'evento';
 $string['privacy:metadata:log:ip'] = 'Indirizzo IP usato per l\'evento.';
 $string['privacy:metadata:log:origin'] = 'Origine dell\'evento.';
 $string['privacy:metadata:log:other'] = 'Informazioni aggiuntive sull\'evento.';
+$string['privacy:metadata:log:realuserid'] = 'ID dell\'utente reale che a generato l\'evento, quando si maschera un utente.';
 $string['privacy:metadata:log:relateduserid'] = 'ID di un utente correlato all\'evento.';
 $string['privacy:metadata:log:timecreated'] = 'Data e ora di svolgimento dell\'evento.';
 $string['privacy:metadata:log:userid'] = 'ID dell\'utente che ha dato il via all\'evento.';

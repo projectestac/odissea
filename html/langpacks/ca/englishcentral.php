@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['details'] = 'Detalls';
+$string['overview'] = 'Resum';
+$string['preview'] = 'Previsualització';
 $string['reports'] = 'Informes';
 $string['view'] = 'Visualitza';
 $string['viewreport'] = 'Detalls';

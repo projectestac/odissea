@@ -459,6 +459,7 @@ $string['oauth2issuer'] = 'Службы OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Прочая навигация ...';
 $string['overallcrit'] = 'из выбранных критериев выполнены.';
 $string['password_required'] = 'Пароль не может быть пустым';
 $string['potentialrecipients'] = 'Потенциальные получатели значка';

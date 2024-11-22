@@ -92,7 +92,6 @@ $string['old_messages'] = 'Mensajes enviados';
 $string['on_time'] = 'A tiempo';
 $string['options'] = 'Opciones';
 $string['pluginname'] = 'Gráficas Analíticas';
-$string['privacy:metadata'] = 'El bloque de Gráficos de Análisis solo muestra datos de calendario existentes.';
 $string['ratio'] = 'Ratio';
 $string['red_tooltip'] = 'Ningún módulo ha sido consultado en la última semana';
 $string['remove_all'] = 'Quitar todos';

@@ -29,22 +29,20 @@ $string['chooseavariable'] = '选择一个变量...';
 $string['clicktoopen'] = '点击{$a}链接打开资源。';
 $string['configdisplayoptions'] = '选择所有可以使用的选项。已有的设置不会改变。按住CTRL键选择多个字段。';
 $string['configframesize'] = '当在框架内显示web页面或上传的文件时，此值为顶层框架（包括导航栏）的高度（单位：像素）。';
-$string['configrolesinparams'] = '如果您希望用本地化过的角色名做可选的参数变量，就启用';
+$string['configrolesinparams'] = '自定义角色名称（来自课程设置）是否应作为 URL 参数的变量提供？';
 $string['configsecretphrase'] = '此秘密短语被用来生成加密的代码。此代码可以当做参数发送给某些服务器。加密的代码是当前用户的IP地址和您的秘密短语的md5值。即，code = md5(IP.秘密短语)。请注意，因为IP地址会变化，且经常在不同计算机之间共享，所以并不可靠。';
 $string['contentheader'] = '内容';
 $string['createurl'] = '创建一个 URL';
 $string['displayoptions'] = '可用的显示选项';
 $string['displayselect'] = '显示';
-$string['displayselect_help'] = '此设置，URL文件的类型，及浏览器是否允许嵌入，一起决定如何显示文件。选项可能包括：
+$string['displayselect_help'] = '此设置与 URL 文件类型以及浏览器是否允许嵌入一起决定了 URL 的显示方式。选项可能包括：
 
-* 自动 - 对类型可以自动选择的文件，这是最好的选项
-* 嵌入 - 在导航栏下的页面中显示文件、文件描述和各种版块
-* 强制下载 - 用户会被提示下载此文件
-* 打开 - 只在浏览器窗口中显示此文件
-* 在弹出窗口中 - 在一个无菜单和地址栏的新窗口中显示文件
-* 在框架中 - 在导航栏和文件描述下方的框架里显示文件
-* 新窗口 - 在有菜单和地址栏的新窗口中显示文件
-';
+* 自动 - 自动选择 URL 的最佳显示选项
+* 嵌入 - URL 与 URL 描述和任何块一起显示在导航栏下方的页面中
+* 打开 - 浏览器窗口中仅显示 URL
+* 在弹出窗口中 - URL 显示在没有菜单或地址栏的新浏览器窗口中
+* 在框架中 - URL 显示在导航栏和 URL 描述下方的框架中
+* 新窗口 - URL 显示在带有菜单和地址栏的新浏览器窗口中';
 $string['displayselectexplain'] = '选择显示类型，但并不是所有类型都适合所有URL。';
 $string['externalurl'] = '外部URL';
 $string['framesize'] = '框架高度';
@@ -66,10 +64,16 @@ $string['modulename_help'] = '该 URL 模块可以让老师提供一个 web 链�
 该 URL 有一些显示选项，如嵌入显示或者在新的窗口打开该 URL 的选项，以及向该 URL 传递诸如学生姓名信息的高级选项，如果需要的话。';
 $string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = '网页地址';
+$string['name'] = '名称';
+$string['name_help'] = '这将用作 URL 的链接文本。
+
+输入一个有意义的文本，简明扼要地描述 URL 的用途。
+
+避免使用“链接”一词。这将帮助屏幕阅读器用户，因为屏幕阅读器会读出链接（例如“Moodle.org，链接”），因此无需在名称字段中包含“链接”一词。';
 $string['page-mod-url-x'] = '任意URL模块页面';
 $string['parameterinfo'] = '&amp;参数=变量';
-$string['parametersheader'] = '参数';
-$string['parametersheader_help'] = '可以将一些Moodle内部变量自动附加到URL上。在每个文本框中输入参数名，然后选择配套的变量。';
+$string['parametersheader'] = 'URL 变量';
+$string['parametersheader_help'] = '此部分允许您将内部信息作为 URL 的一部分传递。例如，如果 URL 是一个采用参数的交互式网页，并且您想要传递当前用户的名称之类的内容，这将非常有用。在文本框中输入 URL 参数的名称，然后选择相应的站点变量。';
 $string['pluginadministration'] = 'URL模块管理';
 $string['pluginname'] = '网页地址';
 $string['popupheight'] = '弹出窗口高度（单位：像素）';
@@ -79,7 +83,7 @@ $string['popupwidthexplain'] = '指定弹出窗口的默认宽度。';
 $string['printintro'] = '显示URL描述';
 $string['printintroexplain'] = '在内容下方显示 URL 描述？某些显示类型就算开启此选项也不会显示描述。';
 $string['privacy:metadata'] = '网页地址资源插件不存储任何个人数据。';
-$string['rolesinparams'] = '在参数中包含角色名';
+$string['rolesinparams'] = '作为 URL 变量的角色名称';
 $string['search:activity'] = '网页地址';
 $string['serverurl'] = '服务器URL';
 $string['url:addinstance'] = '添加一个新的 URL 资源';

@@ -31,4 +31,4 @@ $string['massaction:use'] = 'استعمل كتلة إجراءات بالجملة
 $string['modulename'] = 'اسم النشاط';
 $string['moduletype'] = 'نوع النشاط';
 $string['selectall'] = 'إختيار الكل';
-$string['selectallinsection'] = 'إختيار الكل في المقطع';
+$string['selectallinsection'] = 'إختيار الكل في القسم';

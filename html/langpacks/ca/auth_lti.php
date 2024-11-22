@@ -25,5 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accountcreatedsuccess'] = 'El vostre compte s\'ha creat i ja està a punt per ser utilitzat.';
+$string['accountlinkedsuccess'] = 'El vostre compte ja existia i s\'ha enllaçat correctament.';
 $string['auth_ltidescription'] = 'El connector d\'autenticació LTI, conjuntament amb el connector d\'inscripció «Publica com a eina LTI», permet als usuaris remots accedir a cursos i activitats seleccionades. Altrament dit, fa funcionar Moodle com un proveïdor d\'eina LTI.';
+$string['cannotcreateaccounts'] = 'Actualment, la creació de comptes està prohibida en aquest lloc.';
+$string['createaccount'] = 'Crea un compte';
+$string['createaccountforme'] = 'Crea un compte per a mi';
+$string['createnewaccount'] = 'M\'agradaria crear un compte nou';
+$string['currentlyloggedinas'] = 'Actualment heu iniciat sessió com a:';
+$string['firstlaunchnoauthnotice'] = 'Per enllaçar el vostre compte existent, heu d\'iniciar sessió al lloc. Si us plau, inicieu la sessió al lloc en una pestanya/finestra nova i, a continuació, reinicieu l\'eina aquí. Per obtenir més informació, consulteu la documentació <a href="{$a}" target="_blank">Publica com a eina LTI</a>.';
+$string['firstlaunchnotice'] = 'Sembla que aquesta és la primera vegada que veniu aquí. Seleccioneu una de les opcions de compte següents.';
+$string['getstartedwithnewaccount'] = 'Comença amb un compte nou';
+$string['haveexistingaccount'] = 'Ja tinc un compte';
+$string['linkthisaccount'] = 'Enllaça aquest compte';
 $string['pluginname'] = 'LTI';
+$string['privacy:metadata:auth_lti'] = 'Autenticació LTI';
+$string['privacy:metadata:auth_lti:authsubsystem'] = 'Aquest complement està connectat al subsistema d\'autenticació.';
+$string['privacy:metadata:auth_lti:issuer256'] = 'El hash SHA256 de l\'URL de l\'emissor.';
+$string['privacy:metadata:auth_lti:tableexplanation'] = 'Comptes LTI enllaçats al compte Moodle d\'un usuari.';
+$string['privacy:metadata:auth_lti:timecreated'] = 'La marca de temps quan el compte d\'usuari va ser enllaçat amb l\'inici de sessió LTI.';
+$string['privacy:metadata:auth_lti:timemodified'] = 'La marca de temps quan es va modificar aquest registre.';
+$string['privacy:metadata:auth_lti:userid'] = 'L\'identificador del compte d\'usuari al qual està enllaçat l\'inici de sessió LTI';
+$string['provisioningmodeauto'] = 'Només comptes nous (automàtic)';
+$string['provisioningmodeexistingonly'] = 'Només comptes existents (sol·licitud)';
+$string['provisioningmodenewexisting'] = 'Comptes existents i nous (sol·licitud)';
+$string['useexistingaccount'] = 'Utilitzar compte existent';
+$string['welcome'] = 'Benvingut/da!';

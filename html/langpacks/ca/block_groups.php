@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['group'] = 'Grups';
+$string['introduction'] = 'Us heu inscrit als grups següents';
 $string['nogroups'] = 'El curs que heu sol·licitat no te cap grup.';

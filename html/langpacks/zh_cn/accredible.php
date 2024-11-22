@@ -52,7 +52,7 @@ $string['emptygradeattributekeyname'] = '最终的课程成绩将被映射到所
 $string['euhelp'] = '选择是否希望在欧盟（法兰克福）而不是美国托管数据';
 $string['eulabel'] = '欧盟（法兰克福）服务器';
 $string['eventcertificatecreated'] = '已发布的可扩展的认证';
-$string['gotodashboard'] = '更新你的徽章外观和证书，请访问： <a href="https://www.accredible.com/issuer/dashboard" target="_blank">https://www.accredible.com/issuer/dashboard</a>';
+$string['gotodashboard'] = '要更新徽章和证书外观，请访问：<a href="https://dashboard.accredible.com" target="_blank">https://dashboard.accredible.com</a>';
 $string['gradeattributegradeitemselect'] = '选择纳入认证的Moodle成绩：';
 $string['gradeattributekeynameselect'] = '选择一个可扩展设计属性：';
 $string['gradeissueheader'] = '自动发布条件：根据期末测试成绩';

@@ -35,7 +35,7 @@ $string['managemediaplayers'] = 'Gérer les lecteurs de média';
 $string['mediaformats'] = 'Lecteurs disponibles';
 $string['mediaformats_desc'] = 'Lorsque des lecteurs sont activés, des fichiers peuvent être intégrés à l’aide du filtre des plugins multimédia (s’il est activé) ou à l’aide de ressources de type fichier ou URL. Sinon, ces formats ne sont pas intégrés et les utilisateurs peuvent télécharger ou suivre les liens vers ces ressources.
 
-Si deux lecteurs supportent le même format, leur activation commune permet d’augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d’augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
+Si deux lecteurs prennent en charge le même format, leur activation commune permet d’augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d’augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
 $string['privacy:metadata'] = 'Le plugin Intégration de média n’enregistre aucune donnée personnelle.';
 $string['supports'] = 'Supports';
 $string['videoextensions'] = 'Vidéo : {$a}';

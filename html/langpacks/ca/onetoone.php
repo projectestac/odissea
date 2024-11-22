@@ -29,5 +29,7 @@ $string['attendance'] = 'Assistència';
 $string['details'] = 'Detalls';
 $string['edit'] = 'Edita';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
+$string['import'] = 'Importa';
+$string['info'] = 'Informació';
 $string['reminder'] = 'Recordatori';
 $string['submitted'] = 'S\'ha tramès';

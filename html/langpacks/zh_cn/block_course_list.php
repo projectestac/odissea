@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = '管理员视图';
 $string['allcourses'] = '管理员可看到所有课程';
-$string['configadminview'] = '管理员在课程列表中应当看到什么？';
-$string['confighideallcourseslink'] = '在版块下方隐藏“所有课程”链接。隐藏后，管理员还是可以看到。';
+$string['configadminview'] = '是显示“课程”块中的所有课程还是仅显示管理员已注册的课程。';
+$string['confighideallcourseslink'] = '移除课程列表下的“所有课程”链接。（此设置不会影响管理员视图）';
 $string['course_list:addinstance'] = '添加一个课程列表版块';
 $string['course_list:myaddinstance'] = '在个人主页添加一个课程列表版块';
 $string['hideallcourseslink'] = '隐藏“所有课程”链接';

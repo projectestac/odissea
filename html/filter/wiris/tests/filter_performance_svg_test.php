@@ -28,19 +28,49 @@ global $CFG;
 require_once($CFG->dirroot . '/filter/wiris/filter.php');
 require_once($CFG->dirroot . '/filter/wiris/integration/lib/com/wiris/system/CallWrapper.class.php');
 
-class filter_performance_svg_test extends advanced_testcase {
+/**
+ * Class FilterPerformanceSvgTest
+ *
+ * This class contains unit tests for the MathType filter with SVG image format.
+ */
+final class filter_performance_svg_test extends advanced_testcase {
+
+
+
+
+    /**
+     * @var filter_wiris The WIRIS filter instance.
+     */
     protected $wirisfilter;
+
+    /**
+     * @var string Safe XML representation of a math formula.
+     */
     protected $safexml;
+
+    /**
+     * @var string XML representation of a math formula.
+     */
     protected $xml;
+
+    /**
+     * @var string Image representation of a math formula.
+     */
     protected $image;
+
+    /**
+     * @var string Name of the cache table.
+     */
     protected $cachetable;
 
     protected function setUp(): void {
         parent::setUp();
         $this->resetAfterTest(true);
-        filter_wiris_pluginwrapper::set_configuration(array('wirispluginperformance' => 'true',
-                                                            'wirisimageformat' => 'svg'));
-        $this->wirisfilter = new filter_wiris(context_system::instance(), array());
+        filter_wiris_pluginwrapper::set_configuration([
+            'wirispluginperformance' => 'true',
+            'wirisimageformat' => 'svg',
+        ]);
+        $this->wirisfilter = new filter_wiris(context_system::instance(), []);
         $this->cachetable = 'filter_wiris_formulas';
         $this->safexml = '«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«mo»+«/mo»«mn»2«/mn»«/math»';
         $this->xml = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn></math>';
@@ -74,23 +104,22 @@ class filter_performance_svg_test extends advanced_testcase {
         $this->svg = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:wrs="http://www.wiris.com/xml/mathml-extension" height="20"';
         $this->svg .= ' width="34" wrs:baseline="16"><!--MathML: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>';
         $this->svg .= '+</mo><mn>2</mn></math>--><defs><style type="text/css">@font-face{font-family:';
-
     }
 
-    public function test_filter_safexml_with_performance_svg() {
+    public function test_filter_safexml_with_performance_svg(): void {
         $output = $this->wirisfilter->filter($this->safexml);
         $assertion = strrpos($output, $this->imagesvgperformance) !== false;
         $this->assertTrue($assertion);
     }
 
-    public function test_filter_xml_with_performance() {
+    public function test_filter_xml_with_performance(): void {
         $output = $this->wirisfilter->filter($this->xml);
         $assertion = strrpos($output, $this->imagesvgperformance) !== false;
         $this->assertTrue($assertion);
     }
 
-    public function test_filter_safexml_with_performance_cache_svg() {
-        $this->wirisfilter = new filter_wiris(context_system::instance(), array());
+    public function test_filter_safexml_with_performance_cache_svg(): void {
+        $this->wirisfilter = new filter_wiris(context_system::instance(), []);
         $this->wirisfilter->filter($this->safexml);
         $cachefile = new moodlefilecache('filter_wiris', 'images');
 
@@ -100,8 +129,8 @@ class filter_performance_svg_test extends advanced_testcase {
         $this->assertTrue($assertion);
     }
 
-    public function test_filter_safexml_with_performance_cache_formula() {
-        $this->wirisfilter = new filter_wiris(context_system::instance(), array());
+    public function test_filter_safexml_with_performance_cache_formula(): void {
+        $this->wirisfilter = new filter_wiris(context_system::instance(), []);
         $this->wirisfilter->filter($this->safexml);
         $cachefile = new moodlefilecache('filter_wiris', 'formulas');
 
@@ -110,8 +139,8 @@ class filter_performance_svg_test extends advanced_testcase {
         $this->assertTrue($assertion);
     }
 
-    public function test_filter_safexml_with_performance_alt_cache() {
-        $this->wirisfilter = new filter_wiris(context_system::instance(), array());
+    public function test_filter_safexml_with_performance_alt_cache(): void {
+        $this->wirisfilter = new filter_wiris(context_system::instance(), []);
         $this->wirisfilter->filter($this->specialcharsimagesafexml);
 
         $cachefile = new moodlefilecache('filter_wiris', 'images');
@@ -120,7 +149,7 @@ class filter_performance_svg_test extends advanced_testcase {
     }
 
 
-    public function test_filter_xml_with_performance_special_chars() {
+    public function test_filter_xml_with_performance_special_chars(): void {
         $output = $this->wirisfilter->filter($this->specialcharsimagesafexml);
         $assertion = strrpos($output, $this->imagesvgspecialchars) !== false;
         $this->assertTrue($assertion);

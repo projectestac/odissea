@@ -362,6 +362,11 @@ foreach($progress as $user) {
             $state = $thisprogress->completionstate;
             $overrideby = $thisprogress->overrideby;
             $date = userdate($thisprogress->timemodified);
+
+            // If the activity doesn't have a passing grade, mark it only as completed (without pass/fail).
+            if (!$activity->completionpassgrade && $state != COMPLETION_INCOMPLETE) {
+                $state = COMPLETION_COMPLETE;
+            }
         } else {
             $state = COMPLETION_INCOMPLETE;
             $overrideby = 0;
@@ -438,4 +443,3 @@ print '</div>';
 echo $output->render_download_buttons($url);
 
 echo $OUTPUT->footer();
-

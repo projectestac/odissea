@@ -109,7 +109,7 @@ $string['backpackconnectioncancelattempt'] = 'Conectare utilizând o adresă de 
 $string['backpackconnectionconnect'] = 'Conectare la backpack';
 $string['backpackconnectionnottested'] = 'Conexiunea nu poate fi testată pentru acest rucsac deoarece doar rucsacurile Open Badges v2.0 sunt acceptate.';
 $string['backpackconnectionok'] = 'Conexiunea la rucsac a fost stabilită cu succes';
-$string['backpackconnectionresendemail'] = 'Retransmite e-mail-ul de verificare';
+$string['backpackconnectionresendemail'] = 'Retrimite e-mail-ul de verificare';
 $string['backpackconnectionunexpectedmessage'] = 'Rucsacul a returnat eroarea: „{$a}”.';
 $string['backpackconnectionunexpectedresult'] = 'A apărut o problemă la conectarea la backpack. Furnizorul de backpack îți trimite mesajul: \'{$a}\'.';
 $string['backpackdetails'] = 'Setări backpack';
@@ -175,7 +175,7 @@ $string['bcriteria'] = 'Criteriu';
 $string['bdetails'] = 'Editează detalii';
 $string['bendorsement'] = 'Susținere';
 $string['bmessage'] = 'Mesaj';
-$string['boverview'] = 'Prezentare generală';
+$string['boverview'] = 'Privire de ansamblu';
 $string['brelated'] = 'Insigne conexe ({$a})';
 $string['bydate'] = 'Completat până la data:';
 $string['claim'] = 'Cerere';
@@ -442,19 +442,19 @@ $string['noteendorsement'] = 'O aprobare de la o terță parte poate fi utilizat
 $string['noterelated'] = 'Insignele cu o conexiune pot fi marcate ca asociate. De exemplu, insignele cu aceleași criterii care sunt afișate în diferite limbi pot fi marcate ca fiind corelate. Orice ecusoane aferente sunt afișate pe pagina de ecusoane.';
 $string['nothingtoadd'] = 'Fără criterii disponibile de adăugat.';
 $string['notification'] = 'Notifică persoana care a creat ecusonul';
-$string['notification_help'] = 'Această setare gestionează notificările transmise către creatorul ecusonului pentru a-l informa ca ecusonul a fost emis.
+$string['notification_help'] = 'Această setare gestionează notificările trimise către creatorul ecusonului pentru a-l informa ca ecusonul a fost emis.
 
 Sunt disponibile următoarele opțiuni:
 
-* **NICIODATĂ** – Nu transmite notificări.
+* **NICIODATĂ** – Nu trimite notificări.
 
-* **DE FIECARE DATĂ** – Transmite o notificare de fiecare dată când acest ecuson este acordat.
+* **DE FIECARE DATĂ** – Trimite o notificare de fiecare dată când acest ecuson este acordat.
 
-* **ZILNIC** – Transmite notificări odată pe zi.
+* **ZILNIC** – Trimite notificări odată pe zi.
 
-* **SĂPTĂMÂNAL** – Transmite notificări odată pe săptămână.
+* **SĂPTĂMÂNAL** – Trimite notificări odată pe săptămână.
 
-* **LUNAR** – Transmite notificări odată pe lună.';
+* **LUNAR** – Trimite notificări odată pe lună.';
 $string['notifydaily'] = 'Zilnic';
 $string['notifyevery'] = 'De fiecare dată';
 $string['notifymonthly'] = 'Lunar';
@@ -573,7 +573,7 @@ $string['testbackpack'] = 'Rucsac de testare „{$a}”';
 $string['testsettings'] = 'Setări de testare';
 $string['type'] = 'Tip';
 $string['variablesubstitution'] = 'Substituirea variabilei în mesaje.';
-$string['variablesubstitution_help'] = 'În mesajul unui ecuson, anumite variabile pot fi inserate în subiectul și/ sau conținutul unui mesaj, astfel încât acestea să fie înlocuite cu valori reale în momentul transmiterii mesajului. Variabilele trebuie inserate în text exact în modul arătat mai jos. Pot fi utilizate următoarele variabile:
+$string['variablesubstitution_help'] = 'În mesajul unui ecuson, anumite variabile pot fi inserate în subiectul și/ sau conținutul unui mesaj, astfel încât acestea să fie înlocuite cu valori reale în momentul trimiterii mesajului. Variabilele trebuie inserate în text exact în modul arătat mai jos. Pot fi utilizate următoarele variabile:
 
 %numeecuson%
 : Aceasta va fi înlocuită cu numele complet al ecusonului.

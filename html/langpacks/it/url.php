@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Scegli una variabile...';
-$string['clicktoopen'] = 'Per aprire la risorsa fai click sul link {$a}';
+$string['clicktoopen'] = 'Per aprire la risorsa fai click su {$a}';
 $string['configdisplayoptions'] = 'Seleziona le opzioni che desideri rendere disponibili. Le impostazioni già in essere non saranno modificate. Per selezionare più opzioni tenere premuti il tasto CTRL.';
 $string['configframesize'] = 'Se si desidera visualizzare un URL usando i frame, è possibile specificare la dimensione in pixel del frame superiore che conterrà l\'intestazione di pagina con l\'interfaccia di navigazione del sito.';
 $string['configrolesinparams'] = 'Rende possibile utilizzare i nomi personalizzati dei ruoli nell\'elenco dei parametri.';
@@ -67,6 +67,11 @@ Da notare che è possibile aggiungere URL ad altri tipi di risorse o attività t
 $string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL';
 $string['name'] = 'Nome';
+$string['name_help'] = 'Questo servirà come testo di collegamento per l\'URL.
+
+Inserire un testo significativo che descriva in modo conciso lo scopo dell\'URL.
+
+Evitare di usare la parola "link". Questo aiuterà gli utenti di screen reader poiché gli screen reader annunciano i link (ad esempio "Moodle.org, link"), quindi non c\'è bisogno di includere la parola "link" nel campo del nome.';
 $string['page-mod-url-x'] = 'Qualsiasi pagina con modulo URL';
 $string['parameterinfo'] = '&amp;parametro=variabile';
 $string['parametersheader'] = 'Parametri URL';

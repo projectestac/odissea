@@ -34,6 +34,7 @@ $string['edit'] = 'Edita';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
 $string['export'] = 'Exporta';
 $string['import'] = 'Importa';
+$string['info'] = 'Informació';
 $string['location'] = 'Ubicació';
 $string['reminder'] = 'Recordatori';
 $string['submissions'] = 'Trameses';

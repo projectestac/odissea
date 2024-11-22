@@ -58,9 +58,9 @@ $string['authorreplyingprivatelytoauthor'] = '{$a->respondant} a responder em pr
 $string['authorreplyingtoauthor'] = '{$a->respondant} a responder a {$a->author}';
 $string['availability'] = 'Disponibilidade';
 $string['blockafter'] = 'Número limite de mensagens';
-$string['blockafter_help'] = 'Especifica o número máximo de mensagens que cada utilizador pode submeter num determinado período de tempo. Utilizadores com a permissão \'mod/forum:postwithoutthrottling\' não são afetados por estes limites.';
-$string['blockperiod'] = 'Período de tempo';
-$string['blockperiod_help'] = 'Os alunos podem ser impedidos de submeter mais do que um determinado número de mensagens no período de tempo aqui especificado. Os utilizadores com a permissão \'mod/forum:postwithoutthrottling\' não são afetados por estes limites.';
+$string['blockafter_help'] = 'Especifica o número máximo de mensagens que cada utilizador pode submeter num determinado intervalo de tempo. Utilizadores com a permissão \'mod/forum:postwithoutthrottling\' não são afetados por estes limites.';
+$string['blockperiod'] = 'Intervalo de tempo';
+$string['blockperiod_help'] = 'Os alunos podem ser impedidos de submeter mais do que um determinado número de mensagens no intervalo de tempo aqui especificado. Os utilizadores com a permissão \'mod/forum:postwithoutthrottling\' não são afetados por estes limites.';
 $string['blockperioddisabled'] = 'Não bloquear';
 $string['blogforum'] = 'Fórum standard em formato blogue';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
@@ -407,7 +407,7 @@ $string['lastpost'] = 'Última mensagem';
 $string['learningforums'] = 'Fóruns de aprendizagem';
 $string['lockdiscussion'] = 'Bloquear este tópico';
 $string['lockdiscussionafter'] = 'Bloquear tópicos de discussão após período de inatividade';
-$string['lockdiscussionafter_help'] = 'Os tópicos de discussão podem ser bloqueados automaticamente após decorrer um período de tempo especificado desde a última resposta.
+$string['lockdiscussionafter_help'] = 'Os tópicos de discussão podem ser bloqueados automaticamente após decorrer um intervalo de tempo especificado desde a última resposta.
 
 Os utilizadores com permissão para responder a tópicos de discussão bloqueados podem desbloquear um tópico se adicionarem uma resposta ao tópico.';
 $string['locked'] = 'Bloqueado';
@@ -453,7 +453,7 @@ $string['modulename_help'] = 'A atividade Fórum permite aos participantes ter d
 
 Existem vários tipos de fórum, como o fórum standard onde qualquer participante pode começar uma nova discussão, o fórum onde cada aluno pode colocar apenas um tópico de discussão ou o fórum de perguntas e respostas no qual os alunos devem primeiro responder a um tópico (pergunta) para conseguirem ver as respostas dos colegas. O professor pode optar por permitir que sejam anexados ficheiros às mensagens, cujo conteúdo, quando são imagens, é exibido na própria mensagem.
 
-Os participantes podem subscrever um fórum de forma a receber notificações sempre que são submetidas novas mensagens no mesmo. O professor pode configurar a subscrição para o modo opcional, obrigatória ou opcional (ativa ao inicio) ou desativá-la. Se necessário, os alunos podem ser impedidos de inserir mais do que um determinado número de mensagens num determinado período de tempo, no sentido de impedir que alguns alunos dominem as discussões.
+Os participantes podem subscrever um fórum de forma a receber notificações sempre que são submetidas novas mensagens no mesmo. O professor pode configurar a subscrição para o modo opcional, obrigatória ou opcional (ativa no início) ou desativá-la. Se necessário, os alunos podem ser impedidos de inserir mais do que um determinado número de mensagens num determinado período de tempo, no sentido de impedir que alguns alunos dominem as discussões.
 
 As mensagens podem ser avaliadas por professores ou alunos (avaliação pelos pares). As avaliações são convertidas numa nota final que é registada na pauta da disciplina.
 
@@ -579,7 +579,7 @@ $string['privacy:metadata:forum_digests:maildigest'] = 'Preferência do resumo';
 $string['privacy:metadata:forum_digests:userid'] = 'ID do utilizador com a preferência do resumo.';
 $string['privacy:metadata:forum_discussion_subs'] = 'Informação sobre subscrições a fóruns de discussão individuais';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = 'O ID da discussão que foi subscrita.';
-$string['privacy:metadata:forum_discussion_subs:preference'] = 'A hora de inicio da subscrição';
+$string['privacy:metadata:forum_discussion_subs:preference'] = 'A hora de início da subscrição';
 $string['privacy:metadata:forum_discussion_subs:userid'] = 'ID do utilizador com subscrição da discussão.';
 $string['privacy:metadata:forum_discussions'] = 'Informação sobre o fórum de discussão individual que o utilizador criou';
 $string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - o que este campo armazena';
@@ -738,13 +738,13 @@ $string['tagarea_forum_posts'] = 'Mensagens do fórum';
 $string['tagsdeleted'] = 'As palavras-chave do fórum foram apagadas';
 $string['thisforumhasduedate'] = 'A data limite para publicar neste fórum é {$a}.';
 $string['thisforumisdue'] = 'A data limite para publicar neste fórum era {$a}.';
-$string['thisforumisthrottled'] = 'Este fórum possui um número limite de mensagens que pode submeter num determinado período de tempo. Está atualmente configurado para {$a->blockafter} mensagem(s) em {$a->blockperiod}';
+$string['thisforumisthrottled'] = 'Este fórum possui um número limite de mensagens que pode submeter num determinado intervalo de tempo. Está atualmente configurado para {$a->blockafter} mensagem(s) em {$a->blockperiod}';
 $string['timed'] = 'Com prazo de visualização';
 $string['timeddiscussion'] = 'Tópico com prazo de visualização';
 $string['timedhidden'] = 'Estado do período de visualização: Oculto para os alunos';
 $string['timedposts'] = 'Mensagens com período de visualização';
 $string['timedvisible'] = 'Estado do período de visualização: Visível para todos os utilizadores';
-$string['timestartenderror'] = 'A data de fim não pode ser anterior à data de inicio';
+$string['timestartenderror'] = 'A data de fim não pode ser anterior à data de início';
 $string['togglediscussionmenu'] = 'Alternar o menu de conversação';
 $string['togglefullscreen'] = 'Mostrar em ecrã completo';
 $string['togglesettingsdrawer'] = 'Alternar configurações';
@@ -789,7 +789,7 @@ $string['viewgrades'] = 'Ver notas';
 $string['viewparentpost'] = 'Ver tópico ascendente';
 $string['viewthediscussion'] = 'Ver o tópico de discussão';
 $string['warnafter'] = 'Número de mensagens que gera aviso';
-$string['warnafter_help'] = 'Os alunos podem ser avisados que se aproximam do limite máximo de mensagens permitidas num determinado período de tempo. Especifique aqui depois de quantos tópicos submetidos será o aluno avisado. Utilizadores com a permissão \'mod/forum:postwithoutthrottling\' estão isentos destes limites.';
+$string['warnafter_help'] = 'Os alunos podem ser avisados que se aproximam do limite máximo de mensagens permitidas num determinado intervalo de tempo. Especifique aqui depois de quantos tópicos submetidos será o aluno avisado. Utilizadores com a permissão \'mod/forum:postwithoutthrottling\' estão isentos destes limites.';
 $string['warnformorepost'] = 'Atenção! Há mais do que uma discussão neste fórum - está em uso a mais recente';
 $string['yournewquestion'] = 'A sua nova questão';
 $string['yournewtopic'] = 'O seu novo tópico de discussão';

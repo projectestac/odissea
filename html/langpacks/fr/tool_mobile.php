@@ -49,7 +49,7 @@ Pour une liste complète des identifiants de chaînes de caractères, consultez 
 $string['custommenuitems'] = 'Éléments du menu personnalisé';
 $string['custommenuitems_desc'] = 'Des éléments supplémentaires peuvent être ajoutés au menu principal de l’app en les indiquant ici. Saisissez chaque élément sur une nouvelle ligne, dans le format : texte de l’élément, URL, méthode d’ouverture de l’URL et code de langue (facultatif, pour affichage de l’élément seulement aux utilisateurs de la langue indiquée), séparés par des caractères « trait vertical ».
 
-Les méthodes d’ouverture d’URL sont : app (pour le lien vers une activité supportée par l’app), inappbrowser (pour ouvrir le lien dans le navigateur intégré sans quitter l’app), browser (pour ouvrir le lien dans le navigateur par défaut de l’appareil) et embedded (pour afficher le lien dans une nouvelle page dans l’app, intégré dans une iframe).
+Les méthodes d’ouverture d’URL sont : app (pour le lien vers une activité prise en charge par l’app), inappbrowser (pour ouvrir le lien dans le navigateur intégré sans quitter l’app), browser (pour ouvrir le lien dans le navigateur par défaut de l’appareil) et embedded (pour afficher le lien dans une nouvelle page dans l’app, intégré dans une iframe).
 
 Lorsque des éléments n’ont pas de traduction dans une langue, une autre langue sera utilisée en lieu et place, à moins que « _only » ne soit spécifié à la fin du code de langue.
 

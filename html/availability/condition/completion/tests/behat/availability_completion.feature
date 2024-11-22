@@ -85,7 +85,7 @@ Feature: availability_completion
       | Test questions   | truefalse | First question | Answer the first question |
     And the following "activities" exist:
       | activity   | name           | course | idnumber | gradepass | completion | completionpassgrade | completionusegrade |
-      | quiz       | Test quiz name | C1     | quiz1    | 5.00      | 2          | 1                   | 1                  |
+      | quiz       | Test quiz name | C1     | quiz1    | 5.00      | 2          | <passgrade>         | 1                  |
     And quiz "Test quiz name" contains the following questions:
       | question       | page |
       | First question | 1    |
@@ -114,8 +114,12 @@ Feature: availability_completion
     And I <shouldornotanswer2> see "Page 2" in the "region-main" "region"
 
     Examples:
-      | condition                        | answer1 | answer2 | shouldornot | shouldornotanswer1 | shouldornotanswer2 |
-      | must be marked complete          | False   | True    | should not  | should not         | should             |
-      | must not be marked complete      | False   | True    | should      | should             | should not         |
-      | must be complete with pass grade | False   | True    | should not  | should not         | should             |
-      | must be complete with fail grade | False   | True    | should not  | should             | should not         |
+      | passgrade | condition                        | answer1 | answer2 | shouldornot | shouldornotanswer1 | shouldornotanswer2 |
+      | 0         | must be marked complete          | False   | True    | should not  | should             | should             |
+      | 0         | must not be marked complete      | False   | True    | should      | should not         | should not         |
+      | 0         | must be complete with pass grade | False   | True    | should not  | should not         | should             |
+      | 0         | must be complete with fail grade | False   | True    | should not  | should             | should not         |
+      | 1         | must be marked complete          | False   | True    | should not  | should not         | should             |
+      | 1         | must not be marked complete      | False   | True    | should      | should             | should not         |
+      | 1         | must be complete with pass grade | False   | True    | should not  | should not         | should             |
+      | 1         | must be complete with fail grade | False   | True    | should not  | should             | should not         |

@@ -195,7 +195,7 @@ $string['multichoice_values'] = 'Aukera anizkoitzen balioak';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Aukera anizkoitzak (kalifikatua)';
 $string['multichoicetype'] = 'Aukera anizkoitzen mota';
-$string['multiplesubmit'] = 'Baimendu bidalketa anitz';
+$string['multiplesubmit'] = 'Baimendu bidalketa bat baino gehiago egitea';
 $string['multiplesubmit_help'] = 'Inkesta anonimoak gaituz gero, erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete.';
 $string['name'] = 'Izena';
 $string['name_required'] = 'Izena ezinbestekoa da';

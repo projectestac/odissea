@@ -35,4 +35,5 @@ $string['selectall'] = 'Selecciona-ho tot';
 $string['session'] = 'Sessió';
 $string['sessionduration'] = 'Durada';
 $string['sessionscompleted'] = 'Completat';
+$string['studentid'] = 'ID de l\'estudiant';
 $string['takeattendance'] = 'Registra l\'assistència';

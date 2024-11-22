@@ -46,15 +46,18 @@ mm.user.student|Learner|en
 mm.user.student|Aprendiz|es
 </pre>';
 $string['custommenuitems'] = 'Voci di menù personalizzate';
-$string['custommenuitems_desc'] = 'È possibile definire ulteriori elementi da aggiungere al menu principale dell\'app. Digitare le voci di menu che si desidera aggiungere ciascuna su una nuova riga secondo il seguente formato:" testo dell\'elemento, URL del link, metodo di apertura del link, codice della lingua (facoltativo, per far visualizzare l\'elemento solo agli utenti della lingua specificata)". Gli elementi devono essere separati dal carattere \'|\' (pipe).
+$string['custommenuitems_desc'] = 'È possibile aggiungere ulteriori elementi al menu principale dell\'app. Inserire ciascuna voce di menu personalizzata su una nuova riga con il seguente formato: testo della voce, URL del collegamento, metodo di apertura del collegamento e codice lingua (facoltativo, per visualizzare la voce solo agli utenti della lingua specificata), separati da caratteri \'pipe\'.
 
-I metodi di apertura dei link sono: app (per il link a un\'attività supportata dall\'app), inappbrowser (per aprire il link in un browser senza uscire dall\'app), browser (per aprire il link nel browser predefinito del dispositivo all\'esterno dell\'app) e incorporato (per visualizzare il link in un iframe in una nuova pagina nell\'app).
+I metodi di apertura dei collegamenti sono: app (per il collegamento a un\'attività supportata dall\'app), inappbrowser (per aprire un collegamento in un browser senza uscire dall\'app), browser (per aprire il collegamento nel browser predefinito del dispositivo all\'esterno dell\'app) e incorporato (per visualizzare il collegamento in un iframe in una nuova pagina nell\'app).
 
-Esempio:
+Quando agli elementi manca una traduzione per una determinata lingua, utilizzeranno altre lingue come fallback a meno che non venga aggiunto "_only" al codice della lingua.
+
+Per esempio:
 <pre>
-App help|https://domain.tld/help|inappbrowser
-Le mie valutazioni|https://domain.tld/local/mygrades/index.php|embedded|it
-Mis calificaciones|https://domain.tld/local/mygrades/index.php|embedded|es
+Guida dell\'app|https://someurl.xyz/help|inappbrowser
+Le mie valutazioni|https://someurl.xyz/local/mygrades/index.php|embedded|it
+Mis qualificazioni|https://someurl.xyz/local/mygrades/index.php|embedded|es
+Lo vedrai solo in inglese|https://someurl.xyz/english|browser|en_only
 </pre>';
 $string['darkmode'] = 'Modalità scura';
 $string['disabledfeatures'] = 'Funzionalità disabilitate';
@@ -70,7 +73,7 @@ $string['filetypeexclusionlistplaceholder'] = 'Elenco dei tipi di file esclusi n
 $string['forcedurlscheme'] = 'Se si desidera consentire esclusivamente l\'apertura della propria app personalizzata da una finestra browser, è allora necessario impostare il relativo schema URL. Per utilizzare l\'app ufficiale, impostare il valore di default. Per utilizzare qualsiasi app lasciare il campo vuoto.';
 $string['forcedurlscheme_key'] = 'Schema URL';
 $string['forcelogout'] = 'Forza disconnessione';
-$string['forcelogout_desc'] = 'Se abilitato, l\'opzione "Cambia sito" dell\'app verrà sostituita da "Esci". Di conseguenza l\'utente perderà l\'autenticazione. Per accedere nuovamente al sito l\'utente dovrà inserire la password.';
+$string['forcelogout_desc'] = 'Se abilitato, gli utenti verranno sempre completamente disconnessi anche quando cambiano account. Dovranno poi reinserire la password quando vorranno accedere nuovamente al sito.';
 $string['getmoodleonyourmobile'] = 'Ottieni l\'app mobile';
 $string['h5poffline'] = 'Visualizza contenuto H5P offline';
 $string['httpsrequired'] = 'HTTPS obbligatorio';
@@ -82,9 +85,11 @@ $string['invalidprivatetoken'] = 'Token privato non valido. Il token non può es
 $string['invaliduserquotawarning'] = 'La quota utente (userquota) è impostata su un numero non valido. Deve essere impostato su un numero valido (un valore intero) nelle impostazioni di sicurezza del sito.';
 $string['iosappid'] = 'Identificativo univoco dell\'app iOS';
 $string['iosappid_desc'] = 'L\'impostazione deve essere lasciata al suo default a meno che non si utilizzi una app iOS propria.';
+$string['launchviasiteinbrowser'] = 'Avvia tramite il sito nel browser di sistema';
 $string['loginintheapp'] = 'Via app';
 $string['logininthebrowser'] = 'Via finestra browser (per plugin SSO)';
 $string['loginintheembeddedbrowser'] = 'Via browser incorporato (per plugin SSO)';
+$string['logoutconfirmation'] = 'Sei sicuro di uscire dall\'app mobile sui tuoi dispositivi mobili? Dopo aver effettuato il logout, dovrai reinserire il nome utente e la password nell\'app mobile su tutti i dispositivi in cui hai installato l\'app.';
 $string['mainmenu'] = 'Menu principale';
 $string['managefiletypes'] = 'Gestione tipi di file';
 $string['minimumversion'] = 'Indicando una versione dell\'app (3.8.0 o superiore), gli utenti che utilizzano versioni più vecchie verranno invitati ad aggiornare l\'app prima di poter accedere al sito.';
@@ -99,10 +104,12 @@ $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Funzionalità mobile';
 $string['mobilenotificationsdisabledwarning'] = 'Le notifiche per dispositivi mobili non sono abilitate. Possono essere abilitate nelle impostazioni delle notifiche.';
 $string['mobilesettings'] = 'Impostazioni mobile';
+$string['moodleappsportalfeatureswarning'] = 'Da notare che alcune funzionalità possono essere limitate a seconda dell\'abbonamento all\'app Moodle. Per i dettagli, visitare il <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
 $string['notifications'] = 'Notifiche';
 $string['notificationsactivedevices'] = 'Dispositivi attivi';
 $string['notificationscurrentactivedevices'] = 'Dispositivi che hanno ricevuto notifiche durante questo mese';
 $string['notificationsignorednotifications'] = 'Notifiche non inviate';
+$string['notificationslimitreached'] = 'Il limite mensile di dispositivi utente attivi è stato superato. Le notifiche ad alcuni utenti non verranno inviate. Si consiglia di aggiornare il piano dell\'app nel <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
 $string['notificationsmissingwarning'] = 'Non è stato possibile recuperare le statistiche delle notifiche notifiche dell\'app Moodle, probabilmente perché le notifiche mobile non sono ancora abilitate sul sito. È possibile abilitarle in Amministrazione sito del sito/Messaggistica/Mobile.';
 $string['notificationsnewdevices'] = 'Nuovi dispositivi';
 $string['notificationsseemore'] = 'Nota: le statistiche sull\'utilizzo dell\'app Moodle non vengono calcolate in tempo reale. Per accedere a statistiche più dettagliate, inclusi i dati dei mesi precedenti, accedere su <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';

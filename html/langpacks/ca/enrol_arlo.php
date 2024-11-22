@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['defaultperiod'] = 'Durada de la inscripció per defecte';
 $string['enrolperiod'] = 'Durada de la inscripció';
+$string['remove'] = 'Suprimeix';
+$string['type'] = 'Tipus';

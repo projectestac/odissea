@@ -85,7 +85,7 @@ $string['annotationhelp_text'] = '<table>
    <td>Rechtermuisklik op de pagina om een eerder in de \'snellijst\' opgeslagen opmerking in te voegen. Gebruik \'x\' om ongewenste snellijstitems te verwijderen</td></tr>
  </table>';
 $string['backtocommentlist'] = 'Terug naar commentaar lijst';
-$string['badaction'] = 'Ongeldige actie \'{$a}';
+$string['badaction'] = 'Ongeldige actie \'{$a}\'';
 $string['badannotationid'] = 'Annotatie id is voor een andere inzending of pagina';
 $string['badcommentid'] = 'Opmerking id is voor een andere inzending of pagina';
 $string['badcoordinate'] = 'Oneven aantal coördinaten in de lijn - moet 2 coördinaten per punt zijn';

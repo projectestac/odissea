@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actual'] = 'Reale';
+$string['addpersistent'] = 'Aggiungi campi permanenti obbligatori';
 $string['aftertable'] = 'Dopo la tabella:';
 $string['back'] = 'Indietro';
 $string['backtomainview'] = 'Torna alla vista principale';
@@ -160,6 +161,7 @@ $string['newtable'] = 'Nuova tabella';
 $string['newtablefrommysql'] = 'Nuova tabella da MySQL';
 $string['nofieldsspecified'] = 'Non sono stati specificati campi';
 $string['nomasterprimaryuniquefound'] = 'Le colonnae referenziata dalla foreign key devonoe essere incluse in una primary o unique KEY della tabella referenziata. Da notare che la colonna in UNIQUE INDEX non è sufficiente.';
+$string['nomissingorextraindexesfound'] = 'Non sono stati trovati indici mancanti o aggiuntivi, quindi non sono necessarie ulteriori azioni.';
 $string['noreffieldsspecified'] = 'Non sono stati specificati campi di riferimento';
 $string['noreftablespecified'] = 'La tabella di riferimento specificata non è stata trovata';
 $string['noviolatedforeignkeysfound'] = 'Non sono state trovate violazioni di Foreign key';
@@ -168,6 +170,7 @@ $string['nowrongintsfound'] = 'Non sono stati trovati Integer errati. Il DB non 
 $string['nowrongoraclesemanticsfound'] = 'Non sono state trovate colonne che utilizzano le semantiche Oracle BYTE, il tuo database non ha bisogno di ulteriori azioni.';
 $string['numberincorrectdecimals'] = 'Numero errato di decimali per un campo number';
 $string['numberincorrectlength'] = 'Lunghezza errata per un campo number';
+$string['numberincorrectwholepart'] = 'La parte intera del numero è troppo grande per il campo numerico';
 $string['pendingchanges'] = 'Nota: hai effettuato modiche al file. Puoi salvarle in qualsiasi momento.';
 $string['pendingchangescannotbesaved'] = 'Il file è stato modificato ma non è possibile salvare le modifiche. Per favore verifice che il processo del web server abbia i permessi di scrittura per la cartella e per il file "install.xml".';
 $string['pendingchangescannotbesavedreload'] = 'Il file è stato modificato ma non è possibile salvare le modifiche. Per favore verifica che il processo del web server abbia i permessi di scrittura per la cartella e per il file "install.xml". Dopo la verifica ricarica la pagina per controllare se è possibile salvare le modifiche.';
@@ -178,6 +181,9 @@ $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'La chiave primaria non può essere null';
 $string['privacy:metadata'] = 'Il plugin "Editor XMLDB" non memorizza dati personali.';
 $string['reconcile_files'] = 'Controlla se i file XMLDB richiedono riconciliazione';
+$string['reconcile_files_intro'] = 'Questa funzionalità esamina il contenuto di tutti i file XMLDB per verificare che corrispondano ai risultati della loro generazione dall\'editor XMLDB.
+
+Verrà visualizzato un elenco di file che devono essere riconciliati (rigenerati) e l\'editor XMLDB può essere utilizzato per correggerli.';
 $string['reconcile_files_no'] = 'Tutti i file sono OK, non è necessaria la riconciliazione.';
 $string['reconcile_files_yes'] = 'File da riconciliare:';
 $string['reconcilefiles'] = 'Riconcilia file XMLDB';

@@ -56,7 +56,7 @@ $string['auth_dbnouserfield'] = 'Externes Nutzer-Datenfeld  ist nicht spezifizie
 $string['auth_dbpass'] = 'Kennwort, das zum Nutzernamen gehört';
 $string['auth_dbpass_key'] = 'Kennwort';
 $string['auth_dbpasstype'] = '<p>Geben Sie das Format an, das im Kennwortfeld verwendet wird.</p>
-<p>Verwenden Sie \'intern\', wenn die externe Datenbank Anmeldenamen und E-Mail-Adressen verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall müssen Sie ein ausgefülltes E-Mail-Adressfeld in der externen Datenbank angeben und die geplante Task \\auth_db\\task\\sync_users aktivieren. Moodle sendet automatisch eine E-Mail mit einem temporären Kennwort an neue Nutzer/innen.</p>';
+<p>Verwenden Sie \'intern\', wenn die externe Datenbank Anmeldenamen und E-Mail-Adressen verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall müssen Sie die E-Mail-Adresse in der externen Datenbank angeben und die geplante Task \\auth_db\\task\\sync_users aktivieren. Moodle sendet dann an neue Nutzer/innen automatisch eine E-Mail mit einem temporären Kennwort.</p>';
 $string['auth_dbpasstype_key'] = 'Kennwortformat';
 $string['auth_dbreviveduser'] = 'Entsperrte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fehler beim Entsperren von Nutzer/in {$a}';

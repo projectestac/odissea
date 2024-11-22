@@ -20,12 +20,9 @@ Feature: In a lesson activity, a teacher can duplicate a lesson page
       | course   | C1               |
       | activity | lesson           |
       | name     | Test lesson name |
-    And the following "blocks" exist:
-      | blockname     | contextlevel | reference | pagetypepattern | defaultregion |
-      | private_files | System       | 1         | my-index        | side-post     |
     And the following "user private files" exist:
-      | user     | filepath                                  | filename        |
-      | teacher1 | mod/lesson/tests/fixtures/moodle_logo.jpg | moodle_logo.jpg |
+      | user     | filepath                                  |
+      | teacher1 | mod/lesson/tests/fixtures/moodle_logo.jpg |
     And I log in as "teacher1"
 
   Scenario: Duplicate content page with an image.
@@ -39,6 +36,7 @@ Feature: In a lesson activity, a teacher can duplicate a lesson page
       | id_answer_editor_1 | Previous page |
       | id_jumpto_1 | Previous page |
     And I click on "Image" "button" in the "Page contents" "form_row"
+    And I wait until "Browse repositories..." "button" exists
     And I click on "Browse repositories..." "button"
     And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodle_logo.jpg" "link"
@@ -73,6 +71,7 @@ Feature: In a lesson activity, a teacher can duplicate a lesson page
       | id_jumpto_1 | This page |
       | id_score_1 | 0 |
     And I click on "Image" "button" in the "//*[@id='id_answer_editor_0']/ancestor::*[@data-fieldtype='editor']" "xpath_element"
+    And I wait until "Browse repositories..." "button" exists
     And I click on "Browse repositories..." "button"
     And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodle_logo.jpg" "link"
@@ -110,6 +109,7 @@ Feature: In a lesson activity, a teacher can duplicate a lesson page
       | id_jumpto_1 | This page |
       | id_score_1 | 0 |
     And I click on "Image" "button" in the "//*[@id='id_response_editor_0']/ancestor::*[@data-fieldtype='editor']" "xpath_element"
+    And I wait until "Browse repositories..." "button" exists
     And I click on "Browse repositories..." "button"
     And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodle_logo.jpg" "link"

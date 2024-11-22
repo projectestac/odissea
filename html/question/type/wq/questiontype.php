@@ -84,7 +84,7 @@ class qtype_wq extends question_type {
                 $question->options->wirisquestion = $record->xml;
                 $question->options->wirisoptions = $record->options;
             } else {
-                $OUTPUT->notification( get_string('failedtoloadwirisquizzesfromxml', 'qtype_wq') . ' ' . $question->id . '.');
+                $OUTPUT->notification(get_string('failedtoloadwirisquizzesfromxml', 'qtype_wq') . ' ' . $question->id . '.');
                 return false;
             }
         }
@@ -100,7 +100,7 @@ class qtype_wq extends question_type {
 
     protected function initialise_question_instance(question_definition $question, $questiondata) {
         global $CFG;
-        
+
         $this->base->initialise_question_instance($question->base, $questiondata);
 
         $question->id = &$question->base->id;
@@ -165,7 +165,7 @@ class qtype_wq extends question_type {
         $PAGE->requires->js('/question/type/wq/quizzes/service.php?name=quizzes.js&service=resource');
     }
 
-    public function export_to_xml($question, qformat_xml $format, $extra=null) {
+    public function export_to_xml($question, qformat_xml $format, $extra = null) {
         global $DB;
         $xml = $DB->get_record('qtype_wq', array('question' => $question->id), 'xml')->xml;
 
@@ -263,7 +263,7 @@ class qtype_wq extends question_type {
 
     protected function decode_html_entities($xml) {
         $htmlentitiestable = get_html_translation_table(HTML_ENTITIES, ENT_QUOTES, 'UTF-8');
-        $xmlentitiestable = get_html_translation_table(HTML_SPECIALCHARS , ENT_COMPAT, 'UTF-8');
+        $xmlentitiestable = get_html_translation_table(HTML_SPECIALCHARS, ENT_COMPAT, 'UTF-8');
         $entitiestable = array_diff($htmlentitiestable, $xmlentitiestable);
         $decodetable = array_flip($entitiestable);
         $xml = str_replace(array_keys($decodetable), array_values($decodetable), $xml);

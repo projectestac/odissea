@@ -142,6 +142,7 @@ $string['moodleoverflow:ratehelpful'] = 'Επισήμανση μιας ανάρ�
 $string['moodleoverflow:ratepost'] = 'Αξιολογήστε μια ανάρτηση';
 $string['moodleoverflow:replypost'] = 'Απάντηση σε μια συζήτηση';
 $string['moodleoverflow:startdiscussion'] = 'Ξεκινήστε μια συζήτηση';
+$string['moodleoverflow:viewanyrating'] = 'Εμφάνιση αξιολογήσεων';
 $string['moodleoverflow:viewdiscussion'] = 'Εμφάνιση συζήτησης';
 $string['moodleoverflowauthorhidden'] = 'Συγγραφέας (σε απόκρυψη)';
 $string['moodleoverflowbodyhidden'] = 'Δεν μπορείτε να δείτε αυτήν την ανάρτηση, πιθανώς επειδή δεν έχετε αναρτήσει στη συζήτηση, ο μέγιστος χρόνος επεξεργασίας δεν έχει ακόμη περάσει, η συζήτηση δεν έχει ξεκινήσει ή η συζήτηση έχει λήξει.';

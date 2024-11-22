@@ -37,4 +37,5 @@ $string['levelgroup'] = 'Definició i gradació de nivells';
 $string['levels'] = 'Nivells';
 $string['mustbeunique'] = 'Les qualificacions d\'un nivell han de ser úniques dins d\'un criteri';
 $string['mustchooseone'] = 'Heu d\'escollir un d\'aquests elements';
+$string['mustdefinelevel'] = 'Es requereix almenys un nivell';
 $string['pluginname'] = 'Rúbrica';

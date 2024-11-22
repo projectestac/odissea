@@ -637,6 +637,7 @@ $string['environmentrequirecustomcheck'] = 'Deze test moet OK zijn';
 $string['environmentrequireinstall'] = 'moet geïnstalleerd/ingeschakeld zijn';
 $string['environmentrequireversion'] = 'versie {$a->needed} is vereist en je gebruikt nu versie {$a->current}';
 $string['environmentsettingok'] = 'aanbevolen instelling gedetecteerd';
+$string['environmentshouldfixcustomcheck'] = 'moet worden ingeschakeld voor de beste resultaten';
 $string['environmentshouldfixsetting'] = 'PHP-instelling zou gewijzigd moeten worden.';
 $string['environmentxmlerror'] = 'Fout bij het lezen van de omgevingsdata ({$a->error_code})';
 $string['errordeletingconfig'] = 'Er is een fout opgetreden bij het verwijderen van de configuratierecords voor plugin \'{$a}\'';

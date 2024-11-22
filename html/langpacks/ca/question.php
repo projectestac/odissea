@@ -213,7 +213,7 @@ Alternativament, podeu voler que els estudiants responguin cada pregunta i obtin
 
 Aquests probablement són els dos modes de comportament usats més comunament.';
 $string['howquestionsbehave_link'] = 'question/behaviour';
-$string['idnumber'] = 'Nombre ID';
+$string['idnumber'] = 'Número ID';
 $string['idnumber_help'] = 'Si l\'utilitzeu, el nombre ID ha de ser únic dins de cada categoria de preguntes. Ofereix una manera alternativa d\'identificar la pregunta que us pot ser útil, però que usualment podeu deixar en blanc.';
 $string['ignorebroken'] = 'Ignora enllaços trencats';
 $string['import'] = 'Importa';
@@ -258,7 +258,7 @@ $string['mark'] = 'Puntua';
 $string['markedoutof'] = 'Puntuat sobre ';
 $string['markedoutofmax'] = 'Puntuat sobre {$a}';
 $string['markoutofmax'] = 'Puntuació {$a->mark} sobre {$a->max}';
-$string['marks'] = 'Puntuacions';
+$string['marks'] = 'Notes';
 $string['matchgrades'] = 'Qualificacions coincidents';
 $string['matchgrades_help'] = 'Les qualificacions importades han de coincidir amb algun dels valors de la llista fixa de qualficacions vàlides: 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0  (els valors negatius també són permesos). Pels valors que no coincideixin exactament amb la llista anterior, hi ha dues opcions:
 
@@ -390,6 +390,8 @@ $string['shown'] = 'Mostrat';
 $string['shownumpartscorrect'] = 'Mostra el nombre de respostes correctes';
 $string['shownumpartscorrectwhenfinished'] = 'Mostra el nombre de respostes correctes';
 $string['showquestiontext'] = 'Mostra el text de la pregunta a la llista de preguntes';
+$string['showquestiontext_full'] = 'Sí, amb imatges, multimèdia, etc.';
+$string['showquestiontext_plain'] = 'Sí, només text';
 $string['specificfeedback'] = 'Retroacció específica';
 $string['specificfeedback_help'] = 'Retroacció que depèn de la resposta donada per  l\'estudiant.';
 $string['started'] = 'Iniciat';

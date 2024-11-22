@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['branding'] = 'TinyMCE品牌';
+$string['branding_desc'] = '通过在文本编辑器的下角显示徽标来支持 TinyMCE。该徽标链接到 TinyMCE 网站。';
+$string['pluginname'] = 'TinyMCE 编辑器';
+$string['privacy:reason'] = 'TinyMCE 编辑器不存储任何偏好设置或用户数据';
+$string['settings'] = '常规设置';
+$string['subplugintype_tiny'] = 'TinyMCE插件';
+$string['subplugintype_tiny_plural'] = 'TinyMCE 插件';
 $string['tiny:0_characters'] = '{0} 个字符';
 $string['tiny:0_words'] = '{0} 字';
 $string['tiny:accessibility'] = '辅助功能';

@@ -85,7 +85,10 @@ echo $OUTPUT->header();
 
 echo $OUTPUT->heading($jclic->name);
 
-jclic_view_intro($jclic, $cm);
+if ($CFG->branch < 400) {
+    jclic_view_intro($jclic, $cm);
+}
+
 jclic_view_activity($jclic, $context, $ispreview);
 
 echo $OUTPUT->footer();

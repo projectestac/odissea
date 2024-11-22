@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseactivities'] = '分类、课程和课程活动';
+$string['courseactivities'] = '类别、课程和课程活动';
 $string['courses'] = '分类和课程';
 $string['coursestructures'] = '分类、课程和课程结构';
 $string['enabledockdesc'] = '允许用户停靠此版块';

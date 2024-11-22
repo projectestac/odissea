@@ -99,3 +99,4 @@ $string['uuupdatefromfile'] = 'Substituír polo ficheiro';
 $string['uuupdatemissing'] = 'Enches os datos ausentes desde un ficheiro e valores predeterminados';
 $string['uuupdatetype'] = 'Detalles de usuario existente';
 $string['uuusernametemplate'] = 'Modelo de nome de usuario';
+$string['warningprefix'] = 'Advertencia:';

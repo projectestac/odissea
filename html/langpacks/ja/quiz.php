@@ -212,7 +212,7 @@ $string['configdelaylater'] = 'あなたがここで待ち時間を設定した�
 $string['configeachattemptbuildsonthelast'] = '複数解答が許可されている場合、それぞれの新しい受験に前の受験結果を含みます。';
 $string['configgrademethod'] = '複数解答が許可されている場合、小テストにおける学生の最終評点にどの評定方法を使用するか設定します。';
 $string['configintro'] = 'あなたがここで設定した値は新しい小テスト作成時のデフォルト値として使用されます。また、どの小テスト設定が「高度な設定」とみなされるか設定することもできます。';
-$string['configmaximumgrade'] = '設定値を基に小テスト評定が増減されるデフォルトの評点です。';
+$string['configmaximumgrade'] = '満点 (最大評点) の初期値です。';
 $string['confignavmethod'] = 'フリーナビゲーションではナビゲーションを使って問題にどのような順序でも解答することができます。順次では固定された順序で問題に解答する必要があります。';
 $string['confignewpageevery'] = '問題を小テストに追加する場合、あなたがここで選択した設定に基づき改ページが自動的に挿入されます。';
 $string['configoutcomesadvanced'] = 'このオプションを有効にした場合、小テスト編集フォームのアウトカムは高度な設定になります。';
@@ -315,7 +315,7 @@ $string['editquizquestions'] = '小テスト問題を編集する';
 $string['emailconfirmautosubmitsmall'] = 'あなたの「 {$a->quizname} 」への解答の送信ありがとうございます。';
 $string['emailconfirmbody'] = '{$a->username} さん
 
-あなたの回答をコース「 {$a->coursename} 」の小テスト「 {$a->quizname} 」へ {$a->submissiontime} に送信してくださいましてありがうございます。
+あなたの回答をコース「 {$a->coursename} 」の小テスト「 {$a->quizname} 」へ {$a->submissiontime} に送信してくださいましてありがとうございます。
 
 このメッセージはあなたの解答が確かに保存されたことをお伝えするものです。
 

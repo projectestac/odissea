@@ -29,6 +29,7 @@ $string['connectionratiorow'] = 'Connexions per dia';
 $string['dedication:addinstance'] = 'Permet d\'addició del bloc de dedicació del curs';
 $string['dedicationall'] = 'Dedicació de tots els membres del curs. Feu clic en qualsevol nom per veure la dedicació detallada d\'aquest.';
 $string['dedicationrow'] = 'Dedicació del curs';
+$string['group'] = 'Grup';
 $string['period'] = 'Període des de <em>{$a->mintime}</em> a <em>{$a->maxtime}</em>';
 $string['perioddiff'] = '<strong>Elapsed time:</strong>  {$a}';
 $string['pluginname'] = 'Dedicació del curs';

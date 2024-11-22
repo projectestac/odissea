@@ -27,7 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a';
 $string['export'] = 'Exporta';
+$string['grade'] = 'Qualificació';
+$string['import'] = 'Importa';
 $string['multiexport'] = 'Exporta';
 $string['optionaldescription'] = 'Descripció breu (opcional)';
+$string['search:activity'] = 'Datalynx: instàncies';
+$string['statistics'] = 'Estadístiques';
 $string['student'] = 'Estudiant';
+$string['type'] = 'Tipus';
 $string['view'] = 'visualitza';

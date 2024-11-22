@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Afişare raport privire de ansamblu asupra cursului';
-$string['pluginname'] = 'Cursurile mele';
+$string['pluginname'] = 'Privire de ansamblu asupra cursului';
 $string['privacy:metadata'] = 'Pluginul de prezentare generală a cursului nu stochează date personale.';

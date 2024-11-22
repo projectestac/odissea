@@ -72,7 +72,7 @@ $string['check_frontpagerole_error'] = 'Rôle de la page d’accueil « {$a} �
 $string['check_frontpagerole_name'] = 'Rôle de la page d’accueil';
 $string['check_frontpagerole_notset'] = 'Le rôle de la page d’accueil n’est pas défini.';
 $string['check_frontpagerole_ok'] = 'Définition adéquate du rôle de la page d’accueil.';
-$string['check_guestrole_details'] = '<p>Un rôle de visiteur anonyme est utilisé pour l’accès temporaire aux cours pour les utilisateurs anonymes. Veuillez vous assurer qu’aucune capacité comportant des risques n’est autorisée pour ce rôle.</p><p>Le seul type de rôle historique supporté pour un tel rôle est le rôle <em>Visiteur anonyme</em>.</p>';
+$string['check_guestrole_details'] = '<p>Un rôle de visiteur anonyme est utilisé pour l’accès temporaire aux cours pour les utilisateurs anonymes. Veuillez vous assurer qu’aucune capacité comportant des risques n’est autorisée pour ce rôle.</p><p>Le seul type de rôle historique pris en charge pour un tel rôle est le rôle <em>Visiteur anonyme</em>.</p>';
 $string['check_guestrole_error'] = 'Rôle de visiteur anonyme « {$a} » incorrectement défini !';
 $string['check_guestrole_name'] = 'Rôle de visiteur anonyme';
 $string['check_guestrole_notset'] = 'Le rôle de visiteur anonyme n’est pas défini.';
@@ -102,7 +102,7 @@ $string['check_publicpaths_name'] = 'Vérifier tous les chemins publics/privés'
 $string['check_publicpaths_ok'] = 'Les chemins internes ne peuvent pas être atteints publiquement';
 $string['check_publicpaths_warning'] = 'Certains chemins internes sont atteignables publiquement';
 $string['check_riskadmin_detailsok'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a}';
-$string['check_riskadmin_detailswarning'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a->admins}<p>Il est recommandé de n’attribuer le rôle d’administrateur que dans le contexte Système. Les utilisateurs ci-dessous ont des attributions (non supportées) du rôle d’administrateur dans d’autres contextes :</p><p>{$a->unsupported}</p>';
+$string['check_riskadmin_detailswarning'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a->admins}<p>Il est recommandé de n’attribuer le rôle d’administrateur que dans le contexte Système. Les utilisateurs ci-dessous ont des attributions (non prises en charge) du rôle d’administrateur dans d’autres contextes :</p><p>{$a->unsupported}</p>';
 $string['check_riskadmin_name'] = 'Administrateurs';
 $string['check_riskadmin_ok'] = '{$a} administrateur(s) Moodle trouvé(s).';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">Vérification de l’attribution du rôle de {$a->fullname} ({$a->email})</a>';

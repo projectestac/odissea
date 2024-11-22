@@ -31,6 +31,7 @@ $string['direction_before'] = '日期';
 $string['direction_from'] = '从';
 $string['direction_label'] = '方向';
 $string['direction_until'] = '直到';
+$string['error_dateconflict'] = '与其他日期限制冲突';
 $string['full_from'] = '在这之后 <strong>{$a}</strong>';
 $string['full_from_date'] = '在这之上或之后 <strong>{$a}</strong>';
 $string['full_until'] = '在这之前 <strong>{$a}</strong>';

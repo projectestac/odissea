@@ -202,7 +202,7 @@ function report_coursequotas_print_chart($chartinfo, $consumed = false, $total =
         };
     </script>';
 
-    if (is_xtecadmin()) {
+    if (get_protected_agora()) {
         if ($unlocated > 0) {
             $text .= $OUTPUT->notification(get_string('disk_quota_missing', REPORT_COMPONENTNAME, $unlocated), 'info');
         }

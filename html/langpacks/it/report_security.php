@@ -45,8 +45,9 @@ $string['check_crawlers_error'] = 'L\'accesso per i motori di ricerca è abilita
 $string['check_crawlers_info'] = 'I motori di ricerca possono entrare nel sito come ospiti.';
 $string['check_crawlers_name'] = 'Aperto a Google';
 $string['check_crawlers_ok'] = 'L\'accesso per i motori di ricerca è disabilitato.';
-$string['check_defaultuserrole_details'] = '<p>A tutti gli utenti autenticati vengono conferiti i privilegi del Ruolo di default per tutti gli utenti. Accertati che tale ruolo non possegga privilegi tali da consentirgli di compromettere la sicurezza del sito.</p>
-<p>Il solo Ruolo origine supportato per il Ruolo di default per tutti gli utenti è <em>Utente autenticato</em>.</p>';
+$string['check_defaultuserrole_details'] = '<p>A tutti gli utenti autenticati vengono assegnate le funzionalità del ruolo di defualt. Assicurarsi che a questo ruolo non siano assegnati privilegi rischiosi.</p>
+<p>L\'unico tipo legacy supportato per il ruolo utente di default è <em>Utente autenticato</em>. La funzionalità di visualizzazione del corso non deve essere abilitata.</p>
+<p>Verificare se l\'opzione di approvazione della richiesta di eliminazione automatica dei dati (tool_dataprivacy | automaticdatadeletionapproval) è abilitata. Gli utenti possono richiedere eliminazioni che potrebbero eliminare grandi quantità di dati.</p>';
 $string['check_defaultuserrole_error'] = 'Il Ruolo di default per tutti gli utenti "{$a}" non è definito in modo corretto!';
 $string['check_defaultuserrole_name'] = 'Ruolo di default per tutti gli utenti';
 $string['check_defaultuserrole_notset'] = 'Il ruolo di default non è impostato.';

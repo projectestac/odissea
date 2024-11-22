@@ -102,8 +102,8 @@ $string['modulename_help'] = '<p><a href="https://www.geogebra.org" target="_bla
 <p>Deshalb hat das <a href="http://www.gencat.cat/ensenyament/" target="_blank">Departament of Education of Cataloni</a> in Zusammenarbeit mit der <a href="https://acgeogebra.cat/" target="_blank">Catalan Association of GeoGebra</a> (ACG) und dem GeoGeobra-Entwicklungsteam dieses Modul implementiert, das die Einbindung von GeoGebra-Aktivitäten in Moodle ermöglicht. Seine Hauptmerkmale sind:
 <ul>
     <li>Ermöglicht die einfache Einbettung von GeoGebra-Aktivitäten in einige Moodle-Kurse.</li>
-    <li>Erleichtert die Verfolgung von Lernerfolgen, da die Punktezahl, das Datum, die Dauer und die Konstruktion jedes einzelnen Versuchs für eine/n Nutzer/innen gespeichert werden.</li>
-    <li>Teilnehmer/in  können den Stand der Aktivitäten speichern, um sie später fortzusetzen.</li>
+    <li>Erleichtert die Verfolgung von Lernerfolgen, da die Punktezahl, das Datum, die Dauer und die Konstruktion jedes einzelnen Versuchs für alle Nutzer/innen gespeichert werden.</li>
+    <li>Teilnehmer/innen  können den Stand der Aktivitäten speichern, um sie später fortzusetzen.</li>
 </ul>
 </p>';
 $string['modulenameplural'] = 'GeoGebra';

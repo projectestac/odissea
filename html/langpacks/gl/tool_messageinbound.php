@@ -29,3 +29,5 @@ $string['incomingmailconfiguration'] = 'Configuración do correo entrante';
 $string['incomingmailserversettings'] = 'Configuración do servidor de correo entrante';
 $string['messageinboundenabled'] = 'Activar o procesamento do correo entrante';
 $string['messageinboundhost'] = 'Servidor de correo entrante';
+$string['messageinboundhostpass_desc'] = 'Este é o contrasinal que o fornecedor do servizo lle terá dado para acceder á súa conta de correo electrónico.';
+$string['messageinboundhostuser_desc'] = 'Este é o nome de usuario que o fornecedor do servizo lle terá dado para acceder á súa conta de correo electrónico.';

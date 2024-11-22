@@ -67,8 +67,8 @@ $string['enroldownload_help'] = 'Sommige cursussen die in de lijst van de gesele
 Andere cursussen zijn sjablonen die je kunt downloaden en gebruiken op je eigen Moodlesite.';
 $string['enrollable'] = 'cursussen waarin ik kan aanmelden';
 $string['enrollablecourses'] = 'Cursussen waar aanmelding mogelijk is';
-$string['errorcourselisting'] = 'Er is een fout opgetreden bij het ophalen van de cursuslijst van de geselecteerde hub. Probeer later opnieuw. ({$a})';
-$string['errorhublisting'] = 'Er is een fout opgetreden bij het ophalen van de lijst met hubs van Moodle.org. Probeer later opnieuw ({$a})';
+$string['errorcourselisting'] = 'Opmerking: het is niet langer mogelijk om cursussen te zoeken op Moodle.net. Cursussen die voordien gedownload konden worden zijn nu beschikbaar op  archive.moodle.net. Zie <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Sunsetting moodle.net</a> voor meer info.';
+$string['errorhublisting'] = 'Er is een fout opgetreden bij het ophalen van de lijst met hubs van Moodle.org. Probeer later opnieuw. ({$a})';
 $string['fileinfo'] = 'Taal: {$a->lang} - Licentie: {$a->license} -  Tijd aangepast: {$a->timeupdated}';
 $string['hideall'] = 'Verberg hubs';
 $string['hub'] = 'hub';

@@ -40,7 +40,7 @@ $string['auth_shib_idp_list_description'] = 'Stellen Sie eine Liste der Identity
 Als optionaler dritter Parameter kann der Ort des Shibboleth Session Initators eingetragen werden, falls die Moodle-Installation im Verbund genutzt wird.';
 $string['auth_shib_instructions'] = 'Nutzen Sie den <a href="{$a}">Shibboleth-Login</a>, um Zugang über Shibboleth zu erhalten, wenn Ihre Institution dies unterstützt. Andernfalls verwenden Sie das normale Login.';
 $string['auth_shib_instructions_help'] = 'Tragen Sie hier Informationen für Ihre Nutzer/innen ein, die ihnen den Zugang mit Hilfe von Shibboleth erklären. Diese werden auf der Loginseite angzeigt. Der Text sollte einen Link "<b>{$a}</b>" enthalten, damit ein einfachere Login möglich ist. Wenn Sie das Feld leer lassen, werden die Standard-Texte angezeigt und keine Hinweise auf den Shibboleth Login.';
-$string['auth_shib_instructions_key'] = 'Login-Anweisungen';
+$string['auth_shib_instructions_key'] = 'Login-Anleitung';
 $string['auth_shib_integrated_wayf'] = 'Moodle WAYF Service';
 $string['auth_shib_integrated_wayf_description'] = 'Mit der Aktivierung verwendet Moodle den eigenen WAYF Service an Stelle des für Shibboleth konfigurierten. Moodle zeigt dann eine Dropdownliste der verfügbaren alternativen Login-Seiten, wo der Identity Provider ausgewählen wird.';
 $string['auth_shib_logout_return_url'] = 'Alternative URL nach Logout';
@@ -57,7 +57,7 @@ $string['auth_shibboleth_login_long'] = 'Login für Moodle über Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Manueller Login';
 $string['auth_shibboleth_select_member'] = 'Ich bin Mitglied von ...';
 $string['auth_shibboleth_select_organization'] = 'Zur Authentifizierung über Shibboleth wählen Sie Ihre Organisation aus dem Dropdown-Menü aus:';
-$string['auth_shibbolethdescription'] = 'Mit diesem Verfahren können Sie die Verbindung zu einem bestehenden Shibboleth Server herstellen, um Zugänge zu prüfen und anzulegen.';
+$string['auth_shibbolethdescription'] = 'Bei dieser Methode werden Nutzer/innen mit Shibboleth erstellt und authentifiziert. Einzelheiten zur Einrichtung finden Sie in <a href="{$a}">Shibboleth-README</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Das Plugin \'Shibboleth-Authentifizierung\' speichert keine personenbezogenen Daten.';
 $string['shib_invalid_account_error'] = 'Sie scheinen über Shibboleth authentifiziert zu sein, aber Moodle findet kein gültiges Nutzerkonto zu Ihrem Anmeldenamen. Ihr Nutzerkonto könnte ungültig geworden sein oder es existiert gar nicht.';

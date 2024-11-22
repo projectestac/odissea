@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcondition'] = 'Afegeix una condició';
+$string['group'] = 'Tasques en grup';

@@ -31,6 +31,7 @@ $string['description'] = 'Descripció';
 $string['encoding'] = 'Codificació';
 $string['export'] = 'Exporta';
 $string['exportnavlink'] = 'Exporta el marc de competències';
+$string['idnumber'] = 'Número ID';
 $string['import'] = 'Importa';
 $string['importfile'] = 'Fitxer CSV de descripció del marc';
 $string['importfile_help'] = 'Es pot importar un marc de competències mitjançant un fitxer de text. El format del fitxer es pot determinar creant un marc de competències nou al lloc i després exportant-lo.';

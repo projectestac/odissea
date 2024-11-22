@@ -169,6 +169,7 @@ $string['moodleoverflow:ratehelpful'] = 'Marcar uma publicação como útil';
 $string['moodleoverflow:ratepost'] = 'Avaliar uma publicação';
 $string['moodleoverflow:replypost'] = 'Responder numa discussão';
 $string['moodleoverflow:startdiscussion'] = 'Iniciar uma discussão';
+$string['moodleoverflow:viewanyrating'] = 'Ver classificações';
 $string['moodleoverflow:viewdiscussion'] = 'Visualizar discussão';
 $string['moodleoverflowauthorhidden'] = 'Autor (oculto)';
 $string['moodleoverflowbodyhidden'] = 'Não pode visualizar esta publicação, provavelmente porque não publicou na discussão, o tempo de edição máximo ainda não terminou, a discussão não iniciou ou a discussão já terminou.';

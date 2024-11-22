@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventactivityreportviewed'] = 'Отчет «Отчет о деятельности» по курсу просмотрен';
+$string['eventactivityreportviewed'] = 'Отчеты по элементам курса просмотрен';
 $string['eventoutlinereportviewed'] = 'Отчет «Отчет о деятельности» по пользователю просмотрен';
 $string['neverseen'] = 'Не просмотрено ни разу';
 $string['nologreaderenabled'] = 'ПО для чтения журналов не включено';
@@ -35,5 +35,5 @@ $string['outline:viewuserreport'] = 'Просматривать отчет об 
 $string['page-report-outline-index'] = 'Обзорный отчет по курсу';
 $string['page-report-outline-user'] = 'Обзорный отчет по пользователю курса';
 $string['page-report-outline-x'] = 'Любой обзорный отчет';
-$string['pluginname'] = 'Отчет о деятельности';
-$string['privacy:metadata'] = 'Плагин отчета об активности не хранит никаких личных данных.';
+$string['pluginname'] = 'Отчет по элементам';
+$string['privacy:metadata'] = 'Плагин «Отчет по элементам» не хранит никаких личных данных.';

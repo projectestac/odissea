@@ -62,7 +62,7 @@ $string['enrolenddate'] = 'Amaiera-data';
 $string['enrolenddate_help'] = 'Gaituz gero, erabiltzaileak data horretara arte baino ezin izango dira sartu.';
 $string['enrolenddateerror'] = 'Matrikulazioaren hasiera-data ezin da izan matrikulazioaren amaiera-data baino lehenagokoa.';
 $string['enrolisdisabled'] = '\'Argitaratu LTI tresna gisa\' plugina desgaituta dago.';
-$string['enrolltiversionincorrect'] = 'Baliabidea ez dago LTI zaharkitua (1.1/2.0 bertsioak) erabiltzeko konfiguratuta. Jarri zaitez harremanetan tresna honen kudeatzailearekin.';
+$string['enrolltiversionincorrect'] = 'Baliabidea ez dago zaharkitutako LTIak (1.1/2.0 bertsioak) erabiltzeko konfiguratuta. Jarri zaitez harremanetan tresna honen kudeatzailearekin.';
 $string['enrolmentfinished'] = 'Matrikulazioa amaitu da.';
 $string['enrolmentnotstarted'] = 'Matrikulazioa ez da hasi.';
 $string['enrolperiod'] = 'Matrikulazioaren iraupena';
@@ -92,15 +92,15 @@ $string['ltiadvdynregerror:invalidopenidconfigjson'] = 'Arazo bat egon da plataf
 $string['ltiadvlauncherror:invaliddeployment'] = 'Abiarazte data ala tresna konfigurazio baliogabea. Ezin da hedapena aurkitu (hedapen-IDa: {$a})';
 $string['ltiadvlauncherror:invalidid'] = 'Abiarazte data baliogabea. \'{$a}\' baliabidea ez dago eskuragarri ala ez da existitzen.';
 $string['ltiadvlauncherror:invalidregistration'] = 'Abiarazte data ala tresna konfigurazio baliogabea. Ezin da plataforma-errregistroa aurkitu (emailea: {$a->platform}, bezero-IDa: {$a->clientid}).';
-$string['ltiadvlauncherror:missingid'] = 'Abiarazte data baliogabea. Eskatutako \'id\' eremu pertsonalizatua beharrezkoa da jarduera ala baliabidea LTI Advantage bidez abiarazteko.';
-$string['ltilegacy'] = 'LTI zaharkitua (1.1/2.0)';
-$string['ltilegacydeprecatednotice'] = 'LTI zaharkituko (1.1/2.0) tresnak baztertu dira. Edukia orain LTI Advantage erabilita partekatu beharko litzateke.';
+$string['ltiadvlauncherror:missingid'] = 'Abiarazte data baliogabea. Eskatutako \'id\' eremu pertsonalizatua beharrezkoa da jarduera edo baliabidea LTI Advantage bidez abiarazteko.';
+$string['ltilegacy'] = 'Zaharkitutako LTIa (1.1/2.0)';
+$string['ltilegacydeprecatednotice'] = 'Zaharkitutako LTI (1.1/2.0) tresnak baztertu dira. Edukia orain LTI Advantage erabilita partekatu beharko litzateke.';
 $string['ltiversion'] = 'LTI bertsioa';
 $string['ltiversion_help'] = 'Argitaratutako edukira sartzeko erabiliko den LTI bertsioa.
 
 LTI Advantage-k aurrez erregistratutako plataformetan edukia eduki berria argitaratzen den bakoitzean plataforman aldaketak egin behar izan gabe argitaratzea ahalbidetzen du. Segurtasun kontratua plataformaren eta tresnaren artekoa da.
 
-Zaharkitutako bertsioek (1.1 eta 2.0) tresna berri bat erregistratzea behar dute kontsumitzailean sortzen den eduki berriaren zati bakoitzean argitaratutako eduki zati bakoitzak gune-kontsumitzailearekin segurtasun-kontratu bana daukalako eta beraz banaka konfiguratu behar dira.';
+Zaharkitutako LTI bertsioek (1.1 eta 2.0) tresna berri bat erregistratzea behar dute kontsumitzailean sortzen den eduki berriaren zati bakoitzean argitaratutako eduki zati bakoitzak gune-kontsumitzailearekin segurtasun-kontratu bana daukalako eta beraz banaka konfiguratu behar dira.';
 $string['managedeployments'] = 'Kudeatu hedapenak';
 $string['maxenrolled'] = 'Matrikulatutako gehieneko erabiltzaileak';
 $string['maxenrolled_help'] = 'Erremintara sarbidea izan dezakeen urruneko gehieneko erabiltzaile-kopurua. Zero ezarriz gero, matrikulatutako erabiltzaileek ez dute mugarik izango.';

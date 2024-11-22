@@ -148,24 +148,23 @@ class condition extends \core_availability\condition {
                     $grabthelot, $userid);
 
             $allow = true;
+            $haspassgrade = (bool) $modinfo->cms[$cmid]->completionpassgrade;
             if ($this->expectedcompletion == COMPLETION_COMPLETE) {
                 // Complete also allows the pass state.
-                switch ($completiondata->completionstate) {
-                    case COMPLETION_COMPLETE:
-                    case COMPLETION_COMPLETE_PASS:
-                        break;
-                    default:
-                        $allow = false;
+                $completestates = [COMPLETION_COMPLETE, COMPLETION_COMPLETE_PASS];
+                if (!$haspassgrade) {
+                    // Consider fail state as complete too when no pass grade is required.
+                    $completestates[] = COMPLETION_COMPLETE_FAIL;
                 }
+                $allow = in_array($completiondata->completionstate, $completestates);
             } else if ($this->expectedcompletion == COMPLETION_INCOMPLETE) {
                 // Incomplete also allows the fail state.
-                switch ($completiondata->completionstate) {
-                    case COMPLETION_INCOMPLETE:
-                    case COMPLETION_COMPLETE_FAIL:
-                        break;
-                    default:
-                        $allow = false;
+                $incompletestates = [COMPLETION_INCOMPLETE];
+                if ($haspassgrade) {
+                    // Consider fail state as incomplete state only when pass grade is required.
+                    $incompletestates[] = COMPLETION_COMPLETE_FAIL;
                 }
+                $allow = in_array($completiondata->completionstate, $incompletestates);
             } else {
                 // Other values require exact match.
                 if ($completiondata->completionstate != $this->expectedcompletion) {

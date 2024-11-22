@@ -63,7 +63,7 @@ $string['enrolisdisabled'] = 'Le plugin « Publier comme outil LTI » est dés
 $string['enrolltiversionincorrect'] = 'La ressource n’est pas configurée pour être utilisée avec d’anciennes versions LTI (versions 1.1/2.0). Veuillez contacter l’utilisateur de cet outil.';
 $string['enrolmentfinished'] = 'Inscription échue.';
 $string['enrolmentnotstarted'] = 'L’inscription n’a pas commencé.';
-$string['enrolperiod'] = 'Durée d\'\'inscription';
+$string['enrolperiod'] = 'Durée d’inscription';
 $string['enrolperiod_help'] = 'La durée pendant laquelle l’inscription est valide, à compter du moment où l’utilisateur s’inscrit depuis le système distant. Si aucune valeur n’est donnée, la durée est illimitée.';
 $string['enrolstartdate'] = 'Date de début';
 $string['enrolstartdate_help'] = 'Si ce réglage est indiqué, les utilisateurs peuvent accéder seulement à partir de cette date.';
@@ -133,7 +133,7 @@ $string['privacy:metadata:enrol_lti_users:lastgrade'] = 'La dernière note enreg
 $string['privacy:metadata:enrol_lti_users:timecreated'] = 'La date et l’heure de l’inscription de l’utilisateur';
 $string['privacy:metadata:enrol_lti_users:userid'] = 'L’identifiant de l’utilisateur';
 $string['provisioningmode'] = 'Mode de provisionnement';
-$string['provisioningmode_help'] = 'Ce réglage détermine comment les comptes sont traités au premier lancement. Plusieurs modes sont supportés :
+$string['provisioningmode_help'] = 'Ce réglage détermine comment les comptes sont traités au premier lancement. Plusieurs modes sont pris en charge :
 <ul>
 <li>Nouveaux comptes seulement (automatique) - Des comptes seront créés automatiquement pour les utilisateurs qui lancent depuis la plateforme. Ce réglage est le réglage par défaut pour le premier lancement par les étudiants.</li>
 <li>Comptes existants et nouveaux (demande) - L’utilisateur pourra choisir que faire. Il peut décider le lier un compte existant ou de créer une nouveau compte pour lui. C’est l’option la plus flexible et le réglage par défaut pour le premier lancement par les enseignants.</li>
@@ -176,7 +176,7 @@ $string['registrationstatusactive'] = 'Actif';
 $string['registrationstatuspending'] = 'En suspens';
 $string['registrationurl'] = 'URL d’enregistrement';
 $string['registrationurl_help'] = 'Si une URL d’enregistrement (aussi appelée URL proxy) est utilisée, l’outil est configuré automatiquement.';
-$string['registrationurlinfomessage'] = 'Si la plateforme supporte l’enregistrement dynamique, utiliser l’URL d’enregistrement ci-dessous. Pour plus d’informations sur l’enregistrement dynamique, consulter la documentation <a href="{$a}">Publier comme outil LTI</a>.';
+$string['registrationurlinfomessage'] = 'Si la plateforme prend en charge l’enregistrement dynamique, utiliser l’URL d’enregistrement ci-dessous. Pour plus d’informations sur l’enregistrement dynamique, consulter la documentation <a href="{$a}">Publier comme outil LTI</a>.';
 $string['remotesystem'] = 'Système distant';
 $string['requirecompletion'] = 'Nécessite que le cours ou l’activité soit terminée avant de synchroniser les notes';
 $string['returnurlnotset'] = 'URL de retour non défini.';

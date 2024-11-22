@@ -223,9 +223,9 @@ $string['flagthisquestion'] = 'Puneți flag la această întrebare';
 $string['formquestionnotinids'] = 'Formular care conține întrebări care nu sunt în questionids';
 $string['fractionsnomax'] = 'Una din întrebări trebuie să aibă un punctaj de 100% astfel încât să fie posibilă obţinerea unei note maxime la această întrebare.';
 $string['generalfeedback'] = 'Feedback general';
-$string['generalfeedback_help'] = 'Feedback-ul general este prezentat studentului după ce a completat întrebarea. Spre deosebire de feedback-ul specific, care depinde de tipul de întrebare și de răspunsul dat de student, același text cu feedback-ul general este prezentat tuturor studenților.
+$string['generalfeedback_help'] = 'Feedback-ul general este prezentat studentului după ce a completat întrebarea. Spre deosebire de feedback-ul specific care depinde de tipul de întrebare și de răspunsul dat de student, același text cu feedback-ul general este prezentat tuturor studenților.
 
-Aveți posibilitatea să utilizați feedback-ul general, pentru a oferi studenților un răspuns complet și poate un link către mai multe informații pe care le pot folosi în cazul în care nu au înțeles întrebările.';
+Aveți posibilitatea să utilizați feedback-ul general pentru a oferi studenților un răspuns complet și poate un link către mai multe informații pe care le pot folosi în cazul în care nu au înțeles întrebările.';
 $string['getcategoryfromfile'] = 'Obţine categorie din fişier';
 $string['getcontextfromfile'] = 'Obţine context din fişier';
 $string['hintn'] = 'Sugestie {no}';
@@ -234,7 +234,7 @@ $string['hinttext'] = 'Textul sugestiei';
 $string['howquestionsbehave'] = 'Care este funcționalitatea întrebărilor';
 $string['howquestionsbehave_help'] = 'Cursanții pot interacționa cu întrebările din test în diferite moduri. De exemplu, ați putea dori ca studenții să introducă un răspuns la fiecare întrebare și apoi să trimită testul complet, înainte să primească notă sau feedback. Acesta ar fi modul „Feedback diferit”.
 
-Alternativ, ați putea dori ca cursanții să trimită fiecare întrebare pe măsură continuă testul pentru a obține feedback imediat și, dacă nu găsesc răspunsul corect  imediat, mai pot încerca încă odată și vor primi penalizări la nota finală. Acesta ar fi modul „Interactiv cu mai multe încercări”.
+Alternativ, ați putea dori ca utilizatorii să trimită fiecare întrebare pe măsură continuă testul pentru a obține feedback imediat și, dacă nu găsesc răspunsul corect  imediat, mai pot încerca încă odată și vor primi penalizări la nota finală. Acesta ar fi modul „Interactiv cu mai multe încercări”.
 
 Acestea sunt probabil cele două moduri de comportament cele mai utilizate.';
 $string['howquestionsbehave_link'] = 'question/behaviour';
@@ -251,7 +251,7 @@ $string['importerrorquestion'] = 'Eroare la importul întrebărilor';
 $string['importfromcoursefiles'] = '... sau alegeți un fișier curs pentru import.';
 $string['importfromupload'] = 'Selectează un fișier pentru upload...';
 $string['importingquestions'] = 'Se importă  {$a} întrebări din fișier';
-$string['importparseerror'] = 'S-au găsit erori la analizarea fișierului de import. Nu au fost importate întrebările. Pentru a importa orice întrebare bună, încercați din nou setând „Opriți la eroare” la „Nu”';
+$string['importparseerror'] = 'S-au găsit erori la analizarea fișierului de import. Nu au fost importate întrebările. Pentru a importa orice întrebare bună, încercați din nou setând „Stop când apare eroare” la „Nu”';
 $string['importquestions'] = 'Importă întrebări din fișier';
 $string['importquestions_help'] = 'Această funcție permite activarea întrebărilor într-o varietate de formate pentru a fi importate prin fișier text. Rețineți că fișierul trebuie să utilizeze codificarea UTF-8.';
 $string['importquestions_link'] = 'question/import';
@@ -462,12 +462,12 @@ $string['showquestiontext_full'] = 'Da, cu imagini, fișiere media, etc';
 $string['showquestiontext_off'] = 'Nu';
 $string['showquestiontext_plain'] = 'Da, doar text';
 $string['specificfeedback'] = 'Feedback specific';
-$string['specificfeedback_help'] = 'Feedback care depinde răspunsul dat de cursant';
+$string['specificfeedback_help'] = 'Feedback care depinde de răspunsul dat de cursant';
 $string['started'] = 'Început';
 $string['state'] = 'Stare';
 $string['step'] = 'Pas';
 $string['steps'] = 'Pași';
-$string['stoponerror'] = 'Opriți când apare eroare';
+$string['stoponerror'] = 'Stop când apare eroare';
 $string['stoponerror_help'] = 'Această setare stabilește dacă procesul de import este stopat atunci când este detectată o eroare, nicio întrebare nefiind importată, sau întrebările care conțin erori sunt ignorate și întrebările valide sunt importate.';
 $string['submissionoutofsequence'] = 'Acces în afara secvenței. Vă rugăm să nu faceți clic pe butonul Înapoi atunci când lucrați la întrebări la test.';
 $string['submissionoutofsequencefriendlymessage'] = 'Ați introdus date din afara secvenței normale. Acest lucru se întâmplă dacă folosiți funcțiile Back și Forward ale browser-ului.  Vă rugăm să nu le folosiți în timpul testului. De asemenea, se întâmplă când dați click pe ceva în timp ce pagina se încarcă. Click <strong>Continue</strong>  pentru a relua.';

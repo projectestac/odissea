@@ -72,13 +72,13 @@ $string['deleteselected'] = 'Supprimer la sélection';
 $string['deletissuedcertificates'] = 'Supprimer les certificats délivrés';
 $string['delivery'] = 'Emission';
 $string['delivery_help'] = 'Choisissez ici la façon dont vous souhaitez que vos étudiants obtiennent leur certificat.
-Ouvrir dans le navigateur : Ouvre le certificat dans une nouvelle fenêtre du navigateur.
-Forcer le  Téléchargement : Ouvre la fenêtre de téléchargement du fichier du navigateur.
-Certificat Courriel : Cette option envoie le certificat à l’étudiant en pièce jointe.
+Ouvrir dans le navigateur : ouvre le certificat dans une nouvelle fenêtre du navigateur.
+Forcer le Téléchargement : ouvre la fenêtre de téléchargement du fichier du navigateur.
+Certificat Courriel : cette option envoie le certificat à l’étudiant en pièce jointe.
 Après qu’un utilisateur a reçu son certificat, s’il clique sur le lien du certificat de la page d’accueil du cours, il verra la date à laquelle il a reçu son certificat et sera en mesure d’examiner son certificat reçu.';
 $string['designoptions'] = 'Options de design';
 $string['download'] = 'Forcer le téléchargement';
-$string['emailcertificate'] = 'Email (Vous devez aussi choisir de sauvegarder)';
+$string['emailcertificate'] = 'Courriel (Vous devez aussi choisir de sauvegarder)';
 $string['emailfrom'] = 'Adresse de courriel';
 $string['emailfrom_help'] = 'Adresse secondaire de courriel';
 $string['emailoncompletion'] = 'Courriel suite à l’achèvement du cours';
@@ -103,16 +103,18 @@ $string['getcertificate'] = 'Obtenez votre certificat';
 $string['grade'] = 'Niveau';
 $string['gradefmt'] = 'Format du niveau';
 $string['gradefmt_help'] = 'Il y a trois formats disponibles si vous choisissez d’imprimer une note sur le certificat :
-Pourcentage Grade: Imprime la note en pourcentage.
-Points Grade: Imprime la valeur du point de grade.
-Lettre Grade: Imprime la note en pourcentage comme une lettre';
+<ul>
+<li>Note Pourcentage : imprime la note en pourcentage.</li>
+<li>Note Points : imprime la note en nombre de points.</li>
+<li>Note Lettre : imprime la note en pourcentage comme une lettre.</li>
+</ul>';
 $string['gradeletter'] = 'Niveau par lettres';
 $string['gradepercent'] = 'Niveau par pourcentage';
 $string['gradepoints'] = 'Niveau par points';
 $string['height'] = 'Hauteur du certificat';
 $string['hours'] = 'heures';
 $string['intro'] = 'Introduction';
-$string['invalidcode'] = 'Code certificat invalide';
+$string['invalidcode'] = 'Code certificat non valide';
 $string['issued'] = 'Délivré';
 $string['issueddate'] = 'Date de délivrance';
 $string['issuedview'] = 'Certificats délivrés';
@@ -136,7 +138,7 @@ $string['printdate_help'] = 'C’est la date qui sera imprimée, si la date d’
 $string['printgrade'] = 'Choisir l’élément de référence';
 $string['printgrade_help'] = 'Vous pouvez choisir tous les éléments du cours disponibles dans le carnet de notes afin d’imprimer la note que l’utilisateur a reçu pour cet élément sur le certificat. Les éléments de notation sont répertoriés dans l’ordre dans lequel ils apparaissent dans le carnet de notes. Choisissez le format de la note ci-dessous.';
 $string['printoutcome'] = 'Imprimer le résultat';
-$string['printoutcome_help'] = 'Vous pouvez choisir n’importe quel élément du cours dont vous voulez imprimer le résultat obtenu par l’utilisateur sur le certificat. Un exemple pourrait être: Résultat obtenu : Maîtrise.';
+$string['printoutcome_help'] = 'Vous pouvez choisir n’importe quel élément du cours dont vous voulez imprimer le résultat obtenu par l’utilisateur sur le certificat. Un exemple pourrait être : Résultat obtenu : Maîtrise.';
 $string['printqrcode'] = 'Imprimer le QR code du certificat';
 $string['printqrcode_help'] = 'Imprimer (ou non) le QR code du certificat';
 $string['qrcodefirstpage'] = 'Imprimer le QR code sur la première page';

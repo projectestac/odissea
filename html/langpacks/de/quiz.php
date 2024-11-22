@@ -255,7 +255,7 @@ $string['countdowntenminutes'] = 'Der Test endet in 10 Minuten.';
 $string['coursetestmanager'] = 'Kurs-Testmanager/in-Format';
 $string['createcategoryandaddrandomquestion'] = 'Kategorie anlegen und Zufallsfrage hinzufügen';
 $string['createfirst'] = 'Sie müssen zuerst einige Kurztextfragen anlegen.';
-$string['createmultiple'] = 'Mehrere Fragen erstellen';
+$string['createmultiple'] = 'Mehrere Zufallsfrage zum Test hinzufügen';
 $string['createnewquestion'] = 'Eine neue Frage anlegen';
 $string['createquestionandadd'] = 'Eine neue Frage erstellen und zum Test hinzufügen.';
 $string['custom'] = 'Eigenes Format';
@@ -300,7 +300,7 @@ $string['editingquiz'] = 'Test wird bearbeitet';
 $string['editingquiz_help'] = 'Für die Zusammenstellung von Tests gibt es mehrere Möglichkeiten:
 
 * Test - Ein Test enthält Fragen, die auf einer oder über mehrere Seiten verteilt angezeigt werden
-* Fragensammlung - Ein Test wird aus der  Fragensammlung zusammengestellt, in der alle Fragen kategorisiert als Kopie vorkommen
+* Fragensammlung - Ein Test wird aus der Fragensammlung zusammengestellt, in der alle Fragen kategorisiert als Kopie vorkommen
 * Zufallsfragen - Jede Person erhält bei jedem neuen Versuch andere Fragen. Unterschiedliche Personen bekommen unterschiedliche Fragen vorgelegt';
 $string['editingquiz_link'] = 'mod/quiz/edit';
 $string['editingquizx'] = 'Test bearbeiten: {$a}';
@@ -827,7 +827,7 @@ $string['randomfromcategory'] = 'Zufallsfrage aus der Kategorie:';
 $string['randomfromexistingcategory'] = 'Zufallsfrage in einer bestehenden Kategorie';
 $string['randomfromunavailabletag'] = '{$a} (unavailable)';
 $string['randomnosubcat'] = 'Fragen nur aus dieser Kategorie, nicht aus deren Unterkategorien.';
-$string['randomnumber'] = 'Anzahl der zufälligen Fragen';
+$string['randomnumber'] = 'Anzahl der Zufallsfragen';
 $string['randomquestion'] = 'Zufallsfrage';
 $string['randomquestion_help'] = 'Eine Zufallsfrage ist eine Option, eine zufällig gewählte Frage aus einer bestimmten Kategorie oder mit einem bestimmten Tag in eine Aktivität einzufügen.';
 $string['randomquestiontags'] = 'Tags';

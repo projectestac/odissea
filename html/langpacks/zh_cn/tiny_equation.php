@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['buttontitle'] = '公式编辑器';
+$string['cursorinfo'] = '箭头表示插入新字符的位置。';
+$string['editequation'] = '使用 <a href=“{$a}” target=“_blank”>TeX 编辑公式</a>';
+$string['helplinktext'] = '公式帮助';
 $string['librarygroup1'] = '运算符';
 $string['librarygroup1_desc'] = '运算符标签页的 TeX 命令。';
 $string['librarygroup2'] = '箭头';
@@ -33,3 +37,8 @@ $string['librarygroup3'] = '希腊符号';
 $string['librarygroup3_desc'] = '希腊符号标签页的 TeX 命令。';
 $string['librarygroup4'] = '高级';
 $string['librarygroup4_desc'] = '高级标签页的 TeX 命令。';
+$string['modaltitle'] = '公式编辑器';
+$string['preview'] = '公式预览';
+$string['privacy:metadata'] = 'TinyMCE的公式编辑器不存储任何个人数据';
+$string['saveequation'] = '保存公式';
+$string['settings'] = '公式编辑器设置';

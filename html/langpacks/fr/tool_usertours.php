@@ -277,5 +277,5 @@ $string['tourlist_explanation'] = 'Il est possible de créer autant de visites g
 $string['tours'] = 'Visites guidées';
 $string['usertours'] = 'Visites guidées';
 $string['usertours:managetours'] = 'Créer, modifier et supprimer des visites guidées';
-$string['viewtour_edit'] = 'Il est possible de <a href="{$a->editlink}">modifier les réglages par défaut de la visite guidée</a> et d\'<a href="{$a->resetlink}">imposer l’affichage de la visite guidée</a> une nouvelle fois à tous les utilisateurs.';
+$string['viewtour_edit'] = 'Il est possible de <a href="{$a->editlink}">modifier les réglages par défaut de la visite guidée</a> et d’<a href="{$a->resetlink}">imposer l’affichage de la visite guidée</a> une nouvelle fois à tous les utilisateurs.';
 $string['viewtour_info'] = 'Voici la visite guidée « {$a->tourname} ». Elle s’applique au chemin « {$a->path} ».';

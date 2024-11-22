@@ -15764,7 +15764,12 @@ blockquote {
   margin: 0 0.5rem 1rem;
   padding-left: 1rem;
   color: #495057;
-  border-left: 5px solid #ced4da;
+  border-left: 5px solid #8f959e;
+}
+
+.pagelayout-maintenance .page-header-headings,
+.pagelayout-secure .page-header-headings {
+  background-color: #fff;
 }
 
 /* Prevent long strings exceeding page width */
@@ -17360,7 +17365,10 @@ table.calendartable caption {
   section:not(#region-main) .block.block_calendar_month .maincalendar .calendarwrapper .previous,
   section:not(#region-main) .block.block_calendar_month .maincalendar .calendarwrapper .next {
     width: 30%;
-    font-size: 0.8em;
+  }
+  section:not(#region-main) .block.block_calendar_month .maincalendar .calendarwrapper .previous .arrow_text,
+  section:not(#region-main) .block.block_calendar_month .maincalendar .calendarwrapper .next .arrow_text {
+    display: none;
   }
   section:not(#region-main) .block.block_calendar_month .maincalendar .calendartable.calendarmonth th,
   section:not(#region-main) .block.block_calendar_month .maincalendar .calendartable.calendarmonth td {

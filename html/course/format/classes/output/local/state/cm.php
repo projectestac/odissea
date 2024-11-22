@@ -114,7 +114,15 @@ class cm implements renderable {
         $data->istrackeduser = $completioninfo->is_tracked_user($USER->id);
         if ($data->istrackeduser && $completioninfo->is_enabled($cm)) {
             $completiondata = $completioninfo->get_data($cm);
-            $data->completionstate = $completiondata->completionstate;
+            $haspassgrade = $cm->completionpassgrade;
+            $isfail = $completiondata->completionstate == COMPLETION_COMPLETE_FAIL;
+            $ispass = $completiondata->completionstate == COMPLETION_COMPLETE_PASS;
+            if (!$haspassgrade && ($isfail || $ispass)) {
+                // Any grade is required, so fail/pass states are considered completed.
+                $data->completionstate = COMPLETION_COMPLETE;
+            } else {
+                $data->completionstate = $completiondata->completionstate;
+            }
         }
 
         return $data;

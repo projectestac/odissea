@@ -52,7 +52,7 @@ Le fichier texte exemple peut aussi être utilisé pour des tests, puisqu’il e
 $string['infoprefix'] = 'Info :';
 $string['invalidtheme'] = 'Le thème « {$a} » n’est pas installé et sera ignoré.';
 $string['invalidupdatetype'] = 'Cette option ne peut pas être sélectionnée avec le type de dépôt choisi.';
-$string['invaliduserdata'] = 'Données invalides détectées pour l’utilisateur {$a}. Nettoyage automatique effectué.';
+$string['invaliduserdata'] = 'Données non valides détectées pour l’utilisateur {$a}. Nettoyage automatique effectué.';
 $string['linex'] = 'Ligne {$a}';
 $string['matchemail'] = 'Correspondance sur l’adresse de courriel';
 $string['nochanges'] = 'Aucune modification';

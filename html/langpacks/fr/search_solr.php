@@ -32,8 +32,8 @@ $string['errorsolr'] = 'Le moteur de recherche Solr a renvoyé une erreur : {$a
 $string['errorvalidatingschema'] = 'Erreur lors de la validation du schéma Solr : le champ {$a->fieldname} n’existe pas. Veuillez <a href="{$a->setupurl}">suivre ce lien</a> pour configurer les champs requis.';
 $string['extensionerror'] = 'L’extension PHP Apache Solr n’est pas installée. Veuillez consulter la documentation.';
 $string['fileindexing'] = 'Activer l’indexation des fichiers';
-$string['fileindexing_help'] = 'Si votre serveur Solr le supporte, cette fonctionnalité permet à Moodle de lui envoyer des fichiers à indexer.<br/>Après l’activation de cette option, vous devrez réindexer la totalité des contenus du site pour que tous les fichiers soient pris en compte.';
-$string['fileindexsettings'] = 'Réglages d\'\'indexation des fichiers';
+$string['fileindexing_help'] = 'Si votre serveur Solr le permet, cette fonctionnalité permet à Moodle de lui envoyer des fichiers à indexer.<br/>Après l’activation de cette option, vous devrez réindexer la totalité des contenus du site pour que tous les fichiers soient pris en compte.';
+$string['fileindexsettings'] = 'Réglages d’indexation des fichiers';
 $string['maxindexfilekb'] = 'Taille maximale des fichiers à indexer (kO)';
 $string['maxindexfilekb_help'] = 'Les fichiers plus gros que ce nombre de kilo-octets ne seront pas traités lors de l’indexation pour la recherche. Si 0 est indiqué, les fichiers de toutes tailles seront indexés.';
 $string['minimumsolr4'] = 'Une version de Solr 4.0 ou ultérieure est requise pour Moodle';

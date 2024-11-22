@@ -34,7 +34,7 @@ $string['availablefrom_help'] = 'A opção \'Permitir acesso de/até\' determina
 
 A diferença entre a opção \'Permitir acesso de/até\' e as configurações de disponibilidade da atividade é que estas permitem que os alunos vejam a descrição da atividade, ainda que fora das datas, enquanto que a opção \'Permitir acesso de/até\' impede o total acesso à atividade fora do intervalo de datas estabelecido.';
 $string['availableuntil'] = 'Permitir acesso até';
-$string['badavailabledates'] = 'Datas inválidas. Se ativar ambas as datas, a data de inicio deverá ser anterior à de fim.';
+$string['badavailabledates'] = 'Datas inválidas. Se ativar ambas as datas, a data de início deverá ser anterior à de fim.';
 $string['badgradelimits'] = 'Se definir uma nota mínima e máxima, a  máxima deve ser superior à mínima.';
 $string['completion_complete'] = 'deve estar concluída';
 $string['completion_fail'] = 'deve estar concluída com nota de reprovação';

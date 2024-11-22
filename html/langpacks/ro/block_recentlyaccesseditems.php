@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['moreitems'] = 'Afișează mai mulți itemi';
-$string['noitems'] = 'Nu există itemi recenți';
+$string['moreitems'] = 'Afișează mai mullte elemente';
+$string['noitems'] = 'Nu există elemente recente';
 $string['pluginname'] = 'Elemente accesate recent';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Blocul elemente accesate recent stochează informații despre articole pe care utilizatorul le-a accesat recent';
 $string['privacy:metadata:cmid'] = 'Identificatorul activității sau al resursei';
-$string['privacy:metadata:courseid'] = 'Cursul căruia îi aparține itemul';
+$string['privacy:metadata:courseid'] = 'Cursul căruia îi aparține elementul';
 $string['privacy:metadata:timeaccess'] = 'Ora la care ultimul utilizator a accesat elementul';
 $string['privacy:metadata:userid'] = 'Identificatorul utilizatorului care a accesat item-ul';
-$string['privacy:recentlyaccesseditemspath'] = 'Obiecte accesate recent';
+$string['privacy:recentlyaccesseditemspath'] = 'Elemente accesate recent';
 $string['recentlyaccesseditems:myaddinstance'] = 'Adăugați un nou bloc de elemente accesate recent în tabloul de bord';

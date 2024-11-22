@@ -160,9 +160,9 @@ $string['privacy:unknown'] = 'Necunoscut';
 $string['publishto'] = 'Difuzează la';
 $string['publishto_help'] = 'Există 3 opţiuni:
 
-* Dumneavoastră (ciornă) - Numai dumneavoastră si administratorii pot vedea această intrare
-* Oricine de pe acest site - Oricine este înregistrat pe acest site poate citi această intrare
-* Oricine din lume - Oricine, inclusiv vizitatorii, ar putea citi această intrare';
+* Dumneavoastră (ciornă) - Numai dumneavoastră si administratorii pot vedea această postare
+* Orice utilizator de pe acest site - Oricine este înregistrat pe acest site poate citi această postare
+* Orice persoană din lume - Oricine, inclusiv vizitatorii, ar putea citi această postare';
 $string['publishtocourse'] = 'Utilizatori care împart un curs cu time';
 $string['publishtocourseassoc'] = 'Membri ai cursului asociat';
 $string['publishtocourseassocparam'] = 'Membri ai {$a}';
@@ -170,8 +170,8 @@ $string['publishtogroup'] = 'Utilizatori care împart un grup cu tine';
 $string['publishtogroupassoc'] = 'Membrii grupului tău în cursul asociat';
 $string['publishtogroupassocparam'] = 'Membrii grupului tău în {$a}';
 $string['publishtonoone'] = 'Tu (ciornă)';
-$string['publishtosite'] = 'Oricine de pe acest site';
-$string['publishtoworld'] = 'Oricine';
+$string['publishtosite'] = 'Orice utilizator de pe acest site';
+$string['publishtoworld'] = 'Orice persoană din lume';
 $string['readfirst'] = 'Citiți aici prima dată';
 $string['relatedblogentries'] = 'Postări blog asociate';
 $string['retrievedfrom'] = 'Adus de la';

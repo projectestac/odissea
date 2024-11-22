@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allattemptscount'] = 'Nombre total de resultats qualificats completats';
 $string['discriminative_efficiency'] = 'Eficiència discriminativa';
 $string['downloadeverything'] = 'Baixa l\'informe complet com a';
 $string['facility'] = 'Índex de facilitat';
 $string['maxgrade'] = 'Qualificació màxima que es pot assolir';
+$string['questionname'] = 'Nom de la pregunta';
+$string['statistics'] = 'Estadístiques';
+$string['statsoverview'] = 'Resum';

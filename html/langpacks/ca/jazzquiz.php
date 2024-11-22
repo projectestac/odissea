@@ -30,6 +30,7 @@ $string['a_out_of_b_voted'] = 'Han votat {$a->a} / {$a->b}';
 $string['a_responses'] = '{$a} respostes';
 $string['a_students_answered'] = '<b>{$a}</b> estudiants van respondre com a mínim una pregunta.';
 $string['a_students_joined_quiz'] = '<b>{$a}</b> estudiants es van unir al qüestionari.';
+$string['add'] = 'Afegeix';
 $string['add_to_quiz'] = 'Afegeix al qüestionari';
 $string['allow_guests'] = 'Permet convidats';
 $string['anonymous_answers'] = 'Respostes anònimes (Es pot veure l\'assistència)';

@@ -1,0 +1,41 @@
+<div class="photo-overlay tiles-base-transparent05-bg" {{#photourl}} style="background-image: url({{photourl}});" {{/photourl}}></div>
+{{^photourl}}
+    {{^is_label}}
+        <div class="tileiconcontainer activityiconcontainer {{{purpose}}}" id="subtileicon_single_{{cmid}}">{{>format_tiles/tileicon}}</div>
+    {{/is_label}}
+{{/photourl}}
+{{#is_label}}
+    {{#clickable}}
+    {{! clickable really means user is allowed to see content - }}
+        <div class="label_content {{extraclasses}}"
+              id="label_content_{{cmid}}">{{{content}}}</div>
+    {{/clickable}}
+    {{#availabilitymessage}}
+        {{{availabilitymessage}}}
+    {{/availabilitymessage}}
+{{/is_label}}
+
+{{^is_label}}
+    {{^editing}}
+        <div class="activityname">
+            {{#completionInUseForCm}}
+                {{#completionenabled}}
+                    <div class="completion-spacer float-right"></div>
+                {{/completionenabled}}
+            {{/completionInUseForCm}}
+            <h5>{{{activityname}}}</h5>
+        </div>
+    {{/editing}}
+
+    {{#editing}}
+        <div class="editable-title">
+            {{#modtitle_inplaceeditable}}
+                {{>format_tiles/inplace_editable}}
+            {{/modtitle_inplaceeditable}}
+            {{^modtitle_inplaceeditable}}
+                {{{activityname}}}
+            {{/modtitle_inplaceeditable}}
+        </div>
+    {{/editing}}
+
+{{/is_label}}

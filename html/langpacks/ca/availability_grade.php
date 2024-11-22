@@ -37,6 +37,7 @@ $string['missing'] = '(activitat perduda)';
 $string['option_max'] = 'ha de ser <';
 $string['option_min'] = 'ha de ser ≥';
 $string['pluginname'] = 'Restricció per qualificacions';
+$string['privacy:metadata'] = 'El complement de restricció per qualificacions no emmagatzema cap dada personal.';
 $string['requires_any'] = 'Tingueu una qualificació en <strong>{$a}</strong>';
 $string['requires_max'] = 'Tingueu una puntuació apropiada en <strong>{$a}</strong>';
 $string['requires_min'] = 'Aconseguiu la puntuació requerida en <strong>{$a}</strong>';

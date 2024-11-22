@@ -101,7 +101,7 @@ $string['meetingtype_help'] = '<p> Une réunion de type public en est une où to
 <p> Une réunion de type privée en est une où seuls les utilisateurs et les participants enregistrés peuvent entrer. La page de connexion ne permet pas aux invités de se connecter. Avec les réunions privées, la réunion ne démarre pas avant que le présentateur ou l’hôte de la réunion se joigne à la réunion.</p>
 
 <p>
-Si vous créez une réunion privée, il est toujours recommandé d’affecter à au moins 1 hôte ou présentateur qui sera présent à la réunion; parce que les utilisateurs avec le rôle du participant ne pourront pas participer à la réunion (les chat/audio/vidéo seront bloqués) à moins qu’un utilisateur ayant le rôle d’hôte ou de présentateur ait déjà rejoint la réunion.
+Si vous créez une réunion privée, il est toujours recommandé d’affecter au moins 1 hôte ou présentateur qui sera présent à la réunion ; parce que les utilisateurs avec le rôle de participant ne pourront pas participer à la réunion (les chat/audio/vidéo seront bloqués) à moins qu’un utilisateur ayant le rôle d’hôte ou de présentateur ait déjà rejoint la réunion.
 </p>
 
 <p>
@@ -161,7 +161,7 @@ $string['recordinghdr'] = 'Enregistrements';
 $string['removeparticipant'] = 'Enlever';
 $string['removepresenter'] = 'Enlever';
 $string['roletoassign'] = 'Rôle à attribuer';
-$string['samemeettime'] = 'Heure de réunion invalide';
+$string['samemeettime'] = 'Heure de réunion non valide';
 $string['savechanges'] = 'Enregistrer';
 $string['selectparticipants'] = 'Attribuer des rôles';
 $string['settingblurb'] = '<center><img src = "{$a->image}" /> </center><br />

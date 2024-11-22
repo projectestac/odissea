@@ -33,11 +33,13 @@
  *    l'step és read-only.
  * **/
 
-class qtype_wirisstep {
-    const MAX_ATTEMPS_SHORTANSWER_WIRIS = 2;
+defined('MOODLE_INTERNAL') || die();
 
-    private $step;
-    private $step_id;
+class qtype_wirisstep {
+    const MAX_ATTEMPS_SHORTANSWER_WIRIS = 5;
+
+    private ?question_attempt_step $step;
+    private $stepid;
     private $extraprefix;
 
     public function __construct() {
@@ -45,9 +47,11 @@ class qtype_wirisstep {
     }
 
     public function load($step) {
-        $notReadOnly = !($step instanceof question_attempt_step_read_only);
-        $notAdapterOfReadOnly = !($step instanceof question_attempt_step_subquestion_adapter_wiris && $step->is_adapter_of_read_only());
-        if ($notReadOnly && $notAdapterOfReadOnly) {
+        $notreadonly = !($step instanceof question_attempt_step_read_only);
+        $notadapterofreadonly =
+            !($step instanceof question_attempt_step_subquestion_adapter_wiris && $step->is_adapter_of_read_only());
+
+        if ($notreadonly && $notadapterofreadonly) {
             $this->step = $step;
             // It is a regrade or the first attempt.
             try {
@@ -58,16 +62,17 @@ class qtype_wirisstep {
                 $this->step = null;
             }
         }
+
         $s = var_export($step, true);
         if (isset($step->get_id)) {
             // Moodle 2.3 or superior.
-            $this->step_id = $step->get_id();
+            $this->stepid = $step->get_id();
         } else {
             // Moodle 2.2.
             if (preg_match("/'id' *=> *'(.*)'/", $s, $matches)) {
-                $this->step_id = $matches[1];
+                $this->stepid = $matches[1];
             } else {
-                $this->step_id = 0;
+                $this->stepid = 0;
             }
         }
         if (preg_match("/'extraprefix' *=> *'(.*)'/", $s, $matches)) {
@@ -86,14 +91,14 @@ class qtype_wirisstep {
      * @throws dml_exception
      */
     public function set_var($name, $value, $subquesbool = true) {
-        $name = $this->trim_name($name);
+        $name = $this->trim_name($name, $subquesbool);
 
         if ($subquesbool && $this->step != null) {
             $this->step->set_qt_var($name, $value);
             return;
         }
 
-        if (!isset($this->step_id) || $this->step_id == 0) {
+        if (!isset($this->stepid) || $this->stepid == 0) {
             // It doees not exist, do not even try to find in the db.
             return null;
         }
@@ -102,10 +107,10 @@ class qtype_wirisstep {
 
         $name = $this->get_step_var_internal($name, $subquesbool);
 
-        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
+        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->stepid, 'name' => $name), 'value');
         if ($gc == null) {
             $gc = new stdClass();
-            $gc->attemptstepid = $this->step_id;
+            $gc->attemptstepid = $this->stepid;
             $gc->name = $name;
             $gc->value = $value;
             $DB->insert_record('question_attempt_step_data', $gc);
@@ -114,7 +119,7 @@ class qtype_wirisstep {
                 'question_attempt_step_data',
                 'value',
                 $value,
-                array('attemptstepid' => $this->step_id, 'name' => $name)
+                array('attemptstepid' => $this->stepid, 'name' => $name)
             );
         }
     }
@@ -156,19 +161,18 @@ class qtype_wirisstep {
         return strpos($cachedresponses, $responsehash) !== false;
     }
 
-    private function trim_name(string $name) {
-        while ($this->get_name_length($name) > 32) {
+    private function trim_name(string $name, bool $subquesbool) {
+        while ($this->get_name_length($name, $subquesbool) > 32) {
             $name = substr($name, 0, -1);
         }
-
         return $name;
     }
 
-    private function get_name_length(string $name) {
+    private function get_name_length(string $name, bool $subquesbool) {
         return strlen(
             $this->step instanceof question_attempt_step_subquestion_adapter ?
                 $this->step->add_prefix($name) :
-                $name
+                $this->get_step_var_internal($name, $subquesbool)
         );
     }
 
@@ -179,21 +183,16 @@ class qtype_wirisstep {
             $DB = $this->get_db();
         }
     }
-    /**
-     *
-     * @param type $name
-     * @param type $subquesbool whether the variable is from the subquestion or the parent (only cloze).
-     * @return null
-     */
-    public function get_var($name, $subquesbool = true) {
-        $name = $this->trim_name($name);
+
+    public function get_var(string $name, bool $subquesbool = true) {
+        $name = $this->trim_name($name, $subquesbool);
 
         if ($subquesbool && $this->step != null) {
             $value = $this->step->get_qt_var($name);
             return $value;
         }
 
-        if (!isset($this->step_id) || $this->step_id == 0) {
+        if (!isset($this->stepid) || $this->stepid == 0) {
             // It doees not exist, do not even try to find in the db.
             return null;
         }
@@ -202,7 +201,7 @@ class qtype_wirisstep {
 
         $name = $this->get_step_var_internal($name, $subquesbool);
 
-        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
+        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->stepid, 'name' => $name), 'value');
         if ($gc == null) {
             $r = null;
         } else {
@@ -213,7 +212,7 @@ class qtype_wirisstep {
     }
 
     private function get_step_var_internal($name, $subquesbool) {
-        if ($subquesbool && strlen($this->extraprefix) > 0) {
+        if ($subquesbool && isset($this->extraprefix) && strlen($this->extraprefix) > 0) {
             // The prefix is needed when it is a subquestion of a cloze
             // (multianswer) question type.
             if (substr($name, 0, 2) === '!_') {
@@ -252,17 +251,38 @@ class qtype_wirisstep {
         if (is_null($c)) {
             return false;
         }
-        return $c >= self::MAX_ATTEMPS_SHORTANSWER_WIRIS;
+
+        $isreached = $c >= self::MAX_ATTEMPS_SHORTANSWER_WIRIS;
+
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
+        if ($islogmodeenabled) {
+            $errormessage = 'WIRISQUIZZES ATTEMPT LIMIT REACHED FOR STEP WITH ID ' . 
+             ($this->step != null ? $this->step->get_id() : $this->stepid);
+            // @codingStandardsIgnoreLine
+            error_log($errormessage);            
+        }
+        
+        return $isreached;
     }
 
     /**
      * Increment number of failed attempts
      */
-    public function inc_attempts() {
+    public function inc_attempts(moodle_exception $e) {
         $c = $this->get_var('_gc', false);
         if (is_null($c)) {
             $c = 0;
         }
+
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
+        if ($islogmodeenabled) {
+            $errormessage = 'WIRISQUIZZES ATTEMPT ERROR --- INCREASING ATTEMPT COUNT TO ' . ($c + 1) . ' FOR STEP WITH ID ' . 
+             ($this->step != null ? $this->step->get_id() : $this->stepid) . PHP_EOL .
+             'EXCEPTION: ' . $e->getMessage();
+            // @codingStandardsIgnoreLine
+            error_log($errormessage);            
+        }
+
         $this->set_var('_gc', $c + 1, false);
     }
 

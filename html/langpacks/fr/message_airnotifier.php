@@ -54,7 +54,7 @@ $string['messageproviderslow'] = 'Seules quelques notifications mobiles sont act
 $string['moodleappsportallimitswarning'] = 'Veuillez prendre note que le nombre d’appareils pouvant recevoir des notifications dépend de votre abonnement pour l’app Moodle. Pour plus d’informations, visitez le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['nodevices'] = 'Aucun appareil enregistré. Les appareils apparaîtront automatiquement une fois l’app Moodle installée et ce site ajouté.';
 $string['noemailevernotset'] = '$CFG->noemailever désactivé';
-$string['noemaileverset'] = '$CFG->noemailever est activé dans le fichier config.php. Vous devez déactiver ce réglage ou le supprimer.';
+$string['noemaileverset'] = '$CFG->noemailever est activé dans le fichier config.php. Vous devez désactiver ce réglage ou le supprimer.';
 $string['nopermissiontomanagedevices'] = 'Vous n’avez pas les permissions requises pour gérer les appareils.';
 $string['notconfigured'] = 'Le serveur Airnotifier n’a pas été configuré. Les notifications « push » ne peuvent donc pas être envoyées.';
 $string['notificationsserverconfiguration'] = 'Configuration du serveur de notifications (Airnotifier)';

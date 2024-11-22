@@ -14,15 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * This class loads the environment that MathType filter needs to work.
- *
- * @package    filter
- * @subpackage wiris
- * @copyright  WIRIS Europe (Maths for more S.L)
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 defined('MOODLE_INTERNAL') || die();
 
 // This classes are shared between Wiris Quizzes and MathType
@@ -39,37 +30,103 @@ if (!class_exists('moodledbcache')) {
     require_once($CFG->dirroot . '/filter/wiris/classes/moodledbcache.php');
 }
 
+require_once($CFG->dirroot . '/lib/editorlib.php');
+
+/**
+ * This class loads the environment that MathType filter needs to work.
+ *
+ * @package    filter_wiris
+ * @subpackage wiris
+ * @copyright  WIRIS Europe (Maths for more S.L)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class filter_wiris_pluginwrapper {
+
+
+    /**
+     * @var bool $isinit Indicates whether the initialization is done.
+     */
     private $isinit = false;
+
+    /**
+     * @var bool $installed Indicates whether the plugin is installed.
+     */
     private $installed = false;
+
+    /**
+     * @var mixed $moodleconfig The Moodle configuration instance.
+     */
     private $moodleconfig;
+
+    /**
+     * @var mixed $instance The instance of the plugin.
+     */
     private $instance;
+
+    /**
+     * @var mixed $pluginwrapperconfig The static configuration for the plugin wrapper.
+     */
     private static $pluginwrapperconfig;
 
+    /**
+     * Sets the configuration for the plugin wrapper.
+     *
+     * @param mixed $config The configuration to be set.
+     * @return void
+     */
     public static function set_configuration($config) {
         self::$pluginwrapperconfig = $config;
     }
 
+    /**
+     * Constructor for the PluginWrapper class.
+     */
     public function __construct() {
         $this->init();
     }
 
+    /**
+     * Begins the execution of the plugin wrapper.
+     *
+     * This method is responsible for starting the execution of the plugin wrapper by calling the `start()` method of the `com_wiris_system_CallWrapper` class.
+     */
     public function begin() {
         com_wiris_system_CallWrapper::getInstance()->start();
     }
 
+    /**
+     * Stops the WIRIS system call wrapper.
+     */
     public function end() {
         com_wiris_system_CallWrapper::getInstance()->stop();
     }
 
+    /**
+     * Check if the WIRIS plugin is installed.
+     *
+     * @return bool Returns true if the WIRIS plugin is installed, false otherwise.
+     */
     public function is_installed() {
         $editorplugin = self::get_wiris_plugin();
         return !empty($editorplugin);
     }
 
+    /**
+     * Initializes the plugin wrapper.
+     *
+     * This method initializes the plugin wrapper by performing the following steps:
+     * 1. Checks if the plugin wrapper has already been initialized.
+     * 2. Initializes the Haxe environment by including the necessary files.
+     * 3. Starts the Haxe environment.
+     * 4. Creates a PluginBuilder object with Moodle specific configuration.
+     * 5. Adds configuration updaters to the PluginBuilder.
+     * 6. Sets the file cache and formula cache objects for the PluginBuilder.
+     * 7. Stops the Haxe environment.
+     *
+     * @return void
+     */
     private function init() {
         if (!$this->isinit) {
-
             $this->isinit = true;
 
             global $CFG;
@@ -101,27 +158,66 @@ class filter_wiris_pluginwrapper {
         }
     }
 
+    /**
+     * Retrieves the instance of the plugin.
+     *
+     * This method initializes the plugin and returns its instance.
+     *
+     * @return mixed The instance of the plugin.
+     */
     public function get_instance() {
         $this->init();
         return $this->instance;
     }
 
+    /**
+     * Retrieves the status of the CAS authentication plugin.
+     *
+     * This method checks if the CAS authentication plugin is enabled or not.
+     * It forces the configuration to load and retrieves the value of the 'wiriscasenabled' property.
+     *
+     * @return bool The status of the CAS authentication plugin.
+     */
     public function was_cas_enabled() {
         // Force configuration load.
         $this->get_instance()->getConfiguration()->getProperty('wiriscasenabled', null);
         return $this->moodleconfig->wascasenabled;
     }
 
+    /**
+     * Returns whether the editor was enabled or not.
+     *
+     * @return bool The status of the editor.
+     */
     public function was_editor_enabled() {
         // Force configuration load.
         $this->get_instance()->getConfiguration()->getProperty('wiriseditorenabled', null);
         return $this->moodleconfig->waseditorenabled;
     }
 
+    /**
+     * Retrieves the status of the chemical editor.
+     *
+     * This method checks if the chemical editor was enabled or not.
+     *
+     * @return bool The status of the chemical editor.
+     */
     public function was_chem_editor_enabled() {
         // Force configuration load.
         $this->get_instance()->getConfiguration()->getProperty('wirischemeditorenabled', null);
         return $this->moodleconfig->waschemeditorenabled;
+    }
+
+    /**
+     * Checks whether the LaTeX parsing feature is enabled.
+     *
+     * This method retrieves the configuration setting for LaTeX.
+     *
+     * @return bool True if LaTeX parsing is enabled, false otherwise.
+     */
+    public function wiris_editor_parse_latex() {
+        $value = $this->get_instance()->getConfiguration()->getProperty('wiriseditorparselatex', null);
+        return ($value == "true") ? true : false;
     }
 
     /**
@@ -198,6 +294,82 @@ class filter_wiris_pluginwrapper {
         return false;
     }
 
+    /**
+     * Retrieves information about all integrated WIRIS plugins.
+     *
+     * This function gathers and returns details about the WIRIS plugins for different text editors
+     * (Atto, TinyMCE, Tiny) configured in the system. It checks if the plugins exist, and if so,
+     * it retrieves their version, release information, and their paths.
+     *
+     * @return array An array containing information about all available WIRIS plugins,
+     *               including their URL, path, version, and release.
+     */
+    public static function get_wiris_plugins_information() {
+        global $CFG;
+        // Initialize an array to store plugin information.
+        $plugins = [];
+
+        // Loop over atto, tinymce (legacy), and tiny (current) in the order defined by the configuration.
+        $editors = explode(',', $CFG->texteditors);
+        // Before loop, check if exists filter
+        $plugin = new stdClass();
+        $filterrelativepath = '/filter/wiris';
+        require($CFG->dirroot . $filterrelativepath . '/version.php');
+        if (isset($plugin->release) || $plugin->maturity == MATURITY_BETA) {
+            $plugins['filter']['url'] = $CFG->wwwroot . $filterrelativepath;
+            $plugins['filter']['path'] = $CFG->dirroot . $filterrelativepath;
+            $plugins['filter']['version'] = isset($plugin->version) ? $plugin->version : '';
+            $plugins['filter']['release'] = isset($plugin->release) ? $plugin->release : '';
+        }
+
+        foreach ($editors as $editor) {
+            if ($editor == 'atto') {
+                $relativepath = '/lib/editor/atto/plugins/wiris';
+                if (file_exists($CFG->dirroot . $relativepath . '/version.php')) {
+                    $plugin = new stdClass();
+                    require($CFG->dirroot . $relativepath . '/version.php');
+
+                    $plugins['atto']['url'] = $CFG->wwwroot . $relativepath;
+                    $plugins['atto']['path'] = $CFG->dirroot . $relativepath;
+                    $plugins['atto']['version'] = isset($plugin->version) ? $plugin->version : '';
+                    $plugins['atto']['release'] = isset($plugin->release) ? $plugin->release : '';
+                }
+            } else if ($editor == 'tinymce') {
+                if ($CFG->version >= 2012120300) { // Location for Moodle 2.4 onwards.
+                    $relativepath = '/lib/editor/tinymce/plugins/tiny_mce_wiris/tinymce';
+                } else { // Location for Moodle < 2.4.
+                    require_once($CFG->dirroot . '/lib/editor/tinymce/lib.php');
+                    $tiny = new tinymce_texteditor();
+                    $tinyversion = $tiny->version;
+                    $relativepath = '/lib/editor/tinymce/tiny_mce/' . $tinyversion . '/plugins/tiny_mce_wiris';
+                }
+
+                if (file_exists($CFG->dirroot .  $relativepath . '/../version.php')) {
+                    $plugin = new stdClass();
+                    require($CFG->dirroot .  $relativepath . '/../version.php');
+
+                    $plugins['tinymce']['url'] = $CFG->wwwroot . $relativepath;
+                    $plugins['tinymce']['path'] = $CFG->dirroot . $relativepath;
+                    $plugins['tinymce']['version'] = isset($plugin->version) ? $plugin->version : '';
+                    $plugins['tinymce']['release'] = isset($plugin->release) ? $plugin->release : '';
+                }
+            } else if ($editor == 'tiny') {
+                $relativepath = '/lib/editor/tiny/plugins/wiris';
+                if (file_exists($CFG->dirroot . $relativepath . '/version.php')) {
+                    $plugin = new stdClass();
+                    require($CFG->dirroot . $filterrelativepath . '/version.php');
+
+                    $plugins['tiny']['url'] = $CFG->wwwroot . $relativepath;
+                    $plugins['tiny']['path'] = $CFG->dirroot . $relativepath;
+                    $plugins['tiny']['version'] = isset($plugin->version) ? $plugin->version : '';
+                    $plugins['tiny']['release'] = isset($plugin->release) ? $plugin->release : '';
+                }
+            }
+        }
+
+        // Return the array containing information about all available plugins
+        return $plugins;
+    }
     /**
      * Since version 2016030200 configuration.ini file is
      * has been moved from editor plugin folder to filte folder.

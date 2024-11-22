@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['adminview'] = 'Pagina Administrator';
 $string['allcourses'] = 'Utilizatorul Administrator vede toate cursurile';
 $string['configadminview'] = 'Indiferent dacă se afișează toate cursurile din blocul Cursuri sau numai cursurile la care este înscris administratorul.';
-$string['confighideallcourseslink'] = 'Eliminați linkul „Toate cursurile” din lista cursurilor. (Această setare nu afectează vizualizarea administratorului.)';
+$string['confighideallcourseslink'] = 'Eliminați linkul „Toate cursurile” din lista cursurilor. (Această setare nu afectează ceea ce vizualizează administratorul.)';
 $string['course_list:addinstance'] = 'Adăugați un nou bloc cursuri';
 $string['course_list:myaddinstance'] = 'Adăugați un nou bloc cursuri în Tabloul de bord';
 $string['hideallcourseslink'] = 'Ascundeți linkul „Toate cursurile”';

@@ -92,7 +92,6 @@ $string['old_messages'] = 'Mitteilung gesendet';
 $string['on_time'] = 'Pünktlich';
 $string['options'] = 'Optionen';
 $string['pluginname'] = 'Analytics-Diagramme';
-$string['privacy:metadata'] = 'Der AG-Block zeigt nur existierende Kalenderdaten an.';
 $string['ratio'] = 'Verhältnis';
 $string['red_tooltip'] = 'In der letzten Woche wurde auf kein Modul zugegriffen.';
 $string['remove_all'] = 'Alle löschen';

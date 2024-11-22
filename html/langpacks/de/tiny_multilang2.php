@@ -50,8 +50,10 @@ $string['language_options_desc'] = 'Wählen Sie Optionen für das Dropdown-Menü
                               <u>https://www.w3schools.com/tags/ref_lingual_codes.asp</u></a></small>';
 $string['language_setting'] = 'Einstellungen der Sprachtaste';
 $string['languageoptions'] = 'Sprache';
-$string['multilang2:desc'] = 'Unterstützung zum Hinzufügen von sprachabhängigen Inhalten. Der Filter "Multi-Language-Content (v2)" muss aktiviert sein.';
+$string['multilang2:desc'] = 'Multilang-Tags für Inhalt hinzufügen';
+$string['multilang2:langTagsInSelection'] = 'Der ausgewählte Text enthält Sprachtags. Klicken Sie bitte auf einen Tag, um ihn auszuwählen.';
 $string['multilang2:language'] = 'Sprache';
+$string['multilang2:multiBlockElements'] = 'Der ausgewählte Text erstreckt sich über mehrere Absätze/Blockelemente. Bitte wählen Sie nur einen Absatz oder ein Blockelement aus.';
 $string['multilang2:other'] = 'Andere';
 $string['multilang2:removetag'] = 'Sprach-Tag entfernen';
 $string['multilang2:viewlanguagemenu'] = 'Sprachen als Dropdown-Menü im Editor anzeigen';

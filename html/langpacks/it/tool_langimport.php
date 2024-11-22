@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Impossibile connettersi al server di download. Non è possibile installare o aggiornare automaticamente i language pack. Si prega di scaricare i file ZIP appropriati da <a href="{$a->src}">{$a->src}</a> e decomprimerli manualmente nella cartella dei dati <code>{$a- >dest}</code>';
+$string['downloadnotavailable'] = 'Impossibile connettersi al server di download. Non è possibile installare o aggiornare automaticamente i language pack. Si prega di scaricare i file ZIP appropriati da <a href="{$a->src}">{$a->src}</a> e decomprimerli manualmente nella cartella dei dati <code>{$a->dest}</code>';
 $string['install'] = 'Installa i Language Pack selezionati';
 $string['installedlangs'] = 'Language pack installati';
 $string['installfailed'] = 'L\'installazione dei language pack non è andata a buon fine.';

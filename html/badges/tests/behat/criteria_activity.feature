@@ -24,16 +24,18 @@ Feature: Award badges based on activity completion
       | contextlevel | reference | name           |
       | Course       | C1        | Test questions |
     And the following "questions" exist:
-      | questioncategory | qtype     | name           | questiontext              |
-      | Test questions   | truefalse | First question | Answer the first question |
+      | questioncategory | qtype     | name            | questiontext               |
+      | Test questions   | truefalse | First question  | Answer the first question  |
+      | Test questions   | truefalse | Second question | Answer the second question |
     And the following "activities" exist:
-      | activity   | name             | course | idnumber | attempts | gradepass | completion | completionpassgrade | completionusegrade |
-      | quiz       | Test quiz name 1 | C1     | quiz1    | 2        | 5.00      | 2          | 1                   | 1                  |
-      | quiz       | Test quiz name 2 | C1     | quiz2    | 2        | 5.00      | 2          | 0                   | 1                  |
-    And quiz "Test quiz name 1" contains the following questions:
-      | question       | page |
-      | First question | 1    |
-    And quiz "Test quiz name 2" contains the following questions:
+      | activity   | name                 | course | idnumber | attempts | gradepass | completion | completionusegrade | completionpassgrade |
+      | quiz       | Test quiz pass grade | C1     | quiz1    | 2        | 50        | 2          | 1                  | 1                   |
+      | quiz       | Test quiz only grade | C1     | quiz2    | 1        | 60        | 2          | 1                  | 0                   |
+    And quiz "Test quiz only grade" contains the following questions:
+      | question        | page |
+      | First question  | 1    |
+      | Second question | 1    |
+    And quiz "Test quiz pass grade" contains the following questions:
       | question       | page |
       | First question | 1    |
     And the following "core_badges > Badge" exists:
@@ -52,23 +54,56 @@ Feature: Award badges based on activity completion
       | image       | badges/tests/behat/badge.png |
     And I am on the "Course 1" course page logged in as teacher1
 
-  Scenario: Student does not earn a badge using activity completion when does not get passing grade
-    Given I navigate to "Badges" in current page administration
+  Scenario: Student earns a badge using activity completion when passing grade is not required
+    # Pass grade for student1.
+    Given user "student1" has attempted "Test quiz only grade" with responses:
+      | slot | response |
+      |   1  | True     |
+      |   2  | True     |
+    # Fail grade for student2.
+    And user "student2" has attempted "Test quiz only grade" with responses:
+      | slot | response |
+      |   1  | True     |
+      |   2  | False    |
+    And I am on the "Course 1" course page logged in as teacher1
+    And I navigate to "Badges" in current page administration
     And I press "Manage badges"
     And I follow "Course Badge 1"
     And I select "Criteria" from the "jump" singleselect
     And I set the field "type" to "Activity completion"
-    And I set the field "Quiz - Test quiz name 1" to "1"
+    And I set the field "Quiz - Test quiz only grade" to "1"
+    And I press "Save"
+    And I press "Enable access"
+    And I press "Continue"
+    Then I should see "Recipients (2)"
+    And I select "Recipients (2)" from the "jump" singleselect
+    And I should see "Student 1"
+    And I should see "Student 2"
+
+  Scenario: Student does not earn a badge using activity completion when does not get passing grade
+    Given user "student1" has attempted "Test quiz pass grade" with responses:
+      | slot | response |
+      |   1  | False    |
+    And user "student2" has attempted "Test quiz pass grade" with responses:
+      | slot | response |
+      |   1  | False    |
+    And I am on the "Course 1" course page logged in as teacher1
+    And I navigate to "Badges" in current page administration
+    And I press "Manage badges"
+    And I follow "Course Badge 1"
+    And I select "Criteria" from the "jump" singleselect
+    And I set the field "type" to "Activity completion"
+    And I set the field "Quiz - Test quiz pass grade" to "1"
     And I press "Save"
     And I press "Enable access"
     And I press "Continue"
     And I should see "Recipients (0)"
-    # Pass grade for student1. Activity is considered complete because student1 got a passing grade.
-    And user "student1" has attempted "Test quiz name 1" with responses:
+    # Pass grade for student1.
+    When user "student1" has attempted "Test quiz pass grade" with responses:
       | slot | response |
       | 1    | True     |
-    # Fail grade for student2. Activity is considered incomplete because student2 got a failing grade.
-    And user "student2" has attempted "Test quiz name 1" with responses:
+    # Fail grade for student2.
+    And user "student2" has attempted "Test quiz pass grade" with responses:
       | slot | response |
       | 1    | False    |
     And I navigate to "Badges > Manage badges" in current page administration
@@ -78,47 +113,29 @@ Feature: Award badges based on activity completion
     And I should see "Student 1"
     And I should not see "Student 2"
 
-  Scenario: Students with any grades in an activity will receive a badge if the completion condition is set to receive any grade
-    Given I navigate to "Badges" in current page administration
-    And I press "Manage badges"
-    And I follow "Course Badge 2"
-    And I select "Criteria" from the "jump" singleselect
-    And I set the field "type" to "Activity completion"
-    And I set the field "Quiz - Test quiz name 2" to "1"
-    And I press "Save"
-    And I press "Enable access"
-    And I press "Continue"
-    # Pass grade for student1.
-    And user "student1" has attempted "Test quiz name 2" with responses:
-      | slot | response |
-      | 1    | True     |
-    # Fail grade for student2. Activity is considered complete even if student2 got a failing grade.
-    And user "student2" has attempted "Test quiz name 2" with responses:
-      | slot | response |
-      | 1    | False    |
-    And I navigate to "Badges > Manage badges" in current page administration
-    And I follow "Course Badge 2"
-    Then I should see "Recipients (2)"
-    And I select "Recipients (2)" from the "jump" singleselect
-    And I should see "Student 1"
-    And I should see "Student 2"
-
   Scenario: Previously graded pass/fail students should earn a badge after enabling a badge
-    # Pass grade for student1.
-    Given user "student1" has attempted "Test quiz name 1" with responses:
+    Given user "student1" has attempted "Test quiz pass grade" with responses:
       | slot | response |
-      | 1    | True     |
-    # Fail grade for student2.
-    And user "student2" has attempted "Test quiz name 1" with responses:
+      |   1  | False    |
+    And user "student2" has attempted "Test quiz pass grade" with responses:
       | slot | response |
-      | 1    | False    |
+      |   1  | False    |
+    And I am on the "Course 1" course page logged in as teacher1
     And I navigate to "Badges" in current page administration
     And I press "Manage badges"
     And I follow "Course Badge 1"
     And I select "Criteria" from the "jump" singleselect
     And I set the field "type" to "Activity completion"
-    And I set the field "Quiz - Test quiz name 1" to "1"
+    And I set the field "Quiz - Test quiz pass grade" to "1"
     And I press "Save"
+    # Pass grade for student1.
+    And user "student1" has attempted "Test quiz pass grade" with responses:
+      | slot | response |
+      | 1    | True     |
+    # Fail grade for student2.
+    And user "student2" has attempted "Test quiz pass grade" with responses:
+      | slot | response |
+      | 1    | False    |
     # Enable badge access once students have completed the activity.
     When I press "Enable access"
     And I press "Continue"

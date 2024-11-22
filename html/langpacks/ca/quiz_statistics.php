@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actualresponse'] = 'Resposta real';
 $string['allattempts'] = 'tots els intents';
 $string['allattemptsavg'] = 'Qualificació mitjana de tots els intents';
-$string['allattemptscount'] = 'Nombre total d\'intents qualificats complets';
+$string['allattemptscount'] = 'Nombre total d\'intents qualificats completats';
 $string['analysisnameonly'] = '"{$a->name}"';
 $string['analysisno'] = '({$a->number}) "{$a->name}"';
 $string['analysisnovariant'] = '({$a->number}) "{$a->name}" variant {$a->variant}';

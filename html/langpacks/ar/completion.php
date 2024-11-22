@@ -37,7 +37,7 @@ $string['activityaggregation_any'] = 'أي أنشطة محددة يتم إكما
 $string['activitycompletion'] = 'إكمال النشاط';
 $string['activitycompletionupdated'] = 'تم حفظ التغييرات';
 $string['activitygradenotrequired'] = 'الدرجة غير مطلوبة';
-$string['activitygradetopassnotset'] = 'لم يتم ضبط درجة نجاح صحيحة لهذا النشاط. يمكن ضبطها في مقطع الدرجة من إعدادات النشاط.';
+$string['activitygradetopassnotset'] = 'لم يتم ضبط درجة نجاح صحيحة لهذا النشاط. يمكن ضبطها في قسم الدرجة من إعدادات النشاط.';
 $string['affectedactivities'] = 'ستؤثر التغييرات على الأنشطة أو الموارد <b>{$a}</b> الآتية:';
 $string['aggregationmethod'] = 'طريقة الإجمال';
 $string['all'] = 'الكل';
@@ -54,7 +54,7 @@ $string['bulkcompletiontracking_help'] = '<b>بلا</b>: لا تشير إلى ا
 <b>مع حالة (حالات)</b>: عرض النشاط أنها كاملة عندما يتم استيفاء الشروط';
 $string['checkactivity'] = 'مربع اختيار النشاط / المورد: {$a}';
 $string['checkall'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد';
-$string['checkallsection'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد في المقطع الآتي: {$a}';
+$string['checkallsection'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد في القسم الآتي: {$a}';
 $string['completeactivity'] = 'إكمال النشاط';
 $string['completed'] = 'منتهٍ';
 $string['completedunlocked'] = 'خيارات الإكمال غير مؤمنة';

@@ -86,15 +86,25 @@ class qtype_essaywiris_format_replace_cas_renderer extends qtype_essay_format_re
     }
 
     public function response_area_input($name, question_attempt $qa, question_attempt_step $step, $lines, $context) {
-        $name = $qa->get_qt_field_name('answer');
+        $inputname = $qa->get_qt_field_name($name);
         $atts = array(
             'type' => 'hidden',
             'value' => '',
-            'name' => $name,
-            'id' => $name,
+            'name' => $inputname,
+            'id' => $name . '_id',
         );
-        $empty = html_writer::empty_tag('input', $atts);
-        return $empty;
+
+        $form = html_writer::empty_tag('input', $atts);
+
+        $answerformatatts = array(
+            'type' => 'hidden',
+            'value' => FORMAT_PLAIN,
+            'name' => $inputname . 'format',
+        );
+
+        $form .= html_writer::empty_tag('input', $answerformatatts);
+
+        return $form;
     }
 
     protected function class_name() {

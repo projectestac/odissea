@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['char'] = 'A';
+$string['save'] = 'Desa el paràmetre';

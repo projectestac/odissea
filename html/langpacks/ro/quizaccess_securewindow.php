@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Regula de acces la testul de tipul securitate JavaScript';
+$string['pluginname'] = 'Regulă de acces la testul de tipul securitate JavaScript';
 $string['popupwithjavascriptsupport'] = 'Fereastră Pop-up pe ecran complet, cu o anumită securitate JavaScript';
 $string['privacy:metadata'] = 'Plugin-ul chestionarului de securitate pentru acces JavaScript nu stochează date personale.';

@@ -105,3 +105,6 @@ $string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id'
 $string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
 
 $string['auxiliar_text'] = 'Write an optional reasoning for your answer:';
+
+$string['log_server_errors'] = 'Log server errors';
+$string['log_server_errors_help'] = 'Extensively log errors coming from the WirisQuizzes service and other errors occurred when processing WirisQuizzes questions to your server logs. This might cause an increase in the size of your log files but might help the Wiris team troubleshoot issues.';

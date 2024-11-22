@@ -61,4 +61,3 @@ $string['autocompletion'] = 'Автозавершение';
 $string['manager'] = 'Управляющий';
 $string['status'] = 'Статус';
 $string['type'] = 'Тип';
-$string['visible_1'] = 'Управляющий';

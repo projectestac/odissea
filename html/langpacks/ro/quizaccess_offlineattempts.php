@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowofflineattempts'] = 'Permiteți încercarea offline a testului utilizând aplicația mobilă';
-$string['allowofflineattempts_help'] = 'Dacă este activat, un utilizator de aplicație mobilă poate descărca testul și-l poate îparcurge offline.
+$string['allowofflineattempts_help'] = 'Dacă este activat, un utilizator de aplicație mobilă poate descărca testul și-l poate parcurge offline.
 
 Notă: nu este posibil ca un test să fie încercat offline dacă are o limită de timp, dacă necesită o adresă de rețea sau folosește orice comportament de întrebare, altul decât feedback-ul amânat (cu sau fără CBM) sau folosește navigarea secvențială.';
 $string['confirmdatasaved'] = 'Confirm că nu am activități pe care nu le-am salvat pe dispozitive mobile.';
@@ -34,5 +34,5 @@ $string['mobileapp'] = 'Aplicație mobilă';
 $string['offlineattemptserror'] = 'Nu este posibil ca un test să fie parcurs offline dacă are o limită de timp sau necesită o adresă de rețea, dacă folosește orice comportament de întrebare, altul decât feedback-ul amânat (cu sau fără CBM) sau folosește navigarea secvențială.';
 $string['offlinedatamessage'] = 'Ați efectuat această activitate pe un dispozitiv mobil. Datele au fost salvate pe acest site în urmă cu {$a}.';
 $string['pleaseconfirm'] = 'Vă rugăm să bifați și să confirmați că nu aveți activități nesalvate.';
-$string['pluginname'] = 'Regula de acces la încercări offline';
+$string['pluginname'] = 'Regulă de acces la încercări offline';
 $string['privacy:metadata'] = 'Pluginul pentru regulă de acces la teste de încercări offline nu stochează date personale.';

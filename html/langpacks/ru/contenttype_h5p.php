@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Интерактивный контент H5P';
-$string['h5p:access'] = 'Доступ к контенту H5P в банке контента';
+$string['h5p:access'] = 'Иметь доступ к контенту H5P в банке контента';
 $string['h5p:upload'] = 'Загружать новый контент H5P';
 $string['h5p:useeditor'] = 'Создавать или редактировать контент с помощью редактора H5P';
 $string['pluginname'] = 'H5P';

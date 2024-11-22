@@ -135,7 +135,7 @@ $string['backpackemailverifypending'] = 'Eine Bestätigungsmitteilung wurde an <
 $string['backpackemailverifysuccess'] = 'Danke für die Bestätigung Ihrer E-Mail-Adresse. Sie sind jetzt mit Ihrem Backpack verbunden.';
 $string['backpackemailverifytokenmismatch'] = 'Das Token im angeklickten Link stimmt nicht mit dem gespeicherten Token überein. Prüfen Sie, ob Sie wirklich den Link in der aktuellsten E-Mail angeklickt haben.';
 $string['backpackexporterror'] = 'Badge kann nicht in Backpack exportiert werden';
-$string['backpackexporterrorwithinfo'] = 'Das Badge "{$a->badgename}" kann nicht zum Backpack exportiert werden. Fehler: {$a->Fehler}';
+$string['backpackexporterrorwithinfo'] = 'Das Badge "{$a->badgename}" kann nicht zum Backpack exportiert werden. Fehler: {$a->error}';
 $string['backpackimport'] = 'Importeinstellungen';
 $string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Badges aus Ihrem Backpack auf der Seite \'Meine Badges\' und in Ihrem Nutzerprofil angezeigt werden.
 
@@ -534,7 +534,7 @@ $string['sitebackpack'] = 'Aktives externes Backpack';
 $string['sitebackpack_help'] = 'Der externe Backpack, mit dem Nutzer/innen von dieser Website aus eine Verbindung herstellen können. Wenn Sie diese Einstellung ändern, nachdem Nutzer/innen ihre Backpacks verbunden haben, müssen alle Nutzer/innen ihre Backpack-Einstellungen aufrufen, die Verbindung trennen und dann wieder neu herstellen.';
 $string['sitebackpackdeleted'] = 'Der Website-Backpack wurde gelöscht.';
 $string['sitebackpacknotdeleted'] = 'Dieser Backpack konnte nicht gelöscht werden, da dies die Standardeinstellung der Website ist.';
-$string['sitebackpackwarning'] = 'Die Verbindung zum Backpack konnte nicht hergestellt werden. <br> <br>Überprüfen Sie, ob die Administrationseinstellung "E-Mail-Adresse des Badge-Ausstellers" die gültige E-Mail-Adresse für ein Konto auf der Backpack-Website ist. <br> <br> Vergewissern Sie sich, dass das "Kennwort des Badge-Ausstellers" auf der Seite <a href="{$a-> url}"> Einstellungen für den Website-Backpack </a> das richtige Kennwort für das Konto auf der Backpack-Website ist. <br> <br> Antwort der Backpack-Website: "{$a->warning}"';
+$string['sitebackpackwarning'] = 'Die Verbindung zum Backpack konnte nicht hergestellt werden. <br> <br>Überprüfen Sie, ob die Administrationseinstellung "E-Mail-Adresse des Badge-Ausstellers" die gültige E-Mail-Adresse für ein Konto auf der Backpack-Website ist. <br> <br> Vergewissern Sie sich, dass das "Kennwort des Badge-Ausstellers" auf der Seite <a href="{$a->url}"> Einstellungen für den Website-Backpack </a> das richtige Kennwort für das Konto auf der Backpack-Website ist. <br> <br> Antwort der Backpack-Website: "{$a->warning}"';
 $string['sitebadges'] = 'Website-Badges';
 $string['sitebadges_help'] = 'Website-Badges können nur für systemweite Leistungen verliehen werden, wie z.B. das Abschließen mehrerer Kurse oder die Vervollständigung des Nutzerprofils. Website-Badges können auch manuell von einer Person an eine andere verliehen werden.
 

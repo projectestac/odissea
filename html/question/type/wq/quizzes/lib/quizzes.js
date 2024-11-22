@@ -11168,10 +11168,11 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 	,andChecks: function(checks) {
 		var j;
 		var correct = true;
-		var _g1 = 0, _g = checks.length;
-		while(_g1 < _g) {
-			var j1 = _g1++;
-			correct = correct && checks[j1].value == 1.0;
+		var _g = 0;
+		while(_g < checks.length) {
+			var check = checks[_g];
+			++_g;
+			correct = correct && check.value > 0.999999;
 		}
 		return correct;
 	}
@@ -24980,31 +24981,17 @@ com.wiris.system.ui.JsComponent.isCSSLoaded = function() {
 	return com.wiris.system.ui.JsComponent.cssLoaded;
 }
 com.wiris.system.ui.JsComponent.prototype = {
-	elementInserted: function() {
-	}
-	,monitorInsertion: function() {
-		var self = this;
-		
+	monitorInsertion: function(target,elementInserted) {
 		var observer = new MutationObserver(function(mutationsList, observer) {
 			for (let mutation of mutationsList) {
 				if (mutation.addedNodes != null) {
 					for (let node of mutation.addedNodes) {
-						if (node == self.getElement() || com.wiris.system.JsDOMUtils.isDescendant(node, self.getElement())) {
-							haxe.Timer.delay(function() {
-								self.elementInserted();
-
-								if (observer != null) {
-									observer.disconnect();
-									observer = null;
-								}
-							}, 1);
-						}
+						elementInserted(node, observer);
 					}
 				}
 			}
 		});
-
-		observer.observe(document.body, { childList : true, subtree: true });;
+		observer.observe(target,{ childList : true, subtree : true});
 	}
 	,getClassNameElement: function() {
 		return this.getStyleElement();
@@ -25301,10 +25288,9 @@ com.wiris.system.ui.JsComponent.prototype = {
 			this.captureJsEvents();
 			this.updateStyles();
 			if(this.component.hasClass(com.wiris.util.ui.component.Component.CLASS_APP)) {
-				var updating = false;
 				var self = this;
-				com.wiris.system.JsDOMUtils.addEventListener(this.element,"DOMNodeInserted",function(e) {
-					if(com.wiris.system.JsDOMUtils.hasClass(e.target,"wrsUI_component")) self.element.wrsUI_updateGUI();
+				this.monitorInsertion(this.element,function(insertedNode,observer) {
+					if(com.wiris.system.JsDOMUtils.hasClass(insertedNode,"wrsUI_component")) self.element.wrsUI_updateGUI();
 				});
 				this.element.setAttribute("data-useragent",navigator.userAgent);
 				setTimeout(function() {
@@ -26339,7 +26325,7 @@ com.wiris.system.JSONUtils.isString = function(objectInstance) {
 	return typeof(objectInstance) == "string";
 }
 com.wiris.system.JSONUtils.jsonToObject = function(json) {
-	return eval("(" + json + ")");
+	return JSON.parse(json);
 }
 com.wiris.system.JSONUtils.serialize = function(objectInstance) {
 	if(Reflect.isObject(objectInstance) && !com.wiris.system.JSONUtils.isString(objectInstance)) {
@@ -32236,17 +32222,20 @@ com.wiris.system.ui.JsTabbedPanel = $hxClasses["com.wiris.system.ui.JsTabbedPane
 	this.tabbedPanel = tabbedPanel;
 	this.resourceLoader = resourceLoader;
 	this.currentPanel = null;
-	this.monitorInsertion();
+	var self = this;
+	this.monitorInsertion(js.Lib.document.body,function(insertedNode,observer) {
+		if(insertedNode == self.getElement() || com.wiris.system.JsDOMUtils.isDescendant(insertedNode,self.getElement())) haxe.Timer.delay(function() {
+			self.getElement().wrsUI_updateGUI();
+			if(observer != null) observer.disconnect();
+		},1);
+	});
 	this.panels = new Array();
 };
 com.wiris.system.ui.JsTabbedPanel.__name__ = ["com","wiris","system","ui","JsTabbedPanel"];
 com.wiris.system.ui.JsTabbedPanel.__interfaces__ = [com.wiris.util.ui.interaction.ChangeListener];
 com.wiris.system.ui.JsTabbedPanel.__super__ = com.wiris.system.ui.JsPanel;
 com.wiris.system.ui.JsTabbedPanel.prototype = $extend(com.wiris.system.ui.JsPanel.prototype,{
-	elementInserted: function() {
-		this.getElement().wrsUI_updateGUI();
-	}
-	,update: function() {
+	update: function() {
 		var _g = this;
 		var selectedTab = this.tabbedPanel.getSelectedTab();
 		var navBar = this.tabbedPanel.hasClass(com.wiris.util.ui.component.NavigationBar.CLASS_NAVIGATION_BAR);

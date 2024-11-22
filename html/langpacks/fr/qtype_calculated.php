@@ -142,7 +142,7 @@ $string['trueanswerinsidelimits'] = 'Réponse correcte : {$a->correct} dans les
 $string['trueansweroutsidelimits'] = '<span class="error">Erreur de réponse correcte : {$a->correct} en dehors des limites de la valeur réelle {$a->true}</span>';
 $string['uniform'] = 'Uniforme';
 $string['uniformbit'] = 'décimales, avec une distribution uniforme';
-$string['unsupportedformulafunction'] = 'La fonction {$a} n’est pas supportée';
+$string['unsupportedformulafunction'] = 'La fonction {$a} n’est pas prise en charge';
 $string['updatecategory'] = 'Modifier la catégorie';
 $string['updatedatasetparam'] = 'Mettre à jour les paramètres des jeux de données';
 $string['updatetolerancesparam'] = 'Mettre à jour les paramètres de tolérance de réponses';

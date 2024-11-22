@@ -168,12 +168,18 @@ class activity_information implements renderable, templatable {
         // Build automatic completion details.
         $details = [];
         foreach ($this->cmcompletion->get_details() as $key => $detail) {
-            // Set additional attributes for the template.
             $detail->key = $key;
-            $detail->statuscomplete = in_array($detail->status, [COMPLETION_COMPLETE, COMPLETION_COMPLETE_PASS]);
-            $detail->statuscompletefail = $detail->status == COMPLETION_COMPLETE_FAIL;
+            $completedstatus = [COMPLETION_COMPLETE, COMPLETION_COMPLETE_PASS];
+            if ($key === 'completionusegrade') {
+                // When only grade is used, the completion is considered as completed even for failed grades.
+                $completedstatus[] = COMPLETION_COMPLETE_FAIL;
+                $detail->statuscompletepass = in_array($detail->status, $completedstatus);
+            } else {
+                $detail->statuscompletefail = $detail->status == COMPLETION_COMPLETE_FAIL;
+                $detail->statuscompletepass = $detail->status == COMPLETION_COMPLETE_PASS;
+            }
+            $detail->statuscomplete = in_array($detail->status, $completedstatus);
             // This is not used by core themes but may be needed in custom themes.
-            $detail->statuscompletepass = $detail->status == COMPLETION_COMPLETE_PASS;
             $detail->statusincomplete = $detail->status == COMPLETION_INCOMPLETE;
 
             // Add an accessible description to be used for title and aria-label attributes for overridden completion details.

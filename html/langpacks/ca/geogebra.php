@@ -107,6 +107,7 @@ $string['pluginname'] = 'GeoGebra';
 $string['previewtab'] = 'Previsualitza';
 $string['redirecttocourse'] = 'L\'activitat s\'ha desat correctament. S\'està tornant a la pàgina d\'inici';
 $string['report'] = 'Informe de';
+$string['results'] = 'Resultats';
 $string['resultstab'] = 'Resultats';
 $string['resumeattempt'] = 'Continuació d\'un intent anterior';
 $string['review'] = 'Revisió de';

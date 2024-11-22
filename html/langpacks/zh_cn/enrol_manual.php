@@ -33,9 +33,9 @@ $string['assignrole'] = '分配角色';
 $string['assignroles'] = '分配角色';
 $string['browsecohorts'] = '浏览群';
 $string['browseusers'] = '浏览用户';
-$string['confirmbulkdeleteenrolment'] = '你确信要删除该用户的选课吗？';
-$string['defaultperiod'] = '缺省保持选课时长';
-$string['defaultperiod_desc'] = '选课有效的缺省时间长度（单位秒）。如果此时间设置为零，选课持续时间将会按默认不加以限制。';
+$string['confirmbulkdeleteenrolment'] = '你确定要删除该用户的选课吗？';
+$string['defaultperiod'] = '缺省选课时长';
+$string['defaultperiod_desc'] = '注册有效的默认时间长度。如果设置为零，则默认情况下，注册持续时间将是无限制的。';
 $string['defaultperiod_help'] = '默认的用户身份有效期长度，从用户自行加入课程之日算起。禁止此选项意味着默认用户身份永久有效。';
 $string['defaultstart'] = '默认选课开始';
 $string['deleteselectedusers'] = '删除被选中用户的选课';
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = '以下用户对{$a->course}的选课将�
 
 如需延期，请至{$a->extendurl}';
 $string['expirymessageenrollersubject'] = '选课截止通知';
+$string['managemanualenrolements'] = '管理手动注册';
 $string['manual:config'] = '配置人工选课实例';
 $string['manual:enrol'] = '加入用户';
 $string['manual:manage'] = '管理用户选课';
@@ -85,4 +86,4 @@ $string['unenroluser'] = '您确定要撤销用户“{$a->user}”对“{$a->cou
 $string['unenrolusers'] = '撤销用户选课';
 $string['wscannotenrol'] = '插件实例不能手动把一个用户加入id = {$a->courseid}}的课程';
 $string['wsnoinstance'] = '对于课程（id = {$a->courseid}），手动选课插件实例不存在或者被禁用';
-$string['wsusercannotassign'] = '您在课程({$a->courseid})中没有权限为用户({$a->userid})指定这一角色({$a->roleid})。';
+$string['wsusercannotassign'] = '在本课程 （{$a->courseid}） 中，您无权将此角色 （{$a$a->roleid}） 分配给此用户 （{->userid}）。';

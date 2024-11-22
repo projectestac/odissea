@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'Notele stocate în memoria cache pentru evaluarea disponibilității condiționate';
+$string['cachedef_items'] = 'Elemente de notare stocate în memoria cache pentru evaluarea disponibilității condiționate';
 $string['cachedef_scores'] = 'Notele utilizatorului stocate în memoria cache pentru evaluarea disponibilității condiționate';
 $string['description'] = 'Se solicită cursanților să obțină o anumită notă.';
 $string['error_backwardrange'] = 'Atunci când specificați un interval al notelor, minimul trebuie să fie mai mic decât maximul.';

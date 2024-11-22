@@ -133,4 +133,3 @@ $string['viewlistfooter'] = 'تذييل القائمة';
 $string['viewperpage'] = 'لكل صفحة';
 $string['viewvisibility'] = 'حالة الإظهار';
 $string['visibility'] = 'حالة الإظهار';
-$string['visible_4'] = 'الطالب';

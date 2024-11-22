@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enableleap2a'] = 'Activer le support du format portfolio Leap2A (nécessite Mahara 1.3)';
+$string['enableleap2a'] = 'Activer la prise en charge du format portfolio Leap2A (nécessite Mahara 1.3)';
 $string['err_invalidhost'] = 'Serveur MNet non valide';
 $string['err_invalidhost_help'] = 'Ce plugin pointe vers un hôte MNet non valide (ou supprimé). Il nécessite l’utilisation de pairs MNet avec SSO (fournisseur d’identité) publiée et abonnement SSO au portfolio (fournisseur de service).';
 $string['err_networkingoff'] = 'MNet est désactivé';

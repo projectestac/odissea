@@ -39,6 +39,7 @@ $string['import'] = 'Importa';
 $string['importok'] = 'Il file "{$a}" è stato importato correttamente';
 $string['importprefix'] = 'Prefisso importazione';
 $string['importproblem'] = 'Si sono verificati problemi durante l\'importazione del file "{$a}".';
+$string['lastrun'] = 'Riepilogo dell\'ultima elaborazione';
 $string['lastrunof'] = 'Riassunto dell\'ultimo run di {$a}';
 $string['markreferencerun'] = 'Contrassegna come run di riferimento/commento';
 $string['memory'] = 'Memoria utilizzata';

@@ -20,6 +20,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir . '/formslib.php');
 
+#[\AllowDynamicProperties]
 /**
  * The form definition class for questions.
  *
@@ -146,7 +147,7 @@ class questions_form extends \moodleform {
                 redirect($CFG->wwwroot.'/mod/questionnaire/questions.php?id='.$questionnaire->cm->id);
             }
 
-            if ($tid != QUESPAGEBREAK && $tid != QUESSECTIONTEXT) {
+            if ($question->is_numbered()) {
                 $qnum++;
             }
 
@@ -330,12 +331,10 @@ class questions_form extends \moodleform {
                 $mform->addElement('static', 'qdepend_' . $question->id, '', $dependencies);
             }
 
-            if ($tid != QUESPAGEBREAK) {
-                if ($tid != QUESSECTIONTEXT) {
+            if ($question->is_numbered()) {
                     $qnumber = '<div class="qn-info"><h2 class="qn-number">'.$qnum.'</h2></div>';
-                } else {
+            } else {
                     $qnumber = '';
-                }
             }
 
             if ($this->moveq && $pos < $moveqposition) {

@@ -63,6 +63,7 @@ $string['completion_setby:auto:todo'] = '要做: {$a->condition} (set by {$a->se
 $string['completion_setby:manual:done'] = '{$a->activityname}被 {$a->setby} 标记为完成。点击撤销。';
 $string['completion_setby:manual:markdone'] = '{$a->activityname}被{$a->setby}标记为未完成。点击以标记为完成。';
 $string['completionrequirements'] = '{$a}的完成要求';
+$string['courseaccess'] = '课程访问权限';
 $string['coursealreadyfinished'] = '课程已经结束';
 $string['coursecontentnotification'] = '发送内容更改通知';
 $string['coursecontentnotification_help'] = '勾选此框以通知课程参与者新的或更改的活动或资源。 只有可以访问活动或资源的用户才会收到通知。';
@@ -75,6 +76,7 @@ $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href=""{$a
 在课程中已更改 <a href=""{$a->courselink}"">{$a->coursename}</a>.</p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
 $string['coursenotyetfinished'] = '课程还没有结束';
 $string['coursenotyetstarted'] = '课程还没有开始';
+$string['courseparticipants'] = '课程参与者';
 $string['coursetoolong'] = '课程太长了';
 $string['customfield_islocked'] = '锁定的';
 $string['customfield_islocked_help'] = '如果字段被锁定，则只有具有更改锁定的自定义字段权限的用户(默认情况下，只有具有管理员角色的用户)才能在课程设置中更改该字段。';
@@ -84,6 +86,7 @@ $string['customfield_visibility_help'] = '此设置确定谁可以在课程列�
 $string['customfield_visibletoall'] = '每个人';
 $string['customfield_visibletoteachers'] = '教师';
 $string['customfieldsettings'] = '普通课程自定义字段设置';
+$string['daystakingcourse'] = '上课天数';
 $string['downloadcontent'] = '包含在课程内容下载中';
 $string['downloadcontent_help'] = '此活动或资源是否应包含在可供下载的课程内容的zip文件中？ 文件、文件夹、页面和标签可以完全下载。对于其他所有活动和资源，仅名称和描述可以下载。此选项需要在课程设置中启用下载课程内容。
 
@@ -97,6 +100,7 @@ $string['favourite'] = '标星的课程';
 $string['gradetopassnotset'] = '本课程没有设置及格成绩，可以在课程的成绩项目中设置(成绩册设置)。';
 $string['informationformodule'] = '关于{$a}活动的信息';
 $string['module'] = '活动';
+$string['namewithlink'] = '带链接的类别';
 $string['noaccesssincestartinfomessage'] = '{$a->userfirstname}您好！<p>{$a-> coursename}中的许多学生从未访问过该课程。</p>';
 $string['nocourseactivity'] = '在课程开始和结束之间没有足够的课程活动';
 $string['nocourseendtime'] = '课程没有结束时间';

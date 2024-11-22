@@ -118,12 +118,12 @@ $string['email_confirm_text'] = ': «&nbsp;{$a->apply}&nbsp;»
 
 Vous pouvez le voir ici :
 {$a->url}';
-$string['email_entry'] = 'Envoyer un email au participant';
-$string['email_noreply'] = 'Ceci est un mail automatique. Merci de ne pas y répondre.';
-$string['email_notification'] = 'Envoyer une notification par email à l’évaluateur';
-$string['email_notification_help'] = 'Si l’option est activée, les évaluateurs recevront un email de notification lors des demandes effectuées par les participants.';
-$string['email_notification_user'] = 'Envoyer un email de notification aux participants';
-$string['email_notification_user_help'] = 'Si cette option est activée, l’évaluateur peut envoyer un email sur le statut aux participants.';
+$string['email_entry'] = 'Envoyer un courriel au participant';
+$string['email_noreply'] = 'Ceci est un courriel automatique. Merci de ne pas y répondre.';
+$string['email_notification'] = 'Envoyer une notification par courriel à l’évaluateur';
+$string['email_notification_help'] = 'Si l’option est activée, les évaluateurs recevront un courriel de notification lors des demandes effectuées par les participants.';
+$string['email_notification_user'] = 'Envoyer un courriel de notification aux participants';
+$string['email_notification_user_help'] = 'Si cette option est activée, l’évaluateur peut envoyer un courriel sur le statut aux participants.';
 $string['email_teacher'] = '{$a->username} a été envoyé à l’activité';
 $string['email_user_accept'] = 'Votre demande est acceptée';
 $string['email_user_done'] = 'Votre demande est clôturée.';

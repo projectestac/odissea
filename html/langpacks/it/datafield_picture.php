@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'La larghezza nella visualizzazione singola deve essere un valore numerico.';
+$string['error_invalidparam2'] = 'L’altezza nella visualizzazione singola deve essere un valore numerico.';
+$string['error_invalidparam4'] = 'La larghezza nella visualizzazione elenco deve essere un valore numerico.';
+$string['error_invalidparam5'] = 'L\'altezza nella visualizzazione elenco deve essere un valore numerico.';
 $string['fieldtypelabel'] = 'Immagine';
 $string['pluginname'] = 'Immagine';
 $string['privacy:metadata'] = 'Il plugin Immagine non memorizza dati personali, utilizza tabelle definite in mod_data.';

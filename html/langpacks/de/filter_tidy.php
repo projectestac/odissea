@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'HTML Prüfung';
-$string['privacy:metadata'] = 'Der HTML-Tidy Filter speichert keine personenbezogenen Daten.';
+$string['filtername'] = 'HTML Tidy';
+$string['privacy:metadata'] = 'Das Plugin \'HTML Tidy\' speichert keine personenbezogenen Daten.';

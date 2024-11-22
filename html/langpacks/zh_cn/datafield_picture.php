@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = '图片字段';
-$string['pluginname'] = '图片';
-$string['privacy:metadata'] = '图片字段组件不存储任何个人数据，它使用mod_data中定义的表。';
+$string['error_invalidparam1'] = '单个视图中的宽度需要数值';
+$string['error_invalidparam2'] = '单个视图中的高度需要为数值';
+$string['error_invalidparam4'] = '列表视图中的宽度需要是数值';
+$string['error_invalidparam5'] = '列表视图中的高度需要为数值';
+$string['fieldtypelabel'] = '图片';
+$string['pluginname'] = '图像';
+$string['privacy:metadata'] = '图像字段组件不存储任何个人数据;它使用 mod_data 中定义的表。';
+$string['sample'] = '图片描述占位符';

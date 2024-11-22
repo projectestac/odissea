@@ -164,6 +164,7 @@ $string['moodleoverflow:ratehelpful'] = 'Marcați o postare ca fiind utilă';
 $string['moodleoverflow:ratepost'] = 'Evaluați o postare';
 $string['moodleoverflow:replypost'] = 'Răspundeți în discuție';
 $string['moodleoverflow:startdiscussion'] = 'Începeți o discuție';
+$string['moodleoverflow:viewanyrating'] = 'Vizualizați evaluările';
 $string['moodleoverflow:viewdiscussion'] = 'Vizualizați discuția';
 $string['moodleoverflowauthorhidden'] = 'Autor (ascuns)';
 $string['moodleoverflowbodyhidden'] = 'Această postare nu poate fi vizualizată de dvs., probabil pentru că nu ați postat în discuție, timpul maxim de editare nu a trecut încă, discuția nu a început sau discuția a expirat.';

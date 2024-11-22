@@ -5,8 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-The latest release of this plugin is v8.7.0 (23 apr. 2024).
+The latest release of this plugin is v8.8.0 (4 nov. 2024).
 
+## v8.8.1 - 4 nov. 2024
+- fix: LaTeX formulas not being rendered with PHP Render Type.
+
+## v8.8.0 - 7 oct. 2024
+- test: Improve test coverage for 4.5
+- feat: Add compatibility with Moodle 4.5.
+
+## v8.7.1 - 27 aug. 2024
+- test: Improve and add test coverage.
+- refactor: Moodle test page. #KB-43810
+- fix: Fetch notification when load setting page. #KB-44423
+  
 ## v8.7.0 - 23 apr. 2024
 - feat: Add compatibility with Moodle 4.4.
 

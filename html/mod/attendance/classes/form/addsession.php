@@ -240,13 +240,15 @@ class addsession extends moodleform {
             $mform->disabledif('studentpassword', 'rotateqrcode', 'checked');
             $mgroup[] = & $mform->createElement('checkbox', 'randompassword', '', get_string('randompassword', 'attendance'));
             $mform->disabledif('randompassword', 'rotateqrcode', 'checked');
-            $mgroup[] = & $mform->createElement('checkbox', 'includeqrcode', '', get_string('includeqrcode', 'attendance'));
-            $mform->disabledif('includeqrcode', 'rotateqrcode', 'checked');
 
             $mform->addGroup($mgroup, 'passwordgrp', get_string('passwordgrp', 'attendance'), array(' '), false);
 
             $mform->setType('studentpassword', PARAM_TEXT);
             $mform->addHelpButton('passwordgrp', 'passwordgrp', 'attendance');
+
+            $mform->addElement('checkbox', 'includeqrcode', '', get_string('includeqrcode', 'attendance'));
+            $mform->hideif('includeqrcode', 'studentscanmark', 'notchecked');
+            $mform->disabledif('includeqrcode', 'rotateqrcode', 'checked');
 
             $mform->addElement('checkbox', 'rotateqrcode', '', get_string('rotateqrcode', 'attendance'));
             $mform->hideif('rotateqrcode', 'studentscanmark', 'notchecked');
@@ -309,6 +311,7 @@ class addsession extends moodleform {
         $mform->setAdvanced('preventsharedgroup');
         $mform->setType('preventsharedip', PARAM_INT);
         $mform->setType('preventsharediptime', PARAM_INT);
+        $mform->hideif('preventsharediptime', 'preventsharedip', 'noteq', ATTENDANCE_SHAREDIP_MINUTES);
 
         if (isset($pluginconfig->preventsharedip)) {
             $mform->setDefault('preventsharedip', $pluginconfig->preventsharedip);
@@ -383,7 +386,7 @@ class addsession extends moodleform {
             }
         }
 
-        if (!empty($data['studentscanmark']) && !empty($data['preventsharedip']) &&
+        if (!empty($data['studentscanmark']) && $data['preventsharedip'] == ATTENDANCE_SHAREDIP_MINUTES &&
                 empty($data['preventsharediptime'])) {
             $errors['preventsharedgroup'] = get_string('iptimemissing', 'attendance');
 

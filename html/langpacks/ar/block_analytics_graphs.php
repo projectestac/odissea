@@ -45,7 +45,6 @@ $string['old_log'] = 'سجلات الوقوعات القديمة';
 $string['old_messages'] = 'الرسائل المرسلة';
 $string['on_time'] = 'في الوقت المناسب';
 $string['pluginname'] = 'الرسوم البيانية للتحليلات';
-$string['privacy:metadata'] = 'كتلة التحليلات البيانية تعرض فقط البيانات الموجودة في التقويم.';
 $string['resources_with_access'] = 'الموارد مع إمكانية الوصول';
 $string['send_email'] = 'إرسل بريد إلكتروني';
 $string['sender'] = 'المرسل';

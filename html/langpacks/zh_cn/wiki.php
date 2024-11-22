@@ -53,7 +53,7 @@ $string['contributions'] = '贡献';
 $string['contributions_help'] = '您编辑过的页面列表。';
 $string['createcomment'] = '添加新评论中';
 $string['createddate'] = '由{$a->username}在{$a->date}创建';
-$string['createpage'] = '建立页面';
+$string['createpage'] = '创建页面';
 $string['creating'] = '正在创建wiki页面';
 $string['creole'] = 'Creole 格式';
 $string['defaultformat'] = '缺省格式';
@@ -95,7 +95,7 @@ $string['filenotuploadederror'] = '文件“{$a}”不能被正确上传。';
 $string['files'] = '文件';
 $string['filtername'] = 'Wiki自动链接';
 $string['firstpagetitle'] = '首页名';
-$string['firstpagetitle_help'] = '此wiki首页的标题。';
+$string['firstpagetitle_help'] = 'Wiki 第一页的标题。一旦创建了 Wiki，就无法再更改标题。';
 $string['forceformat'] = '强制格式';
 $string['forceformat_help'] = '如果格式被强制（勾选复选框），那么编辑wiki页面时就不能选择格式。';
 $string['format'] = '格式';
@@ -107,11 +107,11 @@ $string['formatcreole_help'] = 'Creole是一种常用的wiki标记语言。通�
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
 $string['formatcreole_link'] = 'mod/wiki/creole';
-$string['formathtml'] = 'HTML格式';
+$string['formathtml'] = 'HTML 格式';
 $string['formathtml_help'] = '可以使用HTML编辑器对文字排版。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
-$string['formatnwiki'] = 'NWiki格式';
+$string['formatnwiki'] = 'NWiki 格式';
 $string['formatnwiki_help'] = 'Nwiki是Mediawiki风格的标记语言，由Nwiki模块支持。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
@@ -140,7 +140,7 @@ $string['insertimage_help'] = '此下拉框会向wiki编辑器插入一个图片
 $string['invalidlock'] = '此页面已被另一个用户锁定。';
 $string['invalidparameters'] = '所提供的参数无效。';
 $string['invalidsection'] = '无效小节。';
-$string['invalidsesskey'] = '给定的sesskey无效。请重新发送数据';
+$string['invalidsesskey'] = '您的会话很可能已超时。请记下您的编辑，然后重新登录';
 $string['javascriptdisabledlocks'] = '您的浏览器禁用了Javascript，所以不能使用锁。你的修改可能无法正确保存。
 ';
 $string['links'] = '链接';
@@ -320,7 +320,7 @@ $string['wikimode'] = 'Wiki模式';
 $string['wikimode_help'] = 'Wiki模式决定是所有人都可以编辑这个wiki（协作wiki），还是每个人都有一个只能自己编辑的wiki（个人wiki）。';
 $string['wikimodecollaborative'] = '协作wiki';
 $string['wikimodeindividual'] = '个人wiki';
-$string['wikiname'] = '页面名称';
+$string['wikiname'] = 'Wiki名称';
 $string['wikinowikitext'] = '没有wiki文本';
 $string['wikiorderedlist'] = '序号列表';
 $string['wikipages'] = 'Wiki页面';

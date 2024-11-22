@@ -91,7 +91,6 @@ $string['old_messages'] = 'Отправленные сообщения';
 $string['on_time'] = 'Вовремя';
 $string['options'] = 'Опции';
 $string['pluginname'] = 'Графическая аналитика';
-$string['privacy:metadata'] = 'Блок «Графическая аналитика» только отображает существующие данные календаря.';
 $string['ratio'] = 'Темп';
 $string['red_tooltip'] = 'За последнюю неделю ни к одному модулю не обращались';
 $string['remove_all'] = 'Убрать все';

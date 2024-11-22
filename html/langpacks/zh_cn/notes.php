@@ -31,6 +31,7 @@ $string['addbulknotedonesingle'] = '备注已添加到 1 人';
 $string['addbulknotesingle'] = '向 1 人添加新笔记';
 $string['addnewnote'] = '添加新备注';
 $string['addnewnoteselect'] = '选择用户撰写备注';
+$string['author'] = '作者';
 $string['bynameondate'] = '由{$a->name} - {$a->date}';
 $string['configenablenotes'] = '允许单独为每个用户记备注。';
 $string['content'] = '内容';
@@ -68,7 +69,7 @@ $string['privacy:metadata:core_notes:lastmodified'] = '笔记的最后修改日�
 $string['privacy:metadata:core_notes:publishstate'] = '笔记的发布状态。';
 $string['privacy:metadata:core_notes:userid'] = '与笔记关联的用户 ID';
 $string['publishstate'] = '场景';
-$string['publishstate_help'] = '备注的上下文决定了谁能看到这个备注。
+$string['publishstate_help'] = '备注上下文决定了谁可以在日常使用中看到它。用户应意识到，所有笔记，包括个人笔记，可能会根据其司法管辖区的法律披露。
 
 * 个人 - 只有您自己可以看见
 * 课程 - 该课程中的所有教师都可以看见

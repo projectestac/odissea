@@ -32,7 +32,7 @@ $string['clicktoclose'] = '点击关闭';
 $string['error:gradingunavailable'] = '高级评分方法设置不正确。 请检查论坛设置中的整个论坛评分选项。';
 $string['error:notinrange'] = '提供的成绩 \'{$a->grade}\' 无效。 等级必须介于 0 和 {$a->maxgrade} 之间。';
 $string['exc_gradingformelement'] = '无法实例化评分表单元素';
-$string['formnotavailable'] = '已选择使用高级评分方法，但仍未定义评分表单。您需要先点击设置版块中的一个链接来定义评分表单。';
+$string['formnotavailable'] = '已选择高级评分方法，但评分形式仍需定义。';
 $string['gradingformunavailable'] = '请注意：高级评分暂时不可用。恢复正常前只能先使用简单评分。';
 $string['gradingmanagement'] = '高级评分';
 $string['gradingmanagementtitle'] = '高级评分：{$a->component} ({$a->area})';
@@ -82,9 +82,9 @@ $string['privacy:metadata:grading_instances:timemodified'] = '上次修改评分
 $string['privacy:metadata:gradingformpluginsummary'] = '评分方法的数据。';
 $string['searchownforms'] = '包含我自己的表格';
 $string['searchtemplate'] = '搜索评分表';
-$string['searchtemplate_help'] = '您可以搜索评分表，并把它当做新评分表的模板来使用。可以输入表单名、描述或表单中的任何关键字。如果要搜索词组，请用引号扩上。
+$string['searchtemplate_help'] = '您可以在此处搜索评分表，并将其用作新评分表的模板。只需键入应出现在表名称、其描述或表单正文本身中的某个位置的单词即可。若要搜索短语，请将整个查询用双引号括起来。
 
-默认的，只可以搜索到已分享的模板。您也可以搜索自己的评分表。这样您就可以在不共享的情况下方便的重用您的评分表。只有标为“可以使用”的评分表可以被重用。';
+默认情况下，搜索结果中仅包含已另存为共享模板的评分表单。您还可以在搜索结果中包含所有您自己的评分表单。这样，您可以简单地重复使用您的评分表，而无需共享它们。只有标记为“可供使用”的表单才能以这种方式重复使用。';
 $string['statusdraft'] = '草稿';
 $string['statusready'] = '可以使用';
 $string['templatedelete'] = '删除';

@@ -58,6 +58,7 @@ $string['cachedef_coursesectionspreferences'] = '课程部分首选项';
 $string['cachedef_databasemeta'] = '数据库元信息';
 $string['cachedef_eventinvalidation'] = '事件无效';
 $string['cachedef_externalbadges'] = '给特定用户的外部徽章';
+$string['cachedef_file_imageinfo'] = '文件图像信息，例如尺寸';
 $string['cachedef_fontawesomeiconmapping'] = '映射awesome字体的图标';
 $string['cachedef_grade_categories'] = '等级类别';
 $string['cachedef_grade_letters'] = '等级查询';

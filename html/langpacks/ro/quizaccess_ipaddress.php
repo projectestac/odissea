@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Regula de acces la test de tipul adresă IP';
-$string['privacy:metadata'] = 'Pluginul Regula de acces la test de tipul adresă IP nu stochează date personale.';
+$string['pluginname'] = 'Regulă de acces la test de tipul adresă IP';
+$string['privacy:metadata'] = 'Pluginul Regulă de acces la test de tipul adresă IP nu stochează date personale.';
 $string['subnetwrong'] = 'Acest test este accesibil doar de la anumite locații, iar acest calculator nu este pe listă.';

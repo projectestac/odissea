@@ -272,6 +272,7 @@ $string['gradebookcalculationswarning'] = '注意：在计算成绩册中显示�
 较新的版本是{$a->currentversion}，您使用的是成绩册版本是{$a->gradebookversion}。 您可以在<a href="{$a->url}“> 成绩册计算更改</a>中看到更改列表。';
 $string['gradebookhiddenerror'] = '当前成绩册设置为对学生隐藏所有信息。';
 $string['gradebookhistories'] = '成绩历史记录';
+$string['gradebooknavigationmenu'] = '成绩单导航菜单';
 $string['gradebooksetup'] = '成绩册设置';
 $string['gradeboundary'] = '分数段范围';
 $string['gradeboundary_help'] = '此设置确定将为成绩分配分数段的最小百分比。';
@@ -293,7 +294,7 @@ $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
 $string['gradeexportcustomprofilefields'] = '成绩导出自定义个人档案字段';
 $string['gradeexportcustomprofilefields_desc'] = '在成绩导出中包含这些自定义个人档案字段，用逗号分隔。';
 $string['gradeexportdecimalpoints'] = '成绩导出的小数位数';
-$string['gradeexportdecimalpoints_desc'] = '导出时显示的小数位数。在导出时可以更改这个选项。';
+$string['gradeexportdecimalpoints_desc'] = '显示导出的小数位数。在导出过程中，可以覆盖此属性。';
 $string['gradeexportdisplaytype'] = '导出成绩的显示类型';
 $string['gradeexportdisplaytype_desc'] = '成绩在导出时可以以实际分数、百分比（基于最低分和最高分计算）或分数段（优秀、良好、及格等等）类型显示。在导出时可以更改这个选项。';
 $string['gradeexportdisplaytypes'] = '成绩导出显示类型';
@@ -367,6 +368,7 @@ $string['gradetype_help'] = '有 4 种成绩类型：
 
 只有数值和量表成绩类型可以汇总。基于活动的成绩项的成绩类型在活动设置页面设置。';
 $string['gradevaluetoobig'] = '一个成绩值大于{$a}所允许的最高分值';
+$string['gradevaluetoosmall'] = '其中一个分数值小于允许的分数最小值{$a}';
 $string['gradeview'] = '查看成绩';
 $string['gradewasmodifiedduringediting'] = '为 {$a->username}输入的{$a->itemname}成绩被忽略，因为最近有人更新了它。';
 $string['gradeweighthelp'] = '成绩权重帮助';
@@ -406,14 +408,14 @@ $string['idnumbers'] = 'ID号';
 $string['ignore'] = '忽视';
 $string['import'] = '导入';
 $string['importcsv'] = '导入 CSV';
-$string['importcsv_help'] = '成绩可以通过 CSV 文件导入，格式如下：
+$string['importcsv_help'] = '成绩可以通过CSV文件导入，格式如下：
 
 * 文件的每一行包含一条记录
-* 每一条记录是一系列以逗号(或其他分隔符号)分隔的数据
-* 第一条记录是包含所有字段名称的清单，用来定义文件其余部分的格式
-* 其中一个字段名称必须要包含用户的识别数据，可以是用户名、ID号或EMAIL地址
+* 每条记录都是由选定的分隔符分隔的一系列数据
+* 第一条记录包含字段名称列表，用于定义文件其余部分的格式
+* 包含用户身份数据的字段名是必需的 - 用户名或 ID 号或电子邮件地址
 
-您可以先导出一些成绩来获得这个文件的正确格式。然后将这一文件加以编辑并保存为 CSV 文件。';
+通过先导出一些成绩，可以获得正确格式的文件。然后，可以编辑该文件并将其另存为 CSV 文件。';
 $string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = '作为自定义成果导入（仅在此课程中）';
 $string['importdata'] = '数据';
@@ -549,6 +551,7 @@ $string['mygrades'] = '用户菜单成绩链接';
 $string['mygrades_desc'] = '此设置允许您从用户菜单中选择链接到外部成绩册的选项。';
 $string['mypreferences'] = '我的偏好';
 $string['myreportpreferences'] = '我的成绩报表偏好';
+$string['myself'] = '我自己';
 $string['navmethod'] = '导航模式';
 $string['neverdeletehistory'] = '永远不删除历史记录';
 $string['newcategory'] = '新类别';
@@ -568,7 +571,7 @@ $string['noidnumber'] = '没有 ID 号';
 $string['nolettergrade'] = '无分数段给';
 $string['nomode'] = '无';
 $string['nonnumericweight'] = '收到的非数字值';
-$string['nonunlockableverbose'] = '只有{$a->itemname}解锁后成绩才能解锁。';
+$string['nonunlockableverbose'] = '要解锁成绩，您需要解锁 {$a->itemname}。';
 $string['nonweightedpct'] = '非加权%';
 $string['nooutcome'] = '没有成果';
 $string['nooutcomes'] = '成果项必须链接到一个课程成果，但是此课程没有成果。您想添加一个吗？';
@@ -588,6 +591,7 @@ $string['onascaleof'] = '在{$a->grademin}到{$a->grademax}的量表上';
 $string['operations'] = '操作';
 $string['options'] = '选项';
 $string['others'] = '其它';
+$string['otheruser'] = '用户';
 $string['outcome'] = '成果';
 $string['outcome_help'] = '此设置确定此成绩项在成绩册中将用哪个成果表示。';
 $string['outcomeassigntocourse'] = '向此课程分配另一个成果';
@@ -606,6 +610,7 @@ $string['outcomescoursecustom'] = '已使用自定义（不移除）';
 $string['outcomescoursenotused'] = '未使用的标准';
 $string['outcomescourseused'] = '已使用的标准(不移除)';
 $string['outcomescustom'] = '自定义成果';
+$string['outcomesdisabled'] = '结果未启用';
 $string['outcomeshortname'] = '简称';
 $string['outcomesstandard'] = '标准成果';
 $string['outcomesstandardavailable'] = '可用的标准成果';
@@ -712,7 +717,7 @@ $string['recovergradesdefault_help'] = '当用户重新加入课程时默认恢�
 $string['refreshpreview'] = '刷新预览';
 $string['regradeanyway'] = '仍然重新评分';
 $string['removeallcoursegrades'] = '删除所有成绩';
-$string['removeallcoursegrades_help'] = '如果选中，则将删除所有手动添加到成绩册的成绩项，以及与覆盖、例外、隐藏和锁定的成绩有关的成绩和数据。 只保留与活动相关的成绩项。';
+$string['removeallcoursegrades_help'] = '如果勾选，则将删除手动添加到成绩簿中的所有成绩项目和成绩，以及被覆盖、排除、隐藏和锁定的成绩的数据。仅保留与活动关联的等级项目和等级。';
 $string['removeallcourseitems'] = '删除所有成绩项和类别';
 $string['removeallcourseitems_help'] = '如果选中，则将删除所有手动添加到成绩册的成绩项，以及与覆盖、例外、隐藏和锁定的成绩有关的成绩和数据。 只保留与活动相关的成绩项。';
 $string['report'] = '报表';
@@ -734,6 +739,8 @@ $string['select'] = '选择{$a}';
 $string['selectalloroneuser'] = '选择所有或一个用户';
 $string['selectauser'] = '选择一个用户';
 $string['selectdestination'] = '选择{$a}的目标';
+$string['selectgrouplink'] = '选择一个组';
+$string['selectuserlink'] = '选择一个用户';
 $string['separator'] = '分隔符';
 $string['separator_help'] = '选择 CSV 文件中使用的分隔符（通常为逗号）。';
 $string['sepcolon'] = '冒号';
@@ -750,6 +757,7 @@ $string['setup'] = '设置';
 $string['setweights'] = '设置权重';
 $string['showactivityicons'] = '显示活动图标';
 $string['showactivityicons_help'] = '如果启用，活动图标将显示在活动名称旁边。';
+$string['showallgrades'] = '显示所有成绩';
 $string['showallhidden'] = '显示隐藏的';
 $string['showallstudents'] = '显示所有学生';
 $string['showanalysisicon'] = '显示成绩分析图标';
@@ -873,6 +881,7 @@ $string['userpreferences'] = '用户偏好';
 $string['useweighted'] = '使用加权';
 $string['verbosescales'] = '详细量表';
 $string['verbosescales_help'] = '详细量表使用词语而不是数字。 如果要同时导入数字量表和详细量表，则设置为“是”。 如果只导入数字量表，则设置为“否”。';
+$string['viewas'] = '查看报告';
 $string['viewbygroup'] = '小组';
 $string['viewgrades'] = '查看成绩';
 $string['weight'] = '权重';

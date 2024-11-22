@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Afegeix BDN';
 $string['edit'] = 'Edita';
 $string['facility_to_moodle:validateparentdata'] = 'Validar els pares';
 $string['labelmisc'] = 'Opcions diverses';
 $string['student'] = 'Estudiant';
+$string['type'] = 'Tipus d\'usuari';
 $string['validateparent'] = 'Valida els pares';

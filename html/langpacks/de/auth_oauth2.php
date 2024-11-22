@@ -64,11 +64,11 @@ $string['confirmlinkedloginemailsubject'] = '{$a}: Bestätigung für ein weitere
 $string['createaccountswarning'] = 'Dieses Authentifizierungsplugin ermöglicht es Nutzer/innen, ein Nutzerkonto auf Ihrer Seite anzulegen. Wenn Sie dieses Plugin verwenden, sollten Sie die Einstellung \'authpreventaccountcreation\' aktivieren.';
 $string['createnewlinkedlogin'] = 'Neues Nutzerkonto ({$a}) verlinken';
 $string['emailconfirmlink'] = 'Ihre Nutzerkonten verlinken';
-$string['emailconfirmlinksent'] = '<p>Zu dieser E-Mail-Adresse wurde ein bereits existierendes Nutzerkonto  gefunden, das jedoch bisher noch nicht verlinkt ist.</p>
-<p>Die Nutzerkonten müssen verlinkt werden, bevor Sie sich einloggen können.</p>
-<p>Eine E-Mail sollte an Ihre Emailadresse bei <b>{$a}</b> versandt worden sein.</p>
-<p>Diese E-Mail enthält einfache Anweisungen, wie Sie Ihre Nutzerkonten miteinander verbinden.</p>
- <p>Kontaktieren Sie die Administrator/innen der Website, falls Probleme auftreten.</p>';
+$string['emailconfirmlinksent'] = '<p>Zu dieser E-Mail-Adresse wurde ein bereits existierendes Nutzerkonto  gefunden, das jedoch bisher noch nicht verknüpft ist.</p>
+<p>Die Nutzerkonten müssen verknüpft sein, bevor Sie sich anmelden können.</p>
+<p>Eine E-Mail sollte an Ihre E-Mail-Adresse bei <b>{$a}</b> gesendet worden sein.</p>
+<p>Diese E-Mail enthält eine einfache Anleitung, wie Sie Ihre Nutzerkonten miteinander verbinden.</p>
+ <p>Falls Probleme auftreten, wenden Sie sich an die Administrator/innen der Website.</p>';
 $string['emailpasswordchangeinfo'] = 'Hallo {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihr Nutzerkonto auf "{$a->sitename}" angefordert.

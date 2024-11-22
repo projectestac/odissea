@@ -31,3 +31,5 @@ $string['adminaxisimport_name'] = 'Nom';
 $string['axis_label'] = 'Nom';
 $string['default_help'] = 'Si s\'habilita, aquest mètode de retroacció s\'habilitarà per defecte per a totes les tasques noves.';
 $string['question_select'] = 'Pregunta';
+$string['select'] = 'Selecciona';
+$string['white'] = 'Blanc';

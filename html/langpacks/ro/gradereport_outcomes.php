@@ -32,4 +32,4 @@ $string['eventgradereportviewed'] = 'Raportul cu notele este vizualizat';
 $string['outcomes:view'] = 'Vezi raportul rezultatelor';
 $string['pluginname'] = 'Raportul rezultatelor';
 $string['privacy:metadata'] = 'Raportul privind rezultatele notei arată numai datele stocate în alte locații.';
-$string['usedgradeitem'] = 'Numărul de note';
+$string['usedgradeitem'] = 'Numărul elementelor de notare';

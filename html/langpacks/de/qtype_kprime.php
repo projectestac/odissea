@@ -41,6 +41,7 @@ $string['generalfeedback_help'] = 'Allgemeines Feedback wird nach jedem Versuch 
 $string['maxpoints'] = 'Max. Punkte';
 $string['mustsupplyresponses'] = 'Sie müssen für alle Texte einen Wert eingeben.';
 $string['mustsupplyvalue'] = 'Sie müssen hier einen Wert eingeben.';
+$string['numberchoicehaschanged'] = 'Die Anzahl der Optionen hat sich geändert. Der Frageversuch kann nicht neu bewertet werden.';
 $string['oneanswerperrow'] = 'Bitte beantworten Sie alle Teile der Frage.';
 $string['optionno'] = 'Wahlantwort {$a}';
 $string['optionsandfeedback'] = 'Text und Feedback';

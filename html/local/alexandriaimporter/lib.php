@@ -46,17 +46,24 @@ function alexandria_importer_is_enabled() {
 /**
  * Function to add the alexandria importer link to the course navigation.
  */
-function local_alexandriaimporter_extend_navigation_course(navigation_node $parentnode,
-    stdClass $course, context_course $context) {
+function local_alexandriaimporter_extend_navigation_course(navigation_node $parentnode, stdClass $course, context_course $context) {
+
     global $CFG;
 
     // Must hold restoretargetimport in the current course.
-    if (alexandria_importer_is_enabled() && has_capability('moodle/restore:restoretargetimport', $context) ) {
-        $url = $CFG->wwwroot.'/local/alexandriaimporter/search.php?id='.$course->id;
-        $icon = new pix_icon('i/import', "");
-        $node = navigation_node::create(get_string('importfromalexandria', 'local_alexandriaimporter'), $url,
-            navigation_node::TYPE_SETTING, null, get_string('importfromalexandria', 'local_alexandriaimporter'), $icon);
+    if (alexandria_importer_is_enabled() && has_capability('moodle/restore:restoretargetimport', $context)) {
+
+        $node = navigation_node::create(
+            get_string('importfromalexandria', 'local_alexandriaimporter'),
+            new moodle_url('/local/alexandriaimporter/search.php', ['id' => $course->id]),
+            navigation_node::TYPE_SETTING,
+            null,
+            get_string('importfromalexandria', 'local_alexandriaimporter'),
+            new pix_icon('i/import', '')
+        );
+
         $parentnode->add_node($node);
+
     }
 
 }

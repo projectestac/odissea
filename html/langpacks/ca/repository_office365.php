@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['groups'] = 'Grups (Cursos)';
 $string['myfiles'] = 'El meu OneDrive';
+$string['upload'] = 'Penja un fitxer nou';

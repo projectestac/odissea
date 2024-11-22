@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcontent'] = '添加内容';
 $string['adddeployment:deploymentid'] = '部署 ID';
+$string['adddeployment:deploymentid_help'] = '平台中工具（此站点）的每个部署都将分配一个部署 ID，该 ID 对于注册是唯一的。必须先在工具（此站点）中注册部署 ID，然后才允许从相应的工具部署启动。';
 $string['adddeployment:invaliddeploymentiderror'] = '无效部署ID。此部署ID已在该app应用中注册过。';
 $string['adddeployment:name'] = '部署名称';
 $string['addtocourse'] = '添加到课程';
@@ -34,11 +35,18 @@ $string['addtogradebook'] = '添加到成绩册';
 $string['allowframeembedding'] = '注意:建议启用站点管理设置“允许框架嵌入”，以便工具显示在框架中，而不是显示在新窗口中。';
 $string['authltimustbeenabled'] = '注意:这个插件也需要启用LTI身份验证插件。';
 $string['cartridgeurl'] = 'Cartridge URL';
+$string['cookiesarerequired'] = 'Cookie 被您的浏览器阻止';
+$string['cookiesarerequiredinfo'] = '此工具无法启动，因为您的浏览器似乎正在阻止第三方 Cookie。
+<br><br>
+要使用此工具，请尝试更改浏览器 Cookie 设置或使用其他浏览器。';
 $string['copiedtoclipboard'] = '{$a}已复制到剪贴板';
 $string['copytoclipboard'] = '复制到剪贴板';
 $string['couldnotestablishproxy'] = '无法与使用者建立代理关系。';
 $string['customproperties'] = '自定义属性';
 $string['deeplinkingurl'] = '深层链接网址';
+$string['deletedactivity'] = '已删除的活动记录';
+$string['deletedactivityalt'] = '此实例共享的活动已删除';
+$string['deletedactivitydescription'] = '此实例共享的活动已删除。您可以通过编辑实例来选择要共享的其他活动，或者，如果不再需要，您可以直接删除该实例。删除实例将删除任何关联的用户注册。';
 $string['deploymentadd'] = '添加部署';
 $string['deploymentaddnotice'] = '已添加部署';
 $string['deploymentdelete'] = '删除部署';
@@ -54,6 +62,7 @@ $string['enrolenddate'] = '结束日期';
 $string['enrolenddate_help'] = '如果启用，用户只能访问到此日期。';
 $string['enrolenddateerror'] = '选课结束日期不能早于开始日期';
 $string['enrolisdisabled'] = '“作为LTI工具发布”插件被禁用。';
+$string['enrolltiversionincorrect'] = '该资源未设置为在旧版 LTI（版本 1.1/2.0）上使用。请与此工具的管理员联系。';
 $string['enrolmentfinished'] = '选课已完成。';
 $string['enrolmentnotstarted'] = '选课尚未开始。';
 $string['enrolperiod'] = '选课持续时间';
@@ -87,6 +96,11 @@ $string['ltiadvlauncherror:missingid'] = '无效的启动数据。通过LTI升�
 $string['ltilegacy'] = '旧版 LTI (1.1/2.0)';
 $string['ltilegacydeprecatednotice'] = '旧版 LTI (1.1/2.0) 工具已弃用。 请使用 LTI升级版 共享内容。';
 $string['ltiversion'] = 'LTI 版本';
+$string['ltiversion_help'] = '将用于访问已发布内容的 LTI 版本。
+
+LTI Advantage 允许将内容发布到预先注册的平台，而无需在发布新内容时在平台上进行更改。安全契约是平台和工具之间的契约。
+
+旧版本（1.1 和 2.0）要求在消费者身上为每条新发布的内容创建新的工具注册，因为每条发布的内容都与消费者网站有自己的安全合同，并且必须根据具体情况进行设置';
 $string['managedeployments'] = '管理部署';
 $string['maxenrolled'] = '最大选课用户数';
 $string['maxenrolled_help'] = '可以访问该工具的远程用户的最大数量。如果设置为零，则选课用户的数量是无限的。';
@@ -98,6 +112,7 @@ $string['membersyncmode_help'] = '远程用户是否应该选课和/或取消选
 $string['membersyncmodeenrolandunenrol'] = '新选课的和未选课的失踪用户';
 $string['membersyncmodeenrolnew'] = '为新用户选课';
 $string['membersyncmodeunenrolmissing'] = '未选课失踪的用户';
+$string['moodle'] = 'Moodle';
 $string['nodeployments'] = '未找到工具部署';
 $string['nopublishedcontent'] = '尚未发布任何资源或活动';
 $string['noregisteredplatforms'] = '没有注册平台';
@@ -118,6 +133,12 @@ $string['privacy:metadata:enrol_lti_users:lastgrade'] = '用户被记录的最�
 $string['privacy:metadata:enrol_lti_users:timecreated'] = '用户选课的时间';
 $string['privacy:metadata:enrol_lti_users:userid'] = '用户的ID';
 $string['provisioningmode'] = '关联模式';
+$string['provisioningmode_help'] = '此设置决定了首次启动时如何处理帐户。支持多种模式：
+<ul>
+<li>仅限新帐户（自动）。系统将自动为从平台启动的用户创建帐户。这是学生启动的默认设置。</li>
+<li>现有帐户和新帐户（提示）。用户将可以选择做什么。他们可以决定关联现有帐户，或为他们创建新帐户。这是最灵活的选项，也是教师启动的默认选项。</li>
+<li>仅限现有帐户（提示）。系统将要求用户链接现有帐户，如果不这样做，将无法访问工具资源。</li>
+</ul>';
 $string['provisioningmodestudentlaunch'] = '学生首次启动关联模式';
 $string['provisioningmodeteacherlaunch'] = '教师首次启动关联模式';
 $string['publishedcontent'] = '已发布内容';

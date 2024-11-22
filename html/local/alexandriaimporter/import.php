@@ -36,7 +36,7 @@ $filename = required_param('filename', PARAM_TEXT);
 $name = optional_param('name', false,  PARAM_TEXT);
 
 // Load the course and context.
-$course = $DB->get_record('course', array('id' => $courseid), '*', MUST_EXIST);
+$course = $DB->get_record('course', ['id' => $courseid], '*', MUST_EXIST);
 $context = context_course::instance($courseid);
 
 // Must pass login.
@@ -45,15 +45,15 @@ require_login($course);
 // Must hold restoretargetimport in the current course.
 require_capability('moodle/restore:restoretargetimport', $context);
 
-if ($datatype != 'course' && $datatype != 'scorm') {
-    print_error('Option not available.');
+if ($datatype !== 'course' && $datatype !== 'scorm') {
+    throw new \moodle_exception('Option unavailable', 'local_alexandriaimporter');
 }
 
 if (!alexandria_download_resource($fieldid, $recordid, $filename)) {
-    print_error('Cannot download file '.$filename);
+    throw new \moodle_exception('Cannot download file '.$filename, 'local_alexandriaimporter');
 }
 
-if ($datatype == 'course') {
+if ($datatype === 'course') {
     alexandria_import_course($courseid, $filename);
 } else {
     alexandria_import_scorm($course, $filename, $name);

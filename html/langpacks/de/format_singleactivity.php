@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activitytype'] = 'Art der Aktivität';
 $string['activitytype_help'] = 'Wählen Sie die Art der Aktivität, die in diesem Kurs verwendet werden soll.';
 $string['defactivitytype'] = 'Standardaktivität';
-$string['defactivitytypedesc'] = 'Legen Sie die Aktivität fest, die beim Anlegen eines Kurses ausgewählt wird.';
+$string['defactivitytypedesc'] = 'Legen Sie die Aktivität fest, die standardmäßig beim Anlegen eines Kurses ausgewählt wird.';
 $string['erroractivitytype'] = 'Aktivitätstyp ist in den Kurseinstellungen nicht angegeben';
 $string['orphaned'] = 'Verwaist';
 $string['orphanedwarning'] = 'Diese Aktivitäten sind für Nutzer/innen nicht erreichbar!';

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['complete'] = 'Objectiu complet';
 $string['group'] = 'Grup';
 $string['incomplete'] = 'Objectiu incomplet';
+$string['introduction'] = 'Introducció';

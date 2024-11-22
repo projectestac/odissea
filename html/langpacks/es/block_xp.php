@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acciones';
+$string['activityname'] = 'Nombre de la actividad';
+$string['activityname_help'] = 'El texto que el nombre de la actividad debe contener o al que debe ser igual. No distingue mayúsculas y minúsculas.';
 $string['activityoresourceis'] = 'La actividad o recurso es {$a}';
 $string['addacondition'] = 'Añadir una condición';
 $string['addarule'] = 'Añadir una regla';
@@ -40,6 +42,7 @@ $string['admindefaultsettingsintro'] = 'La configuración que aparece a continua
 $string['admindefaultvisualsintro'] = 'Las siguientes imágenes serán usadas por defecto cuando el bloque sea añadido por primera vez a un curso.';
 $string['adminscanearnxp'] = 'Los administradores pueden ganar puntos';
 $string['adminscanearnxp_desc'] = 'Por defecto, los administradores no están incluidos en el grupo de usuarios que pueden ganar puntos. Esto es porque los administradores siempre tienen el permiso _block/xp:earnxp_, que les permite conseguir puntos en cualquier sitio. Usted puede usar este ajuste para que los administradores también ganen puntos.';
+$string['allcoursesreset'] = 'Se han reseteado todos los cursos.';
 $string['anonymity'] = 'Anonimato';
 $string['anonymity_help'] = 'Esta configuración controla si los participantes pueden ver el nombre de otros participantes y su imagen de perfil.';
 $string['apply'] = 'Aplicar';
@@ -58,13 +61,27 @@ $string['cannotbesetindefaults'] = 'Este no puede ajustarse en los valores por d
 $string['cannotearnpoints'] = 'No puede ganar puntos.';
 $string['cannotshowblockconfig'] = 'Normalmente mostraría la configuración de aspecto aquí, pero no puedo encontar su bloque. Para cambiar el aspecto del bloque, vuelva [aquí]({$a}) (o donde haya añadido el bloque), active edición y seleccione la opción "Configurar" en el desplegable del bloque. Si no puede encontrar el bloque, añádalo de nuevo a su curso.';
 $string['cannotshowblockconfigsys'] = 'Normalmente mostraría la configuración de aspecto aquí, pero no puedo encontrar su bloque. Puede que falte de [la página principal]({$a->fp}) y del [tablero por defecto]({$a->mysys}) de sus usuarios, o que esté presente en ambos. Para editar la configuración desde aquí, asegúrese de que aparezca solamente en uno de ellos.';
+$string['changecourse'] = 'Cambiar curso';
 $string['changelevelformhelp'] = 'Si cambia el número de niveles, las insignias de nivel personalizadas estarán deshabilitadas temporalmente a fin de evitar niveles sin insignias. Si cambia el número de niveles vaya a la página de \'Visuales\' para rehabilitar las insignias personalizadas una vez que haya guardado este formato.';
+$string['changetocourse'] = 'Cambiar a curso';
+$string['changetositewide'] = 'Volver a todo el sitio';
 $string['cheatguard'] = 'Control de trampas';
+$string['chooseacondition'] = 'Elegir una condición';
+$string['clearfilter'] = 'Limpiar filtro';
 $string['clicktoselectcm'] = 'Clicar para seleccionar una actividad o recurso';
 $string['cmselector'] = 'Selector de módulo de curso';
 $string['coefxp'] = 'Coeficiente del algoritmo';
 $string['colon'] = '{$a->a}: {$a->b}';
 $string['compatibilitycheck'] = 'Comprobación de compatibilidad';
+$string['completionrules'] = 'Reglas de finalización';
+$string['completionrules_help'] = 'Las reglas de finalización se separan en tres categorías: finalización de actividad, finalización de sección y finalización de curso. Añadir condiciones a las categorías determinará cuándo y cuántos puntos se consiguen.
+
+Las reglas se evalúan en el orden en que se presentan en pantalla. Tan pronto como se cumpla una condición se conseguirán los puntos correspondientes y no se seguirán evaluando las reglas restantes.
+
+[Para saber más](https://docs.levelup.plus/xp/docs/completion-rules?ref=blockxp_help)';
+$string['completionrulesintro'] = 'Atribuir puntos a los estudiantes según vayan completando actividades, secciones o cursos.';
+$string['completionruleslegacyusednotice'] = 'Usted tiene "reglas de evento" que usan condiciones de finalización. Recomendamos encarecidamente que las elimine en favor de los métodos siguientes ya que las "reglas de evento" y las "reglas de finalización" podrían duplicar la puntuación obtenida.';
+$string['condition'] = 'Condición';
 $string['configblockrankingsnapshot'] = 'Mostrar el tablero de ranking';
 $string['configblockrankingsnapshot_help'] = 'El tablero de ranking muestra el nivel del usuario. Puede intentar mostrar también las dos personas vecinas. Esta característica requiere que se active el ranking y que se muestren los niveles.';
 $string['configdescription'] = 'Introducción';
@@ -76,6 +93,7 @@ $string['configtitle'] = 'Título';
 $string['configtitle_help'] = 'El título del bloque.';
 $string['congratulationsyouleveledup'] = '¡Felicidades!';
 $string['coolthanks'] = '¡Genial, gracias!';
+$string['coursea'] = 'Curso "{$a}"';
 $string['courselog'] = 'Registro del curso';
 $string['coursereport'] = 'Informe del curso';
 $string['courserules'] = 'Normas del curso';
@@ -85,7 +103,7 @@ $string['coursevisuals'] = 'Visuales del curso';
 $string['currencysign'] = 'Símbolo de puntos';
 $string['currencysign_help'] = 'Con este ajuste usted puede cambiar el significado de los puntos. Se mostrará junto a la cantidad de puntos que tiene cada usuario como sustituto de la referencia a _puntos de experiencia_.
 
-Elja uno de los símbolos existentes, ¡o suba los suyos!';
+Elija uno de los símbolos existentes, ¡o suba los suyos!';
 $string['currencysignxp'] = 'XP (puntos de experiencia)';
 $string['customizelevels'] = 'Personalizar los niveles';
 $string['dangerzone'] = 'Zona de peligro';
@@ -120,7 +138,7 @@ $string['documentation'] = 'Documentación';
 $string['drops'] = 'Soltar (drops)';
 $string['drops_help'] = 'En videojuegos, algunos personajes pueden _soltar_ artículos o puntos de experiencia en el suelo para que el jugador los recoja. Estos artículos y puntos se suelen llamar "drops".
 
-En Level Up XP, los "drops" son fragmentos de código ( p.ej. `[xpdrop abcdef]`) que un docente puede colocar en contenido habitual de Moodle. Cuando se los encuentra un usuario, estos "drops" se _recogerán_ y se conseguirá un cierto número de puntos.
+En Level Up XP, los "drops" son fragmentos de código ( p.ej. `[xpdrop id=1 secret=abcdef]`) que un docente puede colocar en contenido habitual de Moodle. Cuando se los encuentra un usuario, estos "drops" se _recogerán_ y se conseguirá un cierto número de puntos.
 
 Actualmente, los "drops" son invisibles para el usuario y el usuario los consigue de forma pasiva la primera vez que los encuentra.
 
@@ -133,10 +151,11 @@ Los "drops" se pueden usar para dar puntos de forma inteligente cuando un estudi
 
 [Más información](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'Los "drops" son fragmentos de código que se colocan directamente en un contenido que dé puntos cuando lo encuentre un usuario.';
+$string['editcondition'] = 'Editar condición';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**¡Atención!** Usted no está modificando la configuración activa actualmente, sino que está editando los valores por defecto. Como Level Up XP se usa en todo el sitio, su intención probablemente es cambiar los ajustes de todo el sitio. [Venga aquí]({$a->url}) para cambiar esos ajustes, o siga el enlace "Ajustes" del propio bloque XP.';
 $string['editinstructions'] = 'Editar información';
 $string['enablecheatguard'] = 'Activar medidas contra trampas';
-$string['enablecheatguard_help'] = 'Las medidas contra trampas son un mecanismo sencillo para evitar que los estudiantes abusen del sistema usando trucos obvios, como refrescar la misma página sin parar, o repetir la misma accción una y otra vez.';
+$string['enablecheatguard_help'] = 'Las medidas contra trampas son un mecanismo sencillo para evitar que los estudiantes abusen del sistema usando trucos obvios, como refrescar la misma página sin parar, o repetir la misma acción una y otra vez.';
 $string['enableinfos'] = 'Habilitar página de información';
 $string['enableinfos_help'] = 'Cuando se configura a "No", los estudiantes no podrán ver la página de información.';
 $string['enableladder'] = 'Habilitar el ranking';
@@ -149,7 +168,7 @@ $string['enablexpgain_help'] = 'Cuando se configura como NO, nadie podrá ganar 
 
 Por favor, tenga en cuenta que también puede controlarse con mayor precisión usando el permiso _block/xp:earnxp_.';
 $string['entersearchterm'] = 'Introducir un término de búsqueda';
-$string['errorcontextcoursemismatchforwholesite'] = 'La URL de esta página <em>Level Up XP</em> no coincide con la configuración actual del plugin. Su configuración actual dice que <em>Level Up XP</em> se usa "Para todo el sitio". Sin embargo, esta página espera usarlo "Por curso". Por favor, <a href="{$a->nexturl}">clique aquí</a> para navegar a la página correcta. Busque el ajuste "block_xp_context" si desea cambiar su configuración.';
+$string['errorcontextcoursemismatchforwholesite'] = 'La URL de esta página <em>Level Up XP</em> no coincide con la configuración actual del plugin. Su configuración actual dice que <em>Level Up XP</em> se usa "Para todo el sitio". Sin embargo, esta página espera usarlo "Por curso". Por favor, <a href="{$a->nexturl}">clique aquí</a> para navegar a la página correcta. Busque el ajuste de administración "block_xp_context" si desea cambiar su configuración.';
 $string['errorcontextcoursemismatchpercourse'] = 'La URL de esta página <em>Level Up XP</em> no coincide con la configuración actual del plugin. Su configuración actual dice que <em>Level Up XP</em> se usa "Por curso". Sin embargo, esta página espera usarlo "Para todo el sitio".  Probablemente sea porque se añadió un <em>bloque</em> al tablero de la página principal cuando tenía otra configuración. Debe eliminar el bloque de las páginas anteriores y usarlo solamente en cursos individuales.';
 $string['errorformvalues'] = 'Hay algunos problemas en los valores del formato, por favor arréglelos.';
 $string['errorlevelsincorrect'] = 'El número mínimo de niveles es 2';
@@ -167,11 +186,14 @@ Puede usar el formulario siguiente para añadir sus propias reglas y modificar l
 
 Se recomienda comprobar la página de _log_  del plugin para identificar eventos que se disparan cuando los estudiantes realizar acciones en el curso.
 
+Recursos adicionales:
+
 - [¿Cómo se calculan puntos de experiencia?](https://docs.levelup.plus/xp/docs/getting-started/points-calculation?ref=blockxp_help)
 - [Solución de problemas de reglas](https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
 $string['eventsrulesintro'] = 'Observe acciones y dé puntos a los estudiantes cuando las realizan.';
 $string['eventtime'] = 'Hora del evento';
 $string['filterbyuser'] = 'Filtrar por usuario';
+$string['filterellipsis'] = 'Filtrar...';
 $string['filtermodules'] = 'Filtrar módulos';
 $string['for1day'] = 'Por 1 día';
 $string['for1month'] = 'Por 1 mes';
@@ -185,7 +207,7 @@ $string['graderules'] = 'Reglas de calificación';
 $string['graderules_help'] = 'Los estudiantes ganarán tantos puntos como su calificación.
 Tanto una calificación de 5/10 como una de 5/100 le darán al estudiante 5 puntos.
 Cuando la calificación de un estudiante varíe varias veces, ganarán puntos equivalentes a la calificación máxima que hayan recibido.
-A los estudiantes nunca se les quitan npuntos, y se ignoran las calificaciones negativas.
+A los estudiantes nunca se les quitan puntos, y se ignoran las calificaciones negativas.
 
 Ejemplo: Alicia entrega una tarea y recibe una calificación de 40/100. En _Level Up XP_, Alicia recibe 40 puntos por su calificación.
 Alicia hace un nuevo intento en la misma tarea, pero esta vez su calificación baja a 25/100. Los puntos de Alicia en _Level Up XP_ no varían.
@@ -205,7 +227,7 @@ $string['haspopupmessage'] = 'Configuración de mensaje emergente';
 $string['hideparticipantsidentity'] = 'Ocultar identidad de los participantes';
 $string['hiderank'] = 'Esconder posición';
 $string['importpoints'] = 'Importar puntos';
-$string['importpoints_help'] = 'La importación puede usarse para _aumentar_ la puntuación de los estudiantes, no para _sobreescribirla_ con el valor dado.
+$string['importpoints_help'] = 'La importación puede usarse para _aumentar_ la puntuación de los estudiantes, o para _sobreescribirla_ con el valor dado.
 
 Observe que la importación _no_ usa el mismo formato que el informe exportado. El formato requerido se describe en la [documentación](https://docs.levelup.plus/xp/docs/how-to/import-points/importing-points-from-csv?ref=localxp_help), donde hay un [archivo de ejemplo](https://docs.levelup.plus/xp/docs/how-to/import-points/importing-points-from-csv?ref=localxp_help#sample-file) disponible.';
 $string['importpointsintro'] = 'Importar puntos desde un archivo CSV, y opcionalmente enviar un mensaje al receptor.';
@@ -231,7 +253,7 @@ Recomendamos imágenes de 100x100 píxeles, en cualquiera de los siguientes form
 $string['levelbadgesformhelp'] = 'Nombre los archivos [nivel].[extensión del archivo],por ejemplo: 1.png, 2.jpg, etc... El tamaño recomendado de imagen es 100x100.';
 $string['levelcount'] = 'Número de niveles';
 $string['leveldesc'] = 'Descripción del nivel';
-$string['leveldesc_help'] = 'Una breve descripción del nivel. Esto se muestra en la página de información junto al nivel mismo. Puede usarlo para describir una recompensa a estudiantes que hayan alcanzado el nivel, para incluir instrucciones sobre cómo trabajar para conseguir este nivel, para describir el nivel de forma lúdia (p.ej.: _Sólo los más intrépidos han llegado a conseguir este nivel_), etc.';
+$string['leveldesc_help'] = 'Una breve descripción del nivel. Esto se muestra en la página de información junto al nivel mismo. Puede usarlo para describir una recompensa a estudiantes que hayan alcanzado el nivel, para incluir instrucciones sobre cómo trabajar para conseguir este nivel, para describir el nivel de forma lúdica (p.ej.: _Sólo los más intrépidos han llegado a conseguir este nivel_), etc.';
 $string['leveldescriptiondesc'] = 'Breve descripción del nivel, mostrada a los estudiantes en la página de información.';
 $string['levelname'] = 'Nombre del nivel';
 $string['levelname_help'] = 'Un nombre corto para mostrar en vez del _Nivel #1_, _Nivel #2_, etc que aparece por defecto a veces. ¡Si da nombre a algunos niveles, recomendamos que dé nombre a todos!';
@@ -252,15 +274,18 @@ $string['list'] = 'Lista';
 $string['logging'] = 'Accediendo';
 $string['manually'] = 'Manualmente';
 $string['maxactionspertime'] = 'Máximo de acciones en el lapso de tiempo';
-$string['maxactionspertime_help'] = 'El número máximo de acciones que contarán para puntuar durante el lapso de tiempo dado. Cualquier acción subsiguiente se ignorará.';
+$string['maxactionspertime_help'] = 'El número máximo de acciones que contarán para puntuar durante el lapso de tiempo dado. Cualquier acción subsiguiente se ignorará. Cuando este valor esta vacío o es igual a cero "0", no aplicará.';
 $string['maxlevelexcl'] = '¡Nivel máximo!';
 $string['menu'] = 'Menú';
 $string['missing'] = 'Falta';
 $string['movecondition'] = 'Mover condición';
 $string['moverule'] = 'Mover regla';
 $string['name'] = 'Nombre';
+$string['namecontains'] = 'Contiene "{$a}"';
+$string['nameequalsto'] = 'Es igual a "{$a}"';
 $string['navbardisplay'] = 'Mostrar en barra de navegación';
 $string['navbardisplay_desc'] = 'Cuando se habilita, el nivel del usuario se mostrará en la barra de navegación superior. Si el plugin se usa "por cursos", sólo aparecerá en cursos. Por favor, observe que esta funcionalidad es altamente dependiente del tema y puede no funcionar bien, o no funcionar en absoluto, con temas de terceros. [Saber más](https://docs.levelup.plus/xp/docs/navbar-display)';
+$string['navcompletionrules'] = 'Finalización';
 $string['navdrops'] = '"Drops"';
 $string['naveventrules'] = 'Reglas de evento';
 $string['navgraderules'] = 'Reglas de calificación';
@@ -277,12 +302,16 @@ $string['navrules'] = 'Reglas';
 $string['navsettings'] = 'Configuraciones';
 $string['navvisuals'] = 'Aspecto';
 $string['nextlevelin'] = 'próximo nivel en';
+$string['noconditionsyet'] = '¡Aún sin condiciones!';
+$string['noconditionsyetintro'] = 'Comience añadiendo una condición.';
 $string['nodescription'] = 'Sin descripción';
 $string['noissuesidentified'] = 'No se han identificado problemas';
 $string['nologsrecordedyet'] = 'No se han guardado los registros aún.';
 $string['noname'] = 'Sin nombre';
+$string['noneareavailable'] = 'Nada disponible.';
 $string['notecompatibilityissues'] = 'Por favor, tenga en cuenta los problemas de compatibilidad identificados a continuación:';
 $string['notesomesettingslocked'] = 'Algunos de los ajustes pueden no ser editables si un administrador los ha bloqueado.';
+$string['nothingmatchesfilter'] = 'Nada coincide con el filtro.';
 $string['numberoflevels'] = 'Número de niveles';
 $string['occasionally'] = 'Ocasionalmente';
 $string['outofsync'] = 'Fuera de sincronización';
@@ -305,9 +334,12 @@ $string['pluginxmaybeincompatible'] = 'Esta versión de {$a->name} ({$a->compone
 $string['pointsintimelinker'] = 'por';
 $string['pointsperlevel'] = 'Puntos por nivel';
 $string['pointsrequired'] = 'Puntos requeridos';
+$string['pointstoaward'] = 'Puntos a otorgar';
+$string['pointstoaward_help'] = 'El número de puntos a otorgar cuando se cumplan las condiciones.';
 $string['popupnotificationmessage'] = 'Mensaje emergente de notificación';
 $string['popupnotificationmessagedesc'] = 'Mensaje opcional a mostrar dentro de la notificación emergente que felicita al usuario por alcanzar el nivel.';
 $string['potentialmoodleincompatibility'] = 'Potencial incompatibilidad de Moodle';
+$string['previewpopupnotification'] = 'Vista previa de notificación';
 $string['privacy:metadata:log'] = 'Guarda un registro de eventos';
 $string['privacy:metadata:log:eventname'] = 'El nombre del evento';
 $string['privacy:metadata:log:time'] = 'La fecha en que ocurrió';
@@ -347,20 +379,22 @@ $string['questreleasenotice'] = '🎉 Nos emociona anunciar **nuestro nuevo plug
 $string['quickeditpoints'] = 'Edición rápida de puntos';
 $string['rank'] = 'Ranking';
 $string['ranking'] = 'Ranking';
-$string['ranking_help'] = 'El ranking es la posición absoluta del usuario actual en el tablero de ranking. El ranking relativo es la diferencia en puntos de experiencia entre un usuario y sus vecinos.';
+$string['ranking_help'] = 'El rank es la posición absoluta del usuario actual en el tablero de ranking. El ranking relativo es la diferencia en puntos de experiencia entre un usuario y sus vecinos.';
 $string['reallydeleteuserstate'] = 'Borrar un usuario solamente es útil para borrarlo del tablero. Para otros casos, recomendamos poner sus puntos a 0 en vez de borrarlo. Borrar usuarios no afecta su posibilidad de ganar puntos en el futuro.
 
-Importante: Cuando se usa _¡Sube de nivel!_ para todo el sitio, borrarlos hará que desaparezcan del informe, en cuyo caso usted no podrá volver a darles puntos. Sin embargo, si está usando _¡Sube de nivel!_ por curso, el estudiante aún podrá aparecer en el informe si aún está matriculado.
+Importante: Cuando se usa _Level Up XP_ para todo el sitio, borrarlos hará que desaparezcan del informe, en cuyo caso usted no podrá volver a darles puntos. Sin embargo, si está usando _Level Up XP_ por curso, el estudiante aún podrá aparecer en el informe si aún está matriculado.
 
 ¿Seguro que quiere borrar los puntos de este usuario?';
-$string['reallydeleteuserstateandlogs'] = 'Borrar un usuario lo elimina del tablero y borra todos los registros asociados.
+$string['reallydeleteuserstateandlogs'] = 'Borrar un usuario lo elimina del tablero y borra todos sus registros asociados.
 
 Borrar registros puede permitir a un usuario volver a ganar puntos por acciones previas. Si su intención es sólo resetear sus puntos, recomendamos poner sus puntos a 0 en vez de borrar. Borrar un usuario no afecta su capacidad de ganar puntos en el futuro.
 
-Importante: Cuando se usa _¡Sube de nivel!_ para todo el sitio, borrarlos hará que desaparezcan del informe, en cuyo caso usted no podrá volver a darles puntos. Sin embargo, si está usando _¡Sube de nivel!_ por curso, el estudiante aún podrá aparecer en el informe si aún está matriculado.
+Importante: Cuando se usa _Level Up XP_ para todo el sitio, borrarlos hará que desaparezcan del informe, en cuyo caso usted no podrá volver a darles puntos. Sin embargo, si está usando _Level Up XP_ por curso, el estudiante aún podrá aparecer en el informe si aún está matriculado.
 
 ¿Seguro que quiere borrar los puntos y registros de este usuario?';
-$string['reallyresetallcoursestodefaults'] = '¿Seguro que quiere resetear todas las reglas de cursos a las reglas por defecto? Esta acción no es reversible.';
+$string['reallyresetallcourselevelstodefaults'] = '¿Seguro que quiere resetear TODOS los niveles de cursos a sus valores por defecto? Esta acción no es reversible.';
+$string['reallyresetallcoursestodefaults'] = '¿Seguro que quiere resetear TODAS las reglas de cursos a las reglas por defecto? Esta acción no es reversible.';
+$string['reallyresetallcoursevisualstodefaults'] = '¿Seguro que quiere resetear el aspecto de TODOS los niveles de cursos a su aspecto por defecto? Esta acción no es reversible.';
 $string['reallyresetcourselevelstodefaults'] = '¿Seguro que quiere resetear los niveles a los niveles por defecto? Esta acción no es reversible.';
 $string['reallyresetcourserulestodefaults'] = '¿Seguro que quiere resetear todas las reglas de cursos a las reglas por defecto? Esta acción no es reversible.';
 $string['reallyresetcoursevisualstodefaults'] = '¿Seguro que quiere resetear el aspecto de los niveles a su aspecto por defecto? Esta acción no es reversible.';
@@ -396,6 +430,7 @@ $string['rule:gte'] = 'es mayor o igual a';
 $string['rule:lt'] = 'es menor que';
 $string['rule:lte'] = 'es menor o igual a';
 $string['rule:regex'] = 'coincide con el regex';
+$string['ruleadded'] = 'Se ha añadido la condición.';
 $string['rulecm'] = 'Actividad o recurso';
 $string['rulecm_help'] = 'Esta condición se cumple cuando el evento ocurre en la actividad o recurso especificado.';
 $string['rulecmdesc'] = 'La actividad o recurso es "{$a->contextname}".';
@@ -404,6 +439,23 @@ $string['rulecminfo'] = 'Esta condición requiere que la acción tenga lugar en 
 $string['ruleevent'] = 'Evento específico';
 $string['ruleeventdesc'] = 'El evento es "{$a->eventname}"';
 $string['ruleeventinfo'] = 'Elija la acción que los usuarios deben realizar de una lista seleccionada de eventos.';
+$string['rulefilterany'] = 'Cualquiera';
+$string['rulefilteranycm'] = 'Cualquier actividad';
+$string['rulefilteranycmdesc'] = 'Esta condición coincidirá con cualquier actividad.';
+$string['rulefilteranycourse'] = 'Cualquier curso';
+$string['rulefilteranycoursedesc'] = 'Esta condición coincidirá con cualquier curso.';
+$string['rulefilteranydesc'] = 'Esta condición coincide con cualquier cosa.';
+$string['rulefilteranysection'] = 'Cualquier sección';
+$string['rulefilteranysectiondesc'] = 'Esta condición coincidirá con cualquier sección.';
+$string['rulefiltercm'] = 'Actividad específica';
+$string['rulefiltercmdesc'] = 'Elija una actividad o recurso específico en el curso.';
+$string['rulefiltercmname'] = 'Nombre de la actividad';
+$string['rulefiltercmnamedesc'] = 'Condición basada en el nombre de la actividad.';
+$string['rulefilternone'] = 'Nada';
+$string['rulefiltersection'] = 'Sección específica';
+$string['rulefiltersectiondesc'] = 'Elija una sección específica del curso.';
+$string['rulefilterthiscourse'] = 'Este curso';
+$string['rulefilterthiscoursedesc'] = 'Elija el curso actual';
 $string['ruleproperty'] = 'Propiedad del evento';
 $string['rulepropertydesc'] = 'La propiedad es "{$a->property}" {$a->compare} "{$a->value}".';
 $string['rulepropertyinfo'] = 'Esta condición es para usuarios avanzados con comprensión técnica de los eventos y sus propiedades.';
@@ -424,8 +476,22 @@ $string['rulesformhelp'] = '<p>Este plugin hace uso de EVENTOS para otorgar punt
 </li>
 </ul>
 </p>';
+$string['rulesscope'] = 'Alcance';
+$string['rulesscope_help'] = 'El alcance de las reglas determina cuándo se aplicarán.
+
+Las reglas se pueden crear con dos alcances: para todo el sitio o específicas para un curso. Cuando sea posible, se evaluarán primero las reglas de curso, seguidas de las reglas de sitio. Esto permite a los educadores crear reglas más amplias aplicables a todo el sitio y ajustarlas para cursos individual.
+
+- Para todo el sitio: Estas reglas son efectivas para todo el sitio, excepto cuando haya reglas específicas para cursos.
+- Para el curso: Estas reglas se aplican sólo en un curso específico. Tienen prioridad sobre las reglas de todo el sitio.';
+$string['ruletypecmcompletion'] = 'Finalización de actividad';
+$string['ruletypecmcompletiondesc'] = 'Otorgar puntos cuando una actividad se ha marcado como completada.';
+$string['ruletypecoursecompletion'] = 'Finalización de curso';
+$string['ruletypecoursecompletiondesc'] = 'Otorga puntos cuando un curso se marca como completado.';
+$string['ruletypesectioncompletion'] = 'Finalización de sección';
+$string['ruletypesectioncompletiondesc'] = 'Otorga puntos cuando una sección de curso se ha marcado como finalizada.';
 $string['searchandselectcourse'] = 'Buscar y seleccionar un curso';
 $string['searchandselectmodule'] = 'Buscar y seleccionar una actividad o recurso';
+$string['selectcourse'] = 'Seleccionar curso';
 $string['send'] = 'Enviar';
 $string['setpoints'] = 'Conjunto de puntos';
 $string['shortcode:xpbadge'] = 'La condecoración que equivale al nivel actual del usuario.';
@@ -507,6 +573,7 @@ El estilo de los puntos dependerá de si se muestra un valor arbitrario o los pu
 [xppoints 123 plain]
 ```';
 $string['shortcode:xpprogressbar'] = 'La barra de progreso del usuario actual hacia el siguiente nivel.';
+$string['sitewide'] = 'Para todo el sitio';
 $string['somefeaturesrequireotherplugins'] = 'Algunas características requieren la instalación de plugins adicionales.';
 $string['someoneelse'] = 'Otra persona';
 $string['somethinghappened'] = 'Algo ha pasado';
@@ -526,8 +593,14 @@ $string['tinytimeseconds'] = '{$a}s';
 $string['tinytimeweeks'] = '{$a}w';
 $string['tinytimewithinayearformat'] = '%b %e';
 $string['total'] = 'Total';
+$string['tryme'] = 'Pruébeme';
+$string['unavailable'] = 'No disponible';
+$string['unknownactivitya'] = 'Actividad desconocida ({$a})';
 $string['unknownbadgea'] = 'Insignia ({$a}) desconocida';
+$string['unknownconditiona'] = 'Condición desconocida ({$a})';
 $string['unknowneventa'] = 'Evento desconocido ({$a})';
+$string['unknownsectiona'] = 'Sección desconocida ({$a})';
+$string['unknowntypea'] = 'Tipo desconocido ({$a})';
 $string['unlockfeaturewithxpplus'] = 'Desbloquee esta característica con XP+. <a href="{$a}">Saber más</a>';
 $string['updateandpreview'] = 'Subir y previsualizar';
 $string['upgradingplugins'] = 'Actualizando los plugins';
@@ -547,7 +620,7 @@ $string['visualsintro'] = 'Suba imágenes para personalizar la apariencia de los
 $string['wewillreplyat'] = 'Responderemos en: _{$a}_.';
 $string['when'] = 'Cuando';
 $string['wherearexpused'] = '¿Dónde se usan los puntos?';
-$string['wherearexpused_desc'] = 'Cuando se ajusta a "En cursos", los puntos obtenidos sólo contarán para el curso en el que se haya añadido el bloque. Cuando se ajusta a "Para todo el sitio", un usuario puede "subir de nivel" en el sitio en vez de independientemente por curso, todos los puntos obtenidos a través del sitio se computarán.';
+$string['wherearexpused_desc'] = 'Cuando se ajusta a "En cursos", los puntos obtenidos sólo contarán para el curso en el que se haya añadido el bloque. Cuando se ajusta a "Para todo el sitio" en vez de selectivamente por curso, se usarán todos los puntos obtenidos a través del sitio.';
 $string['whoops'] = '¡Vaya!';
 $string['xp'] = 'Puntos de experiencia';
 $string['xp:addinstance'] = 'Agregar un nuevo bloque';

@@ -29,4 +29,5 @@ $string['btecgrading_link'] = 'BTEC_marking';
 $string['comments'] = 'Frequently used comments';
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest element?';
 $string['level'] = 'Nivell';
+$string['save'] = 'Desa';
 $string['yes'] = 'sí';

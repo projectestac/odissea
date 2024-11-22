@@ -60,6 +60,7 @@ $string['file'] = 'Carica contenuto';
 $string['file_help'] = 'È possibile memorizzare contenuti nel deposito ed utilizzarli nei corsi. È possibile caricare solamente file inclusi nei tip di contenuto abilitati.';
 $string['itemsfound'] = 'trovati {$a} elementi';
 $string['lastmodified'] = 'Ultima modifica';
+$string['more'] = 'Di più';
 $string['name'] = 'Contenuto';
 $string['nocontentavailable'] = 'Non ci sono contenuti disponibili';
 $string['nocontenttypes'] = 'Non ci sono tipi di contenuto disponibili';

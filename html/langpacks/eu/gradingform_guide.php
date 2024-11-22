@@ -68,7 +68,7 @@ $string['gradingof'] = '{$a} kalifikatzen';
 $string['guide'] = 'Ebaluazio-gida';
 $string['guidemappingexplained'] = 'KONTUZ: zure ebaluazio-gidak <b>{$a->maxscore} puntuko</b> gehieneko kalifikazioa du, baina zure jardueraren gehieneko kalifikazioa {$a->modulegrade} da. Kalifikazio-gidaren gehieneko kalifikazioa moduluaren gehieneko kalifikaziora eskalatuko da. <br />
    Bitarteko puntuazioak era berean eraldatuko dira, eta erabilgarria den gertukoen baliora biribilduko dira.';
-$string['guidenotcompleted'] = 'Mesedez, eman kalifikazio egokia irizpide guztietan';
+$string['guidenotcompleted'] = 'Ebaluazio-gida osatu gabe dago, eman kalifikazio egoki bat irizpide guztietan';
 $string['guideoptions'] = 'Ebaluazio-gidaren aukerak';
 $string['guidestatus'] = 'Ebaluazio-gidaren oraingo egoera';
 $string['hidemarkerdesc'] = 'Ezkutatu kalifikatzailearen irizpideen deskribapenak';

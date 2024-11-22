@@ -54,7 +54,7 @@ class file_storage implements \H5PFileStorage {
             'component' => 'mod_hvp',
             'filearea' => 'libraries',
             'itemid' => 0,
-            'filepath' => '/' . \H5PCore::libraryToString($library, true) . '/',
+            'filepath' => '/' . \H5PCore::libraryToFolderName($library) . '/',
         );
 
         // Remove any old existing library files.
@@ -148,7 +148,7 @@ class file_storage implements \H5PFileStorage {
      */
     // @codingStandardsIgnoreLine
     public function exportLibrary($library, $target) {
-        $folder = \H5PCore::libraryToString($library, true);
+        $folder = \H5PCore::libraryToFolderName($library);
         $context = \context_system::instance();
         self::exportFileTree("{$target}/{$folder}", $context->id, 'libraries', "/{$folder}/");
     }
@@ -380,6 +380,8 @@ class file_storage implements \H5PFileStorage {
      */
     // @codingStandardsIgnoreLine
     public function saveFile($file, $contentid, $contextid = null) {
+        global $CFG;
+
         if ($contentid !== 0) {
             // Grab cm context.
             $cm = \get_coursemodule_from_instance('hvp', $contentid);
@@ -388,6 +390,26 @@ class file_storage implements \H5PFileStorage {
         } else if ($contextid === null) {
             // Check for context id in params.
             $contextid = optional_param('contextId', null, PARAM_INT);
+            $context = \context::instance_by_id($contextid);
+        }
+
+        if (!$context) {
+            \H5PCore::ajaxError(get_string('invalidcontext', 'error'));
+            return;
+        }
+
+        $maxsize = get_max_upload_file_size($CFG->maxbytes);
+        // Check size of each uploaded file and scan for viruses.
+        foreach ($_FILES as $uploadedfile) {
+            $filename = clean_param($uploadedfile['name'], PARAM_FILE);
+
+            if (!has_capability('moodle/course:ignorefilesizelimits', $context)) {
+                if ($uploadedfile['size'] > $maxsize) {
+                    \H5PCore::ajaxError(get_string('maxbytesfile', 'error', ['file' => $filename, 'size' => display_size($maxsize)]));
+                    return;
+                }
+            }
+            \core\antivirus\manager::scan_file($uploadedfile['tmp_name'], $filename, true);
         }
 
         // Files not yet related to any activities are stored in a course context
@@ -881,5 +903,10 @@ class file_storage implements \H5PFileStorage {
 
         // Store in local storage folder.
         return file_put_contents($filepath, $stream);
+    }
+
+    // @codingStandardIgnoreLine
+    public function deleteLibrary($library) {
+        // TODO: Implement deleteLibrary() method.
     }
 }

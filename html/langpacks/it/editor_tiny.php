@@ -300,6 +300,7 @@ $string['tiny:open_link_in...'] = 'Apri collegamento in...';
 $string['tiny:open_popup_menu_for_split_buttons'] = 'Apri il menu a comparsa per i pulsanti divisi';
 $string['tiny:or'] = 'OPPURE';
 $string['tiny:orange'] = 'Arancio';
+$string['tiny:outset'] = 'Iniziale';
 $string['tiny:page_break'] = 'Interruzione di pagina';
 $string['tiny:paragraph'] = 'Paragrafo';
 $string['tiny:paste'] = 'Incolla';

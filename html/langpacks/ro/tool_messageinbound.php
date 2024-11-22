@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['classname'] = 'Numele clasei';
+$string['classname'] = 'Denumirea clasei';
 $string['component'] = 'Componenta';
 $string['configmessageinboundhost'] = 'Adresa serverului cu care Moodle ar trebui să verifice e-mailurile. Pentru a specifica un port non-implicit, utilizați [server]: [port], de exemplu mail.example.com:993. Dacă nu este specificat un port, va fi utilizat portul implicit pentru tipul de server de mail.';
 $string['defaultexpiration'] = 'Perioada de expirare a adresei prestabilite';

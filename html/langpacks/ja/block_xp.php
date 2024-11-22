@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'アクション';
+$string['activityname'] = '活動名';
+$string['activityname_help'] = '活動名に含まれる、または等しいテキスト。大文字と小文字は区別されません。';
 $string['activityoresourceis'] = '活動またはリソースは{$a}';
 $string['addacondition'] = '条件を追加';
 $string['addarule'] = 'ルールを追加';
@@ -40,6 +42,7 @@ $string['admindefaultsettingsintro'] = 'ブロックがコースに新しく追�
 $string['admindefaultvisualsintro'] = 'ブロックがコースに新しく追加された場合、下記の設定がデフォルトとして使用されます。';
 $string['adminscanearnxp'] = '管理者がポイントを獲得できる';
 $string['adminscanearnxp_desc'] = 'デフォルトでは、管理者はポイントを獲得できるユーザーグループに含まれません。これは、管理者が常に_block/xp:earnxp_パーミッションを持っており、どこでも継続的にポイントを集めることができるためです。この設定を使用して、管理者もポイントを獲得できるようにすることができます。';
+$string['allcoursesreset'] = 'すべてのコースがリセットされました。';
 $string['anonymity'] = '名前を隠す';
 $string['anonymity_help'] = 'この設定は、参加者がお互いの名前とアバターを見ることができるかどうかをコントロールします。';
 $string['apply'] = '適用';
@@ -47,7 +50,7 @@ $string['awardaxpwhen'] = '<strong>{$a}</strong>ポイントを以下の場合�
 $string['badgeaward'] = '付与するバッジ';
 $string['badgeawarddesc'] = 'ユーザがそのレベルに到達したときに付与されるバッジ。';
 $string['basepoints'] = '基本ポイント';
-$string['basepointslineardesc'] = '各レベル間の最小増加量。';
+$string['basepointslineardesc'] = 'レベルの基本ポイント';
 $string['basepointsrelativedesc'] = 'スタート時のポイント数。';
 $string['basexp'] = '算出基準';
 $string['blockappearance'] = 'ブロックの表示';
@@ -58,12 +61,26 @@ $string['cannotbesetindefaults'] = 'デフォルト値では設定できない�
 $string['cannotearnpoints'] = 'ポイント獲得はできない。';
 $string['cannotshowblockconfig'] = '通常はここに外観の設定を表示するのですが、あなたのブロックが見つかりませんでした。ブロックの外観を変更するには、[ここ]({$a}) (またはブロックを追加した場所) に戻り、編集モードをオンにして、ブロックのドロップダウンにある「設定」オプションに従ってください。ブロックが見つからない場合、再度コースに追加してください。';
 $string['cannotshowblockconfigsys'] = '通常は外観の設定をここに表示するのですが、あなたのブロックを見つけることができませんでした。ユーザーの[フロントページ]({$a->fp})と[デフォルトダッシュボード]({$a->mysys})から消えているか、両方に存在している可能性があります。ここから設定を編集するには、どちらか一方にのみ表示されていることを確認してください。';
+$string['changecourse'] = 'コース変更';
 $string['changelevelformhelp'] = 'レベル数を変更した場合、カスタムレベルバッジはバッジのないレベルを防ぐために一時的に無効になります。レベル数を変更した場合、このフォームを保存した後、「ビジュアル」のページでカスタムバッジを再度有効にしてください。';
+$string['changetocourse'] = 'コース変更';
+$string['changetositewide'] = 'サイト全体に戻る';
 $string['cheatguard'] = 'チート防止';
+$string['chooseacondition'] = '条件を選ぶ';
+$string['clearfilter'] = 'クリアフィルタ';
 $string['clicktoselectcm'] = 'クリックして活動やリソースを選択';
 $string['cmselector'] = 'コースモジュール選択';
 $string['coefxp'] = 'アルゴリズム係数';
 $string['compatibilitycheck'] = '互換性チェック';
+$string['completionrules'] = 'コンプリーションルール';
+$string['completionrules_help'] = 'コンプリーションルールは、活動完了、セクション完了、コース完了の3つのカテゴリーに分かれています。カテゴリーに条件を追加することで、いつ、どれだけのポイントが与えられるかが決まります。
+
+ルールは画面に表示された順に評価されます。条件が満たされ次第、対応するポイントが与えられ、それ以降のルールは評価されません。
+
+[Learn more](https://docs.levelup.plus/xp/docs/completion-rules?ref=blockxp_help)';
+$string['completionrulesintro'] = '活動、セクション、コースを完了すると、学生にポイントが付与されます。';
+$string['completionruleslegacyusednotice'] = '完了条件を使用した「イベントルール」があります。「イベントルール」と「コンプリーションルール」の両方を使用すると、獲得ポイントが2倍になる可能性があるため、以下の方法を選択し、削除することを強くお勧めします。';
+$string['condition'] = '状態';
 $string['configblockrankingsnapshot'] = 'リーダーボードのスナップショットを表示';
 $string['configblockrankingsnapshot_help'] = 'リーダーボードのスナップショットは、ユーザーのランクを表示します。また、そのユーザーを取り囲む2人も表示しようとします。この機能は、リーダーボードが有効で、そのランクが表示されている必要があります。';
 $string['configdescription'] = '追加説明';
@@ -75,6 +92,7 @@ $string['configtitle'] = 'タイトル';
 $string['configtitle_help'] = 'ブロックのタイトル';
 $string['congratulationsyouleveledup'] = 'おめでとうございます！';
 $string['coolthanks'] = 'ありがとう！';
+$string['coursea'] = 'コース "{$a}"';
 $string['courselog'] = 'コースログ';
 $string['coursereport'] = 'コースレポート';
 $string['courserules'] = 'コース内のルール';
@@ -97,11 +115,11 @@ $string['deletecondition'] = '条件を削除する';
 $string['deleterule'] = 'ルールを削除する';
 $string['description'] = '説明';
 $string['difficulty'] = 'ポイント計算方法';
-$string['difficultyflat'] = 'イコール';
+$string['difficultyflat'] = '等間隔';
 $string['difficultyflatdesc'] = 'どのレベルも、達成に必要なポイント数は同じである。';
-$string['difficultylinear'] = '増加';
-$string['difficultylineardesc'] = 'レベルに到達するのに時間がかかる。';
-$string['difficultylinearincrdesc'] = 'プログレッシブ難易度のポイント数。';
+$string['difficultylinear'] = '一定増加';
+$string['difficultylineardesc'] = '各レベル間で難易度が直線的に増加する。';
+$string['difficultylinearincrdesc'] = '累進難易度に使用されるポイント数。';
 $string['difficultypointincrease'] = 'ポイント増加';
 $string['difficultyrelative'] = '雪だるま式';
 $string['difficultyrelativedesc'] = 'レベルに到達するのは指数関数的に難しくなる。';
@@ -131,6 +149,7 @@ $string['drops_help'] = 'ビデオゲームでは、一部のキャラクター�
 
 [詳細](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'ドロップとは、コンテンツに直接配置されたコードのことで、ユーザーが遭遇するとポイントが付与されます。';
+$string['editcondition'] = '編集条件';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**注意！*** 現在有効な設定を変更するのではなく、デフォルト値を編集することになります。レベルアップXPはサイト全体で使用されるため、あなたの目的はサイト全体の設定を変更することでしょう。設定を変更するには、[ここに移動]({$a->url})するか、XPブロック自体から "設定 "リンクをたどってください。';
 $string['editinstructions'] = '情報の編集';
 $string['enablecheatguard'] = 'チート防止を有効にする';
@@ -150,6 +169,7 @@ $string['enablexpgain_help'] = '\'No\'に設定した場合、誰もコースで
 これは_block/xp:earnxp_ケイパビリティを使用して、より細かくコントロールすることもできます。';
 $string['entersearchterm'] = '検索用語を入力';
 $string['errorcontextcoursemismatchforwholesite'] = 'このページ<em>Level Up XP</em>のURLが現在のプラグイン設定と一致しません。あなたの現在の設定は<em>Level Up XP</em>「サイト全体」で使用されることを宣言していますが、このページは「コースごと」で使用されることを期待しています。<a href="{$a->nexturl}">ここをクリック</a>して正しいページに移動してください。設定を変更したい場合は、管理設定の「block_xp_context」を検索してください。';
+$string['errorcontextcoursemismatchpercourse'] = 'この<em>Level Up XP</em>ページのURLが現在のプラグイン設定と一致しません。あなたの現在の設定は<em>Level Up XP</em>を「コースごと」に使用することを宣言していますが、このページは「サイト全体」に使用されることを期待しています。これはダッシュボードまたはフロントページに追加された<em>block</em>に起因している可能性が高いです。後者のページからブロックを削除し、個々のコースからのみブロックを使用してください。';
 $string['errorformvalues'] = 'フォームの値にいくつか問題があります。';
 $string['errorlevelsincorrect'] = '最小レベル数は2';
 $string['errornotalllevelsbadgesprovided'] = 'すべてのレベルバッジが提供されているわけではありません。未提供です： {$a}';
@@ -236,7 +256,7 @@ $string['leveldesc_help'] = 'レベルに関する短い説明で、情報ペー
 $string['leveldescriptiondesc'] = '情報ページで学生に表示される、レベルの短い説明。';
 $string['levelname'] = 'レベル名';
 $string['levelname_help'] = '時々表示されるデフォルトの_Level #1_、_Level #2_などの代わりに表示する短い名前です。いくつかのレベルに名前を付ける場合、すべてのレベルに名前を付けることをお勧めします！';
-$string['levelpointslength'] = '長さ';
+$string['levelpointslength'] = '必要ポイント';
 $string['levelpointsstart'] = 'スタート';
 $string['levels'] = 'レベル';
 $string['levelsappearance'] = 'レベルの外観';
@@ -256,8 +276,11 @@ $string['menu'] = 'メニュー';
 $string['movecondition'] = '移動条件';
 $string['moverule'] = '移動ルール';
 $string['name'] = '名称';
+$string['namecontains'] = '「{$a}」を含む';
+$string['nameequalsto'] = '「{$a}」と等しい';
 $string['navbardisplay'] = 'ナビゲーションバーに表示';
 $string['navbardisplay_desc'] = '有効な場合、ユーザのレベルはトップナビゲーションバーに表示されます。プラグインが「コースごと」に使用されている場合、コースにのみ表示されます。この機能はテーマに大きく依存しており、サードパーティのテーマではうまく動作しないか、まったく動作しない可能性があることに注意してください。[詳細はこちら](https://docs.levelup.plus/xp/docs/navbar-display)';
+$string['navcompletionrules'] = '完了';
 $string['navdrops'] = 'ドロップ';
 $string['naveventrules'] = 'イベント規定';
 $string['navgraderules'] = 'グレード規定';
@@ -274,12 +297,16 @@ $string['navrules'] = 'ルール';
 $string['navsettings'] = '設定';
 $string['navvisuals'] = 'ビジュアル';
 $string['nextlevelin'] = '次のレベル';
+$string['noconditionsyet'] = 'まだ条件を設定していません！';
+$string['noconditionsyetintro'] = '条件を追加することから始めましょう。';
 $string['nodescription'] = '記述なし';
 $string['noissuesidentified'] = '特になし';
 $string['nologsrecordedyet'] = 'ログはまだ記録されていません。';
 $string['noname'] = '名前なし';
+$string['noneareavailable'] = 'いずれもない。';
 $string['notecompatibilityissues'] = '以下の互換性の問題にご注意ください：';
 $string['notesomesettingslocked'] = '管理者によってロックされている場合、編集できない設定もありますのでご注意ください。';
+$string['nothingmatchesfilter'] = 'フィルターに一致するものはない。';
 $string['numberoflevels'] = 'レベル数';
 $string['occasionally'] = '時々';
 $string['outofsync'] = '同期ずれ';
@@ -301,6 +328,8 @@ $string['pluginxmaybeincompatible'] = 'このバージョンの{$a->name} ({$a->
 $string['pointsintimelinker'] = 'ごとに';
 $string['pointsperlevel'] = 'レベルごとのポイント';
 $string['pointsrequired'] = '必要なポイント';
+$string['pointstoaward'] = '付与ポイント';
+$string['pointstoaward_help'] = '条件が満たされたときに与えるポイント数。';
 $string['popupnotificationmessage'] = 'ポップアップメッセージ';
 $string['popupnotificationmessagedesc'] = 'ポップアップ通知内に表示される、ユーザのレベル達成を祝福するオプションのメッセージ。';
 $string['potentialmoodleincompatibility'] = 'Moodleとの非互換性の可能性';
@@ -325,15 +354,18 @@ $string['promocheatguard'] = 'このチートガードは、長い時間枠を�
 $string['promocontactintro'] = '詳細はお問い合わせください。';
 $string['promocontactus'] = '連絡先';
 $string['promoemailusat'] = 'Eメールでのお問い合わせは _levelup@branchup.tech_ まで。';
+$string['promoerrorsendingemail'] = 'おっと！メッセージを送信できませんでした...直接メールでお問い合わせください： {$a}. ありがとうございました！';
 $string['promointro'] = 'ゲームマスターになろう！レベルアップXP+で追加機能をアンロックし、ゲーミフィケーションをまったく新しいレベルに引き上げましょう！';
 $string['promointroinstalled'] = 'アドオン _Level Up XP+_ がシステムにインストールされ、すべての機能が有効になっています。';
+$string['promorulesdidyouknow'] = '<em>Level Up XP+</em>では、<em>コース</em>や <em>活動</em>を完了するとポイントがもらえたり、<em>成績</em>に応じてポイントがもらえたりすることをご存知ですか？<a href="{$a->url}">詳しくはこちらをご覧ください</a>。';
 $string['promoyourmessagewassent'] = 'ありがとうございます。すぐにお返事いたします。';
 $string['property:action'] = 'イベントアクション';
 $string['property:component'] = 'イベントコンポーネント';
 $string['property:crud'] = 'イベントCRUD';
 $string['property:eventname'] = 'イベント名';
 $string['property:target'] = 'イベント対象';
-$string['quickeditpoints'] = '簡単な編集ポイント';
+$string['questreleasenotice'] = '🎉 新しいゲーミフィケーション・プラグイン「レベルアップクエスト」を発表できることを嬉しく思います。🥳コースをエキサイティングな冒険に変え、意欲を高める戦略や お祝いの言葉でいっぱいにしよう！ 🤯[ウェブサイト]({$a->questurl})と私たちの[発売記事はこちら]({$a->questblogurl})をチェックしてください。👈';
+$string['quickeditpoints'] = 'ポイントのクイック編集';
 $string['rank'] = 'ランク';
 $string['ranking'] = 'ランキング';
 $string['ranking_help'] = 'ランクは、リーダーボードにおける現在のユーザーの絶対的な位置です。相対順位は、そのユーザーと隣接するユーザーとの経験ポイントの差です。';
@@ -349,7 +381,9 @@ $string['reallydeleteuserstateandlogs'] = 'ユーザーを削除すると、リ�
 重要なのは、サイト全体で_レベルアップXP_を使用している場合、ユーザーを削除するとレポートからそのユーザーが消えてしまい、その場合、ポイントを再度割り当てることができなくなるということです。しかし、コースごとに_レベルアップXP_を使用している場合、コースに登録されている学生はレポートに表示されます。
 
 本当にこのユーザーのポイントとログを削除しますか?';
+$string['reallyresetallcourselevelstodefaults'] = '本当にすべてのコースのレベルをデフォルトのレベルに戻しますか？この操作は元に戻せません。';
 $string['reallyresetallcoursestodefaults'] = '本当にすべてのコースのルールをデフォルトのルールにリセットしますか？この操作は元に戻せません。';
+$string['reallyresetallcoursevisualstodefaults'] = '本当にすべてのコースレベルの外観をデフォルトの外観にリセットしますか? この操作は元に戻せません。';
 $string['reallyresetcourselevelstodefaults'] = '本当にコースレベルをデフォルトレベルに戻しますか？この操作は元に戻せません。';
 $string['reallyresetcourserulestodefaults'] = '本当にコースルールをデフォルトルールに戻しますか? この操作は元に戻せません。';
 $string['reallyresetcoursevisualstodefaults'] = '本当にコースレベルの外観をデフォルトの外観にリセットしますか? この操作は元に戻せません。';
@@ -385,6 +419,7 @@ $string['rule:gte'] = '以上';
 $string['rule:lt'] = 'より小さい';
 $string['rule:lte'] = '以下';
 $string['rule:regex'] = '参照に合っている';
+$string['ruleadded'] = '条件が追加されました。';
 $string['rulecm'] = '活動またはリソース';
 $string['rulecm_help'] = 'この条件は、指定されたアクティビティやリソースでイベントが発生したときに満たされます。';
 $string['rulecmdesc'] = '活動またはリソースは \'{$a->contextname}\'';
@@ -393,15 +428,89 @@ $string['rulecminfo'] = 'この条件は、アクションが特定の活動や�
 $string['ruleevent'] = '特定のイベント';
 $string['ruleeventdesc'] = 'このイベントは\'{$a->eventname}\'';
 $string['ruleeventinfo'] = 'ユーザーが実行しなければならないアクションを、厳選されたイベントリストから選択します。';
+$string['rulefilterany'] = 'いずれも';
+$string['rulefilteranycm'] = 'いずれかの活動';
+$string['rulefilteranycmdesc'] = 'この条件は、いずれかの活動に合致する。';
+$string['rulefilteranycourse'] = 'いずれかのコース';
+$string['rulefilteranycoursedesc'] = 'この条件はいずれかのコースにマッチする。';
+$string['rulefilteranydesc'] = 'この条件はすべてのものにマッチする。';
+$string['rulefilteranysection'] = 'いずれかのセクション';
+$string['rulefilteranysectiondesc'] = 'この条件はいずれかのセクションにマッチする。';
+$string['rulefiltercm'] = '特定の活動';
+$string['rulefiltercmdesc'] = 'コース内の特定の活動やリソースを対象とする。';
+$string['rulefiltercmname'] = '活動名';
+$string['rulefiltercmnamedesc'] = '活動名に基づく条件。';
+$string['rulefiltersection'] = '特定のセクション';
+$string['rulefiltersectiondesc'] = 'コース内の特定のセクションを対象とする。';
+$string['rulefilterthiscourse'] = '現在のコース';
+$string['rulefilterthiscoursedesc'] = '現在のコースを対象とする。';
+$string['ruleproperty'] = 'イベントプロパティ';
+$string['rulepropertydesc'] = 'プロパティ \'{$a->property}\' {$a->compare} \'{$a->value}\'.';
 $string['rulepropertyinfo'] = 'この条件は、イベントとそのプロパティを技術的に理解しているパワーユーザー向けです。';
 $string['ruleset'] = '条件セット';
 $string['ruleset:all'] = 'すべての条件が当てはまる';
 $string['ruleset:any'] = 'いずれかの条件が当てはまる';
 $string['ruleset:none'] = 'どの条件も当てはまらない';
 $string['rulesetinfo'] = '複数の条件を1つにまとめる。';
+$string['rulesformhelp'] = '<p>このプラグインはイベントを利用して、生徒が行ったアクションにポイントを属性します。下記のフォームから独自のルールを追加したり、デフォルトのルールを見ることができます。</p>
+<p>あなたがコースでアクションを実行する際に、どのようなイベントがトリガーされるかを確認するために、プラグインの<a href="{$a->log}">ログ</a>をチェックすることをお勧めします。: <a href="{$a->list}">全イベントのリスト</a>, <a href="{$a->doc}">開発者ドキュメント</a>.</p>
+<p>最後に、プラグインは以下について考慮しないことに注意してください。:
+<ul>
+    <li>管理者、ゲスト、またはログインしていないユーザーによって実行されたアクション。</li>
+    <li>ケイパビリティブロック(例:earnxp)を持たないユーザーが行う行為。</li>
+    <li>不正行為を防止するために、短い時間内に繰り返し行われる行為。</li>
+    <li>匿名フィードバックなどで<em>匿名</em>とフラグが立てられたイベント。</li>
+    <li>イベントに参加できるレベルではない場合。</li>
+</ul>
+</p>';
+$string['rulesscope'] = 'スコープ';
+$string['rulesscope_help'] = 'ルールのスコープはルールが適用されるタイミングを決定します。
+
+ルールはサイト全体およびコース固有の2つのスコープで作成することができます。可能な限り、コース固有のルールが最初に評価され、次にサイト全体のルールが評価されます。このアプローチにより、教育者はサイト全体（サイトワイド）に適用される広範なルールを作成し、次に個々のコース用に調整することができます。
+
+- サイト全体： コース固有のルールが設定されている場合を除き、サイト全体に適用されます。
+- コース： これらのルールは特定のコース内でのみ適用されます。サイト全体のルールよりも優先されます。';
+$string['ruletypecmcompletion'] = '活動完了';
+$string['ruletypecmcompletiondesc'] = '活動完了のマークがついたらポイントを与える。';
+$string['ruletypecoursecompletion'] = 'コース完了';
+$string['ruletypecoursecompletiondesc'] = 'コース完了がマークされた場合、ポイントを与える。';
+$string['ruletypesectioncompletion'] = 'セクション完了';
+$string['ruletypesectioncompletiondesc'] = 'コースセクションが完了とマークされた場合、ポイントを与える。';
 $string['searchandselectcourse'] = 'コースの検索と選択';
 $string['searchandselectmodule'] = '活動やリソースの検索と選択';
+$string['selectcourse'] = 'コース選択';
+$string['send'] = '送信';
 $string['setpoints'] = '設定ポイント';
+$string['shortcode:xpbadge'] = '現在のユーザーのレベルに一致したバッジ。';
+$string['shortcode:xpiflevel'] = '現在のユーザーのレベルが一致したときにコンテンツを表示する。';
+$string['shortcode:xpiflevel_help'] = 'このショートコードをフォーマットするには、以下の例を参照してください。レベルが厳密に指定されている場合、コンテンツは他のルールに関係なく表示されます。
+コンテンツが表示されるためには、_より大きい_ルールと_未満_ルールがすべて一致する必要があります。その結果、コンテンツが表示されなくなることがあるので注意してください！
+教師、または編集機能を持つユーザーは、常にすべてを見ることに注意してください。
+
+、、、
+[xpiflevel 1 3 5］
+    ユーザーのレベルがちょうど1、3、5の場合に表示される。
+[/xpiflevel]
+
+[xpiflevel >3］
+    ユーザーのレベルが3より大きい場合に表示される。
+[/xpiflevel]
+
+[xpiflevel >=3]
+    ユーザーのレベルが3以上の場合に表示される。
+[/xpiflevel]
+
+[xpiflevel >=10 <20 30]
+    ユーザーのレベルが10以上であり、かつ厳密に20未満である場合に表示される。
+    または厳密に30に等しい場合に表示される。
+[/xpiflevel]
+
+[xpiflevel <=10 >=20]
+ユーザのレベルが10以下かつ20以上であることはないため、表示されません。
+[/xpiflevel]
+、、、
+
+これらのショートコード同士を入れ子にすることはできません。';
 $string['shortcode:xpladder'] = 'リーダーボードの一部を表示します。';
 $string['shortcode:xpladder_help'] = 'デフォルトでは、現在のユーザーを囲むリーダーボードの一部が表示されます。
 
@@ -449,19 +558,42 @@ $string['shortcode:xppoints_help'] = 'デフォルトでは、現在のユーザ
 [xppoints 500]
 [xppoints 123 plain]
 ```';
+$string['shortcode:xpprogressbar'] = '現在のユーザーの次のレベルへのプログレスバー。';
+$string['sitewide'] = 'サイト全体';
 $string['somefeaturesrequireotherplugins'] = 'いくつかの機能は、追加のプラグインをインストールする必要があります。';
+$string['someoneelse'] = '他の誰か';
+$string['somethinghappened'] = '変化が起きた';
+$string['taskcollectionloggerpurge'] = '収集ログの削除';
 $string['taskusagereport'] = '使用レポート';
 $string['thankyou'] = 'ありがとう！';
 $string['timebetweensameactions'] = '同じ動作の間に要する時間';
 $string['timebetweensameactions_help'] = '以前にすでに起こったアクションが再び受け入れられるまでに必要な最小時間。アクションは、それが同じコンテキストとオブジェクトに配置された場合、同一とみなされます。この値が空、または0に等しい場合、適用されません。';
 $string['timeformaxactions'] = '最大アクションの時間枠';
 $string['timeformaxactions_help'] = 'ユーザーが最大アクション数を超えてはならない時間枠（秒単位）。';
+$string['total'] = '合計';
+$string['tryme'] = '試してみる';
+$string['unavailable'] = '利用不可';
+$string['unknownactivitya'] = '不明な活動({$a})';
+$string['unknownbadgea'] = '不明なバッジ({$a})';
+$string['unknownconditiona'] = '不明な条件({$a})';
+$string['unknowneventa'] = '不明なイベント({$a})';
+$string['unknownsectiona'] = '不明なセクション({$a})';
+$string['unknowntypea'] = '不明なタイプ({$a})';
+$string['unlockfeaturewithxpplus'] = 'XP+でこの機能をアンロックする。<a href="{$a}">さらに詳しく</a>';
+$string['updateandpreview'] = '更新とプレビュー';
+$string['upgradingplugins'] = 'プラグインをアップグレード';
+$string['urlaccessdeprecated'] = 'このURLからのアクセスは非推奨です。リンクを更新してください。';
 $string['usagereport'] = '利用レポートを共有する';
 $string['usagereport_desc'] = '定期的にプラグイン開発者と匿名の使用情報を共有します。この情報はプラグインがどのように使用されているかをよりよく理解し、プラグインの開発に影響を与えます。共有される情報には、Moodleサイトの基本情報 (URL、バージョン)、およびプラグインの利用情報 (ポイントを獲得したユーザ数、設定の概要、使用されたルールなど) が含まれます。';
 $string['usealgo'] = 'アルゴリズムを使用';
 $string['usecustomlevelbadges'] = 'カスタム・レベルバッジの使用';
 $string['usecustomlevelbadges_help'] = 'yesに設定すると、各レベルに画像を設定する必要があります。';
 $string['usingalgo'] = 'アルゴリズム';
+$string['value'] = '値';
+$string['valuessaved'] = '値は正常に保存されました。';
+$string['viewas'] = '次のように表示';
+$string['viewlogs'] = 'ログを見る';
+$string['viewtheladder'] = 'ラダーを見る';
 $string['visualsintro'] = 'レベルの外観やポイントの意味をカスタマイズできます。';
 $string['wherearexpused'] = 'ポイントを使用する場所';
 $string['wherearexpused_desc'] = '「コース内」に設定された場合、獲得ポイントはブロックが追加されたコースでのみ考慮されます。「サイト全体」に設定された場合、ユーザーはコースごとに選択的にレベルアップするのではなく、サイト内で「レベルアップ」し、サイト全体で獲得したすべてのポイントが使用されます。';
@@ -481,3 +613,4 @@ $string['youleveledupexcl'] = 'レベルアップしたね！';
 $string['youreachedlevel'] = 'あなたはこのレベルに到達しました：';
 $string['youreachedlevela'] = 'レベルが {$a}に上がった!';
 $string['yourmessage'] = 'あなたのメッセージ';
+$string['yourownrules'] = '独自のルール';

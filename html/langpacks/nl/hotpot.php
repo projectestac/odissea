@@ -85,7 +85,7 @@ $string['configbodystyles'] = 'Standaard zullen de Moodle themastijlen de HotPot
 $string['configenablecache'] = 'Een cache van HotPot-testen bijhouden kan de snelheid van het tonen van testen aan leerlingen gevoelig verhogen.';
 $string['configenablecron'] = 'Geef de uren in jouw tijdszone wanneer het HotPot cron-script mag lopen.';
 $string['configenablemymoodle'] = 'Deze instelling controleert of HotPots op de startpagina getoond mogen worden of niet.';
-$string['configenableobfuscate'] = 'Het verdoezelen van de javascript-code bij het invoegen van mediaspelers, maakt het moeilijker om de mediabestandsnaam te bepalen en wat het bestand bevat raden.';
+$string['configenableobfuscate'] = 'Het verdoezelen van de tekst strings en URL\'s in javascript-code, maakt het moeilijker om antwoorden te raden door de bron van de HTML-pagina te bekijken in de browser.';
 $string['configenableswf'] = 'Sta inbedding van SWF-bestanden in HotPot activiteiten toe. Als dit is ingeschakeld, overschrijft deze instelling de instelling filter_mediaplugin_enable_swf.';
 $string['configfile'] = 'Configuratiebestand';
 $string['configframeheight'] = 'Als er een test wordt weergegeven in een frame, dan is deze waarde de hoogte (in pixels) van het frame dat de Moodle navigatiebalk bevat.';
@@ -107,9 +107,8 @@ $string['delay2summary'] = 'Tijd tussen latere pogingen';
 $string['delay3'] = 'Vertraging 3';
 $string['delay3_help'] = 'De instelling bepaalt de vertraging tussen het beëindigen van de test en de terugkeer van de controle over het scherm naar Moodle.
 
-** Gebruik specifieke tijd (in seconden) **:
-
-controle zal worden teruggegeven aan Moodle na het opgegeven aantal seconden.
+** Gebruik specifieke vertraging **:
+:controle zal worden teruggegeven aan Moodle na de opgegeven tijd.
 
 ** Gebruik instellingen in bron / sjabloonbestand**
 : controle zal worden teruggegeven aan Moodle na het aantal seconden opgegeven in het bronbestand of de sjabloonbestanden voor dit output formaat.

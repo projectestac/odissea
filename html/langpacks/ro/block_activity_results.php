@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_results:addinstance'] = 'Adaugă un nou bloc cu rezultatele activității';
 $string['bestgrade'] = 'Cea mai mare notă';
-$string['bestgrades'] = 'Cele mai mari {$a} note';
+$string['bestgrades'] = 'Cele mai mari {$a} note:';
 $string['bestgroupgrade'] = 'Grupul cu cea mai mare medie:';
 $string['bestgroupgrades'] = 'Grupurile {$a} cu cea mai mare medie';
 $string['config_decimalplaces'] = 'Zecimale de afișat';

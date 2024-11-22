@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
 $string['fullscreen'] = 'Pantalla completa';
+$string['group'] = 'Grup';
 $string['jsmol_link'] = 'http://google.co.uk';

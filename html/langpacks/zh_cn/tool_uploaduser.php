@@ -40,6 +40,7 @@ $string['clivalidationerror'] = '验证错误：';
 $string['csvdelimiter'] = 'CSV分隔符';
 $string['defaultvalues'] = '默认值';
 $string['deleteerrors'] = '删除出错';
+$string['duplicateemail'] = '检测到电子邮件 {$a} 的多个用户';
 $string['encoding'] = '编码';
 $string['errormnetadd'] = '不能添加远程用户';
 $string['errorprefix'] = '错误：';
@@ -51,6 +52,7 @@ $string['invalidtheme'] = '主题“{$a}”未安装，将被忽略。';
 $string['invalidupdatetype'] = '该选项不能与所选的上传类型一起选择。';
 $string['invaliduserdata'] = '检测到用户{$a}的无效数据，该数据已被自动清除。';
 $string['linex'] = '第{$a}行';
+$string['matchemail'] = '匹配电子邮件地址';
 $string['nochanges'] = '未改变';
 $string['notheme'] = '没有为此用户定义主题。';
 $string['pluginname'] = '用户上传';
@@ -74,12 +76,12 @@ $string['uploadpictures'] = '上传头像';
 $string['uploadpictures_help'] = '用户头像可以通过zip文件或图片文件上传。图像文件应按chosen-user-attribute.extension的形式命名。例如，用户user1234的头像文件名应为user1234.jpg。';
 $string['uploaduser:uploaduserpictures'] = '上传头像';
 $string['uploadusers'] = '上传用户';
-$string['uploadusers_help'] = '可以通过文本文件上传（并能直接选课）用户。文件的格式如下：
+$string['uploadusers_help'] = '用户可以通过文本文件上传（并选择性地注册课程）。文件的格式应如下所示：
 
-* 文件的每行包含一条记录
-* 每条记录是一系列被逗号（或其它分隔符）分隔的数据
-* 第一行记录是字段名列表，定义文件的格式
-* username、password、firstname、lastname和email字段名是必须的';
+* 文件的每一行包含一条记录
+* 每条记录都是由选定的分隔符分隔的一系列数据
+* 第一条记录包含字段名称列表，用于定义文件其余部分的格式
+* 必填字段名称为用户名、密码、名字、姓氏、电子邮件';
 $string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = '预览';
 $string['uploadusersresult'] = '上传用户结果';
@@ -94,7 +96,7 @@ $string['usersskipped'] = '用户已跳过';
 $string['usersupdated'] = '已更新(多个)用户信息';
 $string['usersweakpassword'] = '密码较弱的用户';
 $string['userthemesnotallowed'] = '用户主题未被启用，所以任何包含在上传用户文件中的主题都会被忽略。';
-$string['uubulk'] = '选择大量用户操作';
+$string['uubulk'] = '选择批量用户操作';
 $string['uubulkall'] = '所有用户';
 $string['uubulknew'] = '新用户';
 $string['uubulkupdated'] = '用户已更新';

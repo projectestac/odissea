@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['about_mrbs'] = 'Over MRBS';
 $string['accessdenied'] = 'Geen Toegang';
-$string['accessmrbs'] = 'Boekingen van Resources';
+$string['accessmrbs'] = 'Boek een bron';
 $string['addarea'] = 'Gebouw toevoegen';
 $string['addentry'] = 'Boeking Toevoegen';
 $string['addroom'] = 'Kamer toevoegen';

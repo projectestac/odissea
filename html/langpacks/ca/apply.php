@@ -44,6 +44,7 @@ $string['horizontal'] = 'horitzontal';
 $string['info'] = 'informació';
 $string['multichoice'] = 'Opció múltiple';
 $string['name'] = 'Nom';
+$string['preview'] = 'Previsualització';
 $string['public'] = 'Públic';
 $string['submitted'] = 's\'ha tramès';
 $string['yes_button'] = 'Sí';

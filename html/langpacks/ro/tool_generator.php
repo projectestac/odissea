@@ -29,10 +29,10 @@ $string['bigfile'] = 'Fișier mare {$a}';
 $string['courseexplanation'] = 'Acest instrument creează cursuri de testare standard care includ multe
 secțiuni, activități și fișiere.
 
-Acesta este destinat să ofere o măsură standardizată pentru verificarea fiabilității
+Este destinat să ofere o măsură standardizată pentru verificarea fiabilității
 și performanța diferitelor componente ale sistemului (cum ar fi backup și restaurare).
 
-Acest test este important, deoarece au existat multe cazuri anterior în care,
+Acest test este important deoarece au existat multe cazuri anterior în care,
 în fața cazurilor de utilizare din viața reală (de exemplu, un curs cu 1 000 de activități), sistemul
 nu funcționează.
 
@@ -93,7 +93,7 @@ $string['sitesize_2'] = 'M (~200MB; 73 courses, created in ~10 minutes)';
 $string['sitesize_3'] = 'L (~1\'5GB; 277 courses, created in ~1\'5 hours)';
 $string['sitesize_4'] = 'XL (~10GB; 1065 courses, created in ~5 hours)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 courses, created in ~10 hours)';
-$string['size'] = 'Mărimea, desigur';
+$string['size'] = 'Dimensiune curs';
 $string['smallfiles'] = 'Fișiere mici';
 $string['targetcourse'] = 'Testează cursul țintă';
 $string['testplanexplanation'] = 'Acest instrument creează un fișier plan de testare JMeter împreună cu fișierul acreditării utilizatorului.
@@ -105,7 +105,7 @@ Trebuie să setați o parolă pentru utilizatorii cursului în config.php (de ex
 Face parte din tool_generator, deci funcționează bine cu cursurile generate de cursuri și de generatorii de site-uri, poate
 de asemenea, să fie utilizat cu orice curs care conține cel puțin:
 
-* Destul de utilizatori înscriși (depinde de dimensiunea planului de testare pe care o selectați) cu resetarea parolei la „moodle”
+* Un număr suficient de utilizatori înscriși (depinde de dimensiunea planului de testare pe care o selectați) cu resetarea parolei la „moodle”
 * O instanță de modul de pagină
 * O instanță de modul forum cu cel puțin o discuție și un răspuns
 

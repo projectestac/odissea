@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['invalidurl'] = 'L\'URL que heu introduït no és vàlid i no es pot fer servir. Comproveu-lo.';
 $string['name'] = 'Nom';
+$string['preview'] = 'Previsualització/Informació';
 $string['type'] = 'Tipus';

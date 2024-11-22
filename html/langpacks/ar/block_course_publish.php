@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['descconfig'] = 'وصف مقطع التهيئة';
+$string['descconfig'] = 'وصف قسم التهيئة';
 $string['descfoo'] = 'وصف التهيئة';
 $string['description'] = 'الوصف';
 $string['loginwithfacebook'] = 'تسجيل الدخول مع فيسبوك';

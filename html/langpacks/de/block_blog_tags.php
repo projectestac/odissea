@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['blog_tags:addinstance'] = 'Neuen Block \'Blog-Tags\' hinzufügen';
 $string['configtitle'] = 'Titel für Block \'Blog-Tags\'';
 $string['pluginname'] = 'Blog-Tags';
-$string['privacy:metadata'] = 'Der Block \'Blog-Tags\' speichert keine personenbezogenen Daten. Er zeigt nur Daten an, die an anderen Orten gespeichert sind.';
+$string['privacy:metadata'] = 'Der Block \'Blog-Tags\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';

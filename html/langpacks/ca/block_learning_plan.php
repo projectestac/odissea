@@ -29,4 +29,5 @@ $string['desc'] = 'Descripció';
 $string['edit'] = 'Edita';
 $string['end_date'] = 'Data de finalització';
 $string['learning_plan_name'] = 'Nom';
+$string['remove'] = 'Suprimeix';
 $string['search'] = 'Cerca';

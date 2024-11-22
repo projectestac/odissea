@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pathtounoconv'] = 'Pfad zu unoconv';
-$string['pathtounoconv_help'] = 'Pfad für den Dokumentkonverter Unoconv. Dies ist eine ausführbare Datei, die in der Lage ist, zwischen den von LibreOffice unterstützten Dokumentenformaten umzuwandeln. Dies ist optional, aber wenn angegeben, wird Moodle es verwenden, um automatisch zwischen Dokumentenformaten umzuwandeln. Dies wird verwendet, um eine breitere Palette von Eingabedateien für die Zuordnung annotate PDF-Funktion zu unterstützen.';
+$string['pathtounoconv_help'] = 'Pfad zum Dokumentkonverter unoconv. Moodle verwendet unoconv, um Dokumente automatisch zwischen den Formaten umzuwandeln, die mit LibreOffice möglich sind. Dies unterstützt eine breite Palette von Eingabeformaten für die Annotate-PDF-Funktion von Aufgaben.';
 $string['pluginname'] = 'Unoconv';
 $string['privacy:metadata'] = 'Die Unoconv-Dokumentenkonvertierung speichert keine personenbezogenen Daten.';
 $string['test_unoconv'] = 'unoconv-Pfad testen';

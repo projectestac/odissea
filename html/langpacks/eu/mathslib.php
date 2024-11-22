@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anunexpectederroroccured'] = 'espero ez zen errorea gertatu da';
 $string['cannotassigntoconstant'] = '\'{$a}\' ezin zaio konstanteari ezarri';
-$string['cannotredefinebuiltinfunction'] = 'ezin da berezko \'{$a}()\' funtzioa berdefinitu';
+$string['cannotredefinebuiltinfunction'] = 'ezin da \'{$a}()\' funtzio lehenetsia berdefinitu';
 $string['divisionbyzero'] = 'zero zatitzailea duen zatiketa';
 $string['expectingaclosingbracket'] = 'parentesia ixtea espero zen';
 $string['illegalcharactergeneral'] = 'Legez kanpoko karakterea \'{$a}\'';

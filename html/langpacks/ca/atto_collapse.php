@@ -32,3 +32,4 @@ $string['showfewer'] = 'Mostra menys botons';
 $string['showgroups'] = 'Mostra els primers (n) grups quan es redueix.';
 $string['showgroups_desc'] = 'Amb la barra d\'eines reduïda (tal com apareix per defecte) només es mostrarà aquest nombre de grups.';
 $string['showmore'] = 'Mostra més botons';
+$string['youareonsecondrow'] = 'Ara esteu en una altra fila de la barra d\'eines de l\'editor, on hi ha més botons.';

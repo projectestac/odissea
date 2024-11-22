@@ -17,7 +17,7 @@
 /**
  * Version details.
  *
- * @package    filter
+ * @package    filter_wiris
  * @subpackage wiris
  * @copyright  WIRIS Europe (Maths for more S.L)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2024042300;
-$plugin->release = '8.7.0';
+$plugin->version = 2024110400;
+$plugin->release = '8.8.1';
 $plugin->requires = 2011120511;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'filter_wiris';
-$plugin->dependencies = array();
+$plugin->dependencies = [];

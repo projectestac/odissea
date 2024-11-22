@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '多语言内容';
 $string['forceoldsyntax'] = '强制使用旧语法';
-$string['forceoldsyntax_desc'] = '强制旧版的多语言语法：没有 class="multilang" 的&lt;span&gt; 和 &lt;lang&gt;';
+$string['forceoldsyntax_desc'] = '强制使用旧的多语言语法：&lt;span&gt;不带 class=“multilang” 和 &lt;lang&gt;。';
 $string['privacy:metadata'] = '多语言内容插件不存储任何个人数据。';

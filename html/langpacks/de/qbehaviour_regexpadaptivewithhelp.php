@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addedletter'] = 'Hinzugefügter Buchstabe: <strong>{$a}</strong>.';
+$string['addedpunctuation'] = 'Hinzugefügte Satzzeichen: <strong>{$a}</strong>';
 $string['addedword'] = 'Hinzugefügtes Wort: <strong>{$a}</strong>.';
 $string['buyletter'] = 'Den nächsten Buchstaben kaufen';
 $string['buyword'] = 'Das nächste Wort kaufen';
+$string['buywordorpunctuation'] = 'Nächstes Wort oder Satzzeichen kaufen';
 $string['completedword'] = 'Vervollständigtes Wort: <strong>{$a}</strong>.';
 $string['helppenalty'] = 'Diese Hilfe kostet einen Abzug von: <strong>{$a}</strong>.';
 $string['pluginname'] = 'Frageverhalten RegExp adaptiver Modus mit Hilfe';

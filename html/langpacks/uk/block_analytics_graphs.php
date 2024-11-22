@@ -92,7 +92,6 @@ $string['old_messages'] = 'Повідомлення надіслано';
 $string['on_time'] = 'Вчасно';
 $string['options'] = 'Параметри';
 $string['pluginname'] = 'Аналітика';
-$string['privacy:metadata'] = 'Блок Analytics Graphs відображає лише наявні дані календаря.';
 $string['ratio'] = 'Співвідношення';
 $string['red_tooltip'] = 'За останній тиждень не було доступу до жодного модуля';
 $string['remove_all'] = 'Видалити все';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Vidéo HTML5';
-$string['pluginname_help'] = 'Fichiers vidéo lus par le lecteur natif du navigateur (le support des formats dépend du navigateur).';
+$string['pluginname_help'] = 'Fichiers vidéo lus par le lecteur natif du navigateur (la prise en charge des formats dépend du navigateur).';
 $string['privacy:metadata'] = 'Le plugin média Vidéo HTML5 n’enregistre aucune donnée personnelle.';

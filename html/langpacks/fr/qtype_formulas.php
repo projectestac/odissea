@@ -202,17 +202,15 @@ $string['settingusepopup'] = 'Utiliser les infobulles';
 $string['settingusepopup_desc'] = 'Afficher la réponse correcte et le feedback dans une infobulle';
 $string['subqoptions'] = 'Options supplémentaires';
 $string['subqtext'] = 'Texte de la partie';
-$string['subqtext_help'] = 'Le texte de la partie et les emplacements des champs de réponse peuvent être spécifés ici.
+$string['subqtext_help'] = 'Le texte de la partie et les emplacements des champs de réponse peuvent être spécifiés ici.
 Les espaces réservés qui peuvent être utilisés pour marquer les emplacements des champs réponse sont :
 
-<pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
+<pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>…<br>{_u}</pre>
 
 <tt> {_0}, {_1}, {_2} </tt> sont les emplacements des champs réponse pour les coordonnées et <tt> {_u} </tt> est la place du champ réponse pour l’unité.
 
 Tous les champs manquants sont ajoutés automatiquement à la fin du texte de la partie.
-Un cas spécial est que si <tt> {_0} </tt> et <tt> {_u} </tt> sont spécifiés consécutivement,
-et que la réponse ne comporte qu’une coordonnée et une unité, c’est à dire. <tt> {_0}{_u} </tt>,
-ils seront combinés en un seul champ réponse long pour entrer à la fois la réponse et l’unité.';
+Un cas spécial est que si <tt> {_0} </tt> et <tt> {_u} </tt> sont spécifiés consécutivement, et que la réponse ne comporte qu’une coordonnée et une unité, c’est à dire. <tt> {_0}{_u} </tt>, ils seront combinés en un seul champ réponse long pour entrer à la fois la réponse et l’unité.';
 $string['unit'] = 'Unité';
 $string['unitpenalty'] = 'Pénalité pour unité incorrecte (0-1)*';
 $string['unitpenalty_help'] = 'Cette option spécifie la pénalité pour une unité incorrecte.
@@ -245,7 +243,7 @@ Ce tirage peut se faire en définissant l’ensemble des possibilités :
 
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 
-Les élément de l’ensemble peuvent être des nombres, des chaînes ou des listes de nombres ou de chaînes.
+Les éléments de l’ensemble peuvent être des nombres, des chaînes ou des listes de nombres ou de chaînes.
 Au début d’une tentative, un élément de l’ensemble au second membre sera tiré au sort et assigné à la variable au premier membre.
 Pour un ensemble de nombres, vous pouvez utiliser la notation intervalle comme 10:100:10 (voir exemple E ci-dessus.).';
 $string['varsrandom_link'] = 'http://code.google.com/p/moodle-coordinate-question/wiki/Documentation#Random_variables';

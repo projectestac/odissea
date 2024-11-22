@@ -35,6 +35,7 @@ $string['clicktocopy'] = 'Click per copiare questo testo nel commento dei criter
 $string['clicktoedit'] = 'Click per modificare';
 $string['clicktoeditname'] = 'Click per modificare il nome del criterio';
 $string['comment'] = 'Commento';
+$string['commentpickerforcriterion'] = 'Selettore di commenti utilizzato di frequente per {$a} commenti aggiuntivi';
 $string['comments'] = 'Commenti di uso frequente';
 $string['commentsdelete'] = 'Elimina commento';
 $string['commentsempty'] = 'Click per modificare il commento';

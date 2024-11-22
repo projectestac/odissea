@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = '微软 Excel (.xlsx)';
 $string['privacy:metadata'] = 'Excel数据格式插件不存储任何个人数据。';
+$string['shortname'] = 'Excel';

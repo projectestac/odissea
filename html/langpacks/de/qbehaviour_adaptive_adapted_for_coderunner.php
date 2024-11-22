@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['giveup'] = 'Anhalten und finales Feedback lesen';
 $string['notcomplete'] = 'Nicht vollständig';
-$string['pluginname'] = 'Mehrfachbeantwortung, für CodeRunner angepasst';
+$string['pluginname'] = 'Frageverhalten Mehrfachbeantwortung, für CodeRunner angepasst';
 $string['precheck'] = 'Vorabprüfung';
 $string['precheckedresponse'] = 'Vorabgeprüft: {$a}';
 $string['precheckresults'] = 'Resultate der Vorabprüfung';

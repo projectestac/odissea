@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Titlul blocului mentorilor';
-$string['configtitleblankhides'] = 'Titlu bloc mentori';
+$string['configtitle'] = 'Titlul blocului Mentees';
+$string['configtitleblankhides'] = 'Titlu bloc Mentees (nici un titlu dacă este necompletat)';
 $string['mentees:addinstance'] = 'Adăugați un nou bloc mentees';
 $string['mentees:myaddinstance'] = 'Adăugați un nou bloc mentees în Dashboard';
-$string['newmenteesblock'] = '(bloc nou Discipoli)';
-$string['pluginname'] = 'Discipoli';
+$string['newmenteesblock'] = '(bloc nou Mentees)';
+$string['pluginname'] = 'Mentees';
 $string['privacy:metadata'] = 'Blocul Mentees afișează doar date afișate în alte locații.';

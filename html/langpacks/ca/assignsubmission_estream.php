@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['default_help'] = 'Si s\'habilita, aquest mètode de tramesa s\'habilitarà per defecte per a totes les tasques creades recentment.';
+$string['upload'] = 'Penja un fitxer de vídeo o d\'àudio';

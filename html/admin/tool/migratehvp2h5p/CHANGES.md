@@ -1,5 +1,10 @@
 # VERSIONS HISTORY #
 
+Changes in version 0.1.6 (20240111) - RIP master
+---------------------------------------------------
+- Move from master to main (#51)
+- Bump GHA environments
+
 Changes in version 0.1.5 (20221129) - I'm now stable!
 ---------------------------------------------------
 - Include author, if possible, when migrating to content bank (#46)

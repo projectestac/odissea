@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fontselectlist'] = 'Available fonts list';
 $string['pluginname'] = 'Font family';
+$string['privacy:metadata'] = 'The Atto fontfamily plugin does not store any personal data.';
 $string['settings'] = 'Font family settings';

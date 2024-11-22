@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['modulename_link'] = 'mod/customlesson/view';
+$string['nocommentyet'] = 'Pas encore de commentaire.';

@@ -24,8 +24,19 @@
  * @since      Moodle 3.0
  */
 
-defined('MOODLE_INTERNAL') || die;
+namespace mod_questionnaire;
+
+defined('MOODLE_INTERNAL') || die();
+
 require_once($CFG->libdir . '/externallib.php');
+
+use external_api;
+use external_function_parameters;
+use external_single_structure;
+use external_multiple_structure;
+use external_value;
+use external_warnings;
+
 require_once($CFG->dirroot . '/mod/questionnaire/lib.php');
 require_once($CFG->dirroot . '/mod/questionnaire/questionnaire.class.php');
 
@@ -38,7 +49,7 @@ require_once($CFG->dirroot . '/mod/questionnaire/questionnaire.class.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      Moodle 3.0
  */
-class mod_questionnaire_external extends \external_api {
+class external extends external_api {
 
     /**
      * Describes the parameters for submit_questionnaire_response.
@@ -47,22 +58,22 @@ class mod_questionnaire_external extends \external_api {
      * @since Moodle 3.0
      */
     public static function submit_questionnaire_response_parameters() {
-        return new \external_function_parameters(
+        return new external_function_parameters(
             [
-                'questionnaireid' => new \external_value(PARAM_INT, 'Questionnaire instance id'),
-                'surveyid' => new \external_value(PARAM_INT, 'Survey id'),
-                'userid' => new \external_value(PARAM_INT, 'User id'),
-                'cmid' => new \external_value(PARAM_INT, 'Course module id'),
-                'sec' => new \external_value(PARAM_INT, 'Section number'),
-                'completed' => new \external_value(PARAM_INT, 'Completed survey or not'),
-                'rid' => new \external_value(PARAM_INT, 'Existing response id'),
-                'submit' => new \external_value(PARAM_INT, 'Submit survey or not'),
-                'action' => new \external_value(PARAM_ALPHA, 'Page action'),
-                'responses' => new \external_multiple_structure(
-                    new \external_single_structure(
+                'questionnaireid' => new external_value(PARAM_INT, 'Questionnaire instance id'),
+                'surveyid' => new external_value(PARAM_INT, 'Survey id'),
+                'userid' => new external_value(PARAM_INT, 'User id'),
+                'cmid' => new external_value(PARAM_INT, 'Course module id'),
+                'sec' => new external_value(PARAM_INT, 'Section number'),
+                'completed' => new external_value(PARAM_INT, 'Completed survey or not'),
+                'rid' => new external_value(PARAM_INT, 'Existing response id'),
+                'submit' => new external_value(PARAM_INT, 'Submit survey or not'),
+                'action' => new external_value(PARAM_ALPHA, 'Page action'),
+                'responses' => new external_multiple_structure(
+                    new external_single_structure(
                         [
-                            'name' => new \external_value(PARAM_RAW, 'data key'),
-                            'value' => new \external_value(PARAM_RAW, 'data value')
+                            'name' => new external_value(PARAM_RAW, 'data key'),
+                            'value' => new external_value(PARAM_RAW, 'data value')
                         ]
                     ),
                     'The data to be saved', VALUE_DEFAULT, []
@@ -128,10 +139,10 @@ class mod_questionnaire_external extends \external_api {
      * @since Moodle 3.0
      */
     public static function submit_questionnaire_response_returns() {
-        return new \external_single_structure(
+        return new external_single_structure(
             [
-                'submitted' => new \external_value(PARAM_BOOL, 'submitted', true, false, false),
-                'warnings' => new \external_warnings()
+                'submitted' => new external_value(PARAM_BOOL, 'submitted', VALUE_REQUIRED, false, false),
+                'warnings' => new external_warnings()
             ]
         );
     }

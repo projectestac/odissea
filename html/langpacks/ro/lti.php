@@ -280,9 +280,9 @@ $string['main_admin_help'] = 'Instrumentele externe permit utilizatorilor Moodle
 
 Instrumentele enumerate pe această pagină sunt separate în trei categorii:
 
-* ** Activ ** - Acești furnizori de instrumente au fost aprobați și configurați de un administrator. Ele pot fi utilizate din orice curs de pe acest site. Dacă se introduce o cheie de consum și un secret partajat, se stabilește o relație de încredere între acest site și instrumentul la distanță, oferind un canal de comunicare sigur.
-* ** În așteptare ** - Acești furnizori de instrumente au venit printr-un import de pachete, dar nu au fost configurați de un administrator. Profesorii pot folosi în continuare instrumente de la acești furnizori dacă au o cheie de consum și un secret comun, sau dacă nu este necesar.
-* ** Respins ** - Acești furnizori de instrumente sunt semnalizați ca fiind cei pe care un administrator nu intenționează să îi pună la dispoziție pe site. Profesorii pot folosi în continuare instrumente de la acești furnizori dacă au o cheie de consum și un secret comun, sau dacă nu este necesar.';
+* ** Activ ** - Acești furnizori de instrumente au fost aprobați și configurați de un administrator. Instrumentele pot fi utilizate din orice curs de pe acest site. Dacă se introduce o cheie a consumatorului și o cheie secretă, se stabilește o relație de încredere între acest site și instrumentul la distanță, oferind un canal de comunicare sigur.
+* ** În așteptare ** - Acești furnizori de instrumente au venit printr-un import de pachete, dar nu au fost configurați de un administrator. Profesorii pot folosi în continuare instrumente de la acești furnizori dacă au o cheie a consumatorului și o cheie secretă, sau dacă niciuna nu este necesară.
+* ** Respins ** - Acești furnizori de instrumente sunt semnalizați ca fiind cei pe care un administrator nu intenționează să îi pună la dispoziție pe site. Profesorii pot folosi în continuare instrumente de la acești furnizori dacă au o cheie a consumatotului și o cheie secretă, sau dacă niciuna nu este necesară.';
 $string['manage_external_tools'] = 'Gestionați instrumentele';
 $string['manage_tool_proxies'] = 'Gestionați înregistrările de instrumente externe';
 $string['manage_tools'] = 'Gestionați instrumentele preconfigurate';

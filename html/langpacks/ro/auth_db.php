@@ -67,7 +67,7 @@ $string['auth_dbsybasequotinghelp'] = 'Scăparea citatului unic în stil Sybase 
 $string['auth_dbsyncuserstask'] = 'Sincronizarea sarcinii utilizatorilor';
 $string['auth_dbtable'] = 'Numele tabelului în baza de date';
 $string['auth_dbtable_key'] = 'Tabel';
-$string['auth_dbtableempty'] = 'Tabelul extern este gol.';
+$string['auth_dbtableempty'] = 'Tabelul extern este necompletat.';
 $string['auth_dbtype'] = 'Tipul bazei de date (pentru detalii, consultați documentația <a href="http://adodb.org/dokuwiki/doku.php" target="_blank"> ADOdb - Database Abstraction Layer for PHP </a>).';
 $string['auth_dbtype_key'] = 'Bază de date';
 $string['auth_dbupdateerror'] = 'Eroare la actualizarea bazei de date externe.';

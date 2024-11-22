@@ -175,8 +175,11 @@ implements question_automatically_gradable, question_response_answer_comparer {
             }
 
             if ($this->parent) {
-                // Questions with parent should be graded together in multianswerwiris qtype!
-                throw new moodle_exception('Questions with parent should be graded together');
+                // Sometimes clearing existing answers call this method with the empty string when working with
+                // multiple tries. Do not throw exception in that case.
+                if ($answer == '') {
+                    return null;
+                }
             }
 
             // Test code:
@@ -247,7 +250,7 @@ implements question_automatically_gradable, question_response_answer_comparer {
             return $answer;
         } catch (moodle_exception $e) {
             // Notify of the error.
-            $this->step->inc_attempts();
+            $this->step->inc_attempts($e);
             throw $e;
         }
     }

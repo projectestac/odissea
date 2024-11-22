@@ -155,6 +155,7 @@ $string['replydeleted'] = 'S\'ha suprimit la resposta';
 $string['replysent'] = 'La vostra resposta s\'ha enviat';
 $string['runsuntil'] = 'S\'executa fins';
 $string['savedraft'] = 'Desa l\'esborrany';
+$string['search:activity'] = 'Diàleg: informació de l\'activitat';
 $string['searchpotentials'] = 'Cerca usuaris potencials...';
 $string['send'] = 'Envia';
 $string['senton'] = '<small><strong>Enviat el: </strong></small>';

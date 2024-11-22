@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Acest test nu este disponibil acum.';
-$string['pluginname'] = 'Regula de acces de tipul data de deschidere și închidere';
-$string['privacy:metadata'] = 'Regula de acces de tipul data de deschidere și închidere nu stochează date personale.';
+$string['pluginname'] = 'Regulă de acces de tipul data de deschidere și închidere';
+$string['privacy:metadata'] = 'Regulă de acces de tipul data de deschidere și închidere nu stochează date personale.';
 $string['quiznotavailable'] = 'Acest nu va fi disponibil decât de la data de: {$a}';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['criterionmovedown'] = 'Déplacer vers le bas';
+$string['criterionmoveup'] = 'Déplacer vers le haut';
 $string['deleteactivity'] = 'Effacer une activité';

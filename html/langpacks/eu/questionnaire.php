@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessibility:rate:choice'] = '{$a->rowposition}. errenkada, {$a->choicetitle}: {$a->colposition}. zutabea, {$a->choiceanswer}.';
 $string['action'] = 'Ekintza';
 $string['activityoverview'] = 'Bidali gabeko galdeketak dituzu';
 $string['additionalinfo'] = 'Informazio osagarria';
@@ -140,8 +141,8 @@ $string['displaymethod'] = 'Ez da zehaztu galdera honentzako erakuste-metodorik.
 $string['download'] = 'Jaitsi';
 $string['downloadpdf'] = 'Jaitsi PDFa';
 $string['downloadtextformat'] = 'Jaitsi';
-$string['downloadtextformat_help'] = 'Funtzio honek galdeketa bateko erantzun guztiak eskuragarri dagoen onartutako fitxategi-formatu batean gordetzea ahalbidetzen du.
-Esportatzean datu-elementu gehigarriak sartzea aukeratu dezakezu, baita fitxategia aukeratutako erabiltzaileei automatikoki bidaltzea ere.';
+$string['downloadtextformat_help'] = 'Funtzio honek galdeketa bateko erantzunak aukeratutako fitxategi-formatu batean deskargatzea ahalbidetzen du.
+Fitxategia kalkulu-orrien programa batekin (hala nola MS Excel edo OpenOffice Calc) ireki ahalko da edo estatistika-pakete batekin gehiago prozesatzeko.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Txosten-mota';
 $string['dropdown'] = 'Kutxa zabalgarria';
@@ -209,7 +210,8 @@ $string['feedbacknotes'] = 'Feedback-oharrak';
 $string['feedbacknotes_help'] = 'Hemen idatzitako testua ikasleei Feedback txostenaren amaieran erakutsiko zaie.';
 $string['feedbackoptions'] = 'Feedback aukerak';
 $string['feedbackoptions_help'] = 'Feedback aukerak eskuragarri daude zure galdeketak hurrengo galdera-motak eta galdera-ezarpenak baditu:
-Aukera bakarreko botoiak, Kutxa zabalgarria, Bai/Ez edo Baloratu (normala edo Osgood eskala). Galdera horiek Derrigorrezko gisa konfiguratu behar dira, euren galdera-izenaren eremua EZIN da hutsik egon eta erantzun posibleen aukerak balioren bat izan behar dute.';
+Aukera bakarreko botoiak, Kutxa zabalgarria, Bai/Ez, Baloratu (normala edo Osgood eskala) edo Irristagailua. Galdera horiek Derrigorrezko gisa konfiguratu behar dira, euren galdera-izenaren eremua EZIN da hutsik egon eta erantzun posibleen aukerak balioren bat izan behar dute.
+Irristagailua motako galderek EZIN dute irristagailuaren gutxieneko balio negatiboa izan.';
 $string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Galdera hau [{$a}]. feedback-atalaren parte da';
 $string['feedbackremovesection'] = 'Galdera hau ezabatzeak  [{$a}]. feedback-atala guztiz ezabatuko du';
@@ -266,6 +268,8 @@ $string['kindofratescale_help'] = 'Egin klik eskuineko botoiarekin azpiko Lagunt
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Azken erantzuna';
 $string['leftlabel'] = 'Ezkerreko etiketa';
+$string['leftpart'] = '{$a->min} {$a->leftlabel} da';
+$string['leftpartdefault'] = '{$a->min} da irristagailu-tartearen gutxieneko balioa';
 $string['length'] = 'Luzera';
 $string['managequestions'] = 'Kudeatu galderak';
 $string['managequestions_help'] = 'Editatu galderak orriko Kudeatu galderak atalean galdeketako galderetako hainbat ekintza egin ditzakezu.';
@@ -284,6 +288,10 @@ $string['maxtextlength_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrer
 Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehieneko luzera 25 karaktere.';
 $string['messageprovider:message'] = 'Galdeketaren ohartarazpena';
 $string['messageprovider:notification'] = 'Galdeketaren bidalketa';
+$string['middlepart'] = ', {$a->centreval} {$a->middlelabel} da';
+$string['middlepartdefault'] = ', {$a->centreval} da bates bestekoa';
+$string['middlepartwithtwovalues'] = ', {$a->centreval1} eta {$a->centreval2} dira {$a->middlelabel}';
+$string['middlepartwithtwovaluesdefault'] = ', {$a->centreval1} eta {$a->centreval2} dira batez bestekoa';
 $string['minforcedresponses'] = 'Gutxieneko erantzun kopurua';
 $string['minforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxieneko** laukitxo kopurua eta **gehieneko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxieneko** eta **gehieneko** eremuetan balio berdina jarri ezazu. Gutxieneko edo gehieneko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxieneko** eta **gehieneko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
 $string['minrange'] = 'Irristagailuaren gutxieneko balioa (ezkerra)';
@@ -317,6 +325,7 @@ $string['noduplicates'] = 'Aukera bikoizturik ez';
 $string['noduplicateschoiceserror'] = 'Gutxienez 2 erantzun posible eman behar dituzu "Aukera bikoizturik ez" aukerarentzat!';
 $string['non_respondents'] = 'Galdeketa honetara euren erantzunak oraindik bidali ez duten erabiltzaileak';
 $string['noneinuse'] = 'Galdeketa honek ez dauka galderarik.';
+$string['nopermissions'] = 'Sentitzen dugu, baina une honetan ez duzu orri hau ikusi ala ekintza hau burutzeko baimenik.';
 $string['nopublicsurveys'] = 'Ez dago galdeketa publikorik.';
 $string['noresponsedata'] = 'Ez dago erantzunik galdera honentzat.';
 $string['noresponses'] = 'Erantzunik ez';
@@ -530,6 +539,8 @@ $string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Jarraitu galdeketarekin';
 $string['return'] = 'Itzuli';
 $string['rightlabel'] = 'Eskuineko etiketa';
+$string['rightpart'] = 'eta {$a->max} {$a->rightlabel} da';
+$string['rightpartdefault'] = 'eta {$a->max} da irristagailu-tartearen gehieneko balioa';
 $string['save'] = 'Gorde';
 $string['save_and_exit'] = 'Gorde eta irten';
 $string['saveasnew'] = 'Gorde galdera berri gisa';
@@ -612,6 +623,7 @@ $string['total'] = 'Guztira';
 $string['totalofnumbers'] = 'Idatzitako zenbakiak guztira';
 $string['totalresponses'] = 'Galderaren erantzunak guztira';
 $string['type'] = 'Galdera-mota';
+$string['unanswered'] = 'Erantzun gabea';
 $string['undefinedquestiontype'] = 'Zehaztu gabeko galdera-mota!';
 $string['unknown'] = 'Ezezaguna';
 $string['unknownaction'] = 'Galdeketa-ekintza ezezaguna zehaztu da...';
@@ -632,6 +644,7 @@ $string['viewindividualresponse_help'] = 'Egin klik azpiko zerrendan erantzuna e
 $string['viewresponses'] = 'Erantzun guztiak ({$a})';
 $string['viewyourresponses'] = 'Ikusi zure erantzuna(k)';
 $string['warning'] = 'Oharra, errorea gertatu da.';
+$string['where'] = 'non';
 $string['wronganswers'] = 'Zure erantzunak arazoren bat dauka (ikusi azpian)';
 $string['wrongdateformat'] = 'Idatzitako <strong>{$a}</strong> data ez dator bat adibidearen formatuarekin.';
 $string['wrongdaterange'] = 'ERROREA: Urtea 1902 eta 2037 tartean egon behar da.';

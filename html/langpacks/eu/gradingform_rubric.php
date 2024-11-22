@@ -80,7 +80,7 @@ $string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko puntuazioa 
 Eskala bat erabiltzen bada kalifikazio baten ordez, puntuazioa bihurtuko da eskalaren elementuetako batean, jarraian doazen zenbaki osoak bailiran.
 
 Kalifikazio-kalkulu hau aldatu daiteke formularioa editatu eta \'Kalkulatu gutxieneko kalifikazioa errubrikaren gutxieneko puntuazioa izan dadin\' aukera markatuta.';
-$string['rubricnotcompleted'] = 'Mesedez, aukeratu zerbait irizpide bakoitzerako';
+$string['rubricnotcompleted'] = 'Errubrika osatu gabe dago, aukeratu ezazu irizpide guztietako mailaren bat';
 $string['rubricoptions'] = 'Errubrikaren aukerak';
 $string['rubricstatus'] = 'Oraingo errubrikaren egoera';
 $string['save'] = 'Gorde';

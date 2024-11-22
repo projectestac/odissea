@@ -34,13 +34,54 @@ $string['actionlink_print'] = 'afdrukken';
 $string['actions'] = 'Actie';
 $string['actions_help'] = 'Te ondernemen actie.';
 $string['addappointment'] = 'Afspraak toevoegen';
+$string['addslots_placesinfo'] = 'Met deze handeling zullen {$a->numplaces} nieuwe mogelijke plekken worden aangemaakt, met een totaal van {$a->totalplaces} mogelijke plekken voor {$a->numstudents} leerlingen.';
+$string['addslots_placesinfo_group'] = 'Met deze handeling zullen {$a->numplaces} nieuwe mogelijke plekken worden aangemaakt, met een totaal van {$a->totalplaces} mogelijke plekken voor {$a->numgroups} groepen.';
+$string['allowcreationofpasttimeslots'] = 'Tijdslots aanmaken in het verleden';
+$string['allowedprofilefieldsprint'] = 'Toegestane gebruikersprofielvelden';
+$string['allowedprofilefieldsprint2'] = 'Toegestane gebruikersprofielvelden voor het afdrukken van enkele tijdslots in organizer';
+$string['allowsubmissionsanddescriptionfromdatesummary'] = 'De informatie en het registratieformulier zullen beschikbaar zijn vanaf <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Begin inschrijving';
+$string['allowsubmissionsfromdate_help'] = 'Vink dit aan als je wilt dat deze organizer vanaf een bepaald moment in tijd beschikbaar is voor leerlingen.';
 $string['allowsubmissionsfromdatesummary'] = 'Deze organizer aanvaardt inschrijvingen van <strong>{$a}</strong>';
 $string['allowsubmissionstodate'] = 'Einde inschrijving';
 $string['alwaysshowdescription'] = 'Beschrijving altijd tonen';
+$string['alwaysshowdescription_help'] = 'Indien uitgeschakeld wordt de beschrijving hierboven pas beschikbaar vanaf de \'startdatum registratie\'.';
 $string['applicant'] = 'Dit is de persoon die de groep heeft ingeschreven';
+$string['appointment_reminder_student:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} heb je een afspraak {$a->sendername} op {$a->date} om {$a->time} in {$a->location}.
+
+Moodle Meldingensysteem';
+$string['appointment_reminder_student:group:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} heb je een groepsafspraak {$a->sendername} op {$a->date} om {$a->time} in {$a->location}.
+
+Moodle Meldingensysteem';
+$string['appointment_reminder_student:group:smallmessage'] = 'Je hebt een groepsafspraak met {$a->sendername} op {$a->date} om {$a->time} in{$a->location}.';
+$string['appointment_reminder_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Herinnering groepsafspraak';
+$string['appointment_reminder_student:smallmessage'] = 'Je hebt een afspraak met {$a->sendername} op {$a->date} om {$a->time} in{$a->location}.';
 $string['appointment_reminder_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Afspraakherinnering';
+$string['appointment_reminder_teacher:digest:fullmessage'] = 'Hallo {$a->receivername}!
+
+Je hebt morgen de volgende afspraken:
+
+{$a->digest}
+
+Moodle Meldingensysteem';
+$string['appointment_reminder_teacher:digest:smallmessage'] = 'Je hebt een overzicht ontvangen van je afspraken voor morgen.';
 $string['appointment_reminder_teacher:digest:subject'] = 'Afsprakenoverzicht';
+$string['appointment_reminder_teacher:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} heb je een afspraak met leerlingen op {$a->date} om {$a->time} in {$a->location}.
+
+Moodle Meldingensysteem';
+$string['appointment_reminder_teacher:group:digest:fullmessage'] = 'Hallo {$a->receivername}!
+
+Je hebt morgen de volgende afspraken:
+
+{$a->digest}
+
+Moodle Meldingensysteem';
 $string['appointment_reminder_teacher:group:digest:smallmessage'] = 'Je hebt een afsprakenoverzicht voor morgen ontvangen.';
 $string['appointment_reminder_teacher:group:digest:subject'] = 'Afsprakenoverzicht';
 $string['appointment_reminder_teacher:smallmessage'] = 'Je hebt een afspraak met leerlingen op {$a->date} om {$a->time} in {$a->location}.';
@@ -48,18 +89,67 @@ $string['appointment_reminder_teacher:subject'] = '[{$a->courseid}{$a->coursesho
 $string['appointmentcomments'] = 'Opmerkingen';
 $string['appointmentcomments_help'] = 'Aanvullende informatie over de afspraak kan hier worden toegevoegd';
 $string['appointmentdatetime'] = 'Datum en tijd';
+$string['appointmentdeleted_notify_student:fullmessage'] = 'Hallo {$a->receivername}!
+
+Je afspraak in de cursus {$a->courseshortname} op {$a->date} om {$a->time} in {$location} is verwijderd.';
+$string['appointmentdeleted_notify_student:group:fullmessage'] = 'Hallo {$a->receivername}!
+
+Je afspraak in de cursus {$a->courseshortname} op {$a->date} om {$a->time} in {$location} is verwijderd.';
+$string['appointmentdeleted_notify_student:group:smallmessage'] = 'Je afspraak op {$a->date} om {$a->time} in de organizer \'{$a->organizername}\' is verwijderd.';
+$string['appointmentdeleted_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Afspraak verwijderd';
+$string['appointmentdeleted_notify_student:smallmessage'] = 'Je afspraak op {$a->date} om {$a->time} in de organizer \'{$a->organizername}\' is verwijderd.';
+$string['appointmentdeleted_notify_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Afspraak verwijderd';
 $string['assign'] = 'Toewijzen';
+$string['assign_notify_student:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} is er een afspraak met {$a->slot_teacher} op {$a->date} om {$a->time} door {$a->sendername} aan je toegewezen.
+
+Leraar: {$a->slot_teacher}
+Locatie: {$a->slot_location}
+Datum: {$a->date} om {$a-time}
+
+Moodle Meldingensysteem';
+$string['assign_notify_student:group:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} is er een afspraak met {$a->slot_teacher} op {$a->date} om {$a->time} door {$a->sendername} aan jouw groep {$a->groupname} toegewezen.
+
+Leraar: {$a->slot_teacher}
+Locatie: {$a->slot_location}
+Datum: {$a->date} om {$a-time}
+
+Moodle Meldingensysteem';
+$string['assign_notify_teacher:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} is er een afspraak met {$a->participantname} op {$a->date} om {$a->time} door {$a->sendername} aan je toegewezen.
+
+Deelnemer: {$a->participantname}
+Locatie: {$a->slot_location}
+Datum: {$a->date} om {$a-time}
+
+Moodle Meldingensysteem';
+$string['assign_notify_teacher:group:fullmessage'] = 'Hallo {$a->receivername}!
+
+Als onderdeel van de cursus {$a->courseid} {$a->coursefullname} is er een afspraak met de groep {$a->groupname} op {$a->date} om {$a->time} door {$a->sendername} aan je toegewezen.
+
+Groep: {$a->groupname}
+Locatie: {$a->slot_location}
+Datum: {$a->date} om {$a-time}
+
+Moodle Meldingensysteem';
 $string['assign_title'] = 'Afspraak toewijzen';
 $string['atlocation'] = 'op';
 $string['attended'] = 'bijgewoond';
+$string['auth'] = 'Authenticatiemethode';
 $string['availability'] = 'Beschikbaarheid';
+$string['availablefrom'] = 'Afspraken mogelijk vanaf';
 $string['availablegrouplist'] = 'Beschikbare groepen';
-$string['availableslotsfor'] = 'Beschikbare tijdsloten';
+$string['availableslotsfor'] = 'Beschikbare tijdslots';
 $string['back'] = 'Terug';
-$string['btn_add'] = 'Nieuwe tijdsloten toevoegen';
+$string['btn_add'] = 'Nieuwe tijdslots toevoegen';
 $string['btn_assign'] = 'Tijdslot toewijzen';
 $string['btn_comment'] = 'Opmerking bewerken';
 $string['btn_delete'] = 'Geselecteerde tijdslots verwijderen';
+$string['btn_deleteappointment'] = 'Afspraak verwijderen';
 $string['btn_deletesingle'] = 'Geselecteerd tijdslot verwijderen';
 $string['btn_edit'] = 'Geselecteerde tijdslots bewerken';
 $string['btn_editsingle'] = 'Geselecteerde tijdslots bewerken';
@@ -75,8 +165,16 @@ $string['btn_remind'] = 'Herinnering versturen';
 $string['btn_reregister'] = 'Opnieuw aanmelden';
 $string['btn_save'] = 'Opmerking bewaren';
 $string['btn_send'] = 'Verzenden';
+$string['btn_sendall'] = 'Herinnering versturen aan alle deelnemers zonder voldoende afspraken:';
+$string['btn_start'] = 'Start';
+$string['btn_unqueue'] = 'Uit wachtrij verwijderen';
 $string['btn_unregister'] = 'Afmelden';
 $string['calendarsettings'] = 'Kalenderinstellingen';
+$string['can_reregister'] = 'Je kunt je opnieuw registreren voor een andere afspraak';
+$string['cannot_eval'] = 'Beoordelen niet mogelijk, de leerling heeft een';
+$string['cfg_dontshowidentity'] = 'Identiteit verbergen';
+$string['cfg_dontshowidentity_desc'] = 'Verberg de identiteit van een deelnemer in de lijst met tijdsloten';
+$string['cfg_limitedwidth'] = 'Kleiner contentgebied';
 $string['configahead'] = 'vooruit';
 $string['configday'] = 'dag';
 $string['configdays'] = 'dag';
@@ -95,8 +193,21 @@ $string['confirm_delete'] = 'Verwijderen';
 $string['confirm_organizer_remind_all'] = 'Verzenden';
 $string['create'] = 'Aanmaken';
 $string['created'] = 'Aangemaakt';
-$string['createsubmit'] = 'Tijdsloten aanmaken';
+$string['createsubmit'] = 'Tijdslots aanmaken';
 $string['crontaskname'] = 'Crontaak Organizer';
+$string['datetemplate'] = '%d-%m-%Y';
+$string['datetime'] = 'Datetime';
+$string['datetime_help'] = 'Datum & tijd van tijdslot';
+$string['day'] = 'dag';
+$string['day_0'] = 'Maandag';
+$string['day_1'] = 'Dinsdag';
+$string['day_2'] = 'Woensdag';
+$string['day_3'] = 'Donderdag';
+$string['day_4'] = 'Vrijdag';
+$string['day_5'] = 'Zaterdag';
+$string['day_6'] = 'Zondag';
+$string['day_pl'] = 'dagen';
+$string['dbid'] = 'DB ID';
 $string['print_return'] = 'Terug naar overzicht tijdslots';
 $string['printsubmit'] = 'Afdrukbare tabel tonen';
 $string['recipientname'] = '&lt;naam ontvanger&gt;';
@@ -152,3 +263,25 @@ $string['th_datetimedeadline'] = 'Datum en tijd';
 $string['th_details'] = 'Status';
 $string['th_duration'] = 'Duur';
 $string['th_email'] = 'E-mail';
+$string['th_teacher'] = 'Leraar';
+$string['th_teachercomments'] = 'Opmerking van leraar';
+$string['timeshift'] = 'Absolute einddatum verzetten';
+$string['timeslot'] = 'Tijdslot in Organizer';
+$string['timetemplate'] = '%H:%M';
+$string['title_add'] = 'Nieuwe afspraken toevoegen';
+$string['title_comment'] = 'Je opmerkingen bewerken';
+$string['title_delete'] = 'Geselecteerde tijdslots verwijderen';
+$string['title_delete_appointment'] = 'Toegewezen afspraak verwijderen';
+$string['title_edit'] = 'Geselecteerde tijdslots bewerken';
+$string['title_eval'] = 'Geselecteerde tijdslots beoordelen';
+$string['title_print'] = 'Slots afdrukken';
+$string['totalday'] = 'xxx slots voor yyy personen';
+$string['trainer'] = 'Trainer';
+$string['trainerid'] = 'Leraar';
+$string['trainerid_help'] = 'Selecteer de leraar die de afspraak zal leiden';
+$string['unavailableslot'] = 'Dit slot is beschikbaar vanaf';
+$string['unknown'] = 'Onbekend';
+$string['visibility_all'] = 'Zichtbaar';
+$string['visibility_anonymous'] = 'Anoniem';
+$string['visible'] = 'Slot zichtbaar';
+$string['with'] = 'met';

@@ -110,6 +110,7 @@ $string['options'] = 'Opcions';
 $string['page-mod-choice-x'] = 'Qualsevol pàgina del mòdul de consultes';
 $string['pluginadministration'] = 'Administració de la consulta';
 $string['pluginname'] = 'Consulta';
+$string['previewing'] = 'Això és una vista prèvia de les opcions disponibles per a aquesta activitat. Podreu fer la vostra selecció quan s\'obri.';
 $string['previewonly'] = 'Això és sols una vista prèvia de les opcions disponibles en aquesta activitat. No esteu habilitat per enviar consultes fins {$a}.';
 $string['privacy'] = 'Confidencialitat dels resultats';
 $string['publish'] = 'Publica els resultats';

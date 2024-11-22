@@ -35,6 +35,10 @@ $string['addtogradebook'] = 'Aggiungi al registro delle valutazioni';
 $string['allowframeembedding'] = 'Nota: si raccomanda l\'abilitazione di \'Consenti l\'embed in frame\', in questo modo il tool sarà visualizzato in un frame invece che in una nuova finestra.';
 $string['authltimustbeenabled'] = 'Nota: questo plugin richiede l\'abilitazione del plugin di autenticazione LTI.';
 $string['cartridgeurl'] = 'URL cartridge';
+$string['cookiesarerequired'] = 'I cookie sono bloccati dal browser';
+$string['cookiesarerequiredinfo'] = 'Non è possibile avviare questo tool perché sembra che il browser stia bloccando i cookie di terze parti.
+<br><br>
+Per utilizzare questo tool , provare a modificare le impostazioni dei cookie del browser o a utilizzare un browser diverso.';
 $string['copiedtoclipboard'] = '{$a} è stato copiato nella clipboard';
 $string['copytoclipboard'] = 'Copia nella clipboard';
 $string['couldnotestablishproxy'] = 'Non è stato possibile stabilire un proxy con il consumer.';
@@ -65,6 +69,7 @@ $string['enrolperiod'] = 'Durata dell\'iscrizione';
 $string['enrolperiod_help'] = 'Durata dell\'iscrizione, con inizio all\'atto della prima iscrizione dell\'utente proveniente dal sistema remoto. Se l\'impostazione è disabilitata, la durata dell\'iscrizione non avrà limite.';
 $string['enrolstartdate'] = 'Data di inizio';
 $string['enrolstartdate_help'] = 'Gli utenti potranno accedere dopo la data impostata';
+$string['existingregistrationerror'] = 'Esiste già una registrazione per questo issuer e client ID.';
 $string['failedrequest'] = 'Richiesta non andata a buon fine. Motivo: {$a->reason}';
 $string['frameembeddingnotenabled'] = 'Per accedere al tool per favore utilizza il link sottostante.';
 $string['gradesync'] = 'Sincronizzazione valutazioni';
@@ -148,6 +153,7 @@ $string['registerplatform:authrequesturl'] = 'URL della richiesta di autenticazi
 $string['registerplatform:authrequesturl_help'] = 'L\'URL dove il tool invierà le richieste di autenticazione OpenID Connect. Verrà fornito dalla piattaforma.';
 $string['registerplatform:clientid'] = 'ID del client';
 $string['registerplatform:clientid_help'] = 'Una stringa utilizzata per identificare la registrazione del tool sulla piattaforma. Verrà fornito dalla piattaforma.';
+$string['registerplatform:duplicateregistrationerror'] = 'ID cliente non valido. Questo ID cliente è già registrato per l\'ID piattaforma fornito.';
 $string['registerplatform:invalidurlerror'] = 'URL non valida. È stati incluso http:// o https://?';
 $string['registerplatform:jwksurl'] = 'URL del set di chiavi pubbliche';
 $string['registerplatform:jwksurl_help'] = 'Il keyset pubblico o l\'URL JWKS, utilizzato per ottenere la chiave pubblica della piattaforma. Sarà fornito dalla piattaforma.';

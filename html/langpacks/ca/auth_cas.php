@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = 'Opció d\'autenticació';
+$string['auth_cas_auth_logo_description'] = 'Proporcioneu un logotip per al mètode d\'autenticació CAS que sigui familiar per als vostres usuaris.';
+$string['auth_cas_auth_name'] = 'Nom del mètode d\'autenticació';
+$string['auth_cas_auth_name_description'] = 'Proporcioneu un nom per al mètode d\'autenticació CAS que sigui familiar per als vostres usuaris.';
+$string['auth_cas_auth_service'] = 'CAS';
 $string['auth_cas_auth_user_create'] = 'Crea usuaris externament';
 $string['auth_cas_baseuri'] = 'URI del servidor (en blanc si no té baseUri)<br />Per exemple, si el servidor CAS respon a l\'adreça ordinador.domini.cat/CAS/ llavors <br />auth_cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'URI base';

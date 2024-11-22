@@ -119,7 +119,7 @@ $string['groupmode_help'] = '* Senza gruppi
 
 La modalità gruppo definita nelle impostazioni del corso è la modalità di default per le attività del corso. La modalità gruppo può essere gestita per ciascuna attività del corso purché l\'attività supporti i gruppi e la modalità gruppo non sia stata forzata a livello di corso.';
 $string['groupmodeforce'] = 'Forza modalità gruppo';
-$string['groupmodeforce_help'] = 'Forzando la modalità gruppo, tale modalità sarà applicata a tutte le attività del corso. Eventuali modalità gruppo diverse non saranno prese in considerazione.';
+$string['groupmodeforce_help'] = 'La modalità gruppo è forzata per tutte le attività e non può essere modificata in una specifica attività.';
 $string['groupmy'] = 'Il mio gruppo';
 $string['groupname'] = 'Nome gruppo';
 $string['groupnameexists'] = 'Il nome del gruppo \'{$a}\' è già esistente in questo corso, per favore cambialo.';

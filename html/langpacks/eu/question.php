@@ -389,7 +389,7 @@ $string['privacy:metadata:link:qformat'] = 'Galderen sistemak galdera-formatua p
 $string['privacy:metadata:link:qtype'] = 'Galderen sistemak galdera mota plugin motarekin aritzen da, eta bertan galdera mota ezberdinak daude.';
 $string['published'] = 'partekatuta';
 $string['qbanknotfound'] = '\'{$a}\' galdera-bankuko plugina ez da existitzen edo ezezaguna da.';
-$string['qtypeveryshort'] = 'T';
+$string['qtypeveryshort'] = 'Mota';
 $string['question_version'] = 'Galderaren bertsioa';
 $string['questionaffected'] = '<a href="{$a->qurl}">Ondoko galdera "{$a->name}" ({$a->qtype})</a> galdera-kategoria honetan dago baina <a href="{$a->qurl}">galdetegi honetan ere erabilita dago "{$a->quizname}"</a> beste ikastaro batean: "{$a->coursename}".';
 $string['questionbank'] = 'Galdera-bankua';

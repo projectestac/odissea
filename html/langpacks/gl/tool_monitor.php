@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['managerules'] = 'Regras de monitorización de eventos';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
+$string['norules'] = 'Non hai regras de monitorización de eventos';

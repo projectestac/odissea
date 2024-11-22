@@ -124,6 +124,7 @@ $string['diag_toooldversion'] = 'É moi pouco probábel que un servidor LDAP mod
 $string['didntfindexpiretime'] = 'password_expire() non atopou a data de caducidade.';
 $string['didntgetusersfromldap'] = 'Non foi posíbel obter usuarios dende LDAP. -- erro? -- saíndo';
 $string['gotcountrecordsfromldap'] = 'Obtivéronse {$a} rexistros dende LDAP';
+$string['invalidusererrors'] = 'Advertencia: Omitiuse a creación de {$a} contas de usuario.';
 $string['ldapnotconfigured'] = 'O URL da máquina/servidor LDAP actualmente no está configurada';
 $string['morethanoneuser'] = 'Atopouse máis dun rexistro de usuario en LDAP. Empregarase só o primeiro.';
 $string['needbcmath'] = 'Necesita a extensión BCMath para usar accesos libres con Active Directory.';

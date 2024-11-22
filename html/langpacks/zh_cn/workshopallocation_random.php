@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = '添加自我评价';
 $string['allocationaddeddetail'] = '要完成的新评价：<strong>{$a->reviewername}</strong>要评价 <strong>{$a->authorname}</strong>的作业';
-$string['allocationdeallocategraded'] = '不能解除分配已评分的评价：评价人 <strong>{$a->reviewername}</strong>，作业作者：<strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = '无法取消分配已评分的评价：评价者者 <strong>{$a->reviewername}</strong>、提交作者 <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = '重用评价：<strong>{$a->reviewername}</strong>继续做 <strong>{$a->authorname}</strong>的评价人';
 $string['allocationsettings'] = '分配设置';
 $string['assessmentdeleteddetail'] = '已解除分配的评价: <strong>{$a->reviewername}</strong> 不再评价 <strong>{$a->authorname} 的作业';

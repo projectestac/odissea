@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Autor/a';
 $string['novalidsettings'] = 'La configuració no vàlida';
 $string['novalidsettingsselected'] = 'No s\'han seleccionat paràmetres vàlids';
+$string['preview'] = 'previsualització';
 $string['site'] = 'Lloc';

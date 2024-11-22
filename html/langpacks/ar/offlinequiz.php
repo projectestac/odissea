@@ -444,7 +444,6 @@ $string['printstudycodefield_help'] = 'عند تأشيره، ستتم طباعة
 $string['privacy:data_folder_name'] = 'بيانات الاختبار غير المتصل';
 $string['privacy:metadata:core_files'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالملفات لخزن أوراق الأسئلة المولدة، أوراق الإجابات وأوراق التصحيح فضلاً عن أوراق الإجابات المعبأة.';
 $string['privacy:metadata:core_question'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالأسئلة لحفظ الأسئلة للاختبارات.';
-$string['privacy:metadata:mod_quiz'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالاختبارات لحفظ نتائج الاختبارات.';
 $string['privacy:metadata:offlinequiz'] = 'يحفظ جدول الاختبار غير المتصل كل المعلومات الخاصة بعيِّنة الاختبار غير المتصل';
 $string['privacy:metadata:offlinequiz:course'] = 'عمود \'المساق\' في جدول الاختبار غير المتصل يحفظ المساق الذي يتواجد فيه هذا الاختبار';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'عدد المنازل العشرية المزمع إحتسابها في الدرجات';
@@ -586,7 +585,7 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\usepackage{enumitem}
 \\usepackage{xcolor}
 \\usepackage{ulem}
-\\parindent 0pt % لا مسافة بادئة في بداية المقطع
+\\parindent 0pt % لا مسافة بادئة في بداية القسم
 \\renewcommand\\UrlFont{\\sf}
 \\usepackage{lastpage}
 \\usepackage{fancyhdr}

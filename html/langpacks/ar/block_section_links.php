@@ -26,19 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'زِدهُ بمقدار';
-$string['incby1_help'] = 'هذه قيمة زيادة المقطع عند كل مرة يتم فيها عرض رابط مقطع بدءاً من 1.';
+$string['incby1_help'] = 'هذه قيمة زيادة القسم عند كل مرة يتم فيها عرض رابط قسم بدءاً من 1.';
 $string['incby2'] = 'بدلاً، زِدهُ بمقدار';
-$string['incby2_help'] = 'هذه قيمة زيادة المقطع عند كل مرة يتم فيها عرض رابط مقطع بدءاً من 1.';
+$string['incby2_help'] = 'هذه قيمة زيادة القسم عند كل مرة يتم فيها عرض رابط قسم بدءاً من 1.';
 $string['jumptocurrenttopic'] = 'الأنتقال إلى الموضوع الحالي';
 $string['jumptocurrentweek'] = 'الأنتقال إلى الأسبوع الحالي';
 $string['numsections1'] = 'عدد المقاطع';
 $string['numsections1_help'] = 'بمجرد وصول عدد المقاطع في المساق إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم.';
 $string['numsections2'] = 'عدد المقاطع البديل';
 $string['numsections2_help'] = 'بمجرد وصول عدد المقاطع في المساق إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم البديلة.';
-$string['pluginname'] = 'روابط المقطع';
+$string['pluginname'] = 'روابط القسم';
 $string['privacy:metadata'] = 'كتلة روابط المقاطع تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['section_links:addinstance'] = 'إضافة كتلة جديدة لروابط المقاطع';
-$string['showsectionname'] = 'عرض اسم المقطع';
-$string['showsectionname_help'] = 'عرض اسم المقطع فضلاً عن رقمه';
+$string['showsectionname'] = 'عرض اسم القسم';
+$string['showsectionname_help'] = 'عرض اسم القسم فضلاً عن رقمه';
 $string['topics'] = 'مواضيع';
 $string['weeks'] = 'أسابيع';

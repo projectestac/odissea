@@ -60,7 +60,7 @@ $string['addrandomquestion'] = 'Ajouter question aléatoire';
 $string['addrandomquestionatend'] = 'Ajouter une question aléatoire à la fin';
 $string['addrandomquestiontopage'] = 'Ajouter à la page {$a} une question aléatoire';
 $string['addrandomquestiontoquiz'] = 'Ajouter une question aléatoire au test {$a}';
-$string['addselectedquestionstoquiz'] = 'Ajouter au test les questions sélectionnées';
+$string['addselectedquestionstoquiz'] = 'Ajouter les questions sélectionnées au test';
 $string['addselectedtoquiz'] = 'Ajouter la sélection au test';
 $string['addtoquiz'] = 'Ajouter au test';
 $string['affectedstudents'] = 'Étudiants concernés';
@@ -139,7 +139,7 @@ $string['browsersecurity_help'] = 'Si vous sélectionnez l’option « Nouvelle
 * les fonctions telles que copier-coller sont, autant que possible, bloquées pour l’étudiant.';
 $string['cachedef_overrides'] = 'Informations sur les dérogations utilisateur et de groupe';
 $string['calculated'] = 'Calculée';
-$string['calculatedquestion'] = 'Question calculée non supportée (ligne {$a}). La question sera ignorée';
+$string['calculatedquestion'] = 'Question calculée non prise en charge (ligne {$a}). La question sera ignorée';
 $string['cannotcreatepath'] = 'Le fichier ne peut pas être créé ({$a})';
 $string['cannoteditafterattempts'] = 'Vous ne pouvez pas ajouter ou retirer des questions, car ce test a déjà été effectué ({$a}).';
 $string['cannotfindprevattempt'] = 'Impossible de trouver une tentative précédente.';
@@ -333,7 +333,7 @@ $string['emailmanualgradedbody'] = 'Bonjour {$a->studentname},
 
 Vos réponses au test « {$a->quizname} » dans le cours « {$a->coursename} » à {$a->attempttimefinish} ont été évaluées.
 
-Vous pouvez consulter votre résultat et feedback en visitant {$a->quizurl}\' et relire votre tentative.';
+Vous pouvez consulter votre résultat et feedback en visitant « {$a->quizurl} » et relire votre tentative.';
 $string['emailmanualgradedsubject'] = 'Votre tentative du test {$a->quizname} a été évaluée';
 $string['emailnotifybody'] = 'Bonjour {$a->username},
 
@@ -377,7 +377,7 @@ $string['eventpagebreakcreated'] = 'Saut de page créé';
 $string['eventpagebreakdeleted'] = 'Saut de page supprimé';
 $string['eventquestionmanuallygraded'] = 'Question évaluée manuellement';
 $string['eventquizattemptabandoned'] = 'Tentative de test abandonnée';
-$string['eventquizattemptregraded'] = 'Tentative de test réévaluée';
+$string['eventquizattemptregraded'] = 'Tentative de test recalculée';
 $string['eventquizattemptstarted'] = 'Tentative de test commencée';
 $string['eventquizattemptsubmitted'] = 'Tentative de test envoyée';
 $string['eventquizattempttimelimitexceeded'] = 'Durée limite de tentative de test dépassée';
@@ -614,7 +614,7 @@ $string['notavailabletostudents'] = 'Ce test n’est actuellement pas disponible
 $string['notenoughrandomquestions'] = 'Il n’y a pas assez de questions dans la catégorie {$a->category} pour créer la question {$a->name} ({$a->id}).';
 $string['notenoughsubquestions'] = 'Vous n’avez pas défini assez de sous-questions !<br />Souhaitez-vous revenir en arrière pour corriger cela ?';
 $string['notifyattemptsgradedtask'] = 'Envoyer des notifications d’évaluation des tentatives';
-$string['notimedependentitems'] = 'Les éléments dépendant du temps ne sont pour l’instant pas supportés dans le module test. Comme pis aller, vous pouvez fixer une limite de durée pour la totalité du test. Voulez-vous choisir un autre élément (ou utiliser malgré tout cet élément-ci) ?';
+$string['notimedependentitems'] = 'Les éléments dépendant du temps ne sont pour l’instant pas pris en charge dans le module test. Comme pis aller, vous pouvez fixer une limite de durée pour la totalité du test. Voulez-vous choisir un autre élément (ou utiliser malgré tout cet élément-ci) ?';
 $string['notyetgraded'] = 'Pas encore évalué';
 $string['notyetviewed'] = 'Pas encore vu';
 $string['notyourattempt'] = 'Il ne s’agit pas de votre tentative !';
@@ -778,7 +778,7 @@ $string['quiz:ignoretimelimits'] = 'Ignorer la limite de temps du test';
 $string['quiz:manage'] = 'Gérer les tests';
 $string['quiz:manageoverrides'] = 'Gérer les dérogations de réglages de test';
 $string['quiz:preview'] = 'Prévisualiser les tests';
-$string['quiz:regrade'] = 'Ré-évaluer les tentatives des tests';
+$string['quiz:regrade'] = 'Recalculer les tentatives des tests';
 $string['quiz:reviewmyattempts'] = 'Relire ses propres tentatives';
 $string['quiz:view'] = 'Consulter les informations des tests';
 $string['quiz:viewoverrides'] = 'Consulter les dérogations de réglages de test';
@@ -832,10 +832,10 @@ $string['recurse'] = 'Afficher aussi les questions des sous-catégories';
 $string['redoesofthisquestion'] = 'Autres questions déjà répondues ici : {$a}';
 $string['redoquestion'] = 'Tenter une autre question semblable';
 $string['regrade'] = 'Recalculer les notes de toutes les tentatives';
-$string['regradecomplete'] = 'Toutes les tentatives ont été ré-évaluées';
+$string['regradecomplete'] = 'Toutes les tentatives ont été recalculées';
 $string['regradecount'] = '{$a->changed} sur {$a->attempt} notes ont été changées';
 $string['regradedisplayexplanation'] = 'Les tentatives modifiées durant le nouveau calcul des notes sont affichées comme hyperliens dans la fenêtre de relecture des questions';
-$string['regradenotallowed'] = 'Vous n’avez pas les permissions requises pour ré-évaluer ce test';
+$string['regradenotallowed'] = 'Vous n’avez pas les permissions requises pour recalculer ce test';
 $string['regradingquestion'] = 'Nouveau calcul de « {$a} ».';
 $string['regradingquiz'] = 'Nouveau calcul des notes du test « {$a} »';
 $string['remove'] = 'Supprimer';
@@ -1041,7 +1041,7 @@ $string['type'] = 'Type';
 $string['unfinished'] = 'ouvert';
 $string['ungraded'] = 'Pas notée';
 $string['unit'] = 'Unité';
-$string['unknowntype'] = 'Type de question non supporté à la ligne {$a}. La question sera ignorée';
+$string['unknowntype'] = 'Type de question non pris en charge à la ligne {$a}. La question sera ignorée';
 $string['updateoverdueattemptstask'] = 'Mise à jour des tentatives de test en retard';
 $string['updatequizslotswithrandomxofy'] = 'Modification de l’insertion des données de questions aléatoires du test ({$a->done}/{$a->total})';
 $string['updatesettings'] = 'Modifier les réglages du test';

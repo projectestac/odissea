@@ -33,5 +33,5 @@ $string['allowedsourceslistdesc'] = 'Список URL-адресов, с кот�
 
 - H5P.com: https://[xxxxxx].h5p.com/content/[id]
 - Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
-$string['filtername'] = 'Отображать H5P';
+$string['filtername'] = 'Отображение H5P';
 $string['privacy:metadata'] = 'Фильтр H5P не хранит никаких личных данных.';

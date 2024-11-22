@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = 'Izenburua (handia)';
-$string['h4'] = 'Izenburua (ertaina)';
-$string['h5'] = 'Izenburua (txikia)';
+$string['h3'] = 'Goiburua (handia)';
+$string['h4'] = 'Goiburua (ertaina)';
+$string['h5'] = 'Goiburua (txikia)';
 $string['p'] = 'Paragrafoa';
 $string['pluginname'] = 'Paragrafo-estiloak';
 $string['pre'] = 'Aurre-formateatua';

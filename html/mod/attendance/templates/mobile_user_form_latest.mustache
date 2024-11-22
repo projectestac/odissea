@@ -45,7 +45,15 @@
 }}
 {{=<% %>=}}
 <div class="attendance_mobile_user_form">
-    <core-course-module-description description="<% attendance.intro %>" component="mod_attendance" componentId="<% cmid %>"></core-course-module-description>
+    <%#attendance.intro%>
+    <ion-card>
+        <ion-item class="ion-text-wrap">
+            <ion-label>
+                <core-format-text text="<%attendance.intro%>" component="mod_attendance" componentId="<%cmid%>" collapsible-item />
+            </ion-label>
+        </ion-item>
+    </ion-card>
+    <%/attendance.intro%>
     <%#showmessage%>
         <%#messages%>
             <span class="messages">
@@ -65,8 +73,7 @@
     <ion-radio-group [(ngModel)]="status" name="status">
         <%#statuses%>
         <ion-item class="ion-text-wrap">
-            <ion-label><% description %></ion-label>
-            <ion-radio slot="end" value="<% stid %>"></ion-radio>
+            <ion-radio value="<% stid %>"><% description %></ion-radio>
         </ion-item>
         <%/statuses%>
     </ion-radio-group>

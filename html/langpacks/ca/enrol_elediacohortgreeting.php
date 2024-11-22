@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Descripció';
+$string['idnumber'] = 'ID de la cohort';
 $string['search'] = 'Cerca';
+$string['useradded'] = 'S\'ha afegit l\'usuari a la cohort «{$a}»';

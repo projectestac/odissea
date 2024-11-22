@@ -102,7 +102,7 @@ $string['noaccesssincestartinfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>{$a->coursename} ikastaroko hainbat ikasle ez da inoiz ikastaroan sartu.</p>';
 $string['nocourseactivity'] = 'Ikastaroaren hasiera eta amaieraren artean ez da aktibitate nahikorik izan';
 $string['nocourseendtime'] = 'Ikastaroak ez du amaiera-datarik';
-$string['nocoursesections'] = 'Ikastaroko atalik ez';
+$string['nocoursesections'] = 'Ikastaro-atalik ez';
 $string['nocoursestudents'] = 'Ikaslerik ez';
 $string['norecentaccessesinfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>{$a->coursename} ikastaroko hainbat ikasle ez da berriki ikastaroan sartu.</p>';

@@ -97,7 +97,7 @@ $filters .= html_writer::label(get_string('component', REPORT_COMPONENTNAME), 'c
 $filters .= html_writer::select($filteroptions->components, "component", $component, get_string("allcomponents", REPORT_COMPONENTNAME)) . ' ';
 $filters .= html_writer::checkbox("backups", 1, $showonlybackups, get_string("showonlybackups", REPORT_COMPONENTNAME)) . '<br>';
 
-if (!function_exists('is_xtecadmin') || is_xtecadmin()) {
+if (!function_exists('get_protected_agora') || get_protected_agora()) {
     $filters .= html_writer::checkbox("hidesamehash", 1, $hidesamehash, get_string("hidesamehash", REPORT_COMPONENTNAME)) . '<br>';
 }
 

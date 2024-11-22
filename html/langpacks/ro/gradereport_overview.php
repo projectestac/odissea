@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Raportul general cu notele este vizualizat';
-$string['gradesoverview'] = 'Prezentare generală a notelor';
+$string['gradesoverview'] = 'Privire de ansamblu asupra notelor';
 $string['overview:view'] = 'Vizualizați raportul general';
-$string['pluginname'] = 'Raport general';
+$string['pluginname'] = 'Privire de ansamblu asupra raportului';
 $string['privacy:metadata'] = 'Raportul de prezentare generală a notelor arată numai datele stocate în alte locații.';

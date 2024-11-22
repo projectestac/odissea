@@ -449,10 +449,10 @@ switch ($action) {
         }
         $output = '';
         $output .= "<br /><br />\n";
-        $output .= $questionnaire->renderer->help_icon('downloadtextformat', 'questionnaire');
-        $output .= '&nbsp;' . (get_string('downloadtextformat', 'questionnaire')) . ':&nbsp;' .
-            get_string('responses', 'questionnaire').'&nbsp;'.$groupname;
-        $output .= $questionnaire->renderer->heading(get_string('textdownloadoptions', 'questionnaire'));
+        $output .= html_writer::tag('h2', (get_string('downloadtextformat', 'questionnaire'))
+                . ':&nbsp;' . get_string('responses', 'questionnaire') . '&nbsp;' .
+                $groupname . $questionnaire->renderer->help_icon('downloadtextformat', 'questionnaire'));
+        $output .= $questionnaire->renderer->heading(get_string('textdownloadoptions', 'questionnaire'), 3);
         $output .= $questionnaire->renderer->box_start();
         $downloadparams = [
             'instance' => $instance,
@@ -485,7 +485,6 @@ switch ($action) {
 
     case 'dfs':
         require_capability('mod/questionnaire:downloadresponses', $context);
-        require_once($CFG->dirroot . '/lib/dataformatlib.php');
         // Use the questionnaire name as the file name. Clean it and change any non-filename characters to '_'.
         $name = clean_param($questionnaire->name, PARAM_FILE);
         $name = preg_replace("/[^A-Z0-9]+/i", "_", trim($name));
@@ -507,12 +506,7 @@ switch ($action) {
         // Check if email report was selected.
         $emailreport = optional_param('emailreport', '', PARAM_ALPHA);
         if (empty($emailreport)) {
-            // In 3.9 forward, download_as_dataformat is replaced by \core\dataformat::download_data.
-            if (method_exists('\\core\\dataformat', 'download_data')) {
-                \core\dataformat::download_data($name, $dataformat, $columns, $output);
-            } else {
-                download_as_dataformat($name, $dataformat, $columns, $output);
-            }
+            \core\dataformat::download_data($name, $dataformat, $columns, $output);
         } else {
             // Emailreport button selected.
             if (get_config('questionnaire', 'allowemailreporting') && (!empty($emailroles) || !empty($emailextra))) {
@@ -646,7 +640,7 @@ switch ($action) {
             // not an array.
             $errorreporting = error_reporting(0);
             $pdf->writeHTML($html);
-            @$pdf->Output(clean_param($questionnaire->name, PARAM_FILE), 'D');
+            @$pdf->Output(clean_param($questionnaire->name, PARAM_FILE) . '.pdf', 'D');
             error_reporting($errorreporting);
 
         } else { // Default to HTML.

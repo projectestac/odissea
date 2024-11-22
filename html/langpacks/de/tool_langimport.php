@@ -55,6 +55,6 @@ $string['purgestringcaches'] = 'Sprachcache löschen';
 $string['search'] = 'Verfügbare Sprachpakete suchen';
 $string['selectlangs'] = 'Wählen Sie ein Sprachpaket, das deinstalliert werden soll.';
 $string['uninstall'] = 'Ausgewählte Sprachpakete deinstallieren';
-$string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete <strong>\'{$a}\'</strong> wirklich deinstallieren?';
+$string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete wirklich deinstallieren?<br><strong>\'{$a}\'</strong>';
 $string['updatelangs'] = 'Installierte Sprachpakete aktualisieren';
 $string['updatelangsnote'] = 'Das Aktualisieren aller installierten Sprachpakete kann sehr lange dauern und zu Zeitüberschreitungen führen. Es wird empfohlen, nicht das sofortige Aktualisieren durch Drücken der Taste anzustoßen, sondern stattdessen die geplante Task \'{$a->taskname}\' abzuwarten, die standardmäßig einmal am Tag ausgeführt wird.';

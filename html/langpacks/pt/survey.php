@@ -284,5 +284,5 @@ $string['surveytype_help'] = 'Existem 3 tipos de inquéritos disponíveis:
 * Inquérito sobre o Ambiente da Aprendizagem Online Construtivista (COLLES - Constructivist On-line Learning Environment Survey) - Para apurar em que medida a capacidade interativa da World Wide Web (www) pode ser utilizada para motivar os alunos com práticas de aprendizagem dinâmica.';
 $string['surveytype_link'] = 'mod/inquérito/mod';
 $string['thanksforanswers'] = '{$a}, muito obrigado por responder ao inquérito';
-$string['time'] = 'Hora';
+$string['time'] = 'Data/hora';
 $string['viewsurveyresponses'] = 'Ver {$a} respostas ao inquérito';

@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allgradeitems'] = 'Toate elementele notate';
+$string['allgradeitems'] = 'Toate elementele de notare';
 $string['allgraders'] = 'Toți evaluatorii';
 $string['datefrom'] = 'De la data';
 $string['datetime'] = 'Data si ora';
 $string['dateto'] = 'Până la data';
-$string['deleteditemid'] = 'Șterge item-ul cu id-ul {$a}';
+$string['deleteditemid'] = 'Șterge elementul cu id-ul {$a}';
 $string['errajaxsearch'] = 'Eroare la căutarea utilizatorilor';
 $string['eventgradereportviewed'] = 'Raportul istoricului notelor vizualizat';
 $string['excluded'] = 'Excluse de la calcul';

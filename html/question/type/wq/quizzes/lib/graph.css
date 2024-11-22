@@ -773,4 +773,39 @@ md-elevation-transition {
   padding-right: 10px !important;
 }
 
+.wrsUI_app .wrsUI_label.wrsUI_labelHelperTextAction {
+  color: #2f4b59 !important;
+}
+.wrsUI_app .wrsUI_label.wrsUI_labelHelperText {
+  opacity: 0.8;
+  color: #2f4b59 !important;
+}
+.wrsUI_app .wrsUI_label.wrsUI_hyperlinkLabel.wrsUI_hyperlinkLabelHelperText {
+  color: #2f4b59 !important;
+}
+.wrsUI_app .wrsUI_iconBox.wrsUI_iconBoxHelperText {
+  box-shadow: none;
+  pointer-events: none;
+}
+.wrsUI_app .wrsUI_iconBox.wrsUI_iconBoxHelperText .wrsUI_aux_icon {
+  color: #2f4b59 !important;
+  height: 20px;
+  width: 20px;
+  font-size: 20px !important;
+}
+.wrsUI_app .wrsUI_button.wrsUI_buttonHelperText {
+  padding: 0;
+  height: 16px;
+  width: 16px;
+  border: 0 !important;
+  text-align: center !important;
+  min-width: 16px;
+}
+.wrsUI_app .wrsUI_button.wrsUI_buttonHelperText .wrsUI_aux_icon {
+  color: #2f4b59 !important;
+  height: 16px;
+  width: 16px;
+  font-size: 16px !important;
+}
+
 /*# sourceMappingURL=graph.css.map */

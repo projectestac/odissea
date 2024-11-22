@@ -74,6 +74,8 @@ $string['auth_ldap_passtype_key'] = 'Format de contrasenyes';
 $string['auth_ldap_passwdexpire_settings'] = 'Paràmetres LDAP de venciment de contrasenyes';
 $string['auth_ldap_preventpassindb'] = 'Seleccioneu «sí» per impedir que les contrasenyes s\'emmagatzemin a la base de dades de Moodle.';
 $string['auth_ldap_preventpassindb_key'] = 'Evita l\'emmagatzematge de les contrasenyes a la memòria cau';
+$string['auth_ldap_rolecontext'] = 'Context {$a->localname}';
+$string['auth_ldap_rolecontext_help'] = 'El context LDAP s\'utilitza per seleccionar el mapeig <i>{$a->localname}</i>. Separeu diversos grups amb \';\'. Normalment alguna cosa com "cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with -role-groups,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Poseu el valor <> 0 si voleu cercar els usuaris en subcontextos.';
 $string['auth_ldap_search_sub_key'] = 'Cerca subcontextos';
 $string['auth_ldap_server_settings'] = 'Paràmetres del servidor LDAP';
@@ -112,14 +114,22 @@ $string['auth_ntlmsso_subnet'] = 'Si la definiu, només s\'intentarà l\'autenti
 $string['auth_ntlmsso_subnet_key'] = 'Subxarxa';
 $string['auth_ntlmsso_type'] = 'El mètode d\'autenticació configurat al servidor web per autenticar els usuaris ( en cas de dubte escolliu NTLM).';
 $string['auth_ntlmsso_type_key'] = 'Tipus d\'autenticació';
+$string['cannotmaprole'] = 'El rol «{$a->rolename}» no es pot assignar perquè el seu nom curt «{$a->shortname}» és massa llarg i/o conté guions. Per permetre que es pugui assignar, el nom curt s\'ha de reduir a un màxim de {$a->charlimit} caràcters i s\'han d\'eliminar els guions. <a href="{$a->link}">Edita el rol</a>';
 $string['connectingldap'] = 'Connectant al Servidor LDAP';
 $string['connectingldapsuccess'] = 'La connexió amb el vostre servidor LDAP s\'ha realitzat amb èxit';
 $string['creatingtemptable'] = 'S\'està creant una taula temporal {$a}';
+$string['diag_emptycontext'] = 'S\'ha trobat un context buit.';
+$string['diag_genericerror'] = 'S\'ha produït un error LDAP {$a->code} en llegir {$a->subject}: {$a->message}.';
+$string['diag_toooldversion'] = 'És molt poc probable que un servidor LDAP modern utilitzi el protocol LDAPv2. Una configuració incorrecta pot corrompre els valors dels camps d\'usuari. Consulteu amb el vostre administrador LDAP.';
 $string['didntfindexpiretime'] = 'password_expire() no ha pogut trobar el temps de caducitat';
 $string['didntgetusersfromldap'] = 'Encara no hi usuaris LDAP -- error ? -- S\'està sortint.';
 $string['gotcountrecordsfromldap'] = 'S\'han trobat {$a} registres de LDAP';
+$string['invalidusererrors'] = 'Avís: s\'ha omès la creació de {$a} comptes d\'usuari.';
+$string['invaliduserexception'] = 'No s\'ha pogut crear un compte d\'usuari nou. Detalls i motiu:
+{$a}
+S\'omet aquest usuari.';
 $string['ldapnotconfigured'] = 'Actualment l\'URL del servidor LDAP no està configurat';
-$string['morethanoneuser'] = 'Que estrany! Més d\'un registre d\'usuari en LDAP. Sols s\'usa el primer.';
+$string['morethanoneuser'] = 'S\'ha trobat més d\'un registre d\'usuari a l\'LDAP. Només s\'utilitza el primer.';
 $string['needbcmath'] = 'Us cal l\'extensió BCMath per utilitzar els inicis de sessió de gràcia amb l\'Active Directory.';
 $string['needmbstring'] = 'Us cal l\'extensió mbstring per canviar contrasenyes al directori actiu.';
 $string['nodnforusername'] = 'Error en user_update_password(). No hi ha nom únic per: {$a->username}';
@@ -138,11 +148,14 @@ $string['pagesize'] = 'Assegureu-vos que aquest valor és menor que el límit de
 $string['pagesize_key'] = 'Mida de la pàgina';
 $string['pluginname'] = 'Servidor LDAP';
 $string['pluginnotenabled'] = 'Connector no habilitat!';
+$string['privacy:metadata'] = 'El connector d\'autenticació del servidor LDAP no emmagatzema cap dada personal.';
 $string['renamingnotallowed'] = 'No està permés en LDAP canviar el nom a l\'usuari';
 $string['rootdseerror'] = 'Error de consulta rootDSE per al directori actiu.';
 $string['start_tls'] = 'Usa el servei LDAP regular (port 389) amb xifrat TLS';
 $string['start_tls_key'] = 'Usa TLS';
+$string['syncroles'] = 'Sincronitza els rols del sistema des de LDAP';
 $string['synctask'] = 'Tasca de sincronització dels usuaris LDAP';
+$string['systemrolemapping'] = 'Mapatge de rols del sistema';
 $string['updatepasserror'] = 'Error en user_update_password(). Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Error en user_update_password() quan es llegia el temps d\'expiració de la contrasenya. Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Error en user_update_password() quan s\'estava modificant l\'«expirationtime» i/o el «gracelogins». Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';

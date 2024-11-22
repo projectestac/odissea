@@ -38,7 +38,7 @@ $string['aggregatetype_help'] = 'Le type de combinaison définit comment les év
 * Nombre d’évaluations : le nombre des éléments évalués est la note finale. Ce total ne peut pas dépasser la note maximale fixée pour l’activité
 * Maximum : la note finale est l’évaluation la plus haute
 * Minimum : la note finale est l’évaluation la plus basse
-* Somme : Toutes les évaluations sont additionnées. Ce total ne peut pas dépasser la note maximale fixée pour l’activité
+* Somme : toutes les évaluations sont additionnées. Ce total ne peut pas dépasser la note maximale fixée pour l’activité
 
 Si l’option « Aucune évaluation » est sélectionnée, l’activité n’apparaîtra pas dans le carnet de notes.';
 $string['allowratings'] = 'Permettre aux éléments d’être évalués ?';

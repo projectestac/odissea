@@ -51,8 +51,12 @@ $string['attemptdetailsheader'] = '{$a->name} attempt details for {$a->username}
 $string['attemptsmanager'] = 'Attempts Manager';
 $string['badcount'] = 'Bad Count';
 $string['beginner'] = 'Beginner';
+$string['chatgoal'] = 'Chat';
+$string['chatgoal_help'] = 'The target number of chat questions to discuss.';
+$string['chatgoalunits'] = 'questions';
 $string['chatmode'] = 'Enable Chat Mode';
 $string['chatmode_details'] = 'If enabled on your account, chat mode will become available in the EnglishCentral player.';
+$string['chatquestions'] = '{$a} questions';
 $string['completed'] = 'Completed';
 $string['completiondetail:goals'] = 'Complete the watch,learn and speak goals';
 $string['completiondetail:mingrade'] = 'Minimum grade: {$a}';
@@ -91,7 +95,7 @@ $string['duration3'] = '<b>Long</b> (over 3 minutes)';
 $string['editvideos'] = 'Edit videos';
 $string['email'] = 'Email';
 $string['enablesetuptab'] = 'Enable setup tab';
-$string['enablesetuptab_details'] = 'Show a tab containing the activity instance settings to admins. Not super useful in most cases.';
+$string['enablesetuptab_details'] = 'Show a tab containing the activity instance settings to admins. This setting appears to be just for developers. It will also force the "embed" page layout.';
 $string['encryptedsecret'] = 'Encrypted Secret';
 $string['encryptedsecretdefault'] = 'YOUR ENCRYPTED SECRET';
 $string['encryptedsecretexplain'] = 'Your encrypted secret is available from {$a}';
@@ -110,6 +114,8 @@ $string['exportexcel'] = 'Export to Excel(csv)';
 $string['exportpdf'] = 'Export to PDF';
 $string['fillcredentials'] = 'Set API user and secret with existing credentials';
 $string['finish'] = 'Finish';
+$string['forceembedlayout'] = 'Force embedded layout';
+$string['forceembedlayout_details'] = 'Force embedded window.';
 $string['freetrial'] = 'Get Cloud Poodll API Credentials and a Free Trial';
 $string['freetrial_desc'] = 'A dialog should appear that allows you to register for a free trial with Poodll. After registering you should login to the members dashboard to get your API user and secret. And to register your site URL.';
 $string['from'] = 'From';
@@ -121,7 +127,7 @@ $string['futurevideoopen'] = 'The videos will be available from {$a}';
 $string['goalperiod'] = 'Goal period';
 $string['goalperiod_help'] = 'The time period and the day or date by which these goals should be achieved.';
 $string['goals'] = 'Goals';
-$string['goals_help'] = 'Define goals for Watch, Learn, Speak and Study time';
+$string['goals_help'] = 'Define goals for Watch, Learn, Speak, Chat and Study time';
 $string['goodcount'] = 'Good Count';
 $string['gradeaverage'] = 'average score of all attempts';
 $string['gradehighest'] = 'highest scoring attempt';
@@ -176,12 +182,13 @@ To set up the activity, the teacher first defines the following study goals:
 * the number of videos to Watch
 * the number of words to Learn
 * the number of lines to Speak
+* the number of Chat questions to discuss
 
 The teacher then searches the EnglishCentral video library and selects which videos should be added to this EnglishCentral activity.
 
-Finally, the students choose one or more of the videos they would like to watch. After watching a video, they can choose which words from the video they would like to learn, and which lines they wish to practice speaking.
+When the students view the activity, they first choose one or more of the videos they would like to watch. After watching a video, they can choose which words from the video they would like to learn, and which lines they wish to practice speaking. Finally, they can confirm their understanding and chat about the video with an AI ChatBot using the discussion questions as prompts.
 
-As each student studies, the dials on their scoreboard are updated to give feedback about their progress towards the Watch, Learn and Speak goals.';
+As each student studies, the dials on their scoreboard are updated to give feedback about their progress towards the Watch, Learn, Speak and Chat goals.';
 $string['partnerid'] = 'Partner ID';
 $string['partneriddefault'] = 'YOUR PARTNER ID';
 $string['partneridexplain'] = 'Your partnerid is available from {$a}';
@@ -279,7 +286,8 @@ The study time is calculated using the following formula:
 
 (number of videos watched) x 6 minutes
 + (number of words learned) x 1 minute
-+ (number of lines spoken) x 1 minute';
++ (number of lines spoken) x 1 minute
++ (number of chat questions) x 4 minutes';
 $string['studygoalunits'] = 'minutes';
 $string['subscriptionhasnocreds'] = 'The Poodll EnglishCentral subscription is expired or not yet set up. Contact <a href="https://poodll.com/contact" target="EC">Poodll support</a>';
 $string['supportconfirm'] = 'The following information will be sent to Poodll.com (English Central demo request) to request a partner ID and access keys:';
@@ -298,9 +306,10 @@ $string['totalgoal_help'] = 'The total progress as a percentage. it is calculate
 * **number of items studied**:
 (number of videos watched) +
 (number of words learned) +
-(number of lines spoken)
+(number of lines spoken) +
+(number of chat questions discussed)
 * **total study goal**:
-(watch goal) + (learn goal) + (speak goal)';
+(watch goal) + (learn goal) + (speak goal) + (chat goal)';
 $string['transcript'] = 'Transcript';
 $string['unlimited'] = 'unlimited';
 $string['until'] = 'Until';

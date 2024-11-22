@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['audio'] = 'Àudio';
 $string['exportdiagnostics'] = 'Exporta';
 $string['recordings'] = 'Enregistraments';
+$string['type'] = 'Tipus';

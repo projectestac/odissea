@@ -31,6 +31,7 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'des de';
 $string['direction_label'] = 'Direcció';
 $string['direction_until'] = 'fins a';
+$string['error_dateconflict'] = 'Conflictes amb altres restriccions de dates';
 $string['full_from'] = 'Avui sigui posterior al <strong>{$a}</strong>';
 $string['full_from_date'] = 'Avui sigui <strong>{$a}</strong> o posterior';
 $string['full_until'] = 'És abans de <strong>{$a}</strong>';

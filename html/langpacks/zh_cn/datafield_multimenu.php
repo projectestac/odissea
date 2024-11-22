@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = '多选菜单字段';
-$string['pluginname'] = '多级菜单';
-$string['privacy:metadata'] = '多选菜单字段组件不存储任何个人数据，它使用mod_data中定义的表。';
+$string['fieldtypelabel'] = '多选列表';
+$string['pluginname'] = '多选列表';
+$string['privacy:metadata'] = '多选列表字段组件不存储任何个人数据，它使用 mod_data 中定义的表';

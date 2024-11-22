@@ -45,7 +45,7 @@ $string['answer'] = 'Réponse';
 $string['answerButton'] = 'Réponse';
 $string['answerSolved'] = 'Cette réponse a été marquée comme correcte par un enseignant.';
 $string['answercounthelpicon'] = 'Nombre de réponses';
-$string['answercounthelpicon_help'] = 'Cette colonne affiche le nombre de réponses pour chaque chaque question.';
+$string['answercounthelpicon_help'] = 'Cette colonne affiche le nombre de réponses pour chaque question.';
 $string['answers'] = 'réponses';
 $string['answerstab'] = 'Réponses';
 $string['answerstabicon'] = 'Réponses';
@@ -53,7 +53,7 @@ $string['answerstabicon_help'] = 'Cette page peut afficher toutes les réponses 
 $string['author'] = 'Auteur';
 $string['average'] = 'moyenne';
 $string['average_answers'] = 'Réponses moyennes';
-$string['average_help'] = 'Seuls les utilisateurs ayant rédigé au moins un commentaires sont inclus dans le calcul de la moyenne (arithmétique)';
+$string['average_help'] = 'Seuls les utilisateurs ayant rédigé au moins un commentaire sont inclus dans le calcul de la moyenne (arithmétique)';
 $string['average_questions'] = 'Questions moyennes';
 $string['by'] = 'par';
 $string['by_other_users'] = 'par d’autres utilisateurs';
@@ -83,7 +83,7 @@ $string['deletingAnnotation_manager'] = 'L’annotation et tous les commentaires
 $string['deletingAnnotation_student'] = 'L’annotation et tous les commentaires correspondants seront supprimés. <br> Vous pouvez supprimer vos propres annotations tant qu’elles n’ont pas été commentées par d’autres utilisateurs.';
 $string['deletingComment'] = 'Le commentaire sera supprimé. Il sera affiché comme supprimé sauf s’il s’agit du dernier commentaire de son sujet.';
 $string['deletingCommentTitle'] = 'Voulez-vous vraiment continuer ?';
-$string['deletingQuestion_manager'] = 'Le commentaire sera supprimé. <br> Conseil : Si vous souhaitez également supprimer toutes les réponses, supprimez l’annotation du document.';
+$string['deletingQuestion_manager'] = 'Le commentaire sera supprimé. <br> Conseil : si vous souhaitez également supprimer toutes les réponses, supprimez l’annotation du document.';
 $string['deletingQuestion_student'] = 'La question sera supprimée.<br>S’il n’y a pas de réponse, l’annotation sera également supprimée, sinon la question sera affichée comme supprimée';
 $string['deletionForbidden'] = 'Suppression non autorisée';
 $string['didyouknow'] = 'Le saviez-vous ?';
@@ -96,7 +96,7 @@ $string['editAnnotationTitle'] = 'Voulez-vous vraiment continuer ?';
 $string['editButton'] = 'Enregistrer';
 $string['editNotAllowed'] = 'Panoramique interdit !';
 $string['editedComment'] = 'dernière édition';
-$string['emptypdf'] = 'Il n’y a pas de commentaires dans cet annotateur pour le moment.';
+$string['emptypdf'] = 'Il n’y a pas de commentaire dans cet annotateur pour le moment.';
 $string['enterText'] = 'Saisir le texte';
 $string['entity_helptitle'] = 'Aide pour';
 $string['error'] = 'Erreur !';
@@ -108,7 +108,7 @@ $string['error:editAnnotation'] = 'Une erreur s’est produite lors de la modifi
 $string['error:editcomment'] = 'Une erreur s’est produite lors de la tentative de modification d’un commentaire.';
 $string['error:findimage'] = 'Une erreur est survenue lors de la recherche de l’image {$a}.';
 $string['error:forwardquestion'] = 'Une erreur s’est produite lors du transfert de la question.';
-$string['error:forwardquestionnorecipient'] = 'Une erreur s’est produite lors du transfert de la question. : Personne dans ce cours n’a la capacité de recevoir des questions transférées.';
+$string['error:forwardquestionnorecipient'] = 'Une erreur s’est produite lors du transfert de la question : personne dans ce cours n’a la capacité de recevoir des questions transférées.';
 $string['error:getAllQuestions'] = 'Une erreur s’est produite lors de la récupération des questions de ce document.';
 $string['error:getAnnotation'] = 'Une erreur s’est produite lors de la récupération de l’annotation.';
 $string['error:getAnnotations'] = 'Une erreur s’est produite lors de la récupération de toutes les annotations.';
@@ -128,7 +128,7 @@ $string['error:printcomments'] = 'Une erreur s’est produite lors de l’ouvert
 $string['error:printcommentsdata'] = 'Erreur avec les données du serveur.';
 $string['error:printlatex'] = 'Une erreur s’est produite lors de la tentative d’ajout d’une formule LaTeX au pdf.';
 $string['error:redihideCommentsplayComment'] = 'Une erreur s’est produite lors de la réinsertion du commentaire pour les participants.';
-$string['error:redisplayComment'] = 'Une erreur s’est produite lors de la réaffichage du commentaire.';
+$string['error:redisplayComment'] = 'Une erreur s’est produite lors du ré-affichage du commentaire.';
 $string['error:renderPage'] = 'Une erreur s’est produite lors de l’affichage de la page.';
 $string['error:reportComment'] = 'Une erreur s’est produite lors de l’enregistrement du rapport.';
 $string['error:subscribe'] = 'Une erreur s’est produite lors de l’abonnement à la question.';
@@ -139,28 +139,28 @@ $string['eventreport_added'] = 'Un commentaire a été signalé';
 $string['filenotfound'] = 'Fichier non trouvé.';
 $string['forward'] = 'Transmettre';
 $string['forwardedquestionhtml'] = '{$a->sender} vous a transmis la question suivante : <br /> <br />
-        "{$a->questioncontent}" <br /> <br />
+        « {$a->questioncontent} » <br /> <br />
         Avec le message : <br /> <br />
-        "{$a->message}" <br /> <br />
+        « {$a->message} » <br /> <br />
         La question est disponible <a href="{$a->urltoquestion}">ici</a>.';
 $string['forwardedquestiontext'] = '{$a->sender} vous a transmis la question suivante :
 
-        "{$a->questioncontent}"
+        « {$a->questioncontent} »
 
         avec le message :
 
-        "{$a->message}
+        « {$a->message} »
 
          la question est disponible à : {$a->urltoquestion}';
 $string['fullscreen'] = 'Plein écran';
 $string['fullscreenBack'] = 'Quitter le mode plein écran';
 $string['global_setting_anonymous'] = 'Autoriser les posts anonymes ?';
-$string['global_setting_anonymous_desc'] = 'Avec cette option, vous autorisez vos utilisateurs à poster des commentaires anonymement. Cette option active les publication anonyme globalement';
+$string['global_setting_anonymous_desc'] = 'Avec cette option, vous autorisez vos utilisateurs à poster des commentaires anonymement. Cette option active les publications anonymes globalement';
 $string['global_setting_attobuttons'] = 'Configuration de la barre d’outils de l’éditeur Atto';
 $string['global_setting_attobuttons_desc'] = 'La liste des plugins et l’ordre dans lequel ils sont affichés peuvent être configurés ici. La configuration se compose de groupes (un par ligne) suivis de la liste ordonnée des plugins pour ce groupe. Le groupe est séparé des plugins par un signe égal et les plugins sont séparés par des virgules. Les noms de groupe doivent être uniques et doivent indiquer ce que les boutons ont en commun. Les noms de bouton et de groupe ne doivent pas être répétés et ne peuvent contenir que des caractères alphanumériques.';
 $string['global_setting_latexapisetting'] = 'API LaTeX vers PNG';
 $string['global_setting_latexapisetting_desc'] = 'API pour convertir Latex en PNG pour les téléchargements PDF. <br>
-        Remarque : Si vous utilisez l’API Google Chart, Google obtiendra toutes les formules incluses dans le document si quelqu’un choisit d’utiliser LaTeX<br>
+        Remarque : si vous utilisez l’API Google Chart, Google obtiendra toutes les formules incluses dans le document si quelqu’un choisit d’utiliser LaTeX<br>
         Si vous utilisez l’API Moodle, vous avez besoin qu’un latex, dvips et convertisseur binaire soit installé sur votre serveur.
         (Voir <a href="https://docs.moodle.org/38/en/TeX_notation_filter">la Documentation Moodle</a>)';
 $string['global_setting_latexusegoogle'] = 'API Google Chart';
@@ -168,7 +168,7 @@ $string['global_setting_latexusemoodle'] = 'API interne de Moodle';
 $string['global_setting_use_private_comments'] = 'Autoriser les notes personnelles ?';
 $string['global_setting_use_private_comments_desc'] = 'Autorise les participants à rédiger des annotations personnelles et des notes personnelles';
 $string['global_setting_use_protected_comments'] = 'Autoriser les commentaires privés ?';
-$string['global_setting_use_protected_comments_desc'] = 'Autorise les participants à rédiger des annotation privées et des commentaires privés. Seul l’auteur et l’administrateur peuvent voir ce commentaire.';
+$string['global_setting_use_protected_comments_desc'] = 'Autorise les participants à rédiger des annotations privées et des commentaires privés. Seul l’auteur et l’administrateur peuvent voir ce commentaire.';
 $string['global_setting_use_studentdrawing'] = 'Autoriser les dessins pour les participants ?';
 $string['global_setting_use_studentdrawing_desc'] = 'Veuillez noter que les dessins sont anonymes et ne peuvent être ni commentés, ni rapportés.';
 $string['global_setting_use_studenttextbox'] = 'Autoriser les zones de texte pour les participants ?';
@@ -180,7 +180,7 @@ $string['global_setting_useprint_desc'] = 'Permettre aux participants de sauvega
 $string['global_setting_useprint_document'] = 'Autoriser l’enregistrement / l’impression du document ?';
 $string['global_setting_useprint_document_desc'] = 'Permettre aux participants de sauvegarder et d’imprimer le document pdf';
 $string['global_setting_usevotes'] = 'Autoriser les liens vers les commentaires ?';
-$string['global_setting_usevotes_desc'] = 'Avec cette option, les utilisateurs peuvent aimer / voter pour les postes autres que les leurs.';
+$string['global_setting_usevotes_desc'] = 'Avec cette option, les utilisateurs peuvent aimer / voter pour les posts autres que les leurs.';
 $string['hiddenComment'] = 'Commentaire masqué';
 $string['hiddenforparticipants'] = 'Masqué aux étudiants';
 $string['hideAnnotations'] = 'Masquer les annotations';
@@ -203,8 +203,8 @@ $string['like'] = 'aimer';
 $string['likeAnswer'] = 'utile';
 $string['likeAnswerForbidden'] = 'déjà marqué utile';
 $string['likeCountAnswer'] = 'des participants considèrent cette réponse utile';
-$string['likeCountQuestion'] = 'Des participants sont égalements intéressés par cette question';
-$string['likeForbidden'] = 'Vous n’êtes pas autoriser à aimer ce commentaire';
+$string['likeCountQuestion'] = 'Des participants sont également intéressés par cette question';
+$string['likeForbidden'] = 'Vous n’êtes pas autorisé à aimer ce commentaire';
 $string['likeOwnComment'] = 'propre commentaire';
 $string['likeQuestion'] = 'question intéressante';
 $string['likeQuestionForbidden'] = 'déjà marqué comme utile';
@@ -212,8 +212,8 @@ $string['loading'] = 'Chargement !';
 $string['markCorrect'] = 'Marqué comme correct';
 $string['markSolved'] = 'Fermer la question';
 $string['markUnsolved'] = 'Réouvrir la question';
-$string['markasread'] = 'Marqué comme lu';
-$string['markasunread'] = 'Marqué comme non lu';
+$string['markasread'] = 'Marquer comme lu';
+$string['markasunread'] = 'Marquer comme non lu';
 $string['markhidden'] = 'Cacher';
 $string['maximumfilesize'] = 'Taille maximale de fichier';
 $string['maximumfilesize_help'] = 'Les fichiers téléchargés par les utilisateurs peuvent atteindre cette taille.';
@@ -226,7 +226,7 @@ $string['messageprovider:newreport'] = 'Lorsqu’un commentaire a été signalé
 $string['min0Chars'] = 'Une question vide ou un commentaire n’est pas autorisé.';
 $string['minute'] = 'minute';
 $string['minutes'] = 'minutes';
-$string['missingAnnotation'] = 'L’annotation correspondante ne peut pas être trouvée·!';
+$string['missingAnnotation'] = 'L’annotation correspondante ne peut pas être trouvée !';
 $string['modifiedby'] = 'par';
 $string['modulename'] = 'Annotation PDF';
 $string['modulename_help'] = 'Cette activité permet de collaborer sur un document PDF. Les participants peuvent annoter des parties spécifiques du PDF et en discuter avec les autres.';
@@ -235,7 +235,7 @@ $string['modulenameplural'] = 'Annotations PDF';
 $string['month'] = 'mois';
 $string['months'] = 'mois';
 $string['myanswers'] = 'Mes réponses';
-$string['mypost'] = 'Mon poste';
+$string['mypost'] = 'Mon post';
 $string['myprivate'] = 'Mes notes personnelles';
 $string['myprotectedanswers'] = 'Mes réponses privées';
 $string['myprotectedquestions'] = 'Mes questions privées';
@@ -243,19 +243,19 @@ $string['mypublicanswers'] = 'Mes réponses publiques';
 $string['mypublicquestions'] = 'Mes questions publiques';
 $string['myquestion'] = 'Question';
 $string['myquestions'] = 'Mes questions';
-$string['newanswerhtml'] = 'Vous vous êtes abonné à la question "{$a->question}" à laquelle {$a->answeruser} a répondu par le commentaire suivant : <br /> <br /> "{$a->content}"<br /><br />
+$string['newanswerhtml'] = 'Vous vous êtes abonné à la question « {$a->question} » à laquelle {$a->answeruser} a répondu par le commentaire suivant : <br /> <br /> « {$a->content} »<br /><br />
 La réponse est disponible <a href="{$a->urltoanswer}">ici</a>.';
-$string['newanswertext'] = 'Vous vous êtes abonné à la question "{$a->question}"à laquelle {$a->answeruser} a répondu par le commentaire suivant :
+$string['newanswertext'] = 'Vous vous êtes abonné à la question « {$a->question} » à laquelle {$a->answeruser} a répondu par le commentaire suivant :
 
-    "{$a->content}"
+    « {$a->content} »
 
 La réponse est disponible à l’adresse suivante : {$a->urltoanswer}';
-$string['newquestionhtml'] = 'Une nouvelle question a été ajoutée par {$a->answeruser} avec le contenu suivant : <br /> <br /> "{$a->content}"<br /><br />
+$string['newquestionhtml'] = 'Une nouvelle question a été ajoutée par {$a->answeruser} avec le contenu suivant : <br /> <br /> « {$a->content} »<br /><br />
 La question est disponible <a href="{$a->urltoanswer}">ici</a>.';
 $string['newquestions'] = 'Demandé récemment';
 $string['newquestiontext'] = 'Une nouvelle question a été ajoutée par {$a->answeruser} avec le contenu suivant :
 
-    "{$a->content}"
+    « {$a->content} »
 
 La question est disponible à l’adresse suivante : {$a->urltoanswer}';
 $string['nextPage'] = 'Page suivante';
@@ -301,14 +301,14 @@ $string['pdfannotator:forwardquestions'] = 'Questions transférées';
 $string['pdfannotator:getforwardedquestions'] = 'Recevoir les questions transférées';
 $string['pdfannotator:hidecomments'] = 'Masquer les commentaires pour les participants';
 $string['pdfannotator:markcorrectanswer'] = 'Marquer les réponses comme correctes';
-$string['pdfannotator:printcomments'] = 'Télécharger les commentaires (même si l’option est désactivée pour un annotateur PDF)';
-$string['pdfannotator:printdocument'] = 'Télécharger le document (même si l’option est désactivée pour un annotateur PDF)Télécharger le document';
+$string['pdfannotator:printcomments'] = 'Télécharger les commentaires (même si l’option est désactivée pour un PDF Annotation)';
+$string['pdfannotator:printdocument'] = 'Télécharger le document (même si l’option est désactivée pour un PDF Annotation)';
 $string['pdfannotator:recievenewquestionnotifications'] = 'Recevoir des notifications sur les nouvelles questions';
 $string['pdfannotator:report'] = 'Signaler des commentaires inappropriés au responsable du cours';
 $string['pdfannotator:seehiddencomments'] = 'Voir les commentaires cachés';
 $string['pdfannotator:subscribe'] = 'S’abonner à la question';
-$string['pdfannotator:usedrawing'] = 'Utiliser le dessin (même si l’option est désactivée pour un PDF Annotation)-';
-$string['pdfannotator:usetextbox'] = 'Utiliser la zone de texte (même si l’option est désactivée pour un PDF-Annotation)';
+$string['pdfannotator:usedrawing'] = 'Utiliser le dessin (même si l’option est désactivée pour un PDF Annotation)';
+$string['pdfannotator:usetextbox'] = 'Utiliser la zone de texte (même si l’option est désactivée pour un PDF Annotation)';
 $string['pdfannotator:view'] = 'Voir PDF Annotation';
 $string['pdfannotator:viewanswers'] = 'Afficher les réponses aux questions auxquelles vous êtes abonné (page d’aperçu)';
 $string['pdfannotator:viewposts'] = 'Afficher ses propres commentaires (page d’aperçu)';
@@ -319,7 +319,7 @@ $string['pdfannotator:viewstatistics'] = 'Voir la page des statistiques';
 $string['pdfannotator:viewteacherstatistics'] = 'Voir des informations supplémentaires sur la page des statistiques';
 $string['pdfannotator:vote'] = 'Voter pour une question intéressante ou un commentaire utile';
 $string['pdfannotator:writeprivatecomments'] = 'Prendre des notes personnelles';
-$string['pdfannotator:writeprotectedcomments'] = 'Ecrire des commentaires privés';
+$string['pdfannotator:writeprotectedcomments'] = 'Écrire des commentaires privés';
 $string['pdfannotatorcolumn'] = 'Document';
 $string['pdfannotatorcontent'] = 'Fichiers et sous-dossiers';
 $string['pdfannotatorname'] = 'Outil d’annotation PDF';
@@ -333,10 +333,10 @@ $string['printButton'] = 'Télécharger';
 $string['printviewtitle'] = 'Commentaires';
 $string['printwithannotations'] = 'télécharger les commentaires';
 $string['privacy:metadata:core_files'] = 'PDFannotator stocke les fichiers téléchargés par l’utilisateur comme base d’annotation et de discussion.';
-$string['privacy:metadata:pdfannotator_annotations'] = 'Le PDF Annotation est toujours en cours de développement. Vous pouvez nous aider à l’adapter à vos besoins en nous faisant part de vos commentaires. Merci d’avance';
+$string['privacy:metadata:pdfannotator_annotations'] = 'Informations sur les annotations faites par un utilisateur. Cela inclut le type d’annotation (par exemple surbrillance ou dessin), sa position dans un fichier spécifique, ainsi que l’heure de création.';
 $string['privacy:metadata:pdfannotator_annotations:annotationid'] = 'L’ID de l’annotation qui a été créée. Celui-ci fait référence aux données listées ci-dessus.';
 $string['privacy:metadata:pdfannotator_annotations:userid'] = 'L’ID de l’utilisateur qui a créé cette annotation.';
-$string['privacy:metadata:pdfannotator_comments'] = 'Informations sur les annotations faites par un utilisateur. Cela inclut le type d’annotation (par exemple surbrillance ou dessin), sa position dans un fichier spécifique, ainsi que l’heure de création.';
+$string['privacy:metadata:pdfannotator_comments'] = 'Informations sur les commentaires fais par un utilisateur. Cela inclut le contenu et l’heure de création du commentaire, ainsi que l’annotation sous-jacente.';
 $string['privacy:metadata:pdfannotator_comments:annotationid'] = 'L’ID de l’annotation sous-jacente.';
 $string['privacy:metadata:pdfannotator_comments:content'] = 'Le commentaire littéral.';
 $string['privacy:metadata:pdfannotator_comments:userid'] = 'L’ID de l’auteur du commentaire';
@@ -370,14 +370,14 @@ $string['read'] = 'Lu';
 $string['reason'] = 'Explication';
 $string['recievenewquestionnotifications'] = 'Notifier de nouvelles questions';
 $string['recipient'] = 'Destinataire(s)';
-$string['recipient_help'] = 'Pour sélectectionner plusieurs personnes, maintenez la touche "Ctrl" enfoncée';
+$string['recipient_help'] = 'Pour sélectionner plusieurs personnes, maintenez la touche "Ctrl" enfoncée';
 $string['recipientforwardform'] = 'Transférer à';
 $string['recipientrequired'] = 'Veuillez sélectionner le(s) destinataire(s)';
 $string['rectangle'] = 'Ajoutez un rectangle dans le document et écrivez un commentaire.';
 $string['removeCorrect'] = 'Supprimer les marqueurs "correct"';
 $string['removehidden'] = 'Montrer';
 $string['report'] = 'Rapport';
-$string['reportaddedhtml'] = '{$a->reportinguser} a signalé un commentaire avec le message suivant : <br /><br /> "{$a->introduction}"<br /><br />
+$string['reportaddedhtml'] = '{$a->reportinguser} a signalé un commentaire avec le message suivant : <br /><br /> « {$a->introduction} »<br /><br />
 Il est <a href="{$a->urltoreport}">disponible sur le site internet</a>.';
 $string['reportaddedtext'] = '{$a->reportinguser} a signalé un commentaire avec le message suivant :
 
@@ -403,10 +403,10 @@ $string['sendPrivate'] = 'poster une note personnelle';
 $string['sendProtected'] = 'poster un commentaire privé';
 $string['setting_alternative_name'] = 'Nom';
 $string['setting_alternative_name_desc'] = 'Fournissez un autre nom pour le PDF. Si vide, le nom du pdf sera utilisé comme nom représentatif';
-$string['setting_alternative_name_help'] = 'Si le nom fait plus de 20 caractères de long, les caractères restants seront remplacés par "..." dans l’onglet de navigation interne de l’annotateur.';
+$string['setting_alternative_name_help'] = 'Si le nom fait plus de 20 caractères de long, les caractères restants seront remplacés par "…" dans l’onglet de navigation interne de l’annotateur.';
 $string['setting_anonymous'] = 'Autoriser la publication anonyme ?';
 $string['setting_fileupload'] = 'Sélectionnez un fichier pdf';
-$string['setting_fileupload_help'] = 'Vous ne pouvez plus modifier le fichier sélectionné après que l’annotateur ait été créé par un clic sur"Enregistrer".';
+$string['setting_fileupload_help'] = 'Vous ne pouvez plus modifier le fichier sélectionné après que l’annotateur ait été créé par un clic sur « Enregistrer » .';
 $string['setting_use_private_comments'] = 'Autoriser les notes personnelles';
 $string['setting_use_private_comments_help'] = 'Autorise les participants à rédiger des notes personnelles. Les autres utilisateurs ne peuvent pas voir ces commentaires.';
 $string['setting_use_protected_comments'] = 'Autoriser les commentaires privés';
@@ -416,7 +416,7 @@ $string['setting_use_studentdrawing_help'] = 'Permettre aux participants de sauv
 $string['setting_use_studenttextbox'] = 'Zone de texte';
 $string['setting_use_studenttextbox_help'] = 'Veuillez noter que les annotations par zone de texte ne sont pas anonymes et ne peuvent pas être commentées ni signalées.';
 $string['setting_useprint'] = 'enregistrer et imprimer';
-$string['setting_useprint_comments'] = 'enregistrer et imprimer les commentaires';
+$string['setting_useprint_comments'] = 'Enregistrer et imprimer les commentaires';
 $string['setting_useprint_comments_help'] = 'Permettre aux participants de sauvegarder et imprimer les annotations et commentaires';
 $string['setting_useprint_document'] = 'Sauvegarder et imprimer le document PDF';
 $string['setting_useprint_document_help'] = 'Permettre aux participants de sauvegarder et imprimer le document PDF';
@@ -445,7 +445,7 @@ $string['successfullyRedisplayed'] = 'Le commentaire est à nouveau visible pour
 $string['successfullySubscribed'] = 'Votre abonnement à la question a été enregistré.';
 $string['successfullyUnsubscribed'] = 'Votre abonnement a été annulé.';
 $string['successfullyUnsubscribedPlural'] = 'Votre abonnement a été annulé. Toutes les {$a} réponses à la question ont été supprimées de ce tableau.';
-$string['successfullyUnsubscribedSingular'] = 'Votre abonnement à la question a été annulé et la seul réponse a été supprimée de ce tableau.';
+$string['successfullyUnsubscribedSingular'] = 'Votre abonnement à la question a été annulé et la seule réponse a été supprimée de ce tableau.';
 $string['successfullyUnsubscribedTwo'] = 'Votre abonnement a été annulé. Les deux réponses à cette questions ont été supprimées de ce tableau.';
 $string['successfullymarkedasread'] = 'Le rapport a été marqué comme lu.';
 $string['successfullymarkedasreadandnolongerdisplayed'] = 'Le rapport a été marqué comme lu et retiré du tableau.';
@@ -476,7 +476,7 @@ $string['votes'] = 'Aimer';
 $string['voteshelpicon'] = 'Aimer';
 $string['voteshelpicon_help'] = 'Cette colonne vous indique combien d’autres personnes s’intéressent à la question';
 $string['voteshelpicontwo'] = 'Aimer';
-$string['voteshelpicontwo_help'] = 'Cette colonne vous indique combien de fois votre poste à été <em>aimé</em>';
+$string['voteshelpicontwo_help'] = 'Cette colonne vous indique combien de fois votre post à été <em>aimé</em>';
 $string['week'] = 'semaine';
 $string['weeks'] = 'semaines';
 $string['year'] = 'année';

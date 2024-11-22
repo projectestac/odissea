@@ -35,6 +35,7 @@ $string['collaborate:downloadrecordings'] = 'Baixa els enregistraments';
 $string['collaboratename'] = 'Nom de la sessió';
 $string['crontask'] = 'Tasca programada del Collaborate';
 $string['duration'] = 'Durada';
+$string['group'] = 'Grup:';
 $string['guestaccessenabled'] = 'Permet l\'accés de visitants a Collaborate';
 $string['guestlinks'] = 'Enllaços de convidat';
 $string['guestrole'] = 'Rol de visitant a Collaborate';

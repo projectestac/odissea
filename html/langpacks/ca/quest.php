@@ -313,6 +313,7 @@ $string['pointsteam'] = 'Puntuació dels equips';
 $string['poor'] = 'Pobre';
 $string['porcent'] = 'percentatge';
 $string['present'] = 'Present';
+$string['preview'] = 'Previsualització';
 $string['processingquest'] = 'S\'està processant {$a} \\n';
 $string['questapprovesubmission'] = 'Reptes aprovats a QUESTOURnament';
 $string['questassessments'] = 'Avaluacions a QUESTOURnament';

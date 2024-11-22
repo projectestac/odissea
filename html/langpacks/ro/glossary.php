@@ -248,7 +248,7 @@ $string['modulename_help'] = 'Activitatea de tip glosar permite participanților
 
 Un profesor poate permite atașarea noțiunilor la glosare. Imaginile atașate sunt afișate în noțiune. Noțiunile pot fi căutate sau răsfoiți alfabetic sau după categorie, dată sau autor. Noțiunile pot fi aprobate în mod implicit sau necesită aprobarea de către un profesor înainte de a fi vizibile pentru toată lumea.
 
-Dacă filtrul de auto-asocierea a glosarului este activat, noțiunile vor fi asociate automat acolo unde cuvintele și/sau expresiile conceptului apar în cadrul cursului.
+Dacă filtrul de auto-asociere a glosarului este activat, noțiunile vor fi asociate automat acolo unde cuvintele și/sau expresiile conceptului apar în cadrul cursului.
 
 Un profesor poate permite comentarii la noțiuni din glosar. Noțiunile pot fi, de asemenea, evaluate de profesori sau studenți (evaluare de către colegi). Evaluările pot fi agregate pentru a forma o notă finală care este înregistrată în catalogul de note.
 

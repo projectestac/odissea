@@ -63,7 +63,7 @@ $string['choiceyes'] = 'Sí';
 $string['commonsiunit'] = 'Unitat corrent del SI';
 $string['correctansweris'] = 'Una resposta correcta possible és: {$a}';
 $string['correctfeedback'] = 'Per a qualsevol resposta correcta';
-$string['correctfeedback_help'] = 'Aquesta retroacció es mostrarà als estudiants que no obtenen la nota màxima en aquesta opció. Podeu incloure variables globals i locals que seran substituïdes pels seus valors';
+$string['correctfeedback_help'] = 'Aquesta retroacció es mostrarà als estudiants que obtinguin la qualificació màxima en aquesta part. Pot incloure variables globals i locals que seran substituïdes pels seus valors';
 $string['correctness'] = 'Criteris de puntuació*';
 $string['correctness_help'] = '**Necessari**. Podeu escollir tant error relatiu com error absolut amb la corresponent escala. L\'error relatiu no es pot emprar si la resposta és algebraica.
 
@@ -91,6 +91,7 @@ $string['error_forloop'] = 'Error de sintaxi del bucle for.';
 $string['error_forloop_expression'] = 'L\'expressió del bucle for ha de ser una llista.';
 $string['error_forloop_var'] = 'La variable del bucle for té alguns errors.';
 $string['error_func_param'] = 'Nombre o tipus de paràmetres incorrecte per a la funció {$a}()';
+$string['error_grading_error'] = 'S\'ha produït un error en qualificar! Probablement sigui resultat de la importació incorrecta d\'un fitxer o de dades corruptes a la base de dades.';
 $string['error_mark'] = 'La puntuació de la resposta ha de ser més gran que 0.';
 $string['error_no_answer'] = 'Es requereix almenys una resposta.';
 $string['error_placeholder_format'] = 'Format incorrecte del marcador o caràcters prohibits.';
@@ -124,17 +125,18 @@ $string['functiontakesatleasttwo'] = 'La funció {$a} ha de tenir dos arguments 
 $string['functiontakesnoargs'] = 'La funció {$a} no accepta cap argument';
 $string['functiontakesonearg'] = 'La funció {$a} ha de tenir exactament un argument';
 $string['functiontakesoneortwoargs'] = 'La funció {$a} ha de tenir un o dos arguments';
+$string['functiontakesthreeargs'] = 'La funció {$a} ha de tenir exactament tres arguments';
 $string['functiontakestwoargs'] = 'La funció {$a} ha de tenir exactament dos arguments';
 $string['globalvarshdr'] = 'Variables';
 $string['illegalformulasyntax'] = 'Sintaxi il·legal a la fórmula que comença amb {$a}';
 $string['incorrectfeedback'] = 'Per a qualsevol resposta incorrecta';
 $string['incorrectfeedback_help'] = 'Aquesta retroacció es mostrarà als estudiants que no obtenen cap puntuació en aquesta part. Pot incloure variables globals i locals que seran substituïdes pels seus valors';
-$string['instantiate'] = 'Instancia';
+$string['instantiate'] = 'Crea una instància';
 $string['mainq'] = 'Pregunta principal';
 $string['modelanswer'] = 'Resposta model';
 $string['none'] = 'Cap';
-$string['number'] = 'Número';
-$string['number_unit'] = 'Número i unitat';
+$string['number'] = 'Nombre';
+$string['number_unit'] = 'Nombre i unitat';
 $string['numdataset'] = 'Nombre de conjunt de dades';
 $string['numeric'] = 'Numèric';
 $string['numeric_unit'] = 'Numèric i unitat';
@@ -143,7 +145,7 @@ $string['numerical_formula_unit'] = 'Fórmula numèrica i unitat';
 $string['otherrule'] = 'Altres regles';
 $string['otherrule_help'] = 'Aquí el creador de la pregunta pot definir regles de conversió addicionals per a altres unitats base acceptades. Consulteu la documentació per als usos avançats.';
 $string['partiallycorrectfeedback'] = 'Per a qualsevol resposta parcialment correcta';
-$string['partiallycorrectfeedback_help'] = 'Aquesta retroacció es mostrarà als estudiants que no obtinguin la nota màxima en aquesta part. Pot incloure variables globals i locals que seran substituïdes pels seus valors';
+$string['partiallycorrectfeedback_help'] = 'Aquesta retroacció es mostrarà als estudiants que no obtinguin la qualificació màxima en aquesta part. Pot incloure variables globals i locals que seran substituïdes pels seus valors';
 $string['placeholder'] = 'Nom del marcador de posició';
 $string['placeholder_help'] = 'Un marcador de posició s’utilitza per identificar la ubicació del text de la pregunta principal que serà substituït pel contingut de la part. És una cadena de caràcters alfanumèrics amb el prefix "** # **", com ara # 1, # 2a, # 2b i #A.
 
@@ -170,6 +172,7 @@ A més, <tt> / </tt> es pot utilitzar per a un exponent invers. Qualsevol permut
 Els estudiants han d’utilitzar el mateix format d’entrada. Per exemple,
 
 <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
+$string['previewerror'] = 'Previsualització no disponible. Comproveu la vostra definició de variables aleatòries, globals, locals i respostes. Missatge d\'error original:';
 $string['privacy:metadata'] = 'El connector de tipus de pregunta Fórmules no emmagatzema cap dada personal.';
 $string['qtextpreview'] = 'Vista prèvia mitjançant el conjunt de dades';
 $string['questiontext'] = 'Text de la pregunta';
@@ -194,9 +197,10 @@ $string['subqtext_help'] = 'Aquí es poden especificar el text de la part i els 
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
 
-Els <tt> {_0}, {_1}, {_2} </tt> són els camps d\'entrada de coordenades i <tt> {_u} </tt> és el camp d\'entrada per a la unitat.
+Els <code>{_0}, {_1}, {_2}</code> són els diferents camps d\'entrada per als valors i <code>{_u}</code> és el camp d\'entrada per a la unitat.
 
-Tots els camps que falten s\'afegeixen de manera automàtica al final del text de la part. Un cas especial seria el de <tt> {_0}, {_u} </tt>, que, si s’especifica de manera consecutiva, i només hi ha una coordenada i una unitat, per exemple, <tt> {_0}{_u} </tt>, es fusionaran en un únic camp de resposta d\'entrada llarg per a la resposta i la unitat.';
+Tots els camps que falten s\'afegeixen de manera automàtica al final del text de la part. Un cas especial seria si <code>{_0}</code> i <code>{_u}</code> s’especifiquen de manera consecutiva en el camp Text de la part, i només hi ha un camp de resposta i una unitat, per exemple, <code>{_0}{_u}</code>, aleshores es fusionaran en un únic camp de resposta d\'entrada llarg per a la resposta numèrica i la unitat.';
+$string['uniquecorrectansweris'] = 'La resposta correcta és: {$a}';
 $string['unit'] = 'Unitat';
 $string['unitpenalty'] = 'Penalització per error en les unitats (0-1)*';
 $string['unitpenalty_help'] = 'Aquesta opció especifica la puntuació amb la qual es vol penalitzar l\'error per una unitat incorrecta.

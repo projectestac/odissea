@@ -164,6 +164,7 @@ $string['moodleoverflow:ratehelpful'] = '投稿を有益であるとマークす
 $string['moodleoverflow:ratepost'] = '投稿を評価する';
 $string['moodleoverflow:replypost'] = 'ディスカッションで返信する';
 $string['moodleoverflow:startdiscussion'] = 'ディスカッションを開始する';
+$string['moodleoverflow:viewanyrating'] = '評価を表示する';
 $string['moodleoverflow:viewdiscussion'] = 'ディスカッションを閲覧する';
 $string['moodleoverflowauthorhidden'] = '作成者 (秘匿)';
 $string['moodleoverflowbodyhidden'] = 'あなたはこの投稿を閲覧できません。恐らく、あなたがディスカッションに投稿していない、まだ最大編集時間が経過していない、ディスカッションが開始されていない、またはディスカッションの有効期限が切れたと考えられます。';

@@ -38,6 +38,7 @@ $string['display_idnumber'] = '显示ID号码';
 $string['display_institution'] = '显示院系';
 $string['display_lastaccess'] = '显示最后一次访问';
 $string['display_lastip'] = '显示最后登录IP';
+$string['display_lastlogin'] = '显示上次登录时间';
 $string['display_msn'] = '显示MSN';
 $string['display_phone1'] = '显示电话号码';
 $string['display_phone2'] = '显示移动电话号码';

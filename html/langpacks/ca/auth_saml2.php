@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['nouser'] = 'Us heu autenticat correctament com a «{$a}», però no teniu un compte al Moodle.';
+$string['plugindisabled'] = 'El connector d\'autenticació SAML2 està desactivat';
 $string['suspendeduser'] = 'Us heu autenticat correctament com a «{$a}», però el vostre compte ha estat suspès al Moodle.';
 $string['update_never'] = 'Mai';
 $string['wrongauth'] = 'Us heu autenticat correctament com a «{$a}», però no esteu autoritzats a accedir al Moodle.';

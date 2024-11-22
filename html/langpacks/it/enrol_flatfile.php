@@ -32,6 +32,7 @@ $string['filelockedmail'] = 'Il file di testo ({$a}) che stai utilizzando per le
 $string['filelockedmailsubject'] = 'Errore grave: file iscrizioni';
 $string['flatfile:manage'] = 'Gestire manualmente le iscrizioni degli utenti';
 $string['flatfile:unenrol'] = 'Disiscrivere manualmente gli utenti dal corso';
+$string['flatfileenrolments'] = 'Iscrizioni via file di testo (CSV)';
 $string['flatfilesync'] = 'Sincronizzazione iscrizioni da file CSV';
 $string['location'] = 'Percorso del file';
 $string['location_desc'] = 'Il percorso del file delle iscrizioni. Il file verrà eliminato automaticamente al termine dell\'elaborazione';

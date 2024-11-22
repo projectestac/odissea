@@ -52,9 +52,9 @@ $string['doesnotcontain'] = 'nu conține';
 $string['endswith'] = 'se termină în';
 $string['filterallwarning'] = 'Aplicarea de filtre pentru antete și pentru conținut poate crește foarte mult sarcina pe server. Vă rugăm sa folositi setarea "Aplică la" cu moderație. Utilizarea principală este cu filtrul multilang.';
 $string['filtersettings'] = 'Setările de filtrare';
-$string['filtersettings_help'] = 'Această pagină vă permite să opriți filtre într-o anumită parte a site-ului.
+$string['filtersettings_help'] = 'Această pagină vă permite să activați sau să dezactivați filtre într-o anumită parte a site-ului.
 
-Unele filtre vă pot permite, de asemenea, să schimbați setările locale, caz în care va exista un link alături de numele lor.';
+Unele filtre vă pot permite, de asemenea, să schimbați setările locale, caz în care va exista un link alături de denumirea lor.';
 $string['filtersettingsforin'] = 'Setări de filtrare pentru {$a->filter} în {$a->context}';
 $string['filtersettingsin'] = 'Setări filtru în {$a}';
 $string['firstaccess'] = 'Prima accesare';
@@ -64,7 +64,7 @@ $string['isafter'] = 'este după';
 $string['isanyvalue'] = 'este orice valoare';
 $string['isbefore'] = 'este înainte';
 $string['isdefined'] = 'este definit';
-$string['isempty'] = 'este gol';
+$string['isempty'] = 'este necompletat';
 $string['isequalto'] = 'este egal cu';
 $string['isnotdefined'] = 'nu este definit';
 $string['isnotequalto'] = 'nu este egal cu';

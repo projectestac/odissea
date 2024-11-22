@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest criteri?';
+$string['save'] = 'Desa';

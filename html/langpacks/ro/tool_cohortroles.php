@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['acohortroleassignmentssaved'] = 'Au fost salvate {$a} sarcini de rol de cohortă.';
 $string['assign'] = 'Atribuie';
 $string['assignroletocohort'] = 'Atribuiți roluri de context utilizator tuturor membrilor cohortei';
-$string['backgroundsync'] = 'Notă: noile atribuiri de rol de cohortă nu vor intra în vigoare imediat. Modificările atribuirii rolului vor fi efectuate printr-o sarcină programată.';
+$string['backgroundsync'] = 'Notă: noile atribuiri de rol de cohortă nu vor intra în vigoare imediat. Modificările atribuirii rolului vor fi efectuate printr-un task programat.';
 $string['cohortroleassignmentnotremoved'] = 'Atribuirea rolului de cohortă nu a fost eliminată.';
 $string['cohortroleassignmentremoved'] = 'Atribuirea rolului de cohortă a fost eliminată.';
 $string['cohortroles'] = 'Roluri de cohortă';

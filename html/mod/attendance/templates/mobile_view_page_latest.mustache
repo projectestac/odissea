@@ -49,7 +49,9 @@
 }}
 {{=<% %>=}}
 <div class="attendance_mobile_view_page">
-    <core-course-module-description description="<% attendance.intro %>" component="mod_attendance" componentId="<% cmid %>"></core-course-module-description>
+    <core-course-module-info [module]="module" description="<% attendance.intro %>" component="mod_attendance" componentId="<% cmid %>"
+        [courseId]="courseId">
+    </core-course-module-info>
     <%#showmessage%>
     <%#messages%>
     <span class="messages">

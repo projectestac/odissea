@@ -72,6 +72,7 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'Data e ora di cre
 $string['privacy:metadata:grading_definitions:timemodified'] = 'Data e ora dell\'ultima modifica della definizione della valutazione.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'ID dell\'utente che ha creato la definizione della valutazione.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'ID dell\'utente che ha apportato l\'ultima modifica alla definizione della valutazione.';
+$string['privacy:metadata:grading_instances'] = 'Registrazione della valutazione di un elemento valutabile, valutato da un valutatore.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Feedback dato dall\'utente.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Formato di testo del feedback dato dall\'utente.';
 $string['privacy:metadata:grading_instances:raterid'] = 'ID dell\'utente che ha valutato l\'istanza.';

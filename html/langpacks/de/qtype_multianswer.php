@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmquestionsaveasedited'] = 'Ich bestätige, dass die Frage als nachträglich korrigiert gespeichert werden soll';
-$string['confirmsave'] = 'Bestätigen und dann speichern {$a}';
+$string['confirmsave'] = 'Bestätigen und dann {$a} speichern';
 $string['correctanswer'] = 'Richtige Antwort';
 $string['correctanswerandfeedback'] = 'Richtige Antwort und Feedback';
 $string['corruptedquestion'] = 'Diese Frage ist beschädigt und enthält Unterfragen, die in Ihrem System nicht vorhanden sind.';

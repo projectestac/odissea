@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Enregistrement automatique';
 $string['pluginname'] = 'Enregistrement automatique Tiny';
-$string['privacy:metadata:database:tiny_autosave'] = 'Une table enregistrant les données de session d’auto-enregistrement pour l’éditeur TinyMCE.';
+$string['privacy:metadata:database:tiny_autosave'] = 'Une table contenant les données de session d’auto-enregistrement pour l’éditeur TinyMCE';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = 'Le contenu de la session d’auto-enregistrement';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = 'L’horodatage de la modification de la session d’auto-enregistrement';
 $string['privacy:metadata:database:tiny_autosave:userid'] = 'L’ID de l’utilisateur qui a créé la session d’auto-enregistrement';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Acció';
+$string['add'] = 'Afegeix';
 $string['addedandupdatedpp'] = 'S\'han afegit {$a->%new} biblioteques H5P noves i se n\'han actualitzat {$a->%old} d\'antigues.';
 $string['addedandupdatedps'] = 'S\'han afegit {$a->%new} biblioteques H5P noves i se n\'ha actualitzat {$a->%old} d\'antiga.';
 $string['addedandupdatedsp'] = 'S\'ha afegit {$a->%new} biblioteca H5P nova i se n\'han actualitzat {$a->%old} d\'antigues.';
@@ -258,6 +259,7 @@ $string['privacy:metadata:hvp_xapi_results:raw_score'] = 'S\'ha aconseguit la pu
 $string['privacy:metadata:hvp_xapi_results:response'] = 'La resposta que l\'usuari ha enviat.';
 $string['privacy:metadata:hvp_xapi_results:user_id'] = 'La Identificació de l\'usuari que ha realitzat l\'acció.';
 $string['question'] = 'Pregunta';
+$string['remove'] = 'Suprimeix';
 $string['removeoldlogentries'] = 'Elimina les entrades antigues del registre de l\'H5P';
 $string['removeoldmobileauthentries'] = 'Elimina les entrades d\'autenticació de mòbil de l\'H5P';
 $string['removetmpfiles'] = 'Elimina els fitxers temporals antics de l\'H5P';

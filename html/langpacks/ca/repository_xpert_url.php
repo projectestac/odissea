@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
+$string['standard'] = 'Estàndard: 500 x 375 màxim';

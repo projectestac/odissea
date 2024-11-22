@@ -216,7 +216,7 @@ $string['glossary:viewrating'] = '查看您收到的总评分';
 $string['glossary:write'] = '创建新词条';
 $string['glossaryleveldefaultsettings'] = '词汇表级别缺省设置';
 $string['glossarytype'] = '词汇表类型';
-$string['glossarytype_help'] = '副词汇表的词条可以导入到主词汇表中。一个课程只能有一个主词汇表。如果不需要词条导入功能，可以把所有词汇表都设成副词汇表。';
+$string['glossarytype_help'] = '主词汇表是一种词汇表，可以在其中导入辅助词汇表中的条目。一门课程中只能有一个主要词汇表，如果不需要导入词汇表条目，则课程中的所有词汇表都可以是辅助词汇表。';
 $string['guestnoedit'] = '访客不能编辑词汇表';
 $string['importcategories'] = '导入类别';
 $string['importedcategories'] = '导入的类别';
@@ -243,7 +243,20 @@ $string['linking'] = '自动链接';
 $string['mainglossary'] = '主词汇表';
 $string['maxtimehaspassed'] = '很抱歉，已超过了修改该评论（{$a}）的最大时限！';
 $string['modulename'] = '词汇表';
-$string['modulename_help'] = '词汇模块能让使用者创建和维护像字典一样的定义列表。无论词名出现在课程的哪里，都可以被自动链接到对应的词条。';
+$string['modulename_help'] = '词汇表活动模块使参与者能够创建和维护定义列表，如字典，或收集和组织资源或信息。
+
+教师可以允许将文件附加到词汇表条目中。附加的图像显示在条目中。可以按字母顺序或按类别、日期或作者搜索或浏览条目。参赛作品可以默认获得批准，也可以需要教师的批准才能被所有人查看。
+
+如果启用了词汇表自动链接过滤器，则在课程中概念词和/或短语出现的地方将自动链接条目。
+
+教师可以允许对条目发表评论。参赛作品也可以由教师或学生进行评分（同行评价）。评分可以汇总起来形成最终成绩，并记录在成绩簿中。
+
+词汇表有很多用途，例如
+* 关键术语的协作库
+* 一个“了解你”的空间，新生可以在其中添加他们的名字和个人详细信息
+* 实用主题最佳实践的“实用技巧”资源
+* 有用的视频、图像或声音文件的共享区域
+* 要记住的事实修订资源';
 $string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = '词汇表';
 $string['newentries'] = '新词条';

@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Afegeix';
+$string['import'] = 'Importa les pàgines';
+$string['newpage'] = 'primera versió';
 $string['ouwiki:grade'] = 'Qualifica els usuaris que tenen accés al wiki';
+$string['preview'] = 'Previsualització';
 $string['tab_history'] = 'Historial';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix un diccionari';
+$string['select'] = 'Selecciona un diccionari';

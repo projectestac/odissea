@@ -56,7 +56,7 @@ if ($chartinfo['backup']->bytes > 0) {
         get_string('manage_backup_files', REPORT_COMPONENTNAME,$CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC'),
         'info'
     );
-    $backuptab = REPORT_COURSEQUOTAS_LI_OPEN_HTML.'<a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', REPORT_COMPONENTNAME) . '</a>'.REPORT_COURSEQUOTAS_LI_CLOSE_HTML;
+    $backuptab = '<li style="margin: 10px;"><a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', REPORT_COMPONENTNAME) . '</a></li>';
 } else {
     $backuptab = '';
 }

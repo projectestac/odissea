@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Navega pels repositoris...';
+$string['preview'] = 'Previsualització';

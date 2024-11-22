@@ -76,6 +76,9 @@ $string['alternativefullnameformat_desc'] = 'Define como se muestran los nombres
 $string['always'] = 'Siempre';
 $string['appearance'] = 'Apariencia';
 $string['aspellpath'] = 'Ruta a aspell';
+$string['asyncbackupdisabled'] = 'Su sitio está configurado actualmente para usar copias de seguridad síncronas. Las copias de seguridad asíncronas dan una mejor experiencia de usuario.
+Las copias de seguridad asíncronas se habilitarán para todos los sitios en Moodle LMS 4.5 LTS.
+Las copias de seguridad síncronas desaparecerán en Moodle LMS tras la versión 4.5 LTS';
 $string['authentication'] = 'Autenticación';
 $string['authpreventaccountcreation'] = 'Evitar la creación de cuentas al identificarse';
 $string['authpreventaccountcreation_help'] = 'Cuando un usuario se identifica, si aún no existe su cuenta, se crea una en el sitio de forma automática. Si se utiliza una base de datos externa para la identificación, por ejemplo LDAP, pero se desea restringir el acceso al sitio solo a los usuarios con una cuenta existente, esta opción debe estar habilitada. Las nuevas cuentas tendrán que ser creadas manualmente o mediante la función de carga de usuarios. Tenga en cuenta que este ajuste no se aplica a la identificación MNet.';
@@ -624,6 +627,7 @@ $string['environmentrequirecustomcheck'] = 'esta prueba debe pasar';
 $string['environmentrequireinstall'] = 'debe estar instalado/activado';
 $string['environmentrequireversion'] = 'versión {$a->needed} es obligatoria y está ejecutando {$a->current}';
 $string['environmentsettingok'] = 'detectado ajuste recomendado';
+$string['environmentshouldfixcustomcheck'] = 'debería habilitarse para obtener mejores resultados';
 $string['environmentshouldfixsetting'] = 'El ajuste PHP debe cambiarse.';
 $string['environmentxmlerror'] = 'Error leyendo la información sobre el entorno ({$a->error_code})';
 $string['errordeletingconfig'] = 'Ha ocurrido un error al eliminar los registros de configuración del plugin \'{$a}\'.';

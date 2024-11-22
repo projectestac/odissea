@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['select'] = 'Selecciona';
 $string['selectcourse'] = 'Selecciona un curs';

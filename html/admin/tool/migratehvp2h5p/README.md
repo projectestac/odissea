@@ -1,6 +1,7 @@
 # Migrate mod_hvp to mod_h5pactivity #
 
-![Moodle Plugin CI](https://github.com/moodlehq/moodle-tool_migratehvp2h5p/workflows/Run%20all%20tests/badge.svg)
+[![Moodle Plugin CI](https://github.com/moodlehq/moodle-tool_migratehvp2h5p/actions/workflows/ci.yml/badge.svg)](https://github.com/moodlehq/moodle-tool_migratehvp2h5p/actions/workflows/ci.yml)
+
 
 Moodle plugin allowing to migrate activities created with the mod_hvp plugin created by Joubel to the new mod_h5pactivity created by Moodle HQ since Moodle 3.9.
 

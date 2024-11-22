@@ -40,6 +40,7 @@ $string['height'] = 'Alçada';
 $string['imageproperties'] = 'Propietats de la imatge';
 $string['presentation'] = 'Aquesta imatge només és decorativa';
 $string['presentationoraltrequired'] = 'Cada imatge ha de tenir una descripció, tret que la descripció es marqui com a únicament decorativa.';
+$string['remove'] = 'Suprimeix';
 $string['saveimage'] = 'Desa imatge';
 $string['size'] = 'Mida';
 $string['videoheight'] = 'Alçària del vídeo';

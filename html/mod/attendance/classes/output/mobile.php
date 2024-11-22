@@ -53,7 +53,6 @@ class mobile {
 
         require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 
-        $versionname = $args['appversioncode'] >= 3950 ? 'latest' : 'ionic3';
         $cmid = $args['cmid'];
         $courseid = $args['courseid'];
         $takenstatus = empty($args['status']) ? '' : $args['status'];
@@ -252,7 +251,7 @@ class mobile {
             'templates' => [
                 [
                     'id' => 'main',
-                    'html' => $OUTPUT->render_from_template("mod_attendance/mobile_view_page_$versionname", $data),
+                    'html' => $OUTPUT->render_from_template("mod_attendance/mobile_view_page_latest", $data),
                 ],
             ],
             'javascript' => '',
@@ -272,7 +271,7 @@ class mobile {
         require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 
         $args = (object) $args;
-        $versionname = $args->appversioncode >= 3950 ? 'latest' : 'ionic3';
+        $versionname = $args->appversioncode >= 44000 ? 'latest' : 'ionic5';
         $cmid = $args->cmid;
         $courseid = $args->courseid;
         $sessid = $args->sessid;
@@ -374,7 +373,7 @@ class mobile {
         require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 
         $args = (object) $args;
-        $versionname = $args->appversioncode >= 3950 ? 'latest' : 'ionic3';
+        $versionname = $args->appversioncode >= 44000 ? 'latest' : 'ionic5';
         $cmid = $args->cmid;
         $courseid = $args->courseid;
         $sessid = $args->sessid;

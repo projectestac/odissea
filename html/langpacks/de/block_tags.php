@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anycollection'] = 'Ein beliebiges';
+$string['anycollection'] = 'Beliebig';
 $string['anytype'] = 'Alle';
 $string['configtitle'] = 'Titel für Block \'Tags\'';
 $string['defaultdisplay'] = 'Tags anzeigen';
@@ -36,8 +36,8 @@ $string['recursivecontext'] = 'Abhängigkeiten einbeziehen';
 $string['recursivecontext_help'] = 'Diese Option legt fest, ob Tags nur im aktuellen Kontext angezeigt werden, aber nicht aus untergeordneten Kontexten. Es können z.B. Tags des Kurses angezeigt, aber Tags der Kursaktivitäten ausgeblendet sein.';
 $string['standardonly'] = 'Nur Standard';
 $string['tagcollection'] = 'Tag-Collection';
-$string['tagcollection_help'] = 'Wählen Sie die Collection aus, deren Tags angezeigt werden sollen. Wenn Sie \'beliebige\' auswählen, werden alle Collections außer denen angezeigt, die mit * markiert sind.';
+$string['tagcollection_help'] = 'Wählen Sie die Collection aus, deren Tags angezeigt werden sollen. Wenn Sie \'Beliebig\' auswählen, werden alle Collections außer denen angezeigt, die mit * markiert sind.';
 $string['taggeditemscontext'] = 'Tags im Kontext';
-$string['taggeditemscontext_help'] = 'Sie können die Tag-Cloud auf die Tags beschränken, die nur im aktuellen Kontext (Kursbereich, Kurs, Aktivität) verfügbar sind.';
+$string['taggeditemscontext_help'] = 'Sie können die Tag-Cloud auf die Tags beschränken, die im aktuellen Kontext (Kursbereich, Kurs, Aktivität) verfügbar sind.';
 $string['tags:addinstance'] = 'Neuen Block \'Tags\' hinzufügen';
 $string['tags:myaddinstance'] = 'Neuen Block \'Tags\' im Dashboard hinzufügen';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['mysessions'] = 'Мои активные сессии';
 $string['navigationlink'] = 'Сессии браузера';
-$string['pluginname'] = 'Отчет по сессиям пользователя';
+$string['pluginname'] = 'Отчет по сеансам пользователя';
 $string['privacy:metadata'] = 'Плагин отчетов о сеансах пользователей не хранит никаких личных данных.';
-$string['thissession'] = 'Текущая сессия';
-$string['usersessions:manageownsessions'] = 'Управлять своими сессиями браузера';
+$string['thissession'] = 'Текущий сеанс';
+$string['usersessions:manageownsessions'] = 'Управлять своими сеансами браузера';

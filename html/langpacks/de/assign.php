@@ -344,7 +344,7 @@ $string['markingallocation_help'] = 'Nach der Aktivierung können einzelnen Nutz
 $string['markingworkflow'] = 'Bewertungsworkflow verwenden';
 $string['markingworkflow_help'] = 'Nach der Aktivierung können mehrere Bewertungsdurchläufe erfolgen, bevor abschließend alle Bewertungen allen Teilnehmer/innen gleichzeitig sichtbar gemacht werden.';
 $string['markingworkflowstate'] = 'Status des Bewertungsworkflows';
-$string['markingworkflowstate_help'] = 'Die Liste der Workflowstati, die Sie auswählen können, wird durch die Berechtigungungen in der Aufgabe festgelegt. Es gibt folgende Stati:
+$string['markingworkflowstate_help'] = 'Mögliche Workflow-Status können sein (abhängig von Ihren Berechtigungen):
 
 * Unbewertet: Es wurde noch keine Bewertung begonnen.
 * In Bewertung: Die Bewertung wurde begonnen, ist jedoch noch nicht abgeschlossen.

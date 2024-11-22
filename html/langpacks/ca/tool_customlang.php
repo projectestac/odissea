@@ -44,6 +44,7 @@ $string['headingcomponent'] = 'Component';
 $string['headinglocal'] = 'Personalització local';
 $string['headingstandard'] = 'Text estàndard ';
 $string['headingstringid'] = 'Cadena';
+$string['import'] = 'Importa les cadenes personalitzades';
 $string['markinguptodate'] = 'Marca la personalització per actualitzar';
 $string['markinguptodate_help'] = 'La traducció personalitzada pot haver quedat obsoleta si l\'idioma anglès original o la traducció principal han estat modificades des que la cadena va ser personalitzada al vostre lloc web. Reviseu la traducció personalitzada. Si creieu que es troba actualitzada, feu clic a la casella de verificació. Editeu-la en cas contrari.';
 $string['markuptodate'] = 'marcar com actualitzada';

@@ -153,7 +153,7 @@ $string['editingquestionnaire'] = 'Modification du questionnaire - page Généra
 $string['editquestion'] = 'Édition de la question {$a}';
 $string['email'] = 'Courriel';
 $string['emailextra'] = 'Envoyer le téléchargement aux adresses de courriel';
-$string['emailextra_help'] = 'Enverra le fichier téléchargé aux adresses e-mail indiquées, séparées par des virgules. Notez qu’aucune vérification de sécurité ou de confidentialité n’est effectuée.
+$string['emailextra_help'] = 'Enverra le fichier téléchargé aux adresses de courriel indiquées, séparées par des virgules. Notez qu’aucune vérification de sécurité ou de confidentialité n’est effectuée.
 « allowemailreporting » doit être activé dans les paramètres du module pour y accéder.';
 $string['emailroles'] = 'Envoyer le téléchargement aux rôles';
 $string['emailroles_help'] = 'Enverra le fichier de téléchargement à tous les rôles ayant la capacité « mod/questionnaire:submissionnotification » par courriel. « allowemailreporting » doit être activé dans les paramètres du module pour y accéder.';
@@ -254,9 +254,11 @@ $string['incorrectquestionnaire'] = 'Questionnaire incorrect';
 $string['indirectwarnings'] = 'Cette liste affiche les questions dépendantes indirectes et les dépendances restantes pour les questions dépendantes directement :';
 $string['invalidincrement'] = 'La valeur d’incrémentation doit être inférieure à la valeur maximale. Par exemple, sur une échelle de 1 à 10, la valeur d’incrémentation sera probablement 1.';
 $string['invalidminmaxrange'] = 'La plage maximum de ce type de question va de -100 à +100. Le plugin a été conçu en priorité pour des questionnaires utilisant une plage de de 1 à 10 ou de -10 à +10.';
+$string['invalidrange'] = 'La valeur maximale du curseur doit être supérieure à la valeur minimale du curseur.';
 $string['invalidresponse'] = 'Réponse non valide.';
 $string['invalidresponserecord'] = 'Enregistrement de réponse non valide.';
 $string['invalidsectionid'] = 'Section de feedback spécifiée non valide.';
+$string['invalidstartingvalue'] = 'La valeur de départ doit être égale ou comprise entre les valeurs minimale et maximale. Par exemple, si vous utilisez une échelle de 1 à 10, la valeur de départ pourrait être 5.';
 $string['invalidsurveyid'] = 'Identifiant de questionnaire non valide.';
 $string['kindofratescale'] = 'Type d’échelle';
 $string['kindofratescale_help'] = 'Cliquez droit sur le lien « Plus d’aide » ci-dessous';
@@ -275,6 +277,8 @@ $string['maxforcedresponses'] = 'Max. cases à cocher';
 $string['maxforcedresponses_help'] = 'Utilisez ces paramètres pour forcer le répondant à cocher un minimum et un maximum de cases.
 Pour indiquer un nombre exact de cases à cocher, définissez **Min.** et **Max.** avec la même valeur. Si seulement une valeur minimale OU maximale est souhaitée, il suffit de laisser l’autre valeur à sa valeur par défaut **0**.
 Si vous définissez **Min.** Ou **Max.** à des valeurs autres que par défaut **0**, un message d’avertissement sera affiché si le répondant ne se conforme pas à votre demande. Évidemment, vous devez faire preuve de clarté, soit dans les instructions générales de votre questionnaire ou dans le texte des questions.';
+$string['maxrange'] = 'Plage maximale du curseur (à droite)';
+$string['maxrange_help'] = 'Définissez la valeur maximale de la plage sur le côté droit. La valeur par défaut est 100, mais il peut s’agir de n’importe quel nombre compris entre 1 et 100. Si la valeur minimale pour le côté gauche est une valeur négative, la portée maximale sera exprimée avec un signe positif (+).';
 $string['maxtextlength'] = 'Longueur texte max.';
 $string['maxtextlength_help'] = 'Pour la question de type Texte court, définissez la longueur de la zone de saisie et le nombre maximal de caractères possibles par le répondant.
 
@@ -286,6 +290,8 @@ $string['minforcedresponses_help'] = 'Utilisez ces paramètres si vous voulez fo
 Pour les forcer à cocher un nombre exact de cases, tapez la même valeur pour **Min.** et **Max**. Si vous voulez uniquement forcer un minimum ou un maximum de cases cochées, laissez l’autre valeur à zéro. Ex. pour avoir un minimum de 2 cases cochées sur un total de 5, tapez **Min.** = 2 et laissez **Max.** à 0.
 Si vous avez saisi pour l’un ou l’autre de ces paramètres une valeur différente de 0, si l’étudiant ne respecte pas le nombre mini ou maxi imposé, un message d’erreur sera affiché.
 Évidemment, il vous appartient de préciser vos exigences dans le texte de la question !';
+$string['minrange'] = 'Plage maximale du curseur (à gauche)';
+$string['minrange_help'] = 'Définissez la valeur maximale de la plage sur le côté gauche. La valeur par défaut est 100, mais il peut s’agir de n’importe quel nombre compris entre 1 et 100. Si la valeur minimale pour le côté droit est une valeur négative, la portée maximale sera exprimée avec un signe positif (+).';
 $string['misconfigured'] = 'Le cours est mal configuré.';
 $string['missingname'] = 'Vous ne pouvez pas utiliser la question {$a} dans cette section de feedback parce qu’elle n’a pas de nom.';
 $string['missingnameandrequired'] = 'Vous ne pouvez pas utiliser la question {$a} dans cette section de feedback parce qu’elle n’a pas de nom et qu’elle n’est pas obligatoire.';
@@ -558,10 +564,16 @@ $string['set'] = 'défini';
 $string['settings'] = 'Paramètres';
 $string['settingssaved'] = 'Paramètres enregistrés.';
 $string['show_nonrespondents'] = 'Utilisateurs n’ayant pas répondu';
+$string['slider'] = 'Curseur';
+$string['slider_help'] = 'La question à curseur permet aux personnes interrogées de sélectionner une valeur dans une plage continue en faisant glisser un curseur entre deux extrêmes. Une valeur centrale peut également être définie.';
 $string['started'] = 'commencé';
+$string['startingvalue'] = 'Valeur de départ du curseur';
+$string['startingvalue_help'] = 'La valeur de départ du curseur spécifie l’endroit où le curseur doit apparaître en premier pour les personnes interrogées. La valeur par défaut est 1 car la plage est inconnue. Vous souhaiterez peut-être le démarrer au centre de la plage en donnant une valeur centrale (une plage de 1 à 100 a une valeur centrale de 50).';
+$string['stepvalue'] = 'Valeur d’incrément du curseur';
+$string['stepvalue_help'] = 'La valeur d’incrément du curseur spécifie la précision avec laquelle vous souhaitez que les répondants indiquent leur réponse dans la plage. La question par défaut est une plage de 1 à 100 avec un incrément de un, permettant aux personnes interrogées de donner des valeurs de 70, 71, 72, 73, 74, etc. Mais vous pouvez plutôt définir des incréments de cinq, permettant aux personnes interrogées de donner des valeurs de 60, 65, 70, 75, 80 etc., ou même juste une plage de 1 à 10 avec des incréments de 1.';
 $string['strfdate'] = '%d-%m-%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
-$string['strictdateformatting'] = 'Saisir la date en utilisant le sélecteur de date ci-dessous ou en utilisant le format « JJ/MM/AAAA ».';
+$string['strictdateformatting'] = 'Saisir la date à l’aide du sélecteur de date ci-dessous.';
 $string['subject'] = 'Sujet';
 $string['submissionnotificationhtmlanon'] = 'Il y a un <a href="{$a->submissionurl}">nouvel envoi</a> du questionnaire « {$a->name} ».';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> a modifié sa <a href="{$a->submissionurl}">réponse</a> au questionnaire « {$a->name} » dans le cours « {$a->coursename} ».';
@@ -622,7 +634,7 @@ $string['viewbyresponse'] = 'Liste des réponses';
 $string['viewindividualresponse'] = 'Réponses individuelles';
 $string['viewindividualresponse_help'] = 'Cliquez sur les noms des répondants dans la liste ci-dessous pour voir leurs réponses individuelles.';
 $string['viewresponses'] = 'Toutes les réponses ({$a})';
-$string['viewyourresponses'] = 'Vos réponses : voir {$a}';
+$string['viewyourresponses'] = 'Voir votre(vos) réponse(s)';
 $string['warning'] = 'ATTENTION ! Erreur rencontrée.';
 $string['wronganswers'] = 'Il y a une erreur dans vos réponses (voir ci-dessous)';
 $string['wrongdateformat'] = 'Le format de la date entrée <strong>{$a}</strong> ne correspond pas au format montré dans l’exemple.';
@@ -631,5 +643,5 @@ $string['wrongformat'] = 'Il y a une erreur avec votre réponse à la question 
 $string['wrongformats'] = 'Il y a une erreur avec votre réponse aux questions :';
 $string['yesno'] = 'Oui/Non';
 $string['yesno_help'] = 'Simple question à réponse **Oui** ou **Non**.';
-$string['yourresponse'] = 'Votre réponse';
-$string['yourresponses'] = 'Vos réponses';
+$string['yourresponse'] = 'Voir votre(vos) réponse(s)';
+$string['yourresponses'] = 'Voir votre(vos) réponse(s)';

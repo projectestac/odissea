@@ -37,7 +37,7 @@ $string['actions'] = 'Aktionen';
 $string['activitylink'] = 'Link zur nächsten Aktivität';
 $string['activitylink_help'] = 'Um einen Link am Ende der Lektion zu einer weiteren Aktivität im Kurs einzufügen, wählen Sie die Aktivität aus dem Auswahlmenü.';
 $string['activitylinkname'] = 'Zu \'{$a}\' gehen';
-$string['activityoverview'] = 'Eine oder mehrere Lektionen sind fällig';
+$string['activityoverview'] = 'Sie haben fällige Lektionen.';
 $string['addabranchtable'] = 'Inhaltsseite einfügen';
 $string['addanendofbranch'] = 'Ende des Zweigs hinzufügen';
 $string['addanewpage'] = 'Weitere Seite einfügen';
@@ -355,17 +355,15 @@ $string['modattempts'] = 'Wiederholung erlauben';
 $string['modattempts_help'] = 'Wenn diese Option aktiviert ist, können Teilnehmer/innen erneut durch die Lektion navigieren.';
 $string['modattemptsnoteacher'] = 'Navigation nur für Teilnehmer/innen möglich';
 $string['modulename'] = 'Lektion';
-$string['modulename_help'] = 'Lektionen bestehen aus einer Reihe von Seiten und Verlinkungen zwischen den Seiten. Führen Sie die Teilnehmer/innen stringent von Seite zu Seite oder bieten Sie ihnen Auswahlmöglichkeiten. Je nach der Antwort der Teilnehmer/innen und der Art und Weise, wie die/der Trainer/in die Lektion entwickelt, können die Teilnehmer/innen auf die nächste Seite weitergehen, auf eine vorherige Seite zurückgeführt oder auf einen ganz anderen Weg umgeleitet werden.
+$string['modulename_help'] = 'Lektionen bestehen aus einer Reihe von Seiten und Verlinkungen zwischen den Seiten. Lektionen ermöglichen es Trainer/innen, Inhalte und Aktivitäten interessant und flexibel zu vermitteln. Trainer/innen können die Lektion verwenden, um eine Folge von Inhaltsseiten oder Aktivitäten zu erstellen, die Teilnehmer/innen über verschiedene Pfade und Optionen leiten. Trainer/innen können das Engagement erhöhen und das Verständnis sicherstellen, indem sie eine Vielzahl von Fragen einfügen, z.B. Multiple-Choice-, Zuordnungs- und Kurzantwortfragen. Je nach Antwort werden Teilnehmer/innen zur nächsten Seite geleitet, zu einer vorherigen Seite zurückkehren oder einen ganz anderen Pfad einschlagen.
 
 Eine Lektion kann bewertet werden, wobei die Endnote in den Bewertungen festgehalten wird.
 
-Alle Inhalte der Lektion können im Unterschied zu Lernpaketen oder IMS-Content direkt in Moodle erstellt werden.
+Lektionen können verwendet werden
 
-Eine Lektions-Aktivität kann verwendet werden
-
-* Zum selbstgesteuerten Lernen eines neuen Themas
-* Für Szenarien oder Simulationen/Entscheidungsübungen
-* Für differenzierte Repetitionen, mit verschiedenen Sätzen von Repetitionfragen, je nach den Antworten auf die ersten Fragen';
+* Für das selbstgesteuerte Lernen eines neuen Themas
+* Für Szenarien, Simulationen oder Entscheidungsübungen
+* Für differenzierte Wiederholungen mit unterschiedlichen Fragen, abhängig von den Antworten auf die ersten Fragen';
 $string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lektionen';
 $string['move'] = 'Seite verschieben';
@@ -617,7 +615,7 @@ $string['usersnone'] = 'Zu dieser Lektion haben Nutzer/innen keinen Zugriff';
 $string['viewessayanswers'] = 'Freitextantworten anzeigen';
 $string['viewgrades'] = 'Bewertungen anzeigen';
 $string['viewreports'] = '{$a->attempts} abgeschlossene von {$a->student} Versuchen anzeigen';
-$string['viewreports2'] = 'Zeige {$a} komplette Versuche';
+$string['viewreports2'] = '{$a} abgeschlossene Versuche anzeigen';
 $string['warning'] = 'Warnung';
 $string['welldone'] = 'Glückwunsch!';
 $string['whatdofirst'] = 'Was wollen Sie zuerst tun?';

@@ -44,11 +44,13 @@ $string['aggregatemean'] = 'Gemiddelde';
 $string['aggregatemedian'] = 'Mediaan';
 $string['aggregatemin'] = 'Laagste cijfer';
 $string['aggregatemode'] = 'Modus';
-$string['aggregatenotonlygraded'] = 'Lege cijfers mee opnemen';
-$string['aggregateonlygraded'] = 'Lege cijfers uitsluiten';
-$string['aggregateonlygraded_help'] = '<p>Nietbestaande cijfers kunnen beschouwd worden als minimumcijfers of als niet begrepen in de aggregatie.</p>';
+$string['aggregatenotonlygraded'] = 'Lege cijfers mee berekenen';
+$string['aggregateonlygraded'] = 'Lege cijfers niet mee berekenen';
+$string['aggregateonlygraded_help'] = 'Een leeg cijfer is een cijfer dat ontbreekt in de cijferlijst. Dit is bijvoorbeeld een ingestuurde opdracht die nog niet beoordeeld is of een test die nog niet gemaakt is.
+
+Deze instelling bepaalt of deze lege cijfers niet meegenomen worden in de berekening of dat ze meegerekend worden als minimaal cijfer, bijvoorbeeld een 0 voor een opdracht die tussen 0 en 100 beoordeeld wordt.';
 $string['aggregateoutcomes'] = 'Resultaten in aggregatie opnemen';
-$string['aggregateoutcomes_help'] = '<p>Het opnemen van resultaten in aggregatie kan een vreemd totaalcijfer geven. Daarom heb je hier de optie om de competenties op te nemen of niet op te nemen.</p>';
+$string['aggregateoutcomes_help'] = 'Indien ingeschakeld worden resultaten mee opgenomen in de aggregatie. Dit kan een onverwacht categorie-totaal opleveren.';
 $string['aggregatesonly'] = 'Wijzig naar enkel geaggregeerden';
 $string['aggregatesubcatsupgradedgrades'] = 'Opmerking: de aggregatie-instelling "Aggregatie inclusief subcategorieën" is verwijderd als deel van de site-upgrade. Vermits "Aggregatie inclusief subcategorieën" voorheen gebruikt werd in deze cursus, is het aangewezen om deze wijziging eens na te kijken in de cijferlijst.';
 $string['aggregatesum'] = 'Natuurlijk';

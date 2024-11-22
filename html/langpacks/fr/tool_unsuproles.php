@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'Voulez-vous vraiment supprimer toutes les attributions non supportées de rôle « {$a->role} » dans le niveau de contexte « {$a->level} » ?';
+$string['confirmdelete'] = 'Voulez-vous vraiment supprimer toutes les attributions non prises en charge de rôle « {$a->role} » dans le niveau de contexte « {$a->level} » ?';
 $string['contextlevel'] = 'Niveau de contexte';
 $string['count'] = 'Nombre';
-$string['noprolbems'] = 'Aucune attribution non supportée de rôle';
-$string['pluginname'] = 'Attributions non supportées de rôles';
-$string['privacy:metadata'] = 'Le plugin Attributions non supportées de rôles n’enregistre aucune donnée personnelle.';
+$string['noprolbems'] = 'Aucune attribution de rôle non prise en charge';
+$string['pluginname'] = 'Attributions de rôles non prises en charge';
+$string['privacy:metadata'] = 'Le plugin Attributions de rôles non prises en charge n’enregistre aucune donnée personnelle.';

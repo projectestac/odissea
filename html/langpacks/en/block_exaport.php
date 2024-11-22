@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aboutme'] = 'About me';
+$string['aboutme_description'] = 'Predefined by CV information, but can be editabled for every block';
 $string['accessoptions'] = 'Who has access?';
 $string['add'] = 'Add';
 $string['addButton'] = 'Add';
 $string['add_directory_structure'] = 'Add directory-structure';
+$string['add_mixed'] = 'Add new artefact';
 $string['add_this_file'] = 'add this file';
 $string['addbookmark'] = 'Add bookmark';
 $string['addcategory'] = 'Add category';
@@ -43,7 +45,10 @@ $string['awaiting'] = '($a awaiting)';
 $string['back'] = 'Back';
 $string['back_to_desp'] = 'back to language portfolio';
 $string['backtocourse'] = 'Back to course';
+$string['badges_help'] = 'The block with badges granted to you<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>View your badges</a>';
 $string['badsessionkey'] = 'Bad Session Key';
+$string['block_exaport_allowcustomlayout_body'] = 'Allows to use custom view layout settings (similar to options below) for regular owners of the views';
+$string['block_exaport_allowcustomlayout_head'] = 'Custom options for the view layout for view owners';
 $string['block_exaport_app_alloweditdelete_body'] = 'Only useful in combination with Exabis Competence Grid and dakora';
 $string['block_exaport_app_alloweditdelete_head'] = 'Students are allowed to edit and delete items after teacher reviews';
 $string['block_exaport_app_externaleportfolio_body'] = 'For App';
@@ -51,15 +56,19 @@ $string['block_exaport_app_externaleportfolio_head'] = 'Save files to mahara if 
 $string['block_exaport_confirm_profilefield_create'] = 'Do you really want to add the required profile field?';
 $string['block_exaport_confirm_profilefield_exists'] = 'Profile field for trusted teacher already exists';
 $string['block_exaport_copytomyportfolio'] = 'Enable "Copy to my portfolio"';
-$string['block_exaport_copytomyportfolio_body'] = 'User will be able copy artifacts from shared category into own portfolio';
+$string['block_exaport_copytomyportfolio_body'] = 'User will be able copy artefacts from shared category into own portfolio';
 $string['block_exaport_maxbytes'] = 'Maximum uploaded file size in Exabis ePortfolio';
 $string['block_exaport_maxbytes_body'] = 'This specifies a maximum size that uploaded files can be throughout the Exabis ePortfolio.<br> Value for whole site is: {$a->sitemaxbytes}. See <a href="{$a->settingsurl}">settings</a>';
-$string['block_exaport_multiplefilesinitem'] = 'Multiple files in "File" artifact';
+$string['block_exaport_multiplefilesinitem'] = 'Multiple files in "File" artefact';
 $string['block_exaport_multiplefilesinitem_body'] = 'limit: 10 files';
 $string['block_exaport_profilefield_created'] = 'Profile field for trusted teacher was added';
 $string['block_exaport_teachercanseeartifactsofstudents_body'] = 'Trusted teachers have to be configured in their individual profiles and this will only work, if the option above has been activated.<br />{$a}The list of students for each trusted teacher are generated according to their course enrollments.<br />Students cannot disable this access. Access to other users can be given as before.';
 $string['block_exaport_teachercanseeartifactsofstudents_configurationlink'] = 'Add required user profile field';
-$string['block_exaport_teachercanseeartifactsofstudents_head'] = 'Teacher can see ALL artifacts of own students';
+$string['block_exaport_teachercanseeartifactsofstudents_head'] = 'Teacher can see ALL artefacts of own students';
+$string['block_exaport_used_layout'] = 'Used layout';
+$string['block_exaport_used_layout_body'] = 'Change the layout if you have some appearance problems. Right now it is used only for artefact list.';
+$string['block_exaport_used_layout_clean_old'] = 'Tiles layout (Old - ended of support from v4.6.7)';
+$string['block_exaport_used_layout_moodle_bootstrap'] = 'Cards layout';
 $string['block_exaport_userquota'] = 'User quota for Exabis ePortfolio';
 $string['block_exaport_userquota_body'] = 'The maximum number of bytes that a user can store in their own Exabis ePortfolio.<br> Value for whole site is: {$a->bytes}. See <a href="{$a->settingsurl}">settings</a>';
 $string['blockcontent'] = 'Block content';
@@ -92,17 +101,20 @@ $string['close'] = 'close';
 $string['cofigureblock'] = 'Configure Block';
 $string['cofigureblock_badge'] = 'Choose Badges';
 $string['cofigureblock_cvinfo'] = 'Choose cv info';
-$string['cofigureblock_cvinfo_certif'] = 'certifications, accreditations and awards';
+$string['cofigureblock_cvinfo_certif'] = 'Certifications, accreditations and awards';
+$string['cofigureblock_cvinfo_cover'] = 'About me';
+$string['cofigureblock_cvinfo_cover_actual'] = 'add actual CV "About me" content';
 $string['cofigureblock_cvinfo_education_history'] = 'Education history';
 $string['cofigureblock_cvinfo_employment_history'] = 'Employment history';
 $string['cofigureblock_cvinfo_goals'] = 'My goals';
+$string['cofigureblock_cvinfo_help'] = 'You will see the current status of the selected items in your CV. The block content will be updated if you make changes to any items in your CV later.';
 $string['cofigureblock_cvinfo_interests'] = 'Interests';
 $string['cofigureblock_cvinfo_mbrship'] = 'Memberships';
 $string['cofigureblock_cvinfo_public'] = 'Books and publications';
 $string['cofigureblock_cvinfo_skills'] = 'My skills';
-$string['cofigureblock_cvinfo_withfiles'] = 'With attachment files';
+$string['cofigureblock_cvinfo_withfiles'] = 'With attached files';
 $string['cofigureblock_header'] = 'Choose headline';
-$string['cofigureblock_item'] = 'Choose item';
+$string['cofigureblock_item'] = 'Choose artefact';
 $string['cofigureblock_media'] = 'Choose media';
 $string['cofigureblock_personalinfo'] = 'Choose personal info';
 $string['cofigureblock_text'] = 'Choose text';
@@ -115,6 +127,7 @@ $string['competenceinteraction'] = 'Allow interaction with block Exabis Competen
 $string['competences'] = 'competences';
 $string['competences_old_version'] = 'An outdated version of Exabis Competences that is no longer supported by Exabis Eportfolio is installed on this moodle.';
 $string['config_feature_copy_to_course'] = 'Allow students to copy ePortfolio files to their courses';
+$string['configureblock_cvinfo_group_by_category'] = 'Display CV elements in categories';
 $string['contactcomps'] = 'Contract all';
 $string['copycategory'] = 'Copy to my Portfolio';
 $string['copyitemtocourse'] = 'Copy to course';
@@ -130,12 +143,22 @@ $string['couldntupdatecategory'] = 'Could not update category!';
 $string['couldntupdatedesc'] = 'Could not update your description!';
 $string['course'] = 'Course';
 $string['create_as_note'] = 'Create as Artefact';
+$string['create_view_content_help_text'] = '<ul>
+                <li><strong>Plan your layout:</strong> Drag and drop building blocks and arrange them to tell your story. Use columns (available in the "layout" section) to plan your portfolio.</li>
+                <li><strong>Organize for clarity:</strong> Use headers, links, and notes to structure your content effectively.</li>
+                <li><strong>Personalize your style:</strong> Choose fonts and colours within the available options to add a touch of you.</li>
+            </ul>
+            <strong>Remember: Your e-portfolio tells the world about you and your skills. Make it clear, concise, and engaging!</strong>';
+$string['create_view_content_help_title'] = 'Craft Your Unique Story: Build Your Portfolio';
 $string['createepxexport'] = 'Create EPX-File';
 $string['createexport'] = 'Create SCORM-File';
 $string['createexport_directory'] = 'Create Directory-structure';
+$string['createexportxapi'] = 'Create XAPI-File';
 $string['createpage'] = 'Drag and drop content blocks from the tabs below to create your page.';
 $string['current_category'] = 'Current Category';
+$string['cvgroup'] = 'CV';
 $string['cvinformation'] = 'CV Information';
+$string['cvinformation_help'] = 'The block with your exabis ePortfolio CV data, like: education, employment, e.t.c.<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>View your CV</a>';
 $string['date'] = 'Date';
 $string['delete'] = 'Delete';
 $string['delete_all_shareall'] = 'Delete all shareall?';
@@ -204,15 +227,21 @@ $string['exaport:myaddinstance'] = 'add Exabis ePortfolio on My home';
 $string['exaport:shareextern'] = 'External sharing of views';
 $string['exaport:shareintern'] = 'Internal sharing of views';
 $string['exaport:use'] = 'Use allowed';
-$string['exaport:viewartifactsfromstudents'] = 'Can see portfolio artifacts of own students';
+$string['exaport:viewartifactsfromstudents'] = 'Can see portfolio artefacts of own students';
 $string['expandcomps'] = 'Expand all';
 $string['explaincategories'] = 'Categories: here you can create and modify categories';
 $string['explainexport'] = 'Export your portfolio here.';
 $string['explainimport'] = 'Here you can import a SCORM-File into the portfolio. If markers from previous exports are found the import tries to import the data in the existing filestructure.';
-$string['explaining'] = 'The Portfolio may be used to store web addresses, files, as well as enter notes that may contain insights or little notes the user may wish to write down.';
+$string['explaining'] = 'The Portfolio can be used to store web addresses, files, and notes, allowing users to jot down insights or brief comments';
 $string['explainingall'] = 'All Items in your portfolio';
 $string['explainingfile'] = 'Files. These files may be shared with all authorized course members.';
 $string['explaininglink'] = 'Links.  These links may be shared with all authorized course members.';
+$string['explainingmoredata'] = '<strong>This is your space to gather evidence of your learning journey.</strong>
+            <ul>
+                <li><strong>Add your best work:</strong> Upload files, web links, or descriptions of projects, presentations, and more.</li>
+                <li><strong>Reflect on your experiences:</strong> Explain what you learned, the challenges you faced, and your achievements for each piece.</li>
+            </ul>
+            <strong>Think of each item as a story highlighting your skills and knowledge.</strong>';
 $string['explainingnote'] = 'Notes. These notes may be shared with all authorized course members.';
 $string['explainingshare'] = 'To allow a participant to see the link, click on their name and then click on Save Changes. You can choose more than one participant.';
 $string['explainingshared'] = 'These participants have shared some of their external links, files or notes.';
@@ -237,16 +266,60 @@ $string['filetypenotdetected'] = 'Filetype of $a->filename ($a->title) could not
 $string['filterByTag'] = 'Filter by tag';
 $string['firstname'] = 'First name';
 $string['firstnameshared'] = 'First Name';
+$string['forms.item.project_description'] = 'The why behind this project';
+$string['forms.item.project_description_editor'] = 'The why behind this project';
+$string['forms.item.project_description_editor_help'] = '<strong>Briefly explain the purpose of your work:</strong>
+            <ul>
+                <li>What problem did it address?</li>
+                <li>What skills did you aim to develop?</li>
+                <li>What was the context?</li>
+            </ul>';
+$string['forms.item.project_description_help'] = '<strong>Briefly explain the purpose of your work:</strong><ul>
+                <li>What problem did it address?</li>
+                <li>What skills did you aim to develop?</li>
+                <li>What was the context?</li>
+            </ul>';
+$string['forms.item.project_process'] = 'Making it happen';
+$string['forms.item.project_process_editor'] = 'Making it happen';
+$string['forms.item.project_process_editor_help'] = '<strong>Describe your journey:</strong>
+            <ul>
+                <li>What steps did you take to complete this project?</li>
+                <li>What challenges did you encounter, and how did you overcome them?</li>
+                <li>What resources did you use?</li>
+            </ul>';
+$string['forms.item.project_process_help'] = '<strong>Describe your journey:</strong>
+            <ul>
+                <li>What steps did you take to complete this project?</li>
+                <li>What challenges did you encounter, and how did you overcome them?</li>
+                <li>What resources did you use?</li>
+            </ul>';
+$string['forms.item.project_result'] = 'Results and learnings';
+$string['forms.item.project_result_editor'] = 'Results and learnings';
+$string['forms.item.project_result_editor_help'] = '<strong>Briefly summarize the outcomes of your project:</strong>
+                <ul>
+                    <li>What did you achieve?</li>
+                    <li>What skills and competencies did you develop or strengthen through this work?</li>
+                    <li>What did you learn about yourself and your abilities?</li>
+                    <li>What would you do differently next time?”</li>
+                </ul>';
+$string['forms.item.project_result_help'] = '<strong>Briefly summarize the outcomes of your project:</strong>
+                <ul>
+                    <li>What did you achieve?</li>
+                    <li>What skills and competencies did you develop or strengthen through this work?</li>
+                    <li>What did you learn about yourself and your abilities?</li>
+                    <li>What would you do differently next time?”</li>
+                </ul>';
 $string['forms.item.title'] = 'Title';
-$string['forms.item.title_help'] = 'Title help text';
+$string['forms.item.title_help'] = '';
 $string['go'] = 'Go!';
 $string['gradeitem'] = 'Grade the item';
 $string['grouptitle'] = 'Group title';
 $string['headertext'] = 'Headertext';
+$string['headertext_help'] = 'The simple block for adding only header line';
 $string['height'] = 'Height';
 $string['hidesummary'] = '(hide summary)';
 $string['i_shared'] = 'I shared an eportfolio view with you';
-$string['iconfile'] = 'Icon picture';
+$string['iconfile'] = 'Thumbnail';
 $string['iconfile_merge'] = 'Merge this icon picture with the folder icon';
 $string['iconfile_merge_description'] = 'Icon picture will try (without any guarantee) to merge with standard folder icon. The icon will be replaced with the new image.';
 $string['import'] = 'Import SCORM-File';
@@ -269,10 +342,22 @@ $string['invalidcourseid'] = 'That\'s an invalid course id';
 $string['invalidfileatthisassignment'] = 'File does not exist at this assignment!';
 $string['invalidinstance'] = 'That\'s an invalid instance';
 $string['item'] = 'Item';
+$string['item.project_information'] = 'Project Information';
 $string['itemgrading'] = 'Grading';
-$string['items'] = 'Items';
+$string['items'] = 'My artefacts';
+$string['items_help'] = 'The block with your artefacts<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>View your artefacts</a>';
 $string['lang_categories'] = '';
 $string['lastname'] = 'Last name';
+$string['layout_settings'] = 'Layout settings';
+$string['layout_settings_border_width'] = 'Border width';
+$string['layout_settings_border_width_only_bottom'] = 'Only bottom border';
+$string['layout_settings_custom_css'] = 'Custom CSS';
+$string['layout_settings_custom_css_description'] = 'You can use own custom CSS rules here';
+$string['layout_settings_description'] = 'Here you can change some view layout options or use own custom CSS rules to have the view as you want';
+$string['layout_settings_font_size'] = 'Font size';
+$string['layout_settings_font_weight'] = 'Bold';
+$string['layout_settings_view_content'] = 'Content of view blocks';
+$string['layout_settings_view_headers'] = 'Headers of view blocks';
 $string['link'] = 'Link';
 $string['linkedfilenotfound'] = 'File $a->filename in $a->url ($a->title) was not found. File not imported!';
 $string['list'] = 'List';
@@ -288,14 +373,17 @@ $string['mandatoryfields'] = 'The field\'s name, category and intro are required
 $string['mandatoryfieldsforcat'] = 'The field name is required. Please fill them in.';
 $string['media'] = 'Media';
 $string['media_allowed_notes'] = 'URLs from the following sites are allowed:';
+$string['media_help'] = 'The block with embeded media data, from source like: Youtube, Vimeo, SlideShare, e.t.c.';
 $string['mediacontent'] = 'URL or embed code *';
 $string['membercount'] = 'Number of members';
 $string['messageprovider:sharing'] = 'Sharing notifications';
+$string['mixed'] = 'Artefact';
 $string['moodleimport'] = 'Import from Moodle-assignments';
+$string['moreinfolink'] = 'Show more info ...';
 $string['movebottom'] = 'Move bottom';
 $string['movetop'] = 'Move top';
 $string['myfilearea'] = 'My file area';
-$string['myportfolio'] = 'My Portfolio Artifacts';
+$string['myportfolio'] = 'My Portfolio Artefacts';
 $string['myportfoliotitle'] = 'Exabis ePortfolio module: Add your links and files here.';
 $string['name'] = 'Name';
 $string['new'] = 'New';
@@ -352,6 +440,7 @@ $string['pdf_settings_showuserpicture'] = 'user picture';
 $string['pdf_settings_uploadfont'] = 'Upload self font';
 $string['personal'] = 'Information';
 $string['personalinformation'] = 'Personal Information';
+$string['personalinformation_help'] = 'The block with your personal data, like: name, email.<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>View your profile</a>';
 $string['pluginname'] = 'Exabis ePortfolio';
 $string['privacy:metadata:block_exaportcate'] = 'user\'s categories';
 $string['privacy:metadata:block_exaportcate:courseid'] = 'course id';
@@ -373,11 +462,11 @@ $string['privacy:metadata:block_exaportcate:subjid'] = 'related subject id';
 $string['privacy:metadata:block_exaportcate:timemodified'] = 'last modified';
 $string['privacy:metadata:block_exaportcate:topicid'] = 'related topic id';
 $string['privacy:metadata:block_exaportcate:userid'] = 'user id';
-$string['privacy:metadata:block_exaportitem'] = 'user\'s artifact';
+$string['privacy:metadata:block_exaportitem'] = 'user\'s artefact';
 $string['privacy:metadata:block_exaportitem:categoryid'] = 'category id';
 $string['privacy:metadata:block_exaportitem:courseid'] = 'course id';
 $string['privacy:metadata:block_exaportitem:exampid'] = 'related example id';
-$string['privacy:metadata:block_exaportitem:example_url'] = 'artifact\'s owner';
+$string['privacy:metadata:block_exaportitem:example_url'] = 'artefact\'s owner';
 $string['privacy:metadata:block_exaportitem:externaccess'] = 'external access?';
 $string['privacy:metadata:block_exaportitem:externcomment'] = 'comment for externals';
 $string['privacy:metadata:block_exaportitem:fileurl'] = 'url to file';
@@ -390,12 +479,12 @@ $string['privacy:metadata:block_exaportitem:shareall'] = 'shared for all?';
 $string['privacy:metadata:block_exaportitem:source'] = 'source';
 $string['privacy:metadata:block_exaportitem:sourceid'] = 'source id';
 $string['privacy:metadata:block_exaportitem:timemodified'] = 'last modified time';
-$string['privacy:metadata:block_exaportitem:type'] = 'type of artifact';
+$string['privacy:metadata:block_exaportitem:type'] = 'type of artefact';
 $string['privacy:metadata:block_exaportitem:url'] = 'url';
-$string['privacy:metadata:block_exaportitem:userid'] = 'artifact\'s owner';
-$string['privacy:metadata:block_exaportitemcomm'] = 'comments for artifacts';
+$string['privacy:metadata:block_exaportitem:userid'] = 'artefact\'s owner';
+$string['privacy:metadata:block_exaportitemcomm'] = 'comments for artefacts';
 $string['privacy:metadata:block_exaportitemcomm:entry'] = 'comment';
-$string['privacy:metadata:block_exaportitemcomm:itemid'] = 'id of artifact';
+$string['privacy:metadata:block_exaportitemcomm:itemid'] = 'id of artefact';
 $string['privacy:metadata:block_exaportitemcomm:timemodified'] = 'last modified';
 $string['privacy:metadata:block_exaportitemcomm:userid'] = 'author of comment';
 $string['privacy:metadata:block_exaportresume'] = 'resume data';
@@ -413,8 +502,8 @@ $string['privacy:metadata:block_exaportuser'] = 'user\'s data from exabis e-port
 $string['privacy:metadata:block_exaportuser:description'] = 'description';
 $string['privacy:metadata:block_exaportuser:user_id'] = 'user id';
 $string['privacy:metadata:block_exaportuser:view_items_layout'] = 'user id';
-$string['privacy:metadata:block_exaportview'] = 'comments for artifacts';
-$string['privacy:metadata:block_exaportview:autofill_artefacts'] = 'enabled autofill by artifacts';
+$string['privacy:metadata:block_exaportview'] = 'comments for artefacts';
+$string['privacy:metadata:block_exaportview:autofill_artefacts'] = 'enabled autofill by artefacts';
 $string['privacy:metadata:block_exaportview:description'] = 'description';
 $string['privacy:metadata:block_exaportview:externaccess'] = 'external access?';
 $string['privacy:metadata:block_exaportview:externcomment'] = 'comment from external?';
@@ -425,17 +514,20 @@ $string['privacy:metadata:block_exaportview:shareall'] = 'shared for all?';
 $string['privacy:metadata:block_exaportview:sharedemails'] = 'shared emails list';
 $string['privacy:metadata:block_exaportview:timemodified'] = 'last modified';
 $string['privacy:metadata:block_exaportview:userid'] = 'owner of view';
-$string['privacy:metadata:core_files'] = 'Exabis ePortfolio stores files which have been uploaded by the user to form part of artifacts, resume entries and comments.';
+$string['privacy:metadata:core_files'] = 'Exabis ePortfolio stores files which have been uploaded by the user to form part of artefacts, resume entries and comments.';
 $string['profilepicture'] = 'Profile picture';
+$string['project_description'] = 'The why behind this project';
+$string['project_process'] = 'Making it happen';
+$string['project_result'] = 'Results and learnings';
 $string['publishedportfolios'] = 'Published portfolios';
 $string['resume_badges'] = 'Badges';
-$string['resume_certif'] = 'certifications, accreditations and awards';
+$string['resume_certif'] = 'Certifications, accreditations and awards';
 $string['resume_certifdeleted'] = 'Certification, accreditation or award deleted';
 $string['resume_certifsaved'] = 'Certification, accreditation or award saved';
 $string['resume_collaps'] = 'Collaps all';
 $string['resume_contribution'] = 'Contribution';
 $string['resume_contributiondetails'] = 'Details of your contribution';
-$string['resume_cover'] = 'Personal information';
+$string['resume_cover'] = 'About me';
 $string['resume_coversaved'] = 'Cover saved';
 $string['resume_date'] = 'Date';
 $string['resume_deletecertifconfirm'] = 'Do you really want to delete this certification, accreditation or award?';
@@ -533,12 +625,18 @@ $string['settings_allow_loginas_body'] = '';
 $string['settings_allow_loginas_head'] = 'Allow login as';
 $string['settings_create_desp_categories_body'] = '';
 $string['settings_create_desp_categories_head'] = 'Create Desp Categories';
+$string['settings_disable_externaccess_body'] = '';
+$string['settings_disable_externaccess_head'] = 'Disable Sharing-Option "External Access" for views';
 $string['settings_disable_external_comments_body'] = '';
 $string['settings_disable_external_comments_head'] = 'Disable sharing of comments in external view';
 $string['settings_disable_shareall_body'] = 'Click <a href="{$a}">here</a>, to remove all global shares';
 $string['settings_disable_shareall_head'] = 'Disable sharing with all users';
+$string['settings_disable_shareemails_body'] = '';
+$string['settings_disable_shareemails_head'] = 'Disable Sharing-Option "Share by Email" for views';
 $string['settings_interaktion_exacomp_body'] = 'Interaction with block Exabis Competence Grid, in case it is installed';
 $string['settings_interaktion_exacomp_head'] = 'Interaction exabis ePortfolio - Exabis Competence Grid';
+$string['settings_layout_settings_description'] = 'Here you can change some view layout options or use own custom CSS rules to have the view as you want<br>These settings will be used as default settings <strong>for all views</strong>';
+$string['settings_layout_settings_heading'] = 'Layout settings';
 $string['share'] = 'Share';
 $string['share_to_other_users'] = 'Search Users';
 $string['shareallexceptthose'] = 'Access for <span class=\'block_eportfolio_bold\'>all</span> (even those who aren\'t listed here) except the following users';
@@ -557,6 +655,7 @@ $string['sharedwith_user_cnt'] = 'Shared with {$a} users';
 $string['sharejs'] = 'share';
 $string['sharenoneexceptthose'] = 'Access for <span class=\'block_eportfolio_bold\'>nobody</span> except the following users';
 $string['sharetoteacher'] = 'Share to all teachers in this course';
+$string['shortdescription'] = 'Short description';
 $string['show'] = 'Show';
 $string['show_mystudents'] = 'My students';
 $string['show_sharedbyuser'] = 'Shared by users';
@@ -574,7 +673,7 @@ $string['submititem'] = 'Submit';
 $string['success'] = 'File imported successful';
 $string['summary'] = 'Summary (optional)';
 $string['supported'] = 'supported by';
-$string['tagarea_block_exaportitem'] = 'My Portfolio Artifacts';
+$string['tagarea_block_exaportitem'] = 'My Portfolio Artefacts';
 $string['teachercomps'] = 'Here you can assess whether your students have acquired the competency with this artefact.';
 $string['thiscourse'] = 'This course';
 $string['tiles'] = 'Tiles';
@@ -582,7 +681,7 @@ $string['title'] = 'Title';
 $string['titlenotemtpy'] = 'You have to enter a title.';
 $string['translation:email'] = 'ariepl.work@gmail.com';
 $string['translation:language'] = 'English';
-$string['translation:organisation'] = 'IZ Steyr';
+$string['translation:organisation'] = 'GTN GmbH';
 $string['translation:person'] = 'Andreas Riepl';
 $string['type'] = 'Type';
 $string['unknownaction'] = 'Unknown action';
@@ -593,6 +692,8 @@ $string['url'] = 'URL';
 $string['urlnotempty'] = 'You have to enter an URL.';
 $string['userdefinedsort'] = 'Define your own search';
 $string['view'] = 'View';
+$string['view_preview_help'] = 'Preview of your view';
+$string['view_preview_help_title'] = 'Preview';
 $string['view_saved'] = 'View saved';
 $string['view_sharing'] = 'Sharing';
 $string['view_sharing_noaccess'] = 'No Access';
@@ -604,6 +705,7 @@ $string['view_specialitem_media'] = 'Media';
 $string['view_specialitem_personal'] = 'Personal information';
 $string['view_specialitem_text'] = 'Text';
 $string['view_specialitem_text_defaulttext'] = 'Enter Text Here';
+$string['view_specialitem_text_help'] = 'The block with custom text. You can format the text as you need';
 $string['view_specialitems'] = 'Special Items';
 $string['viewand'] = 'and';
 $string['viewcategories'] = 'manage categories';
@@ -664,6 +766,34 @@ $string['what_is_embed_code_content'] = '<p>Embed code is code that is generated
                 <li>Past this code to exabis E-portfolio textarea field.</li>
             </ol>';
 $string['what_is_embed_code_title'] = 'What is embed code?';
+$string['whyEportfolio'] = 'Why ePortfolio';
+$string['whyEportfolio_description'] = '<h4>Don\'t Let Your Hard Work Disappear: Build Your Digital Portfolio</h4>
+                <br>
+                <p>Imagine all the effort you put into assignments, presentations, and projects. Do you ever feel like it just gets buried in a drawer after it\'s submitted?</p>
+                <p>But here\'s the good news: those projects are <strong>proof of your skills and knowledge</strong>, and you can use them to impress potential employers or clients!</p>
+                <p><strong>Build your digital portfolio</strong> and showcase your best work, from presentations, assignments, and projects to videos. It\'s easier than you think!</p>
+                <br>
+                <h4>What is an ePortfolio?</h4>
+                <br>
+                <p>An <strong>ePortfolio</strong> (electronic portfolio) is a <strong>digital collection</strong> that showcases your <strong>skills, knowledge, and experiences</strong>.
+                    While your CV focuses on your education and work history, your ePortfolio goes beyond that, providing <strong>proof and context</strong> for your skills.
+                    It lets you showcase your work samples and <strong>demonstrate your talent</strong> quickly and effectively.
+                    Ultimately, your ePortfolio is a powerful tool to <strong>highlight your qualifications</strong> and set you apart.
+                </p>
+                <p><strong>Remember, different roles may require different types of ePortfolios.</strong>
+                    However, some key elements remain constant.
+                    <strong>Exabis ePortfolio</strong> allows you to <strong>create multiple views</strong> tailored to specific positions, job opportunities, or other purposes.
+                </p>
+                <br>
+                <h4>How to Build Your ePortfolio</h4>
+                <br>
+                <ol>
+                    <li><strong>Gather your work</strong>: Start by reviewing all your projects, presentations, and assignments.</li>
+                    <li><strong>Choose your best work</strong>: Select the pieces that showcase your strongest skills and those that have received positive feedback.</li>
+                    <li><strong>Reflect and describe</strong>: Think about the skills and competencies each piece demonstrates. Write a brief description to provide context.</li>
+                    <li><strong>Build and iterate</strong>: Don\'t be afraid to experiment and refine your ePortfolio as you learn and grow.</li>
+                </ol>
+                <p><strong>Exabis ePortfolio</strong> can guide you through each step, making the process of building your ePortfolio smooth and efficient.</p>';
 $string['width'] = 'Width';
 $string['wrongfileid'] = 'Wrong file id';
 $string['wrongfilepostid'] = 'Wrong file id';

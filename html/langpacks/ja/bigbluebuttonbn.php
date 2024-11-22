@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptdpa'] = 'データ処理規約を理解および同意します';
+$string['acceptdpa'] = 'データ処理契約を理解および同意します';
 $string['activityoverview'] = 'あなたにはまもなく始まるBigBlueButtonセッションがあります。';
 $string['bbbduetimeoverstartingtime'] = '終了日は開始日以降に設定する必要があります。';
 $string['bbbdurationwarning'] = 'このセッションの最大継続時間は %duration% 分です。';
@@ -44,7 +44,7 @@ $string['bigbluebuttonbn:publishrecordings'] = 'レコーディングを公開�
 $string['bigbluebuttonbn:unprotectrecordings'] = 'レコーディングを保護解除する';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'レコーディングを非公開にする';
 $string['bigbluebuttonbn:view'] = 'BigBlueButtonを表示する';
-$string['bigbluebuttondisablednotification'] = 'BigBlueButtonの活動モジュールが無効にされたため、現在、既存のBigBlueButtonコース活動にアクセスできません。このプラグインを再度有効にする前にあなたがBlindside Networks Inc.の<a href="{$a}" target="_blank">データ処理規約</a>を読んで同意していることを確認してください。';
+$string['bigbluebuttondisablednotification'] = 'BigBlueButtonの活動モジュールが無効にされたため、現在、既存のBigBlueButtonコース活動にアクセスできません。このプラグインを再度有効にする前にあなたがBlindside Networks Inc.の<a href="{$a}" target="_blank">データ処理契約</a>を読んで同意していることを確認してください。';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton活動モジュールが無効にされました。';
 $string['cachedef_currentfetch'] = '最近取得したデータを一覧表示するデータです。';
 $string['cachedef_recordings'] = 'レコーディングメタデータ';
@@ -103,8 +103,8 @@ $string['config_disablepublicchat_default'] = '「パブリックチャット有
 $string['config_disablepublicchat_default_description'] = 'この設定を有効にした場合、パブリックチャットは無効にされます。';
 $string['config_disablepublicchat_editable'] = '「パブリックチャット無効化」を編集できる';
 $string['config_disablepublicchat_editable_description'] = 'デフォルトでの「パブリックチャット無効化」はインスタンス追加または更新時に編集できます。';
-$string['config_dpa_note'] = '注意: あなたのデータ保護義務に合致するため、このプラグインにサービスプロバイダを使用する前にサービスプロバイダのデータ処理規約を読んで同意したことを確認する必要があります。
-デフォルトの無料BigBlueButtonサービスについては以下の<a href="{$a}" target="_blank">Blindside Networksデータ処理規約</a>を読んで同意してください。
+$string['config_dpa_note'] = '注意: あなたのデータ保護義務に合致するため、このプラグインにサービスプロバイダを使用する前にサービスプロバイダのデータ処理契約を読んで同意したことを確認する必要があります。
+デフォルトの無料BigBlueButtonサービスについては以下の<a href="{$a}" target="_blank">Blindside Networksデータ処理契約</a>を読んで同意してください。
 <br />
 アドバイスについてはあなたの個人情報保護専門家にご相談ください。';
 $string['config_experimental_features'] = '実験機能';
@@ -229,7 +229,7 @@ $string['config_welcome_editable'] = 'デフォルトのウェルカムメッセ
 $string['config_welcome_editable_description'] = 'インスタンスの追加または更新時にウェルカムメッセージの編集が可能です。';
 $string['dpainfonotsigned'] = 'このプラグインを有効にする前にあなたは<a href="{$a}">Blindside Networksデータ処理契約</a>を確実に読んで承諾する必要があります。';
 $string['enablingbigbluebutton'] = 'BigBlueButton活動を有効にする';
-$string['enablingbigbluebuttondpainfo'] = 'あなたのデータ保護義務に合致するため、このプラグインを有効にする前に<a href="{$a}" target="_blank">Blindside Networksデータ処理規約</a>を確実に読んで承諾する必要があります。あなたの個人情報保護専門家にご相談ください。';
+$string['enablingbigbluebuttondpainfo'] = 'あなたのデータ保護義務に合致するため、このプラグインを有効にする前に<a href="{$a}" target="_blank">Blindside Networksデータ処理契約</a>を確実に読んで承諾する必要があります。あなたの個人情報保護専門家にご相談ください。';
 $string['end_session_confirm'] = '本当にセッションを終了してもよろしいですか?';
 $string['end_session_confirm_title'] = '本当にセッションを終了してもよろしいですか?';
 $string['end_session_notification'] = 'セッションは終了しました。';

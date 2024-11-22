@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Pesquisar nos repositórios...';
-$string['buttontitle'] = 'Conteúdo H5P';
+$string['buttontitle'] = 'Configurar conteúdo H5P';
 $string['copyrightbutton'] = 'Botão Direitos de autor';
 $string['downloadbutton'] = 'Permitir descarregar';
 $string['embedbutton'] = 'Botão Incorporar';
@@ -36,7 +36,7 @@ $string['h5pfileorurl'] = 'URL ou carregamento de ficheiro H5P';
 $string['h5poptions'] = 'Opções do H5P';
 $string['h5purl'] = 'URL do H5P';
 $string['helplinktext'] = 'Auxiliar H5P';
-$string['insert'] = 'Conteúdo H5P';
+$string['insert'] = 'Inserir conteúdo H5P';
 $string['instructions'] = 'Pode inserir conteúdo H5P <strong>quer</strong> inserindo um URL <strong>ou</strong> carregando um ficheiro H5P.';
 $string['invalidh5purl'] = 'URL inválido';
 $string['modaltitle'] = 'Inserir conteúdo H5P';

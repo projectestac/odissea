@@ -156,5 +156,5 @@ $string['supportmessagesent'] = 'Mesajul dumneavoastră a fost trimis.';
 $string['supportmessagesentforloggedoutuser'] = 'Aveți grijă la acest mesaj. Expeditorul nu a fost logat, iar identitatea sa nu a fost confirmată.';
 $string['target:upcomingactivitiesdue'] = 'Activități cu termen de finalizare viitoare';
 $string['target:upcomingactivitiesdue_help'] = 'Această țintă generează mementouri pentru activitățile cu termen de finalizare viitoare.';
-$string['target:upcomingactivitiesdueinfo'] = 'Toate activitățile viitoare cuvenite sunt prezentate aici. Acești studenți au primit aceste informații direct.';
+$string['target:upcomingactivitiesdueinfo'] = 'Toate activitățile viitoare generate de statistici sunt prezentate aici. Acești cursanți au primit aceste informații direct.';
 $string['userprofile'] = 'Profilul utilizatorului';

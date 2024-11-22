@@ -114,6 +114,7 @@ Feature: Manage analytics models
     And I should see "Read actions amount"
     And I click on "Select Student 6 for bulk action" "checkbox" in the "Student 6" "table_row"
     And I click on "Accept" "button"
+    And I wait until "Confirm" "button" exists
     And I click on "Confirm" "button" in the "Accept" "dialogue"
     And I click on "View prediction details" "icon" in the "Student 5" "table_row"
     And I click on "Select Student 5 for bulk action" "checkbox" in the "Student 5" "table_row"
@@ -145,7 +146,8 @@ Feature: Manage analytics models
     When I open the action menu in "Students at risk of not meeting the course completion conditions" "table_row"
     And I choose "Export" in the open action menu
     And I click on "Actions" "link" in the "Students at risk of not meeting the course completion conditions" "table_row"
-    And following "Export" should download between "100" and "500" bytes
+    And following "Export" should download a file that:
+       | Contains file in zip | model-config.json |
 
   Scenario: Check invalid site elements
     When I open the action menu in "Students at risk of not meeting the course completion conditions" "table_row"

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseuploadlimit'] = 'Límit de càrrega del curs';
 $string['invalidpdf'] = '\'{$a}\' no és un PDF vàlid';
+$string['select'] = 'Selecciona';

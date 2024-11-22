@@ -30,3 +30,4 @@ $string['duration'] = 'Durada';
 $string['norooms'] = 'No hi ha cap sala.';
 $string['rep_dsp_dur'] = 'Durada';
 $string['rooms'] = 'Sales';
+$string['type'] = 'Tipus';

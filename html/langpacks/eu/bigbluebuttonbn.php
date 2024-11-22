@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptdpa'] = 'Ulertu dut eta ados nago datu-prozesatze akordioarekin';
+$string['acceptdpa'] = 'Ulertu dut eta ados nago datu-prozesatze onespenarekin';
 $string['activityoverview'] = 'Laster BigBlueButton saioak izango dituzu';
 $string['bbbduetimeoverstartingtime'] = 'Jarduera honen itxiera-data irekitze-data baino beranduagokoa izan behar du.';
 $string['bbbdurationwarning'] = 'Saio honen gehieneko iraupena %duration% minutu da.';
@@ -103,7 +103,7 @@ $string['config_disablepublicchat_default'] = 'Desgaitu txat publikoa gaituta mo
 $string['config_disablepublicchat_default_description'] = 'Gaituz gero txat publikoa desgaituta egongo da.';
 $string['config_disablepublicchat_editable'] = 'Desgaitu txat publikoa editatu daiteke';
 $string['config_disablepublicchat_editable_description'] = 'Desgaitu txat publikoaren balio lehenetsia instantzia bat gehitu edo editatzean editatu daitekeen.';
-$string['config_dpa_note'] = 'Oharra: Datu-babeserako betebeharrak betetzeko, plugin honentzako zerbitzu-hornitzaile bat erabiltzen hasi aurretik zerbitzu hornitzailearen datu-prozesatzerako onespena irakurri eta onartzen duzula ziurtatu behar duzu. Lehenetsitako doako BigBlueButton zerbitzurako hau da <a href="{$a}" target="_blank">Blindside Networks-eko datu-prozesatze akordioa</a>. Gomendioetarako harremanetan jarri zaitez zure pribatutasun adituekin.';
+$string['config_dpa_note'] = 'Oharra: Datu-babeserako betebeharrak betetzeko, plugin honentzako zerbitzu-hornitzaile bat erabiltzen hasi aurretik zerbitzu hornitzailearen datu-prozesatzerako onespena irakurri eta onartzen duzula ziurtatu behar duzu. Lehenetsitako doako BigBlueButton zerbitzurako hau da <a href="{$a}" target="_blank">Blindside Networks-eko datu-prozesatze onespena</a>. Gomendioetarako harremanetan jarri zaitez zure pribatutasun adituekin.';
 $string['config_experimental_features'] = 'Funtzio esperimentalak';
 $string['config_experimental_features_description'] = 'Funtzio esperimentaletarako ezarpenak.';
 $string['config_extended_capabilities'] = 'Gaitasun hedatuak';
@@ -224,9 +224,9 @@ $string['config_welcome_default'] = 'Ongi-etorri mezu lehenetsia';
 $string['config_welcome_default_description'] = 'Ongi-etorri mezua parte-hartzaile bat bilera-gelan sartzean erakusten da. Eremua hutsik utziz gero BigBlueButton zerbitzarian zehaztutako mezua erakutsiko da.';
 $string['config_welcome_editable'] = 'Irakasleek lehenetsitako ongi-etorri mezua editatu dezakete';
 $string['config_welcome_editable_description'] = 'Instantzia gehitu ala eguneratzean ongi-etorri mezua editatu daiteke';
-$string['dpainfonotsigned'] = 'Plugin hau gaitu aurretik, <a href="{$a}">Blindside Networks Inc.-eko datu-prozesatzen akordioa</a> irakurri eta onartu duzula baieztatu behar duzu.';
+$string['dpainfonotsigned'] = 'Plugin hau gaitu aurretik, <a href="{$a}">Blindside Networks Inc.-eko datu-prozesatzen onespena</a> irakurri eta onartu duzula baieztatu behar duzu.';
 $string['enablingbigbluebutton'] = 'BigBlueButton jarduera gaitzen';
-$string['enablingbigbluebuttondpainfo'] = 'Datu-babeserako betebeharrak betetzeko, plugin hau gaitu aurretik <a href="{$a}" target="_blank">Blindside Networks Inc.-eko datu-prozesatzen akordioa</a> irakurri eta onartu duzula ziurtatu behar duzu. Gomendioetarako harremanetan jarri zaitez zure pribatutasun adituekin.';
+$string['enablingbigbluebuttondpainfo'] = 'Datu-babeserako betebeharrak betetzeko, plugin hau gaitu aurretik <a href="{$a}" target="_blank">Blindside Networks Inc.-eko datu-prozesatzen onespena</a> irakurri eta onartu duzula ziurtatu behar duzu. Gomendioetarako harremanetan jarri zaitez zure pribatutasun adituekin.';
 $string['end_session_confirm'] = 'Ziur zaude saioa amaitu nahi duzula?';
 $string['end_session_confirm_title'] = 'Ziur zaude saioa amaitu nahi duzula?';
 $string['end_session_notification'] = 'Saioa amaitu egin da.';

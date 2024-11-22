@@ -14,6 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+defined('MOODLE_INTERNAL') || die();
+
+global $CFG;
+require_once($CFG->dirroot . '/filter/wiris/filter.php');
+
 /**
  * Unit tests for MathType filter.
  *
@@ -22,24 +27,36 @@
  * @copyright  2016
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
  */
-defined('MOODLE_INTERNAL') || die();
+final class filter_without_performance_svg_test extends advanced_testcase {
 
-global $CFG;
-require_once($CFG->dirroot . '/filter/wiris/filter.php');
 
-class filter_without_performance_svg_test extends advanced_testcase {
+
+    /**
+     * @var mixed $wirisfilter The WIRIS filter instance used for testing.
+     */
     protected $wirisfilter;
+    /**
+     * @var mixed $safexml The safe XML instance used for testing.
+     */
     protected $safexml;
+    /**
+     * @var mixed $xml The XML instance used for testing.
+     */
     protected $xml;
+    /**
+     * @var mixed $instance The instance used for testing.
+     */
     protected $instance;
 
     protected function setUp(): void {
         global $CFG;
         parent::setUp();
         $this->resetAfterTest(true);
-        filter_wiris_pluginwrapper::set_configuration(array('wirispluginperformance' => 'false',
-                                                            'wirisimageformat' => 'svg'));
-        $this->wirisfilter = new filter_wiris(context_system::instance(), array());
+        filter_wiris_pluginwrapper::set_configuration([
+            'wirispluginperformance' => 'false',
+            'wirisimageformat' => 'svg',
+        ]);
+        $this->wirisfilter = new filter_wiris(context_system::instance(), []);
         $this->safexml = '«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«mo»+«/mo»«mn»2«/mn»«/math»';
         $this->xml = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn></math>';
 
@@ -86,30 +103,30 @@ class filter_without_performance_svg_test extends advanced_testcase {
         $this->instance = $wirispluginwrapper->get_instance();
     }
 
-    public function test_filter_safexml_without_performance_svg() {
+    public function test_filter_safexml_without_performance_svg(): void {
         $output = $this->wirisfilter->filter($this->safexml);
         $this->assertEquals($output, $this->imagesvg);
     }
 
-    public function test_filter_xml_without_performance_svg() {
+    public function test_filter_xml_without_performance_svg(): void {
         $output = $this->wirisfilter->filter($this->xml);
         $this->assertEquals($output, $this->imagesvg);
     }
-    public function test_filter_safexml_without_performance_svg_cache_formula() {
+    public function test_filter_safexml_without_performance_svg_cache_formula(): void {
         $this->wirisfilter->filter($this->safexml);
         $cachefile = new moodlefilecache('filter_wiris', 'formulas');
         $fileresult = $cachefile->get('cd345a63d1346d7a11b5e73bb97e5bb7.ini');
         $assertion = strrpos($fileresult, $this->xml) !== false;
         $this->assertTrue($assertion);
     }
-    public function test_filter_safexml_without_performance_svg_alt_cache() {
+    public function test_filter_safexml_without_performance_svg_alt_cache(): void {
         $this->wirisfilter->filter($this->safexml);
         $cachefile = new moodlefilecache('filter_wiris', 'images');
         $fileresult = $cachefile->get('cd345a63d1346d7a11b5e73bb97e5bb7.en.txt');
         $assertion = strrpos($fileresult, $this->specialcharsalt) !== false;
         $this->assertTrue($assertion);
     }
-    public function test_filter_safexml_without_performance_svg_cache() {
+    public function test_filter_safexml_without_performance_svg_cache(): void {
         $this->wirisfilter->filter($this->safexml);
         $cachefile = new moodlefilecache('filter_wiris', 'images');
         $fileresult = $cachefile->get('cd345a63d1346d7a11b5e73bb97e5bb7.svg');

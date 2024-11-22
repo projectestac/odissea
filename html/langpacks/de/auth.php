@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actauthhdr'] = 'Verfügbare Plugins zur Authentifizierung';
 $string['allowaccountssameemail'] = 'Nutzerkonten mit gleicher E-Mail-Adresse erlauben';
 $string['allowaccountssameemail_desc'] = 'Wenn diese Option aktiviert ist, können mehrere Nutzerkonten die gleiche E-Mail-Adresse verwenden. Probleme hinsichtlich Sicherheit oder Datenschutz könnten entstehen, wenn z.B. eine Bestätigungsmitteilung zur Kennwortänderung versendet wird.';
-$string['alternatelogin'] = 'Bei der Eingabe einer URL wird diese als alternative Login-Seite verwandt. Die Seite sollte ein Formular enthalten, dessen Aktionsfunktion auf <strong>\'{$a}\'</strong> gesetzt ist und außerdem die Eingabefelder <strong>username</strong> und <strong>passwort</strong> zurück liefert.<br />Seien Sie sehr sorgfältig bei der Eingabe der URL, denn mit einer falschen URL schließen Sie sich vom Zugriff zur Website aus. Lassen Sie das Feld leer, um die Standard-Anmeldeseite zu verwenden.';
+$string['alternatelogin'] = 'Bei der Eingabe einer URL wird diese als alternative Login-Seite verwandt. Die Seite sollte ein Formular enthalten, dessen Aktionsfunktion auf <strong>\'{$a}\'</strong> gesetzt ist und außerdem die Eingabefelder <strong>username</strong> und <strong>password</strong> zurück liefert.<br />Seien Sie sehr sorgfältig bei der Eingabe der URL, denn mit einer falschen URL schließen Sie sich selber vom Zugriff zur Website aus. Lassen Sie das Feld leer, um die Standard-Anmeldeseite zu verwenden.';
 $string['alternateloginurl'] = 'URL für alternatives Login';
 $string['auth_changepasswordhelp'] = 'Hilfe zur Kennwortänderung';
 $string['auth_changepasswordhelp_expl'] = 'Nutzerhilfe für vergessene {$a} Kennwörter anzeigen. Diese Hilfe wird neben oder statt der <strong>URL zur Kennwortänderung</strong> oder der Moodle internen Kennwortänderung angezeigt.';
@@ -58,7 +58,7 @@ $string['auth_sync_script'] = 'Synchronisierung von Nutzerkonten';
 $string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkmal bei der Synchronisation von lokalen Nutzerkonten verwendet wird.';
 $string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
-$string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn sich die Nutzer/innen einloggen oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal (external auth) aktualisiert, wenn sich die Nutzer/innen einloggen oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
 $string['auth_updatelocalfield'] = 'Lokal aktualisieren ({$a})';
 $string['auth_updateremote'] = 'Extern aktualisieren';
 $string['auth_updateremote_expl'] = '<p><b>Extern aktualisieren:</b> Wenn diese Option aktiviert ist, wird die externe Datenbank aktualisiert, sobald der Nutzerdatensatz aktualisiert wird. Die Felder sollten bearbeitbar bleiben, um Datenänderungen zuzulassen.</p>';
@@ -150,7 +150,7 @@ $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Kennwort, mit dem ein
 $string['recaptcha'] = 'ReCaptcha';
 $string['recaptcha_help'] = 'Das Captcha dient dazu, Missbrauch durch automatisierte Programme zu verhindern. Befolgen Sie die Anleitung zur Bestätigung, dass Sie kein Roboter sind. Verschiedene Dinge sind möglich, z.B. eine Box zum Markieren, Buchstaben in einem angezeigten Bild oder eine Reihe zur Auswahl angezeigte Bilder.
 
-Sollten Sie nicht sicher sein, wie sie antworten sollen, versuchen Sie es noch einmal mit einem neuen Captcha oder mit einem Audio-Captcha.';
+Sollten Sie nicht sicher sein, wie Sie antworten sollen, versuchen Sie es noch einmal mit einem neuen Captcha oder mit einem Audio-Captcha.';
 $string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Sicherheitsfrage';
 $string['selfregistration'] = 'Selbstregistrierung';

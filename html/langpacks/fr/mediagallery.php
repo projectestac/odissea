@@ -62,11 +62,11 @@ $string['colltype_help'] = 'Le type d’une collection détermine le niveau d’
 <ul>
 <li>Collection pour enseignant : seuls les utilisateurs pouvant noter la collection pourront ajouter/éditer sont contenu.
 Ce type est principalement utilisé pour créer des exemples de collections, ou un ensemble de galeries sans risque de modification par les utilisateurs.</li>
-<li>Collection ouverte : Permet aux utilisateurs de créer leurs propres galeries et éléments.
+<li>Collection ouverte : permet aux utilisateurs de créer leurs propres galeries et éléments.
 Ne peut être utilisé dans le cadre d’une activité notée.</li>
-<li>Collection pour devoir : Les utilisateurs ne verront que les galeries qu’ils ont créés (et celles de leur groupe - si le mode groupe est activé) .
+<li>Collection pour devoir : les utilisateurs ne verront que les galeries qu’ils ont créés (et celles de leur groupe - si le mode groupe est activé) .
 Peut être utilisé dans le cadre d’une activité notée.</li>
-<li>Collection évalué par les pairs : Chaque utilisateur est en mesure de voir les galeries des autres utilisateurs / groupes. Ils peuvent les commenter et/ou les aimer si ces fonctions sont activées.
+<li>Collection évalué par les pairs : chaque utilisateur est en mesure de voir les galeries des autres utilisateurs / groupes. Ils peuvent les commenter et/ou les aimer si ces fonctions sont activées.
 Peut être utilisé dans le cadre d’une activité notée.</li>
 </ul>';
 $string['colltypeassignment'] = 'Collection pour devoir';
@@ -207,7 +207,7 @@ Les utilisateurs peuvent créer leurs propres galeries d’images, de vidéo ou 
 Le contenu déposé est présenté sous forme de vignettes dans un carrousel ou dans une grille. Cliquer sur une vignette place l’image en focus et permet de naviguer à l’intérieur de la galerie. Les utilisateurs peuvent aussi «Aimer» et commenter le contenu des galeries.';
 $string['modulenameplural'] = 'Collections multimédia';
 $string['moralrights'] = 'Droits moraux';
-$string['moralrights_help'] = 'Souhaitez-vous faire valoir vos droits moraux?
+$string['moralrights_help'] = 'Souhaitez-vous faire valoir vos droits moraux ?
 
 En sélectionnant oui vous accordez votre consentement à ce que cet article soit potentiellement utilisé comme un exemple de travail.';
 $string['noitemsadded'] = 'Aucun élément n’a été ajouté à cette galerie.';

@@ -200,9 +200,9 @@ $string['safemodehelp'] = '<p>В режиме «safe mode» у Moodle могут
 <p>Вы, конечно, можете попробовать продолжить установку, но тогда возможен ряд проблем в будущем.</p>';
 $string['sessionautostart'] = 'Параметр «session.autostart»';
 $string['sessionautostarterror'] = 'Должен быть «0»';
-$string['sessionautostarthelp'] = '<p>Moodle требуется поддержка сессий и без нее он не будет работать.</p>
+$string['sessionautostarthelp'] = '<p>Moodle требуется поддержка сеансов и без нее он не будет работать.</p>
 
-<p>Необходимый режим работы с сессиями может быть установлены в файле php.ini. Установите session.auto_start = 0.</p>';
+<p>Необходимый режим работы с сеансами может быть установлены в файле php.ini. Установите session.auto_start = 0.</p>';
 $string['sqliteextensionisnotpresentinphp'] = 'Расширение SQLite для PHP настроено неверно. Проверьте настройки в файле php.ini или перекомпилируйте PHP.';
 $string['upgradingqtypeplugin'] = 'Обновление плагина вопрос/тип';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';

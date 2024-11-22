@@ -201,11 +201,7 @@ $string['gradesum'] = 'Calificaciones sumadas';
 $string['height'] = 'Altura';
 $string['hidden'] = 'Oculto';
 $string['hidebrowse'] = 'Ocultar botón de previsualización';
-$string['hidebrowse_help'] = '<p>Si esta opción está ajustada a "Sí", el botón de previsualización en la página principal de la actividad SCORM/AICC no mostrará.</p>
-
-<p>En caso contrario, el estudiante puede elegir entre previsualizar la actividad o realizar un intento de forma normal.</p>
-
-<p>Cuando un objeto de aprendizaje es completado en modo previsualizar, es marcado con el icono de previsualizado (<img src="<?php echo $CFG->wwwroot.\'/mod/scorm/pix/browsed.gif\' ?>" alt="<?php print_string(\'browsed\',\'scorm\') ?>" title="<?php print_string(\'browsed\',\'scorm\') ?>" />).</p>';
+$string['hidebrowse_help'] = 'El modo de vista previa permite al estudiante explorar una actividad antes de intentarla. Si el modo de vista previa está desactivado, el botón de vista previa está oculto.';
 $string['hidebrowsedesc'] = 'El modo de vista previa permite al estudiante explorar una actividad antes de intentarla.';
 $string['hideexit'] = 'Ocultar enlace de salida';
 $string['hidereview'] = 'Ocultar botón de revisión';

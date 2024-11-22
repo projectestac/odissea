@@ -45,18 +45,12 @@ $string['displayoptions'] = 'Opcions disponibles per visualitzar';
 $string['displayselect'] = 'Mostra';
 $string['displayselect_help'] = 'Aquest paràmetre, junt amb el tipus de fitxer i si el navegador permet la incrustació, determina com es mostra el fitxer. Les opcions poden incloure:
 
-* Automàtic - Se selecciona de forma automàtica la millor opció per visualitzar el tipus de fitxer.
-
-* Incrustat - El fitxer es mostra dins de la pàgina, sota la barra de navegació amb la descripció del fitxer i qualsevol bloc.
-
-* Força la descàrrega - Se li demana descarregar el fitxer a l\'usuari
-
-* Obre - Sols es mostra el fitxer en la finestra del navegador.
-
-* Finestra emergent - El fitxer es mostra en una finestra nova del navegador sense menús ni barres d\'adreces.
-
-* Marc - El fitxer es mostra dins d\'un marc sota la barra de navegació i la descripció del fitxer
-
+* Automàtic - Se selecciona de forma automàtica la millor opció per visualitzar el tipus de fitxer
+* Incrustat - El fitxer es mostra dins de la pàgina, sota la barra de navegació amb la descripció del fitxer i qualsevol bloc
+* Força la descàrrega - Es demana a l\'usuari que descarregui el fitxer
+* Obre - Sols es mostra el fitxer en la finestra del navegador
+* En finestra emergent - El fitxer es mostra en una finestra nova del navegador sense menús ni barra d\'adreces
+* En un marc - El fitxer es mostra dins d\'un marc sota la barra de navegació i la descripció del fitxer
 * Finestra nova - El fitxer es mostra en una finestra nova del navegador amb menús i barra d\'adreces';
 $string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Tria el tipus de visualització, dissortadament tots els tipus no estan disponibles per tots els fitxers.';
@@ -67,9 +61,16 @@ $string['filterfiles'] = 'Utilitza filtres en el contingut del fitxer';
 $string['filterfilesexplain'] = 'Selecciona el tipus de filtratge de contingut del fitxer; fixeu-vos que això pot provocar problemes en algunes aplicacions de Java i Flash. Comproveu que tots els fitxers de text estan codificats en UTF-8.';
 $string['filtername'] = 'Enllaços automàtics a recursos';
 $string['forcedownload'] = 'Imposa que es baixi';
-$string['framesize'] = 'Altura del marc';
-$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Fitxer en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['framesize'] = 'Alçària del marc';
+$string['indicator:cognitivedepth'] = 'Fitxer, cognitiu';
+$string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en un recurs de fitxer.';
+$string['indicator:cognitivedepthdef'] = 'Fitxer, cognitiu';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge d\'implicació cognitiva oferta pels recursos de Fitxer en el decurs d\'aquest interval d\'anàlisi (Nivells = Sense visualització, Visualització)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Fitxer, social';
+$string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'amplitud social assolida per l\'estudiant en un recurs de fitxer.';
+$string['indicator:socialbreadthdef'] = 'Fitxer, social';
+$string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge d\'implicació social oferta pels recursos de fitxer durant aquest interval d\'anàlisi (Nivells = Sense participació, Participant en solitari).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migració d\'un fitxer de curs antic';
 $string['legacyfilesactive'] = 'Actiu';
@@ -88,7 +89,7 @@ Un fitxer pot servir per:
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Fitxers';
 $string['notmigrated'] = 'Aquest tipus de recurs heretat ({$a}) encara no s\'ha migrat.';
-$string['optionsheader'] = 'Opcions';
+$string['optionsheader'] = 'Opcions de visualització';
 $string['page-mod-resource-x'] = 'Qualsevol pàgina del mòdul de fitxers';
 $string['pluginadministration'] = 'Administració del mòdul del fitxer';
 $string['pluginname'] = 'Fitxer';
@@ -99,7 +100,8 @@ $string['popupresourcelink'] = 'Si no, feu clic aquí: {$a}';
 $string['popupwidth'] = 'Amplària de la finestra emergent (en píxels)';
 $string['popupwidthexplain'] = 'Especifica l\'amplària per defecte de les finestres emergents.';
 $string['printintro'] = 'Mostra la descripció del recurs';
-$string['printintroexplain'] = 'Voleu mostrar la descripció del recurs per sota del contingut? Algunes pàgines no mostren la descripció malgrat estigui activat.';
+$string['printintroexplain'] = 'Voleu mostrar la descripció del recurs per sota del contingut? Algunes pàgines no mostren la descripció malgrat que estigui activada.';
+$string['privacy:metadata'] = 'El connector de recurs de fitxer no emmagatzema cap dada personal';
 $string['resource:addinstance'] = 'Afegeix un recurs nou';
 $string['resource:exportresource'] = 'Exporta el recurs';
 $string['resource:view'] = 'Veure recurs';

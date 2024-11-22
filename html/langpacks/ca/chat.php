@@ -138,6 +138,7 @@ $string['servermax'] = 'Nombre màxim d\'usuaris';
 $string['serverport'] = 'Port del servidor';
 $string['sessions'] = 'Sessions de xat';
 $string['sessionstart'] = 'La propera sessió de xat començarà el: {$a->date}, (d\'aquí a {$a->fromnow})';
+$string['sessionstartsin'] = 'La propera sessió de xat començarà en {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tothom pot veure les sessions anteriors';
 $string['studentseereports_help'] = 'Si es configura en No, només els usuaris amb la capacitat mod/chat:readlog poden veure els registres del xat';

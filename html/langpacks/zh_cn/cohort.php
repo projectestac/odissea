@@ -85,13 +85,13 @@ $string['selectfromcohort'] = '从群选择成员';
 $string['systemcohorts'] = '系统群';
 $string['unknowncohort'] = '未知群（{$a}）！';
 $string['uploadcohorts'] = '上传群';
-$string['uploadcohorts_help'] = '群可以用过文本文件上传。文件格式应当是：
+$string['uploadcohorts_help'] = '群组可以通过文本文件上传。文件的格式应如下所示：
 
-* 每行包含一条记录
-* 每条记录是由逗号 (或其他分隔符) 分隔的一系列数据
-* 第一条记录为字段名称的列表，用于定义文件其它部分的格式
-* 必填的字段是 name
-* 可选的字段是 idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
+* 文件的每一行包含一条记录
+* 每条记录都是由选定的分隔符分隔的数据
+* 第一条记录包含字段名称列表，用于定义文件其余部分的格式
+* 必填字段name
+* 可选字段名称为 idnumber、description、descriptionformat、visible、context、category、category_id、category_idnumber、category_path';
 $string['uploadedcohorts'] = '上传 {$a} 个群';
 $string['useradded'] = '用户已加入群“{$a}”';
 $string['visible'] = '是否可见';

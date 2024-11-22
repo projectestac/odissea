@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Permitir classes CSS adicionais';
-$string['configallowadditionalcssclasses'] = 'Adiciona uma opção de configuração às instâncias do bloco Texto permitindo que sejam configuradas classes CSS adicionais.';
+$string['configallowadditionalcssclasses'] = 'Adiciona uma opção de configuração às instâncias do bloco Texto e multimédia permitindo que sejam configuradas classes CSS adicionais.';
 $string['configclasses'] = 'Classes CSS adicionais';
-$string['configclasses_help'] = 'O objetivo desta configuração é auxiliar na personalização do tema ajudando a distinguir blocos Texto uns dos outros. Quaisquer classes CSS inseridas aqui (delimitadas por espaço) serão anexadas às classes predefinidas do bloco.';
+$string['configclasses_help'] = 'O objetivo desta configuração é auxiliar na personalização do tema ajudando a distinguir blocos Texto e multimédia uns dos outros. Quaisquer classes CSS inseridas aqui (delimitadas por espaço) serão anexadas às classes predefinidas do bloco.';
 $string['configcontent'] = 'Conteúdo';
-$string['configtitle'] = 'Título do bloco Texto';
-$string['html:addinstance'] = 'Adicionar um novo bloco Texto';
-$string['html:myaddinstance'] = 'Adicionar um novo bloco Texto ao Painel do utilizador';
-$string['newhtmlblock'] = '(novo bloco Texto)';
-$string['pluginname'] = 'Texto';
-$string['privacy:metadata:block'] = 'O bloco Texto armazena todos os seus dados no subsistema de blocos.';
-$string['search:content'] = 'Conteúdo do bloco Texto';
+$string['configtitle'] = 'Título do bloco Texto e multimédia';
+$string['html:addinstance'] = 'Adicionar um novo bloco Texto e multimédia';
+$string['html:myaddinstance'] = 'Adicionar um novo bloco Texto e multimédia ao Painel do utilizador';
+$string['newhtmlblock'] = '(novo bloco Texto e multimédia)';
+$string['pluginname'] = 'Texto e multimédia';
+$string['privacy:metadata:block'] = 'O bloco Texto e multimédia armazena todos os seus dados no subsistema de blocos.';
+$string['search:content'] = 'Conteúdo do bloco Texto e multimédia';

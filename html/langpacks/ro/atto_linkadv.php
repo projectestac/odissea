@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['advanced'] = 'Avansat';
 $string['browserepositories'] = 'Caută în depozite...';
 $string['createlink'] = 'Creează link';
+$string['enterclass'] = 'Inserează o clasă';
 $string['enterid'] = 'Inserează un ID';
 $string['enterurl'] = 'Inserează un URL';
 $string['link'] = 'Link';

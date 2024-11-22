@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Afegeix';
 $string['limit'] = 'límit';
 $string['nextString'] = 'Següent';
 $string['responses'] = 'Respostes';

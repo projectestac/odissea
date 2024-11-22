@@ -77,7 +77,7 @@ function xmldb_qtype_wq_upgrade($oldversion) {
 
     if ($oldversion < 2017011300) {
 
-         // Define table qtype_wq_variables to be created.
+        // Define table qtype_wq_variables to be created.
         $table = new xmldb_table('qtype_wq_variables');
 
         // Adding fields to table qtype_wq_variables.
@@ -102,12 +102,12 @@ function xmldb_qtype_wq_upgrade($oldversion) {
 
 function get_entities_table($table, $flags) {
     if ((version_compare(PHP_VERSION, '5.3.4') >= 0)) {
-        return get_html_translation_taquestionble($table, $flags, 'UTF-8');
+        return get_html_translation_table($table, $flags, 'UTF-8');
     } else {
         $isotable = get_html_translation_table($table, $flags);
         $utftable = array();
         foreach ($isotable as $key => $value) {
-            $utftable[utf8_encode($key)] = utf8_encode($value);
+            $utftable[mb_convert_encoding($key, 'UTF-8', 'ISO-8859-1')] = mb_convert_encoding($value, 'UTF-8', 'ISO-8859-1');
         }
         return $utftable;
     }

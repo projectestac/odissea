@@ -33,7 +33,7 @@ $string['accept_grades_admin_help'] = 'Indiquer si le fournisseur de l’outil p
 Certains fournisseurs d’outil permettent le transfert des notes vers Moodle, sur la base d’actions effectuées dans l’outil, créant ainsi une expérience utilisateur mieux intégrée.';
 $string['accept_grades_help'] = 'Indique si le fournisseur de l’outil peut ajouter, mettre à jour, lire et effacer les notes associées à cette instance de l’outil externe
 
-Certains fournisseurs d’outil supportent le transfert des notes vers Moodle, sur la base d’actions effectuées dans l’outil, créant ainsi une expérience utilisateur mieux intégrée.
+Certains fournisseurs d’outil prennent en charge le transfert des notes vers Moodle, sur la base d’actions effectuées dans l’outil, créant ainsi une expérience utilisateur mieux intégrée.
 
 Ce réglage peut être court-circuité dans la configuration de l’outil.';
 $string['accepted'] = 'Accepté';
@@ -87,7 +87,7 @@ $string['configtypes'] = 'Autoriser les applications LTI';
 $string['configured'] = 'Configuré';
 $string['confirmtoolactivation'] = 'Voulez-vous vraiment activer cet outil ?';
 $string['contentitem'] = 'Message Content-Item';
-$string['contentitem_deeplinking'] = 'Supporte les liens profond (Content-Item Message)';
+$string['contentitem_deeplinking'] = 'Prend en charge les liens profond (Content-Item Message)';
 $string['contentitem_deeplinking_help'] = 'Si ce réglage est activé, l’option « Sélectionner un contenu » sera disponible lors de l’ajout d’un outil externe.';
 $string['contentitem_help'] = 'Si ce réglage est activé, l’option « Sélectionner un contenu » sera disponible lors de l’ajout d’un outil externe.';
 $string['contentitem_multiple_description'] = 'Les éléments suivants seront ajoutés à votre cours :';
@@ -193,7 +193,7 @@ $string['force_ssl_help'] = 'La sélection de cette option impose l’utilisatio
 
 De plus, toutes les requêtes de services web de ce fournisseur d’outil utiliseront SSL.
 
-Avant d’activer cette option, assurez-vous que ce site Moodle et que le fournisseur de l’outil supportent le protocole SSL.';
+Avant d’activer cette option, assurez-vous que ce site Moodle et que le fournisseur de l’outil prenne en charge le protocole SSL.';
 $string['forced_help'] = 'Ce réglage a été imposé au niveau de la configuration du cours ou du site. Vous ne pouvez pas le modifier depuis cette interface.';
 $string['generaltool'] = 'Outil générique';
 $string['global_tool_types'] = 'Outils préconfigurés';
@@ -278,12 +278,12 @@ $string['module_class_type'] = 'Type de module Moodle';
 $string['modulename'] = 'Outil externe';
 $string['modulename_help'] = 'Les outils externes permettent aux utilisateurs de Moodle d’interagir avec des ressources d’apprentissage sur d’autres sites web. Par exemple, un outil externe donnera accès à un nouveau type d’activité et ou des moyens d’enseignements d’un éditeur.
 
-Pour configurer une instance d’un outil externe, le fournisseur de l’outil doit supporter la norme LTI (Learning Tools Interoperability). Les fournisseurs supportant LTI proposent des instructions sur la façon de configurer les instances externes de leurs outils. Les types d’outil configurés par les administrateurs du site seront aussi disponibles pour les utilisateurs.
+Pour configurer une instance d’un outil externe, le fournisseur de l’outil doit prendre en charge la norme LTI (Learning Tools Interoperability). Les fournisseurs prenant en charge LTI proposent des instructions sur la façon de configurer les instances externes de leurs outils. Les types d’outil configurés par les administrateurs du site seront aussi disponibles pour les utilisateurs.
 
 Les outils externes diffèrent des ressources de type URL de plusieurs façons.
 
 * **Contextualisation** - Les outils externes ont accès à des informations sur l’utilisateur qui lancent l’outil, par exemple le nom de l’institution, l’identifiant du cours, l’identifiant de l’utilisateur et d’autres informations comme le nom d’utilisateur ou son adresse de courriel.
-* **Intégration élevée** - Les outils externes supportent la lecture, la modification et la suppression des notes associées à l’activité. D’autres points d’intégration sont planifiés pour de prochaines versions.
+* **Intégration élevée** - Les outils externes prennent en charge la lecture, la modification et la suppression des notes associées à l’activité. D’autres points d’intégration sont planifiés pour de prochaines versions.
 * **Sécurité** - Les configurations d’outils externes créent une liaison sécurisée entre Moodle et le fournisseur de l’outil, permettant une communication sûre entre eux.';
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulename_shortcut_link'] = 'mod/lti/view/custom';
@@ -379,7 +379,7 @@ $string['redirect'] = 'Vous allez être redirigé dans quelques secondes. Dans l
 $string['redirectionuris'] = 'URIs de redirection';
 $string['redirectionuris_help'] = 'Une liste d’URIs (un par ligne) que l’outil utilise lorsqu’il effectue les requêtes d’autorisations. Au moins un URI doit être enregistré avant qu’un message puisse être envoyé correctement à l’outil.';
 $string['register'] = 'Enregistrer';
-$string['register_warning'] = 'La page d’enregistrement prend trop de temps à ouvrir. Si elle ne s’ouvre pas, veuillez vérifier que l’URL saisie dans la configuration est correcte. Si Moodle utilise https, assurez-vous que l’outil que vous configurez supporte https et que vous avez bien indiqué https dans l’URL.';
+$string['register_warning'] = 'La page d’enregistrement prend trop de temps à ouvrir. Si elle ne s’ouvre pas, veuillez vérifier que l’URL saisie dans la configuration est correcte. Si Moodle utilise https, assurez-vous que l’outil que vous configurez prenne en charge https et que vous avez bien indiqué https dans l’URL.';
 $string['registertype'] = 'Configurer l’enregistrement d’un outil externe';
 $string['registration_options'] = 'Options d’enregistrement';
 $string['registrationname'] = 'Nom du fournisseur de l’outil';
@@ -485,7 +485,7 @@ $string['tooldetailspublickeyseturl'] = 'URL du jeu de clef public';
 $string['toolisbeingused'] = 'Cet outil est utilisé {$a} fois';
 $string['toolisnotbeingused'] = 'Cet outil n’a pas encore été utilisé';
 $string['toolproxy'] = 'Enregistrements d’outil externe';
-$string['toolproxy_help'] = 'L’enregistrement d’un outil externe permet aux administrateurs d’un site Moodle de configurer des outils externes via un proxy d’un fournisseur d’outils supportant LTI 2.0. La seule information nécessaire pour initier le processus est une URL d’enregistrement donnée par le fournisseur. Les fonctionnalités et services offerts au fournisseur de l’outil sont choisies lors de la configuration d’un nouvel enregistrement.
+$string['toolproxy_help'] = 'L’enregistrement d’un outil externe permet aux administrateurs d’un site Moodle de configurer des outils externes via un proxy d’un fournisseur d’outils prenant en charge LTI 2.0. La seule information nécessaire pour initier le processus est une URL d’enregistrement donnée par le fournisseur. Les fonctionnalités et services offerts au fournisseur de l’outil sont choisies lors de la configuration d’un nouvel enregistrement.
 
 Les enregistrements répertoriés sur cette page sont classés en quatre catégories.
 

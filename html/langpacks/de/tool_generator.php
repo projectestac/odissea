@@ -54,7 +54,7 @@ $string['error_noforuminstances'] = 'Der ausgewählte Kurs enthält keine Forena
 $string['error_noforumreplies'] = 'Der ausgewählte Kurs enthält keine Forenantworten';
 $string['error_nonexistingcourse'] = 'Der ausgewählte Kurs existiert nicht';
 $string['error_nopageinstances'] = 'Der ausgewählte Kurs enthält keine Testseitenaktivitäten';
-$string['error_notdebugging'] = 'Auf diesem Server nicht verfügbar, da der Debug-Wert Entwickler nicht gesetzt wurde.';
+$string['error_notdebugging'] = 'Auf diesem Server nicht verfügbar, da der Debug-Wert DEVELOPER nicht gesetzt wurde.';
 $string['error_nouserspassword'] = 'Sie müssen $CFG->tool_generator_users_password in der Datei config.php setzen, um den Testplan zu erstellen.';
 $string['fullname'] = 'Testkurs: {$a->size}';
 $string['maketestcourse'] = 'Testkurs erstellen';
@@ -96,7 +96,7 @@ Sie müssen in der config.php ein Passwort für die Kursnutzer/innen festlegen (
 
 Es ist Teil von tool_generator, so dass es gut mit den Kursen funktioniert, die von den Kursen und den Site-Generatoren generiert werden; es kann aber auch mit jedem Kurs verwendet werden, der mindestens enthält:
 
-* Genügend eingeschriebene Nutzer/innen (abhängig von der von Ihnen gewählten Testplangröße) mit dem auf „moodle“ zurückgesetzten Passwort
+* Genügend eingeschriebene Nutzer/innen (abhängig von der von Ihnen gewählten Testplangröße) mit dem zurückgesetzten Passwort "moodle"
 * Eine Textseiten-Instanz
 * Eine Foren-Instanz mit mindestens einer Diskussion und einer Antwort
 

@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Afegeix';
 $string['edit'] = 'edita';
 $string['export'] = 'Exporta';
+$string['group'] = 'Grup';
+$string['import'] = 'Importa';
+$string['save'] = 'Desa';
 $string['view'] = 'Visualitza';

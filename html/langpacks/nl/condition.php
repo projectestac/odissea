@@ -29,11 +29,11 @@ $string['addcompletions'] = 'Voeg {no} activiteitsvoorwaarden toe aan formulier'
 $string['addgrades'] = 'Voeg {no} cijfervoorwaarden toe aan formulier';
 $string['adduserfields'] = 'Voeg {no} gebruikersveldvoorwaarden aan het formulier';
 $string['availabilityconditions'] = 'Beperk toegang';
-$string['availablefrom'] = 'Toegankelijk vanaf';
+$string['availablefrom'] = 'Toegang toestaan vanaf';
 $string['availablefrom_help'] = 'Toegang van/tot datums bepalen wanneer leerlingen toegang tot de activiteit hebben via een link op de cursuspagina.
 
 Het verschil tussen toegang van/tot datums en de beschikbaarheidsinstelling voor de activiteit is dat buiten de van/tot datums toegang volledig verhinderd wordt, terwijl tijdens de beschikbaarheid de leerlingen de activiteitsbeschrijving kunnen zien.';
-$string['availableuntil'] = 'Toegankelijk tot';
+$string['availableuntil'] = 'Toegang toestaan tot';
 $string['badavailabledates'] = 'Ongeldige data. Als je beide data instelt, dan moet de \'Toegankelijk vanaf\'-datum voor de \'Toegankelijk tot\'-datum zijn.';
 $string['badgradelimits'] = 'Als je zowel een boven als een onderlimiet instelt, dan moet de bovenlimiet groter zijn dan de onderlimiet.';
 $string['completion_complete'] = 'moet als voltooid gemarkeerd worden';

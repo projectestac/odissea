@@ -187,7 +187,7 @@ $string['event_attempt_started_explanation'] = 'Un utilisateur vient juste de co
 $string['event_attempt_submitted'] = 'Tentative HotPot soumise';
 $string['event_attempt_submitted_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a soumis une tentative dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_attempt_submitted_explanation'] = 'Un utilisateur vient juste de soumettre une tentative dans une activité HotPot';
-$string['event_base'] = 'Evénement HotPot détecté';
+$string['event_base'] = 'Événement HotPot détecté';
 $string['event_base_description'] = 'L’utilisateur ayant l’identifiant « {$a->userid} » a initié un événement dans l’activité « hotpot » avec le module de cours d’identifiant « {$a->cmid} »';
 $string['event_base_explanation'] = 'Un événement a été détecté par le module HotPot';
 $string['event_report_viewed'] = 'Rapport HotPot consulté';
@@ -408,36 +408,36 @@ $string['outputformat_help'] = 'Le format de sortie précise de quelle manière 
 Les formats de sortie disponibles dépendent du type de fichier source. Certains fichiers source n’ont qu’un format de sortie, alors que d’autres en proposent plusieurs.
 
 Le paramètre « meilleur » affichera le contenu en optimisant le format de sortie en fonction du navigateur du participant.';
-$string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: Standard';
-$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier DropDown';
+$string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html : Standard';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html : Rottmeier DropDown';
 $string['outputformat_hp_6_jcloze_html_findit_a'] = 'Html à partir d’une source HP6 : Rottmeier FindIt (a)';
 $string['outputformat_hp_6_jcloze_html_findit_b'] = 'Html à partir d’une source HP6 : Rottmeier FindIt (b)';
-$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Rottmeier JGloss';
-$string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d’une source HP6 xml: ANCT-Scan';
-$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d’une source HP6 xml: Rottmeier DropDown';
-$string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d’une source HP6 xml: Rottmeier FindIt (a)';
-$string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze à partir d’une source HP6 xml: Rottmeier FindIt (b)';
-$string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze à partir d’une source HP6 xml: Rottmeier JGloss';
-$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze à partir d’une source HP6 xml: Standard';
-$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze à partir d’une source HP6 xml: Avancé';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html : Rottmeier JGloss';
+$string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d’une source HP6 xml : ANCT-Scan';
+$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d’une source HP6 xml : Rottmeier DropDown';
+$string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d’une source HP6 xml : Rottmeier FindIt (a)';
+$string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze à partir d’une source HP6 xml : Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze à partir d’une source HP6 xml : Rottmeier JGloss';
+$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze à partir d’une source HP6 xml : Standard';
+$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze à partir d’une source HP6 xml : Avancé';
 $string['outputformat_hp_6_jcross_html'] = 'JCross HP6 html';
 $string['outputformat_hp_6_jcross_xml_v6'] = 'JCross à partir d’une source HP6 xml';
 $string['outputformat_hp_6_jmatch_html'] = 'JMatch à partir d’une source html';
 $string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch Sort à partir d’une source html';
-$string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch à partir d’une source HP6 xml: Flashcard';
-$string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMatch à partir d’une source HP6 xml: Rottmeier JMemori';
+$string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch à partir d’une source HP6 xml : Flashcard';
+$string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMatch à partir d’une source HP6 xml : Rottmeier JMemori';
 $string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch Sort à partir d’une source xml';
-$string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch à partir d’une source HP6 xml: Standard';
-$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch à partir d’une source HP6 xml: Drag and Drop';
+$string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch à partir d’une source HP6 xml : Standard';
+$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch à partir d’une source HP6 xml : Drag and Drop';
 $string['outputformat_hp_6_jmix_html'] = 'JMix à partir d’une source HP6 html';
-$string['outputformat_hp_6_jmix_xml_v6'] = 'JMix à partir d’une source HP6 xml: Standard';
-$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix à partir d’une source HP6 xml: Drag and Drop';
+$string['outputformat_hp_6_jmix_xml_v6'] = 'JMix à partir d’une source HP6 xml : Standard';
+$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix à partir d’une source HP6 xml : Drag and Drop';
 $string['outputformat_hp_6_jmix_xml_v6_plus_deluxe'] = 'JMix à partir d’une source HP6 xml: avec préfixe et suffixe';
-$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix à partir d’une source HP6 xml: Drag and Drop with key press';
+$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix à partir d’une source HP6 xml : Drag and Drop with key press';
 $string['outputformat_hp_6_jquiz_html'] = 'JQuiz HP6 html';
-$string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz à partir d’une source HP6 xml: Standard';
-$string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz à partir d’une source HP6 xml: Auto-advance';
-$string['outputformat_hp_6_jquiz_xml_v6_exam'] = 'JQuiz à partir d’une source HP6 xml: Exam';
+$string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz à partir d’une source HP6 xml : Standard';
+$string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz à partir d’une source HP6 xml : Auto-advance';
+$string['outputformat_hp_6_jquiz_xml_v6_exam'] = 'JQuiz à partir d’une source HP6 xml : Exam';
 $string['outputformat_hp_6_rhubarb_html'] = 'WebRhubarb (v6) à partir d’une source html';
 $string['outputformat_hp_6_rhubarb_xml'] = 'WebRhubarb (v6) à partir d’une source xml';
 $string['outputformat_hp_6_sequitur_html'] = 'WebSequitur (v6) à partir d’une source html';
@@ -481,7 +481,7 @@ L’emplacement du fichier source doit être indiqué comme un dossier ou un che
 
 Pour les documents Qedoc, le fichier source doit être indiqué comme une URL d’un module Qedoc déposé sur le serveur Qedoc. Par exemple : http://www.qedoc.net/library/ABCDE_123.zip
 
-Pour plus d’informations sur le dépôt de source Qedoc, visitez le site [Qedoc documentation: Uploading_modules](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
+Pour plus d’informations sur le dépôt de source Qedoc, visitez le site [Qedoc documentation : Uploading_modules](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
 $string['sourcefilenotfound'] = 'Fichier source non trouvé (ou vide) : {$a}';
 $string['status'] = 'Statut';
 $string['stopbutton'] = 'Afficher le bouton stop';

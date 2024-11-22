@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['errorcouldnotmapcompetenciesinframework'] = 'Non foi posíbel asignar ningunha competencia neste marco.';
 $string['missingmappings'] = 'Faltan asignacións';
+$string['warnings'] = 'Advertencias';

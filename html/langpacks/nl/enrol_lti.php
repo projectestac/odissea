@@ -35,6 +35,9 @@ $string['addtogradebook'] = 'Voeg toe aan cijferlijst';
 $string['allowframeembedding'] = 'Opmerking: je kunt het best de site-beheerinstelling \'Inbedden in frame\' op toestaan zetten, zodat tools getoond worden in een frame in plaats van in een nieuw venster.';
 $string['authltimustbeenabled'] = 'Opmerking: deze plugin vereist dat de LTI authenticatieplugin ook ingeschakeld is.';
 $string['cartridgeurl'] = 'Cartridge URL';
+$string['cookiesarerequired'] = 'Jouw browser blokkeert cookies';
+$string['cookiesarerequiredinfo'] = 'Deze tool kan niet gestart worden omdat je browser cookies van derden blokkeert.<br><br>
+Om deze tool te kunnen gebruiken, moet je proberen de instellingen van je browser te wijzigen of een ander browser te gebruiken.';
 $string['copiedtoclipboard'] = '{$a} gekopieerd naar klembord';
 $string['copytoclipboard'] = 'Kopieer naar klembord';
 $string['couldnotestablishproxy'] = 'Kon geen proxy met verbruiker opzetten';

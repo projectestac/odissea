@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['save'] = 'Desa';
 $string['site'] = 'Lloc';

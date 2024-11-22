@@ -58,6 +58,7 @@ $string['cutpastemozilla'] = '很抱歉，您现在不能使用您所习惯的�
 $string['delete'] = '删除';
 $string['editors'] = '文本编辑器';
 $string['editorsettings'] = '管理编辑器';
+$string['editorxformat'] = '{$a} 格式';
 $string['enterurlfirst'] = '您必须首先录入一个URL';
 $string['filebrowser'] = '文件浏览';
 $string['findwhat'] = '查找';

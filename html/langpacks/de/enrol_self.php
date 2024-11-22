@@ -55,8 +55,8 @@ $string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, in der die 
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
-$string['expiredaction_help'] = 'Legen Sie fest, was nach dem Ablauf der Einschreibung in einem Kurs passiert. Denken Sie daran, dass bei der Austragung von Nutzer/innen einige Daten nicht mehr verfügbar sind.';
-$string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
+$string['expiredaction_help'] = 'Legen Sie fest, was nach dem Ablauf der Einschreibung in einem Kurs passiert. Denken Sie daran, dass beim Abmelden von Nutzer/innen einige Daten nicht mehr verfügbar sind.';
+$string['expirymessageenrolledbody'] = 'Hallo {$a->user},
 
 Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer läuft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
@@ -64,21 +64,19 @@ Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.
 
 Ihr E-Learning-Team';
 $string['expirymessageenrolledsubject'] = 'In Kürze endet Ihr Kurs';
-$string['expirymessageenrollerbody'] = 'Guten Tag,
-
-im Kurs \'{$a->course}\' läuft für folgende Nutzer/innen innerhalb der nächsten  {$a->threshold} die Einschreibung ab:
+$string['expirymessageenrollerbody'] = 'Im Kurs \'{$a->course}\' läuft für folgende Nutzer/innen die Einschreibung innerhalb der nächsten  {$a->threshold} ab:
 
 {$a->users}
 
 Sie können auf der folgenden Seite die Teilnahmedauer indivduell verlängern oder entfristen: {$a->extendurl}
 
 Ihr E-Learning-Team';
-$string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';
+$string['expirymessageenrollersubject'] = 'Ihr Kurs endet in Kürze';
 $string['expirynotifyall'] = 'Trainer/in und eingeschriebene Nutzer/innen';
 $string['expirynotifyenroller'] = 'Nur Trainer/in';
 $string['groupkey'] = 'Einschreibeschlüssel für Gruppen';
 $string['groupkey_desc'] = 'Standardmäßig einen Einschreibeschlüssel für Gruppen verwenden';
-$string['groupkey_help'] = 'Ergänzend zum Einschreibeschlüssel in den Kurs lassen sich zusätzliche Einschreibeschlüssel für Gruppen festlegen. Mit einem Einschreibeschlüssel für Gruppen können Nutzer/innen bei ihrer Kurseinschreibung automatisch einer Gruppe zugewiesen werden.
+$string['groupkey_help'] = 'Zusätzlich zum Einschreibeschlüssel in den Kurs lassen sich Einschreibeschlüssel für Gruppen festlegen. Mit einem Einschreibeschlüssel für Gruppen können Nutzer/innen bei ihrer Kurseinschreibung automatisch einer Gruppe zugewiesen werden.
 
 Hinweis: Um Einschreibeschlüssel für Gruppen verwenden zu können, muss zusätzlich auch ein Einschreibeschlüssel für den Kurs vergeben sein, den aber niemand kennen muss.';
 $string['keyholder'] = 'Sie sollten den Einschreibeschlüssel erhalten haben von:';
@@ -86,22 +84,21 @@ $string['longtimenosee'] = 'Inaktive abmelden
 ';
 $string['longtimenosee_help'] = 'Wenn Personen lange Zeit nicht mehr auf den Kurs zugegriffen haben, werden sie automatisch abgemeldet. Dieser Parameter legt die maximale Inaktivitätsdauer fest.';
 $string['maxenrolled'] = 'Maximale Einschreibungen';
-$string['maxenrolled_help'] = 'Diese Option legt die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung fest (0 = unbeschränkt).';
-$string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.
-';
+$string['maxenrolled_help'] = 'Diese Option legt die maximale Anzahl von Nutzer/innen mit Selbsteinschreibung fest (0 = unbeschränkt).';
+$string['maxenrolledreached'] = 'Die maximale Anzahl von Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.';
 $string['messageprovider:expiry_notification'] = 'Systemnachricht zum Ablauf von Selbsteinschreibungen';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
 $string['newenrols_desc'] = 'Nutzer/innen dürfen sich selbst einschreiben';
 $string['newenrols_help'] = 'Diese Option legt fest, ob Nutzer/innen sich selber in diesen Kurs einschreiben dürfen.';
 $string['nopassword'] = 'Kein Einschreibeschlüssel notwendig';
 $string['password'] = 'Einschreibeschlüssel';
-$string['password_help'] = 'Ein Einschreibeschlüssel erlaubt den Kurszugriff nur für diejenigen Nutzer/innen, die den Einschreibeschlüssel kennen.
+$string['password_help'] = 'Ein Einschreibeschlüssel erlaubt den Kurszugriff nur für Nutzer/innen, die den Einschreibeschlüssel kennen.
 
 Wenn das Feld leer bleibt, können sich alle Nutzer/innen im Kurs einschreiben.
 
-Wenn ein Einschreibeschlüssel angegeben ist, müssen alle Nutzer/innen notwendigerweise bei der Kurseinschreibung den Einschreibeschlüssel eingeben. Beachten Sie, dass Nutzer/innen den Einschreibeschlüssel nur einmal bei der Kurseinschreibung eingeben müssen und danach dauerhaft eingeschriebene Kursteilnehmer/innen sind.';
-$string['passwordinvalid'] = 'Falscher Einschreibeschlüssel';
-$string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel. Das erste Zeichen ist \'{$a}\'.';
+Wenn ein Einschreibeschlüssel angegeben ist, müssen alle Nutzer/innen bei der Kurseinschreibung den Einschreibeschlüssel eingeben. Beachten Sie, dass Nutzer/innen den Einschreibeschlüssel nur einmal bei der Kurseinschreibung eingeben müssen und danach dauerhaft eingeschriebene Kursteilnehmer/innen sind.';
+$string['passwordinvalid'] = 'Falscher Einschreibeschlüssel. Bitte versuchen Sie es noch einmal.';
+$string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel. Bitte versuchen Sie es noch einmal.<br /> Hinweis: Der Schlüssel beginnt mit \'{$a}\'.';
 $string['passwordmatchesgroupkey'] = 'Der Einschreibeschlüssel wird bereits als Gruppeneinschreibeschlüssel verwendet.';
 $string['pluginname'] = 'Selbsteinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Selbsteinschreibung\' erlaubt es Nutzer/innen, selber einen Kurs zur Teilnahme auszuwählen. Kurse können mit einem Einschreibeschlüssel gesichert oder ohne Einschreibeschlüssel offen sein. Intern nutzt die Selbsteinschreibung das Plugin \'Manuelle Einschreibung\', welches deswegen im Kurs ebenfalls aktiviert sein muss.';
@@ -116,7 +113,7 @@ $string['self:manage'] = 'Eingeschriebene Nutzer/innen verwalten';
 $string['self:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['self:unenrolself'] = 'Selbst aus dem Kurs abmelden';
 $string['sendcoursewelcomemessage'] = 'Begrüßungstext versenden';
-$string['sendcoursewelcomemessage_help'] = 'Wenn ein Nutzer/innen sich in den Kurs einschreiben, kann ihnen eine Begrüßungsnachricht gesendet werden. Wenn diese vom Kurskontakt geschickt wird (voreingestellt ist Trainer/in) und mehrere Personen diese Rolle haben, wird die E-Mail von der Person versendet, der diese Rolle zuerst zugewiesen wurde.';
+$string['sendcoursewelcomemessage_help'] = 'Wenn Nutzer/innen sich in den Kurs einschreiben, kann ihnen eine Begrüßungsnachricht gesendet werden. Wenn diese vom Kurskontakt geschickt wird (voreingestellt ist Trainer/in) und mehrere Personen diese Rolle haben, wird die E-Mail von der Person versendet, der diese Rolle zuerst zugewiesen wurde.';
 $string['sendexpirynotificationstask'] = 'Task zur Erinnerung an den Ablauf von Selbsteinschreibungen';
 $string['showhint'] = 'Hinweis zeigen';
 $string['showhint_desc'] = 'Erstes Zeichen des Einschreibeschlüssels zeigen';

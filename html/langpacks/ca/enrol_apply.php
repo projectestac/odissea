@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['defaultperiod'] = 'Durada de la inscripció per defecte';
 $string['editdescription'] = 'Descripció de l\'àrea de text';
+$string['group'] = 'Tasques en grup';
 $string['notify_heading'] = 'Paràmetres de notificació';

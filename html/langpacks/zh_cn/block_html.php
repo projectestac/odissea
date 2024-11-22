@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = '允许额外的CSS类别';
-$string['configallowadditionalcssclasses'] = '在HTML版块添加一个允许设定额外CSS类别的配置项';
+$string['configallowadditionalcssclasses'] = '在HTML版块添加一个允许设定额外CSS类的配置项';
 $string['configclasses'] = '额外的CSS类别';
-$string['configclasses_help'] = '这个配置以主题来区分不同的HTML版块，这里输入的任何CSS类（以空格分隔），将附加到版块默认类别中。';
+$string['configclasses_help'] = '此配置的目的是通过帮助区分文本块来帮助主题设置。此处输入的任何 CSS 类（空格分隔）都将被附加到块的默认类中';
 $string['configcontent'] = '内容';
-$string['configtitle'] = '版块标题';
-$string['html:addinstance'] = '添加一个HTML版块';
-$string['html:myaddinstance'] = '在个人主页新增一个HTML版块';
-$string['newhtmlblock'] = '（新HTML版块）';
-$string['pluginname'] = 'HTML';
+$string['configtitle'] = '文本版块标题';
+$string['html:addinstance'] = '添加一个文本版块';
+$string['html:myaddinstance'] = '在个人主页新增一个文本版块';
+$string['newhtmlblock'] = '（新文本版块）';
+$string['pluginname'] = 'Text';
 $string['privacy:metadata:block'] = '“文本”板块将其所有数据存储在板块子系统中。';
 $string['search:content'] = '文本板块内容';

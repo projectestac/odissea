@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['adduserkey'] = 'Gehitu erabiltzaile-gakoa';
 $string['createnewkey'] = 'Sortu erabiltzaile-gako berria';
 $string['createuserkey'] = 'Sortu erabiltzaile-gakoa';
-$string['deletekeyconfirm'] = 'Benetan ezabatu nahi al duzu erabiltzaile-gako hau?';
+$string['deletekeyconfirm'] = 'Ziur zaude erabiltzaile-gako hau ezabatu nahi duzula?';
 $string['deleteuserkey'] = 'Ezabatu erabiltzaile-gakoa';
 $string['edituserkey'] = 'Editatu erabiltzaile-gakoa';
 $string['keyiprestriction'] = 'Gakoetarako IP helbideen murrizketa';

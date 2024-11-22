@@ -47,6 +47,7 @@ class qtype_wq_question extends question_graded_automatically {
     public function __construct(question_definition $base = null) {
         $this->base = $base;
     }
+
     /**
      * Initializes Wiris Quizzes question calling the service in order to get the value
      * of the variables to render the question.
@@ -171,6 +172,7 @@ class qtype_wq_question extends question_graded_automatically {
             $format = FORMAT_HTML;
         }
         $text = $this->expand_variables($text);
+
         return $this->base->format_text($text, $format, $qa, $component, $filearea, $itemid, $clean);
     }
 
@@ -342,16 +344,21 @@ class qtype_wq_question extends question_graded_automatically {
         $builder = com_wiris_quizzes_api_Quizzes::getInstance();
         $metaproperty = ((!empty($COURSE) ? $COURSE->id : '') . '/' . (!empty($question) ? $question->id : ''));
 
-        // Add meta properties
+        // Add meta properties.
         $request->addMetaProperty('questionref', $metaproperty);
         $request->addMetaProperty('userref', (!empty($USER) ? $USER->id : ''));
         $request->addMetaProperty('qtype', $this->qtype->name());
-        $request->addMetaProperty('wqversion', $builder->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$VERSION));
+        $request->addMetaProperty(
+            'wqversion',
+            // @codingStandardsIgnoreLine
+            $builder->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$VERSION)
+        );
         $request->addMetaProperty('moodleversion', explode(' ', $CFG->release)[0]);
 
         $service = $builder->getQuizzesService();
 
         $isdebugmodeenabled = get_config('qtype_wq', 'debug_mode_enabled') == '1';
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
 
         if ($isdebugmodeenabled) {
             // @codingStandardsIgnoreLine
@@ -377,6 +384,11 @@ class qtype_wq_question extends question_graded_automatically {
                 print_object($e);
             }
 
+            if ($islogmodeenabled) {
+                // @codingStandardsIgnoreLine
+                error_log('WIRISQUIZZES SERVER ERROR --- REQUEST: --- ' . $request->serialize());
+            }
+
             throw new moodle_exception('wirisquestionincorrect', 'qtype_wq', $link, $a, '');
         }
 
@@ -385,5 +397,17 @@ class qtype_wq_question extends question_graded_automatically {
             print_object($response->serialize());
         }
         return $response;
+    }
+
+
+    public function update_attempt_state_data_for_new_version(
+        question_attempt_step $oldstep,
+        question_definition $otherversion
+    ) {
+        return $this->base->update_attempt_state_data_for_new_version($oldstep, $otherversion->base);
+    }
+
+    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string {
+        return $this->base->validate_can_regrade_with_other_version($otherversion->base);
     }
 }

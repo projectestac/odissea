@@ -850,16 +850,16 @@ $string['institutionname'] = 'Organisatienaam';
 $string['institutions'] = 'Organisaties';
 $string['isempty'] = 'veld is leeg';
 $string['isnotempty'] = 'veld is niet leeg';
-$string['lblacceptingfrom'] = 'Naam label "Aanvaarden van"';
+$string['lblacceptingfrom'] = 'Label: aanvaarden van';
 $string['lblbooking'] = 'Naam label "Boeking"';
 $string['lblbooktootherbooking'] = 'Naam op knop "Schrijf gebruikers in op andere boekingsoptie"';
-$string['lblinstitution'] = 'Naam label "Organisatie"';
-$string['lbllocation'] = 'Naam label "Locatie"';
-$string['lblname'] = 'Naam label "Naam"';
-$string['lblnumofusers'] = 'Naam label "Aantal gebruikers"';
-$string['lblsputtname'] = 'Naam label "Stuur een enquête-url naar leraren"';
-$string['lblsurname'] = 'Naam label "Achternaam"';
-$string['lblteachname'] = 'Naam label "Leraren"';
+$string['lblinstitution'] = 'Label: organisatie';
+$string['lbllocation'] = 'Label: locatie';
+$string['lblname'] = 'Label: naam';
+$string['lblnumofusers'] = 'Label: aantal gebruikers';
+$string['lblsputtname'] = 'Label: Stuur een enquête-url naar leraren';
+$string['lblsurname'] = 'Label: achternaam';
+$string['lblteachname'] = 'Label: Leraren';
 $string['leftandrightdate'] = '{$a->leftdate} tot {$a->righttdate}';
 $string['license_invalid'] = 'Ongeldige licentie sleutel';
 $string['licensekey'] = 'PRO licentie sleutel';
@@ -872,7 +872,7 @@ $string['location'] = 'Locatie';
 $string['lowerthan'] = 'is lager dan (nummer)';
 $string['mailconfirmationsent'] = 'Je ontvangt zo snel mogelijk een bevestigingsmail .';
 $string['managebooking'] = 'Beheer';
-$string['manageoptiontemplates'] = 'Kan sjablonen voor boekingsopties beheren';
+$string['manageoptiontemplates'] = 'Beheren van sjablonen voor boekingsopties';
 $string['manageresponses'] = 'Beheer reacties';
 $string['maxoverbooking'] = 'Maximaal aantal plaatsen op de wachtlijst';
 $string['maxparticipantsnumber'] = 'Maximaal aantal gebruikers';
@@ -892,8 +892,8 @@ $string['modulename'] = 'Boeking';
 $string['modulenameplural'] = 'Boekingen';
 $string['monday'] = 'Maandag';
 $string['moveoptionto'] = 'Verschuif een boekingsoptie naar een andere boekingsactiviteit';
-$string['multiicalfiles'] = 'Voeg een ical bestand per datum toe voor MS outlook 2010 gebruikers.';
-$string['multiicalfilesdesc'] = 'Alleen MS Outlook 2010 ondersteund geen multi data in 1 ical bestand. Eerdere -en latere versies ondersteunen (Ex. outlook 365) deze functie wel. Wanneer je berichten stuurt naar MS Outlook gebruikers, activeer deze functie dan.';
+$string['multiicalfiles'] = 'Voeg een ical bestand per datum toe voor MS Outlook 2010-compatibiliteit.';
+$string['multiicalfilesdesc'] = 'Alleen MS Outlook 2010 ondersteunt geen meerdere data in 1 ICal-bestand. Eerdere en latere versies ondersteunen (Ex. outlook 365) deze functie wel. Wanneer je berichten stuurt naar MS Outlook gebruikers, activeer deze functie dan om meerdere ICal-bestanden te genereren (één per datum/gebeurtenis).';
 $string['multiselect'] = 'Meerdere selecties';
 $string['mustchooseone'] = 'Je moet een optie kiezen voordat je kunt bewaren. Er is niets bewaard.';
 $string['mustfilloutuserinfobeforebooking'] = 'Vul alsjeblieft de persoonlijke boekingsinformatie in, voordat je verder gaat met het boekingsformulier.';
@@ -919,12 +919,12 @@ $string['nosubscribers'] = 'Er zijn geen leraren toegevoegd!';
 $string['notallbooked'] = 'De volgende gebruikers konden niet overgeboekt worden doordat het maximaal aantal geboekte gebruikers is bereikt of beperkt aantal beschikbare plaatsen waren op de boekingsoptie:{$a}';
 $string['notbooked'] = 'Nog niet geboekt.';
 $string['notconectedbooking'] = 'Niet gekoppeld';
-$string['noteacherfound'] = 'Geen leraren gevonden in de lijn {$a}:';
+$string['noteacherfound'] = 'De gebruiker op lijn {$a} bestaat niet op het platform.';
 $string['noteacherset'] = 'Geen leraar';
 $string['notemplate'] = 'Gebruik niet als sjabloon.';
 $string['notes'] = 'Boekingsnotities';
 $string['notificationlist'] = 'Notificatielijst';
-$string['notificationtext'] = 'Notificatie tekst dat getoond wordt bij activiteitsvoltooiing.';
+$string['notificationtext'] = 'Notificatiebericht';
 $string['notificationtext_help'] = 'Laat dit leeg om de standaard tekst van de site te gebruiken. Je kunt volgende plaatshouders gebruiken in de tekst:
 <ul>
 <li>{bookingdetails} - Gedetailleerde samenvatting van de boeking (inclusief sessies en link naar boekingsoptie)</li>
@@ -957,7 +957,7 @@ $string['notificationtext_help'] = 'Laat dit leeg om de standaard tekst van de s
 <li>{usercalendarurl} - Link om te abonneren op de gebruikerskalender (persoonlijke gebeurtenissen)</li>
 <li>{coursecalendarurl} - Link om te abonneren op de cursuskalender (cursusgebeurtenissen)</li>
 </ul>';
-$string['notifyemail'] = 'Notificatie voor start';
+$string['notifyemail'] = 'Deelnemersnotificatie voor start';
 $string['notifyemail_help'] = 'Laat dit leeg om de standaard tekst van de site te gebruiken. Je kunt volgende plaatshouders gebruiken in de tekst:
 <ul>
 <li>{bookingdetails} - Gedetailleerde samenvatting van de boeking (inclusief sessies en link naar boekingsoptie)</li>
@@ -1179,8 +1179,8 @@ $string['pollurlteacherstext_help'] = 'Laat dit leeg om de standaard tekst van d
 </ul>';
 $string['pollurlteacherstextmessage'] = 'Neem de enquête alsjeblieft
 
-Enquête url {pollurlteachers}';
-$string['pollurlteacherstextsubject'] = 'Neem de enquête alsjeblieft';
+Enquête url: <a href="{pollurlteachers}" target="_blank">{pollurlteachers}</a>';
+$string['pollurlteacherstextsubject'] = 'Vul de enquête in alsjeblieft';
 $string['pollurltext'] = 'Bericht voor om de enquête url te versturen naar geboekte gebruikers.';
 $string['pollurltext_help'] = 'Laat dit leeg om de standaard tekst van de site te gebruiken. Je kunt volgende plaatshouders gebruiken in de tekst:
 <ul>
@@ -1216,7 +1216,7 @@ $string['pollurltext_help'] = 'Laat dit leeg om de standaard tekst van de site t
 </ul>';
 $string['pollurltextmessage'] = 'Vul alsjeblieft de enquête in
 
-Enquête-url {pollurl}';
+Enquête-url: <a href="{pollurl}" target="_blank">{pollurl}</a>';
 $string['pollurltextsubject'] = 'Vul alsjeblieft de enquête in';
 $string['potentialsubscribers'] = 'Mogelijke inschrijvers';
 $string['presence'] = 'Presentie';

@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fontselectlist'] = 'Eskuragarri dauden letra-moten zerrenda';
 $string['pluginname'] = 'Letra-mota';
+$string['privacy:metadata'] = 'Attoko letra-mota pluginak ez du datu pertsonalik biltzen.';
 $string['settings'] = 'Letra-moten ezarpenak';

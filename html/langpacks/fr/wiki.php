@@ -59,7 +59,7 @@ $string['creole'] = 'Creole';
 $string['defaultformat'] = 'Format par défaut';
 $string['defaultformat_help'] = 'Ce réglage détermine le format par défaut utilisé pour l’édition des pages wiki.
 
-* HTML : l’éditeur WYSIWYG est disponible
+* HTML : l’éditeur HTML est disponible
 * Creole : un format utilisé fréquemment pour les wikis, avec une barre d’édition
 * Nwiki : le format utilisé dans le module Nwiki';
 $string['deleteallpages'] = 'Supprimer toutes les pages wiki';
@@ -99,7 +99,7 @@ $string['firstpagetitle_help'] = 'Titre de la première page du wiki. Une fois l
 $string['forceformat'] = 'Imposer le format';
 $string['forceformat_help'] = 'Si la case est cochée (format imposé), il n’est pas possible de choisir le format pour modifier une page du wiki.';
 $string['format'] = 'Format';
-$string['format_help'] = '* WYSIWYG : l’éditeur WYSIWYG est disponible
+$string['format_help'] = '* HTML : l’éditeur WYSIWYG est disponible
 * Creole : un langage de formatage wiki répandu pour lequel une petite barre d’édition est disponible
 * Nwiki : une syntaxe du type Mediawiki, utilisée dans le module additionnel Nwiki';
 $string['formatcreole'] = 'Format Creole';
@@ -107,8 +107,8 @@ $string['formatcreole_help'] = 'Le format Creole est un langage de formatage wik
 
 Pour créer une nouvelle page, tapez le nom de la future nouvelle page entre des doubles crochets, par exemple [[Nouvelle page]].';
 $string['formatcreole_link'] = 'mod/wiki/creole';
-$string['formathtml'] = 'Format WYSIWYG';
-$string['formathtml_help'] = 'L’éditeur WYSIWYG peut être utilisé pour formater le contenu.
+$string['formathtml'] = 'Format HTML';
+$string['formathtml_help'] = 'L’éditeur HTML peut être utilisé pour formater le contenu.
 
 Pour créer une nouvelle page, tapez le nom de la future nouvelle page entre des doubles crochets, par exemple [[Nouvelle page]].';
 $string['formatnwiki'] = 'Format NWiki';

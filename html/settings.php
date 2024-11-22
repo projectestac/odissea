@@ -150,6 +150,13 @@ badges,badges|/badges/mybadges.php
 calendar,core_calendar|/calendar/view.php?view=month';
 
 $CFG->forced_plugin_settings = [
+    'block_configurable_reports' => [
+        'sqlsecurity' => true,
+        'dbhost' => '',
+        'dbname' => '',
+        'dbuser' => '',
+        'dbpass' => '',
+    ],
     'logstore_standard' => [
         'loglifetime' => 365 * 2,
     ],
@@ -183,3 +190,31 @@ if ($CFG->iseoi) {
         ['start' => '15:00', 'end' => '16:59', 'days' => '1|2|3|4|5',],
     ];
 }
+
+// Extensions added to allow the upload of these files in assignments.
+$CFG->customfiletypes = [
+    (object)[
+        'extension' => 'py',
+        'type' => 'text/x-python',
+        'icon' => 'archive',
+        'customdescription' => 'Python file',
+    ],
+    (object)[
+        'extension' => 'pyc',
+        'type' => 'application/x-python-code',
+        'icon' => 'archive',
+        'customdescription' => 'Python file code',
+    ],
+    (object)[
+        'extension' => 'pyo',
+        'type' => 'application/x-python-code',
+        'icon' => 'archive',
+        'customdescription' => 'Python file code',
+    ],
+    (object)[
+        'extension' => 'ipynb',
+        'type' => 'application/vnd.jupyter',
+        'icon' => 'archive',
+        'customdescription' => 'Jupyter Notebook',
+    ],
+];

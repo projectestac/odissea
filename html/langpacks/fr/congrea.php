@@ -119,7 +119,7 @@ $string['graphic:view'] = 'Voir le graphique des événements';
 $string['hourssetting'] = 'Vous avez saisi une date ou une heure non valable. Assurez-vous que la durée totale de la session ne dépasse pas 10 heures.';
 $string['httpserror'] = 'Attention !  Le protocole HTTPS (certificat SSL) est nécessaire pour Congrea. Il est détecté qu’actuellement Moodle ne fonctionne pas sur https et donc certaines fonctionnalités de Congrea peuvent ne pas fonctionner.';
 $string['indvprogress'] = 'Tâche en cours';
-$string['invalidkey'] = '<div class="alert alert-warning alert-block fade in">Clef API ou clef secrète invalide ou manquante</div>';
+$string['invalidkey'] = '<div class="alert alert-warning alert-block fade in">Clef API ou clef secrète non valide ou manquante</div>';
 $string['keyis'] = 'Clef API :';
 $string['lastname'] = 'Surnom';
 $string['lastname_help'] = 'Entrez votre nom.';

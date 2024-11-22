@@ -108,6 +108,9 @@ $string['delivered'] = 'Furnizat';
 $string['destinationcontact'] = 'Contact destinație';
 $string['disabled'] = 'Dezactivat';
 $string['divertedto'] = 'Deviat spre {$a}';
+$string['email'] = 'Email';
+$string['enablewebhook'] = 'Activare webhook';
+$string['enablewebhook_desc'] = 'Activare webhook pentru Arlo.';
 $string['enrolment'] = 'Înscriere';
 $string['enrolmentfailure'] = 'Înscrierea nu a reușit';
 $string['enrolmentinstancedisabled'] = 'Sesiunea de înscriere a fost dezactivată.';
@@ -159,6 +162,7 @@ $string['extra'] = 'Extra';
 $string['fail'] = 'Nereușită';
 $string['failed'] = 'Nu a reușit';
 $string['failures'] = 'Nereușite';
+$string['format'] = 'FORMAT';
 $string['httpstatus:200'] = 'OK';
 $string['httpstatus:201'] = 'Super';
 $string['httpstatus:302'] = 'Găsit';
@@ -183,6 +187,7 @@ $string['invalidcredentials_fullmessagehtml'] = '<h3>Moodle nu se poate conecta 
 <p>Setările de conexiune Moodle Arlo: <a href="{$a->url}">{$a->url}</a></p>';
 $string['invalidcredentials_smallmessage'] = 'Moodle nu se poate conecta la Arlo API. Vă rugăm să verificați setările de conexiune: {$a->url}';
 $string['invalidcredentials_subject'] = 'Moodle nu se poate conecta la Arlo API';
+$string['json'] = 'JSON';
 $string['locktimeout'] = 'Operațiunea a expirat în timp ce așteptați blocarea';
 $string['longtime'] = 'Acest proces poate dura mult timp';
 $string['managearlo'] = 'Gestionează Arlo';
@@ -306,7 +311,9 @@ $string['pushonlineactivityresults_help'] = 'Transmite informațiile privind rez
 $string['queued'] = 'Ordonat';
 $string['reattemptenrolment'] = 'Încearcă din nou înscrierea';
 $string['reattemptenrolmentconfirm'] = 'Vă rugăm să vă asigurați că ați rezolvat toate problemele menționate în rapoartele de erori, înainte de a încerca din nou să efectuați înscrierea. În caz contrar, înscrierea va eșua din nou. Încercați din nou înscrierea?';
+$string['regcreated'] = 'Înregistrare creată';
 $string['registrationstatus'] = 'Status înregistrare';
+$string['regupdated'] = 'Înregistrare actualizată';
 $string['remove'] = 'Elimină';
 $string['removeallarloenrolmentsquestion'] = 'Sunteți sigur că doriți să eliminați toate înscrierile Arlo asociate cu {$a}?';
 $string['removetemplatedanger'] = '<div class="alert alert-danger" role="alert">
@@ -341,6 +348,7 @@ $string['synchroniseinstancefor'] = 'Sincronizați manual înscrierile și rezul
 $string['synchroniseoperationiscurrentlylocked'] = 'Operațiunea de sincronizare a înscrierilor Arlo este blocată în acest moment de un alt proces în desfășurare.';
 $string['synchronize'] = 'Sincronizează';
 $string['synchronizeinstance'] = 'Extrageți manual înregistrările noi și transmiteți înregistrările noi pentru o sesiune de înscriere';
+$string['technicalcontact'] = 'Email de contact';
 $string['template'] = 'Șablon';
 $string['timelogged'] = 'Timp înregistrat';
 $string['timemodified'] = 'Timp modificat';
@@ -368,6 +376,9 @@ $string['userassociationfailurereport'] = 'Raport privind asocierea utilizatorul
 $string['usercreation'] = 'Crearea utilizatorului';
 $string['userrecordinformation'] = 'Informații privind înregistrarea utilizatorului';
 $string['viewreport'] = 'Vizualizare raport';
+$string['webhookdisabled'] = '<div class="alert alert-danger" role="alert">Webhook este dezactivat.</div>';
+$string['webhookenabled'] = '<div class="alert alert-success" role="alert">Webhook este configurat și activ.</div>';
+$string['webhookinactive'] = '<div class="alert alert-warning" role="alert">Webhook neconfigurat sau inactiv.</div>';
 $string['welcometocourse'] = 'Bine ai venit la {$a}';
 $string['welcometocoursetext'] = 'Bine ai venit la {$a->coursename}!
 
@@ -382,3 +393,4 @@ Poți reseta parola, utilizând următoarea adresă URL:
 Poți accesa acest cursul pe următoarea adresă URL:
 
   {$a->courseurl}';
+$string['xml'] = 'XML';

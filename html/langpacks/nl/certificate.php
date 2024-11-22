@@ -96,7 +96,7 @@ Open in nieuw venster : Opent het certificaat in een nieuw browservenster.
 Met de link van het certificaat op de startpagina van de cursus, kunnen de leerlingen verschillende gegevens van het certificaat bekijken : de datum van uitgifte en het certificaat zelf.';
 $string['designoptions'] = 'Ontwerpopties';
 $string['download'] = 'Forceer download';
-$string['emailcertificate'] = 'E-mail (Kies ook Opslaan!)';
+$string['emailcertificate'] = 'E-mail';
 $string['emailothers'] = 'E-mail anderen';
 $string['emailothers_help'] = 'Geef hier de e-mailadressen in, gescheiden door komma\'s,  van diegenen die een melding via e-mail moeten krijgen wanneer leerlingen een certificaat krijgen.';
 $string['emailstudenttext'] = 'Bijgevoegd is uw certificaat voor {$a->course}.';
@@ -206,7 +206,7 @@ $string['seal'] = 'Zegel';
 $string['sigline'] = 'lijn';
 $string['signature'] = 'Handtekening';
 $string['statement'] = 'de onderstaande cursus heeft voltooid:';
-$string['summaryofattempts'] = 'Overzicht van eerder ontvangen certificaten.';
+$string['summaryofattempts'] = 'Overzicht van eerder ontvangen certificaten';
 $string['textoptions'] = 'Tekstopties';
 $string['title'] = 'Certificaat';
 $string['to'] = 'Toegekend aan';

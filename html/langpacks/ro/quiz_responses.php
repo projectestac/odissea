@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'Nu se pot încărca opțiunile de răspuns';
 $string['include'] = 'Include';
-$string['mustselectcols'] = 'Trebuie să includeți ceva';
+$string['mustselectcols'] = 'Trebuie să includeți ceva.';
 $string['pagesize'] = 'Dimensiunea paginii';
 $string['pluginname'] = 'Răspunsuri';
 $string['privacy:preference:qtext'] = 'Dacă se afișează coloanele cu textul întrebării';
@@ -36,14 +36,14 @@ $string['privacy:preference:right'] = 'Dacă se afișează coloanele cu răspuns
 $string['privacy:preference:which_tries'] = 'De la care încercări să arate răspunsurile.';
 $string['privacy:preference:which_tries:all'] = 'Toate încercările unei întrebări în timpul testului unui utilizator.';
 $string['privacy:preference:which_tries:first'] = 'Prima încercare la o întrebare în timpul testului unui utilizator.';
-$string['privacy:preference:which_tries:last'] = 'Ultima încercare la o întrebare în timpul tesului unui utilizator.';
-$string['questiontext'] = 'text întrebare';
+$string['privacy:preference:which_tries:last'] = 'Ultima încercare la o întrebare în timpul testului unui utilizator.';
+$string['questiontext'] = 'textul întrebării';
 $string['reportresponses'] = 'Răspunsuri';
 $string['response'] = 'răspuns';
 $string['responses'] = 'Răspunsuri';
 $string['responsesdownload'] = 'Descarcă răspunsuri';
 $string['responsesfilename'] = 'răspunsuri';
-$string['responsesoptions'] = 'Opţiuni pentru răspunsuri';
+$string['responsesoptions'] = 'Opţiuni de răspunsuri';
 $string['responsesreport'] = 'Raport răspunsuri';
 $string['responsestitle'] = 'Răspunsuri';
 $string['responsex'] = 'Răspuns {$a}';

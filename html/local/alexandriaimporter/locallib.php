@@ -25,31 +25,35 @@
 
 /**
  * Render search form getting search templates from Alexandria
- * @param  Array  $db            Database where to search
- * @param  int    $searchurl     URL where to search.
- * @param  int    [$selected]    If this is the current database selected to search in.
- * @return Array                 Fields submitted to search.
+ *
+ * @param array $db Database where to search
+ * @param int $searchurl URL where to search.
+ * @param bool $selected
+ * @throws coding_exception
+ * @throws dml_exception
+ * @return array Fields submitted to search.
  */
 function render_alexandria_searchform($db, $searchurl, $selected = false) {
-    global $OUTPUT, $CFG;
 
-    $searched = array();
+    $searched = [];
 
     echo '<div class="row-fluid clearfix">';
-    echo '<div class="span8"><h3 class="pull-left">'.core_text::strtotitle($db->searching).'</h3></div>';
-
+    echo '<div class="span8"><h3 class="pull-left">' . core_text::strtotitle($db->searching) . '</h3></div>';
     echo '<div class="span4 text-right">';
+
     if (get_config('local_alexandriaimporter', 'show_description')) {
-        echo '<p><a href="#dbmodal'.$db->id.'" role="button" data-toggle="modal">'.get_string('moreinfo').'</a></p>';
+        echo '<p><a href="#dbmodal' . $db->id . '" role="button" data-toggle="modal">' . get_string('moreinfo') . '</a></p>';
     }
 
-    echo '<p class="pull-right showhideadv simple"><a href="#" role="button">'.get_string('showadvanced', 'local_alexandriaimporter').'</a></p>';
-    echo '<p class="pull-right showhideadv advanced"><a href="#" role="button">'.get_string('hideadvanced', 'local_alexandriaimporter').'</a></p>';
+    echo '<p class="pull-right showhideadv simple"><a href="#" role="button">' . get_string('showadvanced', 'local_alexandriaimporter') . '</a></p>';
+    echo '<p class="pull-right showhideadv advanced"><a href="#" role="button">' . get_string('hideadvanced', 'local_alexandriaimporter') . '</a></p>';
     echo '</div></div>';
-    echo '<form class="form-search clearfix" method="POST" action="'.$searchurl->out().'">';
-    $patterns = array();
-    $replacement = array();
-    // Then we generate strings to replace for normal tags.
+    echo '<form class="form-search clearfix" method="POST" action="' . $searchurl->out() . '">';
+
+    $patterns = [];
+    $replacement = [];
+
+    // Then, generate strings to replace for normal tags.
     foreach ($db->fields as $field) {
         $fieldname = preg_quote($field->name, '/');
         $pattern = "/\[\[$fieldname\]\]/i";
@@ -57,8 +61,8 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
         // Only fields in template.
         if (preg_match($pattern, $db->searchtemplate) > 0) {
             $patterns[] = $pattern;
-            $fieldid = 'f_'.$field->id;
-            $value = $selected ? optional_param($fieldid, "", PARAM_TEXT) : "";
+            $fieldid = 'f_' . $field->id;
+            $value = $selected ? optional_param($fieldid, '', PARAM_TEXT) : '';
 
             if ($selected && !empty($value)) {
                 $searched[$field->id] = $value;
@@ -67,16 +71,16 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
             switch ($field->type) {
                 case 'text':
                 case 'textarea':
-                    $replacement[] = '<label class="accesshide" for="'.$fieldid.'">'. $field->name.'</label><input type="text" size="16" id="'.$fieldid.'" name="'.$fieldid.'" value="'.s($value).'" />';
+                    $replacement[] = '<label class="accesshide" for="' . $fieldid . '">' . $field->name . '</label><input type="text" size="16" id="' . $fieldid . '" name="' . $fieldid . '" value="' . s($value) . '" />';
                     break;
                 case 'multimenu':
                 case 'menu':
-                    $replace = '<label class="accesshide" for="'.$fieldid.'">' . $field->name . '</label><select id="'.$fieldid.'" name="'.$fieldid.'"><option value=""></option>';
-                    foreach (explode("\n",$field->param1) as $option) {
+                    $replace = '<label class="accesshide" for="' . $fieldid . '">' . $field->name . '</label><select id="' . $fieldid . '" name="' . $fieldid . '"><option value=""></option>';
+                    foreach (explode("\n", $field->param1) as $option) {
                         $option = trim($option);
                         $replace .= '<option value="' . s($option) . '"';
 
-                        if ($option == $value) {
+                        if ($option === $value) {
                             // Selected by user.
                             $replace .= ' selected = "selected"';
                         }
@@ -89,35 +93,35 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
         }
     }
 
-    $value = $selected && empty($searched) ? optional_param('f_search', "", PARAM_TEXT) : "";
+    $value = $selected && empty($searched) ? optional_param('f_search', '', PARAM_TEXT) : '';
 
     if ($selected && !empty($value)) {
         $searched['search'] = $value;
     }
 
     // Hidden fields.
-    echo '<input type="hidden" name="dataid" value="'.$db->id.'"/>';
+    echo '<input type="hidden" name="dataid" value="' . $db->id . '"/>';
     echo '<div class="simple control-group form-horizontal">
-            <label class="control-label" for="f_search"> '. get_string('search').'</label>
+            <label class="control-label" for="f_search"> ' . get_string('search') . '</label>
             <div class="controls">
                 <input type="text" size="30" id="f_search" name="f_search" value="' . s($value) . '" />
             </div>
         </div>
         <div class="simple control-group form-horizontal">
             <div class="controls">
-                <input type="submit" class="btn btn-primary" value="'.get_string('search').'"/>
+                <input type="submit" class="btn btn-primary" value="' . get_string('search') . '"/>
             </div>
         </div>';
 
     // Actual replacement of the tags.
     echo '<div class="advanced">';
     echo preg_replace($patterns, $replacement, $db->searchtemplate);
-    echo '<div class="text-center"><input class="btn btn-primary" type="submit" class="btn btn-active" value="'.get_string('search').'"/></div>';
+    echo '<div class="text-center"><input class="btn btn-primary" type="submit" class="btn btn-active" value="' . get_string('search') . '"/></div>';
     echo '</div>';
 
     echo '</form>';
 
-    echo '<div id="dbmodal'.$db->id.'" class="modal hide fade">
+    echo '<div id="dbmodal' . $db->id . '" class="modal hide fade">
       <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h3>' . $db->name . '</h3>
@@ -130,12 +134,16 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
 
 /**
  * Render search results found.
- * @param  Array  $data          Database where the search was performed
- * @param  Array  $found         Results found.
- * @param  int    $courseid      Course id where to import.
- * @param  Array  $search        Search paràmeters
+ *
+ * @param array $data Database where the search was performed
+ * @param array $found Results found.
+ * @param int $courseid Course id where to import.
+ * @param array $search Search paràmeters
+ * @throws coding_exception
+ * @throws moodle_exception
  */
 function render_search_results($data, $found, $courseid, $search) {
+
     global $OUTPUT, $CFG;
 
     echo $OUTPUT->heading(get_string('results', 'local_alexandriaimporter', $data->searching));
@@ -145,11 +153,11 @@ function render_search_results($data, $found, $courseid, $search) {
     }
 
     $url = new moodle_url('/local/alexandriaimporter/import.php',
-        array(
+        [
             'id' => $courseid,
             'datatype' => $data->type,
-            'fieldid' => $found->fieldid
-        )
+            'fieldid' => $found->fieldid,
+        ]
     );
     echo '<div class="accordion" id="accordion">';
     foreach ($found->results as $result) {
@@ -162,63 +170,69 @@ function render_search_results($data, $found, $courseid, $search) {
     if ($found->moreresults) {
         echo '<div class="hidden" id="search_values">';
         foreach ($search as $name => $value) {
-             echo '<input type="hidden" name="'.$name.'" value="'.$value.'">';
+            echo '<input type="hidden" name="' . $name . '" value="' . $value . '">';
         }
         echo '</div>';
-        echo '<button class="btn btn-info edit-btn" id="alexloadmore" onclick="alexandria_load_more(\''.$CFG->wwwroot.'\', '.$courseid.', '.$data->id.')">
+        echo '<button class="btn btn-info edit-btn" id="alexloadmore" onclick="alexandria_load_more(\'' . $CFG->wwwroot . '\', ' . $courseid . ', ' . $data->id . ')">
             <span class="spinner"><i class="fa fa-spinner fa-spin fa-fw"></i></span>'
-            .get_string('loadmore', 'local_alexandriaimporter').'</button>';
+            . get_string('loadmore', 'local_alexandriaimporter') . '</button>';
     }
 
-    echo '<script src="'.$CFG->wwwroot.'/local/alexandriaimporter/search.js"></script>';
+    echo '<script src="' . $CFG->wwwroot . '/local/alexandriaimporter/search.js"></script>';
+
 }
 
 /**
  * Format each record to be placed on a Bootstrap accordion.
- * @param  string $string   String to be formatted
- * @param  object $recordid Record to add id's
- * @param  string $url      To go when importing
- * @return string           Formatted string
+ *
+ * @param string $string String to be formatted
+ * @param object $recordid Record to add id's
+ * @param string $url To go when importing
+ * @throws coding_exception
+ * @return string  Formatted string
  */
 function format_record_contents($string, $recordid, $url) {
     preg_match("/<h3[^>]*>(.*?)<\/h3>/si", $string, $match);
     $title = $match[1];
 
-
-    $unsafe = array('/onclick="(.*?)"/is', '/target="(.*?)"/is', '/<script(.*?)<\/script>/is', '/<h3(.*?)<\/h3>/is');
-    $string = preg_replace($unsafe, "", $string);
+    $unsafe = ['/onclick="(.*?)"/is', '/target="(.*?)"/is', '/<script(.*?)<\/script>/is', '/<h3(.*?)<\/h3>/is'];
+    $string = preg_replace($unsafe, '', $string);
     $string = str_replace('<a ', '<a target="_blank" ', $string);
     $url->param('name', $title);
 
-    $return = '<div class="accordion-group">
+    return '<div class="accordion-group">
         <div class="accordion-heading">
             <div class="container-fluid">
                 <div class="span10">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#record'.$recordid.'">
-                        '.$title.'
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#record' . $recordid . '">
+                        ' . $title . '
                     </a>
                 </div>
                 <div class="span2 text-right importbtn">
-                    <a class="btn btn-danger edit-btn" href="'.$url->out().'">'.get_string('import').'</a>
+                    <a class="btn btn-danger edit-btn" href="' . $url->out() . '">' . get_string('import') . '</a>
                 </div>
             </div>
         </div>
-        <div id="record'.$recordid.'" class="accordion-body collapse">
-          <div class="accordion-inner">'.$string.'</div>
+        <div id="record' . $recordid . '" class="accordion-body collapse">
+            <div class="accordion-inner">' . $string . '</div>
         </div>
       </div>';
 
-    return $return;
 }
 
 /**
  * Retrieve database from Alexandria to perform searches.
- * @return Array of retrieved databases (only course and scorm ones).
+ *
+ * @throws coding_exception
+ * @throws dml_exception
+ * @return array of retrieved databases (only course and scorm ones).
  */
 function alexandria_get_databases() {
+
     global $DB;
+
     $dbs = call_alexandria_ws('local_alexandria_get_databases');
-    $return = array();
+    $return = [];
 
     if (empty($dbs) || !count($dbs)) {
         return $return;
@@ -232,63 +246,70 @@ function alexandria_get_databases() {
                 $return[$data->id] = $data;
                 break;
             case 'scorm':
-                if ($DB->get_field('modules', 'visible', array('name' => 'scorm'))) {
+                if ($DB->get_field('modules', 'visible', ['name' => 'scorm'])) {
                     $data->searching = get_string($data->type, 'local_alexandriaimporter');
                     $return[$data->id] = $data;
                 }
                 break;
         }
     }
+
     return $return;
+
 }
 
 /**
  * Perform a search on an Alexandria Database.
- * @param  int   $dataid   Id of the database where to search.
- * @param  Array $search   Containing the search parameters.
- * @param  int   $from     From which record we want to fetch.
- * @return Array/false     Objects returned by the search.
+ *
+ * @param int $dataid Id of the database where to search.
+ * @param array $search Containing the search parameters.
+ * @param int $from From which record we want to fetch.
+ * @throws moodle_exception
+ * @return array|boolean Objects returned by the search.
  */
 function search_in_alexandria($dataid, $search, $from = 0) {
+
     if (empty($dataid)) {
         return false;
     }
 
     $paramsnum = 0;
-    $params = array('dataid' => $dataid);
+    $params = ['dataid' => $dataid];
 
-    if (isset($search['search']) && !empty($search['search'])) {
+    if (!empty($search['search'])) {
         $params['search'] = $search['search'];
     } else {
         unset($search['search']);
         foreach ($search as $id => $value) {
             if (!empty($value)) {
-                $params['fields['.$id.'][id]'] = $id;
-                $params['fields['.$id.'][value]'] = $value;
+                $params['fields[' . $id . '][id]'] = $id;
+                $params['fields[' . $id . '][value]'] = $value;
                 $paramsnum++;
             }
         }
     }
 
-    if (empty($params['search']) && $paramsnum == 0) {
+    if (empty($params['search']) && $paramsnum === 0) {
         return false;
     }
 
     $params['from'] = $from;
     return call_alexandria_ws('local_alexandria_search', $params);
+
 }
 
 /**
  * Downloads a resource form Alexandria.
- * @param  int $fieldid     ID known by Alexandria to know where the file is placed.
- * @param  int $recordid    ID Record from the database.
- * @param  string $filename Filename to name the downloaded data.
- * @return boolean          Success/Fail
+ *
+ * @param int $fieldid ID known by Alexandria to know where the file is placed.
+ * @param int $recordid ID Record from the database.
+ * @param string $filename Filename to name the downloaded data.
+ * @return boolean Success/Fail
  */
 function alexandria_download_resource($fieldid, $recordid, $filename) {
 
-    $path = make_temp_directory('backup').'/'.$filename;
-    $url  = get_alexandria_data()->url.'/local/alexandria/data/download.php?fid='.$fieldid.'&rid='.$recordid;
+    $path = make_temp_directory('backup') . '/' . $filename;
+    $url = get_alexandria_data()->url . '/local/alexandria/data/download.php?fid=' . $fieldid . '&rid=' . $recordid;
 
     $fp = fopen($path, 'w');
     $ch = curl_init($url);
@@ -298,25 +319,31 @@ function alexandria_download_resource($fieldid, $recordid, $filename) {
     curl_close($ch);
     fclose($fp);
 
-    if ($status == 200) {
+    if ($status === 200) {
         return true;
-    } else {
-        unlink($path);
-        return false;
     }
+
+    unlink($path);
+    return false;
+
 }
 
 /**
  * Places the downloaded data into a draft file and redirects to restore.
- * @param  int $courseid    Course where all begin (where to return).
- * @param  string $filename Filename of the downloaded data.
+ *
+ * @param int $courseid Course where all begin (where to return).
+ * @param string $filename Filename of the downloaded data.
+ * @throws file_exception
+ * @throws moodle_exception
+ * @throws stored_file_creation_exception
  */
 function alexandria_import_course($courseid, $filename) {
+
     global $CFG, $USER;
 
     $contextid = context_course::instance($courseid)->id;
-
     $fs = get_file_storage();
+
     $record = new stdClass();
     $record->contextid = $contextid;
     $record->userid = $USER->id;
@@ -325,51 +352,55 @@ function alexandria_import_course($courseid, $filename) {
     $record->itemid = 0;
     $record->filename = $filename;
     $record->filepath = '/alexandriacourse/';
+
     if ($fs->file_exists($record->contextid, $record->component, $record->filearea, 0, $record->filepath, $record->filename)) {
         $file = $fs->get_file($record->contextid, $record->component, $record->filearea, 0, $record->filepath, $record->filename);
         $file->delete();
     }
 
-    $file = $fs->create_file_from_pathname($record, $CFG->tempdir.'/backup/'.$filename);
+    $file = $fs->create_file_from_pathname($record, $CFG->tempdir . '/backup/' . $filename);
 
-    unlink($CFG->tempdir.'/backup/'.$filename);
+    unlink($CFG->tempdir . '/backup/' . $filename);
 
     $restoreurl = new moodle_url('/backup/restore.php',
-        array(
+        [
             'pathnamehash' => $file->get_pathnamehash(),
             'contenthash' => $file->get_contenthash(),
-            'contextid' => $contextid
-        )
+            'contextid' => $contextid,
+        ]
     );
+
     redirect($restoreurl);
+
 }
 
 function alexandria_import_scorm($course, $filename, $name) {
+
     global $CFG, $USER, $DB;
 
-    require_once($CFG->dirroot . "/course/modlib.php");
+    require_once($CFG->dirroot . '/course/modlib.php');
     $fs = get_file_storage();
 
     $coursecontextid = context_course::instance($course->id)->id;
+    $cfgscorm = get_config('scorm');
 
     $scorm = new StdClass();
     $scorm->modulename = 'scorm';
-    $scorm->module = $DB->get_field('modules', 'id', array('name' => $scorm->modulename));
+    $scorm->module = $DB->get_field('modules', 'id', ['name' => $scorm->modulename]);
     $scorm->name = empty($name) ? get_string('importedscorm', 'local_alexandriaimporter') : $name;
-    $scorm->intro = "";
+    $scorm->intro = '';
     $scorm->introformat = FORMAT_MOODLE;
     $scorm->cmidnumber = null;
     $scorm->visible = 1;
     $scorm->section = 0;
-    $cfgscorm = get_config('scorm');
     $scorm->width = $cfgscorm->framewidth;
     $scorm->height = $cfgscorm->frameheight;
 
     // Add file.
     $draftitemid = 0;
-    file_prepare_draft_area($draftitemid, $coursecontextid, 'mod_scorm', 'package', 0, array('subdirs' => 0, 'maxfiles' => 1));
-
+    file_prepare_draft_area($draftitemid, $coursecontextid, 'mod_scorm', 'package', 0, ['subdirs' => 0, 'maxfiles' => 1]);
     $usercontextid = context_user::instance($USER->id)->id;
+
     $record = new StdClass();
     $record->contextid = $usercontextid;
     $record->userid = $USER->id;
@@ -378,57 +409,60 @@ function alexandria_import_scorm($course, $filename, $name) {
     $record->itemid = $draftitemid;
     $record->filename = $filename;
     $record->filepath = '/';
-    $file = $fs->create_file_from_pathname($record, $CFG->tempdir.'/backup/'.$filename);
-    unlink($CFG->tempdir.'/backup/'.$filename);
+
+    $file = $fs->create_file_from_pathname($record, $CFG->tempdir . '/backup/' . $filename);
+    unlink($CFG->tempdir . '/backup/' . $filename);
     $scorm->packagefile = $draftitemid;
 
     // Add module.
     $modinfo = add_moduleinfo($scorm, $course);
 
-    $modurl = new moodle_url('/mod/scorm/view.php',
-        array(
-            'id' => $modinfo->coursemodule
-        )
-    );
+    $modurl = new moodle_url('/mod/scorm/view.php', ['id' => $modinfo->coursemodule]);
     redirect($modurl);
+
 }
 
 /**
  * Perform a WS call connecting to Alexandria.
- * @param  string $function Function name to perform.
- * @param  array  $params   Params to be sent.
- * @return Mixed            Data returned by the WS / error message.
+ *
+ * @param string $function Function name to perform.
+ * @param array $params Params to be sent.
+ * @throws moodle_exception
+ * @return mixed Data returned by the WS / error message.
  */
-function call_alexandria_ws($function, $params = array()) {
-    global $CFG, $OUTPUT;
+function call_alexandria_ws($function, $params = []) {
 
-    require_once($CFG->dirroot . "/webservice/rest/lib.php");
+    global $CFG, $OUTPUT;
+    require_once $CFG->dirroot . '/webservice/rest/lib.php';
+
     if (!alexandria_importer_is_enabled()) {
-        print_error('Alexandria importer is not enabled');
+        throw new moodle_exception('Alexandria importer is not enabled', 'local_alexandriaimporter');
     }
 
     $hub = get_alexandria_data();
 
-    $serverurl = $hub->url . "/local/alexandria/webservice/server.php";
+    $serverurl = $hub->url . '/local/alexandria/webservice/server.php';
     $client = new webservice_rest_client($serverurl, $hub->token, 'json');
 
     // DEBUG
-    /*$params['wsfunction'] = $function;
+    /*
+    $params['wsfunction'] = $function;
     $params['wstoken'] = $hub->token;
     $url = new moodle_url($serverurl, $params);
-    echo $url->out();*/
+    echo $url->out();
+    */
 
     try {
         $result = $client->call($function, $params);
         if (isset($result->exception)) {
-            throw new Exception($result->errorcode .': '.$result->message);
+            throw new moodle_exception($result->errorcode . ': ' . $result->message);
         }
         return $result;
     } catch (Exception $e) {
         $errormessage = $e->getMessage();
         echo $OUTPUT->notification($errormessage, 'error');
         // DEBUG
-        //print_object($e);
+        // print_object($e);
         return false;
     }
 }

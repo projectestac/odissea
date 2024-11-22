@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Permiteți clasele adiționale CSS';
 $string['configallowadditionalcssclasses'] = 'Adaugă o opțiune de configurare pentru exemplele bloc HTML care permit claselor CSS suplimentare să fie setate.';
-$string['configclasses'] = 'Clasele adiționale CSS';
+$string['configclasses'] = 'Clase adiționale CSS';
 $string['configclasses_help'] = 'Scopul acestei configurații este de a ajuta la tematică, ajutând la distingerea blocurilor de text unele de altele. Orice clasă CSS introdusă aici (delimitat de spațiu) va fi atașată la clasele implicite ale blocului.';
 $string['configcontent'] = 'Conținut';
 $string['configtitle'] = 'Denumirea blocului text';

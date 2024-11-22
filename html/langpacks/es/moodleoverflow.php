@@ -164,6 +164,7 @@ $string['moodleoverflow:ratehelpful'] = 'Marcar un mensaje como útil';
 $string['moodleoverflow:ratepost'] = 'Votar un mensaje';
 $string['moodleoverflow:replypost'] = 'Responder en tema';
 $string['moodleoverflow:startdiscussion'] = 'Comenzar un tema';
+$string['moodleoverflow:viewanyrating'] = 'Ver votaciones';
 $string['moodleoverflow:viewdiscussion'] = 'Ver temas';
 $string['moodleoverflowauthorhidden'] = 'Autor (oculto)';
 $string['moodleoverflowbodyhidden'] = 'No puedes ver este mensaje, probablemente porque no has escrito anteriormente en este tema, porque todavía no ha pasado el tiempo máximo de edición, porque el tema todavía no ha comenzado o porque el tema ya ha expirado.';

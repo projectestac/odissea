@@ -33,3 +33,4 @@ $string['librarygroup3'] = 'Símbols grecs';
 $string['librarygroup3_desc'] = 'Ordres TeX que es llisten en la pestanya de símbols grecs.';
 $string['librarygroup4'] = 'Avançat';
 $string['librarygroup4_desc'] = 'Ordres TeX que es llisten en la pestanya avançada.';
+$string['preview'] = 'Previsualització de l\'equació';

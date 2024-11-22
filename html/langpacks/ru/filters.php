@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actfilterhdr'] = 'Активные фильтры';
-$string['addfilter'] = 'Добавить фильтр';
+$string['addfilter'] = 'Применить фильтр';
 $string['anycategory'] = 'любая категория';
 $string['anycourse'] = 'любой курс';
 $string['anycourses'] = 'Записан(а) на любой из курсов';

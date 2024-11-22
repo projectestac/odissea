@@ -61,6 +61,7 @@ $string['messageinboundenabled_desc'] = 'Affinché i messaggi vengano inviati co
 $string['messageinboundgeneralconfiguration'] = 'Configurazione generale';
 $string['messageinboundgeneralconfiguration_desc'] = 'L\'elaborazione dei messaggi in arrivo consente di ricevere ed elaborare email all\'interno di Moodle.Tale funzionalità può essere usata ad esempio per intervenire nei forum per email o aggiungere file nei File personali.';
 $string['messageinboundhost'] = 'Server email in entrata';
+$string['messageinboundhostoauth_help'] = 'Servizio OAuth 2 da utilizzare per accedere al server IMAP, utilizzando l\'autenticazione XOAUTH2. Se il servizio non esiste ancora, dovrà essere creato.';
 $string['messageinboundhostpass'] = 'Password';
 $string['messageinboundhostpass_desc'] = 'La password per autenticarsi sul proprio servizio email';
 $string['messageinboundhostssl'] = 'Utilizza SSL';

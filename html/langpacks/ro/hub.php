@@ -103,7 +103,7 @@ $string['registeredsites'] = 'Site-uri întregistrate';
 $string['registereduserdevices'] = 'Numărul de utilizatori cu dispozitive mobile înregistrate ({$a})';
 $string['registerwithmoodleorg'] = 'Înregistrează-te cu Moodle.org';
 $string['registerwithmoodleorgcomplete'] = 'Completați-vă înregistrarea pe site';
-$string['registerwithmoodleorginfo'] = 'Ne-ar plăcea să rămânem în contact și să vă oferim lucruri importante pentru site-ul dvs. Moodle! Prin înregistrare:
+$string['registerwithmoodleorginfo'] = 'Ne dorim să rămânem conectați și să vă oferim lucruri importante pentru site-ul dvs. Moodle! Prin înregistrare:
 
 * Vă puteți abona pentru a primi notificări despre noile versiuni Moodle, alerte de securitate și alte știri importante.
 * Puteți accesa și activa notificările push mobile de pe site-ul dvs. Moodle prin intermediul aplicației noastre gratuite Moodle.

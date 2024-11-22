@@ -29,6 +29,8 @@ $string['accredible:addinstance'] = 'Añadir una petición de certificado/insign
 $string['accredible:manage'] = 'Gestionar una petición de certificado/insignia';
 $string['accredible:student'] = 'Recuperar un certificado o una insignia';
 $string['accredible:view'] = 'Ver un certificado o insignia';
+$string['accrediblecustomattributename'] = 'Elija un atributo de diseño Accredible:';
+$string['accrediblecustomattributeselectprompt'] = 'Seleccione un atributo personalizado de Accredible';
 $string['accrediblegroup'] = 'Grupo Accredible';
 $string['achievementid'] = 'Denominación del id / cohorte del logro (debe ser único)';
 $string['activitygroupdescription'] = 'Las credenciales del grupo necesitan ser creadas en el <a href="{$a}" target="_blank">Área Personal de Accredible</a> antes de que se puedan emitir. Si no aparecieran, comprueba la "API Key" para asegurarte que la configuración de la integración es correcta.';
@@ -38,12 +40,16 @@ $string['additionalactivitiesthree'] = 'Este nombre aparecerá en el certificado
 $string['additionalactivitiestwo'] = 'Los certificados/insignias únicamente serán listados en la página de la actividad cuando hayan sido concedidos con este logro.';
 $string['apikeyhelp'] = 'Introduce tu código API de accredible.com';
 $string['apikeylabel'] = 'Código API';
+$string['attributemappingcoursecustomfields'] = 'Asignación de atributos: campos personalizados del curso';
+$string['attributemappingcoursefields'] = 'Asignación de atributos: campos del curso';
+$string['attributemappinguserprofilefields'] = 'Asignación de atributos: campos del perfil de usuario';
 $string['autoissueheader'] = 'Criterios automáticos de emisión';
 $string['certificatename'] = 'Nombre del certificado/insignia';
 $string['certificateurl'] = 'Url del certificado/insignia';
 $string['chooseexam'] = 'Seleccionar cuestionario final';
 $string['completionissuecheckbox'] = 'Sí, emitir una vez completado el curso';
 $string['completionissueheader'] = 'Criterios de emisión automática: por finalización del curso';
+$string['coursetotal'] = 'Total del curso';
 $string['dashboardlink'] = 'Enlace al Área Personal de Accredible';
 $string['dashboardlinktext'] = 'Para borrar o diseñar credenciales, acceda al <a href="https://dashboard.accredible.com" target="_blank">área personal</a>';
 $string['datecreated'] = 'Fecha de creación';
@@ -69,6 +75,9 @@ $string['modulename_help'] = 'El módulo de actividad certificado e insignia Acc
 Añadir la actividad donde desea que sus estudiantes vean su certificado o insignia.';
 $string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Certificados/insignias Accredible';
+$string['moodlecoursecustomfield'] = 'Elija el campo de curso personalizado de Moodle que desea incluir';
+$string['moodlecoursefield'] = 'Elija el campo de curso de Moodle que desea incluir';
+$string['moodleuserprofilefield'] = 'Elija el campo de perfil de usuario de Moodle que desea incluir';
 $string['nocertificates'] = 'No hay certificados/insignias';
 $string['nouserswarning'] = 'Debe elegir un grupo Accredible para ver la lista de usuarios.';
 $string['overview'] = 'Resumen';

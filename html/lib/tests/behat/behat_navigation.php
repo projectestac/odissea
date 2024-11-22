@@ -725,6 +725,15 @@ class behat_navigation extends behat_base {
             case 'Admin notifications':
                 return new moodle_url('/admin/');
 
+            case 'Content bank':
+                return new moodle_url('/contentbank/');
+
+            case 'My private files':
+                return new moodle_url('/user/files.php');
+
+            case 'System logs report':
+                return new moodle_url('/report/log/index.php');
+
             default:
                 throw new Exception('Unrecognised core page type "' . $name . '."');
         }
@@ -878,10 +887,12 @@ class behat_navigation extends behat_base {
                 return new moodle_url('/enrol/otherusers.php', ['id' => $courseid]);
         }
 
+        // This next section handles page types starting with an activity name. For example:
+        // "forum activity" or "quiz activity editing".
         $parts = explode(' ', $type);
         if (count($parts) > 1) {
+            $modname = $parts[0];
             if ($parts[1] === 'activity') {
-                $modname = $parts[0];
                 $cm = $this->get_cm_by_activity_name($modname, $identifier);
 
                 if (count($parts) == 2) {
@@ -903,6 +914,13 @@ class behat_navigation extends behat_base {
                     // Permissions page.
                     return new moodle_url('/admin/roles/permissions.php', ['contextid' => $cm->context->id]);
                 }
+
+            } else if ($parts[1] === 'index' && count($parts) == 2) {
+                $courseid = $this->get_course_id($identifier);
+                if (!$courseid) {
+                    throw $coursenotfoundexception;
+                }
+                return new moodle_url("/mod/$modname/index.php", ['id' => $courseid]);
             }
         }
 

@@ -391,7 +391,7 @@ $string['requiredentries_help'] = 'Gaituz gero, mezu bat erakusten da osatzeko b
 
 Jarduera osatzeko beharrezkoak diren sarrerak zehazteko, jardueraren osaketaren jarraipenerako \'Sarrera-kopuru bat behar da\' ezarpen berria erabili beharko litzateke. Ezarpen hau guztiz ezabatzeko, zerora ezari eta ondoren aldaketak gorde itzazu.
 
-Mesedez horren ordez \'Sarrerak behar dira\' ezarpen berria erabili ezazu.';
+Mesedez horren ordez jarduera-osaketa ataleko \'Sarrerak behar dira\' ezarpena erabili ezazu.';
 $string['requiredentriestoview'] = 'Ikusi aurretik behar diren sarrerak';
 $string['requiredentriestoview_help'] = 'Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek gehitu behar duten sarrera-kopurua.
 

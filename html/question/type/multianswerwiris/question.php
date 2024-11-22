@@ -240,7 +240,7 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
             $this->step->reset_attempts();
         } catch (moodle_exception $e) {
             // Notify of the error.
-            $this->step->inc_attempts();
+            $this->step->inc_attempts($e);
             throw $e;
         }
     }
@@ -391,5 +391,26 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
         // expand_variables_text() is not good, we prevent to show incorrect
         // data.
         return get_string('contentnotviewable', 'qtype_multianswerwiris');
+    }
+
+
+    public function update_attempt_state_data_for_new_version(
+        question_attempt_step $oldstep,
+        question_definition $oldquestion
+    ) {
+        // Save global state data to prevent it from being overwritten.
+        $qi = $oldstep->get_qt_var('_qi');
+        $gc = $oldstep->get_qt_var('_gc');
+
+        $result = parent::update_attempt_state_data_for_new_version($oldstep, $oldquestion);
+
+        if (isset($qi)) {
+            $result['_qi'] = $qi;
+        }
+        if (isset($gc)) {
+            $result['_gc'] = $gc;
+        }
+
+        return $result;
     }
 }

@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
+$string['eventreportviewed'] = 'S\'ha visualitzat l\'informe';
 $string['filearea_subtitle'] = 'Subtítols';
 $string['notimplemented'] = 'No s\'ha implementat';
+$string['upload'] = 'Fitxers de l\'exercici';

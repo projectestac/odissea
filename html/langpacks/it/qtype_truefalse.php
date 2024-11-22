@@ -39,6 +39,7 @@ $string['pluginnameadding'] = 'Creazione domanda Vero/Falso';
 $string['pluginnameediting'] = 'Modifica domanda Vero/Falso';
 $string['pluginnamesummary'] = 'Una declinazione delle domande a risposta multipla con solo due alternative, \'Vero\' e \'Falso\'.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Vero/Falso\' non memorizza dati personali.';
+$string['privacy:preference:showstandardinstruction'] = 'Se visualizzare le istruzioni standard.';
 $string['selectone'] = 'Scegli una risposta:';
 $string['showstandardinstruction'] = 'Visualizza istruzioni standard';
 $string['true'] = 'Vero';

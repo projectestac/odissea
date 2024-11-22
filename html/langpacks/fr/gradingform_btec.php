@@ -26,3 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['btecgrading_link'] = 'BTEC_marking';
+$string['commentsmovedown'] = 'Déplacer vers le bas';
+$string['commentsmoveup'] = 'Déplacer vers le haut';
+$string['criterionmovedown'] = 'Déplacer vers le bas';
+$string['criterionmoveup'] = 'Déplacer vers le haut';

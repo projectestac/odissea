@@ -132,11 +132,11 @@ $string['updateonly'] = '仅更新已存在的课程';
 $string['updatewithdataonly'] = '只以CSV文档资料来更新';
 $string['updatewithdataordefaults'] = '以CSV文档资料和默认值来更新';
 $string['uploadcourses'] = '上传课程';
-$string['uploadcourses_help'] = '课程可以通过文件文件上传。上传的文件可是可以为下面的格式：
+$string['uploadcourses_help'] = '课程可以通过文本文件上传。文件的格式应如下所示：
 
-* 文件的每一行只包含一条记录
-* 每条记录通过逗号分隔符进行分隔，或者其他分隔符
-* 第一条记录需要包含有字段列表来标识文件的所有数据
-* 必须的字段包括有 shortname（短名），fullname（长名），和 category（分类）';
+* 文件的每一行包含一条记录
+* 每条记录都是由选定的分隔符分隔的一系列数据
+* 第一条记录包含字段名称列表，用于定义文件其余部分的格式
+* 必填字段名称为 shortname、fullname 和 category';
 $string['uploadcoursespreview'] = '课程上传预览';
 $string['uploadcoursesresult'] = '课程上传结果';

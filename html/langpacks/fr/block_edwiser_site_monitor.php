@@ -63,7 +63,7 @@ $string['high'] = 'Haut';
 $string['highusage'] = 'Utilisation élevée';
 $string['installnew'] = 'Installer un nouveau plugin';
 $string['invalidjsonfile'] = 'Liste de produits Edwiser non valide.';
-$string['invalidzip'] = 'Fichier ZIP invalide. <b>{$a}</b>';
+$string['invalidzip'] = 'Fichier ZIP non valide. <b>{$a}</b>';
 $string['knowmore'] = 'En savoir plus';
 $string['last24hoursusage'] = 'Dernières 24 heures d’utilisation';
 $string['livestatusrefreshrate'] = 'Fréquence de rafraîchissement';
@@ -115,7 +115,7 @@ $string['thanksmessage'] = '<div style="background-color: #efefef; -webkit-text-
 </tr>
 <tr>
 <td style="padding: 20px; background-color: #dfdfdf; border-radius: 6px !important;" align="center" valign="top">
-<div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;">Hi {$a->user},</div><div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;"><br>Merci de nous contacter.<br><br> Notre équipe d’assistance reviendra vers vous dans les prochaines 24 heures.</div><br><div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;"> Il s’agit d’un e-mail généré automatiquement. Pour toute question ou aide supplémentaire, vous pouvez nous contacter à {$a->email}</div></td></tr></tbody></table><br>
+<div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;">Hi {$a->user},</div><div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;"><br>Merci de nous contacter.<br><br> Notre équipe d’assistance reviendra vers vous dans les prochaines 24 heures.</div><br><div style="font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;"> Il s’agit d’un courriel généré automatiquement. Pour toute question ou aide supplémentaire, vous pouvez nous contacter à {$a->email}</div></td></tr></tbody></table><br>
 </div>';
 $string['thankssubject'] = 'Merci de nous contacter';
 $string['thresholdheader'] = 'Seuil limite';

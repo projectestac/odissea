@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'HTML表格';
 $string['privacy:metadata'] = 'HTML表格数据格式插件不存储任何个人数据。';
+$string['shortname'] = 'HTML';

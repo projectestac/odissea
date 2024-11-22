@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'Eroare - format XML greșit';
-$string['errduplicategradeidnumber'] = 'Eroare - sunt două intrări cu id-ul \'{$a}\' la acest curs. Acest lucru ar trebui să fie imposibil.';
+$string['errduplicategradeidnumber'] = 'Eroare - sunt două elemente de notare cu id-ul \'{$a}\' la acest curs. Acest lucru ar trebui să fie imposibil.';
 $string['errduplicateidnumber'] = 'Eroare - duplicare de id';
 $string['errincorrectgradeidnumber'] = 'Eroare - id-ul \'{$a}\' din fișierul importat nu se potrivește cu nico intrare din note.';
 $string['errincorrectidnumber'] = 'Eroare - id incorect';
@@ -36,7 +36,7 @@ $string['errorduringimport'] = 'A apărut o eroare în timpul importului: {$a}';
 $string['fileurl'] = 'URL fișier';
 $string['fileurl_help'] = 'Câmpul URL fișier la distanță este pentru preluarea datelor de pe un server la distanță, cum ar fi un sistem de informații pentru cursanți.';
 $string['importxml'] = 'Import XML';
-$string['importxml_help'] = 'Notele pot fi importate prin intermediul unui fișier XML care conține  ID ale utilizatorilor și ID activitate. Pentru a obține formatul corect, mai întâi exportați câteva note într-un fișier XML, apoi vizualizați fișierul.';
+$string['importxml_help'] = 'Notele pot fi importate prin intermediul unui fișier XML care conține ID-urile utilizatorilor și ID-ul activității. Pentru a obține formatul corect, mai întâi exportați câteva note într-un fișier XML, apoi vizualizați fișierul.';
 $string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'fișier XML';
 $string['privacy:metadata'] = 'Pluginul de import de note în format XML nu stochează date personale.';

@@ -59,7 +59,7 @@ $string['checkeditemsdeleted'] = 'Éléments de la liste des tâches supprimés'
 $string['checklist'] = 'Liste des tâches';
 $string['checklist:addinstance'] = 'Ajouter une nouvelle liste des tâches';
 $string['checklist:edit'] = 'Créer et éditer des liste des tâches';
-$string['checklist:emailoncomplete'] = 'Recevoir par mail quand c’est terminé';
+$string['checklist:emailoncomplete'] = 'Recevoir par courriel quand c’est terminé';
 $string['checklist:preview'] = 'Prévisualisation d’une liste des tâches';
 $string['checklist:updatelocked'] = 'Modification des marques verrouillée';
 $string['checklist:updateother'] = 'Modification des marques des liste des tâches des étudiants';
@@ -91,8 +91,9 @@ $string['editdatesstart'] = 'Modifier les dates';
 $string['editdatesstop'] = 'Arrêt de l’édition des dates';
 $string['edititem'] = 'Modifier cet élément';
 $string['emailoncomplete'] = 'Envoyer un courriel à l’enseignant quand la liste des tâches est complète';
-$string['emailoncomplete_help'] = 'Quand une liste est complète, un courriel de notification est envoyé à tous les enseignants du cours. <br />
-Un administrateur peut contrôler qui reçoit ce courriel en utilisant la capacité « mod: check-list / emailoncomplete » - par défaut, tous les enseignants et enseignants non éditeurs ont cette capacité.';
+$string['emailoncomplete_help'] = 'Lorsqu\'une liste de tâches est complétée, un courriel de notification peut être envoyé : à l\'étudiant qui l\'a complétée, à tous les professeurs du cours ou aux deux.<br />
+Un administrateur peut contrôler qui reçoit ce courriel en utilisant la fonctionnalité « mod:checklist/emailoncomplete » - par défaut, tous les enseignants et les enseignants non-éditeurs ont cette fonctionnalité.
+À cette fin, une liste de tâches est considérée comme « complète » une fois que tous les éléments ont été cochés - cela ne prend pas en compte le pourcentage d\'achèvement défini dans les paramètres « Achèvement de l\'activité ».';
 $string['emailoncompletebody'] = 'L’utilisateur {$a->user} a complété sa liste des tâches « {$a->checklist} »
 Voir la Liste des tâches ici :';
 $string['emailoncompletebodyown'] = 'Vous avez terminé la liste de tâches « {$a->checklist} » dans le cours « {$a->coursename} »
@@ -102,6 +103,7 @@ $string['emailoncompletesubjectown'] = 'Vous avez terminé la liste des tâches 
 $string['enterurl'] = 'Entrer l’URL…';
 $string['errorchecklistitemnotvalid'] = 'L’identifiant de l’élément de la liste des tâches n’appartient pas à ce module de cours !';
 $string['eventchecklistcomplete'] = 'Liste des tâches complète';
+$string['eventchecklistupdated'] = 'Liste des tâches mise à jour';
 $string['eventeditpageviewed'] = 'Page d’édition vue';
 $string['eventreportviewed'] = 'Rapport consulté';
 $string['eventstudentchecksupdated'] = 'Tâches de l’étudiant mises à jour';
@@ -165,6 +167,9 @@ $string['privacy:metadata:checklist_comment_student'] = 'Commentaires qui ont é
 $string['privacy:metadata:checklist_comment_student:itemid'] = 'L’identifiant de l’élément de la liste des tâches auquel le commentaire se rapporte';
 $string['privacy:metadata:checklist_comment_student:text'] = 'Le texte du commentaire';
 $string['privacy:metadata:checklist_comment_student:usermodified'] = 'Identifiant de l’utilisateur (étudiant) qui a fait ce commentaire';
+$string['privacy:metadata:checklist_comp_notification'] = 'Suivez quels utilisateurs ont déjà complété tous les éléments de leur liste de contrôle, afin que les courriels ne soient pas renvoyés';
+$string['privacy:metadata:checklist_comp_notification:checklistid'] = 'L\'identifiant de la liste de tâches';
+$string['privacy:metadata:checklist_comp_notification:userid'] = 'L\'identifiant de l\'utilisateur qui a complété la liste de tâches';
 $string['privacy:metadata:checklist_item'] = 'Informations à propos des éléments privés que l’utilisateur a ajouté à la liste des tâches donnée';
 $string['privacy:metadata:checklist_item:checklist'] = 'L’identifiant de la liste des tâches à laquelle ce élément privé a été ajouté';
 $string['privacy:metadata:checklist_item:displaytext'] = 'Le texte de l’élément privé de la liste des tâches';

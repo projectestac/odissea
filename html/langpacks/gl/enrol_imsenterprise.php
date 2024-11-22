@@ -34,7 +34,7 @@ $string['categoryidnumber_desc'] = 'Se está activado, IMS Enterprise creará ca
 $string['categoryseparator'] = 'Carácter separador de categoría';
 $string['categoryseparator_desc'] = 'Requírese cando está activado o «idnumber de categoría». Carácter para separar o nome da categoría e o «idnumber».';
 $string['coursesettings'] = 'Opcións dos datos do curso';
-$string['createnewcategories'] = 'Crear novas (agochadas) categorías de curso se non as atopa en Moodle';
+$string['createnewcategories'] = 'Crear novas (agochadas) categorías de cursos se non as atopa en Moodle';
 $string['createnewcategories_desc'] = 'Se o elemento <org><orgunit> está presente en datos de entrada dun curso, o seu contido utilizarase para especificar unha categoría se o curso se está creando a partir de cero. O engadido NON reclasificará os cursos existentes.
 
 Se non existe ningunha categoría co nome desexado, daquela crearase unha categoría agochada.';

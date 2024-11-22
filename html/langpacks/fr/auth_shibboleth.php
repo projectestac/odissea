@@ -30,7 +30,7 @@ $string['auth_shib_auth_logo_description'] = 'Donner un logo pour la méthode d�
 $string['auth_shib_auth_method'] = 'Nom de la méthode d’authentification';
 $string['auth_shib_auth_method_description'] = 'Indiquez un nom familier pour vos utilisateurs pour la méthode d’authentification Shibboleth. Ceci peut être le nom de votre fédération Shibboleth, par exemple <tt>SWITCHaai Login</tt> ou <tt>InCommon Login</tt>.';
 $string['auth_shib_changepasswordurl'] = 'URL pour changement de mot de passe';
-$string['auth_shib_contact_administrator'] = 'Si vous n’êtes pas affilié aux organisations indiquées et que vous avez besoin d’accéder à un cours sur ce serveur, veuillez contacter l\'<a href="mailto:{$a}">administrateur de ce serveur</a>.';
+$string['auth_shib_contact_administrator'] = 'Si vous n’êtes pas affilié aux organisations indiquées et que vous avez besoin d’accéder à un cours sur ce serveur, veuillez contacter l’<a href="mailto:{$a}">administrateur de ce serveur</a>.';
 $string['auth_shib_convert_data'] = 'API de modification de données';
 $string['auth_shib_convert_data_description'] = 'Vous pouvez utiliser cette API pour modifier les données fournies par Shibboleth. Lisez le fichier <a href="{$a}">README</a> pour d’autres instructions.';
 $string['auth_shib_convert_data_filepath_warning'] = 'Il n’est pas possible d’utiliser un fichier situé à l’intérieur du dossier de données actuel du site ($CFG->dataroot) comme API de modification de données.';

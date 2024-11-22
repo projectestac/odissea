@@ -29,3 +29,4 @@ $string['author'] = 'Autor/a';
 $string['download'] = 'Descarrega';
 $string['edit'] = 'Edita';
 $string['name'] = 'Nom';
+$string['results'] = 'Resultats';

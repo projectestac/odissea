@@ -848,11 +848,12 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$j = null;
 		$correct = true;
 		{
-			$_g1 = 0; $_g = $checks->length;
-			while($_g1 < $_g) {
-				$j1 = $_g1++;
-				$correct = $correct && _hx_array_get($checks, $j1)->value === 1.0;
-				unset($j1);
+			$_g = 0;
+			while($_g < $checks->length) {
+				$check = $checks[$_g];
+				++$_g;
+				$correct = $correct && $check->value > 0.999999;
+				unset($check);
 			}
 		}
 		return $correct;

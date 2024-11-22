@@ -30,6 +30,7 @@ $string['getdescription'] = 'Вы завершили этот курс';
 $string['getdescriptionnot'] = 'Вы <b>не</b> завершили этот курс.';
 $string['missing'] = '(Вам нужно выбрать, должен ли курс быть завершен или нет)';
 $string['pluginname'] = 'Ограничение доступа по завершению курса';
+$string['privacy:metadata'] = 'Плагин Ограничение доступа по завершению курса не хранит никаких персональных данных';
 $string['requires_completed'] = 'Вы завершили этот курс';
 $string['requires_notcompleted'] = 'Вы <b>не</b> завершили этот курс.';
 $string['title'] = 'Завершение курса';

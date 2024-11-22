@@ -674,6 +674,7 @@ interface H5PFrameworkInterface {
 class H5PValidator {
   public $h5pF;
   public $h5pC;
+  public $h5pCV;
 
   // Schemas used to validate the h5p files
   private $h5pRequired = array(
@@ -704,15 +705,15 @@ class H5PValidator {
     'source' => '/^(http[s]?:\/\/.+)$/',
     'license' => '/^(CC BY|CC BY-SA|CC BY-ND|CC BY-NC|CC BY-NC-SA|CC BY-NC-ND|CC0 1\.0|GNU GPL|PD|ODC PDDL|CC PDM|U|C)$/',
     'licenseVersion' => '/^(1\.0|2\.0|2\.5|3\.0|4\.0)$/',
-    'licenseExtras' => '/^.{1,5000}$/',
+    'licenseExtras' => '/^.{1,5000}$/s',
     'yearsFrom' => '/^([0-9]{1,4})$/',
     'yearsTo' => '/^([0-9]{1,4})$/',
     'changes' => array(
       'date' => '/^[0-9]{2}-[0-9]{2}-[0-9]{2} [0-9]{1,2}:[0-9]{2}:[0-9]{2}$/',
       'author' => '/^.{1,255}$/',
-      'log' => '/^.{1,5000}$/'
+      'log' => '/^.{1,5000}$/s'
     ),
-    'authorComments' => '/^.{1,5000}$/',
+    'authorComments' => '/^.{1,5000}$/s',
     'w' => '/^[0-9]{1,4}$/',
     'h' => '/^[0-9]{1,4}$/',
     // deprecated
@@ -795,6 +796,10 @@ class H5PValidator {
    * TRUE if the .h5p file is valid
    */
   public function isValidPackage($skipContent = FALSE, $upgradeOnly = FALSE) {
+    // Create a temporary dir to extract package in.
+    $tmpDir = $this->h5pF->getUploadedH5pFolderPath();
+    $tmpPath = $this->h5pF->getUploadedH5pPath();
+
     // Check dependencies, make sure Zip is present
     if (!class_exists('ZipArchive')) {
       $this->h5pF->setErrorMessage($this->h5pF->t('Your PHP version does not support ZipArchive.'), 'zip-archive-unsupported');
@@ -806,10 +811,6 @@ class H5PValidator {
       unlink($tmpPath);
       return FALSE;
     }
-
-    // Create a temporary dir to extract package in.
-    $tmpDir = $this->h5pF->getUploadedH5pFolderPath();
-    $tmpPath = $this->h5pF->getUploadedH5pPath();
 
     // Only allow files with the .h5p extension:
     if (strtolower(substr($tmpPath, -3)) !== 'h5p') {
@@ -853,7 +854,7 @@ class H5PValidator {
       $totalSize += $fileStat['size'];
 
       $fileName = mb_strtolower($fileStat['name']);
-      if (preg_match('/(^[\._]|\/[\._])/', $fileName) !== 0) {
+      if (preg_match('/(^[\._]|\/[\._]|\\\[\._])/', $fileName) !== 0) {
         continue; // Skip any file or folder starting with a . or _
       }
       elseif ($fileName === 'h5p.json') {
@@ -933,7 +934,7 @@ class H5PValidator {
     for ($i = 0; $i < $zip->numFiles; $i++) {
       $fileName = $zip->statIndex($i)['name'];
 
-      if (preg_match('/(^[\._]|\/[\._])/', $fileName) !== 0) {
+      if (preg_match('/(^[\._]|\/[\._]|\\\[\._])/', $fileName) !== 0) {
         continue; // Skip any file or folder starting with a . or _
       }
 
@@ -993,7 +994,7 @@ class H5PValidator {
         //     - or -
         // - <machineName>-<majorVersion>.<minorVersion>
         // where machineName, majorVersion and minorVersion is read from library.json
-        if ($libraryH5PData['machineName'] !== $file && H5PCore::libraryToString($libraryH5PData, TRUE) !== $file) {
+        if ($libraryH5PData['machineName'] !== $file && H5PCore::libraryToFolderName($libraryH5PData) !== $file) {
           $this->h5pF->setErrorMessage($this->h5pF->t('Library directory name must match machineName or machineName-majorVersion.minorVersion (from library.json). (Directory: %directoryName , machineName: %machineName, majorVersion: %majorVersion, minorVersion: %minorVersion)', array(
               '%directoryName' => $file,
               '%machineName' => $libraryH5PData['machineName'],
@@ -1063,7 +1064,12 @@ class H5PValidator {
               'minorVersion' => $mainDependency['minorVersion']
             ))) {
           foreach ($missingLibraries as $libString => $library) {
-            $this->h5pF->setErrorMessage($this->h5pF->t('Missing required library @library', array('@library' => $libString)), 'missing-required-library');
+            if (!empty($mainDependency) && $library['machineName'] === $mainDependency['machineName']) {
+              $this->h5pF->setErrorMessage($this->h5pF->t('Missing main library @library', array('@library' => $libString )), 'missing-main-library');
+            }
+            else {
+              $this->h5pF->setErrorMessage($this->h5pF->t('Missing required library @library', array('@library' => $libString)), 'missing-required-library');
+            }
             $valid = FALSE;
           }
           if (!$this->h5pC->mayUpdateLibraries()) {
@@ -1615,20 +1621,21 @@ class H5PStorage {
 
     // Go through libraries that came with this package
     foreach ($this->h5pC->librariesJsonData as $libString => &$library) {
-      // Find local library identifier
-      $libraryId = $this->h5pC->getLibraryId($library, $libString);
+      // Find local library with same major + minor
+      $existingLibrary = $this->h5pC->loadLibrary($library['machineName'], $library['majorVersion'], $library['minorVersion']);
 
       // Assume new library
       $new = TRUE;
-      if ($libraryId) {
-        // Found old library
-        $library['libraryId'] = $libraryId;
+      if (isset($existingLibrary['libraryId'])) {
+        $new = false;
+        // We have the library installed already (with the same major + minor)
 
-        if ($this->h5pF->isPatchedLibrary($library)) {
-          // This is a newer version than ours. Upgrade!
-          $new = FALSE;
-        }
-        else {
+        $library['libraryId'] = $existingLibrary['libraryId'];
+
+        // Is this a newer patchVersion?
+        $newerPatchVersion = $existingLibrary['patchVersion'] < $library['patchVersion'];
+
+        if (!$newerPatchVersion) {
           $library['saveDependencies'] = FALSE;
           // This is an older version, no need to save.
           continue;
@@ -1643,10 +1650,11 @@ class H5PStorage {
         H5PMetadata::boolifyAndEncodeSettings($library['metadataSettings']) :
         NULL;
 
-      $this->h5pF->saveLibraryData($library, $new);
-
       // Save library folder
       $this->h5pC->fs->saveLibrary($library);
+
+      // Update our DB
+      $this->h5pF->saveLibraryData($library, $new);
 
       // Remove cached assets that uses this library
       if ($this->h5pC->aggregateAssets && isset($library['libraryId'])) {
@@ -1656,6 +1664,10 @@ class H5PStorage {
 
       // Remove tmp folder
       H5PCore::deleteFileTree($library['uploadDirectory']);
+
+      if ($existingLibrary) {
+        $this->h5pC->fs->deleteLibrary($existingLibrary);
+      }
 
       if ($new) {
         $newOnes++;
@@ -1846,7 +1858,7 @@ Class H5PExport {
 
     foreach(array('authors', 'source', 'license', 'licenseVersion', 'licenseExtras' ,'yearFrom', 'yearTo', 'changes', 'authorComments', 'defaultLanguage') as $field) {
       if (isset($content['metadata'][$field]) && $content['metadata'][$field] !== '') {
-        if (($field !== 'authors' && $field !== 'changes') || (count($content['metadata'][$field]) > 0)) {
+        if (($field !== 'authors' && $field !== 'changes') || (!empty($content['metadata'][$field]))) {
           $h5pJson[$field] = json_decode(json_encode($content['metadata'][$field], TRUE));
         }
       }
@@ -2060,12 +2072,14 @@ class H5PCore {
 
   public static $coreApi = array(
     'majorVersion' => 1,
-    'minorVersion' => 24
+    'minorVersion' => 27
   );
   public static $styles = array(
     'styles/h5p.css',
     'styles/h5p-confirmation-dialog.css',
-    'styles/h5p-core-button.css'
+    'styles/h5p-core-button.css',
+    'styles/h5p-tooltip.css',
+    'styles/h5p-table.css',
   );
   public static $scripts = array(
     'js/jquery.js',
@@ -2077,14 +2091,15 @@ class H5PCore {
     'js/h5p-confirmation-dialog.js',
     'js/h5p-action-bar.js',
     'js/request-queue.js',
+    'js/h5p-tooltip.js',
   );
   public static $adminScripts = array(
     'js/jquery.js',
     'js/h5p-utils.js',
   );
 
-  public static $defaultContentWhitelist = 'json png jpg jpeg gif bmp tif tiff svg eot ttf woff woff2 otf webm mp4 ogg mp3 m4a wav txt pdf rtf doc docx xls xlsx ppt pptx odt ods odp xml csv diff patch swf md textile vtt webvtt';
-  public static $defaultLibraryWhitelistExtras = 'js css';
+  public static $defaultContentWhitelist = 'json png jpg jpeg gif bmp tif tiff eot ttf woff woff2 otf webm mp4 ogg mp3 m4a wav txt pdf rtf doc docx xls xlsx ppt pptx odt ods odp csv diff patch swf md textile vtt webvtt gltf glb';
+  public static $defaultLibraryWhitelistExtras = 'js css svg xml';
 
   public $librariesJsonData, $contentJsonData, $mainJsonData, $h5pF, $fs, $h5pD, $disableFileCheck;
   const SECONDS_IN_WEEK = 604800;
@@ -2113,6 +2128,21 @@ class H5PCore {
     self::DISABLE_EMBED => self::DISPLAY_OPTION_EMBED,
     self::DISABLE_COPYRIGHT => self::DISPLAY_OPTION_COPYRIGHT
   );
+
+  /** @var string */
+  public $url;
+
+  /** @var int evelopment mode. */
+  public $development_mode;
+
+  /** @var bool aggregated files for assets. */
+  public $aggregateAssets;
+
+  /** @var string full path of plugin. */
+  protected $fullPluginPath;
+
+  /** @var string regex for converting copied files paths. */
+  public $relativePathRegExp;
 
   /**
    * Constructor for the H5PCore
@@ -2521,7 +2551,7 @@ class H5PCore {
    * @return string
    */
   protected function getDependencyPath(array $dependency) {
-    return 'libraries/' . H5PCore::libraryToString($dependency, TRUE);
+    return 'libraries/' . H5PCore::libraryToFolderName($dependency);
   }
 
   private static function getDependenciesHash(&$dependencies) {
@@ -2714,14 +2744,26 @@ class H5PCore {
    * Writes library data as string on the form {machineName} {majorVersion}.{minorVersion}
    *
    * @param array $library
-   *  With keys machineName, majorVersion and minorVersion
-   * @param boolean $folderName
-   *  Use hyphen instead of space in returned string.
+   *  With keys (machineName and/or name), majorVersion and minorVersion
    * @return string
    *  On the form {machineName} {majorVersion}.{minorVersion}
    */
-  public static function libraryToString($library, $folderName = FALSE) {
-    return (isset($library['machineName']) ? $library['machineName'] : $library['name']) . ($folderName ? '-' : ' ') . $library['majorVersion'] . '.' . $library['minorVersion'];
+  public static function libraryToString($library) {
+    $name = $library['machineName'] ?? $library['name'];
+
+    return "{$name} {$library['majorVersion']}.{$library['minorVersion']}";
+  }
+
+  /**
+   * Get the name of a library's folder name
+   *
+   * @return string
+   */
+  public static function libraryToFolderName($library) {
+    $name = $library['machineName'] ?? $library['name'];
+    $includePatchVersion = $library['patchVersionInFolderName'] ?? false;
+
+    return "{$name}-{$library['majorVersion']}.{$library['minorVersion']}" . ($includePatchVersion ? ".{$library['patchVersion']}" : '');
   }
 
   /**
@@ -3139,6 +3181,8 @@ class H5PCore {
    * @return int Identifier, or FALSE if non-existent
    */
   public function getLibraryId($library, $libString = NULL) {
+    static $libraryIdMap = [];
+
     if (!$libString) {
       $libString = self::libraryToString($library);
     }
@@ -3736,7 +3780,13 @@ class H5PCore {
       'copyrightWarning' => $this->h5pF->t('Copyrighted material cannot be shared in the H5P Content Hub. If the content is licensed with a OER friendly license like Creative Commons, please choose the appropriate license. If not this content cannot be shared.'),
       'keywordsExits' => $this->h5pF->t('Keywords already exists!'),
       'someKeywordsExits' => $this->h5pF->t('Some of these keywords already exist'),
-
+      'width' => $this->h5pF->t('width'),
+      'height' => $this->h5pF->t('height'),
+      'rotateLeft' => $this->h5pF->t('Rotate Left'),
+      'rotateRight' => $this->h5pF->t('Rotate Right'),
+      'cropImage' => $this->h5pF->t('Crop Image'),
+      'confirmCrop' => $this->h5pF->t('Confirm Crop'),
+      'cancelCrop' => $this->h5pF->t('Cancel Crop')
     );
   }
 
@@ -3766,7 +3816,7 @@ class H5PCore {
         $this->h5pF->setErrorMessage($this->h5pF->t('Content is not shared on the H5P OER Hub.'));
         return NULL;
       }
-      throw new Exception($this->h5pF->t('Connecting to the content hub failed, please try again later.'));
+      throw new Exception($this->h5pF->t("Couldn't communicate with the H5P Hub. Please try again later."));
     }
 
     $hub_content = json_decode($response['data'])->data;
@@ -3933,6 +3983,7 @@ class H5PCore {
     }
 
     if ($accountInfo['status'] !== 200) {
+      $this->h5pF->setErrorMessage($this->h5pF->t('Unable to retrieve HUB account information. Please contact support.'));
       return false;
     }
 
@@ -4024,7 +4075,7 @@ class H5PCore {
       || $registration['status'] !== 200
     ) {
       return [
-        'message'     => 'Registration failed.',
+        'message'     => 'Unable to register the account. Please contact support team.',
         'status_code' => 422,
         'error_code'  => 'REGISTRATION_FAILED',
         'success'     => FALSE,
@@ -4116,7 +4167,23 @@ class H5PContentValidator {
   public $h5pF;
   public $h5pC;
   private $typeMap, $libraries, $dependencies, $nextWeight;
-  private static $allowed_styleable_tags = array('span', 'p', 'div','h1','h2','h3', 'td');
+  private static $allowed_styleable_tags = [
+    'span',
+    'p',
+    'div',
+    'h1',
+    'h2',
+    'h3',
+    'table',
+    'col',
+    'figure',
+    'td',
+    'th',
+    'li'
+  ];
+
+  /** @var bool Allowed styles status. */
+  protected $allowedStyles;
 
   /**
    * Constructor for the H5PContentValidator
@@ -4213,7 +4280,7 @@ class H5PContentValidator {
 
       // Add related tags for table etc.
       if (in_array('table', $tags)) {
-        $tags = array_merge($tags, array('tr', 'td', 'th', 'colgroup', 'thead', 'tbody', 'tfoot'));
+        $tags = array_merge($tags, array('tr', 'td', 'th', 'colgroup', 'col', 'thead', 'tbody', 'tfoot', 'figure', 'figcaption'));
       }
       if (in_array('b', $tags) && ! in_array('strong', $tags)) {
         $tags[] = 'strong';
@@ -4236,13 +4303,13 @@ class H5PContentValidator {
           $stylePatterns[] = '/^font-size: *[0-9.]+(em|px|%) *;?$/i';
         }
         if (isset($semantics->font->family) && $semantics->font->family) {
-          $stylePatterns[] = '/^font-family: *[-a-z0-9," ]+;?$/i';
+          $stylePatterns[] = '/^font-family: *[-a-z0-9,\'&; ]+;?$/i';
         }
         if (isset($semantics->font->color) && $semantics->font->color) {
-          $stylePatterns[] = '/^color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)) *;?$/i';
+          $stylePatterns[] = '/^color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)|hsla?\([0-9,.% ]+\)) *;?$/i';
         }
         if (isset($semantics->font->background) && $semantics->font->background) {
-          $stylePatterns[] = '/^background-color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)) *;?$/i';
+          $stylePatterns[] = '/^background-color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)|hsla?\([0-9,.% ]+\)) *;?$/i';
         }
         if (isset($semantics->font->spacing) && $semantics->font->spacing) {
           $stylePatterns[] = '/^letter-spacing: *[0-9.]+(em|px|%) *;?$/i';
@@ -4250,6 +4317,28 @@ class H5PContentValidator {
         if (isset($semantics->font->height) && $semantics->font->height) {
           $stylePatterns[] = '/^line-height: *[0-9.]+(em|px|%|) *;?$/i';
         }
+      }
+
+      // Allow styling of tables if they are allowed
+      if (isset($semantics->tags) && in_array('table', $semantics->tags)) {
+        // CKEditor outputs border as width style color
+        $stylePatterns[] = '/^border: *[0-9.]+(em|px|%|) *(none|solid|dotted|dashed|double|groove|ridge|inset|outset) *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)|hsla?\([0-9,.% ]+\)) *;?$/i';
+        $stylePatterns[] = '/^border-style: *(none|solid|dotted|dashed|double|groove|ridge|inset|outset) *;?$/i';
+        $stylePatterns[] = '/^border-width: *[0-9.]+(em|px|%|) *;?$/i';
+        $stylePatterns[] = '/^border-color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)|hsla?\([0-9,.% ]+\)) *;?$/i';
+
+        $stylePatterns[] = '/^vertical-align: *(middle|top|bottom);?$/i';
+        $stylePatterns[] = '/^padding: *[0-9.]+(em|px|%|) *;?$/i';
+        $stylePatterns[] = '/^width: *[0-9.]+(em|px|%|) *;?$/i';
+        $stylePatterns[] = '/^height: *[0-9.]+(em|px|%|) *;?$/i';
+        $stylePatterns[] = '/^float: *(right|left|none) *;?$/i';
+
+        // Needed for backwards compatibility
+        $stylePatterns[] = '/^border-collapse: *collapse *;?$/i';
+
+        // Table can have background color when font bgcolor is disabled
+        // Double entry of bgcolor in stylePatterns shouldn't matter
+        $stylePatterns[] = '/^background-color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)|hsla?\([0-9,.% ]+\)) *;?$/i';
       }
 
       // Alignment is allowed for all wysiwyg texts
@@ -4948,13 +5037,25 @@ class H5PContentValidator {
           if (preg_match('/^"([^"]*)"(\s+|$)/', $attr, $match)) {
             if ($allowedStyles && $attrName === 'style') {
               // Allow certain styles
+
+              // Prevent font family from getting split wrong because of the ; in &quot;
+              if (str_contains($match[1], 'font-family')) {
+                $match[1] = str_replace('&quot;', "'", $match[1]);
+              }
+
+              $validatedStyles = [];
+              $styles = explode(';', $match[1]);
+
               foreach ($allowedStyles as $pattern) {
-                if (preg_match($pattern, $match[1])) {
-                  // All patterns are start to end patterns, and CKEditor adds one span per style
-                  $attrArr[] = 'style="' . $match[1] . '"';
-                  break;
+                foreach ($styles as $style) {
+                  $style = trim($style);
+                  if (preg_match($pattern, $style)) {
+                    $validatedStyles[] = $style;
+                  }
                 }
               }
+
+              $attrArr[] = 'style="' . implode(';', $validatedStyles) . ';"';
               break;
             }
 

@@ -96,6 +96,7 @@ $string['importoptions'] = 'Opzioni di importazione';
 $string['invalidbackupfile'] = 'File di backup non valido';
 $string['invalidcourseformat'] = 'Formato di corso non valido';
 $string['invalidcsvfile'] = 'File CSV di input non valido';
+$string['invaliddownloadcontent'] = 'Download non valido del valore del contenuto del corso';
 $string['invalidencoding'] = 'Codifica non valida';
 $string['invalideupdatemode'] = 'Modalità di aggiornamento non valida';
 $string['invalidfullnametoolong'] = 'Il titolo deve essere lungo al massimo {$a} caratteri';

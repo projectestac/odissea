@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adhoctasks'] = 'Tarefas «ad hoc»';
 $string['asap'] = 'TCCSP (Tan Cedo Como Sexa Posíbel)';
 $string['blocking'] = 'Bloqueando';
 $string['component'] = 'Compoñente';
@@ -40,6 +41,7 @@ $string['plugindisabled'] = 'Engadido desactivado';
 $string['pluginname'] = 'Configuración de tarefas programadas';
 $string['resettasktodefaults'] = 'Restaurar as tarefas programadas aos valos predeterminados';
 $string['resettasktodefaults_help'] = 'Isto desbotará calquera cambio local e reverterá a programación para esta tarefa ás súas configuracións orixinais';
+$string['runningtasks'] = 'Tarefas en execución';
 $string['scheduledtaskchangesdisabled'] = 'Impedíronse modificacións á lista de tarefas programadas na configuración de Moodle';
 $string['scheduledtasks'] = 'Tarefas programadas';
 $string['taskdisabled'] = 'Tarefas desactivadas';

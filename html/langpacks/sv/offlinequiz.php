@@ -448,7 +448,6 @@ $string['printstudycodefield_help'] = 'Om markerat kommer studiekoden visas på 
 $string['privacy:data_folder_name'] = 'Offlinetest-data';
 $string['privacy:metadata:core_files'] = 'Offlinetest använder fil-API:t för att lagra de genererade frågebladen, svarsbladen och korrigeringsbladen samt de ifyllda svarsbladen.';
 $string['privacy:metadata:core_question'] = 'Offlinequiz använder fråge-API:t för att spara frågorna för kunskapstesten.';
-$string['privacy:metadata:mod_quiz'] = 'Offlinetest använder test-API:t för att spara resultat från kunskapstesten.';
 $string['privacy:metadata:offlinequiz'] = 'Tabellen offline-kunskapstest sparar all information som är specifik för en offlinekunskapstest-instans.';
 $string['privacy:metadata:offlinequiz:course'] = 'Kolumnen "course" i tabellen "offlinequiz" sparar i vilken kurs detta offline-kunskapstest lagras.';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'Antalet decimaler som ska beräknas för betygen.';

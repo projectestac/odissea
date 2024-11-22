@@ -41,11 +41,11 @@ $string['aggregatetype_help'] = 'Tipul de agregare stabilește modul în care ap
 * Sumă - Toate notele sunt adunate. Luați în considerare faptul că totalul nu poate fi mai mare decât nota maximă primită pentru activitate.
 
 Daca se selectează opțiunea "Fără aprecieri", activitatea nu va apărea în catalog.';
-$string['allowratings'] = 'Permiteți ca temele să fie evaluate?';
+$string['allowratings'] = 'Permiteți ca elemetele să fie evaluate?';
 $string['allratingsforitem'] = 'Toate aprecieri trimise';
 $string['capabilitychecknotavailable'] = 'Verificarea capabilității nu este disponibilă până când activitatea nu este salvată';
 $string['couldnotdeleteratings'] = 'Ne pare rău, nu se poate șterge deoarece a fost deja notată';
-$string['norate'] = 'Nu este posibilă notarea temelor!';
+$string['norate'] = 'Nu este posibilă notarea elementelor!';
 $string['noratings'] = 'Nu au fost trimise aprecieri';
 $string['noviewanyrate'] = 'Puteți să vizualizați doar notele pentru temele dumneavoastră!';
 $string['noviewrate'] = 'Nu aveți premisiunea să vedeți aprecierile';

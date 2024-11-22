@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_string'] = 'النشاط:';
-$string['backup_heavy_load_warning_message'] = 'إذا كان المقطع محتوياً على عدة نشاطات، سيكون وقت المعالجة أطول.';
-$string['conflict_description'] = 'هل ترغب بالكتابة على عنوان المقطع في المساق؟';
-$string['conflict_no_overwrite'] = 'الإبقاء على العنوان الحالي للمقطع <strong>"{$a}"</strong>';
-$string['conflict_overwrite_title'] = 'تغيير عنوان المقطع إلى <strong>"{$a}"</strong>';
+$string['backup_heavy_load_warning_message'] = 'إذا كان القسم محتوياً على عدة نشاطات، سيكون وقت المعالجة أطول.';
+$string['conflict_description'] = 'هل ترغب بالكتابة على عنوان القسم في المقرر؟';
+$string['conflict_no_overwrite'] = 'الإبقاء على العنوان الحالي للقسم <strong>"{$a}"</strong>';
+$string['conflict_overwrite_title'] = 'تغيير عنوان القسم إلى <strong>"{$a}"</strong>';
 $string['define_required_capabilities'] = 'يرجى تعريف الإمكانيات المطلوبة';
 $string['delete_folder'] = 'وكل محتوياته';
 $string['forbidden'] = 'ليست لديك أي صلاحيات للوصول إلى هذا العنصر المشترك';
@@ -43,5 +43,5 @@ $string['privacy:metadata:block_sharing_cart:modtext'] = 'عنوان وحدة ا
 $string['privacy:metadata:block_sharing_cart:tree'] = 'عنوان مجلد عربة المشاركة المعروض في الكتلة';
 $string['privacy:metadata:block_sharing_cart_plugins:plugin'] = 'اسم الإضافة';
 $string['restore_heavy_load_warning_message'] = 'وقت التحميل سيكون أطول لأنه تجري معالجة أكثر من 10 نشاطات/موارد.';
-$string['section_name_conflict'] = 'تضارب عنوان المقطع';
+$string['section_name_conflict'] = 'تضارب عنوان القسم';
 $string['sharing_cart:addinstance'] = 'إضافة كتلة جديدة من عربة المشاركة';

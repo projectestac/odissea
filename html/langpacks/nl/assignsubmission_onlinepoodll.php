@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['no'] = 'nee';
-$string['yes'] = 'ja';
+$string['no'] = 'Nee';
+$string['yes'] = 'Ja';

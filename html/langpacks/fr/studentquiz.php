@@ -120,7 +120,7 @@ $string['editedcomment_last_edit'] = 'Dernière modification :';
 $string['editedcommenthistory'] = 'Modifié par {$a->lastesteditedcommentauthorname} à {$a->lastededitedcommenttime}';
 $string['editedcommenthistorylinktext'] = 'Historique';
 $string['editedcommenthistorywithuserlink'] = 'Modifié par <a href="{$a->lastesteditedcommentauthorprofileurl}">{$a->lastesteditedcommentauthorname}</a> le {$a->lastededitedcommenttime}';
-$string['editorplaceholder'] = 'Saisissez votre commentaire ici...';
+$string['editorplaceholder'] = 'Saisissez votre commentaire ici…';
 $string['emailautomationnote'] = 'Veuillez prendre note qu’il s’agit d’un message automatisé – cette adresse courriel n’est pas vérifiée.';
 $string['emailcommentaddedbody'] = 'Bonjour {$a->recepientname},
 
@@ -390,7 +390,7 @@ $string['reportquiz_stats_all_questions_approved_help'] = 'Les enseignants peuve
 $string['reportquiz_stats_all_questions_created'] = 'Nombre de questions dans cette activité Test étudiant';
 $string['reportquiz_stats_all_questions_created_help'] = 'Nombre de questions créées par les participants';
 $string['reportquiz_stats_all_rates_average'] = 'Évaluation moyenne de toutes les questions';
-$string['reportquiz_stats_all_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu’elle a reçues par les participants.  Exemple : Les participants ont créé 4 questions. Si la question A a été notée 3 étoiles par ces derniers, la question B = 4 étoiles, la question C = 2 étoiles et la question D = 5 étoiles, alors la moyenne de toutes les questions est de 3,5.';
+$string['reportquiz_stats_all_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu’elle a reçues par les participants. Exemple : les participants ont créé 4 questions. Si la question A a été notée 3 étoiles par ces derniers, la question B = 4 étoiles, la question C = 2 étoiles et la question D = 5 étoiles, alors la moyenne de toutes les questions est de 3,5.';
 $string['reportquiz_stats_own_last_attempt_correct'] = 'Nombre de vos dernières réponses correctes';
 $string['reportquiz_stats_own_last_attempt_incorrect'] = 'Nombre de vos dernières réponses incorrectes';
 $string['reportquiz_stats_own_percentage_correct_answers'] = 'Pourcentage de vos réponses correctes';
@@ -406,7 +406,7 @@ $string['reportquiz_stats_own_questions_approved_help'] = 'Les enseignants peuve
 $string['reportquiz_stats_own_questions_created'] = 'Nombre de questions auxquelles vous avez contribué';
 $string['reportquiz_stats_own_questions_created_help'] = 'Nombre de questions auxquelles vous avez contribué dans cette activité Test étudiant.';
 $string['reportquiz_stats_own_rates_average'] = 'Vous avez reçu la note moyenne de';
-$string['reportquiz_stats_own_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu’elle a reçues des participants.  Exemple : Vous avez créé les questions A et B. Si votre question A a été notée 3 étoiles par les participants et votre question B 4 étoiles, alors la moyenne des notes que vous avez reçues est de 3,5.';
+$string['reportquiz_stats_own_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu’elle a reçues des participants. Exemple : vous avez créé les questions A et B. Si votre question A a été notée 3 étoiles par les participants et votre question B 4 étoiles, alors la moyenne des notes que vous avez reçues est de 3,5.';
 $string['reportquiz_stats_title'] = 'Statistiques';
 $string['reportquiz_total_attempt'] = 'Nombre de fois que l’utilisateur a lancé le quiz';
 $string['reportquiz_total_obtained_marks'] = 'Note totale';

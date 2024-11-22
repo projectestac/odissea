@@ -36,6 +36,7 @@ $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Visualizzare folder Dropbox';
 $string['instruction'] = 'Per ottenere un API Key ed il Secret abbinato: <a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>. Durante l\'impostazione della chiave scegliere "Full Dropbox" come "Access level".';
 $string['issuer'] = 'Servizio OAuth 2';
+$string['issuer_help'] = 'Selezionare il servizio OAuth 2 configurato per comunicare con l\'API Dropbox. Se il servizio non esiste ancora, sarà necessario crearlo.';
 $string['logoutdesc'] = '(esegui il logout al termine dell\'utilizzo di dropbox)';
 $string['notitle'] = 'senza titolo';
 $string['oauth2redirecturi'] = 'Redirect URI OAuth 2';

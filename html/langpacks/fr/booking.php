@@ -133,7 +133,7 @@ $string['alertrecalculate'] = '<b>Attention !</b> Tous les prix seront recalcul
 $string['allbookingoptions'] = 'Télécharger les utilisateurs pour toutes les options de réservation';
 $string['allchangessaved'] = 'Toutes les modifications ont été enregistrées.';
 $string['allcomments'] = 'Tout le monde peut commenter';
-$string['allmailssend'] = 'Tous les courriels aux utilisateurs ont été envoyés avec succès!';
+$string['allmailssend'] = 'Tous les courriels aux utilisateurs ont été envoyés avec succès !';
 $string['allowdelete'] = 'Autoriser les utilisateurs à annuler eux-mêmes leur réservation.';
 $string['allowupdate'] = 'Autoriser les réservations à être mises à jour';
 $string['allratings'] = 'Tout le monde peut évaluer';
@@ -145,7 +145,7 @@ $string['answer'] = 'Réponse';
 $string['answered'] = 'Répondu';
 $string['applyunitfactor'] = 'Appliquer le facteur d’unité';
 $string['applyunitfactor_desc'] = 'Si ce paramètre est actif, la durée de l’unité d’enseignement (par exemple 45 min) définie ci-dessus sera utilisée pour calculer le nombre d’unités d’enseignement. Ce nombre sera utilisé comme facteur pour la formule de prix.
- Exemple : Une option de réservation a une série de dates comme "Lun, 15:00 - 16:30". Il dure donc 2 unités pédagogiques (45 min chacune).
+ Exemple : une option de réservation a une série de dates comme "Lun, 15:00 - 16:30". Il dure donc 2 unités pédagogiques (45 min chacune).
  Ainsi, un facteur unitaire de 2 sera appliqué à la formule de prix.';
 $string['asglobaltemplate'] = 'Utiliser comme modèle global';
 $string['associatedcourse'] = 'Cours associé';
@@ -477,12 +477,12 @@ $string['courseendtime'] = 'Heure de fin du cours';
 $string['coursestarttime'] = 'Heure de début du cours';
 $string['csvfile'] = 'Fichier CSV';
 $string['csvfile_help'] = 'Le fichier CSV ne doit contenir qu’un colonne nommée Institution';
-$string['customlabels'] = 'Etiquettes personnalisées';
+$string['customlabels'] = 'Étiquettes personnalisées';
 $string['dateerror'] = 'Mauvaise date ligne {$a}:';
 $string['dateparseformat'] = 'Format de la date';
-$string['dateparseformat_help'] = 'Utilisez s’il vous plaît le format de date spécifié dans le fichier CSV. Consultez l’aide <a href="http://php.net/manual/en/function.date.php">this</a> pour les options options.';
+$string['dateparseformat_help'] = 'Veuillez utiliser le format de date spécifié dans le fichier CSV. Consultez l’aide <a href="https://php.net/manual/fr/function.date.php">ici</a> pour les options.';
 $string['days'] = '{$a} jours';
-$string['daystonotify'] = 'Combien de jours avant le début de l’événement faut-il notifier les participaints?';
+$string['daystonotify'] = 'Combien de jours avant le début de l’événement faut-il notifier les participants ?';
 $string['defaultbookingoption'] = 'Options de réservation par défaut';
 $string['defaultdateformat'] = 'j.n.Y H:i:s';
 $string['deletebooking'] = 'Voulez-vous vraiment vous désinscrire du cours suivant ? <br /><br /> <b>{$a} </b>';
@@ -516,7 +516,7 @@ $string['deletedtext_help'] = 'Laissez ce champ vide si vous voulez utiliser le 
 <li>{qr_id} - Insère le QR code avec l’id de l’utilisateur</li>
 <li>{qr_username} - Insère le QR code avec le nom d’utilisateur</li>
 </ul>';
-$string['deletesubcategory'] = 'Merci d’effacer toutes les sous-catégories de cette catégorie!';
+$string['deletesubcategory'] = 'Merci d’effacer toutes les sous-catégories de cette catégorie !';
 $string['deleteuserfrombooking'] = 'Voulez vous vraiment effacer les utilisateurs de la réservation ?';
 $string['disablebookingusers'] = 'Désactiver les réservations des utilisateurs - masquer le bouton "Réserver maintenant".';
 $string['donotselectcourse'] = 'Pas de cours sélectionné';
@@ -530,15 +530,15 @@ $string['edittag'] = 'Editer';
 $string['enablecompletion'] = 'Activer la réalisation d’activité.';
 $string['enablecompletiongroup'] = 'Réalisation d’activité';
 $string['endtimenotset'] = 'Date de fin non rensignée';
-$string['entervalidurl'] = 'Veuillez entrer une URL valide!';
-$string['error:failedtosendconfirmation'] = 'L’utilisateur suivant ne’a pas reçu d’email de confirmation
+$string['entervalidurl'] = 'Veuillez entrer une URL valide !';
+$string['error:failedtosendconfirmation'] = 'L’utilisateur suivant n’a pas reçu de courriel de confirmation
 
-Statut de réservation: {$a->status}
-Participant: {$a->participant}
-Cours: {$a->title}
-Date: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Lien: {$a->bookinglink}
-Cours associé: {$a->courselink}';
+Statut de réservation : {$a->status}
+Participant : {$a->participant}
+Cours : {$a->title}
+Date : {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
+Lien : {$a->bookinglink}
+Cours associé : {$a->courselink}';
 $string['eventduration'] = 'Durée de l’évènement';
 $string['eventpoints'] = 'Points';
 $string['eventreport_viewed'] = 'Rapport vu';
@@ -559,7 +559,7 @@ $string['importcsvbookingoption'] = 'Importer un fichier CSV avec options de ré
 $string['importcsvtitle'] = 'Importer un fichier CSV';
 $string['importexcelbutton'] = 'Importer la réalisation d’activité';
 $string['importexceltitle'] = 'Importer la réalisation d’activité';
-$string['importfinished'] = 'Importation terminée!';
+$string['importfinished'] = 'Importation terminée !';
 $string['institution'] = 'Institution';
 $string['institutionname'] = 'Nom de l’institution';
 $string['institutions'] = 'Institutions';
@@ -572,9 +572,9 @@ $string['lblsurname'] = 'Nom de l’étiquette "Prénom"';
 $string['lblteachname'] = 'Nom de l’étiquette "Professeurs"';
 $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limiter le nombre de participants';
-$string['limitanswers_help'] = 'Si vous changez cette option et que vous avez enregistré des personnes, vous pouvez les enlever sans notification!';
+$string['limitanswers_help'] = 'Si vous changez cette option et que vous avez enregistré des personnes, vous pouvez les enlever sans notification !';
 $string['location'] = 'Lieu';
-$string['mailconfirmationsent'] = 'Vous allez recevoir sous peu une confirmation par email';
+$string['mailconfirmationsent'] = 'Vous allez recevoir sous peu une confirmation par courriel';
 $string['managebooking'] = 'Gérer';
 $string['maxoverbooking'] = 'Nombre max. de places sur la liste d’attente';
 $string['maxparticipantsnumber'] = 'Nombre max. de participants';
@@ -626,7 +626,7 @@ $string['notificationtext_help'] = 'Laissez ce champ vide pour utilliser le text
 </ul>';
 $string['notopenyet'] = 'Désolé cette activité est indisponible jusqu’au {$a}';
 $string['nouserfound'] = 'Pas d’utillisateur trouvé:';
-$string['nousers'] = 'Pas d’utilisateurs!';
+$string['nousers'] = 'Pas d’utilisateurs !';
 $string['onlythisbookingurl'] = 'Seulement cette URL de réservation';
 $string['onwaitinglist'] = 'Vous êtes sur la liste d’attente';
 $string['optionid'] = 'ID d’option';
@@ -744,15 +744,15 @@ $string['rootcategory'] = 'Racine';
 $string['savenewtagtemplate'] = 'Sauvegarder';
 $string['searchtag'] = 'Étiquettes de recherche';
 $string['select'] = 'Sélection';
-$string['selectatleastoneuser'] = 'Merci de sélectionner au moins 1 utilisateur!';
+$string['selectatleastoneuser'] = 'Merci de sélectionner au moins 1 utilisateur !';
 $string['selectcategory'] = 'Sélectionner la catégorie';
 $string['sendcustommessage'] = 'Envoyer un message personnalisé';
-$string['sendmailtobooker'] = 'Page de réservation pour les autres utilisateurs : Envoyer un email aux utilisateurs qui réservent plutôt qu’aux utilisateurs qui sont réservés';
-$string['sendmailtobooker_help'] = 'Activez cette option afin d’envoyer des mails de confirmation de réservation à l’utilisateur qui inscrit d’autres utilisateurs au lieu des utilisateurs, qui ont été ajoutés à une option de réservation.
+$string['sendmailtobooker'] = 'Page de réservation pour les autres utilisateurs : envoyer un courriel aux utilisateurs qui réservent plutôt qu’aux utilisateurs qui sont réservés';
+$string['sendmailtobooker_help'] = 'Activez cette option afin d’envoyer des courriels de confirmation de réservation à l’utilisateur qui inscrit d’autres utilisateurs au lieu des utilisateurs qui ont été ajoutés à une option de réservation.
 Ceci n’est pertinent que pour les réservations effectuées sur la page "inscrire d’autres utilisateurs".';
 $string['showactive'] = 'Ne montrer que les réservations actives';
 $string['showallbookings'] = 'Montrer un aperçu des inscriptions pour toutes les réservations';
-$string['showinapi'] = 'Montrer dans l’API?';
+$string['showinapi'] = 'Montrer dans l’API ?';
 $string['spaceleft'] = 'espace disponible';
 $string['spacesleft'] = 'espaces disponibles';
 $string['startendtimeknown'] = 'Les dates de début et fin de cours sont connues';
@@ -783,6 +783,7 @@ $string['statuschangetext_help'] = 'Laissez ce champ vide pour utiliser le texte
 <li>{qr_username} - Insère le QR code avec le nom d’utilisateur</li>
 </ul>';
 $string['submitandaddnew'] = 'Sauvegarder et ajouter un nouveau';
+$string['submitandgoback'] = 'Enregistrer et retour';
 $string['subscribersto'] = 'Professeurs pour « {$a} »';
 $string['subscribetocourse'] = 'Inscrivez les utilisateurs au cours';
 $string['subscribeuser'] = 'Voulez-vous vraiment inscrire les utilisateurs au cours suivant';
@@ -796,7 +797,7 @@ $string['timerestrict'] = 'Restreindre les réponses à cette période de temps'
 $string['to'] = 'à';
 $string['toomuchusersbooked'] = 'Le nombre maximal d’utilisateurs que vous pouvez inscrire est de {$a}';
 $string['updatebooking'] = 'Editer cette option de réservation';
-$string['usedinbooking'] = 'Vous ne pouvez pas supprimer cette catégorie, parce que vous utilisez la réservation!';
+$string['usedinbooking'] = 'Vous ne pouvez pas supprimer cette catégorie, parce que vous utilisez la réservation !';
 $string['userdownload'] = 'Télécharger les utilisateurs';
 $string['userleave'] = 'L’utilisation quitte la réservation';
 $string['userleave_help'] = 'Laissez ce champ vide pour utiliser le texte par défaut du site. Vous pouvez utiliser les variables suivantes dans le texte:
@@ -825,7 +826,7 @@ $string['userleave_help'] = 'Laissez ce champ vide pour utiliser le texte par d�
 </ul>';
 $string['usernameofbookingmanager'] = 'Nom d’utilisateur du gestionnaire de réservation';
 $string['usernameofbookingmanager_help'] = 'Nom d’utilisateur de l’utilisateur qui sera affiché dans le champ "De" des notifications de confirmation.
-Si l’option "Envoyer l’email de confirmation au gestionnaire de réservation" est activée, c’est l’utilisateur qui reçoit une copie des notifications de confirmation.';
+Si l’option "Envoyer le courriel de confirmation au gestionnaire de réservation" est activée, c’est l’utilisateur qui reçoit une copie des notifications de confirmation.';
 $string['viewallresponses'] = 'Gérer {$a} réponses';
 $string['waitinglist'] = 'Sur liste d’attente';
 $string['waitinglisttaken'] = 'Sur la liste d’attente';
@@ -858,6 +859,6 @@ $string['waitingtext_help'] = 'Laissez ce champ vide pour utiliser le texte par 
 </ul>';
 $string['waitspaceavailable'] = 'Places disponibles sur la liste d’attente';
 $string['withselected'] = 'Avec les utilisateurs sélectionnés:';
-$string['wrongdataallfields'] = 'Merci de remplir tous les champs!';
+$string['wrongdataallfields'] = 'Merci de remplir tous les champs !';
 $string['yes'] = 'Oui';
 $string['yourselection'] = 'Votre sélection';

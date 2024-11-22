@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = 'Voeg een nieuw berichtenblok toe';
-$string['messages:myaddinstance'] = 'Voeg een nieuw loginblok toe aan Mijn startpagina.';
+$string['messages:myaddinstance'] = 'Voeg een nieuw berichtenblok toe aan Mijn startpagina.';
 $string['pluginname'] = 'Berichten';

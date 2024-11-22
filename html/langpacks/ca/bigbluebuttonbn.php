@@ -109,6 +109,7 @@ $string['modulename_help'] = 'BigBlueButtonBN us permet crear, dins Moodle, enll
 
 Si utilititzeu BigBlueButtonBN, podeu indicar-hi el títol, la descripció, una entrada al calendari (la qual dona un interval de dates per unir-se a la sessió), els grups, i detalls sobre l’enregistrament de la sessió en línia.';
 $string['modulename_link'] = 'BigBlueButton/view';
+$string['search:activity'] = 'BigBlueButton: informació de l\'activitat';
 $string['started_at'] = 'Ha començat';
 $string['starts_at'] = 'Comença';
 $string['userlimitreached'] = 'S\'ha arribat al nombre d\'usuaris permesos en una sessió.';

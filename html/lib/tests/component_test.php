@@ -22,8 +22,7 @@
  * @copyright  2013 Petr Skoda {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class component_test extends advanced_testcase {
-
+final class component_test extends advanced_testcase {
     /**
      * To be changed if number of subsystems increases/decreases,
      * this is defined here to annoy devs that try to add more without any thinking,
@@ -41,13 +40,15 @@ class component_test extends advanced_testcase {
         $this->oldpsr4namespaces = $psr4namespaces->getValue(null);
     }
     public function tearDown(): void {
-        $psr0namespaces = new ReflectionProperty('core_component', 'psr0namespaces');
+        $psr0namespaces = new ReflectionProperty(\core_component::class, 'psr0namespaces');
         $psr0namespaces->setAccessible(true);
         $psr0namespaces->setValue(null, $this->oldpsr0namespaces);
 
-        $psr4namespaces = new ReflectionProperty('core_component', 'psr4namespaces');
+        $psr4namespaces = new ReflectionProperty(\core_component::class, 'psr4namespaces');
         $psr4namespaces->setAccessible(true);
         $psr4namespaces->setValue(null, $this->oldpsr4namespaces);
+
+        \core_component::reset();
     }
 
     public function test_get_core_subsystems() {
@@ -393,6 +394,73 @@ class component_test extends advanced_testcase {
         }
     }
 
+    /**
+     * Unit tests for get_component_from_classname.
+     *
+     * @dataProvider get_component_from_classname_provider
+     * @param string $classname The class name to test
+     * @param string|null $expected The expected component
+     * @covers \core_component::get_component_from_classname
+     */
+    public function test_get_component_from_classname(
+        string $classname,
+        $expected
+    ): void {
+        $this->assertEquals(
+            $expected,
+            \core_component::get_component_from_classname($classname),
+        );
+    }
+
+    /**
+     * Data provider for get_component_from_classname tests.
+     *
+     * @return array
+     */
+    public static function get_component_from_classname_provider(): array {
+        // Start off with testcases which have the leading \.
+        $testcases = [
+            // Core.
+            [\core\example::class, 'core'],
+
+            // A core subsystem.
+            [\core_message\example::class, 'core_message'],
+
+            // A fake core subsystem.
+            [\core_fake\example::class, null],
+
+            // A plugin.
+            [\mod_forum\example::class, 'mod_forum'],
+
+            // A plugin in the old style is not supported.
+            [\mod_forum_example::class, null],
+
+            // A fake plugin.
+            [\mod_fake\example::class, null],
+
+            // A subplugin.
+            [\tiny_link\example::class, 'tiny_link'],
+        ];
+
+        // Duplicate the testcases, adding a nested namespace.
+        $testcases = array_merge(
+            $testcases,
+            array_map(
+                fn ($testcase) => [$testcase[0] . '\\in\\sub\\directory', $testcase[1]],
+                $testcases,
+            ),
+        );
+
+        // Duplicate the testcases, removing the leading \.
+        return array_merge(
+            $testcases,
+            array_map(
+                fn ($testcase) => [ltrim($testcase[0], '\\'), $testcase[1]],
+                $testcases,
+            ),
+        );
+    }
+
     public function test_deprecated_get_component_directory() {
         $plugintypes = core_component::get_plugin_types();
         foreach ($plugintypes as $plugintype => $fulldir) {
@@ -491,8 +559,10 @@ class component_test extends advanced_testcase {
         $this->assertEquals(array(), array_keys($list));
     }
 
-    public function test_get_component_classes_in_namespace() {
-
+    /**
+     * Tests for get_component_classes_in_namespace.
+     */
+    public function test_get_component_classes_in_namespace(): void {
         // Unexisting.
         $this->assertCount(0, core_component::get_component_classes_in_namespace('core_unexistingcomponent', 'something'));
         $this->assertCount(0, core_component::get_component_classes_in_namespace('auth_cas', 'something'));
@@ -502,40 +572,125 @@ class component_test extends advanced_testcase {
         $this->assertCount(0, core_component::get_component_classes_in_namespace('core_user', 'course'));
         $this->assertCount(0, core_component::get_component_classes_in_namespace('mod_forum', 'output\\emaildigest'));
         $this->assertCount(0, core_component::get_component_classes_in_namespace('mod_forum', '\\output\\emaildigest'));
-        $this->assertCount(2, core_component::get_component_classes_in_namespace('mod_forum', 'output\\email'));
-        $this->assertCount(2, core_component::get_component_classes_in_namespace('mod_forum', '\\output\\email'));
-        $this->assertCount(2, core_component::get_component_classes_in_namespace('mod_forum', 'output\\email\\'));
-        $this->assertCount(2, core_component::get_component_classes_in_namespace('mod_forum', '\\output\\email\\'));
-
-        // Prefix with backslash if it doesn\'t come prefixed.
-        $this->assertCount(1, core_component::get_component_classes_in_namespace('auth_cas', 'task'));
-        $this->assertCount(1, core_component::get_component_classes_in_namespace('auth_cas', '\\task'));
-
-        // Core as a component works, the function can normalise the component name.
-        $this->assertCount(7, core_component::get_component_classes_in_namespace('core', 'update'));
-        $this->assertCount(7, core_component::get_component_classes_in_namespace('', 'update'));
-        $this->assertCount(7, core_component::get_component_classes_in_namespace('moodle', 'update'));
-
-        // Multiple levels.
-        $this->assertCount(5, core_component::get_component_classes_in_namespace('core_user', '\\output\\myprofile\\'));
-        $this->assertCount(5, core_component::get_component_classes_in_namespace('core_user', 'output\\myprofile\\'));
-        $this->assertCount(5, core_component::get_component_classes_in_namespace('core_user', '\\output\\myprofile'));
-        $this->assertCount(5, core_component::get_component_classes_in_namespace('core_user', 'output\\myprofile'));
-
-        // Without namespace it returns classes/ classes.
-        $this->assertCount(6, core_component::get_component_classes_in_namespace('tool_mobile', ''));
-        $this->assertCount(2, core_component::get_component_classes_in_namespace('tool_filetypes'));
-
-        // When no component is specified, classes are returned for the namespace in all components.
-        // (We don't assert exact amounts here as the count of `output` classes will change depending on plugins installed).
-        $this->assertGreaterThan(
-            count(\core_component::get_component_classes_in_namespace('core', 'output')),
-            count(\core_component::get_component_classes_in_namespace(null, 'output')));
 
         // Without either a component or namespace it returns an empty array.
         $this->assertEmpty(\core_component::get_component_classes_in_namespace());
         $this->assertEmpty(\core_component::get_component_classes_in_namespace(null));
         $this->assertEmpty(\core_component::get_component_classes_in_namespace(null, ''));
+    }
+
+    /**
+     * Test that the get_component_classes_in_namespace() function returns classes in the correct namespace.
+     *
+     * @dataProvider get_component_classes_in_namespace_provider
+     * @param array $methodargs
+     * @param string $expectedclassnameformat
+     */
+    public function test_get_component_classes_in_namespace_provider(
+        array $methodargs,
+        string $expectedclassnameformat
+    ): void {
+        $classlist = core_component::get_component_classes_in_namespace(...$methodargs);
+        $this->assertGreaterThan(0, count($classlist));
+
+        foreach (array_keys($classlist) as $classname) {
+            $this->assertStringMatchesFormat($expectedclassnameformat, $classname);
+        }
+    }
+
+    /**
+     * Data provider for get_component_classes_in_namespace tests.
+     *
+     * @return array
+     */
+    public static function get_component_classes_in_namespace_provider(): array {
+        return [
+            // Matches the last namespace level name not partials.
+            [
+                ['mod_forum', 'output\\email'],
+                'mod_forum\output\email\%s',
+            ],
+            [
+                ['mod_forum', '\\output\\email'],
+                'mod_forum\output\email\%s',
+            ],
+            [
+                ['mod_forum', 'output\\email\\'],
+                'mod_forum\output\email\%s',
+            ],
+            [
+                ['mod_forum', '\\output\\email\\'],
+                'mod_forum\output\email\%s',
+            ],
+            // Prefix with backslash if it doesn\'t come prefixed.
+            [
+                ['auth_cas', 'task'],
+                'auth_cas\task\%s',
+            ],
+            [
+                ['auth_cas', '\\task'],
+                'auth_cas\task\%s',
+            ],
+
+            // Core as a component works, the function can normalise the component name.
+            [
+                ['core', 'update'],
+                'core\update\%s',
+            ],
+            [
+                ['', 'update'],
+                'core\update\%s',
+            ],
+            [
+                ['moodle', 'update'],
+                'core\update\%s',
+            ],
+
+            // Multiple levels.
+            [
+                ['core_user', '\\output\\myprofile\\'],
+                'core_user\output\myprofile\%s',
+            ],
+            [
+                ['core_user', 'output\\myprofile\\'],
+                'core_user\output\myprofile\%s',
+            ],
+            [
+                ['core_user', '\\output\\myprofile'],
+                'core_user\output\myprofile\%s',
+            ],
+            [
+                ['core_user', 'output\\myprofile'],
+                'core_user\output\myprofile\%s',
+            ],
+
+            // Without namespace it returns classes/ classes.
+            [
+                ['tool_mobile', ''],
+                'tool_mobile\%s',
+            ],
+            [
+                ['tool_filetypes'],
+                'tool_filetypes\%s',
+            ],
+
+            // Multiple levels.
+            [
+                ['core_user', '\\output\\myprofile\\'],
+                'core_user\output\myprofile\%s',
+            ],
+
+            // When no component is specified, classes are returned for the namespace in all components.
+            // (We don't assert exact amounts here as the count of `output` classes will change depending on plugins installed).
+            [
+                ['core', 'output'],
+                'core\%s',
+            ],
+            [
+                [null, 'output'],
+                '%s',
+            ],
+        ];
     }
 
     /**
@@ -559,54 +714,54 @@ class component_test extends advanced_testcase {
           'overlap'   => 'lib/tests/fixtures/component/overlap'
         ];
         return [
-          'PSR-0 Classloading - Root' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0_main',
-              'includedfiles' => "{$directory}psr0/main.php",
-          ],
-          'PSR-0 Classloading - Sub namespace - underscores' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0_subnamespace_example',
-              'includedfiles' => "{$directory}psr0/subnamespace/example.php",
-          ],
-          'PSR-0 Classloading - Sub namespace - slashes' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0\\subnamespace\\slashes',
-              'includedfiles' => "{$directory}psr0/subnamespace/slashes.php",
-          ],
-          'PSR-4 Classloading - Root' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\main',
-              'includedfiles' => "{$directory}psr4/main.php",
-          ],
-          'PSR-4 Classloading - Sub namespace' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\subnamespace\\example',
-              'includedfiles' => "{$directory}psr4/subnamespace/example.php",
-          ],
-          'PSR-4 Classloading - Ensure underscores are not converted to paths' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\subnamespace\\underscore_example',
-              'includedfiles' => "{$directory}psr4/subnamespace/underscore_example.php",
-          ],
-          'Overlap - Ensure no unexpected problems with PSR-4 when overlapping namespaces.' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'overlap\\subnamespace\\example',
-              'includedfiles' => "{$directory}overlap/subnamespace/example.php",
-          ],
-          'Overlap - Ensure no unexpected problems with PSR-0 overlapping namespaces.' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'overlap_subnamespace_example2',
-              'includedfiles' => "{$directory}overlap/subnamespace/example2.php",
-          ],
+            'PSR-0 Classloading - Root' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0_main',
+                'includedfiles' => "{$directory}psr0/main.php",
+            ],
+            'PSR-0 Classloading - Sub namespace - underscores' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0_subnamespace_example',
+                'includedfiles' => "{$directory}psr0/subnamespace/example.php",
+            ],
+            'PSR-0 Classloading - Sub namespace - slashes' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0\\subnamespace\\slashes',
+                'includedfiles' => "{$directory}psr0/subnamespace/slashes.php",
+            ],
+            'PSR-4 Classloading - Root' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\main',
+                'includedfiles' => "{$directory}psr4/main.php",
+            ],
+            'PSR-4 Classloading - Sub namespace' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\subnamespace\\example',
+                'includedfiles' => "{$directory}psr4/subnamespace/example.php",
+            ],
+            'PSR-4 Classloading - Ensure underscores are not converted to paths' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\subnamespace\\underscore_example',
+                'includedfiles' => "{$directory}psr4/subnamespace/underscore_example.php",
+            ],
+            'Overlap - Ensure no unexpected problems with PSR-4 when overlapping namespaces.' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'overlap\\subnamespace\\example',
+                'includedfiles' => "{$directory}overlap/subnamespace/example.php",
+            ],
+            'Overlap - Ensure no unexpected problems with PSR-0 overlapping namespaces.' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'overlap_subnamespace_example2',
+                'includedfiles' => "{$directory}overlap/subnamespace/example2.php",
+            ],
         ];
     }
 
@@ -658,67 +813,125 @@ class component_test extends advanced_testcase {
           'overlap'   => 'lib/tests/fixtures/component/overlap'
         ];
         return [
-          'PSR-0 Classloading - Root' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0_main',
-              'file' => "{$directory}psr0/main.php",
-          ],
-          'PSR-0 Classloading - Sub namespace - underscores' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0_subnamespace_example',
-              'file' => "{$directory}psr0/subnamespace/example.php",
-          ],
-          'PSR-0 Classloading - Sub namespace - slashes' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0\\subnamespace\\slashes',
-              'file' => "{$directory}psr0/subnamespace/slashes.php",
-          ],
-          'PSR-0 Classloading - non-existant file' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr0_subnamespace_nonexistant_file',
-              'file' => false,
-          ],
-          'PSR-4 Classloading - Root' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\main',
-              'file' => "{$directory}psr4/main.php",
-          ],
-          'PSR-4 Classloading - Sub namespace' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\subnamespace\\example',
-              'file' => "{$directory}psr4/subnamespace/example.php",
-          ],
-          'PSR-4 Classloading - Ensure underscores are not converted to paths' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\subnamespace\\underscore_example',
-              'file' => "{$directory}psr4/subnamespace/underscore_example.php",
-          ],
-          'PSR-4 Classloading - non-existant file' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'psr4\\subnamespace\\nonexistant',
-              'file' => false,
-          ],
-          'Overlap - Ensure no unexpected problems with PSR-4 when overlapping namespaces.' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'overlap\\subnamespace\\example',
-              'file' => "{$directory}overlap/subnamespace/example.php",
-          ],
-          'Overlap - Ensure no unexpected problems with PSR-0 overlapping namespaces.' => [
-              'psr0' => $psr0,
-              'psr4' => $psr4,
-              'classname' => 'overlap_subnamespace_example2',
-              'file' => "{$directory}overlap/subnamespace/example2.php",
-          ],
+            'PSR-0 Classloading - Root' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0_main',
+                'file' => "{$directory}psr0/main.php",
+            ],
+            'PSR-0 Classloading - Sub namespace - underscores' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0_subnamespace_example',
+                'file' => "{$directory}psr0/subnamespace/example.php",
+            ],
+            'PSR-0 Classloading - Sub namespace - slashes' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0\\subnamespace\\slashes',
+                'file' => "{$directory}psr0/subnamespace/slashes.php",
+            ],
+            'PSR-0 Classloading - non-existant file' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr0_subnamespace_nonexistant_file',
+                'file' => false,
+            ],
+            'PSR-4 Classloading - Root' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\main',
+                'file' => "{$directory}psr4/main.php",
+            ],
+            'PSR-4 Classloading - Sub namespace' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\subnamespace\\example',
+                'file' => "{$directory}psr4/subnamespace/example.php",
+            ],
+            'PSR-4 Classloading - Ensure underscores are not converted to paths' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\subnamespace\\underscore_example',
+                'file' => "{$directory}psr4/subnamespace/underscore_example.php",
+            ],
+            'PSR-4 Classloading - non-existant file' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'psr4\\subnamespace\\nonexistant',
+                'file' => false,
+            ],
+            'Overlap - Ensure no unexpected problems with PSR-4 when overlapping namespaces.' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'overlap\\subnamespace\\example',
+                'file' => "{$directory}overlap/subnamespace/example.php",
+            ],
+            'Overlap - Ensure no unexpected problems with PSR-0 overlapping namespaces.' => [
+                'psr0' => $psr0,
+                'psr4' => $psr4,
+                'classname' => 'overlap_subnamespace_example2',
+                'file' => "{$directory}overlap/subnamespace/example2.php",
+            ],
         ];
+    }
+
+    /**
+     * Test that the classloader can load from the test namespaces.
+     */
+    public function test_classloader_tests_namespace(): void {
+        global $CFG;
+
+        $this->resetAfterTest();
+
+        $getclassfilecontent = function (string $classname, ?string $namespace): string {
+            if ($namespace) {
+                $content = "<?php\nnamespace $namespace;\nclass $classname {}";
+            } else {
+                $content = "<?php\nclass $classname {}";
+            }
+            return $content;
+        };
+
+        $vfileroot = \org\bovigo\vfs\vfsStream::setup('root', null, [
+            'lib' => [
+                'classes' => [
+                    'example.php' => $getclassfilecontent('example', 'core'),
+                ],
+                'tests' => [
+                    'classes' => [
+                        'example_classname.php' => $getclassfilecontent('example_classname', \core\tests::class),
+                    ],
+                    'behat' => [
+                        'example_classname.php' => $getclassfilecontent('example_classname', \core\behat::class),
+                    ],
+                ],
+            ],
+        ]);
+
+        // Note: This is pretty hacky, but it's the only way to test the classloader.
+        // We have to override the dirroot and libdir, and then reset the plugintypes property.
+        $CFG->dirroot = $vfileroot->url();
+        $CFG->libdir = $vfileroot->url() . '/lib';
+        \core_component::reset();
+
+        // Existing classes do not break.
+        $this->assertTrue(
+            class_exists(\core\example::class),
+        );
+
+        // Test and behat classes work.
+        $this->assertTrue(
+            class_exists(\core\tests\example_classname::class),
+        );
+        $this->assertTrue(
+            class_exists(\core\behat\example_classname::class),
+        );
+
+        // Non-existent classes do not do anything.
+        $this->assertFalse(
+            class_exists(\core\tests\example_classname_not_found::class),
+        );
     }
 
     /**
@@ -837,22 +1050,31 @@ class component_test extends advanced_testcase {
 
     /**
      * Test the get_component_names() method.
+     *
+     * @dataProvider get_component_names_provider
+     * @param bool $includecore Whether to include core in the list.
+     * @param bool $coreexpected Whether core is expected to be in the list.
      */
-    public function test_get_component_names() {
+    public function test_get_component_names(
+        bool $includecore,
+        bool $coreexpected
+    ): void {
         global $CFG;
-        $componentnames = \core_component::get_component_names();
+        $componentnames = \core_component::get_component_names($includecore);
 
         // We should have an entry for each plugin type.
         $plugintypes = \core_component::get_plugin_types();
         $numplugintypes = 0;
-        foreach ($plugintypes as $type => $typedir) {
-            foreach (\core_component::get_plugin_list($type) as $plugin) {
-                $numplugintypes++;
-            }
+        foreach (array_keys($plugintypes) as $type) {
+            $numplugintypes += count(\core_component::get_plugin_list($type));
         }
         // And an entry for each core subsystem.
         $numcomponents = $numplugintypes + count(\core_component::get_core_subsystems());
 
+        if ($coreexpected) {
+            // Add one for core.
+            $numcomponents++;
+        }
         $this->assertEquals($numcomponents, count($componentnames));
 
         // Check a few of the known plugin types to confirm their presence at their respective type index.
@@ -860,6 +1082,23 @@ class component_test extends advanced_testcase {
         $this->assertContains('mod_forum', $componentnames);
         $this->assertContains('tool_usertours', $componentnames);
         $this->assertContains('core_favourites', $componentnames);
+        if ($coreexpected) {
+            $this->assertContains('core', $componentnames);
+        } else {
+            $this->assertNotContains('core', $componentnames);
+        }
+    }
+
+    /**
+     * Data provider for get_component_names() test.
+     *
+     * @return array
+     */
+    public static function get_component_names_provider(): array {
+        return [
+            [false, false],
+            [true, true],
+        ];
     }
 
     /**

@@ -99,7 +99,7 @@ $string['onehour'] = 'Ordubete';
 $string['oneweek'] = 'Astebete';
 $string['oneyear'] = 'Urtebete';
 $string['pluginname'] = 'Sarrera-mezuen ezarpenak';
-$string['privacy:metadata:coreuserkey'] = 'Jasotako e-maila egiaztatzeko erabiltzaile-gakoak';
+$string['privacy:metadata:coreuserkey'] = 'Jasotako e-maila balioztatzeko erabiltzaile-gakoak';
 $string['privacy:metadata:messagelist'] = 'Balidazioak huts egin duen eta egiaztatze gehiago behar duten mezuen identifikatzaileen zerrenda';
 $string['privacy:metadata:messagelist:address'] = 'E-maila bidali zeneko helbidea';
 $string['privacy:metadata:messagelist:messageid'] = 'Mezuaren IDa';
@@ -115,7 +115,7 @@ $string['taskpickup'] = 'Eskuratu sarrera e-mailak';
 $string['tls'] = 'TLS (TLS; zifratu gabeko kanal batean protokolo-mailako negoziazioaren bidez hasitakoa; konexio segurua hasteko GOMENDATUTAKO modua)';
 $string['tlsv1'] = 'TLSv1 (zerbitzarietara TLS direct 1.x bertsioak erabiliz konektatzeko)';
 $string['validateaddress'] = 'Balioztatu Igorlearen helbide elektronikoa';
-$string['validateaddress_help'] = 'Erabiltzaile baten mezu bat jasotzen denean, Moodle mezua egiaztatzen saiatzen da igorlearen helbide elektronikoa eta erabiltzaile-profileko helbide elektronikoa konparatuz.
+$string['validateaddress_help'] = 'Erabiltzaile baten mezu bat jasotzen denean, Moodle mezua balioztatzen saiatzen da igorlearen helbide elektronikoa eta erabiltzaile-profileko helbide elektronikoa konparatuz.
 
 Igorlearen helbidea bat ez badator, erabiltzaileari jakinarazpen bat bidaltzen zaio e-maila berak bidali duela egiaztatzeko.
 

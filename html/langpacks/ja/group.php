@@ -61,12 +61,12 @@ $string['editgroupingsettings'] = 'グルーピング設定を編集する';
 $string['editgroupsettings'] = 'グループ設定を編集する';
 $string['editusersgroupsa'] = '「 {$a} 」のグループを編集する';
 $string['enablemessaging'] = 'グループメッセージング';
-$string['enablemessaging_help'] = 'この設定を有効にした場合、グループメンバはメッセージングドロワを使用してグループ内の他の人にメッセージを送信することができます。';
+$string['enablemessaging_help'] = 'この設定を有効にした場合、グループメンバはメッセージングドロワを使用してグループ内の他の人にメッセージを送信できます。';
 $string['encoding'] = 'エンコーディング';
 $string['enrolmentkey'] = '登録キー';
-$string['enrolmentkey_help'] = '登録キーによりキーを知っているユーザにのみ限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバとして登録されます。
+$string['enrolmentkey_help'] = '登録キーでキーを知っているユーザにのみコースアクセスを制限できます。グループ登録キーが指定された場合、ユーザがそのキーを入力してコースに登録されるだけでなく、自動的にこのグループのメンバとなります。
 
-注意: 自己登録設定において、グループ登録キーを有効にする必要があります。同時にコース登録キーも指定する必要があります。';
+注意: 自己登録設定でグループ登録キーを有効にする必要があります。またコース登録キーも指定する必要があります。';
 $string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['erroraddremoveuser'] = 'ユーザ {$a} のグループ登録/削除中にエラーが発生しました。';
 $string['erroreditgroup'] = 'グループ {$a} の作成/更新中にエラーが発生しました。';
@@ -75,7 +75,7 @@ $string['errorinvalidgroup'] = 'エラー、無効なグループです: {$a}';
 $string['errorremovenotpermitted'] = 'あなたには自動的に追加されたメンバ {$a} を削除するためのパーミッションがありません。';
 $string['errorselectone'] = 'このオプションを選択する前に単一グループを選択してください。';
 $string['errorselectsome'] = 'このオプションを選択する前に1つまたはそれ以上のグループを選択してください。';
-$string['evenallocation'] = '注意: 割り当てを均等にするため、グループごとの実際のメンバ数はあなたが指定した数と異なります。';
+$string['evenallocation'] = '注意: 割り当てを均等にするため、グループごとの実際のメンバ数はあなたが指定した数とは異なります。';
 $string['eventgroupcreated'] = 'グループが作成されました。';
 $string['eventgroupdeleted'] = 'グループが削除されました。';
 $string['eventgroupingcreated'] = 'グルーピングが作成されました。';
@@ -92,37 +92,37 @@ $string['filtergroups'] = 'グループをフィルタする:';
 $string['group'] = 'グループ';
 $string['groupaddedsuccesfully'] = 'グループ「 {$a} 」が正常に追加されました。';
 $string['groupaddedtogroupingsuccesfully'] = 'グループ「 {$a->groupname} 」がグルーピング「 {$a->groupingname} 」に正常に追加されました。';
-$string['groupby'] = '次の数に基づいて自動作成する';
+$string['groupby'] = '次に基づいて自動作成する';
 $string['groupdescription'] = 'グループ説明';
-$string['groupinfo'] = '選択したグループの情報';
-$string['groupinfomembers'] = '選択したメンバの情報';
-$string['groupinfopeople'] = '選択した人の情報';
+$string['groupinfo'] = '選択したグループに関する情報';
+$string['groupinfomembers'] = '選択したメンバに関する情報';
+$string['groupinfopeople'] = '選択した人に関する情報';
 $string['grouping'] = 'グルーピング';
-$string['grouping_help'] = 'グルーピングはコース内のグループ群です。グルーピングが選択された場合、グルーピング内のグループに割り当てられた学生は共同で作業することができます。';
+$string['grouping_help'] = 'グルーピングはコース内のグループの集合です。グルーピングが選択された場合、グルーピング内のグループに割り当てられた学生は共同作業ができます。';
 $string['groupingaddedsuccesfully'] = 'グルーピング「 {$a} 」が正常に追加されました。';
 $string['groupingdescription'] = 'グルーピング説明';
 $string['groupingname'] = 'グルーピング名';
-$string['groupingnameexists'] = 'グルーピング名「 {$a} 」はすでにこのコースで使用されています。他のグルーピング名を使用してください。';
+$string['groupingnameexists'] = 'グルーピング名「 {$a} 」はすでにこのコースで使用されています。別のものを選択してください。';
 $string['groupings'] = 'グルーピング';
 $string['groupingsection'] = 'グルーピングアクセス';
-$string['groupingsection_help'] = 'グルーピングはコース内のグループの集まりです。ここでグルーピングが選択された場合、グルーピング内のグループに属している学生のみ、セクションにアクセスすることができます。';
+$string['groupingsection_help'] = 'グルーピングはコース内のグループの集まりです。ここでグルーピングが選択された場合、このグルーピング内のグループに属している学生のみ、セクションにアクセスできます。';
 $string['groupingsonly'] = 'グルーピングのみ';
 $string['groupmember'] = 'グループメンバ';
-$string['groupmemberdesc'] = 'グループメンバの標準ロール';
+$string['groupmemberdesc'] = 'グループメンバの標準ロールです。';
 $string['groupmembers'] = 'グループメンバ';
-$string['groupmemberssee'] = 'グループメンバを表示する';
+$string['groupmemberssee'] = 'グループメンバを確認する';
 $string['groupmembersselected'] = '選択したグループのメンバ';
 $string['groupmode'] = 'グループモード';
 $string['groupmode_help'] = '* グループなし
-* 分離グループ: 学生はグループに分けられて自分のグループの作業のみ閲覧できます。
+* 分離グループ: 学生はグループに分けられ自分のグループの作業のみ閲覧できます。
 * 可視グループ: 学生はグループに分けられますが、他のグループの作業を閲覧できます。
 
-コースレベルで設定されたグループモードはすべての活動のデフォルトモードです。コースレベルでグループモードが強制された場合、活動では変更できません。';
+コースレベルで設定されたグループモードはすべての活動のデフォルトモードとなります。コースレベルでグループモードが強制された場合、活動ではグループモードを変更できません。';
 $string['groupmodeforce'] = 'グループモードを強制する';
 $string['groupmodeforce_help'] = 'グループモードはすべての活動に適用されます。活動の中では変更できません。';
 $string['groupmy'] = 'マイグループ';
 $string['groupname'] = 'グループ名';
-$string['groupnameexists'] = 'グループ名「 {$a} 」はすでにこのコースで使用されています。他のグループ名を使用してください。';
+$string['groupnameexists'] = 'グループ名「 {$a} 」はすでにこのコースに存在ます。他のグループ名を選択してください。';
 $string['groupnotamember'] = '申し訳ございません、あなたはそのグループのメンバではありません。';
 $string['groups'] = 'グループ';
 $string['groupscount'] = 'グループ ({$a})';
@@ -137,10 +137,10 @@ $string['groupsvisible'] = '可視グループ';
 $string['grouptemplate'] = 'グループ @';
 $string['hidepicture'] = '画像を隠す';
 $string['importgroups'] = 'グループをインポートする';
-$string['importgroups_help'] = 'テキストファイル経由でグループをインポートすることができます。ファイルのフォーマットは以下のとおりです:
+$string['importgroups_help'] = 'テキストファイルでグループをインポートできます。ファイルのフォーマットは以下のとおりです:
 
 * それぞれの行に1レコードを記述してください。
-* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータで区切られた一連のデータです。
 * 先頭レコードには残りのデータのフォーマットを定義したフィールド名を記述してください。
 * 必須フィールド名は「groupname」です。
 * 任意フィールド名は「groupidnumber」「description」「enrolmentkey」「groupingname」「enablemessaging」です。';
@@ -153,9 +153,9 @@ $string['members'] = 'グループあたりのメンバ数';
 $string['membersofselectedgroup'] = 'メンバ:';
 $string['mygroups'] = 'マイグループ';
 $string['namingscheme'] = 'ネーミングスキーム';
-$string['namingscheme_help'] = 'アットマーク (@) を使用することにより、グループ名に文字を含むグループを作成することができます。例えば「グループ @」は「グループ A」「グループ B」「グループ C」のようなグループ名のグループを生成します。
+$string['namingscheme_help'] = 'アットマーク (@) の使用でグループ名に文字を含むグループを作成できます。例えば「グループ @」は「グループ A」「グループ B」「グループ C」のようなグループ名のグループを生成します。
 
-ハッシュマーク (#) を使用することにより、グループ名に数字を含むグループを作成することができます。例えば「グループ #」は「グループ 1」「グループ 2」「グループ 3」のようなグループ名のグループを生成します。';
+ハッシュマーク (#) の使用でグループ名に数字を含むグループを作成できます。例えば「グループ #」は「グループ 1」「グループ 2」「グループ 3」のようなグループ名のグループを生成します。';
 $string['newgrouping'] = '新しいグルーピング';
 $string['newpicture'] = '新しい画像';
 $string['newpicture_help'] = 'JPGまたはPNGフォーマットの画像を選択してください。画像は正方形に切り取られた後、100x100ピクセルにリサイズされます。';
@@ -164,12 +164,12 @@ $string['nogroup'] = 'グループなし';
 $string['nogrouping'] = 'グルーピングなし';
 $string['nogroups'] = 'このコースにはまだグループが作成されていません。';
 $string['nogroupsassigned'] = 'グループが割り当てられていません。';
-$string['nopermissionforcreation'] = 'あなたには必要なパーミッションがないため、グループ「 {$a} 」を作成することはできません。';
+$string['nopermissionforcreation'] = 'あなたに必要なパーミッションがないためグループ「 {$a} 」を作成できません。';
 $string['nosmallgroups'] = '最後の小グループを抑制する';
 $string['notingroup'] = 'グループ内のユーザを無視する';
-$string['notingrouping'] = 'グルーピング未登録';
+$string['notingrouping'] = 'グルーピング外';
 $string['notingrouplist'] = 'グループ外';
-$string['nousersinrole'] = '選択したロールに適合するユーザがいません。';
+$string['nousersinrole'] = '選択したロールに適切なユーザはいません。';
 $string['number'] = 'グループ/メンバ数';
 $string['numgroups'] = 'グループ数';
 $string['nummembers'] = 'グループあたりのメンバ数';
@@ -181,7 +181,7 @@ $string['printerfriendly'] = 'プリンタフレンドリ表示';
 $string['privacy:metadata:core_message'] = 'グループ会話';
 $string['privacy:metadata:groups'] = 'グループメンバシップのレコードです。';
 $string['privacy:metadata:groups:groupid'] = 'グループのIDです。';
-$string['privacy:metadata:groups:timeadded'] = 'タイムスタンプはユーザがグループに追加された日時を示します。';
+$string['privacy:metadata:groups:timeadded'] = 'ユーザがグループに追加された日時を示すタイムスタンプです。';
 $string['privacy:metadata:groups:userid'] = 'グループに関連するユーザのIDです。';
 $string['random'] = 'ランダム';
 $string['removefromgroup'] = 'グループ {$a} からユーザを削除する';
@@ -192,10 +192,10 @@ $string['removegroupsmembers'] = 'すべてのグループメンバを削除す�
 $string['removeselectedusers'] = '選択したユーザを削除する';
 $string['selectfromgroup'] = 'グループからメンバを選択する';
 $string['selectfromgrouping'] = 'グルーピングからメンバを選択する';
-$string['selectfromrole'] = 'ロールからメンバを選択する';
-$string['showgroupsingrouping'] = 'グルーピングのグループを表示する';
+$string['selectfromrole'] = 'ロールでメンバを選択する';
+$string['showgroupsingrouping'] = 'グルーピングにグループを表示する';
 $string['showmembersforgroup'] = 'グループのメンバを表示する';
-$string['toomanygroups'] = 'このグループ数に割り当てるユーザが不足しています - 選択したロールには {$a} 名のユーザしか存在しません。';
+$string['toomanygroups'] = 'この数のグループを作成するにはユーザが不足しています - 選択したロールには {$a} 名のユーザしか存在しません。';
 $string['usercount'] = 'ユーザ数';
 $string['usercounttotal'] = 'ユーザ数 ({$a})';
 $string['usergroupmembership'] = '選択したユーザのメンバシップ:';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aufgabenstellung'] = 'tarefas';
+$string['externe_aufgabenstellung'] = 'tarefas externas';
 $string['mitteilungs'] = 'aviso-';

@@ -52,7 +52,7 @@ Pour les polygones, on peut ajouter un nouveau sommet en maintenant la touche ct
 Pour information, les trois types de formes utilisent les coordonnées ainsi :
 * Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80,100;50</code>
 * Rectangle : x1, y1 (coordonnées coin gauche haut) ; largeur, hauteur<br/>par exemple : <code>20,60;80,40</code>
-* Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20,60;100,60;20, 100</code>
+* Polygone : x1, y1; x2, y2; …; xn, yn<br />par exemple : <code>20,60;100,60;20, 100</code>
 
 Sélectionner un marqueur de texte ajoutera ce texte à la zone dans l’aperçu.';
 $string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';

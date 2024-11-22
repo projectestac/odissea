@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['defaultname'] = 'Pregunta importada {$a}';
 $string['errormanifest'] = 'Error en analitzar el manifest del document IMS';
 $string['filenothandled'] = 'Aquest arxiu conté una referència a un fitxer {$a} que la importació no pot gestionar encara.';
-$string['imagenotfound'] = 'El fitxer imatge amb camí {$a} no s\'ha trobat en la importació.';
+$string['imagenotfound'] = 'No s\'ha trobat el fitxer d\'imatge amb camí {$a} en la importació.';
 $string['importedcategory'] = 'Categoria importada {$a}';
 $string['importnotext'] = 'S\'ha perdut el text de la pregunta en el fitxer XML';
 $string['notenoughtsubans'] = 'No s\'ha pogut importar la pregunta \'{$a}\' perquè una pregunta d\'aparellaments ha de tenir almenys dues preguntes i tres respostes.';

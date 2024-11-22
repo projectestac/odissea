@@ -95,6 +95,7 @@ Lasciando il campo vuoto, qualsiasi utente autenticato potrà iscriversi spontan
 Se viene impostata una chiave, agli utenti verrà chiesto di inserirla per perfezionare l\'iscrizione. La chiave verrà chiesta solo al primo accesso al corso.';
 $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
 $string['passwordinvalidhint'] = 'La chiave d\'iscrizione è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
+$string['passwordmatchesgroupkey'] = 'Questa chiave di registrazione è già utilizzata come chiave di registrazione di gruppo.';
 $string['pluginname'] = 'Iscrizione spontanea';
 $string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. È possibile regolare le iscrizioni spontanee tramite chiavi di iscrizione. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso.';
 $string['privacy:metadata'] = 'Il plugin di iscrizione Iscrizione spontanea non memorizza dati personali.';

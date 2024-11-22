@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['capabilitylabel'] = 'Capabilitate:';
-$string['capabilityreport'] = 'Prezentare generală a capabilități';
+$string['capabilityreport'] = 'Privire de ansamblu asupra capabilității';
 $string['changeoverrides'] = 'Înlocuiți modificările în acest context';
 $string['changeroles'] = 'Schimbați definițiile rolurilor';
 $string['eventreportviewed'] = 'Raport vizualizat';
 $string['filters'] = 'Filtrează rezultatele';
 $string['forroles'] = 'Pentru roluri {$a}';
 $string['getreport'] = 'Obțineți prezentarea generală';
-$string['intro'] = 'Acest raport arată, pentru o anumită capacitate, ce permisiune are această capacitate în definirea fiecărui rol (sau o selecție de roluri) și peste tot în site-ul unde această capacitate este suprascrisă.';
+$string['intro'] = 'Acest raport afișează, pentru o anumită capacitate, ce permisiune are această capacitate în definirea fiecărui rol (sau o selecție de roluri) și unde în site capacitatea este suprascrisă.';
 $string['nodifferences'] = 'Nu există diferențe de afișat între rolurile selectate în acest context';
 $string['onlydiff'] = 'Afișați numai diferențe';
-$string['pluginname'] = 'Prezentare generală a capacității';
+$string['pluginname'] = 'Privire de ansamblu asupra capabilității';
 $string['privacy:metadata'] = 'Pluginul de prezentare generală a capacității nu stochează date personale.';
 $string['reportforcapability'] = 'Raport pentru capacitatea „{$a}”';
 $string['reportsettings'] = 'Setări raport';

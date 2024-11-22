@@ -23,16 +23,16 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once('../../config.php');
-require_once('lib.php');
-require_once('locallib.php');
+require_once '../../config.php';
+require_once 'lib.php';
+require_once 'locallib.php';
 
 // The courseid we are importing to.
 $courseid = required_param('id', PARAM_INT);
 $dataid = optional_param('dataid', false, PARAM_INT);
 
 // Load the course and context.
-$course = $DB->get_record('course', array('id' => $courseid), '*', MUST_EXIST);
+$course = $DB->get_record('course', ['id' => $courseid], '*', MUST_EXIST);
 $context = context_course::instance($courseid);
 
 // Must pass login.
@@ -44,7 +44,7 @@ require_capability('moodle/restore:restoretargetimport', $context);
 // Set up the page.
 $PAGE->set_title($course->shortname . ': ' . get_string('importfromalexandria', 'local_alexandriaimporter'));
 $PAGE->set_heading($course->fullname);
-$PAGE->set_url(new moodle_url('/local/alexandriaimporter/search.php', array('id' => $courseid)));
+$PAGE->set_url(new moodle_url('/local/alexandriaimporter/search.php', ['id' => $courseid]));
 $PAGE->set_context($context);
 $PAGE->set_pagelayout('incourse');
 
@@ -66,31 +66,33 @@ echo $OUTPUT->heading(get_string('importfromalexandria', 'local_alexandriaimport
 echo $OUTPUT->container_start('', 'alexandria_restore');
 
 // Echo tabs.
-echo '<ul  class="nav nav-tabs">';
+echo '<ul class="nav nav-tabs">';
 foreach ($dbs as $db) {
-    if (!$dataid || $db->id == $dataid) {
-        echo '<li class="tab-dbsel active">';
+    if (!$dataid || $db->id === $dataid) {
+        echo '<li class="nav-item active">';
         $dataid = $db->id;
     } else {
-        echo '<li class="tab-dbsel">';
+        echo '<li class="nav-item">';
     }
-    echo '<a href="#dbsel' . $db->id . '" data-toggle="tab">' . core_text::strtotitle($db->searching) . '</a></li>';
+    echo '<a href="#dbsel' . $db->id . '" class="nav-link" data-toggle="tab">'
+        . core_text::strtotitle($db->searching)
+        . '</a></li>';
 }
 echo '</ul><div class="tab-content">';
 
-$searchurl = new moodle_url('/local/alexandriaimporter/search.php', array('id' => $courseid));
+$searchurl = new moodle_url('/local/alexandriaimporter/search.php', ['id' => $courseid]);
 
 $selected = false;
 $showadvanced = false;
 
 // Echo tab contents.
 foreach ($dbs as $db) {
-    if ($db->id == $dataid) {
-        echo '<div class="tab-pane active" id="dbsel'.$db->id . '">';
+    if ($db->id === $dataid) {
+        echo '<div class="tab-pane active" id="dbsel' . $db->id . '">';
     } else {
-        echo '<div class="tab-pane" id="dbsel'.$db->id . '">';
+        echo '<div class="tab-pane" id="dbsel' . $db->id . '">';
     }
-    $selected = ($dataid == $db->id);
+    $selected = ($dataid === $db->id);
 
     $search = render_alexandria_searchform($db, $searchurl, $selected);
     if ($selected && !empty($search)) {
@@ -131,7 +133,7 @@ echo '</div>
                     $(".advanced select").attr("disabled", "disabled");
                 }
             }
-            toggle_advanced('.$showadvanced.');
+            toggle_advanced(' . $showadvanced . ');
             $(".tab-dbsel").click(function() {
                 $(".tab-dbsel").toggleClass("active");
             });

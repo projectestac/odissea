@@ -42,4 +42,4 @@ $string['privacy:metadata'] = 'Le plugin Mathjax n’enregistre aucune donnée p
 $string['texfiltercompatibility'] = 'Compatibilité filtre TeX';
 $string['texfiltercompatibility_help'] = 'Le filtre MathJax peut être utilisé en remplacement du filtre TeX.
 
-Pour supporter tous les délimiteurs du filtre TeX, MathJax sera configuré de sorte à afficher les équations dans le corps du texte à l’aide de TeX.';
+Pour prendre en charge tous les délimiteurs du filtre TeX, MathJax sera configuré de sorte à afficher les équations dans le corps du texte à l’aide de TeX.';

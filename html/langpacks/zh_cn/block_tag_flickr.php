@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = '标题';
+$string['configtitle'] = 'Flickr 版块标题';
 $string['date-posted-asc'] = '发表日期升序';
 $string['date-posted-desc'] = '发表日期降序';
 $string['date-taken-asc'] = '拍摄日期升序';

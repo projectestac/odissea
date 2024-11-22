@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'Secret impostato e inviato all\'utente tram
 $string['privacy:metadata:trackforums'] = 'Preferenza sul tracciamento dei forum.';
 $string['privacy:metadata:trustbitmask'] = 'Bit mask di fiducia';
 $string['privacy:metadata:url'] = 'URL relativo all\'utente.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Data e ora registrate quando il messaggio di benvenuto è stato visualizzato all\'utente per la prima volta.';
 $string['privacy:metadata:user_preferences'] = 'Preferenze associate a un determinato utente.';
 $string['privacy:metadata:user_preferences:name'] = 'Nome della preferenza.';
 $string['privacy:metadata:user_preferences:userid'] = 'ID dell\'utente';

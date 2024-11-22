@@ -29,3 +29,6 @@ $string['pluginname'] = 'Formato Aiken';
 $string['pluginname_help'] = 'È un formato molto semplice utile per importare domande a risposta multipla tramite un file di testo.';
 $string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'Il plugin Formato di importazione domande \'Formato Aiken\' non memorizza dati personali.';
+$string['questionmissinganswers'] = 'La domanda deve avere almeno 2 risposte alla linea {$a}';
+$string['questionnotcomplete'] = 'Domanda non completata prima dell\'inizio della domanda successiva alla lnea {$a}';
+$string['questionnotstarted'] = 'Domanda non iniziata alla linea {$a}';

@@ -346,7 +346,7 @@ $string['emailoverduebody'] = 'Caro(a) {$a->studentname},
 
 Iniciou uma tentativa no teste \'{$a->quizname}\' na disciplina \'{$a->coursename}\' mas não a submeteu. Deve fazê-lo até {$a->attemptduedate}.
 
-Se pretender submeter a sua tentativa agora, vá a {$a->attemptsummaryurl} e clique no botão de submeter.
+Se pretende submeter a sua tentativa agora, vá a {$a->attemptsummaryurl} e clique no botão de submeter.
 Tem de submeter até {$a->attemptgraceend} ou a sua tentativa não será avaliada.';
 $string['emailoverduesmall'] = 'Não submeteu a sua tentativa de resposta ao teste \'{$a->quizname}\'. Vá a {$a->attemptsummaryurl} até {$a->attemptgraceend} se pretender submetê-la para avaliação.';
 $string['emailoverduesubject'] = 'Tempo limite ultrapassado: {$a->quizname}';

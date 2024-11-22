@@ -76,7 +76,7 @@ $string['evaluationmode_help'] = 'Bi ebaluazio-modu daude:
 * Konfiguratutakoa - Guneko datuak trebakuntzarako eta probetarako datuetan banatzen dira, ereduaren konfigurazioaren trebakuntza eta proben zehaztasuna neurtzeko.
 
 Trebatutako eredua soilik dago eskuragarri gunera lehendik trebatutako eredua inportatu bada eta oraindik guneko datuak erabilita berriz trebatu ez bada.';
-$string['evaluationmodecolconfiguration'] = 'Konfiguratutakoa';
+$string['evaluationmodecolconfiguration'] = 'Ezarpenak';
 $string['evaluationmodecoltrainedmodel'] = 'Trebatutako eredua';
 $string['evaluationmodeconfiguration'] = 'Ebaluatu ereduaren konfigurazioa';
 $string['evaluationmodeinfo'] = 'Eredu hau gunera inportatu da. Ereduaren errendimendua ebaluatu dezakezu, edo ereduaren konfigurazioaren errendimendua guneko datuak erabilita ebaluatu dezakezu.';
@@ -144,7 +144,7 @@ $string['scheduledanalysisresultscli'] = '{$a->name} (IDa: {$a->id}) analisi-tar
 $string['selecttimesplittingforevaluation'] = 'Aukeratu ereduaren konfigurazioa ebaluatzeko erabili nahi duzun analisi-tartea.';
 $string['target'] = 'Helburua';
 $string['target_help'] = 'Helburua ereduak aurreikusiko duena da.';
-$string['target_link'] = 'Targets';
+$string['target_link'] = 'Helburuak';
 $string['timesplittingnotdefined'] = 'Ez da analisi-tartea zehaztu.';
 $string['timesplittingnotdefined_help'] = 'Eredua gaitu baino lehen analisi-tarte bat aukeratu behar duzu.';
 $string['trainandpredictmodel'] = 'Ereduak trebatu eta aurreikuspenak kalkulatu';

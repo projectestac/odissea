@@ -29,4 +29,3 @@ $string['firstdayofweek'] = 'Понеділок';
 $string['manager'] = 'Менеджер';
 $string['status'] = 'Статус';
 $string['type'] = 'Тип';
-$string['visible_1'] = 'Менеджер';

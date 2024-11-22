@@ -40,7 +40,7 @@ class mobile {
 
         $args = (object) $args;
 
-        $versionname = $args->appversioncode >= 3950 ? 'latest' : 'ionic3';
+        $versionname = $args->appversioncode >= 44000 ? 'latest' : 'ionic5';
         $cmid = $args->cmid;
         $rid = isset($args->rid) ? $args->rid : 0;
         $action = isset($args->action) ? $args->action : 'index';
@@ -162,7 +162,9 @@ class mobile {
                         if ($question->supports_mobile()) {
                             $pagequestions[] = $question->mobile_question_display($qnum, $questionnaire->autonum);
                             $responses = array_merge($responses, $question->get_mobile_response_data($response));
-                            $qnum++;
+                            if ($question->is_numbered()) {
+                                $qnum++;
+                            }
                         }
                     }
                     $data['prevpage'] = 0;
@@ -265,8 +267,10 @@ class mobile {
                 if (($response !== null) && isset($response->answers[$questionid])) {
                     $responses = array_merge($responses, $question->get_mobile_response_data($response));
                 }
+                if ($question->is_numbered()) {
+                    $qnum++;
+                }
             }
-            $qnum++;
         }
 
         return ['pagequestions' => $pagequestions, 'responses' => $responses];

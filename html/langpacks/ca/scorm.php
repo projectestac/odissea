@@ -332,7 +332,7 @@ $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paqu
 * Paquet descarregat - Permet especificar l\'URL d\'un paquet. El paquet es descomprimirà i es desarà localment, i s\'actualitzarà quan s\'actualitzi el paquet SCORM extern.
 * URL AICC externa - aquest és l\'URL de llançament d\'una activitat AICC. Es construirà un pseudopaquet al seu voltant.';
 $string['scrollbars'] = 'Permet el desplaçament de la finestra';
-$string['search:activity'] = 'Paquet SCORM - Informació de l\'activitat';
+$string['search:activity'] = 'Paquet SCORM: informació de l\'activitat';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['selectnone'] = 'Desselecciona-ho tot';
 $string['show'] = 'Mostrar';

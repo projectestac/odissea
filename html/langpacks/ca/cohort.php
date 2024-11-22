@@ -93,7 +93,7 @@ $string['uploadcohorts_help'] = 'Les cohorts poden actualitzar-se mitjançant fi
 * Cal posar nom al nom del camp.
 * Alguns noms de camp opcionals són:  idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'S\'han carregat {$a} cohorts';
-$string['useradded'] = 'Usuari afegit a la cohort «{$a}»';
+$string['useradded'] = 'S\'ha afegit l\'usuari a la cohort «{$a}»';
 $string['visible'] = 'Visible';
 $string['visible_help'] = 'Els usuaris amb la capacitat «moodle/cohort:view» en el context de cohort poden visualitzar qualsevol cohort.<br />
 Les cohorts visibles també poden ser visualitzades pels usuaris dels cursos on pertanyen.';

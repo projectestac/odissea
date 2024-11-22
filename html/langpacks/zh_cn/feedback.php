@@ -161,9 +161,7 @@ $string['info'] = '信息';
 $string['infotype'] = '信息类型';
 $string['insufficient_responses'] = '问卷数不够';
 $string['insufficient_responses_for_this_group'] = '此组给出的答复数量不足';
-$string['insufficient_responses_help'] = '此小组的回答数量不足。
-
-为了保证反馈的匿名性，至少需要两个以上的回答。';
+$string['insufficient_responses_help'] = '要使反馈是匿名的，必须至少有 2 个回复。';
 $string['item_label'] = '标签';
 $string['item_name'] = '问题';
 $string['label'] = '标签';
@@ -181,7 +179,16 @@ $string['messageprovider:submission'] = '反馈通知';
 $string['minimal'] = '最小值';
 $string['mode'] = '模式';
 $string['modulename'] = '反馈';
-$string['modulename_help'] = '反馈模块可以建立自定义的问卷调查';
+$string['modulename_help'] = '反馈活动使教师能够创建自定义调查，以使用各种问题类型（包括多项选择、是/否或文本输入）收集参与者的反馈。
+
+如果需要，回复可以是匿名的，结果可以向所有参与者展示或仅限于教师。网站首页上的反馈活动也可以由未登录的用户完成。
+
+可以使用反馈活动：
+
+* 用于课程评估，帮助改进内容，供以后的参与者使用
+* 使参与者能够注册课程模块、活动等。
+* 用于课程选择、学校政策等的客人调查。
+* 对于学生可以匿名报告事件的反欺凌调查';
 $string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = '调查反馈';
 $string['move_item'] = '移动此题';
@@ -190,7 +197,7 @@ $string['multichoice_values'] = '选项';
 $string['multichoiceoption'] = '<span class=“weight”>（{$a->weight}）</span>{$a->name}';
 $string['multichoicerated'] = '选择题（可评分）';
 $string['multichoicetype'] = '选择题';
-$string['multiplesubmit'] = '多次提交';
+$string['multiplesubmit'] = '允许多次提交';
 $string['multiplesubmit_help'] = '如果对匿名调查也启用，那么用户就可以无限次提交反馈。';
 $string['name'] = '名称';
 $string['name_required'] = '必须输入名称';
@@ -213,7 +220,7 @@ $string['numeric_range_from'] = '范围从';
 $string['numeric_range_to'] = '到';
 $string['of'] = '/';
 $string['oldvaluespreserved'] = '所有旧题和相关数据都会保留';
-$string['oldvalueswillbedeleted'] = '已有的问题和所有用户的答复都会被删除';
+$string['oldvalueswillbedeleted'] = '当前的问题和所有用户的答复都会被删除';
 $string['only_one_captcha_allowed'] = '反馈中只可以有一个验证码';
 $string['openafterclose'] = '您已在关闭日期之后指定打开日期';
 $string['overview'] = '概览';
@@ -261,7 +268,7 @@ $string['selected_dump'] = '$SESSION 选择的索引变量显示如下：';
 $string['send'] = '发送';
 $string['send_message'] = '发送消息';
 $string['show_all'] = '显示全部';
-$string['show_analysepage_after_submit'] = '提交后显示分析页';
+$string['show_analysepage_after_submit'] = '显示分析页';
 $string['show_entries'] = '显示反馈';
 $string['show_entry'] = '显示答复';
 $string['show_nonrespondents'] = '显示未反馈的';
@@ -270,8 +277,8 @@ $string['sort_by_course'] = '按课程排序';
 $string['started'] = '开始';
 $string['startedon'] = '从{$a}开始';
 $string['subject'] = '主题';
-$string['switch_item_to_not_required'] = '切换到：不必须回答';
-$string['switch_item_to_required'] = '切换到：必须回答';
+$string['switch_item_to_not_required'] = '设为非必答';
+$string['switch_item_to_required'] = '设为必答';
 $string['template'] = '模板';
 $string['template_deleted'] = '删除模板';
 $string['template_saved'] = '模板已保存';
@@ -284,11 +291,11 @@ $string['textfield_maxlength'] = '最多可接受字符数';
 $string['textfield_size'] = '文本域宽度';
 $string['there_are_no_settings_for_recaptcha'] = '没有captcha的设置';
 $string['this_feedback_is_already_submitted'] = '您已经完成此活动。';
-$string['typemissing'] = '缺少"type"值';
+$string['typemissing'] = '缺少"type"';
 $string['update_item'] = '保存对问题的修改';
 $string['url_for_continue'] = '链接到下一个活动';
-$string['url_for_continue_help'] = '提交反馈后，继续按钮的目标缺省是课程页面。您可以在这里定义另一个目标URL。';
-$string['use_one_line_for_each_value'] = '<br />每个选项只占一行！';
+$string['url_for_continue_help'] = '提交反馈后，将显示一个“继续”按钮，该按钮链接到课程页面。如果在此处输入活动的 URL，则它可能会链接到下一个活动。';
+$string['use_one_line_for_each_value'] = '每个答案只占一行！';
 $string['use_this_template'] = '使用此模板';
 $string['using_templates'] = '选择一个模板';
 $string['vertical'] = '垂直';

@@ -38,6 +38,6 @@ $string['privacy:request:origin:cli'] = 'Outil ligne de commande';
 $string['privacy:request:origin:restore'] = 'Sauvegarde restaurée';
 $string['privacy:request:origin:web'] = 'Requête web standard';
 $string['privacy:request:origin:ws'] = 'App mobile ou service web';
-$string['reportssupported'] = 'Rapports supportés';
+$string['reportssupported'] = 'Rapports pris en charge';
 $string['subplugintype_logstore'] = 'Stockage de journaux';
 $string['subplugintype_logstore_plural'] = 'Stockages de journaux';

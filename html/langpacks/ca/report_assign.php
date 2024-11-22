@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'S\'ha visualitzat l\'informe de la tasca';
+$string['grade'] = 'Qualificació';
+$string['group'] = 'Grup';
 $string['submitted'] = 'S\'ha tramès';

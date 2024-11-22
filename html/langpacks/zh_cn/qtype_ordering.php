@@ -50,6 +50,7 @@ $string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = '添加一个排序题';
 $string['pluginnameediting'] = '编辑一个排序题';
 $string['pluginnamesummary'] = '把顺序混乱的项目进行有意义的排序';
+$string['regradeissuenumitemschanged'] = '可拖动项目的数量已更改';
 $string['relativeallpreviousandnext'] = '相对于之前的和以后的项目';
 $string['relativenextexcludelast'] = '相对于下一项(不包括最后一项)';
 $string['relativenextincludelast'] = '相对于下一项(包括最后一项)';

@@ -26,25 +26,25 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptdpa'] = 'Je comprends et accepte l’accord sur le traitement des données';
-$string['activityoverview'] = 'Vous avez des sessions BigBlueButtonBN planifiées';
+$string['activityoverview'] = 'Vous avez des sessions BigBlueButton planifiées';
 $string['bbbduetimeoverstartingtime'] = 'La date de fermeture doit être postérieure à la date d’ouverture.';
 $string['bbbdurationwarning'] = 'La durée maximale de cette session est de %duration% minutes.';
 $string['bbbrecordallfromstartwarning'] = 'Cette session est enregistrée depuis le début.';
 $string['bbbrecordwarning'] = 'Cette session peut être enregistrée.';
 $string['bigbluebuttonbn'] = 'BigBlueButton';
-$string['bigbluebuttonbn:addinstance'] = 'Ajouter une salle BigBlueButtonBN';
+$string['bigbluebuttonbn:addinstance'] = 'Ajouter une salle BigBlueButton';
 $string['bigbluebuttonbn:addinstancewithmeeting'] = 'Créer instance de session en direct';
 $string['bigbluebuttonbn:addinstancewithrecording'] = 'Créer instance avec enregistrements';
 $string['bigbluebuttonbn:deleterecordings'] = 'Supprimer des enregistrements';
 $string['bigbluebuttonbn:importrecordings'] = 'Importer des enregistrements';
-$string['bigbluebuttonbn:join'] = 'Rejoindre une salle BigBlueButtonBN';
+$string['bigbluebuttonbn:join'] = 'Rejoindre une salle BigBlueButton';
 $string['bigbluebuttonbn:managerecordings'] = 'Gérer les enregistrements';
 $string['bigbluebuttonbn:protectrecordings'] = 'Protéger des enregistrements';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publier des enregistrements';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Déprotéger des enregistrements';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Dépublier des enregistrements';
 $string['bigbluebuttonbn:view'] = 'Voir une salle BigBlueButton';
-$string['bigbluebuttondisablednotification'] = 'Le module d’activité BigBlueButton a été désactivé et toutes les activités BigBlueButton existantes ne sont plus accessibles. Avant de réactiver ce plugin, veuillez vous assurer que vous avez lu et accepté l\'<a href="{$a}" target="_blank">accord sur le traitement des données</a> avec Blindside Networks Inc.';
+$string['bigbluebuttondisablednotification'] = 'Le module d’activité BigBlueButton a été désactivé et toutes les activités BigBlueButton existantes ne sont plus accessibles. Avant de réactiver ce plugin, veuillez vous assurer que vous avez lu et accepté l’<a href="{$a}" target="_blank">accord sur le traitement des données</a> avec Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'Module d’activité BigBlueButton désactivé.';
 $string['cachedef_currentfetch'] = 'Données pour lister les enregistrements récupérés récemment.';
 $string['cachedef_recordings'] = 'Métadonnées d’enregistrement';
@@ -61,7 +61,7 @@ $string['completionengagement_desc'] = 'S’engager dans des activités durant l
 $string['completionengagementchats'] = 'Chats';
 $string['completionengagementchats_desc'] = 'Participer à {$a} chat(s).';
 $string['completionengagementchats_event_desc'] = 'A participé à un chat {$a} fois';
-$string['completionengagementemojis'] = 'Emojis';
+$string['completionengagementemojis'] = 'Émojis';
 $string['completionengagementemojis_desc'] = 'Changer son emoji {$a} fois.';
 $string['completionengagementemojis_event_desc'] = 'A changé son emoji {$a} fois';
 $string['completionengagementgroup'] = 'Exiger une participation';
@@ -103,7 +103,7 @@ $string['config_disablepublicchat_default'] = 'Le réglage « Désactiver les c
 $string['config_disablepublicchat_default_description'] = 'Si ce réglage est activé, les chats publics seront désactivés.';
 $string['config_disablepublicchat_editable'] = 'Le réglage « Désactiver les chats publics » peut être modifié';
 $string['config_disablepublicchat_editable_description'] = 'Le réglage « Désactiver les chats publics » peut être modifié quand l’instance est ajoutée ou modifiée.';
-$string['config_dpa_note'] = 'Remarque : afin de remplir vos obligations en terme de protection des données, avant d’utiliser un fournisseur de service avec ce plugin, vous devez vous assurer d’avoir lu et accepté l’accord sur le traitement des données du fournisseur de service. Pour le service gratuit BigBlueButton par défaut, il s’agit de l\'<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks Inc.</a> Veuillez consulter vos spécialistes sur la protection des données pour des conseils.';
+$string['config_dpa_note'] = 'Remarque : afin de remplir vos obligations en terme de protection des données, avant d’utiliser un fournisseur de service avec ce plugin, vous devez vous assurer d’avoir lu et accepté l’accord sur le traitement des données du fournisseur de service. Pour le service gratuit BigBlueButton par défaut, il s’agit de l’<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks Inc.</a> Veuillez consulter vos spécialistes sur la protection des données pour des conseils.';
 $string['config_experimental_features'] = 'Fonctionnalités expérimentales';
 $string['config_experimental_features_description'] = 'Configuration pour les fonctionnalités expérimentales.';
 $string['config_extended_capabilities'] = 'Capacités étendues';
@@ -202,7 +202,7 @@ $string['config_userlimit'] = 'Limite d’utilisateurs';
 $string['config_userlimit_default'] = 'Limite d’utilisateurs activée par défaut';
 $string['config_userlimit_default_description'] = 'Le nombre d’utilisateurs autorisés par défaut quand une nouvelle salle est ajoutée. Si le nombre est 0, il n’y a pas de limite du nombre d’utilisateurs.';
 $string['config_userlimit_description'] = 'Ces réglages activent ou désactivent les options dans l’interface utilisateur et définissent également les valeurs par défaut de ces options.';
-$string['config_userlimit_editable'] = 'Le réglage « Limite d’utilisateurs » peut être modifiée';
+$string['config_userlimit_editable'] = 'Le réglage « Limite d’utilisateurs » peut être modifié';
 $string['config_userlimit_editable_description'] = 'Le nombre limite d’utilisateurs par défaut peut être modifié quand l’instance est ajoutée ou modifiée.';
 $string['config_voicebridge'] = 'Conférence vocale';
 $string['config_voicebridge_description'] = 'Ces paramètres activent ou désactivent les options dans l’interface utilisateur et définissent également les valeurs par défaut de ces options.';
@@ -218,15 +218,15 @@ $string['config_waitformoderator_editable'] = 'Le réglage « Attendre un modé
 $string['config_waitformoderator_editable_description'] = 'Si ce réglage est activé, le réglage « Attendre un modérateur » peut être modifié dans les réglages de l’activité BigBlueButton.';
 $string['config_waitformoderator_ping_interval'] = 'Signal serveur (ping) de la fonctionnalité « Attendre un modérateur »';
 $string['config_waitformoderator_ping_interval_description'] = 'Fréquence des requêtes (ping) vers le serveur pour vérifier si le modérateur est entré dans la salle.';
-$string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton utilise le fichier config.php avec une variable globale obsolète. Veuillez convertir le fichier car il ne sera pas supporté dans de futures versions.';
+$string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton utilise le fichier config.php avec une variable globale obsolète. Veuillez convertir le fichier car il ne sera pas pris en charge dans de futures versions.';
 $string['config_warning_curl_not_installed'] = 'Cette fonctionnalité nécessite que l’extension cURL de PHP soit installée et activée. Le réglage ne sera disponible que si cette condition est remplie.';
 $string['config_welcome_default'] = 'Message d’accueil par défaut';
 $string['config_welcome_default_description'] = 'Le message de bienvenue est affiché quand les participants entrent dans la salle. Si ce champ est laissé vide, un message défini sur le serveur BigBlueButton est affiché.';
 $string['config_welcome_editable'] = 'Le message de bienvenue par défaut est modifiable par les enseignants';
 $string['config_welcome_editable_description'] = 'Le message de bienvenue peut être modifié lorsque l’instance est ajoutée ou mise à jour';
-$string['dpainfonotsigned'] = 'Avant d’activer ce plugin, vous devez confirmer que vous avez lu et accepté l\'<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks</a>.';
+$string['dpainfonotsigned'] = 'Avant d’activer ce plugin, vous devez confirmer que vous avez lu et accepté l’<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'Activation de l’activité BigBlueButton';
-$string['enablingbigbluebuttondpainfo'] = 'Afin de remplir vos obligations en terme de protection des données, avant d’activer ce plugin, vous devez confirmer que vous avez lu et accepté l\'<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks</a>. Veuillez consulter vos spécialistes en protection des données pour des conseils.';
+$string['enablingbigbluebuttondpainfo'] = 'Afin de remplir vos obligations en terme de protection des données, avant d’activer ce plugin, vous devez confirmer que vous avez lu et accepté l’<a href="{$a}" target="_blank">accord sur le traitement des données de Blindside Networks</a>. Veuillez consulter vos spécialistes en protection des données pour des conseils.';
 $string['end_session_confirm'] = 'Voulez-vous vraiment terminer la réunion ?';
 $string['end_session_confirm_title'] = 'Voulez-vous vraiment terminer la session ?';
 $string['end_session_notification'] = 'La session s’est terminée.';
@@ -341,7 +341,7 @@ $string['mod_form_field_instanceprofiles'] = 'Type de conférence';
 $string['mod_form_field_instanceprofiles_help'] = 'Si une réunion doit être enregistrées, choisir « Salle avec enregistrements », sinon, choisir « Salle seulement ». Après l’enregistrement d’une réunion, si aucune autre réunion n’est prévue, choisir « Enregistrements seulement »';
 $string['mod_form_field_intro'] = 'Description';
 $string['mod_form_field_intro_help'] = 'Une courte description pour la salle.';
-$string['mod_form_field_mustapproveuser'] = 'Les invités doivent être approuvé par un modérateur';
+$string['mod_form_field_mustapproveuser'] = 'Les invités doivent être approuvés par un modérateur';
 $string['mod_form_field_muteonstart'] = 'Muet au début';
 $string['mod_form_field_name'] = 'Nom de la salle';
 $string['mod_form_field_nosettings'] = 'Aucun paramètre ne peut être modifié';
@@ -369,7 +369,7 @@ $string['mod_form_field_userlimit'] = 'Limite utilisateurs';
 $string['mod_form_field_userlimit_help'] = 'Limite maximum d’utilisateurs dans une réunion. Indiquer 0 pour permettre un nombre illimité d’utilisateurs.';
 $string['mod_form_field_voicebridge'] = 'Conférence vocale [####]';
 $string['mod_form_field_voicebridge_format_error'] = 'Erreur de format. Veuillez saisir un nombre entre 1 et 9999.';
-$string['mod_form_field_voicebridge_help'] = 'Un numéro entre 1 et 9999 que les participants doit être saisir pour joindre la conférence vocale. Si la valeur est 0, un numéro aléatoire sera généré par BigBlueButton. Le chiffre 7 sera placé avant les 4 chiffres saisis.';
+$string['mod_form_field_voicebridge_help'] = 'Un nombre entre 1 et 9999 que les participants doivent saisir pour joindre la conférence vocale. Si la valeur est 0, un nombre aléatoire sera généré par BigBlueButton. Le chiffre 7 sera placé devant les 4 chiffres saisis.';
 $string['mod_form_field_voicebridge_notunique_error'] = 'Valeur non unique. Ce nombre est utilisé par une autre salle.';
 $string['mod_form_field_wait'] = 'Attendez le modérateur';
 $string['mod_form_field_wait_help'] = 'Si ce réglage est activé, les participants doivent attendre un modérateur avant de pouvoir entrer dans la salle.';
@@ -380,7 +380,7 @@ $string['mod_form_locksettings'] = 'Réglages de verrouillage';
 $string['modulename'] = 'BigBlueButton';
 $string['modulename_help'] = 'BigBlueButton est un système de conférence web open source conçu pour l’enseignement en ligne, qui permet en temps réel le partage d’audio, de vidéo, de diapositives et d’écran, ainsi que du chat, un tableau blanc multi-utilisateurs, des salles de pause, des sondages et des émojis.
 
-Avec BigBlueButton, on peut créer une salle de réunion pour un cours en ligne, une séance de travail virtuel ou des travaux de groupe avec des étudiants à distance. La réunion peut être enregistrées pour être revue ultérieurement.';
+Avec BigBlueButton, on peut créer une salle de réunion pour un cours en ligne, une séance de travail virtuel ou des travaux de groupe avec des étudiants à distance. La réunion peut être enregistrée pour être revue ultérieurement.';
 $string['modulename_link'] = 'BigBlueButton/view';
 $string['modulenameplural'] = 'BigBlueButton';
 $string['new_bigblubuttonbn_activities'] = 'Activité BigBlueButton';
@@ -413,7 +413,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:meta'] = 'Informations supplémen
 $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'L’horodatage de la création du journal.';
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'L’identifiant de l’utilisateur qui a déclenché l’événement.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Enregistre les métadonnées des enregistrements.';
-$string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'L’ID utilisateur de l’utilisateur qui a modifier un enregistrement en dernier.';
+$string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'L’ID utilisateur de l’utilisateur qui a modifié un enregistrement en dernier.';
 $string['recordings_from_deleted_activities'] = 'Enregistrements d’activités supprimées';
 $string['recordingurlnotfound'] = 'L’URL de l’enregistrement n’est pas valide';
 $string['removedevents'] = 'Événements supprimés';
@@ -437,7 +437,7 @@ $string['started_at'] = 'Débute';
 $string['starts_at'] = 'A débuté';
 $string['taskname:check_dismissed_recordings'] = 'Rechercher des enregistrements qui n’ont pas encore été trouvés';
 $string['taskname:check_pending_recordings'] = 'Récupérer les enregistrements en attente';
-$string['userlimitreached'] = 'Le nombre d’utilisateur permis dans une réunion a été atteint.';
+$string['userlimitreached'] = 'Le nombre d’utilisateurs permis dans une réunion a été atteint.';
 $string['view_conference_action_end'] = 'Terminer la session';
 $string['view_conference_action_join'] = 'Entrer dans la session';
 $string['view_error_action_not_completed'] = 'L’action n’a pas pu être complétée';
@@ -445,11 +445,11 @@ $string['view_error_bigbluebutton'] = 'Une erreur est survenue dans BigBlueButto
 $string['view_error_create'] = 'Le serveur BigBlueButton a renvoyé un message d’erreur. La salle n’a pas pu être créée.';
 $string['view_error_current_state_not_found'] = 'L’état actuel n’a pas été trouvé. L’enregistrement a peut-être été supprimé ou le serveur BigBlueButton n’est pas compatible avec l’action effectuée.';
 $string['view_error_import_no_courses'] = 'Il n’y a pas de cours où chercher des enregistrements.';
-$string['view_error_import_no_recordings'] = 'Il n’y a pas enregistrement à importer dans ce cours.';
+$string['view_error_import_no_recordings'] = 'Il n’y a pas d\'enregistrements à importer dans ce cours.';
 $string['view_error_invalid_session'] = 'La session est échue. Retournez à la page de l’activité.';
 $string['view_error_max_concurrent'] = 'Le nombre de sessions simultanées autorisé a été atteint.';
 $string['view_error_meeting_not_running'] = 'Une erreur est survenue ; la réunion n’a pas lieu.';
-$string['view_error_no_group'] = 'Il n’y a pas de groupe. Veuillez créer des groupes avant d’essayer de vous joindre la réunion.';
+$string['view_error_no_group'] = 'Il n’y a pas de groupes. Veuillez créer des groupes avant d’essayer de joindre la réunion.';
 $string['view_error_no_group_student'] = 'Vous n’avez pas été ajouté à un groupe. Veuillez contacter votre enseignant.';
 $string['view_error_no_group_teacher'] = 'Il n’y a pas de groupes. Vous devez créer des groupes.';
 $string['view_error_unable_join'] = 'Impossible d’entrer dans la salle. Vérifiez l’URL du serveur BigBlueButton ET vérifiez que le serveur BigBlueButton est actif.';
@@ -491,7 +491,7 @@ $string['view_message_room_ready'] = 'Cette salle est prête.';
 $string['view_message_session_for'] = 'la session pour';
 $string['view_message_session_has_user'] = 'Il y a';
 $string['view_message_session_has_users'] = 'Il y a';
-$string['view_message_session_no_users'] = 'Il n’y a pas d’utilisateur dans cette session';
+$string['view_message_session_no_users'] = 'Il n’y a pas d’utilisateurs dans cette session';
 $string['view_message_session_running_for'] = 'Cette session a duré';
 $string['view_message_session_started_at'] = 'Session démarrée à';
 $string['view_message_tab_close'] = 'Cet onglet (ou fenêtre) doit être fermé(e) manuellement';
@@ -598,7 +598,7 @@ $string['view_warning_default_server'] = 'Ce serveur Moodle utilise un <a href="
 <ol>
 <li>la durée maximale de chaque réunion est de 60 minutes,</li>
 <li>le nombre maximal d’utilisateurs simultanés par réunion est de 25,</li>
-<li>les enregistrements sont supprimés après (7) jours et ne peuvent pas être téléchargés,</li>
+<li>les enregistrements sont supprimés après sept (7) jours et ne peuvent pas être téléchargés,</li>
 <li>les caméras des participants ne sont visibles que pour le modérateur.</li>
 </ol>';
 $string['waitformoderator'] = 'En attente d’un modérateur';

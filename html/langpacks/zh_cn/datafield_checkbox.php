@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = '选择框字段';
+$string['fieldtypelabel'] = '复选框';
 $string['pluginname'] = '复选框';
-$string['privacy:metadata'] = '复选框字段组件本身不存储任何个人数据，它使用mod_data中定义的表。';
+$string['privacy:metadata'] = '复选框字段组件不存储任何个人数据;它使用 mod_data 中定义的表。';

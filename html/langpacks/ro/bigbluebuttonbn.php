@@ -227,8 +227,8 @@ $string['config_welcome_editable'] = 'Mesajul implicit de bun venit poate să fi
 $string['config_welcome_editable_description'] = 'Mesajul de bun venit poate fi editat când o instanță este adăugată sau actualizată';
 $string['dpainfonotsigned'] = 'Înainte de a activa acest plugin, trebuie să confirmi că ai citit și ai acceptat acordul de prelucrare a datelor <a href="{$a}">Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'Se activează activitatea BigBlueButton';
-$string['enablingbigbluebuttondpainfo'] = 'Pentru a vă îndeplini obligațiile de protecție a datelor, înainte de a activa acest plugin, poate fi necesar să vă asigurați că ați citit și acceptat <a href="{$a}" target="_blank">acordul de prelucrare a datelor</a> cu Blindside Networks Inc.<br/>
-Vă rugăm să consultați profesioniștii în materie de confidențialitate pentru mai multe sfaturi.';
+$string['enablingbigbluebuttondpainfo'] = 'Pentru a îndeplini obligațiile de protecție a datelor, înainte de a activa acest plugin, poate fi necesar să vă asigurați că ați citit și acceptat <a href="{$a}" target="_blank">acordul de prelucrare a datelor</a> cu Blindside Networks Inc.<br/>
+Vă rugăm să consultați specialiștii în materie de confidențialitate pentru mai multe informații.';
 $string['end_session_confirm'] = 'Sunteți sigur că doriță să încheiați sesiunea?';
 $string['end_session_confirm_title'] = 'Sunteți sigur că doriți să încheiați sesiunea?';
 $string['end_session_notification'] = 'Sesiunea s-a închis.';
@@ -252,7 +252,7 @@ $string['event_recording_viewed'] = 'Înregistrare văzută';
 $string['event_unknown'] = 'Eveniment necunoscut';
 $string['general_error_cannot_create_meeting'] = 'Nu se poate crea sesiune.';
 $string['general_error_cannot_get_recordings'] = 'Nu se pot accesa înregistrări.';
-$string['general_error_no_answer'] = 'Răspuns gol. Vă rugăm să verificați adresa URL a serverului BigBlueButton ȘI să vedeți dacă serverul BigBlueButton rulează.';
+$string['general_error_no_answer'] = 'Răspuns necompletat. Vă rugăm să verificați adresa URL a serverului BigBlueButton ȘI să vedeți dacă serverul BigBlueButton rulează.';
 $string['general_error_not_allowed_to_create_instances'] = 'Utilizatorul nu are permisiunea să creeze niciun fel de instanță.';
 $string['general_error_not_found'] = 'Nu se poate găsi activitatea BigBlueButton cu ID-ul {$a}.';
 $string['general_error_unable_connect'] = 'Imposibil de realizat conectarea. Vă rugăm să verificați URL-ul serverului BigBlueButton ȘI să verificați dacă serverul BigBlueButton ruleaza.

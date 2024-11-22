@@ -50,7 +50,7 @@ $idcounter = 0;
 
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
 
-
+#[\AllowDynamicProperties]
 /**
  * Class for describing a question
  *
@@ -93,6 +93,9 @@ abstract class question {
 
     /** @var string $content The question's content. */
     public $content = '';
+
+    /** @var string $qlegend The question's legend. */
+    public $qlegend = '';
 
     /** @var string $allchoices The list of all question's choices. */
     public $allchoices = '';
@@ -492,6 +495,14 @@ abstract class question {
      */
     public function supports_feedback_scores() {
         return $this->supports_feedback();
+    }
+
+    /**
+     * Override and return false if a number should not be rendered for this question in any context.
+     * @return bool
+     */
+    public function is_numbered() {
+        return true;
     }
 
     /**
@@ -946,17 +957,19 @@ abstract class question {
             $this->content = '';
         }
         $pagetags->skippedclass = $skippedclass;
-        if ($this->type_id == QUESNUMERIC || $this->type_id == QUESTEXT) {
+        if ($this->type_id == QUESNUMERIC || $this->type_id == QUESTEXT || $this->type_id == QUESSLIDER) {
             $pagetags->label = (object)['for' => self::qtypename($this->type_id) . $this->id];
         } else if ($this->type_id == QUESDROP) {
             $pagetags->label = (object)['for' => self::qtypename($this->type_id) . $this->name];
         } else if ($this->type_id == QUESESSAY) {
-            $pagetags->label = (object)['for' => 'edit-q' . $this->id];
+            $pagetags->label = (object)['for' => 'q' . $this->id];
         }
+        $content = file_rewrite_pluginfile_urls($this->content, 'pluginfile.php',
+                $this->context->id, 'mod_questionnaire', 'question', $this->id);
         $options = ['noclean' => true, 'para' => false, 'filter' => true, 'context' => $this->context, 'overflowdiv' => true];
-        $content = format_text(file_rewrite_pluginfile_urls($this->content, 'pluginfile.php',
-            $this->context->id, 'mod_questionnaire', 'question', $this->id), FORMAT_HTML, $options);
-        $pagetags->qcontent = $content;
+        $pagetags->qcontent = format_text($content, FORMAT_HTML, $options);
+        $this->qlegend = strip_tags($content);
+        $pagetags->qlegend = $this->qlegend;
 
         return $pagetags;
     }

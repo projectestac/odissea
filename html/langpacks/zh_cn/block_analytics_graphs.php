@@ -92,7 +92,6 @@ $string['old_messages'] = '通知发送';
 $string['on_time'] = '按时';
 $string['options'] = '选项';
 $string['pluginname'] = '分析图';
-$string['privacy:metadata'] = '分析图仅显示在已有的日历数据中';
 $string['ratio'] = '比率';
 $string['red_tooltip'] = '最后一周没有访问过';
 $string['remove_all'] = '全部移除';

@@ -50,4 +50,4 @@ $string['searchfor'] = 'Résultats de la recherche :';
 $string['servicenotenabled'] = 'Accès non configuré. Assurez-vous que le service « Drive API » est activé.';
 $string['shareddrives'] = 'Shared Drives';
 $string['spreadsheetformat'] = 'Format d’importation de feuille de calcul par défaut';
-$string['supportedreturntypes'] = 'Fichiers supportés';
+$string['supportedreturntypes'] = 'Fichiers pris en charge';

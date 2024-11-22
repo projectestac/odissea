@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backimageurl'] = 'URL-ul imaginii de fundal al tablei';
 $string['backimageurl_desc'] = 'Opțional. Lasă necompletat, dacă nu e necesar.';
 $string['clicktoplay'] = 'Click pentruu a reda';
 $string['fieldtypelabel'] = 'Poodll';

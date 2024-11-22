@@ -31,3 +31,4 @@ $string['auth_emailrecaptcha'] = 'Afegeix un element de confirmació visual o so
 $string['auth_emailrecaptcha_key'] = 'Habilita element reCAPTCHA';
 $string['auth_emailsettings'] = 'Paràmetres';
 $string['pluginname'] = 'Autenticació basada en el correu electrònic';
+$string['privacy:metadata'] = 'El complement d\'autenticació d\'autoregistre basat en correu electrònic no emmagatzema cap dada personal.';

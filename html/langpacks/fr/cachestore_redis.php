@@ -54,4 +54,4 @@ $string['test_ttl_desc'] = 'Lancer le test de performance avec un cache nécessi
 $string['usecompressor'] = 'Utiliser le compresseur';
 $string['usecompressor_help'] = 'Indique le compresseur à utiliser après sérialisation. La compression est effectuée au niveau de l’API de cache de Moodle, pas au niveau de php-redis.';
 $string['useserializer'] = 'Utiliser le sérialiseur';
-$string['useserializer_help'] = 'Indique l’outil à utiliser pour la stérilisation. Les sérialiseurs valides sont Redis::SERIALIZER_PHP et Redis::SERIALIZER_IGBINARY. Ce dernier n’est supporté que lorsque phpredis est configuré avec l’option --enable-redis-igbinary et que l’extension <em>igbinary</em> est installée.';
+$string['useserializer_help'] = 'Indique l’outil à utiliser pour la sérialisation. Les sérialiseurs valides sont Redis::SERIALIZER_PHP et Redis::SERIALIZER_IGBINARY. Ce dernier n’est pris en charge que lorsque phpredis est configuré avec l’option --enable-redis-igbinary et que l’extension <em>igbinary</em> est installée.';

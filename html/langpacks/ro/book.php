@@ -39,7 +39,7 @@ $string['confchapterdelete'] = 'Sunteți sigur(ă) că doriți să ștergeți ac
 $string['confchapterdeleteall'] = 'Sunteți sigur(ă) că doriți să ștergeți acest capitol și toate subcapitolele lui?';
 $string['content'] = 'Conținut';
 $string['customtitles'] = 'Titluri particularizate';
-$string['customtitles_help'] = 'În mod normal, titlul capitolului este afișat în cuprins (TOC) și ca un titlu deasupra conținutului.
+$string['customtitles_help'] = 'În mod normal, titlul capitolului este afișat în cuprins (TOC) ȘI ca un titlu deasupra conținutului.
 
 Dacă este bifată caseta de selectare a titlurilor personalizate, titlul capitolului NU este afișat ca un antet deasupra conținutului. Un titlu diferit (poate mai lung decât titlul capitolului) poate fi introdus ca parte a conținutului.';
 $string['deletechapter'] = 'Șterge capitolul "{$a}"';

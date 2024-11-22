@@ -43,8 +43,8 @@ $string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタ
 * ユーザフルネーム {$a->fullname}';
 $string['defaultrole'] = 'デフォルトロール割り当て';
 $string['defaultrole_desc'] = '自己登録中にユーザに割り当てるロールを選択してください。';
-$string['deleteselectedusers'] = '選択したユーザ登録を削除する';
-$string['editselectedusers'] = '選択したユーザ登録を編集する';
+$string['deleteselectedusers'] = '選択したユーザの登録を削除する';
+$string['editselectedusers'] = '選択したユーザの登録を編集する';
 $string['enrolenddate'] = '終了日';
 $string['enrolenddate_help'] = 'この設定を有効にした場合、ユーザはこの日まで登録することができます。';
 $string['enrolenddaterror'] = '登録終了日を開始日より早くすることはできません。';

@@ -97,3 +97,5 @@ $string['notverified'] = 'No s\'ha verificat';
 $string['options'] = 'Opcions';
 $string['page'] = 'Pàgina {$a}';
 $string['save'] = 'Desa';
+$string['search:activity'] = 'Certificat personalitzat: informació de l\'activitat';
+$string['type'] = 'Tipus';

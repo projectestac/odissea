@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completed_colour'] = '#73A839';
-$string['completed_colour_descr'] = 'Código de Color HTML para los elementos que se han completado';
+$string['completed_colour_descr'] = 'Código de Color HTML para los elementos que han sidos completados';
 $string['completed_colour_title'] = 'Color completado';
 $string['completion_not_enabled'] = 'El rastreo de finalización no está habilitado en este sitio.';
 $string['completion_not_enabled_course'] = 'El rastreo de finalización no está habilitado en este curso.';
@@ -36,8 +36,8 @@ $string['completion_progress:overview'] = 'Ver el resumen del curso del Estado d
 $string['completion_progress:showbar'] = 'Mostrar la barra en el bloque de Estado de Finalización';
 $string['config_activitiesincluded'] = 'Actividades incluidas';
 $string['config_activitycompletion'] = 'Todas las actividades con Estado de Finalización';
-$string['config_default_title'] = 'Estado de Finalización';
-$string['config_group'] = 'Visible solo para el grupo';
+$string['config_default_title'] = 'Progreso de Finalización';
+$string['config_group'] = 'Visible solamente al grupo o agrupamiento';
 $string['config_header_monitored'] = 'Seguimiento';
 $string['config_icons'] = 'Usar iconos en la barra';
 $string['config_longbars'] = 'Cómo presentar barras largas';

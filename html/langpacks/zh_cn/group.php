@@ -87,7 +87,7 @@ $string['eventgroupmemberadded'] = '小组成员已添加';
 $string['eventgroupmemberremoved'] = '小组成员已移除';
 $string['eventgroupupdated'] = '小组已更新';
 $string['existingmembers'] = '现有成员：{$a}';
-$string['exportgroupsgroupings'] = '将小组和大组导出为';
+$string['exportgroupsgroupings'] = '将小组和大组下载为';
 $string['filtergroups'] = '过滤小组按：';
 $string['group'] = '小组';
 $string['groupaddedsuccesfully'] = '小组{$a}添加成功';
@@ -113,15 +113,13 @@ $string['groupmembers'] = '小组成员';
 $string['groupmemberssee'] = '查看小组成员';
 $string['groupmembersselected'] = '选定小组的成员';
 $string['groupmode'] = '小组模式';
-$string['groupmode_help'] = '此设置有三个选项：
-
-* 没有小组
-* 分隔小组 - 每个小组的成员都只能看到自己的小组，不能看到其它的小组
+$string['groupmode_help'] = '* 没有小组
+* 独立小组 - 每个小组的成员都只能看到自己的小组，不能看到其它的小组
 * 可视小组 - 每个小组成员都在自己的小组内完成工作，但也可以看到其它小组的情况
 
-在课程级别定义的小组模式会默认成为该课程内所有活动的默认小组模式。每个支持小组的活动也都可以定义自己的小组模式。如果课程设置了强制小组模式，则每个活动的小组模式设置会被忽略。';
+在课程级别设置的小组模式是所有活动的默认模式。如果在课程级别强制使用小组模式，则无法在活动中更改该模式。';
 $string['groupmodeforce'] = '强制小组模式';
-$string['groupmodeforce_help'] = '如果设置了强制小组模式，那么课程中的每个活动都会被设置为课程的小组模式。每个活动自己的小组模式设置将被忽略。';
+$string['groupmodeforce_help'] = '组模式对所有活动强制执行，不能在活动中更改';
 $string['groupmy'] = '我的小组';
 $string['groupname'] = '组名';
 $string['groupnameexists'] = '组名{$a}在课程中存在，请另选一个。';
@@ -139,13 +137,13 @@ $string['groupsvisible'] = '可视小组';
 $string['grouptemplate'] = '小组@';
 $string['hidepicture'] = '隐藏图片';
 $string['importgroups'] = '导入小组';
-$string['importgroups_help'] = '可以从文本文件导入小组。文件格式如下：
+$string['importgroups_help'] = '可以通过文本文件导入组。文件的格式应如下所示：
 
-* 文件每行只包含一条记录
-* 每条记录是一系列用逗号分隔的数据
-* 第一条记录包含字段名列表，定义文件其余部分的格式
-* groupname 字段是必需的
-* 可选字段有 groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
+* 文件的每一行包含一条记录
+* 每条记录都是由选定的分隔符分隔的一系列数据
+* 第一条记录包含字段名称列表，用于定义文件其余部分的格式
+* 必填字段名称为组名
+* 可选字段名称为 groupidnumber、description、enrolmentkey、groupingname、enablemessaging';
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = '只包括活跃的选课';
 $string['includeonlyactiveenrol_help'] = '如果启用，暂停的用户将不包括在小组中。';
@@ -169,8 +167,8 @@ $string['nogroupsassigned'] = '没有分配小组';
 $string['nopermissionforcreation'] = '不能创建小组“{$a}”，因为您没有相应的权限。';
 $string['nosmallgroups'] = '防止最后一个小组太小';
 $string['notingroup'] = '忽略小组中的用户';
-$string['notingrouping'] = '[不在大组中]';
-$string['notingrouplist'] = '[不在小组中]';
+$string['notingrouping'] = '不在大组中';
+$string['notingrouplist'] = '不在小组中';
 $string['nousersinrole'] = '在选定的角色中，没有合适的用户';
 $string['number'] = '小组/成员数量';
 $string['numgroups'] = '小组数量';
@@ -194,7 +192,7 @@ $string['removegroupsmembers'] = '移除所有小组成员';
 $string['removeselectedusers'] = '移除选定的用户';
 $string['selectfromgroup'] = '从小组中选择成员';
 $string['selectfromgrouping'] = '从大组中选择成员';
-$string['selectfromrole'] = '从角色中选择成员';
+$string['selectfromrole'] = '选择具有角色的成员';
 $string['showgroupsingrouping'] = '显示大组中的小组';
 $string['showmembersforgroup'] = '显示小组成员';
 $string['toomanygroups'] = '用户不足，无法填充此数量的小组 - 所选角色中只有{$a}个用户。';

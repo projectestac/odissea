@@ -44,31 +44,45 @@ $string['checkforeignkeys'] = '检查外键';
 $string['checkindexes'] = '检查索引';
 $string['checkoraclesemantics'] = '检查语义';
 $string['completelogbelow'] = '（查看下面完整的搜索日志）';
-$string['confirmcheckbigints'] = '本功能将在您的Moodle服务器搜索<a href="http://tracker.moodle.org/browse/MDL-11038">潜在的整数字段错误</a>，自动生成（而不是执行！）正确定义您数据库中的整数的SQL语句。<br /><br />
-您可以拷贝这些语句到您惯用的SQL界面中安全地执行（不要忘记在此之前备份您的数据）。<br /><br />
-在搜索之前，强烈建议使用您的Moodle发行版（1.8、1.9、2.x……）的最新版（带+的版本）。<br /><br />
-此功能不会对数据库做任何写操作（只是读取），所以任何时候运行它都是安全的。';
-$string['confirmcheckdefaults'] = '本功能将在您Moodle服务器上搜索不一致的默认值，自动生成（而不是执行！）设置正确默认值的SQL语句。<br /><br />
-您可以拷贝这些语句到您惯用的SQL界面中安全地执行（不要忘记在此之前备份您的数据）。<br /><br />
-在搜索之前，强烈建议使用您的Moodle发行版（1.8、1.9、2.x……）的最新版（带+的版本）。<br /><br />
-此功能不会对数据库做任何写操作（只是读取），所以任何时候运行它都是安全的。';
-$string['confirmcheckforeignkeys'] = '本功能会扫描install.xml中定义的外键，寻找潜在的问题。（Moodle目前并不在数据库中生成实际的外键限制，这就导致可能有无效的数据。）<br /><br />
-在搜索之前，强烈建议使用您的Moodle发行版（1.8、1.9、2.x……）的最新版（带+的版本）。<br /><br />
-此功能不会对数据库做任何写操作（只是读取），所以任何时候运行它都是安全的。';
-$string['confirmcheckindexes'] = '本功能将查找您Moodle服务器上潜在的缺失索引，自动生成（而不是执行！）修复这些问题的SQL语句。<br /><br />
-您可以拷贝这些语句到您惯用的SQL界面中安全地执行（不要忘记在此之前备份您的数据）。<br /><br />
-在查找之前，强烈建议使用您的Moodle发行版（1.8、1.9、2.x……）的最新版（带+的版本）。<br /><br />
-此功能不会对数据库做任何写操作（只是读取），所以任何时候运行它都是安全的。';
-$string['confirmcheckoraclesemantics'] = '本功能将在您Moodle服务器上搜索 <a href="http://tracker.moodle.org/browse/MDL-29322">使用BYTE语义的Oracle varchar2列</a>，自动生成（而不是执行！）修复这些问题的SQL语句。<br /><br />
-您可以拷贝这些语句到您惯用的SQL界面中安全地执行（不要忘记在此之前备份您的数据）。<br /><br />
-在查找之前，强烈建议使用您的Moodle发行版（2.2、2.3、2.x…）的最新版（带+的版本）。<br /><br />
-此功能不会对数据库做任何写操作（只是读取），所以任何时候运行它都是安全的。';
-$string['confirmdeletefield'] = '您是否非常确信要删除此字段：';
-$string['confirmdeleteindex'] = '您是否非常确信要删除此索引：';
-$string['confirmdeletekey'] = '您是否非常确信要删除此键值：';
-$string['confirmdeletetable'] = '您是否非常确信要删除此表：';
-$string['confirmdeletexmlfile'] = '您是否非常确信要删除此文件：';
-$string['confirmrevertchanges'] = '您是否非常确信要恢复对此所做的改变：';
+$string['confirmcheckbigints'] = '此功能将在 Moodle 服务器中搜索 <a href=“https://tracker.moodle.org/browse/MDL-11038”>可能的错误整数字段</a>，自动生成（但不执行！）所需的 SQL 语句，以正确定义数据库中的所有整数。
+
+一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。
+
+强烈建议在执行错误整数搜索之前，先运行 Moodle 版本的最新（+ 版本）。
+
+此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+$string['confirmcheckdefaults'] = '此功能将在 Moodle 服务器中搜索不一致的默认值，生成（但不执行）所需的 SQL 语句以正确定义所有默认值。
+
+一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。
+
+强烈建议在执行不一致的默认值搜索之前，先运行 Moodle 版本的最新 （+ 版本） 。
+
+此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+$string['confirmcheckforeignkeys'] = '此功能将搜索可能违反 install.xml定义中定义的外键的情况。（Moodle 当前不会在数据库中生成实际的外键约束，这就是可能存在无效数据的原因。
+
+强烈建议在执行搜索可能违反外键的情况之前，先运行 Moodle 版本的最新 （+ 版本） 。
+
+此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+$string['confirmcheckindexes'] = '此功能将在您的 Moodle 服务器中搜索可能缺失的索引，自动生成（但不执行！）所需的 SQL 语句以保持所有内容的更新。
+
+一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。
+
+强烈建议在执行缺失索引搜索之前，先运行 Moodle 版本的最新（+ 版本）。
+
+此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+$string['confirmcheckoraclesemantics'] = '此功能将在 Moodle 服务器中使用 BYTE 语义搜索 <a href=“https://tracker.moodle.org/browse/MDL-29322”>Oracle varchar2 列</a>，自动生成（但不执行！）所需的 SQL 语句，以将所有列转换为使用 CHAR 语义（更适合跨数据库兼容性和增加内容最大长度）。
+
+一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。
+
+强烈建议在执行 BYTE 语义搜索之前，先运行 Moodle 版本的最新（+ 版本）。
+
+此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+$string['confirmdeletefield'] = '您是否非常确定要删除此字段：';
+$string['confirmdeleteindex'] = '您是否非常确定要删除此索引：';
+$string['confirmdeletekey'] = '您是否非常确定要删除此键值：';
+$string['confirmdeletetable'] = '您是否非常确定要删除此表：';
+$string['confirmdeletexmlfile'] = '您是否非常确定要删除此文件：';
+$string['confirmrevertchanges'] = '您是否非常确定要恢复对此所做的改变：';
 $string['create'] = '创建';
 $string['createtable'] = '创建表：';
 $string['defaultincorrect'] = '不正确的缺省值';
@@ -159,7 +173,7 @@ $string['numberincorrectlength'] = '数字字段的长度不正确';
 $string['numberincorrectwholepart'] = '数字字段的整数部分太大';
 $string['pendingchanges'] = '注意：您已经修改了此文件。它随时都可能被保存。';
 $string['pendingchangescannotbesaved'] = '此文件有修改，但不能保存！请确认Web服务器对目录和它里面的install.xml文件都有写权限。';
-$string['pendingchangescannotbesavedreload'] = '此文件有修改，但不能保存！请确认Web服务器对目录和它里面的install.xml文件都有写权限。然后重新加载此页，您就能保存这些变化了。';
+$string['pendingchangescannotbesavedreload'] = '此文件中有更改，但无法保存！请确认目录和其中的“install.xml”都具有对 Web 服务器的写入权限。然后重新加载此页面，您应该能够保存这些更改。';
 $string['persistentfieldscomplete'] = '已添加以下字段：';
 $string['persistentfieldsconfirm'] = '是否要添加以下字段：';
 $string['persistentfieldsexist'] = '以下字段已存在：';
@@ -214,7 +228,11 @@ $string['wrongnumberofreffields'] = '对应字段个数有误';
 $string['wrongoraclesemantics'] = '发现错误的Oracle BYTE语义';
 $string['wrongreservedwords'] = '当前使用的保留字<br />（表名如果使用了$CFG->prefix，就不用留意这个问题）';
 $string['yesextraindexesfound'] = '发现了以下附加索引。';
-$string['yesmissingindexesfound'] = '在数据库中发现了缺失的索引。以下是详细，需要执行 SQL 命令来修正(注意先备份)。<br /><br />我们强烈建议您在修改完成后，重新用此工具进行检查以确认再没有缺失的索引。';
-$string['yeswrongdefaultsfound'] = '在数据库中发现了不一致的默认值。以下是详细资料，需要执行 SQL 命令来修正(注意先备份)。<br /><br />我们强烈建议您在修改完成后，重新用此工具进行检查以确认没有其它错误。';
-$string['yeswrongintsfound'] = '在数据库中发现了整型错误。以下是详细资料，需要执行 SQL 命令来修正(注意先备份)。<br /><br />我们强烈建议您在修改完成后，重新用此工具进行检查以确认没有其它错误。';
-$string['yeswrongoraclesemanticsfound'] = '在数据库中发现一些Oracle列使用了BYTE语义。以下是详细资料，需要执行 SQL 命令来修正(注意先备份)。<br /><br />我们强烈建议您在修改完成后，重新用此工具进行检查以确认没有其它错误。';
+$string['yesmissingindexesfound'] = '<p>在您的数据库中发现了一些缺失的索引。以下是它们的详细信息以及使用您最喜欢的 SQL 接口执行以创建所有 SQL 语句所需的 SQL 语句。请记住先备份您的数据！</p>
+<p>执行此操作后，强烈建议再次执行此实用程序，以检查是否找不到更多缺失的索引。</p>';
+$string['yeswrongdefaultsfound'] = '<p>在您的数据库中发现了一些不一致的默认值。以下是它们的详细信息以及使用您最喜欢的 SQL 接口执行所需的 SQL 语句，以修复所有这些问题。请记住先备份您的数据！</p>
+<p>执行此操作后，强烈建议再次执行此实用程序，以检查是否找不到更多不一致的默认值。</p>';
+$string['yeswrongintsfound'] = '<p>在您的数据库中发现了一些错误的整数。以下是它们的详细信息以及使用您最喜欢的 SQL 接口执行以修复它们所需的 SQL 语句。请记住先备份您的数据！</p>
+<p>修复它们后，强烈建议再次执行此实用程序，以检查是否找到了更多的错误整数。</p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>在您的数据库中发现了一些使用 BYTE 语义的 Oracle 列。以下是它们的详细信息以及使用您最喜欢的 SQL 接口执行以转换它们所需的 SQL 语句。请记住先备份您的数据！</p>
+<p>执行此操作后，强烈建议再次执行此实用程序，以检查是否不再发现错误的语义。</p>';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_connection'] = 'A apărut o eroare la încărcare la încărcarea MathType';
 $string['pluginname'] = 'MathType by WIRIS';
+$string['privacy:metadata'] = 'MathType pentru TinyMCE nu afectează datele și nu le stochează.';

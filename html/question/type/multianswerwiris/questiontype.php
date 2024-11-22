@@ -148,7 +148,13 @@ class qtype_multianswerwiris extends qtype_wq {
             $question->id = $authorizedquestion->id;
         }
 
-        $question->category = $authorizedquestion->category;
+        global $CFG;
+        if ($CFG->version >= 2022041900 /* Moodle 4.0.0 */) {
+            $question->category = $form->category;
+        } else {
+            $question->category = $authorizedquestion->category;
+        }
+
         $form->defaultmark = $question->defaultmark;
         $form->questiontext = $question->questiontext;
         $form->questiontextformat = 0;
@@ -160,7 +166,7 @@ class qtype_multianswerwiris extends qtype_wq {
     public function create_editing_form($submiturl, $question, $category, $contexts, $formeditable) {
         global $CFG;
         require_once($CFG->dirroot . '/question/type/multianswerwiris/edit_multianswerwiris_form.php');
-        $wform = $this->base->create_editing_form($submiturl, $question, $category, $contexts, $formeditable);
+        $wform = new qtype_multianswer_edit_form_helper($submiturl, $question, $category, $contexts, $formeditable);
         return new qtype_multianswerwiris_edit_form($wform, $submiturl, $question, $category, $contexts, $formeditable);
     }
 

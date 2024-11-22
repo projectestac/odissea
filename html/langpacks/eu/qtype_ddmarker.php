@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoreitems'] = 'Gehitu {no} zuriune markatzaile gehiagorako';
-$string['alttext'] = 'Aukerako testua';
+$string['alttext'] = 'Ordezko testua';
 $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoko irudia';
 $string['clearwrongparts'] = 'Mugitu modu ezegokian kokatutako markatzaileak irudiaren azpiko lehenetsitako hasiera puntura.';

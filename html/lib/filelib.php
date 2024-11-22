@@ -3845,6 +3845,7 @@ class curl {
 
                 $redirects++;
 
+                $currenturl = $redirecturl ?? $url;
                 $redirecturl = null;
                 if (isset($this->info['redirect_url'])) {
                     if (preg_match('|^https?://|i', $this->info['redirect_url'])) {
@@ -3902,6 +3903,25 @@ class curl {
                 }
 
                 curl_setopt($curl, CURLOPT_URL, $redirecturl);
+
+                // If CURLOPT_UNRESTRICTED_AUTH is empty/false, don't send credentials to other hosts.
+                // Ref: https://curl.se/libcurl/c/CURLOPT_UNRESTRICTED_AUTH.html.
+                $isdifferenthost = parse_url($currenturl)['host'] !== parse_url($redirecturl)['host'];
+                $sendauthentication = !empty($this->options['CURLOPT_UNRESTRICTED_AUTH']);
+                if ($isdifferenthost && !$sendauthentication) {
+                    curl_setopt($curl, CURLOPT_HTTPAUTH, null);
+                    curl_setopt($curl, CURLOPT_USERPWD, null);
+                    // Check whether the CURLOPT_HTTPHEADER is specified.
+                    if (!empty($this->options['CURLOPT_HTTPHEADER'])) {
+                        // Remove the "Authorization:" header, if any.
+                        $headerredirect = array_filter(
+                            $this->options['CURLOPT_HTTPHEADER'],
+                            fn($header) => strpos($header, 'Authorization:') === false
+                        );
+                        curl_setopt($curl, CURLOPT_HTTPHEADER, $headerredirect);
+                    }
+                }
+
                 $ret = curl_exec($curl);
 
                 $this->info  = curl_getinfo($curl);

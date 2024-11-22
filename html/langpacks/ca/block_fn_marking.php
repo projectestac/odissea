@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['grade'] = '<b>Qualificació: </b>';
 $string['name'] = 'Nom';
 $string['save'] = 'Desa';
 $string['student'] = 'Estudiant';

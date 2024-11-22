@@ -51,7 +51,7 @@ $string['certificatename'] = 'Nom du certificat';
 $string['certificatereport'] = 'Rapport des certificats';
 $string['certificatesfor'] = 'Certificats pour';
 $string['certificatetype'] = 'Types de certificats';
-$string['certificatetype_help'] = 'C’est ici que vous déterminez la disposition du certificat. Le dossier de type de certificat inclut quatre certificats par défaut : A4 copies Incorporées sur papier de taille A4 avec police de caractères incorporée. A4 copies Non-incorporées sur papier  de taille A4 sans polices de caractères incorporées. Lettre copies Incorporées sur papier de taille de lettre avec police de caractères incorporée. Lettre copies Non-incorporées sur papier de taille de lettre sans polices de caractères incorporées. Les types non-incorporés utilisent les polices de caractères Times et Helvetica. Si vous estimez que vos utilisateurs n’auront pas ces polices de caractères sur leur ordinateur, ou si votre langue utilise des caractères (personnages) ou les symboles qui ne sont pas satisfaits(arrangés) par le Helvetica et les polices de caractères de Temps, choisissent donc un type incorporé. Les types incorporés utilisent le Dejavusans et les polices de caractères Dejavuserif. Ceci rendra les fichiers(dossiers) de pdf plutôt grands; ainsi on ne cela recommande pas de n’utiliser un type incorporé à moins que vous ne le deviez vraiment. Dossiers de type peuvent être ajoutés au certificat / type de dossier. Le nom du dossier et les chaînes du nouveau langage pour le nouveau type doit être ajoutée au fichier de langue certificat.';
+$string['certificatetype_help'] = 'C’est ici que vous déterminez la disposition du certificat. Le dossier de type de certificat inclut quatre certificats par défaut : A4 copies Incorporées sur papier de taille A4 avec police de caractères incorporée. A4 copies Non-incorporées sur papier  de taille A4 sans polices de caractères incorporées. Lettre copies Incorporées sur papier de taille de lettre avec police de caractères incorporée. Lettre copies Non-incorporées sur papier de taille de lettre sans polices de caractères incorporées. Les types non-incorporés utilisent les polices de caractères Times et Helvetica. Si vous estimez que vos utilisateurs n’auront pas ces polices de caractères sur leur ordinateur, ou si votre langue utilise des caractères (personnages) ou les symboles qui ne sont pas satisfaits (arrangés) par le Helvetica et les polices de caractères de Temps, choisissent donc un type incorporé. Les types incorporés utilisent le Dejavusans et les polices de caractères Dejavuserif. Ceci rendra les fichiers (dossiers) de pdf plutôt grands ; ainsi on ne recommande pas d’utiliser un type incorporé à moins que vous ne le deviez vraiment. Dossiers de type peuvent être ajoutés au certificat / type de dossier. Le nom du dossier et les chaînes du nouveau langage pour le nouveau type doit être ajoutée au fichier de langue certificat.';
 $string['certify'] = 'Pour certifier que';
 $string['code'] = 'Code';
 $string['completiondate'] = 'Cours complet';
@@ -69,8 +69,10 @@ $string['datefmt_help'] = 'Choisissez un format de date pour imprimer la date su
 $string['datehelp'] = 'Date';
 $string['deletissuedcertificates'] = 'Supprimer les certificats délivrés';
 $string['delivery'] = 'Délivré';
-$string['delivery_help'] = 'Choisissez ici la façon dont vous souhaitez que vos étudiants obtiennent leur certificat. Ouvrir dans le navigateur: Ouvre le certificat dans une nouvelle fenêtre. Force Télécharger: Ouvre la fenêtre de téléchargement du navigateur de fichiers. Certificat E-mail: Cette option envoie le certificat à l’étudiant en tant que pièce jointe.
-Une fois qu’un utilisateur reçoit son certificat, s’il clique sur le lien de la page d’accueil certificat, ils verra la date à laquelle il a reçu son certificat et sera en mesure de l’examiner.';
+$string['delivery_help'] = 'Choisissez ici la façon dont vous souhaitez que vos étudiants obtiennent leur certificat. Ouvrir dans le navigateur : ouvre le certificat dans une nouvelle fenêtre.
+Force Télécharger : ouvre la fenêtre de téléchargement du navigateur de fichiers.
+Certificat Courriel : cette option envoie le certificat à l’étudiant en tant que pièce jointe.
+Une fois qu’un utilisateur reçoit son certificat, s’il clique sur le lien de la page d’accueil certificat, il verra la date à laquelle il a reçu son certificat et sera en mesure de l’examiner.';
 $string['designoptions'] = 'Options de conception';
 $string['download'] = 'Forcer le téléchargement';
 $string['emailcertificate'] = 'Courriel (Vous devez également choisir la sauvegarde ! )';
@@ -92,12 +94,14 @@ $string['getcertificate'] = 'Obtenez votre certificat';
 $string['grade'] = 'Score';
 $string['gradedate'] = 'Date';
 $string['gradefmt'] = 'Format du score';
-$string['gradefmt_help'] = 'Il existe trois formats disponibles si vous choisissez d’imprimer une note sur le certificat: Note en pourcentage: Imprime la note en pourcentage. Année Points: Imprime la valeur du point de la note. Lettre année: Imprime la note en pourcentage sous forme de lettre.';
+$string['gradefmt_help'] = 'Il existe trois formats disponibles si vous choisissez d’imprimer une note sur le certificat : Note en pourcentage : imprime la note en pourcentage.
+Note en points : imprime la valeur du point de la note.
+Note en lettre : imprime la note en pourcentage sous forme de lettre.';
 $string['gradeletter'] = 'Lettres du barème';
 $string['gradepercent'] = 'Pourcentages du barème';
 $string['gradepoints'] = 'Points du barème';
 $string['imagetype'] = 'Format d’image';
-$string['incompletemessage'] = 'Pour télécharger votre certificat, vous devez d’abord terminer toutes les activités requises. S’il vous plaît revenez dans votre cours pour l’achever.';
+$string['incompletemessage'] = 'Pour télécharger votre certificat, vous devez d’abord terminer toutes les activités requises. Veuillez revenir dans votre cours pour l’achever.';
 $string['intro'] = 'Introduction';
 $string['issued'] = 'Fin';
 $string['issueddate'] = 'Date de fin';

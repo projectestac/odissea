@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Actions';
+$string['activityname'] = 'Nom de l\'activité';
+$string['activityname_help'] = 'Texte que le nom de l\'activité doit contenir ou auquel il doit être égal. Ce n\'est pas sensible à la casse.';
 $string['activityoresourceis'] = 'L’activité ou ressource est {$a}';
 $string['addacondition'] = 'Ajouter une condition';
 $string['addarule'] = 'Ajouter une règle';
@@ -40,6 +42,7 @@ $string['admindefaultsettingsintro'] = 'Les réglages ci-dessous seront utilisé
 $string['admindefaultvisualsintro'] = 'Le visuel suivant sera utilisé par défaut quand le bloc est ajouté dans un cours.';
 $string['adminscanearnxp'] = 'Les administrateurs peuvent gagner des points';
 $string['adminscanearnxp_desc'] = 'Par défaut, les administrateurs ne sont pas inclus dans le groupe d’utilisateurs qui peuvent gagner des points. Ceci parce que les administrateurs ont toujours la permission _block/xp:earnxp_, ce qui leur permet de gagner des points continuellement et partout. Utilisez ce paramètre pour permettre aux administrateurs de gagner des points.';
+$string['allcoursesreset'] = 'Tous les cours ont été réinitialisés.';
 $string['anonymity'] = 'Anonymat';
 $string['anonymity_help'] = 'Ce réglage contrôle si les participants peuvent voir les noms et avatars des autres participants.';
 $string['apply'] = 'Appliquer';
@@ -60,11 +63,22 @@ $string['cannotshowblockconfig'] = 'Normalement, j’afficherais les paramètres
 $string['cannotshowblockconfigsys'] = 'Normalement, j’afficherais les paramètres d’apparence ici, mais je n’ai pas trouvé votre bloc. Il est peut-être absent de la [page d’accueil]({$a->fp}) et du [tableau de bord par défaut]({$a->mysys}) de vos utilisateurs, ou présent dans les deux. Pour modifier les paramètres à partir d’ici, assurez-vous qu’il n’apparaît que dans l’un d’eux.';
 $string['changelevelformhelp'] = 'Si vous changez le nombre de niveaux, les badges de niveau personnalisés seront temporairement désactivés pour éviter d’éventuels niveaux sans badges. Si vous changez le nombre de niveaux, une fois ce formulaire enregistré, visitez la page \'Visuels\' pour réactiver les badges personnalisés.';
 $string['cheatguard'] = 'Protection anti-triche';
+$string['chooseacondition'] = 'Choisir une condition';
+$string['clearfilter'] = 'Effacer le filtre';
 $string['clicktoselectcm'] = 'Cliquer pour choisir une activité ou une ressource';
 $string['cmselector'] = 'Sélecteur de module';
 $string['coefxp'] = 'Coefficient de l’algorithme';
 $string['colon'] = '{$a->a} : {$a->b}';
 $string['compatibilitycheck'] = 'Test de compatibilité';
+$string['completionrules'] = 'Règles d\'achèvement';
+$string['completionrules_help'] = 'Les règles d\'achèvement sont réparties en trois catégories : achèvement de l\'activité, achèvement de la section et achèvement du cours. L\'ajout de conditions aux catégories détermine quand et combien de points sont attribués.
+
+Les règles sont évaluées dans l\'ordre dans lequel elles sont présentées à l\'écran. Dès qu\'une condition est remplie, les points correspondants sont attribués et les autres règles ne sont pas évaluées.
+
+[En savoir plus](https://docs.levelup.plus/xp/docs/completion-rules?ref=blockxp_help)';
+$string['completionrulesintro'] = 'Attribuez des points aux étudiants lorsqu\'ils terminent des activités, des sections ou des cours.';
+$string['completionruleslegacyusednotice'] = 'Vous avez des « règles d\'événement » existantes qui utilisent des conditions d\'achèvement. Nous vous recommandons vivement de les supprimer au profit des méthodes ci-dessous, car l\'utilisation à la fois de « règles d\'événement » et de « règles d\'achèvement » pourrait doubler les points attribués.';
+$string['condition'] = 'Condition';
 $string['configblockrankingsnapshot'] = 'Afficher l’instantané du classement';
 $string['configblockrankingsnapshot_help'] = 'L’instantané du classement affiche le rang de l’utilisateur. Il tente également d’afficher les deux personnes qui entourent l’utilisateur. Cette fonctionnalité nécessite que le classement soit activé et que les rangs soient affichés.';
 $string['configdescription'] = 'Introduction';
@@ -76,6 +90,7 @@ $string['configtitle'] = 'Titre';
 $string['configtitle_help'] = 'Le titre du bloc.';
 $string['congratulationsyouleveledup'] = 'Félicitations !';
 $string['coolthanks'] = 'Merci c’est cool !';
+$string['coursea'] = 'Cours « {$a} »';
 $string['courselog'] = 'Journal du cours';
 $string['coursereport'] = 'Rapport du cours';
 $string['courserules'] = 'Règles du cours';
@@ -133,6 +148,7 @@ Les drops peuvent être utilisés pour attribuer astucieusement des points lorsq
 
 [Plus d’informations](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'Les drops sont des morceaux de code directement placés dans le contenu qui attribuent des points lorsqu’ils sont rencontrés par un utilisateur.';
+$string['editcondition'] = 'Modifier la condition';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**Attention !** Vous ne modifiez pas les paramètres actifs actuellement, mais vous êtes en train de modifier les valeurs par défaut. Comme Level Up XP est utilisé sur l’ensemble du site, votre intention est probablement de modifier les paramètres du site. [Naviguez ici]({$a->url}) pour modifier ces paramètres, ou suivez le lien "Paramètres" à partir du bloc XP lui-même.';
 $string['editinstructions'] = 'Modifier l’information';
 $string['enablecheatguard'] = 'Activer la mise en garde sur la triche';
@@ -151,7 +167,7 @@ $string['enablexpgain_help'] = 'Si ce réglage est à « Non », personne ne p
 
 Notez que ceci peut être contrôlé de manière plus fine par la permission \'block/xp:earnxp\'.';
 $string['entersearchterm'] = 'Entrez un terme de recherche';
-$string['errorcontextcoursemismatchforwholesite'] = 'L’URL de cette page <em>Progressez !</em> ne correspond pas à la configuration actuelle du plugin. Votre configuration actuelle déclare que <em>Progressez !</em> doit être utilisé « Pour l’ensemble du site », mais cette page s’attend à ce qu’il soit utilisé « Par cours ». S’il vos plait, <a href="{$a->nexturl}">cliquer ici</a> pour aller à la bonne page. Cherchez le paramètre « block_xp_context » si vous voulez changer votre configuration.';
+$string['errorcontextcoursemismatchforwholesite'] = 'L’URL de cette page <em>Progressez !</em> ne correspond pas à la configuration actuelle du plugin. Votre configuration actuelle déclare que <em>Progressez !</em> doit être utilisé « Pour l’ensemble du site », mais cette page s’attend à ce qu’il soit utilisé « Par cours ». Veuillez <a href="{$a->nexturl}">cliquer ici</a> pour aller à la bonne page. Cherchez le paramètre « block_xp_context » si vous voulez changer votre configuration.';
 $string['errorcontextcoursemismatchpercourse'] = 'L’URL de cette page <em>Progressez !</em> ne correspond pas à la configuration actuelle du plugin. Votre configuration actuelle déclare que <em>Progressez !</em> doit être utilisé « Par cours », mais cette page s’attend à ce qu’il soit utilisé « Pour l’ensemble du site ». Il provient très probablement d’un <em>bloc</em> qui a été ajouté au tableau de bord ou à la page d’accueil dans une configuration différente. Vous devez supprimer le bloc des dernières pages et n’utiliser le bloc que dans les cours individuels.';
 $string['errorformvalues'] = 'll y a quelques problèmes dans les valeurs de formulaire, veuillez les corriger.';
 $string['errorlevelsincorrect'] = 'Le nombre minimum de niveaux est 2';
@@ -176,6 +192,7 @@ Ressources additionnelles:
 $string['eventsrulesintro'] = 'Observez les actions et attribuez des points aux étudiants lorsqu’ils les réalisent.';
 $string['eventtime'] = 'Heure de l’événement';
 $string['filterbyuser'] = 'Filtrer par utilisateur';
+$string['filterellipsis'] = 'Filtrer…';
 $string['filtermodules'] = 'Filtrer les modules';
 $string['for1day'] = 'Pour 1 jour';
 $string['for1month'] = 'Pour 1 mois';
@@ -218,7 +235,7 @@ $string['ineffective'] = 'Ineffectif';
 $string['infos'] = 'Information';
 $string['installed'] = 'Installé';
 $string['instructions'] = 'Plus d’information';
-$string['invalidxp'] = 'Valeur des points invalide';
+$string['invalidxp'] = 'Valeur des points non valide';
 $string['keeplogs'] = 'Conserver l’historique';
 $string['ladder'] = 'Classement';
 $string['ladderadditionalcols'] = 'Colonnes additionnelles';
@@ -231,7 +248,7 @@ $string['levelbadges_help'] = 'Télécharger des images pour remplacer individue
 
 Les fichiers doivent être appelés [niveau].[extension de fichier], soit 1.png, 2.jpg, etc.
 
-Nous recommandons des images d’une taille de 100x100 pixels, dans un de ces types: GIF, JPEG, PNG et SVG.';
+Nous recommandons des images d’une taille de 100x100 pixels, dans un de ces types : GIF, JPEG, PNG et SVG.';
 $string['levelbadgesformhelp'] = 'Nommez les fichiers [niveau].[extension de fichier] par exemple 1.png, 2.jpg, etc. La taille d’image recommandée est 100 x 100.';
 $string['levelcount'] = 'Nombre de niveaux';
 $string['leveldesc'] = 'Description du niveau';
@@ -263,6 +280,8 @@ $string['missing'] = 'Manquant';
 $string['movecondition'] = 'Déplacer la condition';
 $string['moverule'] = 'Déplacer la règle';
 $string['name'] = 'Nom';
+$string['namecontains'] = 'Contient « {$a} »';
+$string['nameequalsto'] = 'Est égal à « {$a} »';
 $string['navbardisplay'] = 'Afficher dans la barre de navigation';
 $string['navbardisplay_desc'] = 'Quand ceci est activé, le niveau de l’utilisateur sera affiché dans la barre de navigation supérieure. Si le plugin est utilisé "Par cours", il n’apparaîtra que dans les cours. Veuillez noter que cette fonctionnalité dépend largement du thème et peut ne pas fonctionner correctement, ou pas du tout, avec des thèmes tiers. [En savoir plus](https://docs.levelup.plus/xp/docs/navbar-display)';
 $string['navdrops'] = 'Drops';
@@ -301,7 +320,7 @@ $string['pickaconditiontype'] = 'Choisissez un type de condition';
 $string['pluginavailabilityxpdesc'] = 'Ce plugin permet aux enseignants de restreindre l’accès aux activités en fonction du niveau des étudiants.';
 $string['pluginenrolxpdesc'] = 'Ce plugin permet l’inscription automatique à des cours en fonction du niveau d’un étudiant dans un autre cours.';
 $string['pluginname'] = 'Level Up XP';
-$string['pluginshortcodesdesc'] = 'Ce plugin permet aux formateurs de personnaliser leur matériel en incluant des éléments liés à XP (points, niveau, tableau de classement, ...) dans le contenu, ainsi que de masquer ou d’afficher le contenu en fonction du niveau de l’étudiant.';
+$string['pluginshortcodesdesc'] = 'Ce plugin permet aux formateurs de personnaliser leur matériel en incluant des éléments liés à XP (points, niveau, tableau de classement…) dans le contenu, ainsi que de masquer ou d’afficher le contenu en fonction du niveau de l’étudiant.';
 $string['pluginsoutofsync'] = 'Les plugins ne sont pas synchronisés !
 
 Cela signifie que vous avez mis à niveau _Level Up XP_ mais pas _Level Up XP+_. Bien que nous fassions de notre mieux pour essayer d’éviter tout problème, certaines fonctions peuvent ne plus fonctionner correctement, y compris dans _Level Up XP_ lui-même. Nous vous recommandons de mettre à niveau _Level Up XP+_ vers sa dernière version. [Lire la suite]({$a->url})
@@ -402,6 +421,7 @@ $string['rule:gte'] = 'est supérieur ou égal à';
 $string['rule:lt'] = 'est inférieur à';
 $string['rule:lte'] = 'est inférieur ou égal à';
 $string['rule:regex'] = 'correspond à l’expression rationnelle';
+$string['ruleadded'] = 'La condition a été ajoutée.';
 $string['rulecm'] = 'Activité ou ressource';
 $string['rulecm_help'] = 'Cette condition est remplie quand l’événement se produit dans l’activité ou la ressourc indiquée.';
 $string['rulecmdesc'] = 'L’activité ou ressource est « {$a->contextname} ».';
@@ -410,6 +430,12 @@ $string['rulecminfo'] = 'Cette condition requiert que l’action se produise dan
 $string['ruleevent'] = 'Événement précis';
 $string['ruleeventdesc'] = 'L’événement est « {$a->eventname} »';
 $string['ruleeventinfo'] = 'Choisissez l’action que les utilisateurs doivent effectuer à partir d’une liste d’événements préparée.';
+$string['rulefilteranycm'] = 'Toute activité';
+$string['rulefilteranycourse'] = 'Tout cours';
+$string['rulefilteranycoursedesc'] = 'Cette condition correspondra à n’importe quel cours.';
+$string['rulefilteranydesc'] = 'Cette condition correspond à tout.';
+$string['rulefilteranysection'] = 'Toute section';
+$string['rulefilteranysectiondesc'] = 'Cette condition correspondra à n’importe quelle section.';
 $string['ruleproperty'] = 'Propriété de l’événement';
 $string['rulepropertydesc'] = 'La propriété « {$a->property} » {$a->compare} « {$a->value} ».';
 $string['rulepropertyinfo'] = 'Cette condition est pour les utilisateurs avancés avec une connaissance technique des événements et de leurs propriétés.';
@@ -536,7 +562,7 @@ $string['updateandpreview'] = 'Mise à jour et aperçu';
 $string['upgradingplugins'] = 'Mettre à jour les plugins';
 $string['urlaccessdeprecated'] = 'L’accès via ce lien est déconseillé, veuillez mettre à jour vos liens.';
 $string['usagereport'] = 'Partager le rapport d’utilisation';
-$string['usagereport_desc'] = 'Partager périodiquement des informations d’utilisation anonymes avec les développeurs du plugin. Ces informations permettront de mieux comprendre comment le plugin est utilisé et influenceront son développement. Les informations partagées contiennent des informations de base sur le site Moodle (URL, version), et des informations sur l’utilisation du plugin (nombre d’utilisateurs gagnant des points, aperçu des paramètres, règles utilisées, ...).';
+$string['usagereport_desc'] = 'Partager périodiquement des informations d’utilisation anonymes avec les développeurs du plugin. Ces informations permettront de mieux comprendre comment le plugin est utilisé et influenceront son développement. Les informations partagées contiennent des informations de base sur le site Moodle (URL, version), et des informations sur l’utilisation du plugin (nombre d’utilisateurs gagnant des points, aperçu des paramètres, règles utilisées…).';
 $string['usealgo'] = 'Utiliser l’algorithme';
 $string['usecustomlevelbadges'] = 'Utiliser les badges de niveau personnalisés';
 $string['usecustomlevelbadges_help'] = 'Lorsque cette option est sur \'Oui\', vous devez fournir une image pour chaque niveau.';

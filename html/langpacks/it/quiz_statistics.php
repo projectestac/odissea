@@ -65,6 +65,7 @@ $string['firstattempts'] = 'primi tentativi';
 $string['firstattemptsavg'] = 'Voto medio dei primi tentativi';
 $string['firstattemptscount'] = 'Numero di primi tentativi completati e valutati';
 $string['frequency'] = 'Frequenza';
+$string['getstatslockprogress'] = 'In attesa per elaborazione in corso. Attendere o riprovare più tardi.';
 $string['highestattempts'] = 'tentativo migliore';
 $string['highestattemptsavg'] = 'Media delle valutazioni dei tentativi migliori';
 $string['intended_weight'] = 'Peso previsto';

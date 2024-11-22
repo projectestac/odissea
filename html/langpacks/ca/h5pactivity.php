@@ -131,6 +131,7 @@ $string['review_on_completion'] = 'Els participants poden revisar els seus propi
 $string['review_user_attempts'] = 'Mostra els intents de l\'usuari ({$a})';
 $string['score'] = 'Puntuació';
 $string['score_out_of'] = '{$a->rawscore} de {$a->maxscore}';
+$string['search:activity'] = 'H5P: informació de l\'activitat';
 $string['startdate'] = 'Data d\'inici';
 $string['statement_received'] = 'S\'ha rebut la instrucció xAPI';
 $string['totalscore'] = 'Puntuació total';

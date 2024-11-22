@@ -37,7 +37,7 @@ $CFG->behat_dataroot,
 $CFG->behat_prefix and $CFG->behat_wwwroot devono essere diversi da
 $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e$CFG->phpunit_prefix values.<br/>Oppure, se $CFG->behat_prefix è lo stesso, $CFG->behat_dbname or $CFG->behat_dbhost devono essere diversi da $CFG->phpunit_dbname and $CFG->phpunit_dbhost e da $CFG->dbnam e e$CFG->dbhost.';
 $string['fieldvalueargument'] = 'Argomenti valore del campo';
-$string['fieldvalueargument_help'] = 'L\'argomento deve essere completato da un valore del campo. Esistono diversi tipi di campo, alcuni semplici come caselle di spunta, menu a tendina o aree d testo, altri più complessi come i campi data. Per conoscere il valore atteso in funzione del tipo di campo è possibile consultare <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a>.';
+$string['fieldvalueargument_help'] = 'Questo argomento deve essere completato da un valore del campo. Esistono molti tipi di campo, inclusi quelli semplici come caselle di controllo, selezioni o aree di testo, o quelli complessi come i selettori di data. Consultare la documentazione di sviluppo <a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance_testing</a> per i dettagli sui valori di campo previsti.';
 $string['giveninfo'] = 'Fornito. Procedure per impostare l\'ambiente';
 $string['infoheading'] = 'Informazioni';
 $string['installinfo'] = 'Per ulteriori informazioni sull\'installazione e lo svolgimento di test: {$a}';

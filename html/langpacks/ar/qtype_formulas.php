@@ -60,7 +60,7 @@ $string['incorrectfeedback_help'] = 'سيتم إظهار هذه الإفادة �
 $string['mainq'] = 'السؤال الرئيسي';
 $string['modelanswer'] = 'إجابة النموذج';
 $string['number'] = 'رقم';
-$string['numeric'] = 'رقمي';
+$string['numeric'] = 'عدديّ ( يشمل: عمليات حسابيّة)';
 $string['numerical_formula'] = 'الصيغة العددية';
 $string['otherrule'] = 'قواعد أخرى';
 $string['partiallycorrectfeedback'] = 'لأي إجابة صحيحة جزئياً';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessibility:rate:choice'] = 'Row {$a->rowposition}, {$a->choicetitle}: Column {$a->colposition}, {$a->choiceanswer}.';
 $string['action'] = 'Action';
 $string['activityoverview'] = 'You have questionnaires that are due';
 $string['additionalinfo'] = 'Additional Info';
@@ -142,8 +143,8 @@ $string['displaymethod'] = 'Display method not defined for question.';
 $string['download'] = 'Download';
 $string['downloadpdf'] = 'Download PDF';
 $string['downloadtextformat'] = 'Download';
-$string['downloadtextformat_help'] = 'This feature enables you to save all the responses of a questionnaire to a selectable, supported file format.
- You can choose to include extra data items in the export, as well as choose to automatically send the file to selected users.';
+$string['downloadtextformat_help'] = 'This feature enables you to download questionnaire responses in a file format of your choice.
+ The file can then be opened in a spreadsheet program (e.g. MS Excel or Open Office Calc) or a statistical package for further processing.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Report type';
 $string['dropdown'] = 'Dropdown Box';
@@ -213,7 +214,8 @@ $string['feedbacknotes'] = 'Feedback notes';
 $string['feedbacknotes_help'] = 'Text entered here will be displayed to the respondents at the end of their Feedback Report';
 $string['feedbackoptions'] = 'Feedback options';
 $string['feedbackoptions_help'] = 'Feedback options are available if your questionnaire contains the following question types and question settings:
-Radio buttons; Dropdown box; Yes/No; or Rate (normal or Osgood scale). Those questions must be set as Required, their Question Name field must NOT be empty and the Possible answers choices must contain a value.';
+Radio buttons; Dropdown box; Yes/No; Rate (normal or Osgood scale) or Slider. Those questions must be set as Required, their Question Name field must NOT be empty and the Possible answers choices must contain a value.
+Slider questions must NOT use a negative value for the Minimum slider range.';
 $string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'This question is part of feedback section [{$a}]';
 $string['feedbackremovesection'] = 'Removing this question will completely remove feedback section [{$a}]';
@@ -271,6 +273,8 @@ $string['kindofratescale_help'] = 'Right-click on the More Help link below.';
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Last Respondent';
 $string['leftlabel'] = 'Left label';
+$string['leftpart'] = '{$a->min} is {$a->leftlabel}';
+$string['leftpartdefault'] = '{$a->min} is minimum slider range';
 $string['length'] = 'Length';
 $string['managequestions'] = 'Manage questions';
 $string['managequestions_help'] = 'In the Manage questions section of the Edit Questions page, you can conduct a number of operations on a Questionnaire\'s questions.';
@@ -293,6 +297,10 @@ $string['maxtextlength_help'] = 'For the Text Box question type, enter the Input
 Default values are 20 characters for the Input Box width and 25 characters for the maximum length of text entered.';
 $string['messageprovider:message'] = 'Questionnaire reminder';
 $string['messageprovider:notification'] = 'Questionnaire submission';
+$string['middlepart'] = ', {$a->centreval} is {$a->middlelabel}';
+$string['middlepartdefault'] = ', {$a->centreval} is average';
+$string['middlepartwithtwovalues'] = ', {$a->centreval1} and {$a->centreval2} are {$a->middlelabel}';
+$string['middlepartwithtwovaluesdefault'] = ', {$a->centreval1} and {$a->centreval2} are average';
 $string['minforcedresponses'] = 'Min. forced responses';
 $string['minforcedresponses_help'] = 'Use these parameters to force respondent to tick a minimum of **Min.** boxes and a maximum of **Max.** check boxes. To
 force an exact number of check boxes to be ticked, set **Min.** and **Max.** to the same value. If only a min or a max value is desired, just leave the other
@@ -330,6 +338,7 @@ $string['noduplicates'] = 'No duplicate choices';
 $string['noduplicateschoiceserror'] = 'You must enter at least 2 Possible answers for the "No duplicate choices" option!';
 $string['non_respondents'] = 'Users who have not yet submitted their responses to this questionnaire';
 $string['noneinuse'] = 'This questionnaire does not contain any questions.';
+$string['nopermissions'] = 'Sorry, but you do not currently have permissions to view this page or perform this action.';
 $string['nopublicsurveys'] = 'No public questionnaires.';
 $string['noresponsedata'] = 'No responses for this question.';
 $string['noresponses'] = 'No responses';
@@ -550,6 +559,8 @@ $string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Resume questionnaire';
 $string['return'] = 'Return';
 $string['rightlabel'] = 'Right label';
+$string['rightpart'] = 'and {$a->max} is {$a->rightlabel}';
+$string['rightpartdefault'] = 'and {$a->max} is maximum slider range';
 $string['save'] = 'Save';
 $string['save_and_exit'] = 'Save and exit';
 $string['saveasnew'] = 'Save as New Question';
@@ -631,6 +642,7 @@ $string['total'] = 'Total';
 $string['totalofnumbers'] = 'Total of numbers entered';
 $string['totalresponses'] = 'Total responses to question';
 $string['type'] = 'Question Type';
+$string['unanswered'] = 'Unanswered';
 $string['undefinedquestiontype'] = 'Undefined question type!';
 $string['unknown'] = 'Unknown';
 $string['unknownaction'] = 'Unknown questionnaire action specified...';
@@ -654,6 +666,7 @@ $string['viewindividualresponse_help'] = 'Click on the respondents\' names in th
 $string['viewresponses'] = 'All responses ({$a})';
 $string['viewyourresponses'] = 'View your response(s)';
 $string['warning'] = 'Warning, error encountered.';
+$string['where'] = 'where';
 $string['wronganswers'] = 'There is something wrong with your answers (see below)';
 $string['wrongdateformat'] = 'The date entered: <strong>{$a}</strong> does not correspond to the format shown in the example.';
 $string['wrongdaterange'] = 'ERROR! The year must be set in the 1902 to 2037 range.';

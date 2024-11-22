@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = 'Er is momenteel een probleem met het scannen met AntiVirus. Uw bestand {$a->item}  is niet geüpload. Probeer het later opnieuw.';
+$string['antivirusfailed'] = 'Er is momenteel een probleem met het scannen met AntiVirus. Je bestand {$a->item}  is niet geüpload. Probeer het later opnieuw.';
 $string['clamfailed'] = 'ClamAV is vastgelopen. De foutmelding was {$a}. Hier is de melding van Clam:';
 $string['clamfailureonupload'] = 'Als ClamAV faalt';
 $string['configclamactlikevirus'] = 'Behandel bestanden als virussen';

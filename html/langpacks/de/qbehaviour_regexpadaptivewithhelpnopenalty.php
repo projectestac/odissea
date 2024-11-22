@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['getletter'] = 'Einen Buchstaben anfordern';
 $string['getword'] = 'Ein Wort anfordern';
+$string['getwordorpunctuation'] = 'Nächstes Wort oder Satzzeichen erhalten';
 $string['pluginname'] = 'Frageverhalten RegExp adaptiver Modus mit Hilfe (keine Abzüge)';
 $string['privacy:metadata'] = 'Das Plugin \'Frageverhalten RegExp adaptiver Modus mit Hilfe (keine Abzüge)\' speichert keine personenbezogenen Daten.';

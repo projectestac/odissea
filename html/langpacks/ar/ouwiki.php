@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addannotation'] = 'إضافة شرح';
-$string['addnewsection'] = 'إضافة مقطع جديد إلى هذه الصفحة';
-$string['addnewsection1'] = 'إضافة مقطع جديد';
+$string['addnewsection'] = 'إضافة قسم جديد إلى هذه الصفحة';
+$string['addnewsection1'] = 'إضافة قسم جديد';
 $string['advice_annotate'] = '<p>ضع شروحاتك في الصفحة أدناه، ثم انقر على <strong>حفظ التغييرات</strong>.</p>
 <ul>
 <li>لوضع الشروحات، أنقر واحدًا من مُعلِّمات الشرح ثم أدخل النص المطلوب.</li>
@@ -52,7 +52,7 @@ $string['downloadcsv'] = 'ملف نصي ذو قيم مفصولة بفوارز';
 $string['duplicatepagetitle'] = 'عنوان الصفحة الجديدة ينبغي أن لا يكون مطابقًا لأي من عناوين الصفحات الموجودة.';
 $string['editpage'] = 'تحرير الصفحة';
 $string['emptypagetitle'] = 'عنوان الصفحة الجديدة ينبغي أن لا يُترك فارغاً.';
-$string['emptysectiontitle'] = 'عنوان المقطع الجديد ينبغي أن لا يُترك فارغاً.';
+$string['emptysectiontitle'] = 'عنوان القسم الجديد ينبغي أن لا يُترك فارغاً.';
 $string['endannotation'] = 'نهاية الشرح';
 $string['error_nopermission'] = 'ليست لديك صلاحية معاينة محتوى هذه الصفحة';
 $string['event:ouwikidelete'] = 'إصدار ouwiki تم حذفه';
@@ -116,5 +116,5 @@ $string['showannotationicons'] = 'إظهار الشروحات';
 $string['showwordcounts_help'] = 'عند تشغيله، سيتم احتساب عداد الكلمات للصفحات وعرضه عند أسفل المحتوى الرئيسي.';
 $string['startannotation'] = 'بداية الشرح';
 $string['typeinpagename'] = 'أكتب اسم الصفحة هنا';
-$string['typeinsectionname'] = 'إطبع عنوان المقطع هنا';
+$string['typeinsectionname'] = 'إطبع عنوان القسم هنا';
 $string['wikirecentchanges_from'] = 'تغييرات في الويكي (صفحة {$a})';

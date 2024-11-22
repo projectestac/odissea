@@ -48,7 +48,7 @@ $string['activityreport'] = 'Reporte de Actividad';
 $string['activityreports'] = 'Reportes de Actividad';
 $string['activityselect'] = 'Seleccione esta actividad para moverse a otro lugar';
 $string['activitysince'] = 'Actividad desde {$a}';
-$string['activitytypetitle'] = '{$a->actividad} - {$a->tipo}';
+$string['activitytypetitle'] = '{$a->activity} - {$a->type}';
 $string['activityweighted'] = 'Actividad por usuario';
 $string['add'] = 'Añadir';
 $string['addactivity'] = 'Agregar una actividad ...';
@@ -590,14 +590,14 @@ $string['detailedless'] = 'Menos detalle';
 $string['detailedmore'] = 'Más detalle';
 $string['details'] = 'Detalles';
 $string['digitalminor'] = 'Menor digital';
-$string['digitalminor_desc'] = 'Por favor solicitele a su padre o tutor que contacte a:';
+$string['digitalminor_desc'] = 'Por favor solicitar a su padre o tutor que contacte a:';
 $string['directory'] = 'Directorio';
 $string['disable'] = 'Deshabilitar';
 $string['disabledcomments'] = 'Los comandos están desactivados';
 $string['dismissnotification'] = 'Descartar esta notificación';
 $string['displayingfirst'] = 'Mostrando las primeras {$a->count} {$a->things}';
 $string['displayingrecords'] = 'Mostrando {$a} registros';
-$string['displayingusers'] = 'Mostrando los usuarios {$a->start} a {$a->end}';
+$string['displayingusers'] = 'Mostrando los usuarios desde {$a->start} hasta {$a->end}';
 $string['displayonpage'] = 'Mostrar en página';
 $string['dndcourse'] = 'Puede arrastrar y soltar este curso para alterar su clasificación o moverlo a otra categoría.';
 $string['dndenabled_inbox'] = 'Puede arrastrar y soltar archivos aquí para añadirlos';
@@ -686,7 +686,7 @@ Para confirmar su nueva cuenta, por favor vaya a esta dirección web:
 
 {$a->link}
 
-En la mayoría de programas de correo electrónico, debería aparecer un enlace azul donde poder hacer click. Si no funciona, córtelo y péguelo en la barra de direcciones de su navegador.
+En la mayoría de programas de correo electrónico, debería aparecer un enlace azul donde poder hacer clic. Si no funciona, cópielo y péguelo en la barra de direcciones de su navegador.
 
 Si necesita ayuda, por favor contacte con el administrador del sitio,
 {$a->admin}';
@@ -708,7 +708,7 @@ Puede elegir también un ajuste diferente para cada uno de los foros, si así lo
 $string['emaildigestcomplete'] = 'Completo (correo diario con mensajes completos)';
 $string['emaildigestoff'] = 'Sin resumen (un correo por cada mensaje del foro)';
 $string['emaildigestsubjects'] = 'Por temas (correo diario sólo con temas)';
-$string['emaildisable'] = 'La dirección de correo no está habilitada';
+$string['emaildisable'] = 'Esta dirección de correo no está habilitada';
 $string['emaildisableclick'] = 'Haga clic aquí para desactivar el envío de correo a esta dirección';
 $string['emaildisplay'] = 'Visibilidad del correo electrónico';
 $string['emaildisplay_help'] = '* Oculto: sólo los usuarios con los permisos correspondientes, como los profesores, pueden ver tu dirección de correo electrónico.
@@ -726,7 +726,7 @@ $string['emailexists'] = 'Esta dirección de correo ya está registrada.';
 $string['emailexistshintlink'] = 'Recuperar nombre de usuario olvidado o contraseña';
 $string['emailexistssignuphint'] = '¿Quizás creaste una cuenta en el pasado? {$a}';
 $string['emailformat'] = 'Formato de correo';
-$string['emailmustbereal'] = 'IMPORTANTE: Para concluir el proceso debe escribir una dirección de correo verdadera';
+$string['emailmustbereal'] = 'IMPORTANTE: Debe escribir una dirección de correo real';
 $string['emailnotallowed'] = 'Las direcciones email de estos dominios no están permitidas ({$a})';
 $string['emailnotfound'] = 'No se ha encontrado la dirección email en la base de datos';
 $string['emailonlyallowed'] = 'Este email no figura entre los permitidos ({$a})';
@@ -752,7 +752,7 @@ $string['emailpasswordchangeinfofail'] = 'Hola, {$a->firstname}.
 
 Alguien (probablemente usted) ha solicitado una nueva contraseña para su cuenta en \'{$a->sitename}\'.
 
-Desafotunadamente las contraseñas no pueden cambiarse en este sitio. Por favor, contacte con el administrador del sitio, {$a->admin}.';
+Desafortunadamente las contraseñas no pueden cambiarse en este sitio. Por favor, contacte con el administrador del sitio, {$a->admin}.';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Información sobre cambiar la contraseña';
 $string['emailpasswordconfirmation'] = 'Hola, {$a->firstname}.
 
@@ -766,7 +766,7 @@ diríjase a la siguiente dirección:
 
 En la mayoría de programas de correo electrónico el
 enlace anterior debería aparecer en azul y puede hacer
-clic sobre él. Si no funcionara, córtelo y péguelo en la
+clic sobre él. Si no funcionara, cópielo y péguelo en la
 ventana de direcciones de su navegador.
 
 Si necesita ayuda adicional, póngase en contacto con el
@@ -780,7 +780,7 @@ $string['emailpasswordconfirmsent'] = 'Hemos enviado un correo a su dirección <
 <p>Este mensaje contiene instrucciones sencillas para completar y confirmar el cambio de contraseña.
 Si tuviera alguna dificultad, contacte con el Administrador.</p>';
 $string['emailpasswordsent'] = 'Gracias por confirmar el cambio de contraseña.
-<p>Ya le enviamos un correo con su nueva contraseña a <b>{$a->email}</b>.</p>
+<p>Se ha enviado un correo con su nueva contraseña a <b>{$a->email}</b>.</p>
 <p>La nueva contraseña ha sido generada automáticamente.
 Le recomendamos que <a href="{$a->link}">cambie su contraseña</a> por otra más fácil de recordar.</p>';
 $string['emailresetconfirmation'] = 'Hola {$a->firstname}.
@@ -798,7 +798,7 @@ $string['emailresetconfirmationsubject'] = '{$a}: Solicitud de restablecimiento 
 $string['emailresetconfirmsent'] = 'Se ha enviado un correo electrónico a su dirección en <b>{$a}.</b> <br /> Contiene unas sencillas instrucciones para confirmar y completar el cambio de contraseña.
 Si continúa teniendo problemas, póngase en contacto con el administrador del sitio.';
 $string['emailstop'] = 'Desactivar notificaciones';
-$string['emailtoprivatefiles'] = 'También puede enviar directamente archivos vía e-mail a esta zona de archivos privados. Simplemente adjunte sus archivos a un correo electrónico y envíelo a la dirección de correo electrónico {$a}';
+$string['emailtoprivatefiles'] = 'También puede enviar directamente archivos vía e-mail a esta zona de archivos privados. Simplemente adjunte sus archivos a un correo electrónico y envíelo a {$a}';
 $string['emailtoprivatefilesdenied'] = 'El administrador ha desactivado la opción de subir sus propios archivos privados.';
 $string['emailvia'] = '{$a->name} (vía {$a->siteshortname})';
 $string['emojicategoryactivities'] = 'Actividades';
@@ -1092,9 +1092,9 @@ $string['idnumbercourse_help'] = 'Sólo usado para conectar el curso con sistema
 $string['idnumbercoursecategory'] = 'Número ID de la categoría';
 $string['idnumbercoursecategory_help'] = 'El número de identificación ID de una categoría de cursos sólo se usa cuando se compara la categoría contra un sistema externo y no se muestra en ningún lugar del sitio. Si la categoría tiene un código oficial, este puede ser introducido, de lo contrario, el campo puede dejarse en blanco.';
 $string['idnumbergroup'] = 'Número de identificación del grupo';
-$string['idnumbergroup_help'] = 'El número ID de un grupo sólo se usa cuando se compara el grupo con un sistema externo, y no se muestra en ningún otror lugar del sitio. Si el grupo tiene un código oficial, entonces se puede introducr este, de lo contrario, el campo se puede dejar en blanco.';
+$string['idnumbergroup_help'] = 'El número de identificación ID de un grupo sólo se usa cuando se compara el grupo con un sistema externo, y no se muestra en ningún otro lugar del sitio. Si el grupo tiene un código oficial, entonces se puede introducir este, de lo contrario, el campo se puede dejar en blanco.';
 $string['idnumbergrouping'] = 'Número de identificación del agrupamiento';
-$string['idnumbergrouping_help'] = 'El número ID de un agrupamiento sólo se usa cuando se compara al agrupamiento contra un sistema externo y no se muestra en ningún otro lugar en el sitio. Si el agrupamiento tiene un código oficial se pueden introducir, de lo contrario el campo se puede dejar en blanco.';
+$string['idnumbergrouping_help'] = 'El número de identificación ID de un agrupamiento sólo se usa cuando se compara al agrupamiento contra un sistema externo y no se muestra en ningún otro lugar en el sitio. Si el agrupamiento tiene un código oficial se pueden introducir, de lo contrario el campo se puede dejar en blanco.';
 $string['idnumbermod'] = 'Número ID';
 $string['idnumbermod_help'] = 'La configuración de un número de ID proporciona una forma de identificar la actividad o el recurso para fines como el cálculo de calificaciones o informes personalizados. De lo contrario, el campo se puede dejar en blanco.
 
@@ -1860,8 +1860,8 @@ $string['role'] = 'Rol';
 $string['roleassignments'] = 'Asignaciones de roles';
 $string['rolemappings'] = 'Mapeos de rol';
 $string['rolerenaming'] = 'Renombrar rol';
-$string['rolerenaming_help'] = 'Esta configuración permite cambiar los nombres mostrados en los roles usados en el curso. <P>Sólo se cambia el nombre mostrado - los permisos de los roles no se vean afectados. <P>Los nuevos nombres de los roles aparecerán en la página de participantes en el curso y allá donde se muestren estos.
-<P>Si el rol renombrado corresponde a un rol de gestor del curso, asignado por el administardor, el nuevo nombre del rol también aparecerá como parte de las listas de cursos.';
+$string['rolerenaming_help'] = 'Esta configuración permite cambiar los nombres mostrados en los roles usados en el curso. Sólo se cambia el nombre mostrado - los permisos de los roles no se vean afectados. Los nuevos nombres de los roles aparecerán en la página de participantes en el curso y en las demás partes del curso.
+Si el rol renombrado corresponde a un rol de gestor del curso, asignado por el administrador, el nuevo nombre del rol también aparecerá como parte de las listas de cursos.';
 $string['roles'] = 'Roles';
 $string['rss'] = 'RSS';
 $string['rssarticles'] = 'Número de artículos recientes RSS';
@@ -1881,7 +1881,7 @@ $string['savedat'] = 'Guardado en:';
 $string['savepreferences'] = 'Guardar preferencias';
 $string['saveto'] = 'Guardar en';
 $string['scale'] = 'Escala';
-$string['scale_help'] = 'Una escala proporciona una manera de evaluar o calificar el desempeño en una actividad. Está definida por una lista ordenada de valores, que van de negativo a positivo, separados por comas; por ejemplo, "Decepcionante, Insuficientemente bueno, Promedio, Bueno, Muy bueno, Excelente".';
+$string['scale_help'] = 'Una escala proporciona una manera de evaluar o calificar el desempeño en una actividad. Está definida por una lista ordenada de valores, que van de negativo a positivo, separados por comas; por ejemplo, "Decepcionante, Insuficiente, Promedio, Bueno, Muy bueno, Excelente".';
 $string['scale_link'] = 'grade/scale';
 $string['scales'] = 'Escalas';
 $string['scalescustom'] = 'Escalas personalizadas';
@@ -1889,7 +1889,7 @@ $string['scalescustomcreate'] = 'Agregar una nueva escala';
 $string['scalescustomno'] = 'Aún no se han creado nuevas escalas';
 $string['scalesstandard'] = 'Escalas estándar';
 $string['scalestandard'] = 'Escala estándar';
-$string['scalestandard_help'] = '<p>Una escala estándar es una que esta disponible globalmente en el sitio, para todos los cursos.</p>';
+$string['scalestandard_help'] = 'Una escala estándar es una que está disponible globalmente en el sitio, para todos los cursos.';
 $string['scalestandard_link'] = 'grade/scale';
 $string['scalestip'] = 'Para crear escalas personalizadas utilice el enlace \'Escalas...\' en el menú de administración del curso.';
 $string['scalestip2'] = 'Para crear escalas personalizadas, haga clic en el enlace Calificaciones del menú de administración del curso, luego seleccione Editar, Escalas.';
@@ -1898,7 +1898,7 @@ $string['screenshot'] = 'Pantallazo';
 $string['search'] = 'Buscar';
 $string['search_help'] = 'Para realizar una búsqueda básica de una o más palabras en cualquier lugar del texto, simplemente escríbalas separadas por espacios. Se usarán todas las palabras de más de dos caracteres.
 
-Para realizar una búsqueda avanzada, pulse el botón de búsqueda sin teclear nada en la caja de texto.';
+Para realizar una búsqueda avanzada, pulse el botón de búsqueda sin teclear nada en la caja de texto para acceder al formulario de búsqueda avanzada.';
 $string['searchactivities'] = 'Buscar actividades por nombre o descripción';
 $string['searchagain'] = 'Volver a buscar';
 $string['searchbyemail'] = 'Buscar por dirección email';
@@ -2124,9 +2124,7 @@ $string['submit'] = 'Enviar';
 $string['success'] = 'Éxito';
 $string['successduration'] = 'Éxito ({$a} segundos)';
 $string['summary'] = 'Resumen';
-$string['summary_help'] = 'La idea de un resumen de tema es un texto corto que prepare a los
-alumnos para las actividades que realizará en ese tema (o
-semana). El texto se muestra en la página del curso bajo el nombre de la sección.';
+$string['summary_help'] = 'La idea de un resumen de tema es un texto corto que prepare a los alumnos para las actividades que realizará en ese tema o semana. El texto se muestra en la página del curso bajo el nombre de la sección.';
 $string['summaryof'] = 'Resumen de {$a}';
 $string['supplyinfo'] = 'Por favor, escriba algunos datos sobre usted';
 $string['suspended'] = 'Suspendido';

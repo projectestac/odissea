@@ -38,7 +38,7 @@ $string['configenrolplugins'] = 'Vă rugăm să selectați și să ordonați cor
 $string['custominstancename'] = 'Numele sesiunii personalizate';
 $string['defaultenrol'] = 'Adăugați sesiune la noile cursuri';
 $string['defaultenrol_desc'] = 'Este posibilă adăugarea implicită a acestui plugin la toate cursurile noi.';
-$string['deleteinstanceconfirm'] = 'Urmează să ștergeți metoda de înscriere "{$a->name}". Toți {$a->users} utilizatorii înscriși în prezent cu ajutorul acestei metode vor fi retrași, iar datele legate de curs, cum ar fi, notele cursanților, calitatea de membru al grupului sau subscrierile la forum, vor fi șterse.
+$string['deleteinstanceconfirm'] = 'Urmează să ștergeți metoda de înscriere "{$a->name}". Toți {$a->users} utilizatorii înscriși în prezent cu ajutorul acestei metode vor fi retrași, iar datele legate de curs, cum ar fi notele cursanților, calitatea de membru al grupului sau subscrierile la forum, vor fi șterse.
 
 Sunteți sigur că doriți să continuați?';
 $string['deleteinstanceconfirmself'] = 'Sunteți sigur că doriți să ștergeți sesiunea "{$a->name}" care vă asigură accesul la acest curs ? Este posibil să nu mai puteți accesa acest curs, dacă mergeți mai departe.';
@@ -91,7 +91,7 @@ $string['expirynotify'] = 'Notifică înainte de expirarea înscrierii';
 $string['expirynotify_help'] = 'Această setare determină dacă mesajele de notificare privind expirarea înscrierii sunt transmise.';
 $string['expirynotifyall'] = 'Utilizator care înscrie și utilizator înscris';
 $string['expirynotifyenroller'] = 'Numai persoanele care înscriu';
-$string['expirynotifyhour'] = 'Ora de transmitere a mesajelor de notificare privind expirarea înscrierii';
+$string['expirynotifyhour'] = 'Ora trimiterii mesajelor de notificare privind expirarea înscrierii';
 $string['expirythreshold'] = 'Prag de notificare';
 $string['expirythreshold_help'] = 'Cu cât timp înainte de expirarea înscrerii trebuie notificați utilizatorii?';
 $string['extremovedaction'] = 'Acțiune externă de retragere';

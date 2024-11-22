@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['audiocssclass'] = 'Audiorako CSS klaseak';
 $string['audioextensions'] = 'Audio-fitxategien luzapenak';
 $string['configaudiocssclass'] = '&lt;audio&gt; elementuari gehituko zaion CSS klasea.';
-$string['configaudioextensions'] = 'Sostengua duten audio-luzapenen zerrenda, komaz banatuta. VideoJS saiatuko da zure nabigatzailearen jatorrizko bideo-erreproduzigailua edo VideoJSren berezko funtzionalitatea erabiltzen.';
+$string['configaudioextensions'] = 'Sostengua duten audio-luzapenen zerrenda, komaz banatuta. VideoJS saiatuko da zure nabigatzailearen jatorrizko bideo-erreproduzigailua edo VideoJSren funtzionalitate lehenetsia erabiltzen.';
 $string['configlimitsize'] = 'Gaituz gero, eta zabalera eta altuera zehaztu ez badira, bideoa lehenetsitako zabalera eta altuerarekin erakutsiko da. Bestela posible den gehieneko zabaleran erakutsiko da.';
 $string['configrtmp'] = 'Gaituz gero, pluginak "rtmp://"-rekin hasten diren estekak kudeatuko ditu, luzapena onartutako bideo-fitxategien luzapenen ezarpenean (videoextensions) gaituta egotea kontuan hartu gabe. RTMP-k funtzionatzeko Flash fallback gaituta egon behar da.';
 $string['configuseflash'] = 'Erabili Flash erreproduzigailua nabigatzaileak edota VideoJS erreproduzigailuak bideo-formatua onartzen ez badu. Gaituz gero, VideoJS erabiliko da goiko fitxategi-luzapenen zerrendako fitxategiak erreproduzitzeko. Mesedez kontuan izan Flash ez dagoela eskuragarri mobile nabigatzaileetan eta mahaigaineko askotan baztertuta dagoela.';

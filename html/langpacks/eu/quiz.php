@@ -35,7 +35,7 @@ $string['addaquestion'] = 'galdera berria';
 $string['addarandomquestion'] = 'ausazko galdera';
 $string['addarandomquestion_help'] = 'Ausazko galdera bat gehituz gero, galdetegian hautatutako kategoriatik galdera bat ausaz aukeratuko da. Honek esan nahi du ikasle bakoitzari seguruenik galdera desberdinak agertuko zaizkiola eta, galdetegiak saiakera bat baino gehiago onartzen badu, saiakera bakoitzak seguruenik galdera desberdinak izango dituela.';
 $string['addarandomselectedquestion'] = 'Gehitu ausaz aukeratutako galdera...';
-$string['addasection'] = 'atal berriaren izenburua';
+$string['addasection'] = 'atal berriaren goiburua';
 $string['adddescriptionlabel'] = 'Gehitu deskribapen-elementua';
 $string['addingquestion'] = 'Galdera bat gehitzen';
 $string['addingquestions'] = '<p>Orriaren alde honetan zure galderen datu-basea kudeatuko duzu. Galderak kategoriaka gordetzen dira antolaketa errazteko eta horrela gainera galdetegi batean baino gehiagotan erabil daitezke edo ikastaro ezberdinetan, \'argitaratu\' aukeratzen baduzu.</p>
@@ -149,7 +149,7 @@ $string['cannotinsertrandomquestion'] = 'Ezin izan da ausazko galdera berririk t
 $string['cannotloadquestion'] = 'Ezin izan dira kargatu galderaren aukerak';
 $string['cannotloadtypeinfo'] = 'Ezin izan da galdera-mota jakin honi buruzko informazioa kargatu';
 $string['cannotopen'] = 'Ezin da fitxategia esportatu ({$a})';
-$string['cannotremoveallsectionslots'] = '\'{$a}\' atalaren galdera guztiak aukeratu dituzu. Atal bateko galdera guztiak ezabatzea ez dago baimenduta.';
+$string['cannotremoveallsectionslots'] = '\'{$a}\' atalaren barruko galdera guztiak aukeratu dituzu. Atal bateko galdera guztiak ezabatzea ez dago baimenduta.';
 $string['cannotremoveslots'] = 'Ezin dira galderak ezabatu';
 $string['cannotrestore'] = 'Ezin izan dira galdera-saioak berreskuratu';
 $string['cannotreviewopen'] = 'Ezin duzu saiakera hau berrikusi, oraindik irekita baitago.';
@@ -195,7 +195,7 @@ $string['completiondetail:passorexhaust'] = 'Gainditzeko kalifikazio bat jasotze
 $string['completionminattempts'] = 'Gutxieneko saiakera kopurua:';
 $string['completionminattemptsdesc'] = 'Beharrezko gutxieneko saiakera-kopurua: {$a}';
 $string['completionminattemptserror'] = 'Gutxieneko saiakera kopurua baimendutako saiakeren berdina edo txikiagoa izan behar du.';
-$string['completionminattemptsgroup'] = 'Behartu saiakerak';
+$string['completionminattemptsgroup'] = 'Saiakerak egon behar dira';
 $string['completionpass'] = 'Gainditzeko kalifikazioa behar du';
 $string['completionpass_help'] = 'Gaituz gero, jarduera hau osatutzat hartuko da ikasleak gainditzeko gutxieneko kalifikazioa edo altuagoa jasotzen duenean (galdetegiaren ezarpenetako Kalifikazioa atalean ezarritakoaren araberakoa).';
 $string['completionpassdesc'] = 'Ikasleak gainditze-kalifikazio bat lortu behar du jarduera hau osatutzat emateko';
@@ -229,7 +229,7 @@ $string['configtimelimitsec'] = 'Lehenetsitako denbora-muga galdetegietarako (se
 $string['configurerandomquestion'] = 'Konfiguratu galdera';
 $string['confirmclose'] = 'Behin zure erantzunak bidalitakoan ezingo duzu aldaketarik egin.';
 $string['confirmremovequestion'] = 'Ziur zaude {$a} galdera ezabatu nahi duzula?';
-$string['confirmremovesectionheading'] = 'Ziur zaude \'{$a}\' atalaren izenburua ezabatu nahi duzula?';
+$string['confirmremovesectionheading'] = 'Ziur zaude \'{$a}\' atalaren goiburua ezabatu nahi duzula?';
 $string['confirmserverdelete'] = 'Ziur zaude <b>{$a}</b> zerbitzaria zerrendatik kendu nahi duzula?';
 $string['connectionerror'] = 'Sarearen konexioa galdu egin da (Gordetze automatikoak huts egin du)
 
@@ -331,7 +331,7 @@ $string['emailconfirmsmall'] = 'Eskerrik asko \'{$a->quizname}\' galdetegiaren e
 $string['emailconfirmsubject'] = 'Bidalketaren berrespena: {$a->quizname}';
 $string['emailmanualgradedbody'] = 'Kaixo {$a->studentname},
 
-\'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegian zuk {$a->attempttimefinish}(e)tan emandako erantzunak kalifikatuak izan dira.
+\'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegian zuk {$a->attempttimefinish}e(t)an emandako erantzunak kalifikatuak izan dira.
 
 Zure emaitza eta feedbacka ikusi eta zure saiakera berrikusteko \'{$a->quizurl}\' estekan klik egin ezazu.';
 $string['emailmanualgradedsubject'] = '{$a->quizname} galdetegiko zure saiakera kalifikatua izan da';
@@ -579,7 +579,7 @@ $string['newcategory'] = 'Kategoria berria';
 $string['newpage'] = 'Orri berria';
 $string['newpage_help'] = 'Galdetegi luzeenetan zentzuzkoa izan daiteke galdetegia hainbat orritan jartzea, orri bakoitzeko galdera-kopurua mugatuta. Galdetegiari galderak gehitzerakoan orri-jauziak automatikoki jarriko dira hemen zehaztutakoaren arabera. Halere beranduago ere orri-jauziak edizio-orrian eskuz alda daitezke.';
 $string['newpageevery'] = 'Automatikoki hasi orri berria';
-$string['newsectionheading'] = 'Izenburu berria';
+$string['newsectionheading'] = 'Goiburu berria';
 $string['noanswers'] = 'Ez duzu erantzunik aukeratu!';
 $string['noattempts'] = 'Galdetegi honetan ez da saiakerarik egin';
 $string['noattemptsfound'] = 'Ez da saiakerarik aurkitu.';
@@ -932,8 +932,8 @@ $string['savingnewmaximumgrade'] = 'Gehieneko kalifikazio berria gordetzen';
 $string['score'] = 'Puntuazio gordina';
 $string['scores'] = 'Puntuazioak';
 $string['search:activity'] = 'Galdetegia - jardueraren informazioa';
-$string['sectionheadingedit'] = 'Editatu \'{$a}\' izenburua';
-$string['sectionheadingremove'] = 'Ezabatu \'{$a}\' izenburua';
+$string['sectionheadingedit'] = 'Editatu \'{$a}\' goiburua';
+$string['sectionheadingremove'] = 'Ezabatu \'{$a}\' goiburua';
 $string['sectionnoname'] = 'Izenik gabeko atala';
 $string['seequestions'] = '(Ikusi galderak)';
 $string['select'] = 'Aukeratu';
@@ -976,7 +976,7 @@ $string['shuffle'] = 'Nahastu';
 $string['shuffleanswers'] = 'Nahastu erantzunak';
 $string['shuffledrandomly'] = 'Ausaz nahastuta';
 $string['shufflequestions'] = 'Nahastu';
-$string['shufflequestions_help'] = 'Gaituz gero, galdetegia erantzuteko saiakera bakoitzean galderak ausaz nahastu eta ordena berri batean erakutsiko dira.
+$string['shufflequestions_help'] = 'Gaituz gero, galdetegia erantzuteko saiakera bakoitzean atal honetako galderak ausaz nahastu eta ordena berri batean erakutsiko dira.
 
 Honek ikasleek galdera trukatzea zaildu dezake, baina ikasleek irakaslearekin galdera zehatz bati buruz jardutea ere zailtzen du.';
 $string['shufflewithin'] = 'Nahastu galderen barruan';

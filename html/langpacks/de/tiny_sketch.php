@@ -31,6 +31,6 @@ $string['pluginname'] = 'Skizze';
 $string['privacy:metadata'] = 'Das Plugin \'Tiny Skizze\' speichert keine personenbezogenen Daten.';
 $string['sketch_description'] = 'Schnelle Skizze in Moodle';
 $string['sketch_long_description'] = 'Bilder direkt im Editor von Moodle zeichnen und bearbeiten';
-$string['sketchtitle'] = 'Skizzieren und Speichern';
+$string['sketchtitle'] = 'Skizze erstellen und bearbeiten';
 $string['storeinrepo'] = 'Als Bilddatei speichern';
 $string['storeinrepo_desc'] = 'Wenn diese Option aktiviert ist, werden Skitzen als Bilddatei hochgeladen, anstatt sie als Inlinebild base64 zu speichern.';

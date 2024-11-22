@@ -33,7 +33,7 @@ $string['preferencesformat'] = 'Autres formats de texte pouvant être édités a
 $string['preferencesformat_help'] = 'Marklar gère nativement les textes au format Markdown. Il peut également être utilisé pour rédiger dans d’autres formats. Sélectionnez les autres formats de texte que vous souhaitez pouvoir également utiliser avec l’éditeur Marklar.
 
 Par défaut, Marklar est paramétré pour prendre en charge les textes rédigés aux Format Moodle et Format texte. Pour rédiger en HTML, d’autres éditeurs de texte riche (comme Atto ou TinyMCE) seront utilisés.';
-$string['previewloading'] = 'Chargement de la prévisualisation...';
+$string['previewloading'] = 'Chargement de la prévisualisation…';
 $string['previewoff'] = 'Modifier';
 $string['previewon'] = 'Prévisualiser';
 $string['privacy:export:preferences:format'] = 'Si vous préférez utiliser Marklar pour modifier des textes basés sur la syntaxe {$a->format}.';

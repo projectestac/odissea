@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = '版块名称';
-$string['configtitleblankhides'] = '版块标题（留空表示无标题）';
+$string['configtitle'] = '学员版块标题';
+$string['configtitleblankhides'] = '学员版块标题（留空表示无标题）';
 $string['mentees:addinstance'] = '新增一个新学员版块';
 $string['mentees:myaddinstance'] = '在个人主页新增一个新学员版块';
 $string['newmenteesblock'] = '（新学员版块）';
