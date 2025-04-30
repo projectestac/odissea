@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'de', version '4.1'.
+ * Strings for component 'auth_mnet', language 'de', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNET Authentifizierung';
 $string['privacy:metadata:external:mahara'] = 'Dieses Plugin kann Daten an ein verbundenes Mahara-System übertragen.';
 $string['privacy:metadata:external:moodle'] = 'Dieses Plugin kann Daten von einem externen System an Moodle übertragen.';
 $string['privacy:metadata:mnet_external:address'] = 'Die Adresse des Nutzers.';
-$string['privacy:metadata:mnet_external:aim'] = 'AIM-ID der Person';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Pseudonym der Person';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Voreinstellung, dass Nutzer automatisch  Foren abonnieren wenn sie darin posten';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Nutzereinstellung wie der Kalender genutzt wird';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Einstellung, um der Perso
 $string['privacy:metadata:mnet_external:firstaccess'] = 'Zeitpunkt des ersten Zugriffs des Nutzers';
 $string['privacy:metadata:mnet_external:firstname'] = 'Vorname des Nutzers';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Phonetische Aussprache des Nutzernamens';
-$string['privacy:metadata:mnet_external:icq'] = 'ICQ-Nummer des Nutzers';
 $string['privacy:metadata:mnet_external:id'] = 'Nutzer-ID';
 $string['privacy:metadata:mnet_external:idnumber'] = 'ID, die von der Institution vergeben wurde';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Alternativer Text für Bild des Nutzers.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Phonetische Ausspr
 $string['privacy:metadata:mnet_external:maildigest'] = 'Einstellung der E-Mail-Zusammenfassung des Nutzers';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Nutzereinstellung  zur  Anzeige der E-Mail-Adresse für andere Nutzer/innen';
 $string['privacy:metadata:mnet_external:middlename'] = 'Mittlerer Name des Nutzers';
-$string['privacy:metadata:mnet_external:msn'] = 'MSN-ID der Person';
 $string['privacy:metadata:mnet_external:phone1'] = 'Telefonnummer des Nutzers';
 $string['privacy:metadata:mnet_external:phone2'] = 'Zusätzliche Telefonnummer des Nutzers';
 $string['privacy:metadata:mnet_external:picture'] = 'Bilddetails des Profilfotos des Nutzers';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Merkmal zum Erkennen, ob die Person der Richtlinie zugestimmt hat';
-$string['privacy:metadata:mnet_external:skype'] = 'Skype-ID der Person';
 $string['privacy:metadata:mnet_external:suspended'] = 'Kennzeichen, ob das Nutzerkonto gesperrt wurde';
 $string['privacy:metadata:mnet_external:timezone'] = 'Zeitzone, die die Person eingestellt hat';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Voreinstellung für Forum und Lesetracking';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Trust Bit Mask';
-$string['privacy:metadata:mnet_external:url'] = 'URL für Nutzer';
 $string['privacy:metadata:mnet_external:username'] = 'Nutzername des Nutzers';
-$string['privacy:metadata:mnet_external:yahoo'] = 'Yahoo-ID der Person';
 $string['privacy:metadata:mnet_log'] = 'Details zum Zugriff des Nutzers auf ein Remote-System';
 $string['privacy:metadata:mnet_log:action'] = 'Vom Nutzer ausgelöste Aktion';
 $string['privacy:metadata:mnet_log:cmid'] = 'ID des Kursmoduls';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ko', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ko', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -26,4 +26,3 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['nextstep'] = '다음';
-$string['previousstep'] = '이전으로';

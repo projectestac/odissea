@@ -24,15 +24,15 @@ namespace core;
  * @copyright  2013 Petr Skoda {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class session_manager_test extends \advanced_testcase {
-    public function test_start() {
+final class session_manager_test extends \advanced_testcase {
+    public function test_start(): void {
         $this->resetAfterTest();
         // Session must be started only once...
         \core\session\manager::start();
         $this->assertDebuggingCalled('Session was already started!', DEBUG_DEVELOPER);
     }
 
-    public function test_init_empty_session() {
+    public function test_init_empty_session(): void {
         global $SESSION, $USER;
         $this->resetAfterTest();
 
@@ -92,28 +92,28 @@ class session_manager_test extends \advanced_testcase {
         $this->assertSame($GLOBALS['USER'], $USER);
     }
 
-    public function test_set_user() {
+    public function test_set_user(): void {
         global $USER;
         $this->resetAfterTest();
 
         $this->assertEquals(0, $USER->id);
 
         $user = $this->getDataGenerator()->create_user();
-        $this->assertObjectHasAttribute('description', $user);
-        $this->assertObjectHasAttribute('password', $user);
+        $this->assertObjectHasProperty('description', $user);
+        $this->assertObjectHasProperty('password', $user);
 
         \core\session\manager::set_user($user);
 
         $this->assertEquals($user->id, $USER->id);
-        $this->assertObjectNotHasAttribute('description', $user);
-        $this->assertObjectNotHasAttribute('password', $user);
-        $this->assertObjectHasAttribute('sesskey', $user);
+        $this->assertObjectNotHasProperty('description', $user);
+        $this->assertObjectNotHasProperty('password', $user);
+        $this->assertObjectHasProperty('sesskey', $user);
         $this->assertSame($user, $GLOBALS['USER']);
         $this->assertSame($GLOBALS['USER'], $_SESSION['USER']);
         $this->assertSame($GLOBALS['USER'], $USER);
     }
 
-    public function test_login_user() {
+    public function test_login_user(): void {
         global $USER;
         $this->resetAfterTest();
 
@@ -124,14 +124,14 @@ class session_manager_test extends \advanced_testcase {
         @\core\session\manager::login_user($user); // Ignore header error messages.
         $this->assertEquals($user->id, $USER->id);
 
-        $this->assertObjectNotHasAttribute('description', $user);
-        $this->assertObjectNotHasAttribute('password', $user);
+        $this->assertObjectNotHasProperty('description', $user);
+        $this->assertObjectNotHasProperty('password', $user);
         $this->assertSame($user, $GLOBALS['USER']);
         $this->assertSame($GLOBALS['USER'], $_SESSION['USER']);
         $this->assertSame($GLOBALS['USER'], $USER);
     }
 
-    public function test_terminate_current() {
+    public function test_terminate_current(): void {
         global $USER, $SESSION;
         $this->resetAfterTest();
 
@@ -150,7 +150,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertSame($GLOBALS['USER'], $USER);
     }
 
-    public function test_write_close() {
+    public function test_write_close(): void {
         global $USER;
         $this->resetAfterTest();
 
@@ -164,7 +164,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertSame($GLOBALS['USER'], $USER);
     }
 
-    public function test_session_exists() {
+    public function test_session_exists(): void {
         global $CFG, $DB;
         $this->resetAfterTest();
 
@@ -210,7 +210,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertTrue(\core\session\manager::session_exists($sid));
     }
 
-    public function test_touch_session() {
+    public function test_touch_session(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -233,7 +233,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertLessThanOrEqual(time(), $updated);
     }
 
-    public function test_kill_session() {
+    public function test_kill_session(): void {
         global $DB, $USER;
         $this->resetAfterTest();
 
@@ -265,7 +265,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertSame($userid, $USER->id);
     }
 
-    public function test_kill_user_sessions() {
+    public function test_kill_user_sessions(): void {
         global $DB, $USER;
         $this->resetAfterTest();
 
@@ -317,7 +317,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertEquals(1, $DB->count_records('sessions', array('userid' => $userid, 'sid' => md5('pokus5'))));
     }
 
-    public function test_apply_concurrent_login_limit() {
+    public function test_apply_concurrent_login_limit(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -440,7 +440,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertCount(8, $DB->get_records('sessions'));
     }
 
-    public function test_kill_all_sessions() {
+    public function test_kill_all_sessions(): void {
         global $DB, $USER;
         $this->resetAfterTest();
 
@@ -473,7 +473,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertSame(0, $USER->id);
     }
 
-    public function test_gc() {
+    public function test_gc(): void {
         global $CFG, $DB, $USER;
         $this->resetAfterTest();
 
@@ -501,12 +501,14 @@ class session_manager_test extends \advanced_testcase {
         $record->timemodified = time() - 60*20;
         $r2 = $DB->insert_record('sessions', $record);
 
+        // Guest session still within the session timeout limit.
         $record->sid          = md5('hokus3');
         $record->userid       = $guestid;
         $record->timecreated  = time() - 60*60*60;
-        $record->timemodified = time() - 60*20;
+        $record->timemodified = time() - 60*5;
         $r3 = $DB->insert_record('sessions', $record);
 
+        // Guest session outside the session timeout limit.
         $record->sid          = md5('hokus4');
         $record->userid       = $guestid;
         $record->timecreated  = time() - 60*60*60;
@@ -546,7 +548,7 @@ class session_manager_test extends \advanced_testcase {
      * Test loginas.
      * @copyright  2103 Rajesh Taneja <rajesh@moodle.com>
      */
-    public function test_loginas() {
+    public function test_loginas(): void {
         global $USER, $SESSION;
         $this->resetAfterTest();
 
@@ -558,7 +560,7 @@ class session_manager_test extends \advanced_testcase {
         $_SESSION['extra'] = true;
 
         // Try admin loginas this user in system context.
-        $this->assertObjectNotHasAttribute('realuser', $USER);
+        $this->assertObjectNotHasProperty('realuser', $USER);
         \core\session\manager::loginas($user->id, \context_system::instance());
 
         $this->assertSame($user->id, $USER->id);
@@ -602,11 +604,9 @@ class session_manager_test extends \advanced_testcase {
         $this->assertEquals($coursecontext, $event->get_context());
         $oldfullname = fullname($user, true);
         $newfullname = fullname($adminuser, true);
-        $expectedlogdata = array($course->id, "course", "loginas", "../user/view.php?id=$course->id&amp;user=$user->id", "$oldfullname -> $newfullname");
-        $this->assertEventLegacyLogData($expectedlogdata, $event);
     }
 
-    public function test_is_loggedinas() {
+    public function test_is_loggedinas(): void {
         $this->resetAfterTest();
 
         $user1 = $this->getDataGenerator()->create_user();
@@ -620,7 +620,7 @@ class session_manager_test extends \advanced_testcase {
         $this->assertTrue(\core\session\manager::is_loggedinas());
     }
 
-    public function test_get_realuser() {
+    public function test_get_realuser(): void {
         $this->resetAfterTest();
 
         $user1 = $this->getDataGenerator()->create_user();
@@ -674,7 +674,7 @@ class session_manager_test extends \advanced_testcase {
     /**
      * Test to get recent session locks.
      */
-    public function test_get_recent_session_locks() {
+    public function test_get_recent_session_locks(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -704,7 +704,7 @@ class session_manager_test extends \advanced_testcase {
     /**
      * Test to update recent session locks.
      */
-    public function test_update_recent_session_locks() {
+    public function test_update_recent_session_locks(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -724,7 +724,7 @@ class session_manager_test extends \advanced_testcase {
     /**
      * Test to get session lock info.
      */
-    public function test_get_session_lock_info() {
+    public function test_get_session_lock_info(): void {
         global $PERF;
 
         $this->resetAfterTest();
@@ -794,7 +794,7 @@ class session_manager_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function sessionlocks_info_provider() : array {
+    public static function sessionlocks_info_provider(): array {
         return [
             [
                 'url'      => null,
@@ -818,7 +818,7 @@ class session_manager_test extends \advanced_testcase {
      * @param array $url Session lock page url.
      * @param array $time Session lock time.
      */
-    public function test_get_locked_page_at($url, $time) {
+    public function test_get_locked_page_at($url, $time): void {
         global $CFG, $SESSION;
 
         $this->resetAfterTest();
@@ -832,7 +832,7 @@ class session_manager_test extends \advanced_testcase {
     /**
      * Test cleanup recent session locks.
      */
-    public function test_cleanup_recent_session_locks() {
+    public function test_cleanup_recent_session_locks(): void {
         global $CFG, $SESSION;
 
         $this->resetAfterTest();
@@ -846,60 +846,80 @@ class session_manager_test extends \advanced_testcase {
         $this->assertEquals('/good.php?id=4', $SESSION->recentsessionlocks[0]['url']);
     }
 
-    public function test_array_session_diff_same_array() {
-        $a = [];
-        $a['c'] = new \stdClass();
-        $a['c']->o = new \stdClass();
-        $a['c']->o->o = new \stdClass();
-        $a['c']->o->o->l = 'cool';
+    /**
+     * Data provider for the array_session_diff function.
+     *
+     * @return array
+     */
+    public static function array_session_diff_provider(): array {
+        // Create an instance of this object so the comparison object's identities are the same.
+        // Used in one of the tests below.
+        $compareobjectb = (object) ['array' => 'b'];
 
-        $class = new \ReflectionClass('\core\session\manager');
-        $method = $class->getMethod('array_session_diff');
-        $method->setAccessible(true);
-
-        $result = $method->invokeArgs(null, [$a, $a]);
-
-        $this->assertEmpty($result);
+        return [
+            'both same objects' => [
+                'a' => ['example' => (object) ['array' => 'a']],
+                'b' => ['example' => (object) ['array' => 'a']],
+                'expected' => [],
+            ],
+            'both same arrays' => [
+                'a' => ['example' => ['array' => 'a']],
+                'b' => ['example' => ['array' => 'a']],
+                'expected' => [],
+            ],
+            'both the same with nested objects' => [
+                'a' => ['example' => (object) ['array' => 'a', 'deeper' => (object) []]],
+                'b' => ['example' => (object) ['array' => 'a', 'deeper' => (object) []]],
+                'expected' => [],
+            ],
+            'first array larger' => [
+                'a' => ['x' => 1, 'y' => 2],
+                'b' => ['x' => 1],
+                'expected' => ['y' => 2]
+            ],
+            'second array larger' => [
+                'a' => ['x' => 1],
+                'b' => ['x' => 1, 'y' => 2],
+                'expected' => ['y' => 2]
+            ],
+            'objects with different values but same keys' => [
+                'a' => ['example' => (object) ['array' => 'a']],
+                'b' => ['example' => $compareobjectb],
+                'expected' => ['example' => $compareobjectb]
+            ],
+            'different arrays with top level indexes' => [
+                'a' => ['x', 'y'],
+                'b' => ['x', 'y', 'z'],
+                'expected' => [2 => 'z']
+            ],
+            'different types but same values as first level' => [
+                'a' => ['example' => (object) ['array' => 'a']],
+                'b' => ['example' => ['array' => 'a']],
+                'expected' => ['example' => ['array' => 'a']]
+            ],
+            'different types but same values nested' => [
+                'a' => ['example' => (object) ['array' => ['a' => 'test']]],
+                'b' => ['example' => (object) ['array' => (object) ['a' => 'test']]],
+                // Type checking is not done further than the first level, so we expect no difference.
+                'expected' => []
+            ]
+        ];
     }
 
-    public function test_array_session_diff_first_array_larger() {
-        $a = [];
-        $a['stdClass'] = new \stdClass();
-        $a['stdClass']->attribute = 'This is an attribute';
-        $a['array'] = ['array', 'contents'];
-
-        $b = [];
-        $b['array'] = ['array', 'contents'];
-
+    /**
+     * Tests array diff method in various situations.
+     *
+     * @dataProvider array_session_diff_provider
+     * @covers \core\session\manager::array_session_diff
+     * @param array $a first value.
+     * @param array $b second value to compare to $a.
+     * @param array $expected the expected difference.
+     */
+    public function test_array_session_diff(array $a, array $b, array $expected): void {
         $class = new \ReflectionClass('\core\session\manager');
         $method = $class->getMethod('array_session_diff');
-        $method->setAccessible(true);
 
         $result = $method->invokeArgs(null, [$a, $b]);
-
-        $expected = [];
-        $expected['stdClass'] = new \stdClass();
-        $expected['stdClass']->attribute = 'This is an attribute';
-        $this->assertEquals($expected, $result);
-    }
-
-    public function test_array_session_diff_second_array_larger() {
-        $a = [];
-        $a['array'] = ['array', 'contents'];
-
-        $b = [];
-        $b['stdClass'] = new \stdClass();
-        $b['stdClass']->attribute = 'This is an attribute';
-        $b['array'] = ['array', 'contents'];
-
-        $class = new \ReflectionClass('\core\session\manager');
-        $method = $class->getMethod('array_session_diff');
-        $method->setAccessible(true);
-
-        $result = $method->invokeArgs(null, [$a, $b]);
-
-        // It's empty because the first array contains all the contents of the second.
-        $expected = [];
-        $this->assertEquals($expected, $result);
+        $this->assertSame($expected, $result);
     }
 }

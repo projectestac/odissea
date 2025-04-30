@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'uk', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'uk', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Додати категорію';
 $string['addnewdefaults'] = 'Додайте новий модуль за замовчуванням';
 $string['addpurpose'] = 'Додайте мету';
 $string['addroleoverride'] = 'Додати заміну ролі';
+$string['allowfiltering'] = 'Дозволити фільтрацію експорту за курсом';
+$string['allowfiltering_desc'] = 'Якщо ввімкнено, спеціаліст із конфіденційності може вибрати експорт даних користувача з вибраних курсів замість усіх курсів. Якщо цю функцію ввімкнено, запити на експорт починатимуться з «Очікують на розгляд» і можуть бути затверджені лише після завершення фонового завдання.';
 $string['approve'] = 'Затвердити';
 $string['approvedrequestsubmitted'] = 'Ваш запит надіслано та буде оброблено найближчим часом.';
 $string['approverequest'] = 'Затвердити запит';
+$string['approverequestall'] = 'Підтвердити запит (всі дані)';
+$string['approveselectedcourses'] = 'Затвердити обрані курси';
 $string['automaticdatadeletionapproval'] = 'Схвалення запиту на автоматичне видалення даних';
 $string['automaticdatadeletionapproval_desc'] = 'Якщо ввімкнено, запити на видалення даних затверджуються автоматично. <br/>Зауважте, що автоматичне схвалення застосовуватиметься лише до нових запитів на видалення даних із увімкненим цим налаштуванням. Існуючі запити на видалення даних, які очікують схвалення, все одно мають бути вручну затверджені спеціалістом із конфіденційності.';
 $string['automaticdataexportapproval'] = 'Автоматичне схвалення запиту на експорт даних';
@@ -153,6 +157,7 @@ $string['errorinvalidrequeststatus'] = 'Недійсний статус запи
 $string['errorinvalidrequesttype'] = 'Недійсний тип запиту!';
 $string['errornocapabilitytorequestforothers'] = 'Користувач {$a->requestedby} не має можливості зробити запит на дані від імені користувача {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Немає прострочених контекстів для обробки';
+$string['errornoselectedcourse'] = 'Ви повинні вибрати принаймні один курс';
 $string['errorrequestalreadyexists'] = 'У вас уже є поточний запит.';
 $string['errorrequestnotfound'] = 'Запит не знайдено';
 $string['errorrequestnotwaitingforapproval'] = 'Запит не очікує схвалення. Або він ще не готовий, або вже оброблений.';
@@ -169,6 +174,7 @@ $string['expiry'] = 'Термін дії';
 $string['explanationtitle'] = 'Іконки, які використовуються на цій сторінці і що вони означають.';
 $string['external'] = 'Додатковий';
 $string['externalexplanation'] = 'На цьому сайті встановлено додатковий модуль.';
+$string['filterexportdata'] = 'Підтвердити запит (дані з вибраних курсів)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Головна сторінка курсу';
 $string['gdpr_art_6_1_a_description'] = 'Суб’єкт даних дав згоду на обробку його чи її персональних даних для однієї або кількох конкретних цілей';
@@ -226,6 +232,7 @@ $string['noassignedroles'] = 'Немає призначених ролей у ц
 $string['noblockstoload'] = 'Без блоків';
 $string['nocategories'] = 'Ще немає категорій';
 $string['nocoursestoload'] = 'Жодної діяльності';
+$string['nocoursetofilter'] = 'Користувач не зареєстрований на жодних курсах для вибору';
 $string['nodatarequests'] = 'Немає запитів на дані';
 $string['nodatarequestsmatchingfilter'] = 'Немає запитів даних, що відповідають заданому фільтру';
 $string['noexpiredcontexts'] = 'Цей рівень контексту не має даних, для яких закінчився термін зберігання.';
@@ -287,6 +294,7 @@ $string['requesttype_help'] = 'Виберіть причину для зверн
 $string['requesttypedelete'] = 'Видалити всі мої особисті дані';
 $string['requesttypedeleteshort'] = 'Видалити';
 $string['requesttypeexport'] = 'Експортувати всі мої особисті дані';
+$string['requesttypeexportallowfiltering'] = 'Експортувати мої персональні дані';
 $string['requesttypeexportshort'] = 'Експорт';
 $string['requesttypeothers'] = 'Загальний запит';
 $string['requesttypeothersshort'] = 'Повідомлення';
@@ -318,6 +326,7 @@ $string['roleoverride'] = 'Перевизначення ролі';
 $string['roleoverrideoverview'] = 'Політику збереження за замовчуванням можна змінити для певних ролей користувачів, дозволяючи вказати довшу або коротшу політику збереження. Термін дії користувача закінчився лише тоді, коли закінчився термін дії всіх його ролей.';
 $string['roleoverrides'] = 'Перевизначає роль';
 $string['selectbulkaction'] = 'Виберіть групову дію.';
+$string['selectcourses'] = 'Виберіть курси для експорту';
 $string['selectdatarequests'] = 'Виберіть запити даних.';
 $string['selectuserdatarequest'] = 'Виберіть запит даних {$a->requesttype} {$a->username}.';
 $string['send'] = 'Надіслати';
@@ -334,6 +343,7 @@ $string['statusdeleted'] = 'Видалено';
 $string['statusdetail'] = 'Статус:';
 $string['statusexpired'] = 'Термін дії закінчився';
 $string['statuspending'] = 'Очікується';
+$string['statuspreprocessing'] = 'Попередня обробка';
 $string['statusprocessing'] = 'Обробка';
 $string['statusready'] = 'Завантаження готове';
 $string['statusrejected'] = 'Відхилено';

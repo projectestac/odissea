@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'gl', version '4.1'.
+ * Strings for component 'repository_upload', language 'gl', version '4.4'.
  *
  * @package     repository_upload
  * @category    string
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configuración do engadido de envíos';
 $string['pluginname'] = 'Enviar un ficheiro';
 $string['pluginname_help'] = 'Enviar un ficheiro a Moodle';
-$string['privacy:metadata'] = 'O engadido de repositorio para enviar un ficheiro non almacena ou transmite ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de repositorio para enviar un ficheiro non almacena ou transmite ningún dato persoal.';
 $string['upload:view'] = 'Empregar o envío no selector de ficheiros';
 $string['upload_error_cant_write'] = 'Non foi posíbel escribir o ficheiro no disco';
 $string['upload_error_extension'] = 'Unha extensión de PHP detivo o envío de ficheiros.';
 $string['upload_error_form_size'] = 'O ficheiro enviado excede a directiva MAX_FILE_SIZE que foi especificada no formulario HTML';
-$string['upload_error_ini_size'] = 'O ficheiro enviado excede a directiva de php.ini upload_max_filesize';
+$string['upload_error_ini_size'] = 'O ficheiro é maior que o tamaño máximo permitido.';
 $string['upload_error_invalid_file'] = 'O ficheiro «{$a}» está baleiro ou é un cartafol. Para enviar cartafoles, primeiro debe comprimilos coma ZIP e após envialo.';
 $string['upload_error_no_file'] = 'Non se enviou ningún ficheiro';
 $string['upload_error_no_tmp_dir'] = 'Non se atopa PHP no cartafol temporal';

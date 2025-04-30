@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'ca', version '4.1'.
+ * Strings for component 'block_cmanager', language 'ca', version '4.4'.
  *
  * @package     block_cmanager
  * @category    string

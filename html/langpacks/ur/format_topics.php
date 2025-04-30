@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ur', version '4.1'.
+ * Strings for component 'format_topics', language 'ur', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,13 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'عنوانات شامل کریں';
 $string['currentsection'] = 'یہ موضوع';
-$string['deletesection'] = 'موضوع کو حذف کریں';
-$string['editsection'] = 'موضوع میں ترمیم کریں';
-$string['editsectionname'] = 'عنوان کے نام میں ترمیم کریں';
 $string['hidefromothers'] = 'موضوع چھپائیں';
-$string['newsectionname'] = 'عنوان {$a} کے لیے نیا نام';
+$string['legacysectionname'] = 'موضوع';
 $string['page-course-view-topics'] = 'عنوانات کی شکل میں کوئی بھی کورس کا مرکزی صفحہ';
 $string['page-course-view-topics-x'] = 'عنوانات کی شکل میں کوئی بھی کورس کا صفحہ';
 $string['pluginname'] = 'موضوعات کی شکل';

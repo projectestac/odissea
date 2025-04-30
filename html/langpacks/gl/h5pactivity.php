@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'gl', version '4.1'.
+ * Strings for component 'h5pactivity', language 'gl', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -34,7 +34,7 @@ $string['answer_pass'] = 'Resposta correcta';
 $string['answer_text'] = 'Texto da resposta';
 $string['answer_unchecked'] = 'Resposta sen revisar';
 $string['answer_unknown'] = 'Resposta descoñecida';
-$string['areapackage'] = 'Ficheiro de paquete';
+$string['areapackage'] = 'Ficheiro de contido';
 $string['attempt'] = 'Intento';
 $string['attempt_answer'] = 'Intento de resposta';
 $string['attempt_average'] = 'Media de intentos puntuados';
@@ -62,6 +62,8 @@ $string['displayembed'] = 'Botón de inserción';
 $string['displayexport'] = 'Permitir a descarga';
 $string['dnduploadh5pactivity'] = 'Engadir unha actividade H5P';
 $string['duration'] = 'Duración';
+$string['enablesavestate'] = 'Gardar o estado';
+$string['enablesavestate_help'] = 'Gardar automaticamente o estado actual do usuario. O usuario pode volver máis tarde e retomar onde deixou.';
 $string['enabletracking'] = 'Activar o seguimento dos intentos';
 $string['false'] = 'Falso';
 $string['grade_average_attempt'] = 'Nota media';
@@ -78,6 +80,7 @@ $string['grade_h5p'] = 'Cualificar: {$a}';
 $string['grade_highest_attempt'] = 'Cualificación máis alta';
 $string['grade_last_attempt'] = 'Último intento';
 $string['grade_manual'] = 'Non calcular unha cualificación';
+$string['gradenoun_h5p'] = 'Cualificar: {$a}';
 $string['h5pactivity:addinstance'] = 'Engadir un novo H5P';
 $string['h5pactivity:reviewattempts'] = 'Revisar os intentos H5P';
 $string['h5pactivity:submit'] = 'Enviar os intentos H5P';
@@ -101,7 +104,7 @@ $string['no_compatible_track'] = 'Esta interacción ({$a}) non fornece informaci
 $string['noparticipants'] = 'Non hai participantes para amosar';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Acceder ao ficheiro H5P no banco de contidos</a> (ábrese nunha nova xanela).';
 $string['outcome'] = 'Resultado';
-$string['package'] = 'Ficheiro de paquete';
+$string['package'] = 'Ficheiro de contido';
 $string['package_help'] = 'O ficheiro do paquete é un ficheiro h5p que contén contido interactivo H5P.';
 $string['page-mod-h5pactivity-x'] = 'Calquera páxina do módulo H5P';
 $string['pluginadministration'] = 'Administración de H5P';
@@ -114,6 +117,7 @@ $string['privacy:metadata:timemodified'] = 'O último momento no que foi seguido
 $string['privacy:metadata:userid'] = 'O ID do usuario que accedeu á actividade H5P';
 $string['privacy:metadata:xapi_track'] = 'Información do seguimento dos intentos';
 $string['privacy:metadata:xapi_track_results'] = 'Información do seguimento dos resultados dos intentos';
+$string['privacy:metadata:xapisummary'] = 'A actividade H5P contén información relativa ao estado de contido xAPI almacenado polo usuario.';
 $string['report_viewed'] = 'Informe visto';
 $string['result_compound'] = 'Puntuación parcial combinada';
 $string['result_fill-in'] = 'Texto de recheo';
@@ -123,12 +127,13 @@ $string['result_other'] = 'Tipo de interacción descoñecido';
 $string['result_sequencing_answer'] = 'Valor da posición';
 $string['result_sequencing_choice'] = 'Posicións';
 $string['result_sequencing_position'] = 'Núm. {$a}';
-$string['review_all_attempts'] = 'Ver todos os intentos ({$a} enviados)';
 $string['review_mode'] = 'Intentos de revisión';
 $string['review_my_attempts'] = 'Ver os meus intentos';
 $string['review_none'] = 'Os participantes non poden revisar os seus propios intentos';
 $string['review_on_completion'] = 'Os participantes poden revisar os seus propios intentos';
 $string['review_user_attempts'] = 'Ver os intentos do usuario ({$a})';
+$string['savestatefreq'] = 'Frecuencia de gardado do estado';
+$string['savestatefreq_help'] = 'Con que frecuencia (en segundos) se garda o estado actual do usuario.';
 $string['score'] = 'Puntuación';
 $string['score_out_of'] = '{$a->rawscore} de {$a->maxscore}';
 $string['search:activity'] = 'H5P - información da actividade';

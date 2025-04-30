@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nologin', language 'eu', version '4.1'.
+ * Strings for component 'auth_nologin', language 'eu', version '4.4'.
  *
  * @package     auth_nologin
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nologindescription'] = 'Plugin honek ez die erabiltzaileei sisteman saioa hasten uzten, eta erabiltzaileari bidalitako edozein e-mail ere ezeztatzen du. Erabiltzaileen kontuak <em>bertan behera uzteko</em> ere erabil daiteke.';
+$string['auth_nologindescription'] = 'Plugin honek ez die erabiltzaileei sisteman saioa hasten uzten, eta erabiltzaileari bidalitako edozein e-mail ere ezeztatzen du. Erabiltzaileen kontuak <em>eteteko</em> ere erabil daiteke.';
 $string['pluginname'] = 'Autentifikaziorik ez';
 $string['privacy:metadata'] = 'Autentifikaziorik ez autentifikazio-pluginak ez du datu pertsonalik biltzen.';

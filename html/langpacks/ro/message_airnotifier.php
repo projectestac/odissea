@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ro', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'ro', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,6 +45,7 @@ $string['devicetoken'] = 'Dispozitiv token';
 $string['donotsendnotification'] = 'Nu trimite deloc notificări';
 $string['enableprocessor'] = 'Activați notificările mobile';
 $string['encryptnotifications'] = 'Criptează notificări';
+$string['encryptnotifications_help'] = 'Activați criptarea end-to-end a notificărilor aplicației. Unele date pot fi eliminate din notificări dacă nu pot fi criptate.';
 $string['encryptprocessing'] = 'Pentru dispozitivele care nu acceptă criptarea';
 $string['encryptprocessing_desc'] = 'Notificările criptate necesită cel puțin Android 8 sau iOS 13, și Moodle App 4.2 sau versiuni ulterioare.';
 $string['errorretrievingkey'] = 'A apărut o eroare la preluarea cheii de acces. Site-ul dvs. trebuie să fie înregistrat pentru a utiliza acest serviciu. Dacă site-ul dvs. este deja înregistrat, vă rugăm să încercați să vă actualizați înregistrarea. Alternativ, puteți obține o cheie de acces prin crearea unui cont pe <a href="https://apps.moodle.com"> Portalul de aplicații Moodle </a>.';

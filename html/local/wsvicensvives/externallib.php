@@ -22,12 +22,12 @@ class local_wsvicensvives_external extends external_api {
 
     public static function update_lti_grade_parameters() {
         return new external_function_parameters(
-            array(
+            [
                 'courseid' => new external_value(PARAM_INT, 'ID of the course'),
                 'userid' => new external_value(PARAM_INT, 'ID of the user'),
                 'ltiidnumber' => new external_value(PARAM_RAW, 'ID number of the LTI activity'),
                 'grade' => new external_value(PARAM_FLOAT, 'Grade'),
-            )
+            ]
         );
     }
 
@@ -39,14 +39,14 @@ class local_wsvicensvives_external extends external_api {
         global $DB, $USER, $CFG;
 
         // Parameter validation.
-        $params = array('courseid' => $courseid, 'userid' => $userid, 'ltiidnumber' => $ltiidnumber, 'grade' => $grade);
+        $params = ['courseid' => $courseid, 'userid' => $userid, 'ltiidnumber' => $ltiidnumber, 'grade' => $grade];
         $params = self::validate_parameters(self::update_lti_grade_parameters(), $params);
 
-        if (!$course = $DB->get_record('course', array('id' => $params['courseid']))) {
+        if (!$course = $DB->get_record('course', ['id' => $params['courseid']])) {
             throw new moodle_exception('notexistcourse');
         }
 
-        if (!$user = $DB->get_record('user', array('id' => $params['userid']))) {
+        if (!$user = $DB->get_record('user', ['id' => $params['userid']])) {
             throw new moodle_exception('notexistuser');
         }
 
@@ -60,12 +60,12 @@ class local_wsvicensvives_external extends external_api {
             throw new moodle_exception('usernotenroled');
         }
 
-        $gradeitem = grade_item::fetch(array(
+        $gradeitem = grade_item::fetch([
             'courseid' => $course->id,
             'itemtype' => 'mod',
             'itemmodule' => 'lti',
             'idnumber' => $params['ltiidnumber'],
-        ));
+        ]);
         if (!$gradeitem) {
             throw new moodle_exception('ltinotexist');
         }

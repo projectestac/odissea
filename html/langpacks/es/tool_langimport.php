@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'es', version '4.1'.
+ * Strings for component 'tool_langimport', language 'es', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'Se ha completado la actualización del paquete 
 $string['missingcfglangotherroot'] = 'Falta el valor de configuración $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta idioma padre <em>{$a->parent}</em> de <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'El paquete del idioma Inglés no puede desinstalarse';
+$string['noenglishuninstalltitle'] = 'No se pudo desinstalar';
 $string['nolangupdateneeded'] = 'Todos los paquetes de idioma están al día: no se necesita actualizarlos';
 $string['pluginname'] = 'Paquetes de idioma';
 $string['privacy:metadata'] = 'El complemento de los paquetes de idioma no almacena ningún dato personal.';

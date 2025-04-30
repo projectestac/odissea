@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ja', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ja', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = '自動評定された問題も表示�
 $string['attemptstograde'] = '評定する受験';
 $string['automaticallygraded'] = '自動評定済み';
 $string['backtothelistofquestions'] = '問題リストに戻る';
-$string['bydate'] = '日付順';
-$string['bystudentfirstname'] = '学生名順';
-$string['bystudentidnumber'] = '学籍番号順';
-$string['bystudentlastname'] = '学生姓順';
 $string['cannotgradethisattempt'] = 'この受験を評定できません。';
 $string['cannotloadquestioninfo'] = '問題タイプ固有の問題情報を読み込めませんでした。';
 $string['changeoptions'] = 'オプションを変更する';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'この問題すべての受験件数は {$a} 件です�
 $string['gradingattempt'] = '{$a->fullname} の受験可能回数: {$a->attempt}';
 $string['gradingattemptsxtoyofz'] = '受験評定 {$a->from} -> {$a->to} / {$a->of}';
 $string['gradingattemptwithcustomfields'] = '{$a->fullname} の受験番号 {$a->attempt} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = '{$a->fullname} ({$a->idnumber}) の受験数: {$a->attempt}';
 $string['gradingnextungraded'] = '次の {$a} 件の未評定の受験';
 $string['gradingnotallowed'] = 'あなたにはこの小テストの解答を手動評定するためのパーミッションがありません。';
 $string['gradingquestionx'] = '問題評定 {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = '評定できるID {$a} の問題が見つかり�
 $string['noquestionsfound'] = '手動評定問題が見つかりませんでした。';
 $string['nothingfound'] = '表示するものはありません。';
 $string['options'] = 'オプション';
-$string['orderattempts'] = '受験順';
 $string['orderattemptsby'] = '受験の並べ替え順';
 $string['pluginname'] = '手動評定';
 $string['privacy:preference:order'] = '評定が必要な受験の表示順です。';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = '1ページあたりの問題数';
 $string['questionsthatneedgrading'] = '評定が必要な問題';
 $string['questiontitle'] = '問題 {$a->number}: {$a->name} (評定済み受験結果 {$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} {$a->openspan}{$a->closespan})';
 $string['random'] = 'ランダム';
-$string['randomly'] = 'ランダム';
 $string['saveandnext'] = '保存して次を表示する';
 $string['showstudentnames'] = '学生名を表示する';
 $string['tograde'] = '要評定';

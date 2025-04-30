@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'sv', version '4.1'.
+ * Strings for component 'block_recentlyaccesseditems', language 'sv', version '4.4'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string

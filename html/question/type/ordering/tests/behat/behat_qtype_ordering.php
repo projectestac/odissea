@@ -14,6 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+// NOTE: no MOODLE_INTERNAL test here, this file may be required by behat before including /config.php.
+
+require_once(__DIR__ . '/../../../../../lib/behat/behat_base.php');
+
 /**
  * Behat steps definitions for the ordering question type.
  *
@@ -22,26 +26,15 @@
  * @copyright 2018 The Open University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-// NOTE: no MOODLE_INTERNAL test here, this file may be required by behat before including /config.php.
-
-require_once(__DIR__ . '/../../../../../lib/behat/behat_base.php');
-
-/**
- * Steps definitions related with the ordering question type.
- *
- * @copyright 2018 The Open University
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 class behat_qtype_ordering extends behat_base {
-
     /**
      * Get the xpath for a given item by label.
      * @param string $label the text of the item to drag.
      * @return string the xpath expression.
      */
-    protected function item_xpath_by_lable($label) {
-        return '//li[@class = "sortableitem" and contains(normalize-space(.), "' . $this->escape($label) . '")]';
+    protected function item_xpath_by_label(string $label): string {
+        return "//li[contains(concat(' ', normalize-space(@class), ' '), 'sortableitem') and contains(normalize-space(.), '" .
+            $this->escape($label) . "')]";
     }
 
     /**
@@ -49,8 +42,8 @@ class behat_qtype_ordering extends behat_base {
      * @param string $position the number of place to drop it.
      * @return string the xpath expression.
      */
-    protected function item_xpath_by_position($position) {
-        return '//li[@class = "sortableitem"][' . $position . ']';
+    protected function item_xpath_by_position(string $position): string {
+        return "//li[contains(concat(' ', normalize-space(@class), ' '), 'sortableitem')][" . $position . "]";
     }
 
     /**
@@ -67,14 +60,45 @@ class behat_qtype_ordering extends behat_base {
      *
      * @Given /^I drag "(?P<label>[^"]*)" to space "(?P<position>\d+)" in the ordering question$/
      */
-    public function i_drag_to_space_in_the_drag_and_drop_into_text_question($label, $position) {
+    public function i_drag_to_space_in_the_drag_and_drop_into_text_question(string $label, int $position): void {
+
+        $testingpos = $position - 1; // 0-based index.
+
         $generalcontext = behat_context_helper::get('behat_general');
-        // There was a weird issue where drag-drop was not reliable if an item was being
-        // dragged to the same place it already was. So, first drag below the bottom to reliably
-        // move it to the last place.
-        $generalcontext->i_drag_and_i_drop_it_in($this->item_xpath_by_lable($label),
-                'xpath_element', get_string('check', 'question'), 'button');
-        $generalcontext->i_drag_and_i_drop_it_in($this->item_xpath_by_lable($label),
-                'xpath_element', $this->item_xpath_by_position($position), 'xpath_element');
+
+        $this->execute_script("
+                (function() {
+                    var droptarget = document.createElement('li');
+                    droptarget.setAttribute('class', 'dtb');
+                    var items = document.querySelector('.sortablelist');
+                    items.insertBefore(droptarget, items.children[$testingpos]);
+                }())"
+        );
+
+        // Ensure the script has run and the item is there.
+        $generalcontext->wait_until_exists(
+            '.dtb',
+            'css_element'
+        );
+
+        $generalcontext->i_drag_and_i_drop_it_in(
+            $this->item_xpath_by_label($label),
+            'xpath_element',
+            "//li[contains(concat(' ', normalize-space(@class), ' '), 'dtb')]",
+            'xpath_element'
+        );
+
+        $this->execute_script("
+                (function() {
+                    var item = document.querySelector('.dtb');
+                    item.parentNode.removeChild(item);
+                }())"
+        );
+
+        // Ensure the script has run and the item is gone.
+        $generalcontext->wait_until_does_not_exists(
+            '.dtb',
+            'css_element'
+        );
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'fr', version '4.1'.
+ * Strings for component 'ltiservice_memberships', language 'fr', version '4.4'.
  *
  * @package     ltiservice_memberships
  * @category    string

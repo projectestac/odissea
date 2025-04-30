@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', version '4.1'.
+ * Strings for component 'calendar', language 'ja', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'カレンダーURL';
 $string['calendarheading'] = '{$a} カレンダー';
 $string['calendarpreferences'] = 'カレンダープレファレンス';
 $string['calendartypes'] = 'カレンダータイプ';
-$string['calendarurl'] = 'カレンダーURL: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'カレンダーURLクリップボードにコピーされました。';
 $string['category'] = 'カテゴリ';
 $string['categoryevent'] = 'カテゴリイベント';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'カレンダーURLをコピーする';
 $string['copyurl'] = 'URLをコピーする';
 $string['course'] = 'コース';
 $string['coursecalendar'] = '{$a} カレンダー';
+$string['coursecalendarlink'] = 'コースカレンダー';
 $string['courseevent'] = 'コースイベント';
 $string['courseevents'] = 'コースイベント';
 $string['courses'] = 'コース';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = '外部カレンダーをインポートし�
 $string['importcalendarfrom'] = 'インポート先';
 $string['importcalendarheading'] = 'カレンダーをインポートする ...';
 $string['importfromfile'] = 'カレンダーファイル (.ics)';
-$string['importfrominstructions'] = 'リモートカレンダーのURLを提供するか、ファイルをアップロードしてください。';
 $string['importfromurl'] = 'カレンダーURL';
 $string['invalideventtype'] = 'あなたが選択したイベントタイプは有効ではありません。';
 $string['invalidtimedurationminutes'] = 'あなたが入力した期間 (分) は有効ではありません。ゼロよりも大きな期間を分で入力するか、空白にしてください。';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} イベント';
 $string['mon'] = '月';
 $string['monday'] = '月曜日';
 $string['monthly'] = '毎月';
-$string['monthlyview'] = '月表示';
 $string['monthnext'] = '来月';
 $string['monthprev'] = '前月';
 $string['monththis'] = '今月';
@@ -197,7 +195,9 @@ $string['moreevents'] = 'さらに {$a} 件';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'なし';
 $string['newevent'] = '新しいイベント';
+$string['newmonthannouncement'] = 'カレンダーが {$a} に設定されました。';
 $string['nocalendarsubscriptions'] = 'まだカレンダー購読はありません。{$a} しますか?';
+$string['nocalendarsubscriptionsimportexternal'] = 'まだカレンダー購読はありません。<a href="{$a}">外部カレンダーをインポートする</a>';
 $string['notitle'] = 'タイトルなし';
 $string['noupcomingevents'] = '直近のイベントはありません。';
 $string['oneevent'] = '1 イベント';

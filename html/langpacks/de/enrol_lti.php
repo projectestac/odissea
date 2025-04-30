@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_lti', language 'de', version '4.1'.
+ * Strings for component 'enrol_lti', language 'de', version '4.4'.
  *
  * @package     enrol_lti
  * @category    string
@@ -199,4 +199,4 @@ $string['tooltobeprovided'] = 'zu veröffentlichendes Tool';
 $string['toolurl'] = 'Tool URL';
 $string['userdefaultvalues'] = 'Standardnutzerwerte';
 $string['viewplatformdetails'] = 'Plattformdetails anzeigen';
-$string['viewtoolendpoints'] = 'Tool-Endpoints anzeigen';
+$string['viewtoolendpoints'] = 'Tool-Endpunkte anzeigen';

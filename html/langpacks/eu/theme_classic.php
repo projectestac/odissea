@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'eu', version '4.1'.
+ * Strings for component 'theme_classic', language 'eu', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'Klasikoa';
 $string['preset'] = 'Azalaren aurretiko ezarpenak';
 $string['preset_desc'] = 'Aukeratu aurretiko ezarpen bat azalaren itxura orokorra aldatzeko.';
 $string['presetfiles'] = 'Azalaren aurretiko ezarpenen fitxategi gehigarriak';
-$string['presetfiles_desc'] = 'Aurretiko ezarpenen fitxategiak azalaren itxura drastikoki aldatzeko erabili daitezke. Ikusi <a href="https://docs.moodle.org/dev/Boost_Presets">Boost-eko aurretiko ezarpenak</a> zure aurretiko ezarpen-fitxategiak sortu eta partekatzeko informazio gehiago eskuratzeko, eta ikusi <a href="https://archive.moodle.net/boost">Aurretiko ezarpenen biltegia</a> besteek partekatutako aurretiko ezarpenak aurkitzeko.';
+$string['presetfiles_desc'] = 'Aurretiko ezarpenen fitxategiak azalaren itxura drastikoki aldatzeko erabili daitezke. Ikusi <a href="https://docs.moodle.org/dev/Boost_Presets">Boost-eko aurretiko ezarpenak</a> zure aurretiko ezarpen-fitxategiak sortu eta partekatzeko informazio gehiago eskuratzeko, eta ikusi <a href="https://moodle.net/search?q=boost+presets">Aurretiko ezarpenen biltegia</a> besteek partekatutako aurretiko ezarpenak aurkitzeko.';
 $string['privacy:metadata'] = 'Classic azalak ez du datu pertsonalik biltzen.';
 $string['region-side-post'] = 'Eskuin';
 $string['region-side-pre'] = 'Ezker';

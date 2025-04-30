@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ru', version '4.1'.
+ * Strings for component 'block_timeline', language 'ru', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'Все';
 $string['ariadayfilter'] = 'Фильтровать шкалу времени по дате';
 $string['ariadayfilteroption'] = 'Вариант фильтра «{$a}»';
 $string['ariaeventlistitem'] = 'Для элемента «{$a->name}» в курсе «{$a->course}» срок сдачи {$a->date}';
-$string['ariaeventlistpagelimit'] = 'Отображать элементов курса на странице: {$a}';
-$string['ariaeventlistpaginationnavcourses'] = 'Разбивка на страницы списка элементов курса на шкале времени для курса «{$a}»';
-$string['ariaeventlistpaginationnavdates'] = 'Разбивка на страницы списка элементов курса на шкале времени';
 $string['ariaviewselector'] = 'Сортировать элементы шкалы времени';
 $string['ariaviewselectoroption'] = 'Вариант сортировки «{$a}»';
 $string['duedate'] = 'Срок сдачи';

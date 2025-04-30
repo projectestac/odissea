@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'de', version '4.1'.
+ * Strings for component 'hvp', language 'de', version '4.4'.
  *
  * @package     hvp
  * @category    string
@@ -79,9 +79,9 @@ $string['changelog'] = 'Änderungsprotokoll';
 $string['changeplaceholder'] = 'Bild beschnitten, Text verändert usw.';
 $string['city'] = 'Stadt';
 $string['close'] = 'Schließen';
-$string['completionpass'] = 'Bestehensbewertung notwendig';
+$string['completionpass'] = 'Bestehensgrenze erreichen';
 $string['completionpass_help'] = 'Wenn diese Option aktiviert ist, gilt diese Aktivität als abgeschlossen, wenn Teilnehmer/innen eine Bestehensgrenze (wie im Abschnitt \'Bewertung\' der H5P-Aktivitätseinstellungen angegeben) oder höher erreichen.';
-$string['completionpassdesc'] = 'Teilnehmer/in muss eine Bestehensnote erreichen, um diese Aktivität abzuschließen.';
+$string['completionpassdesc'] = 'Teilnehmer/in muss die Bestehensgrenze erreichen, um diese Aktivität abzuschließen.';
 $string['confirmdialogbody'] = 'Fortfahren? Dieser Vorgang kann nicht rückgängig gemacht werden.';
 $string['confirmdialogheader'] = 'Aktion bestätigen';
 $string['confirmlabel'] = 'Bestätigen';

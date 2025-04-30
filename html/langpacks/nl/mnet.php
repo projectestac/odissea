@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', version '4.1'.
+ * Strings for component 'mnet', language 'nl', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Toevoegen aan toegangscontrole';
 $string['allhosts'] = 'Alle hosts';
 $string['allhosts_no_options'] = 'Er zijn geen opties beschikbaar waneer je meerdere hosts bekijkt';
 $string['allow'] = 'Toestaan';
+$string['allowaccess'] = 'Toegang toestaan';
 $string['applicationtype'] = 'Applicatietype';
 $string['authfail_nosessionexists'] = 'Authorisatie mislukt: de MNet-sessie bestaat niet.';
 $string['authfail_sessiontimedout'] = 'Authorisatie mislukt: de tijd voor de MNet-sessie is verlopen.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Je 60 seconden durend tijdvenster voor het verwijd
 $string['deleteuserrecord'] = 'SSO ACL: verwijder record voor gebruiker \'{$a->user}\' van {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Er is een fout opgetreden. Als je niet aan het proberen was om de SSL-sleutel van je server te verwijderen, dan was je misschien het slachtoffer van een aanval. Er is geen actie ondernomen.';
 $string['deny'] = 'Verbied';
+$string['denyaccess'] = 'Toegang verbieden';
 $string['description'] = 'Beschrijving';
 $string['duplicate_usernames'] = 'Er kon geen index gemaakt worden op de kolommen "mnethostid" en "username" in je usertabel. <br />Dit kan gebeuren als je een <a href="{$a}" target="_blank">dubbel gebruikte gebruikersnaam in je usertabel hebt</a>.<br />Je upgrade zou toch goed moeten aflopen. Klik op de link hierboven en instructies om het probleem op te lossen zullen in een nieuw venster verschijnen. Je kunt het probleem oplossen na de upgrade.<br />';
 $string['enabled_for_all'] = '(Deze service is ingeschakeld voor alle hosts)';

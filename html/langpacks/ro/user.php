@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ro', version '4.1'.
+ * Strings for component 'user', language 'ro', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -103,7 +103,7 @@ $string['privacy:metadata:my_pages:name'] = 'Denumirea paginii';
 $string['privacy:metadata:my_pages:private'] = 'Indiferent dacă pagina este privată (tabloul de bord) sau publică (profil)';
 $string['privacy:metadata:my_pages:userid'] = 'Utilizatorul care deține această pagină sau 0 pentru setările implicite ale sistemului';
 $string['privacy:metadata:password'] = 'Parola pentru ca acest utilizator să se conecteze la sistem.';
-$string['privacy:metadata:passwordresettablesummary'] = 'Un tabel de urmărire a token-urilor de confirmare a resetării parolei';
+$string['privacy:metadata:passwordresettablesummary'] = 'Un tabel de urmărire a jetoanelor de confirmare a resetării parolei';
 $string['privacy:metadata:passwordtablesummary'] = 'Un jurnal rotativ cu hash-uri ale parolelor utilizate anterior pentru utilizator.';
 $string['privacy:metadata:phone'] = 'Numărul de telefon al utilizatorului';
 $string['privacy:metadata:picture'] = 'Detaliile imaginii asociate acestui utilizator.';
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'Aveți grijă la acest mesaj. E
 $string['target:upcomingactivitiesdue'] = 'Activități cu termen de finalizare viitoare';
 $string['target:upcomingactivitiesdue_help'] = 'Această țintă generează mementouri pentru activitățile cu termen de finalizare viitoare.';
 $string['target:upcomingactivitiesdueinfo'] = 'Toate activitățile viitoare generate de statistici sunt prezentate aici. Acești cursanți au primit aceste informații direct.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'Profilul utilizatorului';

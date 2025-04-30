@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ko', version '4.1'.
+ * Strings for component 'group', language 'ko', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -131,7 +131,6 @@ $string['groupspreview'] = '모둠 미리보기';
 $string['groupsseparate'] = '분리 모둠';
 $string['groupsvisible'] = '개방 모둠';
 $string['grouptemplate'] = '모둠 @';
-$string['hidepicture'] = '사진 감춤';
 $string['importgroups'] = '모둠 가져오기';
 $string['importgroups_help'] = '모둠은 텍스트 파일로 가져오기 할 수 있습니다. 파일 형식은 다음과 같아야 합니다.
 * 파일의 각 줄은 한개의 레코드만 포함

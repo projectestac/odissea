@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', version '4.1'.
+ * Strings for component 'feedback', language 'en', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Bold';
 $string['calendarend'] = '{$a} closes';
 $string['calendarstart'] = '{$a} opens';
 $string['cannotaccess'] = 'You can only access this feedback from a course';
+$string['cannotcreatepagebreak'] = 'A page break cannot be added at the beginning, and only one page break can be added at the end.';
 $string['cannotsavetempl'] = 'Saving templates is not allowed';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha hasn\'t been set.';
@@ -58,7 +59,7 @@ $string['completed'] = 'Completed';
 $string['completed_feedbacks'] = 'Submitted answers';
 $string['completedon'] = 'Completed on {$a}';
 $string['completiondetail:submit'] = 'Submit feedback';
-$string['completionsubmit'] = 'View as completed if the feedback is submitted';
+$string['completionsubmit'] = 'Submit feedback';
 $string['configallowfullanonymous'] = 'If set to \'yes\', users can complete a feedback activity on the site home without being required to log in.';
 $string['confirmdeleteentry'] = 'Are you sure you want to delete this entry?';
 $string['confirmdeleteitem'] = 'Are you sure you want to delete this element?';
@@ -162,7 +163,7 @@ $string['insufficient_responses_for_this_group'] = 'There are insufficient respo
 $string['insufficient_responses_help'] = 'For the feedback to be anonymous, there must be at least 2 responses.';
 $string['item_label'] = 'Label';
 $string['item_name'] = 'Question';
-$string['label'] = 'Label';
+$string['label'] = 'Text and media area';
 $string['labelcontents'] = 'Contents';
 $string['mapcourse'] = 'Map feedback to courses';
 $string['mapcourse_help'] = 'By default, feedback forms created on your homepage are available site-wide
@@ -197,7 +198,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Multiple choice (rated)';
 $string['multichoicetype'] = 'Multiple choice type';
 $string['multiplesubmit'] = 'Allow multiple submissions';
-$string['multiplesubmit_help'] = 'If enabled for anonymous surveys, users can submit feedback an unlimited number of times.';
+$string['multiplesubmit_help'] = 'If set to Yes:
+
+* For anonymous surveys: participants can submit unlimited responses, and all responses will be recorded.
+* For non-anonymous surveys: participants can submit unlimited responses, but only their latest response will be recorded.';
 $string['name'] = 'Name';
 $string['name_required'] = 'Name required';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

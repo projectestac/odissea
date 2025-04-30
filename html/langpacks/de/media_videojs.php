@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_videojs', language 'de', version '4.1'.
+ * Strings for component 'media_videojs', language 'de', version '4.4'.
  *
  * @package     media_videojs
  * @category    string
@@ -30,10 +30,6 @@ $string['audioextensions'] = 'Audio-Dateiendungen';
 $string['configaudiocssclass'] = 'CSS Class, die zum &lt;audio&gt;-Element hinzugefügt wird.';
 $string['configaudioextensions'] = 'Kommagetrennte Liste der unterstützten Audio-Dateiendungen. VideoJS versucht, den nativen AudioPlayer des Browsers (wenn verfügbar) oder native VideoJS-Funktionen zu nutzen.';
 $string['configlimitsize'] = 'Wenn diese Option aktiviert ist und Breite und Höhe nicht definiert sind, wird das Video mit Standardbreite und -höhe angezeigt. Andernfalls wird es bis zur maximal möglichen Breite gestreckt.';
-$string['configrtmp'] = 'Nach der Aktivierung werden Links, die mit rtmp:// beginnen, vom Plugin verarbeitet, egal ob die jeweilige Erweiterung aktiviert ist. Flash-Fallback muss für die Nutzung von rmtp aktiv sein';
-$string['configuseflash'] = 'Der FlashPlayer wird verwendet, wenn das Audio- oder Videoformat nicht native vom Browser oder von native VideoJS-Funktionen unterstützt wird.
-
-Wenn diese Option aktiviert ist, wird VideoJS für jede Dateiendung aus der obigen Liste ohne Browser-Überprüfung aktiviert. Beachten Sie, dass Flash in mobilen Browsern nicht verfügbar ist und auch in Desktop-Browsern nicht mehr genutzt wird.';
 $string['configvideocssclass'] = 'CSS Class, die zum &lt;video&gt;-Element hinzugefügt wird.
 
 Nutzen Sie z.B. die CSS Class \'vjs-big-play-centered\', um eine Abspieltaste in der Mitte zu platzieren. Alle Details zu den Einstellungen, inclusive aller Anpassungen für ein eigenes Erscheinungsbild, finden Sie unter <a href="https://docs.videojs.com">docs.videojs.com</a>.';
@@ -43,8 +39,6 @@ $string['limitsize'] = 'Max. Größe';
 $string['pluginname'] = 'VideoJS Player';
 $string['pluginname_help'] = 'VideoJS ist Umgebung für Audio- und Videodateien, die vom nativen Audio- bzw. VideoPlayer des Browsers wiedergegeben werden. Die Formatunterstützung hängt vom jeweiligen Browser ab.';
 $string['privacy:metadata'] = 'Das VideoJS-Player-Mediaplugin speichert keine personenbezogenen Daten';
-$string['rtmp'] = 'RTMP-Streams';
-$string['useflash'] = 'Flash-Fallback aktivieren';
 $string['videocssclass'] = 'CSS Class für Video';
 $string['videoextensions'] = 'Video-Dateiendungen';
 $string['youtube'] = 'YouTube Videos';

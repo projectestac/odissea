@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', version '4.1'.
+ * Strings for component 'glossary', language 'pt', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -77,7 +77,7 @@ $string['cnfapprovalstatus'] = 'Configuração predefinida para o estado de apro
 $string['cnfcasesensitive'] = 'Configuração predefinida para a opção de respeitar maiúsculas/minúsculas para criar hiperligação automática dos termos do glossário';
 $string['cnfdefaulthook'] = 'Configuração predefinida da seleção a exibir na primeira vez que se consulta o glossário';
 $string['cnfdefaultmode'] = 'Configuração predefinida do frame a exibir na primeira vez que se consulta o glossário';
-$string['cnffullmatch'] = 'Configuração predefinida para a opção de localizar palavra inteira para criar hiperligação automática dos termos do glossário';
+$string['cnffullmatch'] = 'Define se uma entrada, quando ligada, deve corresponder a palavras inteiras (e não a palavras dentro de outras palavras) por predefinição.';
 $string['cnflinkentry'] = 'Configuração predefinida para a opção de criar hiperligações automáticas dos termos do glossário';
 $string['cnflinkglossaries'] = 'Configuração predefinida para a opção de criar hiperligações automáticas do glossário';
 $string['cnfrelatedview'] = 'Selecione o formato de visualização predefinido a usar para as hiperligações automáticas e vista do termo.';
@@ -92,7 +92,7 @@ $string['comments'] = 'Comentários';
 $string['commentson'] = 'Comentários sobre';
 $string['commentupdated'] = 'O comentário foi atualizado';
 $string['completiondetail:entries'] = 'Adicionar entradas: {$a}';
-$string['completionentries'] = 'Número de termos que os alunos têm de criar:';
+$string['completionentries'] = 'Adicionar termos';
 $string['completionentriesdesc'] = 'O aluno deve criar pelo menos {$a} termo(s)';
 $string['completionentriesgroup'] = 'Número de termos exigido';
 $string['concept'] = 'Conceito';
@@ -281,6 +281,7 @@ $string['page-mod-glossary-edit'] = 'Página de adicionar/editar termo do gloss�
 $string['page-mod-glossary-view'] = 'Ver edição da página de entrada';
 $string['page-mod-glossary-x'] = 'Qualquer página da atividade glossário';
 $string['pendingapproval'] = 'Aprovação pendente';
+$string['pendingapprovalcount'] = 'Aprovação pendente ({$a})';
 $string['pluginadministration'] = 'Administração do Glossário';
 $string['pluginname'] = 'Glossário';
 $string['popupformat'] = 'Formato pop-up';
@@ -334,7 +335,6 @@ $string['totalentries'] = 'Todos os termos';
 $string['usedynalink'] = 'Criar automaticamente hiperligações para o glossário';
 $string['usedynalink_help'] = 'Se ativar esta opção e as hiperligações automáticas para o glossário estiverem ativas pelo administrador, ao adicionar um novo termo poderá ativar a opção "Criar automaticamente hiperligação para este termo" para que todas as ocorrências do termo nos conteúdos da disciplina tenham uma hiperligação para a respetiva definição no glossário.';
 $string['visibletabs'] = 'Separadores visíveis';
-$string['waitingapproval'] = 'A aguardar aprovação';
 $string['warningstudentcapost'] = '(Aplica-se apenas se o glossário não for o principal)';
 $string['withauthor'] = 'Termos com autor';
 $string['withoutauthor'] = 'Termos sem autor';

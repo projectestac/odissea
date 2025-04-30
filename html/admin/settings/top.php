@@ -14,22 +14,6 @@ $ADMIN->add('root', new admin_externalpage('registrationmoodleorg', new lang_str
         new moodle_url("/admin/registration/index.php")));
  // hidden upgrade script
 $ADMIN->add('root', new admin_externalpage('upgradesettings', new lang_string('upgradesettings', 'admin'), "$CFG->wwwroot/$CFG->admin/upgradesettings.php", 'moodle/site:config', true));
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2019.07.25 @aginard
-if (get_protected_agora()) {
-// ************ FI
-
-// Adding Moodle Services information page.
-$moodleservices = new admin_settingpage('moodleservices', new lang_string('moodleservices',
-    'admin'));
-$ADMIN->add('root', $moodleservices);
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2019.07.25 @aginard
-}
-// ************ FI
-
 $userfeedback = new admin_settingpage('userfeedback', new lang_string('feedbacksettings', 'admin'));
 $ADMIN->add('root', $userfeedback);
 

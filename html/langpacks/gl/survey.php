@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'gl', version '4.1'.
+ * Strings for component 'survey', language 'gl', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Real';
 $string['actualclass'] = 'Clase real';
 $string['actualstudent'] = '{$a} real';
 $string['allquestionrequireanswer'] = 'Todas as preguntas son necesarias e deben ser contestadas';
-$string['allquestions'] = 'Todas as preguntas en orde, todos os alumnos';
 $string['allscales'] = 'Todas as escalas, todos os alumnos';
 $string['alreadysubmitted'] = 'Xa enviou esta enquisa';
 $string['analysisof'] = 'Análise de {$a}';
@@ -52,7 +51,7 @@ $string['attls16short'] = 'poñer a proba';
 $string['attls17'] = 'Cando se trata de resolver problemas, valoro o uso da lóxica e da razón por enriba dos meus propios intereses.';
 $string['attls17short'] = 'valoro sobre todo a lóxica';
 $string['attls18'] = 'Podo chegar a entender as opinións que difiren da miña a través da empatía.';
-$string['attls18short'] = 'entendemento dende a empatía';
+$string['attls18short'] = 'entendemento desde a empatía';
 $string['attls19'] = 'Cando atopo persoas con opinións que semellan moi alleas a min, fago un esforzo deliberado para «proxectarme» nesa persoa, a fin de tentar entender como puideron chegar a ter esas opinións.';
 $string['attls19short'] = 'facer un esforzo para entender ao outro';
 $string['attls1short'] = 'centrarse na calidade do argumento';
@@ -77,7 +76,7 @@ $string['attls9short'] = 'debater con autores';
 $string['attlsintro'] = 'O propósito deste cuestionario é axudarnos a avaliar as súas actitudes cara ao pensamento e a aprendizaxe.
 
 Non hai respostas «correctas» ou «trabucadas», só nos interesa a súa opinión. Pode estar seguro de que as súas respostas serán tratadas cun alto grao de confidencialidade e non afectarán a súa avaliación.';
-$string['attlsm1'] = 'Actitudes cara ao pensamento e a aprendizaxe';
+$string['attlsm1'] = 'Actitudes cara o pensamento e a aprendizaxe';
 $string['attlsm2'] = 'Aprendizaxe colaborativa';
 $string['attlsm3'] = 'Aprendizaxe individualizada';
 $string['attlsmintro'] = 'En discusión...';
@@ -85,7 +84,7 @@ $string['attlsname'] = 'ATTLS (versión de 20 elementos)';
 $string['cannotfindanswer'] = 'Aínda non hai respostas para esta enquisa.';
 $string['cannotfindquestion'] = 'Non existe a pregunta';
 $string['cannotfindsurveytmpt'] = 'Non se atopan modelos de enquisa.';
-$string['ciq1'] = 'En que momento, durante a clase, sentiuse máis implicado como alumno?';
+$string['ciq1'] = 'En que momento, durante a clase, sentiuse máis involucrado como alumno?';
 $string['ciq1short'] = 'Moi implicado';
 $string['ciq2'] = 'En que momento, durante a clase, sentiuse máis distanciado como alumno?';
 $string['ciq2short'] = 'Moi distanciado';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Que acontecemento lle sorprendeu máis?';
 $string['ciq5short'] = 'Momento sorprendente';
 $string['ciqintro'] = 'Responda as seguintes preguntas pensando nos acontecementos ocorridos durante a semana pasada nesta clase.';
 $string['ciqname'] = 'Incidentes críticos';
-$string['clicktocontinue'] = 'Prema aquí para continuar';
 $string['clicktocontinuecheck'] = 'Prema aquí para revisar e continuar';
 $string['colles1'] = 'a miña aprendizaxe centrase en asuntos do meu interese.';
 $string['colles10'] = 'Pídolle aos outros alumnos que me expliquen as súas ideas.';
@@ -106,14 +104,14 @@ $string['colles11'] = 'outros alumnos pídenme que lles que explique as miñas i
 $string['colles11short'] = 'Pídeseme que me explique';
 $string['colles12'] = 'outros alumnos responden á miñas ideas.';
 $string['colles12short'] = 'Os alumnos respóndenme';
-$string['colles13'] = 'o titor estimúlame a reflexionar.';
-$string['colles13short'] = 'o titor estimula a reflexión';
-$string['colles14'] = 'o titor anímame a participar.';
-$string['colles14short'] = 'o titor anímame';
-$string['colles15'] = 'o titor exemplifica as boas disertacións.';
-$string['colles15short'] = 'o titor exemplifica as disertacións';
-$string['colles16'] = 'o titor exemplifica a auto reflexión crítica.';
-$string['colles16short'] = 'o titor exemplifica a auto reflexión';
+$string['colles13'] = 'o tutor estimulame a reflexionar.';
+$string['colles13short'] = 'o tutor estimula a reflexión';
+$string['colles14'] = 'o tutor anímame a participar.';
+$string['colles14short'] = 'o tutor anímame';
+$string['colles15'] = 'o tutor exemplifica as boas disertacións.';
+$string['colles15short'] = 'o tutor exemplifica as disertacións';
+$string['colles16'] = 'o tutor exemplifica a auto reflexión crítica.';
+$string['colles16short'] = 'o tutor exemplifica a auto reflexión';
 $string['colles17'] = 'outros alumnos anímanme a participar.';
 $string['colles17short'] = 'os alumnos anímanme';
 $string['colles18'] = 'os outros alumnos eloxian a miña contribución.';
@@ -127,11 +125,11 @@ $string['colles20short'] = 'os alumnos empatizan';
 $string['colles21'] = 'entendo ben as mensaxes doutros alumnos.';
 $string['colles21short'] = 'Entendo aos outros alumnos';
 $string['colles22'] = 'os outros alumnos entenden ben as miñas mensaxes.';
-$string['colles22short'] = 'os alumnos enténdenme';
+$string['colles22short'] = 'os alumnos entendenme';
 $string['colles23'] = 'entendo ben as mensaxes do o titor.';
-$string['colles23short'] = 'Entendo ao titor';
-$string['colles24'] = 'o titor entende ben as miñas mensaxes.';
-$string['colles24short'] = 'o titor enténdeme';
+$string['colles23short'] = 'Entendo ao tutor';
+$string['colles24'] = 'o tutor entende ben as miñas mensaxes.';
+$string['colles24short'] = 'o tutor enténdeme';
 $string['colles2short'] = 'importante para a miña práctica';
 $string['colles3'] = 'aprendo como mellorar a miña práctica profesional.';
 $string['colles3short'] = 'melloro a miña práctica';
@@ -173,8 +171,8 @@ $string['collesm2'] = 'Pensamento reflexivo';
 $string['collesm2short'] = 'Pensamento reflexivo';
 $string['collesm3'] = 'Interactividade';
 $string['collesm3short'] = 'Interactividade';
-$string['collesm4'] = 'Apoio do titor';
-$string['collesm4short'] = 'Apoio do titor';
+$string['collesm4'] = 'Apoio do tutor';
+$string['collesm4short'] = 'Apoio do tutor';
 $string['collesm5'] = 'Apoio de compañeiros';
 $string['collesm5short'] = 'Apoio de compañeiros';
 $string['collesm6'] = 'Interpretación';
@@ -191,7 +189,7 @@ A súas respostas, pensadas coidadosamente, axudarannos a mellorar a maneira de 
 Moitas grazas.';
 $string['collespname'] = 'COLLES (Preferida)';
 $string['completiondetail:submit'] = 'Enviar respostas';
-$string['completionsubmit'] = 'O alumno debe entregar esta actividade para completala';
+$string['completionsubmit'] = 'Facer unha entrega';
 $string['customintro'] = 'Descrición';
 $string['deleteallanswers'] = 'Eliminar todas as respostas da enquisa';
 $string['deleteanalysis'] = 'Eliminar a análise das respostas';
@@ -255,7 +253,7 @@ $string['privacy:metadata:answers:time'] = 'O momento no que se publicou a respo
 $string['privacy:metadata:answers:userid'] = 'O ID do usuario que enviou a súa resposta.';
 $string['question'] = 'Pregunta';
 $string['questions'] = 'Preguntas';
-$string['questionsnotanswered'] = 'Algunhas das preguntas con opción múltiple non foi respondida.';
+$string['questionsnotanswered'] = 'Algunhas das preguntas con opción múltipla non foi respondida.';
 $string['report'] = 'Informe da enquisa';
 $string['responsereports'] = 'Informes de respostas';
 $string['responses'] = 'Respostas';
@@ -263,7 +261,7 @@ $string['savednotes'] = 'As súas notas foron gardadas';
 $string['scaleagree5'] = 'En total desacordo, parcialmente en desacordo, nin de acordo nin en desacordo, parcialmente de acordo, totalmente de acordo';
 $string['scales'] = 'Escalas';
 $string['scaletimes5'] = 'Case nunca, rara vez, algunha vez, frecuentemente, case sempre';
-$string['search:activity'] = 'Enquisa, información de actividade';
+$string['search:activity'] = 'Enquisa - información de actividade';
 $string['seemoredetail'] = 'Prema aquí para ver máis detalles';
 $string['selectedquestions'] = 'Preguntas seleccionadas dunha escala, todos os alumnos';
 $string['summary'] = 'Resumo';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'Hai dispoñíbeis tres tipos de enquisa diferentes
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Grazas por responder a esta enquisa, {$a}';
 $string['time'] = 'Hora';
-$string['viewsurveyresponses'] = 'Ver {$a} respostas da enquisa';

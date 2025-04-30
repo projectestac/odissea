@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'sv', version '4.1'.
+ * Strings for component 'block_timeline', language 'sv', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'Alla';
 $string['ariadayfilter'] = 'Filtrera tidslinje efter datum';
 $string['ariadayfilteroption'] = '{$a} val för filter';
 $string['ariaeventlistitem'] = 'Deadline för {$a->name} activity in {$a->course}:  {$a->date}';
-$string['ariaeventlistpagelimit'] = 'Visa {$a} aktiviteter per sida';
-$string['ariaeventlistpaginationnavcourses'] = 'Sidindelning för tidslinjeaktiviteter i kursen "{$a}"';
-$string['ariaeventlistpaginationnavdates'] = 'Sidindelning för tidslinjeaktiviteter';
 $string['ariaviewselector'] = 'Sotera händelser på tidslinjen';
 $string['ariaviewselectoroption'] = '{$a} val för sortering';
 $string['duedate'] = 'Förfallodatum';

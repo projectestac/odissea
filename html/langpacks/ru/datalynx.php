@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'ru', version '4.1'.
+ * Strings for component 'datalynx', language 'ru', version '4.4'.
  *
  * @package     datalynx
  * @category    string
@@ -32,7 +32,6 @@ $string['addline'] = 'Добавить {$a}';
 $string['addoptions'] = 'Добавить параметры';
 $string['admin'] = 'Администратор';
 $string['admissibleroles'] = 'Допустимые роли';
-$string['admissibleroles_error'] = 'Пожалуйста, выберите хотя бы одну роль!';
 $string['admissibleroles_help'] = 'Пользователи, обладающие любой из выбранных ролей, будут допущены в команду. Должна быть выбрана хотя бы одна роль.';
 $string['after'] = 'после';
 $string['alignment'] = 'Выравнивание';
@@ -47,9 +46,6 @@ $string['alphabeticalorder'] = 'Сортировать параметры в а�
 $string['and'] = 'И';
 $string['andor'] = 'и/или ...';
 $string['anyof'] = 'любой из';
-$string['approval_none'] = 'Не требуется';
-$string['approval_required_new'] = 'Требуется только для новых записей';
-$string['approval_required_update'] = 'Требуется для новых записей и отредактированных записей';
 $string['approved'] = 'утверждено';
 $string['approvednot'] = 'не утверждено';
 $string['ascending'] = 'По возрастанию';

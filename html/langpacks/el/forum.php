@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'el', version '4.1'.
+ * Strings for component 'forum', language 'el', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -534,9 +534,6 @@ $string['postincontext'] = 'Δείτε αυτήν την ανάρτηση στα
 $string['postisprivatereply'] = 'Αυτή η ανάρτηση είναι ιδιωτική. Δεν είναι ορατή σε άλλους χρήστες.';
 $string['postmailinfo'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που δημοσιεύτηκε εκεί:
  {$a}';
-$string['postmailinfolink'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που αναρτήθηκε στο {$a->coursename}.
-
-Για να απαντήσετε, πατήστε σε αυτόν το σύνδεσμο: {$a->replylink}';
 $string['postmailnow'] = '<p> Αυτή η ανάρτηση θα αποσταλεί αμέσως με ηλε.ταχυδρομείο σε όλους τους εγγεγραμμένους στο φόρουμ.</p>';
 $string['postmailreply'] = 'Για να απαντήσετε κάντε κλικ σε αυτόν τον σύνδεσμο: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

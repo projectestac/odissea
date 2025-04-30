@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'it', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'it', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Visualizza {$a} risultati';
 $string['ajaxchoosescale'] = 'Scegli';
 $string['ajaxclicktoclose'] = 'Fai click sul box per rimuoverlo';
 $string['ajaxerror'] = 'Errore';
 $string['ajaxfailedupdate'] = 'Impossibile aggiornare [1] per [2]';
 $string['ajaxfieldchanged'] = 'Il campo che stai modificando è cambiato, desideri usare il valore aggiornato)';
+$string['aria:dropdowncolumns'] = 'Trovate colonne compresse';
+$string['cellactions'] = 'Azioni cella';
+$string['clearall'] = 'Cancella tutto';
+$string['clearsearch'] = 'Svuota gli utenti cercati';
+$string['collapsedcolumns'] = 'Colonne compresse <span class="badge round-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Modifica del registro delle valutazioni';
 $string['eventgradereportviewed'] = 'Visualizzazione registro valutatore';
 $string['grader:manage'] = 'Gestire il registro valutatore';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Scelta di visu
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Scelta di visualizzare accanto al nome l\'immagine del profilo dell\'utente.';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Numero di studenti visualizzati nelle pagine del registro valutatore.';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Nel corso "{$a->name}" alcune categorie del registro delle valutazioni sono compresse';
+$string['reopencolumn'] = 'Espandi colonna {$a}';
 $string['summarygrader'] = 'Una tabella con i nomi degli studenti nella prima colonna e con le attività valutabili raggruppate per corso e per categoria.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} valutazioni';

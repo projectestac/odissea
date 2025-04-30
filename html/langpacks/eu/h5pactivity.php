@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'eu', version '4.1'.
+ * Strings for component 'h5pactivity', language 'eu', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = 'Txostenik ez';
 $string['attempts'] = 'Saiakerak';
 $string['attempts_none'] = 'Erabiltzaile honek ez dauka erakusteko saiakerarik';
 $string['attempts_report'] = 'Saiakeren txostena';
+$string['attempts_report_header_label'] = 'Saiakerak ({$a})';
 $string['choice'] = 'Aukera';
 $string['completion'] = 'Osaketa';
 $string['contentbank'] = 'Informazio gehiago eduki-bankuari buruz';
@@ -63,6 +64,8 @@ $string['displayembed'] = 'Enbotatu botoia';
 $string['displayexport'] = 'Baimendu deskarga';
 $string['dnduploadh5pactivity'] = 'Gehitu H5P jarduera bat';
 $string['duration'] = 'Iraupena';
+$string['enablesavestate'] = 'Gorde egoera';
+$string['enablesavestate_help'] = 'Gorde automatikoki erabiltzaile bakoitzaren unean uneko egoera. Era horretan erabiltzailea beranduago itzuliz gero jarduera utzi zuen puntutik jarraitu ahalko du.';
 $string['enabletracking'] = 'Gaitu saiakeren jarraipena';
 $string['false'] = 'Gezurra';
 $string['grade_average_attempt'] = 'Batez besteko kalifikazioa';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = 'Kalifikazioa: {$a}';
 $string['grade_highest_attempt'] = 'Kalifikazio altuena';
 $string['grade_last_attempt'] = 'Azken saiakera';
 $string['grade_manual'] = 'Ez kalkulatu kalifikaziorik';
+$string['gradenoun_h5p'] = 'Kalifikazioa: {$a}';
 $string['h5pactivity:addinstance'] = 'Gehitu H5P berri bat';
 $string['h5pactivity:reviewattempts'] = 'Berrikusi H5P saiakerak';
 $string['h5pactivity:submit'] = 'Bidali H5P saiakerak';
@@ -106,7 +110,7 @@ $string['package_help'] = 'Pakete-fitxategia H5P eduki interaktiboa barne duen h
 $string['page-mod-h5pactivity-x'] = 'Edozein H5P modulu orri';
 $string['pluginadministration'] = 'H5P kudeaketa';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'Eduki hau aurrebista moduan erakusten da. Ez da saiakeraren jarraipenik gordeko.';
+$string['previewmode'] = 'Aurrebista modua erabiltzen ari zara.';
 $string['privacy:metadata:attempt'] = 'Saiakeraren zenbakia';
 $string['privacy:metadata:rawscore'] = 'Lortutako puntuazioa';
 $string['privacy:metadata:timecreated'] = 'Jarraitutako elementua sortu zeneko unea';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = 'Elementua jarraitu zeneko azken unea
 $string['privacy:metadata:userid'] = 'H5P jarduerara sartu zeneko erabiltzailearen IDa';
 $string['privacy:metadata:xapi_track'] = 'Saiakeraren jarraipenaren informazioa';
 $string['privacy:metadata:xapi_track_results'] = 'Saiakeraren emaitzen jarraipenaren informazioa';
+$string['privacy:metadata:xapisummary'] = 'H5P jarduerak erabiltzaileak gordetako xAPI eduki-egoerarekin lotutako informazioa dauka.';
 $string['report_viewed'] = 'Txostena ikusi da';
 $string['result_compound'] = 'Puntuazio partzial konbinatua';
 $string['result_fill-in'] = 'Bete beharreko testua';
@@ -123,12 +128,13 @@ $string['result_other'] = 'Interakzio-mota ezezaguna';
 $string['result_sequencing_answer'] = 'Kokalekuaren balioa';
 $string['result_sequencing_choice'] = 'Kokalekuak';
 $string['result_sequencing_position'] = '{$a}.a';
-$string['review_all_attempts'] = 'Ikusi saiakera guztiak (bidalitakoak: {$a})';
 $string['review_mode'] = 'Berrikusi saiakerak';
 $string['review_my_attempts'] = 'Ikusi nire saiakerak';
 $string['review_none'] = 'Partaideek ezin dituzte euren saiakerak berrikusi';
 $string['review_on_completion'] = 'Partaideek euren saiakerak berrikusi ditzakete';
-$string['review_user_attempts'] = 'Ikusi erabiltzaileen saiakerak ({$a})';
+$string['review_user_attempts'] = 'Ikusi ({$a})';
+$string['savestatefreq'] = 'Gorde egoeraren maiztasuna';
+$string['savestatefreq_help'] = 'Erabiltzailearen unean uneko egoera gordetzeko maiztasuna (segundotan).';
 $string['score'] = 'Puntuazioa';
 $string['score_out_of'] = '{$a->rawscore} gehieneko {$a->maxscore}(e)tik';
 $string['search:activity'] = 'H5P - jardueraren informazioa';
@@ -136,7 +142,10 @@ $string['startdate'] = 'Hasiera-data';
 $string['statement_received'] = 'xAPI adierazpena jaso da';
 $string['totalscore'] = 'Puntuazioa guztira';
 $string['tracking_messages'] = 'H5P batzuk txosten aurreratuetarako jarraipenaren datuak eskaintzen dituzte, hala nola saiakera kopurua, erantzunak edo kalifikazioak. Oharra: H5P batzuk ez dute jarraipenaren daturik eskaintzen. Horrelako kasuetan, ezarpen hauek ez dute eraginik izango.';
+$string['trackingdisabled'] = 'Saiakeraren jarraipena ez dago gaituta jarduera honetarako.';
+$string['trackingdisabled_enable'] = 'Saiakeraren jarraipena ez dago gaituta jarduera honetarako. <a href="{$a}">Ezarpenetan</a> gaitu dezakezu.';
 $string['true'] = 'Egia';
 $string['usecontentbank'] = 'Erabili <a href="{$a}" target="_blank">eduki-bankua (leiho berrian irekitzen da)</a> zure H5P fitxategiak kudeatzeko';
 $string['view'] = 'Ikusi';
 $string['view_report'] = 'Ikusi txostena';
+$string['viewattempts'] = 'Ikusi saiakerak ({$a})';

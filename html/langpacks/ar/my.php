@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ar', version '4.1'.
+ * Strings for component 'my', language 'ar', version '4.4'.
  *
  * @package     my
  * @category    string
@@ -32,7 +32,7 @@ $string['coursemanagementoptions'] = 'خيارات إدارة المساق';
 $string['defaultpage'] = 'صفحة مودل الافتراضية الخاصة بي';
 $string['defaultprofilepage'] = 'صفحة اللمحة الشخصية الافتراضية';
 $string['delpage'] = 'حذف الصفحة';
-$string['error:dashboardisdisabled'] = 'تم تعطيل لوحة التحكم من قبل المشرف.';
+$string['error:dashboardisdisabled'] = 'تم تعطيل دفة القيادة من قبل المشرف.';
 $string['managepages'] = 'إدارة الصفحات';
 $string['mymoodle'] = 'لوحة عدادات';
 $string['nocourses'] = 'لا توجد معلومات عن المساق لإظهارها.';

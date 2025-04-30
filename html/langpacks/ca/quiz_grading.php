@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ca', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ca', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Mostra també les preguntes que s\'han
 $string['attemptstograde'] = 'Intents per qualificar';
 $string['automaticallygraded'] = 'Qualificat automàticament';
 $string['backtothelistofquestions'] = 'Torna a la llista de preguntes';
-$string['bydate'] = 'Per data';
-$string['bystudentfirstname'] = 'Pel nom de l\'estudiant';
-$string['bystudentidnumber'] = 'Per ID d\'estudiant';
-$string['bystudentlastname'] = 'Pel cognom de l\'estudiant';
 $string['cannotgradethisattempt'] = 'No s\'ha pogut qualificar aquest intent';
 $string['cannotloadquestioninfo'] = 'No s\'ha pogut carregar la informació de pregunta específica de tipus de pregunta';
 $string['changeoptions'] = 'Canvia les opcions';
@@ -54,7 +50,6 @@ $string['grading:viewstudentnames'] = 'Mostra el nom dels estudiants mentre es q
 $string['gradingall'] = 'Tots els {$a} intents d\'aquesta pregunta';
 $string['gradingattempt'] = 'Intent número {$a->attempt} de: {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Intents puntuats {$a->from} a {$a->to} de {$a->of}';
-$string['gradingattemptwithidnumber'] = 'Intent número {$a->attempt} de  {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = '{$a} intents següents sense qualificar';
 $string['gradingnotallowed'] = 'No teniu permís per a qualificar a mà les respostes d\'aquest qüestionari';
 $string['gradingquestionx'] = 'S\'està qualificant la pregunta {$a->number}: {$a->questionname}';
@@ -68,14 +63,12 @@ $string['invalidquestionid'] = 'No s\'ha trobat la pregunta puntuable amb l\'ID 
 $string['noquestionsfound'] = 'No s\'han trobat preguntes qualificades manualment';
 $string['nothingfound'] = 'No hi ha res a mostrar';
 $string['options'] = 'Opcions';
-$string['orderattempts'] = 'Ordena intents';
 $string['pluginname'] = 'Qualificació manual';
 $string['qno'] = 'P #';
 $string['questionname'] = 'Nom de la pregunta';
 $string['questionsperpage'] = 'Preguntes per pàgina';
 $string['questionsthatneedgrading'] = 'Preguntes pendents de qualificació';
 $string['questiontitle'] = 'Pregunta {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} intents {$a->openspan}graded{$a->closespan}).';
-$string['randomly'] = 'Aleatòriament';
 $string['saveandnext'] = 'Desa i vés a la pàgina següent';
 $string['showstudentnames'] = 'Mostra els noms dels estudiants';
 $string['tograde'] = 'Per qualificar';

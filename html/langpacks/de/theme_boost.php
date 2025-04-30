@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'de', version '4.1'.
+ * Strings for component 'theme_boost', language 'de', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Vorlagendatei';
 $string['preset_desc'] = 'Wählen Sie eine Vorlagendatei, um das Aussehen des Designs zu festzulegen.';
 $string['presetfiles'] = 'Zusätzliche Vorlagendateien';
-$string['presetfiles_desc'] = 'Vorlagendateien können verwendet werden, um das Aussehen des Designs grundlegend zu verändern. Infos zum Erstellen und Freigeben von eigenen Vorlagendateien finden Sie unter <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost Presets</a>. Schauen Sie auch in das <a href="https://archive.moodle.net/boost"> Presets Repository </a>, um Vorlagendateien zu finden, die andere freigegeben haben.';
+$string['presetfiles_desc'] = 'Vorlagendateien können verwendet werden, um das Aussehen des Designs \'Boost\' grundlegend zu verändern. Infos zum Erstellen und Freigeben von eigenen Vorlagendateien finden Sie unter <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost Presets </a>. Schauen Sie auch in das <a href="https://moodle.net/search?q=boost+presets"> Presets Repository </a>, um Vorlagendateien zu finden, die andere freigegeben haben.';
 $string['privacy:drawerblockclosed'] = 'Die aktuelle Einstellung der Blockleiste ist geschlossen.';
 $string['privacy:drawerblockopen'] = 'Die aktuelle Einstellung der Blockleiste ist geöffnet.';
 $string['privacy:drawerindexclosed'] = 'Die aktuelle Einstellung des Kursindex ist geschlossen.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Raw initial SCSS';
 $string['rawscsspre_desc'] = 'In diesem Feld können Sie  SCSS- oder CSS-Code bereitstellen, der vor allen anderen Stylesheets ausgeführt wird. Normalerweise wird diese Einstellung verwendet, um Variablen zu definieren.';
 $string['region-side-pre'] = 'Rechts';
 $string['showfooter'] = 'Fußbereich anzeigen';
-$string['totop'] = 'Nach oben';
 $string['unaddableblocks'] = 'Nicht gebrauchte Blöcke';
 $string['unaddableblocks_desc'] = 'Die genannten Blöcke werden bei der Verwendung dieses Designs nicht gebraucht. Sie werden in der Liste "Block hinzufügen" nicht angezeigt.';

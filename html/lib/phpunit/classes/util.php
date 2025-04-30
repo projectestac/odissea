@@ -23,6 +23,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\di;
+use core\hook;
+
 require_once(__DIR__.'/../../testing/classes/util.php');
 require_once(__DIR__ . "/coverage_info.php");
 
@@ -103,6 +106,9 @@ class phpunit_util extends testing_util {
      */
     public static function reset_all_data($detectchanges = false) {
         global $DB, $CFG, $USER, $SITE, $COURSE, $PAGE, $OUTPUT, $SESSION, $FULLME, $FILTERLIB_PRIVATE;
+
+        // Stop all hook redirections.
+        di::get(hook\manager::class)->phpunit_stop_redirections();
 
         // Stop any message redirection.
         self::stop_message_redirection();
@@ -258,6 +264,15 @@ class phpunit_util extends testing_util {
         if (class_exists('\core_reportbuilder\manager')) {
             \core_reportbuilder\manager::reset_caches();
         }
+        if (class_exists('\core_cohort\customfield\cohort_handler')) {
+            \core_cohort\customfield\cohort_handler::reset_caches();
+        }
+        if (class_exists('\core_group\customfield\group_handler')) {
+            \core_group\customfield\group_handler::reset_caches();
+        }
+        if (class_exists('\core_group\customfield\grouping_handler')) {
+            \core_group\customfield\grouping_handler::reset_caches();
+        }
 
         // Clear static cache within restore.
         if (class_exists('restore_section_structure_step')) {
@@ -288,6 +303,9 @@ class phpunit_util extends testing_util {
         // Reset user agent.
         core_useragent::instance(true, null);
 
+        // Reset the DI container.
+        \core\di::reset_container();
+
         // verify db writes just in case something goes wrong in reset
         if (self::$lastdbwrites != $DB->perf_get_writes()) {
             error_log('Unexpected DB writes in phpunit_util::reset_all_data()');
@@ -308,7 +326,13 @@ class phpunit_util extends testing_util {
     public static function reset_database() {
         global $DB;
 
-        if (!is_null(self::$lastdbwrites) and self::$lastdbwrites == $DB->perf_get_writes()) {
+        if (defined('PHPUNIT_ISOLATED_TEST') && PHPUNIT_ISOLATED_TEST && self::$lastdbwrites === null) {
+            // This is an isolated test and the lastdbwrites has not yet been initialised.
+            // Isolated test runs are reset by the test runner before the run starts.
+            self::$lastdbwrites = $DB->perf_get_writes();
+        }
+
+        if (!is_null(self::$lastdbwrites) && self::$lastdbwrites == $DB->perf_get_writes()) {
             return false;
         }
 
@@ -506,6 +530,7 @@ class phpunit_util extends testing_util {
             <testsuite name="@component@_testsuite">
               <directory suffix="_test.php">@dir@</directory>
               <exclude>@dir@/classes</exclude>
+              <exclude>@dir@/fixtures</exclude>
             </testsuite>
 
         EOF;
@@ -597,8 +622,9 @@ class phpunit_util extends testing_util {
         $template = <<<EOT
             <testsuites>
               <testsuite name="@component@_testsuite">
-                <directory suffix="_test.php">.</directory>
-                <exclude>./classes</exclude>
+                <directory suffix="_test.php">tests</directory>
+                <exclude>tests/classes</exclude>
+                <exclude>tests/fixtures</exclude>
               </testsuite>
             </testsuites>
           EOT;
@@ -607,7 +633,7 @@ class phpunit_util extends testing_util {
               <directory suffix=".php">.</directory>
             </include>
             <exclude>
-              <directory suffix="_test.php">.</directory>
+              <directory suffix="_test.php">tests</directory>
             </exclude>
         EOT;
 
@@ -954,7 +980,6 @@ class phpunit_util extends testing_util {
     public static function call_internal_method($object, $methodname, array $params, $classname) {
         $reflection = new \ReflectionClass($classname);
         $method = $reflection->getMethod($methodname);
-        $method->setAccessible(true);
         return $method->invokeArgs($object, $params);
     }
 
@@ -965,18 +990,28 @@ class phpunit_util extends testing_util {
      * @param   int     $level The number of levels of indentation to pad
      * @return  string
      */
-    protected static function pad(string $string, int $level) : string {
+    protected static function pad(string $string, int $level): string {
         return str_repeat(" ", $level * 2) . "{$string}\n";
+    }
+
+    /**
+     * Normalise any text to always use unix line endings (line-feeds).
+     *
+     * @param   string  $text The text to normalize
+     * @return  string
+     */
+    public static function normalise_line_endings(string $text): string {
+        return str_replace(["\r\n", "\r"], "\n", $text);
     }
 
     /**
      * Get the coverage config for the supplied includelist and excludelist configuration.
      *
-     * @param   array[] $includelists The list of files/folders in the includelist.
-     * @param   array[] $excludelists The list of files/folders in the excludelist.
+     * @param   string[] $includelists The list of files/folders in the includelist.
+     * @param   string[] $excludelists The list of files/folders in the excludelist.
      * @return  string
      */
-    protected static function get_coverage_config(array $includelists, array $excludelists) : string {
+    protected static function get_coverage_config(array $includelists, array $excludelists): string {
         $coverages = '';
         if (!empty($includelists)) {
             $coverages .= self::pad("<include>", 2);

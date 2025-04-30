@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'nl', version '4.1'.
+ * Strings for component 'availability', language 'nl', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Voeg beperking toe...';
 $string['and'] = 'en';
 $string['condition_group'] = 'Beperkingenset';
 $string['condition_group_info'] = 'Voeg een reeks geneste beperkingen toe om een complexe logica toe te passen.';
+$string['disabled_verb'] = 'Kan niet worden gewijzigd omdat de regelset een regel met privégegevens bevat.';
+$string['editsettings'] = 'Bewerk beperkingen';
 $string['enableavailability'] = 'Beperkte toegang inschakelen';
 $string['enableavailability_desc'] = 'Wanneer dit ingeschakeld is, dan kun je voorwaarden instellen (gebaseerd op datum, cijfer, voltooid, enz) die controleren wanneer toegang tot een activiteit of bron mogelijk is.';
 $string['error_list_nochildren'] = 'Beperkingssets moeten minstens één voorwaarde bevatten.';

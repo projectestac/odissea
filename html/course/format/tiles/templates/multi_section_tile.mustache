@@ -59,7 +59,8 @@
                         {{#editing}}data-toggle="tooltip" data-placement="left"
                          data-original-title="{{^allowphototiles}}{{#str}}picknewicon, format_tiles{{/str}}{{/allowphototiles}}{{#allowphototiles}}{{#str}}picknewiconphoto, format_tiles{{/str}}{{/allowphototiles}}"
                         {{/editing}}>
-                        {{>format_tiles/tileicon}}
+                        {{#tilenumber}}{{>format_tiles/tilenumber}}{{/tilenumber}}
+                        {{^tilenumber}}{{>format_tiles/tileicon}}{{/tilenumber}}
                     </div>
                     <div class="tiletopright" id="tiletopright-{{tileid}}" aria-hidden="true">
                         {{>format_tiles/progress_spacer}}
@@ -73,7 +74,7 @@
                         data-toggle="tooltip" data-html="true" data-original-title="{{activity_summary}}"
                     {{/usetooltips}}{{/activity_summary}}{{/ismobile}}>
                     <div class="tile-textinner{{titleclass}}" id="tileTextin-{{tileid}}">
-                      {{#title}}<h3>{{{title}}}</h3>{{/title}}
+                        {{#title}}<h3{{^title}} title="{{{tilearialabel}}}"{{/title}}>{{{title}}}</h3>{{/title}}
                     </div>
                     {{#availabilitymessage}}
                         {{>format_tiles/availability_info}}

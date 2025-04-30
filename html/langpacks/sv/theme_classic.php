@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'sv', version '4.1'.
+ * Strings for component 'theme_classic', language 'sv', version '4.4'.
  *
  * @package     theme_classic
  * @category    string

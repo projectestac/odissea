@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'eu', version '4.1'.
+ * Strings for component 'lesson', language 'eu', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -148,7 +148,7 @@ $string['correctresponse'] = 'Erantzun zuzena';
 $string['createaquestionpage'] = 'Sortu galdera-orria';
 $string['credit'] = 'Kreditua';
 $string['customscoring'] = 'Puntuazio pertsonalizatua';
-$string['customscoring_help'] = 'Gaituz gero, erantzun bakoitzari zenbakizko kalifikazioa eman ahal zaio (positiboa edo negatiboa).';
+$string['customscoring_help'] = 'Gaituz gero, erantzun bakoitzari zenbakizko balioa (positiboa edo negatiboa) zehaztu beharko da.';
 $string['deadline'] = 'Itxiera-data';
 $string['defaultessayresponse'] = 'Zure entsegua irakasleak kalifikatuko du.';
 $string['deleteallattempts'] = 'Ezabatu ikasgaiaren saiakera guztiak';
@@ -540,7 +540,7 @@ $string['savechangesandeol'] = 'Gorde aldaketa guztiak eta joan ikasgaiaren amai
 $string['saveoverrideandstay'] = 'Gorde eta sartu beste salbuespen bat';
 $string['savepage'] = 'Gorde orria';
 $string['score'] = 'Puntuazioa';
-$string['score_help'] = 'Puntuazioa soilik puntuazio pertsonalizatua gaituta dagoenean erabiltzen da. Kasu horretan erantzun bakoitzari zenbakizko kalifikazio bat eman dakioke (positiboa edo negatiboa).';
+$string['score_help'] = 'Ikasgaiaren ezarpenetan puntuazio pertsonalizatua gaituta badago, erantzun bakoitzari zenbakizko balioa (positiboa edo negatiboa) zehaztu beharko da.';
 $string['scores'] = 'Puntuazioak';
 $string['search:activity'] = 'Ikasgaia - jardueraren informazioa';
 $string['secondpluswrong'] = 'Ez. Berriz saiatu nahi al duzu?';

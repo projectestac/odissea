@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ru', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ru', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -51,6 +51,7 @@ $string['attempt_success_unknown'] = 'Результат неизвестен';
 $string['attempts'] = 'Попытки';
 $string['attempts_none'] = 'Этот пользователь не совершал попыток';
 $string['attempts_report'] = 'Отчёт о попытках';
+$string['attempts_report_header_label'] = 'Попытки ({$a})';
 $string['choice'] = 'Выбор';
 $string['completion'] = 'Завершение';
 $string['contentbank'] = 'Подробнее о банке контента';
@@ -62,6 +63,8 @@ $string['displayembed'] = 'Кнопка встраивания';
 $string['displayexport'] = 'Разрешить скачивание';
 $string['dnduploadh5pactivity'] = 'Добавить элемент H5P';
 $string['duration'] = 'Продолжительность';
+$string['enablesavestate'] = 'Сохранять состояние';
+$string['enablesavestate_help'] = 'Автоматически сохранять текущее состояние пользователя. Пользователь может вернуться позже и продолжить с того места, на котором остановился.';
 $string['enabletracking'] = 'Включить отслеживание попыток';
 $string['false'] = 'Неверно';
 $string['grade_average_attempt'] = 'Средняя оценка';
@@ -78,6 +81,7 @@ $string['grade_h5p'] = 'Оценка: {$a}';
 $string['grade_highest_attempt'] = 'Высшая оценка';
 $string['grade_last_attempt'] = 'Последняя попытка';
 $string['grade_manual'] = 'Отключить расчет оценки';
+$string['gradenoun_h5p'] = 'Оценка: {$a}';
 $string['h5pactivity:addinstance'] = 'Добавлять новый элемент H5P';
 $string['h5pactivity:reviewattempts'] = 'Просматривать попытки H5P';
 $string['h5pactivity:submit'] = 'Отправлять попытки H5P';
@@ -105,7 +109,7 @@ $string['package_help'] = 'Файл пакета представляет соб
 $string['page-mod-h5pactivity-x'] = 'Любая страница модуля H5P';
 $string['pluginadministration'] = 'Управление H5P (h5pactivity)';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'Этот контент отображается в режиме предварительного просмотра. Отслеживание попыток не будет сохранено.';
+$string['previewmode'] = 'Вы используете режим предварительного просмотра.';
 $string['privacy:metadata:attempt'] = 'Номер попытки';
 $string['privacy:metadata:rawscore'] = 'Оценка получена';
 $string['privacy:metadata:timecreated'] = 'Время создания отслеживаемого элемента';
@@ -113,6 +117,7 @@ $string['privacy:metadata:timemodified'] = 'Последний элемент б
 $string['privacy:metadata:userid'] = 'Идентификатор пользователя, который получил доступ к элементу H5P';
 $string['privacy:metadata:xapi_track'] = 'Информация об отслеживании попытки';
 $string['privacy:metadata:xapi_track_results'] = 'Информация о результатах отслеживания попытки';
+$string['privacy:metadata:xapisummary'] = 'H5P содержит информацию, относящуюся к состоянию содержимого xAPI, сохраненному пользователем.';
 $string['report_viewed'] = 'Отчет просмотрен';
 $string['result_compound'] = 'Комбинированный частичный балл';
 $string['result_fill-in'] = 'Заполнить текст';
@@ -122,12 +127,13 @@ $string['result_other'] = 'Неизвестный тип интерактива'
 $string['result_sequencing_answer'] = 'Значение позиции';
 $string['result_sequencing_choice'] = 'Позиции';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Просмотреть все попытки (представлено - {$a})';
 $string['review_mode'] = 'Просмотр попыток';
 $string['review_my_attempts'] = 'Посмотреть мои попытки';
 $string['review_none'] = 'Участники не могут просматривать свои попытки';
 $string['review_on_completion'] = 'Участники могут просматривать свои попытки';
 $string['review_user_attempts'] = 'Просмотр попыток пользователя ({$a})';
+$string['savestatefreq'] = 'Частота сохранения состояния';
+$string['savestatefreq_help'] = 'Как часто (в секундах) сохранять текущее состояние пользователя.';
 $string['score'] = 'Балл';
 $string['score_out_of'] = '{$a->rawscore} из {$a->maxscore}';
 $string['search:activity'] = 'H5P - информация об активном элементе';
@@ -135,7 +141,10 @@ $string['startdate'] = 'Дата начала';
 $string['statement_received'] = 'xAPI получено';
 $string['totalscore'] = 'Общий балл';
 $string['tracking_messages'] = 'Некоторые элементы H5P предоставляют данные отслеживания попыток для расширенной отчетности, такие как количество попыток, ответов и оценок. Примечание: некоторые элементы H5P не предоставляют данные отслеживания попыток. В таких случаях следующие настройки не будут действовать.';
+$string['trackingdisabled'] = 'Для этого элемента не включено отслеживание попыток.';
+$string['trackingdisabled_enable'] = 'Для этого элемента не включено отслеживание попыток. Вы можете включить его, используя <a href="{$a}">Настройки</a>.';
 $string['true'] = 'Верно';
 $string['usecontentbank'] = 'Для управления файлами H5P используйте <a href="{$a}" target="_blank">банк контента (открывается в новом окне) </a>.';
 $string['view'] = 'Просмотр';
 $string['view_report'] = 'Посмотреть отчет';
+$string['viewattempts'] = 'Просмотр попыток ({$a})';

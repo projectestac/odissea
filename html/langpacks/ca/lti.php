@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ca', version '4.1'.
+ * Strings for component 'lti', language 'ca', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'Accepta qualificacions de l\'eina';
 $string['accept_grades_admin_help'] = 'Especifiqueu si el subministrador de l\'eina pot afegir, actualitzar, llegir i suprimir qualificacions associades amb les instàncies d\'aquesta d\'eina.
 
 Alguns subministradors d\'eines permeten retornar informes de qualificacions a Moodle basades en accions preses dins l\'eina, amb la qual cosa es crea una experiència més integrada.';
+$string['accept_grades_from_tool'] = 'Permet que {$a} afegeixi qualificacions al llibre de qualificacions.';
 $string['accept_grades_help'] = 'Especifiqueu si el subministrador de l\'eina pot afegir, actualitzar, llegir i suprimir qualificacions associades sols amb aquesta instància externa de l\'eina.
 
 Alguns subministradors d\'eina permeten retornar informes de qualificacions a Moodle basades en accions preses dins l\'eina, amb la qual cosa es crea una experiència més integrada.
@@ -44,6 +45,7 @@ $string['active'] = 'Activa';
 $string['activity'] = 'Activitat';
 $string['addnewapp'] = 'Habilita l\'aplicació externa';
 $string['addserver'] = 'Afegeix un servidor fiable nou';
+$string['addtool'] = 'Afegeix eina';
 $string['addtype'] = 'Afegeix una eina preconfigurada';
 $string['allow'] = 'Permet';
 $string['allowsetting'] = 'Permet a l\'eina emmagatzemar 8K de paràmetres a Moodle';
@@ -79,8 +81,11 @@ $string['configtoolurl'] = 'URL de l\'eina remota per defecte';
 $string['configtypes'] = 'Habilita les aplicacions LTI';
 $string['configured'] = 'Configurat';
 $string['confirmtoolactivation'] = 'Confirmeu que voleu activar aquesta eina?';
+$string['contentitem_deeplinking_help'] = 'Si es marca, l\'opció «Selecciona el contingut» estarà disponible quan s\'afegeixi una eina externa.';
 $string['course_tool_types'] = 'Eines del curs';
 $string['courseactivitiesorresources'] = 'Activitats del curs o recursos';
+$string['courseexternaltools'] = 'Eines externes LTI';
+$string['courseexternaltoolsinfo'] = 'Les eines externes LTi són aplicacions que podeu integrar al vostre curs, com ara contingut interactiu o avaluacions. Els vostres alumnes poden accedir-hi i utilitzar-les sense sortir del curs.';
 $string['courseid'] = 'Nombre d\'ID del curs';
 $string['courseinformation'] = 'Informació del curs';
 $string['courselink'] = 'Aneu al curs';
@@ -134,12 +139,18 @@ $string['donotallow'] = 'No ho permetis';
 $string['duplicateregurl'] = 'Aquest URL per al registre ja està en ús';
 $string['dynreg_update_version'] = 'Versió de LTI';
 $string['editdescription'] = 'Feu clic aquí per donar una descripció a aquesta eina';
+$string['editmanualinstancedeprecationwarning'] = 'Les activitats Eina externa configurades manualment ja no són compatibles. No us preocupeu: aquesta activitat seguirà funcionant, però ja no podeu fer canvis a la configuració de l\'eina des d\'aquí.
+<br><br>
+Per a fer qualsevol canvi a l\'eina, o per a crear noves activitats amb aquesta eina, l\'heu d\'afegir al vostre curs a Curs > Més > Eines externes LTI. Llavors podreu crear activitats noves seleccionant l\'eina directament al selector d\'activitats.
+<br><br>
+Podeu llegir més informació sobre com afegir Eines externes LTI a la  <a href="{$a}" target="_blank">documentació</a>.';
 $string['edittype'] = 'Edita l\'eina preconfigurada';
 $string['embed'] = 'Incrustada';
 $string['embed_no_blocks'] = 'Incrustada sense blocs';
 $string['enableemailnotification'] = 'Envia qualificacions per correu';
 $string['enableemailnotification_help'] = 'Si s\'habilita, els alumnes rebran un correu amb els enviaments qualificats.';
 $string['enterkeyandsecret'] = 'Introduïu la vostra clau i contrasenya secreta';
+$string['entitycourseexternaltools'] = 'Eines externes LTI';
 $string['errorbadurl'] = 'L\'URL no és un URL de l\'eina vàlid o cartutx.';
 $string['errormisconfig'] = 'Eina no configurada. Demaneu a l\'administrador de Moodle que arregli la configuració de l\'eina.';
 $string['existing_window'] = 'Finestra existent';
@@ -216,7 +227,6 @@ Depenent del navegador, es pot obrir una finestra emergent o una pestanya.
 
 És possible que alguns navegadors bloquegin l\'obertura de finestres noves.';
 $string['launchoptions'] = 'Opcions de llançament';
-$string['leaveblank'] = 'Deixa en blanc si no ho necessites';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Afegeix configuracions d\'eina de cursos específics.';
 $string['lti:addinstance'] = 'Afegeix una activitat d\'eina externa nova';
@@ -281,6 +291,7 @@ $string['no_tp_configured'] = 'No hi ha registres configurats d\'eines externes 
 $string['no_tp_pending'] = 'No hi ha registres pendents d\'eines externes.';
 $string['no_tp_rejected'] = 'No hi ha registres rebutjats d\'eines externes.';
 $string['noattempts'] = 'No s\'han fet intents amb aquesta eina';
+$string['nocourseexternaltoolsnotice'] = 'Encara no hi ha Eines externes LTI';
 $string['noltis'] = 'No hi ha instàncies d\'eina externa';
 $string['noprofileservice'] = 'No s\'ha trobat el perfil del servei';
 $string['noservers'] = 'No s\'han trobat servidors';
@@ -358,6 +369,8 @@ $string['secure_launch_url'] = 'URL de llançament segur';
 $string['secure_launch_url_help'] = 'Semblant al llançament d\'URL, però utilitzat quan el llançament d\'alta seguretat és obligatori. Moodle utilitzarà el llançament d\'URL segur en lloc del llançament d\'URL si s\'accedeix al lloc Moodle amb SSL, o si l\'eina de configuració està configurada per llançar sempre mitjançant SSL.
 
 El llançament d\'URL es pot configurar també cap a una adreça https de forma obligatòria, i aquest camp es deixarà en blanc.';
+$string['selectcontent'] = 'Selecciona el contingut';
+$string['selectcontentvalidationerror'] = 'Heu de seleccionar contingut per a aquesta activitat.';
 $string['send'] = 'Envia';
 $string['services'] = 'Serveis';
 $string['services_help'] = 'Seleccioneu els serveis que voleu oferir al proveïdor d\'eines. Es pot seleccionar més d\'un servei.';
@@ -390,6 +403,7 @@ $string['show_in_course_lti2'] = 'Ús de l\'eina de configuració';
 $string['show_in_course_lti2_help'] = 'Aquesta eina pot mostrar-se al selector d\'activitats perquè el professor la seleccioni i l\'afegeixi a un curs o en un menú desplegable d\'eines preconfigurades quan s\'afegeix una eina externa a un curs.';
 $string['show_in_course_no'] = 'No ho mostreu; useu-ho sols quan s\'hagi introduït un URL de llançament coincident';
 $string['show_in_course_preconfigured'] = 'Mostra com a eina preconfigurada quan s\'afegeixi una eina externa';
+$string['showinactivitychooser'] = 'Mostra al selector d\'activitats';
 $string['size'] = 'Paràmetres de mida';
 $string['submission'] = 'Tramesa';
 $string['submissions'] = 'Trameses';
@@ -464,6 +478,7 @@ $string['unabletocreatetooltype'] = 'No esteu habilitat per crear eines';
 $string['unabletofindtooltype'] = 'No es pot trobar l\'eina per {$a->id}';
 $string['unknownstate'] = 'Estat desconegut';
 $string['update'] = 'Actualitza';
+$string['usage'] = 'Nombre d\'usos';
 $string['useraccountinformation'] = 'Informació del compte de l\'usuari';
 $string['userpersonalinformation'] = 'Informació personal de l\'usuari';
 $string['using_tool_cartridge'] = 'S\'està usant el cartutx d\'eina';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_downloadsubmissions', language 'ru', version '4.1'.
+ * Strings for component 'quiz_downloadsubmissions', language 'ru', version '4.4'.
  *
  * @package     quiz_downloadsubmissions
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'uk', version '4.1'.
+ * Strings for component 'auth_mnet', language 'uk', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'Аутентифікація Мережі Мудл';
 $string['privacy:metadata:external:mahara'] = 'Цей плагін може надсилати дані назовні до пов’язаної програми Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Цей плагін може надсилати дані назовні до пов’язаної програми Moodle.';
 $string['privacy:metadata:mnet_external:address'] = 'Адреса користувача.';
-$string['privacy:metadata:mnet_external:aim'] = 'Ідентифікатор AIM користувача';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Альтернативне ім\'я для користувача.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Налаштування щодо того, чи має користувач автоматично підписуватися на форуми, на яких публікує повідомлення.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Налаштування користувача для типу календаря, який потрібно використовувати.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Налаштування 
 $string['privacy:metadata:mnet_external:firstaccess'] = 'Час, коли цей користувач вперше зайшов на сайт.';
 $string['privacy:metadata:mnet_external:firstname'] = 'Ім\'я користувача.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Фонетичні відомості про ім’я користувача.';
-$string['privacy:metadata:mnet_external:icq'] = 'Номер ICQ користувача.';
 $string['privacy:metadata:mnet_external:id'] = 'Ідентифікатор користувача';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Ідентифікаційний номер, наданий установою';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Альтернативний текст для зображення користувача.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Фонетичні
 $string['privacy:metadata:mnet_external:maildigest'] = 'Налаштування для дайджесту пошти для цього користувача.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Налаштування для користувача щодо відображення своєї адреси електронної пошти іншим користувачам.';
 $string['privacy:metadata:mnet_external:middlename'] = 'По батькові користувача';
-$string['privacy:metadata:mnet_external:msn'] = 'Ідентифікатор MSN користувача';
 $string['privacy:metadata:mnet_external:phone1'] = 'Номер телефону для користувача.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Додатковий номер телефону для користувача.';
 $string['privacy:metadata:mnet_external:picture'] = 'Деталі зображення, пов’язані з цим користувачем.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Прапор, який визначає, чи погодився користувач із політикою сайту.';
-$string['privacy:metadata:mnet_external:skype'] = 'Ідентифікатор користувача Skype';
 $string['privacy:metadata:mnet_external:suspended'] = 'Прапорець, який показує, чи було призупинено роботу користувача в цій системі.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Часовий пояс користувача';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Надає перевагу форумам і їх відстеження.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Маска довіри';
-$string['privacy:metadata:mnet_external:url'] = 'URL-адреса, пов’язана з цим користувачем.';
 $string['privacy:metadata:mnet_external:username'] = 'Ім\'я користувача для цього користувача.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'Ідентифікатор користувача Yahoo';
 $string['privacy:metadata:mnet_log'] = 'Деталі віддалених дій, які виконує локальний користувач, увійшов у віддалену систему.';
 $string['privacy:metadata:mnet_log:action'] = 'Дія, здійснена користувачем.';
 $string['privacy:metadata:mnet_log:cmid'] = 'ID модуля курсу.';

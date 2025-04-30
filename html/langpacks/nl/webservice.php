@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', version '4.1'.
+ * Strings for component 'webservice', language 'nl', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -152,22 +152,7 @@ $string['postrestparam'] = 'PHP-code voor REST (POST request)';
 $string['potusers'] = 'Niet-geauthoriseerde gebruikers';
 $string['potusersmatching'] = 'Overeenkomstige niet-geauthoriseerde gebruikers';
 $string['print'] = 'Druk alles af';
-$string['privacy:metadata:serviceusers'] = 'Een lijst met gebruikers die bepaalde externe services kunnen gebruiken';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP beperkt om de service te gebruiken';
-$string['privacy:metadata:serviceusers:timecreated'] = 'De datum waarop de record gemaakt is';
-$string['privacy:metadata:serviceusers:userid'] = 'De ID van de gebruiker';
-$string['privacy:metadata:serviceusers:validuntil'] = 'De datum waarop de autorisatie eindigt';
-$string['privacy:metadata:tokens'] = 'Een record met tokens om te interageren met Moodle via web service of mobiele applicaties.';
-$string['privacy:metadata:tokens:creatorid'] = 'De ID van de gebruiker die het token gemaakt heeft';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP beperkt om dit token te gebruiken';
-$string['privacy:metadata:tokens:lastaccess'] = 'De datum waarop dit token de laatste keer gebruikt is';
-$string['privacy:metadata:tokens:privatetoken'] = 'Een meer privaat token dat occasioneel gebruikt wordt om bepaalde operaties te valideren, zoals een SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'De datum waarop dit token is gemaakt';
-$string['privacy:metadata:tokens:token'] = 'Het token van een gebruiker';
-$string['privacy:metadata:tokens:tokentype'] = 'Het token type';
-$string['privacy:metadata:tokens:userid'] = 'De ID van de gebruiker van wie dit token is';
-$string['privacy:metadata:tokens:validuntil'] = 'De geldigheidsdatum van dit token';
-$string['privacy:request:notexportedsecurity'] = 'Niet geëxporteerd om veiligheidsredenen';
+$string['privacy:metadata'] = 'De WebService API slaat geen gegevens op';
 $string['protocol'] = 'Protocol';
 $string['removefunction'] = 'Verwijder';
 $string['removefunctionconfirm'] = 'Wil je echt de functie "{$a->function}"  van service "{$a->service}" verwijderen?';
@@ -216,11 +201,16 @@ $string['testwithtestclient'] = 'Test de service';
 $string['testwithtestclientdescription'] = 'Simuleer externe toegang tot de service met de webservice testclient. Gebruik een ingeschakeld protocol met tokenauthenticatie.<strong>Waarschuwing: de functies die je test ZULLEN UITGEVOERD WORDEN. Wees voorzichtig met wat je kiest om te testen</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Tokenauthenticatie';
+$string['tokencopied'] = 'Tekst gekopieerd naar klembord.';
 $string['tokencreatedbyadmin'] = 'Kan enkel door de beheerder gereset worden (*)';
 $string['tokencreator'] = 'Aanmaker';
 $string['tokenfilter'] = 'Tokens filter';
 $string['tokenfilterreset'] = 'Toon alle tokens';
 $string['tokenfiltersubmit'] = 'Toon alleen overeenkomende tokens';
+$string['tokenname'] = 'Naam';
+$string['tokennamehint'] = 'Als je geen naam invoert, wordt een willekeurige naam gebruikt.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Kopieer het token nu. Het wordt niet meer getoond als je deze pagina verlaat.';
 $string['unknownoptionkey'] = 'Onbekende optiesleutel ({$a})';
 $string['unnamedstringparam'] = 'Een stringparameter heeft geen naam.';
 $string['updateusersettings'] = 'Update';
@@ -231,12 +221,11 @@ $string['userasclientsdescription'] = 'Volgende stappen helpen je met het config
 $string['usermissingcaps'] = 'Ontbrekende mogelijkheden: {$a}';
 $string['usernameorid'] = 'Gebruikersnaam / gebruikersID';
 $string['usernameorid_help'] = 'Geef een gebruikersnaam of gebruikersID';
-$string['usernameoridnousererror'] = 'Er werden geen gebruikers gevonden met deze gebruikersnaam / gebruikersID';
-$string['usernameoridoccurenceerror'] = 'Meer dan één gebruiker is gevonden met deze gebruikersnaam. Geef de gebruikersID';
 $string['usernotallowed'] = 'De gebruiker heeft geen rechten voor deze service. Eerst moet je deze gebruiker recht geven op de {$a} toegelaten gebruikers beheer pagina';
 $string['userservices'] = 'Gebruikersservices: {$a}';
 $string['usersettingssaved'] = 'Gebruikersingstellingen bewaard';
 $string['validuntil'] = 'Geldig tot';
+$string['validuntil_empty'] = 'Dit token heeft geen vervaldatum.';
 $string['validuntil_help'] = 'Indien ingesteld zal de service voor deze gebruiker uitgeschakeld worden na deze datum';
 $string['webservice'] = 'Webservice';
 $string['webservices'] = 'Webservices';

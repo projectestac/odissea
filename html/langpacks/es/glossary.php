@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', version '4.1'.
+ * Strings for component 'glossary', language 'es', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -86,7 +86,7 @@ $string['cnfapprovalstatus'] = 'Define el estado por defecto de las entradas col
 $string['cnfcasesensitive'] = 'Define si una entrada, cuando enlaza, es sensible al uso de mayúsculas y minúsculas';
 $string['cnfdefaulthook'] = 'Seleccione la visualización por defecto para presentar al glosario por primera vez';
 $string['cnfdefaultmode'] = 'Seleccione el marco por defecto para presentar al glosario por primera vez';
-$string['cnffullmatch'] = 'Define si una entrada, cuando enlaza, debe coincidir exactamente en mayúsculas y minúsculas con el texto de destino, por defecto';
+$string['cnffullmatch'] = 'Define si una entrada, cuando enlaza, debe coincidir palabras completas (y no palabras incluídas dentro de otras), por defecto';
 $string['cnflinkentry'] = 'Define si una entrada debe ser automáticamente convertida en enlace, por defecto';
 $string['cnflinkglossaries'] = 'Define si un glosario debe ser enlazado automáticamente, por defecto';
 $string['cnfrelatedview'] = 'Seleccione el formato de visualización para el enlace automático y la vista de entradas.';
@@ -101,7 +101,7 @@ $string['comments'] = 'Comentarios';
 $string['commentson'] = 'Comentarios sobre';
 $string['commentupdated'] = 'Este comentario se ha actualizado';
 $string['completiondetail:entries'] = 'Crear entradas: {$a}';
-$string['completionentries'] = 'El estudiante debe crear entradas:';
+$string['completionentries'] = 'Crear entradas';
 $string['completionentriesdesc'] = 'El estudiante debe crear al menos {$a} entrada/s';
 $string['completionentriesgroup'] = 'Requerir entradas';
 $string['concept'] = 'Concepto';
@@ -312,6 +312,7 @@ $string['page-mod-glossary-edit'] = 'Página añadir/editar entrada de glosario'
 $string['page-mod-glossary-view'] = 'Ver la página de edición del glosario';
 $string['page-mod-glossary-x'] = 'Cualquier página del módulo Glosario';
 $string['pendingapproval'] = 'Pendiente de aprobación.';
+$string['pendingapprovalcount'] = 'Pendiente de aprobación ({$a})';
 $string['pluginadministration'] = 'Administración del glosario';
 $string['pluginname'] = 'Glosario';
 $string['popupformat'] = 'Formato \'popup\'';
@@ -375,7 +376,6 @@ $string['totalentries'] = 'Total de entradas';
 $string['usedynalink'] = 'Enlace automático a las entradas del glosario';
 $string['usedynalink_help'] = 'Si el <strong>Enlace automático al glosario</strong> ha sido habilitada por un administrador y esta opción está activada, la opción del formulario "Agregar una nueva entrada" permite vincular automáticamente las palabras y frases del concepto allá donde aparezcan en el resto del curso.';
 $string['visibletabs'] = 'Pestañas visibles';
-$string['waitingapproval'] = 'Esperando aprobación';
 $string['warningstudentcapost'] = '(Esto sólo aplica si el glosario no es el principal)';
 $string['withauthor'] = 'Conceptos con autor';
 $string['withoutauthor'] = 'Conceptos sin autor';

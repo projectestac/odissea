@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'de', version '4.1'.
+ * Strings for component 'forum', language 'de', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Alle Foren abonnieren';
 $string['allunsubscribe'] = 'Alle Foren abbestellen';
 $string['allusers'] = 'Alle Nutzer/innen';
 $string['alreadyfirstpost'] = 'Dies ist der erste Beitrag zu diesem Thema.';
+$string['announcementsettings'] = 'Standardeinstellungen für Nachrichtenforen';
+$string['announcementsettings_help'] = 'Diese Einstellungen legen die Standards für alle Nachrichtenforen fes.';
 $string['anyfile'] = 'Beliebige Datei';
 $string['areaattachment'] = 'Anhänge';
 $string['areapost'] = 'Mitteilungen';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'In diesem Zeitfenster dürfen maximal so viele Be
 $string['blockperioddisabled'] = 'Nicht sperren';
 $string['blogforum'] = 'Standardforum in blog-ähnlicher Anzeige';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Anzahl von Forenthemen';
 $string['cachedef_forum_is_tracked'] = 'Forumstracking-Status für den Nutzer';
 $string['calendardue'] = '{$a} ist fällig.';
 $string['cancelreply'] = 'Antwort abbrechen';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Bewertung schließen';
 $string['completiondetail:discussions'] = 'Themen hinzufügen: {$a}';
 $string['completiondetail:posts'] = 'Beiträge verfassen: {$a}';
 $string['completiondetail:replies'] = 'Antworten senden: {$a}';
-$string['completiondiscussions'] = 'Teilnehmer/in muss ein Thema neu beginnen:';
+$string['completiondiscussions'] = 'Themen neu beginnen:';
 $string['completiondiscussionsdesc'] = 'Teilnehmer/in muss mindestens {$a} Themen anlegen';
 $string['completiondiscussionsgroup'] = 'Themen erforderlich';
 $string['completiondiscussionshelp'] = 'Zum Abschluss sind Themen erforderlich';
-$string['completionposts'] = 'Teilnehmer/in muss ein Thema neu beginnen oder Antworten verfassen:';
+$string['completionposts'] = 'Themen neu beginnen oder Antworten verfassen:';
 $string['completionpostsdesc'] = 'Teilnehmer/in muss mindestens {$a} Themen oder Antworten beitragen';
 $string['completionpostsgroup'] = 'Forumsbeiträge erforderlich';
 $string['completionpostshelp'] = 'Zum Abschluss sind Themen oder Antworten erforderlich';
-$string['completionreplies'] = 'Teilnehmer/in muss Antworten verfassen:';
+$string['completionpostsinforums'] = 'Beiträge in Foren';
+$string['completionreplies'] = 'Antworten verfassen:';
 $string['completionrepliesdesc'] = 'Teilnehmer/in muss mindestens {$a} Antworten verfassen';
 $string['completionrepliesgroup'] = 'Antworten erforderlich';
 $string['completionreplieshelp'] = 'Zum Abschluss sind Antworten erforderlich';
@@ -261,6 +265,7 @@ $string['eventassessableuploaded'] = 'Inhalte wurden bereitgestellt';
 $string['eventcoursesearched'] = 'Kurs durchsucht';
 $string['eventdiscussioncreated'] = 'Thema angelegt';
 $string['eventdiscussiondeleted'] = 'Thema gelöscht';
+$string['eventdiscussionlockupdated'] = 'Diskussionssperre aktualisiert';
 $string['eventdiscussionmoved'] = 'Thema verschoben';
 $string['eventdiscussionpinned'] = 'Thema angepinnt';
 $string['eventdiscussionsubscriptioncreated'] = 'Themenabonnement angelegt';
@@ -268,6 +273,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Themenabonnement gelöscht';
 $string['eventdiscussionunpinned'] = 'Thema losgelöst';
 $string['eventdiscussionupdated'] = 'Thema aktualisiert';
 $string['eventdiscussionviewed'] = 'Thema angezeigt';
+$string['eventforumsubscriptionupdated'] = 'Abonnement aktualisiert';
 $string['eventpostcreated'] = 'Beitrag angelegt';
 $string['eventpostdeleted'] = 'Beitrag gelöscht';
 $string['eventpostupdated'] = 'Beitrag aktualisiert';
@@ -302,6 +308,7 @@ $string['forum:addinstance'] = 'Neues Forum hinzufügen';
 $string['forum:addnews'] = 'Ankündigungen hinzufügen';
 $string['forum:addquestion'] = 'Frage hinzufügen';
 $string['forum:allowforcesubscribe'] = 'Erzwungenes Abonnement erlauben';
+$string['forum:canmailnow'] = 'Kann im Frage/Antwort-Forum ohne Verzögerung posten';
 $string['forum:canoverridecutoff'] = 'Nach dem letzten Eingabetermin ins Forum schreiben';
 $string['forum:canoverridediscussionlock'] = 'In gesperrten Themen antworten';
 $string['forum:canposttomygroups'] = 'Beiträge an alle Gruppen senden, zu denen Sie Zugriff hat';
@@ -489,7 +496,8 @@ $string['noattachments'] = 'Die Nachricht hat keine Anhänge';
 $string['nodiscussions'] = 'Keine Themen im Forum';
 $string['nodiscussionsstartedby'] = '\'{$a}\' hat noch kein Thema begonnen';
 $string['nodiscussionsstartedbyyou'] = 'Sie haben noch kein Thema begonnen';
-$string['noguestpost'] = 'Gäste dürfen keine Forumsbeiträge schreiben.';
+$string['noguestpost'] = 'Nur angemeldete Personen dürfen Forumsbeiträge schreiben.';
+$string['noguestpost:title'] = 'Anmelden zum Fortsetzen';
 $string['noguestsubscribe'] = 'Gäste können das Forum nicht abonnieren.';
 $string['noguesttracking'] = 'Gäste dürfen keine Einstellungen vornehmen.';
 $string['nomorepostscontaining'] = 'Es wurden keine weiteren Beiträge mit \'{$a}\' gefunden.';
@@ -548,9 +556,6 @@ $string['postbyuser'] = '{$a->post} von {$a->user}';
 $string['postincontext'] = 'Diskussion im Forum zeigen';
 $string['postisprivatereply'] = 'Dies ist eine private Antwort. (Trainer/nnen und Personen mit dem Recht "Private Antworten anzeigen" können diese ebenfalls sehen.)';
 $string['postmailinfo'] = 'Dies ist eine Kopie einer Mitteilung, die in \'{$a}\' gepostet wurde.';
-$string['postmailinfolink'] = 'Diese Mitteilung kommt aus dem Kurs \'{$a->coursename}\'.
-
-Antworten Sie über diesen Link: {$a->replylink}';
 $string['postmailnow'] = 'Dieser Beitrag wird direkt als E-Mail an alle Abonnent/innen des Forums versendet.';
 $string['postmailreply'] = 'Zum Antworten klicken Sie auf diesen Link: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

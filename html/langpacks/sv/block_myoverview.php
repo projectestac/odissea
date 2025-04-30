@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'sv', version '4.1'.
+ * Strings for component 'block_myoverview', language 'sv', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,20 +44,16 @@ $string['aria:groupingdropdown'] = 'Gruppindelningsmeny';
 $string['aria:hiddencourses'] = 'Visa arkiverade kurser';
 $string['aria:hidecourse'] = 'Dölj {$a}';
 $string['aria:inprogress'] = 'Visa pågående kurser';
-$string['aria:lastaccessed'] = 'Sortera kurserna efter senaste besök';
 $string['aria:list'] = 'Visa som lista';
 $string['aria:past'] = 'Visa tidigare kurser';
 $string['aria:removefromfavourites'] = 'Ta bort från Favoriter';
-$string['aria:shortname'] = 'Sortera kurser efter kortnamn';
 $string['aria:showcourse'] = 'Återställ {$a} till synlig';
 $string['aria:sortingdropdown'] = 'Sorteringsmeny';
 $string['aria:summary'] = 'Visa kurssammanfattning';
-$string['aria:title'] = 'Sortera efter kursnamn';
 $string['availablegroupings'] = 'Tillgängliga filter';
 $string['availablegroupings_desc'] = 'Kursfilter som är tillgängliga för användare. Om inget är markerat kommer alla kurser att visas.';
 $string['card'] = 'Kort';
 $string['cards'] = 'Kort';
-$string['clearsearch'] = 'Rensa sökning';
 $string['completepercent'] = '{$a}% slutförd';
 $string['courseprogress'] = 'Kursförlopp:';
 $string['customfield'] = 'Anpassat fält';

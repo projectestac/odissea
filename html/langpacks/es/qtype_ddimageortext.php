@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'es', version '4.1'.
+ * Strings for component 'qtype_ddimageortext', language 'es', version '4.4'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -43,9 +43,9 @@ $string['dropzone'] = 'Zona para soltar {$a}';
 $string['dropzoneheader'] = 'Zonas para soltar';
 $string['formerror_disallowedtags'] = 'Solo etiquetas "{$a}" están permitidas en este texto arrastrable.';
 $string['formerror_dragrequired'] = 'Debe añadir al menos un elemento arrastrable a esta pregunta.';
-$string['formerror_droprequired'] = 'Debe definir al menos una zona de arrastre para esta pregunta.';
-$string['formerror_multipledraginstance'] = 'Ha seleccionado esta imagen {$a} más de una vez como elección correcta para una zona pero no está marcada para ser un elemento arrastable ilimitado.';
-$string['formerror_multipledraginstance2'] = 'Ha seleccionado esta imagen más de una vez como opción correcta para una zona pero no está marcada para ser un elemento arrastable ilimitado.';
+$string['formerror_droprequired'] = 'Debe definir al menos una zona para soltar para esta pregunta.';
+$string['formerror_multipledraginstance'] = 'Ha seleccionado esta imagen {$a} más de una vez como la opción correcta para una zona para soltar, pero no está marcada como un elemento arrastrable ilimitado.';
+$string['formerror_multipledraginstance2'] = 'Ha seleccionado esta imagen más de una vez como la opción correcta para una zona para soltar, pero no está marcada como un elemento arrastrable ilimitado.';
 $string['formerror_noallowedtags'] = 'Las etiquetas HTML no están permitidas en el texto que es el texto alternativo para una imagen arrastrable.';
 $string['formerror_nobgimage'] = 'Tiene que seleccionar una imagen para usarla como el fondo para el área de arrastrar y soltar.';
 $string['formerror_nofile'] = 'Necesita subir o seleccionar un archivo para usarlo aquí.';
@@ -68,7 +68,7 @@ $string['pluginnamesummary'] = 'Las imágenes o etiquetas de texto son arrastrad
 
 Nota: Este tipo de pregunta no es accesible para usuarios con problemas visuales.';
 $string['previewareaheader'] = 'Vista Previa';
-$string['previewareamessage'] = 'Seleccione una imagen de fondo, especifique los elementos que se pueden arrastrar y defina las zonas de colocación sobre las que deben ser arrastrados.';
+$string['previewareamessage'] = 'Seleccione una imagen de fondo, especifique elementos que puedan ser arrastrados y defina las zonas para soltar sobre de la imagen de fondo adonde deben ser arrastrados.';
 $string['privacy:metadata'] = 'El plugin del tipo de pregunta arrastrar y soltar sobre una imagen permite a los autores de preguntas definir opciones por defecto como preferencias de usuario.';
 $string['privacy:preference:defaultmark'] = 'La puntuación por defecto para una pregunta dada.';
 $string['privacy:preference:penalty'] = 'La penalización para cada intento incorrecto cuando la pregunta se usa con los comportamientos \'Interactivo con varios intentos\' o \'Modo adaptativo\'.';

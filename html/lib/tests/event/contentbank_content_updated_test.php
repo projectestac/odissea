@@ -34,7 +34,7 @@ namespace core\event;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @coversDefaultClass \core\event\contentbank_content_updated
  */
-class contentbank_content_updated_test extends \advanced_testcase {
+final class contentbank_content_updated_test extends \advanced_testcase {
 
     /**
      * Setup to ensure that fixtures are loaded.
@@ -51,7 +51,7 @@ class contentbank_content_updated_test extends \advanced_testcase {
      *
      * @covers ::create_from_record
      */
-    public function test_content_updated() {
+    public function test_content_updated(): void {
 
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -60,6 +60,7 @@ class contentbank_content_updated_test extends \advanced_testcase {
         $systemcontext = \context_system::instance();
 
         // Create a content bank content.
+        /** @var \core_contentbank_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('core_contentbank');
         $contents = $generator->generate_contentbank_data('contenttype_testable', 1);
         $content = array_shift($contents);

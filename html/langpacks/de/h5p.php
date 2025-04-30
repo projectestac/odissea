@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'de', version '4.1'.
+ * Strings for component 'h5p', language 'de', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -50,6 +50,7 @@ $string['authorname'] = 'Autorenname';
 $string['authorrole'] = 'Autorenrolle';
 $string['back'] = 'Zurück';
 $string['by'] = 'von';
+$string['cancelCrop'] = 'Zuschneiden abbrechen';
 $string['cancelPublishConfirmationDialogCancelButtonText'] = 'Nein';
 $string['cancelPublishConfirmationDialogConfirmButtonText'] = 'Ja';
 $string['cancelPublishConfirmationDialogDescription'] = 'Möchten Sie wirklich die Freigabe abbrechen?';
@@ -69,6 +70,7 @@ $string['changelog'] = 'Änderungsverlauf';
 $string['changeplaceholder'] = 'Foto beschnitten, Text geändert, usw.';
 $string['city'] = 'Stadt';
 $string['close'] = 'Schließen';
+$string['confirmCrop'] = 'Zuschneiden bestätigen';
 $string['confirmdialogbody'] = 'Möchten Sie wirklich fortfahren? Die Aktion kann nicht zurückgenommen werden.';
 $string['confirmdialogheader'] = 'Aktion bestätigen';
 $string['confirmlabel'] = 'Bestätigen';
@@ -92,6 +94,7 @@ $string['couldNotParseJSONFromZip'] = 'JSON kann nicht aus dem Paket analysiert 
 $string['couldNotReadFileFromZip'] = 'Datei aus dem Paket kann nicht gelesen werden: {$a->%fileName}';
 $string['country'] = 'Land';
 $string['creativecommons'] = 'Creative Commons';
+$string['cropImage'] = 'Bild zuschneiden';
 $string['currentStep'] = 'Schritt :step von :total';
 $string['date'] = 'Datum';
 $string['deletelibraryconfirm'] = '<p>Möchten Sie wirklich Version <em>\'{$a->version}\'</em> der Bibliothek <em>\'{$a->name}\'</em> entfernen? Dies löscht die Bibliothek und alle Inhalte, in denen sie verwendet wurde.</p><p>Diese Aktion kann nicht rückgängig gemacht werden!</p>';
@@ -127,6 +130,8 @@ $string['filter_displayh5p_description'] = 'Der Filter \'H5P anzeigen\' wandelt 
 $string['fullscreen'] = 'Vollbild';
 $string['gpl'] = 'General Public License v3';
 $string['h5p'] = 'H5P';
+$string['h5pcustomcss'] = 'Nutzerdefiniertes CSS';
+$string['h5pcustomcss_help'] = 'CSS zur Verwendung für die H5P-Inhalte';
 $string['h5peditor'] = 'H5P-Editor';
 $string['h5pfilenotfound'] = 'H5P-Datei nicht gefunden';
 $string['h5pinvalidurl'] = 'Ungültige URL zum H5P-Inhalt';
@@ -139,6 +144,7 @@ $string['h5ppackage_help'] = 'Ein H5P-Inhaltstyp ist eine Datei mit einer H5P- o
 $string['h5pprivatefile'] = 'Dieser H5P-Inhalt kann nicht angezeigt werden, da Sie keinen Zugriff auf die H5P-Datei haben.';
 $string['h5psettings'] = 'H5P-Einstellungen';
 $string['h5ptitle'] = 'Besuchen Sie h5p.org, um weitere inhalte zu sehen.';
+$string['height'] = 'Höhe';
 $string['helpChoosingLicense'] = 'Hilfe, um eine Lizenz auszuwählen';
 $string['hideadvanced'] = 'Erweitert ausblenden';
 $string['icon'] = 'Icon';
@@ -207,6 +213,7 @@ $string['missinglibrary'] = 'Fehlende erforderliche Bibliothek {$a->@library}';
 $string['missinglibraryfile'] = 'Die Datei "{$a->%file}" fehlt in der Bibliothek: "{$a->%name}"';
 $string['missinglibraryjson'] = 'Für die Bibliothek {$a->%name} konnte die Datei library.json nicht mit dem gültigen json-Format gefunden werden.';
 $string['missinglibraryproperty'] = 'Die erforderliche Eigenschaft {$a->%property} fehlt in {$a ->%library}';
+$string['missingmainlibrary'] = 'Fehlende Biliothek {$a->@library}';
 $string['missingmbstring'] = 'Die PHP-Extension mbstring ist nicht geladen. H5P benötigt diese Extension, um richtig zu funktionieren.';
 $string['missinguploadpermissions'] = 'Beachten Sie, dass in der von Ihnen hochgeladenen Datei möglicherweise Bibliotheken enthalten sind, aber dass Sie keine neuen Bibliotheken hochladen dürfen. Wenden Sie sich hierzu an Administrator/innen der Website.';
 $string['next'] = 'Nächste';
@@ -253,6 +260,8 @@ $string['reviewAndSave'] = 'Überprüfen und Speichern';
 $string['reviewAndShare'] = 'Überprüfen und Teilen';
 $string['reviewInfo'] = 'Überprüfungsinfos';
 $string['reviewMessage'] = 'Überprüfen Sie bitte die folgenden Infos, bevor Sie teilen';
+$string['rotateLeft'] = 'Nach links drehen';
+$string['rotateRight'] = 'Nach rechts drehen';
 $string['saveChanges'] = 'Änderungen speichern';
 $string['screenshots'] = 'Bildschirmfotos';
 $string['screenshotsDescription'] = 'Fügen Sie bis zu fünf Bildschirmfotos zu Ihrem Inhalt hinzu';
@@ -288,6 +297,7 @@ $string['updatedlibraries'] = '{$a->%old} H5P-Bibliotheken aktualisiert.';
 $string['updatedlibrary'] = '{$a->%old} H5P-Bibliothek aktualisiert.';
 $string['uploadlibraries'] = 'Hochladen von H5P-Inhaltstypen';
 $string['uploadsuccess'] = 'H5P-Inhaltstypen erfolgreich hochgeladen';
+$string['width'] = 'Breite';
 $string['wrongversion'] = 'Die in diesem Inhalt verwendete Version der H5P-Bibliothek {$a->%machineName} ist ungültig. Der Inhalt enthält {$a->%contentLibrary}, sollte jedoch {$a->%semanticsLibrary} sein.';
 $string['year'] = 'Jahr';
 $string['years'] = 'Jahre';

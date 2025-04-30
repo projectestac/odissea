@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ru', version '4.1'.
+ * Strings for component 'license', language 'ru', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,12 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = 'Все права защищены';
 $string['cannotdeletecore'] = 'Невозможно удалить стандартную лицензию';
 $string['cannotdeletelicenseinuse'] = 'Невозможно удалить лицензию, которая в настоящее время назначена одному или нескольким файлам.';
-$string['cc'] = 'Creative Commons';
-$string['cc-nc'] = 'Creative Commons - некоммерческая';
-$string['cc-nc-nd'] = 'Creative Commons - некоммерческая, без производных';
-$string['cc-nc-sa'] = 'Creative Commons - некоммерческая, с сохранением условий';
-$string['cc-nd'] = 'Creative Commons - без производных';
-$string['cc-sa'] = 'Creative Commons - с сохранением условий';
+$string['cc'] = 'Creative Commons - 3.0 Международная';
+$string['cc-4.0'] = 'Creative Commons - 3.0 Международная';
+$string['cc-nc'] = 'Creative Commons - Некоммерческая 3.0 Международная';
+$string['cc-nc-4.0'] = 'Creative Commons - Некоммерческая 4.0 Международная';
+$string['cc-nc-nd'] = 'Creative Commons - Некоммерческая-Без производных 3.0 Международная';
+$string['cc-nc-nd-4.0'] = 'Creative Commons - Некоммерческая-Без производных 4.0 Международная';
+$string['cc-nc-sa'] = 'Creative Commons - Некоммерческая-С сохранением условий 3.0 Международная';
+$string['cc-nc-sa-4.0'] = 'Creative Commons - Некоммерческая-С сохранением условий 4.0 Международная';
+$string['cc-nd'] = 'Creative Commons - Без производных 3.0 Международная';
+$string['cc-nd-4.0'] = 'Creative Commons - Без производных 4.0 Международная';
+$string['cc-sa'] = 'Creative Commons - С сохранением условий 3.0 Международная';
+$string['cc-sa-4.0'] = 'Creative Commons - С сохранением условий 4.0 Международная';
 $string['licensenotfoundshortname'] = 'Не удается найти лицензию с коротким названием «{$a}»';
 $string['missinglicensesortorder'] = 'Невозможно установить порядок лицензий, одна или несколько установленных лицензий отсутствуют в новом перечне';
 $string['public'] = 'Общественное достояние';

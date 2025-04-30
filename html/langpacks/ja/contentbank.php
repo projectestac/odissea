@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ja', version '4.1'.
+ * Strings for component 'contentbank', language 'ja', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = '作成者';
 $string['choosecontext'] = 'コースまたはカテゴリを選択する ...';
-$string['close'] = '閉じる';
 $string['contentbank'] = 'コンテンツバンク';
 $string['contentbankpreferences'] = 'コンテンツバンクプレファレンス';
+$string['contentcopied'] = 'コンテンツがコピーされました。';
+$string['contentcreated'] = 'コンテンツが作成されました。';
 $string['contentdeleted'] = 'コンテンツが削除されました。';
 $string['contentname'] = 'コンテンツ名';
 $string['contentnotdeleted'] = 'コンテンツの削除中にエラーが発生しました。';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'コンテンツがリネームされました。';
 $string['contentsmoved'] = 'コンテンツバンクのコンテンツが {$a} に移動されました。';
 $string['contenttypenoaccess'] = 'あなたはこの {$a} インスタンスを閲覧できません。';
 $string['contenttypenoedit'] = 'あなたはこのコンテンツを編集できません。';
+$string['contentupdated'] = 'コンテンツが更新されました。';
 $string['contentvisibilitychanged'] = 'コンテンツが {$a} にされました。';
 $string['contentvisibilitynotset'] = 'コンテンツ可視性の設定中にエラーが発生しました。';
 $string['contextnotallowed'] = 'あなたはこのコンテクストではコンテンツバンクにアクセスできません。';
+$string['copycontent'] = 'コンテンツをコピーする';
+$string['copyof'] = '{$a} のコピー';
 $string['deletecontent'] = 'コンテンツを削除する';
 $string['deletecontentconfirm'] = '本当にコンテンツ「 {$a->name} 」およびすべての関連ファイルを削除してもよろしいですか?  この操作は元に戻せません。';
 $string['deletecontentconfirmlinked'] = 'コンテンツバンクからコンテンツのみ削除されます。現在コンテンツにリンクされているすべての場所は代わりにコンテンツのコピーを使用するよう自動更新されます。';
@@ -64,6 +68,7 @@ $string['more'] = 'さらに';
 $string['name'] = 'コンテンツ';
 $string['nocontentavailable'] = '利用可能コンテンツなし';
 $string['nocontenttypes'] = '利用可能なコンテンツタイプはありません。';
+$string['nopermissiontocopy'] = 'あなたにはコンテンツをコピーするためのパーミッションがありません。';
 $string['nopermissiontodelete'] = 'あなたにはコンテンツを削除するためのパーミッションがありません。';
 $string['nopermissiontomanage'] = 'あなたにはコンテンツを管理するためのパーミッションがありません。';
 $string['notavailable'] = '申し訳ございません。このコンテンツは利用できません。';

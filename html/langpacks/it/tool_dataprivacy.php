@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'it', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'it', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Aggiungi categoria';
 $string['addnewdefaults'] = 'Aggiungi un nuovo modulo di default';
 $string['addpurpose'] = 'Aggiungi finalità';
 $string['addroleoverride'] = 'Aggiungi eccezione sul ruolo';
+$string['allowfiltering'] = 'Consenti il filtraggio delle esportazioni per corso';
+$string['allowfiltering_desc'] = 'Il responsabile della privacy potrà scegliere di esportare i dati utente da corsi selezionati anziché da tutti i corsi. Abilitando questa funzionalità, le richieste di esportazione inizieranno da "In sospeso" e potranno essere approvate solo dopo il completamento di un\'attività in background.';
 $string['approve'] = 'Approva';
 $string['approvedrequestsubmitted'] = 'La richiesta è stata inviata e sarà elaborata appena possibile.';
 $string['approverequest'] = 'Approva richiesta';
+$string['approverequestall'] = 'Approva richiesta (tutti i dati)';
+$string['approveselectedcourses'] = 'Approva i corsi slezionati';
 $string['automaticdatadeletionapproval'] = 'Approvazione della richiesta di eliminazione automatica dei dati';
 $string['automaticdatadeletionapproval_desc'] = 'Se abilitato, le richieste di eliminazione dei dati vengono approvate automaticamente.<br/>Tenere presente che l\'approvazione automatica si applicherà solo alle nuove richieste di eliminazione dei dati con questa impostazione abilitata. Le richieste di eliminazione dei dati esistenti in attesa di approvazione dovranno comunque essere approvate manualmente dal responsabile della privacy.';
 $string['automaticdataexportapproval'] = 'Approvazione automatica della richiesta di esportazione dei dati';
@@ -153,6 +157,7 @@ $string['errorinvalidrequeststatus'] = 'Stato della richiesta non valido!';
 $string['errorinvalidrequesttype'] = 'Tipo di richiesta non valido!';
 $string['errornocapabilitytorequestforothers'] = 'L\'utente {$a->requestedby} non ha il privilegio di richiedere di dati nelle veci dell\'utente {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Non sono presenti contesti scaduti da elaborare';
+$string['errornoselectedcourse'] = 'Devi scegliere almeno un corso';
 $string['errorrequestalreadyexists'] = 'Hai già effettuato una richiesta.';
 $string['errorrequestnotfound'] = 'La richiesta non è stata trovata';
 $string['errorrequestnotwaitingforapproval'] = 'La richiesta non è in attesa di approvazione. Può non essere ancora pronta oppure è stata già elaborata.';
@@ -169,6 +174,7 @@ $string['expiry'] = 'Scadenza';
 $string['explanationtitle'] = 'Icone usate in questa pagina e loro significato';
 $string['external'] = 'Aggiuntivo';
 $string['externalexplanation'] = 'Plugin aggiuntivo installato';
+$string['filterexportdata'] = 'Approva richiesta (dati dai corsi selezionati)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Corso della pagina home del sito';
 $string['gdpr_art_6_1_a_description'] = 'L’interessato ha espresso il consenso al trattamento dei propri dati personali per una o più specifiche finalità';
@@ -226,6 +232,7 @@ $string['noassignedroles'] = 'Non ci sono ruoli assegnato in questo contesto';
 $string['noblockstoload'] = 'Non ci sono blocchi';
 $string['nocategories'] = 'Non sono presenti categorie';
 $string['nocoursestoload'] = 'Non ci sono attività';
+$string['nocoursetofilter'] = 'L\'utente non è iscritto ad alcun corso da selezionare';
 $string['nodatarequests'] = 'Non sono presenti richieste di dati';
 $string['nodatarequestsmatchingfilter'] = 'Il filtro impostato non ha trovato richieste di dati';
 $string['noexpiredcontexts'] = 'In questo contesto non sono presenti dati per i quali è scaduto il tempo di conservazione.';
@@ -287,6 +294,7 @@ $string['requesttype_help'] = 'Inserisci per quale motivo desideri contattare il
 $string['requesttypedelete'] = 'Eliminazione dati personali';
 $string['requesttypedeleteshort'] = 'Eliminazione';
 $string['requesttypeexport'] = 'Esportazione dati personali';
+$string['requesttypeexportallowfiltering'] = 'Esporta i miei dati personali';
 $string['requesttypeexportshort'] = 'Esportazione';
 $string['requesttypeothers'] = 'Richiesta generica';
 $string['requesttypeothersshort'] = 'Messaggio';
@@ -316,6 +324,7 @@ $string['roleoverride'] = 'Eccezione sul ruolo';
 $string['roleoverrideoverview'] = 'È possibile impostare un tempo di conservazione diverso per ruoli specifici. I dati di un utente scadranno solo quando tutti i ruoli a lui assegnati saranno scaduti.';
 $string['roleoverrides'] = 'Eccezioni sul ruolo';
 $string['selectbulkaction'] = 'Per favore seleziona un\'azione in massa.';
+$string['selectcourses'] = 'Selezionare i corsi da esportare';
 $string['selectdatarequests'] = 'Per favore seleziona le richieste di dati.';
 $string['selectuserdatarequest'] = 'Seleziona la richiesta di dati {$a->requesttype} dell\'utente {$a->username}.';
 $string['send'] = 'Invia';
@@ -332,6 +341,7 @@ $string['statusdeleted'] = 'Eliminata';
 $string['statusdetail'] = 'Stato:';
 $string['statusexpired'] = 'Scaduta';
 $string['statuspending'] = 'In attesa';
+$string['statuspreprocessing'] = 'Pre-elaborazione';
 $string['statusprocessing'] = 'In elaborazione';
 $string['statusready'] = 'Pronto per lo scaricamento';
 $string['statusrejected'] = 'Respinta';

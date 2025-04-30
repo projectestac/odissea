@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ar', version '4.1'.
+ * Strings for component 'auth_lti', language 'ar', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,9 +38,8 @@ $string['firstlaunchnotice'] = 'يبدو أنها المرة الأولى لك �
 $string['getstartedwithnewaccount'] = 'البدء مع حساب جديد';
 $string['haveexistingaccount'] = 'عندي حساب موجود';
 $string['linkthisaccount'] = 'ربط هذا الحساب';
-$string['mustbeloggedin'] = 'سجل دخولك لتربط حسابك الموجود';
+$string['mustbeloggedin'] = 'سجل دخولك لتربط حسابك الموجود.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'إن إضافة مصادقة LTI لا تخزن أي بيانات شخصية.';
 $string['privacy:metadata:auth_lti'] = 'مصادقة LTI';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'هذه الإضافة مرتبطة بنظام المصادقة الفرعي';
 $string['privacy:metadata:auth_lti:issuer'] = 'عنوان رابط المُصدر الذي يحدد المنصة التي ينتمي إليها المستخدم المرتبط';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'pt', version '4.1'.
+ * Strings for component 'studentquiz', language 'pt', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -166,7 +166,6 @@ $string['filter_label_approved'] = 'Perguntas aprovadas';
 $string['filter_label_comment'] = 'Comentários';
 $string['filter_label_createdate'] = 'Data de criação';
 $string['filter_label_difficulty_level'] = 'Dificuldade';
-$string['filter_label_fast_filters'] = 'Filtro rápido das perguntas';
 $string['filter_label_myattempts'] = 'Minhas tentativa';
 $string['filter_label_mydifficulty'] = 'Minha dificuldade';
 $string['filter_label_mylastattempt'] = 'Minha última tentativa';

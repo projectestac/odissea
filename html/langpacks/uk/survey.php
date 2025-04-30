@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'uk', version '4.1'.
+ * Strings for component 'survey', language 'uk', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Фактичний';
 $string['actualclass'] = 'Фактичний клас';
 $string['actualstudent'] = '{$a} фактичний';
 $string['allquestionrequireanswer'] = 'Всі питання вимагають відповіді';
-$string['allquestions'] = 'Всі питання за порядком, всі студенти';
 $string['allscales'] = 'Всі шкали, всі студенти';
 $string['alreadysubmitted'] = 'Ви вже дали відповіді в цій анкеті';
 $string['analysisof'] = 'Аналізи {$a}';
@@ -95,7 +94,6 @@ $string['ciq5'] = 'Які події справили на вас найбіль
 $string['ciq5short'] = 'Вражаючий момент';
 $string['ciqintro'] = 'Згадуючи про недавні події в класі, відповідайте на наступні питання.';
 $string['ciqname'] = 'Критичні інциденти';
-$string['clicktocontinue'] = 'Продовжити...';
 $string['clicktocontinuecheck'] = 'Перевірити та продовжити...';
 $string['colles1'] = 'Моє навчання фокусується на темах, які мене цікавлять';
 $string['colles10'] = 'Я прошу інших студентів пояснити свої думки';
@@ -286,4 +284,3 @@ $string['surveytype_help'] = 'Є 3 основні типи анкетуванн�
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Дякуємо, що заповнили анкету, {$a}';
 $string['time'] = 'Час';
-$string['viewsurveyresponses'] = 'Переглянути {$a} заповнених анкет';

@@ -344,6 +344,82 @@ class file_serving_exception extends moodle_exception {
 }
 
 /**
+ * Get the Whoops! handler.
+ *
+ * @return \Whoops\Run|null
+ */
+function get_whoops(): ?\Whoops\Run {
+    global $CFG;
+
+    if (CLI_SCRIPT || AJAX_SCRIPT) {
+        return null;
+    }
+
+    if (defined('PHPUNIT_TEST') && PHPUNIT_TEST) {
+        return null;
+    }
+
+    if (defined('BEHAT_SITE_RUNNING') && BEHAT_SITE_RUNNING) {
+        return null;
+    }
+
+    if (empty($CFG->debugdisplay)) {
+        return null;
+    }
+
+    if (empty($CFG->debug_developer_use_pretty_exceptions)) {
+        return null;
+    }
+
+    $composerautoload = "{$CFG->dirroot}/vendor/autoload.php";
+    if (file_exists($composerautoload)) {
+        require_once($composerautoload);
+    }
+
+    if (!class_exists(\Whoops\Run::class)) {
+        return null;
+    }
+
+    // We have Whoops available, use it.
+    $whoops = new \Whoops\Run();
+
+    // Append a custom handler to add some more information to the frames.
+    $whoops->appendHandler(function ($exception, $inspector, $run) {
+        $collection = $inspector->getFrames();
+
+        // Detect if the Whoops handler was immediately invoked by a call to `debugging()`.
+        // If so, we remove the top frames in the collection to avoid showing the inner
+        // workings of debugging, and the point that we trigger the error that is picked up by Whoops.
+        $isdebugging = count($collection) > 2;
+        $isdebugging = $isdebugging && str_ends_with($collection[1]->getFile(), '/lib/weblib.php');
+        $isdebugging = $isdebugging && $collection[2]->getFunction() === 'debugging';
+
+        if ($isdebugging) {
+            $remove = array_slice($collection->getArray(), 0, 2);
+            $collection->filter(function ($frame) use ($remove): bool {
+                return array_search($frame, $remove) === false;
+            });
+        } else {
+            // Moodle exceptions often have a link to the Moodle docs pages for them.
+            // Add that to the first frame in the stack.
+            $info = get_exception_info($exception);
+            if ($info->moreinfourl) {
+                $collection[0]->addComment("{$info->moreinfourl}", 'More info');
+            }
+        }
+    });
+
+    // Add the Pretty page handler. It's the bee's knees.
+    $handler = new \Whoops\Handler\PrettyPageHandler();
+    if (isset($CFG->debug_developer_editor)) {
+        $handler->setEditor($CFG->debug_developer_editor ?: null);
+    }
+    $whoops->appendHandler($handler);
+
+    return $whoops;
+}
+
+/**
  * Default exception handler.
  *
  * @param Exception $ex
@@ -365,6 +441,11 @@ function default_exception_handler($ex) {
     // If we already tried to send the header remove it, the content length
     // should be either empty or the length of the error page.
     @header_remove('Content-Length');
+
+    if ($whoops = get_whoops()) {
+        // If whoops is available we will use it. The get_whoops() function checks whether all conditions are met.
+        $whoops->handleException($ex);
+    }
 
     if (is_early_init($info->backtrace)) {
         echo bootstrap_renderer::early_error($info->message, $info->moreinfourl, $info->link, $info->backtrace, $info->debuginfo, $info->errorcode);
@@ -422,6 +503,10 @@ function default_exception_handler($ex) {
  * @return bool false means use default error handler
  */
 function default_error_handler($errno, $errstr, $errfile, $errline) {
+    if ($whoops = get_whoops()) {
+        // If whoops is available we will use it. The get_whoops() function checks whether all conditions are met.
+        $whoops->handleError($errno, $errstr, $errfile, $errline);
+    }
     if ($errno == 4096) {
         //fatal catchable error
         throw new coding_exception('PHP catchable fatal error', $errstr);
@@ -791,9 +876,17 @@ function initialise_cfg() {
 function initialise_local_config_cache() {
     global $CFG;
 
-    $bootstrapcachefile = $CFG->localcachedir . '/bootstrap.php';
+    $bootstraplocalfile = $CFG->localcachedir . '/bootstrap.php';
+    $bootstrapsharedfile = $CFG->cachedir . '/bootstrap.php';
 
-    if (!empty($CFG->siteidentifier) && !file_exists($bootstrapcachefile)) {
+    if (!is_readable($bootstraplocalfile) && is_readable($bootstrapsharedfile)) {
+        // If we don't have a local cache but do have a shared cache then clone it,
+        // for example when scaling up new front ends.
+        make_localcache_directory('', true);
+        copy($bootstrapsharedfile, $bootstraplocalfile);
+    }
+
+    if (!empty($CFG->siteidentifier) && !file_exists($bootstrapsharedfile) && defined('SYSCONTEXTID')) {
         $contents = "<?php
 // ********** This file is generated DO NOT EDIT **********
 \$CFG->siteidentifier = " . var_export($CFG->siteidentifier, true) . ";
@@ -804,10 +897,15 @@ if (\$CFG->bootstraphash === hash_local_config_cache() && !defined('SYSCONTEXTID
 }
 ";
 
-        $temp = $bootstrapcachefile . '.tmp' . uniqid();
+        // Create the central bootstrap first.
+        $temp = $bootstrapsharedfile . '.tmp' . uniqid();
         file_put_contents($temp, $contents);
         @chmod($temp, $CFG->filepermissions);
-        rename($temp, $bootstrapcachefile);
+        rename($temp, $bootstrapsharedfile);
+
+        // Then prewarm the local cache as well.
+        make_localcache_directory('', true);
+        copy($bootstrapsharedfile, $bootstraplocalfile);
     }
 }
 
@@ -900,7 +998,13 @@ function initialise_fullme() {
                 throw new moodle_exception('requirecorrectaccess', 'error', '', null,
                     'You called ' . $calledurl .', you should have called ' . $correcturl);
             }
-            redirect($CFG->wwwroot, get_string('wwwrootmismatch', 'error', $CFG->wwwroot), 3);
+            $rfullpath = $rurl['fullpath'];
+            // Check that URL is under $CFG->wwwroot.
+            if (strpos($rfullpath, $wwwroot['path']) === 0) {
+                $rfullpath = substr($rurl['fullpath'], strlen($wwwroot['path']) - 1);
+                $rfullpath = (new moodle_url($rfullpath))->out(false);
+            }
+            redirect($rfullpath, get_string('wwwrootmismatch', 'error', $CFG->wwwroot), 3);
         }
     }
 
@@ -932,9 +1036,16 @@ function initialise_fullme() {
         $_SERVER['SERVER_PORT'] = 443; // Assume default ssl port for the proxy.
     }
 
-    // Hopefully this will stop all those "clever" admins trying to set up moodle
-    // with two different addresses in intranet and Internet.
-    // Port forwarding is still allowed!
+    // Using Moodle in "reverse proxy" mode, it's expected that the HTTP Host Moodle receives is different
+    // from the wwwroot configured host. Those URLs being identical could be the consequence of various
+    // issues, including:
+    // - Intentionally trying to set up moodle with 2 distinct addresses for intranet and Internet: this
+    //   configuration is unsupported and will lead to bigger problems down the road (the proper solution
+    //   for this is adjusting the network routes, and avoid relying on the application for network concerns).
+    // - Misconfiguration of the reverse proxy that would be forwarding the Host header: while it is
+    //   standard in many cases that the reverse proxy would do that, in our case, the reverse proxy
+    //   must leave the Host header pointing to the internal name of the server.
+    // Port forwarding is allowed, though.
     if (!empty($CFG->reverseproxy) && $rurl['host'] === $wwwroot['host'] && (empty($wwwroot['port']) || $rurl['port'] === $wwwroot['port'])) {
         throw new \moodle_exception('reverseproxyabused', 'error');
     }
@@ -1207,7 +1318,6 @@ function init_performance_info() {
     global $PERF, $CFG, $USER;
 
     $PERF = new stdClass();
-    $PERF->logwrites = 0;
     if (function_exists('microtime')) {
         $PERF->starttime = microtime();
     }
@@ -1428,7 +1538,7 @@ function disable_output_buffering() {
  */
 function is_major_upgrade_required() {
     global $CFG;
-    $lastmajordbchanges = 2022101400.03; // This should be the version where the breaking changes happen.
+    $lastmajordbchanges = 2024010400.00; // This should be the version where the breaking changes happen.
 
     $required = empty($CFG->version);
     $required = $required || (float)$CFG->version < $lastmajordbchanges;
@@ -1837,6 +1947,9 @@ function make_localcache_directory($directory, $exceptiononerror = true) {
         touch($timestampfile);
         @chmod($timestampfile, $CFG->filepermissions);
         clearstatcache();
+
+        // Then prewarm the local boostrap.php file as well.
+        initialise_local_config_cache();
     }
 
     if ($directory === '') {
@@ -1999,10 +2112,10 @@ class bootstrap_renderer {
      * Returns nicely formatted error message in a div box.
      * @static
      * @param string $message error message
-     * @param string $moreinfourl (ignored in early errors)
-     * @param string $link (ignored in early errors)
-     * @param array $backtrace
-     * @param string $debuginfo
+     * @param ?string $moreinfourl (ignored in early errors)
+     * @param ?string $link (ignored in early errors)
+     * @param ?array $backtrace
+     * @param ?string $debuginfo
      * @return string
      */
     public static function early_error_content($message, $moreinfourl, $link, $backtrace, $debuginfo = null) {
@@ -2044,7 +2157,7 @@ class bootstrap_renderer {
      * @param string $link (ignored in early errors)
      * @param array $backtrace
      * @param string $debuginfo extra information for developers
-     * @return string
+     * @return ?string
      */
     public static function early_error($message, $moreinfourl, $link, $backtrace, $debuginfo = null, $errorcode = null) {
         global $CFG;
@@ -2194,4 +2307,27 @@ function proxy_log_callback($code) {
         $error = "Unsafe internet IO detected: {$function['function']} with arguments " . join(', ', $function['args']) . "\n";
         error_log($error . format_backtrace($trace, true)); // phpcs:ignore
     }
+}
+
+/**
+ * A helper function for deprecated files to use to ensure that, when they are included for unit tests,
+ * they are run in an isolated process.
+ *
+ * @throws \coding_exception The exception thrown when the process is not isolated.
+ */
+function require_phpunit_isolation(): void {
+    if (!defined('PHPUNIT_TEST') || !PHPUNIT_TEST) {
+        // Not a test.
+        return;
+    }
+
+    if (defined('PHPUNIT_ISOLATED_TEST') && PHPUNIT_ISOLATED_TEST) {
+        // Already isolated.
+        return;
+    }
+
+    throw new \coding_exception(
+        'When including this file for a unit test, the test must be run in an isolated process. ' .
+            'See the PHPUnit @runInSeparateProcess and @runTestsInSeparateProcesses annotations.'
+    );
 }

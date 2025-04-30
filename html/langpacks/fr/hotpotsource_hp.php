@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotsource_hp', language 'fr', version '4.1'.
+ * Strings for component 'hotpotsource_hp', language 'fr', version '4.4'.
  *
  * @package     hotpotsource_hp
  * @category    string

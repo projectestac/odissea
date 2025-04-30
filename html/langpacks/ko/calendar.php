@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', version '4.1'.
+ * Strings for component 'calendar', language 'ko', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -34,7 +34,6 @@ $string['calendarexporturl'] = '달력 URL';
 $string['calendarheading'] = '{$a} 달력';
 $string['calendarpreferences'] = '달력 선택 설정';
 $string['calendartypes'] = '달력 유형';
-$string['calendarurl'] = '달력 URL : {$a}';
 $string['calendarurlcopiedtoclipboard'] = '달력 URL이 클립보드에 복사되었습니다.';
 $string['category'] = '범주';
 $string['categoryevents'] = '일정 분류';
@@ -122,7 +121,6 @@ $string['importcalendar'] = '달력 가져오기';
 $string['importcalendarfrom'] = '가져오기:';
 $string['importcalendarheading'] = '달력 가져오기...';
 $string['importfromfile'] = '달력 파일 (.ics)';
-$string['importfrominstructions'] = '원격 달력에 대한 URL을 제공하거나, 파일을 업로드하기 바랍니다.';
 $string['importfromurl'] = '달력 URL';
 $string['invalidtimedurationminutes'] = '입력한 지속 시간(분)이 정확하지 않습니다. 0 이상의 값을 넣거나 지속시간 없음을 선택하세요.';
 $string['invalidtimedurationuntil'] = '행사 종료 일시가 행사 시작 일시보다 이릅니다. 계속하기 전에 이를 바로잡기 바랍니다.';
@@ -132,7 +130,6 @@ $string['manyevents'] = '{$a} 일정';
 $string['mon'] = '월';
 $string['monday'] = '월요일';
 $string['monthly'] = '매달';
-$string['monthlyview'] = '월별로 보기';
 $string['monthnext'] = '다음 달';
 $string['monththis'] = '이번 달';
 $string['namewithsource'] = '{$a->name}({$a->source})';

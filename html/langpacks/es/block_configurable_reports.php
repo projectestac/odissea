@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'es', version '4.1'.
+ * Strings for component 'block_configurable_reports', language 'es', version '4.4'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -291,9 +291,7 @@ $string['label_field'] = 'Campo de etiqueta';
 $string['label_field_help'] = 'Campo que proporciona nombres para las cosas representadas en el gráfico';
 $string['label_help'] = 'Texto que describe el filtro a ser mostrado en la página del reporte.';
 $string['lastexecutiontime'] = 'Tiempo de ejecución = {$a} (Sec)';
-$string['legacylognotenabled'] = 'Los registros heredados deben estar habilitados.
-Vaya a Administración del sitio/Extensiones/Logging
-Habilitar el registro heredado dentro de la configuración de registro.';
+$string['legacylognotenabled'] = 'Las bitácoras antiguas deben estar habilitadas. Vaya a la Administración del sitio / Plugins / Bitácoras / Habilitar bitácora antigua y dentro de la configuración de bitácora active Datos de Bitácora antigua';
 $string['legendheader'] = 'Paleta mapeada';
 $string['legendheaderdesc'] = 'Mapear códigos de color para especificar claves en los letreros del gráfico de pastel.';
 $string['limitcategories'] = 'Limitar categorías en un gráfico';

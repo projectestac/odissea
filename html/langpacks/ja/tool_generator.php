@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ja', version '4.1'.
+ * Strings for component 'tool_generator', language 'ja', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = '追加活動';
+$string['additionalmodules_help'] = 'テストコースに含めるためにcourse_backend_generator_create_activity関数を実装する活動をさらに選択してください。';
 $string['bigfile'] = 'ビッグファイル {$a}';
 $string['courseexplanation'] = 'このツールでは多くのセクション、活動およびファイルを含む標準的なテストコースを作成します。
 
@@ -71,6 +73,7 @@ $string['progress_createcourse'] = 'コース作成中 {$a}';
 $string['progress_createforum'] = 'フォーラム作成中 ({$a} 投稿)';
 $string['progress_createpages'] = 'ページ作成中 ({$a})';
 $string['progress_createsmallfiles'] = 'スモールファイル作成中 ({$a})';
+$string['progress_createusers'] = 'ユーザカウントを作成する ({$a})';
 $string['progress_enrol'] = 'ユーザをコースに登録中 ({$a})';
 $string['progress_sitecompleted'] = 'サイト完了 ({$a})';
 $string['shortsize_0'] = 'XS';
@@ -109,5 +112,19 @@ $string['testplansize_2'] = 'M ({$a->users} ユーザ / {$a->loops} ループ / 
 $string['testplansize_3'] = 'L ({$a->users} ユーザ / {$a->loops} ループ /  {$a->rampup} Ramp-Up期間)';
 $string['testplansize_4'] = 'XL ({$a->users} ユーザ / {$a->loops} ループ /  {$a->rampup} Ramp-Up期間)';
 $string['testplansize_5'] = 'XXL ({$a->users} ユーザ / {$a->loops} ループ /  {$a->rampup} Ramp-Up期間)';
+$string['testscenario'] = 'テストシナリオを作成する';
+$string['testscenario_description'] = 'テストシナリオの作成では手動テスト実行に必要なすべての要素を作成するため、限られたフィーチャファイル構文を使用します。';
+$string['testscenario_errorparsing'] = 'フィーチャファイル構文解析エラー: {$a}';
+$string['testscenario_file'] = 'フィーチャファイル';
+$string['testscenario_filedesc'] = 'アップロードフィーチャファイルにはcore_data_generatorステップを含むシナリオのみを含めることができます。まだシナリオアウトラインとの互換性はありません。すべてのシナリオは一度に実行されますが、バックグラウンドステップは無視されます。';
+$string['testscenario_invalidfile'] = 'ファイルフォーマットが有効でないか、無効なステップが含まれています。';
+$string['testscenario_invalidstep'] = '不明なステップです。テストシナリオの作成はジェネレータステップのみを受け入れます。';
+$string['testscenario_nosteps'] = 'ファイル内には実行するステップがありません。';
+$string['testscenario_notready'] = 'Composerおおびbehatライブラリがインストールされていません。
+<br /><br />
+次のコマンドを実行してこのツールを有効にしてください: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'シナリオアウトラインはサポートされていません。';
+$string['testscenario_scenarionosteps'] = 'このシナリオにはステップがありません。';
+$string['testscenario_steps'] = 'テストシナリオステップ:';
 $string['updateuserspassword'] = 'コースユーザパスワードを更新する';
 $string['updateuserspassword_help'] = 'JMeterではユーザとしてコースにログインする必要があります。あなたはconfig.phpの$CFG->tool_generator_users_passwordを使用して、パスワードを設定することができます。この設定は$CFG->tool_generator_users_passwordを使用してコースユーザのパスワードを更新します。あなたがtool_generatorにより作成されていないコースを使用している場合、またはテストコース作成時に$CFG->tool_generator_users_passwordが設定されている場合に有用です。';

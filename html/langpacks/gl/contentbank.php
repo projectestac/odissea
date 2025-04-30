@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'gl', version '4.1'.
+ * Strings for component 'contentbank', language 'gl', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -26,23 +26,27 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor';
-$string['choosecontext'] = 'Escolla curso ou categoría...';
-$string['close'] = 'Pechar';
+$string['choosecontext'] = 'Escolla curso ou categoría…';
 $string['contentbank'] = 'Banco de contidos';
 $string['contentbankpreferences'] = 'Preferencias do banco de contidos';
+$string['contentcopied'] = 'Contido copiado.';
+$string['contentcreated'] = 'Contido creado.';
 $string['contentdeleted'] = 'Contido eliminado.';
 $string['contentname'] = 'Nome do contido';
 $string['contentnotdeleted'] = 'Produciuse un erro ao tentar eliminar o contido.';
 $string['contentnotrenamed'] = 'Produciuse un erro ao intentar cambiar o nome do contido.';
-$string['contentrenamed'] = 'Cambiouse o nome do contido.';
-$string['contentsmoved'] = 'O contido do banco de contido foi movidp a {$a}.';
+$string['contentrenamed'] = 'Contido renomeado.';
+$string['contentsmoved'] = 'O contido do banco de contido foi movido a {$a}.';
 $string['contenttypenoaccess'] = 'Vostede non pode ver esta instancia de {$a}.';
 $string['contenttypenoedit'] = 'Vostede non pode editar este contido';
-$string['contentvisibilitychanged'] = 'O contido foi feito o {$a}.';
+$string['contentupdated'] = 'Contido actualizado.';
+$string['contentvisibilitychanged'] = 'O contido é agora {$a}.';
 $string['contentvisibilitynotset'] = 'Produciuse un erro ao tentar estabelecer a visibilidade do contido.';
 $string['contextnotallowed'] = 'Vostede non ten permiso para acceder ao banco de contido neste contexto.';
+$string['copycontent'] = 'Copiar o contido';
+$string['copyof'] = 'Copia de {$a}';
 $string['deletecontent'] = 'Eliminar o contido';
-$string['deletecontentconfirm'] = 'Confirma que quere eliminar o contido <em>\'{$a->name}\'</em>> e todos os ficheiros asociados? Esta acción non se pode desfacer.';
+$string['deletecontentconfirm'] = 'Confirma que quere eliminar o contido <em>«{$a->name}»</em> e todos os ficheiros asociados? Esta acción non se pode desfacer.';
 $string['deletecontentconfirmlinked'] = 'O contido só se eliminará do banco de contidos. Calquera lugar que actualmente teña ligazón con el actualizarase automaticamente para usar unha copia do contido.';
 $string['displaydetails'] = 'Amosar o banco de contido con detalles do ficheiro';
 $string['displayicons'] = 'Amosar banco de contido con iconas';
@@ -64,11 +68,12 @@ $string['more'] = 'Máis';
 $string['name'] = 'Contido';
 $string['nocontentavailable'] = 'Non hai contido dispoñíbel';
 $string['nocontenttypes'] = 'Non hai tipos de contido dispoñíbeis';
+$string['nopermissiontocopy'] = 'Non ten permiso para copiar contido.';
 $string['nopermissiontodelete'] = 'Vostede non ten permiso para eliminar contido.';
 $string['nopermissiontomanage'] = 'Vostede non ten permiso para xestionar contido.';
 $string['notavailable'] = 'Sentímolo, este contido non está dispoñíbel.';
 $string['notvalidpackage'] = 'Sentímolo, este ficheiro non é válido.';
-$string['privacy:metadata:content:contenttype'] = 'O engadido de tipo de contido (contenttype) do contido no banco de contidos.';
+$string['privacy:metadata:content:contenttype'] = 'O complemento de tipo de contido (contenttype) do contido no banco de contidos.';
 $string['privacy:metadata:content:name'] = 'Nome do contido no banco de contidos.';
 $string['privacy:metadata:content:timecreated'] = 'A hora en que se creou o contido.';
 $string['privacy:metadata:content:timemodified'] = 'A hora en que se modificou o contido.';

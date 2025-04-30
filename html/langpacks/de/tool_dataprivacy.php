@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'de', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'de', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Kategorie hinzufügen';
 $string['addnewdefaults'] = 'Neuen Standard für Aktivitäten hinzufügen';
 $string['addpurpose'] = 'Zweck hinzufügen';
 $string['addroleoverride'] = 'Rollenüberschreibung hinzufügen';
+$string['allowfiltering'] = 'Filterung der Exporte nach Kurs zulassen';
+$string['allowfiltering_desc'] = 'Wenn diese Option aktiviert ist, kann der Datenschutzbeauftragte die Nutzerdaten aus ausgewählten Kursen statt aus allen Kursen exportieren. Wenn diese Funktion aktiviert ist,  beginnen Exportanfragen mit "Ausstehend" und können erst genehmigt werden, nachdem eine Hintergrund-Task abgeschlossen wurde.';
 $string['approve'] = 'Bestätigen';
 $string['approvedrequestsubmitted'] = 'Ihre Anfrage wurde eingereicht und wird in Kürze bearbeitet.';
 $string['approverequest'] = 'Anfrage bestätigen';
+$string['approverequestall'] = 'Anfrage genehmigen (alle Daten)';
+$string['approveselectedcourses'] = 'Ausgewählte Kurse genehmigen';
 $string['automaticdatadeletionapproval'] = 'Automatische Genehmigung zur Datenlöschung';
 $string['automaticdatadeletionapproval_desc'] = 'Wenn diese Option aktiviert ist, werden Datenlöschanforderungen automatisch genehmigt.<br>Beachten Sie, dass die automatische Genehmigung nur für neue Datenlöschanforderungen gilt, wenn diese Einstellung aktiviert ist. Bereits bestehende Datenlöschanforderungen, deren Genehmigung noch aussteht, müssen vom Datenschutzbeauftragten noch manuell genehmigt werden.';
 $string['automaticdataexportapproval'] = 'Automatische Genehmigung zum Datenexport';
@@ -45,7 +49,7 @@ $string['cachedef_contextlevel'] = 'Zwecke und Kategorien (Kontextlevel)';
 $string['cachedef_purpose'] = 'Verarbeitungszwecke';
 $string['cachedef_purpose_overrides'] = 'Begründung für das Überschreiben in der Datenschutz-Funktion';
 $string['cancelrequest'] = 'Anfrage abbrechen';
-$string['cancelrequestconfirmation'] = 'Wollen Sie diese Anfrage zur Bereitstellung von Daten tatsächlich abbrechen?';
+$string['cancelrequestconfirmation'] = 'Möchten Sie diese Datenanfrage wirklich abbrechen?';
 $string['cannotreset'] = 'Diese Abfrage kann nicht zurückgesetzt werden. Ausschließlich zurückgewiesene Abfragen können zurückgesetzt werden.';
 $string['categories'] = 'Kategorien';
 $string['categorieslist'] = 'Liste von Datenkategorien';
@@ -150,6 +154,7 @@ $string['errorinvalidrequeststatus'] = 'Ungültiger Abfragestatus!';
 $string['errorinvalidrequesttype'] = 'Ungültiger Abfragetyp!';
 $string['errornocapabilitytorequestforothers'] = 'Nutzer/in {$a->requestedby} hat nicht die Berechtigung, Datenanfragen im Namen einer anderen Person {$a->userid} auszulösen.';
 $string['errornoexpiredcontexts'] = 'Es gibt derzeit keine Kontexte, die zum Löschen bestätigt werden müssen.';
+$string['errornoselectedcourse'] = 'Sie müssen mindestens einen Kurs auswählen.';
 $string['errorrequestalreadyexists'] = 'Sie haben bereits eine Anfrage gestellt, die in Bearbeitung ist.';
 $string['errorrequestnotfound'] = 'Anfrage nicht gefunden';
 $string['errorrequestnotwaitingforapproval'] = 'Für die Anfrage wird keine Bestätigung erwartet. Entweder ist sie noch nicht fertig oder wurde bereits bearbeitet.';
@@ -166,6 +171,7 @@ $string['expiry'] = 'Ablauf';
 $string['explanationtitle'] = 'Icons auf dieser Seite und ihre Bedeutung';
 $string['external'] = 'Zusätzlich';
 $string['externalexplanation'] = 'Ein zusätzlich installiertes Plugin';
+$string['filterexportdata'] = 'Anfrage genehmigen (Datenaustausch ausgewählten Kursen)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Startseitenkurs';
 $string['gdpr_art_6_1_a_description'] = 'Die betroffene Person hat ihre Zustimmung zur Verarbeitung ihrer personenbezogenen Daten für einen oder mehrere bestimmte Zwecke gegeben';
@@ -223,6 +229,7 @@ $string['noassignedroles'] = 'In diesem Kontext wurden keine Rollen zugeordnet';
 $string['noblockstoload'] = 'Keine Blöcke';
 $string['nocategories'] = 'Es gibt derzeit keine Kategorien';
 $string['nocoursestoload'] = 'Keine Aktivtäten';
+$string['nocoursetofilter'] = 'Die Person ist in keinem zur Auswahl stehenden Kurs eingeschrieben.';
 $string['nodatarequests'] = 'Es gibt keine Datenanfragen';
 $string['nodatarequestsmatchingfilter'] = 'Es gibt keine Datenschutz-Anfragen, die diesem Filter entsprechen';
 $string['noexpiredcontexts'] = 'Diese Kontextebene enthält keine Daten, für die die Aufbewahrungsfrist abgelaufen ist.';
@@ -284,6 +291,7 @@ $string['requesttype_help'] = 'Wählen Sie den Grund für die Kontaktaufnahme mi
 $string['requesttypedelete'] = 'Alle über mich gespeicherten Daten löschen';
 $string['requesttypedeleteshort'] = 'Löschen';
 $string['requesttypeexport'] = 'Alle über mich gespeicherten Daten exportieren';
+$string['requesttypeexportallowfiltering'] = 'Meine personenbezogenen Daten exportieren';
 $string['requesttypeexportshort'] = 'Export';
 $string['requesttypeothers'] = 'Allgemeine Anfrage';
 $string['requesttypeothersshort'] = 'Mitteilung';
@@ -315,6 +323,7 @@ $string['roleoverride'] = 'Rolle überschreiben';
 $string['roleoverrideoverview'] = 'Die Standardfestlegung für die Löschregeln für spezifische Nutzerrollen kann überschrieben werden falls diese länger oder kürzer sein sollen. Ein Nutzerkonto gilt nur als abgelaufen, wenn alle seine Rollen als abgelaufen gelten.';
 $string['roleoverrides'] = 'Rollenüberschreibungen';
 $string['selectbulkaction'] = 'Wählen Sie eine Sammelaktion aus';
+$string['selectcourses'] = 'Kurse für den Export auswählen';
 $string['selectdatarequests'] = 'Wählen Sie Datenanfragen aus';
 $string['selectuserdatarequest'] = 'Wählen Sie die Datenanfrage {$a->requesttype} von {$a->username} aus.';
 $string['send'] = 'Senden';
@@ -331,6 +340,7 @@ $string['statusdeleted'] = 'Gelöscht';
 $string['statusdetail'] = 'Status';
 $string['statusexpired'] = 'Abgelaufen';
 $string['statuspending'] = 'Abwartend';
+$string['statuspreprocessing'] = 'Vorverarbeitung';
 $string['statusprocessing'] = 'Verarbeitung';
 $string['statusready'] = 'Download verfügbar';
 $string['statusrejected'] = 'Zurückgewiesen';

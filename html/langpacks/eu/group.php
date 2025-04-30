@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', version '4.1'.
+ * Strings for component 'group', language 'eu', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Ziur zaude \'{$a}\' taldea ezabatu nahi duzula?
 $string['deletegrouping'] = 'Ezabatu talde-multzoa';
 $string['deletegroupingconfirm'] = 'Ziur zaude \'{$a}\' talde-multzoa ezabatu nahi duzula? (Taldeak ez dira ezabatuko)';
 $string['deletegroupsconfirm'] = 'Ziur zaude ondorengo taldeak ezabatu nahi dituzula?';
-$string['deleteselectedgroup'] = 'Ezabatu aukeratutako taldea';
+$string['deleteselectedgroup'] = 'Ezabatu';
+$string['disablemessagingaction'] = 'Desgaitu mezularitza';
 $string['editgroupingsettings'] = 'Editatu talde-multzoaren ezarpenak';
 $string['editgroupsettings'] = 'Editatu taldearen ezarpenak';
 $string['editusersgroupsa'] = 'Editatu taldeak "{$a}"(r)entzat';
 $string['enablemessaging'] = 'Taldeko mezularitza';
 $string['enablemessaging_help'] = 'Gaituz gero, taldekideek mezuen nabigazio-kutxatik mezuak elkarri bidal diezazkiekete.';
+$string['enablemessagingaction'] = 'Gaitu mezularitza';
 $string['encoding'] = 'Kodifikazioa';
 $string['enrolmentkey'] = 'Matrikulazio-gakoa';
 $string['enrolmentkey_help'] = 'Matrikulazio-gakoek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-gako bat zehaztuz gero, gakoa sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'Matrikulazio-gakoek talde baterako sarbidea pasa
 Oharra: Taldeen matrikulazio-gakoak matrikulazio automatikoko ezarpenetan gaitu behar dira eta ikastarorako matrikulazio-gakoa ere zehaztu beharko da.';
 $string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-gako hau beste talde baterako erabiltzen ari da jada.';
 $string['erroraddremoveuser'] = 'Errorea {$a} erabiltzailea taldera gehitzean/taldetik kentzean';
+$string['erroraddtogroup'] = 'Balio ezegokia addtogroup-entzat. 0 izan beharko litzateke talde-modurik ez izateko ala 1 talde berria sortu dadin.';
+$string['erroraddtogroupgroupname'] = 'Ezin duzu groupname zehaztu addtogroup zehaztuta badago.';
 $string['erroreditgroup'] = 'Errorea {$a} taldea sortzean/eguneratzean';
 $string['erroreditgrouping'] = 'Errorea {$a} talde-multzoa sortzean/eguneratzean';
 $string['errorinvalidgroup'] = 'Errorea, {$a} taldeak ez du balio';
@@ -113,6 +117,8 @@ $string['groupmembers'] = 'Taldekideak';
 $string['groupmemberssee'] = 'Ikusi taldekideak';
 $string['groupmembersselected'] = 'Aukeratutako taldeko kideak';
 $string['groupmode'] = 'Talde-modua';
+$string['groupmode_groupsseparate_help'] = 'Ikasleak taldeetan banatuta daude eta bakoitzak bere taldearen lana baino ezin du ikusi.';
+$string['groupmode_groupsvisible_help'] = 'Ikasleak taldeetan banatuta daude eta bakoitzak bere taldean egiten du lan baina gainerako taldeen lana ere ikusi dezake.';
 $string['groupmode_help'] = '* Talderik ez
 * Taldeek ezin elkar ikusi - Ikasleak taldeetan banatuta daude eta bakoitzak bere taldearen lana baino ezin du ikusi.
 * Taldeek elkar ikusten dute - Ikasleak taldeetan banatuta daude eta bakoitzak bere taldean egiten du lan baina gainerako taldeen lana ere ikusi dezake.
@@ -135,7 +141,6 @@ $string['groupspreview'] = 'Taldeen aurrebista';
 $string['groupsseparate'] = 'Taldeek ezin elkar ikusi';
 $string['groupsvisible'] = 'Taldeek elkar ikusten dute';
 $string['grouptemplate'] = '@ taldea';
-$string['hidepicture'] = 'Ezkutatu irudia';
 $string['importgroups'] = 'Inportatu taldeak';
 $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daitezke. Horretarako fitxategiaren formatua hurrengoa izan beharko da:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Sartu soilik aktibo dauden matrikulazioak';
 $string['includeonlyactiveenrol_help'] = 'Gaituz gero, kontua etenda duten erabiltzaileak ez dira taldeetan sartuko.';
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';
+$string['manageactions'] = 'Kudeatu';
 $string['memberofgroup'] = 'Talde honetako kidea: {$a}';
 $string['members'] = 'Kideak taldeko';
 $string['membersofselectedgroup'] = 'Aukeratutako taldean dauden kideak:';
+$string['messagingdisabled'] = 'Mezularitza {$a} taldetan ondo desgaitu da';
+$string['messagingenabled'] = 'Mezularitza {$a} taldetan ondo gaitu da';
 $string['mygroups'] = 'Nire taldeak';
 $string['namingscheme'] = 'Izendatze-eskema';
 $string['namingscheme_help'] = 'Abildua sinboloa (@) letrez osatutako taldeen izenak sortzeko erabil daiteke. Esaterako "@ Taldea" jarriz gero hurrengoak sortuko dira: A Taldea, B Taldea, C taldea,...
@@ -175,6 +183,9 @@ $string['numgroups'] = 'Talde-kopurua';
 $string['nummembers'] = 'Kideak taldeko';
 $string['othergroups'] = 'Beste taldeak';
 $string['overview'] = 'Taldeen ikuspegi orokorra';
+$string['participation'] = 'Erakutsi taldearen aukera-menua talde-modua erabiltzen duten jardueretan';
+$string['participation_help'] = 'Taldeko kideek talde hau aukeratu ahalko dute talde-modua erabiltzen duten jardueretan? (Soilik aplikatzen da talde-partaidetza ikusgai badago edo partaideentzat soilik ikusgai badago.)';
+$string['participationshort'] = 'Partaidetza';
 $string['potentialmembers'] = 'Balizko kideak: {$a}';
 $string['potentialmembs'] = 'Balizko kideak';
 $string['printerfriendly'] = 'Talde-multzoa inprimatzeko formatuan erakutsi';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'Ez dago erabiltzaile nahiko talde-kopuru hori betetz
 $string['usercount'] = 'Erabiltzaile kopurua';
 $string['usercounttotal'] = 'Erabiltzaile kopurua ({$a})';
 $string['usergroupmembership'] = 'Aukeratutako erabiltzailearen pertenentzia-taldea';
+$string['visibility'] = 'Talde-partaidetzaren ikusgarritasuna';
+$string['visibility_help'] = '* Ikusgai - ikastaroko partaide guztiek ikusi ahalko dute zeintzuk diren talde honetako kideak
+* Soilik partaideentzat ikusgai - talde honetako kide ez diren ikastaroko partaideek ezingo dute taldea ikusi ezta bertako kideak ere.
+* Soilik norbere partaidetza ikusgai - erabiltzaile batek talde honetako kidea den ikusi ahalko du, baina ezingo ditu beste kideak ikusi.
+* Ezkutuan - soilik irakasleak ikusi ahalko du taldea eta bere kideak.
+
+Ikusi talde ezkutuak baimena duten erabiltzaileek beti ikusi ahalko dituzte taldeen partaideak.
+
+Ezarpen hau ezin da aldatu behin taldeak kideak dituenean.';
+$string['visibilityall'] = 'Ikusgai';
+$string['visibilitymembers'] = 'Soilik partaideentzat ikusgai';
+$string['visibilitynone'] = 'Ezkutuan';
+$string['visibilityown'] = 'Soilik norbere partaidetza ikusgai';
+$string['visibilityshort'] = 'Ikusgarritasuna';
+$string['withselected'] = 'Aukeratutakoekin';

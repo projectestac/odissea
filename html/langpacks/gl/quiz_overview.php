@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'gl', version '4.1'.
+ * Strings for component 'quiz_overview', language 'gl', version '4.4'.
  *
  * @package     quiz_overview
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allattempts'] = 'Amosar todos os intentos';
 $string['allattemptscontributetograde'] = 'Todos os intentos contribúen á cualificación final do usuario.';
 $string['allstudents'] = 'Amosar todo {$a}';
-$string['attemptsonly'] = 'Amosar {$a} con tentativas unicamente';
+$string['attemptsonly'] = 'Mostrar {$a} con tentativas unicamente';
 $string['attemptsprepage'] = 'Intentos amosados por páxina';
 $string['deleteselected'] = 'Eliminar os intentos seleccionados';
 $string['done'] = 'Feito';
@@ -36,7 +36,7 @@ $string['err_failedtodeleteregrades'] = 'Non foi posíbel eliminar as cualificac
 $string['err_failedtorecalculateattemptgrades'] = 'Non foi posíbel recalcular as cualificacións do intento';
 $string['highlightinggraded'] = 'O intento do usuario que contribúe á cualificación final está resaltado.';
 $string['needed'] = 'Necesario';
-$string['noattemptsonly'] = 'Amosar {$a} sen tentativas unicamente';
+$string['noattemptsonly'] = 'Mostrar {$a} sen tentativas unicamente';
 $string['noattemptstoregrade'] = 'Ningún intento necesita recualificación';
 $string['nogradepermission'] = 'Non ten permiso para cualificar esta proba.';
 $string['onlyoneattemptallowed'] = 'Só se permite un intento por usuario nesta proba.';
@@ -66,8 +66,8 @@ $string['regradealldrydo'] = 'Recualificar os intentos marcados cando necesiten 
 $string['regradealldrydogroup'] = 'Recualificar os intentos ({$a->countregradeneeded}) marcados como necesitados de recualificación no grupo «{$a->groupname}»';
 $string['regradealldrygroup'] = 'Simulacro de recualificación completa para o grupo «{$a->groupname}»';
 $string['regradeallgroup'] = 'Recualificación completa para o grupo «{$a->groupname}»';
-$string['regradecomplete'] = 'Recualificación realizada satisfactorimente';
-$string['regradedsuccessfullyxofy'] = 'Recualificado satisfactoriamente ({$a->done}/{$a->count})';
+$string['regradecomplete'] = 'Recualificación concluída';
+$string['regradedsuccessfullyxofy'] = 'Rematou a recualificación ({$a->feito}/{$a->conta})';
 $string['regradeheader'] = 'Recualificando';
 $string['regradeselected'] = 'Volver cualificar os intentos seleccionados';
 $string['regradingattemptissue'] = 'Franxa {$a->slot}: {$a->reason}';

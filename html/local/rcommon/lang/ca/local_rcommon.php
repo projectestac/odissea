@@ -1,5 +1,6 @@
 <?php
-$string['pluginname'] ='Recursos remots';
+
+$string['pluginname'] = 'Recursos remots';
 
 $string['rcommon:authenticate'] = 'Autentica contingut Marsupial';
 $string['rcommon:exportcredentials'] = 'Exporta credencials de Marsupial';
@@ -34,6 +35,7 @@ $string['error_code_-7'] = 'Rol incorrecte';
 $string['error_code_-101'] = 'Autenticació incorrecta. L\'usuari/ària que sol&middot;licitat accés a aquest m&egrave;tode del servei web no és correcte.';
 $string['error_code_-102'] = 'Autenticació incorrecta. L\'usuari/àira que sol&middot;licita accés a aquest m&egrave;tode del servei web no té permisos suficients.';
 $string['empty_response_error'] = 'Resposta buida o mal formada.';
+$string['wserror'] = 'Codi: {$a->code} - {$a->description}.';
 
 $string['insertkeymsg'] = 'Introduiu una credencial per a aquest recurs';
 $string['key'] = 'Credencial';
@@ -83,20 +85,19 @@ $string['scorm'] = 'SCORM remot';
 $string['webcontent'] = 'Contingut remot';
 $string['downloadbookstructures_warning'] = '<strong>ATENCIÓ</strong>: S\'està descarregant l\'estructura dels llibres. Aquest procés pot trigar alguns minuts. Espereu...';
 
-
-$string['user_credentials'] 		= 'Credencials';
-$string['users_proportion'] 		= '{$a->with_credentials} dels {$a->total_users} usuaris del sistema disposen d\'alguna credencial';
-$string['publishers'] 			= 'Proveïdors de continguts';
-$string['no_publishers'] 		= 'No hi ha proveïdors de continguts disponibles';
-$string['without_credentials'] 		= 'Usuaris sense credencials';
-$string['with_credentials'] 		= 'Usuaris amb credencials';
-$string['good_connection'] 		= 'Connexió correcta';
-$string['bad_connection'] 		= 'S\'ha produït un problema en intentar connectar';
-$string['bad_wsdl_connection']          = 'Comprova l\'adreça del servei web d\'autenticació';
-$string['books'] 			= 'llibres';
-$string['check_publishers'] 		= 'Comprova la connexió';
-$string['wait_please'] 			= 'ATENCIÓ: Aquesta operació pot trigar uns minuts';
-$string['marsupial_bookswarning']       = '<strong>AV&Iacute;S</strong>: Si després d\'actualitzar la llista de llibres detecteu que en falta algun, contacteu amb el proveïdor de continguts.';
+$string['user_credentials'] = 'Users with credentials';
+$string['users_proportion'] = '{$a->with_credentials} of the {$a->total_users} users in the system have some credential';
+$string['publishers'] = 'Publishers';
+$string['no_publishers'] = 'There isn\'t any publisher';
+$string['without_credentials'] = 'Users without credentials';
+$string['with_credentials'] = 'Users with credentials';
+$string['good_connection'] = 'Connection succeeded';
+$string['bad_connection'] = 'Connection fail';
+$string['bad_wsdl_connection'] = 'Check authentication web services address';
+$string['books'] = 'books';
+$string['check_publishers'] = 'Check the connection';
+$string['wait_please'] = 'This action could take some minutes';
+$string['marsupial_bookswarning'] = '<strong>WARNING</strong>: If you detect some missing book after updating the list, contact with your content provider.';
 
 $string['provider_books'] = 'Llibres del proveïdor {$a}';
 $string['manage_credentials'] = 'Administració de les credencials';
@@ -133,10 +134,11 @@ $string['keymanager_assined_user'] = '{$a} credencials assignades';
 $string['keymanager_no_assigned_user'] = '{$a} credencials pendents d\'assignar';
 $string['keymanager_selected_for_assign'] = '{$a} credencials seleccionades';
 $string['keymanager_select_course'] = 'Tria curs...';
+$string['tracer'] = 'Guarda el seguiment del servei web';
+$string['tracerdesc'] = 'Guarda el seguiment del servei web';
 $string['filter'] = 'Filtra';
 $string['keymanager_import_title'] = 'Importació de credencials';
 $string['keymanager_import_explanation'] = 'Seleccioneu el fitxer a importar i premeu el botó <strong>Importa</strong><br>(Mida màxima: {$a}Mb)';
-$string['keymanager_import_explanation_max_file_size'] = '';
 $string['keymanager_import_button'] = 'Carrega credencials';
 $string['keymanager_import_error_11'] = 'Llibre desconegut.';
 $string['keymanager_import_error_13'] = 'Usuari/ària {$a} desconegut.';
@@ -154,8 +156,6 @@ $string['keymanager_import_message_error'] = '<strong>S\'han afegit correctament
 $string['keymanager_import_resum_msg'] = 'Esteu segurs que voleu importar les {$a} credencials?';
 $string['keymanager_addrepitedcredential_message'] = 'Aquesta credencial ja existeix al sistema. Voleu afegir-la de totes formes?';
 $string['publisher'] = 'Editorial';
-$string['tracer'] = 'Guarda el seguiment del servei web';
-$string['tracerdesc'] = 'Guarda el seguiment del servei web';
 $string['book'] = 'Llibre (ISBN)';
 $string['assigned'] = 'Assignades';
 $string['totals'] = 'Totals';
@@ -172,6 +172,7 @@ $string['maxselected_js_error_part1'] = 'No es pot desar aquesta assignació, el
 $string['maxselected_js_error_part2'] = 'i has seleccionat';
 $string['maxselected_js_error_part3'] = 'usuaris';
 $string['keymanager_assing_nouser'] = 'No s\'ha seleccionat cap usuari/ària';
+
 $string['checkcredentialko_messageempty'] = 'La credencial no pot estar buida';
 $string['rcommon_data_store_log'] = 'Directori per desar el seguiment';
 $string['rcommon_data_store_log_desc'] = 'Indiqueu el directori per desar el seguiment';
@@ -183,6 +184,7 @@ $string['unit'] = 'Unitat';
 $string['activity'] = 'Activitat';
 
 $string['importcsv'] = 'Importa des d\'un fitxer CSV';
+$string['csvline'] = 'Línia';
 $string['importcsv_help'] = "<p>El fitxer d'importació ha de ser un CSV codificat amb UTF-8 i amb els camps seg&uuml;ents separats per punts i comes (;):</p>
 <pre>isbn;credential;username;userid;pack;packid</pre>
 <ul>
@@ -207,4 +209,34 @@ Els possibles missatges d'error que es poden produir són:</p>
     <li>Fitxer buit</li>
 </ul>
 <p>Cal tenir en compte que si hi ha errors, caldrà revisar-los i reparar-los per poder continuar amb el procés d'importació.</p>";
-$string['addeddate']        = 'Afegit';
+$string['addeddate'] = 'Afegit';
+
+$string['marsupial_not_enabled'] = 'El Marsupial no està activat';
+
+// Deprecated lang strings
+$string['exit'] = 'Exit';
+$string['insertkeybtn'] = 'Add the key';
+$string['loading'] = 'Loading, please wait...';
+$string['selectpublisher'] = 'Select a publisher...';
+$string['selectpublisherdescription'] = 'To download all the book structures it is necessary to select a publisher';
+$string['selectpublisheredit'] = 'Select a publisher to edit his info';
+$string['marsupialusersync'] = 'Synchronize with &Agrave;tria';
+$string['marsupialupdate_publisher'] = 'Update suppliers';
+$string['marsupialpublisher'] = 'Suppliers';
+$string['marsupialget_credentials'] = 'Update credentials';
+$string['back_to_stats'] = 'Go back';
+$string['keymanager_import_error_1'] = 'It was imposible to upload the file because the file size is highest than the max file size allowed by the server rigths';
+$string['keymanager_import_error_2'] = 'It was imposible to upload the file because the file size is highest than the max file size allowed by the server rigths.';
+$string['keymanager_import_error_3'] = 'It was imposible to upload the file because it was just uploaded a part of the total file';
+$string['keymanager_import_error_4'] = 'It was imposible to upload the file because it was not uploaded';
+$string['keymanager_import_error_5'] = 'It was imposible to upload the file because the file was not found in the temp folder';
+$string['keymanager_import_error_6'] = 'It was imposible to upload the file because there are not write rigths in the server';
+$string['keymanager_import_error_7'] = 'It was imposible to upload the file because the server stops the uploading because a unknow problem was throwed';
+$string['keymanager_import_error_8'] = 'It was imosible to read the file because a unkown problem was thorwed by the server';
+$string['keymanager_import_error'] = 'It was imposible to upload the file because a unkown problem was throwed by the server';
+$string['keymanager_import_error_9'] = 'It was imposible to import the file, some obligatory fields are required';
+$string['keymanager_import_error_10'] = 'Empty ISBN (obligatory field)';
+$string['keymanager_import_error_12'] = 'Username and userid empty';
+$string['keymanager_import_error_14'] = 'Unknown user {$a}';
+$string['keymanager_import_error_18'] = 'Unkown ISBN {$a}';
+$string['keymanager_import_resum'] = 'Summary';

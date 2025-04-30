@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_messageinbound', language 'zh_cn', version '4.4'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -60,6 +60,7 @@ $string['messageinboundenabled_desc'] = '接收邮件处理程序必须开启才
 $string['messageinboundgeneralconfiguration'] = '基本配置';
 $string['messageinboundgeneralconfiguration_desc'] = '站内消息处理程序允许您在Moodle系统内接收和处理email。它可以用来以email来回复讨论区的贴文，或添加文件到用户的私人文件。';
 $string['messageinboundhost'] = '接收邮件服务器';
+$string['messageinboundhostoauth_help'] = 'OAuth 2服务用于访问IMAP服务器，使用XOAUTH2身份验证。如果服务还不存在，则需要创建它。';
 $string['messageinboundhostpass'] = '用户密码';
 $string['messageinboundhostpass_desc'] = '这是你的服务提供商提供给你的密码，用来登录你的邮件帐号';
 $string['messageinboundhostssl'] = '使用SSL';
@@ -102,10 +103,10 @@ $string['replysubjectprefix'] = '回复：';
 $string['requirevalidation'] = '验证发件人地址';
 $string['ssl'] = 'SSL（自动检测SSL版本）';
 $string['sslv2'] = 'SSLv2（强制使用SSL第2版）';
-$string['sslv3'] = 'SSLv3（强制使用SSL第3版）';
+$string['sslv3'] = 'SSLv3（强制使用SSLv3）';
 $string['taskcleanup'] = '清除没有经过验证已接收的email';
 $string['taskpickup'] = '收取邮件';
 $string['tls'] = 'TLS (TLS; 经由未加密的管道，开始进行协议层次的协商；启动安全连接时所建议的方式)';
-$string['tlsv1'] = 'TLSv1 (以TLS 版本1.x 连接到服务器)';
+$string['tlsv1'] = 'TLSv1（直接连接到 TLS 服务器版本 1.x）';
 $string['validateaddress'] = '验证发信者邮件地址';
 $string['validateaddress_help'] = '当从一用户收到一封email时，Moodle会比较发信者的地址和他们个人档案里的地址是否相同，以进行验证。 若两个地址不吻合，那么那个发信者会收到一个通知，以确认他们是否确实发出这封email。 若这个设定被关闭，Moodle就不会检查发信者的地址。';

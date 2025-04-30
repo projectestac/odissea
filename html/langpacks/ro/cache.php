@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ro', version '4.1'.
+ * Strings for component 'cache', language 'ro', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'Extensii permise și plugi
 $string['cachedef_contextwithinsights'] = 'Context cu perspective';
 $string['cachedef_course_image'] = 'Imaginile cursului';
 $string['cachedef_course_user_dates'] = 'Datele utilizatorului pentru cursuri setate la modul date relative';
+$string['cachedef_courseactionsinstances'] = 'Acțiuni asupra instanțelor de curs încărcate';
 $string['cachedef_coursecat'] = 'Lista categoriilor de curs pentru un anumit utilizator';
 $string['cachedef_coursecatrecords'] = 'Înregistrări categorii de curs';
 $string['cachedef_coursecattree'] = 'Arbore categorii curs';
 $string['cachedef_coursecompletion'] = 'Status-ul completării cursului';
 $string['cachedef_coursecontacts'] = 'Lista de contacte pentru curs';
 $string['cachedef_courseeditorstate'] = 'Chei de memorie cache a stării cursului de sesiune pentru a detecta modificările cursului în front-end';
+$string['cachedef_coursehiddengroups'] = 'Numărul de grupuri dintr-un curs care au vizibilitatea restricționată';
 $string['cachedef_coursemodinfo'] = 'Informații acumulate despre module și secțiuni pentru fiecare curs';
 $string['cachedef_coursesectionspreferences'] = 'Preferințe pentru secțiunea de curs';
 $string['cachedef_databasemeta'] = 'Informații meta database';
-$string['cachedef_deprecatedcapabilities'] = 'Lista depreciată de capabilități ale sistemului';
 $string['cachedef_eventinvalidation'] = 'Invalidare eveniment';
 $string['cachedef_externalbadges'] = 'Ecusoane externe pentru un anumit utilizator';
 $string['cachedef_file_imageinfo'] = 'Informații despre fișierele imagini, de exemplu dimensiune';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'Interogări de litere de notă';
 $string['cachedef_gradesetting'] = 'Configurări ale notelor la curs';
 $string['cachedef_groupdata'] = 'Informații despre grupul de curs';
 $string['cachedef_h5p_content_type_translations'] = 'Traduceri de biblioteci de tip conținut H5P';
+$string['cachedef_h5p_libraries'] = 'Biblioteci H5P';
 $string['cachedef_h5p_library_files'] = 'Fișierele din bibliotecile H5P';
+$string['cachedef_hookcallbacks'] = 'Hook callbacks';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - conținut șters';
 $string['cachedef_langmenu'] = 'Lista limbilor disponibile';
 $string['cachedef_license'] = 'Lista cu licențele';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'Se blochează';
 $string['cachedef_message_processors_enabled'] = 'Starea activată a procesoarelor de mesaje';
 $string['cachedef_message_time_last_message_between_users'] = 'Timp creat pentru cel mai recent mesaj dintr-o conversație';
 $string['cachedef_modelfirstanalyses'] = 'Prima analiză după model și element analizabil';
+$string['cachedef_moodlenet_usercanshare'] = 'Utilizatorii pot partaja resurse în MoodleNet';
+$string['cachedef_navigation_cache'] = 'Memoria cache de navigare';
 $string['cachedef_navigation_expandcourse'] = 'Cursuri de navigare extensibile';
 $string['cachedef_observers'] = 'Observatori evenimente';
 $string['cachedef_plugin_functions'] = 'Plugin-uri callbacks disponibile';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'Lista utilizatorilor suspendați de la 
 $string['cachedef_tagindexbuilder'] = 'Căutați rezultatele pentru elementele etichetate';
 $string['cachedef_tags'] = 'Etichete pentru colecții și zone';
 $string['cachedef_temp_tables'] = 'Tabele temporare în memoria cache';
+$string['cachedef_theme_usedincontext'] = 'O temă a fost folosită în context pentru a suprascrie tema implicită';
 $string['cachedef_user_course_content_items'] = 'Elementele de conținut ale utilizatorului (activități, resurse și subtipurile acestora) pe curs';
 $string['cachedef_user_favourite_course_content_items'] = 'Elementele evidențiați ai utilizatorului';
 $string['cachedef_user_group_groupings'] = 'Grupurile și grupările utilizatorului pe curs';

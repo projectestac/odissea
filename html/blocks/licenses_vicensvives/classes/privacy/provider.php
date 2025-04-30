@@ -20,8 +20,6 @@
 
 namespace block_licenses_vicensvives\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for block_licenses_vicensvives implementing null_provider.
  */

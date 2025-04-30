@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ur', version '4.1'.
+ * Strings for component 'survey', language 'ur', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'اصلی';
 $string['actualclass'] = 'کلاس اصل';
 $string['actualstudent'] = '{$a} اصل';
 $string['allquestionrequireanswer'] = 'تمام سوالات ضروری ہیں اور ان کا جواب دینا ضروری ہے۔';
-$string['allquestions'] = 'تمام سوالات ترتیب میں، تمام طلباء';
 $string['allscales'] = 'تمام سکیلز، تمام طلباء';
 $string['alreadysubmitted'] = 'آپ یہ سروے پہلے ہی جمع کر چکے ہیں';
 $string['analysisof'] = '{$a} کا تجزیہ';
@@ -95,7 +94,6 @@ $string['ciq5'] = 'کس واقعہ نے آپ کو سب سے زیادہ حیرا�
 $string['ciq5short'] = 'حیران کن لمحہ';
 $string['ciqintro'] = 'اس کلاس میں حالیہ واقعات کے بارے میں سوچتے ہوئے، نیچے دیے گئے سوالات کے جواب دیں۔';
 $string['ciqname'] = 'نازک واقعات';
-$string['clicktocontinue'] = 'جاری رکھنے کے لیے یہاں کلک کریں';
 $string['clicktocontinuecheck'] = 'چیک کرنے اور جاری رکھنے کے لیے یہاں کلک کریں';
 $string['colles1'] = 'میری تعلیم ان مسائل پر مرکوز ہے جن میں میری دلچسپی ہے۔';
 $string['colles10'] = 'میں دوسرے طلباء سے اپنے خیالات کی وضاحت کرنے کو کہتا ہوں۔';
@@ -253,4 +251,3 @@ $string['surveytype_help'] = 'سروے کی 3 دستیاب اقسام ہیں: * 
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'اس سروے کا جواب دینے کا شکریہ، {$a}';
 $string['time'] = 'وقت';
-$string['viewsurveyresponses'] = '{$a} سروے کے جوابات دیکھیں';

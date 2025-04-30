@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', version '4.1'.
+ * Strings for component 'data', language 'ca', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -194,8 +194,8 @@ $string['fieldheightlistview'] = 'Alçada en visualització de llistes';
 $string['fieldheightsingleview'] = 'Alçada en visualització d\'una entrada';
 $string['fieldids'] = 'ID dels camps';
 $string['fieldmappings'] = 'Mapatge de camps';
-$string['fieldmappings_help'] = 'Aquest menú us ajuda a preservar les dades de la base de dades. Per mantenir les dades d\'un camp, l\'heu de mapar en un altre camp, on apareixeran les dades. Qualsevol camp es pot deixar en blanc, sense informació copiada des d\'un altre. Qualsevol camp de l\'original que no estigui mapat en un altre es perdrà i totes les seves dades s\'esborraran.
-Només podeu mapar camps que tinguin el mateix tipus, i cada selector contindrà camps diferents. També heu de tenir cura de no mapar un camp original en més d\'un camp dels nous.';
+$string['fieldmappings_help'] = 'Aquest menú us permet conservar les dades de la base de dades existent. Per conservar les dades d\'un camp, l\'heu de mapar a un camp nou, on apareixeran les dades. També es pot deixar qualsevol camp en blanc, sense que hi hagi cap informació copiada. Qualsevol camp antic no assignat a un de nou es perdrà i totes les seves dades s\'eliminaran.
+Només podeu mapar camps del mateix tipus, de manera que cada menú desplegable tindrà camps diferents. A més, heu de tenir cura de no intentar assignar un camp antic a més d\'un camp nou.';
 $string['fieldname'] = 'Nom del camp';
 $string['fieldnotmatched'] = 'Aquests camps del fitxer no es troben en aquesta base de dades: {$a}';
 $string['fieldoptions'] = 'Opcions (una per línia)';
@@ -397,7 +397,6 @@ $string['timemodified'] = 'Hora de la modificació';
 $string['todatabase'] = 'en aquesta base de dades';
 $string['type'] = 'Tipus de camp';
 $string['undefinedprocessactionmethod'] = 'No hi ha un mètode definit en Data_Preset per gestionar l\'acció "{$a}"';
-$string['unsupportedexport'] = '({$a->fieldtype}) no pot ser exportat.';
 $string['updatefield'] = 'Actualitza un camp existent';
 $string['uploadfile'] = 'Penja un fitxer';
 $string['uploadrecords'] = 'Carrega entrades';

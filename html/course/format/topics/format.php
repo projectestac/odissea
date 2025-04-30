@@ -52,24 +52,9 @@ course_create_sections_if_missing($course, 0);
 
 $renderer = $PAGE->get_renderer('format_topics');
 
-// XTEC ************ AFEGIT - Show current section if none is selected
-// 2012.08.20 @sarjona
-if ($course->coursedisplay == COURSE_DISPLAY_MULTIPAGE) {
-    $notifyeditingon = optional_param('notifyeditingon', -1, PARAM_BOOL);
-    if ($edit < 0 && $notifyeditingon < 0 && empty($displaysection)) {
-        $displaysection = $course->marker;
-    } else if ($displaysection == -1) {
-        $displaysection = 0;
-    }
-}
-// ************ FI
-
-if (!empty($displaysection)) {
-    $format->set_section_number($displaysection);
+if (!is_null($displaysection)) {
+    $format->set_sectionnum($displaysection);
 }
 $outputclass = $format->get_output_classname('content');
 $widget = new $outputclass($format);
 echo $renderer->render($widget);
-
-// Include course format js module.
-$PAGE->requires->js('/course/format/topics/format.js');

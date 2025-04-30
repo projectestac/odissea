@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ko', version '4.1'.
+ * Strings for component 'survey', language 'ko', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = '실적';
 $string['actualclass'] = '학급 실적';
 $string['actualstudent'] = '{$a} 실적';
 $string['allquestionrequireanswer'] = '모든 질문이 필요하며 답을 해야 합니다.';
-$string['allquestions'] = '모든 질문들을 순서대로, 모든 학생들에게';
 $string['allscales'] = '모든 등급들, 모든 학생들';
 $string['alreadysubmitted'] = '이미 이 조사에 응답했음';
 $string['analysisof'] = '{$a} 의 분석';
@@ -97,7 +96,6 @@ $string['ciq5'] = '어떤 사건에 가장 놀랐습니까?';
 $string['ciq5short'] = '놀란 순간';
 $string['ciqintro'] = '이 교실에서  최근 이벤트에 대해 생각해 볼 때, 아래의 질문에 답하시오';
 $string['ciqname'] = '중요 사건들';
-$string['clicktocontinue'] = '계혹하려면 이곳을 클릭';
 $string['clicktocontinuecheck'] = '확인과 계속하길 원하면 이곳을 클릭';
 $string['colles1'] = '흥미있는 주제에 관심을 둔다';
 $string['colles10'] = '그들의 생각을 설명해 달라고 부탁한다.';
@@ -262,4 +260,3 @@ $string['surveytype_help'] = '3가지 조사 유형이 있습니다.
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = '{$a} 님, 조사에 응답해 주셔서 감사합니다.';
 $string['time'] = '시간';
-$string['viewsurveyresponses'] = '{$a} 조사 응답 열람';

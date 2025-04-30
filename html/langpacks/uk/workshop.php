@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'uk', version '4.1'.
+ * Strings for component 'workshop', language 'uk', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Запізнілі відповіді';
 $string['latesubmissions_desc'] = 'Дозволити відповіді після кінцевого терміну';
 $string['latesubmissions_help'] = 'Якщо включено, то автор може здати свою роботу після кінцевого терміну або під час етапу оцінювання. Але прострочені відповіді не можуть бути змінені.';
 $string['latesubmissionsallowed'] = 'Запізнілі відповіді дозволено';
-$string['legacyallocationplugincron'] = 'Застарілий розподіл семінару cron';
 $string['maxbytes'] = 'Максимальний розмір долученого файлу';
 $string['modulename'] = 'Семінар';
 $string['modulename_help'] = '<p>Модуль <b>Семінар</b> дозволяє студентам не тільки виконувати власну роботу, а й оцінювати результати роботи інших студентів. Проведення семінару сприяє координації колективу та дозволяє різноманітними способами оцінювати роботи.</p>

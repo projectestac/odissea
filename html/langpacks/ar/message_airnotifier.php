@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ar', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'ar', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,8 +45,9 @@ $string['devicetoken'] = 'ترميز الجهاز';
 $string['donotsendnotification'] = 'لا ترسل أي إشعارات على الإطلاق';
 $string['enableprocessor'] = 'تمكين إشعارات الجوال';
 $string['encryptnotifications'] = 'تشفير الإشعارات';
+$string['encryptnotifications_help'] = 'تمكين التشفير من طرف لطرف لإشعارات التطبيق. قد تتم إزالة بعض البيانات من الإشعارات إذا تعذر تشفيرها.';
 $string['encryptprocessing'] = 'للأجهزة التي لا تدعم التشفير';
-$string['encryptprocessing_desc'] = 'الإشعارات المشفرة تتطلب على الأقل أندرويد 8 أو  iOS 13، مع تطبيق مودل ذي الإصدار 4.2 فصاعدًا.';
+$string['encryptprocessing_desc'] = 'الإشعارات المشفرة تتطلب على الأقل أندرويد 8 أو iOS 13، مع تطبيق مودل ذي الإصدار 4.2 فصاعدًا.';
 $string['errorretrievingkey'] = 'وقع خطأ عند إحضار مفتاح الوصول. ينبغي أن يكون موقعك مسجلاً لاستعمال هذه الخدمة. إن كان موقعك مسجل مسبقاً، لطفاً، حاول تحديث تسجيلك. كبديل، يمكنك الحصول على مفتاح الوصول عبر إنشاء حساب في <a href="https://apps.moodle.com">بوابة تطبيقات مودل</a>.';
 $string['keyretrievedsuccessfully'] = 'تم الحصول على مفتاح الوصول بنجاح. للوصول إلى إحصائيات استعمال تطبيق مودل، لطفاً، أنشئ حساباً في <a href="https://apps.moodle.com">بوابة تطبيقات مودل</a>.';
 $string['messageprovidersempty'] = 'ليست هناك إشعارات جوال مُمَكَّنة في تفضيلات الإشعارات الافتراضية.';

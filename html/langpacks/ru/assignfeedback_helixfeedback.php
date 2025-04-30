@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_helixfeedback', language 'ru', version '4.1'.
+ * Strings for component 'assignfeedback_helixfeedback', language 'ru', version '4.4'.
  *
  * @package     assignfeedback_helixfeedback
  * @category    string

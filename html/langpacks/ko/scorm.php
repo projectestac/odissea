@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ko', version '4.1'.
+ * Strings for component 'scorm', language 'ko', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -92,7 +92,6 @@ $string['details'] = 'SCO 트랙 세부사항';
 $string['directories'] = '연결 경로 보임';
 $string['disabled'] = '비활성화됨';
 $string['display'] = '진열';
-$string['displayactivityname'] = '활동이름 표시';
 $string['displayattemptstatus'] = '시도 상황 표시';
 $string['displayattemptstatus_help'] = '이 설정은 사용자 시도에 대한 요약이 내 공부방혹은 스콤 초기 페이지의 강좌개요 블록에 표시되도록 합니다.';
 $string['displayattemptstatusdesc'] = '사용자 시도에 대한 요약이 내 공부방혹은 스콤 초기 페이지의 강좌개요 블록에 표시될지.';
@@ -169,7 +168,6 @@ $string['identifier'] = '질문 식별자';
 $string['incomplete'] = '미완성됨';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = '정보';
 $string['interactions'] = '상호작용';
 $string['invalidactivity'] = '스콤 활동이 틀립니다.';
 $string['invalidhacpsession'] = '잘못된 HACP 세션';

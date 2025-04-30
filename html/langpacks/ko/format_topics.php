@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ko', version '4.1'.
+ * Strings for component 'format_topics', language 'ko', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,12 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = '토픽 추가';
 $string['currentsection'] = '이 주제';
-$string['deletesection'] = '토픽 삭제';
-$string['editsection'] = '토픽 수정';
-$string['editsectionname'] = '토픽 이름 수정';
 $string['hidefromothers'] = '토픽 숨김';
+$string['legacysectionname'] = '주제';
 $string['page-course-view-topics'] = '토픽형식으로 모든 강좌의 주 페이지';
 $string['page-course-view-topics-x'] = '토픽 형식의 모든 강좌';
 $string['pluginname'] = '토픽 형식';

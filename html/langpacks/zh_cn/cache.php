@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', version '4.1'.
+ * Strings for component 'cache', language 'zh_cn', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,12 +47,14 @@ $string['cachedef_contentbank_enabled_extensions'] = '在内容库中允许扩�
 $string['cachedef_contextwithinsights'] = '洞察力上下文';
 $string['cachedef_course_image'] = '课程图片';
 $string['cachedef_course_user_dates'] = '课程的用户日期设置为相对日期模式';
+$string['cachedef_courseactionsinstances'] = '已加载的课程操作实例';
 $string['cachedef_coursecat'] = '特定用户的课程目录列表';
 $string['cachedef_coursecatrecords'] = '课程目录记录';
 $string['cachedef_coursecattree'] = '课程目录树';
 $string['cachedef_coursecompletion'] = '课程完成状态';
 $string['cachedef_coursecontacts'] = '课程联系人列表';
 $string['cachedef_courseeditorstate'] = '会话课程状态缓存键来检测前端的课程变化';
+$string['cachedef_coursehiddengroups'] = '可见性受限的课程中的组数';
 $string['cachedef_coursemodinfo'] = '有关每一个课程章节和单元的汇总信息';
 $string['cachedef_coursesectionspreferences'] = '课程部分首选项';
 $string['cachedef_databasemeta'] = '数据库元信息';
@@ -65,7 +67,9 @@ $string['cachedef_grade_letters'] = '等级查询';
 $string['cachedef_gradesetting'] = '课程等级设置';
 $string['cachedef_groupdata'] = '课程组信息';
 $string['cachedef_h5p_content_type_translations'] = 'H5P 内容类型库翻译';
+$string['cachedef_h5p_libraries'] = 'H5P 库';
 $string['cachedef_h5p_library_files'] = 'H5P库文件';
+$string['cachedef_hookcallbacks'] = '钩子回调';
 $string['cachedef_htmlpurifier'] = 'HTML净化器-清除不必要的内容';
 $string['cachedef_langmenu'] = '可用的语言列表';
 $string['cachedef_license'] = '许可证列表';
@@ -73,6 +77,8 @@ $string['cachedef_locking'] = '锁定中';
 $string['cachedef_message_processors_enabled'] = '消息处理器启用状态';
 $string['cachedef_message_time_last_message_between_users'] = '对话中最近的消息创建的时间';
 $string['cachedef_modelfirstanalyses'] = '按模型和可分析的第一次分析';
+$string['cachedef_moodlenet_usercanshare'] = '用户可以将资源共享到 MoodleNet';
+$string['cachedef_navigation_cache'] = '导航缓存';
 $string['cachedef_navigation_expandcourse'] = '浏览可以展开的课程清单';
 $string['cachedef_observers'] = '事件观察者';
 $string['cachedef_plugin_functions'] = '插件允许回调';
@@ -90,6 +96,7 @@ $string['cachedef_suspended_userids'] = '列出每一课程的已休学用户';
 $string['cachedef_tagindexbuilder'] = '加标签的项目搜索结果';
 $string['cachedef_tags'] = '标签收藏和区域';
 $string['cachedef_temp_tables'] = '临时数据表缓存';
+$string['cachedef_theme_usedincontext'] = '已在上下文中使用主题来覆盖默认主题';
 $string['cachedef_user_course_content_items'] = '每个课程的用户内容项（活动、资源及其子类型）';
 $string['cachedef_user_favourite_course_content_items'] = '用户加星标的项目';
 $string['cachedef_user_group_groupings'] = '用户分组及每课程分组';

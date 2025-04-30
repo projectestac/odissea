@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ca', version '4.1'.
+ * Strings for component 'format_tiles', language 'ca', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Afegeix seccions';
+$string['addsections'] = 'Afegeix una secció';
 $string['all'] = 'Tots';
+$string['allcomplete'] = 'Tot complet';
 $string['allowphototiles_desc'] = 'Si se selecciona aquesta opció, els professors podran pujar-hi una foto perquè serveixi com a fons del mosaic. Així mateix, podran continuar emprant icones estàndard dins el mateix curs. (Si no se selecciona aquesta opció, només es permetrà l\'ús d\'icones del mosaic, i s\'ignorarà la configuració següent de fotos de mosaic.)';
 $string['asfraction'] = 'Mostra\'l com una fracció';
 $string['aspercentagedial'] = 'Mostra\'l com un % dins un cercle';
@@ -141,16 +142,6 @@ $string['icontitle-mobile-phone'] = 'Telèfon mòbil';
 $string['icontitle-mortar-board'] = 'Birret';
 $string['icontitle-music'] = 'Música';
 $string['icontitle-newspaper-o'] = 'Diari';
-$string['icontitle-number_1'] = 'Número 1';
-$string['icontitle-number_10'] = 'Número 10';
-$string['icontitle-number_2'] = 'Número 2';
-$string['icontitle-number_3'] = 'Número 3';
-$string['icontitle-number_4'] = 'Número 4';
-$string['icontitle-number_5'] = 'Número 5';
-$string['icontitle-number_6'] = 'Número 6';
-$string['icontitle-number_7'] = 'Número 7';
-$string['icontitle-number_8'] = 'Número 8';
-$string['icontitle-number_9'] = 'Número 9';
 $string['icontitle-pencil-square-o'] = 'Llapis a un quadrat';
 $string['icontitle-person'] = 'Persona';
 $string['icontitle-pie-chart'] = 'Gràfic circular';
@@ -189,10 +180,24 @@ $string['photoguidance_desc'] = '<p>Puja una fotografia en format <strong>horitz
 $string['photolibrary'] = 'Biblioteca de fotos';
 $string['picknewicon'] = 'Tria una icona nova';
 $string['picknewiconphoto'] = 'Tria una icona o una imatge de fons nova';
+$string['plugin_description'] = 'Un format visualment ric, on les seccions i les activitats es representen amb fitxes, fotos, icones i colors personalitzables.';
 $string['pluginname'] = 'Format de mosaics';
 $string['previoustopic'] = 'Tema anterior';
+$string['privacypolicy'] = 'Política de privacitat';
+$string['problemcourses'] = 'Cursos problemàtics';
 $string['progress'] = 'Progrés';
+$string['progresstitle'] = '{$a->numComplete} / {$a->numOutOf} elements completats ({$a->percent}%)';
+$string['reactivate'] = 'Reactiva';
+$string['register'] = 'Registra';
+$string['resetallcoursecolours'] = 'Reinicia tots els colors del curs';
+$string['resetalltiles'] = 'Reinicia les fotos de mosaics i les icones';
+$string['resetalltilessure'] = 'Confirmeu que voleu restablir les seccions d\'aquest curs? Això esborrarà totes les fotos de mosaics i restablirà totes les icones a les predeterminades. El contingut no s\'esborrarà. Aquesta acció és destructiva i no es pot desfer. Feu una còpia de seguretat del vostre curs primer si no n\'esteu segurs.';
+$string['resetcolours'] = 'Reinicia els colors';
 $string['revealcontents'] = 'Deixa veure els continguts del mosaic';
+$string['section0name'] = 'General';
+$string['sectionname'] = 'Secció';
+$string['sectionnumber'] = 'Secció / Número de secció';
+$string['setbackgroundphoto'] = 'Estableix la foto o icona';
 $string['showoverallprogress'] = 'Mostra l\'indicador general del progrés';
 $string['showoverallprogress_desc'] = 'Mostra l\'indicador «Progrés general %» a la part superior dreta del curs (el valor que s\'hi mostra representa l\'agregació del % complet de cada mosaic, basat en la compleció d\'activitats, no en la compleció del curs)';
 $string['tileicon'] = 'Icona per mostrar només en aquest mosaic';

@@ -74,7 +74,7 @@ $string['proxyurl'] = 'PROXY_URL:';
 $string['cachedir'] = 'CACHE_DIR:';
 $string['serviceurl'] = 'SERVICE_URL:';
 $string['wqsummary'] = 'This adds a generic Wiris Quizzes question. Only for test purpose. It will be hide from here.';
-$string['wirisquestionincorrect'] = 'Sorry! The system can not generate one of the questions of the quiz. <br />Maybe there is a temporary connection problem right now. <br />Maybe the question algorithm has a bug, and fails sometimes. <br />Maybe it will fail always. <br />Don\'t panic... <br />You can retry the quiz, without penalty, just clicking Continue. <br />You can also tell the Teachers that there is an issue with the question titled: \'{$a->questionname}\'';
+$string['wirisquestionincorrect'] = 'El sistema no ha podido generar una de las preguntas del cuestionario. Quizá es un problema temporal de conexión, pero también puede ser que haya un problema con la configuración de la pregunta. Puedes reintentar el cuestionario sin penalización apretando Continuar. Si este error persiste, contacta con tus profesores para notificarles que hay un problema con la pregunta {$a->questionname}.';
 $string['wirisquizzeserror'] = 'Sorry! There was an error in Wiris Quizzes.';
 $string['failedtoloadwirisquizzesfromxml'] = 'Failed to load Wiris Quizzes XML definition for question id';
 $string['connectionsettings'] = 'Connection settings';
@@ -105,3 +105,6 @@ $string['compatibility_settings'] = 'Opciones de compatibilidad';
 $string['compatibility_settings_text'] = '';
 $string['filtercodes_compatibility_enabled'] = 'Compatibilidad con el filtro Filter Codes';
 $string['filtercodes_compatibility_enabled_help'] = 'El filtro Filter Codes no es compatible con WirisQuizzes por defecto cuando la opción "Escape Tags" está activada. Esta opción de WirisQuizzes soluciona estos problemas. No se debe activar excepto en dicha situación.';
+
+$string['corruptquestion_edit'] = 'AVISO: Esta pregunta ha sido corrompida y se ha perdido su información matemática. Hemos tratado de recuperar todo lo posible, pero debes reescribir el algoritmo de CalcMe si tu pregunta tenía uno y que vuelvas a guardar las opciones de entrada y validación personalizadas. Contacta con tu administrador para más detalles.';
+$string['corruptquestion_attempt'] = 'La pregunta {$a->questionname} ha sido corrompida y no se ha podido cargar. Por favor, contacta con tus profesores para que la puedan arreglar.';

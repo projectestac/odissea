@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'ca', version '4.1'.
+ * Strings for component 'offlinequiz', language 'ca', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -93,7 +93,8 @@ $string['configpapergray'] = 'valor blanc del paper emprat per avaluar els fulls
 $string['configshuffleanswers'] = 'Mescla les respostes';
 $string['configshufflequestions'] = 'Si habiliteu aquesta opció, l’ordre de les preguntes dels grups de qüestionaris fora de línia es mesclarà de manera aleatòria cada vegada que torneu a crear una vista prèvia a la pestanya «Crea formularis».';
 $string['configshufflewithin'] = 'Si habiliteu aquesta opció, les parts que formen les preguntes individuals es mesclaran de manera aleatòria en crear els formularis de preguntes i respostes.';
-$string['configuseridentification'] = 'Una fórmula que defineix la identificació de l’usuari. Aquesta fórmula s’empra per assignar formularis de respostes als usuaris del sistema.';
+$string['configuseridentification'] = 'Una fórmula que defineix la identificació de l’usuari. Aquesta fórmula s’empra per assignar formularis de respostes als usuaris del sistema. La banda esquerra de l\'equació defineix el nombre de dígits (només nombres enters, fins a 10 dígits). La banda dreta de l\'equació ha de denotar un camp a la taula d\'usuaris de Moodle (per exemple: id, idnumber, phone1).
+A més, l\'equació també pot processar el prefix i el sufix que s\'afegeixen als dígits marcats (per exemple:  "a[7]=username" or "b[5]cd=username"). Aquestes concatenacions de cadenes de caràcters i nombres denoten el valor del camp emprat a la taula de l\'usuari que s\'utilitza per identificar-lo.';
 $string['confirmremovequestion'] = 'Confirmeu que voleu suprimir aquesta pregunta {$a}?';
 $string['copy'] = 'Copia';
 $string['copyright'] = '<strong>Atenció: els textos d’aquesta pàgina són només per al vostre ús personal. Com qualsevol altre text, aquestes preguntes estan subjectes a restriccions de drets d’autor. No teniu permís per fer-ne còpies ni per mostrar-les a altres persones.</strong>';
@@ -356,7 +357,6 @@ $string['noreview'] = 'No teniu permís per revisar aquest qüestionari fora de 
 $string['noscannedpage'] = 'No hi ha cap pàgina escanejada amb l’ID {$a}';
 $string['notagselected'] = 'No s’ha triat cap etiqueta';
 $string['nothingtodo'] = 'No s’ha de fer res.';
-$string['notonattendancelist'] = 'No apareix a la llista d’assistència:';
 $string['notxtfile'] = 'No hi ha cap fitxer TXT';
 $string['notyetgraded'] = 'Encara no s\'ha qualificat';
 $string['nozipfile'] = 'No hi ha cap fitxer ZIP';
@@ -740,6 +740,7 @@ $string['tabdownloadquizforms'] = 'Formularis';
 $string['tabeditgrades'] = 'Qualificacions';
 $string['tabeditgroupquestions'] = 'Preguntes';
 $string['tabofflinequizcontent'] = 'Preparació';
+$string['tabofflinequizcorrect'] = 'Corregeix';
 $string['tabofflinequizupload'] = 'Penja';
 $string['tabparticipantlists'] = 'Llistes d\'assistència';
 $string['tabparticipantscorrect'] = 'Corregeix';

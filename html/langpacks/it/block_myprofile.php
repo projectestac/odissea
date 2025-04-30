@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'it', version '4.1'.
+ * Strings for component 'block_myprofile', language 'it', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Visualizza impostazioni  per le regioni con contenuto';
 $string['display_address'] = 'Visualizza indirizzo';
-$string['display_aim'] = 'Visualizza AIM';
 $string['display_city'] = 'Visualizza città';
 $string['display_country'] = 'Visualizza nazione';
 $string['display_currentlogin'] = 'Visualizza login attuale';
 $string['display_email'] = 'Visualizza email';
 $string['display_firstaccess'] = 'Visualizza primo accesso';
-$string['display_icq'] = 'Visualizza ICQ';
 $string['display_idnumber'] = 'Visualizza codice identificativo';
 $string['display_institution'] = 'Visualizza istituzione';
 $string['display_lastaccess'] = 'Visualizza accesso più recente';
 $string['display_lastip'] = 'Visualizza IP più recente';
 $string['display_lastlogin'] = 'Visualizza ultimo login';
-$string['display_msn'] = 'Visualizza MSN';
 $string['display_phone1'] = 'Visualizza telefono';
 $string['display_phone2'] = 'Visualizza telefono cellulare';
 $string['display_picture'] = 'Visualizza immagine';
-$string['display_skype'] = 'Visualizza Skype';
-$string['display_yahoo'] = 'Visualizza Yahoo';
 $string['myprofile:addinstance'] = 'Aggiungere blocco Profilo personale';
 $string['myprofile:myaddinstance'] = 'Aggiungere blocco Profilo personale nella Dashboard';
 $string['myprofile_settings'] = 'Informazioni personali visibili';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', version '4.1'.
+ * Strings for component 'forum', language 'nl', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Ik wil mail van alle forums';
 $string['allunsubscribe'] = 'Ik wil van geen enkel forum mail';
 $string['allusers'] = 'Alle gebruikers';
 $string['alreadyfirstpost'] = 'Dit is al het eerste bericht in de discussie';
+$string['announcementsettings'] = 'Standaardinstellingen mededelingenforum';
+$string['announcementsettings_help'] = 'Deze instellingen definiëren de standaardinstellingen voor alle mededelingsforums.';
 $string['anyfile'] = 'Een bestand';
 $string['areaattachment'] = 'Bijlagen';
 $string['areapost'] = 'Berichten';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Leerlingen kunnen geblokkeerd worden voor het ver
 $string['blockperioddisabled'] = 'Niet blokkeren';
 $string['blogforum'] = 'Standaardforum, getoond in blogstijl';
 $string['bynameondate'] = 'door  {$a->name}  - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Forumdiscussies tellen mee';
 $string['cachedef_forum_is_tracked'] = 'Volgstatus van forum voor gebruiker';
 $string['calendardue'] = '{$a} moet klaar zijn';
 $string['cancelreply'] = 'Annuleer antwoord';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Beoordeler sluiten';
 $string['completiondetail:discussions'] = 'Start discussies: {$a}';
 $string['completiondetail:posts'] = 'Maak forumberichten: {$a}';
 $string['completiondetail:replies'] = 'Post antwoorden: {$a}';
-$string['completiondiscussions'] = 'Leerling moet discussies starten:';
+$string['completiondiscussions'] = 'Discussies starten';
 $string['completiondiscussionsdesc'] = 'Leerling moet minstens {$a} discussie(s) maken';
 $string['completiondiscussionsgroup'] = 'Discussies vereist';
 $string['completiondiscussionshelp'] = 'discussies vereist om te voltooien';
-$string['completionposts'] = 'Leerling moet discussies starten of beantwoorden:';
+$string['completionposts'] = 'Start discussies of post antwoorden';
 $string['completionpostsdesc'] = 'Leerling moet minstens {$a} discussie(s) of antwoord(en) posten';
 $string['completionpostsgroup'] = 'Berichten vereist';
 $string['completionpostshelp'] = 'discussies of antwoorden vereist voor voltooien';
-$string['completionreplies'] = 'Leerling moet antwoorden posten:';
+$string['completionpostsinforums'] = 'Plaats berichten op forums';
+$string['completionreplies'] = 'Reacties plaatsen';
 $string['completionrepliesdesc'] = 'Leerling moet minstens {$a} antwoord(en) posten';
 $string['completionrepliesgroup'] = 'Antwoorden vereist';
 $string['completionreplieshelp'] = 'antwoorden vereist voor voltooien';
@@ -265,6 +269,7 @@ $string['eventassessableuploaded'] = 'Er is inhoud gepost';
 $string['eventcoursesearched'] = 'Cursus doorzocht';
 $string['eventdiscussioncreated'] = 'Discussie gemaakt';
 $string['eventdiscussiondeleted'] = 'Discussie verwijderd';
+$string['eventdiscussionlockupdated'] = 'Discussievergrendeling bijgewerkt';
 $string['eventdiscussionmoved'] = 'Discussie verplaatst';
 $string['eventdiscussionpinned'] = 'Discussie vastgepind';
 $string['eventdiscussionsubscriptioncreated'] = 'Ingeschreven op de discussie';
@@ -272,6 +277,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Inschrijving op de discussie ve
 $string['eventdiscussionunpinned'] = 'Discussie pin losgemaakt';
 $string['eventdiscussionupdated'] = 'Discussie aangepast';
 $string['eventdiscussionviewed'] = 'Discussie bekeken';
+$string['eventforumsubscriptionupdated'] = 'Abonnementsmodus bijgewerkt';
 $string['eventpostcreated'] = 'Bericht gemaakt';
 $string['eventpostdeleted'] = 'Bericht verwijderd';
 $string['eventpostupdated'] = 'Bericht aangepast';
@@ -306,6 +312,7 @@ $string['forum:addinstance'] = 'Voeg een nieuw forum toe';
 $string['forum:addnews'] = 'Voeg mededelingen toe';
 $string['forum:addquestion'] = 'Voeg vraag toe';
 $string['forum:allowforcesubscribe'] = 'Inschrijven op forum verplichten toestaan';
+$string['forum:canmailnow'] = 'Kan zonder vertraging naar een vraag- en antwoordforum verzenden';
 $string['forum:canoverridecutoff'] = 'Berichten in forums plaatsen na de sluitingsdatum';
 $string['forum:canoverridediscussionlock'] = 'Antwoorden op gesloten discussies';
 $string['forum:canposttomygroups'] = 'Een bericht sturen naar alle groepen waar je toegang toe hebt';
@@ -492,7 +499,8 @@ $string['noattachments'] = 'Er zijn geen bijlagen bij dit bericht';
 $string['nodiscussions'] = 'Er zijn nog geen discussies in dit forum';
 $string['nodiscussionsstartedby'] = '{$a} heeft nog geen discussies gestart';
 $string['nodiscussionsstartedbyyou'] = 'Je hebt nog geen discussies gestart';
-$string['noguestpost'] = 'Sorry, gasten mogen geen berichten posten';
+$string['noguestpost'] = 'Sorry, gasten mogen geen berichten posten in dit forum.';
+$string['noguestpost:title'] = 'Inloggen om verder te gaan';
 $string['noguestsubscribe'] = 'Sorry, maar gasten mogen niet inschrijven.';
 $string['noguesttracking'] = 'Sorry, gasten kunnen de instellingen voor het volgen van forumberichten niet wijzigen.';
 $string['nomorepostscontaining'] = 'Er zijn geen berichten met \'{$a}\' meer gevonden';
@@ -550,9 +558,6 @@ $string['postbyuser'] = '{$a->post} door {$a->user}';
 $string['postincontext'] = 'Bekijk dit bericht in zijn context';
 $string['postisprivatereply'] = 'Dit is een privé-antwoord. (Leraren en anderen met het recht om privé-antwoorden te zien, kunnen het ook zien).';
 $string['postmailinfo'] = 'Dit is een kopie van een bericht op {$a}';
-$string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost in {$a->coursename}.
-
-Klik op volgende link om te antwoorden: {$a->replylink}';
 $string['postmailnow'] = '<p>Dit bericht zal onmiddellijk verstuurd worden naar iedereen die e-mail van dit forum wil.</p>';
 $string['postmailreply'] = 'Klik op deze link om te reageren: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

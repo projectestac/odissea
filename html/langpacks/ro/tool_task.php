@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ro', version '4.1'.
+ * Strings for component 'tool_task', language 'ro', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'Coada de cereri ad hoc este goală';
-$string['adhocqueueold'] = 'Cea mai veche sarcină este {$a->age}, care depășește {$a->max}';
+$string['adhocqueueold'] = 'Cea mai veche sarcină de lucru CRON neprocesată este {$a->age}, care depășește {$a->max}';
 $string['adhocqueuesize'] = 'Coada de activități ad hoc are {$a} sarcini';
 $string['adhoctaskid'] = 'Codul sarcinii ad hoc: {$a}';
+$string['adhoctaskrun'] = 'Sarcina de lucru ad hoc a fost inițiată';
 $string['adhoctasks'] = 'Sarcini ad hoc';
+$string['adhoctasksdue'] = 'Sarcini de lucru ad hoc cu dată limită';
+$string['adhoctasksfailed'] = 'Sarcini de lucru ad hoc eșuate';
+$string['adhoctasksfuture'] = 'Sarcini de lucru viitoare';
+$string['adhoctasksrunning'] = 'Sarcinile ad hoc rulează';
 $string['asap'] = 'ASAP';
+$string['backtoadhoctasks'] = 'Întoarce-te la sarcini de lucru ad hoc';
 $string['backtoscheduledtasks'] = 'Înapoi la sarcinile programate';
 $string['blocking'] = 'Blocare';
 $string['cannotfindthepathtothecli'] = 'Nu se poate găsi calea către executabilul CLI PHP, deci executarea sarcinii a fost întreruptă. Setați setarea „Calea către PHP CLI” în Administrarea site-ului / Server / Căi sistem.';
 $string['checkadhocqueue'] = 'Coadă de sarcini ad hoc';
 $string['checkcronrunning'] = 'Cronul rulează';
+$string['checklongrunningtaskcount'] = 'Sarcini cu durată de procesare lungă: {$a}';
+$string['checklongrunningtasks'] = 'Sarcini cu durată de procesare lungă';
 $string['checkmaxfaildelay'] = 'Sarcini maxim întârziere de eșec';
 $string['classname'] = 'Denumirea clasei';
 $string['clearfaildelay_confirm'] = 'Sigur doriți să ștergeți întârzierea de eșec pentru sarcina „{$a}”? După eliminarea întârzierii, sarcina va rula conform programului său normal.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Editați programul sarcinilor: {$a}';
 $string['enablerunnow'] = 'Permiteți „Rulați acum” pentru sarcinile programate';
 $string['enablerunnow_desc'] = 'Permite administratorilor să ruleze imediat o singură sarcină programată, mai degrabă decât să aștepte ca aceasta să ruleze conform programării. Funcția necesită setarea „Path to PHP CLI” (pathtophp) în căile de sistem. Sarcina rulează pe serverul web, deci este posibil să doriți să dezactivați această caracteristică pentru a evita potențiale probleme de performanță.';
 $string['faildelay'] = 'Întârziere în caz de nereușită';
+$string['failed'] = 'Eșuat';
 $string['fromcomponent'] = 'Din componenta: {$a}';
 $string['hostname'] = 'Nume gazdă';
 $string['lastcronstart'] = 'Data ultimei rulări a cron-ului';
 $string['lastruntime'] = 'Ultima rulare';
 $string['lastupdated'] = 'Ultima actualizare {$a}.';
 $string['nextruntime'] = 'Următoarea rulare';
+$string['noclassname'] = 'Nu este specificată denumirea clasei';
+$string['notasks'] = 'Nu există sarcini de rulat';
+$string['payload'] = 'Încărcare';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'Plugin dezactivat';
 $string['pluginname'] = 'Configurarea sarcinii programate';
 $string['privacy:metadata'] = 'Pluginul de configurare a sarcinilor programate nu stochează date personale.';
 $string['resettasktodefaults'] = 'Resetați programul de sarcini la valorile implicite';
 $string['resettasktodefaults_help'] = 'Aceasta va renunța la orice modificare locală și va reveni la programarea acestei sarcini la setările sale inițiale.';
+$string['run_adhoctasks'] = 'Rulează sarcini ad hoc';
+$string['runadhoc'] = 'Rulează sarcinile ad hoc acum?';
+$string['runadhoc_confirm'] = 'Procesul va rula pe server și poate dura ceva timp.';
+$string['runadhoctask'] = 'Rulează \'{$a->task}\' ID sarcină de lucru {$a->taskid}';
+$string['runadhoctasks'] = 'Se rulează toate sarcinile \'{$a}\'';
+$string['runadhoctasksfailed'] = 'Rulează \'{$a}\' procese eșuate';
 $string['runagain'] = 'Rulează din nou';
+$string['runclassname'] = 'Rulează toate task-urile';
+$string['runclassnamefailedonly'] = 'A eșuat rularea tuturor sarcinilor';
+$string['runningalltasks'] = 'Se rulează toate task-urile';
+$string['runningfailedtasks'] = 'Procese rulate eșuate';
 $string['runningtasks'] = 'Sarcini care rulează acum';
 $string['runnow'] = 'Se rulează acum';
 $string['runnow_confirm'] = 'Sigur doriți să rulați această sarcină „{$a}” acum? Sarcina va rula pe serverul web și poate dura ceva timp.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Executare model';
 $string['scheduled'] = 'Programat';
 $string['scheduledtaskchangesdisabled'] = 'Modificarea listei de sarcini CRON programate au fost împiedicate în configurația Moodle';
 $string['scheduledtasks'] = 'Sarcini CRON programate';
+$string['showall'] = 'Afișează toate sarcinile';
+$string['showfailedonly'] = 'Afișează procesele eșuate';
+$string['showsummary'] = 'Afișează rezumatul sarcinilor de lucru ad hoc';
+$string['slowtask'] = 'Sarcina CRON a rulat mai mult de {$a}';
 $string['started'] = 'Început';
+$string['taskage'] = 'Cât timp a rulat';
+$string['taskdetails'] = 'Sarcina CRON rulează mai mult de {$a->time} (max {$a->maxtime}): {$a->count}';
 $string['taskdisabled'] = 'Sarcina dezactivată';
-$string['taskfailures'] = '{$a} sarcină (i) eșuată (e)';
+$string['taskfailures'] = '{$a} sarcină(i) eșuată(e)';
+$string['taskid'] = 'Id task';
 $string['tasklogs'] = 'Jurnalele de activități';
 $string['tasknofailures'] = 'Nu există sarcini care eșuează';
+$string['taskrunningtime'] = 'Sarcina CRON a rulat timp de {$a}';
 $string['taskscheduleday'] = 'Zi';
 $string['taskscheduleday_help'] = 'Câmpul din ziua lunii pentru programarea sarcinilor. Câmpul utilizează același format ca unix cron. Câteva exemple sunt:
 

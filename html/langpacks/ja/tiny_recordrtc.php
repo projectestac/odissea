@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'ja', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'ja', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = '制約が指定されていません。';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'あなたのブラウザはHTTPSまたはローカルホスト以外でのこのプラグインの動作を許可していないようです。';
 $string['insecurealert_title'] = '安全ではない接続!';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'あなたはファイルアップロードの最大サイズ制限に到達しました。';
 $string['maxfilesizehit_title'] = 'レコーディングを停止しました。';
 $string['norecordingfound'] = '何か問題が発生しました。何もレコーディングされていません。';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'あなたのブラウザはWebRTCテクノロジを制限
 $string['nowebrtc_title'] = 'WebRTCがサポートされていません。';
 $string['onlyaudio'] = 'オーディオのみ';
 $string['onlyvideo'] = 'ビデオのみ';
-$string['pluginname'] = 'Tiny RecordRTC';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'RecordRTCプラグインはいかなる個人データも保存しません。';
 $string['recordagain'] = '再度レコーディングする';
 $string['recordagain_desc'] = 'あなたはすでにコンテンツをレコーディングしています。再度レコーディングした場合、このコンテンツは削除されます。本当にレコーディングをやりなおしてもよろしいですか?';

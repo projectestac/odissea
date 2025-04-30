@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'it', version '4.1'.
+ * Strings for component 'format_topcoll', language 'it', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Aggiungi sezione';
 $string['arrow'] = 'Freccia';
 $string['bulb'] = 'Lampadina';
 $string['center'] = 'Centrato';

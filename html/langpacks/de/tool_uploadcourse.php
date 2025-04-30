@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'de', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'de', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Wiederherstellen dieses Kurses nach dem Upload'
 $string['coursetemplatename_help'] = 'Geben Sie die Kurzbezeichnung eines bestehenden Kurses ein als Vorlage zur Erstellung aller Kurse.';
 $string['coursetorestorefromdoesnotexist'] = 'Der zur Wiederherstellung angegebene Kurs existiert nicht.';
 $string['courseupdated'] = 'Kurs aktualisiert';
+$string['courseuploadnotallowed'] = 'Keine Berechtigung, Kurse in den Kursbereich hochzuladen: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Ein Kurs mit diesem Kurznamen existiert bereits, aber Sie haben nicht das Recht, den vorhandenen Kurs über das Hochladen zu aktualisieren.';
 $string['createall'] = 'Alle Kurse anlegen, Kurznamen bei Bedarf inkrementieren';
 $string['createnew'] = 'Neue Kurse anlegen und vorhandene überspringen';
 $string['createorupdate'] = 'Neue Kurse anlegen oder vorhandene aktualisieren';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Zeichensatz (Encoding) der csv-Datei';
 $string['errorcannotcreateorupdateenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht angelegt oder aktualisiert werden.';
 $string['errorcannotdeleteenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht gelöscht werden.';
 $string['errorcannotdisableenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht deaktiviert werden-';
+$string['errorunsupportedmethod'] = 'Einschreibemethode \'{$a}\' wird beim CSV-Upload nicht unterstützt';
 $string['errorwhiledeletingcourse'] = 'Fehler beim Löschen des Kurses';
 $string['errorwhilerestoringcourse'] = 'Fehler beim Wiederherstellen des Kurses';
 $string['generatedshortnamealreadyinuse'] = 'Der erzeugte Kursname existiert bereits';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Der Aktualisierungsmodus erlaubt nicht,
 $string['updateonly'] = 'Nur vorhandene Kurse aktualisieren';
 $string['updatewithdataonly'] = 'Nur mit CSV-Daten aktualisieren';
 $string['updatewithdataordefaults'] = 'Mit CSV-Daten und Standardwerten aktualisieren';
+$string['uploadcourse:use'] = 'Tool zum Hochladen von Kursen verwenden';
 $string['uploadcourses'] = 'Kursliste hochladen';
 $string['uploadcourses_help'] = 'Kurse können als Textdatei angelegt werden. Die Textdatei sollte folgendes Format haben:
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'en', version '4.1'.
+ * Strings for component 'grouptool', language 'en', version '4.4'.
  *
  * @package     grouptool
  * @category    string
@@ -49,7 +49,7 @@ $string['already_occupied'] = 'The place in group <strong>{$a->grpname}</strong>
 $string['already_queued'] = '<strong>{$a->username}</strong> is already queued in group <strong>{$a->groupname}</strong>!';
 $string['already_registered'] = '<strong>{$a->username}</strong> is already registered in group <strong>{$a->groupname}</strong>!';
 $string['alwaysshowdescription'] = 'Always show description';
-$string['alwaysshowdescription_help'] = 'If disabled, the grouptool description above will only become visible to students on the "Registration start" date.';
+$string['alwaysshowdescription_help'] = 'If disabled, the assignment description above will only become visible to students on the "Registration start" date.';
 $string['asterisk_marks_moodle_registrations'] = 'Users with leading asterisk (*) are already registered in the respective Moodle-Group';
 $string['availabledate'] = 'Registration start';
 $string['availabledate_help'] = 'Begin of the registration period. After this date students are able to register themselves in the selected groups (if enabled).';
@@ -516,6 +516,7 @@ $string['registrations_missing'] = '{$a} registrations missing';
 $string['regpresent'] = 'User\'s already {$a}';
 $string['rename_failed'] = 'Rename failed!';
 $string['renamed_group'] = 'Renamed group!';
+$string['report'] = 'Grouptool report';
 $string['require_registration'] = 'Require registrations';
 $string['require_registration_help'] = 'The minimum amount of groups students need to register to in order to mark this activity as completed. Spots in queues are not considered by the rule. If the number is higher than 1, "Multiple registrations" needs to be activated and "Maximum groups to choose" needs to be greater or equal to this value';
 $string['reset_agrps'] = 'Reset active groups';

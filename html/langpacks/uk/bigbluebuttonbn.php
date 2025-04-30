@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'uk', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'uk', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,6 +44,7 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Публікувати запи�
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Зніміть захист записів';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Скасувати публікацію записів';
 $string['bigbluebuttonbn:view'] = 'Переглянути кімнату BigBlueButton';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Переглянути всі формати запису';
 $string['bigbluebuttondisablednotification'] = 'Модуль активності BigBlueButton було вимкнено, і будь-які існуючі курси BigBlueButton наразі недоступні. Перш ніж повторно ввімкнути цей плагін, переконайтеся, що ви прочитали та прийняли угоду про <a href="{$a}" target="_blank">обробку даних</a> з Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'Модуль активності BigBlueButton вимкнено.';
 $string['cachedef_currentfetch'] = 'Дані для переліку будь-яких нещодавно отриманих записів.';
@@ -81,6 +82,8 @@ $string['completionvalidatestatetriggered'] = 'Підтвердження зав
 $string['completionview'] = 'Вимагають перегляду';
 $string['completionview_desc'] = 'Студент повинен переглянути кімнату, щоб завершити її.';
 $string['completionview_event_desc'] = 'Переглянув кімнату.';
+$string['config_checksum_algorithm'] = 'Алгоритм контрольної суми сервера BigBlueButton';
+$string['config_checksum_algorithm_description'] = 'SHA1 сумісний зі старими серверами. SHA256 і SHA512 більш безпечні. SHA512 відповідає FIPS 140-2.';
 $string['config_default_messages'] = 'Повідомлення за замовчуванням';
 $string['config_default_messages_description'] = 'Встановити повідомлення за замовчування для діяльності';
 $string['config_disablecam_default'] = 'Вимкнути веб-камеру, увімкнену за замовчуванням';
@@ -109,7 +112,7 @@ $string['config_experimental_features_description'] = 'Конфігурація 
 $string['config_extended_capabilities'] = 'Розширені можливості';
 $string['config_extended_capabilities_description'] = 'Configuration for extended capabilities when the BigBlueButton server offers them.';
 $string['config_general'] = 'Загальні налаштування';
-$string['config_general_description'] = 'Ці параметри використовуються завжди.';
+$string['config_general_description'] = 'Щоб налаштувати BigBlueButton, ви можете використовувати власний сервер і облікові дані BigBlueButton або отримати облікові дані через <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">портал реєстрації Blindside Networks (відкривається у новому вікні)</a>.';
 $string['config_guestaccess_enabled'] = 'Зовнішній гостьовий доступ';
 $string['config_guestaccess_enabled_description'] = 'Дозвольте користувачам без облікового запису на вашому сайті отримати доступ до кімнати.';
 $string['config_hideuserlist_default'] = 'Приховати список користувачів увімкнено за замовчуванням';
@@ -144,6 +147,8 @@ $string['config_preuploadpresentation'] = 'Попереднє завантаже
 $string['config_preuploadpresentation_description'] = 'Ці параметри вмикають або вимикають параметри в інтерфейсі користувача, а також визначають значення за замовчуванням для цих параметрів. Функція працює, лише якщо сервер Moodle доступний для BigBlueButton.';
 $string['config_preuploadpresentation_editable'] = 'Можливість редагування презентації перед завантаженням';
 $string['config_preuploadpresentation_editable_description'] = 'Функцію попереднього завантаження презентації можна редагувати в інтерфейсі користувача, коли кімнату чи конференцію додано чи оновлено.';
+$string['config_profile_picture_enabled'] = 'Показати фотографії профілю';
+$string['config_profile_picture_enabled_description'] = 'Чи слід показувати фотографії профілів учасників під час сеансів BigBlueButton?';
 $string['config_recording'] = 'Запис';
 $string['config_recording_all_from_start_default'] = 'Почніть запис на початку';
 $string['config_recording_all_from_start_default_description'] = 'Чи слід увімкнути параметр «Почати запис з початку» за замовчуванням під час додавання нової кімнати BigBlueButton?';
@@ -162,6 +167,8 @@ $string['config_recording_protect_editable'] = 'Стан захищених за
 $string['config_recording_protect_editable_description'] = 'Якщо позначено, інтерфейс містить опцію для захисту/зняття захисту записів.';
 $string['config_recording_refresh_period'] = 'Період оновлення запису (у секундах)';
 $string['config_recording_refresh_period_description'] = 'Як часто потрібно запитувати сервер BigBlueButton, щоб оновити віддалену інформацію для запису?';
+$string['config_recording_safe_formats'] = 'Формати записів, доступні для перегляду всім';
+$string['config_recording_safe_formats_description'] = 'Виберіть формати, доступні для перегляду всім. Усі інші формати можуть переглядати лише вчителі та інші користувачі з можливостями mod/bigbluebuttonbn:viewallrecordingformats і mod/bigbluebuttonbn:managerecordings.';
 $string['config_recordingready_enabled'] = 'Надіслати сповіщення про доступний запис';
 $string['config_recordingready_enabled_description'] = 'Якщо ввімкнено, сповіщення буде надіслано, коли буде доступне посилання на запис. Для цієї функції потрібно ввімкнути сценарій post_publish_recording_ready_callback на сервері BigBlueButton.';
 $string['config_recordings'] = 'Показати записи';
@@ -309,6 +316,7 @@ $string['instance_type_default'] = 'Кімната із записами';
 $string['instance_type_recording_only'] = 'Тільки записи';
 $string['instance_type_room_only'] = 'Тільки кімната';
 $string['instanceprofilewithoutrecordings'] = 'Цей профіль екземпляра не може відображати записи';
+$string['managebbbextplugins'] = 'Керуйте плагінами розширення BigBlueButton';
 $string['messageprovider:instance_updated'] = 'Сесію BigBlueButton оновлено';
 $string['messageprovider:recording_ready'] = 'Доступний запис BigBlueButton';
 $string['minute'] = 'хвилина';
@@ -410,6 +418,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'Час ство�
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'Ідентифікатор користувача користувача, який ініціював подію.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Зберігає метадані про записи.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'Ідентифікатор користувача, який останній змінив запис.';
+$string['progress_createbigbluebuttonbn'] = 'Створення дії BigBlueButton ({$a})';
 $string['recordings_from_deleted_activities'] = 'Записи видалених дій';
 $string['recordingurlnotfound'] = 'URL-адреса запису недійсна.';
 $string['removedevents'] = 'Видалені події';
@@ -431,6 +440,8 @@ $string['sendnotification'] = 'Надіслати сповіщення';
 $string['settings'] = 'Налаштування BigBlueButton';
 $string['started_at'] = 'Почато';
 $string['starts_at'] = 'Починається';
+$string['subplugintype_bbbext'] = 'Розширення активності BigBlueButton';
+$string['subplugintype_bbbext_plural'] = 'Розширення діяльності BigBlueButton';
 $string['taskname:check_dismissed_recordings'] = 'Перевірте записи, які ще не знайдено';
 $string['taskname:check_pending_recordings'] = 'Отримати незавершені записи';
 $string['userlimitreached'] = 'Досягнуто дозволеної кількості користувачів у сеансі.';

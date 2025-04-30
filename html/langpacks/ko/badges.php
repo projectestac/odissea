@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ko', version '4.1'.
+ * Strings for component 'badges', language 'ko', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -135,7 +135,6 @@ $string['error:nosuchfield'] = '경고: 이 사용자의 개인정보 필드를 
 $string['error:nosuchmod'] = '경고: 이 활동은 더 이상 사용할 수 없습니다.';
 $string['error:nosuchrole'] = '경고: 이 역할은  더 이상 사용할 수 없습니다.';
 $string['error:save'] = '뱃지를 저장할 수 없습니다.';
-$string['evidence'] = '증거';
 $string['existingrecipients'] = '존재하는 뱃지 수여자';
 $string['expired'] = '만료됨';
 $string['expiredate'] = '이 뱃지는 {$a}에 만료됩니다.';
@@ -195,7 +194,6 @@ $string['notifymonthly'] = '매달';
 $string['notifyweekly'] = '매주';
 $string['potentialrecipients'] = '뱃지 수상 후보';
 $string['privacy:metadata:external:backpacks:badge'] = '뱃지 이름';
-$string['recipientdetails'] = '수신자 세부사항';
 $string['recipients'] = '뱃지 수상자';
 $string['relative'] = '상대 날짜';
 $string['requiredcourse'] = '적어도 하나의 강좌가 강좌세트 기준에 추가되어야 합니다.';

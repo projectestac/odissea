@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'zh_cn', version '4.1'.
+ * Strings for component 'quiz_grading', language 'zh_cn', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = '也显示已自动评分的题目';
 $string['attemptstograde'] = '待评分的试卷';
 $string['automaticallygraded'] = '已自动评分';
 $string['backtothelistofquestions'] = '回到题目列表';
-$string['bydate'] = '按日期';
-$string['bystudentfirstname'] = '按学生名字';
-$string['bystudentidnumber'] = '按学号';
-$string['bystudentlastname'] = '按学生姓氏';
 $string['cannotgradethisattempt'] = '不能给此试卷评分。';
 $string['cannotloadquestioninfo'] = '无法加载题目类型指定的题目信息';
 $string['changeoptions'] = '修改选项';
@@ -55,7 +51,6 @@ $string['gradingall'] = '此试题共被解答 {$a} 次。';
 $string['gradingattempt'] = '{$a->fullname}的第{$a->attempt}次答题';
 $string['gradingattemptsxtoyofz'] = '为{$a->of}次答题中的第{$a->from}次到第{$a->to}次评分';
 $string['gradingattemptwithcustomfields'] = '对{$a->fullname}（{$a->customfields}）的尝试次数{$a->attempt}。';
-$string['gradingattemptwithidnumber'] = '{$a->fullname}（{$a->idnumber}）的第{$a->attempt}次答题';
 $string['gradingnextungraded'] = '下 {$a} 份未评分试卷';
 $string['gradingnotallowed'] = '无权在该测验中手动评分回复';
 $string['gradingquestionx'] = '评分题目 {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = '找不到ID为{$a}的可评分题目';
 $string['noquestionsfound'] = '没有发现由人工评分的题目';
 $string['nothingfound'] = '没有东西可显示';
 $string['options'] = '选项';
-$string['orderattempts'] = '试卷顺序';
 $string['orderattemptsby'] = '按顺序尝试';
 $string['pluginname'] = '人工评分';
 $string['privacy:preference:order'] = '根据什么顺序显示需要评分的多次尝试';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = '每页题目数';
 $string['questionsthatneedgrading'] = '需要评分的题目';
 $string['questiontitle'] = '题目 {$a->number}："{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} 次 {$a->openspan}已评分{$a->closespan})。';
 $string['random'] = '随机的';
-$string['randomly'] = '随机';
 $string['saveandnext'] = '保存并转到下一页';
 $string['showstudentnames'] = '显示学生姓名';
 $string['tograde'] = '待评分';

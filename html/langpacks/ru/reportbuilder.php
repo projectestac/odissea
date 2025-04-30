@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ru', version '4.1'.
+ * Strings for component 'reportbuilder', language 'ru', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -53,6 +53,7 @@ $string['audiencelabel'] = '{$a->name}: {$a->description}';
 $string['audiencenotsaved'] = 'Адресаты не сохранены';
 $string['audiencesaved'] = 'Адресаты сохранены';
 $string['audienceupdated'] = 'Адресаты обновлены';
+$string['audienceusedbyschedule'] = 'Этот адресат получает этот отчет по рассылке';
 $string['cardview'] = 'Вид карточек';
 $string['cardview_help'] = 'Вид карточек позволяет определить макет отчета при просмотре на узких устройствах. Столбцы будут сворачиваться за установленным здесь пределом, при этом есть переключатель, позволяющий развернуть карточку для просмотра всех данных отчета.';
 $string['cardviewfirstcolumntitle'] = 'Заголовок первого столбца';
@@ -82,6 +83,7 @@ $string['courseidnumberewithlink'] = 'ID курса со ссылкой';
 $string['courseselect'] = 'Выбрать курс';
 $string['courseshortnamewithlink'] = 'Короткое имя курса со ссылкой';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Пользовательский отчет';
 $string['customreports'] = 'Настраиваемые отчеты';
 $string['customreportslimit'] = 'Лимит настраиваемых отчетов';
 $string['customreportslimit_desc'] = 'Количество настраиваемых отчетов может быть ограничено по соображениям производительности. Если установлено в ноль, то ограничения нет.';
@@ -122,6 +124,8 @@ $string['errorsourceinvalid'] = 'Не удалось найти источник
 $string['errorsourceunavailable'] = 'Источник отчета недоступен';
 $string['filteradded'] = 'Добавлен фильтр «{$a}»';
 $string['filtercontains'] = 'Содержит';
+$string['filterdateafter'] = 'После';
+$string['filterdatebefore'] = 'До';
 $string['filterdatecurrent'] = 'Текущий(ая)';
 $string['filterdatedays'] = 'день (дн.)';
 $string['filterdatefrom'] = 'Начальная дата';
@@ -142,6 +146,7 @@ $string['filterendswith'] = 'Заканчивается на';
 $string['filterequalorgreaterthan'] = 'Больше или равно';
 $string['filterequalorlessthan'] = 'Меньше или равно';
 $string['filterfieldoperator'] = 'оператор {$a}';
+$string['filterfieldto'] = '{$a} до';
 $string['filterfieldvalue'] = 'Значение {$a}';
 $string['filtergreaterthan'] = 'Более';
 $string['filterinvalid'] = 'Неверный фильтр';
@@ -262,6 +267,7 @@ $string['sorting'] = 'Сортировка';
 $string['sorting_help'] = 'Вы можете установить первоначальный порядок сортировки столбцов в отчете, который затем может быть изменен пользователями нажатием на имена столбцов.';
 $string['switchedit'] = 'Перейти в режим редактирования';
 $string['switchpreview'] = 'Перейти в режим предварительного просмотра';
+$string['tagarea_reportbuilder_report'] = 'Пользовательские отчеты';
 $string['tasksendschedule'] = 'Отправка рассылки отчета';
 $string['tasksendschedules'] = 'Отправка рассылки отчетов';
 $string['timeadded'] = 'Время добавления';

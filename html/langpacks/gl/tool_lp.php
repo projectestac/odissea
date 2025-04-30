@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'gl', version '4.1'.
+ * Strings for component 'tool_lp', language 'gl', version '4.4'.
  *
  * @package     tool_lp
  * @category    string
@@ -49,7 +49,7 @@ $string['cannotaddrules'] = 'Non é posíbel configurar esta competencia.';
 $string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Non é posíbel crear novos plans de aprendizaxe. O modelo caducou ou está a piques de caducar.';
 $string['cannotcreateuserplanswhentemplatehidden'] = 'Non é posíbel crear novos plans de aprendizaxe mentres este modelo estea agochado.';
 $string['category'] = 'Categoría';
-$string['chooserating'] = 'Escolla unha puntuación...';
+$string['chooserating'] = 'Escolla unha puntuación…';
 $string['cohortssyncedtotemplate'] = 'Círculos sincronizados con este modelo de plan de aprendizaxe';
 $string['competenciesforframework'] = 'Competencias para {$a}';
 $string['competenciesmostoftennotproficient'] = 'Competencias que a miúdo non son idóneas para os plans de aprendizaxe completados';
@@ -112,7 +112,7 @@ $string['findcourses'] = 'Atopar cursos';
 $string['frameworkcannotbedeleted'] = 'Non é posíbel pode eliminar o marco de competencias «{$a}»';
 $string['hidden'] = 'Agochado';
 $string['hiddenhint'] = '(agochado)';
-$string['idnumber'] = 'Número ID';
+$string['idnumber'] = 'Número de ID';
 $string['inheritfromframework'] = 'Herdar o marco de competencias (predeterminado)';
 $string['itemstoadd'] = 'Elementos para engadir';
 $string['jumptocompetency'] = 'Ir á competencia';
@@ -183,7 +183,7 @@ $string['planupdated'] = 'Actualizado o plan de aprendizaxe';
 $string['pluginname'] = 'Plans de aprendizaxe';
 $string['points'] = 'Puntos';
 $string['pointsgivenfor'] = 'Puntos outorgados para «{$a}»';
-$string['privacy:metadata'] = 'O engadido de plans de aprendizaxe non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de plans de aprendizaxe non almacena ningún dato persoal.';
 $string['proficient'] = 'Competente';
 $string['progress'] = 'Progreso';
 $string['rate'] = 'Cualificar';

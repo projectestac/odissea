@@ -204,6 +204,11 @@ abstract class backup_activity_task extends backup_task {
         // Migrate the already exported inforef entries to final ones
         $this->add_step(new move_inforef_annotations_to_final('migrate_inforef'));
 
+        // Generate the xAPI state file (conditionally).
+        if ($this->get_setting_value('xapistate')) {
+            $this->add_step(new backup_xapistate_structure_step('activity_xapistate', 'xapistate.xml'));
+        }
+
         // At the end, mark it as built
         $this->built = true;
     }
@@ -353,7 +358,7 @@ abstract class backup_activity_task extends backup_task {
      * @param string $content some HTML text that eventually contains URLs to the activity instance scripts
      * @return string the content with the URLs encoded
      */
-    static public function encode_content_links($content) {
+    public static function encode_content_links($content) {
         throw new coding_exception('encode_content_links() method needs to be overridden in each subclass of backup_activity_task');
     }
 }

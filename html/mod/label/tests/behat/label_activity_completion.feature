@@ -27,8 +27,7 @@ Feature: View activity completion information for the label
   Scenario: The manual completion button will be shown on the course page if the Show activity completion conditions is set to No
     Given I am on the "Course 1" course page logged in as teacher1
     # Teacher view.
-    And the manual completion button for "Test label 1" should exist
-    And the manual completion button for "Test label 1" should be disabled
+    And "Test label 1" should have the "Mark as done" completion condition
     And I log out
     # Student view.
     When I log in as "student1"
@@ -46,8 +45,7 @@ Feature: View activity completion information for the label
     And I set the field "Show activity completion conditions" to "Yes"
     And I press "Save and display"
     # Teacher view.
-    And the manual completion button for "Test label 1" should exist
-    And the manual completion button for "Test label 1" should be disabled
+    And "Test label 1" should have the "Mark as done" completion condition
     And I log out
     # Student view.
     When I log in as "student1"

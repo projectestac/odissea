@@ -32,14 +32,14 @@ namespace filter_data;
  * @copyright 2015 David Monllao
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class filter_test extends \advanced_testcase {
+final class filter_test extends \advanced_testcase {
 
     /**
      * Tests that the filter applies the required changes.
      *
      * @return void
      */
-    public function test_filter() {
+    public function test_filter(): void {
 
         $this->resetAfterTest(true);
         $this->setAdminUser();

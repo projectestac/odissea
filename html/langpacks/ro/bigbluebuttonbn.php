@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ro', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'ro', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Publică înregistrări';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Deprotejați înregistrările';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Anulați publicarea înregistrărilor';
 $string['bigbluebuttonbn:view'] = 'Accesează cameră BigBlueButton';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Vizualizează toate formatele de înregistrare';
 $string['bigbluebuttondisablednotification'] = 'Modulul de activitate BigBlueButton a fost dezactivat și nicio activitate existentă în cursul BigBlueButton nu este accesibilă momentan. Înainte de a reactiva acest plugin, vă rugăm să vă asigurați că ați citit și acceptat <a href="{$a}" target="_blank">acordul de procesare a datelor</a> cu Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'Modulul de activitate BigBlueButton a fost dezactivat.';
 $string['cachedef_currentfetch'] = 'Date pentru a enumera orice înregistrare preluată recent.';
 $string['cachedef_recordings'] = 'Înregistrarea metadatelor';
 $string['cachedef_serverinfo'] = 'Informații despre server la distanță';
+$string['cachedef_subplugins'] = 'Memoria Cache folosită de rutinele subplugin-urilor pentru a accelera atunci când este necesar procesul de descoperire a pluginurilor.';
 $string['cachedef_validatedurls'] = 'Memoria cache a verificărilor URL validate';
 $string['calendarstarts'] = '{$a} este programat pentru';
 $string['cannotperformaction'] = 'Nu se poate efectua acțiunea {$a} pentru această înregistrare';
-$string['completionattendance'] = 'Studentul trebuie să participe la sesiunea pentru:';
+$string['completionattendance'] = 'Necesită prezență (minute)';
 $string['completionattendance_desc'] = 'Intră în camera de discuții și rămâi în sesiune pentru cel puțin {$a} minut(e)';
 $string['completionattendance_event_desc'] = 'Studentul a intrat în cameră și a rămas în sesiune pentru cel puțin {$a} minut(e)';
-$string['completionattendancegroup'] = 'Necesită prezență';
+$string['completionattendancegroup'] = 'Necesită prezență (minute)';
 $string['completionattendancegroup_help'] = 'Participarea la ședință pentru (n) minute este necesară pentru finalizare.';
 $string['completionengagement_desc'] = 'Angajare în activități în timpul întâlnirii';
 $string['completionengagementchats'] = 'Conversaţii';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'Stare de actualizare de finalizare';
 $string['completionvalidatestate'] = 'Validează finalizarea';
 $string['completionvalidatestatetriggered'] = 'Finalizarea completării a fost începută.';
 $string['completionview'] = 'Este necesară vizualizarea';
-$string['completionview_desc'] = 'Cursantul trebuie să se alăture unei camere de discuții pentru a finaliza activitatea.';
+$string['completionview_desc'] = 'Vizualizare cameră de discuții';
 $string['completionview_event_desc'] = 'A accesat camera de discuții.';
+$string['config_checksum_algorithm'] = 'Algoritm de verificare funcționalități BigBlueButton';
+$string['config_checksum_algorithm_description'] = 'SHA1 este compatibil cu servere mai vechi. SHA256 and SHA512 sunt mai sigure. SHA512 este compatibil cu FIPS 140-2.';
 $string['config_default_messages'] = 'Mesaje implicite';
 $string['config_default_messages_description'] = 'Setați valorile implicite ale mesajelor pentru activități';
 $string['config_disablecam_default'] = 'Dezactivați camera web activată în mod implicit';
@@ -110,7 +114,7 @@ $string['config_experimental_features_description'] = 'Configurarea funcționali
 $string['config_extended_capabilities'] = 'Capabilități extinse';
 $string['config_extended_capabilities_description'] = 'Configurarea capabilităților extinse când serverul BigBlueButton le furnizează.';
 $string['config_general'] = 'Setări generale';
-$string['config_general_description'] = 'Aceste setări sunt folosite tot timpul.';
+$string['config_general_description'] = 'Pentru configurarea BigBlueButton, poți folosi credențialele tale sau poți să obții credențiale din <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks Registration Portal ( se deschide într-o fereastră nouă)</a>.';
 $string['config_guestaccess_enabled'] = 'Acces pentru vizitatori externi';
 $string['config_guestaccess_enabled_description'] = 'Permiteți utilizatorilor fără cont în platformă să acceseze videoconferința.';
 $string['config_hideuserlist_default'] = 'Opțiunea Ascunde lista utilizatorilor este activată în mod implicit';
@@ -141,10 +145,12 @@ $string['config_poll_interval'] = 'Interval (în secunde) pentru a reîmprospăt
 $string['config_poll_interval_description'] = 'Intervalul trebuie să fie de cel puțin 2 secunde. Dacă este necesar, puteți reduce sarcina de pe server prin creșterea intervalului.';
 $string['config_presentation_default'] = 'Fișier implicit pentru prezentări';
 $string['config_presentation_default_description'] = 'Un fișier ce poate fi oferit pentru a fi folosit în toate camerele de discuții.';
-$string['config_preuploadpresentation'] = 'Pre-încărcați prezentarea';
+$string['config_preuploadpresentation'] = 'Fișier de prezentare';
 $string['config_preuploadpresentation_description'] = 'Aceste setări activează sau dezactivează opțiunile din interfața de utilizare și, de asemenea, definesc valorile implicite pentru aceste opțiuni. Caracteristica funcționează numai dacă serverul Moodle este accesibil pentru BigBlueButton.';
-$string['config_preuploadpresentation_editable'] = 'Încărcarea prezentării poate fi editată';
-$string['config_preuploadpresentation_editable_description'] = 'Funcția de prezentare de preîncărcare este editabilă în interfața de utilizare atunci când sala sau conferința este adăugată sau actualizată.';
+$string['config_preuploadpresentation_editable'] = 'Fișier de prezentare pe pagina de activitat';
+$string['config_preuploadpresentation_editable_description'] = 'Opțiunea din setările activității de încărcare a fișierului de prezentare pentru a fi afișat pe pagina activității.';
+$string['config_profile_picture_enabled'] = 'Afișează fotografiile de profil';
+$string['config_profile_picture_enabled_description'] = 'Fotografiile de profil ale participanților ar trebui să fie afișate în sesiunile BigBlueButton?';
 $string['config_recording'] = 'Înregistrare';
 $string['config_recording_all_from_start_default'] = 'Începe să înregistrezi de la început';
 $string['config_recording_all_from_start_default_description'] = 'Setarea „Începe înregistrarea de la început” ar trebui să fie activată în mod implicit atunci când adăugați o nouă cameră BigBlueButton?';
@@ -163,6 +169,9 @@ $string['config_recording_protect_editable'] = 'Statusul înregistrărilor prote
 $string['config_recording_protect_editable_description'] = 'Dacă este bifată, interfața include o opțiune pentru protejarea/deprotejarea înregistrărilor.';
 $string['config_recording_refresh_period'] = 'Interval de actualizare a înregistrării (în secunde)';
 $string['config_recording_refresh_period_description'] = 'Cât de des ar trebui să fie interogat serverul BigBlueButton pentru a reîmprospăta informațiile de la distanță pentru o înregistrare?';
+$string['config_recording_safe_formats'] = 'Formate de înregistrare care pot fi vizualizate de către toți participanții';
+$string['config_recording_safe_formats_description'] = 'Selectează formatele care pot fi văzute de toți participanții.
+Toate celelalte formate pot fi văzute doar de către profesori și alți utilizatori cu capabilități mod/bigbluebuttonbn:viewallrecordingformats și mod/bigbluebuttonbn:managerecordings.';
 $string['config_recordingready_enabled'] = 'Trimiteți o notificare de înregistrare disponibilă';
 $string['config_recordingready_enabled_description'] = 'Dacă este activată, va fi trimisă o notificare când este disponibil un link cu înregistrarea. Această caracteristică necesită activarea scriptului post_publish_recording_ready_callback pe serverul BigBlueButton.';
 $string['config_recordings'] = 'Afișează înregistrări';
@@ -188,15 +197,9 @@ $string['config_scheduled_description'] = 'Aceste setări definesc funcționalit
 $string['config_scheduled_pre_opening'] = 'Accesibil înainte de ora deschiderii';
 $string['config_scheduled_pre_opening_description'] = 'Timpul în minute pentru care camera este deschisă înainte de ora de deschidere programată.';
 $string['config_server_url'] = 'Adresa serverului BigBlueButton';
-$string['config_server_url_description'] = 'Credențialele implicite sunt pentru un <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">serviciu gratuit BigBlueButton integrat în Moodle (se deschide într-o fereastră nouă)</a > furnizat de Blindside Networks cu următoarele limitări:
-<ol>
-<li>Durata maximă pentru fiecare sesiune este de 60 de minute</li>
-<li>Numărul maxim de utilizatori simultani pe sesiune este de 25</li>
-<li>Înregistrările expiră după șapte (7) zile și nu pot fi descărcate</li>
-<li>Camele web ale studenților sunt vizibile numai pentru moderator.</li>
-</ol>';
+$string['config_server_url_description'] = 'Adresa URL a serverului BigBlueButton.';
 $string['config_shared_secret'] = 'Parola de conectare BigBlueButton';
-$string['config_shared_secret_description'] = 'Cheia de securitate a serverului tău BigBlueButton. Cheia implicită este pentru un server BigBlueButton gratuit oferit de Blindside Networks.';
+$string['config_shared_secret_description'] = 'Cheia de securitate a serverului BigBlueButton.';
 $string['config_uidelegation_enabled'] = 'Asignarea permisiunilor pentru interfața utilizatorului este activată';
 $string['config_uidelegation_enabled_description'] = 'Aceste setări activează sau dezactivează delegarea UI către serverul BigBlueButton.';
 $string['config_userlimit'] = 'Limită de utilizatori';
@@ -222,9 +225,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'Cât de des ar t
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton folosește config.php cu o variabilă globală care a fost depreciată. Vă rugăm să convertiți fișierul deoarece nu va fi acceptat în versiunile viitoare.';
 $string['config_warning_curl_not_installed'] = 'Această caracteristică necesită instalarea și activarea extensiei CURL pentru PHP. Setările vor fi accesibile numai dacă această condiție este îndeplinită.';
 $string['config_welcome_default'] = 'Mesaj implicit de bun venit';
-$string['config_welcome_default_description'] = 'Mesajul de bun venit este afișat când participanții intră în cameră. Dacă câmpul este lăsat necompletat, atunci este afișat un mesaj setat pe serverul BigBlueButton.';
+$string['config_welcome_default_description'] = 'Mesajul de bun venit este afișat când participanții intră în cameră. Dacă câmpul este lăsat necompletat, atunci este folosit șirul \'mod_form_field_welcome_default\'.';
 $string['config_welcome_editable'] = 'Mesajul implicit de bun venit poate să fie editat de către profesori';
 $string['config_welcome_editable_description'] = 'Mesajul de bun venit poate fi editat când o instanță este adăugată sau actualizată';
+$string['credentials_warning'] = 'Utilizarea credențialelor implicite pentru server va expira în curând (vezi nota de mai sus pentru obținerea de noi credențiale).';
 $string['dpainfonotsigned'] = 'Înainte de a activa acest plugin, trebuie să confirmi că ai citit și ai acceptat acordul de prelucrare a datelor <a href="{$a}">Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'Se activează activitatea BigBlueButton';
 $string['enablingbigbluebuttondpainfo'] = 'Pentru a îndeplini obligațiile de protecție a datelor, înainte de a activa acest plugin, poate fi necesar să vă asigurați că ați citit și acceptat <a href="{$a}" target="_blank">acordul de prelucrare a datelor</a> cu Blindside Networks Inc.<br/>
@@ -315,6 +319,7 @@ $string['instance_type_default'] = 'Camera de discuții cu înregistări';
 $string['instance_type_recording_only'] = 'Doar înregistrări';
 $string['instance_type_room_only'] = 'Doar camera de discuții';
 $string['instanceprofilewithoutrecordings'] = 'Acest rol nu are permisiunea sa acceseze înregistrările';
+$string['managebbbextplugins'] = 'Administrează extensiile plugin-ului BigBlueButton';
 $string['messageprovider:instance_updated'] = 'Sesiune BigBlueButton actualizată';
 $string['messageprovider:recording_ready'] = 'Înregistrare BigBlueButton disponibilă';
 $string['minute'] = 'minut';
@@ -416,6 +421,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'Data când a fos
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'Numărul de identificare al utilizatorului care a declanșat evenimentului.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Stochează metadate despre înregistrări.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'ID-ul utilizatorului care a modificat ultima dată înregistrarea.';
+$string['progress_createbigbluebuttonbn'] = 'Se creează activitate BigBlueButton ({$a})';
 $string['recordings_from_deleted_activities'] = 'Înregistrări din activități șterse';
 $string['recordingurlnotfound'] = 'URL-ul înregistrării nu este valid.';
 $string['removedevents'] = 'Evenimente șterse';
@@ -435,8 +441,12 @@ $string['search:activity'] = 'BigBlueButton - informații despre activitate';
 $string['search:tags'] = 'BigBlueButton - informații despre etichete';
 $string['sendnotification'] = 'Trimite notificare';
 $string['settings'] = 'Setări BigBlueButton';
+$string['settings_credential_warning'] = 'Credențialele serverului BigBlueButton vor expira în curând. Vezi <a href="{$a->settingslink}" target="_blank">setări generale BigBlueButton(se deschide în fereastră nouă)</a>.';
+$string['settings_credential_warning_no_capability'] = 'Credențialele pentru server vor expira în curând. Vă rugăm să contactați administratorul site-ului.';
 $string['started_at'] = 'Început';
 $string['starts_at'] = 'Începe';
+$string['subplugintype_bbbext'] = 'Extensia activității BigBlueButton';
+$string['subplugintype_bbbext_plural'] = 'Extensiile activității BigBlueButton';
 $string['taskname:check_dismissed_recordings'] = 'Caută înregistrări care nu au fost găsite încă';
 $string['taskname:check_pending_recordings'] = 'Colectați înregistrările în așteptare';
 $string['userlimitreached'] = 'A fost atins numărul de utilizatori acceptați la întâlnire.';

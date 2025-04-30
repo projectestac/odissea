@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_maxviews', language 'it', version '4.1'.
+ * Strings for component 'availability_maxviews', language 'it', version '4.4'.
  *
  * @package     availability_maxviews
  * @category    string

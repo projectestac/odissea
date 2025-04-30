@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'uk', version '4.1'.
+ * Strings for component 'tool_monitor', language 'uk', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Зона для моніторингу';
 $string['cachedef_eventsubscriptions'] = 'Це зберігає список підписок на події для індивідуальних курсів';
 $string['contactadmin'] = 'Зв’яжіться зі своїм адміністратором, щоб він включив це.';
 $string['core'] = 'Ядро';
+$string['coresubsystem'] = 'Підсистема ({$a})';
 $string['currentsubscriptions'] = 'Ваші поточні розсилки';
 $string['defaultmessagetemplate'] = 'Назва правила: {rulename}<br />Опис: {description}<br />Назва події: {eventname}';
 $string['deleterule'] = 'Вилучити правило';

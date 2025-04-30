@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswerwiris', language 'fr', version '4.1'.
+ * Strings for component 'qtype_multianswerwiris', language 'fr', version '4.4'.
  *
  * @package     qtype_multianswerwiris
  * @category    string
@@ -38,4 +38,4 @@ $string['pluginname_help'] = 'Comme la question standard à réponses intégrée
 $string['pluginnameadding'] = 'Ajout d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
 $string['pluginnameediting'] = 'Modification d’une réponse intégrée (Cloze) - question de mathématiques et de sciences par WIRIS';
 $string['pluginnamesummary'] = 'Comme la question standard à réponses intégrées (Cloze), mais vous pouvez fournir un texte de question différent en insérant des nombres aléatoires, des formules ou des tracés. La rétroaction peut également utiliser les valeurs aléatoires.';
-$string['privacy:null_reason'] = 'Le type de question Wiris Quizzes Cloze  ne modifie ni n’enregistre aucune donnée personnelle.';
+$string['privacy:null_reason'] = 'Le type de question Wiris Quizzes Cloze ne modifie ni n’enregistre aucune donnée personnelle.';

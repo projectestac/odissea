@@ -124,7 +124,8 @@
 
         {{! Description }}
         {{#altcontent}}
-            <div class="activity-altcontent d-flex text-break {{#hasname}}activity-description{{/hasname}}">
+            {{! In Moodle 4.5+, if this is a delegated section then this is a container for a <ul> of course modules }}
+            <div class="activity-altcontent {{#issubsection}}delegated-section-content{{/issubsection}}{{^isdelegatedsection}}d-flex{{/isdelegatedsection}} text-break {{#hasname}}activity-description{{/hasname}}">
                 {{{altcontent}}}
             </div>
         {{/altcontent}}

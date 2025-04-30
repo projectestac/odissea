@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'es', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'es', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,7 +42,11 @@ $string['configured'] = 'Configurado';
 $string['deletecheckdevicename'] = 'Eliminar su dispositivo: {$a->name}';
 $string['deletedevice'] = 'Eliminar el dispositivo. Por favor tenga en cuenta que una app puede volver a registrar el dispositivo. Si el dispositivo sigue reapareciendo, deshabilítelo.';
 $string['devicetoken'] = 'Token del dispositivo';
+$string['donotsendnotification'] = 'No enviar notificaciones para nada';
 $string['enableprocessor'] = 'Habilitar notificaciones móviles';
+$string['encryptnotifications'] = 'Encriptar notificaciones';
+$string['encryptnotifications_help'] = 'Habilitar encriptación de fin-a-fin de notificaciones de App cuando sea posible. Solamente los datos personales son encriptados; algunos datos pueden ser removidos de la carga útil de la notificación si no pudieran ser encriptados.';
+$string['encryptprocessing'] = 'Para dispositivos que no soportan encriptación';
 $string['encryptprocessing_desc'] = 'Por favor indique qué hacer cuando el dispositivo destino no soporta encriptación (soportada solamente en Androide 6 y iOS 13 en adelante).';
 $string['errorretrievingkey'] = 'Se produjo un error al recuperar la clave de acceso. Su sitio Moodle debe estar registrado para usar este servicio. Si su sitio ya estaba registrado, por favor intente actualizar su registro. De forma alternativa, puede obtener una clave de acceso al crear una cuenta en el <a href="https://apps.moodle.com">Portal de aplicaciones de Moodle</a>.';
 $string['keyretrievedsuccessfully'] = 'La clave de acceso fue obtenida exitosamente. Para acceder a las estadísticas de uso de la aplicación de Moodle, por favor cree una cuenta en el <a href="https://apps.moodle.com">Portal de aplicaciones de Moodle</a>.';
@@ -74,6 +78,7 @@ $string['privacy:metadata:username'] = 'El nombre del usuario.';
 $string['privacy:metadata:usersubsystem'] = 'Este complemento está conectado al subsistema de usuario.';
 $string['privacy:subcontext'] = 'Airnotifier de mensajes';
 $string['requestaccesskey'] = 'Solicitar clave de acceso';
+$string['sendnotificationnotenc'] = 'Enviar notificaciones sin encriptación';
 $string['sendtest'] = 'Enviar notificación push de prueba a mis dispositivos';
 $string['sendtestconfirmation'] = 'Una notificación push de prueba será enviada a los dispositivos que usa para conectarse a este sitio. Por favor asegúrese de que sus dispositivos están conectados a internet y que la aplicación móvil no esté abierta (porque las notificaciones push sólo se muestran cuando se reciben en segundo plano).';
 $string['serverconnectivityerror'] = 'El sitio no se puede conectar al servidor de notificaciones {$a}';
@@ -81,3 +86,4 @@ $string['showhide'] = 'Activar/Desactivar el servicio';
 $string['sitemustberegistered'] = 'Para poder usar la instancia pública de Airnotifier, su sitio tiene que estar registrado. De forma alternativa, puede obtener una clave de acceso creando una cuenta en el <a href="https://apps.moodle.com">Portal de aplicaciones de Moodle</a>.';
 $string['unknowndevice'] = 'Dispositivo desconocido';
 $string['userdevices'] = 'Dispositivos de usuario';
+$string['view_notification'] = 'Tocar para ver';

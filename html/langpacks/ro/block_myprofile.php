@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ro', version '4.1'.
+ * Strings for component 'block_myprofile', language 'ro', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Afișarea setărilor pentru regiunea de conținut';
 $string['display_address'] = 'Afișare adresa';
-$string['display_aim'] = 'Afișare AIM';
 $string['display_city'] = 'Afișare oraș';
 $string['display_country'] = 'Afișare țară';
 $string['display_currentlogin'] = 'Afișare autentificarea curentă';
 $string['display_email'] = 'Afișare adresă de email';
 $string['display_firstaccess'] = 'Afișare prima accesare';
-$string['display_icq'] = 'Afișare ICQ';
 $string['display_idnumber'] = 'Afișează numărul identificator';
 $string['display_institution'] = 'Afișare instituția';
 $string['display_lastaccess'] = 'Afișare ultimul acces';
 $string['display_lastip'] = 'Afișare ultima adresă IP';
 $string['display_lastlogin'] = 'Afișează ultima conectare';
-$string['display_msn'] = 'Afișare MSN';
 $string['display_phone1'] = 'Afișare număr de telefon';
 $string['display_phone2'] = 'Afișare număr de telefon mobil';
 $string['display_picture'] = 'Afișare imagine';
-$string['display_skype'] = 'Afișare Skype';
-$string['display_yahoo'] = 'Afișare Yahoo';
 $string['myprofile:addinstance'] = 'Adaugă un nou utilizator logat în blocul Utilizator';
 $string['myprofile:myaddinstance'] = 'Adăugați un nou bloc utilizator logat în Dashboard';
 $string['myprofile_settings'] = 'Vizibilitatea informații utilizator';

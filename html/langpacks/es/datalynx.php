@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'es', version '4.1'.
+ * Strings for component 'datalynx', language 'es', version '4.4'.
  *
  * @package     datalynx
  * @category    string
@@ -32,7 +32,6 @@ $string['addline'] = 'Añadir {$a}';
 $string['addoptions'] = 'Agregar opciones';
 $string['admin'] = 'Administrador';
 $string['admissibleroles'] = 'Roles admisibles';
-$string['admissibleroles_error'] = '¡Seleccione al menos un rol!';
 $string['admissibleroles_help'] = 'Los usuarios que posean cualquiera de los roles seleccionados serán admisibles para el equipo. Se debe seleccionar al menos un rol.';
 $string['after'] = 'después';
 $string['alignment'] = 'Alineación';
@@ -47,9 +46,6 @@ $string['alphabeticalorder'] = '¿Ordenar las opciones en orden alfabético al e
 $string['and'] = 'Y';
 $string['andor'] = 'y/o...';
 $string['anyof'] = 'cualquiera de';
-$string['approval_none'] = 'No requerido';
-$string['approval_required_new'] = 'Requerido solo para nuevas entradas';
-$string['approval_required_update'] = 'Obligatorio para entradas nuevas y entradas editadas';
 $string['approved'] = 'aprobado';
 $string['approvednot'] = 'no aprobado';
 $string['ascending'] = 'ascendente';
@@ -59,8 +55,6 @@ $string['authorinfo'] = 'Información de Autor';
 $string['authorsearch'] = 'Búsqueda de autor';
 $string['autocompletion'] = 'Autocompletar';
 $string['autocompletion_help'] = 'Elija si el autocompletado estará activo en el modo de edición.';
-$string['autocompletion_textfield'] = 'Campo de texto';
-$string['autocompletion_textfield_help'] = 'Elija el módulo datalynx y el campo de texto para recuperar los datos de autocompletado.';
 $string['avoidaddanddeletesimultaneously'] = 'No debe agregar y eliminar opciones en un solo paso. Primero elimine las opciones y guarde, luego cambie el nombre de las opciones y guarde nuevamente.';
 $string['before'] = 'antes de';
 $string['behavior'] = 'Comportamiento';
@@ -69,7 +63,6 @@ $string['behaviors'] = 'Comportamientos';
 $string['between'] = 'Entre';
 $string['blankfilter'] = 'Filtro en blanco';
 $string['browse'] = 'Navegar';
-$string['check_enable'] = 'Debe marcar la casilla de verificación \'habilitar\' para confirmar la validez del valor seleccionado.';
 $string['columns'] = 'columnas';
 $string['comment'] = 'Comentarios';
 $string['commentadd'] = 'Agregar comentarios';

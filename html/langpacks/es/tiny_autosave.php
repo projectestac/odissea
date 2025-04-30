@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'es', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'es', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Autoguardado';
-$string['pluginname'] = '';
+$string['pluginname'] = 'Autoguardar';
 $string['privacy:metadata:database:tiny_autosave'] = 'Una tabla que guarda los datos de la sesión de autoguardado del editor TinyMCE';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = 'El contenido de texto de la sesión de autoguardado';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = 'El tiempo desde que la sesión de autoguardado se modificó por última vez';

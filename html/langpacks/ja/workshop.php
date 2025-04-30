@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', version '4.1'.
+ * Strings for component 'workshop', language 'ja', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -211,7 +211,6 @@ $string['latesubmissions'] = '提出期限後の提出';
 $string['latesubmissions_desc'] = '提出期限後の提出を許可します。';
 $string['latesubmissions_help'] = 'この設定を有効にした場合、作成者は提出期限後または評価フェーズ時にワークを提出することができます。提出期限後の提出は編集することができません。';
 $string['latesubmissionsallowed'] = '提出期限後の提出は許可されています。';
-$string['legacyallocationplugincron'] = 'レガシcronワークショップ割り当て';
 $string['maxbytes'] = '最大提出添付サイズ';
 $string['modulename'] = 'ワークショップ';
 $string['modulename_help'] = 'ワークショップ活動モジュールでは学生のワークを収集、レビューおよび相互評価することができます。

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'el', version '4.1'.
+ * Strings for component 'scorm', language 'el', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -117,8 +117,6 @@ $string['details'] = 'Παρακολούθηση λεπτομερειών';
 $string['directories'] = 'Εμφάνιση συνδέσμων φακέλου';
 $string['disabled'] = 'Απενεργοποιημένο';
 $string['display'] = 'Εμφάνιση πακέτου';
-$string['displayactivityname'] = 'Εμφάνιση ονόματος δραστηριότητας';
-$string['displayactivityname_help'] = 'Αν θα εμφανίζεται ή όχι το όνομα της δραστηριότητας πάνω από το λογισμικό αναπαραγωγής SCORM.';
 $string['displayattemptstatus'] = 'Εμφάνιση κατάστασης προσπαθειών';
 $string['displayattemptstatus_help'] = 'Αυτή η προτίμηση επιτρέπει την εμφάνιση μιας σύνοψης των προσπαθειών των χρηστών στο μπλοκ επισκόπηση μαθημάτων στο Ταμπλό ή/και στη σελίδα εισόδου στο SCORM.';
 $string['displayattemptstatusdesc'] = 'Αν η περίληψη των προσπαθειών του χρήστη εμφανίζεται στο μπλοκ επισκόπησης μαθημάτων στο Ταμπλό και/ή στη σελίδα εισαγωγής SCORM.';
@@ -208,7 +206,6 @@ $string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασί
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος SCORM';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες SCORM κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['info'] = 'Πληροφορίες';
 $string['interactions'] = 'Αλληλεπιδράσεις';
 $string['invalidactivity'] = 'Η δραστηριότητα SCORM είναι λανθασμένη';
 $string['invalidhacpsession'] = 'Μη έγκυρη σύνοδος HACP';
@@ -320,7 +317,6 @@ $string['privacy:metadata:attempt'] = 'Ο αριθμός προσπάθειας'
 $string['privacy:metadata:scoes_track:element'] = 'Το όνομα του στοιχείου προς παρακολούθηση';
 $string['privacy:metadata:scoes_track:value'] = 'Η τιμή του δεδομένου στοιχείου';
 $string['privacy:metadata:scorm_aicc_session'] = 'Οι πληροφορίες συνόδου AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'Τα δεδομένα παρακολούθησης των SCO που ανήκουν στη δραστηριότητα';
 $string['privacy:metadata:timemodified'] = 'Πότε τροποποιήθηκε τελευταία το παρακολουθούμενο στοιχείο';
 $string['privacy:metadata:userid'] = 'Το αναγνωριστικό του χρήστη που είχε πρόσβαση στη δραστηριότητα SCORM';
 $string['protectpackagedownloads'] = 'Προστασία λήψεων πακέτου';

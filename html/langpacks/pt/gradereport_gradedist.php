@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'pt', version '4.1'.
+ * Strings for component 'gradereport_gradedist', language 'pt', version '4.4'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -42,6 +42,7 @@ $string['contextbuttontitle'] = 'Menu de contexto do gráfico';
 $string['coursesum'] = 'Soma da disciplina';
 $string['coverage'] = 'A nova distribuição não engloba todas as notas!';
 $string['coverage_export'] = 'Itens não incluídos nas notas alfabéticas:';
+$string['csv'] = 'csv';
 $string['decimals'] = 'O limite inferior tem de ser um número entre 0 e 100. São permitidas, no máximo, duas casas decimais.';
 $string['description'] = 'Etiqueta';
 $string['download'] = 'Descarregar';
@@ -74,6 +75,7 @@ $string['newletterssubmitted'] = 'Novas notas alfabéticas submetidas';
 $string['newletterssubmitted_description'] = 'O utilizador com número de identificação (ID) {$a->userid} submeteu as novas notas alfabéticas';
 $string['nogroupingentry'] = 'Sem agrupamento';
 $string['notification'] = 'Nota: A definição das notas alfabéticas aplica-se a todos os itens de avaliação na disciplina.';
+$string['ods'] = 'ods';
 $string['p'] = '(%)';
 $string['percent'] = 'Percentagem';
 $string['pluginname'] = 'Distribuição das notas';
@@ -86,5 +88,7 @@ $string['privacy:null_reason'] = 'Este módulo não armazena quaisquer dados pes
 $string['saved'] = 'As notas alfabéticas foram alteradas com sucesso.';
 $string['showgradeitem'] = 'Mostrar item de avaliação';
 $string['showgradeitem_description'] = 'Mostra o tipo da apresentação da nota como uma escolha para o item de avaliação.';
-$string['submitanddownload'] = 'Guardar alterações';
+$string['showgradeitemtype'] = 'Mostrar tipo de item de avaliação';
+$string['showgradeitemtype_help'] = 'Mostrar o tipo de item de avaliação, por exemplo: teste, trabalho, etc.';
 $string['sum'] = 'Soma';
+$string['xlsx'] = 'xlsx';

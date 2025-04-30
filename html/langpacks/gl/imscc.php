@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscc', language 'gl', version '4.1'.
+ * Strings for component 'imscc', language 'gl', version '4.4'.
  *
  * @package     imscc
  * @category    string
@@ -35,6 +35,6 @@ $string['cc_import_req_libxml'] = 'ERRO: A importación do Cartucho Común requi
 $string['cc_import_req_libxmlminversion'] = 'ERRO: A importación do Cartucho Común require LIBXML versión 2.6.30 ou posterior.';
 $string['cc_import_req_php5'] = 'ERRO: A importación do Cartucho Común require PHP 5 ou posterior.';
 $string['cc_import_req_xsl'] = 'ERRO: A importación do Cartucho Común require XSL.';
-$string['checkingforimscc'] = 'Comprobando para IMS-CC...';
+$string['checkingforimscc'] = 'Comprobando para IMS-CC…';
 $string['enable_cc_import'] = 'Activar a importación do CC';
 $string['enable_cc_import_description'] = 'Esta opción activa a importación do Cartucho Común (Common Cartridge (IMS-CC)) utilizando a funcionalidade de restauración estándar. Observe que require que estean instaladas no servidor as extensións PHP5, DOM, XSL y LIBXML (2.3.60 ou posterior)';

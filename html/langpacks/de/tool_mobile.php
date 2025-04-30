@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'de', version '4.1'.
+ * Strings for component 'tool_mobile', language 'de', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token is
 $string['autologinmintimebetweenreq'] = 'Verzögerung zwischen zwei Auto-Login-Versuchen';
 $string['autologinmintimebetweenreq_desc'] = 'Minimale Zeit zwischen zwei Auto-Login-Versuchen mit der mobilen App. Sie sollten einen niedrigen Wert verwenden, wenn Nutzer/innen der App häufig aufgefordert werden, ihre Anmeldedaten einzugeben, um eingebettete Inhalte anzuzeigen.';
 $string['autologinnotallowedtoadmins'] = 'Das Auto-Login ist für Administrator/innen der Website nicht erlaubt.';
+$string['autologout'] = 'Automatisches Abmelden für Nutzer/innen erzwingen';
+$string['autologout_desc'] = 'Aus Sicherheitsgründen können Sie das automatische Abmelden für alle Nutzer/innen erzwingen, wenn diese die App verlassen, schließen oder in den Hintergrund bringen. Nutzer/innen müssen sich dann erneut anmelden, wenn sie zur App zurückkehren.';
+$string['autologoutcustom'] = 'Nutzerdefinierte Zeit nach dem Verlassen oder Schließen der App';
+$string['autologoutinmediate'] = 'Sofort nach dem Verlassen oder Schließen der App';
+$string['autologouttime'] = 'Timer für automatische Abmeldung';
 $string['cachedef_plugininfo'] = 'Hier wird die Liste von Plugins mit mobilen Add-ons gespeichert.';
 $string['cachedef_subscriptiondata'] = 'Hier werden die Infos zum Moodle-App-Abonnement gespeichert.';
 $string['clickheretolaunchtheapp'] = 'Tippen Sie hier, falls sich die mobile App nicht automatisch öffnet.';
@@ -95,7 +100,6 @@ $string['managefiletypes'] = 'Dateitypen verwalten';
 $string['minimumversion'] = 'Wenn eine minimal erforderliche Version für die Moodle-App (ab 3.8.0) vorgegeben ist, werden Nutzer/innen mit einer älteren Version zur Aktualisierung der App aufgefordert, bevor sie auf die Website zugreifen können.';
 $string['minimumversion_key'] = 'Minimal erforderliche Version der App';
 $string['mobileapp'] = 'Mobile App';
-$string['mobileappconnected'] = 'Mobile App verbunden';
 $string['mobileappearance'] = 'Mobile Darstellung';
 $string['mobileappenabled'] = 'Für diese Website ist der mobile Zugriff aktiviert. Laden Sie die <a href="{$a}">mobile App</a> herunter.';
 $string['mobileappsubscription'] = 'Moodle-App-Abonnement';
@@ -116,7 +120,6 @@ $string['notificationsseemore'] = 'Hinweis: Die Nutzungsstatistiken für die Moo
 $string['notificationssentnotifications'] = 'Systemnachrichten gesendet';
 $string['oauth2identityproviders'] = 'OAuth2 Identitätsprovider';
 $string['offlineuse'] = 'Offline-Nutzung';
-$string['openusingembeddedbrowser'] = 'Im integrierten Browser öffnen';
 $string['pluginname'] = 'Moodle App Tools';
 $string['pluginnotenabledorconfigured'] = 'Das Plugin ist nicht aktiviert oder nicht richtig konfiguriert.';
 $string['privacy:metadata:core_userkey'] = 'Nutzerschlüssel zum Erstellen eines Auto-Login für die aktuelle Person';

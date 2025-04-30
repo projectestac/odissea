@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', version '4.1'.
+ * Strings for component 'data', language 'gl', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -42,19 +42,19 @@ $string['areacontent'] = 'Campos';
 $string['ascending'] = 'Ascendente';
 $string['asearchtemplate'] = 'Modelo de busca avanzada';
 $string['atmaxentry'] = 'Xa escribiu o número máximo de entradas permitido!';
-$string['authorfirstname'] = 'Nome do autor';
-$string['authorlastname'] = 'Apelido do autor';
+$string['authorfirstname'] = 'Nome';
+$string['authorlastname'] = 'Apelidos';
 $string['autogenallforms'] = 'Xerar todos os modelos predeterminados';
 $string['autolinkurl'] = 'Autoligado do URL';
-$string['availablefromdate'] = 'Dispoñíbel dende';
+$string['availablefromdate'] = 'Dispoñíbel a partir de';
 $string['availabletags'] = 'Etiquetas dispoñíbeis';
 $string['availabletags_help'] = 'As etiquetas son marcadores de posición no modelo, que se substituirán por datos ou outros elementos, tales como unha icona de edición, cando se editen ou visualicen as entradas.
 
 Os campos teñen o formato [[nome_de_campo]]. As outras etiquetas teñen o formato ##calquera_etiqueta##.
 
 Soamente as etiquetas que están na lista de «Etiquetas dispoñíbeis» se poden usar para este modelo.';
-$string['availabletodate'] = 'Dispoñíbel ata';
-$string['availabletodatevalidation'] = 'A data «dispoñíbel ata» non pode ser anterior á data «dispoñíbel desde».';
+$string['availabletodate'] = 'Dispoñíbel para';
+$string['availabletodatevalidation'] = 'A data «dispoñíbel ata» non pode ser anterior á data «dispoñíbel a partir de».';
 $string['blank'] = 'En branco';
 $string['buttons'] = 'Accións';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
@@ -62,12 +62,12 @@ $string['calendarend'] = '{$a} pechan';
 $string['calendarstart'] = '{$a} abren';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'Non se lle permite acceder ás predefinicións doutros usuarios';
-$string['cannotadd'] = 'Non é posíbel engadir entradas!';
+$string['cannotadd'] = 'Non se pode engadir entradas!';
 $string['cannotapplypreset'] = 'Produciuse un erro ao aplicar a predefinición';
-$string['cannotdeletepreset'] = 'Produciuse un erro ao eliminar a predefinición!';
+$string['cannotdeletepreset'] = 'Produciuse un erro ao eliminar a predefinición';
 $string['cannotoverwritepreset'] = 'Produciuse un erro ao sobrescribir a predefinición';
-$string['cannotunziptopreset'] = 'Non é posíbel descomprimir no cartafol actual';
-$string['checkbox'] = 'Caixa de selección';
+$string['cannotunziptopreset'] = 'Non se pode descomprimir no cartafol actual';
+$string['checkbox'] = 'Caixas de selección';
 $string['chooseexportfields'] = 'Escolla os campos que queira exportar';
 $string['chooseexportformat'] = 'Escolla o formato ao que quere exportar';
 $string['chooseorupload'] = 'Seleccionar ficheiro';
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} comentario(s)';
 $string['commentsoff'] = 'A funcionalidade de comentarios non está activa';
 $string['completiondetail:entries'] = 'Facer entradas: {$a}';
 $string['completionentries'] = 'Requirir entradas';
-$string['completionentriescount'] = 'Número de entradas';
+$string['completionentriescount'] = 'Engadir entradas';
 $string['completionentriesdesc'] = 'Número mínimo de entradas requiridas: {$a}';
 $string['configenablerssfeeds'] = 'Este interruptor activará a posibilidade de fontes RSS para todas as bases de datos. Aínda será necesario acender as fontes manualmente nos axustes de cada base de datos.';
 $string['confirmdeletefield'] = 'Vai eliminar este campo, confirma que o quere facer?';
@@ -92,10 +92,10 @@ $string['confirmdeleterecords'] = 'Confirma que quere eliminar estas entradas?';
 $string['createactivity'] = 'Crear os seus propios campos para a recolleita de datos ou usar unha predefinición que xa inclúa campos.';
 $string['createfields'] = 'Crear campos para a recolleita de diferentes tipos de datos.';
 $string['createtemplates'] = 'Os modelos definen a interface da súa actividade. Unha vez creados os campos, os modelos crearanse automaticamente. Tamén, pode usar unha predefinición, que inclúa campos e modelos.';
-$string['csstemplate'] = 'Modelo CSS';
-$string['csvfailed'] = 'Non é posíbel ler os datos en bruto do ficheiro CSV';
-$string['csvfile'] = 'Ficheiro CSV';
-$string['csvimport'] = 'Importar ficheiro CSV';
+$string['csstemplate'] = 'CSS personalizado';
+$string['csvfailed'] = 'Non se pode ler os datos en bruto do ficheiro CSV';
+$string['csvfile'] = 'CSV ou ZIP que contén un ficheiro CSV';
+$string['csvimport'] = 'importar ficheiro CSV';
 $string['csvimport_help'] = 'As entradas pódense importar mediante un ficheiro de texto simple cunha lista de nomes de campos na primeira liña, logo os datos, cun rexistro por liña.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
 $string['data:addinstance'] = 'Engadir unha nova base de datos';
@@ -108,7 +108,7 @@ $string['data:exportuserinfo'] = 'Exportar información do usuario';
 $string['data:managecomments'] = 'Xestionar comentarios';
 $string['data:manageentries'] = 'Xestionar entradas';
 $string['data:managetemplates'] = 'Xestionar modelos';
-$string['data:manageuserpresets'] = 'Xestionar todas as predefinicións do modelo';
+$string['data:manageuserpresets'] = 'Xestionar as predefinicións';
 $string['data:rate'] = 'Ponderar entradas';
 $string['data:readentry'] = 'Ler entradas';
 $string['data:view'] = 'Ver a actividade da base de datos';
@@ -133,7 +133,7 @@ $string['deleted'] = 'eliminado';
 $string['deleteentry'] = 'Eliminar entrada';
 $string['deletefield'] = 'Eliminar campo';
 $string['deletenotenrolled'] = 'Eliminar as entradas de usuarios non matriculados';
-$string['deletewarning'] = 'Confirma que quere eliminar esta predefinición?';
+$string['deletewarning'] = 'A eliminación dunha predefinición retíraa da lista de predefinicións dispoñíbeis en todos os cursos.';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} Non hai predefinición: faltan os ficheiros: {$a->missing_files}';
 $string['disapprove'] = 'Desfacer a aprobación';
@@ -143,20 +143,21 @@ $string['editcomment'] = 'Editar comentario';
 $string['editentry'] = 'Editar entrada';
 $string['editfield'] = 'Editar campo';
 $string['editordisable'] = 'Desactivar o editor';
-$string['editorenable'] = 'Activar o editor';
+$string['editorenable'] = 'Activar o editor de código';
 $string['editpreset'] = 'Editar a predefinición';
 $string['emptyadd'] = 'O modelo Engadir está baleiro, xeración dun formulario predeterminado...';
 $string['emptyaddform'] = 'Non cubriu ningún campo!';
 $string['emptypresetname'] = 'O nome ou o ficheiro predefinido non poden estar baleiros';
 $string['enabletemplateeditorcheck'] = 'Confirma que quere activar o editor? Isto pode provocar que o contido se altere cando o modelo estea gardado.';
 $string['entries'] = 'Entradas';
-$string['entrieslefttoadd'] = 'Debe de engadir {$a->entriesleft} máis entrada/entradas para completar esta actividade';
+$string['entrieslefttoadd'] = 'Debe engadir {$a-> entriesleft} máis entrada/entradas para completar esta actividade.';
 $string['entrieslefttoaddtoview'] = 'Debe de engadir {$a->entrieslefttoview} máis entrada/entradas antes de poder ver as entradas doutros participantes.';
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Gardouse o seu artigo';
+$string['errordatafilenotfound'] = 'Non foi posíbel importar o ficheiro. Os tipos de ficheiros aceptados son CSV ou un ZIP que contén un ficheiro CSV no formato utilizado para exportar entradas.';
 $string['errormustbeteacher'] = 'Para usar esta páxina deber ser profesor!';
 $string['errormustsupplyvalue'] = 'Debe fornecer aquí un valor.';
-$string['errorpresetexists'] = 'Xa existe unha predefinición co nome escollido';
+$string['errorpresetexists'] = 'Xa existe unha predefinición con este nome.';
 $string['errorpresetexistsbutnotoverwrite'] = 'Xa existe unha predefinición con este nome. Escolla outro nomea';
 $string['errorpresetnotfound'] = 'Non se atopou a predefinición co nome {$a}.';
 $string['eventfieldcreated'] = 'Campo creado';
@@ -179,18 +180,18 @@ $string['exportformat'] = 'Formato de exportación';
 $string['exportoptions'] = 'Opcións de exportación';
 $string['exportownentries'] = 'Exportar soamente as súas propias entradas? ({$a->mine}/{$a->all})';
 $string['exportpreset'] = 'Exportara predefinición';
-$string['failedpresetdelete'] = 'Produciuse un erro ao eliminar a predefinición!';
+$string['failedpresetdelete'] = 'Atopouse un erro ao tentar eliminar a predefinición.';
 $string['fieldadded'] = 'Campo engadido';
 $string['fieldallowautolink'] = 'Permitir o autoligado';
 $string['fielddeleted'] = 'Campo eliminado';
 $string['fielddelimiter'] = 'Separador de campos';
 $string['fielddescription'] = 'Descrición de campo';
-$string['fieldenclosure'] = 'Cerramento de campo';
+$string['fieldenclosure'] = 'Encerramento de campo';
 $string['fieldheight'] = 'Alto';
-$string['fieldheightlistview'] = 'Altura na vista da lista';
-$string['fieldheightsingleview'] = 'Altura en vista única';
+$string['fieldheightlistview'] = 'Alto (en píxeles) en vista de lista';
+$string['fieldheightsingleview'] = 'Alto (en píxeles) en vista única';
 $string['fieldids'] = 'Id de campo';
-$string['fieldmappings'] = 'Asignación de campos';
+$string['fieldmappings'] = 'Asignacións de campo';
 $string['fieldmappings_help'] = 'Este menú permítelle gardar os datos da base de datos existente. Para preservar os datos nun campo, debe asignalos a un novo campo onde aparecerán os datos. Tamén pode deixar en branco calquera campo, sen que se copie ningunha información nel. Perderase calquera campo antigo non asignado a un novo e eliminaranse todos os seus datos.
 Só pode campos do mesmo tipo, polo que cada menú despregábel terá diferentes campos nel. Ademais, ten que ter coidado de non tratar de asignar un campo antigo a máis dun campo novo.';
 $string['fieldname'] = 'Nome de campo';
@@ -199,42 +200,47 @@ $string['fieldnotmatched'] = 'Os seguintes campos do seu ficheiro non son coñec
 $string['fieldoptions'] = 'Opcións (unha por liña)';
 $string['fields'] = 'Campos';
 $string['fieldshelp'] = 'Crear campos para a recolleita de diferentes tipos de datos. Os campos definen a estrutura das entradas da súa base de datos.';
+$string['fieldsinformationtags'] = 'Información do campo';
 $string['fieldsnavigation'] = 'Campos de navegación terciaria';
+$string['fieldtagdescription'] = 'Descrición de {$a}';
+$string['fieldtagid'] = 'ID de {$a}';
+$string['fieldtagname'] = 'Nome de {$a}';
 $string['fieldupdated'] = 'Campo actualizado';
-$string['fieldwidth'] = 'Largo';
-$string['fieldwidthlistview'] = 'Largura na vista da lista';
-$string['fieldwidthsingleview'] = 'Largura en vista única';
+$string['fieldwidth'] = 'Ancho';
+$string['fieldwidthlistview'] = 'Largo (en píxeles) en vista de lista';
+$string['fieldwidthsingleview'] = 'Largo (en píxeles) en vista única';
 $string['file'] = 'Ficheiro';
 $string['fileencoding'] = 'Codificación';
 $string['filesnotgenerated'] = 'Non se xeraron todos os ficheiros: {$a}';
-$string['filtername'] = 'Autoligado da base de datos';
+$string['filtername'] = 'Ligazón automática da base de datos';
 $string['footer'] = 'Rodapé';
 $string['forcelinkname'] = 'Nome forzado para a ligazón';
-$string['foundnorecords'] = 'Non se atoparon rexistros (<a href="{$a->reseturl}">Reiniciar os filtros</a>)';
-$string['foundrecords'] = 'Atopáronse os rexistros: {$a->num}/{$a->max} (<a href="{$a->reseturl}">Reiniciar os filtros</a>)';
+$string['foundnorecords'] = 'Non se atoparon rexistros. <a href="{$a->reseturl}">Limpar todo</a>';
+$string['foundrecords'] = 'Atopados {$a->num} de {$a->max} rexistros. <a href="{$a->reseturl}">Limpar todo</a>';
 $string['fromfile'] = 'Importar dende un ficheiro zip';
 $string['fromfile_help'] = 'A importación dun ficheiro zip permítelle buscar e actualizar un zip predefinido de modelos e campos.';
 $string['generateerror'] = 'Non se xeraron todos os filtros!';
 $string['header'] = 'Cabeceira';
-$string['headeraddtemplate'] = 'Definir a interface ao editar entradas';
-$string['headerasearchtemplate'] = 'Definir a interface para buscas avanzadas';
-$string['headercsstemplate'] = 'Definir os estilos CSS locais para outros modelos';
-$string['headerjstemplate'] = 'Definir un Javascript personalizado para outros modelos';
-$string['headerlisttemplate'] = 'Definir a interface de navegación para múltiples entradas';
-$string['headerrsstemplate'] = 'Definir a aparencia de entradas en fontes RSS';
-$string['headersingletemplate'] = 'Definir a interface de navegación para unha entrada única';
+$string['headeraddtemplate'] = 'Definir a interface para engadir ou editar entradas.';
+$string['headerasearchtemplate'] = 'Definir a interface para a busca avanzada.';
+$string['headercsstemplate'] = 'Engadir CSS personalizado aos modelos.';
+$string['headerjstemplate'] = 'Engadir JavaScript personalizado para os modelos de Lista, Única ou Engadir entrada.';
+$string['headerlisttemplate'] = 'Definir a aparencia de vista de lista.';
+$string['headerrsstemplate'] = 'Definir a aparencia de entradas nas fontes RSS.';
+$string['headersingletemplate'] = 'Definir a aparencia de vista única.';
 $string['id'] = 'ID da entrada';
 $string['importandapply'] = 'Importar predefinición e aplicar';
 $string['importapreset'] = 'Importar unha predefinición';
 $string['importentries'] = 'Importar entradas';
-$string['importpreset'] = 'Importar unha predefinición';
+$string['importpreset'] = 'Importar predefinición';
 $string['importpreset_desc'] = 'A esta actividade aplicaráselle a predefinición, creando campos e modelos.
  Non aparecerá na lista de predefinicións.';
 $string['importpresetmissingcapability'] = 'Non ten permiso para importar unha predefinición.';
-$string['importsuccess'] = 'A predefinición aplicouse correctamente.';
+$string['importsuccess'] = 'Predefinición aplicada.';
 $string['includeapproval'] = 'Incluír estado de aprobación';
+$string['includefiles'] = 'Incluír ficheiros na exportación';
 $string['includetags'] = 'Incluír as etiquetas';
-$string['includetime'] = 'Incluír o momento de engadido/modificado';
+$string['includetime'] = 'Include time added/modified';
 $string['includeuserdetails'] = 'Incluír detalles do usuario';
 $string['indicator:cognitivedepth'] = 'Base de datos cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de base de datos.';
@@ -256,20 +262,20 @@ $string['invalidid'] = 'Datos ID incorrectos';
 $string['invalidpreset'] = '{$a} non é unha predefinición.';
 $string['invalidrecord'] = 'Rexistro incorrecto';
 $string['invalidurl'] = 'O URL que introduciu non é correcto';
-$string['jstemplate'] = 'Modelo Javascript';
+$string['jstemplate'] = 'JavaScript personalizado';
 $string['latitude'] = 'Latitude';
-$string['latlong'] = 'Latitude/Lonxitude';
+$string['latlong'] = 'Coordenadas';
 $string['latlongboth'] = 'É necesario tanto a latitude como a lonxitude.';
 $string['latlongdownloadallhint'] = 'A ligazón de descarga de todas as entradas como KML';
-$string['latlongkmllabelling'] = 'Como etiquetar elementos en ficheiros KML (Google Earth)';
+$string['latlongkmllabelling'] = 'Como etiquetar ítems en ficheiros KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Ligazóns externas para presentar servizos';
 $string['latlongotherfields'] = 'Outros campos';
 $string['list'] = 'Ver lista';
-$string['listtemplate'] = 'Modelo de lista';
+$string['listtemplate'] = 'Modelo de vista de lista';
 $string['listview'] = 'Ver como lista';
 $string['longitude'] = 'Lonxitude';
 $string['manageapproved'] = 'Permitir a edición de entradas aprobadas';
-$string['manageapproved_help'] = 'Se o desactiva, as entradas aprobadas xa non serán editábeis ou eliminábeis polo usuario que as engadiu. Este axuste non ten efecto a non ser que estea activado «Aprobación requirida».';
+$string['manageapproved_help'] = 'Permitir aos alumnos editar ou eliminar as súas entradas após ser aprobadas. As entradas editadas deberán ser reaprobadas.';
 $string['managefields'] = 'Xestionar campos';
 $string['mapexistingfield'] = 'Asignar a {$a}';
 $string['mapnewfield'] = 'Crear un novo campo';
@@ -280,40 +286,40 @@ $string['mapping:fieldstodelete'] = 'Campos existentes a eliminar: {$a}';
 $string['mapping:mapfields'] = 'Asignar campos';
 $string['mapping:warningmessagedelete'] = 'Se os campos a eliminar son do mesmo tipo que os novos campos no predefinido que se lle aplica, pode ser qun de asignalos na asignación de campos.';
 $string['mapping:warningmessagedeleteandcreate'] = 'Se os campos a eliminar son do mesmo tipo que os campos a crear, pode ser quen de asignalos na asignación de campos.';
-$string['mappingwarning'] = 'Todos os vellos campos non asignados a un novo campo perderanse e todos os datos nese campo eliminaranse.';
+$string['mappingwarning'] = 'Todos os campos vellos non asignados a un novo campo perderanse e eliminaranse todos os datos nese campo.';
 $string['maxentries'] = 'Entradas máximas';
 $string['maxentries_help'] = 'O número máximo de entradas que se lle permite remitir a un alumno para esta actividade.';
 $string['maxsize'] = 'Tamaño máximo';
 $string['menu'] = 'Menú';
 $string['menuchoose'] = 'Escoller...';
-$string['missingdata'] = 'Debe fornecerse id dos datos ou do obxecto para o campo clase';
+$string['missingdata'] = 'Debe fornecerse un ID ou obxecto de datos para a clase de campo.';
 $string['missingfield'] = 'Erro na programación: Debe especificar o campo e/ou datos ao definir o campo clase.';
 $string['missingfieldtype'] = 'Non se atopou o tipo de campo para {$a->name}';
 $string['missingfieldtypeimport'] = 'Non se importaron os seguintes campos porque non están instalados os seus tipos de campo correspondentes:';
 $string['missingfieldtypes'] = 'Os seguintes campos non teñen instalados os seus tipos de campo correspondentes e non se incluirán no formulario Engadir entrada. Debe comprobar o modelo Engadir entrada e eliminar calquera nome de campo.';
 $string['modulename'] = 'Base de datos';
-$string['modulename_help'] = 'O módulo de actividade permítelles aos participantes crear, manter e buscar unha colección de entradas (é dicir, rexistros). A estrutura das entradas defínea o profesor como un número de campos. Os tipos de campos como caixas de verificación, botón de opción, menú despregábel, área de texto, URL, imaxe ou ficheiro enviado.
+$string['modulename_help'] = 'A base de datos permite aos participantes crear, manter e buscar unha colección de entradas.
 
-O deseño visual da información ao listar, ver ou editar as entradas da base de datos pode controlarse mediante modelos de bases de datos. As actividades da base de datos pode compartirse entre cursos como predefinicións e un profesor tamén pode importar e exportar entradas da base de datos.
+A estrutura das entradas defínese mediante diferentes tipos de campos, como texto breve, lista despregábel, área de texto, URL, imaxe ou ficheiro.
 
-Se o filtro de autoligado de base de datos está activo, calquera entrada nunha base de datos ligarase automaticamente cando as palabras ou as frases aparezan dentro do curso.
+Como profesor, pode comentar e valorar entradas. Tamén pode permitir que o alumnado valore e comente as entradas (avaliación por pares). As cualificacións pódense agregar para formar unha cualificación final, que se rexistra no libro de cualificacións.
 
-Un profesor pode permitir comentarios en entradas. As entradas tamén as poden ponderar os profesores ou os alumnos (avaliación por pares). As ponderacións poden engadirse para formar un grao final que se grava no libro de graos.
+Se o filtro de vinculación automática da base de datos está activado, todas as entradas dunha base de datos ligaranse automaticamente onde aparecen as palabras ou frases dentro do curso.
 
-As actividades da base de datos teñen moitos usos, tales como
+Pode usar a base de datos para:
 
-* Unha colección colectiva de ligazóns web, libros, resumos de libros, referencias xornalísticas, etc.
-* Para presentar fotos, carteis, sitios web ou poemas feitos por alumnos comentados e revisados por pares';
+* Crear unha colección colaborativa de ligazóns, libros, recensións de libros, referencias a revistas, etc.
+* Amosar fotos, carteis, sitios web ou poemas creados polo alumnado para o seu comentario e revisión.';
 $string['modulename_link'] = 'mod/chat/vista';
 $string['modulenameplural'] = 'Bases de datos';
-$string['more'] = 'Máis';
+$string['more'] = 'More';
 $string['moreurl'] = 'Máis URL';
 $string['movezipfailed'] = 'Non é posíbel mover o zip';
 $string['multientry'] = 'Entrada repetida';
-$string['multimenu'] = 'Menú (selección múltiple)';
+$string['multimenu'] = 'Menú (Multiselección)';
 $string['multipletags'] = 'Atopáronse múltiples etiquetas! Modelo non gardado';
 $string['newentry'] = 'Nova entrada';
-$string['newfield'] = 'Crear un novo campo';
+$string['newfield'] = 'Crear un campo';
 $string['newfield_help'] = 'Un campo permite a introdución de datos. Cada entrada nunha actividade de base de datos pode ter múltiples campos de múltiples tipos como un campo de data, que lles permite aos participantes seleccionar un día, mes e ano dun menú despregábel, un campo de imaxe que lles permite aos participantes enviar un ficheiro de imaxe ou un campo de caixa de selección, o que lles permite aos participantes seleccionar unha ou máis opcións.
 
 Cada campo debe ter un único nome de campo. A descrición do campo é opcional.';
@@ -322,13 +328,13 @@ $string['nodefinedfields'] = 'A nova predefinición non ten campos definidos!';
 $string['nofieldcontent'] = 'Non se atopou o contido do campo';
 $string['nofieldindatabase'] = 'Non hai campos definidos nesta base de datos.';
 $string['nofields'] = 'Aínda non hai campos';
-$string['nolisttemplate'] = 'O modelo de lista aínda non está definido';
+$string['nolisttemplate'] = 'O modelo de vista de lista aínda non está definido';
 $string['nomatch'] = 'Non se atoparon entradas que coincidan';
 $string['nomaximum'] = 'Número máximo';
 $string['nopreviewavailable'] = 'Non hai vista previa dispoñíbel para {$a}';
-$string['norecords'] = 'Non hai entradas na base de datos';
-$string['nosingletemplate'] = 'O modelo para única aínda non está definido';
-$string['notapproved'] = 'A entrada aínda non está aprobada.';
+$string['norecords'] = 'Aínda non hai entradas';
+$string['nosingletemplate'] = 'O modelo de vista única aínda non está definido';
+$string['notapproved'] = 'Pendente de aprobación';
 $string['notapprovederror'] = 'A entrada aínda non está aprobada.';
 $string['notemplates'] = 'Aínda non hai modelos';
 $string['notinjectivemap'] = 'Non é un mapa inxectivo';
@@ -342,9 +348,10 @@ $string['openafterclose'] = 'Especificou unha data aberta após a data de remate
 $string['optionaldescription'] = 'Descrición curta (opcional)';
 $string['optionalfilename'] = 'Nome de ficheiro (opcional)';
 $string['other'] = 'Outro';
-$string['overrwritedesc'] = 'Sobrescribir a predefinición se xa existise';
+$string['otherfields'] = 'Todos os demais campos';
+$string['overrwritedesc'] = 'Substituír o predefinido existente por este nome e sobrescribir o seu contido';
 $string['overwrite'] = 'Sobrescribir';
-$string['overwritesettings'] = 'Sobrescribir os axustes actuais';
+$string['overwritesettings'] = 'Sobrescribir os axustes actuais como comentarios, valoracións, etc.';
 $string['page-mod-data-x'] = 'Calquera páxina do módulo de actividade de base de datos';
 $string['pagesize'] = 'Entradas por páxina';
 $string['participants'] = 'Participantes';
@@ -352,22 +359,23 @@ $string['picture'] = 'Imaxe';
 $string['pleaseaddsome'] = 'Cree algo como o que segue ou <a href="{$a}">escolla un conxunto predefinido</a> para ir comezando.';
 $string['pluginadministration'] = 'Administración da actividade de base de datos';
 $string['pluginname'] = 'Base de datos';
-$string['portfolionotfile'] = 'Exportar a un portafolios antes ca a un ficheiro (soamente csv e leap2a)';
+$string['portfolionotfile'] = 'Exportar a un cartafol antes ca a un ficheiro (soamente csv e leap2a)';
 $string['presetdeleted'] = 'Eliminouse a predefinición.';
 $string['presetinfo'] = 'Ao gardalo como un predefinido publicarase este modelo. Outros usuarios poderán usalo nas súas bases de datos.';
 $string['presetnotselected'] = 'Non se seleccionou ningunha predefinición.';
 $string['presets'] = 'Predefinicións';
 $string['presetshelp'] = 'Escolla un predefinido para usar como punto de partida.';
 $string['preview'] = 'Vista previa de {$a}';
+$string['previewaction'] = 'Vista previa';
 $string['privacy:metadata:commentpurpose'] = 'Comentarios nos rexistros da base de datos';
-$string['privacy:metadata:data_content'] = 'Representa unha resposta a un campo no módulo de actividade da base de datos';
+$string['privacy:metadata:data_content'] = 'O contido dun campo';
 $string['privacy:metadata:data_content:content'] = 'Contido';
 $string['privacy:metadata:data_content:content1'] = 'Contido adicional 1';
 $string['privacy:metadata:data_content:content2'] = 'Contido adicional 2';
 $string['privacy:metadata:data_content:content3'] = 'Contido adicional 3';
 $string['privacy:metadata:data_content:content4'] = 'Contido adicional 4';
 $string['privacy:metadata:data_content:fieldid'] = 'ID de definición de campo';
-$string['privacy:metadata:data_records'] = 'Representan rexistros no módulo de actividade da base de datos';
+$string['privacy:metadata:data_records'] = 'Rexistros na actividade da base de datos';
 $string['privacy:metadata:data_records:approved'] = 'Estado de aprobación';
 $string['privacy:metadata:data_records:groupid'] = 'Grupo';
 $string['privacy:metadata:data_records:timecreated'] = 'O momento no que se creou o rexistro';
@@ -377,15 +385,15 @@ $string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para o módulo de 
 $string['privacy:metadata:filepurpose'] = 'Ficheiro anexo ao rexistro da base de datos';
 $string['privacy:metadata:ratingpurpose'] = 'Puntuación nos rexistros da base de datos';
 $string['privacy:metadata:tagpurpose'] = 'Etiquetas nos rexistros da base de datos';
-$string['radiobutton'] = 'Botóns de opción';
+$string['radiobutton'] = 'Botóns de radio';
 $string['recordapproved'] = 'Entrada aprobada';
 $string['recorddeleted'] = 'Entrada eliminada';
 $string['recorddisapproved'] = 'Entrada non aprobada';
 $string['recordsnotsaved'] = 'Non se gardou ningunha entrada. Comprobe o formato do ficheiro enviado.';
 $string['recordssaved'] = 'entradas gardadas';
 $string['removealldatatags'] = 'Retirar todas as etiquetas da base de datos';
-$string['requireapproval'] = 'Solicita aprobación?';
-$string['requireapproval_help'] = 'De estar activada, as entradas requiren a aprobación por un profesor antes de ser visíbeis para calquera';
+$string['requireapproval'] = 'Aprobación requirida';
+$string['requireapproval_help'] = 'Un profesor ten que aprobar as entradas antes de que sexan visíbeis por todos.';
 $string['required'] = 'Obrigatorio';
 $string['requiredentries'] = 'Entradas solicitadas';
 $string['requiredentries_help'] = 'Se está definido, amósase unha mensaxe que indica a cantidade de entradas necesarias para completar. Teña en conta que este axuste non está conectado ao completado da actividade.
@@ -393,16 +401,16 @@ $string['requiredentries_help'] = 'Se está definido, amósase unha mensaxe que 
 Para as entradas requiridas para o completado da actividade, debería usarse a nova configuración de completado de actividade «Requirir entradas». Para retirar este axuste completamente, estabeleza como «ningunha» e, a continuación, garde os cambios.
 Use os campos de entradas requiridos na sección de completado da actividade.';
 $string['requiredentriestoview'] = 'Entradas requiridas antes da visualización';
-$string['requiredentriestoview_help'] = 'O número de entradas que se lle pide que envíe un alumno antes de que poida ver as entradas doutros alumnos.
+$string['requiredentriestoview_help'] = 'O número de entradas que debe engadir un alumno antes de poder ver as entradas doutros alumnos.
 
-Nota: De requirir entradas antes da vista previa, o filtro de autoligado da base de datos debería desactivarse. Isto é así porque o filtro de autoligado da base de datos non pode determinar cando un usuario enviou o número requirido de entradas.';
+Isto non é compatíbel co filtro de auto-ligazón da base de datos.';
 $string['requiredentrieswarning'] = 'Este axusten foi substituído por un axuste de completado da actividade «Requirir entradas»';
 $string['requiredfield'] = 'Campo requirido';
 $string['resetalltemplates'] = 'Restablecer todos os modelos';
 $string['resetalltemplatesconfirm'] = 'Está a piques de eliminar todos os modelos para a súa predefinición actual. Se quere restaurar os modelos máis adiante, ten que escoller de novo a predefinición na lapela «Predefinicións».';
 $string['resetalltemplatesconfirmtitle'] = 'Restabelecer todos os modelos?';
 $string['resetsettings'] = 'Reiniciar os filtros';
-$string['resettemplate'] = 'Reiniciar o modelo';
+$string['resettemplate'] = 'Restabelecer o modelo actual';
 $string['resettemplateconfirm'] = 'Isto eliminará permanentemente o {$a} para a súa predefinición actual.';
 $string['resettemplateconfirmtitle'] = 'Restabelecer o modelo?';
 $string['resizingimages'] = 'Redimensionando as miniaturas de imaxe...';
@@ -414,15 +422,15 @@ $string['rsstype'] = 'Fonte RSS para esta actividade';
 $string['save'] = 'Gardar';
 $string['saveandadd'] = 'Gardar e engadir outra';
 $string['saveandview'] = 'Gardar e ver';
-$string['saveaspreset'] = 'Gardar como predefinido';
+$string['saveaspreset'] = 'Publicar predefinido neste sitio';
 $string['saveaspreset_help'] = 'A característica de gardar como predefinido publica os modelos e campos como unha predefinición que outros usuarios poden usar no sitio. (Pode eliminala da lista de predefinidos en calquera momento)';
 $string['saveaspresetmissingcapability'] = 'O usuario non ten permiso para gardar a base de datos como unha predefinición.';
-$string['savedataaspreset'] = 'Garda todos os campos e modelos como predefinidos';
-$string['savesettings'] = 'Gardar os axustes';
-$string['savesuccess'] = 'Predefinición gardada. <a href="{$a->url}">Vista previa da predefinición</a>';
+$string['savedataaspreset'] = 'Gardar todos os campos e modelos e publicar como predefinido neste sitio';
+$string['savesettings'] = 'Gardar a configuración';
+$string['savesuccess'] = 'Predefinición gardada. <a href="{$a->url}"> Predefinición da vista previa</a>';
 $string['savetemplate'] = 'Gardar modelo';
 $string['search'] = 'Buscar';
-$string['search:activity'] = 'Base de datos, información de actividade';
+$string['search:activity'] = 'Base de datos - información de actividade';
 $string['search:entry'] = 'Base de datos, entradas';
 $string['selectedrequired'] = 'Requiridos todos os seleccionados';
 $string['selectexportoptions'] = 'Seleccionar as opcións de exportación';
@@ -430,8 +438,8 @@ $string['selectfields'] = 'Seleccionar campos';
 $string['showall'] = 'Amosar todas as entradas';
 $string['showmore'] = 'Amosar máis';
 $string['single'] = 'Ver única';
-$string['singletemplate'] = 'Modelo único';
-$string['singleview'] = 'Vista única';
+$string['singletemplate'] = 'Modelo de vista única';
+$string['singleview'] = 'Vista simple';
 $string['startbuilding'] = 'Comezar a construír a súa actividade';
 $string['subplugintype_datafield'] = 'Tipo de campo de base de datos';
 $string['subplugintype_datafield_plural'] = 'Tipos de campo de base de datos';
@@ -448,30 +456,25 @@ $string['templatesaved'] = 'Modelo gardado';
 $string['templatesnavigation'] = 'Modelos de navegación terciaria';
 $string['text'] = 'Texto';
 $string['textarea'] = 'Área de texto';
-$string['timeadded'] = 'Momento do engadido';
-$string['timemodified'] = 'Momento da modificación';
+$string['timeadded'] = 'Tempo engadido';
+$string['timemodified'] = 'Tempo modificado';
 $string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Non existe un método definido en Data_Preset para manexa a acción "{$a}".';
 $string['unknown'] = 'Campo descoñecido';
-$string['unsupportedexport'] = '({$a->fieldtype}) non se pode exportar.';
 $string['unsupportedfields'] = 'Campos non admitidos';
 $string['unsupportedfieldslist'] = 'Non é posíbel exportar os seguintes campos:';
 $string['updatefield'] = 'Actualizar un campo existente';
 $string['uploadfile'] = 'Actualizar ficheiro';
-$string['uploadrecords'] = 'Actualizar entradas dende o ficheiro';
-$string['uploadrecords_help'] = 'As entradas poden cargarse vía un ficheiro de texto. O formato do ficheiro debería ser como segue:
+$string['uploadrecords'] = 'Importar entradas';
+$string['uploadrecords_help'] = 'Importe entradas que teña exportado doutra base de datos, xa sexa a través de CSV ou dun ZIP que conteña un ficheiro CSV (se se inclúen ficheiros na exportación).
 
-* Cada liña do ficheiro contén un rexistro
-* Cada rexistro é unha serie de datos separados polo separador seleccionado
-* O primeiro rexistro contén unha lista de nomes de campos que definen o formato do resto do ficheiro
-
-O cerramento de campo é un carácter que rodea cada campo de cada rexistro. Normalmente deixarse sen definir.';
+Alternativamente, para crear un ficheiro CSV para importar, engada unha entrada á base de datos e logo expórtea. Edite o ficheiro CSV e engada máis entradas.';
 $string['uploadrecords_link'] = 'mod/data/importar';
 $string['url'] = 'URL';
 $string['usedate'] = 'Incluír na busca.';
 $string['usepredefinedset'] = 'Use o conxunto predefinido';
-$string['usepreset'] = 'Use o predefinido';
+$string['usepreset'] = 'Usar este predefinido';
 $string['usestandard'] = 'Use unha predefinición';
 $string['usestandard_help'] = 'Para usar unha predefinición dispoñíbel para todo o sitio, selecciónea da lista. (Se engadiu unha predefinición á lista usando a característica de gardar como predefinido entón ten a opción de eliminala)';
 $string['viewfromdate'] = 'Permitir soamente a lectura de';
@@ -479,4 +482,4 @@ $string['viewnavigation'] = 'Modo de visualización de navegación terciaria';
 $string['viewtemplates'] = 'Ver modelos';
 $string['viewtodate'] = 'Permitir soamente a lectura en';
 $string['viewtodatevalidation'] = 'A data «lectura só ata» non pode ser anterior á data «lectura só a partir de».';
-$string['wrongdataid'] = 'Os datos fornecidos son incorrectos';
+$string['wrongdataid'] = 'Forneceuse un ID de datos incorrectos';

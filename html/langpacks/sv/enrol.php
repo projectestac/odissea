@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'sv', version '4.1'.
+ * Strings for component 'enrol', language 'sv', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,15 @@ $string['assignnotpermitted'] = 'Du har inte behörighet, eller kan inte tilldel
 $string['bulkuseroperation'] = 'Bulk användarhantering';
 $string['configenrolplugins'] = 'Välj alla de obligatoriska pluginmodulerna och arrangera dem sedan i lämplig ordning.';
 $string['custominstancename'] = 'Anpassat namn på instans';
+$string['customwelcomemessage'] = 'Anpassat välkomstmeddelande';
+$string['customwelcomemessage_help'] = 'Ett anpassat välkomstmeddelande kan läggas till som oformaterad text eller som Moodle autoformaterad text, inklusive HTML-taggar och flerspråkliga taggar.
+
+Följande platshållare kan inkluderas i meddelandet:
+
+* Kursnamn {$a->coursename}
+* Länk till användarens profilsida {$a->profileurl}
+* Användar e-post {$a->email}
+* Användarens fullständiga namn {$a->fullname}';
 $string['defaultenrol'] = 'Lägg till instans till nya kurser';
 $string['defaultenrol_desc'] = 'Det är möjligt att lägga till den här pluginmodulen till alla nya kurser som standard.';
 $string['deleteinstanceconfirm'] = 'OBS! Du håller på ta bort registreringsmetoden "{$a->name}". Alla {$a->users} användare som registrerats med denna metod kommer att avregistreras och all kursrelaterad data såsom användarnas betyg, grupptillhörighet eller forumsprenumerationer kommer att raderas.
@@ -139,7 +148,6 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Tid då användarregistre
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Tidpunkt då användarregistreringen ändrades';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Tid då användarregistreringen börjar';
 $string['privacy:metadata:user_enrolments:userid'] = 'Användar-ID:t';
-$string['proceedtocourse'] = 'Gå vidare till kursinnehåll';
 $string['recovergrades'] = 'Återställ användarens betyg om möjligt';
 $string['rolefromcategory'] = '{$a->role} (Ärvd från kurskategori)';
 $string['rolefrommetacourse'] = '{$a->role} (Ärvd från föräldrakurs)';

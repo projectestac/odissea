@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'uk', version '4.1'.
+ * Strings for component 'page', language 'uk', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -66,8 +66,6 @@ $string['popupheight'] = 'Висота (в пікселях)';
 $string['popupheightexplain'] = 'Визначає типову висоту виринаючих вікон';
 $string['popupwidth'] = 'Ширина  (в пікселях)';
 $string['popupwidthexplain'] = 'Зазначає типову ширину виринаючих вікон.';
-$string['printheading'] = 'Показувати назву сторінки';
-$string['printheadingexplain'] = 'Чи показувати назву сторінки над вмістом?';
 $string['printintro'] = 'Показувати опис сторінки';
 $string['printintroexplain'] = 'Чи показувати опис сторінки над вмістом?';
 $string['printlastmodified'] = 'Показати дату останньої зміни';

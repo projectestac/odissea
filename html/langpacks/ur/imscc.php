@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscc', language 'ur', version '4.1'.
+ * Strings for component 'imscc', language 'ur', version '4.4'.
  *
  * @package     imscc
  * @category    string

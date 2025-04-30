@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', version '4.1'.
+ * Strings for component 'enrol', language 'it', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Non hai i privilegi o non puoi assegnare ruoli 
 $string['bulkuseroperation'] = 'Operazioni in massa sugli utenti';
 $string['configenrolplugins'] = 'Per favore seleziona i plugin necessari e mettili in sequenza di utilizzo.';
 $string['custominstancename'] = 'Nome personalizzato istanza';
+$string['customwelcomemessage'] = 'Messaggio di benvenuto personalizzato';
+$string['customwelcomemessage_help'] = 'Formati accettati: testo semplice o formato automatico Moodle. Sono accettati anche tag HTML e tag multi-lang, nonché i seguenti segnaposto:
+<ul>
+<li>Titolo del corso {$a->coursename}</li>
+<li>Link alla pagina del profilo dell\'utente {$a->profileurl}</li>
+<li>Email utente {$a->email}</li>
+<li>Nome e cognome dell\'utente {$a->fullname}</li>
+<li>Nome dell\'utente {$a->firstname}</li>
+<li>Cognome dell\'utente {$a->cognome}</li>
+<li>Ruolo del corso dell\'utente {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Gentile {$a->fullname}, sei stato iscritto al corso {$a->coursename}';
 $string['defaultenrol'] = 'Aggiungi istanza nei nuovi corsi';
 $string['defaultenrol_desc'] = 'È possibile aggiungere di default questo plugin in tutti i nuovi corsi.';
 $string['deleteinstanceconfirm'] = 'Stai per rimuovere il metodo si iscrizione "{$a->name}". Tutti i {$a->users} utenti iscritti con questo metodo saranno disiscritti e i loro dati nel corso, come valutazioni, appartenenza a gruppi, sottoscrizione di forum, eccetera, verranno eliminati.
@@ -130,6 +142,7 @@ $string['periodend'] = 'fino al {$a}';
 $string['periodnone'] = 'iscritto {$a}';
 $string['periodstart'] = 'a partire da {$a}';
 $string['periodstartend'] = 'da {$a->start} a {$a->end}';
+$string['plugindisabled'] = 'Il plugin di iscrizione {$a} è disabilitato';
 $string['privacy:metadata:user_enrolments'] = 'Iscrizioni';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Istanza del plugin di iscrizione';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ID dell\'utente che ha più recentemente modificato l\'iscrizione dell\'utente.';
@@ -140,12 +153,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Orario di fine dell\'iscr
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Data e ora di modifica dell\'iscrizione dell\'utente';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Data e ora d\'inizio dell\'iscrizione dell\'utente';
 $string['privacy:metadata:user_enrolments:userid'] = 'ID dell\'utente';
-$string['proceedtocourse'] = 'Vai al contenuto del corso';
 $string['recovergrades'] = 'Recupera, ove possibile, i voti precedenti dell\'utente';
 $string['rolefromcategory'] = '{$a->role} (Ereditato dalla categoria di corsi)';
 $string['rolefrommetacourse'] = '{$a->role} (Ereditato dal corso genitore)';
 $string['rolefromsystem'] = '{$a->role} (Assegnato a livello di sito)';
 $string['rolefromthiscourse'] = '{$a->role} (Assegnato in questo corso)';
+$string['sendcoursewelcomemessage'] = 'Invia messaggio di benvenuto al corso';
+$string['sendcoursewelcomemessage_help'] = 'Quando si iscrive un utente o un gruppo al corso, è possibile inviare un messaggio email di benvenuto. Se inviata dal contatto del corso (per impostazione predefinita il docente) e più di un utente ha il ruolo di docente nel corso, l\'email verrà inviata dal primo utente a cui viene assegnato il ruolo.';
 $string['sendfromcoursecontact'] = 'Dal gestore del corso';
 $string['sendfromkeyholder'] = 'Dal gestore della chiave di iscrizione';
 $string['sendfromnoreply'] = 'Dall\'indirizzo no-reply';
@@ -164,7 +178,7 @@ $string['unassignnotpermitted'] = 'Non hai i privilegi per togliere ruoli da que
 $string['unenrol'] = 'Disiscrivi';
 $string['unenrolconfirm'] = 'Sei certo di disiscrivere l\'utente "{$a->user}"  (già iscritto tramite "{$a->enrolinstancename}") dal corso "{$a->course}"?';
 $string['unenrolleduser'] = 'L\'utente "{$a->fullname}"è stato disiscritto dal corso';
-$string['unenrolme'] = 'Disiscrivimi da {$a}';
+$string['unenrolme'] = 'Disiscrivimi da questo corso';
 $string['unenrolnotpermitted'] = 'Non hai i privilegi per disiscrivere questo utente dal corso.';
 $string['unenrolroleusers'] = 'Disiscrivi utenti';
 $string['uninstallmigrating'] = 'Migrazione di "{$a}" iscrizioni';

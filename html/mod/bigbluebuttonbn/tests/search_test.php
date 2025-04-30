@@ -36,7 +36,7 @@ require_once($CFG->dirroot . '/search/tests/fixtures/testable_core_search.php');
  * @covers \mod_bigbluebuttonbn\search\tags
  * @covers \mod_bigbluebuttonbn\search\activity
  */
-class search_test extends advanced_testcase {
+final class search_test extends advanced_testcase {
     use testcase_helper_trait;
     /**
      * @var string Area id
@@ -53,7 +53,7 @@ class search_test extends advanced_testcase {
      *
      * @return void
      */
-    public function test_indexing() {
+    public function test_indexing(): void {
         $this->resetAfterTest();
 
         // Setup test data.

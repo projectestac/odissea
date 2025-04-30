@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'en', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'en', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,14 @@ $string['addcategory'] = 'Add category';
 $string['addnewdefaults'] = 'Add a new module default';
 $string['addpurpose'] = 'Add purpose';
 $string['addroleoverride'] = 'Add role override';
+$string['allowfiltering'] = 'Allow filtering of exports by course';
+$string['allowfiltering_desc'] = 'If enabled, the privacy officer can choose to export user data from selected courses instead of all courses. When this feature is enabled,
+ export requests will start from \'Pending\' and can only be approved after a background task has completed.';
 $string['approve'] = 'Approve';
 $string['approvedrequestsubmitted'] = 'Your request has been submitted and will be processed soon.';
 $string['approverequest'] = 'Approve request';
+$string['approverequestall'] = 'Approve request (all data)';
+$string['approveselectedcourses'] = 'Approve selected courses';
 $string['automaticdatadeletionapproval'] = 'Automatic data deletion request approval';
 $string['automaticdatadeletionapproval_desc'] = 'If enabled, data deletion requests are automatically approved.<br/>Note that the automatic approval will only apply to new data deletion requests with this setting enabled. Existing data deletion requests pending approval will still have to be manually approved by the privacy officer.';
 $string['automaticdataexportapproval'] = 'Automatic data export request approval';
@@ -45,7 +50,7 @@ $string['cachedef_contextlevel'] = 'Context levels purpose and category';
 $string['cachedef_purpose'] = 'Data purposes';
 $string['cachedef_purpose_overrides'] = 'Purpose overrides in the Data privacy tool';
 $string['cancelrequest'] = 'Cancel request';
-$string['cancelrequestconfirmation'] = 'Do you really want cancel this data request?';
+$string['cancelrequestconfirmation'] = 'Do you want to cancel this data request?';
 $string['cannotreset'] = 'Unable to reset this request. Only rejected requests can be reset.';
 $string['categories'] = 'Categories';
 $string['categorieslist'] = 'List of data categories';
@@ -154,6 +159,7 @@ $string['errorinvalidrequeststatus'] = 'Invalid request status!';
 $string['errorinvalidrequesttype'] = 'Invalid request type!';
 $string['errornocapabilitytorequestforothers'] = 'User {$a->requestedby} doesn\'t have the capability to make a data request on behalf of user {$a->userid}';
 $string['errornoexpiredcontexts'] = 'There are no expired contexts to process';
+$string['errornoselectedcourse'] = 'You must select at least one course';
 $string['errorrequestalreadyexists'] = 'You already have an ongoing request.';
 $string['errorrequestnotfound'] = 'Request not found';
 $string['errorrequestnotwaitingforapproval'] = 'The request is not awaiting approval. Either it is not yet ready or it has already been processed.';
@@ -170,6 +176,7 @@ $string['expiry'] = 'Expiry';
 $string['explanationtitle'] = 'Icons used on this page and what they mean.';
 $string['external'] = 'Additional';
 $string['externalexplanation'] = 'An additional plugin installed on this site.';
+$string['filterexportdata'] = 'Approve request (data from selected courses)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Site home course';
 $string['gdpr_art_6_1_a_description'] = 'The data subject has given consent to the processing of his or her personal data for one or more specific purposes';
@@ -227,6 +234,7 @@ $string['noassignedroles'] = 'No assigned roles in this context';
 $string['noblockstoload'] = 'No blocks';
 $string['nocategories'] = 'There are no categories yet';
 $string['nocoursestoload'] = 'No activities';
+$string['nocoursetofilter'] = 'The user isn\'t enrolled in any courses to select';
 $string['nodatarequests'] = 'There are no data requests';
 $string['nodatarequestsmatchingfilter'] = 'There are no data requests matching the given filter';
 $string['noexpiredcontexts'] = 'This context level has no data for which the retention period has expired.';
@@ -288,6 +296,7 @@ $string['requesttype_help'] = 'Select the reason for contacting the privacy offi
 $string['requesttypedelete'] = 'Delete all of my personal data';
 $string['requesttypedeleteshort'] = 'Delete';
 $string['requesttypeexport'] = 'Export all of my personal data';
+$string['requesttypeexportallowfiltering'] = 'Export my personal data';
 $string['requesttypeexportshort'] = 'Export';
 $string['requesttypeothers'] = 'General enquiry';
 $string['requesttypeothersshort'] = 'Message';
@@ -319,6 +328,7 @@ $string['roleoverride'] = 'Role override';
 $string['roleoverrideoverview'] = 'The default retention policy can be overridden for specific user roles, allowing you to specify a longer, or a shorter, retention policy. A user is only expired when all of their roles have expired.';
 $string['roleoverrides'] = 'Role overrides';
 $string['selectbulkaction'] = 'Please select a bulk action.';
+$string['selectcourses'] = 'Select courses to export';
 $string['selectdatarequests'] = 'Please select data requests.';
 $string['selectuserdatarequest'] = 'Select {$a->username}\'s {$a->requesttype} data request.';
 $string['send'] = 'Send';
@@ -335,6 +345,7 @@ $string['statusdeleted'] = 'Deleted';
 $string['statusdetail'] = 'Status:';
 $string['statusexpired'] = 'Expired';
 $string['statuspending'] = 'Pending';
+$string['statuspreprocessing'] = 'Pre-processing';
 $string['statusprocessing'] = 'Processing';
 $string['statusready'] = 'Download ready';
 $string['statusrejected'] = 'Rejected';

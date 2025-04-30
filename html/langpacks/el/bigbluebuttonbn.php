@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'el', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'el', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -76,7 +76,7 @@ $string['config_experimental_features_description'] = 'Διαμόρφωση/Ρυ
 $string['config_extended_capabilities'] = 'Ρυθμίσεις για προχωρημένες δυνατότητες';
 $string['config_extended_capabilities_description'] = 'Ρυθμίσεις για προχωρημένες δυνατότητες όταν τις προσφέρει ο εξυπηρετητής BigBlueButton.';
 $string['config_general'] = 'Γενικές ρυθμίσεις';
-$string['config_general_description'] = 'Αυτές οι ρυθμίσεις χρησιμοποιούνται <b>πάντα</b>';
+$string['config_general_description'] = 'Για να ρυθμίσετε το BigBlueButton, μπορείτε είτε να χρησιμοποιήσετε τον δικό σας διακομιστή και διαπιστευτήρια BigBlueButton, είτε να αποκτήσετε διαπιστευτήρια μέσω του <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Portal Εγγραφής Blindside Networks (ανοίγει σε νέο παράθυρο)</a>.';
 $string['config_hideuserlist_default'] = 'Απόκρυψη λίστας χρηστών ενεργοποιημένη από προεπιλογή';
 $string['config_hideuserlist_default_description'] = 'Εάν ενεργοποιηθεί, τότε η λίστα χρηστών συνόδου θα είναι σε απόκρυψη.';
 $string['config_hideuserlist_editable'] = 'Η απόκρυψη λίστας χρηστών μπορεί να τροποποιηθεί';

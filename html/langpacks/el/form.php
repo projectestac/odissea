@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'el', version '4.1'.
+ * Strings for component 'form', language 'el', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -50,7 +50,6 @@ $string['filesofthesetypes'] = 'Αποδεκτοί τύποι αρχείων:';
 $string['filetypesany'] = 'Όλοι οι τύποι αρχείων';
 $string['filetypesnotall'] = 'Δεν επιτρέπεται να επιλέξετε «Όλοι οι τύποι αρχείων» εδώ';
 $string['filetypesnotallowed'] = 'Αυτοί οι τύποι αρχείων δεν επιτρέπονται εδώ: {$a}';
-$string['filetypesnotwhitelisted'] = 'Αυτοί οι τύποι αρχείων δεν επιτρέπονται εδώ: {$a}';
 $string['filetypesothers'] = 'Άλλα αρχεία';
 $string['filetypesunknown'] = 'Άγνωστοι τύποι αρχείων: {$a}';
 $string['general'] = 'Γενικά';

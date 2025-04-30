@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'el', version '4.1'.
+ * Strings for component 'glossary', language 'el', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -319,7 +319,6 @@ $string['totalentries'] = 'Συνολικές καταχωρήσεις';
 $string['usedynalink'] = 'Αυτόματη δημιουργία συνδέσμων με τις καταχωρήσεις γλωσσαρίου';
 $string['usedynalink_help'] = 'Αν η αυτόματη δημιουργία συνδέσμων με τις καταχωρήσεις γλωσσαρίου είναι ενεργοποιημένη σε όλο τον ιστότοπο από έναν διαχειριστή και αυτή η ρύθμιση είναι ενεργοποιημένη, τότε η φόρμα «Προσθήκη νέας καταχώρησης» περιλαμβάνει την επιλογή αυτόματης δημιουργίας συνδέσμων με την καταχώρηση οπουδήποτε οι λέξεις ή φράσεις της έννοιας εμφανίζονται σε όλο το υπόλοιπο του μαθήματος.';
 $string['visibletabs'] = 'Ορατές καρτέλες';
-$string['waitingapproval'] = 'Αναμένεται έγκριση';
 $string['warningstudentcapost'] = '(Ισχύει μόνο εάν το γλωσσάριο δεν είναι το κύριο)';
 $string['withauthor'] = 'Έννοιες με συγγραφέα';
 $string['withoutauthor'] = 'Έννοιες χωρίς συγγραφέα';

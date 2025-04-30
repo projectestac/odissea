@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'ca', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'ca', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -90,3 +90,5 @@ $string['checkdesc:tabletdshouldnotmerge'] = 'Les taules, idealment, no haurien 
 $string['checkdesc:tablethshouldhavescope'] = 'L\'«scope» de fila o columna d\'una taula (utilitzat per mapar fila i columna a cada cel·la) s\'hauria de declarar.';
 $string['checkidvalidation'] = 'Tasca per comprovar per a cada «checkID» no vàlid';
 $string['checkscompleted'] = 'Comprovacions completades: {$a}';
+$string['pluginname'] = 'Eines d\'accessibilitat';
+$string['printable:downloadpdf'] = 'Descarrega el pdf';

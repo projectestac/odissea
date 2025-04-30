@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'de', version '4.1'.
+ * Strings for component 'block_section_links', language 'de', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = 'Schrittweite1';
 $string['incby1_help'] = 'Der Wert für den Abschnitt wird - beginnend mit \'1\' - für jeden darauf folgenden Abschnittslink um diesen Wert erhöht';
 $string['incby2'] = 'Schrittweite2';
 $string['incby2_help'] = 'Der Wert für den Abschnitt wird - beginnend mit \'1\' - für jeden darauf folgenden Abschnittslink um diesen Wert erhöht';
-$string['jumptocurrenttopic'] = 'Aktueller Abschnitt';
+$string['jumptocurrenttopic'] = 'Zum bervorgehobenen Abschnitt';
 $string['jumptocurrentweek'] = 'Aktuelle Woche';
 $string['numsections1'] = 'Anzahl von Abschnitten';
 $string['numsections1_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer ist, erfolgt die Erhöhung in Schritten mit jeweils diesem Wert.';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Der Block Abschnitte zeigt nur Daten an, die an a
 $string['section_links:addinstance'] = 'Neuen Block \'Kursabschnitte\' hinzufügen';
 $string['showsectionname'] = 'Abschnittsname anzeigen';
 $string['showsectionname_help'] = 'Den Abschnittsnamen zusätzlich zur Abschnittsnummer anzeigen';
-$string['topics'] = 'Abschnitte';
-$string['weeks'] = 'Wochen';

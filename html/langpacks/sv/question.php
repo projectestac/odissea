@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'sv', version '4.1'.
+ * Strings for component 'question', language 'sv', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -313,7 +313,6 @@ $string['notchanged'] = 'Inte förändrats sedan senaste försök';
 $string['notenoughanswers'] = 'Denna typ av fråga kräver minst {$a} svar';
 $string['notenoughdatatoeditaquestion'] = 'Varken ett fråge-id, en kategori-id och frågetyp, har angivits.';
 $string['notenoughdatatomovequestions'] = 'Du måste ange fråge-id för de frågor som Du vill flytta.';
-$string['notflagged'] = 'Inte flaggad';
 $string['notgraded'] = 'Inte rättad';
 $string['notshown'] = 'Visas inte';
 $string['notyetanswered'] = 'Inte besvarad än';

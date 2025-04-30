@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'nl', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'nl', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -37,7 +37,7 @@ $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Geen nummering';
 $string['answersingleno'] = 'Meerdere antwoorden toegelaten';
 $string['answersingleyes'] = 'Slechts één antwoord';
-$string['choiceno'] = 'Kies {$a}';
+$string['choiceno'] = 'Keuze {$a}';
 $string['choices'] = 'Beschikbare keuzes';
 $string['clearchoice'] = 'Wis mijn keuze';
 $string['clozeaid'] = 'Geef ontbrekend woord';

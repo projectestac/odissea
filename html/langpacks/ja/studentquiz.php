@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'ja', version '4.1'.
+ * Strings for component 'studentquiz', language 'ja', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -62,7 +62,6 @@ $string['filter_label_approved'] = '承認済み問題';
 $string['filter_label_comment'] = 'コメント';
 $string['filter_label_createdate'] = '作成日付';
 $string['filter_label_difficulty_level'] = '難易度';
-$string['filter_label_fast_filters'] = 'フィルタ設定';
 $string['filter_label_myattempts'] = '自分の受験';
 $string['filter_label_mydifficulty'] = '自分にとっての難易度';
 $string['filter_label_mylastattempt'] = '自分の最新の受験';

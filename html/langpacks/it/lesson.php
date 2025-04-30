@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', version '4.1'.
+ * Strings for component 'lesson', language 'it', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -542,7 +542,7 @@ $string['savechangesandeol'] = 'Salva tutte le modifiche e vai alla fine della l
 $string['saveoverrideandstay'] = 'Salva e inserisci un\'altra personalizzazione';
 $string['savepage'] = 'Salva pagina';
 $string['score'] = 'Punteggio';
-$string['score_help'] = 'Il punteggio è utilizzato solo se è abilitato il punteggio personalizzato. Ciascuna domanda potrà quindi avere un punteggio numerico positivo o negativo.';
+$string['score_help'] = 'Se nelle impostazioni della lezione è abilitato il punteggio personalizzato, per ciascuna risposta è possibile inserire un valore numerico intero (positivo o negativo).';
 $string['scores'] = 'Punteggi';
 $string['search:activity'] = 'Lezione - Informazioni sull\'attività';
 $string['secondpluswrong'] = 'Non proprio. Vuoi riprovare?';

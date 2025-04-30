@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'fr', version '4.1'.
+ * Strings for component 'forum', language 'fr', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'S’abonner à tous les forums';
 $string['allunsubscribe'] = 'Se désabonner de tous les forums';
 $string['allusers'] = 'Tous les utilisateurs';
 $string['alreadyfirstpost'] = 'Ce message est déjà le premier de la discussion';
+$string['announcementsettings'] = 'Réglages par défaut du forum des annonces';
+$string['announcementsettings_help'] = 'Ces réglages définissent les réglages par défaut de tous les forums des annonces.';
 $string['anyfile'] = 'Tout fichier';
 $string['areaattachment'] = 'Annexes';
 $string['areapost'] = 'Messages';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Il est possible d’empêcher des participants de
 $string['blockperioddisabled'] = 'Ne pas bloquer';
 $string['blogforum'] = 'Forum standard affiché comme un blog';
 $string['bynameondate'] = 'par {$a->name}, {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Nombre de discussions de forum';
 $string['cachedef_forum_is_tracked'] = 'Statut de suivi des messages de forum pour l’utilisateur';
 $string['calendardue'] = 'Délai de {$a}';
 $string['cancelreply'] = 'Annuler la réponse';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Fermer l’interface d’évaluation';
 $string['completiondetail:discussions'] = 'Commencer des discussions : {$a}';
 $string['completiondetail:posts'] = 'Écrire des messages de forum : {$a}';
 $string['completiondetail:replies'] = 'Écrire des réponses : {$a}';
-$string['completiondiscussions'] = 'L’étudiant doit créer des discussions :';
+$string['completiondiscussions'] = 'Créer des discussions';
 $string['completiondiscussionsdesc'] = 'L’étudiant doit créer au moins {$a} discussion(s)';
 $string['completiondiscussionsgroup'] = 'Discussions requises';
 $string['completiondiscussionshelp'] = 'discussions requises pour terminer';
-$string['completionposts'] = 'L’étudiant doit créer des discussions ou écrire des réponses :';
+$string['completionposts'] = 'Créer des discussions ou poster des réponses';
 $string['completionpostsdesc'] = 'L’étudiant doit écrire au moins {$a} discussion(s) ou réponse(s)';
 $string['completionpostsgroup'] = 'Messages requis';
 $string['completionpostshelp'] = 'discussions ou réponses requises pour terminer';
-$string['completionreplies'] = 'L’étudiant doit poster des réponses :';
+$string['completionpostsinforums'] = 'Poster dans les forums';
+$string['completionreplies'] = 'Poster des réponses';
 $string['completionrepliesdesc'] = 'L’étudiant doit poster au moins {$a} réponse(s)';
 $string['completionrepliesgroup'] = 'Réponses requises';
 $string['completionreplieshelp'] = 'réponses requises pour terminer';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'Contenu posté';
 $string['eventcoursesearched'] = 'Cours recherché';
 $string['eventdiscussioncreated'] = 'Discussion créée';
 $string['eventdiscussiondeleted'] = 'Discussion supprimée';
+$string['eventdiscussionlockupdated'] = 'Verrouillage de discussion modifié';
 $string['eventdiscussionmoved'] = 'Discussion déplacée';
 $string['eventdiscussionpinned'] = 'Discussion épinglée';
 $string['eventdiscussionsubscriptioncreated'] = 'Abonnement à une discussion créé';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Abonnement à une discussion su
 $string['eventdiscussionunpinned'] = 'Discussion dépinglée';
 $string['eventdiscussionupdated'] = 'Discussion modifiée';
 $string['eventdiscussionviewed'] = 'Discussion consultée';
+$string['eventforumsubscriptionupdated'] = 'Mode d’abonnement modifié';
 $string['eventpostcreated'] = 'Message créé';
 $string['eventpostdeleted'] = 'Message supprimé';
 $string['eventpostupdated'] = 'Message modifié';
@@ -298,6 +304,7 @@ $string['forum:addinstance'] = 'Ajouter un forum';
 $string['forum:addnews'] = 'Ajouter des annonces';
 $string['forum:addquestion'] = 'Ajouter une question';
 $string['forum:allowforcesubscribe'] = 'Permettre d’imposer l’abonnement';
+$string['forum:canmailnow'] = 'Peut poster dans les forums Questions et réponses sans délai d’édition';
 $string['forum:canoverridecutoff'] = 'Poster un message dans un forum après sa date butoir';
 $string['forum:canoverridediscussionlock'] = 'Répondre aux discussions verrouillées';
 $string['forum:canposttomygroups'] = 'Poster dans tous les groupes auxquel on a accès';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'Ce message n’a pas d’annexe';
 $string['nodiscussions'] = 'Il n’y a pas encore de discussion dans ce forum';
 $string['nodiscussionsstartedby'] = '{$a} n’a lancé aucune discussion';
 $string['nodiscussionsstartedbyyou'] = 'Vous n’avez pas encore commencé de discussion';
-$string['noguestpost'] = 'Les visiteurs anonymes n’ont pas les permissions requises pour poster de messages.';
+$string['noguestpost'] = 'Seuls les utilisateurs connectés peuvent écrire dans ce forum.';
+$string['noguestpost:title'] = 'Se connecter pour continuer';
 $string['noguestsubscribe'] = 'Les utilisateurs anonymes ne peuvent pas s’abonner.';
 $string['noguesttracking'] = 'Les visiteurs anonymes n’ont pas les permissions requises pour modifier les options de suivi des forums.';
 $string['nomorepostscontaining'] = 'Plus aucun message contenant « {$a} » n’a été trouvé';
@@ -543,9 +551,6 @@ $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Voir ce message dans son contexte';
 $string['postisprivatereply'] = 'Ceci est une réponse privée (les enseignants et autres utilisateurs ayant la capacité de voir les réponses privées peuvent aussi la voir).';
 $string['postmailinfo'] = 'Ceci est une copie du message posté sur le site {$a}.';
-$string['postmailinfolink'] = 'Ce message est une copie du message posté dans {$a->coursename}.
-
-Pour y répondre, cliquez sur ce lien : {$a->replylink}';
 $string['postmailnow'] = '<p>Ce message sera envoyé immédiatement à tous les participants abonnés à ce forum.</p>';
 $string['postmailreply'] = 'Pour répondre, cliquer ce lien : {$a}';
 $string['postmailsubject'] = '{$a->courseshortname} : {$a->subject}';

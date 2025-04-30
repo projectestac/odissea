@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'gl', version '4.1'.
+ * Strings for component 'url', language 'gl', version '4.4'.
  *
  * @package     url
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escoller unha variábel';
-$string['clicktoopen'] = 'Prema na ligazón {$a} para abrir o recurso.';
+$string['clicktoopen'] = 'Prema en {$a} para abrir o recurso.';
 $string['configdisplayoptions'] = 'Seleccione todas as opcións que deberían estar dispoñíbeis, os axustes existentes non se modifican. Manteña premida a tecla CTRL para seleccionar varios campos.';
 $string['configframesize'] = 'Cando se presenta unha páxina web ou un ficheiro cargado dentro dun marco, este valor é a altura en píxeles do marco superior (o que contén a navegación).';
-$string['configrolesinparams'] = 'Actíveo se quere incluír nomes de rol localizados na lista de parámetros de variábel dispoñíbeis.';
+$string['configrolesinparams'] = 'Deberían estar dispoñíbeis os nomes de roles personalizados (dende a configuración do curso) como variábeis para os parámetros de URL?';
 $string['configsecretphrase'] = 'Esta frase segreda utilízase para producir un valor de código cifrado que se pode enviar a algúns servidores como un parámetro. O código cifrado prodúceo un valor md5 do enderezo IP actual concatenado coa súa frase segreda. p.ex code = md5(IP.secretphrase). Vexa que isto non é fiábel porque o enderezo IP pode cambiar e ademais adoita ser compartido entre varios computadores.';
 $string['contentheader'] = 'Contido';
 $string['createurl'] = 'Crear un URL';
@@ -84,8 +84,8 @@ $string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
 $string['printintro'] = 'Presentar a descrición do URL';
 $string['printintroexplain'] = 'Presentar a descrición do URL debaixo do contido? Algúns tipos de pantallas poida que non presenten a descrición aínda que estea activado.';
-$string['privacy:metadata'] = 'O engadido de recurso URL non almacena ningún dato persoal.';
-$string['rolesinparams'] = 'Incluír nomes de roles nos parámetros';
+$string['privacy:metadata'] = 'O complemento de recurso URL non almacena ningún dato persoal.';
+$string['rolesinparams'] = 'Nomes de roles como variábeis de URL';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL do servidor';
 $string['url:addinstance'] = 'Engadir un novo recurso URL';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'fr', version '4.1'.
+ * Strings for component 'tool_usertours', language 'fr', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -135,7 +135,6 @@ $string['placement_help'] = 'Une étape peut être affichée au-dessus, au-desso
 
 Si l’étape ne tient pas dans la page à l’emplacement choisi, elle sera automatiquement déplacée.';
 $string['pluginname'] = 'Visites guidées';
-$string['previousstep'] = 'Précédent';
 $string['privacy:metadata:preference:completed'] = 'Date et heure du dernier achèvement d’une visite guidée par un utilisateur.';
 $string['privacy:metadata:preference:requested'] = 'Date et heure du dernier lancement de visite guidée par un utilisateur.';
 $string['privacy:request:preference:completed'] = 'Vous avez marqué la visite guidée « {$a->name} » comme terminée le {$a->time}';
@@ -150,6 +149,9 @@ $string['selector_defaulttitle'] = 'Saisir un titre descriptif';
 $string['selectordisplayname'] = 'Un sélecteur CSS correspondant à « {$a} »';
 $string['selecttype'] = 'Choisir un type d’étape';
 $string['sharedtourslink'] = 'Dépôt des visites guidées';
+$string['showtoureachtime'] = 'chaque fois qu’un filtre correspond';
+$string['showtouruntilcomplete'] = 'jusqu’à sa fermeture';
+$string['showtourwhen'] = 'Afficher la visite guidée';
 $string['skip'] = 'Passer';
 $string['skip_tour'] = 'Sauter la visite guidée';
 $string['target'] = 'Cible';
@@ -249,6 +251,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'Les nouveaux réglages «
 $string['tour_activityinfo_course_teacher_title'] = 'Nouveau : informations sur l’activité';
 $string['tour_final_step_content'] = 'Cette visite guidée est terminée. Elle ne sera pas ré-affichée à moins que vous ne la réinitialisiez au moyen du lien dans le pied de page.';
 $string['tour_final_step_title'] = 'Fin de la visite guidée';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Trier les colonnes et choisir celles à afficher. En mode d’édition, utiliser ce raccourci pour accéder aux tâches récurrentes en lien avec la consultation et la modification des éléments d’évaluation.';
+$string['tour_gradebook_action_title'] = 'Lien rapide vers actions';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtrer les étudiants par les premières lettres de leur nom ou prénom.';
+$string['tour_gradebook_filter_title'] = 'Filtrer par nom';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Utiliser le champ de recherche pour trouver rapidement des étudiants.';
+$string['tour_gradebook_search_title'] = 'Trouver rapidement des étudiants';
+$string['tour_gradebook_tour_description'] = 'Fonctionnalités de recherche et de navigation du rapport de l’évaluateur';
+$string['tour_gradebook_tour_name'] = 'Rapport de l’évaluateur du carnet de notes';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publier ici des infos importantes.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Quelque chose à annoncer à tout le monde ?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Ajouter un nouveau contenu ou modifier un contenu existant.';

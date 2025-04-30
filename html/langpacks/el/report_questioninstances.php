@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'el', version '4.1'.
+ * Strings for component 'report_questioninstances', language 'el', version '4.4'.
  *
  * @package     report_questioninstances
  * @category    string

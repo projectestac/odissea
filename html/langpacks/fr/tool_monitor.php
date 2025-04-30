@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', version '4.1'.
+ * Strings for component 'tool_monitor', language 'fr', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Zone à surveiller';
 $string['cachedef_eventsubscriptions'] = 'Liste des abonnements aux événements pour chaque cours';
 $string['contactadmin'] = 'Veuillez contacter l’administrateur du Moodle pour l’activer.';
 $string['core'] = 'Cœur';
+$string['coresubsystem'] = 'Sous-système ({$a})';
 $string['currentsubscriptions'] = 'Vos abonnements actuels';
 $string['defaultmessagetemplate'] = 'Règle : {rulename}<br />
 Description : {description}<br />
@@ -70,9 +71,12 @@ $string['messagetemplate_help'] = 'Un message est envoyé aux abonnés lorsque l
 
 * Lien vers l’emplacement de l’événement {link}
 * Lien vers la zone surveillée {modulelink}
+* Nom du module de cours {modulename}
 * Nom de la règle {rulename}
 * Description {description}
-* Nom de l’événement {eventname}';
+* Événement {eventname}
+* Nom complet du cours {coursefullname}
+* Nom abrégé du cours {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instance';
 $string['monitor:managerules'] = 'Gérer les règles de surveillance d’événements';

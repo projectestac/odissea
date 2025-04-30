@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'ar', version '4.1'.
+ * Strings for component 'block_xp', language 'ar', version '4.4'.
  *
  * @package     block_xp
  * @category    string
@@ -59,12 +59,15 @@ $string['eventtime'] = 'وقت الحدث';
 $string['for1day'] = 'ليوم واحد';
 $string['for3days'] = 'لثلاثة أيام';
 $string['forthewholesite'] = 'للموقع بأكمله';
+$string['hasdescription'] = 'ضبط الوصف';
+$string['importpoints'] = 'استيراد النقاط';
 $string['invalidxp'] = 'قيمة النقاط غير صالحة';
 $string['keeplogs'] = 'الإبقاء على سجلات الوقوعات';
 $string['leveldesc'] = 'وصف المستوى';
 $string['maxactionspertime'] = 'أقصى عدد من الإجراءات ضمن الإطار الزمني';
 $string['maxactionspertime_help'] = 'العدد الأقصى من الإجراءات التي ستحتسب لها نقاط خلال الإطار الزمني المعطى. سيتم تجاهل أي إجراءات لاحقة. عندما تكون هذه القيمة خالية أو مساوية لصفر، لن تؤخذ بعين الاعتبار.';
 $string['name'] = 'الاسم';
+$string['navimport'] = 'استيراد';
 $string['nologsrecordedyet'] = 'لم يتم توثيق سجلات الوقوعات بعد.';
 $string['participant'] = 'المشارك';
 $string['perpagecolon'] = 'لكل صفحة:';

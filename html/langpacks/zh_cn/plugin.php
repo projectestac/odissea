@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', version '4.1'.
+ * Strings for component 'plugin', language 'zh_cn', version '4.4'.
  *
  * @package     plugin
  * @category    string
@@ -124,6 +124,8 @@ $string['type_cachestore'] = '高速缓存存储';
 $string['type_cachestore_plural'] = '高速缓存存储';
 $string['type_calendartype'] = '日历类型';
 $string['type_calendartype_plural'] = '日历类型';
+$string['type_communication'] = '通信提供者';
+$string['type_communication_plural'] = '通信提供者';
 $string['type_contentbank'] = '内容库';
 $string['type_contentbank_plural'] = '内容库插件';
 $string['type_contenttype'] = '内容库';
@@ -159,8 +161,8 @@ $string['type_local'] = '本地插件';
 $string['type_local_plural'] = '本地插件';
 $string['type_media'] = '媒体播放器';
 $string['type_media_plural'] = '媒体播放器';
-$string['type_message'] = '消息输出';
-$string['type_message_plural'] = '消息输出';
+$string['type_message'] = '通知插件';
+$string['type_message_plural'] = '通知插件';
 $string['type_mlbackend'] = '机器学习后端';
 $string['type_mlbackend_plural'] = '机器学习的后端';
 $string['type_mnetservice'] = 'MNet 服务';

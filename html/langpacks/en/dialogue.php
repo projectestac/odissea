@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dialogue', language 'en', version '4.1'.
+ * Strings for component 'dialogue', language 'en', version '4.4'.
  *
  * @package     dialogue
  * @category    string
@@ -39,6 +39,7 @@ $string['cachedef_unreadcounts'] = 'Users unread message counts in conversations
 $string['cachedef_userdetails'] = 'User brief details, all enrolled users';
 $string['cannotclosedraftconversation'] = 'You cannot close a conversation that hasn\'t started!';
 $string['cannotdeleteopenconversation'] = 'You cannot delete a open conversation';
+$string['cannotreopendraftconversation'] = 'You reopen a conversation that hasn\'t started!';
 $string['closeconversation'] = 'Close conversation';
 $string['closed'] = 'Closed';
 $string['completed'] = 'Completed';
@@ -57,6 +58,9 @@ $string['conversationlistdisplayheader'] = 'Displaying {$a->show} {$a->state} co
 $string['conversationopened'] = 'Conversation has been opened';
 $string['conversationopenedcron'] = 'Conversations will be opened automatically';
 $string['conversationopenedwith'] = '<strong>1</strong> conversation opened with:';
+$string['conversationreopen'] = 'Conversation reopened';
+$string['conversationreopenconfirm'] = 'Are you sure you want to reopen conversation {$a} ?';
+$string['conversationreopened'] = 'Conversation {$a} has been reopened';
 $string['conversations'] = 'Conversations';
 $string['conversationsopenedwith'] = '<strong>{$a}</strong> conversations opened with:';
 $string['cutoffdate'] = 'Cut off date';
@@ -78,6 +82,8 @@ $string['dialogue:delete'] = 'Delete own';
 $string['dialogue:deleteany'] = 'Delete any';
 $string['dialogue:open'] = 'Open a conversation';
 $string['dialogue:receive'] = 'Receive, who can be the recipient when opening a conversation';
+$string['dialogue:reopen'] = 'Reopen own';
+$string['dialogue:reopenany'] = 'Reopen any';
 $string['dialogue:reply'] = 'Reply';
 $string['dialogue:replyany'] = 'Reply any';
 $string['dialogue:viewany'] = 'View any';
@@ -127,8 +133,8 @@ $string['maxattachments_help'] = 'This setting specifies the maximum number of f
 $string['maxattachmentsize'] = 'Maximum attachment size';
 $string['maxattachmentsize_help'] = 'This setting specifies the largest size of file that can be attached to a dialogue post.';
 $string['message'] = 'Message';
-$string['messageapibasicmessage'] = '<p>{$a->userfrom} posted a new message to a conversation you are participating
-in with subject: <i>{$a->subject}</i>
+$string['messageapibasicmessage'] = '<p>{$a->userfrom} posted a new message to a conversation you are participating in course: <i>{$a->course}</i>
+with subject: <i>{$a->subject}</i>
 <br/><br/><a href="{$a->url}">View in Moodle</a></p>';
 $string['messageapismallmessage'] = '{$a} posted a new message to a conversation you are participating in';
 $string['messageprovider:post'] = 'Dialogue notifications';
@@ -147,6 +153,7 @@ $string['nodraftsfound'] = 'No drafts found!';
 $string['nomatchingpeople'] = 'No people match \'{$a}\'';
 $string['nopermissiontoclose'] = 'You do not have permission to close this conversation!';
 $string['nopermissiontodelete'] = 'You do not have permission to delete!';
+$string['nopermissiontoreopen'] = 'You do not have permission to reopen this conversation!';
 $string['nosubject'] = '[no subject]';
 $string['numberattachments'] = '{$a} attachments';
 $string['numberunread'] = '{$a} unread';
@@ -175,6 +182,7 @@ $string['privacy:metadata:state'] = 'State';
 $string['privacy:metadata:timecreated'] = 'Time created';
 $string['privacy:metadata:timemodified'] = 'Time modified';
 $string['privacy:metadata:userid'] = 'ID of the user';
+$string['reopenconversation'] = 'Reopen conversation';
 $string['repliedby'] = '<strong>{$a->fullname}</strong> <small>replied</small> {$a->timeago}';
 $string['repliedbyfullyear'] = '<strong>{$a->fullname}</strong> <small>replied on</small> {$a->datefull} <small>({$a->time})</small>';
 $string['repliedbyshortyear'] = '<strong>{$a->fullname}</strong> <small>replied on</small> {$a->dateshort} <small>({$a->time})</small>';

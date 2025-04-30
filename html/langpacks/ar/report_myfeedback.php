@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_myfeedback', language 'ar', version '4.1'.
+ * Strings for component 'report_myfeedback', language 'ar', version '4.4'.
  *
  * @package     report_myfeedback
  * @category    string
@@ -29,6 +29,8 @@ $string['addeditfeedback'] = 'إضافة/تحرير الإفادة';
 $string['addfeedback'] = 'ليس بالإمكان عرض إفادة Turnitin بشكل تلقائي.';
 $string['addfeedbacktitle'] = 'أنقر هنا لإضافة إفادة من Turnitin';
 $string['archivedomaininfo'] = 'اسم المجال الكامل المؤهل (FQDN) مع http/https';
+$string['archivelinktext'] = 'وصف السنة المؤرشفة {$a}';
+$string['archivelinktextinfo'] = 'وصف رابط الأرشيف {$a} لاستعماله في التقرير.';
 $string['attempt'] = 'محاولة';
 $string['attempts'] = 'محاولات';
 $string['blockstring'] = 'الجملة في إفادتي';

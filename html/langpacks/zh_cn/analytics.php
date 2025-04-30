@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'zh_cn', version '4.1'.
+ * Strings for component 'analytics', language 'zh_cn', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = '混合';
 $string['modeinstructionfacetoface'] = '面对面';
 $string['modeinstructionfullyonline'] = '完全在线';
 $string['modeloutputdir'] = '模型输出目录';
-$string['modeloutputdirinfo'] = '预测处理器存储所有评估信息的目录。对调试和研究很有用。';
 $string['modeloutputdirwithdefaultinfo'] = '预测处理器存储所有评估信息的目录。用于调试和研究。如果为空，则{$a}将用作默认值。';
 $string['modeltimelimit'] = '每个模型的分析时间限制';
 $string['modeltimelimitinfo'] = '这个设置限制了每个模型分析站点内容的时间。';

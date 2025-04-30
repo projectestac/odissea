@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'es', version '4.1'.
+ * Strings for component 'questionnaire', language 'es', version '4.4'.
  *
  * @package     questionnaire
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessibility:rate:choice'] = 'Fila {$a->rowposition}, {$a->choicetitle}: Columna {$a->colposition}, {$a->choiceanswer}.';
 $string['action'] = 'Acción';
 $string['activityoverview'] = 'Tiene cuestionarios disponibles';
 $string['additionalinfo'] = 'Información adicional';
@@ -140,8 +141,8 @@ $string['displaymethod'] = 'El método de visualización no se ha definido para 
 $string['download'] = 'Descargar';
 $string['downloadpdf'] = 'Descargar PDF';
 $string['downloadtextformat'] = 'Descargar';
-$string['downloadtextformat_help'] = 'Esta opción permite guardar todas las respuestas de una encuesta en un archivo con formato a elegir entre los formatos soportados).
-Usted puede elegir incluir elementos extra en la exportación, así como enviar automáticamente el archivo a los usuarios seleccionados.';
+$string['downloadtextformat_help'] = 'Esta opción le permite guardar todas las respuestas de una encuesta en un archivo con formato a elegir.
+El archivo podrá abrirse entonces con un programa de hojas de cálculo (ej. Open Office Calc o MS Excel) o ser un paquete estadístico para procesamiento posterior.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Tipo de reporte';
 $string['dropdown'] = 'Lista desplegable';
@@ -209,7 +210,8 @@ $string['feedbacknotes'] = 'Notas de retroalimentación';
 $string['feedbacknotes_help'] = 'El texto escrito aquí se mostrará a los encuestados al final de su Reporte de Retroalimentación';
 $string['feedbackoptions'] = 'Opciones de retroalimentación';
 $string['feedbackoptions_help'] = 'Las opciones de retroalimentación están disponibles si su cuestionario contiene los siguientes tipos de preguntas y configuraciones de preguntas:
-Botones de selección; Caja desplegable, Si/No, o Valorar (normal o escala Osgood). Esas preguntas deberán configurarse como obligatorias; su campo para Nombre de Pregunta NO deberá estar vacío y las opciones para respuestas posibles deben contener un valor.';
+Botones de selección; Caja desplegable, Si/No, o Valorar (normal o escala Osgood). Esas preguntas deberán configurarse como obligatorias; su campo para Nombre de Pregunta NO deberá estar vacío y las opciones para respuestas posibles deben contener un valor.
+Las preguntas con deslizador NO deben usar un valor negativo para el rango mínimo del deslizador.';
 $string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Esta pregunta es parte de la sección de retroalimentación [{$a}]';
 $string['feedbackremovesection'] = 'El remover esta pregunta removerá completamente la sección de retroalimentación [{$a}]';
@@ -266,6 +268,8 @@ $string['kindofratescale_help'] = 'Clique con el botón derecho del ratón sobre
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Último en responder';
 $string['leftlabel'] = 'Etiqueta izquierda';
+$string['leftpart'] = '{$a->min} es {$a->leftlabel}';
+$string['leftpartdefault'] = '{$a->min} es el rango mínimo del deslizador';
 $string['length'] = 'Longitud';
 $string['managequestions'] = 'Gestionar preguntas';
 $string['managequestions_help'] = 'En la esta sección se puede llevar a cabo una serie de operaciones de edición, añadido y borrado de preguntas del cuestionario.';
@@ -283,6 +287,10 @@ $string['maxtextlength_help'] = 'Para el tipo de pregunta de cuadro de texto, in
 Los valores por defecto son 20 caracteres para el ancho del cuadro de texto y 25 para la longitud máxima del texto introducido.';
 $string['messageprovider:message'] = 'Recordatorio del cuestionario';
 $string['messageprovider:notification'] = 'Cuestionario entregado';
+$string['middlepart'] = ', {$a->centreval} es {$a->middlelabel}';
+$string['middlepartdefault'] = ', {$a->centreval} is media';
+$string['middlepartwithtwovalues'] = ', {$a->centreval1} y {$a->centreval2} son {$a->middlelabel}';
+$string['middlepartwithtwovaluesdefault'] = ', {$a->centreval1} y {$a->centreval2} son media';
 $string['minforcedresponses'] = 'Número mínimo de casillas que se han de seleccionar';
 $string['minforcedresponses_help'] = 'Use estos parámetros para forzar a los encuestados a marcar un mínimo de **Min.** casillas de verificación y un máximo de **Max** casillas de verificación. Para forzar un número exacto de casillas de verificación marcar ajuste **Min.** y  **Max.** con el mismo valor.
 Si sólo desea un valor mínimo o máximo deje el otro valor con el valor **0** predeterminado.
@@ -318,6 +326,7 @@ $string['noduplicates'] = 'Elección única';
 $string['noduplicateschoiceserror'] = '¡Usted debe introducir al menos dos respuestas posibles para la opción "No duplicar elecciones"!';
 $string['non_respondents'] = 'Usuarios que aún no han respondido el cuestionario';
 $string['noneinuse'] = 'Este cuestionario no contiene ninguna pregunta';
+$string['nopermissions'] = 'Lo siento, pero usted actualmente no tiene permisos para ver esta página o para realizar esta acción.';
 $string['nopublicsurveys'] = 'No hay encuestas públicas';
 $string['noresponsedata'] = 'No hay respuestas para esta pregunta.';
 $string['noresponses'] = 'Sin respuestas';
@@ -536,6 +545,8 @@ $string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Reanudar encuesta';
 $string['return'] = 'Volver';
 $string['rightlabel'] = 'Etiqueta derecha';
+$string['rightpart'] = 'y {$a->max} es {$a->rightlabel}';
+$string['rightpartdefault'] = 'y {$a->max} es el rango máximo del deslizador';
 $string['save'] = 'Guardar';
 $string['save_and_exit'] = 'Guardar y salir';
 $string['saveasnew'] = 'Guardar como nueva pregunta';
@@ -613,6 +624,7 @@ $string['total'] = 'Total';
 $string['totalofnumbers'] = 'Total de números introducidos';
 $string['totalresponses'] = 'Total de respuestas a la pregunta';
 $string['type'] = 'Tipo de pregunta';
+$string['unanswered'] = 'Sin contestación';
 $string['undefinedquestiontype'] = 'Tipo de pregunta no definida!';
 $string['unknown'] = 'Desconocido';
 $string['unknownaction'] = 'Se ha especificado una acción sobre la encuesta no válida...';
@@ -636,6 +648,7 @@ $string['viewindividualresponse_help'] = 'Clique en los nombres de los participa
 $string['viewresponses'] = 'Todas las respuestas ({$a})';
 $string['viewyourresponses'] = 'Ver su(s) respuesta(s)';
 $string['warning'] = 'Atención: se ha encontrado un error.';
+$string['where'] = 'donde';
 $string['wronganswers'] = 'Hay algunas respuestas incorrectas (mira a continuación)';
 $string['wrongdateformat'] = 'El formato de fecha introducida: <strong>{$a}</strong> no se corresponde con el mostrado en el ejemplo.';
 $string['wrongdaterange'] = '¡ERROR! El año debe estar en el rango comprendido entre 1902 y 2037.';

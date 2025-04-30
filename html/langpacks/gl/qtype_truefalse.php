@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'gl', version '4.1'.
+ * Strings for component 'qtype_truefalse', language 'gl', version '4.4'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctanswer'] = 'Resposta correcta';
-$string['correctanswerfalse'] = 'A resposta correcta é «Falso»';
-$string['correctanswertrue'] = 'A resposta correcta é «Verdadeiro»';
+$string['correctanswerfalse'] = 'A resposta correcta é «Falso».';
+$string['correctanswertrue'] = 'A resposta correcta é «Verdadeiro».';
 $string['false'] = 'Falso';
-$string['feedbackfalse'] = 'Comentario para a resposta «Falso»';
-$string['feedbacktrue'] = 'Comentario para a resposta «Verdadeiro»';
+$string['feedbackfalse'] = 'Avaliación (Falso)';
+$string['feedbacktrue'] = 'Avaliación (Verdadeiro)';
 $string['pleaseselectananswer'] = 'Seleccione unha resposta';
 $string['pluginname'] = 'Verdadeiro/Falso';
 $string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o alumno escolle entre verdadeiro ou falso.';
@@ -41,6 +41,6 @@ $string['pluginnamesummary'] = 'Unha forma simple de pregunta de opción múltip
 $string['privacy:metadata'] = 'O engadido de pregunta Verdadeiro/Falso non almacena ningún dato persoal.';
 $string['privacy:preference:showstandardinstruction'] = 'Indica se amosa instrucións estándar.';
 $string['selectone'] = 'Seleccione unha';
-$string['showstandardinstruction'] = 'Amosar as instruccións estándar';
+$string['showstandardinstruction'] = 'Amosar instrucións estándar.';
 $string['showstandardinstruction_help'] = 'Indica se se deben amosar as instrucións "Seleccione unha:" antes das respostas verdadeiras/falsas.';
 $string['true'] = 'Verdadeiro';

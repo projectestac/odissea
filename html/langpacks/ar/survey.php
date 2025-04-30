@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ar', version '4.1'.
+ * Strings for component 'survey', language 'ar', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'فعلي';
 $string['actualclass'] = 'الفصل الفعلي';
 $string['actualstudent'] = '{$a} فعلي';
 $string['allquestionrequireanswer'] = 'كل الأسئلة مطلوبة وتنبغي الإجابة عليها.';
-$string['allquestions'] = 'كل الأسئلة بالترتيب، كل الطلاب';
 $string['allscales'] = 'كل الموازين, كل الدارسين';
 $string['alreadysubmitted'] = 'لقد قمت سابقاً بتسليم هذا الاستبيان';
 $string['analysisof'] = 'تحليل لـ {$a}';
@@ -98,7 +97,6 @@ $string['ciq5'] = 'ما هو الموقف الذي ادهشك اكثر؟';
 $string['ciq5short'] = 'لحظة مفاجئة';
 $string['ciqintro'] = 'في أثناء تفكيرك في الأحداث الأخيرة لهذا الصف، أجب على الاسئلة التالية.';
 $string['ciqname'] = 'الحوادث الخطيرة';
-$string['clicktocontinue'] = 'اضغط هنا للاستمرار';
 $string['clicktocontinuecheck'] = 'اضغط هنا للاختيار ثم الاستمرار';
 $string['colles1'] = 'أركز في التعلم على قضايا تهمني.';
 $string['colles10'] = 'أطلب من الدارسين الآخرين شرح أفكارهم';
@@ -191,7 +189,7 @@ $string['collespintro'] = 'يكمن الغرض من هذا الاستبيان ف
 مع جزيل الشكر.';
 $string['collespname'] = 'COLLES (الفعلي)';
 $string['completiondetail:submit'] = 'تسليم الإجابات';
-$string['completionsubmit'] = 'ينبغي على الطلبة القيام بالتسليم';
+$string['completionsubmit'] = 'القيام بالتسليم';
 $string['customintro'] = 'الوصف';
 $string['deleteallanswers'] = 'حذف كل إجابات الاستبيان';
 $string['deleteanalysis'] = 'أحذف تحليل الإجابات';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'تتوافر 3 أنواع من الاستبيان�
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'شكراً على إجابة هذا الاستبيان، {$a}';
 $string['time'] = 'الوقت';
-$string['viewsurveyresponses'] = 'معاينة {$a} ردود الاستبيان';

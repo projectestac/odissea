@@ -39,6 +39,7 @@
                             "hasname": "true"
                         },
                         "id": 3,
+                        "cmid": 3,
                         "module": "forum",
                         "anchor": "activity-3",
                         "extraclasses": "newmessages"
@@ -51,6 +52,7 @@
                             "hasname": "true"
                         },
                         "id": 4,
+                        "cmid": 4,
                         "anchor": "activity-4",
                         "module": "assign",
                         "extraclasses": ""
@@ -63,7 +65,7 @@
         "iscurrent": true,
         "currentlink": "<span class=\"accesshide\">This topic</span>",
         "availability": {
-            "info": "<span class=\"badge badge-info\">Hidden from students</span>",
+            "info": "<span class=\"badge bg-info\">Hidden from students</span>",
             "hasavailability": true
         },
         "summary": {
@@ -93,41 +95,68 @@
     {{> core_courseformat/local/content/section/header }}
 {{/ core_courseformat/local/content/section/header }}
 {{/header}}
-{{#restrictionlock}}
-    <div class="align-self-center ml-2">
-        {{#pix}}t/unlock, core{{/pix}}
-    </div>
-{{/restrictionlock}}
+{{^singleheader}}
+    {{#restrictionlock}}
+        <div class="align-self-center ml-2">
+            {{#pix}}t/unlock, core{{/pix}}
+        </div>
+    {{/restrictionlock}}
+{{/singleheader}}
 <div data-region="sectionbadges" class="sectionbadges d-flex align-items-center">
     {{$ core_courseformat/local/content/section/badges }}
         {{> core_courseformat/local/content/section/badges }}
     {{/ core_courseformat/local/content/section/badges }}
 </div>
 {{#collapsemenu}}
-<div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
-    <a
-        id="collapsesections"
-        class="section-collapsemenu"
-        href="#"
-        aria-expanded="true"
-        role="button"
-        data-toggle="toggleall"
-    >
-        <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
-        <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
-    </a>
+    {{^displayonesection}}
+    <div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
+        <a
+            id="collapsesections"
+            class="section-collapsemenu"
+            href="#"
+            aria-expanded="true"
+            role="button"
+            data-toggle="toggleall"
+        >
+            <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
+            <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
+        </a>
     </div>
+    {{/displayonesection}}
 {{/collapsemenu}}
 {{#controlmenu}}
-    {{$ core_courseformat/local/content/section/controlmenu }}
-        {{> core_courseformat/local/content/section/controlmenu }}
-    {{/ core_courseformat/local/content/section/controlmenu }}
+    {{^displayonesection}}
+        {{$ core_courseformat/local/content/section/controlmenu }}
+            {{> core_courseformat/local/content/section/controlmenu }}
+        {{/ core_courseformat/local/content/section/controlmenu }}
+    {{/displayonesection}}
 {{/controlmenu}}
+{{#header}}
+    {{#headerdisplaymultipage}}
+        {{^displayonesection}}
+            {{^controlmenu}}
+                <div class="section_goto bulk-hidden ml-auto" data-sectionid="{{id}}">
+                    <a href="{{{url}}}"
+                    class="btn btn-icon d-flex align-items-center justify-content-center icon-no-margin"
+                    title="{{#str}}gotosection, course, {{name}}{{/str}}">
+                            <span class="dir-rtl-hide">
+                                {{#pix}}t/right, moodle{{/pix}}
+                            </span>
+                            <span class="dir-ltr-hide">
+                                {{#pix}}t/left, moodle, {{#str}}gotosection, course, {{name}}{{/str}}{{/pix}}
+                            </span>
+                            <span class="sr-only">
+                                {{#str}}gotosection, course, {{name}}{{/str}}
+                            </span>
+                    </a>
+                </div>
+            {{/controlmenu}}
+        {{/displayonesection}}
+    {{/headerdisplaymultipage}}
+{{/header}}
 </div>
-<div id="coursecontentcollapse{{num}}"
-    class="content {{^iscoursedisplaymultipage}}
-        {{^sitehome}}course-content-item-content collapse {{^contentcollapsed}}show{{/contentcollapsed}}{{/sitehome}}
-    {{/iscoursedisplaymultipage}}">
+<div id="coursecontentcollapseid{{id}}"
+    class="content {{^iscoursedisplaymultipage}}{{^sitehome}}{{^displayonesection}}course-content-item-content collapse {{^contentcollapsed}}show{{/contentcollapsed}}{{/displayonesection}}{{/sitehome}}{{/iscoursedisplaymultipage}}">
     <div class="{{#hasavailability}}description{{/hasavailability}} my-3" data-for="sectioninfo">
     {{#summary}}
         {{$ core_courseformat/local/content/section/summary }}
@@ -151,10 +180,3 @@
     {{/ core_courseformat/local/content/section/cmlist }}
 {{/cmlist}}
 {{{cmcontrols}}}
-{{#insertafter}}
-    {{#numsections}}
-        {{$ core_courseformat/local/content/addsection}}
-            {{> core_courseformat/local/content/addsection}}
-        {{/ core_courseformat/local/content/addsection}}
-    {{/numsections}}
-{{/insertafter}}

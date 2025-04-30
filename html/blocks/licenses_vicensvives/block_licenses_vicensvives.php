@@ -47,7 +47,7 @@ class block_licenses_vicensvives extends block_base {
                 try {
                     $licenses = vicensvives_count_licenses($idbook);
                 } catch (vicensvives_ws_error $e) {
-                    $this->content->text = html_writer::tag('div', $e->getMessage(), array('class' => 'error alert alert-danger'));
+                    $this->content->text = html_writer::tag('div', $e->getMessage(), ['class' => 'error alert alert-danger']);
                     return $this->context;
                 }
                 if (isset($licenses[$idbook])) {
@@ -59,7 +59,7 @@ class block_licenses_vicensvives extends block_base {
                     $this->content->text .= $student . '<br/>' . $teacher . '<br/>';
                 }
             }
-            $url = new moodle_url('/blocks/licenses_vicensvives/licenses.php', array('course' => $COURSE->id));
+            $url = new moodle_url('/blocks/licenses_vicensvives/licenses.php', ['course' => $COURSE->id]);
             $text = get_string('showlicenses', 'block_licenses_vicensvives');
             $this->content->text .= html_writer::link($url, $text);
         }
@@ -78,7 +78,7 @@ class block_licenses_vicensvives extends block_base {
     }
 
     public function applicable_formats() {
-        return array('all' => true);
+        return ['all' => true];
     }
 
 }

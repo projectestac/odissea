@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ca', version '4.1'.
+ * Strings for component 'theme_boost', language 'ca', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -51,4 +51,3 @@ $string['rawscss_desc'] = 'Utilitzeu aquest camp per proporcionar codi SCSS o CS
 $string['rawscsspre'] = 'SCSS inicial cru';
 $string['rawscsspre_desc'] = 'En aquest camp podeu proporcionar codi SCSS d\'inicialització, que serà injectat abans de qualsevol altra cosa. La majoria de vegades, aquest paràmetre es fa servir per definir variables.';
 $string['region-side-pre'] = 'Dreta';
-$string['totop'] = 'Ves a dalt';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'en', version '4.1'.
+ * Strings for component 'tool_usertours', language 'en', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'A step may be placed above, below, left or right of
 
 If the step does not fit on a particular page in the specified place, it will be automatically placed elsewhere.';
 $string['pluginname'] = 'User tours';
-$string['previousstep'] = 'Previous';
 $string['privacy:metadata:preference:completed'] = 'The time that a user last completed a user tour.';
 $string['privacy:metadata:preference:requested'] = 'The time that a user last manually requested a user tour.';
 $string['privacy:request:preference:completed'] = 'You last marked the "{$a->name}" user tour as completed on {$a->time}';
@@ -151,6 +150,9 @@ $string['selector_defaulttitle'] = 'Enter a descriptive title';
 $string['selectordisplayname'] = 'A CSS selector matching \'{$a}\'';
 $string['selecttype'] = 'Select step type';
 $string['sharedtourslink'] = 'Tour repository';
+$string['showtoureachtime'] = 'each time a filter matches it';
+$string['showtouruntilcomplete'] = 'until it has been closed';
+$string['showtourwhen'] = 'Show tour';
 $string['skip'] = 'Skip';
 $string['skip_tour'] = 'Skip tour';
 $string['target'] = 'Target';
@@ -250,6 +252,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'New course settings \'Sho
 $string['tour_activityinfo_course_teacher_title'] = 'New: Activity information';
 $string['tour_final_step_content'] = 'This is the end of your user tour. It won\'t show again unless you reset it using the link in the footer.';
 $string['tour_final_step_title'] = 'End of tour';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sort columns and choose which ones to display. In Edit mode, use this shortcut to access frequent tasks related to viewing and editing grade items.';
+$string['tour_gradebook_action_title'] = 'Quick links to actions';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filter students by the initials of their first or last name.';
+$string['tour_gradebook_filter_title'] = 'Filter by name';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Use the search box to quickly find specific students.';
+$string['tour_gradebook_search_title'] = 'Find students easily';
+$string['tour_gradebook_tour_description'] = 'Search and navigation features in Gradebook grader report';
+$string['tour_gradebook_tour_name'] = 'Gradebook Grader Report';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Post important news here.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Something to tell everyone?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Add new content or edit existing content.';

@@ -40,6 +40,6 @@ Feature: Student can upload a set number of attachments in submission
     # Delete one attachment.
     And I click on "gd-logo.png" "link"
     And I click on "Delete" "button" in the "Edit gd-logo.png" "dialogue"
-    And I click on "OK" "button" in the "Confirm" "dialogue"
+    And I click on "Yes" "button" in the "Confirm" "dialogue"
     # Confirm that Add... button is visible again after 1 attachment is deleted.
     And "Add..." "button" should be visible

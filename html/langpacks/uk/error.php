@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'uk', version '4.1'.
+ * Strings for component 'error', language 'uk', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -229,6 +229,10 @@ $string['dmlparseexception'] = 'Помилка аналізу SQL-запиту';
 $string['dmlreadexception'] = 'Помилка читання бази даних';
 $string['dmltransactionexception'] = 'Помилка транзакції бази даних';
 $string['dmlwriteexception'] = 'Помилка запису до бази даних';
+$string['dndmaxbytes'] = 'Файл завеликий. Максимальний дозволений розмір – {$a->size}.';
+$string['dndread'] = 'Помилка читання файлу';
+$string['dndunkownfile'] = 'Цей тип файлу не підтримується';
+$string['dndupload'] = 'Під час завантаження файлу сталася невідома помилка';
 $string['downgradedcore'] = 'ПОМИЛКА!!! Код сайту, який ви використовуєте, СТАРІШИЙ від версії бази даних!';
 $string['downloadedfilecheckfailed'] = 'Помилка завантаження файлу.';
 $string['duplicatefieldname'] = 'Виявлено дублювання імені поля:  "{$a}"';
@@ -237,6 +241,7 @@ $string['duplicateparaminsql'] = 'ПОМИЛКА: дублюється ім\'я 
 $string['duplicaterolename'] = 'Вже існує роль з такою назвою!';
 $string['duplicateroleshortname'] = 'Вже існує роль з такою короткою назвою!';
 $string['duplicateusername'] = 'Дублювання псевдоімені - запис пропущено';
+$string['editedpagenotfound'] = 'Системі не вдалося визначити сторінку, на якій ви перебуваєте. Будь ласка, оновіть сторінку та повторіть спробу.';
 $string['emailfail'] = 'Відправлення електронної пошти не вдалося';
 $string['encryption_decryptfailed'] = 'Не вдалося розшифрувати';
 $string['encryption_encryptfailed'] = 'Помилка шифрування';
@@ -422,6 +427,8 @@ $string['moduledisable'] = 'Модуль ({$a}) був відключений д
 $string['moduledoesnotexist'] = 'Цього модуля не існує';
 $string['moduleinstancedoesnotexist'] = 'Примірника цього модуля не існує';
 $string['modulemissingcode'] = 'В модулі {$a} відсутня частина коду, яка повинна виконувати цю функцію';
+$string['moodlenet:invalidshareformat'] = 'Недійсний формат обміну MoodleNet';
+$string['moodlenet:usernotconfigured'] = 'У вас немає дозволу на обмін вмістом у MoodleNet, або ваш обліковий запис налаштовано неправильно.';
 $string['movecatcontentstoroot'] = 'Переміщення вмісту категорії до root заборонено. Ви повинні перемістити вміст до існуючої категорії!';
 $string['movecatcontentstoselected'] = 'Деякий вміст категорії не можна перемістити у вибрану категорію.';
 $string['movecategorynotpossible'] = 'Ви не можете переміщувати категорію \'{$a}\' у вибрану вами категорію.';

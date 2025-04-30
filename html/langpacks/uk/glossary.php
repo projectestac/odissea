@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'uk', version '4.1'.
+ * Strings for component 'glossary', language 'uk', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -331,7 +331,6 @@ $string['totalentries'] = 'Всього записів';
 $string['usedynalink'] = 'Автоматичне зв\'язування записів глосарію';
 $string['usedynalink_help'] = 'Якщо адміністратор дозволив авто-зв’язування в глосарії рівня сайту, а також включено це налаштування, форма "Додавання нового запису" включатиме опцію автоматичного зв’язування запису зі словами та фразами, які з’являтимуться на всьому курсі.';
 $string['visibletabs'] = 'Видимі вкладки';
-$string['waitingapproval'] = 'Чекають схвалення';
 $string['warningstudentcapost'] = '(Доступно тільки, якщо глосарій не головний)';
 $string['withauthor'] = 'Поняття з автором';
 $string['withoutauthor'] = 'Поняття без автора';

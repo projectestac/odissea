@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', version '4.1'.
+ * Strings for component 'question', language 'ja', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -176,6 +176,8 @@ $string['errorprocessingresponses'] = 'あなたの解答処理中にエラー�
 $string['errorsavingcomment'] = '問題 {$a->name} のコメントのデータベース保存中にエラーが発生しました。';
 $string['errorsavingflags'] = 'フラグ状態の保存中にエラーが発生しました。';
 $string['errorupdatingattempt'] = 'データベース内の受験結果 {$a->id} 更新中にエラーが発生しました。';
+$string['eventqbankdisabled'] = '問題バンクプラグインが無効にされました。';
+$string['eventqbankenabled'] = '問題バンクプラグインが有効にされました。';
 $string['eventquestioncategorycreated'] = '小テストカテゴリが作成されました。';
 $string['eventquestioncategorydeleted'] = '問題カテゴリが削除されました。';
 $string['eventquestioncategorymoved'] = '問題カテゴリが移動されました。';
@@ -217,8 +219,8 @@ $string['flagged'] = 'フラグ付け済み';
 $string['flagthisquestion'] = 'この問題にフラグを付ける';
 $string['formquestionnotinids'] = '問題IDがない問題がフォームに含まれています。';
 $string['fractionsnomax'] = 'この問題で満点を取ることができるよう答えの1つに評点100%を指定してください。';
-$string['generalfeedback'] = '全般に対するフィードバック';
-$string['generalfeedback_help'] = '全般に対するフィードバックは問題の受験後、学生に表示されるテキストです。問題タイプおよび学生の解答によって決まるフィードバックとは異なり、同じ全般に対するフィードバックテキストがすべての学生に表示されます。
+$string['generalfeedback'] = '全般的なフィードバック';
+$string['generalfeedback_help'] = '全般的なフィードバックフィードバックは問題の受験後、学生に表示されるテキストです。問題タイプおよび学生の解答によって決まるフィードバックとは異なり、同じ全般に対するフィードバックテキストがすべての学生に表示されます。
 
 あなたは学生に工夫を凝らした回答を与える場として全般的なフィードバックを使用することができます。学生が問題を理解できない場合、さらなる情報のリンクを与えて利用できるようにすることもできます。';
 $string['getcategoryfromfile'] = 'ファイルからカテゴリを取得する';
@@ -265,6 +267,7 @@ $string['invalidcategoryidtomove'] = '移動するカテゴリIDが無効です!
 $string['invalidconfirm'] = '確認ストリングが正しくありません。';
 $string['invalidcontextinhasanyquestions'] = '無効なコンテクストが「question_context_has_any_questions」に渡されました。';
 $string['invalidgrade'] = '評点 ({$a}) が評定オプションと合致しません - 問題をスキップしました。';
+$string['invalidgradequestion'] = '評点 ({$a->grades}) が評定オプションと一致しません - 問題「 {$a->question} 」がスキップされました。';
 $string['invalidpenalty'] = '無効なペナルティ';
 $string['invalidwizardpage'] = 'ウィザードページが正しくないか、指定されていません!';
 $string['lastmodifiedby'] = '最終更新';
@@ -308,6 +311,7 @@ $string['movingquestionsandfiles'] = '本当に問題 {$a->questions} を<strong
 $string['movingquestionsnofiles'] = '本当に問題 {$a->questions} を<strong>「 {$a->tocontext} 」</strong>のコンテクストに移動してもよろしいですか?<br />{$a->fromareaname} の問題にリンクされているファイルは<strong>ありません</strong>。';
 $string['needtochoosecat'] = 'このカテゴリを移動するにはカテゴリを選択してください。または「キャンセル」をクリックしてください。';
 $string['nocate'] = 'カテゴリがありません  {$a} !';
+$string['noconditionspecified'] = '条件を指定してください。';
 $string['nopermissionadd'] = 'あなたには問題をここに追加するためのパーミッションがありません。';
 $string['nopermissionedit'] = 'あなたにはここから問題を編集するためのパーミッションがありません。';
 $string['nopermissionmove'] = 'あなたには問題をここから移動するためのパーミッションがありません。あなたはこのカテゴリに問題を保存するか、新しい問題として保存する必要があります。';
@@ -322,7 +326,6 @@ $string['notchanged'] = '前回の受験より変更なし';
 $string['notenoughanswers'] = 'このタイプの問題には少なくとも {$a} 件の答えが必要です。';
 $string['notenoughdatatoeditaquestion'] = '問題ID、カテゴリIDおよび問題タイプが指定されていません。';
 $string['notenoughdatatomovequestions'] = 'あなたが移動したい問題の問題IDを提供する必要があります。';
-$string['notflagged'] = 'フラグなし';
 $string['notgraded'] = '未評定';
 $string['notshown'] = '非表示';
 $string['notyetanswered'] = '未解答';
@@ -364,7 +367,7 @@ $string['permissionto'] = 'あなたには以下のパーミッションがあ�
 $string['previewquestion'] = '問題をプレビューする: {$a}';
 $string['privacy:metadata:database:question'] = '特定の問題に関する詳細です。';
 $string['privacy:metadata:database:question:createdby'] = '問題を作成した人です。';
-$string['privacy:metadata:database:question:generalfeedback'] = 'この問題の一般フィードバックです。';
+$string['privacy:metadata:database:question:generalfeedback'] = 'この問題の全般的なフィードバックです。';
 $string['privacy:metadata:database:question:modifiedby'] = '最後に問題を更新した人です。';
 $string['privacy:metadata:database:question:name'] = '問題名です。';
 $string['privacy:metadata:database:question:questiontext'] = '問題テキストです。';
@@ -414,7 +417,7 @@ $string['questionpreviewdefaults'] = '問題プレビューデフォルト';
 $string['questionpreviewdefaults_desc'] = 'これらのデフォルトはユーザが問題バンク内の問題を最初にプレビューする時点で使用されます。ユーザが問題をプレビューした場合、パーソナルプレファレンスがユーザプレファレンスとして保存されます。';
 $string['questions'] = '問題';
 $string['questionsaveerror'] = '問題の保存中にエラーが発生しました - ({$a})';
-$string['questionsinuse'] = '「*」は使用中のため削除できない問題を示しています。代わりにあなたが「古い問題を表示する」を選択しない限り、それらの問題は問題バンクに表示されません。';
+$string['questionsinuse'] = '「*」は使用中のため削除できない問題を示しています。代わりにあなたが「秘匿された問題も表示する」を「Yes」に設定しない限り、問題バンクでは秘匿されます。';
 $string['questionsmovedto'] = '使用中の問題が親コースカテゴリの「 {$a} 」に移動されました。';
 $string['questionsrescuedfrom'] = '問題がコンテクスト {$a} より保存されました。';
 $string['questionsrescuedfrominfo'] = 'いくつかの小テストまたは他の活動で使用されているため、これらの問題 (いくつかは非表示) はコンテクスト {$a} 削除時に保存されました。';
@@ -427,11 +430,11 @@ $string['questionx'] = '問題 {$a}';
 $string['requiresgrading'] = '要評定';
 $string['responsehistory'] = '解答履歴';
 $string['restart'] = '再開する';
-$string['restartwiththeseoptions'] = 'これらのオプションで再開する';
+$string['restartwiththeseoptions'] = 'プレビューオプションを保存して再開する';
 $string['restoremultipletopcats'] = 'バックアップファイルにはコンテクスト {$a} のトップレベルの問題カテゴリが2つ以上含まれています。';
 $string['reviewresponse'] = '解答をレビューする';
 $string['rightanswer'] = '正解';
-$string['rightanswer_help'] = '自動的に生成される正解の概要です。これは制限できるため、あなたは問題の全体的なフィードバックの中で正解を説明して、このオプションを無効にしても良いでしょう。';
+$string['rightanswer_help'] = '自動的に生成される正解の概要です。これは制限できるため、あなたは問題の全般的なフィードバックの中で正解を説明して、このオプションを無効にしても良いでしょう。';
 $string['save'] = '保存';
 $string['savechangesandcontinueediting'] = '変更を保存して編集を続ける';
 $string['saved'] = '保存: {$a}';
@@ -442,7 +445,9 @@ $string['selectcategoryabove'] = '上記カテゴリを選択する';
 $string['selectquestionsforbulk'] = 'バルク処理の問題を選択する';
 $string['settingsformultipletries'] = '複数受験';
 $string['shareincontext'] = '{$a} のコンテクストで共有する';
-$string['showhidden'] = '古い問題も表示する';
+$string['shortversioninfo'] = 'v{$a->version} (最新 {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (最新)';
+$string['showhidden'] = '秘匿された問題も表示する';
 $string['showmarkandmax'] = '評点および最大評点を表示する';
 $string['showmaxmarkonly'] = '最大評点のみ表示する';
 $string['shown'] = '表示';
@@ -494,6 +499,8 @@ $string['upgradeproblemcategoryloop'] = '問題カテゴリのアップグレー
 $string['upgradeproblemcouldnotupdatecategory'] = '問題カテゴリ「 {$a->name} ({$a->id}) 」をアップグレードできませんでした。';
 $string['upgradeproblemunknowncategory'] = '問題カテゴリのアップグレード中に問題が発生しました。カテゴリ「 {$a->id} 」が存在しない親カテゴリ「 {$a->parent} 」を参照しています。問題を修正するため、親カテゴリを変更しました。';
 $string['version_selection'] = 'バージョン {$a->version}';
+$string['versioninfo'] = 'バージョン {$a->version} (最新 {$a->latestversion})';
+$string['versioninfolatest'] = 'バージョン {$a->version} (最新)';
 $string['whethercorrect'] = '答えの正誤';
 $string['whethercorrect_help'] = 'ここでは「部分的正解」または「不正解」のテキスト記述の両方をカバーします。色付けされたハイライトは同じ情報を意味します。';
 $string['whichtries'] = '受験対象';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'de', version '4.1'.
+ * Strings for component 'enrol_self', language 'de', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Nur für Mitglieder der globalen Gruppe';
 $string['cohortonly_help'] = 'Die Selbsteinschreibung kann auf Mitglieder einer globalen Gruppe beschränkt werden. Eine Änderung dieser Einstellung wirkt sich nicht auf bestehende Einschreibungen aus.';
 $string['confirmbulkdeleteenrolment'] = 'Möchten Sie die Einschreibungen dieser Nutzer/innen wirklich löschen?';
 $string['customwelcomemessage'] = 'Begrüßungstext';
-$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann ein einfacher Text sein oder im Moodle-Auto-Format auch HTML-Tags und MultiLang-Tags enthalten.
-
-Sie können folgende Platzhalter im Text verwenden:
-
-* Kursname {$a->coursename}
-* Link zum Nutzerprofil {$a->profileurl}
-* Nutzer-E-Mail-Adresse {$a->email}
-* Vollständiger Nutzername {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann unformatiert sein oder im Moodle-Auto-Format vorliegen. HTML-Tags und MultiLang-Tags werden akteptiert, außerdem die folgenden Platzhalter:
+<ul>
+<li>Kursname {$a->coursename}</li>
+<li>Link zum Nutzerprofil {$a->profileurl}</li>
+<li>Vollständiger Nutzername {$a->fullname}</li>
+<li>Vorname der Person {$a->firstname}</li>
+<li>Nachname der Person {$a->lastname}</li>
+<li>E-Mail-Adresse der Person {$a->email}</li>
+<li>Kursrolle der Person {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Rolle im Kurs';
 $string['defaultrole_desc'] = 'Wählen Sie eine Rolle aus, die Nutzer/innen bei der Selbsteinschreibung zugewiesen werden soll.';
 $string['deleteselectedusers'] = 'Ausgewählte Selbsteinschreibungen löschen';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
 $string['expiredaction_help'] = 'Legen Sie fest, was nach dem Ablauf der Einschreibung in einem Kurs passiert. Denken Sie daran, dass beim Abmelden von Nutzer/innen einige Daten nicht mehr verfügbar sind.';
+$string['expiryinactivemessageenrolledbody'] = 'Hallo {$a->user},
+
+Ihre Einschreibung zum Kurs {$a->course} läuft am {$a->timeend} ab, weil Sie den Kurs in den letzten {$a->inactivetime} Tagen nicht besucht haben.
+
+Um Ihre Einschreibung aktiv zu halten, melden Sie sich an und besuchen Sie <a href="{$a->url}">{$a->course</a> vor {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Ihre Einschreibung endet: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Hallo {$a->user},
 
 Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer läuft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.

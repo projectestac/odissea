@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'fr', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'fr', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Ajouter une catégorie';
 $string['addnewdefaults'] = 'Ajouter une nouvelle valeur par défaut pour le module';
 $string['addpurpose'] = 'Ajouter une finalité';
 $string['addroleoverride'] = 'Ajouter une dérogation de rôle';
+$string['allowfiltering'] = 'Permettre le filtrage par cours des exportations';
+$string['allowfiltering_desc'] = 'Si ce réglage est activé, le délégué à la protection des données peut choisir d’exporter les données utilisateurs d’une sélection de cours plutôt que de tous les cours. Lorsque cette fonctionnalité est activée, les demandes d’exportation seront initialement dans l’état « En attente » et ne pourront être approuvées qu’après la fin d’une tâche programmée.';
 $string['approve'] = 'Approuver';
 $string['approvedrequestsubmitted'] = 'Votre demande a été envoyée et sera traitée prochainement.';
 $string['approverequest'] = 'Approuver la demande';
+$string['approverequestall'] = 'Approuver la demande (toutes les données)';
+$string['approveselectedcourses'] = 'Approuver les cours sélectionnés';
 $string['automaticdatadeletionapproval'] = 'Approbation automatique des demandes de suppression de données';
 $string['automaticdatadeletionapproval_desc'] = 'Si ce réglage est activé, les demandes de suppression de données sont approuvées automatiquement.<br />L’approbation automatique ne s’appliquera qu’aux nouvelles demandes de suppression, après l’activation du réglage. Les demandes de suppression existantes en attente d’approbation devront être approuvées manuellement par le délégué à la protection des données.';
 $string['automaticdataexportapproval'] = 'Approbation automatique des demandes d’exportation de données';
@@ -45,7 +49,7 @@ $string['cachedef_contextlevel'] = 'Niveaux de contexte des catégories et final
 $string['cachedef_purpose'] = 'Finalité des données';
 $string['cachedef_purpose_overrides'] = 'Dérogation de finalité dans l’Outil de protection des données';
 $string['cancelrequest'] = 'Annuler la demande';
-$string['cancelrequestconfirmation'] = 'Voulez-vous vraiment annuler cette demande de données ?';
+$string['cancelrequestconfirmation'] = 'Voulez-vous annuler cette demande de données ?';
 $string['cannotreset'] = 'Impossible de réinitialiser cette demande. Seules les demandes rejetées peuvent être réinitialisées.';
 $string['categories'] = 'Catégories';
 $string['categorieslist'] = 'Liste des catégories de données';
@@ -154,6 +158,7 @@ $string['errorinvalidrequeststatus'] = 'Statut de la demande non valide !';
 $string['errorinvalidrequesttype'] = 'Type de demande non valide !';
 $string['errornocapabilitytorequestforothers'] = 'L’utilisateur {$a->requestedby} n’a pas les permissions requises pour effectuer une demande de données au nom de l’utilisateur {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Il n’y a pas de contexte échu à traiter';
+$string['errornoselectedcourse'] = 'Vous devez sélectionner au moins un cours';
 $string['errorrequestalreadyexists'] = 'Vous avez déjà une demande en cours.';
 $string['errorrequestnotfound'] = 'Demande non trouvée';
 $string['errorrequestnotwaitingforapproval'] = 'La demande n’est pas en attente d’approbation. Soit elle n’est pas encore prête, soit elle n’a pas encore été traitée.';
@@ -171,6 +176,7 @@ $string['expiry'] = 'Échéance';
 $string['explanationtitle'] = 'Icônes utilisées sur cette page et leur signification.';
 $string['external'] = 'Additionnel';
 $string['externalexplanation'] = 'Un plugin additionnel a été installé sur ce site.';
+$string['filterexportdata'] = 'Approuver la demande (données des cours sélectionnés)';
 $string['filteroption'] = '{$a->category} : {$a->name}';
 $string['frontpagecourse'] = 'Cours page d’accueil';
 $string['gdpr_art_6_1_a_description'] = 'La personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques';
@@ -228,6 +234,7 @@ $string['noassignedroles'] = 'Aucun rôle attribué dans ce contexte';
 $string['noblockstoload'] = 'Aucun bloc';
 $string['nocategories'] = 'Il n’y a pas encore de catégorie';
 $string['nocoursestoload'] = 'Pas d’activité';
+$string['nocoursetofilter'] = 'L’utilisateur n’est inscrit dans aucun cours à sélectionner';
 $string['nodatarequests'] = 'Il n’y a pas de demande de données';
 $string['nodatarequestsmatchingfilter'] = 'Il n’y a pas de demande de données correspondant au filtre';
 $string['noexpiredcontexts'] = 'Ce niveau de contexte échu n’a pas de données dont la date de conservation est échue.';
@@ -289,6 +296,7 @@ $string['requesttype_help'] = 'Sélectionner la raison pour laquelle vous désir
 $string['requesttypedelete'] = 'Supprimer toutes mes données personnelles';
 $string['requesttypedeleteshort'] = 'Suppression';
 $string['requesttypeexport'] = 'Exporter toutes mes données personnelles';
+$string['requesttypeexportallowfiltering'] = 'Exporter mes données personnelles';
 $string['requesttypeexportshort'] = 'Exportation';
 $string['requesttypeothers'] = 'Demande d’ordre général';
 $string['requesttypeothersshort'] = 'Message';
@@ -320,6 +328,7 @@ $string['roleoverride'] = 'Dérogation de rôle';
 $string['roleoverrideoverview'] = 'La politique de conservation par défaut peut être assortie d’une dérogation pour certains rôles, vous permettant de spécifier une politique de conservation plus longue ou plus courte. L’échéance survient lorsque les périodes de chacun des rôles d’un utilisateur arrivent à échéance.';
 $string['roleoverrides'] = 'Dérogations de rôle';
 $string['selectbulkaction'] = 'Veuillez choisir une action à effectuer en masse.';
+$string['selectcourses'] = 'Sélectionner les cours à exporter';
 $string['selectdatarequests'] = 'Veuillez sélectionner des demandes de données.';
 $string['selectuserdatarequest'] = 'Sélectionner la demande {$a->requesttype} de {$a->username}.';
 $string['send'] = 'Envoyer';
@@ -336,6 +345,7 @@ $string['statusdeleted'] = 'Supprimée';
 $string['statusdetail'] = 'Statut :';
 $string['statusexpired'] = 'Échue';
 $string['statuspending'] = 'En suspens';
+$string['statuspreprocessing'] = 'Pré-traitement';
 $string['statusprocessing'] = 'En cours de traitement';
 $string['statusready'] = 'Téléchargement prêt';
 $string['statusrejected'] = 'Rejetée';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ko', version '4.1'.
+ * Strings for component 'availability', language 'ko', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessrestrictions'] = '접근 제한';
 $string['addrestriction'] = '제한 추가 ...';
 $string['condition_group'] = '제한 설정';
+$string['editsettings'] = '설정';
 $string['enableavailability'] = '조건적 접근 활성화';
 $string['enableavailability_desc'] = '활성화되면, 이것은 활동에 접근할 수 있는지를 제어하는 조건들 (날짜, 성적 혹은 완료 상태에 기반한) 을 설정할 수 있게 합니다.';
 $string['hide_verb'] = '감추기 위해 클릭하세요.';

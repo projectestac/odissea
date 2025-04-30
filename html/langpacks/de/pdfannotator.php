@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'de', version '4.1'.
+ * Strings for component 'pdfannotator', language 'de', version '4.4'.
  *
  * @package     pdfannotator
  * @category    string
@@ -105,8 +105,8 @@ $string['error:addComment'] = 'Beim Hinzufügen des Kommentars ist ein Fehler au
 $string['error:closequestion'] = 'Beim Schließen/Öffnen der Frage ist ein Fehler aufgetreten.';
 $string['error:deleteAnnotation'] = 'Beim Löschen der Annotation ist ein Fehler aufgetreten.';
 $string['error:editAnnotation'] = 'Beim Ändern einer Annotation ist ein Fehler aufgetreten.';
-$string['error:editcomment'] = 'Beim Editieren des Kommentars ist ein Fehler aufgetreten.';
-$string['error:findimage'] = 'Beim Versuch, Bild {$a} zu finden, ist ein Fehler aufgetreten.';
+$string['error:editcomment'] = 'Beim Bearbeiten des Kommentars ist ein Fehler aufgetreten.';
+$string['error:findimage'] = 'Beim Versuch, das Bild {$a} zu finden, ist ein Fehler aufgetreten.';
 $string['error:forwardquestion'] = 'Beim Weiterleiten der Frage ist ein Fehler aufgetreten.';
 $string['error:forwardquestionnorecipient'] = 'Beim Weiterleiten der Frage ist ein Fehler aufgetreten. Niemand in diesem Kurs hat die Berechtigung weitergeleitete Fragen zu empfangen.';
 $string['error:getAllQuestions'] = 'Beim Auslesen der Fragen dieses Dokumentes ist ein Fehler aufgetreten.';
@@ -114,23 +114,23 @@ $string['error:getAnnotation'] = 'Beim Auslesen der Annotation ist ein Fehler au
 $string['error:getAnnotations'] = 'Beim Auslesen der Annotationen ist ein Fehler aufgetreten.';
 $string['error:getComments'] = 'Beim Auslesen der Kommentare ist ein Fehler aufgetreten.';
 $string['error:getQuestions'] = 'Beim Auslesen der Fragen dieser Seite ist ein Fehler aufgetreten.';
-$string['error:getimageheight'] = 'Beim Abrufen der Bildbreite von {$a} ist ein Fehler aufgetreten.';
+$string['error:getimageheight'] = 'Beim Abrufen der Bildhöhe von {$a} ist ein Fehler aufgetreten.';
 $string['error:getimagewidth'] = 'Beim Abrufen der Bildbreite von {$a} ist ein Fehler aufgetreten.';
-$string['error:hideComment'] = 'Beim Ausblenden des Kommentars ist ein Fehler aufgetreten.';
+$string['error:hideComment'] = 'Beim Ausblenden des Kommentars für Teilnehmer/innen ist ein Fehler aufgetreten.';
 $string['error:markasread'] = 'Das Element konnte nicht als gelesen markiert werden.';
 $string['error:markasunread'] = 'Das Element konnte nicht als ungelesen markiert werden.';
 $string['error:markcorrectanswer'] = 'Beim Markieren der Antwort als richtig ist ein Fehler aufgetreten';
 $string['error:maximalsizeoffile'] = 'Ihre Datei {$a->filename}, weil sie {$a->filesize} als maximale Dateigröße überschreitet. Sie können Dateien mit höchstens {$a->maxfilesize} an einen einzelnen Kommentar anhängen.';
 $string['error:missingAnnotationtype'] = 'Annotationstyp existiert nicht. Eventuell fehlt der Eintrag in der Tabelle pdfannotator_annotationtypes.';
 $string['error:openingPDF'] = 'Beim Öffnen der PDF-Datei ist ein Fehler aufgetreten';
-$string['error:openprintview'] = 'Beim Öffnen des PDFs ist ein Fehler aufgetreten.';
-$string['error:printcomments'] = 'Beim Öffnen der Kommentare ist ein Fehler aufgetreten.';
+$string['error:openprintview'] = 'Beim Öffnen des PDFs im Acrobat Reade ist ein Fehler aufgetreten.';
+$string['error:printcomments'] = 'Beim Öffnen der Kommentare in einem PDF ist ein Fehler aufgetreten.';
 $string['error:printcommentsdata'] = 'Fehler mit Daten vom Server.';
 $string['error:printlatex'] = 'Beim Versuch, eine LaTeX-Formel zum PDF hinzuzufügen, ist ein Fehler aufgetreten.';
-$string['error:redihideCommentsplayComment'] = 'Beim Wiedereinblenden des Kommentars für Teilnehmer ist ein Fehler aufgetreten.';
-$string['error:redisplayComment'] = 'Beim Wiederanzeigen des Kommentars ist ein Fehler aufgetreten.';
+$string['error:redihideCommentsplayComment'] = 'Beim erneuten Einfügen des Kommentars für Teilnehmer/innen ist ein Fehler aufgetreten.';
+$string['error:redisplayComment'] = 'Beim erneuten Anzeigen des Kommentars ist ein Fehler aufgetreten.';
 $string['error:renderPage'] = 'Beim Anzeigen der Seite ist ein Fehler aufgetreten.';
-$string['error:reportComment'] = 'Beim Speichern Ihrer Meldung ist ein Fehler aufgetreten.';
+$string['error:reportComment'] = 'Beim Speichern des Berichts ist ein Fehler aufgetreten.';
 $string['error:subscribe'] = 'Beim Abonnieren der Frage ist ein Fehler aufgetreten.';
 $string['error:unsubscribe'] = 'Beim Kündigen des Abonnements ist ein Fehler aufgetreten.';
 $string['error:unsupportedextension'] = 'Die Erweiterung übermittelter Daten wird nicht unterstützt. Bitte wählen Sie eine andere Erweiterung aus.';
@@ -143,7 +143,7 @@ $string['forwardedquestionhtml'] = '{$a->sender} leitete folgende Frage an Sie w
         mit der Nachricht: <br /> <br />
         "{$a->message}" <br /> <br />
         Die Frage ist <a href="{$a->urltoquestion}">hier</a> verfügbar.';
-$string['forwardedquestiontext'] = '{$a->sender} hat folgende Frage an sie weitergeleitet:
+$string['forwardedquestiontext'] = '{$a->sender} hat folgende Frage an Sie weitergeleitet:
 
         "{$a->questioncontent}"
 
@@ -235,7 +235,7 @@ $string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'PDF-Annotation';
 $string['month'] = 'Monat';
 $string['months'] = 'Monaten';
-$string['myanswers'] = 'eigene Antworten';
+$string['myanswers'] = 'Meine Antworten';
 $string['mypost'] = 'Mein Beitrag';
 $string['myprivate'] = 'Meine persönlichen Notizen';
 $string['myprotectedanswers'] = 'Meine privaten Antworten';
@@ -243,10 +243,10 @@ $string['myprotectedquestions'] = 'Meine privaten Fragen';
 $string['mypublicanswers'] = 'Meine öffentlichen Antworten';
 $string['mypublicquestions'] = 'Meine öffentlichen Fragen';
 $string['myquestion'] = 'Frage';
-$string['myquestions'] = 'eigene Fragen';
-$string['newanswerhtml'] = 'Die von Ihnen abonnierte Frage "{$a->question}" wurde von {$a->answeruser} beantwortet mit dem Kommentar: <br /> <br /> "{$a->content}"<br /><br />
+$string['myquestions'] = 'Meine Fragen';
+$string['newanswerhtml'] = 'Die von Ihnen abonnierte Frage "{$a->question}" wurde von {$a->answeruser} mit folgendem Kommentar beantwortet: <br /> <br /> "{$a->content}"<br /><br />
 Der Kommentar ist <a href="{$a->urltoanswer}">hier</a> einzusehen.';
-$string['newanswertext'] = 'Die von Ihnen abonnierte Frage "{$a->question}" wurde von {$a->answeruser} beantwortet mit dem Kommentar:
+$string['newanswertext'] = 'Die von Ihnen abonnierte Frage "{$a->question}" wurde von {$a->answeruser} mit folgendem Kommentar beantwortet:
 
     "{$a->content}"
 
@@ -302,8 +302,8 @@ $string['pdfannotator:forwardquestions'] = 'Weitergeleitete Fragen';
 $string['pdfannotator:getforwardedquestions'] = 'Weitergeleitete Fragen empfangen';
 $string['pdfannotator:hidecomments'] = 'Kommentare für Teilnehmer/innen verbergen';
 $string['pdfannotator:markcorrectanswer'] = 'Antworten als richtig markieren';
-$string['pdfannotator:printcomments'] = 'Kommentare herunterladen';
-$string['pdfannotator:printdocument'] = 'Dokument herunterladen';
+$string['pdfannotator:printcomments'] = 'Laden Sie die Kommentare herunter (auch wenn die Option für einen PDF-Annotator deaktiviert ist)';
+$string['pdfannotator:printdocument'] = 'Laden Sie das Dokument herunter (auch wenn die Option für einen PDF-Annotator deaktiviert ist)';
 $string['pdfannotator:recievenewquestionnotifications'] = 'Empfangen von Benachrichtigungen über neue Fragen';
 $string['pdfannotator:report'] = 'Unangemessene Kommentare dem Kursmanager melden';
 $string['pdfannotator:seehiddencomments'] = 'Verborgene Kommentare sehen';
@@ -378,16 +378,16 @@ $string['rectangle'] = 'Mit dem Rahmen-Werkzeug wird ein Rahmen gesetzt und ein 
 $string['removeCorrect'] = 'Markierung als richtig entfernen';
 $string['removehidden'] = 'Anzeigen';
 $string['report'] = 'Meldung';
-$string['reportaddedhtml'] = '{$a->reportinguser} hat einen Kommentar gemeldet mit der Nachricht: <br /> <br /> "{$a->introduction}"<br /><br />
+$string['reportaddedhtml'] = '{$a->reportinguser} hat einen Kommentar mit folgender Nachricht gemeldet: <br /> <br /> "{$a->introduction}"<br /><br />
 Die Meldung ist <a href="{$a->urltoreport}">hier</a> verfügbar.';
-$string['reportaddedtext'] = '{$a->reportinguser} hat einen Kommentar gemeldet mit der Nachricht:
+$string['reportaddedtext'] = '{$a->reportinguser} hat einen Kommentar mit folgender Nachricht gemeldet:
 
     "{$a->introduction}"
 
 Die Meldung ist verfügbar unter: {$a->urltoreport}';
 $string['reportedby'] = 'von / am';
 $string['reportedcomment'] = 'Gemeldeter Kommentar';
-$string['reports'] = 'gemeldete Kommentare';
+$string['reports'] = 'Gemeldete Kommentare';
 $string['reportsendbutton'] = 'Meldung versenden';
 $string['reportstab'] = 'Meldungen';
 $string['reportstabicon'] = 'Meldungen';
@@ -404,7 +404,7 @@ $string['sendAnonymous'] = 'anonym posten';
 $string['sendPrivate'] = 'Persönliche Notiz verfassen';
 $string['sendProtected'] = 'Privaten Kommentar verfassen';
 $string['setting_alternative_name'] = 'Name';
-$string['setting_alternative_name_desc'] = 'Ermöglicht den Namen des zu listenden PDFs zu ändern. Falls leer, wird der Dateiname als Listname genommen';
+$string['setting_alternative_name_desc'] = 'Geben Sie einen alternativen Namen für das PDF an. Wenn dieses Feld leer ist, wird der Name des PDFs als repräsentativer Name verwendet.';
 $string['setting_alternative_name_help'] = 'Die ersten 20 Zeichen des Dokumentnamens werden in der Navigation des Annotators angezeigt. Der Rest - falls vorhanden - wird mit ... abekürzt.';
 $string['setting_anonymous'] = 'Anonymes Posten erlauben?';
 $string['setting_fileupload'] = 'Bitte wählen Sie eine PDF-Datei aus.';
@@ -418,9 +418,9 @@ $string['setting_use_studentdrawing_help'] = 'Bitte beachten Sie, dass Freihandz
 $string['setting_use_studenttextbox'] = 'Textbox';
 $string['setting_use_studenttextbox_help'] = 'Bitte beachten Sie, dass mit der Textbox erstellte Annotationen immer mit Verfasser und Erstellungsdatum angezeigt werden. Diese Annotationen können weder kommentiert noch gemeldet wedern.';
 $string['setting_useprint'] = 'Speichern/Drucken';
-$string['setting_useprint_comments'] = 'Kommentare Speichern/Drucken';
+$string['setting_useprint_comments'] = 'Kommentare speichern/drucken';
 $string['setting_useprint_comments_help'] = 'Sollen Teilnehmer/innen die Annotationen und Kommentaren herunterladen dürfen?';
-$string['setting_useprint_document'] = 'Dokument Speichern/Drucken';
+$string['setting_useprint_document'] = 'PDF-Dokument speichern/drucken';
 $string['setting_useprint_document_help'] = 'Sollen Teilnehmer/innen das PDF-Dokument herunterladen dürfen?';
 $string['setting_useprint_help'] = 'Sollen Teilnehmer/innen das PDF-Dokument ohne Annotationen und Kommentare herunterladen dürfen?';
 $string['setting_usevotes'] = 'Votes/Likes';
@@ -445,6 +445,7 @@ $string['successfullyEdited'] = 'Ihre Änderungen wurden übernommen.';
 $string['successfullyHidden'] = 'Der Kommentar erscheint Teilnehmern als verborgen.';
 $string['successfullyRedisplayed'] = 'Der Kommentar ist für Teilnehmer wieder sichtbar.';
 $string['successfullySubscribed'] = 'Die Frage wurde abonniert.';
+$string['successfullySubscribednotify'] = 'Ihr Abonnement zur Frage wurde eingetragen.';
 $string['successfullyUnsubscribed'] = 'Das Abonnement wurde gekündigt.';
 $string['successfullyUnsubscribedPlural'] = 'Die Frage wurde entabonniert. Alle {$a} Antworten wurden aus der Tabelle entfernt.';
 $string['successfullyUnsubscribedSingular'] = 'Die Frage wurde entabonniert und die einzige Antwort aus der Tabelle entfernt.';

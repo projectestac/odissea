@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'it', version '4.1'.
+ * Strings for component 'block_badges', language 'it', version '4.4'.
  *
  * @package     block_badges
  * @category    string
@@ -30,4 +30,4 @@ $string['badges:myaddinstance'] = 'Aggiungere blocco I miei nuovi badge nella Da
 $string['nothingtodisplay'] = 'Non hai badge da visualizzare';
 $string['numbadgestodisplay'] = 'Numero di nuovi badge da visualizzare';
 $string['pluginname'] = 'I miei nuovi badge';
-$string['privacy:metadata'] = 'Il blocco Badge visualizza solamente dati memorizzati altrove.';
+$string['privacy:metadata'] = 'Il blocco Badge visualizza solamente dati memorizzati da altri componenti.';

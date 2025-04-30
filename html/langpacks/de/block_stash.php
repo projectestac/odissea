@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_stash', language 'de', version '4.1'.
+ * Strings for component 'block_stash', language 'de', version '4.4'.
  *
  * @package     block_stash
  * @category    string
@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Akzeptieren';
 $string['add'] = 'Hinzufügen';
-$string['additem'] = 'Ein Objekt hinzufügen';
-$string['addnewdrop'] = 'Einen neuen Fundort hinzufügen';
-$string['addnewtradeitem'] = 'Ein neues Objekt zu diesem Tausch hinzufügen';
-$string['addtoinventory'] = 'Ein Objekt zum Inventar hinzufügen';
-$string['addtrade'] = 'Ein Tauschangebot hinzufügen';
-$string['addtradeitem'] = 'Ein Tauschobjekt hinzufügen';
+$string['additem'] = 'Objekt hinzufügen';
+$string['addnewdrop'] = 'Neuen Fundort hinzufügen';
+$string['addnewtradeitem'] = 'Neues Objekt zu diesem Tausch hinzufügen';
+$string['addtoinventory'] = 'Objekt zum Inventar hinzufügen';
+$string['addtrade'] = 'Tauschangebot hinzufügen';
+$string['addtradeitem'] = 'Tauschobjekt hinzufügen';
 $string['advancedreset'] = 'Erweitertes Zurücksetzen';
 $string['aftercreatinglocationhelp'] = 'Wenn Sie ein Objekt und den Fundort erstellt haben, müssen Sie einen Code-Schnipsel in Ihren Kurs einfügen, damit das Objekt angezeigt wird. Nachdem Sie festgelegt haben, wie das Objekt den Teilnehmer/innen angezeigt wird, kopieren Sie den folgenden Code-Schnipsel und fügen Sie ihn in Ihren Inhalt ein, z.B. in die Beschreibung einer Aufgabe.';
 $string['appearance'] = 'Aussehen';
@@ -57,7 +57,7 @@ $string['deleteuseritem'] = '{$a} für diese Person löschen';
 $string['details'] = 'Details';
 $string['dropa'] = 'Fundort \'{$a}\'';
 $string['dropname'] = 'Fundort';
-$string['dropname_help'] = 'Der Name des Fundortes dient nur dazu, Ihnen die Verwaltung zu erleichtern. Er wird den Teilnehmer/innen nicht angezeigt.';
+$string['dropname_help'] = 'Der Name des Fundortes dient nur dazu, Ihnen die Verwaltung zu erleichtern. Er wird Teilnehmer/innen nicht angezeigt.';
 $string['drops'] = 'Fundorte';
 $string['drops_help'] = '<p>Fundorte sind Stellen, an denen Ihre Objekte in der <em>virtuellen Welt</em> sind. Ohne einen <em>Fundort</em> kann ein Objekt nicht von Teilnehmer/innen aufgesammelt werden.</p>
 <p>Fundorte verfügen über einigen Einstellungen, unter anderem wie oft eine einzelne Person dort ein Objekt aufsammeln kann, und wie oft ein Objekt dort wieder erscheint, nachdem es aufgesammelt wurde.</p>
@@ -75,11 +75,11 @@ $string['edittradeitem'] = 'Tauschobjekt bearbeiten \'{$a}\'';
 $string['eginthecastle'] = 'Z.B. in der Burg';
 $string['enabled'] = 'Aktiviert';
 $string['eventitemacquired'] = 'Ein Objekt wurde erworben.';
-$string['eventswapaccepted'] = 'Ein benutzerdefinierter Tausch wurde akzeptiert.';
-$string['eventswapcreated'] = 'Ein benutzerdefinierter Tausch wurde erstellt.';
-$string['filtershortcodesnotactive'] = 'Das Filter-Plugin Shortcodes ist installiert aber noch nicht für diesen Kurs aktiviert. Gehen Sie zu <a href="{$a->activeurl}" target="_blank">dieser Seite</a>, um es für diesen Kurs zu aktivieren.';
-$string['filtershortcodesnotenabled'] = 'Das Filter-Plugin Shortcodes ist installiert aber noch nicht <a href="{$a->enableurl}" target="_blank">aktiviert</a>.';
-$string['filtershortcodesnotinstalled'] = 'Wir empfehlen, dass Sie das <a href="{$a->installurl}" target="_blank">Filter-Plugin Shortcodes</a> installieren und aktivieren. Es macht die Verwendung der Code-Schnipsel einfacher und zuverlässiger. Außerdem ermöglicht es Tauschen.';
+$string['eventswapaccepted'] = 'Ein nutzerdefinierter Tausch wurde akzeptiert.';
+$string['eventswapcreated'] = 'Ein nutzerdefinierter Tausch wurde erstellt.';
+$string['filtershortcodesnotactive'] = 'Der Filter Shortcodes ist installiert, aber nicht für diesen Kurs aktiviert. Gehen Sie zu <a href="{$a->activeurl}" target="_blank">dieser Seite</a>, um ShortCodes für diesen Kurs zu aktivieren.';
+$string['filtershortcodesnotenabled'] = 'Der Filter Shortcodes ist installiert, aber noch nicht <a href="{$a->enableurl}" target="_blank">aktiviert</a>.';
+$string['filtershortcodesnotinstalled'] = 'Wir empfehlen, dass Sie den <a href="{$a->installurl}" target="_blank">Filter Shortcodes</a> installieren und aktivieren. Das macht die Verwendung der Code-Schnipsel einfacher und zuverlässiger. Außerdem ermöglicht es Tauschen.';
 $string['filterstashdeprecated'] = 'Sie verwenden das ältere Filter-Plugin Stash, das nicht länger unterstützt wird. Wir empfehlen, stattdessen das <a href="{$a->installurl}" target="_blank">Filter-Plugin Shortcodes</a> zu installieren und zu aktivieren.  Dies ermöglicht außerdem das Tauschen.';
 $string['filterstashnotactive'] = 'Das Filter-Plugin ist installiert aber noch nicht für diesen Kurs aktiviert. Gehen Sie zu <a href="{$a->activeurl}" target="_blank">dieser Seite</a>, um es für diesen Kurs zu aktivieren.';
 $string['filterstashnotenabled'] = 'Das Filter-Plugin ist installiert aber noch nicht <a href="{$a->enableurl}" target="_blank">aktiviert</a>.';
@@ -197,7 +197,7 @@ $string['requestsent'] = 'Die Anfrage wurde gesendet.';
 $string['requestsforme'] = 'Anfragen für mich';
 $string['requestswap'] = 'Ein Angebot machen';
 $string['resetstashof'] = 'Das Inventar von {$a}  zurücksetzen';
-$string['saveandnext'] = 'speichern und weiter';
+$string['saveandnext'] = 'Speichern und weiter';
 $string['savechanges'] = 'Änderungen speichern';
 $string['savequantity'] = 'Speichern Sie die Menge für den Artikel {$a}';
 $string['scarceitem'] = 'Mengenbegrenzung';

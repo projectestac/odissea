@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_migratehvp2h5p', language 'fr', version '4.1'.
+ * Strings for component 'tool_migratehvp2h5p', language 'fr', version '4.4'.
  *
  * @package     tool_migratehvp2h5p
  * @category    string
@@ -32,7 +32,7 @@ $string['copy2cb'] = 'Ces contenus doivent-ils être ajoutés à la banque de co
 $string['copy2cb_no'] = 'Non, ils doivent être créés uniquement dans l’activité.';
 $string['copy2cb_yeswithlink'] = 'Oui, et un lien vers ces fichiers doit être utilisé dans l’activité';
 $string['copy2cb_yeswithoutlink'] = 'Oui, mais une copie sera utilisée dans l’activité (les changements dans la banque de contenu ne seront pas répercutés dans l’activité)';
-$string['error_contenttypeh5p_disabled'] = 'Le type banque de contenu H5P est désactivé. Il doit être activé pour migrer les activités de « mod_hvp » et les ajouter également à la banque de contenu. Vous pouvez activer ce type de contenu à partir de «  Administration du site > Plugins > Banque de contenus > Gérer les types de contenus  » ou exécuter à nouveau l’outil de migration et sélectionner « Non, ils doivent être créés uniquement dans l’activité »  (ou « copy2cb=0 » si vous utilisez l’outil CLI) pour éviter de créer des fichiers dans la banque de contenu.';
+$string['error_contenttypeh5p_disabled'] = 'Le type banque de contenu H5P est désactivé. Il doit être activé pour migrer les activités de « mod_hvp » et les ajouter également à la banque de contenu. Vous pouvez activer ce type de contenu à partir de «  Administration du site > Plugins > Banque de contenus > Gérer les types de contenus » ou exécuter à nouveau l’outil de migration et sélectionner « Non, ils doivent être créés uniquement dans l’activité »  (ou « copy2cb=0 » si vous utilisez l’outil CLI) pour éviter de créer des fichiers dans la banque de contenu.';
 $string['error_modh5pactivity_disabled'] = 'L’activité H5P est désactivée. Elle doit être activée pour migrer les activités de « mod_hvp »';
 $string['event_hvp_migrated'] = 'mod_hvp migré vers mod_h5pactivity';
 $string['graded'] = 'Utilisateurs notés';
@@ -45,7 +45,7 @@ $string['keeporiginal_nothing'] = 'Conserver l’activité d’origine telle que
 $string['migrate'] = 'Migrer';
 $string['migrate_fail'] = 'Erreur lors de la migration de l’activité hvp avec l’identifiant {$a}';
 $string['migrate_gradesoverridden'] = 'L’activité mod_hvp originale « {$a->name} », avec l’identifiant {$a->id}, a migré avec succès. Cependant, certaines informations de notation ont été remplacées, telles que le feedback, qui n’a pas été migré parce que l’activité originale est configurée avec une note maximale non valide (elle doit être supérieure à 0 pour pouvoir être transférée dans le carnet de notes).';
-$string['migrate_gradesoverridden_notdelete'] = 'L’activité mod_hvp originale  « {$a->name} », avec l’identifiant {$a->id}, a été migrée avec succès. Cependant, certaines informations de notation ont été remplacées, comme le feedback, qui n’a pas été migré parce que l’activité originale est configurée avec une note maximale non valide (elle doit être supérieure à 0 pour pouvoir être transférée dans le carnet de notes). L’activité originale a été masquée au lieu d’être supprimée.';
+$string['migrate_gradesoverridden_notdelete'] = 'L’activité mod_hvp originale « {$a->name} », avec l’identifiant {$a->id}, a été migrée avec succès. Cependant, certaines informations de notation ont été remplacées, comme le feedback, qui n’a pas été migré parce que l’activité originale est configurée avec une note maximale non valide (elle doit être supérieure à 0 pour pouvoir être transférée dans le carnet de notes). L’activité originale a été masquée au lieu d’être supprimée.';
 $string['migrate_success'] = 'L’activité hvp avec l’Identifiant {$a} a été migrée avec succès';
 $string['nohvpactivities'] = 'Il n’y a aucune activité mod_hvp à migrer vers mod_h5pactivity.';
 $string['pluginname'] = 'Migrer le contenu de mod_hvp vers mod_h5pactivity';

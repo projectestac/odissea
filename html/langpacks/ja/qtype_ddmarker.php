@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'ja', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -57,8 +57,8 @@ $string['dropzones_help'] = 'ドロップゾーンは座標または上のプレ
 * 多角形: x1, y1; x2, y2; ...; xn, yn<br />例えば次のようになります: <code>20,60;100,60;20,100</code>
 
 マーカーテキストを選択することによりプレビューの形にそのテキストを追加します。';
-$string['followingarewrong'] = '以下のマーカは正しくないエリアに置かれました: {$a}';
-$string['followingarewrongandhighlighted'] = '次のマーカは正しくない場所に置かれています : {$a}。ハイライトされたマーカは正しい場所で表示されています。<br />許可された場所をハイライトするにはマーカをクリックしてください。';
+$string['followingarewrong'] = 'マーカが正しくないエリアに置かれました: {$a}';
+$string['followingarewrongandhighlighted'] = '正しくない場所に置かれたマーカ : {$a}。ハイライトされたマーカは正しい場所で表示されています。<br />許可された場所をハイライトするにはマーカをクリックしてください。';
 $string['formerror_dragrequired'] = 'あなたはこの問題に少なくとも1つのマーカを追加する必要があります。';
 $string['formerror_droprequired'] = 'あなたはこの問題に少なくとも1つのドロップゾーンを定義する必要があります。';
 $string['formerror_nobgimage'] = 'あなたはドラッグ＆ドロップエリアの背景として使用するイメージを選択する必要があります。';

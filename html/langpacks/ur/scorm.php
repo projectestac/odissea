@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ur', version '4.1'.
+ * Strings for component 'scorm', language 'ur', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -116,8 +116,6 @@ $string['details'] = 'ٹریک کی تفصیلات';
 $string['directories'] = 'ڈائریکٹری کے لنکس دکھائیں';
 $string['disabled'] = 'غیر فعال کریں';
 $string['display'] = 'ڈسپلے پیکیج';
-$string['displayactivityname'] = 'سرگرمی کا نام دکھائیں';
-$string['displayactivityname_help'] = 'SCORM پلیئر کے اوپر سرگرمی کا نام ظاہر کرنا ہے یا نہیں۔';
 $string['displayattemptstatus'] = 'کوشش کی حالت دکھائیں';
 $string['displayattemptstatus_help'] = 'یہ ترجیح صارفین کی کوششوں کا خلاصہ ڈیش بورڈ اور/یا SCORM اندراج کے صفحہ میں کورس کے جائزہ بلاک میں دکھانے کی اجازت دیتی ہے۔';
 $string['displayattemptstatusdesc'] = 'آیا صارف کی کوششوں کا خلاصہ ڈیش بورڈ اور/یا SCORM اندراج کے صفحہ میں کورس کے جائزہ بلاک میں دکھایا گیا ہے۔';
@@ -203,7 +201,6 @@ $string['indicator:socialbreadth_help'] = 'یہ اشارے SCORM سرگرمی م
 $string['indicator:socialbreadthdef'] = 'SCORM سماجی';
 $string['indicator:socialbreadthdef_help'] = 'شرکت کنندہ اس تجزیہ کے وقفہ کے دوران SCORM سرگرمیوں کے ذریعہ پیش کردہ سماجی مشغولیت کے اس فیصد تک پہنچ گیا ہے (سطح = کوئی شرکت نہیں، تنہا شریک)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'معلومات';
 $string['interactions'] = 'روابط';
 $string['invalidactivity'] = 'SCORM سرگرمی غلط ہے';
 $string['invalidhacpsession'] = 'غلط HACP سیشن';
@@ -306,7 +303,6 @@ $string['privacy:metadata:attempt'] = 'کوشش نمبر';
 $string['privacy:metadata:scoes_track:element'] = 'اس عنصر کا نام جسے ٹریک کرنا ہے';
 $string['privacy:metadata:scoes_track:value'] = 'دیئے گئے عنصر کی قدر';
 $string['privacy:metadata:scorm_aicc_session'] = 'AICC HACP کے سیشن کی معلومات';
-$string['privacy:metadata:scorm_scoes_track'] = 'سرگرمی سے تعلق رکھنے والے SCOs کا ٹریک کردہ ڈیٹا';
 $string['privacy:metadata:timemodified'] = 'وہ وقت جب ٹریک کردہ عنصر میں آخری بار ترمیم کی گئی تھی';
 $string['privacy:metadata:userid'] = 'اس صارف کی ID جس نے SCORM سرگرمی تک رسائی حاصل کی';
 $string['protectpackagedownloads'] = 'پیکج ڈاؤن لوڈ کی حفاظت کریں';

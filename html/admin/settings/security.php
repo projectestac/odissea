@@ -27,8 +27,8 @@ use core_admin\local\settings\filesize;
 
 if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -41,8 +41,8 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
                                                 new lang_string('ipblockersyntax', 'admin'), ''));
     $ADMIN->add('security', $temp);
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
 
@@ -163,7 +163,8 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $sensiblesettingsdefault .= 'alternateserver_password@@search_solr, alternatessl_keypassword@@search_solr, ';
     $sensiblesettingsdefault .= 'test_password@@cachestore_redis, password@@mlbackend_python, ';
     $sensiblesettingsdefault .= 'badges_badgesalt@@none, calendar_exportsalt@@none, ';
-    $sensiblesettingsdefault .= 'bigbluebuttonbn_shared_secret@@none';
+    $sensiblesettingsdefault .= 'bigbluebuttonbn_shared_secret@@none, apikey@@tiny_premium, ';
+    $sensiblesettingsdefault .= 'matrixaccesstoken@@communication_matrix, api_secret@@factor_sms';
     $temp->add(new admin_setting_configtextarea('adminpresets/sensiblesettings',
             get_string('sensiblesettings', 'core_adminpresets'),
             get_string('sensiblesettingstext', 'core_adminpresets'),
@@ -171,8 +172,8 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
     $ADMIN->add('security', $temp);
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -180,12 +181,11 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $temp = new admin_settingpage('httpsecurity', new lang_string('httpsecurity', 'admin'));
 
     $temp->add(new admin_setting_configcheckbox('cookiesecure', new lang_string('cookiesecure', 'admin'), new lang_string('configcookiesecure', 'admin'), 1));
-    $temp->add(new admin_setting_configcheckbox('cookiehttponly', new lang_string('cookiehttponly', 'admin'), new lang_string('configcookiehttponly', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('allowframembedding', new lang_string('allowframembedding', 'admin'), new lang_string('allowframembedding_help', 'admin'), 0));
 
     // Settings elements used by the \core\files\curl_security_helper class.
     $blockedhostsdefault = [
-        '127.0.0.1',
+        '127.0.0.0/8',
         '192.168.0.0/16',
         '10.0.0.0/8',
         '172.16.0.0/12',
@@ -224,8 +224,8 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
     $ADMIN->add('security', $temp);
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
 

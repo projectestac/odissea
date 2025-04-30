@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', version '4.1'.
+ * Strings for component 'blog', language 'zh_cn', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = '关于{$a->modtype}：{$a->modname}的博客';
 $string['association'] = '关联';
 $string['associations'] = '关联';
 $string['associationunviewable'] = '在课程与其关联或更改“发布到”字段之前，其他人无法查看此条目';
+$string['author'] = '作者';
 $string['autotags'] = '添加这些标签';
 $string['autotags_help'] = '在此输入一个或多个本地标签（用半角逗号分隔）。所有从您的外部博客拷贝到本地博客的文章都会被自动加上这些标签。';
 $string['backupblogshelp'] = '如果启用，所有博客将被包含在网站自动备份中';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = '关于此{$a->type}的博客';
 $string['blogaboutthiscourse'] = '发篇关于此课程的博客';
 $string['blogaboutthismodule'] = '写篇关于此{$a}的博客';
 $string['blogadministration'] = '博客管理';
+$string['blogattachment'] = '博客附件';
 $string['blogdeleteconfirm'] = '删除这篇博客\'{$a}\'吗？';
 $string['blogdisable'] = '博客被禁用！';
 $string['blogentries'] = '博客条目';
@@ -57,6 +59,7 @@ $string['blogs'] = '博客';
 $string['blogscourse'] = '课程博客';
 $string['blogssite'] = '站点博客';
 $string['blogtags'] = '博客标签';
+$string['cannoteditentryorblog'] = '您无法编辑此条目或博客';
 $string['cannotviewcourseblog'] = '您没有查看此课程博客的权限';
 $string['cannotviewcourseorgroupblog'] = '您没有查看此课程/小组的博客的权限';
 $string['cannotviewsiteblog'] = '您没有查看所有网站博客的权限';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = '文章描述';
 $string['entryerrornotyours'] = '这不是您的博客文章';
 $string['entrysaved'] = '您的文章已经被保存';
 $string['entrytitle'] = '文章标题';
+$string['entrytitlewithlink'] = '带有链接的标题';
 $string['eventblogassociationadded'] = '博客关联已创建';
 $string['eventblogassociationdeleted'] = '博客关联已删除';
 $string['eventblogentriesviewed'] = '博客条目查看';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = '不正确的博客过滤类型';
 $string['intro'] = 'RSS 种子会自动通过一个或多个博客产生。';
 $string['invalidgroupid'] = '无效的组ID';
 $string['invalidurl'] = 'URL无法访问';
-$string['linktooriginalentry'] = '链接到原始的博客条目';
+$string['linktooriginalentry'] = '原始博客条目';
 $string['maxexternalblogsperuser'] = '每用户最多可有几个外部博客';
 $string['myprofileuserblogs'] = '查看所有博客条目';
 $string['name'] = '博客名';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = '添加博客条目的用户 ID';
 $string['privacy:metadata:post:usermodified'] = '最后修改条目的用户';
 $string['privacy:path:blogassociations'] = '相关博文';
 $string['privacy:unknown'] = '未知';
+$string['published'] = '已发布';
 $string['publishto'] = '发布给';
 $string['publishto_help'] = '有三个选择：
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = '有三个选择：
 $string['publishtocourse'] = '用户和你分享一个课程';
 $string['publishtocourseassoc'] = '相关课程成员';
 $string['publishtocourseassocparam'] = '{$a}的成员';
+$string['publishtodraft'] = '草稿';
 $string['publishtogroup'] = '用户与你分享一个小组';
 $string['publishtogroupassoc'] = '你在相关课程里的小组成员';
 $string['publishtogroupassocparam'] = '在{$a}的组员';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = '查看所有文章';
 $string['viewuserentries'] = '查看所有{$a}发表的博客';
 $string['worldblogs'] = '任何用户都可以浏览完全开放的博客';
 $string['wrongexternalid'] = '错误的外部博客 ID';
-$string['wrongpostid'] = '错误的博客文章id';

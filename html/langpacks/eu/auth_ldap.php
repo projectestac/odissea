@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'eu', version '4.1'.
+ * Strings for component 'auth_ldap', language 'eu', version '4.4'.
  *
  * @package     auth_ldap
  * @category    string
@@ -80,7 +80,7 @@ $string['auth_ldap_search_sub'] = 'Bilatu erabiltzaileak azpitestuinguruetan.';
 $string['auth_ldap_search_sub_key'] = 'Bilatu azpitestuinguruetan';
 $string['auth_ldap_server_settings'] = 'LDAP zerbitzariaren ezarpenak';
 $string['auth_ldap_suspended_attribute'] = 'Hautazkoa: Atributu hau zehazten bada lokalki sortutako erabiltzaile-kontuak gaitzeko edo eteteko erabiliko da.';
-$string['auth_ldap_suspended_attribute_key'] = 'Etenda atributua';
+$string['auth_ldap_suspended_attribute_key'] = 'Etendako atributua';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create()-k ez du onartzen aukeratutako erabiltzaile mota: {$a}';
 $string['auth_ldap_update_userinfo'] = 'Eguneratu erabiltzaile informazioa (izena, abizena, helbidea..) LDAP-tik Moodlera. Zehaztu "Datuen lotura" ezarpenak behar duzun moduan.';
 $string['auth_ldap_user_attribute'] = 'Hautazkoa: Erabiltzaileak izendatzeko edo bilatzeko atributua baliogabetzen du. \'cn\' izan ohi da.';
@@ -153,6 +153,8 @@ $string['renamingnotallowed'] = 'Erabiltzaileen berrizendatzea ez da onartzen LD
 $string['rootdseerror'] = 'Errore Active Directory-ko rootDSE-a kontsultatzean';
 $string['start_tls'] = 'Erabili LDAPeko zerbitzu normala (389 ataka) TLS zifraketarekin';
 $string['start_tls_key'] = 'Erabili TLS';
+$string['sync_updateuserchunk'] = 'Zehaztu hemen transakzio bakoitzean igo beharreko erabiltzaile kopurua. 0 jarriz gero erabiltzaile guztiak transakzio bakarrean igoko dira.';
+$string['sync_updateuserchunk_key'] = 'Erabiltzaileen sinkronizazio eguneratzearen zatien tamaina';
 $string['syncroles'] = 'Sinkronizatu sistemako rolak LDAP bidez';
 $string['synctask'] = 'LDAP erabiltzaileen sinkronizazio-lana';
 $string['systemrolemapping'] = 'Sistemako rolen parekatzea';

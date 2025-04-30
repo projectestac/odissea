@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ar', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ar', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -133,7 +133,6 @@ $string['placement_help'] = 'يمكن وضع خطوة أعلى، أسفل، يس
 
 إذا لم تكن الخطوة متلائمة مع صفحة معينة في المكان المحدد، فسيتم وضعها تلقائياً في موضع آخر.';
 $string['pluginname'] = 'جولات المستخدمين';
-$string['previousstep'] = 'السابق';
 $string['privacy:metadata:preference:completed'] = 'الوقت الذي أكمل فيه المستخدم آخر جولة';
 $string['privacy:metadata:preference:requested'] = 'الوقت الذي طلب فيه المستخدم آخر جولة للمستخدم يدوياً';
 $string['privacy:request:preference:completed'] = 'لقد قمت مؤخرًا بتحديد جولة المستخدم "{$a->name}" على أنها مكتملة في {$a->time}';
@@ -148,6 +147,9 @@ $string['selector_defaulttitle'] = 'أدخل عنوانًا وصفيًا';
 $string['selectordisplayname'] = 'محدد CSS يطابق \'{$a}\\';
 $string['selecttype'] = 'إختر نوع الخطوة';
 $string['sharedtourslink'] = 'مستودع الجولات';
+$string['showtoureachtime'] = 'في كل مرة تتطابق مع المرشح';
+$string['showtouruntilcomplete'] = 'حتى إغلاقه';
+$string['showtourwhen'] = 'إظهار الجولة';
 $string['skip'] = 'تخطى';
 $string['skip_tour'] = 'تخطي الجولة';
 $string['target'] = 'الهدف';
@@ -248,6 +250,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'إعدادات المسا
 $string['tour_activityinfo_course_teacher_title'] = 'جدبد: معلومات النشاط';
 $string['tour_final_step_content'] = 'هذه هي نهاية جولة المستخدم الخاصة بك. لن تظهر مرة أخرى إلا إذا قمت بإعادة تعيينها باستخدام الرابط في تذييل الصفحة.';
 $string['tour_final_step_title'] = 'نهاية الجولة';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>رتب الأعمدة واختر ما تريد عرضه منها. في وضع التحرير، استعمل هذا الاختصار للوصول إلى المهام الدارجة ذات الصلة بمعاينة وتحرير عناصر التقييم.';
+$string['tour_gradebook_action_title'] = 'الروابط السريعة إلى الإجراءات';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>ترشيح الطلاب حسب الحروف الأولى لأسمائهم الأولى أو الأخيرة.';
+$string['tour_gradebook_filter_title'] = 'الترشيح حسب الاسم';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>استعمل مربع البحث للعثور سريعًا على طلبة معينين.';
+$string['tour_gradebook_search_title'] = 'العثور على الطلبة بسهولة';
+$string['tour_gradebook_tour_description'] = 'ميزات البحث والتنقل في تقرير سجل التقديرات للمقيم';
+$string['tour_gradebook_tour_name'] = 'تقرير سجل التقديرات للمقيم';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>نشر الأخبار الهامة هنا.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'ألديك شيء ما تخبر به الجميع؟';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>إضافة المحتوى الجديد أو تعديل المحتوى الموجود.';

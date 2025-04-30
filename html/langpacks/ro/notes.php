@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ro', version '4.1'.
+ * Strings for component 'notes', language 'ro', version '4.4'.
  *
  * @package     notes
  * @category    string

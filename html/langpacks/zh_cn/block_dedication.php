@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'zh_cn', version '4.1'.
+ * Strings for component 'block_dedication', language 'zh_cn', version '4.4'.
  *
  * @package     block_dedication
  * @category    string
@@ -71,7 +71,7 @@ $string['privacy:metadata'] = 'block_dedication插件存储用户专用于课程
 $string['privacy:metadata:block_dedication:courseid'] = '时间花费的课程ID';
 $string['privacy:metadata:block_dedication:timespent'] = '在课程上花费的时间';
 $string['privacy:metadata:block_dedication:timestart'] = '收集数据的开始时间';
-$string['privacy:metadata:block_dedication:userid'] = '时间花花费的用户ID';
+$string['privacy:metadata:block_dedication:userid'] = '时间花费的用户ID';
 $string['report_dedication'] = '工具时间花费报告';
 $string['report_timespent'] = '时间花费报告';
 $string['session_limit'] = '会话限制';
@@ -81,7 +81,7 @@ $string['sessiondurationsum'] = '会话持续时间（总和）';
 $string['sessionstart'] = '会话启动';
 $string['showestimatedtime'] = '向用户显示估计花费的时间';
 $string['showestimatedtime_help'] = '此设置允许用户查看他们在块中花费的估计时间。';
-$string['timespent_estimation'] = '您预计在课程中花费的时间是：';
+$string['timespent_estimation'] = '估计您在课程中花费的时间是：';
 $string['timespentincourse'] = '课程花费的时间';
 $string['timespentreport'] = '完整报告';
 $string['timespenttasknotrunning'] = '花费的时间计算任务尚未运行。';

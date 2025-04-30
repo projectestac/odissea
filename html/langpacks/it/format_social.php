@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'it', version '4.1'.
+ * Strings for component 'format_social', language 'it', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Numero di discussioni';
 $string['numberdiscussions_help'] = 'Il numero di discussioni da visualizzare.';
+$string['plugin_description'] = 'Il corso è incentrato su un forum principale nella pagina del corso. È possibile aggiungere ulteriori attività e risorse utilizzando il blocco Attività sociali.';
 $string['pluginname'] = 'Relazionale';
 $string['privacy:metadata'] = 'Il plugin formato di corso "Relazionale" non memorizza dati personali.';
 $string['sectionname'] = 'sezione';

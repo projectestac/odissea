@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'eu', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'eu', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'Ez da murrizketarik zehaztu';
 $string['helplinktext'] = 'GrabatuRTC';
 $string['insecurealert'] = 'Baliteke zure nabigatzaileak plugin hau ez onartzea HTTPS bidez edo localhost batetik erabiltzen ez bada.';
 $string['insecurealert_title'] = 'Konexioa ez da segurua!';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'Igoerentzako gehieneko tamainaren mugara iritsi zara.';
 $string['maxfilesizehit_title'] = 'Grabazioa gelditu da';
 $string['norecordingfound'] = 'Zerbaitek huts egin du. Ez da ezer grabatu.';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'Zure nabigatzaileak oraindik ez du WebRTC teknologia onar
 $string['nowebrtc_title'] = 'Ez da WebRTC onartzen';
 $string['onlyaudio'] = 'Audioa baino ez';
 $string['onlyvideo'] = 'Bideoa baino ez';
-$string['pluginname'] = 'Tiny GrabatuRTC';
+$string['pluginname'] = 'GrabatuRTC';
 $string['privacy:metadata'] = 'GrabatuRTC pluginak ez du datu pertsonalik biltzen.';
 $string['recordagain'] = 'Grabatu berriz';
 $string['recordagain_desc'] = 'Dagoeneko edukiren bat grabatu duzu. Berriz grabatzean eduki hori ezabatuko da. Ziur zaude grabazioa berrabiarazi nahi duzula?';

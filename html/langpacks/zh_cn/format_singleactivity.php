@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'zh_cn', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'zh_cn', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,6 +32,7 @@ $string['defactivitytypedesc'] = '指定一个活动类型，它将会在建立�
 $string['erroractivitytype'] = '在课程设置中没有设置活动类型';
 $string['orphaned'] = '没有相关的';
 $string['orphanedwarning'] = '这些活动是用户无法选用的';
-$string['pluginname'] = '单一活动格式';
+$string['plugin_description'] = '课程只包含一个活动或资源。';
+$string['pluginname'] = '单一活动';
 $string['privacy:metadata'] = '单一活动格式插件不存储任何个人数据。';
 $string['warningchangeformat'] = '将现有课程格式更改为“单一活动”时，请确保您已从课程中删除所有额外活动，包括“新闻通告”。请注意，可以修改课程的部分章节结构。';

@@ -24,8 +24,7 @@ namespace quizaccess_seb;
  * @copyright 2020 Catalyst IT
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class template_test extends \advanced_testcase {
-
+final class template_test extends \advanced_testcase {
     /**
      * Called before every test.
      */
@@ -38,7 +37,7 @@ class template_test extends \advanced_testcase {
     /**
      * Test that template saved with valid content.
      */
-    public function test_template_is_saved() {
+    public function test_template_is_saved(): void {
         global $DB;
         $data = new \stdClass();
         $data->name = 'Test name';
@@ -69,7 +68,7 @@ class template_test extends \advanced_testcase {
     /**
      * Test that template is not saved with invalid content.
      */
-    public function test_template_is_not_saved_with_invalid_content() {
+    public function test_template_is_not_saved_with_invalid_content(): void {
         $this->expectException(\core\invalid_persistent_exception::class);
         $this->expectExceptionMessage('Invalid SEB config template');
 
@@ -85,7 +84,7 @@ class template_test extends \advanced_testcase {
     /**
      * Test that a template cannot be deleted when assigned to a quiz.
      */
-    public function test_cannot_delete_template_when_assigned_to_quiz() {
+    public function test_cannot_delete_template_when_assigned_to_quiz(): void {
         global $DB;
 
         $data = new \stdClass();
@@ -108,7 +107,7 @@ class template_test extends \advanced_testcase {
         $template->save();
         $this->assertTrue($template->can_delete());
 
-        $DB->insert_record(quiz_settings::TABLE, (object) [
+        $DB->insert_record(seb_quiz_settings::TABLE, (object) [
             'quizid' => 1,
             'cmid' => 1,
             'templateid' => $template->get('id'),

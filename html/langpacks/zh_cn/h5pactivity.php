@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'zh_cn', version '4.1'.
+ * Strings for component 'h5pactivity', language 'zh_cn', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -30,6 +30,7 @@ $string['answer_checked'] = '已检查答案';
 $string['answer_correct'] = '您的回答正确';
 $string['answer_fail'] = '错误答案';
 $string['answer_incorrect'] = '您的回答错误';
+$string['answer_noanswer'] = '无';
 $string['answer_pass'] = '正确答案';
 $string['answer_text'] = '答案文本';
 $string['answer_unchecked'] = '未经检查的回答';
@@ -51,6 +52,7 @@ $string['attempt_success_unknown'] = '没有报告';
 $string['attempts'] = '尝试';
 $string['attempts_none'] = '此用户没有尝试显示。';
 $string['attempts_report'] = '尝试报告';
+$string['attempts_report_header_label'] = '尝试次数 ({$a})';
 $string['choice'] = '选择';
 $string['completion'] = '完成';
 $string['contentbank'] = '关于内容库的更多信息';
@@ -62,6 +64,8 @@ $string['displayembed'] = '嵌入按钮';
 $string['displayexport'] = '允许下载';
 $string['dnduploadh5pactivity'] = '添加H5P活动';
 $string['duration'] = '持续时间';
+$string['enablesavestate'] = '保存状态';
+$string['enablesavestate_help'] = '自动保存用户的当前状态。用户可以稍后返回并继续他们离开的地方。';
 $string['enabletracking'] = '启用尝试跟踪';
 $string['false'] = '错误的';
 $string['grade_average_attempt'] = '平均等级';
@@ -77,6 +81,7 @@ $string['grade_h5p'] = '分数：{$a}';
 $string['grade_highest_attempt'] = '最高等级';
 $string['grade_last_attempt'] = '最后一次尝试';
 $string['grade_manual'] = '不要计算分数';
+$string['gradenoun_h5p'] = '分数：{$a}';
 $string['h5pactivity:addinstance'] = '添加新的H5P';
 $string['h5pactivity:reviewattempts'] = '审查H5P尝试';
 $string['h5pactivity:submit'] = '提交H5P尝试';
@@ -104,7 +109,7 @@ $string['package_help'] = '打包文件是包含h5p交互内容的h5p文件。';
 $string['page-mod-h5pactivity-x'] = '任何H5P模块页面';
 $string['pluginadministration'] = 'H5P管理';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = '此内容以预览模式显示。 不会存储任何尝试跟踪。';
+$string['previewmode'] = '您处于预览模式';
 $string['privacy:metadata:attempt'] = '尝试号码';
 $string['privacy:metadata:rawscore'] = '得分';
 $string['privacy:metadata:timecreated'] = '创建跟踪元素的时间';
@@ -112,6 +117,7 @@ $string['privacy:metadata:timemodified'] = '上次跟踪元素的时间';
 $string['privacy:metadata:userid'] = '访问H5P活动的用户的ID';
 $string['privacy:metadata:xapi_track'] = '尝试跟踪信息';
 $string['privacy:metadata:xapi_track_results'] = '尝试结果跟踪信息';
+$string['privacy:metadata:xapisummary'] = 'H5P活动包含与用户存储的xAPI内容状态相关的信息。';
 $string['report_viewed'] = '查看报告';
 $string['result_compound'] = '综合部分得分';
 $string['result_fill-in'] = '填写文字';
@@ -121,12 +127,13 @@ $string['result_other'] = '未知的交互类型';
 $string['result_sequencing_answer'] = '位置值';
 $string['result_sequencing_choice'] = '位置';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = '查看所有尝试 ({$a} 已提交)';
 $string['review_mode'] = '回顾尝试';
 $string['review_my_attempts'] = '查看我的尝试';
 $string['review_none'] = '参与者不能回顾自己的尝试';
 $string['review_on_completion'] = '参与者可以回顾自己的尝试';
-$string['review_user_attempts'] = '查看用户尝试次数（{$a}）';
+$string['review_user_attempts'] = '查看（{$a}）';
+$string['savestatefreq'] = '保存状态频率';
+$string['savestatefreq_help'] = '保存用户当前状态的频率（以秒为单位）。';
 $string['score'] = '得分';
 $string['score_out_of'] = '{$a->rawscore} / {$a->maxscore}';
 $string['search:activity'] = 'H5P - 活动信息';
@@ -134,7 +141,10 @@ $string['startdate'] = '开始日期';
 $string['statement_received'] = '查看用户尝试次数（{$a}）';
 $string['totalscore'] = '总分';
 $string['tracking_messages'] = '一些H5P为高级报告提供尝试跟踪数据，如尝试次数、响应和等级。注：某些H5P不提供尝试跟踪数据。在这种情况下，以下设置将无效。';
+$string['trackingdisabled'] = '此活动未启用尝试跟踪。';
+$string['trackingdisabled_enable'] = '此活动未启用尝试跟踪。您可以在<a href="{$a}">设置</a>中启用它。';
 $string['true'] = '正确的';
 $string['usecontentbank'] = '使用 <a href="{$a}" target="_blank">内容库 (在新窗口打开)</a> 来管理您的H5P文件';
 $string['view'] = '查看';
 $string['view_report'] = '查看报告';
+$string['viewattempts'] = '查看尝试数 ({$a})';

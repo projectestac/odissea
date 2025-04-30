@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'es', version '4.1'.
+ * Strings for component 'availability_role', language 'es', version '4.4'.
  *
  * @package     availability_role
  * @category    string
@@ -35,6 +35,6 @@ $string['requires_role'] = 'Eres un <em>{$a}</em>';
 $string['setting_supportedrolesheading'] = 'Roles soportados';
 $string['setting_supportguestrole'] = 'Rol de invitado';
 $string['setting_supportguestrole_desc'] = 'Si se activa, la disponibilidad de actividades puede ser restringida a, o prohibida, para usuarios que estén viendo un curso como invitado.';
-$string['setting_supportnotloggedinrole'] = 'Rol no-ingresado al sitio';
-$string['setting_supportnotloggedinrole_desc'] = 'Si se activa, la disponibilidad de actividades puede ser restringida a, o prohibida, para usuarios que no hayan ingresado al sitio.';
+$string['setting_supportnotloggedinrole'] = 'Rol no autenticado al sitio';
+$string['setting_supportnotloggedinrole_desc'] = 'Si se activa, la disponibilidad de actividades puede ser restringida a, o prohibida, para usuarios que se hayan autenticado en el sitio.';
 $string['title'] = 'Rol';

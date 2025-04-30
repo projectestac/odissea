@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', version '4.1'.
+ * Strings for component 'glossary', language 'fr', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -75,7 +75,7 @@ $string['cnfapprovalstatus'] = 'Définit le statut d’approbation d’un articl
 $string['cnfcasesensitive'] = 'Définit si un article doit par défaut correspondre exactement au texte cible (casse des caractères), quand il est lié';
 $string['cnfdefaulthook'] = 'Définit la sélection à afficher par défaut lors du premier affichage du glossaire';
 $string['cnfdefaultmode'] = 'Définit le cadre à afficher par défaut lors du premier affichage du glossaire';
-$string['cnffullmatch'] = 'Définit si un article doit par défaut correspondre mot pour mot au texte cible, quand il est lié';
+$string['cnffullmatch'] = 'Définit si un article, quand il est lié, doit par défaut correspondre mot pour mot au texte cible (et non à l’intérieur d’un mot).';
 $string['cnflinkentry'] = 'Définit si un article est par défaut automatiquement lié';
 $string['cnflinkglossaries'] = 'Définit si un glossaire doit par défaut être lié';
 $string['cnfrelatedview'] = 'Définit le format d’affichage utilisé pour les fenêtres surgissantes lors du clic sur les liens automatiques et l’affichage des articles';
@@ -90,7 +90,7 @@ $string['comments'] = 'Commentaires';
 $string['commentson'] = 'Commentaires activés';
 $string['commentupdated'] = 'Le commentaire a été modifié.';
 $string['completiondetail:entries'] = 'Ajouter des concepts : {$a}';
-$string['completionentries'] = 'L’étudiant doit créer des articles :';
+$string['completionentries'] = 'Créer des articles';
 $string['completionentriesdesc'] = 'L’étudiant doit créer au moins {$a} article(s)';
 $string['completionentriesgroup'] = 'Requiert des articles';
 $string['concept'] = 'Concept';
@@ -279,6 +279,7 @@ $string['page-mod-glossary-edit'] = 'Page d’ajout et de modification d’artic
 $string['page-mod-glossary-view'] = 'Page d’affichage d’article de glossaire';
 $string['page-mod-glossary-x'] = 'Toute page du module glossaire';
 $string['pendingapproval'] = 'En attente d’approbation';
+$string['pendingapprovalcount'] = 'En attente d’approbation';
 $string['pluginadministration'] = 'Administration du glossaire';
 $string['pluginname'] = 'Glossaire';
 $string['popupformat'] = 'Format des fenêtres surgissantes';
@@ -344,7 +345,6 @@ $string['totalentries'] = 'Nombre total d’articles';
 $string['usedynalink'] = 'Activer les liens automatiques';
 $string['usedynalink_help'] = 'Si la liaison automatique des glossaires a été activée par un administrateur au niveau de la plateforme et que cette option est activée, il est possible d’activer la liaison automatique d’un article, lorsque son intitulé apparaît dans le reste du cours.';
 $string['visibletabs'] = 'Onglets visibles';
-$string['waitingapproval'] = 'En attente d’approbation';
 $string['warningstudentcapost'] = '(n’est valable que si le glossaire n’est pas principal)';
 $string['withauthor'] = 'Concepts avec auteur';
 $string['withoutauthor'] = 'Concepts sans auteur';

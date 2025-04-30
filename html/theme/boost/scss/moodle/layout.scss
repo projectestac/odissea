@@ -25,8 +25,8 @@
             top: 40%;
             position: fixed;
             .icon {
-                width: 1em;
-                height: 1em;
+                max-width: 4em;
+                max-height: 4em;
                 font-size: 4em;
             }
         }
@@ -175,14 +175,17 @@
             visibility: hidden;
         }
     }
+    .hasstickyfooter:has(.drawer-right-toggle) .maintenancewarning {
+        right: 2rem;
+    }
+    .hasstickyfooter:has(.drawer-left-toggle) .maintenancewarning {
+        margin-left: 3.5rem;
+    }
 }
 
 @include media-breakpoint-up(sm) {
     #page.drawers .main-inner {
         margin-top: 1.5rem;
-    }
-    #page.drawers .drawer-right-toggle {
-        margin-right: 0.7rem;
     }
 }
 
@@ -212,15 +215,14 @@
         .drawer-left,
         .drawer-right {
             top: $navbar-height;
-            height: calc(100vh - #{$navbar-height} - #{$navbar-height});
+            height: calc(100vh - #{$navbar-height} - #{$stickyfooter-height});
         }
     }
 
     #page.drawers {
         position: relative;
-        overflow-y: auto;
+        overflow-y: visible;
         @include transition(0.2s);
-        height: calc(100vh - #{$navbar-height});
         left: 0;
         right: 0;
         &.show-drawer-left {
@@ -232,8 +234,13 @@
             margin-left: 0;
             margin-right: $drawer-right-width;
             padding-right: 1rem;
-            .jsenabled & .btn-footer-popover {
+            .jsenabled & .popover-process-monitor,
+            .jsenabled & .btn-footer-popover,
+            .jsenabled & .btn-footer-communication {
                 right: calc(#{$drawer-right-width} + 2rem);
+            }
+            .jsenabled:has(&) .maintenancewarning {
+                right: calc(#{$drawer-right-width} + 5rem);
             }
         }
         &.show-drawer-left.show-drawer-right {
@@ -241,7 +248,7 @@
             margin-right: $drawer-right-width;
         }
         &.hasstickyfooter {
-            height: calc(100vh - #{$navbar-height} - #{$navbar-height});
+            margin-bottom: $stickyfooter-height;
         }
     }
 }

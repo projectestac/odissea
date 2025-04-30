@@ -27,7 +27,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot . '/mod/jclic/locallib.php');
+require_once $CFG->dirroot . '/mod/jclic/locallib.php';
 
 /**
  * JClic conversion handler
@@ -46,26 +46,27 @@ class moodle1_mod_jclic_handler extends moodle1_mod_handler {
      * actually exist in the file. The last element with the module name was
      * appended by the moodle1_converter class.
      *
+     * @throws convert_path_exception
      * @return array of {@link convert_path} instances
      */
     public function get_paths() {
-        return array(
+        return [
             new convert_path(
                 'jclic', '/MOODLE_BACKUP/COURSE/MODULES/MOD/JCLIC',
-                array(
-                    'renamefields' => array(
+                [
+                    'renamefields' => [
                         'description' => 'intro',
                         'format' => 'introformat',
-                    ),
-                    'newfields' => array(
+                    ],
+                    'newfields' => [
                         'introformat' => 0,
                         'grade' => 0,
                         'timeavailable' => 0,
                         'timedue' => 0,
-                    ),
-                )
+                    ],
+                ]
             ),
-        );
+        ];
     }
 
     /**
@@ -74,28 +75,28 @@ class moodle1_mod_jclic_handler extends moodle1_mod_handler {
      */
     public function process_jclic($data) {
         // get the course module id and context id
-        $instanceid     = $data['id'];
-        $cminfo         = $this->get_cminfo($instanceid);
+        $instanceid = $data['id'];
+        $cminfo = $this->get_cminfo($instanceid);
         $this->moduleid = $cminfo['id'];
-        $contextid      = $this->converter->get_contextid(CONTEXT_MODULE, $this->moduleid);
+        $contextid = $this->converter->get_contextid(CONTEXT_MODULE, $this->moduleid);
 
         // get a fresh new file manager for this instance
         $this->fileman = $this->converter->get_file_manager($contextid, 'mod_jclic');
 
         // convert course files embedded into the intro
         $this->fileman->filearea = 'intro';
-        $this->fileman->itemid   = 0;
+        $this->fileman->itemid = 0;
         $data['intro'] = moodle1_converter::migrate_referenced_files($data['intro'], $this->fileman);
 
         // migrate jclic package file
         $this->fileman->filearea = 'content';
-        $this->fileman->itemid   = 0;
-        if (!jclic_is_valid_external_url($data['url']) ) {
+        $this->fileman->itemid = 0;
+        if (!jclic_is_valid_external_url($data['url'])) {
             // Migrate file
-            try{
-                $this->fileman->migrate_file('course_files/'.$data['url']);
-            } catch (Exception $e){
-                echo 'Caught exception: ',  $e->getMessage(), ' File: \'',$data['url'], '\' on JClic activity \''.$data['name'].'\' <br>';
+            try {
+                $this->fileman->migrate_file('course_files/' . $data['url']);
+            } catch (Exception $e) {
+                echo 'Caught exception: ', $e->getMessage(), ' File: \'', $data['url'], '\' on JClic activity \'' . $data['name'] . '\' <br>';
             }
         }
 
@@ -111,7 +112,7 @@ class moodle1_mod_jclic_handler extends moodle1_mod_handler {
         $this->xmlwriter->begin_tag('jclic', array('id' => $instanceid));
 
         foreach ($data as $field => $value) {
-            if ($field <> 'id') {
+            if ($field !== 'id') {
                 $this->xmlwriter->full_tag($field, $value);
             }
         }
@@ -133,7 +134,7 @@ class moodle1_mod_jclic_handler extends moodle1_mod_handler {
         $this->xmlwriter->begin_tag('inforef');
         $this->xmlwriter->begin_tag('fileref');
         foreach ($this->fileman->get_fileids() as $fileid) {
-            $this->write_xml('file', array('id' => $fileid));
+            $this->write_xml('file', ['id' => $fileid]);
         }
         $this->xmlwriter->end_tag('fileref');
         $this->xmlwriter->end_tag('inforef');

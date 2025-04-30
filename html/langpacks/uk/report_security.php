@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'uk', version '4.1'.
+ * Strings for component 'report_security', language 'uk', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -78,10 +78,6 @@ $string['check_guestrole_error'] = 'Виявлено некоректне виз
 $string['check_guestrole_name'] = 'Роль гостя';
 $string['check_guestrole_notset'] = 'Роль гостя не визначена.';
 $string['check_guestrole_ok'] = 'Роль гостя визначена.';
-$string['check_mediafilterswf_details'] = '<p>Автоматичне swf вкладення дуже небезпечне - будь-який зареєстрований користувач може запустити XSS напад проти інших користувачів сервера. Будь-ласка, відключіть його на робочих серверів.</p>';
-$string['check_mediafilterswf_error'] = 'Флеш медіа фільтр включено - це дуже небезпечно для більшості серверів.';
-$string['check_mediafilterswf_name'] = 'Включено медіа фільтр для .swf';
-$string['check_mediafilterswf_ok'] = 'Флеш медіа фільтр не включено.';
 $string['check_nodemodules_details'] = '<p>Каталог <code>{$a->path}</code> містить модулі Node.js та їх залежності, які зазвичай встановлюються за допомогою утиліти NPM. Ці модулі можуть знадобитися для локальної розробки Moodle, наприклад, для використання фреймворку grunt. Вони не потрібні для запуску сайту Moodle у виробництві, і вони можуть містити потенційно небезпечний код, який піддає ваш сайт віддаленим атакам.<p> </p>Настійно рекомендується видалити каталог, якщо сайт доступний через загальнодоступну URL-адресу, або принаймні заборонити доступ до веб-сайту у конфігурації веб-сервера.</p>';
 $string['check_nodemodules_info'] = 'Каталог node_modules не повинен бути присутнім на загальнодоступних сайтах.';
 $string['check_nodemodules_name'] = 'Каталог модулів Node.js';

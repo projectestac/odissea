@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'es', version '4.1'.
+ * Strings for component 'rating', language 'es', version '4.4'.
  *
  * @package     rating
  * @category    string
@@ -49,8 +49,8 @@ $string['norate'] = 'No se permite calificar ítems.';
 $string['noratings'] = 'No se han emitido valoraciones';
 $string['noviewanyrate'] = 'Sólo puede consultar los resultados de elementos realizados por usted';
 $string['noviewrate'] = 'No tiene permiso para ver las valoraciones de los ítems';
-$string['privacy:metadata:rating'] = 'La valoración ingresada por el usuario se almacena junto con una identificación del ítem que fue valorado.';
-$string['privacy:metadata:rating:rating'] = 'La valoración numérica que el usuario ingresó.';
+$string['privacy:metadata:rating'] = 'La valoración introducida por el usuario se almacena junto con una identificación del ítem que fue valorado.';
+$string['privacy:metadata:rating:rating'] = 'La valoración numérica que el usuario introdujo.';
 $string['privacy:metadata:rating:timecreated'] = 'La hora en la cual la primera valoración fue realizada.';
 $string['privacy:metadata:rating:timemodified'] = 'La última hora de actualización de la valoración.';
 $string['privacy:metadata:rating:userid'] = 'El usuario que hizo la valoración.';

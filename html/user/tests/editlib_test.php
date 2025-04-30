@@ -29,12 +29,12 @@ require_once($CFG->dirroot.'/user/editlib.php');
  * @copyright  2013 Adrian Greeve <adrian@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class editlib_test extends \advanced_testcase {
+final class editlib_test extends \advanced_testcase {
 
     /**
      * Test that the required fields are returned in the correct order.
      */
-    function test_useredit_get_required_name_fields() {
+    function test_useredit_get_required_name_fields(): void {
         global $CFG;
         // Back up config settings for restore later.
         $originalcfg = new \stdClass();
@@ -60,7 +60,7 @@ class editlib_test extends \advanced_testcase {
     /**
      * Test that the enabled fields are returned in the correct order.
      */
-    function test_useredit_get_enabled_name_fields() {
+    function test_useredit_get_enabled_name_fields(): void {
         global $CFG;
         // Back up config settings for restore later.
         $originalcfg = new \stdClass();
@@ -86,7 +86,7 @@ class editlib_test extends \advanced_testcase {
     /**
      * Test that the disabled fields are returned.
      */
-    function test_useredit_get_disabled_name_fields() {
+    function test_useredit_get_disabled_name_fields(): void {
         global $CFG;
         // Back up config settings for restore later.
         $originalcfg = new \stdClass();

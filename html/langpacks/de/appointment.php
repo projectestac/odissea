@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'de', version '4.1'.
+ * Strings for component 'appointment', language 'de', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -64,6 +64,7 @@ $string['cannotsignupsessioninprogress'] = 'Sie können sich nicht zu einer lauf
 $string['cannotsignupsessionover'] = 'Sie können sich nicht zu einer vergangenen Sitzung anmelden.';
 $string['capacity'] = 'Kapazität';
 $string['closed'] = 'Geschlossen';
+$string['completionattended'] = 'Termin buchen und daran teilnehmen';
 $string['completionbooked'] = 'Teilnehmer/in muss einen Termin buchen, um die Aktivität abzuschließen';
 $string['completiondetail:attended'] = 'An einem Termin teilnehmen';
 $string['completiondetail:booked'] = 'Termin buchen';
@@ -99,6 +100,7 @@ $string['eventdeletesession'] = 'Session gelöscht';
 $string['eventupdatesession'] = 'Session aktualisieren';
 $string['full'] = 'Das Datum ist komplett belegt.';
 $string['fullfilter'] = 'Voll';
+$string['fullybooked'] = 'Vollständig ausgebucht';
 $string['goback'] = 'Zurück';
 $string['joinwaitlist'] = 'In die Warteliste eintragen';
 $string['location'] = 'Ort';

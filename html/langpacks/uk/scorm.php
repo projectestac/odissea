@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'uk', version '4.1'.
+ * Strings for component 'scorm', language 'uk', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -117,8 +117,6 @@ $string['details'] = 'Деталі запису';
 $string['directories'] = 'Показати посилання каталогу';
 $string['disabled'] = 'Відключено';
 $string['display'] = 'Показувати пакет';
-$string['displayactivityname'] = 'Показувати назву діяльності';
-$string['displayactivityname_help'] = 'Показувати або ні назву діяльності над пакетом SCORM.';
 $string['displayattemptstatus'] = 'Показувати статус спроби';
 $string['displayattemptstatus_help'] = 'При включеному параметрі результат спроб користувача буде показано в блоці перегляду курсу на Інформаційній панелі та/або на сторінці  SCORM.';
 $string['displayattemptstatusdesc'] = 'Результат спроб користувача буде показано в блоці перегляду курсу на Інформаційній панелі та/або на сторінці  SCORM';
@@ -216,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'Цей показник базуєт�
 $string['indicator:socialbreadthdef'] = 'SCORM соц';
 $string['indicator:socialbreadthdef_help'] = 'Учасник досяг цього відсотка соціальної залученості, запропонованої заходами SCORM протягом цього інтервалу аналізу (Рівні = Без участі, лише учасник)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Інформація';
 $string['interactions'] = 'Взаємодія';
 $string['invalidactivity'] = 'Неправильна діяльність Scorm';
 $string['invalidhacpsession'] = 'Неправильна HACP сесія';
@@ -334,7 +331,6 @@ $string['privacy:metadata:attempt'] = 'Номер спроби';
 $string['privacy:metadata:scoes_track:element'] = 'Назва елемента, який слід відстежувати';
 $string['privacy:metadata:scoes_track:value'] = 'Значення заданого елемента';
 $string['privacy:metadata:scorm_aicc_session'] = 'Інформація про сесію AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'Відстежені дані SCO, що належать до діяльності';
 $string['privacy:metadata:timemodified'] = 'Час останньої зміни відстежуваного елемента';
 $string['privacy:metadata:userid'] = 'Ідентифікатор користувача, який отримав доступ до активності SCORM';
 $string['protectpackagedownloads'] = 'Захист завантаження пакету';

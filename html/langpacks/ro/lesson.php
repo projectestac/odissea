@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ro', version '4.1'.
+ * Strings for component 'lesson', language 'ro', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -150,7 +150,7 @@ $string['correctresponse'] = 'Răspuns corect';
 $string['createaquestionpage'] = 'Creați o pagină de întrebări';
 $string['credit'] = 'Credit';
 $string['customscoring'] = 'Punctare personalizată';
-$string['customscoring_help'] = 'Dacă opțiunea este activată, atunci fiecărui răspuns i se poate acorda o valoare numerică (pozitivă sau negativă) în scopuri de evaluare';
+$string['customscoring_help'] = 'Dacă opțiunea este activată, valoarea numărului întreg (pozitivă sau negativă) poate fi inserată pentru fiecare răspuns.';
 $string['deadline'] = 'Dată limită';
 $string['defaultessayresponse'] = 'Eseul dvs. va fi notat de profesorul dvs.';
 $string['deleteallattempts'] = 'Şterge toate încercările de parcurgere a lecţiei';
@@ -540,7 +540,7 @@ $string['savechangesandeol'] = 'Salvează toate modificările şi mergi la final
 $string['saveoverrideandstay'] = 'Salvați și introduceți o altă suprascriere';
 $string['savepage'] = 'Salvează pagina';
 $string['score'] = 'Notă';
-$string['score_help'] = 'Scorul este utilizat numai atunci când scorul personalizat este activat. Fiecare răspuns poate primi o valoare punctuală numerică (pozitivă sau negativă).';
+$string['score_help'] = 'Dacă scorul personalizat este activat în setările lecției, poate fi introdusă o valoare a numărului întreg (pozitiv sau negativ) pentru fiecare răspuns.';
 $string['scores'] = 'Note';
 $string['search:activity'] = 'Lecție - informații despre activitate';
 $string['secondpluswrong'] = 'Nu este corect. Vrei să mai încerci o dată?';

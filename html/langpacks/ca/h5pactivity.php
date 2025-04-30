@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ca', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ca', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -78,6 +78,7 @@ $string['grade_h5p'] = 'Qualificació: {$a}';
 $string['grade_highest_attempt'] = 'Qualificació més alta';
 $string['grade_last_attempt'] = 'Últim intent';
 $string['grade_manual'] = 'No calculis cap qualificació';
+$string['gradenoun_h5p'] = 'Qualificació: {$a}';
 $string['h5pactivity:addinstance'] = 'Afegiu contingut H5P nou';
 $string['h5pactivity:reviewattempts'] = 'Reviseu els intents d\'H5P';
 $string['h5pactivity:submit'] = 'Envieu els intents d\'H5P';
@@ -123,7 +124,6 @@ $string['result_other'] = 'Tipus d\'interacció desconeguda';
 $string['result_sequencing_answer'] = 'Valor de la posició';
 $string['result_sequencing_choice'] = 'Posicions';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Mostra tots els intents (intents enviats: {$a})';
 $string['review_mode'] = 'Revisa els intents';
 $string['review_my_attempts'] = 'Mostra els meus intents';
 $string['review_none'] = 'Els participants no poden revisar els seus propis intents.';

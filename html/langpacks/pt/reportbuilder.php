@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'pt', version '4.1'.
+ * Strings for component 'reportbuilder', language 'pt', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} mais {$a->morecount} a m
 $string['audiencenotsaved'] = 'Público-alvo não guardado';
 $string['audiencesaved'] = 'Público-alvo guardado';
 $string['audienceupdated'] = 'Público-alvo atualizado';
+$string['audienceusedbyschedule'] = 'Este público-alvo é usado num agendamento deste relatório';
 $string['cardview'] = 'Vista de cartões';
 $string['cardview_help'] = 'A vista de cartões permite definir a estrutura do seu relatório quando visualizado em dispositivos estreitos. As colunas serão recolhidas para abaixo do limite definido aqui, com um botão para expandir o cartão e visualizar todos os dados do relatório.';
 $string['cardviewfirstcolumntitle'] = 'Título da primeira coluna';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'ID da disciplina com hiperligação';
 $string['courseselect'] = 'Selecione a disciplina';
 $string['courseshortnamewithlink'] = 'Nome curto com hiperligação';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Relatório personalizado';
 $string['customreports'] = 'Relatórios personalizados';
 $string['customreportslimit'] = 'Limite de relatórios personalizados';
 $string['customreportslimit_desc'] = 'O número de relatórios personalizados pode ser limitado por motivos de desempenho. Se definido como zero, não existe limite.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Não foi possível encontrar uma fonte de relat
 $string['errorsourceunavailable'] = 'Origem do relatório não disponível';
 $string['filteradded'] = 'Adicionado o filtro \'{$a}\'';
 $string['filtercontains'] = 'Contém';
+$string['filterdateafter'] = 'Após';
+$string['filterdatebefore'] = 'Antes';
 $string['filterdatecurrent'] = 'Atual';
 $string['filterdatedays'] = 'dia(s)';
 $string['filterdatefrom'] = 'Desde';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Termina com';
 $string['filterequalorgreaterthan'] = 'Maior ou igual a';
 $string['filterequalorlessthan'] = 'Menor ou igual a';
 $string['filterfieldoperator'] = 'operador {$a}';
+$string['filterfieldto'] = '{$a} até';
+$string['filterfieldunit'] = 'unidade {$a}';
 $string['filterfieldvalue'] = 'valor {$a}';
 $string['filtergreaterthan'] = 'Maior que';
 $string['filterinvalid'] = 'Filtro inválido';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Ordenação';
 $string['sorting_help'] = 'Pode definir a ordem da disposição inicial das colunas no relatório, que pode ser alterada pelos utilizadores ao clicar nos nomes das colunas.';
 $string['switchedit'] = 'Mudar para o modo de edição';
 $string['switchpreview'] = 'Mudar para o modo de pré-visualização';
+$string['tagarea_reportbuilder_report'] = 'Relatórios personalizados';
 $string['tasksendschedule'] = 'Agendamento do envio de relatório';
 $string['tasksendschedules'] = 'Agendamentos do envio de relatório';
 $string['timeadded'] = 'Data/hora de adição';

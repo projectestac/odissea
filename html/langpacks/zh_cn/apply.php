@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'apply', language 'zh_cn', version '4.1'.
+ * Strings for component 'apply', language 'zh_cn', version '4.4'.
  *
  * @package     apply
  * @category    string
@@ -113,6 +113,8 @@ $string['dependvalue'] = '依赖值';
 $string['description'] = '描述';
 $string['display_button'] = '显示';
 $string['do_not_analyse_empty_submits'] = '不分析空提交';
+$string['downloadexcel'] = '以Excel下载';
+$string['downloadtext'] = '以 Text 下载';
 $string['dropdown'] = '下拉列表';
 $string['edit_entry'] = '编辑';
 $string['edit_entry_button'] = '编辑';
@@ -144,6 +146,7 @@ $string['execd_done'] = '完成';
 $string['execd_entry'] = '完成';
 $string['execd_notyet'] = '还没有';
 $string['exist'] = '存在';
+$string['export'] = '导出';
 $string['export_templates'] = '导出模板';
 $string['firstlastname'] = '名 姓';
 $string['fixedtitle'] = '固定标题';

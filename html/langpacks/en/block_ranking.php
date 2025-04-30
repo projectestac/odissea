@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_ranking', language 'en', version '4.1'.
+ * Strings for component 'block_ranking', language 'en', version '4.4'.
  *
  * @package     block_ranking
  * @category    string
@@ -50,6 +50,7 @@ $string['ranking_graphs'] = 'Ranking graphs';
 $string['rankingsize'] = 'Size of the ranking';
 $string['rankingsize_help'] = 'Number of students that will appear in ranking';
 $string['report_head'] = 'Ranking details: First {$a} students';
+$string['report_title'] = '{$a} : General students ranking';
 $string['resourcepoints'] = 'Points to resource';
 $string['see_full_ranking'] = 'See full ranking';
 $string['table_name'] = 'Fullname';

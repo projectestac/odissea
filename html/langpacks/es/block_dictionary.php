@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dictionary', language 'es', version '4.1'.
+ * Strings for component 'block_dictionary', language 'es', version '4.4'.
  *
  * @package     block_dictionary
  * @category    string
@@ -27,7 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activated'] = 'El siguiente diccionario está activado:';
 $string['add'] = 'Añadir un diccionario';
+$string['course_list:myaddinstance'] = 'Añadir un nuevo bloque de diccionario emergente a Mi hogar';
 $string['dictionary'] = 'Diccionario';
+$string['dictionary:addinstance'] = 'Añadir un nuevo bloque de diccionario emergente';
+$string['dictionaryinstructions'] = 'Escriba un URL para cada campo. Si la palabra buscada no está al final, Usted puede usar el parámetro extra  "#WORD#" para colocar esta palabra en el URL al momento de la solicitud.<br><i>Ejemplo: http://www.larousse.fr/#WORD#/other_params</i>';
 $string['dictionaryname'] = 'Nombre del diccionario';
 $string['dictionaryurl'] = 'URL del diccionario';
 $string['documentation'] = 'Guía del usuario';
@@ -36,6 +39,7 @@ $string['instructions'] = 'Para usar el diccionario, haga doble clic sobre una p
 $string['modify'] = 'Cambiar diccionario:';
 $string['nodictionary'] = 'Sin diccionario seleccionado';
 $string['pluginname'] = 'Diccionario emergente';
+$string['popup'] = 'Forzar a que se abra una ventana emergente en lugar de una pestaña nueva del navegador';
 $string['select'] = 'Seleccionar un diccionario';
 $string['selecteddictionary'] = 'Diccionario seleccionado:';
 $string['submit'] = 'Enviar';

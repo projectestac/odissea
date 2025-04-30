@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ko', version '4.1'.
+ * Strings for component 'chat', language 'ko', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -91,7 +91,6 @@ $string['modulename_help'] = '대화방 모률은 참석자들이 온라인 상�
 $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = '대화모음';
 $string['neverdeletemessages'] = '쪽지 삭제 금지';
-$string['nextsession'] = '다음번 예정된 대화';
 $string['no_complete_sessions_found'] = '완료된 대화 없음';
 $string['nochat'] = '대화방 없음';
 $string['noguests'] = '손님은 이용권한 없음';
@@ -124,7 +123,6 @@ $string['serverip'] = '서버 아이피';
 $string['servermax'] = '최대 참여자';
 $string['serverport'] = '서버 포트';
 $string['sessions'] = '대화 세션';
-$string['sessionstart'] = '대화방 세션이 {$a->date}에 시작됩니다, (지금으로부터 {$a->fromnow})';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = '종료된 대화 공개 여부';
 $string['studentseereports_help'] = '아니오로 설정해 놓으면, 사용자 중 mod/chat:readlog 능력을 지닌 사람들만 대화 기록을 볼 수 있게 된다.';

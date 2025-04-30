@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'nl', version '4.1'.
+ * Strings for component 'assignsubmission_file', language 'nl', version '4.4'.
  *
  * @package     assignsubmission_file
  * @category    string
@@ -34,7 +34,7 @@ $string['default_help'] = 'Indien ingeschakeld, zal deze instuurmethode als stan
 $string['defaultacceptedfiletypes'] = 'Standaard aanvaarde bestandstypes';
 $string['enabled'] = 'Ingestuurde bestanden.';
 $string['enabled_help'] = 'Indien ingeschakeld, kunnen leerlingen één of meer bestanden uploaden als opdracht';
-$string['eventassessableuploaded'] = 'Er is een bestand geüploaded.';
+$string['eventassessableuploaded'] = 'Er is een bestand geüpload.';
 $string['file'] = 'Ingestuurde bestanden';
 $string['maxbytes'] = 'Maximale bestandsgrootte';
 $string['maxfiles'] = 'Maximaal aantal bestanden per inzending';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ro', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'ro', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Restaurează din acest curs după încărcare';
 $string['coursetemplatename_help'] = 'Introduceți un nume scurt de curs existent pe care să îl utilizați ca șablon pentru crearea tuturor cursurilor.';
 $string['coursetorestorefromdoesnotexist'] = 'Cursul sursă din care se face restaurarea nu există';
 $string['courseupdated'] = 'Curs actualizat';
+$string['courseuploadnotallowed'] = 'Fără permisiune de a încărca cursuri în categorie: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Un curs cu această denumire prescurtată există dar nu aveți permisiunea de a utiliza funcționalitatea de încărcare a cursului pentru a-l actualiza.';
 $string['createall'] = 'Creați toate, incrementați numele scurt dacă este necesar';
 $string['createnew'] = 'Creați numai cursuri noi, omiteți cele existente';
 $string['createorupdate'] = 'Creați cursuri noi sau actualizați cursurile existente';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Encodarea fișierului CSV.';
 $string['errorcannotcreateorupdateenrolment'] = 'Nu se poate crea sau actualiza metoda de înscriere „{$a}”';
 $string['errorcannotdeleteenrolment'] = 'Nu se poate șterge metoda de înscriere „{$a}”';
 $string['errorcannotdisableenrolment'] = 'Nu se poate dezactiva metoda de înscriere „{$a}”';
+$string['errorunsupportedmethod'] = 'Metoda de înscriere \'{$a}\' nu este acceptată în csv upload';
 $string['errorwhiledeletingcourse'] = 'Eroare la ștergerea cursului';
 $string['errorwhilerestoringcourse'] = 'Eroare la restaurarea cursului';
 $string['generatedshortnamealreadyinuse'] = 'Numele scurte generate sunt deja utilizate';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Modul de actualizare nu permite actuali
 $string['updateonly'] = 'Actualizați doar cursurile existente';
 $string['updatewithdataonly'] = 'Actualizați numai cu date CSV';
 $string['updatewithdataordefaults'] = 'Actualizați cu date și valori implicite CSV';
+$string['uploadcourse:use'] = 'Folosiți instrumentul de încărcare a cursului';
 $string['uploadcourses'] = 'Încărcați cursuri';
 $string['uploadcourses_help'] = 'Cursurile pot fi încărcate prin fișier text. Formatul fișierului ar trebui să fie după cum urmează:
 

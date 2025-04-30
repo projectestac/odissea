@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'zh_cn', version '4.1'.
+ * Strings for component 'block_timeline', language 'zh_cn', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = '全部';
 $string['ariadayfilter'] = '根据日期筛选时间线';
 $string['ariadayfilteroption'] = '{$a}筛选选项';
 $string['ariaeventlistitem'] = '{$a->name}在{$a->course}中的活动应在{$a->date}到期';
-$string['ariaeventlistpagelimit'] = '每页显示{$a}个活动';
-$string['ariaeventlistpaginationnavcourses'] = '为课程{$a}分页的时间线活动';
-$string['ariaeventlistpaginationnavdates'] = '时间线活动分页';
 $string['ariaviewselector'] = '对时间线项目进行排序';
 $string['ariaviewselectoroption'] = '{$a}排序选项';
 $string['duedate'] = '到期日期';

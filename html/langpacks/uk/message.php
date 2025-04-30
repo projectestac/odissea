@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'uk', version '4.1'.
+ * Strings for component 'message', language 'uk', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Контакти';
 $string['conversationactions'] = 'Меню дій розмови';
 $string['decline'] = 'Відхилення';
 $string['defaultmessageoutputs'] = 'Налаштування сповіщень';
-$string['defaults'] = 'Типово';
 $string['deleteallconfirm'] = 'Ви впевнені, що хочете видалити всю цю розмову? Це не видалить її для інших учасників розмови.';
 $string['deleteallmessages'] = 'Видалити всі повідомлення';
 $string['deleteallselfconfirm'] = 'Ви впевнені, що хочете видалити всю цю особисту розмову?';
@@ -97,11 +96,7 @@ $string['info'] = 'Інформація про користувача';
 $string['isnotinyourcontacts'] = '{$a} немає у ваших контактах';
 $string['loadmore'] = 'Завантажити більше';
 $string['loggedin'] = 'В мережі';
-$string['loggedin_help'] = 'Налаштуйте спосіб отримання сповіщень, коли ви ввійдете в Moodle';
-$string['loggedindescription'] = 'Коли ви ввійшли в Moodle';
 $string['loggedoff'] = 'Офлайн';
-$string['loggedoff_help'] = 'Налаштуйте спосіб отримання сповіщень, коли ви не ввійшли в Moodle';
-$string['loggedoffdescription'] = 'Коли ви не ввійшли в Moodle';
 $string['managemessageoutputs'] = 'Параметри сповіщень за замовчуванням';
 $string['message'] = 'Повідомлення';
 $string['messagecontactrequest'] = '{$a->user} просить додати його як контакт. Відвідайте сторінку <a href="{$a->url}">запити на контакт</a>, щоб відповісти на запит';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Повідомлення надісла�
 $string['sendbulkmessagesingle'] = 'Надіслати повідомлення 1 особі';
 $string['sendcontactrequest'] = 'Надіслати запит на контакт';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Надсилання "{$a->provider}" через "{$a->processor}"';
 $string['sendingviaenabled'] = 'Надсилання "{$a->provider}" через "{$a->processor}" статус увімкнено';
 $string['sendingvialocked'] = 'Надсилання "{$a->provider}" через "{$a->processor}" заблоковано';
-$string['sendingviawhen'] = 'Надсилання "{$a->provider}" через "{$a->processor}" коли {$a->state}';
 $string['sendmessage'] = 'Відправити повідомлення';
 $string['sendmessageto'] = 'Відправити повідомлення до {$a}';
 $string['sendmessagetopopup'] = 'Відправити повідомлення до {$a} - нове вікно';

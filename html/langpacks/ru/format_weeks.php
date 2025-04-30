@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ru', version '4.1'.
+ * Strings for component 'format_weeks', language 'ru', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Добавить недели';
+$string['addsection'] = 'Добавить неделю';
 $string['automaticenddate'] = 'Вычислить дату окончания из числа секций';
 $string['automaticenddate_help'] = 'При включенном параметре дата окончания курса будет автоматически рассчитываться с учетом количества секций и даты начала курса.';
 $string['currentsection'] = 'Текущая неделя';
-$string['deletesection'] = 'Удалить неделю';
-$string['editsection'] = 'Редактировать неделю';
-$string['editsectionname'] = 'Редактировать название недели';
-$string['hidefromothers'] = 'Скрыть неделю';
+$string['hidefromothers'] = 'Скрыть';
 $string['indentation'] = 'Разрешить отступ на странице курса';
 $string['indentation_help'] = 'Разрешить учителям и другим пользователям с возможностью управления активными элементами устанавливать отступы элементов на странице курса.';
-$string['newsectionname'] = 'Новое название для недели {$a}';
-$string['page-course-view-weeks'] = 'Главная страница курса в формате Календарь';
-$string['page-course-view-weeks-x'] = 'Любой страница курса в недельном формате';
-$string['pluginname'] = 'Разделы по неделям';
-$string['privacy:metadata'] = 'Плагин «формат Разделы по неделям» не хранит никаких персональных данных.';
+$string['page-course-view-weeks'] = 'Любая главная страница курса в формате «Секции по неделям»';
+$string['page-course-view-weeks-x'] = 'Любая страница курса в формате «Секции по неделям»';
+$string['plugin_description'] = 'Курс поделен на секции, соответствующие каждой неделе, начиная с даты начала курса.';
+$string['pluginname'] = 'Секции по неделям';
+$string['privacy:metadata'] = 'Плагин формата курса «Секции по неделям» не хранит никаких персональных данных.';
 $string['section0name'] = 'Общее';
 $string['sectionname'] = 'Неделя';
-$string['showfromothers'] = 'Показать неделю';
+$string['showfromothers'] = 'Показать';

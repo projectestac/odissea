@@ -48,21 +48,11 @@ other = html';
     $settings->add($setting);
 }
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-if (get_protected_agora()) {
-// ************ FI
-
 $name = new lang_string('autosavefrequency', 'editor_atto');
 $desc = new lang_string('autosavefrequency_desc', 'editor_atto');
 $default = 60;
 $setting = new admin_setting_configduration('editor_atto/autosavefrequency', $name, $desc, $default);
 $settings->add($setting);
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-}
-// ************ FI
 
 $ADMIN->add('editoratto', $settings);
 

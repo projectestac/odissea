@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'gl', version '4.1'.
+ * Strings for component 'portfolio', language 'gl', version '4.4'.
  *
  * @package     portfolio
  * @category    string
@@ -35,11 +35,11 @@ $string['alreadyexporting'] = 'Xa ten unha exportación de portafolios activa ne
 $string['availableformats'] = 'Formatos de exportación dispoñíbeis';
 $string['callbackclassinvalid'] = 'A clase «callback» especificada era incorrecta ou non formaba parte da xerarquía «portfolio_caller»';
 $string['callercouldnotpackage'] = 'Produciuse un erro no empaquetado dos datos para exportar: o error orixinal foi {$a}';
-$string['cannotsetvisible'] = 'Non é posíbel estabelecer este a visíbel, o engadido foi desactivado totalmente por mor dunha mala configuración.';
+$string['cannotsetvisible'] = 'Non é posíbel estabelecer este a visíbel, o complemento foi desactivado totalmente por mor dunha mala configuración.';
 $string['commonportfoliosettings'] = 'Configuración común do portafolios';
 $string['commonsettingsdesc'] = '<p>A cantidade de tempo que se considere que empregue unha transferencia «Moderada» ou «Alta» determina se o usuario poderá agardar ou non para que se complete a transferencia.</p><p>Os tamaños ata o limiar «Moderado» procésanse inmediatamente sen preguntarlle ao usuario, e as transferencias de «Moderado» e «Alto» determinan que se ofreza a opción pero se advirta que levará bastante tempo.</p><p>Adicionalmente, algúns engadidos de portafolios poden ignorar esta opción por completo e forzar a que tódalas transferencias se poñan en lista de espera.</p>';
 $string['configexport'] = 'Configurar os datos exportados';
-$string['configplugin'] = 'Configurar o engadido de portafolios';
+$string['configplugin'] = 'Configurar o complemento de portafolios';
 $string['configure'] = 'Configurar';
 $string['confirmcancel'] = 'Confirma que quere cancelar esta exportación?';
 $string['confirmexport'] = 'Confirme esta exportación';
@@ -55,7 +55,7 @@ $string['displayinfo'] = 'Información sobre a exportación';
 $string['dontwait'] = 'Non agardar';
 $string['enabled'] = 'Activar os portafolios';
 $string['enableddesc'] = 'Se o activa, os usuarios poderán exportar contidos, tales como publicacións de foros e envíos de tarefas, cara portafolios externos ou páxinas HTML.';
-$string['err_uniquename'] = 'O nome do portafolios debe ser único (por engadido)';
+$string['err_uniquename'] = 'O nome do portafolios debe ser único (por complemento)';
 $string['exportalreadyfinished'] = 'Completouse a exportación do portafolios!';
 $string['exportalreadyfinisheddesc'] = 'Completouse a exportación do portafolios!';
 $string['exportcomplete'] = 'Completouse a exportación do portafolios!';
@@ -105,11 +105,11 @@ $string['insanebodyhtml'] = '<p>Ola! Está recibindo esta mensaxe como administr
 <p>Isto debe corrixirse o máis cedo posíbel, visitando as <a href="{$a->fixurl}">páxinas de configuración dos portafolios</a></p>';
 $string['insanebodysmall'] = 'Ola! Está recibindo esta mensaxe como administrador do sitio {$a->sitename}. Algunhas instancias do engadido de portafolios foron desactivadas automaticamente por estar mal configuradas. Isto significa que os usuarios actualmente non poden exportar contidos a estes portafolios. Isto debe corrixirse o máis cedo posíbel, visitando {$a->fixurl}.';
 $string['insanesubject'] = 'Algunhas instancias de portafolios foron desactivadas automaticamente';
-$string['instancedeleted'] = 'O portafolios foi eliminado satisfactoriamente';
+$string['instancedeleted'] = 'O portafolios foi eliminado correctamente';
 $string['instanceismisconfigured'] = 'A instancia de portafolios está mal configurada e foi omitida. O erro foi: {$a}';
 $string['instancenotdelete'] = 'Produciuse un fallo ao eliminar o portafolios';
 $string['instancenotsaved'] = 'Produciuse un fallo ao gardar o portafolios';
-$string['instancesaved'] = 'O portafolios foi gardado satisfactoriamente';
+$string['instancesaved'] = 'O portafolios foi gardado correctamente';
 $string['intro'] = 'O contido que creou vostede, como os envíos de tarefas, publicacións no foro e entradas no blog, poden exportarse cara un portafolios ou descargarse.<br>
 Calquera portafolios que non queira usar pode agocharse, para que non apareza na lista como unha opción á que exportar contidos.';
 $string['invalidaddformat'] = 'Formato de engadido incorrecto pasado a «portfolio_add_button». ({$a}) Debe ser un de «PORTFOLIO_ADD_XXX»';
@@ -144,14 +144,14 @@ $string['moderatedbsizethreshold'] = 'Tamaño «Moderado» da base de datos a tr
 $string['moderatedbsizethresholddesc'] = 'Número de rexistros na base de datos cos que se considerará que a transferencia leva demasiado tempo';
 $string['moderatefilesizethreshold'] = 'Tamaño «Moderado» do ficheiro a transferir';
 $string['moderatefilesizethresholddesc'] = 'Limiar do tamaño dos ficheiros a partires do que considerase que levan moito tempo para transferirse';
-$string['multipleinstancesdisallowed'] = 'Tentando crear outra instancia dun engadido que foi desactivado en varias ocasións ({$a})';
+$string['multipleinstancesdisallowed'] = 'Tentando crear outra instancia dun complemento que foi desactivado en varias ocasións ({$a})';
 $string['mustsetcallbackoptions'] = 'Ten que configurar as opcións de retorno (callback) no construtor «portfolio_add_button» ou empregar ol método «set_callback_options»';
 $string['noavailableplugins'] = 'Vaites, non hai portafolios dispoñíbeis para ser exportados';
 $string['nocallbackclass'] = 'Non foi posíbel atopar a clase «callback» para usala ({$a})';
 $string['nocallbackcomponent'] = 'Non foi posíbel atopar o compoñente especificado {$a}.';
 $string['nocallbackfile'] = 'Algo está roto dentro do módulo que está tentando exportar; non foi posíbel atopar o ficheiro de portafolios requirido';
 $string['noclassbeforeformats'] = 'Ten que configurar a clase «callback» antes de chamar a «set_formats» en «portfolio_button»';
-$string['nocommonformats'] = 'Non existen formatos comúns entre os engadidos dispoñíbeis e o sitio que chama {$a->location} (admitidos polo chamador  {$a->formats})';
+$string['nocommonformats'] = 'Non existen formatos comúns entre os complementos dispoñíbeis e o sitio que chama {$a->location} (admitidos polo chamador  {$a->formats})';
 $string['noinstanceyet'] = 'Non foi seleccionado';
 $string['nologs'] = 'Non hai rexistros que presentar!';
 $string['nomultipleexports'] = 'Vaites, o destino do portafolios ({$a->plugin}) non admite exportacións múltiples de vez. <a href="{$a->link}">Remate primeiro o actual</a> e ténteo de novo';
@@ -164,12 +164,12 @@ $string['notyours'] = 'Vostede está tentando retomar unha exportación dun port
 $string['nouploaddirectory'] = 'Non foi posíbel crear un directorio temporal para empaquetar os seus datos nel';
 $string['off'] = 'Activado mais agochado';
 $string['on'] = 'Activado e visíbel';
-$string['plugin'] = 'Engadido do portafolios';
+$string['plugin'] = 'Complemento do portafolios';
 $string['plugincouldnotpackage'] = 'Produciuse un erro no empaquetado dos datos para exportar: o error orixinal foi {$a}';
 $string['pluginismisconfigured'] = 'O engadido de portafolios está mal configurada e foi omitido. O erro foi: {$a}';
 $string['portfolio'] = 'Portafolios';
 $string['portfolios'] = 'Portafolios';
-$string['privacy:metadata'] = 'O subsistema de portafolios actúa como unha canle, pasando solicitudes de engadidos a varios engadidos de portafolios.';
+$string['privacy:metadata'] = 'O subsistema de portafolios actúa como unha canle, pasando solicitudes de complementos a varios complementos de portafolios.';
 $string['privacy:metadata:instance'] = 'Identificador para o portafolios.';
 $string['privacy:metadata:instancesummary'] = 'Isto almacena tanto as instancias como as preferencias para os portafolios que o usuario está a usar.';
 $string['privacy:metadata:name'] = 'Nome de preferencia';
@@ -181,7 +181,7 @@ $string['privacy:metadata:portfolio_log:userid'] = 'Usuario que exportou o conti
 $string['privacy:metadata:portfolio_tempdata'] = 'Almacena datos temporais para as exportacións de carteira, limpado por cron após un día';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Exportar datos';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Hora de caducidade deste rexistro';
-$string['privacy:metadata:portfolio_tempdata:instance'] = 'Se está a usar a instancia de engadido de portafolios';
+$string['privacy:metadata:portfolio_tempdata:instance'] = 'Se está a usar a instancia de complemento de portafolios';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Usuario que realiza as exportacións';
 $string['privacy:metadata:userid'] = 'ID do usuario';
 $string['privacy:metadata:value'] = 'Valor para a preferencia.';
@@ -194,7 +194,7 @@ $string['selectedwait'] = 'Seleccionar agardar?';
 $string['selectplugin'] = 'Seleccione o destino';
 $string['showhide'] = 'Amosar / agochar';
 $string['singleinstancenomultiallowed'] = 'Só está dispoñíbel unha instancia do engadido de portafolios e non admite realizar múltiples exportacións por sesión, e agora mesmo hai unha exportación activa na sesión usando este engadido';
-$string['somepluginsdisabled'] = 'Algúns engadidos de portafolios foron desactivados por estaren mal configurados ou teren as seguintes dependencias mal configuradas:';
+$string['somepluginsdisabled'] = 'Algúns complementos de portafolios foron desactivados por estaren mal configurados ou teren as seguintes dependencias mal configuradas:';
 $string['sure'] = 'Confirma que quere eliminar «{$a}»? Esta acción no se poderá desfacer.';
 $string['thirdpartyexception'] = 'Produciuse unha excepción dun terceiro durante a exportación do portafolios ({$a}). Foi atrapado e volveu facelo, mais isto debe arranxarse.';
 $string['transfertime'] = 'Tempo da transferencia';

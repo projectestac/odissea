@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'it', version '4.1'.
+ * Strings for component 'block_blog_tags', language 'it', version '4.4'.
  *
  * @package     block_blog_tags
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['blog_tags:addinstance'] = 'Aggiungere blocco Tag dei blog';
 $string['configtitle'] = 'Titolo blocco tag dei blog';
 $string['pluginname'] = 'Tag dei blog';
-$string['privacy:metadata'] = 'Il blocco Tag del blog visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Tag del blog visualizza solamente dati memorizzati da altri componenti.';

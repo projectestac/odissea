@@ -43,7 +43,7 @@ require_once($CFG->libdir . "/phpunit/classes/restore_date_testcase.php");
  * @covers \backup_bigbluebuttonbn_activity_task
  * @covers \restore_bigbluebuttonbn_activity_task
  */
-class backup_restore_test extends restore_date_testcase {
+final class backup_restore_test extends restore_date_testcase {
     use testcase_helper_trait;
 
     /**
@@ -185,7 +185,7 @@ class backup_restore_test extends restore_date_testcase {
      *
      * @dataProvider bbb_type_provider
      */
-    public function test_duplicate_module_no_meetingid(int $type) {
+    public function test_duplicate_module_no_meetingid(int $type): void {
         list($bbactivitycontext, $bbactivitycm, $bbactivity)
             = $this->create_instance($this->get_course(), ['type' => $type]);
         $newcm = duplicate_module($this->get_course(), $bbactivitycm);
@@ -200,7 +200,7 @@ class backup_restore_test extends restore_date_testcase {
      *
      * @dataProvider bbb_type_provider
      */
-    public function test_recycle_module_keep_meetingid(int $type) {
+    public function test_recycle_module_keep_meetingid(int $type): void {
         list($bbactivitycontext, $bbactivitycm, $bbactivity)
             = $this->create_instance($this->get_course(), ['type' => $type]);
         // Delete the course module.
@@ -223,7 +223,7 @@ class backup_restore_test extends restore_date_testcase {
      * Return an array of BigBlueButton types
      * @return array[]
      */
-    public function bbb_type_provider() {
+    public static function bbb_type_provider(): array {
         return [
             'All' => [instance::TYPE_ALL],
             'Recording Only' => [instance::TYPE_RECORDING_ONLY],

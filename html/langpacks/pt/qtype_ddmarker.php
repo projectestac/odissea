@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'pt', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -55,8 +55,8 @@ Para informação, as três formas usam as coordenadas da seguinte maneira:<br /
 * Polígono: x1, y1; x2, y2; ...; xn, yn<br />por exemplo: <code>20,60;100,60;20,100</code>
 
 Selecionar um texto de marcador adicionará esse texto à forma na pré-visualização.';
-$string['followingarewrong'] = 'Os seguintes marcadores foram arrastados para uma área errada: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}.<br />Os marcadores destacados foram colocados nas áreas de destino corretas.<br /> Clique no marcador para visualizar a área correta em destaque.';
+$string['followingarewrong'] = 'Marcadores arrastados para uma área errada: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Marcadores em locais errados: {$a}. Os marcadores destacados foram colocados nas áreas de destino corretas. Clique no marcador para visualizar a área correta em destaque.';
 $string['formerror_dragrequired'] = 'Tem de adicionar pelo menos um marcador a esta pergunta.';
 $string['formerror_droprequired'] = 'Tem de definir pelo menos uma área para largar para esta pergunta.';
 $string['formerror_nobgimage'] = 'É necessário selecionar uma imagem para utilizar como fundo, para a área de arrastar e largar.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ca', version '4.1'.
+ * Strings for component 'blog', language 'ca', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blog sobre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Associació';
 $string['associations'] = 'Associacions';
 $string['associationunviewable'] = 'Aquesta entrada no podrà ser vista per altres fins que li associeu un curs o que canvieu el camp \'Publica a\'';
+$string['author'] = 'Autor/a';
 $string['autotags'] = 'Afegeix aquestes etiquetes';
 $string['autotags_help'] = 'Introduïu una o més etiquetes locals (separades per comes) que vulgueu afegir automàticament a cada entrada del blog copiada des del blog extern, cap al vostre blog.';
 $string['backupblogshelp'] = 'Si habiliteu aquesta opció els blogs s\'inclouran en les còpies de seguretat automàtiques del lloc.';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blog sobre aquest {$a->type}';
 $string['blogaboutthiscourse'] = 'Afegiu una entrada sobre aquest curs';
 $string['blogaboutthismodule'] = 'Afegiu una entrada sobre aquest {$a}';
 $string['blogadministration'] = 'Administració del blog';
+$string['blogattachment'] = 'Fitxer adjunt del blog';
 $string['blogdeleteconfirm'] = 'Voleu suprimir l\'entrada «{$a}» del blog?';
 $string['blogdisable'] = 'Els blogs estan inhabilitats!';
 $string['blogentries'] = 'Entrades del blog';
@@ -216,4 +218,3 @@ $string['viewsiteentries'] = 'Mostra totes les entrades';
 $string['viewuserentries'] = 'Mostra totes les entrades per {$a}';
 $string['worldblogs'] = 'El món pot llegir les entrades marcades com a accessibles globalment';
 $string['wrongexternalid'] = 'ID de blog extern incorrecta';
-$string['wrongpostid'] = 'L\'ID de l\'entrada del blog és incorrecte';

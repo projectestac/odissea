@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ja', version '4.1'.
+ * Strings for component 'tool_langimport', language 'ja', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = '言語パックの更新が完了しました�
 $string['missingcfglangotherroot'] = '$CFG->langotherrootの設定値がありません。';
 $string['missinglangparent'] = '「 {$a->lang} 」の親言語「 {$a->parent} 」がありません。';
 $string['noenglishuninstall'] = '英語言語パックはアンインストールすることはできません。';
+$string['noenglishuninstalltitle'] = 'アンインストールできません。';
 $string['nolangupdateneeded'] = 'すべての言語パックは最新版です。アップデートの必要はありません。';
 $string['pluginname'] = '言語パック';
 $string['privacy:metadata'] = '言語パックプラグインはいかなる個人データも保存しません。';

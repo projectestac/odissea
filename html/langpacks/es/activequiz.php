@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'activequiz', language 'es', version '4.1'.
+ * Strings for component 'activequiz', language 'es', version '4.4'.
  *
  * @package     activequiz
  * @category    string
@@ -53,8 +53,7 @@ $string['closesession'] = 'Cerrar sesión';
 $string['closingsession'] = 'Cerrando sesión...';
 $string['countdatasetlabel'] = 'Número de respuestas';
 $string['defaultquestiontime'] = 'Tiempo por defecto de pregunta';
-$string['defaultquestiontime_help'] = 'El tiempo por defecto para visualizar cada pregunta.<br />
-Éste puede ser modificado por preguntas individuales.';
+$string['defaultquestiontime_help'] = 'El tiempo por defecto para mostrar cada pregunta.<br /> Esto puede ser anulado por preguntas individuales.';
 $string['edit'] = 'Editar cuestionario';
 $string['editpage_opensession_error'] = 'No se puede editar una pregunta o plantilla de cuestionario mientras una sesión esté abierta.';
 $string['enabledquestiontypes'] = 'Habilitar tipos de pregunta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'gl', version '4.1'.
+ * Strings for component 'block', language 'gl', version '4.4'.
  *
  * @package     block
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addblock'] = 'Engadir o bloque {$a}';
 $string['anypagematchingtheabove'] = 'Calquera páxina coincidente coa anterior';
 $string['appearsinsubcontexts'] = 'Aparece en subcontextos';
 $string['assignrolesinblock'] = 'Asignar roles no bloque {$a}';
@@ -42,8 +43,8 @@ $string['defaultregion_help'] = 'Os temas poden definir unha ou máis áreas de 
 $string['defaultweight'] = 'Peso predeterminado';
 $string['defaultweight_help'] = 'O peso predeterminado permite escoller aproximadamente onde quere que apareza o bloque na área escollida, ben enriba de todo ou no fondo. A localización final calculase a partir de todos os bloques nesa área (por exemplo, só un bloque pode estar arriba de todo). Este valor pode ser anulado en páxinas específicas se for preciso.';
 $string['deleteblock'] = 'Eliminar o bloque {$a}';
-$string['deleteblockcheck'] = 'Isto elimina o bloque {$a}.';
-$string['deleteblockinprogress'] = 'Estase en proceso de eliminar o bloque {$a}...';
+$string['deleteblockcheck'] = 'Isto eliminará o bloque {$a}.';
+$string['deleteblockinprogress'] = 'Estase en proceso de eliminar o bloque {$a}…';
 $string['deleteblockwarning'] = '<p>Está a piques de eliminar un bloque que aparece noutro lugar.</p><p>Localización orixinal do bloque: {$a->location}<br />Amosar en tipos de páxinas: {$a->pagetype}</p><p>Confirma que quere continuar?</p>';
 $string['deletecheck'] = 'Eliminar o bloque {$a}?';
 $string['deletecheck_modal'] = 'Eliminar o bloque?';

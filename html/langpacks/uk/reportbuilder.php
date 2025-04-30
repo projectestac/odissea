@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'uk', version '4.1'.
+ * Strings for component 'reportbuilder', language 'uk', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} плюс ще {$a->morec
 $string['audiencenotsaved'] = 'Аудиторія не збережена';
 $string['audiencesaved'] = 'Аудиторію збережено';
 $string['audienceupdated'] = 'Аудиторія оновлена';
+$string['audienceusedbyschedule'] = 'Ця аудиторія використовується в розкладі цього звіту';
 $string['cardview'] = 'Перегляд картки';
 $string['cardview_help'] = 'Перегляд карток дає змогу визначити макет звіту під час перегляду на вузьких пристроях. Стовпці згорнуться за межі, встановлені тут, за допомогою перемикача, щоб розгорнути картку, щоб переглянути всі дані звіту.';
 $string['cardviewfirstcolumntitle'] = 'Заголовок першої колонки';
@@ -123,6 +124,8 @@ $string['errorsourceinvalid'] = 'Не вдалося знайти дійсне �
 $string['errorsourceunavailable'] = 'Джерело звіту недоступне';
 $string['filteradded'] = 'Додано фільтр "{$a}"';
 $string['filtercontains'] = 'Містить';
+$string['filterdateafter'] = 'Після';
+$string['filterdatebefore'] = 'Раніше';
 $string['filterdatecurrent'] = 'Поточний';
 $string['filterdatedays'] = 'день(і)';
 $string['filterdatefrom'] = 'Дата від';
@@ -139,12 +142,13 @@ $string['filterdateweeks'] = 'тиждень(і)';
 $string['filterdateyears'] = 'рік(и)';
 $string['filterdeleted'] = 'Видалено фільтр "{$a}"';
 $string['filterdoesnotcontain'] = 'Не містить';
-$string['filterdurationunit'] = 'одиниця {$ a}';
+$string['filterdurationunit'] = 'одиниця {$a}';
 $string['filterendswith'] = 'Закінчується на';
 $string['filterequalorgreaterthan'] = 'Більше або рівне';
 $string['filterequalorlessthan'] = 'Менше або рівне';
-$string['filterfieldoperator'] = 'оператор {$ a}';
-$string['filterfieldvalue'] = 'значення {$ a}';
+$string['filterfieldoperator'] = 'оператор {$a}';
+$string['filterfieldto'] = '{$a} до';
+$string['filterfieldvalue'] = 'значення {$a}';
 $string['filtergreaterthan'] = 'Більше ніж';
 $string['filterinvalid'] = 'Недійсний фільтр';
 $string['filterisanyvalue'] = 'Є будь-яке значення';
@@ -158,7 +162,7 @@ $string['filterrange'] = 'Діапазон';
 $string['filters'] = 'Фільтри';
 $string['filters_help'] = 'Фільтри звіту дозволяють користувачам, які переглядають звіт, додатково обмежувати дані, що відображаються, вибираючи власні значення для кожного фільтра. Значення фільтрів зберігаються для кожного користувача.';
 $string['filtersapplied'] = 'Застосовано фільтри';
-$string['filtersappliedx'] = 'Фільтри ({$ a})';
+$string['filtersappliedx'] = 'Фільтри ({$a})';
 $string['filtersreset'] = 'Скидання фільтрів';
 $string['filterstartswith'] = 'Починається з';
 $string['hassystemrole'] = 'Призначена роль системи';
@@ -173,7 +177,7 @@ $string['movecondition'] = 'Умова переміщення \'{$a}\'';
 $string['movefilter'] = 'Перемістити фільтр "{$a}"';
 $string['movesorting'] = 'Перемістити сортування для стовпця "{$a}"';
 $string['newreport'] = 'Новий звіт';
-$string['newschedule'] = 'Новий графік';
+$string['newschedule'] = 'Новий розклад';
 $string['noaudiences'] = 'Для цього звіту немає аудиторій';
 $string['noconditions'] = 'Немає вибраних умов';
 $string['nofilters'] = 'Немає вибраних фільтрів';
@@ -221,7 +225,7 @@ $string['privacy:metadata:schedule:timescheduled'] = 'Час початку ро
 $string['privacy:metadata:schedule:usercreated'] = 'Ідентифікатор користувача, який створив розклад';
 $string['privacy:metadata:schedule:usermodified'] = 'Ідентифікатор користувача, який востаннє змінював розклад';
 $string['privacy:metadata:schedule:userviewas'] = 'Ідентифікатор користувача, від якого буде переглядатися розклад';
-$string['recurrence'] = 'Рецидив';
+$string['recurrence'] = 'Періодичність';
 $string['recurrenceannually'] = 'Щорічно';
 $string['recurrencedaily'] = 'Щодня';
 $string['recurrencemonthly'] = 'Щомісячно';

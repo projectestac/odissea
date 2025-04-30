@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', version '4.1'.
+ * Strings for component 'cohort', language 'gl', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Membro do círculo';
 $string['cohorts'] = 'Círculos';
 $string['cohortsin'] = '{$a}: círculos dispoñíbeis';
 $string['component'] = 'Orixe';
+$string['contextcohortnotallowed'] = 'O círculo <b>{$a}</b> non está permitido neste contexto.';
 $string['contextnotfound'] = 'Non se atopa o contexto <b>{$a}</b>, ou vostede non ten permisos para crear alí un círculo. Usarase o contexto predeterminado.';
 $string['csvcontainserrors'] = 'Atopáronse erros nos datos do CSV. Vexa embaixo os detalles.';
 $string['csvcontainswarnings'] = 'Atopáronse advertencias nos datos do CSV. Vexa embaixo os detalles.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'gl', version '4.1'.
+ * Strings for component 'user', language 'gl', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -42,8 +42,8 @@ $string['match'] = 'Coincidencia';
 $string['matchofthefollowing'] = 'dos seguintes:';
 $string['moodlenetprofile'] = 'ID de perfil de MoodleNet';
 $string['moodlenetprofile_help'] = 'O seu ID de perfil de MoodleNet vincula o seu perfil de MoodleNet con este sitio.';
-$string['placeholdertype'] = 'Escriba...';
-$string['placeholdertypeorselect'] = 'Escriba ou seleccione...';
+$string['placeholdertype'] = 'Escriba…';
+$string['placeholdertypeorselect'] = 'Escriba ou seleccione…';
 $string['privacy:courserequestpath'] = 'Cursos solicitados';
 $string['privacy:descriptionpath'] = 'Descrición do perfil';
 $string['privacy:devicespath'] = 'Dispositivos do usuario';
@@ -53,7 +53,7 @@ $string['privacy:metadata:address'] = 'O enderezo do usuario.';
 $string['privacy:metadata:aim'] = 'O identificador AIM do usuario';
 $string['privacy:metadata:alternatename'] = 'Un nome alternativo para o usuario.';
 $string['privacy:metadata:appid'] = 'O ID da aplicación, xeralmente como com.moodle.moodlemobile';
-$string['privacy:metadata:auth'] = 'O engadido de autenticación empregado para este rexistro de usuario.';
+$string['privacy:metadata:auth'] = 'O complemento de autenticación empregado para este rexistro de usuario.';
 $string['privacy:metadata:autosubscribe'] = 'Unha preferencia sobre se o usuario debe ser subscrito de forma automática aos foros nos que o usuario publica.';
 $string['privacy:metadata:calendartype'] = 'Unha preferencia do usuario para o tipo de calendario a empregar.';
 $string['privacy:metadata:category'] = 'O identificador de categoría';
@@ -77,7 +77,7 @@ $string['privacy:metadata:firstip'] = 'O primeiro enderezo IP rexistrado';
 $string['privacy:metadata:firstname'] = 'O nome do usuario.';
 $string['privacy:metadata:firstnamephonetic'] = 'Os detalles fonéticos sobre o nome do usuario.';
 $string['privacy:metadata:fullname'] = 'O nome completo para este curso.';
-$string['privacy:metadata:hash'] = 'Un «hash» dun contrasinal anterior.';
+$string['privacy:metadata:hash'] = 'Un resumo criptográfico dun contrasinal anterior.';
 $string['privacy:metadata:icq'] = 'O número ICQ do usuario.';
 $string['privacy:metadata:id'] = 'O ID do usuario';
 $string['privacy:metadata:idnumber'] = 'Un número de identificación dado pola institución';
@@ -89,8 +89,8 @@ $string['privacy:metadata:lastaccess'] = 'O momento no que o usuario accedeu por
 $string['privacy:metadata:lastaccesstablesummary'] = 'Información sobre a última vez que un usuario accedeu a un curso.';
 $string['privacy:metadata:lastip'] = 'O último enderezo IP para o usuario.';
 $string['privacy:metadata:lastlogin'] = 'O último acceso deste usuario.';
-$string['privacy:metadata:lastname'] = 'O(s) apelido(s) do usuario.';
-$string['privacy:metadata:lastnamephonetic'] = 'Os detalles fonéticos sobre o(s) apelido(s) do usuario.';
+$string['privacy:metadata:lastname'] = 'O apelido do usuario.';
+$string['privacy:metadata:lastnamephonetic'] = 'Os detalles fonéticos do apelido do usuario.';
 $string['privacy:metadata:maildigest'] = 'Un axuste para o resumo do correo para este usuario.';
 $string['privacy:metadata:maildisplay'] = 'Unha preferencia para o usuario sobre como se amosa o seu enderezo de correo a outros usuarios.';
 $string['privacy:metadata:middlename'] = 'O segundo nome do usuario';
@@ -104,7 +104,7 @@ $string['privacy:metadata:my_pages:private'] = 'Se a páxina non é privada (tab
 $string['privacy:metadata:my_pages:userid'] = 'O usuario propietario desta páxina ou 0 para predeterminado do sistema';
 $string['privacy:metadata:password'] = 'O contrasinal para que este usuario acceda ao sistema.';
 $string['privacy:metadata:passwordresettablesummary'] = 'Unha táboa de seguimento de testemuños de confirmación de restabelecemento do contrasinal';
-$string['privacy:metadata:passwordtablesummary'] = 'Un rexistro rotativo de «hashes» de contrasinais usados anteriormente para o usuario.';
+$string['privacy:metadata:passwordtablesummary'] = 'Un rexistro rotativo de resumos cifrados de contrasinais usados anteriormente para o usuario.';
 $string['privacy:metadata:phone'] = 'Un número de teléfono para o usuario.';
 $string['privacy:metadata:picture'] = 'Os detalles da imaxe asociada con este usuario.';
 $string['privacy:metadata:platform'] = 'A plataforma do dispositivo, Android ou iOS, etc.';
@@ -113,7 +113,7 @@ $string['privacy:metadata:pushid'] = 'O ID do testemuño/chave/identificador/rex
 $string['privacy:metadata:reason'] = 'A razón para solicitar este curso.';
 $string['privacy:metadata:requester'] = 'O ID do usuario que solicitou o curso';
 $string['privacy:metadata:requestsummary'] = 'Almacena información sobre as solicitudes de cursos que fan os usuarios.';
-$string['privacy:metadata:secret'] = 'Segredo ... non está seguro.';
+$string['privacy:metadata:secret'] = 'Segredo … non está seguro.';
 $string['privacy:metadata:sessdata'] = 'Contido da sesión';
 $string['privacy:metadata:sessiontablesummary'] = 'Almacenamento da sesión baseado na base de datos';
 $string['privacy:metadata:shortname'] = 'Un nome abreviado para o curso';
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'Teña coidado con esta mensaxe.
 $string['target:upcomingactivitiesdue'] = 'Actividades pendentes de entrega';
 $string['target:upcomingactivitiesdue_help'] = 'Este destino xera recordatorios para as actividades pendentes de entrega.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí están listadas todas as actividades vindeiras estimadas. Estes alumnos recibiron estas estimacións directamente.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'Perfil do usuario';

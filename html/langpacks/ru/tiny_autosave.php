@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'ru', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'ru', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Автосохранение';
-$string['pluginname'] = 'Автосохранение Tiny';
+$string['pluginname'] = 'Автосохранение';
 $string['privacy:metadata:database:tiny_autosave'] = 'Таблица, в которой хранятся данные автосохранения черновика для редактора TinyMCE.';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = 'Текстовое содержимое автосохранения черновика';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = 'Время последнего изменения автосохранения черновика';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'uk', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'uk', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,8 +45,9 @@ $string['devicetoken'] = 'Маркер пристрою';
 $string['donotsendnotification'] = 'Не надсилайте сповіщення взагалі';
 $string['enableprocessor'] = 'Увімкнути мобільні сповіщення';
 $string['encryptnotifications'] = 'Зашифрувати сповіщення';
+$string['encryptnotifications_help'] = 'Увімкніть наскрізне шифрування сповіщень програми. Деякі дані можуть бути видалені зі сповіщень, якщо їх неможливо зашифрувати.';
 $string['encryptprocessing'] = 'Для пристроїв, які не підтримують шифрування';
-$string['encryptprocessing_desc'] = 'Будь ласка, вкажіть, що робити, якщо цільовий пристрій не підтримує шифрування (підтримується лише з Android 6 і iOS 13).';
+$string['encryptprocessing_desc'] = 'Для зашифрованих сповіщень потрібна принаймні Android 8 або iOS 13 і додаток Moodle 4.2 або новішої версії.';
 $string['errorretrievingkey'] = 'Під час отримання ключа доступу сталася помилка. Щоб користуватися цією послугою, ваш сайт повинен бути зареєстрований. Якщо ваш сайт уже зареєстрований, спробуйте оновити реєстрацію. Крім того, ви можете отримати ключ доступу, створивши обліковий запис на <a href="https://apps.moodle.com">порталі Moodle Apps</a>.';
 $string['keyretrievedsuccessfully'] = 'Ключ доступу успішно отримано. Щоб отримати доступ до статистики використання програми Moodle, створіть обліковий запис на <a href="https://apps.moodle.com">порталі програм Moodle</a>.';
 $string['messageprovidersempty'] = 'У налаштуваннях сповіщень за замовчуванням не ввімкнено сповіщення для мобільних пристроїв.';

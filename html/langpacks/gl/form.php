@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'gl', version '4.1'.
+ * Strings for component 'form', language 'gl', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -50,7 +50,6 @@ $string['filesofthesetypes'] = 'Tipos de ficheiros aceptados:';
 $string['filetypesany'] = 'Todos os tipos de ficheiros';
 $string['filetypesnotall'] = 'Non está permitido seleccionar aquí «Todos os tipos de ficheiros»';
 $string['filetypesnotallowed'] = 'Estes tipos de ficheiro non están permitidos aquí: {$a}';
-$string['filetypesnotwhitelisted'] = 'Estes tipos de ficheiro non están permitidos aquí: {$a}';
 $string['filetypesothers'] = 'Outros ficheiros';
 $string['filetypesunknown'] = 'Tipo de ficheiro descoñecido: {$a}';
 $string['general'] = 'Xeral';
@@ -82,9 +81,9 @@ $string['selectallornone'] = 'Seleccionar todo/nada';
 $string['selected'] = 'Seleccionado';
 $string['selecteditems'] = 'Elementos seleccionados:';
 $string['showadvanced'] = 'Amosar avanzadas';
-$string['showless'] = 'Amosar menos...';
-$string['showmore'] = 'Amosar máis...';
-$string['somefieldsrequired'] = 'Neste formulario hai campos obrigatorios marcados con {$a}';
+$string['showless'] = 'Amosar menos…';
+$string['showmore'] = 'Amosar máis…';
+$string['somefieldsrequired'] = '{$a} requirido';
 $string['suggestions'] = 'Suxestións';
 $string['time'] = 'Hora';
 $string['timeunit'] = 'Unidade de tempo';

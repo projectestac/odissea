@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ja', version '4.1'.
+ * Strings for component 'course', language 'ja', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'フッタなし';
 $string['activitychooserrecommendations'] = '推奨活動';
 $string['activitychoosersettings'] = '活動チューザ設定';
 $string['activitychoosertabmode'] = '活動チューザタブ';
-$string['activitychoosertabmode_desc'] = '活動チューザにより教師は自分のコースに追加する活動およびリソースを簡単に選択できます。この設定ではどのタブを活動チューザ内に表示するか決定します。星付きタブはユーザに1つまたはそれ以上の星付き活動がある場合、推奨タブはサイト管理者が推奨活動を指定した場合のみ表示される点に留意してください。';
+$string['activitychoosertabmode_desc'] = '活動チューザは教師がコースで追加できる活動およびリソースを一覧表示します。推奨タブにアイテムを追加するには<a href=\'../course/recommendations.php\'>推奨活動</a>にアクセスしてください。';
+$string['activitychoosertabmodefive'] = '星付き, 推奨, すべて';
+$string['activitychoosertabmodefour'] = '星付き, 推奨, すべて, 活動, リソース';
 $string['activitychoosertabmodeone'] = '星付き, すべて, 活動, リソース, 推奨';
+$string['activitychoosertabmodesix'] = '星付き, 推奨, 活動, リソース';
 $string['activitychoosertabmodethree'] = '星付き, 活動, リソース, 推奨';
 $string['activitychoosertabmodetwo'] = '星付き, すべて, 推奨';
 $string['activitydate:closed'] = '終了済み:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = '{$a} 活動に星を付ける';
 $string['aria:recommendedtab'] = '推奨活動';
 $string['browsecourseadminindex'] = 'このインデックスでコース管理を閲覧する';
 $string['browsesettingindex'] = 'このインデックスで設定を閲覧する';
+$string['communicationroomlink'] = 'コース参加者とチャットする';
 $string['completion_automatic:done'] = '完了:';
 $string['completion_automatic:failed'] = '失敗:';
 $string['completion_automatic:todo'] = 'やるべきこと:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} は {$a->setby
 $string['completionrequirements'] = '{$a} の完了条件';
 $string['courseaccess'] = 'コースアクセス';
 $string['coursealreadyfinished'] = 'コースはすでに終了しています。';
+$string['coursecommunication_desc'] = '新しいコースのデフォルトのコミュニケーションサービスです。既存のコースはデフォルトではプロバイダが選択されていません。';
 $string['coursecontentnotification'] = 'コンテンツ変更通知を送信する';
 $string['coursecontentnotification_help'] = 'この新しいまたは変更された活動またはリソースをコース参加者に通知する場合、チェックボックスをチェックしてください。活動またはリソースにアクセスできるユーザのみ通知を受信します。';
 $string['coursecontentnotifnew'] = '{$a->coursename} 新しいコンテンツ';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename}<a href="{$a->link}">{$a->modulename}</a>がコース<a href="{$a->courselink}">{$a->coursename}</a>で新しく作成されました。</p><p><a href="{$a->notificationpreferenceslink}">あなたの通知プレファレンスを変更する</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} コンテンツ変更';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename}<a href="{$a->link}">{$a->modulename}</a>がコース<a href="{$a->courselink}">{$a->coursename}</a>で変更されました。</p><p><a href="{$a->notificationpreferenceslink}">あなたの通知プレファレンスを変更する</a></p>';
+$string['coursecount'] = 'コースカウント';
 $string['coursenotyetfinished'] = 'コースはまだ終了していません。';
 $string['coursenotyetstarted'] = 'コースはまだ開始していません。';
 $string['courseparticipants'] = 'コース参加者';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = '全員';
 $string['customfield_visibletoteachers'] = '教師';
 $string['customfieldsettings'] = '一般コースカスタムフィールド設定';
 $string['daystakingcourse'] = '受講日数';
+$string['defaultsettingscategory'] = 'デフォルト設定';
 $string['downloadcontent'] = 'コースコンテンツダウンロードに含める';
 $string['downloadcontent_help'] = 'この活動またはリソースはダウンロード可能なコースコンテンツのZIPファイルに含めるべきですか? ファイル、フォルダ、ページ、ラベルは完全にダウンロードできます。その他の活動およびリソースは名称および説明のみダウンロードされます。このオプションを使用するにはコース設定でコースコンテンツのダウンロードを有効にする必要があります。
 
@@ -94,7 +101,9 @@ $string['downloadcoursecontent_help'] = 'この設定ではコースコンテン
 $string['enabledownloadcoursecontent'] = 'コースコンテンツのダウンロードを有効にする';
 $string['errorendbeforestart'] = '終了日 ({$a}) は開始日の前にしてください。';
 $string['favourite'] = '星付きコース';
+$string['gotosection'] = 'セクション {$a} に移動する';
 $string['gradetopassnotset'] = 'このコースには合格点が設定されていません。合格点はコースの評定アイテム (評定表セットアップ) で設定できます。';
+$string['hideendedcoursestask'] = '終了日にコースを秘匿する';
 $string['informationformodule'] = '{$a} 活動に関する情報';
 $string['module'] = '活動';
 $string['namewithlink'] = 'リンク付きカテゴリ名';
@@ -114,6 +123,8 @@ $string['noteachinginfomessage'] = '{$a->userfirstname} さん
 $string['participants:perpage'] = '1ページあたりの参加者数';
 $string['participants:perpage_help'] = 'それぞれのコースの参加者ページで1ページあたりに表示されるユーザ数です。';
 $string['participantsnavigation'] = '参加者3次ナビゲーション';
+$string['pdfexportfont'] = 'PDFフォント';
+$string['pdfexportfont_help'] = '課題提出等、生成されたPDFファイルに使用されるフォントです。';
 $string['privacy:completionpath'] = 'コース完了';
 $string['privacy:favouritespath'] = 'コース星付き情報';
 $string['privacy:metadata:activityfavouritessummary'] = 'コースシステムにはユーザが活動チューザで星を付けたアイテムの情報を含みます。';
@@ -126,6 +137,8 @@ $string['relativedatessubmissionduedateafter'] = 'コース開始 {$a->datediffs
 $string['relativedatessubmissionduedatebefore'] = 'コース開始 {$a->datediffstr} 前';
 $string['searchactivitiesbyname'] = '名称で活動を検索する';
 $string['searchresults'] = '検索結果: {$a}';
+$string['sectionlink'] = 'パーマリンク';
+$string['showstartedcoursestask'] = '開始日にコースを表示する';
 $string['studentsatriskincourse'] = '{$a} コースでリスクのある学生';
 $string['studentsatriskinfomessage'] = '{$a->userfirstname} さん
 
@@ -158,3 +171,4 @@ $string['targetlabelstudentgradetopassno'] = 'コースに合格するための�
 $string['targetlabelstudentgradetopassyes'] = 'コースに合格するための最小評点を取得できないリスクのある学生です。';
 $string['targetlabelteachingno'] = '開始できないリスクのあるコース';
 $string['targetlabelteachingyes'] = '教育ケイパビリティのあるユーザはコースにアクセスできます。';
+$string['totalactivities'] = '活動: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'fr', version '4.1'.
+ * Strings for component 'format_topcoll', language 'fr', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Ajouter une section';
 $string['arrow'] = 'Flèche';
 $string['bulb'] = 'Ampoule';
 $string['cachedef_activitymodulecountcache'] = 'Met en cache le nombre d’étudiants qui peuvent accéder à un module donné dans un cours donné.';
@@ -58,22 +57,23 @@ $string['coursesectionactivityfurtherinformationdatadesc'] = 'Permet de sélecti
 $string['coursesectionactivityfurtherinformationfeedback'] = 'Afficher les informations de retour (feedback)';
 $string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Permet de sélectionner les informations sur les retours à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationforum'] = 'Afficher les informations du forum';
-$string['coursesectionactivityfurtherinformationforumdesc'] = 'Permet aux informations du forum d’être sélectionnées pour être affichées sur un cours.  Pour les enseignants/administrateurs, afficher le nombre de contributions lorsque le classement du forum entier est activé.';
+$string['coursesectionactivityfurtherinformationforumdesc'] = 'Permet aux informations du forum d’être sélectionnées pour être affichées sur un cours. Pour les enseignants/administrateurs, afficher le nombre de contributions lorsque le classement du forum entier est activé.';
 $string['coursesectionactivityfurtherinformationlesson'] = 'Afficher les informations sur la leçon';
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Permet de sélectionner les informations sur les leçons à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Afficher les informations du quiz';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Permet de sélectionner les informations sur les tests à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['creatingsection'] = 'Créer une nouvelle section';
 $string['ctreset'] = 'Réinitialisation des options des sections réduites';
 $string['ctreset_help'] = 'Rétablir les paramètres par défaut des sections réduites.';
 $string['currentsection'] = 'Cette section';
 $string['default'] = 'Défaut - {$a}';
 $string['defaultdisplayblocks'] = 'Blocs à afficher';
-$string['defaultdisplayblocks_desc'] = 'Choisir les blocs à afficher dans le cours lorsqu’il est créé pour la première fois et que ce format est sélectionné.  Utilisez la touche « Ctrl » en combinaison avec la souris pour en sélectionner plusieurs ou aucun.  Remarque : ce paramètre ne s’appliquera qu’à la création du cours et à aucun autre moment, par exemple si vous passez d’un autre format à celui de Section Réduite.';
+$string['defaultdisplayblocks_desc'] = 'Choisir les blocs à afficher dans le cours lorsqu’il est créé pour la première fois et que ce format est sélectionné. Utilisez la touche « Ctrl » en combinaison avec la souris pour en sélectionner plusieurs ou aucun. Remarque : ce paramètre ne s’appliquera qu’à la création du cours et à aucun autre moment, par exemple si vous passez d’un autre format à celui de Section Réduite.';
 $string['defaultdisplayblocksloc'] = 'Emplacement d’affichage du bloc';
 $string['defaultdisplayblocksloc_desc'] = 'Choisir l’emplacement d’affichage des blocs choisis ci-dessus, avant ou après le côté.';
 $string['defaultdisplayinstructions'] = 'Afficher les instructions aux utilisateurs';
-$string['defaultdisplayinstructions_desc'] = 'Afficher des instructions aux utilisateurs les informant de la manière d’utiliser les boutons.  Peut être oui ou non.';
+$string['defaultdisplayinstructions_desc'] = 'Afficher des instructions aux utilisateurs les informant de la manière d’utiliser les boutons. Peut être oui ou non.';
+$string['defaultflexiblemodules'] = 'Modules flexibles';
+$string['defaultflexiblemodules_desc'] = 'Utiliser les Modules flexibles ?';
 $string['defaultheadingsub'] = 'Défauts';
 $string['defaultheadingsubdesc'] = 'Paramètres par défaut qui peuvent être remplacés au niveau du cours.';
 $string['defaultlayoutcolumnorientation'] = 'Orientation de la colonne';
@@ -88,7 +88,7 @@ $string['defaultlayoutstructure_desc'] = 'Le paramètre de structure peut être 
 $string['defaultonesection'] = 'Une section';
 $string['defaultonesection_desc'] = 'Indique si une seule section devrait être ouverte à la fois. Note : ce paramètre est ignoré en mode édition pour permettre le déplacement d’éléments entre les sections.';
 $string['defaultonesectioniconfont'] = 'Police d’icônes d’une section';
-$string['defaultonesectioniconfont_desc'] = 'Indiquer la classe de police d’icônes à utiliser pour l’icône de lien d’une section, par exemple, voir les classes d’icône de FontAwesome.  S’il est vide, l’icône par défaut « one_section » du dossier « pix » du format sera utilisée.';
+$string['defaultonesectioniconfont_desc'] = 'Indiquer la classe de police d’icônes à utiliser pour l’icône de lien d’une section, par exemple, voir les classes d’icône de FontAwesome. S’il est vide, l’icône par défaut « one_section » du dossier « pix » du format sera utilisée.';
 $string['defaultshowadditionalmoddata'] = 'Cours par défaut « Afficher des informations supplémentaires »';
 $string['defaultshowadditionalmoddatadesc'] = 'Si une activité est définie au niveau du site (ci-dessous) pour afficher des informations supplémentaires, ce paramètre indique l’état par défaut de l’instance spécifique au cours.';
 $string['defaultshowsectionsummary'] = 'Afficher le résumé de la section lorsqu’elle est réduite';
@@ -136,7 +136,7 @@ $string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Flèche</td><td>{$
 $string['defaulttoggleiconsize'] = 'Taille des icônes';
 $string['defaulttoggleiconsize_desc'] = 'Taille des icônes : petit = 16px, moyen = 24px et grand = 32px ou Police d’icône : Petite = 0.8em, Moyenne = 1.2em et Grande = 1.8em.';
 $string['defaulttogglepersistence'] = 'Persistance de la bascule';
-$string['defaulttogglepersistence_desc'] = '« On » ou « Off ». Mettre sur « Off » pour améliorer la performance AJAX, mais la position des sections basculées par l’utilisateur ne sera pas rappelée à l’actualisation de la page.<br /> Remarque : lorsque vous désactivez la persistance, veuillez supprimer toutes les lignes contenant « topcoll_toggle_x » dans le champ « name » de la table « user_preferences » de la base de données.  Le « x » de « topcoll_toggle_x » correspond à l’identifiant du cours.  Ceci permet de gagner de la place si vous n’avez pas l’intention de le réactiver.';
+$string['defaulttogglepersistence_desc'] = '« On » ou « Off ». Mettre sur « Off » pour améliorer la performance AJAX, mais la position des sections basculées par l’utilisateur ne sera pas rappelée à l’actualisation de la page.<br /> Remarque : lorsque vous désactivez la persistance, veuillez supprimer toutes les lignes contenant « topcoll_toggle_x » dans le champ « name » de la table « user_preferences » de la base de données.  Le « x » de « topcoll_toggle_x » correspond à l’identifiant du cours. Ceci permet de gagner de la place si vous n’avez pas l’intention de le réactiver.';
 $string['defaultuserpreference'] = 'État initial des bascules';
 $string['defaultuserpreference_desc'] = 'Indique ce qu’il faut faire avec les boutons à bascule lorsque l’utilisateur accède au cours pour la première fois, l’état des sections supplémentaires lorsqu’elles sont ajoutées ou que la persistance des boutons à bascule est désactivée.';
 $string['defaultviewsinglesectionenabled'] = 'Afficher une seule section active';
@@ -146,9 +146,6 @@ $string['displayinstructions'] = 'Afficher les instructions';
 $string['displayinstructions_help'] = 'Définit si les instructions seront affichées aux utilisateurs';
 $string['donotshowdate'] = 'Ne pas afficher la date';
 $string['donotshowdate_help'] = 'Ne pas afficher la date lors de l’utilisation d’une structure hebdomadaire avec l’option ­« nom de la section par défaut » décochée.';
-$string['duplicate'] = 'Dupliquer';
-$string['duplicateconfirm'] = 'Voulez-vous vraiment dupliquer la section actuelle ? Cela peut prendre un certain temps en fonction de la quantité de ressources.';
-$string['duplicating'] = 'Duplication en cours';
 $string['editsection'] = 'Modifier la section';
 $string['editsectionname'] = 'Modifier le nom de la section';
 $string['em0_0'] = '0.0em';
@@ -194,17 +191,16 @@ $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
 $string['enableadditionalmoddata'] = 'Activer les informations supplémentaires';
 $string['enableadditionalmoddatadesc'] = 'Il s’agit d’un paramétrage au « niveau du site » permettant d’activer ou de désactiver les informations sur les activités.  Il doit être activé pour que les paramètres associés qui fonctionnent au niveau du cours prennent effet.  Comme cette fonctionnalité peut être coûteuse en termes de calcul, il est fortement conseillé d’effectuer des tests complets avant de l’utiliser sur un système de production.  Note : il faut purger les caches lorsqu’ils sont modifiés.';
-$string['errornosectioninfo'] = 'Le sujet indiqué n’a pas d’information';
 $string['eye'] = 'Œil';
 $string['feedbackavailable'] = 'Commentaire (feedback) disponible';
 $string['folder'] = 'Dossier';
 $string['formatresponsive'] = 'Format responsive';
-$string['formatresponsive_desc'] = 'Activez cette option si vous utilisez un thème non réactif et le format s’adaptera à la taille de l’écran/du périphérique.  Désactivez cette option si vous utilisez un thème réactif.  La prise en charge de Bootstrap 2.3.2 est intégrée. Pour les autres cadres et versions, remplacez les méthodes « get_row_class() » et « get_column_class() » dans renderer.php.';
+$string['formatresponsive_desc'] = 'Activez cette option si vous utilisez un thème non réactif et le format s’adaptera à la taille de l’écran/du périphérique.  Désactivez cette option si vous utilisez un thème réactif. La prise en charge de Bootstrap 2.3.2 est intégrée. Pour les autres cadres et versions, remplacez les méthodes « get_row_class() » et « get_column_class() » dans renderer.php.';
 $string['formatsettings'] = 'Réinitialisation des réglages du format';
 $string['formatsettingsinformation'] = '<br />Pour modifier les paramètres du format du cours, cliquez sur l’icône à droite.';
 $string['four'] = 'Quatre';
 $string['groundsignal'] = 'Signal de base';
-$string['hidefromothers'] = 'Cacher la section';
+$string['hidefromothers'] = 'Cacher';
 $string['information'] = 'Information';
 $string['informationsettings'] = 'Paramètres d’information';
 $string['informationsettingsdesc'] = 'Informations sur le format des Sections Réduites';
@@ -220,6 +216,7 @@ $string['maincoursepage'] = 'Page principale du cours';
 $string['markedthissection'] = 'Cette section est mise en évidence comme section actuelle';
 $string['markthissection'] = 'Mettre en évidence cette section comme section actuelle';
 $string['medium'] = 'Moyen';
+$string['newsection'] = 'Nouvelle section';
 $string['newsectionname'] = 'Nouveau nom pour la section {$a}';
 $string['numbersections'] = 'Nombre de section';
 $string['off'] = 'Off';
@@ -234,12 +231,9 @@ $string['point'] = 'Point';
 $string['power'] = 'Power';
 $string['privacy:metadata:preference:toggle'] = 'L’état des bascules dans un cours.';
 $string['privacy:request:preference:toggle'] = 'L’identifiant du cours « {$a->name} » a la valeur « {$a->value} » qui représente « {$a->decoded} » pour l’état des bascules.';
-$string['progresscounter'] = 'Duplication d’activités ({$a->current}/{$a->size})';
-$string['progressfull'] = 'Duplication de sujet';
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Veuillez cliquer sur « {$a->url} » pour plus d’informations sur les Sections Réduites.';
 $string['readme_title'] = 'Fichier « lisez-moi » (en anglais)';
-$string['rebuildcoursecache'] = 'Reconstruire le cache du cours';
 $string['resetactivitymeta'] = 'Informations complémentaires sur les modules';
 $string['resetactivitymeta_help'] = 'Réinitialise les informations du module supplémentaire pour suivre la valeur par défaut du site.';
 $string['resetallactivitymeta'] = 'Toutes les informations supplémentaires sur les modules';
@@ -365,11 +359,11 @@ $string['topcollopened'] = 'Tout ouvrir';
 $string['topcollsidewidthlang'] = 'en-28px';
 $string['topcolltoggle'] = 'Basculer';
 $string['two'] = 'Deux';
-$string['versionalpha'] = 'Version alpha - Contient très certainement des bogues.  Il s’agit d’une version de développement pour les développeurs « uniquement » !  Ne pensez même pas à l’installer sur un serveur de production !';
+$string['versionalpha'] = 'Version alpha - Contient très certainement des bogues. Il s’agit d’une version de développement pour les développeurs « uniquement » !  Ne pensez même pas à l’installer sur un serveur de production !';
 $string['versionbeta'] = 'Version bêta - Susceptible de contenir des bogues. Prêt à être testé par les administrateurs sur un serveur de test uniquement.';
 $string['versioninfo'] = 'Version {$a->release}, version {$a->version} sur Moodle {$a->moodle}. Fabriqué avec {$a->love} en Grande-Bretagne.';
-$string['versionrc'] = 'Version Release Candidate - Peut contenir des bogues.  Vérifiez-la complètement sur un serveur de test avant de l’envisager sur un serveur de production.';
-$string['versionstable'] = 'Version stable - Peut contenir des bogues.  Vérifiez sur un serveur de test avant d’installer sur votre serveur de production.';
+$string['versionrc'] = 'Version Release Candidate - Peut contenir des bogues. Vérifiez-la complètement sur un serveur de test avant de l’envisager sur un serveur de production.';
+$string['versionstable'] = 'Version stable - Peut contenir des bogues. Vérifiez sur un serveur de test avant d’installer sur votre serveur de production.';
 $string['viewonly'] = 'Voir seulement « {$a->sectionname} »';
 $string['xanswered'] = '{$a->completed} ont répondu';
 $string['xattempted'] = '{$a->completed} ont tenté';

@@ -47,7 +47,7 @@
     }
 }}
 {{#description}}<div class="p-3">{{{description}}}</div>{{/description}}
-<object id="resourceobject_{{id}}" class="resourceobject" data="{{config.wwwroot}}/course/format/tiles/mod_view.php?cmid={{cmid}}" type="{{objectType}}"
+<object id="resourceobject_{{id}}" class="resourceobject" data="{{config.wwwroot}}/course/format/tiles/mod_view.php?cmid={{cmid}}{{#cachebustparam}}&t={{cachebustparam}}{{/cachebustparam}}" type="{{objectType}}"
         width="{{#width}}{{width}}{{/width}}{{^width}}800{{/width}}"
         height="{{#height}}{{height}}{{/height}}{{^height}}600{{/height}}">
     {{! the size is hardcoded in the object obove intentionally because it is adjusted by JS - see $("#page-content").on("click", ".launch-tiles-cm-modal"}}

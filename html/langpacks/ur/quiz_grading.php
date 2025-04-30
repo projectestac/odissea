@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ur', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ur', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'ایسے سوالات بھی دکھا�
 $string['attemptstograde'] = 'درجہ بندی کی کوشش';
 $string['automaticallygraded'] = 'خودکار طور پر درجہ بندی';
 $string['backtothelistofquestions'] = 'سوالات کی فہرست پر واپس جائیں';
-$string['bydate'] = 'تاریخ کے لحاظ سے';
-$string['bystudentfirstname'] = 'طالب علم کے پہلے نام سے';
-$string['bystudentidnumber'] = 'طالب علم کے آئی ڈی نمبر کے ذریعے';
-$string['bystudentlastname'] = 'طالب علم کے آخری نام سے';
 $string['cannotgradethisattempt'] = 'اس کوشش کی درجہ بندی نہیں کی جا سکتی۔';
 $string['cannotloadquestioninfo'] = 'سوال کی قسم مخصوص سوال کی معلومات لوڈ کرنے سے قاصر';
 $string['changeoptions'] = 'اختیارات تبدیل کریں';
@@ -54,7 +50,6 @@ $string['grading:viewstudentnames'] = 'درجہ بندی کرتے وقت طلب�
 $string['gradingall'] = 'اس سوال پر تمام {$a} کوششیں۔';
 $string['gradingattempt'] = '{$a->fullname} کے لیے کوشش نمبر {$a->attempt}';
 $string['gradingattemptsxtoyofz'] = 'گریڈنگ کی کوششیں {$a->of} سے {$a->to} تک {$a->of}';
-$string['gradingattemptwithidnumber'] = '{$a->fullname} ({$a->idnumber}) کے لیے کوشش نمبر {$a->attempt}';
 $string['gradingnextungraded'] = 'اگلی {$a} غیر گریڈ شدہ کوششیں';
 $string['gradingnotallowed'] = 'آپ کو اس کوئز میں جوابات کو دستی طور پر درجہ بندی کرنے کی اجازت نہیں ہے';
 $string['gradingquestionx'] = 'درجہ بندی کا سوال {$a->number}: {$a->questionname}';
@@ -68,7 +63,6 @@ $string['invalidquestionid'] = 'ID {$a} کے ساتھ گریڈ ایبل سوال
 $string['noquestionsfound'] = 'دستی طور پر درجہ بندی کے سوالات نہیں ملے';
 $string['nothingfound'] = 'ظاہر کرنے کے لیے کچھ نہیں ہے';
 $string['options'] = 'اختیارات';
-$string['orderattempts'] = 'آرڈر کی کوششیں';
 $string['pluginname'] = 'دستی درجہ بندی';
 $string['privacy:preference:order'] = 'گریڈنگ کی ضرورت ہے کہ کوششوں کو دکھانے کے لئے کیا حکم ہے۔';
 $string['privacy:preference:pagesize'] = 'درجہ بندی انٹرفیس کے ہر صفحے پر دکھانے کی کتنی کوششیں کی گئی ہیں۔';
@@ -77,7 +71,6 @@ $string['questionname'] = 'سوال کا نام';
 $string['questionsperpage'] = 'فی صفحہ سوالات';
 $string['questionsthatneedgrading'] = 'سوالات جن کی درجہ بندی کی ضرورت ہے';
 $string['questiontitle'] = 'سوال {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} کوششیں{ $a->openspan}درجہ بندی{$a->closespan})۔';
-$string['randomly'] = 'بے ترتیب طور پر';
 $string['saveandnext'] = 'محفوظ کریں اور اگلے صفحے پر جائیں';
 $string['showstudentnames'] = 'طلباء کے نام دکھائیں';
 $string['tograde'] = 'درجہ دینا';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'eu', version '4.1'.
+ * Strings for component 'choicegroup', language 'eu', version '4.4'.
  *
  * @package     choicegroup
  * @category    string
@@ -59,6 +59,7 @@ $string['choicegroupfull'] = 'Talde-aukera hau beteta dago, ez da lekurik geratz
 $string['choicegroupname'] = 'Talde-aukeraketaren izena';
 $string['choicegroupopen'] = 'Hasiera-data';
 $string['choicegroupoptions'] = 'Aukeraketaren aukerak';
+$string['choicegroupoptions_description'] = 'Zehaztu partaideentzat eskuragarri dauden talde-aukerak';
 $string['choicegroupoptions_help'] = 'Hemen da partaideek hautatu ditzaketen taldeak zehazten den lekua.
 
 Ezkerreko zerrendan eskuragarri dauden talde eta talde-multzoak erakusten dira. Taldeak gehitzeko zerrendatik aukeratu itzazu eta "Gehitu" botoian klik egin ezazu. Talde-multzo bateko talde guztiak gehitzeko talde-multzoa aukeratu eta "Gehitu" botoian klik egin ezazu.
@@ -74,6 +75,8 @@ $string['collapse_all_groupings'] = 'Tolestu Talde-multzo Guztiak';
 $string['completiondetail:submit'] = 'Aukeratu talde bat';
 $string['completionsubmit'] = 'Aukera bat hautatzea';
 $string['createdate'] = 'Taldearen sortze-data';
+$string['defaultgroupdescriptionstate'] = 'Zehaztu taldearen deskribapena erakutsiko den ala ez';
+$string['defaultgroupdescriptionstate_desc'] = 'Taldearen deskribapena modu lehenetsian erakutsiko den ala ez.';
 $string['defaultsettings'] = 'Ezarpen lehenetsiak';
 $string['del'] = 'Kendu';
 $string['del_group'] = 'Kendu Taldea';

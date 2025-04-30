@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'ca', version '4.1'.
+ * Strings for component 'quizaccess_openclosedate', language 'ca', version '4.4'.
  *
  * @package     quizaccess_openclosedate
  * @category    string
@@ -27,4 +27,3 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Aquest qüestionari no està disponible';
 $string['pluginname'] = 'Data d\'obertura i tancament per accedir a la pregunta';
-$string['quiznotavailable'] = 'Aquest qüestionari estarà disponible a partir de: {$a}';

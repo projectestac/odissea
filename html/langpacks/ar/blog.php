@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', version '4.1'.
+ * Strings for component 'blog', language 'ar', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'مدونة عن {$a->modtype}: {$a->modname}';
 $string['association'] = 'ارتباط';
 $string['associations'] = 'ارتباطات';
 $string['associationunviewable'] = 'لا يمكن للآخرين مشاهدة هذه المشاركة حتى يتم ربطها بمساق أو تغيير الحقل "نشر إلى"';
+$string['author'] = 'المؤلف';
 $string['autotags'] = 'أضف هذه الوسوم';
 $string['autotags_help'] = 'أدخل واحد أو أكثر من الوسوم المحلية (مفصولة بفوارز) التي تريد إضافتها تلقائياً إلى كل مشاركة مدونة تم نسخها من المدونة الخارجية إلى مدونتك المحلية.';
 $string['backupblogshelp'] = 'في حالة تشغيله، سيتم تضمين المدونات في الحفظ الاحتياطي للموقع';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'مدونة عن هذا {$a->type}';
 $string['blogaboutthiscourse'] = 'إضافة مدخل عن هذا المساق';
 $string['blogaboutthismodule'] = 'إضافة مدخل عن هذا {$a}';
 $string['blogadministration'] = 'إدارة المدونة';
+$string['blogattachment'] = 'مرفق المدونة';
 $string['blogdeleteconfirm'] = 'حذف المدخل \'{$a}\' ؟';
 $string['blogdisable'] = 'تم تعطيل التدوين';
 $string['blogentries'] = 'مشاركات المدونة';
@@ -57,6 +59,7 @@ $string['blogs'] = 'المدونات';
 $string['blogscourse'] = 'مدونات المساق';
 $string['blogssite'] = 'مدونات الموقع';
 $string['blogtags'] = 'وسوم المدونة';
+$string['cannoteditentryorblog'] = 'لا يمكنك تحرير هذا الإدخال أو المدونة';
 $string['cannotviewcourseblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المساق';
 $string['cannotviewcourseorgroupblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المساق/المجموعة';
 $string['cannotviewsiteblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة كل مدونات الموقع';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'وصف المشاركة';
 $string['entryerrornotyours'] = 'هذا المدخل ليس خاص بك';
 $string['entrysaved'] = 'تم حفظ مشاركتك';
 $string['entrytitle'] = 'عنوان المشاركة';
+$string['entrytitlewithlink'] = 'عنوان المُدخل مع الرابط';
 $string['eventblogassociationadded'] = 'متعلقات مدونة تم إنشاؤها';
 $string['eventblogassociationdeleted'] = 'متعلقات مدونة تم حذفها';
 $string['eventblogentriesviewed'] = 'مدخلات مدونة تمت معاينتها';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'نوع مرشح المدونة المحدد غ
 $string['intro'] = 'تم إنشاء هذه التغذية الاخبارية تلقائياً من مدونة واحدة أو أكثر.';
 $string['invalidgroupid'] = 'قم مجموعة غير صحيح';
 $string['invalidurl'] = 'لا يمكن الوصول إلى هذا الرابط';
-$string['linktooriginalentry'] = 'رابط الدخول إلى المدونة الأصلية';
+$string['linktooriginalentry'] = 'مدخل المدونة الأصلية';
 $string['maxexternalblogsperuser'] = 'الحد الأقصى لعدد المدونات الخارجية لكل مستخدم';
 $string['myprofileuserblogs'] = 'عرض جميع مشاركات المدونة';
 $string['name'] = 'الاسم';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'رقم المستخدم الذي أض
 $string['privacy:metadata:post:usermodified'] = 'المستخدم الذي أجرى آخر تعديل للمشاركة';
 $string['privacy:path:blogassociations'] = 'المشاركات المرتبطة';
 $string['privacy:unknown'] = 'غير معروف';
+$string['published'] = 'منشور';
 $string['publishto'] = 'النشر إلى';
 $string['publishto_help'] = 'لديك 3 خيارات:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'لديك 3 خيارات:
 $string['publishtocourse'] = 'المستخدمون المشتركون معك بالمساق';
 $string['publishtocourseassoc'] = 'أعضاء المساق المرتبط';
 $string['publishtocourseassocparam'] = 'أعضاء في {$a}';
+$string['publishtodraft'] = 'المسودة';
 $string['publishtogroup'] = 'المستخدمون المشتركون معك في مجموعة';
 $string['publishtogroupassoc'] = 'أعضاء مجموعتك في المساق المرتبط';
 $string['publishtogroupassocparam'] = 'أعضاء مجموعتك في {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'عرض كل المشاركات';
 $string['viewuserentries'] = 'عرض كل تدوينات {$a}';
 $string['worldblogs'] = 'العالم يستطيع قراءة التدوينات الموضوعة لتكون متاحة للعالم';
 $string['wrongexternalid'] = 'مُعرَّف المدونة الخارجية خاطئ';
-$string['wrongpostid'] = 'مُعرَّف المشاركة غير صحيح';

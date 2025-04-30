@@ -18,7 +18,7 @@
 /**
  *
  * Define all the restore steps that will be used by the restore_jclic_activity_task
- * 
+ *
  * @package    mod
  * @subpackage jclic
  * @copyright  2011 Departament d'Ensenyament de la Generalitat de Catalunya
@@ -50,15 +50,15 @@ class restore_jclic_activity_structure_step extends restore_activity_structure_s
         global $DB;
 
         $data = (object)$data;
-        $oldid = $data->id;
         $data->course = $this->get_courseid();
 
         $data->timeavailable = $this->apply_date_offset($data->timeavailable);
         $data->timedue = $this->apply_date_offset($data->timedue);
 
-        // insert the jclic record
+        // insert the jclic record.
         $newitemid = $DB->insert_record('jclic', $data);
-        // immediately after inserting "activity" record, call this
+
+        // immediately after inserting "activity" record, call this.
         $this->apply_activity_instance($newitemid);
     }
 
@@ -84,7 +84,6 @@ class restore_jclic_activity_structure_step extends restore_activity_structure_s
         global $DB;
 
         $data = (object)$data;
-        $oldid = $data->id;
 
         $oldsessionid = $data->session_id;
         $data->session_id = $this->get_mappingid('jclic_session', $oldsessionid);

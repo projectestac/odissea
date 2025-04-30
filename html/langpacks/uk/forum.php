@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'uk', version '4.1'.
+ * Strings for component 'forum', language 'uk', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -480,7 +480,8 @@ $string['noattachments'] = 'Немає вкладень у цьому повід
 $string['nodiscussions'] = 'Немає тем для обговорення';
 $string['nodiscussionsstartedby'] = 'Цим користувачем не почато жодної дискусії';
 $string['nodiscussionsstartedbyyou'] = 'Ви ще не починали жодної дискусії';
-$string['noguestpost'] = 'Гості не можуть писати повідомлення!';
+$string['noguestpost'] = 'Лише авторизовані користувачі можуть залишати повідомлення на цьому форумі.';
+$string['noguestpost:title'] = 'Увійдіть, щоб продовжити';
 $string['noguestsubscribe'] = 'Вибачте, але гості не можуть отримувати розсилання з форуму.';
 $string['noguesttracking'] = 'Вибачте, Гостю не можна змінювати налаштовування форуму.';
 $string['nomorepostscontaining'] = 'Повідомлень, що містять \'{$a}\', більше не знайдено';
@@ -538,9 +539,6 @@ $string['postbyuser'] = '{$a->post} від {$a->user}';
 $string['postincontext'] = 'Переглянути це повідомлення у контексті';
 $string['postisprivatereply'] = 'Це приватна відповідь. (Це також можуть бачити вчителі та інші користувачі, які мають можливість переглядати приватні відповіді.)';
 $string['postmailinfo'] = 'Це копія повідомлення, опублікованого в {$a}.';
-$string['postmailinfolink'] = 'Це копія повідомлення розміщеного в {$a->coursename}.
-
-Для відповіді натисніть на це посилання: {$a->replylink}';
 $string['postmailnow'] = '<p>Це повідомлення буде відразу відправлене всім адресатам форуму.</p>';
 $string['postmailreply'] = 'Щоб відповісти, натисніть це посилання: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'gl', version '4.1'.
+ * Strings for component 'atto_h5p', language 'gl', version '4.4'.
  *
  * @package     atto_h5p
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ja', version '4.1'.
+ * Strings for component 'hub', language 'ja', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = '名称';
 $string['coursepublished'] = 'このコースが「 {$a} 」に正常に共有されました。';
 $string['courseshortname'] = '省略名';
 $string['courseshortname_help'] = 'あなたのコースの省略名を入力してください。省略名はユニークである必要はありません。';
+$string['coursesnodates'] = '終了日未設定のコース数 ({$a})';
 $string['coursesnumber'] = 'コース数 ({$a})';
+$string['dbtype'] = 'データベースタイプ ({$a})';
 $string['demourl'] = 'デモURL';
 $string['demourl_help'] = 'あなたのコースのデモURLを入力してください。デフォルトはこれはあなたのコースのURLです。デモURLは検索結果のリンクとして表示されます。';
 $string['downloadable'] = 'ダウンロード可';
@@ -98,6 +100,7 @@ $string['postaladdress'] = '住所';
 $string['postaladdress_help'] = 'このサイトの住所またはこのサイトが存在する場所です。';
 $string['postsnumber'] = '投稿数 ({$a})';
 $string['previousregistrationdeleted'] = '以前の登録は {$a} から削除されました。あなたは登録プロセスを再開できます。ありがとうございます。';
+$string['primaryauthtype'] = '主認証タイプ ({$a})';
 $string['questionsnumber'] = '問題数 ({$a})';
 $string['registeredactiveuserdevices'] = '通知を受信するモバイルデバイスを登録したアクティブユーザ数 ({$a})';
 $string['registeredcourses'] = '登録済みコース';
@@ -117,7 +120,7 @@ $string['registerwithmoodleorginfostats'] = 'Moodle統計';
 $string['registerwithmoodleorgremove'] = 'あなたはあなたのサイトを登録解除しようとしています。あなたは重要な通知を受信できなくなります。また、あなたのユーザはMoodleモバイルアプリからプッシュ通知を受信できなくなります。しかし、あなたはいつでも再登録できます! 本当続けてもよろしいですか?';
 $string['registerwithmoodleorgupdate'] = 'あなたのサイト登録を更新する';
 $string['registrationconfirmed'] = 'サイト登録承認';
-$string['registrationconfirmedon'] = 'あなたのサイトご登録ありがとうございます。登録情報は「サイト登録」スケジュールタスクによって常に最新の状態に保たれます。';
+$string['registrationconfirmedon'] = 'あなたのサイトの登録ありがとうございます。登録情報は「サイト登録」スケジュールタスクにより常に最新の状態に保たれます。';
 $string['registrationinfo'] = '登録情報';
 $string['renewregistration'] = '登録を更新する';
 $string['resourcesnumber'] = 'リソース数 ({$a})';
@@ -125,7 +128,7 @@ $string['restartregistration'] = '登録を再開する';
 $string['roleassignmentsnumber'] = 'ロール割り当て数 ({$a})';
 $string['search'] = '検索';
 $string['sendfollowinginfo'] = '詳細情報';
-$string['sendfollowinginfo_help'] = '次の情報はあなたのサイト登録が更新されるたびにMoodleに送信されます (デフォルトでは毎週の「サイト登録」スケジュールタスクの実行時)。この情報は全体的な統計にのみ寄与します。また、どのサイトリストでも公開されません。加えて毎週の自動サイトリンクチェックによりあなたのMoodleリリースバージョンが記録されます。';
+$string['sendfollowinginfo_help'] = '次の情報はあなたのサイト登録が更新されるたびにMoodleに送信されます (デフォルトでは毎週の「サイト登録」スケジュールタスクの実行時)。この情報は全体的な統計にのみ寄与します。また、どのサイトリストにおいても公開されません。加えて毎週の自動サイトリンクチェックによりあなたのMoodleリリースバージョンが記録されます。';
 $string['sendingsize'] = 'お待ちください、コースファイルアップロード中です ({$a->total}Mb) ...';
 $string['sent'] = '... 完了しました。';
 $string['siteadmin'] = '管理者';
@@ -147,20 +150,21 @@ $string['sitelang_help'] = 'あなたのMoodleサイトの主言語は何です�
 $string['sitename'] = '名称';
 $string['sitename_help'] = 'ハブが許可する場合、サイト名はサイト一覧に表示されます。';
 $string['sitephone'] = '電話';
-$string['sitephone_help'] = 'あなたの電話番号はハブ管理者のみ閲覧することができます。';
+$string['sitephone_help'] = 'あなたの電話番号はハブ管理者のみ閲覧できます。';
 $string['siteprivacy'] = 'サイトリスティング';
-$string['siteprivacy_help'] = 'あなたのサイトをリンク付きまたはリンクなしで登録サイト一覧に公開することができます。';
+$string['siteprivacy_help'] = 'あなたのサイトをリンク付きまたはリンクなしで登録サイト一覧に公開できます。';
 $string['siteprivacylinked'] = '私のサイト名をリンク付きで表示してください';
-$string['siteprivacynotpublished'] = '私のサイトを表示しないでください';
+$string['siteprivacynotpublished'] = '私のサイトを記載しないでください';
 $string['siteprivacypublished'] = 'サイト名のみ表示してください';
 $string['siteregistrationcontact'] = 'コンタクトフォームを表示する';
-$string['siteregistrationcontact_help'] = 'この設定を有効にした場合、私たちのMoodleコミュニティの他の人 (ログインアカウントが必要な人) は私たちのMoodleコミュニティサイトのフォーム経由であなたに連絡することができます。他の人はあなたのメールアドレスを閲覧することはできません。';
+$string['siteregistrationcontact_help'] = 'この設定を有効にした場合、私たちのMoodleコミュニティの他の人 (ログインアカウントが必要な人) は私たちのMoodleコミュニティサイトのフォーム経由であなたに連絡できます。しかし、他の人はあなたのメールアドレスは確認できません。';
 $string['siteregistrationemail'] = '新しいMoodleリリース、セキュリティ警告およびその他重要ニュースの通知';
 $string['siteregistrationemail_help'] = 'あなたには新しいMoodleリリース、セキュリティ警告およびその他重要ニュースの通知に関して私たちの配信頻度の低いメーリングリストを購読するオプションがあります。';
 $string['siteregistrationupdated'] = 'サイト登録が更新されました。';
 $string['siterelease'] = 'Moodleリリース';
 $string['siterelease_help'] = 'このサイトのMoodleリリースナンバです。';
 $string['sitereleasenum'] = 'Moodleリリース ({$a})';
+$string['sitetheme'] = 'サイトテーマ ({$a})';
 $string['siteurl'] = 'サイトURL';
 $string['siteurl_help'] = 'URLはこのサイトのアドレスです。プライバシー設定で人のサイトアドレス閲覧を許可している場合、このURLが使用されます。';
 $string['siteversion'] = 'Moodleバージョン';
@@ -173,7 +177,7 @@ $string['unregister'] = '登録解除';
 $string['unregistrationerror'] = 'サイト登録解除中にエラーが発生しました: {$a}';
 $string['update'] = '更新';
 $string['updatesiteregistration'] = '登録を更新する';
-$string['urlalreadyregistered'] = 'あなたのサイトはすでに登録されているようです。これは何らかの問題が生じたことを意味します。再度登録できるようサイトディレクトリ管理者にあなたの登録解除を申請してください。';
-$string['usedifferentemail'] = '異なるメールを使用する';
+$string['urlalreadyregistered'] = 'あなたのサイトはすでに登録されているようです。これは何らかの問題が生じたことを意味します。あなたが再度登録できるようサイトディレクトリ管理者に登録解除を申請してください。';
+$string['usedifferentemail'] = '別のメールを使用する';
 $string['usersnumber'] = 'ユーザ数 ({$a})';
 $string['wrongtoken'] = '不明な理由により登録に失敗しました (ネットワーク?)。再度お試しください。';

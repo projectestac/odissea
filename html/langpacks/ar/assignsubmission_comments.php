@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'ar', version '4.1'.
+ * Strings for component 'assignsubmission_comments', language 'ar', version '4.4'.
  *
  * @package     assignsubmission_comments
  * @category    string
@@ -30,6 +30,6 @@ $string['blindmarkingviewfullname'] = 'المشارك {$a->participantnumber} ({
 $string['default'] = 'ممكّن بشكل افتراضي';
 $string['default_help'] = 'إذا اخترتها ، سيتم تمكين هذه الطريقة من التقديم  بشكل افتراضي لتقديم كافة الواجبات الجديدة.';
 $string['enabled'] = 'تعليقات التسليم';
-$string['enabled_help'] = 'إذا مكّن ، يمكن للطلاب ترك تعليقات على تقديماتهم. يمكن استخدام هذا للسماح للطلاب تنبيه المصحح حول الملفات التي هي الملف الرئيسي في حالات ترابط الملفات، على سبيل المثال.';
+$string['enabled_help'] = 'عند تمكينه، يمكن للطلاب ترك تعليقات على تقديماتهم. يمكن استعماله للسماح للطلاب بتحديد الملف الرئيسي عندما يكون تسليمهم مكونًا من ملفات مترابطة بعضها مع البعض الآخر.';
 $string['pluginname'] = 'تعليقات التسليم';
 $string['privacy:metadata:commentpurpose'] = 'التعليقات بين الطالب والمعلم عن التسليم';

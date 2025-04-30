@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ar', version '4.1'.
+ * Strings for component 'course', language 'ar', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'بلا تذييل';
 $string['activitychooserrecommendations'] = 'النشاطات الموصى بها';
 $string['activitychoosersettings'] = 'إعدادات منتقي النشاطات';
 $string['activitychoosertabmode'] = 'تبويبات منتقي النشاطات';
-$string['activitychoosertabmode_desc'] = 'منتقي النشاطات يتيح للمعلم بسهولة إختيار النشاطات والموارد لإضافتها إلى المساق. هذا الإعداد يحدد التبويبات التي ينبغي لها أن تظهر فيه. لاحظ أن التبويب المعلَّم بنجمة يظهر فقط للمستخدم الذي وضع نجمة لنشاط أو أكثر، أما التبويب الموصى به فيظهر فقط إذا قام المشرف على الموقع بتأشير بعض النشاطات على أنها موصى بها.';
+$string['activitychoosertabmode_desc'] = 'منتقي النشاطات يسرد النشاطات والموارد للمعلم ليتمكن من إضافتها إلى مساقه. لإضافة أي منها إلى تبويب المعلَّمة بنجمة، إذهب إلى <a href=\'../course/recommendations.php\'>Recommended activities</a>.';
+$string['activitychoosertabmodefive'] = 'المُعلَّمة بنجمة، الموصى بها، الكل';
+$string['activitychoosertabmodefour'] = 'المُعلَّمة بنجمة، الموصى بها، الكل، النشاطات، الموارد';
 $string['activitychoosertabmodeone'] = 'المعلَّمة بنجمة، الكل، النشاطات، الموارد، الموصى بها';
+$string['activitychoosertabmodesix'] = 'المُعلَّمة بنجمة، الموصى بها، النشاطات، الموارد';
 $string['activitychoosertabmodethree'] = 'المعلَّمة بنجمة، النشاطات، الموارد، الموصى بها';
 $string['activitychoosertabmodetwo'] = 'المعلَّمة بنجمة، الكل، الموصى بها';
 $string['activitydate:closed'] = 'مغلق:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'علِّم النشاط {$a} بنجمة';
 $string['aria:recommendedtab'] = 'النشاطات الموصى بها';
 $string['browsecourseadminindex'] = 'استعراض إدارة المساق بهذا الفهرس.';
 $string['browsesettingindex'] = 'استعراض الإعدادات بهذا الفهرس.';
+$string['communicationroomlink'] = 'المحادثة من المشاركين في المساق';
 $string['completion_automatic:done'] = 'منجز:';
 $string['completion_automatic:failed'] = 'فشل:';
 $string['completion_automatic:todo'] = 'للقيام به:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} مؤشر من 
 $string['completionrequirements'] = 'متطلبات الإكمال لـ {$a}';
 $string['courseaccess'] = 'الوصول إلى المساق';
 $string['coursealreadyfinished'] = 'لقد انتهى المساق بالفعل';
+$string['coursecommunication_desc'] = 'خدمة الاتصالات الافتراضية للمقررات الجديدة. المقررات الموجودة لن يكون لديها أي مزود محدد بشكل افتراضي.';
 $string['coursecontentnotification'] = 'إرسال إشعار تغيير المحتوى';
 $string['coursecontentnotification_help'] = 'قم بتأشير المربع لإشعارمستخدمي المساق بشأن أي نشاط أو مورد جديد أو محدَّث. المستخدمون القادرون على الوصول إلى النشاط أو المورد وحدهم سيتلقون الإشعار.';
 $string['coursecontentnotifnew'] = 'المحتوى الجديد في {$a->coursename}';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> هو جديد في المساق <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">تغيير تفضيلات إشعاراتك</a></p>';
 $string['coursecontentnotifupdate'] = 'تغير محتوى {$a->coursename}';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> قد تم تغييره في المساق <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">تغيير تفضيلات إشعاراتك</a></p>';
+$string['coursecount'] = 'عداد المقررات';
 $string['coursenotyetfinished'] = 'لم ينتهي المساق بعد';
 $string['coursenotyetstarted'] = 'لم يبدأ المساق بعد';
 $string['courseparticipants'] = 'المشاركون في المساق';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'الكل';
 $string['customfield_visibletoteachers'] = 'المعلمون';
 $string['customfieldsettings'] = 'الإعدادات الشائعة لتخصيص حقول المقررات الدراسية';
 $string['daystakingcourse'] = 'عدد أيام أخذ المساق';
+$string['defaultsettingscategory'] = 'الإعدادات الافتراضية';
 $string['downloadcontent'] = 'التضمين في تنزيلات المساق (إذا كانت تلك الميزة مُمَكَّنة)';
 $string['downloadcontent_help'] = 'هذا الإعداد يقرر فيما إذا كان بالإمكان تنزيل هذا النشاط عند تمكين تنزيل محتوى المقرر في إعداداته';
 $string['downloadcourseconfirmation'] = 'أنت على وشك تنزيل ملف مضغوط لمحتوى المساق (باستثناء العناصر غير القابلة للتنزيل وأي ملفات يزيد حجمها عن {$a}).';
@@ -92,7 +99,9 @@ $string['downloadcoursecontent_help'] = 'هذا الإعداد يحدد ما إ�
 $string['enabledownloadcoursecontent'] = 'تمكين تنزيل محتوى المقرر';
 $string['errorendbeforestart'] = 'تاريخ النهاية ({$a}) يسبق تاريخ بداية المساق';
 $string['favourite'] = 'المقررات الدراسية المميزة بنجمه';
+$string['gotosection'] = 'الذهاب إلى القسم {$a}';
 $string['gradetopassnotset'] = 'لم يتم تحديد علامة النجاح لهذا المقرر. قد يُصار إلى وضعها في عنصر التقييم للمقرر (إعداد سجل التقديرات).';
+$string['hideendedcoursestask'] = 'إخفاء المقررات عند تاريخ الانتهاء';
 $string['informationformodule'] = 'معلومات عن النشاط {$a}';
 $string['module'] = 'النشاط';
 $string['namewithlink'] = 'اسم التصنيف مع رابطه';
@@ -109,6 +118,8 @@ $string['noteachinginfomessage'] = 'مرحباً {$a->userfirstname}،
 $string['participants:perpage'] = 'عدد المشاركين لكل صفحة';
 $string['participants:perpage_help'] = 'عدد المشاركين المعروضين في الصفحة الواحدة من صفحات المشاركين لكل مساق.';
 $string['participantsnavigation'] = 'تنقل المشاركين.';
+$string['pdfexportfont'] = 'خط PDF';
+$string['pdfexportfont_help'] = 'الخط المزمع استعماله عند توليد ملفات PDF، مثل تسليمات الواجبات.';
 $string['privacy:completionpath'] = 'إكتمال مساق';
 $string['privacy:favouritespath'] = 'معلومات المقررات الدراسية المميزة بنجمة';
 $string['privacy:metadata:activityfavouritessummary'] = 'نظام المقررات الدراسية يحتوي على معلومات تتعلق بأي من فقرات منتقي النشاطات قد تم تعليمها بنجمة من قبل المستخدم';
@@ -121,6 +132,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} بعد بد�
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} قبل بدء المساق';
 $string['searchactivitiesbyname'] = 'إبحث عن النشاطات بواسطة الاسم';
 $string['searchresults'] = 'نتائج البحث: {$a}';
+$string['sectionlink'] = 'الرابط الدائم';
+$string['showstartedcoursestask'] = 'إظهار المقررات عند تاريخ البدء';
 $string['studentsatriskincourse'] = 'الطالب في خطر في مساق {$a}';
 $string['studentsatriskinfomessage'] = 'مرحباً {$a->userfirstname}،
 <p>الطلبة في المساق {$a->coursename} تم تشخيصهم بأنهم معرضون إلى خطر.</p>';
@@ -152,3 +165,4 @@ $string['targetlabelstudentgradetopassno'] = 'الطالب الذي من الم�
 $string['targetlabelstudentgradetopassyes'] = 'طالب في خطر عدم استيفاء الحد الأدنى من الدرجة لاجتياز المساق.';
 $string['targetlabelteachingno'] = 'المقررات الدراسية المعرضة إلى خطر أن لا تبدأ';
 $string['targetlabelteachingyes'] = 'المستخدمون الذين لديهم صلاحيات التدريس الذين يستطيعون الوصول إلى المساق';
+$string['totalactivities'] = 'النشاطات: {$a}';

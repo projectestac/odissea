@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'en', version '4.1'.
+ * Strings for component 'block_dedication', language 'en', version '4.4'.
  *
  * @package     block_dedication
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_filter_courseid'] = 'Course Name';
+$string['admin_filter_courseid'] = 'Course name';
 $string['admin_filter_courseid_help'] = 'Filter the report by the course name';
 $string['admin_filter_form'] = 'Course dedication configuration';
 $string['admin_filter_form_help'] = 'Time is estimated based in the concepts of Session and Session duration applied to log entries.
@@ -86,6 +86,6 @@ $string['timespentincourse'] = 'Time spent in course';
 $string['timespentreport'] = 'Full report';
 $string['timespenttasknotrunning'] = 'Time spent calculation task has not run yet.';
 $string['totaltimespent'] = '<strong>Total of all time spent in course:</strong> {$a}';
-$string['user_dedication_datasource'] = 'Users Dedication';
+$string['user_dedication_datasource'] = 'User dedication';
 $string['userdedication'] = 'Detailed course dedication of <em>{$a}</em>.';
 $string['viewsessiondurationreport'] = 'View session duration report';

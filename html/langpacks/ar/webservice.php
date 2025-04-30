@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ar', version '4.1'.
+ * Strings for component 'webservice', language 'ar', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -66,7 +66,7 @@ $string['deletetoken'] = 'حذف الترميز';
 $string['deletetokenconfirm'] = 'هل ترغب حقاً بحذف ترميز خدمة الويب لهذا للمستخدم <strong>{$a->user}</strong> من الخدمة <strong>{$a->service}</strong>؟';
 $string['deprecated'] = 'مُهمَل';
 $string['disabledwarning'] = 'كل بروتوكولات خدمة الويب معطلة. يمكن العثور على الإعداد "تمكين خدمات الويب" في المزايا المتقدمة.';
-$string['doc'] = 'التوثيق';
+$string['doc'] = 'التوثيقات';
 $string['docaccessrefused'] = 'ليس مسموحاً لك بمعاينة توثيقات هذا الترميز';
 $string['downloadfiles'] = 'يستطيع تنزيل الملفات';
 $string['downloadfiles_help'] = 'عند تمكينه، أي مستخدم سيستطيع تنزيل الملفات بمفاتيحه الأمنية. بلا شك، هم مقيدون بالملفات المسموح لهم بتنزيلها في الموقع.';
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'النص البرمجي لـ PHP لـ REST (طلب P
 $string['potusers'] = 'ليسوا مستخدمين مصرح لهم';
 $string['potusersmatching'] = 'ليسوا مستخدمين مصرح لهم يطابقون';
 $string['print'] = 'طباعة الكل';
-$string['privacy:metadata:serviceusers'] = 'قائمة المستخدمين الذين بإمكانهم استعمال خدمة خارجية معينة';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'هناك تقييد على IP لاستعمال الخدمة';
-$string['privacy:metadata:serviceusers:timecreated'] = 'تاريخ إنشاء السجل';
-$string['privacy:metadata:serviceusers:userid'] = 'مُعرَّف المستخدم';
-$string['privacy:metadata:serviceusers:validuntil'] = 'التاريخ الذي تستمر إليه المصادقة';
-$string['privacy:metadata:tokens'] = 'سِجل الترميزات للتفاعل مع مودل عبر خدمات الويب أو تطبيقات الجوال';
-$string['privacy:metadata:tokens:creatorid'] = 'مُعرَّف المستخدم الذي أنشأ الترميز';
-$string['privacy:metadata:tokens:iprestriction'] = 'هناك تقييد على IP لاستعمال هذا الترميز';
-$string['privacy:metadata:tokens:lastaccess'] = 'تاريخ آخر تعديل في الترميز';
-$string['privacy:metadata:tokens:privatetoken'] = 'ترميز أكثر خصوصية عادة ما يستعمل للتحقق من عمليات معينة، مثل SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'تاريخ إنشاء الترميز';
-$string['privacy:metadata:tokens:token'] = 'ترميز المستخدم';
-$string['privacy:metadata:tokens:tokentype'] = 'نوع الترميز';
-$string['privacy:metadata:tokens:userid'] = 'مُعرَّف المستخدم العائد له الترميز';
-$string['privacy:metadata:tokens:validuntil'] = 'التاريخ الذي يستمر إليه هذا الترميز صالحاً';
-$string['privacy:request:notexportedsecurity'] = 'غير مُصدَّر لدواعي الأمان';
+$string['privacy:metadata'] = 'إن واجهة برمجة تطبيق خدمات الويب لا تخزن أي بيانات.';
 $string['protocol'] = 'البروتوكول';
 $string['removefunction'] = 'أزل';
 $string['removefunctionconfirm'] = 'هل تريد حقاً إزالة الوظيفة "{$a->function}" من الخدمة "{$a->service}"؟';
@@ -211,11 +196,16 @@ $string['testwithtestclient'] = 'إختبر الخدمة';
 $string['testwithtestclientdescription'] = 'قم بمحاكاة الوصول الخارجي إلى الخدمة باستعمال وكيل اختبار خدمة الويب. قم باختيار بروتوكول مُمَكن مع مصادقة الترميز. <strong>تحذير: الوظائف التي تختبرها سيتم تنفيذها لهذا المستخدم، لذلك كن على حذر بشأن ما تختار اختباره!</strong>';
 $string['token'] = 'الترميز';
 $string['tokenauthlog'] = 'مصادقة الترميز';
+$string['tokencopied'] = 'تم نسخ النص إلى الحافظة';
 $string['tokencreatedbyadmin'] = 'يمكن فقط إعادة ضبطه من قبل المشرف (*)';
 $string['tokencreator'] = 'المنشئ';
 $string['tokenfilter'] = 'مرشح الترميزات';
 $string['tokenfilterreset'] = 'إظهار كل الترميزات';
 $string['tokenfiltersubmit'] = 'إظهار الترميزات المطابقة فقط';
+$string['tokenname'] = 'الاسم';
+$string['tokennamehint'] = 'إذا لم تُدخل الاسم فسيتم استعمال اسم عشوائي.';
+$string['tokennameprefix'] = 'خدمة الويب-{$a}';
+$string['tokennewmessage'] = 'إنسخ الترميز الآن. لن يتم إظهاره مجددًا بمجرد مغادرتك هذه الصفحة.';
 $string['unknownoptionkey'] = 'مفتاح خيار مجهول ({$a})';
 $string['unnamedstringparam'] = 'معامل نصي غير مسمى.';
 $string['updateusersettings'] = 'تحديث';
@@ -226,12 +216,11 @@ $string['userasclientsdescription'] = 'الخطوات الآتية تساعدك 
 $string['usermissingcaps'] = 'إمكانيات مفقودة: {$a}';
 $string['usernameorid'] = 'اسم المستخدم / مُعرَّف المستخدم';
 $string['usernameorid_help'] = 'أدخل اسم المستخدم أو مُعرَّف المستخدم.';
-$string['usernameoridnousererror'] = 'تعذر العثور على مستخدمين باسم المستخدم / مُعرَّف المستخدم هذا.';
-$string['usernameoridoccurenceerror'] = 'تم العثور على أكثر من مستخدم باسم المستخدم هذا. لطفاً، أدخل مُعرَّف المستخدم.';
 $string['usernotallowed'] = 'المستخدم ليس مسموحاً له بالوصول إلى هذه الخدمة. أولاً، عليك تمكين هذا المستخدم عبر صفحة إدارة المستخدمين المسموح لهم بـ {$a}.';
 $string['userservices'] = 'خدمات المستخدم: {$a}';
 $string['usersettingssaved'] = 'تم حفظ إعدادات المستخدم';
 $string['validuntil'] = 'صالحة حتى';
+$string['validuntil_empty'] = 'ليس لهذا الترميز تاريخ انتهاء صلاحية.';
 $string['validuntil_help'] = 'عند تأشيره، سيتم إبطال الخدمة بعد هذا التاريخ لهذا المستخدم.';
 $string['webservice'] = 'خدمة الويب';
 $string['webservices'] = 'خدمات الويب';

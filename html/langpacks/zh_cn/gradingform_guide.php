@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'zh_cn', version '4.1'.
+ * Strings for component 'gradingform_guide', language 'zh_cn', version '4.4'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -61,7 +61,7 @@ $string['err_nodescription'] = '给学生的说明不能为空';
 $string['err_nodescriptionmarkers'] = '给评分人的说明不能为空';
 $string['err_nomaxscore'] = '标准最高分不能为空';
 $string['err_noshortname'] = '标准名称不能为空';
-$string['err_scoreinvalid'] = '给 {$a->criterianame} 的分数无效，最高分为：{$a->maxscore}';
+$string['err_scoreinvalid'] = '给 {$a->criterianame} 的分数无效，最高分是：{$a->maxscore}';
 $string['err_scoreisnegative'] = '给予“{$a->criterianame}”的分数无效，不允许使用负值';
 $string['err_shortnametoolong'] = '标准名称必须少于 256 个字符';
 $string['gradingof'] = '{$a} 评分';

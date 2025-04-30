@@ -103,14 +103,6 @@ abstract class backup_factory {
         if (!$coursemodule = get_coursemodule_from_id(false, $moduleid)) {
             throw new backup_task_exception('activity_task_coursemodule_not_found', $moduleid);
         }
-
-        // XTEC ************ AFEGIT - Only enabled modules must be included in backups
-        // 2015.07.01 @pferre22
-        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($coursemodule->modname)) {
-            throw new backup_task_exception('activity_task_coursemodule_not_found', $moduleid);
-        }
-        // ************ FI
-
         $classname = 'backup_' . $coursemodule->modname . '_activity_task';
         return new $classname($coursemodule->name, $moduleid);
     }
@@ -167,7 +159,7 @@ abstract class backup_factory {
     /**
      * Dispatches the creation of the @backup_plan to the proper format builder
      */
-    static public function build_plan($controller) {
+    public static function build_plan($controller) {
         backup_plan_builder::build_plan($controller);
     }
 }

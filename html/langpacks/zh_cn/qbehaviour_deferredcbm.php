@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'zh_cn', version '4.1'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'zh_cn', version '4.4'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -42,9 +42,9 @@ $string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM 信心加权分 {$a}';
 $string['certainty'] = '确定';
 $string['certainty-1'] = '不知道';
-$string['certainty1'] = '不太确定（低于67%）';
-$string['certainty2'] = '还算确定（超过67%）';
-$string['certainty3'] = '非常确定（高于80%）';
+$string['certainty1'] = 'C=1 （不确定： <67%）';
+$string['certainty2'] = 'C=2 （中： >67%）';
+$string['certainty3'] = 'C=3（非常确定：>80%）';
 $string['certainty_help'] = '基于确定性的评分需要你来回答对于你的答案有多确定。可选的等级为：
 确定性等级| C=1（不确定）| C=2（中等）| C=3（非常确定）
  -------------- | ------------ | --------- | ----------------

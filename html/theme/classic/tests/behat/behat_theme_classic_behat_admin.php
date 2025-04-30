@@ -82,15 +82,15 @@ class behat_theme_classic_behat_admin extends behat_admin {
                 // Multi element settings, interacting only the first one.
                 $fieldxpath = "//*[label[contains(., $label)]|span[contains(., $label)]]" .
                         "/ancestor::div[contains(concat(' ', normalize-space(@class), ' '), ' form-item ')]" .
-                        "/descendant::div[contains(concat(' ', @class, ' '), ' form-group ')]" .
                         "/descendant::*[self::input | self::textarea | self::select]" .
                         "[not(./@type = 'submit' or ./@type = 'image' or ./@type = 'hidden')]";
                 $fieldnode = $this->find('xpath', $fieldxpath);
             }
 
             $this->execute('behat_forms::i_set_the_field_with_xpath_to', [$fieldxpath, $value]);
-
             $this->execute("behat_general::i_click_on", [get_string('savechanges'), 'button']);
+            // Wait for the page to be redirected.
+            $this->execute("behat_general::i_wait_to_be_redirected");
         }
     }
 }

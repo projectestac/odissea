@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'es', version '4.1'.
+ * Strings for component 'portfolio_googledocs', language 'es', version '4.4'.
  *
  * @package     portfolio_googledocs
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'es', version '4.1'.
+ * Strings for component 'checkmark', language 'es', version '4.4'.
  *
  * @package     checkmark
  * @category    string
@@ -53,19 +53,13 @@ $string['attendancegradelink_help'] = 'Active esta configuración para enlazar l
 $string['attendancegradelink_hint'] = 'Nota: Las calificaciones calculadas automáticamente están enlazadas a la asistencia.';
 $string['attendancestatus'] = 'Estatus actual de su asistencia';
 $string['attendant'] = 'Asistente';
-$string['autograde_all'] = 'Calificar todos los envíos';
 $string['autograde_confirm'] = 'Usted está a punto de actualizar calificaciones y retroalimentación para {$a->total}</strong>. <strong>{$a->graded}</strong> calificaciones y retroalimentaciones anteriores serán sobre-escritas.';
 $string['autograde_confirm_continue'] = '¿Está Usted seguro de querer continuar?';
-$string['autograde_custom'] = 'Calificar los usuarios seleccionados';
 $string['autograde_error'] = 'Ocurrió un error durante la auto-calificación.';
 $string['autograde_failed'] = '¡Falló la auto-calificación!';
-$string['autograde_no_users_selected'] = 'Usted no ha seleccionado ningún usuario para calificar. Seleccione a los usuarios requeridos mediante las casillas de selección en la columna izquierda de la tabla inferior.';
 $string['autograde_non_numeric_grades'] = 'La auto-calificación requiere que se configure una calificación numérica máxima. Esto puede configurarse en las configuraciones-de-la-instancia.';
 $string['autograde_notsupported'] = 'Esta escala no está soportada por la calificación automática.';
 $string['autograde_one_success'] = '¡ Auto-calificado exitoso ! Un envío actualizado.';
-$string['autograde_req'] = 'Calificación des-calificada';
-$string['autograde_str'] = 'Auto-calificar';
-$string['autograde_str_help'] = 'La auto-calificación calcula las calificaciones de acuerdo a los puntos por ejemplo y los ejemplos seleccionados. Añade los puntos para cada ejemplo revisado y usa esto como la calificación del usuario. <ul><li>calificar usuarios seleccionados - solamente califica a estos usuarios, que están revisados en la lista. Si un usuario no ha enviado nada, se añade un envío vacío.</li><li>calificar a quien necesite calificarse - califica a todos los envíos que tengan fecha más reciente que la calificación correspondiente</li><li>calificar todos los envíos - califica todos los envíos presentes (para esta instancia). NO añade envíos vacíos.</li></ul><br />La calificación se calcula  basándose en calificaciones de ejemplos elegidos y ejemplos revisados:<ul><li>calificación estándar: aquí cada ejemplo es ponderado igualmente (calificación integral por ejemplo). La calificación se calcula al multiplicar la suma de los ejemplos revisados con el cociente de la calificación de la marca de verificación y el número de marcas de verificación.</li><li>ponderaciones de ejemplos individuales: la calificación es la suma de calificaciones de ejemplo para cada ejemplo revisado (de acuerdo a las configuraciones de la  instancia).</li></ul>';
 $string['autograde_strall'] = 'Todos los envíos';
 $string['autograde_strchanged'] = 'Debido a la auto-calificación, las calificaciones para <strong>{$a}</strong> estudiante(s) serán cambiadas.';
 $string['autograde_strmultiplesubmissions'] = '{$a} envíos';
@@ -83,9 +77,6 @@ $string['cantfixevent'] = 'No sepudo reparar evento con ID {$a->id}, named {$a->
 $string['cfg_nowarning'] = 'Sin advertencia';
 $string['cfg_pdfexampleswarning'] = 'Cantidad de ejemplos a mostrar una advertencia para exportación PDF';
 $string['cfg_pdfexampleswarning_desc'] = 'Cantidad mínima de ejemplos arriba para los que se muestra una advertencia de que no puede garantizarse una exportación PDF razonable. Usualmente Usted no tiene que cambiar esto, excepto si Usted no quisiera mostrarlo para nada o si Usted quisiera ajustarlo para su instalación.';
-$string['checkbrokengradebookgrades'] = 'Revisar calificaciones rotas en Libro de calificaciones';
-$string['checkbrokengradebookgrades_desc'] = 'Debido a un problema con la versión 2.9.1 de Checkmark (marca de verificación), las calificaciones no han sido transferidas correctamente al Libro de calificaciones. Los envíos siguientes han sido afectados por este problema:';
-$string['checkbrokengradebookgrades_mail'] = 'Debido a un problema con la versión 2.9.1 de Checkmark (marca de verificación), las calificaciones no han sido transferidas correctamente al Libro de calificaciones. Los envíos siguientes han sido afectados por este problema y fueron corregidos automáticamente:';
 $string['checkmark:addinstance'] = 'Añadir instancia de marca de verificación';
 $string['checkmark:grade'] = 'Calificar marca de verificación';
 $string['checkmark:gradepresentation'] = 'Presentación de calificación';

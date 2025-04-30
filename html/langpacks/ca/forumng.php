@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'ca', version '4.1'.
+ * Strings for component 'forumng', language 'ca', version '4.4'.
  *
  * @package     forumng
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a: &lsquo;{$a}&rsquo;';
+$string['directlink'] = 'Enllaç permanent <span class=\'accesshide\'> a la publicació {$a}</span>';
 $string['event:discussionviewed'] = 'Visualitza el debat';
 $string['filterdiscussions'] = 'Visualitza els debats amb etiqueta';
 $string['forumng:viewdiscussion'] = 'Visualitza els debats';

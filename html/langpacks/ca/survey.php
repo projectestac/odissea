@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', version '4.1'.
+ * Strings for component 'survey', language 'ca', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Actual';
 $string['actualclass'] = 'Classe actual';
 $string['actualstudent'] = '{$a} actual';
 $string['allquestionrequireanswer'] = 'Totes les preguntes són obligatòries i s\'han de respondre';
-$string['allquestions'] = 'Tots els temes en ordre, tots els estudiants';
 $string['allscales'] = 'Totes les escales, tots els estudiants';
 $string['alreadysubmitted'] = 'Ja heu tramès aquesta informació';
 $string['analysisof'] = 'Anàlisi de {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Quin esdeveniment li ha sorprès més?';
 $string['ciq5short'] = 'El moment més sorprenent';
 $string['ciqintro'] = 'Contesta les següents preguntes pensant en els esdeveniments ocorreguts durant la setmana passada en aquesta classe.';
 $string['ciqname'] = 'Incidents crítics';
-$string['clicktocontinue'] = 'Fes clic aquí per a continuar';
 $string['clicktocontinuecheck'] = 'Fes clic aquí per a revisar i continuar';
 $string['colles1'] = 'el meu aprenentatge es centra en assumptes que m’interessen.';
 $string['colles10'] = 'Demano a altres estudiants que m’expliquin les seves  idees.';
@@ -261,4 +259,3 @@ $string['surveytype_help'] = 'Hi ha tres tipus d\'exàmens disponibles:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Gràcies por contestar l\'enquesta, {$a}';
 $string['time'] = 'Temps';
-$string['viewsurveyresponses'] = 'Visualitza {$a} respostes a l’enquesta';

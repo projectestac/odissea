@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_presets', language 'ar', version '4.1'.
+ * Strings for component 'block_admin_presets', language 'ar', version '4.4'.
  *
  * @package     block_admin_presets
  * @category    string
@@ -45,6 +45,7 @@ $string['eventpresetreverted'] = 'تحضير مسبق تم التراجع عنه
 $string['eventpresetslisted'] = 'تحضيرات مسبقة تم سردها';
 $string['falseaction'] = 'الإجراء غير مدعوم في هذا الإصدار';
 $string['falsemode'] = 'النمط غير مدعوم في هذا الإصدار';
+$string['imported'] = 'مستورد';
 $string['newvalue'] = 'قيمة الإعداد الجديد';
 $string['oldvalue'] = 'قيمة الإعداد القديم';
 $string['privacy:null_reason'] = 'كتلة تحضيرات المشرف المسبقة لا تؤثر على أو تخزن أي بيانات مستخدمين';

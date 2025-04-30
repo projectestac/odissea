@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'el', version '4.1'.
+ * Strings for component 'auth_mnet', language 'el', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'Αυθεντικοποίηση στο MNet';
 $string['privacy:metadata:external:mahara'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:mnet_external:address'] = 'Η διεύθυνση του χρήστη.';
-$string['privacy:metadata:mnet_external:aim'] = 'Το αναγνωριστικό AIM του χρήστη.';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Ένα εναλλακτικό όνομα για τον χρήστη.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Μια προτίμηση ως προς το αν ο χρήστης θα γράφεται αυτόματα στα φόρουμ στα οποία έχει αναρτήσει.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Μια προτίμηση χρήστη για τον τύπο του ημερολογίου που θα χρησιμοποιήσει.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Μια προτίμηση
 $string['privacy:metadata:mnet_external:firstaccess'] = 'Πότε απέκτησε πρόσβαση πρώτη φορά αυτός ο χρήστης.';
 $string['privacy:metadata:mnet_external:firstname'] = 'Το μικρό όνομα του χρήστη.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Οι φωνητικές λεπτομέρειες για το (μικρό) όνομα του χρήστη.';
-$string['privacy:metadata:mnet_external:icq'] = 'Ο αριθμός ICQ του χρήστη.';
 $string['privacy:metadata:mnet_external:id'] = 'Το αναγνωριστικό του χρήστη.';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Αριθμός αναγνώρισης που δίνεται από το ίδρυμα';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Εναλλακτικό κείμενο για την εικόνα του χρήστη.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Οι φωνητι�
 $string['privacy:metadata:mnet_external:maildigest'] = 'Μια ρύθμιση για την σύνοψη αλληλογραφίας για αυτόν το χρήστη.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Προτίμηση του χρήστη για την εμφάνιση της διεύθυνσης ηλε.ταχυδρομείου του σε άλλους χρήστες.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Το μεσαίο όνομα του χρήστη';
-$string['privacy:metadata:mnet_external:msn'] = 'Το αναγνωριστικό MSN του χρήστη.';
 $string['privacy:metadata:mnet_external:phone1'] = 'Αριθμός τηλεφώνου για τον χρήστη.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Ένας επιπρόσθετος αριθμός τηλεφώνου για τον χρήστη.';
 $string['privacy:metadata:mnet_external:picture'] = 'Τα στοιχεία της εικόνας που σχετίζονται με αυτόν τον χρήστη.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει συμφωνήσει με την πολιτική ιστοτόπου.';
-$string['privacy:metadata:mnet_external:skype'] = 'Το αναγνωριστικό Skype του χρήστη.';
 $string['privacy:metadata:mnet_external:suspended'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει προσωρινή απαγόρευση σε αυτό το σύστημα.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Η ζώνη ώρας στην οποία ανήκει ο χρήστης.';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Προτίμηση για φόρουμ και παρακολούθησή τους.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Η μάσκα (δυαδικών ψηφίων) εμπιστοσύνης';
-$string['privacy:metadata:mnet_external:url'] = 'Μια διεύθυνση URL σχετική με αυτόν τον χρήστη.';
 $string['privacy:metadata:mnet_external:username'] = 'Το όνομα χρήστη για αυτόν το χρήστη.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'Το αναγνωριστικό yahoo του χρήστη.';
 $string['privacy:metadata:mnet_log'] = 'Λεπτομέρειες απομακρυσμένων ενεργειών που εκτελέστηκαν από τοπικό χρήστη συνδεδεμένο σε απομακρυσμένο σύστημα.';
 $string['privacy:metadata:mnet_log:action'] = 'Η ενέργεια εκτελέστηκε από τον χρήστη.';
 $string['privacy:metadata:mnet_log:cmid'] = 'Αναγνωριστικό του αρθρώματος μαθήματος.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_youtube', language 'nl', version '4.1'.
+ * Strings for component 'media_youtube', language 'nl', version '4.4'.
  *
  * @package     media_youtube
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['nocookie'] = 'Gebruik geen cookiedomein';
+$string['nocookie_desc'] = 'Gebruik het domein youtube-nocookie.com om video\'s in te sluiten. Dit vermindert het aantal cookies van derden dat wordt gebruikt bij het insluiten. Dit domein wordt ook niet geblokkeerd door sommige adblockers.';
 $string['pluginname'] = 'YouTube';
 $string['pluginname_help'] = 'De website voor het delen van video youtube.com. Links naar video en afspeellijsten worden ondersteund.';
 $string['privacy:metadata'] = 'De Youtube media-plugin bewaart geen persoonlijke gegevens.';

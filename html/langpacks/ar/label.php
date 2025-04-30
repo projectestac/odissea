@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ar', version '4.1'.
+ * Strings for component 'label', language 'ar', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إل�
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'إضافة منطقة نص ووسائط جديدة';
 $string['label:view'] = 'معاينة منطقة نص ووسائط';
+$string['labelname'] = 'العنوان في فهرس المساق';
+$string['labelname_help'] = 'يُستعمل العنوان فقط لتمييز منطقة النص والوسائط في فهرس المساق وفي إكمال النشاط. إذا تركته فارغًا، سيتم توليد العنوان تلقائيًا باستعمال الأحرف الأولى من النص.';
 $string['labeltext'] = 'نص';
 $string['modulename'] = 'منطقة نص ووسائط';
 $string['modulename_help'] = 'وحدة منطقة نص ووسائط تتيح إدراج النصوص والوسائط المتعددة في صفحة المقرر.
@@ -53,7 +55,7 @@ $string['modulename_help'] = 'وحدة منطقة نص ووسائط تتيح إ�
 
 * للفصل ما بين قائمة طويلة من النشاطات بعنوان فرعي أو صورة
 * لعرض فيديو مضمَّن مباشرة في صفحة المقرر
-* لإضافة وصف موجز لمقطع المقرر';
+* لإضافة وصف موجز لقسم المقرر';
 $string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'مناطق نص ووسائط';
 $string['pluginadministration'] = 'إدارة منطقة نص ووسائط';

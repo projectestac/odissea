@@ -39,7 +39,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message contact added event.
      */
-    public function test_message_contact_added() {
+    public function test_message_contact_added(): void {
         global $USER;
 
         $this->resetAfterTest();
@@ -59,9 +59,6 @@ final class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\core\event\message_contact_added', $event);
         $this->assertEquals(\context_user::instance(2), $event->get_context());
-        $expected = array(SITEID, 'message', 'add contact', 'index.php?user1=' . $user->id .
-            '&amp;user2=2', $user->id);
-        $this->assertEventLegacyLogData($expected, $event);
         $url = new \moodle_url('/message/index.php', array('user1' => $event->userid, 'user2' => $event->relateduserid));
         $this->assertEquals($url, $event->get_url());
     }
@@ -69,7 +66,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message contact removed event.
      */
-    public function test_message_contact_removed() {
+    public function test_message_contact_removed(): void {
         global $USER;
 
         $this->resetAfterTest();
@@ -92,9 +89,6 @@ final class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\core\event\message_contact_removed', $event);
         $this->assertEquals(\context_user::instance(2), $event->get_context());
-        $expected = array(SITEID, 'message', 'remove contact', 'index.php?user1=' . $user->id .
-            '&amp;user2=2', $user->id);
-        $this->assertEventLegacyLogData($expected, $event);
         $url = new \moodle_url('/message/index.php', array('user1' => $event->userid, 'user2' => $event->relateduserid));
         $this->assertEquals($url, $event->get_url());
     }
@@ -102,7 +96,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message user blocked event.
      */
-    public function test_message_user_blocked() {
+    public function test_message_user_blocked(): void {
         global $USER;
 
         $this->resetAfterTest();
@@ -130,7 +124,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message user unblocked event.
      */
-    public function test_message_user_unblocked() {
+    public function test_message_user_unblocked(): void {
         global $USER;
 
         $this->resetAfterTest();
@@ -189,8 +183,6 @@ final class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\core\event\message_sent', $event);
         $this->assertEquals(\context_system::instance(), $event->get_context());
-        $expected = array(SITEID, 'message', 'write', 'index.php?user=1&id=2&history=1#m3', 1);
-        $this->assertEventLegacyLogData($expected, $event);
         $url = new \moodle_url('/message/index.php', array('user1' => $event->userid, 'user2' => $event->relateduserid));
         $this->assertEquals($url, $event->get_url());
         $this->assertEquals(3, $event->objectid);
@@ -227,8 +219,6 @@ final class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\core\event\message_sent', $event);
         $this->assertEquals(\context_system::instance(), $event->get_context());
-        $expected = array(SITEID, 'message', 'write', 'index.php?user=1&id=2&history=1#m3', 1);
-        $this->assertEventLegacyLogData($expected, $event);
         $url = new \moodle_url('/message/index.php', array('user1' => $event->userid, 'user2' => $event->relateduserid));
         $this->assertEquals($url, $event->get_url());
         $this->assertEquals(3, $event->objectid);
@@ -274,7 +264,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the group message sent event when created without a courseid.
      */
-    public function test_group_message_sent_without_other_courseid() {
+    public function test_group_message_sent_without_other_courseid(): void {
         // Creating a message_sent event without other[courseid] leads to exception.
         $this->expectException('coding_exception');
         $this->expectExceptionMessage('The \'courseid\' value must be set in other');
@@ -293,7 +283,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the group message sent event when created without a conversationid.
      */
-    public function test_group_message_sent_without_other_conversationid() {
+    public function test_group_message_sent_without_other_conversationid(): void {
         // Creating a message_sent event without other[courseid] leads to exception.
         $this->expectException('coding_exception');
         $this->expectExceptionMessage('The \'conversationid\' value must be set in other');
@@ -337,7 +327,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message viewed event.
      */
-    public function test_message_viewed() {
+    public function test_message_viewed(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -371,7 +361,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message deleted event.
      */
-    public function test_message_deleted() {
+    public function test_message_deleted(): void {
         global $DB, $USER;
 
         $this->resetAfterTest();
@@ -429,7 +419,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the message deleted event is fired when deleting a conversation.
      */
-    public function test_message_deleted_whole_conversation() {
+    public function test_message_deleted_whole_conversation(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -538,7 +528,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the notification sent event when null passed as course.
      */
-    public function test_notification_sent_with_null_course() {
+    public function test_notification_sent_with_null_course(): void {
         $event = \core\event\notification_sent::create_from_ids(1, 1, 1, null);
 
         $this->resetAfterTest();
@@ -557,7 +547,7 @@ final class events_test extends \advanced_testcase {
     /**
      * Test the notification viewed event.
      */
-    public function test_notification_viewed() {
+    public function test_notification_viewed(): void {
         global $DB;
 
         $this->resetAfterTest();

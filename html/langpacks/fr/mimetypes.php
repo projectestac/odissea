@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'fr', version '4.1'.
+ * Strings for component 'mimetypes', language 'fr', version '4.4'.
  *
  * @package     mimetypes
  * @category    string
@@ -74,7 +74,7 @@ $string['group:web_file'] = 'Fichiers web';
 $string['group:web_image'] = 'Fichiers image utilisés sur le web';
 $string['group:web_video'] = 'Fichiers vidéo utilisés sur le web';
 $string['image'] = 'Image ({$a->MIMETYPE2})';
-$string['image/vnd.microsoft.icon'] = 'Icone Windows';
+$string['image/vnd.microsoft.icon'] = 'Icône Windows';
 $string['text/css'] = 'Feuille de styles cascadée';
 $string['text/csv'] = 'Valeurs séparées par des virgules';
 $string['text/html'] = 'Document HTML';

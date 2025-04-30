@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'ja', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'アップロード後、このコースをリ�
 $string['coursetemplatename_help'] = 'すべてのコース作成時にテンプレートとして使用する既存のコース省略名を入力してください。';
 $string['coursetorestorefromdoesnotexist'] = 'リストア元のコースがありません。';
 $string['courseupdated'] = 'コースが更新されました。';
+$string['courseuploadnotallowed'] = 'カテゴリへのコースアップロードのパーミッションがありません: {$a}';
+$string['courseuploadupdatenotallowed'] = 'この省略名のコースは存在しますが、あなたにはコース機能を使用してコースをアップロードするパーミッションがありません。';
 $string['createall'] = 'すべてを作成する、必要であれば省略名を増分する';
 $string['createnew'] = '新しいコースのみ作成する、既存のコースをスキップする';
 $string['createorupdate'] = '新しいコースを作成する、または既存のコースを更新する';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'CSVファイルのエンコーディングです。'
 $string['errorcannotcreateorupdateenrolment'] = '登録方法「 {$a} 」を作成または更新できません。';
 $string['errorcannotdeleteenrolment'] = '登録方法「 {$a} 」を削除できません。';
 $string['errorcannotdisableenrolment'] = '登録方法「 {$a} 」を無効にできません。';
+$string['errorunsupportedmethod'] = '登録方法「 {$a} 」はCSVアップロードではサポートされていません。';
 $string['errorwhiledeletingcourse'] = 'コース削除中にエラーが発生しました。';
 $string['errorwhilerestoringcourse'] = 'コースリストア中にエラーが発生しました。';
 $string['generatedshortnamealreadyinuse'] = '生成された省略名はすでに使用されています。';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = '「更新モード」ではどのよう
 $string['updateonly'] = '既存のコースのみ更新する';
 $string['updatewithdataonly'] = 'CSVデータのみで更新する';
 $string['updatewithdataordefaults'] = 'CSVデータおよびデフォルトで更新する';
+$string['uploadcourse:use'] = 'アップロードコースツールを使用する';
 $string['uploadcourses'] = 'コースをアップロードする';
 $string['uploadcourses_help'] = 'コースはテキストファイルでアップロードできます。ファイルのフォーマットは以下のとおりです:
 

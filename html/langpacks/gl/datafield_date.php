@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_date', language 'gl', version '4.1'.
+ * Strings for component 'datafield_date', language 'gl', version '4.4'.
  *
  * @package     datafield_date
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo de data';
+$string['fieldtypelabel'] = 'Data';
 $string['pluginname'] = 'Data';
-$string['privacy:metadata'] = 'O compoñente de campo de data non almacena ningún dato persoal, usa táboas definidas en mod_data.';
+$string['privacy:metadata'] = 'O compoñente do campo Data non almacena ningún dato persoal; usa táboas definidas en mod_data.';

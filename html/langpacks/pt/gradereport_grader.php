@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'pt', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'pt', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Ver resultados de {$a}';
 $string['ajaxchoosescale'] = 'Escolha';
 $string['ajaxclicktoclose'] = 'Clique nesta caixa para removê-la';
 $string['ajaxerror'] = 'Erro';
 $string['ajaxfailedupdate'] = 'Não é possível atualizar [1] [2]';
 $string['ajaxfieldchanged'] = 'O campo que está a editar alterou-se, gostaria de usar o valor atualizado?';
+$string['aria:dropdowncolumns'] = 'Existem colunas colapsadas';
+$string['cellactions'] = 'Ações da célula';
+$string['clearall'] = 'Limpar tudo';
+$string['clearsearch'] = 'Limpar utilizadores pesquisados';
+$string['collapsedcolumns'] = 'Colunas contraídas <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'A editar o relatório do avaliador';
 $string['eventgradereportviewed'] = 'Relatório de avaliador visualizado';
 $string['grader:manage'] = 'Gerir relatório de avaliação';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Se deve exibir
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Se deve, ou não, exibir a imagem de perfil do utilizador ao lado do nome';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'O número de alunos exibidos por página no relatório da pauta';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Existem algumas categorias de pauta contraídas na disciplina "{$a->name}"';
+$string['reopencolumn'] = 'Expandir a coluna {$a}';
 $string['summarygrader'] = 'Uma tabela com os nomes dos alunos na primeira coluna, com atividades para avaliação agrupadas por categoria e disciplina na parte superior.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} nota';

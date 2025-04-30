@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'es', version '4.1'.
+ * Strings for component 'auth_saml2', language 'es', version '4.4'.
  *
  * @package     auth_saml2
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['alterlogout'] = 'URL de salida alternativa';
 $string['alterlogout_help'] = 'La URL para redireccionar a un usuario después de agotar todos los mecanismos internos para salida del sitio';
 $string['anyauth'] = 'Permitido cualquier tipo de autenticación';
-$string['anyauth_help'] = 'Si: ¿Permitir ingreso por SAML a todos los usuarios? NO: solamente los usuarios quienes tengan SAML2 como su tipo.';
+$string['anyauth_help'] = 'Si: ¿Permitir acceso por SAML a todos los usuarios? NO: solamente los usuarios que tengan SAML2 como su tipo.';
 $string['auth_data_mapping'] = 'MApeo de datos';
 $string['auth_fieldlock_expl'] = '<p><b>Bloquear valor:</b> Si se habilita, le impedirá a usuarios y admins de Moodle el editar directamente el campo. Use esta opción si Usted está manteniendo estos datos en el sistema de autentificación externo. </p>';
 $string['auth_fieldlockfield'] = 'Bloquear valor ({$a})';
@@ -52,7 +52,7 @@ $string['commonname'] = 'Nombre común';
 $string['countryname'] = 'País';
 $string['debug'] = 'depuración (debugging)';
 $string['debug_help'] = 'Exto añade depuración (debugging) extra a la bitácora normal de Moodle | <a href=\'{$a}\'>Ver configuración SSP</a></p>';
-$string['duallogin'] = 'Ingreso dual';
+$string['duallogin'] = 'Acceso dual';
 $string['errorparsingxml'] = 'Error al analizar XML: {$a}';
 $string['exception'] = 'Excepción SAML2: {$a}';
 $string['expirydays'] = 'Caducidad en días';
@@ -60,15 +60,15 @@ $string['idpattr'] = 'Mapeando IdP';
 $string['idpattr_help'] = '¿Cual atributo IdP debería ser apareado contra un campo de usuario de Moodle?';
 $string['idpmetadata'] = 'xml de metadatos IdP O URL xml pública';
 $string['idpmetadata_badurl'] = 'Metadatos inválidos en {$a}';
-$string['idpmetadata_help'] = 'Para usar múltiples IdPs ingresar cada URL de metadatos públicos en una nueva línea.<br/>Para anular un nombre, ponga texto antes del http, por ejemplo "Nombre IdP Forzado http://ssp.local/simplesaml/saml2/idp/metadata.php"';
+$string['idpmetadata_help'] = 'Para usar múltiples IdPs introduzca cada URL de metadatos públicos en una nueva línea.<br/>Para anular un nombre, ponga texto antes del http, por ejemplo "Nombre IdP Forzado http://ssp.local/simplesaml/saml2/idp/metadata.php"';
 $string['idpmetadata_invalid'] = 'El  IdP XML no es válido';
 $string['idpmetadata_noentityid'] = 'El IdP XML no tiene entityID';
 $string['idpmetadatarefresh'] = 'Refresacar metadatos IdP';
 $string['idpmetadatarefresh_help'] = 'Correr un trabajo agendado para actualizar metadatos IdP desde URL de metadatos IdP';
 $string['idpname'] = 'Anulación de nombre IdP';
-$string['idpname_help'] = 'por ejemplo myUNI - esto es detectado por los metadatos y se mostrará en la página para ingreso dual (si estuviera habilitada)';
-$string['idpnamedefault'] = 'Ingresar mediante SAML2';
-$string['idpnamedefault_varaible'] = 'Ingresar via SAML2 ({$a})';
+$string['idpname_help'] = 'por ejemplo myUNI - esto es detectado por los metadatos y se mostrará en la página para acceso dual (si estuviera habilitada)';
+$string['idpnamedefault'] = 'Acceder mediante SAML2';
+$string['idpnamedefault_varaible'] = 'Acceder via SAML2 ({$a})';
 $string['localityname'] = 'Localidad';
 $string['locked'] = 'Bloqueado';
 $string['logdir'] = 'Directorio de bitácora';
@@ -87,8 +87,8 @@ $string['multiidpdropdown'] = 'Lista desplegable';
 $string['nameidasattrib'] = 'Exponer NameID como atributo';
 $string['nameidasattrib_help'] = 'La solicitud NameID será expuesta a SSPHP como un atributo llamado nameid';
 $string['nameidpolicy'] = 'Política NameID';
-$string['noattribute'] = 'Usted ha ingresado exitosamente, pero no pudimos encontrar su atributo \'{$a}\' para asociarlo a Usted con una cuenta en Moodle.';
-$string['nouser'] = 'Usted ha ingresado exitosamente como \'{$a}\' pero no tiene una cuenta en Moodle.';
+$string['noattribute'] = 'Usted ha accedido con éxito, pero no pudimos encontrar su atributo \'{$a}\' para asociarlo a Usted con una cuenta en Moodle.';
+$string['nouser'] = 'Usted ha accedido con éxito como "{$a}" pero no tiene una cuenta en Moodle.';
 $string['nullprivatecert'] = 'Falló la creación de Certificado Privado.';
 $string['nullpubliccert'] = 'Falló la creación de Certificado Público..';
 $string['organizationalunitname'] = 'Unidad Organizacional';
@@ -99,7 +99,7 @@ $string['phone2'] = 'Teléfono móvil';
 $string['pluginname'] = 'SAML2';
 $string['privacy:no_data_reason'] = 'El plugin de autenticación Saml2 no almacena ningún dato personal.';
 $string['regenerate_submit'] = 'Regenerar';
-$string['rememberidp'] = 'Recordar servicio para ingresar al sitio';
+$string['rememberidp'] = 'Recordar servicio para acceder al sitio';
 $string['required'] = 'Este campo es necesario';
 $string['requireint'] = 'Este campo es necesario y deb ser un número entero positivo';
 $string['sha1'] = 'SHA1 antiguo (Peligroso)';
@@ -114,11 +114,11 @@ $string['spmetadatasign'] = 'Firma de Metadatos SP';
 $string['spmetadatasign_help'] = 'Firmar los Metadatos SP.';
 $string['sspversion'] = 'Versión de SimpleSAMLphp';
 $string['stateorprovincename'] = 'Estado o Provincia';
-$string['suspendeduser'] = 'Usted ha ingresado exitosamente como \'{$a}\' pero su cuenta ha sido suspendida en Moodle.';
+$string['suspendeduser'] = 'Usted ha accedido con éxito como "{$a}" pero su cuenta ha sido suspendida en Moodle.';
 $string['taskmetadatarefresh'] = 'Trabajo de refresco de metadatos';
-$string['test_auth_button_login'] = 'Ingreso IdP';
+$string['test_auth_button_login'] = 'Acceso IdP';
 $string['test_auth_button_logout'] = 'Salida IdP';
-$string['test_auth_str'] = 'Probar isAuthenticated e Ingreso';
+$string['test_auth_str'] = 'Probar isAuthenticated y acceso';
 $string['test_passive_str'] = 'Probar usando isPassive';
 $string['tolower'] = 'Minúscula';
 $string['tolower_help'] = '¿Aplicar minúsculas a atributo IdP antes de coincidir?';
@@ -126,6 +126,6 @@ $string['unlocked'] = 'Des-bloqueado';
 $string['unlockedifempty'] = 'Desbloqueado si vacío';
 $string['update_never'] = 'Nunca';
 $string['update_oncreate'] = 'En creación';
-$string['update_onlogin'] = 'En cada ingreso';
+$string['update_onlogin'] = 'En cada acceso';
 $string['update_onupdate'] = 'En actualización';
-$string['wrongauth'] = 'Usted ha ingresado exitosamente como \'{$a}\' pero no está autorizado a acceder a Moodle.';
+$string['wrongauth'] = 'Usted ha se ha conectado con éxito como "{$a}" pero no está autorizado a acceder a Moodle.';

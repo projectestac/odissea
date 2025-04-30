@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ja', version '4.1'.
+ * Strings for component 'block_myoverview', language 'ja', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'グルーピングドロップダウンメ�
 $string['aria:hiddencourses'] = '表示削除済みコースを表示する';
 $string['aria:hidecourse'] = '{$a} を表示から削除する';
 $string['aria:inprogress'] = '進行中のコースを表示する';
-$string['aria:lastaccessed'] = '最終アクセス日でコースを並べ替える';
 $string['aria:list'] = 'リストビューにスイッチする';
 $string['aria:past'] = '過去のコースを表示する';
 $string['aria:removefromfavourites'] = '星を削除する';
-$string['aria:shortname'] = 'コースをコース省略名で並べ替える';
 $string['aria:showcourse'] = '{$a} を表示にリストアする';
 $string['aria:sortingdropdown'] = 'ドロップダウンメニューの並べ替え';
 $string['aria:summary'] = '概要ビューにスイッチする';
-$string['aria:title'] = 'コース名でコースを並べ替える';
 $string['availablegroupings'] = '利用可能なフィルタ';
 $string['availablegroupings_desc'] = 'ユーザが選択できるコースフィルタです。何も選択されない場合、すべてのコースが表示されます。';
 $string['card'] = 'カード';
 $string['cards'] = 'カード';
-$string['clearsearch'] = '検索をクリアする';
 $string['completepercent'] = '{$a}% 完了';
 $string['courseprogress'] = 'コース進捗:';
+$string['createcourse'] = 'コースを作成する';
 $string['customfield'] = 'カスタムフィールド';
 $string['customfiltergrouping'] = '使用するフィールド';
 $string['customfiltergrouping_nofields'] = 'このオプションはコースカスタムフィールドのセットアップおよびすべての人の閲覧を必要とします。';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = '省略名で並べ替える';
 $string['sortbytitle'] = 'コース名で並べ替える';
 $string['summary'] = '概要';
 $string['title'] = 'コース名';
+$string['viewquickstart'] = 'クイックスタートガイドを表示する';
+$string['zero_default_intro'] = 'あなたがコースに登録した場合、ここに表示されるようになります。';
+$string['zero_default_title'] = 'あなたはどのコースにも登録していません。';
+$string['zero_nocourses_intro'] = '始めるにあたって支援が必要ですか? <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleドキュメンテーション</a>を確認するか、私たちのクイックスタートガイドで最初の一歩を踏み出してください。';
+$string['zero_nocourses_title'] = 'あなたの最初のコースを作成する';
+$string['zero_request_intro'] = '始めるにあたって支援が必要ですか? <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleドキュメンテーション</a>を確認するか、私たちの<a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">クイックスタートガイド</a>で最初の一歩を踏み出してください。';
+$string['zero_request_title'] = 'あなたの最初のコースをリクエストする';

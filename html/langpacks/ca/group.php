@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', version '4.1'.
+ * Strings for component 'group', language 'ca', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -45,6 +45,7 @@ $string['creategrouping'] = 'Crea agrupament';
 $string['creategroupinselectedgrouping'] = 'Crea grup en l\'agrupament';
 $string['createingrouping'] = 'S\'estan agrupant els grups creats automàticament';
 $string['createorphangroup'] = 'Crea un grup orfe';
+$string['csvdelimiter'] = 'Separador CSV';
 $string['databaseupgradegroups'] = 'La versió de grups és ara {$a}';
 $string['defaultgrouping'] = 'Agrupament per defecte';
 $string['defaultgroupingname'] = 'Agrupament';
@@ -56,16 +57,22 @@ $string['deletegrouping'] = 'Suprimeix agrupament';
 $string['deletegroupingconfirm'] = 'Segur que voleu suprimir l\'agrupament \'{$a}\'? (els grups d\'aquest agrupament no se suprimiran)';
 $string['deletegroupsconfirm'] = 'Segur que voleu suprimir els grups següents?';
 $string['deleteselectedgroup'] = 'Suprimeix grup seleccionat';
+$string['disablemessagingaction'] = 'Desactiva la missatgeria';
 $string['editgroupingsettings'] = 'Edita paràmetres d\'agrupament';
 $string['editgroupsettings'] = 'Edita paràmetres del grup';
+$string['editusersgroupsa'] = 'Edita els grups de «{$a}»';
 $string['enablemessaging'] = 'Missatgeria de grup';
 $string['enablemessaging_help'] = 'Si s\'habilita, els membres d\'un grup poden enviar missatges als altres membres del seu grup mitjançant el menú de missatges.';
+$string['enablemessagingaction'] = 'Habilita la missatgeria';
+$string['encoding'] = 'Codificació';
 $string['enrolmentkey'] = 'Clau d\'inscripció';
 $string['enrolmentkey_help'] = 'Una clau d\'inscripció obre l\'accés al curs, que queda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, l\'usuari no només podrà inscriure\'s al curs, si la coneix, sinó que també esdevindrà automàticament membre del grup.
 
 Nota: Les claus d\'inscripció de grup s\'han d\'activar als paràmetres de l\'autoinscripció, i també s\'ha d\'especificar una clau d\'inscripció per al curs.';
 $string['enrolmentkeyalreadyinuse'] = 'Aquesta clau de matrícula ja l\'utilitza un altre grup.';
 $string['erroraddremoveuser'] = 'S\'ha produït un error en afegir l\'usuari {$a} o suprimir-lo del grup.';
+$string['erroraddtogroup'] = 'Valor no vàlid per a «addtogroup». Hauria de ser 0 per a cap mode de grup o 1 per a crear un grup nou.';
+$string['erroraddtogroupgroupname'] = 'No podeu especificar el nom del grup quan s\'ha definit «addtogroup».';
 $string['erroreditgroup'] = 'S\'ha produït un error en crear o actualitzar el grup {$a}';
 $string['erroreditgrouping'] = 'S\'ha produït un error en crear o actualitzar l\'agrupament {$a}';
 $string['errorinvalidgroup'] = 'S\'ha produït un error: el grup {$a} no és vàlid';
@@ -84,6 +91,7 @@ $string['eventgroupmemberadded'] = 'S\'ha afegit el membre del grup';
 $string['eventgroupmemberremoved'] = 'S\'ha suprimit el membre del grup';
 $string['eventgroupupdated'] = 'S\'ha actualitzat el grup';
 $string['existingmembers'] = 'Membres existents: {$a}';
+$string['exportgroupsgroupings'] = 'Baixa els grups i agrupaments com a';
 $string['filtergroups'] = 'Filtra grups per:';
 $string['group'] = 'Grup';
 $string['groupaddedsuccesfully'] = 'S\'ha afegit amb èxit el grup {$a}';
@@ -109,6 +117,8 @@ $string['groupmembers'] = 'Membres del grup';
 $string['groupmemberssee'] = 'Visualitza els membres del grup';
 $string['groupmembersselected'] = 'Membres del grup seleccionat';
 $string['groupmode'] = 'Mode de grups';
+$string['groupmode_groupsseparate_help'] = 'Cada membre del grup només pot veure el seu propi grup, els altres són invisibles.';
+$string['groupmode_groupsvisible_help'] = 'Cada membre del grup treballa en el seu propi grup, però també pot veure altres grups.';
 $string['groupmode_help'] = 'Aquest paràmetre té 3 opcions:
 
 * Sense grups
@@ -133,7 +143,6 @@ $string['groupspreview'] = 'Previsualització de grups';
 $string['groupsseparate'] = 'Grups separats';
 $string['groupsvisible'] = 'Grups visibles';
 $string['grouptemplate'] = 'Grup @';
-$string['hidepicture'] = 'Oculta la imatge';
 $string['importgroups'] = 'Importa grups';
 $string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de text. El format del fitxer ha de ser de la manera següent:
 * Cada línia del fitxer conté un registre
@@ -145,8 +154,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Inclou sols les inscripcions actives';
 $string['includeonlyactiveenrol_help'] = 'Si s\'habilita, els usuaris amb inscripció desactivada no seran inclosos als grups.';
 $string['javascriptrequired'] = 'Aquesta pàgina requereix Javascript';
+$string['manageactions'] = 'Gestiona';
+$string['memberofgroup'] = 'Membre del grup de: {$a}';
 $string['members'] = 'Membres per grup';
 $string['membersofselectedgroup'] = 'Membres de:';
+$string['messagingdisabled'] = 'S\'ha desactivat correctament la missatgeria a {$a} grups';
+$string['messagingenabled'] = 'S\'ha activat correctament la missatgeria a {$a} grups';
 $string['mygroups'] = 'Els meus grups';
 $string['namingscheme'] = 'Esquema de noms';
 $string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir per crear grups amb noms que contenen lletres. Per exemple, Grup @ generarà grups anomentats Grup A, Grup B, Grup C, ...<br/>
@@ -171,9 +184,17 @@ $string['numgroups'] = 'Nombre de grups';
 $string['nummembers'] = 'Membres per grup';
 $string['othergroups'] = 'Altres grups';
 $string['overview'] = 'Resum';
+$string['participation'] = 'Mostra el grup al menú desplegable per a les activitats en mode de grup';
+$string['participation_help'] = 'Els membres del grup haurien de poder seleccionar aquest grup per a les activitats en el mode de grups separats o visibles? (Només és aplicable si la pertinença a un grup és visible per a tothom o només visible per als membres.)';
+$string['participationshort'] = 'Participació';
 $string['potentialmembers'] = 'Membres en potència: {$a}';
 $string['potentialmembs'] = 'Membres potencials';
 $string['printerfriendly'] = 'Visualització per a imprimir de l\'agrupament';
+$string['privacy:metadata:core_message'] = 'Les converses de grup';
+$string['privacy:metadata:groups'] = 'Un registre de membres del grup.';
+$string['privacy:metadata:groups:groupid'] = 'L\'ID del grup.';
+$string['privacy:metadata:groups:timeadded'] = 'La marca horària que indica quan es va afegir l\'usuari al grup.';
+$string['privacy:metadata:groups:userid'] = 'L\'ID de l\'usuari que està associat al grup.';
 $string['random'] = 'aleatòriament';
 $string['removefromgroup'] = 'Elimina del grup {$a}';
 $string['removefromgroupconfirm'] = 'Segur que voleu eliminar l\'usuari "{$a->user}" del grup "{$a->group}"?';
@@ -190,3 +211,18 @@ $string['toomanygroups'] = 'No hi ha prou usuaris per a poblar aquest nombre de 
 $string['usercount'] = 'Nombre d\'usuaris';
 $string['usercounttotal'] = 'Nombre d\'usuaris ({$a})';
 $string['usergroupmembership'] = 'Grups als quals pertany l\'usuari seleccionat:';
+$string['visibility'] = 'Visibilitat de la pertinença al grup';
+$string['visibility_help'] = '* Visible per a tothom: tots els participants del curs poden veure qui és al grup
+* Visible només per als membres: els participants del curs que no pertanyen al grup no poden veure el grup ni els seus membres
+* Mostra només la pròpia pertinença: un usuari pot veure que està en el grup, però no pot veure altres membres del grup
+* Ocult: només els professors poden veure el grup i els seus membres
+
+Els usuaris amb la capacitat de visualitzar els grups amagats sempre poden veure la pertinença al grup.
+
+Tingueu en compte que no podeu canviar aquest paràmetre si el grup té membres.';
+$string['visibilityall'] = 'Visible per a tothom';
+$string['visibilitymembers'] = 'Visible només per als membres';
+$string['visibilitynone'] = 'Ocult';
+$string['visibilityown'] = 'Mostra només la pròpia pertinença';
+$string['visibilityshort'] = 'Visibilitat';
+$string['withselected'] = 'Amb el que s\'ha seleccionat';

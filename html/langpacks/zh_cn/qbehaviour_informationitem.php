@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_informationitem', language 'zh_cn', version '4.1'.
+ * Strings for component 'qbehaviour_informationitem', language 'zh_cn', version '4.4'.
  *
  * @package     qbehaviour_informationitem
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '信息条目专用行为';
+$string['pluginname'] = '信息条目行为';
 $string['privacy:metadata'] = '信息条目问题行为插件不存储任何个人数据。';
 $string['seen'] = '已阅';

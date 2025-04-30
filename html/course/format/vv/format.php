@@ -19,19 +19,26 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir.'/filelib.php');
 require_once($CFG->libdir.'/completionlib.php');
 
+// Retrieve course format option fields and add them to the $course object.
+$format = core_courseformat\base::instance($course);
+$course = $format->get_course();
 $context = context_course::instance($course->id);
 
+// Add any extra logic here.
 if (($marker >= 0) && has_capability('moodle/course:setcurrentsection', $context) && confirm_sesskey()) {
     $course->marker = $marker;
     course_set_marker($course->id, $marker);
 }
+// Make sure section 0 is created.
+course_create_sections_if_missing($course, 0);
 
-// Make sure all sections are created.
-$course = course_get_format($course)->get_course();
-course_create_sections_if_missing($course, range(0, $course->numsections));
+$renderer = $format->get_renderer($PAGE);
 
-$renderer = $PAGE->get_renderer('format_vv');
-$renderer->print_multiple_section_page($course, null, null, null, null);
-
-// Include course format js module.
-$PAGE->requires->js('/course/format/vv/format.js');
+// Setup the format base instance.
+if (!empty($displaysection)) {
+    $format->set_section_number($displaysection);
+}
+// Output course content.
+$outputclass = $format->get_output_classname('content');
+$widget = new $outputclass($format);
+echo $renderer->render($widget);

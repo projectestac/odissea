@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'it', version '4.1'.
+ * Strings for component 'repository_googledocs', language 'it', version '4.4'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['both'] = 'Interno ed esterno';
+$string['cachedef_folder'] = 'ID file Google per le cartelle nell\'account di sistema';
 $string['configplugin'] = 'Configurazione plugin Google Drive';
 $string['defaultreturntype'] = 'Tipo restituito di default';
 $string['docsformat'] = 'Formato di default dell\'importazione documenti';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', version '4.1'.
+ * Strings for component 'choice', language 'zh_cn', version '4.4'.
  *
  * @package     choice
  * @category    string
@@ -54,7 +54,7 @@ $string['chooseaction'] = '选择一个操作...';
 $string['chooseoption'] = '选择：{$a}';
 $string['closebeforeopen'] = '您指定的结束日期早于开始日期。';
 $string['completiondetail:submit'] = '作出选择';
-$string['completionsubmit'] = '用户投票后显示为完成';
+$string['completionsubmit'] = '选择';
 $string['description'] = '描述';
 $string['deselectalloption'] = '取消选择所有"{$a}"';
 $string['displayhorizontal'] = '水平显示';

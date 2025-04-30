@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ja', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ja', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = '自動ログインキー生成がブ
 $string['autologinmintimebetweenreq'] = '自動ログインリクエスト間の最小時間';
 $string['autologinmintimebetweenreq_desc'] = 'モバイルアプリからの自動ログインリクエスト間の最小時間です。サイトの埋め込みコンテンツ閲覧時にアプリユーザが頻繁に認証情報の入力を要求される場合、低い値に設定してください。';
 $string['autologinnotallowedtoadmins'] = 'サイト管理への自動ログインは許可されません。';
+$string['autologout'] = 'ユーザの自動ログアウトを強制する';
+$string['autologout_desc'] = 'セキュリティ上の理由から、あなたはユーザがアプリを離脱または終了またはバックグラウンドにした場合の自動ログアウトを強制できます。ユーザがアプリに戻った場合、再度ログインする必要があります。';
+$string['autologoutcustom'] = 'ユーザがアプリを離脱または終了した後のカスタム時間';
+$string['autologoutinmediate'] = 'ユーザがアプリを離脱または終了した直後';
+$string['autologouttime'] = '自動ログアウトタイマ';
 $string['cachedef_plugininfo'] = 'モバイルアドオンのプラグイン一覧';
 $string['cachedef_subscriptiondata'] = 'ここではMoodleアプリサブスクリプション情報を保存します。';
 $string['clickheretolaunchtheapp'] = 'アプリが自動的に開かない場合、ここをクリックしてください。';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = 'ファイルタイプを管理する';
 $string['minimumversion'] = 'アプリバージョンが指定された場合 (3.8.0またはそれ以上)、古いバージョンのアプリのユーザすべてにサイトへアクセスできるようにするためアプリをアップグレードするよう指示されます。';
 $string['minimumversion_key'] = '要求される最小アプリバージョン';
 $string['mobileapp'] = 'モバイルアプリ';
-$string['mobileappconnected'] = 'モバイルアプリ接続';
 $string['mobileappearance'] = 'モバイルアピアランス';
 $string['mobileappenabled'] = 'このサイトではモバイルアプリによるアクセスが有効にされています。<br /><a href="{$a}">モバイルアプリをダウンロードしてください</a>。';
 $string['mobileappsubscription'] = 'Moodleアプリサブスクリプション';
@@ -117,7 +121,6 @@ $string['notificationsseemore'] = '注意: Moodleアプリ利用統計はリア�
 $string['notificationssentnotifications'] = '送信通知';
 $string['oauth2identityproviders'] = 'OAuth 2アイデンティティプロバイダ';
 $string['offlineuse'] = 'オフライン利用';
-$string['openusingembeddedbrowser'] = '埋め込みブラウザで開く';
 $string['pluginname'] = 'Moodleアプリツール';
 $string['pluginnotenabledorconfigured'] = 'プラグインが有効にされていないか設定されていません。';
 $string['privacy:metadata:core_userkey'] = '現在のユーザの自動ログインキーの作成に使用されるユーザのキーです。';

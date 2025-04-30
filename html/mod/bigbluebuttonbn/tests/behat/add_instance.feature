@@ -6,7 +6,7 @@ Feature: bigbluebuttonbn instance
 
   Background:  Make sure that a course is created
     Given a BigBlueButton mock server is configured
-    And I accept dpa and enable bigbluebuttonbn plugin
+    And I enable "bigbluebuttonbn" "mod" plugin
     And the following "courses" exist:
       | fullname    | shortname   | category |
       | Test course | Test course | 0        |
@@ -36,16 +36,14 @@ Feature: bigbluebuttonbn instance
     And I should see "Recordings"
 
   Scenario: Add a Recording Only activity and check that no live session settings are available for this instance type
-    When I turn editing mode on
-    And I change window size to "large"
-    And I add a "BigBlueButton" to section "1"
+    When I change window size to "large"
+    And I add a bigbluebuttonbn activity to course "Test course" section "1"
     And I select "Recordings only" from the "Instance type" singleselect
     Then I should not see "Lock settings"
 
   Scenario Outline: Add an activity and check that required settings are available for the three types of instance types
-    When I turn editing mode on
-    And I change window size to "large"
-    And I add a "BigBlueButton" to section "1"
+    When I change window size to "large"
+    And I add a bigbluebuttonbn activity to course "Test course" section "1"
     And I select "<type>" from the "Instance type" singleselect
     Then I should see "Restrict access"
 

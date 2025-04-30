@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'gl', version '4.1'.
+ * Strings for component 'blog', language 'gl', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,15 +34,17 @@ $string['associatewithmodule'] = 'Blog sobre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Asociación';
 $string['associations'] = 'Asociacións';
 $string['associationunviewable'] = 'Este artigo non pode ser visto por outros ata que se asocie un curso con el ou se cambie o campo «Publicar en»';
+$string['author'] = 'Autor';
 $string['autotags'] = 'Engadir estas etiquetas';
 $string['autotags_help'] = 'Escriba unha ou máis etiquetas locais (separadas por comas) que queira engadir automaticamente a cada artigo do blog copiado dun blog externo ao seu blog local.';
-$string['backupblogshelp'] = 'Se está activada esta opción, os blogs incluiranse nas copias de seguridade automatizadas do SITIO';
+$string['backupblogshelp'] = 'Se está activada esta opción, os blogs incluiranse nas copias de seguranza automatizadas do SITIO';
 $string['blockexternalstitle'] = 'Blogs externos';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog sobre {$a->type}';
 $string['blogaboutthiscourse'] = 'Engadir un artigo sobre este curso';
 $string['blogaboutthismodule'] = 'Engadir un artigo sobre {$a}';
 $string['blogadministration'] = 'Administración do blog';
+$string['blogattachment'] = 'Anexo do blog';
 $string['blogdeleteconfirm'] = 'Eliminar o artigo «{$a}» do blog?';
 $string['blogdisable'] = 'A publicación en blog está desactivada';
 $string['blogentries'] = 'Artigos do blog';
@@ -137,7 +139,7 @@ $string['preferences'] = 'Preferencias do blog';
 $string['privacy:metadata:core_comments'] = 'Comentarios asociados con artigos do blog';
 $string['privacy:metadata:core_files'] = 'Ficheiros anexos a artigos do blog';
 $string['privacy:metadata:core_tag'] = 'Etiquetas asociadas con artigos do blog';
-$string['privacy:metadata:external'] = 'Unha ligazón cara a unha canle RSS externa';
+$string['privacy:metadata:external'] = 'Unha ligazón cara unha canle RSS externa';
 $string['privacy:metadata:external:description'] = 'A descrición da fonte';
 $string['privacy:metadata:external:filtertags'] = 'A lista de etiquetas coas que filtrar os artigos';
 $string['privacy:metadata:external:name'] = 'O nome da fonte';
@@ -160,9 +162,9 @@ $string['privacy:unknown'] = 'Descoñecido';
 $string['publishto'] = 'Publicar en';
 $string['publishto_help'] = 'Hai tres posibilidades:
 
-* Vostede (versión preliminar) - Só vostede e os administradores poden ver este artigo.
-* Todos neste sitio - Calquera rexistrado no sitio pode ler este artigo.
-* Todo o mundo - Calquera (incluídos os convidados) pode ler este artigo.';
+* Vostede (versión preliminar) - Só vostede e a administración do sitio poden ver este artigo.
+* Todos neste sitio - Calquera persoa rexistrada no sitio pode ler este artigo.
+* Todo o mundo - Calquera (incluíndo convidados) pode ler este artigo.';
 $string['publishtocourse'] = 'Usuarios que comparten curso con vostede';
 $string['publishtocourseassoc'] = 'Membros do curso asociado';
 $string['publishtocourseassocparam'] = 'Membros de {$a}';
@@ -214,4 +216,3 @@ $string['viewsiteentries'] = 'Ver todos os artigos';
 $string['viewuserentries'] = 'Ver todos os artigos por {$a}';
 $string['worldblogs'] = 'Calquera pode ver os artigos definidos como accesíbeis a todo o mundo';
 $string['wrongexternalid'] = 'ID de blog externo incorrecto';
-$string['wrongpostid'] = 'ID de mensaxe de blog erróneo';

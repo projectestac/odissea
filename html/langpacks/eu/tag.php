@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'eu', version '4.1'.
+ * Strings for component 'tag', language 'eu', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -73,6 +73,7 @@ $string['eventtagupdated'] = 'Etiketa eguneratu da';
 $string['exclusivemode'] = 'Erakutsi soilik hemen etiketatutakoak: {$a->tagarea}';
 $string['flag'] = 'Markatu';
 $string['flagasinappropriate'] = 'Markatu ezegoki gisa';
+$string['flagcount'] = 'Etiketa zenbatzailea';
 $string['flagged'] = 'Etiketa markatu da';
 $string['helprelatedtags'] = 'Harremana duten etiketak komaz banatuta';
 $string['id'] = 'ID-a';
@@ -152,6 +153,7 @@ $string['tagarea_blog_external'] = 'Kanpoko blog-sarrerak';
 $string['tagarea_course'] = 'Ikastaroak';
 $string['tagarea_course_modules'] = 'Jarduerak eta baliabideak';
 $string['tagarea_post'] = 'Blogetako mezuak';
+$string['tagarea_tag'] = 'Erlazionatutako etiketak';
 $string['tagarea_user'] = 'Erabiltzailearen interesak';
 $string['tagareaenabled'] = 'Gaituta';
 $string['tagareaname'] = 'Izena';

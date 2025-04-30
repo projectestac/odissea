@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'fr', version '4.1'.
+ * Strings for component 'block_myprofile', language 'fr', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Afficher les réglages de la zone de contenu';
 $string['display_address'] = 'Afficher l’adresse';
-$string['display_aim'] = 'Afficher AIM';
 $string['display_city'] = 'Afficher la ville';
 $string['display_country'] = 'Afficher le pays';
 $string['display_currentlogin'] = 'Afficher la connexion actuelle';
 $string['display_email'] = 'Afficher l’adresse de courriel';
 $string['display_firstaccess'] = 'Afficher le premier accès';
-$string['display_icq'] = 'Afficher ICQ';
 $string['display_idnumber'] = 'Afficher le numéro d’ID';
 $string['display_institution'] = 'Afficher l’institution';
 $string['display_lastaccess'] = 'Afficher le dernier accès';
 $string['display_lastip'] = 'Afficher la dernière adresse IP';
 $string['display_lastlogin'] = 'Afficher la dernière connexion';
-$string['display_msn'] = 'Afficher MSN';
 $string['display_phone1'] = 'Afficher no de téléphone';
 $string['display_phone2'] = 'Afficher no de téléphone mobile';
 $string['display_picture'] = 'Afficher l’avatar';
-$string['display_skype'] = 'Afficher Skype';
-$string['display_yahoo'] = 'Afficher Yahoo';
 $string['myprofile:addinstance'] = 'Ajouter un bloc utilisateur connecté';
 $string['myprofile:myaddinstance'] = 'Ajouter un bloc utilisateur connecté au tableau de bord';
 $string['myprofile_settings'] = 'Informations utilisateur visibles';

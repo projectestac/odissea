@@ -30,7 +30,7 @@ require_once($CFG->dirroot.'/filter/mathjaxloader/filter.php');
  * @copyright 2018 Markku Riekkinen
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class filtermath_test extends \advanced_testcase {
+final class filtermath_test extends \advanced_testcase {
 
     /**
      * Test the functionality of {@link filter_mathjaxloader::filter()}.
@@ -40,7 +40,7 @@ class filtermath_test extends \advanced_testcase {
      *
      * @dataProvider math_filtering_inputs
      */
-    public function test_math_filtering($inputtext, $expected) {
+    public function test_math_filtering($inputtext, $expected): void {
         $filter = new filter_mathjaxloader(\context_system::instance(), []);
         $this->assertEquals($expected, $filter->filter($inputtext));
     }
@@ -50,7 +50,7 @@ class filtermath_test extends \advanced_testcase {
      *
      * @return array of [inputtext, expectedoutput] tuples.
      */
-    public function math_filtering_inputs() {
+    public static function math_filtering_inputs(): array {
         return [
             // One inline formula.
             ['Some inline math \\( y = x^2 \\).',

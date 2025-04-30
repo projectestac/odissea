@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'facetoface', language 'fr', version '4.1'.
+ * Strings for component 'facetoface', language 'fr', version '4.4'.
  *
  * @package     facetoface
  * @category    string
@@ -158,7 +158,7 @@ $string['error:addalreadysignedupattendee'] = '{$a} est déjà inscrit(e) à cet
 $string['error:addattendee'] = 'Impossible d’ajouter {$a} à cette session.';
 $string['error:cancelbooking'] = 'Il y a eu un problème lors de l’annulation de votre inscription';
 $string['error:cannotemailmanager'] = 'Courriel de rappel envoyé pour l’enregistrement {$a->submissionid} à l’utilisateur {$a->userid}, mais impossible d’envoyer le message à l’adresse courriel du responsable ({$a->manageremail}).';
-$string['error:cannotemailuser'] = 'Échec de l’envoi du  courriel pour l’enregistrement {$a->submissionid} à l’utilisateur {$a->userid} ({$a->useremail}).';
+$string['error:cannotemailuser'] = 'Échec de l’envoi du courriel pour l’enregistrement {$a->submissionid} à l’utilisateur {$a->userid} ({$a->useremail}).';
 $string['error:cannotsendconfirmationmanager'] = 'Un message de confirmation a été envoyé sur votre adresse courriel, mais il y a eu un problème pour envoyer une copie du message à votre responsable.';
 $string['error:cannotsendconfirmationthirdparty'] = 'Un message de confirmation a été envoyé sur votre adresse courriel et sur celle de votre responsable , mais il y a eu un problème pour envoyer une copie du message au responsable de la formation.';
 $string['error:cannotsendconfirmationuser'] = 'Il y a eu un problème pour envoyer un message de confirmation sur votre adresse courriel.';

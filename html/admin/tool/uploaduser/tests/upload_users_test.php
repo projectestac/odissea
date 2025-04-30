@@ -31,7 +31,7 @@ use tool_uploaduser\local\text_progress_tracker;
  * @copyright  2020 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class upload_users_test extends advanced_testcase {
+final class upload_users_test extends advanced_testcase {
 
     /**
      * Load required test libraries
@@ -184,6 +184,26 @@ EOF;
         $usersasdefaultrole = get_role_users($defaulroleidexpected, $course1context);
         $this->assertCount(1, $usersasdefaultrole);
         $this->assertEquals('student1', reset($usersasdefaultrole)->username);
+    }
+
+    /**
+     * Test that invalid data contained in uploaded CSV triggers appropriate warnings
+     */
+    public function test_user_upload_user_validate(): void {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $csv = <<<EOF
+username,firstname,lastname,email,country
+student1,Student,One,s1@example.com,Wales
+EOF;
+
+        $output = $this->process_csv_upload($csv, ['--uutype=' . UU_USER_ADDNEW]);
+
+        // We should get the debugging from the user class itself, as well as warning in the output regarding the same.
+        $this->assertDebuggingCalled('The property \'country\' has invalid data and has been cleaned.');
+        $this->assertStringContainsString('Incorrect data (country) found for user student1. ' .
+            'This data has been corrected or deleted.', $output);
     }
 
     /**

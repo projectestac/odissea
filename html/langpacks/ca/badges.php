@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', version '4.1'.
+ * Strings for component 'badges', language 'ca', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = 'Accions';
 $string['activate'] = 'Activa l\'accés';
 $string['activatesuccess'] = 'S\'ha activat correctament l\'accés a les insígnies.';
 $string['addalignment'] = 'Afegeix una competència externa o un estàndard';
-$string['addbackpack'] = 'Afegeix una motxilla';
 $string['addbadge'] = 'Afegeix una insígnia';
 $string['addbadge_help'] = 'Seleccioneu totes les insígnies que s\'han d\'afegir als requisits d\'aquesta insígnia. Premeu la tecla CTRL per seleccionar múltiples elements.';
 $string['addbadgecriteria'] = 'Afegeix un criteri per la insígnia';
@@ -102,6 +101,7 @@ $string['backpackbadgessummary'] = 'Teniu {$a->totalbadges} insígnia(es) que es
 $string['backpackcannotsendverification'] = 'No es pot enviar un correu de verificació';
 $string['backpackconnected'] = 'La motxilla està connectada';
 $string['backpackconnection'] = 'Connexió a la motxilla';
+$string['backpackconnection_connected'] = 'La vostra motxilla';
 $string['backpackconnection_help'] = 'Connectar-vos a una motxilla us permetrà compartir les vostres insígnies des d\'aquest lloc i mostrar col·leccions d\'insígnies públiques de la vostra motxilla a la pàgina del perfil d\'aquest lloc.';
 $string['backpackconnectioncancelattempt'] = 'Connecta utilitzant una adreça de correu diferent';
 $string['backpackconnectionconnect'] = 'Connecta a la motxilla';
@@ -139,7 +139,6 @@ $string['backpackimport'] = 'Configuració de la importació d\'insígnies';
 $string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla, les insígnies de la vostra motxilla es podran veure a la pàgina «Les meves insígnies» i a la del vostre perfil.
 
 En aquesta àrea podeu seleccionar les col·leccions d\'insígnies de la vostra motxilla que voleu mostrar al vostre perfil.';
-$string['backpackneedsupdate'] = 'La motxilla connectada a aquest perfil no coincideix amb la motxilla del lloc. Cal desconnectar i tornar a connectar la motxilla.';
 $string['backpackprovider'] = 'Proveïdor de la motxilla';
 $string['backpacksettings'] = 'Paràmetres de la motxilla';
 $string['backpackweburl'] = 'URL de la motxilla';
@@ -168,6 +167,7 @@ $string['badgestatus_3'] = 'Disponible per als usuaris';
 $string['badgestatus_4'] = 'Arxivat';
 $string['badgestoearn'] = 'Nombre d\'insígnies disponibles: {$a}';
 $string['badgesview'] = 'Insígnies del curs';
+$string['badgetags'] = 'Etiquetes de la insígnia';
 $string['badgeurl'] = 'Enllaç d\'insígnia emès';
 $string['balignment'] = 'Alineacions ({$a})';
 $string['bawards'] = 'Destinataris ({$a})';
@@ -293,8 +293,6 @@ $string['enablebadges'] = 'Habilita les insígnies';
 $string['endorsement'] = 'Aval';
 $string['error:backpackdatainvalid'] = 'Les dades retornades pel servei de motxilla no són vàlides.';
 $string['error:backpackemailnotfound'] = 'L\'adreça electrònica «{$a}» no està associada a cap motxilla. Us cal <a href="http://backpack.openbadges.org">crear una motxilla</a> per a aquest compte o bé iniciar la sessió amb una altra adreça electrònica.';
-$string['error:backpacknotavailable'] = 'El vostre lloc no és accessible a través d\'Internet, per la qual cosa les insígnies emeses per aquest lloc no podran verificar-se pels serveis de motxilla externs.';
-$string['error:backpackproblem'] = 'Hi ha hagut un problema en connectar amb el vostre proveïdor de serveis de motxilla. Torneu a intentar-ho més tard.';
 $string['error:badgeawardnotfound'] = 'No es pot verificar la insígnia concedida. Aquesta insígnia pot haver estat revocada.';
 $string['error:badgenotfound'] = 'No s\'ha trobat la insígnia';
 $string['error:cannotact'] = 'No es pot activar la insígnia.';
@@ -346,7 +344,6 @@ $string['eventbadgelistingviewed'] = 'S\'ha mostrat la llista d\'insígnies';
 $string['eventbadgerevoked'] = 'S\'ha revocat la insígnia';
 $string['eventbadgeupdated'] = 'S\'ha actualitzat la insígnia';
 $string['eventbadgeviewed'] = 'S\'ha visualitzat la insígnia';
-$string['evidence'] = 'Evidència';
 $string['existingrecipients'] = 'Destinataris de la insígnia existents';
 $string['existsinbackpack'] = 'La insígnia ja existeix a la motxilla';
 $string['expired'] = 'Ha caducat';
@@ -360,6 +357,7 @@ $string['expireperiods'] = 'Aquesta insígnia expira {$a} segons després d\'hav
 $string['expiresin'] = 'Caduca {$a}';
 $string['expirydate'] = 'Data d\'expiració';
 $string['expirydate_help'] = 'Opcionalment, les insígnies poden expirar en una data determinada, o es pot calcular la data basant-se en la data en què es va emetre la insígnia a un usuari.';
+$string['externalbackpack_required'] = 'El proveïdor de motxilles no pot estar en blanc';
 $string['externalbadges'] = 'Les meves insígnies d\'altres llocs web';
 $string['externalbadges_help'] = 'Aquesta àrea mostra insígnies de la vostra motxilla externa.';
 $string['externalbadgesp'] = 'Insígnies d\'altres llocs web:';
@@ -402,6 +400,7 @@ Podeu gestionar les vostres insígnies aquí fent-les públiques o privades per 
 Podeu descarregar-les totes o cada insígnia separadament i desar-les en el vostre ordinador. Les insígnies descarregades poden afegir-se al vostre servei de motxilla externa.';
 $string['localbadgesp'] = 'Insígnies de {$a}:';
 $string['localconnectto'] = 'Per compartir aquestes insígnies fora d\'aquest lloc web cal <a href="{$a}">connectar-se a una motxilla</a> .';
+$string['loginbackpacktitle'] = '<strong>Inicieu sessió a la vostra motxilla</strong>';
 $string['makeprivate'] = 'Fes privada';
 $string['makepublic'] = 'Fes pública';
 $string['managebackpacks'] = 'Gestiona les motxilles';
@@ -498,8 +497,6 @@ $string['privacy:metadata:manualaward:issuerid'] = 'L\'ID de l\'usuari que atorg
 $string['privacy:metadata:manualaward:issuerrole'] = 'El rol de l\'usuari que atorga la insígnia';
 $string['privacy:metadata:manualaward:recipientid'] = 'L\'ID de l\'usuari a qui s\'atorga manualment una insígnia';
 $string['recipient'] = 'Destinatari de la insígnia';
-$string['recipientdetails'] = 'Detalls del receptor';
-$string['recipientidentificationproblem'] = 'No s\'ha trobat cap receptor d\'aquesta insígnia entre els usuaris existents.';
 $string['recipients'] = 'Receptors de la insígnia';
 $string['recipientvalidationproblem'] = 'L\'usuari actual no pot ser verificat com a receptor d\'aquesta insígnia.';
 $string['relatedbages'] = 'Insígnies relacionades';
@@ -549,6 +546,7 @@ $string['statusmessage_2'] = 'Actualment aquesta insígnia no està disponible p
 $string['statusmessage_3'] = 'Actualment aquesta insígnia està disponible per als usuaris i els criteris estan blocats.';
 $string['statusmessage_4'] = 'Actualment aquesta insígnia està arxivada.';
 $string['subject'] = 'Assumpte del missatge';
+$string['tagarea_badge'] = 'Insígnies';
 $string['targetcode_help'] = 'És un identificador de cadena únic per referenciar l\'habilitat externa o l\'estàndard dins el seu marc.';
 $string['targetdescription'] = 'Descripció';
 $string['targetdescription_help'] = 'És una descripció breu de l\'habilitat externa o l\'estàndard.';

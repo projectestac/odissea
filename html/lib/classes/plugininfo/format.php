@@ -120,6 +120,7 @@ class format extends base {
 
     public function load_settings(part_of_admin_tree $adminroot, $parentnodename, $hassiteconfig) {
         global $CFG, $USER, $DB, $OUTPUT, $PAGE; // In case settings.php wants to refer to them.
+        /** @var \admin_root $ADMIN */
         $ADMIN = $adminroot; // May be used in settings.php.
         $plugininfo = $this; // Also can be used inside settings.php.
 
@@ -142,13 +143,6 @@ class format extends base {
     }
 
     public function is_uninstall_allowed() {
-        // XTEC ************ AFEGIT - Disable uninstalling
-        // 2014.09.09 @pferre22
-        if (!get_protected_agora()) {
-            return false;
-        }
-        // ************ FI
-
         if ($this->name !== get_config('moodlecourse', 'format') && $this->name !== 'site') {
             return true;
         } else {

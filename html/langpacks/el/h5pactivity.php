@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'el', version '4.1'.
+ * Strings for component 'h5pactivity', language 'el', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -78,6 +78,7 @@ $string['grade_h5p'] = 'Βαθμός: {$a}';
 $string['grade_highest_attempt'] = 'Ο μεγαλύτερος βαθμός';
 $string['grade_last_attempt'] = 'Η τελευταία προσπάθεια';
 $string['grade_manual'] = 'Να μην υπολογιστεί βαθμός';
+$string['gradenoun_h5p'] = 'Βαθμός: {$a}';
 $string['h5pactivity:addinstance'] = 'Προσθήκη ενός νέου H5P';
 $string['h5pactivity:reviewattempts'] = 'Εξέταση προσπαθειών H5P';
 $string['h5pactivity:submit'] = 'Υποβολή προσπαθειών H5P';
@@ -122,7 +123,6 @@ $string['result_other'] = 'Άγνωστος τύπος αλληλεπίδρασ�
 $string['result_sequencing_answer'] = 'Τιμή θέσης';
 $string['result_sequencing_choice'] = 'Θέσεις';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Προβολή όλων των προσπαθειών (υποβλήθηκαν {$a})';
 $string['review_mode'] = 'Εξέταση προσπαθειών';
 $string['review_my_attempts'] = 'Προβολή των προσπαθειών μου';
 $string['review_none'] = 'Οι συμμετέχοντες δεν μπορούν να εξετάσουν τις δικές τους προσπάθειες';

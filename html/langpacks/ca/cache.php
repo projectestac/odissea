@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', version '4.1'.
+ * Strings for component 'cache', language 'ca', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -53,6 +53,7 @@ $string['cachedef_coursecattree'] = 'Arbre de les categories del curs';
 $string['cachedef_coursecompletion'] = 'Estat de compleció del curs';
 $string['cachedef_coursecontacts'] = 'Llista de contactes del curs';
 $string['cachedef_courseeditorstate'] = 'Sessió de les claus de la memòria cau de l\'estat del curs per detectar els canvis al frontal';
+$string['cachedef_coursehiddengroups'] = 'Nombre de grups en un curs amb visibilitat restringida';
 $string['cachedef_coursemodinfo'] = 'Informació acumulada sobre mòduls i seccions per a cada curs';
 $string['cachedef_coursesectionspreferences'] = 'Preferències de la secció del curs';
 $string['cachedef_databasemeta'] = 'Metainformació de la base de dades';
@@ -65,7 +66,9 @@ $string['cachedef_grade_letters'] = 'Qualifica les consultes de lletres';
 $string['cachedef_gradesetting'] = 'Configuració de la qualificació del curs';
 $string['cachedef_groupdata'] = 'Informació del grup del curs';
 $string['cachedef_h5p_content_type_translations'] = 'Traduccions de biblioteques de tipus de contingut H5P';
+$string['cachedef_h5p_libraries'] = 'Biblioteques H5P';
 $string['cachedef_h5p_library_files'] = 'Fitxers de la biblioteca H5P';
+$string['cachedef_hookcallbacks'] = 'Crides de retorn del Hook';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - contingut netejat';
 $string['cachedef_langmenu'] = 'Llista d\'idiomes disponibles';
 $string['cachedef_license'] = 'Llista de llicències';

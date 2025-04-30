@@ -20,13 +20,13 @@ Feature: I can revert changes after a load
     And the field "Enable badges" matches value "0"
     And the field "Enable competencies" matches value "0"
     And I navigate to "Plugins > Activity modules > Manage activities" in site administration
-    And "Hide" "icon" should not exist in the "Chat" "table_row"
+    And "Disable Database" "icon" should not exist in the "Database" "table_row"
     And I navigate to "Plugins > Availability restrictions > Manage restrictions" in site administration
     And "Hide" "icon" should not exist in the "Restriction by grouping" "table_row"
     And I navigate to "Plugins > Blocks > Manage blocks" in site administration
-    And "Hide" "icon" should not exist in the "Logged in user" "table_row"
+    And "Disable Logged in user" "icon" should not exist in the "Logged in user" "table_row"
     And I navigate to "Plugins > Course formats > Manage course formats" in site administration
-    And "Disable" "icon" should not exist in the "Social format" "table_row"
+    And "Disable" "icon" should not exist in the "Social" "table_row"
     And I navigate to "Plugins > Question behaviours > Manage question behaviours" in site administration
     And "Enabled" "icon" should not exist in the "Immediate feedback with CBM" "table_row"
     And I navigate to "Plugins > Question types > Manage question types" in site administration
@@ -39,13 +39,13 @@ Feature: I can revert changes after a load
     Then the field "Enable badges" matches value "1"
     And the field "Enable competencies" matches value "1"
     And I navigate to "Plugins > Activity modules > Manage activities" in site administration
-    And "Hide" "icon" should exist in the "Chat" "table_row"
+    And "Disable Database" "icon" should exist in the "Database" "table_row"
     And I navigate to "Plugins > Availability restrictions > Manage restrictions" in site administration
     And "Hide" "icon" should exist in the "Restriction by grouping" "table_row"
     And I navigate to "Plugins > Blocks > Manage blocks" in site administration
-    And "Hide" "icon" should exist in the "Logged in user" "table_row"
+    And "Disable Logged in user" "icon" should exist in the "Logged in user" "table_row"
     And I navigate to "Plugins > Course formats > Manage course formats" in site administration
-    And "Disable" "icon" should exist in the "Social format" "table_row"
+    And "Disable" "icon" should exist in the "Social" "table_row"
     And I navigate to "Plugins > Question behaviours > Manage question behaviours" in site administration
     And "Enabled" "icon" should exist in the "Immediate feedback with CBM" "table_row"
     And I navigate to "Plugins > Question types > Manage question types" in site administration

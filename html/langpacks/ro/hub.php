@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ro', version '4.1'.
+ * Strings for component 'hub', language 'ro', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Nume';
 $string['coursepublished'] = 'Acest curs a fost publicat cu succes pe \'{$a}\'.';
 $string['courseshortname'] = 'Nume prescurtat';
 $string['courseshortname_help'] = 'Introduceţi un nume scurt pentru cursul Dvs. Numele nu trebuie să fie unic.';
+$string['coursesnodates'] = 'Numărul de cursuri fără date de încheiere setare ({$a})';
 $string['coursesnumber'] = 'Numărul de cursuri ({$a})';
+$string['dbtype'] = 'Tipul de bază de date';
 $string['demourl'] = 'URL demo';
 $string['demourl_help'] = 'Introduceţi URL-ul demo-ul al cursului dvs. În mod implicit, este URL-ul cursului dumneavoastră. URL-ul demo este afişat ca un link  în rezultatele de căutare.';
 $string['downloadable'] = 'Poate fi downloadat';
@@ -96,6 +98,7 @@ $string['postaladdress'] = 'Adresă poștală';
 $string['postaladdress_help'] = 'Adresa poştală asociată cu acest site, sau ale entităţii reprezentate de acest site';
 $string['postsnumber'] = 'Număr de postări ({$a})';
 $string['previousregistrationdeleted'] = 'Înregistrarea anterioară a fost ștearsă din {$a}. Reinițiați procesul de înregistrare. Vă mulțumim.';
+$string['primaryauthtype'] = 'Tip de autentificare principală ({$a})';
 $string['questionsnumber'] = 'Număr de întrebări ({$a})';
 $string['registeredactiveuserdevices'] = 'Numărul de utilizatori activi cu dispozitive mobile înregistrate care primesc notificări ({$a})';
 $string['registeredcourses'] = 'Cursuri înregistrate';
@@ -159,6 +162,7 @@ $string['siteregistrationupdated'] = 'Înregistrarea site-ului actualizată';
 $string['siterelease'] = 'Versiune Moodle';
 $string['siterelease_help'] = 'Versiunea Moodle a acestui site.';
 $string['sitereleasenum'] = 'Lansare Moodle ({$a})';
+$string['sitetheme'] = 'Tema site-ului ({$a})';
 $string['siteurl'] = 'URL site';
 $string['siteurl_help'] = 'URL-ul este adresa acestui site. Dacă setările de confidenţialitate permit oamenilor să vadă adresa(-ele) site-ului, atunci aceasta este adresa URL care va fi afișată.';
 $string['siteversion'] = 'Versiune Moodle';

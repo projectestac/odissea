@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'fr', version '4.1'.
+ * Strings for component 'studentquiz', language 'fr', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -75,7 +75,7 @@ $string['completiondetail:point'] = 'Nombre minimum de points : {$a}';
 $string['completiondetail:published'] = 'Nombre minimum de questions uniques composées : {$a}';
 $string['completionpoint'] = 'Nombre minimum de points requis :';
 $string['completionpointgroup'] = 'Requière des points';
-$string['completionpointgroup_help'] = 'Les étudiants obtiennent des points tels que spécifié par le paramètre de Classement, ex. 10 points pour créer une question, 5 points pour une approbation de question par l\'enseignant, 3 points pour donner son avis sur la question de quelqu\'un d\'autre. En entrant une valeur numérique dans le champ, les étudiants complètent un StudentQuiz seulement lorsqu\'ils ont assez de points.';
+$string['completionpointgroup_help'] = 'Les étudiants obtiennent des points tels que spécifié par le paramètre de Classement, ex. 10 points pour créer une question, 5 points pour une approbation de question par l’enseignant, 3 points pour donner son avis sur la question de quelqu’un d’autre. En entrant une valeur numérique dans le champ, les étudiants complètent un StudentQuiz seulement lorsqu’ils ont assez de points.';
 $string['completionquestionapproved'] = 'Nombre minimum requis de questions uniques approuvées :';
 $string['completionquestionapprovedgroup'] = 'Requière la création de questions approuvées';
 $string['completionquestionapprovedgroup_help'] = 'Le nombre minimum de questions qu’un apprenant doit composer avant que l’activité soit complétée. Cette option peut être combinée avec les paramètres « Requiert approbation avant publication » ou « Approbation automatique », mais n’est pas aussi efficace avec la dernière option dans le cas où les questions approuvées automatiquement sont cachées, supprimées ou autrement retirées.';
@@ -109,7 +109,7 @@ $string['describe_already_deleted'] = 'Ce commentaire est déjà supprimé.';
 $string['describe_not_creator'] = 'Ce n’est pas votre commentaire.';
 $string['describe_out_of_time_delete'] = 'Le délai de suppression de ce commentaire est dépassé.';
 $string['describe_out_of_time_edit'] = 'Le délai d’édition de ce commentaire est dépassé';
-$string['descriptioncofstate'] = 'Question passée à l’état  « {$a->state} »';
+$string['descriptioncofstate'] = 'Question passée à l’état « {$a->state} »';
 $string['descriptionofstatenew'] = 'Question enregistrée (« Brouillon »)';
 $string['descriptionofvisibility'] = 'Visibilité de la question définie sur « {$a->visibility} »';
 $string['difficulty_all_column_name'] = 'Difficulté pour le groupe';
@@ -177,7 +177,6 @@ $string['filter_label_approved'] = 'Questions approuvées';
 $string['filter_label_comment'] = 'Commentaires';
 $string['filter_label_createdate'] = 'Création';
 $string['filter_label_difficulty_level'] = 'Difficulté';
-$string['filter_label_fast_filters'] = 'Filtres rapides pour les questions';
 $string['filter_label_myattempts'] = 'Mes tentatives';
 $string['filter_label_mydifficulty'] = 'Ma difficulté';
 $string['filter_label_mylastattempt'] = 'Ma dernière tentative';

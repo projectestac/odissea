@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'it', version '4.1'.
+ * Strings for component 'repository_recent', language 'it', version '4.4'.
  *
  * @package     repository_recent
  * @category    string
@@ -34,3 +34,4 @@ $string['privacy:metadata'] = 'Il plugin Repository \'File recenti\' non memoriz
 $string['recent:view'] = 'Visualizzare repository File recenti';
 $string['recentfilesnumber'] = 'Numero di file recenti';
 $string['timelimit'] = 'Limite di tempo';
+$string['timelimit_help'] = 'Recupera solo i file recenti entro il limite di tempo';

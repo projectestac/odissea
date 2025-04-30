@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'fr', version '4.1'.
+ * Strings for component 'booktool_print', language 'fr', version '4.4'.
  *
  * @package     booktool_print
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ro', version '4.1'.
+ * Strings for component 'reportbuilder', language 'ro', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} plus încă {$a->morecou
 $string['audiencenotsaved'] = 'Audiența nu a fost salvată';
 $string['audiencesaved'] = 'Audiența a fost salvată';
 $string['audienceupdated'] = 'Audiență actualizată';
+$string['audienceusedbyschedule'] = 'Această audiență (persoane) este folosită în procesarea unei sarcini de lucru în acest raport.';
 $string['cardview'] = 'Vizualizare sub formă de card';
 $string['cardview_help'] = 'Vizualizarea cardului vă permite să definiți aspectul raportului dvs. atunci când este vizualizat pe dispozitive înguste. Coloanele se vor restrânge dincolo de limita setată aici, cu o comutare pentru a extinde cardul pentru a vedea toate datele raportului.';
 $string['cardviewfirstcolumntitle'] = 'Titlul primei coloane';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Numărul ID al cursului cu link';
 $string['courseselect'] = 'Selectați cursul';
 $string['courseshortnamewithlink'] = 'Denumirea prescurtată cu link';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Raport personalizat';
 $string['customreports'] = 'Rapoarte personalizate';
 $string['customreportslimit'] = 'Limită de rapoarte personalizate';
 $string['customreportslimit_desc'] = 'Numărul de rapoarte personalizate poate fi limitat din motive de performanță. Dacă se setează la zero, atunci nu există limită.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Nu s-a putut găsi sursa de raport validă';
 $string['errorsourceunavailable'] = 'Sursa raportului nu este disponibilă';
 $string['filteradded'] = 'Filtru adăugat \'{$a}\'';
 $string['filtercontains'] = 'Conține';
+$string['filterdateafter'] = 'După';
+$string['filterdatebefore'] = 'Înainte';
 $string['filterdatecurrent'] = 'Actual';
 $string['filterdatedays'] = 'zi(zile)';
 $string['filterdatefrom'] = 'De la data';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Se încheie cu';
 $string['filterequalorgreaterthan'] = 'Mai mare decât sau egal';
 $string['filterequalorlessthan'] = 'Mai mare decât sau egal';
 $string['filterfieldoperator'] = '{$a} operator';
+$string['filterfieldto'] = '{$a} la';
+$string['filterfieldunit'] = '{$a} unitate';
 $string['filterfieldvalue'] = '{$a} valoare';
 $string['filtergreaterthan'] = 'Mai mare decât';
 $string['filterinvalid'] = 'Filtrul nu este valid';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Sortare';
 $string['sorting_help'] = 'Poți seta ordinea inițială de sortare a coloanelor din raport, care poate fi apoi modificată de utilizatori dând clic pe denumirea coloanelor.';
 $string['switchedit'] = 'Schimbă la modul de editare';
 $string['switchpreview'] = 'Schimbați în modul previzualizare';
+$string['tagarea_reportbuilder_report'] = 'Rapoarte personalizate';
 $string['tasksendschedule'] = 'Trimiteți programarea raportului';
 $string['tasksendschedules'] = 'Trimiteți programările raportului';
 $string['timeadded'] = 'Data adăugării';

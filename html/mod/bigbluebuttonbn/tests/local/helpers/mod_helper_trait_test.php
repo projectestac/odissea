@@ -38,13 +38,13 @@ use mod_bigbluebuttonbn\test\testcase_helper_trait;
  * @covers \mod_bigbluebuttonbn\local\helpers\mod_helper
  * @coversDefaultClass \mod_bigbluebuttonbn\local\helpers\mod_helper
  */
-class mod_helper_trait_test extends \advanced_testcase {
+final class mod_helper_trait_test extends \advanced_testcase {
     use testcase_helper_trait;
 
     /**
      * Presave test
      */
-    public function test_process_pre_save() {
+    public function test_process_pre_save(): void {
         $this->resetAfterTest();
         list($bbactivitycontext, $bbactivitycm, $bbactivity) = $this->create_instance();
         $bbformdata = $this->get_form_data_from_instance($bbactivity);
@@ -58,7 +58,7 @@ class mod_helper_trait_test extends \advanced_testcase {
     /**
      * Presave instance
      */
-    public function test_process_pre_save_instance() {
+    public function test_process_pre_save_instance(): void {
         $this->resetAfterTest();
         list($bbactivitycontext, $bbactivitycm, $bbactivity) = $this->create_instance();
         $bbformdata = $this->get_form_data_from_instance($bbactivity);
@@ -71,7 +71,7 @@ class mod_helper_trait_test extends \advanced_testcase {
     /**
      * Presave checkboxes
      */
-    public function test_process_pre_save_checkboxes() {
+    public function test_process_pre_save_checkboxes(): void {
         $this->resetAfterTest();
         list($bbactivitycontext, $bbactivitycm, $bbactivity) = $this->create_instance();
         $bbformdata = $this->get_form_data_from_instance($bbactivity);
@@ -85,7 +85,7 @@ class mod_helper_trait_test extends \advanced_testcase {
     /**
      * Presave common
      */
-    public function test_process_pre_save_common() {
+    public function test_process_pre_save_common(): void {
         global $CFG;
         $this->resetAfterTest();
 
@@ -101,7 +101,7 @@ class mod_helper_trait_test extends \advanced_testcase {
     /**
      * Post save
      */
-    public function test_process_post_save() {
+    public function test_process_post_save(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -134,7 +134,7 @@ class mod_helper_trait_test extends \advanced_testcase {
     /**
      * Post save notification
      */
-    public function test_process_post_save_with_add() {
+    public function test_process_post_save_with_add(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -157,8 +157,12 @@ class mod_helper_trait_test extends \advanced_testcase {
         ob_start();
         $this->runAdhocTasks();
         ob_get_clean(); // Suppress output as it can fail the test.
-        $this->assertEquals(1, $messagesink->count());
-        $firstmessage = $messagesink->get_messages()[0];
+        $messages = $messagesink->get_messages_by_component_and_type(
+            component: 'core',
+            type: 'coursecontentupdated',
+        );
+        $this->assertEquals(1, count($messages));
+        $firstmessage = reset($messages);
         $this->assertStringContainsString('is new in', $firstmessage->smallmessage);
     }
 
@@ -168,7 +172,7 @@ class mod_helper_trait_test extends \advanced_testcase {
      * There was an issue when both the opening time and completion were set
      * and the form was saved twice.
      */
-    public function test_process_post_save_twice_with_completion() {
+    public function test_process_post_save_twice_with_completion(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();

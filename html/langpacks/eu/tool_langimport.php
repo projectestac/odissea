@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'eu', version '4.1'.
+ * Strings for component 'tool_langimport', language 'eu', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'Hizkuntza-paketea eguneratu da';
 $string['missingcfglangotherroot'] = '$CFG->langotherroot konfigurazio-balioa falta da';
 $string['missinglangparent'] = '<em>{$a->lang}</em> hizkuntzaren <em>{$a->parent}</em> goragoko hizkuntza falta da.';
 $string['noenglishuninstall'] = 'Ingelesaren hizkuntza-paketea ezin da desinstalatu.';
+$string['noenglishuninstalltitle'] = 'Ezin izan da desinstalatu';
 $string['nolangupdateneeded'] = 'Hizkuntza-pakete guztiak eguneratuta daude: ez dago eguneratu beharrik.';
 $string['pluginname'] = 'Hizkuntza-paketeak';
 $string['privacy:metadata'] = 'Hizkuntza-paketeak pluginak ez du datu pertsonalik biltzen.';

@@ -29,14 +29,14 @@ use mod_bigbluebuttonbn\test\testcase_helper_trait;
  * @covers \mod_bigbluebuttonbn\local\helpers\roles
  * @coversDefaultClass \mod_bigbluebuttonbn\local\helpers\roles
  */
-class roles_test extends \advanced_testcase {
+final class roles_test extends \advanced_testcase {
     use testcase_helper_trait;
 
     /**
      * Test select separate group prevent all
      *
      */
-    public function test_get_users_select_separate_groups_prevent_all() {
+    public function test_get_users_select_separate_groups_prevent_all(): void {
         $this->resetAfterTest();
         $numstudents = 12;
         $numteachers = 3;
@@ -70,7 +70,7 @@ class roles_test extends \advanced_testcase {
      * Test select separate groups
      *
      */
-    public function test_get_users_select_separate_groups() {
+    public function test_get_users_select_separate_groups(): void {
         $this->resetAfterTest();
         $numstudents = 12;
         $numteachers = 3;

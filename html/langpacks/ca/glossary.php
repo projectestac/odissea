@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', version '4.1'.
+ * Strings for component 'glossary', language 'ca', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -407,7 +407,6 @@ $string['usedynalink_help'] = '<p>Activar aquesta característica permet que es 
 
 <p>Teniu en compte que els noms de les categories també s\'enllacen.</p>';
 $string['visibletabs'] = 'Pestanyes visibles';
-$string['waitingapproval'] = 'Esperant aprovació';
 $string['warningstudentcapost'] = '(Aplicable només en cas que no sigui el glossari principal)';
 $string['withauthor'] = 'Conceptes amb autor';
 $string['withoutauthor'] = 'Conceptes sense autor';

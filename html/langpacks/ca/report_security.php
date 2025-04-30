@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ca', version '4.1'.
+ * Strings for component 'report_security', language 'ca', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -31,6 +31,7 @@ $string['check_configrw_ok'] = 'config.php no pot ser modificat pels scripts de 
 $string['check_configrw_warning'] = 'Els scripts de PHP poden modificar config.php.';
 $string['check_cookiesecure_details'] = '<p>Si habiliteu la comunicació https es recomana que habiliteu també les galetes segures. També hauríeu  d\'afegir una redirecció permanent des de http a https.</p>';
 $string['check_cookiesecure_error'] = 'Habiliteu les galetes segures';
+$string['check_cookiesecure_http'] = 'Heu d\'activar https per utilitzar galetes segures';
 $string['check_cookiesecure_name'] = 'Galetes segures';
 $string['check_cookiesecure_ok'] = 'Galetes segures habilitades.';
 $string['check_crawlers_details'] = '<p>El paràmetre «Obert a Google» permet que els motors de cerca accedeixin als cursos amb permís d\'accés als convidats. No té sentit habilitar aquest paràmetre si no es permet l\'inici de sessió dels convidats.</p>';
@@ -66,11 +67,6 @@ $string['check_guestrole_error'] = 'El rol de convidat «{$a}» està definit in
 $string['check_guestrole_name'] = 'Rol de convidat';
 $string['check_guestrole_notset'] = 'El rol de convidat no està configurat.';
 $string['check_guestrole_ok'] = 'La configuració del rol de convidat és correcta!';
-$string['check_mediafilterswf_details'] = '<p>La incrustació automàtica d\'objectes de Flash SWF és molt perillosa; qualsevol usuari registrat pot llançar un atac XSS contra altres usuaris del servidor. Inhabiliteu-la en servidors en producció.
-</p>';
-$string['check_mediafilterswf_error'] = 'El filtre multimèdia flash està habilitat - això és molt perillós per la majoria de servidors.';
-$string['check_mediafilterswf_name'] = 'El filtre multimèdia .swf està habilitat';
-$string['check_mediafilterswf_ok'] = 'El filtre multimèdia flash no està habilitat.';
 $string['check_openprofiles_details'] = 'Els perfils oberts dels usuaris poden ser usats abusivament pels que envien correu brossa. Es recomana que: <code>Forceu els usuaris a iniciar la sessió per accedir als perfils</code> o bé <code>Forceu els usuaris a iniciar sessió</code> estigui habilitat.';
 $string['check_openprofiles_error'] = 'Qualsevol persona pot visualitzar perfils d\'usuaris sense iniciar sessió.';
 $string['check_openprofiles_name'] = 'Perfils oberts dels usuaris';

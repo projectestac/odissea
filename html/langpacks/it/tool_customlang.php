@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'it', version '4.1'.
+ * Strings for component 'tool_customlang', language 'it', version '4.4'.
  *
  * @package     tool_customlang
  * @category    string
@@ -64,7 +64,7 @@ $string['headinglocal'] = 'Personalizzazione locale';
 $string['headingstandard'] = 'Testo standard';
 $string['headingstringid'] = 'Stringa';
 $string['import'] = 'Importa stringhe personalizzate';
-$string['import_all'] = 'Crea i aggiorna tutte le stringhe dai componenti';
+$string['import_all'] = 'Crea o aggiorna tutte le stringhe dai componenti';
 $string['import_mode'] = 'Modalità di importazione';
 $string['import_new'] = 'Crea solo le stringhe senza personalizzazioni locali';
 $string['import_update'] = 'Aggiorna solo le stringhe con personalizzazioni locali';

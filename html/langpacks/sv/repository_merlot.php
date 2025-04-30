@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_merlot', language 'sv', version '4.1'.
+ * Strings for component 'repository_merlot', language 'sv', version '4.4'.
  *
  * @package     repository_merlot
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'zh_cn', version '4.1'.
+ * Strings for component 'repository_equella', language 'zh_cn', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = '查看 EQUELLA 容器';
 $string['equellaaction'] = 'EQUELLA 动作';
 $string['equellaoptions'] = 'EQUELLA 选项';
 $string['equellaurl'] = 'EQUELLA URL';
+$string['equellauserfield'] = 'EQUELLA用户字段';
+$string['equellauserfield_help'] = '选择用于匹配EQUELLA用户的用户字段。（只列出short text类型的用户字段。）';
+$string['equellausername'] = '用户名';
 $string['group'] = '{$a} 角色设置';
 $string['groupdefault'] = '缺省';
 $string['pluginname'] = 'EQUELLA 容器';

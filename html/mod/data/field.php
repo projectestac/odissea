@@ -174,13 +174,13 @@ switch ($mode) {
                 }
                 $oldfieldname = $field->field->name;
 
-                $field->field->name = $fieldinput->name;
-                $field->field->description = $fieldinput->description;
+                $field->field->name = trim($fieldinput->name);
+                $field->field->description = trim($fieldinput->description);
                 $field->field->required = !empty($fieldinput->required) ? 1 : 0;
 
                 for ($i=1; $i<=10; $i++) {
                     if (isset($fieldinput->{'param'.$i})) {
-                        $field->field->{'param'.$i} = $fieldinput->{'param'.$i};
+                        $field->field->{'param'.$i} = trim($fieldinput->{'param'.$i});
                     } else {
                         $field->field->{'param'.$i} = '';
                     }
@@ -240,10 +240,11 @@ switch ($mode) {
                 } else {
                     $fieldtypename = $field->name();
                 }
-                echo $OUTPUT->confirm('<strong>'.$fieldtypename.': '.$field->field->name.'</strong><br /><br />'.
-                            get_string('confirmdeletefield', 'data'),
-                            'field.php?d='.$data->id.'&mode=delete&fid='.$fid.'&confirm=1',
-                            'field.php?d='.$data->id);
+                echo $OUTPUT->confirm('<strong>' . $fieldtypename . ': ' . s($field->field->name) . '</strong><br /><br />' .
+                        get_string('confirmdeletefield', 'data'),
+                        'field.php?d=' . $data->id . '&mode=delete&fid=' . $fid . '&confirm=1',
+                        'field.php?d=' . $data->id,
+                        ['type' => single_button::BUTTON_DANGER]);
 
                 echo $OUTPUT->footer();
                 exit;
@@ -343,8 +344,11 @@ if (($mode == 'new') && (!empty($newtype))) { // Adding a new field.
     $fieldactionbar = $actionbar->get_fields_action_bar(true);
     data_print_header($course, $cm, $data, 'fields', $fieldactionbar);
 
-    echo $OUTPUT->box_start('mb-4');
+    echo $OUTPUT->box_start();
     echo get_string('fieldshelp', 'data');
+    echo $OUTPUT->box_end();
+    echo $OUTPUT->box_start('d-flex flex-row-reverse');
+    echo $OUTPUT->render($actionbar->get_create_fields(true));
     echo $OUTPUT->box_end();
     $table = new html_table();
     $table->head = [
@@ -379,10 +383,9 @@ if (($mode == 'new') && (!empty($newtype))) { // Adding a new field.
         ));
 
         $actionmenu = new action_menu();
-        $icon = $OUTPUT->pix_icon('i/menu', get_string('actions'));
-        $actionmenu->set_menu_trigger($icon, 'btn btn-icon d-flex align-items-center justify-content-center');
+        $actionmenu->set_kebab_trigger();
         $actionmenu->set_action_label(get_string('actions'));
-        $actionmenu->attributes['class'] .= ' fields-actions';
+        $actionmenu->set_additional_classes('fields-actions');
 
         // It display a notification when the field type does not exist.
         if ($field->type === 'unknown') {
@@ -407,16 +410,16 @@ if (($mode == 'new') && (!empty($newtype))) { // Adding a new field.
         $actionmenutemplate = $actionmenu->export_for_template($OUTPUT);
 
         $table->data[] = [
-            $field->field->name,
+            s($field->field->name),
             $fieltypedata,
             $field->field->required ? get_string('yes') : get_string('no'),
             shorten_text($field->field->description, 30),
             $OUTPUT->render_from_template('core/action_menu', $actionmenutemplate)
         ];
 
-        if (!empty($missingfieldtypes)) {
-            echo $OUTPUT->notification(get_string('missingfieldtypes', 'data') . html_writer::alist($missingfieldtypes));
-        }
+    }
+    if (!empty($missingfieldtypes)) {
+        echo $OUTPUT->notification(get_string('missingfieldtypes', 'data') . html_writer::alist($missingfieldtypes));
     }
     echo html_writer::table($table);
 
@@ -432,9 +435,9 @@ if (($mode == 'new') && (!empty($newtype))) { // Adding a new field.
         echo '<optgroup label="'.get_string('fields', 'data').'">';
         foreach ($fields as $field) {
             if ($data->defaultsort == $field->id) {
-                echo '<option value="'.$field->id.'" selected="selected">'.$field->name.'</option>';
+                echo '<option value="'.$field->id.'" selected="selected">'.s($field->name).'</option>';
             } else {
-                echo '<option value="'.$field->id.'">'.$field->name.'</option>';
+                echo '<option value="'.$field->id.'">'.s($field->name).'</option>';
             }
         }
         echo '</optgroup>';

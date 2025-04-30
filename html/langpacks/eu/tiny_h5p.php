@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'eu', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'eu', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Arakatu biltegiak...';
-$string['buttontitle'] = 'Konfiguratu H5P edukia';
+$string['buttontitle'] = 'Txertatu H5P edukia';
 $string['copyrightbutton'] = 'Copyright botoia';
 $string['downloadbutton'] = 'Baimendu deskarga';
 $string['embedbutton'] = 'Enbotatu botoia';
@@ -41,5 +41,5 @@ $string['instructions'] = 'H5P edukia txertatu dezakezu URLa idatzita <strong>ed
 $string['invalidh5purl'] = 'URL baliogabea';
 $string['modaltitle'] = 'Txertatu H5P edukia';
 $string['noh5pcontent'] = 'Ez da H5P edukirik gehitu';
-$string['pluginname'] = 'Tiny-ren Txertatu H5P';
+$string['pluginname'] = 'Txertatu H5P';
 $string['privacy:metadata'] = 'TinyMCE-rako Txertatu H5P edukiak ez du inolako datu pertsonalik biltzen.';

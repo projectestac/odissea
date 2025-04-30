@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ar', version '4.1'.
+ * Strings for component 'tool_task', language 'ar', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'المخصصة';
 $string['adhocempty'] = 'طابور المهمة المخصصة فارغ';
-$string['adhocqueueold'] = 'المهمة الأقدم {$a->age} والتي هي أكبر من {$a->max}';
+$string['adhocqueueold'] = 'المهمة غير المعالجة الأقدم {$a->age} والتي هي أكبر من {$a->max}';
 $string['adhocqueuesize'] = 'طابور المهمة المخصصة فيه {$a} مهمة/مهمات';
 $string['adhoctaskid'] = 'مُعرَّف المهمة المخصصة: {$a}';
+$string['adhoctaskrun'] = 'تنفيذ مهمة مخصصة بوشر به';
 $string['adhoctasks'] = 'المهام المخصصة';
-$string['asap'] = 'في أقرب وقت ممكن';
+$string['adhoctasksdue'] = 'مهمة مخصصة مستوجبة';
+$string['adhoctasksfailed'] = 'مهمة مخصصة فشلت';
+$string['adhoctasksfuture'] = 'مهمات مخصصة مستقبلية';
+$string['adhoctasksrunning'] = 'مهمات مخصصة شغالة';
+$string['asap'] = '<abbr title="في أقرب وقت ممكن">ف أ و م</abbr>';
+$string['backtoadhoctasks'] = 'عودة إلى المهمات المخصصة';
 $string['backtoscheduledtasks'] = 'عودة إلى المهام المجدولة';
 $string['blocking'] = 'حجب';
 $string['cannotfindthepathtothecli'] = 'تعذر العثور على المسار إلى واجهة سطر الأوامر القابل للتنفيذ لـ PHP لذلك تم إحباط تنفيذ المهمة. قم بتعيين إعداد "المسار إلى واجهة سطر الأوامر لـ PHP" في إدارة الموقع / المخدم / مسارات النظام.';
 $string['checkadhocqueue'] = 'طابور المهمة المخصصة';
 $string['checkcronrunning'] = 'مشغل الوظائف الدورية شغال';
+$string['checklongrunningtaskcount'] = 'المهام ذات التشغيل الطويل: {$a}';
+$string['checklongrunningtasks'] = 'المهام ذات التشغيل الطويل';
 $string['checkmaxfaildelay'] = 'أقصى تأخير للمهام الفاشلة';
 $string['classname'] = 'اسم الصنف';
 $string['clearfaildelay_confirm'] = 'هل أنت متأكد من رغبتك في إخلاء تأخير الفشل للمهمة \'{$a}\'؟ بعد إخلاء التأخير، ستعمل المهمة وفقاً لجدولها الطبيعي.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'تعديل جدول المهام: {$a}';
 $string['enablerunnow'] = 'اسمح بـ "التشغيل الآن" للمهام المجدولة';
 $string['enablerunnow_desc'] = 'يتيح للمشرفين تشغيل مهمة مجدولة واحدة على الفور، بدلاً من انتظار تشغيلها في موعدها المجدول. تتطلب هذه الميزة تعيين \'مسار واجهة سطر الأوامر لـ PHP\' (pathtophp) في مسارات النظام. يجري تنفيذ المهمة في مخدم الويب، لذلك قد ترغب بتعطيل هذه الميزة لتجنب مشاكل الأداء المحتملة.';
 $string['faildelay'] = 'تأخير الفشل';
+$string['failed'] = 'فشلت';
 $string['fromcomponent'] = 'من المكوِّن: {$a}';
 $string['hostname'] = 'اسم المضيف';
 $string['lastcronstart'] = 'الفترة منذ آخر تنفيذ لمشغل الوظائف الدورية: {$a}';
 $string['lastruntime'] = 'آخر تشغيل';
 $string['lastupdated'] = 'آخر تعديل {$a}.';
 $string['nextruntime'] = 'التشغيل التالي';
+$string['noclassname'] = 'اسم الفئة غير محدد';
+$string['notasks'] = 'لا مهمات لتشغيلها';
+$string['payload'] = 'الحمولة';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'الإضافة مُعطَّلة';
 $string['pluginname'] = 'تهيئة المهمة المجدولة';
 $string['privacy:metadata'] = 'إن إضافة تهيئة المهمة المجدولة لا تخزن أي بيانات شخصية.';
 $string['resettasktodefaults'] = 'إعادة تعيين جدول المهام إلى الإعدادات الافتراضية';
 $string['resettasktodefaults_help'] = 'سيؤدي ذلك إلى تجاهل أي تغييرات محلية وإعادة الجدول الزمني لهذه المهمة إلى إعداداته الأصلية.';
+$string['run_adhoctasks'] = 'تشغيل المهمات المخصصة';
+$string['runadhoc'] = 'أتريد تشغيل المهمات المخصصة الآن؟';
+$string['runadhoc_confirm'] = 'المهام ستشتغل في مخدم الويب وقد تستغرق بعض الوقت لتكتمل.';
+$string['runadhoctask'] = 'تنفيذ \'{$a->task}\' مُعرَّف المهمة {$a->taskid}';
+$string['runadhoctasks'] = 'تنفيذ كل المهام، عددها \'{$a}\'';
+$string['runadhoctasksfailed'] = 'تنفيذ المهام الفاشلة، عددها \'{$a}\'';
 $string['runagain'] = 'إشتغل مرة أخرى';
+$string['runclassname'] = 'تشغيل الكل';
+$string['runclassnamefailedonly'] = 'تشغيل الكل قد فشل';
+$string['runningalltasks'] = 'تشغيل كل المهام';
+$string['runningfailedtasks'] = 'تشغيل المهام التي فشلت';
 $string['runningtasks'] = 'المهام الشغالة الآن';
 $string['runnow'] = 'إشتغل الآن';
 $string['runnow_confirm'] = 'هل أنت متأكد من رغبتك في تشغيل هذه المهمة \'{$a}\' الآن؟ ستعمل المهمة على مخدم الويب وقد تستغرق بعض الوقت حتى تكتمل.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'نمط التشغيل';
 $string['scheduled'] = 'مُجدولة';
 $string['scheduledtaskchangesdisabled'] = 'تم منع التعديلات في قائمة المهام المجدولة في تهيئة مودل';
 $string['scheduledtasks'] = 'المهام المجدولة';
+$string['showall'] = 'إظهار الكل';
+$string['showfailedonly'] = 'إظهار التي فشلت فقط';
+$string['showsummary'] = 'إظهار ملخص المهام المخصصة';
+$string['slowtask'] = 'المهمة اشتغلت لأكثر من {$a}';
 $string['started'] = 'بدأت';
+$string['taskage'] = 'وقت التشغيل';
+$string['taskdetails'] = 'المهام التي تشتغل لأكثر من {$a->time} (الأقصى {$a->maxtime}): {$a->count}';
 $string['taskdisabled'] = 'تم تعطيل المهمة';
 $string['taskfailures'] = '{$a} من المهام تفشل';
+$string['taskid'] = 'مُعرَّف المهمة';
 $string['tasklogs'] = 'سجلات وقوعات المهمة';
 $string['tasknofailures'] = 'لا يوجد هناك فشل في المهام';
+$string['taskrunningtime'] = 'المهمة اشتغلت لمدة {$a}';
 $string['taskscheduleday'] = 'اليوم';
 $string['taskscheduleday_help'] = 'حقل يوم الشهر لجدولة المهام. يستعمل الحقل نفس تنسيق مشغل الوظائف الدورية في يونكس. بعض الأمثلة هي:
 

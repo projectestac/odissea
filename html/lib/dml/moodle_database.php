@@ -128,7 +128,7 @@ abstract class moodle_database {
     /** @var cache_application for column info */
     protected $metacache;
 
-    /** @var cache_request for column info on temp tables */
+    /** @var cache_application|cache_session|cache_store for column info on temp tables */
     protected $metacachetemp;
 
     /** @var bool flag marking database instance as disposed */
@@ -169,7 +169,7 @@ abstract class moodle_database {
      * Note: can be used before connect()
      * @return mixed True if requirements are met, otherwise a string if something isn't installed.
      */
-    public abstract function driver_installed();
+    abstract public function driver_installed();
 
     /**
      * Returns database table prefix
@@ -188,7 +188,7 @@ abstract class moodle_database {
      * @param string $type Database driver's type. (eg: mysqli, pgsql, mssql, sqldrv, oci, etc.)
      * @param string $library Database driver's library (native, pdo, etc.)
      * @param bool $external True if this is an external database.
-     * @return moodle_database driver object or null if error, for example of driver object see {@link mysqli_native_moodle_database}
+     * @return ?moodle_database driver object or null if error, for example of driver object see {@see mysqli_native_moodle_database}
      */
     public static function get_driver_instance($type, $library, $external = false) {
         global $CFG;
@@ -218,35 +218,35 @@ abstract class moodle_database {
      * Note: can be used before connect()
      * @return string The db family name (mysql, postgres, mssql, oracle, etc.)
      */
-    public abstract function get_dbfamily();
+    abstract public function get_dbfamily();
 
     /**
      * Returns a more specific database driver type
      * Note: can be used before connect()
      * @return string The db type mysqli, pgsql, oci, mssql, sqlsrv
      */
-    protected abstract function get_dbtype();
+    abstract protected function get_dbtype();
 
     /**
      * Returns the general database library name
      * Note: can be used before connect()
      * @return string The db library type -  pdo, native etc.
      */
-    protected abstract function get_dblibrary();
+    abstract protected function get_dblibrary();
 
     /**
      * Returns the localised database type name
      * Note: can be used before connect()
      * @return string
      */
-    public abstract function get_name();
+    abstract public function get_name();
 
     /**
      * Returns the localised database configuration help.
      * Note: can be used before connect()
      * @return string
      */
-    public abstract function get_configuration_help();
+    abstract public function get_configuration_help();
 
     /**
      * Returns the localised database description
@@ -301,7 +301,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_connection_exception if error
      */
-    public abstract function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, array $dboptions=null);
+    abstract public function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, array $dboptions=null);
 
     /**
      * Store various database settings
@@ -380,7 +380,7 @@ abstract class moodle_database {
     /**
      * Returns transaction trace for debugging purposes.
      * @private to be used by core only
-     * @return array or null if not in transaction.
+     * @return ?array or null if not in transaction.
      */
     public function get_transaction_start_backtrace() {
         if (!$this->transactions) {
@@ -576,19 +576,19 @@ abstract class moodle_database {
      * Returns database server info array
      * @return array Array containing 'description' and 'version' at least.
      */
-    public abstract function get_server_info();
+    abstract public function get_server_info();
 
     /**
      * Returns supported query parameter types
      * @return int bitmask of accepted SQL_PARAMS_*
      */
-    protected abstract function allowed_param_types();
+    abstract protected function allowed_param_types();
 
     /**
      * Returns the last error reported by the database engine.
      * @return string The error message.
      */
-    public abstract function get_last_error();
+    abstract public function get_last_error();
 
     /**
      * Prints sql debug info
@@ -652,10 +652,11 @@ abstract class moodle_database {
 
     /**
      * Returns the SQL WHERE conditions.
+     *
      * @param string $table The table name that these conditions will be validated against.
      * @param array $conditions The conditions to build the where clause. (must not contain numeric indexes)
-     * @throws dml_exception
      * @return array An array list containing sql 'where' part and 'params'.
+     * @throws dml_exception
      */
     protected function where_clause($table, array $conditions=null) {
         // We accept nulls in conditions
@@ -891,6 +892,10 @@ abstract class moodle_database {
      * @return array (sql, params, type of params)
      */
     public function fix_sql_params($sql, array $params=null) {
+        global $CFG;
+
+        require_once($CFG->libdir . '/ddllib.php');
+
         $params = (array)$params; // mke null array if needed
         $allowed_types = $this->allowed_param_types();
 
@@ -974,9 +979,9 @@ abstract class moodle_database {
                 if (!array_key_exists($key, $params)) {
                     throw new dml_exception('missingkeyinsql', $key, '');
                 }
-                if (strlen($key) > 30) {
+                if (strlen($key) > xmldb_field::NAME_MAX_LENGTH) {
                     throw new coding_exception(
-                            "Placeholder names must be 30 characters or shorter. '" .
+                            "Placeholder names must be " . xmldb_field::NAME_MAX_LENGTH . " characters or shorter. '" .
                             $key . "' is too long.", $sql);
                 }
                 $finalparams[$key] = $params[$key];
@@ -1138,14 +1143,14 @@ abstract class moodle_database {
      * @param bool $usecache if true, returns list of cached tables.
      * @return array of table names in lowercase and without prefix
      */
-    public abstract function get_tables($usecache=true);
+    abstract public function get_tables($usecache=true);
 
     /**
      * Return table indexes - everything lowercased.
      * @param string $table The table we want to get indexes from.
      * @return array An associative array of indexes containing 'unique' flag and 'columns' being indexed
      */
-    public abstract function get_indexes($table);
+    abstract public function get_indexes($table);
 
     /**
      * Returns detailed information about columns in table. This information is cached internally.
@@ -1190,7 +1195,7 @@ abstract class moodle_database {
      * @param string $table The table's name.
      * @return database_column_info[] of database_column_info objects indexed with column names
      */
-    protected abstract function fetch_columns(string $table): array;
+    abstract protected function fetch_columns(string $table): array;
 
     /**
      * Normalise values based on varying RDBMS's dependencies (booleans, LOBs...)
@@ -1199,7 +1204,7 @@ abstract class moodle_database {
      * @param mixed $value value we are going to normalise
      * @return mixed the normalised value
      */
-    protected abstract function normalise_value($column, $value);
+    abstract protected function normalise_value($column, $value);
 
     /**
      * Resets the internal column details cache
@@ -1299,7 +1304,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws ddl_change_structure_exception A DDL specific exception is thrown for any errors.
      */
-    public abstract function change_database_structure($sql, $tablenames = null);
+    abstract public function change_database_structure($sql, $tablenames = null);
 
     /**
      * Executes a general sql query. Should be used only when no other method suitable.
@@ -1309,7 +1314,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function execute($sql, array $params=null);
+    abstract public function execute($sql, array $params=null);
 
     /**
      * Get a number of records as a moodle_recordset where all the given conditions met.
@@ -1418,7 +1423,7 @@ abstract class moodle_database {
      * @return moodle_recordset A moodle_recordset instance.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function get_recordset_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
+    abstract public function get_recordset_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
 
     /**
      * Get all records from a table.
@@ -1522,7 +1527,7 @@ abstract class moodle_database {
      * @return array of objects indexed by first column
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function get_records_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
+    abstract public function get_records_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
 
     /**
      * Get the first two columns from a number of records as an associative array where all the given conditions met.
@@ -1758,6 +1763,20 @@ abstract class moodle_database {
     }
 
     /**
+     * Selects records and return values of chosen field as an array where all the given conditions met.
+     *
+     * @param string $table the table to query.
+     * @param string $return the field we are intered in
+     * @param array|null $conditions optional array $fieldname=>requestedvalue with AND in between
+     * @return array of values
+     * @throws dml_exception A DML specific exception is thrown for any errors.
+     */
+    public function get_fieldset(string $table, string $return, ?array $conditions = null): array {
+        [$select, $params] = $this->where_clause($table, $conditions);
+        return $this->get_fieldset_select($table, $return, $select, $params);
+    }
+
+    /**
      * Selects records and return values of chosen field as an array which match a particular WHERE clause.
      *
      * @param string $table the table to query.
@@ -1782,19 +1801,19 @@ abstract class moodle_database {
      * @return array of values
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function get_fieldset_sql($sql, array $params=null);
+    abstract public function get_fieldset_sql($sql, array $params=null);
 
     /**
      * Insert new record into database, as fast as possible, no safety checks, lobs not supported.
      * @param string $table name
-     * @param mixed $params data record as object or array
+     * @param stdClass|array $params data record as object or array
      * @param bool $returnid Returns id of inserted record.
      * @param bool $bulk true means repeated inserts expected
      * @param bool $customsequence true if 'id' included in $params, disables $returnid
      * @return bool|int true or new id
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function insert_record_raw($table, $params, $returnid=true, $bulk=false, $customsequence=false);
+    abstract public function insert_record_raw($table, $params, $returnid=true, $bulk=false, $customsequence=false);
 
     /**
      * Insert a record into a table and return the "id" field if required.
@@ -1809,7 +1828,7 @@ abstract class moodle_database {
      * @return bool|int true or new id
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function insert_record($table, $dataobject, $returnid=true, $bulk=false);
+    abstract public function insert_record($table, $dataobject, $returnid=true, $bulk=false);
 
     /**
      * Insert multiple records into database as fast as possible.
@@ -1859,17 +1878,17 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function import_record($table, $dataobject);
+    abstract public function import_record($table, $dataobject);
 
     /**
      * Update record in database, as fast as possible, no safety checks, lobs not supported.
      * @param string $table name
-     * @param mixed $params data record as object or array
+     * @param stdClass|array $params data record as object or array
      * @param bool $bulk True means repeated updates expected.
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function update_record_raw($table, $params, $bulk=false);
+    abstract public function update_record_raw($table, $params, $bulk=false);
 
     /**
      * Update a record in a table
@@ -1879,19 +1898,20 @@ abstract class moodle_database {
      * specify the record to update
      *
      * @param string $table The database table to be checked against.
-     * @param object $dataobject An object with contents equal to fieldname=>fieldvalue. Must have an entry for 'id' to map to the table specified.
+     * @param stdClass|array $dataobject An object with contents equal to fieldname=>fieldvalue.
+     *        Must have an entry for 'id' to map to the table specified.
      * @param bool $bulk True means repeated updates expected.
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function update_record($table, $dataobject, $bulk=false);
+    abstract public function update_record($table, $dataobject, $bulk=false);
 
     /**
      * Set a single field in every table record where all the given conditions met.
      *
      * @param string $table The database table to be checked against.
      * @param string $newfield the field to set.
-     * @param string $newvalue the value to set the field to.
+     * @param mixed $newvalue the value to set the field to.
      * @param array $conditions optional array $fieldname=>requestedvalue with AND in between
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
@@ -1906,13 +1926,13 @@ abstract class moodle_database {
      *
      * @param string $table The database table to be checked against.
      * @param string $newfield the field to set.
-     * @param string $newvalue the value to set the field to.
+     * @param mixed $newvalue the value to set the field to.
      * @param string $select A fragment of SQL to be used in a where clause in the SQL call.
      * @param array $params array of sql parameters
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function set_field_select($table, $newfield, $newvalue, $select, array $params=null);
+    abstract public function set_field_select($table, $newfield, $newvalue, $select, array $params=null);
 
 
     /**
@@ -2078,7 +2098,7 @@ abstract class moodle_database {
      * @return bool true.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public abstract function delete_records_select($table, $select, array $params=null);
+    abstract public function delete_records_select($table, $select, array $params=null);
 
     /**
      * Returns the FROM clause required by some DBs in all SELECT statements.
@@ -2098,8 +2118,8 @@ abstract class moodle_database {
      * NOTE: The SQL result is a number and can not be used directly in
      *       SQL condition, please compare it to some number to get a bool!!
      *
-     * @param int $int1 First integer in the operation.
-     * @param int $int2 Second integer in the operation.
+     * @param string $int1 SQL for the first integer in the operation.
+     * @param string $int2 SQL for the second integer in the operation.
      * @return string The piece of SQL code to be used in your statement.
      */
     public function sql_bitand($int1, $int2) {
@@ -2301,10 +2321,10 @@ abstract class moodle_database {
      * This function accepts variable number of string parameters.
      * All strings/fieldnames will used in the SQL concatenate statement generated.
      *
+     * @param string $arr,... expressions to be concatenated.
      * @return string The SQL to concatenate strings passed in.
-     * @uses func_get_args()  and thus parameters are unlimited OPTIONAL number of additional field names.
      */
-    public abstract function sql_concat();
+    abstract public function sql_concat(...$arr);
 
     /**
      * Returns the proper SQL to do CONCAT between the elements passed
@@ -2314,7 +2334,7 @@ abstract class moodle_database {
      * @param array  $elements The array of strings to be concatenated.
      * @return string The SQL to concatenate the strings.
      */
-    public abstract function sql_concat_join($separator="' '", $elements=array());
+    abstract public function sql_concat_join($separator="' '", $elements=array());
 
     /**
      * Return SQL for performing group concatenation on given field/expression
@@ -2324,7 +2344,7 @@ abstract class moodle_database {
      * @param string $sort Ordering of the concatenated field
      * @return string
      */
-    public abstract function sql_group_concat(string $field, string $separator = ', ', string $sort = ''): string;
+    abstract public function sql_group_concat(string $field, string $separator = ', ', string $sort = ''): string;
 
     /**
      * Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname
@@ -2688,7 +2708,7 @@ abstract class moodle_database {
      * this can not be used directly in code.
      * @return void
      */
-    protected abstract function begin_transaction();
+    abstract protected function begin_transaction();
 
     /**
      * Indicates delegated transaction finished successfully.
@@ -2736,7 +2756,7 @@ abstract class moodle_database {
      * this can not be used directly in code.
      * @return void
      */
-    protected abstract function commit_transaction();
+    abstract protected function commit_transaction();
 
     /**
      * Call when delegated transaction failed, this rolls back
@@ -2789,7 +2809,7 @@ abstract class moodle_database {
      * this can not be used directly in code.
      * @return void
      */
-    protected abstract function rollback_transaction();
+    abstract protected function rollback_transaction();
 
     /**
      * Force rollback of all delegated transaction.

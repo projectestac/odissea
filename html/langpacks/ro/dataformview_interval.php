@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformview_interval', language 'ro', version '4.1'.
+ * Strings for component 'dataformview_interval', language 'ro', version '4.4'.
  *
  * @package     dataformview_interval
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'fr', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'fr', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'Erreur de configuration';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Votre navigateur n’autorise cette fonctionnalité que lors d’une connexion HTTPS ou locale.';
 $string['insecurealert_title'] = 'Connexion non sécurisée !';
+$string['kbrate'] = '{$a} kbit/s';
 $string['maxfilesizehit'] = 'Vous avez atteint le quota limite pour le dépôt de fichiers.';
 $string['maxfilesizehit_title'] = 'Enregistrement arrêté';
 $string['norecordingfound'] = 'Erreur inattendue ; l’enregistrement a échoué.';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'Votre navigateur ne prend pas encore en charge ou partiel
 $string['nowebrtc_title'] = 'WebRTC non pris en charge';
 $string['onlyaudio'] = 'Audio uniquement';
 $string['onlyvideo'] = 'Vidéo uniquement';
-$string['pluginname'] = 'Tiny RecordRTC';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'Le plugin RecordRTC n’enregistre aucune donnée personnelle.';
 $string['recordagain'] = 'Enregistrer à nouveau';
 $string['recordagain_desc'] = 'Vous avez déjà enregistré du contenu. Enregistrer à nouveau supprimera ce contenu. Voulez-vous vraiment réinitialiser l’enregistrement ?';

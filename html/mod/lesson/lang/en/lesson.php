@@ -118,7 +118,6 @@ $string['completiondetail:reachend'] = 'Go through the activity to the end';
 $string['completiondetail:timespent'] = 'Spend at least {$a} on this activity';
 $string['completionendreached'] = 'Require end reached';
 $string['completionendreached_desc'] = 'Student must reach the end of lesson page to complete this activity';
-$string['completiontimespent'] = 'Student must do this activity at least for';
 $string['completiontimespentdesc'] = 'Student must do this activity for at least {$a}';
 $string['completiontimespentgroup'] = 'Require time spent';
 $string['conditionsfordependency'] = 'Condition(s) for the dependency';
@@ -144,7 +143,7 @@ $string['correctresponse'] = 'Correct response';
 $string['createaquestionpage'] = 'Create a question page';
 $string['credit'] = 'Credit';
 $string['customscoring'] = 'Custom scoring';
-$string['customscoring_help'] = 'If enabled, then each answer may be given a numerical point value (positive or negative).';
+$string['customscoring_help'] = 'If enabled, a whole number value (positive or negative) may be entered for each answer.';
 $string['deadline'] = 'Deadline';
 $string['defaultessayresponse'] = 'Your essay will be graded by your teacher.';
 $string['deleteallattempts'] = 'Delete all lesson attempts';
@@ -248,7 +247,6 @@ $string['fractionsnomax'] = 'One of the answers should be 100%, so that it is<br
 $string['full'] = 'Expanded';
 $string['general'] = 'General';
 $string['gotoendoflesson'] = 'Go to the end of the lesson';
-$string['grade'] = 'Grade';
 $string['gradebetterthan'] = 'Grade better than (&#37;)';
 $string['gradebetterthanerror'] = 'Earn a grade better than {$a} percent';
 $string['graded'] = 'Graded';
@@ -538,7 +536,7 @@ $string['savechangesandeol'] = 'Save all changes and go to the end of the lesson
 $string['saveoverrideandstay'] = 'Save and enter another override';
 $string['savepage'] = 'Save page';
 $string['score'] = 'Score';
-$string['score_help'] = 'Score is only used when custom scoring is enabled. Each answer can then be given a numerical point value (positive or negative).';
+$string['score_help'] = 'If custom scoring is enabled in the lesson settings, a whole number value (positive or negative) may be entered for each answer.';
 $string['scores'] = 'Scores';
 $string['search:activity'] = 'Lesson - activity information';
 $string['secondpluswrong'] = 'Not quite.  Would you like to try again?';
@@ -612,3 +610,9 @@ $string['youranswer'] = 'Your answer';
 $string['yourcurrentgradeis'] = 'Your current grade is {$a}';
 $string['yourcurrentgradeisoutof'] = 'Your current grade is {$a->grade} out of {$a->total}';
 $string['youshouldview'] = 'You should answer at least: {$a}';
+
+// Deprecated since 4.3.
+$string['completiontimespent'] = 'Student must do this activity at least for';
+
+// Deprecated since Moodle 4.4.
+$string['grade'] = 'Grade';

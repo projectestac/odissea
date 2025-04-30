@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', version '4.1'.
+ * Strings for component 'enrol_self', language 'ja', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'コーホートメンバのみ';
 $string['cohortonly_help'] = '指定されたコーホートのメンバにのみ自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
 $string['confirmbulkdeleteenrolment'] = '本当にこれらのユーザ登録を削除してもよろしいですか?';
 $string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
-$string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとしてカスタムウェルカムメッセージを追加することができます。
-
-メッセージの中に以下のプレースホルダを含むことができます:
-
-* コース名 {$a->coursename}
-* ユーザプロファイルページへのリンク {$a->profileurl}
-* ユーザメール {$a->email}
-* ユーザフルネーム {$a->fullname}';
+$string['customwelcomemessage_help'] = '使用可能フォーマット: プレインテキストまたはMoodleオートフォーマット。以下のプレースフォルダに加えてHTMLタグおよびmulti-langタグも使用可能です:
+<ul>
+<li>コース名 {$a->coursename}</li>
+<li>ユーザプロファイルページへのリンク {$a->profileurl}</li>
+<li>ユーザメールアドレス {$a->email}</li>
+<li>ユーザフルネーム {$a->fullname}</li>
+<li>ユーザ姓 {$a->lastname}</li>
+<li>ユーザ名 {$a->firstname}</li>
+<li>ユーザコースロール {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'デフォルトロール割り当て';
 $string['defaultrole_desc'] = '自己登録中にユーザに割り当てるロールを選択してください。';
 $string['deleteselectedusers'] = '選択したユーザの登録を削除する';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = '開始日';
 $string['enrolstartdate_help'] = 'この設定を有効にした場合、ユーザはこの日以降のみ登録することができます。';
 $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除時、コースからユーザデータおよび設定が削除されることに留意してください。';
+$string['expiryinactivemessageenrolledbody'] = '{$a->user} さん
+
+あなたは直近の {$a->inactivetime} 日間アクセスしていないため、コース {$a->course} の登録は {$a->timeend} に終了します。
+
+あなたの登録を有効なままにするには {$a->timeend} の前にログインして<a href="{$a->url}">{$a->course}</a>にアクセスしてください。';
+$string['expiryinactivemessageenrolledsubject'] = 'あなたの登録が終了します: {$a->course}';
 $string['expirymessageenrolledbody'] = '{$a->user} さん
 
 これはコース「 {$a->course} 」のあなたの登録が {$a->timeend} に有効期限切れとなる通知です。

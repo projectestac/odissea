@@ -1,5 +1,5 @@
 /**
- * TinyMCE version 6.2.0 (2022-09-08)
+ * TinyMCE version 6.8.3 (2024-02-08)
  */
 
 (function () {
@@ -8,10 +8,11 @@
     var global$4 = tinymce.util.Tools.resolve('tinymce.PluginManager');
 
     const hasProto = (v, constructor, predicate) => {
+      var _a;
       if (predicate(v, constructor.prototype)) {
         return true;
       } else {
-        return v.constructor?.name === constructor.name;
+        return ((_a = v.constructor) === null || _a === void 0 ? void 0 : _a.name) === constructor.name;
       }
     };
     const typeOf = x => {
@@ -176,7 +177,7 @@
         } catch (e) {
         }
         global.each(rules, cssRule => {
-          if (isCssImportRule(cssRule)) {
+          if (isCssImportRule(cssRule) && cssRule.styleSheet) {
             append(cssRule.styleSheet, true);
           } else if (isCssPageRule(cssRule)) {
             global.each(cssRule.selectorText.split(','), selector => {

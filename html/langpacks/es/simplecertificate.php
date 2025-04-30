@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'simplecertificate', language 'es', version '4.1'.
+ * Strings for component 'simplecertificate', language 'es', version '4.4'.
  *
  * @package     simplecertificate
  * @category    string
@@ -39,11 +39,16 @@ $string['certificateimage_help'] = 'Esta es la imagen que se utilizará en el ce
 $string['certificatename'] = 'Nombre de certificado';
 $string['certificatename_help'] = 'Nombre de certificado';
 $string['certificatenot'] = 'Instancia de Certificado Simple no encontrada';
+$string['certificatepath'] = 'Ruta del Certificado de seguridad';
+$string['certificatepath_help'] = 'Sólo se permiten archivos .crt';
+$string['certificates'] = 'Certificados';
+$string['certificatestitle'] = 'Mis certificados';
 $string['certificatetext'] = 'Texto del certificado';
-$string['certificatetext_help'] = 'Este es el texto que se usará en el reverso del certificado, algunas palabras especiales se reemplazarán con variables como el nombre del curso, el nombre del estudiante, la calificación...
+$string['certificatetext_help'] = 'Este es el texto que se usará en el certificado, algunas palabras especiales se reemplazarán con variables como el nombre del curso, el nombre del estudiante, la calificación...
 Estas son:
 <ul>
-<li>{USERNAME} -> Nombre completo del usuario</li>
+<li>{IDENTITY} -> Nombre de usuario (debe estar habilitado a nivel del sitio)</li>
+<li>{USERFULLNAME} -> Nombre completo del usuario</li>
 <li>{COURSENAME} -> Nombre completo del curso (o un nombre del curso alternativo definido)</li>
 <li>{GRADE} -> Calificación con formato</li>
 <li>{DATE} -> Fecha con formato</li>
@@ -53,11 +58,6 @@ Estas son:
 <li>{FIRSTNAME} -> Nombre del usuario</li>
 <li>{LASTNAME} -> Apellidos del usuario</li>
 <li>{EMAIL} -> E-mail  del usuario</li>
-<li>{ICQ} -> ICQ del usuario</li>
-<li>{SKYPE} -> Skype del usuario</li>
-<li>{YAHOO} -> Yahoo del usuario</li>
-<li>{AIM} -> AIM  del usuario</li>
-<li>{MSN} -> MSN del usuario</li>
 <li>{PHONE1} -> 1er número de teléfono del usuario</li>
 <li>{PHONE2} -> 2º número de teléfono del usuario</li>
 <li>{INSTITUTION} -> Institución del usuario</li>
@@ -65,7 +65,6 @@ Estas son:
 <li>{ADDRESS} -> Dirección del usuario</li>
 <li>{CITY} -> Población del usuario</li>
 <li>{COUNTRY} -> País del usuario</li>
-<li>{URL} -> Página web del usuario</li>
 <li>{CERTIFICATECODE} -> Texto del código de certificado único </li>
 <li>{USERROLENAME} -> Rol del usuario en el curso</li>
 <li>{TIMESTART} -> Fecha de matrícula del usuario en el curso</li>
@@ -93,6 +92,23 @@ $string['coursenotfound'] = 'Curso no encontrado';
 $string['coursestartdate'] = 'Fecha de inicio del curso';
 $string['coursetimereq'] = 'Minutos requeridos en el curso';
 $string['coursetimereq_help'] = 'Introduzca aquí el mínimo total de tiempo, en minutos, que un estudiante debe haber estado conectado en el curso antes de que pueda recibir el certificado.';
+$string['customfilename'] = 'Nombre personalizado del archivo PDF';
+$string['customfilename_help'] = 'Nombre del archivo PDF para cada certificado. Si se deja en blanco, se utilizará la misma estructura que siempre: <i>certificatename_issueid.pdf</i>.<br>
+Los caracteres especiales en los nombres se reemplazarán con caracteres básicos.<br>
+Se pueden utilizar las siguientes palabras clave para generar nombres dinámicos:
+<ul>
+<li>{certificatename}: Nombre del certificado</li>
+<li>{issueid}: Id. de la emisión</li>
+<li>{coursename}: Nombre del curso</li>
+<li>{userid}: Id. de usuario</li>
+<li>{useridnumber}: Número de ID del usuario</li>
+<li>{userfullname}: Nombre completo del usuario</li>
+<li>{userfirstname}: Nombre del usuario</li>
+<li>{userlastname}: Apellido del usuario</li>
+<li>{timecreated1}: Hora de emisión (Y_m)</li>
+<li>{timecreated2}: Hora de emisión (Ymd)</li>
+<li>{timecreated3}: Hora de emisión (Ymd_His)</li>
+</ul>';
 $string['datefmt'] = 'Formato de fecha';
 $string['datefmt_help'] = 'Elija un formato de fecha PHP válido (http://www.php.net/manual/en/function.strftime.php). O déjelo vacío para usar el formato del idioma elegido por el usuario';
 $string['defaultcertificatetextx'] = 'Posición horizontal por defecto del texto';
@@ -124,7 +140,11 @@ $string['emailothers'] = 'Enviar correo a otros';
 $string['emailothers_help'] = 'Introduzca aquí las direcciones Email, separadas por comas, de quienes deben ser avisados con un email cada vez que un estudiante reciba un certificado.';
 $string['emailsent'] = 'Los correos han sido enviados';
 $string['emailstudentsubject'] = 'Tu certificado para {$a->course}';
-$string['emailstudenttext'] = 'Se adjunta el certificado de {$a->course}.';
+$string['emailstudenttext'] = 'Hola {$a->username},
+
+                  Adjunto se encuentra su certificado de {$a->course}.
+
+Este es un mensaje automático, por favor no lo responda.';
 $string['emailteachermail'] = '{$a->student} ha recibido su certificado: \'{$a->certificate}\' del curso {$a->course}.
 
 Puede verlo aquí: {$a->url}';
@@ -133,11 +153,13 @@ $string['emailteachermailhtml'] = '{$a->student} ha recibido su certificado: \'<
 Puede verlo aquí: <a href="{$a->url}">Informe de Certificado</a>.';
 $string['emailteachers'] = 'Correos de los profesores';
 $string['emailteachers_help'] = 'Si se habilita, los profesores serán avisados con un correo cada vez que un estudiante reciba un certificado.';
+$string['enableidentity'] = 'Habilitar Identidad del usuario';
+$string['enableidentity_help'] = 'Habilite el uso del campo "nombre de usuario" en los certificados. De manera predeterminada, la etiqueta {USERNAME} imprime el nombre completo del usuario, por lo que se utiliza la etiqueta {IDENTITY} para el "nombre de usuario". En el futuro, se eliminará la etiqueta {USERNAME} para evitar confusiones.';
 $string['enablesecondpage'] = 'Habilitar página del reverso del certificado';
 $string['enablesecondpage_help'] = 'Habilita la edición del reverso del certificado; si estuviera deshabilitada, solamente se imprimiría el código QR en la página del reverso (si el código QR está habilitado)';
 $string['eventcertificate_verified'] = 'Certificado verificado';
 $string['eventcertificate_verified_description'] = 'El usuario con id {$a->userid} comprobó el certificado con id {$a->certificateid}, emitido para el usuario con id {$a->certiticate_userid}.';
-$string['filenotfound'] = 'Archivo no encontrado: {$a}';
+$string['filenotfound'] = 'Archivo no encontrado';
 $string['getcertificate'] = 'Obtener certificado';
 $string['grade'] = 'Calificación';
 $string['gradefmt'] = 'Formato de la calificación';
@@ -153,6 +175,7 @@ $string['height'] = 'Altura del certificado';
 $string['hours'] = 'horas';
 $string['intro'] = 'Introducción';
 $string['invalidcode'] = 'Código de certificado no válido';
+$string['invalidfilterfield'] = 'Campo de filtro no válido';
 $string['issued'] = 'Emitido';
 $string['issuedcertificatenotfound'] = 'Certificado emitido no encontrado';
 $string['issueddate'] = 'Fecha de emisión';
@@ -167,6 +190,7 @@ $string['multipdf'] = 'Descargar certificados en un fichero zip';
 $string['neverdeleteoption'] = 'No eliminar nunca';
 $string['nocertificatesissued'] = 'No hay certificados emitidos';
 $string['nodelivering'] = 'Sin envio, el usuario recibirá su certificado mediante otras vías';
+$string['nohavecertificates'] = 'Aún no tienes certificados';
 $string['notreceived'] = 'Certificado no emitido';
 $string['onepdf'] = 'Descargar certificados en un fichero PDF';
 $string['openbrowser'] = 'Abrir en una nueva ventana';
@@ -183,6 +207,16 @@ $string['printoutcome'] = 'Imprimir competencia';
 $string['printoutcome_help'] = 'Puede elegir cualquier competencia del curso para imprimir en el certificado el nombre de dicha competencia y los resultados obtenidos por el usuario. Un ejemplo sería: Competencia en Tarea: Apto.';
 $string['printqrcode'] = 'Imprimir Código QR del certificado';
 $string['printqrcode_help'] = 'Imprimir (o no) Código QR del certificado';
+$string['privacy:metadata:simplecertificate_issues'] = 'El complemento de certificado simple almacena información sobre los certificados emitidos.';
+$string['privacy:metadata:simplecertificate_issues:certificateid'] = 'El ID del certificado emitido.';
+$string['privacy:metadata:simplecertificate_issues:certificatename'] = 'El nombre del certificado emitido.';
+$string['privacy:metadata:simplecertificate_issues:code'] = 'El código único para el certificado emitido.';
+$string['privacy:metadata:simplecertificate_issues:coursename'] = 'El nombre del curso para el cual se emitió el certificado.';
+$string['privacy:metadata:simplecertificate_issues:haschange'] = 'Indica si se ha modificado el certificado.';
+$string['privacy:metadata:simplecertificate_issues:pathnamehash'] = 'El hash del archivo del certificado.';
+$string['privacy:metadata:simplecertificate_issues:timecreated'] = 'La marca de tiempo cuando se emitió el certificado.';
+$string['privacy:metadata:simplecertificate_issues:timedeleted'] = 'La marca de tiempo cuando se eliminó el certificado.';
+$string['privacy:metadata:simplecertificate_issues:userid'] = 'El ID del usuario que recibió el certificado.';
 $string['qrcodefirstpage'] = 'Imprimir Código QR en la primera página';
 $string['qrcodefirstpage_help'] = 'Imprimir Código QR en la primera página';
 $string['qrcodeposition'] = 'Posición del código QR en el Certificado';
@@ -200,9 +234,18 @@ $string['secondtextposition'] = 'Posición del texto del reverso del certificado
 $string['secondtextposition_help'] = 'Estas son las coordenadas XY (en milímetros) del texto de la página de reverso del certificado';
 $string['sendtoemail'] = 'Enviar al correo electrónico del usuario';
 $string['showusers'] = 'Mostrar';
+$string['signhead'] = 'Configuración de firma';
+$string['signheight'] = 'Altura predeterminada';
+$string['signimage'] = 'Imagen predeterminada';
+$string['signinfo_help'] = 'Una propiedad por línea. Utilice la estructura: clave=valor';
+$string['signname'] = 'Nombre';
+$string['signposx'] = 'Posición horizontal predeterminada';
+$string['signposy'] = 'Posición vertical predeterminada';
+$string['signwidth'] = 'Ancho predeterminado';
 $string['simplecertificate:addinstance'] = 'Añadir Actividad Certificado Simple';
 $string['simplecertificate:manage'] = 'Gestionar Actividad Certificado Simple';
 $string['simplecertificate:view'] = 'Visualizar Actividad de Certificado Simple';
+$string['simplecertificateissue'] = 'Emisión de certificado';
 $string['size'] = 'Tamaño del certificado';
 $string['size_help'] = 'Estos son el ancho y alto del certificado en milímetros. El tamaño por defecto es A4 apaisado (297 * 210 mm).';
 $string['standardview'] = 'Emitir un certificado de prueba';

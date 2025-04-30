@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', version '4.1'.
+ * Strings for component 'glossary', language 'nl', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -98,7 +98,7 @@ $string['comments'] = 'Commentaren';
 $string['commentson'] = 'Commentaar op';
 $string['commentupdated'] = 'De commentaar is bijgewerkt';
 $string['completiondetail:entries'] = 'Maak items: {$a}';
-$string['completionentries'] = 'Leerling moet items maken:';
+$string['completionentries'] = 'Voeg vermeldingen toe';
 $string['completionentriesdesc'] = 'Leerling moet minstens {$a} items invoeren.';
 $string['completionentriesgroup'] = 'Items eisen';
 $string['concept'] = 'Concept';
@@ -301,6 +301,7 @@ $string['page-mod-glossary-edit'] = 'Woordenlijst toevoegen/bewerken pagina';
 $string['page-mod-glossary-view'] = 'Bekijk woordenlijkst bewerk pagina';
 $string['page-mod-glossary-x'] = 'Elke woordenlijstmodule pagina';
 $string['pendingapproval'] = 'In afwachting van goedkeuring';
+$string['pendingapprovalcount'] = 'In afwachting van goedkeuring ({$a})';
 $string['pluginadministration'] = 'Woordenlijst beheer';
 $string['pluginname'] = 'Woordenlijst';
 $string['popupformat'] = 'Pop-upgrootte';
@@ -393,7 +394,6 @@ interne bronnen, weeksamenvattingen  enz.</p>
 
 <p>Merk op dat categoriën ook gelinkt worden.</p>';
 $string['visibletabs'] = 'Zichtbare tabs';
-$string['waitingapproval'] = 'Nog goedkeuren';
 $string['warningstudentcapost'] = '(Alleen van toepassing als de woordenlijst niet de hoofdwoordenlijst is)';
 $string['withauthor'] = 'Items met auteur';
 $string['withoutauthor'] = 'Items zonder auteur';

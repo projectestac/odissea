@@ -49,6 +49,10 @@ define('CACHE_DISABLE_ALL', true); // Disables caching.. just in case.
 define('PHPUNIT_TEST', false);
 define('IGNORE_COMPONENT_CACHE', true);
 define('MDL_PERF_TEST', false);
+define('MDL_PERF', false);
+define('MDL_PERFTOFOOT', false);
+define('MDL_PERFTOLOG', false);
+define('MDL_PERFINC', false);
 
 // Servers should define a default timezone in php.ini, but if they don't then make sure something is defined.
 if (!function_exists('date_default_timezone_set') or !function_exists('date_default_timezone_get')) {
@@ -214,13 +218,9 @@ require_once($CFG->dirroot.'/cache/lib.php');
 //the problem is that we need specific version of quickforms and hacked excel files :-(
 ini_set('include_path', $CFG->libdir.'/pear' . PATH_SEPARATOR . ini_get('include_path'));
 
-// Register our classloader, in theory somebody might want to replace it to load other hacked core classes.
-// Required because the database checks below lead to session interaction which is going to lead us to requiring autoloaded classes.
-if (defined('COMPONENT_CLASSLOADER')) {
-    spl_autoload_register(COMPONENT_CLASSLOADER);
-} else {
-    spl_autoload_register('core_component::classloader');
-}
+// Register our classloader.
+\core_component::register_autoloader();
+
 
 require('version.php');
 $CFG->target_release = $release;
@@ -649,4 +649,3 @@ echo '</div>';
 
 install_print_footer($config);
 die;
-

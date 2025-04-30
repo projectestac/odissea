@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'en', version '4.1'.
+ * Strings for component 'oublog', language 'en', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -93,6 +93,8 @@ $string['commentuntil'] = 'Commenting only allowed until';
 $string['completioncomments'] = 'User must make comments on blog posts:';
 $string['completioncommentsgroup'] = 'Require comments';
 $string['completioncommentsgroup_help'] = 'If you enable this option, the blog will be marked as complete for a student once they have left the specified number of comments.';
+$string['completiondetail:comments'] = 'Make comments: {$a}';
+$string['completiondetail:posts'] = 'Make {$a->name} posts: {$a->number}';
 $string['completionposts'] = 'User must make blog posts:';
 $string['completionpostsgroup'] = 'Require posts';
 $string['completionpostsgroup_help'] = 'If you enable this option, the blog will be marked as complete for a student once they have made the specified number of posts.';
@@ -465,6 +467,7 @@ $string['oublogallpostslogin_desc'] = 'Enable to force login to the personal blo
 When enabled only logged-in users will see the link to this page.';
 $string['oublogcrontask'] = 'OU blog maintenance jobs';
 $string['oublogintro'] = 'Intro';
+$string['oublogsettingstask'] = 'OU Blog settings task';
 $string['overviewnumentrylog'] = 'entries since last log in';
 $string['overviewnumentrylog1'] = 'entry since last log in';
 $string['overviewnumentryvw'] = 'entries since last viewed';
@@ -564,18 +567,24 @@ $string['reportingemail_help'] = 'This setting specifies the email addresses of 
 about issues with posts or comments within the OUBlog.
 They should be entered as a comma separated list.';
 $string['restricttags'] = 'Tag options';
-$string['restricttags_default'] = 'Add tags by default';
+$string['restricttags_default'] = 'Predefined tags are added by default a new post';
 $string['restricttags_help'] = 'If you select this option, you can restrict
 tag entry to only those that are pre-defined at activity level and/or require that at least one tag be entered in a post.';
-$string['restricttags_req'] = 'Must enter tags';
-$string['restricttags_req_set'] = 'Must enter pre-defined tags only';
-$string['restricttags_set'] = 'Allow pre-defined tags only';
+$string['restricttags_none'] = 'Individual tags (separated by commas) can be added to a post if required';
+$string['restricttags_req'] = 'Pre-defined or individual tags (separated by commas) must be chosen to add a post';
+$string['restricttags_req_set'] = 'Pre-defined tags must be chosen to add a post';
+$string['restricttags_set'] = 'Pre-defined tags can be chosen for a post if required';
 $string['restricttagslist'] = 'You may only enter the \'Set\' tags: {$a}';
 $string['restricttagsvalidation'] = 'Only \'Set\' tags are allowed to be entered';
+$string['returntolabel'] = 'Return to';
 $string['rss'] = 'RSS';
 $string['rssfeed'] = 'RSS feed';
-$string['savefailnetwork'] = '<p>Unfortunately, your changes cannot be saved at this time.
-This is due to a network error; the website is temporarily unavailable or you have been signed out. </p>
+$string['savecheck'] = 'Enable save check';
+$string['savecheck_desc'] = 'Enable checking of session etc on submitting the post form.';
+$string['savefailnetwork'] = 'a network error; the website is temporarily unavailable or cannot be reached';
+$string['savefailsession'] = 'a session error; your session has expired due to inactivity or you are no longer logged in';
+$string['savefailtext'] = '<p>Unfortunately, your changes cannot be saved at this time.
+This is due to {$a}. </p>
 <p>Saving has been disabled on this blog.
 In order to retain any changes you must copy the edited blog content,
 access the Edit page again and then paste in your changes.</p>';
@@ -584,14 +593,6 @@ $string['savegrades'] = 'Save grades';
 $string['search:activity'] = 'OU blog - activity information';
 $string['search:comments'] = 'OU blog - posts comments';
 $string['search:post'] = 'OU blog - posts';
-$string['searchblogs'] = 'Search';
-$string['searchblogs_help'] = 'Type your search term and press Enter or click the button.
-
-To search for exact phrases use quote marks.
-
-To exclude a word insert a hyphen immediately before the word.
-
-Example: the search term <tt>picasso -sculpture &quot;early works&quot;</tt> will return results for &lsquo;picasso&rsquo; or the phrase &lsquo;early works&rsquo; but will exclude items containing &lsquo;sculpture&rsquo;.';
 $string['searchthisblog'] = 'Search this {$a}';
 $string['sendanddelete'] = 'Send and delete';
 $string['separateindividual'] = 'Separate individuals';
@@ -615,7 +616,8 @@ $string['strftimerecent'] = '%d %B %y, %H:%M';
 $string['subscribefeed'] = 'Subscribe to a feed (requires appropriate software) to receive notification when this {$a} is updated.';
 $string['summary'] = 'Summary';
 $string['tags'] = 'Tags';
-$string['tags_help'] = 'Tags are labels that help you find and categorise posts.';
+$string['tags_help'] = 'Tags are labels that help you find and categorise posts. When adding tags, they should be comma separated if using two or more. {$a}';
+$string['tags_help_predefined'] = 'You must select available tags from the dropdown tag list.';
 $string['tagsfield'] = 'Tags (separated by commas)';
 $string['tagshowless'] = 'Show less ...';
 $string['tagshowmore'] = 'Show more ...';

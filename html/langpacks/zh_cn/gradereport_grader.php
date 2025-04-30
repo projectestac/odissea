@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'zh_cn', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'zh_cn', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = '查看{$a}结果';
 $string['ajaxchoosescale'] = '选择';
 $string['ajaxclicktoclose'] = '点击此框移除它';
 $string['ajaxerror'] = '错误';
 $string['ajaxfailedupdate'] = '无法为[2]更新[1]';
 $string['ajaxfieldchanged'] = '您正在编辑的字段已经更改了，您想使用更新后的值吗？';
+$string['aria:dropdowncolumns'] = '有折叠的列';
+$string['cellactions'] = '单元格操作';
+$string['clearsearch'] = '清除搜索用户';
+$string['editingmode_title'] = '编辑评分报告';
 $string['eventgradereportviewed'] = '评分人报表已查看';
 $string['grader:manage'] = '管理评分人报表';
 $string['grader:view'] = '查看成绩单';
@@ -58,6 +63,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = '是否显示�
 $string['privacy:metadata:preference:grade_report_showuserimage'] = '是否在姓名旁边显示用户头像';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = '评分人报表中每页显示的学生人数';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = '您在“ {$a-> name}”课程中折叠了一些成绩册类别';
+$string['reopencolumn'] = '展开列{$a}';
 $string['summarygrader'] = '一张表格，第一列是学生姓名，最上面是按课程和类别分组的可评分的活动。';
 $string['useractivityfeedback'] = '{$a}反馈';
 $string['useractivitygrade'] = '{$a}成绩';

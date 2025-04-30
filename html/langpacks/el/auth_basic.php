@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_basic', language 'el', version '4.1'.
+ * Strings for component 'auth_basic', language 'el', version '4.4'.
  *
  * @package     auth_basic
  * @category    string
@@ -49,7 +49,6 @@ $string['send401_cancel'] = 'Πρέπει να εισαγάγετε ένα έγ�
 $string['send401_help'] = 'Αν ναι, τότε σε όλους τους χρήστες θα παρουσιάζεται το βασικό παράθυρο διαλόγου αυθεντικοποίησης και η κανονική σελίδα σύνδεσης θα απενεργοποιηθεί. Στις περισσότερες περιπτώσεις δεν θα το θέλετε αυτό.';
 $string['timecreated'] = 'Χρόνος δημιουργίας';
 $string['timeexpired'] = 'Χρόνος λήξης';
-$string['usage'] = 'Χρήση';
 $string['username'] = 'Όνομα';
 $string['uses'] = 'Τρόπος χρήσης';
 $string['whitelist_not_set'] = 'Το <code>$CFG->auth_basic_whitelist_ips</code> δεν έχει ρυθμιστεί στο config.php, οπότε δεν θα υπάρχει περιορισμός διευθύνσεων IP.';

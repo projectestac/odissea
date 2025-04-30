@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'zh_cn', version '4.1'.
+ * Strings for component 'tag', language 'zh_cn', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -73,6 +73,7 @@ $string['eventtagupdated'] = '标签已更新';
 $string['exclusivemode'] = '仅显示标签{$a->tagarea}';
 $string['flag'] = '标记';
 $string['flagasinappropriate'] = '标记为不和谐的';
+$string['flagcount'] = '标签数量';
 $string['flagged'] = '标签已标记';
 $string['helprelatedtags'] = '相关标签用英文半角逗号分隔';
 $string['id'] = 'ID';
@@ -117,7 +118,7 @@ $string['ptags'] = '用户自定义标签(英文半角逗号分隔)';
 $string['relatedblogs'] = '最近发表的博客';
 $string['relatedtags'] = '相关标签';
 $string['removetagfrommyinterests'] = '将“{$a}”从我的兴趣列表中移除';
-$string['reset'] = '重置';
+$string['reset'] = '重置标签';
 $string['resetfilter'] = '重置过滤器';
 $string['resetflag'] = '重置标记';
 $string['responsiblewillbenotified'] = '将通知相关人员';
@@ -128,7 +129,7 @@ $string['searchable'] = '可搜索';
 $string['searchable_help'] = '如果勾选，此搜索集中的标记可以通过“搜索标记”页面找到。 如果去除勾选，仍然可以通过其他搜索页面找到标签。';
 $string['searchresultsfor'] = '搜索“{$a}”的结果';
 $string['searchtags'] = '搜索标签';
-$string['seeallblogs'] = '查看使用标签“{$a}”的所有博客文章...';
+$string['seeallblogs'] = '查看标签为“{$a}”的所有博客文章';
 $string['select'] = '选择';
 $string['selectcoll'] = '选择标签集';
 $string['selectmaintag'] = '选择合并后使用的标签';

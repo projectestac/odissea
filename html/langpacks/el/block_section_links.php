@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'el', version '4.1'.
+ * Strings for component 'block_section_links', language 'el', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Το μπλοκ συνδέσμων ενοτήτω
 $string['section_links:addinstance'] = 'Προσθέστε ένα νέο μπλοκ συνδέσμων ενοτήτων';
 $string['showsectionname'] = 'Εμφάνιση ονόματος ενότητας';
 $string['showsectionname_help'] = 'Εμφάνιση ονόματος ενότητας εκτός από τον αριθμό ενότητας';
-$string['topics'] = 'Θέματα';
-$string['weeks'] = 'Εβδομάδες';

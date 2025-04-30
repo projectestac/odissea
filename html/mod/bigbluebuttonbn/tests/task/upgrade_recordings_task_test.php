@@ -31,7 +31,7 @@ use mod_bigbluebuttonbn\test\testcase_helper_trait;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers \mod_bigbluebuttonbn\task\upgrade_recordings_task
  */
-class upgrade_recordings_task_test extends advanced_testcase {
+final class upgrade_recordings_task_test extends advanced_testcase {
 
     use testcase_helper_trait;
 
@@ -124,6 +124,7 @@ class upgrade_recordings_task_test extends advanced_testcase {
         foreach ($matchesarray as $matches) {
             $this->expectOutputRegex('/' . implode('.*', $matches) . '/s');
         }
+        $this->resetDebugging(); // We might have debugging message that are sent by get_from_meetingid and can ignore them.
     }
 
     /**
@@ -186,6 +187,7 @@ class upgrade_recordings_task_test extends advanced_testcase {
         foreach ($matchesarray as $matches) {
             $this->expectOutputRegex('/' . implode('.*', $matches) . '/s');
         }
+        $this->resetDebugging(); // We might have debugging message that are sent by get_from_meetingid and can ignore them.
     }
 
     /**
@@ -197,8 +199,8 @@ class upgrade_recordings_task_test extends advanced_testcase {
         $plugingenerator = $this->getDataGenerator()->get_plugin_generator('mod_bigbluebuttonbn');
         [$teacher, $groups, $instance, $groupedinstance, $deletedinstance] = $this->setup_basic_course_and_meeting();
 
-        $this->create_legacy_log_entries($instance, $teacher->id, 5, false);
-        $this->create_legacy_log_entries($instance, $teacher->id, 5, false, false);
+        $this->create_log_entries($instance, $teacher->id, 5);
+        $this->create_log_entries($instance, $teacher->id, 5, false, false);
         $this->assertEquals(10, $DB->count_records('bigbluebuttonbn_logs', ['log' => 'Create']));
 
         // Schedule the run.
@@ -257,7 +259,7 @@ class upgrade_recordings_task_test extends advanced_testcase {
             'instanceid' => $this->instance->get_instance_id(),
             'groupid' => $this->instance->get_group_id(),
         ]);
-        $this->create_legacy_log_entries($this->instance, $user->id, 5, false);
+        $this->create_log_entries($this->instance, $user->id, 5);
         $plugingenerator->create_recording([
             'bigbluebuttonbnid' => $this->instance->get_instance_id(),
             'groupid' => $this->instance->get_group_id(),
@@ -292,12 +294,12 @@ class upgrade_recordings_task_test extends advanced_testcase {
         global $DB;
         [$teacher, $groups, $instance, $groupedinstance, $deletedinstance] = $this->setup_basic_course_and_meeting();
 
-        $this->create_legacy_log_entries($instance, $teacher->id, 30, $importedrecording);
+        $this->create_log_entries($instance, $teacher->id, 30, $importedrecording);
         foreach ($groups as $group) {
             $groupinstance = instance::get_group_instance_from_instance($groupedinstance, $group->id);
-            $this->create_legacy_log_entries($groupinstance, $teacher->id, 15, $importedrecording);
+            $this->create_log_entries($groupinstance, $teacher->id, 15, $importedrecording);
         }
-        $this->create_legacy_log_entries($deletedinstance, $teacher->id, 15, $importedrecording);
+        $this->create_log_entries($deletedinstance, $teacher->id, 15, $importedrecording);
         course_delete_module($deletedinstance->get_cm_id());
         // Truncate the recordings table to reflect what it would have looked like before this version.
         $DB->delete_records('bigbluebuttonbn_recordings');

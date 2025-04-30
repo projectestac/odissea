@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ar', version '4.1'.
+ * Strings for component 'enrol_database', language 'ar', version '4.4'.
  *
  * @package     enrol_database
  * @category    string
@@ -57,11 +57,11 @@ $string['newcoursefullname'] = 'حقل الاسم الكامل للمقرر ال
 $string['newcourseidnumber'] = 'حقل مُعرَّف المساق الجديد';
 $string['newcourseshortname'] = 'حقل الاسم المختصر للمقرر الدراسي الجديد';
 $string['newcoursetable'] = 'جدول المقررات الدراسية الجديدة البعيد';
-$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمقررات الدراسيةالتي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مقرر.';
+$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمساقات التي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مساق.';
 $string['pluginname'] = 'قاعدة البيانات الخارجية';
 $string['pluginname_desc'] = 'يمكنك استعمال قاعدة بيانات خارجية (تقريباً بأي نوع) للسيطرة على عمليات الانضمام. من المفترض أن قاعدة بياناتك تحتوي على الأقل على حقل يضم مُعرَّف المساق، وحقل آخر يحتوي على مُعرَّف المستخدم. ستتم مقارنتهما مع الحقول التي تختارها في جدولي المقررات الدراسية والمستخدمين المحليين.';
 $string['privacy:metadata'] = 'إن محلق انضمام قاعدة البيانات لا يخزن أي بيانات شخصية.';
-$string['remotecoursefield'] = 'حقل المساق عن بعد';
+$string['remotecoursefield'] = 'حقل المساق البعيد';
 $string['remotecoursefield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المساق.';
 $string['remoteenroltable'] = 'جدول انضمام المستخدم البعيد';
 $string['remoteenroltable_desc'] = 'حدد اسم الجدول الذي يحتوي على قائمة انضمامات المستخدمين. تركه فارغاً معناه عدم إجراء مزامنة على انضمامات المستخدمين.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'eu', version '4.1'.
+ * Strings for component 'contentbank', language 'eu', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Egilea';
 $string['choosecontext'] = 'Aukeratu ezazu ikastaroa edo kategoria...';
-$string['close'] = 'Itxi';
 $string['contentbank'] = 'Eduki-bankua';
 $string['contentbankpreferences'] = 'Eduki-bankuko hobespenak';
+$string['contentcopied'] = 'Edukia kopiatu da.';
+$string['contentcreated'] = 'Edukia sortuta.';
 $string['contentdeleted'] = 'Edukia ezabatu da.';
 $string['contentname'] = 'Edukiaren izena';
 $string['contentnotdeleted'] = 'Errore bat gertatu da edukia ezabatzen saiatzean.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Edukiaren izena aldatu da.';
 $string['contentsmoved'] = 'Eduki-bankuko edukiak {$a}(e)ra mugitu dira.';
 $string['contenttypenoaccess'] = 'Ezin duzu ikusi {$a} instantzia hau.';
 $string['contenttypenoedit'] = 'Ezin duzu eduki hau editatu';
+$string['contentupdated'] = 'Edukia eguneratuta.';
 $string['contentvisibilitychanged'] = 'Edukia orain {$a} da.';
 $string['contentvisibilitynotset'] = 'Errore bat gertatu da edukiaren ikusgarritasuna ezartzen saiatzean.';
 $string['contextnotallowed'] = 'Ez duzu eduki-bankura testuinguru honetan sartzeko baimenik.';
+$string['copycontent'] = 'Kopiatu edukia';
+$string['copyof'] = '{$a}(r)en kopia';
 $string['deletecontent'] = 'Ezabatu edukia';
 $string['deletecontentconfirm'] = 'Ziur zaude <em>\'{$a->name}\'</em> edukia eta berarekin lotutako fitxategiak ezabatu nahi dituzula? Ekintza honek ez du atzera bueltarik.';
 $string['deletecontentconfirmlinked'] = 'Edukia soilik eduki-bankutik ezabatuko da. Une honetan eduki hau estekatuta daukaten lekuetan esteka eduki honen kopia batekin ordezkatuko da.';
@@ -64,6 +68,7 @@ $string['more'] = 'Gehiago';
 $string['name'] = 'Edukia';
 $string['nocontentavailable'] = 'Ez dago edukirik eskuragarri';
 $string['nocontenttypes'] = 'Ez dago eduki-motarik eskuragarri';
+$string['nopermissiontocopy'] = 'Ez duzu edukia kopiatzeko baimenik.';
 $string['nopermissiontodelete'] = 'Ez duzu edukia ezabatzeko baimenik.';
 $string['nopermissiontomanage'] = 'Ez duzu edukia kudeatzeko baimenik.';
 $string['notavailable'] = 'Sentitzen dugu, eduki hau ez dago eskuragarri.';

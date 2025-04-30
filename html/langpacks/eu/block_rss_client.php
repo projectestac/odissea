@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', version '4.1'.
+ * Strings for component 'block_rss_client', language 'eu', version '4.4'.
  *
  * @package     block_rss_client
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfeed'] = 'Gehitu albiste-jario baten URLa:';
+$string['addfeed'] = 'Gehitu RSS jarioaren URLa';
 $string['addheadlineblock'] = 'Gehitu goialdeko RSS blokea';
 $string['addnew'] = 'Gehitu beste bat';
 $string['addnewfeed'] = 'Gehitu beste jario bat';
@@ -34,16 +34,16 @@ $string['choosefeedlabel'] = 'Aukeratu bloke honetan eskuragarri izatea nahi dit
 $string['clientchannellink'] = 'Gunearen iturria...';
 $string['clientnumentries'] = 'Jarioko erakutsi behar den lehenetsitako sarrera-kopurua.';
 $string['clientshowchannellinklabel'] = 'Jatorrizko gunearekiko esteka (jarioaren esteka) erakutsi behar al da? (Albiste-jarioaren estekarik ematen ez bada, bat ere ez dela erakutsiko kontuan hartu):';
-$string['clientshowimagelabel'] = 'Erakutsi jarioaren irudia eskuragarria balitz:';
+$string['clientshowimagelabel'] = 'Erakutsi jarioaren irudia eskuragarria badago';
 $string['configblock'] = 'Konfiguratu bloke hau';
 $string['couldnotfindfeed'] = 'Ezin izan da ID hori duen jariorik aurkitu';
 $string['couldnotfindloadrssfeed'] = 'Ezin izan da aurkitu edo kargatu RSS jarioa.';
-$string['customtitlelabel'] = 'Izenburu pertsonalizatua (jarioak ematen duen izenburua erakusteko hutsik utzi):';
+$string['customtitlelabel'] = 'Izenburu pertsonalizatua (jarioak ematen duen izenburua erakusteko hutsik utzi)';
 $string['deletefeedconfirm'] = 'Ziur zaude jario hau ezabatu nahi duzula?';
 $string['disabledrssfeeds'] = 'RSS jarioak desgaituta daude';
 $string['displaydescriptionlabel'] = 'Erakutsi esteka bakoitzaren deskribapena?';
 $string['editafeed'] = 'Editatu jarioa';
-$string['editfeeds'] = 'Editatu, harpidetu edo baja eman RSS/Atom albiste-jariotik';
+$string['editfeeds'] = 'Editatu, harpidetu edo baja eman RSS jariotik';
 $string['editnewsfeeds'] = 'Editatu albiste-jarioak';
 $string['editrssblock'] = 'Editatu RSS goialdeko blokea';
 $string['enableautodiscovery'] = 'Gaitu jarioak modu automatikoan aurkitzea?';
@@ -51,20 +51,20 @@ $string['enableautodiscovery_help'] = 'Gaituz gero, web-orrietako jarioak automa
 $string['failedfeed'] = 'Ezin izan da jarioa deskargatu - {$a}-ren ostean beste saiakera bat egingo da';
 $string['failedfeeds'] = 'Ezin izan da RSS jarioren bat deskargatu';
 $string['feed'] = 'Jarioa';
-$string['feedadded'] = 'Albiste-jarioa gehitu da';
-$string['feeddeleted'] = 'Albiste-jarioa ezabatu da';
-$string['feeds'] = 'Albiste-jarioak';
+$string['feedadded'] = 'RSS jarioa gehitu da';
+$string['feeddeleted'] = 'RSS jarioa ezabatu da';
+$string['feeds'] = 'RSS jarioak';
 $string['feedsaddedit'] = 'Gehitu/editatu jarioak';
 $string['feedsconfigurenewinstance'] = 'Egin klik hemen RSS jarioak erakustearren bloke hau konfiguratzeko.';
 $string['feedsconfigurenewinstance2'] = 'Egin klik goiko edizio-ikonoan bloke hau RSS jarioak erakusteko konfiguratzeko.';
-$string['feedupdated'] = 'Albiste-jarioa eguneratu da';
+$string['feedupdated'] = 'RSS jarioa eguneratu da';
 $string['feedurl'] = 'Jarioaren URLa';
 $string['findmorefeeds'] = 'Bilatu RSS jario gehiago';
-$string['managefeeds'] = 'Kudeatu nire jario guztiak';
+$string['managefeeds'] = 'Kudeatu RSS jarioak';
 $string['nofeeds'] = 'Gune honetako ez da RSS jariorik definitu.';
 $string['numentries'] = 'Sarrerak jarioko';
-$string['pickfeed'] = 'Albiste-jarioa aukeratu';
-$string['pluginname'] = 'Urrutiko RSS jarioak';
+$string['pickfeed'] = 'Aukeratu RSS jario bat';
+$string['pluginname'] = 'RSS jarioak';
 $string['privacy:metadata:block_rss_client:description'] = 'RSS jarioaren deskribapena.';
 $string['privacy:metadata:block_rss_client:preferredtitle'] = 'RSS jarioaren izenburu pertsonalizatua.';
 $string['privacy:metadata:block_rss_client:shared'] = 'RSS jarioa ikastaro guztietan eskuragarri dagoen edo ez.';
@@ -75,13 +75,13 @@ $string['privacy:metadata:block_rss_client:title'] = 'RSS jarioaren izenburua';
 $string['privacy:metadata:block_rss_client:url'] = 'RSS jarioaren URLa';
 $string['privacy:metadata:block_rss_client:userid'] = 'RSS jarioa gehitu zuen erabiltzailearen IDa.';
 $string['refreshfeedstask'] = 'Freskatu RSS jarioak ataza';
-$string['remotenewsfeed'] = 'Urrutiko albiste-jarioa';
-$string['rss_client:addinstance'] = 'Gehitu urrutiko RSS albiste-jarioa bloke berria';
+$string['remotenewsfeed'] = 'RSS jarioa';
+$string['rss_client:addinstance'] = 'Gehitu RSS jarioa bloke berria';
 $string['rss_client:createprivatefeeds'] = 'Sortu RSS jario pribatuak';
 $string['rss_client:createsharedfeeds'] = 'Sortu partekatutako RSS jarioak';
 $string['rss_client:manageanyfeeds'] = 'Kudeatu edozein RSS jario';
 $string['rss_client:manageownfeeds'] = 'Kudeatu norberaren RSS jarioak';
-$string['rss_client:myaddinstance'] = 'Gehitu urrutiko RSS albiste-jarioa bloke berria Aginte-panelean';
+$string['rss_client:myaddinstance'] = 'Gehitu RSS jarioa bloke berria Aginte-panelean';
 $string['seeallfeeds'] = 'Ikusi jario guztiak';
 $string['sharedfeed'] = 'Partekatutako jarioa';
 $string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehieneko sarrera-kopurua.';
@@ -90,5 +90,5 @@ $string['submitters2'] = 'Igorleak';
 $string['timeout'] = 'Minututan neurtutako denbora RSS jarioa iraungi aurretik. Hartu kontuan denbora honek iraungi aurretiko gutxieneko tartea definitzen duela; jarioa cron-aren hurrengo exekuzioan freskatuko da. Gomendatutako balioak 30 minutu edo gehiago dira.';
 $string['timeout2'] = 'Denbora-muga';
 $string['timeoutdesc'] = 'Albiste-jarioak cachean iraun dezakeen denbora-epea (minututan)';
-$string['updatefeed'] = 'Eguneratu albiste-jario baten URLa:';
+$string['updatefeed'] = 'Eguneratu RSS jario baten URLa';
 $string['viewfeed'] = 'Ikusi jarioa';

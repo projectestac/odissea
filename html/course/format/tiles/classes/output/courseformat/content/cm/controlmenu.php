@@ -45,7 +45,7 @@ class controlmenu extends \core_courseformat\output\local\content\cm\controlmenu
     protected function cm_control_items() {
         $format = $this->format;
         $mod = $this->mod;
-        $sectionreturn = $format->get_section_number();
+        $sectionreturn = $format->get_sectionnum();
         if (!empty($this->displayoptions['disableindentation']) || !$format->uses_indentation()) {
             $indent = -1;
         } else {

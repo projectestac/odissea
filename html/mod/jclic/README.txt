@@ -3,7 +3,7 @@
 #
 # @package mod
 # @subpackage jclic
-# @copyright 2008 Departament d'Ensenyament de la Generalitat de Catalunya
+# @copyright 2008 onwards Departament d'Ensenyament de la Generalitat de Catalunya
 # @source https://github.com/projectestac/moodle-mod_jclic/
 # @license http://www.gnu.org/licenses/gpl-2.0.txt
 ##
@@ -15,7 +15,7 @@ This module allows the incorporation of JClic activities in Moodle. Its main
 features are:
 - Allows embedding easily JClic activities in some Moodle course.
 - Facilitates students tracing because it stores the score, date and duration 
-of each of the attempts made ​​by the users.
+of each of the attempts made by the users.
 
 -----------------------------------------------------------------------------
 This program is free software; you can redistribute it and/or
@@ -38,7 +38,7 @@ to http://www.gnu.org/copyleft/gpl.html or write to
 
 -----------------------------------------------------------------------------
 REQUIREMENTS
-Compatible with Moodle 2.X releases
+Compatible with Moodle 4.0 and later versions.
 
 -----------------------------------------------------------------------------
 INSTALL
@@ -49,34 +49,33 @@ CREDITS
 
 Developers:
    Sara Arjona Tellez (sarjona@xtec.cat)
-   
+
 With the support of:
     Education Government of Catalonia [2]
     Francesc Busquets Burguera (fbusquet@xtec.cat)
-
-
 
 JClic community support:
    Monica Grau
 
 
 Translations:
+
    Basque:
      Abel Camacho  - didaktika@santurtzieus.com
      Pedro Lonbide - zuzen@santurtzieus.com
-     
+
    Brazilian
      Kleber Calegario Batista - klebercal@gmail.com
 
    Greek:
      Yannis Kaskamanidis - kiolalis@gmail.com
-     
+
    Galician:
      Xosé Luis Barreiro Cebey - xoseluis@edu.xunta.es
-     
+
    Hebrew:
      Nadav Kavalerchik - nadavkav@gmail.com
- 
+
 
 Special Thanks:
    Sandra Fernandez 
@@ -90,8 +89,6 @@ Special Thanks:
    Jaume Rocarias
 
 
-
 -----------------------------------------------------------------------------
 [1] https://clic.xtec.cat/
-[2] http://www.gencat.cat/ensenyament
-
+[2] https://educacio.gencat.cat/

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'it', version '4.1'.
+ * Strings for component 'assign', language 'it', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Non hai ancora consegnato.';
 $string['allocatedmarker'] = 'Valutatore assegnato';
 $string['allocatedmarker_help'] = 'Valutatore assegnato a questa consegna.';
 $string['allowsubmissions'] = 'Consenti all\'utente di continuare a consegnare il compito';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'I dettagli del compito ed il form di consegna saranno disponibili a partire dal <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Inizio consegne';
 $string['allowsubmissionsfromdate_help'] = 'Impedisce agli studenti di consegnare il compito prima della data di inizio consegne.';
-$string['allowsubmissionsfromdatesummary'] = 'Questo compito accetta consegne a partire dal <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Consenti di modificare le consegne';
 $string['alwaysshowdescription'] = 'Visualizza la descrizione';
 $string['alwaysshowdescription_help'] = 'Se disabilitato, la descrizione del compito sarà visibile solo dopo la data di inizio delle consegne.';
@@ -224,6 +222,8 @@ $string['eventsubmissionviewed'] = 'Visualizzazione consegna';
 $string['eventworkflowstateupdated'] = 'Aggiornamento stato del flusso di lavoro.';
 $string['expandreviewpanel'] = 'Ingrandisci il pannello di revisione';
 $string['extensionduedate'] = 'Data scadenza proroga';
+$string['extensionduedatecurrent'] = 'Data di scadenza dell\'estensione';
+$string['extensionduedatenone'] = 'Nessuna';
 $string['extensionnotafterduedate'] = 'La data di fine proroga deve essere successiva alla data di fine consegne';
 $string['extensionnotafterfromdate'] = 'La data di fine proroga deve essere successiva alla data di inizio consegne';
 $string['feedback'] = 'Commento';
@@ -339,6 +339,8 @@ $string['markerfilter'] = 'Filtro valutatore';
 $string['markerfilternomarker'] = 'Nessun valutatore';
 $string['markingallocation'] = 'Utilizza assegnazione valutatori';
 $string['markingallocation_help'] = 'Consente di assegnare valutatori a singoli studenti. Richiede l\'attivazione del flusso di lavoro della valutazione.';
+$string['markinganonymous'] = 'Consenti il rilascio parziale dei voti durante la valutazione anonima';
+$string['markinganonymous_help'] = 'Se abilitato insieme alle consegne anonime e al flusso di lavoro della valutazione, consente il rilascio parziale dei voti durante la valutazione anonima.';
 $string['markingworkflow'] = 'Utilizza flusso di lavoro della valutazione';
 $string['markingworkflow_help'] = 'Le valutazioni seguiranno un flusso di lavoro prima di essere rilasciate agli studenti, consentendo di valutare in diversi cicli e rilasciare le valutazioni a tutti gli studenti in una sola volta.';
 $string['markingworkflowstate'] = 'Stato del flusso di lavoro della valutazione';
@@ -464,8 +466,6 @@ $string['quickgrading_help'] = 'La valutazione rapida consente di valutare i com
 $string['quickgradingchangessaved'] = 'Le modiche alle valutazioni sono state salvate';
 $string['quickgradingresult'] = 'Valutazione rapida';
 $string['recordid'] = 'Identificativo';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} dopo l\'inizio del corso';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} prima dell\'inizio del corso';
 $string['relativedatessubmissiontimeleft'] = 'Calcolato individualmente';
 $string['removeallgroupoverrides'] = 'Elimina tutte le personalizzazioni di gruppo';
 $string['removealluseroverrides'] = 'Elimina tutte le personalizzazioni individuali';
@@ -477,7 +477,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Sei sicuro di eliminare la tu
 $string['removesubmissionforstudent'] = 'Eliminazione consegna dello studente (id={$a->id}, nome e cognome={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'L\'opzione \'Automaticamente fino al superamento\' non è compatibile con la valutazione cieca poiché le valutazioni non verranno trasferite nel registro valutatore finché non sarà stata rivelata l\'identità degli studenti.';
 $string['requireallteammemberssubmit'] = 'Tutti i gli appartenenti al gruppo devono premere il pulsante consegna';
-$string['requireallteammemberssubmit_help'] = 'Tutti gli studenti appartenenti al gruppo dovranno premere il pulsante consegna affinché la consegna venga presa in considerazione. Se l\'impostazione è disabilitata, sarà considerata la consegna di qualsiasi membro del gruppo.';
+$string['requireallteammemberssubmit_help'] = 'Questa impostazione deve essere utilizzata insieme a \'Richiedi agli studenti di fare clic sul pulsante di invio\' nelle Impostazioni di invio.
+
+Se abilitato, tutti i membri del gruppo dovranno fare clic sul pulsante di invio affinché la consegna di gruppo venga considerata come consgenata. Se disabilitato, qualsiasi membro del gruppo può fare clic sul pulsante di invio.';
 $string['requiresubmissionstatement'] = 'Obbliga gli studenti ad accettare la dichiarazione sulla consegna';
 $string['requiresubmissionstatement_help'] = 'Gli studenti saranno obbligati ad accettare la dichiarazione sulla consegna per tutte le consegne del compito.';
 $string['revealidentities'] = 'Rivela l\'identità degli studenti';
@@ -569,6 +571,7 @@ $string['submissionstatement'] = 'Dichiarazione sulla consegna';
 $string['submissionstatement_help'] = 'Il testo della dichiarazione sulla consegna che dovrà essere accettato dallo studente prima di consegnare il compito.';
 $string['submissionstatementacceptedlog'] = 'Dichiarazione sulla consegna accettata dall\'utente {$a}';
 $string['submissionstatementdefault'] = 'Il compito è un mio lavoro originale, ad eccezione delle parti dove ho riconosciuto l\'utilizzo di lavori altrui.';
+$string['submissionstatementrequired'] = 'È necessario accettare questa dichiarazione prima di consegnare.';
 $string['submissionstatementteamsubmission'] = 'Dichiarazione sulla consegna di gruppo';
 $string['submissionstatementteamsubmission_help'] = 'Il testo della dichiarazione sulla consegna che dovrà essere accettato dallo studente prima di consegnare il compito del proprio gruppo.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Dichiarazione sulla consegna di gruppo dove tutti i membri consegneranno';

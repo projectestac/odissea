@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'uk', version '4.1'.
+ * Strings for component 'completion', language 'uk', version '4.4'.
  *
  * @package     completion
  * @category    string
@@ -129,6 +129,7 @@ $string['coursecompletedmessage'] = '<p>Вітаємо! Ви завершили 
 $string['coursecompletion'] = 'Завершення курсу';
 $string['coursecompletioncondition'] = 'Стан: {$a}';
 $string['coursecompletionnavigation'] = 'Завершення курсу третинної навігації';
+$string['coursecompletionsettings'] = 'Налаштування проходження курсу';
 $string['coursegrade'] = 'Оцінка за курс';
 $string['coursesavailable'] = 'Доступні курси';
 $string['coursesavailableexplaination'] = 'Зауваження: Критерії виконання курсу повинні бути встановлені, щоб він з’явився в цьому списку.';
@@ -136,6 +137,7 @@ $string['criteria'] = 'Критерій';
 $string['criteriagroup'] = 'Група критеріїв';
 $string['criteriarequiredall'] = 'Потрібна відповідність всім вказаним критеріям';
 $string['criteriarequiredany'] = 'Потрібна відповідність будь-якому критерію';
+$string['criteriasummary'] = '{$a->type}: {$a->summary}';
 $string['csvdownload'] = 'Завантажити в табличному форматі (UTF-8 .csv)';
 $string['datepassed'] = 'Дата проходження';
 $string['days'] = 'Днів';
@@ -233,6 +235,7 @@ $string['selfcompletion'] = 'Самостійне виконання';
 $string['showcompletionconditions'] = 'Показати умови завершення діяльності';
 $string['showcompletionconditions_help'] = 'Умови завершення діяльності завжди відображаються на сторінці діяльності. Цей параметр визначає, чи відображатимуться умови завершення діяльності під кожним заняттям на сторінці курсу.';
 $string['showinguser'] = 'Показано користувача';
+$string['studentsmust'] = 'Учні повинні';
 $string['timecompleted'] = 'Час завершено';
 $string['todo'] = 'Зробити';
 $string['unenrolingfromcourse'] = 'Зняття з курсу';
@@ -248,4 +251,4 @@ $string['viewingactivity'] = 'Перегляд {$a}';
 $string['withconditions'] = 'З умовами';
 $string['writingcompletiondata'] = 'Запис даних про виконання';
 $string['xdays'] = 'днів: {$a}';
-$string['yourprogress'] = 'Ваш прогрес';
+$string['youmust'] = 'Ви маєте';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'zh_cn', version '4.1'.
+ * Strings for component 'license', language 'zh_cn', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,17 +28,17 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = '保留一切权利';
 $string['cannotdeletecore'] = '无法删除标准许可证';
 $string['cannotdeletelicenseinuse'] = '无法删除当前分配给一个或多个文件的许可证';
-$string['cc'] = '创作共用';
+$string['cc'] = '知识共享-3.0国际版';
 $string['cc-4.0'] = '知识共享-4.0国际版';
-$string['cc-nc'] = '创作共用 - 非商业';
+$string['cc-nc'] = '知识共享-非商业3.0国际版';
 $string['cc-nc-4.0'] = '知识共享-非商业4.0国际版';
-$string['cc-nc-nd'] = '创作共用 - 非商业，禁止演绎';
+$string['cc-nc-nd'] = '知识共享-非商业-禁止衍生作品 3.0国际版';
 $string['cc-nc-nd-4.0'] = '知识共享-非商业-禁止衍生作品 4.0国际版';
-$string['cc-nc-sa'] = '创作共用 - 非商业，相同方式共享';
+$string['cc-nc-sa'] = '知识共享-非商业性-相同方式共享3.0国际版';
 $string['cc-nc-sa-4.0'] = '知识共享-非商业性-相同方式共享4.0国际版';
-$string['cc-nd'] = '创作共用 - 禁止演绎';
+$string['cc-nd'] = '知识共享-禁止衍生作品 3.0国际版';
 $string['cc-nd-4.0'] = '知识共享-禁止衍生作品 3.0国际版';
-$string['cc-sa'] = '创作共用 - 相同方式共享';
+$string['cc-sa'] = '知识共享-相同方式共享3.0国际版';
 $string['cc-sa-4.0'] = '知识共享-相同方式共享4.0国际版';
 $string['licensenotfoundshortname'] = '找不到具有短名称“{$a}”的许可证';
 $string['missinglicensesortorder'] = '无法设置许可证顺序，新订单中缺少一个或多个已安装的许可证';

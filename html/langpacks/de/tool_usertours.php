@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'de', version '4.1'.
+ * Strings for component 'tool_usertours', language 'de', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -138,7 +138,6 @@ $string['placement_help'] = 'Ein Schritt kann oben, unten, links oder rechts des
 
 Wenn der Schritt nicht auf eine bestimmte Seite an der angegebenen Stelle passt, wird er automatisch an anderer Stelle platziert.';
 $string['pluginname'] = 'Geführte Touren';
-$string['previousstep'] = 'Zurück';
 $string['privacy:metadata:preference:completed'] = 'Zeitpunkt, an dem eine Person eine Tour zuletzt abgeschlossen hat.';
 $string['privacy:metadata:preference:requested'] = 'Zeitpunkt, zu dem eine Person  eine Tour zuletzt manuell angefordert hat.';
 $string['privacy:request:preference:completed'] = 'Sie haben die Tour \'{$a->name}\' zuletzt am {$a->time} als abgeschlossen markiert.';
@@ -153,6 +152,9 @@ $string['selector_defaulttitle'] = 'Geben Sie einen beschreibenden Titel an';
 $string['selectordisplayname'] = 'CSS-Selektor passend zu \'{$a}\'';
 $string['selecttype'] = 'Schritttyp auswählen';
 $string['sharedtourslink'] = 'Tour-Repository';
+$string['showtoureachtime'] = 'jedes Mal, wenn ein Filter damit übereinstimmt';
+$string['showtouruntilcomplete'] = 'bis es geschlossen wird';
+$string['showtourwhen'] = 'Tour anzeigen';
 $string['skip'] = 'Überspringen';
 $string['skip_tour'] = 'Tour abbrechen';
 $string['target'] = 'Ziel';
@@ -252,6 +254,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'Mit den neuen Kurseinstel
 $string['tour_activityinfo_course_teacher_title'] = 'Neu: Aktivitätsinfo';
 $string['tour_final_step_content'] = 'Dies ist das Ende Ihrer Nutzertour. Sie wird nicht wieder angezeigt, außer Sie setzen sie zurück, indem Sie auf den Link in der Fußzeile klicken.';
 $string['tour_final_step_title'] = 'Ende der Tour';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Spalten anordnen und anzuzeigende Spalten auswählen. Verwenden Sie diesen Kurzbefehl im Bearbeitungsmodus, um häufige Tasks anzuzeigen und Bewertungselemente zu bearbeiten';
+$string['tour_gradebook_action_title'] = 'Schnelle Links zu Aktivitäten';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Teilnehmer/innen nach den Initialen von Vor- oder Nachnamen filtern';
+$string['tour_gradebook_filter_title'] = 'Nach Name filtern';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Suchbox zum schnellen Finden bestimmter Teilnehmer/innen verwenden';
+$string['tour_gradebook_search_title'] = 'Teilnehmer/innen einfach finden';
+$string['tour_gradebook_tour_description'] = 'Such- und Navigationsoptionen in der Bewertungsübersicht für Bewerter/innen';
+$string['tour_gradebook_tour_name'] = 'Bewertungsübersicht für Bewerter/innen';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Veröffentlichen Sie hier wichtige Ankündigungen.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Möchten Sie allen etwas mitteilen?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Fügen Sie neue Inhalte hinzu oder bearbeiten Sie vorhandene Inhalte.';

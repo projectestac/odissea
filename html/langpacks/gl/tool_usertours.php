@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'gl', version '4.1'.
+ * Strings for component 'tool_usertours', language 'gl', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -51,7 +51,7 @@ $string['content_type_langstring'] = 'ID de cadea de idioma';
 $string['content_type_manual'] = 'Manual';
 $string['cssselector'] = 'Selector CSS';
 $string['defaultvalue'] = 'Predeterminado ({$a})';
-$string['delay'] = 'Atraso antes de amosar o paso';
+$string['delay'] = 'Demora antes de amosar o paso';
 $string['delay_help'] = 'Opcionalmente pode optar por engadir un atraso antes de que se amose o paso.
 
 Este atraso é de milisegundos.';
@@ -136,7 +136,6 @@ $string['placement_help'] = 'Un paso pódese situar arriba, abaixo, á esquerda 
 
 Se o paso non colle nunha páxina determinada no lugar especificado, colocarase automaticamente noutro lugar.';
 $string['pluginname'] = 'Visitas guiadas de usuario';
-$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'Data e hora na que un usuario completou por última vez unha visita de usuario.';
 $string['privacy:metadata:preference:requested'] = 'Data e hora na que un usuario solicitou manualmente unha visita de usuario manualmente.';
 $string['privacy:request:preference:completed'] = 'Vostede marcou por última vez a visita guiada de «{$a->name}» como rematada o {$a->time}';
@@ -221,7 +220,7 @@ $string['tour3_title_displayoptions'] = 'Opcións de presentación:';
 $string['tour3_title_overview'] = 'Vista xeral do curso';
 $string['tour3_title_recentcourses'] = 'Cursos de acceso recente';
 $string['tour3_title_starring'] = 'Cursos destacados e agochados';
-$string['tour3_title_timeline'] = 'Bloque de liña temporal';
+$string['tour3_title_timeline'] = 'Bloque de cronoloxía';
 $string['tour4_content_groupconvo'] = 'Se é membro dun grupo coa mensaxería de grupo activada, verá as conversas de grupo aquí.
 
 As conversas por grupos de cursos permítenlle interactuar cos demais do seu grupo nun lugar privado e cómodo.';
@@ -250,6 +249,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'As novas configuracións 
 $string['tour_activityinfo_course_teacher_title'] = 'Novo: información da actividade';
 $string['tour_final_step_content'] = 'Este é o final da súa visita guiada de usuario. Non se amosará de novo a non ser que o restabeleza usando a ligazón no rodapé da páxina.';
 $string['tour_final_step_title'] = 'Fin da visita guiada';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordenar as columnas e escoller cales amosar. No modo editar, use este atallo para acceder a tarefas frecuentes relacionadas coa vista e edición de elementos de cualificación.';
+$string['tour_gradebook_action_title'] = 'Ligazóns rápidas a accións';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtrar o alumnado polas iniciais do seu nome ou apelido.';
+$string['tour_gradebook_filter_title'] = 'Filtrar por nome';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Use a caixa de busca para atopar rapidamente alumnos específicos.';
+$string['tour_gradebook_search_title'] = 'Atopar alumnos doadamente';
+$string['tour_gradebook_tour_description'] = 'Características de busca e navegación no informe de cualificacións do Libro de cualificacións';
+$string['tour_gradebook_tour_name'] = 'Informe de cualificacións do Libro de cualificacións';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publique aquí as noticias importantes.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Algo que contarlle a todos?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Engada contido novo ou edite o contido existente.';

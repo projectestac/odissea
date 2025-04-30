@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ro', version '4.1'.
+ * Strings for component 'license', language 'ro', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,12 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = 'Toate drepturile rezervate';
 $string['cannotdeletecore'] = 'Nu se poate șterge o licență standard';
 $string['cannotdeletelicenseinuse'] = 'Nu se poate șterge o licență care este atribuită în prezent unuia sau mai multor fișiere';
-$string['cc'] = 'Creative Commons';
-$string['cc-nc'] = 'Creative Commons - fără reclamă';
-$string['cc-nc-nd'] = 'Creative Commons - Fără reclamă NoDerivs';
-$string['cc-nc-sa'] = 'Creative Commons - Fără reclamă  ShareAlike';
-$string['cc-nd'] = 'Creative Commons - NoDerivs';
-$string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['cc'] = 'Creative Commons - 3.0 International';
+$string['cc-4.0'] = 'Creative Commons - 4.0 International';
+$string['cc-nc'] = 'Creative Commons - NonCommercial 3.0 International';
+$string['cc-nc-4.0'] = 'Creative Commons - NonCommercial 4.0 International';
+$string['cc-nc-nd'] = 'Creative Commons - NonCommercial-NoDerivatives 3.0 International';
+$string['cc-nc-nd-4.0'] = 'Creative Commons - NonCommercial-NoDerivatives 4.0 International';
+$string['cc-nc-sa'] = 'Creative Commons - NonCommercial-ShareAlike 3.0 International';
+$string['cc-nc-sa-4.0'] = 'Creative Commons - NonCommercial-ShareAlike 4.0 International';
+$string['cc-nd'] = 'Creative Commons - NoDerivatives 3.0 International';
+$string['cc-nd-4.0'] = 'Creative Commons - NoDerivatives 4.0 International';
+$string['cc-sa'] = 'Creative Commons - ShareAlike 3.0 International';
+$string['cc-sa-4.0'] = 'Creative Commons - ShareAlike 4.0 International';
 $string['licensenotfoundshortname'] = 'Nu se poate găsi o licență cu numele scurt „{$a}”';
 $string['missinglicensesortorder'] = 'Nu se poate seta comanda de licență, una sau mai multe licențe instalate lipsesc din comanda nouă';
 $string['public'] = 'Domeniu public';

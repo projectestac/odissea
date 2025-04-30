@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'ja', version '4.1'.
+ * Strings for component 'checkmark', language 'ja', version '4.4'.
  *
  * @package     checkmark
  * @category    string
@@ -61,30 +61,13 @@ $string['attendancegradelink_help'] = '保存された出欠を自動的に計�
 $string['attendancegradelink_hint'] = 'メモ: 自動計算された評点は出欠にリンクされます。';
 $string['attendancestatus'] = 'あなたの出欠の現在のステータス';
 $string['attendant'] = '出欠';
-$string['autograde_all'] = 'すべての提出を評定する';
 $string['autograde_confirm'] = 'あなたは <strong>{$a->total}</strong> の評点およびコメントを更新しようとしています。<strong>{$a->graded}</strong> の前の評点およびコメントは上書きされます。';
 $string['autograde_confirm_continue'] = '本当に続けてもよろしいですか?';
-$string['autograde_custom'] = '選択されたユーザを評定する';
 $string['autograde_error'] = '自動評定中にエラーが発生しました。';
 $string['autograde_failed'] = '自動評定に失敗しました!';
-$string['autograde_no_users_selected'] = 'あなたは評定するユーザを選択していません。下の表の左のカラムのチェックボックスで必要なユーザを選択してください。';
 $string['autograde_non_numeric_grades'] = '自動評定に数値で最大評点を設定する必要があります。これはインスタンス設定で設定できます。';
 $string['autograde_notsupported'] = 'この尺度は自動評定でサポートされていません。';
 $string['autograde_one_success'] = '自動評定が1件の提出を正常に更新しました。';
-$string['autograde_req'] = '評点が更新されました。';
-$string['autograde_str'] = '自動評定';
-$string['autograde_str_help'] = '自動評定では例ごとの評点およびチェックされた例に従ってユーザの評点を計算します。それぞれのチェックされた例の評点を加算して、これをユーザの評点として使用します。
-<ul>
-<li>選択されたユーザを評定する - リストでチェックされたユーザだけを評定します。ユーザが何も提出していない場合、空の提出が追加されます。</li>
-<li>評定が必要な人を評定する - 対応する評定よりも最新の提出を評定します。</li>
-<li>すべての提出を評定する - (このインスタンスに対して) 現在提出されているすべての提出を評定します。空の提出は追加しません。</li>
-</ul>
-<br />
-評点は選択された例の評点およびチェックされた例に基づいて計算されます:
-<ul>
-<li>標準評定: ここではそれぞれの例は等しく加重されます (例ごとに評点が積分されます)。評点はチェックした例の合計およびチェックマーク評点およびチェックマーク数の商の乗算で計算されます。</li>
-<li>個別の例の重み: 評点は (インスタンス設定に従って) チェックされたそれぞれの例の評点例の合計です。</li>
-</ul>';
 $string['autograde_strall'] = 'すべての提出';
 $string['autograde_strchanged'] = '自動評定により <strong>{$a}</strong> 名の学生の評点が変更されます。';
 $string['autograde_strmultiplesubmissions'] = '{$a} 提出';
@@ -93,6 +76,7 @@ $string['autograde_strreq'] = '評定更新が必要な提出';
 $string['autograde_success'] = '正常に自動評定されました! {$a} 件の提出が更新されました。';
 $string['autograde_users_with_unknown_attendance'] = '注意: {$a} 件の提出は出欠状況が不明なため自動評定できませんでした!';
 $string['autogradebuttonstitle'] = 'チェックマーク {$a} の提出評点を計算する';
+$string['availability'] = '利用';
 $string['availabledate'] = '提出開始';
 $string['availabledate_help'] = '提出期間の開始日です。この日を過ぎても提出可能です。';
 $string['bulk'] = 'バルク処理';
@@ -116,11 +100,6 @@ $string['cantfixevent'] = 'IDが {$a->id} および名称が {$a->name} のイ�
 $string['cfg_nowarning'] = '警告なし';
 $string['cfg_pdfexampleswarning'] = 'PDF書き出しの警告を表示する例数';
 $string['cfg_pdfexampleswarning_desc'] = '適切なPDF書き出しが保証されないという警告が表示される最小の例数です。あなたが警告を一切表示させたくない場合、またはあなたのインストレーションに合わせて微調整したい場合を除き、通常変更する必要はありません。';
-$string['checkbrokengradebookgrades'] = '壊れた評定表の評点をチェックする';
-$string['checkbrokengradebookgrades_desc'] = 'チェックマークのバージョン2.9.1のバグにより、評点が評定表に正しく転送されません。
-以下の提出課題がこのバグの影響を受けています:';
-$string['checkbrokengradebookgrades_mail'] = 'チェックマークのバージョン2.9.1のバグにより、評点が評定表に正しく転送されません。
-以下の提出物がこのバグの影響を受けて自動的に修正されました:';
 $string['checkmark:addinstance'] = 'チェックマークインスタンスを追加する';
 $string['checkmark:grade'] = 'チェックマークを評定する';
 $string['checkmark:gradepresentation'] = 'プレゼンテーション評定';
@@ -149,6 +128,7 @@ $string['checkmarkstatstitle'] = 'コース概要チェックマーク';
 $string['checkmarksubmission'] = 'チェックマーク提出';
 $string['checksummary'] = 'チェックマーク概要';
 $string['choose'] = '選択したものに対して ...';
+$string['choosegradingaction'] = '評定操作';
 $string['comment'] = 'コメント';
 $string['completiondetail:submit'] = '提出する';
 $string['completionsubmit'] = '学生はこの活動を完了するために提出する必要がある';
@@ -159,6 +139,10 @@ $string['coursemisconf'] = 'コース設定が正しくありません。';
 $string['currentgrade'] = '評定表の現在の評点';
 $string['custom_settings'] = 'カスタム設定';
 $string['cutoffdate'] = '遮断日';
+$string['cutoffdate_help'] = 'この設定を有効にした場合、この期日経過後、提出期限を延長しなければ提出は受け付けられません。';
+$string['cutoffdatecolon'] = '遮断日: {$a}';
+$string['cutoffdatefromdatevalidation'] = '遮断日は提出開始日前には設定できません。';
+$string['cutoffdatevalidation'] = '遮断日は期限前には設定できません。';
 $string['data_preview'] = 'データプレビュー';
 $string['data_preview_help'] = '印刷プレビューでカラムの表示または非表示を切り替えるには[+]または[-]をクリックしてください。';
 $string['data_settings'] = '印刷設定';
@@ -169,10 +153,15 @@ $string['defaultsettings_help'] = 'これらの設定ではすべての新しい
 $string['deletealloverrides'] = 'すべての日付オーバーライドを削除する';
 $string['deleteallsubmissions'] = 'すべての提出を削除する';
 $string['description'] = '説明';
+$string['disabled'] = '無効';
 $string['downloadall'] = 'すべてのチェックマークをZIP形式でダウンロードする';
 $string['due'] = 'チェックマーク期限';
 $string['duedate'] = '期限';
+$string['duedate_help'] = 'これは課題の提出期限です。この日以降も提出は許可されますが、この日以降に提出された課題は遅延としてマークされます。特定の日以降の提出を防ぐには課題遮断日を設定してください。';
+$string['duedatecolon'] = '期限日: {$a}';
 $string['duedateno'] = '期限日なし';
+$string['duedatevalidation'] = '提出期限は提出開始日前には設定できません。';
+$string['duplicateoverride'] = 'オーバーライドを複製する';
 $string['early'] = '{$a} 早い';
 $string['editmysubmission'] = '私の提出を編集する';
 $string['editoverride'] = 'オーバーライドを編集する';
@@ -241,6 +230,9 @@ $string['exporttemplates_help'] = '定義済みテンプレートによるクイ
         次のカラムを含みます: [フルネーム, IDナンバー, 例, チェック, 評点, 署名]</li>
 </ul>';
 $string['extended_until'] = '{$a} まで延長';
+$string['extensionduedate'] = '延長期限';
+$string['extensionnotafterduedate'] = '延長日は期限後に設定する必要があります。';
+$string['extensionnotafterfromdate'] = '延長日は提出開始日以降に設定してください。';
 $string['failedupdatefeedback'] = 'ユーザ {$a} の投稿コメントの更新に失敗しました。';
 $string['feedback'] = 'フィードバック';
 $string['feedbackfromteacher'] = '{$a} からのコメント';
@@ -265,10 +257,15 @@ $string['grade_checks_name'] = '評定をチェックする';
 $string['grade_help'] = '個々の関数が有効にされている場合、評点はすべての評点例の合計 (最大100) になる必要があります。<br />あなたが標準的な例を使用する場合、評点は例数の整数倍でなければなりません。その場合、例ごとの評点は自動的に調整されます。<br />有効化されたJavaScriptでは、個々の関数を使用する際に評点が自動的に選択されます。有効化されたJavaScriptで標準例を使用する場合、例数の整数倍のみが受理されます。';
 $string['grade_mismatch'] = '評点は例の量の整数倍になる必要があります!';
 $string['grade_presentation_name'] = 'プレゼンテーション評定';
+$string['gradebutton'] = '評定';
 $string['graded'] = '評定済み';
+$string['gradedon'] = '評定';
 $string['gradesum_mismatch'] = '個別の評点合計が選択された合計評点 ({$a->gradesum}/{$a->maxgrade}) と一致しません!';
 $string['gradingdue'] = '次の設定までに私にリマインドする';
 $string['gradingdue_help'] = '提出課題の評定完了予定日です。この日付は教師へのダッシュボード通知の優先順位付けに使用されます。';
+$string['gradingdueduedatevalidation'] = '「次の設定までに私にリマインドする」は期日より前に設定できません。';
+$string['gradingduefromdatevalidation'] = '「次の設定までに私にリマインドする」は提出開始日前には設定できません。';
+$string['gradingstatus'] = '評定ステータス';
 $string['gradingsummary'] = '評定概要';
 $string['grant_extension'] = '延長許可';
 $string['group_dates_overridden'] = 'グループ {$a} の日付がオーバーライドされました!';
@@ -288,6 +285,7 @@ $string['introattachments'] = '追加ファイル';
 $string['introattachments_help'] = '回答テンプレート等、チェックマークで使用するファイルを追加できます。ファイルのダウンロードリンクはチェックマークページの説明文の下に表示されます。';
 $string['invalidcheckmark'] = '不正確なチェックマーク';
 $string['invalidid'] = 'チェックマークが正しくありません。';
+$string['invalidoverrideid'] = '無効なオーバーライドIDです。';
 $string['invaliduserid'] = '無効なユーザIDです。';
 $string['itemstocount'] = 'カウント';
 $string['lastgrade'] = '最終評定';
@@ -307,24 +305,31 @@ $string['noattempts'] = 'このチェックマークは受験されていませ�
 $string['nochangeviolation'] = 'あなたは少なくとも1つのチェックマーク設定をオーバーライドする必要があります。';
 $string['nocheckmarks'] = 'まだチェックマークはありません。';
 $string['noclose'] = '終了日なし';
+$string['nogroupoverrridemessage'] = '現在、グループオーバーライドはありません。';
 $string['nolatesubmissions'] = '遅い提出は受け付けられません。';
 $string['nomoresubmissions'] = 'これ以上の提出は認められません。';
 $string['nomoresubmissionsaccepted'] = '延長を許可された参加者にのみ許可されます。';
 $string['nonnegativeintrequired'] = '0以上の整数でなければなりません!';
 $string['noopen'] = '開始日なし';
+$string['nooverridedata'] = 'あなたは少なくとも1つの課題設定をオーバーライドする必要があります。';
 $string['norequiregrading'] = '評定が必要なチェックマークはありません。';
 $string['nostudents'] = '表示するユーザはいません!';
 $string['nostudentsmatching'] = '現在の設定に一致するユーザはいません!';
 $string['nosubmission'] = '提出されたチェックマークはありません。';
+$string['nosubmissionyet'] = 'まだ提出されたものはありません。';
 $string['nosubmisson'] = '提出されたチェックマークはありません。';
 $string['notactive'] = '未アクティブ';
 $string['notavailableyet'] = '申し訳ございません、このチェックマークはまだ利用できません。<br />チェックマーク説明は以下の日付にここに表示されます。';
+$string['notgraded'] = '未評定';
 $string['notgradedyet'] = 'まだ評定されていません。';
+$string['notifystudent'] = '学生に通知する';
 $string['notsubmittedyet'] = 'まだ提出はありません。';
+$string['nouseroverrridemessage'] = '現在、ユーザのオーバーライドはありません。';
 $string['nousers'] = '表示するユーザーはいません!';
 $string['numberofexamples'] = '例数';
 $string['numberofexamples_help'] = 'このチェックマークの例の数です。';
 $string['numberofparticipants'] = '参加者';
+$string['numberofsubmissionsneedgrading'] = '要評定';
 $string['numberofsubmittedassignments'] = '提出済み';
 $string['open'] = '開始';
 $string['operation'] = '操作';
@@ -337,12 +342,24 @@ $string['override_groups_dates'] = 'グループ日をオーバーライドす�
 $string['override_users_dates'] = 'ユーザ日をオーバーライドする';
 $string['overridedeletegroupsure'] = '本当にグループ {$a} のオーバーライドを削除してもよろしいですか?';
 $string['overridedeleteusersure'] = '本当にユーザ {$a} のオーバーライドを削除してもよろしいですか?';
+$string['overrideentrydeleted'] = 'エントリが削除されました。';
+$string['overrideentryswapped'] = 'エントリがスワップされました。';
+$string['overridegroup'] = 'グループオーバーライド';
+$string['overridegroupeventname'] = '{$a->checkmark} - {$a->group}';
 $string['overrides'] = 'オーバーライド';
+$string['overridessummary'] = '設定オーバーライドが存在する ({$a})';
+$string['overridessummarygroup'] = 'グループ: {$a}';
+$string['overridessummarythisgroup'] = 'このグループの設定オーバーライドが存在する ({$a})';
+$string['overridessummaryuser'] = 'ユーザ: {$a}';
+$string['overridessummaryyourgroups'] = 'あなたのグループの設定オーバーライドが存在する ({$a})';
+$string['overrideuser'] = 'ユーザオーバーライド';
+$string['overrideusereventname'] = '{$a->checkmark} - オーバーライド';
 $string['page-mod-checkmark-submissions'] = 'チェックマークモジュール提出ページ';
 $string['page-mod-checkmark-view'] = 'チェックマークモジュールメインページ';
 $string['page-mod-checkmark-x'] = 'すべてのチェックマークモジュールページ';
 $string['pagesize'] = '1ページあたりの提出数';
 $string['pagesize_help'] = 'あなたのコースに多数の参加者が登録されている場合、「最適」の選択により、選択済みテキストサイズおよびページの向きに応じてリストエントリの配布が最適化されます。';
+$string['paramtimeremaining'] = '残り {$a}';
 $string['pdfpageorientation'] = 'ページの向き';
 $string['pdfpagesize'] = '1ページあたりに表示する提出数';
 $string['pdfpagesize_help'] = 'あなたのコースに多数の参加者が登録されている場合、「最適」の選択により、選択済みテキストサイズおよびページの向きに応じてリストエントリの配布が最適化されます。';
@@ -414,10 +431,16 @@ $string['privacy:metadata:timeavailable'] = '提出期間開始からの時間�
 $string['privacy:metadata:timedue'] = '提出の期限日です。';
 $string['privacy:path:feedback'] = 'コメント';
 $string['privacy:path:submission'] = '提出';
+$string['quickgrade'] = 'クイック評定';
 $string['quickgrade_help'] = 'この設定を有効にした場合、複数のチェックマークを1ページで評定できます。評点およびコメントを追加した後、「すべての評定変更を保存する」ボタンをクリックしてそのページすべての変更を保存してください。';
 $string['remembertoupdategrades'] = 'このチェックマークは自動的に評定された提出です。あなたが例の評点を変更した場合、提出の更新または再評定を強くお勧めします!';
+$string['requiregrading'] = '要評定';
+$string['requiresubmit'] = '要提出';
+$string['reverttodefaults'] = '課題デフォルトに戻す';
 $string['reviewed'] = 'レビュー済み';
+$string['save'] = '保存';
 $string['saveallfeedback'] = 'すべての評定変更を保存する';
+$string['saveoverrideandstay'] = '保存して別のオーバーライドを入力する';
 $string['search:activity'] = 'チェックマーク - 活動情報';
 $string['select'] = '選択';
 $string['selection'] = '選択';
@@ -473,11 +496,26 @@ $string['submissionsamount'] = '{$a->submitted} / {$a->total} の学生がすで
 $string['submissionsaved'] = 'あなたの変更が保存されました。';
 $string['submissionsgraded'] = '{$a->graded} / {$a->all} 提出評定済み';
 $string['submissionsnotgraded'] = '{$a->reqgrading} / {$a->all} 提出未評定';
+$string['submissionstatus'] = '提出ステータス';
+$string['submissionstatus_'] = '提出なし';
+$string['submissionstatus_checkmark_summary'] = '{$a->total_examples} 中 <span id="examples">{$a->checked_examples}</span> の例がチェック済みです。';
+$string['submissionstatus_draft'] = '下書き (未提出)';
+$string['submissionstatus_marked'] = '評定済み';
+$string['submissionstatus_new'] = '提出なし';
+$string['submissionstatus_reopened'] = '再オープン';
+$string['submissionstatus_submitted'] = '評定のため送信済み';
+$string['submissionstatusheading'] = '提出ステータス';
 $string['submitcheckmark'] = 'あなたのチェックマークをこのフォームで送信する';
 $string['submitted'] = '送信済み';
 $string['submitted_entries'] = '送信済み';
+$string['submittedlateshort'] = '{$a} 遅い';
 $string['summary_abs'] = 'x/y 例チェック済み';
 $string['summary_rel'] = '% 例チェック済み';
+$string['timelimit'] = '時間制限';
+$string['timelimit_help'] = 'この設定有効にした場合、課題ページに制限時間が記載されて課題中にカウントダウンタイマーが表示されます。';
+$string['timelimitnotenabled'] = '課題の時間制限は有効にされていません。';
+$string['timelimitpassed'] = '制限時間切れ';
+$string['timemodified'] = '最終更新日時';
 $string['timeremaining'] = '残り時間';
 $string['trackattendance'] = '出欠を追跡する';
 $string['trackattendance_help'] = '参加者の出欠を追跡できるようにするにはこの設定を有効にしてください。';
@@ -485,6 +523,7 @@ $string['ungraded'] = '未評定';
 $string['unknown'] = '不明';
 $string['upgradekeyerror'] = '指定されたサンプル/提出のペアに複数のチェックマークチェックが存在するため、アップグレードに失敗しました。詳細は次のgithub issueをご覧ください: {$a}';
 $string['user_dates_overridden'] = 'ユーザの日付がオーバーライドされました!';
+$string['userassignmentdefaults'] = 'ユーザ課題デフォルト';
 $string['usermisconf'] = 'ユーザ設定ミス';
 $string['usernosubmit'] = '申し訳ございません、あなたはチェックマークを送信できません。';
 $string['useroverride'] = 'ユーザオーバーライド';
@@ -493,7 +532,9 @@ $string['useroverrides'] = 'ユーザオーバーライド';
 $string['usersnone'] = 'この課題にアクセスできる学生はいません。';
 $string['viewallsubmissions'] = 'すべての提出を表示する';
 $string['viewfeedback'] = 'チェックマーク評定およびコメントを表示する';
+$string['viewgradebook'] = '評定表を表示する';
 $string['viewmysubmission'] = '私の提出を表示する';
+$string['viewpreview'] = 'プレビューを表示する';
 $string['viewsubmissions'] = '提出';
 $string['yoursubmission'] = 'あなたの提出';
 $string['zippedgrouppdfs'] = 'グループを別々のPDFとして';

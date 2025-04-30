@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'el', version '4.1'.
+ * Strings for component 'tool_monitor', language 'el', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Περιοχή προς παρακολούθηση';
 $string['cachedef_eventsubscriptions'] = 'Εδώ αποθηκεύεται ο κατάλογος των εγγραφών γεγονότων για μεμονωμένα μαθήματα';
 $string['contactadmin'] = 'Επικοινωνήστε με τον διαχειριστή σας για να το ενεργοποιήσετε.';
 $string['core'] = 'Πυρήνας';
+$string['coresubsystem'] = 'Υποσύστημα ({$a})';
 $string['currentsubscriptions'] = 'Οι τρέχουσες εγγραφές σας';
 $string['defaultmessagetemplate'] = 'Όνομα κανόνα: {rulename}<br />Περιγραφή: {description}<br />Όνομα γεγονότος: {eventname}';
 $string['deleterule'] = 'Διαγραφή κανόνα';

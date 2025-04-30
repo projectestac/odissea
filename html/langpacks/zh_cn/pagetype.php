@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'zh_cn', version '4.1'.
+ * Strings for component 'pagetype', language 'zh_cn', version '4.4'.
  *
  * @package     pagetype
  * @category    string
@@ -38,7 +38,7 @@ $string['page-mod-x'] = '任意活动模块页面';
 $string['page-mod-x-view'] = '任意主活动模块页面';
 $string['page-my-index'] = '个人主页页面';
 $string['page-report-x'] = '任意报告页';
-$string['page-site-index'] = '只在首页';
+$string['page-site-index'] = '仅首页';
 $string['page-site-x'] = '任意顶级网站页面';
 $string['page-user-profile'] = '只在用户个人资料页面';
 $string['page-user-view'] = '只在用户个人资料页面';

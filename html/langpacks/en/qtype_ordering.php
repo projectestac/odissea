@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'en', version '4.1'.
+ * Strings for component 'qtype_ordering', language 'en', version '4.4'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -30,17 +30,17 @@ $string['addmultipleanswers'] = 'Add {$a} more items';
 $string['addsingleanswer'] = 'Add one more item';
 $string['allornothing'] = 'All or nothing';
 $string['answer'] = 'Item text';
-$string['answerheader'] = 'Draggable item {no}';
+$string['correctitemsnumber'] = 'Correct items: {$a}';
 $string['correctorder'] = 'The correct order for these items is as follows:';
 $string['defaultanswerformat'] = 'Default answer format';
 $string['defaultquestionname'] = 'Drag the following items into the correct order.';
+$string['draggableitemno'] = 'Draggable item {no}';
+$string['draggableitems'] = 'Draggable items';
 $string['duplicatesnotallowed'] = 'Duplication of draggable items is not allowed. The string "{$a->text}" is already used in {$a->item}.';
 $string['editingordering'] = 'Editing ordering question';
 $string['gradedetails'] = 'Grade details';
 $string['gradingtype'] = 'Grading type';
-$string['gradingtype_help'] = 'Choose the type of grading calculation.
-
-**All or nothing**
+$string['gradingtype_help'] = '**All or nothing**
 &nbsp; If all items are in the correct position, then full marks are awarded. Otherwise, the score is zero.
 
 **Absolute position**
@@ -68,15 +68,18 @@ $string['gradingtype_help'] = 'Choose the type of grading calculation.
 &nbsp; The grade is the number of items in the longest contiguous subset of items. The highest possible grade is the same as the number of items displayed. A subset must have at least two items. Subsets do not need to start at the first item (but they can) and they MUST BE CONTIGUOUS. Where there are multiple subsets of equal length, items in the subset that is found first, when searching from left to right, will be displayed as correct. Other items will be marked as incorrect.';
 $string['highlightresponse'] = 'Highlight response as correct or incorrect';
 $string['horizontal'] = 'Horizontal';
-$string['itemplural'] = 'items';
-$string['itemsingular'] = 'item';
+$string['incorrectitemsnumber'] = 'Incorrect items: {$a}';
 $string['layouttype'] = 'Layout of items';
 $string['layouttype_help'] = 'Choose whether to display the items vertically or horizontally.';
 $string['longestcontiguoussubset'] = 'Longest contiguous subset';
 $string['longestorderedsubset'] = 'Longest ordered subset';
+$string['moved'] = '{$a->item} moved. New position: {$a->position} of {$a->total}.';
+$string['moveleft'] = 'Move left';
+$string['moveright'] = 'Move right';
 $string['noresponsedetails'] = 'Sorry, no details of the response to this question are available.';
 $string['noscore'] = 'No score';
 $string['notenoughanswers'] = 'Ordering questions must have more than {$a} answers.';
+$string['notenoughsubsetitems'] = 'A subset must have at least {$a} items.';
 $string['numberingstyle'] = 'Number the choices?';
 $string['numberingstyle123'] = '1., 2., 3., ...';
 $string['numberingstyleABCD'] = 'A., B., C., ...';
@@ -86,6 +89,7 @@ $string['numberingstyle_help'] = 'Choose the numbering style for draggable items
 $string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
 $string['numberingstylenone'] = 'No numbering';
+$string['partialitemsnumber'] = 'Partially correct items: {$a}';
 $string['pluginname'] = 'Ordering';
 $string['pluginname_help'] = 'Several items are displayed in a jumbled order. The items can be dragged into a meaningful order.';
 $string['pluginname_link'] = 'question/type/ordering';
@@ -93,7 +97,12 @@ $string['pluginnameadding'] = 'Adding an Ordering question';
 $string['pluginnameediting'] = 'Editing an Ordering question';
 $string['pluginnamesummary'] = 'Put jumbled items into a meaningful order.';
 $string['positionx'] = 'Position {$a}';
-$string['privacy:metadata'] = 'The ordering question type plugin does not store any personal data.';
+$string['privacy:preference:gradingtype'] = 'The grading type.';
+$string['privacy:preference:layouttype'] = 'The layout of items.';
+$string['privacy:preference:numberingstyle'] = 'The numbering style of the choices.';
+$string['privacy:preference:selectcount'] = 'The select count.';
+$string['privacy:preference:selecttype'] = 'The item selection type.';
+$string['privacy:preference:showgrading'] = 'Whether to show grading details.';
 $string['regradeissuenumitemschanged'] = 'The number of draggable items has changed.';
 $string['relativeallpreviousandnext'] = 'Relative to ALL the previous and next items';
 $string['relativenextexcludelast'] = 'Relative to the next item (excluding last)';
@@ -113,6 +122,3 @@ $string['selecttype_help'] = 'Choose whether to display all the items or a subse
 $string['showgrading'] = 'Grading details';
 $string['showgrading_help'] = 'Choose whether to show or hide details of the score calculation when a student reviews a response to this Ordering question.';
 $string['vertical'] = 'Vertical';
-$string['yougotnincorrect'] = 'You have {$a->numincorrect} {$a->numincorrectplural} incorrect.';
-$string['yougotnpartial'] = 'You have {$a->numpartial} {$a->numpartialplural} partially correct.';
-$string['yougotnright'] = 'You have {$a->numright} {$a->numrightplural} correct.';

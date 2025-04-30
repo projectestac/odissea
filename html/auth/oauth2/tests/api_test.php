@@ -23,12 +23,12 @@ namespace auth_oauth2;
  * @copyright   2017 Damyon Wiese
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class api_test extends \advanced_testcase {
+final class api_test extends \advanced_testcase {
 
     /**
      * Test the cleaning of orphaned linked logins for all issuers.
      */
-    public function test_clean_orphaned_linked_logins() {
+    public function test_clean_orphaned_linked_logins(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -58,7 +58,7 @@ class api_test extends \advanced_testcase {
     /**
      * Test the cleaning of orphaned linked logins for a specific issuer.
      */
-    public function test_clean_orphaned_linked_logins_with_issuer_id() {
+    public function test_clean_orphaned_linked_logins_with_issuer_id(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -94,7 +94,7 @@ class api_test extends \advanced_testcase {
      *
      * @covers \auth_oauth2\api::create_new_confirmed_account
      */
-    public function test_create_new_confirmed_account() {
+    public function test_create_new_confirmed_account(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -130,7 +130,7 @@ class api_test extends \advanced_testcase {
     /**
      * Test auto-confirming linked logins.
      */
-    public function test_linked_logins() {
+    public function test_linked_logins(): void {
         $this->resetAfterTest();
 
         $this->setAdminUser();
@@ -197,7 +197,7 @@ class api_test extends \advanced_testcase {
     /**
      * Test that is_enabled correctly identifies when the plugin is enabled.
      */
-    public function test_is_enabled() {
+    public function test_is_enabled(): void {
         $this->resetAfterTest();
 
         set_config('auth', 'manual,oauth2');
@@ -207,7 +207,7 @@ class api_test extends \advanced_testcase {
     /**
      * Test that is_enabled correctly identifies when the plugin is disabled.
      */
-    public function test_is_enabled_disabled() {
+    public function test_is_enabled_disabled(): void {
         $this->resetAfterTest();
 
         set_config('auth', 'manual');
@@ -220,7 +220,7 @@ class api_test extends \advanced_testcase {
      *
      * @covers \auth_oauth2\api::send_confirm_account_email
      */
-    public function test_send_confirm_account_email() {
+    public function test_send_confirm_account_email(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();

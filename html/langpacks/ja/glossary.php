@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', version '4.1'.
+ * Strings for component 'glossary', language 'ja', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -77,7 +77,7 @@ $string['cnfapprovalstatus'] = '学生による投稿の承認ステータスの
 $string['cnfcasesensitive'] = 'エントリがリンクされる場合、大文字小文字を区別します。';
 $string['cnfdefaulthook'] = '用語集が表示される時のデフォルトセクションを選択してください。';
 $string['cnfdefaultmode'] = '用語集が最初に表示される時のデフォルトフレームを選択してください。';
-$string['cnffullmatch'] = 'エントリがリンクされる場合、ターゲットテキストと文字の大小 (大文字小文字) を合致させます。';
+$string['cnffullmatch'] = 'エントリがリンクされた場合、デフォルトで単語全体 (および他の単語の中の単語) に合致させるかどうか定義します。';
 $string['cnflinkentry'] = 'エントリをデフォルトで自動的にリンクさせます。';
 $string['cnflinkglossaries'] = '用語集をデフォルトで自動的にリンクさせます。';
 $string['cnfrelatedview'] = 'オートリンクおよびエントリ表示に使用する表示フォーマットを選択してください。';
@@ -92,7 +92,7 @@ $string['comments'] = 'コメント';
 $string['commentson'] = 'コメント';
 $string['commentupdated'] = 'コメントが更新されました。';
 $string['completiondetail:entries'] = 'エントリを作成する: {$a}';
-$string['completionentries'] = '学生はエントリを作成する必要がある:';
+$string['completionentries'] = 'エントリを追加する';
 $string['completionentriesdesc'] = '学生は少なくとも {$a} 件のエントリを作成する必要があります。';
 $string['completionentriesgroup'] = '必須エントリ';
 $string['concept'] = '用語';
@@ -281,6 +281,7 @@ $string['page-mod-glossary-edit'] = '用語集エントリ追加/編集ページ
 $string['page-mod-glossary-view'] = '用語集編集ページを表示する';
 $string['page-mod-glossary-x'] = 'すべての用語集モジュールページ';
 $string['pendingapproval'] = '承認待ち';
+$string['pendingapprovalcount'] = '承認保留 ({$a})';
 $string['pluginadministration'] = '用語集管理';
 $string['pluginname'] = '用語集';
 $string['popupformat'] = 'ポップアップフォーマット';
@@ -334,7 +335,6 @@ $string['totalentries'] = 'エントリ合計';
 $string['usedynalink'] = 'エントリを自動的にリンクする';
 $string['usedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはコース全体で出現した用語またはフレーズにエントリを自動的にリンクするためのオプションを含みます。';
 $string['visibletabs'] = '表示タブ';
-$string['waitingapproval'] = '承認待ち';
 $string['warningstudentcapost'] = '(用語集がメイン用語集ではない場合に適用)';
 $string['withauthor'] = '用語 (著者あり)';
 $string['withoutauthor'] = '用語 (著者なし)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jazzquiz', language 'fr', version '4.1'.
+ * Strings for component 'jazzquiz', language 'fr', version '4.4'.
  *
  * @package     jazzquiz
  * @category    string
@@ -64,7 +64,7 @@ $string['fully_anonymous'] = 'Entièrement anonyme';
 $string['fully_anonymous_info'] = 'Les réponses et les présences sont entièrement anonymisées lors de cette session.';
 $string['goto_session'] = 'Aller à la session en cours';
 $string['improvise'] = 'Improviser';
-$string['instructions_for_student'] = '<p> Veuillez attendre que l’instructeur lance le quiz. </p>';
+$string['instructions_for_student'] = '<p> Veuillez attendre que l’enseignant lance le quiz. </p>';
 $string['instructor_sessions_going'] = 'Une session est déjà en cours. Veuillez cliquer sur le bouton ci-dessous pour aller à la session';
 $string['invalid_question_time'] = 'La durée des questions doit être un entier égal ou supérieur à 0';
 $string['jazzquiz:addinstance'] = 'Ajouter une instance de jazzQuiz';
@@ -84,6 +84,6 @@ $string['student'] = 'Étudiant';
 $string['teacher_start_instructions'] = '<p> Commencez un questionnaire à soumettre aux étudiants. </p> <p> Définissez un nom de session ci-dessous pour faciliter la consultation ultérieure des résultats. </p>';
 $string['unable_to_create_session'] = 'Impossible de créer une session';
 $string['vote'] = 'Vote';
-$string['wait_for_instructor'] = 'Veuillez attendre que l’instructeur commence la question suivante.';
+$string['wait_for_instructor'] = 'Veuillez attendre que l’enseignant commence la question suivante.';
 $string['wait_for_question_time'] = 'Attente de l’heure de la question';
 $string['wait_for_question_time_help'] = 'Le temps à attendre avant qu’une question commence.';

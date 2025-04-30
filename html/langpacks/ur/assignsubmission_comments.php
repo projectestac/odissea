@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'ur', version '4.1'.
+ * Strings for component 'assignsubmission_comments', language 'ur', version '4.4'.
  *
  * @package     assignsubmission_comments
  * @category    string

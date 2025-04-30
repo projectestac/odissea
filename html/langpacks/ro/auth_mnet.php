@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ro', version '4.1'.
+ * Strings for component 'auth_mnet', language 'ro', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'Autentificare MNet';
 $string['privacy:metadata:external:mahara'] = 'Acest plugin poate trimite date extern către o aplicație Mahara conectată.';
 $string['privacy:metadata:external:moodle'] = 'Acest plugin poate trimite date extern către o aplicație Moodle conectată.';
 $string['privacy:metadata:mnet_external:address'] = 'Adresa utilizatorului.';
-$string['privacy:metadata:mnet_external:aim'] = 'Identificatorul AIM al utilizatorului';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Un nume alternativ pentru utilizator.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'O preferință dacă utilizatorul ar trebui să se aboneze automat la forumurile postate de utilizator.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'O preferință a utilizatorului pentru tipul de calendar de utilizat.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'O preferință pentru a o
 $string['privacy:metadata:mnet_external:firstaccess'] = 'Momentul în care acest utilizator a accesat prima dată site-ul.';
 $string['privacy:metadata:mnet_external:firstname'] = 'Prenumele utilizatorului.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Detaliile fonetice despre prenumele utilizatorului.';
-$string['privacy:metadata:mnet_external:icq'] = 'Numărul ICQ al utilizatorului.';
 $string['privacy:metadata:mnet_external:id'] = 'Identificatorul utilizatorului';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Un număr de identificare dat de instituție';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Text alternativ pentru imaginea utilizatorului.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Detaliile fonetice
 $string['privacy:metadata:mnet_external:maildigest'] = 'O setare pentru rezumatul e-mailului pentru acest utilizator.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'O preferință pentru utilizator despre afișarea adresei de e-mail către alți utilizatori.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Numele de mijloc al utilizatorului';
-$string['privacy:metadata:mnet_external:msn'] = 'Identificatorul MSN al utilizatorului';
 $string['privacy:metadata:mnet_external:phone1'] = 'Un număr de telefon pentru utilizator.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Un număr de telefon suplimentar pentru utilizator.';
 $string['privacy:metadata:mnet_external:picture'] = 'Detaliile imaginii asociate acestui utilizator.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Un semnalizator pentru a stabili dacă utilizatorul a acceptat politica site-ului.';
-$string['privacy:metadata:mnet_external:skype'] = 'Identificatorul Skype al utilizatorului';
 $string['privacy:metadata:mnet_external:suspended'] = 'Un steag pentru a arăta dacă utilizatorul a fost suspendat pe acest sistem.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Fusul orar al utilizatorului';
 $string['privacy:metadata:mnet_external:trackforums'] = 'O preferință pentru forumuri și urmărirea acestora.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Masca de încredere';
-$string['privacy:metadata:mnet_external:url'] = 'O adresă URL legată de acest utilizator.';
 $string['privacy:metadata:mnet_external:username'] = 'Numele de utilizator pentru acest utilizator.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'Identificatorul Yahoo al utilizatorului';
 $string['privacy:metadata:mnet_log'] = 'Detalii despre acțiunile la distanță efectuate de un utilizator local conectat la un sistem la distanță.';
 $string['privacy:metadata:mnet_log:action'] = 'Acțiune efectuată de utilizator.';
 $string['privacy:metadata:mnet_log:cmid'] = 'Identificatorul modulului de curs.';

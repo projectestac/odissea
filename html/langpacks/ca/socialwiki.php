@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'ca', version '4.1'.
+ * Strings for component 'socialwiki', language 'ca', version '4.4'.
  *
  * @package     socialwiki
  * @category    string
@@ -35,3 +35,4 @@ $string['noattachments'] = '<strong>Cap fitxer adjunt</strong>';
 $string['save'] = 'Desa';
 $string['upload'] = 'Carrega i Suprimeix';
 $string['view'] = 'Visualitza';
+$string['wikinowikitext'] = 'Preformatat';

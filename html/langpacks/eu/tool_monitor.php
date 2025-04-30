@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'eu', version '4.1'.
+ * Strings for component 'tool_monitor', language 'eu', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Jarraitu beharreko eremua';
 $string['cachedef_eventsubscriptions'] = 'Honek banakako ikastaroetako ekitaldi-harpidetzen zerrenda biltzen du';
 $string['contactadmin'] = 'Jarri harremanetan kudeatzailearekin gaitzeko.';
 $string['core'] = 'Sistema';
+$string['coresubsystem'] = 'Azpisistema ({$a})';
 $string['currentsubscriptions'] = 'Zure oraingo harpidetzak';
 $string['defaultmessagetemplate'] = 'Arauaren izena: {rulename}<br />Deskribapena: {description}<br />Ekitaldiaren izena: {eventname}';
 $string['deleterule'] = 'Ezabatu araua';
@@ -68,9 +69,12 @@ $string['messagetemplate_help'] = 'Harpidedunei jakinarazpen-mezua bidaltzen zai
 
 * Gertaeraren kokapenaren esteka {link}
 * Jarraitutako eremuaren esteka {modulelink}
+* Ikastaro-moduluaren izena {modulename}
 * Arauaren izena {rulename}
 * Deskribapena {description}
-* Gertaera {eventname}';
+* Gertaera {eventname}
+* Ikastaroaren izen osoa {coursefullname}
+* Ikastaroaren izen laburra {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instantzia';
 $string['monitor:managerules'] = 'Kudeatu gertaeren jarraipen-arauak';

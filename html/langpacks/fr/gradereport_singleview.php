@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'fr', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'fr', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Supprimer les modifications';
 $string['save'] = 'Enregistrer';
 $string['savegrades'] = 'Enregistrement des notes';
 $string['savegradessuccess'] = 'Les notes ont été données pour {$a} éléments';
-$string['searchgrades'] = 'Rechercher les éléments d’évaluation';
 $string['selectagrade'] = 'Sélectionner un élément d’évaluation';
 $string['selectgradeitemlink'] = 'Sélectionner un élément d’évaluation';
 $string['singleview:view'] = 'Consulter l’affichage simplifié';
-$string['singleviewdescription'] = 'En affichage simplifié, on peut modifier ou exclure des notes choisies et insérer des notes en lots.';
+$string['singleviewdescription'] = 'En affichage simplifié, on peut modifier ou exclure des notes choisies et insérer des notes par lots.';
+$string['singleviewreport_gradeitem'] = 'Vue simple pour cet élément';
+$string['singleviewreport_user'] = 'Vue simple pour cet utilisateur';
 $string['summarygrade'] = 'Un tableau des participants, avec des colonnes pour les intervalles, les notes, les feedbacks et la modification ou l’exclusion d’une note spécifique.';
 $string['summaryuser'] = 'Un tableau des éléments d’évaluation, avec des colonnes pour les catégories, les intervalles, les notes, les feedbacks et la modification ou l’exclusion d’une note spécifique.';
 $string['unsavedataalert'] = 'S’il y a des modifications non enregistrées sur la page, vous les perdrez si vous poursuivez l’insertion de notes en masse.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Avertissement données non enregistrées';
 $string['userselect'] = 'Sélectionner une activité';
 $string['viewby'] = 'Voir par';
 $string['viewsinglegradeitem'] = 'Sélectionner un élément d’évaluation ci-dessus';
-$string['viewsingleuser'] = 'Sélectionner un utilisateur ci-dessus pour voir toutes ses notes';
+$string['viewsingleuser'] = 'Chercher un utilisateur pour voir toutes ses notes';
 $string['viewsingleuserorgradeitem'] = 'Voir toutes les notes d’un utilisateur ou d’un élément d’évaluation.';

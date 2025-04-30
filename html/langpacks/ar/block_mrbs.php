@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mrbs', language 'ar', version '4.1'.
+ * Strings for component 'block_mrbs', language 'ar', version '4.4'.
  *
  * @package     block_mrbs
  * @category    string
@@ -80,6 +80,8 @@ $string['for_any_questions'] = 'لأي أسئلة غير مجاب عنها هن�
 $string['forciblybook'] = 'حجز الغرفة بالقوة';
 $string['gototoday'] = 'إذهب إلى هذا اليوم';
 $string['idontcare'] = 'لا أبالي، أكِّد حجز الغرفة/الغرف';
+$string['importedbooking'] = 'حجز مستورد';
+$string['importedbookingmoved'] = 'حجز مستورد (محرر)';
 $string['mail_subject_delete'] = 'تم حذف إدخال {$a->date}، {$a->room} (المحجوزة من قبل {$a->user})';
 $string['mail_subject_entry'] = 'تم تغيير إدخال {$a->date}، {$a->room} (من قبل {$a->user})';
 $string['mail_subject_newentry'] = 'تمت إضافة إدخال {$a->date}، {$a->room} (من قبل {$a->user})';

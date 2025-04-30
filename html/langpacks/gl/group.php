@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'gl', version '4.1'.
+ * Strings for component 'group', language 'gl', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Confirma que quere eliminar o grupo «{$a}»?';
 $string['deletegrouping'] = 'Eliminar agrupamento';
 $string['deletegroupingconfirm'] = 'Confirma que quere eliminar o agrupamento «{$a}»? (Os grupos non se eliminarán).';
 $string['deletegroupsconfirm'] = 'Confirma que quere eliminar os grupos seguintes?';
-$string['deleteselectedgroup'] = 'Eliminar grupo seleccionado';
+$string['deleteselectedgroup'] = 'Eliminar';
+$string['disablemessagingaction'] = 'Desactivar a mensaxería';
 $string['editgroupingsettings'] = 'Editar a configuración de agrupamento';
 $string['editgroupsettings'] = 'Editar os axustes de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para «{$a}»';
 $string['enablemessaging'] = 'Mensaxería en grupo';
 $string['enablemessaging_help'] = 'Se está activado, os membros do grupo poden enviar mensaxes aos demais do seu grupo a través do caixón de mensaxería.';
+$string['enablemessagingaction'] = 'Activar a mensaxería';
 $string['encoding'] = 'Codificación';
 $string['enrolmentkey'] = 'Chave de matriculación';
 $string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acceso ao curso estea limitado só a aquelas persoas que coñecen a chave. De especificarse unha chave de matriculación de grupo, entón dita chave non só permitirá aos usuarios acceder ao curso, senón que faraos membros do grupo.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acces
 Nota: As chaves de matriculación de grupo deben estar activadas nos axustes de automatriculación e debe especificarse tamén unha chave para o curso.';
 $string['enrolmentkeyalreadyinuse'] = 'Esta chave de matriculación xa foi empregada para outro grupo';
 $string['erroraddremoveuser'] = 'Produciuse un erro ao engadir/retirar ao usuario {$a} do grupo';
+$string['erroraddtogroup'] = 'Valor non válido para «addtogroup». Debe ser 0 para o modo sen grupo ou 1 para crear un novo grupo.';
+$string['erroraddtogroupgroupname'] = 'Non é posíbel especificar o nome do grupo cando «addtogroup» está definido.';
 $string['erroreditgroup'] = 'Produciuse un erro a crear ou actualizar o grupo {$a}';
 $string['erroreditgrouping'] = 'Produciuse un erro a crear ou actualizar o agrupamento {$a}';
 $string['errorinvalidgroup'] = 'Erro: Grupo {$a} incorrecto';
@@ -113,15 +117,15 @@ $string['groupmembers'] = 'Membros do grupo';
 $string['groupmemberssee'] = 'Ver os membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmode_help'] = 'Este axuste ten 3 opcións:
+$string['groupmode_groupsseparate_help'] = 'O alumnado divídese en grupos e só poden ver o traballo do seu grupo.';
+$string['groupmode_groupsvisible_help'] = 'O alumnado divídese en grupos, mais poden ver o traballo doutros grupos.';
+$string['groupmode_help'] = '* Sen grupos
+* Grupos separados: O alumnado divídese en grupos e só poden ver o traballo do seu grupo.
+* Grupos visíbeis: O alumnado divídese en grupos, mais poden ver o traballo doutros grupos.
 
-* Sen grupos - Non hai grupos, todos son parte dunha gran comunidade
-* Grupos separados - Cada membro do grupo só pode ver seu propio grupo; os demais son invisíbeis
-* Grupos visíbeis - Cada membro do grupo traballa dentro do seu grupo, mais tamén pode ver aos outros grupo
-
-O modo de grupo definido a nivel de curso é o modo predeterminado para todas as actividades do curso. Cada actividade que admita grupos pode definir o seu propio modo de grupo, aínda que se o modo de grupo está definido a nivel de curso, o axuste do modo de grupo para cada actividade é ignorado.';
+O modo de grupo definido a nivel de curso é o modo predeterminado para todas as actividades. Se o modo de grupo é forzado a nivel de curso, non se pode cambiar nunha actividade.';
 $string['groupmodeforce'] = 'Forzar o modo de grupo';
-$string['groupmodeforce_help'] = 'De forzarse o modo de grupo, entón aplicase a todas as actividades no curso o modo de grupo. Nese caso ignorase o axuste do modo de grupo.';
+$string['groupmodeforce_help'] = 'O modo de grupo é forzado para todas as actividades e non se pode cambiar nunha actividade.';
 $string['groupmy'] = 'O meu grupo';
 $string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo «{$a}» xa existe neste curso. Escolla outro.';
@@ -137,7 +141,6 @@ $string['groupspreview'] = 'Vista previa de grupos';
 $string['groupsseparate'] = 'Grupos separados';
 $string['groupsvisible'] = 'Grupos visíbeis';
 $string['grouptemplate'] = 'Grupo @';
-$string['hidepicture'] = 'Agochar a imaxe';
 $string['importgroups'] = 'Importar grupos';
 $string['importgroups_help'] = 'Os grupos poden importarse mediante un ficheiro de texto. O formato do ficheiro ten que ser como sigue:
 
@@ -150,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Incluír soamente as matriculacións activas';
 $string['includeonlyactiveenrol_help'] = 'Se o activa, os usuarios suspendidos no serán incluídos nos grupos.';
 $string['javascriptrequired'] = 'Esta páxina require que Javascript estea activado.';
+$string['manageactions'] = 'Xestionar';
 $string['memberofgroup'] = 'Membro do grupo de: {$a}';
 $string['members'] = 'Membros por grupo';
 $string['membersofselectedgroup'] = 'Membros de:';
+$string['messagingdisabled'] = 'Desactivouse satisfactoriamente a mensaxería en {$a} grupo(s)';
+$string['messagingenabled'] = 'Activouse satisfactoriamente a mensaxería en {$a} grupo(s)';
 $string['mygroups'] = 'Os meus grupos';
 $string['namingscheme'] = 'Esquema de nomeamento';
 $string['namingscheme_help'] = 'O símbolo «en» ou «arroba» (@) pode empregarse para crear grupos con nomes que conteñen letras. Por exemplo, Grupo @ pode xerar grupos denominados Grupo A, Grupo B, Grupo C, ...
@@ -177,6 +183,9 @@ $string['numgroups'] = 'Número de grupos';
 $string['nummembers'] = 'Membros por grupo';
 $string['othergroups'] = 'Outros grupos';
 $string['overview'] = 'Vista xeral';
+$string['participation'] = 'Amosar o grupo no menú despregábel das actividades no modo de grupo';
+$string['participation_help'] = 'Deben ser quen os membros do grupo de seleccionar este grupo para actividades en modo de grupos separados ou visíbeis? (Aplicábel só se a pertenza ao grupo é visíbel para todos ou só para os membros.)';
+$string['participationshort'] = 'Participación';
 $string['potentialmembers'] = 'Membros potenciais: {$a}';
 $string['potentialmembs'] = 'Membros potenciais';
 $string['printerfriendly'] = 'Presentar en formato para imprimir';
@@ -201,3 +210,18 @@ $string['toomanygroups'] = 'Non hai usuarios abondo para completar este número 
 $string['usercount'] = 'Número de usuarios';
 $string['usercounttotal'] = 'Número de usuarios ({$a})';
 $string['usergroupmembership'] = 'Membresía dos usuarios seleccionados:';
+$string['visibility'] = 'Visibilidade dos membros do grupo';
+$string['visibility_help'] = '* Visíbel para todos: todos os participantes no curso poden ver quen está no grupo
+* Visíbel só visible para os membros: os participantes do curso que non estean no grupo non poden ver o grupo ou aos seus membros
+* Ver só a súa propia pertenza: un usuario pode ver que está no grupo, mais non pode ver aos outros membros do grupo
+* Oculto - só o profesorado pode ver o grupo e os seus membros
+
+Os usuarios coa posibilidade de ver grupos agochados sempre poden ver a pertenza ao grupo.
+
+Teña en conta que non pode cambiar esta configuración se o grupo ten membros.';
+$string['visibilityall'] = 'Visíbel por todos';
+$string['visibilitymembers'] = 'Visíbel só para os membros';
+$string['visibilitynone'] = 'Agochado';
+$string['visibilityown'] = 'Ver só propia pertenza';
+$string['visibilityshort'] = 'Visibilidade';
+$string['withselected'] = 'Coas seleccionadas';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'es', version '4.1'.
+ * Strings for component 'tool_messageinbound', language 'es', version '4.4'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,7 +63,7 @@ $string['messageinboundenabled_desc'] = 'El procesamiento del correo de entrada 
 $string['messageinboundgeneralconfiguration'] = 'Configuración general';
 $string['messageinboundgeneralconfiguration_desc'] = 'El procesamiento de mensajes entrantes le permite recibir y procesar correos electrónicos dentro de Moodle. Esto se puede aplicar a la hora de enviar respuestas de correos electrónicos a publicaciones en foros o al añadir archivos a los archivos privados de un usuario.';
 $string['messageinboundhost'] = 'Servidor de correo entrante';
-$string['messageinboundhostoauth_help'] = 'Servicio OAuth 2 a usar para acceder el servidor IMAP, usando XOAUTH2';
+$string['messageinboundhostoauth_help'] = 'Servicio OAuth2 a usar para acceder al servidor iMAP, usando autenticación XOAUTH2. Si el servicio no existe aun, usted necesitará crearlo.';
 $string['messageinboundhostpass'] = 'Contraseña';
 $string['messageinboundhostpass_desc'] = 'Se trata de la contraseña que el proveedor del servicio le haya proporcionado para que inicie sesión en su cuenta de correo electrónico.';
 $string['messageinboundhostssl'] = 'Utilizar SSL';

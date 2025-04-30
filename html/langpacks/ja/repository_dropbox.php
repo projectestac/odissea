@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ja', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'ja', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Dropbox APIキー';
 $string['cachelimit'] = 'キャッシュ制限';
 $string['cachelimit_info'] = 'Dropboxエイリアス/ショートカットのためのサーバ内キャッシュの最大ファイルサイズ (バイト) を入力してください。ソースが利用できない場合、キャッシュされたファイルが提供されます。空白またはゼロに設定した場合、すべてのファイルがサイズにかかわらずキャッシュされます。';
 $string['configplugin'] = 'Dropbox設定 ';
 $string['crontask'] = 'Dropboxリポジトリのバックグラウンド処理';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropboxフォルダを表示する';
-$string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="https://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Type of access」を「Full Dropbox」にしてください。';
 $string['issuer'] = 'OAuth 2サービス';
 $string['issuer_help'] = 'Dropbox APIと通信するよう設定されているOAuth 2サービスを選択してください。サービスがまだ存在しない場合、あなたはサービスを作成する必要があります。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Dropboxリポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['privacy:metadata:repository_dropbox:query'] = 'Dropboxリポジトリユーザ検索テキストクエリです。';
 $string['remember'] = '次回から入力を省略する';
-$string['secret'] = 'Dropbox秘密鍵';

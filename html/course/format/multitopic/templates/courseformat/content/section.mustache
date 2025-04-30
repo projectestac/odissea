@@ -119,27 +119,32 @@
             {{/ core_courseformat/local/content/section/badges }}
         </div>
         {{#collapsemenu}}
-        <div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
-            <a
-                id="collapsesections"
-                class="section-collapsemenu collapsed"
-                href="#"
-                aria-expanded="false"
-                role="button"
-                data-toggle="toggleall"
-            >
-                <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
-                <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
-            </a>
-            </div>
+            {{^displayonesection}}
+                <div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
+                    <a
+                        id="collapsesections"
+                        class="section-collapsemenu collapsed"
+                        href="#"
+                        aria-expanded="false"
+                        role="button"
+                        data-toggle="toggleall"
+                        style="visibility: hidden;"
+                    >
+                        <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
+                        <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
+                    </a>
+                </div>
+            {{/displayonesection}}
         {{/collapsemenu}}
         {{#controlmenu}}
-            {{$ core_courseformat/local/content/section/controlmenu }}
-                {{> core_courseformat/local/content/section/controlmenu }}
-            {{/ core_courseformat/local/content/section/controlmenu }}
+            {{^displayonesection}}
+                {{$ core_courseformat/local/content/section/controlmenu }}
+                    {{> core_courseformat/local/content/section/controlmenu }}
+                {{/ core_courseformat/local/content/section/controlmenu }}
+            {{/displayonesection}}
         {{/controlmenu}}
     </div>
-    <div id="coursecontentcollapse{{id}}"
+    <div id="coursecontentcollapseid{{id}}"
         class="content 
             {{^sitehome}}course-content-item-content {{#iscollapsible}}collapse{{/iscollapsible}} {{^contentcollapsed}}show{{/contentcollapsed}}{{/sitehome}}
         ">

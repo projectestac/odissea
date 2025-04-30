@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ko', version '4.1'.
+ * Strings for component 'assign', language 'ko', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -33,9 +33,7 @@ $string['addnewattemptfromprevious'] = '이전 제출에 새로운 시도 추가
 $string['addnewattemptfromprevious_help'] = '작업을 계속할 수 있도록 이전 제출의 내용을 새로운 제출에 복사합니다.';
 $string['addsubmission'] = '제출 추가';
 $string['allowsubmissions'] = '사용자들에게 이 과제에 대해 제출을 계속하도록 허용합니다.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = '과제 세부사항과 제출 양식이 <strong>{$a}</strong> 부터 사용가능합니다.';
 $string['allowsubmissionsfromdate'] = '제출 시작일:';
-$string['allowsubmissionsfromdatesummary'] = '이 과제는 <strong>{$a}</strong>부터 제출이 가능합니다.';
 $string['allowsubmissionsshort'] = '제출 변경 허용';
 $string['alwaysshowdescription'] = '설명 항상 보여주기';
 $string['alwaysshowdescription_help'] = '비활성화되면  과제 제출 허용일에 과제 설명이 보여지게 됩니다.';

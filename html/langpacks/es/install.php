@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'es', version '4.1'.
+ * Strings for component 'install', language 'es', version '4.4'.
  *
  * @package     install
  * @category    string
@@ -113,8 +113,7 @@ $string['downloadlanguagesub'] = 'Ahora tiene la opción de descargar su paquete
 $string['doyouagree'] = '¿Está de acuerdo? (sí/no):';
 $string['environmenthead'] = 'Comprobando su entorno';
 $string['environmentsub'] = 'Estamos comprobando si los diferentes componentes de su servidor cumplen con los requerimientos mínimos de sistema';
-$string['environmentsub2'] = 'Cada versión de Moodle tiene algún requisito mínimo de la versión de PHP y un número obligatorio de extensiones de PHP.
-Una comprobación del entorno completo se realiza antes de cada instalación y actualización. Por favor, póngase en contacto con el administrador del servidor si no sabes cómo instalar la nueva versión o habilitar las extensiones PHP.';
+$string['environmentsub2'] = 'Cada versión de Moodle tiene algún requisito mínimo de la versión de PHP y un número obligatorio de extensiones de PHP. Una comprobación del entorno completo se realiza antes de cada instalación y actualización. Por favor, póngase en contacto con el administrador del servidor si no sabe cómo instalar la nueva versión o habilitar las extensiones PHP.';
 $string['errorsinenvironment'] = '¡La comprobación del entorno fallo!';
 $string['fail'] = 'Fallo';
 $string['fileuploads'] = 'Subidas de archivos';
@@ -219,9 +218,7 @@ $string['sqliteextensionisnotpresentinphp'] = 'PHP no ha sido adecuadamente conf
 $string['upgradingqtypeplugin'] = 'Actualizando el plugin pregunta/tipo';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Si está viendo esta página es porque ha podido ejecutar el paquete <strong>{$a->packname} {$a->packversion}</strong> satisfactoriamente en su ordenador. ¡Enhorabuena!';
-$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> incluye las
-    aplicaciones necesarias para que <strong>Moodle</strong> funcione en su ordenador,
-    principalmente:';
+$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> incluye las aplicaciones necesarias para que <strong>Moodle</strong> funcione en su computadora,  principalmente:';
 $string['welcomep40'] = 'El paquete también incluye <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
 $string['welcomep50'] = 'El uso de todas las aplicaciones del paquete está supeditado a sus respectivas licencias. El programa <strong>{$a->installername}</strong> es <a href="http://www.opensource.org/docs/definition_plain.html">de código abierto</a> y se distribuye bajo licencia <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'Las siguientes páginas le guiarán a través de algunos sencillos pasos para configurar y ajustar <strong>Moodle</strong> en su ordenador. Puede utilizar los valores por defecto sugeridos o, de forma opcional, modificarlos para que se ajusten a sus necesidades.';

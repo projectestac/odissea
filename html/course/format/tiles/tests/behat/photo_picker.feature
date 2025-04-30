@@ -41,6 +41,7 @@ Feature: Teacher can allocate photos to tiles
   Scenario: Teacher can use photo picker to pick photos (and icons), can backup and restore course, and student can view
     When I log in as "teacher1"
     And I am on "Business Law" course homepage with editing mode on
+    And I wait until the page is ready
     And I click on "#tileicon_1" "css_element"
     And I wait until the page is ready
     And I wait "1" seconds
@@ -98,6 +99,8 @@ Feature: Teacher can allocate photos to tiles
     And course "Business Law" tile "7" should show photo "placeholder_1.jpg"
     And course "Business Law" tile "8" should show no photo
 
+    And the following config values are set as admin:
+      | enableasyncbackup | 0 |
     And I backup "Business Law" course using this options:
       | Confirmation | Filename | test_backup.mbz |
 

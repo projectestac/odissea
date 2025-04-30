@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'eu', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'eu', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -74,7 +74,7 @@ $string['checkdesc:headerh3'] = 'H3tik aurreragoko goiburuek (editorearen goibur
 $string['checkdesc:headershavetext'] = 'Goiburu batek testua izan behar du, hautemangarria izan dadin.';
 $string['checkdesc:iisnotused'] = 'Italic (i) elementuak ez lirateke erabili beharko; horien ordez "em" erabili beharko litzateke.';
 $string['checkdesc:imgaltisdifferent'] = 'Irudiaren ordezko testua ez litzateke irudiaren fitxategiaren izena izan beharko.';
-$string['checkdesc:imgaltistoolong'] = 'Irudiaren ordezko testua ez luke gehienez baimendutako karaktere kopurua (125) gainditu beharko.';
+$string['checkdesc:imgaltistoolong'] = 'Ziurtatu irudia deskribatzen duen ordezko testua laburra dela.';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'Irudiaren ordezko testua ez litzateke hutsik egon beharko, bereziki irudiak beste nonbaitera daraman esteka daukanean.';
 $string['checkdesc:imgaltnotplaceholder'] = 'Irudiaren ordezko testua ez litzateke "irudia" bezalako betegarri sinple bat izan beharko.';
 $string['checkdesc:imghasalt'] = 'Irudi-elementuek irudiaren ordezko testua izan beharko lukete, esanahirik gabeko irudi dekoratiboak ez badira behintzat.';

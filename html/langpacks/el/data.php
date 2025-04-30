@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'el', version '4.1'.
+ * Strings for component 'data', language 'el', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -397,7 +397,6 @@ $string['timemodified'] = 'Χρόνος τροποποίησης';
 $string['todatabase'] = 'σε αυτή τη βάση δεδομένων.';
 $string['type'] = 'Τύπος πεδίου';
 $string['undefinedprocessactionmethod'] = 'Δεν έχει οριστεί μέθοδος ενέργειας στο Data_Preset για να χειριστεί την ενέργεια «{$a}».';
-$string['unsupportedexport'] = 'Δεν είναι δυνατή η εξαγωγή του ({$a->fieldtype}).';
 $string['unsupportedfields'] = 'Μη υποστηριζόμενα πεδία';
 $string['unsupportedfieldslist'] = 'Δεν είναι δυνατή η εξαγωγή των ακόλουθων πεδίων:';
 $string['updatefield'] = 'Ενημέρωση ενός υπάρχοντος πεδίου';

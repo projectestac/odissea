@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_filetypes', language 'zh_cn', version '4.4'.
  *
  * @package     tool_filetypes
  * @category    string
@@ -52,7 +52,7 @@ $string['error_defaulticon'] = '另一个具有相同MIME类型的文件扩展�
 $string['error_extension'] = '文件类型的扩展名(extention)<strong>{$a}</strong>已经存在或无效。文件的扩展名必须是唯一的，且不可以包含特殊字符。';
 $string['error_notfound'] = '无法找到扩展名是{$a}的文件类型';
 $string['extension'] = '扩展名';
-$string['extension_help'] = '文件扩展名没有英文点号， 例如：&lsquo;mobi&rsquo;';
+$string['extension_help'] = '不带点的文件扩展名，例如 \'mobi\'';
 $string['groups'] = '类型小组';
 $string['groups_help'] = '此类型所属的文件类型组的可选列表。这些是通用类别，如“文档”和“图像”。';
 $string['icon'] = '文件图标';

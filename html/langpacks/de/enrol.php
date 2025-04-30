@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', version '4.1'.
+ * Strings for component 'enrol', language 'de', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Sie haben nicht das Recht, in diesem Kurs Rolle
 $string['bulkuseroperation'] = 'Nutzerverarbeitung (Bulk)';
 $string['configenrolplugins'] = 'Aktivieren Sie bitte die notwendigen Plugins und ordnen Sie sie in der bevorzugten Reihenfolge an.';
 $string['custominstancename'] = 'Nutzerdefinierter Name';
+$string['customwelcomemessage'] = 'Begrüßungstext';
+$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann unformatiert sein oder im Moodle-Auto-Format vorliegen. HTML-Tags und MultiLang-Tags werden akteptiert, außerdem die folgenden Platzhalter:
+<ul>
+<li>Kursname {$a->coursename}</li>
+<li>Link zum Nutzerprofil {$a->profileurl}</li>
+<li>Vollständiger Nutzername {$a->fullname}</li>
+<li>Vorname der Person {$a->firstname}</li>
+<li>Nachname der Person {$a->lastname}</li>
+<li>E-Mail-Adresse der Person {$a->email}</li>
+<li>Kursrolle der Person {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Hallo {$a->fullname}, Sie wurden erfolgreich für den Kurs {$a->coursename} angemeldet.';
 $string['defaultenrol'] = 'Plugin zu neuen Kursen hinzufügen';
 $string['defaultenrol_desc'] = 'Es ist möglich, dieses Plugin standardmäßig zu neuen Kursen hinzuzufügen.';
 $string['deleteinstanceconfirm'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' und alle verbundenen Daten löschen? Alle {$a->users} Nutzer/innen, die über diese Methode eingeschrieben sind, werden abgemeldet und deren Bewertungen, Gruppenmitgliedschaften, Forenabonnements sowie kursbezogene Daten werden gelöscht.';
@@ -127,6 +139,7 @@ $string['periodend'] = 'bis {$a}';
 $string['periodnone'] = 'eingeschrieben {$a}';
 $string['periodstart'] = 'ab {$a}';
 $string['periodstartend'] = 'von {$a->start} bis {$a->end}';
+$string['plugindisabled'] = 'Einschreibeplugin {$a} ist deaktiviert';
 $string['privacy:metadata:user_enrolments'] = 'Einschreibungen';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Instanz des Einschreibeplugins';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ID der Person, der zuletzt die Nutzereinschreibung geändert hat';
@@ -137,12 +150,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Zeitpunkt, zu dem die Nut
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Zeitpunkt, zu dem die Nutzereinschreibung bearbeitet wurde';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Zeitpunkt, zu dem die Nutzereinschreibung beginnt';
 $string['privacy:metadata:user_enrolments:userid'] = 'Nutzer-ID';
-$string['proceedtocourse'] = 'Weiter zum Kurs';
 $string['recovergrades'] = 'Alte Nutzerbewertungen falls möglich wiederherstellen';
 $string['rolefromcategory'] = '{$a->role} (vererbt vom Kursbereich)';
 $string['rolefrommetacourse'] = '{$a->role} (vererbt aus Kurszuordnung)';
 $string['rolefromsystem'] = '{$a->role} (zugewiesen für die Website)';
 $string['rolefromthiscourse'] = '{$a->role} (zugewiesen in diesem Kurs)';
+$string['sendcoursewelcomemessage'] = 'Willkommensnachricht senden';
+$string['sendcoursewelcomemessage_help'] = 'Wenn Sie eine Person oder eine globale Gruppe für den Kurs anmelden, wird möglicherweise eine Willkommensnachricht per E-Mail gesendet. Wenn die E-Mail vom Kurskontakt (standardmäßig Trainer/in) gesendet wird und mehrere Personen diese Rolle haben, wird die E-Mail von der Person gesendet, der die Rolle zuerst zugewiesen wurde.';
 $string['sendfromcoursecontact'] = 'Vom Kurskontakt';
 $string['sendfromkeyholder'] = 'Von der Person mit dem Einschreibeschlüssel';
 $string['sendfromnoreply'] = 'Von der Nicht-Antworten-Adresse';
@@ -161,7 +175,7 @@ $string['unassignnotpermitted'] = 'Sie haben kein Recht, Rollenzuweisungen in di
 $string['unenrol'] = 'Abmelden';
 $string['unenrolconfirm'] = 'Möchten Sie wirklich \'{$a->user}\' (eingeschrieben über \'{$a->enrolinstancename}\') vom Kurs \'{$a->course}\' abmelden?';
 $string['unenrolleduser'] = 'Nutzer/in \'{$a->fullname}\' wurde vom Kurs abgemeldet';
-$string['unenrolme'] = 'Selbst vom Kurs \'{$a}\' abmelden';
+$string['unenrolme'] = 'Selbst aus diesem Kurs abmelden';
 $string['unenrolnotpermitted'] = 'Sie haben kein Recht, diese Person vom Kurs abzumelden.';
 $string['unenrolroleusers'] = 'Nutzer/innen abmelden';
 $string['uninstallmigrating'] = '"{$a}" Einschreibungen werden übertragen';

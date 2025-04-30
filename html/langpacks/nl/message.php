@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', version '4.1'.
+ * Strings for component 'message', language 'nl', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Contactpersonen';
 $string['conversationactions'] = 'Gespreksacties menu';
 $string['decline'] = 'Afwijzen';
 $string['defaultmessageoutputs'] = 'Instellingen meldingen';
-$string['defaults'] = 'Standaard';
 $string['deleteallconfirm'] = 'Weet je zeker, dat je dit gehele gesprek wilt verwijderen? Dit zal het niet verwijderen voor andere deelnemers van dit gesprek.';
 $string['deleteallmessages'] = 'Verwijder alle berichten';
 $string['deleteallselfconfirm'] = 'Weet je zeker dat je dit hele persoonlijke gesprek wilt verwijderen?';
@@ -97,11 +96,7 @@ $string['info'] = 'Gebruikersinfo';
 $string['isnotinyourcontacts'] = '{$a} staat niet in je contacten';
 $string['loadmore'] = 'Meer zoekresultaten';
 $string['loggedin'] = 'Online';
-$string['loggedin_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik aangemeld bent bij Moodle';
-$string['loggedindescription'] = 'Wanneer ik aangemeld ben in Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoff_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik niet aangemeld bent bij Moodle';
-$string['loggedoffdescription'] = 'Wanneer ik niet aangemeld ben in Moodle';
 $string['managemessageoutputs'] = 'Standaard berichtenvoorkeuren';
 $string['message'] = 'Bericht';
 $string['messagecontactrequest'] = '{$a->user} vraagt om toegevoegd te worden als contactpersoon. Bezoek je pagina met <a href="{$a->url}">contactaanvragen</a> om hierop te reageren';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Bericht verstuurd naar 1 persoon';
 $string['sendbulkmessagesingle'] = 'Verstuur bericht naar 1 persoon';
 $string['sendcontactrequest'] = 'Verzend contact-verzoek';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen';
 $string['sendingviaenabled'] = '"{$a->provider}" via "{$a->processor}" inschakelstatus versturen';
 $string['sendingvialocked'] = '"{$a->provider}" via "{$a->processor}" vergrendelstatus versturen';
-$string['sendingviawhen'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen wanneer {$a->state}';
 $string['sendmessage'] = 'Stuur bericht';
 $string['sendmessageto'] = 'Stuur bericht aan {$a}';
 $string['sendmessagetopopup'] = 'Stuur bericht naar {$a} - nieuw venster';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'Bekijk het volledige bericht';
 $string['viewmessageswith'] = 'Bekijk berichten met {$a}';
 $string['viewnotificationresource'] = 'Ga naar: {$a}';
 $string['viewunreadmessageswith'] = 'Bekijk ongelezen berichten met {$a}';
+$string['waitingforcontactaccept'] = 'Wacht op toevoeging als contact';
 $string['wouldliketocontactyou'] = 'Zou graag contact met je opnemen';
 $string['writeamessage'] = 'Schrijf een bericht...';
 $string['you'] = 'Jij:';

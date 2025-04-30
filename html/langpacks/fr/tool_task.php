@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'fr', version '4.1'.
+ * Strings for component 'tool_task', language 'fr', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'La file d’attente des tâches ad hoc est vide';
-$string['adhocqueueold'] = 'La plus ancienne tâche a {$a->age} et dépasse {$a->max}';
+$string['adhocqueueold'] = 'La plus ancienne tâche non traitée a {$a->age}, ce qui dépasse {$a->max}';
 $string['adhocqueuesize'] = 'La file d’attente des tâches ad hoc compte {$a} tâches';
 $string['adhoctaskid'] = 'ID de tâche ad hoc : {$a}';
+$string['adhoctaskrun'] = 'Lancement de tâche ad hoc initié';
 $string['adhoctasks'] = 'Tâches ad hoc';
-$string['asap'] = 'ASAP';
+$string['adhoctasksdue'] = 'Tâches ad hoc à lancer';
+$string['adhoctasksfailed'] = 'Tâches ad hoc en échec';
+$string['adhoctasksfuture'] = 'Tâches ad hoc futures';
+$string['adhoctasksrunning'] = 'Tâches ad hoc en cours d’exécution';
+$string['asap'] = '<abbr title="Aussi vite que possible">ASAP</abbr>';
+$string['backtoadhoctasks'] = 'Retour aux tâches ad hoc';
 $string['backtoscheduledtasks'] = 'Retour aux tâches programmées';
 $string['blocking'] = 'Blocage';
 $string['cannotfindthepathtothecli'] = 'Impossible de trouver le chemin vers le programme « PHP CLI », c’est pourquoi l’exécution de la tâche a été interrompue. Spécifiez le chemin d’accès à « PHP CLI » dans Administration de site / Serveur / Chemins système.';
 $string['checkadhocqueue'] = 'File d’attente des tâches ad hoc';
 $string['checkcronrunning'] = 'Lancement du cron';
+$string['checklongrunningtaskcount'] = 'Tâches de longue durée : {$a}';
+$string['checklongrunningtasks'] = 'Tâches de longue durée';
 $string['checkmaxfaildelay'] = 'Délai max d’échec de tâche';
 $string['classname'] = 'Nom de classe';
 $string['clearfaildelay_confirm'] = 'Voulez-vous vraiment supprimer le délai d’échec de la tâche « {$a} » ? Après avoir supprimé ce délai, la tâche sera lancée selon sa planification normale.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Modifier la programmation de la tâche : {$a}';
 $string['enablerunnow'] = 'Permettre de lancer immédiatement les tâches programmées';
 $string['enablerunnow_desc'] = 'Ce réglage permet aux administrateurs de lancer une tâche programmée immédiatement, plutôt que d’attendre son lancement tel que programmé. Cette fonctionnalité nécessite la définition du chemin d’accès à PHP CLI (pathtophp) dans les chemins système. La tâche se lance sur le serveur web, c’est pourquoi il peut être préférable de désactiver cette fonctionnalité pour éviter d’éventuels problèmes de performance.';
 $string['faildelay'] = 'Délai d’échec';
+$string['failed'] = 'Échec';
 $string['fromcomponent'] = 'Du composant : {$a}';
 $string['hostname'] = 'Nom d’hôte';
 $string['lastcronstart'] = 'Durée depuis le dernier lancement du cron : {$a}';
 $string['lastruntime'] = 'Dernière exécution';
 $string['lastupdated'] = 'Dernière mise à jour : {$a}';
 $string['nextruntime'] = 'Prochaine exécution';
+$string['noclassname'] = 'Nom de classe non spécifié';
+$string['notasks'] = 'Aucune tâche à lancer';
+$string['payload'] = 'Données utiles';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'Plugin désactivé';
 $string['pluginname'] = 'Configuration des tâches programmées';
 $string['privacy:metadata'] = 'Le plugin Configuration des tâches programmées n’enregistre aucune donnée personnelle.';
 $string['resettasktodefaults'] = 'Revenir à la programmation par défaut';
 $string['resettasktodefaults_help'] = 'Cette action supprimera toutes les modifications et configurera la programmation de cette tâche à ses réglages par défaut.';
+$string['run_adhoctasks'] = 'Lancer les tâches ad hoc';
+$string['runadhoc'] = 'Lancer maintenant les tâches ad hoc ?';
+$string['runadhoc_confirm'] = 'Les tâches seront exécutées sur le serveur web et peuvent prendre du temps à se terminer.';
+$string['runadhoctask'] = 'Lancer la tâche « {$a->task} » d’ID {$a->taskid}';
+$string['runadhoctasks'] = 'Lancer toutes les tâches « {$a} »';
+$string['runadhoctasksfailed'] = 'Lancer toutes les tâches « {$a} » en échec';
 $string['runagain'] = 'Relancer';
+$string['runclassname'] = 'Lancer toutes les tâches';
+$string['runclassnamefailedonly'] = 'Lancer toutes les tâches en échec';
+$string['runningalltasks'] = 'Toutes les tâches en cours d’exécution';
+$string['runningfailedtasks'] = 'Tâches en échec en cours d’exécution';
 $string['runningtasks'] = 'Tâches en cours actuellement';
 $string['runnow'] = 'Lancer maintenant';
 $string['runnow_confirm'] = 'Voulez-vous vraiment lancer la tâche « {$a} » maintenant ? La tâche sera lancée sur le serveur web et prendra un certain temps à s’effectuer.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Modèle d’exécution';
 $string['scheduled'] = 'Programmée';
 $string['scheduledtaskchangesdisabled'] = 'Des modifications à la liste des tâches programmées ont été bloquées dans la configuration de Moodle';
 $string['scheduledtasks'] = 'Tâches programmées';
+$string['showall'] = 'Afficher toutes les tâches';
+$string['showfailedonly'] = 'Afficher seulement les tâches en échec';
+$string['showsummary'] = 'Afficher un résumé des tâches ad hoc';
+$string['slowtask'] = 'Le traitement de la tâche a duré plus de {$a}';
 $string['started'] = 'Lancée';
+$string['taskage'] = 'Durée de traitement';
+$string['taskdetails'] = 'Tâches en traitement depuis plus de {$a->time} (max. {$a->maxtime}) : {$a->count}';
 $string['taskdisabled'] = 'Tâche désactivée';
 $string['taskfailures'] = '{$a} tâche(s) en erreur';
+$string['taskid'] = 'ID tâche';
 $string['tasklogs'] = 'Journaux des tâches programmées';
 $string['tasknofailures'] = 'Aucune tâche n’est en erreur';
+$string['taskrunningtime'] = 'Le traitement de la tâche a duré {$a}';
 $string['taskscheduleday'] = 'Jour';
 $string['taskscheduleday_help'] = 'Champ jour du mois pour la programmation des tâches. Le champ utilise la même syntaxe que le cron Unix. Voici quelques exemples :
 

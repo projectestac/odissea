@@ -1,5 +1,6 @@
 <?php
-$string['pluginname'] ='Remote resources';
+
+$string['pluginname'] = 'Remote resources';
 
 $string['rcommon:authenticate'] = 'Marsupial content authentication';
 $string['rcommon:exportcredentials'] = 'Export Marsupial credentials';
@@ -84,19 +85,19 @@ $string['scorm'] = 'Remote SCORM';
 $string['webcontent'] = 'Remote content';
 $string['downloadbookstructures_warning'] = '<strong>ATENTION</strong>: You are trying to download the structure of books. This process can take several minutes. Please wait  ...';
 
-$string['user_credentials'] 		= 'Users with credentials';
-$string['users_proportion'] 		= '{$a->with_credentials} of the {$a->total_users} users in the system have some credential';
-$string['publishers'] 			= 'Publishers';
-$string['no_publishers'] 		= 'There isn\'t any publisher';
-$string['without_credentials'] 		= 'Users without credentials';
-$string['with_credentials'] 		= 'Users with credentials';
-$string['good_connection'] 		= 'Connection succeeded';
-$string['bad_connection'] 		= 'Connection fail';
-$string['bad_wsdl_connection']          = 'Check authentication web services address';
-$string['books'] 			= 'books';
-$string['check_publishers'] 		= 'Check the connection';
-$string['wait_please'] 			= 'This action could take some minutes';
-$string['marsupial_bookswarning']       = '<strong>WARNING</strong>: If you detect some missing book after updating the list, contact with your content provider.';
+$string['user_credentials'] = 'Users with credentials';
+$string['users_proportion'] = '{$a->with_credentials} of the {$a->total_users} users in the system have some credential';
+$string['publishers'] = 'Publishers';
+$string['no_publishers'] = 'There isn\'t any publisher';
+$string['without_credentials'] = 'Users without credentials';
+$string['with_credentials'] = 'Users with credentials';
+$string['good_connection'] = 'Connection succeeded';
+$string['bad_connection'] = 'Connection fail';
+$string['bad_wsdl_connection'] = 'Check authentication web services address';
+$string['books'] = 'books';
+$string['check_publishers'] = 'Check the connection';
+$string['wait_please'] = 'This action could take some minutes';
+$string['marsupial_bookswarning'] = '<strong>WARNING</strong>: If you detect some missing book after updating the list, contact with your content provider.';
 
 $string['provider_books'] = 'Provider books {$a}';
 $string['manage_credentials'] = 'Manage credentials';
@@ -208,7 +209,9 @@ Els possibles missatges d'error que es poden produir s&oacute;n:</p>
     <li>Fitxer buit</li>
 </ul>
 <p>Cal tenir en compte que si hi ha errors, caldr&agrave; revisar-los i reparar-los per poder continuar amb el proc&eacute;s d'importaci&oacute;.</p>";
-$string['addeddate']        = 'Added';
+$string['addeddate'] = 'Added';
+
+$string['marsupial_not_enabled'] = 'Marsupial is not enabled';
 
 // Deprecated lang strings
 $string['exit'] = 'Exit';
@@ -221,7 +224,7 @@ $string['marsupialusersync'] = 'Synchronize with &Agrave;tria';
 $string['marsupialupdate_publisher'] = 'Update suppliers';
 $string['marsupialpublisher'] = 'Suppliers';
 $string['marsupialget_credentials'] = 'Update credentials';
-$string['back_to_stats'] 		= 'Go back';
+$string['back_to_stats'] = 'Go back';
 $string['keymanager_import_error_1'] = 'It was imposible to upload the file because the file size is highest than the max file size allowed by the server rigths';
 $string['keymanager_import_error_2'] = 'It was imposible to upload the file because the file size is highest than the max file size allowed by the server rigths.';
 $string['keymanager_import_error_3'] = 'It was imposible to upload the file because it was just uploaded a part of the total file';

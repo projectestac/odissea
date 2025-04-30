@@ -2,7 +2,7 @@
 Feature: A teacher can put questions in categories in the question bank
   In order to organize my questions
   As a teacher
-  I create and edit categories and move questions between them
+  I create and edit categories, move questions between them and filter question using category filter
 
   Background:
     Given the following "users" exist:
@@ -15,15 +15,17 @@ Feature: A teacher can put questions in categories in the question bank
       | user | course | role |
       | teacher1 | C1 | editingteacher |
     And the following "question categories" exist:
-      | contextlevel | reference | questioncategory | name              |
-      | Course       | C1        | Top              | top               |
-      | Course       | C1        | top              | Default for C1    |
-      | Course       | C1        | Default for C1   | Subcategory       |
-      | Course       | C1        | top              | Used category     |
+      | contextlevel | reference | questioncategory | name           |
+      | Course       | C1        | Top              | top            |
+      | Course       | C1        | top              | Default for C1 |
+      | Course       | C1        | Default for C1   | Subcategory    |
+      | Course       | C1        | Default for C1   | Another subcat |
+      | Course       | C1        | top              | Used category  |
       | Course       | C1        | top              | Default & testing |
     And the following "questions" exist:
       | questioncategory | qtype | name                      | questiontext                  |
       | Used category    | essay | Test question to be moved | Write about whatever you want |
+      | Another subcat  | essay | Question 1                | Write about whatever you want |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage
 
@@ -89,3 +91,51 @@ Feature: A teacher can put questions in categories in the question bank
     Then I should not see "Default for Test images in backup"
     And I follow "Add category"
     And I should see "Used category (2)"
+
+  Scenario: Filter questions by category and subcategories
+    When I am on the "Course 1" "core_question > course question bank" page
+    And I apply question bank filter "Category" with value "Default for C1"
+    Then I should not see "Question 1"
+    When I set the field "Also show questions from subcategories" to "1"
+    And I click on "Apply filters" "button"
+    Then I should see "Question 1" in the "categoryquestions" "table"
+    When I reload the page
+    Then I should see "Question 1" in the "categoryquestions" "table"
+    And the field "Also show questions from subcategories" matches value "1"
+    And I am on the "Course 1" "core_question > course question bank" page
+    And the field "Also show questions from subcategories" matches value "1"
+
+  Scenario: Filter question by category and subcategories in Quiz question page
+    Given the following "activities" exist:
+      | activity | name      | course | idnumber |
+      | quiz     | Test quiz | C1     | quiz1    |
+    And I am on the "Test quiz" "mod_quiz > Edit" page
+    And I open the "last" add to quiz menu
+    And I follow "from question bank"
+    When I set the field "Also show questions from subcategories" to "1"
+    And I click on "Apply filters" "button"
+    Then I should see "Question 1" in the "categoryquestions" "table"
+    And I set the field "Also show questions from subcategories" to "0"
+    And I click on "Apply filters" "button"
+    And I should not see "Question 1"
+    And I click on "Close" "button" in the "Add from the question bank at the end" "dialogue"
+    And I open the "last" add to quiz menu
+    And I follow "from question bank"
+    And the field "Also show questions from subcategories" matches value "0"
+
+  Scenario: Filter question by an invalid category should show validation error
+    When I am on the "Course 1" "core_question > course question bank" page
+    And I click on "Default for C1" "text" in the ".form-autocomplete-selection" "css_element"
+    And I click on "Apply filters" "button"
+    Then the "Category" field validity check should return "false"
+    And the "Category" field validation message should contain "You must select a valid category"
+
+  Scenario: Correcting an invalid category should no longer show validation error
+    When I am on the "Course 1" "core_question > course question bank" page
+    # First try to submit with a blank category.
+    And I click on "Default for C1" "text" in the ".form-autocomplete-selection" "css_element"
+    And I click on "Apply filters" "button"
+    # Then apply a correct category.
+    And I apply question bank filter "Category" with value "Used category"
+    Then the "Category" field validity check should return "true"
+    And I should see "Test question to be moved"

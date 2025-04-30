@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', version '4.1'.
+ * Strings for component 'forum', language 'ca', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -539,8 +539,6 @@ $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
 $string['postisprivatereply'] = 'Aquesta resposta és privada. (Els docents i la resta d\'usuaris amb la capacitat de veure respostes privades també la poden veure.)';
 $string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat a {$a}.';
-$string['postmailinfolink'] = 'Aquesta és una còpia d\'un missatge enviat al curs {$a->coursename}.
-Per respondre, feu clic en aquest enllaç: {$a->replylink}';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';
 $string['postmailreply'] = 'Per respondre-hi cliqueu damunt d\'aquest enllaç: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

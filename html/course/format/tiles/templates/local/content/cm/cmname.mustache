@@ -45,35 +45,66 @@
         }
     }
 }}
-
 {{#url}}
-    {{$ format_tiles/local/content/cm/cmicon }}
-        {{> format_tiles/local/content/cm/cmicon }}
-    {{/ format_tiles/local/content/cm/cmicon }}
-    {{! Name & Badge}}
-    <div class="activity-name-area activity-instance d-flex flex-column mr-2 align-self-center">
-        <div class="activitytitle media {{textclasses}} modtype_{{modname}} position-relative align-self-start">
-            <div class="media-body align-self-center">
-                <div class="activityname">
-                    {{#activityname}}
-                        {{#editing}}
-                        {{! We use the core template for non subtiles if user is editing, so modals will not be launched}}
+    {{#ismoodle42minus}}
+        {{! In moodle 4.0 - 4.2 the template was different }}
+        <div class="activity-instance d-flex flex-column">
+            <div class="activitytitle media {{textclasses}} modtype_{{modname}} position-relative align-self-start">
+                <div class="activityiconcontainer {{purpose}} courseicon align-self-start mr-3">
+                    <img src="{{{icon}}}" class="activityicon {{iconclass}}"
+                         alt="{{#ismoodle40}}{{{modname}}}{{/ismoodle40}}{{^ismoodle40}}{{#cleanstr}} activityicon, moodle, {{{pluginname}}} {{/cleanstr}}{{/ismoodle40}}"
+                    >
+                </div>
+                <div class="media-body align-self-center">
+                    {{#showpluginname}}
+                        <div class="text-uppercase small">
+                            {{{pluginname}}}
+                        </div>
+                    {{/showpluginname}}
+                    <div class="activityname">
+                        {{#activityname}}
                             {{$ core/inplace_editable }}
                                 {{> core/inplace_editable }}
                             {{/ core/inplace_editable }}
-                        {{/editing}}
-                        {{^editing}}
-                        {{! If user is not editing, we use this for non subtiles as we need to add data-action for modal launch}}
-                            <a href="{{url}}"{{#modalType}} data-action="launch-tiles-cm-modal"{{/modalType}} class="aalink stretched-link" onclick="{{onclick}}"><span class="instancename">{{{cmtitle}}}</span></a>
-                        {{/editing}}
-                    {{/activityname}}
-                    {{#activitybadge}}
-                        {{$ core_courseformat/local/content/cm/activitybadge }}
-                            {{> core_courseformat/local/content/cm/activitybadge }}
-                        {{/ core_courseformat/local/content/cm/activitybadge }}
-                    {{/activitybadge}}
+                        {{/activityname}}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    {{/ismoodle42minus}}
+    {{^ismoodle42minus}}
+    {{! Icon }}
+        {{#activityicon}}
+            {{$ format_tiles/local/content/cm/cmicon }}
+                {{> format_tiles/local/content/cm/cmicon }}
+            {{/ format_tiles/local/content/cm/cmicon }}
+        {{/activityicon}}
+
+        {{! Name & Badge}}
+        <div class="activity-name-area activity-instance d-flex flex-column mr-2 ">
+            <div class="activitytitle media {{textclasses}} modtype_{{modname}} position-relative align-self-start">
+                <div class="media-body align-self-center">
+                    <div class="activityname">
+                        {{#activityname}}
+                            {{#editing}}
+                                {{! We use the core template for non subtiles if user is editing, so modals will not be launched}}
+                                {{$ core/inplace_editable }}
+                                    {{> core/inplace_editable }}
+                                {{/ core/inplace_editable }}
+                            {{/editing}}
+                            {{^editing}}
+                                {{! If user is not editing, we use this for non subtiles as we need to add data-action for modal launch}}
+                                <a id="cm-link-{{id}}" href="{{url}}"{{#modalType}} data-action="launch-tiles-cm-modal"{{/modalType}} class="aalink stretched-link"{{#onclick}} onclick="{{onclick}}"{{/onclick}}><span class="instancename">{{{cmtitle}}}</span></a>
+                            {{/editing}}
+                        {{/activityname}}
+                        {{#activitybadge}}
+                            {{$ core_courseformat/local/content/cm/activitybadge }}
+                                {{> core_courseformat/local/content/cm/activitybadge }}
+                            {{/ core_courseformat/local/content/cm/activitybadge }}
+                        {{/activitybadge}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ismoodle42minus}}
 {{/url}}

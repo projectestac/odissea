@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataform', language 'ar', version '4.1'.
+ * Strings for component 'dataform', language 'ar', version '4.4'.
  *
  * @package     dataform
  * @category    string
@@ -35,6 +35,7 @@ $string['configmaxfilters'] = 'هذه القيمة تحدد أقصى عدد من
 $string['configmaxviews'] = 'هذه القيمة تحدد أقصى عدد من المعاينات التي يمكن إضافتها إلى نشاط نموذج البيانات.';
 $string['csvwithselecteddelimiter'] = '<acronym title=\\"قيم مفصولة بفوارز\\">CSV</acronym> نص مع الفاصل المحدد:';
 $string['dataform:addinstance'] = 'إضافة نموذج بيانات جديد';
+$string['entriesimport'] = 'استيراد المُدخلات';
 $string['entriesnotsaved'] = 'لم يتم حفظ أي إدخال، الرجاء التأكد من تنسيق الملف المرفوع.';
 $string['entryaddmultinew'] = 'أضف مُدخلات جديدة';
 $string['entryaddnew'] = 'إضافة مُدخل جديد';
@@ -68,7 +69,9 @@ $string['filterdescription'] = 'وصف المرشح';
 $string['filterperpage'] = 'لكل صفحة';
 $string['firstdayofweek'] = 'الاثنين';
 $string['formemptyadd'] = 'لم تقم بإملاء أي حقول!';
+$string['fromfile'] = 'الاستيراد من ملف مضغوط';
 $string['gradeitems_help'] = 'هذه الصفحة تسمح لك بإضافة أو تحرير عناصر التقييم لهذا النشاط.';
+$string['import'] = 'استيراد';
 $string['importadd'] = 'إضافة معاينة استيراد جديدة';
 $string['maxsize'] = 'الحجم الأقصى';
 $string['newvalue'] = 'القيمة الجديدة';

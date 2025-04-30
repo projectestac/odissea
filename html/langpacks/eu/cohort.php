@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', version '4.1'.
+ * Strings for component 'cohort', language 'eu', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Kohortearen partaidea';
 $string['cohorts'] = 'Kohorteak';
 $string['cohortsin'] = 'Eskura dauden kohorteak: {$a}';
 $string['component'] = 'Mota';
+$string['contextcohortnotallowed'] = '<b>{$a}</b> kohortea ez dago baimenduta testuinguru honetan.';
 $string['contextnotfound'] = '<b>{$a}</b> testuingurua ez da aurkitu edo zuk ez duzu baimenik kohortea sortzeko bertan. Lehenetsitako testuingurua erabiliko da.';
 $string['csvcontainserrors'] = 'Erroreak aurkitu dira CSV datuetan. Ikusi xehetasunak behean.';
 $string['csvcontainswarnings'] = 'Abisuak aurkitu dira CSV datuetan. Ikusi xehetasunak behean.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'Oraingo erabiltzaileak';
 $string['currentusersmatching'] = 'Bat datozen oraingo erabiltzaileak';
 $string['defaultcontext'] = 'Lehenetsitako testuingurua';
 $string['delcohort'] = 'Ezabatu kohortea';
-$string['delconfirm'] = 'Ziur al zaude \'{$a}\' kohortea ezabatu nahi duzula?';
+$string['delconfirm'] = 'Ekintza honek \'{$a}\' kohortea eta berarekin lotutako datuak ezabatuko ditu.';
 $string['description'] = 'Deskribapena';
 $string['displayedrows'] = '{$a->displayed} errenkada erakutsi dira {$a->total}(e)tik.';
 $string['duplicateidnumber'] = 'Badago dagoeneko ID zenbaki bera duen kohortea';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'Kohortearekin lotutako erab
 $string['removeuserwarning'] = 'Kohorte batetik erabiltzaileak kentzeak  hainbat ikastarotan erabiltzaileak desmatrikulatzea ekar dezake, erabiltzaile-ezarpenak, taldetako partaidetza edo ikastaro horietako beste hainbat informazio ezabatuz.';
 $string['search'] = 'Bilatu';
 $string['searchcohort'] = 'Bilatu kohortea';
+$string['selectcohort'] = 'Aukeratu kohortea';
 $string['selectfromcohort'] = 'Aukeratu partaideak kohortetik';
 $string['systemcohorts'] = 'Sistemako kohorteak';
 $string['unknowncohort'] = 'Kohorte ezezaguna: ({$a})';

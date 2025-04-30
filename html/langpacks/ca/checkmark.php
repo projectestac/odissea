@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'ca', version '4.1'.
+ * Strings for component 'checkmark', language 'ca', version '4.4'.
  *
  * @package     checkmark
  * @category    string
@@ -33,10 +33,12 @@ $string['duedate'] = 'Data de venciment';
 $string['duedateno'] = 'Sense data de venciment';
 $string['export'] = 'exporta';
 $string['grade'] = 'Qualificació';
+$string['gradedon'] = 'Qualificat el';
 $string['gradingdue'] = 'Recorda\'m que qualifiqui abans de';
 $string['gradingdue_help'] = 'És la data esperada en què s\'hauria d\'haver completat la qualificació de les trameses. Aquesta data s\'utilitza per prioritzar les notificacions del Tauler per als professors.';
 $string['noattempts'] = 'No s\'ha fet cap intent en aquesta marca de selecció';
 $string['privacy:metadata:timedue'] = 'Data de venciment per a la tramesa.';
+$string['save'] = 'Desa';
 $string['select'] = 'Selecciona';
 $string['signature'] = 'Signatura';
 $string['str_userid'] = 'ID de l\'estudiant';

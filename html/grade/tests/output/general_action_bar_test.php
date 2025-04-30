@@ -28,7 +28,7 @@ use moodle_url;
  * @copyright  2021 Mihail Geshoski <mihail@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class general_action_bar_test extends advanced_testcase {
+final class general_action_bar_test extends advanced_testcase {
 
     /**
      * Load required test libraries
@@ -155,7 +155,7 @@ class general_action_bar_test extends advanced_testcase {
      *
      * @return array
      */
-    public function export_for_template_provider(): array {
+    public static function export_for_template_provider(): array {
         $graderpluginname = get_string('pluginname', 'gradereport_grader');
         $historypluginname = get_string('pluginname', 'gradereport_history');
         $outcomespluginname = get_string('pluginname', 'gradereport_outcomes');

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'en', version '4.1'.
+ * Strings for component 'offlinequiz_rimport', language 'en', version '4.4'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -33,18 +33,19 @@ $string['errordifferentpage'] = 'Differing page exists';
 $string['errordifferentresultexists'] = 'Different result exists';
 $string['errordoublepage'] = 'Page already exists';
 $string['errorfilenotfound'] = 'File not found';
+$string['errorfilenotimage'] = 'File is not an image or PDF doesn\'t contain an image.';
 $string['errorgifnotsupported'] = 'GIF images not supported';
-$string['errorgrouperror'] = 'Group error';
+$string['errorgrouperror'] = 'Invalid group number';
 $string['errorimagenotsupported'] = 'Image type not supported';
 $string['errorimportusernotinlist'] = 'User not in list';
-$string['errorinsecuremarkings'] = 'Insecure markings';
+$string['errorinsecuremarkings'] = 'Inaccurate markings';
 $string['errorinvalidlistnumber'] = 'Invalid Listnumber';
 $string['errorinvalidpagenumber'] = 'Invalid page number';
 $string['errorjpgnotsupported'] = 'JPG images not supported';
 $string['errormissingpages'] = 'Pages incomplete';
 $string['errornonexistinguser'] = 'User does not exist';
 $string['errornotadjusted'] = 'Not adjusted';
-$string['errorotherresult'] = 'Other result exists';
+$string['errorotherresult'] = 'Different result exists';
 $string['errorpageerror'] = 'Page error';
 $string['errorpngnotsupported'] = 'PNG images not supported';
 $string['errorresultexists'] = 'Result exists';

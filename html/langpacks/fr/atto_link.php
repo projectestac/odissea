@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'fr', version '4.1'.
+ * Strings for component 'atto_link', language 'fr', version '4.4'.
  *
  * @package     atto_link
  * @category    string

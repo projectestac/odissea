@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'eu', version '4.1'.
+ * Strings for component 'availability', language 'eu', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Gehitu murrizketa...';
 $string['and'] = 'eta';
 $string['condition_group'] = 'Murrizketa-multzoa';
 $string['condition_group_info'] = 'Gehitu habiaratutako murrizketa-multzo bat logika konplexua erabiltzeko.';
+$string['disabled_verb'] = 'Ezin da aldatu baldintza-sortan datu pribatuak dituen arau bat dagoelako.';
+$string['editsettings'] = 'Editatu eskuragarritasun murrizketak';
 $string['enableavailability'] = 'Gaitu eskuragarritasun baldintzak';
 $string['enableavailability_desc'] = 'Gaituz gero, baldintzak (data, kalifikazioa edo beste jarduera bat osatua egotea) ezarri ahal izango dituzu jarduera eskuragarri dagoen ala ez kontrolatzeko.';
 $string['error_list_nochildren'] = 'Murrizketa-multzoak gutxienez murrizketa bat izan behar dute.';

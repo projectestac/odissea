@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', version '4.1'.
+ * Strings for component 'data', language 'ko', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -361,7 +361,6 @@ $string['timemodified'] = '변경된 시간';
 $string['todatabase'] = '이 데이터베이스에';
 $string['type'] = '항목 유형';
 $string['undefinedprocessactionmethod'] = '데이터 초기설정에서 "{$a}"를 처리하기 위한 방법이 정의되지 않았음.';
-$string['unsupportedexport'] = '({$a->fieldtype}) 내보낼 수 없음';
 $string['updatefield'] = '기존 필드 업데이트';
 $string['uploadfile'] = '파일 올리기';
 $string['uploadrecords'] = '파일에서 항목 올리기';

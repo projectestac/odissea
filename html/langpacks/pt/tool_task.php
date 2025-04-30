@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'pt', version '4.1'.
+ * Strings for component 'tool_task', language 'pt', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'A fila de tarefas ad hoc está vazia.';
-$string['adhocqueueold'] = 'A tarefa mais antiga tem {$a->age} o que é superior a {$a->max}';
+$string['adhocqueueold'] = 'A tarefa não processada mais antiga tem {$a->age}, o que é superior a {$a->max}';
 $string['adhocqueuesize'] = 'Existem {$a} tarefas na fila de espera da tarefa ad hoc';
 $string['adhoctaskid'] = 'ID da tarefa ad hoc: {$a}';
+$string['adhoctaskrun'] = 'Iniciada execução da tarefa ad hoc';
 $string['adhoctasks'] = 'Tarefas ad hoc';
-$string['asap'] = 'ASAP';
+$string['adhoctasksdue'] = 'Prazo da tarefa ad hoc';
+$string['adhoctasksfailed'] = 'Tarefas ad hoc falhadas';
+$string['adhoctasksfuture'] = 'Tarefas ad hoc futuras';
+$string['adhoctasksrunning'] = 'Tarefas ad hoc em execução';
+$string['asap'] = '<abbr title="O mais breve possível">ASAP</abbr>';
+$string['backtoadhoctasks'] = 'Voltar para tarefas ad hoc';
 $string['backtoscheduledtasks'] = 'Voltar para as tarefas agendadas';
 $string['blocking'] = 'Bloqueio';
 $string['cannotfindthepathtothecli'] = 'Não foi possível encontrar o executável CLI do PHP e, por isso, a execução da tarefa foi cancelada. Defina a configuração \'Caminho para o CLI do PHP\' em Administração do Site / Servidor / Caminhos do sistema.';
 $string['checkadhocqueue'] = 'Fila de tarefas ad hoc';
 $string['checkcronrunning'] = 'Execução do cron';
+$string['checklongrunningtaskcount'] = 'Tarefas de execução demorada: {$a}';
+$string['checklongrunningtasks'] = 'Tarefas de execução demorada';
 $string['checkmaxfaildelay'] = 'Atraso máximo das falhas das tarefas';
 $string['classname'] = 'Nome da classe';
 $string['clearfaildelay_confirm'] = 'Tem a certeza de que pretende limpar o atraso de falha para a tarefa \'{$a}\'? Depois de limpar o atraso, a tarefa será executada de acordo com a sua programação normal.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Editar agendamento da tarefa: {$a}';
 $string['enablerunnow'] = 'Permitir \'Executar agora\' para tarefas agendadas';
 $string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. Este recurso requer que o \'Caminho para a CLI do PHP\' (pathtophp) seja definido nos caminhos do sistema. A tarefa é executada no servidor web, no entanto, pode querer desativar esta funcionalidade para evitar potenciais problemas de desempenho.';
 $string['faildelay'] = 'Execução adiada';
+$string['failed'] = 'Falhada';
 $string['fromcomponent'] = 'Componente: {$a}';
 $string['hostname'] = 'Nome do servidor';
 $string['lastcronstart'] = 'A última execução do cron foi há {$a}.';
 $string['lastruntime'] = 'Última execução';
 $string['lastupdated'] = 'Última atualização: {$a}.';
 $string['nextruntime'] = 'Próxima execução';
+$string['noclassname'] = 'Nome da classe não especificado';
+$string['notasks'] = 'Nenhuma tarefa para executar';
+$string['payload'] = 'Carga';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'Módulo desativado';
 $string['pluginname'] = 'Configuração da tarefa agendada';
 $string['privacy:metadata'] = 'O módulo Configuração da tarefa agendada não armazena dados pessoais.';
 $string['resettasktodefaults'] = 'Restaurar agendamento de tarefa para as configurações predefinidas';
 $string['resettasktodefaults_help'] = 'Se ativar esta opção, irá descartar quaisquer alterações locais e reverter o agendamento desta tarefa para as configurações predefinidas.';
+$string['run_adhoctasks'] = 'Executar tarefas ad hoc';
+$string['runadhoc'] = 'Executar agora as tarefas ad hoc';
+$string['runadhoc_confirm'] = 'As tarefas serão executadas no servidor web e podem levar algum tempo até estarem concluídas.';
+$string['runadhoctask'] = 'Executar a tarefa com ID {$a->taskid} de \'{$a->task}\'';
+$string['runadhoctasks'] = 'Executar todas as tarefas de \'{$a}\'';
+$string['runadhoctasksfailed'] = 'Executar todas as tarefas falhadas de \'{$a}\'';
 $string['runagain'] = 'Executar novamente';
+$string['runclassname'] = 'Executar todas';
+$string['runclassnamefailedonly'] = 'Executar todas as falhadas';
+$string['runningalltasks'] = 'A executar todas as tarefas';
+$string['runningfailedtasks'] = 'A executar tarefas falhadas';
 $string['runningtasks'] = 'Tarefas em execução';
 $string['runnow'] = 'Executar agora';
 $string['runnow_confirm'] = 'Tem a certeza de que pretende executar agora a tarefa \'{$a}\'? A tarefa será executada no servidor web e pode levar algum tempo até estar concluída.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Executar ascendente';
 $string['scheduled'] = 'Agendada';
 $string['scheduledtaskchangesdisabled'] = 'As alterações à lista de tarefas agendadas foram impedidas na configuração do Moodle';
 $string['scheduledtasks'] = 'Tarefas agendadas';
+$string['showall'] = 'Mostrar tudo';
+$string['showfailedonly'] = 'Mostrar apenas falhadas';
+$string['showsummary'] = 'Mostrar resumo das tarefas ad hoc';
+$string['slowtask'] = 'A execução da tarefa demorou mais de {$a}';
 $string['started'] = 'Iniciada';
+$string['taskage'] = 'Tempo de execução';
+$string['taskdetails'] = 'Tarefas em execução há mais de {$a->time} (max {$a->maxtime}): {$a->count}';
 $string['taskdisabled'] = 'Tarefa desativada';
 $string['taskfailures'] = 'Existe(m) {$a} tarefa(s) com falha';
+$string['taskid'] = 'ID da tarefa';
 $string['tasklogs'] = 'Registos das tarefa';
 $string['tasknofailures'] = 'Não existem tarefas com falhas.';
+$string['taskrunningtime'] = 'A execução da tarefa demorou {$a}';
 $string['taskscheduleday'] = 'Dia';
 $string['taskscheduleday_help'] = 'Campo “Dia” para agendamento de tarefa. O campo usa o mesmo formato que o cron Unix. Alguns exemplos:
 

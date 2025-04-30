@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'en', version '4.1'.
+ * Strings for component 'appointment', language 'en', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -69,6 +69,7 @@ $string['attendanceinstructions'] = 'Select users who attended the session:';
 $string['attendedsession'] = 'Attended session';
 $string['attendees'] = 'Attendees';
 $string['attendeestablesummary'] = 'People planning on or having attended this session.';
+$string['availableplaceholders'] = 'Available placeholders';
 $string['availableseats'] = '{$a} seats available';
 $string['book'] = 'Book';
 $string['bookedat'] = '<strong>Booked:</strong> {$a}';
@@ -100,7 +101,7 @@ $string['capacity_help'] = '**Capacity** is the number of seats available in a s
 When a Appointment session reaches capacity the session details do not appear on the course page. The details will appear greyed out on the \'View all sessions\' page and the learner cannot enrol on the session.
 &nbsp;';
 $string['closed'] = 'Closed';
-$string['completionattended'] = 'Learner must book and attend the appointment to complete this activity';
+$string['completionattended'] = 'Book an appointment and attend it';
 $string['completionattended_help'] = 'If enabled, the activity will be considered completed if the learner\'s booking attendance is marked as "Fully attended" or "Partially attended".';
 $string['completionbooked'] = 'Learner must book an appointment to complete this activity';
 $string['completionbooked_help'] = 'If enabled, the activity will be considered completed if the learner status is "Booked", "Fully attended", or "Partially attended". If the learner has cancelled, is wait-listed, or their attendance is marked as "No show", the activity will not be considered completed.';
@@ -161,6 +162,7 @@ $string['eventsignup'] = 'Session signup';
 $string['eventupdatesession'] = 'Session updated';
 $string['full'] = 'Date is fully occupied';
 $string['fullfilter'] = 'Full';
+$string['fullybooked'] = 'Fully booked';
 $string['goback'] = 'Go back';
 $string['icalendarheading'] = 'iCalendar Attachments';
 $string['joinwaitlist'] = 'Join waitlist';
@@ -195,6 +197,8 @@ $string['placeholder:lastname'] = '[lastname]';
 $string['placeholder:reminderperiod'] = '[reminderperiod]';
 $string['placeholder:sessiondate'] = '[sessiondate]';
 $string['placeholder:starttime'] = '[starttime]';
+$string['placeholdersdesc'] = 'Placeholders';
+$string['placeholdersdesc_help'] = 'Placeholders allow you to add a dynamic content, e.g. [firstname] placeholder will be replaced with a user first name in the notification delivered to user.';
 $string['pluginadministration'] = 'Appointment administration';
 $string['pluginname'] = 'Appointment';
 $string['potentialattendees'] = 'Potential Attendees';
@@ -373,5 +377,6 @@ $string['usersignedup'] = 'Status: signed up';
 $string['usersignedupon'] = 'User signed up on {$a}';
 $string['userwillbewaitlisted'] = 'This session is currently full. By clicking the "Sign-up" button, you will be placed on the sessions\'s wait-list.';
 $string['venue'] = 'Venue';
+$string['waitlistedat'] = '<strong>Wait-listed:</strong> {$a}';
 $string['waitlistedmessage'] = 'Wait-listed message';
 $string['waitlistedmessage_help'] = 'This message is sent out whenever users sign-up for a wait-listed session.';

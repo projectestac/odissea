@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'ru', version '4.1'.
+ * Strings for component 'block_blog_recent', language 'ru', version '4.4'.
  *
  * @package     block_blog_recent
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_recent:addinstance'] = 'Добавлять новый блок «Свежие записи блога»';
 $string['norecentblogentries'] = 'Нет свежих записей';
-$string['numentriestodisplay'] = 'Сколько отображать свежий записей';
+$string['numentriestodisplay'] = 'Сколько отображать свежих записей';
 $string['pluginname'] = 'Свежие записи блога';
 $string['privacy:metadata'] = 'Блок «Свежие записи блога» только показывает данные, хранящиеся в других местах.';
-$string['recentinterval'] = 'Времени, в течение которого записи считаются «свежими»';
+$string['recentinterval'] = 'Время, в течение которого записи считаются «свежими»';

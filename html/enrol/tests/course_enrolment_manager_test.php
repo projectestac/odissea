@@ -29,10 +29,10 @@ use stdClass;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers     \course_enrolment_manager
  */
-class course_enrolment_manager_test extends \advanced_testcase {
+final class course_enrolment_manager_test extends \advanced_testcase {
     /**
      * The course used in tests.
-     * @var stdClass
+     * @var \stdClass
      */
     private $course = null;
     /**
@@ -118,7 +118,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
     /**
      * Verify get_total_users() returned number of users expected in every situation.
      */
-    public function test_get_total_users() {
+    public function test_get_total_users(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -172,7 +172,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
     /**
      * Verify get_users() returned number of users expected in every situation.
      */
-    public function test_get_users() {
+    public function test_get_users(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -253,7 +253,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
      * Sets up a custom profile field and the showuseridentity option, and creates a test user
      * with suitable values set.
      *
-     * @return stdClass Test user
+     * @return \stdClass Test user
      */
     protected function setup_for_user_identity_tests(): \stdClass {
         // Configure extra fields to include one normal user field and one profile field, and
@@ -270,7 +270,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
     /**
      * Checks that the get_users function returns the correct user fields.
      */
-    public function test_get_users_fields() {
+    public function test_get_users_fields(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -296,13 +296,13 @@ class course_enrolment_manager_test extends \advanced_testcase {
         $this->assertEquals('Smart suit', $user->imagealt);
 
         // But not some random other field like city.
-        $this->assertObjectNotHasAttribute('city', $user);
+        $this->assertObjectNotHasProperty('city', $user);
     }
 
     /**
      * Checks that the get_other_users function returns the correct user fields.
      */
-    public function test_get_other_users_fields() {
+    public function test_get_other_users_fields(): void {
         global $PAGE, $DB;
 
         $this->resetAfterTest();
@@ -330,13 +330,13 @@ class course_enrolment_manager_test extends \advanced_testcase {
         $this->assertEquals('Smart suit', $user->imagealt);
 
         // But not some random other field like city.
-        $this->assertObjectNotHasAttribute('city', $user);
+        $this->assertObjectNotHasProperty('city', $user);
     }
 
     /**
      * Checks that the get_potential_users function returns the correct user fields.
      */
-    public function test_get_potential_users_fields() {
+    public function test_get_potential_users_fields(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -367,7 +367,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
         $this->assertEquals('Smart suit', $user->imagealt);
 
         // But not some random other field like city.
-        $this->assertObjectNotHasAttribute('city', $user);
+        $this->assertObjectNotHasProperty('city', $user);
     }
 
     /**
@@ -381,7 +381,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
      * @param int $expectedtotalusers Expected total of users in database.
      * @param bool $expectedmoreusers Expected for more users return or not.
      */
-    public function test_get_potential_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers) {
+    public function test_get_potential_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers): void {
         global $DB, $PAGE;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -409,7 +409,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
     /**
      * Tests get_potential_users when the search term includes a custom field.
      */
-    public function test_get_potential_users_search_fields() {
+    public function test_get_potential_users_search_fields(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -475,7 +475,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
      * @param int $expectedtotalusers Expected total of users in database.
      * @param bool $expectedmoreusers Expected for more users return or not.
      */
-    public function test_search_other_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers) {
+    public function test_search_other_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers): void {
         global $PAGE;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -503,7 +503,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
      *
      * @return array Dataset
      */
-    public function search_users_provider() {
+    public static function search_users_provider(): array {
         return [
                 [2, false, 2, 3, true],
                 [5, false, 3, 3, false],
@@ -523,7 +523,7 @@ class course_enrolment_manager_test extends \advanced_testcase {
      * @param int $expectedtotalusers Expected total of users in database.
      * @param bool $expectedmoreusers Expected for more users return or not.
      */
-    public function test_search_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers) {
+    public function test_search_users($perpage, $returnexactcount, $expectedusers, $expectedtotalusers, $expectedmoreusers): void {
         global $PAGE;
         $this->resetAfterTest();
 

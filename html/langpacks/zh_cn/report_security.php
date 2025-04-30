@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', version '4.1'.
+ * Strings for component 'report_security', language 'zh_cn', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -31,12 +31,12 @@ $string['check_antivirus_info'] = '当前未启用任何防病毒扫描程序';
 $string['check_antivirus_logstore_not_supported'] = '由于选择的日志存储类型，无法验证防病毒扫描程序的状态';
 $string['check_antivirus_name'] = '杀毒软件';
 $string['check_antivirus_ok'] = '{$a->scanners} 防病毒扫描程序已启用，上次 {$a->lookback} 未检测到问题';
-$string['check_configrw_details'] = '<p>建议在安装完成后将config.php文件权限改为web服务器不可写。
-请注意，此度量不会显著提高服务器的安全性，不过它可能减慢或限制一般的攻击。</p>';
+$string['check_configrw_details'] = '<p>建议在安装后更改 <code>config.php</code> 的文件权限，以便 Web 服务器无法修改该文件。
+请注意，此措施不会显著提高服务器的安全性，但可能会减慢或限制一般漏洞利用。</p>';
 $string['check_configrw_name'] = 'config.php文件可改写';
 $string['check_configrw_ok'] = 'config.php 无法通过 PHP 脚本编辑。';
 $string['check_configrw_warning'] = 'PHP 脚本可以修改 config.php 文件。';
-$string['check_cookiesecure_details'] = '<p>如果您启用了https通信，那么建议您也启用安全cookie。您还应该将 http 永久重定向到https。</p>';
+$string['check_cookiesecure_details'] = '<p>如果启用了 https 通信，建议启用安全 Cookie 的发送。您应该具有从 http 到 https 的永久重定向，理想情况下还应提供 HSTS 标头。</p>';
 $string['check_cookiesecure_error'] = '请启用安全的 cookie';
 $string['check_cookiesecure_http'] = '你必须打开https才能使用安全的cookies';
 $string['check_cookiesecure_name'] = '安全的 cookie';
@@ -46,8 +46,9 @@ $string['check_crawlers_error'] = '搜索引擎可以访问，但访客不能访
 $string['check_crawlers_info'] = '搜索引擎可以作为访客进入。';
 $string['check_crawlers_name'] = '对谷歌开放';
 $string['check_crawlers_ok'] = '不允许搜索引擎访问';
-$string['check_defaultuserrole_details'] = '<p>所有已登录的用户都会拥有缺省角色的权限。请确信此角色没有危险的权限。</p>
-<p>缺省用户对应的旧角色只能是<em>已认证用户</em>。一定不能有查看课程权限。</p>';
+$string['check_defaultuserrole_details'] = '<p>所有登录用户都被授予默认用户角色的功能。请确保此角色不允许任何有风险的功能。</p>
+<p>默认用户角色唯一支持的旧类型是 <em>Authenticated user （经过身份验证的用户</em>）。不得启用课程视图功能。</p>
+<p>请检查是否启用了 自动数据删除请求批准（tool_dataprivacy | automaticdatadeletionapproval） 选项。用户可以请求删除可能会删除大量数据。</p>';
 $string['check_defaultuserrole_error'] = '默认角色“{$a}”未正确定义！';
 $string['check_defaultuserrole_name'] = '所有用户的缺省角色';
 $string['check_defaultuserrole_notset'] = '缺省角色未设置。';
@@ -68,8 +69,8 @@ $string['check_embed_details'] = '<p>毫无限制的对象嵌入是非常危险�
 $string['check_embed_error'] = '允许无限制地嵌入对象——对于大多数服务器而言，这非常危险。';
 $string['check_embed_name'] = '允许 EMBED 和 OBJECT';
 $string['check_embed_ok'] = '不允许无限制地嵌入对象。';
-$string['check_frontpagerole_details'] = '<p>默认的首页角色是所有注册用户在参与首页活动时所使用的角色。请确保该角色未被赋予危险的权限。</p>
-<p>强烈建议为此创建一个新的角色且不要给它赋予任何传统角色。</p>';
+$string['check_frontpagerole_details'] = '<p>默认站点主角色将分配给站点主活动的所有经过身份验证的用户。请确保此角色不允许任何有风险的功能。</p>
+<p>建议为此目的创建一个特殊角色，并且不要使用旧类型角色。</p>';
 $string['check_frontpagerole_error'] = '检测到未正确定义的首页角色“{$a}”！';
 $string['check_frontpagerole_name'] = '首页角色';
 $string['check_frontpagerole_notset'] = '未设置首页角色。';
@@ -80,14 +81,10 @@ $string['check_guestrole_error'] = '访客角色“{$a}”定义错误！';
 $string['check_guestrole_name'] = '访客角色';
 $string['check_guestrole_notset'] = '未设定访客角色。';
 $string['check_guestrole_ok'] = '访客角色定义正确。';
-$string['check_mediafilterswf_details'] = '<p>自动嵌入swf非常危险——任何注册用户都可能发起针对其它用户的XSS攻击。请在正式服务器禁用它。</p>';
-$string['check_mediafilterswf_error'] = 'Flash 媒体过滤器已经激活——对于大多数服务器而言，这是非常危险的。';
-$string['check_mediafilterswf_name'] = '激活的 .swf 媒体过滤器';
-$string['check_mediafilterswf_ok'] = 'Flash 媒体过滤器未激活。';
 $string['check_nodemodules_details'] = '<p>目录<code>{$a->path}</code>包含Node.js模块及其附属项，通常由NPM工具安装。这些模块可能是本地Moodle开发所需要的，比如使用grunt框架。在生产环境中运行Moodle站点不需要这些模块，而且它们可能含有使您的站点受到远程攻击的潜在危险代码。</p><p>如果网站可以通过公共URL访问，强烈建议删除该目录，或者至少在您的web服务器配置中禁止对其进行web访问。</p>';
 $string['check_nodemodules_info'] = 'node_modules目录不应出现在公共站点上。';
 $string['check_nodemodules_name'] = 'Node.js模块目录';
-$string['check_openprofiles_details'] = '<p>开放用户个人信息可能会被不良用户滥用。建议启用<code>强制用户登录后才能访问个人资料</code>或者<code>强制用户登录</code>。</p>';
+$string['check_openprofiles_details'] = '开放用户个人信息可能会被不良用户滥用。建议启用<code>强制用户登录后才能访问个人资料</code>或者<code>强制用户登录</code>。';
 $string['check_openprofiles_error'] = '任何人无须登录就可以查看用户的个人信息。';
 $string['check_openprofiles_name'] = '开放用户个人信息';
 $string['check_openprofiles_ok'] = '在查看用户个人信息前需登录。';
@@ -143,7 +140,7 @@ $string['description'] = '描述';
 $string['details'] = '详情';
 $string['eventreportviewed'] = '查看了安全检查报告';
 $string['issue'] = '问题';
-$string['pluginname'] = '安全性概览';
+$string['pluginname'] = '安全检查';
 $string['privacy:metadata'] = '安全概览插件不存储任何个人数据。';
 $string['security:view'] = '查看安全报表';
 $string['timewarning'] = '处理数据可能会需要很长时间，请耐心等待...';

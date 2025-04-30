@@ -93,16 +93,17 @@ class number extends base {
             get_string('filterfieldvalue', 'core_reportbuilder', $this->get_header()), ['size' => 3]);
         $mform->setType($this->name . '_value1', PARAM_INT);
         $mform->setDefault($this->name . '_value1', 0);
-
-        $objs['text2'] = $mform->createElement('text', $this->name . '_value2', get_string('to'), ['size' => 3]);
-        $mform->setType($this->name . '_value2', PARAM_INT);
-        $mform->setDefault($this->name . '_value2', 0);
-
-        $mform->addElement('group', $this->name . '_grp', '', $objs, '', false);
-
         $mform->hideIf($this->name . '_value1', $this->name . '_operator', 'in',
             [self::ANY_VALUE,  self::IS_NOT_EMPTY,  self::IS_EMPTY]);
+
+        $objs['text2'] = $mform->createElement('text', $this->name . '_value2',
+            get_string('filterfieldto', 'reportbuilder', $this->get_header()), ['size' => 3]);
+        $mform->setType($this->name . '_value2', PARAM_INT);
+        $mform->setDefault($this->name . '_value2', 0);
         $mform->hideIf($this->name . '_value2', $this->name . '_operator', 'noteq', self::RANGE);
+
+        $mform->addGroup($objs, $this->name . '_grp', $this->get_header(), '', false)
+            ->setHiddenLabel(true);
     }
 
     /**
@@ -111,7 +112,7 @@ class number extends base {
      * @param array $values
      * @return array array of two elements - SQL query and named parameters
      */
-    public function get_sql_filter(array $values) : array {
+    public function get_sql_filter(array $values): array {
         $operator = (int) ($values["{$this->name}_operator"] ?? self::ANY_VALUE);
 
         $value1 = $values["{$this->name}_value1"] ?? null;

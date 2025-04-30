@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'el', version '4.1'.
+ * Strings for component 'lti', language 'el', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -84,10 +84,8 @@ $string['configtoolurl'] = 'Προεπιλεγμένη διεύθυνση URL α
 $string['configtypes'] = 'Ενεργοποίηση εφαρμογών LTI';
 $string['configured'] = 'Διαμορφώθηκε';
 $string['confirmtoolactivation'] = 'Είστε βέβαιοι ότι θέλετε να ενεργοποιήσετε αυτό το εργαλείο;';
-$string['contentitem'] = 'Μήνυμα περιεχομένου-στοιχείου';
 $string['contentitem_deeplinking'] = 'Υποστηρίζει βαθιά σύνδεση (μήνυμα στοιχείου περιεχομένου)';
 $string['contentitem_deeplinking_help'] = 'Αν επιλεγεί, η ενέργεια «Επιλογή περιεχομένου» θα είναι διαθέσιμη κατά την προσθήκη ενός εξωτερικού εργαλείου.';
-$string['contentitem_help'] = 'Αν επιλεγεί, η ενέργεια «Επιλογή περιεχομένου» θα είναι διαθέσιμη κατά την προσθήκη ενός εξωτερικού εργαλείου.';
 $string['contentitem_multiple_description'] = 'Τα ακόλουθα στοιχεία θα προστεθούν στο μάθημά σας:';
 $string['contentitem_multiple_graded'] = 'Βαθμολογημένη δραστηριότητα (Μέγιστος βαθμός: {$a})';
 $string['course_tool_types'] = 'Εργαλεία μαθήματος';
@@ -226,7 +224,6 @@ $string['launchinpopup_help'] = 'Ο περιέκτης εκκίνησης επη
 * ** Ενσωμάτωση, χωρίς μπλοκ ** - Το εργαλείο εμφανίζεται στο υπάρχον παράθυρο Moodle, με τα πλήκτρα πλοήγησης στο επάνω μέρος της σελίδας.
 * ** Νέο παράθυρο ** - Το εργαλείο ανοίγει σε νέο παράθυρο, καταλαμβάνοντας όλο το διαθέσιμο χώρο. Ανάλογα με τον περιηγητή, θα ανοίξει σε μια νέα καρτέλα ή ένα αναδυόμενο παράθυρο. Είναι πιθανό ότι οι περιηγητές θα εμποδίσουν το άνοιγμα του νέου παραθύρου.';
 $string['launchoptions'] = 'Επιλογές εκκίνησης';
-$string['leaveblank'] = 'Αφήστε κενό, εάν δεν χρειάζονται';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Προσθήκη σετ ρυθμίσεων εργαλείου ειδικά για κάποιο μάθημα';
 $string['lti:addinstance'] = 'Προσθήκη νέου εξωτερικού εργαλείου';

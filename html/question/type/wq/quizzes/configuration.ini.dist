@@ -34,6 +34,11 @@
 ;quizzes.service.url = "http://www.wiris.net/demo/quizzes"
 
 ;
+; URL to connect to the WirisQuizzes new API (beta)
+
+;quizzes.api.url = "https://www.wiris.net/demo/quizzes/api"
+
+;
 ; URL where to get the JNLP file for Wiris Cas app.
 
 ;quizzes.wirislauncher.url = "http://stateful.wiris.net/demo/wiris"

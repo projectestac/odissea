@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_link', language 'gl', version '4.1'.
+ * Strings for component 'tiny_link', language 'gl', version '4.4'.
  *
  * @package     tiny_link
  * @category    string

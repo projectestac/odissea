@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'gl', version '4.1'.
+ * Strings for component 'calendar', language 'gl', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL do calendario';
 $string['calendarheading'] = 'Calendario {$a}';
 $string['calendarpreferences'] = 'Preferencias do calendario';
 $string['calendartypes'] = 'Tipos de calendario';
-$string['calendarurl'] = 'URL do calendario: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'URL do calendario copiado ao portapapeis';
 $string['category'] = 'Categoría';
 $string['categoryevent'] = 'Evento de categoría';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Copiar o URL do calendario';
 $string['copyurl'] = 'Copiar o URL';
 $string['course'] = 'Curso';
 $string['coursecalendar'] = '{$a} calendario';
+$string['coursecalendarlink'] = 'Calendario do curso';
 $string['courseevent'] = 'Evento de curso';
 $string['courseevents'] = 'Eventos de curso';
 $string['courses'] = 'Cursos';
@@ -128,7 +128,7 @@ $string['eventsall'] = 'Todos os eventos';
 $string['eventsdeleted'] = 'Elimináronse {$a} eventos';
 $string['eventsfor'] = '{$a} eventos';
 $string['eventsimported'] = 'Importáronse {$a} eventos';
-$string['eventskey'] = 'Clave de eventos';
+$string['eventskey'] = 'Chave de eventos';
 $string['eventsource'] = 'Orixe do evento';
 $string['eventspersonal'] = 'Os meus eventos persoais';
 $string['eventsrelatedtocategories'] = 'Eventos referidos a categorías';
@@ -174,9 +174,8 @@ $string['hourly'] = 'Cada hora';
 $string['importcalendar'] = 'Importar calendario';
 $string['importcalendarexternal'] = 'Importar un calendario externo?';
 $string['importcalendarfrom'] = 'Importar de';
-$string['importcalendarheading'] = 'Importar calendario...';
+$string['importcalendarheading'] = 'Importar calendario…';
 $string['importfromfile'] = 'Ficheiro de calendario (.ics)';
-$string['importfrominstructions'] = 'Forneza un URL a un calendario remoto, ou envíe un ficheiro.';
 $string['importfromurl'] = 'URL do calendario';
 $string['invalideventtype'] = 'O tipo de evento que seleccionou non é válido.';
 $string['invalidtimedurationminutes'] = 'A duración en minutos introducida non é correcta; introduza unha duración en minutos maior que 0 ou escolla sen duración.';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} eventos';
 $string['mon'] = 'lun';
 $string['monday'] = 'luns';
 $string['monthly'] = 'Mensual';
-$string['monthlyview'] = 'Vista do mes';
 $string['monthnext'] = 'Mes seguinte';
 $string['monthprev'] = 'Mes anterior';
 $string['monththis'] = 'Este mes';
@@ -235,7 +233,7 @@ $string['repeatevent'] = 'Repetir este evento';
 $string['repeatnone'] = 'Non repetir';
 $string['repeatweeksl'] = 'Repetir semanalmente, creando xuntos';
 $string['repeatweeksr'] = 'eventos';
-$string['requiresaction'] = '{$a} require unha acción';
+$string['requiresaction'] = '{$a} precisa dunha acción';
 $string['sat'] = 'sáb';
 $string['saturday'] = 'sábado';
 $string['showeventtype'] = 'Amosar eventos de {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ja', version '4.1'.
+ * Strings for component 'reportbuilder', language 'ja', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} さらに {$a->morecount
 $string['audiencenotsaved'] = '対象者は保存されませんでした。';
 $string['audiencesaved'] = '対象者が保存されました。';
 $string['audienceupdated'] = '対象者が更新されました。';
+$string['audienceusedbyschedule'] = 'この対象者はこのレポートのスケジュールで使用されます。';
 $string['cardview'] = 'カードビュー';
 $string['cardview_help'] = 'あなたはカードビューで狭いデバイスで閲覧する際のレポートレイアウトを定義できます。ここで設定された制限を超えた場合、カラムは折りたたまれますが、カードを展開してすべてのレポートデータを表示するよう切り替えできます。';
 $string['cardviewfirstcolumntitle'] = '第1カラムタイトル';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'リンク付きコースIDナンバ';
 $string['courseselect'] = 'コースを選択する';
 $string['courseshortnamewithlink'] = 'リンク付きコース省略名';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'カスタムレポート';
 $string['customreports'] = 'カスタムレポート';
 $string['customreportslimit'] = 'カスタムレポート制限';
 $string['customreportslimit_desc'] = 'カスタムレポート数はパフォーマンスの理由から制限される場合があります。ゼロに設定した場合、制限はありません。';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = '有効なレポートソースが見つかり�
 $string['errorsourceunavailable'] = 'レポートソースは利用できません。';
 $string['filteradded'] = 'フィルタ「 {$a} 」が追加されました。';
 $string['filtercontains'] = '含む';
+$string['filterdateafter'] = '後';
+$string['filterdatebefore'] = '前';
 $string['filterdatecurrent'] = '現在';
 $string['filterdatedays'] = '日';
 $string['filterdatefrom'] = '開始日付';
@@ -144,6 +148,8 @@ $string['filterendswith'] = '終了';
 $string['filterequalorgreaterthan'] = '大きいまたは等しい';
 $string['filterequalorlessthan'] = '小さいまたは等しい';
 $string['filterfieldoperator'] = '{$a} 演算子';
+$string['filterfieldto'] = '{$a} 終了';
+$string['filterfieldunit'] = '{$a} 単位';
 $string['filterfieldvalue'] = '{$a} 値';
 $string['filtergreaterthan'] = '大きい';
 $string['filterinvalid'] = '無効なフィルタ';
@@ -264,6 +270,7 @@ $string['sorting'] = '並べ替え';
 $string['sorting_help'] = 'あなたはレポート内のカラムの初期並べ替え順を定義できます。ユーザはカラム名のクリックで並べ替え順を変更できます。';
 $string['switchedit'] = '編集モードに切り替える';
 $string['switchpreview'] = 'プレビュモードに切り替える';
+$string['tagarea_reportbuilder_report'] = 'カスタムレポート';
 $string['tasksendschedule'] = 'レポート送信スケジュール';
 $string['tasksendschedules'] = 'レポートスケジュールを送信する';
 $string['timeadded'] = '追加日時';

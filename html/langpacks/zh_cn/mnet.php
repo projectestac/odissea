@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'zh_cn', version '4.1'.
+ * Strings for component 'mnet', language 'zh_cn', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = '添加到访问控制';
 $string['allhosts'] = '全部主机';
 $string['allhosts_no_options'] = '查看多台主机时无可用选项';
 $string['allow'] = '允许';
+$string['allowaccess'] = '允许访问';
 $string['applicationtype'] = '应用类型';
 $string['authfail_nosessionexists'] = '认证失败：mnet会话不存在';
 $string['authfail_sessiontimedout'] = '认证失败：mnet会话超时';
@@ -62,14 +63,15 @@ $string['deleteoutoftime'] = '删除密钥超过60秒，请重新操作。';
 $string['deleteuserrecord'] = 'SSO ACL：删除{$a->host}中\'{$a->user}\'的记录。';
 $string['deletewrongkeyvalue'] = '错误。如果不删除您服务器上的SSL密钥，您的服务器可能成为攻击的目标。';
 $string['deny'] = '拒绝';
+$string['denyaccess'] = '禁止访问';
 $string['description'] = '描述';
 $string['duplicate_usernames'] = '错误的在用户表中创建了“mnethostid”和“username”。<br />当您<a href="{$a}" target="_blank">在用户表中分配用户名的时候</a>.<br />更新应该完全成功。点击上面的链接，问题页将打开，可以在更新後看到。<br />';
 $string['enabled_for_all'] = '（服务器可以供所有主机使用）';
 $string['enterausername'] = '请键入一个用户名，或者通过英文半角逗号分隔的用户列表。';
-$string['error7020'] = '当远程站点为您的错误主机头wwwroot创建一条记录，通常就会发生错误。例如，用http://yoursite.com代替http://www.yoursite.com。您应该与远程站点管理员联系，让他更新您的主机信息（在config.php中指定）。';
-$string['error7022'] = '您发往远程网站的消息已成功加密，但未签名。这不符合预期；如果发生此事，您应该发布一个bug（在问题中提供应用版本等尽可能多的信息';
+$string['error7020'] = '如果远程站点使用错误的 wwwroot（例如，https://yoursite.com 而不是 https://www.yoursite.com）为您创建了记录，则通常会发生此错误。请使用您的 wwwroot（如 config.php 中指定）联系远程站点的管理员，并要求他们更新您的主机的记录。';
+$string['error7022'] = '您发送到远程站点的邮件已正确加密，但未签名。这是非常出乎意料的;如果发生这种情况，您可能应该提交一个 bug（提供尽可能多的有关相关应用程序版本的信息等）。';
 $string['error7023'] = '远程站点尝试用您站点所提供的所有key解封消息。所有keys都失败，因此可能通过重新键入远程站点的key来手动确认问题。但是这通常不会发生这种情况，除非几个月没有与远程站点通信。';
-$string['error7024'] = '您向远程站点发送了一条未加密消息，但是远程站点不接受来自您的未加密通信。这是不期望发生的。';
+$string['error7024'] = '您向远程站点发送了未加密的消息，但远程站点不接受来自您的站点的未加密通信。这是非常出乎意料的;如果发生这种情况，您可能应该提交一个 Bug（提供尽可能多的有关相关应用程序版本的信息等）。';
 $string['error7026'] = '您的key与远程主机提供给您的key不同，更进一步说，远程主机尝试获取您当前的key但是失败了。请重新键入与远程主机相符key，然后重试。';
 $string['error709'] = '远程站点从您这里获得SSL key失败。';
 $string['eventaccesscontrolcreated'] = '访问控制已创建';
@@ -90,7 +92,7 @@ $string['hideremote'] = '隐藏远程用户';
 $string['host'] = '主机';
 $string['hostcoursenotfound'] = '未发现主机或课程';
 $string['hostdeleted'] = '主机被删除';
-$string['hostexists'] = '已有使用此主机名的主机记录（可以删除它）。<a href="{$a}">点击这里</a>编辑此记录。';
+$string['hostexists'] = '具有该主机名的主机已存在记录。（它可能已被删除。<a href=“{$a}”>编辑记录</a>';
 $string['hostlist'] = '已联网主机列表';
 $string['hostname'] = '主机名';
 $string['hostnamehelp'] = '完整的远程主机域名，例如：www.example.com';

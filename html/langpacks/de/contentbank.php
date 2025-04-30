@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'de', version '4.1'.
+ * Strings for component 'contentbank', language 'de', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/in';
 $string['choosecontext'] = 'Kurs oder Kurbereich auswählen ...';
-$string['close'] = 'Schließen';
 $string['contentbank'] = 'Inhaltsspeicher';
 $string['contentbankpreferences'] = 'Inhaltsspeicher einstellen';
+$string['contentcopied'] = 'Inhalt kopiert.';
+$string['contentcreated'] = 'Inhalt angelegt';
 $string['contentdeleted'] = 'Inhalt gelöscht.';
 $string['contentname'] = 'Dateiname';
 $string['contentnotdeleted'] = 'Beim Versuch, den Inhalt zu löschen, ist ein Fehler aufgetreten.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Inhalt umbenannt.';
 $string['contentsmoved'] = 'Der Inhalt der Inhaltspeichers wurde nach {$a} verschoben.';
 $string['contenttypenoaccess'] = 'Sie können diese {$a}-Instanz nicht anzeigen.';
 $string['contenttypenoedit'] = 'Sie können diesen Inhalt nicht bearbeiten.';
+$string['contentupdated'] = 'Inhalt aktualisiert';
 $string['contentvisibilitychanged'] = 'Der Inhalt ist jetzt \'{$a}\'.';
 $string['contentvisibilitynotset'] = 'Ein Fehler ist aufgetreten, während eine Änderung der Inhaltssichtbarkeit versucht wurde.';
 $string['contextnotallowed'] = 'Sie konnen in diesem Kontext nicht auf den Inhaltsspeicher zugreifen.';
+$string['copycontent'] = 'Inhalt kopieren';
+$string['copyof'] = 'Kopie von {$a}';
 $string['deletecontent'] = 'Inhalt löschen';
 $string['deletecontentconfirm'] = 'Möchten Sie den Inhalt <em>\'{$a->name}\'</em> und alle zugehörigen Dateien wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['deletecontentconfirmlinked'] = 'Der Inhalt wird nur aus dem Inhaltsspeicher gelöscht. Alle Orte, die derzeit darauf verlinken, werden automatisch aktualisiert, um stattdessen eine Kopie des Inhalts zu verwenden.';
@@ -64,6 +68,7 @@ $string['more'] = 'Mehr';
 $string['name'] = 'Inhalt';
 $string['nocontentavailable'] = 'Kein Inhalt verfügbar';
 $string['nocontenttypes'] = 'Keine Inhaltstypen verfügbar';
+$string['nopermissiontocopy'] = 'Sie haben kein Recht, Inhalt zu kopieren.';
 $string['nopermissiontodelete'] = 'Sie haben nicht das Recht, Inhalte zu löschen.';
 $string['nopermissiontomanage'] = 'Sie haben nicht das Recht, Inhalte zu verwalten.';
 $string['notavailable'] = 'Dieser Inhalt ist nicht verfügbar.';

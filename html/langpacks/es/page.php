@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'es', version '4.1'.
+ * Strings for component 'page', language 'es', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -66,8 +66,6 @@ $string['popupheight'] = 'Altura de las ventanas emergentes (en pixels)';
 $string['popupheightexplain'] = 'Especifica la altura predeterminada de ventanas emergentes.';
 $string['popupwidth'] = 'Anchura de las ventanas emergentes (en pixels)';
 $string['popupwidthexplain'] = 'Especifica la anchura por defecto de ventanas emergentes.';
-$string['printheading'] = 'Mostrar el nombre de la página';
-$string['printheadingexplain'] = 'Mostrar el nombre de la página por encima del contenido?';
 $string['printintro'] = 'Mostrar la descripción de la página';
 $string['printintroexplain'] = '¿Mostrar la descripción de la página encima del contenido?';
 $string['printlastmodified'] = 'Mostrar última fecha de modificación';

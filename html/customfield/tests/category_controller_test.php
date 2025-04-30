@@ -25,9 +25,9 @@ use core_customfield_generator;
  * @category   test
  * @copyright  2018 Toni Barbera <toni@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers     \core_customfield\category_controller
  */
-class category_controller_test extends \advanced_testcase {
-
+final class category_controller_test extends \advanced_testcase {
     /**
      * Get generator.
      *
@@ -40,7 +40,7 @@ class category_controller_test extends \advanced_testcase {
     /**
      * Test for the field_controller::__construct function.
      */
-    public function test_constructor() {
+    public function test_constructor(): void {
         $this->resetAfterTest();
 
         $c = category_controller::create(0, (object)['component' => 'core_course', 'area' => 'course', 'itemid' => 0]);
@@ -62,9 +62,32 @@ class category_controller_test extends \advanced_testcase {
     }
 
     /**
+     * Test creation of category instance from pre-defined object
+     */
+    public function test_constructor_from_record(): void {
+        $this->resetAfterTest();
+
+        // Create field object that matches the persistent/schema definition.
+        $category = category_controller::create(0, (object) [
+            'name' => 'Test',
+            'description' => null,
+            'descriptionformat' => null,
+            'component' => 'core_course',
+            'area' => 'course',
+            'itemid' => 0,
+            'sortorder' => null,
+        ]);
+
+        // Saving the category will validate the persistent internally.
+        $category->save();
+
+        $this->assertInstanceOf(category_controller::class, $category);
+    }
+
+    /**
      * Test for function \core_customfield\field_controller::create() in case of wrong parameters
      */
-    public function test_constructor_errors() {
+    public function test_constructor_errors(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -165,7 +188,7 @@ class category_controller_test extends \advanced_testcase {
      * \core_customfield\category_controller::save()
      * \core_customfield\category_controller::get()
      */
-    public function test_create_category() {
+    public function test_create_category(): void {
         $this->resetAfterTest();
 
         // Create the category.
@@ -194,7 +217,7 @@ class category_controller_test extends \advanced_testcase {
     /**
      * Tests for \core_customfield\category_controller::set() behaviour.
      */
-    public function test_rename_category() {
+    public function test_rename_category(): void {
         $this->resetAfterTest();
 
         // Create the category.
@@ -219,7 +242,7 @@ class category_controller_test extends \advanced_testcase {
     /**
      * Tests for \core_customfield\category_controller::delete() behaviour.
      */
-    public function test_delete_category() {
+    public function test_delete_category(): void {
         $this->resetAfterTest();
 
         // Create the category.

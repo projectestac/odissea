@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'fr', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'fr', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -74,7 +74,7 @@ $string['checkdesc:headerh3'] = 'Les titres qui suivent les titres « h3 » (d
 $string['checkdesc:headershavetext'] = 'Un titre doit contenir du texte pour être visible.';
 $string['checkdesc:iisnotused'] = 'Les éléments en italique « i » ne doivent pas être utilisés ; il faut utiliser « em » à la place.';
 $string['checkdesc:imgaltisdifferent'] = 'Le texte alternatif « alt » de l’image ne doit pas être le nom du fichier de l’image.';
-$string['checkdesc:imgaltistoolong'] = 'Le texte alternatif « alt » de l’image ne doit pas dépasser le maximum autorisé (125) de caractères.';
+$string['checkdesc:imgaltistoolong'] = 'Assurez-vous que le texte alternatif (alt) de l’image soit assez concis pour décrire l’image.';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'Le texte alternatif « alt » de l’image ne doit pas être vide, en particulier lorsque l’image comporte un lien vers un autre site.';
 $string['checkdesc:imgaltnotplaceholder'] = 'Le texte alternatif « alt » de l’image ne doit pas être un simple texte de remplacement, tel que « image ».';
 $string['checkdesc:imghasalt'] = 'Le texte alternatif « alt » de l’image ne doit pas être absent des éléments image, sauf si l’image est purement décorative et sans signification.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', version '4.1'.
+ * Strings for component 'error', language 'pt', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -114,7 +114,7 @@ $string['cannotinsertrecord'] = 'Não foi possível inserir o novo registo com o
 $string['cannotmailconfirm'] = 'Ocorreu um erro no envio do e-mail de confirmação da mudança de senha';
 $string['cannotmanualctrack'] = 'A atividade não prevê acompanhamento da conclusão manual';
 $string['cannotmapfield'] = 'Foi detetada colisão entre correspondências - dois campos correspondem ao mesmo item de avaliação {$a}';
-$string['cannotmarktopic'] = 'Não é possível marcar este tópico para esta disciplina';
+$string['cannotmarktopic'] = 'Não é possível marcar esta secção para esta disciplina';
 $string['cannotmigratedatacomments'] = 'Não é possível migrar os comentários';
 $string['cannotmodulename'] = 'Não é possível obter o nome do módulo no menu de navegação';
 $string['cannotmoduletype'] = 'Não é possível obter o tipo de módulo no menu de navegação';
@@ -233,7 +233,11 @@ $string['dmlparseexception'] = 'Erro ao analisar a consulta SQL';
 $string['dmlreadexception'] = 'Ocorreu um erro na leitura da base de dados';
 $string['dmltransactionexception'] = 'Ocorreu um erro numa transição da base de dados';
 $string['dmlwriteexception'] = 'Ocorreu um erro ao guardar na base de dados';
-$string['downgradedcore'] = 'ERRO!!! O código que está a usar é mais ANTIGO que a versão com que foram feitas as base de dados!';
+$string['dndmaxbytes'] = 'O ficheiro é muito grande. O tamanho máximo permitido é de {$a->size}.';
+$string['dndread'] = 'Ocorreu um erro ao ler o ficheiro';
+$string['dndunkownfile'] = 'Este tipo de ficheiro não é suportado';
+$string['dndupload'] = 'Ocorreu um erro desconhecido ao carregar o ficheiro';
+$string['downgradedcore'] = 'Erro: O código que está a utilizar é mais antigo que a versão registada na base de dados.';
 $string['downloadedfilecheckfailed'] = 'A verificação do ficheiro descarregado falhou.';
 $string['duplicatefieldname'] = 'Nome no campo "{$a}" em duplicado';
 $string['duplicatenosupport'] = 'A atividade \'{$a->modname}\' não pode ser duplicada porque o módulo {$a->modtype} não suporta as funcionalidades de cópia de segurança e restauro.';
@@ -241,6 +245,7 @@ $string['duplicateparaminsql'] = 'ERRO: nome duplicado do parâmetro na consulta
 $string['duplicaterolename'] = 'Já existe um papel com este nome!';
 $string['duplicateroleshortname'] = 'Já existe um papel com este nome curto!';
 $string['duplicateusername'] = 'Nome de utilizador duplicado - registo ignorado';
+$string['editedpagenotfound'] = 'O sistema não consegue determinar a página atual. Tente atualizar a página e repita a operação.';
 $string['emailfail'] = 'Falhou o envio de e-mail';
 $string['encryption_decryptfailed'] = 'Erro na desencriptação';
 $string['encryption_encryptfailed'] = 'Erro na encriptação';
@@ -377,7 +382,7 @@ $string['invalidrole'] = 'Papel inválido';
 $string['invalidroleid'] = 'ID do papel inválido';
 $string['invalidscaleid'] = 'ID de escala inválido';
 $string['invalidsection'] = 'Registo de módulo de disciplina contém secção inválida';
-$string['invalidsesskey'] = 'É possível que a sua sessão tenha expirado. Autentique-se novamente.';
+$string['invalidsesskey'] = 'É possível que a sua sessão tenha expirado. Verifique que está autenticado ou volte ao ecrã anterior e recarregue a página.';
 $string['invalidshortname'] = 'Nome curto da disciplina inválido';
 $string['invalidsourcefield'] = 'O campo do rascunho do ficheiro de origem é inválido';
 $string['invalidstatedetected'] = 'Algo de errado ocorreu: {$a}. Normalmente isso nunca deveria acontecer.';
@@ -426,6 +431,10 @@ $string['moduledisable'] = 'O módulo ({$a}) foi desativado para esta disciplina
 $string['moduledoesnotexist'] = 'Este módulo não existe';
 $string['moduleinstancedoesnotexist'] = 'Não existem instâncias deste módulo';
 $string['modulemissingcode'] = 'O módulo {$a} não contém o código necessário para executar esta função';
+$string['moodlenet:invalidshareformat'] = 'Formato de partilha MoodleNet incorreto';
+$string['moodlenet:invalidsharestatus'] = 'Estado de partilha MoodleNet incorreto';
+$string['moodlenet:invalidsharetype'] = 'Tipo de partilha MoodleNet inválido';
+$string['moodlenet:usernotconfigured'] = 'Não tem permissão para partilhar conteúdo no MoodleNet ou a sua conta está configurada incorretamente.';
 $string['movecatcontentstoroot'] = 'Não é permitido mover os conteúdos da categoria para a raiz . Deve mover o conteúdo para uma categoria existente!';
 $string['movecatcontentstoselected'] = 'Alguns conteúdos da categoria não podem ser movidos para a categoria selecionada.';
 $string['movecategorynotpossible'] = 'Não pode mover a categoria \'{$a}\' para a categoria selecionada.';
@@ -497,8 +506,10 @@ $string['opensslsignerror'] = 'OpenSSL incapaz de assinar os dados';
 $string['orderidnotfound'] = 'ID ordem {$a} não foi encontrado';
 $string['pagenotexist'] = '<p>Ocorreu um erro pouco frequente ao tentar visualizar uma página que não existe: </p>{$a}';
 $string['pagenotexisttitle'] = 'Erro 404: ficheiro não encontrado';
+$string['passwordexceeded'] = 'A senha não pode ter mais de {$a} caracteres.';
 $string['pathdoesnotstartslash'] = 'Sem argumentos válidos fornecidos, o caminho não começa com a barra!';
 $string['pleasereport'] = 'Se tiver tempo, diga-nos o que estava a tentar fazer quando ocorreu esse erro:';
+$string['pluginnotexist'] = 'O módulo \'{$a}\' não existe';
 $string['pluginrequirementsnotmet'] = 'O módulo "{$a->pluginname}" ({$a->pluginversion}) não pôde ser instalado porque requer uma versão mais recente do Moodle (atualmente está a utilizar a versão {$a->currentmoodle} mas é requerida a versão {$a->requiremoodle}).';
 $string['pluginunsupported'] = 'O módulo "{$a->pluginname}" {$a->pluginversion} não suporta esta versão do Moodle {$a->moodleversion}. Procure informações sobre o módulo para encontrar versões suportadas.';
 $string['prefixcannotbeempty'] = '<p> Erro: O prefixo da tabela da base de dados não pode estar vazio ({$a}) </p>
@@ -510,6 +521,7 @@ $string['processingstops'] = 'O processamento terminou aqui. Os restantes regist
 $string['protected_cc_not_supported'] = 'Não é permitido Protected cartridges';
 $string['querystringcannotbeempty'] = 'A query string não pode ficar vazia.';
 $string['redirecterrordetected'] = 'Não há suporte para redirecionar, a execução do script terminou';
+$string['redissessionhandlerproblem'] = 'Falha na configuração da sessão redis. Por favor, notifique o administrador do servidor.';
 $string['refoundto'] = 'Pode ser reembolsado para {$a}';
 $string['refoundtoorigi'] = 'Reembolsado para o valor original: {$a}';
 $string['registrationdisabled'] = 'O registo está desativado neste site';
@@ -582,7 +594,7 @@ $string['unknowncoursesection'] = 'Tópico desconhecido na disciplina "{$a}"';
 $string['unknownevent'] = 'Evento desconhecido';
 $string['unknownfiletype'] = 'Erro desconhecido filtertype';
 $string['unknowngroup'] = 'Grupo desconhecido "{$a}"';
-$string['unknownhelp'] = 'Tópico de ajuda desconhecido {$a}';
+$string['unknownhelp'] = 'Secção de ajuda desconhecida {$a}';
 $string['unknownjsinrequirejs'] = 'Não é possível encontrar a JS library \'{$a}\'.';
 $string['unknownmodulename'] = 'Nome do módulo desconhecido para o formulário';
 $string['unknownrole'] = 'Papel desconhecido "{$a}"';
@@ -610,6 +622,7 @@ $string['usermustbemnet'] = 'Os utilizadores na lista de controle de acesso MNET
 $string['usernamelowercase'] = 'O nome de utilizador tem de ser em minúsculas';
 $string['usernotaddederror'] = 'Utilizador não adicionado - erro.';
 $string['usernotaddedregistered'] = 'Utilizador não adicionado - já estava registado.';
+$string['usernotaddedusernameexists'] = 'Utilizador não adicionado - o nome de utilizador já existe com um e-mail diferente';
 $string['usernotavailable'] = 'Não tem permissão para ver informação detalhada deste utilizador.';
 $string['usernotdeletedadmin'] = 'O utilizador não foi eliminado porque as contas de administrador não podem ser apagadas.';
 $string['usernotdeleteddeleted'] = 'Este utilizador já foi apagado.';

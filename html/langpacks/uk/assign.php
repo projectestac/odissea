@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'uk', version '4.1'.
+ * Strings for component 'assign', language 'uk', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Ви ще не подали заявку.';
 $string['allocatedmarker'] = 'Призначений оцінювач';
 $string['allocatedmarker_help'] = 'Маркер, призначений для цього подання.';
 $string['allowsubmissions'] = 'Дозволяє користувачам продовжувати здачу робіт для цього завдання.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Деталі завдання та можливість здачі робіт будуть відкрити з  <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Відповіді приймаються з';
 $string['allowsubmissionsfromdate_help'] = 'Якщо включено, то студенти не матимуть можливості здати роботу до вказаної дати. Якщо відключено, то студенти зможуть задавати роботи у будь-який час.';
-$string['allowsubmissionsfromdatesummary'] = 'Прийом робіт з цього завдання буде відкрито з <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Дозволити змінювати роботу';
 $string['alwaysshowdescription'] = 'Завжди показувати завдання';
 $string['alwaysshowdescription_help'] = 'Якщо вимкнено, наведений вище опис завдання стане видимим для студентів лише на дату «Дозволити подання з».';
@@ -451,8 +449,6 @@ $string['quickgrading_help'] = 'Швидке оцінювання дозволя
 $string['quickgradingchangessaved'] = 'Всі зміни збережено';
 $string['quickgradingresult'] = 'Швидке оцінювання';
 $string['recordid'] = 'Ідентифікатор';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} після початку курсу';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} перед початком курсу';
 $string['relativedatessubmissiontimeleft'] = 'Розраховано на кожного учня';
 $string['removeallgroupoverrides'] = 'Видалити всі заміни груп';
 $string['removealluseroverrides'] = 'Видалити всі заміни користувача';

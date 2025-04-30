@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moodleversion', language 'ar', version '4.1'.
+ * Strings for component 'block_moodleversion', language 'ar', version '4.4'.
  *
  * @package     block_moodleversion
  * @category    string
@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moodleversion'] = 'إصدار مودل';
 $string['moodleversion:addinstance'] = 'إضافة كتلة جديدة من إصدار مودل';
 $string['moodleversion:myaddinstance'] = 'إضافة كتلة جديدة من إصدار مودل إلى صفحة مودل الخاصة بي';
+$string['pluginname'] = 'كتلة إصدار مودل';

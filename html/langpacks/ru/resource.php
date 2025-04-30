@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ru', version '4.1'.
+ * Strings for component 'resource', language 'ru', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -107,10 +107,10 @@ $string['resource:addinstance'] = 'Добавлять новые ресурсы'
 $string['resource:exportresource'] = 'Экспортировать ресурс';
 $string['resource:view'] = 'Просматривать ресурс';
 $string['resourcecontent'] = 'Файлы и вложенные папки';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->type}, {$a->size}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Файл';
 $string['selectmainfile'] = 'Выберите основной файл, нажав на иконку рядом с именем файла.';
 $string['showdate'] = 'Показать дату загрузки/изменения';

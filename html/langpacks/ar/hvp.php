@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ar', version '4.1'.
+ * Strings for component 'hvp', language 'ar', version '4.4'.
  *
  * @package     hvp
  * @category    string
@@ -44,6 +44,7 @@ $string['ctcachenolibraries'] = 'لم يتم تلقي أي أنواع محتوى
 $string['ctcachetaskname'] = 'تحديث خبء نوع المحتوى';
 $string['currentpage'] = 'الصفحة $current من $total';
 $string['dataviewreportlabel'] = 'معاينة الإجابات';
+$string['description'] = 'الوصف';
 $string['displayoptiondownloadpermission'] = 'فقط إذا كانت للمستخدم صلاحيات تصدير H5P';
 $string['displayoptionpermissions'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تصدير H5P';
 $string['displayoptionpermissionsembed'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تضمين H5P';

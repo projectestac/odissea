@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'fr', version '4.1'.
+ * Strings for component 'pdfannotator', language 'fr', version '4.4'.
  *
  * @package     pdfannotator
  * @category    string
@@ -277,8 +277,8 @@ $string['notificationsubject:newquestion'] = 'Nouvelle question dans {$a}';
 $string['notificationsubject:newreport'] = 'Un commentaire a été signalé dans {$a}';
 $string['nounreadreports'] = 'Il n’y a pas de rapport non lu dans ce cours actuellement.';
 $string['on'] = 'le';
-$string['onlyDeleteOwnAnnotations'] = ', parce qu’elle appartient à un autre utilisateur.';
-$string['onlyDeleteUncommentedPosts'] = ', parce que les commentaires des autres utilisateurs seraient également supprimés.';
+$string['onlyDeleteOwnAnnotations'] = ',parce qu’elle appartient à un autre utilisateur.';
+$string['onlyDeleteUncommentedPosts'] = ',parce que les commentaires des autres utilisateurs seraient également supprimés.';
 $string['openquestions'] = 'non résolu';
 $string['overview'] = 'Vue d’ensemble';
 $string['overviewactioncolumn'] = 'Gérer';
@@ -293,10 +293,10 @@ $string['pdfannotator:administrateuserinput'] = 'Administrer les commentaires';
 $string['pdfannotator:closeanyquestion'] = 'Fermer toute question';
 $string['pdfannotator:closequestion'] = 'Fermer ses propres questions';
 $string['pdfannotator:create'] = 'Créer des annotations et des commentaires';
-$string['pdfannotator:deleteany'] = 'Supprimer toute annotation et commentaire';
+$string['pdfannotator:deleteany'] = 'Supprimer toutes les annotations et tous les commentaires';
 $string['pdfannotator:deleteown'] = 'Supprimer vos propres annotations et commentaires';
 $string['pdfannotator:edit'] = 'Modifier vos propres annotations et commentaires';
-$string['pdfannotator:editanypost'] = 'Modifier toutes annotations et tous les commentaires';
+$string['pdfannotator:editanypost'] = 'Modifier toutes les annotations et tous les commentaires';
 $string['pdfannotator:forwardquestions'] = 'Questions transférées';
 $string['pdfannotator:getforwardedquestions'] = 'Recevoir les questions transférées';
 $string['pdfannotator:hidecomments'] = 'Masquer les commentaires pour les participants';
@@ -386,11 +386,11 @@ $string['reportaddedtext'] = '{$a->reportinguser} a signalé un commentaire avec
 Il est disponible sous : {$a->urltoreport}';
 $string['reportedby'] = 'par / le';
 $string['reportedcomment'] = 'Commentaire signalé';
-$string['reports'] = 'commentaires signalés';
+$string['reports'] = 'Commentaires signalés';
 $string['reportsendbutton'] = 'Envoyer';
 $string['reportstab'] = 'Commentaires signalés';
 $string['reportstabicon'] = 'Commentaires signalés';
-$string['reportstabicon_help'] = 'Cette page affiche les commentaires qui ont été signalés comme étant inappropriés dans ce cours. Vous pouvez choisir de n’afficher que le rapports non lu/lu* ou tous les rapports.<br>* Tout responsable de ce cours peut marquer un signament comme lu.';
+$string['reportstabicon_help'] = 'Cette page affiche les commentaires qui ont été signalés comme étant inappropriés dans ce cours. Vous pouvez choisir de n’afficher que les rapports non lu/lu* ou tous les rapports.<br>* Tout responsable de ce cours peut marquer un rapport comme lu.';
 $string['reportwassentoff'] = 'Le commentaire a été signalé.';
 $string['search'] = 'Recherche';
 $string['searchresults'] = 'Résultats de la recherche';
@@ -470,7 +470,7 @@ $string['use_studenttextbox'] = 'Activer l’outil zone de texte pour les partic
 $string['useprint'] = 'Donner l’accès au PDF aux participants ?';
 $string['useprint_comments'] = 'Donner l’accès au PDF et à ses commentaires aux participants ?';
 $string['useprint_document'] = 'Donner l’accès au PDF aux participants ?';
-$string['usevotes'] = 'Autorise les utilisateurs à aimer les commentaires.';
+$string['usevotes'] = 'Autoriser les utilisateurs à aimer les commentaires ?';
 $string['view'] = 'Document';
 $string['votes'] = 'Aimer';
 $string['voteshelpicon'] = 'Aimer';

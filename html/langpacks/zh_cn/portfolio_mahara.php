@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'zh_cn', version '4.1'.
+ * Strings for component 'portfolio_mahara', language 'zh_cn', version '4.4'.
  *
  * @package     portfolio_mahara
  * @category    string
@@ -29,7 +29,7 @@ $string['enableleap2a'] = '启用 Leap2A 公文包支持（需要 Mahara 1.3 或
 $string['err_invalidhost'] = '无效的 MNet 主机';
 $string['err_invalidhost_help'] = '此插件的配置错误地指向了一个无效（或已删除）的 MNet 主机。此插件依赖发布了 SSO IDP、订阅了 SSO_SP 和 订阅<b>且</b>发布了云存储的 Moodle 网络伙伴。';
 $string['err_networkingoff'] = 'MNet 关闭';
-$string['err_networkingoff_help'] = 'MNet 被完全关闭。请在配置此插件前启用它。在修正之前，此插件的所有实例都会隐藏。您需要手工设置它们为可见。此前它们都不能使用';
+$string['err_networkingoff_help'] = 'MNet 身份验证当前已禁用。请在尝试配置此插件之前启用它。在启用 MNet 之前，此插件的任何实例都已隐藏。然后，需要再次手动将它们设置为可见。';
 $string['err_nomnetauth'] = 'MNet 认证插件已禁用';
 $string['err_nomnetauth_help'] = 'MNet 认证插件已禁用，但此服务需要它';
 $string['err_nomnethosts'] = '依赖 MNet';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'fr', version '4.1'.
+ * Strings for component 'enrol_meta', language 'fr', version '4.4'.
  *
  * @package     enrol_meta
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Ajouter au groupe';
-$string['coursesort'] = 'Trier la liste des cours';
-$string['coursesort_help'] = 'Ce réglage détermine si la liste des cours est triée suivant l’ordre de tri par défaut (défini dans la Gestion des cours et catégories de l’administration) ou alphabétiquement.';
+$string['coursesort'] = 'Ordre de tri la liste des cours sources';
+$string['coursesort_help'] = 'Ce réglage détermine comment les cours sources doivent être triés, lorsqu’un cours source est lié à un cours cible.';
 $string['creategroup'] = 'Créer un groupe';
 $string['defaultgroupnametext'] = 'Cours {$a->name} {$a->increment}';
 $string['enrolmetasynctask'] = 'Synchronisation des méta-inscriptions';
@@ -36,13 +36,15 @@ $string['meta:config'] = 'Configurer les instances de méta-inscription';
 $string['meta:selectaslinked'] = 'Sélectionner le cours comme méta-cours';
 $string['meta:unenrol'] = 'Désinscrire les utilisateurs suspendus';
 $string['nosyncroleids'] = 'Rôles non-synchronisés';
-$string['nosyncroleids_desc'] = 'Par défaut, toutes les attributions de rôles dans le cours sont synchronisées des cours parents vers les cours enfants. Les rôles sélectionnés ici ne seront pas inclus dans le processus de synchronisation. Les rôles disponibles pour la synchronisation seront mis à jour lors de la prochaine exécution du cron.';
+$string['nosyncroleids_desc'] = 'Sélectionner tous les rôles qui ne doivent pas être synchronisés entre le cours source et le cours cible.';
 $string['pluginname'] = 'Lien méta-cours';
-$string['pluginname_desc'] = 'Le plugin d’inscription lien méta-cours synchronise les inscriptions et rôle entre différents cours.';
-$string['privacy:metadata:core_group'] = 'Le plugin d’inscription Lien méta-cours peut créer un nouveau groupe ou utiliser un groupe existant pour y ajouter tous les participants du cours lié.';
+$string['pluginname_desc'] = 'Le plugin d’inscription lien méta-cours synchronise les inscriptions et rôles d’un cours source à un cours cible.';
+$string['privacy:metadata:core_group'] = 'Le plugin d’inscription lien méta-cours peut créer un nouveau groupe ou utiliser un groupe existant pour y ajouter tous les participants du cours source.';
+$string['samemetacourse'] = 'Il n’est pas possible d’ajouter un lien méta-cours vers le même cours.';
 $string['syncall'] = 'Synchroniser tous les utilisateurs inscrits';
-$string['syncall_desc'] = 'Si ce réglage est activé, tous les utilisateurs sont synchronisés même s’ils n’ont aucun rôle dans le cours parent. Dans le cas contraire, seuls les utilisateurs avec au moins un rôle synchronisé sont inscrits dans le cours enfant.';
+$string['syncall_desc'] = 'Si ce réglage est activé, tous les utilisateurs inscrits sont synchronisés depuis le cours source, même s’ils n’y ont aucun rôle. Dans le cas contraire, seuls les utilisateurs avec au moins un rôle sont inscrits dans le cours cible.';
+$string['unknownmetacourse'] = 'Nom abrégé du méta-cours inconnu';
 $string['wscannotcreategroup'] = 'Pas les permissions requises pour créer un groupe dans le cours lié, d’ID {$a}';
-$string['wsinvalidcourse'] = 'Le cours d’ID {$a} n’existe pas ou il n’y a pas les permissions requises pour le lier avec la méta-inscription.';
-$string['wsinvalidmetacourse'] = 'Le méta-cours d’ID {$a} n’existe pas ou il n’y a pas les permissions requises pour ajouter une instance d’inscription.';
+$string['wsinvalidcourse'] = 'Le cours d’ID {$a} n’existe pas ou vous n’avez pas les permissions requises pour ajouter un lien méta-cours.';
+$string['wsinvalidmetacourse'] = 'Le méta-cours d’ID {$a} n’existe pas ou ou vous n’avez pas les permissions requises pour ajouter une instance d’inscription.';
 $string['wsnoinstancesspecified'] = 'Aucune instance spécifiée';

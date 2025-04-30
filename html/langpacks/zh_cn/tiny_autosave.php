@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'zh_cn', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'zh_cn', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = '自动保存';
+$string['pluginname'] = '自动保存';
 $string['privacy:metadata:database:tiny_autosave'] = '存储 TinyMCE 编辑器的自动保存会话数据的表';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = '自动保存会话的文本内容';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = '上次修改自动保存会话的时间';

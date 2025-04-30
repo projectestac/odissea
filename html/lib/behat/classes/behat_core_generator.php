@@ -799,7 +799,9 @@ class behat_core_generator extends behat_generator_base {
         }
 
         $data['contextid'] = $context->id;
-        $this->datagenerator->get_plugin_generator('core_question')->create_question_category($data);
+        /** @var core_question_generator $qgenerator */
+        $qgenerator = $this->datagenerator->get_plugin_generator('core_question');
+        $qgenerator->create_question_category($data);
     }
 
     /**
@@ -846,7 +848,9 @@ class behat_core_generator extends behat_generator_base {
             $missingtypespecialcase = true;
         }
 
-        $questiondata = $this->datagenerator->get_plugin_generator('core_question')
+        /** @var core_question_generator $qgenerator */
+        $qgenerator = $this->datagenerator->get_plugin_generator('core_question');
+        $questiondata = $qgenerator
             ->create_question($data['qtype'], $which, $data);
 
         if ($missingtypespecialcase) {
@@ -995,7 +999,7 @@ class behat_core_generator extends behat_generator_base {
     /**
      * Creates an analytics model
      *
-     * @param target $data
+     * @param array $data target
      * @return void
      */
     protected function process_analytics_model($data) {
@@ -1048,15 +1052,15 @@ class behat_core_generator extends behat_generator_base {
             if (!empty($data['filepath'])) {
                 $filename = basename($data['filepath']);
                 $fs = get_file_storage();
-                $filerecord = array(
+                $filerecord = [
                     'component' => 'contentbank',
                     'filearea' => 'public',
                     'contextid' => $context->id,
                     'userid' => $data['userid'],
                     'itemid' => $content->get_id(),
                     'filename' => $filename,
-                    'filepath' => '/'
-                );
+                    'filepath' => '/',
+                ];
                 $fs->create_file_from_pathname($filerecord, $CFG->dirroot . $data['filepath']);
             }
         } else {

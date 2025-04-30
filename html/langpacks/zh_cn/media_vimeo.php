@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_vimeo', language 'zh_cn', version '4.1'.
+ * Strings for component 'media_vimeo', language 'zh_cn', version '4.4'.
  *
  * @package     media_vimeo
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['donottrack'] = '启用不跟踪Vimeo链接';
+$string['donottrack_desc'] = '如果启用，玩家将不会跟踪任何会话数据，包括所有cookie和分析。';
 $string['pluginname'] = 'Vimeo';
-$string['pluginname_help'] = 'Vimeo视频分享网站。';
+$string['pluginname_help'] = '视频分享网站vimeo.com。';
 $string['privacy:metadata'] = 'Vimeo媒体插件不存储任何个人数据。';

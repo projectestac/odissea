@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'sv', version '4.1'.
+ * Strings for component 'assignment_upload', language 'sv', version '4.4'.
  *
  * @package     assignment_upload
  * @category    string

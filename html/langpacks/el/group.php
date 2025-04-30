@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'el', version '4.1'.
+ * Strings for component 'group', language 'el', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -137,7 +137,6 @@ $string['groupspreview'] = 'Προεπισκόπηση ομάδων';
 $string['groupsseparate'] = 'Διαχωρισμός ομάδων';
 $string['groupsvisible'] = 'Ορατές ομάδες';
 $string['grouptemplate'] = 'Ομάδα @';
-$string['hidepicture'] = 'Απόκρυψη εικόνας';
 $string['importgroups'] = 'Εισαγωγή ομάδων';
 $string['importgroups_help'] = 'Οι ομάδες μπορούν να εισαχθούν μέσω αρχείου κειμένου. Ο μορφότυπος του αρχείου θα πρέπει να είναι ως εξής:
 

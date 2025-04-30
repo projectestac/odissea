@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'es', version '4.1'.
+ * Strings for component 'adaptivequiz', language 'es', version '4.4'.
  *
  * @package     adaptivequiz
  * @category    string
@@ -57,7 +57,7 @@ $string['attemptquestion_abilitylogits'] = 'Capacidad medida (logits)';
 $string['attemptquestion_difficulty'] = 'Dificultad de la pregunta (logits)';
 $string['attemptquestion_diffsum'] = 'Suma de dificultad';
 $string['attemptquestion_level'] = 'Nivel de pregunta';
-$string['attemptquestion_rightwrong'] = 'Correcto/Incorrecto';
+$string['attemptquestion_rightwrong'] = 'Respuesta Correcta/Incorrecta';
 $string['attemptquestion_stderr'] = 'Error estándar (&plusmn;&nbsp;logits)';
 $string['attemptquestionsprogress'] = 'Progreso de preguntas: {$a}';
 $string['attemptquestionsprogress_help'] = 'El número máximo de preguntas mostradas aquí no necesariamente es el número de preguntas que usted tiene que tomar durante el examen. Esto es el MÁXIMO POSIBLE número de preguntas que usted podría tomar, pero el examen podría terminar más pronto si la medida de habilidad está suficientemente definida.';
@@ -85,7 +85,7 @@ $string['confirmdeleteattempt'] = 'Confirmando la eliminación del intento de {$
 $string['deleteattemp'] = 'Eliminar intento';
 $string['discrimination_display_name'] = 'Discriminación';
 $string['downloadcsv'] = 'Descargar CSV';
-$string['enterrequiredpassword'] = 'Ingrese la contraseña requerida';
+$string['enterrequiredpassword'] = 'Introduzca la contraseña requerida';
 $string['errorattemptstate'] = 'Hubo un error al determinar el estado del intento';
 $string['errorclosingattempt_alreadycomplete'] = 'El intento ya ha sido finalizado; no puede ser cerrado manualmente.';
 $string['errorfetchingquest'] = 'No se pudo obtener una pregunta para el nivel {$a->level}';
@@ -93,10 +93,10 @@ $string['errorlastattpquest'] = 'Error en la comprobación del valor de la respu
 $string['errornumattpzero'] = 'Error con el número de preguntas intentadas ya que es igual a cero, pero el usuario envió una respuesta a la pregunta anterior';
 $string['errorsumrightwrong'] = 'La suma de las respuestas correctas e incorrectas no equivale al número total de preguntas intentadas';
 $string['eventattemptcompleted'] = 'Intento completado';
-$string['formelementdecimal'] = 'Ingrese un número decimal. Máximo 10 dígitos de longitud total y con hasta 5 dígitos a la derecha del punto decimal.';
-$string['formelementempty'] = 'Ingrese un entero positivo entre 1 y 999';
-$string['formelementnegative'] = 'Ingrese un número positivo entre 1 y 999';
-$string['formelementnumeric'] = 'Ingrese un valor numérico entre 1 y 999';
+$string['formelementdecimal'] = 'Introduzca un número decimal. Máximo 10 dígitos de longitud total y con hasta 5 dígitos a la derecha del punto decimal.';
+$string['formelementempty'] = 'Introduzca un entero positivo entre 1 y 999';
+$string['formelementnegative'] = 'Introduzca un número positivo entre 1 y 999';
+$string['formelementnumeric'] = 'Introduzca un valor numérico entre 1 y 999';
 $string['formlowlevelgreaterthan'] = 'El nivel más bajo debe ser inferior al nivel más alto';
 $string['formminquestgreaterthan'] = 'El número mínimo de preguntas debe ser inferior al número máximo de preguntas';
 $string['formquestionpool'] = 'Seleccione, al menos, una categoría de pregunta';

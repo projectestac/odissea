@@ -101,7 +101,15 @@ if ($hassiteconfig
 
     $ADMIN->add('accounts', new admin_externalpage('profilefields', new lang_string('profilefields','admin'), "$CFG->wwwroot/user/profile/index.php", 'moodle/site:config'));
     $ADMIN->add('accounts', new admin_externalpage('cohorts', new lang_string('cohorts', 'cohort'), $CFG->wwwroot . '/cohort/index.php', array('moodle/cohort:manage', 'moodle/cohort:view')));
-
+    $ADMIN->add(
+        'accounts',
+        new admin_externalpage(
+            'cohort_customfield',
+            new lang_string('cohort_customfield', 'admin'),
+            $CFG->wwwroot . '/cohort/customfield.php',
+            ['moodle/cohort:configurecustomfields']
+        )
+    );
 
     // Stuff under the "roles" subcategory.
 
@@ -260,17 +268,20 @@ if ($hassiteconfig
 
     $ADMIN->add('roles', $temp);
 
-    // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
-    // 2012.05.23 @sarjona
-    if (is_siteadmin() && get_protected_agora() ) {
-    // ************ ORIGINAL
-    /*
-    if (is_siteadmin()) {
-     */
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    if (get_protected_agora()) {
     // ************ FI
 
+    if (is_siteadmin()) {
         $ADMIN->add('roles', new admin_externalpage('admins', new lang_string('siteadministrators', 'role'), "$CFG->wwwroot/$CFG->admin/roles/admins.php"));
     }
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    }
+    // ************ FI
+
     $ADMIN->add('roles', new admin_externalpage('defineroles', new lang_string('defineroles', 'role'), "$CFG->wwwroot/$CFG->admin/roles/manage.php", 'moodle/role:manage'));
     $ADMIN->add('roles', new admin_externalpage('assignroles', new lang_string('assignglobalroles', 'role'), "$CFG->wwwroot/$CFG->admin/roles/assign.php?contextid=".$systemcontext->id, 'moodle/role:assign'));
     $ADMIN->add('roles', new admin_externalpage('checkpermissions', new lang_string('checkglobalpermissions', 'role'), "$CFG->wwwroot/$CFG->admin/roles/check.php?contextid=".$systemcontext->id, array('moodle/role:assign', 'moodle/role:safeoverride', 'moodle/role:override', 'moodle/role:manage')));

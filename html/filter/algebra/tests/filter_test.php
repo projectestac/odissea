@@ -44,7 +44,7 @@ require_once($CFG->dirroot . '/filter/algebra/filter.php');
  * @copyright  2012 Tim Hunt
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class filter_test extends \basic_testcase {
+final class filter_test extends \basic_testcase {
 
     protected $filter;
 
@@ -53,23 +53,23 @@ class filter_test extends \basic_testcase {
         $this->filter = new filter_algebra(\context_system::instance(), array());
     }
 
-    function test_algebra_filter_no_algebra() {
+    function test_algebra_filter_no_algebra(): void {
         $this->assertEquals('<p>Look no algebra!</p>',
                 $this->filter->filter('<p>Look no algebra!</p>'));
     }
 
 
-    function test_algebra_filter_pluginfile() {
+    function test_algebra_filter_pluginfile(): void {
         $this->assertEquals('<img src="@@PLUGINFILE@@/photo.jpg">',
                 $this->filter->filter('<img src="@@PLUGINFILE@@/photo.jpg">'));
     }
 
-    function test_algebra_filter_draftfile() {
+    function test_algebra_filter_draftfile(): void {
         $this->assertEquals('<img src="@@DRAFTFILE@@/photo.jpg">',
                 $this->filter->filter('<img src="@@DRAFTFILE@@/photo.jpg">'));
     }
 
-    function test_algebra_filter_unified_diff() {
+    function test_algebra_filter_unified_diff(): void {
         $diff = '
 diff -u -r1.1 Worksheet.php
 --- Worksheet.php   26 Sep 2003 04:18:02 -0000  1.1

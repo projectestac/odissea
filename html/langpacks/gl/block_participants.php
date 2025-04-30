@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_participants', language 'gl', version '4.1'.
+ * Strings for component 'block_participants', language 'gl', version '4.4'.
  *
  * @package     block_participants
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Engadir un novo bloque de persoas';
 $string['pluginname'] = 'Persoas';
-$string['privacy:metadata'] = 'O bloque de persoas só amosa datos almacenados noutros lugares.';
+$string['privacy:metadata'] = 'O bloque Persoas só amosa datos almacenados noutras localizacións.';

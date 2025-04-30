@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'ar', version '4.1'.
+ * Strings for component 'tool_dbtransfer', language 'ar', version '4.4'.
  *
  * @package     tool_dbtransfer
  * @category    string
@@ -31,7 +31,7 @@ $string['climigrationnotice'] = 'ترحيل قاعدة البيانات قيد �
 $string['convertinglogdisplay'] = 'تحويل سجل عرض الإجراءات';
 $string['dbexport'] = 'تصدير قاعدة البيانات';
 $string['dbtransfer'] = 'ترحيل قاعدة البيانات';
-$string['enablemaintenance'] = 'مكّن وضع الصيانة';
+$string['enablemaintenance'] = 'تمكين وضع الصيانة';
 $string['enablemaintenance_help'] = 'هذا الخيار يتيح وضع الصيانة أثناء وبعد ترحيل قاعدة البيانات، وهو يمنع وصول أي من المستخدمين حتى يتم الانتهاء من الترحيل. يرجى ملاحظة أن على المشرف حذف الملف $CFG->dataroot/climaintenance.html يدويًا
 بعد تحديث إعدادات ملف config.php لاستئناف التشغيل العادي.';
 $string['exportdata'] = 'تصدير البيانات';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attcontrol', language 'es', version '4.1'.
+ * Strings for component 'attcontrol', language 'es', version '4.4'.
  *
  * @package     attcontrol
  * @category    string
@@ -53,7 +53,7 @@ $string['attcontrolforthecourse'] = 'Control de Asistencia para el curso';
 $string['attcontrolnotstarted'] = 'Asistencia no ha iniciado todavía para este curso';
 $string['attcontrolpercent'] = 'Porcentaje Attcontrol';
 $string['attcontrolreport'] = 'Reporte attcontrol';
-$string['attcontrolsuccess'] = 'Se ha tomado Asistencia exitosamente';
+$string['attcontrolsuccess'] = 'Se ha tomado Asitencia exitosamente';
 $string['attcontrolupdated'] = 'Se ha actualizado Asistencia exitosamente';
 $string['attendancecontrol'] = 'Control de Asistencia';
 $string['attendanceitem'] = 'Ítem de Asistencia';

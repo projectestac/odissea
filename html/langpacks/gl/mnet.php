@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'gl', version '4.1'.
+ * Strings for component 'mnet', language 'gl', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -42,7 +42,7 @@ $string['applicationtype'] = 'Tipo de aplicación';
 $string['authfail_nosessionexists'] = 'Erro na autorización: A sesión mnet non existe.';
 $string['authfail_sessiontimedout'] = 'Erro na autorización: A sesión mnet acabou.';
 $string['authfail_usermismatch'] = 'Erro na autorización: O usuario non coincide.';
-$string['authmnetdisabled'] = 'O <em>engadido de autenticación</em> da rede de Moodle está <strong>desactivado</strong>.';
+$string['authmnetdisabled'] = 'O <em>complemento de autenticación</em> da rede de Moodle está <strong>desactivado</strong>.';
 $string['badcert'] = 'Este certificado non é válido.';
 $string['certdetails'] = 'Detalles do certificado';
 $string['configmnet'] = 'MNet permite a comunicación deste servidor con outros servidores ou servizos.';
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Agochar usuarios remotos';
 $string['host'] = 'servidor';
 $string['hostcoursenotfound'] = 'Servidor ou curso non encontrado';
 $string['hostdeleted'] = 'Servidor eliminado';
-$string['hostexists'] = 'Xa hai un rexistro para ese servidor e inclusión de Moodle co ID {$a}.<br />Prema en <em>Continuar</em> para editar ese rexistro.';
+$string['hostexists'] = 'Xa existe un rexistro para un servidor con ese nome de máquina. (Se cadra foi eliminado.) <a href="{$a}">Editar o rexistro</a>';
 $string['hostlist'] = 'Lista de servidores en rede';
 $string['hostname'] = 'Nome do servidor';
 $string['hostnamehelp'] = 'O nome do dominio plenamente cualificado do servidor remoto, como por exemplo: www.example.com';
@@ -181,7 +181,7 @@ $string['permittedtransports'] = 'Transportes permitidos';
 $string['phperror'] = 'Un erro interno de PHP impediu efectuar o seu pedido.';
 $string['position'] = 'Posición';
 $string['postrequired'] = 'A función eliminada require un pedido POST.';
-$string['privacy:metadata'] = 'O engadido MNet non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento MNet non almacena ningún dato persoal.';
 $string['profileexportfields'] = 'Campos para enviar';
 $string['profilefielddesc'] = 'Aquí pode configurar a lista de campos del perfil que se envían e reciben de MNet cando se crean ou actualizan as contas de usuario. Tamén pode anulalo para cada elemento MNet individual. Teña en conta que os seguintes campos envíanse sempre e non son opcionais: {$a}';
 $string['profilefields'] = 'Campos de perfil';
@@ -229,7 +229,7 @@ $string['sslverification_help'] = 'Esta opción permítelle configurar o nivel d
 * Verificar o servidor e o par (recomendado): valida o dominio e o emisor do certificado SSL.';
 $string['ssoaccesscontrol'] = 'Control de acceso SSO';
 $string['ssoacldescr'] = 'Use esta páxina para garantir/denegar o acceso a determinados usuarios de servidores remotos de rede Moodle. Isto é funcional cando se ofrecen servizos SSO a usuarios remotos. Para controlar a capacidade dos seus usuarios <em>locais</em> para se moveren a outros servidores de rede Moodle, use o sistema de papeis para lles garantir a funcionalidade <em>mnetcanroam</em>.';
-$string['ssoaclneeds'] = 'Para que esta opción funcione, a rede de Moodle ten que estar activa, así como o seu engadido de autenticación, cos usuarios engadidos automaticamente tamén activos.';
+$string['ssoaclneeds'] = 'Para que esta opción funcione, a rede de Moodle ten que estar activa, así como o seu complemento de autenticación activado.';
 $string['strict'] = 'Estrito';
 $string['subscribe'] = 'Subscribirse';
 $string['system'] = 'Sistema';

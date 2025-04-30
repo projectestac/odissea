@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'pt', version '4.1'.
+ * Strings for component 'scorm', language 'pt', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -73,6 +73,7 @@ $string['browse'] = 'Pré-visualização';
 $string['browsed'] = 'Consultado';
 $string['browsemode'] = 'Modo de pré-visualização';
 $string['browserepository'] = 'Pesquisar repositório';
+$string['cachedef_elements'] = 'Cache do elemento';
 $string['calculatedweight'] = 'Peso calculado';
 $string['calendarend'] = 'Fecha \'{$a}\'';
 $string['calendarstart'] = 'Inicia \'{$a}\'';
@@ -94,7 +95,7 @@ $string['completionscorerequired_help'] = 'Ativar esta configuração vai exigir
 $string['completionscorerequireddesc'] = 'É necessária uma nota mínima de {$a} para concluir';
 $string['completionstatus_completed'] = 'Concluído';
 $string['completionstatus_passed'] = 'Aprovado';
-$string['completionstatusallscos'] = 'Exigir que todos os scos devolvam o estado de conclusão exigido';
+$string['completionstatusallscos'] = 'Todos os SCOs têm de devolver o estado de conclusão';
 $string['completionstatusallscos_help'] = 'Alguns pacotes SCORM contêm vários componentes ou "scos" - quando esta opção  está ativa, todos os scos dentro do pacote devem devolver o lesson_status relevante desta atividade para poder ser sinalizada como concluída.';
 $string['completionstatusrequired'] = 'Exigir estado';
 $string['completionstatusrequired_help'] = 'Verificar um ou mais estados exigirá que o utilizador fique com pelo menos um estado, para se marcar como concluída esta atividade SCORM, bem como quaisquer outros requisitos de conclusão da atividade.';
@@ -102,7 +103,7 @@ $string['completionstatusrequireddesc'] = 'O aluno deve atingir pelo menos um do
 $string['confirmloosetracks'] = 'AVISO: O pacote de conteúdos parece ter sido alterado. Caso a estrutura do pacote tenha sido alterada, alguns dados de utilizador poderão perder-se durante a atualização.';
 $string['contents'] = 'Conteúdos';
 $string['coursepacket'] = 'Pacote de Conteúdos';
-$string['coursestruct'] = 'Índice do conteúdo';
+$string['coursestruct'] = 'Estrutura do conteúdo';
 $string['crontask'] = 'Processamento em segundo plano de SCORM';
 $string['currentwindow'] = 'Janela atual';
 $string['datadir'] = 'Erro no sistema de ficheiros: não é possível criar a pasta para os dados';
@@ -117,12 +118,10 @@ $string['details'] = 'Detalhe do percurso';
 $string['directories'] = 'Mostrar hiperligações para pastas';
 $string['disabled'] = 'Desativado';
 $string['display'] = 'Exibição do pacote de conteúdos';
-$string['displayactivityname'] = 'Exibir nome da atividade';
-$string['displayactivityname_help'] = 'Esta opção define se o nome da atividade é, ou não, exibido acima da janela de reprodução do SCORM.';
 $string['displayattemptstatus'] = 'Exibir estado das tentativas';
 $string['displayattemptstatus_help'] = 'Esta opção define se é mostrado, ou não, um resumo das tentativas do utilizador no bloco \'Minhas disciplinas\' no Painel do utilizador e/ou na página de entrada do SCORM';
 $string['displayattemptstatusdesc'] = 'Se é mostrado, ou não, um resumo das tentativas do utilizador no bloco Minhas disciplinas no Painel do utilizador e/ou na página de entrada do SCORM';
-$string['displaycoursestructure'] = 'Exibir índice na página de entrada';
+$string['displaycoursestructure'] = 'Exibir a estrutura do conteúdo na página de entrada';
 $string['displaycoursestructure_help'] = 'Se ativar esta opção, o índice é exibido na página de entrada do SCORM';
 $string['displaycoursestructuredesc'] = 'Se ativar esta opção, o índice é exibido na página de entrada do SCORM.';
 $string['displaydesc'] = 'Esta opção define se o Pacote SCORM é exibido numa nova janela ou embebido no Moodle.';
@@ -199,7 +198,7 @@ $string['hidebrowse_help'] = 'O modo de pré-visualização permite ao aluno ver
 $string['hidebrowsedesc'] = 'O modo de pré-visualização permite que o aluno navegue na atividade antes de iniciar uma tentativa de resolução.';
 $string['hideexit'] = 'Ocultar hiperligação de saída';
 $string['hidereview'] = 'Ocultar botão de revisão';
-$string['hidetoc'] = 'Exibir o índice na página de reprodução do SCORM';
+$string['hidetoc'] = 'Exibir a estrutura do conteúdo na página de reprodução do SCORM';
 $string['hidetoc_help'] = 'Como o índice é exibido na janela de reprodução do SCORM';
 $string['hidetocdesc'] = 'Esta configuração determina a forma como o índice é exibido na página de reprodução do SCORM.';
 $string['highestattempt'] = 'Tentativa com melhor nota';
@@ -215,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensã
 $string['indicator:socialbreadthdef'] = 'Socialização do SCORM';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades SCORM durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Informação';
 $string['interactions'] = 'Interações';
 $string['invalidactivity'] = 'A atividade SCORM está incorreta';
 $string['invalidhacpsession'] = 'Sessão de HACP inválida';
@@ -224,6 +222,7 @@ $string['invalidmanifestresource'] = 'AVISO: Os seguintes recursos foram referen
 $string['invalidstatus'] = 'Estado inválido';
 $string['invalidurl'] = 'O URL é inválido';
 $string['invalidurlhttpcheck'] = 'Foi especificado um URL inválido. Mensagem de erro: <pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'A próxima etapa da atualização pode demorar algum tempo a ser concluída. O seu site tem {$a} registos SCORM que têm de ser migrados para a nova estrutura da tabela. Seja paciente, uma vez que não pode ser exibida uma barra de progresso.';
 $string['last'] = 'Último acesso';
 $string['lastaccess'] = 'Último acesso';
 $string['lastattempt'] = 'Última tentativa concluída';
@@ -241,6 +240,7 @@ $string['maximumattemptsdesc'] = 'Define o valor predefinido para a configuraç�
 $string['maximumgradedesc'] = 'Define o valor predefinido da configuração \'Nota máxima\'';
 $string['menubar'] = 'Mostrar barra de menu';
 $string['min'] = 'Nota mínima';
+$string['minimumscoregreater'] = 'A nota mínima tem de ser maior que 0.';
 $string['missing_attribute'] = 'Falta o atributo {$a->attr} na tag {$a->tag}';
 $string['missing_tag'] = 'Falta a tag {$a->tag}';
 $string['missingparam'] = 'Um parâmetro requerido está em falta ou errado';
@@ -334,7 +334,7 @@ $string['privacy:metadata:attempt'] = 'O número da tentativa';
 $string['privacy:metadata:scoes_track:element'] = 'O nome do elemento a ser localizado';
 $string['privacy:metadata:scoes_track:value'] = 'O valor do elemento atribuído';
 $string['privacy:metadata:scorm_aicc_session'] = 'A informação de sessão do HACP AICC';
-$string['privacy:metadata:scorm_scoes_track'] = 'Os dados localizados dos SCOes que pertencem à atividade';
+$string['privacy:metadata:scorm_attempt'] = 'As tentativas SCORM feitas por um utilizador';
 $string['privacy:metadata:timemodified'] = 'A hora de quando o elemento localizado foi modificado pela última vez';
 $string['privacy:metadata:userid'] = 'O ID do utilizador que acedeu à atividade SCORM';
 $string['protectpackagedownloads'] = 'Impedir que os pacotes SCORM sejam descarregados';

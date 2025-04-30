@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'gl', version '4.1'.
+ * Strings for component 'report_eventlist', language 'gl', version '4.4'.
  *
  * @package     report_eventlist
  * @category    string

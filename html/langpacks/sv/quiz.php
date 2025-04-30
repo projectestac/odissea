@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'sv', version '4.1'.
+ * Strings for component 'quiz', language 'sv', version '4.4'.
  *
  * @package     quiz
  * @category    string
@@ -128,7 +128,6 @@ $string['back'] = 'Tillbaka till förhandsgranskning av fråga';
 $string['backtocourse'] = 'Tillbaka till kursen';
 $string['backtoquestionlist'] = 'Tillbaka till frågelistan';
 $string['backtoquiz'] = 'Tillbaka till redigering av test';
-$string['basicideasofquiz'] = 'De grundläggande idéerna bakom utveckling av kunskapstester';
 $string['bestgrade'] = 'Bästa betyget';
 $string['bothattempts'] = 'Visa både studenter som har gjort försök och som inte har gjort försök';
 $string['browsersecurity'] = 'Webbläsarsäkerhet';
@@ -186,17 +185,12 @@ $string['comments'] = 'Kommenarer';
 $string['completedon'] = 'Slutfördes';
 $string['completionattemptsexhausted'] = 'Eller alla tillgängliga försök avslutade';
 $string['completionattemptsexhausted_help'] = 'Markera kunskapstestet som slutfört när studenten har uppnått maximala antalet försök.';
-$string['completionattemptsexhausteddesc'] = 'Slutför om all tillgängliga försök förbrukats';
 $string['completiondetail:minattempts'] = 'Försök: {$a}';
-$string['completiondetail:passgrade'] = 'Uppnå godkänt betyg';
 $string['completiondetail:passorexhaust'] = 'Uppnå godkänt betyg eller slutför alla möjliga försök';
 $string['completionminattempts'] = 'Minsta antal försök:';
 $string['completionminattemptsdesc'] = 'Minsta antal försök som krävs: {$a}';
 $string['completionminattemptserror'] = 'Minsta antal försök måste vara lägre eller lika med antalet försök som tillåts.';
 $string['completionminattemptsgroup'] = 'Kräv försök';
-$string['completionpass'] = 'Kräver gräns för godkänd';
-$string['completionpass_help'] = 'Om aktiverad, anses denna aktivitet som slutförd om studenten uppnår gräns för godkänd (gräns för godkänd måste vara definierad i betygsboken)';
-$string['completionpassdesc'] = 'Student måste uppnå betygsgränsen för godkänt för att slutföra denna aktivitet';
 $string['completionpassorattemptsexhausteddesc'] = 'Studenten måste uppnå godkänt betyg, eller uttömma alla tillgängliga försök att slutföra denna aktivitet';
 $string['configadaptive'] = 'Om du väljer "Ja" för det här alternativet då kommer studenten kunna avge flera olika svar på en fråga under samma försök i kunskapstestet.';
 $string['configattemptsallowed'] = 'Begränsning av det antal försök som studenter tillåts göra på kunskapstestet.';
@@ -436,6 +430,7 @@ $string['gradeaverage'] = 'Medelbetyg';
 $string['gradeboundary'] = 'Betygsgräns';
 $string['gradeessays'] = 'Betygsätt uppsatser';
 $string['gradehighest'] = 'Högsta betyg';
+$string['gradeitems'] = 'Betygsobjekt';
 $string['grademethod'] = 'Betygsättningsmetod';
 $string['grademethod_help'] = 'När flera försök tillåts är följande metoder tillgängliga för att beräkna det slutliga betyget för kunskapstestet:
 
@@ -446,7 +441,6 @@ $string['grademethod_help'] = 'När flera försök tillåts är följande metode
 $string['gradesdeleted'] = 'Betyg på kunskapstest har tagits bort';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'Betyg för godkänt kan inte vara noll eftersom det här kunskapstestet har ett slutförandevillkor som kräver ett godkänt betyg. Ange ett värde som inte är noll.';
-$string['gradetopassnotset'] = 'Det här kunskapstestet har ännu inte ett betyg för godkänt inställt. Det kan ställas in i avsnittet Betyg i inställningarna för kunskapstestet.';
 $string['gradetopassoutof'] = 'Betyg för godkänt: {$a->grade} av {$a->maxgrade}';
 $string['gradingdetails'] = 'Poäng för detta försök: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Med tidigare avdrag ger detta <strong>{$a->cur}/{$a->max}</strong>.';
@@ -511,8 +505,6 @@ $string['layoutasshown'] = 'Sidans layout är som visas.';
 $string['layoutasshownwithpages'] = 'Sidans layout är som visas. <small>(Automatiskt en ny sida för var {$a} fråga.)</small>';
 $string['layoutshuffledandpaged'] = 'Frågor blandas slumpmässigt med {$a} frågor per sida.';
 $string['layoutshuffledsinglepage'] = 'Frågor blandas slumpmässigt, alla på en sida.';
-$string['legacyquizaccessrulescron'] = 'Äldre åtkomstregler för cron';
-$string['legacyquizreportscron'] = 'Äldre cron kunskapstest-rapporter';
 $string['link'] = 'Länk';
 $string['listitems'] = 'Listar komponenter i kunskapstestet';
 $string['literal'] = 'Egentlig';

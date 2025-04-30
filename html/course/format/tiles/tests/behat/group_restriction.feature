@@ -43,7 +43,7 @@ Feature: Teacher can restrict course modules to groups
     And I wait "1" seconds
 
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "Page" to section "1"
+    And I add a "page" activity to course "Course 1" section "1"
     And I set the following fields to these values:
       | Name         | Restricted page |
       | Description  | Test   |

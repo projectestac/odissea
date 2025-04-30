@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ko', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'ko', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Dropbox API 키';
 $string['cachelimit'] = '캐시 한계';
 $string['configplugin'] = '드롭박스 설정';
 $string['dropbox'] = '드롭박스';
 $string['dropbox:view'] = '드롭박스 경로 보기';
-$string['instruction'] = '<a href="http://www.dropbox.com/developers/apps">드롭박스 개발자</a>에서 드롭박스의 API 키 및 암호를 얻을 수 있습니다.';
 $string['logoutdesc'] = '(드롭박스 사용을 종료할때 로그아웃)';
 $string['notitle'] = '제목없음';
 $string['pluginname'] = '드롭박스';
 $string['remember'] = '기억해 주세요';
-$string['secret'] = '드롭박스 암호';

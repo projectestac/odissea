@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ar', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'ar', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'إزالة التخطيات';
 $string['save'] = 'احفظ';
 $string['savegrades'] = 'يجري حفظ التقديرات';
 $string['savegradessuccess'] = 'تم وضع التقديرات في {$a} عنصر تقييم';
-$string['searchgrades'] = 'بحث في مفردات التقييم';
 $string['selectagrade'] = 'إختر عنصر التقييم';
 $string['selectgradeitemlink'] = 'إختر عنصر التقييم';
 $string['singleview:view'] = 'معاينة المعاينة المنفردة';
 $string['singleviewdescription'] = 'في المعاينة المنفردة يمكنك تخطي التقديرات المحددة أو استبعادها وإدراج التقديرات بالجملة.';
+$string['singleviewreport_gradeitem'] = 'معاينة منفردة لهذا العنصر';
+$string['singleviewreport_user'] = 'معاينة منفردة لهذا المستخدم';
 $string['summarygrade'] = 'جدول بالمستخدمين مع أعمدة تضم المدى، الدرجة، الإفادة، وفيما إذا تم تجاوز درجة معينة أو استبعادها.';
 $string['summaryuser'] = 'جدول بعناصر التقييم مع أعمدة تضم تصنيف الدرجة، المدى، الدرجة، الإفادة، وفيما إذا تم تجاوز درجة معينة أو استبعادها.';
 $string['unsavedataalert'] = 'إذا كانت لديك تغييرات غير محفوظة في الصفحة، فستفقدها إذا تابعت عملية إدراج التقديرات بالجملة.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'تحذير البيانات غير المحفو
 $string['userselect'] = 'إختر النشاط';
 $string['viewby'] = 'معاينة من قبل';
 $string['viewsinglegradeitem'] = 'إختر عنصر تقييم أعلاه';
-$string['viewsingleuser'] = 'إختر المستخدم أعلاه لمعاينة كل تقديراته';
+$string['viewsingleuser'] = 'إبحث عن المستخدم لمعاينة كل تقديراته';
 $string['viewsingleuserorgradeitem'] = 'معاينة كل تقديرات مستخدم منفرد أو عنصر تقييم.';

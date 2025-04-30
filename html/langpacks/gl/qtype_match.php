@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'gl', version '4.1'.
+ * Strings for component 'qtype_match', language 'gl', version '4.4'.
  *
  * @package     qtype_match
  * @category    string
@@ -49,5 +49,5 @@ $string['privacy:preference:penalty'] = 'A penalización por cada intento incorr
 $string['privacy:preference:shuffleanswers'] = 'Indica se as respostas deben ser baralladas automaticamente.';
 $string['regradeissuenumchoiceschanged'] = 'O número de opcións cambiou.';
 $string['regradeissuenumstemschanged'] = 'O número de subpreguntas cambiou.';
-$string['shuffle'] = 'Barallar preguntas';
+$string['shuffle'] = 'Barallar';
 $string['shuffle_help'] = 'De estar activado, a orde das preguntas barállanse ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade. Nunha pregunta coincidente, só as preguntas se ven afectadas por este parámetro. As opcións de resposta barallaranse sempre.';

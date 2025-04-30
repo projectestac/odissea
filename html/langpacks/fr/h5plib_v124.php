@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'fr', version '4.1'.
+ * Strings for component 'h5plib_v124', language 'fr', version '4.4'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -194,7 +194,7 @@ $string['editor:reloadbuttonlabel'] = 'Recharger';
 $string['editor:removefile'] = 'Supprimer le fichier';
 $string['editor:removeimage'] = 'Supprimer l’image';
 $string['editor:removeitem'] = 'Supprimer l’élément';
-$string['editor:requiredproperty'] = 'La propriété :property est requise et dont contenir une valeur.';
+$string['editor:requiredproperty'] = 'La propriété :property est requise et doit contenir une valeur.';
 $string['editor:resettooriginallabel'] = 'Réinitialiser';
 $string['editor:savelabel'] = 'Enregistrer';
 $string['editor:savemetadata'] = 'Enregistrer les métadonnées';

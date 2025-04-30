@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_marklar', language 'de', version '4.1'.
+ * Strings for component 'editor_marklar', language 'de', version '4.4'.
  *
  * @package     editor_marklar
  * @category    string
@@ -29,10 +29,12 @@ $string['insertimage'] = 'Bild einfügen';
 $string['insertlink'] = 'Link einfügen';
 $string['pluginname'] = 'Marklar';
 $string['preferences'] = 'Einstellungen Marklar-Editor';
+$string['preferencesediting'] = 'Bearbeitungsoptionen';
 $string['preferencesformat'] = 'Zusätzliche Textformate, die auch mit Marklar zu bearbeiten sind';
 $string['preferencesformat_help'] = 'Marklar unterstützt nativ Markdown-formatierte Texte. Es kann auch für die Bearbeitung von Texten in anderen Formaten verwendet werden. Markieren Sie alle zusätzlichen Textformate, die Sie auch mit Marklar bearbeiten möchten.
 
 Marklar wird standardmäßig für Felder im Moodle-Text-Format und unformatierten Text verwendet. Zum Bearbeiten von HTML wird ein anderer Rich-Text-Editor (z.B. Atto oder TinyMCE) verwendet.';
+$string['preferencesmonospace'] = 'Monospace-Schrift verwenden';
 $string['previewloading'] = 'Lade Vorschau…';
 $string['previewoff'] = 'Bearbeiten';
 $string['previewon'] = 'Vorschau';

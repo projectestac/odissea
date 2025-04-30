@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ar', version '4.1'.
+ * Strings for component 'block_timeline', language 'ar', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'الكل';
 $string['ariadayfilter'] = 'ترشيح المخطط الزمني حسب التاريخ';
 $string['ariadayfilteroption'] = 'خيارات ترشيح {$a}';
 $string['ariaeventlistitem'] = 'النشاط {$a->name} في {$a->course} يستحق في {$a->date}';
-$string['ariaeventlistpagelimit'] = 'إظهار {$a} من النشاطات في الصفحة';
-$string['ariaeventlistpaginationnavcourses'] = 'ترقيم صفحات المخطط الزمني للنشاطات في المساق {$a}';
-$string['ariaeventlistpaginationnavdates'] = 'ترقيم صفحات المخطط الزمني للنشاطات';
 $string['ariaviewselector'] = 'فرز عناصر المخطط الزمني';
 $string['ariaviewselectoroption'] = 'خيارات فرز {$a}';
 $string['duedate'] = 'تاريخ الاستحقاق';

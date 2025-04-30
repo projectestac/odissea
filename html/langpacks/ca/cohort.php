@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ca', version '4.1'.
+ * Strings for component 'cohort', language 'ca', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Membre de la cohort';
 $string['cohorts'] = 'Cohorts';
 $string['cohortsin'] = 'Cohorts disponibles: {$a}';
 $string['component'] = 'Font';
+$string['contextcohortnotallowed'] = 'La cohort <b>{$a}</b> no està permesa en aquest context.';
 $string['contextnotfound'] = 'No s\'ha trobat la categoria <b>{$a}</b> o bé no teniu permís per per a crear-hi una cohort. Es farà servir el context per defecte.';
 $string['csvcontainserrors'] = 'S\'han trobat errors al fitxer CSV. Mireu els detalls a sota.';
 $string['csvcontainswarnings'] = 'S\'han trobat alertes al fitxer CSV. Mireu els detalls a sota.';

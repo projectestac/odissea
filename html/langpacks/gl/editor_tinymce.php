@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'gl', version '4.1'.
+ * Strings for component 'editor_tinymce', language 'gl', version '4.4'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -106,8 +106,8 @@ $string['advanced_dlg:about_general'] = 'Sobre';
 $string['advanced_dlg:about_help'] = 'Axuda';
 $string['advanced_dlg:about_license'] = 'Licenza';
 $string['advanced_dlg:about_loaded'] = 'Complementos cargados';
-$string['advanced_dlg:about_plugin'] = 'Engadido';
-$string['advanced_dlg:about_plugins'] = 'Engadidos';
+$string['advanced_dlg:about_plugin'] = 'Complemento';
+$string['advanced_dlg:about_plugins'] = 'Complementos';
 $string['advanced_dlg:about_title'] = 'Sobre TinyMCE';
 $string['advanced_dlg:about_version'] = 'Versión';
 $string['advanced_dlg:accessibility_help'] = 'Axuda para a accesibilidade';
@@ -292,7 +292,7 @@ $string['colors:00CCFF'] = 'Azul celeste';
 $string['colors:00FF00'] = 'Verde lima';
 $string['colors:00FFFF'] = 'Augamariña';
 $string['colors:333300'] = 'Verde oliva escuro';
-$string['colors:333333'] = 'Gris marengo';
+$string['colors:333333'] = 'Gris moi escuro';
 $string['colors:333399'] = 'Índigo';
 $string['colors:3366FF'] = 'Azul real';
 $string['colors:339966'] = 'Verde mar';
@@ -310,7 +310,7 @@ $string['colors:99CCFF'] = 'Azul celeste claro';
 $string['colors:C0C0C0'] = 'Prata';
 $string['colors:CC99FF'] = 'Cirola';
 $string['colors:CCFFCC'] = 'Verde claro';
-$string['colors:CCFFFF'] = 'Cián claro';
+$string['colors:CCFFFF'] = 'Ciano claro';
 $string['colors:FF0000'] = 'Vermello';
 $string['colors:FF00FF'] = 'Maxenta';
 $string['colors:FF6600'] = 'Laranxa';
@@ -473,7 +473,7 @@ $string['insertdatetime:months_short'] = 'xan,feb,mar,abr,mai,xuñ,xul,ago,set,o
 $string['insertdatetime:time_fmt'] = '%H:%M:%S';
 $string['layer:absolute_desc'] = 'Posición absoluta';
 $string['layer:backward_desc'] = 'Mover cara atrás';
-$string['layer:content'] = 'Nova capa...';
+$string['layer:content'] = 'Nova capa…';
 $string['layer:forward_desc'] = 'Avanzar';
 $string['layer:insertlayer_desc'] = 'Inserir nova capa';
 $string['media:delta_height'] = '';
@@ -600,7 +600,7 @@ $string['paste:selectall_desc'] = 'Seleccionar todo';
 $string['paste_dlg:text_linebreaks'] = 'Manter salto de liñas';
 $string['paste_dlg:text_title'] = 'Use CTRL+V no teclado pra pega-lo texto na ventá.';
 $string['paste_dlg:word_title'] = 'Use CTRL+V no teclado pra pega-lo texto na ventá.';
-$string['pluginname'] = 'Editor HTML TinyMCE';
+$string['pluginname'] = 'Editor HTML TinyMCE (legado)';
 $string['preview:preview_desc'] = 'Vista previa';
 $string['print:print_desc'] = 'Imprimir';
 $string['privacy:metadata'] = 'O engadido Editor HTML TinyMCE non almacena ningún dato persoal.';
@@ -643,7 +643,7 @@ $string['spellchecker:menu'] = 'Axustes do corrector ortográfico';
 $string['spellchecker:no_mpell'] = 'Non se atoparon erros.';
 $string['spellchecker:no_sug'] = 'Sen suxestións';
 $string['spellchecker:sug'] = 'Suxestións';
-$string['spellchecker:wait'] = 'Agarde...';
+$string['spellchecker:wait'] = 'Agarde…';
 $string['style:delta_height'] = '';
 $string['style:delta_width'] = '';
 $string['style:desc'] = 'Editar Estilo CSS';
@@ -715,8 +715,8 @@ $string['style_dlg:top'] = 'Arriba';
 $string['style_dlg:visibility'] = 'Visibilidade';
 $string['style_dlg:width'] = 'Largo';
 $string['style_dlg:zindex'] = 'Índize Z';
-$string['subplugintype_tinymce'] = 'Engadido';
-$string['subplugintype_tinymce_plural'] = 'Engadidos';
+$string['subplugintype_tinymce'] = 'Complemento';
+$string['subplugintype_tinymce_plural'] = 'Complementos';
 $string['table:cell'] = 'Cela';
 $string['table:cell_desc'] = 'Propiedades das celas';
 $string['table:cellprops_delta_height'] = '';

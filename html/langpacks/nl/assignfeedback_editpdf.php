@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'nl', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'Ovaal';
 $string['pagenumber'] = 'pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} van {$a->total}';
 $string['partialwarning'] = 'Sommige bestanden in deze inzending zijn alleen toegankelijk door directe download.';
+$string['pathtogserror'] = 'Het geconfigureerde pad naar ghostscript is niet juist: {$a}';
 $string['pathtogspathdesc'] = 'Opgelet: om PDF te kunnen annoteren moet het pad naar ghostscript ingesteld zijn in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annoteer PDF';

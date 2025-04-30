@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'fr', version '4.1'.
+ * Strings for component 'tool_mobile', language 'fr', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'La génération de clefs de connexio
 $string['autologinmintimebetweenreq'] = 'Temps minimal entre les demandes de connexion automatique';
 $string['autologinmintimebetweenreq_desc'] = 'La durée minimale entre les demandes de connexion automatique à partir de l’app mobile. Si les utilisateurs sont trop souvent confrontés à une demande de re-saisir leur accréditation lors de l’affichage de données du site, il faut indiquer une valeur plus basse.';
 $string['autologinnotallowedtoadmins'] = 'La connexion automatique n’est pas permise pour les administrateurs du site.';
+$string['autologout'] = 'Imposer la déconnexion automatique';
+$string['autologout_desc'] = 'Pour des raisons de sécurité, il est possible d’imposer aux utilisateurs la déconnexion automatique lorsqu’ils quittent ou ferment l’app ou que celle-ci se met en arrière-plan. Les utilisateur devront alors de reconnecter lorsqu’il ouvrent de nouveau l’app.';
+$string['autologoutcustom'] = 'Durée personnalisée après que les utilisateurs ont fermé ou quitté l’app';
+$string['autologoutinmediate'] = 'Immédiatement après que les utilisateurs ont fermé ou quitté l’app';
+$string['autologouttime'] = 'Minuteur de déconnexion automatique';
 $string['cachedef_plugininfo'] = 'Ce cache enregistre la liste des plugins avec des fonctionnalités pour mobiles';
 $string['cachedef_subscriptiondata'] = 'Ceci enregistre les informations d’abonnement à l’app Moodle.';
 $string['clickheretolaunchtheapp'] = 'Cliquez ici si l’app ne s’ouvre pas automatiquement.';
@@ -98,7 +103,6 @@ $string['managefiletypes'] = 'Gérer les types de fichier';
 $string['minimumversion'] = 'Si une version de l’app est indiquée (3.8.0 ou ultérieure), les utilisateurs utilisant une version antérieure de l’app seront invités à mettre à jour leur app avant de pouvoir accéder au site.';
 $string['minimumversion_key'] = 'Version minimale de l’app requise';
 $string['mobileapp'] = 'App mobile';
-$string['mobileappconnected'] = 'App mobile connectée';
 $string['mobileappearance'] = 'Présentation mobile';
 $string['mobileappenabled'] = 'L’accès à ce site au moyen de l’app mobile est activé.<br /><a href="{$a}">Télécharger l’app mobile</a>.';
 $string['mobileappsubscription'] = 'Abonnement app Moodle';
@@ -119,7 +123,6 @@ $string['notificationsseemore'] = 'Remarque : les statistiques d’usage de l�
 $string['notificationssentnotifications'] = 'Notifications envoyées';
 $string['oauth2identityproviders'] = 'Fournisseurs d’identité OAuth 2';
 $string['offlineuse'] = 'Utilisation hors ligne';
-$string['openusingembeddedbrowser'] = 'Ouvrir avec le navigateur intégré';
 $string['pluginname'] = 'Outils app Moodle';
 $string['pluginnotenabledorconfigured'] = 'Plugin inactif ou pas configuré.';
 $string['privacy:metadata:core_userkey'] = 'Clefs de l’utilisateur utilisée pour créer la clef de connexion automatique pour l’utilisateur actuel.';
@@ -141,7 +144,7 @@ $string['readingthisemailgettheapp'] = 'Vous lisez ceci dans un courriel ? <a h
 $string['remoteaddons'] = 'Plugins distants';
 $string['responsivemainmenuitems'] = 'Éléments du menu adaptatif';
 $string['scanqrcode'] = 'Lire le code QR';
-$string['selfsignedoruntrustedcertificatewarning'] = 'Il semble que le certificat HTTPS est auto-signé ou non fiable. L’app mobile ne fonctionne qu’avec les sites fiables. Veuillez utiliser un service en ligne de vérification SSL pour diagnostiquer le problème. Si un tel service indique que votre certificat est bon, cet avertissement peut être ignoré.';
+$string['selfsignedoruntrustedcertificatewarning'] = 'Il semble que le certificat HTTPS est auto-signé ou non fiable. L’app mobile ne fonctionne qu’avec les sites fiables. Veuillez utiliser un service en ligne de contrôle SSL pour diagnostiquer le problème. Si un tel service indique que votre certificat est bon, cet avertissement peut être ignoré.';
 $string['setuplink'] = 'Page de téléchargement de l’app';
 $string['setuplink_desc'] = 'URL de la page permettant de télécharger l’app mobile sur l’App Store et Google Play. Le lien vers la page de téléchargement est affiché dans le pied de page et dans le profil des utilisateurs. Laisser vide pour ne pas afficher de lien.';
 $string['smartappbanners'] = 'Bandeaux d’App';

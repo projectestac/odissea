@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ru', version '4.1'.
+ * Strings for component 'block_section_links', language 'ru', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -26,19 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'Шаг 1';
-$string['incby1_help'] = 'Это шаг нумерации при отображении ссылок на разделы, начиная с 1.';
+$string['incby1_help'] = 'Это шаг нумерации при отображении ссылок на секции, начиная с 1.';
 $string['incby2'] = 'Шаг 2';
-$string['incby2_help'] = 'Это шаг нумерации при отображении ссылок на разделы.';
-$string['jumptocurrenttopic'] = 'Перейти к текущей теме';
+$string['incby2_help'] = 'Это шаг нумерации при отображении ссылок на секции.';
+$string['jumptocurrenttopic'] = 'Перейти к выделенному разделу';
 $string['jumptocurrentweek'] = 'Перейти к текущей неделе';
-$string['numsections1'] = 'Число разделов 1';
-$string['numsections1_help'] = 'Если число разделов в курсе достигло этого значения, то будут отображаться ссылки не на все разделы. Нумерация будет идти с шагом «Шаг 1».';
-$string['numsections2'] = 'Число разделов 2';
-$string['numsections2_help'] = 'Если число разделов в курсе достигло этого значения, то будут отображаться ссылки не на все разделы. Нумерация будет идти с шагом «Шаг 2».';
-$string['pluginname'] = 'Ссылки на разделы';
-$string['privacy:metadata'] = 'Блок «Ссылки на разделы» только показывает данные, хранящиеся в других местах.';
-$string['section_links:addinstance'] = 'Добавлять новый блок «Ссылки на разделы»';
-$string['showsectionname'] = 'Показывать название раздела';
-$string['showsectionname_help'] = 'Отображать название раздела в дополнение к номеру раздела';
-$string['topics'] = 'Темы';
-$string['weeks'] = 'Недели';
+$string['numsections1'] = 'Число секций 1';
+$string['numsections1_help'] = 'Если число секций в курсе достигло этого значения, то будут отображаться ссылки не на все секции. Нумерация будет идти с шагом «Шаг 1».';
+$string['numsections2'] = 'Число секций 2';
+$string['numsections2_help'] = 'Если число секций в курсе достигло этого значения, то будут отображаться ссылки не на все секции. Нумерация будет идти с шагом «Шаг 2».';
+$string['pluginname'] = 'Ссылки на секции';
+$string['privacy:metadata'] = 'Блок «Ссылки на секции» только показывает данные, хранящиеся в других местах.';
+$string['section_links:addinstance'] = 'Добавлять новый блок «Ссылки на секции»';
+$string['showsectionname'] = 'Показывать название секции';
+$string['showsectionname_help'] = 'Отображать название секции в дополнение к номеру секции';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', version '4.1'.
+ * Strings for component 'report_security', language 'ja', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -79,10 +79,6 @@ $string['check_guestrole_error'] = 'ゲストロール「 {$a} 」の定義は�
 $string['check_guestrole_name'] = 'ゲストロール';
 $string['check_guestrole_notset'] = 'ゲストロールが設定されていません。';
 $string['check_guestrole_ok'] = 'ゲストロール定義はOKです。';
-$string['check_mediafilterswf_details'] = '<p>自動swf埋め込みは非常に危険です - すべての登録ユーザは他のサーバに対してXSSアタックを開始することができます。この設定は実稼動サーバでは無効にしてください。</p>';
-$string['check_mediafilterswf_error'] = 'Flashメディアフィルタが許可されています - これは大部分のサーバで非常に危険な設定です。';
-$string['check_mediafilterswf_name'] = '.swfメディアフィルタ有効化';
-$string['check_mediafilterswf_ok'] = 'Flashメディアフィルタが有効にされていません。';
 $string['check_nodemodules_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」はNode.jsモジュールおよび一般的にNPMユーティリティによってインストールされる依存関係を含みます。これらのモジュールはgruntフレームワークを使用するようなローカルのMoodleの開発に必要です。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
 $string['check_nodemodules_info'] = 'node_modulesディレクトリはパブリックサイトに存在すべきではありません。';
 $string['check_nodemodules_name'] = 'Node.jsモジュールディレクトリ';

@@ -245,15 +245,6 @@ select {
     }
 }
 
-#page-mod-forum-discuss .discussioncontrols {
-    width: auto;
-    margin: 0;
-
-    .form-inline input {
-        margin-top: -1px;
-    }
-}
-
 $author-image-width: 70px;
 $author-image-margin: 24px;
 $author-image-width-sm: 30px;
@@ -262,7 +253,7 @@ $author-image-margin-sm: 8px;
 /** Gently highlight the selected post by changing it's background to blue and then fading it out. */
 @keyframes background-highlight {
     from {
-        background-color: rgba(0, 123, 255, 0.5);
+        background-color: $modules-highlight-bg;
     }
     to {
         background-color: inherit;
@@ -300,14 +291,14 @@ $author-image-margin-sm: 8px;
     }
 
     .badge-light {
-        background-color: #f6f6f6;
-        color: #5b5b5b;
+        background-color: $modules-badge-bg;
+        color: $modules-badge-color;
     }
 
     /** Style the ratings like a badge. */
     .rating-aggregate-container {
-        background-color: #f6f6f6;
-        color: #5b5b5b;
+        background-color: $modules-rating-aggregate-bg;
+        color: $modules-rating-aggregate-color;
         padding: .25em .5em;
         line-height: 1;
         margin-right: .5rem;
@@ -343,7 +334,7 @@ $author-image-margin-sm: 8px;
     /** Fix muted text contrast ratios for accessibility. */
     .text-muted,
     .dimmed_text {
-        color: #707070 !important; /* stylelint-disable-line declaration-no-important */
+        color: $modules-forum-muted-color !important; /* stylelint-disable-line declaration-no-important */
     }
 
     .author-header {
@@ -369,7 +360,7 @@ $author-image-margin-sm: 8px;
     .forum-post-container {
         .replies-container {
             .forum-post-container {
-                border-top: 1px solid #dee2e6;
+                border-top: 1px solid $modules-forum-post-border-color;
                 padding-top: 1.5rem;
 
                 .replies-container .forum-post-container {
@@ -1020,9 +1011,6 @@ div#dock {
 .path-mod-lesson .answeroption .checkbox label p {
     display: inline;
 }
-.path-mod-lesson .form-inline label.form-check-label {
-    display: inline-block;
-}
 .path-mod-lesson .slideshow {
     overflow: auto;
     padding: 15px;
@@ -1177,6 +1165,10 @@ div#dock {
         width: 35px;
         height: 35px;
     }
+    &.size-50 {
+        width: 50px;
+        height: 50px;
+    }
     &.size-64 {
         width: 64px;
         height: 64px;
@@ -1199,17 +1191,13 @@ img.userpicture {
 }
 
 // Quiz module
-.path-mod-quiz .mod-quiz-edit-content {
-    // Force the quiz edit page to always be large enough to prevent scrolling when accessing the menu.
-    margin-bottom: 10rem;
-}
-
 #page-mod-quiz-mod #id_reviewoptionshdr .col-md-3,
 #page-mod-quiz-mod #id_reviewoptionshdr .col-md-9 {
     width: auto;
     max-width: none;
 }
-#page-mod-quiz-mod #id_reviewoptionshdr .form-group {
+
+#page-mod-quiz-mod #id_reviewoptionshdr .fcontainer > .fitem {
     float: left;
     width: 20rem;
     display: inline-block;
@@ -1219,10 +1207,6 @@ img.userpicture {
 #page-mod-quiz-mod #id_reviewoptionshdr .btn-link {
     line-height: 1.5;
     vertical-align: bottom;
-}
-#page-mod-quiz-mod #id_reviewoptionshdr .form-inline {
-    float: left;
-    clear: left;
 }
 #page-mod-quiz-mod #id_reviewoptionshdr .form-check {
     width: auto;
@@ -1248,7 +1232,8 @@ img.userpicture {
         width: 30px;
         border-radius: 3px;
         border: 0;
-        overflow: visible;
+        overflow: hidden;
+        white-space: nowrap;
         margin: 0 6px 6px 0;
     }
 
@@ -1332,8 +1317,8 @@ img.userpicture {
 }
 
 #page-mod-quiz-edit ul.slots li.section li.activity .instancemaxmarkcontainer {
-    padding: 0;
-    margin: 0 0.4em;
+    padding: 0.5em 0 0.5em 0.1em;
+    margin: 2px;
 }
 
 /* Countdown timer. */

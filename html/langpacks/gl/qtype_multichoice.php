@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'gl', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'gl', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -55,7 +55,7 @@ $string['fractionsnomax'] = 'Unha das respostas ten que ser 100% para <br />pode
 $string['incorrectfeedback'] = 'Para calquera resposta incorrecta';
 $string['notenoughanswers'] = 'Este tipo de pregunta require polo menos {$a} respostas';
 $string['overallcorrectfeedback'] = 'Avaliación de calquera resposta correcta';
-$string['overallfeedback'] = 'Comentarios xerais';
+$string['overallfeedback'] = 'Retroalimentación xeral';
 $string['overallincorrectfeedback'] = 'Avaliación de calquera resposta incorrecta';
 $string['overallpartiallycorrectfeedback'] = 'Avaliación de calquera resposta parcialmente correcta';
 $string['partiallycorrectfeedback'] = 'Para calquera resposta parcialmente correcta';
@@ -64,14 +64,14 @@ $string['pleaseselectatleastoneanswer'] = 'Seleccione polo menos unha resposta.'
 $string['pluginname'] = 'Escolla múltiple';
 $string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o alumno escolle a resposta entre varias respostas posíbeis. Hai dous tipos de preguntas con resposta múltiple: con unha e con máis dunha resposta correcta.';
 $string['pluginname_link'] = 'question/type/multichoice';
-$string['pluginnameadding'] = 'Engadindo unha pregunta de escolla múltiple';
-$string['pluginnameediting'] = 'Editando unha pregunta de escolla múltiple';
+$string['pluginnameadding'] = 'Engadindo unha pregunta de escolla múltipla';
+$string['pluginnameediting'] = 'Editando unha pregunta de escolla múltipla';
 $string['pluginnamesummary'] = 'Permite seleccionar unha ou varias respostas dunha lista predefinida.';
 $string['privacy:metadata'] = 'O complemento de tipo de pregunta de escolla múltiple permite aos autores de preguntas estabelecer opcións predeterminadas como preferencias do usuario.';
-$string['privacy:preference:answernumbering'] = 'Que estilo de numeración se debe utilizar («1, 2, 3, ...», «a, b, c, ...» etc.).';
+$string['privacy:preference:answernumbering'] = 'Que estilo de numeración se debe utilizar («1, 2, 3, …», «a, b, c, …» etc.).';
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';
 $string['privacy:preference:penalty'] = 'A penalización por cada intento incorrecto cando se executan preguntas mediante o comportamento «Interactivo con intentos múltiples» ou «Modo adaptativo».';
-$string['privacy:preference:showstandardinstruction'] = 'Indica se amosa instrucións estándar.';
+$string['privacy:preference:showstandardinstruction'] = 'Indica se se amosan as instrucións estándar.';
 $string['privacy:preference:shuffleanswers'] = 'Indica se as respostas deben ser baralladas automaticamente.';
 $string['privacy:preference:single'] = 'Indica se a resposta é única con botóns de escolla ou múltiple con caixas de verificación.';
 $string['regradeissuenumchoiceschanged'] = 'O número de opcións na pregunta cambiou.';
@@ -79,9 +79,9 @@ $string['selectmulti'] = 'Seleccione unha ou máis:';
 $string['selectone'] = 'Seleccione unha:';
 $string['showstandardinstruction'] = 'Amosar instrucións estándar.';
 $string['showstandardinstruction_desc'] = 'Indica se amosar as instrucións «Seleccione unha:» ou «Seleccione unha ou máis:» antes das respostas de opción múltiple.';
-$string['showstandardinstruction_help'] = 'Indica se amosar as instrucións «Seleccione unha:» ou «Seleccione unha ou máis:» antes das respostas de opción múltiple.';
+$string['showstandardinstruction_help'] = 'Indica se se deben amosar as instrucións «Seleccione unha:» ou «Seleccione unha ou máis:» antes das respostas de escolla múltiple. Alternativamente, pode incluír instrucións no texto da pregunta.';
 $string['shuffleanswers'] = 'Barallar respostas';
 $string['shuffleanswers_desc'] = 'Indica se as opcións deben ser baralladas para cada intento como predeterminado.';
-$string['shuffleanswers_help'] = 'De estar activado, a orde das escollas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade.';
+$string['shuffleanswers_help'] = 'De estar activado, a orde das preguntas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade.';
 $string['singleanswer'] = 'Escoller unha resposta.';
 $string['toomanyselected'] = 'Seleccionou respostas de máis.';

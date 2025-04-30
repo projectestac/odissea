@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'el', version '4.1'.
+ * Strings for component 'analytics', language 'el', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Μικτή ή υβριδική';
 $string['modeinstructionfacetoface'] = 'Πρόσωπο με πρόσωπο';
 $string['modeinstructionfullyonline'] = 'Πλήρως εντός σύνδεσης';
 $string['modeloutputdir'] = 'Φάκελος εξόδου μοντέλων';
-$string['modeloutputdirinfo'] = 'Φάκελος όπου οι επεξεργαστές προβλέψεων αποθηκεύουν όλες τις πληροφορίες αξιολόγησης. Χρήσιμο για αποσφαλμάτωση και έρευνα.';
 $string['modeloutputdirwithdefaultinfo'] = 'Κατάλογος όπου οι επεξεργαστές πρόβλεψης αποθηκεύουν όλες τις πληροφορίες αξιολόγησης. Χρήσιμο για εντοπισμό σφαλμάτων και έρευνα. Εάν είναι κενό, τότε θα χρησιμοποιηθεί ως προεπιλογή ο {$a}.';
 $string['modeltimelimit'] = 'Όριο χρόνου ανάλυσης ανά μοντέλο';
 $string['modeltimelimitinfo'] = 'Η ρύθμιση αυτή περιορίζει τον χρόνο ανάλυσης των περιεχομένων του ιστοτόπου από κάθε μοντέλο.';

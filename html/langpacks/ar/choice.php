@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ar', version '4.1'.
+ * Strings for component 'choice', language 'ar', version '4.4'.
  *
  * @package     choice
  * @category    string
@@ -54,7 +54,7 @@ $string['chooseaction'] = 'إختر الإجراء ...';
 $string['chooseoption'] = 'إختر: {$a}';
 $string['closebeforeopen'] = 'لقد جعلت تاريخ الإغلاق قبل تاريخ الفتح.';
 $string['completiondetail:submit'] = 'إختر';
-$string['completionsubmit'] = 'أظهره بمثابة مكتمل عندما يقوم المستخدم بالاختيار.';
+$string['completionsubmit'] = 'إجراء اختيار';
 $string['description'] = 'الوصف';
 $string['deselectalloption'] = 'إلغاء تحديد كل "{$a}"';
 $string['displayhorizontal'] = 'إعرض أفقياً';

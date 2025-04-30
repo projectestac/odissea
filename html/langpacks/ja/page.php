@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', version '4.1'.
+ * Strings for component 'page', language 'ja', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'ポップアップ高 (ピクセル)';
 $string['popupheightexplain'] = 'ポップアップウィンドウのデフォルト高を指定してください。';
 $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
-$string['printheading'] = 'ページ名を表示する';
-$string['printheadingexplain'] = 'コンテンツの上にページ名を表示しますか?';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの上にページ説明を表示しますか?';
 $string['printlastmodified'] = '最終更新日を表示する';

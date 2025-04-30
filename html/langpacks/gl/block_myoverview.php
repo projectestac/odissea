@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'gl', version '4.1'.
+ * Strings for component 'block_myoverview', language 'gl', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Destacar este curso';
 $string['all'] = 'Todo';
-$string['allincludinghidden'] = 'Todo (incluído o arquivado)';
+$string['allincludinghidden'] = 'Todos (incluídos  os retirados da vista)';
 $string['aria:addtofavourites'] = 'Destacar para';
-$string['aria:allcourses'] = 'Amosar todos os cursos agás os arquivados';
+$string['aria:allcourses'] = 'Amosar todos os cursos agás os cursos retirados da vista';
 $string['aria:allcoursesincludinghidden'] = 'Amosar todos os cursos';
 $string['aria:card'] = 'Cambiar a vista de tarxeta';
 $string['aria:controls'] = 'Controis da vista xeral de curso';
@@ -41,25 +41,22 @@ $string['aria:displaydropdown'] = 'Amosar o menú despregábel';
 $string['aria:favourites'] = 'Amosar só os cursos destacados';
 $string['aria:future'] = 'Amosar os cursos futuros';
 $string['aria:groupingdropdown'] = 'Agrupando o menú despregábel';
-$string['aria:hiddencourses'] = 'Amosar os cursos arquivados';
+$string['aria:hiddencourses'] = 'Amosar os cursos retirados da vista';
 $string['aria:hidecourse'] = 'Retirar {$a} da vista';
 $string['aria:inprogress'] = 'Amosar os cursos en desenvolvemento';
-$string['aria:lastaccessed'] = 'Ordenar os cursos pola última data de acceso';
 $string['aria:list'] = 'Cambiar a vista de lista';
 $string['aria:past'] = 'Amosar cursos pasados';
 $string['aria:removefromfavourites'] = 'Retirarlle o destaque para';
-$string['aria:shortname'] = 'Ordenar os cursos polo nome abreviado do curso';
 $string['aria:showcourse'] = 'Restaurar {$a} para vista';
 $string['aria:sortingdropdown'] = 'Ordenación do menú despregábel';
 $string['aria:summary'] = 'Cambiar a vista de resumo';
-$string['aria:title'] = 'Ordenar os cursos polo nome do curso';
 $string['availablegroupings'] = 'Filtros dispoñíbeis';
 $string['availablegroupings_desc'] = 'Filtros de cursos que poden seleccionar os usuarios. Se non se selecciona ningún, amosaranse todos os cursos.';
 $string['card'] = 'Tarxeta';
 $string['cards'] = 'Tarxetas';
-$string['clearsearch'] = 'Limpar a busca';
 $string['completepercent'] = '{$a}% completado';
 $string['courseprogress'] = 'Progreso do curso:';
+$string['createcourse'] = 'Crear curso';
 $string['customfield'] = 'Campo personalizado';
 $string['customfiltergrouping'] = 'Campo a usar';
 $string['customfiltergrouping_nofields'] = 'Esta opción require que se configure un campo personalizado do curso e que sexa visíbel para todos.';
@@ -67,9 +64,9 @@ $string['displaycategories'] = 'Amosar as categorías';
 $string['displaycategories_help'] = 'Amosar a categoría do curso en elementos do Taboleiro incluíndo tarxetas, elementos, elementos da lista e elementos de resumo.';
 $string['favourites'] = 'Destacado';
 $string['future'] = 'Futuros';
-$string['hidden'] = 'Cursos arquivados';
-$string['hiddencourses'] = 'Arquivado';
-$string['hidecourse'] = 'Arquivo';
+$string['hidden'] = 'Cursos retirados da vista';
+$string['hiddencourses'] = 'Retirado da vista';
+$string['hidecourse'] = 'Retirar da vista';
 $string['inprogress'] = 'Avanzando';
 $string['lastaccessed'] = 'Último acceso';
 $string['layouts'] = 'Deseños dispoñíbeis';
@@ -87,9 +84,16 @@ $string['privacy:request:preference:set'] = 'O valor do axuste «{$a->name}» er
 $string['removefromfavourites'] = 'Retirar o destaque a este curso';
 $string['searchcourses'] = 'Buscar cursos';
 $string['shortname'] = 'Nome abreviado';
-$string['show'] = 'Desarquivar';
+$string['show'] = 'Recuperar como visíbel';
 $string['sortbylastaccessed'] = 'Ordenar por último acceso';
 $string['sortbyshortname'] = 'Ordenar por nome curto';
 $string['sortbytitle'] = 'Ordenar polo nome do curso';
 $string['summary'] = 'Resumo';
 $string['title'] = 'Nome do curso';
+$string['viewquickstart'] = 'Ver a guía de inicio rápido';
+$string['zero_default_intro'] = 'Unha vez que se matricule nun curso, aparecerá aquí.';
+$string['zero_default_title'] = 'Vostede non está matriculado en ningún curso';
+$string['zero_nocourses_intro'] = 'Necesita axuda para comezar? Comprobe a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentación de Moodle</a> ou dea os seus primeiros pasos coa nosa Guía de inicio rápido.';
+$string['zero_nocourses_title'] = 'Cree o seu primeiro curso';
+$string['zero_request_intro'] = 'Necesita axuda para comezar? Comprobe a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentación de Moodle</a> ou dea os seus primeiros pasos coa nosa <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Guía de inicio rápido</a>';
+$string['zero_request_title'] = 'Solicite o seu primeiro curso';

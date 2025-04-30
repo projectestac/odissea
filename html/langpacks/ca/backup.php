@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', version '4.1'.
+ * Strings for component 'backup', language 'ca', version '4.4'.
  *
  * @package     backup
  * @category    string
@@ -81,6 +81,7 @@ $string['backupcoursesections'] = 'Seccions del curs';
 $string['backupdate'] = 'Data de realització';
 $string['backupdetails'] = 'Detalls de la còpia';
 $string['backupdetailsnonstandardinfo'] = 'El fitxer seleccionat no és un fitxer de còpia de seguretat estàndard de Moodle. El procés de restauració mirarà de convertir el vostre fitxer de còpia de seguretat al format estàndard i després restaurar-lo.';
+$string['backupfile'] = 'Fitxer de còpia de seguretat';
 $string['backupformat'] = 'Format';
 $string['backupformatimscc1'] = 'IMS Common Cartridge 1.0';
 $string['backupformatimscc11'] = 'IMS Common Cartridge 1.1';
@@ -104,6 +105,7 @@ $string['backupstage1action'] = 'Següent';
 $string['backupstage2action'] = 'Següent';
 $string['backupstage4action'] = 'Fes la còpia';
 $string['backupstage8action'] = 'Continua';
+$string['backupthenrestore'] = 'Còpia de seguretat completada. Comença a restaurar.';
 $string['backuptype'] = 'Tipus';
 $string['backuptypeactivity'] = 'Activitat';
 $string['backuptypecourse'] = 'Curs';
@@ -143,6 +145,7 @@ TINGUEU EN COMPTE que inhabilitar aquest paràmetre inhabilitarà la còpia de s
 $string['configgeneralroleassignments'] = 'Si està habilitat, s\'inclouran per defecte les assignacions de rols dins de la còpia de seguretat.';
 $string['configgeneralusers'] = 'Estableix el valor per defecte per incloure els usuaris en una còpia de seguretat.';
 $string['configgeneraluserscompletion'] = 'Si està habilitat, s\'inclourà per defecte la informació de progrés de l\'usuari dins de la còpia de seguretat.';
+$string['configgeneralxapistate'] = 'Estableix els valors per defecte per incloure l\'estat de l\'usuari en els continguts, com ara les activitats H5P, en una còpia de seguretat.';
 $string['configlegacyfiles'] = 'Estableix els valors per defecte per incloure fitxers de cursos heretats en una còpia de seguretat. Els fitxers heretats són de versions del Moodle anteriors a la 2.0.';
 $string['configloglifetime'] = 'Especifica el temps que es conservarà una còpia de seguretat de la informació del registre. La informació més antiga s\'esborrarà automàticament. Es recomana que aquest valor sigui petit, perquè la còpia de seguretat pot ser molt gran.';
 $string['configrestoreactivities'] = 'Estableix els paràmetres per defecte de la restauració de les activitats.';
@@ -161,6 +164,7 @@ $string['configrestorepermissions'] = 'Si s\'habilita, es restauraran els permis
 $string['configrestoreroleassignments'] = 'Si està habilitat, l\'assignació de rols es restaurarà per defecte si està inclosa a la còpia de seguretat.';
 $string['configrestoreusers'] = 'Estableix els paràmetres per defecte de la restauració dels usuaris si estan inclosos a la còpia de seguretat.';
 $string['configrestoreuserscompletion'] = 'Si està habilitat, la informació de compleció dels usuaris es restaurarà per defecte si està inclosa a la còpia de seguretat.';
+$string['configrestorexapistate'] = 'Estableix el valor per defecte per restaurar l\'estat de l\'usuari en el contingut com ara les activitats H5P.';
 $string['confirmcancel'] = 'Cancel·la la còpia';
 $string['confirmcancelimport'] = 'Cancel·la la importació';
 $string['confirmcancelno'] = 'No la cancel·les';
@@ -246,6 +250,7 @@ $string['generalroleassignments'] = 'Inclou els assignaments de rols';
 $string['generalsettings'] = 'Paràmetres generals de còpia de seguretat';
 $string['generalusers'] = 'Inclou els usuaris';
 $string['generaluserscompletion'] = 'Inclou la informació de progrés de l\'usuari';
+$string['generalxapistate'] = 'Inclou l\'estat de l\'usuari en el contingut, com ara les activitats H5P';
 $string['hidetypes'] = 'Amaga opcions del tipus';
 $string['importbackupstage16action'] = 'Continua';
 $string['importbackupstage1action'] = 'Següent';
@@ -259,6 +264,8 @@ $string['importcurrentstage2'] = 'Configuració de l\'esquema';
 $string['importcurrentstage4'] = 'Confirmació i revisió';
 $string['importcurrentstage8'] = 'Fes la importació';
 $string['importfile'] = 'Importa un fitxer de còpia de seguretat';
+$string['importfromccmidtocourse'] = 'Importa des de cmid:{$a->srccmid} al curs:{$a->dstcourseid}';
+$string['importfromcoursetocourse'] = 'Importa des del curs:{$a->srccourseid} al curs:{$a->dstcourseid}';
 $string['importgeneralduplicateadminallowed'] = 'Permet la resolució de conflictes d\'administració';
 $string['importgeneralduplicateadminallowed_desc'] = 'Si el lloc té un compte amb nom d\'usuari "admin", si s\'intenta restaurar un fitxer de còpia de seguretat que conté un compte amb nom d\'usuari "admin" es pot provocar un conflicte. Si s\'habilita aquesta configuració, el conflicte es resol canviant el nom d\'usuari en el fitxer de còpia de seguretat per a «admin_xyz».';
 $string['importgeneralmaxresults'] = 'Nombre màxim de cursos enumerats per importar';
@@ -283,6 +290,8 @@ $string['lockedbyhierarchy'] = 'Blocat per dependències';
 $string['lockedbypermission'] = 'No teniu permisos suficients per canviar aquest paràmetre';
 $string['loglifetime'] = 'Mantingues els registres de';
 $string['managefiles'] = 'Gestiona els fitxers de còpia de seguretat';
+$string['managefiles_backup'] = 'Gestiona les còpies de seguretat privades';
+$string['managefiles_course'] = 'Gestiona les còpies de seguretat del curs';
 $string['mergerestoredefaults'] = 'Paràmetres per defecte de la restauració quan es fusioni dins d\'un altre curs';
 $string['missingfilesinpool'] = 'Alguns fitxers no s\'han pogut desar mentre es feia la còpia de seguretat i per tant no serà possible restaurar-los.';
 $string['module'] = 'Mòdul';
@@ -379,6 +388,7 @@ $string['rootsettingroleassignments'] = 'Inclou les assignacions de rols de l\'u
 $string['rootsettings'] = 'Configuració de les còpies de seguretat';
 $string['rootsettingusers'] = 'Inclou els usuaris registrats';
 $string['rootsettinguserscompletion'] = 'Inclou els detalls de progrés de l\'usuari';
+$string['rootsettingxapistate'] = 'Inclou l\'estat de l\'usuari en el contingut, com ara les activitats H5P';
 $string['samesitenotification'] = 'Aquesta còpia de seguretat es va crear només amb enllaços als fitxers, no amb els fitxers. La restauració funcionarà només en aquest servidor.';
 $string['sectionactivities'] = 'Activitats';
 $string['sectioninc'] = 'Inclòs a la còpia de seguretat (sense informació d\'usuari)';

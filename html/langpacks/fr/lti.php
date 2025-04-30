@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', version '4.1'.
+ * Strings for component 'lti', language 'fr', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'Accepter les notes de l’outil';
 $string['accept_grades_admin_help'] = 'Indiquer si le fournisseur de l’outil peut ajouter, mettre à jour, lire et effacer les notes associées à des instances de ce type d’outil.
 
 Certains fournisseurs d’outil permettent le transfert des notes vers Moodle, sur la base d’actions effectuées dans l’outil, créant ainsi une expérience utilisateur mieux intégrée.';
+$string['accept_grades_from_tool'] = 'Autoriser {$a} à ajouter des notes au carnet de notes';
 $string['accept_grades_help'] = 'Indique si le fournisseur de l’outil peut ajouter, mettre à jour, lire et effacer les notes associées à cette instance de l’outil externe
 
 Certains fournisseurs d’outil prennent en charge le transfert des notes vers Moodle, sur la base d’actions effectuées dans l’outil, créant ainsi une expérience utilisateur mieux intégrée.
@@ -46,6 +47,7 @@ $string['add_ltiadv'] = 'Ajouter LTI Advantage';
 $string['add_ltilegacy'] = 'Ajouter LTI Legacy';
 $string['addnewapp'] = 'Activer l’application externe';
 $string['addserver'] = 'Ajouter un serveur fiable';
+$string['addtool'] = 'Ajouter outil';
 $string['addtype'] = 'Ajouter un outil préconfiguré';
 $string['allow'] = 'Autoriser';
 $string['allowsetting'] = 'Permettre à l’outil de stocker 8 ko de réglages dans Moodle';
@@ -75,7 +77,7 @@ $string['capabilitiesrequired'] = 'Cet outil nécessite l’accès aux données 
 $string['cleanaccesstokens'] = 'Suppression des jetons d’accès échus de l’outil externe';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Cliquer pour continuer</a>';
 $string['clientidadmin'] = 'Identifiant du client';
-$string['clientidadmin_help'] = 'L’identifiant client peut être pensé comme un valeur unique utilisée pour identifier un outil. Il est créé automatiquement pour chaque outil utilisant le profil de sécurité introduit dans LTI 1.3 et doit faire partie des informations passées au fournisseur de l’outil, afin qu’il puisse configurer la connexion de son côté.';
+$string['clientidadmin_help'] = 'L’identifiant client peut être pensé comme une valeur unique utilisée pour identifier un outil. Il est créé automatiquement pour chaque outil utilisant le profil de sécurité introduit dans LTI 1.3 et doit faire partie des informations passées au fournisseur de l’outil, afin qu’il puisse configurer la connexion de son côté.';
 $string['comment'] = 'Commentaire';
 $string['configpassword'] = 'Mot de passe par défaut de l’outil distant';
 $string['configpreferheight'] = 'Hauteur préférée par défaut';
@@ -86,18 +88,27 @@ $string['configtoolurl'] = 'URL de l’outil distant par défaut';
 $string['configtypes'] = 'Autoriser les applications LTI';
 $string['configured'] = 'Configuré';
 $string['confirmtoolactivation'] = 'Voulez-vous vraiment activer cet outil ?';
-$string['contentitem'] = 'Message Content-Item';
 $string['contentitem_deeplinking'] = 'Prend en charge les liens profond (Content-Item Message)';
 $string['contentitem_deeplinking_help'] = 'Si ce réglage est activé, l’option « Sélectionner un contenu » sera disponible lors de l’ajout d’un outil externe.';
-$string['contentitem_help'] = 'Si ce réglage est activé, l’option « Sélectionner un contenu » sera disponible lors de l’ajout d’un outil externe.';
 $string['contentitem_multiple_description'] = 'Les éléments suivants seront ajoutés à votre cours :';
 $string['contentitem_multiple_graded'] = 'Activité évaluée (note maximale : {$a})';
+$string['contentselected'] = 'Contenu sélectionné';
 $string['course_tool_types'] = 'Outils de cours';
 $string['courseactivitiesorresources'] = 'Activités ou ressources de cours';
+$string['courseexternaltooladd'] = 'Ajouter un outil externe LTI';
+$string['courseexternaltooladdsuccess'] = '{$a} ajouté.';
+$string['courseexternaltooledit'] = 'Modifier {$a}';
+$string['courseexternaltooleditsuccess'] = 'Modifications enregistrées.';
+$string['courseexternaltooliconalt'] = 'Icône pour {$a}';
+$string['courseexternaltools'] = 'Outils externes LTI';
+$string['courseexternaltoolsinfo'] = 'Les outils externes LTI sont des apps tierces que l’on peut ajouter à un cours, par exemple des contenus interactifs ou des évaluations. Les étudiants peuvent y accéder et les utiliser sans quitter le cours.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Vous n’avez pas les permissions requises pour modifier cet outil';
+$string['courseexternaltoolsnoviewpermissions'] = 'Consulter les outils externes de cours';
 $string['courseid'] = 'Identifiant du cours';
 $string['courseinformation'] = 'Information du cours';
 $string['courselink'] = 'Aller au cours';
 $string['coursemisconf'] = 'Le cours n’est pas configuré correctement';
+$string['coursetooldeleted'] = '{$a} supprimé';
 $string['createdon'] = 'Créé le';
 $string['curllibrarymissing'] = 'La bibliothèque PHP cURL est requise pour les outils externes.';
 $string['custom'] = 'Paramètres personnalisés';
@@ -121,23 +132,19 @@ $string['delegate'] = 'Déléguer à l’enseignant';
 $string['delegate_tool'] = 'Comme spécifié dans la définition de Liens profond ou déléguer à l’enseignant';
 $string['delete'] = 'Supprimer';
 $string['delete_confirmation'] = 'Voulez-vous vraiment supprimer cet outil préconfiguré ?';
+$string['deletecoursetool'] = 'Supprimer {$a}';
+$string['deletecoursetoolconfirm'] = 'Cette action supprimera {$a} des outils LTI disponible dans votre cours.';
+$string['deletecoursetoolwithusageconfirm'] = '{$a} est actuellement utilisé dans au moins une activité de votre cours. Si cet outil est supprimé, les activités qui l’utilisent ne fonctionneront plus.<br><br>Voulez-vous vraiment supprimer {$a} ?';
 $string['deletetype'] = 'Supprimer l’outil préconfiguré';
-$string['display_description'] = 'Afficher la description de l’activité lors du lancement';
-$string['display_description_help'] = 'Si ce réglage est activé, la description de l’activité (renseignée ci-dessus) sera affichée au-dessus du contenu du fournisseur de l’outil.
-
-La description (pas obligatoire) peut être utilisée pour fournir aux utilisateurs de l’outil des explications supplémentaires.
-
-La description n’est jamais affichée lorsque l’outil est lancé dans une nouvelle fenêtre.';
-$string['display_name'] = 'Afficher le nom de l’activité lors du lancement';
-$string['display_name_help'] = 'Si ce réglage est activé, le nom de l’activité (spécifié ci-dessus) sera affiché au-dessus du contenu fourni par le fournisseur de l’outil.
-
-Il est possible que ce dernier affiche également le titre. Cette option permet d’éviter d’afficher le titre à double.
-
-Le titre n’est jamais affiché lorsque l’activité est lancée dans une nouvelle fenêtre.';
+$string['display_description'] = 'Afficher la description de l’activité lorsque des étudiants accèdent à l’outil';
+$string['display_description_help'] = 'Le contenu de cet outil est affiché dans une page dans le cours. Ce réglage détermine si la description de l’activité est affichée dans cette page.';
+$string['display_name'] = 'Afficher le nom de l’activité lorsque des étudiants accèdent à l’outil';
+$string['display_name_help'] = 'Le contenu de cet outil est affiché dans une page dans le cours. Ce réglage détermine si le nom de l’activité est affiché dans cette page.';
 $string['domain_mismatch'] = 'Le domaine de l’URL de l’outil ne correspond pas à la configuration de l’outil.';
 $string['donot'] = 'Ne pas envoyer';
 $string['donotaccept'] = 'Ne pas accepter';
 $string['donotallow'] = 'Ne pas autoriser';
+$string['dontshowinactivitychooser'] = 'Ne pas afficher dans le sélecteur d’activités';
 $string['duplicateregurl'] = 'Cette URL d’enregistrement est déjà utilisée';
 $string['dynreg_update_btn_new'] = 'Enregistrer comme nouvel outil externe';
 $string['dynreg_update_btn_update'] = 'Mettre à jour';
@@ -148,6 +155,11 @@ $string['dynreg_update_url'] = 'URL de base';
 $string['dynreg_update_version'] = 'Version LTI';
 $string['dynreg_update_warn_dupdomain'] = 'Il n’est pas recommandé d’avoir plusieurs outils externes sous le même domaine.';
 $string['editdescription'] = 'Cliquer ici pour donner une description à cet outil';
+$string['editmanualinstancedeprecationwarning'] = 'Les activités Outil externe configurées manuellement ne sont plus prises en charges. Mais pas d’inquiétude, cette activité continuer de fonctionner, mais il n’est plus possible d’effectuer des modifications ici.
+<br /><br />
+Pour faire des changements à cet outil ou créer de nouvelles activités sur sa base, l’outil doit être ajouté à votre cours dans Cours > Plus > Outils externes LTI. Vous pourrez ensuite créer de nouvelles activités en sélectionnant directement l’outil dans le sélecteur d’activité.
+<br /><br />
+Pour en savoir plus pur l’ajout d’outils externes LTI, consultez la documentation <a href="{$a}" target="_blank">Outil externe</a>.';
 $string['edittype'] = 'Modifier l’outil préconfiguré';
 $string['embed'] = 'Intégré';
 $string['embed_no_blocks'] = 'Intégré, sans les blocs';
@@ -155,6 +167,7 @@ $string['enableemailnotification'] = 'Envoyer des courriels de notification';
 $string['enableemailnotification_help'] = 'Si ce réglage est activé, les participants recevront notification par courriel lorsque leur remise est évaluée.';
 $string['enterkeyandsecret'] = 'Saisir votre clef client et votre secret partagé';
 $string['enterkeyandsecret_help'] = 'Saisir ici la clef client et/ou le secret partagé';
+$string['entitycourseexternaltools'] = 'Outils externes LTI';
 $string['errorbadurl'] = 'L’URL n’est pas une URL d’outil ou de paquet valide.';
 $string['errorincorrectconsumerkey'] = 'La clef client est incorrecte.';
 $string['errorinvaliddata'] = 'Donnée non valide : {$a}';
@@ -193,7 +206,7 @@ $string['force_ssl_help'] = 'La sélection de cette option impose l’utilisatio
 
 De plus, toutes les requêtes de services web de ce fournisseur d’outil utiliseront SSL.
 
-Avant d’activer cette option, assurez-vous que ce site Moodle et que le fournisseur de l’outil prenne en charge le protocole SSL.';
+Avant d’activer cette option, assurez-vous que ce site Moodle et que le fournisseur de l’outil prennent en charge le protocole SSL.';
 $string['forced_help'] = 'Ce réglage a été imposé au niveau de la configuration du cours ou du site. Vous ne pouvez pas le modifier depuis cette interface.';
 $string['generaltool'] = 'Outil générique';
 $string['global_tool_types'] = 'Outils préconfigurés';
@@ -235,11 +248,11 @@ $string['launchinpopup_help'] = 'Le conteneur de lancement détermine l’affich
 * **Intégré, sans les blocs** : l’outil est affiché dans la fenêtre Moodle existante, uniquement avec la navigation en haut de la page.
 * **Nouvelle fenêtre** : l’outil s’ouvre dans une nouvelle fenêtre, occupant la totalité de l’espace disponible. Suivant la configuration du navigateur, il peut s’ouvrir dans un nouvel onglet. Certains navigateurs empêcheront l’ouverture d’une nouvelle fenêtre.';
 $string['launchoptions'] = 'Options de lancement';
-$string['leaveblank'] = 'Laisser vide si vous n’en avez pas besoin';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Ajouter des configurations d’outils externes propres à un cours';
 $string['lti:addinstance'] = 'Ajouter un outil externe';
 $string['lti:addmanualinstance'] = 'Ajouter un outil configuré manuellement';
+$string['lti:addmanualinstanceprohibitederror'] = 'La création manuelles d’outils sans définition d’un outil de cours n’est plus prise en charge. Veuillez d’abord créer un outil de cours, plus utilisez-le pour créer des instances d’activité.';
 $string['lti:addpreconfiguredinstance'] = 'Ajouter un outil préconfiguré';
 $string['lti:admin'] = 'Devenir un administrateur lorsque l’outil est lancé';
 $string['lti:grade'] = 'Voir les notes retournées par un outil externe';
@@ -302,6 +315,7 @@ $string['no_tp_configured'] = 'Il n’y a pas d’enregistrement d’outil exter
 $string['no_tp_pending'] = 'Il n’y a pas d’enregistrement d’outil externe en attente.';
 $string['no_tp_rejected'] = 'Il n’y a pas d’enregistrement d’outil externe rejeté.';
 $string['noattempts'] = 'Aucune tentative n’a été effectuée sur cet instance de l’outil';
+$string['nocourseexternaltoolsnotice'] = 'Il n’y a pas encore d’outil externe LTI.';
 $string['noltis'] = 'Il n’y a pas d’instance d’outil externe';
 $string['noprofileservice'] = 'Service de profil introuvable';
 $string['noservers'] = 'Aucun serveur trouvé';
@@ -315,7 +329,7 @@ $string['organizationdescr'] = 'Description de l’institution';
 $string['organizationid_default'] = 'ID par défaut de l’institution';
 $string['organizationid_default_help'] = 'La valeur à utiliser par défaut pour l’ID de l’institution. L’ID du site identifie cette installation de Moodle.';
 $string['organizationidguid'] = 'ID de l’institution';
-$string['organizationidguid_help'] = 'Une identifiant unique pour cette instance de Moodle, envoyé à l’outil comme « Platform Instance GUID ».';
+$string['organizationidguid_help'] = 'Un identifiant unique pour cette instance de Moodle, envoyé à l’outil comme « Platform Instance GUID ».';
 $string['organizationurl'] = 'URL de l’institution';
 $string['organizationurl_help'] = 'L’URL de base de cette installation de Moodle.
 
@@ -406,6 +420,8 @@ La clef client doit être donnée par le fournisseur de l’outil, par un proces
 
 Les outils ne nécessitant pas une communication sécurisée depuis Moodle et qui n’offrent pas de services supplémentaires (tel que des rapports d’évaluation) ne requièrent pas toujours de clef client.';
 $string['resourceurl'] = 'URL de la ressource';
+$string['restricttocategory'] = 'Restreindre à une catégorie';
+$string['restricttocategory_help'] = 'Pour restreindre l’utilisation de cet outil aux cours d’une catégorie, sélectionner une ou des catégories de la liste.';
 $string['return_to_course'] = 'Cliquer <a href="{$a->link}" target="_top">ici</a> pour revenir au cours.';
 $string['saveallfeedback'] = 'Enregistrer mes feedbacks';
 $string['search:activity'] = 'Outil externe – information sur l’activité';
@@ -414,8 +430,9 @@ $string['secure_icon_url_help'] = 'Analogue à l’URL de l’icône, mais utili
 $string['secure_launch_url'] = 'URL de l’outil sécurisé';
 $string['secure_launch_url_help'] = 'Analogue à l’URL de l’outil, mais utilisée en lieu et place si une sécurité plus élevée est requise. Moodle utilisera cette URL sécurisée si l’accès à Moodle a lieu via SSL, ou si l’outil est configuré de façon à être toujours lancé via SSL.
 
-Il est aussi possible de définir l’URL standard l’outil avec une adresse https, afin de forcer le lancement via SSL. Dans ce cas, ce champ peut être laissé vide.';
+Il est aussi possible de définir l’URL standard de l’outil avec une adresse https, afin de forcer le lancement via SSL. Dans ce cas, ce champ peut être laissé vide.';
 $string['selectcontent'] = 'Sélectionner un contenu';
+$string['selectcontentvalidationerror'] = 'Vous devez sélectionner le contenu de cette activité.';
 $string['send'] = 'Envoyer';
 $string['services'] = 'Services';
 $string['services_help'] = 'Sélectionnez les services que vous désirez offrir au fournisseur de l’outil. Plusieurs services peuvent être sélectionnés.';
@@ -431,9 +448,9 @@ Ce fournisseur pourrait avoir besoin de cette adresse afin de distinguer des uti
 Ce réglage peut être court-circuité dans la configuration de l’outil.';
 $string['share_name'] = 'Partager le nom de l’utilisateur avec l’outil';
 $string['share_name_admin'] = 'Partager le nom de l’utilisateur avec l’outil';
-$string['share_name_admin_help'] = 'Spécifie si le nom complet de l’utilisateur qui lance l’outil sera partagée avec le fournisseur de l’outil.
+$string['share_name_admin_help'] = 'Spécifie si le nom complet de l’utilisateur qui lance l’outil sera partagé avec le fournisseur de l’outil.
 Ce fournisseur pourrait avoir besoin de ce nom pour afficher des informations pertinentes.';
-$string['share_name_help'] = 'Spécifie si le nom complet de l’utilisateur qui lance l’outil sera partagée avec le fournisseur de l’outil.
+$string['share_name_help'] = 'Spécifie si le nom complet de l’utilisateur qui lance l’outil sera partagé avec le fournisseur de l’outil.
 
 Ce fournisseur pourrait avoir besoin de ce nom pour afficher des informations pertinentes.
 
@@ -451,6 +468,7 @@ $string['show_in_course_lti2'] = 'Utilisation de la configuration de l’outil';
 $string['show_in_course_lti2_help'] = 'Cet outil peut être affiché dans le sélecteur des activités qu’un enseignant peut choisir d’ajouter à un cours, ainsi que dans le menu déroulant des outils préconfigurés lors de l’ajout d’un outil externe à un cours.';
 $string['show_in_course_no'] = 'Ne pas afficher. N’utiliser que lorsqu’une URL d’outil correspondante est saisie';
 $string['show_in_course_preconfigured'] = 'Afficher comme outil préconfiguré lors de l’ajout comme outil externe';
+$string['showinactivitychooser'] = 'Afficher dans le sélecteur d’activités';
 $string['sitehost'] = 'Nom d’hôte du site';
 $string['siteid'] = 'ID du site';
 $string['size'] = 'Paramètres de taille';
@@ -499,6 +517,7 @@ $string['toolsetup'] = 'Configuration de l’outil externe';
 $string['tooltypeadded'] = 'Outil préconfiguré ajouté';
 $string['tooltypedeleted'] = 'Outil préconfiguré supprimé';
 $string['tooltypenotdeleted'] = 'Impossible de supprimer l’outil préconfiguré';
+$string['tooltypenotfounderror'] = 'L’outil LTI utilisé dans cette activité a été supprimé. Si vous avez besoin d’assistance, contactez votre enseignant ou l’administrateur du site.';
 $string['tooltypes'] = 'Outils';
 $string['tooltypeupdated'] = 'Outil préconfiguré modifié';
 $string['toolurl'] = 'URL de l’outil';
@@ -537,6 +556,7 @@ $string['unabletocreatetooltype'] = 'Impossible de créer l’outil';
 $string['unabletofindtooltype'] = 'Impossible de trouver l’outil pour {$a->id}';
 $string['unknownstate'] = 'Statut inconnu';
 $string['update'] = 'Mise à jour';
+$string['usage'] = 'Nombre d’utilisations';
 $string['useraccountinformation'] = 'Information du compte utilisateur';
 $string['userpersonalinformation'] = 'Information personnelle de l’utilisateur';
 $string['using_tool_cartridge'] = 'Utilisation d’un paquetage d’outil';

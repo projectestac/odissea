@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'pt', version '4.1'.
+ * Strings for component 'cohort', language 'pt', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,8 @@ $string['cohortmember'] = 'Membro de Grupo global';
 $string['cohorts'] = 'Grupos globais';
 $string['cohortsin'] = '{$a}: Grupos globais disponíveis';
 $string['component'] = 'Origem';
+$string['contextcohortnotallowed'] = 'Grupo global <b>{$a}</b> não permitido neste contexto.
+.';
 $string['contextnotfound'] = 'O contexto <b>{$a}</b> não foi encontrado ou não tem permissão para criar um Grupo global nessa localização. Será usado o contexto predefinido.';
 $string['csvcontainserrors'] = 'Foram detetados erros nos dados CSV. Consulte os detalhes abaixo.';
 $string['csvcontainswarnings'] = 'Foram detetados avisos nos dados CSV. Consulte os detalhes abaixo.';
@@ -48,7 +50,7 @@ $string['currentusers'] = 'Utilizadores atuais';
 $string['currentusersmatching'] = 'Correspondência dos utilizadores atuais';
 $string['defaultcontext'] = 'Contexto predefinido';
 $string['delcohort'] = 'Apagar Grupo global';
-$string['delconfirm'] = 'Tem a certeza de que pretende apagar o Grupo global \'{$a}\'?';
+$string['delconfirm'] = 'Irá apagar o Grupo global \'{$a}\' e todos os dados associados.';
 $string['description'] = 'Descrição';
 $string['displayedrows'] = '{$a->displayed} linhas exibidas num total de {$a->total}.';
 $string['duplicateidnumber'] = 'Já existe um Grupo global com o número de identificação (ID) indicado';
@@ -81,6 +83,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'O ID do utilizador associad
 $string['removeuserwarning'] = 'Remover utilizadores dos Grupos globais significa cancelar a inscrição nas disciplinas, o que faz com que estes percam as suas configurações, notas, grupos e outras informações nessas disciplinas.';
 $string['search'] = 'Pesquisar';
 $string['searchcohort'] = 'Pesquisar Grupos globais';
+$string['selectcohort'] = 'Selecione o grupo global';
 $string['selectfromcohort'] = 'Selecionar utilizadores do Grupo global';
 $string['systemcohorts'] = 'Grupos globais do sistema';
 $string['unknowncohort'] = 'Grupo global desconhecido ({$a})!';

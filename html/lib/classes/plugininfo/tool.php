@@ -37,14 +37,6 @@ class tool extends base {
         if ($this->name === 'mobile') {
             return false;
         } else {
-
-            // XTEC ************ AFEGIT - Disable uninstalling
-            // 2014.09.09 @pferre22
-            if (!get_protected_agora()) {
-                return false;
-            }
-            //************ FI
-
             return true;
         }
     }
@@ -63,7 +55,7 @@ class tool extends base {
      * @return moodle_url
      */
     public static function get_manage_url() {
-        return new moodle_url('/admin/tools.php');
+        return new moodle_url('/admin/settings.php', ['section' => 'toolsmanagement']);
     }
 
     /**

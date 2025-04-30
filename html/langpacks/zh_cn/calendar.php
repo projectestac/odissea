@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', version '4.1'.
+ * Strings for component 'calendar', language 'zh_cn', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = '日历网址';
 $string['calendarheading'] = '{$a} 日历';
 $string['calendarpreferences'] = '日历偏好';
 $string['calendartypes'] = '日历类型';
-$string['calendarurl'] = '日历网址： {$a}';
 $string['calendarurlcopiedtoclipboard'] = '日历网址已复制到剪贴板';
 $string['category'] = '类别';
 $string['categoryevent'] = '类别事件';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = '复制日历网址';
 $string['copyurl'] = '复制网址';
 $string['course'] = '课程';
 $string['coursecalendar'] = '{$a}日历';
+$string['coursecalendarlink'] = '课程日历';
 $string['courseevent'] = '课程事件';
 $string['courseevents'] = '课程事件';
 $string['courses'] = '课程';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = '导入外部日历？';
 $string['importcalendarfrom'] = '导入自';
 $string['importcalendarheading'] = '导入日历…';
 $string['importfromfile'] = '日历文件（.ics）';
-$string['importfrominstructions'] = '请提供一个远程日历网址，或者上传一个文件';
 $string['importfromurl'] = '日历网址';
 $string['invalideventtype'] = '您选择的事件类型无效。';
 $string['invalidtimedurationminutes'] = '您输入的持续时间无效。 请以分钟为单位输入大于0的持续时间，或选择不持续。';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} 个事件';
 $string['mon'] = '周一';
 $string['monday'] = '星期一';
 $string['monthly'] = '每月';
-$string['monthlyview'] = '月视图';
 $string['monthnext'] = '下月';
 $string['monthprev'] = '上月';
 $string['monththis'] = '本月';
@@ -197,7 +195,9 @@ $string['moreevents'] = '{$a} 更多';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = '从未';
 $string['newevent'] = '新事件';
+$string['newmonthannouncement'] = '日历现在设置为 {$a}';
 $string['nocalendarsubscriptions'] = '尚无日历订阅，是否要 {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = '尚无日历订阅。<a href=“{$a}”>导入外部日历</a>';
 $string['notitle'] = '无标题';
 $string['noupcomingevents'] = '没有即将到来的事件';
 $string['oneevent'] = '1个事件';

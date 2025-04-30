@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', version '4.1'.
+ * Strings for component 'assign', language 'ca', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Encara no heu fet cap tramesa.';
 $string['allocatedmarker'] = 'Avaluador assignat';
 $string['allocatedmarker_help'] = 'Avaluador assignat a aquesta tramesa';
 $string['allowsubmissions'] = 'Permet a l\'usuari continuar realitzant trameses per a aquesta tasca.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Els detalls de la tasca i el formulari de la tramesa estaran disponibles des de <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Permet trameses des de';
 $string['allowsubmissionsfromdate_help'] = 'Si està activat, els estudiants no podran fer trameses abans d\'aquesta data. Si està desactivat, podran començar la tramesa immediatament.';
-$string['allowsubmissionsfromdatesummary'] = 'Aquesta tasca acceptarà trameses des de <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Permet canvis en la tramesa';
 $string['alwaysshowdescription'] = 'Mostra sempre la descripció';
 $string['alwaysshowdescription_help'] = 'Si està desactivat, la descripció de la tasca de dalt només serà visible per als estudiants a partir de la data «Permet trameses des de».';
@@ -334,6 +332,7 @@ $string['markerfilter'] = 'Filtre d\'avaluador';
 $string['markerfilternomarker'] = 'No hi ha marcador';
 $string['markingallocation'] = 'Utilitza l\'assignació d\'avaluadors';
 $string['markingallocation_help'] = 'Si s\'habilita alhora amb el flux d\'avaluació, es podran assignar avaluadors a estudiants concrets.';
+$string['markinganonymous'] = 'Permet qualificacions parcials mentre es posen notes de manera anònima';
 $string['markingworkflow'] = 'Utilitza el flux d\'avaluació';
 $string['markingworkflow_help'] = 'Si s\'habilita, les puntuacions passaran per una sèrie d\'estats abans de ser publicades. Això permet qualificar en múltiples passades i publicar les notes per a tots els estudiants alhora.';
 $string['markingworkflowstate'] = 'Estat del flux d\'avaluació';
@@ -456,8 +455,6 @@ $string['quickgrading_help'] = 'La qualificació ràpida us permet d\'assignar q
 $string['quickgradingchangessaved'] = 'S\'han desat els canvis en la qualificació';
 $string['quickgradingresult'] = 'Qualificació ràpida';
 $string['recordid'] = 'Identificador';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} després de l\'inici del curs';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} abans de l\'inici del curs';
 $string['relativedatessubmissiontimeleft'] = 'Calculat per a cada estudiant';
 $string['removeallgroupoverrides'] = 'Esborra totes les excepcions de grup';
 $string['removealluseroverrides'] = 'Esborra totes les excepcions d\'usuari';
@@ -554,6 +551,7 @@ $string['submissionstatement'] = 'Compromís de tramesa';
 $string['submissionstatement_help'] = 'Declaració que cada estudiant ha d\'acceptar per trametre el seu treball.';
 $string['submissionstatementacceptedlog'] = 'L\'usuari {$a} ha acceptat el compromís de tramesa';
 $string['submissionstatementdefault'] = 'Aquesta tramesa conté únicament treball propi, i en el cas que hagi fet servir una font externa o l\'opinió d\'un company, n\'he citat l\'autor.';
+$string['submissionstatementrequired'] = 'Heu d\'acceptar aquesta declaració abans de poder fer l\'enviament.';
 $string['submissionstatementteamsubmission'] = 'Declaració de la tramesa en grup';
 $string['submissionstatementteamsubmission_help'] = 'Declaració que cada estudiant ha d\'acceptar per trametre el treball del seu grup.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Declaració de la tramesa en grup en la qual tots els membres del grup trameten';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'gl', version '4.1'.
+ * Strings for component 'lti', language 'gl', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -26,12 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Aceptar';
-$string['accept_grades'] = 'Aceptar cualificacións dende a ferramenta';
-$string['accept_grades_admin'] = 'Aceptar cualificacións dende a ferramenta';
+$string['accept_grades'] = 'Aceptar cualificacións desde a ferramenta';
+$string['accept_grades_admin'] = 'Aceptar cualificacións desde a ferramenta';
 $string['accept_grades_admin_help'] = 'Especificar cando o fornecedor da ferramenta pode engadir, actualizar, ler e eliminar cualificacións asociadas con instancias deste tipo de ferramenta.
 
 Algúns fornecedores da ferramenta teñen a posibilidade de devolver información de cualificacións a Moodle baseadas en acción tomadas coa ferramenta, creando así
 unha experiencia máis integrada.';
+$string['accept_grades_from_tool'] = 'Permitir que {$a} engada cualificacións no libro de cualificacións';
 $string['accept_grades_help'] = 'Especifique cando o fornecedor da ferramenta pode engadir, actualizar, ler e eliminar cualificacións asociadas soamente coa instancia desta ferramenta externa.
 
 Algúns dos fornecedores da ferramenta teñen a posibilidade de devolver a Moodle cualificacións baseadas en acción tomadas coa ferramenta, creando así unha experiencia máis integrada.
@@ -45,11 +46,12 @@ $string['active'] = 'Activa';
 $string['activity'] = 'Actividade';
 $string['add_ltiadv'] = 'Engadir LTI Advantage';
 $string['add_ltilegacy'] = 'Engadir Legacy LTI';
-$string['addnewapp'] = 'Activar a aplicación externa';
+$string['addnewapp'] = 'Activar o aplicativo externo';
 $string['addserver'] = 'Engadir un novo servidor de confianza';
-$string['addtype'] = 'Engadir unha ferramenta preconfigurada';
+$string['addtool'] = 'Engadir ferramenta';
+$string['addtype'] = 'Engadir unha configuración da ferramenta externa';
 $string['allow'] = 'Permitir';
-$string['allowsetting'] = 'Permitirlle á ferramenta gardar 8K de axustes dentro de Moodle.';
+$string['allowsetting'] = 'Permitirlle á ferramenta gardar 8K de configuración dentro de Moodle.';
 $string['always'] = 'Sempre';
 $string['autoaddtype'] = 'Engadir ferramenta';
 $string['automatic'] = 'Automática, baseada en Launch URL';
@@ -64,7 +66,7 @@ $string['basicltiactivities'] = 'Actividades LTI';
 $string['basicltifieldset'] = 'Campo personalizado de exemplo';
 $string['basicltiintro'] = 'Descrición da actividade';
 $string['basicltiname'] = 'Nome da actividade';
-$string['basicltisettings'] = 'Axustes de interoperabilidade da Ferramenta básica de aprendizaxe';
+$string['basicltisettings'] = 'Configuración de interoperabilidade da Ferramenta básica de aprendizaxe';
 $string['cachedef_keyset'] = 'Almacena na caché a información do xogo de chaves das ferramentas';
 $string['cancel'] = 'Cancelar';
 $string['cancelled'] = 'Cancelado';
@@ -76,7 +78,7 @@ $string['capabilitiesrequired'] = 'Esta ferramenta necesita acceso aos datos seg
 $string['cleanaccesstokens'] = 'Eliminación de ferramentas externas de testemuño de acceso caducados';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Prema para continuar</a>';
 $string['clientidadmin'] = 'ID do cliente';
-$string['clientidadmin_help'] = 'O ID de cliente é un valor único empregado para identificar unha ferramenta. Créase automaticamente para cada ferramenta que usa o perfil de seguridade JWT introducido en LTI 1.3 e debe formar parte dos detalles transmitidos ao fornecedor da ferramenta para que poida configurar a conexión no seu extremo.';
+$string['clientidadmin_help'] = 'O ID de cliente é un valor único empregado para identificar unha ferramenta. Créase automaticamente para cada ferramenta que usa o perfil de seguranza JWT introducido en LTI 1.3 e debe formar parte dos detalles transmitidos ao fornecedor da ferramenta para que poida configurar a conexión no seu extremo.';
 $string['comment'] = 'Comentario';
 $string['configpassword'] = 'Contrasinal predeterminado da ferramenta remota';
 $string['configpreferheight'] = 'Altura predeterminada preferida';
@@ -84,21 +86,30 @@ $string['configpreferwidget'] = 'Estabelecer o inicie predeterminado do trebello
 $string['configpreferwidth'] = 'Largura predeterminada preferida';
 $string['configresourceurl'] = 'Recurso URL predeterminado';
 $string['configtoolurl'] = 'URL da ferramenta remota personalizada';
-$string['configtypes'] = 'Activar as aplicacións LTI';
-$string['configured'] = 'Configurado';
+$string['configtypes'] = 'Activar os aplicativos LTI';
+$string['configured'] = 'Configirado';
 $string['confirmtoolactivation'] = 'Confirma que quere activar esta ferramenta?';
-$string['contentitem'] = 'Mensaxe de elemento de contido';
 $string['contentitem_deeplinking'] = 'Admite ligazón profunda (mensaxe de elemento de contido)';
 $string['contentitem_deeplinking_help'] = 'Se está marcada, a opción «Seleccionar contido» estará dispoñíbel ao engadir unha ferramenta externa.';
-$string['contentitem_help'] = 'Se está marcada, a opción «Seleccionar contido» estará dispoñíbel ao engadir unha ferramenta externa.';
 $string['contentitem_multiple_description'] = 'Os seguintes elementos engadiranse ao seu curso:';
 $string['contentitem_multiple_graded'] = 'Actividade cualificada (nota máxima: {$a})';
-$string['course_tool_types'] = 'Ferramentas do curso';
+$string['contentselected'] = 'Contido seleccionado';
+$string['course_tool_types'] = 'Tipos de ferramentas do curso';
 $string['courseactivitiesorresources'] = 'Actividades ou recursos do curso';
+$string['courseexternaltooladd'] = 'Engadir unha nova ferramenta externa de LTI';
+$string['courseexternaltooladdsuccess'] = 'Engadiuse {$a}';
+$string['courseexternaltooledit'] = 'Editar {$a}';
+$string['courseexternaltooleditsuccess'] = 'Cambios gardados.';
+$string['courseexternaltooliconalt'] = 'Icona para {$a}';
+$string['courseexternaltools'] = 'Ferramentas externas';
+$string['courseexternaltoolsinfo'] = 'As ferramentas externas LTI son aplicacións de engadidos que pode integrar no seu curso, como contido interactivo ou avaliacións. Os seu alumnado pode acceder e usalos sen saír do seu curso.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Non ten permiso para editar esta ferramenta';
+$string['courseexternaltoolsnoviewpermissions'] = 'Ver as ferramentas externas ao curso';
 $string['courseid'] = 'Número id do curso';
 $string['courseinformation'] = 'Información sobre o curso';
 $string['courselink'] = 'Ir ao curso';
 $string['coursemisconf'] = 'O curso non está configurado';
+$string['coursetooldeleted'] = '{$a} eliminado';
 $string['createdon'] = 'Creado o';
 $string['curllibrarymissing'] = 'Para usar LTI debe estar instalada a biblioteca cURL de PHP';
 $string['custom'] = 'Parámetros personalizados';
@@ -126,25 +137,20 @@ Algúns contedores de inicio proporcionan máis información en pantalla do esta
 $string['delegate'] = 'Delegar no profesor';
 $string['delegate_tool'] = 'Como se especifica na definición de ligazón profunda ou Delegar no profesor';
 $string['delete'] = 'Eliminar';
-$string['delete_confirmation'] = 'Confirma que quere eliminar esta ferramenta preconfigurada?';
-$string['deletetype'] = 'Eliminar a ferramenta preconfigurada';
-$string['display_description'] = 'Presentar a descrición da actividade cando se inicie';
-$string['display_description_help'] = 'De seleccionarse, a descrición da actividade (especificada antes) presentarase por riba do contido dos provedores da ferramenta.
-
-A descrición pode usarse para proporcionar instrucións adicionais para os que inician a ferramenta mais non é requirida.
-
-A descrición non se amosa nunca cando o contedor da ferramenta está nunha xanela nova.';
-$string['display_name'] = 'Presentar o nome da actividade ao iniciarse';
-$string['display_name_help'] = 'De seleccionarse, o nome da actividade (especificado antes) presentarase por riba do contido da ferramenta dos fornecedores.
-
-É posíbel que a ferramenta dos fornecedores tamén poida presentar o título. Esta opción pode evitar que o título da actividade
-apareza dúas veces.
-
-O título nunca se presenta cando o contedor de inicio está nunha nova xanela.';
+$string['delete_confirmation'] = 'Confirma que quere eliminar esta ferramenta de configuración externa?';
+$string['deletecoursetool'] = 'Eliminar {$a}';
+$string['deletecoursetoolconfirm'] = 'Isto eliminará {$a} das ferramentas LTI dispoñibles no seu curso.';
+$string['deletecoursetoolwithusageconfirm'] = '{$a} está a ser usada actualmente en polo menos unha actividade no seu curso. Se elimina esta ferramenta, as actividades que a usan xa non funcionarán.<br><br>Confirma que quere eliminar {$a}?';
+$string['deletetype'] = 'Eliminar a configuración da ferramenta externa';
+$string['display_description'] = 'Amosar a descrición da actividade cando o alumnado acceda á ferramenta';
+$string['display_description_help'] = 'O contido desta ferramenta amosase incrustado nunha páxina do curso. Este axuste determina se a descrición da actividade se amosa nesa páxina.';
+$string['display_name'] = 'Amosar o nome da actividade cando o alumnado acceda á ferramenta';
+$string['display_name_help'] = 'O contido desta ferramenta amosase incrustado nunha páxina do curso. Este axuste determina se o nome da actividade se amosa nesa páxina.';
 $string['domain_mismatch'] = 'O inicio dos URL do dominio non coincide coa configuración da ferramenta.';
 $string['donot'] = 'Non enviar';
 $string['donotaccept'] = 'Non aceptar';
 $string['donotallow'] = 'Non permitir';
+$string['dontshowinactivitychooser'] = 'Non amosar no selector de actividades';
 $string['duplicateregurl'] = 'Este URL de rexistro xa está en uso';
 $string['dynreg_update_btn_new'] = 'Rexistrar como unha nova ferramenta externa';
 $string['dynreg_update_btn_update'] = 'Actualizar';
@@ -152,17 +158,23 @@ $string['dynreg_update_name'] = 'Nome da ferramenta';
 $string['dynreg_update_notools'] = 'Non hai ferramentas no contexto.';
 $string['dynreg_update_text'] = 'Hai ferramentas existentes anexadas ao dominio do rexistro. Quere actualizar unha ferramenta
 externa xa instalada ou crear unha nova ferramenta externa?';
-$string['dynreg_update_url'] = 'URL Base';
+$string['dynreg_update_url'] = 'URL base';
 $string['dynreg_update_version'] = 'Versión LTI';
 $string['dynreg_update_warn_dupdomain'] = 'Non é recomendábel ter varias ferramentas externas no mesmo dominio.';
 $string['editdescription'] = 'Prema aquí para facer unha descrición a esta ferramenta';
-$string['edittype'] = 'Editar a ferramenta preconfigurada';
+$string['editmanualinstancedeprecationwarning'] = 'Xa non se admiten as actividades de ferramentas externas configuradas manualmente. Non se preocupe, esta actividade seguirá funcionando como está, mais xa non pode facer cambios na configuración da ferramenta.
+<br><br>
+Para realizar calquera cambio na ferramenta, ou para crear novas actividades con ela, é necesario engadir a ferramenta ao seu curso en Curso > Máis > Ferramentas externas LTI. A continuación, será quen de crear novas actividades, seleccionando a ferramenta directamente no Selector de actividades.
+<br><br>
+Pode ler máis sobre como engadir Ferramentas externas TTI na documentación <a href="{$a}" target="_blank">Ferramenta externa</a>.';
+$string['edittype'] = 'Editar a configuración da ferramenta externa';
 $string['embed'] = 'Incrustado';
 $string['embed_no_blocks'] = 'Incorporado, sen bloques';
 $string['enableemailnotification'] = 'Enviar correos de notificación';
-$string['enableemailnotification_help'] = 'De estar activado, os alumnos recibirán unha notificación por correo cando a súa ferramenta de entregas reciba cualificación.';
-$string['enterkeyandsecret'] = 'Escriba a súa chave de consumidor e o segredo compartido';
+$string['enableemailnotification_help'] = 'De estar activado, os alumnos recibirán unha notificación por correo cando a súa ferramenta de envíos reciba cualificación.';
+$string['enterkeyandsecret'] = 'Escriba a súa chave de consumidor e o secreto compartido';
 $string['enterkeyandsecret_help'] = 'Se recibiu unha chave de consumidor e/ou un segredo compartido, introdúzao aquí';
+$string['entitycourseexternaltools'] = 'Ferramentas externas';
 $string['errorbadurl'] = 'O URL non é un URL correcto de ferramenta ou cartucho.';
 $string['errorincorrectconsumerkey'] = 'A chave de consumidor é incorrecta.';
 $string['errorinvaliddata'] = 'Datos incorrectos: {$a}';
@@ -172,7 +184,7 @@ $string['errormisconfig'] = 'Ferramenta mal configurada. Pregúntelle ao seu adm
 $string['errortooltypenotfound'] = 'Non se atopou o tipo de ferramenta LTI.';
 $string['existing_window'] = 'Xanela existente';
 $string['extensions'] = 'Servizos de extensión LTI';
-$string['external_tool_type'] = 'Ferramenta preconfigurada';
+$string['external_tool_type'] = 'Tipo de ferramenta externa';
 $string['external_tool_type_help'] = '* ** Automático, baseado no URL da ferramenta ** - A mellor configuración de ferramenta é seleccionada automaticamente. Se o URL da ferramenta non se recoñece, é posíbel que deba introducir os detalles da configuración da ferramenta manualmente.
 * ** Unha ferramenta preconfigurada específica **: a configuración da ferramenta especificada será utilizada cando se comunique co provedor de ferramenta externa. Se o URL da ferramenta non parece pertencer ao fornecedor da ferramenta, amosarase unha advertencia. Non sempre é necesario introducir un URL de ferramenta.
 * ** Configuración personalizada **: pode ser necesario ingresar manualmente unha chave de consumidor e un segredo compartido. A chave do consumidor e o segredo compartido poden obterse do fornecedor da ferramenta. Non obstante, non todas as ferramentas requiren unha chave de consumidor e segredos compartidos, nese caso os campos poden quedar en branco.
@@ -184,7 +196,7 @@ Están dispoñíbeis tres iconas após o menú despregábel da ferramenta precon
 * ** Engadir ** - Crear unha configuración de ferramenta de nivel de curso. Todas as instancias de ferramentas externas neste curso poden usar a configuración da ferramenta.
 * ** Editar ** - Seleccione unha ferramenta de nivel de curso no menú despregábel e prema nesta icona. Poden editarse os detalles da configuración da ferramenta.
 * ** Eliminar ** - Retirar a ferramenta de nivel de curso seleccionada.';
-$string['external_tool_types'] = 'Ferramentas preconfiguradas';
+$string['external_tool_types'] = 'Tipos de ferramenta externa';
 $string['failedtoconnect'] = 'Moodle non foi quen de comunicarse co sistema «{$a}»';
 $string['failedtocreatetooltype'] = 'Produciuse un fallo ao crear a ferramenta nova. Revise o URL e ténteo de novo.';
 $string['failedtodeletetoolproxy'] = 'Non foi posíbel eliminar o rexistro da ferramenta. É probábel que precise visitar «Administrar os rexistros da ferramenta externa» e eliminalo manualmente.';
@@ -204,12 +216,12 @@ Ademais, todas as solicitudes de servizos Web dende o provedor da ferramenta emp
 Se utiliza esta opción, asegúrese de que o seu sitio Moodle e o provedor da ferramenta son compatíbeis con SSL';
 $string['forced_help'] = 'Este axuste foi forzado nun curso ou a nivel do sitio na configuración da ferramenta. Vostede non pode cambialo dende esta interface.';
 $string['generaltool'] = 'Ferramental xeral';
-$string['global_tool_types'] = 'Ferramentas preconfiguradas';
+$string['global_tool_types'] = 'Tipos de ferramenta externa';
 $string['grading'] = 'Rutas de cualificación';
 $string['icon_url'] = 'URL da icona';
 $string['icon_url_help'] = 'O URL da icona permite modificar a icona que se amosa na lista de cursos para esta actividade. En troques da icona LTI
 pódese especificar unha icona axeitada ao tipo de actividade.';
-$string['id'] = 'ID';
+$string['id'] = 'Id';
 $string['indicator:cognitivedepth'] = 'LTI cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade LTI.';
 $string['indicator:cognitivedepthdef'] = 'LTI cognitivo';
@@ -250,29 +262,29 @@ Algúns contedores de inicio proporcionan máis información en pantalla do esta
         Dependendo do seu navegador, abrirase nunha nova lapela ou nunha xanela emerxente.
         É posíbel que algún dos navegadores impida a apertura da nova xanela.';
 $string['launchoptions'] = 'Opcións de inicio';
-$string['leaveblank'] = 'Déixeo baleiro se non o precisa';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Engadir configuracións de ferramenta específica do curso';
 $string['lti:addinstance'] = 'Engadir novas actividades de ferramenta externa';
 $string['lti:addmanualinstance'] = 'Engadir unha ferramenta configurada manualmente';
+$string['lti:addmanualinstanceprohibitederror'] = 'Xa non se admite a creación manual de ferramentas sen definición de ferramenta de curso. Cree primeiro unha ferramenta de curso e de seguido úsea para crear instancias de actividade.';
 $string['lti:addpreconfiguredinstance'] = 'Engade unha ferramenta preconfigurada';
 $string['lti:admin'] = 'Ser un administrador cando se inicie a ferramenta';
 $string['lti:grade'] = 'Ver as cualificacións devolvidas pola ferramenta externa';
 $string['lti:manage'] = 'Ser un instrutor cando se inicie a ferramenta';
-$string['lti:requesttooladd'] = 'Solicitar que unha ferramenta estea configurada para todo o sitio';
+$string['lti:requesttooladd'] = 'Enviar unha ferramenta aos administradores para a súa configuración';
 $string['lti:view'] = 'Iniciar actividades de ferramenta externa';
-$string['lti_administration'] = 'Editar a ferramenta preconfigurada';
+$string['lti_administration'] = 'Editar a configuración da ferramenta externa';
 $string['lti_errormsg'] = 'A ferramenta devolveu a seguinte mensaxe de erro: «{$a}»';
 $string['lti_launch_error'] = 'Produciuse un erro ao iniciar a ferramenta externa:';
 $string['lti_launch_error_tool_request'] = '<p>
 Para enviar unha solicitude a de que un administrador complete a configuración da ferramenta, prema <a href="{$a->admin_request_url}" target="_top">aquí</a>.
 </p>';
-$string['lti_launch_error_unsigned_help'] = '<p>Este erro pode ser o resultado da falta dunha chave de cliente e un segredo compartida, para o provedor da ferramenta.</p>
-<p>Se vostede ten unha chave de cliente e un segredo compartido, debe fornecelos ao editar a instancia da ferramenta externa (asegúrese de que estean visíbeis as opcións avanzadas).</p>
+$string['lti_launch_error_unsigned_help'] = '<p>Este erro pode ser o resultado da falta dunha chave de cliente e un secreto compartida, para o provedor da ferramenta.</p>
+<p>Se vostede ten unha chave de cliente e un secreto compartida, debe fornecelos  ao editar a instancia da ferramenta externa (asegúrese de que estean visíbeis as opcións avanzadas).</p>
 <p>Pode tamén <a href="{$a->course_tool_editor}">crear unha configuración para o provedor da ferramenta a nivel de curso</a>. </p>';
 $string['lti_tool_request_added'] = 'A solicitude de configuración da ferramenta enviouse correctamente. Poida que necesite contactar cun administrador para completar a configuración da ferramenta.';
-$string['lti_tool_request_existing'] = 'Xa se entregou unha configuración da ferramenta no dominio da ferramenta.';
-$string['ltisettings'] = 'Axustes LTI';
+$string['lti_tool_request_existing'] = 'Xa se entregou unha configuración para a ferramenta no dominio.';
+$string['ltisettings'] = 'Configuracións LTI';
 $string['ltiunknownserviceapicall'] = 'Chamada API a servizo LTI descoñecido.';
 $string['ltiversion'] = 'Versión LTI';
 $string['ltiversion_help'] = 'A versión de LTI que se usa para asinar mensaxes e solicitudes de servizo: LTI 1.0/1.1 e LTI 2.0 usan o perfil de seguridade OAuth 1.0A; LTI 1.3.0 usa JWT';
@@ -286,13 +298,13 @@ As ferramentas enumeradas nesta páxina están separadas en tres categorías:
 * **Rexeitado** - Estes provedores de ferramentas están marcados como aqueles que un administrador no ten intención de poñer ao dispor do sitio. Os profesores poden seguir utilizando as ferramentas destes provedores se dispoñen dunha chave de cliente e dun segredo compartido ou se non se require ningunha.';
 $string['manage_external_tools'] = 'Xestionar as ferramentas';
 $string['manage_tool_proxies'] = 'Administrar os rexistros da ferramenta externa';
-$string['manage_tools'] = 'Administrar os tipos da ferramenta externa';
+$string['manage_tools'] = 'Administrar as ferramentas preconfiguradas';
 $string['manuallyaddtype'] = 'De xeito alternativo, pode <a href="{$a}">configurar unha ferramenta manualmente</a>';
 $string['miscellaneous'] = 'Varios';
 $string['misconfiguredtools'] = 'Detectáronse instancias de ferramentas mal configuradas';
 $string['missingparameterserror'] = 'A páxina está mal configurada: «{$a}»';
 $string['module_class_type'] = 'Tipo de módulo Moodle';
-$string['modulename'] = 'LTI';
+$string['modulename'] = 'Ferramenta externa';
 $string['modulename_help'] = 'O módulo de actividade da ferramenta externa permítelle aos alumnos interactuar con recursos educativos e actividades aloxadas noutros sitios de internet. Por exemplo, unha ferramenta externa podería fornecer acceso a un novo tipo de actividade ou de materiais educativos dunha editorial.
 
 Para crear unha actividade de ferramenta externa requírese dun provedor de ferramenta que admita LTI (Learning Tools Interoperability - Interoperatividade de ferramenta de aprendizaxe). Un profesor pode crear unha actividade de ferramenta externa ou facer uso dunha ferramenta configurada polo administrador do sitio.
@@ -305,7 +317,7 @@ As ferramentas externas difiren dos recursos URL en varias formas:
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulename_shortcut_link'] = 'mod/lti/view/personalizada';
 $string['modulenameplural'] = 'Ferramentas externas';
-$string['modulenamepluralformatted'] = 'Instancias LTI';
+$string['modulenamepluralformatted'] = 'Ferramentas externas';
 $string['name'] = 'Nome';
 $string['never'] = 'Nunca';
 $string['new_window'] = 'Nova xanela';
@@ -319,6 +331,7 @@ $string['no_tp_configured'] = 'Non hai rexistros de ferramentas externas non rex
 $string['no_tp_pending'] = 'Non hai rexistros pendentes de ferramentas externas.';
 $string['no_tp_rejected'] = 'Non hai rexistros pendentes de ferramentas externas.';
 $string['noattempts'] = 'Non se realizou ningún intento nesta instancia da ferramenta';
+$string['nocourseexternaltoolsnotice'] = 'Aínda non hai ferramentas LTI externas.';
 $string['noltis'] = 'Non hai instancias de ferramenta externa';
 $string['noprofileservice'] = 'No se atopou o servizo de perfil';
 $string['noservers'] = 'Non se atoparon servidores';
@@ -326,7 +339,7 @@ $string['notypes'] = 'Actualmente non hai ferramentas LTI configuradas no Moodle
 $string['noviewusers'] = 'Non se atoparon usuarios con permisos para empregar esta ferramenta';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
 $string['opensslconfiginvalid'] = 'LTI 1.3 require un openssl.cnf válido para ser configurado e dispoñíbel para o servidor web. Póñase en contacto co administrador do sitio para configurar e activar openssl para este sitio.';
-$string['optionalsettings'] = 'Axustes opcionais';
+$string['optionalsettings'] = 'Configuracións opcionais';
 $string['organization'] = 'Detalles da organización';
 $string['organizationdescr'] = 'Descrición da organización';
 $string['organizationid_default'] = 'ID de organización predeterminado';
@@ -341,7 +354,7 @@ $string['organizationurl_help'] = 'O URL base desta instancia Moodle.
 Se deixa este campo en branco, usarase un valor predeterminado baseado na configuración do sitio.';
 $string['pagesize'] = 'Entregas amosadas por páxina';
 $string['parameter'] = 'Parámetros da ferramenta';
-$string['parameter_help'] = 'Os parámetros da ferramenta son axustes solicitados que serán pasadas polo provedor da ferramenta no proxy aceptado da ferramenta.';
+$string['parameter_help'] = 'Os parámetros da ferramenta son configuracións solicitadas que serán pasadas polo provedor da ferramenta no proxy aceptado da ferramenta.';
 $string['password'] = 'Segredo compartido';
 $string['password_admin'] = 'Segredo compartido';
 $string['password_admin_help'] = 'O segredo compartido pode interpretarse como un contrasinal para autenticar o acceso á ferramenta. Debe fornecerse
@@ -361,8 +374,8 @@ xunto coa chave de cliente ao provedor da ferramenta.
 Aquelas ferramentas que non requiran unha comunicación segura con Moodle e que non fornezan servizos adicionais
 (como o informe de cualificacións) é probábel que non requiran un segredo compartido.';
 $string['pending'] = 'Pendente';
-$string['pluginadministration'] = 'Administración da LTI';
-$string['pluginname'] = 'LTI';
+$string['pluginadministration'] = 'Administración de ferramentas externas';
+$string['pluginname'] = 'Ferramenta externa';
 $string['preferheight'] = 'Alto preferido';
 $string['preferwidget'] = 'Iniciador de trebello preferido';
 $string['preferwidth'] = 'Largo preferido';
@@ -398,7 +411,7 @@ $string['publickey'] = 'Chave pública';
 $string['publickey_help'] = 'A chave pública (en formato PEM) fornecida pola ferramenta para permitir a verificación de firmas de mensaxes entrantes e solicitudes de servizo.';
 $string['publickeyset'] = 'Conxunto de chaves públicas';
 $string['publickeyset_help'] = 'Conxunto de chaves públicas dende onde obterá este sitio a chave pública da ferramenta para permitir a verificación de sinaturas de mensaxes entrantes e solicitudes de servizo.';
-$string['quickgrade'] = 'Permitir a cualificación rápida';
+$string['quickgrade'] = 'Permitir cualificación rápida';
 $string['quickgrade_help'] = 'Se está activado, poden ser cualificadas varias ferramentas nunha páxina. Engada as cualificacións e comentarios e prema no botón «Gardar todos os meus comentarios» para gardar todos os cambios desa páxina.';
 $string['redirect'] = 'Vostede vai ser redirixido nuns segundos. Se non for así, prema no botón.';
 $string['redirectionuris'] = 'URI(s) de redirección';
@@ -410,7 +423,7 @@ $string['registration_options'] = 'Opcións do rexistro';
 $string['registrationname'] = 'Nome do provedor da ferramenta';
 $string['registrationname_help'] = 'Escriba o nome do provedor da ferramenta que está a rexistrar.';
 $string['registrationurl'] = 'URL de rexistro';
-$string['registrationurl_help'] = 'O URL para o rexistro debería estar dispoñíbel dende o provedor da ferramenta como o lugar cara a onde deberían enviarse as solicitudes de rexistro.';
+$string['registrationurl_help'] = 'O URL para o rexistro debería estar dispoñíbel desde o provedor da ferramenta como o lugar cara onde deberían enviarse as solicitudes de rexistro.';
 $string['reject'] = 'Rexeitar';
 $string['rejected'] = 'Rexeitado';
 $string['resource'] = 'Recurso';
@@ -439,9 +452,11 @@ de ferramentas. Pode ser un procedemento automatizado, ou pode requirir un diál
 Aquelas ferramentas que non requiran unha comunicación segura con Moodle e que non fornezan servizos adicionais
 (como o informe de cualificacións) é probábel que non requiran unha chave para o recurso.';
 $string['resourceurl'] = 'URL do recurso';
+$string['restricttocategory'] = 'Restrinxir á categoría';
+$string['restricttocategory_help'] = 'Para restrinxir o uso desta ferramenta aos cursos dentro dunha categoría, seleccione a categoría ou categorías da lista.';
 $string['return_to_course'] = 'Prema <a href="{$a->link}" target="_top">aquí</a> para volver ao curso.';
 $string['saveallfeedback'] = 'Gardar todos os meus comentarios';
-$string['search:activity'] = 'Ferramenta externa, información da actividade';
+$string['search:activity'] = 'Ferramenta externa - información da actividade';
 $string['secure_icon_url'] = 'URL da icona segura';
 $string['secure_icon_url_help'] = 'Semellante ao URL da icona, mais empregase cando se accede de xeito seguro a través do SSL. Este campo serve para evitar que o navegador amose unha adevertencia sobre unha imaxe insegura.';
 $string['secure_launch_url'] = 'URL de inicio seguro';
@@ -449,6 +464,7 @@ $string['secure_launch_url_help'] = 'Similar o URL de ferramenta mais usase en t
 
 O URL de ferramenta tamén pode configurarse cara a un enderezo https para forzar a que se inicie mediante SSL, co que este campo pode deixarse en branco.';
 $string['selectcontent'] = 'Seleccionar contido';
+$string['selectcontentvalidationerror'] = 'Debe seleccionar contidos para esta actividade.';
 $string['send'] = 'Enviar';
 $string['services'] = 'Servizos';
 $string['services_help'] = 'Seleccione aqueles servizos que Vostede quere ofrecerlle ao provedor da ferramenta. Pode seleccionarse máis dun servizo.';
@@ -485,6 +501,7 @@ $string['show_in_course_lti2'] = 'Uso da configuración da ferramenta';
 $string['show_in_course_lti2_help'] = 'Esta ferramenta pode amosarse no selector de actividades para que un profesor a seleccione para engadila a un curso ou no menú despregábel de ferramenta preconfigurada cando se lle engade unha ferramenta externa a un curso.';
 $string['show_in_course_no'] = 'Non amosar, usar soamente cando se introduce unha coincidencia co URL lanzador';
 $string['show_in_course_preconfigured'] = 'Amosar como ferramenta preconfigurada ao engadir unha ferramenta externa';
+$string['showinactivitychooser'] = 'Amosar no selector de actividades';
 $string['sitehost'] = 'Nome de máquina do sitio';
 $string['siteid'] = 'ID do sitio';
 $string['size'] = 'Parámetros de tamaño';
@@ -497,7 +514,7 @@ $string['subplugintype_ltiservice'] = 'Servizo LTI';
 $string['subplugintype_ltiservice_plural'] = 'Servizos LTI';
 $string['subplugintype_ltisource'] = 'Orixe LTI';
 $string['subplugintype_ltisource_plural'] = 'Orixes LTI';
-$string['successfullycreatedtooltype'] = 'A nova ferramenta creouse correctamente!';
+$string['successfullycreatedtooltype'] = 'A nova ferramenta creouse satisfactoriamente!';
 $string['successfullyfetchedtoolconfigurationfromcontent'] = 'Obtívose correctamente a configuración da ferramenta dende o contido seleccionado.';
 $string['toggle_debug_data'] = 'Activar/Desactivar os datos de depuración';
 $string['tool_config_not_found'] = 'Neste URL non se atopou a configuración da ferramenta.';
@@ -526,8 +543,8 @@ Os rexistros de ferramentas listados nesta páxina están separados en catro cat
 * **Configurado** - Estes rexistros de ferramenta foron configurados, mais o proceso de rexistro aínda non foi iniciado.
 * **Pendente** - O proceso de rexistro para estas ferramentas foi iniciado, mais non foi completado. Abra e garde os axustes para movelo de volta á
 categoría de «Configurado».
-* **Aceptado** - Estes rexistros de ferramentas foron aprobados; os recursos especificados no proxy da ferramenta aparecerán dentro da páxina de tipos
-de ferramentas externas cun estado inicial «Pendente».
+* **Aceptado** - Estes rexistros de ferramentas foron aprobados; os recursos especificados no proxy de ferramentas aparecerán na páxina
+de ferramentas preconfiguradas cun estado inicial «Pendente».
 * **Rexeitado** - Estes rexistros de ferramentas son os que foron rexeitados durante o proceso de rexistro. Abra e peche as configuracións para movelo
 de volta á categoría de «Configurado» para que o proceso de rexistro poida ser reiniciado.';
 $string['toolproxyregistration'] = 'Rexistro da ferramenta externa';
@@ -536,6 +553,7 @@ $string['toolsetup'] = 'Configuración da ferramenta externa';
 $string['tooltypeadded'] = 'Engadiuse a ferramenta preconfigurada';
 $string['tooltypedeleted'] = 'Eliminouse a ferramenta preconfigurada';
 $string['tooltypenotdeleted'] = 'Non foi posíbel eliminar a ferramenta preconfigurada';
+$string['tooltypenotfounderror'] = 'Eliminouse a ferramenta LTI empregada nesta actividade. Se precisa de axuda, póñase en contacto co seu profesorado ou coa administración do sitio.';
 $string['tooltypes'] = 'Ferramentas';
 $string['tooltypeupdated'] = 'Actualizouse a ferramenta preconfigurada';
 $string['toolurl'] = 'URL base da ferramenta';
@@ -575,6 +593,7 @@ $string['unabletocreatetooltype'] = 'Non é posíbel crear a ferramenta';
 $string['unabletofindtooltype'] = 'Non é posíbel atopar a ferramenta para {$a->id}';
 $string['unknownstate'] = 'Estado descoñecido';
 $string['update'] = 'Actualizar';
+$string['usage'] = 'Reconto de usos';
 $string['useraccountinformation'] = 'Información da conta do usuario';
 $string['userpersonalinformation'] = 'Información persoal do usuario';
 $string['using_tool_cartridge'] = 'Usando cartucho de ferramenta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ru', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'ru', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,6 +45,7 @@ $string['devicetoken'] = 'Токен устройства';
 $string['donotsendnotification'] = 'Вообще не отправлять уведомления';
 $string['enableprocessor'] = 'Включить мобильные уведомления';
 $string['encryptnotifications'] = 'Шифровать уведомления';
+$string['encryptnotifications_help'] = 'Включите сквозное шифрование уведомлений приложений. Некоторые данные могут быть удалены из уведомлений, если они не могут быть зашифрованы.';
 $string['encryptprocessing'] = 'Для устройств, не поддерживающих шифрование';
 $string['encryptprocessing_desc'] = 'Для шифрования уведомлений требуется как минимум Android 8 или iOS 13 и приложение Moodle 4.2 или более поздней версии.';
 $string['errorretrievingkey'] = 'Ошибка при получении ключа доступа. Ваш сайт должен быть зарегистрирован, чтобы пользоваться этой услугой. Если ваш сайт уже зарегистрирован, попробуйте обновить регистрацию. Кроме того, вы можете получить ключ доступа, создав учетную запись на <a href="https://apps.moodle.com"> Портале приложений Moodle </a>.';

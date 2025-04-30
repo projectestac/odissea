@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'el', version '4.1'.
+ * Strings for component 'format_weeks', language 'el', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,15 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Προσθήκη εβδομάδων';
 $string['automaticenddate'] = 'Υπολογισμός της ημερομηνίας λήξης από τον αριθμό των ενοτήτων';
 $string['automaticenddate_help'] = 'Αν ενεργοποιηθεί, η ημερομηνία λήξης για το μάθημα θα υπολογίζεται αυτόματα από τον αριθμό ενοτήτων και την ημερομηνία έναρξης μαθήματος.';
 $string['currentsection'] = 'Αυτή η εβδομάδα';
-$string['deletesection'] = 'Διαγραφή εβδομάδας';
-$string['editsection'] = 'Επεξεργασία εβδομάδας';
-$string['editsectionname'] = 'Επεξεργασία ονόματος εβδομάδας';
 $string['hidefromothers'] = 'Απόκρυψη εβδομάδας';
-$string['newsectionname'] = 'Νέο όνομα για την εβδομάδα {$a}';
 $string['page-course-view-weeks'] = 'Κάθε κύρια σελίδα μαθημάτων σε μορφή εβδομάδων';
 $string['page-course-view-weeks-x'] = 'Κάθε σελίδα μαθημάτων σε μορφή εβδομάδων';
 $string['pluginname'] = 'Εβδομαδιαίος μορφότυπος μαθήματος';

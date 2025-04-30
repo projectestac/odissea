@@ -41,7 +41,7 @@ use block_completion_progress\defaults;
  * @copyright  2021 Jonathon Fowler <fowlerj@usq.edu.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class overview_test extends \advanced_testcase {
+final class overview_test extends \advanced_testcase {
     /**
      * Teacher users.
      * @var array
@@ -61,6 +61,12 @@ class overview_test extends \advanced_testcase {
     private $groups = [];
 
     /**
+     * A course object.
+     * @var object
+     */
+    private $course = null;
+
+    /**
      * Number of students to create.
      */
     const STUDENT_COUNT = 4;
@@ -69,6 +75,8 @@ class overview_test extends \advanced_testcase {
      * Create a course and add enrol users to it.
      */
     protected function setUp(): void {
+        parent::setUp();
+
         $this->resetAfterTest(true);
 
         set_config('enablecompletion', 1);
@@ -90,8 +98,10 @@ class overview_test extends \advanced_testcase {
                 null, 'manual', 0, 0, $status);
 
             // Students are put into even/odd groups.
-            $generator->create_group_member(['groupid' => $this->groups[$i % 2]->id,
-                'userid' => $this->students[$i]->id]);
+            $generator->create_group_member([
+                'groupid' => $this->groups[$i % 2]->id,
+                'userid' => $this->students[$i]->id,
+            ]);
         }
     }
 
@@ -114,7 +124,7 @@ class overview_test extends \advanced_testcase {
      * Test optional settings' effects on the overview table.
      * @covers \block_completion_progress\table\overview
      */
-    public function test_overview_options() {
+    public function test_overview_options(): void {
         global $DB, $PAGE;
 
         $output = $PAGE->get_renderer('block_completion_progress');
@@ -143,7 +153,7 @@ class overview_test extends \advanced_testcase {
         $assign = $this->create_assign_instance([
           'submissiondrafts' => 0,
           'completionsubmit' => 1,
-          'completion' => COMPLETION_TRACKING_AUTOMATIC
+          'completion' => COMPLETION_TRACKING_AUTOMATIC,
         ]);
 
         $PAGE->set_url('/');
@@ -201,7 +211,7 @@ class overview_test extends \advanced_testcase {
      * Test that the overview table correctly sorts by progress.
      * @covers \block_completion_progress\table\overview
      */
-    public function test_overview_percentage_sort() {
+    public function test_overview_percentage_sort(): void {
         global $DB, $PAGE;
 
         $PAGE->set_url('/');
@@ -231,12 +241,12 @@ class overview_test extends \advanced_testcase {
 
         $page1 = $generator->create_module('page', [
             'course' => $this->course->id,
-            'completion' => COMPLETION_TRACKING_MANUAL
+            'completion' => COMPLETION_TRACKING_MANUAL,
         ]);
         $page1cm = get_coursemodule_from_id('page', $page1->cmid);
         $page2 = $generator->create_module('page', [
             'course' => $this->course->id,
-            'completion' => COMPLETION_TRACKING_MANUAL
+            'completion' => COMPLETION_TRACKING_MANUAL,
         ]);
         $page2cm = get_coursemodule_from_id('page', $page2->cmid);
 

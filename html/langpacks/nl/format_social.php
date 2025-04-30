@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'nl', version '4.1'.
+ * Strings for component 'format_social', language 'nl', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Aantal discussies';
 $string['numberdiscussions_help'] = 'Deze instelling bepaalt hoe discussies getoond moeten worden.';
-$string['pluginname'] = 'Forumformat';
+$string['plugin_description'] = 'De cursus is gecentreerd rond een hoofdforum op de cursuspagina. Extra activiteiten en bronnen kunnen worden toegevoegd via het blok Sociale activiteiten.';
+$string['pluginname'] = 'Sociaal';
 $string['privacy:metadata'] = 'De sociaal formaatplugin bewaart geen persoonlijke gegevens.';
 $string['sectionname'] = 'sectie';

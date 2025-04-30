@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'it', version '4.1'.
+ * Strings for component 'forum', language 'it', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Sottoscrivi tutti i forum';
 $string['allunsubscribe'] = 'Revoca la sottoscrizione da tutti i forum';
 $string['allusers'] = 'Tutti gli  utenti';
 $string['alreadyfirstpost'] = 'Questo è già il primo intervento della discussione';
+$string['announcementsettings'] = 'Impostazioni di default del forum annunci';
+$string['announcementsettings_help'] = 'Impostazioni che definiscono il default dei forum annunci';
 $string['anyfile'] = 'Qualsiasi file';
 $string['areaattachment'] = 'Allegati';
 $string['areapost'] = 'Messaggi';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Nell\'intervallo di tempo stabilito gli utenti no
 $string['blockperioddisabled'] = 'Nessun intervallo di controllo';
 $string['blogforum'] = 'Forum standard visualizzato in stile blog';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Conteggio discussioni forum';
 $string['cachedef_forum_is_tracked'] = 'Stato evidenziazione messaggi dell\'utente';
 $string['calendardue'] = 'Devi intervenire in {$a}';
 $string['cancelreply'] = 'Elimina risposta';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Chiudi valutazioni';
 $string['completiondetail:discussions'] = 'Avviare discussioni : {$a}';
 $string['completiondetail:posts'] = 'Effettuare interventi: {$a}';
 $string['completiondetail:replies'] = 'Dare risposte: {$a}';
-$string['completiondiscussions'] = 'Lo studente deve avviare il seguente numero di discussioni:';
+$string['completiondiscussions'] = 'Avviare discussioni';
 $string['completiondiscussionsdesc'] = 'Lo studente deve avviare almeno il seguente numero di discussioni: {$a}';
 $string['completiondiscussionsgroup'] = 'Numero minimo discussioni';
 $string['completiondiscussionshelp'] = 'è necessario un numero minimo di discussioni';
-$string['completionposts'] = 'Lo studente deve effettuare il seguente numero di discussioni o interventi:';
+$string['completionposts'] = 'Avvio di discussioni e numero di risposte';
 $string['completionpostsdesc'] = 'Lo studente deve effettuare almeno {$a} discussioni o interventi';
 $string['completionpostsgroup'] = 'Numero minimo interventi';
 $string['completionpostshelp'] = 'è necessario un numero minimo di discussioni o di interventi';
-$string['completionreplies'] = 'Lo studente deve effettuare il seguente numero di interventi:';
+$string['completionpostsinforums'] = 'Interventi nel forum';
+$string['completionreplies'] = 'Numero di interventi:';
 $string['completionrepliesdesc'] = 'Lo studente deve effettuare almeno {$a} interventi';
 $string['completionrepliesgroup'] = 'Numero minimo risposte';
 $string['completionreplieshelp'] = 'è necessario un numero minimo di interventi';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'Inserimento intervento nel forum';
 $string['eventcoursesearched'] = 'Effettuazione ricerca nel corso';
 $string['eventdiscussioncreated'] = 'Creazione discussione';
 $string['eventdiscussiondeleted'] = 'Eliminazione discussione';
+$string['eventdiscussionlockupdated'] = 'Aggiornamento blocco discussione';
 $string['eventdiscussionmoved'] = 'Spostatmento discussione';
 $string['eventdiscussionpinned'] = 'evidenziazione della discussione';
 $string['eventdiscussionsubscriptioncreated'] = 'Creazione sottoscrizione della discussione';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Eliminazione sottoscrizione del
 $string['eventdiscussionunpinned'] = 'Rimozione evidenziazione della discussione';
 $string['eventdiscussionupdated'] = 'Aggiornamento discussione';
 $string['eventdiscussionviewed'] = 'Visualizzazione discussione';
+$string['eventforumsubscriptionupdated'] = 'Aggiornamento modalità sottoscrizione';
 $string['eventpostcreated'] = 'Creazione intervento';
 $string['eventpostdeleted'] = 'Eliminazione intervento';
 $string['eventpostupdated'] = 'Aggiornamento intervento';
@@ -298,6 +304,7 @@ $string['forum:addinstance'] = 'Aggiungere forum';
 $string['forum:addnews'] = 'Aggiungere annunci';
 $string['forum:addquestion'] = 'Aggiungere domanda';
 $string['forum:allowforcesubscribe'] = 'Consentire sottoscrizione obbligatoria';
+$string['forum:canmailnow'] = 'Inserire interventi nel forum Domande e Risposte senza ritardo di modifica';
 $string['forum:canoverridecutoff'] = 'Intervenire nei forum dopo la data limite';
 $string['forum:canoverridediscussionlock'] = 'Intervenire in discussioni bloccate';
 $string['forum:canposttomygroups'] = 'Inserire interventi in tutti i gruppi dove si ha accesso';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'L\'intervento non ha allegati';
 $string['nodiscussions'] = 'Al momento in questo forum non sono presenti argomenti di discussione';
 $string['nodiscussionsstartedby'] = '{$a} non ha avviato nessuna discussione';
 $string['nodiscussionsstartedbyyou'] = 'Non hai avviato nessuna discussione';
-$string['noguestpost'] = 'Spiacente, gli ospiti non possono effettuare interventi.';
+$string['noguestpost'] = 'Solamente gli utenti autenticati possono effettuare interventi.';
+$string['noguestpost:title'] = 'Autenticati per proseguire';
 $string['noguestsubscribe'] = 'Spiacente, gli ospiti non possono effettuare sottoscrizioni';
 $string['noguesttracking'] = 'Spiacente, agli ospiti non è consentito di impostare le opzioni di evidenziazione dei messaggi non letti.';
 $string['nomorepostscontaining'] = 'Non sono stati trovati altri interventi contenenti \'{$a}\'';
@@ -543,9 +551,6 @@ $string['postbyuser'] = '{$a->post} di {$a->user}';
 $string['postincontext'] = 'Visualizza questo intervento nel contesto';
 $string['postisprivatereply'] = 'Questa è una risposta privata e non è visibile ad altri utenti ad eccezione di coloro che posseggono il privilegio di visualizzare risposte private, come i docenti.';
 $string['postmailinfo'] = 'Questa è la copia di un intervento effettuato su {$a} .';
-$string['postmailinfolink'] = 'Questa è una copia del messaggio inserito nel forum del corso {$a->coursename}.
-
-Per rispondere, utilizza il link seguente: {$a->replylink}';
 $string['postmailnow'] = '<p>L\' intervento sarà inviato immediatamente nelle email dei sottoscrittori.</p>';
 $string['postmailreply'] = 'Per rispondere fare click sul seguente collegamento: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

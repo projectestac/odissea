@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ru', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ru', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Также показать вопро
 $string['attemptstograde'] = 'Оцениваемые попытки';
 $string['automaticallygraded'] = 'Автоматически оцененные';
 $string['backtothelistofquestions'] = 'Назад к списку вопросов';
-$string['bydate'] = 'По дате';
-$string['bystudentfirstname'] = 'По имени студента';
-$string['bystudentidnumber'] = 'По ID студента';
-$string['bystudentlastname'] = 'По фамилии студента';
 $string['cannotgradethisattempt'] = 'Эта попытка не оценена';
 $string['cannotloadquestioninfo'] = 'Невозможно загрузить специфическую информацию о типе вопроса ';
 $string['changeoptions'] = 'Изменить параметры';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'Все попытки для этого вопроса:
 $string['gradingattempt'] = 'Попытка номер {$a->attempt} студента {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Оценивание попыток {$a->from} - {$a->to} из {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Номер попытки {$a->attempt} для {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Номер попытки {$a->attempt} для {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Следующие {$a} неоцененных попыток';
 $string['gradingnotallowed'] = 'У вас нет прав вручную оценивать ответы этого теста';
 $string['gradingquestionx'] = 'Оценивание вопроса {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Оцениваемый вопрос с ID {$a} �
 $string['noquestionsfound'] = 'Вручную оцениваемые вопросы не найдены';
 $string['nothingfound'] = 'Нечего отображать';
 $string['options'] = 'Параметры';
-$string['orderattempts'] = 'Порядок попыток';
 $string['orderattemptsby'] = 'Упорядочить попытки по';
 $string['pluginname'] = 'Оценивание вручную';
 $string['privacy:preference:order'] = 'В каком порядке показывать попытки, требующие оценки.';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Вопросов на страницу';
 $string['questionsthatneedgrading'] = 'Вопросы, требующие оценки';
 $string['questiontitle'] = 'Вопрос {$a->number} : «{$a->name}» ({$a->openspan}{$a->gradedattempts}{$a->closespan} из {$a->totalattempts} попыток {$a->openspan}оценено{$a->closespan}).';
 $string['random'] = 'Произвольно';
-$string['randomly'] = 'Случайно';
 $string['saveandnext'] = 'Сохранить и перейти на следующую страницу';
 $string['showstudentnames'] = 'Показывать имена студентов';
 $string['tograde'] = 'Оценить';

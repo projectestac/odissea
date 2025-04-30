@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'pt', version '4.1'.
+ * Strings for component 'question', language 'pt', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -176,6 +176,8 @@ $string['errorprocessingresponses'] = 'Ocorreu um erro enquanto processava as su
 $string['errorsavingcomment'] = 'Ocorreu um erro ao guardar na base de dados o comentário da pergunta {$a->name}.';
 $string['errorsavingflags'] = 'Ocorreu um erro ao guardar a marcação.';
 $string['errorupdatingattempt'] = 'Ocorreu um erro ao atualizar na base de dados a tentativa {$a->id}.';
+$string['eventqbankdisabled'] = 'Módulo da base de dados de perguntas desativado';
+$string['eventqbankenabled'] = 'Módulo da base de dados de perguntas ativado';
 $string['eventquestioncategorycreated'] = 'Criada categoria de pergunta';
 $string['eventquestioncategorydeleted'] = 'Apagada categoria de perguntas';
 $string['eventquestioncategorymoved'] = 'Movida categoria de perguntas';
@@ -265,6 +267,7 @@ $string['invalidcategoryidtomove'] = 'ID da categoria inválido para mover!';
 $string['invalidconfirm'] = 'Confirmação incorreta';
 $string['invalidcontextinhasanyquestions'] = 'Um contexto inválido foi passado a question_context_has_any_questions.';
 $string['invalidgrade'] = 'As notas ({$a}) não correspondem às opções definidas - a pergunta foi ignorada';
+$string['invalidgradequestion'] = 'As notas ({$a->grades}) não correspondem às opções da nota - pergunta \'{$a->question}\' ignorada.';
 $string['invalidpenalty'] = 'Penalização inválida';
 $string['invalidwizardpage'] = 'Incorreto ou nenhuma página do assistente foi especificada';
 $string['lastmodifiedby'] = 'Última modificação por';
@@ -310,6 +313,7 @@ $string['movingquestionsnofiles'] = 'Tem a certeza de que pretende mover a(s) pe
 <strong>Não existem</strong> ficheiros ligados a essa(s) pergunta(s) em {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Tem de escolher uma categoria para onde pretende mover esta pergunta ou clique em \'Cancelar\'.';
 $string['nocate'] = 'Não existe a categoria \'{$a}\'!';
+$string['noconditionspecified'] = 'Especifique uma condição';
 $string['nopermissionadd'] = 'Não tem permissão para adicionar perguntas aqui.';
 $string['nopermissionedit'] = 'Não tem permissão para editar perguntas a partir daqui.';
 $string['nopermissionmove'] = 'Não tem permissão para mover perguntas a partir desta categoria. Tem de guardar a pergunta nesta categoria ou como uma nova pergunta.';
@@ -324,7 +328,6 @@ $string['notchanged'] = 'Não modificada desde a última tentativa';
 $string['notenoughanswers'] = 'Esse tipo de pergunta exige pelo menos {$a} respostas';
 $string['notenoughdatatoeditaquestion'] = 'Não foi especificado o tipo de pergunta, seu código e o da categoria.';
 $string['notenoughdatatomovequestions'] = 'Tem de indicar os ID das perguntas que pretende mover.';
-$string['notflagged'] = 'Sem marcação';
 $string['notgraded'] = 'Sem avaliação';
 $string['notshown'] = 'Não mostrar';
 $string['notyetanswered'] = 'Por responder';
@@ -416,7 +419,7 @@ $string['questionpreviewdefaults'] = 'Predefinições da pré-visualização da 
 $string['questionpreviewdefaults_desc'] = 'Estas configurações predefinidas são usadas quando o utilizador pré-visualiza pela primeira vez uma pergunta na base de dados de perguntas. Depois de pré-visualizar a pergunta, as suas preferências pessoais serão guardadas como preferências do utilizador.';
 $string['questions'] = 'Perguntas';
 $string['questionsaveerror'] = 'Ocorreram erros ao guardar a pergunta - ({$a})';
-$string['questionsinuse'] = '(*) Assinala perguntas que não podem ser apagadas porque estão a ser usadas. Em vez disso, elas ficarão ocultas na base de dados de perguntas, a menos que selecione \'Mostrar perguntas antigas\'.';
+$string['questionsinuse'] = '(*) Assinala perguntas que não podem ser apagadas porque estão a ser usadas. Em vez disso, elas ficarão ocultas na base de dados de perguntas, a menos que configure \'Mostrar perguntas antigas\' como \'Sim\' .';
 $string['questionsmovedto'] = 'As perguntas que ainda se encontram em uso foram movidas para "{$a}" na categoria ascendente da disciplina.';
 $string['questionsrescuedfrom'] = 'Perguntas guardadas do contexto \'{$a}\'.';
 $string['questionsrescuedfrominfo'] = 'Estas perguntas (algumas das quais podem estar ocultas) foram guardadas quando o contexto \'{$a}\' foi apagado, uma vez que ainda se encontravam em uso em alguns Testes ou outras atividades.';
@@ -429,7 +432,7 @@ $string['questionx'] = 'Pergunta {$a}';
 $string['requiresgrading'] = 'Requer avaliação';
 $string['responsehistory'] = 'Histórico da resposta';
 $string['restart'] = 'Recomeçar';
-$string['restartwiththeseoptions'] = 'Recomeçar com estas opções';
+$string['restartwiththeseoptions'] = 'Guarde as opções de visualização e comece novamente';
 $string['restoremultipletopcats'] = 'O ficheiro da cópia de segurança contém mais do que uma categoria de perguntas de nível de topo para o contexto \'{$a}\'.';
 $string['reviewresponse'] = 'Rever resposta';
 $string['rightanswer'] = 'Resposta correta';
@@ -444,7 +447,9 @@ $string['selectcategoryabove'] = 'Selecione a categoria acima';
 $string['selectquestionsforbulk'] = 'Selecione as perguntas para ações em massa';
 $string['settingsformultipletries'] = 'Múltiplas tentativas';
 $string['shareincontext'] = 'Partilhar no contexto \'{$a}\'';
-$string['showhidden'] = 'Mostrar perguntas antigas';
+$string['shortversioninfo'] = 'v{$a->version} (de {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (última)';
+$string['showhidden'] = 'Mostrar perguntas ocultas';
 $string['showmarkandmax'] = 'Mostrar a nota e a nota máxima';
 $string['showmaxmarkonly'] = 'Mostrar apenas a nota máxima';
 $string['shown'] = 'Mostrar';
@@ -496,6 +501,8 @@ $string['upgradeproblemcategoryloop'] = 'Foram detetados problemas na atualizaç
 $string['upgradeproblemcouldnotupdatecategory'] = 'Não foi possível atualizar a categoria de perguntas {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Foram detetados problemas na atualização das categorias. A categoria {$a->id} tem como categoria ascendente {$a->parent}, que não existe. A categoria ascendente foi alterada para resolver o problema.';
 $string['version_selection'] = 'Versão {$a->version}';
+$string['versioninfo'] = 'Versão {$a->version} (de {$a->latestversion})';
+$string['versioninfolatest'] = 'Versão {$a->version} (última)';
 $string['whethercorrect'] = 'Correta/incorreta';
 $string['whethercorrect_help'] = 'A avaliação na forma de texto \'Correta\', \'Parcialmente correta\' ou \'Incorreta\', ou a cor de realce que expressa essa mesma informação.';
 $string['whichtries'] = 'Que tentativas';

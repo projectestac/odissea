@@ -48,6 +48,6 @@ Feature: Enable activity rating according to chosen grading scale
     And I set the field "rating" to "10"
     When I am on the "Course 1" "grades > Grader report > View" page
     Then the following should exist in the "user-grades" table:
-      | -1-         | -3-                  | -4-  |
+      | -1-         | -2-                  | -3-  |
       | Student One | student1@example.com | 2.00 |
       | Student Two | student2@example.com | 1.00 |

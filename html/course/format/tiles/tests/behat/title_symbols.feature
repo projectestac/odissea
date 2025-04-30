@@ -37,6 +37,7 @@ Feature: When tile and activity titles are shown, symbols like "&" are displayed
     And I wait until the page is ready
     And I click on tile "1"
     And I wait until the page is ready
+    And I wait "1" seconds
     And I should see "Page with & symbol"
     And I should see "Label content with & symbol"
     And I should not see "Page with &amp; symbol"
@@ -50,6 +51,7 @@ Feature: When tile and activity titles are shown, symbols like "&" are displayed
     And I wait until the page is ready
     And I click on tile "1"
     And I wait until the page is ready
+    And I wait "1" seconds
     And I should see "Page with & symbol"
     And I should see "Label content with & symbol"
     And I should not see "Page with &amp; symbol"
@@ -74,9 +76,8 @@ Feature: When tile and activity titles are shown, symbols like "&" are displayed
     And I am on "C1" course homepage with editing mode on
     And I wait until the page is ready
     And I wait "1" seconds
-    And I edit the section "2" and I fill the form with:
-      | Custom                     | 1                       |
-      | New value for Section name | Tile name with & symbol |
+    And I click on "Edit section name" "link" in the "li#section-2" "css_element"
+    And I set the field "New name for section Tile 2" to "Tile name with & symbol"
     And I press enter
     And I am on "C1" course homepage with editing mode on
     And I wait until the page is ready

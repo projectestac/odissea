@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_vimeo', language 'ar', version '4.1'.
+ * Strings for component 'media_vimeo', language 'ar', version '4.4'.
  *
  * @package     media_vimeo
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['donottrack'] = 'تمكين خاصية عدم تتبع روابط Vimeo';
+$string['donottrack_desc'] = 'عند تمكينها، لن يقوم المشغل بتتبع أي بيانات للجلسة، شاملاً ذلك كل ملفات تعريف الارتباط والتحليلات.';
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'موقع مشاركة الفيديوهات vimeo.com.';
 $string['privacy:metadata'] = 'إن ملحق مشغل وسائط Vimeo لا يخزن أي بيانات شخصية.';

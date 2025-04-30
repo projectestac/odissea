@@ -23,14 +23,18 @@
  */
 namespace core\plugininfo;
 
-use moodle_url, core_plugin_manager;
-
-defined('MOODLE_INTERNAL') || die();
+use core_plugin_manager;
+use moodle_url;
 
 /**
  * Class for question behaviours.
  */
 class qbehaviour extends base {
+
+    public static function plugintype_supports_disabling(): bool {
+        return true;
+    }
+
     /**
      * Finds all enabled plugins, the result may include missing plugins.
      * @return array|null of enabled plugins $pluginname=>$pluginname, null means unknown
@@ -85,13 +89,6 @@ class qbehaviour extends base {
     }
 
     public function is_uninstall_allowed() {
-        // XTEC ************ AFEGIT - Disable uninstalling
-        // 2014.09.09 @pferre22
-        if (!get_protected_agora()) {
-            return false;
-        }
-        //************ FI
-
         global $DB;
 
         if ($this->name === 'missing') {

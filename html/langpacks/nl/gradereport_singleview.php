@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'nl', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'nl', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Overschrijvingen verwijderen';
 $string['save'] = 'Bewaar';
 $string['savegrades'] = 'Cijfers bewaren';
 $string['savegradessuccess'] = 'Cijfers zijn voor {$a} items ingesteld';
-$string['searchgrades'] = 'Cijferitems zoeken';
 $string['selectagrade'] = 'Selecteer een cijferitem';
 $string['selectgradeitemlink'] = 'Selecteer een cijfer-item';
 $string['singleview:view'] = 'Bekijk enkel';
 $string['singleviewdescription'] = 'In enkele weergave kun je geselecteerde cijfers overschrijven of uitsluiten en cijfers in bulk invoegen.';
+$string['singleviewreport_gradeitem'] = 'Enkele weergave voor dit item';
+$string['singleviewreport_user'] = 'Enkele weergave voor deze gebruiker';
 $string['summarygrade'] = 'Een tabel met gebruikers, met kolommen voor bereik, cijfer, feedback en of bepaalde cijfers moeten overschreven of uitgesloten worden.';
 $string['summaryuser'] = 'Een tabel met beoordelingsitems, met kolommen voor cijfercategorie, bereik, cijfer feedback en of bepaalde cijfers moeten overschreven of uitgesloten worden.';
 $string['unsavedataalert'] = 'Als je niet-opgeslagen wijzigingen op de pagina hebt, verlies je die als je doorgaat met bulk invoegen van cijfers.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Waarschuwing niet-opgeslagen gegevens';
 $string['userselect'] = 'Selecteer activiteit';
 $string['viewby'] = 'Bekijken per';
 $string['viewsinglegradeitem'] = 'Selecteer hierboven een cijferitem';
-$string['viewsingleuser'] = 'Selecteer hierboven een gebruiker van wie je alle cijfers wil bekijken';
+$string['viewsingleuser'] = 'Zoek een gebruiker van wie je alle cijfers wil bekijken';
 $string['viewsingleuserorgradeitem'] = 'Bekijk alle cijfers van een enkele gebruiker of cijferitem.';

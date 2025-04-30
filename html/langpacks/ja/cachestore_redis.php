@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'ja', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'ja', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'CAファイルパス';
+$string['ca_file_help'] = 'ローカルファイルシステム上の認証局ファイルの場所です。';
+$string['clustermode'] = 'クラスタモード';
+$string['clustermode_help'] = 'クラスタモード設定を有効にした場合、Redisクラスタ機能が実行されてサーバが複数サーバに同時にリクエストを処理できるようになります。';
+$string['clustermodeunavailable'] = 'Redis Clusterは現在使用できません。PHP Redis拡張モジュールがRedis Cluster機能をサポートしていることをご確認ください。';
 $string['compressor_none'] = '圧縮しません';
 $string['compressor_php_gzip'] = 'gzip圧縮を使用します';
 $string['compressor_php_zstd'] = 'Zstandard圧縮を使用します';
+$string['connectiontimeout'] = '接続タイムアウト';
+$string['connectiontimeout_help'] = 'ここではRedisサーバへの接続を試みる際のタイムアウトを設定します。';
+$string['encrypt_connection'] = 'TLS暗号化を使用する';
+$string['encrypt_connection_help'] = 'TLSを使用してRedisに接続します。Redisホスト名に「tls://」を使用せず、代わりにこのオプションを使用します。';
 $string['password'] = 'パスワード';
 $string['password_help'] = 'ここではRedisサーバにパスワードを設定します。';
 $string['pluginname'] = 'Redis';
@@ -41,14 +50,48 @@ $string['privacy:metadata:redis:data'] = 'キャッシュに保存された様�
 $string['serializer_igbinary'] = 'igbinaryシリアライザ';
 $string['serializer_php'] = 'デフォルトPHPシリアライザ';
 $string['server'] = 'サーバ';
-$string['server_help'] = 'ここではRedisサーバが使用するホスト名またはIPアドレスを設定します。';
+$string['server_help'] = 'テストに使用するRedisサーバです。
+
+以下、値の例をいくつか示します:
+
+* testredis.abc.com - ホスト名でRedisサーバに接続します (デフォルトではポート6379)。
+* testredis.abc.com:1234 - ホスト名の特定のポートでRedisサーバに接続します。
+* 1.2.3.4 - IPアドレス (デフォルトではポート6379) でRedisサーバに接続します。
+* 1.2.3.4:1234 - IPアドレスの特定のポートでRedisサーバに接続します。
+* unix:///var/redis.sock - Unixソケットを使用してRedisサーバに接続します。
+* /var/redis.sock - Unixソケット (代替フォーマット) を使用してRedisサーバに接続します。
+
+* クラスタモードが有効にされている場合、改行で区切ってサーバを指定してください。例えば以下のようになります:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+詳細情報は<a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">クライアント接続を受け付ける</a> および<a href="https://redis.io/resources/clients/#php" target="_new">Redis PHPクライアント</a>をご覧ください。';
 $string['task_ttl'] = 'Redisキャッシュ期限切れエントリが使用するメモリを解放する';
+$string['test_clustermode'] = 'クラスタモード';
+$string['test_clustermode_desc'] = 'Redisクラスタモードでテストを有効にします。';
 $string['test_password'] = 'テストサーバパスワード';
 $string['test_password_desc'] = 'Redisテストサーバのパスワードです。';
 $string['test_serializer'] = 'シリアライザ';
 $string['test_serializer_desc'] = 'テストに使用するシリアライザです。';
 $string['test_server'] = 'テストサーバ';
-$string['test_server_desc'] = 'テストに使用するRedisサーバです。';
+$string['test_server_desc'] = 'テストに使用するRedisサーバです。
+
+以下、値の例をいくつか示します:
+
+* testredis.abc.com - ホスト名でRedisサーバに接続します (デフォルトではポート6379)。
+* testredis.abc.com:1234 - ホスト名の特定のポートでRedisサーバに接続します。
+* 1.2.3.4 - IPアドレス (デフォルトではポート6379) でRedisサーバに接続します。
+* 1.2.3.4:1234 - IPアドレスの特定のポートでRedisサーバに接続します。
+* unix:///var/redis.sock - Unixソケットを使用してRedisサーバに接続します。
+* /var/redis.sock - Unixソケット (代替フォーマット) を使用してRedisサーバに接続します。
+
+* クラスタモードが有効にされている場合、改行で区切ってサーバを指定してください。例えば以下のようになります:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+詳細情報は<a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">クライアント接続を受け付ける</a> および<a href="https://redis.io/resources/clients/#php" target="_new">Redis PHPクライアント</a>をご覧ください。';
 $string['test_ttl'] = 'TTLテスト';
 $string['test_ttl_desc'] = 'TTL (遅いセット) を必要とするキャッシュを使用してパフォーマンステストを実行します。';
 $string['usecompressor'] = '圧縮を使用する';

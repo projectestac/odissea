@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'de', version '4.1'.
+ * Strings for component 'attendance', language 'de', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -282,7 +282,7 @@ $string['hidensessiondetails'] = 'Verberge Termin-Details';
 $string['identifyby'] = 'Teilnehmer/innen auswählen nach';
 $string['import'] = 'Import';
 $string['importfile'] = 'Importdatei';
-$string['importfile_help'] = 'Importdatei';
+$string['importfile_help'] = 'Die CSV-Datei muss eine Kopfzeile und Felder zur Identifizierung der Gruppen, der Uhrzeit und der zu erstellenden Daten der Termine enthalten.<br/>Auf der nächsten Seite nach der Dateiablage werden Ihnen Beispiele aller Felder angezeigt, denen Sie Ihre eigenen Felder zuordnen können.<br/>Beispiel:<br/>groups;sessiondate;from;to<br/>groupA:05-10-2022;13:00;14:00<br/>groupB;05-10-2022;14:00;15:00';
 $string['importsessions'] = 'Termine importieren';
 $string['importstatus'] = 'Statusfeld';
 $string['importstatus_help'] = 'Dies ermöglicht es, einen Statuswert (zum Beispiel A,E,V,U) für den Import einzutragen.';
@@ -316,7 +316,7 @@ $string['iptimemissing'] = 'Ungültige Minuten für Freigabe';
 $string['jumpto'] = 'Direkt zu ...';
 $string['keepsearching'] = 'Suche fortsetzen';
 $string['lasttaken'] = 'Zuletzt aufgenommene Anwesenheiten';
-$string['manualtriggerauto'] = 'Asutomatische Markieren manuell auslösen';
+$string['manualtriggerauto'] = 'Automatisches Markieren manuell auslösen';
 $string['marksessionimportcsvhelp'] = 'Mit diesem Formular können Sie eine CSV-Datei hochladen, die eine Nutzerkennung und Status beinhaltet. Das Statusfeld kann dabei entweder die Status-Kurzbezeichnung (zum Beispiel A,E,V,U) beinhalten oder die Zeit der Teilnahme des/der Nutzers/in (zum Beispiel 01.01.1970 8:00). Diese zwei Varianten können in einer Datei aber nicht gemischt werden. Wenn ein Zeitstempel importiert wird, dann versucht das System diesem den höchstmöglich verfügbaren Statuswert zuzuweisen.';
 $string['maxpossible'] = 'Mögliches Maximum';
 $string['maxpossible_help'] = 'Zeigt die Punktzahl an, die jede/r Teilnehmer/in noch erreichen kann, wenn diese/r die Maximalpunkte für jeden Termin, der noch nicht stattgefunden hat, erhält.

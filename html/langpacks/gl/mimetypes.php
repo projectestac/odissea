@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'gl', version '4.1'.
+ * Strings for component 'mimetypes', language 'gl', version '4.4'.
  *
  * @package     mimetypes
  * @category    string
@@ -39,11 +39,11 @@ $string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Modelo de 
 $string['application/vnd.oasis.opendocument.text'] = 'Documento de texto de OpenDocument';
 $string['application/vnd.oasis.opendocument.text-template'] = 'Modelo de documento de texto de OpenDocument';
 $string['application/vnd.oasis.opendocument.text-web'] = 'Modelo de páxina web de OpenDocument';
-$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Presentación Powerpoint 2007';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Presentación en diapositivas Powerpoint 2007';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Folla de cálculo Excel 2007';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Modelo de Excel 2007';
-$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Documento Word 2007';
+$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Presentación Powerpoint2007';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Presentación en diapositivas Powerpoint2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Folla de cálculo Excel2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Modelo de Excel2007';
+$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Documento Word2007';
 $string['application/x-iwork-keynote-sffkey'] = 'Presentación iWork Keynote';
 $string['application/x-iwork-numbers-sffnumbers'] = 'Folla de cálculo iWork Numbers';
 $string['application/x-iwork-pages-sffpages'] = 'Documento iWork Pages';

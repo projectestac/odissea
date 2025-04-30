@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ar', version '4.1'.
+ * Strings for component 'auth_ldap', language 'ar', version '4.4'.
  *
  * @package     auth_ldap
  * @category    string
@@ -153,6 +153,9 @@ $string['renamingnotallowed'] = 'إعادة تسمية المستخدم غير �
 $string['rootdseerror'] = 'خطأ عند استعلام rootDSE للمجلد النشط';
 $string['start_tls'] = 'استعمل خدمة LDAP الاعتيادية (المنفذ 389) بتشفير TLS';
 $string['start_tls_key'] = 'استعمل TLS';
+$string['sync_updateuserchunk'] = 'ضع هنا القيمة التي تمثل عدد المستخدمين الذين تريد تحديثهم لكل عملية تبادل بيانات.
+عند وضعه على قيمة 0 سيتم تحديث كل المستخدمين بعملية تبادل بيانات واحدة.';
+$string['sync_updateuserchunk_key'] = 'حجم كتلة تبادل بيانات مزامنة المستخدمين';
 $string['syncroles'] = 'مزامنة أدوار النظام من LDAP';
 $string['synctask'] = 'عملية مزامنة المستخدمين في LDAP';
 $string['systemrolemapping'] = 'تعيين دور النظام';

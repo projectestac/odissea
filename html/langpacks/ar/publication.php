@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'ar', version '4.1'.
+ * Strings for component 'publication', language 'ar', version '4.4'.
  *
  * @package     publication
  * @category    string
@@ -36,11 +36,9 @@ $string['eventpublicationfileuploaded'] = 'ملف نشر تم رفعه';
 $string['modulename'] = 'مجلد الطالب';
 $string['modulenameplural'] = 'مجلدات الطالب';
 $string['name'] = 'اسم مجلد الطالب';
-$string['notice_uploadrequireapproval'] = 'كل المرفات المرفوعة ستصير مرئية لكن بعد مراجعة المعلم';
+$string['overview'] = 'نظرة عامة';
 $string['pluginadministration'] = 'إدارة مجلد الطالب';
 $string['pluginname'] = 'مجلد الطالب';
 $string['privacy:type:upload'] = 'الملف المرفوع';
 $string['publication:addinstance'] = 'إضافة مجلد طالب جديد';
 $string['search:activity'] = 'مجلد الطالب - معلومات النشاط';
-$string['warning_changefromobtainteacherapproval'] = 'بعد تفعيل هذا الإعداد، ستصير كل الملفات المرفوعة مرئية من قبل المشاركين الآخرين. كل ما تم رفعه سيصير مرئيًا. يمكنك جعل بعض الملفات مخفية عن طلاب معينين.';
-$string['warning_changetoobtainteacherapproval'] = 'بعد تعطيل هذا الإعداد، ستصير كل الملفات المرفوعة مخفية عن المشاركين الآخرين تلقائيًا. سيترتب عليك تحديد ما ينبغي إظهاره. الملفات المرئية سابقًا ستصير مخفية.';

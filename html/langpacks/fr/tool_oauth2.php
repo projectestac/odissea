@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'fr', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'fr', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'Se connecter à un compte système';
 $string['createfromtemplate'] = 'Créer un service OAuth 2 à partir d’un modèle';
 $string['createfromtemplatedesc'] = 'Choisir une des modèles de service OAuth 2 pour créer un service OAuth avec une configuration valide pour l’un des types de services connus. Ceci créera un service OAuth avec tous les points de connexion et paramètres requis pour l’authentification. Vous devrez cependant saisir encore l’ID client et le secret pour que le nouveau service puisse être utilisé.';
 $string['createnewendpoint'] = 'Créer un point de terminaison pour le fournisseur « {$a} »';
-$string['createnewfacebookissuer'] = 'Créer un service Facebook';
-$string['createnewgoogleissuer'] = 'Créer un service Google';
-$string['createnewissuer'] = 'Créer un service personnalisé';
-$string['createnewmicrosoftissuer'] = 'Créer un service Microsoft';
-$string['createnewnextcloudissuer'] = 'Créer un service Nextcloud';
 $string['createnewservice'] = 'Créer un nouveau service :';
 $string['createnewuserfieldmapping'] = 'Créer une correspondance de champ utilisateur pour le fournisseur « {$a} »';
 $string['custom_service'] = 'Personnalisé';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Afficher sur la page de connexion comme';
 $string['loginissuer'] = 'Permettre la connexion';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Non configuré';
 $string['notdiscovered'] = 'Échec de la découverte de service';

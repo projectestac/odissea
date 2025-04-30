@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ca', version '4.1'.
+ * Strings for component 'course', language 'ca', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'Sense peu';
 $string['activitychooserrecommendations'] = 'Activitats recomanades';
 $string['activitychoosersettings'] = 'Configuració del selector d\'activitats';
 $string['activitychoosertabmode'] = 'Pestanyes del selector d\'activitats';
-$string['activitychoosertabmode_desc'] = 'El selector d’activitats permet al professor seleccionar fàcilment activitats i recursos per afegir al seu curs. Aquest paràmetre determina quines pestanyes s’hi han de mostrar. Tingueu en compte que la pestanya de destacats només es mostra per a un usuari si ha destacat una o més activitats i la pestanya de recomanats només es mostra si un administrador del lloc ha especificat algunes activitats recomanades.';
+$string['activitychoosertabmode_desc'] = 'El selector d’activitats permet al professor seleccionar fàcilment activitats i recursos per afegir al seu curs. Per afegir ítems a la pestanya de «Recomanats», aneu a <a href=\'../course/recommendations.php\'>Activitats recomanades</a>.';
+$string['activitychoosertabmodefive'] = 'Destacats, Recomanats, Tots';
+$string['activitychoosertabmodefour'] = 'Destacats, Recomanats, Tots, Activitats, Recursos';
 $string['activitychoosertabmodeone'] = 'Destacats, Tots, Activitats, Recursos, Recomanats';
+$string['activitychoosertabmodesix'] = 'Destacats, Recomanats, Activitats, Recursos';
 $string['activitychoosertabmodethree'] = 'Destacats, Activitats, Recursos, Recomanats';
 $string['activitychoosertabmodetwo'] = 'Destacats, Tots, Recomanats';
 $string['activitydate:closed'] = 'Tancada el';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'Marca l\'activitat {$a} com a destacada';
 $string['aria:recommendedtab'] = 'Activitats recomanades';
 $string['browsecourseadminindex'] = 'Navegueu per l\'administració del curs amb aquest índex.';
 $string['browsesettingindex'] = 'Navegueu per la configuració amb aquest índex.';
+$string['communicationroomlink'] = 'Xategeu amb altres participants del curs';
 $string['completion_automatic:done'] = 'Feta:';
 $string['completion_automatic:failed'] = 'Fallada:';
 $string['completion_automatic:todo'] = 'Pendent:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} marcat com a n
 $string['completionrequirements'] = 'Requeriments de finalització per a {$a}';
 $string['courseaccess'] = 'Accés al curs';
 $string['coursealreadyfinished'] = 'El curs ja ha acabat';
+$string['coursecommunication_desc'] = 'El servei de comunicació per defecte per als nous cursos. Els cursos ja existents no tindran cap proveïdor seleccionat per defecte.';
 $string['coursecontentnotification'] = 'Envia una notificació de canvi de contingut';
 $string['coursecontentnotification_help'] = 'Marqueu la casella per enviar una notificació als participants del curs sobre aquesta activitat o recurs nou o modificat. Només els usuaris que poden accedir a l\'activitat o el recurs rebran la notificació.';
 $string['coursecontentnotifnew'] = 'Contingut nou a {$a->coursename}';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> és nou al curs <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Canvieu les preferències de notificació</a></p>';
 $string['coursecontentnotifupdate'] = 'Canvis en el contingut a {$a->coursename}';
 $string['coursecontentnotifupdatebody'] = '<p>Hi ha canvis a {$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> en el curs <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Canvieu les preferències de notificació</a></p>';
+$string['coursecount'] = 'Nombre de cursos';
 $string['coursenotyetfinished'] = 'El curs encara no ha acabat';
 $string['coursenotyetstarted'] = 'El curs encara no ha començat';
 $string['courseparticipants'] = 'Participants del curs';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'Tothom';
 $string['customfield_visibletoteachers'] = 'Professors';
 $string['customfieldsettings'] = 'Paràmetres comuns dels camps personalitzats del curs';
 $string['daystakingcourse'] = 'Dies fent curs';
+$string['defaultsettingscategory'] = 'Paràmetres per defecte';
 $string['downloadcontent'] = 'Inclou en la descàrrega de contingut del curs';
 $string['downloadcontent_help'] = 'Cal incloure aquesta activitat o recurs en el fitxer zip del contingut del curs disponible per a descarregar? Els fitxers, carpetes, pàgines i àrees de text i multimèdia es poden descarregar completament. Per a totes les altres activitats i recursos, només es descarregarà el nom i la descripció. Aquesta opció requereix que la baixada de contingut del curs estigui habilitada a la configuració del curs.
 
@@ -94,7 +101,9 @@ $string['downloadcoursecontent_help'] = 'Aquest paràmetre determina si el conti
 $string['enabledownloadcoursecontent'] = 'Habilita la baixada de contingut del curs';
 $string['errorendbeforestart'] = 'La data de finalització del curs {$a}) és anterior a la data d\'inici del curs.';
 $string['favourite'] = 'Curs destacat';
+$string['gotosection'] = 'Vés a la secció {$a}';
 $string['gradetopassnotset'] = 'El curs no té habilitada cap qualificació per aprovar. Es pot habilitar en l\'element de qualificació del curs (Configuració del llibre de qualificacions).';
+$string['hideendedcoursestask'] = 'Amaga els cursos en la data de finalització';
 $string['informationformodule'] = 'Informació sobre l\'activitat {$a}';
 $string['module'] = 'Activitat';
 $string['namewithlink'] = 'Nom de la categoria amb enllaç';
@@ -111,6 +120,8 @@ $string['noteachinginfomessage'] = 'Hola {$a->userfirstname},
 $string['participants:perpage'] = 'Nombre de participants per pàgina';
 $string['participants:perpage_help'] = 'El nombre d\'usuaris que es mostren per pàgina a la pàgina de participants de cada curs.';
 $string['participantsnavigation'] = 'Navegació terciària dels participants.';
+$string['pdfexportfont'] = 'Tipus de lletra PDF';
+$string['pdfexportfont_help'] = 'El tipus de lletra que s\'utilitzarà per als fitxers PDF generats, com ara trameses de tasques.';
 $string['privacy:completionpath'] = 'Compleció del curs';
 $string['privacy:favouritespath'] = 'Informació sobre destacats del curs';
 $string['privacy:metadata:activityfavouritessummary'] = 'El sistema de cursos conté informació sobre quins elements del selector d\'activitats han estat destacats per l\'usuari.';
@@ -123,6 +134,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} després de 
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} abans de començar el curs';
 $string['searchactivitiesbyname'] = 'Cerca activitats per nom';
 $string['searchresults'] = 'Resultats de la cerca: {$a}';
+$string['sectionlink'] = 'Enllaç permanent';
+$string['showstartedcoursestask'] = 'Mostra els cursos en la data d\'inici';
 $string['studentsatriskincourse'] = 'Estudiants en risc en el curs {$a}';
 $string['studentsatriskinfomessage'] = 'Hola, {$a->userfirstname},
 <p>S\'ha identificat que al curs {$a->coursename} hi ha estudiants en risc.</p>';
@@ -154,3 +167,4 @@ $string['targetlabelstudentgradetopassno'] = 'Estudiant que probablement assolir
 $string['targetlabelstudentgradetopassyes'] = 'Estudiant en risc de no assolir la qualificació mínima per aprovar el curs.';
 $string['targetlabelteachingno'] = 'Cursos en risc de no iniciar';
 $string['targetlabelteachingyes'] = 'Usuaris amb capacitats docents que tenen accés al curs';
+$string['totalactivities'] = 'Activitats: {$a}';

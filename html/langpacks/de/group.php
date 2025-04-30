@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'de', version '4.1'.
+ * Strings for component 'group', language 'de', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,17 +56,21 @@ $string['deletegroupconfirm'] = 'Möchten Sie die Gruppe \'{$a}\' wirklich lösc
 $string['deletegrouping'] = 'Gruppierung löschen';
 $string['deletegroupingconfirm'] = 'Möchten Sie die Gruppierung \'{$a}\' wirklich löschen? Die darin enthaltenen Gruppen werden nicht gelöscht.';
 $string['deletegroupsconfirm'] = 'Möchten Sie die folgenden Gruppen wirklich löschen?';
-$string['deleteselectedgroup'] = 'Gruppe löschen';
+$string['deleteselectedgroup'] = 'Löschen';
+$string['disablemessagingaction'] = 'Mitteilungen deaktivieren';
 $string['editgroupingsettings'] = 'Gruppierung bearbeiten';
 $string['editgroupsettings'] = 'Gruppe bearbeiten';
 $string['editusersgroupsa'] = 'Gruppen für \'{$a}\' bearbeiten';
 $string['enablemessaging'] = 'Gruppenmitteilungen';
 $string['enablemessaging_help'] = 'Wenn aktiv, können Gruppenmitglieder an andere Mitglieder der Gruppe Mitteilungen senden.';
+$string['enablemessagingaction'] = 'Mitteilungen aktivieren';
 $string['encoding'] = 'Codierung';
 $string['enrolmentkey'] = 'Einschreibeschlüssel';
 $string['enrolmentkey_help'] = 'Ein Einschreibeschlüssel erlaubt die Einschränkung von Kurszugängen auf diejenigen, die den Einschreibeschlüssel kennen. Falls zusätzlich ein Einschreibeschlüssel für eine Gruppe angegeben ist, dann dient dieser Schlüssel dem Kurszugang, aber auch der automatischen Zuweisung der Nutzer zur richtigen Gruppe.';
 $string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
 $string['erroraddremoveuser'] = 'Fehler beim Hinzufügen/Entfernen von {$a} in der Gruppe';
+$string['erroraddtogroup'] = 'Ungültiger Wert für addtogroup. Der Wert sollte 0 sein, wenn kein Gruppenmodus aktiviert ist, oder 1, wenn eine neue Gruppe erstellt werden soll.';
+$string['erroraddtogroupgroupname'] = 'Sie können nicht den Gruppennamen festlegen, wenn addtogroup gesetzt ist.';
 $string['erroreditgroup'] = 'Fehler beim Bearbeiten der Gruppe {$a}';
 $string['erroreditgrouping'] = 'Fehler beim Bearbeiten der Gruppierung {$a}';
 $string['errorinvalidgroup'] = 'Fehler: Ungültige Gruppe {$a}';
@@ -111,6 +115,8 @@ $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
+$string['groupmode_groupsseparate_help'] = 'Teilnehmer/innen sind in Gruppen geteilt und können nur die Arbeit der eigenen Gruppe sehen.';
+$string['groupmode_groupsvisible_help'] = 'Teilnehmer/innen sind in Gruppen geteilt, aber sie können die Arbeit anderer Gruppen sehen.';
 $string['groupmode_help'] = '* Keine Gruppen
 * Getrennte Gruppen - Teilnehmer/innen sind in Gruppen geteilt und können nur die Arbeit der eigenen Gruppe sehen.
 * Sichtbare Gruppen - Teilnehmer/innen sind in Gruppen geteilt, aber sie können die Arbeit anderer Gruppen sehen.
@@ -133,7 +139,6 @@ $string['groupspreview'] = 'Gruppenvorschau';
 $string['groupsseparate'] = 'Getrennte Gruppen';
 $string['groupsvisible'] = 'Sichtbare Gruppen';
 $string['grouptemplate'] = 'Gruppe @';
-$string['hidepicture'] = 'Bild verbergen';
 $string['importgroups'] = 'Gruppen importieren';
 $string['importgroups_help'] = 'Gruppen können über eine Textdatei angelegt werden. Die Textdatei sollte folgendes Format haben:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Nur aktive Einschreibungen einbeziehen';
 $string['includeonlyactiveenrol_help'] = 'Diese Option legt fest, dass gesperrte Nutzer/innen keiner Gruppe zugeteilt werden.';
 $string['javascriptrequired'] = 'Diese Seite benötigt JavaScript.';
+$string['manageactions'] = 'Verwalten';
 $string['memberofgroup'] = 'Gruppenmitglied von: {$a}';
 $string['members'] = 'Mitglieder pro Gruppe';
 $string['membersofselectedgroup'] = 'Mitglieder in:';
+$string['messagingdisabled'] = 'Mitteilungen in {$a} Gruppe(n) erfolgreich deaktiviert';
+$string['messagingenabled'] = 'Mitteilungen in {$a} Gruppe(n) erfolgreich aktiviert';
 $string['mygroups'] = 'Meine Gruppen';
 $string['namingscheme'] = 'Namenschema';
 $string['namingscheme_help'] = 'Das Symbol \'@\' kann benutzt werden, um Gruppen zu erzeugen, die Buchstaben im Namen haben. \'Gruppe @\' erzeugt z.B. Gruppen mit den Namen Gruppe A, Gruppe B, Gruppe C, ...
@@ -175,6 +183,9 @@ $string['numgroups'] = 'Anzahl von Gruppen';
 $string['nummembers'] = 'Mitgliedern pro Gruppe';
 $string['othergroups'] = 'Weitere Gruppen';
 $string['overview'] = 'Überblick';
+$string['participation'] = 'Im Gruppenmodus die Gruppe im Dropdown-Menü für Aktivitäten anzeigen';
+$string['participation_help'] = 'Sollen Gruppenmitglieder diese Gruppe auswählen können, wenn Aktivitäten im getrennten oder sichtbaren Gruppenmodus sind? (Nur zutreffend, wenn die Gruppenmitgliedschaft sichtbar oder nur für Mitglieder sichtbar ist.)';
+$string['participationshort'] = 'Beteiligung';
 $string['potentialmembers'] = 'Mögliche Mitglieder: {$a}';
 $string['potentialmembs'] = 'Mögliche Mitglieder';
 $string['printerfriendly'] = 'Druckansicht';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'Nur {$a} Nutzer/innen haben die gewählte Rolle. Die
 $string['usercount'] = 'Nutzerzahl';
 $string['usercounttotal'] = 'Nutzerzahl ({$a})';
 $string['usergroupmembership'] = 'Mitgliedschaft der ausgewählten Person:';
+$string['visibility'] = 'Sichtbarkeit der Gruppenmitgliedschaft';
+$string['visibility_help'] = '* Sichtbar - Alle Teilnehmer/innen können sehen, wer in der Gruppe ist
+* Nur für Mitglieder sichtbar - Teilnehmer/innen außerhalb der Gruppe können die Gruppe und deren Mitglieder nicht sehen
+* Nur eigene Mitgliedschaft sehen - eine Person kann sich selber in der Gruppe sehen, aber keine anderen Mitglieder
+* Verborgen - nur Trainer/innen können die Gruppe und deren Mitglieder sehen
+
+Nutzer/innen mit dem Recht "Verborgene Gruppen anzeigen“ können die Gruppenmitgliedschaft immer sehen.
+
+Beachten Sie, dass Sie diese Einstellung nicht ändern können, sobald die Gruppe Mitglieder hat.';
+$string['visibilityall'] = 'Sichtbar';
+$string['visibilitymembers'] = 'Sichtbar nur für Mitglieder';
+$string['visibilitynone'] = 'Verborgen';
+$string['visibilityown'] = 'Nur eigene Mitgliedschaft anzeigen';
+$string['visibilityshort'] = 'Sichtbarkeit';
+$string['withselected'] = 'Mit den ausgewählten';

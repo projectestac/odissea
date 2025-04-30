@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', version '4.1'.
+ * Strings for component 'workshop', language 'eu', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Epez kanpoko bidalketak';
 $string['latesubmissions_desc'] = 'Baimendu epez kanpoko bidalketak';
 $string['latesubmissions_help'] = 'Gaituz gero, egileek bidalketak epez kanpo edo ebaluazio-fasean egin ditzakete. Hala ere, berandu egindako bidalketak ezin dira editatu.';
 $string['latesubmissionsallowed'] = 'Epez kanpoko bidalketak baimenduta daude';
-$string['legacyallocationplugincron'] = 'Zaharkitutako Tailer-Esleipenen Cron-a';
 $string['maxbytes'] = 'Bidalketa eranskinaren gehieneko tamaina';
 $string['modulename'] = 'Tailerra';
 $string['modulename_help'] = 'Tailerra jarduerak ikasleen lanak jaso, berrikusi eta parekoen arteko ebaluazioa egiteko aukera ematen du.

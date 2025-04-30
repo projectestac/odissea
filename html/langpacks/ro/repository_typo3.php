@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_typo3', language 'ro', version '4.1'.
+ * Strings for component 'repository_typo3', language 'ro', version '4.4'.
  *
  * @package     repository_typo3
  * @category    string

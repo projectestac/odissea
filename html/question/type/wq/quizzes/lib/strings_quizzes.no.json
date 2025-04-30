@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "evaluere",
 		
-		"home_getting_started_welcome_header_text": "Vi presenterer WirisQuizzes 4.8.0: Nå med mulighet for håndskrevne svar på grafbaserte oppgaver",
+		"home_getting_started_welcome_header_text": "Vi presenterer WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Vi er glade for å kunne lansere en ny svartype som gjør det mulig for studentene å tegne grafer for hånd. Ler mer om denne funksjonen i produktmerknadene og dokumentasjonen. Vi håper at du og studentene dine vil sette pris på dette nye tillegget til WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Produktmerknader",
         "home_getting_give_us_feedback_button_text": "Gi oss tilbakemelding",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Automatisert studentveiledning",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Du har slått på automatisk tilbakemelding for dette spørsmålet",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Definer typen oppgave du vil opprette og spesifisert de obligatoriske feltene. Denne tilbakemeldingen genereres automatisk av motoren vår. Du kan teste hvordan studenene dine vil se tilbakemeldingen. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Mer informasjon",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Lukk panel",
+		"quizzes_studio_math_multistep_define_task_title" : "Definer oppgaven",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Lenke til dokumentasjon",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Oppgavetype",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Ligning med én variabel ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Grunnleggende operasjoner ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Velg feltet fra rullegardinmenyen. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Oppgave å løse ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Ikke skriv fasiten her, bare ligningen som skal løses. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Tilfeldige variabler ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Ligningsvariabel ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Variabelnavn",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Spesifiser enkeltvariabelen for ligningen som skal løses.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Feil",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Nesten ferdig",
+		"quizzes_studio_multistep_correct_feedback_label": "Riktig",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Send inn trinnene dine for å se den automatiserte studentveiledningen",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Du er på rett vei. Fortsett sånn!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Du svarte riktig på dette spørsmålet.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Løs ligningen",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Utfør operasjonene",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Test",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Tøm",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Tillatte multiplikasjonssymboler",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Implisert multiplikasjon",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Den aksepterer konvensjonelt multiplikasjon av elementer som er skrevet fortløpende. Eksempel: 2y tolkes som 2 ganger y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Punktmultiplikasjon",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Elementer som opererer med prikk eller stjerne angir multiplikasjon. Eksempel: 2 · y tolkes som 2 ganger y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Kryssmultiplisering",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Elementer som opererer med kryss angir multiplikasjon. Eksempel: 2 x y tolkes som 2 ganger y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Oppgave som skal løses mangler",
+		"quizzes_studio_math_multistep_equation_variable_error": "Variabelnavn mangler",
+
+		"quizzes_studio_multistep_error_session_start_title": "Feil",
+		"quizzes_studio_multistep_error_session_start_message": "Noe gikk galt ved lasting av oppgaven. Prøv igjen eller gå tilbake for å sikre at oppgaven er riktig definert.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Prøv igjen",
+		"quizzes_studio_multistep_error_session_start_go_back": "Gå tilbake",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Kontakt oss",
+
+		"syntax_math_multistep": "Matte med automatisert studentveiledning"
 	}
 }
 

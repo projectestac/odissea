@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ro', version '4.1'.
+ * Strings for component 'access', language 'ro', version '4.4'.
  *
  * @package     access
  * @category    string
@@ -40,7 +40,7 @@ $string['sitemap'] = 'Hartă site';
 $string['skipa'] = 'Omite {$a}';
 $string['skipblock'] = 'Omite bloc';
 $string['skipnavigation'] = 'Omite navigare';
-$string['skipto'] = 'Salt la {$a}';
-$string['tocontent'] = 'Salt la conţinutul principal';
+$string['skipto'] = 'Sari la {$a}';
+$string['tocontent'] = 'Sari la conţinutul principal';
 $string['tonavigation'] = 'Mergi la navigare';
 $string['youarehere'] = 'Vă aflaţi aici';

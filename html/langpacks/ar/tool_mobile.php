@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ar', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ar', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'تم حظر إنشاء مفتاح ت
 $string['autologinmintimebetweenreq'] = 'أقل وقت ما بين طلبات تسجيل الدخول التلقائي.';
 $string['autologinmintimebetweenreq_desc'] = 'أقل مدة ما بين طلبات تسجيل الدخول التلقائي من تطبيق الجوال. إذا كان مستخدمو تطبيق الجوال عُرضة للمطالبات المتكررة بإدخال معطيات حساباتهم عند مشاهدتهم للمحتوى المضمن في الموقع، عليك ضبط هذا الإعداد على قيمة قليلة.';
 $string['autologinnotallowedtoadmins'] = 'لا يُسمح بتسجيل الدخول التلقائي لمشرفي الموقع.';
+$string['autologout'] = 'فرض تسجيل الخروج التلقائي لمستخدميك';
+$string['autologout_desc'] = 'لدواعٍ أمنية، يمكنك فرض تسجيل الخروج التلقائي لمستخدميك عند مغادرتهم أو إغلاقهم للتطبيق، أو تحويله إلى الخلفية. سيكون على المستخدمين معاودة تسجيل الدخول عند رجوعهم إلى التطبيق.';
+$string['autologoutcustom'] = 'الوقت المخصص بعد مغادرة المستخدمين أو إغلاقهم للتطبيق';
+$string['autologoutinmediate'] = 'فورًا بعد مغادرة المستخدمين أو إغلاقهم للتطبيق';
+$string['autologouttime'] = 'مؤقت مسجل الخروج التلقائي';
 $string['cachedef_plugininfo'] = 'هذا يخزن قائمة الإضافات مع إضافات الجوال';
 $string['cachedef_subscriptiondata'] = 'هذا يخزن معلومات اشتراك تطبيق الجوال.';
 $string['clickheretolaunchtheapp'] = 'أنقر هنا إذا لم يفتح التطبيق تلقائياً.';
@@ -97,7 +102,6 @@ $string['minimumversion'] = 'إذا تم تحديد إصدار تطبيق الج
 منه ترقية تطبيقاتهم قبل السماح لهم بالوصول إلى الموقع.';
 $string['minimumversion_key'] = 'أدنى إصدار مطلوب لتطبيق الجوال';
 $string['mobileapp'] = 'تطبيق الجوال';
-$string['mobileappconnected'] = 'تطبيق الجوال متصل';
 $string['mobileappearance'] = 'مظهر الجوال';
 $string['mobileappenabled'] = 'تم تمكين وصول تطبيقات الجوال إلى هذا الموقع. <br /><a href="{$a}">قم بتنزيل تطبيق الجوال</a>.';
 $string['mobileappsubscription'] = 'اشتراك تطبيق مودل';
@@ -118,7 +122,6 @@ $string['notificationsseemore'] = 'ملاحظة: لا يتم احتساب إحص
 $string['notificationssentnotifications'] = 'الإشعارات المرسلة';
 $string['oauth2identityproviders'] = 'مزودو هوية OAuth 2';
 $string['offlineuse'] = 'استخدام بدون اتصال';
-$string['openusingembeddedbrowser'] = 'إفتح باستعمال مستعرض مُضَمَّن';
 $string['pluginname'] = 'أدوات تطبيق مودل';
 $string['pluginnotenabledorconfigured'] = 'الإضافة غير مفعلة أو غير مهيأة.';
 $string['privacy:metadata:core_userkey'] = 'مفاتيح المستخدم المستعملة لإنشاء مفتاح تسجيل الدخول التلقائي للمستخدم الحالي';

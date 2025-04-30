@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'it', version '4.1'.
+ * Strings for component 'message_jabber', language 'it', version '4.4'.
  *
  * @package     message_jabber
  * @category    string

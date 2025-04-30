@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'eu', version '4.1'.
+ * Strings for component 'block_timeline', language 'eu', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'Guztiak';
 $string['ariadayfilter'] = 'Iragazi denbora-lerroa dataren arabera';
 $string['ariadayfilteroption'] = '{$a} iragazki-aukerak';
 $string['ariaeventlistitem'] = '{$a->course} ikastaroko {$a->name} jarduera {$a->date} datan entregatu behar da';
-$string['ariaeventlistpagelimit'] = 'Erakutsi {$a} jarduera orriko';
-$string['ariaeventlistpaginationnavcourses'] = '{$a} ikastaroko orrialdeei zenbakia jartzeko denbora-lerroko jarduerak';
-$string['ariaeventlistpaginationnavdates'] = 'Denbora-lerroko jardueren orrialdeei zenbakia jartzea';
 $string['ariaviewselector'] = 'Ordenatu elementuak kronologian';
 $string['ariaviewselectoroption'] = 'Ordenatzeko aukera: {$a}';
 $string['duedate'] = 'Entregatze-data';

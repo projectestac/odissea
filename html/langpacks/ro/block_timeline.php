@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ro', version '4.1'.
+ * Strings for component 'block_timeline', language 'ro', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'Toate';
 $string['ariadayfilter'] = 'Filtrează elementele din cronologie după dată';
 $string['ariadayfilteroption'] = 'Opțiunea de filtrare {$a}';
 $string['ariaeventlistitem'] = 'Activitatea {$a->name} din {$a->curs} este scadentă la {$a->date}';
-$string['ariaeventlistpagelimit'] = 'Afișează {$a} activități pe pagină';
-$string['ariaeventlistpaginationnavcourses'] = 'Activități cronologice pentru paginarea cursului {$a}';
-$string['ariaeventlistpaginationnavdates'] = 'Paginarea activităților cronologice';
 $string['ariaviewselector'] = 'Sortează elementele cronologiei';
 $string['ariaviewselectoroption'] = 'Opțiunea de sortare {$a}';
 $string['duedate'] = 'Dată limită';

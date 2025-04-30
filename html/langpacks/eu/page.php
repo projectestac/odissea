@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', version '4.1'.
+ * Strings for component 'page', language 'eu', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'Popup-aren altuera (pixeletan)';
 $string['popupheightexplain'] = 'Zehaztu popup leihoaren lehenetsitako altuera.';
 $string['popupwidth'] = 'Popup-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu popup  leihoaren lehenetsitako zabalera.';
-$string['printheading'] = 'Erakutsi orriaren izena';
-$string['printheadingexplain'] = 'Erakutsi orriaren izena edukiaren gainean?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';
 $string['printintroexplain'] = 'Erakutsi orriaren deskribapena edukiaren gainean?';
 $string['printlastmodified'] = 'Erakutsi azken aldatze-data';

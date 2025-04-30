@@ -31,7 +31,7 @@ namespace mod_resource\event;
  * @copyright  2014 Rajesh Taneja <rajesh@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class events_test extends \advanced_testcase {
+final class events_test extends \advanced_testcase {
 
     /**
      * Setup is called before calling test case.
@@ -46,7 +46,7 @@ class events_test extends \advanced_testcase {
     /**
      * Test course_module_instance_list_viewed event.
      */
-    public function test_course_module_instance_list_viewed() {
+    public function test_course_module_instance_list_viewed(): void {
         // There is no proper API to call to trigger this event, so what we are
         // doing here is simply making sure that the events returns the right information.
 
@@ -66,15 +66,13 @@ class events_test extends \advanced_testcase {
         // Checking that the event contains the expected values.
         $this->assertInstanceOf('\mod_resource\event\course_module_instance_list_viewed', $event);
         $this->assertEquals(\context_course::instance($course->id), $event->get_context());
-        $expected = array($course->id, 'resource', 'view all', 'index.php?id='.$course->id, '');
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
     /**
      * Test course_module_viewed event.
      */
-    public function test_course_module_viewed() {
+    public function test_course_module_viewed(): void {
         // There is no proper API to call to trigger this event, so what we are
         // doing here is simply making sure that the events returns the right information.
 
@@ -98,8 +96,6 @@ class events_test extends \advanced_testcase {
         $this->assertInstanceOf('\mod_resource\event\course_module_viewed', $event);
         $this->assertEquals(\context_module::instance($resource->cmid), $event->get_context());
         $this->assertEquals($resource->id, $event->objectid);
-        $expected = array($course->id, 'resource', 'view', 'view.php?id=' . $resource->cmid, $resource->id, $resource->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 }

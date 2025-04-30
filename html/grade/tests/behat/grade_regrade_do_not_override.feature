@@ -32,7 +32,7 @@ Feature: Regrading grades does not unnecessarily mark some as overriden
     And I press "Save changes"
     And I am on the "Course 1" "grades > Grader report > View" page
     And the following should exist in the "gradereport-grader-table" table:
-      | -1-                  | -4-          | -5-          |
+      | -1-                  | -3-          | -4-          |
       | First name           | Assignment 1 | Course total |
       | Student 1            | 80.00        | 80.00        |
       | Student 2            | 60.00        | 60.00        |
@@ -40,11 +40,10 @@ Feature: Regrading grades does not unnecessarily mark some as overriden
     And I give the grade "80.00" to the user "Student 2" for the grade item "Course total"
     And I press "Save changes"
     And I navigate to "Setup > Gradebook setup" in the course gradebook
-    And I click on "Edit" "link" in the ".coursecategory" "css_element"
-    And I click on "Edit settings" "link" in the ".coursecategory" "css_element"
-    And I set the field "Aggregation" to "Weighted mean of grades"
-    And I set the field "Rescale overridden grades" to "Yes"
-    And I set the field "Maximum grade" to "200"
+    And I set the following settings for grade item "Course 1" of type "course" on "setup" page:
+      | Aggregation               | Weighted mean of grades |
+      | Rescale overridden grades | Yes                     |
+      | Maximum grade             | 200                     |
     And I press "Save changes"
 
   @javascript
@@ -65,7 +64,7 @@ Feature: Regrading grades does not unnecessarily mark some as overriden
     When I am on the "Course 1" "grades > Grader report > View" page
     And I turn editing mode off
     Then the following should exist in the "gradereport-grader-table" table:
-      | -1-                  | -4-          | -5-          |
+      | -1-                  | -3-          | -4-          |
       | First name           | Assignment 1 | Course total |
       | Student 1            | 90.00        | 180.00       |
       | Student 2            | 70.00        | 160.00       |

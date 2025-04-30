@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'en', version '4.1'.
+ * Strings for component 'studentquiz', language 'en', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -33,6 +33,7 @@ $string['addprivatecomment_help'] = 'These comments are strictly between the que
 $string['addpubliccomment'] = 'Add public comment';
 $string['after_answering_end_date'] = 'This StudentQuiz closed for answering on {$a}.';
 $string['after_submission_end_date'] = 'This StudentQuiz closed for question submission on {$a}.';
+$string['anonymous_user'] = 'Anonymous User';
 $string['anonymous_user_name'] = 'Anonymous User #{$a}';
 $string['answeringndbeforestart'] = 'Answering deadline can not be specified before the open for answering date';
 $string['api_state_change_error_content'] = 'This question cannot be deleted because it has been approved.';
@@ -164,7 +165,7 @@ $string['error_sendalert'] = 'There was an error sending your report to {$a}.
 Report could not be sent.';
 $string['expandall'] = 'Expand all comments';
 $string['expandcomment'] = 'Expand comment';
-$string['filter'] = 'Filter';
+$string['filter'] = 'Fast Filter';
 $string['filter_advanced_element'] = '{$a} (Advanced element)';
 $string['filter_comment_label_date'] = 'Date';
 $string['filter_comment_label_forename'] = 'Forename';
@@ -173,15 +174,17 @@ $string['filter_comment_label_sort_toggle'] = 'Sort by {$a->field} {$a->type}';
 $string['filter_comment_label_surname'] = 'Surname';
 $string['filter_ishigher'] = 'Is higher';
 $string['filter_islower'] = 'Is lower';
+$string['filter_label_answered'] = 'Answered';
 $string['filter_label_approved'] = 'Approved questions';
 $string['filter_label_comment'] = 'Comments';
 $string['filter_label_createdate'] = 'Creation';
 $string['filter_label_difficulty_level'] = 'Difficulty';
-$string['filter_label_fast_filters'] = 'Fast filter for questions';
 $string['filter_label_myattempts'] = 'My attempts';
 $string['filter_label_mydifficulty'] = 'My difficulty';
 $string['filter_label_mylastattempt'] = 'My latest attempt';
 $string['filter_label_myrate'] = 'My Rating';
+$string['filter_label_notmine'] = 'Not mine';
+$string['filter_label_notmine_help'] = 'Questions not created by you';
 $string['filter_label_onlyapproved'] = 'Approved';
 $string['filter_label_onlyapproved_help'] = 'Questions approved by your teacher';
 $string['filter_label_onlydifficult'] = 'Difficult for all';
@@ -194,6 +197,7 @@ $string['filter_label_onlymine'] = 'Mine';
 $string['filter_label_onlymine_help'] = 'Questions you created.';
 $string['filter_label_onlynew'] = 'Unanswered';
 $string['filter_label_onlynew_help'] = 'Questions you have never answered before';
+$string['filter_label_owner'] = 'Owner';
 $string['filter_label_question'] = 'Question title';
 $string['filter_label_question_creation_item'] = '{$a->creationtext} {$a->rowtext} {$a->inputtext}';
 $string['filter_label_question_creation_item_inputtext'] = '{$a->inputtext} {$a->inputtype}';

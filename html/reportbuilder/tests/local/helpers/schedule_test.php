@@ -34,7 +34,7 @@ use core_user\reportbuilder\datasource\users;
  * @copyright   2021 Paul Holden <paulh@moodle.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class schedule_test extends advanced_testcase {
+final class schedule_test extends advanced_testcase {
 
     /**
      * Test create schedule
@@ -257,7 +257,7 @@ class schedule_test extends advanced_testcase {
      *
      * @return string[]
      */
-    public function get_schedule_report_file_format(): array {
+    public static function get_schedule_report_file_format(): array {
         return [
             ['csv'],
             ['excel'],

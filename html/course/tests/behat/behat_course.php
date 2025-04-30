@@ -162,74 +162,43 @@ class behat_course extends behat_base {
     }
 
     /**
-     * Adds the selected activity/resource filling the form data with the specified field/value pairs. Sections 0 and 1 are also allowed on frontpage.
+     *  Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'.
      *
-     * @When /^I add a "(?P<activity_or_resource_name_string>(?:[^"]|\\")*)" to section "(?P<section_number>\d+)" and I fill the form with:$/
-     * @param string $activity The activity name
-     * @param int $section The section number
-     * @param TableNode $data The activity field/value data
-     */
-    public function i_add_to_section_and_i_fill_the_form_with($activity, $section, TableNode $data) {
-
-        // Add activity to section.
-        $this->execute("behat_course::i_add_to_section",
-            array($this->escape($activity), $this->escape($section))
-        );
-
-        // Wait to be redirected.
-        $this->execute('behat_general::wait_until_the_page_is_ready');
-
-        // Set form fields.
-        $this->execute("behat_forms::i_set_the_following_fields_to_these_values", $data);
-
-        // Save course settings.
-        $this->execute("behat_forms::press_button", get_string('savechangesandreturntocourse'));
-    }
-
-    /**
-     * Opens the activity chooser and opens the activity/resource form page. Sections 0 and 1 are also allowed on frontpage.
+     *  Recognised page names are:
+     *  | Section | coursename > section | The selected course section. First it searchs by section name, then by section number. |
      *
-     * @Given /^I add a "(?P<activity_or_resource_name_string>(?:[^"]|\\")*)" to section "(?P<section_number>\d+)"$/
-     * @throws ElementNotFoundException Thrown by behat_base::find
-     * @param string $activity
-     * @param int $section
+     * Examples:
+     *
+     *  When I am on the "Course 1 > Section 1" "course > section" page logged in as "admin"
+     *  When I am on the "Course 1 > Named section" "course > section" page logged in as "admin"
+     *
+     * @param string $type
+     * @param string $identifier
+     * @return moodle_url
      */
-    public function i_add_to_section($activity, $section) {
-        $this->require_javascript('Please use the \'the following "activity" exists:\' data generator instead.');
+    protected function resolve_page_instance_url(string $type, string $identifier): moodle_url {
+        $type = strtolower($type);
+        switch ($type) {
+            case 'section':
+                $identifiers = explode('>', $identifier);
+                $identifiers = array_map('trim', $identifiers);
+                if (count($identifiers) < 2) {
+                    throw new Exception("The specified section $identifier is not valid and should be coursename > section.");
+                }
+                [$courseidentifier, $sectionidentifier] = $identifiers;
 
-        if ($this->getSession()->getPage()->find('css', 'body#page-site-index') && (int) $section <= 1) {
-            // We are on the frontpage.
-            if ($section) {
-                // Section 1 represents the contents on the frontpage.
-                $sectionxpath = "//body[@id='page-site-index']" .
-                    "/descendant::div[contains(concat(' ',normalize-space(@class),' '),' sitetopic ')]";
-            } else {
-                // Section 0 represents "Site main menu" block.
-                $sectionxpath = "//*[contains(concat(' ',normalize-space(@class),' '),' block_site_main_menu ')]";
-            }
-        } else {
-            // We are inside the course.
-            $sectionxpath = "//li[@id='section-" . $section . "']";
+                $section = $this->get_section_and_course_by_id($courseidentifier, $sectionidentifier);
+                if (!$section) {
+                    // If section is not found by name, search it by section number.
+                    $sectionno = preg_replace("/^section (\d+)$/i", '$1', $sectionidentifier);
+                    $section = $this->get_section_and_course_by_sectionnum($courseidentifier, (int) $sectionno);
+                }
+                if (!$section) {
+                    throw new Exception("The specified section $identifier does not exist.");
+                }
+                return new moodle_url('/course/section.php', ['id' => $section->id]);
         }
-
-        // Clicks add activity or resource section link.
-        $sectionnode = $this->find('xpath', $sectionxpath);
-        $this->execute('behat_general::i_click_on_in_the', [
-            get_string('addresourceoractivity', 'moodle'),
-            'button',
-            $sectionnode,
-            'NodeElement',
-        ]);
-
-        // Clicks the selected activity if it exists.
-        $activityliteral = behat_context_helper::escape(ucfirst($activity));
-        $activityxpath = "//div[contains(concat(' ', normalize-space(@class), ' '), ' modchooser ')]" .
-            "/descendant::div[contains(concat(' ', normalize-space(@class), ' '), ' optioninfo ')]" .
-            "/descendant::div[contains(concat(' ', normalize-space(@class), ' '), ' optionname ')]" .
-            "[normalize-space(.)=$activityliteral]" .
-            "/parent::a";
-
-        $this->execute('behat_general::i_click_on', [$activityxpath, 'xpath']);
+        throw new Exception('Unrecognised core page type "' . $type . '."');
     }
 
     /**
@@ -282,9 +251,7 @@ class behat_course extends behat_base {
     }
 
     /**
-     * Opens the activity chooser and opens the activity/resource link form page.
-     *
-     * Sections 0 and 1 are also allowed on frontpage.
+     * Opens the activity chooser and opens the activity/resource link form page. Sections 0 and 1 are also allowed on frontpage.
      *
      * This step require javascript enabled and it is used mainly to click activities or resources by name,
      * not by plugin name. Use the standard behat_course::i_add_to_course_section step instead unless the
@@ -317,15 +284,12 @@ class behat_course extends behat_base {
 
         // Clicks add activity or resource section link.
         $sectionnode = $this->find('xpath', $sectionxpath);
-        $this->execute(
-            'behat_general::i_click_on_in_the',
-            [
-                "//button[@data-action='open-chooser' and not(@data-beforemod)]",
-                'xpath',
-                $sectionnode,
-                'NodeElement',
-            ]
-        );
+        $this->execute('behat_general::i_click_on_in_the', [
+            "//button[@data-action='open-chooser' and not(@data-beforemod)]",
+            'xpath',
+            $sectionnode,
+            'NodeElement',
+        ]);
 
         // Clicks the selected activity if it exists.
         $activityliteral = behat_context_helper::escape(ucfirst($activityname));
@@ -506,7 +470,7 @@ class behat_course extends behat_base {
 
         // We need to know the course format as the text strings depends on them.
         $courseformat = $this->get_course_format();
-        if ($sectionnumber > 0 && get_string_manager()->string_exists('editsection', $courseformat)) {
+        if (get_string_manager()->string_exists('editsection', $courseformat)) {
             $stredit = get_string('editsection', $courseformat);
         } else {
             $stredit = get_string('editsection');
@@ -552,7 +516,7 @@ class behat_course extends behat_base {
 
         $this->execute('behat_general::should_exist_in_the', ['Highlighted', 'text', $xpath, 'xpath_element']);
         // The important checking, we can not check the img.
-        $this->execute('behat_general::should_exist_in_the', ['Remove highlight', 'link', $xpath, 'xpath_element']);
+        $this->execute('behat_general::should_exist_in_the', ['Unhighlight', 'link', $xpath, 'xpath_element']);
     }
 
     /**
@@ -1058,7 +1022,7 @@ class behat_course extends behat_base {
      * @param string $menuitem
      */
     public function actions_menu_should_have_item($activityname, $menuitem) {
-        $activitynode = $this->get_activity_node($activityname);
+        $activitynode = $this->get_activity_action_menu_node($activityname);
 
         $notfoundexception = new ExpectationException('"' . $activityname . '" doesn\'t have a "' .
             $menuitem . '" item', $this->getSession());
@@ -1074,7 +1038,7 @@ class behat_course extends behat_base {
      * @param string $menuitem
      */
     public function actions_menu_should_not_have_item($activityname, $menuitem) {
-        $activitynode = $this->get_activity_node($activityname);
+        $activitynode = $this->get_activity_action_menu_node($activityname);
 
         try {
             $this->find('named_partial', array('link', $menuitem), false, $activitynode);
@@ -1083,6 +1047,20 @@ class behat_course extends behat_base {
         } catch (ElementNotFoundException $e) {
             // This is good, the menu item should not be there.
         }
+    }
+
+    /**
+     * Returns the DOM node of the activity action menu.
+     *
+     * @throws ElementNotFoundException Thrown by behat_base::find
+     * @param string $activityname The activity name
+     * @return \Behat\Mink\Element\NodeElement
+     */
+    protected function get_activity_action_menu_node($activityname) {
+        $activityname = behat_context_helper::escape($activityname);
+        $xpath = "//li[contains(concat(' ', normalize-space(@class), ' '), ' activity ')][contains(., $activityname)]" .
+            "//div[contains(@class, 'action-menu')]";
+        return $this->find('xpath', $xpath);
     }
 
     /**
@@ -1144,8 +1122,14 @@ class behat_course extends behat_base {
         // Not using chain steps here because the exceptions catcher have problems detecting
         // JS modal windows and avoiding interacting them at the same time.
         if ($this->running_javascript()) {
-            $this->execute('behat_general::i_click_on_in_the',
-                array(get_string('yes'), "button", "Confirm", "dialogue")
+            $this->execute(
+                'behat_general::i_click_on_in_the',
+                [
+                    get_string('delete'),
+                    "button",
+                    get_string('cmdelete_title', 'core_courseformat'),
+                    "dialogue"
+                ]
             );
         } else {
             $this->execute("behat_forms::press_button", get_string('yes'));
@@ -1198,8 +1182,14 @@ class behat_course extends behat_base {
                     "/ancestor::li[contains(concat(' ', normalize-space(@class), ' '), ' section ')]" .
                     "/descendant::div[contains(concat(' ', @class, ' '), ' lightbox ')][contains(@style, 'display: none')]";
 
-            $this->execute("behat_general::wait_until_exists",
-                    array($this->escape($hiddenlightboxxpath), "xpath_element")
+            // Component based courses do not use lightboxes anymore but js depending.
+            $sectionreadyxpath = "//*[contains(@id,'page-content')]" .
+                    "/descendant::*[contains(concat(' ', normalize-space(@class), ' '), ' stateready ')]";
+
+            $duplicationreadyxpath = "$hiddenlightboxxpath | $sectionreadyxpath";
+            $this->execute(
+                "behat_general::wait_until_exists",
+                [$this->escape($duplicationreadyxpath), "xpath_element"]
             );
 
             // Close the original activity actions menu.
@@ -1273,7 +1263,7 @@ class behat_course extends behat_base {
     protected function get_activity_element($element, $selectortype, $activityname) {
         $activitynode = $this->get_activity_node($activityname);
 
-        $exception = new ElementNotFoundException($this->getSession(), "'{$element}' '{$selectortype}' in '${activityname}'");
+        $exception = new ElementNotFoundException($this->getSession(), "'{$element}' '{$selectortype}' in '{$activityname}'");
         return $this->find($selectortype, $element, $exception, $activitynode);
     }
 
@@ -2148,5 +2138,48 @@ class behat_course extends behat_base {
         $elementselector = "//div[@data-region='activity-dates']";
         $params = [$elementselector, "xpath_element", $containerselector, "xpath_element"];
         $this->execute("behat_general::should_not_exist_in_the", $params);
+    }
+
+    /**
+     * Get the section id from an identifier.
+     *
+     * The section name and summary are checked.
+     *
+     * @param string $courseidentifier
+     * @param string $sectionidentifier
+     * @return section_info|null section info or null if not found.
+     */
+    protected function get_section_and_course_by_id(string $courseidentifier, string $sectionidentifier): ?section_info {
+        $courseid = $this->get_course_id($courseidentifier);
+        if (!$courseid) {
+            return null;
+        }
+        $courseformat = course_get_format($courseid);
+        $sections = $courseformat->get_sections();
+        foreach ($sections as $section) {
+            $sectionfullname = $courseformat->get_section_name($section);
+            if ($section->name == $sectionidentifier
+                || $sectionfullname == $sectionidentifier
+            ) {
+                return $section;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Get the section id from a courseid and a sectionnum.
+     *
+     * @param string $courseidentifier Course identifier.
+     * @param int $sectionnum Section number
+     * @return section_info|null section info or null if not found.
+     */
+    protected function get_section_and_course_by_sectionnum(string $courseidentifier, int $sectionnum): ?section_info {
+        $courseid = $this->get_course_id($courseidentifier);
+        if (!$courseid) {
+            return null;
+        }
+        $courseformat = course_get_format($courseid);
+        return $courseformat->get_section($sectionnum);
     }
 }

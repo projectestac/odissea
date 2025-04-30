@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ur', version '4.1'.
+ * Strings for component 'block_myprofile', language 'ur', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,22 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'مواد کے علاقے کے لیے ڈسپلے کی ترتیبات';
 $string['display_address'] = 'پتہ دکھائیں';
-$string['display_aim'] = 'اے آئی ایم دکھائیں';
 $string['display_city'] = 'شہر دکھائیں';
 $string['display_country'] = 'ملک دکھائیں';
 $string['display_currentlogin'] = 'موجودہ لاگ ان دکھائیں';
 $string['display_email'] = 'ای میل دکھائیں';
 $string['display_firstaccess'] = 'پہلی رسائی دکھائیں';
-$string['display_icq'] = 'آئی سی کیو دکھائیں';
 $string['display_institution'] = 'ادارہ دکھائیں';
 $string['display_lastaccess'] = 'آخری رسائی دکھائیں';
 $string['display_lastip'] = 'آخری آئی پی ڈسپلے کریں۔';
-$string['display_msn'] = 'ایم ایس این ڈسپلے کریں';
 $string['display_phone1'] = 'ڈسپلے فون';
 $string['display_phone2'] = 'موبائل فون ڈسپلے کریں';
 $string['display_picture'] = 'ڈسپلے کی تصویر';
-$string['display_skype'] = 'اسکائپ ڈسپلے کریں';
-$string['display_yahoo'] = 'یاہو ڈسپلے کریں';
 $string['myprofile:addinstance'] = 'ایک نیا لاگ ان صارف بلاک شامل کریں';
 $string['myprofile:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا لاگ ان صارف بلاک شامل کریں';
 $string['myprofile_settings'] = 'مرئی صارف کی معلومات';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_link', language 'es', version '4.1'.
+ * Strings for component 'tiny_link', language 'es', version '4.4'.
  *
  * @package     tiny_link
  * @category    string
@@ -31,7 +31,7 @@ $string['enterurl'] = 'Introducir una URL';
 $string['helplinktext'] = 'Enlace';
 $string['link'] = 'Enlace';
 $string['openinnewwindow'] = 'Abrir en ventana nueva';
-$string['pluginname'] = 'Enlace Tiny';
+$string['pluginname'] = 'Enlace';
 $string['privacy:metadata'] = 'El plugin de enlaces de TinyMCE no almacena ningún dato personal.';
 $string['texttodisplay'] = 'Texto a mostrar';
 $string['unlink'] = 'Desenlanzar';

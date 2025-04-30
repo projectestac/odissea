@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'el', version '4.1'.
+ * Strings for component 'format_topics', language 'el', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,13 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Προσθήκη ενοτήτων';
 $string['currentsection'] = 'Αυτό το θέμα';
-$string['deletesection'] = 'Διαγραφή θέματος';
-$string['editsection'] = 'Τροποποίηση θέματος';
-$string['editsectionname'] = 'Τροποποίηση ονόματος θέματος';
 $string['hidefromothers'] = 'Απόκρυψη θέματος (από τους υπόλοιπους)';
-$string['newsectionname'] = 'Νέο όνομα για το θέμα {$a}';
+$string['legacysectionname'] = 'Θέμα';
 $string['page-course-view-topics'] = 'Κάθε κύρια σελίδα του μαθήματος σε μορφή θεμάτων';
 $string['page-course-view-topics-x'] = 'Κάθε σελίδα μαθήματος σε μορφότυπο θεμάτων';
 $string['pluginname'] = 'Θεματικός μορφότυπος μαθήματος';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ur', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'ur', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -34,11 +34,6 @@ $string['connectsystemaccount'] = 'سسٹم اکاؤنٹ سے جڑیں';
 $string['createfromtemplate'] = 'ٹیمپلیٹ سے OAuth 2 سروس بنائیں';
 $string['createfromtemplatedesc'] = 'OAuth سروس بنانے کے لیے نیچے دیے گئے OAuth 2 سروس ٹیمپلیٹس میں سے ایک کا انتخاب کریں تاکہ معلوم سروس کی اقسام میں سے کسی ایک کے لیے درست کنفیگریشن ہو۔ یہ OAuth 2 سروس بنائے گا، جس میں تصدیق کے لیے درکار تمام درست پوائنٹس اور پیرامیٹرز ہوں گے، حالانکہ آپ کو اب بھی نئی سروس کے استعمال سے پہلے کلائنٹ آئی ڈی اور راز درج کرنے کی ضرورت ہوگی۔';
 $string['createnewendpoint'] = 'جاری کنندہ "{$a}" کے لیے نیا اختتامی نقطہ بنائیں';
-$string['createnewfacebookissuer'] = 'فیس بک کی نئی سروس بنائیں';
-$string['createnewgoogleissuer'] = 'نئی گوگل سروس بنائیں';
-$string['createnewissuer'] = 'نئی کسٹم سروس بنائیں';
-$string['createnewmicrosoftissuer'] = 'نئی مائیکروسافٹ سروس بنائیں';
-$string['createnewnextcloudissuer'] = 'نئی نیکسٹ کلاؤڈ سروس بنائیں';
 $string['createnewservice'] = 'نئی سروس بنائیں:';
 $string['createnewuserfieldmapping'] = 'جاری کنندہ "{$a}" کے لیے نیا صارف فیلڈ میپنگ بنائیں';
 $string['custom_service'] = 'اپنی مرضی کے مطابق';

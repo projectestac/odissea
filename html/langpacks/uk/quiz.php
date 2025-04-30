@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'uk', version '4.1'.
+ * Strings for component 'quiz', language 'uk', version '4.4'.
  *
  * @package     quiz
  * @category    string
@@ -128,7 +128,6 @@ $string['back'] = 'Повернутися до перегляду запитан
 $string['backtocourse'] = 'Повернутися до курсу';
 $string['backtoquestionlist'] = 'Повернутися до списку питань';
 $string['backtoquiz'] = 'Повернутися до редагування';
-$string['basicideasofquiz'] = 'Основні ідеї розробки тестування';
 $string['bestgrade'] = 'Кращий результат';
 $string['bothattempts'] = 'Показати всіх студентів';
 $string['browsersecurity'] = 'Безпека браузера';
@@ -187,17 +186,12 @@ $string['comments'] = 'Коментарі';
 $string['completedon'] = 'Завершено';
 $string['completionattemptsexhausted'] = 'Або всі доступні спроби закінчено';
 $string['completionattemptsexhausted_help'] = 'Тест позначається закінченим, коли студент використав максимальну кількість спроб.';
-$string['completionattemptsexhausteddesc'] = 'Завершіть, якщо всі доступні спроби вичерпані';
 $string['completiondetail:minattempts'] = 'Зробіть спроби: {$a}';
-$string['completiondetail:passgrade'] = 'Отримайте прохідну оцінку';
 $string['completiondetail:passorexhaust'] = 'Отримайте прохідну оцінку або виконайте всі доступні спроби';
 $string['completionminattempts'] = 'Мінімальна кількість спроб:';
 $string['completionminattemptsdesc'] = 'Необхідна мінімальна кількість спроб: {$a}';
 $string['completionminattemptserror'] = 'Мінімальна кількість спроб має бути меншою або дорівнювати дозволеній кількості спроб.';
 $string['completionminattemptsgroup'] = 'Вимагають спроб';
-$string['completionpass'] = 'Потребує прохідний бал';
-$string['completionpass_help'] = 'Якщо ввімкнено, ця діяльність вважається завершеною, коли студент отримує прохідну оцінку (як зазначено в розділі Оцінка налаштувань тесту) або вищу.';
-$string['completionpassdesc'] = 'Студент повинен отримати прохідну оцінку, щоб виконати цю роботу';
 $string['completionpassorattemptsexhausteddesc'] = 'Студент повинен отримати прохідну оцінку або вичерпати всі доступні спроби для виконання цього завдання';
 $string['configadaptive'] = 'Якщо Ви оберете Так у цих варіантах відповідей, студент матиме змогу багаторазово відповідати на запитання навіть у межах однієї спроби проходження тесту.';
 $string['configattemptsallowed'] = 'Обмеження числа спроб проходження тесту студентом.';
@@ -292,6 +286,8 @@ $string['dragtostart'] = 'На початок';
 $string['duplicateresponse'] = 'Відповідь не була відправлена, оскільки Ви дали аналогічну відповідь раніше.';
 $string['eachattemptbuildsonthelast'] = 'Кожна спроба ґрунтується на попередній';
 $string['eachattemptbuildsonthelast_help'] = 'Якщо студентам дозволено проходити кілька спроб тестування та включено цей параметр, то кожна нова спроба тестування буде включати результати попередньої. Це дозволяє завершити тест протягом кількох спроб.';
+$string['edit_slotdisplaynumber_hint'] = 'Редагувати номер запитання (максимум 16 символів)';
+$string['edit_slotdisplaynumber_label'] = 'Нове значення для {$a}';
 $string['editcategories'] = 'Редагувати категорії';
 $string['editcategory'] = 'Редагувати категорію';
 $string['editcatquestions'] = 'Редагувати питання в категорії';
@@ -375,6 +371,7 @@ $string['eventpagebreakdeleted'] = 'Розрив сторінки видален
 $string['eventquestionmanuallygraded'] = 'Оцінено питання вручну';
 $string['eventquizattemptabandoned'] = 'Кинута спроба тесту';
 $string['eventquizattemptregraded'] = 'Спроба тесту переоцінена';
+$string['eventquizattemptreopened'] = 'Спроба вікторини знову відкрита';
 $string['eventquizattemptstarted'] = 'Почато спробу тесту';
 $string['eventquizattemptsubmitted'] = 'Завершено спробу тесту';
 $string['eventquizattempttimelimitexceeded'] = 'Перевищено час на спробу тесту';
@@ -387,6 +384,7 @@ $string['eventsectionshuffleupdated'] = 'Перемішування розділ
 $string['eventsectiontitleupdated'] = 'Оновлено назву розділу';
 $string['eventslotcreated'] = 'Слот створено';
 $string['eventslotdeleted'] = 'Слот видалено';
+$string['eventslotdisplayedquestionnumberupdated'] = 'Номер запитання, що відображається у слоті, оновлено';
 $string['eventslotmarkupdated'] = 'Позначка слота оновлена';
 $string['eventslotmoved'] = 'Слот переміщено';
 $string['eventslotrequirepreviousupdated'] = 'Слот вимагає попереднього оновлення';
@@ -438,6 +436,7 @@ $string['gradeaverage'] = 'Середня оцінка';
 $string['gradeboundary'] = 'Гранична оцінка';
 $string['gradeessays'] = 'Оцінити есе';
 $string['gradehighest'] = 'Краща оцінка';
+$string['gradeitems'] = 'Елементи оцінювання';
 $string['grademethod'] = 'Метод оцінювання';
 $string['grademethod_help'] = 'Якщо в процесі проходження тесту дозволено кілька спроб, то фінальна оцінка може вираховуватися кількома способами:
 
@@ -448,7 +447,6 @@ $string['grademethod_help'] = 'Якщо в процесі проходження
 $string['gradesdeleted'] = 'Оцінювання тесту вилучено';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'Оцінка для успішного проходження не може бути нульовою, оскільки для цього тесту встановлений метод проходження, який вимагає проходження. Будь ласка, встановіть ненульове значення.';
-$string['gradetopassnotset'] = 'У цьому тесті ще не встановлено оцінку для проходження. Його можна встановити в розділі Оцінка налаштувань тесту.';
 $string['gradetopassoutof'] = 'Прохідний бал: {$a->grade} з {$a->maxgrade}';
 $string['gradingdetails'] = 'Балів за відповідь: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'З урахуванням попередніх штрафів набрано <strong>{$a->cur}/{$a->max}</strong>.';
@@ -513,8 +511,6 @@ $string['layoutasshown'] = 'Розмітка сторінки, як показа
 $string['layoutasshownwithpages'] = 'Розмітка сторінки, як показано.<small>(Автоматично нову сторінку на кожні {$a} питань.)</small>';
 $string['layoutshuffledandpaged'] = 'Питання перемішані у випадковому порядку по {$a} на сторінку.';
 $string['layoutshuffledsinglepage'] = 'Питання перемішані у випадковому порядку, всі на одній сторінці.';
-$string['legacyquizaccessrulescron'] = 'Застарілі cron правила доступу до тесту';
-$string['legacyquizreportscron'] = 'Звіти про тест застарілого cron';
 $string['link'] = 'Посилання';
 $string['listitems'] = 'Список елементів тесту';
 $string['literal'] = 'Буквенний';
@@ -532,6 +528,14 @@ $string['matchanswer'] = 'Відповідна відповідь';
 $string['matchanswerno'] = 'Відповідна відповідь {$a}';
 $string['max'] = 'Макс';
 $string['maxmark'] = 'Максимальна оцінка';
+$string['maxmarks'] = 'Максимальні оцінки';
+$string['maxmarks_help'] = 'Максимальна кількість балів визначає, чи прихована інформація про оцінку, чи як вона відображається:
+
+* Щоб повністю приховати інформацію про оцінку, не встановлюйте цей прапорець (прапорець «Оцінки» вимикається автоматично).
+
+* Щоб відображати лише максимальну кількість балів: установіть цей прапорець, а не прапорець «Балки».
+
+* Щоб відображати як максимальні бали, так і бали, установіть цей прапорець, а також прапорець «Оцінки».';
 $string['messageprovider:attempt_grading_complete'] = 'Повідомлення про те, що вашу спробу оцінено';
 $string['messageprovider:attempt_overdue'] = 'Попередження, коли спроба тесту стає простроченою';
 $string['messageprovider:confirmation'] = 'Підтвердження власного проходження тесту';
@@ -772,6 +776,7 @@ $string['quiz:manage'] = 'Керувати тестами';
 $string['quiz:manageoverrides'] = 'Керуйте змінами налаштувань тесту';
 $string['quiz:preview'] = 'Переглядати тести';
 $string['quiz:regrade'] = 'Переоцінювати спроби тесту';
+$string['quiz:reopenattempts'] = 'Повторно відкрити жодних спроб тестування';
 $string['quiz:reviewmyattempts'] = 'Переглядати власні спроби';
 $string['quiz:view'] = 'Переглядати опис тесту';
 $string['quiz:viewoverrides'] = 'Перегляд налаштувань тесту';
@@ -840,6 +845,13 @@ $string['removepagebreak'] = 'Видалити розрив сторінки';
 $string['removeselected'] = 'Видалити вибране';
 $string['rename'] = 'Перейменувати';
 $string['renderingserverconnectfailed'] = 'Сервер {$a} був не в змозі обробити запит RQP. Перевірте, що URL правильний.';
+$string['reopenattempt'] = 'Знову відкрити';
+$string['reopenattemptareyousuremessage'] = 'Це повторно відкриє спробу {$a->attemptnumber} користувача {$a->attemptuser}.';
+$string['reopenattemptareyousuretitle'] = 'Повторна спроба?';
+$string['reopenattemptwrongstate'] = 'Спроба {$a->attemptid} знаходиться в неправильному стані ({$a->state}), щоб бути повторно відкрита.';
+$string['reopenedattemptwillbeinprogress'] = 'Спроба залишиться відкритою і може бути продовжена.';
+$string['reopenedattemptwillbeinprogressuntil'] = 'Спроба залишиться відкритою, і її можна буде продовжувати до завершення тесту {$a}.';
+$string['reopenedattemptwillbesubmitted'] = 'Спроба буде негайно подана на оцінювання.';
 $string['reorderquestions'] = 'Перевпорядкувати питання';
 $string['reordertool'] = 'Показати інструмент перевпорядкування';
 $string['repaginate'] = 'Розподілити по {$a} питань на сторінку';

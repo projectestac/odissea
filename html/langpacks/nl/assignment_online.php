@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_online', language 'nl', version '4.1'.
+ * Strings for component 'assignment_online', language 'nl', version '4.4'.
  *
  * @package     assignment_online
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Er is een online tekst geüploaded.';
+$string['event_assessable_uploaded'] = 'Er is een online tekst geüpload.';
 $string['pluginname'] = 'Online';
 $string['privacy:metadata'] = 'De online opdrachtplugin bewaart geen persoonlijke gegevens.';

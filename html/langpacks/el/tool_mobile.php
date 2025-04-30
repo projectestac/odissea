@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'el', version '4.1'.
+ * Strings for component 'tool_mobile', language 'el', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -99,7 +99,6 @@ $string['managefiletypes'] = 'Διαχείριση τύπων αρχείων';
 $string['minimumversion'] = 'Εάν έχει καθοριστεί μια έκδοση εφαρμογής (3.8.0 ή νεότερη), οποιοσδήποτε χρήστης χρησιμοποιεί παλαιότερη έκδοση, προτρέπεται να αναβαθμίσει την εφαρμογή του πριν να του επιτραπεί η πρόσβαση στον ιστότοπο.';
 $string['minimumversion_key'] = 'Ελάχιστη απαιτούμενη έκδοση εφαρμογής κινητού';
 $string['mobileapp'] = 'Εφαρμογή κινητού';
-$string['mobileappconnected'] = 'Εφαρμογή κινητού συνδέθηκε';
 $string['mobileappearance'] = 'Εμφάνιση κινητού';
 $string['mobileappenabled'] = 'Αυτός ο ιστότοπος έχει ενεργοποιημένη την πρόσβαση μέσω κινητού.<br /><a href="{$a}">Λήψη εφαρμογής κινητού</a>.';
 $string['mobileappsubscription'] = 'Εγγραφή στην εφαρμογή Moodle';
@@ -120,7 +119,6 @@ $string['notificationsseemore'] = 'Σημείωση: Τα στατιστικά �
 $string['notificationssentnotifications'] = 'Οι ειδοποιήσεις εστάλησαν';
 $string['oauth2identityproviders'] = 'Παροχείς ταυτότητας OAuth 2';
 $string['offlineuse'] = 'Χρήση εκτός σύνδεσης';
-$string['openusingembeddedbrowser'] = 'Άνοιγμα με χρήση ενσωματωμένου περιηγητή';
 $string['pluginname'] = 'Εργαλεία της εφαρμογής κινητού Moodle';
 $string['pluginnotenabledorconfigured'] = 'Πρόσθετο μη ενεργοποιημένο ή μη ρυθμισμένο.';
 $string['privacy:metadata:core_userkey'] = 'Τα κλειδιά χρήστη που χρησιμοποιούνται για τη δημιουργία κλειδιού αυτόματης σύνδεσης για τον τρέχοντα χρήστη.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'en', version '4.1'.
+ * Strings for component 'ouwiki', language 'en', version '4.4'.
  *
  * @package     ouwiki
  * @category    string
@@ -92,7 +92,7 @@ $string['changedby'] = 'Changed by';
 $string['changedifferences'] = 'Change differences';
 $string['changes'] = 'changes';
 $string['changesnav'] = 'Changes';
-$string['collapseallannotations'] = 'Collapse annotations';
+$string['collapseallannotations'] = 'Collapse all annotations';
 $string['collapseannotation'] = 'Collapse annotation';
 $string['compare'] = 'Compare';
 $string['compareselected'] = 'Compare selected';
@@ -117,6 +117,8 @@ writing the first version of a page also counts as an edit, so if you want
 somebody to create a page <i>and</i> make at least one edit other than that,
 set pages to 1 and edits to 2.
 </p>';
+$string['completiondetail:edits'] = 'Make edits: {$a}';
+$string['completiondetail:pages'] = 'Make pages: {$a}';
 $string['completionedits'] = 'User must make edits:';
 $string['completioneditsgroup'] = 'Require edits';
 $string['completioneditshelp'] = 'requiring edits to complete';
@@ -128,6 +130,7 @@ $string['contributionsbyuser'] = 'Contributions by user';
 $string['contributionsgrouplabel'] = 'Group';
 $string['countdowntext'] = 'This wiki allows only {$a} minutes for editing. Make your changes and click Save or Cancel before the remaining time (to right) reaches zero.';
 $string['countdownurgent'] = 'Please finish or cancel your edit now. If you do not save before time runs out, your changes will be saved automatically.';
+$string['countdownurgent_sr'] = 'one minute remaining';
 $string['create'] = 'Create';
 $string['createdbyon'] = 'created by {$a->name} on {$a->date}';
 $string['createlinkedwiki'] = 'Creating a new page';
@@ -180,7 +183,7 @@ $string['event:pagelock'] = 'ouwiki lock';
 $string['event:pageunlock'] = 'ouwiki unlock';
 $string['event:savefailed'] = 'Session fail on page save';
 $string['excelcsvdownload'] = 'Download in Excel-compatible format (.csv)';
-$string['expandallannotations'] = 'Expand annotations';
+$string['expandallannotations'] = 'Expand all annotations';
 $string['expandannotation'] = 'Expand annotation';
 $string['externaldashboardadd'] = 'Add wiki to dashboard';
 $string['externaldashboardremove'] = 'Remove wiki from dashboard';
@@ -197,6 +200,10 @@ $string['feedtitle'] = '{$a->course} wiki: {$a->name} - {$a->subtitle}';
 $string['format_html'] = 'View online';
 $string['format_rtf'] = 'Download in word processor format';
 $string['format_template'] = 'Download as wiki template file';
+$string['formathtml'] = 'HTML format';
+$string['formathtml_help'] = 'The HTML editor may be used for formatting content.
+
+To create a new page, type the new page name enclosed in double square brackets, for example [[Page 2]].';
 $string['frompage'] = 'from {$a}';
 $string['frompages'] = 'from {$a}...';
 $string['gradesupdated'] = 'Grades updated';
@@ -369,6 +376,7 @@ $string['privacy_somebodyelse'] = 'Somebody else';
 $string['privacy_you'] = 'You';
 $string['recentchanges'] = 'Latest edits';
 $string['returntohistory'] = '(<a href=\'{$a}\'>Return to history view</a>.)';
+$string['returntolabel'] = 'Return to';
 $string['returntopage'] = 'Return to wiki page';
 $string['returntoview'] = 'View current page';
 $string['revert'] = 'Revert';
@@ -378,6 +386,8 @@ $string['revertversion'] = 'Revert';
 $string['revertversionconfirm'] = '<p>This page will be returned to the state it was in as of {$a}, discarding all changes made since then. However, the discarded changes
 will still be available in the page history.</p><p>Are you sure you want to revert to this version of the page?</p>';
 $string['rssfeedalt'] = 'Subscribe to RSS feed';
+$string['savecheck'] = 'Enable save check';
+$string['savecheck_desc'] = 'Enable checking of session etc on submitting the edit form.';
 $string['savedat'] = 'Saved at {$a}';
 $string['savedby'] = 'saved by {$a}';
 $string['savefailcontent'] = 'Your version of the page is shown below so that you can copy and paste
@@ -390,8 +400,9 @@ other person\'s changes.';
 $string['savefaillocked'] = 'While you were editing this page, somebody else obtained the page lock.
 (This could happen in various situations such as if you are using an unusual browser or have
 Javascript turned off.) Unfortunately, your changes cannot be saved at this time.';
-$string['savefailnetwork'] = '<p>Unfortunately, your changes cannot be saved at this time. This is due to a
-network error; the website is temporarily unavailable or you have been signed out. </p><p>Saving has been disabled
+$string['savefailnetwork'] = 'a network error; the website is temporarily unavailable or cannot be reached';
+$string['savefailsession'] = 'a session error; your session has expired due to inactivity or you are no longer logged in';
+$string['savefailtext'] = '<p>Unfortunately, your changes cannot be saved at this time. This is due to {$a}. </p><p>Saving has been disabled
 on this page. In order to retain any changes you must copy the edited page content, access the Edit page again and then paste in your changes.</p>';
 $string['savefailtitle'] = 'Page cannot be saved';
 $string['savegrades'] = 'Save grades';
@@ -399,13 +410,6 @@ $string['savetemplate'] = 'Save wiki as template';
 $string['search'] = 'Search this wiki';
 $string['search:activity'] = 'OUWiki - activity information';
 $string['search:page_version'] = 'OUWiki - page versions';
-$string['search_help'] = 'Type your search term and press Enter or click the button.
-
-To search for exact phrases use quote marks.
-
-To exclude a word insert a hyphen immediately before the word.
-
-Example: the search term <tt>picasso -sculpture &quot;early works&quot;</tt> will return results for &lsquo;picasso&rsquo; or the phrase &lsquo;early works&rsquo; but will exclude items containing &lsquo;sculpture&rsquo;.';
 $string['seedetails'] = 'full history';
 $string['showannotationicons'] = 'Show annotations';
 $string['showwordcounts'] = 'Show word counts';
@@ -554,8 +558,10 @@ $string['viewwikistartpage'] = 'View {$a}';
 $string['wiki_content_mask'] = 'Replace with fake text of a similar length, retaining HTML tags and [[wiki page]] links';
 $string['wikifor'] = 'Viewing wiki for:';
 $string['wikifullchanges'] = 'View full change list';
+$string['wikiintro'] = 'Description';
 $string['wikirecentchanges'] = 'Wiki changes';
 $string['wikirecentchanges_from'] = 'Wiki changes (page {$a})';
+$string['wikisettings'] = 'Wiki settings';
 $string['words'] = 'Words';
 $string['wordsadded'] = 'Words added';
 $string['wordsdeleted'] = 'Words deleted';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'sv', version '4.1'.
+ * Strings for component 'format_topics', language 'sv', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,13 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Lägg till ämnen efter';
 $string['currentsection'] = 'Det här ämnet';
-$string['deletesection'] = 'Ta bort ämne';
-$string['editsection'] = 'Redigera ämne';
-$string['editsectionname'] = 'Redigera namn';
 $string['hidefromothers'] = 'Dölj ämne';
-$string['newsectionname'] = 'Nytt namn på ämne {$a}';
+$string['legacysectionname'] = 'Ämne';
 $string['page-course-view-topics'] = 'Valfri kurs-huvudsida i ämnesformat';
 $string['page-course-view-topics-x'] = 'Valfri kurssida i ämnesformat';
 $string['pluginname'] = 'Ämnesformat';

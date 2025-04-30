@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', version '4.1'.
+ * Strings for component 'mnet', language 'eu', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Gehitu sarbidea kontrolatzeko';
 $string['allhosts'] = 'Ostalari guztiak';
 $string['allhosts_no_options'] = 'Ez dago beste aukerarik eskuragarri ostalari bat baino gehiago dagoenean';
 $string['allow'] = 'Baimendu';
+$string['allowaccess'] = 'Baimendu sarbidea';
 $string['applicationtype'] = 'Aplikazio mota';
 $string['authfail_nosessionexists'] = 'Autorizazioak huts egin du: mnet saioa ez da existitzen.';
 $string['authfail_sessiontimedout'] = 'Autorizazioak huts egin du: mnet saioak denbora-muga gainditu du.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Gako hau ezabatzeko 60 segundoko leihoa iraungi da
 $string['deleteuserrecord'] = 'SSO ACL: ezabatu \'{$a->user}\' erabiltzailearen erregistroa hemendik: {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Errorea gertatu da. Zure zerbitzariko SSL gakoa ezabatzeko asmorik ez bazenuen, litekeena da eraso maltzurren bat egin nahi izatea. Ez da ekintzarik burutu.';
 $string['deny'] = 'Ukatu';
+$string['denyaccess'] = 'Ukatu sarbidea';
 $string['description'] = 'Deskribapena';
 $string['duplicate_usernames'] = 'Zure erabiltzaile-taulako "mnethostid" eta "username" zutabeetan indize bat sortzeak huts egin du.<br />Hau <a href="{$a}" target="_blank">erabiltzaile-taulan bikoiztutako erabiltzaileak dituzunean</a> gerta daiteke.<br />Hala ere, zure eguneratzea ondo amai daiteke. Egin klik beheko estekan eta arazo hau konpontzeko argibideak leiho berri batean agertuko dira. Eguneratzea amaitu ondoren konpon dezakezu hori.<br />';
 $string['enabled_for_all'] = '(Zerbitzu hau ostalari guztietarako gaitu da).';

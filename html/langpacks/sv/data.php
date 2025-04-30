@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'sv', version '4.1'.
+ * Strings for component 'data', language 'sv', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -421,7 +421,6 @@ $string['timemodified'] = 'Modifierad';
 $string['todatabase'] = 'till den här databasen';
 $string['type'] = 'Fälttyp';
 $string['undefinedprocessactionmethod'] = 'Ingen metod för händelser har definierats i Data_Preset för att hantera åtgärden "{$a}".';
-$string['unsupportedexport'] = 'Det går inte att exportera ({$a->fieldtype})';
 $string['unsupportedfields'] = 'Fält som ej stöds';
 $string['unsupportedfieldslist'] = 'Följande fält kan inte exporteras:';
 $string['updatefield'] = 'Uppdatera ett befintligt fält';

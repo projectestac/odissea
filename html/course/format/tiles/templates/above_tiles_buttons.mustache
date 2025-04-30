@@ -10,23 +10,21 @@
 
         </button>
     {{/section_zero_show}}
-    {{#jsnavadminallowed}}
+
+    {{#hasabovetilescontrols}}
         <div class="btn-group">
             <button type="button" class="sectionbutton align-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{#str}}controls, format_tiles{{/str}}">
-                <span id="sec-zero-closed-icon" class="d-flex justify-content-center align-items-center h-100">
+                <span class="d-flex justify-content-center align-items-center h-100">
                     <i class="icon fa fa-ellipsis-h fa-fw m-0" aria-hidden="true"></i>
                 </span>
             </button>
             <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="{{{config.wwwroot}}}/course/view.php?id={{courseid}}&stopjsnav=1">
-                    {{#jsnavuserenabled}}
-                        {{#pix}}toggle-on, format_tiles, {{#str}}jsactivate, format_tiles{{/str}}{{/pix}}{{#str}}jsactivate, format_tiles{{/str}}
-                    {{/jsnavuserenabled}}
-                    {{^jsnavuserenabled}}
-                        {{#pix}}toggle-off, format_tiles, {{#str}}jsdeactivate, format_tiles{{/str}}{{/pix}}{{#str}}jsdeactivate, format_tiles{{/str}}
-                    {{/jsnavuserenabled}}
-                </a>
+                {{#abovetilescontrols}}
+                    <a class="dropdown-item" href="{{{url}}}">
+                        {{#pix}}{{iconname}}, format_tiles, {{icontitle}}{{/pix}} {{{label}}}
+                    </a>
+                {{/abovetilescontrols}}
             </div>
         </div>
-    {{/jsnavadminallowed}}
+    {{/hasabovetilescontrols}}
 </div>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', version '4.1'.
+ * Strings for component 'course', language 'nl', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'Geen voettekst';
 $string['activitychooserrecommendations'] = 'Aanbevolen activiteiten';
 $string['activitychoosersettings'] = 'Instellingen activiteitenkiezer';
 $string['activitychoosertabmode'] = 'Tabs activiteitenkiezer';
-$string['activitychoosertabmode_desc'] = 'Met de activiteitenkiezer kunnen leraren makkelijk activiteiten en bronnen kiezen om toe te voegen aan hun cursus. Deze instelling bepaalt welke tabs er moeten in getoond worden. Merk op dat de favorieten-tab enkel getoond wordt voor een gebruiker die één of meer activiteiten als favoriet aangeduid heeft en dat de aanbevolen-tab enkel getoond wordt als de site-beheerder enkele specifieke activiteiten aanbevolen heeft.';
+$string['activitychoosertabmode_desc'] = 'De activiteitenkiezer toont een lijst met activiteiten en bronnen die leraren kunnen toevoegen aan hun cursus. Items aan de "Aanbevolen"-tab toe te voegen kun je vanaf de pagina <a href=\'../course/recommendations.php\'>Aanbevolen activiteiten</a>.';
+$string['activitychoosertabmodefive'] = 'Favoriet, aanbevolen, alle';
+$string['activitychoosertabmodefour'] = 'Favoriet, aanbevolen, alle, activiteiten, bronnen';
 $string['activitychoosertabmodeone'] = 'Favorieten, alle, activiteiten, bronnen, aanbevolen';
+$string['activitychoosertabmodesix'] = 'Favoriet, aanbevolen, activiteiten, bronnen';
 $string['activitychoosertabmodethree'] = 'Favorieten, activiteiten, bronnen, aanbevolen';
 $string['activitychoosertabmodetwo'] = 'Favorieten, alle, aanbevolen';
 $string['activitydate:closed'] = 'Gesloten:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'Ster activiteit {$a}';
 $string['aria:recommendedtab'] = 'Aanbevolen activiteiten';
 $string['browsecourseadminindex'] = 'Blader door de cursusadministratie met deze index.';
 $string['browsesettingindex'] = 'Blader door instellingen met deze index.';
+$string['communicationroomlink'] = 'Chatten met cursisten';
 $string['completion_automatic:done'] = 'Voltooid:';
 $string['completion_automatic:failed'] = 'Mislukt:';
 $string['completion_automatic:todo'] = 'Nog te doen:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} is door {$a->s
 $string['completionrequirements'] = 'Voltooiingsvoorwaarden voor {$a}';
 $string['courseaccess'] = 'Toegang tot cursus';
 $string['coursealreadyfinished'] = 'Cursus reeds geëindigd';
+$string['coursecommunication_desc'] = 'De standaard communicatieservice voor nieuwe cursussen. Bestaande cursussen zullen geen standaard communicatieservice geselecteerd hebben.';
 $string['coursecontentnotification'] = 'Melding van inhoudswijziging verzenden';
 $string['coursecontentnotification_help'] = 'Je kunt een melding naar de cursusgebruikers sturen over elke nieuwe of bijgewerkte bron of activiteit. Enkel gebruikers met toegang tot de activiteit of bron zullen een melding krijgen.';
 $string['coursecontentnotifnew'] = '{$a->coursename} nieuwe inhoud';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> is nieuw in de cursus <a href="{$a-> courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Wijzig je meldingsvoorkeuren</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} inhoudswijziging';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> is gewijzigd in de cursus <a href="{$a- >courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Wijzig hier je meldingsvoorkeuren</a></p>';
+$string['coursecount'] = 'Aantal cursussen';
 $string['coursenotyetfinished'] = 'De cursus is nog niet geëindigd';
 $string['coursenotyetstarted'] = 'De cursus is nog niet begonnen';
 $string['courseparticipants'] = 'Cursusdeelnemers';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'Iedereen';
 $string['customfield_visibletoteachers'] = 'Leraren';
 $string['customfieldsettings'] = 'Gemeenschappelijke cursusinstellingen voor aangepaste velden';
 $string['daystakingcourse'] = 'Dagen cursus';
+$string['defaultsettingscategory'] = 'Standaard instellingen';
 $string['downloadcontent'] = 'Opnemen in cursusdownloads';
 $string['downloadcontent_help'] = 'Moet deze activiteit of bron mee opgenomen worden in het zip-bestand met cursusinhoud om te downloaden? Bestand, map, pagina en label kunnen volledig gedownload worden. Voor alle ander activiteiten en bronnen kan enkel de naam en beschrijving gedownload worden. Deze optie vereist dat downloaden van cursusinhoud ingeschakeld is in de cursusinstellingen.
 
@@ -94,7 +101,9 @@ $string['downloadcoursecontent_help'] = 'Deze instelling bepaalt of cursusinhoud
 $string['enabledownloadcoursecontent'] = 'Cursusinhoud downloaden inschakelen';
 $string['errorendbeforestart'] = 'De einddatum ({$a}) is vóór de startdatum van de cursus.';
 $string['favourite'] = 'Favoriete cursus';
+$string['gotosection'] = 'Ga naar sectie {$a}';
 $string['gradetopassnotset'] = 'Deze cursus heeft geen cijfer om te slagen ingesteld. Het kan worden ingesteld in het cijfer van de cursus (cijferlijst-instelling).';
+$string['hideendedcoursestask'] = 'Verbergen cursussen na einddatum';
 $string['informationformodule'] = 'Informatie over de activiteit {$a}';
 $string['module'] = 'Activiteit';
 $string['namewithlink'] = 'Categorienaam met link';
@@ -111,6 +120,8 @@ $string['noteachinginfomessage'] = 'Hallo {$a->userfirstname},
 $string['participants:perpage'] = 'Aantal deelnemers per pagina';
 $string['participants:perpage_help'] = 'Het aantal gebruikers dat per pagina getoond wordt op de deelnemerspagina in elke cursus.';
 $string['participantsnavigation'] = 'Deelnemers tertiaire navigatie.';
+$string['pdfexportfont'] = 'PDF-lettertype';
+$string['pdfexportfont_help'] = 'Het lettertype dat moet worden gebruikt voor gegenereerde PDF-bestanden, zoals ingeleverde opdrachten.';
 $string['privacy:completionpath'] = 'Cursusvoltooiing';
 $string['privacy:favouritespath'] = 'Informatie over cursus met ster';
 $string['privacy:metadata:activityfavouritessummary'] = 'Het cursussysteem bevat informatie over welke items van de activiteitenkiezer door de gebruiker zijn gemarkeerd met een ster.';
@@ -123,6 +134,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->dateiffstr} na het begin 
 $string['relativedatessubmissionduedatebefore'] = '{$a->dateiffstr} voor het begin van de cursus';
 $string['searchactivitiesbyname'] = 'Zoek naar activiteiten op naam';
 $string['searchresults'] = 'Zoekresultaten: {$a}';
+$string['sectionlink'] = 'Permalink';
+$string['showstartedcoursestask'] = 'Toon cursussen vanaf startdatum';
 $string['studentsatriskincourse'] = 'Leerlingen lopen risico in {$a} cursus';
 $string['studentsatriskinfomessage'] = 'Hallo {$a->userfirstname},
 <p>Leerlingen van de cursus {$a->coursename} hebben een risico van uitvallen of niet slagen.</p>';
@@ -154,3 +167,4 @@ $string['targetlabelstudentgradetopassno'] = 'Leerling die waarschijnlijk het mi
 $string['targetlabelstudentgradetopassyes'] = 'Leerling loopt het risico om het minimumcijfer om te slagen voor de cursus niet te halen.';
 $string['targetlabelteachingno'] = 'Cursussen die waarschijnlijk niet zullen starten';
 $string['targetlabelteachingyes'] = 'Gebruikers met onderwijsmogelijkheden die toegang hebben tot de cursus';
+$string['totalactivities'] = 'Activiteiten: {$a}';

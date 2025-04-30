@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'zh_cn', version '4.1'.
+ * Strings for component 'resource', language 'zh_cn', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clicktodownload'] = '点击{$a}链接下载此文件';
 $string['clicktoopen2'] = '点击{$a}链接查看此文件';
 $string['configdisplayoptions'] = '选择所有可以使用的选项。已有的设置不会改变。按住CTRL键选择多个域。';
-$string['configframesize'] = '当页面或上传的文件显示在框架中时，该象素值设定顶层框架的大小。';
+$string['configframesize'] = '当网页或上传的文件在一个框架内显示时，该值是顶部框架（包含导航）的高度（以像素为单位）。';
 $string['configparametersettings'] = '当添加新的资源时，以此作为参数设置框的缺省值。在第一次设置之后，就允许每个用户自己设置。';
 $string['configpopup'] = '所添加的新资源显示在弹出窗口，设其为默认值吗？';
 $string['configpopupdirectories'] = '弹出窗口是否显示缺省目录链接？';
@@ -78,7 +78,7 @@ $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';
 $string['modifieddate'] = '修改 {$a}';
 $string['modulename'] = '文件';
-$string['modulename_help'] = '文件模块允许教师提供一个文件作为课程资源。在可能的情况下，该文件将在课程界面中显示;否则学生将被提示下载。该文件可能包括支持文件，例如一个HTML页面可能有嵌入的图像或Flash对象。
+$string['modulename_help'] = '文件模块允许教师提供文件作为课程资源。在可能的情况下，该文件将显示在课程界面中；否则，系统会提示学生下载。该文件可以包括支持文件，例如HTML页面可以嵌入图像。
 
 请注意，学生需要在他们的计算机上安装适当的软件才能打开文件。
 
@@ -86,11 +86,11 @@ $string['modulename_help'] = '文件模块允许教师提供一个文件作为�
 
 * 分享课堂上的演示
 * 包括一个迷你网站作为课程资源
-* 提供某些软件程序的草稿文件(如Photoshop .psd)，这样学生就可以编辑并提交他们进行评估';
+* 提供软件程序的草稿文件，供学生编辑并提交评估';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = '文件';
 $string['notmigrated'] = '抱歉，传统的资源类型（{$a}）还不能移植。';
-$string['optionsheader'] = '选项';
+$string['optionsheader'] = '显示选项';
 $string['page-mod-resource-x'] = '任意文件模块页面';
 $string['pluginadministration'] = '文件模块管理';
 $string['pluginname'] = '文件';
@@ -107,10 +107,10 @@ $string['resource:addinstance'] = '添加一个新的资源';
 $string['resource:exportresource'] = '导出资源';
 $string['resource:view'] = '查看资源';
 $string['resourcecontent'] = '文件和子目录';
-$string['resourcedetails_sizedate'] = '{$a->size}{$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = '文件';
 $string['selectmainfile'] = '请点击文件名旁的图标选择主文件。';
 $string['showdate'] = '显示上传/修改日期';

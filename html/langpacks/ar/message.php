@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ar', version '4.1'.
+ * Strings for component 'message', language 'ar', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'جهات اتصال';
 $string['conversationactions'] = 'قائمة إجراءات المحادثة';
 $string['decline'] = 'أرفض';
 $string['defaultmessageoutputs'] = 'إعدادات الاشعارات';
-$string['defaults'] = 'الافتراضيات';
 $string['deleteallconfirm'] = 'هل أنت متأكد من رغبتك في حذف هذه المحادثة بالكامل؟ هذا لن يحذفها من جهة أطرافها الأخرى.';
 $string['deleteallmessages'] = 'حذف جميع الرسائل';
 $string['deleteallselfconfirm'] = 'هل أنت متأكد من رغبتك في حذف هذه المحادثة الشخصية بالكامل؟';
@@ -97,11 +96,7 @@ $string['info'] = 'معلومات المستخدم';
 $string['isnotinyourcontacts'] = '{$a} ليس ضمن جهات اتصالك';
 $string['loadmore'] = 'تحميل المزيد';
 $string['loggedin'] = 'متواجد';
-$string['loggedin_help'] = 'إعداد طريقة استلامك للاشعارات عند دخولك إلى مودل';
-$string['loggedindescription'] = 'عند تسجيل دخولك إلى مودل';
 $string['loggedoff'] = 'غير متصل';
-$string['loggedoff_help'] = 'حدد كيف تريد استلام الاشعارات عندما لا تكون متواجداً في مودل';
-$string['loggedoffdescription'] = 'عندما لا تكون متواجداً في مودل';
 $string['managemessageoutputs'] = 'التفضيلات الافتراضية للإشعارات';
 $string['message'] = 'الرسالة';
 $string['messagecontactrequest'] = '{$a->user} يلتمس إضافته كجهة اتصال. قم بزيارة صفحة <a href="{$a->url}">طلبات الاتصال</a> للاستجابة لهذا الطلب';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'تم ارسال الرسالة إلى ش
 $string['sendbulkmessagesingle'] = 'ارسل إلى شخص واحد';
 $string['sendcontactrequest'] = 'أرسل طلب مراسلة';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'يجري إرسال "{$a->provider}" بواسطة "{$a->processor}"';
 $string['sendingviaenabled'] = 'إرسال حالة تمكين "{$a->provider}" بواسطة "{$a->processor}"';
 $string['sendingvialocked'] = 'إرسال حالة تأمين "{$a->provider}" بواسطة "{$a->processor}"';
-$string['sendingviawhen'] = 'يجري إرسال "{$a->provider}" بواسطة "{$a->processor}" عند {$a->state}';
 $string['sendmessage'] = 'أرسل الرسالة';
 $string['sendmessageto'] = 'أرسل رسالة إلى {$a}';
 $string['sendmessagetopopup'] = 'أرسل رسالة إلى {$a} - نافذة جديدة';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'معاينة الإشعار الكامل';
 $string['viewmessageswith'] = 'معاينة المراسلات مع {$a}';
 $string['viewnotificationresource'] = 'إذهب إلى: {$a}';
 $string['viewunreadmessageswith'] = 'معاينة المراسلات غير المقروءة مع {$a}';
+$string['waitingforcontactaccept'] = 'بانتظار إضافته كجهة اتصال';
 $string['wouldliketocontactyou'] = 'يرغب بالتواصل معك';
 $string['writeamessage'] = 'أُكتب رسالة...';
 $string['you'] = 'أنت:';

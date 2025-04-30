@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'sv', version '4.1'.
+ * Strings for component 'page', language 'sv', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'Höjd på popup-fönster (i pixlar)';
 $string['popupheightexplain'] = 'Anger standardhöjden på popup-fönster';
 $string['popupwidth'] = 'Bredd på popup-fönster (i pixlar)';
 $string['popupwidthexplain'] = 'Anger standardbredden på popup-fönster';
-$string['printheading'] = 'Visa sidans namn';
-$string['printheadingexplain'] = 'Visa sidans namn ovanför sidans innehåll';
 $string['printintro'] = 'Visa sidbeskrivning';
 $string['printintroexplain'] = 'Visa beskrivning för sida ovanför innehållet?';
 $string['printlastmodified'] = 'Visa senast ändrad datum';

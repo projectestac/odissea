@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ko', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ko', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = '자동으로 채점된 질문 보여�
 $string['attemptstograde'] = '채점할 시도';
 $string['automaticallygraded'] = '자동으로 채점됨';
 $string['backtothelistofquestions'] = '질문 목록으로 돌아가기';
-$string['bydate'] = '날짜별로';
-$string['bystudentfirstname'] = '학생의 이름으로';
-$string['bystudentidnumber'] = '학생 아이디별로';
-$string['bystudentlastname'] = '학생의 성으로';
 $string['cannotgradethisattempt'] = '이 시도를 채점할 수 없습니다.';
 $string['cannotloadquestioninfo'] = '특정 질문 유형의 질문 정보를 불러올 수 없습니다.';
 $string['changeoptions'] = '옵션 변경';
@@ -54,7 +50,6 @@ $string['grading:viewstudentnames'] = '채점시 학생 이름 보기';
 $string['gradingall'] = '이 질문에는 모두 {$a} 시도가 있습니다.';
 $string['gradingattempt'] = '{$a->fullname} 의 {$a->attempt} 번째 시도';
 $string['gradingattemptsxtoyofz'] = '시도 채점 {$a->from} 부터  {$a->of}의 {$a->to} 까지';
-$string['gradingattemptwithidnumber'] = '{$a->fullname} ({$a->idnumber})에 대한 시도 수  {$a->attempt}';
 $string['gradingnextungraded'] = '다음 {$a} 미채점 시도';
 $string['gradingnotallowed'] = '이 퀴즈의 응답을 수동으로 채점할 권한이 없습니다.';
 $string['gradingquestionx'] = '질문 채점 {$a->number}: {$a->questionname}';
@@ -68,14 +63,12 @@ $string['invalidquestionid'] = 'ID {$a}인 채점 가능한 질문을 찾을 수
 $string['noquestionsfound'] = '수동 채점 질문이 없습니다.';
 $string['nothingfound'] = '표시할 것이 없음';
 $string['options'] = '옵션';
-$string['orderattempts'] = '시도 정렬';
 $string['pluginname'] = '수동 채점';
 $string['qno'] = 'Q #';
 $string['questionname'] = '질문 이름';
 $string['questionsperpage'] = '페이지당 질문';
 $string['questionsthatneedgrading'] = '채점이 필요한 질문';
 $string['questiontitle'] = '질문 {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} 시도 {$a->openspan}채점{$a->closespan})';
-$string['randomly'] = '무작위';
 $string['saveandnext'] = '저장하고 다음 페이지로 가기';
 $string['showstudentnames'] = '학생이름 표시';
 $string['tograde'] = '채점할';

@@ -23,10 +23,8 @@
  */
 namespace core\plugininfo;
 
-use moodle_url;
 use admin_settingpage;
-
-defined('MOODLE_INTERNAL') || die();
+use moodle_url;
 
 /**
  * Class for admin tool plugins
@@ -37,18 +35,15 @@ defined('MOODLE_INTERNAL') || die();
  */
 class customfield extends base {
 
+    public static function plugintype_supports_disabling(): bool {
+        return true;
+    }
+
     /**
      * Allow uninstall
      * @return bool
      */
     public function is_uninstall_allowed() {
-        // XTEC ************ AFEGIT - Disable uninstalling
-        // 2021.05.18 @aginard
-        if (!get_protected_agora()) {
-            return false;
-        }
-        // ************ FI
-
         return true;
     }
 
@@ -141,6 +136,7 @@ class customfield extends base {
      */
     public function load_settings(\part_of_admin_tree $adminroot, $parentnodename, $hassiteconfig) {
         global $CFG, $USER, $DB, $OUTPUT, $PAGE; // In case settings.php wants to refer to them.
+        /** @var \admin_root $ADMIN */
         $ADMIN = $adminroot; // May be used in settings.php.
         $plugininfo = $this; // Also can be used inside settings.php
         $availability = $this; // Also to be used inside settings.php.

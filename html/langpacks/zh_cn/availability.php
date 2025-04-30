@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'zh_cn', version '4.1'.
+ * Strings for component 'availability', language 'zh_cn', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = '添加限制';
 $string['and'] = '且';
 $string['condition_group'] = '限制集合';
 $string['condition_group_info'] = '添加一系列的嵌套限制，用以更复杂的逻辑。';
+$string['disabled_verb'] = '无法更改，因为规则包含包含私有数据的规则。';
+$string['editsettings'] = '更改限制';
 $string['enableavailability'] = '允许受限制的访问';
 $string['enableavailability_desc'] = '如果启用，则可以设置条件（基于日期、等级、完成等）以控制是否可以访问活动或资源。';
 $string['error_list_nochildren'] = '逻辑集应该至少包含一个条件。';

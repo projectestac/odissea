@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ur', version '4.1'.
+ * Strings for component 'grades', language 'ur', version '4.4'.
  *
  * @package     grades
  * @category    string
@@ -116,7 +116,6 @@ $string['changereportdefaults'] = 'رپورٹ ڈیفالٹس کو تبدیل ک�
 $string['chooseaction'] = 'ایک عمل کا انتخاب کریں۔۔۔';
 $string['choosecategory'] = 'زمرہ منتخب کریں';
 $string['collapsecriterion'] = 'معیار کو ختم کریں';
-$string['combo'] = 'ٹیبز اور ڈراپ ڈاؤن مینو';
 $string['compact'] = 'کمپیکٹ';
 $string['componentcontrolsvisibility'] = 'چاہے یہ گریڈ آئٹم چھپا ہوا ہے سرگرمی کی ترتیبات کے ذریعے کنٹرول کیا جاتا ہے۔';
 $string['contract'] = 'معاہدہ زمرہ';
@@ -151,7 +150,6 @@ $string['displaylettergrade'] = 'لیٹر گریڈ ڈسپلے کریں';
 $string['displaypercent'] = 'فیصد ڈسپلے کریں';
 $string['displaypoints'] = 'ڈسپلے پوائنٹس';
 $string['displayweighted'] = 'وزن والے درجات دکھائیں';
-$string['dropdown'] = 'ڈراپ ڈاؤن مینو';
 $string['droplow'] = 'سب سے کم ڈراپ کریں';
 $string['droplow_help'] = 'یہ ترتیب سب سے کم درجات کی ایک مخصوص تعداد کو جمع سے خارج کرنے کے قابل بناتی ہے۔';
 $string['droplowestvalue'] = 'سب سے کم گریڈ کی قدر کو کم کریں';
@@ -495,7 +493,6 @@ $string['mygrades'] = 'یوزر مینو گریڈ لنک';
 $string['mygrades_desc'] = 'یہ ترتیب صارف کے مینو سے کسی بیرونی گریڈ بک سے لنک کرنے کے اختیار کی اجازت دیتی ہے۔';
 $string['mypreferences'] = 'میری ترجیحات';
 $string['myreportpreferences'] = 'میری رپورٹ کی ترجیحات';
-$string['navmethod'] = 'نیویگیشن کا طریقہ';
 $string['neverdeletehistory'] = 'تاریخ کو کبھی حذف نہ کریں';
 $string['newcategory'] = 'نیا زمرہ';
 $string['newitem'] = 'نیا گریڈ آئٹم';
@@ -741,7 +738,6 @@ $string['showverbose'] = 'دکھائیں {$a->category} {$a->itemmodule} {$a->it
 $string['showweight'] = 'وزن دکھائیں';
 $string['showweight_help'] = 'آیا گریڈ وزن کے لیے کالم دکھانا ہے۔';
 $string['simpleview'] = 'واحد منظر';
-$string['singleview'] = '{$a} کے لیے ایک منظر';
 $string['sitewide'] = 'پوری سائٹ';
 $string['sort'] = 'ترتیب دیں';
 $string['sortasc'] = 'صعودی ترتیب میں ترتیب دیں';
@@ -761,7 +757,6 @@ $string['submittedon'] = 'جمع کرایا گیا: {$a}';
 $string['sumofgradesupgradedgrades'] = 'نوٹ: سائٹ کے اپ گریڈ کے حصے کے طور پر جمع کرنے کا طریقہ "گریڈز کا مجموعہ" کو "قدرتی" میں تبدیل کر دیا گیا ہے۔ چونکہ "گریڈز کا مجموعہ" پہلے اس کورس میں استعمال کیا گیا تھا، اس لیے تجویز کی جاتی ہے کہ آپ گریڈ بک میں اس تبدیلی کا جائزہ لیں۔';
 $string['switchtofullview'] = 'مکمل  ویو پر سوئچ کریں';
 $string['switchtosimpleview'] = 'سادہ ویو پر سوئچ کریں';
-$string['tabs'] = 'ٹیبز';
 $string['topcategory'] = 'سپر زمرہ';
 $string['total'] = 'کل';
 $string['totalweight100'] = 'کل وزن 100 کے برابر ہے';

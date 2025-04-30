@@ -58,46 +58,36 @@ class header extends header_base {
      * @return \stdClass data context for a mustache template
      */
     public function export_for_template(\renderer_base $output): \stdClass {
-        global $CFG;
+        global $CFG; // ADDED.
 
         $format = $this->format;
         $section = $this->section;
         $sectionextra = $this->fmtsectionextra;
         $course = $format->get_course();
 
-        $data = (object)[
-            'num' => $section->section,
-            'id' => $section->id,
-        ];
+        $data = parent::export_for_template($output);
+
+        unset($data->displayonesection);
 
         $data->title = $output->section_title_without_link($section, $course);
 
-        if ($sectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC) {  // CHANGED link condition.
+        if (!empty($section->component)) {
+            $data->headinglevel = ($format->get_sectionid() != $section->id) ? 4 : 3;
+            return $data;
+        }
+
+        if ($sectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC) {
             $data->title = $output->section_title($section, $course);
         }
 
-        // REMOVED stealth sections.
-
-        // ADDED.
         $data->fmticon = $sectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC ?
                             'icon fa fa-folder-o fa-fw' : 'icon fa fa-list fa-fw';
-        // END ADDED.
 
-        if (!$section->visible) {
-            $data->ishidden = true;
+        if ($CFG->version >= 2023021000) {
+            $data->sectionbulk = true;
+        } else {
+            unset($data->sectionbulk);
         }
-
-        if ($course->id == SITEID) {
-            $data->sitehome = true;
-        }
-
-        $data->editing = $format->show_editor();
-
-        // REMOVED index page.
-
-        $data->name = get_section_name($course, $section);
-
-        $data->sectionbulk = ($CFG->version >= 2023021000);
 
         return $data;
     }

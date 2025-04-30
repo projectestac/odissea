@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'el', version '4.1'.
+ * Strings for component 'workshopform_rubric', language 'el', version '4.4'.
  *
  * @package     workshopform_rubric
  * @category    string

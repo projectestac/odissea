@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview_plus', language 'es', version '4.1'.
+ * Strings for component 'block_course_overview_plus', language 'es', version '4.4'.
  *
  * @package     block_course_overview_plus
  * @category    string
@@ -25,5 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['academicyearstart'] = 'Mes en el que principia el año académico';
+$string['all'] = 'Todos';
 $string['category'] = 'Categoría';
 $string['categorycoursefilter'] = 'Permitir filtrar los cursos por categoría';
+$string['clicktofilter'] = 'Elegir para filtrar sus cursos';
+$string['collapsecourseinfo'] = 'Colapsar información de cursos';
+$string['courselimit'] = 'Número máximo de cursos a mostrar (podrían ser menos si los cursos están ocultos o filtrados)';
+$string['defaultyear'] = 'Configurar el filtro para el año más reciente por defecto';
+$string['defaultyearhelp'] = 'Año por defecto';
+$string['defaultyearhelp_help'] = 'Si el usuario no ha seleccionado previamente un filtro para años académicos, se elige un filtro automáticamente. La primera opción es el año académico actual. Si el usuario no está inscrito en ningún curso en el año académico actual, la siguiente opción es cualquier año académico que empiece o termine en el año calendario actual. Después de esto, se elegiría el año académico previo más reciente.';
+$string['expandcourseinfo'] = 'Expandir información del curso';
+$string['hiddencourses'] = 'cursos ocultos';
+$string['hidecourse'] = 'Ocultar curso';
+$string['managehiddencourses'] = 'Administrar cursos ocultos';
+$string['other'] = 'Otro';
+$string['pluginname'] = 'Visión general plus del curso';
+$string['showcourse'] = 'Mostrar curso';
+$string['stopmanaginghiddencourses'] = 'Dejar de administrar cursos ocultos';
+$string['teacher'] = 'Profesor';
+$string['teachercoursefilter'] = 'Permitir que los cursos sean filtrados por profesor';
+$string['year'] = 'Año';
+$string['yearcoursefilter'] = 'Permitir que los cursos sean filtrados por la fecha de inicio del curso';
+$string['youhave'] = 'Usted tiene';

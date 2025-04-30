@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'de', version '4.1'.
+ * Strings for component 'license', language 'de', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,14 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = 'Alle Rechte vorbehalten';
 $string['cannotdeletecore'] = 'Eine Standardlizenz kann nicht gelöscht werden.';
 $string['cannotdeletelicenseinuse'] = 'Eine Lizenz kann nicht gelöscht werden, wenn sie einer oder mehreren Dateien zugewiesen ist.';
-$string['cc'] = 'CC - Creative Commons - 3.0 International';
+$string['cc'] = 'Creative Commons - 3.0 International';
 $string['cc-4.0'] = 'Creative Commons - 4.0 International';
 $string['cc-nc'] = 'Creative Commons - nicht kommerziell 3.0 International';
 $string['cc-nc-4.0'] = 'Creative Commons - nicht kommerziell 4.0 International';
-$string['cc-nc-nd'] = 'Creative Commons - nicht kommerziell - keine Bearbeitung  3.0 International';
-$string['cc-nc-nd-4.0'] = 'Creative Commons - nicht kommerziell - keine Bearbeitung  4.0 International';
-$string['cc-nc-sa'] = 'Creative Commons - nicht kommerziell - gleiche Weitergabe 3.0 International';
-$string['cc-nc-sa-4.0'] = 'Creative Commons - nicht kommerziell - gleiche Weitergabe 4.0 International';
+$string['cc-nc-nd'] = 'Creative Commons - nicht kommerziell, keine Bearbeitung 3.0 International';
+$string['cc-nc-nd-4.0'] = 'Creative Commons - nicht kommerziell, keine Bearbeitung 4.0 International';
+$string['cc-nc-sa'] = 'Creative Commons - nicht kommerziell, gleiche Weitergabe 3.0 International';
+$string['cc-nc-sa-4.0'] = 'Creative Commons - nicht kommerziell, gleiche Weitergabe 4.0 International';
 $string['cc-nd'] = 'Creative Commons - keine Bearbeitung 3.0 International';
 $string['cc-nd-4.0'] = 'Creative Commons - keine Bearbeitung 4.0 International';
 $string['cc-sa'] = 'Creative Commons - gleiche Weitergabe 3.0 International';

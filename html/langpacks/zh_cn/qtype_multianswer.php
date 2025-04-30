@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'zh_cn', version '4.1'.
+ * Strings for component 'qtype_multianswer', language 'zh_cn', version '4.4'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,6 +40,7 @@ $string['layoutselectinline'] = '在正文中使用下拉菜单';
 $string['layoutundefined'] = '未定义的布局';
 $string['layoutvertical'] = '纵向排列的单选按钮';
 $string['missingsubquestion'] = '您的系统中缺少此子问题，因此无法显示。';
+$string['multichoicex'] = '多项选择{$a}';
 $string['nooptionsforsubquestion'] = '不能获取题目 #{$a->sub} 的选项(question->id={$a->id})';
 $string['noquestions'] = '完形题“<strong>{$a}</strong>”中没有任何问题';
 $string['pleaseananswerallparts'] = '请回答题目的所有部分。';

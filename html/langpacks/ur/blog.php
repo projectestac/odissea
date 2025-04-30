@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ur', version '4.1'.
+ * Strings for component 'blog', language 'ur', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -210,4 +210,3 @@ $string['viewsiteentries'] = 'سائٹ کے اندراج دیکھیں';
 $string['viewuserentries'] = '{$a} کے تمام اندراجات دیکھیں';
 $string['worldblogs'] = 'دنیا ان اندراجات کو پڑھ سکتی ہے جو دنیا کے لیے قابل رسائی ہیں';
 $string['wrongexternalid'] = 'غلط بیرونی بلاگ ID';
-$string['wrongpostid'] = 'غلط بلاگ پوسٹ آئی ڈی';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'uk', version '4.1'.
+ * Strings for component 'calendar', language 'uk', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL-адреса календаря';
 $string['calendarheading'] = '{$a} Календар';
 $string['calendarpreferences'] = 'Налаштування календаря';
 $string['calendartypes'] = 'Типи календаря';
-$string['calendarurl'] = 'URL календаря: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'URL-адресу календаря скопійовано в буфер обміну';
 $string['category'] = 'Категорія';
 $string['categoryevent'] = 'Подія категорії';
@@ -176,7 +175,6 @@ $string['importcalendarexternal'] = 'Імпортувати зовнішній �
 $string['importcalendarfrom'] = 'Імпорт з';
 $string['importcalendarheading'] = 'Імпорт календаря...';
 $string['importfromfile'] = 'Файл календаря (.ics)';
-$string['importfrominstructions'] = 'Будь ласка, або вкажіть URL на віддалений календар, або завантажте файл.';
 $string['importfromurl'] = 'URL календаря';
 $string['invalideventtype'] = 'Вибраний тип події недійсний.';
 $string['invalidtimedurationminutes'] = 'Неправильний формат. Будь ласка, введіть тривалість у хвилинах більшу ніж 0, або виберіть "не вказувати тривалість"';
@@ -188,7 +186,6 @@ $string['manyevents'] = '{$a} подій';
 $string['mon'] = 'Пн';
 $string['monday'] = 'Понеділок';
 $string['monthly'] = 'Щомісяця';
-$string['monthlyview'] = 'Місяць';
 $string['monthnext'] = 'Наступний місяць';
 $string['monthprev'] = 'Попередній місяць';
 $string['monththis'] = 'Поточний місяць';

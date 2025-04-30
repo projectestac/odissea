@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', version '4.1'.
+ * Strings for component 'mnet', language 'ja', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'アクセスコントロールに追加する';
 $string['allhosts'] = 'すべてのホスト';
 $string['allhosts_no_options'] = '複数ホストの閲覧に利用可能なオプションはありません。';
 $string['allow'] = '許可';
+$string['allowaccess'] = 'アクセスを許可する';
 $string['applicationtype'] = 'アプリケーションタイプ';
 $string['authfail_nosessionexists'] = '認証失敗: mnetセッションが存在しません。';
 $string['authfail_sessiontimedout'] = '認証失敗: mnetセッションがタイムアウトしました。';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'あなたがこのキーを削除できる60秒間
 $string['deleteuserrecord'] = 'SSO ACL: {$a->host} からのユーザ「 {$a->user} 」のレコードを削除します。';
 $string['deletewrongkeyvalue'] = 'エラーが発生しました。あなたがサーバのSSLキーを削除しようと試みているのでなければ、悪意のある攻撃を受けている可能性があります。処理は実行されませんでした。';
 $string['deny'] = '拒否';
+$string['denyaccess'] = 'アクセスを拒否する';
 $string['description'] = '説明';
 $string['duplicate_usernames'] = 'ユーザテーブルのカラム「mnethostid」および「username」の作成に失敗しました。<br />これは<a href="{$a}" target="_blank">ユーザテーブルのユーザ名が重複している</a>場合に発生します。<br />それでも、あなたのアップグレードは正常に完了しました。上記リンクをクリックすることにより、新しいウィンドウにこの問題の解決に関するインストラクションが表示されます。アップグレード終了後、問題を解決することができます。<br />';
 $string['enabled_for_all'] = '(このサービスはすべてのホストで有効にされています。)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_media', language 'gl', version '4.1'.
+ * Strings for component 'tiny_media', language 'gl', version '4.4'.
  *
  * @package     tiny_media
  * @category    string
@@ -90,7 +90,7 @@ $string['presentationoraltrequired'] = 'Unha imaxe debe ter unha descrición, a 
 $string['privacy:metadata'] = 'O complemento de Multimedia para TinyMCE non almacena ningún dato persoal.';
 $string['remove'] = 'Retirar';
 $string['saveimage'] = 'Gardar a imaxe';
-$string['size'] = 'Tamaño';
+$string['size'] = 'Largo x alto (en píxeles)';
 $string['srclang'] = 'Idioma';
 $string['subtitles'] = 'Subtítulos';
 $string['subtitles_help'] = 'Os subtítulos poden usarse para fornecer unha transcrición ou tradución do diálogo.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'gl', version '4.1'.
+ * Strings for component 'format_topics', language 'gl', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Engadir tema';
 $string['currentsection'] = 'Este tema';
-$string['deletesection'] = 'Eliminar o tema';
-$string['editsection'] = 'Editar o tema';
-$string['editsectionname'] = 'Editar o nome do tema';
 $string['hidefromothers'] = 'Agochar o tema';
 $string['indentation'] = 'Permitir o sangrado na páxina do curso';
 $string['indentation_help'] = 'Permitir que o profesorado, e outros usuarios con capacidade de xestión de actividades, sangrar elementos na páxina do curso.';
-$string['newsectionname'] = 'Novo nome para o tema {$a}';
-$string['page-course-view-topics'] = 'Calquera páxina principal de curso no formato dos temas';
-$string['page-course-view-topics-x'] = 'Calquera páxina de curso no formato dos temas';
-$string['pluginname'] = 'Formato dos temas';
-$string['privacy:metadata'] = 'O engadido de formato dos temas non almacena ningún dato persoal.';
+$string['legacysectionname'] = 'Tema';
+$string['page-course-view-topics'] = 'Calquera páxina principal do curso en formato de seccións personalizadas';
+$string['page-course-view-topics-x'] = 'Calquera páxina do curso en formato de seccións personalizadas';
+$string['plugin_description'] = 'O curso divídese en seccións personalizables.';
+$string['pluginname'] = 'Seccións personalizadas';
+$string['privacy:metadata'] = 'O complemento de formato de seccións personalizadas non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';
 $string['sectionname'] = 'Tema';
 $string['showfromothers'] = 'Amosar o tema';

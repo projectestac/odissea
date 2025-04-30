@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'sv', version '4.1'.
+ * Strings for component 'group', language 'sv', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -137,7 +137,6 @@ $string['groupspreview'] = 'Förhandsgranska grupper';
 $string['groupsseparate'] = 'Separata grupper';
 $string['groupsvisible'] = 'Synliga grupper';
 $string['grouptemplate'] = 'Grupp @';
-$string['hidepicture'] = 'Dölj bild';
 $string['importgroups'] = 'Importera grupper';
 $string['importgroups_help'] = 'Grupper kan importeras via textfiler. Formatet för filen ska vara som följer:
 

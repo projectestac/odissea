@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'pt', version '4.1'.
+ * Strings for component 'block_rss_client', language 'pt', version '4.4'.
  *
  * @package     block_rss_client
  * @category    string
@@ -34,16 +34,16 @@ $string['choosefeedlabel'] = 'Listas RSS exibidas neste bloco:';
 $string['clientchannellink'] = 'Site de origem...';
 $string['clientnumentries'] = 'Número predefinido de notícias a mostrar por lista RSS.';
 $string['clientshowchannellinklabel'] = 'Exibir apontador para o site original? (Se a lista RSS não fornecer o URL não será exibido nada):';
-$string['clientshowimagelabel'] = 'Mostrar imagem do canal, se disponível:';
+$string['clientshowimagelabel'] = 'Mostrar imagem do canal, se disponível';
 $string['configblock'] = 'Configurar este bloco';
-$string['couldnotfindfeed'] = 'Não foi possível encontrar a lista RSS com ID';
+$string['couldnotfindfeed'] = 'Não foi possível encontrar a lista RSS com ID.';
 $string['couldnotfindloadrssfeed'] = 'Não foi possível encontrar ou carregar a lista RSS.';
-$string['customtitlelabel'] = 'Título (deixe em branco para utilizar o título fornecido pela Lista):';
+$string['customtitlelabel'] = 'Título personalizado (deixe em branco para utilizar o título fornecido pela lista):';
 $string['deletefeedconfirm'] = 'Tem a certeza de que pretende apagar esta lista RSS?';
 $string['disabledrssfeeds'] = 'As listas RSS estão desativadas';
 $string['displaydescriptionlabel'] = 'Exibir descrição de cada notícia?';
 $string['editafeed'] = 'Editar lista';
-$string['editfeeds'] = 'Editar, subscrever ou cancelar subscrição da lista RSS';
+$string['editfeeds'] = 'Editar, subscrever ou cancelar subscrição de listas RSS';
 $string['editnewsfeeds'] = 'Editar listas RSS';
 $string['editrssblock'] = 'Editar bloco de cabeçalhos RSS';
 $string['enableautodiscovery'] = 'Ativar autodescoberta de listas RSS?';
@@ -51,20 +51,20 @@ $string['enableautodiscovery_help'] = 'Se ativar esta opção, as listas RSS a e
 $string['failedfeed'] = 'Falha ao descarregar a lista - repetirá após {$a}';
 $string['failedfeeds'] = 'Ocorreu uma falha numa ou mais listas RSS';
 $string['feed'] = 'Lista';
-$string['feedadded'] = 'Adicionada lista RSS';
-$string['feeddeleted'] = 'Lista RSS removida';
-$string['feeds'] = 'Lista RSS';
+$string['feedadded'] = 'Lista RSS adicionada';
+$string['feeddeleted'] = 'Lista RSS apagada';
+$string['feeds'] = 'Listas RSS';
 $string['feedsaddedit'] = 'Adicionar/Editar listas RSS';
 $string['feedsconfigurenewinstance'] = 'Clique aqui para configurar este bloco para que exiba listas RSS';
 $string['feedsconfigurenewinstance2'] = 'Clique no ícone de edição acima para configurar este bloco de modo que exiba listas RSS';
 $string['feedupdated'] = 'Lista RSS atualizada';
 $string['feedurl'] = 'URL da Lista';
 $string['findmorefeeds'] = 'Pesquisar mais listas RSS';
-$string['managefeeds'] = 'Gerir todas as minhas listas RSS';
+$string['managefeeds'] = 'Gerir listas RSS';
 $string['nofeeds'] = 'Não existem listas RSS configuradas para este site.';
 $string['numentries'] = 'Entradas por lista';
-$string['pickfeed'] = 'Selecionar uma lista RSS';
-$string['pluginname'] = 'Lista RSS';
+$string['pickfeed'] = 'Selecione uma lista RSS';
+$string['pluginname'] = 'Listas RSS';
 $string['privacy:metadata:block_rss_client:description'] = 'Descrição da lista RSS';
 $string['privacy:metadata:block_rss_client:preferredtitle'] = 'O título preferido (personalizado) da lista RSS';
 $string['privacy:metadata:block_rss_client:shared'] = 'Se a lista RSS está disponível em todas as disciplinas.';
@@ -75,13 +75,13 @@ $string['privacy:metadata:block_rss_client:title'] = 'O título da lista RSS.';
 $string['privacy:metadata:block_rss_client:url'] = 'O URL da lista RSS.';
 $string['privacy:metadata:block_rss_client:userid'] = 'ID do utilizador que adicionou a lista RSS.';
 $string['refreshfeedstask'] = 'Atualização das listas RSS';
-$string['remotenewsfeed'] = 'Lista RSS remota';
+$string['remotenewsfeed'] = 'Lista RSS';
 $string['rss_client:addinstance'] = 'Adicionar um novo bloco Lista RSS';
 $string['rss_client:createprivatefeeds'] = 'Criar lista RSS privada';
 $string['rss_client:createsharedfeeds'] = 'Criar lista RSS partilhada';
 $string['rss_client:manageanyfeeds'] = 'Gerir todas as listas RSS';
 $string['rss_client:manageownfeeds'] = 'Gerir listas RSS próprias';
-$string['rss_client:myaddinstance'] = 'Adicionar um novo bloco Lista RSS remota ao Painel do utilizador';
+$string['rss_client:myaddinstance'] = 'Adicionar um novo bloco Lista RSS ao Painel do utilizador';
 $string['seeallfeeds'] = 'Ver todas as listas RSS';
 $string['sharedfeed'] = 'Lista RSS partilhada';
 $string['shownumentrieslabel'] = 'Número máximo de notícias a exibir por lista RSS';
@@ -90,5 +90,5 @@ $string['submitters2'] = 'Fornecedores';
 $string['timeout'] = 'Tempo, em minutos, antes que a lista RSS expire na cache. Tenha em atenção que este parâmetro define o tempo mínimo antes de expirar. A lista será atualizada na cache na próxima execução do cron, após expirar. Os valores recomendados são de 30 minutos ou mais.';
 $string['timeout2'] = 'Tempo limite';
 $string['timeoutdesc'] = 'Tempo de vida, em minutos, de uma lista RSS em cache';
-$string['updatefeed'] = 'Atualizar URL de uma lista RSS:';
+$string['updatefeed'] = 'Atualizar URL da lista RSS';
 $string['viewfeed'] = 'Ver lista';

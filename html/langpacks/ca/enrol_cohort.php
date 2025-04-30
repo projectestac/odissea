@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ca', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'ca', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -32,6 +32,7 @@ $string['cohort:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscrip
 $string['creategroup'] = 'Crea un grup nou';
 $string['defaultgroupnametext'] = '{$a->name} cohort {$a->increment}';
 $string['instanceexists'] = 'La cohort està sincronitzada amb el rol seleccionat';
+$string['plugindisabled'] = 'El connector de sincronització de les cohorts està desactivat';
 $string['pluginname'] = 'Sincronització de la cohort';
 $string['pluginname_desc'] = 'El connector d\'inscripció per cohorts sincronitza els membres de la cohort amb els participants del curs.';
 $string['status'] = 'Activa';

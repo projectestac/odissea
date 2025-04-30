@@ -79,6 +79,9 @@ abstract class moodle_list {
     public $pageurl;
     public $pageparamname;
 
+    /** @var int no of top level items. */
+    private $itemsperpage;
+
     /**
      * Constructor.
      *
@@ -247,7 +250,7 @@ abstract class moodle_list {
     /**
      * Should be overriden to return an array of records of list items.
      */
-    public abstract function get_records();
+    abstract public function get_records();
 
     /**
      * display list of page numbers for navigation
@@ -625,7 +628,7 @@ abstract class list_item {
      */
     public function create_children(&$records, &$children, $thisrecordid) {
         //keys where value is $thisrecordid
-        $thischildren = array_keys($children, $thisrecordid);
+        $thischildren = moodle_array_keys_filter($children, $thisrecordid);
         foreach ($thischildren as $child) {
             $thisclass = get_class($this);
             $newlistitem = new $thisclass($records[$child], $this->children, $this->attributes);

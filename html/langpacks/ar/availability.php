@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ar', version '4.1'.
+ * Strings for component 'availability', language 'ar', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'إضافة قيود ...';
 $string['and'] = 'و';
 $string['condition_group'] = 'مجموعة تقييدات';
 $string['condition_group_info'] = 'أضف مجموعة من التقييدات المتداخلة لتطبيق المنطق المعقد.';
+$string['disabled_verb'] = 'لا يمكن تغييرها لأن مجموعة القواعد تتضمن قاعدة ذات بيانات خاصة.';
+$string['editsettings'] = 'تعديل التقييدات';
 $string['enableavailability'] = 'تمكين ميزة تقييد الوصول';
 $string['enableavailability_desc'] = 'إذا تم تمكينه، يمكن وضع شروط (بناءً على التاريخ، الدرجة، أو الإكمال) لتقييد إمكانية وصول المستخدمين إلى النشاط أو المورد.';
 $string['error_list_nochildren'] = 'يجب أن تحتوي مجموعات التقييدات على شرط واحد على الأقل.';

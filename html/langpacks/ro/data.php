@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ro', version '4.1'.
+ * Strings for component 'data', language 'ro', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} comentarii';
 $string['commentsoff'] = 'Comentariile nu sunt active';
 $string['completiondetail:entries'] = 'Adăugați informații: {$a}';
 $string['completionentries'] = 'Articole solicitate';
-$string['completionentriescount'] = 'Numărul de articole solicitate:';
+$string['completionentriescount'] = 'Adaugă articole';
 $string['completionentriesdesc'] = 'Numărul minim de intrări necesare: {$a}';
 $string['configenablerssfeeds'] = 'Acest parametru permite activarea posibilităţii de a primi fluxuri RSS pentru toate bazele de date. Atenţie: chiar dacă aţi activat acest parametru, pentru fiecare din bazele de date va trebui să activaţi manual opţiunea "feeds".';
 $string['confirmdeletefield'] = 'Sunteţi pe punctul de a şterge acest câmp, sunteţi sigur că doriţi să-l ştergeţi?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Creați câmpuri pentru a colecta diferite tipuri de 
 $string['createtemplates'] = 'Șabloanele definesc interfața activității dvs. Odată ce creați câmpuri, șabloanele vor fi create automat. Alternativ, puteți utiliza o presetare, care include câmpuri și șabloane.';
 $string['csstemplate'] = 'Şablon CSS';
 $string['csvfailed'] = 'Nu s-au putut citi datele neprelucrate din fişierul CSV';
-$string['csvfile'] = 'Fişier CSV';
+$string['csvfile'] = 'CSV sau ZIP care conțin un fișier CSV';
 $string['csvimport'] = 'Import fişier CSV';
 $string['csvimport_help'] = 'Înregistrările pot fi importate prin intermediul unui fişier text simplu care să conțină în prima linie o serie de denumiri care definesc formatul câmpurilor din restul fișierului  apoi datele, cu o singură înregistrare pe linie, separate prin virgulă. ';
 $string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr> text cu elemente separate de virgulă';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'Trebuie să adăugați încă {$a->entriesleft} i
 $string['entrieslefttoaddtoview'] = 'Pentru a vedea articolele postate de ceilalţi participanţi trebuie să mai adăugaţi {$a->entrieslefttoview} articole.';
 $string['entry'] = 'Articol';
 $string['entrysaved'] = 'Articolul postat de dumneavoastră a fost salvat.';
+$string['errordatafilenotfound'] = 'Fișierul nu a putut fi importat. Tipurile de fișier acceptate sunt CSV sau un ZIP care conține un fișier CSV în formatul utilizat pentru exportul articolelor.';
 $string['errormustbeteacher'] = 'Pentru a putea utiliza această pagină trebuie să fiţi profesor!';
 $string['errormustsupplyvalue'] = 'Trebuie să inserați o valoare aici.';
 $string['errorpresetexists'] = 'Există deja o presetare cu această denumire';
@@ -199,7 +200,11 @@ $string['fieldnotmatched'] = 'Următoarele câmpuri din fişierul dumneavoastră
 $string['fieldoptions'] = 'Opţiuni (una pe linie)';
 $string['fields'] = 'Câmpuri';
 $string['fieldshelp'] = 'Creați câmpuri pentru a colecta diferite tipuri de date. Câmpurile definesc structura intrărilor din baza de date.';
+$string['fieldsinformationtags'] = 'Câmp de informații';
 $string['fieldsnavigation'] = 'Câmpuri de navigare terță';
+$string['fieldtagdescription'] = '{$a} descriere';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} denumire';
 $string['fieldupdated'] = 'Câmp actualizat';
 $string['fieldwidth'] = 'Lăţime';
 $string['fieldwidthlistview'] = 'Lăţime la vizualizarea în listă';
@@ -233,6 +238,7 @@ Nu va apărea în lista de presetări.';
 $string['importpresetmissingcapability'] = 'Nu aveți permisiunea de a importa o presetare.';
 $string['importsuccess'] = 'Presetarea aplicată.';
 $string['includeapproval'] = 'Includeți starea de aprobare';
+$string['includefiles'] = 'Include fișiere în export';
 $string['includetags'] = 'Includeți etichete';
 $string['includetime'] = 'Includeți timpul când a fost adăugat / modificat';
 $string['includeuserdetails'] = 'Include informații despe utilizator';
@@ -342,6 +348,7 @@ $string['openafterclose'] = 'Ați specificat o dată de deschidere după data de
 $string['optionaldescription'] = 'Scurtă descriere (opţional)';
 $string['optionalfilename'] = 'Nume fişier (opţional)';
 $string['other'] = 'Altele';
+$string['otherfields'] = 'Toate celelalte câmpuri';
 $string['overrwritedesc'] = 'Suprascrieți presetarea existentă cu această denumire și suprascrieți conținutul presetării';
 $string['overwrite'] = 'Suprascrie';
 $string['overwritesettings'] = 'Suprascrie setări curente, de ex. comentarii, evaluări, etc.';
@@ -359,6 +366,7 @@ $string['presetnotselected'] = 'Nu a fost selectat niciun parametru.';
 $string['presets'] = 'Presetări';
 $string['presetshelp'] = 'Alegeți o presetare pe care să o utilizați ca punct de plecare.';
 $string['preview'] = 'Previzualizare {$a}';
+$string['previewaction'] = 'Previzualizare';
 $string['privacy:metadata:commentpurpose'] = 'Comentarii privind înregistrările bazei de date';
 $string['privacy:metadata:data_content'] = 'Conținutul unui câmp';
 $string['privacy:metadata:data_content:content'] = 'Conţinut';
@@ -402,7 +410,7 @@ $string['resetalltemplates'] = 'Resetați toate șabloanele';
 $string['resetalltemplatesconfirm'] = 'Sunteți pe cale să eliminați toate șabloanele pentru presetarea curentă. Dacă doriți să restaurați șabloanele mai târziu, trebuie să alegeți din nou presetarea în fila „Presetări”.';
 $string['resetalltemplatesconfirmtitle'] = 'Resetați toate șabloanele?';
 $string['resetsettings'] = 'Resetează filtre';
-$string['resettemplate'] = 'Resetează şablon';
+$string['resettemplate'] = 'Resetează şablonul actual';
 $string['resettemplateconfirm'] = 'Prin această acțiune se va șterge permanent {$a} din presetarea ta actuală.';
 $string['resettemplateconfirmtitle'] = 'Resetați șablonul?';
 $string['resizingimages'] = 'Se modifică dimensiunile imaginilor reduse';
@@ -428,6 +436,7 @@ $string['searchresults'] = 'Articole conținând "{$a}"';
 $string['selectedrequired'] = 'Toate elementele selectate sunt obligatorii';
 $string['selectexportoptions'] = 'Selectare opțiuni de export';
 $string['selectfields'] = 'Selectare câmpuri';
+$string['selectfordeletion'] = 'Selectați atricole pentru a fi șterse';
 $string['showall'] = 'Afişează toate articolele';
 $string['showmore'] = 'Afișați mai multe';
 $string['single'] = 'Afişează unul singur';
@@ -455,19 +464,14 @@ $string['todatabase'] = 'în această bază de date.';
 $string['type'] = 'Tip câmp';
 $string['undefinedprocessactionmethod'] = 'În Data_Preset nu a fost definită nicio metodă pentru administrarea acţiunii "{$a}".';
 $string['unknown'] = 'Câmp necunoscut';
-$string['unsupportedexport'] = '({$a->fieldtype}) nu poate fi exportat.';
 $string['unsupportedfields'] = 'Câmpuri care nu sunt acceptate';
 $string['unsupportedfieldslist'] = 'Următoarele câmpuri nu pot fi exportate:';
 $string['updatefield'] = 'Actualizează un câmp existent';
 $string['uploadfile'] = 'Încarcă fişier';
-$string['uploadrecords'] = 'Încarcă articole dintr-un fişier';
-$string['uploadrecords_help'] = 'Intrările pot fi încărcate prin fișier text. Formatul fișierului ar trebui să fie după cum urmează:
+$string['uploadrecords'] = 'Importă articole';
+$string['uploadrecords_help'] = 'Importă articolele pe care le-ai exportat dintr-o altă bază de date, fie prin CSV, fie prin fișier ZIP care conține un fișier CSV (dacă fișierele sunt incluse în export).
 
-* Fiecare linie a fișierului conține o înregistrare
-* Fiecare înregistrare este o serie de date separate de separatorul selectat
-* Prima înregistrare conține o listă de nume de câmpuri care definesc formatul restului fișierului
-
-Incinta câmpului este un caracter care înconjoară fiecare câmp din fiecare înregistrare. În mod normal, acesta poate fi lăsat nesetat.';
+Alternativ, pentru a crea un fișier CSV pentru import, adaugă un articol în baza de date și apoi exportă-l. Editează fișierul CSV și adaugă mai multe postări.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Include în căutare';

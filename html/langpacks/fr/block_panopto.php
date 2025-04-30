@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'fr', version '4.1'.
+ * Strings for component 'block_panopto', language 'fr', version '4.4'.
  *
  * @package     block_panopto
  * @category    string
@@ -74,7 +74,7 @@ $string['block_global_rename_all_folders'] = 'Mettre à jour tous les noms de do
 $string['block_global_unprovision_courses'] = 'Déprovisionner les dossiers Panopto des cours Moodle';
 $string['block_global_upgrade_all_folders'] = 'Mise à jour de tous les dossiers et importations existants';
 $string['block_panopto_any_creator_can_view_folder_settings'] = 'Permettre à tous les utilisateurs ayant un accès créateur de voir les liens des paramètres des dossiers Panopto';
-$string['block_panopto_any_creator_can_view_folder_settings_desc'] = 'Lorsque cette option est sélectionnée, les utilisateurs ayant un rôle de créateur dans le dossier peuvent afficher son lien de paramètres. Par défaut, seuls les instructeurs de cours peuvent afficher le lien des paramètres du cours.';
+$string['block_panopto_any_creator_can_view_folder_settings_desc'] = 'Lorsque cette option est sélectionnée, les utilisateurs ayant un rôle de créateur dans le dossier peuvent afficher son lien de paramètres. Par défaut, seuls les enseignants du cours peuvent afficher le lien des paramètres du cours.';
 $string['block_panopto_anyone_view_recorder_links'] = 'Permettre à tous les rôles d’afficher les liens de téléchargement de l’enregistreur';
 $string['block_panopto_anyone_view_recorder_links_desc'] = 'Lorsque cette option est sélectionnée, les utilisateurs peuvent afficher les liens de téléchargement de l’enregistreur. Par défaut, seuls les utilisateurs ayant un accès de créateur et/ou de provisionnement sur un dossier peuvent voir les liens de téléchargement.';
 $string['block_panopto_async_tasks'] = 'Activer les tâches de synchronisation asynchrones (non recommandé)';

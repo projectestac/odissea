@@ -35,7 +35,7 @@ use stdClass;
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers      \core\content\exportable_items\exportable_filearea
  */
-class exportable_filearea_test extends advanced_testcase {
+final class exportable_filearea_test extends advanced_testcase {
 
     /**
      * Ensure that the the exportable_filearea does not fetch files when none exist.
@@ -234,15 +234,18 @@ class exportable_filearea_test extends advanced_testcase {
             $filepathinzip = $subdir . '/' . $file->get_filearea() . '/' . $file->get_filepath() . $file->get_filename();
             $filepathinzip = ltrim(preg_replace('#/+#', '/', $filepathinzip), '/');
             $storedfileargs[] = [
-                $this->equalTo($context),
-                $this->equalTo($filepathinzip),
-                $this->equalTo($file),
+                $context,
+                $filepathinzip,
+                $file,
             ];
         }
 
-        $archive->expects($this->exactly(count($expectedfiles)))
+        $invocations = $this->exactly(count($expectedfiles));
+        $archive->expects($invocations)
             ->method('add_file_from_stored_file')
-            ->withConsecutive(...$storedfileargs);
+            ->willReturnCallback(function (...$args) use ($invocations, $storedfileargs) {
+                $this->assertEquals($storedfileargs[self::getInvocationCount($invocations) - 1], $args);
+            });
 
         return $exportable->add_to_archive($archive);
     }

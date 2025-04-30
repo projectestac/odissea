@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', version '4.1'.
+ * Strings for component 'feedback', language 'eu', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Lodia';
 $string['calendarend'] = '{$a}(r)en itxiera-data:';
 $string['calendarstart'] = '{$a}(r)en hasiera-data';
 $string['cannotaccess'] = 'Inkesta honetara soilik ikastaro batetik sartu zaitezke';
+$string['cannotcreatepagebreak'] = 'Hasieran ezin da orri-jauziak gehitu, eta amaieran orri-jauzi bakarra gehitu daiteke.';
 $string['cannotsavetempl'] = 'Txantiloiak gordetzea ez dago gaituta';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha ez da ezarri';
@@ -58,7 +59,7 @@ $string['completed'] = 'Osatua';
 $string['completed_feedbacks'] = 'Bidalitako erantzunak';
 $string['completedon'] = 'Noiz osatua: {$a}';
 $string['completiondetail:submit'] = 'Inkesta bidaltzea';
-$string['completionsubmit'] = 'Ikasleak inkesta bidali behar du osatzeko';
+$string['completionsubmit'] = 'Inkesta bidaltzea';
 $string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek hasiera-orriko inkesta bat osatu ahal izango dute, saioa hasi gabe ere.';
 $string['confirmdeleteentry'] = 'Ziur zaude sarrera hau ezabatu nahi duzula?';
 $string['confirmdeleteitem'] = 'Ziur zaude elementu hau ezabatu nahi duzula?';
@@ -162,7 +163,7 @@ $string['insufficient_responses_for_this_group'] = 'Ez dago erantzun nahikorik t
 $string['insufficient_responses_help'] = 'Iruzkin anonimoak mantentzeko, gutxienez 2 erantzun izan behar dira.';
 $string['item_label'] = 'Etiketa';
 $string['item_name'] = 'Galdera';
-$string['label'] = 'Etiketa';
+$string['label'] = 'Testua eta multimedia eremua';
 $string['labelcontents'] = 'Edukiak';
 $string['mapcourse'] = 'Esleitu inkesta ikastaroetan';
 $string['mapcourse_help'] = 'Modu lehenetsian, zure hasiera-orrian sortutako inkestak gune osoan erabilgarri daude eta inkesta blokea erabiltzen duten ikastaro guztietan agertuko dira. Inkesta erakustea behartu daiteke bloke finkoa bihurtuta edo mugatu inkesta agertuko den ikastaro-zerrenda inkesta ikastaro zehatzekin lotuta.';
@@ -196,7 +197,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Aukera anizkoitzak (kalifikatua)';
 $string['multichoicetype'] = 'Aukera anizkoitzen mota';
 $string['multiplesubmit'] = 'Baimendu bidalketa bat baino gehiago egitea';
-$string['multiplesubmit_help'] = 'Inkesta anonimoak gaituz gero, erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete.';
+$string['multiplesubmit_help'] = 'Bai zehaztuz gero:
+
+* Inkesta anonimoetan: erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete, eta erantzun guztiak gordeko dira.
+* Inkesta ez-anonimoetan: erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete, baina euren azken erantzuna baino ez da gordeko.';
 $string['name'] = 'Izena';
 $string['name_required'] = 'Izena ezinbestekoa da';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

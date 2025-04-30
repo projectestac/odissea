@@ -58,7 +58,7 @@ class format_weeks extends core_courseformat\base {
      * @return string the page title
      */
     public function page_title(): string {
-        return get_string('weeklyoutline');
+        return get_string('sectionoutline');
     }
 
     /**
@@ -93,8 +93,12 @@ class format_weeks extends core_courseformat\base {
         } else {
             $dates = $this->get_section_dates($section);
 
-            // We subtract 24 hours for display purposes.
-            $dates->end = ($dates->end - 86400);
+            // Find the prior day for display purposes.
+            $enddate = new DateTime();
+            $enddate->setTimezone(core_date::get_user_timezone_object());
+            $enddate->setTimestamp(intval($dates->end));
+            $enddate->modify('-1 day');
+            $dates->end = $enddate->getTimestamp();
 
             $dateformat = get_string('strftimedateshort');
             $weekday = userdate($dates->start, $dateformat);
@@ -118,53 +122,26 @@ class format_weeks extends core_courseformat\base {
      * @param int|stdClass $section Section object from database or just field course_sections.section
      *     if omitted the course view page is returned
      * @param array $options options for view URL. At the moment core uses:
-     *     'navigation' (bool) if true and section has no separate page, the function returns null
-     *     'sr' (int) used by multipage formats to specify to which section to return
+     *     'navigation' (bool) if true and section not empty, the function returns section page; otherwise, it returns course page.
+     *     'sr' (int) used by course formats to specify to which section to return
      * @return null|moodle_url
      */
     public function get_view_url($section, $options = array()) {
-        global $CFG;
         $course = $this->get_course();
-        $url = new moodle_url('/course/view.php', array('id' => $course->id));
-
-        $sr = null;
-        if (array_key_exists('sr', $options)) {
-            $sr = $options['sr'];
-        }
-        if (is_object($section)) {
+        if (array_key_exists('sr', $options) && !is_null($options['sr'])) {
+            $sectionno = $options['sr'];
+        } else if (is_object($section)) {
             $sectionno = $section->section;
         } else {
             $sectionno = $section;
         }
-
-        // XTEC ************ AFEGIT - Show current section if none is selected
-        // 2012.08.20 @sarjona
-        if (empty($sectionno)) {
-            $sectionno = -1;
+        if ((!empty($options['navigation']) || array_key_exists('sr', $options)) && $sectionno !== null) {
+            // Display section on separate page.
+            $sectioninfo = $this->get_section($sectionno);
+            return new moodle_url('/course/section.php', ['id' => $sectioninfo->id]);
         }
-        // ************ FI
 
-        if ($sectionno !== null) {
-            if ($sr !== null) {
-                if ($sr) {
-                    $usercoursedisplay = COURSE_DISPLAY_MULTIPAGE;
-                    $sectionno = $sr;
-                } else {
-                    $usercoursedisplay = COURSE_DISPLAY_SINGLEPAGE;
-                }
-            } else {
-                $usercoursedisplay = $course->coursedisplay ?? COURSE_DISPLAY_SINGLEPAGE;
-            }
-            if ($sectionno != 0 && $usercoursedisplay == COURSE_DISPLAY_MULTIPAGE) {
-                $url->param('section', $sectionno);
-            } else {
-                if (empty($CFG->linkcoursesections) && !empty($options['navigation'])) {
-                    return null;
-                }
-                $url->set_anchor('section-'.$sectionno);
-            }
-        }
-        return $url;
+        return new moodle_url('/course/view.php', ['id' => $course->id]);
     }
 
     /**
@@ -471,28 +448,6 @@ class format_weeks extends core_courseformat\base {
     }
 
     /**
-     * Prepares the templateable object to display section name
-     *
-     * @param \section_info|\stdClass $section
-     * @param bool $linkifneeded
-     * @param bool $editable
-     * @param null|lang_string|string $edithint
-     * @param null|lang_string|string $editlabel
-     * @return \core\output\inplace_editable
-     */
-    public function inplace_editable_render_section_name($section, $linkifneeded = true,
-                                                         $editable = null, $edithint = null, $editlabel = null) {
-        if (empty($edithint)) {
-            $edithint = new lang_string('editsectionname', 'format_weeks');
-        }
-        if (empty($editlabel)) {
-            $title = get_section_name($section->course, $section);
-            $editlabel = new lang_string('newsectionname', 'format_weeks', $title);
-        }
-        return parent::inplace_editable_render_section_name($section, $linkifneeded, $editable, $edithint, $editlabel);
-    }
-
-    /**
      * Returns the default end date for weeks course format.
      *
      * @param moodleform $mform
@@ -638,6 +593,15 @@ class format_weeks extends core_courseformat\base {
         $formatoptions = $this->get_format_options();
         $formatoptions['indentation'] = get_config('format_weeks', 'indentation');
         return $formatoptions;
+    }
+
+    /**
+     * Get the required javascript files for the course format.
+     *
+     * @return array The list of javascript files required by the course format.
+     */
+    public function get_required_jsfiles(): array {
+        return [];
     }
 }
 

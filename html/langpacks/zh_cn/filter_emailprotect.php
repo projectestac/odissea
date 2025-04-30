@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emailprotect', language 'zh_cn', version '4.1'.
+ * Strings for component 'filter_emailprotect', language 'zh_cn', version '4.4'.
  *
  * @package     filter_emailprotect
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Email保护';
+$string['filtername'] = 'Email 保护';
 $string['privacy:metadata'] = '电子邮件保护插件不存储任何个人数据。';

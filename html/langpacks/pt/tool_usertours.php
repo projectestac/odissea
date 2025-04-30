@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'pt', version '4.1'.
+ * Strings for component 'tool_usertours', language 'pt', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esque
 
 Se não for possível ajustar a etapa no local especificado de uma determinada página, ela será automaticamente colocada noutro lugar.';
 $string['pluginname'] = 'Demonstrações ao utilizador';
-$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'A data e hora em que um utilizador completou pela última vez uma demonstração ao utilizador.';
 $string['privacy:metadata:preference:requested'] = 'A data e hora em que um utilizador solicitou pela última vez uma demonstração ao utilizador.';
 $string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração ao utilizador "{$a->name}" foi em {$a->time}';
@@ -151,6 +150,9 @@ $string['selector_defaulttitle'] = 'Digite um título descritivo';
 $string['selectordisplayname'] = 'Um seletor CSS correspondente a \'{$a}\'';
 $string['selecttype'] = 'Selecione o tipo de etapa';
 $string['sharedtourslink'] = 'Repositório de demonstrações';
+$string['showtoureachtime'] = 'cada vez que um filtro corresponde';
+$string['showtouruntilcomplete'] = 'até que tenha seja fechada';
+$string['showtourwhen'] = 'Mostrar demonstração ao utilizador';
 $string['skip'] = 'Saltar';
 $string['skip_tour'] = 'Ignorar a demonstração';
 $string['target'] = 'Destino';
@@ -250,6 +252,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'As novas configurações 
 $string['tour_activityinfo_course_teacher_title'] = 'Novo: Informação da atividade';
 $string['tour_final_step_content'] = 'Chegou ao fim da demonstração ao utilizador. Não será mostrada novamente a menos que a reponha através da hiperligação existente no rodapé.';
 $string['tour_final_step_title'] = 'Fim da demonstração';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordene as colunas e escolha quais pretende mostrar. No modo Editar, use este atalho para aceder a tarefas frequentes relacionadas com a exibição e edição de Itens de avaliação.';
+$string['tour_gradebook_action_title'] = 'Hiperligações para ações';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtre os alunos pelas iniciais dos nomes ou apelidos.';
+$string['tour_gradebook_filter_title'] = 'Filtrar por nome';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Use a caixa de pesquisa para encontrar rapidamente alunos específicos.';
+$string['tour_gradebook_search_title'] = 'Encontrar alunos facilmente';
+$string['tour_gradebook_tour_description'] = 'Funcionalidades de pesquisa e navegação no relatório do avaliador';
+$string['tour_gradebook_tour_name'] = 'Relatório do avaliador';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publique aqui as notícias importantes.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Alguma informação para comunicar a todos?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Adicionar novo conteúdo ou editar o conteúdo existente.';

@@ -59,7 +59,7 @@ Feature: Teacher can allocate icons to tiles
     And I wait until the page is ready
 
 #    // one title edit just to check we can after the above (this is also done elsewhere)
-    When I click on "Edit tile name" "link" in the "li#section-1" "css_element"
+    When I click on "Edit section name" "link" in the "li#section-1" "css_element"
     And I set the field "New name for section Tile 1" to "Setting up in business"
     And I press the enter key
     Then I should not see "Tile 1" in the "region-main" "region"
@@ -67,7 +67,7 @@ Feature: Teacher can allocate icons to tiles
     And I am on "Business Law" course homepage
     And I should not see "Tile 1" in the "region-main" "region"
 
-    When I click on "Edit tile name" "link" in the "li#section-2" "css_element"
+    When I click on "Edit section name" "link" in the "li#section-2" "css_element"
     And I set the field "New name for section Tile 2" to "Directors' Duties"
     And I press the enter key
     Then I should not see "Tile 2" in the "region-main" "region"

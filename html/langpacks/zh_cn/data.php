@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', version '4.1'.
+ * Strings for component 'data', language 'zh_cn', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -82,7 +82,7 @@ $string['commentsn'] = '{$a} 条评论';
 $string['commentsoff'] = '未启用评论功能';
 $string['completiondetail:entries'] = '创建条目：{$a}';
 $string['completionentries'] = '要求输入';
-$string['completionentriescount'] = '参赛人数';
+$string['completionentriescount'] = '添加条目';
 $string['completionentriesdesc'] = '所需的最小条目数：{$a}';
 $string['configenablerssfeeds'] = '这个开关会使所有数据库都可以启用RSS种子。您仍需要手工在每个数据库的设置中打开种子功能。';
 $string['confirmdeletefield'] = '您要删除这个字段，确定吗？';
@@ -93,7 +93,7 @@ $string['createfields'] = '创建字段以收集不同类型的数据。';
 $string['createtemplates'] = '模板定义活动的界面。创建字段后，将自动创建模板。或者，您可以使用预设，其中包括字段和模板。';
 $string['csstemplate'] = '自定义CSS';
 $string['csvfailed'] = '无法从 CSV 文件中读取原始数据';
-$string['csvfile'] = 'CSV 文件';
+$string['csvfile'] = '包含 CSV 文件的 CSV 或 ZIP';
 $string['csvimport'] = 'CSV 文件导入';
 $string['csvimport_help'] = '可以从文本文件导入数据项。这个文件的第一行是字段名列表，然后每行一条数据记录。';
 $string['csvwithselecteddelimiter'] = '<abbr title="逗号分隔">CSV</abbr>';
@@ -153,6 +153,7 @@ $string['entrieslefttoadd'] = '您必须添加{$a->entriesleft}个以上条目�
 $string['entrieslefttoaddtoview'] = '您必须添加{$a->entrieslefttoview}个以上条目，才能查看其他参与人的条目。';
 $string['entry'] = '条目';
 $string['entrysaved'] = '您的条目已保存';
+$string['errordatafilenotfound'] = '无法导入该文件。可接受的文件类型为 CSV 或包含用于导出条目的格式的 CSV 文件的 ZIP。';
 $string['errormustbeteacher'] = '只有教师能使用此页';
 $string['errormustsupplyvalue'] = '您必须在此处提供一个值。';
 $string['errorpresetexists'] = '具有此名称的预设已存在';
@@ -198,7 +199,11 @@ $string['fieldnotmatched'] = '您文件中的下述字段不存在于数据库�
 $string['fieldoptions'] = '选项(每行一个)';
 $string['fields'] = '字段';
 $string['fieldshelp'] = '创建字段以收集不同类型的数据。字段定义数据库中条目的结构。';
+$string['fieldsinformationtags'] = '字段信息';
 $string['fieldsnavigation'] = '字段三级导航';
+$string['fieldtagdescription'] = '{$a} 描述';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} 名称';
 $string['fieldupdated'] = '字段已更新';
 $string['fieldwidth'] = '宽度';
 $string['fieldwidthlistview'] = '列表视图中的宽度（以像素为单位）';
@@ -232,6 +237,7 @@ $string['importpreset_desc'] = '预设将应用于此活动，并创建字段和
 $string['importpresetmissingcapability'] = '您没有导入预设的权限。';
 $string['importsuccess'] = '成功应用预设';
 $string['includeapproval'] = '包含审核状态';
+$string['includefiles'] = '在导出中包含文件';
 $string['includetags'] = '包含模板文件的标签';
 $string['includetime'] = '包含增加时间、修改时间';
 $string['includeuserdetails'] = '包含用户详情';
@@ -341,6 +347,7 @@ $string['openafterclose'] = '您已在关闭日期之后指定打开日期';
 $string['optionaldescription'] = '简要描述（可选）';
 $string['optionalfilename'] = '文件名（可选）';
 $string['other'] = '其他';
+$string['otherfields'] = '所有其他字段';
 $string['overrwritedesc'] = '将现有预设替换为此名称并覆盖其内容';
 $string['overwrite'] = '覆盖';
 $string['overwritesettings'] = '覆盖当前设置，例如评论、评级等';
@@ -358,6 +365,7 @@ $string['presetnotselected'] = '未选择预设。';
 $string['presets'] = '预设';
 $string['presetshelp'] = '选择要用作起点的预设';
 $string['preview'] = '{$a} 预览';
+$string['previewaction'] = '预览';
 $string['privacy:metadata:commentpurpose'] = '对数据库记录的评论';
 $string['privacy:metadata:data_content'] = '字段的内容';
 $string['privacy:metadata:data_content:content'] = '内容';
@@ -401,7 +409,7 @@ $string['resetalltemplates'] = '重置所有模板';
 $string['resetalltemplatesconfirm'] = '您将要删除当前预设的所有模板。如果您想稍后恢复模板，则需要在“预设”选项卡中再次选择预设。';
 $string['resetalltemplatesconfirmtitle'] = '重置所有模板？';
 $string['resetsettings'] = '重置字段';
-$string['resettemplate'] = '重置模板';
+$string['resettemplate'] = '重置当前模板';
 $string['resettemplateconfirm'] = '这将永久删除您当前预设的 {$a}';
 $string['resettemplateconfirmtitle'] = '重置模板？';
 $string['resizingimages'] = '调整图片到拇指大小';
@@ -427,6 +435,7 @@ $string['searchresults'] = '包含“{$a}”的条目';
 $string['selectedrequired'] = '要求全选';
 $string['selectexportoptions'] = '数据库-条目';
 $string['selectfields'] = '数据库-条目';
+$string['selectfordeletion'] = '选择要删除的条目';
 $string['showall'] = '显示所有条目';
 $string['showmore'] = '显示更多';
 $string['single'] = '独立视图';
@@ -454,19 +463,14 @@ $string['todatabase'] = '至此数据库。';
 $string['type'] = '字段类型';
 $string['undefinedprocessactionmethod'] = '在 Data_Preset 中处理动作“{$a}”，没有定义动作的方法';
 $string['unknown'] = '未知字段';
-$string['unsupportedexport'] = '({$a->fieldtype}) 不能被导出';
 $string['unsupportedfields'] = '不支持的字段';
 $string['unsupportedfieldslist'] = '无法导出以下字段：';
 $string['updatefield'] = '更新已有字段';
 $string['uploadfile'] = '上传文件';
-$string['uploadrecords'] = '从一个文件中上传条目';
-$string['uploadrecords_help'] = '条目可以通过文本文件上传。文件格式应如下所示：
+$string['uploadrecords'] = '导入条目';
+$string['uploadrecords_help'] = '通过 CSV 或包含 CSV 文件的 ZIP（如果导出中包含文件）导入从另一个数据库导出的条目。
 
-* 文件的每一行包含一条记录
-* 每个记录都是一系列数据，由逗号（或其他分隔符）分隔
-* 第一条记录包含定义文件其余部分格式的字段名列表
-
-字段附件是围绕每个记录中每个字段的字符。它通常可以不设置。';
+或者，要创建用于导入的 CSV 文件，请向数据库添加一个条目，然后将其导出。编辑 CSV 文件并添加更多条目。';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = '包含在搜索中。';

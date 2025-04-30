@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_honestycheck', language 'gl', version '4.1'.
+ * Strings for component 'quizaccess_honestycheck', language 'gl', version '4.4'.
  *
  * @package     quizaccess_honestycheck
  * @category    string
@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['honestycheckheader'] = 'Lea a seguinte mensaxe';
-$string['honestychecklabel'] = 'Lin e estou de acordo coa declaración anterior';
-$string['honestycheckrequired'] = 'Recoñecemento do alumno respecto á política sobre plaxio';
-$string['honestycheckrequired_help'] = 'Se activa esta opción, os alumnos só poderán iniciar un intento ata que teñan marcado a caixa que confirma que son conscientes da política sobre a honestidade académica.';
+$string['honestychecklabel'] = 'Lin e estou de acordo coa declaración anterior.';
+$string['honestycheckrequired'] = 'O alumnado coñece as directivas sobre plaxio';
+$string['honestycheckrequired_help'] = 'Se activa esta opción, o alumnado non poderá iniciar un intento ata que marken unha caixa de verificación confirmando que son conscientes das directivas de honestidade académica.';
 $string['honestycheckrequiredoption'] = 'debe ser recoñecida antes de iniciar un intento';
-$string['honestycheckstatement'] = 'Entendo que é importante que o intento que estou a piques de facer sexa un traballo totalmente meu. Entendo que é o que constituiría un plaxio ou unha axuda fraudulenta, e non realizarei tales actividades.';
-$string['notrequired'] = 'non requirida';
-$string['pluginname'] = 'Regra de acceso á declaración de recoñecemento de plaxio';
+$string['honestycheckstatement'] = 'Entendo que é importante que o intento que estou a piques facer sexa todo un traballo meu. Entendo o que constitúe plaxio ou fraude, e non levarei a cabo tales actividades.';
+$string['notrequired'] = 'non obrigatorio';
+$string['pluginname'] = 'Regras de acceso para recoñecer a declaración de plaxio';
 $string['privacy:metadata'] = 'O complemento de Regras de acceso para recoñecer a declaración de plaxio non almacena ningún dato persoal.';
-$string['youmustagree'] = 'Ten que aceptar esta declaración antes de iniciar a proba.';
+$string['youmustagree'] = 'Debe aceptar esta declaración antes de iniciar o cuestionario.';

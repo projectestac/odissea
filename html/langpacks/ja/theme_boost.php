@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ja', version '4.1'.
+ * Strings for component 'theme_boost', language 'ja', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'テーマプリセット';
 $string['preset_desc'] = 'テーマのスタイルを広範囲に変更するためプリセットを選択してください。';
 $string['presetfiles'] = '追加テーマプリセットファイル';
-$string['presetfiles_desc'] = 'プリセットはテーマのアピアランスを劇的に変化させるために使用することができます。あなたのプリセットファイルの作成および共有に関して<a href="https://docs.moodle.org/dev/Boost_Presets">Boostプリセット</a>をご覧ください。また、他の人が共有しているプリセットに関して<a href="https://archive.moodle.net/boost">プリセットリポジトリ</a>をご覧ください。';
+$string['presetfiles_desc'] = 'プリセットはテーマのアピアランスを劇的に変化させるために使用することができます。あなたのプリセットファイルの作成および共有に関して<a href="https://docs.moodle.org/dev/Boost_Presets">Boostプリセット</a>をご覧ください。また、他の人が共有しているプリセットに関して<a href="https://moodle.net/search?q=boost+presets">プリセットリポジトリ</a>をご覧ください。';
 $string['privacy:drawerblockclosed'] = 'ブロックドロワの現在のプレファレンスはクローズです。';
 $string['privacy:drawerblockopen'] = 'ブロックドロワの現在のプレファレンスはオープンです。';
 $string['privacy:drawerindexclosed'] = 'インデックスドロワの現在のプレファレンスはクローズです。';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = '生先頭SCSS';
 $string['rawscsspre_desc'] = 'あなたはこのフィールドで先頭SCSSコードを提供することができます。先頭SCSSコードは他のすべての前に挿入されます。多くの場合、あなたはこの設定を変数定義に使用することになります。';
 $string['region-side-pre'] = '右';
 $string['showfooter'] = 'フッタを表示する';
-$string['totop'] = 'トップに移動する';
 $string['unaddableblocks'] = '不要ブロック';
 $string['unaddableblocks_desc'] = 'このテーマを使用する場合、指定されたブロックは必要ないため「ブロックを追加する」メニューには表示されません。';

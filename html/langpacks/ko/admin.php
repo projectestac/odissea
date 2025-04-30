@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', version '4.1'.
+ * Strings for component 'admin', language 'ko', version '4.4'.
  *
  * @package     admin
  * @category    string
@@ -170,7 +170,6 @@ $string['configautologinguests'] = '어떤 강좌에 방문객이 접속했을 �
 $string['configbloglevel'] = '본 설정은 이 사이트에 있는 사용자 블로그를 어느 수준까지 보게 할 것인가를 지정하는 것입니다. 블로그에 게제된 유형 혹은 내용을 지정하는 것이 아니라 Viewer의 최대 영역을 지정한다는 점에 유의하기 바란다. 여러분이 블로그 사용을 꺼려하면 이를 비활성화 시킬 수 있습니다.';
 $string['configcalendarcustomexport'] = '달력 날짜 범위 맞춤 내보내기 활성화';
 $string['configcalendarexportsalt'] = '이 무작위 문장은 달력을 내보내기 하는데 사용되는 인증토큰의 보안을 증가시키기 위해 사용됩니다. 만일 이 해시 솔트를 변경하면 모든 현재의 토큰이 무효화 됨을 주목하십시요..';
-$string['configcookiehttponly'] = 'PHP 5.2.0기능 활성화 - 브라우저가 실제 http의 요청에만 쿠키를 제공해야 하며 스크립트에 의해서는 쿠키를 접속할 수 없어야 한다. 이것은 모든 브라우저를 지원하는 것은 아니며 모든 코드에 완벽히 호환되지는 않을 것이다. 몇 종류의 XSS 공격을 막는데 도움이 된다.';
 $string['configcookiesecure'] = '만일 서버가 https 접속만 허용한다면 보안 쿠키 제공 활성화를 권장한다. 만일 이를 활성화 해 놓았다면 웹서버는 http://나 https:// 주소로 우회시킨 설정에 대해서는 접속을 허용하지 않을 것이다. <em>wwwroot</em> 가 https:// 로 시작하지 않는  주소에 대해서는 이 설정은 자동적으로 꺼진다.';
 $string['configcountry'] = '만약 여기에 국가를 지정한다면, 지정된 국가는 새로운 사용자계정의 기본값으로 설정된다. 사용자 스스로 국가(언어)를 선택하게 하고 싶으면, 지정하지 말고 그냥 놓아 두십시요.';
 $string['configcourseoverviewfilesext'] = '콤마로 분리된 강좌 요약 파일 확장자 목록';
@@ -281,9 +280,6 @@ $string['configminpasswordlength'] = '비밀번호의 길이는 여기에 제시
 $string['configminpasswordlower'] = '비밀번호에 최소 여기에 제시된 수만큼의 소문자가 들어 있어야 합니다.';
 $string['configminpasswordnonalphanum'] = '비밀번호에 최소 여기에 제시된 수만큼의 특수문자가 들어 있어야 합니다.';
 $string['configminpasswordupper'] = '비밀번호에 최소 여기에 제시된 수만큼의 대문자가 들어 있어야 합니다.';
-$string['configmodchooserdefault'] = '활동 선택기는 기본적으로 사용자에게 제시되어야 할까요?';
-$string['configmycoursesperpage'] = '개인 강좌 목록에 표시할 최대 강좌 수';
-$string['configmymoodleredirect'] = '이 설정은 관리자가 아닌 사람이 로그인 할 때 강제적으로 /my 경로로 가게하고 최고 수준 사이트 찾아가기를 /my로 대체합니다.';
 $string['configmypagelocked'] = '이 설정은 관리자가 아닌 사람이 기본  페이지를 편집할 수 없게 합니다.';
 $string['confignavcourselimit'] = '로그인을 하지 않거나, 등록 강좌가 없는 사용자들에게 제시되는 강좌의 수를 제한';
 $string['confignavshowallcourses'] = '이 설정은 강좌에 등록한 사용자가  찾아가기에서 자신이 등록한 강좌외에  모든 강좌를 볼 수 있게 하는 것을 설정합니다.';
@@ -338,7 +334,6 @@ $string['configsitemailcharset'] = '사이트에서 생성되는 모든 이메�
 $string['configsitemaxcategorydepth'] = '최대 범주의 깊이';
 $string['configsitemaxcategorydepthhelp'] = '이것은 범주나 콤보 목록을 표시할때 확장되는 하위 범주의 최대 깊이를 지정합니다. 더 깊은 수준의 범주는 링크로 표시되며 AJAX요청으로 확장할 수 있습니다.';
 $string['configslasharguments'] = '파일들은 \'슬래쉬 아규먼트\'를 사용하는 스크립트를 통해서 제공됩니다. 이 방법은 파일들이 웹 브라우저나 프록시 서버등에서 훨씬 쉽게 저장되도록 합니다. 불행하게도 어떤 PHP서버들은 이 방법을 허용하지 않습니다. 만약 업로드된 파일이나 이미지를 보는데 문제가 있다면, 이 설정을 비활성화 하십시요.';
-$string['configsmartpix'] = '이를 켜 놓으면, 아이콘은 PHP 스크립트를 통해 현재의 테마, 상위 테마, 그리고 무들의 /pix 경로에서 검색되어 제공된다. 이는 테마 안에 중복된 이미지가 있을 때 좋지만 다소 성능에 무리를 준다.';
 $string['configsmtpauthtype'] = 'SMTP 서버에서 사용할 인증 유형을 설정합니다.';
 $string['configsmtphosts'] = '무들이 메일을 보낼때 사용하는 local SMTP 서버들의 전체 이름을 입력하십시요.(예 : \'mail.a.com\' 혹은 \'mail.a.com;mail.b.com\'). 기본 포트(25번 포트)가 아닌 포트를 명시할때는 [server]:[port]  형식을 사용할 수 있습니다. (예 \'mail.a.com:587)
 만약 이 곳을 빈칸으로 남겨두면 무들은 PHP 기본 메쏘드를 사용하여 메일을 발송할 것입니다.';
@@ -364,7 +359,6 @@ $string['configthemedesignermode'] = '보통 모든 테마의 이미지와 스�
 $string['configthemelist'] = '다양한 테마를 사용하게 하려면 이 부분을 빈칸을 남겨두십시요. 만약 테마 메뉴를 짧게하길 원한다면, 여기에 콤마로 분리된 목록 이름을 명시할 수 있습니다. (공백을 사용하지 마십시요) 예: standard,orangewhite';
 $string['configtimezone'] = '여기에서 표준시간대를 선택합니다. 이것은 단지 기본값으로 쓸 표준시간대이며, 각 사용자는 개인정보 난에서 그들 자신에 맞는 설정을 따로 할 수가 있습니다. 이곳의 "서버 지역시간대"는 서버 전반에 적용되는 기준 시간으로 무들의 기본값인데, 사용자 개인정보에 있는 시간대와는 별도입니다. Cronjob은 이 시간을 기준으로 작동합니다.';
 $string['configuseblogassociations'] = '사용자들이 강좌 및 강좌 모듈의 항목을 연합해서 자신들의 블로그를 쓸 수 있게 할까요? ';
-$string['configuseexternalyui'] = '로컬 파일을 사용하는 대신 Yahoo 서버에서 온라인으로 제공하는 파일을 사용하세요. 주의: 인터넷 연결이 필요합니다. 그렇지 않으면 AJAX가 동작하지 않을 것입니다. 이설정은 https를 사용하는 사이트에는 맞지 않습니다.';
 $string['configusetags'] = '사이트 전반에 걸쳐 태그 기능을 활성화할 필요가 있을까요?';
 $string['configvariables'] = '변수';
 $string['configverifychangedemail'] = '허용 혹은 거부된 도메인을 이용하여 바뀐 이메일 주소를 검증. 이 설정이 비활성화되어 있을 경우 새 사용자에게만 도메인 검증이 이루어짐';
@@ -376,7 +370,6 @@ $string['confirmdeletecomments'] = '정말, 덧글을 삭제하시겠습니까? 
 $string['confirmed'] = '확인됨';
 $string['contextlockappliestoadmin'] = '컨택스트 고정은 관리자에게 적용됩니다.';
 $string['contextlocking'] = '컨택스트 고정';
-$string['cookiehttponly'] = 'http 쿠키만';
 $string['cookiesecure'] = '보안 쿠키만';
 $string['country'] = '기본 국가';
 $string['coursecolor'] = '{$a} 색';
@@ -677,8 +670,6 @@ $string['mediapluginogv'] = '.ogv 필터활성화';
 $string['mediapluginram'] = 'ram 필터 사용';
 $string['mediapluginrm'] = 'rm 필터 사용';
 $string['mediapluginrpm'] = 'rpm 필터 사용';
-$string['mediapluginswf'] = 'swf 필터 사용';
-$string['mediapluginswfnote'] = '보안 문제 때문에 일반 사용자의 swf플래시 파일 전송은 허용되지 않습니다.';
 $string['mediapluginwmv'] = 'wmv 필터 사용';
 $string['mediapluginyoutube'] = '유튜브 연결 활성화';
 $string['messaging'] = '내부 메시지 발송 가능';
@@ -697,7 +688,6 @@ $string['mnetrestore_extusers_admin'] = '<strong>주의:</strong> 본 백업 파
 $string['mnetrestore_extusers_mismatch'] = '<strong>참고:</strong> 이 백업파일은 현재와는 다른 무들 설정을 기반으로 작성되었고 복구에 실패할 지도 모르는 무들네트웍의 원격 사용자 계정 정보가 들어 있습니다. 만일 이것이 현재의 무들 설정을 기반으로 작성되었다고 확신하거나, 필요한 무들네트웍 설정이 완벽하다고 믿는다면, 복구를 시도할 수도 있을 것입니다.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>주의:</strong> 본 백업 파일은 다른 곳의 무들에서 작성되었으며, 원격 무들네트웍 사용자 계정이 포함되어 있습니다. 당신은 이러한 유형의 복원 처리를 할 권한이 없습니다. 사이트 관려자에게 문의하거나, 사용자 정보 (모듈, 파일 등)을 제외하고 강좌를 복원하십시오.';
 $string['mnetrestore_extusers_switchuserauth'] = '원격( {$a->mnethosturl} )무들네트웍의 사용자 {$a->username} 를 본 사이트의 인증된 사용자 {$a->auth} 로 전환';
-$string['modchooserdefault'] = '활동 선택기 기본';
 $string['modeditdefaults'] = '활동 설정의 기본 값';
 $string['modsettings'] = '활동 관리';
 $string['modulesecurity'] = '모듈 보안';
@@ -705,10 +695,8 @@ $string['moodleapp'] = '무들 앱';
 $string['moodleservices'] = '무들 서비스';
 $string['multilangforceold'] = '강제로 예전의 다중언어 문법 사용: &lt;span&gt; without the class="multilang" and &lt;lang&gt;';
 $string['mustenablestats'] = '아직 통계수집을 하도록 설정하지 않았습니다.';
-$string['mycoursesperpage'] = '강좌의 수';
 $string['mydashboard'] = '시스템 기본 강의 현황';
 $string['mymoodle'] = '강의 현황';
-$string['mymoodleredirect'] = '내 공부방 강제 개설';
 $string['mypage'] = '기본 강의 현황 페이지';
 $string['mypagelocked'] = '기본 페이지 잠김';
 $string['myprofile'] = '기본 개인정보 페이지';
@@ -943,7 +931,6 @@ $string['sitepolicyguest'] = '손님들에 대한 사이트 정책 URL';
 $string['sitepolicyguest_help'] = '만일 이 사이트를 사용하기 전에 모든 등록된 사용자들이 보아야 하고 동의해야 하는 사이트 정책이 있다면 여기에 그 URL을 명시하십시요. 그렇지 않은 경우 빈칸으로 남겨 주십시요. 이 설정은 어떤 공개된 URL도 포함할 수 있습니다. 노트: 로그인되지 않은 사용자에 대한 접근은 강제 로그인 설정으로 방지될 수 있습니다.';
 $string['sitesectionhelp'] = '선택되면, 토픽 섹션이 사이트 시작 페이지에 보일 것입니다.';
 $string['slasharguments'] = '슬래쉬 인수 사용';
-$string['smartpix'] = '자동 아이콘 검색';
 $string['smtp'] = 'SMTP';
 $string['smtphosts'] = 'SMTP 호스트';
 $string['smtpmaxbulk'] = 'STMP 세션 한계';
@@ -1081,7 +1068,6 @@ $string['upgradinglogs'] = '경과기록(로그) 업그레이드';
 $string['upgradingversion'] = '새 판으로 판올림 중';
 $string['upwards'] = '위로';
 $string['useblogassociations'] = '연합 활성화';
-$string['useexternalyui'] = '야후 UI 라이브러리 사용';
 $string['user'] = '사용자';
 $string['userbulk'] = '일괄 사용자 처리';
 $string['userdefaultpreferences'] = '사용자 기본 환경설정';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ro', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ro', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Generarea cheilor de autentificare a
 $string['autologinmintimebetweenreq'] = 'Durata minimă de timp între solicitările de autentificare automată';
 $string['autologinmintimebetweenreq_desc'] = 'Timpul minim dintre solicitările de conectare automată din aplicația mobilă. Dacă utilizatorilor aplicației li se cere frecvent să-și introducă datele de acces atunci când vizualizează conținut încorporat de pe site, atunci setați o valoare mai mică.';
 $string['autologinnotallowedtoadmins'] = 'Autentificarea automată nu este permisă pentru administratorii site-ului.';
+$string['autologout'] = 'Fortează înhiderea sesiunii de către utilizatori';
+$string['autologout_desc'] = 'Din motive de securitate, puteți impune deconectarea automată pentru utilizatori atunci când părăsesc sau închid aplicația sau aceasta trece în fundal. Utilizatorii vor trebui să se conecteze din nou când revin la aplicație.';
+$string['autologoutcustom'] = 'Timp personalizat după ce utilizatorii părăsesc sau închid aplicația';
+$string['autologoutinmediate'] = 'Imediat după ce utilizatorii părăsesc sau închid aplicația';
+$string['autologouttime'] = 'Temporizator de deconectare automată';
 $string['cachedef_plugininfo'] = 'Aceasta stochează lista de pluginuri cu suplimente mobile';
 $string['cachedef_subscriptiondata'] = 'Aceasta stochează informații legate de abonamentul aplicației de Moodle.';
 $string['clickheretolaunchtheapp'] = 'Faceți clic aici dacă aplicația nu se deschide automat.';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = 'Gestionați tipurile de fișiere';
 $string['minimumversion'] = 'Dacă este specificată o versiune a aplicației (3.8.0 sau o versiune ulterioară), oricăror utilizatori care utilizează o versiune mai veche a aplicației li se va solicita să își actualizeze aplicația înainte de a li se permite accesul la site.';
 $string['minimumversion_key'] = 'Este necesară versiunea minimă a aplicației';
 $string['mobileapp'] = 'Aplicație mobilă';
-$string['mobileappconnected'] = 'Aplicație mobilă conectată';
 $string['mobileappearance'] = 'Aspect mobil';
 $string['mobileappenabled'] = 'Acest site are activat accesul la aplicația mobilă. <br /> <a href="{$a}"> Descărcați aplicația mobilă </a>.';
 $string['mobileappsubscription'] = 'Abonament aplicație de mobil.';
@@ -117,7 +121,6 @@ $string['notificationsseemore'] = 'Notă: statisticile de utilizare a aplicație
 $string['notificationssentnotifications'] = 'Notificări trimise';
 $string['oauth2identityproviders'] = 'Furnizorii de identitate OAuth 2';
 $string['offlineuse'] = 'Utilizare offline';
-$string['openusingembeddedbrowser'] = 'Deschideți utilizând browserul încorporat';
 $string['pluginname'] = 'Instrumente pentru aplicații Moodle';
 $string['pluginnotenabledorconfigured'] = 'Plugin-ul nu este activat sau configurat.';
 $string['privacy:metadata:core_userkey'] = 'Cheile utilizatorului utilizate pentru a crea cheia de autentificare automată pentru utilizatorul curent.';

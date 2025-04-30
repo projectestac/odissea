@@ -28,6 +28,7 @@ namespace tool_task;
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir . '/tablelib.php');
+use core\task\manager;
 
 /**
  * Table to display list of running task.
@@ -47,7 +48,7 @@ class running_tasks_table extends \table_sql {
         $columnheaders = [
             'classname'    => get_string('classname', 'tool_task'),
             'type'         => get_string('tasktype', 'admin'),
-            'time'         => get_string('time'),
+            'time'         => get_string('taskage', 'tool_task'),
             'timestarted'  => get_string('started', 'tool_task'),
             'hostname'     => get_string('hostname', 'tool_task'),
             'pid'          => get_string('pid', 'tool_task'),
@@ -84,7 +85,7 @@ class running_tasks_table extends \table_sql {
      * @param   \stdClass $row
      * @return  string
      */
-    public function col_classname($row) : string {
+    public function col_classname($row): string {
         $output = $row->classname;
         if ($row->type == 'scheduled') {
             if (class_exists($row->classname)) {
@@ -107,11 +108,11 @@ class running_tasks_table extends \table_sql {
      * @return  string
      * @throws  \coding_exception
      */
-    public function col_type($row) : string {
+    public function col_type($row): string {
         if ($row->type == 'scheduled') {
-            $output = \html_writer::span(get_string('scheduled', 'tool_task'), 'badge badge-primary');
+            $output = \html_writer::span(get_string('scheduled', 'tool_task'), 'badge bg-primary text-white');
         } else if ($row->type == 'adhoc') {
-            $output = \html_writer::span(get_string('adhoc', 'tool_task'), 'badge badge-warning');
+            $output = \html_writer::span(get_string('adhoc', 'tool_task'), 'badge bg-dark text-white');
         } else {
             // This shouldn't ever happen.
             $output = '';
@@ -125,8 +126,22 @@ class running_tasks_table extends \table_sql {
      * @param   \stdClass $row
      * @return  string
      */
-    public function col_time($row) : string {
-        return format_time($row->time);
+    public function col_time($row): string {
+        global $OUTPUT;
+
+        $taskmethod = "{$row->type}_task_from_record";
+        $task = manager::$taskmethod($row);
+
+        $result = $task->get_runtime_result();
+        $extra = '';
+        if ($result->get_status() != $result::OK) {
+            $extra = '<br>';
+            $extra .= $OUTPUT->check_result($result);
+            $extra .= ' ';
+            $extra .= $result->get_details();
+        }
+
+        return format_time($row->time) . $extra;
     }
 
     /**
@@ -135,7 +150,7 @@ class running_tasks_table extends \table_sql {
      * @param   \stdClass $row
      * @return  string
      */
-    public function col_timestarted($row) : string {
+    public function col_timestarted($row): string {
         return userdate($row->timestarted);
     }
 }

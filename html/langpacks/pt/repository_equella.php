@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'pt', version '4.1'.
+ * Strings for component 'repository_equella', language 'pt', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = 'Ver repositório EQUELLA';
 $string['equellaaction'] = 'Ação EQUELLA';
 $string['equellaoptions'] = 'Opções EQUELLA';
 $string['equellaurl'] = 'URL EQUELLA';
+$string['equellauserfield'] = 'Campo de utilizador EQUELLA';
+$string['equellauserfield_help'] = 'Escolha o campo de utilizador a ser usado para corresponder ao utilizador EQUELLA (apenas estão listados os campos de utilizador do tipo texto curto).';
+$string['equellausername'] = 'Nome do utilizador';
 $string['group'] = 'Definições do papel de {$a}';
 $string['groupdefault'] = 'Predefinido';
 $string['pluginname'] = 'EQUELLA';

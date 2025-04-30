@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'uk', version '4.1'.
+ * Strings for component 'tool_usertours', language 'uk', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -133,7 +133,6 @@ $string['placement_help'] = 'Крок може бути розміщений в�
 
 Якщо крок не поміститься на певній сторінці у вказаному місці, він автоматично розміститься в іншому місці.';
 $string['pluginname'] = 'Тури користувачів';
-$string['previousstep'] = 'Назад';
 $string['privacy:metadata:preference:completed'] = 'Час, коли користувач останньо завершив тур користувача.';
 $string['privacy:metadata:preference:requested'] = 'Час, коли користувач останнього часу вручну запитав користувальницький тур.';
 $string['privacy:request:preference:completed'] = 'Ви останній раз позначили "{$a->name}" відвідування користувача як завершене {$a->time}';

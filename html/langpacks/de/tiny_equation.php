@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'de', version '4.1'.
+ * Strings for component 'tiny_equation', language 'de', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'TeX-Befehle auf der Registerkarte \'Griechische
 $string['librarygroup4'] = 'Weitere Symbole';
 $string['librarygroup4_desc'] = 'TeX-Befehle auf der Registerkarte \'Weitere Symbole\'';
 $string['modaltitle'] = 'Gleichungseditor';
-$string['pluginname'] = 'Tiny Gleichungseditor';
+$string['pluginname'] = 'Gleichungseditor';
 $string['preview'] = 'Gleichungsvorschau';
 $string['privacy:metadata'] = 'Das Plugin \'Gleichungseditor\' für TinyMCE speichert keine personenbezogenen Daten.';
 $string['saveequation'] = 'Gleichung speichern';

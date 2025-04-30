@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'de', version '4.1'.
+ * Strings for component 'repository', language 'de', version '4.4'.
  *
  * @package     repository
  * @category    string
@@ -222,7 +222,7 @@ $string['readonlyinstance'] = 'Sie können keinen schreibgeschützten Eintrag be
 $string['referencesexist'] = 'Es gibt {$a} Links zu dieser Datei.';
 $string['referenceslist'] = 'Links';
 $string['refresh'] = 'Neu laden';
-$string['refreshnonjsfilepicker'] = 'Bitte schließen Sie das Fenster und laden Sie die Dateiauswahl ohne JavaScript';
+$string['refreshnonjsfilepicker'] = 'Schließen Sie bitte das Fenster und laden Sie die Dateiauswahl ohne JavaScript';
 $string['removed'] = 'Repository entfernt';
 $string['renameall'] = 'Alle umbenennen';
 $string['renameto'] = 'Nach \'{$a}\' umbenennen';

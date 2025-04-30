@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'zh_cn', version '4.1'.
+ * Strings for component 'webservice', language 'zh_cn', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'PHP 的 REST（POST 请求）源代码';
 $string['potusers'] = '未授权用户';
 $string['potusersmatching'] = '匹配的未授权用户';
 $string['print'] = '全部打印';
-$string['privacy:metadata:serviceusers'] = '可以使用某些外部服务的用户的列表';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP被限制使用该服务';
-$string['privacy:metadata:serviceusers:timecreated'] = '记录创建的日期';
-$string['privacy:metadata:serviceusers:userid'] = '用户的ID';
-$string['privacy:metadata:serviceusers:validuntil'] = '授权有效期至';
-$string['privacy:metadata:tokens'] = '通过Web服务或移动应用程序与Moodle交互的令牌的记录。';
-$string['privacy:metadata:tokens:creatorid'] = '创建令牌的用户的ID';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP仅限使用此令牌';
-$string['privacy:metadata:tokens:lastaccess'] = '令牌的最后使用日期';
-$string['privacy:metadata:tokens:privatetoken'] = '一种更私密的令牌，偶尔用于验证某些操作，如SSO';
-$string['privacy:metadata:tokens:timecreated'] = '令牌创建的日期';
-$string['privacy:metadata:tokens:token'] = '用户令牌';
-$string['privacy:metadata:tokens:tokentype'] = '令牌类型';
-$string['privacy:metadata:tokens:userid'] = '令牌用户的ID';
-$string['privacy:metadata:tokens:validuntil'] = '令牌有效期至';
-$string['privacy:request:notexportedsecurity'] = '出于安全原因未导出';
+$string['privacy:metadata'] = 'WebService API 不存储任何数据';
 $string['protocol'] = '协议';
 $string['removefunction'] = '删除';
 $string['removefunctionconfirm'] = '您确信要从服务“{$a->service}”删除函数“{$a->function}”吗？';
@@ -216,11 +201,16 @@ $string['testwithtestclient'] = '测试服务';
 $string['testwithtestclientdescription'] = '用网络服务测试客户端仿真外部访问。用令牌认证，使用一个已启用的协议。<strong>警告：您测试的函数会被真的执行，所以小心选择测试什么！</strong>';
 $string['token'] = '令牌';
 $string['tokenauthlog'] = '令牌认证';
+$string['tokencopied'] = '文本已复制到剪贴板。';
 $string['tokencreatedbyadmin'] = '管理员不能重置（*）';
 $string['tokencreator'] = '创建人';
 $string['tokenfilter'] = '令牌过滤器';
 $string['tokenfilterreset'] = '显示所有令牌';
 $string['tokenfiltersubmit'] = '仅显示匹配的令牌';
+$string['tokenname'] = '名称';
+$string['tokennamehint'] = '如果您不输入名称，则将使用随机名称。';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = '立即复制令牌。一旦您离开此页面，它将不会再次显示。';
 $string['unknownoptionkey'] = '未知选项键（{$a}）';
 $string['unnamedstringparam'] = '一个字符型参数没有被命名。';
 $string['updateusersettings'] = '更新';
@@ -231,12 +221,11 @@ $string['userasclientsdescription'] = '下面步骤帮助您为用户设置Moodl
 $string['usermissingcaps'] = '缺少权限：{$a}';
 $string['usernameorid'] = '用户名 / 用户 id';
 $string['usernameorid_help'] = '输入用户名或用户 ID。';
-$string['usernameoridnousererror'] = '未能找到该用户名/用户 ID 的用户。';
-$string['usernameoridoccurenceerror'] = '使用此用户名的用户用户不唯一，请输入用户 ID。';
 $string['usernotallowed'] = '此用户不可以使用此服务。首先，您需要在{$a}的允许用户管理页面允许此用户使用。';
 $string['userservices'] = '用户服务: {$a}';
 $string['usersettingssaved'] = '用户设置已保存';
 $string['validuntil'] = '有效期至';
+$string['validuntil_empty'] = '此令牌没有到期日期';
 $string['validuntil_help'] = '如果设置，此日期之后，此服务就会对此用户失效。';
 $string['webservice'] = '网络服务';
 $string['webservices'] = '网络服务';

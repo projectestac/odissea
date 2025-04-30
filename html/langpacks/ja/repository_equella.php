@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ja', version '4.1'.
+ * Strings for component 'repository_equella', language 'ja', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = 'EQUELLAリポジトリを表示する';
 $string['equellaaction'] = 'EQUELLA操作';
 $string['equellaoptions'] = 'EQUELLAオプション';
 $string['equellaurl'] = 'EQUELLA URL';
+$string['equellauserfield'] = 'EQUELLAユーザフィールド';
+$string['equellauserfield_help'] = 'EQUELLAユーザのマッチングに使用するユーザーフィールドを選択してください (ショートテキストタイプのユーザフィールドのみ表示されます)。';
+$string['equellausername'] = 'ユーザ名';
 $string['group'] = '{$a} ロール設定';
 $string['groupdefault'] = 'デフォルト';
 $string['pluginname'] = 'EQUELLAリポジトリ';

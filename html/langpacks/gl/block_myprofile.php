@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'gl', version '4.1'.
+ * Strings for component 'block_myprofile', language 'gl', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -25,28 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['contentsettings'] = 'Amosar os axustes para o contido rexional';
-$string['display_address'] = 'Amosar o enderezo';
-$string['display_aim'] = 'Amosar o AIM';
-$string['display_city'] = 'Amosar a cidade';
-$string['display_country'] = 'Amosar o país';
-$string['display_currentlogin'] = 'Amosar a identificación actual';
-$string['display_email'] = 'Amosar o correo';
-$string['display_firstaccess'] = 'Amosar o primeiro acceso';
-$string['display_icq'] = 'Amosar o ICQ';
+$string['contentsettings'] = 'Presentar a configuración para contido rexional';
+$string['display_address'] = 'Presentar enderezo';
+$string['display_city'] = 'Presentar cidade';
+$string['display_country'] = 'Presentar país';
+$string['display_currentlogin'] = 'Presentar a identificación actual';
+$string['display_email'] = 'Presentar o correo';
+$string['display_firstaccess'] = 'Presentar o primeiro acceso';
 $string['display_idnumber'] = 'Amosar o número  ID';
-$string['display_institution'] = 'Amosar a institución';
-$string['display_lastaccess'] = 'Amosar o último acceso';
-$string['display_lastip'] = 'Amosar o último IP';
+$string['display_institution'] = 'Presentar a institución';
+$string['display_lastaccess'] = 'Presentar o último acceso';
+$string['display_lastip'] = 'Presentar o último IP';
 $string['display_lastlogin'] = 'Amosar o último acceso';
-$string['display_msn'] = 'Amosar o MSN';
-$string['display_phone1'] = 'Amosar o 1º número de tél.';
-$string['display_phone2'] = 'Amosar o 2º número de tél.';
-$string['display_picture'] = 'Amosar a imaxe';
-$string['display_skype'] = 'Amosar o Skype';
-$string['display_yahoo'] = 'Amosar o Yahoo';
+$string['display_phone1'] = 'Presentar o 1º número de tél.';
+$string['display_phone2'] = 'Presentar o 2º número de tél.';
+$string['display_picture'] = 'Presentar imaxe';
 $string['myprofile:addinstance'] = 'Engadir un novo identificador no bloque de usuario';
-$string['myprofile:myaddinstance'] = 'Engade un novo bloque de usuario rexistrado no Taboleiro';
+$string['myprofile:myaddinstance'] = 'Engadir un novo identificador no bloque Páxina de inicio';
 $string['myprofile_settings'] = 'Información visíbel do usuario';
 $string['pluginname'] = 'Usuario con sesión activa';
 $string['privacy:metadata'] = 'O bloque de usuarios rexistrado só amosa información sobre o usuario rexistrado e non almacena os datos en si.';

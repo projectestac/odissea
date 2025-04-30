@@ -60,13 +60,13 @@
     </div>
     </a>
 {{/showinitialpageloadingicon}}
-<div id="format-tiles-multi-section-page" class="m-auto">
+<div id="format-tiles-multi-section-page" class="m-auto {{outerextraclasses}}">
     {{#jsnavuserenabled}}
         <noscript>
             {{^jsSessionDisabled}}
                 <div id="jswarning" class="alert alert-secondary">{{#str}}nojswarning, format_tiles{{/str}}
                     {{#showJScancelLink}}
-                        <a href="{{{config.wwwroot}}}/course/view.php?id={{courseid}}&stopjsnav=1">{{#str}}refresh{{/str}}</a>
+                        <a href="{{{config.wwwroot}}}/course/view.php?id={{courseid}}&format-tiles-action=toggleanimatednav&sesskey={{config.sesskey}}">{{#str}}refresh{{/str}}</a>
                     {{/showJScancelLink}}
                     <button type="button" class="close" data-dismiss="alert">
                         <span aria-hidden="true">&times;</span>

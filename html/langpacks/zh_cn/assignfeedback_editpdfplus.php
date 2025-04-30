@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdfplus', language 'zh_cn', version '4.1'.
+ * Strings for component 'assignfeedback_editpdfplus', language 'zh_cn', version '4.4'.
  *
  * @package     assignfeedback_editpdfplus
  * @category    string
@@ -102,6 +102,7 @@ $string['delete_model_question'] = '是否要删除此模型？';
 $string['deleteannotation'] = '删除批注';
 $string['deletecomment'] = '删除评论';
 $string['deletefeedback'] = '删除反馈PDF';
+$string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = '下载反馈PDF';
 $string['draftchangessaved'] = '批注草稿已保存';
 $string['drag'] = '拖动';
@@ -145,6 +146,7 @@ $string['nodraftchangessaved'] = '已保存的修改';
 $string['output'] = '输出:';
 $string['oval'] = '椭圆形';
 $string['pagenumber'] = '{$a}页';
+$string['pagexofy'] = '{$a->page} / {$a->total}';
 $string['partialwarning'] = '此提交文件中的某些文件只能通过直接下载访问。';
 $string['pathtogspathdesc'] = '请注意，annotate PDF要求在{$a}中设置ghostscript的路径。';
 $string['pen'] = '笔';

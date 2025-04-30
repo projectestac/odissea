@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "αξιολόγηση",
 		
-		"home_getting_started_welcome_header_text": "Παρουσίαση του WirisQuizzes 4.8.0: Τώρα με Χειρόγραφες Αποκρίσεις Γραφημάτων",
+		"home_getting_started_welcome_header_text": "Παρουσίαση του WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Είμαστε στην ευχάριστη θέση να σας παρουσιάσουμε έναν νέο τύπο απάντησης που επιτρέπει στους μαθητές σας να αποκρίνονται χειρόγραφα στα γραφήματα. Για περισσότερες πληροφορίες σχετικά με αυτή τη δυνατότητα, ανατρέξτε στις σημειώσεις έκδοσης και την τεκμηρίωσή μας. Ελπίζουμε ότι τόσο εσείς όσο και οι μαθητές σας θα απολαύσετε αυτή τη νέα προσθήκη στο WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Σημειώσεις έκδοσης",
         "home_getting_give_us_feedback_button_text": "Παροχή σχολίων",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Αυτοματοποιημένη καθοδήγηση μαθητών",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Έχετε ενεργοποιήσει τα αυτόματα σχόλια για αυτήν την ερώτηση",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Ορίστε τον τύπο της εργασίας που θα δημιουργήσετε και καθορίστε τα απαιτούμενα πεδία. Τα σχόλια θα δημιουργηθούν αυτόματα από τη μηχανή μας. Μπορείτε να δοκιμάσετε τον τρόπο με τον οποίο οι μαθητές σας θα βλέπουν τα σχόλια. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Περισσότερες πληροφορίες",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Κλείσιμο πίνακα",
+		"quizzes_studio_math_multistep_define_task_title" : "Ορισμός εργασίας",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Σύνδεσμος προς έγγραφα",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Τύπος εργασίας",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Εξίσωση μίας μεταβλητής ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Βασικές λειτουργίες ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Επιλέξτε το πεδίο από το αναπτυσσόμενο μενού. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Εργασία προς επίλυση ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Μη γράψετε εδώ τη σωστή απάντηση, μόνο την εξίσωση προς επίλυση. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Τυχαίες μεταβλητές ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Μεταβλητή εξίσωσης ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Όνομα μεταβλητής",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Καθορίστε τη μοναδική μεταβλητή για την εξίσωση προς επίλυση.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Λάθος",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Σχεδόν τελειώσατε",
+		"quizzes_studio_multistep_correct_feedback_label": "Σωστό",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Υποβάλετε τα βήματά σας για να δείτε την αυτοματοποιημένη καθοδήγηση μαθητών",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Βρίσκεστε στον σωστό δρόμο. Συνεχίστε!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Απαντήσατε σωστά σε αυτήν την ερώτηση.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Λύστε την εξίσωση",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Κάντε τις πράξεις",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Δοκιμή",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Εκκαθάριση",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Επιτρεπόμενα σύμβολα πολλαπλασιασμού",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Γινόμενο με αντιπαράθεση",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Αποδέχεται συμβατικά τον πολλαπλασιασμό των στοιχείων που γράφονται διαδοχικά. Παράδειγμα: το 2y ερμηνεύεται ως 2 φορές το y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Εσωτερικό γινόμενο",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Τα στοιχεία που εμφανίζονται με τελεία ή αστερίσκο δηλώνουν πολλαπλασιασμό. Παράδειγμα: το 2 · y ερμηνεύεται ως 2 φορές το y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Εξωτερικό γινόμενο",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Τα στοιχεία που εμφανίζονται με σταυρό υποδηλώνουν πολλαπλασιασμό. Παράδειγμα: το 2 × y ερμηνεύεται ως 2 φορές το y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Λείπει η εργασία προς επίλυση",
+		"quizzes_studio_math_multistep_equation_variable_error": "Λείπει το όνομα της μεταβλητής",
+
+		"quizzes_studio_multistep_error_session_start_title": "Σφάλμα",
+		"quizzes_studio_multistep_error_session_start_message": "Παρουσιάστηκε κάποιο πρόβλημα κατά την προσπάθεια φόρτωσης της εργασίας σας. Δοκιμάστε ξανά ή επιστρέψτε για να βεβαιωθείτε ότι η εργασία έχει οριστεί σωστά.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Προσπαθήστε ξανά",
+		"quizzes_studio_multistep_error_session_start_go_back": "Επιστροφή",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Επικοινωνία",
+
+		"syntax_math_multistep": "Μαθηματικά με αυτοματοποιημένη καθοδήγηση μαθητών"
 	}
 }
 

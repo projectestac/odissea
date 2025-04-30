@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ro', version '4.1'.
+ * Strings for component 'scorm', language 'ro', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -73,6 +73,7 @@ $string['browse'] = 'Previzualizare';
 $string['browsed'] = 'Căutat';
 $string['browsemode'] = 'Mod de previzualizare';
 $string['browserepository'] = 'Căutare în depozitul de date';
+$string['cachedef_elements'] = 'Memoria cache a elementului';
 $string['calculatedweight'] = 'Ponderea calculată';
 $string['calendarend'] = 'Obiectul {$a} se închide';
 $string['calendarstart'] = '{$a} se deschide';
@@ -94,7 +95,7 @@ $string['completionscorerequired_help'] = 'Activarea acestei setări va necesita
 $string['completionscorerequireddesc'] = 'Pentru finalizare este necesar un scor minim de {$a}';
 $string['completionstatus_completed'] = 'Completat';
 $string['completionstatus_passed'] = 'Trecut';
-$string['completionstatusallscos'] = 'Solicitați tuturor scos-urilor să returneze starea de finalizare';
+$string['completionstatusallscos'] = 'Toate scos-urile trebuie să returneze status-ul de finalizării';
 $string['completionstatusallscos_help'] = 'Unele pachete SCORM conțin mai multe componente sau „scos” - când este activat, toate scosurile din pachet trebuie să returneze lecția_status relevantă pentru ca această activitate să fie marcată ca fiind completă.';
 $string['completionstatusrequired'] = 'Solicită status';
 $string['completionstatusrequired_help'] = 'Verificarea unuia sau mai multor stări va necesita ca un utilizator să obțină cel puțin unul dintre stările verificate pentru a fi marcat complet în această activitate SCORM, precum și orice alte cerințe de finalizare a activității.';
@@ -102,7 +103,7 @@ $string['completionstatusrequireddesc'] = 'Cursantul trebuie să obțină cel pu
 $string['confirmloosetracks'] = 'ATENŢIE: un alt pachet a fost ales sau pachetul existent a fost modificat. În cazul în care structura pachetului s-a modificat, este posibil ca în cursul operaţiunii de actualizare unele din înregistrările activităţilor cursanţilor să se piardă.';
 $string['contents'] = 'Conţinuturi';
 $string['coursepacket'] = 'Pachet curs';
-$string['coursestruct'] = 'Structură curs';
+$string['coursestruct'] = 'Structură conținut';
 $string['crontask'] = 'Procesare de fundal pentru SCORM';
 $string['currentwindow'] = 'Fereastra curentă';
 $string['datadir'] = 'Eroare sistem de fișiere: Nu se poate crea directorul de date de curs';
@@ -117,12 +118,10 @@ $string['details'] = 'Detalii înregistrare activitate';
 $string['directories'] = 'Afişare link-uri director';
 $string['disabled'] = 'Dezactivat';
 $string['display'] = 'Afişare pachet';
-$string['displayactivityname'] = 'Afișați numele activității';
-$string['displayactivityname_help'] = 'Dacă se afișează sau nu numele activității deasupra playerului SCORM.';
 $string['displayattemptstatus'] = 'Afișează starea încercării';
 $string['displayattemptstatus_help'] = 'Această preferință permite un rezumat al încercărilor utilizatorilor de a se afișa în blocul de prezentare generală a cursului din Tabloul de bord și / sau pagina de intrare SCORM.';
 $string['displayattemptstatusdesc'] = 'Dacă un rezumat al încercărilor utilizatorului este afișat în blocul de prezentare generală a cursului în Tabloul de bord și / sau în pagina de intrare SCORM.';
-$string['displaycoursestructure'] = 'Afișați structura cursului pe pagina de intrare';
+$string['displaycoursestructure'] = 'Afișați structura conținutului pe pagina de intrare';
 $string['displaycoursestructure_help'] = 'Dacă este activat, cuprinsul este afișat pe pagina de schiță SCORM.';
 $string['displaycoursestructuredesc'] = 'Dacă este activat, cuprinsul este afișat pe pagina de schiță SCORM.';
 $string['displaydesc'] = 'Dacă se afișează pachetul SCORM într-o fereastră nouă.';
@@ -199,7 +198,7 @@ $string['hidebrowse_help'] = 'Modul de previzualizare permite unui student să p
 $string['hidebrowsedesc'] = 'Modul de previzualizare permite unui student să parcurgă o activitate înainte de a o încerca.';
 $string['hideexit'] = 'Ascunde link ieşire';
 $string['hidereview'] = 'Ascunde buton Verificare';
-$string['hidetoc'] = 'Afișați structura cursului în player';
+$string['hidetoc'] = 'Afișați structura conținutului în player';
 $string['hidetoc_help'] = 'Cum este afișat cuprinsul în playerul SCORM';
 $string['hidetocdesc'] = 'Această setare specifică modul în care este afișat cuprinsul în playerul SCORM.';
 $string['highestattempt'] = 'Cea mai completă încercare de parcurgere';
@@ -215,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'Acest indicator se bazează pe amploa
 $string['indicator:socialbreadthdef'] = 'SCORM social';
 $string['indicator:socialbreadthdef_help'] = 'Participantul a atins acest procent din angajamentul social oferit de activitățile SCORM pe parcursul acestui interval de analiză (Nivele = Fără participare, Participant singur)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Informații';
 $string['interactions'] = 'Interacţiuni';
 $string['invalidactivity'] = 'Activitatea SCORM este incorectă';
 $string['invalidhacpsession'] = 'Sesiune HACP nevalidă';
@@ -224,6 +222,7 @@ $string['invalidmanifestresource'] = 'AVERTISMENT: Următoarele resurse au fost 
 $string['invalidstatus'] = 'Status-ul nu este valid';
 $string['invalidurl'] = 'URL specificat nevalid';
 $string['invalidurlhttpcheck'] = 'URL specificat nevalid. Mesaj debug:<pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'Acest pas următor de actualizare poate dura ceva timp, site-ul dvs. are {$a} înregistrări SCORM care trebuie migrate la noua structură de tabel, vă rugăm să aveți răbdare, deoarece o bară de progres nu poate fi afișată.';
 $string['last'] = 'Ultima accesare la';
 $string['lastaccess'] = 'Ultima accesare';
 $string['lastattempt'] = 'Ultima încercare finalizată';
@@ -241,6 +240,7 @@ $string['maximumattemptsdesc'] = 'Acest parametru stabileşte numărul maxim imp
 $string['maximumgradedesc'] = 'Acest parametru stabileşte punctajul maxim care poate fi atribuit pentru o activitate';
 $string['menubar'] = 'Afişare bară meniuri';
 $string['min'] = 'Punctaj minim';
+$string['minimumscoregreater'] = 'Scorul minim trebuie să fie mai mare de 0.';
 $string['missing_attribute'] = 'Atributul {$a->attr} lipseşte din tag-ul {$a->tag}';
 $string['missing_tag'] = 'Atributul {$a->tag} lipseşte';
 $string['missingparam'] = 'Un parametru necesar lipsește sau este greșit';
@@ -332,7 +332,7 @@ $string['privacy:metadata:attempt'] = 'Numărul încercării';
 $string['privacy:metadata:scoes_track:element'] = 'Numele elementului de urmărit';
 $string['privacy:metadata:scoes_track:value'] = 'Valoarea elementului dat';
 $string['privacy:metadata:scorm_aicc_session'] = 'Informațiile despre sesiune ale AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'Datele urmărite ale SCO-urilor aparținând activității';
+$string['privacy:metadata:scorm_attempt'] = 'Încercările SCORM ale unui utilizator';
 $string['privacy:metadata:timemodified'] = 'Ora când a fost modificat ultima dată elementul urmărit';
 $string['privacy:metadata:userid'] = 'ID-ul utilizatorului care a accesat activitatea SCORM';
 $string['protectpackagedownloads'] = 'Protejați descărcările pachetelor';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ja', version '4.1'.
+ * Strings for component 'gradereport_user', language 'ja', version '4.4'.
  *
  * @package     gradereport_user
  * @category    string
@@ -33,5 +33,6 @@ $string['pluginname'] = 'ユーザレポート';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = '評定表レポートに現在のユーザを表示するか別のユーザを表示するか指定します。';
 $string['tablesummary'] = 'このテーブルは評定項目のカテゴリを含む評定アイテム一覧として作成されています。項目がカテゴリ内にある場合、そのように表示されます。';
 $string['user:view'] = 'ユーザレポートを表示する';
+$string['userreport_user'] = 'ユーザレポート';
 $string['userreportdesc'] = 'ユーザの評点、フィードバックおよびコース合計を含むユーザレポートです。';
 $string['userreports'] = 'ユーザのレポートを表示するには上でユーザを選択する';

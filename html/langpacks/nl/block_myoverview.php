@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'nl', version '4.1'.
+ * Strings for component 'block_myoverview', language 'nl', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Rolmenu groepering';
 $string['aria:hiddencourses'] = 'Toon verborgen cursussen';
 $string['aria:hidecourse'] = 'Verberg {$a}';
 $string['aria:inprogress'] = 'Toon lopende cursussen';
-$string['aria:lastaccessed'] = 'Sorteer cursussen op laatst bekeken';
 $string['aria:list'] = 'Schakel over naar lijstweergave';
 $string['aria:past'] = 'Eerdere cursussen weergeven';
 $string['aria:removefromfavourites'] = 'Verwijder uit favorieten voor';
-$string['aria:shortname'] = 'Sorteer cursussen bij cursus korte naam';
 $string['aria:showcourse'] = 'Toon {$a}';
 $string['aria:sortingdropdown'] = 'Rolmenu sortering';
 $string['aria:summary'] = 'Schakel over naar overzichtsweergave';
-$string['aria:title'] = 'Sorteer cursussen op naam';
 $string['availablegroupings'] = 'Beschikbare filters';
 $string['availablegroupings_desc'] = 'Cursusfilters die beschikbaar zijn voor selectie door gebruikers. Als er geen is geselecteerd, worden alle cursussen weergegeven.';
 $string['card'] = 'Kaart';
 $string['cards'] = 'Kaarten';
-$string['clearsearch'] = 'Verwijder zoekoverzicht';
 $string['completepercent'] = '{$a}% voltooid';
 $string['courseprogress'] = 'Cursusvordering:';
+$string['createcourse'] = 'Cursus maken';
 $string['customfield'] = 'Aangepast veld';
 $string['customfiltergrouping'] = 'Veld om te gebruiken';
 $string['customfiltergrouping_nofields'] = 'Voor deze optie moet je een aangepast veld in je cursus maken en dat zichtbaar zetten voor iedereen.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Sorteer op korte naam';
 $string['sortbytitle'] = 'Sorteer op cursusnaam';
 $string['summary'] = 'Samenvatting';
 $string['title'] = 'Cursusnaam';
+$string['viewquickstart'] = 'Bekijk de snelstartgids';
+$string['zero_default_intro'] = 'Zodra je aangemeld bent in een cursus, zal die hier verschijnen.';
+$string['zero_default_title'] = 'Je bent in geen enkele cursus aangemeld.';
+$string['zero_nocourses_intro'] = 'Hulp nodig om aan de slag te gaan? Bekijk de <a href="{$a->docref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle-documentatie</a> of zet je eerste stappen met onze snelstartgids.';
+$string['zero_nocourses_title'] = 'Maak je eerste cursus';
+$string['zero_request_intro'] = 'Hulp nodig om aan de slag te gaan? Bekijk de <a href="{$a->docref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle-documentatie</a> of zet je eerste stappen met onze <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">snelstartgids</a>.';
+$string['zero_request_title'] = 'Vraag je eerste cursus aan';

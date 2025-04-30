@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ru', version '4.1'.
+ * Strings for component 'form', language 'ru', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'В этом поле должно быть не ме
 $string['err_nonzero'] = 'Это поле должно содержать число';
 $string['err_nopunctuation'] = 'Это поле не должно содержать символов пунктуации.';
 $string['err_numeric'] = 'Вы должны ввести число.';
-$string['err_positiveint'] = 'Вы должны здесь ввести число больше 0.';
+$string['err_positiveint'] = 'Необходимо ввести целое число больше 0.';
 $string['err_rangelength'] = 'Это поле должно содержать от {$a->format[0]} до {$a->format[1]} символов.';
 $string['err_required'] = 'Вы должны ввести значение.';
 $string['err_wrappingwhitespace'] = 'Значение не должно начинаться или заканчиваться пробелом.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Поддерживаемые типы файло
 $string['filetypesany'] = 'Все типы файлов';
 $string['filetypesnotall'] = 'Здесь нельзя выбрать «Все типы файлов»';
 $string['filetypesnotallowed'] = 'Эти типы файлов здесь не разрешены: {$a}';
-$string['filetypesnotwhitelisted'] = 'Эти типы файлов здесь не разрешены: {$a}';
 $string['filetypesothers'] = 'Другие файлы';
 $string['filetypesunknown'] = 'Неизвестные типы файлов: {$a}';
+$string['formactions'] = 'Форма действий';
 $string['general'] = 'Общее';
 $string['hideadvanced'] = 'Скрыть дополнительные настройки';
 $string['hour'] = 'Час';

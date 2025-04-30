@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'zh_cn', version '4.1'.
+ * Strings for component 'enrol_self', language 'zh_cn', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = '只有群成员';
 $string['cohortonly_help'] = '自助选课仅限于指定群中的成员。注意，修改这个设置不会影响已经存在的选课。';
 $string['confirmbulkdeleteenrolment'] = '是否确认删除这些用户的选课？';
 $string['customwelcomemessage'] = '自定义欢迎信息';
-$string['customwelcomemessage_help'] = '自定义的欢迎信息可以加入纯文本，或是用Moodle自动格式，包含HTML标签及多语言标签。
-
-信息中可以包含以下变量：
-
-* 课程名称{$a->coursename}
-* 链接到用户个人资料页面{$a->profileurl}
-* 用户的电子邮箱 {$a->email}
-* 用户的完整姓名{$a->fullname}';
+$string['customwelcomemessage_help'] = '接受的格式：纯文本或 Moodle-auto 格式。HTML 标签和多语言标签以及以下占位符也被接受：
+<ul>
+<li>课程名称 {$a->coursename}</li>
+<li>链接到用户的个人资料页面 {$a->profileurl}</li>
+<li>用户电子邮件 {$a->email}</li>
+<li>用户全名 {$a->fullname}</li>
+<li>用户名字 {$a->firstname}</li>
+<li>用户姓氏 {$a->姓氏}</li>
+<li>用户课程角色 {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = '缺省分配的角色';
 $string['defaultrole_desc'] = '选择用户自助选课后被分配的角色';
 $string['deleteselectedusers'] = '删除被选中用户的选课';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = '开始时间';
 $string['enrolstartdate_help'] = '如果启用，用户只能在此日期后自行加入此课程。';
 $string['expiredaction'] = '选课到期操作';
 $string['expiredaction_help'] = '选择当用户选课截止之后要执行的操作。注意，当课程结束之后，某些用户资料和设置会被清除。';
+$string['expiryinactivemessageenrolledbody'] = '嗨{$a->user}，
+
+您在课程{$a->course}的注册将于{$a->timeend}到期，因为您在过去{$a->inactivetime}天内未访问过该课程。
+
+要使您的注册保持有效，请在 {$a->timeend} 之前登录并访问 <a href=“{$a->url}”>{$a->course}</a>。';
+$string['expiryinactivemessageenrolledsubject'] = '您的注册即将到期：{$a->course}';
 $string['expirymessageenrolledbody'] = '亲爱的 {$a->user}：
 
 您在 \'{$a->course}\' 课程的选课，即将在{$a->timeend}过期，所以特别通知您。

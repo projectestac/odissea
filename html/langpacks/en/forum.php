@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'en', version '4.1'.
+ * Strings for component 'forum', language 'en', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Subscribe to all forums';
 $string['allunsubscribe'] = 'Unsubscribe from all forums';
 $string['allusers'] = 'All users';
 $string['alreadyfirstpost'] = 'This is already the first post in the discussion';
+$string['announcementsettings'] = 'Default announcement forum settings';
+$string['announcementsettings_help'] = 'These settings define the defaults for all announcement forums.';
 $string['anyfile'] = 'Any file';
 $string['areaattachment'] = 'Attachments';
 $string['areapost'] = 'Messages';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Students can be blocked from posting more than a 
 $string['blockperioddisabled'] = 'Don\'t block';
 $string['blogforum'] = 'Standard forum displayed in a blog-like format';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Forum discussions count';
 $string['cachedef_forum_is_tracked'] = 'Forum tracking status for user';
 $string['calendardue'] = '{$a} is due';
 $string['cancelreply'] = 'Cancel reply';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Close grader';
 $string['completiondetail:discussions'] = 'Start discussions: {$a}';
 $string['completiondetail:posts'] = 'Make forum posts: {$a}';
 $string['completiondetail:replies'] = 'Post replies: {$a}';
-$string['completiondiscussions'] = 'Student must create discussions:';
+$string['completiondiscussions'] = 'Start discussions';
 $string['completiondiscussionsdesc'] = 'Student must create at least {$a} discussion(s)';
 $string['completiondiscussionsgroup'] = 'Require discussions';
 $string['completiondiscussionshelp'] = 'requiring discussions to complete';
-$string['completionposts'] = 'Student must post discussions or replies:';
+$string['completionposts'] = 'Start discussions or post replies';
 $string['completionpostsdesc'] = 'Student must post at least {$a} discussion(s) or reply/replies';
 $string['completionpostsgroup'] = 'Require posts';
 $string['completionpostshelp'] = 'requiring discussions or replies to complete';
-$string['completionreplies'] = 'Student must post replies:';
+$string['completionpostsinforums'] = 'Post in forums';
+$string['completionreplies'] = 'Post replies';
 $string['completionrepliesdesc'] = 'Student must post at least {$a} reply/replies';
 $string['completionrepliesgroup'] = 'Require replies';
 $string['completionreplieshelp'] = 'requiring replies to complete';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'Some content has been posted.';
 $string['eventcoursesearched'] = 'Course searched';
 $string['eventdiscussioncreated'] = 'Discussion created';
 $string['eventdiscussiondeleted'] = 'Discussion deleted';
+$string['eventdiscussionlockupdated'] = 'Discussion lock updated';
 $string['eventdiscussionmoved'] = 'Discussion moved';
 $string['eventdiscussionpinned'] = 'Discussion pinned';
 $string['eventdiscussionsubscriptioncreated'] = 'Discussion subscription created';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Discussion subscription deleted
 $string['eventdiscussionunpinned'] = 'Discussion unpinned';
 $string['eventdiscussionupdated'] = 'Discussion updated';
 $string['eventdiscussionviewed'] = 'Discussion viewed';
+$string['eventforumsubscriptionupdated'] = 'Subscription mode updated';
 $string['eventpostcreated'] = 'Post created';
 $string['eventpostdeleted'] = 'Post deleted';
 $string['eventpostupdated'] = 'Post updated';
@@ -298,6 +304,7 @@ $string['forum:addinstance'] = 'Add a new forum';
 $string['forum:addnews'] = 'Add announcements';
 $string['forum:addquestion'] = 'Add question';
 $string['forum:allowforcesubscribe'] = 'Allow force subscribe';
+$string['forum:canmailnow'] = 'Can post to Q and A forum without editing-time delay';
 $string['forum:canoverridecutoff'] = 'Post to forums after their cut-off date';
 $string['forum:canoverridediscussionlock'] = 'Reply to locked discussions';
 $string['forum:canposttomygroups'] = 'Post to all groups you have access to';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'There are no attachments to this post';
 $string['nodiscussions'] = 'There are no discussion topics yet in this forum';
 $string['nodiscussionsstartedby'] = '{$a} has not started any discussions';
 $string['nodiscussionsstartedbyyou'] = 'You haven\'t started any discussions yet';
-$string['noguestpost'] = 'Sorry, guests are not allowed to post.';
+$string['noguestpost'] = 'Only logged in users can post to this forum.';
+$string['noguestpost:title'] = 'Log in to continue';
 $string['noguestsubscribe'] = 'Sorry, guests are not allowed to subscribe.';
 $string['noguesttracking'] = 'Sorry, guests are not allowed to set tracking options.';
 $string['nomorepostscontaining'] = 'No more posts containing \'{$a}\' were found';
@@ -543,9 +551,6 @@ $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'See this post in context';
 $string['postisprivatereply'] = 'This is a private reply. (Teachers and other users with the capability to view private replies can also see it.)';
 $string['postmailinfo'] = 'This is a copy of a message posted in {$a}.';
-$string['postmailinfolink'] = 'This is a copy of a message posted in {$a->coursename}.
-
-To reply click on this link: {$a->replylink}';
 $string['postmailnow'] = '<p>This post will be mailed out immediately to all forum subscribers.</p>';
 $string['postmailreply'] = 'To reply click on this link: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

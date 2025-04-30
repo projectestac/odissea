@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'it', version '4.1'.
+ * Strings for component 'quiz_overview', language 'it', version '4.4'.
  *
  * @package     quiz_overview
  * @category    string
@@ -57,6 +57,8 @@ $string['preferencespage'] = 'Preferenze solo per questa pagina';
 $string['preferencessave'] = 'Visualizza report';
 $string['preferencesuser'] = 'Le tue preferenze per questo report';
 $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Scelta di visualizzare i punteggi per ogni domanda.';
+$string['privacy:preference:slotmarks:no'] = 'I punteggi non sono visualizzati accanto allo slot della domanda.';
+$string['privacy:preference:slotmarks:yes'] = 'I punteggi sono visualizzati accanto allo slot della domanda.';
 $string['regrade'] = 'Rivaluta';
 $string['regradeall'] = 'Rivaluta tutto';
 $string['regradealldry'] = 'Prova rivalutazione totale';

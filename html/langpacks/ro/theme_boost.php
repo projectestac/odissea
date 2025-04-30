@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ro', version '4.1'.
+ * Strings for component 'theme_boost', language 'ro', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Tema presetată';
 $string['preset_desc'] = 'Alegeți o presetare pentru a schimba în general aspectul temei.';
 $string['presetfiles'] = 'Fișiere suplimentare presetate de temă';
-$string['presetfiles_desc'] = 'Fișierele presetate pot fi utilizate pentru a modifica dramatic aspectul temei. Consultați <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost presets </a> pentru informații despre crearea și partajarea propriilor fișiere presetate și consultați <a href = "https: // archive.moodle.net/boost"> Depozit de presetări </a> pentru presetările pe care alții le-au partajat.';
+$string['presetfiles_desc'] = 'Fișierele presetate pot fi utilizate pentru a modifica dramatic aspectul temei. Consultați <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pentru informații despre crearea și partajarea propriilor fișiere presetate și consultați <a href="https://moodle.net/search?q=boost+presets">Depozit de presetări</a> pentru presetări partajate de alte persoane.';
 $string['privacy:drawerblockclosed'] = 'Opțiunea curentă pentru sertarul cu blocuri este ascunsă.';
 $string['privacy:drawerblockopen'] = 'Opțiunea curentă pentru sertarul cu blocuri este vizibilă.';
 $string['privacy:drawerindexclosed'] = 'Opțiunea curentă pentru sertarul cu blocuri este închisă.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'SCSS inițial brut';
 $string['rawscsspre_desc'] = 'În acest câmp puteți furniza inițializarea codului SCSS, acesta va fi injectat înainte de orice altceva. De cele mai multe ori veți utiliza această setare pentru a defini variabile.';
 $string['region-side-pre'] = 'Dreapta';
 $string['showfooter'] = 'Afișează subsolul';
-$string['totop'] = 'Mergi sus';
 $string['unaddableblocks'] = 'Blocuri care nu sunt necesare';
 $string['unaddableblocks_desc'] = 'Blocurile specificate nu sunt necesare atunci când utilizați această temă și nu vor fi afișate în meniul „Adăugați un bloc”.';

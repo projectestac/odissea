@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ur', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'ur', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'ڈراپ باکس API کلید';
 $string['cachelimit'] = 'کیشے کی حد';
 $string['cachelimit_info'] = 'ڈراپ باکس عرفی نام/شارٹ کٹس کے لیے سرور پر کیش کی جانے والی فائلوں کا زیادہ سے زیادہ سائز (بائٹس میں) درج کریں۔ جب ماخذ مزید دستیاب نہ ہو تو کیشڈ فائلیں پیش کی جائیں گی۔ خالی قدر یا صفر کا مطلب ہے سائز سے قطع نظر تمام فائلوں کی کیشنگ۔';
 $string['configplugin'] = 'ڈراپ باکس کنفیگریشن';
 $string['crontask'] = 'ڈراپ باکس ریپوزٹری کے لیے بیک گراؤنڈ پروسیسنگ';
 $string['dropbox'] = 'ڈراپ باکس';
 $string['dropbox:view'] = 'ڈراپ باکس فولڈر دیکھیں';
-$string['instruction'] = 'آپ اپنی API کلید اور راز <a href="https://www.dropbox.com/developers/apps">ڈراپ باکس ڈویلپرز</a> سے حاصل کر سکتے ہیں۔ اپنی کلید ترتیب دیتے وقت براہ کرم "مکمل ڈراپ باکس" کو "رسائی کی سطح" کے طور پر منتخب کریں۔';
 $string['logoutdesc'] = '(جب آپ ڈراپ باکس کا استعمال ختم کریں تو لاگ آؤٹ کریں)';
 $string['notitle'] = 'بلا عنوان';
 $string['oauth2redirecturi'] = 'OAuth 2 ری ڈائریکٹ یو آر ایل';
@@ -40,4 +38,3 @@ $string['pluginname'] = 'ڈراپ باکس';
 $string['privacy:metadata:repository_dropbox'] = 'ڈراپ باکس ریپوزٹری پلگ ان کوئی ذاتی ڈیٹا ذخیرہ نہیں کرتا ہے، لیکن صارف کے ڈیٹا کو موڈل سے ریموٹ سسٹم میں منتقل کرتا ہے۔';
 $string['privacy:metadata:repository_dropbox:query'] = 'ڈراپ باکس ریپوزٹری صارف کی تلاش کے متن کا استفسار۔';
 $string['remember'] = 'مجھے پہچانتے ہو';
-$string['secret'] = 'ڈراپ باکس راز';

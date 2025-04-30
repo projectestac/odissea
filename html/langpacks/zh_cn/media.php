@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'zh_cn', version '4.1'.
+ * Strings for component 'media', language 'zh_cn', version '4.4'.
  *
  * @package     media
  * @category    string
@@ -33,9 +33,9 @@ $string['defaultwidthdesc'] = '媒体播放器宽度，如果未指定宽度且�
 $string['extensions'] = '扩展名：{$a}';
 $string['managemediaplayers'] = '管理媒体播放器';
 $string['mediaformats'] = '可用的播放器';
-$string['mediaformats_desc'] = '启用播放器后，可能通过多媒体过滤器（如果有启用的话）、文件管理器或URL来使用Embed标签嵌入文件。若关闭了播放器，则不会嵌入这些格式。用户可以手动下载访问这些资源。
+$string['mediaformats_desc'] = '启用播放器后，可以使用多媒体插件过滤器（如果启用）或使用文件或 URL 资源嵌入媒体文件。如果未启用，则不会嵌入这些格式，用户可以下载或访问这些资源的链接。
 
-如果同时有两个播放支持同一种文件格式，启用两个播放器有助于提高在各种设备如手机上的兼容性。当然也可以通过给同一个音视频提供不同格式的文件来进一步提高兼容性。';
+如果两个播放器支持相同的格式，则同时启用这两个播放器可以提高不同设备（如手机）之间的兼容性。通过为单个音频或视频剪辑提供不同格式的多个文件，可以进一步提高兼容性。';
 $string['privacy:metadata'] = '媒体嵌入不存储任何个人数据。';
 $string['supports'] = '支持';
 $string['videoextensions'] = '视频：{$a}';

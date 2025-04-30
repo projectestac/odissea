@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_sketch', language 'ja', version '4.1'.
+ * Strings for component 'tiny_sketch', language 'ja', version '4.4'.
  *
  * @package     tiny_sketch
  * @category    string
@@ -32,5 +32,3 @@ $string['privacy:metadata'] = 'スケッチプラグインはいかなる個人�
 $string['sketch_description'] = 'Moodleクイックスケッチ';
 $string['sketch_long_description'] = 'Moodleのエディタ内で画像を描画および編集します。';
 $string['sketchtitle'] = 'スケッチ&保存';
-$string['storeinrepo'] = '画像ファイルとして保存する';
-$string['storeinrepo_desc'] = 'この設定を有効にした場合、スケッチはbase64インライン画像ではなく、標準画像のアップロードとして保存されます。';

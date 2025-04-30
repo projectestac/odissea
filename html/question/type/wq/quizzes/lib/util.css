@@ -1421,10 +1421,10 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer {
-  background: url("decoration/drawing_panel_empty.svg?v=4.11.2") center center no-repeat;
+  background: url("decoration/drawing_panel_empty.svg?v=4.12.1") center center no-repeat;
 }
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
-  background: url("decoration/drawing_panel_grid.png?v=4.11.2");
+  background: url("decoration/drawing_panel_grid.png?v=4.12.1");
 }
 .wrsUI_app .wrsUI_drawingPanel .wrsUI_aux_canvasContainer {
   position: absolute;
@@ -2853,14 +2853,29 @@ md-elevation-transition {
   font-feature-settings: "liga";
   top: 9px;
 }
+.wrsUI_app .wrsUI_checkBox.wrsUI_checkBoxDisabled {
+  cursor: not-allowed !important;
+}
+.wrsUI_app .wrsUI_checkBox.wrsUI_checkBoxDisabled .wrsUI_checkBoxText .wrsUI_label {
+  cursor: not-allowed !important;
+}
+.wrsUI_app .wrsUI_checkBox.wrsUI_checkBoxDisabled .wrsUI_checkBoxHelperText .wrsUI_label {
+  cursor: not-allowed !important;
+}
+.wrsUI_app .wrsUI_checkBox.wrsUI_checkBoxDisabled.wrsUI_selected .wrsUI_aux_checkBox::before {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+.wrsUI_app .wrsUI_checkBox.wrsUI_checkBoxDisabled:hover .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::before {
+  opacity: 0 !important;
+}
 
-.wrsUI_app.wrsUI_animated .wrsUI_checkBox.wrsUI_selected .wrsUI_aux_checkBox::after {
+.wrsUI_app.wrsUI_animated .wrsUI_checkBox:not(.wrsUI_checkBoxDisabled).wrsUI_selected .wrsUI_aux_checkBox::after {
   transition: width 0.225s cubic-bezier(0, 0, 0.2, 1);
 }
-.wrsUI_app.wrsUI_animated .wrsUI_checkBox.wrsUI_focused .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::before {
+.wrsUI_app.wrsUI_animated .wrsUI_checkBox:not(.wrsUI_checkBoxDisabled).wrsUI_focused .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::before {
   animation: 225ms checkBox-ripple-radius forwards, 75ms checkBox-ripple-opacity-focus forwards;
 }
-.wrsUI_app.wrsUI_animated .wrsUI_checkBox:active .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::after, .wrsUI_app.wrsUI_animated .wrsUI_checkBox.wrsUI_aux_checkBox_active .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::after {
+.wrsUI_app.wrsUI_animated .wrsUI_checkBox:not(.wrsUI_checkBoxDisabled):active .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::after, .wrsUI_app.wrsUI_animated .wrsUI_checkBox:not(.wrsUI_checkBoxDisabled).wrsUI_aux_checkBox_active .wrsUI_aux_checkBox .wrsUI_aux_checkBox_ripple::after {
   animation: 225ms checkBox-ripple-radius forwards, 75ms checkBox-ripple-opacity-active forwards;
 }
 

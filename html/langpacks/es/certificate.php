@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'es', version '4.1'.
+ * Strings for component 'certificate', language 'es', version '4.4'.
  *
  * @package     certificate
  * @category    string
@@ -149,31 +149,22 @@ $string['pluginadministration'] = 'Administración del certificado';
 $string['pluginname'] = 'Certificado';
 $string['portrait'] = 'Vertical';
 $string['printdate'] = 'Fecha de impresión';
-$string['printdate_help'] = 'Esta es la fecha que se imprimirá, si se selecciona que se imprima la fecha.
-
-Si se selecciona la fecha de finalización del curso, pero el estudiante no lo hubiese finalizado aún, se imprimirá la fecha recibida.
-
-También puede usted seleccionar imprimir la fecha en función de cuándo fue calificada una actividad. Si se emite un certificado antes de que se califique esa actividad, se imprimirá la fecha recibida.';
+$string['printdate_help'] = 'Esta es la fecha que se imprimirá, si se elige que se imprima la fecha. Si se selecciona la fecha de finalización del curso, pero el estudiante no hubiese finalizado el curso, se imprimirá la fecha recibida. También puede Usted elegir imprimir la fecha con base en cuando fué calificada una actividad. Si se emite un certificado antes de que se califique esa actividad, la fecha recibida será impresa.';
 $string['printerfriendly'] = 'Página para imprimir';
 $string['printgrade'] = 'Imprimir calificación';
-$string['printgrade_help'] = 'Puede elegir cualquier ítem de calificación del curso, disponible en
-del libro de calificaciones, para imprimir la calificación obtenida por el usuario en el certificado. Los items de calificación se listan en el orden en que aparecen en el libro de calificaciones. Seleccione debajo el formato de la calificación.';
+$string['printgrade_help'] = 'Usted puede elegir cualquier item de calificación del curso del libro de calificaciones para imprimir la calificación que el usuario recibió por ese item en el certificado. Los items de calificación se enlistan en el órden en que aparecen en el libro de calificaciones. Elija debajo el formato de la calificación.';
 $string['printhours'] = 'Imprimir crédito de horas';
 $string['printhours_help'] = 'Introduzca aquí el número de horas de crédito que se imprimirán en el certificado.';
 $string['printnumber'] = 'Imprimir código';
 $string['printnumber_help'] = 'Un código individual de 10 dígitos de letras y números aleatorios puede imprimirse en el certificado. Este número podrá después ser verificado al compararlo con el número de código mostrado en el informe de certificados.';
 $string['printoutcome'] = 'Imprimir competencia (outcome)';
-$string['printoutcome_help'] = 'Usted puede elegir cualquier competencia del curso para imprimir el nombre de la competencia y el resultado obtenido por el usuario en el certificado. Un ejemplo sería:
-
-Competencia en la tarea: Eficiente.';
+$string['printoutcome_help'] = 'Usted puede elegir cualquier competencia del curso para imprimir el nombre de la competencia y la competencia recibida por el usuario en el certificado. Un ejemplo sería: Competencia en la tarea: Eficiente.';
 $string['printseal'] = 'Imagen del sello o del logo';
 $string['printseal_help'] = 'Esta opción le permite elegir un sello o un logo a imprimir en el certificado, entre los que están en la carpeta certificate/pix/seals. Por defecto, esta imágen se pondrá en la esquina inferior derecha del certificado.';
 $string['printsignature'] = 'Imagen de firma';
 $string['printsignature_help'] = 'Esta opción le permite elegir una imagen de firma digitalizada para imprimir en el certificado, entre las que están en la carpeta certificate/pix/signatures. Por defecto, esta imagen se pondrá en la esquina inferior izquierda del certificado.';
 $string['printteacher'] = 'Imprimir nombre(s) de profesor(es)';
-$string['printteacher_help'] = 'Para imprimir el nombre del profesor en el certificado, asigne el rol de profesor a nivel del módulo. Para hacer esto, por ejemplo, usted tiene más de un profesor para el curso o tiene más de un certificado en el curso y desea imprimir diferentes nombres en cada certificado.
-
-Elija \'editar el certificado\', después elija la pestaña para roles asignados localmente. Después asigne el rol de profesor-editor al certificado (no necesitan SER profesores en el curso --  puede asignar este rol a quien desee). Estos nombres serán impresos en los certificados como profesor.';
+$string['printteacher_help'] = 'Para imprimir el nombre del profesor en el certificado, asigne el rol de profesor a nivel del módulo. Para hacer esto, por ejemplo, Usted tiene más de un profesor para el curso o tiene más de un certificado en el curso y desea imprimir diferentes nombres en cada certificado. Elija \'editar el certificado\', después elija la pestaña para roles asignados localmente. Después asigne el rol de profesor editor al certificado (no necesitan SER profesores en el curso--Usted puede asignar este rol a quien desee). Estos nombres serán impresos en los certificados para profesor.';
 $string['printwmark'] = 'Marca de agua';
 $string['printwmark_help'] = 'Puede ponerse una marca de agua en el fondo del certificado. Una marca de agua es un gráfico desvanecido. Una marca de agua podría ser un logo, un escudo, un sello, una frase, o cualquier otro elemento que usted quiera emplear como fondo gráfico.';
 $string['receivedcerts'] = 'Certificados recibidos';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'zh_cn', version '4.1'.
+ * Strings for component 'competency', language 'zh_cn', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = '能力等级是在课程“{$a}”
 $string['evidence_manualoverrideinplan'] = '能力等级是在学习计划“{$a}”中手动设置的。';
 $string['invalidevidencedesc'] = '无效的证据描述';
 $string['invalidgrade'] = '无效等级';
-$string['invalidpersistenterror'] = '错误: {$a}';
 $string['invalidplan'] = '无效的学习计划';
 $string['invalidtaxonomy'] = '无效的分类：{$a}';
 $string['invalidurl'] = '网址无效，请确保以"http://"或“https://”开头。';

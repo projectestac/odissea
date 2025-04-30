@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'ar', version '4.1'.
+ * Strings for component 'block_panopto', language 'ar', version '4.4'.
  *
  * @package     block_panopto
  * @category    string
@@ -36,6 +36,7 @@ $string['block_panopto_publisher_system_role_mapping'] = 'أدوار النظا�
 $string['bulk_rename_single_unnecessary'] = 'لا حاجة إلى إعادة التسمية، المجلد مطابق أصلاً لاسم المساق {$a}';
 $string['bulk_rename_start_renaming'] = 'البدء بتحديث كل أسماء المجلدات';
 $string['course_name'] = 'اسم المساق';
+$string['import_status'] = 'استيراد حالة المحاولات';
 $string['name_style_combination'] = '[الاسم المختصر]: [الاسم الكامل]';
 $string['name_style_fullname'] = '[الاسم الكامل]';
 $string['panopto:addinstance'] = 'إضافة كتلة جديدة من Panopto';

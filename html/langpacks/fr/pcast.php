@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'fr', version '4.1'.
+ * Strings for component 'pcast', language 'fr', version '4.4'.
  *
  * @package     pcast
  * @category    string
@@ -52,11 +52,11 @@ $string['commentsnotenabled'] = 'Erreur : les commentaires ne sont pas autorisé
 $string['completiondetail:episodes'] = 'Ajouter {$a} épisode(s)';
 $string['completionepisodes'] = 'Nombre d’épisode(s) que l’étudiant doit créer :';
 $string['completionepisodesgroup'] = 'Épisodes requis';
-$string['configallowhtmlinsummary'] = 'Cette option permet aux flux de champs RSS de contenir du HTML.  Lorsqu’il est désactivé, le HTML sera supprimé silencieusement lors de la génération du flux RSS.';
+$string['configallowhtmlinsummary'] = 'Cette option permet aux flux de champs RSS de contenir du HTML. Lorsqu’il est désactivé, le HTML sera supprimé silencieusement lors de la génération du flux RSS.';
 $string['configallowhtmlinsummary2'] = 'Autoriser le contenu HTML dans les flux RSS.';
-$string['configenablerssfeeds'] = 'Cette option activera la possibilité d’utiliser des flux RSS pour tous les podcasts.  Vous devrez toujours activer les flux manuellement dans les paramètres de chaque podcast.';
+$string['configenablerssfeeds'] = 'Cette option activera la possibilité d’utiliser des flux RSS pour tous les podcasts. Vous devrez toujours activer les flux manuellement dans les paramètres de chaque podcast.';
 $string['configenablerssfeeds2'] = 'Activer les flux RSS :';
-$string['configenablerssitunes'] = 'Cette option permet d’activer la possibilité de créer des flux RSS compatibles avec iTunes pour tous les podcasts.  Vous devrez toujours activer les balises RSS iTunes dans les paramètres du cours de podcast.';
+$string['configenablerssitunes'] = 'Cette option permet d’activer la possibilité de créer des flux RSS compatibles avec iTunes pour tous les podcasts. Vous devrez toujours activer les balises RSS iTunes dans les paramètres du cours de podcast.';
 $string['configenablerssitunes2'] = 'Activer les flux RSS iTunes :';
 $string['createasc'] = 'Nouveaux épisodes en premier';
 $string['created'] = 'Créé';
@@ -88,7 +88,7 @@ $string['episodedeleted'] = 'L’épisode {$a} a été supprimé';
 $string['episoderateview'] = 'Noter';
 $string['episodes'] = '{$a} épisodes';
 $string['episodesperpage'] = 'Épisodes présentés par page';
-$string['episodesperpage_help'] = 'Ce paramètre contrôle le nombre d’épisodes qui seront affichés sur une seule page.  Si vous utilisez des fichiers multimédias volumineux, vous devriez choisir un petit nombre.';
+$string['episodesperpage_help'] = 'Ce paramètre contrôle le nombre d’épisodes qui seront affichés sur une seule page. Si vous utilisez des fichiers multimédias volumineux, vous devriez choisir un petit nombre.';
 $string['episodeswithoutcategory'] = 'Épisodes sans catégorie';
 $string['episodetitle'] = 'Épisode';
 $string['episodeview'] = 'Épisode';
@@ -189,7 +189,7 @@ $string['rssepisodes'] = 'Nombre d’épisodes';
 $string['rssepisodes_help'] = 'Cette option permet de limiter le nombre d’épisodes affichés dans le flux RSS.';
 $string['rsslink'] = 'Flux RSS pour cette activité';
 $string['rsssortorder'] = 'Ordre de tri RSS';
-$string['rsssortorder_help'] = 'Il s’agit de l’ordre de tri des épisodes.  Ils peuvent être triés par date';
+$string['rsssortorder_help'] = 'Il s’agit de l’ordre de tri des épisodes. Ils peuvent être triés par date';
 $string['search:activity'] = 'Activités du podcast';
 $string['search:episode'] = 'Épisodes du podcast';
 $string['setupposting'] = 'Options d’affichage';

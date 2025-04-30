@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ur', version '4.1'.
+ * Strings for component 'block_myoverview', language 'ur', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,15 +44,12 @@ $string['aria:groupingdropdown'] = 'گروپ بندی ڈراپ ڈاؤن مینو
 $string['aria:hiddencourses'] = 'منظر سے ہٹائے گئے کورسز دکھائیں';
 $string['aria:hidecourse'] = '{$a} کو منظر سے ہٹا دیں';
 $string['aria:inprogress'] = 'جاری کورسز دکھائیں';
-$string['aria:lastaccessed'] = 'آخری رسائی کی تاریخ کے مطابق کورسز کو ترتیب دیں';
 $string['aria:list'] = 'فہرست منظر پر سوئچ کریں';
 $string['aria:past'] = 'ماضی کے کورسز دکھائیں';
 $string['aria:removefromfavourites'] = 'کے لیے ستارہ ہٹا دیں';
-$string['aria:shortname'] = 'کورس کو مختصر نام کے مطابق ترتیب دیں';
 $string['aria:showcourse'] = 'دیکھنے کے لیے {$a} کو بحال کریں';
 $string['aria:sortingdropdown'] = 'ڈراپ ڈاؤن مینو کو ترتیب دینا';
 $string['aria:summary'] = 'سمری ویو پر سوئچ کریں';
-$string['aria:title'] = 'کورسز کو کورس کے نام سے ترتیب دیں';
 $string['availablegroupings'] = 'دستیاب فلٹرز';
 $string['availablegroupings_desc'] = 'کورس فلٹرز جو صارفین کے انتخاب کے لیے دستیاب ہیں۔ اگر کوئی بھی منتخب نہیں کیا جاتا ہے، تو تمام کورسز دکھائے جائیں گے۔';
 $string['card'] = 'کارڈ';

@@ -17,7 +17,7 @@
  * Privacy Subsystem implementation for format_vv.
  */
 namespace format_vv\privacy;
-defined('MOODLE_INTERNAL') || die();
+
 /**
  * Privacy Subsystem for format_vv implementing null_provider.
  */

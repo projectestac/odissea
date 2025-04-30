@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'apply', language 'en', version '4.1'.
+ * Strings for component 'apply', language 'en', version '4.4'.
  *
  * @package     apply
  * @category    string
@@ -33,6 +33,8 @@ $string['add_item'] = 'Add entry item to activity';
 $string['add_items'] = 'Add entry items to activity';
 $string['add_pagebreak'] = 'Add a page break for depending';
 $string['adjustment'] = 'Adjustment';
+$string['anyone_submit'] = 'Anyone can apply';
+$string['anyone_submit_help'] = 'Allow anyone (even non-logged-in guest users) to apply. Beware of spam applications!';
 $string['apply:addinstance'] = 'Add a new apply';
 $string['apply:applies'] = 'issue a apply';
 $string['apply:createprivatetemplate'] = 'Create private template';
@@ -149,6 +151,7 @@ $string['execd_notyet'] = 'Not Yet';
 $string['exist'] = 'Exist';
 $string['export'] = 'Export';
 $string['export_templates'] = 'Export templates';
+$string['file'] = 'File';
 $string['firstlastname'] = 'firstname lastname';
 $string['fixedtitle'] = 'Fixed Title';
 $string['hide_no_select_option'] = 'Hide the "Not selected" option';
@@ -323,5 +326,5 @@ $string['username_manage_help'] = 'You can select displied name pattern in this 
 $string['using_templates'] = 'Use a template';
 $string['vertical'] = 'vertical';
 $string['view_entries'] = 'Show Entries';
-$string['wiki_url'] = 'http://www.nsl.tuis.ac.jp/xoops/modules/xpwiki/?mod_apply%20%28E%29';
+$string['wiki_url'] = 'https://polaris.star-dust.jp/pukiwiki/?mod_apply';
 $string['yes_button'] = 'Yes';

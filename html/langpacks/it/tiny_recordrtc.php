@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'it', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'it', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'Nessuna limitazione specificata';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Il browser potrebbe non consentire a questo plug-in di funzionare a meno che non venga utilizzato su HTTPS o da localhost.';
 $string['insecurealert_title'] = 'Connessione non sicura!';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'È stato raggiunto il limite massimo di dimensione per il caricamento di file.';
 $string['maxfilesizehit_title'] = 'Registrazione interrotta';
 $string['norecordingfound'] = 'Qualcosa non ha funzionato, sembra che non sia stato registrato nulla.';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'Il browser offre un supporto limitato o assente per le te
 $string['nowebrtc_title'] = 'WebRTC non supportato';
 $string['onlyaudio'] = 'Solo audio';
 $string['onlyvideo'] = 'Solo video';
-$string['pluginname'] = 'RecordRTC Tiny';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'Il plugin RecordRTC non memorizza dati personali.';
 $string['recordagain'] = 'Nuova registrazione';
 $string['recordagain_desc'] = 'È già stato registrato un audio. Una nuova registrazione eliminerà l\'esistente. Sei sicuro di continuare?';

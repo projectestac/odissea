@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_glossary', language 'de', version '4.1'.
+ * Strings for component 'filter_glossary', language 'de', version '4.4'.
  *
  * @package     filter_glossary
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attachments'] = 'Anhänge';
 $string['filtername'] = 'Autoverlinkung zu Glossaren';
 $string['glossarycategory'] = '{$a->glossary}: Kategorie {$a->category}';
 $string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';

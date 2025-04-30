@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_online', language 'ko', version '4.1'.
+ * Strings for component 'assignment_online', language 'ko', version '4.4'.
  *
  * @package     assignment_online
  * @category    string

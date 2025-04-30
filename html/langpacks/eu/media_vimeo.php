@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_vimeo', language 'eu', version '4.1'.
+ * Strings for component 'media_vimeo', language 'eu', version '4.4'.
  *
  * @package     media_vimeo
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['donottrack'] = 'Gaitu Vimeoko jarraipenik gabeko estekak (do not track)';
+$string['donottrack_desc'] = 'Gaituz gero, erreproduzitzaileak ez du inongo saio-datuen jarraipenik egingo, cookieak eta analitikak barne.';
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'Bideoak partekatzeko vimeo.com web-gunea.';
 $string['privacy:metadata'] = 'Vimeo media-pluginak ez du datu pertsonalik biltzen.';

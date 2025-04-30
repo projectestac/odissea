@@ -30,8 +30,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot.'/course/moodleform_mod.php');
-require_once('locallib.php');
+require_once $CFG->dirroot . '/course/moodleform_mod.php';
+require_once 'locallib.php';
 
 /**
  * Module instance settings form
@@ -44,14 +44,14 @@ class mod_jclic_mod_form extends moodleform_mod {
     function definition() {
         global $CFG;
 
-        $mform    =& $this->_form;
+        $mform =& $this->_form;
 
         //-------------------------------------------------------------------------------
         // Adding the "general" fieldset, where all the common settings are showed
         $mform->addElement('header', 'general', get_string('general', 'form'));
 
         // Adding the standard "name" field
-        $mform->addElement('text', 'name', get_string('name'), array('size'=>'64'));
+        $mform->addElement('text', 'name', get_string('name'), array('size' => '64'));
         if (!empty($CFG->formatstringstriptags)) {
             $mform->setType('name', PARAM_TEXT);
         } else {
@@ -76,7 +76,7 @@ class mod_jclic_mod_form extends moodleform_mod {
         $mform->addHelpButton('url', 'jclicurl', 'jclic');
         $mform->disabledIf('url', 'filetype', 'eq', JCLIC_FILE_TYPE_LOCAL);
 
-        $mform->addElement('filemanager', 'jclicfile', get_string('jclicfile', 'jclic'), array('optional'=>false), jclic::get_filemanager_options());
+        $mform->addElement('filemanager', 'jclicfile', get_string('jclicfile', 'jclic'), array('optional' => false), jclic::get_filemanager_options());
         $mform->addHelpButton('jclicfile', 'urledit', 'jclic');
         $mform->disabledIf('jclicfile', 'filetype', 'noteq', JCLIC_FILE_TYPE_LOCAL);
 
@@ -84,32 +84,24 @@ class mod_jclic_mod_form extends moodleform_mod {
         // -------------------------------------------------------------------------------
         $mform->addElement('header', 'timing', get_string('timing', 'jclic'));
 
-        $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional'=>true));
-        $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional'=>true));
+        $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional' => true));
+        $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional' => true));
 
         //---GRADING-------------------------------------------------------------------------------
         $this->standard_grading_coursemodule_elements();
 
-        /*$mform->addElement('modgrade', 'maxxgrade', get_string('grade'));
-        $mform->setDefault('grade', 100);
-
-        $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional'=>true));
-        $mform->setDefault('timeavailable', time());
-        $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional'=>true));
-        $mform->setDefault('timedue', time()+7*24*3600);*/
-
-        $options = array(-1 => get_string('unlimited','jclic'), 1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 10 => 10);
+        $options = array(-1 => get_string('unlimited', 'jclic'), 1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 10 => 10);
         $mform->addElement('select', 'maxattempts', get_string('maxattempts', 'jclic'), $options);
         $mform->setDefault('maxattempts', '-1');
 
-        $options = array('score' => get_string('avaluation_score','jclic'),'solved' => get_string('avaluation_solved','jclic'));
+        $options = array('score' => get_string('avaluation_score', 'jclic'), 'solved' => get_string('avaluation_solved', 'jclic'));
         $mform->addElement('select', 'avaluation', get_string('avaluation', 'jclic'), $options);
         $mform->setDefault('avaluation', '-1');
 
         //---OPTIONS---------------------------------------------------------------------------
         $mform->addElement('header', 'optionsheader', get_string('appearance'));
 
-        $mform->addElement('text', 'exiturl', get_string('exiturl', 'jclic'), array('size'=>75));
+        $mform->addElement('text', 'exiturl', get_string('exiturl', 'jclic'), array('size' => 75));
         $mform->addHelpButton('exiturl', 'exiturl', 'jclic');
         $mform->setDefault('exiturl', '');
         $mform->setType('exiturl', PARAM_RAW);
@@ -121,11 +113,11 @@ class mod_jclic_mod_form extends moodleform_mod {
         $options = jclic::get_skins();
         $mform->addElement('select', 'skin', get_string('skin', 'jclic'), $options);
 
-        $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size'=>'5'));
+        $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size' => '5'));
         $mform->setDefault('width', '800');
         $mform->setType('width', PARAM_TEXT);
 
-        $mform->addElement('text', 'height', get_string('height', 'jclic'), array('size'=>'5'));
+        $mform->addElement('text', 'height', get_string('height', 'jclic'), array('size' => '5'));
         $mform->setDefault('height', '600');
         $mform->setType('height', PARAM_TEXT);
 
@@ -140,7 +132,7 @@ class mod_jclic_mod_form extends moodleform_mod {
     function data_preprocessing(&$default_values) {
         if ($this->current->instance) {
             $draftitemid = file_get_submitted_draft_itemid('jclicfile');
-            if ($draftitemid == 0 && !empty($this->current->url)) {
+            if ($draftitemid === 0 && !empty($this->current->url)) {
                 $filearea = jclic_get_filearea($this->current->url);
             } else {
                 $filearea = jclic_get_filearea($draftitemid);
@@ -156,7 +148,7 @@ class mod_jclic_mod_form extends moodleform_mod {
         $errors = parent::validation($data, $files);
 
         // Check open and close times are consistent.
-        if ($data['timeavailable'] != 0 && $data['timedue'] != 0 &&
+        if ($data['timeavailable'] !== 0 && $data['timedue'] !== 0 &&
             $data['timedue'] < $data['timeavailable']) {
             $errors['timedue'] = get_string('closebeforeopen', 'jclic');
         }
@@ -167,10 +159,10 @@ class mod_jclic_mod_form extends moodleform_mod {
             $fs = get_file_storage();
             if (!$files = $fs->get_area_files($usercontext->id, 'user', 'draft', $data['jclicfile'], 'sortorder, id', false)) {
                 $errors['jclicfile'] = get_string('required');
-            } else{
+            } else {
                 $file = reset($files);
                 $filename = $file->get_filename();
-                if (!jclic_is_valid_file($filename)){
+                if (!jclic_is_valid_file($filename)) {
                     $errors['jclicfile'] = get_string('invalidjclicfile', 'jclic');
                 }
             }
@@ -191,8 +183,7 @@ class mod_jclic_mod_form extends moodleform_mod {
         if (isset($default_values['url'])) {
             if (jclic_is_valid_external_url($default_values['url'])) {
                 $default_values['filetype'] = JCLIC_FILE_TYPE_EXTERNAL;
-                $default_values['url'] = $default_values['url'];
-            } else{
+            } else {
                 $default_values['filetype'] = JCLIC_FILE_TYPE_LOCAL;
                 $default_values['jclicfile'] = $default_values['url'];
                 unset($default_values['url']);
@@ -206,6 +197,5 @@ class mod_jclic_mod_form extends moodleform_mod {
     function completion_rule_enabled($data) {
         return !empty($data['completionsubmit']);
     }
-
 
 }

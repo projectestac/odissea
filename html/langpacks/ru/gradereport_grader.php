@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ru', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'ru', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Посмотреть результаты ({$a})';
 $string['ajaxchoosescale'] = 'Выберите';
 $string['ajaxclicktoclose'] = 'Щелкните по этому блоку, чтобы скрыть его';
 $string['ajaxerror'] = 'Ошибка';
 $string['ajaxfailedupdate'] = 'Не удается изменить [1] для [2]';
 $string['ajaxfieldchanged'] = 'Поле, которое вы сейчас редактируете, обновилось. Вы хотели бы использовать обновленное значение?';
+$string['aria:dropdowncolumns'] = 'Найдены свернутые столбцы';
+$string['cellactions'] = 'Действия с ячейками';
+$string['clearall'] = 'Очистить все';
+$string['clearsearch'] = 'Очистить найденных пользователей';
+$string['collapsedcolumns'] = 'Свернутые столбцы <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Редактирование отчета оценщика';
 $string['eventgradereportviewed'] = 'Отчет «Отчет по оценкам» просмотрен';
 $string['grader:manage'] = 'Настроить отчет по оценкам';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Отображ
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Показывать ли изображение пользователя рядом с его именем';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Количество студентов, отображаемых на странице в отчете оценщика.';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'У вас свернуто несколько категорий журнала оценок в курсе «{$a->name}»';
+$string['reopencolumn'] = 'Раскрыть столбец {$a}';
 $string['summarygrader'] = 'Таблица с именами студентов в первой колонке (по вертикали) и оцениваемыми элементами курса, сгруппированными по курсу и категории, в верхней строке (по горизонтали).';
 $string['useractivityfeedback'] = 'отзыв {$a}';
 $string['useractivitygrade'] = 'оценка {$a}';

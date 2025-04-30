@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', version '4.1'.
+ * Strings for component 'auth', language 'it', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -35,7 +35,7 @@ $string['auth_changepasswordhelp'] = 'Aiuto cambiamento password';
 $string['auth_changepasswordhelp_expl'] = 'Visualizza come recuperare la propria  {$a} password a coloro  che l\'hanno dimenticata. L\'aiuto verrà  visualizzato da solo o in sostituzione dell <strong>Pagina cambiamento password</strong> del sistema di cambiamento password interno di Moodle.';
 $string['auth_changepasswordurl'] = 'Pagina cambiamento password';
 $string['auth_changepasswordurl_expl'] = 'Indicare l\'URL in cui indirizzare gli utenti che hanno perso la loro {$a} password. Impostare <strong>Utilizza la pagina standard per il cambio della password</strong> a <strong>No</strong>';
-$string['auth_changingemailaddress'] = 'Hai richiesto il cambio di indirizzo email da {$a->oldemail} a {$a->newemail}. Per motivi di sicurezza ti stiamo inviando un messaggio al nuovo indirizzo per avere conferma che ti appartenga realmente. Il tuo indirizzo email sarà aggiornato appena cliccherai sul link presente nel messaggio.';
+$string['auth_changingemailaddress'] = 'Hai richiesto il cambio di indirizzo email da {$a->oldemail} a {$a->newemail}. Per motivi di sicurezza stiamo inviando un messaggio al nuovo indirizzo per avere conferma che ti appartenga realmente. Il tuo indirizzo email sarà aggiornato appena cliccherai sul link presente nel messaggio. Il link di conferma scadrà dopo <b>10 minuti</b>.';
 $string['auth_common_settings'] = 'Impostazioni tipiche';
 $string['auth_data_mapping'] = 'Mappatura dei dati';
 $string['auth_fieldlock'] = 'Campi bloccati nel profilo utente';
@@ -45,6 +45,10 @@ $string['auth_fieldlocks'] = 'Campi bloccati nel profilo utente';
 $string['auth_fieldlocks_help'] = '<p>È possibile bloccare uno o più campi del profilo utente. La funzione può risultare particolarmente utile in quei siti dove i dati dei profili utente sono gestiti a mano dagli amministratori, i quali possono modificare i record degli utenti oppure caricarli utilizzando la funzione \'Importa utenti\'.</p><p>Se si bloccano campi che Moodle considera obbligatori, accertarsi di fornire tali dati durante la creazione di account, altrimenti gli account incompleti non saranno utilizzabili.</p><p>Per evitare questo problema, è possibile utilizzare l\'opzione \'Libero se vuoto\'.</p>';
 $string['auth_fieldmapping'] = 'Mappatura dati ({$a})';
 $string['auth_invalidnewemailkey'] = 'Errore: se stai cercando di confermare un cambio di indirizzo email, puoi aver fatto un errore nel copiare il link che ti abbiamo inviato per email. Prova ancora, copiando correttamente l\'indirizzo.';
+$string['auth_loginpasswordtoggle'] = 'Attiva/disattiva la visibilità della password';
+$string['auth_loginpasswordtoggle_desc'] = 'Aggiunge un\'icona al campo password nella schermata di accesso che consente agli utenti di mostrare o nascondere la password inserita.';
+$string['auth_loginrecaptcha'] = 'Abilita reCAPTCHA nel login';
+$string['auth_loginrecaptcha_desc'] = 'Aggiunge un elemento di verifica nella pagina di autenticazione. Utile per ridurre il rischio di tentativi di accesso ingiustificati. Per ulteriori dettagli, consultare <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Possono essere elencati più macchine remote (es. host1.com;host2.com;host3.com)';
 $string['auth_notconfigured'] = 'Il metodo di autenticazione {$a} non è configurato.';
 $string['auth_outofnewemailupdateattempts'] = 'Hai superato i tentativi permessi per modificare l\'indirizzo email. La richiesta di modifica è stata annullata.';

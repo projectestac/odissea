@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', version '4.1'.
+ * Strings for component 'badges', language 'sv', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = 'Åtgärder';
 $string['activate'] = 'Aktivera tillgång';
 $string['activatesuccess'] = 'Aktivering av tillgång till märken lyckades.';
 $string['addalignment'] = 'Lägg till extern färdighet eller standard';
-$string['addbackpack'] = 'Lägg till ryggsäck';
 $string['addbadge'] = 'Lägg till märken';
 $string['addbadge_help'] = 'Välj de märken som ska läggas till i kraven för att kunna få detta märke. Håll ner CTRL-tangenten för att välja flera.';
 $string['addbadgecriteria'] = 'Lägg till märkeskriteria';
@@ -136,7 +135,6 @@ $string['backpackimport'] = 'Inställningar för märkesimport';
 $string['backpackimport_help'] = 'Efter lyckad anslutning av ryggsäck så kan märken från din ryggsäck visas på din <em>Mina märken</em>-sida och din profilsida.
 
 I detta område kan du välja samlingar av märken från din ryggsäck som du vill visa i din profil.';
-$string['backpackneedsupdate'] = 'Ryggsäcken som anslutits till denna profil stämmer inte överens med ryggsäcken på webbplatsen. Du behöver koppla ifrån och ansluta ryggsäcken på nytt.';
 $string['backpackprovider'] = 'Ryggsäckstjänsteleverantör';
 $string['backpacksettings'] = 'Ryggsäcksinställningar';
 $string['backpackweburl'] = 'URL till ryggsäck';
@@ -287,8 +285,6 @@ $string['enablebadges'] = 'Aktivera märken';
 $string['endorsement'] = 'Rekommendation';
 $string['error:backpackdatainvalid'] = 'Den data som returnerades från ryggsäcken var ogiltig.';
 $string['error:backpackemailnotfound'] = 'E-postadressen \'{$a}\' är inte ansluten till någon ryggsäck. Du behöver antingen i <a href="http://backpack.openbadges.org">skapa en ryggsäck </a> för detta e-postkonto eller logga in med en annan e-postadress.';
-$string['error:backpacknotavailable'] = 'Din webbplats är inte tillgänlig via Internet så märken som utfärdats från den här webbplatsen kan inte verifieras av externa ryggsäcks-tjänster.';
-$string['error:backpackproblem'] = 'Anslutningen till din ryggsäcktjänst misslyckades. Vänligen försök senare.';
 $string['error:badgeawardnotfound'] = 'Detta märke kan inte verifieras. Möjligtvis har det återkallats.';
 $string['error:badgenotfound'] = 'Märket kunde inte hittas';
 $string['error:cannotact'] = 'Kan inte aktivera märket.';
@@ -340,7 +336,6 @@ $string['eventbadgelistingviewed'] = 'Lista över märken visad';
 $string['eventbadgerevoked'] = 'Märke återkallat';
 $string['eventbadgeupdated'] = 'Märke uppdaterat';
 $string['eventbadgeviewed'] = 'Märke visat';
-$string['evidence'] = 'Bevis';
 $string['existingrecipients'] = 'Befintliga märkesmottagare';
 $string['existsinbackpack'] = 'Märket finns redan i ryggsäcken';
 $string['expired'] = 'Förfallet';
@@ -500,8 +495,6 @@ $string['privacy:metadata:manualaward:issuerid'] = 'Användar-ID för utfärdare
 $string['privacy:metadata:manualaward:issuerrole'] = 'Roll för utfärdaren av märket';
 $string['privacy:metadata:manualaward:recipientid'] = 'Användar-ID för den som manuellt utfärdade märket';
 $string['recipient'] = 'Mottagare';
-$string['recipientdetails'] = 'Mottagaredetaljer';
-$string['recipientidentificationproblem'] = 'Kan inte hitta någon mottagare av detta märke bland befintliga användare.';
 $string['recipients'] = 'Mottagare av märket';
 $string['recipientvalidationproblem'] = 'Denna användare kan inte verifieras som mottagare av det här märket.';
 $string['relatedbages'] = 'Relaterade märken';
@@ -523,8 +516,6 @@ $string['selectgroup_end'] = 'Endast publika samlingar visas. <a href="{$a}">Gå
 $string['selectgroup_start'] = 'Välj samlingar från din ryggsäck att visa på den här webbplatsen:';
 $string['selecting'] = 'Med valda märken...';
 $string['setup'] = 'Konfigurera anslutning';
-$string['sitebackpack'] = 'Aktiv extern ryggsäck';
-$string['sitebackpack_help'] = 'Den externa ryggsäck som användare kan ansluta till från denna webbplats. Observera att om denna inställning ändras efter det att användare har anslutit sina ryggsäckar kommer det att krävas att varje användare går till sina ryggsäcksinställningar och förnyar kopplingen.';
 $string['sitebackpackdeleted'] = 'Webbplatsens ryggsäck har tagits bort.';
 $string['sitebackpacknotdeleted'] = 'Den här ryggsäcken kunde inte tas bort eftersom den för närvarande är webbplatsens standardryggsäck';
 $string['sitebackpackwarning'] = 'Kunde inte ansluta till ryggsäck. <br/><br/> Kontrollera att inställningen "Märkesutfärdarens e-postadress" är ett giltigt konto på webbplatsen för ryggsäcken. <br/><br/> Kontrollera att "Märkesutfärdarens lösenord" på <a href="{$a->url}">sidan för märkesinställningar</a> är rätt lösenord för kontot på ryggsäckens webbplats. <br/><br/> Ryggsäcken returnerade: "{$a->warning}"';
@@ -564,6 +555,7 @@ $string['targeturl_help'] = 'En länk till en sida som beskriver den externa fä
 $string['testbackpack'] = 'Testa ryggsäcken \'{$a}\'';
 $string['testsettings'] = 'Testa inställningar';
 $string['type'] = 'Typ';
+$string['userbadges'] = 'Användarmärken';
 $string['variablesubstitution'] = 'Variabelersättning i meddelanden.';
 $string['variablesubstitution_help'] = 'I ett märkesmeddelande kan vissa variabler läggas in i ämnesraden och/eller brödtexten så att de kan ersättas med riktiga värden när meddelandet sänds. Variablerna ska infogas i texten exakt som de visas nedan. Följande variabler kan användas:
 

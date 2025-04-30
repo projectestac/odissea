@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', version '4.1'.
+ * Strings for component 'grades', language 'ko', version '4.4'.
  *
  * @package     grades
  * @category    string
@@ -117,7 +117,6 @@ $string['changedefaults'] = '초기값 변경';
 $string['changereportdefaults'] = '보고서 기본설정 변경';
 $string['chooseaction'] = '활동 선택';
 $string['choosecategory'] = '범주 선택';
-$string['combo'] = '탭 및 펼침메뉴';
 $string['compact'] = '간결한';
 $string['componentcontrolsvisibility'] = '이 채점 항목이 숨겨지는 여부는 활동 설정에서 제어됩니다.';
 $string['contract'] = '계약 범주';
@@ -150,7 +149,6 @@ $string['displaylettergrade'] = '문자 성적 표시';
 $string['displaypercent'] = '퍼센트 표시';
 $string['displaypoints'] = '점수 표시';
 $string['displayweighted'] = '가중치 적용된 성적 표시';
-$string['dropdown'] = '펼침메뉴';
 $string['droplow'] = '최하위 낙제';
 $string['droplow_help'] = '이 설정은 명시된 수만큼의  최저 성적들이 집계에서 제외되도록 합니다.';
 $string['droplowestvalue'] = '낙제 최하위 성적 값 설정';
@@ -425,7 +423,6 @@ $string['multfactor_help'] = '곱하기 수는 최대성적의 최대 값을 가
 $string['multfactorvalue'] = '{$a}에 대한 Multiplicator 값';
 $string['mypreferences'] = '개인 설정';
 $string['myreportpreferences'] = '내 보고서 설정';
-$string['navmethod'] = '찾아가기 방법';
 $string['neverdeletehistory'] = '이력을 삭제하지 마시오';
 $string['newcategory'] = '새 범주';
 $string['newitem'] = '새 성적 항목';
@@ -633,7 +630,6 @@ $string['submissions'] = '제출물들';
 $string['submittedon'] = '제출됨: {$a}';
 $string['switchtofullview'] = '모두 보기로 전환';
 $string['switchtosimpleview'] = '간딘히 보기로 전환';
-$string['tabs'] = '탭';
 $string['topcategory'] = '상위 범주';
 $string['total'] = '종합';
 $string['totalweight100'] = '가중치의 합이 100입니다.';

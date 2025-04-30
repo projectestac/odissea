@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', version '4.1'.
+ * Strings for component 'assign', language 'zh_cn', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = '您还没有交作业。';
 $string['allocatedmarker'] = '分配的批改人';
 $string['allocatedmarker_help'] = '分配给该作业的批改人。';
 $string['allowsubmissions'] = '允许用户继续提交该作业。';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = '作业详情和提交表单将从<strong>{$a}</strong>可以获取';
 $string['allowsubmissionsfromdate'] = '允许提交';
 $string['allowsubmissionsfromdate_help'] = '如果启用了此选项，在此日期前，学生不能提交作业。如果禁用此选项，则学生马上就可以提交作业。';
-$string['allowsubmissionsfromdatesummary'] = '此作业将从<strong>{$a}</strong>起接受提交';
 $string['allowsubmissionsshort'] = '允许更改作业';
 $string['alwaysshowdescription'] = '总是显示描述';
 $string['alwaysshowdescription_help'] = '如果禁用，以上作业描述将只在“允许提交”日期对学生可见。';
@@ -135,7 +133,7 @@ $string['collapsegradepanel'] = '折叠评分面板';
 $string['collapsereviewpanel'] = '折叠检查面板';
 $string['comment'] = '评论';
 $string['completiondetail:submit'] = '提交';
-$string['completionsubmit'] = '学生必须提交才可以完成此活动。';
+$string['completionsubmit'] = '提交';
 $string['configshowrecentsubmissions'] = '任何人都可以在最近的活动报表中看到作业通知。';
 $string['confirmbatchgradingoperation'] = '您确定您要对 {$a->count} 名学生进行{$a->operation}操作吗?';
 $string['confirmstart'] = '你有 {$a} 来完成这个任务。 当您开始时，计时器将开始倒计时并且不能暂停。';
@@ -223,6 +221,8 @@ $string['eventsubmissionviewed'] = '作业已查看。';
 $string['eventworkflowstateupdated'] = '工作流程状态已更新。';
 $string['expandreviewpanel'] = '展开检查面板';
 $string['extensionduedate'] = '延长到期日期';
+$string['extensionduedatecurrent'] = '当前延期到期日';
+$string['extensionduedatenone'] = '无';
 $string['extensionnotafterduedate'] = '延期日期必须在到期日期后面';
 $string['extensionnotafterfromdate'] = '延期日期必须在允许提交日期后面';
 $string['feedback'] = '反馈';
@@ -329,6 +329,8 @@ $string['markerfilter'] = '批改人过滤器';
 $string['markerfilternomarker'] = '没有批改人';
 $string['markingallocation'] = '使用批改分配';
 $string['markingallocation_help'] = '如果启用，与批改工作流程一起，批改人可以被分配给特定的学生。';
+$string['markinganonymous'] = '允许在匿名评分时发布部分成绩';
+$string['markinganonymous_help'] = '如果与匿名提交和评分工作流程一起启用，则允许在匿名评分时发布部分成绩';
 $string['markingworkflow'] = '使用批改工作流程';
 $string['markingworkflow_help'] = '如果启用，分数将经过一系列工作流程阶段，然后公布给学生。这允许多轮批改，并允许分数在同一时间公布给所有学生。';
 $string['markingworkflowstate'] = '批改工作流程状态';
@@ -454,8 +456,6 @@ $string['quickgrading_help'] = '快速评分允许您直接在作业表里分配
 $string['quickgradingchangessaved'] = '成绩更改已保存';
 $string['quickgradingresult'] = '快速评分';
 $string['recordid'] = '标识符';
-$string['relativedatessubmissionduedateafter'] = '课程开始后的{$a->datediffstr}';
-$string['relativedatessubmissionduedatebefore'] = '课程开始前的{$a->datediffstr}';
 $string['relativedatessubmissiontimeleft'] = '为每个学生计算';
 $string['removeallgroupoverrides'] = '删除所有小组覆盖';
 $string['removealluseroverrides'] = '删除所有用户覆盖';
@@ -467,7 +467,9 @@ $string['removesubmissionconfirmwithtimelimit'] = '是否确实要删除提交�
 $string['removesubmissionforstudent'] = '移除学生的作业： (ID={$a->id}, 姓名={$a->fullname})。';
 $string['reopenuntilpassincompatiblewithblindmarking'] = '重新开放直到通过选项与匿名提交不兼容，因为在学生身份显示之前，成绩不会发布到成绩册中。';
 $string['requireallteammemberssubmit'] = '要求所有组成员提交';
-$string['requireallteammemberssubmit_help'] = '如果启用，学生小组的所有成员必须点击此作业的提交按钮，该小组作业才视为已提交。如果禁用，则只要学生小组的任何成员点击提交按钮，小组作业就会视为已提交。';
+$string['requireallteammemberssubmit_help'] = '此设置必须与提交设置中的“要求学生点击提交按钮”一起使用。
+
+如果启用，则所有组成员都必须单击“提交”按钮，才能将小组提交视为已提交。如果禁用，任何群组成员都可以单击提交按钮。';
 $string['requiresubmissionstatement'] = '要求学生接受作业声明';
 $string['requiresubmissionstatement_help'] = '要求学生为该作业的所有提交接受作业声明。';
 $string['revealidentities'] = '公开学生身份';
@@ -547,6 +549,7 @@ $string['submissionstatement'] = '作业声明';
 $string['submissionstatement_help'] = '作业声明，每个学生必须接受才能提交他们的作业。';
 $string['submissionstatementacceptedlog'] = '用户{$a}接受了作业声明';
 $string['submissionstatementdefault'] = '此作业是我自己的作品，除非我承认使用了他人的作品。';
+$string['submissionstatementrequired'] = '在提交本声明之前您必须同意';
 $string['submissionstatementteamsubmission'] = '小组作业声明';
 $string['submissionstatementteamsubmission_help'] = '作业声明，每个学生必须接受才能提交他们小组的作业。';
 $string['submissionstatementteamsubmissionallsubmit'] = '所有小组成员都提交的小组作业声明';

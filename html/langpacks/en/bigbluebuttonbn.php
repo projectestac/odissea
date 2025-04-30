@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'en', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'en', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Publish recordings';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Unprotect recordings';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Unpublish recordings';
 $string['bigbluebuttonbn:view'] = 'View BigBlueButton room';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'View all recording formats';
 $string['bigbluebuttondisablednotification'] = 'The BigBlueButton activity module has been disabled and any existing BigBlueButton course activities are currently not accessible. Prior to re-enabling this plugin, please ensure that you have read and accepted the <a href="{$a}" target="_blank">data processing agreement</a> with Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton activity module disabled.';
 $string['cachedef_currentfetch'] = 'Data to list any recording fetched recently.';
 $string['cachedef_recordings'] = 'Recording metadata';
 $string['cachedef_serverinfo'] = 'Remote server information';
+$string['cachedef_subplugins'] = 'Cache used by subplugin routines to accelerate when needed the plugin discovery process.';
 $string['cachedef_validatedurls'] = 'Cache of validated URL checks';
 $string['calendarstarts'] = '{$a} is scheduled for';
 $string['cannotperformaction'] = 'Cannot perform action {$a} on this recording';
-$string['completionattendance'] = 'Student must attend the session for:';
+$string['completionattendance'] = 'Require attendance (minutes)';
 $string['completionattendance_desc'] = 'Enter and remain in the room for at least {$a} minute(s).';
 $string['completionattendance_event_desc'] = 'Student has entered the room and remained in the session for at least {$a} minute(s)';
-$string['completionattendancegroup'] = 'Require attendance';
+$string['completionattendancegroup'] = 'Require attendance (minutes)';
 $string['completionattendancegroup_help'] = 'Attending the meeting for (n) minutes is required for completion.';
 $string['completionengagement_desc'] = 'Engage in activities during the meeting.';
 $string['completionengagementchats'] = 'Chats';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'Completion update state';
 $string['completionvalidatestate'] = 'Validate completion';
 $string['completionvalidatestatetriggered'] = 'Validate completion has been triggered.';
 $string['completionview'] = 'Require view';
-$string['completionview_desc'] = 'Student must view the room to complete it.';
+$string['completionview_desc'] = 'View the room';
 $string['completionview_event_desc'] = 'Has viewed the room.';
+$string['config_checksum_algorithm'] = 'BigBlueButton server checksum algorithm';
+$string['config_checksum_algorithm_description'] = 'SHA1 is compatible with older servers. SHA256 and SHA512 are more secure. SHA512 is FIPS 140-2 compliant.';
 $string['config_default_messages'] = 'Default messages';
 $string['config_default_messages_description'] = 'Set message defaults for activities';
 $string['config_disablecam_default'] = 'Disable webcam enabled by default';
@@ -109,7 +113,7 @@ $string['config_experimental_features_description'] = 'Configuration for experim
 $string['config_extended_capabilities'] = 'Extended capabilities';
 $string['config_extended_capabilities_description'] = 'Configuration for extended capabilities when the BigBlueButton server offers them.';
 $string['config_general'] = 'General settings';
-$string['config_general_description'] = 'These settings are always used.';
+$string['config_general_description'] = 'To set up BigBlueButton, you can either use your own BigBlueButton server and credentials, or obtain credentials through the <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks Registration Portal (opens in a new window)</a>.';
 $string['config_guestaccess_enabled'] = 'External guest access';
 $string['config_guestaccess_enabled_description'] = 'Allow users without an account on your site to access the room.';
 $string['config_hideuserlist_default'] = 'Hide user list enabled by default';
@@ -140,10 +144,12 @@ $string['config_poll_interval'] = 'Poll interval (in seconds) to refresh the roo
 $string['config_poll_interval_description'] = 'The poll interval must be at least 2 seconds. If necessary, you can lower the load on the remote server by increasing the interval.';
 $string['config_presentation_default'] = 'Default presentation file';
 $string['config_presentation_default_description'] = 'A file may be provided for use in all rooms.';
-$string['config_preuploadpresentation'] = 'Pre-upload presentation';
+$string['config_preuploadpresentation'] = 'Presentation file';
 $string['config_preuploadpresentation_description'] = 'These settings enable or disable options in the UI and also define default values for these options. The feature works only if the Moodle server is accessible to BigBlueButton.';
-$string['config_preuploadpresentation_editable'] = 'Pre-uploading presentation editable';
-$string['config_preuploadpresentation_editable_description'] = 'Preupload presentation feature is editable in the UI when the room or conference is added or updated.';
+$string['config_preuploadpresentation_editable'] = 'Presentation file on activity page';
+$string['config_preuploadpresentation_editable_description'] = 'Option in activity settings to upload presentation file to show on activity page.';
+$string['config_profile_picture_enabled'] = 'Show profile pictures';
+$string['config_profile_picture_enabled_description'] = 'Should profile pictures of participants be shown in BigBlueButton sessions?';
 $string['config_recording'] = 'Recording';
 $string['config_recording_all_from_start_default'] = 'Start recording from the beginning';
 $string['config_recording_all_from_start_default_description'] = 'Should the setting \'Start recording from the beginning\' be enabled by default when adding a new BigBlueButton room?';
@@ -162,6 +168,10 @@ $string['config_recording_protect_editable'] = 'Protected recordings state can b
 $string['config_recording_protect_editable_description'] = 'If checked the interface includes an option for protecting/unprotecting recordings.';
 $string['config_recording_refresh_period'] = 'Recording refresh period (in seconds)';
 $string['config_recording_refresh_period_description'] = 'How often should the BigBlueButton server be queried to refresh remote information for a recording?';
+$string['config_recording_safe_formats'] = 'Recording formats viewable by everyone';
+$string['config_recording_safe_formats_description'] = 'Select the formats which are viewable by everyone.
+All other formats are only viewable by teachers and other users with the mod/bigbluebuttonbn:viewallrecordingformats and
+ mod/bigbluebuttonbn:managerecordings capabilities.';
 $string['config_recordingready_enabled'] = 'Send recording available notification';
 $string['config_recordingready_enabled_description'] = 'If enabled, a notification will be sent when a recording link is available. This feature requires the script post_publish_recording_ready_callback to be enabled on the BigBlueButton server.';
 $string['config_recordings'] = 'Show recordings';
@@ -187,15 +197,9 @@ $string['config_scheduled_description'] = 'These settings define default behavio
 $string['config_scheduled_pre_opening'] = 'Accessible before opening time';
 $string['config_scheduled_pre_opening_description'] = 'The time in minutes that the room is open for prior to the scheduled opening time.';
 $string['config_server_url'] = 'BigBlueButton server URL';
-$string['config_server_url_description'] = 'The default credentials are for a <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">free BigBlueButton service for Moodle (opens in new window)</a> provided by Blindside Networks with restrictions as follows:
-<ol>
-<li>The maximum length for each session is 60 minutes</li>
-<li>The maximum number of concurrent users per session is 25</li>
-<li>Recordings expire after seven (7) days and are not downloadable</li>
-<li>Student webcams are only visible to the moderator.</li>
-</ol>';
+$string['config_server_url_description'] = 'The URL of your BigBlueButton server.';
 $string['config_shared_secret'] = 'BigBlueButton shared secret';
-$string['config_shared_secret_description'] = 'The security secret of your BigBlueButton server. The default secret is for a free BigBlueButton service provided by Blindside Networks.';
+$string['config_shared_secret_description'] = 'The security secret of your BigBlueButton server.';
 $string['config_uidelegation_enabled'] = 'UI delegation is enabled';
 $string['config_uidelegation_enabled_description'] = 'These settings enable or disable the UI delegation to the BigBlueButton server.';
 $string['config_userlimit'] = 'User limit';
@@ -221,9 +225,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'How often should
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton makes use of config.php with a global variable that has been deprecated. Please convert the file as it will not be supported in future versions.';
 $string['config_warning_curl_not_installed'] = 'This feature requires the CURL extension for php installed and enabled. The settings will be accessible only if this condition is fulfilled.';
 $string['config_welcome_default'] = 'Default welcome message';
-$string['config_welcome_default_description'] = 'The welcome message is displayed when participants enter the room. If the field is left blank, then a message set on the BigBlueButton server is displayed.';
+$string['config_welcome_default_description'] = 'The welcome message is displayed when participants enter the room. If the field is left blank, the language string \'mod_form_field_welcome_default\' is used.';
 $string['config_welcome_editable'] = 'Default welcome message is editable by teachers';
 $string['config_welcome_editable_description'] = 'Welcome message can be edited when the instance is added or updated';
+$string['credentials_warning'] = 'The use of default server credentials will soon expire (see note above to obtain new credentials).';
 $string['dpainfonotsigned'] = 'Before enabling this plugin, you must confirm that you have read and accepted the <a href="{$a}">Blindside Networks data processing agreement</a>.';
 $string['enablingbigbluebutton'] = 'Enabling BigBlueButton activity';
 $string['enablingbigbluebuttondpainfo'] = 'In order to meet your data protection obligations, prior to enabling this plugin, you may need to ensure that you have read and accepted the <a href="{$a}" target="_blank">Blindside Networks data processing agreement</a>. Please consult with your own privacy professionals for advice.';
@@ -313,6 +318,7 @@ $string['instance_type_default'] = 'Room with recordings';
 $string['instance_type_recording_only'] = 'Recordings only';
 $string['instance_type_room_only'] = 'Room only';
 $string['instanceprofilewithoutrecordings'] = 'This instance profile cannot display recordings';
+$string['managebbbextplugins'] = 'Manage BigBlueButton extension plugins';
 $string['messageprovider:instance_updated'] = 'BigBlueButton session updated';
 $string['messageprovider:recording_ready'] = 'BigBlueButton recording available';
 $string['minute'] = 'minute';
@@ -414,6 +420,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'The time when th
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'The user ID of the user who triggered the event.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Stores metadata about recordings.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'The user ID of the user who last changed a recording.';
+$string['progress_createbigbluebuttonbn'] = 'Creating BigBlueButton activity ({$a})';
 $string['recordings_from_deleted_activities'] = 'Recordings from deleted activities';
 $string['recordingurlnotfound'] = 'The recording URL is invalid.';
 $string['removedevents'] = 'Deleted events';
@@ -433,8 +440,12 @@ $string['search:activity'] = 'BigBlueButton - activity information';
 $string['search:tags'] = 'BigBlueButton - tags information';
 $string['sendnotification'] = 'Send notification';
 $string['settings'] = 'BigBlueButton settings';
+$string['settings_credential_warning'] = 'The BigBlueButton server credentials will soon expire. See the <a href="{$a->settingslink}" target="_blank">BigBlueButton general settings (opens in a new window)</a>.';
+$string['settings_credential_warning_no_capability'] = 'The BigBlueButton server credentials will soon expire. Please contact your site administrator.';
 $string['started_at'] = 'Started';
 $string['starts_at'] = 'Starts';
+$string['subplugintype_bbbext'] = 'BigBlueButton activity extension';
+$string['subplugintype_bbbext_plural'] = 'BigBlueButton activity extensions';
 $string['taskname:check_dismissed_recordings'] = 'Check for recordings that haven\'t been found yet';
 $string['taskname:check_pending_recordings'] = 'Fetch pending recordings';
 $string['userlimitreached'] = 'The number of users allowed in a session has been reached.';

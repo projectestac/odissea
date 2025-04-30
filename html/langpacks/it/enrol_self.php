@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', version '4.1'.
+ * Strings for component 'enrol_self', language 'it', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Gruppo globale';
 $string['cohortonly_help'] = 'L\'iscrizione spontanea può essere limitata agli  appartenenti ad un determinato gruppo globale. Da notare che modificare questa impostazione non altera le iscrizioni già esistenti.';
 $string['confirmbulkdeleteenrolment'] = 'Sei sicuro di eliminare le iscrizioni di questi utenti?';
 $string['customwelcomemessage'] = 'Messaggio di benvenuto personalizzato';
-$string['customwelcomemessage_help'] = 'È possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multilingua.
-
-È anche possibile utilizzare i seguenti segnaposto:
-
-* Titolo del corso {$a->coursename}
-* Link al profilo dell\'utente {$a->profileurl}
-* Email dell\'utente {$a->email}
-* Nome dell\'utente {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Formati accettati: testo semplice o formato automatico Moodle. Sono accettati anche tag HTML e tag multi-lang, nonché i seguenti segnaposto:
+<ul>
+<li>Titolo del corso {$a->coursename}</li>
+<li>Link alla pagina del profilo dell\'utente {$a->profileurl}</li>
+<li>Email utente {$a->email}</li>
+<li>Nome e cognome dell\'utente {$a->fullname}</li>
+<li>Nome dell\'utente {$a->firstname}</li>
+<li>Cognome dell\'utente {$a->cognome}</li>
+<li>Ruolo del corso dell\'utente {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Ruolo di default';
 $string['defaultrole_desc'] = 'Il ruolo di default da assegnare in caso di iscrizioni spontanee.';
 $string['deleteselectedusers'] = 'Elimina iscrizioni degli utenti selezionati';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Data di inizio';
 $string['enrolstartdate_help'] = 'Consente l\'iscrizione degli utenti solo a partire dalla data impostata.';
 $string['expiredaction'] = 'Azione alla scadenza dell\'iscrizione';
 $string['expiredaction_help'] = 'L\'azione da compiere quando scade l\'iscrizione di un partecipante. Da notare che alcuni dati verranno eliminati per effetto della disiscrizione.';
+$string['expiryinactivemessageenrolledbody'] = 'Gentile {$a->user},
+
+La tua iscrizione al corso {$a->course} scadrà il giorno {$a->timeend} poiché non lo hai frequentato negli ultimi {$a->inactivetime} giorni.
+
+Per mantenere attiva l\'iscrizione, effettua il login e accedi a <a href="{$a->url}">{$a->course}</a> prima del {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'L\'iscrizione al corso sta per scadere: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Gentile {$a->user},
 
 ti informiamo che la tua iscrizione al corso \'{$a->course}\' scadrà il {$a->timeend}.

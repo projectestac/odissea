@@ -27,6 +27,7 @@
  *
  * @copyright  2013 Gordon Bateson (gordon.bateson@gmail.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @codeCoverageIgnore For old Moodle sites in which upgrades are always risky.
  */
 class moodle1_qtype_ordering_handler extends moodle1_qtype_handler {
 
@@ -34,13 +35,13 @@ class moodle1_qtype_ordering_handler extends moodle1_qtype_handler {
      * Returns the list of paths within one <QUESTION> that this qtype needs to have included
      * in the grouped question structure
      *
-     * @return array of strings
+     * @return string[]
      */
-    public function get_question_subpaths() {
-        return array(
+    public function get_question_subpaths(): array {
+        return [
             'ANSWERS/ANSWER',
             'ORDERING',
-        );
+        ];
     }
 
     /**
@@ -49,7 +50,7 @@ class moodle1_qtype_ordering_handler extends moodle1_qtype_handler {
      * @param array $data grouped question data
      * @param array $raw grouped raw QUESTION data
      */
-    public function process_question(array $data, array $raw) {
+    public function process_question(array $data, array $raw): void {
 
         // Convert and write the answers first.
         if (isset($data['answers'])) {
@@ -59,7 +60,7 @@ class moodle1_qtype_ordering_handler extends moodle1_qtype_handler {
         // Convert and write the ordering extra fields.
         foreach ($data['ordering'] as $ordering) {
             $ordering['id'] = $this->converter->get_nextid();
-            $this->write_xml('ordering', $ordering, array('/ordering/id'));
+            $this->write_xml('ordering', $ordering, ['/ordering/id']);
         }
     }
 }

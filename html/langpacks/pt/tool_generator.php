@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'pt', version '4.1'.
+ * Strings for component 'tool_generator', language 'pt', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Atividades adicionais';
+$string['additionalmodules_help'] = 'Selecione mais atividades que implementem a função \'course_backend_generator_create_activity\' para incluir na disciplina.';
 $string['bigfile'] = 'Ficheiros grandes {$a}';
 $string['courseexplanation'] = 'Esta ferramenta cria disciplinas padrão de teste que incluem muitas secções, atividades e ficheiros.
 
@@ -73,6 +75,7 @@ $string['progress_createcourse'] = 'A criar disciplina {$a}';
 $string['progress_createforum'] = 'A criar fórum ({$a} tópicos)';
 $string['progress_createpages'] = 'A criar páginas ({$a})';
 $string['progress_createsmallfiles'] = 'A criar ficheiros pequenos ({$a})';
+$string['progress_createusers'] = 'A criar contas de utilizadores ({$a})';
 $string['progress_enrol'] = 'A inscrever utilizadores na disciplina ({$a})';
 $string['progress_sitecompleted'] = 'Site concluído ({$a}s)';
 $string['shortsize_0'] = 'XS';
@@ -113,5 +116,17 @@ $string['testplansize_2'] = 'M ({$a->users} utilizadores, {$a->loops} loops e {$
 $string['testplansize_3'] = 'L ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
 $string['testplansize_4'] = 'XL ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
 $string['testplansize_5'] = 'XXL ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
+$string['testscenario'] = 'Criar cenários de teste';
+$string['testscenario_description'] = 'A criação de cenários de teste usa uma sintaxe limitada de ficheiros de funcionalidades para criar todos os elementos necessários para executar um teste manual.';
+$string['testscenario_errorparsing'] = 'Erro ao analisar o ficheiro de funcionalidade: {$a}';
+$string['testscenario_file'] = 'Ficheiro de funcionalidade';
+$string['testscenario_filedesc'] = 'Os ficheiros de funcionalidades carregados apenas podem conter cenários com etapas \'core_data_generator\'. Ainda não é compatível com esboços de cenários. Todos os cenários serão executados de uma só vez, mas as etapas em segundo plano serão ignoradas.';
+$string['testscenario_invalidfile'] = 'O formato do ficheiro não é válido ou contém etapas inválidas.';
+$string['testscenario_invalidstep'] = 'Etapa desconhecida. Criar cenários de teste aceita apenas etapas do gerador.';
+$string['testscenario_nosteps'] = 'Não existem etapas para executar no ficheiro.';
+$string['testscenario_notready'] = 'As bibliotecas \'Composer\' e \'Behat\' não estão instaladas.<br><br>Por favor, execute este comando para ativar esta ferramenta: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Os esboços de cenário não são suportados.';
+$string['testscenario_scenarionosteps'] = 'Este cenário não tem etapas.';
+$string['testscenario_steps'] = 'Etapas do cenário de teste:';
 $string['updateuserspassword'] = 'Atualize a senha dos utilizadores da disciplina';
 $string['updateuserspassword_help'] = 'JMeter precisa de entrar como um utilizador da disciplina. Pode atribuir senhas aos utilizadores utilizando  $CFG->tool_generator_users_password em config.php. Esta configuração atualiza a senha do utilizador na disciplina de acordo com $CFG->tool_generator_users_password. Esta ferramenta pode ser útil se a disciplina que está a usar não foi criada pela ferramenta $CFG->tool_generator_users_password, não estava definida quando criou as disciplinas de teste.';

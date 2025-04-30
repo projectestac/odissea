@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'en', version '4.1'.
+ * Strings for component 'format_topics', language 'en', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Add topic';
-$string['currentsection'] = 'This topic';
-$string['deletesection'] = 'Delete topic';
-$string['editsection'] = 'Edit topic';
-$string['editsectionname'] = 'Edit topic name';
-$string['hidefromothers'] = 'Hide topic';
+$string['currentsection'] = 'Current section';
+$string['hidefromothers'] = 'Hide';
 $string['indentation'] = 'Allow indentation on course page';
 $string['indentation_help'] = 'Allow teachers, and other users with the manage activities capability, to indent items on the course page.';
-$string['newsectionname'] = 'New name for topic {$a}';
-$string['page-course-view-topics'] = 'Any course main page in topics format';
-$string['page-course-view-topics-x'] = 'Any course page in topics format';
-$string['pluginname'] = 'Topics format';
-$string['privacy:metadata'] = 'The Topics format plugin does not store any personal data.';
+$string['legacysectionname'] = 'Topic';
+$string['newsection'] = 'New section';
+$string['page-course-view-topics'] = 'Any course main page in custom sections format';
+$string['page-course-view-topics-x'] = 'Any course page in custom sections format';
+$string['plugin_description'] = 'The course is divided into customisable sections.';
+$string['pluginname'] = 'Custom sections';
+$string['privacy:metadata'] = 'The Custom sections format plugin does not store any personal data.';
 $string['section0name'] = 'General';
-$string['sectionname'] = 'Topic';
-$string['showfromothers'] = 'Show topic';
+$string['section_highlight_feedback'] = 'Section {$a->name} highlighted.';
+$string['section_unhighlight_feedback'] = 'Highlighting removed from section {$a->name}.';
+$string['sectionname'] = 'Section';
+$string['showfromothers'] = 'Show';

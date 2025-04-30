@@ -94,32 +94,7 @@
         {{> format_tiles/local/content/section/header }}
     {{/ format_tiles/local/content/section/header }}
 {{/header}}
-<div data-region="sectionbadges" class="sectionbadges d-flex align-items-center">
-    {{$ core_courseformat/local/content/section/badges }}
-        {{> core_courseformat/local/content/section/badges }}
-    {{/ core_courseformat/local/content/section/badges }}
-    {{#restrictionlock}}<i class="icon fa fa-lock fa-fw " aria-hidden="true"></i>{{/restrictionlock}}
-</div>
-{{#collapsemenu}}
-<div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
-    <a
-        id="collapsesections"
-        class="section-collapsemenu"
-        href="#"
-        aria-expanded="true"
-        role="button"
-        data-toggle="toggleall"
-    >
-        <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
-        <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
-    </a>
-    </div>
-{{/collapsemenu}}
-{{#controlmenu}}
-    {{$ core_courseformat/local/content/section/controlmenu }}
-        {{> core_courseformat/local/content/section/controlmenu }}
-    {{/ core_courseformat/local/content/section/controlmenu }}
-{{/controlmenu}}
+
 {{! the next closing div tag seems to match nothing but that is the same in the core file and error results if remove it }}
 </div>
 <div id="coursecontentcollapse{{num}}"

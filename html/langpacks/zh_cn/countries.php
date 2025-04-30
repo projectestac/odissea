@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'zh_cn', version '4.1'.
+ * Strings for component 'countries', language 'zh_cn', version '4.4'.
  *
  * @package     countries
  * @category    string
@@ -120,7 +120,7 @@ $string['GU'] = '关岛';
 $string['GW'] = '几内亚比绍';
 $string['GY'] = '圭亚那';
 $string['HK'] = '中国香港';
-$string['HM'] = '赫德和麦克唐纳群岛';
+$string['HM'] = '赫德岛和麦克唐纳群岛';
 $string['HN'] = '洪都拉斯';
 $string['HR'] = '克罗地亚';
 $string['HT'] = '海地';
@@ -262,7 +262,7 @@ $string['UY'] = '乌拉圭';
 $string['UZ'] = '乌兹别克斯坦';
 $string['VA'] = '梵蒂冈';
 $string['VC'] = '圣文森特和格林纳丁斯';
-$string['VE'] = '委内瑞拉玻利瓦尔共和国';
+$string['VE'] = '委内瑞拉（玻利瓦尔共和国）';
 $string['VG'] = '英属维金群岛';
 $string['VI'] = '美属维金群岛';
 $string['VN'] = '越南';

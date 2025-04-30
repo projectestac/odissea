@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ca', version '4.1'.
+ * Strings for component 'format_topics', language 'ca', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,15 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Afegeix seccions';
 $string['currentsection'] = 'Aquest tema';
-$string['deletesection'] = 'Suprimeix el tema';
-$string['editsection'] = 'Edita el tema';
-$string['editsectionname'] = 'Edita el nom del tema';
 $string['hidefromothers'] = 'Oculta el tema';
-$string['newsectionname'] = 'Nom nou per al tema {$a}';
+$string['legacysectionname'] = 'Tema';
 $string['page-course-view-topics'] = 'Qualsevol curs de la pàgina principal en format de temes';
 $string['page-course-view-topics-x'] = 'Qualsevol pàgina del curs en format de temes';
+$string['plugin_description'] = 'El curs està dividit en seccions personalitzables.';
 $string['pluginname'] = 'Format per temes';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Tema';

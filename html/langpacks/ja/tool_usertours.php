@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ja', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ja', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'ステップはターゲットの上下左右に配
 
 指定された場所の特定ページにステップが適合しない場合、自動的に他の場所に配置されます。';
 $string['pluginname'] = 'ユーザツアー';
-$string['previousstep'] = '前へ';
 $string['privacy:metadata:preference:completed'] = 'ユーザがユーザツアーを完了した時刻です。';
 $string['privacy:metadata:preference:requested'] = 'ユーザが最後に手動でユーザツアーをリクエストした時刻です。';
 $string['privacy:request:preference:completed'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} に完了マークしました。';
@@ -151,6 +150,9 @@ $string['selector_defaulttitle'] = '記述的なタイトルを入力してく�
 $string['selectordisplayname'] = 'CSSセレクタ合致「 {$a} 」';
 $string['selecttype'] = 'ステップタイプを選択する';
 $string['sharedtourslink'] = 'ツアーリポジトリ';
+$string['showtoureachtime'] = 'フィルタが一致するたびに';
+$string['showtouruntilcomplete'] = '終了するまで';
+$string['showtourwhen'] = 'ツアーを表示する';
 $string['skip'] = 'スキップ';
 $string['skip_tour'] = 'ツアーをスキップする';
 $string['target'] = 'ターゲット';
@@ -250,6 +252,14 @@ $string['tour_activityinfo_course_teacher_content'] = '新しいコース設定�
 $string['tour_activityinfo_course_teacher_title'] = 'New: 活動情報';
 $string['tour_final_step_content'] = 'ここであなたのユーザツアーは終了します。あなたがフッタのリンクを使ってリセットしない限り、再度表示されることはありません。';
 $string['tour_final_step_title'] = 'ツアー終了';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>カラムを並べ替えて表示するカラムを選択します。編集モードではこのショートカットを使用して評定項目の表示および編集に関連する高頻度の作業にアクセスしてください。';
+$string['tour_gradebook_action_title'] = 'アクションへのクイックリンク';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>姓または名の頭文字で学生をフィルタリングします。';
+$string['tour_gradebook_filter_title'] = '氏名でフィルタする';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>特定の学生をすばやく検索するには検索ボックスを使用してください。';
+$string['tour_gradebook_search_title'] = '学生を簡単に探す';
+$string['tour_gradebook_tour_description'] = '評定表評定者レポートの検索およびナビゲーション機能';
+$string['tour_gradebook_tour_name'] = '評定表評定者レポート';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br />ここに重要なニュースを投稿します。';
 $string['tour_navigation_course_announcements_teacher_title'] = 'すべての人に伝えたいことがありますか?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br />新しいコンテンツを追加するか、既存のコンテンツを編集します。';

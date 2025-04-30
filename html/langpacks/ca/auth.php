@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', version '4.1'.
+ * Strings for component 'auth', language 'ca', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -44,6 +44,10 @@ $string['auth_fieldlocks'] = 'Bloca camps d\'usuari';
 $string['auth_fieldlocks_help'] = '<p>Podeu blocar els camps de dades d\'usuari. Això és útil en llocs on els administradors mantenen manualment les dades dels usuaris tot editant els registres d\'usuari o per mitjà de l\'opció de càrrega d\'usuaris. Si bloqueu camps requerits per Moodle, assegureu-vos que aquestes dades s\'introdueixen en crear els comptes d\'usuari, o en cas contrari no es podran utilitzar els comptes.</p><p>Considereu la possibilitat d\'utilitzar el mode «Desblocat si està buit» per evitar aquest problema.</p>';
 $string['auth_fieldmapping'] = 'Mapatge de dades ({$a})';
 $string['auth_invalidnewemailkey'] = 'Error: si intenteu confirmar un canvi d\'adreça de correu electrònic, probablement heu copiat malament l\'enllaç que us hem enviat. Copieu l\'enllaç complet i torneu a intentar-ho.';
+$string['auth_loginpasswordtoggle'] = 'Commuta la visibilitat de la contrasenya';
+$string['auth_loginpasswordtoggle_desc'] = 'Afegeix una icona al camp de contrasenya de la pantalla d\'inici de sessió que permeti als usuaris mostrar o amagar la contrasenya introduïda.';
+$string['auth_loginrecaptcha'] = 'Habilita reCAPTCHA per iniciar la sessió';
+$string['auth_loginrecaptcha_desc'] = 'Afegeix una confirmació visual/audio al formulari de la pàgina per iniciar la sessió. Això redueix el risc d\'intents d\'inici de sessió injustificats. Vegeu <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> per saber-ne més.';
 $string['auth_multiplehosts'] = 'Podeu especificar diversos ordinadors (p. e.: host1.com; host2.com; host3.com)';
 $string['auth_notconfigured'] = 'El mètode d\'autenticació {$a} no està configurat.';
 $string['auth_outofnewemailupdateattempts'] = 'Heu esgotat els intents d\'actualització de la vostra adreça de correu electrònic. La vostra petició d\'actualització s\'ha cancel·lat.';
@@ -144,9 +148,9 @@ $string['privacy:metadata:userpref:loginlockout'] = 'Indica si el compte de l\'u
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica que el compte d\'un usuari no hauria d\'estar subjecte a cap bloqueig';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Quan estigui bloquejat, el secret que l\'usuari ha d\'utilitzar per a desbloquejar el seu compte';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programes automàtics. Simplement introduïu les paraules al quadre, en ordre i separades per un espai.
+$string['recaptcha_help'] = 'El CAPTCHA s\'usa per prevenir l\'abús de programes automatitzats. Seguiu les instruccions per verificar que sou una persona. Pot ser una casella per marcar, caràcters presentats en una imatge que heu d\'introduir o un conjunt d\'imatges per seleccionar.
 
-Si no sabeu segur quines paraules són, podeu provar un altre CAPTCHA o bé un CAPTCHA sonor.';
+Si no esteu segur de quines són les imatges, podeu provar d\'obtenir un altre CAPTCHA o un CAPTCHA d\'àudio.';
 $string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Pregunta de seguretat';
 $string['selfregistration'] = 'Autoregistre';

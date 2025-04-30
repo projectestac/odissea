@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'zh_cn', version '4.1'.
+ * Strings for component 'block', language 'zh_cn', version '4.4'.
  *
  * @package     block
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addblock'] = '添加 {$a} 版块';
 $string['anypagematchingtheabove'] = '任何符合上面条件的页面';
 $string['appearsinsubcontexts'] = '出现在子上下文';
 $string['assignrolesinblock'] = '在 {$a} 版块中分配角色';
@@ -68,7 +69,7 @@ $string['showblock'] = '显示 {$a} 版块';
 $string['showoncontextandsubs'] = '显示在“{$a}”及其子页面';
 $string['showoncontextonly'] = '只在“{$a}”里显示';
 $string['showonentiresite'] = '在全站都可以使用';
-$string['showonfrontpageandsubs'] = '显示在首页和所有添加到首页的页面中';
+$string['showonfrontpageandsubs'] = '在网站主页和添加到网站主页的任何页面上显示';
 $string['showonfrontpageonly'] = '只在首页显示';
 $string['subpages'] = '选择页面';
 $string['thisspecificpage'] = '指定的页面';

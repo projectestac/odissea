@@ -21,7 +21,7 @@ defined('MOODLE_INTERNAL') || die();
 global $CFG;
 require_once($CFG->dirroot . '/webservice/tests/helpers.php');
 
-use external_api;
+use core_external\external_api;
 use externallib_advanced_testcase;
 
 /**
@@ -39,7 +39,7 @@ final class delete_entry_test extends externallib_advanced_testcase {
     /**
      * Test the behaviour of delete_entry().
      */
-    public function test_delete_entry() {
+    public function test_delete_entry(): void {
         global $DB;
         $this->resetAfterTest();
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'fr', version '4.1'.
+ * Strings for component 'contentbank', language 'fr', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Auteur';
 $string['choosecontext'] = 'Choisir un cours ou une catégorie…';
-$string['close'] = 'Fermer';
 $string['contentbank'] = 'Banque de contenus';
 $string['contentbankpreferences'] = 'Préférences de la banque de contenus';
+$string['contentcopied'] = 'Contenu copié.';
+$string['contentcreated'] = 'Contenu créé.';
 $string['contentdeleted'] = 'Contenu supprimé.';
 $string['contentname'] = 'Nom du contenu';
 $string['contentnotdeleted'] = 'Une erreur est survenue lors de la tentative de suppression du contenu.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Contenu renommé.';
 $string['contentsmoved'] = 'Contenus de la banque de contenus déplacés vers {$a}.';
 $string['contenttypenoaccess'] = 'Vous n’avez pas les permissions requises pour consulter cette instance {$a}.';
 $string['contenttypenoedit'] = 'Vous n’avez pas les permissions requises pour modifier ce contenu';
+$string['contentupdated'] = 'Contenu modifié.';
 $string['contentvisibilitychanged'] = 'Le contenu est {$a}.';
 $string['contentvisibilitynotset'] = 'Une erreur est survenue lors de la tentative de réglage de la visibilité du contenu.';
 $string['contextnotallowed'] = 'Vous n’avez pas les permissions requises pour accéder à la banque de contenus dans ce contexte.';
+$string['copycontent'] = 'Copier le contenu';
+$string['copyof'] = 'Copie de {$a}';
 $string['deletecontent'] = 'Supprimer un contenu';
 $string['deletecontentconfirm'] = 'Voulez-vous vraiment supprimer le contenu <em>« {$a->name} »</em> et tous les fichiers associés ? Cette operation ne peut pas être annulée.';
 $string['deletecontentconfirmlinked'] = 'Le contenu sera uniquement supprimé de la banque de contenus. Toutes les instances qui y sont liées seront automatiquement mises à jour pour utiliser une copie du contenu.';
@@ -64,6 +68,7 @@ $string['more'] = 'Plus';
 $string['name'] = 'Contenu';
 $string['nocontentavailable'] = 'Aucun contenu disponible';
 $string['nocontenttypes'] = 'Aucun type de contenu disponible';
+$string['nopermissiontocopy'] = 'Vous n’avez pas les permissions requises pour copier le contenu.';
 $string['nopermissiontodelete'] = 'Vous n’avez pas les permissions requises pour supprimer du contenu.';
 $string['nopermissiontomanage'] = 'Vous n’avez pas les permissions requises pour gérer du contenu.';
 $string['notavailable'] = 'Désolé, ce contenu n’est pas disponible.';

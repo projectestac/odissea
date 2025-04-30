@@ -153,7 +153,7 @@
     'promise/always-return': 'warn',
     'promise/no-return-wrap': 'warn',
     'promise/param-names': 'warn',
-    'promise/catch-or-return': ['warn', {terminationMethod: ['catch', 'fail']}],
+    'promise/catch-or-return': ['warn', {terminationMethod: ['catch', 'fail', 'always'], allowFinally: true}],
     'promise/no-native': 'warn',
     'promise/avoid-new': 'warn',
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'pt', version '4.1'.
+ * Strings for component 'feedback', language 'pt', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Negrito';
 $string['calendarend'] = 'Fecha \'{$a}\'';
 $string['calendarstart'] = 'Abre \'{$a}\'';
 $string['cannotaccess'] = 'Apenas pode aceder a este Inquérito a partir de uma disciplina';
+$string['cannotcreatepagebreak'] = 'As quebras de página não podem ser adicionadas no início, e apenas uma quebra de página pode ser adicionada no final';
 $string['cannotsavetempl'] = 'Não é permitido guardar modelos';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'O Captcha não foi configurado';
@@ -58,7 +59,7 @@ $string['completed'] = 'Concluído';
 $string['completed_feedbacks'] = 'Respostas submetidas';
 $string['completedon'] = 'Concluído em {$a}';
 $string['completiondetail:submit'] = 'Dar feedback';
-$string['completionsubmit'] = 'Ver como concluído se o inquérito tiver sido submetido';
+$string['completionsubmit'] = 'Submeter o inquérito';
 $string['configallowfullanonymous'] = 'Se selecionar \'Sim\', os utilizadores poderão concluir uma atividade inquérito na página principal sem estar autenticado.';
 $string['confirmdeleteentry'] = 'Tem a certeza de que pretende apagar esta resposta?';
 $string['confirmdeleteitem'] = 'Tem a certeza de que pretende apagar este item?';
@@ -162,7 +163,7 @@ $string['insufficient_responses_for_this_group'] = 'As respostas deste grupo sã
 $string['insufficient_responses_help'] = 'Para que o inquérito seja anónimo, são necessárias pelo menos duas respostas.';
 $string['item_label'] = 'Identificador';
 $string['item_name'] = 'Questão';
-$string['label'] = 'Separador';
+$string['label'] = 'Área de texto e multimédia';
 $string['labelcontents'] = 'Conteúdos';
 $string['mapcourse'] = 'Associar o inquérito a disciplinas';
 $string['mapcourse_help'] = 'Por predefinição, os inquéritos criados na sua página de entrada estão disponíveis em todo o site e aparecerão em todas as disciplinas que utilizem o bloco <b>Inquérito</b>. Pode forçar a apresentação dos inquéritos tornando o bloco inquérito como bloco persistente ou limitar as disciplinas em que inquérito aparece fazendo a sua associação a disciplinas específicas.';
@@ -197,7 +198,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Escolha múltipla (c/escala)';
 $string['multichoicetype'] = 'Tipo de escolha múltipla';
 $string['multiplesubmit'] = 'Permitir múltiplas submissões';
-$string['multiplesubmit_help'] = 'Se ativar esta opção, os utilizadores poderão responder a inquéritos anónimos um número ilimitado de vezes.';
+$string['multiplesubmit_help'] = 'Se definido como Sim:
+
+* Para inquéritos anónimos: os participantes podem enviar respostas ilimitadas e todas as respostas serão registadas.
+* Para inquéritos não anónimos: os participantes podem enviar respostas ilimitadas, mas apenas a resposta mais recente será registada.';
 $string['name'] = 'Designação';
 $string['name_required'] = 'O preenchimento do nome é obrigatório';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

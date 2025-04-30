@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ar', version '4.1'.
+ * Strings for component 'auth', language 'ar', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -38,7 +38,7 @@ $string['auth_changepasswordhelp_expl'] = 'اعرض مساعدة كلمة الم
 $string['auth_changepasswordurl'] = 'رابط تغير كلمة المرور';
 $string['auth_changepasswordurl_expl'] = 'حدّدْ عنوان لإرْسال المستخدمين الذين فَقدَوا {$a} كلمة المرور.
 ضع <strong>ضع استخدام صفحة قياسية لتغيير كلمة المرور</strong> إلى<strong>لا</strong>.';
-$string['auth_changingemailaddress'] = 'لقد طلبت تغيير بريدك الإلكتروني من {$a->oldemail} إلى {$a->newemail}. لأسباب أمنية أرسلنا  لك رسالة إلى بريدك الإلكتروني الجديد، للتأكد من أنه ملكك. سيتم تحديث بريدك الإلكتروني حالما تفتح الرابط المرسل لك في تلك الرسالة.';
+$string['auth_changingemailaddress'] = 'لقد طلبت تغيير بريدك الإلكتروني من {$a->oldemail} إلى {$a->newemail}. لأسباب أمنية أرسلنا لك رسالة إلى بريدك الإلكتروني الجديد، للتأكد من أنه ملكك. سيتم تحديث بريدك الإلكتروني حالما تفتح الرابط المرسل إليك في تلك الرسالة. صلاحية رابط التأكيد ستنتهي في غضون 10 دقائق.';
 $string['auth_common_settings'] = 'الإعدادات العامة';
 $string['auth_data_mapping'] = 'تخطيط البيانات';
 $string['auth_fieldlock'] = 'تأمين القيمة';
@@ -48,8 +48,12 @@ $string['auth_fieldlocks'] = 'أغلق حقول المستخدم';
 $string['auth_fieldlocks_help'] = '<p>تستطيع تأمين حقول بيانات المستخدم. هذا مفيد للمواقعِ التي يقوم مشرفوها بتحرير بيانات المستخدمين يدوياً أو باستعمال خدمة \'رفع المستخدمين\'. إذا قمت بتأمين حقول مطلوبة من قبل مودل، تأكد من تزويدك لتلك البيانات عندما تنشئ حسابات المستخدمين؛ وإلا ستكون الحسابات غير صالحة للاستعمال.</p> p>خذ في اعتبارك وضع إعداد حالة التأمين على \'عدم التأمين إذا كان الحقل فارغاً\' لتفادي هذه المشكلة.</p>';
 $string['auth_fieldmapping'] = 'تعيين البيانات ({$a})';
 $string['auth_invalidnewemailkey'] = 'خطأ: إذا كنت تحاول تأكيد تغيير بريد إلكتروني، فلربما أخطأت في نسخ الرابط الذي أرسلناه لك إلى بريدك. رجاءً إنسخ العنوان وحاول مرة أخرى.';
+$string['auth_loginpasswordtoggle'] = 'مبدل إظهار كلمة المرور';
+$string['auth_loginpasswordtoggle_desc'] = 'إضافة أيقونة إلى حقل كلمة المرور في صفحة تسجيل الدخول يسمح للمستخدمين بإظهار أو إخفاء كلمة مرورهم التي أدخلوها.';
+$string['auth_loginrecaptcha'] = 'تمكين reCAPTCHA لغرض تسجيل الدخول';
+$string['auth_loginrecaptcha_desc'] = 'إضافة عنصر تأكيد مرئي/مسموع لنموذج صفحة تسجيل الدخول. هذا من شأنه تقليل مخاطر محاولات الدخول غير المرغوب بها. أنظر <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> لمزيد من التفاصيل.';
 $string['auth_multiplehosts'] = 'يمكن تحديد أكثر من مستضيف أو عنوان (host1.com, host2.net, host3.org)  أو  (eg xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
-$string['auth_notconfigured'] = 'طريقة التوثيق {$a} لم يتم ضبطها.';
+$string['auth_notconfigured'] = 'طريقة المصادقة {$a} لم تتم تهيئتها.';
 $string['auth_outofnewemailupdateattempts'] = 'لقد وصلت للحد الأقصى المسموح به من المحاولات لتحديث عنوان بريدك الإلكتروني. طلبك للتحديث تم إلغاؤه .';
 $string['auth_passwordisexpired'] = 'انتهت صلاحية كلمة المرور. فضلاً غيرها الآن.';
 $string['auth_passwordwillexpire'] = 'ستنتهي صلاحية كلمة مرورك خلال {$a} من الأيام. هل ترغب في تغيير كلمة المرور الآن؟';
@@ -68,7 +72,7 @@ $string['auth_updateremote'] = 'حدّث خارجياً';
 $string['auth_updateremote_expl'] = '<p><b>تحديث الخارجي:</b> عند التمكين، سيتم تحديث المصادقة الخارجية عند تحديث سجل المستخدم. يجب إلغاء تأمين الحقول للسماح بتحريرها .</p>';
 $string['auth_updateremote_ldap'] = '<p> <b> ملاحظة : </b> تحديث بيانات (LDAP) الخارجية تَتطلّبُ منك وَضع (binddn) و(bindpw) لربط المستخدم بصلاحيات التَحرير لكلّ سجلات المستخدم . حالياً لا تحتفظ بخواصَ متعددةَ القيم ، وسَتُزيلُ القيم الإضافيةَ عند التحديث . </p>';
 $string['auth_updateremotefield'] = 'حدِّث الخارجي ({$a})';
-$string['auth_user_create'] = 'مكّن إنشاء مستخدم';
+$string['auth_user_create'] = 'تمكين إنشاء المستخدمين';
 $string['auth_user_creation'] = 'يستطيع المستخدمون الجدد أو (المجهولون) إنشاء حسابات في مصدر المصادقة الخارجي وتأكيد التسجيل عبر البريد الالكتروني. إذا مكنت هذه الخاصية، فتذكّر تهيئة خيارات الوحدة المخصصة لإنشاء المستخدم أيضاً.';
 $string['auth_usernameexists'] = 'اسم المستخدم المختار موجود، الرجاء اختيار آخر جديد.';
 $string['auth_usernotexist'] = 'لا يمكن تحديث مستخدم غير موجود: {$a}';

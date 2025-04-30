@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'eu', version '4.1'.
+ * Strings for component 'block_tag_flickr', language 'eu', version '4.4'.
  *
  * @package     block_tag_flickr
  * @category    string

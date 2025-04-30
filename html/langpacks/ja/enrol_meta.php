@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ja', version '4.1'.
+ * Strings for component 'enrol_meta', language 'ja', version '4.4'.
  *
  * @package     enrol_meta
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'グループに追加する';
-$string['coursesort'] = 'コース一覧を並べ替える';
-$string['coursesort_help'] = 'ここではリンクできるコース一覧を並べ替え順 (例 「サイト管理 > コース > コースおよびカテゴリを管理する」で設定された順序) またはコース設定のアルファベット順で並べ替えるかどうか決定します。';
+$string['coursesort'] = 'ソースコース一覧の並べ替え順';
+$string['coursesort_help'] = 'ソースコースをターゲットコースにリンクする場合、ソースコースはどのように並べ替えられますか?';
 $string['creategroup'] = '新しいグループを作成する';
 $string['defaultgroupnametext'] = '{$a->name} コース {$a->increment}';
 $string['enrolmetasynctask'] = 'メタ登録同期タスク';
@@ -36,13 +36,15 @@ $string['meta:config'] = 'メタ登録インスタンスを設定する';
 $string['meta:selectaslinked'] = 'メタリンクされるコースを選択する';
 $string['meta:unenrol'] = '一時停止ユーザを登録解除する';
 $string['nosyncroleids'] = '同期しないロール';
-$string['nosyncroleids_desc'] = 'デフォルトではすべてのコースレベルのロールは親コースから子コースに同期されます。ここで選択されたロールは同期処理に含まれることはありません。同期に使用できるロールは次のcron実行時に更新されます。';
+$string['nosyncroleids_desc'] = 'ソースコースとターゲットコース間で同期されるべきではないロールを選択してください。';
 $string['pluginname'] = 'コースメタリンク';
-$string['pluginname_desc'] = 'コースメタリンク登録プラグインでは2つの異なるコース間で登録およびロールを同期します。';
-$string['privacy:metadata:core_group'] = 'コースメタリンクプラグインは新しいグループを作成または既存のグループを使用してコースにリンクされた参加者すべてを追加することができます。';
+$string['pluginname_desc'] = 'コースメタリンクはソースコースからターゲットコースへの登録およびロールを同期します。';
+$string['privacy:metadata:core_group'] = 'コースメタリンク登録プラグインではソースコースから参加者を追加するために新しいグループを作成または既存のグループを使用できます。';
+$string['samemetacourse'] = 'あなたは同一コースにはメタリンクを追加できません。';
 $string['syncall'] = 'すべての登録済みユーザを同期する';
-$string['syncall_desc'] = 'この設定を有効にした場合、親コースにロールがない場合でも登録済みユーザすべてが同期されます。この設定を無効にした場合、少なくとも1つの同期ロールが割り当てられているユーザのみが子コースに登録されます。';
+$string['syncall_desc'] = 'この設定を有効にした場合、ソースコースにロールがない場合でも登録済みユーザすべてが同期されます。この設定を無効にした場合、少なくとも1つの同期ロールが割り当てられているユーザのみがターゲットコースに登録されます。';
+$string['unknownmetacourse'] = '不明なメタコース省略名';
 $string['wscannotcreategroup'] = 'コースID「 {$a} 」でリンクされるグループを作成するためのパーミッションがありません。';
-$string['wsinvalidcourse'] = 'コースID「 {$a} 」が存在しないか、メタ登録にリンクするためのパーミッションがありません。';
-$string['wsinvalidmetacourse'] = 'メタコースID「 {$a} 」が存在しないか、登録インスタンスを追加するためのパーミッションがありません。';
+$string['wsinvalidcourse'] = 'コースID「 {$a} 」が存在しないか、あなたにコースメタリンクを追加するためのパーミッションがありません。';
+$string['wsinvalidmetacourse'] = 'メタコースID「 {$a} 」が存在しないか、あなたに登録インスタンスを追加するためのパーミッションがありません。';
 $string['wsnoinstancesspecified'] = '指定されたインスタンスはありません。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'sv', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'sv', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'Koppla till ett systemkonto';
 $string['createfromtemplate'] = 'Skapa OAuth 2-tjänst från mall';
 $string['createfromtemplatedesc'] = 'Välj en av OAuth 2-tjänstmallarna nedan om du vill skapa en OAuth-tjänst med en giltig konfiguration för en av de kända tjänstetyperna. Detta kommer att skapa OAuth 2-tjänsten med alla de korrekta slutpunkter och parametrar som krävs för autentisering, men du måste fortfarande ange klient-ID och hemlighet för den nya tjänsten innan den kan användas.';
 $string['createnewendpoint'] = 'Skapa ny slutpunkt  för utfärdare ”{$a}”';
-$string['createnewfacebookissuer'] = 'Ny Facebook-tjänst';
-$string['createnewgoogleissuer'] = 'Ny Google-tjänst';
-$string['createnewissuer'] = 'Ny anpassad tjänst';
-$string['createnewmicrosoftissuer'] = 'Ny Microsoft-tjänst';
-$string['createnewnextcloudissuer'] = 'Ny Nextcloud-tjänst';
 $string['createnewservice'] = 'Skapa ny tjänst:';
 $string['createnewuserfieldmapping'] = 'Ny användarfältsmappning för utfärdare ”{$a}”';
 $string['custom_service'] = 'Anpassad';

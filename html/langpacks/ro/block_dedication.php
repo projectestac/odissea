@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'ro', version '4.1'.
+ * Strings for component 'block_dedication', language 'ro', version '4.4'.
  *
  * @package     block_dedication
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['admin_filter_courseid'] = 'Denumire curs';
 $string['admin_filter_courseid_help'] = 'Filtrare raport după denumire curs';
 $string['admin_filter_form'] = 'Configurare bloc Timp petrecut în curs';
 $string['admin_filter_form_help'] = 'Timpul este estimat pe baza conceptelor Sesiune și Durata sesiunii aplicate jurnalizării accesărilor cursului.
@@ -84,5 +85,6 @@ $string['timespentincourse'] = 'Timp petrecut în curs';
 $string['timespentreport'] = 'Raport complet';
 $string['timespenttasknotrunning'] = 'Procesul de calcul al Timpului petrecut în timp nu a rulat încă.';
 $string['totaltimespent'] = '<strong>Timpul total petrecut în curs:</strong> {$a}';
+$string['user_dedication_datasource'] = 'Timpul petrecut de utilizator în curs';
 $string['userdedication'] = 'Detalii despre timpul petrecut în curs de <em>{$a}</em>.';
 $string['viewsessiondurationreport'] = 'Vizualizare raport al duratei sesiunii';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'de', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'de', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'CA-Dateipfad';
+$string['ca_file_help'] = 'Certificate Authority im lokalen Dateisystem';
+$string['clustermode'] = 'Cluster-Modus';
+$string['clustermode_help'] = 'Durch die Aktivierung des Cluster-Modus wird die Redis-Cluster-Funktion ausgeführt, sodass Ihr Server mehrere Server bedienen und gleichzeitige Anfragen gleichzeitig verarbeiten kann.';
+$string['clustermodeunavailable'] = 'Der Redis-Cluster ist derzeit nicht verfügbar. Stellen Sie bitte sicher, dass die PHP-Redis-Erweiterung die Redis-Cluster-Funktionalität unterstützt.';
 $string['compressor_none'] = 'Keine Komprimierung';
 $string['compressor_php_gzip'] = 'GZIP-Komprimierung';
 $string['compressor_php_zstd'] = 'Z-Kompimierung';
+$string['connectiontimeout'] = 'Verbindungs-Timeout';
+$string['connectiontimeout_help'] = 'Dadurch wird das Timeout beim Verbindungsversuch mit dem Redis-Server festgelegt.';
+$string['encrypt_connection'] = 'TLS-Verschlüsselung verwenden';
+$string['encrypt_connection_help'] = 'Verwenden Sie TLS, um eine Verbindung zu Redis herzustellen. Verwenden Sie nicht "tls://" im Hostnamen für Redis, sondern verwenden Sie stattdessen diese Option.';
 $string['password'] = 'Kennwort';
 $string['password_help'] = 'Tragen Sie das Passwort des Redis-Servers ein';
 $string['pluginname'] = 'Redis';
@@ -41,14 +50,48 @@ $string['privacy:metadata:redis:data'] = 'Verschiedene im Cache gespeicherte Dat
 $string['serializer_igbinary'] = 'igbinary Serializer';
 $string['serializer_php'] = 'Standard PHP Serializer';
 $string['server'] = 'Server';
-$string['server_help'] = 'Legt den Hostnamen oder IP-Adresse des zu nutzenden Redis-Server fest.';
+$string['server_help'] = 'Redis-Server zum Testen.
+
+Beispiele:
+
+* testredis.abc.com – Zum Herstellen einer Verbindung zu einem Redis-Server über den Hostnamen (standardmäßig Port 6379).
+* testredis.abc.com:1234 – Zum Herstellen einer Verbindung zu einem Redis-Server über den Hostnamen mit einem bestimmten Port.
+* 1.2.3.4 – Zum Herstellen einer Verbindung zu einem Redis-Server über die IP-Adresse (standardmäßig Port 6379).
+* 1.2.3.4:1234 – Zum Herstellen einer Verbindung zu einem Redis-Server über die IP-Adresse mit einem bestimmten Port.
+* unix:///var/redis.sock – Zum Herstellen einer Verbindung zu einem Redis-Server über einen Unix-Socket.
+* /var/redis.sock – Zum Herstellen einer Verbindung zu einem Redis-Server über einen Unix-Socket (alternatives Format).
+
+Wenn der Clustermodus aktiviert ist, geben Sie die Server durch eine neue Zeile getrennt an, zum Beispiel:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+Weitere Infos finden Sie unter <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Akzeptieren von Clientverbindungen</a> und <a href="https://redis .io/resources/clients/#php">Redis PHP-Clients</a>.';
 $string['task_ttl'] = 'Speicher freigeben, der von abgelaufenen Redis Caches verwendet wird';
+$string['test_clustermode'] = 'Cluster-Modus';
+$string['test_clustermode_desc'] = 'Aktivieren Sie den Test im Redis-Clustermodus.';
 $string['test_password'] = 'Testserver-Passwort';
 $string['test_password_desc'] = 'Redis Testserver-Passwort';
 $string['test_serializer'] = 'Serializer';
 $string['test_serializer_desc'] = 'Serializer zur Verwendung beim Testen';
 $string['test_server'] = 'Testserver';
-$string['test_server_desc'] = 'Redis-Server, der für Tests genutzt wird.';
+$string['test_server_desc'] = 'Redis-Server zum Testen.
+
+Beispiele:
+
+* testredis.abc.com – Zum Herstellen einer Verbindung zu einem Redis-Server über den Hostnamen (standardmäßig Port 6379).
+* testredis.abc.com:1234 – Zum Herstellen einer Verbindung zu einem Redis-Server über den Hostnamen mit einem bestimmten Port.
+* 1.2.3.4 – Zum Herstellen einer Verbindung zu einem Redis-Server über die IP-Adresse (standardmäßig Port 6379).
+* 1.2.3.4:1234 – Zum Herstellen einer Verbindung zu einem Redis-Server über die IP-Adresse mit einem bestimmten Port.
+* unix:///var/redis.sock – Zum Herstellen einer Verbindung zu einem Redis-Server über einen Unix-Socket.
+* /var/redis.sock – Zum Herstellen einer Verbindung zu einem Redis-Server über einen Unix-Socket (alternatives Format).
+
+Wenn der Clustermodus aktiviert ist, geben Sie die Server durch eine neue Zeile getrennt an, zum Beispiel:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+Weitere Infos finden Sie unter <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Akzeptieren von Clientverbindungen</a> und <a href="https://redis .io/resources/clients/#php">Redis PHP-Clients</a>.';
 $string['test_ttl'] = 'TTL testen';
 $string['test_ttl_desc'] = 'Leistungstest ausführen, der einem Cache mit TTL (langsamere Einstellungen) erfordert.';
 $string['usecompressor'] = 'Komprimierung verwenden';

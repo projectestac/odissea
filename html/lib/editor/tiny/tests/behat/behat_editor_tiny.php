@@ -161,7 +161,7 @@ class behat_editor_tiny extends behat_base implements \core_behat\settable_edito
 
         // Ensure that a name is set on the iframe relating to the editorid.
         $js = <<<EOF
-            const element = instance.dom.select("${textlocator}")[${position}];
+            const element = instance.dom.select("{$textlocator}")[{$position}];
             instance.selection.select(element);
         EOF;
 
@@ -241,7 +241,7 @@ class behat_editor_tiny extends behat_base implements \core_behat\settable_edito
         $js = <<<EOF
             const editorDocument = instance.getDoc();
             const element = editorDocument.evaluate(
-                "${xpath}",
+                "{$xpath}",
                 editorDocument,
                 null,
                 XPathResult.FIRST_ORDERED_NODE_TYPE,
@@ -265,7 +265,7 @@ class behat_editor_tiny extends behat_base implements \core_behat\settable_edito
 
         $editor = $this->get_editor_container_for_locator($editorlocator);
         try {
-            $button = $this->find('button', get_string('tiny:more...', 'editor_tiny'), false, $editor);
+            $button = $this->find('button', get_string('tiny:reveal_or_hide_additional_toolbar_items', 'editor_tiny'), false, $editor);
         } catch (ExpectationException $e) {
             // No more button, so no need to expand.
             return;

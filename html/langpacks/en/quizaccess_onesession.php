@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_onesession', language 'en', version '4.1'.
+ * Strings for component 'quizaccess_onesession', language 'en', version '4.4'.
  *
  * @package     quizaccess_onesession
  * @category    string
@@ -35,6 +35,6 @@ $string['pluginname'] = 'Block concurrent sessions quiz access rule';
 $string['privacy:metadata'] = 'The plugin stores the hash of the string used to identify the client device session. Although the original string contains the client\'s IP address and the User-Agent header sent by the client\'s browser, the hash does not allow to extract this information. The hash is automatically deleted immediately after the end of the quiz session.';
 $string['studentinfo'] = 'Attention! It is prohibited to change device while attempting this quiz. Please note that after beginning of quiz attempt any connections to this quiz using other computers, devices and browsers will be blocked. Do not close the browser window until the end of attempt, otherwise you will not be able to complete this quiz.';
 $string['unlockthisattempt'] = 'Allow the student to continue this attempt using a different device';
-$string['unlockthisattempt_header'] = 'Block concurrent connections';
+$string['unlockthisattempt_header'] = 'Unlock attempt';
 $string['whitelist'] = 'Networks without IP check';
 $string['whitelist_desc'] = 'This option is intended to lower false positives when users takes quizzes over mobile networks, where IP can be changed during quiz. It is not needed in most of situations. You can provide a comma separated list of subnets (e.g. 88.0.0.0/8, 77.77.0.0/16). If an IP address is in such a network, it\'s not checked. To totally disable the IP check, you can set the value to 0.0.0.0/0.';

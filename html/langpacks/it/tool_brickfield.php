@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'it', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'it', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -157,6 +157,7 @@ $string['headingtwo'] = 'Soluzione';
 $string['hideshow'] = 'Nascondi/visualizza';
 $string['icon:analytics-custom'] = 'Icona dell\'analitica';
 $string['icon:file-edit-custom'] = 'Icona della modifica file';
+$string['icon:hands-helping-custom'] = 'Icona delle mani di aiuto';
 $string['icon:search-plus-custom'] = 'Icona della ricerca';
 $string['icon:tools-custom'] = 'Icona degli strumenti';
 $string['icon:wand-magic-custom'] = 'Icona della bacchetta magica';

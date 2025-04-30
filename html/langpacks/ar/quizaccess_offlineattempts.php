@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'ar', version '4.1'.
+ * Strings for component 'quizaccess_offlineattempts', language 'ar', version '4.4'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string

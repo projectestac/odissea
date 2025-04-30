@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'it', version '4.1'.
+ * Strings for component 'qtype_match', language 'it', version '4.4'.
  *
  * @package     qtype_match
  * @category    string
@@ -46,6 +46,7 @@ $string['pluginnameediting'] = 'Modifica domanda Corrispondenza';
 $string['pluginnamesummary'] = 'La risposta a ciascuna sotto domanda deve essere selezionata da un elenco di risposte possibili.';
 $string['privacy:metadata'] = 'Il plugin tipo di domande Corrispondenza non memorizza dati personali.';
 $string['privacy:preference:defaultmark'] = 'Voto di default impostato per una determinata domanda.';
+$string['privacy:preference:penalty'] = 'Penalità per ogni tentativo errato quando le domande vengono eseguite utilizzando il comportamento \'Interattivo con tentativi multipli\' o \'Modalità adattiva\'.';
 $string['privacy:preference:shuffleanswers'] = 'Se le risposte devono essere mescolate automaticamente.';
 $string['regradeissuenumchoiceschanged'] = 'Il numero di scelte è stato modificato.';
 $string['regradeissuenumstemschanged'] = 'Il numero di sotto domande è stato modificato.';

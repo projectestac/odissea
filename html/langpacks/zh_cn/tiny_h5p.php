@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'zh_cn', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'zh_cn', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -41,4 +41,5 @@ $string['instructions'] = '您可以通过输入URL<strong>或</strong>上传H5P
 $string['invalidh5purl'] = '无效的URL';
 $string['modaltitle'] = '插入 H5P 内容';
 $string['noh5pcontent'] = '未添加H5P内容';
+$string['pluginname'] = '插入 H5P';
 $string['privacy:metadata'] = 'TinyMCE 的 H5P 插件不存储任何个人数据。';

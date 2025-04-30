@@ -25,7 +25,6 @@
 namespace format_tiles\output\courseformat\content;
 
 use core_courseformat\output\local\content\cm as core_cm;
-use format_tiles\local\util;
 
 /**
  * Class to render a course module inside a Tiles course format.
@@ -45,6 +44,7 @@ class cm extends core_cm {
      * @return bool if the cm has format data
      */
     protected function add_format_data(\stdClass &$data, array $haspartials, \renderer_base $output): bool {
+
         $parentadded = parent::add_format_data($data, $haspartials, $output);
         $data->cmtitle = $this->mod->get_formatted_name();
 
@@ -55,10 +55,10 @@ class cm extends core_cm {
         $moodlerelease = \format_tiles\local\util::get_moodle_release();
         $data->ismoodle42minus = $moodlerelease <= 4.2;
         $data->ismoodle41minus = $moodlerelease <= 4.1;
+        $data->ismoodle44 = $moodlerelease === 4.4;
         $data->ismoodle40 = $moodlerelease === 4.0;
-        $data->ismoodle402minus = $moodlerelease === 4.0 && util::is_moodle_402_minus();
         $data->modcontextid = $this->mod->context->id;
-
+        $data->cmtitle = $this->mod->get_formatted_name();
         $childadded = true; // We did add some data above.
         return $parentadded || $childadded;
     }

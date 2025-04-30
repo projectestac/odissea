@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'de', version '4.1'.
+ * Strings for component 'workshopallocation_random', language 'de', version '4.4'.
  *
  * @package     workshopallocation_random
  * @category    string

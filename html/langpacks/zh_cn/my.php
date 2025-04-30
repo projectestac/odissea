@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'zh_cn', version '4.1'.
+ * Strings for component 'my', language 'zh_cn', version '4.4'.
  *
  * @package     my
  * @category    string
@@ -39,7 +39,7 @@ $string['nocourses'] = '没有课程信息显示。';
 $string['noguest'] = '“个人主页”页面对访客无效';
 $string['pinblocks'] = '为我的 Moodle 配置固定的版块';
 $string['pinblocksexplan'] = '您在这里设置的任何版块配置将显示（但不可编辑）在所有用户的“我的Moodle”页上';
-$string['privacy:metadata:core_my:preference:user_home_page_preference'] = '用户主页首选项中的"仪表板" 页配置。';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = '用户主页首选项';
 $string['reseterror'] = '发生错误正在重置你的页面';
 $string['reseteveryonesdashboard'] = '重置所有用户个人主页';
 $string['reseteveryonesprofile'] = '重置所有用户个人资料页';

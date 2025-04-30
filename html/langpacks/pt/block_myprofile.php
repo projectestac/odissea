@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'pt', version '4.1'.
+ * Strings for component 'block_myprofile', language 'pt', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Mostrar definições para o país selecionado';
 $string['display_address'] = 'Mostrar morada';
-$string['display_aim'] = 'Mostrar AIM';
 $string['display_city'] = 'Mostrar cidade';
 $string['display_country'] = 'Mostrar país';
 $string['display_currentlogin'] = 'Mostrar autenticação atual';
 $string['display_email'] = 'Mostrar e-mail';
 $string['display_firstaccess'] = 'Mostrar primeiro acesso';
-$string['display_icq'] = 'Mostrar ICQ';
 $string['display_idnumber'] = 'Mostrar número de identificação (ID)';
 $string['display_institution'] = 'Mostrar instituição';
 $string['display_lastaccess'] = 'Mostrar último acesso';
 $string['display_lastip'] = 'Mostrar último IP';
 $string['display_lastlogin'] = 'Mostrar última autenticação';
-$string['display_msn'] = 'Mostrar MSN';
 $string['display_phone1'] = 'Mostrar Telefone';
 $string['display_phone2'] = 'Mostrar Telemóvel';
 $string['display_picture'] = 'Mostrar foto';
-$string['display_skype'] = 'Mostrar endereço do Skype';
-$string['display_yahoo'] = 'Mostrar Yahoo';
 $string['myprofile:addinstance'] = 'Adicionar um novo bloco Utilizadores autenticados';
 $string['myprofile:myaddinstance'] = 'Adicionar um novo bloco Utilizadores autenticados ao Painel do utilizador';
 $string['myprofile_settings'] = 'Informações do utilizador visíveis';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'sv', version '4.1'.
+ * Strings for component 'lti', language 'sv', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -86,10 +86,8 @@ $string['configtoolurl'] = 'Standard-URL för externt verktyg';
 $string['configtypes'] = 'Aktivera LTI-applikationer';
 $string['configured'] = 'Konfigurerad';
 $string['confirmtoolactivation'] = 'Är du säker på att du vill aktivera detta verktyg?';
-$string['contentitem'] = 'Innehållsobjekt-meddelande';
 $string['contentitem_deeplinking'] = 'Stödjer djuplänkning (Innehållsobjekt-meddelande)';
 $string['contentitem_deeplinking_help'] = 'Om markerad kommer alternativet \'Välj innehåll\' vara tillgängligt då man lägger till ett externt verktyg.';
-$string['contentitem_help'] = 'Om markerad kommer alternativet \'Välj innehåll\' vara tillgängligt då man lägger till ett externt verktyg.';
 $string['contentitem_multiple_description'] = 'Följande objekt kommer att läggas till i kursen:';
 $string['contentitem_multiple_graded'] = 'Betygsatt aktivitet (Maxbetyg: {$a})';
 $string['course_tool_types'] = 'Kursverktyg';
@@ -239,7 +237,6 @@ $string['launchinpopup_help'] = 'Uppstartsbehållaren påverkar visningen av ver
         Beroende på webbläsaren öppnas det i en ny flik eller i ett popup-fönster.
         Det är möjligt att vissa webbläsare kommer att förhindra att det nya fönstret öppnas.';
 $string['launchoptions'] = 'Startalternativ';
-$string['leaveblank'] = 'Lämna tomt om du inte behöver dem';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Lägg till kursspecifika verktygskonfigurationer';
 $string['lti:addinstance'] = 'Nytt externt verktyg';

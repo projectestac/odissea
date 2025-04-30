@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'en', version '4.1'.
+ * Strings for component 'error', language 'en', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -116,7 +116,7 @@ $string['cannotinsertrecord'] = 'Could not insert new record ID {$a}';
 $string['cannotmailconfirm'] = 'Error sending password change confirmation email';
 $string['cannotmanualctrack'] = 'Activity does not provide manual completion tracking';
 $string['cannotmapfield'] = 'Mapping collision detected - two fields maps to the same grade item {$a}';
-$string['cannotmarktopic'] = 'Could not mark that topic for this course';
+$string['cannotmarktopic'] = 'Could not mark that section for this course';
 $string['cannotmigratedatacomments'] = 'Cannot migrate data module comments';
 $string['cannotmodulename'] = 'Cannot get the module name in build navigation';
 $string['cannotmoduletype'] = 'Cannot get the module type in build navigation';
@@ -234,7 +234,11 @@ $string['dmlparseexception'] = 'Error parsing SQL query';
 $string['dmlreadexception'] = 'Error reading from database';
 $string['dmltransactionexception'] = 'Database transaction error';
 $string['dmlwriteexception'] = 'Error writing to database';
-$string['downgradedcore'] = 'ERROR!!!  The code you are using is OLDER than the version that made these databases!';
+$string['dndmaxbytes'] = 'The file is too large. The maximum size allowed is {$a->size}.';
+$string['dndread'] = 'Error reading the file';
+$string['dndunkownfile'] = 'This file type is not supported';
+$string['dndupload'] = 'An unknown error ocurred while uploading the file';
+$string['downgradedcore'] = 'Error: The code you are using is older than the version recorded in the database.';
 $string['downloadedfilecheckfailed'] = 'Downloaded file check failed';
 $string['duplicatefieldname'] = 'Duplicate field name "{$a}" detected';
 $string['duplicatenosupport'] = '\'{$a->modname}\' activity could not be duplicated because the {$a->modtype} module does not support backup and restore.';
@@ -242,6 +246,7 @@ $string['duplicateparaminsql'] = 'ERROR: duplicate parameter name in query';
 $string['duplicaterolename'] = 'There is already a role with this name!';
 $string['duplicateroleshortname'] = 'There is already a role with this short name!';
 $string['duplicateusername'] = 'Duplicate username - skipping record';
+$string['editedpagenotfound'] = 'The system couldn\'t determine the page you are on. Please refresh the page and try again.';
 $string['emailfail'] = 'Emailing failed';
 $string['encryption_decryptfailed'] = 'Decryption failed';
 $string['encryption_encryptfailed'] = 'Encryption failed';
@@ -378,7 +383,7 @@ $string['invalidrole'] = 'Invalid role';
 $string['invalidroleid'] = 'Invalid role ID';
 $string['invalidscaleid'] = 'Incorrect scale ID';
 $string['invalidsection'] = 'Course module record contains invalid section';
-$string['invalidsesskey'] = 'Your session has most likely timed out. Please log in again.';
+$string['invalidsesskey'] = 'Your session has most likely timed out. Please check if you are logged in or go back to the previous screen and reload the page.';
 $string['invalidshortname'] = 'Invalid short course name';
 $string['invalidsourcefield'] = 'Draft file\'s source field is invalid';
 $string['invalidstatedetected'] = 'Something has gone wrong: {$a}. This should never normally happen.';
@@ -427,6 +432,10 @@ $string['moduledisable'] = 'This module ({$a}) has been disabled for this partic
 $string['moduledoesnotexist'] = 'This module does not exist';
 $string['moduleinstancedoesnotexist'] = 'The instance of this module does not exist';
 $string['modulemissingcode'] = 'Module {$a} is missing the code needed to perform this function';
+$string['moodlenet:invalidshareformat'] = 'Incorrect MoodleNet share format';
+$string['moodlenet:invalidsharestatus'] = 'Incorrect MoodleNet share status';
+$string['moodlenet:invalidsharetype'] = 'Invalid MoodleNet share type';
+$string['moodlenet:usernotconfigured'] = 'You do not have permission to share content to MoodleNet, or your account is incorrectly configured.';
 $string['movecatcontentstoroot'] = 'Moving the category content to root is not allowed. You must move the contents to an existing category!';
 $string['movecatcontentstoselected'] = 'Some category content cannot be moved into the selected category.';
 $string['movecategorynotpossible'] = 'You cannot move category \'{$a}\' into the selected category.';
@@ -498,8 +507,10 @@ $string['opensslsignerror'] = 'OpenSSL unable to sign data';
 $string['orderidnotfound'] = 'Order ID {$a} not found';
 $string['pagenotexist'] = '<p>An unusual error occurred trying to view a page that does not exist:</p>{$a}';
 $string['pagenotexisttitle'] = '404 Error: File not found';
+$string['passwordexceeded'] = 'The password can\'t be more than {$a} characters.';
 $string['pathdoesnotstartslash'] = 'No valid arguments supplied, path does not start with slash!';
 $string['pleasereport'] = 'If you have time, please let us know what you were trying to do when the error occurred:';
+$string['pluginnotexist'] = '{$a} plugin doesn\'t exist';
 $string['pluginrequirementsnotmet'] = 'Plugin "{$a->pluginname}" ({$a->pluginversion}) could not be installed.  It requires a newer version of Moodle (currently you are using {$a->currentmoodle}, you need {$a->requiremoodle}).';
 $string['pluginunsupported'] = 'Plugin "{$a->pluginname}" {$a->pluginversion} does not support this version of Moodle {$a->moodleversion}. Seek plugin information to find supported versions.';
 $string['prefixcannotbeempty'] = '<p>Error: database table prefix cannot be empty ({$a})</p>
@@ -511,6 +522,7 @@ $string['processingstops'] = 'Processing stops here. Remaining records ignored.'
 $string['protected_cc_not_supported'] = 'Protected cartridges not supported.';
 $string['querystringcannotbeempty'] = 'The query string cannot be empty.';
 $string['redirecterrordetected'] = 'Unsupported redirect detected, script execution terminated';
+$string['redissessionhandlerproblem'] = 'Setting up of redis session failed. Please notify the server administrator.';
 $string['refoundto'] = 'Can be refunded to {$a}';
 $string['refoundtoorigi'] = 'Refunded to original amount: {$a}';
 $string['registrationdisabled'] = 'Registration is disabled on this site';
@@ -585,7 +597,7 @@ $string['unknowncoursesection'] = 'Unknown course section in course "{$a}"';
 $string['unknownevent'] = 'Unknown event';
 $string['unknownfiletype'] = 'Error unknown filtertype';
 $string['unknowngroup'] = 'Unknown group "{$a}"';
-$string['unknownhelp'] = 'Unknown help topic {$a}';
+$string['unknownhelp'] = 'Unknown help section {$a}';
 $string['unknownjsinrequirejs'] = 'Cannot find JavaScript library {$a}.';
 $string['unknownmodulename'] = 'Unknown module name for form';
 $string['unknownrole'] = 'Unknown role "{$a}"';
@@ -613,6 +625,7 @@ $string['usermustbemnet'] = 'Users in the MNET access control list must be remot
 $string['usernamelowercase'] = 'The username must be in lower case';
 $string['usernotaddederror'] = 'User not added - error';
 $string['usernotaddedregistered'] = 'User not added - already registered';
+$string['usernotaddedusernameexists'] = 'User not added - username already exists under a different email';
 $string['usernotavailable'] = 'The details of this user are not available to you';
 $string['usernotdeletedadmin'] = 'User not deleted as administrator accounts cannot be deleted.';
 $string['usernotdeleteddeleted'] = 'This user has already been deleted.';

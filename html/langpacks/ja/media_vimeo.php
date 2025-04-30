@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_vimeo', language 'ja', version '4.1'.
+ * Strings for component 'media_vimeo', language 'ja', version '4.4'.
  *
  * @package     media_vimeo
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['donottrack'] = 'Vimeoトラッキング禁止リンクを有効にする';
+$string['donottrack_desc'] = 'この設定を有効にした場合、プレイヤはすべてのクッキーおよびアナリティクスを含むセッションデータを追跡しません。';
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'ビデオ共有ウェブサイトvimeo.comです。';
 $string['privacy:metadata'] = 'Vimeoメディアプラグインはいかなる個人データも保存しません。';

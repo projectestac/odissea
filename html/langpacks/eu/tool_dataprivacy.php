@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'eu', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'eu', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Gehitu kategoria';
 $string['addnewdefaults'] = 'Gehitu modulu-lehenespen berri bat';
 $string['addpurpose'] = 'Gehitu helburua';
 $string['addroleoverride'] = 'Gehitu rol-baliogabetzea';
+$string['allowfiltering'] = 'Baimendu ikastaroen iragazkia esportatzean';
+$string['allowfiltering_desc'] = 'Gaituz gero, pribatutasun ordezkariak erabiltzaile-datuak esportatzerakoan ikastaro guztien zerrendatik ikastaroak aukeratu ahal izango ditu. Aukera hau gaituta dagoenean, esportatze-eskaerak \'Zain\' egoerarekin hasiko dira eta soilik atzeko planoko ataza amaitu ondoren onartu ahal izango dira.';
 $string['approve'] = 'Onartu';
 $string['approvedrequestsubmitted'] = 'Zure eskaera bidali da eta laster prozesatuko da.';
 $string['approverequest'] = 'Onartu eskaera';
+$string['approverequestall'] = 'Onartu eskaera (datu guztiak)';
+$string['approveselectedcourses'] = 'Onartu aukeratutako ikastaroak';
 $string['automaticdatadeletionapproval'] = 'Datu-ezabatze eskaeren onarpen automatikoa';
 $string['automaticdatadeletionapproval_desc'] = 'Gaituz gero, datu-ezabatze eskaerak automatikoki onartuko dira.<br/>Kontuan izan onarpen automatikoak soilik eragingo diela ezarpen hau gaituta dagoen bitartean egindako datu-ezabatze eskaera berriei. Lehendik zain dauden datu-ezabatze eskaerak oraindik ere pribatutasunerako ordezkariak eskuz onartuko beharko ditu.';
 $string['automaticdataexportapproval'] = 'Datu-esportatze eskaeren onarpen automatikoa';
@@ -45,7 +49,7 @@ $string['cachedef_contextlevel'] = 'Testuinguru mailetako helburua eta kategoria
 $string['cachedef_purpose'] = 'Datu-helburuak';
 $string['cachedef_purpose_overrides'] = 'Gainidatzi helburua Datu Pribatutasun Tresna';
 $string['cancelrequest'] = 'Bertan behera utzi eskaera';
-$string['cancelrequestconfirmation'] = 'Ziur zaude datu-eskaera hau bertan behera utzi nahi duzula?';
+$string['cancelrequestconfirmation'] = 'Datu-eskaera hau bertan behera utzi nahi duzu?';
 $string['cannotreset'] = 'Ezin da eskaera hau berrabiarazi. Soilik gaitzetsitako eskaerak berrabiaraz daitezke.';
 $string['categories'] = 'Kategoriak';
 $string['categorieslist'] = 'Datu-kategorien zerrenda';
@@ -154,6 +158,7 @@ $string['errorinvalidrequeststatus'] = 'Eskaeraren egoera baliogabea!';
 $string['errorinvalidrequesttype'] = 'Eskaera mota baliogabea!';
 $string['errornocapabilitytorequestforothers'] = '{$a->requestedby} erabiltzaileak ez du gaitasunik datu-eskaera bat {$a->userid} erabiltzailearen izenean eskatzeko';
 $string['errornoexpiredcontexts'] = 'Ez dago prozesatu beharreko testuingururik';
+$string['errornoselectedcourse'] = 'Gutxienez ikastaro bat aukeratu behar duzu';
 $string['errorrequestalreadyexists'] = 'Dagoeneko baduzu aribidean dagoen eskaera bat.';
 $string['errorrequestnotfound'] = 'Ez da eskaera aurkitu';
 $string['errorrequestnotwaitingforapproval'] = 'Eskaera ez dago onartzeko zai. Oraindik ez dago prest edo dagoeneko prozesatu da.';
@@ -170,6 +175,7 @@ $string['expiry'] = 'Iraungitzea';
 $string['explanationtitle'] = 'Orri honetan erabiltzen diren ikonoak eta euren esanahia.';
 $string['external'] = 'Gehigarria';
 $string['externalexplanation'] = 'Gune honetan instalatutako plugin gehigarri bat.';
+$string['filterexportdata'] = 'Onartu eskaera (aukeratutako ikastaroetako datuak)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Hasiera-orriko ikastaroa';
 $string['gdpr_art_6_1_a_description'] = 'Interesdunak baimena eman du bere datu-pertsonalak helburu zehatzen baterako prozesatzeko';
@@ -227,6 +233,7 @@ $string['noassignedroles'] = 'Testuinguru honetan ez dago esleitutako rolik';
 $string['noblockstoload'] = 'Blokerik ez';
 $string['nocategories'] = 'Oraindik ez dago kategoriarik';
 $string['nocoursestoload'] = 'Jarduerarik ez';
+$string['nocoursetofilter'] = 'Erabiltzailea ez dago aukeratu daitekeen ezein ikastarotan matrikulatuta';
 $string['nodatarequests'] = 'Ez dago datu-eskaerarik';
 $string['nodatarequestsmatchingfilter'] = 'Ez dago emandako iragazkiarekin bat datorren daturik';
 $string['noexpiredcontexts'] = 'Testuinguru-maila honetan ez dago atxikipen-epea iraungita duen daturik.';
@@ -288,6 +295,7 @@ $string['requesttype_help'] = 'Aukeratu pribatutasunerako ordezkariarekin harrem
 $string['requesttypedelete'] = 'Ezabatu nire datu pertsonal guztiak';
 $string['requesttypedeleteshort'] = 'Ezabatu';
 $string['requesttypeexport'] = 'Esportatu nire datu-pertsonal guztiak';
+$string['requesttypeexportallowfiltering'] = 'Esportatu nire datu pertsonalak';
 $string['requesttypeexportshort'] = 'Esportatu';
 $string['requesttypeothers'] = 'Kontsulta orokorra';
 $string['requesttypeothersshort'] = 'Mezua';
@@ -319,6 +327,7 @@ $string['roleoverride'] = 'Rol-baliogabetzea';
 $string['roleoverrideoverview'] = 'Mantenu-politika lehenetsia erabiltzaile-baimen zehatzetarako baliogabe daiteke, politika zabalago edo murritzagoa zehaztea ahalbidetuz. Erabiltzailea iraungiko da bere baimen guztiak iraungitakoan.';
 $string['roleoverrides'] = 'Rol-baliogabetzeak';
 $string['selectbulkaction'] = 'Aukeratu multzoko ekintza bat, mesedez.';
+$string['selectcourses'] = 'Aukeratu ikastaroak esportatzeko';
 $string['selectdatarequests'] = 'Aukeratu datu-eskaerak, mesedez.';
 $string['selectuserdatarequest'] = 'Aukeratu  {$a->username}(r)en {$a->requesttype} datu-eskaera.';
 $string['send'] = 'Bidali';
@@ -335,6 +344,7 @@ $string['statusdeleted'] = 'Ezabatuta';
 $string['statusdetail'] = 'Egoera:';
 $string['statusexpired'] = 'Iraungita';
 $string['statuspending'] = 'Zain';
+$string['statuspreprocessing'] = 'Aurre-prozesatzen';
 $string['statusprocessing'] = 'Prozesatzen';
 $string['statusready'] = 'Jaisteko prest';
 $string['statusrejected'] = 'Ukatuta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'uk', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'uk', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Переглянути {$a} результати';
 $string['ajaxchoosescale'] = 'Вибрати';
 $string['ajaxclicktoclose'] = 'Клацніть тут для вилучення';
 $string['ajaxerror'] = 'Помилка';
 $string['ajaxfailedupdate'] = 'Не вдається оновити [1] для [2]';
 $string['ajaxfieldchanged'] = 'Поле, яке ви зараз редагуєте було змінено, чи хочете ви використовувати оновлене значення?';
+$string['cellactions'] = 'Дії клітинки';
+$string['clearsearch'] = 'Очистити користувачів у пошуку';
+$string['collapsedcolumns'] = 'Згорнуті стовпці <span class="badge badge-pill badge-primary ml-1" data-collapse="count">{$a}</span>';
 $string['eventgradereportviewed'] = 'Переглянуто звіт оцінювача';
 $string['grader:manage'] = 'Керувати оцінками';
 $string['grader:view'] = 'Переглянути звіт грейдера';
@@ -58,6 +62,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Чи відо�
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Показувати зображення профілю користувача біля імені';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Кількість учнів, що відображається на сторінці у звіті оцінювача';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'У курсі "{$a->name}" згорнуто деякі категорії журналу';
+$string['reopencolumn'] = 'Розгорнути стовпець {$a}';
 $string['summarygrader'] = 'Таблиця з іменами студентів у першій колонці з оціненими діяльностями згрупованими за курсами та категоріями.';
 $string['useractivityfeedback'] = 'відгук {$a}';
 $string['useractivitygrade'] = 'оцінка {$a}';

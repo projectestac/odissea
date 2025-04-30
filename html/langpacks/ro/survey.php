@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ro', version '4.1'.
+ * Strings for component 'survey', language 'ro', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Actual';
 $string['actualclass'] = 'Class actual';
 $string['actualstudent'] = '{$a} actual';
 $string['allquestionrequireanswer'] = 'Toate întrebările sunt necesare și trebuie să li se răspundă.';
-$string['allquestions'] = 'Toate întrebările în ordine, toţi studenţii';
 $string['allscales'] = 'Toate grilele, toţi studenţii';
 $string['alreadysubmitted'] = 'Ai răspuns deja la acest sondaj';
 $string['analysisof'] = 'Analiza {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Ce eveniment v-a surprins cel mai tare?';
 $string['ciq5short'] = 'Moment surprinzător';
 $string['ciqintro'] = 'Răspundeţi la întrebările de mai jos luând în considerare evenimente petrecute recent în cadrul acestei clase';
 $string['ciqname'] = 'Incidente critice';
-$string['clicktocontinue'] = 'Apasă aici pentru a continua';
 $string['clicktocontinuecheck'] = 'Apasă aici ca să verifici şi să continui';
 $string['colles1'] = 'într-un proces de învăţare mă concentrez pe ceea ce mă interesează.';
 $string['colles10'] = 'cer altor studenţi să-şi explice ideile.';
@@ -197,7 +195,7 @@ este prezentată.
 Mulţumim foarte mult.';
 $string['collespname'] = 'COLLES (Preferată)';
 $string['completiondetail:submit'] = 'Trimite răspunsuri';
-$string['completionsubmit'] = 'Cursantul trebuie să trimită formularul';
+$string['completionsubmit'] = 'Trimite un răspuns';
 $string['customintro'] = 'Descriere';
 $string['deleteallanswers'] = 'Şterge răspunsuri la întrebările din cadrul studiului';
 $string['deleteanalysis'] = 'Şterge toate analizele răspunsurilor';
@@ -291,4 +289,3 @@ $string['surveytype_help'] = 'Există 3 tipuri de sondaje disponibile:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Multumesc că ai răspuns la acest sondaj, {$a}';
 $string['time'] = 'Timp';
-$string['viewsurveyresponses'] = 'Vizualizează răspunsurile la sondaj pentru {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ja', version '4.1'.
+ * Strings for component 'format_topics', language 'ja', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'トピックを追加する';
-$string['currentsection'] = 'このトピック';
-$string['deletesection'] = 'トピックを削除する';
-$string['editsection'] = 'トピックを編集する';
-$string['editsectionname'] = 'トピック名を編集する';
-$string['hidefromothers'] = 'トピックを隠す';
+$string['currentsection'] = '現在のトピック';
+$string['hidefromothers'] = '秘匿する';
 $string['indentation'] = 'コースページでのインデントを許可する';
 $string['indentation_help'] = '教師および活動管理ケイパビリティのある他のユーザがコースページのアイテムをインデントできるようにします。';
-$string['newsectionname'] = 'トピック {$a} の新しい名称';
-$string['page-course-view-topics'] = 'トピックフォーマット内のコースメインページすべて';
-$string['page-course-view-topics-x'] = 'トピックフォーマット内のコースページすべて';
-$string['pluginname'] = 'トピックフォーマット';
-$string['privacy:metadata'] = 'トピックフォーマットプラグインはいかなる個人データも保存しません。';
+$string['legacysectionname'] = 'トピック';
+$string['newsection'] = '新しいセクション';
+$string['page-course-view-topics'] = 'カスタムセクションフォーマット内のコースメインページすべて';
+$string['page-course-view-topics-x'] = 'カスタムセクションフォーマット内のコースページすべて';
+$string['plugin_description'] = 'コースはカスタマイズ可能なセクションに分けられます。';
+$string['pluginname'] = 'カスタムセクション';
+$string['privacy:metadata'] = 'カスタムセクションフォーマットプラグインはいかなる個人データも保存しません。';
 $string['section0name'] = '一般';
-$string['sectionname'] = 'トピック';
-$string['showfromothers'] = 'トピックを表示する';
+$string['section_highlight_feedback'] = 'セクション {$a->name} がハイライトされました。';
+$string['section_unhighlight_feedback'] = 'セクション {$a->name} からハイライトが取り除かれました。';
+$string['sectionname'] = 'セクション';
+$string['showfromothers'] = '表示する';

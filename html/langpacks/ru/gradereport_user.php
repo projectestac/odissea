@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ru', version '4.1'.
+ * Strings for component 'gradereport_user', language 'ru', version '4.4'.
  *
  * @package     gradereport_user
  * @category    string
@@ -33,5 +33,6 @@ $string['pluginname'] = 'Отчет по пользователю';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Просматривать ли отчет как текущий пользователь или другой пользователь в отчетах журнала оценок';
 $string['tablesummary'] = 'Таблица упорядочена в виде списка элементов, включая категории оцениваемых элементов. Когда элементы находятся в категории, то они будут обозначены как таковые.';
 $string['user:view'] = 'Просматривать отчет о собственных оценках';
+$string['userreport_user'] = 'Отчет пользователя';
 $string['userreportdesc'] = 'Отчеты пользователя включают в себя его оценки, отзывы и итоги курса.';
-$string['userreports'] = 'Выше выберите пользователя, чтобы просмотреть его отчет.';
+$string['userreports'] = 'Выберите пользователя, чтобы просмотреть его отчет.';

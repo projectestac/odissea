@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', version '4.1'.
+ * Strings for component 'data', language 'de', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} Kommentare';
 $string['commentsoff'] = 'Kommentare sind nicht aktiviert';
 $string['completiondetail:entries'] = 'Einträge hinzufügen: {$a}';
 $string['completionentries'] = 'Einträge notwendig';
-$string['completionentriescount'] = 'Anzahl der Einträge';
+$string['completionentriescount'] = 'Einträge hinzufügen';
 $string['completionentriesdesc'] = 'Minimale Anzahl von erforderlichen Einträgen: {$a}';
 $string['configenablerssfeeds'] = 'Mit dieser Funktion aktivieren Sie RSS-Feeds für alle Datenbanken. Nach der Aktivierung an dieser Stelle ist zusätzlich die Aktivierung in jeder einzelnen Datenbank innerhalb der Kursräume erforderlich.';
 $string['confirmdeletefield'] = 'Möchten Sie dieses Feld in der Datenbank wirklich löschen?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Erstellen Sie Ihre eigenen Felder, um verschiedene Da
 $string['createtemplates'] = 'Vorlagen definieren die Schnittstelle Ihrer Aktivität. Sobald Sie Felder erstellen, werden die Vorlagen automatisch erstellt. Alternativ können Sie auch einen Vorlagensatz verwenden, der bereits Felder und Vorlagen enthält.';
 $string['csstemplate'] = 'Nutzerdefiniertes CSS';
 $string['csvfailed'] = 'Aus der CSV-Datei konnten keine Daten gelesen werden';
-$string['csvfile'] = 'CSV-Datei';
+$string['csvfile'] = 'CSV oder ZIP, das eine CSV-Datei enthält';
 $string['csvimport'] = 'CSV-Dateiimport';
 $string['csvimport_help'] = 'Daten können über eine CSV-Datei importiert werden, wobei die erste Zeile eine Liste von Feldnamen enthalten muss, gefolgt von den Daten mit jeweils einem Datensatz pro Zeile.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Kommagetrennte Werte">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'Sie müssen {$a->entriesleft} weitere Einträge v
 $string['entrieslefttoaddtoview'] = 'Sie müssen {$a->entrieslefttoview} weitere Einträge vornehmen, bevor Sie Beiträge von anderen Teilnehmer/innen sehen können.';
 $string['entry'] = 'Eintrag';
 $string['entrysaved'] = 'Ihr Eintrag wurde gespeichert';
+$string['errordatafilenotfound'] = 'Die Datei konnte nicht importiert werden. Akzeptierte Dateitypen sind CSV oder ZIP, das eine CSV-Datei in dem Format enthält, das zum Exportieren von Einträgen verwendet wird.';
 $string['errormustbeteacher'] = 'Diese Seite können nur Trainer/innen verwenden!';
 $string['errormustsupplyvalue'] = 'Sie müssen hier einen Wert eintragen.';
 $string['errorpresetexists'] = 'Es gibt bereits einen Vorlagensatz mit diesem Namen.';
@@ -199,7 +200,11 @@ $string['fieldnotmatched'] = 'Die folgenden Felder in Ihrer Datei sind in der Da
 $string['fieldoptions'] = 'Optionen (eine pro Zeile)';
 $string['fields'] = 'Felder';
 $string['fieldshelp'] = 'Erstellen Sie Felder, um verschiedene Arten von Daten zu sammeln. Felder definieren die Struktur der Einträge in Ihrer Datenbank.';
+$string['fieldsinformationtags'] = 'Feldinformation';
 $string['fieldsnavigation'] = 'Felder Tertiärnavigation';
+$string['fieldtagdescription'] = '{$a} Beschreibung';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} Name';
 $string['fieldupdated'] = 'Feld wurde aktualisiert';
 $string['fieldwidth'] = 'Breite';
 $string['fieldwidthlistview'] = 'Breite in Listenansicht (in Pixel)';
@@ -232,6 +237,7 @@ $string['importpreset_desc'] = 'Der Vorlagensatz wird für diese Aktivität ange
 $string['importpresetmissingcapability'] = 'Sie haben nicht das Recht, einen Vorlagensatz zu importieren.';
 $string['importsuccess'] = 'Vorlagensatz wurde  übernommen.';
 $string['includeapproval'] = 'Bestätigungsstatus einfügen';
+$string['includefiles'] = 'Dateien in den Export einbeziehen';
 $string['includetags'] = 'Tags einbeziehen';
 $string['includetime'] = 'Zeitpunkt hinzugefügt/geändert einfügen';
 $string['includeuserdetails'] = 'Nutzerdetails einfügen';
@@ -342,6 +348,7 @@ $string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.'
 $string['optionaldescription'] = 'Beschreibung (optional)';
 $string['optionalfilename'] = 'Dateiname (optional)';
 $string['other'] = 'Andere';
+$string['otherfields'] = 'Alle weiteren Felder';
 $string['overrwritedesc'] = 'Existierende Vorlage mit diesem Namen ersetzen und alle Inhalte überschreiben';
 $string['overwrite'] = 'Überschreiben';
 $string['overwritesettings'] = 'Bisherige Einträge überschreiben, z.B. Bewertungen, Kommentare';
@@ -359,6 +366,7 @@ $string['presetnotselected'] = 'Es ist keine Vorlagensatz ausgewählt.';
 $string['presets'] = 'Vorlagensätze';
 $string['presetshelp'] = 'Wählen Sie einen Vorlagensatz, der als Ausgangspunkt verwendet werden soll.';
 $string['preview'] = 'Vorschau von {$a}';
+$string['previewaction'] = 'Vorschau';
 $string['privacy:metadata:commentpurpose'] = 'Kommentar zum Datenbankeintrag';
 $string['privacy:metadata:data_content'] = 'Inhalt in einem Feld';
 $string['privacy:metadata:data_content:content'] = 'Inhalt';
@@ -402,7 +410,7 @@ $string['resetalltemplates'] = 'Alle Vorlagen zurücksetzen';
 $string['resetalltemplatesconfirm'] = 'Sie sind dabei, alle Vorlagen aus den aktuellen Vorlagensatz zu entfernen. Wenn Sie die Vorlagen später wiederherstellen möchten, müssen Sie den Vorlagensatz erneut auswählen.';
 $string['resetalltemplatesconfirmtitle'] = 'Alle Vorlagen zurücksetzen?';
 $string['resetsettings'] = 'Filter zurücksetzen';
-$string['resettemplate'] = 'Vorlage zurücksetzen';
+$string['resettemplate'] = 'Momentane Vorlage zurücksetzen';
 $string['resettemplateconfirm'] = '{$a} wird dauerhaft für Ihr aktuelles Preset entfernt.';
 $string['resettemplateconfirmtitle'] = 'Vorlage zurücksetzen?';
 $string['resizingimages'] = 'Vorschaubilder anpassen...';
@@ -428,6 +436,7 @@ $string['searchresults'] = 'Einträge, die "{$a}" enthalten';
 $string['selectedrequired'] = 'Gesamte Auswahl ist erforderlich';
 $string['selectexportoptions'] = 'Exportoptionen auswählen';
 $string['selectfields'] = 'Felder auswählen';
+$string['selectfordeletion'] = 'Eintrag zum Löschen auswählen';
 $string['showall'] = 'Alle Einträge anzeigen';
 $string['showmore'] = 'Mehr anzeigen';
 $string['single'] = 'Einzelansicht';
@@ -455,19 +464,14 @@ $string['todatabase'] = 'in diese Datenbank';
 $string['type'] = 'Feld-Typ';
 $string['undefinedprocessactionmethod'] = 'Im Vorlagensatz wurde keine Verarbeitungsmethode definiert für: "{$a}".';
 $string['unknown'] = 'Unbekanntes Feld';
-$string['unsupportedexport'] = '({$a->fieldtype}) kann nicht exportiert werden';
 $string['unsupportedfields'] = 'Nichtunterstützte Felder';
 $string['unsupportedfieldslist'] = 'Folgenden Felder können nicht exportiert werden:';
 $string['updatefield'] = 'Bestehendes Feld aktualisieren';
 $string['uploadfile'] = 'Datei hochladen';
-$string['uploadrecords'] = 'Datensätze als Datei hochladen';
-$string['uploadrecords_help'] = 'Einträge können über eine Textdatei importiert werden. Die Textdatei sollte folgendes Format haben:
+$string['uploadrecords'] = 'Datensätze importieren';
+$string['uploadrecords_help'] = 'Importieren Sie Einträge, die Sie aus einer anderen Datenbank exportiert haben, entweder über eine CSV-Datei oder eine ZIP-Datei mit einer CSV-Datei (sofern Dateien im Export enthalten sind).
 
-* Jede Zeile enthält genau einen Datensatz
-* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
-* Der erste Datensatz enthält eine Liste von Feldnamen, die das Format der restlichen Datei festlegen
-
-Die Feldbegrenzung ist ein Zeichen, dass jedes Feld im jedem Datensatz zusätzlich abgrenzt. Normalerweise ist es nicht gesetzt.';
+Alternativ können Sie zum Erstellen einer CSV-Datei zum Importieren einen Eintrag zur Datenbank hinzufügen und ihn dann exportieren. Bearbeiten Sie die CSV-Datei, um weitere Einträge hinzuzufügen.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'In Suche einbeziehen';

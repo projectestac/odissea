@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupformation', language 'fr', version '4.1'.
+ * Strings for component 'groupformation', language 'fr', version '4.4'.
  *
  * @package     groupformation
  * @category    string
@@ -58,7 +58,7 @@ $string['category_learning'] = 'Apprentissage';
 $string['category_motivation'] = 'Motivation';
 $string['category_points'] = 'Buts';
 $string['category_self'] = 'Auto-évaluation';
-$string['category_sellmo'] = 'Motivation pour  l’apprentissage et  la réussite';
+$string['category_sellmo'] = 'Motivation pour l’apprentissage et la réussite';
 $string['category_skills'] = 'Expérience';
 $string['category_srl'] = 'Apprentissage autocontrolé';
 $string['category_team'] = 'Équipe';
@@ -75,7 +75,7 @@ $string['completed_questionnaire'] = 'questionnaires complètement répondus .';
 $string['consent_agree'] = 'J’accepte les conditions';
 $string['consent_alert_message'] = 'Vous devez donner votre consentement avant d’accéder au questionnaire. Faites défiler vers le bas et acceptez les conditions avant de cliquer sur " Suivant ".';
 $string['consent_header'] = 'Je veux participer au plugin de formation de groupes et j’accepte de soumettre des réponses au questionnaire. La participation ou la non-participation n’a aucun impact sur le processus de notation (ou les points de crédit).';
-$string['consent_header_import'] = 'En important vos réponses, vous acceptez de participer au plugin  formation de groupes  et vous acceptez de soumettre des réponses au questionnaire. La participation ou la non-participation n’a aucun impact sur le processus de notation (ou les points de crédit)';
+$string['consent_header_import'] = 'En important vos réponses, vous acceptez de participer au plugin formation de groupes et vous acceptez de soumettre des réponses au questionnaire. La participation ou la non-participation n’a aucun impact sur le processus de notation (ou les points de crédit)';
 $string['consent_message'] = 'ul><li>
 Le professeur n’a pas accès directement à mes réponses pour la formation du groupe (je peux seulement accéder à l’évaluation sur ma personnalité ainsi qu’à la moyenne du groupe).
 </li><li>
@@ -124,13 +124,13 @@ $string['eval_max_text_interest'] = 'L’intérêt est une dimension de la motiv
 $string['eval_max_text_lackofconfidence'] = 'L’attente d’un échec est une forme de motivation, qui naît de la peur de ne pas réussir dans la tâche, combinée à l’idée qu’en raison de la pression de la situation, on ne pourra pas étudier de manière optimale.';
 $string['eval_max_text_neuroticism'] = 'Le facteur de personnalité "Neuroticisme" reflète les différences individuelles dans l’expérience des émotions négatives et est également connu sous le nom de labilité émotionnelle. Le pôle opposé est également appelé stabilité émotionnelle.';
 $string['eval_max_text_openness'] = 'Le facteur "Ouverture à l’expérience" décrit l’intérêt et le degré d’engagement dans de nouvelles expériences et impressions.';
-$string['eval_max_text_successprobability'] = 'La probabilité de réussite comprend des hypothèses sur le degré de confiance que l’on a dans l’obtention d’une bonne évaluation dans le cours ou l’exercice en cours. Une forte probabilité de succès peut découler de l’estimation d’être suffisamment capable ou de trouver la tâche  facile.';
+$string['eval_max_text_successprobability'] = 'La probabilité de réussite comprend des hypothèses sur le degré de confiance que l’on a dans l’obtention d’une bonne évaluation dans le cours ou l’exercice en cours. Une forte probabilité de succès peut découler de l’estimation d’être suffisamment capable ou de trouver la tâche facile.';
 $string['eval_min_caption_agreeableness'] = 'compétitif';
 $string['eval_min_caption_challenge'] = 'Défi';
 $string['eval_min_caption_conscientiousness'] = 'négligent';
 $string['eval_min_caption_extraversion'] = 'introverti';
 $string['eval_min_caption_interest'] = 'Intérêt';
-$string['eval_min_caption_lackofconfidence'] = 'Attente  d’un échec';
+$string['eval_min_caption_lackofconfidence'] = 'Attente d’un échec';
 $string['eval_min_caption_neuroticism'] = 'émotionnellement instable';
 $string['eval_min_caption_openness'] = 'conservateur';
 $string['eval_min_caption_successprobability'] = 'Probabilité de succès';
@@ -158,9 +158,9 @@ $string['eval_text_big5_neuroticism_1'] = 'Vous semblez avoir un faible score de
 $string['eval_text_big5_neuroticism_2'] = 'Vous semblez avoir un score moyen sur le neuroticisme. Par conséquent, vous n’éprouvez ni particulièrement souvent ni rarement de l’anxiété, de la nervosité, de la tension, de la tristesse, de l’incertitude et de la gêne. Dans les situations de stress, vous n’êtes ni particulièrement sensible aux problèmes ni particulièrement robuste face à ceux-ci.';
 $string['eval_text_big5_neuroticism_3'] = 'Vous semblez avoir un score assez élevé en matière de neuroticisme. Par conséquent, vous éprouvez fréquemment de l’anxiété, de la nervosité, de la tension, de la tristesse, de l’incertitude et de l’embarras. De plus, ces sentiments vous accompagnent plus longtemps et se déclenchent plus facilement. Vous avez tendance à être plus inquiet pour votre santé, à développer des idées irréalistes et vous avez de la difficulté à réagir aux situations stressantes.';
 $string['eval_text_big5_openness_1'] = 'Vous avez obtenu des scores en matière d’ouverture plutôt faibles. Cela suggère que vous êtes plus enclin à un comportement conventionnel et à des attitudes conservatrices. Vous préférez les choses établies et approuvées aux choses nouvelles et vous percevez vos réactions émotionnelles plutôt atténuées. Vous agissez de façon pragmatique ici et maintenant.';
-$string['eval_text_big5_openness_2'] = 'Vous avez obtenu des valeurs en matière d’ouverture moyennes. Cela indique que vous n’avez pas tendance à avoir des attitudes et des comportements très conventionnels ni  très peu conventionnels. Pour vous, la disposition visionnaire et imaginative est en équilibre avec une vie pragmatique ici et maintenant.';
+$string['eval_text_big5_openness_2'] = 'Vous avez obtenu des valeurs en matière d’ouverture moyennes. Cela indique que vous n’avez pas tendance à avoir des attitudes et des comportements très conventionnels ni très peu conventionnels. Pour vous, la disposition visionnaire et imaginative est en équilibre avec une vie pragmatique ici et maintenant.';
 $string['eval_text_big5_openness_3'] = 'Vous avez obtenu des scores assez élevés en matière d’ouverture. Cela suggère que vous avez une vie fantaisiste active et que vous vous intéressez à de nombreux domaines privés et publics. Ces personnes sont souvent décrites comme étant intellectuelles, expérimentales et ayant un intérêt artistique, elles se comportent souvent de manière non conventionnelle et préfèrent la variété.';
-$string['eval_text_fam_challenge_1'] = 'Le cours ou l’exercice actuel a été considéré par vous comme  peu difficile. Cela peut être positif pour des tâches externes , mais peut avoir des effets négatifs lorsque l’exercice est réalisé pour soi même.';
+$string['eval_text_fam_challenge_1'] = 'Le cours ou l’exercice actuel a été considéré par vous comme peu difficile. Cela peut être positif pour des tâches externes, mais peut avoir des effets négatifs lorsque l’exercice est réalisé pour soi-même.';
 $string['eval_text_fam_challenge_2'] = 'Le cours ou l’exercice actuel a été considéré par vous comme n’étant ni particulièrement difficile ni très simple.';
 $string['eval_text_fam_challenge_3'] = 'Le cours ou l’exercice actuel a été considéré par vous comme particulièrement difficile. Cela peut être négatif dans le cas où l’exercice est soumis en externe. Au contraire, il peut avoir des effets très positifs si l’exercice est réalisé pour soi-même.';
 $string['eval_text_fam_interest_1'] = 'Vous semblez peu intéressé par le contenu du cours ou de l’exercice en cours, ce qui peut être mauvais pour votre propre apprentissage, dans le cas où le processus lui-même se déroule de manière plus autonome.';
@@ -316,7 +316,7 @@ $string['namingschema'] = 'Système de nommage';
 $string['noGroup'] = 'Aucun groupe ne vous a été attribué parce que vous n’avez pas répondu au questionnaire.';
 $string['noUser'] = 'L’utilisateur n’existe pas';
 $string['no_data_to_display'] = 'Pas de données à afficher';
-$string['no_evaluation_ready'] = 'Votre évaluation n’est pas disponible .L’évaluation de vos réponses est réalisée lorsque  vous avez répondu à tout et avez soumis vos réponses.';
+$string['no_evaluation_ready'] = 'Votre évaluation n’est pas disponible. L’évaluation de vos réponses est réalisée lorsque vous avez répondu à tout et avez soumis vos réponses.';
 $string['no_evaluation_text'] = 'Il n’y a pas d’évaluation pour cette activité de formation de groupe.';
 $string['no_time'] = 'Aucune heure fixée';
 $string['nochangespossible'] = 'Le questionnaire a déjà été complété.
@@ -389,7 +389,7 @@ $string['scenarioInfo'] = 'Les trois scénarios diffèrent dans la manière dont
 $string['scenario_description'] = 'Veuillez choisir le scénario le plus approprié pour la formation du groupe.';
 $string['scenario_error'] = 'Veuillez choisir un scénario';
 $string['scenario_homeworkgroups'] = 'Groupes de devoirs';
-$string['scenario_homeworkgroups_description'] = 'Les groupes réalisent des plus petits  devoirs à intervalles réguliers (souvent hebdomadaires) afin de  préparer les examens. Même si les tâches assignées (souvent appelées exercices, pratique, questions de contrôle ou devoirs) sont  partageables entre les membres du groupe, ce n’est pas le cas  lors de l’examen final, chaque membre sera noté individuellement et doit être capable de résoudre toutes les tâches seul. Par conséquent, la formation de groupe en utilisant  les diverses connaissances préalables et les different styles d’apprentissage profite aux uns et aux autres.';
+$string['scenario_homeworkgroups_description'] = 'Les groupes réalisent des plus petits devoirs à intervalles réguliers (souvent hebdomadaires) afin de préparer les examens. Même si les tâches assignées (souvent appelées exercices, pratique, questions de contrôle ou devoirs) sont  partageables entre les membres du groupe, ce n’est pas le cas lors de l’examen final, chaque membre sera noté individuellement et doit être capable de résoudre toutes les tâches seul. Par conséquent, la formation de groupe en utilisant les diverses connaissances préalables et les différents styles d’apprentissage profite aux uns et aux autres.';
 $string['scenario_homeworkgroups_short'] = 'Les domaines de connaissance et les objectifs visés sont hétérogènes ; l’orientation de l’équipe est homogène.';
 $string['scenario_presentationgroups'] = 'Groupes de présentation';
 $string['scenario_presentationgroups_description'] = 'Les groupes de présentation travaillent ensemble pendant une période relativement courte pour terminer une présentation (qui se déroule généralement en classe). Souvent, au début, une sous-tâche spécifique est attribuée à (ou sélectionnée par) chaque étudiant, travaillée individuellement et finalement réassemblée en une présentation complète. La notation est généralement effectuée pour la performance de l’ensemble du groupe. Par conséquent, la formation de groupe vise principalement à susciter un intérêt mutuel pour le même sujet.';
@@ -452,7 +452,7 @@ $string['topic_group_info'] = 'Votre sujet est';
 $string['topicchoice'] = 'Sélection du sujet';
 $string['topics'] = 'Sujets';
 $string['topics_description'] = 'Je veux définir des sujets';
-$string['topics_description_extended'] = 'Veuillez énumérer les sujets proposés au choix des étudiants  <strong>La formation des groupes est alors optimisée en utilisant exclusivement les préférences de sélection des sujets.</strong> Toutes les autres parties du questionnaire seront ignorées.';
+$string['topics_description_extended'] = 'Veuillez énumérer les sujets proposés au choix des étudiants. <strong>La formation des groupes est alors optimisée en utilisant exclusivement les préférences de sélection des sujets.</strong> Toutes les autres parties du questionnaire seront ignorées.';
 $string['topics_dummy'] = 'Sujet';
 $string['topics_help'] = 'Si l’on utilise les sujets alors les questions de connaissance sont désactivées et le nombre de groupes est fixé par le nombre de sujets.';
 $string['topics_question'] = 'Veuillez classer les sujets suivants en fonction de vos intérêts personnels et commencez par votre sujet préféré. Faites un tri par glisser-déposer.';

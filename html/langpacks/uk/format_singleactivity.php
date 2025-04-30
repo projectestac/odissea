@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'uk', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'uk', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,6 +32,7 @@ $string['defactivitytypedesc'] = 'Вкажіть тип діяльності, я
 $string['erroractivitytype'] = 'Тип діяльності не встановлений в налаштуваннях курсу';
 $string['orphaned'] = 'Без прив’язки';
 $string['orphanedwarning'] = 'Ця діяльність недоступна користувачам!';
+$string['plugin_description'] = 'Курс містить лише одну активність або ресурс.';
 $string['pluginname'] = 'Єдиної діяльності формат';
 $string['privacy:metadata'] = 'Плагін формату Single activity не зберігає жодних особистих даних.';
 $string['sectionname'] = '';

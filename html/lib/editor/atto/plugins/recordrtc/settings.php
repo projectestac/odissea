@@ -32,12 +32,6 @@ require_once($CFG->dirroot . '/lib/editor/atto/plugins/recordrtc/lib.php');
 $ADMIN->add('editoratto', new admin_category('atto_recordrtc', new lang_string('pluginname', 'atto_recordrtc')));
 
 if ($ADMIN->fulltree) {
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2019.11.07 @aginard
-if (get_protected_agora()) {
-// ************ FI
-
     // Types allowed.
     $options = array(
         'both' => new lang_string('audioandvideo', 'atto_recordrtc'),
@@ -49,11 +43,6 @@ if (get_protected_agora()) {
     $default = 'both';
     $setting = new admin_setting_configselect('atto_recordrtc/allowedtypes', $name, $desc, $default, $options);
     $settings->add($setting);
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2019.11.07 @aginard
-}
-// ************ FI
 
     // Audio bitrate.
     $name = get_string('audiobitrate', 'atto_recordrtc');

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ca', version '4.1'.
+ * Strings for component 'format_weeks', language 'ca', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -27,13 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['automaticenddate'] = 'Calcula la data de finalització del curs a partir del nombre de seccions';
 $string['currentsection'] = 'Aquesta setmana';
-$string['deletesection'] = 'Suprimeix la setmana';
-$string['editsection'] = 'Edita la setmana';
-$string['editsectionname'] = 'Edita el nom de la setmana';
 $string['hidefromothers'] = 'Oculta la setmana';
-$string['newsectionname'] = 'Nom nou per la setmana {$a}';
 $string['page-course-view-weeks'] = 'Qualsevol pàgina del curs principal en format setmanal';
 $string['page-course-view-weeks-x'] = 'Qualsevol pàgina del curs en format setmanal';
+$string['plugin_description'] = 'El curs està dividir en seccions corresponents a cada setmana, a partir de la data d\'inici del curs.';
 $string['pluginname'] = 'Format setmanal';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Setmana';

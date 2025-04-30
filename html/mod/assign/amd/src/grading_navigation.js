@@ -22,8 +22,8 @@
  * @since      3.1
  */
 define(['jquery', 'core/notification', 'core/str', 'core/form-autocomplete',
-        'core/ajax', 'mod_assign/grading_form_change_checker'],
-       function($, notification, str, autocomplete, ajax, checker) {
+        'core/ajax', 'core_user/repository', 'mod_assign/grading_form_change_checker'],
+       function($, notification, str, autocomplete, ajax, UserRepository, checker) {
 
     /**
      * GradingNavigation class.
@@ -219,12 +219,7 @@ define(['jquery', 'core/notification', 'core/str', 'core/form-autocomplete',
             });
         }
 
-        return ajax.call([{
-            methodname: 'core_user_set_user_preferences',
-            args: {
-                preferences: preferences
-            }
-        }])[0];
+        return UserRepository.setUserPreferences(preferences);
     };
     /**
      * Turn a filter on or off.
@@ -341,8 +336,9 @@ define(['jquery', 'core/notification', 'core/str', 'core/form-autocomplete',
         } else {
             select.attr('data-selected', userid);
 
-            if (!isNaN(useridnumber) && useridnumber > 0) {
-                $(document).trigger('user-changed', userid);
+            // If we have some filtered users, and userid is specified, then trigger change.
+            if (this._filteredUsers.length > 0 && !isNaN(useridnumber) && useridnumber > 0) {
+                $(document).trigger('user-changed', useridnumber);
             }
         }
     };

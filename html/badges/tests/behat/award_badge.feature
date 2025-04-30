@@ -104,7 +104,7 @@ Feature: Award badges
     And I add the "Navigation" block if not present
     And I click on "Site pages" "list_item" in the "Navigation" "block"
     And I click on "Site badges" "link" in the "Navigation" "block"
-    Then I should see "There are currently no badges available for users to earn."
+    Then I should see "There are no matching badges available for users to earn."
     And I should not see "Manage badges"
     And I should not see "Add a new badge"
 
@@ -138,7 +138,6 @@ Feature: Award badges
     And I press "Update profile"
     And I follow "Profile" in the user menu
     Then I should see "Profile Badge"
-    And I should not see "There are currently no badges available for users to earn."
 
   @javascript
   Scenario: Award site badge
@@ -230,7 +229,7 @@ Feature: Award badges
   @javascript
   Scenario: Award badge on course completion
     Given the following "activity" exists:
-      | activity       | chat          |
+      | activity       | assign        |
       | course         | C1            |
       | name           | Music history |
       | section        | 1             |
@@ -241,7 +240,7 @@ Feature: Award badges
     And I navigate to "Course completion" in current page administration
     And I set the field "id_overall_aggregation" to "2"
     And I click on "Condition: Activity completion" "link"
-    And I set the field "Chat - Music history" to "1"
+    And I set the field "Assignment - Music history" to "1"
     And I press "Save changes"
     And I am on "Course 1" course homepage
     And I navigate to "Badges > Add a new badge" in current page administration
@@ -260,7 +259,7 @@ Feature: Award badges
     And I follow "Profile" in the user menu
     And I click on "Course 1" "link" in the "region-main" "region"
     Then I should not see "badges"
-    When I am on the "Music history" "chat activity" page
+    When I am on the "Music history" "assign activity" page
     And I log out
     # Completion cron won't mark the whole course completed unless the
     # individual criteria was marked completed more than a second ago. So

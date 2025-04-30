@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'es', version '4.1'.
+ * Strings for component 'format_topics', language 'es', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Añadir sección';
-$string['currentsection'] = 'Tema actual';
-$string['deletesection'] = 'Borrar tema';
-$string['editsection'] = 'Editar tema';
-$string['editsectionname'] = 'Editar nombre del tema';
-$string['hidefromothers'] = 'Ocultar tema';
+$string['currentsection'] = 'Sección actual';
+$string['hidefromothers'] = 'Ocultar';
 $string['indentation'] = 'Permitir indentación en página de curso';
 $string['indentation_help'] = 'Permitirle a profesores, y otros usuarios con la capacidad para gestionar actividades, el indentar elementos en la página de curso.';
-$string['newsectionname'] = 'Nuevo nombre para el tema {$a}';
-$string['page-course-view-topics'] = 'Cualquier página principal de curso en formato por temas';
-$string['page-course-view-topics-x'] = 'Cualquier página de curso en formato por temas';
-$string['pluginname'] = 'Formato de temas';
-$string['privacy:metadata'] = 'El complemento de formato de temas no almacena ningún dato personal.';
+$string['legacysectionname'] = 'Tema';
+$string['newsection'] = 'Nueva sección';
+$string['page-course-view-topics'] = 'Cualquier página principal de curso en formato por secciones personalizadas';
+$string['page-course-view-topics-x'] = 'Cualquier página de curso en formato por secciones personalizadas';
+$string['plugin_description'] = 'El curso se divide en secciones personalizables.';
+$string['pluginname'] = 'Secciones personalizadas';
+$string['privacy:metadata'] = 'El complemento de formato de secciones personalizadas no almacena ningún dato personal.';
 $string['section0name'] = 'General';
-$string['sectionname'] = 'Tema';
-$string['showfromothers'] = 'Mostrar tema';
+$string['section_highlight_feedback'] = 'La sección {$a->name} está destacada.';
+$string['section_unhighlight_feedback'] = 'Se ha dejado de destacar la sección {$a->name}';
+$string['sectionname'] = 'Sección';
+$string['showfromothers'] = 'Mostrar';

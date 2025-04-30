@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', version '4.1'.
+ * Strings for component 'workshop', language 'fr', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Travaux remis en retard';
 $string['latesubmissions_desc'] = 'Autoriser la remise des travaux après le délai';
 $string['latesubmissions_help'] = 'Si ce réglage est activé, les participants peuvent remettre leur travail après le délai fixé ou durant la phase d’évaluation. Les travaux remis en retard ne pourront en revanche pas être modifiés.';
 $string['latesubmissionsallowed'] = 'Les travaux remis en retard sont autorisés';
-$string['legacyallocationplugincron'] = 'Cron obsolète d’attribution des évaluations des ateliers';
 $string['maxbytes'] = 'Taille maximale des annexes aux travaux';
 $string['modulename'] = 'Atelier';
 $string['modulename_help'] = 'Le module d’activité atelier permet de recueillir et d’examiner les travaux des participants, et de les faire évaluer par les pairs.

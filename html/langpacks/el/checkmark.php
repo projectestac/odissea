@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'el', version '4.1'.
+ * Strings for component 'checkmark', language 'el', version '4.4'.
  *
  * @package     checkmark
  * @category    string
@@ -41,13 +41,10 @@ $string['attendancegradelink'] = 'Σύνδεση παρουσιών με αυτ�
 $string['attendancegradelink_hint'] = 'Σημείωση: Οι αυτόματα υπολογιζόμενοι βαθμοί συνδέονται με τις παρουσίες.';
 $string['attendancestatus'] = 'Τρέχουσα κατάσταση των παρουσιών σας';
 $string['attendant'] = 'Παρών';
-$string['autograde_all'] = 'Βαθμολόγηση όλων των υποβολών';
 $string['autograde_confirm_continue'] = 'Σίγουρα θέλετε να συνεχίσετε;';
-$string['autograde_custom'] = 'Βαθμολόγηση επιλεγμένων χρηστών';
 $string['autograde_error'] = 'Παρουσιάστηκε κάποιο σφάλμα κατά την αυτόματη βαθμολόγηση.';
 $string['autograde_failed'] = 'Η αυτόματη βαθμολόγηση απέτυχε!';
 $string['autograde_notsupported'] = 'Αυτή η κλίμακα δεν υποστηρίζεται από την αυτόματη βαθμολόγηση.';
-$string['autograde_str'] = 'Αυτόματη βαθμολόγηση';
 $string['autograde_strall'] = 'Όλες οι υποβολές';
 $string['autograde_strmultiplesubmissions'] = '{$a} υποβολές';
 $string['autograde_stronesubmission'] = '1 υποβολή';

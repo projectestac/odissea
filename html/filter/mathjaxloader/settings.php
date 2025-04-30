@@ -24,13 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-if (!get_protected_agora()) {
-    return;
-}
-// ************ FI
-
 if ($ADMIN->fulltree) {
     $item = new admin_setting_heading('filter_mathjaxloader/localinstall',
                                       new lang_string('localinstall', 'filter_mathjaxloader'),

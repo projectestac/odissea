@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'gl', version '4.1'.
+ * Strings for component 'block_section_links', language 'gl', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,3 @@ $string['numsections2_help'] = 'Unha vez que o número de seccións no curso aca
 $string['pluginname'] = 'Ligazóns da sección';
 $string['privacy:metadata'] = 'O bloque de ligazóns da sección só amosa datos almacenados noutros lugares.';
 $string['section_links:addinstance'] = 'Engadir un novo bloque de ligazóns de sección';
-$string['topics'] = 'Temas';
-$string['weeks'] = 'Semanas';

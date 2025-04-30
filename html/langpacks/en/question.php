@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', version '4.1'.
+ * Strings for component 'question', language 'en', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -184,6 +184,8 @@ $string['errorprocessingresponses'] = 'An error occurred while processing your r
 $string['errorsavingcomment'] = 'Error saving the comment for question {$a->name} in the database.';
 $string['errorsavingflags'] = 'Error saving the flag state.';
 $string['errorupdatingattempt'] = 'Error updating attempt {$a->id} in the database.';
+$string['eventqbankdisabled'] = 'Question bank plugin disabled';
+$string['eventqbankenabled'] = 'Question bank plugin enabled';
 $string['eventquestioncategorycreated'] = 'Question category created';
 $string['eventquestioncategorydeleted'] = 'Question category deleted';
 $string['eventquestioncategorymoved'] = 'Question category moved';
@@ -273,6 +275,7 @@ $string['invalidcategoryidtomove'] = 'Invalid category id to move!';
 $string['invalidconfirm'] = 'Confirmation string was incorrect';
 $string['invalidcontextinhasanyquestions'] = 'Invalid context passed to question_context_has_any_questions.';
 $string['invalidgrade'] = 'Grades ({$a}) do not match grade options - question skipped.';
+$string['invalidgradequestion'] = 'Grades ({$a->grades}) do not match grade options - question \'{$a->question}\' skipped.';
 $string['invalidpenalty'] = 'Invalid penalty';
 $string['invalidwizardpage'] = 'Incorrect or no wizard page specified!';
 $string['lastmodifiedby'] = 'Last modified by';
@@ -316,6 +319,7 @@ $string['movingquestionsandfiles'] = 'Are you sure you want to move question(s) 
 $string['movingquestionsnofiles'] = 'Are you sure you want to move question(s) {$a->questions} to context for <strong>"{$a->tocontext}"</strong>?<br /> There are <strong>no files</strong> linked from these question(s) in {$a->fromareaname}.';
 $string['needtochoosecat'] = 'You need to choose a category to move this question to or press \'cancel\'.';
 $string['nocate'] = 'No such category {$a}!';
+$string['noconditionspecified'] = 'Please specify a condition';
 $string['nopermissionadd'] = 'You don\'t have permission to add questions here.';
 $string['nopermissionedit'] = 'You don\'t have permission to edit questions from here.';
 $string['nopermissionmove'] = 'You don\'t have permission to move questions from here. You must save the question in this category or save it as a new question.';
@@ -330,7 +334,6 @@ $string['notchanged'] = 'Not changed since last attempt';
 $string['notenoughanswers'] = 'This type of question requires at least {$a} answers';
 $string['notenoughdatatoeditaquestion'] = 'Neither a question id, nor a category id and question type, was specified.';
 $string['notenoughdatatomovequestions'] = 'You need to provide the question ids of questions you want to move.';
-$string['notflagged'] = 'Not flagged';
 $string['notgraded'] = 'Not graded';
 $string['notshown'] = 'Not shown';
 $string['notyetanswered'] = 'Not yet answered';
@@ -422,7 +425,7 @@ $string['questionpreviewdefaults'] = 'Question preview defaults';
 $string['questionpreviewdefaults_desc'] = 'These defaults are used when a user first previews a question in the question bank. Once a user has previewed a question, their personal preferences are stored as user preferences.';
 $string['questions'] = 'Questions';
 $string['questionsaveerror'] = 'Errors occur during saving question - ({$a})';
-$string['questionsinuse'] = '* Denotes questions which can\'t be deleted because they are in use. Instead, they will be hidden in the question bank unless you select \'Show old questions\'.';
+$string['questionsinuse'] = '* Denotes questions which can\'t be deleted because they are in use. Instead, they will be hidden in the question bank unless you set \'Show hidden questions\' to \'Yes\'.';
 $string['questionsmovedto'] = 'Questions still in use moved to "{$a}" in the parent course category.';
 $string['questionsrescuedfrom'] = 'Questions saved from context {$a}.';
 $string['questionsrescuedfrominfo'] = 'These questions (some of which may be hidden) were saved when context {$a} was deleted because they are still used by some quizzes or other activities.';
@@ -435,7 +438,7 @@ $string['questionx'] = 'Question {$a}';
 $string['requiresgrading'] = 'Requires grading';
 $string['responsehistory'] = 'Response history';
 $string['restart'] = 'Start again';
-$string['restartwiththeseoptions'] = 'Start again with these options';
+$string['restartwiththeseoptions'] = 'Save preview options and start again';
 $string['restoremultipletopcats'] = 'The backup file contains more than one top-level question categories for context {$a}.';
 $string['reviewresponse'] = 'Review response';
 $string['rightanswer'] = 'Right answer';
@@ -450,7 +453,9 @@ $string['selectcategoryabove'] = 'Select a category above';
 $string['selectquestionsforbulk'] = 'Select questions for bulk actions';
 $string['settingsformultipletries'] = 'Multiple tries';
 $string['shareincontext'] = 'Share in context for {$a}';
-$string['showhidden'] = 'Also show old questions';
+$string['shortversioninfo'] = 'v{$a->version} (of {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (latest)';
+$string['showhidden'] = 'Show hidden questions';
 $string['showmarkandmax'] = 'Show mark and max';
 $string['showmaxmarkonly'] = 'Show max mark only';
 $string['shown'] = 'Shown';
@@ -502,6 +507,8 @@ $string['upgradeproblemcategoryloop'] = 'Problem detected when upgrading questio
 $string['upgradeproblemcouldnotupdatecategory'] = 'Could not update question category {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Problem detected when upgrading question categories. Category {$a->id} refers to parent {$a->parent}, which does not exist. Parent changed to fix problem.';
 $string['version_selection'] = 'Version {$a->version}';
+$string['versioninfo'] = 'Version {$a->version} (of {$a->latestversion})';
+$string['versioninfolatest'] = 'Version {$a->version} (latest)';
 $string['whethercorrect'] = 'Whether correct';
 $string['whethercorrect_help'] = 'This covers both the textual description \'Correct\', \'Partially correct\' or \'Incorrect\', and any coloured highlighting that conveys the same information.';
 $string['whichtries'] = 'Which tries';

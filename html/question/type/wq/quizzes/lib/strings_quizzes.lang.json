@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "${quizzes_studio_equivalent_set_assertion}",
 		"quizzes_studio_syntax_list_assertion": "${quizzes_studio_syntax_list_assertion}",
 		"quizzes_studio_text_logic_operators" : "${quizzes_studio_text_logic_operators}",
-		"quizzes_studio_equivalent_unit_literal" : "${quizzes_studio_equivalent_unit_literal}"
+		"quizzes_studio_equivalent_unit_literal" : "${quizzes_studio_equivalent_unit_literal}",
 
+		"quizzes_studio_math_multistep_switch_label" : "${quizzes_studio_math_multistep_switch_label}",
+		"quizzes_studio_math_multistep_helper_panel_title" : "${quizzes_studio_math_multistep_helper_panel_title}",
+		"quizzes_studio_math_multistep_helper_panel_description" : "${quizzes_studio_math_multistep_helper_panel_description}",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "${quizzes_studio_math_multistep_helper_panel_hyperlink}",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "${quizzes_studio_math_multistep_helper_panel_close_button}",
+		"quizzes_studio_math_multistep_define_task_title" : "${quizzes_studio_math_multistep_define_task_title}",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "${quizzes_studio_math_multistep_documentation_tooltip}",
+		"quizzes_studio_math_multistep_type_of_task_label" : "${quizzes_studio_math_multistep_type_of_task_label}",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "${quizzes_studio_math_multistep_type_of_task_single_variable_equation}",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "${quizzes_studio_math_multistep_type_of_task_basic_operations}",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "${quizzes_studio_math_multistep_type_of_task_dropdown_description}",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "${quizzes_studio_math_multistep_task_to_solve_label}",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "${quizzes_studio_math_multistep_task_to_solve_math_type_description}",
+		"quizzes_studio_math_multistep_random_variables_label" : "${quizzes_studio_math_multistep_random_variables_label}",
+		"quizzes_studio_math_multistep_equation_variable_label" : "${quizzes_studio_math_multistep_equation_variable_label}",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "${quizzes_studio_math_multistep_equation_variable_placeholder}",
+		"quizzes_studio_math_multistep_equation_variable_description" : "${quizzes_studio_math_multistep_equation_variable_description}",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "${quizzes_studio_multistep_incorrect_feedback_label}",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "${quizzes_studio_multistep_partially_correct_feedback_label}",
+		"quizzes_studio_multistep_correct_feedback_label": "${quizzes_studio_multistep_correct_feedback_label}",
+		"quizzes_studio_test_question_multistep_feedback_empty": "${quizzes_studio_test_question_multistep_feedback_empty}",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "${quizzes_studio_test_question_multistep_feedback_on_track}",
+		"quizzes_studio_test_question_multistep_feedback_finished": "${quizzes_studio_test_question_multistep_feedback_finished}",
+		"quizzes_studio_test_question_task_prompt_label_equation": "${quizzes_studio_test_question_task_prompt_label_equation}",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "${quizzes_studio_test_question_task_prompt_label_basic_operations}",
+		"quizzes_studio_test_question_student_answer_test_button_label": "${quizzes_studio_test_question_student_answer_test_button_label}",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "${quizzes_studio_test_question_student_answer_clear_button_label}",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label}",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "${quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text}",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "${quizzes_studio_math_multistep_task_to_solve_math_type_error}",
+		"quizzes_studio_math_multistep_equation_variable_error": "${quizzes_studio_math_multistep_equation_variable_error}",
+
+		"quizzes_studio_multistep_error_session_start_title": "${quizzes_studio_multistep_error_session_start_title}",
+		"quizzes_studio_multistep_error_session_start_message": "${quizzes_studio_multistep_error_session_start_message}",
+		"quizzes_studio_multistep_error_session_start_try_again": "${quizzes_studio_multistep_error_session_start_try_again}",
+		"quizzes_studio_multistep_error_session_start_go_back": "${quizzes_studio_multistep_error_session_start_go_back}",
+		"quizzes_studio_multistep_error_session_start_contact_us": "${quizzes_studio_multistep_error_session_start_contact_us}",
+
+		"syntax_math_multistep": "${syntax_math_multistep}"
 	}
 }
 

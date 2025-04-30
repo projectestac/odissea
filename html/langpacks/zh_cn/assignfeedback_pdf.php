@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_pdf', language 'zh_cn', version '4.1'.
+ * Strings for component 'assignfeedback_pdf', language 'zh_cn', version '4.4'.
  *
  * @package     assignfeedback_pdf
  * @category    string
@@ -51,7 +51,7 @@ $string['annotationhelp_text'] = '<table>
  <tr><td>简易清单</td><td> </td><td>在页面上使用鼠标右键来插入先前存储在\'简易清单\'上的评论。使用 \'x\' 来删除简易清单上不要的条目。</td></tr>
  </table>';
 $string['backtocommentlist'] = '回到评论列表';
-$string['badaction'] = '无效操作{$a}';
+$string['badaction'] = '无效操作\'{$a}\'';
 $string['badannotationid'] = '注释标签是不同的提交或页面';
 $string['badcommentid'] = '评论是不同的提交或页面';
 $string['badcoordinate'] = '直线上坐标点是奇数个---应该每个点2个坐标';

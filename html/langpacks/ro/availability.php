@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ro', version '4.1'.
+ * Strings for component 'availability', language 'ro', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Adăugare restricție...';
 $string['and'] = 'și';
 $string['condition_group'] = 'Set de restricții';
 $string['condition_group_info'] = 'Adaugă un set de restricții imbricate pentru a aplica logica complexă.';
+$string['disabled_verb'] = 'Nu poate fi modificat deoarece setul de reguli include o regulă care conține date private.';
+$string['editsettings'] = 'Editează restricțiile';
 $string['enableavailability'] = 'Activare acces condiționat';
 $string['enableavailability_desc'] = 'Dacă este activată, condițiile (bazate pe dată, notă, finalizare etc.) pot fi setate pentru a controla dacă o activitate sau o resursă poate fi accesată.';
 $string['error_list_nochildren'] = 'Restricția impusă trebuie să conțină cel puțin o condiție.';

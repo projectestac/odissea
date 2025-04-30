@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ro', version '4.1'.
+ * Strings for component 'quiz_grading', language 'ro', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Arată și întrebările care au fost 
 $string['attemptstograde'] = 'Încercări la test care trebuie notate';
 $string['automaticallygraded'] = 'Notat automat';
 $string['backtothelistofquestions'] = 'Înapoi la lista de întrebări';
-$string['bydate'] = 'După dată';
-$string['bystudentfirstname'] = 'După prenumele studentului';
-$string['bystudentidnumber'] = 'După ID-ul studentului';
-$string['bystudentlastname'] = 'După numele de familie al studentului';
 $string['cannotgradethisattempt'] = 'Nu se poate nota această încercare.';
 $string['cannotloadquestioninfo'] = 'Nu se pot încărca questiontype informații specifice pentru întrebare';
 $string['changeoptions'] = 'Modificare opțiuni';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'Toate cele {$a} încercări la această întrebare.';
 $string['gradingattempt'] = 'Încercarea cu numărul {$a->attempt} realizată de {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Încercări de notare {$a->from} până la {$a->to} din {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Numărul încercării {$a->attempt} pentru {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Încercarea numărul {$a->attempt} for {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Următoarele {$a} încercări ne-notate.';
 $string['gradingnotallowed'] = 'Nu aveţi permisiunea să notaţi manual răspunsurile la întrebările din cadrul acestui test';
 $string['gradingquestionx'] = 'Întrebare pentru notă {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Întrebarea care trebuie notată cu ID {$a} nu a
 $string['noquestionsfound'] = 'Nu s-au găsit întrebări notate manual';
 $string['nothingfound'] = 'Nimic de afișat';
 $string['options'] = 'Opțiuni';
-$string['orderattempts'] = 'Ordonează încercările de răspuns la test';
 $string['orderattemptsby'] = 'Ordonați încercările după';
 $string['pluginname'] = 'Notare manuală';
 $string['privacy:preference:order'] = 'Ordinea afișării încercărilor care necesită recalculare.';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Întrebări per pagină';
 $string['questionsthatneedgrading'] = 'Întrebări care trebuie notate';
 $string['questiontitle'] = 'Întrebare {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} attempts {$a->openspan}graded{$a->closespan}).';
 $string['random'] = 'Aleatoriu';
-$string['randomly'] = 'Aleatoriu';
 $string['saveandnext'] = 'Salveză și afișează următoarea pagină';
 $string['showstudentnames'] = 'Afișează numele cursanților';
 $string['tograde'] = 'La nota';

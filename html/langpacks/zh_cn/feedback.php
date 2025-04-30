@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', version '4.1'.
+ * Strings for component 'feedback', language 'zh_cn', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = '向活动添加问题';
+$string['add_item'] = '添加问题';
 $string['add_pagebreak'] = '添加一个分页符';
 $string['adjustment'] = '调整';
-$string['after_submit'] = '提交后';
+$string['after_submit'] = '在提交后';
 $string['allowfullanonymous'] = '允许全匿名';
 $string['analysis'] = '分析';
 $string['anonymous'] = '匿名';
@@ -37,13 +37,14 @@ $string['anonymous_entries'] = '匿名条目 ({$a})';
 $string['anonymous_user'] = '匿名用户';
 $string['answerquestions'] = '回答问题';
 $string['append_new_items'] = '追加新题';
-$string['autonumbering'] = '自动编号';
+$string['autonumbering'] = '自动编号问题';
 $string['autonumbering_help'] = '允许或禁止对每个问题自动编号';
 $string['average'] = '平均值';
 $string['bold'] = '加粗';
 $string['calendarend'] = '{$a}关闭';
 $string['calendarstart'] = '{$a}打开';
 $string['cannotaccess'] = '您只能从课程中访问此反馈';
+$string['cannotcreatepagebreak'] = '不能在开头添加分页符，并且只能在末尾添加一个分页符。';
 $string['cannotsavetempl'] = '不允许保存模板';
 $string['captcha'] = '验证码';
 $string['captchanotset'] = '验证码未设置。';
@@ -58,15 +59,15 @@ $string['completed'] = '已完成';
 $string['completed_feedbacks'] = '提交的回答';
 $string['completedon'] = '于{$a}完成';
 $string['completiondetail:submit'] = '提交反馈';
-$string['completionsubmit'] = '提交反馈后显示为已完成';
-$string['configallowfullanonymous'] = '如果设为“是”，那么不需要登录就可以参与反馈活动。这个选项只影响首页的反馈。';
+$string['completionsubmit'] = '提交反馈';
+$string['configallowfullanonymous'] = '如果设置为 \'yes\'，则用户可以在站点主页上完成反馈活动，而无需登录。';
 $string['confirmdeleteentry'] = '您确定要删除此项吗？';
 $string['confirmdeleteitem'] = '您确定要删除此问题吗？';
 $string['confirmdeletetemplate'] = '您确定要删除此模板吗？';
 $string['confirmusetemplate'] = '您确定要使用此模板吗？';
 $string['continue_the_form'] = '继续回答问题';
 $string['count_of_nums'] = '数字个数';
-$string['courseid'] = '课程ID';
+$string['courseid'] = '课程 ID';
 $string['creating_templates'] = '将这些问题存为一个新模板';
 $string['delete_entry'] = '删除条目';
 $string['delete_item'] = '删除此题';
@@ -94,27 +95,27 @@ $string['depending_help'] = '依赖性使问题的显示取决于对其它问题
 <li> ……其它问题</li>
 </ol>
 就是这样。祝您使用愉快！';
-$string['dependitem'] = '依赖的问题';
+$string['dependitem'] = '依赖问题';
 $string['dependvalue'] = '依赖值';
 $string['description'] = '描述';
-$string['do_not_analyse_empty_submits'] = '不分析空提交';
+$string['do_not_analyse_empty_submits'] = '在分析中省略空提交';
 $string['downloadresponseas'] = '下载所有回复，如下所示：';
 $string['drop_feedback'] = '从此课程移除';
-$string['dropdown'] = '多选项 - 单选（下拉列表）';
+$string['dropdown'] = '多项选择 - 允许单选（下拉菜单）';
 $string['dropdown_values'] = '答卷';
-$string['dropdownlist'] = '多选项 - 单选（下拉列表）';
-$string['dropdownrated'] = '下拉列表（可评分）';
+$string['dropdownlist'] = '多项选择 - 单选（下拉菜单）';
+$string['dropdownrated'] = '下拉菜单（可评分）';
 $string['edit_item'] = '编辑问题';
 $string['edit_items'] = '编辑问题';
-$string['email_notification'] = '发送email通知';
-$string['email_notification_help'] = '如果激活，有反馈被提交后，管理员会收到email通知';
+$string['email_notification'] = '启用提交通知';
+$string['email_notification_help'] = '如果启用，教师将收到反馈提交的通知。';
 $string['emailteachermail'] = '{$a->username}已经填写反馈：“{$a->feedback}”
 
 您可以到这里查看结果：
 
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username}已经填写反馈：<i>“{$a->feedback}”</i><br /><br />
-您可以到<a href="{$a->url}">这里</a>查看结果。';
+$string['emailteachermailhtml'] = '<p>{$a->username} 已完成反馈 \'<i>{$a->feedback}\'</i>。</p>
+<p>它在网站上<a href=“{$a->url}”>可用</a>。</p>';
 $string['entries_saved'] = '您的回答已被保存。谢谢。';
 $string['eventresponsedeleted'] = '删除响应';
 $string['eventresponsesubmitted'] = '提交的答复';
@@ -132,7 +133,7 @@ $string['feedback:receivemail'] = '接收email通知';
 $string['feedback:view'] = '查看反馈活动';
 $string['feedback:viewanalysepage'] = '提交后查看分析页面';
 $string['feedback:viewreports'] = '查看报告';
-$string['feedback_is_not_for_anonymous'] = '此反馈不能匿名参加';
+$string['feedback_is_not_for_anonymous'] = '此反馈不能匿名';
 $string['feedback_is_not_open'] = '此调查反馈未开启';
 $string['feedbackclose'] = '允许回答到';
 $string['feedbackcompleted'] = '{$a->username}已完成{$a->feedbackname}';
@@ -164,7 +165,7 @@ $string['insufficient_responses_for_this_group'] = '此组给出的答复数量�
 $string['insufficient_responses_help'] = '要使反馈是匿名的，必须至少有 2 个回复。';
 $string['item_label'] = '标签';
 $string['item_name'] = '问题';
-$string['label'] = '标签';
+$string['label'] = '文本和媒体区域';
 $string['labelcontents'] = '目录';
 $string['mapcourse'] = '映射反馈到课程';
 $string['mapcourse_help'] = '默认情况下，在您的主页创建的反馈表全站可用，并且会在所有使用了反馈版块的课程中出现。你可以把反馈表设成粘性版块来强制它出现，或者通过将它映射到指定的课程来限制此反馈表出现的课程。';
@@ -198,7 +199,10 @@ $string['multichoiceoption'] = '<span class=“weight”>（{$a->weight}）</spa
 $string['multichoicerated'] = '选择题（可评分）';
 $string['multichoicetype'] = '选择题';
 $string['multiplesubmit'] = '允许多次提交';
-$string['multiplesubmit_help'] = '如果对匿名调查也启用，那么用户就可以无限次提交反馈。';
+$string['multiplesubmit_help'] = '如果设置为“是”：
+
+* 对于匿名调查：参与者可以多次提交回复，所有回复都将被记录下来。
+* 对于非匿名调查：参与者可以多次提交回复，但只有他们的最新回复会被记录下来。';
 $string['name'] = '名称';
 $string['name_required'] = '必须输入名称';
 $string['nameandlabelformat'] = '（{$a->label}）{$a->name}';
@@ -266,7 +270,7 @@ $string['searchcourses'] = '搜索课程';
 $string['searchcourses_help'] = '搜索您想和此反馈关联的课程名称或代码';
 $string['selected_dump'] = '$SESSION 选择的索引变量显示如下：';
 $string['send'] = '发送';
-$string['send_message'] = '发送消息';
+$string['send_message'] = '发送通知';
 $string['show_all'] = '显示全部';
 $string['show_analysepage_after_submit'] = '显示分析页';
 $string['show_entries'] = '显示反馈';

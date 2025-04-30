@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'ar', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'ar', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'لم توضع أي محددات';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'مستعرض الإنترنت لديك قد لا يسمح لهذ الملحق بالعمل ما لم يكن الاتصال عبر HTTPS أو من المضيف المحلي.';
 $string['insecurealert_title'] = 'اتصال غير آمن!';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'لقد بلغت الحجم الأقصى المسموح به لرفع الملفات.';
 $string['maxfilesizehit_title'] = 'التسجيل توقف';
 $string['norecordingfound'] = 'يبدو أن أمراً خاطئاً قد حدث. لم يتم تسجيل شيء.';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'مستعرض الإنترنت لديك يقدم دعما�
 $string['nowebrtc_title'] = 'WebRTC غير مدعوم';
 $string['onlyaudio'] = 'الصوت فقط';
 $string['onlyvideo'] = 'الفيديو فقط';
-$string['pluginname'] = 'Tiny RecordRTC';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'إن ملحق Tiny RecordRTC لا يخزن أي بيانات شخصية.';
 $string['recordagain'] = 'سَجِّل مرة أخرى';
 $string['recordagain_desc'] = 'لقد سجلت مسبقًا بعض المحتوى. التسجيل مرة أخرى سيزيل ذلك المحتوى. هل أنت متأكد من رغبتك في إعادة التسجيل؟';

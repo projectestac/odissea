@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', version '4.1'.
+ * Strings for component 'webservice', language 'ja', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = ' RESTのPHPコード (POSTリクエスト)';
 $string['potusers'] = '未認証ユーザ';
 $string['potusersmatching'] = '合致する未認証ユーザ';
 $string['print'] = 'すべてをプリントする';
-$string['privacy:metadata:serviceusers'] = '特定の外部サービスを利用できるユーザの一覧です。';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'サービスの使用を制限するIPです。';
-$string['privacy:metadata:serviceusers:timecreated'] = 'レコードが作成された日時です。';
-$string['privacy:metadata:serviceusers:userid'] = 'ユーザのIDです。';
-$string['privacy:metadata:serviceusers:validuntil'] = '権限付与終了の日時です。';
-$string['privacy:metadata:tokens'] = 'ウェブサービスまたはモバイルアプリケーションを通してMoodleと通信するトークンのレコードです。';
-$string['privacy:metadata:tokens:creatorid'] = 'トークンを作成したユーザのIDです。';
-$string['privacy:metadata:tokens:iprestriction'] = 'このトークンを使用するためのIP制限です。';
-$string['privacy:metadata:tokens:lastaccess'] = 'トークンが最後に使用された日時です。';
-$string['privacy:metadata:tokens:privatetoken'] = 'SSOのような特定の処理を認証するため時々さらにプライベートなトークンが使用されます。';
-$string['privacy:metadata:tokens:timecreated'] = 'トークンが作成された日時です。';
-$string['privacy:metadata:tokens:token'] = 'ユーザのトークンです。';
-$string['privacy:metadata:tokens:tokentype'] = 'トークのタイプです。';
-$string['privacy:metadata:tokens:userid'] = 'トークンを所有しているユーザのIDです。';
-$string['privacy:metadata:tokens:validuntil'] = 'トークンの有効期限です。';
-$string['privacy:request:notexportedsecurity'] = 'セキュリティ上の理由でエクスポートされませんでした。';
+$string['privacy:metadata'] = 'ウェブサービスAPIはいかなる個人データも保存しません。';
 $string['protocol'] = 'プロトコル';
 $string['removefunction'] = '削除';
 $string['removefunctionconfirm'] = '本当に「 {$a->service} 」から関数「 {$a->function} 」を削除してもよろしいですか?';
@@ -214,11 +199,16 @@ $string['testwithtestclient'] = 'サービスをテストする';
 $string['testwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。有効にされたトークン認証のプロトコルを使用してください。<strong>警告: あなたのテストする関数が実行されます。関数の選択には十分注意してください!</strong>';
 $string['token'] = 'トークン';
 $string['tokenauthlog'] = 'トークン認証';
+$string['tokencopied'] = 'クリップボードにコピーされたテキストです。';
 $string['tokencreatedbyadmin'] = '管理者のみリセットできる (*)';
 $string['tokencreator'] = '作成者';
 $string['tokenfilter'] = 'トークンフィルタ';
 $string['tokenfilterreset'] = 'すべてのトークンを表示する';
 $string['tokenfiltersubmit'] = '合致するトークンのみ表示する';
+$string['tokenname'] = '名称';
+$string['tokennamehint'] = 'あなたが名称を入力しない場合、ランダムな名称が使用されます。';
+$string['tokennameprefix'] = 'ウェブサービス-{$a}';
+$string['tokennewmessage'] = 'トークンをコピーしてください。あなたがこのページを離れた時点でトークンは再度表示されなくなります。';
 $string['unknownoptionkey'] = '不明なオプションキーです ({$a})';
 $string['unnamedstringparam'] = 'ストリングパラメータ名がありません。';
 $string['updateusersettings'] = '更新';
@@ -229,12 +219,11 @@ $string['userasclientsdescription'] = '次のステップにより、あなた�
 $string['usermissingcaps'] = '不足しているケイパビリティ: {$a}';
 $string['usernameorid'] = 'ユーザ名/ユーザID';
 $string['usernameorid_help'] = 'ユーザ名またはユーザIDを入力してください。';
-$string['usernameoridnousererror'] = 'このユーザ名/ユーザIDでユーザは見つかりませんでした。';
-$string['usernameoridoccurenceerror'] = 'このユーザ名で2名以上のユーザが見つかりました。ユーザIDを入力してください。';
 $string['usernotallowed'] = 'ユーザはこのサービスを許可されていません。あなたはまず最初に {$a} の許可されたユーザ管理ページでこのユーザを許可する必要があります。';
 $string['userservices'] = 'ユーザサービス: {$a}';
 $string['usersettingssaved'] = 'ユーザ設定が保存されました。';
 $string['validuntil'] = '有効期限';
+$string['validuntil_empty'] = 'このトークンには有効期限はありません。';
 $string['validuntil_help'] = '設定した場合、この日付以後、このユーザに対するサービスが無効となります。';
 $string['webservice'] = 'ウェブサービス';
 $string['webservices'] = 'ウェブサービス';

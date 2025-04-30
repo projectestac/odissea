@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ca', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'ca', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -47,7 +47,7 @@ $string['errfractionsaddwrong'] = 'Les qualificacions positives que heu triat no
 $string['errfractionsnomax'] = 'Una de les opcions ha de tenir una puntuació del 100% de manera que sigui possible aconseguir la màxima puntuació en aquesta pregunta.';
 $string['errgradesetanswerblank'] = 'Qualificació posada, però la resposta està en blanc';
 $string['feedback'] = 'Retroacció';
-$string['fillouttwochoices'] = 'Heu d\'emplenar almenys dues opcions. Les opcions que deixeu en blanc no s\'utilitzaran.';
+$string['fillouttwochoices'] = 'Heu d\'omplir almenys dues opcions. Les opcions que quedin en blanc no s\'utilitzaran.';
 $string['fractionsaddwrong'] = 'Les qualificacions positives que heu triat no sumen 100%<br />En realitat sumen {$a}%<br />Voleu tornar enrere i arreglar aquest punt?';
 $string['fractionsnomax'] = 'Una de les opcions hauria de ser 100%, de manera que sigui<br />possible obtenir la màxima puntuació en aquesta pregunta.<br />Voleu tornar enrere i arreglar-ho?';
 $string['incorrectfeedback'] = 'Per a qualsevol resposta incorrecta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ja', version '4.1'.
+ * Strings for component 'format_weeks', language 'ja', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = '週を追加する';
+$string['addsection'] = '週を追加する';
 $string['automaticenddate'] = 'セクション数より終了日を計算する';
 $string['automaticenddate_help'] = 'この設定を有効にした場合、コース終了日はセクション数およびコース開始日より自動的に計算されます。';
-$string['currentsection'] = 'この週';
-$string['deletesection'] = '週を削除する';
-$string['editsection'] = '週を編集する';
-$string['editsectionname'] = '週名を編集する';
-$string['hidefromothers'] = '週を隠す';
+$string['currentsection'] = '現在の週';
+$string['hidefromothers'] = '秘匿する';
 $string['indentation'] = 'コースページでのインデントを許可する';
 $string['indentation_help'] = '教師および活動管理ケイパビリティのある他のユーザがコースページのアイテムをインデントできるようにします。';
-$string['newsectionname'] = '週 {$a} の新しい名称';
-$string['page-course-view-weeks'] = 'ウィークリーフォーマット内のコースメインページすべて';
-$string['page-course-view-weeks-x'] = 'ウィークリーフォーマット内のコースページすべて';
-$string['pluginname'] = 'ウィークリーフォーマット';
-$string['privacy:metadata'] = 'ウィークリーフォーマットプラグインはいかなる個人データも保存しません。';
+$string['page-course-view-weeks'] = 'ウィークリーセクションフォーマット内のコースメインページすべて';
+$string['page-course-view-weeks-x'] = 'ウィークリーセクションフォーマット内のコースページすべて';
+$string['plugin_description'] = 'コースはコース開始日からそれぞれの週に対応するセクションに分けられます。';
+$string['pluginname'] = 'ウィークリーセクション';
+$string['privacy:metadata'] = 'ウィークリーセクションフォーマットプラグインはいかなる個人データも保存しません。';
 $string['section0name'] = '一般';
 $string['sectionname'] = '週';
-$string['showfromothers'] = '週を表示する';
+$string['showfromothers'] = '表示する';

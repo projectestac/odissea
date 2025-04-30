@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'nl', version '4.1'.
+ * Strings for component 'assignsubmission_onlinetext', language 'nl', version '4.4'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -30,7 +30,7 @@ $string['default'] = 'Standaard ingeschakeld';
 $string['default_help'] = 'Indien ingeschakeld, zal deze instuurmethode als standaard zijn ingesteld voor alle nieuwe opdrachten.';
 $string['enabled'] = 'Online tekst';
 $string['enabled_help'] = 'Indien ingeschakeld, zullen leerlingen tekst met opmaak rechtstreeks in een editorveld kunnen intypen als opdracht.';
-$string['eventassessableuploaded'] = 'Er is een online tekst geüploaded.';
+$string['eventassessableuploaded'] = 'Er is een online tekst geüpload.';
 $string['nosubmission'] = 'Er is nog niets ingestuurd voor deze opdracht';
 $string['numwords'] = '({$a} woorden)';
 $string['numwordsforlog'] = 'Aantal woorden in de opdracht: {$a} woorden';

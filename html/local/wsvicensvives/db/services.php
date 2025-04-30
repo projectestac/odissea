@@ -16,31 +16,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$functions = array(
-    'local_wsvicensvives_update_lti_grade' => array(
+$functions = [
+    'local_wsvicensvives_update_lti_grade' => [
         'classname'   => 'local_wsvicensvives_external',
         'methodname'  => 'update_lti_grade',
         'classpath'   => 'local/wsvicensvives/externallib.php',
         'description' => 'Update user grade of an LTI activity',
         'type'        => 'write',
-    ),
-    'local_wsvicensvives_get_lti_grade' => array(
+    ],
+    'local_wsvicensvives_get_lti_grade' => [
         'classname'   => 'local_wsvicensvives_external',
         'methodname'  => 'update_lti_grade',
         'classpath'   => 'local/wsvicensvives/externallib.php',
         'description' => 'DEPRECATED: alias for local_wsvicensvives_update_lti_grade',
          'type'       => 'write',
-    )
-);
+    ],
+];
 
 // We define the services to install as pre-build services. A pre-build service is not editable by administrator.
-$services = array(
-    'Vicens Vives Services' => array(
-        'functions' => array(
+$services = [
+    'Vicens Vives Services' => [
+        'functions' => [
             'local_wsvicensvives_update_lti_grade',
             'local_wsvicensvives_get_lti_grade',
-        ),
+        ],
         'restrictedusers' => 0,
         'enabled' => 1,
-    )
-);
+    ],
+];

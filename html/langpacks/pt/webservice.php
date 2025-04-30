@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', version '4.1'.
+ * Strings for component 'webservice', language 'pt', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'Código PHP para REST (pedido POST)';
 $string['potusers'] = 'Utilizadores não autorizados';
 $string['potusersmatching'] = 'Utilizadores não autorizados com as seguintes caraterísticas';
 $string['print'] = 'Imprimir todo(a)s';
-$string['privacy:metadata:serviceusers'] = 'A lista dos utilizadores que pode usar determinados serviços externos';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP restrito para usar o serviço';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Data em que o registo foi criado';
-$string['privacy:metadata:serviceusers:userid'] = 'ID do utilizador';
-$string['privacy:metadata:serviceusers:validuntil'] = 'A data até quando a autorização é válida';
-$string['privacy:metadata:tokens'] = 'Um registo de tokens a interagir com o Moodle através de web services ou aplicações móveis.';
-$string['privacy:metadata:tokens:creatorid'] = 'O ID do utilizador que criou o token';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP restrito para este token';
-$string['privacy:metadata:tokens:lastaccess'] = 'A data em que o token foi usado pela última vez';
-$string['privacy:metadata:tokens:privatetoken'] = 'Um token mais privado usado ocasionalmente para validar certas operações, tais como SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'Data em que o token foi criado';
-$string['privacy:metadata:tokens:token'] = 'O token do utilizador';
-$string['privacy:metadata:tokens:tokentype'] = 'O tipo de token';
-$string['privacy:metadata:tokens:userid'] = 'O ID do utilizador a quem pertence o token';
-$string['privacy:metadata:tokens:validuntil'] = 'A data a partir da qual o token se torna inválido';
-$string['privacy:request:notexportedsecurity'] = 'Não exportado por motivos de segurança';
+$string['privacy:metadata'] = 'A API WebService não armazena quaisquer dados.';
 $string['protocol'] = 'Protocolo';
 $string['removefunction'] = 'Remover';
 $string['removefunctionconfirm'] = 'Tem a certeza de que pretende apagar a função "{$a->function}" do serviço "{$a->service}"?';
@@ -211,11 +196,16 @@ $string['testwithtestclient'] = 'Testar o serviço';
 $string['testwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes de o fazer, autentique-se como um utilizador que tenha a permissão "moodle/webservice:createtoken" e obtenha a chave de segurança (token) através das configurações na secção "O meu perfil". O token obtido será usado pelo cliente de teste. No cliente de teste, selecione e ative, com o token de autenticação, um dos protocolos ativos. <strong>AVISO: os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFETIVAMENTE realizadas por este utilizador no sistema.</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token de autenticação';
+$string['tokencopied'] = 'Texto copiado para a área de transferência.';
 $string['tokencreatedbyadmin'] = 'Apenas pode ser reiniciado(a) pelo administrador (*)';
 $string['tokencreator'] = 'Criador';
 $string['tokenfilter'] = 'Filtrar tokens';
 $string['tokenfilterreset'] = 'Mostrar todos os tokens';
 $string['tokenfiltersubmit'] = 'Mostrar apenas os tokens correspondentes';
+$string['tokenname'] = 'Nome';
+$string['tokennamehint'] = 'Se não inserir um nome, será usado um nome aleatório.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copie o token agora. Não será exibido novamente quando sair desta página.';
 $string['unknownoptionkey'] = 'Opção da chave desconhecida ({$a})';
 $string['unnamedstringparam'] = 'Um parâmetro da string está anónimo.';
 $string['updateusersettings'] = 'Atualizar';
@@ -226,12 +216,11 @@ $string['userasclientsdescription'] = 'Os passos seguintes mostram como configur
 $string['usermissingcaps'] = 'Permissões em falta: {$a}';
 $string['usernameorid'] = 'Nome de utilizador / ID do utilizador';
 $string['usernameorid_help'] = 'Insira um nome de utilizador ou um ID do utilizador';
-$string['usernameoridnousererror'] = 'Não foram encontrados utilizadores com esse Nome de utilizador/ID do utilizador';
-$string['usernameoridoccurenceerror'] = 'Foi encontrado mais do que um utilizador com este nome de utilizador. Por favor, insira o ID do utilizador.';
 $string['usernotallowed'] = 'O utilizador não tem permissão para usar este serviço. Para dar acesso a este utilizador, este deve ser adicionado à lista de utilizadores autorizados na página de administração de "{$a}".';
 $string['userservices'] = 'Serviços do utilizador: {$a}';
 $string['usersettingssaved'] = 'As configurações do utilizador foram guardadas';
 $string['validuntil'] = 'Válido até';
+$string['validuntil_empty'] = 'Este token não tem prazo de validade.';
 $string['validuntil_help'] = 'Se esta configuração estiver definida, o utilizador ficará impossibilitado de usar este serviço a partir desta data.';
 $string['webservice'] = 'Web service';
 $string['webservices'] = 'Web services';

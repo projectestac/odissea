@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'sv', version '4.1'.
+ * Strings for component 'publication', language 'sv', version '4.4'.
  *
  * @package     publication
  * @category    string
@@ -34,8 +34,6 @@ $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Uppgiftsinformatione
 $string['allowsubmissionsfromdate'] = 'Från';
 $string['allowsubmissionsfromdate_import'] = 'Medgivande kan ges från';
 $string['allowsubmissionsfromdate_upload'] = 'Filer kan laddas upp från';
-$string['allowsubmissionsfromdateh'] = 'Tidsperiod för uppladdning / medgivande';
-$string['allowsubmissionsfromdateh_help'] = 'Du kan bestämma under vilken tid eleverna kan ladda upp filer eller ge sitt medgivande för filpublicering. Under denna tidsperiod kan studenter redigera sina filer och kan också dra tillbaka sitt medgivande för publicering.';
 $string['allowsubmissionsfromdatesummary'] = 'Denna uppgift accepterar inlämningar från <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Visa alltid beskrivning';
 $string['alwaysshowdescription_help'] = 'Om inaktiverat kommer uppgiftsbeskrivningen ovan att visas endast för studenter från datumet "Tillåt inlämning från".';
@@ -47,9 +45,6 @@ $string['assignment'] = 'Uppgift';
 $string['assignment_help'] = 'Välj uppgiften du vill importera filer från. För tillfället stöds inte gruppuppgifter och dessa kan därför inte väljas.';
 $string['assignment_notfound'] = 'Uppgiften från vilken filerna hämtades kan inte längre hittas.';
 $string['assignment_notset'] = 'Ingen uppgift har valts';
-$string['autoimport'] = 'Synkronisera automatiskt med uppgiften';
-$string['autoimport_help'] = 'Om aktiverat importeras nya bidrag från uppgiften automatiskt till publiceringsmodulen. Läraren behöver ändå markera de uppgifter som ska publiceras.
-Om inställt att students medgivande behövs, måste detta erhållas igen för de nya filerna.';
 $string['availability'] = 'Tidsperiod för uppladdning / medgivande';
 $string['choose'] = 'Vänligen välj...';
 $string['configautoimport'] = 'Om du föredrar att studentbidrag importeras automatiskt till studentmapp. Denna funktion kan aktiveras / inaktiveras för varje studentmapp separat.';
@@ -76,10 +71,6 @@ $string['duedate_upload'] = 'Filer kan laddas upp till';
 $string['duedatevalidation'] = 'Stoppdatum/tid måste vara senare än "Tillåt inlämningar från".';
 $string['edit_timeover'] = 'Filer kan bara redigeras under ändringsperioden.';
 $string['edit_uploads'] = 'Redigera / Ladda upp filer';
-$string['emailstudentsmail'] = '{$a->username} har ändrat medgivandestatus för \'{$a->filename}\' i \'{$a->publication}\' till {$a->apstatus}, {$a->dayupdated} kl. {$a->timeupdated}. Det finns tillgängligt här: {$a->url}';
-$string['emailstudentsmailhtml'] = '{$a->username} har ändrat medgivandestatus för \'{$a->filename}\' i <i>\'{$a->publication}\'</i> till <b>{$a->apstatus}, </b> {$a->dayupdated} kl. {$a->timeupdated}</i><br /><br /> Det finns <a href="{$a->url}">tillgängligt här</a>.';
-$string['emailteachermail'] = '---------------------------------------------------------------------\\n{$a->username} har laddat upp \'{$a->filename}\' i \'{$a->publication}\', {$a->dayupdated} kl. {$a->timeupdated}. Det finns tillgängligt här: {$a->url}---------------------------------------------------------------------\\n';
-$string['emailteachermailhtml'] = '{$a->username} har laddat upp \'{$a->filename}\' i <i>\'{$a->publication}\', {$a->dayupdated} kl. {$a->timeupdated}</i><br /><br /> Det finns <a href="{$a->url}">tillgängligt här</a>.';
 $string['entiresperpage'] = 'Deltagare per sida';
 $string['eventpublicationapprovalchanged'] = 'Medgivande ändrat';
 $string['eventpublicationduedateextended'] = 'Avstängningsdatum för publicering förlängt';
@@ -94,10 +85,6 @@ $string['filedetails'] = 'Detaljer';
 $string['filesofthesetypes'] = 'Filer av dessa format kan ladda upp:';
 $string['go'] = 'Kör';
 $string['grantextension'] = 'Ge förlängning';
-$string['groupapprovalmode'] = 'Gruppmedgivande';
-$string['groupapprovalmode_all'] = 'Samtliga gruppmedlemmar måste ge medgivande för publicering';
-$string['groupapprovalmode_help'] = 'Här bestämmer du om medgivande av samtliga gruppmedlemmar eller medgivande av minst en gruppmedlem krävs för att filer ska publiceras. Filerna visas då först efter medgivande av alla gruppmedlemmar, eller minst en gruppmedlem.';
-$string['groupapprovalmode_single'] = 'Minst en gruppmedlem måste ge medgivande för publicering';
 $string['guideline'] = 'Publicerat:';
 $string['hidden'] = 'Ej publicerad';
 $string['importfrom_err'] = 'Du måste välja en uppgift att importera från';
@@ -123,12 +110,6 @@ $string['nothing_to_show_groups'] = '<strong>Inget att visa - inga filer är til
 $string['nothing_to_show_users'] = '<strong>Inget att visa - inga filer är tillgängliga</strong>';
 $string['nothingtodisplay'] = '<strong>Inget att visa</strong>';
 $string['notice'] = '<strong>Notera:</strong>';
-$string['notice_groupimportrequireallapproval'] = 'Du behöver ge medgivande innan filer du laddat upp publiceras. Alla gruppmedlemmar måste ge sitt medgivande innan det visas.';
-$string['notice_groupimportrequireoneapproval'] = 'Ge medgivande om det du laddat upp ska publiceras. En gruppmedlems godkännande räcker. Var överens om publiceringen inom gruppen innan du medger detta!';
-$string['notice_importnoapproval'] = 'Dina egna filer.';
-$string['notice_importrequireapproval'] = 'Du behöver ge medgivande om det du laddat upp ska publiceras.';
-$string['notice_uploadnoapproval'] = 'Filer som laddas upp blir omedelbart publicerade vid uppladdning. Lärare kan dölja publicerade filer.';
-$string['notice_uploadrequireapproval'] = 'Uppladdade filer blir synliga efter att lärare har granskat och godkänt för publicering.';
 $string['notifications'] = 'Notifikationer';
 $string['notifystudents'] = 'Notifiera studenter om ändring av medgivandestatus';
 $string['notifystudents_help'] = 'Om aktiverad får eleverna ett meddelande när medgivandestatusen för en av deras uppladdningar ändras. Meddelandemetoden kan konfigureras i användarens egna inställningar för notifikationer.';
@@ -189,9 +170,5 @@ $string['visible'] = 'Publicerad';
 $string['visibleforstudents'] = 'Publicerad';
 $string['visibleforstudents_no'] = 'Den här filen är inte synlig för studenter';
 $string['visibleforstudents_yes'] = 'Studenter kan se den här filen';
-$string['warning_changefromobtainstudentapproval'] = 'Om du utför den här ändringen kan bara du bestämma vilka filer som publiceras för alla studenter. Studenterna ombeds inte medge detta. Alla filer markerade som godkända för publicering blir synliga för alla studenter.';
-$string['warning_changefromobtainteacherapproval'] = 'När du ändrar detta kommer alla filer som laddas upp att publiceras för andra studenter. Lärare kan avpublicera / dölja filer manuellt. Om det redan finns filer uppladdade bör deras publiceringsstatus se över.';
-$string['warning_changetoobtainstudentapproval'] = 'Om du utför denna ändring tillfrågas studenterna om deras medgivande för alla filer som är markerade som publicerade. Filer publiceras först efter studenternas medgivande.';
-$string['warning_changetoobtainteacherapproval'] = 'När du ändrar detta kommer inte filer som laddas upp att vara synliga för andra studenter per automatik. Du måste markera vilka filer som ska publiceras. Om det redan finns filer uppladdade bör deras publiceringsstatus se över.';
 $string['withselected'] = 'Med valda...';
 $string['zipusers'] = 'Ladda ned som zip-fil';

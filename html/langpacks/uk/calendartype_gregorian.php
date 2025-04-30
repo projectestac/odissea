@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendartype_gregorian', language 'uk', version '4.1'.
+ * Strings for component 'calendartype_gregorian', language 'uk', version '4.4'.
  *
  * @package     calendartype_gregorian
  * @category    string

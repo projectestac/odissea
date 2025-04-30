@@ -23,3 +23,4 @@
  */
 
 $string['pluginname'] = 'Font size';
+$string['privacy:metadata'] = 'The atto_fontsize plugin does not store any personal data.';

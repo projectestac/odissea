@@ -16,9 +16,10 @@
 
 namespace enrol_meta\external;
 
+use core_external\external_api;
+
 defined('MOODLE_INTERNAL') || die();
 global $CFG;
-require_once($CFG->libdir . '/externallib.php');
 require_once($CFG->dirroot . '/webservice/tests/helpers.php');
 
 /**
@@ -30,7 +31,7 @@ require_once($CFG->dirroot . '/webservice/tests/helpers.php');
  * @copyright  2021 WKS KV Bildung
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class delete_instances_test extends \externallib_advanced_testcase {
+final class delete_instances_test extends \externallib_advanced_testcase {
 
     /**
      * Test setup
@@ -43,7 +44,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
     /**
      * Test delete_instances no instances.
      */
-    public function test_delete_instances_no_instances() {
+    public function test_delete_instances_no_instances(): void {
         $this->expectException(\invalid_parameter_exception::class);
         delete_instances::execute([]);
     }
@@ -51,7 +52,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
     /**
      * Test delete_instances missing courses.
      */
-    public function test_delete_instances_missing_courses() {
+    public function test_delete_instances_missing_courses(): void {
         $course = self::getDataGenerator()->create_course();
 
         // Missing meta course.
@@ -74,7 +75,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
     /**
      * Test delete_instances missing capabilities.
      */
-    public function test_delete_instances_missing_capabilities() {
+    public function test_delete_instances_missing_capabilities(): void {
         $metacourse = self::getDataGenerator()->create_course();
         $course = self::getDataGenerator()->create_course();
         $user = self::getDataGenerator()->create_user();
@@ -101,7 +102,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
     /**
      * Test delete_instances.
      */
-    public function test_delete_instances() {
+    public function test_delete_instances(): void {
         global $DB;
         $metacourse = self::getDataGenerator()->create_course();
         $course = self::getDataGenerator()->create_course();
@@ -121,7 +122,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
 
         // Delete instance.
         $result = delete_instances::execute([['metacourseid' => $metacourse->id, 'courseid' => $course->id]]);
-        $result = \external_api::clean_returnvalue(add_instances::execute_returns(), $result);
+        $result = external_api::clean_returnvalue(add_instances::execute_returns(), $result);
         $this->assertEquals($result[0]['metacourseid'], $metacourse->id);
         $this->assertEquals($result[0]['courseid'], $course->id);
         $this->assertEquals($result[0]['status'], 1);
@@ -133,7 +134,7 @@ class delete_instances_test extends \externallib_advanced_testcase {
 
         // Delete same instance.
         $result = delete_instances::execute([['metacourseid' => $metacourse->id, 'courseid' => $course->id]]);
-        $result = \external_api::clean_returnvalue(add_instances::execute_returns(), $result);
+        $result = external_api::clean_returnvalue(add_instances::execute_returns(), $result);
         $this->assertEquals($result[0]['metacourseid'], $metacourse->id);
         $this->assertEquals($result[0]['courseid'], $course->id);
         $this->assertEquals($result[0]['status'], 0);

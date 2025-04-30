@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'es', version '4.1'.
+ * Strings for component 'tool_generator', language 'es', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Actividades adicionales';
+$string['additionalmodules_help'] = 'Seleccionar más actividades que implementan la función course_backend_generator_create_activity para incluirlas en el curso de prueba.';
 $string['bigfile'] = 'Fichero grande {$a}';
 $string['courseexplanation'] = 'Esta herramienta crea cursos de prueba estándar que incluyen muchas secciones, actividades , y archivos.
 
@@ -71,6 +73,7 @@ $string['progress_createcourse'] = 'Creando curso {$a}';
 $string['progress_createforum'] = 'Creando foro ({$a} posts)';
 $string['progress_createpages'] = 'Creando páginas ({$a})';
 $string['progress_createsmallfiles'] = 'Creando archivos pequeños ({$a})';
+$string['progress_createusers'] = 'Crear cuentas de usuario';
 $string['progress_enrol'] = 'Matriculando usuarios en el curso ({$a})';
 $string['progress_sitecompleted'] = 'Sitio completado ({$a}s)';
 $string['shortsize_0'] = 'XS';
@@ -113,5 +116,17 @@ $string['testplansize_2'] = 'M ({$a->users} usuarios, {$a->loops} bucles y {$a->
 $string['testplansize_3'] = 'L ({$a->users} usuarios, {$a->loops} bucles y {$a->rampup} periodo de despliegue)';
 $string['testplansize_4'] = 'XL ({$a->users} usuarios, {$a->loops} bucles y {$a->rampup} periodo de despliegue)';
 $string['testplansize_5'] = 'XXL ({$a->users} usuarios, {$a->loops} bucles y {$a->rampup} periodo de despliegue)';
+$string['testscenario'] = 'Crear escenarios de prueba';
+$string['testscenario_description'] = 'Crear escenarios de prueba usa una sintaxis de archivos personalizada limitada para crear todos los elementos necesarios para ejecutar una comprobación manual.';
+$string['testscenario_errorparsing'] = 'Error al analizar archivo de características: {$a}';
+$string['testscenario_file'] = 'Archivo de características';
+$string['testscenario_filedesc'] = 'Los archivos de características subido solamente pueden contener escenarios con pasos core_data_generator. Aún no es compatible con scenario outlines. Todos los escenarios se ejecutarán a la vez pero el fondo se ignorará.';
+$string['testscenario_invalidfile'] = 'El archivo de formato no es válido o contiene pasos no válidos.';
+$string['testscenario_invalidstep'] = 'Paso no válido. Crear escenarios de prueba solamente admite generator steps.';
+$string['testscenario_nosteps'] = 'No hay pasos a ejecutar en el archivo.';
+$string['testscenario_notready'] = 'No están instaladas las librerías composer ni behat.<br><br>Por favor, ejecute este comando para habilitar esta herramienta: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Scenario outlines no está soportado.';
+$string['testscenario_scenarionosteps'] = 'Este escenario no tiene ningún paso.';
+$string['testscenario_steps'] = 'Pasos de prueba de escenario:';
 $string['updateuserspassword'] = 'Actualizar la contraseña de los usuarios del curso';
 $string['updateuserspassword_help'] = 'JMeter necesita iniciar sesión como los usuarios del curso, puede establecer la contraseña de los usuarios usando $CFG->tool_generator_users_password en el archivo config.php; esta configuración actualiza la contraseña del usuario del curso de acuerdo con $CFG->tool_generator_users_password. Puede ser útil en caso de que esté utilizando un curso no generado por tool_generator o si no se configuró $CFG->tool_generator_users_password cuando creó los cursos de prueba.';

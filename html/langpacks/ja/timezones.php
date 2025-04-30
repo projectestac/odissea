@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'ja', version '4.1'.
+ * Strings for component 'timezones', language 'ja', version '4.4'.
  *
  * @package     timezones
  * @category    string
@@ -47,7 +47,7 @@ $string['africa/djibouti'] = 'アフリカ/ジブチ';
 $string['africa/douala'] = 'アフリカ/ドゥアラ';
 $string['africa/el_aaiun'] = 'アフリカ/エルアイウン';
 $string['africa/freetown'] = 'アフリカ/フリータウン';
-$string['africa/gaborone'] = 'アフリカ/ガボローネ';
+$string['africa/gaborone'] = 'アフリカ/ハボローネ';
 $string['africa/harare'] = 'アフリカ/ハラーレ';
 $string['africa/johannesburg'] = 'アフリカ/ヨハネスバーグ';
 $string['africa/juba'] = 'アフリカ/ジューバ';

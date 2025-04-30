@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'eu', version '4.1'.
+ * Strings for component 'tool_log', language 'eu', version '4.4'.
  *
  * @package     tool_log
  * @category    string

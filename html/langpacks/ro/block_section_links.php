@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ro', version '4.1'.
+ * Strings for component 'block_section_links', language 'ro', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = 'Măreşte cu';
 $string['incby1_help'] = 'Aceasta este valoarea incrementată a secțiunii de fiecare dată când un link al secțiunii este afișat începând de la 1.';
 $string['incby2'] = 'Creștere alternativă cu';
 $string['incby2_help'] = 'Aceasta este valoarea secțiunii este incrementat de fiecare dată când o legătură secțiune este afișată începând de la 1.';
-$string['jumptocurrenttopic'] = 'Treci la tema curentă';
+$string['jumptocurrenttopic'] = 'Treci la secțiunea evidențiată';
 $string['jumptocurrentweek'] = 'Treci la săptămâna curentă';
 $string['numsections1'] = 'Număr de secţiuni';
 $string['numsections1_help'] = 'Odată ce numărul de secțiuni din curs a atins acest număr, este utilizată valoarea incrementată.';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Blocul Legături secțiune afișează doar datele
 $string['section_links:addinstance'] = 'Adaugă un nou bloc link-uri secțiune';
 $string['showsectionname'] = 'Afișați numele secțiunii';
 $string['showsectionname_help'] = 'Afișați numele secțiunii pe lângă numărul secțiunii';
-$string['topics'] = 'Secțiuni';
-$string['weeks'] = 'Săptămâni';

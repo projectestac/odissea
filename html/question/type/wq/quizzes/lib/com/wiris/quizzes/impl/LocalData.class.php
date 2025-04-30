@@ -53,6 +53,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT;
 	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND = "inlineHand";
 	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_GRAPH = "inlineGraph";
+	static $VALUE_OPENANSWER_INPUT_FIELD_MULTISTEP_EDITOR = "multiStepEditor";
 	static $VALUE_SHOW_CAS_FALSE;
 	static $VALUE_SHOW_CAS_ADD;
 	static $VALUE_SHOW_CAS_REPLACE_INPUT;
@@ -69,6 +70,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $VALUE_FOCUS = "focus";
 	static $KEY_GRAPH_MAGNETIC_GRID = "graphMagneticGrid";
 	static $VALUE_SNAP = "snap";
+	static $KEY_MULTISTEP_SESSION_ID = "multistepSessionId";
 	static $keys;
 	function __toString() { return 'com.wiris.quizzes.impl.LocalData'; }
 }

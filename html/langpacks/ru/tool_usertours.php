@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ru', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ru', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -134,7 +134,6 @@ $string['placement_help'] = 'Шаг может быть расположен с�
 
 Если этот шаг не подходит для указанного места на конкретной странице, он будет автоматически помещен в другое место.';
 $string['pluginname'] = 'Туры для пользователей';
-$string['previousstep'] = 'Назад';
 $string['privacy:metadata:preference:completed'] = 'Время, когда пользователь в последний раз завершил пользовательский тур.';
 $string['privacy:metadata:preference:requested'] = 'Время, когда пользователь последний раз вручную запрашивал пользовательский тур.';
 $string['privacy:request:preference:completed'] = 'Последний раз вы отметили тур пользователя «{$a->name}» как завершенный в {$a->time}';
@@ -149,6 +148,9 @@ $string['selector_defaulttitle'] = 'Введите информативный з
 $string['selectordisplayname'] = 'Селектор CSS, соответствующий шаблону «{$a}»';
 $string['selecttype'] = 'Выберите тип шага';
 $string['sharedtourslink'] = 'Репозиторий туров';
+$string['showtoureachtime'] = 'каждый раз, когда ему соответствует фильтр';
+$string['showtouruntilcomplete'] = 'пока его не закрыли';
+$string['showtourwhen'] = 'Показать тур';
 $string['skip'] = 'Пропустить';
 $string['skip_tour'] = 'Пропустить тур';
 $string['target'] = 'Цель';
@@ -243,6 +245,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'Новые настрой
 $string['tour_activityinfo_course_teacher_title'] = 'Новое: информация об активном элементе';
 $string['tour_final_step_content'] = 'Это конец вашего пользовательского тура. Он не будет отображаться снова, если только вы не сбросите его, пользуясь ссылкой в нижнем колонтитуле.';
 $string['tour_final_step_title'] = 'Конец тура';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div> Отсортируйте столбцы и выберите, какие из них отображать. В режиме редактирования используйте этот ярлык для доступа к частым задачам, связанным с просмотром и изменением элементов оценок.';
+$string['tour_gradebook_action_title'] = 'Быстрые ссылки к действиям';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Отфильтруйте студентов по инициалам их имени или фамилии.';
+$string['tour_gradebook_filter_title'] = 'Фильтр по имени';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Используйте окно поиска, чтобы быстро найти конкретных студентов.';
+$string['tour_gradebook_search_title'] = 'Легкий поиск студентов';
+$string['tour_gradebook_tour_description'] = 'Функции поиска и навигации в отчете оценщика журнала оценок';
+$string['tour_gradebook_tour_name'] = 'Отчет оценщика журнала оценок';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Публикуйте здесь важные новости.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Что рассказать всем?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Добавьте новый контент или отредактируйте существующий.';

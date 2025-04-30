@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ro', version '4.1'.
+ * Strings for component 'repository_equella', language 'ro', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = 'Vezi depozit EQUELLA';
 $string['equellaaction'] = 'Acțiune EQUELLA';
 $string['equellaoptions'] = 'Opțiuni EQUELLA';
 $string['equellaurl'] = 'URL EQUELLA';
+$string['equellauserfield'] = 'Câmp de utilizator EQUELLA';
+$string['equellauserfield_help'] = 'Alegeți câmpul de utilizator care va fi utilizat pentru a corespunde cu utilizatorul EQUELLA.  (Sunt afișate doar câmpurile de utilizator de tip text scurt)';
+$string['equellausername'] = 'Nume de utilizator';
 $string['group'] = 'setări rol {$a}';
 $string['groupdefault'] = 'Implicit';
 $string['pluginname'] = 'Depozit EQUELLA';

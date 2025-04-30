@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ru', version '4.1'.
+ * Strings for component 'page', language 'ru', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -66,8 +66,6 @@ $string['popupheight'] = 'Высота всплывающего окна ( в п
 $string['popupheightexplain'] = 'Определяет по умолчанию высоту всплывающего окна.';
 $string['popupwidth'] = 'Ширина всплывающего окна (в пикселях)';
 $string['popupwidthexplain'] = 'Определяет по умолчанию ширину всплывающего окна.';
-$string['printheading'] = 'Отображать название страницы';
-$string['printheadingexplain'] = 'Отображать название страницы выше содержимого?';
 $string['printintro'] = 'Показывать описание страницы';
 $string['printintroexplain'] = 'Показывать описание страницы перед содержимым?';
 $string['printlastmodified'] = 'Показывать дату последнего изменения';

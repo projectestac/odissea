@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'it', version '4.1'.
+ * Strings for component 'publication', language 'it', version '4.4'.
  *
  * @package     publication
  * @category    string
@@ -32,10 +32,9 @@ $string['allowedfiletypes_err'] = 'Hai inserito estensioni di file o separatori 
 $string['allowedfiletypes_help'] = 'È possibile limitare i tipi di file accettati inserendo un elenco di tipi di file separati da virgola, es. \'video/mp4, audio/mp3, image/png, image/jpeg\', o estensioni di file compreso il punto, es. \'.png, .jpg\'. Lasciando il campo vuoto saranno accettati tutti i tipi di file.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'I dettagli della consegna e l’area di consegna saranno disponibili dal <strong>{$a}</strong>.';
 $string['allowsubmissionsfromdate'] = 'Dal';
+$string['allowsubmissionsfromdate_help'] = 'Se abilitato, gli studenti non potranno caricare nulla prima di questa data. Se disabilitato, gli studenti potranno iniziare subito a caricare file.';
 $string['allowsubmissionsfromdate_import'] = 'Possibilità di approvazione da';
 $string['allowsubmissionsfromdate_upload'] = 'Apertura caricamento file';
-$string['allowsubmissionsfromdateh'] = 'Periodo di caricamento/approvazione';
-$string['allowsubmissionsfromdateh_help'] = 'Puoi definire il periodo di tempo durante il quale gli studenti possono caricare file o dare il loro consenso per la pubblicazione dei file. Durante questo periodo gli studenti possono modificare i loro file e anche ritirare il proprio consenso per la pubblicazione.';
 $string['allowsubmissionsfromdatesummary'] = 'Sarà possibile consegnare dal <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Mostra sempre la descrizione';
 $string['alwaysshowdescription_help'] = 'Se disattivato, la descrizione della consegna sarà visibile agli studenti solo dopo la data di apertura della consegna.';
@@ -47,8 +46,6 @@ $string['assignment'] = 'Compito';
 $string['assignment_help'] = 'Scegli il compito da cui importare i file. Al momento le consegne di gruppo non sono supportate.';
 $string['assignment_notfound'] = 'Il compito da cui sono stati importati i file non è più disponibile.';
 $string['assignment_notset'] = 'Non è stato selezionato nessun compito.';
-$string['autoimport'] = 'Sincronizza automaticamente con il compito';
-$string['autoimport_help'] = 'Se abilitato, ogni volta che un nuovo file verrà caricato nel compito indicato sarà importato automaticamente in questa cartella studenti. (Facoltativo) Gli studenti devono approvare nuovamente la pubblicazione dei nuovi file.';
 $string['availability'] = 'Periodo di caricamento/approvazione';
 $string['choose'] = 'Seleziona…';
 $string['configautoimport'] = 'Se i file consegnati dagli studenti devono essere importati automaticamente nelle istanze di cartella studenti. Questa opzione può essere gestita separatamente per ogni istanza.';
@@ -73,24 +70,6 @@ $string['duedate_upload'] = 'Termine per il caricamento';
 $string['duedatevalidation'] = 'La data di chiusura dev’essere successiva alla data di apertura.';
 $string['edit_timeover'] = 'Non è più possibile modificare i file.';
 $string['edit_uploads'] = 'Carica/modifica file';
-$string['emailstudentsmail'] = '{$a->username} ha modificato lo stato di approvazione di \'{$a->filename}\'
-all’interno di \'{$a->publication}\' in {$a->apstatus} il {$a->dayupdated} alle {$a->timeupdated}.
-
-Puoi vederlo qui:
-
-    {$a->url}';
-$string['emailstudentsmailhtml'] = '{$a->username} ha modificato lo stato di approvazione di \'{$a->filename}\'
-all’interno di <i>\'{$a->publication}\'</i> in <b>{$a->apstatus}</b> il {$a->dayupdated} alle {$a->timeupdated}</i><br /><br />
-È <a href="{$a->url}">disponibile sul sito</a>.';
-$string['emailteachermail'] = '---------------------------------------------------------------------\\n{$a->username} ha caricato \'{$a->filename}\'
-all’interno di \'{$a->publication}\' il {$a->dayupdated} alle {$a->timeupdated}.
-
-Puoi vederlo qui:
-
-    {$a->url}---------------------------------------------------------------------\\n';
-$string['emailteachermailhtml'] = '{$a->username} ha caricato \'{$a->filename}\'
-all’interno di <i>\'{$a->publication}\' il {$a->dayupdated} alle {$a->timeupdated}</i><br /><br />
-È <a href="{$a->url}">disponibile sul sito</a>.';
 $string['entiresperpage'] = 'Numero di partecipanti per pagina';
 $string['eventpublicationapprovalchanged'] = 'Consenso alla pubblicazione modificato';
 $string['eventpublicationduedateextended'] = 'Data di chiusura posticipata';
@@ -101,10 +80,6 @@ $string['filedetails'] = 'Dettagli';
 $string['filesofthesetypes'] = 'Sono accettati i seguenti tipi di file:';
 $string['go'] = 'Vai';
 $string['grantextension'] = 'Concedi proroga';
-$string['groupapprovalmode'] = 'Modalità approvazione di gruppo';
-$string['groupapprovalmode_all'] = 'Tutti i componenti del gruppo devono approvare';
-$string['groupapprovalmode_help'] = 'Scegli se è necessario che tutti i membri del gruppo approvino la pubblicazione o se è sufficiente quella di un solo componente del gruppo per rendere i file visibili a tutti.';
-$string['groupapprovalmode_single'] = 'Almeno un componente deve approvare';
 $string['importfrom_err'] = 'Scegli un compito da cui importare i file.';
 $string['maxbytes'] = 'Dimensione massima file';
 $string['maxfiles'] = 'Numero massimo di file caricabili';
@@ -129,12 +104,6 @@ $string['nothing_to_show_groups'] = 'Niente da mostrare - Non ci sono gruppi dis
 $string['nothing_to_show_users'] = 'Niente da mostrare - Non ci sono studenti disponibili';
 $string['nothingtodisplay'] = 'Nessun contenuto presente';
 $string['notice'] = 'Attenzione:';
-$string['notice_groupimportrequireallapproval'] = 'Decidi se rendere i file visibili a tutti. Tutti i componenti del gruppo devono dare la loro approvazione affinché i file siano visibili.';
-$string['notice_groupimportrequireoneapproval'] = 'Decidi se rendere i file visibili a tutti. È sufficiente l’approvazione di un solo componente del gruppo per rendere visibili i file. Discutine con il tuo gruppo prima di approvare!';
-$string['notice_importnoapproval'] = 'I file seguenti sono visibili a tutti.';
-$string['notice_importrequireapproval'] = 'Scegli se rendere i tuoi file disponibili a tutti.';
-$string['notice_uploadnoapproval'] = 'I file saranno subito visibili a tutti. Il docente può nascondere in qualsiasi momento i file pubblicati.';
-$string['notice_uploadrequireapproval'] = 'I file caricati saranno visibili solo dopo l’approvazione del docente.';
 $string['notifications'] = 'Notifiche';
 $string['notifystudents'] = 'Invia notifiche agli studenti se lo stato di approvazione cambia';
 $string['notifystudents_help'] = 'Se abilitato, gli studenti ricevono una notifica se lo stato di approvazione di uno dei loro file cambia. I metodi di notifica sono configurabili.';

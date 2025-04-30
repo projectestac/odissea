@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'el', version '4.1'.
+ * Strings for component 'grades', language 'el', version '4.4'.
  *
  * @package     grades
  * @category    string
@@ -128,7 +128,6 @@ $string['changereportdefaults'] = 'Αλλαγή προεπιλογών αναφ�
 $string['chooseaction'] = 'Επιλέξτε μια ενέργεια ...';
 $string['choosecategory'] = 'Επιλογή Κατηγορίας';
 $string['collapsecriterion'] = 'Κριτήριο σύμπτυξης';
-$string['combo'] = 'Καρτέλες και πτυσσόμενο μενού';
 $string['compact'] = 'Συμπαγής';
 $string['componentcontrolsvisibility'] = 'Το αν αυτό το στοιχείο βαθμού είναι σε απόκρυψη ελέγχεται από τις ρυθμίσεις της δραστηριότητας.';
 $string['contract'] = 'Συστολή κατηγορίας';
@@ -163,7 +162,6 @@ $string['displaylettergrade'] = 'Εμφάνιση Γραμματικών Βαθ�
 $string['displaypercent'] = 'Εμφάνιση Ποσοστών';
 $string['displaypoints'] = 'Εμφάνιση Πόντων';
 $string['displayweighted'] = 'Εμφάνιση σταθμισμένων βαθμών';
-$string['dropdown'] = 'Πτυσσόμενο μενού';
 $string['droplow'] = 'Απόρριψη των χαμηλότερων';
 $string['droplow_help'] = 'Αυτή η ρύθμιση επιτρέπει ένας καθοριζόμενος αριθμός από τις χαμηλότερες βαθμολογίες να εξαιρείται από τη συνάθροιση.';
 $string['droplowestvalue'] = 'Ορίστε να απορρίπτεται ο βαθμός με τη χαμηλότερη τιμή';
@@ -545,7 +543,6 @@ $string['mygrades'] = 'Σύνδεσμος βαθμών στο μενού χρή�
 $string['mygrades_desc'] = 'Αυτή η ρύθμιση επιτρέπει την επιλογή σύνδεσης με ένα εξωτερικό βαθμολόγιο από το μενού χρήστη.';
 $string['mypreferences'] = 'Οι προτιμήσεις μου';
 $string['myreportpreferences'] = 'Οι προτιμήσεις μου για αναφορές';
-$string['navmethod'] = 'Μέθοδος πλοήγησης';
 $string['neverdeletehistory'] = 'Το ιστορικό να μην διαγράφεται ποτέ';
 $string['newcategory'] = 'Νέα κατηγορία';
 $string['newitem'] = 'Νέο στοιχείο βαθμού';
@@ -797,7 +794,6 @@ $string['showverbose'] = 'Εμφάνιση {$a->category} {$a->itemmodule} {$a->
 $string['showweight'] = 'Εμφάνιση συντελεστών βαρύτητας';
 $string['showweight_help'] = 'Εάν θα εμφανίζεται μια στήλη για τον συντελεστή βαρύτητας του βαθμού.';
 $string['simpleview'] = 'Ατομική προβολή';
-$string['singleview'] = 'Ατομική προβολή για {$a}';
 $string['sitewide'] = 'Σε όλο τον ιστότοπο';
 $string['sort'] = 'ταξινόμηση';
 $string['sortasc'] = 'Ταξινόμηση σε αύξουσα σειρά';
@@ -817,7 +813,6 @@ $string['submittedon'] = 'Υποβλήθηκε: {$a}';
 $string['sumofgradesupgradedgrades'] = 'Σημείωση: Η μέθοδος συνάθροισης «Σύνολο βαθμών» έχει αλλάξει σε «Φυσική» ως μέρος αναβάθμισης ιστοτόπου. Επειδή στο παρόν μάθημα χρησιμοποιήθηκε προηγουμένως το «άθροισμα βαθμών», συνιστάται να εξετάζετε αυτήν την αλλαγή στο βαθμολόγιο.';
 $string['switchtofullview'] = 'Εναλλαγή σε πλήρη προβολή';
 $string['switchtosimpleview'] = 'Εναλλαγή σε απλή προβολή';
-$string['tabs'] = 'Καρτέλες';
 $string['topcategory'] = 'Σούπερ κατηγορία';
 $string['total'] = 'Συνολικό';
 $string['totalweight100'] = 'Το σύνολο των συντελεστών βαρύτητας είναι ίσο με 100';

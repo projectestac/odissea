@@ -58,11 +58,19 @@
     }
 }}
 {{#editing}}
-    {{^ismoodle41minus}}
-        <div class="divider divider-plus bulk-hidden" data-action="insert-before-{{activityname}}">
-            {{> core_course/activitychooserbuttonactivity}}
-        </div>
-    {{/ismoodle41minus}}
+    {{#ismoodle44}}
+        {{< core_courseformat/local/content/divider}}
+            {{$content}}{{> core_course/activitychooserbuttonactivity}}{{/content}}
+        {{/ core_courseformat/local/content/divider}}
+    {{/ismoodle44}}
+    {{^ismoodle44}}
+        {{! In Moodle 45 this was refactored}}
+        {{< core_courseformat/local/content/divider}}
+            {{$content}}
+                {{#activitychooserbutton}}{{> core_course/activitychooserbutton}}{{/activitychooserbutton}}
+            {{/content}}
+        {{/ core_courseformat/local/content/divider}}
+    {{/ismoodle44}}
 {{/editing}}
 <div class="activity-item {{#modstealth}}hiddenactivity{{/modstealth}}{{!
         }}{{#modhiddenfromstudents}}hiddenactivity{{/modhiddenfromstudents}}{{!

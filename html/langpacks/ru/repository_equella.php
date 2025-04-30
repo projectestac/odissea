@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ru', version '4.1'.
+ * Strings for component 'repository_equella', language 'ru', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = 'Просматривать хранилище фай�
 $string['equellaaction'] = 'Действия EQUELLA';
 $string['equellaoptions'] = 'Опции EQUELLA';
 $string['equellaurl'] = 'URL-адрес EQUELLA';
+$string['equellauserfield'] = 'Поле пользователя EQUELLA';
+$string['equellauserfield_help'] = 'Выберите поле пользователя, которое будет использоваться для сопоставления пользователя Equella (перечислены только поля типа короткий текст)';
+$string['equellausername'] = 'Имя пользователя';
 $string['group'] = 'Настройки роли {$a}';
 $string['groupdefault'] = 'По умолчанию';
 $string['pluginname'] = 'Хранилище EQUELLA';

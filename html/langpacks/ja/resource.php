@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', version '4.1'.
+ * Strings for component 'resource', language 'ja', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = '新しいリソースを追加する';
 $string['resource:exportresource'] = 'リソースをエクスポートする';
 $string['resource:view'] = 'リソースを表示する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'ファイル';
 $string['selectmainfile'] = 'ファイル名の横にあるアイコンをクリックしてメインファイルを選択してください。';
 $string['showdate'] = 'アップロード/修正日時を表示する';

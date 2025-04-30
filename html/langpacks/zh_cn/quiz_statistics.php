@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'zh_cn', version '4.1'.
+ * Strings for component 'quiz_statistics', language 'zh_cn', version '4.4'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -65,6 +65,9 @@ $string['firstattempts'] = '首次答题';
 $string['firstattemptsavg'] = '首次答题平均分';
 $string['firstattemptscount'] = '已完全评分的首次答题个数';
 $string['frequency'] = '频率';
+$string['getstatslockprogress'] = '等待正在执行的任务。请稍候或稍后再试。';
+$string['getstatslocktimeout'] = '统计计算锁定超时';
+$string['getstatslocktimeoutdesc'] = '尝试为测验执行统计计算时等待锁的秒数。该设置主要用于测试，除非您知道自己在做什么，否则不要修改它。';
 $string['highestattempts'] = '最高分数';
 $string['highestattemptsavg'] = '最高分数平均分';
 $string['intended_weight'] = '预期权重';
@@ -85,6 +88,7 @@ $string['negcovar_help'] = '此题在此试卷集合中的成绩与测验中所�
 
 如果您编辑一个测验，让有负值协方差的题目的最高分为 0，那么这些题目的实际权重会是 0，其它题目的实际权重会按当前情况计算。';
 $string['nogradedattempts'] = '本考试尚未有任何答题尝试，或所有答题尝试中包括需要人工评分的试题。';
+$string['nostats'] = '无法完成统计计算。可能正在进行长时间运行的计算。请稍后再试。';
 $string['nostudentsingroup'] = '此小组中还没有学生';
 $string['optiongrade'] = '得分比例';
 $string['partofquestion'] = '试题部分';
@@ -106,6 +110,7 @@ $string['random_guess_score'] = '随机猜测得分';
 $string['rangebetween'] = '{$a->min} - {$a->max}';
 $string['rangeofvalues'] = '这些问题的统计范围';
 $string['recalculatenow'] = '立即重新计算';
+$string['recalculatetask'] = '重新计算问题统计';
 $string['reportsettings'] = '统计计算设置';
 $string['response'] = '回答';
 $string['skewness'] = '分数分布偏度（{$a}）';

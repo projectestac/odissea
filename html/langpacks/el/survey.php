@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'el', version '4.1'.
+ * Strings for component 'survey', language 'el', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Πραγματικό';
 $string['actualclass'] = 'Πραγματική τάξη';
 $string['actualstudent'] = '{$a} πραγματικό';
 $string['allquestionrequireanswer'] = 'Όλες οι ερωτήσεις απαιτούνται και πρέπει να απαντηθούν.';
-$string['allquestions'] = 'Όλες οι ερωτήσεις στη σειρά, όλοι οι μαθητές';
 $string['allscales'] = 'Όλες οι κλίμακες, όλοι οι μαθητές';
 $string['alreadysubmitted'] = 'Έχετε ήδη καταχωρήσει αυτή την έρευνα';
 $string['analysisof'] = 'Ανάλυση του {$a}';
@@ -95,7 +94,6 @@ $string['ciq5'] = 'Ποιό γεγονός σας εξέπληξε περισσ�
 $string['ciq5short'] = 'Στιγμή έκπληξης';
 $string['ciqintro'] = 'Ανασκοπώντας πρόσφατα γεγονότα στην τάξη, απαντήστε στις παρακάτω ερωτήσεις.';
 $string['ciqname'] = 'Κρίσιμα περιστατικά';
-$string['clicktocontinue'] = 'Κάντε κλικ εδώ για να συνεχίσετε';
 $string['clicktocontinuecheck'] = 'Κάντε κλικ εδώ για έλεγχο και συνέχεια';
 $string['colles1'] = 'εστιάζω τη μάθησή μου σε κεφάλαια που με ενδιαφέρουν.';
 $string['colles10'] = 'Ζητώ από τους άλλους μαθητές να εξηγήσουν τις ιδέες τους.';
@@ -257,4 +255,3 @@ $string['surveytype_help'] = 'Υπάρχουν 3 διαθέσιμοι τύποι
 $string['surveytype_link'] = '';
 $string['thanksforanswers'] = 'Ευχαριστούμε που απαντήσατε σε αυτή την έρευνα, {$a}';
 $string['time'] = 'Ώρα';
-$string['viewsurveyresponses'] = 'Δείτε {$a} απαντήσεις της έρευνας';

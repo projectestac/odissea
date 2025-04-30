@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', version '4.1'.
+ * Strings for component 'survey', language 'fr', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Actuel';
 $string['actualclass'] = 'Classe actuelle';
 $string['actualstudent'] = '{$a} actuel';
 $string['allquestionrequireanswer'] = 'Toutes les questions sont requises et doivent recevoir une réponse.';
-$string['allquestions'] = 'Toutes les questions dans l’ordre, tous les étudiants';
 $string['allscales'] = 'Tous les barèmes, tous les étudiants';
 $string['alreadysubmitted'] = 'Vous avez déjà répondu à cette consultation';
 $string['analysisof'] = 'Analyse de {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Quel événement vous a le plus surpris ?';
 $string['ciq5short'] = 'Moment surprenant';
 $string['ciqintro'] = 'En réfléchissant aux événements récents de ce cours, répondez aux questions ci-dessous.';
 $string['ciqname'] = 'Incidents critiques';
-$string['clicktocontinue'] = 'Cliquer ici pour continuer';
 $string['clicktocontinuecheck'] = 'Cliquer ici pour vérifier et continuer';
 $string['colles1'] = 'mon apprentissage se concentre sur des sujets qui m’intéressent.';
 $string['colles10'] = 'je demande aux autres étudiants d’expliquer leurs idées.';
@@ -191,7 +189,7 @@ Vos réponses soigneusement réfléchies nous aideront à améliorer la façon d
 Nous vous remercions de votre collaboration.';
 $string['collespname'] = 'COLLES (idéal)';
 $string['completiondetail:submit'] = 'Envoyer des réponses';
-$string['completionsubmit'] = 'L’étudiant doit remettre quelque chose';
+$string['completionsubmit'] = 'Remettre un travail';
 $string['customintro'] = 'Description';
 $string['deleteallanswers'] = 'Supprimer toutes les réponses des consultations';
 $string['deleteanalysis'] = 'Supprimer les analyses de réponses';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'Il y a trois types de consultations disponibles :
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Merci d’avoir répondu à cette consultation, {$a}';
 $string['time'] = 'Temps';
-$string['viewsurveyresponses'] = 'Afficher les {$a} réponses à la consultation';

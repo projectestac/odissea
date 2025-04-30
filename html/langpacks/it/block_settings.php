@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'it', version '4.1'.
+ * Strings for component 'block_settings', language 'it', version '4.4'.
  *
  * @package     block_settings
  * @category    string
@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Consenti all\'utente di spostare il blocco nel dock';
 $string['pluginname'] = 'Amministrazione';
-$string['privacy:metadata'] = 'Il blocco Amministrazione visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Amministrazione visualizza solamente dati memorizzati da altri componenti.';
 $string['settings:addinstance'] = 'Aggiungere blocco Amministrazione';
 $string['settings:myaddinstance'] = 'Aggiungere blocco Amministrazione nella Dashboard';

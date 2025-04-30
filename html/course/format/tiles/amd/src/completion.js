@@ -28,13 +28,6 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
         "use strict";
 
         var courseId;
-        const dataKeys = {
-            cmid: "data-cmid",
-            numberComplete: "data-numcomplete",
-            numberOutOf: "data-numoutof",
-            section: "data-section",
-            completionState: "data-toggletype"
-        };
 
         const Selector = {
             pageContent: "#page-content",
@@ -52,81 +45,62 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
             sectionId: '#section-'
         };
 
-        /**
-         * When completion is changed it may be necessary to re-render a progress indicator.
-         * This helps assemble the data.
-         * @param {number} tileNumber which tile is this for
-         * @param {number} numComplete how many items has the user completed
-         * @param {number} outOf how many items are there to complete
-         * @param {boolean} asPercent should we show this as a percentage
-         * @returns {{}}
-         */
-        var progressTemplateData = function (tileNumber, numComplete, outOf, asPercent) {
-            var data = {
-                tileid: tileNumber,
-                numComplete: numComplete,
-                numOutOf: outOf,
-                showAsPercent: asPercent,
-                percent: outOf > 0 ? Math.round(numComplete / outOf * 100) : 0,
-                percentCircumf: 106.8,
-                percentOffset: outOf > 0 ? Math.round(((outOf - numComplete) / outOf) * 106.8) : 0,
-                isComplete: false,
-                isSingleDigit: false,
-                hastilephoto: $(Selector.tileNumber + tileNumber).hasClass("phototile"),
-            };
-            if (tileNumber === 0) {
-               data.isOverall = 1;
-            } else {
-                data.isOverall = 0;
-            }
-            if (outOf > 0 && numComplete >= outOf) {
-                data.isComplete = true;
-            }
-            if (data.percent < 10) {
-                data.isSingleDigit = true;
-            }
-            return data;
-        };
+        const isRTL = $('html').css('direction') === 'rtl';
 
         /**
-         * When a progress change happens, e.g. an item is marked as complete or not, this fires.
-         * It changes the current tile's progress up or down by 1 according to the progressChange arg.
-         * @param {int} sectionNum the number of this tile/section.
-         * @param {object} tileProgressIndicator the indicator for this tile
-         * @param {int} newTileProgressValue the new value
+         * Set new values for a given progress indicator to the element in the DOM.
+         * @param {number} sectionNumber
+         * @param {number} numComplete
+         * @param {number} numOutOf
          */
-        var changeProgressIndicatorSection = function(sectionNum, tileProgressIndicator, newTileProgressValue) {
-            if (newTileProgressValue < 0 || newTileProgressValue > tileProgressIndicator.attr(dataKeys.numberOutOf)) {
+        const setProgressIndicator = function(sectionNumber, numComplete, numOutOf) {
+            if (!numOutOf || numComplete < 0) {
                 // If we are already at zero, do not reduce.  May happen rarely if user presses repeatedly.
                 // Will not cause a long term issue as will be resolved when user refreshes page.
                 return;
             }
+            const tileProgressIndicator = $('#tileprogress-' + sectionNumber);
+            if (tileProgressIndicator.length) {
+                const percent = numOutOf > 0 ? Math.round(numComplete / numOutOf * 100) : 0;
+                tileProgressIndicator.attr('data-numcomplete', numComplete);
+                tileProgressIndicator.attr('data-numoutof', numOutOf);
+                tileProgressIndicator.find('.num-complete').html(numComplete);
+                tileProgressIndicator.find('.num-out-of').html(numOutOf);
+                tileProgressIndicator.find('.percent-complete').html(percent);
 
-            if (!sectionNum) {
-                // Section zero doesn't have a section progress indicator.
-                return;
+                // If we have an SVG radial progress indicator, change it.
+                tileProgressIndicator.find('svg circle.partial')
+                    .attr(
+                        'stroke-dashoffset',
+                        numOutOf > 0 ? Math.round(((numOutOf - numComplete) / numOutOf) * 106.8) : 0
+                    );
+                const svgX = isRTL ? (percent < 10 ? 25 : 30) : (percent < 10 ? 15 : 10);
+                tileProgressIndicator.find('svg text')
+                    .html(percent)
+                    .attr('x', svgX);
+
+                str.get_strings([{
+                    key: "progresstitle",
+                    component: "format_tiles",
+                    param: {
+                        numOutOf: numOutOf, numComplete: numComplete, percent: percent
+                    }
+                }]).done(function (s) {
+                    tileProgressIndicator.prop('title', s[0]);
+                    $('#tile-' + sectionNumber).find('.completion-bar')
+                        .css('width', `${percent}%`)
+                        .attr('title', s[0]);
+                });
+
+                if (sectionNumber === 0) {
+                    const overallProgressOuter = $('#tiles-overall-progress-outer');
+                    if (percent === 100) {
+                        overallProgressOuter.addClass('is-complete');
+                    } else {
+                        overallProgressOuter.removeClass('is-complete');
+                    }
+                }
             }
-
-            // Render and replace the progress indicator for *this tile*.
-            Templates.render("format_tiles/progress", progressTemplateData(
-                sectionNum,
-                newTileProgressValue,
-                parseInt(tileProgressIndicator.attr(dataKeys.numberOutOf)),
-                tileProgressIndicator.hasClass("percent")
-            )).done(function (html) {
-                // Need to repeat jquery selector as it is being replaced (replacwith).
-                tileProgressIndicator.replaceWith(html);
-
-            });
-        };
-
-        const setOverallProgressIndicator = function(newValue, outOf) {
-            // Render and replace the *overall* progress indicator for the *whole course*.
-            Templates.render("format_tiles/progress", progressTemplateData(
-                0, newValue, outOf, true
-            )).done(function (html) {
-                $("#tileprogress-0").replaceWith(html).fadeOut(0).animate({opacity: 1}, 500);
-            });
         };
 
         /**
@@ -147,7 +121,7 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
          * If we have called format_tiles_get_section_information then we need to add the result to the DOM.
          * @param {array} sections the section in
          * @param {number} overallcomplete how many activities complete in the section overall
-         * @param {number}overalloutof how many activities in the section overall
+         * @param {number} overalloutof how many activities in the section overall
          */
         const updateSectionsInfo = function(sections, overallcomplete, overalloutof) {
             sections.forEach(sec => {
@@ -169,12 +143,9 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
                     } else {
                         tile.removeClass('is-complete');
                     }
-                    // Now re-render the progress indicator if necessary with correct data.
+
                     // There may not be a progress indicator e.g. if tile contains no trackable activities.
-                    const progressIndicator = $(Selector.progressIndicatorSecNumber + (sec.sectionnum).toString());
-                    if (progressIndicator.length) {
-                        changeProgressIndicatorSection(sec.sectionnum, progressIndicator, sec.numcomplete);
-                    }
+                    setProgressIndicator(sec.sectionnum, sec.numcomplete, sec.numoutof);
 
                     // Finally change or re-render the availability message if necessary.
                     const availabilityInfoDiv = tile.find(Selector.availabilityinfo);
@@ -192,14 +163,13 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
                                 visible: true
                             }).done(function (html) {
                                 // Need to repeat jquery selector as it is being replaced (replacwith).
-                                progressIndicator.replaceWith(html);
-
+                                $('tile-' + sec.section).find('.availabilityinfo').replaceWith(html);
                             });
                         }
                     }
                 }
             });
-            setOverallProgressIndicator(overallcomplete, overalloutof);
+            setProgressIndicator(0, overallcomplete, overalloutof);
         };
 
         /**
@@ -213,7 +183,7 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
             if (sectionNums === undefined) {
                 // Use all sections if no arg.
                 sectionNums = $(Selector.tile).not(Selector.spacer).map((i, t) => {
-                    return parseInt($(t).attr(dataKeys.section));
+                    return $(t).data('section');
                 }).toArray();
             }
             ajax.call([{
@@ -262,17 +232,15 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
                             args: {cmid: cmId, completed: currentTarget.data('complete') !== 1}
                         }])[0].done((res) => {
                             if (res.status === true) {
-                                triggerCompletionChangedEvent(parseInt(section.attr('data-section')), cmId);
+                                triggerCompletionChangedEvent(section.data('section'), cmId);
                             }
                         });
 
                         // If this is in a modal header, trigger refresh of the main window completion too.
                         if (currentTarget.closest('.embed-module-buttons').length !== 0) {
                             const cmId = currentTarget.data('cmid');
-                            const sectionNum = $('li#module-' + cmId).closest(Selector.section).attr(dataKeys.section);
-                            triggerCompletionChangedEvent(
-                                sectionNum ? parseInt(sectionNum) : 0, cmId ? parseInt(cmId) : 0
-                            );
+                            const sectionNum = $('li#module-' + cmId).closest(Selector.section).data('section');
+                            triggerCompletionChangedEvent(sectionNum, cmId ? parseInt(cmId) : 0);
                         }
                     });
 

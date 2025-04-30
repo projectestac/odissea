@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'es', version '4.1'.
+ * Strings for component 'quiz_statistics', language 'es', version '4.4'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -41,7 +41,7 @@ $string['attemptsfirst'] = 'Primer intento';
 $string['backtoquizreport'] = 'Volver a la página principal del informe de estadísticas.';
 $string['calculatefrom'] = 'Calcular estadísticas de';
 $string['calculatingallstats'] = 'Calculando estadísticas para preguntas y cuestionario y analizando datos de respuestas';
-$string['cic'] = 'Coeficiente de consistentia interna (para {$a})';
+$string['cic'] = 'Coeficiente de consistencia interna (para {$a})';
 $string['completestatsfilename'] = 'completestats';
 $string['count'] = 'Número';
 $string['counttryno'] = 'Recuento de intentos {$a}';

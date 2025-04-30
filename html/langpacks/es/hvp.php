@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'es', version '4.1'.
+ * Strings for component 'hvp', language 'es', version '4.4'.
  *
  * @package     hvp
  * @category    string
@@ -102,6 +102,8 @@ $string['contenthub:settings:box'] = 'Cuenta del Hub de Contenido';
 $string['contenthub:settings:heading'] = 'Configuraciones de cuenta del Hub de Contenido';
 $string['contenthubeditsharing'] = 'Editar información de compartición';
 $string['contenthuboptions'] = 'Opciones del Hub H5P OER';
+$string['contenthubsearchdescription'] = 'Encontrar y descargar contenido del Hub de H5P.';
+$string['contenthubsearchenable'] = 'Habilitar contenido compartido en el Hub de H5P';
 $string['contenthubshare'] = 'Compartir en el Hub H5P OER';
 $string['contenthubsharinginprogress'] = 'Compartiendo...';
 $string['contenthubsyncchanges'] = 'Sincronizar cambios';

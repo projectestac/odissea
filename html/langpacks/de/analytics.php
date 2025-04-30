@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'de', version '4.1'.
+ * Strings for component 'analytics', language 'de', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Blended oder Hybrid';
 $string['modeinstructionfacetoface'] = 'Face to Face';
 $string['modeinstructionfullyonline'] = 'Vollständig online';
 $string['modeloutputdir'] = 'Ausgabeverzeichnis';
-$string['modeloutputdirinfo'] = 'Verzeichnis, in dem die Vorhersagen-Prozessoren alle Evaluationsinformationen speichern. Dies ist hilfreich für die Fehlerbehebung und Auswertung.';
 $string['modeloutputdirwithdefaultinfo'] = 'Verzeichnis, in dem Vorhersageprozessoren alle Auswertungsinformationen speichern. Dies ist nützlich zum Debugging und zur Entwicklung. Wenn leer, wird standardmäßig {$a} verwendet.';
 $string['modeltimelimit'] = 'Analysezeitlimit pro Modell';
 $string['modeltimelimitinfo'] = 'Diese Option begrenzt die Zeit, die jedes Modell für die Analyse von Website-Inhalten benötigen darf.';

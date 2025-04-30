@@ -21,8 +21,7 @@ Feature: Content bank link in the activity settings form
   @javascript
   Scenario: The content bank link should go to the course Content bank
     When I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "H5P" to section "1"
+    And I add an h5pactivity activity to course "Course 1" section "1"
     Then I should see "Use the content bank (opens in new window) to manage your H5P files"
     And I click on "content bank (opens in new window)" "link" in the "General" "fieldset"
     And I switch to a second window
@@ -36,15 +35,13 @@ Feature: Content bank link in the activity settings form
       | capability                 | permission | role           | contextlevel | reference |
       | moodle/contentbank:access  | Prevent    | editingteacher | Course       | C1        |
     When I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "H5P" to section "1"
+    And I add an h5pactivity activity to course "Course 1" section "1"
     Then I should not see "Use the content Bank (opens in new window) to manage your H5P files"
 
   @javascript
   Scenario: A different message should be displayed if the package file is a link to the content bank file
     Given I log in as "admin"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "H5P" to section "1"
+    And I add an h5pactivity activity to course "Course 1" section "1"
     And I set the following fields to these values:
       | Name                       | H5P package added with link to content bank |
       | Description                | Description                                 |
@@ -66,8 +63,7 @@ Feature: Content bank link in the activity settings form
   @javascript
   Scenario: The content bank link should go to the course Content bank if the file is a copy to a content bank file
     Given I log in as "admin"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "H5P" to section "1"
+    And I add an h5pactivity activity to course "Course 1" section "1"
     And I set the following fields to these values:
       | Name                       | H5P package added with link to content bank |
       | Description                | Description                                 |
@@ -90,8 +86,7 @@ Feature: Content bank link in the activity settings form
       | user     | admin                                   |
       | filepath | h5p/tests/fixtures/guess-the-answer.h5p |
     When I log in as "admin"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "H5P" to section "1"
+    And I add an h5pactivity activity to course "Course 1" section "1"
     And I set the following fields to these values:
       | Name                       | H5P package added with link to content bank |
       | Description                | Description                                 |

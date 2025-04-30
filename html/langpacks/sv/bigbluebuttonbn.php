@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'sv', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'sv', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,6 +44,7 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Publicera inspelningar';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Ta bort skydd';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Avpublicera inspelningar';
 $string['bigbluebuttonbn:view'] = 'Visa BigBlueButton-rum';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Visa alla inspelningsformat';
 $string['bigbluebuttondisablednotification'] = 'Aktivitetsmodulen BigBlueButton har inaktiverats och befintliga BigBlueButton-kursaktiviteter är för närvarande inte tillgängliga. Innan du återaktiverar denna pluginmodul, se till att du har läst och accepterat <a href="{$a}" target="_blank">databehandlingsavtalet</a> med Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'BBB-aktivitetsmodul inaktiverad.';
 $string['cachedef_currentfetch'] = 'Data för att lista senaste inspelning';
@@ -111,7 +112,7 @@ $string['config_experimental_features_description'] = 'Konfiguration för experi
 $string['config_extended_capabilities'] = 'Utökade funktioner';
 $string['config_extended_capabilities_description'] = 'Inställningar för utökade funktioner när BBB-servern erbjuder detta.';
 $string['config_general'] = 'Allmänna inställningar';
-$string['config_general_description'] = 'Dessa inställningar används <strong>alltid</strong>.';
+$string['config_general_description'] = 'För att ställa in BigBlueButton kan du antingen använda din egen BigBlueButton-server och dina inloggningsuppgifter, eller skaffa inloggningsuppgifter via <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks Registration Portal (öppnas i ett nytt fönster)</a>.';
 $string['config_guestaccess_enabled'] = 'Gäståtkomst';
 $string['config_guestaccess_enabled_description'] = 'Ge användare utan konto på denna webbplats åtkomst till rummet.';
 $string['config_hideuserlist_default'] = 'Dölj användarlista aktiverat som standard';

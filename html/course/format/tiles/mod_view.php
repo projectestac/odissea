@@ -78,7 +78,7 @@ if ($cm->modname === 'resource') {
     url_view($modobject, $course, $cm, $context);
     $redirecturl = $modobject->externalurl;
 
-    // If the URL is a youtube video, it may need converting into an embed URL.
+    // If the URL is a YouTube video etc, it may need converting into an embed URL.
     $modifiedurl = !optional_param('noembed', false, PARAM_BOOL)
         ? \format_tiles\output\course_output::check_modify_embedded_url($redirecturl)
         : null;

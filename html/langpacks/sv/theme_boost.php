@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'sv', version '4.1'.
+ * Strings for component 'theme_boost', language 'sv', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Oformaterad ursprunglig SCSS';
 $string['rawscsspre_desc'] = 'I det här fältet kan du ange initiering av SCSS-kod. Den kommer att injiceras före allt annat. För det mesta använder du den här inställningen för att definiera variabler.';
 $string['region-side-pre'] = 'Höger';
 $string['showfooter'] = 'Visa sidfot';
-$string['totop'] = 'Gå upp';
 $string['unaddableblocks'] = 'Ej tilläggbara block';
 $string['unaddableblocks_desc'] = 'De block som definieras i det här fältet visas inte i listan "Lägg till ett block".';

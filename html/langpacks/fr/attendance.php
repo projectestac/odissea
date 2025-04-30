@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'fr', version '4.1'.
+ * Strings for component 'attendance', language 'fr', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -284,7 +284,8 @@ $string['hidensessiondetails'] = 'Masquer le détail de la session';
 $string['identifyby'] = 'Identifier l’étudiant par';
 $string['import'] = 'Importer';
 $string['importfile'] = 'Importer fichier';
-$string['importfile_help'] = 'Importer fichier';
+$string['importfile_help'] = 'Importer fichier CSV:
+Ce fichier doit contenir un en-tête et des champs pour identifier les groupes, l’heure et les dates des sessions à créer.<br/> La page suivante après le dépôt du fichier vous montrera des exemples de tous les champs auxquels vous pouvez associer vos propres champs.<br/> Exemple : <br/>groups;sessiondate;from;to<br/>groupA:05-10-2022;13:00;14:00<br/>groupB;05-10-2022;14:00;15:00';
 $string['importsessions'] = 'Importer des sessions';
 $string['importstatus'] = 'Champ de statut';
 $string['importstatus_help'] = 'Cela permet d’inclure une valeur de statut dans l’importation - par exemple des valeurs telles que P, L ou A';

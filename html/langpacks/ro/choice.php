@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ro', version '4.1'.
+ * Strings for component 'choice', language 'ro', version '4.4'.
  *
  * @package     choice
  * @category    string
@@ -57,7 +57,7 @@ $string['chooseaction'] = 'Alegeți o opțiune...';
 $string['chooseoption'] = 'Alegeți: {$a}';
 $string['closebeforeopen'] = 'Ați specificat o dată de închidere înainte de data de deschidere.';
 $string['completiondetail:submit'] = 'Faceți o alegere';
-$string['completionsubmit'] = 'Afișați ca fiind completat când utilizatorul face o alegere';
+$string['completionsubmit'] = 'Fă o alegere';
 $string['description'] = 'Descriere';
 $string['deselectalloption'] = 'Deselectați toate „{$a}”';
 $string['displayhorizontal'] = 'Afișează orizontal';

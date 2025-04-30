@@ -103,6 +103,7 @@ class qtype_wq extends question_type {
 
         $this->base->initialise_question_instance($question->base, $questiondata);
 
+        /** @var qtype_wq_question $question */
         $question->id = &$question->base->id;
         $question->idnumber = &$question->base->idnumber;
         $question->category = &$question->base->category;
@@ -135,10 +136,14 @@ class qtype_wq extends question_type {
         // Load question xml into Wiris Quizzes API question object.
         if (empty($question->parent)) {
             $builder = com_wiris_quizzes_api_Quizzes::getInstance();
-            $question->wirisquestion = $builder->readQuestion($questiondata->options->wirisquestion);
+            if (isset($questiondata->options->wirisquestion)) {
+                $question->wirisquestion = $builder->readQuestion($questiondata->options->wirisquestion);
+            } else {
+                $question->wirisquestion = $builder->newQuestion();
+                $question->corrupt = true;
+            }
         }
     }
-
     // This method has to be overriden in each real question.
     public function menu_name() {
         // Include JavaScript Hack to modify question chooser.

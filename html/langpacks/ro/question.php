@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ro', version '4.1'.
+ * Strings for component 'question', language 'ro', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -181,6 +181,8 @@ $string['errorprocessingresponses'] = 'S-a produs o eroare în timpul procesări
 $string['errorsavingcomment'] = 'Eroare la salvarea comentariilor pentru întrebarea {$a->name} în baza de date.';
 $string['errorsavingflags'] = 'Eroare la salvarea statusului flag-ului';
 $string['errorupdatingattempt'] = 'Eroare la actualizarea propunerii {$a->id} în baza de date';
+$string['eventqbankdisabled'] = 'Plugin-ul banca de întrebări e dezactivat';
+$string['eventqbankenabled'] = 'Plugin-ul banca de întrebări e activat';
 $string['eventquestioncategorycreated'] = 'Categoria întrebare a fost creată';
 $string['eventquestioncategorydeleted'] = 'Categoria întrebărilor a fost ștearsă';
 $string['eventquestioncategorymoved'] = 'Categoria de întrebări mutată';
@@ -270,6 +272,7 @@ $string['invalidcategoryidtomove'] = 'Id-ul categoriei care trebuie mutată nu e
 $string['invalidconfirm'] = 'String-ul de confirmare a fost incorect';
 $string['invalidcontextinhasanyquestions'] = 'Contextul trecut la question_context_has_any_questions  nu este valid';
 $string['invalidgrade'] = 'Notele ({$a}) nu corespund opțiunilor de notare - întrebare omisă';
+$string['invalidgradequestion'] = 'Notele ({$a->grades}) nu corespund cu opțiunile de notare - întrebare \'{$a->question}\' omisă.';
 $string['invalidpenalty'] = 'Penalizare nevalidă';
 $string['invalidwizardpage'] = 'Wizard page nespecificată sau incorectă!';
 $string['lastmodifiedby'] = 'Ultima modificare efectuată de';
@@ -315,6 +318,7 @@ $string['movingquestionsandfiles'] = 'Sunteți sigur(ă) că doriți să mutați
 $string['movingquestionsnofiles'] = 'Sunteți sigur(ă) că doriți să mutați întrebarea(întrebările) în context pentru <strong>"{$a->tocontext}"</strong>?<br /> Nu există <strong>fișiere</strong> cu link de la aceste întrebări în {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Alegeţi categoria în care doriţi să transferaţi această întrebare sau apăsaţi butonul Anulare.';
 $string['nocate'] = 'Nu există o asemenea categorie {$a}!';
+$string['noconditionspecified'] = 'Te rugăm să specifici o condiție';
 $string['nopermissionadd'] = 'Nu aveţi permisiunea să adăugaţi întrebări în această secţiune.';
 $string['nopermissionedit'] = 'Nu aveți permisiunea să editați întrebările din acest loc.';
 $string['nopermissionmove'] = 'Nu aveţi permisiunea să transferaţi întrebări din cadrul acestei secţiuni. Va trebui să salvaţi întrebarea în această categorie sau să o salvaţi cu un alt nume.';
@@ -329,7 +333,6 @@ $string['notchanged'] = 'Nu există schimbări de la ultima încercare';
 $string['notenoughanswers'] = 'Acest tip de întrebare necesită cel puțin {$a} răspunsuri';
 $string['notenoughdatatoeditaquestion'] = 'N-au fost specificate: id-ul întrebării, id-ul categoriei şi tipul întrebării.';
 $string['notenoughdatatomovequestions'] = 'Va trebui să furnizaţi un id pentru fiecare întrebare pe care doriţi să o transferaţi.';
-$string['notflagged'] = 'Fără flag';
 $string['notgraded'] = 'Fără notă';
 $string['notshown'] = 'Neafișat';
 $string['notyetanswered'] = 'Nu a primit răspuns încă';
@@ -423,7 +426,7 @@ $string['questionpreviewdefaults'] = 'Previzualizare implicită a întrebării';
 $string['questionpreviewdefaults_desc'] = 'Aceste valori implicite sunt utilizate atunci când un utilizator previzualizează pentru prima dată o întrebare din banca de întrebări. Odată ce un utilizator a previzualizat o întrebare, preferințele sale personale sunt stocate ca preferințe ale utilizatorului.';
 $string['questions'] = 'Întrebări';
 $string['questionsaveerror'] = 'Apar erori în timpul salvării întrebării - ({$a})';
-$string['questionsinuse'] = '* Indică întrebări care nu pot fi șterse deoarece sunt folosite. În schimb, vor fi ascunse în banca de întrebări, cu excepția cazului în care selectezi „Afișează întrebări vechi”.';
+$string['questionsinuse'] = '* Indică întrebări care nu pot fi șterse deoarece sunt folosite. În schimb, vor fi ascunse în banca de întrebări, cu excepția cazului în care setezi „Afișează întrebări ascunse” la \'\'Da\'.';
 $string['questionsmovedto'] = 'Întrebări care sunt încă în uz au fost transferate în "{$a}" în categoria cursului principal.';
 $string['questionsrescuedfrom'] = 'Întrebări salvate din contextul {$a}.';
 $string['questionsrescuedfrominfo'] = 'Aceste întrebări (dintre care unele ar putea fi invizibile) au fost salvate atunci când contextul {$a} a fost şters deoarece sunt încă utilizate în cadrul unor chestionare şi a altor activităţi.';
@@ -436,7 +439,7 @@ $string['questionx'] = '{$a} întrebare';
 $string['requiresgrading'] = 'Trebuie să fie notată';
 $string['responsehistory'] = 'Istoricul răspunsurilor';
 $string['restart'] = 'Începeți din nou';
-$string['restartwiththeseoptions'] = 'Începeți din nou cu aceste opțiuni';
+$string['restartwiththeseoptions'] = 'Salvează opțiunile pentru previzualizare și începe din nou';
 $string['restoremultipletopcats'] = 'Fișierul copie de rezervă conține mai multe categorii de întrebări de nivel superior pentru contextul {$a}.';
 $string['reviewresponse'] = 'Previzualizare răspuns';
 $string['rightanswer'] = 'Răspunsul corect';
@@ -451,7 +454,9 @@ $string['selectcategoryabove'] = 'Selectează o categorie anterioară';
 $string['selectquestionsforbulk'] = 'Selectați întrebări pentru acțiuni în bloc';
 $string['settingsformultipletries'] = 'Încercări multiple';
 $string['shareincontext'] = 'Partajează în context pentru {$a}';
-$string['showhidden'] = 'De asemenea, arată întrebări vechi';
+$string['shortversioninfo'] = 'v{$a->version} (a{$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (latest)';
+$string['showhidden'] = 'Afișează întrebările ascunde';
 $string['showmarkandmax'] = 'Afișați punctul și valoarea maximă';
 $string['showmaxmarkonly'] = 'Afișați doar punctaj maximă';
 $string['shown'] = 'Afișat';
@@ -503,6 +508,8 @@ $string['upgradeproblemcategoryloop'] = 'A fost identificată o problemă la act
 $string['upgradeproblemcouldnotupdatecategory'] = 'Nu a putut fi actualizată categoria de întrebări {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'S-a identificat o problemă la actualizarea categoriilor de întrebări. Categoria {$a->id} se referă la categoria principală {$a->parent} care nu mai există. Categoria subordonată a fost transferată în altă categorie principală.';
 $string['version_selection'] = 'Versiunea {$a->versiune}';
+$string['versioninfo'] = 'Versiune {$a->version} (a{$a->latestversion})';
+$string['versioninfolatest'] = 'Versiune {$a->version} (latest)';
 $string['whethercorrect'] = 'Dacă este corect';
 $string['whethercorrect_help'] = 'Aceasta acoperă atât descrierea textuală „Corect”, „Parțial corect” sau „Incorect”, cât și orice evidențiere colorată care transmite aceleași informații.';
 $string['whichtries'] = 'care întrebări';

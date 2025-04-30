@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'sv', version '4.1'.
+ * Strings for component 'cache', language 'sv', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -56,7 +56,6 @@ $string['cachedef_courseeditorstate'] = 'Cachenycklar för sessionskurstillstån
 $string['cachedef_coursemodinfo'] = 'Ackumulerad information om moduler och sektioner för varje kurs';
 $string['cachedef_coursesectionspreferences'] = 'Inställningar för kursavsnitt';
 $string['cachedef_databasemeta'] = 'Databasmetainformation';
-$string['cachedef_deprecatedcapabilities'] = 'Föråldrade systemfunktionsbehörigheter';
 $string['cachedef_eventinvalidation'] = 'Ogiltigförklarande av händelse';
 $string['cachedef_externalbadges'] = 'Externa märken för en särskild användare';
 $string['cachedef_file_imageinfo'] = 'Bildinformation, t.ex. dimensioner';
@@ -66,6 +65,7 @@ $string['cachedef_grade_letters'] = 'Betygbokstavs-frågor';
 $string['cachedef_gradesetting'] = 'Kursbetygsinställning';
 $string['cachedef_groupdata'] = 'Kursgruppsinformation';
 $string['cachedef_h5p_content_type_translations'] = 'H5P-innehållsbibliotek översättningar';
+$string['cachedef_h5p_libraries'] = 'H5P-bibliotek';
 $string['cachedef_h5p_library_files'] = 'H5P-biblioteksfiler';
 $string['cachedef_htmlpurifier'] = 'HTML-rensare, rensat innehåll';
 $string['cachedef_langmenu'] = 'Lista med tillgängliga språk';

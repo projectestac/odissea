@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'nl', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'nl', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Dropbox API sleutel';
 $string['cachelimit'] = 'Cache limiet';
 $string['cachelimit_info'] = 'Geef de maximale grootte van bestanden (in bytes) die op de server gecached mogen worden voor Dropbox alias/snelkoppeling ondersteuning. De bestanden in de cache zullen nog gebruikt worden als de bronbestanden niet meer bestaan. Een leeg veld of een nul betekent dat alle bestanden gecached worden, ongeacht de grootte.';
 $string['configplugin'] = 'Dropbox configuratie';
 $string['crontask'] = 'Achtergrondverwerking voor de Dropbox-opslagruimte';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Bekijk een Dropbox map';
-$string['instruction'] = 'Je kunt je API-sleutel en geheim halen van  <a href="https://www.dropbox.com/developers/apps">Dropbox developers</a>. Wanneer je je sleutel instelt, kies dan "Full Dropbox" als "Access level".';
 $string['issuer'] = 'OAuth 2-service';
 $string['issuer_help'] = 'Selecteer de OAuth 2-service die geconfigureerd is om met de Dropbox-API te communiceren. Als de service nog niet bestaat, dan zul je die moeten maken.';
 $string['logoutdesc'] = '(afmelden als je klaar bent met Dropbox)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'De Dropbox opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['privacy:metadata:repository_dropbox:query'] = 'De Dropbox opslagruimte gebruiker zoektekst.';
 $string['remember'] = 'Mij onthouden';
-$string['secret'] = 'Dropbox geheim';

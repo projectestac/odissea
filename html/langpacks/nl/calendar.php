@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', version '4.1'.
+ * Strings for component 'calendar', language 'nl', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'Kalender URL';
 $string['calendarheading'] = '{$a} Kalender';
 $string['calendarpreferences'] = 'Agendavoorkeuren';
 $string['calendartypes'] = 'Kalendertypes';
-$string['calendarurl'] = 'Kalender-URL: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Kalender-URL gekopieerd naar klembord';
 $string['category'] = 'Categorie';
 $string['categoryevent'] = 'Categoriegebeurtenis';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Kopieer kalender-URL';
 $string['copyurl'] = 'Kopieer URL';
 $string['course'] = 'Cursus';
 $string['coursecalendar'] = '{$a} kalender';
+$string['coursecalendarlink'] = 'Curuskalender';
 $string['courseevent'] = 'Cursusactiviteit';
 $string['courseevents'] = 'Cursusactiviteiten';
 $string['courses'] = 'Cursussen';
@@ -177,7 +177,6 @@ $string['importcalendarexternal'] = 'Een externe kalender importeren?';
 $string['importcalendarfrom'] = 'Importeer van';
 $string['importcalendarheading'] = 'Importeer kalender...';
 $string['importfromfile'] = 'Calenderbestand (.ics)';
-$string['importfrominstructions'] = 'Geef ofwel een URL naar een externe kalender of upload een bestand.';
 $string['importfromurl'] = 'Kalender URL';
 $string['invalideventtype'] = 'De soort gebeurtenis die je hebt geselecteerd, is ongeldig.';
 $string['invalidtimedurationminutes'] = 'De tijdsduur in minuten is ongeldig. Geef een getal in groter dan nul of kies geen tijdsduur';
@@ -189,7 +188,6 @@ $string['manyevents'] = '{$a} activiteiten';
 $string['mon'] = 'Ma';
 $string['monday'] = 'Maandag';
 $string['monthly'] = 'Maandelijks';
-$string['monthlyview'] = 'Per maand';
 $string['monthnext'] = 'Volgende maand';
 $string['monthprev'] = 'Vorige maand';
 $string['monththis'] = 'Deze maand';
@@ -198,7 +196,9 @@ $string['moreevents'] = '{$a} meer';
 $string['namewithsource'] = '{$a->name}({$a->source})';
 $string['never'] = 'Nooit';
 $string['newevent'] = 'Nieuwe activiteit';
+$string['newmonthannouncement'] = 'Agenda is nu ingesteld op {$a}.';
 $string['nocalendarsubscriptions'] = 'Je hebt nog geen kalenderinschrijvingen. Wil je {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Nog geen kalenderinschrijvingen. a href="{$a}">Importeer een externe kalender</a>';
 $string['notitle'] = 'geen titel';
 $string['noupcomingevents'] = 'Er zijn geen activiteiten op komst';
 $string['oneevent'] = '1 activiteit';

@@ -28,13 +28,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-require_once(dirname(__FILE__).'/lib.php');
+require_once dirname(__FILE__, 3) . '/config.php';
+require_once __DIR__ . '/lib.php';
 
-$id = required_param('id', PARAM_INT);   // course
+$id = required_param('id', PARAM_INT); // Course.
 
-if (! $course = $DB->get_record('course', array('id' => $id))) {
-    print_error('Course ID is incorrect');
+if (!$course = $DB->get_record('course', ['id' => $id])) {
+    throw new moodle_exception('Course ID is incorrect', 'mod_jclic');
 }
 
 require_course_login($course);
@@ -42,10 +42,8 @@ $context = context_course::instance($course->id);
 
 \mod_jclic\event\course_module_instance_list_viewed::create_from_course($course)->trigger();
 
-
-/// Print the header
-
-$PAGE->set_url('/mod/jclic/index.php', array('id' => $id));
+// Print the header.
+$PAGE->set_url('/mod/jclic/index.php', ['id' => $id]);
 $PAGE->set_title(format_string($course->fullname));
 $PAGE->set_heading(format_string($course->fullname));
 $PAGE->set_context($context);
@@ -58,53 +56,53 @@ $PAGE->set_context($context);
 // Output starts here
 echo $OUTPUT->header();
 
-/// Get all the appropriate data
-
-if (! $jclics = get_all_instances_in_course('jclic', $course)) {
+// Get all the appropriate data.
+if (!$jclics = get_all_instances_in_course('jclic', $course)) {
     echo $OUTPUT->heading(get_string('nojclics', 'jclic'), 2);
     echo $OUTPUT->continue_button("view.php?id=$course->id");
     echo $OUTPUT->footer();
     die();
 }
 
-/// Print the list of instances (your module will probably extend this)
+// Print the list of instances (your module will probably extend this).
 
-$timenow  = time();
-$strname  = get_string('name');
-$strweek  = get_string('week');
+$timenow = time();
+$strname = get_string('name');
+$strweek = get_string('week');
 $strtopic = get_string('topic');
 
 $table = new html_table();
-if ($course->format == 'weeks') {
-    $table->head  = array ($strweek, $strname);
-    $table->align = array ('center', 'left');
-} else if ($course->format == 'topics') {
-    $table->head  = array ($strtopic, $strname);
-    $table->align = array ('center', 'left', 'left', 'left');
+
+if ($course->format === 'weeks') {
+    $table->head = [$strweek, $strname];
+    $table->align = ['center', 'left'];
+} else if ($course->format === 'topics') {
+    $table->head = [$strtopic, $strname];
+    $table->align = ['center', 'left', 'left', 'left'];
 } else {
-    $table->head  = array ($strname);
-    $table->align = array ('left', 'left', 'left');
+    $table->head = [$strname];
+    $table->align = ['left', 'left', 'left'];
 }
 
 foreach ($jclics as $jclic) {
     if (!$jclic->visible) {
-        //Show dimmed if the mod is hidden
-        $link = '<a class="dimmed" href="view.php?id='.$jclic->coursemodule.'">'.format_string($jclic->name).'</a>';
+        // Show dimmed if the mod is hidden.
+        $link = '<a class="dimmed" href="view.php?id=' . $jclic->coursemodule . '">' . format_string($jclic->name) . '</a>';
     } else {
-        //Show normal if the mod is visible
-        $link = '<a href="view.php?id='.$jclic->coursemodule.'">'.format_string($jclic->name).'</a>';
+        // Show normal if the mod is visible.
+        $link = '<a href="view.php?id=' . $jclic->coursemodule . '">' . format_string($jclic->name) . '</a>';
     }
 
-    if ($course->format == 'weeks' or $course->format == 'topics') {
-        $table->data[] = array ($jclic->section, $link);
+    if ($course->format === 'weeks' || $course->format === 'topics') {
+        $table->data[] = array($jclic->section, $link);
     } else {
-        $table->data[] = array ($link);
+        $table->data[] = array($link);
     }
 }
 
 echo $OUTPUT->heading(get_string('modulenameplural', 'jclic'), 2);
 echo html_writer::table($table);
 
-/// Finish the page
+// Finish the page.
 
 echo $OUTPUT->footer();

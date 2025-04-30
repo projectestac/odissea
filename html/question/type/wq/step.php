@@ -17,15 +17,7 @@
 
 /*
  * Class used to store information in the question attempt step data
- */
-
-/**
- * Description of step
  *
- * @author dani
- */
-
-/**
  * This class is useful for:
  *  - No intentar avaluar una pregunta si ha fallat en 3 intents seguits
  *    en les mateixes condicions. Útil en exàmens.
@@ -38,7 +30,8 @@ defined('MOODLE_INTERNAL') || die();
 class qtype_wirisstep {
     const MAX_ATTEMPS_SHORTANSWER_WIRIS = 5;
 
-    private ?question_attempt_step $step;
+    /** @var ?question_attempt_step */
+    private $step;
     private $stepid;
     private $extraprefix;
 
@@ -254,14 +247,14 @@ class qtype_wirisstep {
 
         $isreached = $c >= self::MAX_ATTEMPS_SHORTANSWER_WIRIS;
 
-        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1';
         if ($islogmodeenabled) {
-            $errormessage = 'WIRISQUIZZES ATTEMPT LIMIT REACHED FOR STEP WITH ID ' . 
-             ($this->step != null ? $this->step->get_id() : $this->stepid);
+            $errormessage = 'WIRISQUIZZES ATTEMPT LIMIT REACHED FOR STEP WITH ID ' .
+                ($this->step != null ? $this->step->get_id() : $this->stepid);
             // @codingStandardsIgnoreLine
-            error_log($errormessage);            
+            error_log($errormessage);
         }
-        
+
         return $isreached;
     }
 
@@ -274,13 +267,13 @@ class qtype_wirisstep {
             $c = 0;
         }
 
-        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1';
         if ($islogmodeenabled) {
-            $errormessage = 'WIRISQUIZZES ATTEMPT ERROR --- INCREASING ATTEMPT COUNT TO ' . ($c + 1) . ' FOR STEP WITH ID ' . 
-             ($this->step != null ? $this->step->get_id() : $this->stepid) . PHP_EOL .
-             'EXCEPTION: ' . $e->getMessage();
+            $errormessage = 'WIRISQUIZZES ATTEMPT ERROR --- INCREASING ATTEMPT COUNT TO ' . ($c + 1) . ' FOR STEP WITH ID ' .
+                ($this->step != null ? $this->step->get_id() : $this->stepid) . PHP_EOL .
+                'EXCEPTION: ' . $e->getMessage();
             // @codingStandardsIgnoreLine
-            error_log($errormessage);            
+            error_log($errormessage);
         }
 
         $this->set_var('_gc', $c + 1, false);

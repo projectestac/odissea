@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'ca', version '4.1'.
+ * Strings for component 'portfolio_googledocs', language 'ca', version '4.4'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'No s\'ha rebut el testimoni d\'autenticació de Google
 $string['nooauthcredentials'] = 'Es requereixen credencials OAuth';
 $string['nooauthcredentials_help'] = 'Per a utilitzar el connector de dossier de Google Docs heu de configurar les credencials OAuth en la configuració del dossier.';
 $string['nosessiontoken'] = 'No és possible l\'exportació a Google perquè no existieix el testimoni de sessió.';
-$string['oauthinfo'] = '<p> Per utilitzar aquest connector, heu de registrar el vostre lloc a Google, com es descriu en la documentació de la <a href="{$a->docsurl}">configuració de Google OAuth 2.0</a>. </p><p> Com a part del procés de registre, haureu d\'introduir l\'URL següent com a «URL de redirecció autoritzats»: </p><p> {$a->callbackurl} </p> Un cop registrat, se us proporcionarà un ID de client i un secret que podeu utilitzar per configurar tots els connectors de Google Docs i Picasa. </p>';
+$string['oauthinfo'] = '<p>Per utilitzar aquest connector, heu de registrar el vostre lloc a Google, tal com es descriu a la documentació <a href="{$a->docsurl}">Configuració de Google OAuth 2.0</a>.</p><p>Com a part del procés de registre, haureu d\'introduir l\'URL següent com a «URI de redirecció autoritzats»:</p><p>{$a->callbackurl}</p><p>Un cop registrat, se us proporcionarà un identificador de client i un secret que es poden utilitzar per configurar tots els connectors de Google Drive.</p>';
 $string['pluginname'] = 'Documents de Google';
 $string['secret'] = 'Secret';
 $string['sendfailed'] = 'La transferència del fitxer {$a} a Google ha fallat';

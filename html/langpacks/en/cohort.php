@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'en', version '4.1'.
+ * Strings for component 'cohort', language 'en', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Cohort member';
 $string['cohorts'] = 'Cohorts';
 $string['cohortsin'] = '{$a}: available cohorts';
 $string['component'] = 'Source';
+$string['contextcohortnotallowed'] = 'Cohort <b>{$a}</b> not allowed in this context.';
 $string['contextnotfound'] = 'Context <b>{$a}</b> not found or you don\'t have permission to create a cohort there. The default context will be used.';
 $string['csvcontainserrors'] = 'Errors were found in CSV data. See details below.';
 $string['csvcontainswarnings'] = 'Warnings were found in CSV data. See details below.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'Current users';
 $string['currentusersmatching'] = 'Current users matching';
 $string['defaultcontext'] = 'Default context';
 $string['delcohort'] = 'Delete cohort';
-$string['delconfirm'] = 'Do you really want to delete cohort \'{$a}\'?';
+$string['delconfirm'] = 'This will delete cohort \'{$a}\' and all associated data.';
 $string['description'] = 'Description';
 $string['displayedrows'] = '{$a->displayed} rows displayed out of {$a->total}.';
 $string['duplicateidnumber'] = 'Cohort with the same ID number already exists';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'The ID of the user which is
 $string['removeuserwarning'] = 'Removing users from a cohort may result in unenrolling of users from multiple courses which includes deleting of user settings, grades, group membership and other user information from affected courses.';
 $string['search'] = 'Search';
 $string['searchcohort'] = 'Search cohort';
+$string['selectcohort'] = 'Select cohort';
 $string['selectfromcohort'] = 'Select members from cohort';
 $string['systemcohorts'] = 'System cohorts';
 $string['unknowncohort'] = 'Unknown cohort ({$a})!';

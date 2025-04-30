@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'it', version '4.1'.
+ * Strings for component 'label', language 'it', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, 
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Aggiungere Area di testo e media';
 $string['label:view'] = 'Visualizzare Area di testo e media';
+$string['labelname'] = 'Titolo nell\'indice del corso';
+$string['labelname_help'] = 'Il titolo viene utilizzato solo per identificare l\'area Testo e media nell\'indice del corso e per il completamento delle attività. Se lasciato vuoto, verrà generato automaticamente un titolo utilizzando i primi caratteri del testo.';
 $string['labeltext'] = 'Testo';
 $string['modulename'] = 'Area di testo e media';
 $string['modulename_help'] = 'L\'area di testo e media consente di inserire immagini e testo nella pagina home del corso.

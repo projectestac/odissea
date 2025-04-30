@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_swf', language 'el', version '4.1'.
+ * Strings for component 'media_swf', language 'el', version '4.4'.
  *
  * @package     media_swf
  * @category    string

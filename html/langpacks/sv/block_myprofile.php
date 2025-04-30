@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'sv', version '4.1'.
+ * Strings for component 'block_myprofile', language 'sv', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Visa inställningar för innehåll';
 $string['display_address'] = 'Visa adress';
-$string['display_aim'] = 'Visa AIM';
 $string['display_city'] = 'Visa stad';
 $string['display_country'] = 'Visa land';
 $string['display_currentlogin'] = 'Visa aktuell inloggning';
 $string['display_email'] = 'Visa e-post';
 $string['display_firstaccess'] = 'Visa första inloggning';
-$string['display_icq'] = 'Visa ICQ';
 $string['display_idnumber'] = 'Visa ID-nummer';
 $string['display_institution'] = 'Visa institution';
 $string['display_lastaccess'] = 'Visa senaste inloggning';
 $string['display_lastip'] = 'Visa senaste IP';
 $string['display_lastlogin'] = 'Visa senaste inloggning';
-$string['display_msn'] = 'Visa MSN';
 $string['display_phone1'] = 'Visa telefonnummer';
 $string['display_phone2'] = 'Visa mobiltelefon';
 $string['display_picture'] = 'Visa bild';
-$string['display_skype'] = 'Visa Skype';
-$string['display_yahoo'] = 'Visa Yahoo';
 $string['myprofile:addinstance'] = 'Lägg till';
 $string['myprofile:myaddinstance'] = 'Lägg till blocket Min profil till översiktssidan';
 $string['myprofile_settings'] = 'Synlig information';

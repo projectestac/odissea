@@ -16,24 +16,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$capabilities = array(
+$capabilities = [
 
-    'block/licenses_vicensvives:myaddinstance' => array(
+    'block/licenses_vicensvives:myaddinstance' => [
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(),
-        'clonepermissionsfrom' => 'moodle/my:manageblocks'
-    ),
+        'archetypes' => [],
+        'clonepermissionsfrom' => 'moodle/my:manageblocks',
+    ],
 
-    'block/licenses_vicensvives:addinstance' => array(
+    'block/licenses_vicensvives:addinstance' => [
         'riskbitmask' => RISK_SPAM | RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_BLOCK,
-        'archetypes' => array(
+        'archetypes' => [
             'editingteacher' => CAP_ALLOW,
-            'manager' => CAP_ALLOW
-        ),
+            'manager' => CAP_ALLOW,
+        ],
 
-        'clonepermissionsfrom' => 'moodle/site:manageblocks'
-    ),
-);
+        'clonepermissionsfrom' => 'moodle/site:manageblocks',
+    ],
+];

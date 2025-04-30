@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'zh_cn', version '4.1'.
+ * Strings for component 'auth_mnet', language 'zh_cn', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNet认证';
 $string['privacy:metadata:external:mahara'] = '此插件可以将数据外发到到链接的 Mahara 应用程序。';
 $string['privacy:metadata:external:moodle'] = '此插件可以将数据外发到到链接的Moodle应用程序。';
 $string['privacy:metadata:mnet_external:address'] = '用户地址';
-$string['privacy:metadata:mnet_external:aim'] = '用户的 AIM 账号';
 $string['privacy:metadata:mnet_external:alternatename'] = '用户的替代名称。';
 $string['privacy:metadata:mnet_external:autosubscribe'] = '有关用户是否应自动订阅它发布帖子的论坛的首选项。';
 $string['privacy:metadata:mnet_external:calendartype'] = '要使用的日历类型的用户首选项。';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = '停止向用户发送电�
 $string['privacy:metadata:mnet_external:firstaccess'] = '用户首次访问本站的时间。';
 $string['privacy:metadata:mnet_external:firstname'] = '用户的名字。';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = '用户姓氏的拼音详情';
-$string['privacy:metadata:mnet_external:icq'] = '用户的 ICQ 号。';
 $string['privacy:metadata:mnet_external:id'] = '用户学号';
 $string['privacy:metadata:mnet_external:idnumber'] = '机构提供的身份识别号码';
 $string['privacy:metadata:mnet_external:imagealt'] = '用户图像的替代文本。';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = '用户姓的拼音
 $string['privacy:metadata:mnet_external:maildigest'] = '用户电子邮件摘要的设置';
 $string['privacy:metadata:mnet_external:maildisplay'] = '用户偏好，设置将用户的电子邮件地址显示给其他用户。';
 $string['privacy:metadata:mnet_external:middlename'] = '用户的中间名';
-$string['privacy:metadata:mnet_external:msn'] = '用户的MSN账号';
 $string['privacy:metadata:mnet_external:phone1'] = '用户的电话号码。';
 $string['privacy:metadata:mnet_external:phone2'] = '用户的其他电话号码。';
 $string['privacy:metadata:mnet_external:picture'] = '与此用户关联的图片详细信息。';
 $string['privacy:metadata:mnet_external:policyagreed'] = '用户是否已同意网站政策的标识。';
-$string['privacy:metadata:mnet_external:skype'] = '用户的 Skype 账号';
 $string['privacy:metadata:mnet_external:suspended'] = '用户在此系统是否为停用状态的标志。';
 $string['privacy:metadata:mnet_external:timezone'] = '用户的时区';
 $string['privacy:metadata:mnet_external:trackforums'] = '论坛的偏好设置及跟踪。';
 $string['privacy:metadata:mnet_external:trustbitmask'] = '信任码掩码';
-$string['privacy:metadata:mnet_external:url'] = '与此用户相关的网址。';
 $string['privacy:metadata:mnet_external:username'] = '此用户的用户名。';
-$string['privacy:metadata:mnet_external:yahoo'] = '用户的雅虎账号';
 $string['privacy:metadata:mnet_log'] = '本地用记过程登录及远程操作的详细信息。';
 $string['privacy:metadata:mnet_log:action'] = '用户执行的操作。';
 $string['privacy:metadata:mnet_log:cmid'] = '课程模块的 ID。';

@@ -22,7 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
 namespace mod_jclic\event;
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +39,16 @@ class course_module_instance_list_viewed extends \core\event\course_module_insta
      * Create the event from course record.
      *
      * @param \stdClass $course
+     * @throws \coding_exception
      * @return course_module_instance_list_viewed
      */
     public static function create_from_course(\stdClass $course) {
-        $params = array(
-            'context' => \context_course::instance($course->id)
-        );
+        $params = [
+            'context' => \context_course::instance($course->id),
+        ];
         $event = \mod_jclic\event\course_module_instance_list_viewed::create($params);
         $event->add_record_snapshot('course', $course);
+
         return $event;
     }
 }

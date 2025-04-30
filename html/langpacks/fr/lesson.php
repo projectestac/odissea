@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', version '4.1'.
+ * Strings for component 'lesson', language 'fr', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -150,7 +150,7 @@ $string['correctresponse'] = 'Feedback réponse correcte';
 $string['createaquestionpage'] = 'Créer une page question';
 $string['credit'] = 'Crédit';
 $string['customscoring'] = 'Score personnalisé';
-$string['customscoring_help'] = 'Si cette option est activée, une valeur numérique négative ou positive peut être attribuée à chaque réponse.';
+$string['customscoring_help'] = 'Si cette option est activée, un nombre entier (positif ou négatif) peut être indiqué pour chaque réponse.';
 $string['deadline'] = 'À faire jusqu’au';
 $string['defaultessayresponse'] = 'Votre composition sera évaluée par votre enseignant.';
 $string['deleteallattempts'] = 'Supprimer toutes les tentatives des leçons';
@@ -542,7 +542,7 @@ $string['savechangesandeol'] = 'Enregistrer tous les changements et aller à la 
 $string['saveoverrideandstay'] = 'Enregistrer et ajouter une autre dérogation';
 $string['savepage'] = 'Enregistrer la page';
 $string['score'] = 'Score';
-$string['score_help'] = 'Le score n’est utilisé que si l’option « score personnalisé » de la leçon est activée. Chaque réponse peut alors recevoir un nombre de points (positif ou négatif).';
+$string['score_help'] = 'Si le réglage « Score personnalisé » est activé dans les réglages de la leçon, un nombre entier (positif ou négatif) peut être indiqué pour chaque réponse.';
 $string['scores'] = 'Scores';
 $string['search:activity'] = 'Leçon – information sur l’activité';
 $string['secondpluswrong'] = 'Pas tout à fait. Voulez-vous essayer à nouveau ?';

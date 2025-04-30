@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ca', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'ca', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -30,8 +30,8 @@ $string['assessmentname'] = 'Element de qualificació';
 $string['blanks'] = 'Qualificacions buides';
 $string['bulkappliesto'] = 'Per';
 $string['bulkfor'] = 'Qualificacions per {$a}';
-$string['bulkinsertvalue'] = 'Insereix el valor';
-$string['bulklegend'] = 'Inserció en massa';
+$string['bulkinsertvalue'] = 'Insereix la qualificació nova';
+$string['bulklegend'] = 'Insereix qualificacions en massa';
 $string['bulkperform'] = 'Fes una inserció en massa';
 $string['entrypage'] = 'Qualifica un usuari o un element de qualificació';
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de vista única de qualificació.';
@@ -44,9 +44,9 @@ $string['excludenonegrades'] = 'No n\'excloguis cap';
 $string['feedbackfor'] = 'Retroacció per {$a}';
 $string['filtergrades'] = 'Mostra les qualificacions de {$a}.';
 $string['gradefor'] = 'Qualificació per {$a}';
-$string['gradeitem'] = 'Qualifica l\'element: {$a}';
+$string['gradeitem'] = 'Visualització de les qualificacions de {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Aquest element de qualificació no es pot rectificar.';
-$string['gradeuser'] = 'Qualifica l\'usuari: {$a}';
+$string['gradeuser'] = 'Visualització de les qualificacions de {$a}';
 $string['itemsperpage'] = 'Elements per pàgina';
 $string['noscreens'] = 'No s\'ha pogut trobar una pantalla de vista única adient.';
 $string['notvalid'] = 'No és una pantalla de Vista única vàlida: {$a}';
@@ -62,7 +62,8 @@ $string['savegrades'] = 'S\'estan desant les qualificacions';
 $string['savegradessuccess'] = 'S\'han establert les qualificacions de {$a} elements';
 $string['selectagrade'] = 'Selecciona un element de qualificació';
 $string['selectgradeitemlink'] = 'Selecciona un element de qualificació';
-$string['singleview:view'] = 'Mostra l\'informe';
+$string['singleview:view'] = 'Mostra la vista única';
+$string['singleviewreport_gradeitem'] = 'Vista única per a aquest element';
 $string['summarygrade'] = 'Una taula d\'usuaris, amb columnes per l\'interval, qualificació, retroacció i si una qualificació concreta està exclosa o rectificada.';
 $string['summaryuser'] = 'Una taula d\'elements de qualificació, amb columnes per la categoria de qualificació, interval, qualificació, retroacció i si una qualificació concreta està exclosa o rectificada.';
 $string['userselect'] = 'Selecciona una activitat';

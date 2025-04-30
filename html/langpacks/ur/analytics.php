@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ur', version '4.1'.
+ * Strings for component 'analytics', language 'ur', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -96,7 +96,6 @@ $string['modeinstructionblendedhybrid'] = 'ملاوٹ شدہ یا ہائبرڈ';
 $string['modeinstructionfacetoface'] = 'آمنے سامنے';
 $string['modeinstructionfullyonline'] = 'مکمل طور پر آن لائن';
 $string['modeloutputdir'] = 'ماڈل آؤٹ پٹ ڈائرکٹری';
-$string['modeloutputdirinfo'] = 'ڈائرکٹری جہاں پیشین گوئی پروسیسرز تمام تشخیصی معلومات کو محفوظ کرتے ہیں۔ ڈیبگنگ اور تحقیق کے لیے مفید ہے۔';
 $string['modeloutputdirwithdefaultinfo'] = 'ڈائرکٹری جہاں پیشین گوئی پروسیسرز تمام تشخیصی معلومات کو محفوظ کرتے ہیں۔ ڈیبگنگ اور تحقیق کے لیے مفید ہے۔ اگر خالی ہے، تو {$a} بطور ڈیفالٹ استعمال ہوگا۔';
 $string['modeltimelimit'] = 'فی ماڈل تجزیہ وقت کی حد';
 $string['modeltimelimitinfo'] = 'یہ ترتیب اس وقت کو محدود کرتی ہے جو ہر ماڈل سائٹ کے مواد کا تجزیہ کرنے میں صرف کرتا ہے۔';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive_adapted_for_coderunner', language 'ar', version '4.1'.
+ * Strings for component 'qbehaviour_adaptive_adapted_for_coderunner', language 'ar', version '4.4'.
  *
  * @package     qbehaviour_adaptive_adapted_for_coderunner
  * @category    string
@@ -25,5 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['giveup'] = 'توقف واقرأ الإفادة النهائية';
+$string['notcomplete'] = 'غير مكتمل';
+$string['pluginname'] = 'تم اعتماد المتكيف مع coderunner';
+$string['precheck'] = 'الفحص الأولي';
+$string['precheckedresponse'] = 'المفحوص قبلاً: {$a}';
+$string['precheckresults'] = 'نتائج الفحص الأولي';
 $string['privacy:metadata'] = 'إن ملحق سلوك السؤال، النمط المتكيف لأسئلة coderunner لا يخزن أي بيانات شخصية.';
 $string['triesremaining'] = 'المحاولات المتبقية: {$a}';
+$string['tryagain'] = 'حاول مجددًا';

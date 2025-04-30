@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'uk', version '4.1'.
+ * Strings for component 'availability_grouping', language 'uk', version '4.4'.
  *
  * @package     availability_grouping
  * @category    string
@@ -30,6 +30,6 @@ $string['error_selectgrouping'] = 'Ви повинні вибрати групу
 $string['missing'] = '(відсутнє групування)';
 $string['pluginname'] = 'Обмеження за групами';
 $string['privacy:metadata'] = 'Обмеження шляхом групування плагіна не зберігає жодних особистих даних.';
-$string['requires_grouping'] = 'Ви не належите до групи в групуванні <strong>{$a}</strong>';
-$string['requires_notgrouping'] = 'Ви належите до групи в групуванні <strong>{$a}</strong>';
+$string['requires_grouping'] = 'Ви належите до групи в групуванні <strong>{$a}</strong>';
+$string['requires_notgrouping'] = 'Ви не належите до групи в групуванні <strong>{$a}</strong>';
 $string['title'] = 'Групування';

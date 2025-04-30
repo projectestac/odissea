@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'nl', version '4.1'.
+ * Strings for component 'label', language 'nl', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage 
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Voeg een nieuwe Tekst- en mediazone toe';
 $string['label:view'] = 'Bekijk Tekst- en mediazone';
+$string['labelname'] = 'Titel in cursusindex';
+$string['labelname_help'] = 'De titel wordt enkel gebruikt om de tekst en media-zone te identificeren in de cursusindex en voor activiteitsvoltooiing. Als je dit leeg laat, wordt de naam automatisch gegenereerd op basis van de eerste tekens van de tekst.';
 $string['labeltext'] = 'Tekst';
 $string['modulename'] = 'Tekst- en mediazone';
 $string['modulename_help'] = 'Tekst- en mediazone maakt het mogelijk om tekst en multimedia te tonen op de cursuspagina.

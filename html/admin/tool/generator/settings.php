@@ -26,8 +26,8 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($hassiteconfig) {
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.05.23 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -39,9 +39,18 @@ if ($hassiteconfig) {
             get_string('maketestplan', 'tool_generator'),
             $CFG->wwwroot . '/' . $CFG->admin . '/tool/generator/maketestplan.php'));
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.05.23 @sarjona
+    $ADMIN->add(
+        'development',
+        new admin_externalpage(
+            'toolgenerator_runtestscenario',
+            get_string('testscenario', 'tool_generator'),
+            $CFG->wwwroot . '/' . $CFG->admin . '/tool/generator/runtestscenario.php'
+        )
+    );
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
-}
 
+}

@@ -380,7 +380,7 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
         }
 
         $str = '<div title="' . s($this->field->description) . '">';
-        $str .= '<label for="field_'.$this->field->id.'"><span class="accesshide">'.$this->field->name.'</span>';
+        $str .= '<label for="field_'.$this->field->id.'"><span class="accesshide">'.s($this->field->name).'</span>';
         if ($this->field->required) {
             $image = $OUTPUT->pix_icon('req', get_string('requiredelement', 'form'));
             $str .= html_writer::div($image, 'inline-req');
@@ -428,11 +428,26 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
 
         echo $OUTPUT->heading($this->name(), 3);
 
-        $filepath = $CFG->dirroot.'/mod/data/field/'.$this->type.'/mod.html';
+        $filepath = $CFG->dirroot . '/mod/data/field/' . $this->type . '/mod.html';
+        $templatename = 'datafield_' . $this->type . '/' . $this->type;
 
-        if (!file_exists($filepath)) {
-            throw new \moodle_exception(get_string('missingfieldtype', 'data', (object)['name' => $this->field->name]));
+        try {
+            $templatefilepath = \core\output\mustache_template_finder::get_template_filepath($templatename);
+            $templatefileexists = true;
+        } catch (moodle_exception $e) {
+            if (!file_exists($filepath)) {
+                // Neither file exists.
+                throw new \moodle_exception(get_string('missingfieldtype', 'data', (object)['name' => $this->field->name]));
+            }
+            $templatefileexists = false;
+        }
+
+        if ($templatefileexists) {
+            // Give out templated Bootstrap formatted form fields.
+            $data = $this->get_field_params();
+            echo $OUTPUT->render_from_template($templatename, $data);
         } else {
+            // Fall back to display mod.html for backward compatibility.
             require_once($filepath);
         }
 
@@ -441,12 +456,12 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
             'type' => 'submit',
             'name' => 'cancel',
             'value' => get_string('cancel'),
-            'class' => 'btn btn-secondary mr-2'
+            'class' => 'btn btn-secondary mx-1'
         ]);
         $actionbuttons .= html_writer::tag('input', null, [
             'type' => 'submit',
             'value' => get_string('save'),
-            'class' => 'btn btn-primary'
+            'class' => 'btn btn-primary mx-1'
         ]);
         $actionbuttons .= html_writer::end_div();
 
@@ -497,7 +512,6 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
      * @return bool|string
      */
     function display_browse_field($recordid, $template) {
-        global $DB;
         $content = $this->get_data_content($recordid);
         if (!$content || !isset($content->content)) {
             return '';
@@ -508,7 +522,8 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
             $options->filter = false;
         }
         $options->para = false;
-        $str = format_text($content->content, $content->content1, $options);
+        $format = !empty($content->content1) && !empty(trim($content->content1)) ? $content->content1 : null;
+        $str = format_text($content->content, $format, $options);
         return $str;
     }
 
@@ -640,16 +655,62 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
     }
 
     /**
-     * Per default, return the record's text value only from the "content" field.
-     * Override this in fields class if necesarry.
+     * Per default, it is assumed that fields do not support file exporting. Override this (return true)
+     * on fields supporting file export. You will also have to implement export_file_value().
      *
-     * @param string $record
+     * @return bool true if field will export a file, false otherwise
+     */
+    public function file_export_supported(): bool {
+        return false;
+    }
+
+    /**
+     * Per default, does not return a file (just null).
+     * Override this in fields class, if you want your field to export a file content.
+     * In case you are exporting a file value, export_text_value() should return the corresponding file name.
+     *
+     * @param stdClass $record
+     * @return null|string the file content as string or null, if no file content is being provided
+     */
+    public function export_file_value(stdClass $record): null|string {
+        return null;
+    }
+
+    /**
+     * Per default, a field does not support the import of files.
+     *
+     * A field type can overwrite this function and return true. In this case it also has to implement the function
+     * import_file_value().
+     *
+     * @return false means file imports are not supported
+     */
+    public function file_import_supported(): bool {
+        return false;
+    }
+
+    /**
+     * Returns a stored_file object for exporting a file of a given record.
+     *
+     * @param int $contentid content id
+     * @param string $filecontent the content of the file as string
+     * @param string $filename the filename the file should have
+     */
+    public function import_file_value(int $contentid, string $filecontent, string $filename): void {
+        return;
+    }
+
+    /**
+     * Per default, return the record's text value only from the "content" field.
+     * Override this in fields class if necessary.
+     *
+     * @param stdClass $record
      * @return string
      */
-    function export_text_value($record) {
+    public function export_text_value(stdClass $record) {
         if ($this->text_export_supported()) {
             return $record->content;
         }
+        return '';
     }
 
     /**
@@ -696,6 +757,37 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
         }
         return $configs;
     }
+
+    /**
+     * Function to let field define their parameters.
+     *
+     * This method that should be overridden by the datafield plugins
+     * when they need to define their data.
+     *
+     * @return array
+     */
+    protected function get_field_params(): array {
+        // Name and description of the field.
+        $data = [
+            'name' => $this->field->name,
+            'description' => $this->field->description,
+        ];
+
+        // Whether the field is required.
+        if (isset($this->field->required)) {
+            $data['required'] = $this->field->required;
+        }
+
+        // Add all the field parameters.
+        for ($i = 1; $i <= 10; $i++) {
+            if (isset($this->field->{"param$i"})) {
+                $data["param$i"] = $this->field->{"param$i"};
+            }
+        }
+
+        return $data;
+    }
+
 }
 
 
@@ -833,34 +925,35 @@ function data_generate_tag_form($recordid = false, $selected = []) {
 function data_replace_field_in_templates($data, $searchfieldname, $newfieldname) {
     global $DB;
 
-    if (!empty($newfieldname)) {
-        $prestring = '[[';
-        $poststring = ']]';
-        $idpart = '#id';
-
-    } else {
-        $prestring = '';
-        $poststring = '';
-        $idpart = '';
+    $newdata = (object)['id' => $data->id];
+    $update = false;
+    $templates = ['listtemplate', 'singletemplate', 'asearchtemplate', 'addtemplate', 'rsstemplate'];
+    foreach ($templates as $templatename) {
+        if (empty($data->$templatename)) {
+            continue;
+        }
+        $search = [
+            '[[' . $searchfieldname . ']]',
+            '[[' . $searchfieldname . '#id]]',
+            '[[' . $searchfieldname . '#name]]',
+            '[[' . $searchfieldname . '#description]]',
+        ];
+        if (empty($newfieldname)) {
+            $replace = ['', '', '', ''];
+        } else {
+            $replace = [
+                '[[' . $newfieldname . ']]',
+                '[[' . $newfieldname . '#id]]',
+                '[[' . $newfieldname . '#name]]',
+                '[[' . $newfieldname . '#description]]',
+            ];
+        }
+        $newdata->{$templatename} = str_ireplace($search, $replace, $data->{$templatename} ?? '');
+        $update = true;
     }
-
-    $newdata = new stdClass();
-    $newdata->id = $data->id;
-    $newdata->singletemplate = str_ireplace('[['.$searchfieldname.']]',
-            $prestring.$newfieldname.$poststring, $data->singletemplate ?? '');
-
-    $newdata->listtemplate = str_ireplace('[['.$searchfieldname.']]',
-            $prestring.$newfieldname.$poststring, $data->listtemplate ?? '');
-
-    $newdata->addtemplate = str_ireplace('[['.$searchfieldname.']]',
-            $prestring.$newfieldname.$poststring, $data->addtemplate ?? '');
-
-    $newdata->addtemplate = str_ireplace('[['.$searchfieldname.'#id]]',
-            $prestring.$newfieldname.$idpart.$poststring, $data->addtemplate ?? '');
-
-    $newdata->rsstemplate = str_ireplace('[['.$searchfieldname.']]',
-            $prestring.$newfieldname.$poststring, $data->rsstemplate ?? '');
-
+    if (!$update) {
+        return true;
+    }
     return $DB->update_record('data', $newdata);
 }
 
@@ -871,29 +964,36 @@ function data_replace_field_in_templates($data, $searchfieldname, $newfieldname)
  * @global object
  * @param object $data
  * @param string $newfieldname
+ * @return bool if the field has been added or not
  */
-function data_append_new_field_to_templates($data, $newfieldname) {
-    global $DB;
+function data_append_new_field_to_templates($data, $newfieldname): bool {
+    global $DB, $OUTPUT;
 
-    $newdata = new stdClass();
-    $newdata->id = $data->id;
-    $change = false;
-
-    if (!empty($data->singletemplate)) {
-        $newdata->singletemplate = $data->singletemplate.' [[' . $newfieldname .']]';
-        $change = true;
+    $newdata = (object)['id' => $data->id];
+    $update = false;
+    $templates = ['singletemplate', 'addtemplate', 'rsstemplate'];
+    foreach ($templates as $templatename) {
+        if (empty($data->$templatename)
+            || strpos($data->$templatename, "[[$newfieldname]]") !== false
+            || strpos($data->$templatename, "##otherfields##") !== false
+        ) {
+            continue;
+        }
+        $newdata->$templatename = $data->$templatename;
+        $fields = [[
+            'fieldname' => '[[' . $newfieldname . '#name]]',
+            'fieldcontent' => '[[' . $newfieldname . ']]',
+        ]];
+        $newdata->$templatename .= $OUTPUT->render_from_template(
+            'mod_data/fields_otherfields',
+            ['fields' => $fields, 'classes' => 'added_field']
+        );
+        $update = true;
     }
-    if (!empty($data->addtemplate)) {
-        $newdata->addtemplate = $data->addtemplate.' [[' . $newfieldname . ']]';
-        $change = true;
+    if (!$update) {
+        return false;
     }
-    if (!empty($data->rsstemplate)) {
-        $newdata->rsstemplate = $data->singletemplate.' [[' . $newfieldname . ']]';
-        $change = true;
-    }
-    if ($change) {
-        $DB->update_record('data', $newdata);
-    }
+    return $DB->update_record('data', $newdata);
 }
 
 
@@ -974,7 +1074,7 @@ function data_get_field_new($type, $data) {
  * @param stdClass|null $cm optional course module data
  * @return data_field_base the field object instance or data_field_base if unkown type
  */
-function data_get_field($field, $data, $cm=null) {
+function data_get_field(stdClass $field, stdClass $data, ?stdClass $cm=null): data_field_base {
     global $CFG;
     if (!isset($field->type)) {
         return new data_field_base($field);
@@ -1056,9 +1156,11 @@ function data_numentries($data, $userid=null) {
  * @param object $data
  * @param int $groupid
  * @param int $userid
+ * @param bool $approved If specified, and the user has the capability to approve entries, then this value
+ *      will be used as the approved status of the new record
  * @return bool
  */
-function data_add_record($data, $groupid = 0, $userid = null) {
+function data_add_record($data, $groupid = 0, $userid = null, bool $approved = true) {
     global $USER, $DB;
 
     $cm = get_coursemodule_from_instance('data', $data->id);
@@ -1070,7 +1172,7 @@ function data_add_record($data, $groupid = 0, $userid = null) {
     $record->groupid = $groupid;
     $record->timecreated = $record->timemodified = time();
     if (has_capability('mod/data:approve', $context)) {
-        $record->approved = 1;
+        $record->approved = $approved;
     } else {
         $record->approved = 0;
     }
@@ -1672,7 +1774,7 @@ function mod_data_rating_can_see_item_ratings($params) {
  * @return void
  */
 function data_print_preference_form($data, $perpage, $search, $sort='', $order='ASC', $search_array = '', $advanced = 0, $mode= ''){
-    global $CFG, $DB, $PAGE, $OUTPUT;
+    global $DB, $PAGE, $OUTPUT;
 
     $cm = get_coursemodule_from_instance('data', $data->id);
     $context = context_module::instance($cm->id);
@@ -1688,7 +1790,8 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
     echo '<label for="pref_perpage">'.get_string('pagesize','data').'</label> ';
     $pagesizes = array(2=>2,3=>3,4=>4,5=>5,6=>6,7=>7,8=>8,9=>9,10=>10,15=>15,
                        20=>20,30=>30,40=>40,50=>50,100=>100,200=>200,300=>300,400=>400,500=>500,1000=>1000);
-    echo html_writer::select($pagesizes, 'perpage', $perpage, false, array('id' => 'pref_perpage', 'class' => 'custom-select'));
+    echo html_writer::select($pagesizes, 'perpage', $perpage, false, array('id' => 'pref_perpage',
+        'class' => 'custom-select mr-1'));
 
     if ($advanced) {
         $regsearchclass = 'search_none';
@@ -1697,19 +1800,19 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
         $regsearchclass = 'search_inline';
         $advancedsearchclass = 'search_none';
     }
-    echo '<div id="reg_search" class="' . $regsearchclass . ' form-inline" >&nbsp;&nbsp;&nbsp;';
-    echo '<label for="pref_search">' . get_string('search') . '</label> <input type="text" ' .
-         'class="form-control" size="16" name="search" id= "pref_search" value="' . s($search) . '" /></div>';
-    echo '&nbsp;&nbsp;&nbsp;<label for="pref_sortby">'.get_string('sortby').'</label> ';
+    echo '<div id="reg_search" class="' . $regsearchclass . ' mr-1" >';
+    echo '<label for="pref_search" class="mr-1">' . get_string('search') . '</label><input type="text" ' .
+         'class="form-control d-inline-block align-middle w-auto mr-1" size="16" name="search" id= "pref_search" value="' . s($search) . '" /></div>';
+    echo '<label for="pref_sortby">'.get_string('sortby').'</label> ';
     // foreach field, print the option
     echo '<select name="sort" id="pref_sortby" class="custom-select mr-1">';
     if ($fields = $DB->get_records('data_fields', array('dataid'=>$data->id), 'name')) {
         echo '<optgroup label="'.get_string('fields', 'data').'">';
         foreach ($fields as $field) {
             if ($field->id == $sort) {
-                echo '<option value="'.$field->id.'" selected="selected">'.$field->name.'</option>';
+                echo '<option value="'.$field->id.'" selected="selected">'.s($field->name).'</option>';
             } else {
-                echo '<option value="'.$field->id.'">'.$field->name.'</option>';
+                echo '<option value="'.$field->id.'">'.s($field->name).'</option>';
             }
         }
         echo '</optgroup>';
@@ -1753,14 +1856,14 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
         $checked = '';
     }
     $PAGE->requires->js('/mod/data/data.js');
-    echo '&nbsp;<input type="hidden" name="advanced" value="0" />';
-    echo '&nbsp;<input type="hidden" name="filter" value="1" />';
-    echo '&nbsp;<input type="checkbox" id="advancedcheckbox" name="advanced" value="1" ' . $checked . ' ' .
+    echo '<input type="hidden" name="advanced" value="0" />';
+    echo '<input type="hidden" name="filter" value="1" />';
+    echo '<input type="checkbox" id="advancedcheckbox" name="advanced" value="1" ' . $checked . ' ' .
          'onchange="showHideAdvSearch(this.checked);" class="mx-1" />' .
          '<label for="advancedcheckbox">' . get_string('advancedsearch', 'data') . '</label>';
     echo '</div>';
     echo '<div id="advsearch-save-sec" class="ml-auto '. $regsearchclass . '">';
-    echo '&nbsp;<input type="submit" class="btn btn-secondary" value="' . get_string('savesettings', 'data') . '" />';
+    echo '<input type="submit" class="btn btn-secondary" value="' . get_string('savesettings', 'data') . '" />';
     echo '</div>';
     echo '</div>';
     echo '<div>';
@@ -1801,21 +1904,45 @@ function data_print_preference_form($data, $perpage, $search, $sort='', $order='
     $replacement = array();
 
     // Then we generate strings to replace for normal tags
+    $otherfields = [];
     foreach ($fields as $field) {
         $fieldname = $field->field->name;
         $fieldname = preg_quote($fieldname, '/');
-        $patterns[] = "/\[\[$fieldname\]\]/i";
         $searchfield = data_get_field_from_id($field->field->id, $data);
 
         if ($searchfield->type === 'unknown') {
             continue;
         }
         if (!empty($search_array[$field->field->id]->data)) {
-            $replacement[] = $searchfield->display_search_field($search_array[$field->field->id]->data);
+            $searchinput = $searchfield->display_search_field($search_array[$field->field->id]->data);
         } else {
-            $replacement[] = $searchfield->display_search_field();
+            $searchinput = $searchfield->display_search_field();
+        }
+        $patterns[] = "/\[\[$fieldname\]\]/i";
+        $replacement[] = $searchinput;
+        // Extra field information.
+        $patterns[] = "/\[\[$fieldname#name\]\]/i";
+        $replacement[] = $field->field->name;
+        $patterns[] = "/\[\[$fieldname#description\]\]/i";
+        $replacement[] = $field->field->description;
+        // Other fields.
+        if (strpos($asearchtemplate, "[[" . $field->field->name . "]]") === false) {
+            $otherfields[] = [
+                'fieldname' => $searchfield->field->name,
+                'fieldcontent' => $searchinput,
+            ];
         }
     }
+    $patterns[] = "/##otherfields##/";
+    if (!empty($otherfields)) {
+        $replacement[] = $OUTPUT->render_from_template(
+            'mod_data/fields_otherfields',
+            ['fields' => $otherfields]
+        );
+    } else {
+        $replacement[] = '';
+    }
+
     $fn = !empty($search_array[DATA_FIRSTNAME]->data) ? $search_array[DATA_FIRSTNAME]->data : '';
     $ln = !empty($search_array[DATA_LASTNAME]->data) ? $search_array[DATA_LASTNAME]->data : '';
     $patterns[]    = '/##firstname##/';
@@ -2702,7 +2829,7 @@ function data_preset_path($course, $userid, $shortname) {
  * Implementation of the function for printing the form elements that control
  * whether the course reset functionality affects the data.
  *
- * @param $mform form passed by reference
+ * @param MoodleQuickForm $mform form passed by reference
  */
 function data_reset_course_form_definition(&$mform) {
     $mform->addElement('header', 'dataheader', get_string('modulenameplural', 'data'));
@@ -2945,328 +3072,6 @@ function data_supports($feature) {
 
         default: return null;
     }
-}
-
-/**
- * Import records for a data instance from csv data.
- *
- * @param object $cm Course module of the data instance.
- * @param object $data The data instance.
- * @param string $csvdata The csv data to be imported.
- * @param string $encoding The encoding of csv data.
- * @param string $fielddelimiter The delimiter of the csv data.
- * @return int Number of records added.
- */
-function data_import_csv($cm, $data, &$csvdata, $encoding, $fielddelimiter) {
-    global $CFG, $DB;
-    // Large files are likely to take their time and memory. Let PHP know
-    // that we'll take longer, and that the process should be recycled soon
-    // to free up memory.
-    core_php_time_limit::raise();
-    raise_memory_limit(MEMORY_EXTRA);
-
-    $iid = csv_import_reader::get_new_iid('moddata');
-    $cir = new csv_import_reader($iid, 'moddata');
-
-    $context = context_module::instance($cm->id);
-
-    $readcount = $cir->load_csv_content($csvdata, $encoding, $fielddelimiter);
-    $csvdata = null; // Free memory.
-    if (empty($readcount)) {
-        throw new \moodle_exception('csvfailed', 'data', "{$CFG->wwwroot}/mod/data/edit.php?d={$data->id}");
-    } else {
-        if (!$fieldnames = $cir->get_columns()) {
-            throw new \moodle_exception('cannotreadtmpfile', 'error');
-        }
-
-        // Check the fieldnames are valid.
-        $rawfields = $DB->get_records('data_fields', array('dataid' => $data->id), '', 'name, id, type');
-        $fields = array();
-        $errorfield = '';
-        $usernamestring = get_string('username');
-        $safetoskipfields = array(get_string('user'), get_string('email'),
-            get_string('timeadded', 'data'), get_string('timemodified', 'data'),
-            get_string('approved', 'data'), get_string('tags', 'data'));
-        $userfieldid = null;
-        foreach ($fieldnames as $id => $name) {
-            if (!isset($rawfields[$name])) {
-                if ($name == $usernamestring) {
-                    $userfieldid = $id;
-                } else if (!in_array($name, $safetoskipfields)) {
-                    $errorfield .= "'$name' ";
-                }
-            } else {
-                // If this is the second time, a field with this name comes up, it must be a field not provided by the user...
-                // like the username.
-                if (isset($fields[$name])) {
-                    if ($name == $usernamestring) {
-                        $userfieldid = $id;
-                    }
-                    unset($fieldnames[$id]); // To ensure the user provided content fields remain in the array once flipped.
-                } else {
-                    $field = $rawfields[$name];
-                    $filepath = "$CFG->dirroot/mod/data/field/$field->type/field.class.php";
-                    if (!file_exists($filepath)) {
-                        $errorfield .= "'$name' ";
-                        continue;
-                    }
-                    require_once($filepath);
-                    $classname = 'data_field_' . $field->type;
-                    $fields[$name] = new $classname($field, $data, $cm);
-                }
-            }
-        }
-
-        if (!empty($errorfield)) {
-            throw new \moodle_exception('fieldnotmatched', 'data',
-                "{$CFG->wwwroot}/mod/data/edit.php?d={$data->id}", $errorfield);
-        }
-
-        $fieldnames = array_flip($fieldnames);
-
-        $cir->init();
-        $recordsadded = 0;
-        while ($record = $cir->next()) {
-            $authorid = null;
-            if ($userfieldid) {
-                if (!($author = core_user::get_user_by_username($record[$userfieldid], 'id'))) {
-                    $authorid = null;
-                } else {
-                    $authorid = $author->id;
-                }
-            }
-            if ($recordid = data_add_record($data, 0, $authorid)) {  // Add instance to data_record.
-                foreach ($fields as $field) {
-                    $fieldid = $fieldnames[$field->field->name];
-                    if (isset($record[$fieldid])) {
-                        $value = $record[$fieldid];
-                    } else {
-                        $value = '';
-                    }
-
-                    if (method_exists($field, 'update_content_import')) {
-                        $field->update_content_import($recordid, $value, 'field_' . $field->field->id);
-                    } else {
-                        $content = new stdClass();
-                        $content->fieldid = $field->field->id;
-                        $content->content = $value;
-                        $content->recordid = $recordid;
-                        $DB->insert_record('data_content', $content);
-                    }
-                }
-
-                if (core_tag_tag::is_enabled('mod_data', 'data_records') &&
-                    isset($fieldnames[get_string('tags', 'data')])) {
-                    $columnindex = $fieldnames[get_string('tags', 'data')];
-                    $rawtags = $record[$columnindex];
-                    $tags = explode(',', $rawtags);
-                    foreach ($tags as $tag) {
-                        $tag = trim($tag);
-                        if (empty($tag)) {
-                            continue;
-                        }
-                        core_tag_tag::add_item_tag('mod_data', 'data_records', $recordid, $context, $tag);
-                    }
-                }
-
-                $recordsadded++;
-                print get_string('added', 'moodle', $recordsadded) . ". " . get_string('entry', 'data') . " (ID $recordid)<br />\n";
-            }
-        }
-        $cir->close();
-        $cir->cleanup(true);
-        return $recordsadded;
-    }
-    return 0;
-}
-
-/**
- * @global object
- * @param array $export
- * @param string $delimiter_name
- * @param object $database
- * @param int $count
- * @param bool $return
- * @return string|void
- */
-function data_export_csv($export, $delimiter_name, $database, $count, $return=false) {
-    global $CFG;
-    require_once($CFG->libdir . '/csvlib.class.php');
-
-    $filename = $database . '-' . $count . '-record';
-    if ($count > 1) {
-        $filename .= 's';
-    }
-    if ($return) {
-        return csv_export_writer::print_array($export, $delimiter_name, '"', true);
-    } else {
-        csv_export_writer::download_array($filename, $export, $delimiter_name);
-    }
-}
-
-/**
- * @global object
- * @param array $export
- * @param string $dataname
- * @param int $count
- * @return string
- */
-function data_export_xls($export, $dataname, $count) {
-    global $CFG;
-    require_once("$CFG->libdir/excellib.class.php");
-    $filename = clean_filename("{$dataname}-{$count}_record");
-    if ($count > 1) {
-        $filename .= 's';
-    }
-    $filename .= clean_filename('-' . gmdate("Ymd_Hi"));
-    $filename .= '.xls';
-
-    $filearg = '-';
-    $workbook = new MoodleExcelWorkbook($filearg);
-    $workbook->send($filename);
-    $worksheet = array();
-    $worksheet[0] = $workbook->add_worksheet('');
-    $rowno = 0;
-    foreach ($export as $row) {
-        $colno = 0;
-        foreach($row as $col) {
-            $worksheet[0]->write($rowno, $colno, $col);
-            $colno++;
-        }
-        $rowno++;
-    }
-    $workbook->close();
-    return $filename;
-}
-
-/**
- * @global object
- * @param array $export
- * @param string $dataname
- * @param int $count
- * @param string
- */
-function data_export_ods($export, $dataname, $count) {
-    global $CFG;
-    require_once("$CFG->libdir/odslib.class.php");
-    $filename = clean_filename("{$dataname}-{$count}_record");
-    if ($count > 1) {
-        $filename .= 's';
-    }
-    $filename .= clean_filename('-' . gmdate("Ymd_Hi"));
-    $filename .= '.ods';
-    $filearg = '-';
-    $workbook = new MoodleODSWorkbook($filearg);
-    $workbook->send($filename);
-    $worksheet = array();
-    $worksheet[0] = $workbook->add_worksheet('');
-    $rowno = 0;
-    foreach ($export as $row) {
-        $colno = 0;
-        foreach($row as $col) {
-            $worksheet[0]->write($rowno, $colno, $col);
-            $colno++;
-        }
-        $rowno++;
-    }
-    $workbook->close();
-    return $filename;
-}
-
-/**
- * @global object
- * @param int $dataid
- * @param array $fields
- * @param array $selectedfields
- * @param int $currentgroup group ID of the current group. This is used for
- * exporting data while maintaining group divisions.
- * @param object $context the context in which the operation is performed (for capability checks)
- * @param bool $userdetails whether to include the details of the record author
- * @param bool $time whether to include time created/modified
- * @param bool $approval whether to include approval status
- * @param bool $tags whether to include tags
- * @return array
- */
-function data_get_exportdata($dataid, $fields, $selectedfields, $currentgroup=0, $context=null,
-                             $userdetails=false, $time=false, $approval=false, $tags = false) {
-    global $DB;
-
-    if (is_null($context)) {
-        $context = context_system::instance();
-    }
-    // exporting user data needs special permission
-    $userdetails = $userdetails && has_capability('mod/data:exportuserinfo', $context);
-
-    $exportdata = array();
-
-    // populate the header in first row of export
-    foreach($fields as $key => $field) {
-        if (!in_array($field->field->id, $selectedfields)) {
-            // ignore values we aren't exporting
-            unset($fields[$key]);
-        } else {
-            $exportdata[0][] = $field->field->name;
-        }
-    }
-    if ($tags) {
-        $exportdata[0][] = get_string('tags', 'data');
-    }
-    if ($userdetails) {
-        $exportdata[0][] = get_string('user');
-        $exportdata[0][] = get_string('username');
-        $exportdata[0][] = get_string('email');
-    }
-    if ($time) {
-        $exportdata[0][] = get_string('timeadded', 'data');
-        $exportdata[0][] = get_string('timemodified', 'data');
-    }
-    if ($approval) {
-        $exportdata[0][] = get_string('approved', 'data');
-    }
-
-    $datarecords = $DB->get_records('data_records', array('dataid'=>$dataid));
-    ksort($datarecords);
-    $line = 1;
-    foreach($datarecords as $record) {
-        // get content indexed by fieldid
-        if ($currentgroup) {
-            $select = 'SELECT c.fieldid, c.content, c.content1, c.content2, c.content3, c.content4 FROM {data_content} c, {data_records} r WHERE c.recordid = ? AND r.id = c.recordid AND r.groupid = ?';
-            $where = array($record->id, $currentgroup);
-        } else {
-            $select = 'SELECT fieldid, content, content1, content2, content3, content4 FROM {data_content} WHERE recordid = ?';
-            $where = array($record->id);
-        }
-
-        if( $content = $DB->get_records_sql($select, $where) ) {
-            foreach($fields as $field) {
-                $contents = '';
-                if(isset($content[$field->field->id])) {
-                    $contents = $field->export_text_value($content[$field->field->id]);
-                }
-                $exportdata[$line][] = $contents;
-            }
-            if ($tags) {
-                $itemtags = \core_tag_tag::get_item_tags_array('mod_data', 'data_records', $record->id);
-                $exportdata[$line][] = implode(', ', $itemtags);
-            }
-            if ($userdetails) { // Add user details to the export data
-                $userdata = get_complete_user_data('id', $record->userid);
-                $exportdata[$line][] = fullname($userdata);
-                $exportdata[$line][] = $userdata->username;
-                $exportdata[$line][] = $userdata->email;
-            }
-            if ($time) { // Add time added / modified
-                $exportdata[$line][] = userdate($record->timecreated);
-                $exportdata[$line][] = userdate($record->timemodified);
-            }
-            if ($approval) { // Add approval status
-                $exportdata[$line][] = (int) $record->approved;
-            }
-        }
-        $line++;
-    }
-    $line--;
-    return $exportdata;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -3593,7 +3398,6 @@ function data_presets_generate_xml($course, $cm, $data) {
     $preset = preset::create_from_instance($manager, $data->name);
     $reflection = new \ReflectionClass(preset::class);
     $method = $reflection->getMethod('generate_preset_xml');
-    $method->setAccessible(true);
     return $method->invokeArgs($preset, []);
 }
 

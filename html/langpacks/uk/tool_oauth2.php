@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'uk', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'uk', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'Підключення до системно�
 $string['createfromtemplate'] = 'Створити службу OAuth 2 з шаблону';
 $string['createfromtemplatedesc'] = 'Виберіть один із шаблонів послуг OAuth2 нижче, щоб створити службу OAuth з дійсною конфігурацією для одного з відомих типів служб. Це дозволить створити службу OAuth2 з усіма правильними кінцевими точками та параметрами, необхідними для автентифікації, хоча вам доведеться ввести ідентифікатор клієнта та секрет для нової служби, перш ніж вона може бути використана.';
 $string['createnewendpoint'] = 'Створити нову кінцеву точку для емітента "{$a}"';
-$string['createnewfacebookissuer'] = 'Створити нову службу Facebook';
-$string['createnewgoogleissuer'] = 'Створити нову службу Google';
-$string['createnewissuer'] = 'Створити нову службу';
-$string['createnewmicrosoftissuer'] = 'Створити нову службу Microsoft';
-$string['createnewnextcloudissuer'] = 'Створіть новий сервіс Nextcloud';
 $string['createnewservice'] = 'Створити новий сервіс:';
 $string['createnewuserfieldmapping'] = 'Створіть нове відображення поля користувача для емітента "{$a}"';
 $string['custom_service'] = 'Користувацьке';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Відображати на сторінці входу як';
 $string['loginissuer'] = 'Дозволити вхід';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Не налаштовано';
 $string['notdiscovered'] = 'Відкриття служби не вдалося';

@@ -45,22 +45,12 @@ class format_singleactivity extends core_courseformat\base {
      * @param int|stdClass $section Section object from database or just field course_sections.section
      *     if null the course view page is returned
      * @param array $options options for view URL. At the moment core uses:
-     *     'navigation' (bool) if true and section has no separate page, the function returns null
-     *     'sr' (int) used by multipage formats to specify to which section to return
+     *     'navigation' (bool) ignored by this format
+     *     'sr' (int) ignored by this format
      * @return null|moodle_url
      */
     public function get_view_url($section, $options = array()) {
-        $sectionnum = $section;
-        if (is_object($sectionnum)) {
-            $sectionnum = $section->section;
-        }
-        if ($sectionnum == 1) {
-            return new moodle_url('/course/view.php', array('id' => $this->courseid, 'section' => 1));
-        }
-        if (!empty($options['navigation']) && $section !== null) {
-            return null;
-        }
-        return new moodle_url('/course/view.php', array('id' => $this->courseid));
+        return new moodle_url('/course/view.php', ['id' => $this->courseid]);
     }
 
     /**
@@ -167,7 +157,16 @@ class format_singleactivity extends core_courseformat\base {
             foreach (array_keys($availabletypes) as $activity) {
                 $capability = "mod/{$activity}:addinstance";
                 if (!has_capability($capability, $testcontext)) {
-                    unset($availabletypes[$activity]);
+                    if (!$this->categoryid) {
+                        unset($availabletypes[$activity]);
+                    } else {
+                        // We do not have a course yet, so we guess if the user will have the capability to add the activity after
+                        // creating the course.
+                        $categorycontext = \context_coursecat::instance($this->categoryid);
+                        if (!guess_if_creator_will_have_course_capability($capability, $categorycontext)) {
+                            unset($availabletypes[$activity]);
+                        }
+                    }
                 }
             }
         }

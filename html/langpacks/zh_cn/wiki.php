@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', version '4.1'.
+ * Strings for component 'wiki', language 'zh_cn', version '4.4'.
  *
  * @package     wiki
  * @category    string
@@ -102,7 +102,7 @@ $string['format'] = '格式';
 $string['format_help'] = '* HTML - 可以使用HTML编辑器
 * Creole - 一个常用的wiki标记语言，会提供一个小型编辑工具条
 * Nwiki - Mediawiki风格的标记语言，由Nwiki模块支持';
-$string['formatcreole'] = 'Creole格式';
+$string['formatcreole'] = 'Creole 格式';
 $string['formatcreole_help'] = 'Creole是一种常用的wiki标记语言。通过它的编辑工具条可以直接插入想要的标记。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
@@ -297,7 +297,7 @@ $string['wiki'] = 'Wiki协作';
 $string['wiki:addinstance'] = '添加一个新 wiki';
 $string['wiki:createpage'] = '新建wiki页面';
 $string['wiki:editcomment'] = '向页面添加评论';
-$string['wiki:editpage'] = '保存wiki页面';
+$string['wiki:editpage'] = '编辑wiki页面';
 $string['wiki:managecomment'] = '管理wiki评论';
 $string['wiki:managefiles'] = '管理wiki文件';
 $string['wiki:managewiki'] = '管理wiki设置';

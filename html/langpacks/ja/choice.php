@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', version '4.1'.
+ * Strings for component 'choice', language 'ja', version '4.4'.
  *
  * @package     choice
  * @category    string
@@ -54,7 +54,7 @@ $string['chooseaction'] = '操作を選択する ...';
 $string['chooseoption'] = '選択: {$a}';
 $string['closebeforeopen'] = 'あなたは開始日時の前に終了日時を指定しました。';
 $string['completiondetail:submit'] = '選択する';
-$string['completionsubmit'] = 'ユーザが選択した場合、完了として表示する';
+$string['completionsubmit'] = '選択する';
 $string['description'] = '説明';
 $string['deselectalloption'] = 'すべての「 {$a} 」を選択解除する';
 $string['displayhorizontal'] = '水平に表示する';

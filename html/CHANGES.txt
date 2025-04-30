@@ -4,6 +4,66 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 25.03.25
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.7+
+- Updated langpacks
+- Local Àgora: Updated cache definitions
+- Questions: Added scripts to clean up duplicates
+- purgecategory: Added question bank plugin
+- questionbankoverview: Added report
+- settings.php: Unlocked enablestats and enableanalytics only for xtecadmin
+- Wiris: Upgraded all components
+
+
+Changes 25.02.04
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.5+
+- Updated langpacks
+- Completion: Ignore pass/fail when only Require grade defined (MDL-75582)
+- Question duplication: Partial reversion of MDL-77625
+- cloze: Upgraded tiny plugin
+- fontsize: Upgraded tiny plugin
+- Local Àgora: Added script to activate filter multilang and configure TinyMCE plugins
+- Theme xtecboost: Replaced twitter logo by X logo. Improved footer styles
+- Tiles: Upgraded course format
+- Wiris: Upgraded all components
+
+
+Changes 24.12.23
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.5+
+- Updated langpacks
+- attendance: Upgraded module
+- choicegroup: Upgraded module
+- GeoGebra: Upgraded module
+- jclic: Upgraded module
+- journal: Upgraded module
+- Local oauth: Updated plugin
+- Local Àgora: Updated plugin
+- questionnaire: Upgraded module
+- qv: Upgraded module
+- Vicens Vives: Upgraded all plugins
+- Completion progress: Upgraded block
+- rgrade: Updated block
+- cloze: Upgraded atto plugin
+- fontsize: Upgraded atto plugin
+- Cloze: Added tiny plugin
+- Fontcolor: Added tiny plugin
+- Fontfamily: Added tiny plugin
+- Fontsize: Added tiny plugin
+- Wiris: Added tiny plugin
+- multitopic: Upgraded course format
+- Simple: Upgraded course format
+- tiles: Upgraded course format
+- rcommon: Fixes and updates for Moodle 4.4
+- rcontent: Added monologo image and Added lang string
+- redislock: Upgraded local plugin
+- settings.php: Removed memcached configuration
+- xtec2020: Removed theme
+- xtecboost: Upgraded theme
+
+
 Changes 24.11.19
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.1.14+

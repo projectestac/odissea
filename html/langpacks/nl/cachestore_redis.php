@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'nl', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'nl', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'CA-bestandspad';
+$string['ca_file_help'] = 'Locatie van het certificaatautoriteitbestand op het lokale bestandssysteem';
+$string['clustermode'] = 'Clustermodus';
+$string['clustermode_help'] = 'Als je dit inschakelt, wordt de Redis-clusterfunctie uitgevoerd, waardoor je server meerdere servers kan bedienen om gelijktijdige verzoeken af te handelen.';
+$string['clustermodeunavailable'] = 'Redis Cluster is momenteel niet beschikbaar. Zorg ervoor dat de PHP Redis-extensie de Redis Cluster-functionaliteit ondersteunt.';
 $string['compressor_none'] = 'Geen compressie.';
 $string['compressor_php_gzip'] = 'Gebruik gzip-compressie.';
 $string['compressor_php_zstd'] = 'Gebruik Zstandard-compressie.';
+$string['encrypt_connection'] = 'Gebruik TLS-encryptie.';
+$string['encrypt_connection_help'] = 'Gebruik TLS om verbinding te maken met Redis. Gebruik  \'tls://\' niet in de hostnaam voor Redis, gebruik in plaats daarvan deze optie.';
 $string['password'] = 'Wachtwoord';
 $string['password_help'] = 'Dit stelt het wachtwoord in van de Redis-server.';
 $string['pluginname'] = 'Redis';
@@ -38,17 +45,51 @@ $string['prefix_help'] = 'Deze prefix wordt gebruikt voor alle sleutelnamen op d
 $string['prefixinvalid'] = 'Ongeldige prefix. Je mag alleen a-z A-Z 0-9-_ gebruiken.';
 $string['privacy:metadata:redis'] = 'De Redis cache store bewaart gegevens kort als deel van zijn cachingsfunctie. Deze gegevens worden bewaard op een Redis-server en daar regelmatig gewist.';
 $string['privacy:metadata:redis:data'] = 'De gegevens die in cache bewaard worden';
-$string['serializer_igbinary'] = 'De igbinary-serializer.';
-$string['serializer_php'] = 'De standaard PHP-serializer.';
-$string['server'] = 'Server';
-$string['server_help'] = 'Dit stelt de hostnaam of IP-adres in van de te gebruiken Redis-server.';
+$string['serializer_igbinary'] = 'Igbinary-serializer.';
+$string['serializer_php'] = 'Standaard PHP-serializer.';
+$string['server'] = 'Server(s)';
+$string['server_help'] = 'Dit stelt de hostnaam, IP-adres of Unix-socket in van de te gebruiken Redis-server.
+
+Enkele voorbeelden van instellingen:
+
+* testredis.abc.com - Om met een Redisserver te verbinden met hostnaam  (Standaard via poort 6379).
+* testredis.abc.com:1234 - Om met een Redisserver te verbinden met hostnaam  met een specifieke poort.
+* 1.2.3.4 - Om met een Redisserver te verbinden met een IP-adres (Standaard via poort 6379).
+* 1.2.3.4:1234 - Om met een Redisserver te verbinden via IP-adres met een specifieke poort.
+* unix:///var/redis.sock - Om met een Redisserver te verbinden via een Unix socket.
+* /var/redis.sock - Om met een Redisserver te verbinden via een Unix socket (alternatief formaat).
+
+Als de clustermodus is ingeschakeld, geef dan servers op, gescheiden dooreen nieuwe regel. Bijvoorbeeld:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+Zie <a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">Client-verbindingen aanvaarden</a> en <a href="https://redis.io/resources/clients/#php" target="_new">Redis PHP clients</a> voor meer informatie.';
 $string['task_ttl'] = 'Maak geheugen vrij dat gebruikt wordt door verlopen items in de Redis cache';
+$string['test_clustermode'] = 'Clustermodus';
+$string['test_clustermode_desc'] = 'Schakel Test in Redis-clustermodus in.';
 $string['test_password'] = 'Testserver wachtwoord';
 $string['test_password_desc'] = 'Redis testserver wachtwoord';
 $string['test_serializer'] = 'Serializer';
 $string['test_serializer_desc'] = 'Te gebruiken serializer voor testen';
 $string['test_server'] = 'Testserver';
-$string['test_server_desc'] = 'Redis testserver';
+$string['test_server_desc'] = 'Redis testserver.
+
+Enkele voorbeelden van instellingen:
+
+* testredis.abc.com - Om met een Redisserver te verbinden met hostnaam  (Standaard via poort 6379).
+* testredis.abc.com:1234 - Om met een Redisserver te verbinden met hostnaam  met een specifieke poort.
+* 1.2.3.4 - Om met een Redisserver te verbinden met een IP-adres (Standaard via poort 6379).
+* 1.2.3.4:1234 - Om met een Redisserver te verbinden via IP-adres met een specifieke poort.
+* unix:///var/redis.sock - Om met een Redisserver te verbinden via een Unix socket.
+* /var/redis.sock - Om met een Redisserver te verbinden via een Unix socket (alternatief formaat).
+
+Als de clustermodus is ingeschakeld, geef dan servers op, gescheiden dooreen nieuwe regel. Bijvoorbeeld:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+Zie <a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">Client-verbindingen aanvaarden</a> en <a href="https://redis.io/resources/clients/#php" target="_new">Redis PHP clients</a> voor meer informatie.';
 $string['test_ttl'] = 'TTL testen';
 $string['test_ttl_desc'] = 'Start de performantietests met een cache die TTL vereist (tragere sets).';
 $string['usecompressor'] = 'Gebruik een compressor';

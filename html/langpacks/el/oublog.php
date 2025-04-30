@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'el', version '4.1'.
+ * Strings for component 'oublog', language 'el', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -119,7 +119,6 @@ $string['recentposts'] = 'Πρόσφατες αναρτήσεις';
 $string['rss'] = 'RSS';
 $string['rssfeed'] = 'Ανατροφοδότηση RSS';
 $string['savegrades'] = 'Αποθήκευση βαθμών';
-$string['searchblogs'] = 'Αναζήτηση';
 $string['start'] = 'Από';
 $string['strftimerecent'] = '%d %B %y, %H:%M';
 $string['summary'] = 'Περίληψη';

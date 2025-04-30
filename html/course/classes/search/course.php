@@ -68,7 +68,7 @@ class course extends \core_search\base {
     /**
      * Returns the document associated with this course.
      *
-     * @param stdClass $record
+     * @param \stdClass $record
      * @param array    $options
      * @return \core_search\document
      */
@@ -183,7 +183,7 @@ class course extends \core_search\base {
      * @param \core_search\document $doc
      * @return \core_search\document_icon
      */
-    public function get_doc_icon(\core_search\document $doc) : \core_search\document_icon {
+    public function get_doc_icon(\core_search\document $doc): \core_search\document_icon {
         return new \core_search\document_icon('i/course');
     }
 

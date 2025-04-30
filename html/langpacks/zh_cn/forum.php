@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', version '4.1'.
+ * Strings for component 'forum', language 'zh_cn', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = '订阅所有讨论区';
 $string['allunsubscribe'] = '退订所有讨论区';
 $string['allusers'] = '所有用户';
 $string['alreadyfirstpost'] = '这已经是本话题的第一帖';
+$string['announcementsettings'] = '默认公告论坛设置';
+$string['announcementsettings_help'] = '这些设置定义了所有公告论坛的默认值。';
 $string['anyfile'] = '任何文件';
 $string['areaattachment'] = '附件';
 $string['areapost'] = '消息';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = '在给定的周期内，学生被阻止发布超�
 $string['blockperioddisabled'] = '不阻止';
 $string['blogforum'] = '博客形式的标准讨论区';
 $string['bynameondate'] = '{$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = '论坛讨论数';
 $string['cachedef_forum_is_tracked'] = '用户讨论区跟踪状态‎‎';
 $string['calendardue'] = '{$a} 已到期';
 $string['cancelreply'] = '取消回复';
@@ -97,6 +100,8 @@ $string['cannotsubscribe'] = '抱歉，您必须是小组成员才能订阅。';
 $string['cannottrack'] = '不能停止跟踪此讨论区';
 $string['cannotunsubscribe'] = '不能退订此讨论区';
 $string['cannotupdatepost'] = '您不能更新此帖';
+$string['cannotuseseperategroupsandsingletopic'] = '单独的小组不能用于单一的简单讨论。';
+$string['cannotusesingletopicandseperategroups'] = '单独的简单讨论不能用于单独的小组。';
 $string['cannotviewpostyet'] = '您还不能在此话题中阅读其他同学的帖子，因为您还没有发帖';
 $string['cannotviewusersposts'] = '您不能查看此用户发表的帖子。';
 $string['cleanreadtime'] = '几点将旧帖标记为已读';
@@ -111,15 +116,16 @@ $string['closegrader'] = '关闭评分人';
 $string['completiondetail:discussions'] = 'due date:';
 $string['completiondetail:posts'] = '发表论坛帖子：{$a}';
 $string['completiondetail:replies'] = '发布回复：{$a}';
-$string['completiondiscussions'] = '学生必须开启话题：';
+$string['completiondiscussions'] = '开启话题';
 $string['completiondiscussionsdesc'] = '学生必须至少开启{$a}个话题';
 $string['completiondiscussionsgroup'] = '需要开启话题';
 $string['completiondiscussionshelp'] = '需要开启话题才能完成';
-$string['completionposts'] = '学生必须开启话题或回帖：';
+$string['completionposts'] = '开启话题或回帖';
 $string['completionpostsdesc'] = '学生必须至少开启话题或回帖{$a}个/条';
 $string['completionpostsgroup'] = '需要发帖';
 $string['completionpostshelp'] = '需要开启话题或回帖才能完成';
-$string['completionreplies'] = '学生必须回帖：';
+$string['completionpostsinforums'] = '在论坛发帖';
+$string['completionreplies'] = '回帖';
 $string['completionrepliesdesc'] = '学生必须至少回帖{$a}条';
 $string['completionrepliesgroup'] = '需要回帖';
 $string['completionreplieshelp'] = '需要回帖才能完成';
@@ -255,6 +261,7 @@ $string['eventassessableuploaded'] = '某些内容已经发布。';
 $string['eventcoursesearched'] = '已搜索课程';
 $string['eventdiscussioncreated'] = '话题已开启';
 $string['eventdiscussiondeleted'] = '话题已删除';
+$string['eventdiscussionlockupdated'] = '讨论锁定更新';
 $string['eventdiscussionmoved'] = '话题已移动';
 $string['eventdiscussionpinned'] = '话题已置顶';
 $string['eventdiscussionsubscriptioncreated'] = '话题订阅已建立';
@@ -262,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = '话题订阅已删除';
 $string['eventdiscussionunpinned'] = '话题已取消置顶';
 $string['eventdiscussionupdated'] = '话题已更新';
 $string['eventdiscussionviewed'] = '话题已查看';
+$string['eventforumsubscriptionupdated'] = '订阅模式更新';
 $string['eventpostcreated'] = '帖文已建立';
 $string['eventpostdeleted'] = '贴文已删除';
 $string['eventpostupdated'] = '贴文已更新';
@@ -296,6 +304,7 @@ $string['forum:addinstance'] = '添加新讨论区';
 $string['forum:addnews'] = '添加新闻通告';
 $string['forum:addquestion'] = '添加问题';
 $string['forum:allowforcesubscribe'] = '允许强制订阅';
+$string['forum:canmailnow'] = '可以发布到 Q and A 论坛，没有编辑时间延迟';
 $string['forum:canoverridecutoff'] = '截止日期后发帖到讨论区';
 $string['forum:canoverridediscussionlock'] = '回复锁定的话题';
 $string['forum:canposttomygroups'] = '发布到您有权访问的所有组';
@@ -483,7 +492,8 @@ $string['noattachments'] = '此帖没有附件';
 $string['nodiscussions'] = '此讨论区还没有话题';
 $string['nodiscussionsstartedby'] = '{$a}未发起任何话题';
 $string['nodiscussionsstartedbyyou'] = '您还没有发起任何话题';
-$string['noguestpost'] = '很抱歉，访客不能发帖。';
+$string['noguestpost'] = '只有登录用户才能在此论坛上发帖';
+$string['noguestpost:title'] = '登录以继续';
 $string['noguestsubscribe'] = '抱歉，访客不能订阅。';
 $string['noguesttracking'] = '很抱歉，访客不能设定跟踪选项。';
 $string['nomorepostscontaining'] = '找不到包含“{$a}”的帖子';
@@ -542,12 +552,9 @@ $string['postbyuser'] = '{$a->user}的{$a->post}';
 $string['postincontext'] = '在场景中看此帖';
 $string['postisprivatereply'] = '这是一个私人回复（具有查看私人回复功能的教师和其他用户也可以查看）';
 $string['postmailinfo'] = '这是在 {$a} 中发布的消息的副本';
-$string['postmailinfolink'] = '这是发表在课程{$a->coursename}的消息的副本。
-
-若要回复，请点击链接：{$a->replylink}';
 $string['postmailnow'] = '<p>此帖子将立即邮寄给所有讨论区订阅者。</ p>';
 $string['postmailreply'] = '要回复，请单击此链接：{$a}';
-$string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
+$string['postmailsubject'] = '{$a->courseshortname}:  {$a->subject}';
 $string['postrating1'] = '极端独立型';
 $string['postrating2'] = '独立型与情景型兼备';
 $string['postrating3'] = '极端情景型';
@@ -702,6 +709,8 @@ $string['smallmessagedigest'] = '讨论区摘要包含{$a}条消息';
 $string['starredonly'] = '只搜索标星话题';
 $string['startedby'] = '发起人';
 $string['subject'] = '主题';
+$string['subplugintype_forumreport'] = '论坛报告';
+$string['subplugintype_forumreport_plural'] = '论坛报告';
 $string['subscribe'] = '订阅讨论区';
 $string['subscribeall'] = '将每个人订阅此讨论区';
 $string['subscribed'] = '订阅';

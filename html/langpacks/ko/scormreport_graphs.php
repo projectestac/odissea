@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_graphs', language 'ko', version '4.1'.
+ * Strings for component 'scormreport_graphs', language 'ko', version '4.4'.
  *
  * @package     scormreport_graphs
  * @category    string

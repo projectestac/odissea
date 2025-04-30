@@ -36,11 +36,6 @@ if ($ADMIN->fulltree) {
     $items[] = new admin_setting_configtext('filter_tex/latexbackground', get_string('backgroundcolour', 'admin'), '', '#FFFFFF');
     $items[] = new admin_setting_configtext('filter_tex/density', get_string('density', 'admin'), '', '120', PARAM_INT);
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-if (get_protected_agora()) {
-// ************ FI
-
     $default_filter_tex_pathlatex   = '';
     $default_filter_tex_pathdvips   = '';
     $default_filter_tex_pathdvisvgm = '';
@@ -83,11 +78,6 @@ if (get_protected_agora()) {
     $items[] = new admin_setting_configexecutable('filter_tex/pathconvert', get_string('pathconvert', 'filter_tex'), '', $default_filter_tex_pathconvert);
     $items[] = new admin_setting_configexecutable('filter_tex/pathdvisvgm', get_string('pathdvisvgm', 'filter_tex'), '', $default_filter_tex_pathdvisvgm);
     $items[] = new admin_setting_configexecutable('filter_tex/pathmimetex', get_string('pathmimetex', 'filter_tex'), get_string('pathmimetexdesc', 'filter_tex'), '');
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-}
-// ************ FI
 
     // Even if we offer GIF, PNG and SVG formats here, in the update callback we check whether
     // required paths actually point to executables. If they don't, we force the setting

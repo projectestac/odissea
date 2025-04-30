@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'eu', version '4.1'.
+ * Strings for component 'tool_mobile', language 'eu', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Saio-hasiera automatikorako gakoak s
 $string['autologinmintimebetweenreq'] = 'Gutxieneko denbora saio-hasiera automatikorako eskaeren artean';
 $string['autologinmintimebetweenreq_desc'] = 'Aplikazioaren bitartez egindako saio-hasiera automatikorako eskaeren arteko gutxieneko denbora. Aplikazioko erabiltzaileei guneko eduki enbotatua ikustean euren kredentzialak sartzeko maiz eskatzen bazaie, hemen balio txikiago bat ezarri ezazu.';
 $string['autologinnotallowedtoadmins'] = 'Saio-hasiera automatikoa ez dago guneko kudeatzaileentzat baimenduta.';
+$string['autologout'] = 'Behartu zure erabiltzaileen saio-amaiera automatikoa';
+$string['autologout_desc'] = 'Segurtasun arrazoiak direla-eta, zure erabiltzaileek aplikazioa itxi, utzi ala atzeko planora eramaten dutenean saioa automatikoki amaitzea behartu dezakezu. Erabiltzailea aplikaziora itzultzen denean saioa berriz hasi beharko dute.';
+$string['autologoutcustom'] = 'Denbora-tarte pertsonalizatua erabiltzaileak aplikazioa itxi ala uzten duenetik';
+$string['autologoutinmediate'] = 'Erabiltzaileak aplikazioa itxi ala uzten duen unean';
+$string['autologouttime'] = 'Saioaren amaiera automatikoarentzako denbora-tartea';
 $string['cachedef_plugininfo'] = 'Honek mobile-gehigarriak dituzten pluginak biltzen ditu';
 $string['cachedef_subscriptiondata'] = 'Hemen Moodle aplikazioaren harpidetzaren inguruko informazioa gordetzen da.';
 $string['clickheretolaunchtheapp'] = 'Egin klik hemen aplikazioak ez badu automatikoki zabaltzen.';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = 'Kudeatu fitxategi-motak';
 $string['minimumversion'] = 'Aplikazioaren bertsioa zehazten bada (3.8.0 edo altuagoa), aplikazioaren bertsio zaharragoak erabiltzen dituzten erabiltzaile guztiei euren aplikazioa eguneratzea eskatuko zaie gunera sarbidea eman aurretik.';
 $string['minimumversion_key'] = 'Aplikazioaren gutxieneko bertsioa behar da';
 $string['mobileapp'] = 'Mobile aplikazioa';
-$string['mobileappconnected'] = 'Mobile aplikazioa konektatu da';
 $string['mobileappearance'] = 'Mobile itxura';
 $string['mobileappenabled'] = 'Gune honek mobile app bidezko sarbidea gaituta dauka<br /><a href="{$a}">Jaitsi mobile aplikazioa</a>.';
 $string['mobileappsubscription'] = 'Moodle aplikazioaren harpidetza';
@@ -117,7 +121,6 @@ $string['notificationsseemore'] = 'Oharra: Moodle aplikazioaren erabilera-estati
 $string['notificationssentnotifications'] = 'Bidalitako jakinarazpenak';
 $string['oauth2identityproviders'] = 'OAuth2 identitate-hornitzaileak';
 $string['offlineuse'] = 'Lineaz kanpoko erabilera';
-$string['openusingembeddedbrowser'] = 'Ireki enbotatutako nabigatzailea erabilita';
 $string['pluginname'] = 'Moodle aplikaziorako tresnak';
 $string['pluginnotenabledorconfigured'] = 'Plugina ez dago gaituta edo konfiguratuta.';
 $string['privacy:metadata:core_userkey'] = 'Oraingo erabiltzailearen saio-hasiera automatikoa sortzeko erabilitako erabiltzaile-gakoak.';

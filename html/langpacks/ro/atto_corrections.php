@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_corrections', language 'ro', version '4.1'.
+ * Strings for component 'atto_corrections', language 'ro', version '4.4'.
  *
  * @package     atto_corrections
  * @category    string

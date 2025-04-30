@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'el', version '4.1'.
+ * Strings for component 'page', language 'el', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -62,8 +62,6 @@ $string['popupheight'] = 'Ύψος αναδυόμενου παράθυρου (σ
 $string['popupheightexplain'] = 'Καθορίζει το προεπιλεγμένο ύψος των αναδυόμενων παραθύρων.';
 $string['popupwidth'] = 'Πλάτος αναδυόμενου παράθυρου (σε εικονοστοιχεία)';
 $string['popupwidthexplain'] = 'Καθορίζει το προεπιλεγμένο πλάτος των αναδυόμενων παραθύρων.';
-$string['printheading'] = 'Εμφάνιση ονόματος σελίδας';
-$string['printheadingexplain'] = 'Εμφάνιση ονόματος σελίδας πάνω από το περιεχόμενο;';
 $string['printintro'] = 'Εμφάνιση περιγραφής σελίδας';
 $string['printintroexplain'] = 'Εμφάνιση περιγραφής σελίδας πάνω από το περιεχόμενο;';
 $string['printlastmodified'] = 'Εμφάνιση ημερομηνίας τελευταίας τροποποίησης';

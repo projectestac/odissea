@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'sv', version '4.1'.
+ * Strings for component 'calendar', language 'sv', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'Kalender-URL';
 $string['calendarheading'] = '{$a} Kalender';
 $string['calendarpreferences'] = 'Kalenderinställningar';
 $string['calendartypes'] = 'Kalendertyper';
-$string['calendarurl'] = 'Kalender-URL: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Kalender-URL kopierad till urklipp';
 $string['category'] = 'Kategori';
 $string['categoryevent'] = 'Kategorihändelse';
@@ -176,7 +175,6 @@ $string['importcalendarexternal'] = 'Importera extern kalender?';
 $string['importcalendarfrom'] = 'Importera från';
 $string['importcalendarheading'] = 'Importera kalender...';
 $string['importfromfile'] = 'Kalenderfil (.ics)';
-$string['importfrominstructions'] = 'Bifoga antingen en webbadress till en annan kalender eller ladda upp en fil.';
 $string['importfromurl'] = 'Kalender-webbadress';
 $string['invalideventtype'] = 'Den händelsetyp du valt är ogiltig.';
 $string['invalidtimedurationminutes'] = 'Varaktigheten i minuter du har angett är ogiltig. Ange tiden i minuter (större än 0) eller välj ingen varaktighet.';
@@ -188,7 +186,6 @@ $string['manyevents'] = '{$a} händelser';
 $string['mon'] = 'Mån';
 $string['monday'] = 'Måndag';
 $string['monthly'] = 'Månadsvis';
-$string['monthlyview'] = 'Månadsvy';
 $string['monthnext'] = 'Nästa månad';
 $string['monthprev'] = 'Föregående månad';
 $string['monththis'] = 'Den här månaden';

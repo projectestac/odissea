@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ur', version '4.1'.
+ * Strings for component 'forum', language 'ur', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -504,7 +504,6 @@ $string['postbyuser'] = '{$a->post} بذریعہ {$a->user}';
 $string['postincontext'] = 'اس پوسٹ کو سیاق و سباق میں دیکھیں';
 $string['postisprivatereply'] = 'یہ ایک نجی جواب ہے۔ یہ صرف آپ کے لیے اور نجی جوابات دیکھنے کی اہلیت رکھنے والے ہر فرد کو نظر آتا ہے، جیسے کہ اساتذہ یا مینیجرز۔';
 $string['postmailinfo'] = 'یہ {$a} میں پوسٹ کیے گئے پیغام کی کاپی ہے۔';
-$string['postmailinfolink'] = 'یہ {$a->coursename} میں پوسٹ کیے گئے پیغام کی کاپی ہے۔ جواب دینے کے لیے اس لنک پر کلک کریں: {$a->replylink}';
 $string['postmailnow'] = '<p>یہ پوسٹ فوری طور پر تمام فورم سبسکرائبرز کو بھیج دی جائے گی۔</p>';
 $string['postmailreply'] = 'جواب دینے کے لیے اس لنک پر کلک کریں: {$a}';
 $string['postrating1'] = 'زیادہ تر الگ الگ جاننا';

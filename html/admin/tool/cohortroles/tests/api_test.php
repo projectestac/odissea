@@ -23,7 +23,7 @@ namespace tool_cohortroles;
  * @copyright  2015 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class api_test extends \advanced_testcase {
+final class api_test extends \advanced_testcase {
     /** @var \stdClass $cohort */
     protected $cohort = null;
 
@@ -35,6 +35,9 @@ class api_test extends \advanced_testcase {
 
     /** @var \stdClass $role */
     protected $role = null;
+
+    /** @var int $roleid */
+    protected $roleid;
 
     /**
      * Setup function- we will create a course and add an assign instance to it.
@@ -50,7 +53,7 @@ class api_test extends \advanced_testcase {
         cohort_add_member($this->cohort->id, $this->userassignover->id);
     }
 
-    public function test_create_cohort_role_assignment_without_permission() {
+    public function test_create_cohort_role_assignment_without_permission(): void {
         $this->setUser($this->userassignto);
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -61,7 +64,7 @@ class api_test extends \advanced_testcase {
         api::create_cohort_role_assignment($params);
     }
 
-    public function test_create_cohort_role_assignment_with_invalid_data() {
+    public function test_create_cohort_role_assignment_with_invalid_data(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -72,7 +75,7 @@ class api_test extends \advanced_testcase {
         api::create_cohort_role_assignment($params);
     }
 
-    public function test_create_cohort_role_assignment() {
+    public function test_create_cohort_role_assignment(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -86,7 +89,7 @@ class api_test extends \advanced_testcase {
         $this->assertEquals($result->get('cohortid'), $this->cohort->id);
     }
 
-    public function test_delete_cohort_role_assignment_without_permission() {
+    public function test_delete_cohort_role_assignment_without_permission(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -99,7 +102,7 @@ class api_test extends \advanced_testcase {
         api::delete_cohort_role_assignment($result->get('id'));
     }
 
-    public function test_delete_cohort_role_assignment_with_invalid_data() {
+    public function test_delete_cohort_role_assignment_with_invalid_data(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -111,7 +114,7 @@ class api_test extends \advanced_testcase {
         api::delete_cohort_role_assignment($result->get('id') + 1);
     }
 
-    public function test_delete_cohort_role_assignment() {
+    public function test_delete_cohort_role_assignment(): void {
         $this->setAdminUser();
         // Create a cohort role assigment.
         $params = (object) [
@@ -148,7 +151,7 @@ class api_test extends \advanced_testcase {
     /**
      * Test case verifying that syncing won't remove role assignments if they are valid for another cohort role assignment.
      */
-    public function test_delete_cohort_role_assignment_cohorts_having_same_members() {
+    public function test_delete_cohort_role_assignment_cohorts_having_same_members(): void {
         $this->setAdminUser();
 
         // Create 2 cohorts, with a 1 user (user1) present in both,
@@ -200,7 +203,7 @@ class api_test extends \advanced_testcase {
         $this->assertContains($user2->id, $removedusers);
     }
 
-    public function test_list_cohort_role_assignments() {
+    public function test_list_cohort_role_assignments(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -214,7 +217,7 @@ class api_test extends \advanced_testcase {
         $this->assertEquals($list[0], $result);
     }
 
-    public function test_count_cohort_role_assignments() {
+    public function test_count_cohort_role_assignments(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,
@@ -227,7 +230,7 @@ class api_test extends \advanced_testcase {
         $this->assertEquals($count, 1);
     }
 
-    public function test_sync_all_cohort_roles() {
+    public function test_sync_all_cohort_roles(): void {
         $this->setAdminUser();
         $params = (object) array(
             'userid' => $this->userassignto->id,

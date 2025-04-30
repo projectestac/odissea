@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_edwiser_site_monitor', language 'en', version '4.1'.
+ * Strings for component 'block_edwiser_site_monitor', language 'en', version '4.4'.
  *
  * @package     block_edwiser_site_monitor
  * @category    string
@@ -106,6 +106,7 @@ $string['storagelimit_overlap'] = 'Please provide valid storage limit. Higher li
 $string['storagelowerlimit'] = 'Storage lower limit';
 $string['storagelowerlimit_help'] = 'Lower limit of storage usage';
 $string['storageusage'] = 'Storage usage';
+$string['submit'] = 'Submit';
 $string['suspendedusers'] = 'Suspended';
 $string['thanksmessage'] = '<div style="background-color: #efefef; -webkit-text-size-adjust: none !important; margin: 0; padding: 70px 70px 70px 70px;"><table id="template_container" style="text-align: center; padding-bottom: 20px; background-color: rgb(223, 223, 223); box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 3px !important; border-radius: 6px !important; margin: auto;" border="0" width="500" cellspacing="0" cellpadding="0">
 <tbody>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', version '4.1'.
+ * Strings for component 'form', language 'pt', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Tem de inserir pelo menos {$a->format} caracteres ne
 $string['err_nonzero'] = 'Tem de inserir neste campo um número que não inicie em 0.';
 $string['err_nopunctuation'] = 'Não pode inserir pontuação neste campo.';
 $string['err_numeric'] = 'Tem de inserir um número neste campo.';
-$string['err_positiveint'] = 'Tem de inserir um número maior que 0.';
+$string['err_positiveint'] = 'Tem de inserir um número inteiro maior que 0.';
 $string['err_rangelength'] = 'Tem de inserir entre {$a->format[0]} e {$a->format[1]} caracteres neste campo.';
 $string['err_required'] = 'Tem de indicar um valor para este campo.';
 $string['err_wrappingwhitespace'] = 'O valor não pode iniciar ou terminar com espaço em branco.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Tipos de ficheiro permitidos:';
 $string['filetypesany'] = 'Todos os tipos de ficheiro';
 $string['filetypesnotall'] = 'Não é permitido selecionar aqui \'Todos os tipos de ficheiro\'';
 $string['filetypesnotallowed'] = 'Tipos de ficheiro não permitidos aqui: {$a}';
-$string['filetypesnotwhitelisted'] = 'Tipos de ficheiro permitidos aqui: {$a}';
 $string['filetypesothers'] = 'Outros ficheiros';
 $string['filetypesunknown'] = 'Tipos de ficheiro desconhecidos: {$a}';
+$string['formactions'] = 'Ações de formulário';
 $string['general'] = 'Geral';
 $string['hideadvanced'] = 'Ocultar opções avançadas';
 $string['hour'] = 'Hora';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Sugestões';
 $string['time'] = 'tempo';
 $string['timeunit'] = 'Unidade de tempo';
 $string['timing'] = 'Disponibilidade';
+$string['togglesensitive'] = 'Maiúsculas/minúsculas';
 $string['unmaskpassword'] = 'Revelar';
 $string['year'] = 'Ano';

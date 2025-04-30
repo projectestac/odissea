@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'zh_cn', version '4.1'.
+ * Strings for component 'attendance', language 'zh_cn', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -113,9 +113,9 @@ $string['calendarevent_help'] = '如果允许，此时段会生成一个日历�
 如果禁用，此时段相关的日历事件都会被删除。';
 $string['caleventcreated'] = '成功创建课程的日程表事件';
 $string['caleventdeleted'] = '成功删除';
-$string['calmonths'] = '一月，二月，三月，四月，五月，六月，七月，八月，九月，十月，十一月，十二月';
+$string['calmonths'] = '一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月';
 $string['calshow'] = '选择日期';
-$string['calweekdays'] = '日，一，二，三，四，五，六';
+$string['calweekdays'] = '日,一,二,三,四,五,六';
 $string['cannottakeforgroup'] = '你不能参加"{$a}"组课程';
 $string['cannottakethisgroup'] = '你并不是这个时段相关的课程的成员，你签到信息不会被记录下来。';
 $string['cantaddstatus'] = '添加新状态时，必须设置首字母缩略词和描述。';
@@ -285,6 +285,7 @@ $string['hidensessiondetails'] = '隐藏上课时间细节';
 $string['identifyby'] = '识别学生用';
 $string['import'] = '导入';
 $string['importfile'] = '导入文件';
+$string['importfile_help'] = 'CSV 文件必须包含标题和字段，以标识要创建的组、时间和时段日期。<br/> 文件存入后的下一页将向您显示您可以将自己的字段映射到的所有字段的示例。示例 ：<br/>groups;sessiondate;from;to<br/>groupA:05-10-2022;13:00;14:00<br/>groupB;05-10-2022;14:00;15:00';
 $string['importsessions'] = '导入时段';
 $string['importstatus'] = '状态字段';
 $string['importstatus_help'] = '导入中允许的状态值，比如 P, L, 或者 A';
@@ -583,10 +584,10 @@ $string['statusunselected'] = '未选择';
 $string['strftimedm'] = '%b %d';
 $string['strftimedmw'] = '<nobr>%a %b %d</nobr>';
 $string['strftimedmy'] = '%d %b %Y';
-$string['strftimedmyhm'] = '%d %b %Y %I.%M%p';
+$string['strftimedmyhm'] = '%d %b %Y %I. %p %M';
 $string['strftimedmyw'] = '<nobr>%Y-%m-%d %a</nobr>';
-$string['strftimeh'] = '%I%p';
-$string['strftimehm'] = '%I:%M%p';
+$string['strftimeh'] = '%p %I:00';
+$string['strftimehm'] = '%p %I:%M';
 $string['strftimeshortdate'] = '%d.%m.%Y';
 $string['studentid'] = '学生ID';
 $string['studentmarked'] = '您在本时段的出席情况已被记录下来。';

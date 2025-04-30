@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ar', version '4.1'.
+ * Strings for component 'role', language 'ar', version '4.4'.
  *
  * @package     role
  * @category    string
@@ -114,6 +114,7 @@ $string['checksystempermissionsfor'] = 'فحص صلاحيات النظام لـ 
 $string['checkuserspermissionshere'] = 'فحص صلاحيات {$a->fullname} في {$a->contextlevel}';
 $string['chooseroletoassign'] = 'الرجاء اختيار دور لإسناده';
 $string['cohort:assign'] = 'إضافة وحذف أعضاء الدفعات';
+$string['cohort:configurecustomfields'] = 'تهيئة الحقول المخصصة للدفعات';
 $string['cohort:manage'] = 'إنشاء، حذف ونقل الدفعات';
 $string['cohort:view'] = 'معاينة الدفعات على مستوى الموقع';
 $string['comment:delete'] = 'حذف التعليقات';
@@ -152,7 +153,9 @@ $string['competency:userevidencemanage'] = 'إدارة الدليل على ال�
 $string['competency:userevidencemanageown'] = 'إدارة دليله على التعلم المسبق';
 $string['competency:userevidenceview'] = 'معاينة الدليل على التعلم المسبق لمستخدم';
 $string['confirmaddadmin'] = 'هل أنت متأكد من رغبتك في إضافة المستخدم <strong>{$a}</strong> بمثابة مشرف جديد على الموقع؟';
-$string['confirmdeladmin'] = 'هل تريد بالفعل إزالة المستخدم "<strong>{$a}</strong>" من مجموعة مدراء النظام؟';
+$string['confirmaddadmins'] = 'هل أنت متأكد من رغبتك في إضافة هؤلاء المستخدمين إلى قائمة مشرفي الموقع؟';
+$string['confirmdeladmin'] = 'هل تريد بالفعل إزالة المستخدم <strong>{$a}</strong> من قائمة مشرفي الموقع؟';
+$string['confirmremoveadmins'] = 'هل أنت متأكد من رغبتك في إزالة هؤلاء المستخدمين من قائمة مشرفي الموقع؟';
 $string['confirmroleprevent'] = 'هل تريد بالفعل إزالة <strong>"{$a->role}"</strong> من قائمة الأدوار المتاحة لها إمكانية "{$a->cap}" في السياق "{$a->context}"؟';
 $string['confirmroleunprohibit'] = 'هل تريد بالفعل إزالة <strong>"{$a->role}"</strong> من قائمة الأدوار المحظورة من إمكانية "{$a->cap}" في السياق "{$a->context}"؟';
 $string['confirmunassign'] = 'هل أنت متأكد من رغبتك في إزالة هذا الدور من هذا المستخدم؟';
@@ -160,6 +163,8 @@ $string['confirmunassignno'] = 'إلغاء';
 $string['confirmunassigntitle'] = 'تأكيد تغيير الدور';
 $string['confirmunassignyes'] = 'إزالة';
 $string['contentbank:access'] = 'الوصول إلى بنك المحتوى';
+$string['contentbank:copyanycontent'] = 'نسخ أي محتوى في بنك المحتوى';
+$string['contentbank:copycontent'] = 'نسخ المحتوى في بنك المحتوى';
 $string['contentbank:deleteanycontent'] = 'حذف أي محتوى من بنك المحتوى';
 $string['contentbank:deleteowncontent'] = 'حذف المحتوى من بنك المحتوى الخاص به';
 $string['contentbank:downloadcontent'] = 'تنزيل المحتوى من بنك المحتوى';
@@ -178,6 +183,7 @@ $string['course:changeidnumber'] = 'تغيير مُعرَّف المساق';
 $string['course:changelockedcustomfields'] = 'تغيير الحقول المخصصة المقفولة';
 $string['course:changeshortname'] = 'تغيير الاسم المختصر للمقرر الدراسي';
 $string['course:changesummary'] = 'تغيير ملخص المساق';
+$string['course:configurecoursecommunication'] = 'تهيئة إعدادات اتصالات المساق';
 $string['course:configurecustomfields'] = 'تهيئة حقول المساق المخصصة';
 $string['course:configuredownloadcontent'] = 'تهيئة تنزيل محتوى المساق';
 $string['course:create'] = 'إنشاء المقررات الدراسية';
@@ -213,6 +219,7 @@ $string['course:view'] = 'معاينة المقررات الدراسية بدو�
 $string['course:viewcoursegrades'] = 'معاينة تقديرات المساق';
 $string['course:viewhiddenactivities'] = 'معاينة الأنشطة المخفية';
 $string['course:viewhiddencourses'] = 'معاينة المقررات الدراسية المخفية';
+$string['course:viewhiddengroups'] = 'معاينة المجموعات المخفية';
 $string['course:viewhiddensections'] = 'معاينة المقاطع المخفية';
 $string['course:viewhiddenuserfields'] = 'معاينة حقول المستخدم المخفية';
 $string['course:viewparticipants'] = 'معاينة المشاركين';
@@ -253,6 +260,7 @@ $string['eventroleallowswitchupdated'] = 'سماح بتبديل دور';
 $string['eventroleallowviewupdated'] = 'سماح بمعاينة دور';
 $string['eventroleassigned'] = 'دور تم تعيينه';
 $string['eventrolecapabilitiesupdated'] = 'إمكانيات دور تم تحديثها';
+$string['eventrolecreated'] = 'دور تم إنشاؤه';
 $string['eventroledeleted'] = 'دور تم حذفه';
 $string['eventroleunassigned'] = 'دور تم إلغاء تعيينه';
 $string['eventroleupdated'] = 'دور تم تحديثه';
@@ -285,6 +293,7 @@ $string['grade:unlock'] = 'إلغاء تأمين التقديرات أو عنا�
 $string['grade:view'] = 'معاينة تقديراته';
 $string['grade:viewall'] = 'معاينة تقديرات المستخدمين الآخرين';
 $string['grade:viewhidden'] = 'معاينة تقديراته المخفية';
+$string['group:configurecustomfields'] = 'تهيئة الحقول المخصصة للمجموعات/التجميعات';
 $string['h5p:deploy'] = 'نشر محتوى H5P';
 $string['h5p:setdisplayoptions'] = 'ضبط خيارات عرض H5P';
 $string['h5p:updatelibraries'] = 'إدارة أنواع محتوى H5P';
@@ -294,7 +303,7 @@ $string['inactiveformorethan'] = 'غير نشيط لأكثر من {$a->timeperio
 $string['ingroup'] = 'في المجموعة "{$a->group}"';
 $string['inherit'] = 'موروث';
 $string['invalidpresetfile'] = 'ملف تعريف الدور غير صالح';
-$string['legacy:admin'] = 'دور موروث: مدير';
+$string['legacy:admin'] = 'دور موروث: مشرف';
 $string['legacy:coursecreator'] = 'دور موروث: منشئ مساقات';
 $string['legacy:editingteacher'] = 'دور موروث: معلم (محرر)';
 $string['legacy:guest'] = 'دور موروث: ضيف';
@@ -311,6 +320,8 @@ $string['manager'] = 'مدير';
 $string['managerdescription'] = 'يمكن للمدراء الوصول إلى المقررات الدراسية والتعديل فيها، لكنهم عادة ما لا يكونون مشاركين فيها.';
 $string['manageroles'] = 'إدارة الأدوار';
 $string['maybeassignedin'] = 'أنواع السياقات التي يمكن فيها إسناد هذا الدور';
+$string['moodlenet:shareactivity'] = 'مشاركة النشاطات إلى شبكة مودل';
+$string['moodlenet:sharecourse'] = 'مشاركة المساق مع شبكة مودل';
 $string['morethan'] = 'أكثر من {$a}';
 $string['multipleroles'] = 'أدوار متعددة';
 $string['my:configsyspages'] = 'تهيئة مظاهر النظام لصفحات لوحة التحكم';
@@ -399,6 +410,7 @@ $string['reportbuilder:edit'] = 'إنشاء/تحرير تقاريرك المخص
 $string['reportbuilder:editall'] = 'تحرير كل التقارير المخصصة';
 $string['reportbuilder:scheduleviewas'] = 'تقارير الجدولة التي ستتم معاينتها بمثابة مستخدمين آخرين';
 $string['reportbuilder:view'] = 'معاينة التقارير المخصصة';
+$string['reportbuilder:viewall'] = 'معاينة كل التقارير المخصصة';
 $string['resetrole'] = 'إعادة التعيين';
 $string['resettingrole'] = 'إعادة الدور \'{$a}\' إلى وضعه الافتراضي';
 $string['restore:configure'] = 'تهيئة خيارات الاستعادة';
@@ -420,10 +432,12 @@ $string['role:safeoverride'] = 'تجاوز الصلاحيات الآمنة لل�
 $string['role:switchroles'] = 'التبديل إلى أدوار أخرى';
 $string['roleallowheader'] = 'السماح بدور:';
 $string['roleallowinfo'] = 'إختر الدور الذي تريد إضافته إلى قائمة الإدوار المسموح لها في السياق "{$a->context}"، بالإمكانية "{$a->cap}":';
+$string['roleassignment'] = 'تعيين الدور';
 $string['roleassignments'] = 'إسنادات الدور';
 $string['roledefinitions'] = 'تعريف الدور';
 $string['rolefullname'] = 'تسمية الدور';
 $string['roleincontext'] = '{$a->role} في {$a->context}';
+$string['roleoriginalname'] = 'الاسم الأصلي';
 $string['roleprohibitheader'] = 'حظر الدور';
 $string['roleprohibitinfo'] = 'إختر الدور الذي تريد إضافته إلى قائمة الأدوار المحظور لها في السياق {$a->contect}، الإمكانية {$a->cap}:';
 $string['rolerepreset'] = 'استعمال الضبط المسبق للدور';
@@ -476,6 +490,7 @@ $string['site:viewparticipants'] = 'معاينة المشاركين';
 $string['site:viewreports'] = 'معاينة التقارير';
 $string['site:viewuseridentity'] = 'معاينة هوية المستخدم الكاملة في القوائم';
 $string['siteadministrators'] = 'مشرفو الموقع';
+$string['siteadministratorsconfigphp'] = 'لا يمكن تغيير قائمة مشرفي الموقع لأنها محددة في config.php.';
 $string['tag:edit'] = 'تحرير الوسوم الموجودة';
 $string['tag:editblocks'] = 'تحرير الكتل في صفحات الوسوم';
 $string['tag:flag'] = 'تأشير الوسوم بعلم للدلالة على أنها غير لائقة';

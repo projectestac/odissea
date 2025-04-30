@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'en', version '4.1'.
+ * Strings for component 'contentbank', language 'en', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Author';
 $string['choosecontext'] = 'Choose course or category...';
-$string['close'] = 'Close';
 $string['contentbank'] = 'Content bank';
 $string['contentbankpreferences'] = 'Content bank preferences';
+$string['contentcopied'] = 'Content copied.';
+$string['contentcreated'] = 'Content created.';
 $string['contentdeleted'] = 'Content deleted.';
 $string['contentname'] = 'Content name';
 $string['contentnotdeleted'] = 'An error was encountered while trying to delete the content.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Content renamed.';
 $string['contentsmoved'] = 'Content bank contents moved to {$a}.';
 $string['contenttypenoaccess'] = 'You cannot view this {$a} instance.';
 $string['contenttypenoedit'] = 'You can not edit this content';
+$string['contentupdated'] = 'Content updated.';
 $string['contentvisibilitychanged'] = 'Content is now {$a}.';
 $string['contentvisibilitynotset'] = 'An error was encountered while trying to set the content visibility.';
 $string['contextnotallowed'] = 'You are not allowed to access the content bank in this context.';
+$string['copycontent'] = 'Copy content';
+$string['copyof'] = 'Copy of {$a}';
 $string['deletecontent'] = 'Delete content';
 $string['deletecontentconfirm'] = 'Are you sure you want to delete the content <em>\'{$a->name}\'</em> and all associated files? This action cannot be undone.';
 $string['deletecontentconfirmlinked'] = 'The content will only be deleted from the content bank. Any places which currently link to it will be automatically updated to use a copy of the content instead.';
@@ -64,6 +68,7 @@ $string['more'] = 'More';
 $string['name'] = 'Content';
 $string['nocontentavailable'] = 'No content available';
 $string['nocontenttypes'] = 'No content types available';
+$string['nopermissiontocopy'] = 'You do not have permission to copy content.';
 $string['nopermissiontodelete'] = 'You do not have permission to delete content.';
 $string['nopermissiontomanage'] = 'You do not have permission to manage content.';
 $string['notavailable'] = 'Sorry, this content is not available.';

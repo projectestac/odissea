@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'ro', version '4.1'.
+ * Strings for component 'theme_classic', language 'ro', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'Tema presetări';
 $string['preset_desc'] = 'Alegeți o presetare pentru a schimba în general aspectul temei.';
 $string['presetfiles'] = 'Fișiere suplimentare presetate de temă';
-$string['presetfiles_desc'] = 'Fișierele presetate pot fi utilizate pentru a modifica dramatic aspectul temei. Consultați <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost presets </a> pentru informații despre crearea și partajarea propriilor fișiere presetate și consultați <a href = "https: // archive.moodle.net/boost"> Depozit de presetări </a> pentru presetările pe care alții le-au partajat.';
+$string['presetfiles_desc'] = 'Fișierele presetate pot fi utilizate pentru a modifica dramatic aspectul temei. Consultați <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pentru informații despre crearea și partajarea propriilor fișiere presetate și consultați <a href="https://moodle.net/search?q=boost+presets">Depozit de presetări</a> pentru presetări partajate de alte persoane.';
 $string['privacy:metadata'] = 'Tema Classic nu stochează date personale.';
 $string['region-side-post'] = 'Dreapta';
 $string['region-side-pre'] = 'Stânga';

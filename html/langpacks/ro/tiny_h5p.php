@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'ro', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'ro', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -41,5 +41,5 @@ $string['instructions'] = 'Puteți insera conținut H5P <strong> fie </strong> i
 $string['invalidh5purl'] = 'URL-ul nu este valid';
 $string['modaltitle'] = 'Inserează conținut H5P';
 $string['noh5pcontent'] = 'Nu există conținut H5P adăugat';
-$string['pluginname'] = 'Tiny insert H5P';
+$string['pluginname'] = 'Inserare H5P';
 $string['privacy:metadata'] = 'Plugin-ul H5P pentru TinyMCE nu stochează date personale.';

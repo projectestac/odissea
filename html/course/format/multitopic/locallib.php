@@ -143,8 +143,9 @@ function format_multitopic_course_create_section(\stdClass $courseorid, \stdClas
  * @param \stdClass $course
  * @param \stdClass|\section_info|array $origins The section(s) to be moved.  Must specify id.
  * @param \stdClass $destination Where to move it to.  Must specify parentid, prevupid, or nextupid.  May specify level.
+ * @param int $include 0 = regular only, 1 = also orphan, 2 = also delegated.
  */
-function format_multitopic_move_section_to(\stdClass $course, $origins, \stdClass $destination): void {
+function format_multitopic_move_section_to(\stdClass $course, $origins, \stdClass $destination, int $include = 1): void {
     // CHANGED LINE ABOVE: Use section info instead of number.  Removed $ignorenumsections param.  No return value (use exceptions).
     // Moves course sections within the course.
     // CHANGES THROUGHOUT: Use section info instead of number.
@@ -162,7 +163,7 @@ function format_multitopic_move_section_to(\stdClass $course, $origins, \stdClas
         throw new \moodle_exception('cannotcreateorfindstructs');               // CHANGED.
     }
 
-    $movedsections = format_multitopic_reorder_sections($sectionsextra, $origins, $destination); // CHANGED.
+    $movedsections = format_multitopic_reorder_sections($sectionsextra, $origins, $destination, $include); // CHANGED.
 
     // Update all sections. Do this in 2 steps to avoid breaking database
     // uniqueness constraint.
@@ -192,10 +193,13 @@ function format_multitopic_move_section_to(\stdClass $course, $origins, \stdClas
     // ADDED.
     // Set properties for moved sections.
     foreach ($movedsections as $id => $movedsection) {
+        if (!empty($sectionsextra[$id]->sectionbase->component)) {
+            continue;
+        }
         // Find differences between original section and moved section, and store as updates.
         $updates = [];
-        if ($sectionsextra[$id]->sectionbase->level !== max($movedsection->level, 0)) {
-            $updates['level'] = max($movedsection->level, 0);
+        if ($sectionsextra[$id]->sectionbase->level !== $movedsection->level) {
+            $updates['level'] = $movedsection->level;
         }
         if ($sectionsextra[$id]->sectionbase->visible != $movedsection->visible) {
             $updates['visible'] = $movedsection->visible;
@@ -261,14 +265,26 @@ function format_multitopic_course_can_delete_section(\stdClass $course, \section
  * @param \format_multitopic\section_info_extra[] $sectionsextra The list of sections.
  * @param \stdClass|\section_info|array $origins The section(s) to be moved.  Must specify id.
  * @param \stdClass $target The destination.  Must specify parentid, prevupid, or nextupid.  May specify level.
+ * @param int $include 0 = regular sections, 1 = also orphaned, 2 = also delegated
  * @return array
  */
-function format_multitopic_reorder_sections(array $sectionsextra, $origins, \stdClass $target): array {
+function format_multitopic_reorder_sections(array $sectionsextra, $origins, \stdClass $target, int $include): array {
     // CHANGED THROUGHOUT: Section numbers changed to IDs, used exceptions instead of returning false.
     // Reads Calculated section values (levelsan, visiblesan).
     // Writes raw section values (level, visible).
     if (!is_array($sectionsextra)) {
         throw new \moodle_exception('cannotcreateorfindstructs');
+    }
+
+    // Ignore delegated sections if appropriate.
+    $ignoredsections = [];
+    if ($include < 2) {
+        foreach ($sectionsextra as $id => $sectionextra) {
+            if (!empty($sectionextra->sectionbase->component)) {
+                $ignoredsections[$id] = $sectionextra;
+                unset($sectionsextra[$id]);
+            }
+        }
     }
 
     $origins = !is_array($origins) ? [ $origins ] : $origins;
@@ -366,7 +382,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
             $sections[$id] = new \stdClass;
             $sections[$id]->id = $id;
             $sections[$id]->visible = $sectionextra->visiblesan;
-            $sections[$id]->level = $sectionextra->levelsan;
+            $sections[$id]->level = max($sectionextra->levelsan, 0);
             if ($sectionextra->levelsan < $target->level) {
                 $parentvisible = $sectionextra->visiblesan;
             }
@@ -382,7 +398,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
         $sections[$id]->level = ($sectionextra->levelsan >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
                                         && $sectionextra->levelsan != $originlevel) ?
                                     FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC       // Don't change topic level.
-                                    : $sectionextra->levelsan + $levelchange;
+                                    : max($sectionextra->levelsan + $levelchange, 0);
     }
 
     // Append rest of array.
@@ -391,8 +407,15 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
             $sections[$id] = new \stdClass;
             $sections[$id]->id = $id;
             $sections[$id]->visible = $sectionextra->visiblesan;
-            $sections[$id]->level = $sectionextra->levelsan;
+            $sections[$id]->level = max($sectionextra->levelsan, 0);
         }
+    }
+
+    // Append ignored sections.
+    foreach ($ignoredsections as $id => $sectionextra) {
+        $sections[$id] = new \stdClass;
+        $sections[$id]->id = $id;
+        $sections[$id]->visible = $sectionextra->sectionbase->visible;
     }
 
     // Renumber positions.

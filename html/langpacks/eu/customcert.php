@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'eu', version '4.1'.
+ * Strings for component 'customcert', language 'eu', version '4.4'.
  *
  * @package     customcert
  * @category    string
@@ -92,7 +92,7 @@ $string['elements_help'] = 'Hau ziurtagirian erakutsiko diren elementuen zerrend
 
 Kontuan izan, mesedez: Elementuan ordena honetan erakutsiko dira. Ordena elementu bakoitzaren ondoko geziak erabilita aldatu daiteke.';
 $string['elementwidth'] = 'Zabalera';
-$string['elementwidth_help'] = 'Zehaztu elementuaren zabalera - \'0\' zabalera-murrizketarik ez dagoela esan nahi du.';
+$string['elementwidth_help'] = 'Zehaztu elementuaren zabalera. \'0\' baimenduta badago automatikoki kalkulatuko da.';
 $string['emailnonstudentbody'] = 'Mezu honetara erantsita doa \'{$a->coursefullname}\' ikastaroko \'{$a->userfullname}\' erabiltzailearentzako \'{$a->certificatename}\' ziurtagiria.';
 $string['emailnonstudentbodyplaintext'] = 'Mezu honetara erantsita doa \'{$a->coursefullname}\' ikastaroko \'{$a->userfullname}\' erabiltzailearentzako \'{$a->certificatename}\' ziurtagiria.';
 $string['emailnonstudentcertificatelinktext'] = 'Ikusi ziurtagiri-txostena';

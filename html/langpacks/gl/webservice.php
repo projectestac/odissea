@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'gl', version '4.1'.
+ * Strings for component 'webservice', language 'gl', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'Código PHP para REST (solicitudes POST)';
 $string['potusers'] = 'Non hai usuarios autorizados';
 $string['potusersmatching'] = 'Non hai usuarios autorizados que coincidan';
 $string['print'] = 'Imprimir todo';
-$string['privacy:metadata:serviceusers'] = 'Unha lista de usuarios que poden empregar determinados servizos externos';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP restrinxido para usar o servizo';
-$string['privacy:metadata:serviceusers:timecreated'] = 'A data na que se creou o rexistro';
-$string['privacy:metadata:serviceusers:userid'] = 'O ID do usuario';
-$string['privacy:metadata:serviceusers:validuntil'] = 'A data na que remata a autorización';
-$string['privacy:metadata:tokens'] = 'Un rexistro de testemuños para interactuar con Moodle a través de servizos web ou aplicacións móbiles.';
-$string['privacy:metadata:tokens:creatorid'] = 'O ID do usuario que creou o testemuño';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP restrinxido para usar este testemuño';
-$string['privacy:metadata:tokens:lastaccess'] = 'A data en que se usou o testemuño por última vez';
-$string['privacy:metadata:tokens:privatetoken'] = 'Unha credencial máis privada usada ocasionalmente para validar certas operacións, como o SSO (Single Sign-On =Ingreso único )';
-$string['privacy:metadata:tokens:timecreated'] = 'A data na que se creou o testemuño';
-$string['privacy:metadata:tokens:token'] = 'O testemuño do usuario';
-$string['privacy:metadata:tokens:tokentype'] = 'O tipo de testemuño';
-$string['privacy:metadata:tokens:userid'] = 'O ID do usuario de quen é este testemuño';
-$string['privacy:metadata:tokens:validuntil'] = 'A data ata a que é valida o testemuño';
-$string['privacy:request:notexportedsecurity'] = 'Non se exporta por razóns de seguridade';
+$string['privacy:metadata'] = 'A API de WebService non almacena ningún dato';
 $string['protocol'] = 'Protocolo';
 $string['removefunction'] = 'Retirar';
 $string['removefunctionconfirm'] = 'Confirma que quere retirar a función «{$a->function}» do servizo «{$a->service}»?';
@@ -211,11 +196,16 @@ $string['testwithtestclient'] = 'Probar o servizo';
 $string['testwithtestclientdescription'] = 'Simula o acceso externo ao servizo usando o cliente de proba do servizo web. Use un protocolo permitido con autenticación por testemuño. <strong>ADVERTENCIA: As funcións que probe SERÁN EXECUTADAS para este usuario, polo que debe ser cauteloso co que decida probar!</strong>';
 $string['token'] = 'Testemuña';
 $string['tokenauthlog'] = 'Autenticación con testemuño';
+$string['tokencopied'] = 'Texto copiado ao portapapeis.';
 $string['tokencreatedbyadmin'] = 'Só pode ser restabelecido polo administrador (*)';
 $string['tokencreator'] = 'Creador';
 $string['tokenfilter'] = 'Filtro de testemuños';
 $string['tokenfilterreset'] = 'Amosar todos os testemuños';
 $string['tokenfiltersubmit'] = 'Amosar só os testemuños coincidentes';
+$string['tokenname'] = 'Nome';
+$string['tokennamehint'] = 'Se non escribe un nome, entón empregarase un nome ao chou.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copie o testemuño agora. Non se volverá amosar unha vez que abandone esta páxina.';
 $string['unknownoptionkey'] = 'Chave de opción descoñecida ({$a})';
 $string['unnamedstringparam'] = 'Un parámetro de tipo cadea está sen nome.';
 $string['updateusersettings'] = 'Actualizar';
@@ -226,12 +216,11 @@ $string['userasclientsdescription'] = 'Os seguintes pasos poden axudarlle a conf
 $string['usermissingcaps'] = 'Faltan os permisos: {$a}';
 $string['usernameorid'] = 'Nome de usuario / ID de usuario';
 $string['usernameorid_help'] = 'Escriba o nome de usuario ou o ID de usuario.';
-$string['usernameoridnousererror'] = 'Non se atoparon usuarios con este nome de usuario / ID de usuario.';
-$string['usernameoridoccurenceerror'] = 'Atopouse máis dun usuario con este nome de usuario. Escriba o ID de usuario.';
 $string['usernotallowed'] = 'O usuario non ten permitido este servizo. Primeiramente debe permitirllo a este usuario nas {$a} permitidas da páxina de administración de usuarios.';
 $string['userservices'] = 'Servizos de usuario: {$a}';
 $string['usersettingssaved'] = 'Gardados os axustes do usuario';
 $string['validuntil'] = 'Caduca o';
+$string['validuntil_empty'] = 'Este testemuño non ten data de caducidade.';
 $string['validuntil_help'] = 'Se activa a opción, o servizo desactivarase para este usuario após esta data.';
 $string['webservice'] = 'Servizo web';
 $string['webservices'] = 'Servizos web';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'de', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ Die drei Formen verwenden die Koordinaten auf folgende Weise:
 * Polygon: x1, y1; x2, y2; ... xn, yn <br />z.B.: <code>20, 60; 100, 60; 20, 100</code>
 
 Wenn Sie einen Markierungstext wählen, wird dieser Text der Form in der Vorschau hinzugefügt.';
-$string['followingarewrong'] = 'Die folgenden Markierungen wurden in den falschen Bereich gesetzt: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Die folgenden Markierungen wurden falsch gesetzt: {$a}. Hervorgehobene Markierungen werden nun an den richtigen Platzierungen gezeigt. <br />Klicken Sie auf die Markierung, um den erlaubten Bereich zu sehen.';
+$string['followingarewrong'] = 'Die Markierungensind in den falschen Bereich gesetzt: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Falsch platzierte Markierungen: {$a}. Hervorgehobene Markierungen werden jetzt an den richtigen Stellen angezeigt. Klicken Sie auf die Markierung, um den erlaubten Bereich hervorzuheben.';
 $string['formerror_dragrequired'] = 'Sie müssen mindestens eine Markierung für diese Frage definieren.';
 $string['formerror_droprequired'] = 'Sie müssen mindestens einen Ablagebereich für diese Frage definieren.';
 $string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag-and-drop"-Fläche wählen.';

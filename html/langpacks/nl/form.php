@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'nl', version '4.1'.
+ * Strings for component 'form', language 'nl', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Je moet hier minstens {$a->format} karakters ingeven
 $string['err_nonzero'] = 'Je moet hier een getal dat niet met 0 begint ingeven';
 $string['err_nopunctuation'] = 'Je mag hier geen leestekens gebruiken';
 $string['err_numeric'] = 'Je moet hier een getal ingeven';
-$string['err_positiveint'] = 'Je moet hier een getal geven dat groter is dan 0';
+$string['err_positiveint'] = 'Je moet een getal geven dat groter is dan 0.';
 $string['err_rangelength'] = 'Je moet hier tussen de {$a->format[0]} en {$a->format[1]} karakters ingeven.';
 $string['err_required'] = 'Je moet hier een waarde opgeven.';
 $string['err_wrappingwhitespace'] = 'De waarde mag niet beginnen of eindigen met witruimte.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Geaccepteerde bestandstypes:';
 $string['filetypesany'] = 'Alle bestandstypes';
 $string['filetypesnotall'] = 'Het is niet toegestaan om \'alle bestandstypes\' hier te selecteren';
 $string['filetypesnotallowed'] = 'Deze bestandstypes zijn hier niet toegestaan {$a}';
-$string['filetypesnotwhitelisted'] = 'Deze bestandstypes zijn hier niet toegestaan {$a}';
 $string['filetypesothers'] = 'Andere bestanden';
 $string['filetypesunknown'] = 'Onbekende bestandstypes: {$a}';
+$string['formactions'] = 'Vorm acties';
 $string['general'] = 'Algemeen';
 $string['hideadvanced'] = 'Verberg geavanceerd';
 $string['hour'] = 'Uur';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Aanbevelingen';
 $string['time'] = 'Tijd';
 $string['timeunit'] = 'Tijdseenheid';
 $string['timing'] = 'Timing';
+$string['togglesensitive'] = 'Schakelgevoelig';
 $string['unmaskpassword'] = 'Toon';
 $string['year'] = 'Jaar';

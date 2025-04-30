@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_oembed', language 'el', version '4.1'.
+ * Strings for component 'filter_oembed', language 'el', version '4.4'.
  *
  * @package     filter_oembed
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ro', version '4.1'.
+ * Strings for component 'calendar', language 'ro', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL calendar';
 $string['calendarheading'] = '{$a} Calendar';
 $string['calendarpreferences'] = 'Preferințe calendar';
 $string['calendartypes'] = 'Tipuri de calendar';
-$string['calendarurl'] = 'Calendar URL: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Adrea URL a calendar a fost copiată în clipboard';
 $string['category'] = 'Categorie';
 $string['categoryevent'] = 'Categorie eveniment';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Copiază adresa URL a calendarului';
 $string['copyurl'] = 'Copiază adresa URL';
 $string['course'] = 'Curs';
 $string['coursecalendar'] = '{$a} calendar';
+$string['coursecalendarlink'] = 'Calendar curs';
 $string['courseevent'] = 'Eveniment curs';
 $string['courseevents'] = 'Evenimente curs';
 $string['courses'] = 'Cursuri';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = 'Importă un calendar extern?';
 $string['importcalendarfrom'] = 'Importă din';
 $string['importcalendarheading'] = 'Importă calendar...';
 $string['importfromfile'] = 'Fișier calendar (.ics)';
-$string['importfrominstructions'] = 'Vă rugăm, fie să furnizați o adresă URL către un calendar la distanță, fie să încărcați un fișier.';
 $string['importfromurl'] = 'Link-ul calendar';
 $string['invalideventtype'] = 'Tipul de eveniment selectat nu este valid.';
 $string['invalidtimedurationminutes'] = 'Durata în minute introdusă nu este validă. Vă rugăm să introduceți o durată în minute, care să fie mai mare de 0 sau să nu selectați durata.';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} evenimente';
 $string['mon'] = 'Lu';
 $string['monday'] = 'Luni';
 $string['monthly'] = 'Lunar';
-$string['monthlyview'] = 'Vizualizare lună';
 $string['monthnext'] = 'Următoarea lună';
 $string['monthprev'] = 'Luna anterioară';
 $string['monththis'] = 'Această lună';
@@ -197,7 +195,9 @@ $string['moreevents'] = 'mai multe {$a}';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Niciodată';
 $string['newevent'] = 'Eveniment nou';
+$string['newmonthannouncement'] = 'Calendarul este acum setat la {$a}.';
 $string['nocalendarsubscriptions'] = 'Nu aveți niciun abonament la calendar. Doriți să {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Încă nu sunt subscripții pentru calendar. <a href="{$a}">Importă un calendar extern</a>';
 $string['notitle'] = 'niciun titlu';
 $string['noupcomingevents'] = 'Nu există evenimente viitoare';
 $string['oneevent'] = '1 eveniment';

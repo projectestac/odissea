@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', version '4.1'.
+ * Strings for component 'auth_ldap', language 'nl', version '4.4'.
  *
  * @package     auth_ldap
  * @category    string
@@ -156,6 +156,8 @@ $string['renamingnotallowed'] = 'Hernoemen van gebruiker niet toegelaten in LDAP
 $string['rootdseerror'] = 'Fout bij het bevragen van de rootDSE voor Active Directory';
 $string['start_tls'] = 'Gebruik de gewone LDAP-service (poort 389) met TLS-encryptie.';
 $string['start_tls_key'] = 'Gebruik TLS';
+$string['sync_updateuserchunk'] = 'Stel deze waarde in op het aantal gebruikers dat je per transactie wil bijwerken. Als je dit op 0 instelt, worden alle gebruikers in één transactie bijgewerkt.';
+$string['sync_updateuserchunk_key'] = 'Synchronisatie update gebruikers blokgrootte';
 $string['syncroles'] = 'Synchroniseer systeemrollen via LDAP';
 $string['synctask'] = 'LDAP-gebruikers sync job';
 $string['systemrolemapping'] = 'Systeemrolkoppeling';

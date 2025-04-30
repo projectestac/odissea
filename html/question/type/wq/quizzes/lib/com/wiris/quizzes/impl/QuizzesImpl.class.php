@@ -38,7 +38,7 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 	public function getElementsToGradeFromAuthorAnswer($authorAnswer) {
 		return $this->getElementsToGrade($authorAnswer->getValue(), $authorAnswer->getComparison());
 	}
-	public function getHttpObject($httpl, $serviceUrl, $service, $postData) {
+	public function getHttpObject($httpl, $serviceUrl, $proxyRoute, $postData, $contentType) {
 		$http = null;
 		$config = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration();
 		$clientSide = com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT || com_wiris_settings_PlatformSettings::$IS_FLASH;
@@ -46,9 +46,15 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 		if($clientSide && !$allowCors) {
 			$url = $config->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL);
 			$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
-			$http->setParameter("service", $service);
+			$http->setParameter("service", $proxyRoute->service);
+			if($proxyRoute->path !== null) {
+				$http->setParameter("path", $proxyRoute->path);
+			}
 			if($postData !== null) {
 				$http->setParameter("rawpostdata", "true");
+				if($contentType !== null) {
+					$http->setParameter("contenttype", $contentType);
+				}
 				$http->setParameter("postdata", $postData);
 				$http->setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			} else {
@@ -67,7 +73,7 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 				}
 			}
 			if($postData !== null) {
-				$http->setHeader("Content-Type", "text/xml; charset=UTF-8");
+				$http->setHeader("Content-Type", $contentType . "; charset=UTF-8");
 				$http->setPostData($postData);
 			} else {
 				$http->setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
@@ -1053,7 +1059,7 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 		$r = $this->newGradeRequest($instance);
 		$qr = $r;
 		$qi = $instance;
-		$qr->question = $this->copyQuestion($qr->question);
+		$qr->question = $this->shallowCopyQuestion($qr->question);
 		com_wiris_quizzes_impl_QuizzesImpl::setVariables($html, $qr->question, $qi, $qr);
 		return $r;
 	}
@@ -1080,6 +1086,9 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 					if($slot->getSyntax()->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$GRAPHIC) {
 						continue;
 					}
+					if($slot->getSyntax()->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP) {
+						$sb->add($slot->getSyntax()->getParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$TASK_TO_SOLVE) . " ");
+					}
 					if($slot->getInitialContent() !== null) {
 						$sb->add($slot->getInitialContent() . " ");
 					}
@@ -1105,17 +1114,14 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 		}
 		return $this->newVariablesRequest($sb->b, $instance);
 	}
-	public function copyQuestion($question) {
-		$copy = $this->newQuestion()->getImpl();
-		$original = $question->getImpl();
-		$copy->id = $original->id;
-		$copy->localData = $original->localData;
-		$copy->assertions = $original->assertions;
-		$copy->slots = $original->slots;
-		$copy->correctAnswers = $original->correctAnswers;
-		$copy->options = $original->options;
-		$copy->wirisCasSession = $original->wirisCasSession;
+	public function shallowCopyQuestion($question) {
+		$copy = new com_wiris_quizzes_impl_QuestionImpl();
+		$copy->importQuestion($question->getImpl());
 		return $copy;
+	}
+	public function deepCopyQuestion($question) {
+		$serialized = $question->serialize();
+		return $this->readQuestion($serialized);
 	}
 	public function newVariablesRequest($html, $instance) {
 		if($instance === null) {
@@ -1126,7 +1132,7 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 		if($question === null) {
 			throw new HException("The question must be specified, either as a parameter" . " of this function or as a field of the question instance");
 		}
-		$question = $this->copyQuestion($question);
+		$question = $this->shallowCopyQuestion($question);
 		$qr = new com_wiris_quizzes_impl_QuestionRequestImpl();
 		$qr->question = $question;
 		$qr->userData = $qi->userData;

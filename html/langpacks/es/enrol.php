@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', version '4.1'.
+ * Strings for component 'enrol', language 'es', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'No tiene permiso o no puede asignar roles en es
 $string['bulkuseroperation'] = 'Operación de usuario masiva';
 $string['configenrolplugins'] = 'Por favor, seleccione todos los conectores requeridos y colóquelos en orden adecuado.';
 $string['custominstancename'] = 'Personalizar nombre';
+$string['customwelcomemessage'] = 'Mensaje personalizado de bienvenida';
+$string['customwelcomemessage_help'] = 'Formatos permitidos: Texto plano o auto-formato Moodle. También se aceptan etiquetas HTML y multi-lang, así como los siguientes marcadores:
+<ul>
+<li>Nombre del curso {$a->coursename}</li>
+<li>Enlace a la página de perfil del usuario {$a->profileurl}</li>
+<li>Email del usuario {$a->email}</li>
+<li>Nombre completo del usuario {$a->fullname}</li>
+<li>Nombre de pila del usuario {$a->firstname}</li>
+<li>Apellido(s) del usuario {$a->lastname}</li>
+<li>Rol del usuario en el curso {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Estimado/a {$a->fullname}: Ha sido matriculado en el curso {$a->coursename}';
 $string['defaultenrol'] = 'Añadir instancia a cursos nuevos';
 $string['defaultenrol_desc'] = 'Es posible añadir esta extensión, por defecto, a todos los cursos nuevos.';
 $string['deleteinstanceconfirm'] = 'Está a punto de eliminar el método de matriculación "{$a->name}". Todos los  {$a->users} usuarios actualmente matriculados con este método serán dados de baja y cualquier información suya relativa a sus cursos, como las calificaciones, pertenencia a grupos o suscripción a foros será eliminada.
@@ -129,6 +141,7 @@ $string['periodend'] = 'hasta {$a}';
 $string['periodnone'] = 'matriculado {$a}';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} hasta {$a->end}';
+$string['plugindisabled'] = 'El plugin de matriculación {$a} está deshabilitado';
 $string['privacy:metadata:user_enrolments'] = 'Matriculaciones';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'La instancia del plugin de matriculación';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'El ID del usuario que modificó por última vez la matriculación del usuario';
@@ -137,14 +150,15 @@ $string['privacy:metadata:user_enrolments:tableexplanation'] = 'El plugin de mat
 $string['privacy:metadata:user_enrolments:timecreated'] = 'El momento en el que fue creada la matriculación del usuario';
 $string['privacy:metadata:user_enrolments:timeend'] = 'El momento en el que termina la matriculación del usuario';
 $string['privacy:metadata:user_enrolments:timemodified'] = 'El momento en el que fue modificada la matriculación del usuario';
-$string['privacy:metadata:user_enrolments:timestart'] = 'El momento en el que comienza la matriculación del usuario';
+$string['privacy:metadata:user_enrolments:timestart'] = 'El momento en el que inicia la matriculación del usuario';
 $string['privacy:metadata:user_enrolments:userid'] = 'El ID del usuario';
-$string['proceedtocourse'] = 'Continuar al contenido del curso';
 $string['recovergrades'] = 'Es posible recuperar las calificaciones de usuario antiguas';
 $string['rolefromcategory'] = '{$a->role} (Heredado de la categoría de curso)';
 $string['rolefrommetacourse'] = '{$a->role} (Heredado del curso padre)';
 $string['rolefromsystem'] = '{$a->role} (Asignado a nivel de sitio)';
 $string['rolefromthiscourse'] = '{$a->role} (Asignado en este curso)';
+$string['sendcoursewelcomemessage'] = 'Enviar mensaje de bienvenida al curso';
+$string['sendcoursewelcomemessage_help'] = 'Cuando se matricula un usuario o una cohorte en el curso, puede enviarse un correo electrónico de bienvenida. Si se les envía desde el contacto del curso (por defecto, el profesor), y hay más de un usuario con ese rol, el correo se envía desde el primer usuario que tenga el rol asignado.';
 $string['sendfromcoursecontact'] = 'Del contacto del curso';
 $string['sendfromkeyholder'] = 'Del portador de la clave';
 $string['sendfromnoreply'] = 'De la dirección de no-responder (no-reply)';
@@ -152,10 +166,10 @@ $string['startdatetoday'] = 'Hoy';
 $string['synced'] = 'Sincronizado';
 $string['testsettings'] = 'Probar configuración';
 $string['testsettingsheading'] = 'Prueba de configuración del componente de matriculación - {$a}';
-$string['timeended'] = 'Se acabó el tiempo';
+$string['timeended'] = 'Fecha de fin de la matriculación al curso';
 $string['timeenrolled'] = 'Tiempo inscrito';
 $string['timereaggregated'] = 'Tiempo re-agregado';
-$string['timestarted'] = 'Hora de iniciado';
+$string['timestarted'] = 'Fecha de inicio de la matriculación al curso';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} otros usuarios';
 $string['totalunenrolledusers'] = '{$a} usuarios desmatriculados';
@@ -163,7 +177,7 @@ $string['unassignnotpermitted'] = 'No tiene permiso para retirar roles en este c
 $string['unenrol'] = 'Dar de baja';
 $string['unenrolconfirm'] = '¿Realmente desea dar de baja (desmatricular) al usuario "{$a->user}" (previamente matriculado vía "{$a->enrolinstancename}") de "{$a->course}"?';
 $string['unenrolleduser'] = 'El usuario "{$a->fullname}" fue dado de baja (desmatriculado) del curso';
-$string['unenrolme'] = 'Darme de baja en {$a}';
+$string['unenrolme'] = 'Darme de baja en este curso';
 $string['unenrolnotpermitted'] = 'No dispone de permiso para dar de baja a este usuario del curso.';
 $string['unenrolroleusers'] = 'Dar de baja a usuarios';
 $string['uninstallmigrating'] = 'Migrando {$a} matrículas';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'gl', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'gl', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -58,7 +58,7 @@ $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'É posíbel que o seu navegador non permita que este complemento funcione a non ser que se use a través de HTTPS ou dende a máqiona local (localhost).';
 $string['insecurealert_title'] = 'Conexión insegura!';
 $string['maxfilesizehit'] = 'Acadou o límite de tamaño máximo para envíos de ficheiros.';
-$string['maxfilesizehit_title'] = 'Gravación detida';
+$string['maxfilesizehit_title'] = 'ravación detida';
 $string['norecordingfound'] = 'Algo foi mal. Non se gravou nada..';
 $string['norecordingfound_title'] = 'Non se atoparon gravacións';
 $string['nowebrtc'] = 'O seu navegador ofrece compatibilidade limitada ou nula para as tecnoloxías WebRTC e non se pode usar con este complemento. Cambie ou actualice o seu navegador.';

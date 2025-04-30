@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', version '4.1'.
+ * Strings for component 'resource', language 'ca', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = 'Afegeix un recurs nou';
 $string['resource:exportresource'] = 'Exporta el recurs';
 $string['resource:view'] = 'Veure recurs';
 $string['resourcecontent'] = 'Fitxers i subcarpetes';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Fitxer';
 $string['selectmainfile'] = 'Seleccioneu el fitxer principal prement la icona a la vora del nom.';
 $string['showdate'] = 'Mostra la data de la càrrega/modificació';

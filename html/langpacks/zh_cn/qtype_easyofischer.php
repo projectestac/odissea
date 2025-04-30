@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyofischer', language 'zh_cn', version '4.1'.
+ * Strings for component 'qtype_easyofischer', language 'zh_cn', version '4.4'.
  *
  * @package     qtype_easyofischer
  * @category    string

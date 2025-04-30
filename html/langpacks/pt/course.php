@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'pt', version '4.1'.
+ * Strings for component 'course', language 'pt', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'Sem rodapé';
 $string['activitychooserrecommendations'] = 'Atividades recomendadas';
 $string['activitychoosersettings'] = 'Configurações do seletor de atividades';
 $string['activitychoosertabmode'] = 'Separadores do seletor de atividades';
-$string['activitychoosertabmode_desc'] = 'O seletor de atividades permite que um professor selecione facilmente atividades e recursos para adicionar à sua disciplina. Esta configuração determina que separadores devem ser mostrados no seletor. Tenha em atenção que o separador \'Com estrela\' é mostrado apenas ao utilizador se ele marcou uma ou mais atividades com estrela e o separador \'Recomendados\' é mostrado apenas se um administrador do site especificou algumas atividades recomendadas.';
+$string['activitychoosertabmode_desc'] = 'O seletor de atividades lista atividades e recursos que o professor pode adicionar à sua disciplina. Para adicionar itens ao separador \'Recomendados\', vá a <a href=\'../course/recommendations.php\'>Atividades recomendadas</a>.';
+$string['activitychoosertabmodefive'] = 'Com estrela, Recomendado, Tudo';
+$string['activitychoosertabmodefour'] = 'Com estrela, Recomendados, Tudo, Atividades, Recursos';
 $string['activitychoosertabmodeone'] = 'Com estrela, Tudo, Atividades, Recursos, Recomendados';
+$string['activitychoosertabmodesix'] = 'Com estrela, Recomendados, Atividades, Recursos';
 $string['activitychoosertabmodethree'] = 'Com estrela, Atividades, Recursos, Recomendados';
 $string['activitychoosertabmodetwo'] = 'Com estrela, Tudo, Recomendados';
 $string['activitydate:closed'] = 'Fechou:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'Marcar a atividade {$a} com estrela';
 $string['aria:recommendedtab'] = 'Atividades recomendadas';
 $string['browsecourseadminindex'] = 'Navegue pela administração da disciplina com este índice.';
 $string['browsesettingindex'] = 'Navegue pelas configurações com este índice.';
+$string['communicationroomlink'] = 'Conversar com os participantes da displina';
 $string['completion_automatic:done'] = 'Concluída:';
 $string['completion_automatic:failed'] = 'Sem aprovação:';
 $string['completion_automatic:todo'] = 'Por concluir:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} foi marcada co
 $string['completionrequirements'] = 'Requisitos de conclusão de {$a}';
 $string['courseaccess'] = 'Acesso à disciplina';
 $string['coursealreadyfinished'] = 'Disciplina já terminada';
+$string['coursecommunication_desc'] = 'O serviço de comunicação predefinido para as novas disciplinas. As disciplinas existentes não terão nenhum fornecedor selecionado por predefinição.';
 $string['coursecontentnotification'] = 'Enviar notificação de alteração de conteúdo';
 $string['coursecontentnotification_help'] = 'Se ativar esta opção, será enviada uma notificação aos utilizadores da disciplina sobre qualquer alteração da atividade/recurso ou sobre nova atividade/recurso. Tenha em atenção que a notificação será enviada apenas se o novo recurso ou a nova atividade estiver visível.';
 $string['coursecontentnotifnew'] = 'Novo conteúdo em {$a->coursename}';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> é novo/a na disciplina <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Alterar as preferências de notificação</a></p>';
 $string['coursecontentnotifupdate'] = 'Alteração de conteúdo em {$a->coursename}';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> foi alterado/a na disciplina <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Alterar as preferências de notificação</a></p>';
+$string['coursecount'] = 'Total disciplinas';
 $string['coursenotyetfinished'] = 'A disciplina ainda não terminou';
 $string['coursenotyetstarted'] = 'A disciplina ainda não iniciou';
 $string['courseparticipants'] = 'Participantes da disciplina';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Professores';
 $string['customfieldsettings'] = 'Configurações gerais dos campos personalizados da disciplina';
 $string['daystakingcourse'] = 'Dias de disciplina';
+$string['defaultsettingscategory'] = 'Configurações predefinidas';
 $string['downloadcontent'] = 'Incluir no descarregamento do conteúdo da disciplina';
 $string['downloadcontent_help'] = 'Esta atividade ou recurso deve ser incluída(o) no arquivo Zip do conteúdo da disciplina disponível para descarregamento? Ficheiros, Pastas, Páginas e Separadores podem ser descarregados na íntegra. Para todas as outras atividades e ou recursos, apenas o nome e a descrição são descarregados. Esta opção requer que a opção \'Ativar descarregamento do conteúdo da disciplina\' esteja ativa nas configurações da disciplina.
 Esta configuração não tem efeito no descarregamento de conteúdo através da Aplicação móvel para uso offline.';
@@ -93,7 +100,9 @@ $string['downloadcoursecontent_help'] = 'Esta configuração determina se o cont
 $string['enabledownloadcoursecontent'] = 'Ativar descarregamento do conteúdo da disciplina';
 $string['errorendbeforestart'] = 'A data de fim ({$a}) é anterior à data de início da disciplina';
 $string['favourite'] = 'Disciplina com estrela';
+$string['gotosection'] = 'Ir para a secção {$a}';
 $string['gradetopassnotset'] = 'Esta disciplina não tem nota de aprovação definida. Pode ser definida em Avaliação da disciplina (Configuração da pauta).';
+$string['hideendedcoursestask'] = 'Ocultação de disciplinas na data de fim';
 $string['informationformodule'] = 'Informações sobre a atividade {$a}';
 $string['module'] = 'Atividade';
 $string['namewithlink'] = 'Nome da categoria com hiperligação';
@@ -110,6 +119,8 @@ $string['noteachinginfomessage'] = 'Olá {$a->userfirstname},
 $string['participants:perpage'] = 'Participantes por página';
 $string['participants:perpage_help'] = 'Especifique o número de participantes a mostrar por página em cada disciplina.';
 $string['participantsnavigation'] = 'Participantes de navegação terciária.';
+$string['pdfexportfont'] = 'Tipo de letra dos PDF';
+$string['pdfexportfont_help'] = 'O tipo de letra a ser usado nos ficheiros PDF gerados, como por exemplo, as submissões nos trabalhos.';
 $string['privacy:completionpath'] = 'Conclusão da disciplina';
 $string['privacy:favouritespath'] = 'Informação da disciplina com estrela';
 $string['privacy:metadata:activityfavouritessummary'] = 'O sistema da disciplina contém informações sobre quais itens do seletor de atividades foram marcados com uma estrela pelo utilizador.';
@@ -122,6 +133,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} após a disc
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} antes da disciplina iniciar';
 $string['searchactivitiesbyname'] = 'Pesquisar atividades por nome';
 $string['searchresults'] = 'Resultados da pesquisa: {$a}';
+$string['sectionlink'] = 'Hiperligação permanente';
+$string['showstartedcoursestask'] = 'Ocultar disciplinas na data de início';
 $string['studentsatriskincourse'] = 'Alunos em risco na disciplina \'{$a}\'';
 $string['studentsatriskinfomessage'] = 'Olá {$a->userfirstname},
 <p>Alguns alunos da disciplina \'{$a->coursename}\' foram identificados como estando em risco.<p/>';
@@ -153,3 +166,4 @@ $string['targetlabelstudentgradetopassno'] = 'Aluno que provavelmente alcançar�
 $string['targetlabelstudentgradetopassyes'] = 'Aluno em risco de não ter a nota mínima para passar na disciplina.';
 $string['targetlabelteachingno'] = 'Disciplinas em risco de não iniciar';
 $string['targetlabelteachingyes'] = 'Utilizadores com capacidades de ensino que têm acesso à disciplina';
+$string['totalactivities'] = 'Atividades: {$a}';

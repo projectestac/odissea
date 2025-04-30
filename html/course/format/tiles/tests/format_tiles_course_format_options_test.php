@@ -41,6 +41,7 @@ final class format_tiles_course_format_options_test extends \advanced_testcase {
         require_once("$CFG->dirroot/backup/util/includes/backup_includes.php");
         \backup_controller_dbops::apply_version_and_release();
         \phpunit_util::bootstrap_init();
+        parent::setUpBeforeClass();
     }
 
     /**

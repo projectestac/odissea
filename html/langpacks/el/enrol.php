@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'el', version '4.1'.
+ * Strings for component 'enrol', language 'el', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,15 @@ $string['assignnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν μ
 $string['bulkuseroperation'] = 'Μαζικές λειτουργίες χρήστη';
 $string['configenrolplugins'] = 'Παρακαλούμε επιλέξτε όλα τα απαιτούμενα πρόσθετα και έπειτα ταξινομείστε τα στην κατάλληλη σειρά.';
 $string['custominstancename'] = 'Όνομα προσαρμοσμένου στιγμιοτύπου';
+$string['customwelcomemessage'] = 'Προσαρμοσμένο μήνυμα καλωσορίσματος';
+$string['customwelcomemessage_help'] = 'Ένα προσαρμοσμένο μήνυμα καλωσορίσματος μπορεί να προστεθεί ως απλό κείμενο ή σε μορφότυπο Moodle-auto, που μπορεί να περιλαμβάνει ετικέτες HTML και ετικέτες πολλαπλών γλωσσών (multi-lang).
+
+Μπορούν να περιλαμβάνονται στο μήνυμα τα ακόλουθα δεσμευτικά θέσης:
+
+* Όνομα μαθήματος {$a->coursename}
+* Σύνδεσμος στη σελίδα προφίλ χρήστη {$a->profileurl}
+* Διεύθυνση ηλε.ταχυδρομείου χρήστη {$a->email}
+* Πλήρες όνομα χρήστη {$a->fullname}';
 $string['defaultenrol'] = 'Προσθήκη στιγμιοτύπου στα νέα μαθήματα';
 $string['defaultenrol_desc'] = 'Είναι δυνατό να προσθέσετε αυτό το πρόσθετο σε όλα τα νέα μαθήματα από προεπιλογή.';
 $string['deleteinstanceconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής «{$a->name}». Για τους {$a->users} χρήστες που είναι τώρα εγγεγραμμένοι στο μάθημα χρησιμοποιώντας αυτή την μέθοδο εγγραφής θα γίνει ακύρωση της εγγραφής τους και όλα τα σχετικά με το μάθημα δεδομένα όπως βαθμοί χρηστών, συμμετοχή σε ομάδες, εγγραφές σε φόρουμ κλπ. θα διαγραφούν.
@@ -139,7 +148,6 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Πότε λήγει η ε
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Πότε τροποποιήθηκε η εγγραφή του χρήστη';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Πότε ξεκινά η εγγραφή του χρήστη';
 $string['privacy:metadata:user_enrolments:userid'] = 'Το αναγνωριστικό του χρήστη';
-$string['proceedtocourse'] = 'Μετάβαση στο περιεχόμενο του μαθήματος';
 $string['recovergrades'] = 'Ανάκτηση παλαιών βαθμών του χρήστη αν είναι δυνατόν';
 $string['rolefromcategory'] = '{$a->ρόλος} (Που κληρονομείται από την κατηγορία μαθήματος)';
 $string['rolefrommetacourse'] = '{$a->role} (Κληρονομημένος από το γονικό μάθημα)';
@@ -160,7 +168,7 @@ $string['unassignnotpermitted'] = 'Δεν έχετε δικαίωμα να αφ�
 $string['unenrol'] = 'Ακύρωση εγγραφής';
 $string['unenrolconfirm'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή του χρήστη «{$a->user}» (που έγινε μέσω «{$a->enrolinstancename}») από το μάθημα «{$a->course}»;';
 $string['unenrolleduser'] = 'Ο χρήστης «{$a->fullname}» απεγγράφηκε από το μάθημα';
-$string['unenrolme'] = 'Ακύρωση της εγγραφής μου στο μάθημα {$a}';
+$string['unenrolme'] = 'Ακύρωση της εγγραφής μου στο μάθημα';
 $string['unenrolnotpermitted'] = 'Δεν έχετε δικαίωμα να ακυρώσετε την εγγραφή αυτού του χρήστη σε αυτό το μάθημα.';
 $string['unenrolroleusers'] = 'Ακύρωση εγγραφής χρηστών';
 $string['uninstallmigrating'] = 'Μετεγκατάσταση (μεταφορά/μετατροπή) «{$a}» εγγραφών';

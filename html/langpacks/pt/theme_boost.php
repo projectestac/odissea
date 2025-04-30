@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'pt', version '4.1'.
+ * Strings for component 'theme_boost', language 'pt', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Predefinição do tema';
 $string['preset_desc'] = 'Escolha uma predefinição para alterar amplamente a aparência do tema.';
 $string['presetfiles'] = 'Ficheiros adicionais de predefinições do tema';
-$string['presetfiles_desc'] = 'Os ficheiros de predefinições podem ser usados para alterar drasticamente a aparência do tema. Consulte a <a href="https://docs.moodle.org/dev/Boost_Presets">Personalização Boost</a> para obter informações sobre como criar e partilhar os seus próprios ficheiros de predefinições e consulte também  o <a href="https://moodle.net/boost">Repositório de personalizações</a> para predefinições que outros tenham partilhado.';
+$string['presetfiles_desc'] = 'Os ficheiros de predefinições podem ser usados para alterar drasticamente a aparência do tema. Consulte a <a href="https://docs.moodle.org/dev/Boost_Presets">Personalização Boost</a> para obter informações sobre como criar e partilhar os seus próprios ficheiros de predefinições e consulte também o <a href="https://moodle.net/boost">Repositório de personalizações</a> para predefinições que outros tenham partilhado.';
 $string['privacy:drawerblockclosed'] = 'A preferência atual para o painel dos blocos é fechada.';
 $string['privacy:drawerblockopen'] = 'A preferência atual para o painel dos blocos é aberta.';
 $string['privacy:drawerindexclosed'] = 'A preferência atual para o painel do índice da disciplina é fechada.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Raw SCSS inicial';
 $string['rawscsspre_desc'] = 'Neste campo pode fornecer o código de inicialização SCSS que será colocado antes de tudo. Na maioria das vezes, apenas usará esta configuração para definir variáveis.';
 $string['region-side-pre'] = 'Direita';
 $string['showfooter'] = 'Mostrar rodapé';
-$string['totop'] = 'Ir para topo';
 $string['unaddableblocks'] = 'Blocos não necessários';
 $string['unaddableblocks_desc'] = 'Os blocos especificados não são necessários ao usar este tema e não serão listados no menu de \'Adicionar bloco\'.';

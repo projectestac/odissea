@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'pt', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'pt', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'Caminho do ficheiro CA';
+$string['ca_file_help'] = 'Localização do ficheiro da Autoridade de Certificação (CA) no sistema local de ficheiros';
+$string['clustermode'] = 'Modo Cluster';
+$string['clustermode_help'] = 'Ao ativar esta opção, executará a função Cluster Redis, permitindo que o seu servidor atenda a vários servidores para lidar com solicitações simultâneas.';
+$string['clustermodeunavailable'] = 'O Cluster Redis não está disponível de momento. Certifique-se de que a extensão Redis do PHP oferece suporte à funcionalidade Redis Cluster.';
 $string['compressor_none'] = 'Sem compressão.';
 $string['compressor_php_gzip'] = 'Usar compressão gzip.';
 $string['compressor_php_zstd'] = 'Usar compressão Zstandard.';
+$string['connectiontimeout'] = 'Tempo limite de ligação';
+$string['connectiontimeout_help'] = 'Define o tempo limite ao tentar ligar-se ao servidor Redis.';
+$string['encrypt_connection'] = 'Usar encriptação TLS.';
+$string['encrypt_connection_help'] = 'Usar TLS para se ligar ao Redis. Não use \'tls://\' no nome do servidor para Redis, use esta opção.';
 $string['password'] = 'Senha';
 $string['password_help'] = 'Definir a senha do servidor Redis.';
 $string['pluginname'] = 'Redis';
@@ -38,17 +47,51 @@ $string['prefix_help'] = 'Este prefixo é usado para todos os nomes de chave do 
 $string['prefixinvalid'] = 'Prefixo inválido. Apenas pode usar a-z A-Z 0-9-_.';
 $string['privacy:metadata:redis'] = 'O armazenamento de cache do módulo Redis armazena dados temporariamente como parte da sua funcionalidade de armazenamento em cache. Esses dados são armazenados num servidor Redis e são removidos regularmente.';
 $string['privacy:metadata:redis:data'] = 'Vários dados armazenados na cache';
-$string['serializer_igbinary'] = 'Sequenciador igbinary.';
-$string['serializer_php'] = 'O sequenciador padrão PHP.';
-$string['server'] = 'Servidor';
-$string['server_help'] = 'Isto define o nome do host ou o endereço IP do servidor Redis a utilizar.';
+$string['serializer_igbinary'] = 'Sequenciador igbinary';
+$string['serializer_php'] = 'O sequenciador padrão PHP';
+$string['server'] = 'Servidor(es)';
+$string['server_help'] = 'Servidor Redis para usar em testes.
+
+Alguns valores de exemplo:
+
+* testredis.abc.com - Para ligar a um servidor Redis por nome do host (porta 6379, por predefinição).
+* testredis.abc.com:1234 - Para ligar a um servidor Redis por nome de host por uma porta específica.
+* 1.2.3.4 - Para ligar a um servidor Redis por endereço IP (porta 6379, por predefinição).
+* 1.2.3.4:1234 - Para ligar a um servidor Redis por endereço IP por uma porta específica.
+* unix:///var/redis.sock - Para ligar a um servidor Redis usando um socket Unix.
+* /var/redis.sock - Para ligar a um servidor Redis usando um socket Unix (formato alternativo).
+
+Se o modo cluster estiver ativo, especifique os servidores separados por uma nova linha, por exemplo:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+Para mais informações, consulte as páginas: <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Aceitar ligações de cliente</a> e <a href="https://redis.io/resources/clients/#php">Clientes Redis PHP</a>.';
 $string['task_ttl'] = 'Limpeza de memória usada por entradas expiradas em caches Redis';
+$string['test_clustermode'] = 'Modo Cluster';
+$string['test_clustermode_desc'] = 'Ativar o Teste no modo Cluster Redis.';
 $string['test_password'] = 'Testar a senha do servidor';
 $string['test_password_desc'] = 'Testar a senha do servidor Redis.';
 $string['test_serializer'] = 'Serializador';
 $string['test_serializer_desc'] = 'Serializador a ser usado para testes.';
 $string['test_server'] = 'Servidor de teste';
-$string['test_server_desc'] = 'Servidor Redis para usar em testes.';
+$string['test_server_desc'] = 'Servidor Redis para usar em testes.
+
+Alguns valores de exemplo:
+
+* testredis.abc.com - Para ligar a um servidor Redis por nome do host (porta 6379, por predefinição).
+* testredis.abc.com:1234 - Para ligar a um servidor Redis por nome de host por uma porta específica.
+* 1.2.3.4 - Para ligar a um servidor Redis por endereço IP (porta 6379, por predefinição).
+* 1.2.3.4:1234 - Para ligar a um servidor Redis por endereço IP por uma porta específica.
+* unix:///var/redis.sock - Para ligar a um servidor Redis usando um socket Unix.
+* /var/redis.sock - Para ligar a um servidor Redis usando um socket Unix (formato alternativo).
+
+Se o modo cluster estiver ativo, especifique os servidores separados por uma nova linha, por exemplo:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+Para mais informações, consulte as páginas: <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Aceitar ligações de cliente</a> e <a href="https://redis.io/resources/clients/#php">Clientes Redis PHP</a>.';
 $string['test_ttl'] = 'Testar com TTL';
 $string['test_ttl_desc'] = 'Executar o teste de desempenho usando uma cache que requer TTL (mais lento).';
 $string['usecompressor'] = 'Usar compressor';

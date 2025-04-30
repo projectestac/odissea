@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', version '4.1'.
+ * Strings for component 'auth_db', language 'eu', version '4.4'.
  *
  * @package     auth_db
  * @category    string
@@ -61,7 +61,7 @@ $string['auth_dbsaltedcrypt'] = 'Zifratu zentzu-bakarreko hash metodoa erabiliz.
 $string['auth_dbsetupsql'] = 'SQL ezarpen-komandoa';
 $string['auth_dbsetupsqlhelp'] = 'Datu-basearen konfigurazio berezirako SQL komandoa, maiz komunikazio kodifikazioa konfiguratzeko erabilia - MySQL eta PostgreSQLrako adibidea: <em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Kontua etendako erabiltzailea ({$a->name}) eta IDa {$a->id}';
-$string['auth_dbsuspendusererror'] = 'Errorea {$a} erabiltzailea suspenditzean';
+$string['auth_dbsuspendusererror'] = 'Errorea {$a} erabiltzailea etetean';
 $string['auth_dbsybasequoting'] = 'Erabili sybase kakotxak (quotes)';
 $string['auth_dbsybasequotinghelp'] = 'Sybase motako kakotx sinpleen ihesbidea - beharrezkoa Oracle, MS SQL eta beste datu-base batzuetan. Ez erabil MySQL-rentzat!';
 $string['auth_dbsyncuserstask'] = 'Sinkronizatu erabiltzaileak ataza';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ko', version '4.1'.
+ * Strings for component 'enrol', language 'ko', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -34,6 +34,7 @@ $string['assignnotpermitted'] = '권한이 없거나 강좌에 역할을 부여�
 $string['bulkuseroperation'] = '다수 사용자 작업';
 $string['configenrolplugins'] = '필요한 모든 플러그인을 선택하고 적절한 순서대로 배열하세요.';
 $string['custominstancename'] = '사용자 정의 인스턴스 이름';
+$string['customwelcomemessage'] = '사용자 정의 환영 메세지';
 $string['defaultenrol'] = '기본 등록 방법';
 $string['defaultenrol_desc'] = '기본으로 이 플러그인을 모든 새 강좌에 추가할 수 있음';
 $string['deleteinstanceconfirm'] = '정말, {$a->users} 명이 등록처리된 "{$a->name}" 플러그인을 삭제하겠습니까?';
@@ -102,7 +103,6 @@ $string['periodend'] = '{$a} 까지';
 $string['periodnone'] = '등록함 {$a}';
 $string['periodstart'] = '{$a} 부터';
 $string['periodstartend'] = '{$a->start} 부터 {$a->end} 까지';
-$string['proceedtocourse'] = '강좌 내용으로 진행';
 $string['recovergrades'] = '가능한 경우 사용자의 이전 성적 복원';
 $string['rolefromcategory'] = '{$a->role} (강좌 범주에서 상속됨)';
 $string['rolefrommetacourse'] = '{$a->role} (상위 강좌에서 상속됨)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', version '4.1'.
+ * Strings for component 'glossary', language 'ru', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -112,7 +112,7 @@ $string['comments'] = 'Комментарии';
 $string['commentson'] = 'Комментарии о';
 $string['commentupdated'] = 'Комментарий был изменен';
 $string['completiondetail:entries'] = 'Внести записи: {$a}';
-$string['completionentries'] = 'Студент должен создать записей:';
+$string['completionentries'] = 'Созданы записи';
 $string['completionentriesdesc'] = 'Студент должен создать не менее {$a} записи(ей)';
 $string['completionentriesgroup'] = 'Требуется записей';
 $string['concept'] = 'Слово';
@@ -335,6 +335,7 @@ $string['page-mod-glossary-edit'] = 'Страница добавления/ре�
 $string['page-mod-glossary-view'] = 'Страница просмотра записей глоссария';
 $string['page-mod-glossary-x'] = 'Любая страница модуля «Глоссарий»';
 $string['pendingapproval'] = 'Ожидают одобрения';
+$string['pendingapprovalcount'] = 'Ожидают одобрения - ({$a})';
 $string['pluginadministration'] = 'Управление глоссарием';
 $string['pluginname'] = 'Глоссарий';
 $string['popupformat'] = 'Формат всплывающего окна';
@@ -434,7 +435,6 @@ $string['usedynalink_help'] = '<h2> Автоматические ссылки н
 
 <p> Заметьте, что названия категорий также связываются. </p>';
 $string['visibletabs'] = 'Видимые вкладки';
-$string['waitingapproval'] = 'Ожидающие одобрения';
 $string['warningstudentcapost'] = '(Доступно только, если глоссарий не главный)';
 $string['withauthor'] = 'Слова с авторами';
 $string['withoutauthor'] = 'Слова без автора';

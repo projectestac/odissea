@@ -22,6 +22,8 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+define('NO_OUTPUT_BUFFERING', true);
+
 require_once(__DIR__ . '/../config.php');
 require_once($CFG->dirroot . '/course/lib.php');
 require_once($CFG->dirroot . '/backup/util/includes/backup_includes.php');
@@ -64,13 +66,20 @@ if ($delete === md5($course->timemodified)) {
     echo $OUTPUT->heading($strdeletingcourse);
     // This might take a while. Raise the execution time limit.
     core_php_time_limit::raise();
+
     // We do this here because it spits out feedback as it goes.
+    echo $OUTPUT->footer();
+    echo $OUTPUT->select_element_for_append();
+
+    // Preemptively reset the navcache before closing, so it remains the same on shutdown.
+    navigation_cache::destroy_volatile_caches();
+    \core\session\manager::write_close();
+
     delete_course($course);
     echo $OUTPUT->heading( get_string("deletedcourse", "", $courseshortname) );
     // Update course count in categories.
     fix_course_sortorder();
     echo $OUTPUT->continue_button($categoryurl);
-    echo $OUTPUT->footer();
     exit; // We must exit here!!!
 }
 
@@ -87,25 +96,8 @@ if (!async_helper::is_async_pending($id, 'course', 'backup')) {
     $message = "{$strdeletecoursecheck}<br /><br />{$coursefullname} ({$courseshortname})";
 
     $continueurl = new moodle_url('/course/delete.php', array('id' => $course->id, 'delete' => md5($course->timemodified)));
-    $continuebutton = new single_button(
-        $continueurl,
-        get_string('delete'), 'post', false, ['data-action' => 'delete']
-    );
+    $continuebutton = new single_button($continueurl, get_string('delete'), 'post');
     echo $OUTPUT->confirm($message, $continuebutton, $categoryurl);
-    // In the following script, we need to use setTimeout as disabling the
-    // button in the event listener script prevent the click to be taken into account.
-    $jsscript = <<<EOF
-const button = document.querySelector('button[data-action="delete"]');
-if (button) {
-    button.addEventListener('click', () => {
-        setTimeout(() => {
-            button.disabled = true;
-        }, 0);
-    });
-}
-EOF;
-    $PAGE->requires->js_amd_inline($jsscript);
-
 } else {
     // Async backup is pending, don't let user delete course.
     echo $OUTPUT->notification(get_string('pendingasyncerror', 'backup'), 'error');

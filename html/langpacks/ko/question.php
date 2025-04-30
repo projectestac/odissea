@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', version '4.1'.
+ * Strings for component 'question', language 'ko', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -281,7 +281,6 @@ $string['notanswered'] = '답하지 않음';
 $string['notenoughanswers'] = '이런 유형의 질문은 최소 {$a} 의 답이 있어야 합니다.';
 $string['notenoughdatatoeditaquestion'] = '질문 아이디, 범주 아이디 및  질문 유형 등이 지정되지 않았습니다.';
 $string['notenoughdatatomovequestions'] = '질문을 이동시키기 위해서 질문 id를 제공해야 합니다.';
-$string['notflagged'] = '기표되지 않음';
 $string['notgraded'] = '채점되지 않음';
 $string['notshown'] = '보여지지 않음';
 $string['notyetanswered'] = '아직 답하지 않음';

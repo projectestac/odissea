@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'de', version '4.1'.
+ * Strings for component 'oublog', language 'de', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -359,7 +359,6 @@ $string['removeblogs'] = 'Entfernen Sie alle Blog-Einträge';
 $string['rss'] = 'RSS';
 $string['rssfeed'] = 'RSS Feed';
 $string['savegrades'] = 'Bewertungen sichern';
-$string['searchblogs'] = 'Blogs durchsuchen';
 $string['searchthisblog'] = 'Diesen Blog durchsuchen';
 $string['separateindividual'] = 'Getrennte Personen';
 $string['separateindividualblogs'] = 'Getrennte individuelle Blogs';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', version '4.1'.
+ * Strings for component 'workshop', language 'it', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -211,7 +211,6 @@ $string['latesubmissions'] = 'Consegne in ritardo';
 $string['latesubmissions_desc'] = 'Accetta consegne dopo la data di fine';
 $string['latesubmissions_help'] = 'È possibile consentire ai partecipanti di consegnare il proprio lavoro dopo la scadenza prevista nella fase di valutazione. Le consegne in ritardo non potranno però essere modificate.';
 $string['latesubmissionsallowed'] = 'Le consegne in ritardo saranno accettate';
-$string['legacyallocationplugincron'] = 'Elaborazione distribuzioni obsolete dei workshop';
 $string['maxbytes'] = 'Dimensione massima file consegna';
 $string['modulename'] = 'Workshop';
 $string['modulename_help'] = 'Il modulo di attività workshop consente la raccolta, la revisione e la valutazione tra pari del lavoro svolto dagli studenti.

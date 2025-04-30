@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', version '4.1'.
+ * Strings for component 'cache', language 'eu', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'Baimendutako luzapenak eta
 $string['cachedef_contextwithinsights'] = 'Pertzepzioen testuingurua';
 $string['cachedef_course_image'] = 'Ikastaro-irudiak';
 $string['cachedef_course_user_dates'] = 'Ikastaroetako erabiltzaileen datuak erlatiboak izango dira';
+$string['cachedef_courseactionsinstances'] = 'Kargatutako ikastaro-ekintzen instantziak';
 $string['cachedef_coursecat'] = 'Ikastaro-kategorien zerrenda erabiltzaile jakin batentzat';
 $string['cachedef_coursecatrecords'] = 'Ikastaro-kategorien erregistroak';
 $string['cachedef_coursecattree'] = 'Ikastaro-kategorien zuhaitza';
 $string['cachedef_coursecompletion'] = 'Ikastaro-osaketaren egoera';
 $string['cachedef_coursecontacts'] = 'Ikastaroko kontaktu-zerrenda';
 $string['cachedef_courseeditorstate'] = 'Saioaren ikastaroko egoera-cacheak ikastaroko frontend-eko aldaketak antzemateko gakoak gordetzen ditu.';
+$string['cachedef_coursehiddengroups'] = 'Ikastaro batean eskuragarritasun murriztua duen talde kopurua';
 $string['cachedef_coursemodinfo'] = 'Ikastaro bakoitzeko modulu eta atalen inguruan pilatutako informazioa';
 $string['cachedef_coursesectionspreferences'] = 'Ikastaro-atalen hobespenak';
 $string['cachedef_databasemeta'] = 'Datu-basearen metainformazioa';
-$string['cachedef_deprecatedcapabilities'] = 'Sisteman zaharkitutako baimenen zerrenda';
 $string['cachedef_eventinvalidation'] = 'Ekitaldi-baliogabetzea';
 $string['cachedef_externalbadges'] = 'Erabiltzaile jakin batentzako kanpoko dominak';
 $string['cachedef_file_imageinfo'] = 'Fitxategiko irudiaren informazioa, esaterako dimentsioak';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'Kalifikazio-letren kontsultak';
 $string['cachedef_gradesetting'] = 'Ikastaro-kalifikazioa ezarpena';
 $string['cachedef_groupdata'] = 'Ikastaroko taldeen informazioa';
 $string['cachedef_h5p_content_type_translations'] = 'H5P eduki-moten liburutegien itzulpenak';
+$string['cachedef_h5p_libraries'] = 'H5P Liburutegiak';
 $string['cachedef_h5p_library_files'] = 'H5P liburutegiko fitxategiak';
+$string['cachedef_hookcallbacks'] = 'Kakoaren itzulera-deiak';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - eduki garbitua';
 $string['cachedef_langmenu'] = 'Eskura dauden hizkuntzen zerrenda';
 $string['cachedef_license'] = 'Lizentzien zerrenda';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'Blokeatzen';
 $string['cachedef_message_processors_enabled'] = 'Gaitutako mezu-prozesatzaileen egoera';
 $string['cachedef_message_time_last_message_between_users'] = 'Orain dela gutxiko erabiltzaileen arteko mezuen sorrera-unea';
 $string['cachedef_modelfirstanalyses'] = 'Ereduaren lehen analisia eta analizatu daitekeen';
+$string['cachedef_moodlenet_usercanshare'] = 'Erabiltzaileak baliabideak MoodleNet-era partekatu ditzake';
+$string['cachedef_navigation_cache'] = 'Nabigazio-cachea';
 $string['cachedef_navigation_expandcourse'] = 'Nabigazio hedagarriko ikastaroak';
 $string['cachedef_observers'] = 'Ekitaldi behatzaileak';
 $string['cachedef_plugin_functions'] = 'Pluginen callback eskuragarriak';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'Kontua etenda duten erabiltzaile-zerren
 $string['cachedef_tagindexbuilder'] = 'Etiketatutako elementuen bilaketen emaitzak';
 $string['cachedef_tags'] = 'Etiketa-biltegiak eta eremuak';
 $string['cachedef_temp_tables'] = 'Behin-behineko taulen cachea';
+$string['cachedef_theme_usedincontext'] = 'Azal bat erabilia izan da testuinguruan azal lehenetsia baliogabetzeko';
 $string['cachedef_user_course_content_items'] = 'Erabiltzaileen eduki-elementuak (jarduerak, baliabideak eta euren azpimotak) ikastaroko';
 $string['cachedef_user_favourite_course_content_items'] = 'Erabiltzaileek nabarmendutako elementuak';
 $string['cachedef_user_group_groupings'] = 'Ikaslearen talde-multzo eta taldeak ikastaroko';

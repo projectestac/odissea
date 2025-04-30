@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'fr', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'fr', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,8 +45,9 @@ $string['devicetoken'] = 'Jeton d’appareil';
 $string['donotsendnotification'] = 'N’envoyer aucune notification';
 $string['enableprocessor'] = 'Activer les notifications mobiles';
 $string['encryptnotifications'] = 'Chiffrer les notifications';
+$string['encryptnotifications_help'] = 'Activer le chiffrement de bout en bout des notifications de l’app. Certaines données peuvent être supprimées de la notification si elles ne peuvent pas être chiffrées.';
 $string['encryptprocessing'] = 'Pour les appareils ne prenant pas en charge le chiffrement';
-$string['encryptprocessing_desc'] = 'Le chiffrement des notifications nécessite au moins Android 6 et de iOS 13, ainsi que l’App Moodle 4.2 ou ultérieure.';
+$string['encryptprocessing_desc'] = 'Le chiffrement des notifications nécessite au moins Android 8 ou iOS 13, ainsi que l’App Moodle 4.2 ou ultérieure.';
 $string['errorretrievingkey'] = 'Une erreur est survenue lors de l’obtention de la clef d’accès. Votre site Moodle doit être enregistré pour utiliser ce service. S’il est déjà enregistré, veuillez essayer de mettre à jour votre enregistrement. Vous pouvez aussi obtenir une clef d’accès en créant un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['keyretrievedsuccessfully'] = 'Clef obtenue correctement. Pour accéder aux statistiques d’usage de l’app Moodle, veuillez créer un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['messageprovidersempty'] = 'Les notifications mobiles ne sont pas activées dans les préférences de notification par défaut.';

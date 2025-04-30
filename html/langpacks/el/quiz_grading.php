@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'el', version '4.1'.
+ * Strings for component 'quiz_grading', language 'el', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Επίσης, εμφάνιση ερω�
 $string['attemptstograde'] = 'Προσπάθειες βαθμολόγησης';
 $string['automaticallygraded'] = 'Αυτόματη βαθμολόγηση';
 $string['backtothelistofquestions'] = 'Επιστροφή στη λίστα ερωτήσεων';
-$string['bydate'] = 'Κατά ημερομηνία';
-$string['bystudentfirstname'] = 'Με το μικρό όνομα του μαθητή';
-$string['bystudentidnumber'] = 'Κατά αναγνωριστικό αριθμό μαθητή';
-$string['bystudentlastname'] = 'Με το επώνυμο μαθητή';
 $string['cannotgradethisattempt'] = 'Δεν είναι δυνατή η βαθμολόγηση αυτής της προσπάθειας.';
 $string['cannotloadquestioninfo'] = 'Δεν ήταν δυνατόν να φορτωθούν οι πληροφορίες ερώτησης για τον συγκεκριμένο τύπο ερώτησης';
 $string['changeoptions'] = 'Αλλαγή επιλογών';
@@ -54,7 +50,6 @@ $string['grading:viewstudentnames'] = 'Εμφάνιση των ονομάτων 
 $string['gradingall'] = 'Και οι {$a} προσπάθειες σε αυτή την ερώτηση.';
 $string['gradingattempt'] = 'Προσπάθεια με αριθμό {$a->attempt} για τον/την {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Προσπάθειες βαθμολόγησης {$a->from} έως {$a->to} από {$a->of}';
-$string['gradingattemptwithidnumber'] = 'Αριθμός προσπάθειας {$a->attempt} για {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Επόμενες {$a} μη βαθμολογημένες προσπάθειες';
 $string['gradingnotallowed'] = 'Δεν έχετε το δικαίωμα να βαθμολογήσετε χειροκίνητα απαντήσεις σε αυτό το κουίζ';
 $string['gradingquestionx'] = 'Βαθμολόγηση ερώτησης {$a->number}: {$a->questionname}';
@@ -68,7 +63,6 @@ $string['invalidquestionid'] = 'Η βαθμολογήσιμη ερώτηση μ�
 $string['noquestionsfound'] = 'Δεν βρέθηκαν χειροκίνητα βαθμολογημένες ερωτήσεις';
 $string['nothingfound'] = 'Τίποτα για εμφάνιση';
 $string['options'] = 'Επιλογές';
-$string['orderattempts'] = 'Προσπάθειες ταξινόμησης';
 $string['pluginname'] = 'Μη αυτόματη βαθμολόγηση';
 $string['privacy:preference:order'] = 'Με ποιά σειρά να εμφανιστούν οι προσπάθειες που χρειάζονται βαθμολόγηση.';
 $string['privacy:preference:pagesize'] = 'Πόσες προσπάθειες να εμφανίζονται σε κάθε σελίδα της διεπαφής βαθμολόγησης.';
@@ -77,7 +71,6 @@ $string['questionname'] = 'Όνομα ερώτησης';
 $string['questionsperpage'] = 'Ερωτήσεις ανά σελίδα';
 $string['questionsthatneedgrading'] = 'Ερωτήσεις που χρειάζονται βαθμολόγηση';
 $string['questiontitle'] = 'Ερώτηση {$a->number} : «{$a->name}» ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} προσπάθειες {$a->openspan}βαθμολογημένες{$a->closespan}).';
-$string['randomly'] = 'Τυχαία';
 $string['saveandnext'] = 'Αποθήκευση και μετάβαση στην επόμενη σελίδα';
 $string['showstudentnames'] = 'Δώστε ονόματα μαθητών';
 $string['tograde'] = 'Προς βαθμολόγηση';

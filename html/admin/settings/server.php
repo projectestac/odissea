@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 if ($hassiteconfig) {
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -50,8 +50,8 @@ if ($hassiteconfig) {
         new lang_string('pathtopythondesc', 'admin'), ''));
     $ADMIN->add('server', $temp);
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
 
@@ -80,12 +80,13 @@ if ($hassiteconfig) {
             CONTACT_SUPPORT_DISABLED => new lang_string('disabled', 'admin'),
         ]
     ));
-
+    $temp->add(new admin_setting_configtext('servicespage', new lang_string('servicespage', 'admin'),
+        new lang_string('configservicespage', 'admin'), '', PARAM_URL));
 
     $ADMIN->add('server', $temp);
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -196,8 +197,16 @@ if ($hassiteconfig) {
         new lang_string('configproxyuser', 'admin'), ''));
     $temp->add(new admin_setting_configpasswordunmask('proxypassword', new lang_string('proxypassword', 'admin'),
         new lang_string('configproxypassword', 'admin'), ''));
-    $temp->add(new admin_setting_configtext('proxybypass', new lang_string('proxybypass', 'admin'),
-        new lang_string('configproxybypass', 'admin'), 'localhost, 127.0.0.1'));
+
+    $setting = new admin_setting_configtext('proxybypass', new lang_string('proxybypass', 'admin'),
+        new lang_string('configproxybypass', 'admin'), 'localhost,127.0.0.1');
+    $setting->set_updatedcallback(function() {
+        // Normalize $CFG->proxybypass value.
+        $normalizedvalue = \core\ip_utils::normalize_internet_address_list(get_config('core', 'proxybypass'));
+        set_config('proxybypass', $normalizedvalue);
+    });
+    $temp->add($setting);
+
     $temp->add(new admin_setting_configcheckbox('proxylogunsafe', new lang_string('proxylogunsafe', 'admin'),
         new lang_string('configproxylogunsafe_help', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('proxyfixunsafe', new lang_string('proxyfixunsafe', 'admin'),
@@ -212,6 +221,11 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_confightmleditor('maintenance_message', new lang_string('optionalmaintenancemessage', 'admin'),
         '', ''));
     $ADMIN->add('server', $temp);
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    }
+    // ************ FI
 
     // Cleanup.
     $temp = new admin_settingpage('cleanup', new lang_string('cleanup', 'admin'));
@@ -279,12 +293,25 @@ if ($hassiteconfig) {
         ]
     ));
 
+    $temp->add(new admin_setting_configduration(
+        'xapicleanupperiod',
+        new lang_string('xapicleanupperiod', 'xapi'),
+        new lang_string('xapicleanupperiod_help', 'xapi'),
+        WEEKSECS * 8,
+        WEEKSECS
+    ));
+
     $ADMIN->add('server', $temp);
 
     $temp->add(new admin_setting_configduration('filescleanupperiod',
         new lang_string('filescleanupperiod', 'admin'),
         new lang_string('filescleanupperiod_help', 'admin'),
         86400));
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
 
     // Environment.
     $ADMIN->add('server', new admin_externalpage('environment', new lang_string('environment', 'admin'),
@@ -346,6 +373,20 @@ if ($hassiteconfig) {
     $setting->set_updatedcallback('theme_reset_static_caches');
     $temp->add($setting);
 
+    $setting = new admin_setting_configduration(
+        'cron_keepalive',
+        new lang_string('cron_keepalive', 'admin'),
+        new lang_string('cron_keepalive_desc', 'admin'),
+        \core\cron::DEFAULT_MAIN_PROCESS_KEEPALIVE,
+        // The default unit is minutes.
+        MINSECS,
+    );
+
+    // Set an upper limit.
+    $setting->set_max_duration(\core\cron::MAX_MAIN_PROCESS_KEEPALIVE);
+
+    $temp->add($setting);
+
     $temp->add(
         new admin_setting_configtext(
             'task_scheduled_concurrency_limit',
@@ -383,6 +424,17 @@ if ($hassiteconfig) {
             30 * MINSECS
         )
     );
+
+    $temp->add(
+        new admin_setting_configduration(
+            'task_adhoc_failed_retention',
+            new lang_string('task_adhoc_failed_retention', 'admin'),
+            new lang_string('task_adhoc_failed_retention_desc', 'admin'),
+            \core\task\manager::ADHOC_TASK_FAILED_RETENTION,
+            WEEKSECS
+        )
+    );
+
     $ADMIN->add('taskconfig', $temp);
 
     // Task log configuration.
@@ -445,6 +497,12 @@ if ($hassiteconfig) {
 
     // Outgoing mail configuration.
     $temp = new admin_settingpage('outgoingmailconfig', new lang_string('outgoingmailconfig', 'admin'));
+
+    if (!empty($CFG->noemailever)) {
+        $noemaileverwarning = new \core\output\notification(get_string('noemaileverwarning', 'admin'),
+        \core\output\notification::NOTIFY_ERROR);
+        $temp->add(new admin_setting_heading('outgoingmaildisabled', '', $OUTPUT->render($noemaileverwarning)));
+    }
 
     $temp->add(new admin_setting_heading('smtpheading', new lang_string('smtp', 'admin'),
         new lang_string('smtpdetail', 'admin')));
@@ -509,8 +567,12 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_heading('noreplydomainheading', new lang_string('noreplydomain', 'admin'),
         new lang_string('noreplydomaindetail', 'admin')));
 
+    $default = clean_param('noreply@' . get_host_from_url($CFG->wwwroot), PARAM_EMAIL);
+    if (!$default) {
+        $default = null;
+    }
     $temp->add(new admin_setting_configtext('noreplyaddress', new lang_string('noreplyaddress', 'admin'),
-        new lang_string('confignoreplyaddress', 'admin'), 'noreply@' . get_host_from_url($CFG->wwwroot), PARAM_EMAIL));
+        new lang_string('confignoreplyaddress', 'admin'), $default, PARAM_EMAIL));
 
     $temp->add(new admin_setting_configtextarea('allowedemaildomains',
         new lang_string('allowedemaildomains', 'admin'),
@@ -665,8 +727,8 @@ if ($hassiteconfig) {
     $ADMIN->add('webservicesettings', new admin_externalpage('webservicetokens', new lang_string('managetokens', 'webservice'),
         new moodle_url('/admin/webservice/tokens.php')));
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.06.20 @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
 

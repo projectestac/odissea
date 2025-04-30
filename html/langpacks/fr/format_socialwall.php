@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_socialwall', language 'fr', version '4.1'.
+ * Strings for component 'format_socialwall', language 'fr', version '4.4'.
  *
  * @package     format_socialwall
  * @category    string
@@ -104,7 +104,7 @@ $string['missingcapwritecomment'] = 'Vous n’avez pas les capacités pour écri
 $string['nf_comment_created'] = '{$a->creator} a commenté un post : {$a->commenttext}';
 $string['nf_gotocourse'] = 'Aller au cours';
 $string['nf_like_created'] = '{$a->creator} a aimé un post : {$a->posttext}';
-$string['nf_like_deleted'] = '{$a->creator} n’aime pas un  post : {$a->posttext}';
+$string['nf_like_deleted'] = '{$a->creator} n’aime pas un post : {$a->posttext}';
 $string['nf_post_created'] = '{$a->creator} a posté dans la chronologie : {$a->posttext}';
 $string['nf_post_locked'] = '{$a->creator} a fermé les commentaires de : {$a->posttext}';
 $string['nf_post_unlocked'] = '{$a->creator} a ouvert les commentaires de : {$a->posttext}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'eu', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'eu', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'Obaloa';
 $string['pagenumber'] = '{$a}. orria';
 $string['pagexofy'] = '{$a->page} orri {$a->total}(e)tik';
 $string['partialwarning'] = 'Bidalketa honetako fitxategi batzuk ez dira erakusten eta soilik deskarga bidez daude eskuragarri.';
+$string['pathtogserror'] = 'Ghostscript-erako konfiguratutako bidea ez da zuzena: {$a}';
 $string['pathtogspathdesc'] = 'Mesedez kontuan izan PDF gaineko oharrak egiteko ghostscript-erako bidea {$a}-n zehazturik egotea behar duela.';
 $string['pen'] = 'Arkatza';
 $string['pluginname'] = 'PDF gaineko oharrak';

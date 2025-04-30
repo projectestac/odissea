@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataplus', language 'ar', version '4.1'.
+ * Strings for component 'dataplus', language 'ar', version '4.4'.
  *
  * @package     dataplus
  * @category    string
@@ -46,6 +46,8 @@ $string['field_boolean'] = 'صح/خطأ';
 $string['field_datetime'] = 'التاريخ / الوقت';
 $string['fieldname'] = 'اسم الحقل';
 $string['footer'] = 'تذييل الصفحة';
+$string['import'] = 'استيراد';
+$string['importcomplete'] = 'الاستيراد إكتمل. قاعدة البيانات متاحة للاستعمال.';
 $string['listperpage'] = 'عدد السجلات لكل صفحة';
 $string['navigationlimit_help'] = 'أقصى عدد من روابط التنقل التي يمكن إظهارها في العنوان أو التذييل في شاشة يتم توليدها عبر المعاينة.';
 $string['reserved'] = '{$a} هو اسم محجوز للحقل. يرجى استعمال اسم آخر.';

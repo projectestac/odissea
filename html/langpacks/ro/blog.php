@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ro', version '4.1'.
+ * Strings for component 'blog', language 'ro', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blog despre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Asociere';
 $string['associations'] = 'Asocieri';
 $string['associationunviewable'] = 'Această postare nu poate fi vizualizată de către alte persoane, până când un curs nu este asociat cu ea sau câmpul "Publică la" este schimbat';
+$string['author'] = 'Autor';
 $string['autotags'] = 'Adaugă aceste etichete';
 $string['autotags_help'] = 'Introduceţi unul sau mai multe tag-uri locale (separate prin virgule), care doriţi să fie adăugate în mod automat la fiecare intrare de blog, copiată de pe blog-ul extern în blog-ul dvs. local.';
 $string['backupblogshelp'] = 'Dacă este activat, blogurile vor fi incluse în copiile de siguranță automate ale SITE-ului';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blog despre aceasta {$a->type}';
 $string['blogaboutthiscourse'] = 'Adaugă o postare despre acest curs';
 $string['blogaboutthismodule'] = 'Adaugă un post despre acest {$a}';
 $string['blogadministration'] = 'Administrare blog';
+$string['blogattachment'] = 'Atașament pe blog';
 $string['blogdeleteconfirm'] = 'Ştergeți postarea \'{$a}\' de pe blog?';
 $string['blogdisable'] = 'Blogging-ul este dezactivat!';
 $string['blogentries'] = 'Postări blog';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Bloguri';
 $string['blogscourse'] = 'Blog-uri curs';
 $string['blogssite'] = 'Blog-uri site';
 $string['blogtags'] = 'Etichete blog';
+$string['cannoteditentryorblog'] = 'Nu poți edita acest articol sau acest blog';
 $string['cannotviewcourseblog'] = 'Nu aveți permisiunea necesară pentru a vedea bloguri în acest curs';
 $string['cannotviewcourseorgroupblog'] = 'Nu aveți permisiunea necesară pentru a vedea bloguri în acest curs/grup';
 $string['cannotviewsiteblog'] = 'Nu aveți permisiunea necesară pentru a vedea toate blogurile site-ului';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Descriere post';
 $string['entryerrornotyours'] = 'Acest post nu vă aparţine';
 $string['entrysaved'] = 'Articolul tău a fost salvat';
 $string['entrytitle'] = 'Titlu articol';
+$string['entrytitlewithlink'] = 'Titlul articolului cu link';
 $string['eventblogassociationadded'] = 'Asocierea blogului a fost creată';
 $string['eventblogassociationdeleted'] = 'Asocierea blogului a fost ștearsă';
 $string['eventblogentriesviewed'] = 'Postările pe blog au fost vizualizate';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'Tip filtru pe blog incorect specificat';
 $string['intro'] = 'Fluxul RSS a fost generat automat din unul sau mai multe bloguri';
 $string['invalidgroupid'] = 'ID grup invalid';
 $string['invalidurl'] = 'Acest URL este inaccesibil';
-$string['linktooriginalentry'] = 'Link către postarea originală pe blog';
+$string['linktooriginalentry'] = 'Articolul original de pe blog';
 $string['maxexternalblogsperuser'] = 'Numărul maxim de bloguri pentru utilizator';
 $string['myprofileuserblogs'] = 'Vezi toate postările de pe blog';
 $string['name'] = 'Nume';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'ID-ul utilizatorului care a adăugat 
 $string['privacy:metadata:post:usermodified'] = 'Utilizatorul care a modificat postarea ultima dată';
 $string['privacy:path:blogassociations'] = 'Postări de blog asociate';
 $string['privacy:unknown'] = 'Necunoscut';
+$string['published'] = 'Publicat';
 $string['publishto'] = 'Difuzează la';
 $string['publishto_help'] = 'Există 3 opţiuni:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'Există 3 opţiuni:
 $string['publishtocourse'] = 'Utilizatori care împart un curs cu time';
 $string['publishtocourseassoc'] = 'Membri ai cursului asociat';
 $string['publishtocourseassocparam'] = 'Membri ai {$a}';
+$string['publishtodraft'] = 'Draft';
 $string['publishtogroup'] = 'Utilizatori care împart un grup cu tine';
 $string['publishtogroupassoc'] = 'Membrii grupului tău în cursul asociat';
 $string['publishtogroupassocparam'] = 'Membrii grupului tău în {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'Vezi articolele';
 $string['viewuserentries'] = 'Vizualizează toate postările de către {$a}';
 $string['worldblogs'] = 'Utilizatorii din afara sitului pot citi doar postările care au fost setate să fie disponibile pentru utilizatorii din afara sitului';
 $string['wrongexternalid'] = 'Identificatorul blogului extern nu este corect';
-$string['wrongpostid'] = 'ID postare blog incorect';

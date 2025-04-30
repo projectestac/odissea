@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'eu', version '4.1'.
+ * Strings for component 'message', language 'eu', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Kontaktuak';
 $string['conversationactions'] = 'Elkarrizketarako ekintza-menua';
 $string['decline'] = 'Ez onartu';
 $string['defaultmessageoutputs'] = 'Jakinarazpenen ezarpenak';
-$string['defaults'] = 'Lehenetsitakoak';
 $string['deleteallconfirm'] = 'Ziur zaude elkarrizketa oso hau ezabatu nahi duzula? Honek ez die elkarrizketa beste partaideei ezabatuko.';
 $string['deleteallmessages'] = 'Ezabatu mezu guztiak';
 $string['deleteallselfconfirm'] = 'Ziur zaude elkarrizketa pertsonal hau guztiz ezabatu nahi duzula?';
@@ -97,11 +96,7 @@ $string['info'] = 'Erabiltzailearen informazioa';
 $string['isnotinyourcontacts'] = '{$a} ez dago zure kontaktuetan';
 $string['loadmore'] = 'Kargatu gehiago';
 $string['loggedin'] = 'On-line';
-$string['loggedin_help'] = 'Konfiguratu nola jaso nahi dituzun jakinarazpenak Moodlen on-line zaudenean';
-$string['loggedindescription'] = 'On-line nagoenean';
 $string['loggedoff'] = 'Lineaz kanpo';
-$string['loggedoff_help'] = 'Konfiguratu nola jaso nahi dituzun jakinarazpenak Moodlen on-line ez zaudenean';
-$string['loggedoffdescription'] = 'On-line ez nagoenean';
 $string['managemessageoutputs'] = 'Jakinarazpen-hobespen lehenetsiak';
 $string['message'] = 'Mezua';
 $string['messagecontactrequest'] = '{$a->user} erabiltzaileak kontaktu gisa gehitzea eskatzen ari da. Eskaerari erantzuteko joan zaitez zure <a href="{$a->url}">kontaktu-eskaeren orrira</a> .';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Mezua pertsona bati bidali zaio';
 $string['sendbulkmessagesingle'] = 'Bidali mezua pertsona bati';
 $string['sendcontactrequest'] = 'Bidali kontaktu-eskaria';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez';
 $string['sendingviaenabled'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez gaituta';
 $string['sendingvialocked'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez blokeatuta';
-$string['sendingviawhen'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez egoera {$a->state} denean';
 $string['sendmessage'] = 'Bidali mezua';
 $string['sendmessageto'] = 'Bidali mezua {$a}(e)ri';
 $string['sendmessagetopopup'] = 'Bidali mezua {$a}(e)ri - leiho berria';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'Ikusi jakinarazpen osoa';
 $string['viewmessageswith'] = 'Ikusi mezuak honekin: {$a}';
 $string['viewnotificationresource'] = 'Joan hona: {$a}';
 $string['viewunreadmessageswith'] = 'Ikusi irakurri gabeko mezuak honekin: {$a}';
+$string['waitingforcontactaccept'] = 'Kontaktu gisa gehitua izateko onarpenaren zain';
 $string['wouldliketocontactyou'] = 'Zurekin harremanetan jarri nahi luke';
 $string['writeamessage'] = 'Idatzi mezua...';
 $string['you'] = 'Zu:';

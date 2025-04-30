@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'fr', version '4.1'.
+ * Strings for component 'hvp', language 'fr', version '4.4'.
  *
  * @package     hvp
  * @category    string
@@ -167,7 +167,7 @@ $string['filetypenotallowed'] = 'Ce type de fichier n’est pas autorisé.';
 $string['finished'] = 'Terminé';
 $string['fullscreen'] = 'Plein écran';
 $string['gpl'] = 'General Public License v3';
-$string['gradetopassmustbeset'] = 'La note pour passer ne peut être de zéro car cette activité H5P  requiert l’obtention d’une note minimale de passage afin d’être marquée comme terminée. Veuillez indiquer une note supérieure à zéro.';
+$string['gradetopassmustbeset'] = 'La note pour passer ne peut être de zéro car cette activité H5P requiert l’obtention d’une note minimale de passage afin d’être marquée comme terminée. Veuillez indiquer une note supérieure à zéro.';
 $string['gradetopassnotset'] = 'Aucune note de passage n’a encore été fixée pour cette activité. Vous pouvez effectuer ce réglage dans la rubrique Notes des réglages de l’activité H5P.';
 $string['h5pfile'] = 'Fichier H5P';
 $string['h5ptitle'] = 'Visitez H5P.org pour consulter plus de contenus sympas.';
@@ -253,7 +253,7 @@ $string['maximumgrade'] = 'Note maximale';
 $string['maximumgradeerror'] = 'Veuillez entrer un entier positif valide pour définir le nombre de points maximum pour cette activité';
 $string['maxpostsizetoosmall'] = 'Votre variable PHP post_max_size est assez petite. Avec votre configuration actuelle, vous ne pouvez pas télécharger des fichiers de plus de {$a->%number} Mo. Cela peut être un problème lorsque vous essayez de télécharger des fichiers H5Ps, des images et des vidéos. Veuillez prévoir de l’augmenter à plus de 5 Mo';
 $string['maxscore'] = 'Score maximum';
-$string['maxuploadsizetoosmall'] = 'Votre variable PHP upload_max_filesize est assez petite. Avec votre configuration actuelle, vous ne pouvez pas télécharger des fichiers de plus de {$a->%number} Mo. Cela peut être un problème lorsque vous essayez de télécharger des fichiers H5Ps, des images et des vidéos. Veuillez prévoir de l’augmenter à plus de 5 Mo.';
+$string['maxuploadsizetoosmall'] = 'Votre variable PHP upload_max_filesize est assez petite. Avec votre configuration actuelle, vous ne pouvez pas déposer des fichiers de plus de {$a->%number} Mo. Cela peut être un problème lorsque vous essayez de déposer des fichiers H5Ps, des images et des vidéos. Veuillez prévoir de l’augmenter à plus de 5 Mo.';
 $string['messageprovider:confirmation'] = 'Confirmation de vos soumissions H5P';
 $string['messageprovider:submission'] = 'Notifications des soumissions H5P';
 $string['missingcontentfolder'] = 'Il manque un dossier de contenu valide';

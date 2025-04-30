@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_helixassign', language 'en', version '4.1'.
+ * Strings for component 'assignsubmission_helixassign', language 'en', version '4.4'.
  *
  * @package     assignsubmission_helixassign
  * @category    string
@@ -43,6 +43,7 @@ $string['nopermission'] = 'You do not have permission to use Video Assignments';
 $string['nosubmission'] = 'Nothing has been submitted to MEDIAL for this assignment';
 $string['nosubmissionshort'] = 'No MEDIAL submission';
 $string['pluginname'] = 'MEDIAL Assignment';
+$string['privacy:metadata'] = 'Plugin does not store any personal data.';
 $string['version_warning_head'] = 'WARNING';
 $string['version_warning_mes'] = 'The MEDIAL submission plugin requires you to have the MEDIAL Activity module version';
 $string['version_warning_mes2'] = 'installed on your moodle system.';

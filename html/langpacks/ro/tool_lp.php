@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ro', version '4.1'.
+ * Strings for component 'tool_lp', language 'ro', version '4.4'.
  *
  * @package     tool_lp
  * @category    string
@@ -115,8 +115,8 @@ $string['hiddenhint'] = '(ascuns)';
 $string['idnumber'] = 'Număr ID';
 $string['inheritfromframework'] = 'Moștenit din cadrul competențelor (implicit)';
 $string['itemstoadd'] = 'Elemente de adăugat';
-$string['jumptocompetency'] = 'Salt la competență';
-$string['jumptouser'] = 'Salt la utilizator';
+$string['jumptocompetency'] = 'Sari la competență';
+$string['jumptouser'] = 'Sari la utilizator';
 $string['learningplancompetencies'] = 'Competențele planului de învățare';
 $string['learningplans'] = 'Planuri de învățare';
 $string['levela'] = 'Nivel {$a}';

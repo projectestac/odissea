@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'zh_cn', version '4.1'.
+ * Strings for component 'grading', language 'zh_cn', version '4.4'.
  *
  * @package     grading
  * @category    string
@@ -86,7 +86,7 @@ $string['searchtemplate_help'] = '您可以在此处搜索评分表，并将其�
 
 默认情况下，搜索结果中仅包含已另存为共享模板的评分表单。您还可以在搜索结果中包含所有您自己的评分表单。这样，您可以简单地重复使用您的评分表，而无需共享它们。只有标记为“可供使用”的表单才能以这种方式重复使用。';
 $string['statusdraft'] = '草稿';
-$string['statusready'] = '可以使用';
+$string['statusready'] = '就绪';
 $string['templatedelete'] = '删除';
 $string['templatedeleteconfirm'] = '您将要删除已分享的模板“{$a}”。删除模板不会影响已通过它生成的评分表。';
 $string['templateedit'] = '编辑';

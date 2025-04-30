@@ -32,7 +32,7 @@ use stdClass;
  * @author     Safat Shahin <safatshahin@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class comment_created_deleted_test extends advanced_testcase {
+final class comment_created_deleted_test extends advanced_testcase {
 
     /** @var stdClass Keeps course object */
     private $course;
@@ -91,7 +91,7 @@ class comment_created_deleted_test extends advanced_testcase {
     /**
      * Test comment_created event.
      */
-    public function test_comment_created() {
+    public function test_comment_created(): void {
         // Triggering and capturing the event.
         $sink = $this->redirectEvents();
         $this->comment->add('New comment');
@@ -109,7 +109,7 @@ class comment_created_deleted_test extends advanced_testcase {
     /**
      * Test comment_created event.
      */
-    public function test_comment_deleted() {
+    public function test_comment_deleted(): void {
         // Triggering and capturing the event.
         $newcomment = $this->comment->add('New comment to delete');
         $sink = $this->redirectEvents();

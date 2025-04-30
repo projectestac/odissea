@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'eu', version '4.1'.
+ * Strings for component 'question', language 'eu', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -176,6 +176,8 @@ $string['errorprocessingresponses'] = 'Errorea gertatu da zure erantzunak prozes
 $string['errorsavingcomment'] = 'Eorrea datu-basean {$a->name} galderaren iruzkina gordetzean.';
 $string['errorsavingflags'] = 'Errorea markaren egoera gordetzean.';
 $string['errorupdatingattempt'] = 'Eorrea datu-basean {$a->id} saiakera eguneratzean.';
+$string['eventqbankdisabled'] = 'Galdera-bankuko plugina desgaituta';
+$string['eventqbankenabled'] = 'Galdera-bankuko plugina gaituta';
 $string['eventquestioncategorycreated'] = 'Galdera-kategoria sortu da';
 $string['eventquestioncategorydeleted'] = 'Galdera-kategoria ezabatu da';
 $string['eventquestioncategorymoved'] = 'Galdera-kategoria mugitu da';
@@ -265,6 +267,7 @@ $string['invalidcategoryidtomove'] = 'Mugitzeko kategoriaren IDak ez du balio!';
 $string['invalidconfirm'] = 'Egiaztatze-katea ez da egokia';
 $string['invalidcontextinhasanyquestions'] = 'Testuinguru baliogabea hona pasa da: question_context_has_any_questions.';
 $string['invalidgrade'] = 'Kalifikazioak ({$a}) ez datoz bat kalifikazio aukerekin - galdera saihestu da.';
+$string['invalidgradequestion'] = 'Kalifikazioak ({$a->grades}) ez datoz bat kalifikazio-aukerekin - \'{$a->question}\' galdera saltatu da.';
 $string['invalidpenalty'] = 'Penalizazioa ez da baliagarria';
 $string['invalidwizardpage'] = 'Orria ez da egokia edo ez dago ondo zehaztuta!';
 $string['lastmodifiedby'] = 'Nork aldatua azkenengoz';
@@ -308,6 +311,7 @@ $string['movingquestionsandfiles'] = 'Ziur zaude {$a->questions} galdera(k) <str
 $string['movingquestionsnofiles'] = 'Ziur zaude {$a->questions} galdera(k) <strong>"{$a->tocontext}"</strong> kontestura mugitu nahi d(it)uzula?<br /> Ez dago galdera hauetatik/honetatik lotutako <strong>inongo fitxategirik</strong> {$a->fromareaname}-n.';
 $string['needtochoosecat'] = 'Galdera hau mugitzeko kategoria bat aukeratu behar duzu; bestela, egin klik \'utzi\' botoian.';
 $string['nocate'] = 'Ez da kategoria existitzen {$a}!';
+$string['noconditionspecified'] = 'Zehaztu ezazu baldintza bat, mesedez';
 $string['nopermissionadd'] = 'Ez duzu baimenik hemen galderarik gaineratzeko.';
 $string['nopermissionedit'] = 'Ez duzu hemendik galderak editatzeko baimenak.';
 $string['nopermissionmove'] = 'Ez duzu baimenik galderak hemendik mugitzeko. Galdera kategoria honetan gorde behar duzu edo galdera berri gisa gorde.';
@@ -322,7 +326,6 @@ $string['notchanged'] = 'Aldaketarik ez azken saiakeratik';
 $string['notenoughanswers'] = 'Galdera mota honek gutxienez {$a} erantzun behar ditu';
 $string['notenoughdatatoeditaquestion'] = 'Ez da galderaren, kategoriaren eta galdera motaren id-a zehaztu.';
 $string['notenoughdatatomovequestions'] = 'Mugitu nahi dituzun galderen ida-ak eman behar dituzu.';
-$string['notflagged'] = 'Markatu gabea';
 $string['notgraded'] = 'Kalifikatu gabea';
 $string['notshown'] = 'Ez da erakusten';
 $string['notyetanswered'] = 'Erantzun gabea';
@@ -414,7 +417,7 @@ $string['questionpreviewdefaults'] = 'Galderak aurreikusteko lehenetsitako balio
 $string['questionpreviewdefaults_desc'] = 'Lehenetsitako balio hauek erabiltzaile batek galdera bat lehenengo aldiz aurreikusten duenean erabiltzen dira. Behin erabiltzaileak galdera aurreikusi duenean bere hobespenak erabiltzaile-hobespenetan gordeko dira.';
 $string['questions'] = 'Galderak';
 $string['questionsaveerror'] = 'Erroreak gertatu dira galdera gordetzean - ({$a})';
-$string['questionsinuse'] = '\'*\' izartxoaz markatutako galderak ezin dira ezabatu dagoeneko nonbait erabiltzen direlako. Ondorioz, ezabatu ordez ezkutatuko dira eta soilik \'Erakutsi galdera zaharrak\' aukeratzen duzunean erakutsiko dira.';
+$string['questionsinuse'] = '\'*\' izartxoaz markatutako galderak ezin dira ezabatu dagoeneko nonbait erabiltzen direlako. Ondorioz, ezabatu ordez ezkutatuko dira eta soilik \'Erakutsi ezkutatutako galderak\' ezarpenean \'Bai\' aukeratzen duzunean erakutsiko dira.';
 $string['questionsmovedto'] = 'Oraindik erabiltzen ari diren galderak  \'{$a}\'-ra mugitzen goragoko ikastaro-kategorian.';
 $string['questionsrescuedfrom'] = 'Galderak gordeta {$a} testuingurutik';
 $string['questionsrescuedfrominfo'] = 'Galdera hauek (batzuk ezkutuan egon daitezke) gorde egin ziren {$a} testuingurua ezabatu zenean, oraindik ere hainbat galdetegitan edo bestelako jardueratan erabili egiten direlako.';
@@ -427,7 +430,7 @@ $string['questionx'] = '{$a}. galdera';
 $string['requiresgrading'] = 'Kalifikazioa behar du';
 $string['responsehistory'] = 'Erantzunen historia';
 $string['restart'] = 'Hasi berriro';
-$string['restartwiththeseoptions'] = 'Hasi berriro aukera hauekin';
+$string['restartwiththeseoptions'] = 'Gorde aurrebista aukerak eta hasi berriro';
 $string['restoremultipletopcats'] = 'Segurtasun-kopia fitxategiak {$a} testuinguruko maila goreneko galdera-kategoria bat baino gehiago dauka.';
 $string['reviewresponse'] = 'Berrikusi erantzuna';
 $string['rightanswer'] = 'Erantzun zuzena';
@@ -442,7 +445,9 @@ $string['selectcategoryabove'] = 'Aukeratu goiko kategoria bat';
 $string['selectquestionsforbulk'] = 'Aukeratu galderak eragiketa masiboetarako';
 $string['settingsformultipletries'] = 'Saiakera anizkoitzak';
 $string['shareincontext'] = 'Partekatu {$a}-rentzat testuinguruan.';
-$string['showhidden'] = 'Erakutsi galdera zaharrak ere';
+$string['shortversioninfo'] = '{$a->version}. bertsioa ({$a->latestversion}-(e)tik)';
+$string['shortversioninfolatest'] = '{$a->version}. bertsioa (azkena)';
+$string['showhidden'] = 'Erakutsi ezkutatutako galderak';
 $string['showmarkandmax'] = 'Erakutsi puntuazioa eta gehienekoa';
 $string['showmaxmarkonly'] = 'Erakutsi gehieneko puntuazioa soilik';
 $string['shown'] = 'Erakutsia';
@@ -494,6 +499,8 @@ $string['upgradeproblemcategoryloop'] = 'Galdera-kategoriak eguneratzean arazo b
 $string['upgradeproblemcouldnotupdatecategory'] = 'Ezin da ondoko galdera-kategoria eguneratu: {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Arazoa atzemena da galdera-kategoriak eguneratzean. {$a->id} kategoria  {$a->parent} goragoko kategoriari dagokio eta ez da existitzen. Arazoa konpontzeko, goragoko kategoria aldatu egin da.';
 $string['version_selection'] = '{$a->version}. bertsioa';
+$string['versioninfo'] = '{$a->version}.bertsioa ({$a->latestversion}-(e)tik)';
+$string['versioninfolatest'] = '{$a->version}.bertsioa (azkena)';
 $string['whethercorrect'] = 'Zuzena den ala ez';
 $string['whethercorrect_help'] = 'Honek \'Ondo\', \'Partzialki zuzena\' eta \'Gaizki\'-ren deskribapenak barne hartzen ditu, baita informazio hori ematen duen kolorezko edozein nabarmentze.';
 $string['whichtries'] = 'Zein saiakera';

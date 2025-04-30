@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_helixassign', language 'eu', version '4.1'.
+ * Strings for component 'assignsubmission_helixassign', language 'eu', version '4.4'.
  *
  * @package     assignsubmission_helixassign
  * @category    string
@@ -43,6 +43,7 @@ $string['nopermission'] = 'Ez duzu MEDIAL Bideo Zereginak erabiltzeko baimenik';
 $string['nosubmission'] = 'Ez da ezer bidali MEDIALera zeregin honetarako';
 $string['nosubmissionshort'] = 'MEDIAL bidalketarik ez';
 $string['pluginname'] = 'MEDIAL Zeregina';
+$string['privacy:metadata'] = 'MEDIAL Zeregina pluginak ez du datu pertsonalik biltzen.';
 $string['version_warning_head'] = 'KONTUZ';
 $string['version_warning_mes'] = 'MEDIAL bidalketa pluginak MEDIAL jarduera moduluaren';
 $string['version_warning_mes2'] = 'bertsioa zure Moodle sisteman instalatuta izatea behar du.';

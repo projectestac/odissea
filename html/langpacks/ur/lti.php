@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ur', version '4.1'.
+ * Strings for component 'lti', language 'ur', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -80,10 +80,8 @@ $string['configtoolurl'] = 'طے شدہ بعید ٹول یو آر ایل';
 $string['configtypes'] = 'LTI ایپلیکیشنز کو فعال کریں';
 $string['configured'] = 'تشکیل شدہ';
 $string['confirmtoolactivation'] = 'کیا آپ واقعی اس ٹول کو چالو کرنا چاہیں گے؟';
-$string['contentitem'] = 'مواد-آئٹم کا پیغام';
 $string['contentitem_deeplinking'] = 'ڈیپ لنکنگ کی حمایت کرتا ہے (مواد-آئٹم پیغام)';
 $string['contentitem_deeplinking_help'] = 'اگر ٹک کیا جاتا ہے تو، بیرونی ٹول کو شامل کرتے وقت \'مواد منتخب کریں\' کا آپشن دستیاب ہوگا۔';
-$string['contentitem_help'] = 'اگر ٹک کیا جاتا ہے تو، بیرونی ٹول کو شامل کرتے وقت \'مواد منتخب کریں\' کا آپشن دستیاب ہوگا۔';
 $string['contentitem_multiple_description'] = 'آپ کے کورس میں درج ذیل آئٹمز شامل کیے جائیں گے:';
 $string['contentitem_multiple_graded'] = 'درجہ بندی کی سرگرمی (زیادہ سے زیادہ گریڈ: {$a})';
 $string['course_tool_types'] = 'کورس ٹولز';
@@ -191,7 +189,6 @@ $string['launch_url_help'] = 'ٹول کا یو آر ایل بیرونی ٹول �
 $string['launchinpopup'] = 'کنٹینر لانچ کریں';
 $string['launchinpopup_help'] = 'کورس سے لانچ ہونے پر لانچ کنٹینر ٹول کے ڈسپلے کو متاثر کرتا ہے۔ کچھ لانچ کنٹینرز ٹول کو زیادہ اسکرین رئیل اسٹیٹ فراہم کرتے ہیں، اور دوسرے Moodle ماحول کے ساتھ زیادہ مربوط احساس فراہم کرتے ہیں۔ * **ڈیفالٹ** - ٹول کنفیگریشن کے ذریعہ مخصوص لانچ کنٹینر استعمال کریں۔ * **ایمبیڈ** - یہ ٹول موجودہ موڈل ونڈو کے اندر ظاہر ہوتا ہے، اسی طرح دیگر سرگرمیوں کی اقسام کی طرح۔ * **ایمبیڈ کریں، بغیر بلاکس** - ٹول موجودہ موڈل ونڈو کے اندر ظاہر ہوتا ہے، صرف صفحہ کے اوپری حصے میں نیویگیشن کنٹرولز کے ساتھ۔ * **نئی ونڈو** - ٹول ایک نئی ونڈو میں کھلتا ہے، تمام دستیاب جگہ پر قبضہ کرتا ہے۔ براؤزر پر منحصر ہے، یہ ایک نئے ٹیب یا پاپ اپ ونڈو میں کھلے گا۔ یہ ممکن ہے کہ براؤزر نئی ونڈو کو کھلنے سے روک دیں۔';
 $string['launchoptions'] = 'لانچ کے اختیارات';
-$string['leaveblank'] = 'اگر آپ کو ان کی ضرورت نہیں ہے تو خالی چھوڑ دیں';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'کورس کے لیے مخصوص ٹول کنفیگریشنز شامل کریں';
 $string['lti:addinstance'] = 'ایک نیا بیرونی ٹول شامل کریں';

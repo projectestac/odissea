@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'zh_cn', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,14 @@ $string['addcategory'] = '增加类别';
 $string['addnewdefaults'] = '添加一个新的默认模块';
 $string['addpurpose'] = '‎添加用途‎';
 $string['addroleoverride'] = '‎添加角色覆盖‎';
+$string['allowfiltering'] = '允许按课程筛选导出';
+$string['allowfiltering_desc'] = '如果启用，隐私官可以选择从选定课程导出用户数据，而不是从所有课程导出用户数据。当启用此功能时，
+导出请求将从“Pending”开始，并且只有在后台任务完成后才能批准。';
 $string['approve'] = '‎批准‎';
 $string['approvedrequestsubmitted'] = '您的请求已提交，将很快处理。';
 $string['approverequest'] = '‎批准请求‎';
+$string['approverequestall'] = '批准请求（所有数据）';
+$string['approveselectedcourses'] = '批准选定课程';
 $string['automaticdatadeletionapproval'] = '自动数据删除请求批准';
 $string['automaticdatadeletionapproval_desc'] = '如果启用，数据删除请求将自动批准。<br />注意，自动批准只适用于启用此设置的新数据删除请求。现有的数据删除请求仍需通过隐私官的手动批准。';
 $string['automaticdataexportapproval'] = '自动数据导出请求批准';
@@ -149,6 +154,7 @@ $string['errorinvalidrequeststatus'] = '无效的请求状态！';
 $string['errorinvalidrequesttype'] = '无效的请求类型！';
 $string['errornocapabilitytorequestforothers'] = '用户 {$a->requestedby}不具备代表用户 {$a->userid} 提出数据请求的能力';
 $string['errornoexpiredcontexts'] = '没有需要处理的过期场景';
+$string['errornoselectedcourse'] = '您必须选择至少一门课程';
 $string['errorrequestalreadyexists'] = '您已经有一个正在进行的请求。';
 $string['errorrequestnotfound'] = '请求未找到';
 $string['errorrequestnotwaitingforapproval'] = '请求未等待批准。它要么还没有准备好，要么已经被处理了。';
@@ -163,6 +169,7 @@ $string['expiry'] = '过期';
 $string['explanationtitle'] = '本页使用的图标及其含义。';
 $string['external'] = '额外的';
 $string['externalexplanation'] = '一个额外的插件安装在这个网站上。';
+$string['filterexportdata'] = '批准申请（来自所选课程的数据）';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = '首页课程';
 $string['gdpr_art_6_1_a_description'] = '数据主体已同意为一个或多个特定用途而处理其个人数据';
@@ -220,6 +227,7 @@ $string['noassignedroles'] = '此场景没有分配角色';
 $string['noblockstoload'] = '没有版块';
 $string['nocategories'] = '还没有类别';
 $string['nocoursestoload'] = '没有活动';
+$string['nocoursetofilter'] = '用户没有注册要选择的任何课程';
 $string['nodatarequests'] = '没有数据请求';
 $string['nodatarequestsmatchingfilter'] = '没有匹配给定筛选器的数据请求';
 $string['noexpiredcontexts'] = '此场景级别没有已过期的数据。';
@@ -237,6 +245,8 @@ $string['pluginregistrytitle'] = '插件隐私合规注册表';
 $string['privacy'] = '隐私';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = '当前应用于数据请求页面的过滤器。';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = '用户希望在一个页面上看到的数据请求数量';
+$string['privacy:metadata:purpose'] = '来自本网站数据用途的信息。';
+$string['privacy:metadata:purpose:usermodified'] = '修改用途的用户ID';
 $string['privacy:metadata:request'] = '为本网站而提出的个人数据请求(主体账号及删除请求)的信息。';
 $string['privacy:metadata:request:comments'] = '任何与请求相关的用户评论。';
 $string['privacy:metadata:request:dpocomment'] = '本网站的隐私专员对有关请求所作的任何评论。';
@@ -279,8 +289,9 @@ $string['requesttype_help'] = '选择一个您联系隐私专员的理由。请�
 $string['requesttypedelete'] = '删除我所有的个人数据';
 $string['requesttypedeleteshort'] = '删除';
 $string['requesttypeexport'] = '导出我所有的个人数据';
+$string['requesttypeexportallowfiltering'] = '导出我的个人资料';
 $string['requesttypeexportshort'] = '导出';
-$string['requesttypeothers'] = '一般询盘';
+$string['requesttypeothers'] = '一般查询';
 $string['requesttypeothersshort'] = '消息';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
 $string['requireallenddatesforuserdeletion'] = '认为没有结束日期的课程是活跃的';
@@ -303,6 +314,7 @@ $string['roleoverride'] = '角色覆盖';
 $string['roleoverrideoverview'] = '可以为特定的用户角色重写默认的保留政策，从而允许您指定更长或更短的保留政策。只有当用户的所有角色都已过期时，该用户才会过期。';
 $string['roleoverrides'] = '角色覆盖';
 $string['selectbulkaction'] = '请选择一个批量操作。';
+$string['selectcourses'] = '选择要导出的课程';
 $string['selectdatarequests'] = '请选择数据请求。';
 $string['selectuserdatarequest'] = '选择{$a->username}的{$a->requesttype}数据请求。';
 $string['send'] = '发送';
@@ -319,6 +331,7 @@ $string['statusdeleted'] = '删除';
 $string['statusdetail'] = '状态：';
 $string['statusexpired'] = '已过期';
 $string['statuspending'] = '待定中';
+$string['statuspreprocessing'] = '预处理中';
 $string['statusprocessing'] = '处理中';
 $string['statusready'] = '下载好了';
 $string['statusrejected'] = '被拒绝';

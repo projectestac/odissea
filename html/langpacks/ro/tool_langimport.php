@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ro', version '4.1'.
+ * Strings for component 'tool_langimport', language 'ro', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'Actualizarea modulului de localizare a fost fin
 $string['missingcfglangotherroot'] = 'Valoarea configurației lipsește $CFG->langotherroot';
 $string['missinglangparent'] = 'Limba părinte lipsește <em> {$a->parent} </em> din <em> {$a->lang} </em>.';
 $string['noenglishuninstall'] = 'Pachetul în limba engleză nu poate fi dezinstalat.';
+$string['noenglishuninstalltitle'] = 'Nu se poate dezinstala';
 $string['nolangupdateneeded'] = 'Toate versiunile localizate sunt la zi, nu este nevoie de actualizare';
 $string['pluginname'] = 'Pachete de limbă';
 $string['privacy:metadata'] = 'Pluginul Language Packs nu stochează date personale.';

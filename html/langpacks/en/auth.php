@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'en', version '4.1'.
+ * Strings for component 'auth', language 'en', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = 'Change password help';
 $string['auth_changepasswordhelp_expl'] = 'Display lost password help to users who have lost their {$a} password. This will be displayed either as well as or instead of the <strong>Change Password URL</strong> or Internal Moodle password change.';
 $string['auth_changepasswordurl'] = 'Change password URL';
 $string['auth_changepasswordurl_expl'] = 'Specify the url to send users who have lost their {$a} password. Set <strong>Use standard Change Password page</strong> to <strong>No</strong>.';
-$string['auth_changingemailaddress'] = 'You have requested a change of email address, from {$a->oldemail} to {$a->newemail}. For security reasons, we are sending you an email message at the new address to confirm that it belongs to you. Your email address will be updated as soon as you open the URL sent to you in that message.';
+$string['auth_changingemailaddress'] = 'You requested a change of email address, from {$a->oldemail} to {$a->newemail}. For security reasons, we are sending you a message to your new address to confirm that it belongs to you. Your email address will be updated as soon as you open the URL sent to you in the message. The confirmation link will expire in 10 minutes.';
 $string['auth_common_settings'] = 'Common settings';
 $string['auth_data_mapping'] = 'Data mapping';
 $string['auth_fieldlock'] = 'Lock value';
@@ -44,6 +44,10 @@ $string['auth_fieldlocks'] = 'Lock user fields';
 $string['auth_fieldlocks_help'] = '<p>You can lock user data fields. This is useful for sites where the user data is maintained by the administrators manually by editing user records or uploading using the \'Upload users\' facility. If you are locking fields that are required by Moodle, make sure that you provide that data when creating user accounts or the accounts will be unusable.</p><p>Consider setting the lock mode to \'Unlocked if empty\' to avoid this problem.</p>';
 $string['auth_fieldmapping'] = 'Data mapping ({$a})';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
+$string['auth_loginpasswordtoggle'] = 'Password visibility toggle';
+$string['auth_loginpasswordtoggle_desc'] = 'Add an icon to the password field on the login screen that allows users to show or hide their entered password.';
+$string['auth_loginrecaptcha'] = 'Enable reCAPTCHA for login';
+$string['auth_loginrecaptcha_desc'] = 'Add a visual/audio confirmation form element to the login page. This reduces the risk of unwarranted login attempts. See <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> for more details.';
 $string['auth_multiplehosts'] = 'Multiple hosts OR addresses can be specified (eg host1.com;host2.com;host3.com) or (eg xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'The authentication method {$a} is not configured.';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';
@@ -89,6 +93,7 @@ $string['emailupdatemessage'] = 'Dear {$a->fullname},
 You have requested a change of your email address for your account on {$a->site}. To confirm this change, please go to the following web address:
 
 {$a->url}
+The confirmation link will expire in <b>10 minutes</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Email address of user <em>{$a->fullname}</em> was successfully updated to <em>{$a->email}</em>.';

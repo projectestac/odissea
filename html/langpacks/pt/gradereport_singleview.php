@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'pt', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'pt', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Remover substituições';
 $string['save'] = 'Guardar';
 $string['savegrades'] = 'A guardar notas';
 $string['savegradessuccess'] = 'As notas foram definidas para {$a} itens';
-$string['searchgrades'] = 'Procurar itens de avaliação';
 $string['selectagrade'] = 'Selecione o item de avaliação';
 $string['selectgradeitemlink'] = 'Selecione o item de avaliação';
 $string['singleview:view'] = 'Ver Vista simples';
 $string['singleviewdescription'] = 'Na Vista simples, pode substituir ou excluir notas selecionadas e inserir notas em massa.';
+$string['singleviewreport_gradeitem'] = 'Vista simples deste item';
+$string['singleviewreport_user'] = 'Vista simples deste utilizador';
 $string['summarygrade'] = 'Uma tabela de utilizadores, com colunas para intervalo, nota, comentários e para ajustar ou excluir uma nota em particular.';
 $string['summaryuser'] = 'Uma tabela de itens de avaliação, com colunas para categoria de nota, intervalo, nota, comentários e para ajustar ou excluir uma nota em particular.';
 $string['unsavedataalert'] = 'Se existirem alterações não guardadas na página, perderá estas alterações se prosseguir com a inserção de notas em massa.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Aviso de dados não guardados';
 $string['userselect'] = 'Selecione uma atividade';
 $string['viewby'] = 'Visualizar por';
 $string['viewsinglegradeitem'] = 'Selecione um item de avaliação acima';
-$string['viewsingleuser'] = 'Selecione um utilizador acima para ver todas as notas respetivas';
+$string['viewsingleuser'] = 'Procure um utilizador para ver as respetivas notas';
 $string['viewsingleuserorgradeitem'] = 'Ver todas as notas de um utilizador ou de um item de avaliação.';

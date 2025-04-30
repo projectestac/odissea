@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ko', version '4.1'.
+ * Strings for component 'page', language 'ko', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -51,8 +51,6 @@ $string['popupheight'] = '팝업창 높이(픽셀)';
 $string['popupheightexplain'] = '팝업창의 기본 높이를 지정';
 $string['popupwidth'] = '팝업창 폭(픽셀)';
 $string['popupwidthexplain'] = '팝업창의 기본 너비를 지정';
-$string['printheading'] = '웹페이지 이름 표시';
-$string['printheadingexplain'] = '내용 상단에 웹페이지 이름을 표시할 것인가?';
 $string['printintro'] = '웹 페이지 설명 표시';
 $string['printintroexplain'] = '내용 상단에 웹페이지에 대한 설명을 표시할 것인가?';
 $string['search:activity'] = '웹페이지';

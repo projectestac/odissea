@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', version '4.1'.
+ * Strings for component 'resource', language 'nl', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = 'Voeg een nieuwe bron toe';
 $string['resource:exportresource'] = 'Bron exporteren';
 $string['resource:view'] = 'Bron bekijken';
 $string['resourcecontent'] = 'Bestanden en submappen';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Bestand';
 $string['selectmainfile'] = 'Kies het hoofdbestand door op het icoontje naast de bestandsnaam te klikken.';
 $string['showdate'] = 'Toon de upload- / wijzigtijd';

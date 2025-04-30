@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ja', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'ja', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'システムアカウントに接続する';
 $string['createfromtemplate'] = 'テンプレートからOAuth 2サービスを作成する';
 $string['createfromtemplatedesc'] = '既知のサービスタイプの1つが有効に設定されたOAuthサービスを作成するため、以下のOAuth 2サービスの1つを選択してください。これで認証に要求される正しいエンドポイントおよびパラメータすべてが設定されたOAuth 2サービスが作成されます。あなたが新しいサービスを使用するためにはクライアントIDおよび秘密鍵を入力する必要があります。';
 $string['createnewendpoint'] = 'イシュア「 {$a} 」の新しいエンドポイントを作成する';
-$string['createnewfacebookissuer'] = '新しいFacebookサービスを作成する';
-$string['createnewgoogleissuer'] = '新しいGoogleサービスを作成する';
-$string['createnewissuer'] = '新しいカスタムサービスを作成する';
-$string['createnewmicrosoftissuer'] = '新しいMicrosoftサービスを作成する';
-$string['createnewnextcloudissuer'] = '新しいNextcloudサービスを作成する';
 $string['createnewservice'] = '新しいサービスを作成する:';
 $string['createnewuserfieldmapping'] = 'イシュア「 {$a} 」の新しいユーザフィールドマッピングを作成する';
 $string['custom_service'] = 'カスタム';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = '以下のログインページに表示する';
 $string['loginissuer'] = 'ログイン許可';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = '未設定';
 $string['notdiscovered'] = 'サービスディスカバリ不成功';

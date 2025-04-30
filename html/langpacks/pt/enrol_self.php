@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'pt', version '4.1'.
+ * Strings for component 'enrol_self', language 'pt', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Apenas membros do Grupo global';
 $string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um Grupo global específico. Tenha em atenção que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
 $string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende apagar essas inscrições do utilizador?';
 $string['customwelcomemessage'] = 'Mensagem de boas-vindas personalizada';
-$string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou autoformatação-Moodle, incluindo código HTML e tags multilingues .
-
-Os seguintes espaços reservados podem ser incluídos na mensagem:
-
-* Nome da disciplina {$a->coursename}
-* Hiperligação para a página de perfil do utilizador {$a->profileurl}
-* E-mail do utilizador {$a->email}
-* Nome completo do utilizador {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Formatos aceites: Texto simples ou Autoformatação Moodle. Tags HTML e tags multilingues também são aceites, bem como os seguintes espaços reservados:
+<ul>
+<li>Nome da disciplina {$a->coursename}</li>
+<li>Hiperligação para a página de perfil do utilizador {$a->profileurl}</li>
+<li>E-mail do utilizador {$a->email}</li>
+<li>Nome completo do utilizador {$a->fullname}</li>
+<li>Nome do utilizador {$a->firstname}</li>
+<li>Apelido do utilizador {$a->lastname}</li>
+<li>Papel do utilizador na disciplina {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Atribuição de papel predefinido';
 $string['defaultrole_desc'] = 'Selecione o papel que deve ser atribuído aos utilizadores durante a autoinscrição.';
 $string['deleteselectedusers'] = 'Apagar inscrição dos utilizadores selecionados';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Data de início';
 $string['enrolstartdate_help'] = 'Se ativar esta opção, os utilizadores podem autoinscrever-se apenas a partir desta data.';
 $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Tenha em atenção que alguns dados e configurações do utilizador são eliminados da disciplina durante o cancelamento da inscrição na disciplina.';
+$string['expiryinactivemessageenrolledbody'] = 'Olá {$a->user},
+
+A sua inscrição na disciplina {$a->course} expira {$a->timeend} uma vez que não acedeu à disciplina nos últimos {$a->inactivetime} dias.
+
+Para manter a sua inscrição ativa, basta autenticar-se e aceder à disciplina <a href="{$a->url}">{$a->course}</a> antes de {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'A sua inscrição está a expirar: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 
 Esta é uma notificação a informar que a sua inscrição na disciplina \'{$a->course}\' expira em {$a->timeend}.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', version '4.1'.
+ * Strings for component 'block_rss_client', language 'de', version '4.4'.
  *
  * @package     block_rss_client
  * @category    string
@@ -60,7 +60,7 @@ $string['feedsconfigurenewinstance2'] = 'Um den Block \'RSS Feeds\' zu konfiguri
 $string['feedupdated'] = 'RSS Feed aktualisiert';
 $string['feedurl'] = 'URL des RSS Feed';
 $string['findmorefeeds'] = 'Weitere RSS Feeds suchen';
-$string['managefeeds'] = 'Meine RSS Feeds verwalten';
+$string['managefeeds'] = 'RSS Feeds verwalten';
 $string['nofeeds'] = 'Es sind keine RSS Feeds für diese Seite definiert.';
 $string['numentries'] = 'Einträge pro RSS Feed';
 $string['pickfeed'] = 'RSS Feed auswählen';
@@ -90,5 +90,5 @@ $string['submitters2'] = 'Bereitsteller/innen für RSS-Feeds';
 $string['timeout'] = 'Zeitdauer (in Minuten), bevor ein RSS Feed im Cache ungültig wird. Dieser Wert legt die minimale Zeit fest. Der RSS-Feed wird im Cache aktualisiert, sobald der dann nachfolgende Cronjob abläuft. Empfohlen ist ein Wert von minimal 30 Minuten.';
 $string['timeout2'] = 'Timeout';
 $string['timeoutdesc'] = 'Zeitdauer für RSS Feeds (in Minuten)';
-$string['updatefeed'] = 'URL für RSS Feed ändern';
+$string['updatefeed'] = 'URL für RSS Feed aktualisieren';
 $string['viewfeed'] = 'RSS Feed anzeigen';

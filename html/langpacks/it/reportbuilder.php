@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'it', version '4.1'.
+ * Strings for component 'reportbuilder', language 'it', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} più {$a->morecount} alt
 $string['audiencenotsaved'] = 'L\'audience non è stata salvata';
 $string['audiencesaved'] = 'L\'audience è stata salvata';
 $string['audienceupdated'] = 'Audience aggiornata';
+$string['audienceusedbyschedule'] = 'Questa audience è utilizzata in una pianificazione di questo report';
 $string['cardview'] = 'Visualizzazione a schede';
 $string['cardview_help'] = 'La visualizzazione a schede consente di impostare l\'impaginazione del report per la visualizzazione su dispositivi con schermo ridotto. Le colonne saranno ridotte al di sopra del limite configurato, con un pulsante per espandere la visualizzazione di tutte le colonne.';
 $string['cardviewfirstcolumntitle'] = 'Titolo della prima colonna';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Codice identificativo del corso con colleg
 $string['courseselect'] = 'Seleziona corso';
 $string['courseshortnamewithlink'] = 'Titolo abbreviato del corso con collegamento';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Report personalizzato';
 $string['customreports'] = 'Report personalizzati';
 $string['customreportslimit'] = 'Limite report personalizzati';
 $string['customreportslimit_desc'] = 'È possibile limitare il numero massimo di report personalizzati per motivi di performance. Impostando a zero, non ci saranno limiti.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Non è stato possibile trovare una fonte valida
 $string['errorsourceunavailable'] = 'La fonte del report non è disponibile';
 $string['filteradded'] = 'Il filtro \'{$a}\' è stato agigunto';
 $string['filtercontains'] = 'Contiene';
+$string['filterdateafter'] = 'Dopo';
+$string['filterdatebefore'] = 'Prima';
 $string['filterdatecurrent'] = 'Attuale';
 $string['filterdatedays'] = 'giorni';
 $string['filterdatefrom'] = 'Data da';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Termina con';
 $string['filterequalorgreaterthan'] = 'Maggiore o uguale a';
 $string['filterequalorlessthan'] = 'Minore o uguale a';
 $string['filterfieldoperator'] = 'Operatore {$a}';
+$string['filterfieldto'] = '{$a} a';
+$string['filterfieldunit'] = '{$a} unità';
 $string['filterfieldvalue'] = 'Valore {$a}';
 $string['filtergreaterthan'] = 'Maggiore di';
 $string['filterinvalid'] = 'Filtro non valido';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Ordinamento';
 $string['sorting_help'] = 'Imposta l\'ordinamento di default delle colonne del report. Gli utenti potranno selezionare l\'ordinamento di loro preferenza cliccando sul nome delle colonne.';
 $string['switchedit'] = 'Passa alla modalità modifica';
 $string['switchpreview'] = 'Passa alla modalità anteprima';
+$string['tagarea_reportbuilder_report'] = 'Report personalizzati';
 $string['tasksendschedule'] = 'Invio report programmato';
 $string['tasksendschedules'] = 'Invio report programamti';
 $string['timeadded'] = 'Data di inserimento';

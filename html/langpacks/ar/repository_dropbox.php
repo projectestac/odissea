@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ar', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'ar', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'مفتاح واجهة برمجة التطبيق لـ Dropbox';
 $string['cachelimit'] = 'حد الخبء';
 $string['cachelimit_info'] = 'أدخل الحجم الأقصى للملفات (بالبايت) المزمع تخبئتها في المخدم لصالح مختصرات Dropbox وأسمائه المستعارة. سيتم تخديم الملفات المخبأة عندما لا يعود المصدر متوافراً. القيمة الفارغة أو الصفر معناها تخبئة كل الملفات بغض النظر عن حجومها.';
 $string['configplugin'] = 'تهيئة Dropbox';
 $string['crontask'] = 'المعالجة الخلفية لمستودع Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'معاينة مجلد Dropbox';
-$string['instruction'] = 'يمكنك الحصول على مفتاح واجهة برمجة التطبيق وسره من <a href="https://www.dropbox.com/developers/apps">مطورو Dropbox</a>. عند تنصيب مفتاحك، لطفاً إختر "Full Dropbox" بمثابة "مستوى الوصول".';
 $string['issuer'] = 'خدمة OAuth 2';
 $string['issuer_help'] = 'إختر خدمة OAuth 2 المعرفة للتعامل مع واجهة برمجة تطبيق Dropbox. إذا لم تكن الخدمة منشأة بعد، فعليك إنشاؤها.';
 $string['logoutdesc'] = '(سجل خروجك بعد انتهائك من استعمال Dropbox)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'إن ملحق مستودع Dropbox لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي';
 $string['privacy:metadata:repository_dropbox:query'] = 'استعلام البحث النصي للمستخدم في مستودع Dropbox';
 $string['remember'] = 'تذكرني';
-$string['secret'] = 'سر Dropbox';

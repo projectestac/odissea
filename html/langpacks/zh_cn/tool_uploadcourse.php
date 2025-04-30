@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'zh_cn', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,12 +70,14 @@ $string['coursetemplatename'] = '上传之后，从这个课程开始恢复';
 $string['coursetemplatename_help'] = '输入一个已有的课程简称作为模板使用';
 $string['coursetorestorefromdoesnotexist'] = '要恢复的课程来源不存在';
 $string['courseupdated'] = '课程已更新';
+$string['courseuploadnotallowed'] = '没有权限上传类别：{$a}中的课程';
+$string['courseuploadupdatenotallowed'] = '存在一个具有此短名称的课程，所以您不能使用上传课程功能来更新它。';
 $string['createall'] = '建立全部，若需要增加简称';
 $string['createnew'] = '仅创建新课程，忽略已经存在的课程';
 $string['createorupdate'] = '创建新课程，或者更新已经存在的课程';
 $string['csvdelimiter'] = 'CSV 分隔符';
-$string['csvdelimiter_help'] = 'CSV 文件的分隔符。';
-$string['csvfileerror'] = '这个CSV文件格式有问题。请检查标题的数目和字段是否符合，且分隔符号和文件编码是否正确：{$a}';
+$string['csvdelimiter_help'] = '分隔每条记录中一系列数据的字符。';
+$string['csvfileerror'] = 'CSV 文件的格式有问题。请检查标题和列的数量是否匹配，以及分隔符和文件编码是否正确。{$a}';
 $string['csvline'] = '行';
 $string['customfieldinvalid'] = '自定义字段’{$a}‘为空或包含无效数据';
 $string['defaultvalues'] = '默认课程值';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'CSV 文件的编码格式。';
 $string['errorcannotcreateorupdateenrolment'] = '无法创建或更新报名方法\'{$a}\'。';
 $string['errorcannotdeleteenrolment'] = '无法删除报名方法 \'{$a}\'。';
 $string['errorcannotdisableenrolment'] = '无法禁用报名方法\'{$a}\'。';
+$string['errorunsupportedmethod'] = 'csv 上传不支持注册方法 \'{$a}\'';
 $string['errorwhiledeletingcourse'] = '在删除课程的时候出现错误';
 $string['errorwhilerestoringcourse'] = '在恢复课程的时候出现错误';
 $string['generatedshortnamealreadyinuse'] = '生成的短名称已经被使用';
@@ -118,7 +121,7 @@ $string['reset_help'] = '在建立/更新之后，是否重置课程？';
 $string['restoreafterimport'] = '导入后恢复';
 $string['result'] = '结果';
 $string['rowpreviewnum'] = '预览记录';
-$string['rowpreviewnum_help'] = '下一页中显示预览 CSV 文件中的数据数量，这个选项的数量将决定下一页显示的大小，请选择合理的值。';
+$string['rowpreviewnum_help'] = '将在下一页上预览的 CSV 文件中的行数。此选项用于限制以下页面的大小。';
 $string['shortnametemplate'] = '用于产生一个简称的模板';
 $string['shortnametemplate_help'] = '在导航中显示的短名称。在这里你可以使用模板的语法(%f = 全名 、%i = ID编号)，或输入一个递增的初始值。';
 $string['templatefile'] = '从上传之后的这个文件恢复';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = '更新模式不允许任何东西被更
 $string['updateonly'] = '仅更新已存在的课程';
 $string['updatewithdataonly'] = '只以CSV文档资料来更新';
 $string['updatewithdataordefaults'] = '以CSV文档资料和默认值来更新';
+$string['uploadcourse:use'] = '使用上传课程工具';
 $string['uploadcourses'] = '上传课程';
 $string['uploadcourses_help'] = '课程可以通过文本文件上传。文件的格式应如下所示：
 

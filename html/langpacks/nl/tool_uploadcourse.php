@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'nl', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'nl', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Terugzetten van deze cursus na upload';
 $string['coursetemplatename_help'] = 'Geef de korte naam van een bestaande cursus om als sjabloon te dienen voor het maken van alle cursussen.';
 $string['coursetorestorefromdoesnotexist'] = 'De terug te zetten cursus bestaat niet';
 $string['courseupdated'] = 'Cursus aangepast';
+$string['courseuploadnotallowed'] = 'Geen toestemming om cursussen te uploaden in categorie: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Er bestaat een cursus met deze korte naam maar je hebt geen toestemming om de upload cursusfunctionaliteit te gebruiken om deze bij te werken.';
 $string['createall'] = 'Maak alle, verhoog korte naam indien nodig';
 $string['createnew'] = 'Maak enkel nieuwe cursussen, bestaande overslaan';
 $string['createorupdate'] = 'Maak nieuwe cursussen of pas bestaande aan';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Encodering van het CSV-bestand.';
 $string['errorcannotcreateorupdateenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet maken of bijwerken';
 $string['errorcannotdeleteenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet verwijderen';
 $string['errorcannotdisableenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet uitschakelen';
+$string['errorunsupportedmethod'] = 'Aanmeldingsmethode \'{$a}\' wordt niet ondersteund bij csv-upload';
 $string['errorwhiledeletingcourse'] = 'Fout tijdens het verwijderen van de cursus';
 $string['errorwhilerestoringcourse'] = 'Fout tijdens het terugzetten van de cursus';
 $string['generatedshortnamealreadyinuse'] = 'De gegenereerde korte naam is al in gebruik';
@@ -131,8 +134,9 @@ $string['updatemodedoessettonothing'] = 'De aanpasmodus staat niet toe dat er ie
 $string['updateonly'] = 'Enkel bestaande cursussen aanpassen';
 $string['updatewithdataonly'] = 'Enkel aanpassen met CSV-gegevens';
 $string['updatewithdataordefaults'] = 'Aanpassen met CSV-gegevens en standaardinstellingen';
+$string['uploadcourse:use'] = 'Gebruik de uploadcursustool';
 $string['uploadcourses'] = 'Cursussen uploaden';
-$string['uploadcourses_help'] = 'Cursussen kunnen via een tekstbestand geüploaded worden. De opmaak moet als volgt zijn:
+$string['uploadcourses_help'] = 'Cursussen kunnen via een tekstbestand geüpload worden. De opmaak moet als volgt zijn:
 
 * Elke lijn bevat één record
 * Elke record is een reeks gegevens, gescheiden door het geselecteerde scheidingsteken

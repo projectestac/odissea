@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'gl', version '4.1'.
+ * Strings for component 'install', language 'gl', version '4.4'.
  *
  * @package     install
  * @category    string
@@ -34,7 +34,7 @@ $string['admindirsetting'] = 'Moi poucos enderezos web empregan /admin como URL 
     renomeando o directorio admin na súa instalación, e poñendo aquí ese
     novo nome.  Por exemplo: <br /> <br /><b>moodleadmin</b><br /> <br />
     Iso corrixirá as ligazóns admin en Moodle.';
-$string['admindirsettinghead'] = 'Axustar o directorio admin...';
+$string['admindirsettinghead'] = 'Axustar o directorio admin…';
 $string['admindirsettingsub'] = 'Moi poucos enderezos web empregan /admin como URL especial para
     permitirlle acceder a un panel de control ou semellante.
     Desafortunadamente, isto entra en conflito coa localización estándar
@@ -58,8 +58,8 @@ $string['climustagreelicense'] = 'No modo non interactivo, debe aceptar a licenz
 $string['cliskipdatabase'] = 'Omitindo a instalación da base de datos.';
 $string['clisupportemail'] = 'Enderezo de correo de axuda';
 $string['clitablesexist'] = 'Xa existen táboas de base de datos, a instalación CLI non pode continuar.';
-$string['compatibilitysettings'] = 'Comprobando a súa configuración PHP ...';
-$string['compatibilitysettingshead'] = 'Comprobando a súa configuración PHP ...';
+$string['compatibilitysettings'] = 'Comprobando a súa configuración PHP …';
+$string['compatibilitysettingshead'] = 'Comprobando a súa configuración PHP …';
 $string['compatibilitysettingssub'] = 'O seu servidor debería pasar todos estas probas para que Moodle poida funcionar correctamente.';
 $string['configfilenotwritten'] = 'O script do instalador non foi quen de crear automaticamente un ficheiro config.php que conteña os axustes escollidos, probabelmente porque o directorio Moodle non se pode escribir. Pode copiar manualmente o seguinte código nun ficheiro chamado config.php dentro do directorio raíz de Moodle.';
 $string['configfilewritten'] = 'config.php foi creado correctamente';
@@ -130,7 +130,7 @@ $string['downloadlanguagehead'] = 'Descargar o paquete de idioma';
 $string['downloadlanguagenotneeded'] = 'Pode continuar o proceso de instalación co idioma predeterminado «{$a}».';
 $string['downloadlanguagesub'] = 'Agora ten a opción de descargar o paquete do seu idioma e continuar co proceso de instalación nese idioma.<br /><br />De non ser posíbel a descarga o proceso de instalación continuará en inglés (una vez que remate a instalación terá a oportunidade de descargar e instalar outros idiomas adicionais).';
 $string['doyouagree'] = 'Está de acordo? (si/non):';
-$string['environmenthead'] = 'Comprobando o seu contorno...';
+$string['environmenthead'] = 'Comprobando o seu contorno…';
 $string['environmentsub'] = 'Estase a comprobar se os diferentes compoñentes do seu servidor cumpren cos requisitos mínimos de sistema';
 $string['environmentsub2'] = 'Cada versión de Moodle ten algún requisito mínimo da versión de PHP e un número obrigatorio de extensións de PHP.
 Antes de cada instalación ou actualización faise unha comprobación completa do contorno. Póñase en contacto co administrador do servidor se non sabe como instalar a nova versión ou activar as extensións PHP.';
@@ -154,7 +154,7 @@ $string['invaliddbprefix'] = 'Prefixo non válido. O prefixo só pode consistir 
 $string['langdownloaderror'] = 'Non foi posíbel descargar o idioma «{$a}». O proceso de instalación continuará en inglés.';
 $string['langdownloadok'] = 'O idioma «{$a}» foi instalado correctamente. O proceso de instalación continuará neste idioma.';
 $string['memorylimit'] = 'Límite de memoria';
-$string['memorylimiterror'] = 'O límite de memoria PHP esta estabelecido a un valor moi baixo ... pode ter problemas máis adiante.';
+$string['memorylimiterror'] = 'O límite de memoria PHP esta estabelecido a un valor moi baixo … pode ter problemas máis adiante.';
 $string['memorylimithelp'] = '<p>O límite de memoria PHP no seu servidor está estabelecido en {$a}.</p>
 
 <p>Isto pode facer que Moodle teña problemas de memoria máis adiante, especialmente
@@ -222,10 +222,9 @@ $string['pathswrongadmindir'] = 'Non existe o directorio Admin';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión PGSQL de modo que poida comunicarse co PostgreSQL. Comprobe o ficheiro php.ini ou volva a compilar PHP.';
 $string['phpextension'] = 'Extensión PHP {$a}';
 $string['phpversion'] = 'Versión PHP';
-$string['phpversionhelp'] = '<p>Moodle require polo menos unha das versións de PHP 4.3.0 ou 5.1.0 ( as versións 5.0.x teñen unha serie de problemas coñecidos).</p>
+$string['phpversionhelp'] = '<p>Moodle require polo menos unha das versións de PHP 5.6.5 ou 7.1 (7.0.x ten algunhas limitacións do motor).</p>
 <p>Neste momento está executandose a versión {$a}</p>
-<p>Debe actualizar PHP ou trasladarse a outro servidor cunha versión máis recente de PHP!<br />
-(NO caso de 5.0.x podería tamén reverter cara a versión 4.4.x)</p>';
+<p>Debe actualizar PHP ou trasladarse a outro servidor cunha versión máis recente de PHP!<br />';
 $string['releasenoteslink'] = 'Para obter información sobre de esta versión de Moodle, consulte as notas da versión en {$a}';
 $string['safemode'] = 'Modo seguro';
 $string['safemodeerror'] = 'Moodle pode ter problemas co modo seguro activado';
@@ -240,9 +239,9 @@ $string['sessionautostart'] = 'Inicio automático de sesión';
 $string['sessionautostarterror'] = 'Debe estar desactivado';
 $string['sessionautostarthelp'] = '<p>Moodle require ter compatibilidade de sesións e non funcionará sen el.</p>
 
-<p>As sesións deben estar activadas no ficheiro php.ini ... busque o parámetro session.auto_start.</p>';
+<p>As sesións deben estar activadas no ficheiro php.ini … busque o parámetro session.auto_start.</p>';
 $string['sqliteextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión SQLite. Comprobe o ficheiro php.ini ou volva a compilar PHP.';
-$string['upgradingqtypeplugin'] = 'Actualizando o engadido de pregunta/tipo';
+$string['upgradingqtypeplugin'] = 'Actualizando o complemento de pregunta/tipo';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Se esta a ver esta páxina é porque puido instalar correctamente e
     executar o paquete <strong>{$a->packname} {$a->packversion}</strong> no seu computador. Parabéns!';

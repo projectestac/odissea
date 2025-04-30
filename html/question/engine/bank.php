@@ -27,6 +27,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core_question\local\bank\question_version_status;
+use core_question\output\question_version_info;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -285,7 +287,9 @@ abstract class question_bank {
      * @return question_definition loaded from the database.
      */
     public static function make_question($questiondata) {
-        return self::get_qtype($questiondata->qtype, false)->make_question($questiondata, false);
+        $definition = self::get_qtype($questiondata->qtype, false)->make_question($questiondata, false);
+        question_version_info::$pendingdefinitions[$definition->id] = $definition;
+        return $definition;
     }
 
     /**
@@ -327,6 +331,31 @@ abstract class question_bank {
               ORDER BY qv.questionbankentryid, qv.version DESC";
         $result = [];
         $rows = $DB->get_recordset_sql($sql, $params);
+        foreach ($rows as $row) {
+            $result[$row->questionbankentryid][$row->version] = $row->questionid;
+        }
+
+        return $result;
+    }
+
+    /**
+     * Retrieves version information for a list of questions.
+     *
+     * @param array $questionids Array of question ids.
+     * @return array An array question_bank_entries.id => version number => question.id.
+     */
+    public static function get_version_of_questions(array $questionids): array {
+        global $DB;
+
+        [$listquestionid, $params] = $DB->get_in_or_equal($questionids, SQL_PARAMS_NAMED);
+        $sql = "SELECT qv.questionid, qv.version, qv.questionbankentryid
+                  FROM {question_versions} qv
+                  JOIN {question_bank_entries} qbe ON qv.questionbankentryid = qbe.id
+                 WHERE qv.questionid $listquestionid
+              ORDER BY qv.version DESC";
+
+        $rows = $DB->get_recordset_sql($sql, $params);
+        $result = [];
         foreach ($rows as $row) {
             $result[$row->questionbankentryid][$row->version] = $row->questionid;
         }
@@ -544,8 +573,8 @@ class question_finder implements cache_data_source {
         if ($extraconditions) {
             $extraconditions = ' AND (' . $extraconditions . ')';
         }
-        $qcparams['readystatus'] = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
-        $qcparams['readystatusqv'] = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
+        $qcparams['readystatus'] = question_version_status::QUESTION_STATUS_READY;
+        $qcparams['readystatusqv'] = question_version_status::QUESTION_STATUS_READY;
         $sql = "SELECT q.id, q.id AS id2
                   FROM {question} q
                   JOIN {question_versions} qv ON qv.questionid = q.id
@@ -576,9 +605,16 @@ class question_finder implements cache_data_source {
      *      the where clause. Must use named parameters.
      * @param array $extraparams any parameters used by $extraconditions.
      * @return array questionid => count of number of previous uses.
+     *
+     * @deprecated since Moodle 4.3
+     * @todo Final deprecation on Moodle 4.7 MDL-78091
      */
     public function get_questions_from_categories_with_usage_counts($categoryids,
             qubaid_condition $qubaids, $extraconditions = '', $extraparams = array()) {
+        debugging(
+            'Function get_questions_from_categories_with_usage_counts() is deprecated, please do not use the function.',
+            DEBUG_DEVELOPER
+        );
         return $this->get_questions_from_categories_and_tags_with_usage_counts(
                 $categoryids, $qubaids, $extraconditions, $extraparams);
     }
@@ -596,14 +632,20 @@ class question_finder implements cache_data_source {
      * @param array $extraparams any parameters used by $extraconditions.
      * @param array $tagids an array of tag ids
      * @return array questionid => count of number of previous uses.
+     * @deprecated since Moodle 4.3
+     * @todo Final deprecation on Moodle 4.7 MDL-78091
      */
     public function get_questions_from_categories_and_tags_with_usage_counts($categoryids,
             qubaid_condition $qubaids, $extraconditions = '', $extraparams = array(), $tagids = array()) {
+        debugging(
+            'Function get_questions_from_categories_and_tags_with_usage_counts() is deprecated, please do not use the function.',
+            DEBUG_DEVELOPER
+        );
         global $DB;
 
         list($qcsql, $qcparams) = $DB->get_in_or_equal($categoryids, SQL_PARAMS_NAMED, 'qc');
 
-        $readystatus = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
+        $readystatus = question_version_status::QUESTION_STATUS_READY;
         $select = "q.id, (SELECT COUNT(1)
                             FROM " . $qubaids->from_question_attempts('qa') . "
                            WHERE qa.questionid = q.id AND " . $qubaids->where() . "
@@ -682,6 +724,7 @@ class question_finder implements cache_data_source {
     /* See cache_data_source::load_many_for_cache. */
     public function load_many_for_cache(array $questionids) {
         global $DB;
+
         list($idcondition, $params) = $DB->get_in_or_equal($questionids);
         $sql = 'SELECT q.id, qc.id as category, q.parent, q.name, q.questiontext, q.questiontextformat,
                        q.generalfeedback, q.generalfeedbackformat, q.defaultmark, q.penalty, q.qtype,

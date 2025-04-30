@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'ca', version '4.1'.
+ * Strings for component 'oublog', language 'ca', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -132,6 +132,7 @@ $string['participation_from'] = 'Participació: des de {$a}';
 $string['participation_fromto'] = 'Participació: des de {$a->start} fins a {$a->end}';
 $string['participation_to'] = 'Participació: fins a {$a}';
 $string['participationbyuser'] = 'Participació per usuari';
+$string['permalink'] = 'Enllaç permanent';
 $string['userparticipation'] = 'Participació de l\'usuari';
 $string['usersparticipation'] = 'Participació de tots els usuaris';
 $string['viewallparticipation'] = 'Visualitza tota la participació';

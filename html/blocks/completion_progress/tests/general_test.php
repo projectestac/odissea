@@ -42,7 +42,7 @@ use block_completion_progress\defaults;
  * @copyright  2017 onwards Nelson Moller  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class general_test extends \advanced_testcase {
+final class general_test extends \advanced_testcase {
     /**
      * Teacher users.
      * @var array
@@ -56,6 +56,12 @@ class general_test extends \advanced_testcase {
     private $students = [];
 
     /**
+     * A course object.
+     * @var object
+     */
+    private $course = null;
+
+    /**
      * Number of students to create.
      */
     const STUDENT_COUNT = 4;
@@ -64,6 +70,8 @@ class general_test extends \advanced_testcase {
      * Create a course and add enrol users to it.
      */
     protected function setUp(): void {
+        parent::setUp();
+
         $this->resetAfterTest(true);
 
         set_config('enablecompletion', 1);
@@ -102,7 +110,7 @@ class general_test extends \advanced_testcase {
      * Check that a student's excluded grade hides the activity from the student's progress bar.
      * @covers \block_completion_progress\completion_progress
      */
-    public function test_grade_excluded() {
+    public function test_grade_excluded(): void {
         global $DB, $PAGE;
 
         $output = $PAGE->get_renderer('block_completion_progress');
@@ -131,12 +139,15 @@ class general_test extends \advanced_testcase {
         $assign = $this->create_assign_instance([
           'submissiondrafts' => 0,
           'completionsubmit' => 1,
-          'completion' => COMPLETION_TRACKING_AUTOMATIC
+          'completion' => COMPLETION_TRACKING_AUTOMATIC,
         ]);
 
-        $gradeitem = \grade_item::fetch(['courseid' => $this->course->id,
-            'itemtype' => 'mod', 'itemmodule' => 'assign',
-            'iteminstance' => $assign->get_course_module()->instance]);
+        $gradeitem = \grade_item::fetch([
+            'courseid' => $this->course->id,
+            'itemtype' => 'mod',
+            'itemmodule' => 'assign',
+            'iteminstance' => $assign->get_course_module()->instance,
+        ]);
 
         // Set student 1's grade to be excluded.
         $grade = $gradeitem->get_grade($this->students[1]->id);
@@ -162,7 +173,7 @@ class general_test extends \advanced_testcase {
      * Test checking of pages at site-level or not.
      * @covers \block_completion_progress
      */
-    public function test_on_site_page() {
+    public function test_on_site_page(): void {
         global $PAGE;
 
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_assign');
@@ -212,7 +223,7 @@ class general_test extends \advanced_testcase {
      * Test that asynchronous course copy preserves all expected block instances.
      * @covers \restore_completion_progress_block_task
      */
-    public function test_course_copy() {
+    public function test_course_copy(): void {
         global $DB;
 
         $this->setAdminUser();
@@ -290,8 +301,10 @@ class general_test extends \advanced_testcase {
         $context = \context_course::instance($copy->id);
         $copygroup = groups_get_group_by_idnumber($copy->id, 'g1');
 
-        $blocks = $DB->get_records('block_instances', ['blockname' => 'completion_progress',
-            'parentcontextid' => $context->id]);
+        $blocks = $DB->get_records('block_instances', [
+            'blockname' => 'completion_progress',
+            'parentcontextid' => $context->id,
+        ]);
         $this->assertCount(2, $blocks);
 
         array_walk($blocks, function ($record) {
@@ -313,7 +326,7 @@ class general_test extends \advanced_testcase {
      * Test course modules view urls.
      * @covers \block_completion_progress\completion_progress
      */
-    public function test_view_urls() {
+    public function test_view_urls(): void {
         global $DB, $PAGE;
 
         $output = $PAGE->get_renderer('block_completion_progress');
@@ -340,11 +353,11 @@ class general_test extends \advanced_testcase {
 
         $pageinstance = $this->getDataGenerator()->create_module('page', [
             'course' => $this->course->id,
-            'completion' => COMPLETION_TRACKING_MANUAL
+            'completion' => COMPLETION_TRACKING_MANUAL,
         ]);
         $labelinstance = $this->getDataGenerator()->create_module('label', [
             'course' => $this->course->id,
-            'completion' => COMPLETION_TRACKING_MANUAL
+            'completion' => COMPLETION_TRACKING_MANUAL,
         ]);
 
         $modinfo = get_fast_modinfo($this->course);

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_link', language 'eu', version '4.1'.
+ * Strings for component 'tiny_link', language 'eu', version '4.4'.
  *
  * @package     tiny_link
  * @category    string
@@ -31,7 +31,7 @@ $string['enterurl'] = 'Idatzi URLa';
 $string['helplinktext'] = 'Esteka';
 $string['link'] = 'Esteka';
 $string['openinnewwindow'] = 'Ireki leiho berri batean';
-$string['pluginname'] = 'Tiny esteka';
+$string['pluginname'] = 'Esteka';
 $string['privacy:metadata'] = 'TinyMCErako esteka pluginak ez du datu pertsonalik biltzen.';
 $string['texttodisplay'] = 'Erakutsi beharreko testua';
 $string['unlink'] = 'Kendu esteka';

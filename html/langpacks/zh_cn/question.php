@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', version '4.1'.
+ * Strings for component 'question', language 'zh_cn', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -175,6 +175,8 @@ $string['errorprocessingresponses'] = '处理您的回答（{$a}）时出错。�
 $string['errorsavingcomment'] = '向数据库保存试题 {$a->name} 的评价时出错';
 $string['errorsavingflags'] = '保存标记状态出错。';
 $string['errorupdatingattempt'] = '更新数据库中的试卷 {$a->id} 时出错。';
+$string['eventqbankdisabled'] = '题库插件已禁用';
+$string['eventqbankenabled'] = '已启用题库插件';
 $string['eventquestioncategorycreated'] = '试题类别已创建';
 $string['eventquestioncategorydeleted'] = '试题类别已删除';
 $string['eventquestioncategorymoved'] = '试题类别已移动';
@@ -264,6 +266,7 @@ $string['invalidcategoryidtomove'] = '要移动的类别 ID 无效！';
 $string['invalidconfirm'] = '确认字符串不正确';
 $string['invalidcontextinhasanyquestions'] = '传给 question_context_has_any_questions 的场景无效。';
 $string['invalidgrade'] = '分数({$a})与成绩选项不匹配-此题跳过。';
+$string['invalidgradequestion'] = '成绩 （{$a->grades}） 与成绩选项不匹配 - 跳过问题 \'{$a->question}\'。';
 $string['invalidpenalty'] = '无效罚分';
 $string['invalidwizardpage'] = '不正确，或未指定向导页面！';
 $string['lastmodifiedby'] = '最后修改人';
@@ -307,6 +310,7 @@ $string['movingquestionsandfiles'] = '您确定要移动试题“{$a->questions}
 $string['movingquestionsnofiles'] = '您确定要移动试题“{$a->questions}”到场景<strong>“{$a->tocontext}”</strong>吗？<br />在“{$a->fromareaname}”中<strong>没有任何文件</strong>链接到这些试题。';
 $string['needtochoosecat'] = '您需要选择一个将此题移入的类别，或者点“取消”。';
 $string['nocate'] = '没有这样的类别{$a}！';
+$string['noconditionspecified'] = '请指定一个条件';
 $string['nopermissionadd'] = '您没有在此处添加试题的权限。';
 $string['nopermissionedit'] = '您无权从此处编辑问题';
 $string['nopermissionmove'] = '您没有将试题从此处移走的权限。您必须保存此试题在此类别中，或者将其另存为一道新试题。';
@@ -321,7 +325,6 @@ $string['notchanged'] = '自上次试答以来未更改';
 $string['notenoughanswers'] = '此类型的试题需要至少 {$a} 个答案';
 $string['notenoughdatatoeditaquestion'] = '既未指定试题ID，也未指定类别ID和试题类型。';
 $string['notenoughdatatomovequestions'] = '您需要提供要移动题目的 ID。';
-$string['notflagged'] = '未标记';
 $string['notgraded'] = '未评分';
 $string['notshown'] = '未显示';
 $string['notyetanswered'] = '还未作答';
@@ -413,7 +416,7 @@ $string['questionpreviewdefaults'] = '试题预览的默认值';
 $string['questionpreviewdefaults_desc'] = '这些默认值用于用户首次在题库中预览试题。一旦用户预览一道试题，他们的个人偏好被保存为用户偏好。';
 $string['questions'] = '试题';
 $string['questionsaveerror'] = '保存题目时出错 - （{$a}）';
-$string['questionsinuse'] = '* 表示由于正在使用而无法删除的问题。相反，它们将隐藏在题库中，除非您选择“显示旧问题”。';
+$string['questionsinuse'] = '* 表示由于正在使用而无法删除的问题。除非您将“Show hidden questions”（显示隐藏的问题）设置为“Yes”（是），否则它们将隐藏在问题库中。';
 $string['questionsmovedto'] = '移动到“{$a}”的试题仍在父课程类别中被使用。';
 $string['questionsrescuedfrom'] = '从场景{$a}保存的试题。';
 $string['questionsrescuedfrominfo'] = '即便删除场景{$a}，这些试题（有些可能被隐藏）仍被保存。因为仍有一些测验或其它活动使用它们。';
@@ -426,7 +429,7 @@ $string['questionx'] = '试题 {$a}';
 $string['requiresgrading'] = '需要评分';
 $string['responsehistory'] = '回答历史';
 $string['restart'] = '重新开始';
-$string['restartwiththeseoptions'] = '从这些选项重新开始';
+$string['restartwiththeseoptions'] = '保存预览选项并重新开始';
 $string['restoremultipletopcats'] = '备份文件包含场景{$a}的多个顶级试题类别。';
 $string['reviewresponse'] = '回顾回答';
 $string['rightanswer'] = '正确答案';
@@ -441,7 +444,9 @@ $string['selectcategoryabove'] = '在上面选择一个类别';
 $string['selectquestionsforbulk'] = '选择批量操作的试题';
 $string['settingsformultipletries'] = '多次尝试';
 $string['shareincontext'] = '在场景中共享 {$a}';
-$string['showhidden'] = '显示旧试题';
+$string['shortversioninfo'] = 'v{$a->version} (of {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (最新)';
+$string['showhidden'] = '显示隐藏试题';
 $string['showmarkandmax'] = '显示得分和满分';
 $string['showmaxmarkonly'] = '只显示满分';
 $string['shown'] = '显示';
@@ -493,6 +498,8 @@ $string['upgradeproblemcategoryloop'] = '在升级题目类别时遇到问题。
 $string['upgradeproblemcouldnotupdatecategory'] = '无法升级题目类别 {$a->name} ({$a->id})';
 $string['upgradeproblemunknowncategory'] = '在升级题目类别时遇到问题。类别 {$a->id} 有父类别 {$a->parent}，但该类别已经不存在了。已通过修改父类别纠正了错误。';
 $string['version_selection'] = '版本 {$a->version}';
+$string['versioninfo'] = '版本 {$a->version} （of {$a->latestversion}）';
+$string['versioninfolatest'] = '版本 {$a->version}';
 $string['whethercorrect'] = '是否正确';
 $string['whethercorrect_help'] = '此文字说明包括“正确”，“部分正确”或“不正确”，它和任何彩色高亮传达相同的信息。';
 $string['whichtries'] = '哪次尝试';

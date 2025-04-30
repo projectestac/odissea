@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'it', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'it', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Ripristina da questo corso dopo il caricamento'
 $string['coursetemplatename_help'] = 'Inserire il titolo abbreviato del corso da usare come modello per la creazione dei corsi';
 $string['coursetorestorefromdoesnotexist'] = 'Il corso dal quale ripristinare non esiste';
 $string['courseupdated'] = 'Corso aggiornato';
+$string['courseuploadnotallowed'] = 'Non sei autorizzato a caricare corsi nella categoria: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Un corso con questo titolo abbreviato esiste già non sei autorizzato a utilizzare la funzionalità di caricamento corsi per aggiornarlo.';
 $string['createall'] = 'Crea tutti i corsi, se necessario incrementa il titolo abbreviato';
 $string['createnew'] = 'Crea corsi nuovi, salta corsi esistenti';
 $string['createorupdate'] = 'Crea corsi nuovi, aggiorna corsi esistenti';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'La codifica del file CSV';
 $string['errorcannotcreateorupdateenrolment'] = 'Non è possibile creare o aggiornare il metodo di iscrizione \'{$a}\'';
 $string['errorcannotdeleteenrolment'] = 'Non è possibile eliminare il metodo di iscrizione \'{$a}\'';
 $string['errorcannotdisableenrolment'] = 'Non è possibile disabilitare il metodo di iscrizione \'{$a}\'';
+$string['errorunsupportedmethod'] = 'Il metodo di iscrizione \'{$a}\' non è supportato nel caricamento CSV';
 $string['errorwhiledeletingcourse'] = 'Si è verificato un errore durante l\'eliminazione del corso';
 $string['errorwhilerestoringcourse'] = 'Si è verificato un errore durante il ripristino del corso';
 $string['generatedshortnamealreadyinuse'] = 'Il titolo abbreviato generato è già utilizzato';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'La modalità aggiornamento non consente
 $string['updateonly'] = 'Aggiorna solo i corsi esistenti';
 $string['updatewithdataonly'] = 'Aggiorna solo con i dati CSV';
 $string['updatewithdataordefaults'] = 'Aggiorna con i dati CSV e con i default';
+$string['uploadcourse:use'] = 'Utilizza lo strumento Caricamento corso';
 $string['uploadcourses'] = 'Caricamento corsi';
 $string['uploadcourses_help'] = 'È possibile caricare corsi tramite file di testo. Il formato del file deve essere come descritto di seguito:
 

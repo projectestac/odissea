@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'fr', version '4.1'.
+ * Strings for component 'format_topics', language 'fr', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Ajouter une section';
-$string['currentsection'] = 'Cette section';
-$string['deletesection'] = 'Supprimer la section';
-$string['editsection'] = 'Modifier la section';
-$string['editsectionname'] = 'Modifier le nom de la section';
-$string['hidefromothers'] = 'Cacher la section';
+$string['currentsection'] = 'Section actuelle';
+$string['hidefromothers'] = 'Cacher';
 $string['indentation'] = 'Permettre l’indentation sur la page du cours';
 $string['indentation_help'] = 'Permettre aux enseignants et aux autres utilisateurs ayant la capacité de gérer des activités d’indenter des éléments sur la page du cours.';
-$string['newsectionname'] = 'Nouveau nom pour la section {$a}';
-$string['page-course-view-topics'] = 'Toutes les pages principales de cours au format thématique';
-$string['page-course-view-topics-x'] = 'Toutes les pages de cours au format thématique';
-$string['pluginname'] = 'Thématique';
-$string['privacy:metadata'] = 'Le plugin format thématique n’enregistre aucune donnée personnelle.';
+$string['legacysectionname'] = 'Section';
+$string['newsection'] = 'Nouvelle section';
+$string['page-course-view-topics'] = 'Toute page principale de cours en format sections personnalisées';
+$string['page-course-view-topics-x'] = 'Toute page de cours en format sections personnalisées';
+$string['plugin_description'] = 'Le cours est subdivisé en sections personnalisables';
+$string['pluginname'] = 'Sections personnalisées';
+$string['privacy:metadata'] = 'Le plugin format Sections personnalisées n’enregistre aucune donnée personnelle.';
 $string['section0name'] = 'Généralités';
+$string['section_highlight_feedback'] = 'La section {$a->name} marquée.';
+$string['section_unhighlight_feedback'] = 'Marquage retiré pour section {$a->name}.';
 $string['sectionname'] = 'Section';
-$string['showfromothers'] = 'Afficher la section';
+$string['showfromothers'] = 'Rendre visible';

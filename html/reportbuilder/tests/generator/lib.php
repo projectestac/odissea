@@ -51,6 +51,12 @@ class core_reportbuilder_generator extends component_generator_base {
             throw new coding_exception('Record must contain \'source\' property');
         }
 
+        // Report tags.
+        $tags = $record['tags'] ?? '';
+        if (!is_array($tags)) {
+            $record['tags'] = preg_split('/\s*,\s*/', $tags, -1, PREG_SPLIT_NO_EMPTY);
+        }
+
         // Include default setup unless specifically disabled in passed record.
         $default = (bool) ($record['default'] ?? true);
 
@@ -84,7 +90,7 @@ class core_reportbuilder_generator extends component_generator_base {
 
         // Update additional record properties.
         unset($record['reportid'], $record['uniqueidentifier']);
-        if ($properties = array_intersect_key($record, column::properties_definition())) {
+        if ($properties = column::properties_filter((object) $record)) {
             $column->set_many($properties)->update();
         }
 
@@ -112,7 +118,7 @@ class core_reportbuilder_generator extends component_generator_base {
 
         // Update additional record properties.
         unset($record['reportid'], $record['uniqueidentifier']);
-        if ($properties = array_intersect_key($record, filter::properties_definition())) {
+        if ($properties = filter::properties_filter((object) $record)) {
             $filter->set_many($properties)->update();
         }
 
@@ -140,7 +146,7 @@ class core_reportbuilder_generator extends component_generator_base {
 
         // Update additional record properties.
         unset($record['reportid'], $record['uniqueidentifier']);
-        if ($properties = array_intersect_key($record, filter::properties_definition())) {
+        if ($properties = filter::properties_filter((object) $record)) {
             $condition->set_many($properties)->update();
         }
 

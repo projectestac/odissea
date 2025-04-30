@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ro', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'ro', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Cheie API Dropbox';
 $string['cachelimit'] = 'Limită cache';
 $string['cachelimit_info'] = 'Introduceți dimensiunea maximă a fișierelor (în octeți) care vor fi stocate în cache pe server pentru aliasuri / comenzi rapide Dropbox. Fișierele memorate în cache vor fi difuzate atunci când sursa nu mai este disponibilă. Valoarea goală sau zero înseamnă stocarea în cache a tuturor fișierelor, indiferent de dimensiune.';
 $string['configplugin'] = 'Configuraţie Dropbox';
 $string['crontask'] = 'Procesare în fundal pentru depozitul Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Vizualizează un folder Dropbox';
-$string['instruction'] = 'Puteți obține cheia și secretul API de la <a href="https://www.dropbox.com/developers/apps"> dezvoltatorii Dropbox </a>. Când vă configurați cheia, vă rugăm să selectați „Full Dropbox” ca „Nivel de acces”.';
 $string['issuer'] = 'Serviciu OAuth2';
 $string['issuer_help'] = 'Selectează serviciul OAuth2 care este configurat pentru a comunica cu Dropbox API. Dacă serviciul nu există încă, va trebui să îl creați.';
 $string['logoutdesc'] = '(Deconectați-vă când terminați de utilizat Dropbox)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Pluginul depozitului Dropbox nu stochează date personale, dar transmite datele utilizatorului de la Moodle către sistemul de la distanță.';
 $string['privacy:metadata:repository_dropbox:query'] = 'Interogarea textului de căutare a utilizatorului din depozitul Dropbox.';
 $string['remember'] = 'Ţine-mă minte';
-$string['secret'] = 'Jeton Secret Dropbox';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'es', version '4.1'.
+ * Strings for component 'label', language 'es', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este 
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Añadir una nueva Área de texto y medios';
 $string['label:view'] = 'Ver Área de texto y medios';
+$string['labelname'] = 'Título en índice del curso';
+$string['labelname_help'] = 'El nombre sólo se usa para identificar el área de texto y medios en el índice del curso y para finalización de actividad. Si se deja en blanco, automáticamente se generará un nombre con los primeros caracteres del texto.';
 $string['labeltext'] = 'Texto';
 $string['modulename'] = 'Área de texto y medios';
 $string['modulename_help'] = 'El Área de texto y medios le permite insertar texto y elementos multimedia en las páginas del curso.

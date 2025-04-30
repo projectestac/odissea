@@ -10,8 +10,25 @@ class com_wiris_quizzes_impl_SlotImpl extends com_wiris_util_xml_SerializableImp
 		$this->authorAnswers = new _hx_array(array());
 		$this->localData = new _hx_array(array());
 	}}
+	public function getMultiStepEquivalentMathAssertion($multiStepMath) {
+		$math = com_wiris_quizzes_impl_SyntaxAssertion::getDefaultSyntax();
+		$typeOfTask = $multiStepMath->getParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$TYPE_OF_TASK);
+		if($typeOfTask !== null) {
+			if($typeOfTask === com_wiris_quizzes_impl_Assertion::$TYPE_OF_TASK_SINGLE_VARIABLE_EQUATION) {
+				$math->setParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$NO_BRACKETS_LIST, "true");
+				$math->setParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$LIST_OPERATORS, ";");
+			} else {
+				if($typeOfTask === com_wiris_quizzes_impl_Assertion::$TYPE_OF_TASK_BASIC_OPERATIONS) {
+				}
+			}
+		}
+		return $math;
+	}
 	public function syntacticAssertionToURL($a) {
 		$sb = new StringBuf();
+		if($a->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP) {
+			$a = $this->getMultiStepEquivalentMathAssertion($a);
+		}
 		if($a->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH) {
 			$sb->add("Math");
 		} else {
@@ -92,12 +109,19 @@ class com_wiris_quizzes_impl_SlotImpl extends com_wiris_util_xml_SerializableImp
 			if($type === com_wiris_quizzes_api_assertion_SyntaxName::$GRAPHIC && $this->getAnswerFieldType() != com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR) {
 				$this->setAnswerFieldType(com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR);
 			} else {
-				if($this->getAnswerFieldType() == com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR) {
-					$this->setAnswerFieldType(com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_MATH_EDITOR);
+				if($type === com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP && $this->getAnswerFieldType() != com_wiris_quizzes_api_ui_AnswerFieldType::$MULTISTEP_MATH_EDITOR) {
+					$this->setAnswerFieldType(com_wiris_quizzes_api_ui_AnswerFieldType::$MULTISTEP_MATH_EDITOR);
+				} else {
+					if($this->getAnswerFieldType() == com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR) {
+						$this->setAnswerFieldType(com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_MATH_EDITOR);
+					}
 				}
 			}
 		}
 		$this->syntax->parameters = new _hx_array(array());
+		if($type === com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP) {
+			$this->syntax->setParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$REF_ID, _hx_string_rec($this->question->getAvailableRefId(), "") . "");
+		}
 		return $this->syntax;
 	}
 	public function getSyntax() {

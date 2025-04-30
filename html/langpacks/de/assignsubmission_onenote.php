@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onenote', language 'de', version '4.1'.
+ * Strings for component 'assignsubmission_onenote', language 'de', version '4.4'.
  *
  * @package     assignsubmission_onenote
  * @category    string
@@ -48,7 +48,6 @@ $string['privacy:metadata:numfiles'] = 'Anzahl der Dateien';
 $string['privacy:metadata:submissionpurpose'] = 'Die mit der Abgabe der Person verknüpfte Abgabe-ID';
 $string['privacy:metadata:tablepurpose'] = 'Speichert die Anzahl an der für die Abgabe verwendeten Dateien.';
 $string['privacy:path'] = 'Anzahl der Dateien';
-$string['signinhelp'] = 'Klicken Sie auf den Button oben, um sich bei OneNote anzumelden und die Aufgabe dort zu bearbeiten.';
 $string['signinhelp1'] = 'Klicken Sie auf den Button oben, um sich bei OneNote anzumelden und die Abgabe dort zu bearbeiten.';
 $string['signinhelp2'] = 'Klicken Sie auf den Button oben, um sich bei OneNote anzumelden und die Abgabe dort anzusehen.';
 $string['siteuploadlimit'] = 'Upload-Limit der Seite';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_italic', language 'uk', version '4.1'.
+ * Strings for component 'atto_italic', language 'uk', version '4.4'.
  *
  * @package     atto_italic
  * @category    string

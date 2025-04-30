@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adobeconnect', language 'es', version '4.1'.
+ * Strings for component 'adobeconnect', language 'es', version '4.4'.
  *
  * @package     adobeconnect
  * @category    string
@@ -65,7 +65,7 @@ $string['email_login_desc'] = 'Marque esta opción solo si su inicio de sesión 
 $string['emptyxml'] = 'No se puede conectar al servidor Adobe Connect Pro en este momento. Informe a su administrador de Moodle.';
 $string['endtime'] = 'Hora de finalización';
 $string['error1'] = 'Debe ser un administrador del sitio para acceder a esta página';
-$string['error2'] = 'La propiedad \'{$a}\' esta vacía, por favor ingrese un valor y guarde la configuración.';
+$string['error2'] = 'La propiedad "{$a}" esta vacía, por favor introduzca un valor y guarde la configuración.';
 $string['errormeeting'] = 'Error al recuperar la grabación';
 $string['errorrecording'] = 'Imposible encontrar la grabación de la sesión';
 $string['event_assign_role'] = 'Usuario asignado a un rol de Connect Pro';
@@ -84,7 +84,7 @@ $string['https_desc'] = 'Conéctese al servidor Connect a través de HTTPS';
 $string['invalidadobemeeturl'] = 'Entrada inválida para este campo. Haga clic en la ayuda para identificar las entradas válidas.';
 $string['invalidurl'] = 'La URL necesita iniciar con una letra (a-z)';
 $string['joinmeeting'] = 'Unirse a la reunión';
-$string['longurl'] = 'La URL de la reunión es muy larga. Trate ingresando una mas corta';
+$string['longurl'] = 'La URL de la reunión es muy larga. Pruebe a acortarla';
 $string['meethost_desc'] = 'Dominio donde está instalado el servidor Adobe';
 $string['meetinfo'] = 'Más detalles de la reunión';
 $string['meetinfotxt'] = 'Ver detalles del servidor de la reunión';
@@ -97,7 +97,7 @@ $string['meetingname'] = 'Nombre de la reunión';
 $string['meetingstart'] = 'Hora de inicio de la reunión';
 $string['meetingtype'] = 'Tipo de reunión';
 $string['meetingtype_help'] = '<p> Un tipo de reunión pública es aquella en la que cualquiera que tenga la URL de la reunión puede entrar en la sala. </p>
-<p> Un tipo de reunión privada es aquella en la que solo pueden ingresar usuarios registrados y participantes. La página de inicio de sesión no permite
+<p> Un tipo de reunión privada es aquella en la que solo pueden entrar usuarios registrados y participantes. La página de inicio de sesión no permite
 invitados para iniciar sesión. Con las reuniones privadas, la reunión en realidad no comienza hasta que el presentador de la reunión o el anfitrión se una a la reunión.</p>
 
 <p>Si está creando una reunión privada, siempre es una buena práctica asignar al menos 1 anfitrión o presentador que esté presente en la reunión; porque los usuarios con el rol de participante no podrán unirse a la reunión a menos que un usuario con rol de anfitrión o presentador ya se han unido a la reunión.</p>

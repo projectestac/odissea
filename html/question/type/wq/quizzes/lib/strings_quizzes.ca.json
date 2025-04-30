@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "avalua",
 		
-		"home_getting_started_welcome_header_text": "Presentem WirisQuizzes 4.8.0: ara amb respostes gràfiques escrites a mà",
+		"home_getting_started_welcome_header_text": "Presentem WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Ens complau presentar un nou tipus de resposta que permet als alumnes respondre dibuixant a mà un gràfic. Per obtenir més informació sobre aquesta funció, consulteu les nostres notes de la versió i la documentació. Esperem que vostè i els seus alumnes gaudeixin d'aquesta nova incorporació a WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Notes de la versió",
         "home_getting_give_us_feedback_button_text": "Fes-nos arribar els teus comentaris",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Igual com a llista ja no està disponible",
 		"quizzes_studio_syntax_list_assertion": "Llista ja no està disponible",
 		"quizzes_studio_text_logic_operators" : "Operadors lògics ja no estan disponibles",
-		"quizzes_studio_equivalent_unit_literal" : "Unitat literalment equivalent ja no està disponible"
+		"quizzes_studio_equivalent_unit_literal" : "Unitat literalment equivalent ja no està disponible",
 
+		"quizzes_studio_math_multistep_switch_label" : "Orientació automàtica per a l'alumnat",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Heu activat els comentaris automàtics per a aquesta pregunta",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Definiu el tipus de tasca que creareu i indiqueu els camps obligatoris. El nostre motor generarà automàticament els comentaris. Podeu fer una prova per observar com veuran els alumnes els comentaris. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Més informació",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Tanca el tauler",
+		"quizzes_studio_math_multistep_define_task_title" : "Definiu la tasca",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Enllaç a la documentació",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Tipus de tasca",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Equació d'una sola variable ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Operacions bàsiques ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Trieu el camp del menú desplegable. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Tasca per resoldre ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "No escriviu aquí la resposta correcta, només l'equació per resoldre-la. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Variables aleatòries ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Variable d'una equació ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Nom de la variable",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Indiqueu la variable única per a l'equació que resoldreu.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Incorrecte",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Gairebé heu acabat",
+		"quizzes_studio_multistep_correct_feedback_label": "Correcte",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Indiqueu els passos per veure l'orientació automàtica per a l'alumnat",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Aneu per bon camí. Continueu així!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Heu contestat correctament aquesta pregunta.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Resoleu l'equació",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Realitzeu les operacions",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Prova",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Esborra",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Símbols de multiplicació permesos",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Multiplicació implícita",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Accepta de forma tradicional la multiplicació d'elements que estan escrits de manera consecutiva. Exemple: 2y s'interpreta com a 2 vegades y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Multiplicació de punts",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Els elements operats amb un punt o un asterisc denoten una multiplicació. Exemple: 2 · y s'interpreta com a 2 vegades y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Creu de multiplicació",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Els elements operats amb una creu denoten una multiplicació. Exemple: 2 x y s'interpreta com a 2 vegades y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Falta la tasca per resoldre",
+		"quizzes_studio_math_multistep_equation_variable_error": "Falta el nom de la variable",
+
+		"quizzes_studio_multistep_error_session_start_title": "Error",
+		"quizzes_studio_multistep_error_session_start_message": "S'ha produït un error mentre s'intentava carregar la tasca. Torneu-ho a provar o aneu enrere per assegurar-vos que la tasca està definida correctament.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Tornar-ho a provar",
+		"quizzes_studio_multistep_error_session_start_go_back": "Anar enrere",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Poseu-vos en contacte amb nosaltres",
+
+		"syntax_math_multistep": "Matemàtiques amb orientació automàtica per a l'alumnat"
 	}
 }
 

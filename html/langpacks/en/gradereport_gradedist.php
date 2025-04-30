@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'en', version '4.1'.
+ * Strings for component 'gradereport_gradedist', language 'en', version '4.4'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -42,6 +42,7 @@ $string['contextbuttontitle'] = 'Chart context menu';
 $string['coursesum'] = 'Sum for the course';
 $string['coverage'] = 'The new grade distribution does not cover all grades!';
 $string['coverage_export'] = 'Items not included by letters:';
+$string['csv'] = 'csv';
 $string['decimals'] = 'The lower boundary has to be a number from 0 to 100. Maximum two decimal places are allowed.';
 $string['description'] = 'Labelling';
 $string['download'] = 'Download';
@@ -74,6 +75,7 @@ $string['newletterssubmitted'] = 'New grade letters submitted';
 $string['newletterssubmitted_description'] = 'The user with id {$a->userid} submitted the new grade letters.';
 $string['nogroupingentry'] = 'No grouping';
 $string['notification'] = 'Note: The definition of grade letters applies to all grade items in the course.';
+$string['ods'] = 'ods';
 $string['p'] = '(%)';
 $string['percent'] = 'Percent';
 $string['pluginname'] = 'Grade distribution';
@@ -86,5 +88,7 @@ $string['privacy:null_reason'] = 'This plugin does not store any personal inform
 $string['saved'] = 'Grade letters successfully changed.';
 $string['showgradeitem'] = 'Display grade item';
 $string['showgradeitem_description'] = 'Show grade display type as choice for grade item.';
-$string['submitanddownload'] = 'Save changes';
+$string['showgradeitemtype'] = 'Display grade item type';
+$string['showgradeitemtype_help'] = 'Show grade item type like quiz, assignment etc.';
 $string['sum'] = 'Sum';
+$string['xlsx'] = 'xlsx';

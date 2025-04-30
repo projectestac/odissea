@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'de', version '4.1'.
+ * Strings for component 'assign', language 'de', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Sie haben bisher keine Lösungen abgegeben.';
 $string['allocatedmarker'] = 'Zugeordnete/r Bewerter/in';
 $string['allocatedmarker_help'] = 'Person, der diese Abgabe zur Bewertung zugeordnet ist';
 $string['allowsubmissions'] = 'Nutzer/in erlauben, für diese Aufgabe weitere Lösungen abzugeben';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Die Aufgabendetails und die Lösungsabgabe sind verfügbar ab <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Abgabebeginn';
 $string['allowsubmissionsfromdate_help'] = 'Wenn diese Option aktiviert ist, können Lösungen nicht vor diesem Zeitpunkt abgegeben werden. Wenn diese Option deaktiviert ist, ist die Abgabe sofort möglich.';
-$string['allowsubmissionsfromdatesummary'] = 'Abgabe möglich ab <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Abgabeänderung erlauben';
 $string['alwaysshowdescription'] = 'Beschreibung immer anzeigen';
 $string['alwaysshowdescription_help'] = 'Wenn diese Option deaktiviert ist, wird die Aufgabenbeschreibung für Teilnehmer/innen nur ab dem Abgabebeginn angezeigt.';
@@ -147,7 +145,7 @@ $string['collapsegradepanel'] = 'Bewertungsansicht einklappen';
 $string['collapsereviewpanel'] = 'Überprüfungsansicht einklappen';
 $string['comment'] = 'Kommentar';
 $string['completiondetail:submit'] = 'Abgabe einreichen';
-$string['completionsubmit'] = 'Teilnehmer/in muss eine Abgabe machen';
+$string['completionsubmit'] = 'Eine Abgabe machen';
 $string['configshowrecentsubmissions'] = 'Alle können Nachrichten zur Aufgabenabgabe im Aktivitätenbericht sehen';
 $string['confirmbatchgradingoperation'] = 'Möchten Sie für {$a->count} Nutzer/innen die Operation {$a->operation} ausführen?';
 $string['confirmstart'] = 'Sie haben {$a}, um diese Aufgabe abzuschließen. Wenn Sie beginnen, zählt der Timer herunter und kann nicht angehalten werden.';
@@ -234,6 +232,8 @@ $string['eventsubmissionviewed'] = 'Abgabe angezeigt';
 $string['eventworkflowstateupdated'] = 'Der Workflow-Status wurde aktualisiert.';
 $string['expandreviewpanel'] = 'Überprüfungsansicht ausklappen';
 $string['extensionduedate'] = 'Verlängerung des Fälligkeitsdatums';
+$string['extensionduedatecurrent'] = 'Aktuelles Fristverlängerungsdatum';
+$string['extensionduedatenone'] = 'Keine';
 $string['extensionnotafterduedate'] = 'Das verlängerte Fälligkeitsdatum muss nach dem (normalen) Fälligkeitsdatum liegen.';
 $string['extensionnotafterfromdate'] = 'Das verlängerte Abgabeende muss nach dem Abgabebeginn liegen.';
 $string['feedback'] = 'Feedback';
@@ -298,8 +298,8 @@ $string['gradingoptions'] = 'Optionen';
 $string['gradingstatus'] = 'Bewertungsstatus';
 $string['gradingstudent'] = 'Person wird bewertet';
 $string['gradingsummary'] = 'Bewertungsüberblick';
-$string['grantextension'] = 'Verlängerung zulassen';
-$string['grantextensionforusers'] = 'Verlängerung für {$a} Teilnehmer/innen zulassen';
+$string['grantextension'] = 'Verlängerung gewähren';
+$string['grantextensionforusers'] = 'Verlängerung für {$a} Teilnehmer/innen gewähren';
 $string['groupoverrides'] = 'Gruppenänderungen';
 $string['groupoverridesdeleted'] = 'Gruppenänderungen gelöscht';
 $string['groupsnone'] = 'Keine Gruppe, auf die Sie zugreifen können.';
@@ -341,6 +341,8 @@ $string['markerfilter'] = 'Bewerter/in filtern';
 $string['markerfilternomarker'] = 'Kein/e Bewerter/in';
 $string['markingallocation'] = 'Bewerter-Zuordnung verwenden';
 $string['markingallocation_help'] = 'Nach der Aktivierung können einzelnen Nutzer/innen Bewerter zugewiesen werden. Dazu muss der Bewertungsablaufstatus aktiviert worden sein.';
+$string['markinganonymous'] = 'Teilweise Freigabe von Bewertungen bei anonymer Bewertung erlauben';
+$string['markinganonymous_help'] = 'Wenn diese Option aktiviert ist, sind zusammen mit anonymen Einreichungen und  Bewertungprozessen  auch teilweise Freigaben anonymer Berwertungen möglich.';
 $string['markingworkflow'] = 'Bewertungsworkflow verwenden';
 $string['markingworkflow_help'] = 'Nach der Aktivierung können mehrere Bewertungsdurchläufe erfolgen, bevor abschließend alle Bewertungen allen Teilnehmer/innen gleichzeitig sichtbar gemacht werden.';
 $string['markingworkflowstate'] = 'Status des Bewertungsworkflows';
@@ -363,7 +365,7 @@ $string['maxattempts_help'] = 'Maximale Anzahl von Abgabeversuchen. Nach dieser 
 $string['maxgrade'] = 'Bestwertung';
 $string['maxperpage'] = 'Maximale Aufgaben pro Seite';
 $string['maxperpage_help'] = 'Die Höchstzahl von Aufgaben, die in der Bewertungsübersicht angezeigt werden. Diese Einstellung ist sinnvoll zur Vermeidung von Timeout-Effekten bei Kursen mit sehr großen Nutzerzahlen.';
-$string['messageprovider:assign_notification'] = 'Systemnachricht zu Aufgaben';
+$string['messageprovider:assign_notification'] = 'Benachrichtigung zu Aufgaben';
 $string['modulename'] = 'Aufgabe';
 $string['modulename_help'] = 'Stellen Sie Aufgaben bereit, um Lösungen einzusammeln und Bewertungen und Feedback zu geben.
 
@@ -466,8 +468,6 @@ $string['quickgrading_help'] = 'Die Schnellbewertung ermöglicht Ihnen direkt in
 $string['quickgradingchangessaved'] = 'Die Änderungen in der Bewertung wurden gespeichert';
 $string['quickgradingresult'] = 'Schnellbewertung';
 $string['recordid'] = 'ID';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} nach Kursbeginn';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} vor Kursbeginn';
 $string['relativedatessubmissiontimeleft'] = 'Für alle Teilnehmer/innen berechnet';
 $string['removeallgroupoverrides'] = 'Alle Gruppenänderungen löschen';
 $string['removealluseroverrides'] = 'Alle Nutzeränderungen löschen';
@@ -479,7 +479,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Möchten Sie wirklich ihre Ab
 $string['removesubmissionforstudent'] = 'Abgabe entfernen für Teilnehmer/in: (id={$a->id}, Name={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Die Option \'Lösungen erneut bearbeitbar\' ist mit der anonymen Bewertung nicht kompatibel, da die Bewertungen erst in den Bewertungsbereich übertragen werden, wenn die Identitäten der Teilnehmer/innen aufgedeckt werden.';
 $string['requireallteammemberssubmit'] = 'Erfordert eine Abgabebestätigung durch alle Gruppenmitglieder';
-$string['requireallteammemberssubmit_help'] = 'Wenn die Option aktiviert ist, müssen alle Gruppenmitglieder die eingereichte Lösung bestätigen, bevor eine Abgabe als abgegeben markiert wird.';
+$string['requireallteammemberssubmit_help'] = 'Diese muss in den Abgabeeinstellungen zusammen mit der Option "Teilnehmer/innen müssen die Taste \'Senden\' klicken“ verwendet werden.
+
+Wenn diese Option aktiviert ist, müssen alle Gruppenmitglieder auf die Taste \'Senden\' klicken, damit die Gruppeneinreichung als eingereicht gilt. Wenn diese Option deaktiviert ist, kann ein einzelnes Gruppenmitglied auf die Schaltfläche \'Senden\' klicken.';
 $string['requiresubmissionstatement'] = 'Erklärung zur Eigenständigkeit muss bestätigt werden';
 $string['requiresubmissionstatement_help'] = 'Teilnehmer/innen müssen die Erklärung zur Eigenständigkeit bei Lösungen für diese Aufgabe abgeben.';
 $string['revealidentities'] = 'Identität der Teilnehmer/innen aufdecken';
@@ -569,6 +571,7 @@ $string['submissionstatement'] = 'Erklärung zur Eigenständigkeit';
 $string['submissionstatement_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit abzugeben.';
 $string['submissionstatementacceptedlog'] = 'Erklärung zur Eigenständigkeit wurde akzeptiert von {$a}';
 $string['submissionstatementdefault'] = 'Diese Arbeit ist meine eigene Leistung. Sofern ich fremde Quellen verwendet habe, sind diese Stellen entsprechend gekennzeichnet.';
+$string['submissionstatementrequired'] = 'Sie müssen dieser Erklärung zustimmen, bevor Sie die Aufgabe einreichen können.';
 $string['submissionstatementteamsubmission'] = 'Gruppenerklärung zur Eigenständigkeit';
 $string['submissionstatementteamsubmission_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit der Gruppe abzugeben.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Gruppenerklärung zur Eigenständigkeit, der alle Gruppenmitglieder zustimmen';

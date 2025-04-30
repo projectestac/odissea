@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'nl', version '4.1'.
+ * Strings for component 'tiny_equation', language 'nl', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'Lijst van TeX-commando\'s op de Griekse symbole
 $string['librarygroup4'] = 'Geavanceerd';
 $string['librarygroup4_desc'] = 'Lijst van TeX-commando\'s  op de geavanceerdtab.';
 $string['modaltitle'] = 'Vergelijkingseditor';
-$string['pluginname'] = 'Tiny vergelijkingseditor';
+$string['pluginname'] = 'Vergelijkingseditor';
 $string['preview'] = 'Voorbeeldweergave vergelijking';
 $string['privacy:metadata'] = 'De vergelijkingseditor voor TinyMCE slaat geen persoonsgegevens op.';
 $string['saveequation'] = 'Vergelijking bewaren';

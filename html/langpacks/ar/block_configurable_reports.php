@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'ar', version '4.1'.
+ * Strings for component 'block_configurable_reports', language 'ar', version '4.4'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -32,9 +32,10 @@ $string['average'] = 'معدل';
 $string['categories'] = 'الاقسام';
 $string['cellalign'] = 'محاذاة الخلية';
 $string['cellsize'] = 'حجم الخلية';
-$string['comp_calcs_help'] = '</p>هنا يمكنك إضافة حسابات للخانات، على سبيل المثال: متوسط عدد المستخدمين المسجلين في الدورات التدريبية<p>
-<p>معلومات اكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_calculations_help'] = '<p> يمكنك هنا إضافة حسابات للخانات، على سبيل المثال: متوسط عدد المستخدمين المسجلين في الدورات </ p>';
+$string['comp_calcs_help'] = '<p>هنا يمكنك إضافة حسابات للأعمدة، على سبيل المثال: متوسط عدد المستخدمين المسجلين في المساقات</p>
+
+<p>مساعدة أكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['comp_calculations_help'] = '<p>يمكنك هنا إضافة حسابات للأعمدة، على سبيل المثال: متوسط عدد المستخدمين المسجلين في المساقات</p>';
 $string['comp_columns'] = 'خانات';
 $string['comp_columns_help'] = '<p> يمكنك هنا اختيار الخانات المختلفة لتقريرك بناءً على نوع التقرير </ p>
 <p>معلومات اكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
@@ -72,6 +73,7 @@ $string['datatables_sortdescending'] = ': تنشيط فرز العمود تنا�
 $string['dbname'] = 'اسم قاعدة البيانات';
 $string['dbpass'] = 'كلمة مرور قاعدة البيانات';
 $string['dbpassinfo'] = 'كلمة مرور قاعدة البيانات البعيدة (لاسم المستخدم أعلاه)';
+$string['description'] = 'الوصف';
 $string['displayreportslist'] = 'يعرض قائمة التقارير في متن الكتلة';
 $string['email_send'] = 'إرسل';
 $string['error_value_expected_integer'] = 'المتوقع قيمة رقمية صحيحة';
@@ -83,6 +85,7 @@ $string['footer'] = 'التذييل';
 $string['globalstatsshouldbeenabled'] = 'لا بد من تمكين إحائيات الموقع. إذهب إلى الإدارة > المخدم > الإحصائيات';
 $string['head_color'] = 'لون خلفية الرسم البياني';
 $string['head_size'] = 'حجم الرسم البياني';
+$string['importreport'] = 'استيراد التقرير';
 $string['label_field_help'] = 'الحقل المقدم للأسماء العائدة للأشياء المُمَثَّلة في الرسم البياني';
 $string['lastexecutiontime'] = 'وقت التنفيذ = {$a} (ثوان)';
 $string['nopermissionsyet'] = 'لا صلاحيات بعد';

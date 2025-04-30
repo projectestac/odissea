@@ -74,7 +74,7 @@ $string['proxyurl'] = 'PROXY_URL:';
 $string['cachedir'] = 'CACHE_DIR:';
 $string['serviceurl'] = 'SERVICE_URL:';
 $string['wqsummary'] = 'This adds a generic Wiris Quizzes question. Only for test purpose. It will be hide from here.';
-$string['wirisquestionincorrect'] = 'Sorry! The system can not generate one of the questions of the quiz. <br />Maybe there is a temporary connection problem right now. <br />Maybe the question algorithm has a bug, and fails sometimes. <br />Maybe it will fail always. <br />Don\'t panic... <br />You can retry the quiz, without penalty, just clicking Continue. <br />You can also tell the Teachers that there is an issue with the question titled: \'{$a->questionname}\'';
+$string['wirisquestionincorrect'] = 'El sistema no ha pogut generar una de les preguntes del qüestionari. Potser és un problema de connexió temporal, o que hi ha un problema en la configuració de la pregunta. Pots tornar a intentar aquest qüestionari sense cap penalització clicant Continuar. Si aquest error persisteix, pots dir als teus professors que hi ha un problema amb la pregunta {$a->questionname}';
 $string['wirisquizzeserror'] = 'Sorry! There was an error in Wiris Quizzes.';
 $string['failedtoloadwirisquizzesfromxml'] = 'Failed to load Wiris Quizzes XML definition for question id';
 $string['connectionsettings'] = 'Connection settings';
@@ -95,3 +95,6 @@ $string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id'
 $string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
 
 $string['auxiliar_text'] = 'Escriviu un raonament opcional per a la vostra resposta:';
+
+$string['corruptquestion_edit'] = 'AVÍS: Aquesta pregunta ha sigut corrompuda i se n\' perdut la informació matemàtica. Hem intentat refer tot el què hem pogut, però cal que reescriguis de nou l\'algorisme de CalcMe si la teva pregunta en tenia un, i que tornis a desar les opcions d\'entrada i validació personalitzades. Contacta amb el teu administrador per a més detalls.';
+$string['corruptquestion_attempt'] = 'La pregunta {$a->questionname} ha sigut corrompuda i no s\'ha pogut carregar. Si us plau, contacta amb els teus professors perquè ho puguin arreglar.';

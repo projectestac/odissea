@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', version '4.1'.
+ * Strings for component 'lti', language 'ja', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'ツールからの評定を受け付ける';
 $string['accept_grades_admin_help'] = 'このツールのインスタンスに関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
 
 いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。';
+$string['accept_grades_from_tool'] = '評定表に {$a} が評点を追加できるようにする';
 $string['accept_grades_help'] = 'この外部ツールのインスタンスにのみ関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
 
 いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。
@@ -46,6 +47,7 @@ $string['add_ltiadv'] = 'LTIアドバンテージを追加する';
 $string['add_ltilegacy'] = 'レガシLTIを追加する';
 $string['addnewapp'] = '外部アプリケーションを有効にする';
 $string['addserver'] = '新しい信頼できるサーバを追加する';
+$string['addtool'] = 'ツールを追加する';
 $string['addtype'] = '事前設定ツールを追加する';
 $string['allow'] = '許可';
 $string['allowsetting'] = 'ツールにMoodle内での8Kの設定保存を許可する';
@@ -86,18 +88,27 @@ $string['configtoolurl'] = 'デフォルトリモートツールURL';
 $string['configtypes'] = 'LTIアプリケーションを有効にする';
 $string['configured'] = '設定';
 $string['confirmtoolactivation'] = '本当にこのツールを有効にしてもよろしいですか?';
-$string['contentitem'] = 'Content-Itemメッセージ';
 $string['contentitem_deeplinking'] = 'ディープリンクをサポートする (Content-Item Message)';
 $string['contentitem_deeplinking_help'] = 'この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。';
-$string['contentitem_help'] = 'この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。';
 $string['contentitem_multiple_description'] = '次のアイテムがあなたのコースに追加されます:';
 $string['contentitem_multiple_graded'] = '評定済み活動 (最大評点: {$a})';
+$string['contentselected'] = '選択済みコンテンツ';
 $string['course_tool_types'] = 'コースツール';
 $string['courseactivitiesorresources'] = 'コース活動またはリソース';
+$string['courseexternaltooladd'] = '新しいLTI外部ツールを追加する';
+$string['courseexternaltooladdsuccess'] = '{$a} が追加されました。';
+$string['courseexternaltooledit'] = '{$a} を編集する';
+$string['courseexternaltooleditsuccess'] = '変更が保存されました。';
+$string['courseexternaltooliconalt'] = '{$a} のアイコン';
+$string['courseexternaltools'] = 'LTI外部ツール';
+$string['courseexternaltoolsinfo'] = 'LTI外部ツールはインタラクティブコンテンツまたは評価等、あなたのコースに統合できるアドオンアプリです。学生はあなたのコースを離れることなくこれらにアクセスおよび使用できます。';
+$string['courseexternaltoolsnoeditpermissions'] = 'あなたにはこのツールを編集するためのパーミッションがありません。';
+$string['courseexternaltoolsnoviewpermissions'] = 'コース外部ツールを表示する';
 $string['courseid'] = 'コースIDナンバ';
 $string['courseinformation'] = 'コース情報';
 $string['courselink'] = 'コースに移動する';
 $string['coursemisconf'] = 'コースが正しく設定されていません。';
+$string['coursetooldeleted'] = '{$a} が削除されました。';
 $string['createdon'] = '作成日';
 $string['curllibrarymissing'] = '外部ツールにはPHP Curl拡張モジュールが必要です。';
 $string['custom'] = 'カスタムパラメータ';
@@ -124,23 +135,19 @@ $string['delegate'] = '教師に委任する';
 $string['delegate_tool'] = 'ディープリンク定義で指定または教師を代表する';
 $string['delete'] = '削除';
 $string['delete_confirmation'] = '本当にこの事前設定ツールを削除してもよろしいですか?';
+$string['deletecoursetool'] = '{$a} を削除する';
+$string['deletecoursetoolconfirm'] = 'ここではあなたのコースで利用可能なLTIツールから {$a} を削除します。';
+$string['deletecoursetoolwithusageconfirm'] = '{a} は現在あなたのコースの少なくとも1つの活動で使用されています。あなたがこのツールを削除した場合、このツールを使用している活動は動作しなくなります。<br /><br />本当に {$a} を削除してもよろしいですか?';
 $string['deletetype'] = '事前設定ツールを削除する';
-$string['display_description'] = '起動時に活動説明を表示する';
-$string['display_description_help'] = 'このオプションを有効にした場合、活動説明 (上記) がツールプロバイダのコンテンツの上に表示されます。
-
-説明はツールの起動に関して付加的なインストラクションを提供するために使用できますが必須ではありません。
-
-ツール起動コンテナが新しいウィンドウの場合、説明が表示されることがありません。';
-$string['display_name'] = '起動時に活動名を表示する';
-$string['display_name_help'] = 'このオプションを有効にした場合、活動名 (上記) がツールプロバイダのコンテンツの上に表示されます。
-
-ツールプロバイダはタイトルを表示することもできます。このオプションにより活動タイトルが2回表示されることを防ぐことができます。
-
-ツール起動コンテナが新しいウィンドウの場合、説明が表示されることがありません。';
+$string['display_description'] = '学生のツールアクセス時に活動の説明を表示する';
+$string['display_description_help'] = 'このツールのコンテンツはコース内のページに埋め込まれて表示されます。この設定では活動説明がそのページに表示されるかどうか決定します。';
+$string['display_name'] = '学生のツールアクセス時に活動名を表示する';
+$string['display_name_help'] = 'このツールのコンテンツはコース内のページに埋め込まれて表示されます。この設定では活動名がそのページに表示されるかどうか決定します。';
 $string['domain_mismatch'] = 'ツールURLのドメインがツール設定と合致しません。';
 $string['donot'] = '送信しない';
 $string['donotaccept'] = '承認しない';
 $string['donotallow'] = '許可しない';
+$string['dontshowinactivitychooser'] = '活動チューザに表示しない';
 $string['duplicateregurl'] = 'この登録URLはすでに使用されています。';
 $string['dynreg_update_btn_new'] = '新しい外部ツールとして登録する';
 $string['dynreg_update_btn_update'] = '更新';
@@ -151,6 +158,12 @@ $string['dynreg_update_url'] = 'ベースURL';
 $string['dynreg_update_version'] = 'LTIバージョン';
 $string['dynreg_update_warn_dupdomain'] = '同一ドメイン下での複数の外部ツールの存在はお勧めできません。';
 $string['editdescription'] = 'このツールに説明を追加するにはここをクリックしてください。';
+$string['editmanualinstancedeprecationwarning'] = '手動で設定された外部ツール活動はサポートされなくなりました。ご心配なさらないでください。この活動はそのまま動作しますが、あなたはここでツール設定を変更できなくなりました。
+<br /><br />
+ツールに変更を加えたり、ツールを使用して新しい活動を作成するには「
+コース > 詳細 > LTI外部ツール」であなたのコースにツールを追加する必要があります。その後、あなたは活動セレクタでツールを直接選択して新しい活動を作成できます。
+<br /><br />
+LTI外部ツールの追加に関する詳細はドキュメント<a href="{$a}" target="_blank">外部ツール</a>をご覧ください。';
 $string['edittype'] = '事前設定ツールを編集する';
 $string['embed'] = '埋め込み';
 $string['embed_no_blocks'] = '埋め込み (ブロックなし)';
@@ -158,6 +171,7 @@ $string['enableemailnotification'] = '通知メールを送信する';
 $string['enableemailnotification_help'] = 'この設定を有効にした場合、ツール送信が評定された時点で学生に通知メールが送信されます。';
 $string['enterkeyandsecret'] = 'あなたのコンシューマキーおよび共有シークレットを入力してください。';
 $string['enterkeyandsecret_help'] = 'あなたにコンシューマキーおよび共有シークレットがある場合、ここに入力してください。';
+$string['entitycourseexternaltools'] = 'LTI外部ツール';
 $string['errorbadurl'] = 'URLは有効なツールURLまたはカートリッジではありません。';
 $string['errorincorrectconsumerkey'] = 'コンシューマキーが正しくありません。';
 $string['errorinvaliddata'] = '無効なデータ: {$a}';
@@ -245,11 +259,11 @@ $string['launchinpopup_help'] = '起動コンテナはコースからツール�
 
 * **新しいウィンドウ** - ツールは利用可能なスペースすべてを占有して新しいウィンドウに表示されます。ブラウザにより、新しいタブまたはポップアップウィンドウが使用されます。ブラウザでは新しいウィンドウのオープンを抑制することができます。';
 $string['launchoptions'] = '起動オプション';
-$string['leaveblank'] = '必要でない場合、空白にしてください。';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'コース個別ツール設定を追加する';
 $string['lti:addinstance'] = '新しい外部ツール活動を追加する';
 $string['lti:addmanualinstance'] = '手動設定ツールを追加する';
+$string['lti:addmanualinstanceprohibitederror'] = 'コースツール定義のないツールの手動作成はサポートされなくなりました。まずコースツールを作成してください。そしてそれを使用して活動インスタンスを作成してください。';
 $string['lti:addpreconfiguredinstance'] = '事前設定ツールを追加する';
 $string['lti:admin'] = 'ツール起動時に管理者になる';
 $string['lti:grade'] = '外部ツールから戻された評点を表示する';
@@ -314,6 +328,7 @@ $string['no_tp_configured'] = '登録解除された外部ツール登録設定�
 $string['no_tp_pending'] = '保留中の外部ツール登録はありません。';
 $string['no_tp_rejected'] = '拒否された外部ツール登録はありません。';
 $string['noattempts'] = 'このツールインスタンスでは受験されたものはありません。';
+$string['nocourseexternaltoolsnotice'] = 'まだLTI外部ツールはありません。';
 $string['noltis'] = '外部ツールインスタンスはありません。';
 $string['noprofileservice'] = 'プロファイルサービスが見つかりませんでした。';
 $string['noservers'] = 'サーバが見つかりませんでした。';
@@ -420,6 +435,8 @@ $string['resourcekey_help'] = '設定処理の一環として提供されるた�
 
 Moodleからの安全な通信を必要とせず評定レポートのような追加的なサービスを提供しない場合、コンシューマキーは必要ではありません。';
 $string['resourceurl'] = 'リソースURL';
+$string['restricttocategory'] = 'カテゴリに制限する';
+$string['restricttocategory_help'] = 'カテゴリ内のコースでこのツールの使用を制限したい場合、リストからカテゴリを選択してください。';
 $string['return_to_course'] = 'コースに戻るには<a href="{$a->link}" target="_top">ここ</a>をクリックしてください。';
 $string['saveallfeedback'] = '私のフィードバックすべてを保存する';
 $string['search:activity'] = '外部ツール - 活動情報';
@@ -430,6 +447,7 @@ $string['secure_launch_url_help'] = 'ツールURLに似ていますがツールU
 
 SSL経由での起動を強制するためツールURLにhttpsアドレスを設定することもできます。また、このフィールドは空白のままにすることもできます。';
 $string['selectcontent'] = 'コンテンツを選択する';
+$string['selectcontentvalidationerror'] = 'あなたはこの活動のコンテンツを選択する必要があります。';
 $string['send'] = '送信';
 $string['services'] = 'サービス';
 $string['services_help'] = 'あなたがツールプロバイダに提供したいサービスを選択してください。2つ以上のサービスを選択することができます。';
@@ -463,6 +481,7 @@ $string['show_in_course_lti2'] = 'ツール設定使用';
 $string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。';
 $string['show_in_course_no'] = '表示しない、合致するツールURLが入力された場合のみ使用する';
 $string['show_in_course_preconfigured'] = '外部ツール追加時に事前設定ツールとして表示する';
+$string['showinactivitychooser'] = '活動チューザに表示する';
 $string['sitehost'] = 'サイトホスト名';
 $string['siteid'] = 'サイトID';
 $string['size'] = 'サイズパラメータ';
@@ -511,6 +530,7 @@ $string['toolsetup'] = '外部ツール設定';
 $string['tooltypeadded'] = '事前設定ツールが追加されました。';
 $string['tooltypedeleted'] = '事前設定ツールが削除されました。';
 $string['tooltypenotdeleted'] = '事前設定ツールを削除できませんでした。';
+$string['tooltypenotfounderror'] = 'この活動で使用したLTIツールは削除されました。サポートが必要な場合、あなたの教師またはサイト管理者にご連絡ください。';
 $string['tooltypes'] = 'ツール';
 $string['tooltypeupdated'] = '事前設定ツールが更新されました。';
 $string['toolurl'] = 'ツールURL';
@@ -548,6 +568,7 @@ $string['unabletocreatetooltype'] = 'ツールを作成できません。';
 $string['unabletofindtooltype'] = '{$a->id} のツールが見つかりません。';
 $string['unknownstate'] = '不明なステータス';
 $string['update'] = '更新';
+$string['usage'] = '使用回数';
 $string['useraccountinformation'] = 'ユーザアカウント情報';
 $string['userpersonalinformation'] = 'ユーザ個人情報';
 $string['using_tool_cartridge'] = 'ツールカートリッジを使用する';

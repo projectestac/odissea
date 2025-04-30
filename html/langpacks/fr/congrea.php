@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'congrea', language 'fr', version '4.1'.
+ * Strings for component 'congrea', language 'fr', version '4.4'.
  *
  * @package     congrea
  * @category    string
@@ -117,7 +117,7 @@ $string['getformheading'] = 'Obtenez le plan gratuit Congrea';
 $string['getkey'] = 'Clef API Congrea';
 $string['graphic:view'] = 'Voir le graphique des événements';
 $string['hourssetting'] = 'Vous avez saisi une date ou une heure non valable. Assurez-vous que la durée totale de la session ne dépasse pas 10 heures.';
-$string['httpserror'] = 'Attention !  Le protocole HTTPS (certificat SSL) est nécessaire pour Congrea. Il est détecté qu’actuellement Moodle ne fonctionne pas sur https et donc certaines fonctionnalités de Congrea peuvent ne pas fonctionner.';
+$string['httpserror'] = 'Attention ! Le protocole HTTPS (certificat SSL) est nécessaire pour Congrea. Il est détecté qu’actuellement Moodle ne fonctionne pas sur https et donc certaines fonctionnalités de Congrea peuvent ne pas fonctionner.';
 $string['indvprogress'] = 'Tâche en cours';
 $string['invalidkey'] = '<div class="alert alert-warning alert-block fade in">Clef API ou clef secrète non valide ou manquante</div>';
 $string['keyis'] = 'Clef API :';
@@ -131,7 +131,7 @@ $string['missingdomain'] = 'Nom de domaine manquant';
 $string['missingprivacy'] = 'Obligation d’accepter les politiques de confidentialité.';
 $string['missingterms'] = 'Lisez les conditions générales et cochez la case.';
 $string['modulename'] = 'Congrea';
-$string['modulename_help'] = 'Utilisez le module Congrea pour un apprentissage en ligne en temps réel.  Le module Congrea vous permet de participer à l’apprentissage synchrone, ce qui signifie que l’enseignant et les étudiants sont connectés à l’environnement d’apprentissage virtuel et interagissent entre eux en même temps.
+$string['modulename_help'] = 'Utilisez le module Congrea pour un apprentissage en ligne en temps réel. Le module Congrea vous permet de participer à l’apprentissage synchrone, ce qui signifie que l’enseignant et les étudiants sont connectés à l’environnement d’apprentissage virtuel et interagissent entre eux en même temps.
 Ce module fournit aux étudiants des outils de communication asynchrone, tels que le tableau blanc et les capacités de chat';
 $string['modulenameplural'] = 'Congreas';
 $string['newsessionadded'] = 'Un nouvel horaire est créé dans l’emploi du temps.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tiny', language 'ur', version '4.1'.
+ * Strings for component 'editor_tiny', language 'ur', version '4.4'.
  *
  * @package     editor_tiny
  * @category    string

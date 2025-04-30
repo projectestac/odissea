@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ro', version '4.1'.
+ * Strings for component 'gradereport_user', language 'ro', version '4.4'.
  *
  * @package     gradereport_user
  * @category    string
@@ -33,5 +33,6 @@ $string['pluginname'] = 'Raportul utilizatorului';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Dacă să vizualizați raportul ca utilizator curent sau alt utilizator în rapoartele de notă';
 $string['tablesummary'] = 'Tabelul este aranjat ca o listă de elemente de note, inclusiv categorii de elemente de note. Când elementele se află într-o categorie, acestea vor fi indicate ca atare.';
 $string['user:view'] = 'Vizualizează raportul utilizatorului';
+$string['userreport_user'] = 'Raport utilizator';
 $string['userreportdesc'] = 'Rapoartele utilizatorului includ notele utilizatorului, feedback-ul și nota finală a cursului.';
-$string['userreports'] = 'Selectează un utilizator de mai sus pentru a-i vedea raportul';
+$string['userreports'] = 'Caută un utilizator pentru a-i vedea raportul';

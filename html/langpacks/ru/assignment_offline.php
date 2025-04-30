@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_offline', language 'ru', version '4.1'.
+ * Strings for component 'assignment_offline', language 'ru', version '4.4'.
  *
  * @package     assignment_offline
  * @category    string

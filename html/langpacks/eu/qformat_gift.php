@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'eu', version '4.1'.
+ * Strings for component 'qformat_gift', language 'eu', version '4.4'.
  *
  * @package     qformat_gift
  * @category    string

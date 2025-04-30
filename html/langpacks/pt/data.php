@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', version '4.1'.
+ * Strings for component 'data', language 'pt', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} comentário(s)';
 $string['commentsoff'] = 'A opção de comentários não está ativa';
 $string['completiondetail:entries'] = 'Adicionar registos: {$a}';
 $string['completionentries'] = 'Requer registos';
-$string['completionentriescount'] = 'Número de registos:&nbsp;';
+$string['completionentriescount'] = 'Adicionar entradas';
 $string['completionentriesdesc'] = 'Número mínimo de registos requeridos: {$a}';
 $string['configenablerssfeeds'] = 'A ativação desta configuração permite a geração de listas RSS em todas as bases de dados, ao nível do site. Para utilizar esta funcionalidade numa base de dados específica deve ainda ativar a mesma na respectiva página de configuração.';
 $string['confirmdeletefield'] = 'Tem a certeza de que pretende apagar este campo?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Crie campos para armazenar diferentes tipos de dados.
 $string['createtemplates'] = 'Os modelos definem a interface da sua atividade. Depois de criar campos, os modelos serão criados automaticamente. Como alternativa, pode usar um protótipo, que inclua campos e modelos.';
 $string['csstemplate'] = 'CSS personalizado';
 $string['csvfailed'] = 'Não foi possível ler a informação existente no ficheiro CSV';
-$string['csvfile'] = 'Ficheiro CSV';
+$string['csvfile'] = 'CSV ou Zip com ficheiro CSV';
 $string['csvimport'] = 'Importação de ficheiro CSV';
 $string['csvimport_help'] = 'Os registos podem ser importados através de um ficheiro de texto, indicando na primeira linha os nomes dos campos e nas linhas seguintes a respetiva informação, com um registo por linha.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Valores separados por vírgulas">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'Tem de adicionar mais {$a->entriesleft} registo(s
 $string['entrieslefttoaddtoview'] = 'Tem de adicionar mais {$a->entrieslefttoview} registo(s) para conseguir visualizar os registos dos outros participantes.';
 $string['entry'] = 'Registo';
 $string['entrysaved'] = 'O seu registo foi guardado';
+$string['errordatafilenotfound'] = 'O ficheiro não pôde ser importado. Os tipos de ficheiro aceites são CSV ou Zip contendo um ficheiro CSV no formato usado para exportar os registos.';
 $string['errormustbeteacher'] = 'Apenas os professores podem usar esta página!';
 $string['errormustsupplyvalue'] = 'Indique aqui um valor.';
 $string['errorpresetexists'] = 'Já existe um protótipo com este nome.';
@@ -199,7 +200,11 @@ $string['fieldnotmatched'] = 'Os seguintes campos presentes no ficheiro não exi
 $string['fieldoptions'] = 'Opções (uma por linha)';
 $string['fields'] = 'Campos';
 $string['fieldshelp'] = 'Crie campos para armazenar diferentes tipos de dados. Os campos definem a estrutura das entradas na sua base de dados.';
+$string['fieldsinformationtags'] = 'Informação do campo';
 $string['fieldsnavigation'] = 'Navegação terciária dos campos';
+$string['fieldtagdescription'] = 'Descrição de {$a}';
+$string['fieldtagid'] = 'ID de {$a}';
+$string['fieldtagname'] = 'Nome de {$a}';
 $string['fieldupdated'] = 'O campo foi atualizado';
 $string['fieldwidth'] = 'Largura';
 $string['fieldwidthlistview'] = 'Largura (em píxeis) no modo lista';
@@ -233,6 +238,7 @@ Não aparecerá na lista de potótipos.';
 $string['importpresetmissingcapability'] = 'Não tem permissão para importar protótipos.';
 $string['importsuccess'] = 'Protótipo aplicado com sucesso.';
 $string['includeapproval'] = 'Incluir estado de aprovação';
+$string['includefiles'] = 'Incluir ficheiros na exportação';
 $string['includetags'] = 'Incluir palavras-chave';
 $string['includetime'] = 'Incluir data de criação/modificação';
 $string['includeuserdetails'] = 'Incluir detalhes do utilizador';
@@ -342,6 +348,7 @@ $string['openafterclose'] = 'Indicou uma data de abertura posterior à data de f
 $string['optionaldescription'] = 'Descrição resumida (opcional)';
 $string['optionalfilename'] = 'Nome do ficheiro (opcional)';
 $string['other'] = 'Outro';
+$string['otherfields'] = 'Todos os outros campos';
 $string['overrwritedesc'] = 'Se ativar esta opção, o nome do protótipo será substituído por este e substituirá o conteúdo.';
 $string['overwrite'] = 'Substituir';
 $string['overwritesettings'] = 'Substituir configurações atuais, tais como, comentários, classificações, etc.';
@@ -359,6 +366,7 @@ $string['presetnotselected'] = 'Nenhum protótipo foi selecionado.';
 $string['presets'] = 'Protótipos';
 $string['presetshelp'] = 'Escolher protótipo para usar como ponto de partida';
 $string['preview'] = 'Pré-visualização de {$a}';
+$string['previewaction'] = 'Pré-visualização';
 $string['privacy:metadata:commentpurpose'] = 'Comentários aos registos da Base de dados';
 $string['privacy:metadata:data_content'] = 'O conteúdo de um campo';
 $string['privacy:metadata:data_content:content'] = 'Conteúdo';
@@ -402,7 +410,7 @@ $string['resetalltemplates'] = 'Reiniciar modelos';
 $string['resetalltemplatesconfirm'] = 'Está prestes a remover todos os modelos do seu protótipo atual. Se pretender restaurar os modelos mais tarde, tem de escolher novamente o protótipo no separador \'Protótipos\'.';
 $string['resetalltemplatesconfirmtitle'] = 'Reiniciar todos os modelos?';
 $string['resetsettings'] = 'Reiniciar filtros';
-$string['resettemplate'] = 'Reiniciar modelo';
+$string['resettemplate'] = 'Reiniciar modelo atual';
 $string['resettemplateconfirm'] = 'Removerá permanentemente {$a} do protótipo atual.';
 $string['resettemplateconfirmtitle'] = 'Redefinir modelo?';
 $string['resizingimages'] = 'A redimensionar imagens...';
@@ -428,6 +436,7 @@ $string['searchresults'] = 'Registos que contêm "{$a}"';
 $string['selectedrequired'] = 'Todos os selecionados são obrigatórios';
 $string['selectexportoptions'] = 'Selecione as opções da exportação';
 $string['selectfields'] = 'Selecionar campos';
+$string['selectfordeletion'] = 'Selecione o registo para apagar';
 $string['showall'] = 'Mostrar todos os registos';
 $string['showmore'] = 'Mostrar mais';
 $string['single'] = 'Ver registo';
@@ -450,24 +459,19 @@ $string['templatesnavigation'] = 'Navegação terciária dos modelos';
 $string['text'] = 'Texto';
 $string['textarea'] = 'Área de texto';
 $string['timeadded'] = 'Data e hora de criação';
-$string['timemodified'] = 'Data e hora da última modificação';
+$string['timemodified'] = 'Data e hora de modificação';
 $string['todatabase'] = 'para esta base de dados.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Não foi definido o método de ação em Data_Preset para executar a ação "{$a}".';
 $string['unknown'] = 'Campo desconhecido';
-$string['unsupportedexport'] = 'O tipo de campo <b>{$a->fieldtype}</b> não pode ser exportado.';
 $string['unsupportedfields'] = 'Campos não suportados';
 $string['unsupportedfieldslist'] = 'Os seguintes campos não podem ser exportados:';
 $string['updatefield'] = 'Atualizar um campo existente';
 $string['uploadfile'] = 'Enviar ficheiro';
-$string['uploadrecords'] = 'Importar registos a partir de ficheiro';
-$string['uploadrecords_help'] = 'Os registos podem ser carregados via ficheiro de texto. O ficheiro deve ter o seguinte formato:
+$string['uploadrecords'] = 'Importar registos';
+$string['uploadrecords_help'] = 'Importar registos que exportou de outra base de dados, via CSV ou Zip contendo um ficheiro CSV (se os ficheiros forem incluídos na exportação).
 
-* Cada linha do ficheiro contém um registo
-* Cada registo é uma linha com uma série de dados separados pelo separador selecionado
-*O primeiro registo contém uma lista com os nomes dos campos, definindo assim o formato do resto do ficheiro
-
-O delimitador dos valores dos campos é um caráter que marca o início e fim do valor de cada campo. Em geral pode deixar indefinido.';
+Como alternativa, para criar um ficheiro CSV para importação, adicione um registo à base de dados e exporte-o. Edite o ficheiro CSV e adicione mais registos.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Incluir na pesquisa.';

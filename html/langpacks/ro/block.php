@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ro', version '4.1'.
+ * Strings for component 'block', language 'ro', version '4.4'.
  *
  * @package     block
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addblock'] = 'Adaugă {$a} bloc';
 $string['anypagematchingtheabove'] = 'Orice pagină care corespunde cu cele de mai sus';
 $string['appearsinsubcontexts'] = 'Apare în sub-contexte';
 $string['assignrolesinblock'] = 'Asignează roluri în blocul {$a}';
@@ -67,7 +68,7 @@ $string['restrictpagetypes'] = 'Afișează pe tipurile de pagini';
 $string['showblock'] = 'Afișează blocul {$a}';
 $string['showoncontextandsubs'] = 'Afişează pe \'{$a}\' şi pe toate paginile din ea';
 $string['showoncontextonly'] = 'Afişează doar pe \'{$a}\'';
-$string['showonentiresite'] = 'Afişează pe întregul site';
+$string['showonentiresite'] = 'Afişează în întregul site';
 $string['showonfrontpageandsubs'] = 'Afişează pe pagina principală a site-ului şi pe orice pagină adăugată paginii principale';
 $string['showonfrontpageonly'] = 'Afişează doar pe pagina principală a site-ului';
 $string['subpages'] = 'Selectare pagini';

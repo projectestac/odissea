@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'uk', version '4.1'.
+ * Strings for component 'h5pactivity', language 'uk', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -62,6 +62,8 @@ $string['displayembed'] = 'Вбудована кнопка';
 $string['displayexport'] = 'Дозволити завантаження';
 $string['dnduploadh5pactivity'] = 'Додайте дію H5P';
 $string['duration'] = 'Тривалість';
+$string['enablesavestate'] = 'Зберегти стан';
+$string['enablesavestate_help'] = 'Автоматично зберігати поточний стан користувача. Користувач може повернутися пізніше та продовжити з того місця, де зупинився.';
 $string['enabletracking'] = 'Увімкнути відстеження спроб';
 $string['false'] = 'Помилковий';
 $string['grade_average_attempt'] = 'Середня оцінка';
@@ -78,6 +80,7 @@ $string['grade_h5p'] = 'Оцінка: {$a}';
 $string['grade_highest_attempt'] = 'Вища оцінка';
 $string['grade_last_attempt'] = 'Остання спроба';
 $string['grade_manual'] = 'Не розраховуйте оцінку';
+$string['gradenoun_h5p'] = 'Оцінка: {$a}';
 $string['h5pactivity:addinstance'] = 'Додайте новий H5P';
 $string['h5pactivity:reviewattempts'] = 'Перегляньте спроби H5P';
 $string['h5pactivity:submit'] = 'Надіслати спроби H5P';
@@ -113,6 +116,7 @@ $string['privacy:metadata:timemodified'] = 'Останній елемент ча
 $string['privacy:metadata:userid'] = 'Ідентифікатор користувача, який отримав доступ до активності H5P';
 $string['privacy:metadata:xapi_track'] = 'Інформація про спробу відстеження';
 $string['privacy:metadata:xapi_track_results'] = 'Інформація про відстеження результатів спроб';
+$string['privacy:metadata:xapisummary'] = 'Діяльність H5P містить інформацію про стан вмісту xAPI, збережену користувачем.';
 $string['report_viewed'] = 'Звіт переглянуто';
 $string['result_compound'] = 'Комбінований частковий бал';
 $string['result_fill-in'] = 'Заповніть текст';
@@ -122,12 +126,13 @@ $string['result_other'] = 'Невідомий тип взаємодії';
 $string['result_sequencing_answer'] = 'Значення позиції';
 $string['result_sequencing_choice'] = 'Позиції';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Переглянути всі спроби (подано {$a})';
 $string['review_mode'] = 'Спроби перегляду';
 $string['review_my_attempts'] = 'Перегляньте мої спроби';
 $string['review_none'] = 'Учасники не можуть переглядати власні спроби';
 $string['review_on_completion'] = 'Учасники можуть переглянути власні спроби';
 $string['review_user_attempts'] = 'Переглянути спроби користувачів ({$a})';
+$string['savestatefreq'] = 'Зберегти стан частоти';
+$string['savestatefreq_help'] = 'Як часто (у секундах) зберігається поточний стан користувача.';
 $string['score'] = 'Оцінка';
 $string['score_out_of'] = '{$a->rawscore} з {$a->maxscore}';
 $string['search:activity'] = 'H5P - інформація про діяльність';

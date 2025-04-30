@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'uk', version '4.1'.
+ * Strings for component 'user', language 'uk', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'Будьте обережні �
 $string['target:upcomingactivitiesdue'] = 'Заплановані заходи';
 $string['target:upcomingactivitiesdue_help'] = 'Ця ціль генерує нагадування про майбутні дії.';
 $string['target:upcomingactivitiesdueinfo'] = 'Тут наведено список усіх майбутніх заходів. Ці студенти отримали ці знання безпосередньо.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'Профіль користувача';

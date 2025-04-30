@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ar', version '4.1'.
+ * Strings for component 'competency', language 'ar', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'تقييم الكفاءة تم و�
 $string['evidence_manualoverrideinplan'] = 'تقييم الكفاءة تم وضعه يدوياً لخطة التعلم \'{$a}\'.';
 $string['invalidevidencedesc'] = 'وصف الدليل غير صحيح.';
 $string['invalidgrade'] = 'تقييم غير صحيح.';
-$string['invalidpersistenterror'] = 'خطأ: {$a}';
 $string['invalidplan'] = 'خطة تعلم غير صحيحة';
 $string['invalidtaxonomy'] = 'تصنيف غير صحيح: {$a}';
 $string['invalidurl'] = 'الرابط غير صحيح. تأكد من أنه يبدأ بـ \'http://\' أو \'https://\'.';
@@ -116,7 +115,7 @@ $string['planstatusinreview'] = 'قيد التقييم';
 $string['planstatuswaitingforreview'] = 'تنتظر المراجعة';
 $string['pointsrequiredaremet'] = 'تمت تلبية النقاط المطلوبة';
 $string['privacy:evidence:action:complete'] = 'أكمل الكفاءة إن كانت غير مقيَّمة';
-$string['privacy:evidence:action:log'] = 'إجراء سجل التوثيق';
+$string['privacy:evidence:action:log'] = 'إجراء سجل الوقوعات';
 $string['privacy:evidence:action:override'] = 'تجاوز تقييم الكفاءة';
 $string['privacy:metadata:competency'] = 'سِجل عن الكفاءات';
 $string['privacy:metadata:competency_coursecomp'] = 'سِجل عن الكفاءات المرتبطة بمساق';
@@ -127,7 +126,7 @@ $string['privacy:metadata:competency_modulecomp'] = 'سِجل عن الكفاء�
 $string['privacy:metadata:competency_plan'] = 'سِجل عن خطط التعلم';
 $string['privacy:metadata:competency_plancomp'] = 'سِجل عن الكفاءات في خطة تعلم';
 $string['privacy:metadata:competency_relatedcomp'] = 'سِجل عن العلاقة ما بين الكفاءات';
-$string['privacy:metadata:competency_template'] = 'سِجل عن مظاهر خطة التعلم';
+$string['privacy:metadata:competency_template'] = 'سِجل عن قوالب خطة التعلم';
 $string['privacy:metadata:competency_templatecohort'] = 'سِجل عن الدفعات ذات الصلة بمظهر خطة التعلم';
 $string['privacy:metadata:competency_templatecomp'] = 'سِجل عن الكفاءات في مظهر خطة التعلم';
 $string['privacy:metadata:competency_usercomp'] = 'سِجل عن حالة كفاءات المستخدم';

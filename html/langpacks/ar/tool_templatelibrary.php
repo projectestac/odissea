@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'ar', version '4.1'.
+ * Strings for component 'tool_templatelibrary', language 'ar', version '4.4'.
  *
  * @package     tool_templatelibrary
  * @category    string
@@ -29,14 +29,14 @@ $string['all'] = 'جميع المكونات';
 $string['component'] = 'مكوّن';
 $string['core'] = 'النواة';
 $string['coresubsystem'] = 'النظام الفرعي ({$a})';
-$string['documentation'] = 'وثيق';
+$string['documentation'] = 'التوثيقات';
 $string['example'] = 'المثال';
 $string['noresults'] = 'لا نتائج';
 $string['notemplateselected'] = 'لم يتم تحديد مظهر';
-$string['pluginname'] = 'مكتبة المظاهر';
-$string['privacy:metadata'] = 'إن إضافة مكتبة المظاهر لا تخزن أي بيانات شخصية.';
+$string['pluginname'] = 'مكتبة القوالب';
+$string['privacy:metadata'] = 'إن ملحق مكتبة القوالب لا يخزن أي بيانات شخصية.';
 $string['search'] = 'ابحث';
 $string['searchtemplates'] = 'مظاهر البحث';
 $string['templatehasnoexample'] = 'لا يحتوي هذا المظهر على مثال لسياق ، لذلك لا يمكن تقديمه هنا. لإضافة سياق مثال إلى هذا المظهر ، قم بإدراج تعليق في Moustache "مثال على السياق (json):" ، متبوعًا بسياق نموذج مشفر json للمظهر.';
 $string['templates'] = 'المظاهر';
-$string['templateselected'] = 'المظهر: {$a}';
+$string['templateselected'] = 'القالب: {$a}';

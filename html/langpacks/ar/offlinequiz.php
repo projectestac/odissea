@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'ar', version '4.1'.
+ * Strings for component 'offlinequiz', language 'ar', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -444,6 +444,7 @@ $string['printstudycodefield_help'] = 'عند تأشيره، ستتم طباعة
 $string['privacy:data_folder_name'] = 'بيانات الاختبار غير المتصل';
 $string['privacy:metadata:core_files'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالملفات لخزن أوراق الأسئلة المولدة، أوراق الإجابات وأوراق التصحيح فضلاً عن أوراق الإجابات المعبأة.';
 $string['privacy:metadata:core_question'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالأسئلة لحفظ الأسئلة للاختبارات.';
+$string['privacy:metadata:mod_quiz'] = 'الاختبار غير المتصل يستعمل واجهة برمجة التطبيق الخاصة بالاختبارات لحفظ نتائج الاختبارات.';
 $string['privacy:metadata:offlinequiz'] = 'يحفظ جدول الاختبار غير المتصل كل المعلومات الخاصة بعيِّنة الاختبار غير المتصل';
 $string['privacy:metadata:offlinequiz:course'] = 'عمود \'المساق\' في جدول الاختبار غير المتصل يحفظ المساق الذي يتواجد فيه هذا الاختبار';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'عدد المنازل العشرية المزمع إحتسابها في الدرجات';

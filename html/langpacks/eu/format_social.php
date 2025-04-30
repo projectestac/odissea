@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'eu', version '4.1'.
+ * Strings for component 'format_social', language 'eu', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Eztabaida-kopurua';
 $string['numberdiscussions_help'] = 'Ezarpen honek zehazten du zenbat eztabaida erakutsi behar diren.';
-$string['pluginname'] = 'Foro-formatua';
+$string['plugin_description'] = 'Ikastaroa ikastaro-orriko foro nagusiaren inguruan antolatzen da. Jarduera ala baliabide gehigarriak \'Jarduera sozialak\' blokearen bitartez gehitu daitezke.';
+$string['pluginname'] = 'Soziala';
 $string['privacy:metadata'] = 'Foro-formatua pluginak ez du datu pertsonalik biltzen.';
 $string['sectionname'] = 'atala';

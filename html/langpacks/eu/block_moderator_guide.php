@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moderator_guide', language 'eu', version '4.1'.
+ * Strings for component 'block_moderator_guide', language 'eu', version '4.4'.
  *
  * @package     block_moderator_guide
  * @category    string

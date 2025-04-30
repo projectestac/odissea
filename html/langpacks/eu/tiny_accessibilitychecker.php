@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_accessibilitychecker', language 'eu', version '4.1'.
+ * Strings for component 'tiny_accessibilitychecker', language 'eu', version '4.4'.
  *
  * @package     tiny_accessibilitychecker
  * @category    string

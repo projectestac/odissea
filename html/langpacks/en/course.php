@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'en', version '4.1'.
+ * Strings for component 'course', language 'en', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'No footer';
 $string['activitychooserrecommendations'] = 'Recommended activities';
 $string['activitychoosersettings'] = 'Activity chooser settings';
 $string['activitychoosertabmode'] = 'Activity chooser tabs';
-$string['activitychoosertabmode_desc'] = 'The activity chooser enables a teacher to easily select activities and resources to add to their course. This setting determines which tabs should be displayed in it. Note that the starred tab is only displayed for a user if they have starred one or more activities and the recommended tab is only displayed if a site administrator has specified some recommended activities.';
+$string['activitychoosertabmode_desc'] = 'The activity chooser lists activities and resources for a teacher to add to their course. To add items to the Recommended tab, go to <a href=\'../course/recommendations.php\'>Recommended activities</a>.';
+$string['activitychoosertabmodefive'] = 'Starred, Recommended, All';
+$string['activitychoosertabmodefour'] = 'Starred, Recommended, All, Activities, Resources';
 $string['activitychoosertabmodeone'] = 'Starred, All, Activities, Resources, Recommended';
+$string['activitychoosertabmodesix'] = 'Starred, Recommended, Activities, Resources';
 $string['activitychoosertabmodethree'] = 'Starred, Activities, Resources, Recommended';
 $string['activitychoosertabmodetwo'] = 'Starred, All, Recommended';
 $string['activitydate:closed'] = 'Closed:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'Star {$a} activity';
 $string['aria:recommendedtab'] = 'Recommended activities';
 $string['browsecourseadminindex'] = 'Browse the course administration with this index.';
 $string['browsesettingindex'] = 'Browse settings with this index.';
+$string['communicationroomlink'] = 'Chat to course participants';
 $string['completion_automatic:done'] = 'Done:';
 $string['completion_automatic:failed'] = 'Failed:';
 $string['completion_automatic:todo'] = 'To do:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} is marked by {
 $string['completionrequirements'] = 'Completion requirements for {$a}';
 $string['courseaccess'] = 'Course access';
 $string['coursealreadyfinished'] = 'Course already finished';
+$string['coursecommunication_desc'] = 'The default communication service for new courses. Existing courses will not have any provider selected by default.';
 $string['coursecontentnotification'] = 'Send content change notification';
 $string['coursecontentnotification_help'] = 'Tick the box to notify course participants about this new or changed activity or resource. Only users who can access the activity or resource will receive the notification.';
 $string['coursecontentnotifnew'] = '{$a->coursename} new content';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> is new in the course <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Change your notification preferences</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} content change';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> has been changed in the course <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Change your notification preferences</a></p>';
+$string['coursecount'] = 'Course count';
 $string['coursenotyetfinished'] = 'The course has not yet finished';
 $string['coursenotyetstarted'] = 'The course has not yet started';
 $string['courseparticipants'] = 'Course participants';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'Everyone';
 $string['customfield_visibletoteachers'] = 'Teachers';
 $string['customfieldsettings'] = 'Common course custom fields settings';
 $string['daystakingcourse'] = 'Days taking course';
+$string['defaultsettingscategory'] = 'Default settings';
 $string['downloadcontent'] = 'Include in course content download';
 $string['downloadcontent_help'] = 'Should this activity or resource be included in the zip file of course content available for download? File, Folder, Page and Label can be fully downloaded. For all other activities and resources, only the name and description are downloaded. This option requires download course content to be enabled in the course settings.
 
@@ -94,7 +101,9 @@ $string['downloadcoursecontent_help'] = 'This setting determines whether course 
 $string['enabledownloadcoursecontent'] = 'Enable download course content';
 $string['errorendbeforestart'] = 'The end date ({$a}) is before the course start date.';
 $string['favourite'] = 'Starred course';
+$string['gotosection'] = 'Go to section {$a}';
 $string['gradetopassnotset'] = 'This course does not have a grade to pass set. It may be set in the grade item of the course (Gradebook setup).';
+$string['hideendedcoursestask'] = 'Hide courses on end date';
 $string['informationformodule'] = 'Information about the {$a} activity';
 $string['module'] = 'Activity';
 $string['namewithlink'] = 'Category name with link';
@@ -111,6 +120,8 @@ $string['noteachinginfomessage'] = 'Hi {$a->userfirstname},
 $string['participants:perpage'] = 'Number of participants per page';
 $string['participants:perpage_help'] = 'The number of users shown per page on the participants page in each course.';
 $string['participantsnavigation'] = 'Participants tertiary navigation.';
+$string['pdfexportfont'] = 'PDF font';
+$string['pdfexportfont_help'] = 'The font to be used for generated PDF files, such as assignment submissions.';
 $string['privacy:completionpath'] = 'Course completion';
 $string['privacy:favouritespath'] = 'Course starred information';
 $string['privacy:metadata:activityfavouritessummary'] = 'The course system contains information about which items from the activity chooser have been starred by the user.';
@@ -123,6 +134,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} after course
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} before course start';
 $string['searchactivitiesbyname'] = 'Search for activities by name';
 $string['searchresults'] = 'Search results: {$a}';
+$string['sectionlink'] = 'Permalink';
+$string['showstartedcoursestask'] = 'Show courses on start date';
 $string['studentsatriskincourse'] = 'Students at risk in {$a} course';
 $string['studentsatriskinfomessage'] = 'Hi {$a->userfirstname},
 <p>Students in the {$a->coursename} course have been identified as being at risk.</p>';
@@ -154,3 +167,4 @@ $string['targetlabelstudentgradetopassno'] = 'Student who is likely to meet the 
 $string['targetlabelstudentgradetopassyes'] = 'Student at risk of not meeting the minimum grade to pass the course.';
 $string['targetlabelteachingno'] = 'Courses at risk of not starting';
 $string['targetlabelteachingyes'] = 'Users with teaching capabilities who have access to the course';
+$string['totalactivities'] = 'Activities: {$a}';

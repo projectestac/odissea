@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ja', version '4.1'.
+ * Strings for component 'enrol', language 'ja', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'あなたにはこのコースでロールを�
 $string['bulkuseroperation'] = 'バルクユーザ操作';
 $string['configenrolplugins'] = '必要なプラグインすべてを選択した後、適切な順序に並べ替えてください。';
 $string['custominstancename'] = 'カスタムインスタンス名';
+$string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
+$string['customwelcomemessage_help'] = '使用可能フォーマット: プレインテキストまたはMoodleオートフォーマット。以下のプレースフォルダに加えてHTMLタグおよびmulti-langタグも使用可能です:
+<ul>
+<li>コース名 {$a->coursename}</li>
+<li>ユーザプロファイルページへのリンク {$a->profileurl}</li>
+<li>ユーザメールアドレス {$a->email}</li>
+<li>ユーザフルネーム {$a->fullname}</li>
+<li>ユーザ姓 {$a->lastname}</li>
+<li>ユーザ名 {$a->firstname}</li>
+<li>ユーザコースロール {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = '{$a->fullname} さん、あなたは正常にコース {$a->coursename} に登録されました。';
 $string['defaultenrol'] = '新しいコースにインスタンスを追加する';
 $string['defaultenrol_desc'] = 'このプラグインを新しいコースすべてにデフォルトで追加できます。';
 $string['deleteinstanceconfirm'] = 'あなたは登録方法「 {$a->name} 」を削除しようとしています。この登録方法を使用して登録している {$a->users} 名のユーザすべては登録解除されます。同時にユーザ評定、グループメンバシップ、フォーラム購読のようなコース関連データすべてが削除されます。
@@ -129,6 +141,7 @@ $string['periodend'] = '-> {$a}';
 $string['periodnone'] = '登録日時 {$a}';
 $string['periodstart'] = '{$a}';
 $string['periodstartend'] = '{$a->start} -> {$a->end}';
+$string['plugindisabled'] = '{$a} 登録プラグインは無効にされています。';
 $string['privacy:metadata:user_enrolments'] = '登録です。';
 $string['privacy:metadata:user_enrolments:enrolid'] = '登録プラグインのインスタンスです。';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ユーザ登録を最後に更新したユーザのIDです。';
@@ -139,12 +152,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'ユーザ登録が終了�
 $string['privacy:metadata:user_enrolments:timemodified'] = 'ユーザ登録が修正された日時です。';
 $string['privacy:metadata:user_enrolments:timestart'] = 'ユーザ登録が開始する日時です。';
 $string['privacy:metadata:user_enrolments:userid'] = 'ユーザのIDです。';
-$string['proceedtocourse'] = 'コースコンテンツに移動する';
 $string['recovergrades'] = '可能であればユーザの古い評定を回復する';
 $string['rolefromcategory'] = '{$a->role} (コースカテゴリより継承)';
 $string['rolefrommetacourse'] = '{$a->role} (親コースより継承)';
 $string['rolefromsystem'] = '{$a->role} (サイトレベルで割り当て)';
 $string['rolefromthiscourse'] = '{$a->role} (このコースで割り当て)';
+$string['sendcoursewelcomemessage'] = 'コースウェルカムメッセージを送信する';
+$string['sendcoursewelcomemessage_help'] = 'ユーザまたはコホートをコースに登録する場合、ウェルカムメッセージのメールが送信されます。コース連絡先 (デフォルトは教師) から送信される場合、そしてこのロールに2名以上のユーザが割り当てられている場合、最初にロールが割り当てられたユーザから送信されます。';
 $string['sendfromcoursecontact'] = 'コース連絡先から';
 $string['sendfromkeyholder'] = 'キーホルダから';
 $string['sendfromnoreply'] = 'no-replyアドレスから';
@@ -163,7 +177,7 @@ $string['unassignnotpermitted'] = 'あなたにはこのコース内のロール
 $string['unenrol'] = '登録解除';
 $string['unenrolconfirm'] = '本当に「 {$a->user} 」 (「 {$a->enrolinstancename} 」経由で登録済み) を「 {$a->course} 」から登録解除してもよろしいですか?';
 $string['unenrolleduser'] = 'ユーザ「 {$a->fullname} 」がコースから登録解除されました。';
-$string['unenrolme'] = '{$a} から私を登録解除する';
+$string['unenrolme'] = 'このコースから私を登録解除する';
 $string['unenrolnotpermitted'] = 'あなたにはこのユーザをコースから登録解除するためのパーミッションがありません。';
 $string['unenrolroleusers'] = '次のユーザを登録解除する';
 $string['uninstallmigrating'] = '「 {$a} 」登録の移行';

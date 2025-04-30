@@ -63,7 +63,7 @@ define('MUST_EXIST', 2);
 class dml_exception extends moodle_exception {
     /**
      * @param string $errorcode The name of the string from error.php to print.
-     * @param string $a Extra words and phrases that might be required in the error string.
+     * @param mixed  $a Extra words and phrases that might be required in the error string.
      * @param string $debuginfo Optional debugging information.
      */
     function __construct($errorcode, $a=NULL, $debuginfo=null) {
@@ -178,7 +178,7 @@ class dml_multiple_records_exception extends dml_exception {
  */
 class dml_missing_record_exception extends dml_exception {
     /** @var string A table's name.*/
-    public $table;
+    public $tablename;
     /** @var string An SQL query.*/
     public $sql;
     /** @var array The SQL's parameters.*/
@@ -269,8 +269,8 @@ class dml_transaction_exception extends dml_exception {
 
     /**
      * Constructor
-     * @param array $debuginfo Optional debugging information.
-     * @param moodle_transaction $transaction The instance of the transaction.(Optional)
+     * @param ?string $debuginfo Optional debugging information.
+     * @param ?moodle_transaction $transaction The instance of the transaction.(Optional)
      */
     function __construct($debuginfo=null, $transaction=null) {
         $this->transaction = $transaction; // TODO: MDL-20625 use the info from $transaction for debugging purposes

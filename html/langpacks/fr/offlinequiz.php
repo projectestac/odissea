@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'fr', version '4.1'.
+ * Strings for component 'offlinequiz', language 'fr', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Ajouter';
-$string['addarandomquestion'] = 'questions aléatoires';
+$string['addarandomquestion'] = 'une question aléatoire';
 $string['addarandomquestion_help'] = 'Moodle ajoute une sélection aléatoire de questions à choix multiple (ou questions à choix multiple tout ou rien) au groupe de QCM papier courant. Le nombre de questions ajouté peut être choisi. Les questions sont choisies dans la catégorie courante (et ses sous catégories si cette option est sélectionnée).';
 $string['addarandomselectedquestion'] = 'Ajouter une question sélectionnée aléatoirement…';
 $string['addlist'] = 'Ajouter une liste des présences';
@@ -64,7 +64,14 @@ $string['attemptsnum'] = 'Résultats : {$a}';
 $string['attemptsonly'] = 'Afficher uniquement les étudiants ayant des résultats';
 $string['attendanceoverview'] = 'Présences';
 $string['attendances'] = 'Présences';
+$string['attendancesevaluationheadline'] = '2. Évaluation';
 $string['attendancesheadline'] = 'Présences';
+$string['attendancespreparationheadline'] = '1. Préparation';
+$string['attendenceoverviewattwithoutresults'] = 'Présent sans résultats :';
+$string['attendenceoverviewattwithresults'] = 'Présent avec résultats :';
+$string['attendenceoverviewcorrectionnecessary'] = 'Correction nécessaire (pages) :';
+$string['attendenceoverviewnoattwithoutresults'] = 'Absent sans résultats :';
+$string['attendenceoverviewnoattwithresults'] = 'Absent avec résultats :';
 $string['backtopreview'] = 'Prévisualiser';
 $string['basicideasofofflinequiz'] = 'Les concepts de base pour créer des QCM papier';
 $string['blackwhitethreshold'] = 'Seuil de Noir/Blanc.';
@@ -96,7 +103,8 @@ $string['configpapergray'] = 'valeur-blanche du papier, qui est utilisée pour l
 $string['configshuffleanswers'] = 'Mélanger les réponses';
 $string['configshufflequestions'] = 'Si cette option est activée, l’ordre des questions des groupes de QCM papier sera déterminé aléatoirement lors de chaque création de l’aperçu dans l’onglet \'Formulaires PDF\'.';
 $string['configshufflewithin'] = 'Si vous activez cette option, alors les parties constituant une question seront mélangées aléatoirement lorsque la feuille de questions et les grilles de réponses sont créées.';
-$string['configuseridentification'] = 'Une formule décrivant la manière d’identifier les utilisateurs. Cette formule est utilisée pour attribuer les grilles de réponses aux utilisateurs dans le système. La partie droite doit désigner un champ de la table des utilisateurs de Moodle.';
+$string['configuseridentification'] = 'Une formule décrivant l’identification de l’utilisateur. Cette formule est utilisée pour attribuer des formulaires de réponse aux utilisateurs du système. Le côté gauche de l’équation définit le nombre de chiffres (entier uniquement, jusqu’à 10 chiffres). Le côté droit de l’équation doit désigner un champ dans la table utilisateur de Moodle (par exemple id, idnumber, phone1).
+De plus, l’équation peut également traiter le préfixe et le suffixe qui sont ajoutés aux chiffres marqués (par exemple "a[7]=username" ou "b[5]cd=username"). Ces concaténations de chaînes et de nombres indiquent la valeur du champ utilisé dans la table utilisateur, utilisée pour l’identification de l’utilisateur.';
 $string['confirmremovequestion'] = 'Voulez-vous vraiment supprimer cette question {$a} ?';
 $string['copy'] = 'Copier';
 $string['copyright'] = '<strong>Attention : le contenu de cette page est uniquement destiné à votre information personnelle. Comme tout autre texte les questions sont soumises à des restrictions de copyright. Vous n’êtes pas autorisé à les copier ou à les communiquer à d’autres personnes !</strong>';
@@ -109,6 +117,20 @@ $string['correctheader'] = 'Correction nécessaire :';
 $string['correctionerrors'] = 'Formulaires avec des erreurs de correction :';
 $string['correctionform'] = 'Formulaire de correction';
 $string['correctionforms'] = 'Formulaires de correction';
+$string['correctionheader'] = 'Correction';
+$string['correctionheader_help'] = '<p>Les formulaires de réponse affichés ici nécessitent votre attention et doivent être corrigés manuellement. Une évaluation automatique n’est pas possible.</p>
+<u>Les erreurs suivantes peuvent se produire...</u>
+<ul>
+  <li><strong>Marquages inexacts</strong> : certaines notes n’ont pas pu être évaluées.</li>
+  <li><strong>Numéro de groupe non valide :</strong> Le numéro de groupe n’a pas pu être évalué.</li>
+  <li><strong>Numéro de page invalide :</strong> le numéro de page n’a pas pu être évalué.</li>
+  <li><strong>Non ajusté :</strong> le formulaire de réponse a été numérisé de travers et ne peut pas être évalué.</li>
+  <li><strong>Un résultat différent existe :</strong> un résultat évalué avec un numéro de groupe différent existe déjà.</li>
+  <li><strong>Pages incomplètes :</strong> La feuille de réponses actuelle a été évaluée, mais il manque au moins une feuille supplémentaire pour compléter l’évaluation du participant identifié. (Se produit uniquement avec les formulaires de réponse de plusieurs pages.)</li>
+  <li><strong>Le résultat existe :</strong> un résultat évalué existe déjà.</li>
+  <li><strong>Utilisateur absent du cours</strong> : le participant identifié n’est pas actuellement inscrit au cours.</li>
+  <li><strong>L’utilisateur n’existe pas :</strong> Le participant identifié est inconnu.</li>
+</ul>';
 $string['correctionoptionsheading'] = 'Options de correction';
 $string['correctupdated'] = 'Formulaire de correction mis à jour pour le groupe {$a}.';
 $string['couldnotgrab'] = 'Saisie de l’image {$a} impossible';
@@ -135,6 +157,10 @@ $string['decimalplaces'] = 'Décimales dans les notes';
 $string['decimalplaces_help'] = 'Ce réglage vous permet de choisir le nombre de décimales à afficher dans les scores ou dans les notes. Ces réglages n’agissent que sur l’affichage des notes, et n’altèrent pas les notes stockées dans la base de données, ni les calculs internes qui sont effectués avec précision.';
 $string['defaultparticipantsusage'] = 'Enregistrer présence';
 $string['defaultparticipantsusagedesc'] = 'Détermine si les présences doivent être enregistrées avec les listes de présence par défaut.';
+$string['defaultpdffont'] = 'Police du formulaire par défaut';
+$string['defaultpdffont_help'] = 'La police par défaut que le questionnaire hors ligne utilisera pour les formulaires. Vous souhaiterez peut-être télécharger manuellement le package tcpdf et extraire son répertoire fonts/ dans votre $CFG->dataroot/fonts/ pour plus de polices. Il est recommandé d’utiliser Freeserif par défaut car il prend en charge la plupart des caractères. Voir https://www.gnu.org/software/freefont/coverage.html pour la liste complète de compatibilité.';
+$string['defaultpdffontsize'] = 'Taille de police par défaut';
+$string['defaultpdffontsize_help'] = 'La taille de police par défaut que tous les formulaires utiliseront.';
 $string['deletelistcheck'] = 'Voulez-vous vraiment supprimer la liste sélectionnée et tous ses participants ?';
 $string['deletepagecheck'] = 'Voulez-vous vraiment supprimer les pages sélectionnées ?';
 $string['deletepagesafterselected'] = 'Supprimer les sauts de page après les questions sélectionnées';
@@ -152,6 +178,9 @@ $string['difficultytitleb'] = 'Difficulté B';
 $string['difficultytitlediff'] = 'Différence';
 $string['disableimgnewlines'] = 'Supprimer les nouvelles lignes avant et après les images';
 $string['disableimgnewlines_help'] = 'Cette option supprime les nouvelles lignes avant et après les images dans la grille de réponses PDF. Attention : ceci peut causer des problèmes de mise en forme.';
+$string['discriminationindex_info'] = 'Étant donné que l’indice de discrimination calcule la prédiction de la question entre les bonnes et les mauvaises notes, il ne peut pas être calculé si (l’un ou l’autre)
+- il n’y a pas de réponses différentes des étudiants à cette question
+- il n’y a pas de notes différentes à l’examen';
 $string['displayoptions'] = 'Options d’affichage';
 $string['documentschanged'] = 'Une question ou plus dans le QCM papier a été changé depuis la création des documents.<br>Les résultats futurs seront réévalués automatiquement durant l’évaluation en fonction de la version des questions indiquée ici. Dans les documents, la version originale des questions reste affichée.';
 $string['documentschangedwithresults'] = 'Une question ou plus dans le QCM papier a été changée depuis la création des documents.<br>Les résultats existants ont été réévalués automatiquement en fonction de la version des questions indiquée ici. Dans les documents, la version originale des questions reste affichée.';
@@ -216,6 +245,11 @@ $string['fileprefixform'] = 'formulaire_questions';
 $string['fileprefixparticipants'] = 'liste_participants';
 $string['filesizetolarge'] = 'Certains de vos fichiers images sont très volumineux. Les dimensions seront réduites durant l’interprétation. Essayez de scanner vos grilles avec une résolution entre 200 et 300 dpi et en mode noir et blanc. Cela accélèrera l’interprétation dans le futur.';
 $string['filterbytags'] = 'Filtrer par Mots clés …';
+$string['fontfamilycourier'] = 'Courier';
+$string['fontfamilyhelvetica'] = 'Helvetica';
+$string['fontfamilysymbol'] = 'Symbol';
+$string['fontfamilytimes'] = 'Times';
+$string['fontfamilyzapfdingbats'] = 'ZapfDingbats';
 $string['fontsize'] = 'Corps de police';
 $string['forautoanalysis'] = 'Pour analyse automatique';
 $string['formforcorrection'] = 'Feuille des corrections pour le groupe {$a}';
@@ -248,6 +282,7 @@ $string['groupoutofrange'] = 'Le groupe était hors limite et a été remplacé 
 $string['hasresult'] = 'Un résultat existe';
 $string['hotspotdeletiontask'] = 'Suppression des zones sensibles';
 $string['html'] = 'HTML';
+$string['id'] = 'Id-utilisateur';
 $string['idnumber'] = 'Numéro d’identification';
 $string['imagefile'] = 'Fichier image';
 $string['imagenotfound'] = 'Fichier image : {$a} non trouvé !';
@@ -363,8 +398,8 @@ $string['noresults'] = 'Aucun résultat.';
 $string['noreview'] = 'Vous n’êtes par autorisé à relire ce QCM papier';
 $string['noscannedpage'] = 'Il n’y a pas de page avec l’identifiant {$a} !';
 $string['notagselected'] = 'Aucune balise sélectionnée';
+$string['notavailable'] = 'N/D';
 $string['nothingtodo'] = 'Rien à faire !';
-$string['notonattendancelist'] = 'Pas sur la liste de présences :';
 $string['notxtfile'] = 'Aucun fichier TXT';
 $string['notyetgraded'] = 'Pas encore noté';
 $string['nozipfile'] = 'Pas de fichier ZIP';
@@ -389,7 +424,7 @@ $string['offlinequiz:preview'] = 'Aperçu des QCMs papiers';
 $string['offlinequiz:view'] = 'Afficher les informations du QCM papier';
 $string['offlinequiz:viewreports'] = 'Afficher les rapports de QCM papier';
 $string['offlinequizcloses'] = 'Ce QCM papier est fermé';
-$string['offlinequizcloseson'] = 'La relecture pour ce test hors-ligne fermera le {$a}';
+$string['offlinequizcloseson'] = 'La relecture pour ce QCM papier fermera le {$a}';
 $string['offlinequizcontent'] = 'Contenu du QCM papier';
 $string['offlinequizisclosed'] = 'Ce QCM papier est fermé';
 $string['offlinequizisclosedwillopen'] = 'QCM papier fermé (ouverture {$a})';
@@ -450,6 +485,8 @@ Une résolution entre 200 et 300 dpi est recommandée.</p>';
 $string['partuncheckedwithoutresult'] = '{$a} participants non cochés sans résultat';
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} participants non cochés avec un résultat</a>';
 $string['pdfdeletedforgroup'] = 'Formulaire pour le groupe {$a} supprimé';
+$string['pdffont'] = 'Police du formulaire';
+$string['pdffont_help'] = 'Ici, vous pouvez choisir une police pour tous vos formulaires PDF : formulaires de réponse, formulaires de correction, formulaires de présence. Ainsi que des formulaires de questions, si vous choisissez un format PDF. Le choix doit également dépendre des caractères que vous utilisez dans vos formulaires. Avec les formats DOCX et LATEX les fiches de questions n’en sont pas affectées.';
 $string['pdfintro'] = 'Informations additionnelles';
 $string['pdfintro_help'] = 'Ces informations seront imprimées sur la première page de la feuille de questions et doivent contenir des informations générales sur la manière de remplir la grille des réponses.';
 $string['pdfintrotext'] = '<b>Important :</b><br />Reportez vos réponses sur la grille de réponses ! Elle sera scannée automatiquement. Attention de ne pas la plier ni la tacher. Utilisez un stylo noir ou bleu pour remplir les champs. Pour corriger une case cochée, remplissez complètement la case de couleur : elle sera interprétée comme non cochée.<br />';
@@ -461,7 +498,7 @@ $string['pluginadministration'] = 'Administration QCM papier';
 $string['pluginname'] = 'QCM papier';
 $string['point'] = 'point';
 $string['preparation'] = '1. Préparation';
-$string['present'] = 'présent';
+$string['present'] = 'Présent';
 $string['preventsamequestion'] = 'Éviter l’utilisation de la même question dans les groupes différents';
 $string['preview'] = 'Prévisualiser';
 $string['previewforgroup'] = 'Groupe {$a}';
@@ -471,6 +508,7 @@ $string['printstudycodefield_help'] = 'Si coché, le champ code d’étude sera 
 $string['privacy:data_folder_name'] = 'Données Offlinequiz';
 $string['privacy:metadata:core_files'] = 'QCM papier utilise l’API fichier pour stocker les feuilles de questions, les feuilles de réponses et les feuilles de correction générées, ainsi que les feuilles de réponses remplies.';
 $string['privacy:metadata:core_question'] = 'Offlinequiz utilise l’API de question pour enregistrer les questions des tests';
+$string['privacy:metadata:mod_quiz'] = 'Offlinequiz utilise l’API de l’activité Test pour enregistrer les résultats des tests.';
 $string['privacy:metadata:offlinequiz'] = 'La table offlinequiz enregistre toutes les informations spécifiques à une instance QCM papier.';
 $string['privacy:metadata:offlinequiz:course'] = 'La colonne « course » de la table offlinequiz enregistre le cours dans lequel ce offlinequiz est stocké.';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'Le nombre de points décimaux pour calculer les notes.';
@@ -824,6 +862,7 @@ $string['statisticsplural'] = 'Statistiques';
 $string['statisticsviewheader'] = '3. Statistiques';
 $string['statsoverview'] = 'Vue d’ensemble des statistiques';
 $string['studycode'] = 'Code étudiant';
+$string['subplugintype_offlinequiz'] = 'Rapport Offlinequiz';
 $string['subplugintype_offlinequiz_plural'] = 'Rapports Offlinequiz';
 $string['tabattendances'] = 'Présences';
 $string['tabattendancesoverview'] = 'Présences';
@@ -833,7 +872,7 @@ $string['tabeditgrades'] = 'Notes';
 $string['tabeditgroupquestions'] = 'Questions';
 $string['tabeditparticipants'] = 'Participants';
 $string['tabofflinequizcontent'] = 'Préparation';
-$string['tabofflinequizcorrect'] = 'Corriger';
+$string['tabofflinequizcorrect'] = 'Correction';
 $string['tabofflinequizupload'] = 'Déposer';
 $string['tabparticipantlists'] = 'Listes des présences';
 $string['tabparticipantscorrect'] = 'Corriger';
@@ -841,7 +880,6 @@ $string['tabparticipantsupload'] = 'Déposer';
 $string['tabpreview'] = 'Formulaires';
 $string['tabquestionandanswerstats'] = 'Analyse des questions et réponses';
 $string['tabquestionstats'] = 'Analyse des questions';
-$string['tabregrade'] = 'Ré-évaluation';
 $string['tabresults'] = 'Résultats';
 $string['tabresultsoverview'] = 'Résultats';
 $string['tabstatistics'] = 'Statistiques';
@@ -854,6 +892,61 @@ $string['totalpointsx'] = 'Total des points : {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total des {$a} questions de la catégorie.';
 $string['trigger'] = 'bornes basse/haute';
 $string['tutorial'] = 'Tutoriel sur les QCMs papiers';
+$string['tutorial:feedback:1:1'] = 'Il n’y a aucune question sur le formulaire de réponse. Le formulaire de réponse contient uniquement les cases pour marquer vos réponses.';
+$string['tutorial:feedback:1:2'] = 'La disposition de la feuille de questions ne doit pas nécessairement être exactement la même que celle de la capture d’écran. Il s’agit uniquement de vous montrer les questions et elles ne sont pas numérisées après l’examen.';
+$string['tutorial:feedback:2:1'] = 'Cette croix est trop pâle. Il est possible qu’elle ne soit pas scannée correctement.';
+$string['tutorial:feedback:2:2'] = 'Une croix de largeur de ligne normale sera toujours interprétée correctement.';
+$string['tutorial:feedback:2:3'] = 'Une croix épaisse pourrait être interprétée comme ayant été corrigée (complètement remplie).';
+$string['tutorial:feedback:2:4'] = 'Une case vide ne sera jamais interprétée comme une croix.';
+$string['tutorial:feedback:2:5'] = 'Une case entièrement remplie est interprétée exactement de la même manière qu’une case vide.';
+$string['tutorial:feedback:3:1'] = 'Seules les croix dans les cases sont scannées. C’est pourquoi il est si important de cocher les bonnes cases sous votre numéro d’immatriculation.';
+$string['tutorial:feedback:3:2'] = 'Seules les croix dans les cases sont scannées. C’est pourquoi il est si important de cocher les bonnes cases sous votre numéro d’immatriculation.';
+$string['tutorial:feedback:3:3'] = 'Seules les croix dans les cases sont scannées. C’est pourquoi il est si important de cocher les bonnes cases sous votre numéro d’immatriculation.';
+$string['tutorial:feedback:3:4'] = 'Seules les croix dans les cases sont scannées. C’est pourquoi il est si important de cocher les bonnes cases sous votre numéro d’immatriculation.';
+$string['tutorial:feedback:4:0'] = 'Vous avez commis une erreur. Votre numéro d’immatriculation est {$a->correctusernumber}, mais vous avez marqué {$a->selectedusernumber}';
+$string['tutorial:feedback:4:1'] = 'Vous avez terminé avec succès ce tutoriel.';
+$string['tutorial:feedback:correct'] = 'Correct !';
+$string['tutorial:feedback:wrong'] = 'Faux !';
+$string['tutorial:generatedusernumberwarning'] = 'Il s’agit d’un numéro d’immatriculation généré puisque votre compte n’en a pas !';
+$string['tutorial:header:1'] = '1. Feuilles de questions et formulaires de réponses';
+$string['tutorial:header:2'] = '2. Croix et corrections';
+$string['tutorial:header:3'] = '3. Le formulaire de réponse';
+$string['tutorial:header:4'] = '4. Marquage de votre numéro d’immatriculation';
+$string['tutorial:header:5'] = '5. Enfin…';
+$string['tutorial:introduction:1'] = 'Lors de l’examen, vous recevrez deux feuilles : une avec les questions et une avec des cases sur lesquelles noter vos réponses. Les questions sont numérotées, tout comme les cases du formulaire de réponse. Chaque réponse est marquée d’une lettre. Après l’examen, le formulaire de réponse est scanné et interprété par un ordinateur.';
+$string['tutorial:introduction:2:1'] = 'Les cases de la feuille de réponses font 5 millimètres de large. Les cases appartenant à la même question sont sur une seule ligne. Le numéro de la question se trouve à gauche et la lettre correspondant à la réponse se trouve en haut de la colonne.';
+$string['tutorial:introduction:2:2'] = 'Utilisez un stylo noir ou bleu pour marquer les champs. Si vous souhaitez corriger une marque, remplissez complètement la case. Ce champ sera alors interprété comme une case vide.';
+$string['tutorial:introduction:3:1'] = 'Le formulaire de réponse contient un bloc pour votre nom (A), un bloc pour votre numéro de matricule (B) et un bloc pour les réponses (C). Remplissez d’abord les cases contenant votre nom, votre signature et votre numéro d’immatriculation. Notez que la machine n’essaiera pas d’interpréter votre écriture après l’examen. Ces cases sont uniquement à des fins de documentation.';
+$string['tutorial:introduction:3:2'] = 'Cochez soigneusement les cases correspondant à votre numéro d’immatriculation, car l’ordinateur aura besoin de ces marques pour identifier vos résultats. Des erreurs dans le bloc avec votre numéro d’immatriculation peuvent entraîner des retards et des interprétations erronées.';
+$string['tutorial:introduction:4'] = 'A la fin de ce tutoriel nous vous proposons un petit test où vous pourrez apprendre à remplir correctement les notes de votre numéro de matricule. Sous la case correspondant à votre numéro d’immatriculation se trouve une matrice de cases. Chaque colonne représente un chiffre de votre numéro d’immatriculation. Les lignes marquent les chiffres écrits à gauche et à droite. Cliquez sur les cases pour les marquer. Cliquez à nouveau pour supprimer votre marque. Si vous souhaitez recommencer, veuillez <a href="javascript: document.location.reload()">recharger la page</a>.';
+$string['tutorial:introduction:5'] = 'N’oubliez pas que les formulaires de réponse sont interprétés par un ordinateur. Cette machine ne peut pas lire tout ce que vous écrivez à côté des cases. Pour le programme informatique, tout ce qui se trouve en dehors des cases n’est qu’un endroit qui empêche la machine d’interpréter correctement le formulaire. Vous vous pénalisez si vous ne placez pas les marques correctement.';
+$string['tutorial:option:1:1'] = 'Un formulaire de réponse';
+$string['tutorial:option:1:2'] = 'Une feuille de questions';
+$string['tutorial:option:3:1'] = 'Le système lit votre nom à l’aide d’un logiciel de reconnaissance optique de caractères.';
+$string['tutorial:option:3:2'] = 'Votre signature est numérisée à l’aide d’un logiciel utilisé pour les empreintes digitales dans les enquêtes criminelles';
+$string['tutorial:option:3:3'] = 'Seules les croix dans les cases sous votre numéro de matricule sont interprétées.';
+$string['tutorial:option:3:4'] = 'Le système lit votre numéro de matricule à l’aide d’un logiciel de reconnaissance optique de caractères.';
+$string['tutorial:question:1'] = 'Cette image montre :';
+$string['tutorial:question:2'] = 'Quelle marque sera certainement interprétée comme une croix ?';
+$string['tutorial:question:3'] = 'Comment l’ordinateur attribue-t-il le formulaire de réponse à la bonne personne ?';
+$string['tutorial:question:4'] = 'Numéro de matricule';
+$string['tutorial:question:5'] = 'Bonne chance !';
+$string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; Combien de documents de quiz hors ligne vous seront remis lors d’un examen ?';
+$string['tutorial:questionsheet:1:1'] = 'a)&nbsp;&nbsp;0';
+$string['tutorial:questionsheet:1:2'] = 'b)&nbsp;&nbsp;1';
+$string['tutorial:questionsheet:1:3'] = 'c)&nbsp;&nbsp;2';
+$string['tutorial:questionsheet:1:4'] = 'd)&nbsp;&nbsp;3';
+$string['tutorial:questionsheet:1:5'] = 'e)&nbsp;&nbsp;4';
+$string['tutorial:questionsheet:1:marks'] = '(Points: 1)';
+$string['tutorial:questionsheet:2'] = '2)&nbsp;&nbsp; Quel contenu est disponible sur un questionnaire du quiz offline ?';
+$string['tutorial:questionsheet:2:1'] = 'a)&nbsp;&nbsp;Questions';
+$string['tutorial:questionsheet:2:2'] = 'b)&nbsp;&nbsp;Options de réponse';
+$string['tutorial:questionsheet:2:3'] = 'c)&nbsp;&nbsp;Réponses correctes';
+$string['tutorial:questionsheet:2:4'] = 'd)&nbsp;&nbsp;Informations complémentaires';
+$string['tutorial:questionsheet:2:5'] = 'e)&nbsp;&nbsp;Aucun d’entre eux';
+$string['tutorial:questionsheet:2:marks'] = '(Marques : 1)';
+$string['tutorial:title'] = 'Tutoriel';
+$string['tutorial:title:navigation'] = 'Navigation';
 $string['type'] = 'Type';
 $string['uncheckparts'] = 'Marquer les participants sélectionnés absents';
 $string['updatedsumgrades'] = 'La somme des notes du groupe {$a->letter} a été re-calculée à {$a->grade}.';

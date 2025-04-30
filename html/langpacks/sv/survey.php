@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'sv', version '4.1'.
+ * Strings for component 'survey', language 'sv', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Faktisk';
 $string['actualclass'] = 'Faktisk klass';
 $string['actualstudent'] = '{$a} faktisk';
 $string['allquestionrequireanswer'] = 'Alla frågor är obligatoriska och måste besvaras.';
-$string['allquestions'] = 'Alla frågor i ordning, alla studenter';
 $string['allscales'] = 'Alla skalor, alla studenter';
 $string['alreadysubmitted'] = 'Du har redan skickat in denna enkät';
 $string['analysisof'] = 'Analys av {$a}';
@@ -95,7 +94,6 @@ $string['ciq5'] = 'Vilken händelse överraskade dig mest?';
 $string['ciq5short'] = 'Moment som var överraskande';
 $string['ciqintro'] = 'Tänk på händelser som nyligen har inträffat i den här gruppen och svara på de nedanstående frågorna.';
 $string['ciqname'] = 'Kritiska incidenter';
-$string['clicktocontinue'] = 'Klicka här för att fortsätta';
 $string['clicktocontinuecheck'] = 'Klicka här för att kontrollera och fortsätta';
 $string['colles1'] = 'mitt lärande är fokuserat på frågor som intresserar mig.';
 $string['colles10'] = 'jag ber andra studenter att förklara sina idéer.';
@@ -271,4 +269,3 @@ $string['surveytype_help'] = 'Det finns 3 tillgängliga undersökningstyper:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Stort tack för att du besvarade denna enkät, {$a}';
 $string['time'] = 'Tid';
-$string['viewsurveyresponses'] = 'Se {$a} enkätsvar';

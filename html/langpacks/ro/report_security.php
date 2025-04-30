@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ro', version '4.1'.
+ * Strings for component 'report_security', language 'ro', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -81,10 +81,6 @@ $string['check_guestrole_error'] = 'Rolul de utilizator vizitator  "{$a}" a fost
 $string['check_guestrole_name'] = 'Utilizator vizitator';
 $string['check_guestrole_notset'] = 'Rolul de utilizator vizitator nu a fost setat';
 $string['check_guestrole_ok'] = 'Rolul de utilizator vizitator a fost corect definit.';
-$string['check_mediafilterswf_details'] = '<p>Setarea "Automatic swf embedding" este foarte periculoasă - orice utilizator înregistrat poate să lanseze un atac de tip XSS împotriva celorlalţi utilizatori ai serverului. Vă rugăm dezactivaţi această setare pe serverele de producţie.</p>';
-$string['check_mediafilterswf_error'] = 'Filtrul Flash media este activat - Flash media sunt foarte periculoase pentru majoritatea serverelor.';
-$string['check_mediafilterswf_name'] = 'Filtrul .swf media a fost activat';
-$string['check_mediafilterswf_ok'] = 'Filtrul Flash media a fost dezactivat.';
 $string['check_nodemodules_details'] = '<p> Directorul <code> {$a->path} </code> conține module Node.js și dependențele acestora, de obicei instalate de utilitarul NPM. Aceste module pot fi necesare pentru dezvoltarea locală a Moodle, cum ar fi pentru utilizarea cadrului Grunt. Nu sunt necesare pentru a rula un site Moodle în producție și pot conține cod potențial periculos, expunând site-ul dvs. la atacuri de la distanță. </p> <p> Este recomandat să eliminați directorul dacă site-ul este disponibil printr-un URL public, sau cel puțin interzice accesul web la acesta în configurația serverului dvs. web. </p>';
 $string['check_nodemodules_info'] = 'Directorul node_modules nu ar trebui să fie prezent pe site-urile publice.';
 $string['check_nodemodules_name'] = 'Directorul modulelor Node.js';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ja', version '4.1'.
+ * Strings for component 'block_myprofile', language 'ja', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'コンテンツエリアの設定を表示する';
 $string['display_address'] = '住所を表示する';
-$string['display_aim'] = 'AIMを表示する';
 $string['display_city'] = '都道府県を表示する';
 $string['display_country'] = '国を表示する';
 $string['display_currentlogin'] = '現在のログインを表示する';
 $string['display_email'] = 'メールを表示する';
 $string['display_firstaccess'] = '初回アクセスを表示する';
-$string['display_icq'] = 'ICQを表示する';
 $string['display_idnumber'] = 'IDナンバを表示する';
 $string['display_institution'] = 'インスティテューションを表示する';
 $string['display_lastaccess'] = '最終アクセスを表示する';
 $string['display_lastip'] = '最終IPアドレスを表示する';
 $string['display_lastlogin'] = '最終ログインを表示する';
-$string['display_msn'] = 'MSNを表示する';
 $string['display_phone1'] = '電話番号を表示する';
 $string['display_phone2'] = '携帯電話番号を表示する';
 $string['display_picture'] = '画像を表示する';
-$string['display_skype'] = 'Skypeを表示する';
-$string['display_yahoo'] = 'Yahooを表示する';
 $string['myprofile:addinstance'] = '新しいログインユーザブロックを追加する';
 $string['myprofile:myaddinstance'] = '新しいログインユーザブロックをダッシュボードに追加する';
 $string['myprofile_settings'] = '閲覧可能なユーザ情報';

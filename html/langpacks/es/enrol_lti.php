@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_lti', language 'es', version '4.1'.
+ * Strings for component 'enrol_lti', language 'es', version '4.4'.
  *
  * @package     enrol_lti
  * @category    string
@@ -54,7 +54,7 @@ $string['deploymentdeleteconfirm'] = 'Advertencia: El eliminar un despliegue  re
 $string['deploymentdeletenotice'] = 'Despliegue eliminado';
 $string['deploymentid'] = 'ID del despliegue';
 $string['deployments'] = 'Despliegues';
-$string['deploymentsinfo'] = 'Una ID del despliegue será generada por la plataforma cuando la herramienta sea hecha disponible en un contexto. Esto puede ocurrir al momento del registro, o podría ocurrir después, cuando la herramienta sea hecha disponible a un curso o categoría específica. La ID del despliegue debe ser ingresada aquí antes de que sean permitidos los despliegues desde el despliegue de esa herramienta.';
+$string['deploymentsinfo'] = 'Una ID del despliegue será generada por la plataforma cuando la herramienta sea hecha disponible en un contexto. Esto puede ocurrir al momento del registro, o podría ocurrir después, cuando la herramienta sea hecha disponible a un curso o categoría específica. La ID del despliegue debe ser introducida aquí antes de que se permitan los despliegues desde el despliegue de esa herramienta.';
 $string['details'] = 'Detalles';
 $string['editplatformdetails'] = 'Editar detalles de la plataforma';
 $string['endpointltiversionnotice'] = 'Los endpoints de herramienta inferiores son solamente para la configuración manual LTI 1.3. Para versiones anteriores (1.1/2.0), los detalles para los consumidores pueden ser encontrados en la página de \'Publicados como herramientas LTI\', accesible vía la navegación del curso.';
@@ -82,7 +82,7 @@ $string['jwksurl'] = 'URL JWKS';
 $string['launchdetails'] = 'Detalles de lanzamiento';
 $string['launchdetails_help'] = 'Se requiere una URL de cartucho (también llamada URL de configuración) más una URL secreta o de inicio para configurar la herramienta.';
 $string['launchurl'] = 'URL de inicio';
-$string['loginurl'] = 'URL para iniciar ingreso';
+$string['loginurl'] = 'URL para autenticación inicial';
 $string['lti13'] = 'LTI Advantage';
 $string['lti13launchdetails'] = 'Detalles de invocación';
 $string['lti13launchdetails_help'] = 'La URL de invocación y las propiedades personalizadas solamente son requeridas cuando se configura manualmente un enlace a recurso en la plataforma. Donde sea posible, los profesores debería favorecer el proceso de la selección del contenido (enlace profundo) para la creación de enlaces a recursos.';

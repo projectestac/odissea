@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ca', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ca', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -25,11 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adodbdebugwarning'] = 'La depuració ADOdb està habilitada. Hauria d\'estar deshabilitada a la configuració del connector d\'autenticació de base de dades externa o del d\'inscripció des de base de dades externa.';
 $string['androidappid'] = 'Identificador únic de l\'app d\'Android';
 $string['androidappid_desc'] = 'Aquest paràmetre es pot deixar per defecte si no teniu una app d\'Android personalitzada.';
+$string['apppolicy'] = 'URL de la política d\'aplicacions';
 $string['autologinkeygenerationlockout'] = 'La generació de la clau per a l\'inici de sessió automàtic s\'ha blocat a causa de les múltiples peticions en una hora.';
 $string['autologinnotallowedtoadmins'] = 'No es permet l\'inici de sessió automàtic en aquest lloc.';
+$string['autologout'] = 'Apliqueu el tancament automàtic de sessió per als vostres usuaris';
+$string['autologout_desc'] = 'Per raons de seguretat, podeu aplicar el tancament automàtic de la sessió dels vostres usuaris quan surten o tanquen l\'aplicació, o bé quan es posa en segon pla. Els usuaris hauran de tornar a iniciar sessió quan tornin a l\'aplicació.';
+$string['autologoutcustom'] = 'Temps personalitzat després que els usuaris abandonin o tanquin l\'aplicació';
+$string['autologoutinmediate'] = 'Immediatament després que els usuaris abandonin o tanquin l\'aplicació';
+$string['autologouttime'] = 'Temporitzador de tancament automàtic';
 $string['cachedef_plugininfo'] = 'Això emmagatzema la llista de connectors amb els complements mòbils.';
+$string['cachedef_subscriptiondata'] = 'Això desa la informació de la subscripció a l\'aplicació Moodle';
 $string['clickheretolaunchtheapp'] = 'Feu clic aquí si l\'app no s\'obre automàticament.';
 $string['configmobilecssurl'] = 'Un fitxer CSS per a personalitzar la vostra interfície d\'aplicacions mòbils.';
 $string['customlangstrings'] = 'Cadenes d\'idioma personalitzades';
@@ -40,16 +48,23 @@ mm.user.student|Aprendiz|es
 </pre>
 Per a una llista completa d\'identificadors de cadenes, vegeu la documentació.';
 $string['custommenuitems'] = 'Elements de menú personalitzats';
-$string['custommenuitems_desc'] = 'Es poden afegir elements addicionals al menú principal de l\'app especificant-los aquí. Introduïu cada element del menú personalitzat en una línia nova amb el format: text de l\'element, enllaç URL, mètode d\'apertura de l\'enllaç (inappbrowser, navegador web o incrustat), separats per barres verticals (pleques). P. ex.
+$string['custommenuitems_desc'] = 'Es poden afegir elements addicionals al menú principal de l\'aplicació especificant-los aquí. Introduïu cada element de menú personalitzat en una línia nova amb el format: text de l\'element, URL de l\'enllaç, mètode d\'obertura d\'enllaç i codi d\'idioma (opcional, per mostrar l\'element només als usuaris de l\'idioma especificat), separats per caràcters de barra.
+
+Els mètodes d\'obertura d\'enllaços són: app (per enllaçar a una activitat compatible amb l\'aplicació), inappbrowser (per obrir un enllaç en un navegador sense sortir de l\'aplicació), navegador (per obrir l\'enllaç al navegador predeterminat del dispositiu fora de l\'aplicació) i incrustat (per mostrar l\'enllaç en un iframe en una pàgina nova de l\'aplicació).
+
+Quan els elements no disposen d\'una traducció per a un idioma determinat, faran servir altres idiomes com a alternativa tret que s\'afegeixi "_only" al codi d\'idioma.
+
+Per exemple:
 <pre>
-App\'s help | https://someurl.xyz/help | inappbrowser | en
-Visit our SIS | https://someurl.xyz | browser | en
-My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
-Mis calificaciones | https://someurl.xyz/local/mygrades/index.php | embedded | es
-</pre>
-Utilitzeu <em>inappbrowser</em> quan vulgueu obrir l\'enllaç en un navegador sense abandonar l\'app; utilitzeu <em>navegador</em> per obrir l\'enllaç en el navegador web per defecte del dispositiu, i <em>incrustat</em> si voleu mostrar l\'enllaç incrustat en una pàgina nova a l\'app.';
+Ajuda de l\'aplicació|https://someurl.xyz/help|inappbrowser
+Les meves qualificacions|https://someurl.xyz/local/mygrades/index.php|embedded|ca
+Mis calificaciones|https://someurl.xyz/local/mygrades/index.php|embedded|es
+Només ho veureu en anglès|https://someurl.xyz/english|browser|en_only
+</pre>';
+$string['darkmode'] = 'Mode fosc';
 $string['disabledfeatures'] = 'Les característiques s\'han inhabilitat';
 $string['disabledfeatures_desc'] = 'Trieu aquí les característiques que voleu inhabilitar a l\'app Mobile per al vostre lloc. Fixeu-vos que algunes característiques enumerades aquí podrien estar ja inhabilitades a través d\'altres paràmetres del lloc. Haureu de tancar la sessió i iniciar-la una altra vegada a l\'app per a veure els canvis.';
+$string['displayerrorswarning'] = 'La visualització dels missatges de depuració (debugdisplay) està habilitada. Hauria d\'estar desactivada.';
 $string['downloadcourse'] = 'Descarrega el curs';
 $string['downloadcourses'] = 'Descarrega els cursos';
 $string['enablesmartappbanners'] = 'Habilita els bàners de l\'app';
@@ -63,18 +78,29 @@ $string['httpsrequired'] = 'Cal HTTPS';
 $string['invalidprivatetoken'] = 'El testimoni (<em>token</em>) privat no és vàlid. El testimoni no hauria d\'estar buit o haver passat a través del paràmetre GET.';
 $string['iosappid'] = 'Identificador únic de l\'app d\'IOS';
 $string['iosappid_desc'] = 'Aquest paràmetre es pot deixar per defecte si no teniu una app IOS personalitzada.';
+$string['launchviasiteinbrowser'] = 'Llança a través del lloc al navegador del sistema';
 $string['loginintheapp'] = 'A través de l\'app';
 $string['logininthebrowser'] = 'A través d\'una finestra del navegador (per als connectors SSO)';
 $string['loginintheembeddedbrowser'] = 'A través d\'un navegador incrustat (per als connectors SSO)';
+$string['logoutconfirmation'] = 'Esteu segur que voleu tancar la sessió de l\'aplicació mòbil als vostres dispositius mòbils? En tancar la sessió, haureu de tornar a introduir el vostre nom d\'usuari i contrasenya a l\'aplicació mòbil en tots els dispositius on tingueu l\'aplicació instal·lada.';
 $string['mainmenu'] = 'Menú principal';
+$string['managefiletypes'] = 'Gestiona els tipus de fitxers';
+$string['minimumversion'] = 'Si s\'especifica una versió d\'aplicació (3.8.0 o superior), es demanarà a tots els usuaris que facin servir una versió anterior de l\'aplicació que actualitzin la seva aplicació abans de poder accedir al lloc.';
+$string['minimumversion_key'] = 'Versió mínima requerida de l\'aplicació';
 $string['mobileapp'] = 'Aplicació per a dispositius mòbils';
-$string['mobileappconnected'] = 'Aplicació mòbil connectada';
 $string['mobileappearance'] = 'Aparença de Moodle Mobile';
 $string['mobileappenabled'] = 'Aquest lloc té habilitat l\'accés amb l\'aplicació mòbil. <br /><a href="{$a}">Descarrega l\'aplicació per a dispositius mòbils</a>.';
+$string['mobileappsubscription'] = 'Subscripció a l\'aplicació Moodle';
 $string['mobileauthentication'] = 'Identificació de Moodle Mobile';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Característiques de Moodle Mobile';
+$string['mobilenotificationsdisabledwarning'] = 'Les notificacions mòbils no estan habilitades. Haurien d\'estar habilitades a la configuració de les notificacions.';
 $string['mobilesettings'] = 'Paràmetres de Moodle Mobile';
+$string['moodleappsportalfeatureswarning'] = 'Tingueu en compte que algunes funcions poden estar restringides en funció de la vostra subscripció a l\'aplicació Moodle. Per obtenir més informació, visiteu el <a href="{$a}" target="_blank">Portal d\'aplicacions de Moodle</a>.';
+$string['notifications'] = 'Notificacions';
+$string['notificationsactivedevices'] = 'Dispositius actius';
+$string['notificationscurrentactivedevices'] = 'Dispositius que reben notificacions aquest mes';
+$string['notificationsignorednotifications'] = 'Notificacions no enviades';
 $string['pluginname'] = 'Eines de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'El connector no està habilitat o configurat.';
 $string['qrcodedisabled'] = 'L\'accés mitjançant codi QR està inhabilitat';

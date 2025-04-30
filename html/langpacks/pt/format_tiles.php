@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'pt', version '4.1'.
+ * Strings for component 'format_tiles', language 'pt', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -256,10 +256,9 @@ $string['icontitle-volume-up'] = 'Altifalante';
 $string['icontitle-wrench'] = 'Chave inglesa';
 $string['imagecannotbeused'] = 'A imagem não pode ser usada';
 $string['imagedeletedfrom'] = 'A imagem de "{$a}" foi apagada';
-$string['imagesavedfor'] = 'Imagem guardada para o mosaico {$a}';
+$string['imagesavedfor'] = 'Imagem guardada para {$a}';
 $string['imagesize'] = 'Tamanho da imagem';
 $string['jsactivate'] = 'Navegação animada - desativar';
-$string['jsdeactivate'] = 'Navegação animada - ativar';
 $string['jsdeactivated'] = 'Navegação animada desativada';
 $string['jsnavsettings'] = 'Navegação com JavaScript';
 $string['jsreactivated'] = 'Ativou a navegação animada. Esta funcionalidade pode resultar numa navegação mais rápida. Requer o JavaScript ativado.';
@@ -275,7 +274,7 @@ $string['modalmodules_desc'] = 'Abrir estes módulos da disciplina numa janela m
 $string['modalresources'] = 'Recursos modais';
 $string['modalresources_desc'] = 'Abrir estes recursos numa janela modal. Nota: se permitido aqui, o URL das atividades só serão abertos numa janela modal se forem definidas como {$a->displayembed} ao nível da atividade (por exemplo: vídeos do YouTube ou Vimeo). Mesmo assim, eles podem ser impedidos pelo proprietário do site de os mostrar incorporados - consulte {$a->link}';
 $string['modalwindows'] = 'Janelas modais';
-$string['newsectionname'] = 'Novo nome para o tópico {$a}';
+$string['newsectionname'] = 'Novo nome para a secção {$a}';
 $string['newtiledata'] = 'Contagem de dados do mosaico nova';
 $string['nexttopic'] = 'Tópico seguinte';
 $string['noconnectionerror'] = 'Erro ao carregar o conteúdo. Verifique a sua ligação à internet';
@@ -308,6 +307,7 @@ $string['phototitletitlelineheight'] = 'Altura da linha do título';
 $string['phototitletitlepadding'] = 'Preenchimento da linha vertical do título';
 $string['picknewicon'] = 'Escolher novo ícone';
 $string['picknewiconphoto'] = 'Escolher novo ícone ou imagem de fundo';
+$string['plugin_description'] = 'Um formato visualmente rico, onde as secções e as atividades são representadas por mosaicos, com fotos, ícones e cores personalizáveis.';
 $string['pluginname'] = 'Formato Mosaicos';
 $string['previoustopic'] = 'Tópico anterior';
 $string['privacy:metadata:preference:format_tiles_stopjsnav'] = 'Se o utilizador desativou a navegação animada por JavaScript.';
@@ -340,7 +340,7 @@ $string['resetcolours'] = 'Reposição das cores';
 $string['resetcolours_desc'] = 'Clique no botão acima para repor a cor dos mosaicos de todas as disciplinas que não tenham uma das cores abaixo. As disciplinas serão alteradas para a cor predefinida do mosaico definida abaixo. Pode utilizar esta ferramenta depois de ter alterado a paleta de cores abaixo, mas certifique-se de <strong>guardar as alterações</strong> das cores abaixo antes de repor. Tenha cuidado, uma vez que esta ação pode mudar a cor de muitas disciplinas!';
 $string['resetincomplete'] = 'Reposição incompleta';
 $string['restorefailed'] = 'Restaurar falhas';
-$string['restoreincorrectsections'] = 'Erro: não foi possível concluir porque a disciplina de origem contém sevções numeradas incorretamente (por exemplo, o número da secção ({$a->sectionnum}) é maior do que o máximo permitido ({$a->maxallowed}). Tente apagar ou excluir secções com os números mais altos.';
+$string['restoreincorrectsections'] = 'Erro: não foi possível concluir porque a disciplina de origem contém secções numeradas incorretamente (por exemplo, o número da secção ({$a->sectionnum}) é maior do que o máximo permitido ({$a->maxallowed}, conforme definido configuração de administração \'moodlecourse | maxsection\'). Tente apagar ou excluir as secções com os números mais altos.';
 $string['restoretoomanysections'] = 'Erro: Não é possível fazer cópia de segurança ou restaurar porque estão incluídas muitas secções da disciplina ({$a->numsections}) o que é superior ao que é permitido ({$a->maxallowed}). Tente apagar ou excluir algumas secções.';
 $string['revealcontents'] = 'Mostrar conteúdo';
 $string['scheduleddeleteemptysections'] = 'Foi agendada uma tarefa para apagar secções vazias da disciplina. Por favor, volte mais tarde.';
@@ -361,22 +361,25 @@ $string['showoverallprogress_desc'] = 'Mostrar o indicador "% do progresso globa
 $string['showprogresssphototiles_desc'] = 'Se ativar esta opção, o progresso do aluno (por exemplo, \'Progresso 2/10\') será mostrado nos mosaicos com imagens';
 $string['showseczerocoursewide'] = 'Mostrar a secção zero acima de todas as secções';
 $string['showseczerocoursewide_desc'] = 'Se ativar esta opção, a secção zero (a secção de topo) será mostrada na página inicial da disciplina e no topo de <b>todas as páginas das secções da disciplina</b> (ou seja, no topo do conteúdo de cada mosaico). Se desativada (recomendado), será mostrada apenas na página inicial da disciplina';
-$string['showseparatewin'] = 'Mostrar ficheiro numa janela separada';
+$string['showseparatewin'] = 'Mostrar numa janela separada';
 $string['sitename'] = 'Nome do site';
 $string['snapwarning'] = 'É possível editar a disciplina no formato Mosaicos usando outro tema e, em seguida, mudar para o tema Snap assim que terminar a edição.';
 $string['snapwarning_help'] = 'Configurações_Tema#Permitir_temas_utilizador';
 $string['style'] = 'Estilo';
+$string['subtileiconcolourbackground'] = 'Ícones de sub-mosaicos - use um círculo de cor de fundo sólida';
+$string['subtileiconcolourbackground_desc'] = 'Se ativar esta opção, os ícones de sub-mosaicos serão mostrados como ícones brancos num círculo de cor de fundo sólida. Caso contrário, os ícones são (1) coloridos e (2) num círculo colorido, mas não sólido';
 $string['subtileszeczerotoggled'] = 'Secção de topo alterna entre o formato de lista e o formato de sub-mosaicos';
 $string['suremigratelegacyoptions'] = 'Tem a certeza de que pretende migrar {$a} opções de imagens ou ícones de mosaicos para esta disciplina?';
 $string['sureresetcolours'] = 'Tem a certeza de que pretende repor as cores do mosaico da disciplina para os valores predefinidos? Isto afetará {$a} disciplinas';
 $string['tilecolourgeneral'] = 'Paleta de cores - cor';
 $string['tilecolourgeneral_descr'] = 'Estas configurações definem as cores que o administrador disponibilizará aos professores para aplicarem nas disciplinas. Para desativar a cor existente, defina a cor para preto (#000000). Se alterar as cores aqui, nenhuma alteração será feita nas disciplinas já existentes, até à próxima vez que o professor tente alterar a cor do mosaico. Até lá, apenas as cores definidas aqui estarão disponíveis para os professores.';
 $string['tilecolourschanged'] = 'As cores dos mosaicos foram redefinidas. Todos os mosaicos têm cores em conformidade com as cores abaixo.';
-$string['tileicon'] = 'Ícone a mostrar (apenas este mosaico)';
+$string['tileicon'] = 'Ícone/imagem a mostrar (apenas este mosaico)';
 $string['tileicon_help'] = 'O item aqui selecionado substituirá, apenas neste mosaico, o ícone do mosaico definido ao nível da disciplina.';
 $string['tileicons'] = 'Ícones dos mosaicos';
 $string['tileoutcome'] = 'Resultados da aprendizagem para este mosaico';
 $string['tileoutcome_help'] = 'Se selecionar um resultado da aprendizagem para este mosaico, poderá mostrar, nas configurações da disciplina, um conjunto de <em>botões de filtro</em>, um para cada resultado da aprendizagem, que filtram os mosaicos a mostrar de acordo com o resultado que lhes foi atribuído';
+$string['tileselecttip'] = 'Esta é uma maneira mais fácil de alterar um ícone ou imagem do mosaico: na disciplina, com o modo de edição ativado, basta clicar no ícone ou imagem que pretende alterar. A janela do seletor de ícones aparecerá.';
 $string['tilesformatregistration'] = 'Registo do módulo';
 $string['tilesreset'] = 'Blocos e ícones foram repostos para esta disciplina';
 $string['tilestyle'] = 'Estilo do mosaico';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'zh_cn', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'zh_cn', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -78,6 +78,7 @@ $string['regradeissuenumchoiceschanged'] = '问题中的选项数量发生了变
 $string['selectmulti'] = '选择一项或多项：';
 $string['selectone'] = '选择一项：';
 $string['showstandardinstruction'] = '显示标准说明';
+$string['showstandardinstruction_desc'] = '选择题答案前是否显示“选择一个”或“选择一个或多个”的提示。';
 $string['showstandardinstruction_help'] = '是否在多选题答案前显示 "选择一个："或 "选择一个或多个："的说明。';
 $string['shuffleanswers'] = '随机排列答案？';
 $string['shuffleanswers_desc'] = '默认情况下，是否每次尝试时选项都随机排序';

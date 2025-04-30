@@ -61,7 +61,7 @@ Feature: Student can view their submission assessments
     When I am on the "Course 1" "grades > Grader report > View" page
     # Confirm that grades are reflected on the gradebook.
     Then the following should exist in the "user-grades" table:
-      | -1-         | -3-                  | -4-   |
+      | -1-         | -2-                  | -3-   |
       | One Student | student1@example.com | 64.00 |
       | Two Student | student2@example.com | 40.00 |
     # Confirm that student can view submission assessment grades and comments after workshop is closed.

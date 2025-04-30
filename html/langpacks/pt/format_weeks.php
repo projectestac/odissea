@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'pt', version '4.1'.
+ * Strings for component 'format_weeks', language 'pt', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Adicionar semana';
+$string['addsection'] = 'Adicionar semana';
 $string['automaticenddate'] = 'Calcular a data de fim a partir do número de secções';
 $string['automaticenddate_help'] = 'Se ativar esta opção, a data de fim da disciplina será calculada automaticamente a partir do número de secções e da data de início da disciplina.';
-$string['currentsection'] = 'Esta semana';
-$string['deletesection'] = 'Apagar semana';
-$string['editsection'] = 'Editar semana';
-$string['editsectionname'] = 'Editar o nome da semana';
-$string['hidefromothers'] = 'Ocultar semana';
+$string['currentsection'] = 'Semana atual';
+$string['hidefromothers'] = 'Ocultar';
 $string['indentation'] = 'Permitir indentação na página da disciplina';
 $string['indentation_help'] = 'Permitir que os professores, e outros utilizadores com permissão para gerir atividades, possam indentar itens na página da disciplina.';
-$string['newsectionname'] = 'Novo nome para a semana {$a}';
-$string['page-course-view-weeks'] = 'Qualquer página principal de disciplina em formato semanal';
-$string['page-course-view-weeks-x'] = 'Qualquer disciplina no formato semanal';
-$string['pluginname'] = 'Formato Semanal';
-$string['privacy:metadata'] = 'O módulo Formato Semanal não armazena quaisquer dados pessoais.';
+$string['page-course-view-weeks'] = 'Qualquer página principal de disciplina no formato secções semanais';
+$string['page-course-view-weeks-x'] = 'Qualquer disciplina no formato secções semanais';
+$string['plugin_description'] = 'A disciplina é dividida em secções correspondentes a cada semana, a partir da data de início da disciplina.';
+$string['pluginname'] = 'Secções semanais';
+$string['privacy:metadata'] = 'O módulo Formato Secções semanais não armazena quaisquer dados pessoais.';
 $string['section0name'] = 'Geral';
 $string['sectionname'] = 'Semana';
-$string['showfromothers'] = 'Mostrar semana';
+$string['showfromothers'] = 'Mostrar';

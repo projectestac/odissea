@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', version '4.1'.
+ * Strings for component 'competency', language 'el', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'Η εκτίμηση του προ�
 $string['evidence_manualoverrideinplan'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα στο σχέδιο μάθησης «{$a}».';
 $string['invalidevidencedesc'] = 'Περιγραφή άκυρου αποδεικτικού';
 $string['invalidgrade'] = 'Μη έγκυρη εκτίμηση';
-$string['invalidpersistenterror'] = 'Σφάλμα: {$a}';
 $string['invalidplan'] = 'Άκυρο σχέδιο μάθησης';
 $string['invalidtaxonomy'] = 'Μη έγκυρη ταξινομία: {$a}';
 $string['invalidurl'] = 'Η διεύθυνση URL δεν είναι έγκυρη. Βεβαιωθείτε ότι ξεκινά με «http://» or «https://».';

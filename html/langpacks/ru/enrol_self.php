@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ru', version '4.1'.
+ * Strings for component 'enrol_self', language 'ru', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Только члены глобальной групп
 $string['cohortonly_help'] = 'Можно ограничить самостоятельную запись только для членов указанной глобальной группы. Обратите внимание, что изменение этого параметра не влияет на уже записанных участников.';
 $string['confirmbulkdeleteenrolment'] = 'Вы уверены, что хотите отчислить этих пользователей?';
 $string['customwelcomemessage'] = 'Текст приветственного сообщения';
-$string['customwelcomemessage_help'] = 'Пользовательское приветственное сообщение может быть добавлено в виде простого текста или авто-формата Moodle, включая HTML-теги и мультиязычные теги.
-
-В сообщение могут быть включены следующие подстановки:
-
-* Название курса - {$a->coursename}
-* Ссылка на страницу профиля пользователя - {$a->profileurl}
-* Эл. почта пользователя {$a->email}
-* Полное имя пользователя {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Принимаемые форматы: обычный текст или авто-формат Moodle.  Также принимаются HTML-теги, многоязыковые теги и следующие подстановки:
+<ul>
+<li>Название курса {$a->coursename}</li>
+<li>Ссылка на страницу профиля пользователя {$a->profileurl}</li>
+<li>Адрес электронной почты пользователя {$a->email}</li>
+<li>Полное имя пользователя {$a->fullname}</li>
+<li>Имя пользователя {$a->firstname}</li>
+<li>Фамилия пользователя {$a->lastname}</li>
+<li>Роль пользователя в курсе {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Назначение роли по умолчанию';
 $string['defaultrole_desc'] = 'Выберите роль, которая будет назначена самостоятельно записанным пользователям';
 $string['deleteselectedusers'] = 'Отчислить выбранных пользователей';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Начальная дата';
 $string['enrolstartdate_help'] = 'При включенном параметре пользователи могут самостоятельно записаться после этой даты.';
 $string['expiredaction'] = 'Действие при истечении срока зачисления';
 $string['expiredaction_help'] = 'Выберите выполняемое действие при истечении срока записи пользователя в курсе. Обратите внимание, что из курса удаляются некоторые настройки  и данные пользователя при исключении его из курса.';
+$string['expiryinactivemessageenrolledbody'] = 'Здравствуйте, {$a->user}!
+
+Срок действия вашей регистрации на курсе {$a->course} истекает {$a->timeend}, поскольку вы не посещали его в течение последних {$a->inactivetime} дней.
+
+Чтобы сохранить вашу регистрацию активной, просто войдите в систему и посетите <a href="{$a->url}">{$a->course}</a> до{$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Истекает срок вашей регистрации на курсе: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Уважаемый(ая) {$a->user}, уведомляем, что обучение в курсе «{$a->course}» истекает {$a->timeend}.
 
 При необходимости свяжитесь с {$a->enroller}.';

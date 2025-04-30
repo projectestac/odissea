@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', version '4.1'.
+ * Strings for component 'data', language 'it', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} commento(i)';
 $string['commentsoff'] = 'I commenti non sono abilitati';
 $string['completiondetail:entries'] = 'Inserire record: {$a}';
 $string['completionentries'] = 'Record  richiesti';
-$string['completionentriescount'] = 'Numero di record';
+$string['completionentriescount'] = 'Aggiungi record';
 $string['completionentriesdesc'] = 'Numero minimo di record da inserire: {$a}';
 $string['configenablerssfeeds'] = 'Questa impostazione consente di generare feed RSS dalle attività Database. Per generare il feed RSS, sarà poi necessario abilitare manualmente l\'impostazione in ciascuna attività Database.';
 $string['confirmdeletefield'] = 'Stai per eliminare questo campo. Sei sicuro?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'È possibile creare campi per raccogliere dati di var
 $string['createtemplates'] = 'È possibile creare campi per generare un modello oppure importare un preset contenente campi e modelli già pronti.';
 $string['csstemplate'] = 'CSS personalizzato';
 $string['csvfailed'] = 'Non è possibile leggere i dati grezzi dal file CSV';
-$string['csvfile'] = 'File CSV';
+$string['csvfile'] = 'File CSV o File ZIP contenente un CSV';
 $string['csvimport'] = 'Importa un file CSV';
 $string['csvimport_help'] = 'I record possono essere importati tramite un file di testo che abbia il nome del campo come intestazione di colonna ed un record per riga.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'Per per completare l’attività è necessario è
 $string['entrieslefttoaddtoview'] = 'Devi aggiungere {$a->entrieslefttoview} altri record prima di poter vedere i record degli altri partecipanti.';
 $string['entry'] = 'Record';
 $string['entrysaved'] = 'Il record è stato salvato';
+$string['errordatafilenotfound'] = 'Non è stato possibile importare il file. I file consentiti sono file CSV o File ZIP contenente un CSV, formattati come nelle esportazioni.';
 $string['errormustbeteacher'] = 'Devi avere il ruolo di docente per utilizzare questa pagina!';
 $string['errormustsupplyvalue'] = 'Devi inserire un valore.';
 $string['errorpresetexists'] = 'Esiste già un preset con questo nome.';
@@ -199,7 +200,11 @@ $string['fieldnotmatched'] = 'I seguenti campi presenti nel tuo file non sono no
 $string['fieldoptions'] = 'Opzioni (scrivete una sola opzione per ciascuna riga)';
 $string['fields'] = 'Campi';
 $string['fieldshelp'] = 'È possibile creare campi per raccogliere diversi tipi di dati o personalizzare i campi creati tramite un preset.';
+$string['fieldsinformationtags'] = 'Informazioni del campo';
 $string['fieldsnavigation'] = 'Navigazione terziaria dei campi';
+$string['fieldtagdescription'] = 'Descrizione {$a}';
+$string['fieldtagid'] = 'ID {$a}';
+$string['fieldtagname'] = 'Nome {$a}';
 $string['fieldupdated'] = 'Il campo è stato aggiornato';
 $string['fieldwidth'] = 'Larghezza';
 $string['fieldwidthlistview'] = 'Larghezza nella visualizzazione Elenco.';
@@ -232,6 +237,7 @@ $string['importpreset_desc'] = 'Il preset sarà applicato all\'attività e creer
 $string['importpresetmissingcapability'] = 'Non sei autorizzato ad importare preset.';
 $string['importsuccess'] = 'Il preset è stato applicato.';
 $string['includeapproval'] = 'Includi stato di approvazione';
+$string['includefiles'] = 'Includi file nell\'esportazione';
 $string['includetags'] = 'Includi tag';
 $string['includetime'] = 'Includi data di inserimento/modifica';
 $string['includeuserdetails'] = 'Includi dettagli utente';
@@ -342,6 +348,7 @@ $string['openafterclose'] = 'La data di chiusura è successiva alla data di aper
 $string['optionaldescription'] = 'Descrizione abbreviata (opzionale)';
 $string['optionalfilename'] = 'Nome del file (opzionale)';
 $string['other'] = 'Altro';
+$string['otherfields'] = 'Tutti gli altri campi';
 $string['overrwritedesc'] = 'Sostituisci il preset con questo nome sovrascrivendo il contenuto';
 $string['overwrite'] = 'Sovrascrivi';
 $string['overwritesettings'] = 'Sovrascrivi le impostazioni attuali (commenti, valutazioni, ecc.)';
@@ -359,6 +366,7 @@ $string['presetnotselected'] = 'Non sono stati selezionate preset.';
 $string['presets'] = 'Preset';
 $string['presetshelp'] = 'Selezionare un preset da utilizzare come punto di inzio.';
 $string['preview'] = 'Anteprima di {$a}';
+$string['previewaction'] = 'Anteprima';
 $string['privacy:metadata:commentpurpose'] = 'Commenti ai record del database';
 $string['privacy:metadata:data_content'] = 'Contenuto di un campo';
 $string['privacy:metadata:data_content:content'] = 'Contenuto';
@@ -403,7 +411,7 @@ $string['resetalltemplates'] = 'Resetta tutti i modelli';
 $string['resetalltemplatesconfirm'] = 'Si sta per rimuovere tutti i modelli del preset corrente. Qualora in seguito si desideri ripristinare i modelli, sarà necessario selezionar di nuovo il preset nella scheda \'Preset\'.';
 $string['resetalltemplatesconfirmtitle'] = 'Resettare tutti i modelli?';
 $string['resetsettings'] = 'Reimposta filtri';
-$string['resettemplate'] = 'Reimposta il modello';
+$string['resettemplate'] = 'Reimposta il modello corrente';
 $string['resettemplateconfirm'] = 'Sarà rimosso definitivamente {$a} dai tuoi preset.';
 $string['resettemplateconfirmtitle'] = 'Reimpostare il modello?';
 $string['resizingimages'] = 'Ridimensionamento anteprima immagini in corso...';
@@ -429,6 +437,7 @@ $string['searchresults'] = 'Record contenenti "{$a}"';
 $string['selectedrequired'] = 'Necessari tutti i selezionati';
 $string['selectexportoptions'] = 'Seleziona opzioni di esportazione';
 $string['selectfields'] = 'Seleziona campi';
+$string['selectfordeletion'] = 'Selezionare la voce da eliminare';
 $string['showall'] = 'Visualizza tutti i record';
 $string['showmore'] = 'Visualizza altro';
 $string['single'] = 'Dettagli';
@@ -456,19 +465,14 @@ $string['todatabase'] = 'in questo Database';
 $string['type'] = 'Tipo di campo';
 $string['undefinedprocessactionmethod'] = 'In Data_Preset non vi sono metodi definiti per gestire l\'azione "{$a}".';
 $string['unknown'] = 'Campo sconosciuto';
-$string['unsupportedexport'] = '({$a->fieldtype}) non è esportabile.';
 $string['unsupportedfields'] = 'Campi non supportati';
 $string['unsupportedfieldslist'] = 'I seguenti campi non possono essere esportati:';
 $string['updatefield'] = 'Aggiorna un campo già esistente';
 $string['uploadfile'] = 'Carica file';
-$string['uploadrecords'] = 'Carica i record da un file';
-$string['uploadrecords_help'] = 'È possibile importare record attraverso un file di testo. Il formato del file è descritto di seguito:
+$string['uploadrecords'] = 'Importa record';
+$string['uploadrecords_help'] = 'Consente di Importare le voci esportate da un altro database, tramite CSV o ZIP contenente un file CSV (se i file sono inclusi nell\'esportazione).
 
-* ciascuna linea deve contenere un record
-* ciascun record è una serie di campi separati da l separatore selezionato
-* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
-
-Il delimitatore di campo è un carattere che racchiude i campi del record. Spesso non è presente e si può evitare di impostarlo.';
+In alternativa, per creare un file CSV da importare, aggiungere una voce al database e quindi esportarla. Modificare il file CSV e aggiungere più voci.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Includi nella ricerca.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', version '4.1'.
+ * Strings for component 'lesson', language 'es', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -198,8 +198,8 @@ $string['displayofgrade'] = 'Mostrar calificación (sólo para estudiantes)';
 $string['displayreview'] = 'Proporcionar una opción para tratar de nuevo la pregunta';
 $string['displayreview_help'] = 'Si está habilitado, cuando una pregunta se responde incorrectamente, el estudiante tiene la opción de volver a intentarlo sin crédito de puntos o continuar con la lección. Si el alumno hace clic para pasar a otra pregunta, se almacenará la respuesta seleccionada (incorrecta). De forma predeterminada, los saltos de respuesta incorrecta se establecen a "esta página" y tienen una puntuación de 0, por lo que se recomienda que establezca la respuesta incorrecta para saltar a una página diferente para evitar confusiones con sus alumnos.';
 $string['displayscorewithessays'] = '<p>Usted ha obtenido un total de {$a->score} sobre {$a->tempmaxgrade} en las preguntas calificadas de manera automática.<p>
-<p>Sus {$a->essayquestions} pregunta(s) de ensayo se calificarán  se añadirán a su calificación final.<p>
-<p>Su calificación actual sin incluir  las pregunta(s) ensayo es de {$a->score} sobre {$a->grade}.<p>';
+<p>Sus {$a->essayquestions} pregunta(s) de ensayo se calificarán y se añadirán a su calificación final posteriormente.<p>
+<p>Su calificación actual, sin incluir  las pregunta(s) ensayo, es de {$a->score} sobre {$a->grade}.<p>';
 $string['displayscorewithoutessays'] = 'Su puntuación es {$a->score} (sobre {$a->grade}).';
 $string['duplicatepagenamed'] = 'Duplicar página: {$a}';
 $string['edit'] = 'Edición';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'ca', version '4.1'.
+ * Strings for component 'format_social', language 'ca', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Nombre de debats';
 $string['numberdiscussions_help'] = 'Aquest paràmetre especifica quants debats s\'han de mostrar.';
+$string['plugin_description'] = 'El curs se centra al voltant d\'un fòrum principal a la pàgina del curs. Es poden afegir activitats i recursos addicionals mitjançant el bloc Activitats socials.';
 $string['pluginname'] = 'Format social';
 $string['sectionname'] = 'secció';

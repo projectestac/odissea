@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'nl', version '4.1'.
+ * Strings for component 'h5pactivity', language 'nl', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = 'Niet gerapporteerd';
 $string['attempts'] = 'Pogingen';
 $string['attempts_none'] = 'Deze gebruiker heeft nog geen pogingen om te tonen.';
 $string['attempts_report'] = 'Pogingenrapport';
+$string['attempts_report_header_label'] = 'Pogingen ({$a})';
 $string['choice'] = 'Keuze';
 $string['completion'] = 'Voltooien';
 $string['contentbank'] = 'Meer informatie over de inhoudbank';
@@ -63,6 +64,8 @@ $string['displayembed'] = 'Knop Insluiten';
 $string['displayexport'] = 'Downloaden toestaan';
 $string['dnduploadh5pactivity'] = 'Een H5P activiteit toevoegen';
 $string['duration'] = 'Duur';
+$string['enablesavestate'] = 'Bewaar status';
+$string['enablesavestate_help'] = 'Sla automatisch de huidige status van de gebruiker op. De gebruiker kan later terugkeren en doorgaan waar hij was gebleven.';
 $string['enabletracking'] = 'Poging opvolgen inschakelen';
 $string['false'] = 'Fout';
 $string['grade_average_attempt'] = 'Gemiddeld cijfer';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = 'Cijfer: {$a}';
 $string['grade_highest_attempt'] = 'Hoogste cijfer';
 $string['grade_last_attempt'] = 'Laatste poging';
 $string['grade_manual'] = 'Bereken geen cijfer';
+$string['gradenoun_h5p'] = 'Cijfer: {$a}';
 $string['h5pactivity:addinstance'] = 'Voeg een nieuwe H5P toe';
 $string['h5pactivity:reviewattempts'] = 'Bekijk H5P-pogingen';
 $string['h5pactivity:submit'] = 'Dien H5P-pogingen in';
@@ -106,7 +110,7 @@ $string['package_help'] = 'Het pakketbestand is een h5p-bestand met dynamische H
 $string['page-mod-h5pactivity-x'] = 'Elke H5P-modulepagina';
 $string['pluginadministration'] = 'H5P-administratie';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'Deze inhoud wordt weergegeven in de voorbeeldmodus. Het traceren van pogingen wordt niet opgeslagen.';
+$string['previewmode'] = 'Je bent in voorbeeldmodus.';
 $string['privacy:metadata:attempt'] = 'Het pogingnummer';
 $string['privacy:metadata:rawscore'] = 'De behaalde score';
 $string['privacy:metadata:timecreated'] = 'Het tijdstip waarop het bijgehouden element is gemaakt';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = 'Het laatste tijdelement werd bijgeho
 $string['privacy:metadata:userid'] = 'De ID van de gebruiker die toegang heeft gehad tot de H5P-activiteit';
 $string['privacy:metadata:xapi_track'] = 'Probeer tracking-informatie';
 $string['privacy:metadata:xapi_track_results'] = 'Poging tot het traceren van resultaten';
+$string['privacy:metadata:xapisummary'] = 'De H5P-activiteit bevat informatie met betrekking tot de xAPI-inhoudsstatus die door de gebruiker is opgeslagen.';
 $string['report_viewed'] = 'Rapport bekeken';
 $string['result_compound'] = 'Gecombineerde deelscore';
 $string['result_fill-in'] = 'Tekst invullen';
@@ -123,12 +128,13 @@ $string['result_other'] = 'Onbekend interactietype';
 $string['result_sequencing_answer'] = 'Positiewaarde';
 $string['result_sequencing_choice'] = 'Posities';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Toon alle pogingen ({$a} ingestuurd)';
 $string['review_mode'] = 'Bekijk pogingen';
 $string['review_my_attempts'] = 'Bekijk mijn pogingen';
 $string['review_none'] = 'Deelnemers kunnen hun eigen pogingen niet bekijken';
 $string['review_on_completion'] = 'Deelnemers kunnen hun eigen pogingen bekijken';
-$string['review_user_attempts'] = 'Bekijk pogingen van gebruikers ({$a})';
+$string['review_user_attempts'] = 'Bekijk ({$a})';
+$string['savestatefreq'] = 'Bewaar frequentiestatus';
+$string['savestatefreq_help'] = 'Hoe vaak (in seconden) de huidige status van de gebruiker wordt opgeslagen.';
 $string['score'] = 'Cijfer';
 $string['score_out_of'] = '{$a->rawscore} op {$a->maxscore}';
 $string['search:activity'] = 'H5P - activiteitsinformatie';
@@ -136,7 +142,10 @@ $string['startdate'] = 'Startdatum';
 $string['statement_received'] = 'xAPI-instructie ontvangen';
 $string['totalscore'] = 'Totaalcijfer';
 $string['tracking_messages'] = 'Sommige H5P voorzien opvolggegevens voor geavanceerde rapporten zoals het aantal pogingen, antwoorden en cijfers. Merk op: sommige H5P voorzien die gegevens niet. In dat geval hebben onderstaande instellingen geen effect.';
+$string['trackingdisabled'] = 'Het bijhouden van pogingen is niet ingeschakeld voor deze activiteit.';
+$string['trackingdisabled_enable'] = 'Het bijhouden van pogingen is niet ingeschakeld voor deze activiteit. Je kunt dit inschakelen in <a href="{$a}">Instellingen</a>.';
 $string['true'] = 'Waar';
 $string['usecontentbank'] = 'Gebruik de <a href="{$a}" target="_blank">inhoudsbank (opent in nieuw scherm)</a> om je H5P-bestanden te beheren';
 $string['view'] = 'Bekijken';
 $string['view_report'] = 'Bekijk rapport';
+$string['viewattempts'] = 'Bekijk pogingen  ({$a})';

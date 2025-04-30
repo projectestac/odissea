@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ar', version '4.1'.
+ * Strings for component 'atto_recordrtc', language 'ar', version '4.4'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -69,8 +69,6 @@ $string['recordrtc:recordvideo'] = 'تسجيل الفيديو مباشرة إل�
 $string['settings'] = 'إعدادات RecordRTC';
 $string['startrecording'] = 'إبدأ التسجيل';
 $string['stoprecording'] = 'أوقف التسجيل';
-$string['timelimit'] = 'حد الوقت بالثواني';
-$string['timelimit_desc'] = 'أقصى مدة تسجيل مسموح بها لمقطوعات الصوت/الفيديو';
 $string['timelimitwarning'] = 'ينبغي أن تدخل رقمًا أكبر من 0.';
 $string['uploadaborted'] = 'تم إحباط الرفع:';
 $string['uploadfailed'] = 'فشل الرفع:';

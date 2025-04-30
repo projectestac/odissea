@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ro', version '4.1'.
+ * Strings for component 'form', language 'ro', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'În acest câmp trebuie să completaţi cel puţin {
 $string['err_nonzero'] = 'Completaţi aici un număr care să nu aibă prima cifră 0.';
 $string['err_nopunctuation'] = 'Nu folosiţi semne de punctuaţie în acest câmp.';
 $string['err_numeric'] = 'Completaţi aici un număr.';
-$string['err_positiveint'] = 'Trebuie să inserați un număr mai mare decât 0.';
+$string['err_positiveint'] = 'Trebuie să inserați un număr întreg mai mare decât 0.';
 $string['err_rangelength'] = 'Aici trebuie să completaţi un număr de caractere care să se încadreze în limitele {$a->format[0]} - {$a->format[1]}.';
 $string['err_required'] = 'Trebuie să introduceți o valoare.';
 $string['err_wrappingwhitespace'] = 'Valoarea nu trebuie să înceapă sau să se termine cu spații albe.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Tipuri de fișiere acceptate:';
 $string['filetypesany'] = 'Toate tipurile de fișiere';
 $string['filetypesnotall'] = 'Nu este permis să selectați \'Toate tipurile de fișiere\' aici';
 $string['filetypesnotallowed'] = 'Aceste tipuri de fișiere nu sunt aceptate aici: {$a}';
-$string['filetypesnotwhitelisted'] = 'Aceste tipuri de fișiere nu sunt aceptate aici: {$a}';
 $string['filetypesothers'] = 'Alte fișiere';
 $string['filetypesunknown'] = 'Tipuri de fișiere necunoscute: {$a}';
+$string['formactions'] = 'Acțiuni formular';
 $string['general'] = 'General';
 $string['hideadvanced'] = 'Ascunde avansat';
 $string['hour'] = 'Oră';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Sugestii';
 $string['time'] = 'Timp';
 $string['timeunit'] = 'Unitate de timp';
 $string['timing'] = 'Contorizare';
+$string['togglesensitive'] = 'Funcție de status-ul comutatorului';
 $string['unmaskpassword'] = 'Afişează parolă';
 $string['year'] = 'An';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', version '4.1'.
+ * Strings for component 'badges', language 'zh_cn', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = '行为';
 $string['activate'] = '启用访问';
 $string['activatesuccess'] = '成功启用了对勋章的访问。';
 $string['addalignment'] = '增加外部技能或标准';
-$string['addbackpack'] = '添加背包';
 $string['addbadge'] = '添加勋章';
 $string['addbadge_help'] = '选择所有应该添加到此勋章条件的勋章。按住CTRL键选择多个项目。';
 $string['addbadgecriteria'] = '添加勋章规则';
@@ -88,8 +87,9 @@ $string['backpackbadgessettings'] = '更改背包设置';
 $string['backpackbadgessummary'] = '您有 {$a->totalbadges}从{$a->totalcollections}集合中显示的勋章。';
 $string['backpackcannotsendverification'] = '无法发送验证邮件';
 $string['backpackconnected'] = '背包已连接';
-$string['backpackconnection'] = '背包连接';
-$string['backpackconnection_help'] = '通过连接到背包，您可以共享此站点上的徽章，并在此网站的个人资料页面上显示来自你的背包中的公共徽章收藏。';
+$string['backpackconnection'] = '连接背包';
+$string['backpackconnection_connected'] = '你的背包';
+$string['backpackconnection_help'] = '存储和共享来自此站点的徽章，并在您的用户个人资料中显示来自其他网站的公共徽章。';
 $string['backpackconnectioncancelattempt'] = '使用不同的电子邮件地址连接';
 $string['backpackconnectionconnect'] = '连接到背包';
 $string['backpackconnectionnottested'] = '这个背包无法测试连接，因为只有Open badge v2.0背包支持它。';
@@ -103,17 +103,30 @@ $string['backpackemail'] = '电子邮件地址';
 $string['backpackemail_help'] = '与您的背包相关的电子邮件地址。当您被连接，任何在本网站获得的勋章将与此电子邮件地址相关联。';
 $string['backpackemail_required'] = '邮箱地址不可为空';
 $string['backpackemailverificationpending'] = '验证等待中';
-$string['backpackemailverifyemailbody'] = '您好，
-有人使用您的电子邮件地址从“{$a->sitename}”请求连接到您的勋章背包。要确认并激活到您背包的连接请转到{$a->link}，在大多数邮件程序中，这应该是一个蓝色的链接，您可以点击它。如果这不起作用，那么请剪切并粘贴地址到web浏览器顶部的地址行。如果您需要帮助，请联系网站管理员， {$a->admin}';
+$string['backpackemailverifyemailbody'] = '您好，{$a->userfirstname}，
+
+您连接到“{$a->sitename}”的徽章背包即将完成。
+
+要完成与您的背包的连接，请通过以下按钮验证您的电子邮件地址：
+
+{$a->buttonlink}
+
+如果按钮无法使用，您可以将以下网址复制并粘贴到您的浏览器中：
+{$a->link}
+
+如果您没有尝试连接到您的徽章背包，您可以安全地忽略此电子邮件。
+
+如需额外帮助，请联系您的网站支持人员，
+
+{$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}：勋章背包邮件验证';
-$string['backpackemailverifypending'] = '一封验证邮件已经发送到<strong>{$a}</strong>。点击邮件中的验证连接来激活您的背包连接。';
-$string['backpackemailverifysuccess'] = '感谢您的邮箱验证。您现在已经连接到了您的背包。';
+$string['backpackemailverifypending'] = '我们已发送电子邮件至 <strong>{$a}</strong>。单击电子邮件中的验证链接以激活您的背包连接。';
+$string['backpackemailverifysuccess'] = '您已经连接到了您的背包。';
 $string['backpackemailverifytokenmismatch'] = '您单击的链接中的令牌与存储的令牌不匹配。确保您在最近收到的邮件中点击了链接。';
 $string['backpackexporterror'] = '无法将勋章导出到背包';
 $string['backpackexporterrorwithinfo'] = '无法将徽章“{$a->badgename}”导出到背包。错误：{$a->error}';
 $string['backpackimport'] = '勋章导入设置';
 $string['backpackimport_help'] = '成功建立背包连接后，来自背包的勋章可以显示在勋章页面和个人档案页面上。在这个区域，您可以从您的背包中选择您想要显示在您的个人档案中的勋章集合。';
-$string['backpackneedsupdate'] = '连接到此个人档案的背包与该站点的背包不匹配。您需要断开并重新连接背包。';
 $string['backpackprovider'] = '背包供应商';
 $string['backpacksettings'] = '背包设置';
 $string['backpackweburl'] = '背包URL';
@@ -138,6 +151,7 @@ $string['badgestatus_3'] = '可用（条件已锁定）';
 $string['badgestatus_4'] = '存档';
 $string['badgestoearn'] = '可用的勋章数： {$a}';
 $string['badgesview'] = '课程勋章';
+$string['badgetags'] = '徽章标签';
 $string['badgeurl'] = '已颁发的勋章链接';
 $string['balignment'] = '比对 ({$a})';
 $string['bawards'] = '获得人（{$a}）';
@@ -161,6 +175,7 @@ $string['connected'] = '已连接';
 $string['connecting'] = '连接中';
 $string['contact'] = '联系人';
 $string['contact_help'] = '授勋机构的 email';
+$string['copy'] = '复制';
 $string['copyof'] = '复制的 {$a}';
 $string['course'] = '课程：{$a}';
 $string['coursebadges'] = '勋章';
@@ -260,8 +275,6 @@ $string['enablebadges'] = '启用勋章';
 $string['endorsement'] = '签注';
 $string['error:backpackdatainvalid'] = '背包返回的数据无效。';
 $string['error:backpackemailnotfound'] = '这个邮箱\'{$a}\'没有和背包关联。您需要为这个帐号<a href="http://backpack.openbadges.org">创建背包</a>或者用另一个邮箱登录。';
-$string['error:backpacknotavailable'] = '您的站点无法通过 Internet 访问，故此站点下授予的勋章均不能被外部勋章背包服务中心确认。';
-$string['error:backpackproblem'] = '连接到你的背包服务提供商出现问题，请稍后再试。';
 $string['error:badgeawardnotfound'] = '无法验证此已授予的勋章。此勋章可能已被撤销。';
 $string['error:badgenotfound'] = '‎未找到勋章';
 $string['error:cannotact'] = '不能激活该勋章。';
@@ -313,7 +326,6 @@ $string['eventbadgelistingviewed'] = '已查看勋章列表';
 $string['eventbadgerevoked'] = '已撤销勋章';
 $string['eventbadgeupdated'] = '已更新勋章';
 $string['eventbadgeviewed'] = '已查看勋章';
-$string['evidence'] = '证书';
 $string['existingrecipients'] = '现有的勋章获得者';
 $string['existsinbackpack'] = '勋章已经在背包中';
 $string['expired'] = '已过期';
@@ -327,6 +339,7 @@ $string['expireperiods'] = '此勋章在颁发 {$a} 秒后过期。';
 $string['expiresin'] = '过期{$a}';
 $string['expirydate'] = '到期日期';
 $string['expirydate_help'] = '可选项，勋章可以在特定日期过期，也可以根据颁发给用户的日期计算日期。';
+$string['externalbackpack_required'] = '背包提供商不能为空';
 $string['externalbadges'] = '我在其它网站获得的勋章';
 $string['externalbadges_help'] = '此处展示您外部背包中的勋章。';
 $string['externalbadgesp'] = '在其它网站获得的勋章：';
@@ -367,6 +380,7 @@ $string['localbadgesh'] = '我的勋章来自这个网站';
 $string['localbadgesh_help'] = '通过完成课程、课程活动和其他要求而在本网站内获得的所有勋章。您可以在这里管理您的勋章，通过使他们公开或私人为您的个人档案页。您可以下载您的所有勋章或每个勋章分别保存在您的电脑上。下载的勋章可以添加到您的外部背包服务。';
 $string['localbadgesp'] = '勋章来源于 {$a}:';
 $string['localconnectto'] = '要在本网站之外共享这些勋章，您需要<a href="{$a}">连接到一个背包</a>。';
+$string['loginbackpacktitle'] = '<strong>登录您的背包</strong>';
 $string['makeprivate'] = '不公开';
 $string['makepublic'] = '公开';
 $string['managebackpacks'] = '管理背包';
@@ -380,6 +394,7 @@ $string['month'] = '月';
 $string['moredetails'] = '更多细节';
 $string['mybackpack'] = '我的背包设置';
 $string['mybadges'] = '我的勋章';
+$string['namewithlink'] = '带链接的名称';
 $string['never'] = '从不';
 $string['newbackpack'] = '添加一个新背包';
 $string['newbadge'] = '添加一个新勋章';
@@ -395,6 +410,8 @@ $string['nocompetencies'] = '没有选择能力';
 $string['nocriteria'] = '此勋章还没有定义授勋规则。';
 $string['noendorsement'] = '这个勋章没有签注。';
 $string['noexpiry'] = '此勋章永不过期。';
+$string['nomatchingawards'] = '目前还没有匹配的人获得此徽章。';
+$string['nomatchingbadges'] = '没有匹配的徽章可供用户获取。';
 $string['noparamstoadd'] = '没有额外的参数添加到这个勋章条件中。';
 $string['norelated'] = '此勋章没有任何关联勋章。';
 $string['notacceptedrole'] = '您的用户角色没有被赋予权限来授予此勋章。<br/>
@@ -468,8 +485,6 @@ $string['privacy:metadata:manualaward:issuerid'] = '被授予勋章的用户的I
 $string['privacy:metadata:manualaward:issuerrole'] = '被授予勋章的用户的角色';
 $string['privacy:metadata:manualaward:recipientid'] = '被手动授予勋章的用户的ID';
 $string['recipient'] = '徽章接受者';
-$string['recipientdetails'] = '获得者详情';
-$string['recipientidentificationproblem'] = '在现有用户中找不到此勋章的获得者。';
 $string['recipients'] = '勋章获得者';
 $string['recipientvalidationproblem'] = '此用户无法验证为此徽章的接收者。';
 $string['relatedbages'] = '关联勋章';
@@ -488,8 +503,6 @@ $string['selectgroup_end'] = '只显示公共集合。<a href="{$a}">访问您�
 $string['selectgroup_start'] = '从您的背包中选择要在本网站显示的集合：';
 $string['selecting'] = '选定的勋章…';
 $string['setup'] = '建立连接';
-$string['sitebackpack'] = '可用的外部背包';
-$string['sitebackpack_help'] = '用户可以从这个网站连接到的外部背包。请注意，在用户连接背包后更改此设置将要求每个用户进入背包设置页面，断开连接然后重新连接。';
 $string['sitebackpackdeleted'] = '网站背包已被删除。';
 $string['sitebackpacknotdeleted'] = '无法删除此背包，因为它当前是站点默认值。';
 $string['sitebackpackwarning'] = '无法连接到背包。<br/><br/>检查“勋章发行者电子邮件地址”管理设置是否为背包网站账户的有效电子邮件。<br/><br/>在 <a href="{$a->url}">站点背包设置页面</a>检查 "勋章发行人密码", 背包网站上的账号密码是否正确.。<br/><br/>背包返回："{$a->warning}"';
@@ -514,6 +527,8 @@ $string['statusmessage_2'] = '这个勋章目前对用户不可用，并且它�
 $string['statusmessage_3'] = '此勋章已经启用，故它的授勋规则已经被锁定。';
 $string['statusmessage_4'] = '此勋章目前已存档。';
 $string['subject'] = '消息主题';
+$string['tagarea_badge'] = '徽章';
+$string['tags'] = '标签';
 $string['targetcode'] = '代码';
 $string['targetcode_help'] = '用于在其框架内引用外部技能或标准的唯一字符串标识符。';
 $string['targetdescription'] = '描述';
@@ -527,6 +542,7 @@ $string['targeturl_help'] = '指向描述外部技能或标准的页面的链接
 $string['testbackpack'] = '测试背包"{$a}"';
 $string['testsettings'] = '测试设置';
 $string['type'] = '类型';
+$string['userbadges'] = '用户徽章';
 $string['variablesubstitution'] = '在消息中的替换变量';
 $string['variablesubstitution_help'] = '在设置勋章消息时，可以将某些变量插入到消息标题和/或消息内容当中，这些变量在该消息发送出去的时候会被替换成相关的真实数据。这些变量在插入的时候必须严格按下面的格式进行填写。下面列出可以使用的变量及其使用格式：
 
@@ -538,6 +554,7 @@ $string['variablesubstitution_help'] = '在设置勋章消息时，可以将某�
 
 %badgelink%
 ：此变量将会被替换成授勋机构的URL网址。';
+$string['verifyemail'] = '验证邮箱';
 $string['version'] = '版本';
 $string['version_help'] = '版本字段可用于跟踪勋章的开发。如果指定，版本将显示在勋章页面上。';
 $string['viewbadge'] = '查看已颁发的勋章';

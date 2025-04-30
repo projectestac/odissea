@@ -32,7 +32,7 @@ require_once(__DIR__ . '/generator_trait.php');
  * @copyright  2013 Andrew Nicols
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class mail_group_test extends \advanced_testcase {
+final class mail_group_test extends \advanced_testcase {
     // Make use of the cron tester trait.
     use mod_forum_tests_cron_trait;
 
@@ -87,7 +87,7 @@ class mail_group_test extends \advanced_testcase {
      * Ensure that posts written in a forum marked for separate groups includes notifications for the members of that
      * group, and any user with accessallgroups.
      */
-    public function test_separate_group() {
+    public function test_separate_group(): void {
         global $CFG, $DB;
 
         $this->resetAfterTest(true);
@@ -166,7 +166,7 @@ class mail_group_test extends \advanced_testcase {
      * Ensure that posts written in a forum marked for visible groups includes notifications for the members of that
      * group, and any user with accessallgroups.
      */
-    public function test_visible_group() {
+    public function test_visible_group(): void {
         global $CFG, $DB;
 
         $this->resetAfterTest(true);

@@ -32,6 +32,9 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 	public function showAnswerFieldPopupEditor($visible) {
 		throw new HException("Not implemented");
 	}
+	public function showAutomatedStudentGuidance($visible) {
+		throw new HException("Not implemented");
+	}
 	public function showAnswerFieldInlineEditor($visible) {
 		throw new HException("Not implemented");
 	}

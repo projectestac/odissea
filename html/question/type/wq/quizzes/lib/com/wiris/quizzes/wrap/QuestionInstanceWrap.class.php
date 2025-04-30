@@ -6,6 +6,20 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 		$this->instance = $instance;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function startMultiStepSession() {
+		try {
+			$this->wrapper->start();
+			$this->instance->startMultiStepSession();
+			$this->wrapper->stop();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getChecks($slot, $authorAnswer) {
 		try {
 			$this->wrapper->start();

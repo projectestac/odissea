@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ar', version '4.1'.
+ * Strings for component 'repository_equella', language 'ar', version '4.4'.
  *
  * @package     repository_equella
  * @category    string
@@ -31,6 +31,9 @@ $string['equella:view'] = 'معاينة مستودع EQUELLA';
 $string['equellaaction'] = 'إجراء EQUELLA';
 $string['equellaoptions'] = 'خيارات EQUELLA';
 $string['equellaurl'] = 'رابط EQUELLA';
+$string['equellauserfield'] = 'حقل مستخدم EQUELLA';
+$string['equellauserfield_help'] = 'اختر حقل المستخدم المراد استعماله لمطابقة مستخدم EQUELLA (يتم إدراج حقول المستخدم الخاصة من نوع النص القصير فقط).';
+$string['equellausername'] = 'اسم المستخدم';
 $string['group'] = 'إعدادات الدور {$a}';
 $string['groupdefault'] = 'الافتراضي';
 $string['pluginname'] = 'مستودع EQUELLA';

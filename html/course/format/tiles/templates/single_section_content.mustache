@@ -47,6 +47,17 @@
                 </div>
             </div>
         </div>
+        {{#current}}
+            <span class="badge badge-pill badge-primary order-1">{{#str}}highlighted{{/str}}</span>
+        {{/current}}
+        {{^visible}}
+            <span class="badge badge-pill badge-warning order-2">{{#str}}hiddenfromstudents{{/str}}</span>
+        {{/visible}}
+        {{#visible}}
+            {{#availabilitymessage}}
+                <span class="badge badge-pill badge-secondary order-3">{{#str}}restricted{{/str}}</span>
+            {{/availabilitymessage}}
+        {{/visible}}
     {{/hidden_section}}
     {{! Right side needs to be after pagesechead in HTML to facilitate keyboard navigation (tabbing from section head to close button). }}
     <div class="right side">

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'it', version '4.1'.
+ * Strings for component 'qtype_multianswer', language 'it', version '4.4'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmquestionsaveasedited'] = 'Confermo di voler salvare la domanda con le modifiche apporttate';
+$string['confirmquestionsaveasedited'] = 'Confermo di voler salvare la domanda con le modifiche apportate';
 $string['confirmsave'] = 'Conferma e salva {$a}';
 $string['correctanswer'] = 'Risposta corretta';
 $string['correctanswerandfeedback'] = 'Risposta corretta e feedback';
@@ -54,8 +54,7 @@ $string['privacy:metadata'] = 'Il plugin Tipi di domande \'Risposte inglobate (C
 $string['qtypenotrecognized'] = 'Il tipo di domanda {$a} non è stato riconosciuto';
 $string['questiondefinition'] = 'Definizione della domanda';
 $string['questiondeleted'] = 'Domanda eliminata';
-$string['questioninquiz'] = '	
-<ul> <li>aggiungi o elimina domande, </li> <li>cambia l\'ordine delle domande nel testo,</li> <li>cambiail tipo di domanda (numerica, risposta breve, scelta multipla). </li></ul>';
+$string['questioninquiz'] = '<ul> <li>aggiungi o elimina domande, </li> <li>cambia l\'ordine delle domande nel testo,</li> <li>cambia il tipo di domanda (numerica, risposta breve, scelta multipla). </li></ul>';
 $string['questionnotfound'] = 'Non è possibile trovare la domanda relativa alla porzione di domanda #{$a}';
 $string['questionsadded'] = 'Domanda inserita';
 $string['questionsaveasedited'] = 'La domanda sarà salvata con le modifiche apportate';

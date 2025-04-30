@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_multilangupgrade', language 'zh_cn', version '4.4'.
  *
  * @package     tool_multilangupgrade
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['multilangupgradeinfo'] = '多语言句法从 1.8 版本后进行了修改，不再支持 <lang> 标签 <br /><br />例如： &lt;span lang="en" class="multilang">Hello!&lt;/span&gt;&lt;span lang="zh-cn" class="multilang">您好！&lt;/span&gt;<br /><br /><strong>您想升级所有现有文本中的语法吗？</strong>';
+$string['multilangupgradeinfo'] = '<p>multilang 过滤器语法在 1.8 中发生了变化，因此不再支持 &lt;lang&gt; 标签。</p>
+<p>示例： &lt;span lang=“en” class=“multilang”&gt;Hello！&lt;/span&gt;&lt;span lang=“es” class=“multilang”&gt;Hola！&lt;/span&gt;</p>
+<p>您现在是否要升级所有现有文本中的语法？</p>';
 $string['pluginname'] = '多语言升级';
 $string['privacy:metadata'] = 'Multilang升级插件不存储任何个人数据。';

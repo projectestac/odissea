@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', version '4.1'.
+ * Strings for component 'report_security', language 'pt', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -81,10 +81,6 @@ $string['check_guestrole_error'] = 'O papel de visitante "{$a}" está configurad
 $string['check_guestrole_name'] = 'Papel de visitante';
 $string['check_guestrole_notset'] = 'Não foi definido nenhum papel de visitante.';
 $string['check_guestrole_ok'] = 'O papel de visitante está configurado corretamente.';
-$string['check_mediafilterswf_details'] = '<p>A incorporação automática de conteúdo SWF (Flash) levanta questões graves de segurança. Qualquer utilizador registado pode realizar um ataque XSS contra outros utilizadores. Esta configuração deve estar desativada em servidores de produção.</p>';
-$string['check_mediafilterswf_error'] = 'O filtro de conteúdo Flash está ativo. Esta configuração levanta problemas de segurança graves na maioria dos servidores.';
-$string['check_mediafilterswf_name'] = 'Filtro de conteúdos SWF (Flash)';
-$string['check_mediafilterswf_ok'] = 'O filtro de conteúdo Flash não está ativo.';
 $string['check_nodemodules_details'] = '<p>A diretoria <code>{$a->path}</code> contém módulos Node.js e suas dependências, normalmente instalados pelo utilitário NPM. Esses módulos podem ser necessários para o desenvolvimento local do Moodle, como, por exemplo, o uso da framework grunt. Não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendado remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso web na configuração do seu servidor web.</p>';
 $string['check_nodemodules_info'] = 'O diretório de módulos Node não deve estar presente em sites públicos.';
 $string['check_nodemodules_name'] = 'Diretório de módulos Node.js';

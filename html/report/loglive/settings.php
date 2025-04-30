@@ -26,8 +26,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2012.06.20 @sarjona
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
 if (get_protected_agora()) {
 // ************ FI
 
@@ -35,8 +35,8 @@ if (get_protected_agora()) {
 $ADMIN->add('reports', new admin_externalpage('reportloglive', get_string('pluginname', 'report_loglive'),
         "$CFG->wwwroot/report/loglive/index.php", 'report/loglive:view'));
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2012.06.20 @sarjona
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
 }
 // ************ FI
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'zh_cn', version '4.1'.
+ * Strings for component 'oublog', language 'zh_cn', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -204,7 +204,6 @@ $string['re'] = '回复：{$a}';
 $string['rss'] = 'RSS';
 $string['rssfeed'] = 'RSS 源';
 $string['savegrades'] = '保存成绩';
-$string['searchblogs'] = '搜索博客';
 $string['searchthisblog'] = '搜索此博客';
 $string['separateindividual'] = '单独的&nbsp;个人的';
 $string['separateindividualblogs'] = '单独的个人博客';

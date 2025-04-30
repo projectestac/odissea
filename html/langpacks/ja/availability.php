@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ja', version '4.1'.
+ * Strings for component 'availability', language 'ja', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = '制限を追加する ...';
 $string['and'] = 'および';
 $string['condition_group'] = '制限セット';
 $string['condition_group_info'] = '複雑な条件に適用するため、一連のネスト制限を追加します。';
+$string['disabled_verb'] = 'ルールセットに個人情報を含むルールが含まれているため変更できません。';
+$string['editsettings'] = '制限を編集する';
 $string['enableavailability'] = '制限アクセスを有効にする';
 $string['enableavailability_desc'] = 'この設定を有効にした場合、活動またはリソースにアクセスできるかどうかコントロールする条件 (日付、評点、完了に基づく) を付けることができます。';
 $string['error_list_nochildren'] = '制限セットには少なくとも1つの条件を含む必要があります。';

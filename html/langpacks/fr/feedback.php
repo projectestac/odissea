@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'fr', version '4.1'.
+ * Strings for component 'feedback', language 'fr', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Gras';
 $string['calendarend'] = '{$a} se termine';
 $string['calendarstart'] = '{$a} s’ouvre';
 $string['cannotaccess'] = 'Il n’est possible d’accéder à ce feedback que depuis un cours';
+$string['cannotcreatepagebreak'] = 'Un saut de page ne peut pas être ajouté au début d’un feedback ; un seul saut de page peut y être ajouté à la fin.';
 $string['cannotsavetempl'] = 'L’enregistrement des modèles n’est pas autorisé';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha n’a pas été configuré.';
@@ -58,7 +59,7 @@ $string['completed'] = 'Terminé';
 $string['completed_feedbacks'] = 'Réponses envoyées';
 $string['completedon'] = 'Terminé le {$a}';
 $string['completiondetail:submit'] = 'Envoyer un feedback';
-$string['completionsubmit'] = 'Afficher comme terminé quand l’utilisateur a envoyé le feedback';
+$string['completionsubmit'] = 'Envoyer le feedback';
 $string['configallowfullanonymous'] = 'Si ce réglage est activé, les activités feedback sur la page d’accueil peuvent être effectuées sans nécessiter d’authentification.';
 $string['confirmdeleteentry'] = 'Voulez-vous vraiment supprimer cette saisie ?';
 $string['confirmdeleteitem'] = 'Voulez-vous vraiment supprimer cet élément ?';
@@ -160,7 +161,7 @@ $string['insufficient_responses_for_this_group'] = 'Il n’y a pas assez de rép
 $string['insufficient_responses_help'] = 'Pour que ce feedback soit anonyme, il doit y avoir au moins 2 réponses.';
 $string['item_label'] = 'Étiquette';
 $string['item_name'] = 'Question';
-$string['label'] = 'Étiquette';
+$string['label'] = 'Zone texte et média';
 $string['labelcontents'] = 'Contenu';
 $string['mapcourse'] = 'Associer les feedbacks aux cours';
 $string['mapcourse_help'] = 'Par défaut, les formulaires de feedback créés sur la page d’accueil sont disponibles sur tout le site et apparaissent dans tous les cours qui utilisent le bloc feedback. Vous pouvez imposer l’affichage du formulaire de feedback en créant un bloc fixe ou limiter les cours dans lesquels un formulaire de feedback est affiché en associant un feedback à un ou plusieurs cours.';
@@ -194,7 +195,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Choix multiple (évalué)';
 $string['multichoicetype'] = 'Type de choix multiple';
 $string['multiplesubmit'] = 'Permettre plusieurs remises';
-$string['multiplesubmit_help'] = 'Si ce réglage est activé pour les questionnaires anonymes, les utilisateurs peuvent remplir un feedback indéfiniment.';
+$string['multiplesubmit_help'] = 'Si ce réglage est activé :
+
+* pour les feedbacks anonymes – les participants peuvent envoyer un nombre illimité de réponses, et toutes seront enregistrées.
+* pour les feedbacks non anonymes – les participants peuvent envoyer un nombre illimité de réponses, mais seule la dernière est enregistrée.';
 $string['name'] = 'Nom';
 $string['name_required'] = 'Nom requis';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

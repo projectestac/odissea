@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'el', version '4.1'.
+ * Strings for component 'calendar', language 'el', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'Διεύθυνση URL ημερολογίου';
 $string['calendarheading'] = 'Ημερολόγιο {$a}';
 $string['calendarpreferences'] = 'Προτιμήσεις ημερολογίου';
 $string['calendartypes'] = 'Τύποι ημερολογίου';
-$string['calendarurl'] = 'Διεύθυνση URL ημερολογίου: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Η διεύθυνση URL ημερολογίου αντιγράφηκε στο πρόχειρο';
 $string['category'] = 'Κατηγορία';
 $string['categoryevent'] = 'Γεγονότα κατηγορίας';
@@ -176,7 +175,6 @@ $string['importcalendarexternal'] = 'Εισαγωγή εξωτερικού ημ�
 $string['importcalendarfrom'] = 'Εισαγωγή από';
 $string['importcalendarheading'] = 'Εισαγωγή ημερολογίου...';
 $string['importfromfile'] = 'Αρχείο ημερολογίου (.ics)';
-$string['importfrominstructions'] = 'Παρακαλούμε δώστε μια διεύθυνση URL για ένα απομακρυσμένο ημερολόγιο, ή ανεβάστε ένα αρχείο.';
 $string['importfromurl'] = 'Διεύθυνση URL ημερολογίου';
 $string['invalideventtype'] = 'Ο τύπος γεγονότος που έχετε επιλέξει δεν είναι έγκυρος.';
 $string['invalidtimedurationminutes'] = 'Η διάρκεια σε λεπτά που έχετε εισάγει δεν είναι έγκυρη. Παρακαλούμε εισάγετε την διάρκεια σε λεπτά μεγαλύτερη από 0 ή επιλέξτε Όχι διάρκεια.';
@@ -188,7 +186,6 @@ $string['manyevents'] = '{$a} γεγονότα';
 $string['mon'] = 'Δευ';
 $string['monday'] = 'Δευτέρα';
 $string['monthly'] = 'Μηνιαία';
-$string['monthlyview'] = 'Εμφάνιση μήνα';
 $string['monthnext'] = 'Επόμενος μήνας';
 $string['monthprev'] = 'Προηγούμενος μήνας';
 $string['monththis'] = 'Τρέχων μήνας';

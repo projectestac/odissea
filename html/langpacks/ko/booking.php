@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'ko', version '4.1'.
+ * Strings for component 'booking', language 'ko', version '4.4'.
  *
  * @package     booking
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['agreetobookingpolicy'] = '아래의 예약 정책을 읽었으며 이에 동의합니다.';
 $string['answer'] = '답변하기';
 $string['answered'] = '답변완료';
 $string['attachedfiles'] = '첨부파일';

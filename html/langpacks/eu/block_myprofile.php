@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'eu', version '4.1'.
+ * Strings for component 'block_myprofile', language 'eu', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Erakutsi eduki-eremuaren ezarpenak';
 $string['display_address'] = 'Erakutsi helbidea';
-$string['display_aim'] = 'Erakutsi AIM';
 $string['display_city'] = 'Erakutsi hiria';
 $string['display_country'] = 'Erakutsi herrialdea';
 $string['display_currentlogin'] = 'Erakutsi oraingo saio-hasiera';
 $string['display_email'] = 'Erakutsi helbide elektronikoa';
 $string['display_firstaccess'] = 'Erakutsi lehen saio-hasiera';
-$string['display_icq'] = 'Erakutsi ICQ';
 $string['display_idnumber'] = 'Erakutsi ID zenbakia';
 $string['display_institution'] = 'Erakutsi erakundea';
 $string['display_lastaccess'] = 'Erakutsi azken saio-hasiera';
 $string['display_lastip'] = 'Erakutsi azken IPa';
 $string['display_lastlogin'] = 'Erakutsi azken sarrera';
-$string['display_msn'] = 'Erakutsi MSN';
 $string['display_phone1'] = 'Erakutsi telefonoa';
 $string['display_phone2'] = 'Erakutsi telefono mugikorra';
 $string['display_picture'] = 'Erakutsi irudia';
-$string['display_skype'] = 'Erakutsi Skype';
-$string['display_yahoo'] = 'Yahoo erakutsi';
 $string['myprofile:addinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria';
 $string['myprofile:myaddinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria Aginte-panelean';
 $string['myprofile_settings'] = 'Erabiltzailearen informazioa ikusgai';

@@ -23,22 +23,20 @@
  */
 namespace core\plugininfo;
 
-use moodle_url, part_of_admin_tree, admin_settingpage, admin_externalpage;
-
-defined('MOODLE_INTERNAL') || die();
+use admin_settingpage;
+use moodle_url;
+use part_of_admin_tree;
 
 /**
  * Class for authentication plugins
  */
 class auth extends base {
-    public function is_uninstall_allowed() {
-        // XTEC ************ AFEGIT - Disable uninstalling
-        // 2014.09.09 @pferre22
-        if (!get_protected_agora()) {
-            return false;
-        }
-        // ************ FI
 
+    public static function plugintype_supports_disabling(): bool {
+        return true;
+    }
+
+    public function is_uninstall_allowed() {
         global $DB;
 
         if (in_array($this->name, array('manual', 'nologin', 'webservice', 'mnet'))) {
@@ -104,6 +102,7 @@ class auth extends base {
 
     public function load_settings(part_of_admin_tree $adminroot, $parentnodename, $hassiteconfig) {
         global $CFG, $USER, $DB, $OUTPUT, $PAGE; // In case settings.php wants to refer to them.
+        /** @var \admin_root $ADMIN */
         $ADMIN = $adminroot; // May be used in settings.php.
         $plugininfo = $this; // Also can be used inside settings.php.
         $auth = $this;       // Also to be used inside settings.php.
@@ -124,10 +123,6 @@ class auth extends base {
             $settings = new admin_settingpage($section, $this->displayname,
                 'moodle/site:config', $this->is_enabled() === false);
             include($this->full_path('settings.php')); // This may also set $settings to null.
-        } else if (file_exists($this->full_path('config.html'))) {
-            $settingsurl = new moodle_url('/admin/auth_config.php', array('auth' => $this->name));
-            $settings = new admin_externalpage($section, $this->displayname,
-                $settingsurl, 'moodle/site:config', $this->is_enabled() === false);
         }
 
         if ($settings) {

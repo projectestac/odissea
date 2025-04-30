@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'zh_cn', version '4.1'.
+ * Strings for component 'reportbuilder', language 'zh_cn', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -43,7 +43,7 @@ $string['aggregationpercent'] = '百分比';
 $string['aggregationsum'] = '总和';
 $string['allsiteusers'] = '所有网站用户';
 $string['allusers'] = '所有用户';
-$string['apply'] = '申请';
+$string['apply'] = '确定';
 $string['audience'] = '观众';
 $string['audienceadded'] = '已添加访问群体\'{$a}\'';
 $string['audiencecreated'] = '已创建访问群体';
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} 加上 {$a->morecount} �
 $string['audiencenotsaved'] = '未保存访问群体';
 $string['audiencesaved'] = '已保存访问群体';
 $string['audienceupdated'] = '已更新访问群体';
+$string['audienceusedbyschedule'] = '此观众在本报告的时间表中使用';
 $string['cardview'] = '卡片视图';
 $string['cardview_help'] = '卡片视图允许您定义在窄设备上查看时报告的布局。列将在超过这里设置的限制时折叠，可通过切换来展开卡片，以查看所有的报告数据。';
 $string['cardviewfirstcolumntitle'] = '卡片视图设置已保存';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = '带有链接的课程ID号';
 $string['courseselect'] = '选择课程';
 $string['courseshortnamewithlink'] = '带有链接的课程简称';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = '自定义报告';
 $string['customreports'] = '自定义报表';
 $string['customreportslimit'] = '自定义报告限制';
 $string['customreportslimit_desc'] = '出于性能原因，自定义报告的数量可能会受到限制。 如果设置为零，则没有限制。';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = '找不到有效的报告来源';
 $string['errorsourceunavailable'] = '报告来源不可用';
 $string['filteradded'] = '已添加过滤器“{$a}”';
 $string['filtercontains'] = '包含';
+$string['filterdateafter'] = '之后';
+$string['filterdatebefore'] = '之前';
 $string['filterdatecurrent'] = '当前';
 $string['filterdatedays'] = '天';
 $string['filterdatefrom'] = '日期从';
@@ -261,9 +265,10 @@ $string['sendscheduleconfirm'] = '您确定要将日程表“{$a}”排队以便
 $string['showhide'] = '显示/隐藏\'{$a}\'';
 $string['showhidecard'] = '显示/隐藏卡片';
 $string['sorting'] = '排序';
-$string['sorting_help'] = '排序定义了报表中字段的初始排序顺序。可以通过点击上/下图标切换排序方向。用户还可以通过点击字段名定义自己的排序顺序。';
+$string['sorting_help'] = '您可以设置报表中列的初始排序顺序，然后用户可以通过单击列名称来更改该顺序。';
 $string['switchedit'] = '切换到编辑模式';
 $string['switchpreview'] = '切换到预览模式';
+$string['tagarea_reportbuilder_report'] = '自定义报表';
 $string['tasksendschedule'] = '发送报告时间表';
 $string['tasksendschedules'] = '发送报告日程表';
 $string['timeadded'] = '添加的时间';

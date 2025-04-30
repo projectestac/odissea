@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'fr', version '4.1'.
+ * Strings for component 'geogebra', language 'fr', version '4.4'.
  *
  * @package     geogebra
  * @category    string
@@ -122,7 +122,7 @@ $string['savewithoutsubmitting'] = 'Enregistrer sans envoyer';
 $string['settings'] = 'Paramètres';
 $string['showAlgebraInput'] = 'Afficher la barre d’insertion';
 $string['showMenuBar'] = 'Afficher la barre de menu';
-$string['showResetIcon'] = 'Afficher l’icone de remise à zéro';
+$string['showResetIcon'] = 'Afficher l’icône de remise à zéro';
 $string['showToolBar'] = 'Afficher la barre d’outils';
 $string['showToolBarHelp'] = 'Afficher l’aide de la barre d’outils';
 $string['showsubmit'] = 'Afficher le bouton Envoyer';

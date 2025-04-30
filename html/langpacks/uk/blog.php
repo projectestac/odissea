@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'uk', version '4.1'.
+ * Strings for component 'blog', language 'uk', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Блог про {$a->modtype}: {$a->modname}';
 $string['association'] = 'Прив’язка';
 $string['associations'] = 'Прив’язки';
 $string['associationunviewable'] = 'Цей запис не може бути переглянутий іншими поки з ним пов’язаний курс або змінено поле ’Публікувати до’';
+$string['author'] = 'Автор';
 $string['autotags'] = 'Додати ці мітки';
 $string['autotags_help'] = 'Введіть одну або більше локальних міток (розділених комами), які ви хочете автоматично додавати до кожної копії запису, яка копіюється із зовнішнього блогу в локальний.';
 $string['backupblogshelp'] = 'Якщо включити, то блоги буде включено до автоматичних резервних копій САЙТУ';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Блог про цей {$a->type}';
 $string['blogaboutthiscourse'] = 'Додати запис про цей курс';
 $string['blogaboutthismodule'] = 'Додати запис про цей {$a}';
 $string['blogadministration'] = 'Керування блогами';
+$string['blogattachment'] = 'Вкладення до блогу';
 $string['blogdeleteconfirm'] = 'Видалити запис \'{$a}\' у блозі?';
 $string['blogdisable'] = 'Ведення блогів відключено!';
 $string['blogentries'] = 'Записи блогу';
@@ -214,4 +216,3 @@ $string['viewsiteentries'] = 'Переглянути всі записи';
 $string['viewuserentries'] = 'Переглянути всі записи від {$a}';
 $string['worldblogs'] = 'Всім відвідувачам доступні записи з налаштуванням \'для всіх\'';
 $string['wrongexternalid'] = 'Неправильний зовнішній ідентифікатор блогу';
-$string['wrongpostid'] = 'Неправильний код блогу';

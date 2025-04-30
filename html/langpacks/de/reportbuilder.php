@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'de', version '4.1'.
+ * Strings for component 'reportbuilder', language 'de', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} und {$a->morecount} weit
 $string['audiencenotsaved'] = 'Zielgruppe nicht gespeichert';
 $string['audiencesaved'] = 'Zielgruppe gespeichert';
 $string['audienceupdated'] = 'Zielgruppe geändert';
+$string['audienceusedbyschedule'] = 'Diese Zielgruppe wird in einem Zeitplan für diesen Bericht verwendet.';
 $string['cardview'] = 'Kartenansicht';
 $string['cardview_help'] = 'Die Kartenansicht erlaubt Ihnen, das Layout des Berichts festzulegen, um ihn auf kleinen Displays betrachten zu können. Die Spalten werden auf das hier gesetzte Limit zusammengeklappt, mit einem Umschalter versehen, um die Karte zu erweitern und alle Berichtsdaten anzuzeigen.';
 $string['cardviewfirstcolumntitle'] = 'Titel erste Spalte anzeigen';
@@ -68,8 +69,8 @@ $string['columndeleted'] = 'Gelöschte Spalte \'{$a}\'';
 $string['columnmoved'] = 'Spalte \'{$a}\' verschoben';
 $string['columnsortdirectionasc'] = 'Spalte \'{$a}\' aufsteigend sortieren';
 $string['columnsortdirectiondesc'] = 'Spalte \'{$a}\' absteigend sortieren';
-$string['columnsortdisable'] = 'Anfangssortierung der Spalte \'{$a}\' deaktivieren';
-$string['columnsortenable'] = 'Anfangssortierung der Spalte \'{$a}\' aktivieren';
+$string['columnsortdisable'] = 'Anfangssortierung von Spalte \'{$a}\' deaktivieren';
+$string['columnsortenable'] = 'Anfangssortierung von Spalte \'{$a}\' aktivieren';
 $string['columnsortupdated'] = 'Aktualisierte Sortierung für Spalte \'{$a}\'';
 $string['conditionadded'] = 'Hinzugefügte Bedingung \'{$a}\'';
 $string['conditiondeleted'] = 'Gelöschte Bedingung \'{$a}\'';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Kurs-ID mit Link';
 $string['courseselect'] = 'Kurs wählen';
 $string['courseshortnamewithlink'] = 'Kurzer Kursname mit Link';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Nutzerdefinierter Bericht';
 $string['customreports'] = 'Nutzerdefinierte Berichte';
 $string['customreportslimit'] = 'Limit für nutzerdefinierte Berichte';
 $string['customreportslimit_desc'] = 'Die Anzahl von nutzerdefinierten Berichten kann auch Performance Gründen begrenzt werden. Der Wert 0 bedeutet: kein Limit.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Die gültige Berichtsquelle wurde nicht gefunde
 $string['errorsourceunavailable'] = 'Die Berichtsquelle ist nicht verfügbar.';
 $string['filteradded'] = 'Hinzugefügter Filter \'{$a}\'';
 $string['filtercontains'] = 'Enthält';
+$string['filterdateafter'] = 'Nach';
+$string['filterdatebefore'] = 'Vor';
 $string['filterdatecurrent'] = 'Aktuelle';
 $string['filterdatedays'] = 'Tag(e)';
 $string['filterdatefrom'] = 'Datum ab';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Endet mit';
 $string['filterequalorgreaterthan'] = 'Größer als oder gleich';
 $string['filterequalorlessthan'] = 'Kleiner als oder gleich';
 $string['filterfieldoperator'] = '{$a} Operator';
+$string['filterfieldto'] = '{$a} zu';
+$string['filterfieldunit'] = '{$a} Einheit';
 $string['filterfieldvalue'] = '{$a} Wert';
 $string['filtergreaterthan'] = 'Größer als';
 $string['filterinvalid'] = 'Ungültiger Filter';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Sortierung';
 $string['sorting_help'] = 'Sie können eine Anfangssortierung der Spalten im Bericht festlegen, die anschließend über einen Klick auf die Spaltennamen geändert werden kann.';
 $string['switchedit'] = 'Zur Bearbeitung umschalten';
 $string['switchpreview'] = 'Zur Vorschau umschalten';
+$string['tagarea_reportbuilder_report'] = 'Nutzerdefinierte Berichte';
 $string['tasksendschedule'] = 'Zeitplan für Sendebericht';
 $string['tasksendschedules'] = 'Berichtszeitpläne senden';
 $string['timeadded'] = 'Hinzugefügt am';

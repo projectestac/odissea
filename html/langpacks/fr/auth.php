@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', version '4.1'.
+ * Strings for component 'auth', language 'fr', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = 'Aide au changement de mot de passe';
 $string['auth_changepasswordhelp_expl'] = 'Affiche des explications concernant la récupération de mot de passe à l’attention des utilisateurs ayant perdu leur mot de passe {$a}. Ce texte sera affiché soit en même temps, soit à la place de l’<strong>URL du changement de mot de passe</strong> ou du changement interne de mot de passe de Moodle.';
 $string['auth_changepasswordurl'] = 'URL pour changement de mot de passe';
 $string['auth_changepasswordurl_expl'] = 'Indiquez l’adresse URL vers laquelle diriger les utilisateurs ayant perdu leur mot de passe {$a}. Désactivez l’option <strong>Utiliser la page de changement de mot de passe standard</strong>.';
-$string['auth_changingemailaddress'] = 'Vous avez demandé la modification de votre adresse de courriel, de {$a->oldemail} à {$a->newemail}. Pour des raisons de sécurité, un message de confirmation vous est envoyé à la nouvelle adresse afin de confirmer qu’elle vous appartient. Votre adresse de courriel sera modifiée dès que vous aurez cliqué sur l’URL indiquée dans le message envoyé.';
+$string['auth_changingemailaddress'] = 'Vous avez demandé la modification d’adresse de courriel, de {$a->oldemail} à {$a->newemail}. Pour des raisons de sécurité, un message de confirmation est envoyé à votre nouvelle adresse afin de confirmer qu’elle vous appartient. Votre adresse de courriel sera modifiée dès que vous aurez cliqué sur l’URL indiquée dans le message. Le lien de confirmation expirera dans 10 minutes.';
 $string['auth_common_settings'] = 'Réglages partagés';
 $string['auth_data_mapping'] = 'Appariement des données';
 $string['auth_fieldlock'] = 'Verrouillage';
@@ -44,6 +44,10 @@ $string['auth_fieldlocks'] = 'Verrouiller les champs utilisateur';
 $string['auth_fieldlocks_help'] = '<p>Vous pouvez verrouiller des champs utilisateurs. Ceci est utile sur les sites où les données des utilisateurs sont gérées manuellement par les administrateurs (en modifiant manuellement les enregistrements des utilisateurs) ou en utilisant l’option « Importer des utilisateurs ». Si vous verrouillez des champs requis par Moodle, assurez-vous que vous fournissez les données en question lors de la création des comptes, sans quoi ceux-ci seront inutilisables.</p><p>Pour éviter ce problème, vous pouvez choisir comme mode de verrouillage « Déverrouillé si vide ».</p>';
 $string['auth_fieldmapping'] = 'Correspondance de données ({$a})';
 $string['auth_invalidnewemailkey'] = 'Erreur : si vous avez tenté de confirmer la modification de votre adresse de courriel, il se peut que vous ayez fait une erreur lors de la copie de l’URL qui vous a été envoyée. Veuillez essayer à nouveau.';
+$string['auth_loginpasswordtoggle'] = 'Bascule de visibilité du mot de passe';
+$string['auth_loginpasswordtoggle_desc'] = 'Ajoute une icône au champ mot de passe de l’écran de connexion, permettant aux utilisateurs d’afficher ou de cacher le mot de passe saisi.';
+$string['auth_loginrecaptcha'] = 'Activer reCAPTCHA pour la connexion';
+$string['auth_loginrecaptcha_desc'] = 'Ajouter un élément de confirmation visuel/audio au formulaire de connexion. Ceci réduit le risque de tentatives de connexions indues. Voir <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> pour plus de détails.';
 $string['auth_multiplehosts'] = 'Vous pouvez indiquer ici plusieurs hôtes ou adresses IP (par exemple host1.com;host2.com;host3.com ou 192.168.1.100;172.23.92.1)';
 $string['auth_notconfigured'] = 'La méthode d’authentification {$a} n’est pas configurée.';
 $string['auth_outofnewemailupdateattempts'] = 'Le nombre de tentatives permises pour modifier votre adresse de courriel est dépassé. Votre demande de modification a été annulée.';

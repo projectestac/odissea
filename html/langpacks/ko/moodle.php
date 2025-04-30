@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', version '4.1'.
+ * Strings for component 'moodle', language 'ko', version '4.4'.
  *
  * @package     moodle
  * @category    string
@@ -127,7 +127,6 @@ $string['afterresource'] = '자원 "{$a}" 이후';
 $string['aftersection'] = '섹션 "{$a}" 이후';
 $string['again'] = '다시';
 $string['agelocationverification'] = '나이, 지역 인증';
-$string['aimid'] = 'AIM 아이디';
 $string['ajaxuse'] = 'AJAX 및 자바';
 $string['all'] = '모두';
 $string['allactions'] = '모든 조치';
@@ -402,7 +401,6 @@ $string['courseoverviewfiles_help'] = '강의 현황에는 강의 이미지로 �
 $string['courseoverviewfilesext'] = '강좌 요약 파일 확장자들';
 $string['courseoverviewfileslimit'] = '강좌 요약 파일 한계';
 $string['courseoverviewgraph'] = '강좌 개요표';
-$string['coursepreferences'] = '강좌 환경설정';
 $string['courseprofiles'] = '강좌 소개';
 $string['coursereasonforrejecting'] = '요청이 기각된 이유';
 $string['coursereasonforrejectingemail'] = '요청자에게 이메일로 발송될 것임';
@@ -451,7 +449,6 @@ $string['createnewcourse'] = '새 강좌 만들기';
 $string['createnewsubcategory'] = '새 하위범주 만들기';
 $string['createsubcategoryof'] = '{$a}의 하위범주 만들기';
 $string['createuser'] = '사용자 생성';
-$string['createuserandpass'] = '아이디와 비밀번호 생성';
 $string['createziparchive'] = '압축 파일 만들기';
 $string['creatingblocks'] = '블록 만들기';
 $string['creatingblocksroles'] = '블록 수준의 역할 부여 및 덮어쓰기 생성';
@@ -549,7 +546,6 @@ $string['department'] = '부서';
 $string['deprecatedeventname'] = '{$a} (더 이상 사용되지 않음)';
 $string['desc'] = '내림차순';
 $string['description'] = '설명';
-$string['descriptiona'] = '설명: {$a}';
 $string['deselectall'] = '모두 선택해제';
 $string['deselectnos'] = '모든 \'아니오\' 선택 해제';
 $string['detailedless'] = '간단히';
@@ -891,6 +887,8 @@ $string['formattext'] = '무들 자동 형식';
 $string['forumpreferences'] = '포럼 환경설정';
 $string['framesetinfo'] = '이 프레임셋 문서는 다음을 포함 :';
 $string['from'] = '부터';
+$string['fromdate'] = '부터';
+$string['fromsender'] = '부터';
 $string['frontpagecategorycombo'] = '합쳐진 범주';
 $string['frontpagecategorynames'] = '범주 보기';
 $string['frontpagecourselist'] = '강좌 목록';
@@ -924,7 +922,6 @@ $string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.co
 이 프로그램은 유용할 것이라는 희망으로 배포되었습니만, 어떠한 종류의 상업적 이익이나 특별한 의도를 지지하는 등에 대해 보장하지 않습니다.< /br>< /br>
 무들 저작권에 대해 상세한 정보가 필요하시면 아래의 사이트(영문)를 참고하시기 바랍니다.< /br> http://docs.moodle.org/dev/License';
 $string['gpllicense'] = 'GPL 사용허가';
-$string['grade'] = '성적';
 $string['gradenoun'] = '성적';
 $string['grades'] = '성적';
 $string['gradeverb'] = '성적';
@@ -972,7 +969,6 @@ $string['hiddensectionsinvisible'] = '비공개 섹션은 완전히 볼수 없�
 $string['hide'] = '감추기';
 $string['hideadvancedsettings'] = '고급 설정 숨기기';
 $string['hidechartdata'] = '도표 숨기기';
-$string['hidepicture'] = '그림 감추기';
 $string['hidesection'] = '섹션 {$a} 숨기기';
 $string['hidesettings'] = '설정 숨기기';
 $string['hideshowblocks'] = '블록 보이기/숨기기';
@@ -994,7 +990,6 @@ $string['htmleditordisabledbrowser'] = '편집기가 웹 브라우져와 호환�
 $string['htmlfilesonly'] = 'HTML 파일만';
 $string['htmlformat'] = 'HTML 포멧';
 $string['icon'] = '아이콘';
-$string['icqnumber'] = 'icq 번호';
 $string['idnumber'] = 'id 번호';
 $string['idnumbercourse'] = '강좌 식별 번호';
 $string['idnumbercourse_help'] = '강좌의 ID 번호는 강좌를 외부 시스템과 매칭시킬 때만 사용되며 무들 사이트에서는 표시되지 않습니다. 만일 강좌가 공식적인 코드명을 갖고 있다면  이것이 입력 될수 있습니다. 그렇지 않다면, 이를 공백으로 둘 수 있습니다.';
@@ -1253,7 +1248,6 @@ $string['moveselectedcategoriesto'] = '선택한 범주를 다음으로 옮기�
 $string['moveselectedcoursesto'] = '선택된 강좌를 옮김';
 $string['movetoanotherfolder'] = '다른 폴더로 옮기기';
 $string['moveup'] = '위로 옮김';
-$string['msnid'] = 'MSN 아이디';
 $string['mustchangepassword'] = '새 비밀번호는 쓰던 것과는 달라야 합니다.';
 $string['mustconfirm'] = '로그인 계정을 확인하세요.';
 $string['mycourses'] = '내 강좌';
@@ -1525,7 +1519,6 @@ $string['registrationinfo'] = '<p> 이 페이지는 무들 사이트를  moodle.
 <p> 모든 등록은 수동으로 이루어집니다.
 일단 등록하면 등록된 내용은 쉽게 수정할 수 있습니다.</p>';
 $string['registrationinfotitle'] = '등록 정보';
-$string['registrationno'] = '아니오, 이메일을 받지 않겠습니다.';
 $string['registrationsend'] = 'moodle.org에 등록 정보 보내기';
 $string['registrationyes'] = '예, 중요한 사항을 나에게 알려주세요.';
 $string['reject'] = '거절';
@@ -1769,7 +1762,6 @@ $string['skipped'] = '생략';
 $string['skiptocategorylisting'] = '범주목록으로 건너뛰기';
 $string['skiptocoursedetails'] = '자세한 강좌 정보로 건너뛰기';
 $string['skiptocourselisting'] = '강좌 목록으로 건너뛰기';
-$string['skypeid'] = 'Skype 아이디';
 $string['socialheadline'] = '사회적 포럼-최근의 글들';
 $string['someallowguest'] = '어떤 강좌는 손님의 접속을 허용할 수 있습니다.';
 $string['someerrorswerefound'] = '정보가 없거나 부정확합니다. 자세한 내용은 다음을 보세요.';
@@ -1848,7 +1840,6 @@ $string['summary_help'] = '요약은 학생들이  주제(혹은 주간)안의 �
 
 ';
 $string['summaryof'] = '{$a} 의 요약';
-$string['supplyinfo'] = '추가 정보';
 $string['suspended'] = '유보된';
 $string['suspendedusers'] = '유보된 사용자';
 $string['switchdevicedefault'] = '표준 테마로 전환';
@@ -1884,6 +1875,7 @@ $string['timezone'] = '시간대';
 $string['to'] = '까지';
 $string['tocontent'] = '" {$a}" 아이템에';
 $string['tocreatenewaccount'] = '새 계정 생성 생략';
+$string['todate'] = '까지';
 $string['today'] = '오늘';
 $string['todaylogs'] = '오늘의 로그';
 $string['toeveryone'] = '모든 이에게';
@@ -1898,6 +1890,7 @@ $string['topichide'] = '{$a} 에서 이 토픽을 감추기';
 $string['topicoutline'] = '토픽 개요';
 $string['topicshow'] = '{$a} 에 이 토픽을 보이기';
 $string['toplevelcategory'] = '최상위 범주';
+$string['torecipient'] = '까지';
 $string['total'] = '전체';
 $string['totopofsection'] = '섹션 "{$a}"의 맨위에';
 $string['trackforums'] = '포럼 추적';
@@ -2061,7 +2054,6 @@ $string['writingmoduleinfo'] = '모듈 정보 쓰기';
 $string['writingscalesinfo'] = '척도 정보 쓰기';
 $string['writinguserinfo'] = '사용자 정보 쓰기';
 $string['wrongpassword'] = '계정 비밀번호가 일치하지 않음';
-$string['yahooid'] = '야후 아이디';
 $string['year'] = '년';
 $string['years'] = '년';
 $string['yes'] = '예';

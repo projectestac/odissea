@@ -17,22 +17,22 @@
 /**
  * Tiny Record RTC type.
  *
- * @module      tiny_recordrtc/recording/base
+ * @module      tiny_recordrtc/base_recorder
  * @copyright   2022 Stevani Andolo <stevani@hotmail.com.au>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import {get_string as getString, get_strings as getStrings} from 'core/str';
+import {getString, getStrings} from 'core/str';
 import {component} from './common';
 import Pending from 'core/pending';
 import {getData} from './options';
 import uploadFile from 'editor_tiny/uploader';
 import {add as addToast} from 'core/toast';
 import * as ModalEvents from 'core/modal_events';
-import * as ModalFactory from 'core/modal_factory';
 import * as Templates from 'core/templates';
 import {saveCancelPromise} from 'core/notification';
 import {prefetchStrings, prefetchTemplates} from 'core/prefetch';
+import AlertModal from 'core/local/modal/alert';
 
 /**
  * The RecordRTC base class for audio, video, and any other future types
@@ -250,9 +250,7 @@ export default class {
      */
     async displayAlert(title, content) {
         const pendingPromise = new Pending('core/confirm:alert');
-        const ModalFactory = await import('core/modal_factory');
-        const modal = await ModalFactory.create({
-            type: ModalFactory.types.ALERT,
+        const modal = await AlertModal.create({
             title: title,
             body: content,
             removeOnClose: true,
@@ -369,6 +367,34 @@ export default class {
             this.cleanupStream();
             this.requestRecordingStop();
         });
+        this.player.addEventListener('error', this.handlePlayerError.bind(this));
+        this.player.addEventListener('loadedmetadata', this.handlePlayerLoadedMetadata.bind(this));
+    }
+
+    /**
+     * Handle the player `error` event.
+     *
+     * This event is called when the player throws an error.
+     */
+    handlePlayerError() {
+        const error = this.player.error;
+        if (error) {
+            const message = `An error occurred: ${error.message || 'Unknown error'}. Please try again.`;
+            addToast(message, {type: error});
+            // Disable the upload button.
+            this.setUploadButtonState(false);
+        }
+    }
+
+    /**
+     * Handles the event when the player's metadata has been loaded.
+     */
+    handlePlayerLoadedMetadata() {
+        if (isFinite(this.player.duration)) {
+            // Note: In Chrome, you need to seek to activate the error listener
+            // if an issue arises after inserting the recorded audio into the player source.
+            this.player.currentTime = 0.1;
+        }
     }
 
     /**
@@ -513,10 +539,10 @@ export default class {
 
     static async display(editor) {
         const ModalClass = this.getModalClass();
-        const modal = await ModalFactory.create({
-            type: ModalClass.TYPE,
+        const modal = await ModalClass.create({
             templateContext: {},
             large: true,
+            removeOnClose: true,
         });
 
         // Set up the VideoRecorder.
@@ -784,6 +810,7 @@ export default class {
                     return;
                 }
                 this.setUploadButtonVisibility(false);
+                this.getButtonContainer('player')?.classList.toggle('hide', true);
             }
 
             this.mediaRecorder = null;

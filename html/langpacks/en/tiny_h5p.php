@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'en', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'en', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Browse repositories...';
-$string['buttontitle'] = 'Configure H5P content';
+$string['buttontitle'] = 'Insert H5P content';
 $string['copyrightbutton'] = 'Copyright button';
 $string['downloadbutton'] = 'Allow download';
 $string['embedbutton'] = 'Embed button';
@@ -41,5 +41,5 @@ $string['instructions'] = 'You can insert H5P content by <strong>either</strong>
 $string['invalidh5purl'] = 'Invalid URL';
 $string['modaltitle'] = 'Insert H5P content';
 $string['noh5pcontent'] = 'No H5P content added';
-$string['pluginname'] = 'Tiny insert H5P';
+$string['pluginname'] = 'Insert H5P';
 $string['privacy:metadata'] = 'The H5P plugin for TinyMCE does not store any personal data.';

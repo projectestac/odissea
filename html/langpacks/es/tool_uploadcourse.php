@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'es', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'es', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Restaurar de este curso después de subirlo';
 $string['coursetemplatename_help'] = 'Introduzca un nombre corto del curso existente para usar como plantilla para la creación de todos los cursos.';
 $string['coursetorestorefromdoesnotexist'] = 'El curso a restaurar no existe';
 $string['courseupdated'] = 'Curso actualizado';
+$string['courseuploadnotallowed'] = 'Sin permiso para subir cursos a categoría {$a}';
+$string['courseuploadupdatenotallowed'] = 'Hay un curso con este nombre corto pero usted no tiene permiso para actualizarlo mediante la herramienta de subida de cursos.';
 $string['createall'] = 'Crear todos, incrementar nombre corto si es necesario';
 $string['createnew'] = 'Crear solo cursos nuevos, saltar los existentes';
 $string['createorupdate'] = 'Crear cursos nuevos, o actualizar los existentes';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Codificación del archivo CSV';
 $string['errorcannotcreateorupdateenrolment'] = 'No se puede crear o actualizar el método de matriculación \'{$a}\'';
 $string['errorcannotdeleteenrolment'] = 'No se puede borrar el método de matriculación \'{$a}\'';
 $string['errorcannotdisableenrolment'] = 'No se puede deshabilitar el método de matriculación \'{$a}\'';
+$string['errorunsupportedmethod'] = 'El método de matriculación \'{$a}\' no se admite en la carga de csv';
 $string['errorwhiledeletingcourse'] = 'Error al eliminar el curso';
 $string['errorwhilerestoringcourse'] = 'Error al restaurar el curso';
 $string['generatedshortnamealreadyinuse'] = 'El nombre corto generado ya está en uso';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'El modo de actualización no permite qu
 $string['updateonly'] = 'Sólo actualizar cursos existentes';
 $string['updatewithdataonly'] = 'Actualizar solo los datos CSV';
 $string['updatewithdataordefaults'] = 'Actualizar los datos CSV y los valores predeterminados';
+$string['uploadcourse:use'] = 'Usar herramienta de subida de cursos';
 $string['uploadcourses'] = 'Subir cursos';
 $string['uploadcourses_help'] = 'Los cursos pueden ser cargados a través de archivos de texto. El formato del archivo debe ser el siguiente:
 

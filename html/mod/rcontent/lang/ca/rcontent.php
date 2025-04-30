@@ -3,6 +3,7 @@ $string['rcontent'] = 'Contingut remot';
 $string['pluginname'] = 'Contingut remot';
 $string['modulename'] = 'Contingut remot';
 $string['modulenameplural'] = 'Continguts remots';
+$string['subplugintype_rcontent_plural'] = 'Continguts remots';
 $string['modulename_help'] = '<p>Amb Contingut remot es poden afegir fàcilment llibres digitals de les editorials autoritzades.</p>';
 $string['pluginadministration'] = 'Administració de continguts remots';
 

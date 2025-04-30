@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'es', version '4.1'.
+ * Strings for component 'ouwiki', language 'es', version '4.4'.
  *
  * @package     ouwiki
  * @category    string
@@ -248,13 +248,6 @@ $string['savefailtitle'] = 'La página no pudo guardarse';
 $string['savegrades'] = 'Guardar calificaciones';
 $string['savetemplate'] = 'Guardar wiki como plantilla';
 $string['search'] = 'Buscar este wiki';
-$string['search_help'] = 'Escriba las condiciones de su búsqueda y elija el botón o presione \'Intro\'.
-
-Para buscar frases exactas use comillas.
-
-Para excluir una palabra inserte un guión inmediatamente antes de la palabra.
-
-Ejemplo: la búsqueda <tt>picasso -escultura "primeras obras"</tt> le dará resultados para ‘picasso’ o la frase   ‘primeras obras’ pero excluirá términos que contengan ‘escultura’.';
 $string['seedetails'] = 'historia completa';
 $string['showannotationicons'] = 'Mostrar anotaciones';
 $string['showwordcounts'] = 'Mostrar el número de palabras';

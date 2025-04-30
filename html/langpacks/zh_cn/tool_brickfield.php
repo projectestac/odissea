@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'zh_cn', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -130,7 +130,7 @@ $string['emptycategory'] = '未找到类别{$a}的课程';
 $string['emptytagcourses'] = '未找到已配置标记的课程的结果';
 $string['enableaccessibilitytools'] = '启用可访问性工具';
 $string['enableaccessibilitytools_desc'] = '可访问性工具包有助于确定课程中的可访问性问题。';
-$string['error:nocoursespecified'] = '此摘要报告需要有效的课程id。请从课程中通过“操作”菜单访问可访问性工具包，该菜单将提供此必需的课程id。';
+$string['error:nocoursespecified'] = '摘要报告需要有效的课程 ID。请从课程中访问 Accessibility Toolkit。';
 $string['errorlink'] = '编辑{$a}的错误实例';
 $string['errors'] = '错误：{$a}';
 $string['errors:pluginname'] = '错误列表可访问性工具';
@@ -157,6 +157,12 @@ $string['headingsix'] = '性能支持';
 $string['headingthree'] = '可访问文件格式';
 $string['headingtwo'] = '补救措施';
 $string['hideshow'] = '隐藏/显示';
+$string['icon:analytics-custom'] = '分析图标';
+$string['icon:file-edit-custom'] = '编辑文件图标';
+$string['icon:hands-helping-custom'] = '援助之手图标';
+$string['icon:search-plus-custom'] = '搜索图标';
+$string['icon:tools-custom'] = '工具图标';
+$string['icon:wand-magic-custom'] = '魔棒图标';
 $string['inactive'] = '插件处于未激活状态，无法使用。请输入有效的注册密钥，然后按“激活”。';
 $string['innercontextid'] = '内部上下文ID';
 $string['installed'] = '插件安装';

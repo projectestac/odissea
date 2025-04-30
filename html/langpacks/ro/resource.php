@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ro', version '4.1'.
+ * Strings for component 'resource', language 'ro', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = 'Adaugă o nouă resursă';
 $string['resource:exportresource'] = 'Exportă resursă';
 $string['resource:view'] = 'Afişare sursă';
 $string['resourcecontent'] = 'Fișiere și subdirectoare';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Fișier';
 $string['selectmainfile'] = 'Vă rugăm să selectați fișierul principal dând clic pe pictograma de lângă numele fișierului.';
 $string['showdate'] = 'Afișați data de încărcare / modificare';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'pt', version '4.1'.
+ * Strings for component 'competency', language 'pt', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'A avaliação da competência foi 
 $string['evidence_manualoverrideinplan'] = 'A avaliação da competência foi configurada manualmente no plano de aprendizagem \'{$a}\'.';
 $string['invalidevidencedesc'] = 'Descrição inválida do comprovativo';
 $string['invalidgrade'] = 'Avaliação inválida';
-$string['invalidpersistenterror'] = 'Erro: {$a}';
 $string['invalidplan'] = 'Plano de aprendizagem inválido';
 $string['invalidtaxonomy'] = 'Taxonomia inválida: {$a}';
 $string['invalidurl'] = 'O endereço URL não é válido. Certifique-se que este começa com o prefixo \'http://\' ou \'https://\'.';

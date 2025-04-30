@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'ur', version '4.1'.
+ * Strings for component 'quizaccess_openclosedate', language 'ur', version '4.4'.
  *
  * @package     quizaccess_openclosedate
  * @category    string
@@ -28,4 +28,3 @@ defined('MOODLE_INTERNAL') || die();
 $string['notavailable'] = 'یہ کوئز فی الحال دستیاب نہیں ہے';
 $string['pluginname'] = 'تاریخ تک رسائی کا اصول کھولیں اور بند کریں';
 $string['privacy:metadata'] = 'اوپن اور کلوز ڈیٹ کوئز تک رسائی کا اصول پلگ ان کوئی ذاتی ڈیٹا محفوظ نہیں کرتا ہے۔';
-$string['quiznotavailable'] = 'کوئز {$a} تک دستیاب نہیں ہوگا';

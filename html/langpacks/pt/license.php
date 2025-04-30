@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'pt', version '4.1'.
+ * Strings for component 'license', language 'pt', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,12 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = 'Todos os direitos reservados';
 $string['cannotdeletecore'] = 'Não é possível apagar uma licença padrão';
 $string['cannotdeletelicenseinuse'] = 'Não é possível apagar uma licença atualmente atribuída a um ou mais ficheiros';
-$string['cc'] = 'Creative Commons';
-$string['cc-nc'] = 'Creative Commons - No Commercial';
-$string['cc-nc-nd'] = 'Creative Commons - No Commercial NoDerivs';
-$string['cc-nc-sa'] = 'Creative Commons - No Commercial ShareAlike';
-$string['cc-nd'] = 'Creative Commons - NoDerivs';
-$string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['cc'] = 'Creative Commons - 3.0 International';
+$string['cc-4.0'] = 'Creative Commons - 4.0 International';
+$string['cc-nc'] = 'Creative Commons - NonCommercial 3.0 International';
+$string['cc-nc-4.0'] = 'Creative Commons - NonCommercial 4.0 International';
+$string['cc-nc-nd'] = 'Creative Commons - NonCommercial-NoDerivatives 3.0 International';
+$string['cc-nc-nd-4.0'] = 'Creative Commons - NonCommercial-NoDerivatives 4.0 International';
+$string['cc-nc-sa'] = 'Creative Commons - NonCommercial-ShareAlike 3.0 International';
+$string['cc-nc-sa-4.0'] = 'Creative Commons - NonCommercial-ShareAlike 4.0 International';
+$string['cc-nd'] = 'Creative Commons - NoDerivatives 3.0 International';
+$string['cc-nd-4.0'] = 'Creative Commons - NoDerivatives 4.0 International';
+$string['cc-sa'] = 'Creative Commons - ShareAlike 3.0 International';
+$string['cc-sa-4.0'] = 'Creative Commons - ShareAlike 4.0 International';
 $string['licensenotfoundshortname'] = 'Não foi possível encontrar uma licença com o nome abreviado \'{$a}\'';
 $string['missinglicensesortorder'] = 'Não é possível definir a ordem da licença. Uma ou mais licenças instaladas estão em falta na nova ordem';
 $string['public'] = 'Domínio público';

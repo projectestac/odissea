@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'de', version '4.1'.
+ * Strings for component 'hub', language 'de', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Name';
 $string['coursepublished'] = 'Dieser Kurs wurde erfolgreich auf  \'{$a}\' veröffentlicht.';
 $string['courseshortname'] = 'Kurzname';
 $string['courseshortname_help'] = 'Tragen Sie einen Kurznamen für Ihren Kurs ein. Er muss nicht einmalig sein.';
+$string['coursesnodates'] = 'Anzahl von Kursen ohne Enddatum ({$a})';
 $string['coursesnumber'] = 'Anzahl von Kursen ({$a})';
+$string['dbtype'] = 'Datenbanktyp ({$a})';
 $string['demourl'] = 'Demo-URL';
 $string['demourl_help'] = 'Tragen Sie die Demo-URL zu Ihrem Kurs ein.
 Normalerweise ist dies die URL zu Ihrem Kurs. Die Demo-URL wird als Link in den Suchergebnissen angezeigt.';
@@ -97,6 +99,7 @@ $string['postaladdress'] = 'Postadresse';
 $string['postaladdress_help'] = 'Postadresse der Seite oder des für die Seite Verantwortlichen.';
 $string['postsnumber'] = 'Anzahl der Nachrichten ({$a})';
 $string['previousregistrationdeleted'] = 'Die vorherige Anmeldung ist bei {$a} gelöscht worden. Sie können den Registrierungsprozess neu beginnen.';
+$string['primaryauthtype'] = 'Primäre Authentifizierungsmethode ({$a})';
 $string['questionsnumber'] = 'Anzahl der Fragen ({$a})';
 $string['registeredactiveuserdevices'] = 'Anzahl von aktiven Nutzer/innen mit registrierten mobilen Geräten, die Systemnachrichten empfangen ({$a})';
 $string['registeredcourses'] = 'Registrierte Kurse';
@@ -161,6 +164,7 @@ $string['siteregistrationupdated'] = 'Seitenregistrierung aktualisiert';
 $string['siterelease'] = 'Moodle-Release';
 $string['siterelease_help'] = 'Nummer des Moodle-Releases auf dieser Website';
 $string['sitereleasenum'] = 'Moodle-Version ({$a})';
+$string['sitetheme'] = 'Website-Design ({$a})';
 $string['siteurl'] = 'Website-URL';
 $string['siteurl_help'] = 'Die URL ist die Adresse dieser Website. Falls es die Datenschutzeinstellungen erlauben, dass Adressen von Websites zu sehen sind, dann wird diese Adresse gezeigt.';
 $string['siteversion'] = 'Moodle-Version';

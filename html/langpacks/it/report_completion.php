@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'it', version '4.1'.
+ * Strings for component 'report_completion', language 'it', version '4.4'.
  *
  * @package     report_completion
  * @category    string
@@ -37,4 +37,4 @@ $string['page-report-completion-index'] = 'Report completamento corso';
 $string['page-report-completion-user'] = 'Report completamento corso dell\'utente';
 $string['page-report-completion-x'] = 'Qualsiasi report di completamento';
 $string['pluginname'] = 'Completamento corso';
-$string['privacy:metadata'] = 'Il plugin Report Completamento corso mostra solamente i dati memorizzati in altre posizioni.';
+$string['privacy:metadata'] = 'Il plugin Report Completamento corso visualizza solamente dati memorizzati da altri componenti.';

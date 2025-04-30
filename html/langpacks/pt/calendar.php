@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'pt', version '4.1'.
+ * Strings for component 'calendar', language 'pt', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL do calendário';
 $string['calendarheading'] = 'Calendário de {$a}';
 $string['calendarpreferences'] = 'Preferências do calendário';
 $string['calendartypes'] = 'Tipos de calendário';
-$string['calendarurl'] = 'URL do calendário: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'URL do calendário copiado para a área de transferência';
 $string['category'] = 'Categoria';
 $string['categoryevent'] = 'Evento da categoria';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Copiar URL do calendário';
 $string['copyurl'] = 'Copiar URL';
 $string['course'] = 'Disciplina';
 $string['coursecalendar'] = 'Calendário de {$a}';
+$string['coursecalendarlink'] = 'Calendário da disciplina';
 $string['courseevent'] = 'Evento da disciplina';
 $string['courseevents'] = 'Eventos da disciplina';
 $string['courses'] = 'Disciplinas';
@@ -158,7 +158,7 @@ $string['export'] = 'Exportar';
 $string['exportbutton'] = 'Exportar';
 $string['exportcalendar'] = 'Exportar calendário';
 $string['exporthelp'] = '<p>O URL do calendário fornece uma hiperligação dinâmica para exportar eventos para outros calendários. Qualquer evento novo, alterado ou apagado no calendário de origem <strong>será</strong> refletido nos outros calendários.</p>
-<p>A exportação do calendário permite que crie uma cópia de segurança dos eventos, que podem ser importados em outros calendários. As atualizações feitas no calendário de origem <strong>não</strong> serão refletidas nos outros calendários.</p>';
+<p>A exportação do calendário permite criar uma cópia de segurança dos eventos, que podem ser importados em outros calendários. As atualizações feitas no calendário de origem <strong>não</strong> serão refletidas nos outros calendários.</p>';
 $string['forcecalendartype'] = 'Forçar calendário';
 $string['fri'] = 'Sex';
 $string['friday'] = 'Sexta';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = 'Importar um calendário externo?';
 $string['importcalendarfrom'] = 'Importar de';
 $string['importcalendarheading'] = 'Importar calendário...';
 $string['importfromfile'] = 'Ficheiro de calendário (.ics)';
-$string['importfrominstructions'] = 'Por favor, forneça um URL para um calendário remoto ou carregue um ficheiro.';
 $string['importfromurl'] = 'URL do calendário';
 $string['invalideventtype'] = 'O tipo de evento que selecionou não é válido.';
 $string['invalidtimedurationminutes'] = 'A duração indicada em minutos não é válida. Indique uma duração maior que zero ou não indique duração.';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} eventos';
 $string['mon'] = 'Seg';
 $string['monday'] = 'Segunda';
 $string['monthly'] = 'Mensalmente';
-$string['monthlyview'] = 'Eventos do mês';
 $string['monthnext'] = 'Próximo mês';
 $string['monthprev'] = 'Mês passado';
 $string['monththis'] = 'Este mês';
@@ -197,7 +195,9 @@ $string['moreevents'] = 'Mais {$a}';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Nunca';
 $string['newevent'] = 'Novo evento';
+$string['newmonthannouncement'] = 'O calendário está agora definido para {$a}.';
 $string['nocalendarsubscriptions'] = 'Ainda não tem subscrições de calendários. Pretende {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Nenhuma subscrição de calendário. <a href="{$a}">Importar um calendário externo</a>';
 $string['notitle'] = 'sem título';
 $string['noupcomingevents'] = 'Não existem eventos futuros';
 $string['oneevent'] = '1 evento';

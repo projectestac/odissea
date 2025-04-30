@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'zh_cn', version '4.1'.
+ * Strings for component 'auth_lti', language 'zh_cn', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,9 +38,8 @@ $string['firstlaunchnotice'] = '看来这是你第一次来这里。请从以下
 $string['getstartedwithnewaccount'] = '开始使用新帐户';
 $string['haveexistingaccount'] = '我有一个现有的帐户';
 $string['linkthisaccount'] = '关联此帐号';
-$string['mustbeloggedin'] = '您需要登录到您现有的帐户';
+$string['mustbeloggedin'] = '您需要登录到现有帐户';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'LTI身份验证插件不存储任何个人数据。';
 $string['privacy:metadata:auth_lti'] = 'LTI身份验证';
 $string['privacy:metadata:auth_lti:authsubsystem'] = '此插件连接到身份验证子系统。';
 $string['privacy:metadata:auth_lti:issuer'] = '识别链接用户所属平台的发行者URL。';

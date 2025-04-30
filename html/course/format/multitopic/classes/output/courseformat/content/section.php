@@ -62,34 +62,11 @@ class section extends section_base {
      * @return \stdClass data context for a mustache template
      */
     public function export_for_template(\renderer_base $output): \stdClass {
-        global $PAGE;
+        $data = parent::export_for_template($output);
 
-        $format = $this->format;
-        $course = $format->get_course();
-        $section = $this->section;
         $sectionextra = $this->fmtsectionextra;
-
-        $summary = new $this->summaryclass($format, $section);
-
-        $data = (object)[
-            'num' => $section->section ?? '0',
-            'id' => $section->id,
-            'sectionreturnid' => $section->section,                             // CHANGED.
-            'insertafter' => false,
-            'summary' => $summary->export_for_template($output),
-            'highlightedlabel' => $format->get_section_highlighted_name(),
-            'sitehome' => $course->id == SITEID,
-            'editing' => $PAGE->user_is_editing(),
-            'levelsan' => $sectionextra->levelsan,
-        ];
-
-        $haspartials = [];
-        $haspartials['availability'] = $this->add_availability_data($data, $output);
-        $haspartials['visibility'] = $this->add_visibility_data($data, $output);
-        $haspartials['editor'] = $this->add_editor_data($data, $output);
-        $haspartials['header'] = $this->add_header_data($data, $output);
-        $haspartials['cm'] = $this->add_cm_data($data, $output);
-        $this->add_format_data($data, $haspartials, $output);
+        unset($data->displayonesection);
+        $data->levelsan = $sectionextra->levelsan;
 
         return $data;
     }
@@ -102,18 +79,15 @@ class section extends section_base {
      * @return bool if the cm has name data
      */
     protected function add_header_data(\stdClass &$data, \renderer_base $output): bool {
-        if (!empty($this->hidetitle)) {
-            return false;
+        $result = parent::add_header_data($data, $output);
+        if (!$result || !empty($section->component)) {
+            return $result;
         }
 
-        $section = $this->section;
-        $format = $this->format;
-
-        $header = new $this->headerclass($format, $section);
-        $headerdata = $header->export_for_template($output);
-
-        // REMOVED singlesection code.
-        $data->header = $headerdata;
+        if (isset($data->singleheader) && !isset($data->header)) {
+            $data->header = $data->singleheader;
+            unset($data->singleheader);
+        }
         return true;
     }
 
@@ -128,6 +102,11 @@ class section extends section_base {
         $result = false;
 
         $section = $this->section;
+
+        if (!empty($section->component)) {
+            return parent::add_cm_data($data, $output);
+        }
+
         $sectionextra = $this->fmtsectionextra;
         $format = $this->format;
 
@@ -136,14 +115,14 @@ class section extends section_base {
         // ADDED.
         $pageid = ($sectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC) ?
                     $section->id : $sectionextra->parentid;
-        $onpage = ($pageid == $format->get_sectionid()) || ($format->get_sectionid() === null);
+        $onpage = ($pageid == $format->get_sectionid());
         // END ADDED.
         $showcmlist = ($section->uservisible || $section->section == 0);        // CHANGED.
 
         // REMOVED index code.
         // Add the cm list.
         if ($showcmlist) {
-            if ($onpage) {
+            if ($onpage || $format->get_sectionid() == null) {
                 $cmlist = new $this->cmlistclass($format, $section);
                 $data->cmlist = $cmlist->export_for_template($output);
             } else {
@@ -165,20 +144,16 @@ class section extends section_base {
      * @return bool if the cm has name data
      */
     protected function add_editor_data(\stdClass &$data, \renderer_base $output): bool {
-        if (!$this->format->show_editor()) {
-            return false;
+        $result = parent::add_editor_data($data, $output);
+
+        if (!empty($this->section->component) || !$result) {
+            return $result;
         }
 
-        $course = $this->format->get_course();
-        if (empty($this->hidecontrols)) {
+        if (empty($data->controlmenu) && empty($this->hidecontrols)) {
             $controlmenu = new $this->controlmenuclass($this->format, $this->section);
             $data->controlmenu = $controlmenu->export_for_template($output);
         }
-        // REMOVED stealth section code.
-        $data->cmcontrols = $output->course_section_add_cm_control(
-            $course,
-            $this->section->section
-        ); // REMOVED section return.
         return true;
     }
 
@@ -192,29 +167,19 @@ class section extends section_base {
      */
     protected function add_format_data(\stdClass &$data, array $haspartials, \renderer_base $output): bool {
         $section = $this->section;
+
+        $result = parent::add_format_data($data, $haspartials, $output);
+        if (!empty($section->component)) {
+            return $result;
+        }
+
         $sectionextra = $this->fmtsectionextra;
         $format = $this->format;
 
-        // REMOVED coursedisplay setting.
-
-        if ($sectionextra->levelsan < 2 && ($section->id == $format->get_sectionid() || $format->get_sectionid() === null)) {
+        if ($section->id == $format->get_sectionid()) {
             $data->collapsemenu = true;
-        }
-
-        $data->contentcollapsed = false;
-        $preferences = $format->get_sections_preferences();
-        if (isset($preferences[$section->id])) {
-            $sectionpreferences = $preferences[$section->id];
-            if (!empty($sectionpreferences->contentcollapsed)) {
-                $data->contentcollapsed = true;
-            }
-        }
-
-        if ($format->is_section_current($section)) {
-            $data->iscurrent = true;
-            $data->currentlink = get_accesshide(
-                get_string('currentsection', 'format_'.$format->get_format())
-            );
+        } else {
+            unset($data->collapsemenu);
         }
 
         // ADDED.

@@ -33,6 +33,15 @@ use core\activity_dates;
 final class dates_test extends advanced_testcase {
 
     /**
+     * Setup testcase.
+     */
+    public function setUp(): void {
+        // Chat module is disabled by default, enable it for testing.
+        $manager = \core_plugin_manager::resolve_plugininfo_class('mod');
+        $manager::enable_plugin('chat', 1);
+    }
+
+    /**
      * Data provider for get_dates_for_module().
      * @return array[]
      */
@@ -110,7 +119,7 @@ final class dates_test extends advanced_testcase {
      * @param int|null $schedule
      * @param array $expected The expected value of calling get_dates_for_module()
      */
-    public function test_get_dates_for_module(?int $chattime, ?int $schedule, array $expected) {
+    public function test_get_dates_for_module(?int $chattime, ?int $schedule, array $expected): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $user = $this->getDataGenerator()->create_user();

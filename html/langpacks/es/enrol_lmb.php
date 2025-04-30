@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_lmb', language 'es', version '4.1'.
+ * Strings for component 'enrol_lmb', language 'es', version '4.4'.
  *
  * @package     enrol_lmb
  * @category    string
@@ -43,7 +43,7 @@ $string['bizdowngrace'] = 'Tiempo de gracia de mensajes durante el horario de tr
 $string['bizdowngracehelp'] = 'Cuantos minutos pueden transcurrir desde el último mensaje LMB antes de mandar Emails de advertencia durante el horario de trabajo. Configure a 0 para desactivar revisiones durante este período.';
 $string['blacklist'] = 'Lista_negra';
 $string['categorytype'] = 'Categorías de Cursos';
-$string['cathidden'] = '';
+$string['cathidden'] = 'Crear nuevas categorías como ocultas';
 $string['cathiddenhelp'] = 'Crear nuevas categorías como ocultas.';
 $string['catselect'] = 'Categoría seleccionada';
 $string['commadelimit'] = '(Delimitado por coma)';

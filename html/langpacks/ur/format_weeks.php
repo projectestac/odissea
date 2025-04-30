@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ur', version '4.1'.
+ * Strings for component 'format_weeks', language 'ur', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,15 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'ہفتے شامل کریں';
 $string['automaticenddate'] = 'حصوں کی تعداد سے اختتامی تاریخ کا حساب لگائیں';
 $string['automaticenddate_help'] = 'فعال ہونے پر، کورس کی آخری تاریخ خود بخود سیکشنز کی تعداد اور کورس شروع ہونے کی تاریخ سے لگائی جائے گی۔';
 $string['currentsection'] = 'حالیہ ہفتہ';
-$string['deletesection'] = 'ہفتہ حذف کریں';
-$string['editsection'] = 'ہفتہ میں ترمیم کریں';
-$string['editsectionname'] = 'ہفتے کے نام میں ترمیم کریں';
 $string['hidefromothers'] = 'ہفتہ چھپائیں';
-$string['newsectionname'] = 'ہفتہ کا نیا نام {$a}';
 $string['page-course-view-weeks'] = 'کسی بھی کورس کا مرکزی صفحہ ہفتوں کی شکل میں';
 $string['page-course-view-weeks-x'] = 'کسی بھی کورس کا صفحہ ہفتوں کی شکل میں';
 $string['pluginname'] = 'ہفتہ وار فارمیٹ';

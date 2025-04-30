@@ -44,6 +44,12 @@ class qtype_wq_question extends question_graded_automatically {
      */
     public $auxiliartextfieldlines = 10;
 
+    /**
+     * @var bool
+     * Whether this question is corrupt and its wirisquestion was removed from the database.
+     */
+    public $corrupt = false;
+
     public function __construct(question_definition $base = null) {
         $this->base = $base;
     }
@@ -59,6 +65,13 @@ class qtype_wq_question extends question_graded_automatically {
      * **/
     public function start_attempt(question_attempt_step $step, $variant) {
         global $USER;
+
+        if ($this->corrupt) {
+            $a = new stdClass();
+            $a->questionname = $this->name;
+            throw new moodle_exception('corruptquestion_attempt', 'qtype_wq', '', $a);
+        }
+
         $this->base->start_attempt($step, $variant);
 
         // Get variables from Wiris Quizzes service.
@@ -358,7 +371,7 @@ class qtype_wq_question extends question_graded_automatically {
         $service = $builder->getQuizzesService();
 
         $isdebugmodeenabled = get_config('qtype_wq', 'debug_mode_enabled') == '1';
-        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1'; 
+        $islogmodeenabled = get_config('qtype_wq', 'log_server_errors') == '1';
 
         if ($isdebugmodeenabled) {
             // @codingStandardsIgnoreLine

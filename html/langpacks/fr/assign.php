@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'fr', version '4.1'.
+ * Strings for component 'assign', language 'fr', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Vous n’avez pas encore remis de travail.';
 $string['allocatedmarker'] = 'Évaluateur attribué';
 $string['allocatedmarker_help'] = 'L’évaluateur attribué pour ce travail.';
 $string['allowsubmissions'] = 'Autoriser l’utilisateur à ajouter ou modifier ses travaux pour ce devoir.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Les informations détaillées du devoir et le formulaire de remise de document seront disponibles dès le <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Autoriser la remise dès le';
 $string['allowsubmissionsfromdate_help'] = 'Si ce réglage est activé, les participants ne pourront pas remettre de document avant cette date. Dans le cas contraire, ils pourront immédiatement remettre des documents.';
-$string['allowsubmissionsfromdatesummary'] = 'Ce devoir acceptera la remise de documents dès le <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Autoriser l’ajout et la modification de travaux';
 $string['alwaysshowdescription'] = 'Toujours afficher la description';
 $string['alwaysshowdescription_help'] = 'Si ce réglage est désactivé, la description du devoir ci-dessus ne sera visible qu’à partir de la date d’ouverture du formulaire de remise.';
@@ -134,7 +132,7 @@ $string['collapsegradepanel'] = 'Replier le panneau des notes';
 $string['collapsereviewpanel'] = 'Replier le panneau de relecture';
 $string['comment'] = 'Commentaire';
 $string['completiondetail:submit'] = 'Remettre un travail';
-$string['completionsubmit'] = 'L’étudiant doit remettre quelque chose';
+$string['completionsubmit'] = 'Remettre un travail';
 $string['configshowrecentsubmissions'] = 'Tout le monde peut voir les notifications de remise dans les rapports d’activité récente.';
 $string['confirmbatchgradingoperation'] = 'Voulez-vous vraiment {$a->operation} pour {$a->count} étudiants ?';
 $string['confirmstart'] = 'Vous avez {$a} pour terminer le devoir. Lorsque vous commencerez, le chronomètre décomptera le temps sans pouvoir être arrêté.';
@@ -221,6 +219,8 @@ $string['eventsubmissionviewed'] = 'Travail remis consulté';
 $string['eventworkflowstateupdated'] = 'Statut du flux de travail modifié';
 $string['expandreviewpanel'] = 'Déplier le panneau de relecture';
 $string['extensionduedate'] = 'Date de prolongation';
+$string['extensionduedatecurrent'] = 'Date de prolongation actuelle';
+$string['extensionduedatenone'] = 'Aucune';
 $string['extensionnotafterduedate'] = 'La date de prolongation doit être ultérieure à la date limite de remise';
 $string['extensionnotafterfromdate'] = 'La date de prolongation doit être ultérieure à la date après laquelle la remise des devoirs est permise.';
 $string['feedback'] = 'Feedback';
@@ -330,6 +330,8 @@ $string['markerfilter'] = 'Filtre d’évaluateurs';
 $string['markerfilternomarker'] = 'Pas d’évaluateur';
 $string['markingallocation'] = 'Utiliser l’attribution d’évaluateurs';
 $string['markingallocation_help'] = 'Si ce réglage est activé en même temps que les flux d’évaluation, les évaluateurs peuvent être attribués à des participants.';
+$string['markinganonymous'] = 'Permettre la publication partielle des notes lors de l’évaluation anonyme';
+$string['markinganonymous_help'] = 'Si ce réglage est activé de concert avec les remises anonymes et un flux d’évaluation, la publication partielle des notes est permise lors de l’évaluation anonyme.';
 $string['markingworkflow'] = 'Utiliser les flux d’évaluation';
 $string['markingworkflow_help'] = 'Si ce réglage est activé, l’évaluation passera par différentes étapes d’un flux de travail avant d’être publiée pour les participants. Ce processus permet une évaluation en plusieurs tours, ainsi que la publication simultanée des évaluations de tous les participants.';
 $string['markingworkflowstate'] = 'Statut du flux d’évaluation';
@@ -455,8 +457,6 @@ $string['quickgrading_help'] = 'L’évaluation rapide vous permet d’attribuer
 $string['quickgradingchangessaved'] = 'Les modifications de notes ont été enregistrées';
 $string['quickgradingresult'] = 'Évaluation rapide';
 $string['recordid'] = 'Identifiant';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} après le début du cours';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} avant le début du cours';
 $string['relativedatessubmissiontimeleft'] = 'Calculé pour chaque étudiant';
 $string['removeallgroupoverrides'] = 'Supprimer toutes les dérogations de groupe';
 $string['removealluseroverrides'] = 'Supprimer toutes les dérogations utilisateur';
@@ -468,7 +468,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Voulez-vous vraiment supprime
 $string['removesubmissionforstudent'] = 'Supprimer le travail remis par l’étudiant : id={$a->id}, nom complet={$a->fullname}.';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'L’option de réouverture « Automatiquement jusqu’à réussite » n’est pas compatible avec les remises anonymes, car les notes ne sont transmises au carnet de notes qu’après que le nom de l’étudiant est révélé.';
 $string['requireallteammemberssubmit'] = 'Exiger la validation du dépôt par tous les membres du groupe';
-$string['requireallteammemberssubmit_help'] = 'Si ce réglage est activé, tous les membres du groupe doivent cliquer sur le bouton de remise du devoir pour que le travail du groupe soit considéré comme remis. Dans le cas contraire, le travail du groupe sera considéré comme remis dès que l’un de ses membres clique sur le bouton de remise.';
+$string['requireallteammemberssubmit_help'] = 'Ce réglage doit être utilisé avec le réglage « Exiger que les étudiants cliquent sur le bouton envoyer » dans les réglages de remise des travaux.
+
+Si ce réglage est activé, tous les membres du groupe doivent cliquer sur le bouton de remise du devoir pour que le travail du groupe soit considéré comme remis. Dans le cas contraire, le travail du groupe sera considéré comme remis dès que l’un de ses membres clique sur le bouton de remise.';
 $string['requiresubmissionstatement'] = 'Demander aux étudiants d’accepter la déclaration de remise pour tous les devoirs';
 $string['requiresubmissionstatement_help'] = 'Lorsque ce réglage est activé, les étudiants doivent accepter une déclaration pour tous les documents remis pour ce devoir.';
 $string['revealidentities'] = 'Révéler les identités des étudiants';
@@ -556,6 +558,7 @@ $string['submissionstatement'] = 'Déclaration de remise';
 $string['submissionstatement_help'] = 'Déclaration que chaque étudiant doit accepter avant de remettre son travail.';
 $string['submissionstatementacceptedlog'] = 'Déclaration de remise acceptée par l’utilisateur {$a}';
 $string['submissionstatementdefault'] = 'Ce document est le fruit de mon propre travail, excepté les extraits dûment cités de travaux d’autres personnes.';
+$string['submissionstatementrequired'] = 'Vous devez accepter cette déclaration avant de remettre un travail.';
 $string['submissionstatementteamsubmission'] = 'Déclaration de remise de groupe';
 $string['submissionstatementteamsubmission_help'] = 'Déclaration que chaque étudiant doit accepter avant de remettre le travail de leur groupe';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Déclaration de remise lorsque tous les membres du groupe remettent un travail';

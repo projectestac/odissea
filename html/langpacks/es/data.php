@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', version '4.1'.
+ * Strings for component 'data', language 'es', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} comentario(s)';
 $string['commentsoff'] = 'La opción comentarios no está habilitada';
 $string['completiondetail:entries'] = 'Realizar entradas: {$a}';
 $string['completionentries'] = 'Entradas requeridas';
-$string['completionentriescount'] = 'Número de entradas';
+$string['completionentriescount'] = 'Añadir entradas';
 $string['completionentriesdesc'] = 'Número mínimo de entradas requeridas: {$a}';
 $string['configenablerssfeeds'] = 'Esta opción habilita la posibilidad de canales RSS para todas las bases de datos. Aún así necesitará activar manualmente los canales en los ajustes de cada base de datos.';
 $string['confirmdeletefield'] = 'Está a punto de eliminar este campo. ¿Está seguro?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Crear campos para recoger diferentes tipos de datos.'
 $string['createtemplates'] = 'Las plantillas definen la interfaz de su actividadd. Una vez creados los campos, las plantillas se crearán automáticamente. Alternativamente, puede usar un ajuste predefinido, que incluye campos y plantillas.';
 $string['csstemplate'] = 'CSS personalizado';
 $string['csvfailed'] = 'No se pueden leer los datos del archivo CSV';
-$string['csvfile'] = 'Archivo CSV';
+$string['csvfile'] = 'Archivo CSV o ZIP que contiene un archivo CSV';
 $string['csvimport'] = 'Importar archivo CSV';
 $string['csvimport_help'] = '<p align="center"><strong>Importar de un archivo CSV</strong></p>
 
@@ -173,6 +173,7 @@ $string['entrieslefttoadd'] = 'Debe añadir {$a->entriesleft} entrada(s) más pa
 $string['entrieslefttoaddtoview'] = 'Debe añadir {$a->entrieslefttoview} entrada(s) antes de poder ver las entradas de otros participantes.';
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Su entrada se ha guardado';
+$string['errordatafilenotfound'] = 'El archivo no pudo importarse. Los tipos de archivo aceptados son CSV o un ZIP que contenga un archivo CSV con el formato usado para exportar entradas.';
 $string['errormustbeteacher'] = 'Necesita ser un profesor para usar esta página';
 $string['errormustsupplyvalue'] = 'Debe proporcionar un valor aquí.';
 $string['errorpresetexists'] = 'Ya existe un elemento con el nombre seleccionado';
@@ -220,7 +221,11 @@ $string['fieldnotmatched'] = 'Los campos siguientes de su archivo no figuran en 
 $string['fieldoptions'] = 'Opciones (una por línea)';
 $string['fields'] = 'Campos';
 $string['fieldshelp'] = 'Cree campos para recoger diferentes tipos de datos. Los campos definen la estructura de su base de datos.';
+$string['fieldsinformationtags'] = 'Información del campo';
 $string['fieldsnavigation'] = 'Navegación terciaria de campos';
+$string['fieldtagdescription'] = '{$a} descripción';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} nombre';
 $string['fieldupdated'] = 'Campos actualizados';
 $string['fieldwidth'] = 'Anchura';
 $string['fieldwidthlistview'] = 'Anchura (en píxeles) en vista de lista';
@@ -253,6 +258,7 @@ $string['importpreset_desc'] = 'El ajuste predefinido se aplicará para esta act
 $string['importpresetmissingcapability'] = 'Usted no tiene permiso para importar un ajuste predefinido.';
 $string['importsuccess'] = 'Ajuste predefinido aplicado.';
 $string['includeapproval'] = 'Incluya el estado de aprobación';
+$string['includefiles'] = 'Incluir archivos en exportación';
 $string['includetags'] = 'Incluir marcas';
 $string['includetime'] = 'Incluya fecha añadido / modificado';
 $string['includeuserdetails'] = 'Incluya detalles del usuario';
@@ -362,6 +368,7 @@ $string['openafterclose'] = 'Ha especificado una fecha de apertura posterior a l
 $string['optionaldescription'] = 'Descripción corta (opcional)';
 $string['optionalfilename'] = 'Nombre de archivo (opcional)';
 $string['other'] = 'Otro';
+$string['otherfields'] = 'Todos los otros campos';
 $string['overrwritedesc'] = 'Reemplazar el ajuste predefinido existente con este nombre y sobreescribir su contenido';
 $string['overwrite'] = 'Sobrescribir';
 $string['overwritesettings'] = 'Sobrescribir ajustes actuales tales como comentarios, puntuaciones, etc.';
@@ -379,6 +386,7 @@ $string['presetnotselected'] = 'No se ha seleccionado ningún ajuste predefinido
 $string['presets'] = 'Ajustes previos';
 $string['presetshelp'] = 'Elegir un ajuste predefinido como punto de partida.';
 $string['preview'] = 'Vista previa de {$a}';
+$string['previewaction'] = 'Vista previa';
 $string['privacy:metadata:commentpurpose'] = 'Comentarios en los registros de base de datos';
 $string['privacy:metadata:data_content'] = 'El contenido de un campo';
 $string['privacy:metadata:data_content:content'] = 'Contenido';
@@ -422,7 +430,7 @@ $string['resetalltemplates'] = 'Reiniciar todas las plantillas';
 $string['resetalltemplatesconfirm'] = 'Está a punto de quitar todas las plantillas de su ajuste predefinido actual. Si quiere volver a recuperarlas más tarde, necesitará seleccionar el ajuste predefinido de nuevo en la pestaña "Presets/Ajustes predefinidos".';
 $string['resetalltemplatesconfirmtitle'] = '¿Reiniciar todas las plantillas?';
 $string['resetsettings'] = 'Restablecer filtros';
-$string['resettemplate'] = 'Resetear plantilla';
+$string['resettemplate'] = 'Reiniciar la plantilla actual';
 $string['resettemplateconfirm'] = 'Esto eliminará permanentemente el {$a} de su ajuste predefinido actual.';
 $string['resettemplateconfirmtitle'] = '¿Reiniciar plantilla?';
 $string['resizingimages'] = 'Cambiando el tamaño de las miniaturas de imagen...';
@@ -448,6 +456,7 @@ $string['searchresults'] = 'Entradas que continen "{$a}"';
 $string['selectedrequired'] = 'Se requieren todos los seleccionados';
 $string['selectexportoptions'] = 'Seleccionar opciones de exportación';
 $string['selectfields'] = 'Seleccionar campos';
+$string['selectfordeletion'] = 'Seleccione entrada a borrar';
 $string['showall'] = 'Mostrar todas las entradas';
 $string['showmore'] = 'Mostrar más';
 $string['single'] = 'Ver individual';
@@ -477,18 +486,14 @@ $string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'No se ha definido método de acción en Data_Preset para manejar la acción "{$a}".';
 $string['unknown'] = 'Campo desconocido';
-$string['unsupportedexport'] = '({$a->fieldtype}) no se puede exportar.';
 $string['unsupportedfields'] = 'Campos no soportados';
 $string['unsupportedfieldslist'] = 'Los siguientes campos no se pueden exportar:';
 $string['updatefield'] = 'Actualizar un campo existente';
 $string['uploadfile'] = 'Subir archivo';
-$string['uploadrecords'] = 'Subir entradas de un archivo';
-$string['uploadrecords_help'] = 'Las entradas pueden ser cargadas a través de un archivo de texto. El formato del archivo debe ser el siguiente:
-* Cada línea del archivo contiene un registro
-* Cada registro contiene una serie de datos separados por el delimitador seleccionado
-* El primer registro contiene una lista de nombres de campos que definen el formato del resto del fichero
+$string['uploadrecords'] = 'Importar entradas';
+$string['uploadrecords_help'] = 'Importe entradas que haya exportado desde otra base de datos, o bien mediante CSV o ZIP que contenga un archivo CSV (si hay archivos incluidos en la exportación).
 
-El campo enmarcado es un carácter que separa cada campo dentro de cada registro. Normalmente se puede dejar sin definir.';
+Alternativamente, para crear un archivo CSV para importar, añada una entrada a la base de datos expórtela. Edite el archivo CSV y añada más entrada.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Incluir en la búsqueda';

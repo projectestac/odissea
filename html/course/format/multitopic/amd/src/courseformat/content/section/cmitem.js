@@ -35,11 +35,8 @@ export default class extends CmItemBase {
      * @returns {Boolean}
      */
     _isCmBulkEnabled(bulk) {
-        if (!bulk.enabled) {
-            return false;
-        }
-        return (bulk.selectedType === '' || bulk.selectedType === 'cm')
-            && (this.element.closest('li.course-section').dataset.fmtonpage == '1'); // ADDED.
+        return super._isCmBulkEnabled(bulk)
+            && (this.element.closest('li.course-section[data-fmtonpage]').dataset.fmtonpage == '1');
     }
 
 }

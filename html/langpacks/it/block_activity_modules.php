@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_modules', language 'it', version '4.1'.
+ * Strings for component 'block_activity_modules', language 'it', version '4.4'.
  *
  * @package     block_activity_modules
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'Aggiungere blocco Attività';
 $string['pluginname'] = 'Attività';
-$string['privacy:metadata'] = 'Il blocco Attività visualizza solamente dati memorizzati altrove.';
+$string['privacy:metadata'] = 'Il blocco Attività visualizza solamente dati memorizzati da altri componenti.';

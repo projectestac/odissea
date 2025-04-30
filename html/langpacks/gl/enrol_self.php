@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', version '4.1'.
+ * Strings for component 'enrol_self', language 'gl', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['canntenrol'] = 'A matriculación está desactivada ou inactiva';
+$string['canntenrol'] = 'A matriculación esta desactivada ou inactiva';
 $string['canntenrolearly'] = 'Aínda non pode matricularse; a matriculación comeza o {$a}.';
 $string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o  {$a}.';
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
@@ -48,7 +48,7 @@ $string['editselectedusers'] = 'Editar as matriculacións dos usuarios seleccion
 $string['enrolenddate'] = 'Data final';
 $string['enrolenddate_help'] = 'De estar activado, os usuarios poden matricularse por si mesmos soamente ata esta data.';
 $string['enrolenddaterror'] = 'A data final de matriculación non pode ser anterior á data inicial';
-$string['enrolme'] = 'Matricularme';
+$string['enrolme'] = 'Matricúlame';
 $string['enrolperiod'] = 'Duración da matrícula';
 $string['enrolperiod_desc'] = 'Duración de tempo predeterminada durante o que a matriculación é válida. De estabelecerse como cero, a duración será ilimitada de modo predeterminado.';
 $string['enrolperiod_help'] = 'Duración de tempo predeterminada durante a que a matriculación é válida, comezando dende o momento en que o usuario se matricula por si mesmo. De estar desactivada, a duración da matrícula é ilimitada.';
@@ -56,6 +56,11 @@ $string['enrolstartdate'] = 'Data de inicio';
 $string['enrolstartdate_help'] = 'De estar activado, os usuarios poden matricularse a si mesmos soamente a partir desta data en diante.';
 $string['expiredaction'] = 'Acción na expiración da matriculación';
 $string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Teña en conta que algúns datos de usuario e axustes púrganse do curso durante a desmatriculación do curso.';
+$string['expiryinactivemessageenrolledbody'] = 'Ola {$a->user}:
+
+A matrícula no curso {$a->course} caduca o {$a->timeend} xa que non tes accedido ao mesmo nos últimos  {$a->inactivetime} días.
+
+Para manter a túa matrícula activa, inicia sesión e accede a <a href="{$a->url}">{$a->course}</a> antes do {$a->timeend}.';
 $string['expirymessageenrolledbody'] = 'Prezado/a {$a->user}:
 
 Esta é unha notificación de que a súa matriculación no curso «{$a->course}» está próxima a expirar o {$a->timeend}.
@@ -83,8 +88,8 @@ $string['maxenrolled_help'] = 'Especifica o número máximo de usuarios que se p
 $string['maxenrolledreached'] = 'Xa se acadou o número máximo de usuarios aos que se lles permite matricularse por si mesmos.';
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da automatrículación';
 $string['newenrols'] = 'Permitir novas matriculacións';
-$string['newenrols_desc'] = 'Permitirlles aos usuarios matricularse por si mesmos en novos cursos de xeito predeterminado.';
-$string['newenrols_help'] = 'Este axuste determina cando un usuario se pode matricular neste curso.';
+$string['newenrols_desc'] = 'Permitirlles aos usuarios matricularse por si mesmos en novos cursos de forma predeterminada.';
+$string['newenrols_help'] = 'Esta configuración determina cando un usuario se pode matricular neste curso.';
 $string['nopassword'] = 'Non se require chave de matriculación.';
 $string['password'] = 'Chave de matriculación';
 $string['password_help'] = 'Unha chave para matriculación permite que o acceso ao curso se restrinxa só para aqueles que coñecen a chave.
@@ -98,7 +103,7 @@ $string['passwordinvalidhint'] = 'A chave utilizada é incorrecta, ténteo outra
 $string['passwordmatchesgroupkey'] = 'Enrolment key matches an existing group enrolment key';
 $string['pluginname'] = 'Automatriculación';
 $string['pluginname_desc'] = 'O engadido de automatriculación permítelle aos usuarios escoller en que cursos queren participar. Os cursos poden estar protexidos por unha chave de matriculación. Internamente a matriculación faise por medio do engadido de matriculación manual que ten que estar activado en tal curso.';
-$string['privacy:metadata'] = 'O engadido de automatriculación non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de automatriculación non almacena ningún dato persoal.';
 $string['requirepassword'] = 'Require chave para matriculación';
 $string['requirepassword_desc'] = 'Require chave para matriculación nos novos cursos e evita a retirada da chave para matriculación dos cursos existentes.';
 $string['role'] = 'Rol asignado predeterminado';

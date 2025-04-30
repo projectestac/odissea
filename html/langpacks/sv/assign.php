@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'sv', version '4.1'.
+ * Strings for component 'assign', language 'sv', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Du har inte gjort någon inlämning ännu.';
 $string['allocatedmarker'] = 'Tilldelad rättare';
 $string['allocatedmarker_help'] = 'Den som kommer att utföra rättningen av den inskickade inlämningsuppgiften.';
 $string['allowsubmissions'] = 'Tillåt användaren att göra inlämningar till denna inlämningsuppgift.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Detaljer om inlämningsuppgiften samt inlämningsformuläret kommer att vara tillgängliga från <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Tillåt inlämningar från';
 $string['allowsubmissionsfromdate_help'] = 'Om aktiverat kan elever inte skicka in sina inlämningsuppgifter före detta datum. Om inaktiverat kan elever göra det redan nu.';
-$string['allowsubmissionsfromdatesummary'] = 'Denna inlämningsuppgift kommer att tillåta inlämningar från <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Tillåt ändringar av inlämning';
 $string['alwaysshowdescription'] = 'Visa alltid beskrivning';
 $string['alwaysshowdescription_help'] = 'Om inaktiverat kommer uppgiftsbeskrivningen ovan att vara synlig för elever först vid datumet "Tillåt inlämningar från", nedan.';
@@ -458,8 +456,6 @@ $string['quickgrading_help'] = 'Snabb betygssättning medger att du sätter bety
 $string['quickgradingchangessaved'] = 'Betygsändringarna sparades';
 $string['quickgradingresult'] = 'Snabb betygssättning';
 $string['recordid'] = 'Identifierare';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} efter kursstart';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} innan kursstart';
 $string['relativedatessubmissiontimeleft'] = 'Beräknat för varje elev';
 $string['removeallgroupoverrides'] = 'Ta bort alla gruppåsidosättanden';
 $string['removealluseroverrides'] = 'Ta bort alla användaråsidosättanden';

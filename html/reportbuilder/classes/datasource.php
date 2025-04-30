@@ -48,18 +48,13 @@ abstract class datasource extends base {
     private $activeconditions;
 
     /**
-     * Return user friendly name of the datasource
-     *
-     * @return string
-     */
-    abstract public static function get_name(): string;
-
-    /**
      * Add columns from the given entity name to be available to use in a custom report
      *
+     * Wildcard matching is supported with '*' in both $include and $exclude, e.g. ['customfield*']
+     *
      * @param string $entityname
-     * @param array $include Include only these columns, if omitted then include all
-     * @param array $exclude Exclude these columns, if omitted then exclude none
+     * @param string[] $include Include only these columns, if omitted then include all
+     * @param string[] $exclude Exclude these columns, if omitted then exclude none
      * @throws coding_exception If both $include and $exclude are non-empty
      */
     final protected function add_columns_from_entity(string $entityname, array $include = [], array $exclude = []): void {
@@ -70,13 +65,13 @@ abstract class datasource extends base {
         $entity = $this->get_entity($entityname);
 
         // Retrieve filtered columns from entity, respecting given $include/$exclude parameters.
-        $columns = array_filter($entity->get_columns(), static function(column $column) use ($include, $exclude): bool {
+        $columns = array_filter($entity->get_columns(), function(column $column) use ($include, $exclude): bool {
             if (!empty($include)) {
-                return in_array($column->get_name(), $include);
+                return $this->report_element_search($column->get_name(), $include);
             }
 
             if (!empty($exclude)) {
-                return !in_array($column->get_name(), $exclude);
+                return !$this->report_element_search($column->get_name(), $exclude);
             }
 
             return true;
@@ -90,16 +85,24 @@ abstract class datasource extends base {
     /**
      * Add default datasource columns to the report
      *
-     * This method is optional and can be called when the report is created to add the default columns defined in the
-     * selected datasource.
+     * Uses column data returned by the source {@see get_default_columns} and {@see get_default_column_sorting} methods
+     *
+     * @throws coding_exception If default column sorting refers to an invalid column
      */
     public function add_default_columns(): void {
         $reportid = $this->get_report_persistent()->get('id');
 
         // Retrieve default column sorting, and track index of both sorted/non-sorted columns.
         $columnidentifiers = $this->get_default_columns();
-        $defaultcolumnsorting = array_intersect_key($this->get_default_column_sorting(),
+
+        $defaultcolumnsorting = $this->get_default_column_sorting();
+        $defaultcolumnsortinginvalid = array_diff_key($defaultcolumnsorting,
             array_fill_keys($columnidentifiers, 1));
+
+        if (count($defaultcolumnsortinginvalid) > 0) {
+            throw new coding_exception('Invalid column name', array_key_first($defaultcolumnsortinginvalid));
+        }
+
         $columnnonsortingindex = count($defaultcolumnsorting) + 1;
 
         foreach ($columnidentifiers as $uniqueidentifier) {
@@ -120,14 +123,17 @@ abstract class datasource extends base {
     }
 
     /**
-     * Return the columns that will be added to the report once is created
+     * Return the default columns that will be added to the report upon creation, by {@see add_default_columns}
      *
      * @return string[]
      */
     abstract public function get_default_columns(): array;
 
     /**
-     * Return the default sorting that will be added to the report once it is created
+     * Return the default column sorting that will be set for the report upon creation, by {@see add_default_columns}
+     *
+     * When overriding this method in child classes, column identifiers specified must refer to default columns returned from
+     * the {@see get_default_columns} method
      *
      * @return int[] array [column identifier => SORT_ASC/SORT_DESC]
      */
@@ -136,7 +142,8 @@ abstract class datasource extends base {
     }
 
     /**
-     * Return all configured report columns
+     * Override parent method, returning only those columns specifically added to the custom report (rather than all that are
+     * available)
      *
      * @return column[]
      */
@@ -157,6 +164,10 @@ abstract class datasource extends base {
 
             // Ensure the column is still present and available.
             if ($instance !== null && $instance->get_is_available()) {
+                if ($instance->get_is_deprecated()) {
+                    debugging("The column '{$instance->get_unique_identifier()}' is deprecated, please do not use it any more." .
+                        " {$instance->get_is_deprecated_message()}", DEBUG_DEVELOPER);
+                }
 
                 // We should clone the report column to ensure if it's added twice to a report, each operates independently.
                 $this->activecolumns['values'][] = clone $instance
@@ -172,9 +183,11 @@ abstract class datasource extends base {
     /**
      * Add filters from the given entity name to be available to use in a custom report
      *
+     * Wildcard matching is supported with '*' in both $include and $exclude, e.g. ['customfield*']
+     *
      * @param string $entityname
-     * @param array $include Include only these filters, if omitted then include all
-     * @param array $exclude Exclude these filters, if omitted then exclude none
+     * @param string[] $include Include only these filters, if omitted then include all
+     * @param string[] $exclude Exclude these filters, if omitted then exclude none
      * @throws coding_exception If both $include and $exclude are non-empty
      */
     final protected function add_filters_from_entity(string $entityname, array $include = [], array $exclude = []): void {
@@ -185,13 +198,13 @@ abstract class datasource extends base {
         $entity = $this->get_entity($entityname);
 
         // Retrieve filtered filters from entity, respecting given $include/$exclude parameters.
-        $filters = array_filter($entity->get_filters(), static function(filter $filter) use ($include, $exclude): bool {
+        $filters = array_filter($entity->get_filters(), function(filter $filter) use ($include, $exclude): bool {
             if (!empty($include)) {
-                return in_array($filter->get_name(), $include);
+                return $this->report_element_search($filter->get_name(), $include);
             }
 
             if (!empty($exclude)) {
-                return !in_array($filter->get_name(), $exclude);
+                return !$this->report_element_search($filter->get_name(), $exclude);
             }
 
             return true;
@@ -224,7 +237,8 @@ abstract class datasource extends base {
     abstract public function get_default_filters(): array;
 
     /**
-     * Return all configured report filters
+     * Override parent method, returning only those filters specifically added to the custom report (rather than all that are
+     * available)
      *
      * @return filter[]
      */
@@ -245,8 +259,12 @@ abstract class datasource extends base {
 
             // Ensure the filter is still present and available.
             if ($instance !== null && $instance->get_is_available()) {
-                $this->activefilters['values'][$instance->get_unique_identifier()] =
-                    $instance->set_persistent($filter);
+                if ($instance->get_is_deprecated()) {
+                    debugging("The filter '{$instance->get_unique_identifier()}' is deprecated, please do not use it any more." .
+                        " {$instance->get_is_deprecated_message()}", DEBUG_DEVELOPER);
+                }
+
+                $this->activefilters['values'][$instance->get_unique_identifier()] = $instance->set_persistent($filter);
             }
         }
 
@@ -256,9 +274,11 @@ abstract class datasource extends base {
     /**
      * Add conditions from the given entity name to be available to use in a custom report
      *
+     * Wildcard matching is supported with '*' in both $include and $exclude, e.g. ['customfield*']
+     *
      * @param string $entityname
-     * @param array $include Include only these conditions, if omitted then include all
-     * @param array $exclude Exclude these conditions, if omitted then exclude none
+     * @param string[] $include Include only these conditions, if omitted then include all
+     * @param string[] $exclude Exclude these conditions, if omitted then exclude none
      * @throws coding_exception If both $include and $exclude are non-empty
      */
     final protected function add_conditions_from_entity(string $entityname, array $include = [], array $exclude = []): void {
@@ -269,13 +289,13 @@ abstract class datasource extends base {
         $entity = $this->get_entity($entityname);
 
         // Retrieve filtered conditions from entity, respecting given $include/$exclude parameters.
-        $conditions = array_filter($entity->get_conditions(), static function(filter $condition) use ($include, $exclude): bool {
+        $conditions = array_filter($entity->get_conditions(), function(filter $condition) use ($include, $exclude): bool {
             if (!empty($include)) {
-                return in_array($condition->get_name(), $include);
+                return $this->report_element_search($condition->get_name(), $include);
             }
 
             if (!empty($exclude)) {
-                return !in_array($condition->get_name(), $exclude);
+                return !$this->report_element_search($condition->get_name(), $exclude);
             }
 
             return true;
@@ -323,11 +343,13 @@ abstract class datasource extends base {
     }
 
     /**
-     * Return all configured report conditions
+     * Override parent method, returning only those conditions specifically added to the custom report (rather than all that are
+     * available)
      *
+     * @param bool $checkavailable
      * @return filter[]
      */
-    public function get_active_conditions(): array {
+    public function get_active_conditions(bool $checkavailable = true): array {
         $reportid = $this->get_report_persistent()->get('id');
 
         // Determine whether we already retrieved the conditions since the report was last modified.
@@ -342,10 +364,14 @@ abstract class datasource extends base {
         foreach ($activeconditions as $condition) {
             $instance = $this->get_condition($condition->get('uniqueidentifier'));
 
-            // Ensure the condition is still present and available.
-            if ($instance !== null && $instance->get_is_available()) {
-                $this->activeconditions['values'][$instance->get_unique_identifier()] =
-                    $instance->set_persistent($condition);
+            // Ensure the condition is still present and available (if checking available status).
+            if ($instance !== null && (!$checkavailable || $instance->get_is_available())) {
+                if ($instance->get_is_deprecated()) {
+                    debugging("The condition '{$instance->get_unique_identifier()}' is deprecated, please do not use it any more." .
+                        " {$instance->get_is_deprecated_message()}", DEBUG_DEVELOPER);
+                }
+
+                $this->activeconditions['values'][$instance->get_unique_identifier()] = $instance->set_persistent($condition);
             }
         }
 
@@ -356,11 +382,19 @@ abstract class datasource extends base {
      * Adds all columns/filters/conditions from the given entity to the report at once
      *
      * @param string $entityname
+     * @param string[] $limitcolumns Include only these columns
+     * @param string[] $limitfilters Include only these filters
+     * @param string[] $limitconditions Include only these conditions
      */
-    final protected function add_all_from_entity(string $entityname): void {
-        $this->add_columns_from_entity($entityname);
-        $this->add_filters_from_entity($entityname);
-        $this->add_conditions_from_entity($entityname);
+    final protected function add_all_from_entity(
+        string $entityname,
+        array $limitcolumns = [],
+        array $limitfilters = [],
+        array $limitconditions = [],
+    ): void {
+        $this->add_columns_from_entity($entityname, $limitcolumns);
+        $this->add_filters_from_entity($entityname, $limitfilters);
+        $this->add_conditions_from_entity($entityname, $limitconditions);
     }
 
     /**
@@ -379,5 +413,29 @@ abstract class datasource extends base {
      */
     final public static function report_elements_modified(int $reportid): void {
         self::$elementsmodified[$reportid] = microtime(true);
+    }
+
+    /**
+     * Search for given element within list of search items, supporting '*' wildcards
+     *
+     * @param string $element
+     * @param string[] $search
+     * @return bool
+     */
+    private function report_element_search(string $element, array $search): bool {
+        foreach ($search as $item) {
+            // Simple matching.
+            if ($element === $item) {
+                return true;
+            }
+
+            // Wildcard matching.
+            if (strpos($item, '*') !== false) {
+                $pattern = '/^' . str_replace('\*', '.*', preg_quote($item)) . '$/';
+                return (bool) preg_match($pattern, $element);
+            }
+        }
+
+        return false;
     }
 }

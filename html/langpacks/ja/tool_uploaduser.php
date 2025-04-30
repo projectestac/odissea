@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', version '4.1'.
+ * Strings for component 'tool_uploaduser', language 'ja', version '4.4'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -53,6 +53,7 @@ $string['infoprefix'] = '情報:';
 $string['invalidtheme'] = 'テーマ「 {$a} 」はインストールされていないため無視されます。';
 $string['invalidupdatetype'] = '選択されたアップロードタイプでこのオプションは選択できません。';
 $string['invaliduserdata'] = 'ユーザ {$a} に無効なデータが検出されたため自動的に削除されました。';
+$string['invaliduserdatavalues'] = 'ユーザ「 {$a->username} 」に無効なデータ ({$a->values}) が検出されました。このデータは修正または削除されました。';
 $string['linex'] = '行 {$a}';
 $string['matchemail'] = 'メールアドレスでの一致';
 $string['nochanges'] = '変更なし';

@@ -101,6 +101,40 @@ class custom_fields {
     }
 
     /**
+     * Get table alias for given custom field
+     *
+     * The entity name is used to ensure the alias differs when the entity is used multiple times within the same report, each
+     * having their own table alias/join
+     *
+     * @param field_controller $field
+     * @return string
+     */
+    private function get_table_alias(field_controller $field): string {
+        static $aliases = [];
+
+        $aliaskey = "{$this->entityname}_{$field->get('id')}";
+        if (!array_key_exists($aliaskey, $aliases)) {
+            $aliases[$aliaskey] = database::generate_alias();
+        }
+
+        return $aliases[$aliaskey];
+    }
+
+    /**
+     * Get table join for given custom field
+     *
+     * @param field_controller $field
+     * @return string
+     */
+    private function get_table_join(field_controller $field): string {
+        $customdatatablealias = $this->get_table_alias($field);
+
+        return "LEFT JOIN {customfield_data} {$customdatatablealias}
+                       ON {$customdatatablealias}.fieldid = {$field->get('id')}
+                      AND {$customdatatablealias}.instanceid = {$this->tablefieldalias}";
+    }
+
+    /**
      * Gets the custom fields columns for the report.
      *
      * Column will be named as 'customfield_' + customfield shortname.
@@ -116,7 +150,7 @@ class custom_fields {
         foreach ($categorieswithfields as $fieldcategory) {
             $categoryfields = $fieldcategory->get_fields();
             foreach ($categoryfields as $field) {
-                $customdatatablealias = database::generate_alias();
+                $customdatatablealias = $this->get_table_alias($field);
 
                 $datacontroller = data_controller::create(0, null, $field);
 
@@ -133,23 +167,25 @@ class custom_fields {
                 $selectfields = "{$customdatatablealias}.id, {$customdatatablealias}.contextid";
                 if ($datafield === 'value') {
                     // We will take the format into account when displaying the individual values.
-                    $selectfields .= ", {$customdatatablealias}.valueformat";
+                    $selectfields .= ", {$customdatatablealias}.valueformat, {$customdatatablealias}.valuetrust";
                 }
 
                 $columns[] = (new column(
                     'customfield_' . $field->get('shortname'),
-                    new lang_string('customfieldcolumn', 'core_reportbuilder', $field->get_formatted_name()),
+                    new lang_string('customfieldcolumn', 'core_reportbuilder', $field->get_formatted_name(false)),
                     $this->entityname
                 ))
                     ->add_joins($this->get_joins())
-                    ->add_join("LEFT JOIN {customfield_data} {$customdatatablealias} " .
-                        "ON {$customdatatablealias}.fieldid = " . $field->get('id') . " " .
-                        "AND {$customdatatablealias}.instanceid = {$this->tablefieldalias}")
+                    ->add_join($this->get_table_join($field))
                     ->add_field($datafieldsql, $datafield)
                     ->add_fields($selectfields)
+                    ->add_field($this->tablefieldalias, 'tablefieldalias')
                     ->set_type($columntype)
                     ->set_is_sortable($columntype !== column::TYPE_LONGTEXT)
                     ->add_callback(static function($value, stdClass $row, field_controller $field): string {
+                        if ($row->tablefieldalias === null) {
+                            return '';
+                        }
                         return (string) data_controller::create(0, $row, $field)->export_value();
                     }, $field)
                     // Important. If the handler implements can_view() function, it will be called with parameter $instanceid=0.
@@ -174,6 +210,10 @@ class custom_fields {
 
         if ($field->get('type') === 'date') {
             return column::TYPE_TIMESTAMP;
+        }
+
+        if ($field->get('type') === 'select') {
+            return column::TYPE_TEXT;
         }
 
         if ($datafield === 'intvalue') {
@@ -207,7 +247,7 @@ class custom_fields {
         foreach ($categorieswithfields as $fieldcategory) {
             $categoryfields = $fieldcategory->get_fields();
             foreach ($categoryfields as $field) {
-                $customdatatablealias = database::generate_alias();
+                $customdatatablealias = $this->get_table_alias($field);
 
                 $datacontroller = data_controller::create(0, null, $field);
 
@@ -221,25 +261,17 @@ class custom_fields {
                 $filter = (new filter(
                     $typeclass,
                     'customfield_' . $field->get('shortname'),
-                    new lang_string('customfieldcolumn', 'core_reportbuilder', $field->get_formatted_name()),
+                    new lang_string('customfieldcolumn', 'core_reportbuilder', $field->get_formatted_name(false)),
                     $this->entityname,
                     $datafieldsql
                 ))
                     ->add_joins($this->get_joins())
-                    ->add_join("LEFT JOIN {customfield_data} {$customdatatablealias} " .
-                        "ON {$customdatatablealias}.fieldid = " . $field->get('id') . " " .
-                        "AND {$customdatatablealias}.instanceid = {$this->tablefieldalias}");
+                    ->add_join($this->get_table_join($field))
+                    ->set_is_available($this->handler->can_view($field, 0));
 
-                // Options are stored inside configdata json string and we need to convert it to array.
-                if ($field->get('type') === 'select') {
-                    $filter->set_options_callback(static function() use ($field): array {
-                        $options = explode("\r\n", $field->get_configdata_property('options'));
-                        // Method set_options starts using array at index 1. we shift one position on this array.
-                        // In course settings this menu has an empty option and we need to respect that.
-                        array_unshift($options, " ");
-                        unset($options[0]);
-                        return $options;
-                    });
+                // If using a select filter, then populate the options.
+                if ($filter->get_filter_class() === select::class) {
+                    $filter->set_options_callback(fn(): array => $field->get_options());
                 }
 
                 $filters[] = $filter;

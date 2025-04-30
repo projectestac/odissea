@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', version '4.1'.
+ * Strings for component 'error', language 'sv', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -232,6 +232,10 @@ $string['dmlparseexception'] = 'Fel vid parsning av SQL-fråga';
 $string['dmlreadexception'] = 'Fel vid läsning av databas';
 $string['dmltransactionexception'] = 'Fel vid överföring till databas';
 $string['dmlwriteexception'] = 'Fel vid skrivning till databasen';
+$string['dndmaxbytes'] = 'Filen är för stor. Största tillåtna storlek är {$a->size}';
+$string['dndread'] = 'Kunde inte läsa fil';
+$string['dndunkownfile'] = 'Filtypen stöds ej';
+$string['dndupload'] = 'Ett okänt fel inträffade då filen skulle laddas upp';
 $string['downgradedcore'] = 'FEL! Koden som du använder är äldre än den version som skapade dessa databaser!';
 $string['downloadedfilecheckfailed'] = 'Kontrollen av den nedladdade filen misslyckades';
 $string['duplicatefieldname'] = 'Duplicerat fältnamn "{$a}" upptäcktes';

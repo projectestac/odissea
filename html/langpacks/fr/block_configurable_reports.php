@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'fr', version '4.1'.
+ * Strings for component 'block_configurable_reports', language 'fr', version '4.4'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -383,7 +383,7 @@ $string['reportcategories'] = '1) Choisissez une catégorie de rapports distant'
 $string['reportcolumn'] = 'Colonne Autre rapport';
 $string['reportcreated'] = 'Rapport correctement créé';
 $string['reportlimit'] = 'Nombre limite de lignes du rapport';
-$string['reportlimitinfo'] = 'Limiter le nombre de lignes qui sont affichées dans le tableau de rapport (par défaut : 5000 lignes. Il vaut mieux fixer une limite, afin que les utilisateurs ne surchargent pas la base de données)';
+$string['reportlimitinfo'] = 'Limiter le nombre de lignes affichées dans le tableau de rapport (par défaut : 5000 lignes. Il vaut mieux fixer une limite, afin que les utilisateurs ne surchargent pas la base de données)';
 $string['reports'] = 'Rapports';
 $string['reportscapabilities'] = 'Capacités du rapport';
 $string['reportscapabilities_summary'] = 'Utilisateurs avec la capacité <i>moodle/site:viewreports</i> autorisée';

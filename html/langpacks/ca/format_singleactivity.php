@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ca', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'ca', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,6 +32,7 @@ $string['defactivitytypedesc'] = 'Especifiqueu el tipus d\'activitat que se sele
 $string['erroractivitytype'] = 'El tipus d\'activitat no està definit en els paràmetres del curs';
 $string['orphaned'] = 'Òrfena';
 $string['orphanedwarning'] = 'Els usuaris no podran arribar a aquestes activitats.';
+$string['plugin_description'] = 'El curs conté només una activitat o recurs.';
 $string['pluginname'] = 'Format d\'activitat única';
 $string['privacy:metadata'] = 'El connector del format d\'activitat única no emmagatzema cap dada personal.';
 $string['sectionname'] = '';

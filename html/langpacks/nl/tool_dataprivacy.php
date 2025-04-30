@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'nl', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'nl', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,14 @@ $string['addcategory'] = 'Categorie toevoegen';
 $string['addnewdefaults'] = 'Voeg een nieuwe module-standaard toe';
 $string['addpurpose'] = 'Voeg doel toe';
 $string['addroleoverride'] = 'Rol overschrijven toevoegen';
+$string['allowfiltering'] = 'Sta het filteren van exports per cursus toe';
+$string['allowfiltering_desc'] = 'Indien ingeschakeld, kan de privacyfunctionaris ervoor kiezen om gebruikersgegevens van geselecteerde cursussen te exporteren in plaats van alle cursussen. Wanneer deze functie is ingeschakeld,
+  exportaanvragen starten vanaf \'In afwachting\' en kunnen pas worden goedgekeurd nadat een achtergrondtaak is voltooid.';
 $string['approve'] = 'Goedkeuren';
 $string['approvedrequestsubmitted'] = 'Je vraag is ingestuurd en zal snel behandeld worden.';
 $string['approverequest'] = 'Aanvraag goedkeuren';
+$string['approverequestall'] = 'Aanvraag goedkeuren (alle gegevens)';
+$string['approveselectedcourses'] = 'Keur geselecteerde cursussen goed';
 $string['automaticdatadeletionapproval'] = 'Goedkeuring voor aanvraag voor automatische gegevensverwijdering';
 $string['automaticdatadeletionapproval_desc'] = 'Indien ingeschakeld zullen aanvragen voor gegevensverwijdering automatisch goedgekeurd worden. <br />Merk op dat de automatische goedkeuring enkel van toepassing is op nieuwe aanvragen voor het verwijderen van gegevens sinds deze instelling ingeschakeld is. Bestaande aanvragen voor gegevensverwijdering blijven in de wachtrij tot ze manueel goedgekeurd zijn door de privacy-officer.';
 $string['automaticdataexportapproval'] = 'Automatisch goedkeuren van gegevensexport';
@@ -154,6 +159,7 @@ $string['errorinvalidrequeststatus'] = 'Ongeldige aanvraagstatus!';
 $string['errorinvalidrequesttype'] = 'Ongeldig verzoektype!';
 $string['errornocapabilitytorequestforothers'] = 'Gebruiker {$a->requestedby} heeft niet het recht om een gegevensaanvraag te doen in naam van gebruiker {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Er zijn geen vervallen contexten te verwerken';
+$string['errornoselectedcourse'] = 'Je moet ten minste één cursus selecteren';
 $string['errorrequestalreadyexists'] = 'Je hebt al een lopende aanvraag.';
 $string['errorrequestnotfound'] = 'Verzoek niet gevonden';
 $string['errorrequestnotwaitingforapproval'] = 'Het verzoek wacht niet op goedkeuring. Of het is nog niet klaar of het is al verwerkt.';
@@ -170,6 +176,7 @@ $string['expiry'] = 'Vervallen';
 $string['explanationtitle'] = 'Gebruikte icoontjes op deze pagina en wat ze betekenen.';
 $string['external'] = 'Bijkomend';
 $string['externalexplanation'] = 'Een bijkomende plugin die op deze site geïnstalleerd is.';
+$string['filterexportdata'] = 'Aanvraag goedkeuren (gegevens van geselecteerde cursussen)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Site startpaginacursus';
 $string['gdpr_art_6_1_a_description'] = 'De betrokkene heeft toestemming gegeven voor de verwerking van zijn persoonsgegevens voor een of meer specifieke doeleinden';
@@ -227,6 +234,7 @@ $string['noassignedroles'] = 'Geen toegewezen rollen in deze context';
 $string['noblockstoload'] = 'Geen blokken';
 $string['nocategories'] = 'Er zijn nog geen categorieën';
 $string['nocoursestoload'] = 'Geen activiteiten';
+$string['nocoursetofilter'] = 'De gebruiker is niet ingeschreven voor te selecteren cursussen';
 $string['nodatarequests'] = 'Er zijn geen gegevensverzoeken';
 $string['nodatarequestsmatchingfilter'] = 'Er zijn geen gegevensaanvragen die overeenkomen met deze filter';
 $string['noexpiredcontexts'] = 'Dit contextniveau heeft geen gegevens waarvoor de bewaarperiode vervallen is.';
@@ -288,6 +296,7 @@ $string['requesttype_help'] = 'Selecteer de reden waarom je contact wilt opnemen
 $string['requesttypedelete'] = 'Verwijder al mijn persoonlijke gegevens';
 $string['requesttypedeleteshort'] = 'Verwijder';
 $string['requesttypeexport'] = 'Exporteer al mijn persoonlijke gegevens';
+$string['requesttypeexportallowfiltering'] = 'Exporteer mijn persoonlijke gegevens';
 $string['requesttypeexportshort'] = 'Exporteer';
 $string['requesttypeothers'] = 'Algemene vraag';
 $string['requesttypeothersshort'] = 'Bericht';
@@ -319,6 +328,7 @@ $string['roleoverride'] = 'Rol overschrijven';
 $string['roleoverrideoverview'] = 'Het standaardbewaarbeleid kan worden opgeheven voor specifieke gebruikersrollen, zodat je een langer of korter bewaarbeleid kunt opgeven. Een gebruiker is pas verlopen als al zijn rollen zijn verlopen.';
 $string['roleoverrides'] = 'Rol overschrijvingen';
 $string['selectbulkaction'] = 'Selecteer een bulkactie.';
+$string['selectcourses'] = 'Selecteer cursussen om te exporteren';
 $string['selectdatarequests'] = 'Selecteer gegevensverzoeken.';
 $string['selectuserdatarequest'] = 'Selecteer het gegevensverzoek {$a->requesttype} van {$a->username}.';
 $string['send'] = 'Verstuur';
@@ -335,6 +345,7 @@ $string['statusdeleted'] = 'Verwijderd';
 $string['statusdetail'] = 'Status:';
 $string['statusexpired'] = 'Verlopen';
 $string['statuspending'] = 'In afwachting';
+$string['statuspreprocessing'] = 'Voorverwerking';
 $string['statusprocessing'] = 'Verwerken';
 $string['statusready'] = 'Klaar om te downloaden';
 $string['statusrejected'] = 'Afgekeurd';

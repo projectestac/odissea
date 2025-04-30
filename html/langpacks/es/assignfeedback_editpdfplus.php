@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdfplus', language 'es', version '4.1'.
+ * Strings for component 'assignfeedback_editpdfplus', language 'es', version '4.4'.
  *
  * @package     assignfeedback_editpdfplus
  * @category    string
@@ -178,7 +178,7 @@ $string['statut_select_ok'] = 'OK';
 $string['student_answer_lib'] = 'Respuesta';
 $string['student_statut_nc'] = 'Sin tratamiento';
 $string['test_doesnotexist'] = 'La ruta hacia ghostscript apunta hacia un archivo inexistente';
-$string['test_empty'] = 'La ruta hacia ghostscript está vacía - por favor ingrese la ruta correcta';
+$string['test_empty'] = 'La ruta hacia ghostscript está vacía - por favor, introduzca la ruta correcta';
 $string['test_isdir'] = 'La ruta hacia ghostscript apunta hacia una carpeta; por favor incluya el programa ghostscript en la ruta que Usted especifica';
 $string['test_notestfile'] = 'Falta el PDF de prueba';
 $string['test_notexecutable'] = 'La ruta hacia ghostscript apunta hacia un archivo que no es ejecutable';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendanceregister', language 'fr', version '4.1'.
+ * Strings for component 'attendanceregister', language 'fr', version '4.4'.
  *
  * @package     attendanceregister
  * @category    string
@@ -92,7 +92,7 @@ Elle permet également d’enregistrer les activités des sessions hors ligne.
 Selon le mode de présence, le suivi des activités peut s’adresser à un cours unique, ou dans tous les cours de la même catégorie ou dans tous les cours « Metaliés ». Les séances de travail en ligne sont calculés sur les entrées du journal enregistrées par Moodle. Les nouvelles sessions en ligne sont ajoutées avec un certain retard par le Cron, après déconnexion de l’utilisateur.';
 $string['modulenameplural'] = 'Registres de présence';
 $string['myattendanceregisteraggregates'] = 'Ma liste de présence regroupe les valeurs';
-$string['myattendanceregistersessions'] = 'Mes sessions d\'enregistrement des présences';
+$string['myattendanceregistersessions'] = 'Mes sessions d’enregistrement des présences';
 $string['never'] = '(jamais)';
 $string['no_refcourse'] = '(pas de cours spécifié)';
 $string['no_session'] = 'pas de session';
@@ -106,7 +106,7 @@ $string['offline_session_comments_help'] = 'Décrivez le thème de la session de
 $string['offline_session_deleted'] = 'La session hors ligne est supprimée';
 $string['offline_session_end'] = 'Fin';
 $string['offline_session_ref_course'] = 'Référence du cours';
-$string['offline_session_ref_course_help'] = 'Sélectionnez le cours hors connexion où le travail  a été fait pour qu’il couvre le sujet du travail.';
+$string['offline_session_ref_course_help'] = 'Sélectionnez le cours hors connexion où le travail a été fait pour qu’il couvre le sujet du travail.';
 $string['offline_session_saved'] = 'Nouvelle session enregistrée Hors ligne';
 $string['offline_session_start'] = 'Démarrer';
 $string['offline_session_start_help'] = 'Sélectionnez le début, la date et l’heure de fin de la séance de travail hors ligne que vous souhaitez soumettre. La Session Hors ligne ne peut pas chevaucher n’importe quelle session précédemment enregistrée, que ce soit en ligne ou hors ligne, ni la session en cours en ligne.';
@@ -140,15 +140,15 @@ $string['privacy:metadata:attendanceregister_aggregate:refcourse'] = 'Cours auqu
 $string['privacy:metadata:attendanceregister_aggregate:total'] = 'Durée totale de la session';
 $string['privacy:metadata:attendanceregister_aggregate:userid'] = 'Identifiant utilisateur';
 $string['privacy:metadata:attendanceregister_lock'] = 'Verrouillage du registre de présence de l’utilisateur pendant le recalcul…';
-$string['privacy:metadata:attendanceregister_lock:userid'] = 'Afin de recalculer le registre de l\'utilisateur, nous stockons l\'identifiant de la session. Ces données sont temporaires et sont supprimées une fois que le recalcul de la session sera terminé.';
-$string['privacy:metadata:attendanceregister_session'] = 'Suivi des sessions de l\'utilisateur';
-$string['privacy:metadata:attendanceregister_session:addedbyuserid'] = 'Si la session hors ligne est insérée par un autre utilisateur, il s\'agit de l\'identifiant de l\'utilisateur concerné.';
+$string['privacy:metadata:attendanceregister_lock:userid'] = 'Afin de recalculer le registre de l’utilisateur, nous stockons l’identifiant de la session. Ces données sont temporaires et sont supprimées une fois que le recalcul de la session sera terminé.';
+$string['privacy:metadata:attendanceregister_session'] = 'Suivi des sessions de l’utilisateur';
+$string['privacy:metadata:attendanceregister_session:addedbyuserid'] = 'Si la session hors ligne est insérée par un autre utilisateur, il s’agit de l’identifiant de l’utilisateur concerné.';
 $string['privacy:metadata:attendanceregister_session:comments'] = 'Commentaires des sessions hors ligne';
 $string['privacy:metadata:attendanceregister_session:duration'] = 'Durée de la session';
 $string['privacy:metadata:attendanceregister_session:login'] = 'Horodatage de la connexion';
 $string['privacy:metadata:attendanceregister_session:logout'] = 'Horodatage de la déconnexion';
 $string['privacy:metadata:attendanceregister_session:onlinesess'] = 'Si la session est en ligne ou hors ligne';
-$string['privacy:metadata:attendanceregister_session:refcourse'] = 'Cours auquel il est fait référence lors d\'une session hors ligne';
+$string['privacy:metadata:attendanceregister_session:refcourse'] = 'Cours auquel il est fait référence lors d’une session hors ligne';
 $string['privacy:metadata:attendanceregister_session:userid'] = 'L’identifiant de l’utilisateur';
 $string['recalc_already_pending'] = '(Déjà en cours d’exécution sur le Cron suivant)';
 $string['recalc_complete'] = 'Recalcul des sessions complet';
@@ -159,7 +159,7 @@ $string['registername'] = 'Nom du registre de présence';
 $string['registertype'] = 'Mode de contrôle de présence';
 $string['registertype_help'] = 'Les modes de suivi déterminent les cours suivis par le traqueur (c’est à dire quelles sont les activités des utilisateurs qui seront contrôlées) :
 * Ce cours seulement : l’activité sera contrôlée uniquement dans le cours où le module est installé.
- * Tous les cours de la catégorie : l’activité sera contrôlée sur tous les cours de la même catégorie que celle du cours.
+* Tous les cours de la catégorie : l’activité sera contrôlée sur tous les cours de la même catégorie que celle du cours.
 * Tous les cours liés : l’activité sera suivie dans ce cours et tous les cours liés par la liaison méta cours.';
 $string['schedule_reclalc_all_session'] = 'Recalcul des séances programmées au prochain CRON';
 $string['select_a_course'] = '- Sélectionnez un cours -';

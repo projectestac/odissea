@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ja', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'ja', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = '新しいコースの作成時にデフォル�
 $string['erroractivitytype'] = 'コース設定で活動タイプが設定されていません。';
 $string['orphaned'] = '迷子';
 $string['orphanedwarning'] = 'これらの活動にユーザはアクセスできません!';
-$string['pluginname'] = '単一活動フォーマット';
+$string['plugin_description'] = '1つの活動またはリソースのみ含まれるコースです。';
+$string['pluginname'] = '単一活動';
 $string['privacy:metadata'] = '単一活動フォーマットプラグインはいかなる個人データも保存しません。';
 $string['sectionname'] = '&nbsp;';
 $string['warningchangeformat'] = '既存のコースフォーマットを「単一活動」に変更する場合、あなたがコースから「アナウンスメント」を含む追加された活動すべてを削除したことを確認してください。セクション構造も変更される可能性があることに留意してください。';

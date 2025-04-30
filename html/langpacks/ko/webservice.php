@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ko', version '4.1'.
+ * Strings for component 'webservice', language 'ko', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -185,8 +185,6 @@ $string['userasclientsdescription'] = '다음 단계들은 클라이언트로서
 $string['usermissingcaps'] = '누락된 능력 :{$a}.';
 $string['usernameorid'] = '사용자이름/사용자 아이디';
 $string['usernameorid_help'] = '사용자이름 혹은 사용자 아이디를 입력하십시요.';
-$string['usernameoridnousererror'] = '이 사용자이름/사용자 아이디를 사용자를 찾을 수 없습니다.';
-$string['usernameoridoccurenceerror'] = '이 사용자 이름을 사용하는 여러 사용자가 있습니다. 사용자 아이디를 입력하십시요.';
 $string['usernotallowed'] = '사용자가 이 서비스에 대해 허용되지 않았습니다. 우선 {$a}의 허용된 사용자 관리 페이지에서 이 사용자를 허용하는 것이 필요합니다.';
 $string['usersettingssaved'] = '사용자 설정이 저장되었습니다.';
 $string['validuntil'] = '유효기일';

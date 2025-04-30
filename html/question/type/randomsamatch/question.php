@@ -40,7 +40,7 @@ class qtype_randomsamatch_question extends qtype_match_question {
     /** @var int the number of subquestions to randomly create. */
     public $choose;
 
-    /** @var bool whether to include questions from subcategories when making the random selection. */
+    /** @var bool whether to include questions from subactegories when making the random selection. */
     public $subcats;
 
     public function start_attempt(question_attempt_step $step, $variant) {

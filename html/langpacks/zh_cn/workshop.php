@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', version '4.1'.
+ * Strings for component 'workshop', language 'zh_cn', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = '迟的提交';
 $string['latesubmissions_desc'] = '允许在截止日期后提交';
 $string['latesubmissions_help'] = '如果启用，作者可以在提交截止日期之后或在评价阶段提交他们的作品。但迟交的作品不能编辑。';
 $string['latesubmissionsallowed'] = '允许迟交';
-$string['legacyallocationplugincron'] = '遗留的cron互动评价分配';
 $string['maxbytes'] = '最大提交附件大小';
 $string['modulename'] = '互动评价';
 $string['modulename_help'] = '互动评价活动模块可以收集、评价和对学生的工作进行同学间互评。学生可以提交任何数字内容(文件)，如文字处理文档或电子表格，还可以使用文本编辑器直接在字段中输入文本。提交的作品将使用教师定义的多标准评价表单进行评价。同学间互评和理解评价表单的过程，可由教师提供范例，连同参考评价一起预先练习。学生们有机会评价他们的一个或多个同学的提交。如果需要，提交和评价人可以是匿名的。学生在一次互动评价活动中获得两个成绩——提交的成绩和对同学提交评价的成绩。两个成绩都记录在成绩单上。';

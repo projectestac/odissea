@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'eu', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Berreskuratu ikastaro honetatik igo ondoren';
 $string['coursetemplatename_help'] = 'Idatzi hemen existitzen den ikastaro bat ikastaro guztiak sortzeko txantiloi gisa erabiltzeko.';
 $string['coursetorestorefromdoesnotexist'] = 'Berreskuratzeko erabili beharreko ikastaroa ez da existitzen';
 $string['courseupdated'] = 'Ikastaroa eguneratu da';
+$string['courseuploadnotallowed'] = 'Ez duzu baimenik ikastaroak kategoriara igotzeko: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Izen labur hau duen ikastaro bat dagoeneko existitzen da baina zuk ez duzu baimenik Igo ikastaroa tresnaren bitartez ikastaro hori eguneratzeko.';
 $string['createall'] = 'Sortu guztiak, behar izanez gero izen laburrari kontagailua gehituta';
 $string['createnew'] = 'Sortu soilik ikastaro berriak, lehendik existitzen direnak alde batera utziz';
 $string['createorupdate'] = 'Sortu ikastaro berriak, edo eguneratu existitzen direnak';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'CSV fitxategiaren kodifikazioa';
 $string['errorcannotcreateorupdateenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa sortu edo eguneratu';
 $string['errorcannotdeleteenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa ezabatu';
 $string['errorcannotdisableenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa desgaitu';
+$string['errorunsupportedmethod'] = '\'{$a}\' matrikulazio-metodoa ez da CSV fitxategien igoeran onartzen';
 $string['errorwhiledeletingcourse'] = 'Errorea gertatu da ikastaroa ezabatu bitartean';
 $string['errorwhilerestoringcourse'] = 'Errorea gertatu da ikastaroa berreskuratu bitartean';
 $string['generatedshortnamealreadyinuse'] = 'Sortutako izen laburra dagoeneko erabiltzen ari da';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Eguneratze-moduak ez du ezer eguneratze
 $string['updateonly'] = 'Eguneratu soilik existitzen diren ikastaroak';
 $string['updatewithdataonly'] = 'Eguneratu CSVko datuekin soilik';
 $string['updatewithdataordefaults'] = 'Eguneratu CSVko datuekin eta lehenetsitako balioekin';
+$string['uploadcourse:use'] = 'Erabili Igo ikastaroa tresna';
 $string['uploadcourses'] = 'Igo ikastaroak';
 $string['uploadcourses_help'] = 'Ikastaroak testu-fitxategi bat igota sortu daitezke. Fitxategiak hurrengo formatua izan behar du:
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'pt', version '4.1'.
+ * Strings for component 'page', language 'pt', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -66,8 +66,6 @@ $string['popupheight'] = 'Altura da janela pop-up (em píxeis)';
 $string['popupheightexplain'] = 'Especifique a altura predefinida da janela pop-up';
 $string['popupwidth'] = 'Largura da janela pop-up (em píxeis)';
 $string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela pop-up';
-$string['printheading'] = 'Mostrar nome da página';
-$string['printheadingexplain'] = 'Mostrar nome da página por cima do conteúdo?';
 $string['printintro'] = 'Mostrar descrição da página';
 $string['printintroexplain'] = 'Mostrar descrição da página por cima do conteúdo?';
 $string['printlastmodified'] = 'Mostrar data da última modificação';

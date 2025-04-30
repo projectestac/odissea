@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'de', version '4.1'.
+ * Strings for component 'search', language 'de', version '4.4'.
  *
  * @package     search
  * @category    string
@@ -117,7 +117,7 @@ $string['score'] = 'Punkte';
 $string['search'] = 'Suchen';
 $string['search:course'] = 'Kurse';
 $string['search:course_teacher'] = 'Kurstrainer/in';
-$string['search:customfield'] = 'Kursfelder';
+$string['search:customfield'] = 'Nutzerdefinierte Kursfelder';
 $string['search:message_received'] = 'Mitteilungen - empfangen';
 $string['search:message_sent'] = 'Mitteilungen - gesendet';
 $string['search:mycourse'] = 'Meine Kurse';

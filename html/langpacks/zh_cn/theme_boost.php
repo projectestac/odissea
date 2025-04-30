@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'zh_cn', version '4.1'.
+ * Strings for component 'theme_boost', language 'zh_cn', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = '主题预设';
 $string['preset_desc'] = '选择一种预设可明显改变主题外观。';
 $string['presetfiles'] = '主题预设附加文件';
-$string['presetfiles_desc'] = '使用预设文件可明显改变主题外观。有关创建及分享你自己主题预设文件的方法参见 <a href=https://docs.moodle.org/dev/Boost_Presets>Boost presets</a> , 也可以访问 <a href=http://moodle.net/boost>Presets repository</a> 获取他人分享的主题预设文件。';
+$string['presetfiles_desc'] = '预设文件可用于显著改变主题的外观。有关创建和共享您自己的预设文件的信息，请参阅 <a href=“https://docs.moodle.org/dev/Boost_Presets”>Boost 预设</a>，并查看 <a href=“https://moodle.net/search?q=boost+presets”>Presets 存储库</a>，了解其他人共享的预设。';
 $string['privacy:drawerblockclosed'] = '版块抽屉的默认选项已关闭。';
 $string['privacy:drawerblockopen'] = '版块抽屉的默认选项已开启。';
 $string['privacy:drawerindexclosed'] = '索引抽屉的默认选项已关闭。';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = '原始初始SCSS';
 $string['rawscsspre_desc'] = '可在此处提供初始化 SCSS 代码，代码将被添加到最开始。绝大多数情况下主要用于定义变量。';
 $string['region-side-pre'] = '右侧';
 $string['showfooter'] = '显示页脚';
-$string['totop'] = '回到顶部';
 $string['unaddableblocks'] = '不需要的版块';
 $string['unaddableblocks_desc'] = '使用此主题时指定不需要的版块，将不会列出在“添加版块”菜单中。';

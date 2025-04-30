@@ -26,7 +26,7 @@ class script_restore_xtecadmin extends agora_script_base{
             $this->output('Missing password. Restore of xtecadmin aborted', 'ERROR');
             return false;
         } else {
-            $password = (strlen($params['password']) == 32) ? $params['password'] : md5($params['password']);
+            $password = (strlen($params['password']) == 60) ? $params['password'] : password_hash($params['password'], PASSWORD_BCRYPT);
         }
 
         $xtecadmin = $DB->get_record('user', array('username' => 'xtecadmin', 'deleted' => 0));

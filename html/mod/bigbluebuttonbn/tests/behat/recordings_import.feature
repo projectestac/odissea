@@ -7,7 +7,7 @@ Feature: Manage and list recordings
     And the following config values are set as admin:
       | bigbluebuttonbn_importrecordings_enabled | 1 |
       | bigbluebuttonbn_importrecordings_from_deleted_enabled | 1 |
-    And I accept dpa and enable bigbluebuttonbn plugin
+    And I enable "bigbluebuttonbn" "mod" plugin
     And the following "courses" exist:
       | fullname      | shortname | category |
       | Test Course 1 | C1        | 0        |
@@ -42,7 +42,6 @@ Feature: Manage and list recordings
     And I select "Test Course 1 (C1)" from the "sourcecourseid" singleselect
     And I select "RoomRecordings" from the "sourcebn" singleselect
     # add the first recording
-    And I change window size to "large"
     And I click on "a.action-icon" "css_element" in the "Recording 1" "table_row"
     # add the second recording
     And I click on "a.action-icon" "css_element" in the "Recording 2" "table_row"
@@ -85,7 +84,6 @@ Feature: Manage and list recordings
   Scenario: I check that I can import recordings from a deleted instance into the Recording activity and then if I delete them
   they are back into the pool to be imported again
     Given I log in as "admin"
-    And I change window size to "large"
     When I am on "Test Course 1" course homepage with editing mode on
     And I delete "RoomRecordings" activity
     # The activity is deleted asynchroneously.

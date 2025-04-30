@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'en', version '4.1'.
+ * Strings for component 'assign', language 'en', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'You have not made a submission yet.';
 $string['allocatedmarker'] = 'Allocated Marker';
 $string['allocatedmarker_help'] = 'Marker allocated to this submission.';
 $string['allowsubmissions'] = 'Allow the user to continue making submissions to this assignment.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'The assignment details and submission form will be available from <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Allow submissions from';
 $string['allowsubmissionsfromdate_help'] = 'If enabled, students will not be able to submit before this date. If disabled, students will be able to start submitting right away.';
-$string['allowsubmissionsfromdatesummary'] = 'This assignment will accept submissions from <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Allow submission changes';
 $string['alwaysshowdescription'] = 'Always show description';
 $string['alwaysshowdescription_help'] = 'If disabled, the assignment description above will only become visible to students on the "Allow submissions from" date.';
@@ -139,7 +137,7 @@ $string['collapsegradepanel'] = 'Collapse grade panel';
 $string['collapsereviewpanel'] = 'Collapse review panel';
 $string['comment'] = 'Comment';
 $string['completiondetail:submit'] = 'Make a submission';
-$string['completionsubmit'] = 'Student must make a submission';
+$string['completionsubmit'] = 'Make a submission';
 $string['configshowrecentsubmissions'] = 'Everyone can see notifications of submissions in recent activity reports.';
 $string['confirmbatchgradingoperation'] = 'Are you sure you want to {$a->operation} for {$a->count} students?';
 $string['confirmstart'] = 'You have {$a} to complete this assignment. When you begin, the timer will start to count down and can\'t be paused.';
@@ -226,6 +224,11 @@ $string['eventsubmissionviewed'] = 'Submission viewed.';
 $string['eventworkflowstateupdated'] = 'The state of the workflow has been updated.';
 $string['expandreviewpanel'] = 'Expand review panel';
 $string['extensionduedate'] = 'Extension due date';
+$string['extensionduedatecurrent'] = 'Current extension due date';
+$string['extensionduedatefrom'] = 'From {$a}';
+$string['extensionduedatenone'] = 'None';
+$string['extensionduedateto'] = 'To {$a}';
+$string['extensionduedatewithout'] = 'Users without an extension: {$a}';
 $string['extensionnotafterduedate'] = 'Extension date must be after the due date';
 $string['extensionnotafterfromdate'] = 'Extension date must be after the allow submissions from date';
 $string['feedback'] = 'Feedback';
@@ -346,6 +349,8 @@ $string['markerfilter'] = 'Marker filter';
 $string['markerfilternomarker'] = 'No marker';
 $string['markingallocation'] = 'Use marking allocation';
 $string['markingallocation_help'] = 'If enabled together with marking workflow, markers can be allocated to particular students.';
+$string['markinganonymous'] = 'Allow partial release of grades while marking anonymously';
+$string['markinganonymous_help'] = 'If enabled together with anonymous submissions and marking workflow, it allows partial release of grades while marking anonymously.';
 $string['markingworkflow'] = 'Use marking workflow';
 $string['markingworkflow_help'] = 'If enabled, marks will go through a series of workflow stages before being released to students. This allows for multiple rounds of marking and allows marks to be released to all students at the same time.';
 $string['markingworkflowstate'] = 'Marking workflow state';
@@ -365,7 +370,7 @@ $string['markingworkflowstatereadyforreview'] = 'Marking completed';
 $string['markingworkflowstatereleased'] = 'Released';
 $string['maxattempts'] = 'Maximum attempts';
 $string['maxattempts_help'] = 'The maximum number of submission attempts that can be made by a student. After this number has been reached, the submission can no longer be reopened.';
-$string['maxgrade'] = 'Maximum Grade';
+$string['maxgrade'] = 'Maximum grade';
 $string['maxperpage'] = 'Maximum assignments per page';
 $string['maxperpage_help'] = 'The maximum number of assignments a grader can show in the assignment grading page. This setting is useful in preventing timeouts for courses with a large number of participants.';
 $string['messageprovider:assign_notification'] = 'Assignment notifications';
@@ -471,8 +476,6 @@ $string['quickgrading_help'] = 'Quick grading allows you to assign grades (and o
 $string['quickgradingchangessaved'] = 'The grade changes were saved';
 $string['quickgradingresult'] = 'Quick grading';
 $string['recordid'] = 'Identifier';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} after course start';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} before course start';
 $string['relativedatessubmissiontimeleft'] = 'Calculated for each student';
 $string['removeallgroupoverrides'] = 'Delete all group overrides';
 $string['removealluseroverrides'] = 'Delete all user overrides';
@@ -484,7 +487,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Are you sure you want to remo
 $string['removesubmissionforstudent'] = 'Remove submission for student: (id={$a->id}, fullname={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Reopen until pass option is incompatible with anonymous submissions, because the grades are not released to the gradebook until the student identities are revealed.';
 $string['requireallteammemberssubmit'] = 'Require all group members submit';
-$string['requireallteammemberssubmit_help'] = 'If enabled, all members of the student group must click the submit button for this assignment before the group submission will be considered as submitted. If disabled, the group submission will be considered as submitted as soon as any member of the student group clicks the submit button.';
+$string['requireallteammemberssubmit_help'] = 'This setting must be used together with the \'Require students to click the submit button\' in Submission settings.
+
+If enabled, all group members must click the submit button for the group submission to be considered as submitted. If disabled, any group member can click the submit button.';
 $string['requiresubmissionstatement'] = 'Require that students accept the submission statement';
 $string['requiresubmissionstatement_help'] = 'Require that students accept the submission statement for all submissions to this assignment.';
 $string['revealidentities'] = 'Reveal student identities';
@@ -579,6 +584,7 @@ $string['submissionstatement'] = 'Submission statement';
 $string['submissionstatement_help'] = 'Statement that each student must accept in order to submit their work.';
 $string['submissionstatementacceptedlog'] = 'Submission statement accepted by user {$a}';
 $string['submissionstatementdefault'] = 'This submission is my own work, except where I have acknowledged the use of the works of other people.';
+$string['submissionstatementrequired'] = 'You are required to agree to this statement before you can submit.';
 $string['submissionstatementteamsubmission'] = 'Group submission statement';
 $string['submissionstatementteamsubmission_help'] = 'Statement that each student must accept in order to submit the work of their group.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Group submission statement where all group members submit';

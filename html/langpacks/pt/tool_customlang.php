@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'pt', version '4.1'.
+ * Strings for component 'tool_customlang', language 'pt', version '4.4'.
  *
  * @package     tool_customlang
  * @category    string

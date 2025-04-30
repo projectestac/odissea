@@ -44,24 +44,24 @@ abstract class qtype_multichoice_renderer_base extends qtype_with_combined_feedb
      *
      * @return string HTML output.
      */
-    protected abstract function after_choices(question_attempt $qa, question_display_options $options);
+    abstract protected function after_choices(question_attempt $qa, question_display_options $options);
 
-    protected abstract function get_input_type();
+    abstract protected function get_input_type();
 
-    protected abstract function get_input_name(question_attempt $qa, $value);
+    abstract protected function get_input_name(question_attempt $qa, $value);
 
-    protected abstract function get_input_value($value);
+    abstract protected function get_input_value($value);
 
-    protected abstract function get_input_id(question_attempt $qa, $value);
+    abstract protected function get_input_id(question_attempt $qa, $value);
 
     /**
      * Whether a choice should be considered right, wrong or partially right.
      * @param question_answer $ans representing one of the choices.
-     * @return fload 1.0, 0.0 or something in between, respectively.
+     * @return float 1.0, 0.0 or something in between, respectively.
      */
-    protected abstract function is_right(question_answer $ans);
+    abstract protected function is_right(question_answer $ans);
 
-    protected abstract function prompt();
+    abstract protected function prompt();
 
     public function formulation_and_controls(question_attempt $qa,
             question_display_options $options) {
@@ -118,10 +118,8 @@ abstract class qtype_multichoice_renderer_base extends qtype_with_combined_feedb
                         'data-region' => 'answer-label',
                     ]);
 
-            // Param $options->suppresschoicefeedback is a hack specific to the
-            // oumultiresponse question type. It would be good to refactor to
-            // avoid refering to it here.
-            if ($options->feedback && empty($options->suppresschoicefeedback) &&
+            qtype_multichoice::support_legacy_review_options_hack($options);
+            if ($options->feedback && $options->feedback !== qtype_multichoice::COMBINED_BUT_NOT_CHOICE_FEEDBACK &&
                     $isselected && trim($ans->feedback)) {
                 $feedback[] = html_writer::tag('div',
                         $question->make_html_inline($question->format_text(

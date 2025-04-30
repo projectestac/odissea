@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'nl', version '4.1'.
+ * Strings for component 'competency', language 'nl', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'De competentiebeoordeling werd man
 $string['evidence_manualoverrideinplan'] = 'De competentiebeoordeling werd manueel ingesteld in studieplan \'{$a}\'.';
 $string['invalidevidencedesc'] = 'Ongeldige bewijsbeschrijving';
 $string['invalidgrade'] = 'Ongeldige beoordeling';
-$string['invalidpersistenterror'] = 'Fout: {$a}';
 $string['invalidplan'] = 'Ongeldig studieplan';
 $string['invalidtaxonomy'] = 'Ongeldige taxonomie: {$a}';
 $string['invalidurl'] = 'De URL is niet geldig. Die moet beginnen met \'http://\' of \'https://\'.';

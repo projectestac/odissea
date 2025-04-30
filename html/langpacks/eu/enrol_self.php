@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'eu', version '4.1'.
+ * Strings for component 'enrol_self', language 'eu', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Soilik kohorteko partaideak';
 $string['cohortonly_help'] = 'Matrikulazio automatikoa soilik kohorte bateko kideentzat egon daiteke eskuragarri. Kontuan izan ezarpen hau aldatzeak ez duela eraginik existitzen diren matrikulazioetan.';
 $string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi-etorria emateko mezua';
-$string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodleko formatu automatikoan, HTML etiketak eta etiketa eleaniztunak barne.
-
-Mezuan hurrengo gakoak sar daitezke:
-
-* Ikastaroaren izena {$a->coursename}
-* Erabiltzailearen profilerako esteka {$a->profileurl}
-* Erabiltzailearen helbide elektronikoa {$a->email}
-* Erabiltzailearen izen osoa {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Onartutako formatuak: testu-soila ala Moodleko formatu automatikoa. HTML etiketak eta etiketa eleaniztunak ere onartzen dira, baita hurrengo hitz-gakoak ere:
+<ul>
+<li>Ikastaroaren izena {$a->coursename}</li>
+<li>Erabiltzailearen profilerako esteka {$a->profileurl}</li>
+<li>Erabiltzailearen helbide elektronikoa {$a->email}</li>
+<li>Erabiltzailearen izen osoa {$a->fullname}</li>
+<li>Erabiltzailearen izena {$a->firstname}</li>
+<li>Erabiltzailearen abizena {$a->lastname}</li>
+<li>Erabiltzailearen ikastaroko rola {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Lehenetsitako rol-esleipena';
 $string['defaultrole_desc'] = 'Aukeratu matrikulazio automatikoa egitean erabiltzaileari esleituko zaion rola.';
 $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaile-matrikulak';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek soilik data honetatik aurrera izango dute matrikulatzeko aukera.';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez, kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
+$string['expiryinactivemessageenrolledbody'] = 'Kaixo, {$a->user},
+
+{$a->course} ikastaroko zure matrikulazioa {$a->timeend} iraungiko da ez zarelako ikastarora sartu azken  {$a->inactivetime} egunetan.
+
+Zure matrikulazioa aktibo mantentzeko {$a->timeend} baino lehen saioa hasi eta <a href="{$a->url}">{$a->course}</a> ikastaroan sartu beharko zara.';
+$string['expiryinactivemessageenrolledsubject'] = 'Zure matrikulazioa iraungitzera doa: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Kaixo, {$a->user}:
 
 Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko dela jakinarazteko da.

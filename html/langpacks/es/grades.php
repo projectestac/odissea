@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'es', version '4.1'.
+ * Strings for component 'grades', language 'es', version '4.4'.
  *
  * @package     grades
  * @category    string
@@ -53,7 +53,7 @@ Esta configuración determina si las calificaciones vacías (faltantes) NO será
 Nota del traductor: Dependiento de este ajuste, los cálculos de media, mediana y moda podrían no toman en cuenta las calificaciones faltantes, por lo que si existieran alumnos que faltan a algunos/varios/muchos exámenes sin justificación válida, la suma de calificaciones puede ser una mejor forma (pero más estricta) de evaluar su desempeño real (y la calificación que merecen) que media, mediana o moda donde exámenes no hechos no afectaron la calificación. Por favor corra pruebas con datos reales en su servidor antes de extender alguna estrategia de calificación a su institución...';
 $string['aggregateoutcomes'] = 'Incluir resultados en cálculo total';
 $string['aggregateoutcomes_help'] = '<p>La inclusión de resultados en la agregación puede no conducir a la calificafión global deseada, de modo que usted tiene la opción de incluirlos o desecharlos.</p>';
-$string['aggregatesonly'] = 'Cambiar a solo cálculos totales';
+$string['aggregatesonly'] = 'Mostrar sólo totales';
 $string['aggregatesubcatsupgradedgrades'] = 'Nota: La configuración de cálculos "Cálculos totales incluyendo subtageorías" ha sido removido tras la actualización del portal. Debido a que "Cálculos totales incluyendo subcategorías" se utilizaba en este curso, se recomienda que compruebe el cambio en el libro de calificaciones.';
 $string['aggregatesum'] = 'Suma';
 $string['aggregateweightedmean'] = 'Media ponderada de calificaciones';
@@ -104,6 +104,8 @@ $string['aggregationsvisiblehelp'] = 'Seleccione todos los tipos de cálculo que
 $string['allgrades'] = 'Todas las calificaciones por categoría';
 $string['allstudents'] = 'Todos los estudiantes';
 $string['allusers'] = 'Todos los usuarios';
+$string['aria-toggledropdown'] = 'Cambiar al siguiente menú desplegable';
+$string['aria:dropdowngrades'] = 'Se han encontrado ítems de calificación';
 $string['autosort'] = 'Ordenación automática';
 $string['availableidnumbers'] = 'Números ID disponibles';
 $string['average'] = 'Promedio';
@@ -125,6 +127,7 @@ $string['calculationadd'] = 'Agregar cálculo';
 $string['calculationedit'] = 'Editar cálculo';
 $string['calculationsaved'] = 'Cálculo guardado';
 $string['calculationview'] = 'Ver cálculo';
+$string['calculationwarning'] = 'Esta categoría usa un cálculo de nota para la categoría total en vez de una agregación.';
 $string['cannotaccessgroup'] = 'Lo sentimos, no se puede acceder a las calificaciones del grupo seleccionado.';
 $string['categories'] = 'Categorías';
 $string['category'] = 'Categoría';
@@ -138,7 +141,6 @@ $string['changereportdefaults'] = 'Cambiar valores por defecto del informe';
 $string['chooseaction'] = 'Seleccione una acción...';
 $string['choosecategory'] = 'Seleccionar categoría';
 $string['collapsecriterion'] = 'Colapsar criterio';
-$string['combo'] = 'Tabuladores y menú desplegable';
 $string['compact'] = 'Compactar';
 $string['componentcontrolsvisibility'] = 'El hecho que este ítem de calificación esté oculto o no, es controlado por la configuración de la actividad.';
 $string['contract'] = 'Contraer categoría';
@@ -174,7 +176,6 @@ $string['displaylettergrade'] = 'Mostrar calificaciones con letra';
 $string['displaypercent'] = 'Mostrar porcentajes';
 $string['displaypoints'] = 'Mostrar puntos';
 $string['displayweighted'] = 'Mostrar calificaciones ponderadas';
-$string['dropdown'] = 'Menú desplegable';
 $string['droplow'] = 'Descartar las más bajas';
 $string['droplow_help'] = '<p>Si se activa, esta opción descartará las X calificaciones más bajas, donde X es el valor seleccionado por esta opción. </p>';
 $string['droplowestvalue'] = 'Configurar descartar el menor valor de calificación';
@@ -201,16 +202,18 @@ $string['enableoutcomes'] = 'Habilitar resultados';
 $string['enableoutcomes_help'] = 'Si se habilita, los ítems de calificación pueden ser calificados usando una o más escalas ligadas a declaraciones de resultados.';
 $string['encoding'] = 'Codificación';
 $string['encoding_help'] = 'Seleccione la codificación de caracteres usada para los datos. (La codificación estándar es UTF-8.) Si por error se selecciona una codificación equivocada, se notará al pre-visualizar los datos a importar.';
-$string['errorcalculationbroken'] = 'Probablemente una referencia circular o una fórmula de cálculo errónea';
+$string['errorcalculationbroken'] = 'Error en el cálculo de la calificación del ítem {$a}.';
 $string['errorcalculationnoequal'] = 'La fórmula debe comenzar por el signo \'igual\' (=1+2)';
 $string['errorcalculationunknown'] = 'Fórmula no válida';
 $string['errorgradevaluenonnumeric'] = 'Recibido valor no numérico para calificación baja o alta para';
 $string['errornocalculationallowed'] = 'No se permiten cálculos para este ítem';
 $string['errornocategorisedid'] = 'No se ha podido conseguir una ID no categorizada.';
 $string['errornocourse'] = 'No se pudo obtener información del curso';
+$string['erroroverweight'] = 'El peso total excede el 100%.';
 $string['errorreprintheadersnonnumeric'] = 'Recibido valor no numérico para cabeceras de reimpresión';
 $string['errorsavegrade'] = 'Lo sentimos, no se pudo guardar la calificación.';
 $string['errorsettinggrade'] = 'Error al guardar la calificación de "{$a->itemname}" para el usuario {$a->userid}';
+$string['errorunderweight'] = 'El peso total es menor que 100%.';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Error al actualizar el ajuste "Agregar sólo elementos calificados" de la categoría de calificación con ID {$a->id}';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Error al actualizar el ajuste "Incluir resultados en agregación" de la categoría de calificación ID {$a->id}';
 $string['errorupdatinggradecategoryaggregation'] = 'Error al actualizar el tipo de agregación de la categoría de calificación ID {$a->id}';
@@ -255,9 +258,14 @@ $string['feedbackedit'] = 'Editar retroalimentación';
 $string['feedbackfiles'] = 'Archivos de retroalimentación';
 $string['feedbackforgradeitems'] = 'Retroalimentación para {$a}';
 $string['feedbackhistoryfiles'] = 'Archivos de historia de retroalimentación';
+$string['feedbackprovided'] = 'Retroalimentación proporcionada';
 $string['feedbacks'] = 'Comentarios de retroalimentación';
 $string['feedbacksaved'] = 'Retroalimentación guardada';
 $string['feedbackview'] = 'Ver retroalimentación';
+$string['filterbothactive'] = 'Nombre ({$a->first}) Apellido ({$a->last})';
+$string['filterbyname'] = 'Filtrar por nombre';
+$string['filterfirstactive'] = 'Nombre ({$a->first})';
+$string['filterlastactive'] = 'Apellido ({$a->last})';
 $string['finalgrade'] = 'Calificación final';
 $string['finalgrade_help'] = 'La calificación final después de que todos los cálculos han sido realizados.';
 $string['fixedstudents'] = 'Columna de estudiantes fijada';
@@ -269,7 +277,7 @@ $string['forceon'] = 'Forzar: Conectar';
 $string['forelementtypes'] = 'para el {$a} seleccionado';
 $string['forstudents'] = 'Para los estudiantes';
 $string['full'] = 'Completo';
-$string['fullmode'] = 'Cambiar a vista completa';
+$string['fullmode'] = 'Mostrar calificaciones y totales';
 $string['generalsettings'] = 'Ajustes generales';
 $string['grade'] = 'Calificación';
 $string['grade_help'] = 'La calificación a otorgar al estudiante por su trabajo.';
@@ -348,8 +356,7 @@ $string['gradeoutcomeitem'] = 'Ítem de resultado de calificación';
 $string['gradeoutcomes'] = 'Resultados';
 $string['gradeoutcomescourses'] = 'Resultados del curso';
 $string['gradepass'] = 'Calificación para aprobar';
-$string['gradepass_help'] = '<p>Si un ítem tiene una calificación que los usuarios deben igualar o superar para aprobar
-   un ítem, puede fijarla en este campo.</p>';
+$string['gradepass_help'] = 'Esta configuración determina la calificación mínima requerida para pasar. El valor se usa en finalización de actividad y de curso y en el libro de calificaciones, donde las calificaciones aprobatorias están resaltadas en verde y las reprobatorias en rojo.';
 $string['gradepassgreaterthangrade'] = 'La calificación para pasar no puede ser mayor que la calificación máxima posible {$a}';
 $string['gradepointdefault'] = 'Calificación por defecto';
 $string['gradepointdefault_help'] = 'Este ajuste determina el valor predeterminado para la puntuación máxima disponible en una unidad.';
@@ -368,7 +375,7 @@ $string['grades'] = 'Calificaciones';
 $string['gradesforuser'] = 'Calificaciones de {$a->user}';
 $string['gradesmoduledeletionpendingwarning'] = 'Advertencia: ¡Borrado de actividad en curso! Algunas calificaciones están a punto de ser eliminadas.';
 $string['gradesmoduledeletionprefix'] = '[Borrado en progreso]';
-$string['gradesonly'] = 'Cambiar a sólo calificaciones';
+$string['gradesonly'] = 'Mostrar sólo calificaciones';
 $string['gradessettings'] = 'Ajustes';
 $string['gradetype'] = 'Tipo de calificación';
 $string['gradetype_help'] = '<p>Especifica el tipo de calificación usado: <b>Ninguno</b> (no se permite calificar),
@@ -484,10 +491,8 @@ $string['letterpercentage'] = 'Letra (porcentaje)';
 $string['letterreal'] = 'Letra (real)';
 $string['letters'] = 'Letras';
 $string['linkedactivity'] = 'Actividad vinculada';
-$string['linkedactivity_help'] = '<p>Especifica una actividad opcional en la que este ítem de resultado esta vinculada.
-   Esto se utiliza para medir el rendimiento del estudiante en criterios no medidos por
-   la calificación de la actividad.</p>';
-$string['linktoactivity'] = 'Vincular a la actividad {$a->name} {$a->title}';
+$string['linkedactivity_help'] = 'Esta configuración especifica una actividad a la cual está enlazada este item de resultado. Esto puede emplearse para medir el desempeño del estudiante en criterios no evaluados por la calificación de la actividad';
+$string['linktoactivity'] = 'Actividad {$a->name} {$a->title}';
 $string['lock'] = 'Bloquear';
 $string['locked'] = 'Bloquear';
 $string['locked_help'] = 'Si se señala esta opción, las calificaciones ya no podrán ser actualizadas automáticamente por la actividad relacionada.';
@@ -515,24 +520,17 @@ $string['min'] = 'Más baja';
 $string['minimum_show'] = 'Mostrar la calificación mínima';
 $string['minimum_show_help'] = 'Calificación mínima se utiliza en el cálculo de las calificaciones y pesos. Si no se muestra su calificación mínima por defecto será cero y no podrá ser editada.';
 $string['minmaxtouse'] = 'Cálculo al cambiar el mínimo y/o el máximo de una calificación';
-$string['minmaxtouse_desc'] = 'Esta opción se aplica para controlar el comportamiento de las calificaciones de un elemento calificable cuando cambiamos su valor mínimo y/o máximo. Poniendo un ejemplo: <br />
-Creamos una tarea con una calificación máxima de 10. La alumna Carla, recibe una puntuación de 5 sobre 10 (50%).  La calificación máxima de la tarea es cambiada a 20.<br />
-- Si tenemos marcado "No recalcula las calificaciones pero aparece en relación al nuevo máximo y/o mínimo", Carla tendrá una puntuación de 5 sobre 20 (25%).<br />
-- Si tenemos marcado "No recalcula calificaciones, aparece la calificación con el máximo y/o mínimo anterior hasta que esta se actualiza manualmente por el profesor", Carla tendrá una puntuación de 5 sobre 10 (50%) hasta que el profesor recalifique manualmente a Carla sobre 20.<br/><br/>
-Se recomienda que esta configuración NO se modifique en horas punta de uso,  ya que se volverán a calcular todos las calificaciones, lo que puede dar lugar carga elevada del servidor.';
-$string['minmaxtouse_help'] = 'Esta opción se aplica para controlar el comportamiento de las calificaciones de un elemento calificable cuando cambiamos su valor mínimo y/o máximo. Poniendo un ejemplo: <br />
-Creamos una tarea con una calificación máxima de 10. La alumna Carla, recibe una puntuación de 5 sobre 10 (50%).  La calificación máxima de la tarea es cambiada a 20.<br />
-- Si tenemos marcado "No recalcula las calificaciones pero aparece en relación al nuevo máximo y/o mínimo", Carla tendrá una puntuación de 5 sobre 20 (25%).<br />
-- Si tenemos marcado "No recalcula calificaciones, aparece la calificación con el máximo y/o mínimo anterior hasta que esta se actualiza manualmente por el profesor", Carla tendrá una puntuación de 5 sobre 10 (50%) hasta que el profesor recalifique manualmente a Carla sobre 20.';
+$string['minmaxtouse_desc'] = 'Esta configuración determina si es que se usan las calificaciones mínimas y máximas iniciales de cuando se dio la calificación, o las calificaciones mínimas y máximas como se especificaron en las configuraciones para el elemento de calificación, al calcular la calificación mostrada en el Libro de Calificaciones. Se recomienda que esta configuración sea modificada fuera de las horas pico, porque todas las calificaciones serán re-calculadas, lo que podría resultar en una alta carga del servidor.';
+$string['minmaxtouse_help'] = 'Esta configuración determina si es que se usan las calificaciones mínimas y máximas iniciales de cuando se dio la calificación, o las calificaciones mínimas y máximas como se especificaron en las configuraciones para el elemento de calificación, al calcular la calificación mostrada en el Libro de Calificaciones.';
 $string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Nota: Algunas calificaciones han sido modificadas para solventar alguna inconsistencia en el libro de calificaciones causada por un cambio en las notas mínimas y  máximas usadas al calcular la calificación mostrada. Se recomienda que se comprueben y verifiquen estos cambios.';
 $string['minmaxupgradefixbutton'] = 'Resolver incoherencias';
 $string['minmaxupgradewarning'] = 'Nota: Se ha detectado una inconsistencia con algunas calificaciones debido a un cambio en las notas mínimas y máximas usadas al calcular la calificación mostrada en el libro de calificaciones. Se recomienda resolver esta inconsistencia haciendo clic en el botón inferior, aunque esto implicará un cambio en algunas calificaciones.';
-$string['missingitemtypeoreid'] = 'Falta la clave de matriz (itemtype o eid) del segundo parámetro de grade_edit_tree_column_select::get_item_cell ($item, $params)';
+$string['missingitemtypeoreid'] = 'Falta la clave de matriz (itemtype o eid)';
 $string['missingscale'] = 'La escala debe estar seleccionada';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Calificación';
-$string['modgrade_help'] = 'Seleccione el tipo de calificación utilizada para esta actividad. Si se elige \'escala\', puede elegir la escala en el menú desplegable. Si usa la calificación de puntos, puede ingresar la calificación máxima disponible para esta actividad.';
+$string['modgrade_help'] = 'Seleccione el tipo de calificación utilizada para esta actividad. Si se elige "escala", puede elegir la escala en el menú desplegable. Si usa la calificación de puntos, puede introducir la calificación máxima disponible para esta actividad.';
 $string['modgradecantchangegradetype'] = 'No puedes cambiar el tipo, ya que hay calificaciones para este elemento.';
 $string['modgradecantchangegradetypemsg'] = 'Algunas calificaciones ya se han asignado, por lo que el tipo de calificación no se puede cambiar. Si desea cambiar la calificación máxima, primero debe elegir si desea o no recalcular el valor de las calificaciones existentes.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Algunas calificaciones han sido asignadas, de modo que el tipo y la escala no pueden ser cambiados.';
@@ -561,7 +559,8 @@ $string['modgradetypenone'] = 'Ninguna';
 $string['modgradetypepoint'] = 'Puntuación';
 $string['modgradetypescale'] = 'Escala';
 $string['morethanmax'] = 'La calificación otorgada en {$a->itemname} a {$a->username} es mayor que el máximo permitido';
-$string['moveselectedto'] = 'Mover los ítems seleccionados a';
+$string['moveselectedto'] = 'Mover los elementos seleccionados a:';
+$string['movesitems'] = 'Mover elementos';
 $string['movingelement'] = 'Moviendo {$a}';
 $string['multfactor'] = 'Multiplicador';
 $string['multfactor_help'] = '<p>Es el factor por el que se multiplicarán todas las calificaciones de este elemento de calificación, con un valor máximo para la calificación del establecido como máximo. Por ejemplo, si el multiplicador es 2 y la calificación máxima es de 100,  todos los grados menores de 50 se multiplican por dos, y todos los grados 50 y superiores se establecerán en 100.</p>';
@@ -572,7 +571,6 @@ $string['mygrades_desc'] = 'Esta opción permite enlazar a un libro de calificac
 $string['mypreferences'] = 'Mis preferencias';
 $string['myreportpreferences'] = 'Mis preferencias de informe';
 $string['myself'] = 'Mi perfil';
-$string['navmethod'] = 'Método de navegación';
 $string['neverdeletehistory'] = 'Nunca eliminar historial';
 $string['newcategory'] = 'Categoría nueva';
 $string['newitem'] = 'Nuevo ítem de calificación';
@@ -591,6 +589,7 @@ $string['noidnumber'] = 'No número ID';
 $string['nolettergrade'] = 'No calificación por letra para';
 $string['nomode'] = 'NA';
 $string['nonnumericweight'] = 'Recibido valor no numérico para';
+$string['nonunhideableverbose'] = 'Para mostrar esta calificación, debe mostrar {$a->itemname}.';
 $string['nonunlockableverbose'] = 'Para desbloquear esta calificación, debe desbloquear {$a->itemname}.';
 $string['nonweightedpct'] = '% no ponderado';
 $string['nooutcome'] = 'No resultado';
@@ -678,7 +677,7 @@ $string['privacy:metadata:categorieshistory'] = 'Un registro de versiones anteri
 $string['privacy:metadata:filepurpose'] = 'Archivos de retroalimentación almacenados en el Libro de calificaciones para un usuario.';
 $string['privacy:metadata:grade_import_newitem'] = 'Tabla temporal para almacenar nuevos nombres de grade_items desde importación de calificación';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'Un código de lote único para identificar un lote de importaciones';
-$string['privacy:metadata:grade_import_newitem:importer'] = 'Usuario que ingresa los datos';
+$string['privacy:metadata:grade_import_newitem:importer'] = 'Usuario que importa los datos';
 $string['privacy:metadata:grade_import_newitem:itemname'] = 'Nuevo nombre de ítem de calificación';
 $string['privacy:metadata:grade_import_values'] = 'Tabla temporal para importar calificaciones';
 $string['privacy:metadata:grade_import_values:feedback'] = 'Retroalimentación de calificación';
@@ -697,7 +696,7 @@ $string['privacy:metadata:grades:timemodified'] = 'El momento cuando la califica
 $string['privacy:metadata:grades:userid'] = 'La ID del usuario de quien es la calificación';
 $string['privacy:metadata:grades:usermodified'] = 'La ID del usuario que modificó el registro por última vez';
 $string['privacy:metadata:gradeshistory'] = 'Un registro de las calificaciones anteriores';
-$string['privacy:metadata:history:loggeduser'] = 'La ID del usuario que estaba ingresado al sitio cuando ocurrió el versionado';
+$string['privacy:metadata:history:loggeduser'] = 'La ID del usuario que estaba autenticado en el sitio cuando ocurrió el versionado';
 $string['privacy:metadata:history:timemodified'] = 'El momento cuando ocurrió el versionado de calificación';
 $string['privacy:metadata:itemshistory'] = 'Un registro de versiones anteriores de ítems de calificación';
 $string['privacy:metadata:outcomes'] = 'Un registro de resultados';
@@ -758,8 +757,7 @@ $string['savechanges'] = 'Guardar cambios';
 $string['savepreferences'] = 'Guardar preferencias';
 $string['scaleconfirmdelete'] = '¿Está seguro de que desea eliminar la escala "{$a}"?';
 $string['scaledpct'] = 'Escalado %';
-$string['searchgroups'] = 'Buscar grupos';
-$string['searchusers'] = 'Buscar usuarios';
+$string['searchcollapsedcolumns'] = 'Buscar columnas colapsadas';
 $string['seeallcoursegrades'] = 'Ver todas las calificaciones del curso';
 $string['select'] = 'Seleccionar {$a}';
 $string['selectalloroneuser'] = 'Seleccionar todos o un usuario';
@@ -811,8 +809,8 @@ $string['showhiddenitems_help'] = 'Si estan totalmente ocultos los elementos de 
 * Sólo se oculta hasta - Los elementos de calificación con "ocultar hasta" la fecha prevista se ocultan por completo hasta la fecha fijada, después de lo cual todo el elemento se muestra
 * No mostrar - Los elementos de calificación ocultos grado están completamente ocultos';
 $string['showhiddenuntilonly'] = 'Ocultos sólo hasta';
-$string['showingaggregatesonly'] = 'Mostrar solo agregaciones';
-$string['showingfullmode'] = 'Mostrando vista completa';
+$string['showingaggregatesonly'] = 'Mostrando sólo totales';
+$string['showingfullmode'] = 'Mostrando calificaciones y totales';
 $string['showinggradesonly'] = 'Mostrando solo las calificaciones';
 $string['showlettergrade'] = 'Mostrar calificaciones con letras';
 $string['showlettergrade_help'] = 'Si mostrar una columna para calificaciones con letras.';
@@ -842,7 +840,6 @@ $string['showverbose'] = 'Mostrar {$a->category} {$a->itemmodule} {$a->itemname}
 $string['showweight'] = 'Mostrar pesos';
 $string['showweight_help'] = 'Si mostrar una columna para el peso de las calificaciones.';
 $string['simpleview'] = 'Vista simple';
-$string['singleview'] = 'Vista simple para {$a}';
 $string['sitewide'] = 'Todo el sitio';
 $string['sort'] = 'ordenar';
 $string['sortasc'] = 'Ordenar (ascendente)';
@@ -862,7 +859,6 @@ $string['submittedon'] = 'Enviado: {$a}';
 $string['sumofgradesupgradedgrades'] = 'Nota: El método de agregación "Suma de calificaciones" ha sido cambiado a "Natural" como parte de la actualización del portal. Debido a que se usó "Suma de calificaciones" previamente en este curso, se recomienda que revise este cambio en el libro de calificaciones.';
 $string['switchtofullview'] = 'Cambiar a vista completa';
 $string['switchtosimpleview'] = 'Cambiar a vista simple';
-$string['tabs'] = 'Tabuladores';
 $string['topcategory'] = 'Categoría superior';
 $string['total'] = 'Total';
 $string['totalweight100'] = 'El peso total es igual a 100';
@@ -909,6 +905,7 @@ $string['verbosescales'] = 'Escalas de texto';
 $string['verbosescales_help'] = 'La escala verbal usa palabras en lugar de números. Seleccione "sí" si desea importar las escalas numéricas y verbales. Seleccione "No" si solo desea importar las escalas numéricas.';
 $string['viewas'] = 'Ver informe como';
 $string['viewbygroup'] = 'Grupo';
+$string['viewfeedback'] = 'Ver retroalimentación';
 $string['viewgrades'] = 'Ver calificaciones';
 $string['weight'] = 'Ponderación';
 $string['weight_help'] = 'Un valor utilizado para determinar el valor relativo de elementos de calificación múltiple en un curso o categoría.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'zh_cn', version '4.1'.
+ * Strings for component 'format_tiles', language 'zh_cn', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -56,7 +56,6 @@ $string['filternumbers'] = '显示基于瓷砖编号的按钮';
 $string['filteroutcomes'] = '显示基于课程成果的按钮';
 $string['hidefromothers'] = '隐藏本节';
 $string['jsactivate'] = '打开动画导航';
-$string['jsdeactivate'] = '关闭动画导航';
 $string['picknewicon'] = '选取新图标';
 $string['picknewiconphoto'] = '选取新图标或背景图像';
 $string['pluginname'] = '瓷砖格式';

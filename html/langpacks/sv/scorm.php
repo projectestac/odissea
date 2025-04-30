@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'sv', version '4.1'.
+ * Strings for component 'scorm', language 'sv', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -121,8 +121,6 @@ $string['details'] = 'Detaljerad SCO spårning';
 $string['directories'] = 'Visa katalogens länkar';
 $string['disabled'] = 'Inaktiverat';
 $string['display'] = 'Visa i';
-$string['displayactivityname'] = 'Visa aktivitetsnamn';
-$string['displayactivityname_help'] = 'Om aktivitetsnamnet ska visas ovanför SCORM-spelaren.';
 $string['displayattemptstatus'] = 'Visa försöksstatus';
 $string['displayattemptstatus_help'] = 'Med den här inställningen kan en sammanfattning av användarnas försök visas i kursöversiktsblocket på översiktssidan och/eller SCORM-startsidan.';
 $string['displayattemptstatusdesc'] = 'Om en sammanfattning av användarens försök visas i kursöversiktsblocket på översiktssidan och/eller SCORM-startsidan.';
@@ -221,7 +219,6 @@ $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den socia
 $string['indicator:socialbreadthdef'] = 'SCORM social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av SCORM-aktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Info';
 $string['interactions'] = 'Interaktioner';
 $string['invalidactivity'] = 'SCORM-aktiviteten är inkorrekt';
 $string['invalidhacpsession'] = 'Ogiltig HACP-session';
@@ -354,7 +351,6 @@ $string['privacy:metadata:attempt'] = 'Försöksnumret';
 $string['privacy:metadata:scoes_track:element'] = 'Namnet på elementet som ska spåras';
 $string['privacy:metadata:scoes_track:value'] = 'Värdet på det angivna elementet';
 $string['privacy:metadata:scorm_aicc_session'] = 'Sessionsinformationen för AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'Spårad data från SCO:er som tillhör aktiviteten';
 $string['privacy:metadata:timemodified'] = 'Tidpunkt för då det spårade elementet senast ändrades';
 $string['privacy:metadata:userid'] = 'ID för användaren som använde SCORM-aktiviteten';
 $string['protectpackagedownloads'] = 'Skydda paketnedladdningar';

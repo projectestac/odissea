@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'pt', version '4.1'.
+ * Strings for component 'offlinequiz', language 'pt', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -64,7 +64,14 @@ $string['attemptsnum'] = 'Resultados: {$a}';
 $string['attemptsonly'] = 'Mostrar apenas os alunos com tentativas';
 $string['attendanceoverview'] = 'Presenças';
 $string['attendances'] = 'Presenças';
+$string['attendancesevaluationheadline'] = '2. Avaliação';
 $string['attendancesheadline'] = 'Presenças';
+$string['attendancespreparationheadline'] = '1. Preparação';
+$string['attendenceoverviewattwithoutresults'] = 'Apresentar sem resultados:';
+$string['attendenceoverviewattwithresults'] = 'Apresentar com resultados:';
+$string['attendenceoverviewcorrectionnecessary'] = 'Correção necessária (páginas):';
+$string['attendenceoverviewnoattwithoutresults'] = 'Ausente sem resultados:';
+$string['attendenceoverviewnoattwithresults'] = 'Ausente com resultados:';
 $string['backtopreview'] = 'Pré-visualização';
 $string['basicideasofofflinequiz'] = 'As ideias básicas na elaboração de um Teste Offline';
 $string['blackwhitethreshold'] = 'Limite de preto/branco';
@@ -96,7 +103,8 @@ $string['configpapergray'] = 'valor do branco do papel, que é usado para avalia
 $string['configshuffleanswers'] = 'Baralhar respostas';
 $string['configshufflequestions'] = 'Se ativar esta opção, a ordem das perguntas nos grupos do Teste Offline será aleatoriamente baralhada cada vez que recriar a pré-visualização no separador "Criar formulários".';
 $string['configshufflewithin'] = 'Se ativar esta opção, as partes que compõem as perguntas individuais serão aleatoriamente baralhadas quando os formulários das perguntas e das respostas forem criados.';
-$string['configuseridentification'] = 'A fórmula que representa a identificação do utilizador. Esta fórmula é usada para vincular os formulários das respostas com os utilizadores no sistema. O lado direito da equação deve indicar um campo na tabela dos utilizadores do Moodle.';
+$string['configuseridentification'] = 'A fórmula que representa a identificação do utilizador. Esta fórmula é usada para vincular os formulários das respostas com os utilizadores no sistema. O lado esquerdo da equação define o número de dígitos (apenas inteiros, até 10 dígitos). O lado direito da equação tem de indicar um campo na tabela dos utilizadores do Moodle  (por exemplo:  id, idnumber, phone1, etc.).
+Além disso, a equação também pode lidar com prefixos e sufixos que são adicionados aos dígitos inseridos (por exemplo, "a[7]=username" ou "b[5]cd=username"). Estas concatenações de strings e números denotam o valor do campo utilizado na tabela do utilizador, que é utilizado para identificação do utilizador.';
 $string['confirmremovequestion'] = 'Tem a certeza de que pretende apagar esta pergunta de \'{$a}\'?';
 $string['copy'] = 'Cópia';
 $string['copyright'] = '<strong>Aviso: Os textos nesta página são apenas para sua informação pessoal. Como qualquer outro texto, estão sob restrições de direitos de autor. Não tem permissão para copiá-los ou mostrá-los a outras pessoas!</strong>';
@@ -109,6 +117,20 @@ $string['correctheader'] = 'Correção necessária:';
 $string['correctionerrors'] = 'Formulários com erros de correção:&nbsp;';
 $string['correctionform'] = 'Correção';
 $string['correctionforms'] = 'Formulários da correção';
+$string['correctionheader'] = 'Correção';
+$string['correctionheader_help'] = '<p>Os formulários de resposta aqui apresentados precisam da sua atenção e devem ser corrigidos manualmente. A avaliação automática não é possível.</p>
+<u>Podem ocorrer os seguintes erros...</u>
+<ul>
+ <li><strong>Marcações imprecisas:</strong> algumas notas não puderam ser avaliadas.</li>
+ <li><strong>Número de grupo inválido:</strong> o número do grupo não pôde ser avaliado.</li>
+ <li><strong>Número de página inválido:</strong> o número da página não pôde ser avaliado.</li>
+ <li><strong>Não ajustado:</strong> O formulário de resposta foi digitalizado torto e não pode ser avaliado.</li>
+ <li><strong>Existe um resultado diferente:</strong> já existe um resultado avaliado com um número de grupo diferente.</li>
+ <li><strong>Páginas incompletas:</strong> A folha de respostas atual foi avaliada, mas falta pelo menos uma folha para completar a avaliação do participante identificado. (Ocorre apenas com formulários de resposta de várias páginas.)</li>
+ <li><strong>O resultado existe:</strong> já existe um resultado avaliado.</li>
+ <li><strong>Utilizador fora da disciplina:</strong> o participante identificado não está registado na disciplina de momento.</li>
+ <li><strong>O utilizador não existe:</strong> o participante identificado é desconhecido.</li>
+</ul>';
 $string['correctionoptionsheading'] = 'Opções da correção';
 $string['correctupdated'] = 'O formulário da correção para o grupo \'{$a}\' foi atualizado.';
 $string['couldnotgrab'] = 'Não foi possível gravar a imagem "{$a}"';
@@ -135,6 +157,10 @@ $string['decimalplaces'] = 'Casas decimais';
 $string['decimalplaces_help'] = 'Número de dígitos que devem ser mostrados depois do ponto decimal ao mostrar as notas do Teste Offline.';
 $string['defaultparticipantsusage'] = 'Registar presença';
 $string['defaultparticipantsusagedesc'] = 'Determina se as presenças devem ser registadas com listas de presença por predefinição.';
+$string['defaultpdffont'] = 'Tipo de letra predefinido do formulário';
+$string['defaultpdffont_help'] = 'O tipo de letra predefinido do Teste Offline será utilizada para os formulários. Poderá querer descarregar manualmente o pacote tcpdf e extrair o seu conteúdo em $CFG->dataroot/fonts/ para obter mais tipos de letra. Recomenda-se a utilização do FreeSerif como predefinição, uma vez que suporta a maioria dos caracteres. Consulte a página https://www.gnu.org/software/freefont/coverage.html para obter a lista completa de compatibilidade.';
+$string['defaultpdffontsize'] = 'Tamanho da letra predefinido';
+$string['defaultpdffontsize_help'] = 'O tamanho de letra predefinido que todos os formulários irão utilizar.';
 $string['deletelistcheck'] = 'Tem a certeza absoluta de que pretende apagar a lista selecionada e todos os seus participantes?';
 $string['deletepagecheck'] = 'Tem a certeza de que pretende apagar as páginas selecionadas?';
 $string['deletepagesafterselected'] = 'Eliminar quebras de página depois das perguntas selecionadas';
@@ -152,6 +178,9 @@ $string['difficultytitleb'] = 'Dificuldade B';
 $string['difficultytitlediff'] = 'Diferença';
 $string['disableimgnewlines'] = 'Desativar novas linhas antes e depois das imagens';
 $string['disableimgnewlines_help'] = 'Esta opção desativa novas linhas antes e depois das imagens nos formulário das perguntas em PDF. Aviso: pode levar a problemas de formatação.';
+$string['discriminationindex_info'] = 'Como o índice de discriminação calcula a previsão da pergunta entre notas boas e más, não pode ser calculado se:
+- não existem respostas diferentes dos alunos nesta pergunta
+- não há notas diferentes no teste';
 $string['displayoptions'] = 'Opções de visualização';
 $string['documentschanged'] = 'Uma ou mais perguntas no Teste Offline foram alteradas desde a criação dos documentos.<br>Os resultados futuros serão reavaliados automaticamente durante a avaliação para a versão atual da(s) pergunta(s) escolhida(s) aqui. Nos documentos ainda é mostrada a versão original da(s) pergunta(s).';
 $string['documentschangedwithresults'] = 'Uma ou mais perguntas no este Offline foram alteradas desde a criação dos documentos.<br>Os resultados existentes foram reavaliados automaticamente para a versão atual das perguntas escolhidas aqui. Nos documentos ainda é mostrada a versão original da(s) pergunta(s).';
@@ -216,6 +245,19 @@ $string['fileprefixform'] = 'form_perguntas';
 $string['fileprefixparticipants'] = 'lista_participantes';
 $string['filesizetolarge'] = 'Alguns dos seus ficheiros de imagem são muito grandes. As dimensões serão redimensionadas durante a interpretação. Por favor, tente digitalizar com uma resolução entre 200 e 300 dpi e no modo preto e branco. Isto irá acelerar a interpretação da próxima vez.';
 $string['filterbytags'] = 'Filtrar por etiquetas';
+$string['fontfamilycourier'] = 'Courier';
+$string['fontfamilyfreemono'] = '(Free-)Mono';
+$string['fontfamilyfreesans'] = '(Free-)Sans';
+$string['fontfamilyfreeserif'] = '(Free-)Serif (recomendado)';
+$string['fontfamilyhelvetica'] = 'Helvética';
+$string['fontfamilyhysmyeongjostdmedium'] = 'MyungJo Medium (Coreano)';
+$string['fontfamilykozgopromedium'] = 'Kozuka Gothic Pro (Sans-Serif Japão)';
+$string['fontfamilykozminproregular'] = 'Kozuka Mincho Pro (Serif Japão)';
+$string['fontfamilymsungstdlight'] = 'MSung Light (Chinês Trad.)';
+$string['fontfamilystsongstdlight'] = 'STSong Light (Chinês Simp.)';
+$string['fontfamilysymbol'] = 'Symbol';
+$string['fontfamilytimes'] = 'Times';
+$string['fontfamilyzapfdingbats'] = 'ZapfDingbats';
 $string['fontsize'] = 'Tamanho do tipo de letra';
 $string['forautoanalysis'] = 'Para análise automática dos dados';
 $string['formforcorrection'] = 'Formulário da correção do grupo \'{$a}\'';
@@ -248,6 +290,7 @@ $string['groupoutofrange'] = 'Grupo fora do intervalo e foi substituído pelo gr
 $string['hasresult'] = 'Já existe este resultado';
 $string['hotspotdeletiontask'] = 'Apagar hotspots';
 $string['html'] = 'HTML';
+$string['id'] = 'ID-Utilizador';
 $string['idnumber'] = 'N.º de identificação (ID)';
 $string['imagefile'] = 'Ficheiro de imagem';
 $string['imagenotfound'] = 'Ficheiro de imagem \'{$a}\' não foi encontrado';
@@ -361,8 +404,8 @@ $string['noresults'] = 'Não existem resultados.';
 $string['noreview'] = 'Não está autorizado a rever este Teste Offline';
 $string['noscannedpage'] = 'Não existe página digitalizada com o ID {$a}!';
 $string['notagselected'] = 'Nenhuma etiqueta selecionada';
+$string['notavailable'] = 'N/D';
 $string['nothingtodo'] = 'Nenhuma tarefa por realizar!';
-$string['notonattendancelist'] = 'Não consta da folha de presenças:';
 $string['notxtfile'] = 'Sem ficheiro TXT';
 $string['notyetgraded'] = 'Ainda não avaliadas';
 $string['nozipfile'] = 'Não existe ficheiro ZIP';
@@ -443,6 +486,8 @@ Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres es
 $string['partuncheckedwithoutresult'] = '{$a} participantes não verificados sem resultado';
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} participantes não verificados com resultado</a>';
 $string['pdfdeletedforgroup'] = 'Apagado o formulário do grupo \'{$a}\'';
+$string['pdffont'] = 'Tipo de letra do formulário';
+$string['pdffont_help'] = 'Aqui pode escolher um tipo de letra para todos os seus formulários PDF: formulários de resposta, formulários de correção, formulários de presenças. Tal como os formulários de perguntas, se escolher um formato PDF. A escolha também deve depender dos caracteres que utiliza nos seus formulários. Com os formatos DOCX e LATEX as folhas de perguntas não são afetadas por ele.';
 $string['pdfintro'] = 'Informação adicional';
 $string['pdfintro_help'] = 'Esta informação será impressa na primeira página das folhas das perguntas e deve conter informações gerais sobre como preencher o formulário das resposta.';
 $string['pdfintrotext'] = '<b>Como responder corretamente?</b><br/>Este formulário das respostas será digitalizado automaticamente. Por favor não dobre ou manche. Utilize uma caneta preta ou azul para marcar os campos. Se quiser corrigir uma resposta, deve preencher completamente a caixa errada com a cor utilizada. O campo será interpretado como uma caixa vazia.<br/>';
@@ -700,6 +745,7 @@ $string['statisticsplural'] = 'Estatísticas';
 $string['statisticsviewheader'] = 'Estatísticas';
 $string['statsoverview'] = 'Visão global das estatísticas';
 $string['studycode'] = 'Código';
+$string['subplugintype_offlinequiz'] = 'Relatório do Teste Offline';
 $string['subplugintype_offlinequiz_plural'] = 'Relatórios do Teste Offline';
 $string['tabattendances'] = 'Presenças';
 $string['tabattendancesoverview'] = 'Presenças';
@@ -709,7 +755,7 @@ $string['tabeditgrades'] = 'Notas';
 $string['tabeditgroupquestions'] = 'Perguntas';
 $string['tabeditparticipants'] = 'Participantes';
 $string['tabofflinequizcontent'] = 'Preparação';
-$string['tabofflinequizcorrect'] = 'Corrigir';
+$string['tabofflinequizcorrect'] = 'Correção';
 $string['tabofflinequizupload'] = 'Carregar';
 $string['tabparticipantlists'] = 'Folhas de presenças';
 $string['tabparticipantscorrect'] = 'Corrigir';
@@ -717,7 +763,6 @@ $string['tabparticipantsupload'] = 'Carregar';
 $string['tabpreview'] = 'Formulários';
 $string['tabquestionandanswerstats'] = 'Análise da pergunta e da resposta';
 $string['tabquestionstats'] = 'Análise da pergunta';
-$string['tabregrade'] = 'Reavaliação';
 $string['tabresults'] = 'Resultados';
 $string['tabresultsoverview'] = 'Resultados';
 $string['tabstatistics'] = 'Estatísticas';
@@ -730,6 +775,61 @@ $string['totalpointsx'] = 'Total de pontos: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total de {$a} perguntas na categoria.';
 $string['trigger'] = 'Limite inferior/superior';
 $string['tutorial'] = 'Tutorial para os Testes Offline';
+$string['tutorial:feedback:1:1'] = 'Não existem perguntas no formulário de resposta. O formulário de resposta contém apenas as caixas para assinalar as suas respostas.';
+$string['tutorial:feedback:1:2'] = 'A estrutura da folha de perguntas não tem de ser exatamente igual ao da captura de ecrã apresentada. É apenas para mostrar as perguntas e não é digitalizado após o teste.';
+$string['tutorial:feedback:2:1'] = 'Esta cruz está muito clara. É possível que não seja digitalizada corretamente.';
+$string['tutorial:feedback:2:2'] = 'Uma cruz com uma largura de linha normal será sempre interpretada corretamente.';
+$string['tutorial:feedback:2:3'] = 'Uma cruz grossa pode ser interpretada como tendo sido corrigida (preenchida completamente).';
+$string['tutorial:feedback:2:4'] = 'Uma caixa vazia nunca será interpretada como uma cruz.';
+$string['tutorial:feedback:2:5'] = 'Uma caixa completamente preenchida é interpretada exatamente da mesma forma que uma caixa vazia.';
+$string['tutorial:feedback:3:1'] = 'Apenas as cruzes nas caixas são digitalizadas. É por isso que é tão importante assinalar as caixas corretas abaixo do seu número de matrícula.';
+$string['tutorial:feedback:3:2'] = 'Apenas as cruzes nas caixas são digitalizadas. É por isso que é tão importante assinalar as caixas corretas abaixo do seu número de matrícula.';
+$string['tutorial:feedback:3:3'] = 'Apenas as cruzes nas caixas são digitalizadas. É por isso que é tão importante assinalar as caixas corretas abaixo do seu número de matrícula.';
+$string['tutorial:feedback:3:4'] = 'Apenas as cruzes nas caixas são digitalizadas. É por isso que é tão importante assinalar as caixas corretas abaixo do seu número de matrícula.';
+$string['tutorial:feedback:4:0'] = 'Cometeu um erro. O seu número de matrícula é {$a->correctusernumber}, mas assinalou {$a->selectedusernumber}';
+$string['tutorial:feedback:4:1'] = 'Concluiu este tutorial com sucesso.';
+$string['tutorial:feedback:correct'] = 'Correto!';
+$string['tutorial:feedback:wrong'] = 'Errado!';
+$string['tutorial:generatedusernumberwarning'] = 'Este é um número de matricula gerado, uma vez que a sua conta não tem!';
+$string['tutorial:header:1'] = '1. Folhas de perguntas e formulários de resposta';
+$string['tutorial:header:2'] = '2. Cruzes e correções';
+$string['tutorial:header:3'] = '3. Formulário de resposta';
+$string['tutorial:header:4'] = '4. Marcação do seu número de matrícula';
+$string['tutorial:header:5'] = 'Finalmente...';
+$string['tutorial:introduction:1'] = 'No teste receberá duas folhas: uma com as perguntas e outra com caixas para assinalar as suas respostas. As perguntas estão numeradas, assim como as caixas no formulário de resposta. Cada resposta está assinalada com uma letra. Após o teste, o formulário de resposta é digitalizado e interpretado por um computador.';
+$string['tutorial:introduction:2:1'] = 'As caixas da folha de respostas têm 5 milímetros de largura. As caixas pertencentes à mesma pergunta estão numa linha. O número da pergunta está do lado esquerdo e a letra correspondente ao item da resposta está no topo da coluna.';
+$string['tutorial:introduction:2:2'] = 'Utilize uma caneta preta ou azul para marcar os campos. Se pretender corrigir uma marcação, preencha a caixa completamente. Este campo será interpretado como uma caixa vazia.';
+$string['tutorial:introduction:3:1'] = 'O formulário de resposta contém um bloco para o seu nome (A), um bloco para o seu número de matrícula (B) e um bloco para as respostas (C). Preencha primeiro as caixas com o seu nome, assinatura e número de matrícula. Tenha em atenção que a máquina não tentará interpretar a sua caligrafia após o teste. Estas caixas são apenas para fins documentais.';
+$string['tutorial:introduction:3:2'] = 'Marque cuidadosamente as caixas do seu número de matrícula, uma vez que o computador necessitará destas marcações para identificar os seus resultados. Erros no bloco com o seu número de matrícula podem gerar atrasos e má interpretação.';
+$string['tutorial:introduction:4'] = 'No final deste tutorial é apresentado um pequeno teste onde poderá aprender a preencher corretamente as marcações do seu número de matrícula. Abaixo da caixa do seu número de matrícula existe uma matriz de caixas. Cada coluna representa um dígito do seu número de matrícula. As linhas marcam os números escritos no lado esquerdo e direito. Clique nas caixas para as marcar. Clique novamente para eliminar a sua marcação. Se pretender começar de novo, <a href="javascript: document.location.reload()">recarregue a página</a>.';
+$string['tutorial:introduction:5'] = 'Tenha em atenção que os formulários de resposta são interpretados por um computador. A máquina não consegue ler nada do que escreve ao lado das caixas. Para o programa de computador, tudo o que está fora das caixas é apenas algo que impede a máquina de interpretar corretamente o formulário. Evite colocar as marcas incorretamente.';
+$string['tutorial:option:1:1'] = 'Um formulário de resposta';
+$string['tutorial:option:1:2'] = 'Uma folha de perguntas';
+$string['tutorial:option:3:1'] = 'O sistema lê o seu nome utilizando um software de reconhecimento ótico de caracteres.';
+$string['tutorial:option:3:2'] = 'A sua assinatura é digitalizada através de software utilizado para impressões digitais em investigações forenses.';
+$string['tutorial:option:3:3'] = 'Apenas as cruzes nas caixas abaixo do seu número de matrícula são interpretadas.';
+$string['tutorial:option:3:4'] = 'O sistema lê o seu número de matrícula utilizando um software de reconhecimento ótico de caracteres.';
+$string['tutorial:question:1'] = 'Esta imagem mostra:';
+$string['tutorial:question:2'] = 'Qual será a marca que será interpretada como uma cruz com certeza?';
+$string['tutorial:question:3'] = 'Como é que o computador atribui o formulário de resposta à pessoa certa?';
+$string['tutorial:question:4'] = 'Número Matrícula';
+$string['tutorial:question:5'] = 'Boa sorte!';
+$string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; Quantos documentos de Teste Offline lhe serão fornecidos durante um teste?';
+$string['tutorial:questionsheet:1:1'] = 'a)&nbsp;&nbsp;0';
+$string['tutorial:questionsheet:1:2'] = 'b)&nbsp;&nbsp;1';
+$string['tutorial:questionsheet:1:3'] = 'c)&nbsp;&nbsp;2';
+$string['tutorial:questionsheet:1:4'] = 'd)&nbsp;&nbsp;3';
+$string['tutorial:questionsheet:1:5'] = 'e)&nbsp;&nbsp;4';
+$string['tutorial:questionsheet:1:marks'] = '(Pontos: 1)';
+$string['tutorial:questionsheet:2'] = '2)&nbsp;&nbsp; Que conteúdo está disponível num Teste Offline?';
+$string['tutorial:questionsheet:2:1'] = 'a)&nbsp;&nbsp;Perguntas';
+$string['tutorial:questionsheet:2:2'] = 'b)&nbsp;&nbsp;Opções de resposta';
+$string['tutorial:questionsheet:2:3'] = 'c)&nbsp;&nbsp;Respostas corretas';
+$string['tutorial:questionsheet:2:4'] = 'd)&nbsp;&nbsp;Mais informações';
+$string['tutorial:questionsheet:2:5'] = 'Nenhum deles';
+$string['tutorial:questionsheet:2:marks'] = '(Notas: 1)';
+$string['tutorial:title'] = 'Tutorial';
+$string['tutorial:title:navigation'] = 'Navegação';
 $string['type'] = 'Tipo';
 $string['uncheckparts'] = 'Assinalar participantes selecionados como ausente';
 $string['updatedsumgrades'] = 'O somatório de todas as notas do grupo {$a->letter} foi recalculado para {$a->grade}.';

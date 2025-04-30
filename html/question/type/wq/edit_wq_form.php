@@ -20,7 +20,6 @@ require_once($CFG->dirroot . '/question/type/edit_question_form.php');
 class qtype_wq_edit_form extends question_edit_form {
     protected $base;
 
-
     public function __construct($base, $submiturl, $question, $category, $contexts, $formeditable) {
         // TODO: remove all but $base function parameters.
 
@@ -56,19 +55,29 @@ class qtype_wq_edit_form extends question_edit_form {
         $mform->addElement('hidden', 'wirislang', current_language(), array('class' => 'wirislang'));
         $mform->setType('wirislang', PARAM_TEXT);
 
-        // TODO: Delete this if when all questions are wq!
         if (isset($this->question->wirisquestion)) {
             $program = $this->question->wirisquestion->serialize();
         } else {
-            if (!empty($this->question->id)) {
-                $wiris = $DB->get_record('qtype_wq', array('question' => $this->question->id));
-            }
-            if (!empty($wiris)) {
-                // Existing question.
-                $program = $wiris->xml;
-            } else {
+            // If the wirisquestion is not already loaded in memory, load it from the DB directly.
+            if (empty($this->question->id)) {
                 // New question.
                 $program = '<question/>';
+            } else {
+                // Existing question.
+                $wiris = $DB->get_record('qtype_wq', array('question' => $this->question->id));
+                if (empty($wiris)) {
+                    // Corrupted question.
+                    $corruptwarning =
+                        $mform->createElement(
+                            'html',
+                            '<div class="wiriscorruptquestionedit">' . get_string('corruptquestion_edit', 'qtype_wq') . '</div>'
+                        );
+                    $mform->insertElementBefore($corruptwarning, 'generalheader');
+                    $program = '<question/>';
+                } else {
+                    // Question found in the DB.
+                    $program = $wiris->xml;
+                }
             }
         }
 

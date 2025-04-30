@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ru', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ru', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Генерация ключа авт
 $string['autologinmintimebetweenreq'] = 'Минимальное время между запросами автоматического входа.';
 $string['autologinmintimebetweenreq_desc'] = 'Этот параметр определяет минимальное время между запросами автоматического входа в приложение. Вам следует установить для этого параметра низкое значение, если пользователей мобильного приложения часто просят ввести свои учетные данные при визуализации контента, встроенного с сайта.';
 $string['autologinnotallowedtoadmins'] = 'Автоматический вход запрещен администратором сайта.';
+$string['autologout'] = 'Принудительный автоматический выход пользователей';
+$string['autologout_desc'] = 'Из соображений безопасности вы можете включить автоматический выход из системы для пользователей, когда они покидают или закрывают приложение, или оно переходит в фоновый режим. Пользователям придется снова войти в систему, когда они вернутся в приложение.';
+$string['autologoutcustom'] = 'Через настраиваемое время после того, как пользователи покинут или закроют приложение.';
+$string['autologoutinmediate'] = 'Сразу после того, как пользователи покинут или закроют приложение';
+$string['autologouttime'] = 'Таймер автоматического выхода из системы';
 $string['cachedef_plugininfo'] = 'Здесь хранится список плагинов с мобильными дополнениями';
 $string['cachedef_subscriptiondata'] = 'Здесь хранится информация о подписке на приложение Moodle.';
 $string['clickheretolaunchtheapp'] = 'Нажмите здесь, если приложение не открылось автоматически.';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = 'Управление типами файлов';
 $string['minimumversion'] = 'Если указана версия приложения (3.8.0 или выше), всем пользователям, использующим более старую версию приложения, будет предложено обновить свое приложение, прежде чем им будет разрешен доступ к сайту.';
 $string['minimumversion_key'] = 'Требуемая минимальная версия приложения';
 $string['mobileapp'] = 'Мобильное приложение';
-$string['mobileappconnected'] = 'Мобильное приложение подключено';
 $string['mobileappearance'] = 'Мобильный вид';
 $string['mobileappenabled'] = 'На этом сайте разрешен доступ к мобильному приложению.<br /><a href="{$a}">
 Загрузить мобильное приложение</a>.';
@@ -118,7 +122,6 @@ $string['notificationsseemore'] = 'Примечание: Статистика и
 $string['notificationssentnotifications'] = 'Уведомления отправлены';
 $string['oauth2identityproviders'] = 'Поставщики удостоверений OAuth 2';
 $string['offlineuse'] = 'Автономное использование';
-$string['openusingembeddedbrowser'] = 'Открыть с помощью встроенного браузера';
 $string['pluginname'] = 'Инструменты приложения Moodle';
 $string['pluginnotenabledorconfigured'] = 'Не включен или не настроен плагин.';
 $string['privacy:metadata:core_userkey'] = 'Ключи пользователя, используемые для создания ключа автоматического входа для текущего пользователя.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_videojs', language 'it', version '4.1'.
+ * Strings for component 'media_videojs', language 'it', version '4.4'.
  *
  * @package     media_videojs
  * @category    string
@@ -30,8 +30,6 @@ $string['audioextensions'] = 'Estensioni file audio';
 $string['configaudiocssclass'] = 'La classe CSS da aggiungere all\'elemento &lt;audio&gt;.';
 $string['configaudioextensions'] = 'Un elenco separato da virgole contenente le estensioni audio supportate. Se disponibile, VideoJS tenterà di utilizzare il riproduttore nativo del browser, altrimenti utilizzerà le proprie funzionalità native.';
 $string['configlimitsize'] = 'Nel caso non siano specificate la larghezza e l\'altezza, il video verrà visualizzato con le dimensioni di default. Se disabilitato, il video verrà visualizzato alla dimensione massima possibile.';
-$string['configrtmp'] = 'Consente la gestione di collegamenti rtmp:// da parte del plugin, indipendentemente dalla abilitazione della impostazione della estensione File video (videoextensions), Per il corretto funzionamento è obbligatorio abilitare il fallback Flash,';
-$string['configuseflash'] = 'Utilizza il riproduttore Flash se il formato video non è supportato nativamente dal browser. Se abilitato, VideoJS verrà impiegato per tutte le estensioni di file specificate nell\'elenco soprastante senza verificare il browser. Da notare che Flash non è disponibili nei browser mobile e sempre meno utilizzato nei browser desktop.';
 $string['configvideocssclass'] = 'La classe CSS da aggiungere all\'elemento &lt;video&gt;. Ad esempio, la classe "vjs-big-play-centered" posizionerà il pulsante "Riproduci" al centro. Per i dettagli, inclusa la personalizzazione del riproduttore, visitare docs.videojs.com.';
 $string['configvideoextensions'] = 'Un elenco separato da virgole contenente le estensioni video supportate. Se disponibile, VideoJS tenterà di utilizzare il riproduttore nativo del browser.';
 $string['configyoutube'] = 'Utilizza VideoJS per riprodurre video YouTube. Da notare che le playlist YouTube non sono supportate da VideoJS';
@@ -39,8 +37,6 @@ $string['limitsize'] = 'Limita dimensioni';
 $string['pluginname'] = 'VideoJS player';
 $string['pluginname_help'] = 'Un wrapper JavaScript per i file video riprodotti nativamente dal browser. (i formati supportati dipendono dal browser).';
 $string['privacy:metadata'] = 'Il plugin riproduttore multimediale \'VideoJS player\' non memorizza dati personali.';
-$string['rtmp'] = 'Flussi RTMP';
-$string['useflash'] = 'Ripiega su Flash';
 $string['videocssclass'] = 'Classe CSS per il video';
 $string['videoextensions'] = 'Estensioni file video';
 $string['youtube'] = 'Video YouTube';

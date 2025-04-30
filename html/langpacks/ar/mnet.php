@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ar', version '4.1'.
+ * Strings for component 'mnet', language 'ar', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'أضف إلى سيطرة الوصول';
 $string['allhosts'] = 'كل المضيفين';
 $string['allhosts_no_options'] = 'لا تتاح الخيارات عند معاينة مضيفين متعددين';
 $string['allow'] = 'إسمح';
+$string['allowaccess'] = 'السماح بالوصول';
 $string['applicationtype'] = 'نوع التطبيق';
 $string['authfail_nosessionexists'] = 'التفويض فشل: جلسة شبكة مودل غير موجودة.';
 $string['authfail_sessiontimedout'] = 'التفويض فشل: جلسة شبكة مودل انتهت صلاحيتها.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'مهلة الـ 60 ثانية لحذف هذا ال
 $string['deleteuserrecord'] = 'SSO ACL: حذف سجل المستخدم \'{$a->user}\' من {$a->host}.';
 $string['deletewrongkeyvalue'] = 'حدث خطأ ما. إن لم تكن تحاول حذف مفتاح SSL لمخدمك، فمن الممكن أنك تتعرض إلى هجوم ضار. لم يتم اتخاذ أي إجراء.';
 $string['deny'] = 'أرفض';
+$string['denyaccess'] = 'منع الوصول';
 $string['description'] = 'الوصف';
 $string['duplicate_usernames'] = 'فشلنا في إنشاء فهرس في الأعمدة "mnethostid" و "username" في جدول المستخدم الخاص بك.<br />قد يحدث ذلك عندما يكون لديك <a href="{$a}" target="_blank">أسماء مستخدمين متكررة في جدولك</a>.<br />عملية الترقية يمكنها الاكتمال مع ذلك. أنقر على الزر أعلاه، لتظهر تعليمات عن كيفية إصلاح هذه المشكلة في نافذة جديدة. يمكنك النظر في ذلك عند انتهاء الترقية.<br />';
 $string['enabled_for_all'] = '(هذه الخدمة قد تم تمكينها لكل المضيفين).';

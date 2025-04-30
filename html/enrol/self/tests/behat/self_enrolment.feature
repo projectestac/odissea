@@ -39,7 +39,7 @@ Feature: Users can auto-enrol themself in courses where self enrolment is allowe
     And I log in as "student1"
     And I am on "Course 1" course homepage
     And I press "Enrol me"
-    Then I should see "Topic 1"
+    Then I should see "New section"
     And I should not see "Enrolment options"
 
   Scenario: Self-enrolment enabled requiring an enrolment key
@@ -53,7 +53,7 @@ Feature: Users can auto-enrol themself in courses where self enrolment is allowe
     And I set the following fields to these values:
       | Enrolment key | moodle_rules |
     And I press "Enrol me"
-    Then I should see "Topic 1"
+    Then I should see "New section"
     And I should not see "Enrolment options"
     And I should not see "Enrol me in this course"
 
@@ -80,7 +80,7 @@ Feature: Users can auto-enrol themself in courses where self enrolment is allowe
     And I set the following fields to these values:
       | Enrolment key | Test-groupenrolkey1 |
     And I press "Enrol me"
-    Then I should see "Topic 1"
+    Then I should see "New section"
     And I should not see "Enrolment options"
     And I should not see "Enrol me in this course"
     And I am on the "Course 1" course page logged in as student2
@@ -148,7 +148,7 @@ Feature: Users can auto-enrol themself in courses where self enrolment is allowe
     And I press "Enrol me"
     And I should see "You are enrolled in the course"
     And I am on the "C1" "course" page
-    And I navigate to "Unenrol me from C1" in current page administration
+    And I navigate to "Unenrol me from this course" in current page administration
     And I click on "Continue" "button" in the "Confirm" "dialogue"
     Then I should see "You are unenrolled from the course \"Course 1\""
 
@@ -166,4 +166,4 @@ Feature: Users can auto-enrol themself in courses where self enrolment is allowe
     And I am on "Course 1" course homepage
     And I navigate to "Enrol me in this course" in current page administration
     And I click on "Enrol me" "button"
-    Then I should see "Topic 1"
+    Then I should see "New section"

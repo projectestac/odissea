@@ -17,7 +17,7 @@
 $string['wq'] = 'Wiris Quizzes';
 $string['pluginname'] = 'Wiris Quizzes';
 $string['access_provider_enabled'] = 'Access control';
-$string['access_provider_enabled_help'] = 'If enabled ony authenticated users can access Wiris services.';
+$string['access_provider_enabled_help'] = 'If enabled, only authenticated users can access Wiris services.';
 $string['pluginnamesummary'] = '';
 $string['wq_help'] = 'Generic Wiris Quizzes Help';
 $string['editingwq'] = 'Editing a generic Wiris Quizzes question';
@@ -74,7 +74,7 @@ $string['proxyurl'] = 'PROXY_URL:';
 $string['cachedir'] = 'CACHE_DIR:';
 $string['serviceurl'] = 'SERVICE_URL:';
 $string['wqsummary'] = 'This adds a generic Wiris Quizzes question. Only for test purpose. It will be hide from here.';
-$string['wirisquestionincorrect'] = 'Sorry! The system can not generate one of the questions of the quiz. <br />Maybe there is a temporary connection problem right now. <br />Maybe the question algorithm has a bug, and fails sometimes. <br />Maybe it will fail always. <br />Don\'t panic... <br />You can retry the quiz, without penalty, just clicking Continue. <br />You can also tell the Teachers that there is an issue with the question titled: \'{$a->questionname}\'';
+$string['wirisquestionincorrect'] = 'Sorry! The system can not generate one of the questions of the quiz. Maybe there is a temporary connection problem right now, or there is a problem with how the question is set up. You can retry the quiz, without penalty, just clicking Continue. If this error persists, you can tell your teachers that there is an issue with the question {$a->questionname}.';
 $string['wirisquizzeserror'] = 'Sorry! There was an error in Wiris Quizzes.';
 $string['failedtoloadwirisquizzesfromxml'] = 'Failed to load Wiris Quizzes XML definition for question id';
 $string['connectionsettings'] = 'Connection settings';
@@ -108,3 +108,6 @@ $string['auxiliar_text'] = 'Write an optional reasoning for your answer:';
 
 $string['log_server_errors'] = 'Log server errors';
 $string['log_server_errors_help'] = 'Extensively log errors coming from the WirisQuizzes service and other errors occurred when processing WirisQuizzes questions to your server logs. This might cause an increase in the size of your log files but might help the Wiris team troubleshoot issues.';
+
+$string['corruptquestion_edit'] = 'WARNING: This question was corrupted and its mathematical data was lost from the database. We have tried to restore everything we could, but you need to rebuild the CalcMe algorithm if your question had one, and any custom input options and validation options. Contact with your administrator for further information.';
+$string['corruptquestion_attempt'] = 'The question {$a->questionname} was corrupted and could not be loaded. Please contact with your teacher so they can fix it.';

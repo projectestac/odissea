@@ -32,7 +32,7 @@ use core_user\reportbuilder\datasource\users;
  * @copyright   2022 Paul Holden <paulh@moodle.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class custom_report_columns_sorting_exporter_test extends advanced_testcase {
+final class custom_report_columns_sorting_exporter_test extends advanced_testcase {
 
     /**
      * Test exported data structure
@@ -69,7 +69,7 @@ class custom_report_columns_sorting_exporter_test extends advanced_testcase {
         $this->assertTrue($sortcolumnemail['sortenabled']);
         $this->assertEquals(1, $sortcolumnemail['sortorder']);
         $this->assertEquals(SORT_DESC, $sortcolumnemail['sortdirection']);
-        $this->assertEquals('Disable initial sorting for column Email address', $sortcolumnemail['sortenabledtitle']);
+        $this->assertEquals('Disable initial sorting for column \'Email address\'', $sortcolumnemail['sortenabledtitle']);
         $this->assertEquals('Sort column \'Email address\' ascending', $sortcolumnemail['sorticon']['title']);
 
         // Fullname column.
@@ -78,7 +78,7 @@ class custom_report_columns_sorting_exporter_test extends advanced_testcase {
         $this->assertFalse($sortcolumnfullname['sortenabled']);
         $this->assertEquals(2, $sortcolumnfullname['sortorder']);
         $this->assertEquals(SORT_ASC, $sortcolumnfullname['sortdirection']);
-        $this->assertEquals('Enable initial sorting for column Full name', $sortcolumnfullname['sortenabledtitle']);
+        $this->assertEquals('Enable initial sorting for column \'Full name\'', $sortcolumnfullname['sortenabledtitle']);
         $this->assertEquals('Sort column \'Full name\' descending', $sortcolumnfullname['sorticon']['title']);
 
         $this->assertNotEmpty($export->helpicon);

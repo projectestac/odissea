@@ -42,6 +42,7 @@
     </h2>
 {{/sitehome}}
 {{^sitehome}}
+    <div class="course-section-header d-flex" data-for="section_title" data-id="{{id}}" data-number="{{num}}">
         <div class="d-flex align-items-start position-relative">
             <a role="button"
                 data-toggle="collapse"
@@ -69,4 +70,31 @@
                 <span>{{{title}}}</span>
         </h3>
     </div>
+    <div data-region="sectionbadges" class="sectionbadges d-flex align-items-center">
+        {{$ core_courseformat/local/content/section/badges }}
+            {{> core_courseformat/local/content/section/badges }}
+        {{/ core_courseformat/local/content/section/badges }}
+        {{#restrictionlock}}<i class="icon fa fa-lock fa-fw " aria-hidden="true"></i>{{/restrictionlock}}
+    </div>
+        {{#collapsemenu}}
+            <div class="flex-fill d-flex justify-content-end mr-2 align-self-start mt-2">
+                <a
+                        id="collapsesections"
+                        class="section-collapsemenu"
+                        href="#"
+                        aria-expanded="true"
+                        role="button"
+                        data-toggle="toggleall"
+                >
+                    <span class="collapseall text-nowrap">{{#str}}collapseall{{/str}}</span>
+                    <span class="expandall text-nowrap">{{#str}}expandall{{/str}}</span>
+                </a>
+            </div>
+        {{/collapsemenu}}
+        {{#controlmenu}}
+            {{$ core_courseformat/local/content/section/controlmenu }}
+                {{> core_courseformat/local/content/section/controlmenu }}
+            {{/ core_courseformat/local/content/section/controlmenu }}
+        {{/controlmenu}}
+</div>
 {{/sitehome}}

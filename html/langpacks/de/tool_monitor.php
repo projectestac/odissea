@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'de', version '4.1'.
+ * Strings for component 'tool_monitor', language 'de', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Zu überwachender Bereich';
 $string['cachedef_eventsubscriptions'] = 'Speichert die Event-Benachrichtigungen für einzelne Kurse';
 $string['contactadmin'] = 'Zur Aktivierung nehmen Sie bitte Kontakt mit dem/der Administrator/in auf.';
 $string['core'] = 'Kern';
+$string['coresubsystem'] = 'Subsystem ({$a})';
 $string['currentsubscriptions'] = 'Ihre aktuellen Abonnements';
 $string['defaultmessagetemplate'] = 'Name der Regel: {rulename}<br />Beschreibung: {description}<br />Eventname: {eventname}';
 $string['deleterule'] = 'Regel löschen';
@@ -64,13 +65,16 @@ $string['managesubscriptions'] = 'Event-Beobachtung';
 $string['managesubscriptionslink'] = 'Sie können sich über Ereignisse der Seite {$a} benachrichtigen lassen.';
 $string['messageprovider:notification'] = 'Systemnachrichten über Regel-Abonnements';
 $string['messagetemplate'] = 'Benachrichtigungen';
-$string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zugesandt, wenn die Meldeschwelle erreicht wurde. Sie kann einen oder mehrere Platzhalter enthalten:
+$string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zugesendet, wenn die Meldeschwelle erreicht ist. Die Mitteilung kann einen oder mehrere Platzhalter enthalten:
 
 * Link zur Seite des Ereignisses {link}<br />
 * Link zum beobachteten Bereich {modulelink}<br />
+* Name des Kursmoduls {modulename}
 * Name der Regel {rulename}<br />
 * Beschreibung {description}<br />
-* Event/Ereignis {eventname}';
+* Event / Ereignis {eventname}
+* Vollständiger Name des Kurses {coursefullname}
+* Kurzname des Kurses {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instanz';
 $string['monitor:managerules'] = 'Regeln zur Event-Beobachtung verwalten';

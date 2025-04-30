@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ur', version '4.1'.
+ * Strings for component 'block_timeline', language 'ur', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'تمام';
 $string['ariadayfilter'] = 'ٹائم لائن آئٹمز کو فلٹر کریں';
 $string['ariadayfilteroption'] = '{$a} فلٹر کا اختیار';
 $string['ariaeventlistitem'] = '{$a->course} میں {$a->name} سرگرمی {$a->date} کو مقرر ہے';
-$string['ariaeventlistpagelimit'] = 'فی صفحہ {$a} سرگرمیاں دکھائیں';
-$string['ariaeventlistpaginationnavcourses'] = 'کورس {$a} صفحہ بندی کے لیے ٹائم لائن سرگرمیاں';
-$string['ariaeventlistpaginationnavdates'] = 'ٹائم لائن سرگرمیوں صفحہ بندی';
 $string['ariaviewselector'] = 'ٹائم لائن آئٹمز کو ترتیب دیں';
 $string['ariaviewselectoroption'] = '{$a} ترتیب دینے کا اختیار';
 $string['duedate'] = 'مقررہ تاریخ';

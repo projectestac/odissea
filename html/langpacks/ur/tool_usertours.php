@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ur', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ur', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -99,7 +99,6 @@ $string['pausetour'] = 'توقف';
 $string['placement'] = 'جگہ کا تعین';
 $string['placement_help'] = 'ایک مرحلہ ہدف کے اوپر، نیچے، بائیں یا دائیں رکھا جا سکتا ہے۔ اوپر یا نیچے کی سفارش کی جاتی ہے، کیونکہ یہ موبائل ڈسپلے کے لیے بہتر طور پر ایڈجسٹ ہوتے ہیں۔ اگر مرحلہ مخصوص جگہ پر کسی خاص صفحہ پر فٹ نہیں ہوتا ہے، تو اسے خود بخود کہیں اور رکھ دیا جائے گا۔';
 $string['pluginname'] = 'صارف کے دورے';
-$string['previousstep'] = 'پچھلا';
 $string['privacy:metadata:preference:completed'] = 'وہ وقت جب صارف نے آخری بار صارف کا دورہ مکمل کیا۔';
 $string['privacy:metadata:preference:requested'] = 'وہ وقت جب صارف نے آخری بار دستی طور پر صارف کے دورے کی درخواست کی۔';
 $string['privacy:request:preference:completed'] = 'آپ نے آخری بار "{$a->name}" صارف ٹور کو {$a->time} کو مکمل ہونے کے بطور نشان زد کیا تھا';

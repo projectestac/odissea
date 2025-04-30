@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'zh_cn', version '4.1'.
+ * Strings for component 'block_myprofile', language 'zh_cn', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = '显示内容区的设置';
 $string['display_address'] = '显示地址';
-$string['display_aim'] = '显示AIM';
 $string['display_city'] = '显示城市';
 $string['display_country'] = '显示国家';
 $string['display_currentlogin'] = '显示当前登录';
 $string['display_email'] = '显示email';
 $string['display_firstaccess'] = '显示第一次访问';
-$string['display_icq'] = '显示ICQ';
 $string['display_idnumber'] = '显示ID号码';
 $string['display_institution'] = '显示院系';
 $string['display_lastaccess'] = '显示最后一次访问';
 $string['display_lastip'] = '显示最后登录IP';
 $string['display_lastlogin'] = '显示上次登录时间';
-$string['display_msn'] = '显示MSN';
 $string['display_phone1'] = '显示电话号码';
 $string['display_phone2'] = '显示移动电话号码';
 $string['display_picture'] = '显示头像';
-$string['display_skype'] = '显示Skype';
-$string['display_yahoo'] = '显示Yahoo';
 $string['myprofile:addinstance'] = '新增已登录用户版块';
 $string['myprofile:myaddinstance'] = '在个人主页新增一个已登录用户版块';
 $string['myprofile_settings'] = '用户公开信息';

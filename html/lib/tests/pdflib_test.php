@@ -25,9 +25,9 @@ use TCPDF_STATIC;
  * @copyright  2021 Brendan Heywood (brendan@catalyst-au.net)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class pdflib_test extends \advanced_testcase {
+final class pdflib_test extends \advanced_testcase {
 
-    public function test_gettcpdf_producer() {
+    public function test_gettcpdf_producer(): void {
         global $CFG;
         require_once($CFG->libdir.'/pdflib.php');
 
@@ -37,7 +37,7 @@ class pdflib_test extends \advanced_testcase {
         $this->assertEquals('TCPDF (http://www.tcpdf.org)', $producer);
     }
 
-    public function test_qrcode() {
+    public function test_qrcode(): void {
         global $CFG;
         require_once($CFG->libdir.'/pdflib.php');
 
@@ -65,5 +65,36 @@ class pdflib_test extends \advanced_testcase {
 
         $this->assertGreaterThan(100000, strlen($res));
         $this->assertLessThan(120000, strlen($res));
+    }
+
+    /**
+     * Test get_export_fontlist function.
+     *
+     * @covers ::get_export_fontlist
+     *
+     * @return void
+     */
+    public function test_get_export_fontlist(): void {
+        global $CFG;
+        require_once($CFG->libdir.'/pdflib.php');
+
+        $this->resetAfterTest();
+
+        $pdf = new \pdf();
+        $fontlist = $pdf->get_export_fontlist();
+        $this->assertCount(1, $fontlist);
+        $this->assertArrayHasKey('freesans', $fontlist);
+
+        $CFG->pdfexportfont = [
+            'kozminproregular' => 'Kozmin Pro Regular',
+            'stsongstdlight' => 'STSong stdlight',
+            'invalidfont' => 'Invalid'
+        ];
+        $fontlist = $pdf->get_export_fontlist();
+        $this->assertCount(2, $fontlist);
+        $this->assertArrayNotHasKey('freesans', $fontlist);
+        $this->assertArrayHasKey('kozminproregular', $fontlist);
+        $this->assertArrayHasKey('stsongstdlight', $fontlist);
+        $this->assertArrayNotHasKey('invalidfont', $fontlist);
     }
 }

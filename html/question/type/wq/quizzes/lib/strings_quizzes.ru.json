@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "оценивать",
 		
-		"home_getting_started_welcome_header_text": "Представление WirisQuizzes 4.8.0: теперь с ответами с поддержкой рукописного ввода графиков",
+		"home_getting_started_welcome_header_text": "Представление WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "С радостью представляем новый тип ответов, который позволяет студентам отвечать на вопросы, используя рукописный ввод графиков. Чтобы получить дополнительную информацию об этой возможности, ознакомьтесь с нашими примечаниями к версии и документацией. Надеемся, вы и ваши студенты по достоинству оцените это нововведение в WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Примечания к версии",
         "home_getting_give_us_feedback_button_text": "Оставить отзыв",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Автоматизированное руководство для учащихся",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Вы включили автоматическую обратную связь по этому вопросу",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Определите тип задачи, которую вы создадите, и укажите необходимые поля. Обратная связь будет автоматически генерироваться нашим движком. Можно проверить, как ваши ученики будут просматривать обратную связь. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Дополнительная информация",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Закрыть панель",
+		"quizzes_studio_math_multistep_define_task_title" : "Определить задачу",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Ссылка на документацию",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Тип задачи",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Уравнение с одной переменной ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Основные операции ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Выберите поле из выпадающего меню. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Задача для решения ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Не пишите здесь правильный ответ, только уравнение для решения. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Случайные переменные ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Переменная уравнения ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Название переменной",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Укажите одну переменную для уравнения, которое будет решаться.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Неправильно",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Почти готово",
+		"quizzes_studio_multistep_correct_feedback_label": "Правильно",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Отправьте свои действия, чтобы увидеть автоматизированное руководство для учащихся",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Вы на правильном пути. Продолжайте!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Вы правильно ответили на этот вопрос.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Решите уравнение",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Выполните операции",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Тест",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Очистить",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Разрешенные символы умножения",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Подразумеваемое умножение",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Принято, что записанные последовательно элементы умножаются. Пример: 2y понимается как 2 умножить на y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Умножение с точкой",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Точка или звездочка обозначает умножение элементов. Пример: 2 · y понимается как 2 умножить на y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Умножение с крестиком",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Крестик обозначает·умножение·элементов. Пример: 2 × y понимается как 2 умножить на y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Задача для решения отсутствует",
+		"quizzes_studio_math_multistep_equation_variable_error": "Название переменной отсутствует",
+
+		"quizzes_studio_multistep_error_session_start_title": "Ошибка",
+		"quizzes_studio_multistep_error_session_start_message": "При загрузке задачи произошла ошибка. Повторите попытку или вернитесь назад, чтобы убедиться, что задача определена правильно.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Повторить попытку",
+		"quizzes_studio_multistep_error_session_start_go_back": "Назад",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Контакты",
+
+		"syntax_math_multistep": "Математика с автоматизированным руководством для учащихся"
 	}
 }
 

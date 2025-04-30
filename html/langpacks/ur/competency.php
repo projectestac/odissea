@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ur', version '4.1'.
+ * Strings for component 'competency', language 'ur', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'قابلیت کی درجہ بند�
 $string['evidence_manualoverrideinplan'] = 'قابلیت کی درجہ بندی سیکھنے کے پلان \'{$a}\' میں دستی طور پر سیٹ کی گئی تھی۔';
 $string['invalidevidencedesc'] = 'غلط ثبوت کی تفصیل';
 $string['invalidgrade'] = 'غلط درجہ بندی';
-$string['invalidpersistenterror'] = 'خرابی: {$a}';
 $string['invalidplan'] = 'غلط سیکھنے کا منصوبہ';
 $string['invalidtaxonomy'] = 'غلط درجہ بندی: {$a}';
 $string['invalidurl'] = 'URL درست نہیں ہے۔ یقینی بنائیں کہ یہ \'http://\' یا \'https://\' سے شروع ہوتا ہے۔';

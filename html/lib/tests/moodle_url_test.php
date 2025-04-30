@@ -16,6 +16,8 @@
 
 namespace core;
 
+use GuzzleHttp\Psr7\Uri;
+
 /**
  * Tests for moodle_url.
  *
@@ -24,11 +26,11 @@ namespace core;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers    \moodle_url
  */
-class moodle_url_test extends \advanced_testcase {
+final class moodle_url_test extends \advanced_testcase {
     /**
      * Test basic moodle_url construction.
      */
-    public function test_moodle_url_constructor() {
+    public function test_moodle_url_constructor(): void {
         global $CFG;
 
         $url = new \moodle_url('/index.php');
@@ -57,7 +59,7 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * Tests \moodle_url::get_path().
      */
-    public function test_moodle_url_get_path() {
+    public function test_moodle_url_get_path(): void {
         $url = new \moodle_url('http://www.example.org:447/my/file/is/here.txt?really=1');
         $this->assertSame('/my/file/is/here.txt', $url->get_path());
 
@@ -69,7 +71,7 @@ class moodle_url_test extends \advanced_testcase {
         $this->assertSame('/pluginfile.php', $url->get_path(false));
     }
 
-    public function test_moodle_url_round_trip() {
+    public function test_moodle_url_round_trip(): void {
         $strurl = 'http://moodle.org/course/view.php?id=5';
         $url = new \moodle_url($strurl);
         $this->assertSame($strurl, $url->out(false));
@@ -82,7 +84,7 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * Test Moodle URL objects created with a param with empty value.
      */
-    public function test_moodle_url_empty_param_values() {
+    public function test_moodle_url_empty_param_values(): void {
         $strurl = 'http://moodle.org/course/view.php?id=0';
         $url = new \moodle_url($strurl, array('id' => 0));
         $this->assertSame($strurl, $url->out(false));
@@ -107,7 +109,7 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * Test set good scheme on Moodle URL objects.
      */
-    public function test_moodle_url_set_good_scheme() {
+    public function test_moodle_url_set_good_scheme(): void {
         $url = new \moodle_url('http://moodle.org/foo/bar');
         $url->set_scheme('myscheme');
         $this->assertSame('myscheme://moodle.org/foo/bar', $url->out());
@@ -116,13 +118,13 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * Test set bad scheme on Moodle URL objects.
      */
-    public function test_moodle_url_set_bad_scheme() {
+    public function test_moodle_url_set_bad_scheme(): void {
         $url = new \moodle_url('http://moodle.org/foo/bar');
         $this->expectException(\coding_exception::class);
         $url->set_scheme('not a valid $ scheme');
     }
 
-    public function test_moodle_url_round_trip_array_params() {
+    public function test_moodle_url_round_trip_array_params(): void {
         $strurl = 'http://example.com/?a%5B1%5D=1&a%5B2%5D=2';
         $url = new \moodle_url($strurl);
         $this->assertSame($strurl, $url->out(false));
@@ -136,7 +138,7 @@ class moodle_url_test extends \advanced_testcase {
         $this->assertSame($strurl, $url->out(false));
     }
 
-    public function test_compare_url() {
+    public function test_compare_url(): void {
         $url1 = new \moodle_url('index.php', array('var1' => 1, 'var2' => 2));
         $url2 = new \moodle_url('index2.php', array('var1' => 1, 'var2' => 2, 'var3' => 3));
 
@@ -173,7 +175,7 @@ class moodle_url_test extends \advanced_testcase {
         $this->assertTrue($url1->compare($url2, URL_MATCH_EXACT));
     }
 
-    public function test_out_as_local_url() {
+    public function test_out_as_local_url(): void {
         global $CFG;
         // Test http url.
         $url1 = new \moodle_url('/lib/tests/weblib_test.php');
@@ -193,7 +195,7 @@ class moodle_url_test extends \advanced_testcase {
         $this->assertSame('/', $url3->out_as_local_url());
     }
 
-    public function test_out_as_local_url_error() {
+    public function test_out_as_local_url_error(): void {
         $url2 = new \moodle_url('http://www.google.com/lib/tests/weblib_test.php');
         $this->expectException(\coding_exception::class);
         $url2->out_as_local_url();
@@ -202,7 +204,7 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * You should get error with modified url
      */
-    public function test_modified_url_out_as_local_url_error() {
+    public function test_modified_url_out_as_local_url_error(): void {
         global $CFG;
 
         $modifiedurl = $CFG->wwwroot.'1';
@@ -214,13 +216,13 @@ class moodle_url_test extends \advanced_testcase {
     /**
      * Try get local url from external https url and you should get error
      */
-    public function test_https_out_as_local_url_error() {
+    public function test_https_out_as_local_url_error(): void {
         $url4 = new \moodle_url('https://www.google.com/lib/tests/weblib_test.php');
         $this->expectException(\coding_exception::class);
         $url4->out_as_local_url();
     }
 
-    public function test_moodle_url_get_scheme() {
+    public function test_moodle_url_get_scheme(): void {
         // Should return the scheme only.
         $url = new \moodle_url('http://www.example.org:447/my/file/is/here.txt?really=1');
         $this->assertSame('http', $url->get_scheme());
@@ -234,13 +236,13 @@ class moodle_url_test extends \advanced_testcase {
         $this->assertSame('', $url->get_scheme());
     }
 
-    public function test_moodle_url_get_host() {
+    public function test_moodle_url_get_host(): void {
         // Should return the host part only.
         $url = new \moodle_url('http://www.example.org:447/my/file/is/here.txt?really=1');
         $this->assertSame('www.example.org', $url->get_host());
     }
 
-    public function test_moodle_url_get_port() {
+    public function test_moodle_url_get_port(): void {
         // Should return the port if one provided.
         $url = new \moodle_url('http://www.example.org:447/my/file/is/here.txt?really=1');
         $this->assertSame(447, $url->get_port());
@@ -257,7 +259,7 @@ class moodle_url_test extends \advanced_testcase {
      * @param string $url URL with params to test.
      * @param array $expected The expected result.
      */
-    public function test_moodle_url_export_params_for_template(string $url, array $expected) :void {
+    public function test_moodle_url_export_params_for_template(string $url, array $expected): void {
         // Should return params in the URL.
         $moodleurl = new \moodle_url($url);
         $this->assertSame($expected, $moodleurl->export_params_for_template());
@@ -268,7 +270,7 @@ class moodle_url_test extends \advanced_testcase {
      *
      * @return array[] the array of test data.
      */
-    public function moodle_url_export_params_for_template_provider() :array {
+    public function moodle_url_export_params_for_template_provider(): array {
         $baseurl = "http://example.com";
         return [
                 'With indexed array params' => [
@@ -326,7 +328,7 @@ class moodle_url_test extends \advanced_testcase {
      * @param   array   $args Args to be provided to make_pluginfile_url
      * @param   string  $expected The expected result
      */
-    public function test_make_pluginfile_url($slashargs, $args, $expected) {
+    public function test_make_pluginfile_url($slashargs, $args, $expected): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -341,7 +343,7 @@ class moodle_url_test extends \advanced_testcase {
      *
      * @return  array[]
      */
-    public function make_pluginfile_url_provider() {
+    public static function make_pluginfile_url_provider(): array {
         $baseurl = "https://www.example.com/moodle/pluginfile.php";
         $tokenbaseurl = "https://www.example.com/moodle/tokenpluginfile.php";
         return [
@@ -397,6 +399,105 @@ class moodle_url_test extends \advanced_testcase {
                 ],
                 'expected' => "@{$tokenbaseurl}\?file=%2F1%2Fmod_forum%2Fposts%2F422%2Fmy%2Flocation%2Ffile.png&amp;token=[a-z0-9]*@",
             ],
+        ];
+    }
+
+    public function test_from_uri(): void {
+        global $CFG;
+
+        $uri = new Uri('http://www.example.org:447/my/file/is/here.txt?really=1');
+        $url = \moodle_url::from_uri($uri);
+        $this->assertSame('http://www.example.org:447/my/file/is/here.txt?really=1', $url->out(false));
+        $this->assertEquals(1, $url->param('really'));
+
+        $uri = new Uri('https://www.example.org/my/file/is/here.txt?really=1');
+        $url = \moodle_url::from_uri($uri);
+        $this->assertSame('https://www.example.org/my/file/is/here.txt?really=1', $url->out(false));
+        $this->assertEquals(1, $url->param('really'));
+
+        // Multiple params.
+        $uri = new Uri('https://www.example.org/my/file/is/here.txt?really=1&another=2&&more=3&moar=4');
+        $url = \moodle_url::from_uri($uri);
+        $this->assertSame('https://www.example.org/my/file/is/here.txt?really=1&another=2&more=3&moar=4', $url->out(false));
+        $this->assertEquals(1, $url->param('really'));
+        $this->assertEquals(2, $url->param('another'));
+        $this->assertEquals(3, $url->param('more'));
+        $this->assertEquals(4, $url->param('moar'));
+
+        // Anchors.
+        $uri = new Uri("{$CFG->wwwroot}/course/view/#section-1");
+        $url = \moodle_url::from_uri($uri);
+        $this->assertSame("{$CFG->wwwroot}/course/view/#section-1", $url->out(false));
+        $this->assertEmpty($url->params());
+    }
+
+    /**
+     * @dataProvider url_fragment_parsing_provider
+     */
+    public function test_url_fragment_parsing(string $fragment, string $expected): void {
+        $url = new \moodle_url('/index.php', null, $fragment);
+
+        // Test the encoded fragment.
+        $this->assertEquals(
+            "#{$expected}",
+            $url->get_encoded_anchor(),
+        );
+
+        // Test the value of ->raw_out() with escaping enabled.
+        $parts = parse_url($url->raw_out(true), PHP_URL_FRAGMENT);
+        $this->assertEquals($expected, parse_url($url->raw_out(true), PHP_URL_FRAGMENT));
+
+        // Test the value of ->raw_out() with escaping disabled.
+        $parts = parse_url($url->raw_out(false));
+        $this->assertEquals($expected, $parts['fragment']);
+
+        // Test the value of ->out() with escaping enabled.
+        $parts = parse_url($url->out(true));
+        $this->assertEquals($expected, $parts['fragment']);
+
+        // Test the value of ->out() with escaping disabled.
+        $parts = parse_url($url->out(false));
+        $this->assertEquals($expected, $parts['fragment']);
+    }
+
+    /**
+     * Data provider for url_fragment_parsing tests.
+     *
+     * @return array
+     */
+    public static function url_fragment_parsing_provider(): array {
+        return [
+            'Simple fragment' => ['test', 'test'],
+            // RFC 3986 allows the following characters in a fragment without them being encoded:
+            // pct-encoded: "%" HEXDIG HEXDIG
+            // unreserved:  ALPHA / DIGIT / "-" / "." / "_" / "~" /
+            // sub-delims:  "!" / "$" / "&" / "'" / "(" / ")" / "*" / "+" / "," / ";" / "=" / ":" / "@"
+            // fragment:    "/" / "?"
+            //
+            // These should not be encoded in the fragment unless they were already encoded.
+            'Fragment with RFC3986 characters' => [
+                'test-._~!$&\'()*+,;=:@/?',
+                'test-._~!$&\'()*+,;=:@/?',
+            ],
+            'Contains % without HEXDIG HEXDIG' => [
+                '%Percent',
+                '%25Percent',
+            ],
+            'Contains multiple %' => [
+                // % followed by a valid pct-encoded followed by two more %%.
+                '%%23%%',
+                '%25%23%25%25',
+            ],
+            'Fragment with already-encoded RFC3986 characters' => [
+                rawurlencode('test-._~!$&\'()*+,;=:@/?'),
+                rawurlencode('test-._~!$&\'()*+,;=:@/?'),
+            ],
+            'Fragment with encoded slashes' => ['test%2fwith%2fencoded%2fslashes', 'test%2fwith%2fencoded%2fslashes'],
+            'Fragment with encoded characters' => ['test%20with%20encoded%20characters', 'test%20with%20encoded%20characters'],
+
+            // The following are examples which _should_ become encoded.
+            'Spaces become encoded' => ['test with spaces', 'test%20with%20spaces'],
+            'Quotes become encoded' => ['test with "quotes"', 'test%20with%20%22quotes%22'],
         ];
     }
 }

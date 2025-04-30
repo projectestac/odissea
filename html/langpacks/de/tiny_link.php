@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_link', language 'de', version '4.1'.
+ * Strings for component 'tiny_link', language 'de', version '4.4'.
  *
  * @package     tiny_link
  * @category    string
@@ -31,7 +31,7 @@ $string['enterurl'] = 'URL eingeben';
 $string['helplinktext'] = 'Link';
 $string['link'] = 'Link';
 $string['openinnewwindow'] = 'In neuem Fenster öffnen';
-$string['pluginname'] = 'Tiny Link';
+$string['pluginname'] = 'Link';
 $string['privacy:metadata'] = 'Das Plugin \'Tiny Link\' speichert keine personenbezogenen Daten.';
 $string['texttodisplay'] = 'Text zum Anzeigen';
 $string['unlink'] = 'Link entfernen';

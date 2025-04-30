@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exacomp', language 'ar', version '4.1'.
+ * Strings for component 'block_exacomp', language 'ar', version '4.4'.
  *
  * @package     block_exacomp
  * @category    string
@@ -40,6 +40,7 @@ $string['block_exacomp_notifications_head'] = 'تفعيل الإشعارات';
 $string['blocking_event_create'] = 'إضافة إلى مخزن التخطيط';
 $string['blocking_event_title'] = 'العنوان';
 $string['comp_based'] = 'الفرز حسب الكفاءات';
+$string['data_imported_title'] = 'استيراد البيانات فورًا';
 $string['description'] = 'الوصف';
 $string['description_createtoken'] = 'منح صلاحيات إضافية للدور "المستخدم المصادق عليه" في: إدارة الموقع/المستخدمون/الصلاحيات/تعريف الأدوار
 4.1 إختر المستخدم المصادق عليه
@@ -51,6 +52,7 @@ $string['descriptor_add_category'] = 'إضافة مستوى صعوبة جديد'
 $string['descriptor_categories_description'] = 'إختر مستوى الصعوبة لمادة التعلم، الكفاءة، أو الكفاءة الفرعية هذه. يمكنك أيضًا إضافة مستوى صعوبة جديد أو الإعراض عن تحديد مستوى الصعوبة.';
 $string['descriptor_label'] = 'وصف الكفاءة';
 $string['deselect_all'] = 'إلغاء إختيار الكل';
+$string['doimport'] = 'استيراد شبكة الكفاءة';
 $string['donotleave_page_message'] = 'لديك تغييرات غير محفوظة في هذه الصفحة. هل ترغب بتركها وإهمال تغييراتك أم البقاء فيها؟';
 $string['eventscompetenceassigned'] = 'كفاءة تم تعيينها';
 $string['eventsexampleadded'] = 'مثال تمت إضافته إلى الجدول الأسبوعي';
@@ -65,6 +67,8 @@ $string['help_content'] = '<h1>فيديو المقدمة</h1>
 <iframe width="640" height="360" src="//www.youtube.com/embed/EL4Vb3_17EM?feature=player_embedded" frameborder="0" allowfullscreen></iframe>';
 $string['import_activate_scheduled_tasks'] = 'تفعيل هذه المهام';
 $string['import_category_mapping_column_xml'] = 'عنوان XML';
+$string['import_ics_loading_time'] = 'الاستيراد بدء';
+$string['import_source'] = 'مستورد من: {$a}';
 $string['importtask_all_subjects'] = 'كل المواضيع';
 $string['importtask_title'] = 'العنوان';
 $string['infolink'] = 'معلومات إضافية:';
@@ -81,6 +85,7 @@ $string['print'] = 'طباعة';
 $string['privacy:metadata:block_exacompcmassign:timemodified'] = 'الطابع الزمني';
 $string['privacy:metadata:block_exacompcmassign:userid'] = 'مُعرَّفات الطلاب';
 $string['privacy:metadata:block_exacompcrossstud_mm:studentid'] = 'الطالب';
+$string['privacy:metadata:block_exacompcrosssubjects:description'] = 'الوصف';
 $string['privacy:metadata:block_exacompdescrvisibility'] = 'واصفات الإظهار للمستخدمين';
 $string['privacy:metadata:block_exacompdescrvisibility:studentid'] = 'الطالب';
 $string['privacy:metadata:block_exacompexameval:additionalinfo'] = 'قيمة التقييم من المعلم (تستعمل في بعض أنواع التقييم)';
@@ -122,6 +127,7 @@ $string['settings_periods'] = 'إدخالات الجدول الزمني';
 $string['statistic'] = 'نظرة عامة';
 $string['statistic_type_descriptor'] = 'التغيير إلى الإحصائيات الوصفية';
 $string['student'] = 'الطالب';
+$string['tab_admin_import'] = 'الاستيراد/التصدير';
 $string['tab_competence_gridoverview'] = 'نظرة عامة';
 $string['tab_cross_subjects_overview'] = 'نظرة عامة';
 $string['teacher_first_configuration_step'] = 'أول خطوة لتهيئة المساق هي ضبط الإعدادات العامة فيه.';

@@ -109,6 +109,11 @@ if ($hassiteconfig) {
 $showreports = has_capability('moodle/site:config', \context_system::instance());
 $showreports = $showreports || (new registration())->toolkit_is_active();
 
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
+if (get_protected_agora()) {
+// ************ FI
+
 // Create a link to the main page in the reports menu.
 $ADMIN->add(
     'reports',
@@ -120,3 +125,8 @@ $ADMIN->add(
         $accessibilitydisabled || !$showreports
     )
 );
+
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
+}
+// ************ FI

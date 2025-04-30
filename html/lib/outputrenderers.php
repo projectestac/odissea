@@ -35,6 +35,14 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\di;
+use core\hook\manager as hook_manager;
+use core\hook\output\after_standard_main_region_html_generation;
+use core\hook\output\before_footer_html_generation;
+use core\hook\output\before_html_attributes;
+use core\hook\output\before_http_headers;
+use core\hook\output\before_standard_footer_html_generation;
+use core\hook\output\before_standard_top_of_body_html_generation;
 use core\output\named_templatable;
 use core_completion\cm_completion_details;
 use core_course\output\activity_information;
@@ -181,10 +189,10 @@ class renderer_base {
     public function render_from_template($templatename, $context) {
         $mustache = $this->get_mustache();
 
-        try {
+        if ($mustache->hasHelper('uniqid')) {
             // Grab a copy of the existing helper to be restored later.
             $uniqidhelper = $mustache->getHelper('uniqid');
-        } catch (Mustache_Exception_UnknownHelperException $e) {
+        } else {
             // Helper doesn't exist.
             $uniqidhelper = null;
         }
@@ -432,6 +440,15 @@ class renderer_base {
         return false;
     }
 
+
+    /**
+     * Returns the moodle page object.
+     *
+     * @return moodle_page
+     */
+    public function get_page(): moodle_page {
+        return $this->page;
+    }
 }
 
 
@@ -600,6 +617,12 @@ class core_renderer extends renderer_base {
     /** @var custom_menu_item language The language menu if created */
     protected $language = null;
 
+    /** @var string The current selector for an element being streamed into */
+    protected $currentselector = '';
+
+    /** @var string The current element tag which is being streamed into */
+    protected $currentelement = '';
+
     /**
      * Constructor
      *
@@ -646,26 +669,22 @@ class core_renderer extends renderer_base {
      */
     public function htmlattributes() {
         $return = get_html_lang(true);
-        $attributes = array();
+
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/before_html_attributes.php');
+
+        $hook = new before_html_attributes($this);
+
         if ($this->page->theme->doctype !== 'html5') {
-            $attributes['xmlns'] = 'http://www.w3.org/1999/xhtml';
+            $hook->add_attribute('xmlns', 'http://www.w3.org/1999/xhtml');
         }
 
-        // Give plugins an opportunity to add things like xml namespaces to the html element.
-        // This function should return an array of html attribute names => values.
-        $pluginswithfunction = get_plugins_with_function('add_htmlattributes', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $newattrs = $function();
-                unset($newattrs['dir']);
-                unset($newattrs['lang']);
-                unset($newattrs['xmlns']);
-                unset($newattrs['xml:lang']);
-                $attributes += $newattrs;
-            }
-        }
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
 
-        foreach ($attributes as $key => $val) {
+        foreach ($hook->get_attributes() as $key => $val) {
             $val = s($val);
             $return .= " $key=\"$val\"";
         }
@@ -692,33 +711,36 @@ class core_renderer extends renderer_base {
             $this->page->blocks->ensure_content_created($region, $this);
         }
 
-        $output = '';
-
         // Give plugins an opportunity to add any head elements. The callback
         // must always return a string containing valid html head content.
-        $pluginswithfunction = get_plugins_with_function('before_standard_html_head', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $output .= $function();
-            }
-        }
+
+        $hook = new \core\hook\output\before_standard_head_html_generation($this);
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
 
         // Allow a url_rewrite plugin to setup any dynamic head content.
         if (isset($CFG->urlrewriteclass) && !isset($CFG->upgraderunning)) {
             $class = $CFG->urlrewriteclass;
-            $output .= $class::html_head_setup();
+            $hook->add_html($class::html_head_setup());
         }
 
-        $output .= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />' . "\n";
-        $output .= '<meta name="keywords" content="moodle, ' . $this->page->title . '" />' . "\n";
+        $hook->add_html('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />' . "\n");
+        $hook->add_html('<meta name="keywords" content="moodle, ' . $this->page->title . '" />' . "\n");
         // This is only set by the {@link redirect()} method
-        $output .= $this->metarefreshtag;
+        $hook->add_html($this->metarefreshtag);
 
         // Check if a periodic refresh delay has been set and make sure we arn't
         // already meta refreshing
         if ($this->metarefreshtag=='' && $this->page->periodicrefreshdelay!==null) {
-            $output .= '<meta http-equiv="refresh" content="'.$this->page->periodicrefreshdelay.';url='.$this->page->url->out().'" />';
+            $hook->add_html(
+                html_writer::empty_tag('meta', [
+                    'http-equiv' => 'refresh',
+                    'content' => $this->page->periodicrefreshdelay . ';url='.$this->page->url->out(),
+                ]),
+            );
         }
+
+        $output = $hook->get_output();
 
         // Set up help link popups for all links with the helptooltip class
         $this->page->requires->js_init_call('M.util.help_popups.setup');
@@ -770,7 +792,9 @@ class core_renderer extends renderer_base {
             if (!isset($CFG->additionalhtmlhead)) {
                 $CFG->additionalhtmlhead = '';
             }
-            $CFG->additionalhtmlhead .= '<meta name="robots" content="noindex" />';
+            if (stripos($CFG->additionalhtmlhead, '<meta name="robots" content="noindex" />') === false) {
+                $CFG->additionalhtmlhead .= '<meta name="robots" content="noindex" />';
+            }
         }
 
         if (!empty($CFG->additionalhtmlhead)) {
@@ -800,22 +824,16 @@ class core_renderer extends renderer_base {
             $output .= "\n".$CFG->additionalhtmltopofbody;
         }
 
-        // Give subsystems an opportunity to inject extra html content. The callback
-        // must always return a string containing valid html.
-        foreach (\core_component::get_core_subsystems() as $name => $path) {
-            if ($path) {
-                $output .= component_callback($name, 'before_standard_top_of_body_html', [], '');
-            }
-        }
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/before_standard_top_of_body_html_generation.php');
 
-        // Give plugins an opportunity to inject extra html content. The callback
-        // must always return a string containing valid html.
-        $pluginswithfunction = get_plugins_with_function('before_standard_top_of_body_html', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $output .= $function();
-            }
-        }
+        // Allow components to add content to the top of the body.
+        $hook = new before_standard_top_of_body_html_generation($this, $output);
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
+        $output = $hook->get_output();
 
         $output .= $this->maintenance_warning();
 
@@ -838,7 +856,7 @@ class core_renderer extends renderer_base {
             $timeleft = $CFG->maintenance_later - time();
             // If timeleft less than 30 sec, set the class on block to error to highlight.
             $errorclass = ($timeleft < 30) ? 'alert-error alert-danger' : 'alert-warning';
-            $output .= $this->box_start($errorclass . ' moodle-has-zindex maintenancewarning m-3 alert');
+            $output .= $this->box_start($errorclass . ' moodle-has-zindex maintenancewarning alert');
             $a = new stdClass();
             $a->hour = (int)($timeleft / 3600);
             $a->min = (int)(floor($timeleft / 60) % 60);
@@ -866,29 +884,21 @@ class core_renderer extends renderer_base {
      * @return string HTML fragment.
      */
     public function standard_footer_html() {
-        global $CFG;
-
-        $output = '';
         if (during_initial_install()) {
             // Debugging info can not work before install is finished,
             // in any case we do not want any links during installation!
-            return $output;
+            return '';
         }
 
-        // Give plugins an opportunity to add any footer elements.
-        // The callback must always return a string containing valid html footer content.
-        $pluginswithfunction = get_plugins_with_function('standard_footer_html', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $output .= $function();
-            }
-        }
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/before_standard_footer_html_generation.php');
 
-        if (core_userfeedback::can_give_feedback()) {
-            $output .= html_writer::div(
-                $this->render_from_template('core/userfeedback_footer_link', ['url' => core_userfeedback::make_link()->out(false)])
-            );
-        }
+        $hook = new before_standard_footer_html_generation($this);
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
+        $output = $hook->get_output();
 
         if ($this->page->devicetypeinuse == 'legacy') {
             // The legacy theme is in use print the notification
@@ -975,6 +985,8 @@ class core_renderer extends renderer_base {
     /**
      * Returns information about an activity.
      *
+     * @deprecated since Moodle 4.3 MDL-78744
+     * @todo MDL-78926 This method will be deleted in Moodle 4.7
      * @param cm_info $cminfo The course module information.
      * @param cm_completion_details $completiondetails The completion details for this activity module.
      * @param array $activitydates The dates for this activity module.
@@ -982,6 +994,7 @@ class core_renderer extends renderer_base {
      * @throws coding_exception
      */
     public function activity_information(cm_info $cminfo, cm_completion_details $completiondetails, array $activitydates): string {
+        debugging('activity_information method is deprecated.', DEBUG_DEVELOPER);
         if (!$completiondetails->has_completion() && empty($activitydates)) {
             // No need to render the activity information when there's no completion info and activity dates to show.
             return '';
@@ -1107,29 +1120,23 @@ class core_renderer extends renderer_base {
      */
     public function standard_after_main_region_html() {
         global $CFG;
-        $output = '';
+
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/after_standard_main_region_html_generation.php');
+
+        $hook = new after_standard_main_region_html_generation($this);
+
         if ($this->page->pagelayout !== 'embedded' && !empty($CFG->additionalhtmlbottomofbody)) {
-            $output .= "\n".$CFG->additionalhtmlbottomofbody;
+            $hook->add_html("\n");
+            $hook->add_html($CFG->additionalhtmlbottomofbody);
         }
 
-        // Give subsystems an opportunity to inject extra html content. The callback
-        // must always return a string containing valid html.
-        foreach (\core_component::get_core_subsystems() as $name => $path) {
-            if ($path) {
-                $output .= component_callback($name, 'standard_after_main_region_html', [], '');
-            }
-        }
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
 
-        // Give plugins an opportunity to inject extra html content. The callback
-        // must always return a string containing valid html.
-        $pluginswithfunction = get_plugins_with_function('standard_after_main_region_html', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $output .= $function();
-            }
-        }
-
-        return $output;
+        return $hook->get_output();
     }
 
     /**
@@ -1364,14 +1371,14 @@ class core_renderer extends renderer_base {
     public function header() {
         global $USER, $CFG, $SESSION;
 
-        // Give plugins an opportunity touch things before the http headers are sent
-        // such as adding additional headers. The return value is ignored.
-        $pluginswithfunction = get_plugins_with_function('before_http_headers', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $function();
-            }
-        }
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/before_http_headers.php');
+
+        $hook = new before_http_headers($this);
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
 
         if (\core\session\manager::is_loggedinas()) {
             $this->page->add_body_class('userloggedinas');
@@ -1414,6 +1421,7 @@ class core_renderer extends renderer_base {
         if ($cutpos === false) {
             throw new coding_exception('page layout file ' . $layoutfile . ' does not contain the main content placeholder, please include "<?php echo $OUTPUT->main_content() ?>" in theme layout file.');
         }
+
         $header = substr($rendered, 0, $cutpos);
         $footer = substr($rendered, $cutpos + strlen($token));
 
@@ -1486,22 +1494,18 @@ class core_renderer extends renderer_base {
      * @return string HTML fragment
      */
     public function footer() {
-        global $CFG, $DB;
+        global $CFG, $DB, $PERF;
 
-        $output = '';
+        // Ensure that the callback exists prior to cache purge.
+        // This is a critical page path.
+        // TODO MDL-81134 Remove after LTS+1.
+        require_once(__DIR__ . '/classes/hook/output/before_footer_html_generation.php');
 
-        // Give plugins an opportunity to touch the page before JS is finalized.
-        $pluginswithfunction = get_plugins_with_function('before_footer', 'lib.php');
-        foreach ($pluginswithfunction as $plugins) {
-            foreach ($plugins as $function) {
-                $extrafooter = $function();
-                if (is_string($extrafooter)) {
-                    $output .= $extrafooter;
-                }
-            }
-        }
-
-        $output .= $this->container_end_all(true);
+        $hook = new before_footer_html_generation($this);
+        $hook->process_legacy_callbacks();
+        di::get(hook_manager::class)->dispatch($hook);
+        $hook->add_html($this->container_end_all(true));
+        $output = $hook->get_output();
 
         $footer = $this->opencontainers->pop('header/footer');
 
@@ -1511,10 +1515,22 @@ class core_renderer extends renderer_base {
 
         // Provide some performance info if required
         $performanceinfo = '';
-        if ((defined('MDL_PERF') && MDL_PERF) || (!empty($CFG->perfdebug) && $CFG->perfdebug > 7)) {
-            $perf = get_performance_info();
-            if ((defined('MDL_PERFTOFOOT') && MDL_PERFTOFOOT) || debugging() || $CFG->perfdebug > 7) {
-                $performanceinfo = $perf['html'];
+        if (MDL_PERF || (!empty($CFG->perfdebug) && $CFG->perfdebug > 7)) {
+            if (MDL_PERFTOFOOT || debugging() || (!empty($CFG->perfdebug) && $CFG->perfdebug > 7)) {
+                if (NO_OUTPUT_BUFFERING) {
+                    // If the output buffer was off then we render a placeholder and stream the
+                    // performance debugging into it at the very end in the shutdown handler.
+                    $PERF->perfdebugdeferred = true;
+                    $performanceinfo .= html_writer::tag('div',
+                        get_string('perfdebugdeferred', 'admin'),
+                        [
+                            'id' => 'perfdebugfooter',
+                            'style' => 'min-height: 30em',
+                        ]);
+                } else {
+                    $perf = get_performance_info();
+                    $performanceinfo = $perf['html'];
+                }
             }
         }
 
@@ -1534,6 +1550,20 @@ class core_renderer extends renderer_base {
         $footer = str_replace($this->unique_end_html_token, $this->page->requires->get_end_code(), $footer);
 
         $this->page->set_state(moodle_page::STATE_DONE);
+
+        // Here we remove the closing body and html tags and store them to be added back
+        // in the shutdown handler so we can have valid html with streaming script tags
+        // which are rendered after the visible footer.
+        $tags = '';
+        preg_match('#\<\/body>#i', $footer, $matches);
+        $tags .= $matches[0];
+        $footer = str_replace($matches[0], '', $footer);
+
+        preg_match('#\<\/html>#i', $footer, $matches);
+        $tags .= $matches[0];
+        $footer = str_replace($matches[0], '', $footer);
+
+        $CFG->closingtags = $tags;
 
         return $output . $footer;
     }
@@ -1676,6 +1706,30 @@ class core_renderer extends renderer_base {
     }
 
     /**
+     * Get the course pattern image URL.
+     *
+     * @param context_course $context course context object
+     * @return string URL of the course pattern image in SVG format
+     */
+    public function get_generated_url_for_course(context_course $context): string {
+        return moodle_url::make_pluginfile_url($context->id, 'course', 'generated', null, '/', 'course.svg')->out();
+    }
+
+    /**
+     * Get the course pattern in SVG format to show on a course card.
+     *
+     * @param int $id id to use when generating the pattern
+     * @return string SVG file contents
+     */
+    public function get_generated_svg_for_id(int $id): string {
+        $color = $this->get_generated_color_for_id($id);
+        $pattern = new \core_geopattern();
+        $pattern->setColor($color);
+        $pattern->patternbyid($id);
+        return $pattern->toSVG();
+    }
+
+    /**
      * Get the course color to show on a course card.
      *
      * @param int $id Id to use when generating the color.
@@ -1716,7 +1770,6 @@ class core_renderer extends renderer_base {
      * @return string HTML fragment.
      */
     public function block_controls($actions, $blockid = null) {
-        global $CFG;
         if (empty($actions)) {
             return '';
         }
@@ -1724,7 +1777,6 @@ class core_renderer extends renderer_base {
         if ($blockid !== null) {
             $menu->set_owner_selector('#'.$blockid);
         }
-        $menu->set_constraint('.block-region');
         $menu->attributes['class'] .= ' block-control-actions commands';
         return $this->render($menu);
     }
@@ -1780,9 +1832,62 @@ class core_renderer extends renderer_base {
     }
 
     /**
+     * Renders a full check API result including summary and details
+     *
+     * @param core\check\check $check the check that was run to get details from
+     * @param core\check\result $result the result of a check
+     * @param bool $includedetails if true, details are included as well
+     * @return string rendered html
+     */
+    protected function render_check_full_result(core\check\check $check, core\check\result $result, bool $includedetails): string {
+        // Initially render just badge itself.
+        $renderedresult = $this->render_from_template($result->get_template_name(), $result->export_for_template($this));
+
+        // Add summary.
+        $renderedresult .= ' ' . $result->get_summary();
+
+        // Wrap in notificaiton.
+        $notificationmap = [
+            \core\check\result::NA => \core\output\notification::NOTIFY_INFO,
+            \core\check\result::OK => \core\output\notification::NOTIFY_SUCCESS,
+            \core\check\result::INFO => \core\output\notification::NOTIFY_INFO,
+            \core\check\result::UNKNOWN => \core\output\notification::NOTIFY_WARNING,
+            \core\check\result::WARNING => \core\output\notification::NOTIFY_WARNING,
+            \core\check\result::ERROR => \core\output\notification::NOTIFY_ERROR,
+            \core\check\result::CRITICAL => \core\output\notification::NOTIFY_ERROR,
+        ];
+
+        // Get type, or default to error.
+        $notificationtype = $notificationmap[$result->get_status()] ?? \core\output\notification::NOTIFY_ERROR;
+        $renderedresult = $this->notification($renderedresult, $notificationtype, false);
+
+        // If adding details, add on new line.
+        if ($includedetails) {
+            $renderedresult .= $result->get_details();
+        }
+
+        // Add the action link.
+        $renderedresult .= $this->render_action_link($check->get_action_link());
+
+        return $renderedresult;
+    }
+
+    /**
+     * Renders a full check API result including summary and details
+     *
+     * @param core\check\check $check the check that was run to get details from
+     * @param core\check\result $result the result of a check
+     * @param bool $includedetails if details should be included
+     * @return string HTML fragment
+     */
+    public function check_full_result(core\check\check $check, core\check\result $result, bool $includedetails = false) {
+        return $this->render_check_full_result($check, $result, $includedetails);
+    }
+
+    /**
      * Renders a Check API result
      *
-     * @param result $result
+     * @param core\check\result $result
      * @return string HTML fragment
      */
     protected function render_check_result(core\check\result $result) {
@@ -1792,7 +1897,7 @@ class core_renderer extends renderer_base {
     /**
      * Renders a Check API result
      *
-     * @param result $result
+     * @param core\check\result $result
      * @return string HTML fragment
      */
     public function check_result(core\check\result $result) {
@@ -1812,7 +1917,7 @@ class core_renderer extends renderer_base {
     /**
      * Renders a primary action_menu_filler item.
      *
-     * @param action_menu_link_filler $action
+     * @param action_menu_filler $action
      * @return string HTML fragment
      */
     protected function render_action_menu_filler(action_menu_filler $action) {
@@ -1862,7 +1967,7 @@ class core_renderer extends renderer_base {
         $context->skiptitle = strip_tags($bc->title);
         $context->showskiplink = !empty($context->skiptitle);
         $context->arialabel = $bc->arialabel;
-        $context->ariarole = !empty($bc->attributes['role']) ? $bc->attributes['role'] : 'complementary';
+        $context->ariarole = !empty($bc->attributes['role']) ? $bc->attributes['role'] : '';
         $context->class = $bc->attributes['class'];
         $context->type = $bc->attributes['data-block'];
         $context->title = $bc->title;
@@ -1890,7 +1995,7 @@ class core_renderer extends renderer_base {
         foreach ($items as $key => $string) {
             $item = html_writer::start_tag('li', array('class' => 'r' . $row));
             if (!empty($icons[$key])) { //test if the content has an assigned icon
-                $item .= html_writer::tag('div', $icons[$key], array('class' => 'icon column c0'));
+                $item .= html_writer::tag('div', $icons[$key], ['class' => 'column c0 icon-size-3']);
             }
             $item .= html_writer::tag('div', $string, array('class' => 'column c1'));
             $item .= html_writer::end_tag('li');
@@ -2025,13 +2130,18 @@ class core_renderer extends renderer_base {
             $attributes['class'] = 'action-icon';
         }
 
-        $icon = $this->render($pixicon);
-
         if ($linktext) {
             $text = $pixicon->attributes['alt'];
+            // Set the icon as a decorative image if we're displaying the action text.
+            // Otherwise, the action name will be read twice by assistive technologies.
+            $pixicon->attributes['alt'] = '';
+            $pixicon->attributes['title'] = '';
+            $pixicon->attributes['aria-hidden'] = 'true';
         } else {
             $text = '';
         }
+
+        $icon = $this->render($pixicon);
 
         return $this->action_link($url, $text.$icon, $action, $attributes);
     }
@@ -2055,12 +2165,16 @@ class core_renderer extends renderer_base {
         $displayoptions['cancelstr'] = $displayoptions['cancelstr'] ?? get_string('cancel');
 
         if ($continue instanceof single_button) {
-            // ok
-            $continue->primary = true;
+            // Continue button should be primary if set to secondary type as it is the fefault.
+            if ($continue->type === single_button::BUTTON_SECONDARY) {
+                $continue->type = single_button::BUTTON_PRIMARY;
+            }
         } else if (is_string($continue)) {
-            $continue = new single_button(new moodle_url($continue), $displayoptions['continuestr'], 'post', true);
+            $continue = new single_button(new moodle_url($continue), $displayoptions['continuestr'], 'post',
+                $displayoptions['type'] ?? single_button::BUTTON_PRIMARY);
         } else if ($continue instanceof moodle_url) {
-            $continue = new single_button($continue, $displayoptions['continuestr'], 'post', true);
+            $continue = new single_button($continue, $displayoptions['continuestr'], 'post',
+                $displayoptions['type'] ?? single_button::BUTTON_PRIMARY);
         } else {
             throw new coding_exception('The continue param to $OUTPUT->confirm() must be either a URL (string/moodle_url) or a single_button instance.');
         }
@@ -2266,7 +2380,7 @@ class core_renderer extends renderer_base {
     public function doc_link($path, $text = '', $forcepopup = false, array $attributes = []) {
         global $CFG;
 
-        $icon = $this->pix_icon('book', '', 'moodle', array('class' => 'iconhelp icon-pre', 'role' => 'presentation'));
+        $icon = $this->pix_icon('book', '', 'moodle', array('class' => 'iconhelp icon-pre'));
 
         $attributes['href'] = new moodle_url(get_docs_url($path));
         $newwindowicon = '';
@@ -2495,13 +2609,15 @@ class core_renderer extends renderer_base {
      * @param string $identifier The keyword that defines a help page
      * @param string $component component name
      * @param string|bool $linktext true means use $title as link text, string means link text value
+     * @param string|object|array|int $a An object, string or number that can be used
+     *      within translation strings
      * @return string HTML fragment
      */
-    public function help_icon($identifier, $component = 'moodle', $linktext = '') {
-        $icon = new help_icon($identifier, $component);
+    public function help_icon($identifier, $component = 'moodle', $linktext = '', $a = null) {
+        $icon = new help_icon($identifier, $component, $a);
         $icon->diag_strings();
         if ($linktext === true) {
-            $icon->linktext = get_string($icon->identifier, $icon->component);
+            $icon->linktext = get_string($icon->identifier, $icon->component, $a);
         } else if (!empty($linktext)) {
             $icon->linktext = $linktext;
         }
@@ -2669,10 +2785,16 @@ class core_renderer extends renderer_base {
         // Get the image html output first, auto generated based on initials if one isn't already set.
         if ($user->picture == 0 && empty($CFG->enablegravatar) && !defined('BEHAT_SITE_RUNNING')) {
             $initials = \core_user::get_initials($user);
+            $fullname = fullname($userpicture->user, $canviewfullnames);
             // Don't modify in corner cases where neither the firstname nor the lastname appears.
             $output = html_writer::tag(
                 'span', $initials,
-                ['class' => 'userinitials size-' . $size]
+                [
+                    'class' => 'userinitials size-' . $size,
+                    'title' => $fullname,
+                    'aria-label' => $fullname,
+                    'role' => 'img',
+                ]
             );
         } else {
             $output = html_writer::empty_tag('img', $attributes);
@@ -2716,26 +2838,10 @@ class core_renderer extends renderer_base {
     }
 
     /**
-     * Internal implementation of file tree viewer items rendering.
-     *
-     * @param array $dir
-     * @return string
+     * @deprecated since Moodle 4.3
      */
-    public function htmllize_file_tree($dir) {
-        if (empty($dir['subdirs']) and empty($dir['files'])) {
-            return '';
-        }
-        $result = '<ul>';
-        foreach ($dir['subdirs'] as $subdir) {
-            $result .= '<li>'.s($subdir['dirname']).' '.$this->htmllize_file_tree($subdir).'</li>';
-        }
-        foreach ($dir['files'] as $file) {
-            $filename = $file->get_filename();
-            $result .= '<li><span>'.html_writer::link($file->fileurl, $filename).'</span></li>';
-        }
-        $result .= '</ul>';
-
-        return $result;
+    public function htmllize_file_tree() {
+        throw new coding_exception('This function is deprecated and no longer relevant.');
     }
 
     /**
@@ -2748,7 +2854,7 @@ class core_renderer extends renderer_base {
      * Theme developers: DO NOT OVERRIDE! Please override function
      * {@link core_renderer::render_file_picker()} instead.
      *
-     * @param array $options associative array with file manager options
+     * @param stdClass $options file manager options
      *   options are:
      *       maxbytes=>-1,
      *       itemid=>0,
@@ -2855,7 +2961,7 @@ EOD;
      *
      * @param moodle_url $url The URL + params to send through when clicking the button
      * @param string $method
-     * @return string HTML the button
+     * @return ?string HTML the button
      */
     public function edit_button(moodle_url $url, string $method = 'post') {
 
@@ -2877,7 +2983,7 @@ EOD;
     /**
      * Create a navbar switch for toggling editing mode.
      *
-     * @return string Html containing the edit switch
+     * @return ?string Html containing the edit switch
      */
     public function edit_switch() {
         if ($this->page->user_allowed_editing()) {
@@ -3144,7 +3250,7 @@ EOD;
         if (!($url instanceof moodle_url)) {
             $url = new moodle_url($url);
         }
-        $button = new single_button($url, get_string('continue'), 'get', true);
+        $button = new single_button($url, get_string('continue'), 'get', single_button::BUTTON_PRIMARY);
         $button->class = 'continuebutton';
 
         return $this->render($button);
@@ -3189,10 +3295,11 @@ EOD;
      * @param string $urlvar URL parameter name for this initial.
      * @param string $url URL object.
      * @param array $alpha of letters in the alphabet.
+     * @param bool $minirender Return a trimmed down view of the initials bar.
      * @return string the HTML to output.
      */
-    public function initials_bar($current, $class, $title, $urlvar, $url, $alpha = null) {
-        $ib = new initials_bar($current, $class, $title, $urlvar, $url, $alpha);
+    public function initials_bar($current, $class, $title, $urlvar, $url, $alpha = null, bool $minirender = false) {
+        $ib = new initials_bar($current, $class, $title, $urlvar, $url, $alpha, $minirender);
         return $this->render($ib);
     }
 
@@ -3271,15 +3378,46 @@ EOD;
     }
 
     /**
+     * Outputs a paragraph.
+     *
+     * @param string $contents The contents of the paragraph
+     * @param string|null $classes A space-separated list of CSS classes
+     * @param string|null $id An optional ID
+     * @return string the HTML to output.
+     */
+    public function paragraph(string $contents, ?string $classes = null, ?string $id = null): string {
+        return html_writer::tag(
+            'p',
+            $contents,
+            ['id' => $id, 'class' => renderer_base::prepare_classes($classes)]
+        );
+    }
+
+    /**
+     * Outputs a screen reader only inline text.
+     *
+     * @param string $contents The contents of the paragraph
+     * @return string the HTML to output.
+     */
+    public function sr_text(string $contents): string {
+        return html_writer::tag(
+            'span',
+            $contents,
+            ['class' => 'sr-only']
+        ) . ' ';
+    }
+
+    /**
      * Outputs a container.
      *
      * @param string $contents The contents of the box
      * @param string $classes A space-separated list of CSS classes
      * @param string $id An optional ID
+     * @param array $attributes Optional other attributes as array
      * @return string the HTML to output.
      */
-    public function container($contents, $classes = null, $id = null) {
-        return $this->container_start($classes, $id) . $contents . $this->container_end();
+    public function container($contents, $classes = null, $id = null, $attributes = []) {
+        return $this->container_start($classes, $id, $attributes) . $contents . $this->container_end();
     }
 
     /**
@@ -3287,12 +3425,13 @@ EOD;
      *
      * @param string $classes A space-separated list of CSS classes
      * @param string $id An optional ID
+     * @param array $attributes Optional other attributes as array
      * @return string the HTML to output.
      */
-    public function container_start($classes = null, $id = null) {
+    public function container_start($classes = null, $id = null, $attributes = []) {
         $this->opencontainers->push('container', html_writer::end_tag('div'));
-        return html_writer::start_tag('div', array('id' => $id,
-                'class' => renderer_base::prepare_classes($classes)));
+        $attributes = array_merge(['id' => $id, 'class' => renderer_base::prepare_classes($classes)], $attributes);
+        return html_writer::start_tag('div', $attributes);
     }
 
     /**
@@ -3781,8 +3920,7 @@ EOD;
     /**
      * Returns the custom menu if one has been set
      *
-     * A custom menu can be configured by browsing to
-     *    Settings: Administration > Appearance > Themes > Theme settings
+     * A custom menu can be configured by browsing to a theme's settings page
      * and then configuring the custommenu config setting as described.
      *
      * Theme developers: DO NOT OVERRIDE! Please override function
@@ -3999,7 +4137,7 @@ EOD;
      *     their level. Note that you can as weel specify tabobject::$inactive for separate instances
      * @return string
      */
-    public final function tabtree($tabs, $selected = null, $inactive = null) {
+    final public function tabtree($tabs, $selected = null, $inactive = null) {
         return $this->render(new tabtree($tabs, $selected, $inactive));
     }
 
@@ -4098,18 +4236,31 @@ EOD;
      */
     public function blocks($region, $classes = array(), $tag = 'aside', $fakeblocksonly = false) {
         $displayregion = $this->page->apply_theme_region_manipulations($region);
+        $headingid = $displayregion . '-block-region-heading';
         $classes = (array)$classes;
         $classes[] = 'block-region';
         $attributes = array(
             'id' => 'block-region-'.preg_replace('#[^a-zA-Z0-9_\-]+#', '-', $displayregion),
             'class' => join(' ', $classes),
             'data-blockregion' => $displayregion,
-            'data-droptarget' => '1'
+            'data-droptarget' => '1',
+            'aria-labelledby' => $headingid,
         );
+        // Generate an appropriate heading to uniquely identify the block region.
+        $blocksheading = match ($displayregion) {
+            'side-post' => get_string('blocks_supplementary'),
+            'content' => get_string('blocks_main'),
+            default => get_string('blocks'),
+        };
+        $content = html_writer::tag('h2', $blocksheading, ['class' => 'sr-only', 'id' => $headingid]);
         if ($this->page->blocks->region_has_content($displayregion, $this)) {
-            $content = $this->blocks_for_region($displayregion, $fakeblocksonly);
-        } else {
-            $content = '';
+            $content .= $this->blocks_for_region($displayregion, $fakeblocksonly);
+        }
+        // Given that <aside> has a default role of a complementary landmark and is supposed to be a top-level landmark,
+        // blocks rendered as part of the main content should not have a complementary role and should be rendered in a more generic
+        // container.
+        if ($displayregion === 'content' && $tag === 'aside') {
+            $tag = 'section';
         }
         return html_writer::tag($tag, $content, $attributes);
     }
@@ -4214,9 +4365,10 @@ EOD;
      * Returns the HTML for the site support email link
      *
      * @param array $customattribs Array of custom attributes for the support email anchor tag.
+     * @param bool $embed Set to true if you want to embed the link in other inline content.
      * @return string The html code for the support email link.
      */
-    public function supportemail(array $customattribs = []): string {
+    public function supportemail(array $customattribs = [], bool $embed = false): string {
         global $CFG;
 
         // Do not provide a link to contact site support if it is unavailable to this user. This would be where the site has
@@ -4229,7 +4381,12 @@ EOD;
 
         $label = get_string('contactsitesupport', 'admin');
         $icon = $this->pix_icon('t/email', '');
-        $content = $icon . $label;
+
+        if (!$embed) {
+            $content = $icon . $label;
+        } else {
+            $content = $label;
+        }
 
         if (!empty($CFG->supportpage)) {
             $attributes = ['href' => $CFG->supportpage, 'target' => 'blank'];
@@ -4259,7 +4416,9 @@ EOD;
 
         $liferingicon = $this->pix_icon('t/life-ring', '', 'moodle', ['class' => 'fa fa-life-ring']);
         $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle', ['class' => 'ml-1']);
-        $link = 'https://moodle.com/help/?utm_source=CTA-banner&utm_medium=platform&utm_campaign=name~Moodle4+cat~lms+mp~no';
+        $link = !empty($CFG->servicespage)
+            ? $CFG->servicespage
+            : 'https://moodle.com/help/?utm_source=CTA-banner&utm_medium=platform&utm_campaign=name~Moodle4+cat~lms+mp~no';
         $content = $liferingicon . get_string('moodleservicesandsupport') . $newwindowicon;
 
         return html_writer::tag('a', $content, ['target' => '_blank', 'href' => $link]);
@@ -4272,6 +4431,43 @@ EOD;
      */
     public function has_popover_links(): bool {
         return !empty($this->services_support_link()) || !empty($this->page_doc_link()) || !empty($this->supportemail());
+    }
+
+    /**
+     * Helper function to decide whether to show the communication link or not.
+     *
+     * @return bool
+     */
+    public function has_communication_links(): bool {
+        if (during_initial_install() || !core_communication\api::is_available()) {
+            return false;
+        }
+        return !empty($this->communication_link());
+    }
+
+    /**
+     * Returns the communication link, complete with html.
+     *
+     * @return string
+     */
+    public function communication_link(): string {
+        $link = $this->communication_url() ?? '';
+        $commicon = $this->pix_icon('t/messages-o', '', 'moodle', ['class' => 'fa fa-comments']);
+        $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle', ['class' => 'ml-1']);
+        $content = $commicon . get_string('communicationroomlink', 'course') . $newwindowicon;
+        $html = html_writer::tag('a', $content, ['target' => '_blank', 'href' => $link]);
+
+        return !empty($link) ? $html : '';
+    }
+
+    /**
+     * Returns the communication url for a given instance if it exists.
+     *
+     * @return string
+     */
+    public function communication_url(): string {
+        global $COURSE;
+        return \core_communication\helper::get_course_communication_url($COURSE);
     }
 
     /**
@@ -4405,9 +4601,42 @@ EOD;
 
                     if ($USER->id != $user->id) {
                         $iscontact = \core_message\api::is_contact($USER->id, $user->id);
-                        $contacttitle = $iscontact ? 'removefromyourcontacts' : 'addtoyourcontacts';
-                        $contacturlaction = $iscontact ? 'removecontact' : 'addcontact';
-                        $contactimage = $iscontact ? 'removecontact' : 'addcontact';
+                        $isrequested = \core_message\api::get_contact_requests_between_users($USER->id, $user->id);
+                        $contacturlaction = '';
+                        $linkattributes = \core_message\helper::togglecontact_link_params(
+                            $user,
+                            $iscontact,
+                            true,
+                            !empty($isrequested),
+                        );
+                        // If the user is not a contact.
+                        if (!$iscontact) {
+                            if ($isrequested) {
+                                // We just need the first request.
+                                $requests = array_shift($isrequested);
+                                if ($requests->userid == $USER->id) {
+                                    // If the user has requested to be a contact.
+                                    $contacttitle = 'contactrequestsent';
+                                } else {
+                                    // If the user has been requested to be a contact.
+                                    $contacttitle = 'waitingforcontactaccept';
+                                }
+                                $linkattributes = array_merge($linkattributes, [
+                                    'class' => 'disabled',
+                                    'tabindex' => '-1',
+                                ]);
+                            } else {
+                                // If the user is not a contact and has not requested to be a contact.
+                                $contacttitle = 'addtoyourcontacts';
+                                $contacturlaction = 'addcontact';
+                            }
+                            $contactimage = 'addcontact';
+                        } else {
+                            // If the user is a contact.
+                            $contacttitle = 'removefromyourcontacts';
+                            $contacturlaction = 'removecontact';
+                            $contactimage = 'removecontact';
+                        }
                         $userbuttons['togglecontact'] = array(
                                 'buttontype' => 'togglecontact',
                                 'title' => get_string($contacttitle, 'message'),
@@ -4418,7 +4647,7 @@ EOD;
                                         'sesskey' => sesskey())
                                 ),
                                 'image' => $contactimage,
-                                'linkattributes' => \core_message\helper::togglecontact_link_params($user, $iscontact),
+                                'linkattributes' => $linkattributes,
                                 'page' => $this->page
                             );
                     }
@@ -4428,9 +4657,24 @@ EOD;
             }
         }
 
+        // Return the heading wrapped in an sr-only element so it is only visible to screen-readers.
+        if (!empty($this->page->layout_options['nocontextheader'])) {
+            return html_writer::div($heading, 'sr-only');
+        }
 
         $contextheader = new context_header($heading, $headinglevel, $imagedata, $userbuttons);
-        return $this->render_context_header($contextheader);
+        return $this->render($contextheader);
+    }
+
+    /**
+     * Renders the header bar.
+     *
+     * @param context_header $contextheader Header bar object.
+     * @return string HTML for the header bar.
+     */
+    protected function render_context_header(context_header $contextheader) {
+        $context = $contextheader->export_for_template($this);
+        return $this->render_from_template('core/context_header', $context);
     }
 
     /**
@@ -4447,75 +4691,6 @@ EOD;
         }
 
         return $this->render_from_template('core/skip_links', $context);
-    }
-
-     /**
-      * Renders the header bar.
-      *
-      * @param context_header $contextheader Header bar object.
-      * @return string HTML for the header bar.
-      */
-    protected function render_context_header(context_header $contextheader) {
-
-        // Generate the heading first and before everything else as we might have to do an early return.
-        if (!isset($contextheader->heading)) {
-            $heading = $this->heading($this->page->heading, $contextheader->headinglevel);
-        } else {
-            $heading = $this->heading($contextheader->heading, $contextheader->headinglevel);
-        }
-
-        $showheader = empty($this->page->layout_options['nocontextheader']);
-        if (!$showheader) {
-            // Return the heading wrapped in an sr-only element so it is only visible to screen-readers.
-            return html_writer::div($heading, 'sr-only');
-        }
-
-        // All the html stuff goes here.
-        $html = html_writer::start_div('page-context-header');
-
-        // Image data.
-        if (isset($contextheader->imagedata)) {
-            // Header specific image.
-            $html .= html_writer::div($contextheader->imagedata, 'page-header-image icon-size-7');
-        }
-
-        // Headings.
-        if (isset($contextheader->prefix)) {
-            $prefix = html_writer::div($contextheader->prefix, 'text-muted');
-            $heading = $prefix . $heading;
-        }
-        $html .= html_writer::tag('div', $heading, array('class' => 'page-header-headings'));
-
-        // Buttons.
-        if (isset($contextheader->additionalbuttons)) {
-            $html .= html_writer::start_div('btn-group header-button-group');
-            foreach ($contextheader->additionalbuttons as $button) {
-                if (!isset($button->page)) {
-                    // Include js for messaging.
-                    if ($button['buttontype'] === 'togglecontact') {
-                        \core_message\helper::togglecontact_requirejs();
-                    }
-                    if ($button['buttontype'] === 'message') {
-                        \core_message\helper::messageuser_requirejs();
-                    }
-                    $image = $this->pix_icon($button['formattedimage'], $button['title'], 'moodle', array(
-                        'class' => 'iconsmall',
-                        'role' => 'presentation'
-                    ));
-                    $image .= html_writer::span($button['title'], 'header-button-title');
-                } else {
-                    $image = html_writer::empty_tag('img', array(
-                        'src' => $button['formattedimage'],
-                        'role' => 'presentation'
-                    ));
-                }
-                $html .= html_writer::link($button['url'], html_writer::tag('span', $image), $button['linkattributes']);
-            }
-            $html .= html_writer::end_div();
-        }
-        $html .= html_writer::end_div();
-
-        return $html;
     }
 
     /**
@@ -4786,11 +4961,12 @@ EOD;
      *               will be appended to the end, JS will toggle the rest of the tags
      * @param context $pagecontext specify if needed to overwrite the current page context for the view tag link
      * @param bool $accesshidelabel if true, the label should have class="accesshide" added.
+     * @param bool $displaylink Indicates whether the tag should be displayed as a link.
      * @return string
      */
     public function tag_list($tags, $label = null, $classes = '', $limit = 10,
-            $pagecontext = null, $accesshidelabel = false) {
-        $list = new \core_tag\output\taglist($tags, $label, $classes, $limit, $pagecontext, $accesshidelabel);
+            $pagecontext = null, $accesshidelabel = false, $displaylink = true) {
+        $list = new \core_tag\output\taglist($tags, $label, $classes, $limit, $pagecontext, $accesshidelabel, $displaylink);
         return $this->render_from_template('core_tag/taglist', $list->export_for_template($this));
     }
 
@@ -4808,7 +4984,7 @@ EOD;
      * Renders a bar chart.
      *
      * @param \core\chart_bar $chart The chart.
-     * @return string.
+     * @return string
      */
     public function render_chart_bar(\core\chart_bar $chart) {
         return $this->render_chart($chart);
@@ -4818,7 +4994,7 @@ EOD;
      * Renders a line chart.
      *
      * @param \core\chart_line $chart The chart.
-     * @return string.
+     * @return string
      */
     public function render_chart_line(\core\chart_line $chart) {
         return $this->render_chart($chart);
@@ -4828,7 +5004,7 @@ EOD;
      * Renders a pie chart.
      *
      * @param \core\chart_pie $chart The chart.
-     * @return string.
+     * @return string
      */
     public function render_chart_pie(\core\chart_pie $chart) {
         return $this->render_chart($chart);
@@ -4839,7 +5015,7 @@ EOD;
      *
      * @param \core\chart_base $chart The chart.
      * @param bool $withtable Whether to include a data table with the chart.
-     * @return string.
+     * @return string
      */
     public function render_chart(\core\chart_base $chart, $withtable = true) {
         $chartdata = json_encode($chart);
@@ -4946,7 +5122,7 @@ EOD;
     /**
      * Render the login signup form into a nice template for the theme.
      *
-     * @param mform $form
+     * @param moodleform $form
      * @return string
      */
     public function render_login_signup_form($form) {
@@ -5013,8 +5189,13 @@ EOD;
      * @param  string $estimate time remaining message
      * @return string ascii fragment
      */
-    public function render_progress_bar_update(string $id, float $percent, string $msg, string $estimate) : string {
-        return html_writer::script(js_writer::function_call('updateProgressBar', [$id, $percent, $msg, $estimate]));
+    public function render_progress_bar_update(string $id, float $percent, string $msg, string $estimate): string {
+        return html_writer::script(js_writer::function_call('updateProgressBar', [
+            $id,
+            round($percent, 1),
+            $msg,
+            $estimate,
+        ]));
     }
 
     /**
@@ -5042,7 +5223,7 @@ EOD;
 
     /**
      * Renders release information in the footer popup
-     * @return string Moodle release info.
+     * @return ?string Moodle release info.
      */
     public function moodle_release() {
         global $CFG;
@@ -5077,6 +5258,10 @@ EOD;
                 [
                     'link' => $url->out(false),
                     'escapedlink' => "?{$url->get_query_string(false)}",
+                    'pagehash' => $this->page->get_edited_page_hash(),
+                    'blockregion' => $region,
+                    // The following parameters are not used since Moodle 4.2 but are
+                    // still passed for backward-compatibility.
                     'pageType' => $this->page->pagetype,
                     'pageLayout' => $this->page->pagelayout,
                     'subPage' => $this->page->subpage,
@@ -5084,6 +5269,106 @@ EOD;
             );
         }
         return $addblockbutton;
+    }
+
+    /**
+     * Prepares an element for streaming output
+     *
+     * This must be used with NO_OUTPUT_BUFFERING set to true. After using this method
+     * any subsequent prints or echos to STDOUT result in the outputted content magically
+     * being appended inside that element rather than where the current html would be
+     * normally. This enables pages which take some time to render incremental content to
+     * first output a fully formed html page, including the footer, and to then stream
+     * into an element such as the main content div. This fixes a class of page layout
+     * bugs and reduces layout shift issues and was inspired by Facebook BigPipe.
+     *
+     * Some use cases such as a simple page which loads content via ajax could be swapped
+     * to this method wich saves another http request and its network latency resulting
+     * in both lower server load and better front end performance.
+     *
+     * You should consider giving the element you stream into a minimum height to further
+     * reduce layout shift as the content initally streams into the element.
+     *
+     * You can safely finish the output without closing the streamed element. You can also
+     * call this method again to swap the target of the streaming to a new element as
+     * often as you want.
+
+     * https://www.youtube.com/watch?v=LLRig4s1_yA&t=1022s
+     * Watch this video segment to explain how and why this 'One Weird Trick' works.
+     *
+     * @param string $selector where new content should be appended
+     * @param string $element which contains the streamed content
+     * @return string html to be written
+     */
+    public function select_element_for_append(string $selector = '#region-main [role=main]', string $element = 'div') {
+
+        if (!CLI_SCRIPT && !NO_OUTPUT_BUFFERING) {
+            throw new coding_exception('select_element_for_append used in a non-CLI script without setting NO_OUTPUT_BUFFERING.',
+                DEBUG_DEVELOPER);
+        }
+
+        // We are already streaming into this element so don't change anything.
+        if ($this->currentselector === $selector && $this->currentelement === $element) {
+            return;
+        }
+
+        // If we have a streaming element close it before starting a new one.
+        $html = $this->close_element_for_append();
+
+        $this->currentselector = $selector;
+        $this->currentelement = $element;
+
+        // Create an unclosed element for the streamed content to append into.
+        $id = uniqid();
+        $html .= html_writer::start_tag($element, ['id' => $id]);
+        $html .= html_writer::tag('script', "document.querySelector('$selector').append(document.getElementById('$id'))");
+        $html .= "\n";
+        return $html;
+    }
+
+    /**
+     * This closes any opened stream elements
+     *
+     * @return string html to be written
+     */
+    public function close_element_for_append() {
+        $html = '';
+        if ($this->currentselector !== '') {
+            $html .= html_writer::end_tag($this->currentelement);
+            $html .= "\n";
+            $this->currentelement = '';
+        }
+        return $html;
+    }
+
+    /**
+     * A companion method to select_element_for_append
+     *
+     * This must be used with NO_OUTPUT_BUFFERING set to true.
+     *
+     * This is similar but instead of appending into the element it replaces
+     * the content in the element. Depending on the 3rd argument it can replace
+     * the innerHTML or the outerHTML which can be useful to completely remove
+     * the element if needed.
+     *
+     * @param string $selector where new content should be replaced
+     * @param string $html A chunk of well formed html
+     * @param bool $outer Wether it replaces the innerHTML or the outerHTML
+     * @return string html to be written
+     */
+    public function select_element_for_replace(string $selector, string $html, bool $outer = false) {
+
+        if (!CLI_SCRIPT && !NO_OUTPUT_BUFFERING) {
+            throw new coding_exception('select_element_for_replace used in a non-CLI script without setting NO_OUTPUT_BUFFERING.',
+                DEBUG_DEVELOPER);
+        }
+
+        // Escape html for use inside a javascript string.
+        $html = addslashes_js($html);
+        $property = $outer ? 'outerHTML' : 'innerHTML';
+        $output = html_writer::tag('script', "document.querySelector('$selector').$property = '$html';");
+        $output .= "\n";
+        return $output;
     }
 }
 
@@ -5143,7 +5428,7 @@ class core_renderer_cli extends core_renderer {
     /**
      * Renders a Check API result
      *
-     * @param result $result
+     * @param core\check\result $result
      * @return string fragment
      */
     public function check_result(core\check\result $result) {
@@ -5188,7 +5473,7 @@ class core_renderer_cli extends core_renderer {
      * @param  string $estimate time remaining message
      * @return string ascii fragment
      */
-    public function render_progress_bar_update(string $id, float $percent, string $msg, string $estimate) : string {
+    public function render_progress_bar_update(string $id, float $percent, string $msg, string $estimate): string {
         $size = 55; // The width of the progress bar in chars.
         $ascii = '';
 
@@ -5234,7 +5519,7 @@ class core_renderer_cli extends core_renderer {
 
         $ascii .= str_repeat('#', $delta);
         if ($percent >= 100 && $delta > 0) {
-            $ascii .= sprintf("] %3.1f%%\n$msg\n", $percent);
+            $ascii .= sprintf("] %3.1f%%", $percent) . "\n$msg\n";
         }
         $this->progressmaximums[$id] += $delta;
         return $ascii;
@@ -5567,17 +5852,6 @@ class core_renderer_maintenance extends core_renderer {
     }
 
     /**
-     * Does nothing. The maintenance renderer cannot produce and HTML file tree.
-     *
-     * @param array $dir
-     * @return string
-     */
-    public function htmllize_file_tree($dir) {
-        return '';
-
-    }
-
-    /**
      * Overridden confirm message for upgrades.
      *
      * @param string $message The question to ask the user
@@ -5590,11 +5864,13 @@ class core_renderer_maintenance extends core_renderer {
         // We need plain styling of confirm boxes on upgrade because we don't know which stylesheet we have (it could be
         // from any previous version of Moodle).
         if ($continue instanceof single_button) {
-            $continue->primary = true;
+            $continue->type = single_button::BUTTON_PRIMARY;
         } else if (is_string($continue)) {
-            $continue = new single_button(new moodle_url($continue), get_string('continue'), 'post', true);
+            $continue = new single_button(new moodle_url($continue), get_string('continue'), 'post',
+                $displayoptions['type'] ?? single_button::BUTTON_PRIMARY);
         } else if ($continue instanceof moodle_url) {
-            $continue = new single_button($continue, get_string('continue'), 'post', true);
+            $continue = new single_button($continue, get_string('continue'), 'post',
+                $displayoptions['type'] ?? single_button::BUTTON_PRIMARY);
         } else {
             throw new coding_exception('The continue param to $OUTPUT->confirm() must be either a URL' .
                                        ' (string/moodle_url) or a single_button instance.');
@@ -5640,7 +5916,7 @@ class core_renderer_maintenance extends core_renderer {
     /**
      * Does nothing. The maintenance renderer has no need for login information.
      *
-     * @param null $withlinks
+     * @param mixed $withlinks
      * @return string
      */
     public function login_info($withlinks = null) {

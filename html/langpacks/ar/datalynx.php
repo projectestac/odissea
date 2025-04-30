@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'ar', version '4.1'.
+ * Strings for component 'datalynx', language 'ar', version '4.4'.
  *
  * @package     datalynx
  * @category    string
@@ -32,7 +32,6 @@ $string['allowsubscription'] = 'السماح بالاشتراك اليدوي';
 $string['allowunsubscription'] = 'السماح بإلغاء الاشتراك يدويًا';
 $string['alltime'] = 'كل الوقت';
 $string['alphabeticalorder'] = 'أتريد فرز الخيارات أبجدياً عند تحرير الإدخال؟';
-$string['check_enable'] = 'ينبغي عليك تأشير خانة \'تمكين\' لتأكيد صحة القيمة المحددة.';
 $string['commentinputtype'] = 'نوع إدخال التعليق';
 $string['commentsallow'] = 'أتريد السماح بالتعليقات؟';
 $string['configmaxentries'] = 'هذه القيمة تحدد أقصى عدد من الإدخالات التي يمكن إضافتها إلى نشاط datalynx.';
@@ -46,6 +45,7 @@ $string['dflateuse'] = 'السماح بالمنشورات المتأخرة';
 $string['dfratingactivity'] = 'تقييم النشاط';
 $string['dftimeinterval_help'] = 'حدد الفاصل الزمني حتى إلغاء تأمين الإدخال التالي للمستخدم';
 $string['entriesanonymous'] = 'السماح بالمُدخلات غير المشخصنة';
+$string['entriesimport'] = 'استيراد المُدخلات';
 $string['entriesnotsaved'] = 'لم يتم حفظ أي إدخال، الرجاء التأكد من تنسيق الملف المرفوع.';
 $string['entryaddmultinew'] = 'أضف مُدخلات جديدة';
 $string['entryaddnew'] = 'إضافة مُدخل جديد';
@@ -67,6 +67,7 @@ $string['fielddescription'] = 'وصف الحقل';
 $string['fieldname'] = 'اسم الحقل';
 $string['fieldoptionsdefault'] = 'القيم الافتراضية (واحدة لكل سطر)';
 $string['fieldrequired'] = 'عليك إعطاء قيمة هنا.';
+$string['fieldsimportsettings'] = 'استيراد الإعدادات';
 $string['filemaxsize'] = 'الحجم الإجمالي للملفات المرفوعة';
 $string['filesmax'] = 'أقصى عدد من الملفات المرفوعة';
 $string['filterdescription'] = 'وصف المرشح';
@@ -74,13 +75,12 @@ $string['filterformadd'] = 'أضف نموذج ترشيح جديد';
 $string['filterperpage'] = 'لكل صفحة';
 $string['firstdayofweek'] = 'الاثنين';
 $string['formemptyadd'] = 'لم تقم بإملاء أي حقول!';
-$string['fromaftertoday_error'] = 'تاريخ \'من\' لا يمكن جعله بعد تاريخ يومنا الحالي!';
+$string['fromfile'] = 'الاستيراد من ملف مضغوط';
 $string['gradeinputtype'] = 'نوع إدخال الدرجة';
 $string['gradingsettings'] = 'إعدادات تقييم النشاط';
+$string['import'] = 'استيراد';
 $string['importadd'] = 'إضافة معاينة استيراد جديدة';
-$string['listformat_space'] = 'مفصولة بمسافة';
 $string['maxsize'] = 'الحجم الأقصى';
-$string['maxteamsize_error_form'] = 'يمكنك تحديد ما أقصاه {$a} من أعضاء الفريق!';
 $string['message_entry_disapproved'] = 'مرحباً {$a->fullname}،
 
 المحتوى في {$a->datalynxlink} تم تعديله من قبل {$a->senderprofilelink}.
@@ -96,7 +96,6 @@ $string['messageprovider:event_rating_added'] = 'تقييم Datalynx تمت إض
 $string['messageprovider:event_rating_updated'] = 'تقييم Datalynx تم تحديثه';
 $string['messageprovider:event_team_updated'] = 'فريق إدخال Datalynx تم تحديثه';
 $string['minteamsize'] = 'الحجم الأدنى للفريق';
-$string['minteamsize_error_form'] = 'ينبغي عليك تحديد {$a} من أعضاء الفريق على الأقل!';
 $string['newvalue'] = 'القيمة الجديدة';
 $string['newvalueallow'] = 'السماح بالقيم الجديدة';
 $string['noaccess'] = 'ليست لديك صلاحية الوصول إلى هذه الصفحة';
@@ -117,8 +116,6 @@ $string['statisticsfor'] = 'إحصائيات \'{$a}\'';
 $string['student'] = 'الطالب';
 $string['tagcollection_datalynx'] = 'وسوم Datalynx';
 $string['teamsize'] = 'الحجم الأقصى للفريق';
-$string['teamsize_error_required'] = 'هذا الحقل مطلوب!';
-$string['teamsize_error_value'] = 'القيمة ينبغي أن تكون رقمًا صحيحًا موجبًا!';
 $string['textfieldvalues'] = 'قِيَم الحقل النصي';
 $string['timecreated'] = 'وقت الإنشاء';
 $string['timemodified'] = 'وقت التعديل';

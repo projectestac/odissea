@@ -293,7 +293,7 @@ function is_rush_hour(): bool {
 function is_enabled_in_agora(string $mod): bool {
     if (is_agora()) {
         // Disabled in all Agora Moodles
-        if ($mod === 'classic' || $mod === 'chat' || $mod === 'bigbluebuttonbn' || $mod === 'tinymce') {
+        if ($mod === 'classic' || $mod === 'chat' || $mod === 'bigbluebuttonbn') {
             return false;
         }
     }

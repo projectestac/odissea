@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_vimeo', language 'ro', version '4.1'.
+ * Strings for component 'media_vimeo', language 'ro', version '4.4'.
  *
  * @package     media_vimeo
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['donottrack'] = 'Activează opțiunea prin care Vimeo nu urmărește link-uri';
+$string['donottrack_desc'] = 'Dacă este activat, player-ul video nu va urmări nicio dată de sesiune, inclusiv toate modulele cookie și analitice.';
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'Site-ul de partajare videoclipuri www.vimeo.com.';
 $string['privacy:metadata'] = 'Pluginul media Vimeo nu stochează date personale.';

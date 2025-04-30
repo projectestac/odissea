@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'gl', version '4.1'.
+ * Strings for component 'cache', language 'gl', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -42,8 +42,8 @@ $string['cachedef_completion'] = 'Estado do completado da actividade';
 $string['cachedef_config'] = 'Axustes de configuración';
 $string['cachedef_contentbank_allowed_categories'] = 'Categorías de cursos do banco de contidos permitidos para o usuario actual';
 $string['cachedef_contentbank_allowed_courses'] = 'Cursos do banco de contidos permitidos para o usuario actual';
-$string['cachedef_contentbank_context_extensions'] = 'Extensións permitidas e os seus engadidos de compatibilidade nun contexto de banco de contido';
-$string['cachedef_contentbank_enabled_extensions'] = 'Extensións permitidas e os seus engadidos de compatibilidade no banco de contido';
+$string['cachedef_contentbank_context_extensions'] = 'Extensións permitidas e os seus complementos de compatibilidade nun contexto de banco de contido';
+$string['cachedef_contentbank_enabled_extensions'] = 'Extensións permitidas e os seus complementos de compatibilidade no banco de contido';
 $string['cachedef_contextwithinsights'] = 'Contexto con estimacións';
 $string['cachedef_course_image'] = 'Imaxes do curso';
 $string['cachedef_course_user_dates'] = 'As datas do usuario dos cursos definidas no modo de datas relativas';
@@ -53,6 +53,7 @@ $string['cachedef_coursecattree'] = 'Árbore de categorías de cursos';
 $string['cachedef_coursecompletion'] = 'Estado do completado do curso';
 $string['cachedef_coursecontacts'] = 'Lista de contactos do curso';
 $string['cachedef_courseeditorstate'] = 'Chaves da caché do estado do curso da sesión para detectar cambios no curso na interface';
+$string['cachedef_coursehiddengroups'] = 'Número de grupos nun curso con visibilidade restrinxida';
 $string['cachedef_coursemodinfo'] = 'Información acumulada sobre os módulos e seccións para cada curso';
 $string['cachedef_coursesectionspreferences'] = 'Preferencias da sección do curso';
 $string['cachedef_databasemeta'] = 'Meta Información da base de datos';
@@ -65,7 +66,9 @@ $string['cachedef_grade_letters'] = 'Consultas de carta de cualificación';
 $string['cachedef_gradesetting'] = 'Axuste da cualificación do curso';
 $string['cachedef_groupdata'] = 'Información de grupo de curso';
 $string['cachedef_h5p_content_type_translations'] = 'Traducións de bibliotecas do tipo contido H5P';
+$string['cachedef_h5p_libraries'] = 'Bibliotecas H5P';
 $string['cachedef_h5p_library_files'] = 'Ficheiros da biblioteca H5P';
+$string['cachedef_hookcallbacks'] = 'Devolucións de chamada de enganche';
 $string['cachedef_htmlpurifier'] = 'Purificador de HTML, contido limpado';
 $string['cachedef_langmenu'] = 'Lista de idiomas dispoñíbeis';
 $string['cachedef_license'] = 'Lista de licenzas';
@@ -73,10 +76,11 @@ $string['cachedef_locking'] = 'Bloqueo';
 $string['cachedef_message_processors_enabled'] = 'Estado activado dos procesadores de mensaxes';
 $string['cachedef_message_time_last_message_between_users'] = 'Momento de creación para a mensaxe máis recente entre os usuarios';
 $string['cachedef_modelfirstanalyses'] = 'Primeira análise por modelo e analizábel';
+$string['cachedef_moodlenet_usercanshare'] = 'Os usuarios poden compartir recursos en MoodleNet';
 $string['cachedef_navigation_expandcourse'] = 'Cursos expansíbeis na navegación';
 $string['cachedef_observers'] = 'Observadores do evento';
-$string['cachedef_plugin_functions'] = 'Chamadas de retorno de engadidos dispoñíbeis';
-$string['cachedef_plugin_manager'] = 'Xestor de información de engadido';
+$string['cachedef_plugin_functions'] = 'Chamadas de retorno de complementos dispoñíbeis';
+$string['cachedef_plugin_manager'] = 'Xestor de información de complemento';
 $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Instancias de portafolios para a clase portfolio_add_button';
 $string['cachedef_postprocessedcss'] = 'CSS postprocesado';
 $string['cachedef_presignup'] = 'Datos de prerexistro para usuario particular non rexistrado';
@@ -135,9 +139,9 @@ $string['gethit'] = 'Obter - Acerto';
 $string['getmiss'] = 'Obter - Fallo';
 $string['inadequatestoreformapping'] = 'Este almacén non cumpre cos requisitos para todas as definicións coñecidas. Ás definicións para as que este almacén non é axeitado, daráselle o almacén orixinal predeterminado, no canto do almacén seleccionado.';
 $string['invalidlock'] = 'Bloqueo incorrecto';
-$string['invalidplugin'] = 'Engadido incorrecto';
-$string['invalidstore'] = 'O almacén de caché fornecido é incorrecto';
-$string['localstorenotification'] = 'Esta caché pode ser asignada con seguridade cara un almacén que sexa local para cada servidor web';
+$string['invalidplugin'] = 'Complemento non válido';
+$string['invalidstore'] = 'O almacén de caché fornecido non é válido';
+$string['localstorenotification'] = 'Esta caché pode ser asignada con seguranza cara a un almacén que sexa local para cada servidor web';
 $string['lockdefault'] = 'Predeterminado';
 $string['locking'] = 'Bloqueo';
 $string['locking_help'] = 'O bloqueo é un mecanismo que restrinxe o acceso aos datos na caché a un proceso de vez, para impedir que os datos se sobrescriban. O método de bloqueo determina como se obtén o bloqueo e como se revisa.';
@@ -156,9 +160,9 @@ $string['mode_1'] = 'Aplicación';
 $string['mode_2'] = 'Sesión';
 $string['mode_4'] = 'Solicitude';
 $string['modes'] = 'Modos';
-$string['nativelocking'] = 'Este engadido manexa o seu propio bloqueo.';
+$string['nativelocking'] = 'Este complemento manexa o seu propio bloqueo.';
 $string['none'] = 'Ningún';
-$string['plugin'] = 'Engadido';
+$string['plugin'] = 'Complemento';
 $string['pluginsummaries'] = 'Almacén de caché instalados';
 $string['privacy:metadata:cachestore'] = 'O subsistema Caché almacena datos temporalmente en nome doutras partes de Moodle. Este dato non é fácil de identificar e é moi curto. Serve como unha caché de datos almacenados noutro sitio de Moodle e, xa que logo, xa deben ser manexados por eses compoñentes do Moodle.';
 $string['purge'] = 'Purgar';

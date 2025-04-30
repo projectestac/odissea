@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'nl', version '4.1'.
+ * Strings for component 'tool_langimport', language 'nl', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'Taalpakket update voltooid';
 $string['missingcfglangotherroot'] = 'Er ontbreekt een configuratiewaarde $CFG->langotherroot';
 $string['missinglangparent'] = 'Ontbrekende parent language <em>{$a->parent}</em> voor <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'Het Engels taalpakket kan niet verwijderd worden.';
+$string['noenglishuninstalltitle'] = 'Kon niet installleren';
 $string['nolangupdateneeded'] = 'Al je geïnstalleerde taalpakketten zijn up-to-date. Er is geen update nodig.';
 $string['pluginname'] = 'Pakketten';
 $string['privacy:metadata'] = 'De taalpakket-plugin bewaart geen persoonlijke gegevens.';

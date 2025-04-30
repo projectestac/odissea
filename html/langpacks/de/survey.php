@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'de', version '4.1'.
+ * Strings for component 'survey', language 'de', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Tatsächlich';
 $string['actualclass'] = 'Aktuelle Erfahrungen der Lerngruppe';
 $string['actualstudent'] = 'tatsächliche Erfahrungen des/der {$a}';
 $string['allquestionrequireanswer'] = 'Alle Fragen sind erforderlich und müssen beantwortet werden.';
-$string['allquestions'] = 'Alle Fragen geordnet, alle Kursteilnehmer/innen';
 $string['allscales'] = 'Alle Ränge, alle Kursteilnehmer/innen';
 $string['alreadysubmitted'] = 'Sie haben diese Umfrage bereits eingereicht';
 $string['analysisof'] = 'Analyse von {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Was hat Sie am meisten überrascht?';
 $string['ciq5short'] = 'Überraschende Momente';
 $string['ciqintro'] = 'Bitte denken Sie daran zurück, was in letzter Zeit in diesem Modul oder Kurs geschehen ist, und beantworten Sie die folgenden Fragen.';
 $string['ciqname'] = 'Kritische Ereignisse';
-$string['clicktocontinue'] = 'Klicken Sie hier, um weiterzumachen';
 $string['clicktocontinuecheck'] = 'Klicken Sie hier, um die bisherigen Antworten zu überprüfen und weiterzumachen';
 $string['colles1'] = 'Mein Lernen ist auf Themen konzentriert, die mich interessieren.';
 $string['colles10'] = 'Ich bitte andere Teilnehmer/innen darum, ihre Ideen zu erklären.';
@@ -191,7 +189,7 @@ Ihre Antworten können uns helfen, zukünftig die Präsentation und das Lernange
 Herzlichen Dank!';
 $string['collespname'] = 'COLLES (bevorzugt)';
 $string['completiondetail:submit'] = 'Antworten einreichen';
-$string['completionsubmit'] = 'Teilnehmer/in muss eine Abgabe machen';
+$string['completionsubmit'] = 'Eine Abgabe machen';
 $string['customintro'] = 'Beschreibung';
 $string['deleteallanswers'] = 'Alle Umfrageeinträge löschen';
 $string['deleteanalysis'] = 'Alle Auswertungen der Umfrageeinträge löschen';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'Es gibt 3 verfügbare Umfragetypen:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Danke {$a}, dass Sie sich an dieser Umfrage beteiligt haben.';
 $string['time'] = 'Zeit';
-$string['viewsurveyresponses'] = '{$a} Antworten zur Umfrage anzeigen';

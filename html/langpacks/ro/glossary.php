@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ro', version '4.1'.
+ * Strings for component 'glossary', language 'ro', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -92,7 +92,7 @@ $string['comments'] = 'Comentarii';
 $string['commentson'] = 'Comentarii la';
 $string['commentupdated'] = 'Acest comentariu a fost actualizat.';
 $string['completiondetail:entries'] = 'Adăugați noțiuni: {$a}';
-$string['completionentries'] = 'Cursanții trebuie să creeze noțiuni:';
+$string['completionentries'] = 'Adaugă articole';
 $string['completionentriesdesc'] = 'Cursanții trebuie să aibă cel puțin {$a} noțiune/noțiuni';
 $string['completionentriesgroup'] = 'Se solicită noțiuni';
 $string['concept'] = 'Noțiune';
@@ -281,6 +281,7 @@ $string['page-mod-glossary-edit'] = 'Pagina de intrare, adăugare / editare a gl
 $string['page-mod-glossary-view'] = 'Vizualizați pagina de editare a glosarului';
 $string['page-mod-glossary-x'] = 'Orice pagină de modul de glosar';
 $string['pendingapproval'] = 'Se așteaptă aprobare';
+$string['pendingapprovalcount'] = 'Se așteaptă aprobarea ({$a})';
 $string['pluginadministration'] = 'Administrare glosar';
 $string['pluginname'] = 'Glosar';
 $string['popupformat'] = 'Format Popup';
@@ -334,7 +335,6 @@ $string['totalentries'] = 'Totalul noțiunilor';
 $string['usedynalink'] = 'Link automat al noțiunilor din glosar';
 $string['usedynalink_help'] = 'În cazul în care auto-asocierea din glosar este activată la nivelul întregului site de către un administrator, formularul "Adaugă o nouă noțiune" va include opțiunea de link automat către cuvintele și frazele conceptului apărute în întreg cursul.';
 $string['visibletabs'] = 'Tab-uri vizibile';
-$string['waitingapproval'] = 'Se așteaptă aprobarea';
 $string['warningstudentcapost'] = '(Valabil doar dacă glosarul nu este cel principal)';
 $string['withauthor'] = 'Noțiuni cu autorului';
 $string['withoutauthor'] = 'Noțiuni fără autor';

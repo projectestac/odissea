@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'en', version '4.1'.
+ * Strings for component 'block_sharing_cart', language 'en', version '4.4'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_string'] = 'Activity:';
+$string['async_restore_in_progress'] = 'Restoring sharing item "{$a->modtext}" to the section number {$a->section}';
 $string['backup'] = 'Copy to Sharing Cart';
 $string['backup_heavy_load_warning_message'] = 'If section contains several activites, processing time will be longer.';
+$string['backupnotfound'] = 'Backup file not found';
 $string['bulkdelete'] = 'Bulk delete';
 $string['clicktomove'] = 'Click to move here';
 $string['clipboard'] = 'Copying this shared item';
@@ -44,6 +46,9 @@ $string['conflict_description_note'] = '*Section summary formats (font color, im
 $string['conflict_no_overwrite'] = 'Keep the current section name and settings <strong>"{$a}"</strong>';
 $string['conflict_overwrite_title'] = 'Overwrite section name and settings to <strong>"{$a}"</strong>';
 $string['conflict_submit'] = 'Continue';
+$string['copy_activity'] = 'Copy activity';
+$string['copy_activity_reason'] = 'This view is available because you have access to backup activities, but no access to manage/move activities.';
+$string['copy_activity_title'] = 'Copy selected activity';
 $string['copy_section'] = 'Copy section';
 $string['copy_section_title'] = 'Copy selected section';
 $string['copyhere'] = 'Copy here';
@@ -60,6 +65,7 @@ $string['missing_capability'] = 'Required capability missing: {$a}';
 $string['modal_bulkdelete_confirm'] = 'Delete selected';
 $string['modal_bulkdelete_title'] = 'Sure you want to delete';
 $string['modal_checkbox'] = 'Do you want to copy user data? (Eg. glossary/wiki/database entries)';
+$string['modal_checkbox_anonymize'] = 'Do you want to anonymize the user data?';
 $string['modal_confirm_backup'] = 'Confirm';
 $string['modal_confirm_delete'] = 'Delete';
 $string['movedir'] = 'Move into folder';
@@ -88,8 +94,16 @@ $string['settings:add_to_sharing_cart'] = 'Add to sharing cart';
 $string['settings:add_to_sharing_cart_desc'] = 'Choose between drag and drop or click to add method for adding modules and sections to the sharing cart. -
 The \'Click to add\' method is the standard in the sharing cart, where you need to click on the basket icon, before it will be added into the sharing cart. -
 The \'Drag and drop\' allows you to drag and drop modules/activities and sections into the sharing cart block or into the basket icon in the footer. Please note that this is only supported for Moodle 4.0+';
+$string['settings:backup_mode'] = 'Backup mode';
+$string['settings:backup_mode_desc'] = 'Choose between immediate or asynchronous backup process';
+$string['settings:backup_restore_mode_async'] = 'Asynchronous';
+$string['settings:backup_restore_mode_immediate'] = 'Immediate';
 $string['settings:click_to_add'] = 'Click to add';
 $string['settings:drag_and_drop'] = 'Drag and drop';
+$string['settings:restore_mode'] = 'Restore mode';
+$string['settings:restore_mode_desc'] = 'Choose between immediate or asynchronous restore process';
+$string['settings:show_copy_activity_in_block'] = 'Show the "Copy activity" in block';
+$string['settings:show_copy_activity_in_block_desc'] = 'Show the "Copy activity" in the sharing cart block, underneath all modules/activities - This is only available if the user has the capability to backup activities, but not the capability to manage/move activities';
 $string['settings:show_copy_section_in_block'] = 'Show the "Copy section" in block';
 $string['settings:show_copy_section_in_block_desc'] = 'Show the "Copy section" in the sharing cart block, underneath all modules/activities';
 $string['settings:userdata_copyable_modtypes'] = 'User data copyable module types';

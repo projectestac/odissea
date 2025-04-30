@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ar', version '4.1'.
+ * Strings for component 'resource', language 'ar', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = 'إضافة مصدر جديد';
 $string['resource:exportresource'] = 'تصدير المورد';
 $string['resource:view'] = 'معاينة المورد';
 $string['resourcecontent'] = 'ملفات ومجلدات فرعية';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} . {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} . {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} . {$a->type} . {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} . {$a->date}';
 $string['search:activity'] = 'الملف';
 $string['selectmainfile'] = 'يرجى تحديد الملف الرئيسي من خلال النقر على أيقونة بجانب اسم الملف.';
 $string['showdate'] = 'أظهر تاريخ التحميل/ التعديل';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'es', version '4.1'.
+ * Strings for component 'appointment', language 'es', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -350,7 +350,7 @@ $string['suppressemail_help'] = 'Utilizar esta opción si se desea agregar/elimi
 $string['takeattendance'] = 'Tomar asistencia';
 $string['thirdpartyemailaddress'] = 'Direcciones de correo electrónico de terceros';
 $string['thirdpartyemailaddress_help'] = '**Dirección(es) de correo electrónico de terceros** es un campo opcional que se usa para especificar la dirección de correo electrónico de un tercero (como un tutor externo) que luego recibirá mensajes de confirmación cada vez que un usuario se registre en una sesión.
-Al ingresar **múltiples direcciones de correo electrónico**, separar cada dirección con una coma. Por ejemplo: bob@example.com,joe@example.com';
+Al introducir **múltiples direcciones de correo electrónico**, separar cada dirección con una coma. Por ejemplo: bob@example.com,joe@example.com';
 $string['thirdpartywaitlist'] = 'Notificar a terceros sobre sesiones con lista de espera';
 $string['thirdpartywaitlist_help'] = 'Cuando se selecciona **Notificar a un tercero sobre las sesiones con lista de espera**, se notificará a los terceros cuando un participante se registre para una sesión en la lista de espera.
 

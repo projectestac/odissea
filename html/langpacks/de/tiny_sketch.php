@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_sketch', language 'de', version '4.1'.
+ * Strings for component 'tiny_sketch', language 'de', version '4.4'.
  *
  * @package     tiny_sketch
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['forceaccessibility'] = 'Popup für Barrierefreiheit anzeigen';
+$string['forceaccessibility_desc'] = 'Wenn diese Option aktiviert ist, wird die Skizze nach dem Einfügen im Medienplugin geöffnet, damit ein Alternativtext hinzugefügt werden kann.';
 $string['helplinktext'] = 'Skizze einfügen';
 $string['insert'] = 'Skizze einfügen';
 $string['pluginname'] = 'Skizze';
@@ -32,5 +34,3 @@ $string['privacy:metadata'] = 'Das Plugin \'Tiny Skizze\' speichert keine person
 $string['sketch_description'] = 'Schnelle Skizze in Moodle';
 $string['sketch_long_description'] = 'Bilder direkt im Editor von Moodle zeichnen und bearbeiten';
 $string['sketchtitle'] = 'Skizze erstellen und bearbeiten';
-$string['storeinrepo'] = 'Als Bilddatei speichern';
-$string['storeinrepo_desc'] = 'Wenn diese Option aktiviert ist, werden Skitzen als Bilddatei hochgeladen, anstatt sie als Inlinebild base64 zu speichern.';

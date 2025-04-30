@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'sv', version '4.1'.
+ * Strings for component 'tool_usertours', language 'sv', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'Ett steg kan placeras ovanför, under, vänster ell
 
 Om steget inte får plats på en viss sida på angivet ställe, placeras det automatiskt någon annanstans.';
 $string['pluginname'] = 'Guidade turer för användare';
-$string['previousstep'] = 'Föregående';
 $string['privacy:metadata:preference:completed'] = 'Tidpunkten då en användare senast slutförde en guidad tur.';
 $string['privacy:metadata:preference:requested'] = 'Tidpunkten då en användare senast manuellt begärde en guidad tur.';
 $string['privacy:request:preference:completed'] = 'Senast markerade du den guidade turen för "{$a->name}" som slutförd  {$a->time}';

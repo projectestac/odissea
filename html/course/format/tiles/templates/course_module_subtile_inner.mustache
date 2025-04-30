@@ -1,18 +1,38 @@
-<div class="photo-overlay tiles-base-transparent05-bg" {{#photourl}} style="background-image: url({{photourl}});" {{/photourl}}></div>
-{{^photourl}}
-    {{^is_label}}
-        <div class="tileiconcontainer activityiconcontainer {{{purpose}}}" id="subtileicon_single_{{cmid}}">{{>format_tiles/tileicon}}</div>
-    {{/is_label}}
-{{/photourl}}
+{{^issubsection}}
+    <div class="photo-overlay tiles-base-transparent05-bg" {{#photourl}} style="background-image: url({{photourl}});" {{/photourl}}></div>
+    {{^photourl}}
+        {{^is_label}}
+            <div class="tileiconcontainer activityiconcontainer {{{purpose}}} courseicon" id="subtileicon_single_{{cmid}}">{{>format_tiles/tileicon}}</div>
+        {{/is_label}}
+    {{/photourl}}
+{{/issubsection}}
 {{#is_label}}
     {{#clickable}}
-    {{! clickable really means user is allowed to see content - }}
-        <div class="label_content {{extraclasses}}"
-              id="label_content_{{cmid}}">{{{content}}}</div>
+    {{! clickable here really means user is allowed to see content - }}
+        {{#issubsection}}
+            {{! Sub-section content will be rendered by fragment API using course_modules_subsection template}}
+            <div class="subtiles-subsection-content">{{{content}}}</div>
+        {{/issubsection}}
+        {{^issubsection}}
+            <div class="label_content {{extraclasses}}"
+                  id="label_content_{{cmid}}">{{{content}}}</div>
+            {{#availabilitymessage}}
+                {{{availabilitymessage}}}
+            {{/availabilitymessage}}
+        {{/issubsection}}
     {{/clickable}}
-    {{#availabilitymessage}}
-        {{{availabilitymessage}}}
-    {{/availabilitymessage}}
+    {{^clickable}}
+        {{#issubsection}}
+            <h{{headinglevel}} class="h4 sectionname course-content-item d-flex align-self-stretch align-items-center mb-0 dimmed"
+                               id="sectionid-{{secid}}-title" data-for="section_title" data-id="{{secid}}" data-number="{{singlesectionnum}}">
+                {{{activityname}}} <i class="icon fa fa-lock fa-fw ml-1" aria-hidden="true"></i>
+            </h{{headinglevel}}>
+            {{#availabilitymessage}}
+                {{{availabilitymessage}}}
+            {{/availabilitymessage}}
+        {{/issubsection}}
+
+    {{/clickable}}
 {{/is_label}}
 
 {{^is_label}}

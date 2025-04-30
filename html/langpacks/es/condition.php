@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'condition', language 'es', version '4.1'.
+ * Strings for component 'condition', language 'es', version '4.4'.
  *
  * @package     condition
  * @category    string
@@ -45,9 +45,7 @@ $string['completioncondition_help'] = 'Este ajuste determina cualesquiera condic
 
 Si se desea, se pueden ajustar múltiples condiciones de finalización de la actividad. Si se hace así, la actividad sólo estará disponible cuando se cumplan TODAS las condiciones de finalización.';
 $string['completionconditionsection'] = 'Condición para completar actividad';
-$string['completionconditionsection_help'] = 'Esta configuración determina las condiciones para completar una actividad que deben cumplirse para poder acceder a la sección. Observe que el seguimiento de  completado debe de habilitarse primeramente antes de configurar una condición de completado de actividad.
-
-Se pueden configurar múltiples condiciones de completado si así se desea. Si se hace así, solamente se permitirá el acceso a la sección cuando TODAS las condiciones de completado hayan sido satisfechas.';
+$string['completionconditionsection_help'] = 'Esta configuración determina cualquier condición de finalización que debe cubrirse para tener acceso a la sección. Observe que el seguimiento de finalización debe configurarse primero antes de configurar la condición de finalización. Se pueden configurar condiciones múltiples de actividad finalizada si se desea. De esta forma, solamente se podrá acceder a la sección cuando TODAS las condiciones de finalización se cumplan.';
 $string['configenableavailability'] = 'Si se activa, esta opción le permite fijar las condiciones (basadas en la fecha, la calificación o el grado de finalización) que controlan si una actividad está disponible.';
 $string['contains'] = 'contiene';
 $string['doesnotcontain'] = 'no contiene';

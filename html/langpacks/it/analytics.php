@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'it', version '4.1'.
+ * Strings for component 'analytics', language 'it', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Mista o ibrida';
 $string['modeinstructionfacetoface'] = 'In presenza';
 $string['modeinstructionfullyonline'] = 'Interamente online';
 $string['modeloutputdir'] = 'Cartella di output del modello';
-$string['modeloutputdirinfo'] = 'La cartella dove l\'elaboratore di pronostici salverà le informazioni da valutare. È utile per scopi di debugging e ricerca.';
 $string['modeloutputdirwithdefaultinfo'] = 'La cartella dove l\'elaboratore di pronostici salverà le informazioni da valutare. È utile per scopi di debugging e ricerca. Non compilando il campo, di default sarà utilizzato {$a}.';
 $string['modeltimelimit'] = 'Limite temporale per l\'analisi del modello';
 $string['modeltimelimitinfo'] = 'Limita il tempo impiegato da ogni modello per analizzare i contenuti del sito.';

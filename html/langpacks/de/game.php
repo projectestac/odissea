@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'game', language 'de', version '4.1'.
+ * Strings for component 'game', language 'de', version '4.4'.
  *
  * @package     game
  * @category    string
@@ -57,8 +57,8 @@ $string['common_problems_allowspaces'] = 'Es gibt Wörter mit Leerzeichen, aber 
 $string['common_problems_crossword_param1'] = 'Die \'Maximale Anzahl von Spalten/Zeilen\' ist zu klein';
 $string['common_problems_shortanswer_hangman'] = 'Nicht alle Zeichen gehören zur Sprache des Spiels';
 $string['completedon'] = 'Beendet am';
-$string['completionpass'] = 'Bestehensnote erreichen';
-$string['completionpass_help'] = 'Wenn diese Option aktiviert ist, wird diese Aktivtät als abgeschlossen markiert, sobald die Teilnehmer/innen eine Bestehensnote erreichen (wie in den Bewertungseinstellungen des Tests festgelegt).';
+$string['completionpass'] = 'Bestehensgrenze erreichen';
+$string['completionpass_help'] = 'Wenn diese Option aktiviert ist, wird diese Aktivtät als abgeschlossen markiert, sobald die Teilnehmer/innen die Bestehensgrenze erreichen (wie in den Bewertungseinstellungen des Tests festgelegt).';
 $string['computerepetitions'] = 'Statistiken neu berechnen';
 $string['confighangmanimagesets'] = 'Legen Sie fest wie viele Bild-Sets bei Hangman verwandt werden';
 $string['confighidebookquiz'] = 'Die Option legt fest, ob das Spiel "Buch mit Fragen" in der Aktivitätenauswahl angezeigt und angelegt werden kann.';

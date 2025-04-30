@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'eu', version '4.1'.
+ * Strings for component 'theme_boost', language 'eu', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Azalaren aurretiko ezarpena';
 $string['preset_desc'] = 'Aukeratu aurretiko ezarpen bat azalaren itxura orokorra aldatzeko.';
 $string['presetfiles'] = 'Azalaren aurretiko ezarpen-fitxategi gehigarriak';
-$string['presetfiles_desc'] = 'Aurretiko ezarpen-fitxategiak azalaren tankera drastikoki aldatzeko erabili daitezke. Ikusi <a href="https://docs.moodle.org/dev/Boost_Presets">Boost-eko aurretiko ezarpenak</a> zure aurretiko ezarpen-fitxategiak sortu eta partekatzeko informazio gehiago eskuratzeko, eta ikusi <a href="https://archive.moodle.net/boost">Aurretiko ezarpenen biltegia</a> besteek partekatutako aurretiko ezarpenak aurkitzeko.';
+$string['presetfiles_desc'] = 'Aurretiko ezarpen-fitxategiak azalaren tankera drastikoki aldatzeko erabili daitezke. Ikusi <a href="https://docs.moodle.org/dev/Boost_Presets">Boost-eko aurretiko ezarpenak</a> zure aurretiko ezarpen-fitxategiak sortu eta partekatzeko informazio gehiago eskuratzeko, eta ikusi <a href="https://moodle.net/search?q=boost+presets">Aurretiko ezarpenen biltegia</a> besteek partekatutako aurretiko ezarpenak aurkitzeko.';
 $string['privacy:drawerblockclosed'] = 'Blokeen nabigazio-kutxaren une honetako hobespena tolestuta egotea da.';
 $string['privacy:drawerblockopen'] = 'Blokeen nabigazio-kutxaren une honetako hobespena zabalik egotea da.';
 $string['privacy:drawerindexclosed'] = 'Indizearen nabigazio-kutxaren une honetako hobespena tolestuta egotea da.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Hasierako SCSS gordina';
 $string['rawscsspre_desc'] = 'Eremu honetan abiarazteko SCSS kodea eman dezakezu. Beste guztiaren aurretik txertatuko da. Normalean ezarpen hau aldagaiak definitzeko erabiliko duzu.';
 $string['region-side-pre'] = 'Eskuina';
 $string['showfooter'] = 'Erakutsi orri-oina';
-$string['totop'] = 'Joan gora';
 $string['unaddableblocks'] = 'Behar ez diren blokeak';
 $string['unaddableblocks_desc'] = 'Eremu honetan zehaztutako blokeak ez dira behar azal hau erabiltzean eta ondorioz ez dira "Gehitu blokea" zerrendan agertuko.';

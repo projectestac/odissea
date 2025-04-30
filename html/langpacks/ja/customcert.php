@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'ja', version '4.1'.
+ * Strings for component 'customcert', language 'ja', version '4.4'.
  *
  * @package     customcert
  * @category    string
@@ -36,6 +36,10 @@ $string['alignright'] = '右寄せ';
 $string['awardedto'] = '授与対象';
 $string['cannotverifyallcertificates'] = 'あなたにはサイトのすべての証明書を確認するパーミッションがありません。';
 $string['certificate'] = '証明書';
+$string['certificateexecutionperiod'] = '証明書実行期間';
+$string['certificateexecutionperiod_desc'] = '0でない場合、コースが非アクティブであるか、最終発行が設定された時間より古い証明書はタスクで処理されません。これにより、スケジュールされたタスクのパフォーマンスが向上する場合があります';
+$string['certificatesperrun'] = '実行ごとの証明書数';
+$string['certificatesperrun_desc'] = 'スケジュールされたタスク実行ごとに処理する証明書の数を入力してください。0の場合はすべての証明書が処理されます';
 $string['code'] = 'コード';
 $string['copy'] = 'コピー';
 $string['coursetimereq'] = 'コース要求時間 (分)';
@@ -46,6 +50,7 @@ $string['customcert:manage'] = 'カスタム証明書を管理する';
 $string['customcert:manageemailothers'] = '他の人にメールする設定を管理する';
 $string['customcert:manageemailstudents'] = '学生にメールする設定を管理する';
 $string['customcert:manageemailteachers'] = '教師にメールする設定を管理する';
+$string['customcert:managelanguages'] = '編集フォームでの言語管理';
 $string['customcert:manageprotection'] = '保護設定を管理する';
 $string['customcert:managerequiredtime'] = '要求時間設定を管理する';
 $string['customcert:manageverifyany'] = '確認設定を管理する';
@@ -68,12 +73,17 @@ $string['deliveryoptiondownload'] = 'ブラウザに送信してファイルを�
 $string['deliveryoptioninline'] = 'ブラウザにインラインでファイルを送信する';
 $string['deliveryoptions'] = '配送オプション';
 $string['description'] = '説明';
+$string['downloadallissuedcertificates'] = '発行されたすべての証明書をダウンロード';
+$string['downloadallsitecertificates'] = 'サイトのすべての証明書をダウンロード';
+$string['downloadallsitecertificatesdesc'] = 'これにより、サイト上のすべての証明書がzipファイルとしてダウンロードされます';
 $string['duplicate'] = '複製';
 $string['duplicateconfirm'] = '複製確認';
 $string['duplicatetemplateconfirm'] = '本当にこの証明書テンプレートを複製してもよろしいですか?';
 $string['editcustomcert'] = '証明書を編集する';
 $string['editelement'] = 'エレメントを編集する';
 $string['edittemplate'] = 'テンプレートを編集する';
+$string['elementheight'] = '高さ';
+$string['elementheight_help'] = 'エレメントの高さを指定してください。「0」が許可されている場合、自動的に計算されます';
 $string['elementname'] = 'エレメント名';
 $string['elementname_help'] = 'これは証明書の編集時にこのエレメントを識別するため使用される名称です。メモ: これはPDFに表示されません。';
 $string['elementplugins'] = 'エレメントプラグイン';
@@ -82,7 +92,7 @@ $string['elements_help'] = 'これは証明書に表示されるエレメント�
 
 注意: エレメントはこの順序で表示されます。順番はそれぞれのエレメントの隣にある矢印を使って変更できます。';
 $string['elementwidth'] = '幅';
-$string['elementwidth_help'] = 'エレメントの幅を指定してください - 「0」は幅に制限がないことを意味します。';
+$string['elementwidth_help'] = 'エレメントの幅を指定してください。「0」が許可されている場合、自動的に計算されます';
 $string['emailnonstudentbody'] = '添付はコース「 {$a->coursefullname} 」における「 {$a->userfullname} 」の証明書「 {$a->certificatename} 」です。';
 $string['emailnonstudentbodyplaintext'] = '添付はコース「 {$a->coursefullname} 」における「 {$a->userfullname} 」の証明書「 {$a->certificatename} 」です。';
 $string['emailnonstudentcertificatelinktext'] = '証明書レポートを表示する';
@@ -99,6 +109,15 @@ $string['emailstudents_help'] = 'この設定を有効にした場合、証明�
 $string['emailstudentsubject'] = '{$a->coursefullname}: {$a->certificatename}';
 $string['emailteachers'] = '教師にメールする';
 $string['emailteachers_help'] = 'この設定を有効にした場合、証明書の利用可能時に証明書のコピーを教師にメール送信します。<strong>警告:</strong> あなたが証明書作成完了前にこの設定を有効にした場合、教師に不完全な証明書がメール送信されてしまいます。';
+$string['eventelementcreated'] = 'カスタム証明書エレメントが作成されました';
+$string['eventelementdeleted'] = 'カスタム証明書エレメントが削除されました';
+$string['eventelementupdated'] = 'カスタム証明書エレメントが更新されました';
+$string['eventpagecreated'] = 'カスタム証明書ページが作成されました';
+$string['eventpagedeleted'] = 'カスタム証明書ページが削除されました';
+$string['eventpageupdated'] = 'カスタム証明書ページが更新されました';
+$string['eventtemplatecreated'] = 'カスタム証明書テンプレートが作成されました';
+$string['eventtemplatedeleted'] = 'カスタム証明書テンプレートが削除されました';
+$string['eventtemplateupdated'] = 'カスタム証明書テンプレートが更新されました';
 $string['exampledatawarning'] = 'これらの値のいくつかはエレメントのポジションが可能かどうか確認するための例にできます。';
 $string['font'] = 'フォント';
 $string['font_help'] = 'このエレメントの作成時に使用されるフォントです。';
@@ -110,13 +129,19 @@ $string['getcustomcert'] = '証明書を表示する';
 $string['gradeoutcome'] = 'アウトカム';
 $string['height'] = '高さ';
 $string['height_help'] = 'これは証明書PDFの高さ (mm) です。ご参考までにA4サイズは高さ297mm、レターサイズは高さ279mmです。';
+$string['includeinnotvisiblecourses'] = '非公開コースの証明書を含める';
+$string['includeinnotvisiblecourses_desc'] = '非公開コースの証明書はデフォルトでは処理されません。それらを含めたい場合は、この設定を有効にしてください';
 $string['invalidcode'] = '無効なコードが提供されました。';
 $string['invalidcolour'] = '無効な色が選択されました。有効なHTMLカラー名、6桁または3桁の16進数カラーコードを入力してください。';
+$string['invalidelementwidthorheightnotnumber'] = '有効な数値を入力してください';
+$string['invalidelementwidthorheightzeroallowed'] = '0以上の数値を入力してください';
+$string['invalidelementwidthorheightzeronotallowed'] = '0より大きい数値を入力してください';
 $string['invalidheight'] = '高さはゼロを除く有効数字にしてください。';
 $string['invalidmargin'] = '余白はゼロを除く有効数字にしてください。';
 $string['invalidposition'] = 'ポジション {$a} には正数を選択してください。';
 $string['invalidwidth'] = '幅はゼロを除く有効数字にしてください。';
 $string['landscape'] = 'ランドスケープ';
+$string['languageoptions'] = '証明書の言語を強制する';
 $string['leftmargin'] = '左余白';
 $string['leftmargin_help'] = 'これは証明書PDFの左余白 (mm) です。';
 $string['listofissues'] = '受理者: {$a}';
@@ -140,6 +165,9 @@ $string['norecipients'] = '受理者なし';
 $string['notemplates'] = 'テンプレートなし';
 $string['notissued'] = '授与なし';
 $string['notverified'] = '未検証';
+$string['numbersuffix_nd_as_in_second'] = 'nd';
+$string['numbersuffix_rd_as_in_third'] = 'rd';
+$string['numbersuffix_st_as_in_first'] = 'st';
 $string['options'] = 'オプション';
 $string['page'] = 'ページ {$a}';
 $string['pluginadministration'] = 'カスタム証明書管理';
@@ -174,8 +202,11 @@ $string['rightmargin_help'] = 'これは証明書PDFの右余白 (mm) です。'
 $string['save'] = '保存';
 $string['saveandclose'] = '保存して閉じる';
 $string['saveandcontinue'] = '保存して続ける';
+$string['savechanges'] = '変更を保存する';
 $string['savechangespreview'] = '保存してプレビューする';
 $string['savetemplate'] = 'テンプレートを保存する';
+$string['scheduledtaskconfigdesc'] = '証明書を処理するスケジュールタスクの設定をする';
+$string['scheduledtaskconfigheading'] = 'スケジュールタスクの設定';
 $string['search:activity'] = 'カスタム証明書 - 活動情報';
 $string['setprotection'] = '保護設定';
 $string['setprotection_help'] = 'あなたがこの証明書でユーザによる実行を防ぎたい操作を選択してください。';
@@ -183,7 +214,10 @@ $string['showposxy'] = 'ポジション X および Y を表示する';
 $string['showposxy_desc'] = 'これはエレメントの編集時にユーザが設置場所を正確に指定できるようXおよびYポジションを表示します。
 
 あなたが設置場所を指定する目的で主にドラッグ＆ドロップを使用する場合、これは必要ではありません。';
+$string['subplugintype_customcertelement'] = 'エレメント';
+$string['subplugintype_customcertelement_plural'] = 'エレメント';
 $string['taskemailcertificate'] = '証明書のメール送信を処理します。';
+$string['taskissuecertificate'] = '証明書発行タスク';
 $string['templatename'] = 'テンプレート名';
 $string['templatenameexists'] = 'このテンプレート名は現在使用されています。別のテンプレート名を選択してください。';
 $string['topcenter'] = '中央';
@@ -192,6 +226,12 @@ $string['topright'] = '最上部右';
 $string['type'] = 'タイプ';
 $string['uploadimage'] = 'イメージをアップロードする';
 $string['uploadimagedesc'] = 'このリンクによりあなたがイメージをアップロードできる新しい画面に移動します。この方法でアップロードされたイメージは証明書を作成できるすべてのユーザがあなたのサイト全体で利用できます。';
+$string['useadhoc'] = 'メール証明書アドホックタスクを使用';
+$string['useadhoc_desc'] = '有効にすると、証明書に関連するメールは、各発行のために作成されたアドホックタスクを通じて即座に処理されます。無効にすると、メールは通常のスケジュールタスクによって管理されます。
+
+このオプションを有効にすると、メール処理をアドホックタスクに分担させることで、スケジュールタスクのパフォーマンスが向上する可能性があります。';
+$string['userlanguage'] = 'ユーザの設定を使用';
+$string['userlanguage_help'] = '証明書の言語をユーザの言語設定に上書きして強制することができます';
 $string['verified'] = '確認済み';
 $string['verify'] = '確認する';
 $string['verifyallcertificates'] = 'すべての証明書の確認を許可する';

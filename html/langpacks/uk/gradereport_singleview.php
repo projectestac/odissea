@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'uk', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'uk', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -68,11 +68,12 @@ $string['removeoverridesave'] = 'Видалити перевизначення';
 $string['save'] = 'Зберегти';
 $string['savegrades'] = 'Збереження оцінок';
 $string['savegradessuccess'] = 'Вставновлено оцінки для {$a} елемент(ів)';
-$string['searchgrades'] = 'Пошук предметів оцінки';
 $string['selectagrade'] = 'Виберіть елемент оцінки';
 $string['selectgradeitemlink'] = 'Виберіть елемент оцінки';
 $string['singleview:view'] = 'Перегляд єдиного перегляду';
 $string['singleviewdescription'] = 'У режимі єдиного перегляду ви можете змінити або виключити вибрані оцінки та масово вставити оцінки.';
+$string['singleviewreport_gradeitem'] = 'Єдиний перегляд для цього елемента';
+$string['singleviewreport_user'] = 'Один перегляд для цього користувача';
 $string['summarygrade'] = 'Таблиця користувачів з колонками для рангу, оцінки, відгуку та чи потрібно змінювати або виключати окрему оцінку.';
 $string['summaryuser'] = 'Таблиця елементів оцінювання з колонками для категорії оцінювання, рангу, оцінки, відгуку та чи потрібно змінювати або виключати окрему оцінку.';
 $string['unsavedataalert'] = 'Якщо у вас є незбережені зміни на сторінці, ви втратите їх, якщо продовжите масове вставлення оцінок.';

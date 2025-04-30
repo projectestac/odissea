@@ -32,7 +32,7 @@ use core_reportbuilder\local\helpers\database;
  * @copyright   2020 Paul Holden <paulh@moodle.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class column_test extends advanced_testcase {
+final class column_test extends advanced_testcase {
 
     /**
      * Test column name getter/setter
@@ -429,6 +429,22 @@ class column_test extends advanced_testcase {
             'c1_bar' => 10,
             'c1_foo' => 42,
         ]));
+    }
+
+    /**
+     * Test that column value with callback (where aggregation is not set) is returned
+     */
+    public function test_format_value_callback_aggregation(): void {
+        $column = $this->create_column('test')
+            ->set_index(1)
+            ->add_field('t.foo')
+            ->set_type(column::TYPE_INTEGER)
+            ->add_callback(static function(int $value, stdClass $values, $argument, ?string $aggregation): string {
+                // Simple callback to return the given value, and append type of aggregation parameter.
+                return "{$value} " . gettype($aggregation);
+            });
+
+        $this->assertEquals("42 NULL", $column->format_value(['c1_foo' => 42]));
     }
 
     /**

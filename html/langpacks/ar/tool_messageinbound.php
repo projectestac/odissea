@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ar', version '4.1'.
+ * Strings for component 'tool_messageinbound', language 'ar', version '4.4'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -77,8 +77,7 @@ $string['messageprocessingerrorhtml'] = '<p>لقد أرسلت مؤخراً رس�
 <p>تفاصيل الخطأ مبينة أدناه.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'لا يمكن معالجة البريد الإلكتروني "{$a->topic}". الخطأ كالتالي: "{$a->message}".';
-$string['messageprocessingfailedunknown'] = 'لا يمكن معالجة البريد الإلكتروني "{$a->topic}".
-اتصل بالمسؤول للحصول على مزيد من المعلومات.';
+$string['messageprocessingfailedunknown'] = 'لا يمكن معالجة البريد الإلكتروني "{$a->subject}". اتصل بمشرفك للحصول على مزيد من المعلومات.';
 $string['messageprocessingsuccess'] = '{$a->plain}
 
  إذا كنت لا ترغب في تلقي هذه الإشعارات مستقبلاً، فيمكنك تعديل تفضيلات المراسلة الشخصية عن طريق فتح {$a->messagepreferencesurl} في متصفحك.';

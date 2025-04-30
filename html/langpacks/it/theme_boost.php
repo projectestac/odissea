@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'it', version '4.1'.
+ * Strings for component 'theme_boost', language 'it', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -29,7 +29,9 @@ $string['advancedsettings'] = 'Impostazioni avanzate';
 $string['backgroundimage'] = 'Immagine di sfondo';
 $string['backgroundimage_desc'] = 'L\'immagine da visualizzare come sfondo del sito. L\'immagine di sfondo caricata qui sovrascriverà l\'immagine di sfondo nei file preimpostati del tema.';
 $string['bootswatch'] = 'Bootswatch';
+$string['bootswatch_desc'] = 'Un bootswatch è un set di variabili Bootstrap e css per definire lo stile Bootstrap';
 $string['brandcolor'] = 'Colore primario';
+$string['brandcolor_desc'] = 'Il colore d\'accento';
 $string['choosereadme'] = 'Boost è un tema moderno e fortemente personalizzabile. È possibile usarlo come tema del sito oppure come tema padre di altri temi che usano Bootstrap 4.';
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(zttuale)';
@@ -41,9 +43,14 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Preimpostazioni tema';
 $string['preset_desc'] = 'Seleziona una preimpostazione per cambiare il look globale del tema';
 $string['presetfiles'] = 'File addizionali di preimpostazione del tema';
-$string['presetfiles_desc'] = 'I file di preimpostazione possono modificare fortemente il tema. Per informazioni sulla creazione e sulla condivisioni di file: <a href=https://docs.moodle.org/dev/Boost_Presets>Boost presets</a>
-Per scaricare preimpostazioni: <a href="https://archive.moodle.net/boost">Presets repository</a>.';
+$string['presetfiles_desc'] = 'I file di preimpostazione possono essere utilizzati per modificare radicalmente l\'aspetto del tema. Consultare <a href="https://docs.moodle.org/dev/Boost_Presets">Potenzia le preimpostazioni</a> per informazioni sulla creazione e la condivisione dei tuoi file preimpostati e consulta <a href="https:// moodle.net/search?q=boost+presets">Archivio di preimpostazioni</a> per le preimpostazioni condivise da altri.';
+$string['privacy:drawerblockclosed'] = 'Preferenza corrente quando il cassetto è chiuso.';
+$string['privacy:drawerblockopen'] = 'Preferenza corrente quando il cassetto è aperto.';
+$string['privacy:drawerindexclosed'] = 'Preferenza corrente quando il cassetto indice è chiuso.';
+$string['privacy:drawerindexopen'] = 'Preferenza corrente quando il cassetto indice è aperto.';
 $string['privacy:metadata'] = 'Il tema Boost non memorizza dati personali.';
+$string['privacy:metadata:preference:draweropenblock'] = 'Preferenza utente del cassetto, aperto o chiuso';
+$string['privacy:metadata:preference:draweropenindex'] = 'Preferenza utente del cassetto indice del corso, aperto o chiuso';
 $string['privacy:metadata:preference:draweropennav'] = 'Preferenza dell\'utente di nascondere o mostrare il menu di navigazione a comparsa.';
 $string['rawscss'] = 'SCSS grezzo';
 $string['rawscss_desc'] = 'Utilizzare il campo per impostare un SCSS o CSS che sarò inserito alla fine fine del foglio di stile';
@@ -51,6 +58,5 @@ $string['rawscsspre'] = 'SCSS grezzo iniziale';
 $string['rawscsspre_desc'] = 'Utilizzare il campo per impostare un SCSS di inizializzazione che sarò inserito prima di qualsiasi altra cosa. Generalmente utilizzato per definire variabili.';
 $string['region-side-pre'] = 'Destra';
 $string['showfooter'] = 'Visualizza piè di pagina';
-$string['totop'] = 'Vai all\'inizio';
 $string['unaddableblocks'] = 'Blocchi non necessari';
 $string['unaddableblocks_desc'] = 'I blocchi specificati non sono necessari per l\'utilizzo di questo tema e non verranno elencati nel menu "Aggiungi un blocco".';

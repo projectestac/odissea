@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_pdf', language 'fr', version '4.1'.
+ * Strings for component 'assignfeedback_pdf', language 'fr', version '4.4'.
  *
  * @package     assignfeedback_pdf
  * @category    string
@@ -110,7 +110,7 @@ $string['openlinknewwindow'] = 'Ouvrir le lien dans une nouvelle fenêtre';
 $string['opennewwindow'] = 'Ouvrir cette page dans une nouvelle fenêtre';
 $string['ovalicon'] = 'o - ovales';
 $string['pagenumber'] = 'No de page';
-$string['pagenumbertoobig'] = 'N° de page demandé supérieur au nombre de pages  ({$a->pageno} > {$a->pagecount})';
+$string['pagenumbertoobig'] = 'N° de page demandé supérieur au nombre de pages ({$a->pageno} > {$a->pagecount})';
 $string['pagenumbertoosmall'] = 'No de page demandé inférieur à 1';
 $string['pdf'] = 'Feedback PDF';
 $string['pluginname'] = 'Feedback PDF';

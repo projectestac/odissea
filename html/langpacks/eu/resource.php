@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'eu', version '4.1'.
+ * Strings for component 'resource', language 'eu', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -106,10 +106,10 @@ $string['resource:addinstance'] = 'Gehitu baliabide berria';
 $string['resource:exportresource'] = 'Esportatu baliabidea';
 $string['resource:view'] = 'Ikusi baliabidea';
 $string['resourcecontent'] = 'Fitxategiak eta azpikarpetak';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Fitxategia';
 $string['selectmainfile'] = 'Aukeratu mesedez fitxategi nagusia fitxategiaren izenaren ondoan dagoen ikonoan klik eginda.';
 $string['showdate'] = 'Erakutsi igotze/aldatze data';

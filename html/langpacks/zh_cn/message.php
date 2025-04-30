@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', version '4.1'.
+ * Strings for component 'message', language 'zh_cn', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = '联系人';
 $string['conversationactions'] = '对话操作菜单';
 $string['decline'] = '拒绝';
 $string['defaultmessageoutputs'] = '通知设置';
-$string['defaults'] = '默认';
 $string['deleteallconfirm'] = '您确定要删除整个对话吗?这不会删除其他对话参与人的对话。';
 $string['deleteallmessages'] = '删除所有信息';
 $string['deleteallselfconfirm'] = '您确定要删除整个个人对话吗？';
@@ -66,9 +65,9 @@ $string['deleteselectedmessagesconfirm'] = '你确信要删除选择的消息吗
 $string['deleteselectedmessagesconfirmselfconversation'] = '你确信要删除选择的个人消息吗？';
 $string['disableall'] = '禁用通知';
 $string['disabled'] = '本站禁止发消息';
-$string['disallowed'] = '禁用';
+$string['disallowed'] = '已锁定';
 $string['editmessages'] = '编辑信息';
-$string['emailtagline'] = '这封邮件是“{$a->sitename}”上发给您的消息的副本。到{$a->url}回复。';
+$string['emailtagline'] = '这是在网站 {$a->sitename} 上发送给您的消息的副本。前往 <a href=“{$a->url}”>{$a->url}</a> 进行回复。';
 $string['enabled'] = '启用';
 $string['errorcallingprocessor'] = '调用定义的处理器出错';
 $string['errorconversationdoesnotexist'] = '会话不存在';
@@ -84,7 +83,7 @@ $string['eventmessageuserunblocked'] = '解除屏蔽的用户';
 $string['eventmessageviewed'] = '已查看消息';
 $string['eventnotificationsent'] = '已发送通知';
 $string['eventnotificationviewed'] = '已查看通知';
-$string['forced'] = '强制';
+$string['forced'] = '已锁定';
 $string['forcedmessage'] = '锁定';
 $string['groupconversations'] = '小组';
 $string['groupinfo'] = '小组信息';
@@ -97,11 +96,7 @@ $string['info'] = '用户信息';
 $string['isnotinyourcontacts'] = '{$a}不是您的联系人';
 $string['loadmore'] = '加载更多';
 $string['loggedin'] = '在线';
-$string['loggedin_help'] = '配置当你登录到Moodle时怎么接收消息';
-$string['loggedindescription'] = '当我在线时';
 $string['loggedoff'] = '离线';
-$string['loggedoff_help'] = '配置当你没有登录到Moodle时怎么接收消息';
-$string['loggedoffdescription'] = '当我离线时';
 $string['managemessageoutputs'] = '默认通知首选项';
 $string['message'] = '消息';
 $string['messagecontactrequest'] = '{$a->user} 请求添加为联系人。 访问您的<a href="{$a->url}">联系请求</a>页面以响应请求';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = '消息已发送给 1 人';
 $string['sendbulkmessagesingle'] = '向 1 人发送消息';
 $string['sendcontactrequest'] = '发送联系人请求';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = '正通过“{$a->processor}”发送“{$a->provider}”';
 $string['sendingviaenabled'] = '通过“{$a->processor}”启用状态发送“{$a->provider}”';
 $string['sendingvialocked'] = '通过“{$a->processor}”锁定状态发送“{$a->provider}”';
-$string['sendingviawhen'] = '{$a->state}时通过“{$a->processor}”发送“{$a->provider}”';
 $string['sendmessage'] = '发送消息';
 $string['sendmessageto'] = '发消息给 {$a}';
 $string['sendmessagetopopup'] = '发送消息给 {$a} - 新窗口';
@@ -257,7 +250,7 @@ $string['shownotificationwindowwithcount'] = '显示{$a} 新通知的通知窗�
 $string['togglemessagemenu'] = '消息菜单开关';
 $string['togglenotificationmenu'] = '通知菜单开关';
 $string['totalconversations'] = '{$a} 个会话总数';
-$string['touserdoesntexist'] = '您不能向不存在的用户id（{$a}）发送消息';
+$string['touserdoesntexist'] = '您不能向不存在的用户ID（{$a}）发送消息';
 $string['unabletomessage'] = '您无法向此用户发送消息';
 $string['unblock'] = '解除屏蔽';
 $string['unblockcontact'] = '对联系人解除屏蔽';
@@ -266,18 +259,19 @@ $string['unblockuserconfirm'] = '您确定要取消屏蔽{$a}吗？';
 $string['unknownuser'] = '未知用户';
 $string['unmuteconversation'] = '取消静音';
 $string['unreadconversations'] = '有 {$a} 个未读对话';
-$string['unreadmessages'] = '未读消息（{$a}）';
+$string['unreadmessages'] = '有 {$a} 条未读消息';
 $string['unreadnewgroupconversationmessage'] = '{$a->conversationname} 中来自 {$a->name} 的新消息';
 $string['unreadnewmessage'] = '来自{$a}的新消息';
 $string['unreadnotification'] = '未读通知：{$a}';
 $string['unreadnotifications'] = '有 {$a} 条未读通知';
 $string['useentertosend'] = '按回车键发送';
-$string['usercantbemessaged'] = '由于消息偏好设置你不能给{$a}发消息。请尝试加为联系人。';
+$string['usercantbemessaged'] = '由于消息偏好设置你不能给 {$a} 发消息。请尝试加其为联系人。';
 $string['userwouldliketocontactyou'] = '{$a}想与您联系';
 $string['viewfullnotification'] = '查看完整通知';
 $string['viewmessageswith'] = '查看带有 {$a} 的消息';
 $string['viewnotificationresource'] = '转到：{$a}';
 $string['viewunreadmessageswith'] = '使用 {$a} 查看未读消息';
+$string['waitingforcontactaccept'] = '等待添加为联系人';
 $string['wouldliketocontactyou'] = '想和您联系';
 $string['writeamessage'] = '写一条消息...';
 $string['you'] = '您：';

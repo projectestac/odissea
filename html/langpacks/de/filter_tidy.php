@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tidy', language 'de', version '4.1'.
+ * Strings for component 'filter_tidy', language 'de', version '4.4'.
  *
  * @package     filter_tidy
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'HTML Tidy';
 $string['privacy:metadata'] = 'Das Plugin \'HTML Tidy\' speichert keine personenbezogenen Daten.';
+$string['tidyextensionrequired'] = 'Für diesen Filter muss die PHP-Extension \'tidy\' installiert sein.';

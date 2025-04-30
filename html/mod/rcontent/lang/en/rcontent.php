@@ -3,6 +3,7 @@ $string['rcontent'] = 'Remote content';
 $string['pluginname'] = 'Remote content';
 $string['modulename'] = 'Remote content';
 $string['modulenameplural'] = 'Remote contents';
+$string['subplugintype_rcontent_plural'] = 'Remote contents';
 $string['modulename_help'] = '<p>With Remote Content you can easily add digital books from authorized book providers.</p>';
 $string['pluginadministration'] = 'Remote content administration';
 

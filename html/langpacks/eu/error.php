@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', version '4.1'.
+ * Strings for component 'error', language 'eu', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -116,7 +116,7 @@ $string['cannotinsertrecord'] = 'Ezin da {$a} ID-a duen erregistro berria txerta
 $string['cannotmailconfirm'] = 'Errorea pasahitza aldatzeko berresteko e-maila bidaltzean';
 $string['cannotmanualctrack'] = 'Jarduerak ez du eskuz osatutzat emateko jarraipenik';
 $string['cannotmapfield'] = 'Parekatze kolisioa aurkitu da - bi eremuk kalifikazio-elementu berarekin parekatuta daude {$a}';
-$string['cannotmarktopic'] = 'Ezin da gai hau markatu ikastaro honetan';
+$string['cannotmarktopic'] = 'Ezin da atal hau markatu ikastaro honetan';
 $string['cannotmigratedatacomments'] = 'Ezin dira iruzkinak migratu datuen modulutik';
 $string['cannotmodulename'] = 'Ezin da modulu-izena lortu nabigazioa eraikitzean';
 $string['cannotmoduletype'] = 'Ezin da modulu mota lortu nabigazioa eraikitzean';
@@ -234,7 +234,11 @@ $string['dmlparseexception'] = 'Errorea SQL kontsulta aztertzean';
 $string['dmlreadexception'] = 'Errorea datu-basetik irakurtzean';
 $string['dmltransactionexception'] = 'Errorea datu-basearekiko transakzioan';
 $string['dmlwriteexception'] = 'Errorea datu-basean idaztean';
-$string['downgradedcore'] = 'ERROREA! Erabiltzen ari zaren kodea ZAHARRAGOA da datu-base hauek eraiki zituen bertsioa baino.';
+$string['dndmaxbytes'] = 'Fitxategia handiegia da. Baimendutako gehienezko tamaina {$a->size} da.';
+$string['dndread'] = 'Errorea fitxategia irakurtzerakoan';
+$string['dndunkownfile'] = 'Fitxategi-mota hau ez dago onartuta';
+$string['dndupload'] = 'Errorea gertatu da fitxategia igotzerakoan';
+$string['downgradedcore'] = 'Errorea: Erabiltzen ari zaren kodea datu-base hauek eraiki zituen bertsioa baino zaharragoa da.';
 $string['downloadedfilecheckfailed'] = 'Jaitsitako fitxategiaren egiaztatzeak huts egin du.';
 $string['duplicatefieldname'] = '"{$a}" eremuaren izen bikoiztua atzeman da';
 $string['duplicatenosupport'] = '\'{$a->modname}\' jarduera ezin da bikoiztu {$a->modtype} moduluak ez duelako segurtasun-kopia eta berreskuratzea onartzen.';
@@ -242,6 +246,7 @@ $string['duplicateparaminsql'] = 'ERROREA: parametro bikoiztua kontsultan';
 $string['duplicaterolename'] = 'Dagoeneko bada izen hori duen rola!';
 $string['duplicateroleshortname'] = 'Dagoeneko bada izen labur hori duen rola!';
 $string['duplicateusername'] = 'Bikoiztutako erabiltzaile-izena - erregistroa alde batera utzi da';
+$string['editedpagenotfound'] = 'Sistemak ezin izan du zehaztu zauden orria. Freskatu orria eta berriz saiatu zaitez.';
 $string['emailfail'] = 'E-mail bidaltzeak huts egin du';
 $string['encryption_decryptfailed'] = 'Deszifratzeak huts egin du';
 $string['encryption_encryptfailed'] = 'Zifratzeak huts egin du';
@@ -378,7 +383,7 @@ $string['invalidrole'] = 'Rol baliogabea';
 $string['invalidroleid'] = 'Rolaren ID baliogabea';
 $string['invalidscaleid'] = 'Eskalaren IDa ezegokia';
 $string['invalidsection'] = 'Ikastaro moduluaren erregistroak atal baliogabea dauka';
-$string['invalidsesskey'] = 'Badirudi zure saioa iraungi dela. Mesedez, sar zaitez berriz.';
+$string['invalidsesskey'] = 'Badirudi zure saioa iraungi dela. Egiaztatu mesedez berriz ere saioa hasi duzun edo joan atzera eta orria berriz kargatu ezazu.';
 $string['invalidshortname'] = 'Ikastaroaren izen labur baliogabea';
 $string['invalidsourcefield'] = 'Zirriborro-fitxategiaren jatorrizko eremua ez da baliozkoa';
 $string['invalidstatedetected'] = 'Zerbait gaizki joan da: {$a}. Honek ez luke normalean gertatu behar.';
@@ -427,6 +432,10 @@ $string['moduledisable'] = 'Modulu hau ({$a}) desgaituta dago ikastaro jakin hon
 $string['moduledoesnotexist'] = 'Modulu hau ez da existitzen';
 $string['moduleinstancedoesnotexist'] = 'Modulu honen erregistroa ez da existitzen';
 $string['modulemissingcode'] = '{$a} moduluak ez dauka funtzio hau aurrera eramateko beharrezko kodea.';
+$string['moodlenet:invalidshareformat'] = 'MoodleNet partekatze-formatu ezegokia';
+$string['moodlenet:invalidsharestatus'] = 'MoodleNet partekatze-egoera ezegokia';
+$string['moodlenet:invalidsharetype'] = 'MoodleNet partekatze-mota baliogabea';
+$string['moodlenet:usernotconfigured'] = 'Ez duzu MoodleNet-era edukia partekatzeko baimenik, ala zure kontua ez dago ondo konfiguratuta.';
 $string['movecatcontentstoroot'] = 'Kategoriaren edukiak jatorrizkora mugitzea ez dago baimenduta. Edukiak existitzen den kategoria batera mugitu behar dituzu!';
 $string['movecatcontentstoselected'] = 'Kategoriako edukietako batzuk ezin dira aukeratutako kategoriara mugitu.';
 $string['movecategorynotpossible'] = 'Ezin duzu \'{$a}\' kategoria mugitu aukeratutako kategoriara.';
@@ -498,8 +507,10 @@ $string['opensslsignerror'] = 'OpenSSLk ezin ditu datuak sinatu';
 $string['orderidnotfound'] = '{$a} ordenatze-IDa ez da aurkitu';
 $string['pagenotexist'] = '<p>Ezohiko errore bat gertatu da ez dagoen orri batera sartzeko saiakera egitean:</p>{$a}';
 $string['pagenotexisttitle'] = '404 Errorea: Fitxategia ez da aurkitu';
+$string['passwordexceeded'] = 'Pasahitzak ezin du {$a} baino karaktere gehiago eduki.';
 $string['pathdoesnotstartslash'] = 'Ez dira baliozko argumentuak eman, bidea ez da barra batekin hasten!';
 $string['pleasereport'] = 'Denbora baduzu, errorea gertatu zenean zertan saiatzen ari zinen jakinaraz iezaguzu, mesedez:';
+$string['pluginnotexist'] = '{$a} plugina ez da existitzen';
 $string['pluginrequirementsnotmet'] = '"{$a->pluginname}" ({$a->pluginversion}) plugina ezin izan da instalatu. Moodleren bertsio berriagoa behar duzu (zure bertsioa {$a->currentmoodle} da, eta plugin-ak behar duena {$a->requiremoodle} da)';
 $string['pluginunsupported'] = '"{$a->pluginname}" pluginak {$a->pluginversion} ez du onartzen Moodleko bertsio hau {$a->moodleversion}. Begiratu ezazu pluginaren informazioa onartzen den bertsioa aurkitzeko.';
 $string['prefixcannotbeempty'] = '<p>Errorea: datu-basearen taularen aurrizkia ezin da hutsik egon ({$a})</p> <p>Guneko kudeatzaileak arazo hau konpondu behar du.</p>';
@@ -510,6 +521,7 @@ $string['processingstops'] = 'Prozesamendua hemen geratu da. Gainontzeko erregis
 $string['protected_cc_not_supported'] = 'Babestutako cartridge-ak ez dira onartzen.';
 $string['querystringcannotbeempty'] = 'Kontsultaren katea ezin da hutsik egon.';
 $string['redirecterrordetected'] = 'Onartzen ez den berbideraketa atzeman da, script-aren exekuzioa amaitu da';
+$string['redissessionhandlerproblem'] = 'Redis saioaren konfigurazioak huts egin du. Jakinarazi mesedez guneko kudeatzaileari.';
 $string['refoundto'] = 'Ezin zaio {$a}(e)ri dirua itzuli';
 $string['refoundtoorigi'] = 'Jatorrizko diru-kopurua itzuli zaio: {$a}';
 $string['registrationdisabled'] = 'Erregistroa desgaituta dago gune honetan';
@@ -584,7 +596,7 @@ $string['unknowncoursesection'] = 'Ikastaro-atal ezezaguna "{$a}" ikastaroan';
 $string['unknownevent'] = 'Ekitaldi ezezaguna';
 $string['unknownfiletype'] = 'Errorea: iragazki mota ezezaguna';
 $string['unknowngroup'] = '"{$a}" talde ezezaguna';
-$string['unknownhelp'] = '{$a} laguntza-gaia ezezaguna';
+$string['unknownhelp'] = '{$a} laguntza-atal ezezaguna';
 $string['unknownjsinrequirejs'] = 'Ezin da {$a} JavaScript liburutegia aurkitu.';
 $string['unknownmodulename'] = 'Moduluaren izena ezezaguna da formulariorako';
 $string['unknownrole'] = '"{$a}" rol ezezaguna';
@@ -612,6 +624,7 @@ $string['usermustbemnet'] = 'MNET sarbide-kontrolerako zerrendako erabiltzaileak
 $string['usernamelowercase'] = 'Erabiltzailearen izena letra xehez idatzi behar da';
 $string['usernotaddederror'] = 'Erabiltzailea ez da gehitu - errorea';
 $string['usernotaddedregistered'] = 'Erabiltzailea ez da gehitu - dagoeneko existitzen da';
+$string['usernotaddedusernameexists'] = 'Erabiltzailea ez da gehitu - erabiltzaile-izena dagoeneko existitzen da beste helbide elektroniko batekin';
 $string['usernotavailable'] = 'Ezin dituzu erabiltzaile honen xehetasunak ikusi';
 $string['usernotdeletedadmin'] = 'Erabiltzailea ez da ezabatu kudeatzaileen kontuak ezin direlako ezabatu.';
 $string['usernotdeleteddeleted'] = 'Erabiltzaile hau ezabatua izan da dagoeneko.';

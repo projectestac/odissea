@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'it', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'it', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,8 +45,9 @@ $string['devicetoken'] = 'Token dispositivo';
 $string['donotsendnotification'] = 'Non inviare nessuna notifica';
 $string['enableprocessor'] = 'Abilita le notifiche mobile';
 $string['encryptnotifications'] = 'Crittografa notifiche';
+$string['encryptnotifications_help'] = 'Abilita la crittografia end-to-end delle notifiche dell\'app. Qualora alcuni dati non possano essere crittografati, saranno rimossi dalla notifica';
 $string['encryptprocessing'] = 'Per i dispositivi che non supportano la crittografia';
-$string['encryptprocessing_desc'] = 'Per favore definire il comportamento quando un dispositivo di destinazione non supporta la crittografia (supporto solo per Android 6 e IOS 13 e superiori)';
+$string['encryptprocessing_desc'] = 'Le notificje crittografate richiesdono come minimo Android 8 o iOS 13 e l\'app Moodle 4.2 o successiva.';
 $string['errorretrievingkey'] = 'Si è verificato un errore durante il recupero della chiave. Per utilizzare il servizio, il sito deve essere registrato. Se il sito è già registrato, provare ad aggiornare la registrazione. In alternativa è possibile ottenere una chiave di accesso creando un account su <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['keyretrievedsuccessfully'] = 'La chiave è stata recuperata correttamente. Per accedere alle statistiche di utilizzo della Moodle App, per favore creare un account sul <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['messageprovidersempty'] = 'Non ci sono notifiche mobili abilitate nelle preferenze predefinite di notifica .';

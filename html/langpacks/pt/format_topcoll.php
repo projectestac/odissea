@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'pt', version '4.1'.
+ * Strings for component 'format_topcoll', language 'pt', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Adicionar secção';
 $string['arrow'] = 'Seta';
 $string['bulb'] = 'Lâmpada';
 $string['center'] = 'Centro';
@@ -50,7 +49,6 @@ $string['coursesectionactivityfurtherinformationlesson'] = 'Mostrar informação
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Mostrar informações da lição. Aos professores/administradores será mostrado o número de submissões.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Mostrar informação do teste';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Mostrar informações do teste Aos professores/administradores será mostrado o número de submissões.';
-$string['creatingsection'] = 'A criar nova secção';
 $string['ctreset'] = 'Opções da reposição do formato Tópicos Contraídos';
 $string['ctreset_help'] = 'Repor predefinições do formato Tópicos Contraídos';
 $string['currentsection'] = 'Esta secção';
@@ -158,9 +156,6 @@ $string['displayinstructions'] = 'Mostrar instruções';
 $string['displayinstructions_help'] = 'Estabelece se as instruções são ou não exibidas ao utilizador';
 $string['donotshowdate'] = 'Não mostrar a data';
 $string['donotshowdate_help'] = 'Não mostrar a data quando utiliza uma estrutura baseada em semanas e a opção "Usar nome predefinido da secção" não está ativa.';
-$string['duplicate'] = 'Duplicar';
-$string['duplicateconfirm'] = 'Tem a certeza de que pretende duplicar a secção atual? Esta operação pode demorar algum tempo, dependendo do número de atividades/recursos existentes.';
-$string['duplicating'] = 'A duplicar';
 $string['editsection'] = 'Editar secção';
 $string['editsectionname'] = 'Editar nome da secção';
 $string['em0_0'] = '0,0em';
@@ -204,7 +199,6 @@ $string['em3_7'] = '3,7em';
 $string['em3_8'] = '3,8em';
 $string['em3_9'] = '3,9em';
 $string['em4_0'] = '4,0em';
-$string['errornosectioninfo'] = 'O tópico indicado não possui informações';
 $string['eye'] = 'Olho';
 $string['feedbackavailable'] = 'Feedback disponível';
 $string['folder'] = 'Pasta';
@@ -214,7 +208,7 @@ $string['formatsettings'] = 'Repor predefinições do formato';
 $string['formatsettingsinformation'] = '<br />Para repor as configurações do formato para os valores predefinidos, clique no ícone à direita.';
 $string['four'] = 'Quatro';
 $string['groundsignal'] = 'Sinal de massa';
-$string['hidefromothers'] = 'Ocultar secção';
+$string['hidefromothers'] = 'Ocultar';
 $string['information'] = 'Informação';
 $string['informationchanges'] = 'Alterações';
 $string['instructions'] = 'Instruções: Clique no nome da secção para mostar/ocultar';
@@ -228,6 +222,7 @@ $string['maincoursepage'] = 'Página principal da disciplina';
 $string['markedthissection'] = 'Esta secção está destacada como a secção atual';
 $string['markthissection'] = 'Destacar esta secção como a secção atual';
 $string['medium'] = 'Médio';
+$string['newsection'] = 'Nova secção';
 $string['newsectionname'] = 'Novo nome da secção {$a}';
 $string['numbersections'] = 'Número de secções';
 $string['off'] = 'Desligado';
@@ -242,12 +237,9 @@ $string['point'] = 'Ponto';
 $string['power'] = 'Pólo';
 $string['privacy:metadata:preference:toggle'] = 'O estado dos comutadores na disciplina.';
 $string['privacy:request:preference:toggle'] = 'O ID da disciplina "{$a->name}" tem o valor "{$a->value}", o que representa "{$a->decoded}" para o estado dos comutadores.';
-$string['progresscounter'] = 'A duplicar atividades ({$a->current}/{$a->size})';
-$string['progressfull'] = 'A duplicar tópico';
 $string['radio'] = 'Botão Rádio';
 $string['readme_desc'] = 'Clique em \'{$a->url}\' para mais informações sobre o formato Tópicos Contraídos.';
 $string['readme_title'] = 'Leia-me do Tópicos Contraídos';
-$string['rebuildcoursecache'] = 'Reconstruir a cache da disciplina';
 $string['resetallcolour'] = 'Cores';
 $string['resetallcolour_help'] = 'Repõe as cores e as opacidades de modo a respeitar o valor predefinido do site.';
 $string['resetalldisplayinstructions'] = 'Mostrar instruções';
@@ -344,7 +336,7 @@ $string['setviewsinglesectionenabled'] = 'Visualizar secção única ativada';
 $string['setviewsinglesectionenabled_help'] = 'Funcionalidade Visualizar secção única ativada.';
 $string['showadditionalmoddata'] = 'Mostrar informações adicionais de: {$a} na disciplina';
 $string['showadditionalmoddata_help'] = 'Permitir que todos os utilizadores vejam o prazo da atividade e os utilizadores com permissão de avaliação vejam o número de submissões na página da disciplina para atividades.';
-$string['showfromothers'] = 'Mostrar secção';
+$string['showfromothers'] = 'Mostrar';
 $string['sidepost'] = 'Direita';
 $string['sidepre'] = 'Conteúdo';
 $string['small'] = 'Pequeno';

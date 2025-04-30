@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'es', version '4.1'.
+ * Strings for component 'block_community', language 'es', version '4.4'.
  *
  * @package     block_community
  * @category    string
@@ -97,6 +97,12 @@ $string['orderbypublisher'] = 'Autor';
 $string['orderbyratingaverage'] = 'Valoración';
 $string['outcomes'] = 'Competencias: {$a}';
 $string['pluginname'] = 'Buscador de comunidad';
+$string['privacy:metadata:block_community'] = 'El Bloque Comunidad almacena enlaces a cursos compartidos comunitarios, en los cuales los usuarios se pueden inscribir.';
+$string['privacy:metadata:block_community:coursedescription'] = 'La descripción del curso comunitario enlazado.';
+$string['privacy:metadata:block_community:coursename'] = 'El nombre del curso comunitario enlazado.';
+$string['privacy:metadata:block_community:courseurl'] = 'La URL del curso del curso comunitario enlazado.';
+$string['privacy:metadata:block_community:imageurl'] = 'La URL de la imagen del curso comunitario enlazado.';
+$string['privacy:metadata:block_community:userid'] = 'La ID del usuario que creó el curso comunitario enlazado.';
 $string['rateandcomment'] = 'Valorar y comentar';
 $string['rating'] = 'Valoración';
 $string['removecommunitycourse'] = 'Eliminar curso comunitario';

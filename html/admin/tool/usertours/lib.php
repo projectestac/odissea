@@ -22,9 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-use core\output\inplace_editable;
+use core_external\external_api;
 use tool_usertours\helper;
 
 /**
@@ -33,7 +31,7 @@ use tool_usertours\helper;
  * @param string $itemtype The type of item.
  * @param int $itemid The ID of the item.
  * @param mixed $newvalue The new value
- * @return inplace_editable
+ * @return \core\output\inplace_editable
  */
 function tool_usertours_inplace_editable($itemtype, $itemid, $newvalue) {
     $context = \context_system::instance();
@@ -66,13 +64,6 @@ function tool_usertours_inplace_editable($itemtype, $itemid, $newvalue) {
  * Extend the user navigation to bootstrap tours.
  */
 function tool_usertours_extend_navigation_user() {
-    \tool_usertours\helper::bootstrap();
-}
-
-/**
- * Add JS to bootstrap tours. Only in Moodle 3.3+
- */
-function tool_usertours_before_footer() {
     \tool_usertours\helper::bootstrap();
 }
 

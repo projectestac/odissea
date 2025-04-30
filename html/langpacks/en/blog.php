@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'en', version '4.1'.
+ * Strings for component 'blog', language 'en', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blog about {$a->modtype}: {$a->modname}';
 $string['association'] = 'Association';
 $string['associations'] = 'Associations';
 $string['associationunviewable'] = 'This entry cannot be viewed by others until a course is associated with it or the \'Publish to\' field is changed';
+$string['author'] = 'Author';
 $string['autotags'] = 'Add these tags';
 $string['autotags_help'] = 'Enter one or more local tags (separated by commas) that you want to automatically add to each blog entry copied from the external blog into your local blog.';
 $string['backupblogshelp'] = 'If enabled then blogs will be included in SITE automated backups';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blog about this {$a->type}';
 $string['blogaboutthiscourse'] = 'Add an entry about this course';
 $string['blogaboutthismodule'] = 'Add an entry about this {$a}';
 $string['blogadministration'] = 'Blog administration';
+$string['blogattachment'] = 'Blog attachment';
 $string['blogdeleteconfirm'] = 'Delete the blog entry \'{$a}\'?';
 $string['blogdisable'] = 'Blogging is disabled!';
 $string['blogentries'] = 'Blog entries';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Blogs';
 $string['blogscourse'] = 'Course blogs';
 $string['blogssite'] = 'Site blogs';
 $string['blogtags'] = 'Blog tags';
+$string['cannoteditentryorblog'] = 'You cannot edit this entry or blog';
 $string['cannotviewcourseblog'] = 'You do not have the required permissions to view blogs in this course';
 $string['cannotviewcourseorgroupblog'] = 'You do not have the required permissions to view blogs in this course/group';
 $string['cannotviewsiteblog'] = 'You do not have the required permissions to view all site blogs';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Entry description';
 $string['entryerrornotyours'] = 'This entry is not yours';
 $string['entrysaved'] = 'Your entry has been saved';
 $string['entrytitle'] = 'Entry title';
+$string['entrytitlewithlink'] = 'Entry title with link';
 $string['eventblogassociationadded'] = 'Blog association created';
 $string['eventblogassociationdeleted'] = 'Blog association deleted';
 $string['eventblogentriesviewed'] = 'Blog entries viewed';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'Incorrect blog filter type specified';
 $string['intro'] = 'This RSS feed was automatically generated from one or more blogs.';
 $string['invalidgroupid'] = 'Invalid group ID';
 $string['invalidurl'] = 'This URL is unreachable';
-$string['linktooriginalentry'] = 'Link to original blog entry';
+$string['linktooriginalentry'] = 'Original blog entry';
 $string['maxexternalblogsperuser'] = 'Maximum number of external blogs per user';
 $string['myprofileuserblogs'] = 'View all blog entries';
 $string['name'] = 'Name';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'The ID of the user who added the blog
 $string['privacy:metadata:post:usermodified'] = 'The user who last modified the entry';
 $string['privacy:path:blogassociations'] = 'Associated blog posts';
 $string['privacy:unknown'] = 'Unknown';
+$string['published'] = 'Published';
 $string['publishto'] = 'Publish to';
 $string['publishto_help'] = 'There are 3 options:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'There are 3 options:
 $string['publishtocourse'] = 'Users sharing a course with you';
 $string['publishtocourseassoc'] = 'Members of the associated course';
 $string['publishtocourseassocparam'] = 'Members of {$a}';
+$string['publishtodraft'] = 'Draft';
 $string['publishtogroup'] = 'Users sharing a group with you';
 $string['publishtogroupassoc'] = 'Your group members in the associated course';
 $string['publishtogroupassocparam'] = 'Your group members in {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'View all entries';
 $string['viewuserentries'] = 'View all entries by {$a}';
 $string['worldblogs'] = 'The world can read entries set to be world-accessible';
 $string['wrongexternalid'] = 'Wrong external blog ID';
-$string['wrongpostid'] = 'Wrong blog post id';

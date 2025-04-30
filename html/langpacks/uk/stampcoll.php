@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'stampcoll', language 'uk', version '4.1'.
+ * Strings for component 'stampcoll', language 'uk', version '4.4'.
  *
  * @package     stampcoll
  * @category    string

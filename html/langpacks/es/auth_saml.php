@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml', language 'es', version '4.1'.
+ * Strings for component 'auth_saml', language 'es', version '4.4'.
  *
  * @package     auth_saml
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_saml_autologin'] = 'Ingreso Automático SAML';
+$string['auth_saml_autologin'] = 'Acceso Automático SAML';
 $string['auth_saml_course_mapping_dsn'] = 'DSN del curso';
 $string['auth_saml_course_mapping_sql'] = 'SQL del curso';
 $string['auth_saml_course_not_found'] = 'Saml  del curso {$a->course} no encontrado para el usuario  {$a->user}\\n';
@@ -63,7 +63,7 @@ $string['auth_saml_initialize_roles'] = 'Inicializar rol';
 $string['auth_saml_jit_not_active'] = 'La cuenta del usuario {\\$a} no existe y está deshabilitado el provisionamiento de último minuto (just-in-time)';
 $string['auth_saml_logfile'] = 'Ruta al archivo de bitácora';
 $string['auth_saml_logfile_description'] = 'Configurar un nombre de archivo si quiere que se anoten en bitácora los errores del plugin SAML en un archivo diferente al SYSLOG (Use una ruta absoluta o Moodle guardará este archivo en la carpeta moodledata)';
-$string['auth_saml_loginusing'] = 'Ingrese aquí usando su nombre de usuario y contraseña';
+$string['auth_saml_loginusing'] = 'Acceda aquí usando su nombre de usuario y contraseña';
 $string['auth_saml_logo_info'] = 'Descripción de entrada a SAML';
 $string['auth_saml_logo_info_description'] = 'Descripciónque se mostrará debajo del botón de entrada a SAML';
 $string['auth_saml_logo_path'] = 'Imagen de SAML';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ca', version '4.1'.
+ * Strings for component 'auth_db', language 'ca', version '4.4'.
  *
  * @package     auth_db
  * @category    string
@@ -53,8 +53,7 @@ $string['auth_dbnoexttable'] = 'No s\'ha especificat la taula externa.';
 $string['auth_dbnouserfield'] = 'No s\'ha especificat el camp d\'usuari extern.';
 $string['auth_dbpass'] = 'Contrasenya corresponent al nom d\'usuari anterior';
 $string['auth_dbpass_key'] = 'Contrasenya';
-$string['auth_dbpasstype'] = '<p>Especifiqueu el format que utilitza el camp de la contrasenya.</p>
-<p>Utilitzeu «interna» si voleu que la base de dades externa gestioni els noms d\'usuari i les adreces de correu, i Moodle per gestionar les contrasenyes. Si utilitzeu aquesta opció és <i>obligatori</i> proporcionar una adreça de correu en un camp de la base de dades externa, i haureu d\'executar regularment tant l\'admin/cron.php com l\'auth/db/cli/sync_users.php. Moodle enviarà un correu electrònic als usuaris nous amb una contrasenya temporal.</p>';
+$string['auth_dbpasstype'] = '<p>Especifiqueu el format que fa servir el camp de contrasenya.</p> <p>Utilitzeu «intern» si voleu que la base de dades externa gestioni els noms d\'usuari i les adreces de correu electrònic, però Moodle gestioni les contrasenyes. Si utilitzeu «intern», heu de proporcionar un camp d\'adreça de correu electrònic emplenat a la base de dades externa i heu d\'habilitar la tasca programada \\auth_db\\task\\sync_users. Moodle enviarà un missatge de correu electrònic als usuaris nous amb una contrasenya temporal.</p>';
 $string['auth_dbpasstype_key'] = 'Format de la contrasenya';
 $string['auth_dbreviveduser'] = 'S\'ha restaurat l\'usuari {$a->name} amb ID  {$a->id}';
 $string['auth_dbrevivedusererror'] = 'S\'ha produït un error en restaurar l\'usuari {$a}';

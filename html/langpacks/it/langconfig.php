@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'it', version '4.1'.
+ * Strings for component 'langconfig', language 'it', version '4.4'.
  *
  * @package     langconfig
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'sv', version '4.1'.
+ * Strings for component 'message', language 'sv', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Kontakter';
 $string['conversationactions'] = 'Åtgärdsmeny för konversationer';
 $string['decline'] = 'Avböj';
 $string['defaultmessageoutputs'] = 'Notisinställningar';
-$string['defaults'] = 'Standardvärden';
 $string['deleteallconfirm'] = 'Vill du verkligen radera hela denna konversation? OBS att den kommer att finnas kvar för övriga deltagare i konverastionen.';
 $string['deleteallmessages'] = 'Radera alla meddelanden';
 $string['deleteallselfconfirm'] = 'Vill du verkligen radera hela denna personliga konversation?';
@@ -97,11 +96,7 @@ $string['info'] = 'Användarinformation';
 $string['isnotinyourcontacts'] = '{$a} finns inte bland dina kontakter';
 $string['loadmore'] = 'Mer';
 $string['loggedin'] = 'Inloggad';
-$string['loggedin_help'] = 'Välj hur du vill få notiser när du är inloggad i Moodle';
-$string['loggedindescription'] = 'När jag är inloggad på Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoff_help'] = 'Välj hur du vill få notiser när du inte är inloggad i Moodle';
-$string['loggedoffdescription'] = 'När jag inte är inloggad på Moodle';
 $string['managemessageoutputs'] = 'Standardinställningar för notiser';
 $string['message'] = 'Meddelande';
 $string['messagecontactrequest'] = '{$a->user} har skickat en kontaktförfrågan. Gå till sidan för <a href="{$a->url}">kontaktförfrågningar</a> för att svara på denna förfrågan.';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Meddelande har skickats till 1 person';
 $string['sendbulkmessagesingle'] = 'Skicka meddelande till 1 person';
 $string['sendcontactrequest'] = 'Skicka kontaktförfrågan';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Skickar "{$a->provider}" via "{$a->processor}"';
 $string['sendingviaenabled'] = 'Skickar "{$a->provider}" via "{$a->processor}"-aktiverad status';
 $string['sendingvialocked'] = 'Skickar "{$a->provider}" via "{$a->processor}"-låst status';
-$string['sendingviawhen'] = 'Skickar "{$a->provider}" via "{$a->processor}" när {$a->state}';
 $string['sendmessage'] = 'Skicka meddelande';
 $string['sendmessageto'] = 'Skicka meddelande till {$a}';
 $string['sendmessagetopopup'] = 'Skicka meddelande till {$a} - nytt fönster';

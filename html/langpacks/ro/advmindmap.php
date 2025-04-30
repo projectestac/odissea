@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'advmindmap', language 'ro', version '4.1'.
+ * Strings for component 'advmindmap', language 'ro', version '4.4'.
  *
  * @package     advmindmap
  * @category    string
@@ -30,11 +30,14 @@ $string['advmindmap:submit'] = 'Trimite';
 $string['advmindmap:view'] = 'Vezi';
 $string['coursemisconf'] = 'Cursul este configurat greșit';
 $string['editable'] = 'Se poate edita';
+$string['errorinvalidadvmindmap'] = 'Instanță advmindmap incorectă.';
 $string['errornostudentincourse'] = 'Nu există participanți la acest curs.';
 $string['errornouseringroup'] = 'Nu există utilizatori în acest grup.';
 $string['groupmembers'] = 'Membrii grupului';
 $string['groupname'] = 'Denumirea grupului';
+$string['invalidid'] = 'ID-ul advmindmap a fost incorect';
 $string['ismember'] = '(✔ Sunteți membru al grupului)';
+$string['lastupdated'] = 'Ultima actualizare:';
 $string['notavailable'] = 'Încă nu este disponibil';
 $string['print'] = 'Tipărește:';
 $string['removeinstances'] = 'Șterge toate instanțele mindmap';

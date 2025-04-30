@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', version '4.1'.
+ * Strings for component 'scorm', language 'ja', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -73,6 +73,7 @@ $string['browse'] = 'プレビュー';
 $string['browsed'] = '閲覧済み';
 $string['browsemode'] = 'プレビューモード';
 $string['browserepository'] = 'リポジトリを閲覧する';
+$string['cachedef_elements'] = 'エレメントキャッシュ';
 $string['calculatedweight'] = '計算加重';
 $string['calendarend'] = '「{$a}」終了';
 $string['calendarstart'] = '「{$a}」開始';
@@ -94,7 +95,7 @@ $string['completionscorerequired_help'] = 'この設定を有効にすること�
 $string['completionscorerequireddesc'] = '完了するには最低でも {$a} 点必要です。';
 $string['completionstatus_completed'] = '完了';
 $string['completionstatus_passed'] = '合格';
-$string['completionstatusallscos'] = 'すべてのSCOに完了ステータスの返信を要求する';
+$string['completionstatusallscos'] = 'すべてのSCOは完了ステータスを返信する必要がある';
 $string['completionstatusallscos_help'] = 'SCORMパッケージには複数のコンポーネントまたは「SCO」を含むものがあります。この設定が有効にされた場合、この活動の完了をフラグするためにパッケージ内すべてのSCOは関連するlesson_statusを返す必要があります。';
 $string['completionstatusrequired'] = '必要ステータス';
 $string['completionstatusrequired_help'] = '1以上のステータスを選択することによりユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも選択されたステータスの1つに到達する必要があります。';
@@ -102,7 +103,7 @@ $string['completionstatusrequireddesc'] = '学生は少なくとも次のステ�
 $string['confirmloosetracks'] = '警告: パッケージが変更/修正されたようです。パッケージ構造が変更された場合、更新処理中にユーザトラックが失われる可能性があります。';
 $string['contents'] = 'コンテンツ';
 $string['coursepacket'] = 'コースパッケージ';
-$string['coursestruct'] = 'コース構造';
+$string['coursestruct'] = 'コンテンツ構造';
 $string['crontask'] = 'SCORMバックグラウンド処理';
 $string['currentwindow'] = '現在のウィンドウ';
 $string['datadir'] = 'ファイルシステムエラー: コースデータディレクトリを作成できません。';
@@ -117,12 +118,10 @@ $string['details'] = 'トラック詳細';
 $string['directories'] = 'ディレクトリリンクを表示する';
 $string['disabled'] = '無効';
 $string['display'] = 'パッケージを表示する';
-$string['displayactivityname'] = '活動名を表示する';
-$string['displayactivityname_help'] = 'SCORMプレイヤの上に活動名を表示するかどうか指定します。';
 $string['displayattemptstatus'] = '受験状況を表示する';
 $string['displayattemptstatus_help'] = 'このプレファレンスではユーザ受験の概要をダッシュボード内のコース概要ブロックまたはSCORMエントリページに表示できるようにします。';
 $string['displayattemptstatusdesc'] = 'ダッシュボードのコース概要ブロックおよびSCORMエントリページにユーザの受験概要を表示するかどうか設定します。';
-$string['displaycoursestructure'] = 'エントリページにコース構造を表示する';
+$string['displaycoursestructure'] = 'エントリページにコンテンツ構造を表示する';
 $string['displaycoursestructure_help'] = 'この設定を有効にした場合、コンテンツのSCORMテーブルをSCORMアウトラインページに表示します。';
 $string['displaycoursestructuredesc'] = 'この設定を有効にした場合、SCORMアウトラインページに目次が表示されます。';
 $string['displaydesc'] = '新しいウィンドウにSCORMパッケージを表示するかどうか設定します。';
@@ -199,7 +198,7 @@ $string['hidebrowse_help'] = 'プレビューモードでは受験の前に学�
 $string['hidebrowsedesc'] = 'プレビューモードでは学生が受験の前に活動を閲覧することができます。';
 $string['hideexit'] = 'コースから抜けるボタンを隠す';
 $string['hidereview'] = 'レビューボタンを隠す';
-$string['hidetoc'] = 'プレイヤにコース構造を表示する';
+$string['hidetoc'] = 'プレイヤにコンテンツ構造を表示する';
 $string['hidetoc_help'] = 'SCORMプレイヤの目次表示方法';
 $string['hidetocdesc'] = 'ここではSCORMプレイヤの目次表示方法を設定します。';
 $string['highestattempt'] = '最高評点';
@@ -215,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'この指標はSCORM活動で学生�
 $string['indicator:socialbreadthdef'] = 'SCORM社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がSCORM活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = '情報';
 $string['interactions'] = 'インタラクション';
 $string['invalidactivity'] = 'SCORM活動が正しくありません。';
 $string['invalidhacpsession'] = '無効なHACPセッションです。';
@@ -224,6 +222,7 @@ $string['invalidmanifestresource'] = '警告: 次のリソースはあなたの�
 $string['invalidstatus'] = '無効なステータス';
 $string['invalidurl'] = '無効なURLが指定されました。';
 $string['invalidurlhttpcheck'] = '無効なURLが指定されました。デバッグメッセージ:<pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'この次のアップグレードステップの完了には時間を要する場合があります。あなたのサイトには新しいテーブル構造に移行する必要のある {$a} SCORMトラックレコードがありプログレスバーを表示できないため、しばらくお待ちください。';
 $string['last'] = '最終アクセス日時';
 $string['lastaccess'] = '最終アクセス';
 $string['lastattempt'] = '最新の完了済み受験';
@@ -241,6 +240,7 @@ $string['maximumattemptsdesc'] = 'このプレファレンスでは活動に対�
 $string['maximumgradedesc'] = 'このプレファレンスでは活動に対するデフォルトの最大評点を設定します。';
 $string['menubar'] = 'メニューバーを表示する';
 $string['min'] = '最小評点';
+$string['minimumscoregreater'] = '最小評点は0以上にする必要があります。';
 $string['missing_attribute'] = 'タグ {$a->tag} に属性 {$a->attr} がありません。';
 $string['missing_tag'] = '{$a->tag} タグがありません。';
 $string['missingparam'] = '必要パラーメタが設定されていないか間違っています。';
@@ -331,7 +331,7 @@ $string['privacy:metadata:attempt'] = '受験番号です。';
 $string['privacy:metadata:scoes_track:element'] = '追跡するエレメントの名称です。';
 $string['privacy:metadata:scoes_track:value'] = 'エレメントの値です。';
 $string['privacy:metadata:scorm_aicc_session'] = 'AICC HACPのセッション情報です。';
-$string['privacy:metadata:scorm_scoes_track'] = '活動に属するSCOの追跡データです。';
+$string['privacy:metadata:scorm_attempt'] = 'ユーザによるSCORM試行受験';
 $string['privacy:metadata:timemodified'] = '追跡エレメントの最終更新日時です。';
 $string['privacy:metadata:userid'] = 'SCORM活動にアクセスしたユーザのIDです。';
 $string['protectpackagedownloads'] = 'パッケージダウンロードを保護する';

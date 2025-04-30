@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'es', version '4.1'.
+ * Strings for component 'user', language 'es', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -121,7 +121,7 @@ $string['privacy:metadata:sid'] = 'El ID de la sesión';
 $string['privacy:metadata:skype'] = 'El identificador de Skype del usuario';
 $string['privacy:metadata:state'] = '0 significa una sesión normal';
 $string['privacy:metadata:summary'] = 'Una descripción del curso.';
-$string['privacy:metadata:suspended'] = 'Una marca para mostrar si el usuario ha sido suspendido en este sistema.';
+$string['privacy:metadata:suspended'] = 'Una marca para mostrar si el usuario ha sido expulsado en este sistema.';
 $string['privacy:metadata:theme'] = 'Una preferencia del usuario sobre el tema que se mostrará.';
 $string['privacy:metadata:timeaccess'] = 'El tiempo de acceso al curso.';
 $string['privacy:metadata:timecreated'] = 'La hora en que se creó este registro.';
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'Cuidado con este mensaje. El em
 $string['target:upcomingactivitiesdue'] = 'Actividades próximas pendientes';
 $string['target:upcomingactivitiesdue_help'] = 'Este destino genera recordatorios para actividades próximas pendientes.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí se lista todo lo relacionado con las actividades próximas pendientes. Estos estudiantes han sido avisados directamente.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'Perfil de usuario';

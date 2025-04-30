@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onenote', language 'sv', version '4.1'.
+ * Strings for component 'assignsubmission_onenote', language 'sv', version '4.4'.
  *
  * @package     assignsubmission_onenote
  * @category    string
@@ -48,7 +48,6 @@ $string['privacy:metadata:numfiles'] = 'Antal filer';
 $string['privacy:metadata:submissionpurpose'] = 'Inlämnings-ID:t som är kopplat till användarens uppgiftsinlämningar';
 $string['privacy:metadata:tablepurpose'] = 'Lagrar antalet filer som uppgiftsinlämningen omfattade';
 $string['privacy:path'] = 'Antal filer';
-$string['signinhelp'] = 'Klicka på ovanstående knapp för att logga in till OneNote så att du kan arbeta med inlämningsuppgiften där.';
 $string['signinhelp1'] = 'Klicka på ovanstående knapp för att logga in till OneNote om du vill arbeta med inlämningsuppgiften där.';
 $string['signinhelp2'] = 'Klicka på ovanstående knapp för att logga in till OneNote om du vill se din inlämnade uppgift där.';
 $string['siteuploadlimit'] = 'Uppladdningsgräns för webbplats';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'eu', version '4.1'.
+ * Strings for component 'data', language 'eu', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} iruzkin';
 $string['commentsoff'] = 'Iruzkinak ez daude gaituta';
 $string['completiondetail:entries'] = 'Sarrerak egitea: {$a}';
 $string['completionentries'] = 'Sarrerak behar dira';
-$string['completionentriescount'] = 'Sarrera-kopurua';
+$string['completionentriescount'] = 'Sarrerak gehitzea';
 $string['completionentriesdesc'] = 'Beharrezko gutxieneko sarrera-kopurua: {$a}';
 $string['configenablerssfeeds'] = 'Honek datu-base osorako RSS jarioen aukera indarrean jarriko du. Datu-base bakoitzeko RSS jarioak eskuz gaitu beharko dituzu.';
 $string['confirmdeletefield'] = 'Eremu hau ezabatzear zaude, ziur zaude?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Sortu eremuak datu-mota ezberdinak biltzeko.';
 $string['createtemplates'] = 'Txantiloiek zure jardueraren itxura zehazten dute. Behin eremuak sortu dituzunean, txantiloiak automatikoki sortuko dira. Bestela, barnean eremuak eta txantiloiak dituen aurretiko ezarpen bat ere erabili dezakezu.';
 $string['csstemplate'] = 'CSS pertsonalizatua';
 $string['csvfailed'] = 'Ezin dira datu gordinak irakurri CSV fitxategi honetatik';
-$string['csvfile'] = 'CSV fitxategia';
+$string['csvfile'] = 'CSV fitxategia duen CSV ala ZIP fitxategia';
 $string['csvimport'] = 'CSV fitxategia inportatu';
 $string['csvimport_help'] = 'Sarrerak testu-soileko fitxategi batetik inportatu daitezke, lehen errenkadan eremuen izenak eta hurrengo errenkadetan datuak daudela, errenkada bakoitzean erregistro bakarra sartuta.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Komaz Banatutako Balioak">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = '{$a->entriesleft} sarrera gehiago gehitu behar di
 $string['entrieslefttoaddtoview'] = '{$a->entrieslefttoview} sarrera gehiago gehitu behar dituzu beste partaideen sarrerak ikusi ahal izateko.';
 $string['entry'] = 'Sarrera';
 $string['entrysaved'] = 'Zure sarrera gorde egin da';
+$string['errordatafilenotfound'] = 'Fitxategia ezin izan da inportatu. Onartutako fitxategi-motak CSV fitxategia edo sarrerak esportatzerakoan erabilitako formatua erabiltzen duen CSV fitxategia duen ZIP fitxategia dira.';
 $string['errormustbeteacher'] = 'Orri hau erabiltzeko irakasle izan behar duzu!';
 $string['errormustsupplyvalue'] = 'Balioren bat eman behar duzu hemen.';
 $string['errorpresetexists'] = 'Dagoeneko existitzen da izen hau duen aurretiko ezarpen bat.';
@@ -199,7 +200,11 @@ $string['fieldnotmatched'] = 'Zure fitxategiaren ondoko eremuak ezezagunak dira 
 $string['fieldoptions'] = 'Aukerak (bat lerroko)';
 $string['fields'] = 'Eremuak';
 $string['fieldshelp'] = 'Eremuak sortu itzazu zure sarreretan mota ezberdinetako datuak biltzeko. Eremuek sarrerek zure datu-basean izango duten egitura zehazten dute.';
+$string['fieldsinformationtags'] = 'Eremuaren informazioa';
 $string['fieldsnavigation'] = 'Hirugarren mailako nabigazioko eremuak';
+$string['fieldtagdescription'] = '{$a} deskribapena';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} izena';
 $string['fieldupdated'] = 'Eremu eguneratu da';
 $string['fieldwidth'] = 'Zabalera';
 $string['fieldwidthlistview'] = 'Zabalera (pixeletan) zerrenda-ikuspegian';
@@ -232,6 +237,7 @@ $string['importpreset_desc'] = 'Aurretiko ezarpena jarduera honi aplikatuko zaio
 $string['importpresetmissingcapability'] = 'Ez duzu aurretiko ezarpen bat inportatzeko baimenik.';
 $string['importsuccess'] = 'Aurretiko ezarpena aplikatu da.';
 $string['includeapproval'] = 'Sartu onarpen-egoera';
+$string['includefiles'] = 'Sartu fitxategian esportazioan';
 $string['includetags'] = 'Sartu etiketak';
 $string['includetime'] = 'Sartu denbora gehituta/aldatuta';
 $string['includeuserdetails'] = 'Sartu erabiltzaile-xehetasunak';
@@ -341,6 +347,7 @@ $string['openafterclose'] = 'Zehaztu duzun hasiera-data amaiera-data baino beran
 $string['optionaldescription'] = 'Deskribapen motza (hautazkoa)';
 $string['optionalfilename'] = 'Fitxategi-izena (hautazkoa)';
 $string['other'] = 'Beste bat';
+$string['otherfields'] = 'Beste eremu guztiak';
 $string['overrwritedesc'] = 'Ordezkatu izen honekin existitzen den aurretiko ezarpena eta gainidatzi bere edukiak';
 $string['overwrite'] = 'Gainidatzi';
 $string['overwritesettings'] = 'Gainidatzi oraingo ezarpenak, hala nola iruzkinak, puntuazioak, etab.';
@@ -358,6 +365,7 @@ $string['presetnotselected'] = 'Ez da aurretiko ezarpenik aukeratu.';
 $string['presets'] = 'Aurretiko ezarpenak';
 $string['presetshelp'] = 'Aukeratu ezazu abiapuntu gisa erabili nahi duzun aurretiko ezarpen bat.';
 $string['preview'] = 'Aurreikusi {$a}';
+$string['previewaction'] = 'Aurreikusi';
 $string['privacy:metadata:commentpurpose'] = 'Datu-baseko erregistroen iruzkinak';
 $string['privacy:metadata:data_content'] = 'Eremu bateko edukia';
 $string['privacy:metadata:data_content:content'] = 'Edukia';
@@ -402,7 +410,7 @@ $string['resetalltemplates'] = 'Berrabiarazi txantiloi guztiak';
 $string['resetalltemplatesconfirm'] = 'Zure oraingo aurretiko ezarpenetik txantiloi guztiak kentzera zoaz. Beranduago txantiloi horiek berreskuratu nahi badituzu, \'Aurretiko ezarpenak\' fitxan aurretiko ezarpena berriz aukeratu beharko duzu.';
 $string['resetalltemplatesconfirmtitle'] = 'Berrabiarazi txantiloi guztiak?';
 $string['resetsettings'] = 'Garbitu iragazkiak';
-$string['resettemplate'] = 'Berrabiarazi txantiloia';
+$string['resettemplate'] = 'Berrabiarazi oraingo txantiloia';
 $string['resettemplateconfirm'] = 'Ekintza honek zure une honetako arretiko ezarpenerako {$a} behin betiko ezabatuko du.';
 $string['resettemplateconfirmtitle'] = 'Berrabiarazi txantiloia?';
 $string['resizingimages'] = 'Irudi txikien tamaina aldatzen';
@@ -429,6 +437,7 @@ $string['searchresults'] = '"{$a}" duten sarrerak';
 $string['selectedrequired'] = 'Aukeratutako guztia beharrezko da';
 $string['selectexportoptions'] = 'Hautatu esportatze-aukerak';
 $string['selectfields'] = 'Aukeratu eremuak';
+$string['selectfordeletion'] = 'Aukeratu sarrera ezabatzeko';
 $string['showall'] = 'Erakutsi sarrera guztiak';
 $string['showmore'] = 'Erakutsi gehiago';
 $string['single'] = 'Ikusi banaka';
@@ -456,19 +465,14 @@ $string['todatabase'] = 'datu-base honetara.';
 $string['type'] = 'Eremu mota';
 $string['undefinedprocessactionmethod'] = 'Data_Preset-en ez da ekintza-metodorik definitu "{$a}" ekintza kudeatzeko.';
 $string['unknown'] = 'Eremu ezezaguna';
-$string['unsupportedexport'] = '({$a->fieldtype}) ezin da esportatu.';
 $string['unsupportedfields'] = 'Onartu gabeko eremuak';
 $string['unsupportedfieldslist'] = 'Hurrengo eremuak ezin izan dira esportatu:';
 $string['updatefield'] = 'Eguneratu lehendik existitzen den eremua';
 $string['uploadfile'] = 'Igo fitxategia';
-$string['uploadrecords'] = 'Igo datuak fitxategi batetik';
-$string['uploadrecords_help'] = 'Sarrerak testu-fitxategien bitartez igo daitezke. Fitxategiaren formatuak honelakoa izan behar du:
+$string['uploadrecords'] = 'Inportatu sarrerak';
+$string['uploadrecords_help'] = 'Inportatu beste datu-base batetik esportatutako sarrerak , CSV fitxategian ala CSV fitxategia duen ZIP fitxategian (esportazioan fitxategiak ere sartu badira).
 
-* Fitxategiko errenkada bakoitzak erregistro bana du
-* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
-* Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
-
-Eremu-itxitura erregistro bakoitzaren eremu bakoitza inguratzen duen karaktere bat da. Normalean ezarri gabe utzi daiteke.';
+Inportatzeko CSV fitxategi bat sortzeko beste aukera bat datu-basean sarrera bat gehitu eta ondoren esportatzea da, ondoren CSV fitxategia editatu eta sarrera gehiago gehitzeko.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URLa';
 $string['usedate'] = 'Sartu bilaketan.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ko', version '4.1'.
+ * Strings for component 'report_security', language 'ko', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -70,10 +70,6 @@ $string['check_guestrole_error'] = '손님 역할 "{$a}"이 잘못 정의되었�
 $string['check_guestrole_name'] = '손님 역할';
 $string['check_guestrole_notset'] = '손님 역할이 설정되지 않음';
 $string['check_guestrole_ok'] = '손님 역활 정의는 맞습니다';
-$string['check_mediafilterswf_details'] = '<p>자동 swf 엠베딩은 매우 위험합니다. 임의의 등록 사용자가 타 서버의 사용자를 공격하기 위해 XSS 프로그램을 탑재할 우려가 있습니다. 실제 운영 서버에서는 이를 비 활성화해 두기 바랍니다.</p>';
-$string['check_mediafilterswf_error'] = '플래시 미디어 필터 켜짐 - 이는 대다수 서버에게 매우 위함할 수 있습니다.';
-$string['check_mediafilterswf_name'] = '.swf 필터 켬';
-$string['check_mediafilterswf_ok'] = '플래시 미디어 필터 끔';
 $string['check_openprofiles_details'] = '<p>공개된 사용자 개인정보는 간혹 스패머에 의해 오용될 소지가 있습니다. 개인정보를 보기 위해서는 <code>개인정보 보려면 로그인 필수</code> 나 <code>로그인 필수</code>를 활성화 시키는 것을 추천합니다.</p>';
 $string['check_openprofiles_error'] = '로그인 없이 사용자 개인정보 볼 수 있음';
 $string['check_openprofiles_name'] = '사용자 개인정보 공개';

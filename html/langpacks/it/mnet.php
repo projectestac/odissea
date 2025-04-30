@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', version '4.1'.
+ * Strings for component 'mnet', language 'it', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Aggiungi al Controllo accessi';
 $string['allhosts'] = 'Tutti gli host';
 $string['allhosts_no_options'] = 'Non ci sono opzioni disponibili quando si visualizzano host multipli';
 $string['allow'] = 'Consenti';
+$string['allowaccess'] = 'Consenti accesso';
 $string['applicationtype'] = 'Tipo applicazione';
 $string['authfail_nosessionexists'] = 'Autorizzazione fallita: la sessione mnet non esiste.';
 $string['authfail_sessiontimedout'] = 'Autorizzazione fallita: la sessione mnet è scaduta.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'L\'intervallo di tempo di 60 secondi per eliminare
 $string['deleteuserrecord'] = 'SSO ACL: eliminazione record dell\'utente \'{$a->user}\' da {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Si è verificato un errore. Se non stavi cercando di eliminare la chiave SSL del tuo server, è possibile che sei stato oggetto di un attacco. Non è stata eseguita nessuna azione.';
 $string['deny'] = 'Impedisci';
+$string['denyaccess'] = 'Nega accesso';
 $string['description'] = 'Descrizione';
 $string['duplicate_usernames'] = 'È fallita la creazione di un indice sulle colonne "mnethostid" e "username" nella tua tabella utente.<br/>Questo può succedere quando vi sono <a href="{$a}" target="_blank"> username duplicati nella stessa tabella</a>.<br/>Il tuo aggiornamento può comunque essere correttamente completato. Clicca sul link precedente, e compariranno in una nuova finestra istruzioni per risolvere questo problema. Puoi seguire tali istruzioni alla fine dell\'aggiornamento.<br/>';
 $string['enabled_for_all'] = '(Questo servizio è stato abilitato per qualsiasi host).';

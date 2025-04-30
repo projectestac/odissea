@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xml', language 'ca', version '4.1'.
+ * Strings for component 'gradeexport_xml', language 'ca', version '4.4'.
  *
  * @package     gradeexport_xml
  * @category    string

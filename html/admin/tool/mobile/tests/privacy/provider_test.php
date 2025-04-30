@@ -37,7 +37,7 @@ use tool_mobile\privacy\provider;
  * @copyright  2018 Carlos Escobedo <carlos@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class provider_test extends \core_privacy\tests\provider_testcase {
+final class provider_test extends \core_privacy\tests\provider_testcase {
 
     /**
      * Basic setup for these tests.
@@ -50,7 +50,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
      * Test to check export_user_preferences.
      * returns user preferences data.
      */
-    public function test_export_user_preferences() {
+    public function test_export_user_preferences(): void {
         $user = $this->getDataGenerator()->create_user();
         $expectedtime = time();
         set_user_preference('tool_mobile_autologin_request_last', time(), $user);
@@ -66,7 +66,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test getting the context for the user ID related to this plugin.
      */
-    public function test_get_contexts_for_userid() {
+    public function test_get_contexts_for_userid(): void {
         // Create user and Mobile user keys.
         $user = $this->getDataGenerator()->create_user();
         $context = \context_user::instance($user->id);
@@ -78,7 +78,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test getting the users for a context related to this plugin.
      */
-    public function test_get_users_in_context() {
+    public function test_get_users_in_context(): void {
         $component = 'tool_mobile';
 
         // Create users and Mobile user keys.
@@ -103,7 +103,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test that data is exported correctly for this plugin.
      */
-    public function test_export_user_data() {
+    public function test_export_user_data(): void {
         global $DB;
         // Create user and Mobile user keys.
         $user = $this->getDataGenerator()->create_user();
@@ -112,6 +112,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
         $key = $DB->get_record('user_private_key', ['value' => $keyvalue]);
         // Validate exported data.
         $this->setUser($user);
+        /** @var \core_privacy\tests\request\content_writer $writer */
         $writer = writer::with_context($context);
         $this->assertFalse($writer->has_any_data());
         $this->export_context_data_for_user($user->id, $context, 'tool_mobile');
@@ -123,7 +124,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test for provider::delete_data_for_all_users_in_context().
      */
-    public function test_delete_data_for_all_users_in_context() {
+    public function test_delete_data_for_all_users_in_context(): void {
         global $DB;
         // Create user and Mobile user keys.
         $user = $this->getDataGenerator()->create_user();
@@ -143,7 +144,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test for provider::delete_data_for_user().
      */
-    public function test_delete_data_for_user() {
+    public function test_delete_data_for_user(): void {
         global $DB;
         // Create user and Mobile user keys.
         $user = $this->getDataGenerator()->create_user();
@@ -165,7 +166,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
     /**
      * Test for provider::test_delete_data_for_users().
      */
-    public function test_delete_data_for_users() {
+    public function test_delete_data_for_users(): void {
         global $DB;
         $component = 'tool_mobile';
 

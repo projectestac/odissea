@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'sv', version '4.1'.
+ * Strings for component 'glossary', language 'sv', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -343,7 +343,6 @@ $string['totalentries'] = 'Totalt antal uppslagsord';
 $string['usedynalink'] = 'Länka uppslagsord automatiskt';
 $string['usedynalink_help'] = 'Om automatisk länkning av ordlistan har aktiverats globalt av en administratör och den här inställningen är aktiverad innehåller formuläret "Lägg till en ny post" alternativet att automatiskt länka posten där begreppsorden och fraserna visas i kursen.';
 $string['visibletabs'] = 'Synliga flikar';
-$string['waitingapproval'] = 'Väntar på godkännande';
 $string['warningstudentcapost'] = '(Gäller enbart om ordlistan inte är huvudordlistan)';
 $string['withauthor'] = 'Begrepp med författare';
 $string['withoutauthor'] = 'Begrepp utan författare';

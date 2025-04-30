@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ro', version '4.1'.
+ * Strings for component 'tool_monitor', language 'ro', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Zona de monitorizare';
 $string['cachedef_eventsubscriptions'] = 'Aceasta stochează lista abonamentelor la evenimente pentru cursuri individuale';
 $string['contactadmin'] = 'Contactați administratorul pentru a o activa.';
 $string['core'] = 'Nucleu';
+$string['coresubsystem'] = 'Subsystem ({$a})';
 $string['currentsubscriptions'] = 'Abonamentele tale actuale';
 $string['defaultmessagetemplate'] = 'Numele regulii: {rulename} <br /> Descriere: {description} <br /> Nume eveniment: {eventname}';
 $string['deleterule'] = 'Șterge regula';
@@ -68,9 +69,12 @@ $string['messagetemplate_help'] = 'Un mesaj de notificare este trimis abonațilo
 
 * Link către locația evenimentului {link}
 * Link către zona monitorizată {modulelink}
-* Numele regulii {nume de regulă}
+* Denumirea modulului de curs {modulename}
+* Denumirea regulii {nume de regulă}
 * Descriere {description}
-* Eveniment {eventname}';
+* Eveniment {eventname}
+* Denumirea completă a cursului {coursefullname}
+* Denumirea scurtă a cursului {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instanță';
 $string['monitor:managerules'] = 'Gestionează regulile de monitorizare a evenimentelor';

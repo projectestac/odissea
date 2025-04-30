@@ -171,6 +171,7 @@ final class format_tiles_test extends \advanced_testcase {
     public function test_update_inplace_editable(): void {
         global $CFG, $DB;
         require_once($CFG->dirroot . '/lib/external/externallib.php');
+        require_once($CFG->dirroot . '/lib/external/classes/external_api.php');
 
         $this->resetAfterTest();
         $user = $this->getDataGenerator()->create_user();
@@ -192,7 +193,7 @@ final class format_tiles_test extends \advanced_testcase {
         $this->getDataGenerator()->enrol_user($user->id, $course->id, $teacherrole->id);
 
         $res = \core_external::update_inplace_editable('format_tiles', 'sectionname', $section->id, 'New section name');
-        $res = \external_api::clean_returnvalue(\core_external::update_inplace_editable_returns(), $res);
+        $res = \core_external\external_api::clean_returnvalue(\core_external::update_inplace_editable_returns(), $res);
         $this->assertEquals('New section name', $res['value']);
         $this->assertEquals('New section name', $DB->get_field('course_sections', 'name', ['id' => $section->id]));
     }
@@ -223,13 +224,10 @@ final class format_tiles_test extends \advanced_testcase {
 
         // Try updating using callback from mismatching course format.
         try {
-            $tmpl = component_callback('format_weeks', 'inplace_editable', ['sectionname', $section->id, 'New name']);
+            component_callback('format_weeks', 'inplace_editable', ['sectionname', $section->id, 'New name']);
             $this->fail('Exception expected');
         } catch (\moodle_exception $e) {
-            $this->assertTrue(
-                preg_match('/^Can not find data record in database/', $e->getMessage()) === 1
-                || preg_match('/^Can\'t find data record in database/', $e->getMessage()) === 1
-            );
+            $this->assertEquals(1, preg_match('/^Can\'t find data record in database/', $e->getMessage()));
         }
     }
 

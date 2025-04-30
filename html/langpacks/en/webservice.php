@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'en', version '4.1'.
+ * Strings for component 'webservice', language 'en', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'PHP code for REST (POST request)';
 $string['potusers'] = 'Not authorised users';
 $string['potusersmatching'] = 'Not authorised users matching';
 $string['print'] = 'Print all';
-$string['privacy:metadata:serviceusers'] = 'A list of users who can use a certain external service';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP restricted to use the service';
-$string['privacy:metadata:serviceusers:timecreated'] = 'The date when the record was created';
-$string['privacy:metadata:serviceusers:userid'] = 'The ID of the user';
-$string['privacy:metadata:serviceusers:validuntil'] = 'The date that the authorisation is valid until';
-$string['privacy:metadata:tokens'] = 'A record of tokens for interacting with Moodle through web services or Mobile applications.';
-$string['privacy:metadata:tokens:creatorid'] = 'The ID of the user who created the token';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP restricted to use this token';
-$string['privacy:metadata:tokens:lastaccess'] = 'The date when the token was last used';
-$string['privacy:metadata:tokens:privatetoken'] = 'A more private token occasionally used to validate certain operations, such as SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'The date when the token was created';
-$string['privacy:metadata:tokens:token'] = 'The user\'s token';
-$string['privacy:metadata:tokens:tokentype'] = 'The type of token';
-$string['privacy:metadata:tokens:userid'] = 'The ID of the user whose token it is';
-$string['privacy:metadata:tokens:validuntil'] = 'The date that the token is valid until';
-$string['privacy:request:notexportedsecurity'] = 'Not exported for security reasons';
+$string['privacy:metadata'] = 'The WebService API does not store any data';
 $string['protocol'] = 'Protocol';
 $string['removefunction'] = 'Remove';
 $string['removefunctionconfirm'] = 'Do you really want to remove function "{$a->function}" from service "{$a->service}"?';
@@ -211,11 +196,16 @@ $string['testwithtestclient'] = 'Test the service';
 $string['testwithtestclientdescription'] = 'Simulate external access to the service using the web service test client. Use an enabled protocol with token authentication. <strong>WARNING: The functions that you test WILL BE EXECUTED, so be careful what you choose to test!</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token authentication';
+$string['tokencopied'] = 'Text copied to clipboard.';
 $string['tokencreatedbyadmin'] = 'Can only be reset by administrator (*)';
 $string['tokencreator'] = 'Creator';
 $string['tokenfilter'] = 'Tokens filter';
 $string['tokenfilterreset'] = 'Show all tokens';
 $string['tokenfiltersubmit'] = 'Show only matching tokens';
+$string['tokenname'] = 'Name';
+$string['tokennamehint'] = 'If you don\'t enter a name then a random name will be used.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copy the token now. It won\'t be shown again once you leave this page.';
 $string['unknownoptionkey'] = 'Unknown option key ({$a})';
 $string['unnamedstringparam'] = 'A string parameter is unnamed.';
 $string['updateusersettings'] = 'Update';
@@ -226,12 +216,11 @@ $string['userasclientsdescription'] = 'The following steps help you to set up th
 $string['usermissingcaps'] = 'Missing capabilities: {$a}';
 $string['usernameorid'] = 'Username / User id';
 $string['usernameorid_help'] = 'Enter a username or a user id.';
-$string['usernameoridnousererror'] = 'No users were found with this username/user id.';
-$string['usernameoridoccurenceerror'] = 'More than one user was found with this username. Please enter the user id.';
 $string['usernotallowed'] = 'The user is not allowed for this service. First you need to allow this user on the {$a}\'s allowed users administration page.';
 $string['userservices'] = 'User services: {$a}';
 $string['usersettingssaved'] = 'User settings saved';
 $string['validuntil'] = 'Valid until';
+$string['validuntil_empty'] = 'This token has no expiry date.';
 $string['validuntil_help'] = 'If set, the service will be inactivated after this date for this user.';
 $string['webservice'] = 'Web service';
 $string['webservices'] = 'Web services';

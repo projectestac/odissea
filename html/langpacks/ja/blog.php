@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', version '4.1'.
+ * Strings for component 'blog', language 'ja', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = '{$a->modtype}: {$a->modname} に関するブ�
 $string['association'] = '関連付け';
 $string['associations'] = '関連付け';
 $string['associationunviewable'] = 'コースに関連付けられるか、「公開先」フィールドが変更されるまで他のユーザはこのエントリを閲覧できません。';
+$string['author'] = '作成者';
 $string['autotags'] = 'これらのタグを追加する';
 $string['autotags_help'] = 'あなたのローカルブログに外部ブログからエントリをコピーする場合、自動的に追加したい1つまたはそれ以上のローカルタグ (カンマ区切り) を入力してください。';
 $string['backupblogshelp'] = '有効にした場合、サイト自動バックアップにブログが含まれます。';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'この {$a->type} に関するブログ';
 $string['blogaboutthiscourse'] = 'このコースに関するエントリを追加する';
 $string['blogaboutthismodule'] = 'この {$a} に関するエントリを追加する';
 $string['blogadministration'] = 'ブログ管理';
+$string['blogattachment'] = 'ブログ添付';
 $string['blogdeleteconfirm'] = 'ブログエントリ「 {$a} 」を削除してもよろしいですか?';
 $string['blogdisable'] = 'ブログは無効にされています!';
 $string['blogentries'] = 'ブログエントリ';
@@ -57,6 +59,7 @@ $string['blogs'] = 'ブログ';
 $string['blogscourse'] = 'コースブログ';
 $string['blogssite'] = 'サイトブログ';
 $string['blogtags'] = 'ブログタグ';
+$string['cannoteditentryorblog'] = 'あなたはこのエントリまたはブログを編集できません。';
 $string['cannotviewcourseblog'] = 'あなたにはこのコースのブログを閲覧するためのパーミッションがありません。';
 $string['cannotviewcourseorgroupblog'] = 'あなたにはこのコース/グループのブログを閲覧するためのパーミッションがありません。';
 $string['cannotviewsiteblog'] = 'あなたにはすべてのサイトブログを閲覧するためのパーミッションがありません。';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'エントリ説明';
 $string['entryerrornotyours'] = 'これはあなたのエントリではありません。';
 $string['entrysaved'] = 'あなたのエントリが保存されました。';
 $string['entrytitle'] = 'エントリタイトル';
+$string['entrytitlewithlink'] = 'リンク付きエントリタイトル';
 $string['eventblogassociationadded'] = 'ブログ関連付けが作成されました。';
 $string['eventblogassociationdeleted'] = 'ブログ関連付けが削除されました。';
 $string['eventblogentriesviewed'] = 'ブログエントリが閲覧されました。';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = '正しくないブログフィルタタイプ�
 $string['intro'] = 'このRSSフィードは1つまたはそれ以上のブログから自動生成されました。';
 $string['invalidgroupid'] = '無効なグループID';
 $string['invalidurl'] = 'このURLにはアクセスできません。';
-$string['linktooriginalentry'] = 'オリジナルのブログエントリにリンクする';
+$string['linktooriginalentry'] = 'オリジナルブログエントリ';
 $string['maxexternalblogsperuser'] = 'ユーザあたりの外部ブログ最大数';
 $string['myprofileuserblogs'] = 'すべてのブログエントリを表示する';
 $string['name'] = '名称';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'ブログエントリを追加した�
 $string['privacy:metadata:post:usermodified'] = '最後にエントリを修正したユーザです。';
 $string['privacy:path:blogassociations'] = '関連ブログ記事です。';
 $string['privacy:unknown'] = '不明';
+$string['published'] = '公開済み';
 $string['publishto'] = '公開先:';
 $string['publishto_help'] = 'ここには以下3つのオプションがあります:
 * あなたのみ閲覧可 (下書き) - あなたおよび管理者のみ、このエントリを閲覧ができます。
@@ -165,6 +170,7 @@ $string['publishto_help'] = 'ここには以下3つのオプションがあり�
 $string['publishtocourse'] = 'あなたとコースを共有しているユーザ';
 $string['publishtocourseassoc'] = '関連コースのメンバ';
 $string['publishtocourseassocparam'] = '{$a} のメンバ';
+$string['publishtodraft'] = '下書き';
 $string['publishtogroup'] = 'あなたとグループを共有しているユーザ';
 $string['publishtogroupassoc'] = '関連コース内のあなたのグループメンバ';
 $string['publishtogroupassocparam'] = '{$a} のあなたのグループメンバ';
@@ -213,4 +219,3 @@ $string['viewsiteentries'] = 'すべてのエントリを表示する';
 $string['viewuserentries'] = '{$a} によるエントリすべてを表示する';
 $string['worldblogs'] = '世界中の誰でもエントリを読める';
 $string['wrongexternalid'] = '外部ブログIDが正しくありません。';
-$string['wrongpostid'] = 'ブログ記事IDが正しくありません。';

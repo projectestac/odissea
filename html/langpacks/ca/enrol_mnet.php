@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'ca', version '4.1'.
+ * Strings for component 'enrol_mnet', language 'ca', version '4.4'.
  *
  * @package     enrol_mnet
  * @category    string
@@ -29,7 +29,7 @@ $string['error_multiplehost'] = 'Alguna instància del connector de inscripció 
 $string['instancename'] = 'Nom del mètode d\'inscripció';
 $string['instancename_help'] = 'Podeu de forma opcional canviar el nom d\'aquesta instància del mètode d\'inscripció. Si deixeu aquest camp buit, s\'utilitzarà el nom per defecte de la instància que conté el nom del servidor remot i el rol assignat per als usuaris.';
 $string['mnet:config'] = 'Configura les instàncies d\'inscripció MNet';
-$string['mnet_enrol_description'] = 'Publiqueu aquest servei a fi de permetre que els administradors del lloc {$a} inscriguin els seus estudiants en cursos del vostre servidor.<br/><ul><li><em>Dependència</em>: també haureu de <strong>publicar</strong> el servei SSO (Proveïdor de Servei) per a {$a}.</li><li><em>Dependència</em>: també us haureu de <strong>subscriure</strong> al servei SSO (Proveïdor d\'Identitat) del lloc {$a}.</li></ul><br/>Subscriviu-vos a aquest servei a fi de poder inscriure els vostres estudiants en cursos del lloc {$a}.<br /><ul><li><em>Dependència</em>: també us haureu de <strong>subscriure</strong> al servei SSO (Proveïdor de Servei) del lloc {$a}.</li><li><em>Dependència</em>: també haureu de <strong>publicar</strong> el servei SSO (Proveïdor d\'Identitat) per al lloc {$a}.</li></ul><br/>';
+$string['mnet_enrol_description'] = 'Publiqueu aquest servei per permetre als administradors de {$a} inscriure els seus estudiants als cursos que heu creat al vostre servidor.<br/><ul><li><em>Dependència</em>: També us heu de <strong>subscriure </strong> al servei SSO (proveïdor d\'identitat) a {$a}.</li><li><em>Dependència</em>: També heu de <strong>publicar</strong> el servei SSO (proveïdor de serveis) a {$a}.</li></ul><br/>Subscriviu-vos a aquest servei per poder inscriure els vostres estudiants als cursos de {$a}.<br/><ul><li><em>Dependència </em>: També heu de <strong>publicar</strong> el servei SSO (proveïdor d\'identitat) a {$a}.</li><li><em>Dependència</em>: També heu de <strong>subscriure-vos</strong> al servei SSO (proveïdor de serveis) a {$a}.</li></ul><br/>';
 $string['mnet_enrol_name'] = 'Inscripcions a Moodle en Xarxa';
 $string['pluginname'] = 'Inscripcions remotes MNet';
 $string['pluginname_desc'] = 'Habilita el servidor remot MNet per inscriure llurs usuaris als vostres cursos.';

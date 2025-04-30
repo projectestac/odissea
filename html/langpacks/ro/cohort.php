@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ro', version '4.1'.
+ * Strings for component 'cohort', language 'ro', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Membru cohortă';
 $string['cohorts'] = 'Cohorte';
 $string['cohortsin'] = '{$a}: cohorte disponibile';
 $string['component'] = 'Sursă';
+$string['contextcohortnotallowed'] = 'Cohorta <b>{$a}</b> nu este permisă în acest context.';
 $string['contextnotfound'] = 'Contextul <b>{$a}</b> nu a fost găsit sau nu aveți permisiunea de a crea un grup acolo. Contextul implicit va fi folosit.';
 $string['csvcontainserrors'] = 'Au fost găsite erori în datele CSV. Vezi detalii mai jos.';
 $string['csvcontainswarnings'] = 'Au fost găsite avertismente în datele CSV. Vezi detalii mai jos.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'Utilizatori curenţi';
 $string['currentusersmatching'] = 'Utilizatori curenţi conform';
 $string['defaultcontext'] = 'Context implicit';
 $string['delcohort'] = 'Şterge cohortă';
-$string['delconfirm'] = 'Sunteţi sigur că doriţi să ştergeţi cohorta \'{$a}\'?';
+$string['delconfirm'] = 'Prin această acțiune se va șterge cohorta {$a}\' și toate datele asociate acesteia.';
 $string['description'] = 'Descriere';
 $string['displayedrows'] = '{$a->displayed} rânduri afișate din {$a->total}.';
 $string['duplicateidnumber'] = 'Există deja o cohortă cu acest identificator';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'Identificatorul utilizatoru
 $string['removeuserwarning'] = 'Eliminarea utilizatorilor dintr-o cohortă poate duce la anularea înscrierii utilizatorilor la cursuri, ceea ce implică ștergerea setărilor utilizatorului, notele, apartenența la un grup și alte informații ale utilizatorului de la cursurile respective.';
 $string['search'] = 'Căutare';
 $string['searchcohort'] = 'Căutare cohortă';
+$string['selectcohort'] = 'Selectare cohortă';
 $string['selectfromcohort'] = 'Selectează membri din cohortă';
 $string['systemcohorts'] = 'Cohorte de sistem';
 $string['unknowncohort'] = 'Cohortă necunoscută ({$a})!';

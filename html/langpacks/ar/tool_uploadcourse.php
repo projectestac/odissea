@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ar', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'ar', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -33,7 +33,7 @@ $string['allowresets'] = 'السماح بإعادة التعيين';
 $string['allowresets_help'] = 'ما إذا كان حقل إعادة الضبط مقبول أم لا.';
 $string['cachedef_helper'] = 'تخبئة المساعد';
 $string['cannotdeletecoursenotexist'] = 'لا يمكن حذف مادة غير موجودة';
-$string['cannotforcelang'] = 'لا يوجد إذن لفرض اللغة لهذه الدورة';
+$string['cannotforcelang'] = 'لا توجد صلاحية فرض اللغة لهذا المساق';
 $string['cannotgenerateshortnameupdatemode'] = 'لا يمكن إنشاء اسم قصير عند السماح بالتحديثات';
 $string['cannotreadbackupfile'] = 'لا يمكن قراءة ملف الحفظ الاحتياطي';
 $string['cannotrenamecoursenotexist'] = 'لا يمكن إعادة تسمية مادة غير موجودة';
@@ -66,10 +66,12 @@ $string['courseshortnamegenerated'] = 'تم إنشاء الاسم المختصر
 $string['courseshortnameincremented'] = 'تم زيادة الاسم المختصر للمادة {$a->from} -> {$a->to}';
 $string['coursestotal'] = 'مجموع المقررات الدراسية: {$ }';
 $string['coursesupdated'] = 'المقررات الدراسية التي تم تحديثها: {$a}';
-$string['coursetemplatename'] = 'الاستعادة تكون من هذه الدورة بعد التحميل';
+$string['coursetemplatename'] = 'الاستعادة من هذ المساق بعد الرفع';
 $string['coursetemplatename_help'] = 'أدخل اسماً مختصراً للمقرر لاستعماله كمظهر عند إنشاء كل المقررات الدراسية.';
 $string['coursetorestorefromdoesnotexist'] = 'المساق المزمع الاستعادة منه، غير موجود';
 $string['courseupdated'] = 'تم تحديث المساق';
+$string['courseuploadnotallowed'] = 'لا صلاحية لرفع المساقات إلى التصنيف: {$a}';
+$string['courseuploadupdatenotallowed'] = 'يوجد مسبقًا مساق بهذه التسمية المختصرة ولكن ليست لديك صلاحية لاستعمال أداة رفع المساقات لتحديثه.';
 $string['createall'] = 'إنشاء الكل ، زيادة الاسم المختصر إذا لزم الأمر';
 $string['createnew'] = 'إنشاء مقررات جديدة فقط، مع تخطي المقررات الدراسية الحالية';
 $string['createorupdate'] = 'إنشاء مقررات جديدة، أو تحديث المقررات الدراسية الحالية';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'ترميز ملف CSV.';
 $string['errorcannotcreateorupdateenrolment'] = 'تعذر إنشاء أو تحديث طريقة الانضمام \'{$a}\\';
 $string['errorcannotdeleteenrolment'] = 'تعذر حذف طريقة الانضمام \'{$a}\\';
 $string['errorcannotdisableenrolment'] = 'تعذر تعطيل طريقة الانضمام \'{$a}\\';
+$string['errorunsupportedmethod'] = 'طريقة الانضمام \'{$a}\' غير مدعومة عند رفع ملف CSV';
 $string['errorwhiledeletingcourse'] = 'خطأ أثناء حذف المادة';
 $string['errorwhilerestoringcourse'] = 'خطأ أثناء استعادة المادة';
 $string['generatedshortnamealreadyinuse'] = 'الاسم المختصر الذي تم إنشاؤه قيد الاستخدام بالفعل';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'وضع التحديث لا يسمح ب�
 $string['updateonly'] = 'فقط تحديث المقررات الدراسية الحالية';
 $string['updatewithdataonly'] = 'تحديث ببيانات CSV فقط';
 $string['updatewithdataordefaults'] = 'تحديث مع بيانات CSV والافتراضيات';
+$string['uploadcourse:use'] = 'إستعمل أداة رفع المساق';
 $string['uploadcourses'] = 'رفع المقررات الدراسية';
 $string['uploadcourses_help'] = 'يمكن رفع المقررات الدراسية عبر ملف نصي. يجب أن يكون تنسيق الملف كما يلي:
 

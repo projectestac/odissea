@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'ar', version '4.1'.
+ * Strings for component 'mimetypes', language 'ar', version '4.4'.
  *
  * @package     mimetypes
  * @category    string
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['application/dash_xml'] = 'التدفق التكيفي الديناميكي عبر HTTP (MPEG-DASH)';
 $string['application/epub_zip'] = 'الكتاب الالكتروني EPUB';
 $string['application/json'] = 'نص {$a->MIMETYPE2}';
-$string['application/msword'] = 'وثيقة Word';
-$string['application/pdf'] = 'وثيقة PDF';
+$string['application/msword'] = 'مستند Word';
+$string['application/pdf'] = 'مستند PDF';
 $string['application/vnd.moodle.backup'] = 'الحفظ الاحتياطي لمودل';
 $string['application/vnd.ms-excel'] = 'جدول Excel';
 $string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'مصنف Excel 2007 مع تمكين الماكرو';
@@ -79,6 +79,6 @@ $string['text/css'] = 'ورقة الأنماط المتتالية';
 $string['text/csv'] = 'قيم مفصولة بفوارز';
 $string['text/html'] = 'مستند HTML';
 $string['text/plain'] = 'ملف نصي';
-$string['text/rtf'] = 'وثيقة RTF';
+$string['text/rtf'] = 'مستند RTF';
 $string['text/vtt'] = 'مسار نص فيديو الويب';
 $string['video'] = 'ملف فيديو ({$a->EXT})';

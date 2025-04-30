@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', version '4.1'.
+ * Strings for component 'page', language 'ar', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'ارتفاع النوافذ المنبثقة (بالب
 $string['popupheightexplain'] = 'يحدد الارتفاع الافتراضي للنوافذ المنبثقة.';
 $string['popupwidth'] = 'عرض النوافذ المنبثقة (بالبكسل)';
 $string['popupwidthexplain'] = 'يحدد العرض الافتراضي للنوافذ المنبثقة.';
-$string['printheading'] = 'عرض';
-$string['printheadingexplain'] = 'عرض اسم الصفحة فوق المحتوى؟';
 $string['printintro'] = 'عرض وصف الصفحة';
 $string['printintroexplain'] = 'أتريد عرض وصف الصفحة فوق المحتوى؟';
 $string['printlastmodified'] = 'إعرض تاريخ آخر تعديل';

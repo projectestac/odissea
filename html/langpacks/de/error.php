@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', version '4.1'.
+ * Strings for component 'error', language 'de', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -70,7 +70,7 @@ $string['cannotdeletebackupids'] = 'Frühere Sicherungs-IDs konnten nicht gelös
 $string['cannotdeletecategorycourse'] = 'Fehler beim Löschen des Kurses \'{$a}\'';
 $string['cannotdeletecategoryquestions'] = 'Einige Fragen aus der Kategorie \'{$a}\' konnten nicht gelöscht werden.';
 $string['cannotdeletecourse'] = 'Sie dürfen diesen Kurs nicht löschen.';
-$string['cannotdeletecustomfield'] = 'Fehler beim Löschen des Kursfeldes';
+$string['cannotdeletecustomfield'] = 'Fehler beim Löschen von Daten in nutzerfefiniertem Felder';
 $string['cannotdeletedir'] = '\'{$a}\' kann nicht gelöscht werden.';
 $string['cannotdeletefile'] = 'Die Datei kann nicht gelöscht werden.';
 $string['cannotdeleterole'] = 'Das Löschen ist nicht möglich: {$a}';
@@ -114,7 +114,7 @@ $string['cannotinsertrecord'] = 'Der neue Datensatz mit der ID {$a} wurde nicht 
 $string['cannotmailconfirm'] = 'Fehler beim E-Mail-Versand zur Bestätigung der Kennwortänderung';
 $string['cannotmanualctrack'] = 'Die Aktivität unterstützt keine manuelle Abschlussverfolgung.';
 $string['cannotmapfield'] = 'Problem bei der Zuordnung. Zwei Felder sind dem gleichen Bewertungselement {$a} zugeordnet.';
-$string['cannotmarktopic'] = 'Der Abschnitt konnte nicht markiert werden.';
+$string['cannotmarktopic'] = 'Der Abschnitt konnte nicht im Kurs markiert werden.';
 $string['cannotmigratedatacomments'] = 'Die Kommentare zum Datenmodul können nicht migriert werden.';
 $string['cannotmodulename'] = 'Bei der Navigationserstellung kann der Modulname nicht festgestellt werden.';
 $string['cannotmoduletype'] = 'Bei der Navigationserstellung kann der Modultyp nicht festgestellt werden.';
@@ -233,7 +233,11 @@ $string['dmlparseexception'] = 'Fehler beim Parsen eine SQL-Abfrage';
 $string['dmlreadexception'] = 'Fehler beim Lesen der Datenbank';
 $string['dmltransactionexception'] = 'Fehler bei Datenbankvorgang';
 $string['dmlwriteexception'] = 'Fehler beim Schreiben der Datenbank';
-$string['downgradedcore'] = 'Fehler: Der von Ihnen benutzte Code ist ÄLTER als die Version, die speziell für diese Datenbanken geschrieben wurde.';
+$string['dndmaxbytes'] = 'Die Datei ist zu groß. Die maximal erlaubte Größe ist {$a->size}.';
+$string['dndread'] = 'Fehler beim Lesen der Datei';
+$string['dndunkownfile'] = 'Dieser Dateityp wird nicht unterstützt.';
+$string['dndupload'] = 'Fehler beim Hochladen der Datei';
+$string['downgradedcore'] = 'Fehler: Der von Ihnen benutzte Code ist älter als der Code, der speziell für diese Datenbank geschrieben wurde.';
 $string['downloadedfilecheckfailed'] = 'Die Überprüfung der heruntergeladenen Datei ist gescheitert';
 $string['duplicatefieldname'] = 'Doppelter Feldname \'{$a}\'';
 $string['duplicatenosupport'] = 'Die \'{$a->modname}\' Aktivität konnte nicht kopiert werden, da  das {$a->modtype}-Modul den Backup- und Wiederherstellungsprozess nicht unterstützt.';
@@ -241,6 +245,7 @@ $string['duplicateparaminsql'] = 'Fehler: Doppelter Parametername in der ABfrage
 $string['duplicaterolename'] = 'Eine Rolle mit diesem Namen existiert bereits!';
 $string['duplicateroleshortname'] = 'Eine Rolle mit diesem Kurznamen existiert bereits!';
 $string['duplicateusername'] = 'Doppelter Anmeldename. Datensatz überspringen.';
+$string['editedpagenotfound'] = 'Das System konnte die Seite nicht ermitteln, auf der Sie sich gerade befinden. Aktualisieren Sie bitte die Seite und versuchen Sie es noch einmal.';
 $string['emailfail'] = 'E-Mail-Versand fehlgeschlagen';
 $string['encryption_decryptfailed'] = 'Entschlüsselung fehlgeschlagen';
 $string['encryption_encryptfailed'] = 'Verschlüsselung fehlgeschlagen';
@@ -377,7 +382,7 @@ $string['invalidrole'] = 'Ungültige Rolle';
 $string['invalidroleid'] = 'Ungültige Rollen-ID';
 $string['invalidscaleid'] = 'Falsche Skalen-ID';
 $string['invalidsection'] = 'Der Datensatz des Kursmoduls enthält ungültigen Abschnitt.';
-$string['invalidsesskey'] = 'Ihre Sitzung ist höchstwahrscheinlich abgelaufen. Bitte melden Sie sich erneut an.';
+$string['invalidsesskey'] = 'Ihre Sitzung ist wahrscheinlich abgelaufen. Bitte gehen Sie zur vorherigen Seite zurück und laden Sie die Seite neu.';
 $string['invalidshortname'] = 'Ungültige Kurzbezeichnung für den Kurs';
 $string['invalidsourcefield'] = 'Der Eintrag im Dateifeld (draft file) ist ungültig.';
 $string['invalidstatedetected'] = 'Eigentlich hätte hier kein Fehler passieren dürfen: {$a}';
@@ -426,6 +431,10 @@ $string['moduledisable'] = 'Das Modul "{$a}" wurde für diesen speziellen Kurs d
 $string['moduledoesnotexist'] = 'Dieses Modul gibt es nicht';
 $string['moduleinstancedoesnotexist'] = 'Die Instanz dieses  Moduls gibt es nicht';
 $string['modulemissingcode'] = 'Im Modul {$a} fehlt der Code, um diese Funktion auszuführen.';
+$string['moodlenet:invalidshareformat'] = 'Ungültiges MoodleNet-Freigabeformat';
+$string['moodlenet:invalidsharestatus'] = 'Ungültiger MoodleNet-Freigabestatus';
+$string['moodlenet:invalidsharetype'] = 'Ungültiger MoodleNet-Teilentyp';
+$string['moodlenet:usernotconfigured'] = 'Sie haben nicht das Recht, Inhalte für MoodleNet freizugeben, oder Ihr Konto ist falsch konfiguriert.';
 $string['movecatcontentstoroot'] = 'Das Verschieben des Bereichsinhalts in den Root-Bereich ist nicht zulässig. Der Inhalt muss in einen bestehenden Kursbereich verschoben werden.';
 $string['movecatcontentstoselected'] = 'Kursbereichsinhalte können nicht in den ausgewählten Kursbereich verschoben werden.';
 $string['movecategorynotpossible'] = 'Sie können den Kursbereich \'{$a}\' nicht in den ausgewählten Kursbereich verschieben.';
@@ -497,8 +506,10 @@ $string['opensslsignerror'] = 'OpenSSL kann die Daten nicht signieren';
 $string['orderidnotfound'] = 'Die Befehls-ID {$a} wurde nicht gefunden';
 $string['pagenotexist'] = '<p>Ein unerwarteter  Fehler ist aufgetreten, weil eine nicht existierende Seite aufgerufen wurde.</p>{$a}';
 $string['pagenotexisttitle'] = 'Fehler 404: Datei nicht gefunden';
+$string['passwordexceeded'] = 'Das Kennwort kann nicht mehr als {$a} Zeichen haben!';
 $string['pathdoesnotstartslash'] = 'Ungültige Argumente eingetragen. Pfad darf nicht mit Slash beginnen!';
 $string['pleasereport'] = 'Wenn Sie etwas Zeit haben, informieren Sie uns bitte darüber, was Sie versucht haben, bevor der Fehler auftrat.';
+$string['pluginnotexist'] = 'Das Plugin {$a} existiert nicht.';
 $string['pluginrequirementsnotmet'] = 'Das Plugin "{$a->pluginname}" ({$a->pluginversion}) konnte nicht installiert werden. Es erfordert eine neuere Version von Moodle (Sie verwenden zur Zeit Version {$a->currentmoodle} - benötigt wird aber Version {$a->requiremoodle}).';
 $string['pluginunsupported'] = 'Das Plugin "{$a->pluginname}" {$a->pluginversion} unterstützt diese Version von Moodle {$a->moodleversion} nicht. Suchen Sie nach Plugin-Infos, um eine nutzbare Version zu finden.';
 $string['prefixcannotbeempty'] = '<p>Fehler: Datenbanktabellen-Prefix kann nicht leer sein.({$a})</p>
@@ -510,6 +521,7 @@ $string['processingstops'] = 'Der Prozess wurde an dieser Stelle gestoppt. Verbl
 $string['protected_cc_not_supported'] = 'Geschützte Cartridges werden nicht unterstützt.';
 $string['querystringcannotbeempty'] = 'Der Abfragetext darf nicht leer sein.';
 $string['redirecterrordetected'] = 'Nichtunterstützte Weiterleitung gefunden, Scriptausführung abgebrochen';
+$string['redissessionhandlerproblem'] = 'Das Einrichten der Redis-Sitzung ist fehlgeschlagen. Bitte benachrichtigen Sie die Administrator/innen.';
 $string['refoundto'] = 'Kann ersetzt werden durch {$a}';
 $string['refoundtoorigi'] = 'Ersetzt durch den Originalbetrag: {$a}';
 $string['registrationdisabled'] = 'Registrierung ist auf dieser Seite deaktiviert';
@@ -610,6 +622,7 @@ $string['usermustbemnet'] = 'Nutzer/innen in der MNET-Zugangskontrolle müssen R
 $string['usernamelowercase'] = 'Der Anmeldename muss in Kleinbuchstaben sein';
 $string['usernotaddederror'] = 'Fehler. Nutzer/in wurde nicht hinzugefügt';
 $string['usernotaddedregistered'] = 'Nutzer wurde nicht hinzugefügt - er/sie war bereits registriert.';
+$string['usernotaddedusernameexists'] = 'Das Nutzerkonto wurde nicht hinzugefügt. Der Anmeldename existiert bereits mit einer anderen E-Mail-Adresse.';
 $string['usernotavailable'] = 'Die Details für diese Person sind für Sie nicht verfügbar.';
 $string['usernotdeletedadmin'] = 'Nutzerkonto nicht gelöscht. Nutzerkonten von Administrator/innen können nicht gelöscht werden.';
 $string['usernotdeleteddeleted'] = 'Dieses Nutzerkonto ist bereits gelöscht.';

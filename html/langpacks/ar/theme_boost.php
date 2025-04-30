@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ar', version '4.1'.
+ * Strings for component 'theme_boost', language 'ar', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'التحضير المسبق للمظهر';
 $string['preset_desc'] = 'إنتقِ إعداداً مسبقاً لتغيير شكل المظهر على نطاق واسع.';
 $string['presetfiles'] = 'ملفات المظهر المحددة مسبقا';
-$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير شكل المظهر بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://archive.moodle.net/boost">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
+$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير شكل المظهر بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://moodle.net/search?q=boost+presets">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
 $string['privacy:drawerblockclosed'] = 'التفضيل الحالي لدُرج الكتلة هو الإغلاق.';
 $string['privacy:drawerblockopen'] = 'التفضيل الحالي لدُرج الكتلة هو الفتح.';
 $string['privacy:drawerindexclosed'] = 'التفضيل الحالي لدُرج الفهرس هو الإغلاق.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'SCSS الخام الأولية';
 $string['rawscsspre_desc'] = 'في هذا الحقل، يمكنك توفير تهيئة ترميز SCSS، سيتم حقنه قبل أيّ شيء آخر. معظم الوقت سوف تستخدم هذا الإعداد لتعريف المتغيرات.';
 $string['region-side-pre'] = 'يمين';
 $string['showfooter'] = 'إظهار تذييل الصفحة';
-$string['totop'] = 'إلى الأعلى';
 $string['unaddableblocks'] = 'الكتل غير الضرورية';
 $string['unaddableblocks_desc'] = 'الكتل المحددة ليست لها حاجة عند استعمال هذا المظهر ولن يتم عرضها في قائمة \'إضافة كتلة\'.';

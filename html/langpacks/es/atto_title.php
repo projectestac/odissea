@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'es', version '4.1'.
+ * Strings for component 'atto_title', language 'es', version '4.4'.
  *
  * @package     atto_title
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = 'Encabezado (largo)';
-$string['h4'] = 'Encabezado (medio)';
+$string['h3'] = 'Encabezado (grande)';
+$string['h4'] = 'Encabezado (mediano)';
 $string['h5'] = 'Encabezado (pequeño)';
 $string['p'] = 'Párrafo';
 $string['pluginname'] = 'Estilos de párrafos';

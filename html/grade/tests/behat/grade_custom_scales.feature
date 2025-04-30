@@ -38,7 +38,7 @@ Feature: Custom scales can be used to rate forum discussions
     And I set the field "rating" to "<scalescores>"
     When I am on the "Course 1" "grades > Grader report > View" page
     Then the following should exist in the "user-grades" table:
-      | -1-       | -3-                  | -4-           |
+      | -1-       | -2-                  | -3-           |
       | Student 1 | student1@example.com | <scalescores> |
     And I am on the "Course 1" "grades > User report > View" page logged in as student1
     And "Forum 1 rating" row "Grade" column of "user-grade" table should contain "<scalescores>"

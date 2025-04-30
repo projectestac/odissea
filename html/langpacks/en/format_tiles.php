@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'en', version '4.1'.
+ * Strings for component 'format_tiles', language 'en', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -126,8 +126,8 @@ $string['documentationurl'] = 'Documentation URL';
 $string['documentationurl_descr'] = 'URL where Tiles documentation can be found.';
 $string['download'] = 'Download';
 $string['editoradvicesubtiles'] = 'In this version of the Tiles plugin, activities will only appear as sub-tiles if editing mode is switched off';
-$string['editsection'] = 'Edit tile';
-$string['editsectionname'] = 'Edit tile name';
+$string['editsection'] = 'Edit section';
+$string['editsectionname'] = 'Edit section name';
 $string['embeddedurlerror'] = 'If the external website refuses to connect in the window above, use this:';
 $string['enablelinebreakfilter'] = 'Enable line break filter';
 $string['enablelinebreakfilter_desc'] = 'Filter tile titles for the invisible word joiner character {$a} and, if present and the title title is long, replace it with "- " to allow line to break.  Otherwise replace it with nothing (i.e. no line break).';
@@ -156,7 +156,10 @@ $string['guidance'] = 'Guidance';
 $string['height'] = 'height';
 $string['hidden'] = 'Hidden';
 $string['hide'] = 'Hide';
-$string['hidefromothers'] = 'Hide tile';
+$string['hidefromothers'] = 'Hide section';
+$string['highcontrastmode'] = 'High contrast mode';
+$string['highcontrastmodeallow'] = 'Allow high contrast mode';
+$string['highcontrastmodeallow_desc'] = 'Allow users to set a user preference to show tiles courses with high contrast (teacher selected tile colours will be overridden with a dark colour)';
 $string['highestsectionnum'] = 'Highest section number found';
 $string['home'] = 'Course home';
 $string['icontitle-address-book-o'] = 'Address book';
@@ -261,8 +264,7 @@ $string['imagecannotbeused'] = 'Image cannot be used';
 $string['imagedeletedfrom'] = 'Image deleted from "{$a}"';
 $string['imagesavedfor'] = 'Image saved for {$a}';
 $string['imagesize'] = 'Image size';
-$string['jsactivate'] = 'Animated navigation - turn off';
-$string['jsdeactivate'] = 'Animated navigation - turn on';
+$string['jsactivate'] = 'Animated navigation';
 $string['jsdeactivated'] = 'You have deactivated animated navigation on your account';
 $string['jsnavsettings'] = 'JavaScript navigation';
 $string['jsreactivated'] = 'You have activated animated navigation on your account.';
@@ -292,7 +294,9 @@ $string['novaliddefaultcolour'] = 'No valid colour set for the default tile colo
 $string['numberofsections'] = 'Number of sections in course';
 $string['numbers'] = 'Numbers';
 $string['numbers_desc'] = 'Choose a number icon for this tile';
+$string['off'] = 'Off';
 $string['ok'] = 'OK';
+$string['on'] = 'On';
 $string['onlywhenediting'] = 'Only when editing';
 $string['other'] = 'Other';
 $string['outcomes'] = 'outcomes';
@@ -313,8 +317,10 @@ $string['phototitletitlelineheight'] = 'Title line height';
 $string['phototitletitlepadding'] = 'Title vertical line padding';
 $string['picknewicon'] = 'Pick a new icon';
 $string['picknewiconphoto'] = 'Pick a new icon or background photo';
+$string['plugin_description'] = 'A visually rich format, where sections and activities are represented by tiles, with customisable photos, icons and colours.';
 $string['pluginname'] = 'Tiles';
 $string['previoustopic'] = 'Previous topic';
+$string['privacy:metadata:preference:format_tiles_high_contrast_mode'] = 'Whether the user is using high contrast mode.';
 $string['privacy:metadata:preference:format_tiles_stopjsnav'] = 'Whether the user has disabled animated JavaScript navigation.';
 $string['privacypolicy'] = 'Privacy policy';
 $string['problemcourses'] = 'Problem courses';
@@ -361,7 +367,7 @@ $string['setbackgroundphoto'] = 'Set photo / icon';
 $string['settings'] = 'Tiles format settings';
 $string['show'] = 'Show';
 $string['showalltiles'] = 'Show all tiles';
-$string['showfromothers'] = 'Show tile';
+$string['showfromothers'] = 'Show section';
 $string['showoverallprogress'] = 'Show overall progress indicator';
 $string['showoverallprogress_desc'] = 'Show "Overall progress %" indicator at top right of course (value shown represents the aggregate of the % complete of each tile, based on activity completion not course completion';
 $string['showprogresssphototiles_desc'] = 'If selected, student progress (e.g. Progress 2/5) will be shown on photo tiles';
@@ -372,6 +378,8 @@ $string['sitename'] = 'Site name';
 $string['snapwarning'] = 'It may be possible to edit your course in Tiles format using another theme, and then switch back to Snap theme once you have finished editing.';
 $string['snapwarning_help'] = 'Theme_settings#Allow_user_themes';
 $string['style'] = 'Style';
+$string['subtileiconcolourbackground'] = 'Sub-tile icons - use solid colour background circle';
+$string['subtileiconcolourbackground_desc'] = 'If checked, sub-tile icons are shown as white icons in a solid colour background circle. Otherwise, icons are (1) themselves coloured and (2) in a coloured, but not solid, circle';
 $string['subtileszeczerotoggled'] = 'Top section toggled between list and sub tiles format';
 $string['suremigratelegacyoptions'] = 'Are you sure you want to migrate {$a} tile photo or icon choices for this course?';
 $string['sureresetcolours'] = 'Are you sure you wish to reset course tile colours to default?  This will affect {$a} courses';
@@ -384,6 +392,7 @@ $string['tileicon_help'] = 'Item selected here will override, for this tile only
 $string['tileicons'] = 'Tile icons';
 $string['tileoutcome'] = 'Outcome for this tile';
 $string['tileoutcome_help'] = 'If you select an outcome for this tile, you will then under course settings be able to display a set of <em>filter buttons</em>, one for each outcome,  which when pressed filter the displayed tiles according to which outcome they have been assigned';
+$string['tileselecttip'] = 'In the course, with editing mode on, simply click the icon or photo you want to change.  The icon picker window will pop up.';
 $string['tilesformatregistration'] = 'Tiles format registration';
 $string['tilesreset'] = 'Tiles & icons have been reset for this course';
 $string['tilestyle'] = 'Tile Style';

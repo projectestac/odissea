@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ar', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'ar', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = 'إختر نوع النشاط الذي سيتم
 $string['erroractivitytype'] = 'نوع النشاط لم يتم ضبطه في إعدادات المساق';
 $string['orphaned'] = 'مُيتم';
 $string['orphanedwarning'] = 'هذه النشاطات لا يمكن للمستخدمين الوصول إليها!';
-$string['pluginname'] = 'تنسيق النشاط الواحد';
+$string['plugin_description'] = 'يحتوي المساق على مورد أو نشاط واحد فقط.';
+$string['pluginname'] = 'النشاط الواحد';
 $string['privacy:metadata'] = 'إن ملحق تنسيق النشاط الواحد لا يخزن أي بيانات شخصية.';
 $string['sectionname'] = '';
 $string['warningchangeformat'] = 'عند تغيير تنسيق المقرر الموجود إلى "النشاط الواحد"، تأكد من إزالتك لكل النشاطات الزائدة منه بضمنها "الإعلانات". لاحظ أن هيكل المقاطع قد يتغير.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'el', version '4.1'.
+ * Strings for component 'tool_usertours', language 'el', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -120,7 +120,6 @@ $string['pausetour'] = 'Παύση';
 $string['placement'] = 'Τοποθέτηση';
 $string['placement_help'] = 'Ένα βήμα μπορεί να τοποθετηθεί πάνω, κάτω, αριστερά ή δεξιά του στόχου. Πάνω ή κάτω, συνιστάται, καθώς έτσι προσαρμόζεται καλύτερα στην οθόνη κινητών τηλεφώνων. Αν το βήμα δεν ταιριάζει σε μια συγκεκριμένη σελίδα στο καθορισμένο σημείο, θα τοποθετηθεί αυτόματα αλλού.';
 $string['pluginname'] = 'Περιηγήσεις χρηστών';
-$string['previousstep'] = 'Προηγούμενο';
 $string['privacy:metadata:preference:completed'] = 'Πότε ολοκλήρωσε τελευταία ένας χρήστης μια ξενάγηση χρήστη.';
 $string['privacy:metadata:preference:requested'] = 'Πότε έγινε τελευταία φορά χειροκίνητα αίτημα από τον χρήστη για μια ξενάγηση χρήστη.';
 $string['privacy:request:preference:completed'] = 'Η τελευταία φορά που σημειώσατε την ξενάγηση χρήστη «{$a->name}» ως ολοκληρωμένη ήταν στις {$a->time}';

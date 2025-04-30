@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ro', version '4.1'.
+ * Strings for component 'contentbank', language 'ro', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor';
 $string['choosecontext'] = 'Alege curs sau categorie...';
-$string['close'] = 'Închide';
 $string['contentbank'] = 'Banca de conținut';
 $string['contentbankpreferences'] = 'Preferințe ale băncii de conținut';
+$string['contentcopied'] = 'Conținut copiat.';
+$string['contentcreated'] = 'Conținut creat.';
 $string['contentdeleted'] = 'Conținut șters.';
 $string['contentname'] = 'Denumirea conținutului';
 $string['contentnotdeleted'] = 'A apărut o eroare când ați încercat să ștergeți conținutul.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Conținut redenumit.';
 $string['contentsmoved'] = 'Conținuturile băncii de întrebări mutate la {$a}.';
 $string['contenttypenoaccess'] = 'Nu puteți vedea această {$a} instanță.';
 $string['contenttypenoedit'] = 'Nu puteți edita acest conținut.';
+$string['contentupdated'] = 'Conținut actualizat.';
 $string['contentvisibilitychanged'] = 'Conținutul este acum {$a}.';
 $string['contentvisibilitynotset'] = 'A apărut o eroare la încercarea de a seta vizibilitatea conținutului.';
 $string['contextnotallowed'] = 'Nu aveți permisiunea de a accesa banca de conținut în acest context.';
+$string['copycontent'] = 'Copiează conținut';
+$string['copyof'] = 'Copie a {$a}';
 $string['deletecontent'] = 'Șterge conținutul';
 $string['deletecontentconfirm'] = 'Sigur doriți să ștergeți conținutul <em> \'{$a->name}\' </em> și toate fișierele asociate? Această acțiune nu poate fi anulată.';
 $string['deletecontentconfirmlinked'] = 'Conținutul va fi șters doar din banca de conținut. Orice locații care au o conexiune în prezent cu acesta vor fi actualizate automat pentru a utiliza, în schimb, o copie a conținutului.';
@@ -64,6 +68,7 @@ $string['more'] = 'Mai mult';
 $string['name'] = 'Conținut';
 $string['nocontentavailable'] = 'Nu există conținut disponibil';
 $string['nocontenttypes'] = 'Nu sunt disponibile tipuri de conținut';
+$string['nopermissiontocopy'] = 'Nu ai permisiunea să copiezi conținut.';
 $string['nopermissiontodelete'] = 'Nu aveți permisiunea să ștergeți conținutul';
 $string['nopermissiontomanage'] = 'Nu aveți permisiunea să administrați conținutul';
 $string['notavailable'] = 'Ne pare rău, acest conținut nu este disponibil.';

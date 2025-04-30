@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'fr', version '4.1'.
+ * Strings for component 'oublog', language 'fr', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -246,10 +246,9 @@ $string['rss'] = 'RSS';
 $string['rssfeed'] = 'Flux RSS';
 $string['savefailtitle'] = 'Cet article ne peut pas être enregistré';
 $string['savegrades'] = 'Enregistrer les "grades"';
-$string['search:activity'] = 'OU blog -  Information sur l’activité';
+$string['search:activity'] = 'OU blog - Information sur l’activité';
 $string['search:comments'] = 'Ou blog - commentaires des articles';
 $string['search:post'] = 'OU blog - articles';
-$string['searchblogs'] = 'Rechercher';
 $string['searchthisblog'] = 'rechercher : {$a}';
 $string['sendanddelete'] = 'Envoyer et supprimer';
 $string['separateindividual'] = 'Les individus sont séparés';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'gl', version '4.1'.
+ * Strings for component 'tool_task', language 'gl', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -41,6 +41,7 @@ $string['plugindisabled'] = 'Engadido desactivado';
 $string['pluginname'] = 'Configuración de tarefas programadas';
 $string['resettasktodefaults'] = 'Restaurar as tarefas programadas aos valos predeterminados';
 $string['resettasktodefaults_help'] = 'Isto desbotará calquera cambio local e reverterá a programación para esta tarefa ás súas configuracións orixinais';
+$string['runadhoc'] = 'Executar tarefas «ad hoc» agora?';
 $string['runningtasks'] = 'Tarefas en execución';
 $string['scheduledtaskchangesdisabled'] = 'Impedíronse modificacións á lista de tarefas programadas na configuración de Moodle';
 $string['scheduledtasks'] = 'Tarefas programadas';

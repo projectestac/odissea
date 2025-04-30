@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', version '4.1'.
+ * Strings for component 'survey', language 'nl', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Werkelijk';
 $string['actualclass'] = 'Klasseresultaat werkelijk';
 $string['actualstudent'] = 'werkelijk van {$a}';
 $string['allquestionrequireanswer'] = 'Alle vragen zijn vereist en moeten beantwoord worden.';
-$string['allquestions'] = 'Alle vragen in volgorde, voor alle leerlingen';
 $string['allscales'] = 'Alle schalen, voor alle leerlingen';
 $string['alreadysubmitted'] = 'Je hebt dit onderzoek al ingestuurd';
 $string['analysisof'] = 'Analyse van {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Door welke gebeurtenis werd je het meest verrast?';
 $string['ciq5short'] = 'Verrassend moment';
 $string['ciqintro'] = 'Beantwoord de onderstaande vragen terwijl je terug kijkt naar de gebeurtenissen tijdens de lessen van de afgelopen week.';
 $string['ciqname'] = 'Kritieke gebeurtenissen';
-$string['clicktocontinue'] = 'Klik hier om door te gaan';
 $string['clicktocontinuecheck'] = 'Klik hier om te controleren en door te gaan';
 $string['colles1'] = 'mijn leren richt zich op de zaken die me interesseren.';
 $string['colles10'] = 'ik vraag de andere leerlingen om hun ideeën uit te leggen.';
@@ -189,7 +187,7 @@ Er zijn geen \'goede\' en geen \'foute\' antwoorden; we zijn alleen maar geïnte
 Hartelijk bedankt.';
 $string['collespname'] = 'COLLES (Voorkeur)';
 $string['completiondetail:submit'] = 'Stuur antwoorden in';
-$string['completionsubmit'] = 'De leerling moet iets insturen';
+$string['completionsubmit'] = 'Doe een inzending';
 $string['customintro'] = 'Beschrijving';
 $string['deleteallanswers'] = 'Verwijder alle onderzoek antwoorden';
 $string['deleteanalysis'] = 'Verwijder alle antwoordanalyses';
@@ -201,7 +199,7 @@ $string['downloadresults'] = 'Download resultaten';
 $string['downloadtext'] = 'Download de gegevens als een tekstbestand';
 $string['editingasurvey'] = 'Een onderzoek bewerken';
 $string['errorunabletosavenotes'] = 'Er is een fout opgetreden bij het bewaren van je notities.';
-$string['eventreportdownloaded'] = 'Onderzoekrapport gedownloaded';
+$string['eventreportdownloaded'] = 'Onderzoekrapport gedownload';
 $string['eventreportviewed'] = 'Onderzoeksrapport bekeken';
 $string['eventresponsesubmitted'] = 'Onderzoeksantwoord ingestuurd';
 $string['guestsnotallowed'] = 'Enkel aangemelde gebruikers mogen onderzoeken posten';
@@ -283,4 +281,3 @@ $string['surveytype_help'] = 'Er zijn drie types van onderzoek beschikbaar:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Bedankt voor het invullen van dit onderzoek, {$a}';
 $string['time'] = 'Tijd';
-$string['viewsurveyresponses'] = 'Bekijk {$a} ingevulde onderzoeken';

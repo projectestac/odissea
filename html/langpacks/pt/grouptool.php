@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'pt', version '4.1'.
+ * Strings for component 'grouptool', language 'pt', version '4.4'.
  *
  * @package     grouptool
  * @category    string
@@ -49,7 +49,7 @@ $string['already_occupied'] = 'A vaga no grupo <strong>{$a->grpname}</strong> j�
 $string['already_queued'] = '<strong>{$a->username}</strong> já está em fila de espera no grupo <strong>{$a->groupname}</strong>!';
 $string['already_registered'] = '<strong>{$a->username}</strong> já está está registado no grupo <strong>{$a->groupname}</strong>!';
 $string['alwaysshowdescription'] = 'Mostrar sempre a descrição';
-$string['alwaysshowdescription_help'] = 'Se desativar esta opção, a descrição acima apenas ficará visível para os alunos durante o período de registo.';
+$string['alwaysshowdescription_help'] = 'Se desativar esta opção, a descrição acima do trabalho apenas ficará visível para os alunos na data de início dos registos.';
 $string['asterisk_marks_moodle_registrations'] = 'Os utilizadores marcados com asterisco (*) já estão registados nos respetivos grupos do Moodle';
 $string['availabledate'] = 'Data de início dos registos';
 $string['availabledate_help'] = 'Início do período de registo. Se ativo, após esta data os alunos podem registar-se nos grupos selecionados.';
@@ -572,7 +572,7 @@ $string['start'] = 'Executar';
 $string['status'] = 'Estado';
 $string['status_help'] = '<ul>
 <li><strong>✔</strong> inscrito em Grupos do Moodle e na Ferramenta de Grupos</li>
-<li><strong>?</strong> inscrito em Grupos do Moodle mas não na Ferramenta de Grupos</li>
+<li><strong>>?</strong> inscrito em Grupos do Moodle mas não na Ferramenta de Grupos</li>
 <li><strong>+</strong> inscrito na Ferramenta de Grupos mas não em Grupos do Moodle</li>
 <li><strong>1, 2, 3, ...</strong> em fila na Ferramenta de Grupos</li>
 </ul>';

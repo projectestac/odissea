@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'fr', version '4.1'.
+ * Strings for component 'block_myoverview', language 'fr', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Menu déroulant de filtre';
 $string['aria:hiddencourses'] = 'Montrer les cours retirés de l’affichage';
 $string['aria:hidecourse'] = 'Retirer {$a} de l’affichage';
 $string['aria:inprogress'] = 'Afficher les cours actifs';
-$string['aria:lastaccessed'] = 'Trier les cours par date de dernier accès';
 $string['aria:list'] = 'Passer à la vue liste';
 $string['aria:past'] = 'Afficher les cours passés';
 $string['aria:removefromfavourites'] = 'Retirer des favoris';
-$string['aria:shortname'] = 'Trier les cours par nom abrégé';
 $string['aria:showcourse'] = 'Montrer {$a} dans l’affichage';
 $string['aria:sortingdropdown'] = 'Menu déroulant de tri';
 $string['aria:summary'] = 'Passer à la vue en résumé';
-$string['aria:title'] = 'Trier les cours par nom';
 $string['availablegroupings'] = 'Filtres disponibles';
 $string['availablegroupings_desc'] = 'Filtres de cours disponibles pour les utilisateurs. Si aucun n’est sélectionné, tous les cours seront affichés.';
 $string['card'] = 'Carte';
 $string['cards'] = 'Cartes';
-$string['clearsearch'] = 'Effacer la recherche';
 $string['completepercent'] = '{$a} % terminé';
 $string['courseprogress'] = 'Progression du cours :';
+$string['createcourse'] = 'Créer un cours';
 $string['customfield'] = 'Champ personnalisé';
 $string['customfiltergrouping'] = 'Champ à utiliser';
 $string['customfiltergrouping_nofields'] = 'Cette option nécessite d’avoir au moins un champ de cours personnalisé visible pour tout le monde.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Trier par nom abrégé de cours';
 $string['sortbytitle'] = 'Trier par nom de cours';
 $string['summary'] = 'Résumé';
 $string['title'] = 'Nom';
+$string['viewquickstart'] = 'Consulter le Guide de démarrage';
+$string['zero_default_intro'] = 'Une fois inscrit dans un cours, celui-ci s’affichera ici.';
+$string['zero_default_title'] = 'Vous n’êtes inscrit dans aucun cours';
+$string['zero_nocourses_intro'] = 'Besoin d’aide pour commencer ? Consultez la <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentation Moodle</a> ou faites vos premiers pas avec notre Guide de démarrage';
+$string['zero_nocourses_title'] = 'Créer votre premier cours';
+$string['zero_request_intro'] = 'Besoin d’aide pour commencer ? Consultez la <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentation Moodle</a> ou faites vos premiers pas avec notre <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Guide de démarrage</a>.';
+$string['zero_request_title'] = 'Demander votre premier cours';

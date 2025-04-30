@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ca', version '4.1'.
+ * Strings for component 'auth_lti', language 'ca', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,6 +38,7 @@ $string['firstlaunchnotice'] = 'Sembla que aquesta és la primera vegada que ven
 $string['getstartedwithnewaccount'] = 'Comença amb un compte nou';
 $string['haveexistingaccount'] = 'Ja tinc un compte';
 $string['linkthisaccount'] = 'Enllaça aquest compte';
+$string['mustbeloggedin'] = 'Inicieu la sessió per enllaçar el vostre compte existent.';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata:auth_lti'] = 'Autenticació LTI';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'Aquest complement està connectat al subsistema d\'autenticació.';

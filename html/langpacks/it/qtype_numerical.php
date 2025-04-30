@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'it', version '4.1'.
+ * Strings for component 'qtype_numerical', language 'it', version '4.4'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -69,8 +69,14 @@ $string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Creazione domanda Numerica';
 $string['pluginnameediting'] = 'Modifica domanda Numerica';
 $string['pluginnamesummary'] = 'Consente l\'uso di risposte numeriche, possibilmente con unità, valutate rispetto a modelli di risposta, possibilmente con tolleranza.';
-$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Numerica\' non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin di tipo domanda numerica consente agli autori delle domande di impostare opzioni predefinite come preferenze utente.';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';
+$string['privacy:preference:multichoicedisplay'] = 'Opzione per visualizzare le unità come elemento di immissione testo, selezione a scelta multipla o menu a discesa.';
+$string['privacy:preference:penalty'] = 'Penalità per ogni tentativo errato quando le domande vengono eseguite utilizzando il comportamento \'Interattivo con tentativi multipli\' o \'Modalità adattiva\'.';
+$string['privacy:preference:unitgradingtypes'] = 'Opzione per applicare la penalità unitaria si applica come frazione (0-1) del voto della risposta o del voto della domanda.';
+$string['privacy:preference:unitpenalty'] = 'Applicazione della frazione (0-1) sulla valutazione della risposta o sulla valutazione della domanda';
+$string['privacy:preference:unitrole'] = 'Opzione per indicare se l\'unità è essenziale, facoltativa o non prevista.';
+$string['privacy:preference:unitsleft'] = 'Opzione di visualizzazione dell\'unità, a sinistra (ad esempio $, £) oppure a destra (ad esempio kg, km, cm).';
 $string['relative'] = 'Relativo';
 $string['rightexample'] = 'a destra, ad esempio  come 1.00cm or 1.00km';
 $string['selectunit'] = 'Scegli una unità';

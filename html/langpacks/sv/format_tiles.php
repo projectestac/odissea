@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'sv', version '4.1'.
+ * Strings for component 'format_tiles', language 'sv', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -218,16 +218,6 @@ $string['icontitle-mobile-phone'] = 'Mobiltelefon';
 $string['icontitle-mortar-board'] = 'Oxfordmössa';
 $string['icontitle-music'] = 'Musik';
 $string['icontitle-newspaper-o'] = 'Tidning';
-$string['icontitle-number_1'] = 'Nummer 1';
-$string['icontitle-number_10'] = 'Nummer 10';
-$string['icontitle-number_2'] = 'Nummer 2';
-$string['icontitle-number_3'] = 'Nummer 3';
-$string['icontitle-number_4'] = 'Nummer 4';
-$string['icontitle-number_5'] = 'Nummer 5';
-$string['icontitle-number_6'] = 'Nummer 6';
-$string['icontitle-number_7'] = 'Nummer 7';
-$string['icontitle-number_8'] = 'Nummer 8';
-$string['icontitle-number_9'] = 'Nummer 9';
 $string['icontitle-pencil-square-o'] = 'Penna i ruta';
 $string['icontitle-person'] = 'Person';
 $string['icontitle-pie-chart'] = 'Tårtbitsdiagram';
@@ -261,9 +251,7 @@ $string['imagecannotbeused'] = 'Bilden går inte att använda';
 $string['imagedeletedfrom'] = 'Bild borttagen från "{$a}"';
 $string['imagesavedfor'] = 'Bild för "{$a}" sparad';
 $string['imagesize'] = 'Bildstorlek';
-$string['items'] = 'objekt';
 $string['jsactivate'] = 'Slå på animerad navigering';
-$string['jsdeactivate'] = 'Stäng av animerad navigering';
 $string['jsdeactivated'] = 'Du har inaktiverat animerad navigering för ditt konto';
 $string['jsnavsettings'] = 'JavaScript-navigering';
 $string['jsreactivated'] = 'Du har aktiverat animerad navigering för ditt konto. Detta kan göra navigeringen snabbare. Detta kräver att JavaScript är aktiverat.';
@@ -369,6 +357,7 @@ $string['tileicon_help'] = 'Det objekt som väljs här åsidosätter, endast fö
 $string['tileicons'] = 'Panelikoner';
 $string['tileoutcome'] = 'Resultat för denna panel';
 $string['tileoutcome_help'] = 'Om du väljer ett resultat för den här panelen kan du under kursinställningarna visa en uppsättning <em>filterknappar</em>, en för varje resultat, som när du trycker på den filtrerar de visade panelerna efter vilket resultat de har tilldelats';
+$string['tileselecttip'] = 'Här är ett enklare sätt att ändra en panelikon eller ett foto: klicka bara på ikonen eller fotot som du vill ändra i kursen, med redigeringsläge på. Fönstret ikonväljaren visas.';
 $string['tilesformatregistration'] = 'Registrera Panelformat-modulen.';
 $string['togglecompletion'] = 'Klicka för att växla slutförandestatus';
 $string['togglecompletioncomplete'] = 'Klicka för att växla slutförandestatus (slutförd)';

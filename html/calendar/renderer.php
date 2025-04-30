@@ -51,63 +51,10 @@ class core_calendar_renderer extends plugin_renderer_base {
     }
 
     /**
-     * Produces the content for the three months block (pretend block)
-     *
-     * This includes the previous month, the current month, and the next month
-     *
      * @deprecated since 4.0 MDL-72810.
-     * @todo MDL-73117 This will be deleted in Moodle 4.4.
-     *
-     * @param calendar_information $calendar
-     * @return string
      */
-    public function fake_block_threemonths(calendar_information $calendar) {
-        debugging('This method is no longer used as the three month calendar block has been removed', DEBUG_DEVELOPER);
-
-        // Get the calendar type we are using.
-        $calendartype = \core_calendar\type_factory::get_calendar_instance();
-        $time = $calendartype->timestamp_to_date_array($calendar->time);
-
-        $current = $calendar->time;
-        $prevmonthyear = $calendartype->get_prev_month($time['year'], $time['mon']);
-        $prev = $calendartype->convert_to_timestamp(
-                $prevmonthyear[1],
-                $prevmonthyear[0],
-                1
-            );
-        $nextmonthyear = $calendartype->get_next_month($time['year'], $time['mon']);
-        $next = $calendartype->convert_to_timestamp(
-                $nextmonthyear[1],
-                $nextmonthyear[0],
-                1
-            );
-
-        $content = '';
-
-        // Previous.
-        $calendar->set_time($prev);
-        list($previousmonth, ) = calendar_get_view($calendar, 'minithree', false, true);
-
-        // Current month.
-        $calendar->set_time($current);
-        list($currentmonth, ) = calendar_get_view($calendar, 'minithree', false, true);
-
-        // Next month.
-        $calendar->set_time($next);
-        list($nextmonth, ) = calendar_get_view($calendar, 'minithree', false, true);
-
-        // Reset the time back.
-        $calendar->set_time($current);
-
-        $data = (object) [
-            'previousmonth' => $previousmonth,
-            'currentmonth' => $currentmonth,
-            'nextmonth' => $nextmonth,
-        ];
-
-        $template = 'core_calendar/calendar_threemonth';
-        $content .= $this->render_from_template($template, $data);
-        return $content;
+    public function fake_block_threemonths() {
+        throw new coding_exception(__FUNCTION__ . '() has been removed.');
     }
 
     /**
@@ -325,10 +272,10 @@ class core_calendar_renderer extends plugin_renderer_base {
      */
     public function render_subscriptions_header(): string {
         $importcalendarbutton = new single_button(new moodle_url('/calendar/import.php', calendar_get_export_import_link_params()),
-                get_string('importcalendar', 'calendar'), 'get', true);
+                get_string('importcalendar', 'calendar'), 'get', single_button::BUTTON_PRIMARY);
         $importcalendarbutton->class .= ' float-sm-right float-right';
         $exportcalendarbutton = new single_button(new moodle_url('/calendar/export.php', calendar_get_export_import_link_params()),
-                get_string('exportcalendar', 'calendar'), 'get', true);
+                get_string('exportcalendar', 'calendar'), 'get', single_button::BUTTON_PRIMARY);
         $exportcalendarbutton->class .= ' float-sm-right float-right';
         $output = $this->output->heading(get_string('managesubscriptions', 'calendar'));
         $output .= html_writer::start_div('header d-flex flex-wrap mt-5');
@@ -351,9 +298,8 @@ class core_calendar_renderer extends plugin_renderer_base {
      */
     public function render_no_calendar_subscriptions(): string {
         $output = html_writer::start_div('mt-5');
-        $importlink = html_writer::link((new moodle_url('/calendar/import.php', calendar_get_export_import_link_params()))->out(),
-                get_string('importcalendarexternal', 'calendar'));
-        $output .= get_string('nocalendarsubscriptions', 'calendar', $importlink);
+        $importlink = (new moodle_url('/calendar/import.php', calendar_get_export_import_link_params()))->out();
+        $output .= get_string('nocalendarsubscriptionsimportexternal', 'core_calendar', $importlink);
         $output .= html_writer::end_div();
 
         return $output;
@@ -380,7 +326,8 @@ class core_calendar_renderer extends plugin_renderer_base {
         $table->id = 'subscription_details_table';
 
         if (empty($subscriptions)) {
-            $cell = new html_table_cell(get_string('nocalendarsubscriptions', 'calendar'));
+            $importlink = (new moodle_url('/calendar/import.php', calendar_get_export_import_link_params()))->out();
+            $cell = new html_table_cell(get_string('nocalendarsubscriptionsimportexternal', 'core_calendar', $importlink));
             $cell->colspan = 5;
             $table->data[] = new html_table_row(array($cell));
         }

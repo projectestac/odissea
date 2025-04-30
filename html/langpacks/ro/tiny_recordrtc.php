@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'ro', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'ro', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'Nu sunt specificate restricții';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Este posibil ca browserul tău să nu permită acestui plugin să funcționeze decât dacă este utilizat printr-o conexiune HTTPS sau localhost.';
 $string['insecurealert_title'] = 'Conexiune nesigură!';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'Ai atins limita maximă de dimensiune pentru încărcarea fișierelor';
 $string['maxfilesizehit_title'] = 'Înregistrarea s-a oprit';
 $string['norecordingfound'] = 'Ceva nu a funcționat. Nu s-a înregistrat nimic';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'Browser-ul tău oferă suport limitat sau nu oferă înc�
 $string['nowebrtc_title'] = 'WebRTC nu este acceptat';
 $string['onlyaudio'] = 'Doar audio';
 $string['onlyvideo'] = 'Doar video';
-$string['pluginname'] = 'Tiny RecordRTC';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'Plugin-ul RecordRTC nu stochează date personale.';
 $string['recordagain'] = 'Înregistrează din nou';
 $string['recordagain_desc'] = 'Ai înregistrat deja conținut. Dacă înregistrezi din nou, se va șterge acest conținut. Sigur vrei să resetezi înregistrarea?';

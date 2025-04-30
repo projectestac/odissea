@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_mobile', language 'zh_cn', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,10 +31,15 @@ $string['androidappid_desc'] = '除非您有自定义 Android 应用，否则此
 $string['apppolicy'] = '应用政策网址';
 $string['apppolicy_help'] = '应用用户政策网址，列在应用的“关于”页面上。如果字段为空，则使用站点政策网址。';
 $string['apprequired'] = '该功能只有通过Moodle移动或桌面应用访问时才能使用。';
-$string['autologinkeygenerationlockout'] = '自动登录密钥生成被阻塞。您需要在请求之间等待 6 分钟。';
+$string['autologinkeygenerationlockout'] = '自动登录密钥生成被阻止。您需要在两次请求之间等待 {$a} 分钟。';
 $string['autologinmintimebetweenreq'] = '自动登录请求之间的最短间隔时间';
 $string['autologinmintimebetweenreq_desc'] = '来自移动应用程序的自动登录请求之间的最短时间间隔。如果经常要求用户在查看网站的内容时登陆账号，请设置较低的值。';
 $string['autologinnotallowedtoadmins'] = '站点管理员不允许自动登录。';
+$string['autologout'] = '强制用户自动注销';
+$string['autologout_desc'] = '出于安全原因，您可以强制用户在离开或关闭应用程序时自动退出，或者进入后台。当用户返回应用程序时，他们必须再次登录。';
+$string['autologoutcustom'] = '自定义用户离开或关闭应用程序后的时间';
+$string['autologoutinmediate'] = '在用户离开后立即关闭应用程序';
+$string['autologouttime'] = '自动注销定时器';
 $string['cachedef_plugininfo'] = '它存储包含移动插件的插件列表';
 $string['cachedef_subscriptiondata'] = '它存储Moodle应用的订阅信息。';
 $string['clickheretolaunchtheapp'] = '如果应用没有自动打开，请点击这里。';
@@ -74,12 +79,12 @@ $string['filetypeexclusionlistplaceholder'] = '移动文件类型排除列表';
 $string['forcedurlscheme'] = '如果您只允许您的自定义品牌应用通过浏览器窗口打开，那么在这里指定它的URL方案。如果您只允许官方应用，那么设置为默认值。如果您想允许任何应用，请将字段留空。';
 $string['forcedurlscheme_key'] = 'URL方案';
 $string['forcelogout'] = '强制退出';
-$string['forcelogout_desc'] = '如果启用，“切换站点”的应用选项将被“退出”所取代。这将导致用户被完全退出。他们下次访问站点的时候必须重新输入密码。';
+$string['forcelogout_desc'] = '如果启用，即使切换账户，用户也将始终完全注销。然后，他们必须在下次访问该网站时重新输入密码。';
 $string['getmoodleonyourmobile'] = '获取移动应用';
 $string['h5poffline'] = '离线查看H5P内容';
 $string['httpsrequired'] = '‎需要 HTTPS‎';
 $string['insecurealgorithmwarning'] = '似乎HTTPS证书使用了一种不安全的签名算法(SHA-1)。请更新证书。';
-$string['invalidcertificatechainwarning'] = '似乎证书链是无效的。';
+$string['invalidcertificatechainwarning'] = '证书链似乎无效。此证书可能适用于浏览器，但不适用于移动应用程序。';
 $string['invalidcertificateexpiredatewarning'] = '似乎该站点的HTTPS证书已经过期。';
 $string['invalidcertificatestartdatewarning'] = '似乎该站点的HTTPS证书还未生效(生效日期还未到)。';
 $string['invalidprivatetoken'] = '无效的私人令牌。令牌不应为空或通过GET参数传递。';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = '管理文件类型';
 $string['minimumversion'] = '如果指定了应用版本(3.8.0或更高版本)，任何使用较老版本应用的用户将被提示升级他们的应用，然后才能访问站点。';
 $string['minimumversion_key'] = '最低应用版本要求';
 $string['mobileapp'] = '移动应用';
-$string['mobileappconnected'] = '已连接移动应用';
 $string['mobileappearance'] = '移动设备外观';
 $string['mobileappenabled'] = '此站点已启用移动应用访问。<br /> <a href="{$a}">下载移动应用</a>。';
 $string['mobileappsubscription'] = 'Moodle应用订阅';
@@ -117,27 +121,28 @@ $string['notificationsseemore'] = '注意：Moodle应用使用情况统计信息
 $string['notificationssentnotifications'] = '已发送通知';
 $string['oauth2identityproviders'] = 'OAuth 2身份验证提供程序';
 $string['offlineuse'] = '离线使用';
-$string['openusingembeddedbrowser'] = '使用嵌入式浏览器打开';
 $string['pluginname'] = 'Moodle 应用工具';
 $string['pluginnotenabledorconfigured'] = '未启用或配置插件。';
 $string['privacy:metadata:core_userkey'] = '用户密钥，用于为当前用户创建自动登录密钥。';
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = '上次自动登录密钥请求的日期。每次请求之间需要 6 分钟。';
 $string['qrcodedisabled'] = '禁用二维码访问';
 $string['qrcodeformobileappaccess'] = '用于移动应用访问的二维码';
-$string['qrcodeformobileapploginabout'] = '使用移动应用扫描二维码，即可自动登录。二维码将在{$a}分钟后过期。';
+$string['qrcodeformobileapploginabout'] = '使用移动应用扫描二维码可自动登录。二维码将在{$a}分钟后过期。';
 $string['qrcodeformobileappurlabout'] = '使用您的移动应用扫描二维码，以在应用中填写站点网址。';
 $string['qrcodetype'] = '二维码访问';
-$string['qrcodetype_desc'] = '用户可以通过移动应用扫描二维码，填写站点网址，或者无需输入用户凭证即可自动登录。';
+$string['qrcodetype_desc'] = '可以提供二维码供移动应用程序用户扫描。这可用于填写站点 URL，或者在使用 HTTPS 保护站点的情况下，自动登录用户，而无需输入其用户名和密码。';
 $string['qrcodetypelogin'] = '带自动登录的二维码';
 $string['qrcodetypeurl'] = '带站点网址的二维码';
 $string['qrkeyttl'] = 'QR身份验证密钥持续时间';
 $string['qrkeyttl_desc'] = '用于自动登录的二维码有效的时间长度。';
+$string['qrsameipcheck'] = 'QR认证相同的IP检查';
+$string['qrsameipcheck_desc'] = '用户是否必须使用同一网络生成和扫描二维码进行登录。只有当用户报告QR登录问题时才禁用它。';
 $string['qrsiteadminsnotallowed'] = '出于安全原因，站点管理员或者以其他用户身份登录不允许通过二维码登录。';
-$string['readingthisemailgettheapp'] = '在邮件中阅读？<a href="{$a}">在您的移动设备上下载移动应用并接收通知</a>。';
+$string['readingthisemailgettheapp'] = '您是否在电子邮件中阅读此内容？<a href=“{$a}”>下载移动应用程序并在您的移动设备上接收通知</a>。';
 $string['remoteaddons'] = '远程附件';
 $string['responsivemainmenuitems'] = '响应式菜单项';
 $string['scanqrcode'] = '扫描二维码';
-$string['selfsignedoruntrustedcertificatewarning'] = '似乎HTTPS证书是自签名的或不受信任的。该移动应用只能在可信任的站点上使用。';
+$string['selfsignedoruntrustedcertificatewarning'] = 'HTTPS 证书似乎是自签名证书或不受信任的证书。移动应用程序仅适用于受信任的站点。请使用任意在线 SSL 检查器来诊断问题。如果它指示您的证书正常，则可以忽略此警告。';
 $string['setuplink'] = '应用下载页面';
 $string['setuplink_desc'] = '页面网址，其中包含从app Store和Google Play下载移动应用的选项。应用下载页面链接显示在页面页脚和用户个人档案中。留空则不显示链接。';
 $string['smartappbanners'] = '应用头图';

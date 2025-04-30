@@ -81,6 +81,9 @@ class recording extends persistent {
     /** @var instance A cached copy of the instance */
     protected $instance;
 
+    /** @var bool imported recording status */
+    public $imported;
+
     /**
      * Create an instance of this class.
      *
@@ -205,7 +208,7 @@ class recording extends persistent {
      * Get select for given group mode and context
      *
      * @param int $groupmode
-     * @param context $context
+     * @param \context $context
      * @param int $courseid
      * @param int $groupid
      * @param int $groupingid
@@ -711,13 +714,14 @@ class recording extends persistent {
 
         // Fetch all metadata for these recordings.
         $metadatas = recording_proxy::fetch_recordings($recordingids);
+        $failedids = recording_proxy::fetch_missing_recordings($recordingids);
 
         // Return the instances.
-        return array_filter(array_map(function ($recording) use ($metadatas, $withindays) {
+        return array_filter(array_map(function ($recording) use ($metadatas, $withindays, $failedids) {
             // Filter out if no metadata was fetched.
             if (!array_key_exists($recording->recordingid, $metadatas)) {
-                // Mark it as dismissed if it is older than 30 days.
-                if ($withindays > $recording->timecreated) {
+                // If the recording was successfully fetched, mark it as dismissed if it is older than 30 days.
+                if (!in_array($recording->recordingid, $failedids) && $withindays > $recording->timecreated) {
                     $recording = new self(0, $recording, null);
                     $recording->set_status(self::RECORDING_STATUS_DISMISSED);
                 }
@@ -785,7 +789,7 @@ class recording extends persistent {
         if ($dismissedonly) {
             mtrace("=> Looking for any recording that has been 'dismissed' in the past " . self::RECORDING_TIME_LIMIT_DAYS
                 . " days.");
-            $select = 'status = :status_dismissed AND timecreated > :withindays';
+            $select = 'status = :status_dismissed AND timemodified > :withindays';
             $params['status_dismissed'] = self::RECORDING_STATUS_DISMISSED;
         } else {
             mtrace("=> Looking for any recording awaiting processing from the past " . self::RECORDING_TIME_LIMIT_DAYS . " days.");

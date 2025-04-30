@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'ja', version '4.1'.
+ * Strings for component 'cachestore_file', language 'ja', version '4.4'.
  *
  * @package     cachestore_file
  * @category    string

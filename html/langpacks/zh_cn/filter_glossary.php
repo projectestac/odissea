@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_glossary', language 'zh_cn', version '4.1'.
+ * Strings for component 'filter_glossary', language 'zh_cn', version '4.4'.
  *
  * @package     filter_glossary
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attachments'] = '附件';
 $string['filtername'] = '自动词汇表链接';
 $string['glossarycategory'] = '{$a->glossary}：类别{$a->Category}';
 $string['glossaryconcept'] = '{$a->glossary}:{$a->concept}';

@@ -16,6 +16,7 @@
 
 namespace mod_feedback\external;
 
+use core_external\external_api;
 use externallib_advanced_testcase;
 use feedback_item_multichoice;
 use mod_feedback_external;
@@ -109,7 +110,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test test_mod_feedback_get_feedbacks_by_courses
      */
-    public function test_mod_feedback_get_feedbacks_by_courses() {
+    public function test_mod_feedback_get_feedbacks_by_courses(): void {
 
         // Create additional course.
         $course2 = self::getDataGenerator()->create_course();
@@ -168,14 +169,14 @@ final class external_test extends externallib_advanced_testcase {
 
         // Call the external function passing course ids.
         $result = mod_feedback_external::get_feedbacks_by_courses(array($course2->id, $this->course->id));
-        $result = \external_api::clean_returnvalue($returndescription, $result);
+        $result = external_api::clean_returnvalue($returndescription, $result);
 
         $this->assertEquals($expectedfeedbacks, $result['feedbacks']);
         $this->assertCount(0, $result['warnings']);
 
         // Call the external function without passing course id.
         $result = mod_feedback_external::get_feedbacks_by_courses();
-        $result = \external_api::clean_returnvalue($returndescription, $result);
+        $result = external_api::clean_returnvalue($returndescription, $result);
         $this->assertEquals($expectedfeedbacks, $result['feedbacks']);
         $this->assertCount(0, $result['warnings']);
 
@@ -185,7 +186,7 @@ final class external_test extends externallib_advanced_testcase {
 
         // Call the external function without passing course id.
         $result = mod_feedback_external::get_feedbacks_by_courses();
-        $result = \external_api::clean_returnvalue($returndescription, $result);
+        $result = external_api::clean_returnvalue($returndescription, $result);
         $this->assertEquals($expectedfeedbacks, $result['feedbacks']);
 
         // Call for the second course we unenrolled the user from, expected warning.
@@ -211,25 +212,25 @@ final class external_test extends externallib_advanced_testcase {
         $expectedfeedbacks[0]['page_after_submitformat'] = 1;
 
         $result = mod_feedback_external::get_feedbacks_by_courses();
-        $result = \external_api::clean_returnvalue($returndescription, $result);
+        $result = external_api::clean_returnvalue($returndescription, $result);
         $this->assertEquals($expectedfeedbacks, $result['feedbacks']);
 
         // Admin also should get all the information.
         self::setAdminUser();
 
         $result = mod_feedback_external::get_feedbacks_by_courses(array($this->course->id));
-        $result = \external_api::clean_returnvalue($returndescription, $result);
+        $result = external_api::clean_returnvalue($returndescription, $result);
         $this->assertEquals($expectedfeedbacks, $result['feedbacks']);
     }
 
     /**
      * Test get_feedback_access_information function with basic defaults for student.
      */
-    public function test_get_feedback_access_information_student() {
+    public function test_get_feedback_access_information_student(): void {
 
         self::setUser($this->student);
         $result = mod_feedback_external::get_feedback_access_information($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
 
         $this->assertFalse($result['canviewanalysis']);
         $this->assertFalse($result['candeletesubmissions']);
@@ -246,11 +247,11 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_feedback_access_information function with basic defaults for teacher.
      */
-    public function test_get_feedback_access_information_teacher() {
+    public function test_get_feedback_access_information_teacher(): void {
 
         self::setUser($this->teacher);
         $result = mod_feedback_external::get_feedback_access_information($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
 
         $this->assertTrue($result['canviewanalysis']);
         $this->assertTrue($result['canviewreports']);
@@ -266,14 +267,14 @@ final class external_test extends externallib_advanced_testcase {
         // Add some items to the feedback and check is not empty any more.
         self::populate_feedback($this->feedback);
         $result = mod_feedback_external::get_feedback_access_information($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
         $this->assertFalse($result['isempty']);
     }
 
     /**
      * Test view_feedback invalid id.
      */
-    public function test_view_feedback_invalid_id() {
+    public function test_view_feedback_invalid_id(): void {
         // Test invalid instance id.
         $this->expectException(moodle_exception::class);
         mod_feedback_external::view_feedback(0);
@@ -281,7 +282,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test view_feedback not enrolled user.
      */
-    public function test_view_feedback_not_enrolled_user() {
+    public function test_view_feedback_not_enrolled_user(): void {
         $usernotenrolled = self::getDataGenerator()->create_user();
         $this->setUser($usernotenrolled);
         $this->expectException(moodle_exception::class);
@@ -290,7 +291,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test view_feedback no capabilities.
      */
-    public function test_view_feedback_no_capabilities() {
+    public function test_view_feedback_no_capabilities(): void {
         // Test user with no capabilities.
         // We need a explicit prohibit since this capability is allowed for students by default.
         assign_capability('mod/feedback:view', CAP_PROHIBIT, $this->studentrole->id, $this->context->id);
@@ -301,13 +302,13 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test view_feedback.
      */
-    public function test_view_feedback() {
+    public function test_view_feedback(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
         // Trigger and capture the event.
         $sink = $this->redirectEvents();
         $result = mod_feedback_external::view_feedback($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::view_feedback_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::view_feedback_returns(), $result);
         $events = $sink->get_events();
         $this->assertCount(1, $events);
         $event = array_shift($events);
@@ -323,7 +324,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_current_completed_tmp.
      */
-    public function test_get_current_completed_tmp() {
+    public function test_get_current_completed_tmp(): void {
         global $DB;
 
         // Force non anonymous.
@@ -344,14 +345,14 @@ final class external_test extends externallib_advanced_testcase {
         $this->setUser($this->student);
 
         $result = mod_feedback_external::get_current_completed_tmp($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_current_completed_tmp_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_current_completed_tmp_returns(), $result);
         $this->assertEquals($record['id'], $result['feedback']['id']);
     }
 
     /**
      * Test get_items.
      */
-    public function test_get_items() {
+    public function test_get_items(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
 
@@ -359,7 +360,7 @@ final class external_test extends externallib_advanced_testcase {
         $itemscreated = self::populate_feedback($this->feedback, 2);
 
         $result = mod_feedback_external::get_items($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
         $this->assertCount(count($itemscreated), $result['items']);
         $index = 1;
         foreach ($result['items'] as $key => $item) {
@@ -423,7 +424,7 @@ final class external_test extends externallib_advanced_testcase {
         }
 
         $result = mod_feedback_external::get_items($feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
         if ($warning) {
             $this->assertEmpty($result['items']);
             $this->assertCount(1, $result['warnings']);
@@ -496,7 +497,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test launch_feedback.
      */
-    public function test_launch_feedback() {
+    public function test_launch_feedback(): void {
         global $DB;
 
         // Test user with full capabilities.
@@ -507,7 +508,7 @@ final class external_test extends externallib_advanced_testcase {
 
         // First try a feedback we didn't attempt.
         $result = mod_feedback_external::launch_feedback($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::launch_feedback_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::launch_feedback_returns(), $result);
         $this->assertEquals(0, $result['gopage']);
 
         // Now, try a feedback that we attempted.
@@ -544,14 +545,14 @@ final class external_test extends externallib_advanced_testcase {
         $DB->insert_record('feedback_valuetmp', (object) $response);
 
         $result = mod_feedback_external::launch_feedback($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::launch_feedback_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::launch_feedback_returns(), $result);
         $this->assertEquals(1, $result['gopage']);
     }
 
     /**
      * Test get_page_items.
      */
-    public function test_get_page_items() {
+    public function test_get_page_items(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
 
@@ -560,14 +561,14 @@ final class external_test extends externallib_advanced_testcase {
 
         // Retrieve first page.
         $result = mod_feedback_external::get_page_items($this->feedback->id, 0);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_page_items_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_page_items_returns(), $result);
         $this->assertCount(3, $result['items']);    // The first page has 3 items.
         $this->assertTrue($result['hasnextpage']);
         $this->assertFalse($result['hasprevpage']);
 
         // Retrieve second page.
         $result = mod_feedback_external::get_page_items($this->feedback->id, 1);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_page_items_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_page_items_returns(), $result);
         $this->assertCount(5, $result['items']);    // The second page has 5 items (page break doesn't count).
         $this->assertFalse($result['hasnextpage']);
         $this->assertTrue($result['hasprevpage']);
@@ -617,7 +618,7 @@ final class external_test extends externallib_advanced_testcase {
         }
 
         $result = mod_feedback_external::get_page_items($feedback->id, 0);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_items_returns(), $result);
         if ($warning) {
             $this->assertEmpty($result['items']);
             $this->assertCount(1, $result['warnings']);
@@ -640,7 +641,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test process_page.
      */
-    public function test_process_page() {
+    public function test_process_page(): void {
         global $DB;
 
         // Test user with full capabilities.
@@ -684,14 +685,14 @@ final class external_test extends externallib_advanced_testcase {
         // Process first page.
         $firstpagedata = [$data[0], $data[1]];
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $firstpagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertEquals(1, $result['jumpto']);
         $this->assertFalse($result['completed']);
 
         // Now, process the second page. But first we are going back to the first page.
         $secondpagedata = [$data[2], $data[3], $data[4], $data[5], $data[6]];
         $result = mod_feedback_external::process_page($this->feedback->id, 1, $secondpagedata, true);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertFalse($result['completed']);
         $this->assertEquals(0, $result['jumpto']);  // We jumped to the first page.
         // Check the values were correctly saved.
@@ -700,7 +701,7 @@ final class external_test extends externallib_advanced_testcase {
 
         // Go forward again (sending the same data).
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $firstpagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertEquals(1, $result['jumpto']);
         $this->assertFalse($result['completed']);
         $tmpitems = $DB->get_records('feedback_valuetmp');
@@ -711,7 +712,7 @@ final class external_test extends externallib_advanced_testcase {
         $data[2]['value'] = 2; // 2 is value of the option 'b'.
         $secondpagedata = [$data[2], $data[3], $data[4], $data[5], $data[6]];
         $result = mod_feedback_external::process_page($this->feedback->id, 1, $secondpagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
         $this->assertTrue(strpos($result['completionpagecontents'], $pagecontents) !== false);
         // Check all the items were saved.
@@ -738,13 +739,13 @@ final class external_test extends externallib_advanced_testcase {
         $customdata = json_decode($messages[0]->customdata);
         $this->assertEquals($this->feedback->id, $customdata->instance);
         $this->assertEquals($this->feedback->cmid, $customdata->cmid);
-        $this->assertObjectHasAttribute('notificationiconurl', $customdata);
+        $this->assertObjectHasProperty('notificationiconurl', $customdata);
     }
 
     /**
      * Test process_page for a site feedback.
      */
-    public function test_process_page_site_feedback() {
+    public function test_process_page_site_feedback(): void {
         global $DB;
         $pagecontents = 'You finished it!';
         $this->feedback = $this->getDataGenerator()->create_module('feedback',
@@ -789,7 +790,7 @@ final class external_test extends externallib_advanced_testcase {
         // Process first page.
         $firstpagedata = [$data[0], $data[1]];
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $firstpagedata, false, $this->course->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertEquals(1, $result['jumpto']);
         $this->assertFalse($result['completed']);
 
@@ -797,7 +798,7 @@ final class external_test extends externallib_advanced_testcase {
         $data[2]['value'] = 2; // 2 is value of the option 'b';
         $secondpagedata = [$data[2], $data[3], $data[4], $data[5], $data[6]];
         $result = mod_feedback_external::process_page($this->feedback->id, 1, $secondpagedata, false, $this->course->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
         $this->assertTrue(strpos($result['completionpagecontents'], $pagecontents) !== false);
         // Check all the items were saved.
@@ -821,7 +822,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_analysis.
      */
-    public function test_get_analysis() {
+    public function test_get_analysis(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
 
@@ -836,13 +837,13 @@ final class external_test extends externallib_advanced_testcase {
         ];
         // Process the feedback, there is only one page so the feedback will be completed.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         // Retrieve analysis.
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_analysis($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_analysis_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_analysis_returns(), $result);
         $this->assertEquals(1, $result['completedcount']);  // 1 feedback completed.
         $this->assertEquals(2, $result['itemscount']);  // 2 items in the feedback.
         $this->assertCount(2, $result['itemsdata']);
@@ -864,13 +865,13 @@ final class external_test extends externallib_advanced_testcase {
 
         // Process the feedback, there is only one page so the feedback will be completed.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         // Retrieve analysis.
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_analysis($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_analysis_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_analysis_returns(), $result);
         $this->assertEquals(2, $result['completedcount']);  // 2 feedback completed.
         $this->assertEquals(2, $result['itemscount']);
         $this->assertCount(2, $result['itemsdata'][0]['data']); // There are 2 responses per item.
@@ -880,7 +881,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_unfinished_responses.
      */
-    public function test_get_unfinished_responses() {
+    public function test_get_unfinished_responses(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
 
@@ -898,12 +899,12 @@ final class external_test extends externallib_advanced_testcase {
         ];
         // Process the feedback, there are two pages so the feedback will be unfinished yet.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertFalse($result['completed']);
 
         // Retrieve the unfinished responses.
         $result = mod_feedback_external::get_unfinished_responses($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_unfinished_responses_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_unfinished_responses_returns(), $result);
         // Check that ids and responses match.
         foreach ($result['responses'] as $r) {
             if ($r['item'] == $numericitem->id) {
@@ -918,7 +919,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_finished_responses.
      */
-    public function test_get_finished_responses() {
+    public function test_get_finished_responses(): void {
         // Test user with full capabilities.
         $this->setUser($this->student);
 
@@ -934,12 +935,12 @@ final class external_test extends externallib_advanced_testcase {
 
         // Process the feedback, there is only one page so the feedback will be completed.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         // Retrieve the responses.
         $result = mod_feedback_external::get_finished_responses($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_finished_responses_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_finished_responses_returns(), $result);
         // Check that ids and responses match.
         foreach ($result['responses'] as $r) {
             if ($r['item'] == $numericitem->id) {
@@ -954,7 +955,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_non_respondents (student trying to get this information).
      */
-    public function test_get_non_respondents_no_permissions() {
+    public function test_get_non_respondents_no_permissions(): void {
         $this->setUser($this->student);
         $this->expectException(moodle_exception::class);
         mod_feedback_external::get_non_respondents($this->feedback->id);
@@ -963,7 +964,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_non_respondents from an anonymous feedback.
      */
-    public function test_get_non_respondents_from_anonymous_feedback() {
+    public function test_get_non_respondents_from_anonymous_feedback(): void {
         $this->setUser($this->student);
         $this->expectException(moodle_exception::class);
         $this->expectExceptionMessage(get_string('anonymous', 'feedback'));
@@ -973,7 +974,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_non_respondents.
      */
-    public function test_get_non_respondents() {
+    public function test_get_non_respondents(): void {
         global $DB;
 
         // Force non anonymous.
@@ -997,13 +998,13 @@ final class external_test extends externallib_advanced_testcase {
 
         // Process the feedback, there is only one page so the feedback will be completed.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         // Retrieve the non-respondent users.
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_non_respondents($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
         $this->assertCount(0, $result['warnings']);
         $this->assertCount(1, $result['users']);
         $this->assertEquals($anotherstudent->id, $result['users'][0]['userid']);
@@ -1014,13 +1015,13 @@ final class external_test extends externallib_advanced_testcase {
         $this->setUser($anotherstudent2);
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_non_respondents($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
         $this->assertCount(0, $result['warnings']);
         $this->assertCount(2, $result['users']);
 
         // Test pagination.
         $result = mod_feedback_external::get_non_respondents($this->feedback->id, 0, 'lastaccess', 0, 1);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_non_respondents_returns(), $result);
         $this->assertCount(0, $result['warnings']);
         $this->assertCount(1, $result['users']);
     }
@@ -1067,7 +1068,7 @@ final class external_test extends externallib_advanced_testcase {
 
         // Process the feedback, there is only one page so the feedback will be completed.
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         $this->setUser($anotherstudent1);
@@ -1078,7 +1079,7 @@ final class external_test extends externallib_advanced_testcase {
         ];
 
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
 
         $this->setUser($anotherstudent2);
@@ -1089,20 +1090,20 @@ final class external_test extends externallib_advanced_testcase {
         ];
 
         $result = mod_feedback_external::process_page($this->feedback->id, 0, $pagedata);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::process_page_returns(), $result);
         $this->assertTrue($result['completed']);
     }
 
     /**
      * Test get_responses_analysis for anonymous feedback.
      */
-    public function test_get_responses_analysis_anonymous() {
+    public function test_get_responses_analysis_anonymous(): void {
         self::complete_basic_feedback();
 
         // Retrieve the responses analysis.
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_responses_analysis($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_responses_analysis_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_responses_analysis_returns(), $result);
         $this->assertCount(0, $result['warnings']);
         $this->assertEquals(0, $result['totalattempts']);
         $this->assertEquals(2, $result['totalanonattempts']);   // Only see my groups.
@@ -1115,7 +1116,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_responses_analysis for non-anonymous feedback.
      */
-    public function test_get_responses_analysis_non_anonymous() {
+    public function test_get_responses_analysis_non_anonymous(): void {
         global $DB;
 
         // Force non anonymous.
@@ -1125,7 +1126,7 @@ final class external_test extends externallib_advanced_testcase {
         // Retrieve the responses analysis.
         $this->setUser($this->teacher);
         $result = mod_feedback_external::get_responses_analysis($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_responses_analysis_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_responses_analysis_returns(), $result);
         $this->assertCount(0, $result['warnings']);
         $this->assertEquals(2, $result['totalattempts']);
         $this->assertEquals(0, $result['totalanonattempts']);   // Only see my groups.
@@ -1138,7 +1139,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_last_completed for feedback anonymous not completed.
      */
-    public function test_get_last_completed_anonymous_not_completed() {
+    public function test_get_last_completed_anonymous_not_completed(): void {
         global $DB;
 
         // Force anonymous.
@@ -1155,7 +1156,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_last_completed for feedback anonymous and completed.
      */
-    public function test_get_last_completed_anonymous_completed() {
+    public function test_get_last_completed_anonymous_completed(): void {
         global $DB;
 
         // Force anonymous.
@@ -1182,7 +1183,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_last_completed for feedback not anonymous and completed.
      */
-    public function test_get_last_completed_not_anonymous_completed() {
+    public function test_get_last_completed_not_anonymous_completed(): void {
         global $DB;
 
         // Force non anonymous.
@@ -1201,14 +1202,14 @@ final class external_test extends externallib_advanced_testcase {
         // Test user with full capabilities.
         $this->setUser($this->student);
         $result = mod_feedback_external::get_last_completed($this->feedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_last_completed_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_last_completed_returns(), $result);
         $this->assertEquals($record, $result['completed']);
     }
 
     /**
      * Test get_last_completed for feedback not anonymous and not completed.
      */
-    public function test_get_last_completed_not_anonymous_not_completed() {
+    public function test_get_last_completed_not_anonymous_not_completed(): void {
         global $DB;
 
         // Force anonymous.
@@ -1225,19 +1226,19 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_feedback_access_information for site feedback.
      */
-    public function test_get_feedback_access_information_for_site_feedback() {
+    public function test_get_feedback_access_information_for_site_feedback(): void {
 
         $sitefeedback = $this->getDataGenerator()->create_module('feedback', array('course' => SITEID));
         $this->setUser($this->student);
         // Access the site feedback via the site activity.
         $result = mod_feedback_external::get_feedback_access_information($sitefeedback->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
         $this->assertTrue($result['cancomplete']);
         $this->assertTrue($result['cansubmit']);
 
         // Access the site feedback via course where I'm enrolled.
         $result = mod_feedback_external::get_feedback_access_information($sitefeedback->id, $this->course->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
         $this->assertTrue($result['cancomplete']);
         $this->assertTrue($result['cansubmit']);
 
@@ -1251,7 +1252,7 @@ final class external_test extends externallib_advanced_testcase {
     /**
      * Test get_feedback_access_information for site feedback mapped.
      */
-    public function test_get_feedback_access_information_for_site_feedback_mapped() {
+    public function test_get_feedback_access_information_for_site_feedback_mapped(): void {
         global $DB;
 
         $sitefeedback = $this->getDataGenerator()->create_module('feedback', array('course' => SITEID));
@@ -1260,7 +1261,7 @@ final class external_test extends externallib_advanced_testcase {
 
         // Access the site feedback via course where I'm enrolled and mapped.
         $result = mod_feedback_external::get_feedback_access_information($sitefeedback->id, $this->course->id);
-        $result = \external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
+        $result = external_api::clean_returnvalue(mod_feedback_external::get_feedback_access_information_returns(), $result);
         $this->assertTrue($result['cancomplete']);
         $this->assertTrue($result['cansubmit']);
 

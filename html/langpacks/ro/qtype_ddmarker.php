@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ro', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'ro', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ Pentru informații, cele trei forme folosesc coordonatele în acest fel:
 * Poligon: x1, y1; x2, y2; ...; xn, yn <br /> de exemplu: <code> 20, 60; 100, 60; 20, 100 </code>
 
 Selectarea unui text marcator va adăuga textul respectiv la forma din previzualizare.';
-$string['followingarewrong'] = 'Următorii marcatori au fost plasați în zona greșită: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Următorii marcatori au fost amplasați incorect: {$a}. Marcatorii evidențiați sunt acum afișați cu destinațiile de plasare corecte. <br /> Faceți clic pe marcator pentru a evidenția zona permisă.';
+$string['followingarewrong'] = 'Marcatori plasați în zona greșită: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Marcatori plasați incorect: {$a}. Marcatorii evidențiați sunt acum afișați cu pozițiile corecte. Faceți clic pe marcator pentru a evidenția zona permisă.';
 $string['formerror_dragrequired'] = 'Trebuie să adaugi cel puțin un marcator la această întrebare.';
 $string['formerror_droprequired'] = 'Trebui să definești cel puțin o drop zonepentru această întrebare.';
 $string['formerror_nobgimage'] = 'Trebuie să selectați o imagine pe care să o utilizați ca fundal pentru zona delimitată.';

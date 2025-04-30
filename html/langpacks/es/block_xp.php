@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'es', version '4.1'.
+ * Strings for component 'block_xp', language 'es', version '4.4'.
  *
  * @package     block_xp
  * @category    string
@@ -40,6 +40,29 @@ $string['addrulesformhelp'] = 'La última columna define la cantidad de puntos d
 $string['admindefaultrulesintro'] = 'Las siguientes reglas serán usadas por defecto para los cursos en los que se añada el bloque.';
 $string['admindefaultsettingsintro'] = 'La configuración que aparece a continuación será usada por defecto cuando el bloque sea añadido por primera vez a un curso.';
 $string['admindefaultvisualsintro'] = 'Las siguientes imágenes serán usadas por defecto cuando el bloque sea añadido por primera vez a un curso.';
+$string['adminnoticeoutofsyncmessage'] = '¡Aviso de incompatibilidad de Level Up XP y Level Up XP+!
+
+Está recibiendo este aviso porque los dos plugins Level Up XP (block_xp) y Level Up XP+ (local_xp) actualmente están fuera de sincronización y son incompatibles el uno con el otro. Este problema ocurre cuando se ha actualizado XP a una nueva versión superior mientras que XP+ sigue sin actualizarse.
+
+Esta falta de conexión puede llevar a pérdida de funcionalidad, errores, y otras consecuencias inesperadas. Para resolver esto, debe actualizar Level Up XP+.
+
+**¡Importante!** En el futuro, si estos plugins no están sincronizados, Level Up XP+ se deshabilitará automáticamente. Para evitar esto, asegúrese de no subir Level Up XP a una nueva versión superior sin subir también Level Up XP+.
+
+- Level Up XP versión (block_xp): {$a->blockxpversion}
+- Level Up XP+ versión (local_xp): {$a->localxpversion}
+- Level Up XP+ versión esperada: {$a->localxpversionexpected}
+
+Recursos adicionales:
+
+- [Documentación de actualizacioń](https://docs.levelup.plus/xp/docs/upgrade)
+- [Documentación de compatbilidad](https://docs.levelup.plus/xp/docs/requirements-compatibility)
+
+--
+
+Este anuncio se ha enviado a todos los administradores. Para deshabilitar los avisos de admiistrador, por favor visite los ajustes de administrador de Level Up XP.';
+$string['adminnoticeoutofsyncsubject'] = '¡Aviso de incompatibilidad de plugins XP!';
+$string['adminnotices'] = 'Avisos de administrador';
+$string['adminnotices_desc'] = 'Cuando se habilita, los administradores del sitio pueden recibir ocasionalmente avisos importantes sobre compatibilidad, seguridad y la disponibilidad de versiones más recientes de Level Up XP+.';
 $string['adminscanearnxp'] = 'Los administradores pueden ganar puntos';
 $string['adminscanearnxp_desc'] = 'Por defecto, los administradores no están incluidos en el grupo de usuarios que pueden ganar puntos. Esto es porque los administradores siempre tienen el permiso _block/xp:earnxp_, que les permite conseguir puntos en cualquier sitio. Usted puede usar este ajuste para que los administradores también ganen puntos.';
 $string['allcoursesreset'] = 'Se han reseteado todos los cursos.';
@@ -66,6 +89,7 @@ $string['changelevelformhelp'] = 'Si cambia el número de niveles, las insignias
 $string['changetocourse'] = 'Cambiar a curso';
 $string['changetositewide'] = 'Volver a todo el sitio';
 $string['cheatguard'] = 'Control de trampas';
+$string['cheatguardsettingsmovednotice'] = 'Los ajustes de trampas se han movido a [event rules page]({$a->url}).';
 $string['chooseacondition'] = 'Elegir una condición';
 $string['clearfilter'] = 'Limpiar filtro';
 $string['clicktoselectcm'] = 'Clicar para seleccionar una actividad o recurso';
@@ -94,8 +118,10 @@ $string['configtitle_help'] = 'El título del bloque.';
 $string['congratulationsyouleveledup'] = '¡Felicidades!';
 $string['coolthanks'] = '¡Genial, gracias!';
 $string['coursea'] = 'Curso "{$a}"';
-$string['courselog'] = 'Registro del curso';
-$string['coursereport'] = 'Informe del curso';
+$string['courselog'] = 'Registro';
+$string['courselogintro'] = 'El registro muestra las acciones observadas, y cuántos puntos se les han otorgado.';
+$string['coursereport'] = 'Informe';
+$string['coursereportintro'] = 'El informe da detalles de cada participantes y permite actuar sobre ellos tanto individual como colectivamente.';
 $string['courserules'] = 'Normas del curso';
 $string['courseselectedcolon'] = 'Curso seleccionado:';
 $string['coursesettings'] = 'Configuraciones del curso';
@@ -107,6 +133,7 @@ Elija uno de los símbolos existentes, ¡o suba los suyos!';
 $string['currencysignxp'] = 'XP (puntos de experiencia)';
 $string['customizelevels'] = 'Personalizar los niveles';
 $string['dangerzone'] = 'Zona de peligro';
+$string['dataformat'] = 'Formato';
 $string['defaultlevels'] = 'Niveles por defecto';
 $string['defaultrules'] = 'Reglas por defecto';
 $string['defaultrulesformhelp'] = 'Estas son las reglas por defecto proporcionadas por el plugin; automáticamente dan puntos de experiencia por defecto e ignoran algunos eventos redundantes. Las reglas personalizadas tienen prioridad sobre ellas.';
@@ -192,9 +219,12 @@ Recursos adicionales:
 - [Solución de problemas de reglas](https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
 $string['eventsrulesintro'] = 'Observe acciones y dé puntos a los estudiantes cuando las realizan.';
 $string['eventtime'] = 'Hora del evento';
+$string['export'] = 'Exportar';
+$string['exportdata'] = 'Datos de exportación';
 $string['filterbyuser'] = 'Filtrar por usuario';
 $string['filterellipsis'] = 'Filtrar...';
 $string['filtermodules'] = 'Filtrar módulos';
+$string['filterparticipants'] = 'Filtrar participantes';
 $string['for1day'] = 'Por 1 día';
 $string['for1month'] = 'Por 1 mes';
 $string['for1week'] = 'Por 1 semana';
@@ -234,16 +264,34 @@ $string['importpointsintro'] = 'Importar puntos desde un archivo CSV, y opcional
 $string['incourses'] = 'En los cursos';
 $string['ineffective'] = 'Sin efecto';
 $string['infos'] = 'información';
+$string['infos_help'] = 'La página de información da a los estudiantes un resumen de los niveles y de los puntos necesarios para alcanzarlos. También muestra el nombre de cada nivel, así como su descripción.';
+$string['infosintro'] = 'La página de información muestra el listado de niveles, y algunos de sus detalles.';
 $string['installed'] = 'Instalado';
-$string['instructions'] = 'Más información';
+$string['instructions'] = 'Instrucciones';
+$string['instructions_help'] = 'Las instrucciones se mostrarán en la página de información. Puede usarlas para compartir información e instrucciones sobre los niveles, cómo obtener puntos, etc.';
 $string['invalidxp'] = 'Valor de puntuación  inválida';
 $string['keeplogs'] = 'Mantener registros';
 $string['ladder'] = 'Ranking';
+$string['ladder_help'] = 'El tablero ordena estudiantes basándose en su puntuación. Cuando se usa en un curso con grupos, puede crear un ranking para cada grupo de estudiantes.
+
+Hay disponibles varias opciones para personalizar el tablero y la experiencia que dará a los participantes.';
 $string['ladderadditionalcols'] = 'Columnas adicionales';
 $string['ladderadditionalcols_help'] = 'Este ajuste determina qué columnas adicionales se muestran en el ranking. Pulse las teclas CTRL o CMD mientras clica para seleccionar más de una columna, o para quitar la selección de una columna previamente seleccionada.';
 $string['ladderempty'] = 'Actualmente el ranking está vacío. ¡Vuelve más tarde!';
+$string['ladderintro'] = 'El tablero muestra un ranking de individuos basado en sus puntuaciones totales.';
+$string['ladderiso'] = 'Aislar participantes';
+$string['ladderiso_help'] = 'Cree tableros separados para distintos grupos de personas.
+
+- Por defecto (modo de grupo): Sigue el modo de grupo del curso para crear tableros para cada grupo.
+- Mediante cohortes: Sólo aparecerán en el tablero de una persona los miembros de su misma cohorte.
+
+[Más información](https://docs.levelup.plus/xp/docs/leaderboard-isolation)';
+$string['ladderisocohorts'] = 'Usando cohortes';
+$string['ladderisodefault'] = 'Predeterminado (modo de grupo)';
+$string['laddersettingsmovednotice'] = 'Los ajustes de tablero se han movido a [leaderboard page]({$a->url}).';
 $string['learnmore'] = 'Aprender más';
 $string['level'] = 'Nivel';
+$string['levelbadge'] = 'Insignia de nivel';
 $string['levelbadges'] = 'Insignias de nivel';
 $string['levelbadges_help'] = 'Suba imágenes para reemplazar el aspecto de niveles individuales.
 
@@ -277,6 +325,7 @@ $string['maxactionspertime'] = 'Máximo de acciones en el lapso de tiempo';
 $string['maxactionspertime_help'] = 'El número máximo de acciones que contarán para puntuar durante el lapso de tiempo dado. Cualquier acción subsiguiente se ignorará. Cuando este valor esta vacío o es igual a cero "0", no aplicará.';
 $string['maxlevelexcl'] = '¡Nivel máximo!';
 $string['menu'] = 'Menú';
+$string['messageprovider:adminnotice'] = 'Aviso de administrador';
 $string['missing'] = 'Falta';
 $string['movecondition'] = 'Mover condición';
 $string['moverule'] = 'Mover regla';
@@ -314,10 +363,13 @@ $string['notesomesettingslocked'] = 'Algunos de los ajustes pueden no ser editab
 $string['nothingmatchesfilter'] = 'Nada coincide con el filtro.';
 $string['numberoflevels'] = 'Número de niveles';
 $string['occasionally'] = 'Ocasionalmente';
-$string['outofsync'] = 'Fuera de sincronización';
+$string['outofsync'] = 'Incompatibilidad de plugins XP';
 $string['outofsyncexcessive'] = 'Excesivamente fuera de sincronización';
-$string['outofsyncexcessiveinfo'] = 'XP+ es excesivamente más antiguo que XP y puede llevar a problemas inesperados. Para evitar mal funcionamiento, puede que XP+ se desactive automáticamente en el futuro.';
-$string['outofsyncinfo'] = 'Los plugins XP no son compatibles uno con otro, lo que puede llevar a problemas inesperados.';
+$string['outofsyncexcessiveinfo'] = 'XP+ es excesivamente más antiguo que XP y puede llevar a problemas inesperados. En el futuro, XP+ se desactivará automáticamente.';
+$string['outofsyncinfo'] = 'Los plugins XP no son compatibles uno con otro, lo que puede llevar a problemas inesperados. En el futuro, XP+ se desactivará automáticamente. Se espera la versión {$a->localxpversion} de Level Up XP+ (local_xp).';
+$string['pagecurrentnotvisibletoviewers'] = 'Esta página actualmente no es visible para los estudiantes.';
+$string['pagecurrentvisibletoviewers'] = 'Esta página actualmente está visible para los estudiantes.';
+$string['pagesettings'] = 'Ajustes de página';
 $string['participant'] = 'Participante';
 $string['participants'] = 'Participantes';
 $string['participatetolevelup'] = '¡Participa en el curso para ganar puntos de experiencia y subir de nivel!';
@@ -329,7 +381,7 @@ $string['pluginname'] = '¡Sube de nivel XP!';
 $string['pluginshortcodesdesc'] = 'Este plugin permite a los instructores personalizar su material incluyendo elementos relacionados con XP (puntos, nivel, ranking...) en en contenido, así como ocultar o mostrar contenido según el nivel del estudiante.';
 $string['pluginsoutofsync'] = '__¡Los plugins no están sincronizados!__
 
-Esto supone que ha subido la versión de _Level Up XP_ pero no _Level Up XP+_. Aunque hacemos lo posible por prevenir problemas, algunas características puede que ya no funcionen correctamente en _Level Up XP_. Le recomendamos subir _Level Up XP+_ a su versión más reciente. [Leer más]({$a->url})';
+Hay problemas de compatibilidad entre Level Up XP y Level Up XP+. En el futuro, Level Up XP+ se desactivará automáticamente si no es compatible. Para evitar esto, por favor, contacte con el administrador de su sitio. [Leer más]({$a->url})';
 $string['pluginxmaybeincompatible'] = 'Esta versión de {$a->name} ({$a->component}) puede ser incompatible con Moodle {$a->version}.';
 $string['pointsintimelinker'] = 'por';
 $string['pointsperlevel'] = 'Puntos por nivel';
@@ -398,7 +450,7 @@ $string['reallyresetallcoursevisualstodefaults'] = '¿Seguro que quiere resetear
 $string['reallyresetcourselevelstodefaults'] = '¿Seguro que quiere resetear los niveles a los niveles por defecto? Esta acción no es reversible.';
 $string['reallyresetcourserulestodefaults'] = '¿Seguro que quiere resetear todas las reglas de cursos a las reglas por defecto? Esta acción no es reversible.';
 $string['reallyresetcoursevisualstodefaults'] = '¿Seguro que quiere resetear el aspecto de los niveles a su aspecto por defecto? Esta acción no es reversible.';
-$string['reallyresetdata'] = '¿Realmente desea reiniciar los niveles y puntos de experiencia de todos en este curso?';
+$string['reallyresetdata'] = '¿Realmente desea reiniciar los niveles y puntos de experiencia de todos en este curso? Esta acción no es reversible.';
 $string['reallyresetgroupdata'] = '¿Realmente desea resetear los niveles y puntos de todos en este grupo?';
 $string['reallyreverttopluginsdefaults'] = '¿Realmente desea resetear las reglas al estado por defecto sugerido por el plugin? Esta acción no es reversible.';
 $string['recentrewards'] = 'Premios recientes';
@@ -416,6 +468,7 @@ $string['resetcoursedata'] = 'Reiniciar datos del curso';
 $string['resetcourserulestodefaults'] = 'Resetear reglas de curso a valores por defecto';
 $string['resetgroupdata'] = 'Resetear datos de grupo';
 $string['resetlevelstodefaults'] = 'Resetear niveles al estado por defecto';
+$string['resettodefaults'] = 'Resetear a predeterminados';
 $string['resetvisualstodefaults'] = 'Resetear aspecto al estado por defecto';
 $string['resultsfilteredforn'] = 'Resultados filtrados para {$a}.';
 $string['reverttopluginsdefaults'] = 'Volver a los valores por defecto del plugin.';
@@ -494,6 +547,7 @@ $string['searchandselectmodule'] = 'Buscar y seleccionar una actividad o recurso
 $string['selectcourse'] = 'Seleccionar curso';
 $string['send'] = 'Enviar';
 $string['setpoints'] = 'Conjunto de puntos';
+$string['settingsoutdatedxppnotice'] = 'Si está viendo ajustes a continuación, esto significa que tiene instalada una versión antigua de XP+. Por favor, pida a su administrdor que resuelva el problema instalando la versión más reciente.';
 $string['shortcode:xpbadge'] = 'La condecoración que equivale al nivel actual del usuario.';
 $string['shortcode:xpiflevel'] = 'Muestra el contenido cuando coincide el nivel del usuario actual.';
 $string['shortcode:xpiflevel_help'] = 'Vea los ejemplos siguientes para dar formato a este atajo de código. Cuando se especifica estrictamente un nivel, el contenido se mostrará independientemente de otras reglas.
@@ -577,8 +631,17 @@ $string['sitewide'] = 'Para todo el sitio';
 $string['somefeaturesrequireotherplugins'] = 'Algunas características requieren la instalación de plugins adicionales.';
 $string['someoneelse'] = 'Otra persona';
 $string['somethinghappened'] = 'Algo ha pasado';
+$string['taskadminnotices'] = 'Avisos de administrador';
 $string['taskcollectionloggerpurge'] = 'Purgar registros guardados';
 $string['taskusagereport'] = 'Informe de uso';
+$string['teamleaderboard'] = 'Tablero por equipos';
+$string['teamleaderboard_help'] = 'El tablero de ranking de equipos se basa en el total de los puntos acumulados por sus miembros.
+
+Los equipos pueden hacerse de cursos o de cohortes. Las opciones también están para acomodar distitnos tamaños de equipos.
+
+[Saber más](https://docs.levelup.plus/xp/docs/how-to/setup-team-leaderboard/team-leaderboard?ref=blockxp_help)';
+$string['teamleaderboardintro'] = 'El tablero por equipos es un ranking de equipos basado en los puntos de sus miembros';
+$string['teams'] = 'Equipos';
 $string['thankyou'] = '¡Gracias!';
 $string['timebetweensameactions'] = 'El tiempo requerido entre acciones idénticas';
 $string['timebetweensameactions_help'] = 'El mínimo tiempo requerido antes de que una acción que ya haya sucedido anteriormente se acepte de nuevo. Una acción se considera idéntica si ocurrió en el mismo objeto y contexto; leer un post de un foro se considerará idéntico si se lee el mismo post otra vez. Cuando el valor está vacío, o es igual a cero, no es aplicable.';
@@ -602,6 +665,8 @@ $string['unknowneventa'] = 'Evento desconocido ({$a})';
 $string['unknownsectiona'] = 'Sección desconocida ({$a})';
 $string['unknowntypea'] = 'Tipo desconocido ({$a})';
 $string['unlockfeaturewithxpplus'] = 'Desbloquee esta característica con XP+. <a href="{$a}">Saber más</a>';
+$string['unstableversioninstalled'] = 'Versión instalada inestable';
+$string['unstableversioninstalledinfo'] = 'Esta versión de Level Up XP (block_xp) todavía está en desarrollo y se considera inestable. Por favor, use una versión oficial.';
 $string['updateandpreview'] = 'Subir y previsualizar';
 $string['upgradingplugins'] = 'Actualizando los plugins';
 $string['urlaccessdeprecated'] = 'El acceso mediante esta URL está obsoleto. Por favor, actualice sus enlaces.';

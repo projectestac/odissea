@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'zh_cn', version '4.1'.
+ * Strings for component 'enrol', language 'zh_cn', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,17 @@ $string['assignnotpermitted'] = '您无权或不能在此课程分配角色。';
 $string['bulkuseroperation'] = '批量用户操作';
 $string['configenrolplugins'] = '请选择所有需要的插件并按适当的顺序排列它们。';
 $string['custominstancename'] = '自定义实例名';
+$string['customwelcomemessage'] = '自定义欢迎信息';
+$string['customwelcomemessage_help'] = '允许的格式：纯文本或 Moodle-auto 格式。HTML 标签和多语言标签以及以下占位符也被接受：
+<ul>
+<li>课程名称 {$a->coursename}</li>
+<li>链接到用户的个人资料页面 {$a->profileurl}</li>
+<li>用户电子邮件 {$a->email}</li>
+<li>用户全名 {$a->fullname}</li>
+<li>用户名字 {$a->firstname}</li>
+<li>用户姓氏 {$a->姓氏}</li>
+<li>用户课程角色 {$a->courserole}</li>
+</ul>';
 $string['defaultenrol'] = '向新课程添加实例';
 $string['defaultenrol_desc'] = '缺省情况下可以把这些插件添加到所有新课程。';
 $string['deleteinstanceconfirm'] = '您将要删除在"{$a->name}"中的报名方法。当前所有使用该方法参加的{$a->users}用户会被退出，而且所有课程相关的信息例如用户的成绩，组成员关系以及论坛订阅等都将被删除。
@@ -129,6 +140,7 @@ $string['periodend'] = '直到{$a}';
 $string['periodnone'] = '已选课 {$a}';
 $string['periodstart'] = '从{$a}';
 $string['periodstartend'] = '从{$a->start}到{$a->end}';
+$string['plugindisabled'] = '{$a} enroll 插件已禁用';
 $string['privacy:metadata:user_enrolments'] = '选课';
 $string['privacy:metadata:user_enrolments:enrolid'] = '选课插件实例';
 $string['privacy:metadata:user_enrolments:modifierid'] = '最后修改用户选课的用户ID';
@@ -139,12 +151,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = '用户选课的结束时�
 $string['privacy:metadata:user_enrolments:timemodified'] = '用户选课修改的时间';
 $string['privacy:metadata:user_enrolments:timestart'] = '用户选课的开始时间';
 $string['privacy:metadata:user_enrolments:userid'] = '用户的唯一标识号';
-$string['proceedtocourse'] = '继续执行教程内容';
 $string['recovergrades'] = '尽可能恢复用户的旧成绩';
 $string['rolefromcategory'] = '{$a->role}（继承自课程分类）';
 $string['rolefrommetacourse'] = '{$a->role}（继承自父课程）';
 $string['rolefromsystem'] = '{$a->role}（网站级的分配）';
 $string['rolefromthiscourse'] = '{$a->role}（课程内的分配）';
+$string['sendcoursewelcomemessage'] = '发送课程欢迎消息';
+$string['sendcoursewelcomemessage_help'] = '在课程中注册用户或群组时，可能会向他们发送欢迎消息电子邮件。如果从课程联系人（默认情况下为教师）发送，并且有多个用户具有此角色，则电子邮件将从要分配该角色的第一个用户发送。';
 $string['sendfromcoursecontact'] = '自课程联系人';
 $string['sendfromkeyholder'] = '自注册码保管人';
 $string['sendfromnoreply'] = '自勿回复地址';
@@ -163,7 +176,7 @@ $string['unassignnotpermitted'] = '您没有在此课程撤销角色的权限';
 $string['unenrol'] = '撤销选课';
 $string['unenrolconfirm'] = '您确定要取消用户"{$a->user}"所选课程"{$a->course}"吗 (之前通过 "{$a->enrolinstancename}"选课)？';
 $string['unenrolleduser'] = '用户“{$a->fullname}”已从课程中取消注册';
-$string['unenrolme'] = '从{$a}撤销选课';
+$string['unenrolme'] = '撤销选课';
 $string['unenrolnotpermitted'] = '您无权撤销此用户的选课';
 $string['unenrolroleusers'] = '撤销用户的选课';
 $string['uninstallmigrating'] = '迁移 "{$a}" 选课';

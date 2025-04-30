@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', version '4.1'.
+ * Strings for component 'quiz', language 'ko', version '4.4'.
  *
  * @package     quiz
  * @category    string
@@ -103,7 +103,6 @@ $string['back'] = '이전 질문으로 돌아가기';
 $string['backtocourse'] = '강좌로 돌아가기';
 $string['backtoquestionlist'] = '질문목록으로 돌아가기';
 $string['backtoquiz'] = '질문 편집으로 이동';
-$string['basicideasofquiz'] = '퀴즈 작성 요령';
 $string['bestgrade'] = '최고 성적';
 $string['bothattempts'] = '시도를 한 학생과 하지 않은 학생 보기';
 $string['browsersecurity'] = '브라우저 보안';
@@ -333,6 +332,7 @@ $string['gradeaverage'] = '평균 점수';
 $string['gradeboundary'] = '등급 경계';
 $string['gradeessays'] = '에세이 채점';
 $string['gradehighest'] = '최고 점수';
+$string['gradeitems'] = '성적 항목들';
 $string['grademethod'] = '채점 방법';
 $string['grademethod_help'] = '학생들에게 여러번 시도를 허용하면, 학생들의 최종 성적을 계산하는데 다음 방법을 사용할 수 있습니다
 

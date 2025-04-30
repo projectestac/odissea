@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'zh_cn', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'zh_cn', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -37,12 +37,17 @@ $string['configairnotifieraccesskey'] = '用于连接到短信通知服务器的
 $string['configairnotifierappname'] = '短信通知应用程序名称标识符';
 $string['configairnotifiermobileappname'] = '唯一的移动端应用识别名（通常像是com.moodle.moodlemobile)。';
 $string['configairnotifierport'] = '连接到短信通知服务器时使用的端口。';
-$string['configairnotifierurl'] = '连接到发送推送通知的服务器url。';
+$string['configairnotifierurl'] = '为了发送推送通知而连接到的服务器URL。';
 $string['configured'] = '已配置';
 $string['deletecheckdevicename'] = '删除您的设备：{$a->name}';
 $string['deletedevice'] = '删除该设备。请注意，应用程序可以再次注册该设备。如果该设备继续出现，请禁用它。';
 $string['devicetoken'] = '设备令牌';
+$string['donotsendnotification'] = '完全不发送通知';
 $string['enableprocessor'] = '启用移动设备通知';
+$string['encryptnotifications'] = '加密的通知';
+$string['encryptnotifications_help'] = '启用应用程序通知的端到端加密。如果无法加密，某些数据可能会从通知中删除。';
+$string['encryptprocessing'] = '对于不支持加密的设备';
+$string['encryptprocessing_desc'] = '加密通知至少需要Android 8或iOS 13，以及Moodle App 4.2或更高版本。';
 $string['errorretrievingkey'] = '检索访问密钥时出错。您的网站必须注册才能使用这项服务。如果您的网站已经注册，请更新您的注册。';
 $string['keyretrievedsuccessfully'] = '访问密钥检索成功。要访问Moodle应用程序使用情况统计信息，请在<a href="https://apps.moodle.com"> Moodle应用程序门户网站</a>上创建一个帐户。';
 $string['messageprovidersempty'] = '默认通知首选项中未启用移动端通知。';
@@ -73,6 +78,7 @@ $string['privacy:metadata:username'] = '用户的用户名。';
 $string['privacy:metadata:usersubsystem'] = '该插件已连接到用户子系统。';
 $string['privacy:subcontext'] = '短信通知消息';
 $string['requestaccesskey'] = '请求访问密钥';
+$string['sendnotificationnotenc'] = '发送不加密的通知';
 $string['sendtest'] = '向我的设备发送测试推送通知';
 $string['sendtestconfirmation'] = '一条测试推送通知将被发送到您用来连接到此站点的设备。请确保您的设备已连接到互联网，并且移动端应用程序未打开（因为推送通知仅在后台收到时才会显示）。';
 $string['serverconnectivityerror'] = '此站点无法连接到通知服务器{$a}';
@@ -80,3 +86,4 @@ $string['showhide'] = '启用/禁用该设备。';
 $string['sitemustberegistered'] = '为了使用公共短信通知实例，必须注册您的站点。另外，您可以通过在<a href="https://apps.moodle.com"> Moodle 应用程序门户网站 </a>上创建一个帐户来获取访问密钥。';
 $string['unknowndevice'] = '未知设备';
 $string['userdevices'] = '用户设备';
+$string['view_notification'] = '点击查看';

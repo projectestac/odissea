@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'es', version '4.1'.
+ * Strings for component 'lti', language 'es', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -32,6 +32,7 @@ $string['accept_grades_admin_help'] = 'Especifique si el proveedor de la herrami
 
 Algunos proveedores de herramientas admiten la opción de notificar las calificaciones en Moodle en función de las acciones realizadas en la herramienta, lo que genera una experiencia más
 integrada.';
+$string['accept_grades_from_tool'] = 'Permitir a {$a} añadir calificaciones en el libro de calificaciones';
 $string['accept_grades_help'] = 'Especifique si el proveedor de herramientas puede añadir, actualizar, leer y eliminar las calificaciones vinculadas solo a esta instancia de la herramienta externa.
 
 Algunos proveedores de herramientas admiten la opción de notificar las calificaciones a Moodle en función de las acciones realizadas en la herramienta, lo que genera una experiencia más integrada.
@@ -47,6 +48,7 @@ $string['add_ltiadv'] = 'Añadir LTI Advantage';
 $string['add_ltilegacy'] = 'Añadir Legacy LTI';
 $string['addnewapp'] = 'Habilitar aplicación externa';
 $string['addserver'] = 'Añadir un nuevo servidor de confianza';
+$string['addtool'] = 'Añadir herramienta';
 $string['addtype'] = 'Añadir herramienta preconfigurada';
 $string['allow'] = 'Permitir';
 $string['allowsetting'] = 'Permitir que la herramienta almacene 8 K de ajustes en Moodle';
@@ -87,18 +89,27 @@ $string['configtoolurl'] = 'URL por defecto de la herramienta externa';
 $string['configtypes'] = 'Habilitar aplicaciones LTI';
 $string['configured'] = 'Configurado';
 $string['confirmtoolactivation'] = 'Esta seguro que desea activar la siguiente herramienta?';
-$string['contentitem'] = 'Mensaje elemento-contenido';
 $string['contentitem_deeplinking'] = 'Admite enlaces profundos (mensaje elemento-contenido)';
 $string['contentitem_deeplinking_help'] = 'Si está seleccionado, la opción \'Seleccionar contenido\' estará disponible cuando se añada una herramienta externa.';
-$string['contentitem_help'] = 'Si está seleccionado, la opción \'Seleccionar contenido\' estará disponible cuando se añada una herramienta externa.';
 $string['contentitem_multiple_description'] = 'Los siguientes elementos se añadirán a tu curso:';
 $string['contentitem_multiple_graded'] = 'Actividad calificada (Calificación máxima: {$a})';
+$string['contentselected'] = 'Contenido seleccionado';
 $string['course_tool_types'] = 'Herramientas del curso';
 $string['courseactivitiesorresources'] = 'Actividades o recursos del curso';
+$string['courseexternaltooladd'] = 'Añadir nueva herramienta externa LTI';
+$string['courseexternaltooladdsuccess'] = '{$a} añadido.';
+$string['courseexternaltooledit'] = 'Editar {$a}';
+$string['courseexternaltooleditsuccess'] = 'Cambios guardados.';
+$string['courseexternaltooliconalt'] = 'Icono de "{$a}"';
+$string['courseexternaltools'] = 'Herramientas Externas LTI';
+$string['courseexternaltoolsinfo'] = 'Las herramientas externas LTI son plugins que puede integrar en su curso como contenido interactivo o evaluación. Sus estudiantes pueden acceder y usarlas sin tener que salir de su curso.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Usted no tiene permisos para editar esta herramienta';
+$string['courseexternaltoolsnoviewpermissions'] = 'Ver herramientas externas de curso.';
 $string['courseid'] = 'Número ID del Curso';
 $string['courseinformation'] = 'Información del curso';
 $string['courselink'] = 'Ir al curso';
 $string['coursemisconf'] = 'El curso está mal configurado';
+$string['coursetooldeleted'] = 'Se ha eliminado {$a}';
 $string['createdon'] = 'Creado en';
 $string['curllibrarymissing'] = 'La biblioteca PHP cURL necesaria para la herramienta externa.';
 $string['custom'] = 'Parámetros personalizados';
@@ -125,23 +136,19 @@ $string['delegate'] = 'Delegar al profesor';
 $string['delegate_tool'] = 'Como se especifica en la definición de vínculo profundo o delegado al maestro';
 $string['delete'] = 'Borrar';
 $string['delete_confirmation'] = '¿Está seguro de que quiere eliminar esta herramienta preconfigurada?';
+$string['deletecoursetool'] = 'Borrar {$a}';
+$string['deletecoursetoolconfirm'] = 'Esto borrará {$a} de las herramientas LTI disponibles en su curso.';
+$string['deletecoursetoolwithusageconfirm'] = 'Actualmente se está usando {$a} al menos en una actividad de su curso. Si borra esta herramienta, las actividades que la usan dejarán de funcionar. <br><br>¿Seguro que quiere borrar {$a}?';
 $string['deletetype'] = 'Eliminar herramienta preconfigurada';
-$string['display_description'] = 'Mostrar la descripción de la actividad cuando se inicia';
-$string['display_description_help'] = 'Si está seleccionada, se mostrará la descripción de la actividad (especificada previamente) encima del contenido del proveedor de la herramienta.
-
-Se puede utilizar la descripción para proporcionar instrucciones adicionales a los iniciadores de la herramienta, pero no es necesario.
-
-La descripción nunca se muestra cuando el contenedor de inicio de la herramienta se encuentra en una nueva ventana.';
-$string['display_name'] = 'Nombre para mostrar la actividad cuando se inicia';
-$string['display_name_help'] = 'Si está seleccionado, se mostrará el nombre de la actividad (especificado previamente) encima del contenido del proveedor de la herramienta.
-
-Es posible que el proveedor de la herramienta también muestre el título. Esta opción puede evitar que el título de la actividad se muestre dos veces.
-
-El título nunca se muestra cuando el contenedor de inicio de la herramienta se encuentra en una nueva ventana.';
+$string['display_description'] = 'Mostrar la descripción de la actividad cuando los estudiantes acceden a la herramienta';
+$string['display_description_help'] = 'El contenido de esta herramienta se muestra embebido en una página del curso. Este ajuste determina si la descripción de la actividad se muestra en esa página.';
+$string['display_name'] = 'Mostrar nombre de la actividad cuando los estudiantes acceden a la herramienta';
+$string['display_name_help'] = 'El contenido de esta herramienta se muestra embebido en una página del curso. Este ajuste determina si el nombre de la actividad se muestra en esa página.';
 $string['domain_mismatch'] = 'El dominio de la URL de la herramienta no coincide con la configuración de la herramienta.';
 $string['donot'] = 'No envíe';
 $string['donotaccept'] = 'No acepte';
 $string['donotallow'] = 'No permita que';
+$string['dontshowinactivitychooser'] = 'No mostrar en el selector de actividad';
 $string['duplicateregurl'] = 'Esta URL de registro ya está en uso';
 $string['dynreg_update_btn_new'] = 'Registrar como una nueva herramienta externa';
 $string['dynreg_update_btn_update'] = 'Actualizar';
@@ -153,6 +160,11 @@ $string['dynreg_update_url'] = 'URL base';
 $string['dynreg_update_version'] = 'Versión LTI';
 $string['dynreg_update_warn_dupdomain'] = 'No se recomienda tener varias herramientas externas bajo el mismo dominio.';
 $string['editdescription'] = 'Clic aquí para dar una descripción a la herramienta';
+$string['editmanualinstancedeprecationwarning'] = 'Ya no se admiten actividades de herramientas externas configuradas manualmente. No se preocupe, esta actividad seguirá funcionando tal como está, pero ya no podrá realizar cambios en la configuración de la herramienta aquí.
+<br><br>
+Para realizar cambios en la herramienta o crear nuevas actividades con ella, la herramienta debe añadirse a su curso en Curso > Más > Herramientas externas de LTI. Después podrá crear nuevas actividades seleccionando la herramienta directamente en el selector de Actividad.
+<br><br>
+Puede leer más sobre cómo añadir herramientas externas de LTI en la documentación <a href="{$a}" target="_blank">Herramienta externa</a>.';
 $string['edittype'] = 'Editar la herramienta preconfigurada';
 $string['embed'] = 'Incrustar';
 $string['embed_no_blocks'] = 'Incrustar, sin bloques';
@@ -160,6 +172,7 @@ $string['enableemailnotification'] = 'Enviar emails de aviso';
 $string['enableemailnotification_help'] = 'Si se activa, los estudiantes recibirán notificación por correo electrónico cuando sus entregas sean calificadas.';
 $string['enterkeyandsecret'] = 'Introduzca su clave de consumidor y la clave secreta compartida';
 $string['enterkeyandsecret_help'] = 'Si le dieron una clave de consumidor y/o una clave secreta compartida, introdúzcalas aquí';
+$string['entitycourseexternaltools'] = 'Herramientas Externas LTI';
 $string['errorbadurl'] = 'La URL no es una URL de herramienta o de cartucho válida.';
 $string['errorincorrectconsumerkey'] = 'La clave de consumidor es incorrecta.';
 $string['errorinvaliddata'] = 'Datos no válidos: {$a}';
@@ -243,11 +256,11 @@ $string['launchinpopup_help'] = 'El contenedor que inicia la herramienta afecta 
         Dependiendo del navegador se abrirá en nueva pestaña o en ventana emergente.
         Es posible que algunos navegadores o programas bloqueen la apertura.';
 $string['launchoptions'] = 'Opciones de inicio';
-$string['leaveblank'] = 'Déjalo en blanco si no lo necesitas';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Añadir configuraciones de herramientas específicas del curso';
 $string['lti:addinstance'] = 'Añadir una nueva herramienta externa';
 $string['lti:addmanualinstance'] = 'Añadir una herramienta configurada manualmente';
+$string['lti:addmanualinstanceprohibitederror'] = 'Ya no se admite la creación manual de herramientas sin una definición de herramienta del curso. Cree primero una herramienta de curso y luego utilícela para crear instancias de actividad.';
 $string['lti:addpreconfiguredinstance'] = 'Añadir una herramienta preconfigurada';
 $string['lti:admin'] = 'Actuar como administrador cuando se ejecute la herramienta';
 $string['lti:grade'] = 'Ver calificaciones devueltas por la herramienta externa';
@@ -313,6 +326,7 @@ $string['no_tp_configured'] = 'No se han configurado registros de herramientas e
 $string['no_tp_pending'] = 'No hay registros pendientes de herramientas externas';
 $string['no_tp_rejected'] = 'No hay registros rechazados de herramientas externas.';
 $string['noattempts'] = 'No se ha realizado ningún intento en esta instancia de la herramienta';
+$string['nocourseexternaltoolsnotice'] = 'No hay herramientas externas LTI aún.';
 $string['noltis'] = 'No hay instancias de herramientas extenas';
 $string['noprofileservice'] = 'Perfil del servicio no encontrado';
 $string['noservers'] = 'No se han encontrado servidores';
@@ -433,6 +447,8 @@ proveedores de herramientas. Puede ser un proceso automatizado o puede requerir 
 Las herramientas que no requieren una comunicación segura de Moodle y no brindan servicios adicionales (como informes de calificaciones)
 puede que no requieran una clave de recurso.';
 $string['resourceurl'] = 'URL del recurso';
+$string['restricttocategory'] = 'Restringir a categoría';
+$string['restricttocategory_help'] = 'Para restringir el uso de esta herramienta externa en todos los cursos de una categoría, seleccione la categoría o categorías en la lista.';
 $string['return_to_course'] = 'Haz clic <a href="{$a->link}" target="_top">aquí</a> para volver al curso.';
 $string['saveallfeedback'] = 'Guardar toda mi retroalimentación';
 $string['search:activity'] = 'Herramienta externa - información de actividad';
@@ -443,6 +459,7 @@ $string['secure_launch_url_help'] = 'Similar a la URL de la herramienta, pero se
 
 La URL de la herramienta también se puede configurar en una dirección https para forzar el lanzamiento a través de SSL, y este campo puede dejarse en blanco.';
 $string['selectcontent'] = 'Seleccionar contenido';
+$string['selectcontentvalidationerror'] = 'Usted tiene que seleccionar contenido para esta actividad.';
 $string['send'] = 'Enviar';
 $string['services'] = 'Servicios';
 $string['services_help'] = 'Selecciona los servicios que desea ofrecer al proveedor de herramientas. Se puede seleccionar más de un servicio.';
@@ -479,6 +496,7 @@ $string['show_in_course_lti2'] = 'Configuración del uso de la herramienta';
 $string['show_in_course_lti2_help'] = 'Esta herramienta se puede mostrar en el selector de actividad para que un profesor lo seleccione para añadir a un curso o en el menú desplegable de herramientas preconfiguradas que se muestra cuando se va a añadir una herramienta externa al curso.';
 $string['show_in_course_no'] = 'No mostrar; utilizar solo cuando se introduzca una URL de herramienta que coincida';
 $string['show_in_course_preconfigured'] = 'Mostrar como una herramienta preconfigurada cuando se añade una herramienta externa';
+$string['showinactivitychooser'] = 'Mostrar en el selector de actividad';
 $string['sitehost'] = 'Hostname del sitio';
 $string['siteid'] = 'ID del sitio';
 $string['size'] = 'Parámetros de tamaño';
@@ -528,6 +546,7 @@ $string['toolsetup'] = 'Registro de herramienta externa';
 $string['tooltypeadded'] = 'Se ha añadido la herramienta preconfigurada';
 $string['tooltypedeleted'] = 'Se ha borrado la herramienta preconfigurada';
 $string['tooltypenotdeleted'] = 'No se ha podido borrar la herramienta preconfigurada';
+$string['tooltypenotfounderror'] = 'La herramienta LTI usada en esta actividad se ha borrado. Si necesita ayuda, contacte con su profesor o con el administrador del sitio.';
 $string['tooltypes'] = 'Herramientas';
 $string['tooltypeupdated'] = 'Se ha actualizado la herramienta preoconfigurada';
 $string['toolurl'] = 'URL de la herramienta';
@@ -564,6 +583,7 @@ $string['unabletocreatetooltype'] = 'No se ha podido crear la herramienta';
 $string['unabletofindtooltype'] = 'No se ha podido encontrar la herramienta {$a->id}';
 $string['unknownstate'] = 'Estado desconocido';
 $string['update'] = 'Actualización';
+$string['usage'] = 'Cuenta de uso';
 $string['useraccountinformation'] = 'Información de la cuenta del usuario';
 $string['userpersonalinformation'] = 'Información personal del usuario';
 $string['using_tool_cartridge'] = 'Usando herramienta cartridge';

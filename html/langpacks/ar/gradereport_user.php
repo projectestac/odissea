@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ar', version '4.1'.
+ * Strings for component 'gradereport_user', language 'ar', version '4.4'.
  *
  * @package     gradereport_user
  * @category    string
@@ -33,5 +33,6 @@ $string['pluginname'] = 'تقرير المستخدم';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'فيما إذا كان عرض التقرير هو للمستخدم الحالي أو لمستخدم آخر في سجل التقديرات';
 $string['tablesummary'] = 'يتم ترتيب الجدول كقائمة من عناصر التقييم متضمنة تصنيفات تلك العناصر. إذا كان أي عنصر تقييم ينتمي إلى تصنيف، ستتم الإشارة لذلك.';
 $string['user:view'] = 'معاينة تقرير المستخدم';
+$string['userreport_user'] = 'تقرير المستخدم';
 $string['userreportdesc'] = 'تقارير المستخدمين تتضمن تقديرات المستخدم، إفاداته وإجمالي المقرر.';
-$string['userreports'] = 'إختر المستخدم أعلاه لمعاينة تقريره';
+$string['userreports'] = 'إبحث عن المستخدم لمعاينة تقريره';

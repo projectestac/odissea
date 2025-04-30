@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'ca', version '4.1'.
+ * Strings for component 'h5p', language 'ca', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -139,6 +139,7 @@ $string['h5ppackage_help'] = 'Un tipus de contingut H5P és un fitxer amb una ex
 $string['h5pprivatefile'] = 'Aquest contingut H5P no es pot mostrar perquè no teniu accés al fitxer .h5p.';
 $string['h5psettings'] = 'Configuració de l\'H5P';
 $string['h5ptitle'] = 'Visiteu h5p.org per accedir a més contingut.';
+$string['height'] = 'alçada';
 $string['helpChoosingLicense'] = 'Ajuda\'m a triar una llicència';
 $string['hideadvanced'] = 'Amaga les opcions avançades';
 $string['icon'] = 'Icona';
@@ -207,6 +208,7 @@ $string['missinglibrary'] = 'Falta la biblioteca ({$a->@library}) requerida';
 $string['missinglibraryfile'] = 'Falta el fitxer «{$a->%file}» de la biblioteca: «{$a->%name}»';
 $string['missinglibraryjson'] = 'No s\'ha trobat cap fitxer library.json amb un format JSON vàlid per a la biblioteca {$a->%name}';
 $string['missinglibraryproperty'] = 'La biblioteca {$a->%library} no disposa de la propietat requerida {$a->%property}';
+$string['missingmainlibrary'] = 'Falta la biblioteca principal {$a->@library}';
 $string['missingmbstring'] = 'L\'extensió PHP mbstring no està carregada. És necessària perquè H5P funcioni correctament.';
 $string['missinguploadpermissions'] = 'Pot ser que el fitxer que heu penjat inclogui biblioteques, però no teniu permís per penjar biblioteques noves. Contacteu amb l\'administrador.';
 $string['next'] = 'Següent';
@@ -288,6 +290,7 @@ $string['updatedlibraries'] = 'S\'han actualitzat {$a->%old} biblioteques H5P.';
 $string['updatedlibrary'] = 'S\'ha actualitzat {$a->%old} biblioteca H5P.';
 $string['uploadlibraries'] = 'Penja tipus de contingut H5P';
 $string['uploadsuccess'] = 'Els tipus de contingut H5P s\'han pujat correctament';
+$string['width'] = 'amplada';
 $string['wrongversion'] = 'La versió de la biblioteca H5P {$a->%machineName} utilitzada en aquest contingut no és vàlida. El contingut inclou {$a->%contentLibrary}, però hauria de ser {$a->%semanticsLibrary}.';
 $string['year'] = 'Any';
 $string['years'] = 'Any(s)';

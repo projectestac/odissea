@@ -36,19 +36,18 @@ require_once($CFG->libdir . '/outputcomponents.php');
  * @covers \html_writer
  * @coversDefaultClass \html_writer
  */
-class html_writer_test extends basic_testcase {
-
+final class html_writer_test extends basic_testcase {
     /**
      * @covers ::start_tag
      */
-    public function test_start_tag() {
+    public function test_start_tag(): void {
         $this->assertSame('<div>', html_writer::start_tag('div'));
     }
 
     /**
      * @covers ::start_tag
      */
-    public function test_start_tag_with_attr() {
+    public function test_start_tag_with_attr(): void {
         $this->assertSame('<div class="frog">',
             html_writer::start_tag('div', array('class' => 'frog')));
     }
@@ -56,7 +55,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::start_tag
      */
-    public function test_start_tag_with_attrs() {
+    public function test_start_tag_with_attrs(): void {
         $this->assertSame('<div class="frog" id="mydiv">',
             html_writer::start_tag('div', array('class' => 'frog', 'id' => 'mydiv')));
     }
@@ -64,21 +63,21 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::end_tag
      */
-    public function test_end_tag() {
+    public function test_end_tag(): void {
         $this->assertSame('</div>', html_writer::end_tag('div'));
     }
 
     /**
      * @covers ::empty_Tag
      */
-    public function test_empty_tag() {
+    public function test_empty_tag(): void {
         $this->assertSame('<br />', html_writer::empty_tag('br'));
     }
 
     /**
      * @covers ::empty_Tag
      */
-    public function test_empty_tag_with_attrs() {
+    public function test_empty_tag_with_attrs(): void {
         $this->assertSame('<input type="submit" value="frog" />',
             html_writer::empty_tag('input', array('type' => 'submit', 'value' => 'frog')));
     }
@@ -86,7 +85,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::nonempty_tag
      */
-    public function test_nonempty_tag_with_content() {
+    public function test_nonempty_tag_with_content(): void {
         $this->assertSame('<div>Hello world!</div>',
             html_writer::nonempty_tag('div', 'Hello world!'));
     }
@@ -94,7 +93,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::nonempty_tag
      */
-    public function test_nonempty_tag_empty() {
+    public function test_nonempty_tag_empty(): void {
         $this->assertSame('',
             html_writer::nonempty_tag('div', ''));
     }
@@ -102,7 +101,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::nonempty_tag
      */
-    public function test_nonempty_tag_null() {
+    public function test_nonempty_tag_null(): void {
         $this->assertSame('',
             html_writer::nonempty_tag('div', null));
     }
@@ -110,7 +109,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::nonempty_tag
      */
-    public function test_nonempty_tag_zero() {
+    public function test_nonempty_tag_zero(): void {
         $this->assertSame('<div class="score">0</div>',
             html_writer::nonempty_tag('div', 0, array('class' => 'score')));
     }
@@ -118,7 +117,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::nonempty_tag
      */
-    public function test_nonempty_tag_zero_string() {
+    public function test_nonempty_tag_zero_string(): void {
         $this->assertSame('<div class="score">0</div>',
             html_writer::nonempty_tag('div', '0', array('class' => 'score')));
     }
@@ -126,7 +125,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::div
      */
-    public function test_div() {
+    public function test_div(): void {
         // All options.
         $this->assertSame('<div class="frog" id="kermit">ribbit</div>',
                 html_writer::div('ribbit', 'frog', array('id' => 'kermit')));
@@ -147,7 +146,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::start_div
      */
-    public function test_start_div() {
+    public function test_start_div(): void {
         // All options.
         $this->assertSame('<div class="frog" id="kermit">',
                 html_writer::start_div('frog', array('id' => 'kermit')));
@@ -168,14 +167,14 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::end_div
      */
-    public function test_end_div() {
+    public function test_end_div(): void {
         $this->assertSame('</div>', html_writer::end_div());
     }
 
     /**
      * @covers ::span
      */
-    public function test_span() {
+    public function test_span(): void {
         // All options.
         $this->assertSame('<span class="frog" id="kermit">ribbit</span>',
                 html_writer::span('ribbit', 'frog', array('id' => 'kermit')));
@@ -196,7 +195,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::start_span
      */
-    public function test_start_span() {
+    public function test_start_span(): void {
         // All options.
         $this->assertSame('<span class="frog" id="kermit">',
                 html_writer::start_span('frog', array('id' => 'kermit')));
@@ -217,7 +216,7 @@ class html_writer_test extends basic_testcase {
     /**
      * @covers ::end_span
      */
-    public function test_end_span() {
+    public function test_end_span(): void {
         $this->assertSame('</span>', html_writer::end_span());
     }
 
@@ -227,7 +226,7 @@ class html_writer_test extends basic_testcase {
      * @covers \html_table_cell
      * @covers \html_table
      */
-    public function test_table() {
+    public function test_table(): void {
         $row = new html_table_row();
 
         // The attribute will get overwritten by the ID.
@@ -236,7 +235,6 @@ class html_writer_test extends basic_testcase {
 
         // The data-name will be present in the output.
         $row->attributes['data-name'] = 'Fred';
-        $row->class = 'this is a table row';
 
         $cell = new html_table_cell();
 
@@ -246,7 +244,6 @@ class html_writer_test extends basic_testcase {
 
         // The data-name will be present in the output.
         $cell->attributes['data-name'] = 'John';
-        $cell->class = 'this is a table cell';
 
         $row->cells[] = $cell;
 
@@ -281,7 +278,7 @@ EOF;
     /**
      * @covers ::table
      */
-    public function test_table_hidden_caption() {
+    public function test_table_hidden_caption(): void {
 
         $table = new html_table();
         $table->id = "whodat";

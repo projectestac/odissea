@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'pt', version '4.1'.
+ * Strings for component 'questionnaire', language 'pt', version '4.4'.
  *
  * @package     questionnaire
  * @category    string
@@ -41,7 +41,7 @@ $string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Todos';
 $string['allnameddegrees'] = 'Avaliação alfabética';
 $string['allnameddegrees_help'] = 'Especifique o texto a ser exibido para valores da avaliação em vez do número. Deixe em branco para não usar.';
-$string['alreadyfilled'] = 'Já preencheu este questionário para nós{$a}. Obrigado.';
+$string['alreadyfilled'] = 'Já submeteu este questionário {$a}. Obrigado.';
 $string['andaveragevalues'] = 'e valores médios';
 $string['anonymous'] = 'Anónimo';
 $string['answer'] = 'Resposta';

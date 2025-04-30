@@ -38,10 +38,10 @@ $pageparams->page       = optional_param('page', 1, PARAM_INT);
 $pageparams->perpage    = optional_param('perpage', get_config('attendance', 'resultsperpage'), PARAM_INT);
 
 $cm             = get_coursemodule_from_id('attendance', $id, 0, false, MUST_EXIST);
-$course         = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
-$att            = $DB->get_record('attendance', array('id' => $cm->instance), '*', MUST_EXIST);
+$course         = $DB->get_record('course', ['id' => $cm->course], '*', MUST_EXIST);
+$att            = $DB->get_record('attendance', ['id' => $cm->instance], '*', MUST_EXIST);
 // Check this is a valid session for this attendance.
-$session        = $DB->get_record('attendance_sessions', array('id' => $pageparams->sessionid, 'attendanceid' => $att->id),
+$session        = $DB->get_record('attendance_sessions', ['id' => $pageparams->sessionid, 'attendanceid' => $att->id],
                                   '*', MUST_EXIST);
 
 require_login($course, true, $cm);
@@ -77,9 +77,9 @@ if (($formdata = data_submitted()) && confirm_sesskey()) {
     if (!empty($att->pageparams->page) && $att->pageparams->page && $totalusers && $usersperpage) {
         $numberofpages = ceil($totalusers / $usersperpage);
         if ($att->pageparams->page < $numberofpages) {
-            $params = array(
+            $params = [
                 'sessionid' => $att->pageparams->sessionid,
-                'grouptype' => $att->pageparams->grouptype);
+                'grouptype' => $att->pageparams->grouptype, ];
             $params['page'] = $att->pageparams->page + 1;
             redirect($att->url_take($params), get_string('moreattendance', 'attendance'));
         }

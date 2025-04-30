@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'fr', version '4.1'.
+ * Strings for component 'message', language 'fr', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Contacts';
 $string['conversationactions'] = 'Menu d’actions de conversation';
 $string['decline'] = 'Décliner';
 $string['defaultmessageoutputs'] = 'Réglages de notification';
-$string['defaults'] = 'Défauts';
 $string['deleteallconfirm'] = 'Voulez-vous vraiment supprimer l’intégralité de cette conversation ? Cette opération ne la supprimera pas pour les autres participants à la conversation.';
 $string['deleteallmessages'] = 'Supprimer tous les messages';
 $string['deleteallselfconfirm'] = 'Voulez-vous vraiment supprimer l’intégralité de cette conversation personnelle ?';
@@ -97,11 +96,7 @@ $string['info'] = 'Info utilisateur';
 $string['isnotinyourcontacts'] = '{$a} n’est pas dans vos contacts';
 $string['loadmore'] = 'Charger plus';
 $string['loggedin'] = 'En ligne';
-$string['loggedin_help'] = 'Configurez comment vous désirez recevoir les notifications lorsque vous êtes connecté sur la plateforme';
-$string['loggedindescription'] = 'Quand je suis connecté à Moodle';
 $string['loggedoff'] = 'Hors ligne';
-$string['loggedoff_help'] = 'Configurez comment vous désirez recevoir les notifications lorsque vous n’êtes pas connecté sur la plateforme';
-$string['loggedoffdescription'] = 'Quand je ne suis pas connecté à Moodle';
 $string['managemessageoutputs'] = 'Préférences de notification par défaut';
 $string['message'] = 'Message personnel';
 $string['messagecontactrequest'] = '{$a->user} demande à être ajouté comme contact. Veuillez visiter la page des <a href="{$a->url}">demandes de contact</a> pour répondre à la demande';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Message envoyé à 1 personne';
 $string['sendbulkmessagesingle'] = 'Envoyer le message à 1 personne';
 $string['sendcontactrequest'] = 'Envoyer une demande de contact';
 $string['sender'] = '{$a} :';
-$string['sendingvia'] = 'Envoi de « {$a->provider} » via « {$a->processor} »';
 $string['sendingviaenabled'] = 'Statut d’activation de l’envoi de « {$a->provider} » via « {$a->processor} »';
 $string['sendingvialocked'] = 'Statut de verrouillage de l’envoi de « {$a->provider} » via « {$a->processor} »';
-$string['sendingviawhen'] = 'Envoi de « {$a->provider} » via « {$a->processor} » quand {$a->state}';
 $string['sendmessage'] = 'Envoyer message personnel';
 $string['sendmessageto'] = 'Envoyer message personnel à {$a}';
 $string['sendmessagetopopup'] = 'Envoyer message personnel à {$a} - nouvelle fenêtre';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'Afficher la notification complète';
 $string['viewmessageswith'] = 'Consulter les messages avec {$a}';
 $string['viewnotificationresource'] = 'Aller à {$a}';
 $string['viewunreadmessageswith'] = 'Consulter les messages non lus avec {$a}';
+$string['waitingforcontactaccept'] = 'En attente d’être ajouté comme contact';
 $string['wouldliketocontactyou'] = 'Aimerait vous contacter';
 $string['writeamessage'] = 'Écrire un message';
 $string['you'] = 'Vous :';

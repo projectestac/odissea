@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'nl', version '4.1'.
+ * Strings for component 'tool_generator', language 'nl', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Aanvullende activiteiten';
+$string['additionalmodules_help'] = 'Selecteer meer activiteiten die decourse_backend_generator_create_activity functie implementeren om mee in deze testcursus op te nemen.';
 $string['bigfile'] = 'Groot bestand {$a}';
 $string['courseexplanation'] = 'Deze tool maakt standaard testcursussen die vele secties, activiteiten en bestanden bevatten.
 
@@ -72,6 +74,7 @@ $string['progress_createcourse'] = 'Cursus maken ({$a})';
 $string['progress_createforum'] = 'Forumberichten maken ({$a} berichten)';
 $string['progress_createpages'] = 'Pagina\'s maken ({$a})';
 $string['progress_createsmallfiles'] = 'Kleine bestanden maken ({$a})';
+$string['progress_createusers'] = 'Gebruikersaccounts maken ({$a})';
 $string['progress_enrol'] = 'Gebruikers in cursus aanmelden ({$a})';
 $string['progress_sitecompleted'] = 'Site voltooid ({$a}s)';
 $string['shortsize_0'] = 'XS';
@@ -110,5 +113,17 @@ $string['testplansize_2'] = 'M ({$a->users} gebruikers, {$a->loops} keer doorlop
 $string['testplansize_3'] = 'L ({$a->users} gebruikers, {$a->loops} keer doorlopen en {$a->rampup} opstartperiode)';
 $string['testplansize_4'] = 'XL ({$a->users} gebruikers, {$a->loops} keer doorlopen en {$a->rampup} opstartperiode)';
 $string['testplansize_5'] = 'XXL ({$a->users} gebruikers, {$a->loops} keer doorlopen en {$a->rampup} opstartperiode)';
+$string['testscenario'] = 'Testscenario\'s maken';
+$string['testscenario_description'] = 'Bij het maken van testscenario\'s wordt gebruik gemaakt van een beperkte syntaxis van functiebestanden om alle noodzakelijke elementen te creëren om een handmatige test uit te voeren.';
+$string['testscenario_errorparsing'] = 'Fout bij verwerken van fucntiebestand: {$a}';
+$string['testscenario_file'] = 'Functiebestand';
+$string['testscenario_filedesc'] = 'De uploadfunctiebestanden kunnen alleen scenario\'s bevatten met core_data_generator-stappen. Het is nog niet compatibel met scenariocontouren. Alle scenario\'s worden in één keer uitgevoerd, maar achtergrondstappen worden genegeerd.';
+$string['testscenario_invalidfile'] = 'Het bestandsformaat is niet geldig of bevat ongeldige stappen.';
+$string['testscenario_invalidstep'] = 'Onbekende stap. Testscenario\'s maken accepteert alleen generatorstappen.';
+$string['testscenario_nosteps'] = 'Er zijn geen stappen om uit te voeren in het bestand.';
+$string['testscenario_notready'] = 'Composer- en Behat-bibliotheken zijn nog niet geïnstalleerd.<br><br>Voer deze opdracht uit om deze tool in te schakelen: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Scenariooverzichten worden niet ondersteund.';
+$string['testscenario_scenarionosteps'] = 'Dit scenario kent geen stappen.';
+$string['testscenario_steps'] = 'Scenariostappen testen:';
 $string['updateuserspassword'] = 'Wachtwoord van cursusgebruikers aanpassen';
 $string['updateuserspassword_help'] = 'JMeter moet inloggen als cursusgebruikers. U kunt  het gebruikerswachtwoord instellen met $CFG->tool_generator_users_password in config.php; deze instelling past het wachtwoord van de cursus gebruiker aan volgens $CFG->tool_generator_users_password. Dit kan nuttig zijn als je gebruik maakt van een cursus die niet gegenereerd is door tool_generator of $CFG->tool_generator_users_password was niet ingesteld toen u de testcursussen maakte.';

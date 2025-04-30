@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'nl', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'nl', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'Maak nieuwe groep';
 $string['defaultgroupnametext'] = '{$a->name} site-groepen{$a->increment}';
 $string['enrolcohortsynctask'] = 'Synchronisatietaak sitegroepaanmelding';
 $string['instanceexists'] = 'De site-groep is al gesynchroniseerd met de geselecteerde rol';
+$string['plugindisabled'] = 'Plug-in voor site-groepsynchronisatie is uitgeschakeld';
 $string['pluginname'] = 'Site-groepsynchronisatie';
 $string['pluginname_desc'] = 'Site-groep aanmeldings-plugin synchroniseert site-groepsleden met cursusdeelnemers';
 $string['privacy:metadata:core_group'] = 'De site-groep aanmeldingsplugin kan een nieuwe groep maken of een bestaande groep gebruiken om all leden toe te voegen aan de site-groep.';

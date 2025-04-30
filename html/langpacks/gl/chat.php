@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'gl', version '4.1'.
+ * Strings for component 'chat', language 'gl', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -113,7 +113,6 @@ $string['modulename_link'] = 'mod/chat/vista';
 $string['modulenameplural'] = 'Conversas';
 $string['neverdeletemessages'] = 'Nunca eliminar mensaxes';
 $string['nextchattime'] = 'Próxima hora de conversa:';
-$string['nextsession'] = 'Seguinte sesión planificada';
 $string['no_complete_sessions_found'] = 'Non se atoparon sesións completas.';
 $string['nochat'] = 'Non se atopou a conversa';
 $string['noguests'] = 'A conversa non está aberta a convidados';
@@ -162,7 +161,6 @@ $string['serverip'] = 'IP do servidor';
 $string['servermax'] = 'Usuarios máximos';
 $string['serverport'] = 'Porto do servidor';
 $string['sessions'] = 'Sesións de conversa';
-$string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a->date}, ({$a->fromnow} a partir de agora))';
 $string['sessionstartsin'] = 'A seguinte sesión de conversa comezará dentro de {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todo o mundo pode ver as sesións pasadas';

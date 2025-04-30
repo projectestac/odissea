@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'eu', version '4.1'.
+ * Strings for component 'tool_generator', language 'eu', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Jarduera gehigarriak';
+$string['additionalmodules_help'] = 'Aukeratu course_backend_generator_create_activity funtzioa inplementatzen duten jarduera gehiago probetarako ikastaroan gehitzeko.';
 $string['bigfile'] = 'Fitxategi handia: {$a}';
 $string['courseexplanation'] = 'Erreminta honek probarako atal, jarduera eta fitxategi anitz dituen ikastaro arruntak sortzen ditu.
 
@@ -71,6 +73,7 @@ $string['progress_createcourse'] = '{$a} ikastaroa sortzen';
 $string['progress_createforum'] = 'Froa sortzen ({$a} mezu)';
 $string['progress_createpages'] = 'Orriak sortzen ({$a})';
 $string['progress_createsmallfiles'] = 'Fitxategi txikiak sortzen ({$a})';
+$string['progress_createusers'] = 'Erabiltzaile-kontuak sortzen ({$a})';
 $string['progress_enrol'] = '({$a}) ikastaroan erabiltzaileak matrikulatzen';
 $string['progress_sitecompleted'] = 'Gunea osatu da ({$a}s)';
 $string['shortsize_0'] = 'XS';
@@ -109,5 +112,17 @@ $string['testplansize_2'] = 'M ({$a->users} erabiltzaile, {$a->loops} begizta (l
 $string['testplansize_3'] = 'L ({$a->users} erabiltzaile, {$a->loops} begizta (loop) eta {$a->rampup} areagotze-tarte)';
 $string['testplansize_4'] = 'XL ({$a->users} erabiltzaile, {$a->loops} begizta (loop) eta {$a->rampup} areagotze-tarte)';
 $string['testplansize_5'] = 'XXL ({$a->users} erabiltzaile, {$a->loops} begizta (loop) eta {$a->rampup} areagotze-tarte)';
+$string['testscenario'] = 'Sortu probetarako egoera';
+$string['testscenario_description'] = 'Probetarako egoerak sortzean mugatutako funtzionalitate-fitxategien sintaxi funtzionalitate bat erabiltzen du eskuzko probak exekutatu ahal izateko beharrezko dituen elementu guztiak sortzeko.';
+$string['testscenario_errorparsing'] = 'Errorea funtzionalitate-fitxategia aztertzean: {$a}';
+$string['testscenario_file'] = 'Funtzionalitate-fitxategia';
+$string['testscenario_filedesc'] = 'Igotako funtzionalitate-fitxategiak core_data_generator duten egoerak soilik izan ditzake. Oraindik ez da bateragarria egoera laburpenekin. Egoera guztiak batera exekutatuko dira baina atzeko planoko pausoei ezikusiarena egingo zaie.';
+$string['testscenario_invalidfile'] = 'Fitxategiaren formatua baliogabea da edo pauso baliogabeak ditu.';
+$string['testscenario_invalidstep'] = 'Pauso ezezaguna. Probetarako egoerak sortzean core_data_generator egoerak onartzen dira soilik.';
+$string['testscenario_nosteps'] = 'Fitxategian ez dago exekutatu daitekeen pausorik.';
+$string['testscenario_notready'] = 'Composer eta Behat liburutegiak oraindik ez daude instalatuta.<br><br>Exekutatu komando hau tresna hau gaitzeko: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Egoera laburpenak ez dira onartzen.';
+$string['testscenario_scenarionosteps'] = 'Egoera honek ez dauka pausorik.';
+$string['testscenario_steps'] = 'Probetarako egoeraren pausoak:';
 $string['updateuserspassword'] = 'Eguneratu ikastaroko erabiltzaileen pasahitza';
 $string['updateuserspassword_help'] = 'JMeter ikastaroko erabiltzaile gisa sartu behar da, eta erabiltzailearen pasahitza ezar dezakezu config.php fitxategiko $CFG->tool_generator_users_password parametroan; ezarpen honek ikastaroko erabiltzailearen pasahitza $CFG->tool_generator_users_password-ren arabera eguneratzen du. Erabilgarria izan daiteke tool_generator erabili gabe sortutako ikastaro bat erabiltzen ari bazara edo probarako ikastaroak sortu zenituenean $CFG->tool_generator_users_password zehaztu gabe bazegoen.';

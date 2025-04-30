@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', version '4.1'.
+ * Strings for component 'glossary', language 'it', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -92,7 +92,7 @@ $string['comments'] = 'Commenti';
 $string['commentson'] = 'Commenti su';
 $string['commentupdated'] = 'Il commento è stato aggiornato';
 $string['completiondetail:entries'] = 'Inserire voci: {$a}';
-$string['completionentries'] = 'Lo studente deve inserire il seguente numero di voci:';
+$string['completionentries'] = 'Inserire voci';
 $string['completionentriesdesc'] = 'Lo studente deve inserire il seguente numero di voci: {$a}';
 $string['completionentriesgroup'] = 'Numero di voci';
 $string['concept'] = 'Concetto';
@@ -282,6 +282,7 @@ $string['page-mod-glossary-edit'] = 'Pagina di inserimento/modifica Glosasrio';
 $string['page-mod-glossary-view'] = 'Visualizza pagina di modifica glossario';
 $string['page-mod-glossary-x'] = 'Qualsiasi pagina con modulo glossario';
 $string['pendingapproval'] = 'In attesa di approvazione';
+$string['pendingapprovalcount'] = 'In attesa di approvazione ({$a})';
 $string['pluginadministration'] = 'Gestione Glossario';
 $string['pluginname'] = 'Glossario';
 $string['popupformat'] = 'Formato visualizzazione';
@@ -335,7 +336,6 @@ $string['totalentries'] = 'Totale voci';
 $string['usedynalink'] = 'Collega automaticamente le voci di glossario';
 $string['usedynalink_help'] = 'Se l\'amministratore ha abilitato il collegamento automatico delle voci a livello di sito e questa opzione  è selezionata, il form per aggiungere nuovi termini includerà l\'opzione per il collegamento automatico della voce in tutto il corso.';
 $string['visibletabs'] = 'Schede visibili';
-$string['waitingapproval'] = 'In attesa di approvazione';
 $string['warningstudentcapost'] = '(Valido solo se il glossario non è quello primario)';
 $string['withauthor'] = 'Concetti con autore';
 $string['withoutauthor'] = 'Concetti senza autore';

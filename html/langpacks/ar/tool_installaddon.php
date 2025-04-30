@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ar', version '4.1'.
+ * Strings for component 'tool_installaddon', language 'ar', version '4.4'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -54,9 +54,9 @@ $string['pluginname'] = 'منصِّب الإضافة';
 $string['privacy:metadata'] = 'إن الإضافة، منصِّب الإضافة لا تخزن أي بيانات شخصية.';
 $string['remoterequestalreadyinstalled'] = 'هناك طلب لتنصيب الإضافة {$a->name} ({$a->component}) بإصدار {$a->version} من مجلد إضافات مودل في هذا الموقع. ومع ذلك، هذه الإضافة <strong>منصب سلفاً</strong> في الموقع.';
 $string['remoterequestconfirm'] = 'هناك طلب لتنصيب الإضافة <strong>{$a->name}</strong> ({$a->component}) بإصدار {$a->version} من مجلد إضافات مودل في هذا الموقع. إذا اخترت المتابعة، سيتم تنزيل الملف المضغوط لهذه الإضافة للتحقق. لن يتم تنصيب شيء بعد.';
-$string['remoterequestinvalid'] = 'هناك طلب لتنصيب إضافة في هذا الموقع من دليل إضافات مودل. للأسف، الطلب غير صالح وبالتالي لا يمكن تنصيب الإضافة.';
-$string['remoterequestnoninstallable'] = 'هناك طلب لتنصيب الإضافة {$a->name} ({$a->component}) ذي الإصدار {$a->version} من دليل إضافات مودل في هذا الموقع. ومع ذلك، فشل الاختبار الأولي لتنصيب الإضافة (رمز السبب: {$a->reason}).';
-$string['remoterequestpermcheck'] = 'هناك طلب لتنصيب الإضافة {$a->name} ({$a->component}) ذي الإصدار {$a->version} من دليل إضافات مودل في هذا الموقع. ومع ذلك، فإن الموضع <strong>{$a->typepath}</strong> هو <strong>غير قابل للكتابة</strong>. تحتاج إلى منح حق الكتابة لمستخدم مخدم الويب إلى ذلك الموضع، ثم الضغط على زر "استمر" لإعادة التحقق.';
+$string['remoterequestinvalid'] = 'هناك طلب لتنصيب ملحق في هذا الموقع من مجلد ملاحق مودل. للأسف، الطلب غير صالح وبالتالي لا يمكن تنصيب الإضافة.';
+$string['remoterequestnoninstallable'] = 'هناك طلب لتنصيب الملحق {$a->name} ({$a->component}) ذي الإصدار {$a->version} من مجلد ملاحق مودل في هذا الموقع. ومع ذلك، فشل الاختبار الأولي لتنصيب الملحق (رمز السبب: {$a->reason}).';
+$string['remoterequestpermcheck'] = 'هناك طلب لتنصيب الملحق {$a->name} ({$a->component}) ذي الإصدار {$a->version} من مجلد ملاحق مودل في هذا الموقع. ومع ذلك، فإن الموضع <strong>{$a->typepath}</strong> هو <strong>غير قابل للكتابة</strong>. تحتاج إلى منح حق الكتابة لمستخدم مخدم الويب إلى ذلك الموضع، ثم الضغط على زر "استمر" لإعادة التحقق.';
 $string['remoterequestpluginfoexception'] = 'عفواً... وقع خطأ عند محاولة الحصول على معلومات عن الإضافة {$a->name} ({$a->component}) الإصدار {$a->version}. لا يمكن تنصيب الإضافة. قم بتشغيل وضع تصحيح الأخطاء لمعرفة تفاصيل الخطأ.';
 $string['typedetectionfailed'] = 'غير قادر على اكتشاف نوع البرنامج المساعد. يرجى اختيار نوع البرنامج المساعد يدوياً.';
 $string['typedetectionmismatch'] = 'نوع الإضافة المحدد لا يتطابق مع النوع الذي أعلنته الإضافة: {$a}';

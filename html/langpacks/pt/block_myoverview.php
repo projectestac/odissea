@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'pt', version '4.1'.
+ * Strings for component 'block_myoverview', language 'pt', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Lista pendente de agrupamento';
 $string['aria:hiddencourses'] = 'Mostrar disciplinas removidas da visualização';
 $string['aria:hidecourse'] = 'Remover {$a} da visualização';
 $string['aria:inprogress'] = 'Mostrar disciplinas a decorrer';
-$string['aria:lastaccessed'] = 'Ordenar disciplinas pela data do último acesso';
 $string['aria:list'] = 'Alternar para a vista de Lista';
 $string['aria:past'] = 'Mostrar disciplinas já terminadas';
 $string['aria:removefromfavourites'] = 'Remover estrela de';
-$string['aria:shortname'] = 'Ordenar disciplina pelo nome curto da disciplina';
 $string['aria:showcourse'] = 'Repor {$a} na visualização';
 $string['aria:sortingdropdown'] = 'Lista pendente de ordenação';
 $string['aria:summary'] = 'Alternar para a vista de Descrição';
-$string['aria:title'] = 'Ordenar disciplinas por nome';
 $string['availablegroupings'] = 'Filtros disponíveis';
 $string['availablegroupings_desc'] = 'Filtros de disciplinas disponíveis para seleção pelos utilizadores. Se nenhum for selecionado, serão mostradas todas as disciplinas.';
 $string['card'] = 'Cartões';
 $string['cards'] = 'Cartões';
-$string['clearsearch'] = 'Limpar pesquisa';
 $string['completepercent'] = '{$a}% concluída';
 $string['courseprogress'] = 'Progresso da disciplina';
+$string['createcourse'] = 'Criar disciplina';
 $string['customfield'] = 'Campo personalizado';
 $string['customfiltergrouping'] = 'Campo a usar';
 $string['customfiltergrouping_nofields'] = 'Esta opção requer que um campo personalizado da disciplina seja configurado e visível para todos.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Ordenar por nome curto';
 $string['sortbytitle'] = 'Ordenar por nome da disciplina';
 $string['summary'] = 'Descrição';
 $string['title'] = 'Nome da disciplina';
+$string['viewquickstart'] = 'Ver guia rápido';
+$string['zero_default_intro'] = 'Depois de se inscrever numa disciplina, ela será mostrada aqui.';
+$string['zero_default_title'] = 'Não está inscrito em qualquer disciplina.';
+$string['zero_nocourses_intro'] = 'Precisa de ajuda para começar? Consulte a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">documentação do Moodle</a> ou dê os seus primeiros passos com o nosso guia rápido.';
+$string['zero_nocourses_title'] = 'Crie a sua primeira disciplina';
+$string['zero_request_intro'] = 'Precisa de ajuda para começar? Consulte a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">documentação do Moodle</a> ou dê os seus primeiros passos com o nosso <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">guia rápido</a>.';
+$string['zero_request_title'] = 'Peça a sua primeira disciplina';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'el', version '4.1'.
+ * Strings for component 'qtype_ordering', language 'el', version '4.4'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -30,7 +30,6 @@ $string['addmultipleanswers'] = 'Προσθήκη {$a} ακόμη στοιχεί
 $string['addsingleanswer'] = 'Προσθήκη ενός ακόμη στοιχείου';
 $string['allornothing'] = 'Όλα ή τίποτα';
 $string['answer'] = 'Κείμενο απάντησης';
-$string['answerheader'] = 'Αριθμός συρόμενου αντικειμένου';
 $string['correctorder'] = 'Η σωστή σειρά των αντικειμένων είναι η ακόλουθη:';
 $string['defaultanswerformat'] = 'Προεπιλεγμένη μορφή απάντησης';
 $string['defaultquestionname'] = 'Σύρετε τα ακόλουθα αντικείμενα στη σωστή σειρά.';

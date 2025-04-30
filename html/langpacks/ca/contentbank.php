@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ca', version '4.1'.
+ * Strings for component 'contentbank', language 'ca', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a';
 $string['choosecontext'] = 'Trieu un curs o una categoria...';
-$string['close'] = 'Tanca';
 $string['contentbank'] = 'Banc de contingut';
 $string['contentbankpreferences'] = 'Preferències del banc de continguts';
 $string['contentdeleted'] = 'S\'ha suprimit el contingut.';

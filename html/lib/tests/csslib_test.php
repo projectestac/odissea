@@ -29,12 +29,11 @@ require_once($CFG->libdir . '/csslib.php');
  * @copyright 2012 Sam Hemelryk
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class csslib_test extends \advanced_testcase {
-
+final class csslib_test extends \advanced_testcase {
     /**
      * Test that css_is_colour function throws an exception.
      */
-    public function test_css_is_colour() {
+    public function test_css_is_colour(): void {
         $this->expectException('coding_exception');
         $this->expectExceptionMessage('css_is_colour() can not be used anymore.');
         css_is_colour();
@@ -43,7 +42,7 @@ class csslib_test extends \advanced_testcase {
     /**
      * Test that css_is_width function throws an exception.
      */
-    public function test_css_is_width() {
+    public function test_css_is_width(): void {
         $this->expectException('coding_exception');
         $this->expectExceptionMessage('css_is_width() can not be used anymore.');
         css_is_width();

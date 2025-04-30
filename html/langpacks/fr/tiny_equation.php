@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'fr', version '4.1'.
+ * Strings for component 'tiny_equation', language 'fr', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'Commandes TeX affichées dans l’onglet symbol
 $string['librarygroup4'] = 'Avancé';
 $string['librarygroup4_desc'] = 'Commandes TeX affichées dans l’onglet avancé.';
 $string['modaltitle'] = 'Éditeur d’équation';
-$string['pluginname'] = 'Éditeur d’équation Tiny';
+$string['pluginname'] = 'Éditeur d’équation';
 $string['preview'] = 'Prévisualiser équation';
 $string['privacy:metadata'] = 'L’éditeur d’équation de TinyMCE n’enregistre aucune donnée personnelle.';
 $string['saveequation'] = 'Enregistrer équation';

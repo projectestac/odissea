@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'fr', version '4.1'.
+ * Strings for component 'auth_mnet', language 'fr', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'Authentification MNet';
 $string['privacy:metadata:external:mahara'] = 'Ce plugin peut envoyer des données à une application Mahara externe liée.';
 $string['privacy:metadata:external:moodle'] = 'Ce plugin peut envoyer des données à une application Moodle externe liée.';
 $string['privacy:metadata:mnet_external:address'] = 'L’adresse de l’utilisateur.';
-$string['privacy:metadata:mnet_external:aim'] = 'L’identifiant AIM de l’utilisateur';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Un nom de remplacement pour l’utilisateur.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Une préférence indiquant si l’utilisateur doit être abonné automatiquement aux forums dans lesquels il poste.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Une préférence indiquant le type de calendrier à utiliser pour l’utilisateur.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Une préférence indiquan
 $string['privacy:metadata:mnet_external:firstaccess'] = 'La date et l’heure à laquelle cet utilisateur a accédé au site pour la première fois.';
 $string['privacy:metadata:mnet_external:firstname'] = 'Le prénom de l’utilisateur.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Les informations phonétiques sur le prénom de l’utilisateur.';
-$string['privacy:metadata:mnet_external:icq'] = 'Le numéro ICQ de l’utilisateur.';
 $string['privacy:metadata:mnet_external:id'] = 'L’identifiant de l’utilisateur';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Un numéro d’identification donné par l’institution';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Le texte alternatif de l’avatar de l’utilisateur.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Les informations p
 $string['privacy:metadata:mnet_external:maildigest'] = 'Un réglage pour les récapitulatifs de messages de cet utilisateur.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Une préférence de l’utilisateur sur l’affichage de son adresse de courriel à d’autres utilisateurs.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Le deuxième prénom de l’utilisateur';
-$string['privacy:metadata:mnet_external:msn'] = 'L’identifiant MSN de l’utilisateur';
 $string['privacy:metadata:mnet_external:phone1'] = 'Un numéro de téléphone de l’utilisateur.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Un numéro de téléphone supplémentaire de l’utilisateur.';
 $string['privacy:metadata:mnet_external:picture'] = 'Les informations de l’image associée à cet utilisateur.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Une valeur indiquant si l’utilisateur a donné son accord à la politique du site.';
-$string['privacy:metadata:mnet_external:skype'] = 'L’identifiant Skype de l’utilisateur';
 $string['privacy:metadata:mnet_external:suspended'] = 'Une valeur indiquant si l’utilisateur a été suspendu sur ce système.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Le fuseau horaire de l’utilisateur';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Une préférence pour les forums et le suivi des messages de forum.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Le masque de bits de fiabilité';
-$string['privacy:metadata:mnet_external:url'] = 'Une URL en lien avec cet utilisateur.';
 $string['privacy:metadata:mnet_external:username'] = 'Le nom d’utilisateur de cet utilisateur.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'L’identifiant Yahoo de l’utilisateur';
 $string['privacy:metadata:mnet_log'] = 'Les informations d’actions distantes effectuées par un utilisateur local et journalisées sur un système distant.';
 $string['privacy:metadata:mnet_log:action'] = 'Action effectuée par l’utilisateur.';
 $string['privacy:metadata:mnet_log:cmid'] = 'Identifiant du module de cours.';

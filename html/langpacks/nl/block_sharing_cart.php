@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'nl', version '4.1'.
+ * Strings for component 'block_sharing_cart', language 'nl', version '4.4'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_string'] = 'Activiteit:';
+$string['async_restore_in_progress'] = 'Item uit Kopieermachine "{$a->modtext}" terugzetten naar sectie nummer {$a->section}';
 $string['backup'] = 'Kopieer naar Kopieermachine';
 $string['backup_heavy_load_warning_message'] = 'Indien secties meerdere activiteiten bevatten, zal de verwerkingstijd langer zijn.';
+$string['backupnotfound'] = 'Backupbestand niet gevonden';
 $string['bulkdelete'] = 'Verwijderen in bulk';
 $string['clicktomove'] = 'Klik om hiernaar te verplaatsen';
 $string['clipboard'] = 'Kopieren van dit gedeelde onderdeel';
@@ -44,6 +46,9 @@ $string['conflict_description_note'] = '*Sectie samenvatting instellingen (kleur
 $string['conflict_no_overwrite'] = 'Bewaar de huidige sectie naam en instellingen <strong>"{$a}"</strong>';
 $string['conflict_overwrite_title'] = 'Overschrijf sectie naam en instellingen naar <strong>"{$a}"</strong>';
 $string['conflict_submit'] = 'Ga verder';
+$string['copy_activity'] = 'Activiteit kopiëren';
+$string['copy_activity_reason'] = 'Deze weergave is beschikbaar omdat je toegang hebt tot het backuppen van activiteiten, maar niet tot het beheren/verplaatsen ervan.';
+$string['copy_activity_title'] = 'Geselecteerde activiteit kopiëren';
 $string['copy_section'] = 'Kopieer sectie';
 $string['copy_section_title'] = 'Kopieer geselecteerde sectie';
 $string['copyhere'] = 'Kopieer hier';
@@ -60,6 +65,7 @@ $string['missing_capability'] = 'Benodigd recht ontbreekt: {$a}';
 $string['modal_bulkdelete_confirm'] = 'Verwijder geselecteerde';
 $string['modal_bulkdelete_title'] = 'Weet je zeker dat je wilt verwijderen';
 $string['modal_checkbox'] = 'Wil je gebruikersdata kopiëren? (Bijvoorbeeld: Woordenlijst, Wiki, Database)';
+$string['modal_checkbox_anonymize'] = 'Wil je de gebruikersdata anonimiseren?';
 $string['modal_confirm_backup'] = 'Bevestig';
 $string['modal_confirm_delete'] = 'Verwijder';
 $string['movedir'] = 'Verplaats naar folder';
@@ -88,8 +94,16 @@ $string['settings:add_to_sharing_cart'] = 'Voeg toe aan kopieermachine';
 $string['settings:add_to_sharing_cart_desc'] = 'Kies tussen drag en drop of klikken als methode om modules en secties aan de kopieermachine toe te voegen. -
 \'Klikken om toe te voegen\' is de standaard methode in de kopieermachine, waarbij je op het \'mand\' icoon moet klikken om iets toe te voegen.
 De \'drag en drop\' methode staat je toe om modules / activiteiten en secties te slepen naar het \'mand\' icoon in de footer van de pagina. Dit is alleen ondersteunt vanaf Moodle 4.0+';
+$string['settings:backup_mode'] = 'Backupmodus';
+$string['settings:backup_mode_desc'] = 'Kies uit een onmiddelijk of asynchroon backupproces';
+$string['settings:backup_restore_mode_async'] = 'Asynchroon';
+$string['settings:backup_restore_mode_immediate'] = 'Onmiddelijk';
 $string['settings:click_to_add'] = 'Klik om toe te voegen';
 $string['settings:drag_and_drop'] = 'Sleep en zet neer';
+$string['settings:restore_mode'] = 'Terugzetmodus';
+$string['settings:restore_mode_desc'] = 'Kies tussen een onmiddelijk of asynchroon proces van terugzetten';
+$string['settings:show_copy_activity_in_block'] = '"Activiteit kopiëren" tonen in blok';
+$string['settings:show_copy_activity_in_block_desc'] = '"Activiteit kopiëren" tonen in het blok Kopieermachine, onder alle modules/activiteiten - Dit is alleen beschikbaar als de gebruiker permissie heeft activiteiten te backuppen maar geen permissie activiteiten te beheren/verplaatsen.';
 $string['settings:show_copy_section_in_block'] = 'Toon de \'Kopieer sectie\' optie in het block';
 $string['settings:show_copy_section_in_block_desc'] = 'Toon de \'Kopieer sectie\' optie in het kopieermachine block, onder alle modules / activiteiten';
 $string['settings:userdata_copyable_modtypes'] = 'Module types met kopieerbare gebruikersdata';

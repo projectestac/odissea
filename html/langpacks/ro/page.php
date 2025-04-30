@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ro', version '4.1'.
+ * Strings for component 'page', language 'ro', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'Înălțime pop-up (în pixeli)';
 $string['popupheightexplain'] = 'Specifică înălțimea implicită a ferestrelor pop-up.';
 $string['popupwidth'] = 'Lățime pop-up (în pixeli)';
 $string['popupwidthexplain'] = 'Specifică lățimea implicită a ferestrelor pop-up.';
-$string['printheading'] = 'Afișați denumirea paginii';
-$string['printheadingexplain'] = 'Afișați denumirea paginii deasupra conținutului?';
 $string['printintro'] = 'Afișează descrierea paginii';
 $string['printintroexplain'] = 'Afișați descrierea paginii deasupra conținutului?';
 $string['printlastmodified'] = 'Afișează data ultimei modificări';

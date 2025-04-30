@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'de', version '4.1'.
+ * Strings for component 'mnet', language 'de', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Zur Zugriffssteuerung hinzufügen';
 $string['allhosts'] = 'Alle Hosts';
 $string['allhosts_no_options'] = 'Beim Betrachten mehrerer Hosts sind keine Optionen verfügbar';
 $string['allow'] = 'Erlauben';
+$string['allowaccess'] = 'Zugriff erlauben';
 $string['applicationtype'] = 'Servertyp';
 $string['authfail_nosessionexists'] = 'Fehler bei der Autorisierung: Die MNet-Session gibt es nicht!';
 $string['authfail_sessiontimedout'] = 'Fehler bei der Autorisierung: Die MNet-Session ist abgelaufen!';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Das Zeitfenster zum Löschen des PublicKey beträg
 $string['deleteuserrecord'] = 'SSO ACL: Datensatz für Nutzer \'{$a->user}\' von {$a->host} löschen.';
 $string['deletewrongkeyvalue'] = 'Ein Fehler ist aufgetreten. Falls Sie nicht selber versucht haben, den SSL-Schlüssel Ihres Servers zu löschen, könnten Sie Opfer eines böswilligen Angriffs sein. Es wurde keine Veränderung vorgenommen.';
 $string['deny'] = 'Verbieten';
+$string['denyaccess'] = 'Zugriff sperren';
 $string['description'] = 'Beschreibung';
 $string['duplicate_usernames'] = 'Beim Anlegen eines Index für die Spalten "mnethostid" und "username" in Ihrer Nutzertabelle ist ein Fehler aufgetreten. <br />
 Dies kann passieren, wenn ein  <a href="{$a}" target="_blank">doppelter Anmeldename in der Nutzertabelle</a> vorhanden ist.<br />

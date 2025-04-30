@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'nl', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'nl', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -57,6 +57,7 @@ $string['gumtype_title'] = 'Geen beperkingen bepaald';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Jouw browser zou deze plugin kunnen weigeren tenzij die gebruikt wordt over HTTPS of van de localhost.';
 $string['insecurealert_title'] = 'Onveilige verbinding';
+$string['kbrate'] = '{$a} kb/s';
 $string['maxfilesizehit'] = 'Je hebt de maximum uploadgrootte bereikt.';
 $string['maxfilesizehit_title'] = 'Opname gestopt';
 $string['norecordingfound'] = 'Er is wat mis gelopen. Er is niets opgenomen.';
@@ -65,7 +66,7 @@ $string['nowebrtc'] = 'Jouw browser heeft beperkte of geen ondersteuning voor We
 $string['nowebrtc_title'] = 'WebRTC niet ondersteund';
 $string['onlyaudio'] = 'Enkel audio';
 $string['onlyvideo'] = 'Enkel video';
-$string['pluginname'] = 'Tiny RecordRTC';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'De plugin RecordRTC slaat geen persoonsgegevens op.';
 $string['recordagain'] = 'Opnieuw opnemen';
 $string['recordagain_desc'] = 'Je hebt al inhoud opgenomen. Wanneer je opnieuw opneemt, wordt deze inhoud verwijderd. Weet je zeker dat je de opname wilt terugzetten?';

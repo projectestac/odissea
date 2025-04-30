@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'gl', version '4.1'.
+ * Strings for component 'hub', language 'gl', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Nome';
 $string['coursepublished'] = 'Este curso publicouse correctamente en «{$a}».';
 $string['courseshortname'] = 'Nome abreviado';
 $string['courseshortname_help'] = 'Escriba un nome abreviado para o seu curso. Non é preciso que se sexa único.';
+$string['coursesnodates'] = 'Número de cursos sen data de remate definida ({$a})';
 $string['coursesnumber'] = 'Número de cursos ({$a})';
+$string['dbtype'] = 'Tipo de base de datos ({$a})';
 $string['demourl'] = 'URL de demo';
 $string['demourl_help'] = 'Introduza o URL de demo do seu curso. De modo predeterminado é o URL do seu curso. O URL de demo preséntase como unha ligazón no resultado dunha busca.';
 $string['downloadable'] = 'Descargábel';
@@ -96,6 +98,7 @@ $string['postaladdress'] = 'Enderezo postal';
 $string['postaladdress_help'] = 'Enderezo postal deste sitio, ou da entidade representada por este sitio.';
 $string['postsnumber'] = 'Número de mensaxes ({$a})';
 $string['previousregistrationdeleted'] = 'O rexistro previo eliminouse de {$a}. Pode reiniciar o proceso de rexistro. Grazas.';
+$string['primaryauthtype'] = 'Tipo de autenticación primaria ({$a})';
 $string['questionsnumber'] = 'Número de preguntas ({$a})';
 $string['registeredactiveuserdevices'] = 'Número de usuarios activos con dispositivos móbiles rexistrados que están recibindo notificacións ({$a})';
 $string['registeredcourses'] = 'Cursos rexistrados';
@@ -106,13 +109,13 @@ $string['registerwithmoodleorgcomplete'] = 'Complete o rexistro do seu sitio';
 $string['registerwithmoodleorginfo'] = 'Encantaríanos seguir en contacto e fornecerlle cousas importantes para o seu sitio Moodle ao rexistrarse:
 
 * Pode subscribirse para recibir notificacións de novas versións de Moodle, alertas de seguridade e outras novas importantes.
-* Poderá acceder e activar notificacións «push mobile» dende o seu sitio Moodle mediante a nosa aplicación gratuíta Moodle.
+* Poderá acceder e activar notificacións automáticas móbiles dende o seu sitio Moodle mediante a nosa aplicación gratuíta Moodle.
 * Colaborará coas nosas estatísticas de Moodle da comunidade mundial, que nos axudan a mellorar Moodle e os nosos sitios da comunidade.
 * Se o desexa, o seu sitio pode ser incluído na lista de sitios rexistrados de Moodle no seu país.';
 $string['registerwithmoodleorginfoapp'] = 'Sobre a apli do Moodle';
 $string['registerwithmoodleorginfosites'] = 'Outros sitios no meu país';
 $string['registerwithmoodleorginfostats'] = 'Estatísticas de Moodle';
-$string['registerwithmoodleorgremove'] = 'Está a piques de dar de baixa o seu sitio. Xa non recibirá notificacións e alertas de seguridade e os usuarios non poderán recibir notificacións «push» do seu sitio na súa aplicación Moodle. Non obstante, poderá volver rexistrarse en calquera momento. Confirma que quere continuar?';
+$string['registerwithmoodleorgremove'] = 'Está a piques de dar de baixa o seu sitio. Xa non recibirá notificacións e alertas de seguridade e os usuarios non poderán recibir notificacións automáticas do seu sitio na súa aplicación Moodle. Non obstante, poderá volver rexistrarse en calquera momento. Confirma que quere continuar?';
 $string['registerwithmoodleorgupdate'] = 'Actualice o rexistro do seu sitio';
 $string['registrationconfirmed'] = 'Confirmouse o rexistro do sitio';
 $string['registrationconfirmedon'] = 'Grazas por rexistrar o seu sitio. A información rexistrada manterase actualizada coa tarefa programada «Rexistro do sitio».';
@@ -124,7 +127,7 @@ $string['roleassignmentsnumber'] = 'Número de tarefas asociadas ao rol ({$a})';
 $string['search'] = 'Buscar';
 $string['sendfollowinginfo'] = 'Máis información';
 $string['sendfollowinginfo_help'] = 'A seguinte información enviarase a Moodle cada vez que se actualice o rexistro do seu sitio (de xeito predeterminado semanalmente, cando se executa a tarefa programada «Rexistro do sitio»). A información só contribúe ás estatísticas globais e non se fará pública en ningunha listaxe de sitios. Ademais, a súa versión de edición de Moodle está rexistrada pola comprobación semanal automatizada de ligazóns ao sitio.';
-$string['sendingsize'] = 'Agarde, que o ficheiro do curso está a enviarse ({$a->total}Mb)...';
+$string['sendingsize'] = 'Agarde, que o ficheiro do curso está a enviarse ({$a->total}Mb)…';
 $string['sent'] = '...rematada';
 $string['siteadmin'] = 'Administrador';
 $string['siteadmin_help'] = 'Nome completo do administrador do sitio.';
@@ -159,6 +162,7 @@ $string['siteregistrationupdated'] = 'Actualizouse o rexistro do sitio';
 $string['siterelease'] = 'Versión publicada de Moodle';
 $string['siterelease_help'] = 'Número da versión publicada de Moodle neste sitio.';
 $string['sitereleasenum'] = 'Versión publicada de Moodle ({$a})';
+$string['sitetheme'] = 'Tema do sitio ({$a})';
 $string['siteurl'] = 'URL do sitio';
 $string['siteurl_help'] = 'O URL é o enderezo deste sitio. Se os axustes de privacidade lle permiten ver enderezos do sitio, entón este será o URL do sitio que se utilizará.';
 $string['siteversion'] = 'Versión de Moodle';

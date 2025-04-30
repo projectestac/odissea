@@ -27,7 +27,7 @@ use core_adminpresets\manager;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @coversDefaultClass \tool_admin_presets\local\action\import
  */
-class import_test extends \advanced_testcase {
+final class import_test extends \advanced_testcase {
 
     /**
      * Test the behaviour of execute() method.
@@ -190,7 +190,7 @@ class import_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function import_execute_provider(): array {
+    public static function import_execute_provider(): array {
         $fixturesfolder = __DIR__ . '/../../../../../presets/tests/fixtures/';
 
         return [

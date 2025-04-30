@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/rating/lib.php');
  * @copyright  2013 Frédéric Massart
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class lib_test extends \advanced_testcase {
+final class lib_test extends \advanced_testcase {
 
     public function setUp(): void {
         // We must clear the subscription caches. This has to be done both before each test, and after in case of other
@@ -46,7 +46,7 @@ class lib_test extends \advanced_testcase {
         \mod_forum\subscriptions::reset_forum_cache();
     }
 
-    public function test_forum_trigger_content_uploaded_event() {
+    public function test_forum_trigger_content_uploaded_event(): void {
         $this->resetAfterTest();
 
         $user = $this->getDataGenerator()->create_user();
@@ -92,11 +92,10 @@ class lib_test extends \advanced_testcase {
         $expected->userid = $user->id;
         $expected->content = $fakepost->message;
         $expected->pathnamehashes = array($fi->get_pathnamehash());
-        $this->assertEventLegacyData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
-    public function test_forum_get_courses_user_posted_in() {
+    public function test_forum_get_courses_user_posted_in(): void {
         $this->resetAfterTest();
 
         $user1 = $this->getDataGenerator()->create_user();
@@ -193,7 +192,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the logic in the forum_tp_can_track_forums() function.
      */
-    public function test_forum_tp_can_track_forums() {
+    public function test_forum_tp_can_track_forums(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -269,7 +268,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the logic in the test_forum_tp_is_tracked() function.
      */
-    public function test_forum_tp_is_tracked() {
+    public function test_forum_tp_is_tracked(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -392,7 +391,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the logic in the forum_tp_get_course_unread_posts() function.
      */
-    public function test_forum_tp_get_course_unread_posts() {
+    public function test_forum_tp_get_course_unread_posts(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -517,7 +516,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_tp_get_course_unread_posts
      */
-    public function test_forum_tp_get_course_unread_posts_with_private_replies() {
+    public function test_forum_tp_get_course_unread_posts_with_private_replies(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -644,7 +643,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_tp_count_forum_unread_posts
      */
-    public function test_forum_tp_count_forum_unread_posts_with_private_replies() {
+    public function test_forum_tp_count_forum_unread_posts_with_private_replies(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -771,7 +770,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_tp_count_forum_unread_posts
      */
-    public function test_forum_tp_count_forum_unread_posts_with_private_replies_and_separate_groups() {
+    public function test_forum_tp_count_forum_unread_posts_with_private_replies_and_separate_groups(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -879,7 +878,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the logic in the test_forum_tp_get_untracked_forums() function.
      */
-    public function test_forum_tp_get_untracked_forums() {
+    public function test_forum_tp_get_untracked_forums(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -967,7 +966,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test subscription using automatic subscription on create.
      */
-    public function test_forum_auto_subscribe_on_create() {
+    public function test_forum_auto_subscribe_on_create(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -995,7 +994,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test subscription using forced subscription on create.
      */
-    public function test_forum_forced_subscribe_on_create() {
+    public function test_forum_forced_subscribe_on_create(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -1023,7 +1022,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test subscription using optional subscription on create.
      */
-    public function test_forum_optional_subscribe_on_create() {
+    public function test_forum_optional_subscribe_on_create(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -1052,7 +1051,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test subscription using disallow subscription on create.
      */
-    public function test_forum_disallow_subscribe_on_create() {
+    public function test_forum_disallow_subscribe_on_create(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -1081,7 +1080,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test that context fetching returns the appropriate context.
      */
-    public function test_forum_get_context() {
+    public function test_forum_get_context(): void {
         global $DB, $PAGE;
 
         $this->resetAfterTest();
@@ -1165,7 +1164,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test getting the neighbour threads of a discussion.
      */
-    public function test_forum_get_neighbours() {
+    public function test_forum_get_neighbours(): void {
         global $CFG, $DB;
         $this->resetAfterTest();
 
@@ -1414,7 +1413,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test getting the neighbour threads of a blog-like forum.
      */
-    public function test_forum_get_neighbours_blog() {
+    public function test_forum_get_neighbours_blog(): void {
         global $CFG, $DB;
         $this->resetAfterTest();
 
@@ -1604,7 +1603,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test getting the neighbour threads of a discussion.
      */
-    public function test_forum_get_neighbours_with_groups() {
+    public function test_forum_get_neighbours_with_groups(): void {
         $this->resetAfterTest();
 
         $timenow = time();
@@ -1801,7 +1800,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test getting the neighbour threads of a blog-like forum with groups involved.
      */
-    public function test_forum_get_neighbours_with_groups_blog() {
+    public function test_forum_get_neighbours_with_groups_blog(): void {
         $this->resetAfterTest();
 
         $timenow = time();
@@ -1998,7 +1997,7 @@ class lib_test extends \advanced_testcase {
         forum_get_discussion_neighbours($cm2, $disc11, $forum2);
     }
 
-    public function test_count_discussion_replies_basic() {
+    public function test_count_discussion_replies_basic(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
 
         // Count the discussion replies in the forum.
@@ -2006,21 +2005,21 @@ class lib_test extends \advanced_testcase {
         $this->assertCount(10, $result);
     }
 
-    public function test_count_discussion_replies_limited() {
+    public function test_count_discussion_replies_limited(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Adding limits shouldn't make a difference.
         $result = forum_count_discussion_replies($forum->id, "", 20);
         $this->assertCount(10, $result);
     }
 
-    public function test_count_discussion_replies_paginated() {
+    public function test_count_discussion_replies_paginated(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Adding paging shouldn't make any difference.
         $result = forum_count_discussion_replies($forum->id, "", -1, 0, 100);
         $this->assertCount(10, $result);
     }
 
-    public function test_count_discussion_replies_paginated_sorted() {
+    public function test_count_discussion_replies_paginated_sorted(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Specifying the forumsort should also give a good result. This follows a different path.
         $result = forum_count_discussion_replies($forum->id, "d.id asc", -1, 0, 100);
@@ -2032,7 +2031,7 @@ class lib_test extends \advanced_testcase {
         }
     }
 
-    public function test_count_discussion_replies_limited_sorted() {
+    public function test_count_discussion_replies_limited_sorted(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Adding limits, and a forumsort shouldn't make a difference.
         $result = forum_count_discussion_replies($forum->id, "d.id asc", 20);
@@ -2044,7 +2043,7 @@ class lib_test extends \advanced_testcase {
         }
     }
 
-    public function test_count_discussion_replies_paginated_sorted_small() {
+    public function test_count_discussion_replies_paginated_sorted_small(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Grabbing a smaller subset and they should be ordered as expected.
         $result = forum_count_discussion_replies($forum->id, "d.id asc", -1, 0, 5);
@@ -2056,7 +2055,7 @@ class lib_test extends \advanced_testcase {
         }
     }
 
-    public function test_count_discussion_replies_paginated_sorted_small_reverse() {
+    public function test_count_discussion_replies_paginated_sorted_small_reverse(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Grabbing a smaller subset and they should be ordered as expected.
         $result = forum_count_discussion_replies($forum->id, "d.id desc", -1, 0, 5);
@@ -2068,7 +2067,7 @@ class lib_test extends \advanced_testcase {
         }
     }
 
-    public function test_count_discussion_replies_limited_sorted_small_reverse() {
+    public function test_count_discussion_replies_limited_sorted_small_reverse(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         // Adding limits, and a forumsort shouldn't make a difference.
         $result = forum_count_discussion_replies($forum->id, "d.id desc", 5);
@@ -2083,7 +2082,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the reply count when used with private replies.
      */
-    public function test_forum_count_discussion_replies_private() {
+    public function test_forum_count_discussion_replies_private(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -2154,7 +2153,7 @@ class lib_test extends \advanced_testcase {
         $this->assertEquals($replycount, $counts[$discussion->id]->replies);
     }
 
-    public function test_discussion_pinned_sort() {
+    public function test_discussion_pinned_sort(): void {
         list($forum, $discussionids) = $this->create_multiple_discussions_with_replies(10, 5);
         $cm = get_coursemodule_from_instance('forum', $forum->id);
         $discussions = forum_get_discussions($cm);
@@ -2162,7 +2161,7 @@ class lib_test extends \advanced_testcase {
         $first = reset($discussions);
         $this->assertEquals(1, $first->pinned, "First discussion should be pinned discussion");
     }
-    public function test_forum_view() {
+    public function test_forum_view(): void {
         global $CFG;
 
         $CFG->enablecompletion = 1;
@@ -2204,7 +2203,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_discussion_view.
      */
-    public function test_forum_discussion_view() {
+    public function test_forum_discussion_view(): void {
         global $CFG, $USER;
 
         $this->resetAfterTest();
@@ -2230,9 +2229,6 @@ class lib_test extends \advanced_testcase {
         // Checking that the event contains the expected values.
         $this->assertInstanceOf('\mod_forum\event\discussion_viewed', $event);
         $this->assertEquals($context, $event->get_context());
-        $expected = array($course->id, 'forum', 'view discussion', "discuss.php?d={$discussion->id}",
-            $discussion->id, $forum->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
 
         $this->assertNotEmpty($event->get_name());
@@ -2347,7 +2343,7 @@ class lib_test extends \advanced_testcase {
      * @throws coding_exception
      * @throws rating_exception
      */
-    public function test_mod_forum_rating_can_see_item_ratings() {
+    public function test_mod_forum_rating_can_see_item_ratings(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -2447,7 +2443,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_get_discussions
      */
-    public function test_forum_get_discussions_with_groups() {
+    public function test_forum_get_discussions_with_groups(): void {
         global $DB;
 
         $this->resetAfterTest(true);
@@ -2566,7 +2562,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_user_can_post_discussion
      */
-    public function test_forum_user_can_post_discussion() {
+    public function test_forum_user_can_post_discussion(): void {
         global $DB;
 
         $this->resetAfterTest(true);
@@ -2667,7 +2663,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_user_can_post_discussion_after_cutoff
      */
-    public function test_forum_user_can_post_discussion_after_cutoff() {
+    public function test_forum_user_can_post_discussion_after_cutoff(): void {
         $this->resetAfterTest(true);
 
         // Create course to add the module.
@@ -2701,7 +2697,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_user_has_posted_discussion with no groups.
      */
-    public function test_forum_user_has_posted_discussion_no_groups() {
+    public function test_forum_user_has_posted_discussion_no_groups(): void {
         global $CFG;
 
         $this->resetAfterTest(true);
@@ -2733,7 +2729,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_user_has_posted_discussion with multiple forums
      */
-    public function test_forum_user_has_posted_discussion_multiple_forums() {
+    public function test_forum_user_has_posted_discussion_multiple_forums(): void {
         global $CFG;
 
         $this->resetAfterTest(true);
@@ -2765,7 +2761,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_user_has_posted_discussion with multiple groups.
      */
-    public function test_forum_user_has_posted_discussion_multiple_groups() {
+    public function test_forum_user_has_posted_discussion_multiple_groups(): void {
         global $CFG;
 
         $this->resetAfterTest(true);
@@ -2818,9 +2814,43 @@ class lib_test extends \advanced_testcase {
     }
 
     /**
+     * Test the logic for forum_get_user_posted_mailnow where the user can select if qanda forum post should be sent without delay
+     *
+     * @covers ::forum_get_user_posted_mailnow
+     */
+    public function test_forum_get_user_posted_mailnow(): void {
+        $this->resetAfterTest();
+
+        // Create a forum.
+        $course = $this->getDataGenerator()->create_course();
+        $forum = $this->getDataGenerator()->create_module('forum', ['course' => $course->id]);
+        $author = $this->getDataGenerator()->create_user();
+        $authorid = $author->id;
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_forum');
+
+        // Create a discussion.
+        $record = new \stdClass();
+        $record->course = $forum->course;
+        $record->forum = $forum->id;
+        $record->userid = $authorid;
+        $discussion = $generator->create_discussion($record);
+        $did = $discussion->id;
+
+        // Return False if no post exists with 'mailnow' selected.
+        $generator->create_post(['userid' => $authorid, 'discussion' => $did, 'forum' => $forum->id, 'mailnow' => 0]);
+        $result = forum_get_user_posted_mailnow($did, $authorid);
+        $this->assertFalse($result);
+
+        // Return True only if any post has 'mailnow' selected.
+        $generator->create_post(['userid' => $authorid, 'discussion' => $did, 'forum' => $forum->id, 'mailnow' => 1]);
+        $result = forum_get_user_posted_mailnow($did, $authorid);
+        $this->assertTrue($result);
+    }
+
+    /**
      * Tests the mod_forum_myprofile_navigation() function.
      */
-    public function test_mod_forum_myprofile_navigation() {
+    public function test_mod_forum_myprofile_navigation(): void {
         $this->resetAfterTest(true);
 
         // Set up the test.
@@ -2836,7 +2866,6 @@ class lib_test extends \advanced_testcase {
         mod_forum_myprofile_navigation($tree, $user, $iscurrentuser, $course);
         $reflector = new \ReflectionObject($tree);
         $nodes = $reflector->getProperty('nodes');
-        $nodes->setAccessible(true);
         $this->assertArrayHasKey('forumposts', $nodes->getValue($tree));
         $this->assertArrayHasKey('forumdiscussions', $nodes->getValue($tree));
     }
@@ -2844,7 +2873,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Tests the mod_forum_myprofile_navigation() function as a guest.
      */
-    public function test_mod_forum_myprofile_navigation_as_guest() {
+    public function test_mod_forum_myprofile_navigation_as_guest(): void {
         global $USER;
 
         $this->resetAfterTest(true);
@@ -2861,7 +2890,6 @@ class lib_test extends \advanced_testcase {
         mod_forum_myprofile_navigation($tree, $USER, $iscurrentuser, $course);
         $reflector = new \ReflectionObject($tree);
         $nodes = $reflector->getProperty('nodes');
-        $nodes->setAccessible(true);
         $this->assertArrayNotHasKey('forumposts', $nodes->getValue($tree));
         $this->assertArrayNotHasKey('forumdiscussions', $nodes->getValue($tree));
     }
@@ -2869,7 +2897,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Tests the mod_forum_myprofile_navigation() function as a user viewing another user's profile.
      */
-    public function test_mod_forum_myprofile_navigation_different_user() {
+    public function test_mod_forum_myprofile_navigation_different_user(): void {
         $this->resetAfterTest(true);
 
         // Set up the test.
@@ -2886,7 +2914,6 @@ class lib_test extends \advanced_testcase {
         mod_forum_myprofile_navigation($tree, $user, $iscurrentuser, $course);
         $reflector = new \ReflectionObject($tree);
         $nodes = $reflector->getProperty('nodes');
-        $nodes->setAccessible(true);
         $this->assertArrayHasKey('forumposts', $nodes->getValue($tree));
         $this->assertArrayHasKey('forumdiscussions', $nodes->getValue($tree));
     }
@@ -2894,7 +2921,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test test_pinned_discussion_with_group.
      */
-    public function test_pinned_discussion_with_group() {
+    public function test_pinned_discussion_with_group(): void {
         global $SESSION;
 
         $this->resetAfterTest();
@@ -3022,7 +3049,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test test_pinned_with_timed_discussions.
      */
-    public function test_pinned_with_timed_discussions() {
+    public function test_pinned_with_timed_discussions(): void {
         global $CFG;
 
         $CFG->forum_enabletimedposts = true;
@@ -3094,7 +3121,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test test_pinned_timed_discussions_with_timed_discussions.
      */
-    public function test_pinned_timed_discussions_with_timed_discussions() {
+    public function test_pinned_timed_discussions_with_timed_discussions(): void {
         global $CFG;
 
         $CFG->forum_enabletimedposts = true;
@@ -3177,7 +3204,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test for forum_is_author_hidden.
      */
-    public function test_forum_is_author_hidden() {
+    public function test_forum_is_author_hidden(): void {
         // First post, different forum type.
         $post = (object) ['parent' => 0];
         $forum = (object) ['type' => 'standard'];
@@ -3217,7 +3244,7 @@ class lib_test extends \advanced_testcase {
      * @param   \stdClass $discussion
      * @param   bool        $expect
      */
-    public function test_forum_discussion_is_locked($forum, $discussion, $expect) {
+    public function test_forum_discussion_is_locked($forum, $discussion, $expect): void {
         $this->resetAfterTest();
 
         $datagenerator = $this->getDataGenerator();
@@ -3242,7 +3269,7 @@ class lib_test extends \advanced_testcase {
      *
      * @return  array
      */
-    public function forum_discussion_is_locked_provider() {
+    public static function forum_discussion_is_locked_provider(): array {
         return [
             'Unlocked: lockdiscussionafter is false' => [
                 ['lockdiscussionafter' => false],
@@ -3279,7 +3306,7 @@ class lib_test extends \advanced_testcase {
      * @param   array   $forum
      * @param   bool    $expect
      */
-    public function test_forum_is_cutoff_date_reached($forum, $expect) {
+    public function test_forum_is_cutoff_date_reached($forum, $expect): void {
         $this->resetAfterTest();
 
         $datagenerator = $this->getDataGenerator();
@@ -3296,7 +3323,7 @@ class lib_test extends \advanced_testcase {
      *
      * @return  array
      */
-    public function forum_is_cutoff_date_reached_provider() {
+    public static function forum_is_cutoff_date_reached_provider(): array {
         $now = time();
         return [
             'cutoffdate is unset' => [
@@ -3325,7 +3352,7 @@ class lib_test extends \advanced_testcase {
      * @param   \stdClass $forum
      * @param   bool        $expect
      */
-    public function test_forum_is_due_date_reached($forum, $expect) {
+    public function test_forum_is_due_date_reached($forum, $expect): void {
         $this->resetAfterTest();
 
         $this->setAdminUser();
@@ -3344,7 +3371,7 @@ class lib_test extends \advanced_testcase {
      *
      * @return  array
      */
-    public function forum_is_due_date_reached_provider() {
+    public static function forum_is_due_date_reached_provider(): array {
         $now = time();
         return [
             'duedate is unset' => [
@@ -3369,7 +3396,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test that {@link forum_update_post()} keeps correct forum_discussions usermodified.
      */
-    public function test_forum_update_post_keeps_discussions_usermodified() {
+    public function test_forum_update_post_keeps_discussions_usermodified(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3461,7 +3488,7 @@ class lib_test extends \advanced_testcase {
         $this->assertGreaterThan($pasttime, $DB->get_field('forum_posts', 'modified', ['id' => $reply->id]));
     }
 
-    public function test_forum_core_calendar_provide_event_action() {
+    public function test_forum_core_calendar_provide_event_action(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -3488,7 +3515,7 @@ class lib_test extends \advanced_testcase {
         $this->assertTrue($actionevent->is_actionable());
     }
 
-    public function test_forum_core_calendar_provide_event_action_in_hidden_section() {
+    public function test_forum_core_calendar_provide_event_action_in_hidden_section(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3525,7 +3552,7 @@ class lib_test extends \advanced_testcase {
         $this->assertNull($actionevent);
     }
 
-    public function test_forum_core_calendar_provide_event_action_for_user() {
+    public function test_forum_core_calendar_provide_event_action_for_user(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3563,7 +3590,7 @@ class lib_test extends \advanced_testcase {
         $this->assertTrue($actionevent->is_actionable());
     }
 
-    public function test_forum_core_calendar_provide_event_action_as_non_user() {
+    public function test_forum_core_calendar_provide_event_action_as_non_user(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3591,7 +3618,7 @@ class lib_test extends \advanced_testcase {
         $this->assertNull($actionevent);
     }
 
-    public function test_forum_core_calendar_provide_event_action_already_completed() {
+    public function test_forum_core_calendar_provide_event_action_already_completed(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3625,7 +3652,7 @@ class lib_test extends \advanced_testcase {
         $this->assertNull($actionevent);
     }
 
-    public function test_forum_core_calendar_provide_event_action_already_completed_for_user() {
+    public function test_forum_core_calendar_provide_event_action_already_completed_for_user(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3664,7 +3691,7 @@ class lib_test extends \advanced_testcase {
         $this->assertNull($actionevent);
     }
 
-    public function test_mod_forum_get_tagged_posts() {
+    public function test_mod_forum_get_tagged_posts(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3778,7 +3805,7 @@ class lib_test extends \advanced_testcase {
      * This function should work given either an instance of the module (cm_info), such as when checking the active rules,
      * or if passed a stdClass of similar structure, such as when checking the the default completion settings for a mod type.
      */
-    public function test_mod_forum_completion_get_active_rule_descriptions() {
+    public function test_mod_forum_completion_get_active_rule_descriptions(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -3826,7 +3853,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test the forum_post_is_visible_privately function used in private replies.
      */
-    public function test_forum_post_is_visible_privately() {
+    public function test_forum_post_is_visible_privately(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -3871,7 +3898,7 @@ class lib_test extends \advanced_testcase {
     /**
      * An unkown event type should not have any limits
      */
-    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_unknown_event() {
+    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_unknown_event(): void {
         global $CFG;
         require_once($CFG->dirroot . "/calendar/lib.php");
 
@@ -3907,7 +3934,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Forums configured without a cutoff date should not have any limits applied.
      */
-    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_due_no_limit() {
+    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_due_no_limit(): void {
         global $CFG;
         require_once($CFG->dirroot . '/calendar/lib.php');
 
@@ -3943,7 +3970,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Forums should be top bound by the cutoff date.
      */
-    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_due_with_limits() {
+    public function test_mod_forum_core_calendar_get_valid_event_timestart_range_due_with_limits(): void {
         global $CFG;
         require_once($CFG->dirroot . '/calendar/lib.php');
 
@@ -3982,7 +4009,7 @@ class lib_test extends \advanced_testcase {
     /**
      * An unknown event type should not change the forum instance.
      */
-    public function test_mod_forum_core_calendar_event_timestart_updated_unknown_event() {
+    public function test_mod_forum_core_calendar_event_timestart_updated_unknown_event(): void {
         global $CFG, $DB;
         require_once($CFG->dirroot . "/calendar/lib.php");
 
@@ -4024,7 +4051,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Due date events should update the forum due date.
      */
-    public function test_mod_forum_core_calendar_event_timestart_updated_due_event() {
+    public function test_mod_forum_core_calendar_event_timestart_updated_due_event(): void {
         global $CFG, $DB;
         require_once($CFG->dirroot . "/calendar/lib.php");
 
@@ -4067,7 +4094,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test forum_get_layout_modes function.
      */
-    public function test_forum_get_layout_modes() {
+    public function test_forum_get_layout_modes(): void {
         $expectednormal = [
             FORUM_MODE_FLATOLDEST => get_string('modeflatoldestfirst', 'forum'),
             FORUM_MODE_FLATNEWEST => get_string('modeflatnewestfirst', 'forum'),
@@ -4091,7 +4118,7 @@ class lib_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function forum_check_throttling_early_returns_provider() {
+    public static function forum_check_throttling_early_returns_provider(): array {
         return [
             'Empty blockafter' => [(object)['id' => 1, 'course' => SITEID, 'blockafter' => 0]],
             'Empty blockperiod' => [(object)['id' => 1, 'course' => SITEID, 'blockafter' => DAYSECS, 'blockperiod' => 0]],
@@ -4105,7 +4132,7 @@ class lib_test extends \advanced_testcase {
      * @covers ::forum_check_throttling
      * @param \stdClass $forum The forum data.
      */
-    public function test_forum_check_throttling_early_returns(\stdClass $forum) {
+    public function test_forum_check_throttling_early_returns(\stdClass $forum): void {
         $this->assertFalse(forum_check_throttling($forum));
     }
 
@@ -4114,7 +4141,7 @@ class lib_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function forum_check_throttling_early_exceptions_provider() {
+    public static function forum_check_throttling_early_exceptions_provider(): array {
         return [
             'Non-object forum' => ['a'],
             'Forum ID not set' => [(object)['id' => false]],
@@ -4129,7 +4156,7 @@ class lib_test extends \advanced_testcase {
      * @covers ::forum_check_throttling
      * @param mixed $forum The forum data.
      */
-    public function test_forum_check_throttling_early_exceptions($forum) {
+    public function test_forum_check_throttling_early_exceptions($forum): void {
         $this->expectException(\coding_exception::class);
         $this->assertFalse(forum_check_throttling($forum));
     }
@@ -4139,7 +4166,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_check_throttling
      */
-    public function test_forum_check_throttling_nonexistent_numeric_id() {
+    public function test_forum_check_throttling_nonexistent_numeric_id(): void {
         $this->resetAfterTest();
 
         $this->expectException(\moodle_exception::class);
@@ -4151,7 +4178,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_check_throttling
      */
-    public function test_forum_check_throttling_nonexistent_forum_cm() {
+    public function test_forum_check_throttling_nonexistent_forum_cm(): void {
         $this->resetAfterTest();
 
         $dummyforum = (object)[
@@ -4169,7 +4196,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_check_throttling
      */
-    public function test_forum_check_throttling_teacher() {
+    public function test_forum_check_throttling_teacher(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -4211,7 +4238,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::forum_check_throttling
      */
-    public function test_forum_check_throttling_student() {
+    public function test_forum_check_throttling_student(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -4260,5 +4287,88 @@ class lib_test extends \advanced_testcase {
         $throttling = forum_check_throttling($forum);
         $this->assertIsObject($throttling);
         $this->assertFalse($throttling->canpost);
+    }
+
+    /**
+     * Tests forum_count_discussions.
+     *
+     * @covers ::forum_count_discussions
+     */
+    public function test_forum_count_discussions(): void {
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator();
+        $forumgenerator = $generator->get_plugin_generator('mod_forum');
+        $course1 = $generator->create_course();
+        $course2 = $generator->create_course();
+        $student = $generator->create_user(['trackforums' => 1]);
+
+        // First forum.
+        $forumobj1 = new \stdClass();
+        $forumobj1->introformat = FORMAT_HTML;
+        $forumobj1->course = $course1->id;
+        $forumobj1->trackingtype = FORUM_TRACKING_FORCED;
+        $forum1 = $generator->create_module('forum', $forumobj1);
+        $forum1cm = get_coursemodule_from_id('forum', $forum1->cmid, 0, false, MUST_EXIST);
+
+        // Second forum.
+        $forumobj2 = new \stdClass();
+        $forumobj2->introformat = FORMAT_HTML;
+        $forumobj2->course = $course2->id;
+        $forumobj2->trackingtype = FORUM_TRACKING_OFF;
+        $forum2 = $generator->create_module('forum', $forumobj2);
+        $forum2cm = get_coursemodule_from_id('forum', $forum2->cmid, 0, false, MUST_EXIST);
+
+        // Third forum.
+        $forumobj3 = new \stdClass();
+        $forumobj3->introformat = FORMAT_HTML;
+        $forumobj3->course = $course2->id;
+        $forumobj3->trackingtype = FORUM_TRACKING_OFF;
+        $forum3 = $generator->create_module('forum', $forumobj3);
+        $forum3cm = get_coursemodule_from_id('forum', $forum3->cmid, 0, false, MUST_EXIST);
+
+        // First make sure there are no discussions for any of the forums.
+        $f1discussionscount = forum_count_discussions($forum1, $forum1cm, $course1);
+        $this->assertEquals(0, $f1discussionscount);
+        $f2discussionscount = forum_count_discussions($forum2, $forum2cm, $course2);
+        $this->assertEquals(0, $f2discussionscount);
+        $f3discussionscount = forum_count_discussions($forum3, $forum3cm, $course2);
+        $this->assertEquals(0, $f3discussionscount);
+
+        // Add 3 discussions to forum 1.
+        $discussionobj1 = new \stdClass();
+        $discussionobj1->course = $course1->id;
+        $discussionobj1->userid = $student->id;
+        $discussionobj1->forum = $forum1->id;
+        $forumgenerator->create_discussion($discussionobj1);
+        $forumgenerator->create_discussion($discussionobj1);
+        $forumgenerator->create_discussion($discussionobj1);
+
+        // Make sure there are 3 discussions.
+        $f1discussionscount = forum_count_discussions($forum1, $forum1cm, $course1);
+        $this->assertEquals(3, $f1discussionscount);
+
+        // Add 4 discussions to forum 2.
+        $discussionobj2 = new \stdClass();
+        $discussionobj2->course = $course2->id;
+        $discussionobj2->userid = $student->id;
+        $discussionobj2->forum = $forum2->id;
+        $forumgenerator->create_discussion($discussionobj2);
+        $forumgenerator->create_discussion($discussionobj2);
+        $forumgenerator->create_discussion($discussionobj2);
+        $discussion24 = $forumgenerator->create_discussion($discussionobj2);
+
+        // Make sure there are 4 discussions.
+        $f2discussionscount = forum_count_discussions($forum2, $forum2cm, $course2);
+        $this->assertEquals(4, $f2discussionscount);
+
+        // Delete one discussion from forum 2.
+        forum_delete_discussion($discussion24, true, $course2, $forum2cm, $forum2);
+        $f2discussionscount = forum_count_discussions($forum2, $forum2cm, $course2);
+        $this->assertEquals(3, $f2discussionscount);
+
+        // Make sure there are no discussions.
+        $f3discussionscount = forum_count_discussions($forum3, $forum3cm, $course2);
+        $this->assertEquals(0, $f3discussionscount);
     }
 }

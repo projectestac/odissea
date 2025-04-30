@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'it', version '4.1'.
+ * Strings for component 'block_glossary_random', language 'it', version '4.4'.
  *
  * @package     block_glossary_random
  * @category    string
@@ -40,7 +40,7 @@ $string['noentriesyet'] = 'Al momento, non ci sono voci nel glossario scelto.';
 $string['notyetconfigured'] = 'Per configurare questo blocco utilizzare l\'icona di modifica.';
 $string['notyetglossary'] = 'Devi avere almeno un glossario da scegliere';
 $string['pluginname'] = 'Voce casuale di glossario';
-$string['privacy:metadata'] = 'Il blocco Voce casuale di glossario visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Voce casuale di glossario visualizza solamente dati memorizzati da altri componenti.';
 $string['random'] = 'Voce casuale';
 $string['refresh'] = 'Giorni antecedenti la scelta di una nuova voce';
 $string['select_glossary'] = 'Prendi la voce da questo glossario';

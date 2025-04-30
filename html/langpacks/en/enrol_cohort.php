@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'en', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'en', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'Create new group';
 $string['defaultgroupnametext'] = '{$a->name} cohort {$a->increment}';
 $string['enrolcohortsynctask'] = 'Cohort enrolment sync task';
 $string['instanceexists'] = 'Cohort is already synchronised with selected role';
+$string['plugindisabled'] = 'Cohort sync plugin is disabled';
 $string['pluginname'] = 'Cohort sync';
 $string['pluginname_desc'] = 'Cohort enrolment plugin synchronises cohort members with course participants.';
 $string['privacy:metadata:core_group'] = 'Enrol cohort plugin can create a new group or use an existing group to add all the members of the cohort.';

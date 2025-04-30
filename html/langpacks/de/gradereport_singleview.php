@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'de', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'de', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Überschreibungen entfernen';
 $string['save'] = 'Speichern';
 $string['savegrades'] = 'Bewertungen werden gesichert';
 $string['savegradessuccess'] = 'Bewertungen werden für {$a} Werte gesetzt.';
-$string['searchgrades'] = 'Bewertungselemente suchen';
 $string['selectagrade'] = 'Bewertungselement auswählen';
 $string['selectgradeitemlink'] = 'Bewertungselement auswählen';
 $string['singleview:view'] = 'Einzelansicht anzeigen';
 $string['singleviewdescription'] = 'In der Einzelansicht können Sie ausgewählte Bewertungen überschreiben oder ausschließen, anschließend Bewertungen gesammelt einfügen.';
+$string['singleviewreport_gradeitem'] = 'Einzelansicht für dieses Element';
+$string['singleviewreport_user'] = 'Einzelansicht für diese Person';
 $string['summarygrade'] = 'Eine Tabelle der Nutzer mit Spalten für Rang. Bewertung, Feedback und der Definition, ob ein Eintrag überschrieben oder für eine Bewertung ausgelassen werden soll.';
 $string['summaryuser'] = 'Eine Tabelle der Bewertungen mit Spalten für Kategorie, Rang. Bewertung, Feedback und der Definition, ob ein Eintrag überschrieben oder für eine Bewertung ausgelassen werden soll.';
 $string['unsavedataalert'] = 'Wenn Sie nicht gespeicherte Änderungen auf der Seite haben, gehen diese verloren, sobald Sie mit dem Sammeleintrag fortfahren.';

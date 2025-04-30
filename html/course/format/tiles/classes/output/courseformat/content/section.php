@@ -26,6 +26,7 @@ namespace format_tiles\output\courseformat\content;
 
 use core_courseformat\output\local\content\section as section_base;
 use format_tiles\local\tile_photo;
+use format_tiles\local\util;
 
 /**
  * Base class to render a course section.
@@ -48,7 +49,7 @@ class section extends section_base {
         $data->hasphoto = 0;
         // If photo tile backgrounds are allowed by site admin, prepare the image for this section.
         if (get_config('format_tiles', 'allowphototiles')) {
-            $coursecontext = \context_course::instance($this->section->course);
+            $coursecontext = $this->format->get_context();
             // Is getting course context the most efficient way?
             $tilephoto = new tile_photo($coursecontext, $this->section->id);
             $tilephotourl = $tilephoto->get_image_url();
@@ -71,10 +72,12 @@ class section extends section_base {
             if (!$data->tileicon) {
                 $formatoptions = $this->format->get_format_options();
                 $data->tileicon = $formatoptions['defaulttileicon'];
+            } else {
+                $data->tilenumber = $data->tileicon ? util::get_tile_number_from_icon_name($data->tileicon) : null;
             }
         }
 
-        if (!$this->format->get_section_number()) {
+        if (!$this->format->get_sectionnum()) {
             $addsectionclass = $this->format->get_output_classname('content\\addsection');
             $addsection = new $addsectionclass($this->format);
             $data->numsections = $addsection->export_for_template($output);

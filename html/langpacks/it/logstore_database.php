@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'it', version '4.1'.
+ * Strings for component 'logstore_database', language 'it', version '4.4'.
  *
  * @package     logstore_database
  * @category    string

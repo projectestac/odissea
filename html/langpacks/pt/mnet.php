@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', version '4.1'.
+ * Strings for component 'mnet', language 'pt', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Adicionar a controlo de acessos';
 $string['allhosts'] = 'Todos os servidores';
 $string['allhosts_no_options'] = 'Não há opções disponíveis quando são visualizados vários servidores';
 $string['allow'] = 'Permitir';
+$string['allowaccess'] = 'Permitir acesso';
 $string['applicationtype'] = 'Tipo da aplicação';
 $string['authfail_nosessionexists'] = 'A autorização falhou: a sessão mnet não existe.';
 $string['authfail_sessiontimedout'] = 'A autorização falhou: o tempo da sessão mnet expirou.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'O intervalo disponível de 60 segundos para apagar
 $string['deleteuserrecord'] = 'SSO ACL: apagar registo do utilizador "{$a->user}" de "{$a->host}".';
 $string['deletewrongkeyvalue'] = 'Ocorreu um erro. Caso não esteja a tentar eliminar a chave SSL do seu servidor, é possível que esteja a ser alvo de um ataque malicioso. Não foram desencadeadas quaisquer ações.';
 $string['deny'] = 'Negar';
+$string['denyaccess'] = 'Negar acesso';
 $string['description'] = 'Descrição';
 $string['duplicate_usernames'] = 'Não foi possível criar um índice nas colunas "mnethostid" e "username" na tabela de utilizadores. <br />Tal pode acontecer quando existem <a href="{$a}" target="_blank"> nomes de utilizadores duplicados nesta tabela.</a>. <br /> A atualização deve, ainda assim, ser concluída com sucesso. Clique na hiperligação acima para receber instruções para a resolução deste problema, numa nova janela. Recomendamos que se ocupe disse apenas depois de concluída a atualização. <br />';
 $string['enabled_for_all'] = '(Este serviço foi ativado para todos os servidores).';

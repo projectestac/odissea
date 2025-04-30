@@ -55,6 +55,9 @@
     {{/showicons}}
     {{#showphotos}}
         <li class="nav-item">
+            <a class="nav-link" id="show-tile-numbers-tab" href="#tilenumbers" data-toggle="tab" role="tab">{{#str}}numbers, format_tiles{{/str}}</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" id="launch-photo-library" href="#photolibrary" data-toggle="tab" role="tab">{{#pix}}camera, format_tiles{{/pix}} {{#str}}photolibrary, format_tiles{{/str}}</a>
         </li>
         <li class="nav-item">
@@ -80,13 +83,24 @@
                 {{/icon_picker_icons}}
             </div>
         </div>
+        <div class="tab-pane fade" id="tilenumbers" role="tabpanel">
+            <h3>{{#str}}numbers, format_tiles{{/str}}</h3>
+            <div>{{#str}}numbers_desc, format_tiles{{/str}}</div>
+            <div id="tile-numbers-container" class="d-flex flex-wrap m-auto">
+                {{#tilenumbers}}
+                    <span class="tile-number-container" id="tile-number-container-{{.}}">
+                        <button id="tile-number-{{.}}" class="tile-number m-2 pickericon" data-icon="number_{{.}}" data-dismiss="modal" data-imagetype="tileicon" title="{{#str}}icontitle-number, format_tiles, {{.}}{{/str}}">{{.}}</button>
+                    </span>
+                {{/tilenumbers}}
+            </div>
+        </div>
     {{/showicons}}
     {{#showphotos}}
         <div class="tab-pane fade" id="photolibrary" role="tabpanel">
             {{!Leave blank for now will lazy load from JS if needed}}
             <h3>{{#str}}photolibrary, format_tiles{{/str}}</h3>
             <div>{{#str}}photolibrary_desc, format_tiles{{/str}}</div>
-            <div class="iconpickerphotos" id="iconpickerphotos">
+            <div class="iconpickerphotos d-flex flex-wrap" id="iconpickerphotos">
                 <div class="alert alert-warning">{{#str}}none{{/str}}</div>
             </div>
         </div>

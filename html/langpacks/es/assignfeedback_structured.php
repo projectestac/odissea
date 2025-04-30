@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_structured', language 'es', version '4.1'.
+ * Strings for component 'assignfeedback_structured', language 'es', version '4.4'.
  *
  * @package     assignfeedback_structured
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['close'] = 'Cerrar';
-$string['criteria'] = 'Criterio de retroalimentación';
-$string['criteria_help'] = 'Ingrese un nombre ( y opcionalmente una descripción) para cada criterio al que quiera proporcionarle retroalimentación. Culaquier criterio no nombrado será ignorado. Todos los campos serán boqueados una vez que se haya dado retroalimentación par cualquier criterio.';
+$string['criteria'] = 'Criterios de retroalimentación';
+$string['criteria_help'] = 'Introduzca un nombre (y opcionalmente una descripción) para cada criterio al que quiera proporcionarle retroalimentación. Culaquier criterio no nombrado se ignorará. Todos los campos serán bloqueados una vez que se haya dado retroalimentación para cualquier criterio.';
 $string['criteriafieldsadd'] = 'Añadir más campos de criterio';
-$string['criteriaset'] = 'Criterio configurado';
+$string['criteriaset'] = 'Conjunto de criterios';
 $string['criteriaset_help'] = 'Haga clic en este botón para seleccionar un criterio guardado previamente para configurar automáticamente los detalles inferiores del criterio.';
 $string['criteriasetconfirmdelete'] = '¿Está seguro de querer eliminar el conjunto de criterios "{$a}"?';
 $string['criteriasetconfirmuse'] = '¿Está seguro? Esto sobrescribirá el criterio que está actualmente configurado para esta tarea.';
@@ -37,8 +37,8 @@ $string['criteriasetempty'] = 'Usted debe definir al menos un criterio antes de 
 $string['criteriasetemptytitle'] = 'El conjunto de criterios está vacío';
 $string['criteriasetname'] = 'Nombre de conjunto de criterios';
 $string['criteriasetname_help'] = 'El nombre de un conjunto de criterios debe de ser único para todo el sitio; por favor elíjalo cuidadosamente.';
-$string['criteriasetnameedit'] = 'Editar Nombre de conjunto de criterios';
-$string['criteriasetnameenter'] = 'Ingresar un nombre único';
+$string['criteriasetnameedit'] = 'Editar nombre de conjunto de criterios';
+$string['criteriasetnameenter'] = 'Introduzca un nombre único';
 $string['criteriasetnameused'] = 'Desafortunadamente ya hay un conjunto de criterios llamado"{$a}". Por favor intente un nombre diferente.';
 $string['criteriasetnameusedtitle'] = 'Nombre ya utilizado';
 $string['criteriasetnoname'] = 'Usted tiene que proporcionar un nombre para su conjunto de criterios';

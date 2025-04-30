@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'zh_cn', version '4.1'.
+ * Strings for component 'adaptivequiz', language 'zh_cn', version '4.4'.
  *
  * @package     adaptivequiz
  * @category    string
@@ -60,6 +60,7 @@ $string['attemptquestion_level'] = '问题级别';
 $string['attemptquestion_rightwrong'] = '回答正确/错误';
 $string['attemptquestion_stderr'] = '标准误差(&plusmn;&nbsp;逻辑)';
 $string['attemptquestionsprogress'] = '问题进度：{$a}';
+$string['attemptquestionsprogress_help'] = '这里显示的最大问题数不一定是你在测验中必须回答的问题数。这是你可能参加的最大问题数量，如果能力测试有充分的定义，测试可能会提前结束。';
 $string['attemptsallowed'] = '允许尝试';
 $string['attemptsallowed_help'] = '学生尝试此活动的次数';
 $string['attemptstarttime'] = '尝试开始时间';
@@ -127,6 +128,7 @@ $string['minimumquestions'] = '最小问题数';
 $string['minimumquestions_help'] = '学生必须尝试的最小问题数';
 $string['missingtagprefix'] = '缺少标记前缀';
 $string['modformshowattemptprogress'] = '向学生展示测试进度';
+$string['modformshowattemptprogress_help'] = '当被选中时，在尝试过程中，学生将看到一个进度条，描述在最大数量中回答了多少个问题。';
 $string['modulename'] = '自适应测试';
 $string['modulename_help'] = '自适应性测验活动使教师能够创建有效衡量考生能力的测验。自适应性测验由从题库中选择的题组成，题库中标记有难度分数。选择的问题与当前考生的估计能力水平相匹配。如果考生在一个问题上取得了成功，接下来会出现一个更具挑战性的问题。如果考生答错了一个问题，那么接下来会出现一个挑战性较小的问题。这种技巧将发展成一系列问题，集中在考生的有效能力水平上。当考生的能力达到要求的准确度时，测验停止。
 
@@ -169,6 +171,10 @@ $string['recentactquestionsattempted'] = '尝试的问题：{$a}';
 $string['recentattemptstate'] = '尝试状态：';
 $string['recentcomplete'] = '完成';
 $string['recentinprogress'] = '进行中';
+$string['reportanswersdistributionchartnumrightlabel'] = '正确回答数';
+$string['reportanswersdistributionchartnumwronglabel'] = '错误回答数';
+$string['reportanswersdistributionchartxaxislabel'] = '试题难度';
+$string['reportanswersdistributionchartyaxislabel'] = '回答数';
 $string['reportattemptanswerdistributiontab'] = '答案分布';
 $string['reportattemptgraphtab'] = '尝试图';
 $string['reportattemptgraphtabletitle'] = '尝试图的表视图';
@@ -179,7 +185,13 @@ $string['reportattemptsdownloadfilename'] = '{$a}_尝试报告';
 $string['reportattemptsenrolledwithattempts'] = '所有进行过尝试的参与者';
 $string['reportattemptsenrolledwithnoattempts'] = '没有进行过尝试的参与者';
 $string['reportattemptsfilterformheader'] = '过滤器';
+$string['reportattemptsfilterformsubmit'] = '过滤器';
+$string['reportattemptspersistentfilter'] = '永久过滤器';
+$string['reportattemptspersistentfilter_help'] = '选中后，将在提交时存储下面的过滤器设置，然后在每次访问报告页面时应用这些设置。';
+$string['reportattemptsprefsformsubmit'] = '应用';
+$string['reportattemptsresetfilter'] = '重置过滤器';
 $string['reportattemptsummarytab'] = '尝试总结';
+$string['reportattemptsusersperpage'] = '显示的用户数：';
 $string['reportindividualuserattemptpageheading'] = '{$a->username}的个人用户尝试报告 {$a->quizname}';
 $string['reportquestionanalysispageheading'] = '{$a} -问题报告';
 $string['reportuserattemptstitleshort'] = '{$a} 的尝试情况';

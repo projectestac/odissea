@@ -26,6 +26,7 @@ namespace mod_bigbluebuttonbn\test;
 
 use context_module;
 use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\config;
 use mod_bigbluebuttonbn\local\proxy\recording_proxy;
 use mod_bigbluebuttonbn\meeting;
 use stdClass;
@@ -158,6 +159,8 @@ trait testcase_helper_trait {
         }
         try {
             $this->getDataGenerator()->get_plugin_generator('mod_bigbluebuttonbn')->reset_mock();
+            // Mock server expects a value. By default this field is empty.
+            set_config('bigbluebuttonbn_shared_secret', config::DEFAULT_SHARED_SECRET);
         } catch (\moodle_exception $e) {
             $this->markTestSkipped(
                 'Cannot connect to the mock server for this test. Make sure that TEST_MOD_BIGBLUEBUTTONBN_MOCK_SERVER points
@@ -283,7 +286,7 @@ trait testcase_helper_trait {
      * @param bool $withremoterecordings create recording on the mock server ?
      * @return array
      */
-    protected function create_legacy_log_entries(
+    protected function create_log_entries(
         instance $instance,
         int $userid,
         int $count = 30,
@@ -304,10 +307,10 @@ trait testcase_helper_trait {
                 // Create a recording.
                 $starttime = time() - random_int(HOURSECS, WEEKSECS);
                 $recording = $plugingenerator->create_recording([
-                        'bigbluebuttonbnid' => $instance->get_instance_id(),
-                        'groupid' => $instance->get_group_id(),
-                        'starttime' => $starttime,
-                        'endtime' => $starttime + HOURSECS,
+                    'bigbluebuttonbnid' => $instance->get_instance_id(),
+                    'groupid' => $instance->get_group_id(),
+                    'starttime' => $starttime,
+                    'endtime' => $starttime + HOURSECS,
                 ], true); // Create them on the server only.
 
                 $baselogdata['meetingid'] = $instance->get_meeting_id();
@@ -323,7 +326,7 @@ trait testcase_helper_trait {
                         $data = [];
                     }
                     $baselogdata['meta'] = json_encode(array_merge([
-                            'recording' => array_diff_key($data, $metaonly),
+                        'recording' => array_diff_key($data, $metaonly),
                     ], $metaonly));
 
                 } else {

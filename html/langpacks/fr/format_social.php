@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'fr', version '4.1'.
+ * Strings for component 'format_social', language 'fr', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Nombre de discussions';
 $string['numberdiscussions_help'] = 'Ce réglage détermine le nombre de discussions à afficher';
+$string['plugin_description'] = 'Le cours est construit autour d’un forum principal sur la page de cours. D’autres activités et ressources peuvent être ajouté à l’aide du bloc Activités sociales.';
 $string['pluginname'] = 'Informel';
 $string['privacy:metadata'] = 'Le plugin format informel n’enregistre aucune donnée personnelle.';
 $string['sectionname'] = 'section';

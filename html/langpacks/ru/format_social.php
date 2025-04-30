@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'ru', version '4.1'.
+ * Strings for component 'format_social', language 'ru', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Количество обсуждений';
 $string['numberdiscussions_help'] = 'Этот параметр определяет сколько обсуждений должно быть показано.';
+$string['plugin_description'] = 'Курс сосредоточен вокруг главного форума на странице курса. Дополнительные активные элементы и ресурсы можно добавить с помощью блока «Социальные мероприятия».';
 $string['pluginname'] = 'Форум';
 $string['privacy:metadata'] = 'Плагин «формат Форум» не хранит никаких персональных данных.';
 $string['sectionname'] = 'секция';

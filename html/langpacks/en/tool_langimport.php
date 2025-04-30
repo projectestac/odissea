@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'en', version '4.1'.
+ * Strings for component 'tool_langimport', language 'en', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'Language pack update completed';
 $string['missingcfglangotherroot'] = 'Missing configuration value $CFG->langotherroot';
 $string['missinglangparent'] = 'Missing parent language <em>{$a->parent}</em> of <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'The English language pack cannot be uninstalled.';
+$string['noenglishuninstalltitle'] = 'Unable to uninstall';
 $string['nolangupdateneeded'] = 'All your language packs are up to date, no update is needed';
 $string['pluginname'] = 'Language packs';
 $string['privacy:metadata'] = 'The Language packs plugin does not store any personal data.';

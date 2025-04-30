@@ -29,7 +29,7 @@ use mod_bigbluebuttonbn\test\testcase_helper_trait;
  * @covers  \mod_bigbluebuttonbn\local\proxy\recording_proxy
  * @coversDefaultClass \mod_bigbluebuttonbn\local\proxy\recording_proxy
  */
-class recording_proxy_test extends \advanced_testcase {
+final class recording_proxy_test extends \advanced_testcase {
     use testcase_helper_trait;
 
     /**
@@ -37,7 +37,7 @@ class recording_proxy_test extends \advanced_testcase {
      *
      * @return void
      */
-    public function test_fetch_recordings() {
+    public function test_fetch_recordings(): void {
         $this->resetAfterTest();
         $this->initialise_mock_server();
         [$context, $cm, $bbbactivity] = $this->create_instance();
@@ -55,7 +55,7 @@ class recording_proxy_test extends \advanced_testcase {
      *
      * @return void
      */
-    public function test_fetch_recordings_breakoutroom() {
+    public function test_fetch_recordings_breakoutroom(): void {
         $this->resetAfterTest();
         $this->initialise_mock_server();
         [$context, $cm, $bbbactivity] = $this->create_instance();

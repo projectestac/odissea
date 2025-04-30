@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'it', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'it', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Una o più alternative';
+$string['answerhowmany_desc'] = 'Opzione per indicare se il default deve essere una risposta singola (ad esempio pulsanti radio) o più risposte (ad esempio caselle di controllo).';
 $string['answernumbering'] = 'Numerazione delle alternative';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
@@ -69,6 +70,7 @@ $string['pluginnamesummary'] = 'Consente l\'utilizzo di domande a risposta multi
 $string['privacy:metadata'] = 'Il plugin Tipo di domande Risposta multipla non memorizza dati personali.';
 $string['privacy:preference:answernumbering'] = 'Stile di numerazione da utilizzare (\'1, 2, 3, ...\', \'a, b, c, ...\' etc.).';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';
+$string['privacy:preference:penalty'] = 'Penalità per ogni tentativo errato quando le domande vengono eseguite utilizzando il comportamento \'Interattivo con tentativi multipli\' o \'Modalità adattiva\'.';
 $string['privacy:preference:showstandardinstruction'] = 'Opzione di visualizzazione delle istruzioni standard.';
 $string['privacy:preference:shuffleanswers'] = 'Randomizzazione automatica delle risposte';
 $string['privacy:preference:single'] = 'Risposta singola con pulsanti radio oppure multipla con caselle di controllo.';
@@ -76,6 +78,7 @@ $string['regradeissuenumchoiceschanged'] = 'Il numero di possibili risposte dell
 $string['selectmulti'] = 'Scegli una o più alternative:';
 $string['selectone'] = 'Scegli un\'alternativa:';
 $string['showstandardinstruction'] = 'Visualizza istruzioni standard';
+$string['showstandardinstruction_desc'] = 'Opzione per visualizzare le istruzioni "Seleziona uno:" o "Seleziona uno o più:" prima delle risposte a scelta multipla.';
 $string['showstandardinstruction_help'] = 'Consente di visualizzare, prima delle risposte a scelta multipla, le istruzioni "Scegli una un\'alternativa:" oppure "Scegli una o più alternative:". In alternativa è possibile inserire le istruzioni nel testo della domanda.';
 $string['shuffleanswers'] = 'Alternative in ordine casuale';
 $string['shuffleanswers_desc'] = 'Randomizzazione di default delle le opzioni a ogni tentativo';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'fr', version '4.1'.
+ * Strings for component 'install', language 'fr', version '4.4'.
  *
  * @package     install
  * @category    string
@@ -101,7 +101,7 @@ $string['errorsinenvironment'] = 'Échec de la vérification de l’environnemen
 $string['fail'] = 'Échec';
 $string['fileuploads'] = 'Téléchargement des fichiers';
 $string['fileuploadserror'] = 'Le téléchargement des fichiers sur le serveur doit être activé';
-$string['fileuploadshelp'] = '<p>Le téléchargement des fichiers semble désactivé sur votre serveur.</p><p>Moodle peut être installé malgré tout, mais personne ne pourra déposer aucun fichier de cours, ni aucun avatar dans les profils utilisateurs.</p><p>Pour activer le téléchargement des fichiers sur votre serveur, vous (ou l’administrateur du serveur) devez modifier le fichier « php.ini » du système en donnant au paramètre <b>file_uploads</b> la valeur 1.</p>';
+$string['fileuploadshelp'] = '<p>Le dépôt des fichiers semble désactivé sur votre serveur.</p><p>Moodle peut être installé malgré tout, mais personne ne pourra déposer aucun fichier de cours, ni aucun avatar dans les profils utilisateurs.</p><p>Pour activer le dépôt des fichiers sur votre serveur, vous (ou l’administrateur du serveur) devez modifier le fichier « php.ini » du système en donnant au paramètre <b>file_uploads</b> la valeur 1.</p>';
 $string['inputdatadirectory'] = 'Dossier de données :';
 $string['inputwebadress'] = 'Adresse web :';
 $string['inputwebdirectory'] = 'Dossier Moodle :';

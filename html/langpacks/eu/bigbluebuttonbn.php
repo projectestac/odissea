@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'eu', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'eu', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Argitaratu grabazioak';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Kendu babesa grabazioei';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Ezkutatu grabazioak';
 $string['bigbluebuttonbn:view'] = 'Ikusi BigBlueButton bilera-gela';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Ikusi grabazio-formatu guztiak';
 $string['bigbluebuttondisablednotification'] = 'BigBlueButton jarduera-modulua desgaituta dago eta aurretiko BigBlueButton ikastaro-jarduerak ez daude eskuragarri une honetan. Plugin hau berriz gaitu aurretik, ziurtatu ezazu Blindside Networks Inc.-ren <a href="{$a}" target="_blank">datu-prozesatzen onespena</a> irakurri eta onartzen duzula.';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton jarduera-modulua desgaituta dago.';
 $string['cachedef_currentfetch'] = 'Orain dela gutxi jasotako edozein grabazio zerrendatzeko datuak.';
 $string['cachedef_recordings'] = 'Grabazioen metadatuak';
 $string['cachedef_serverinfo'] = 'Urruneko zerbitzariaren informazioa';
+$string['cachedef_subplugins'] = 'Pluginen aurkitze-prozesua behar denean azkartzeko azpi-pluginen errutinak erabilitako cachea.';
 $string['cachedef_validatedurls'] = 'Balioztatutako URL egiaztapenen cachea';
 $string['calendarstarts'] = '{$a} programatuta dago hurrengo datan:';
 $string['cannotperformaction'] = 'Ezin da {$a} ekintza grabazio honetan exekutatu';
-$string['completionattendance'] = 'Ikasleak saioan egon behar du denbora-tarte honetan:';
+$string['completionattendance'] = 'Behartu bertaratzea (minutuak)';
 $string['completionattendance_desc'] = 'Bilera-gelan sartu eta bertan gutxienez {$a} minutuz egotea.';
 $string['completionattendance_event_desc'] = 'Ikaslea bilera-gelan sartu eta bertan gutxienez {$a} minutuz egon da';
-$string['completionattendancegroup'] = 'Behartu bertaratzea';
+$string['completionattendancegroup'] = 'Behartu bertaratzea (minutuak)';
 $string['completionattendancegroup_help'] = 'Jarduera osatzeko beharrezkoa da bileran (n) minutuz egotea';
 $string['completionengagement_desc'] = 'Bileran zeharreko jardueretan parte hartzea.';
 $string['completionengagementchats'] = 'Txatak';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'Osaketaren eguneratzearen egoera';
 $string['completionvalidatestate'] = 'Balioztatu osaketa';
 $string['completionvalidatestatetriggered'] = 'Balioztatu osaketa abiarazi da.';
 $string['completionview'] = 'Behartu ikustea';
-$string['completionview_desc'] = 'Ikaslea bilera-gela ikusi behar du jarduera osatzeko.';
+$string['completionview_desc'] = 'Bilera-gela ikustea';
 $string['completionview_event_desc'] = 'Bilera-gela ikusi du.';
+$string['config_checksum_algorithm'] = 'BigBlueButton zerbitzariaren checksum algoritmoa';
+$string['config_checksum_algorithm_description'] = 'SHA1 protokoloak zerbitzarien bertsio zaharragoekin bateragarritasuna bermatzen du. SHA256 eta SHA512 protokoloak seguruagoak dira. SHA512 protokoloak FIPS 140-2 betetzen du.';
 $string['config_default_messages'] = 'Lehenetsitako mezuak';
 $string['config_default_messages_description'] = 'Zehaztu jardueretarako lehenetsitako mezuak';
 $string['config_disablecam_default'] = 'Desgaitu web-kamera gaituta modu lehenetsian';
@@ -109,7 +113,7 @@ $string['config_experimental_features_description'] = 'Funtzio esperimentaletara
 $string['config_extended_capabilities'] = 'Gaitasun hedatuak';
 $string['config_extended_capabilities_description'] = 'Gaitasun hedatuen konfigurazioa, BigBlueButton zerbitzariak eskaintzen baditu.';
 $string['config_general'] = 'Ezarpen orokorrak';
-$string['config_general_description'] = 'Ezarpen hauek beti erabiltzen dira.';
+$string['config_general_description'] = 'BigBlueButton konfiguratzeko, zure BigBlueButton zerbitzariko kredentzialak erabili ditzakezu ala <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks Erregistro-portalean (leiho berrian irekitzen da)</a> kredentzialak lortu ditzakezu.';
 $string['config_guestaccess_enabled'] = 'Kanpoko gonbidatuentzako sarbidea';
 $string['config_guestaccess_enabled_description'] = 'Baimendu zure gunean kontua ez duten kanpoko pertsonak bilera-gelara sartzea.';
 $string['config_hideuserlist_default'] = 'Ezkutatu erabiltzaile-zerrenda gaituta modu lehenetsian';
@@ -140,10 +144,12 @@ $string['config_poll_interval'] = 'Inkesten tartea (segundotan) gelaren egoera f
 $string['config_poll_interval_description'] = 'Inkesten tartea gutxienez 2 segundokoa izan behar da. Behar izanez gero urruneko zerbitzariaren karga gutxitzeko tartea handitu dezakezu.';
 $string['config_presentation_default'] = 'Lehenetsitako aurkezpen-fitxategia';
 $string['config_presentation_default_description'] = 'Hemen bilera-gela guztietan erabiliko den fitxategi bat zehaztu daiteke.';
-$string['config_preuploadpresentation'] = 'Aldez aurretik kargatutako aurkezpena';
+$string['config_preuploadpresentation'] = 'Aurkezpen-fitxategia';
 $string['config_preuploadpresentation_description'] = 'Ezarpen hauen bidez interfaze grafikoaren hainbat aukera gaitu edo desgaitu eta hauen lehenetsitako balioak zehazten dira. Funtzionalitate honek soilik BigBlueButtonek Moodleren zerbitzaria erabili badezake funtzionatzen du.';
-$string['config_preuploadpresentation_editable'] = 'Aldez aurretik kargatutako aurkezpena editagarria';
-$string['config_preuploadpresentation_editable_description'] = 'Aldez aurretik kargatutako aurkezpena erabiltzaile-interfazean editagarria da bilera-gela edo konferentzia gehitu edo eguneratzean.';
+$string['config_preuploadpresentation_editable'] = 'Jarduera-orrian eskuragarri egongo den aurkezpen-fitxategia';
+$string['config_preuploadpresentation_editable_description'] = 'Jarduera-orrian igotako aurkezpen-fitxategi bat erakusteko jardueraren ezarpenetako aukera.';
+$string['config_profile_picture_enabled'] = 'Erakutsi profileko irudiak';
+$string['config_profile_picture_enabled_description'] = 'Partaideen profileko irudiak BigBlueButton saioetan erakutsi beharko lirateke?';
 $string['config_recording'] = 'Grabazioa';
 $string['config_recording_all_from_start_default'] = 'Hasi grabazioa hasieratik';
 $string['config_recording_all_from_start_default_description'] = '\'Hasi grabazioa hasieratik\' ezarpena modu lehenetsian gaituta egon beharko luke BigBlueButton bilera-gela berri bat gehitzerakoan?';
@@ -162,6 +168,11 @@ $string['config_recording_protect_editable'] = 'Babestutako grabazioen egoera ed
 $string['config_recording_protect_editable_description'] = 'Markatuz gero interfazean grabazioak babestu edo babesa kentzeko aukera bat agertuko da.';
 $string['config_recording_refresh_period'] = 'Grabazioen freskatze-maiztasuna (segundotan)';
 $string['config_recording_refresh_period_description'] = 'Zein maiztasunekin eskatuko zaio BigBlueButton zerbitzariari grabazioen informazioa eguneratzeko?';
+$string['config_recording_safe_formats'] = 'Edonork ikusi ahal dituen grabazio-formatuak';
+$string['config_recording_safe_formats_description'] = 'Aukeratu edonork ikusi ahal dituen grabazio-formatuak. Beste formatu
+guztiak irakasleentzako eta mod/bigbluebuttonbn:viewallrecordingformats
+zein mod/bigbluebuttonbn:managerecordings baimenak dituzten
+beste erabiltzaileentzat soilik egongo dira ikusgai.';
 $string['config_recordingready_enabled'] = 'Bidali grabazio prest dagoenaren jakinarazpena';
 $string['config_recordingready_enabled_description'] = 'Gaituz gero, grabazio bat prest dagoenean jakinarazpen bat bidaliko da. Funtzionalitate honek BigBlueButton zerbitzarian post_publish_recording_ready_callback script-a gaituta egotea behar du.';
 $string['config_recordings'] = 'Erakutsi grabazioak';
@@ -187,15 +198,9 @@ $string['config_scheduled_description'] = 'Ezarpen hauetan programatutako saioen
 $string['config_scheduled_pre_opening'] = 'Hasiera aurretiko sarbidea';
 $string['config_scheduled_pre_opening_description'] = 'Programatutako saioa hasi baino zenbat minutu lehenago sar daitekeen bilera-gelan.';
 $string['config_server_url'] = 'BigBlueButton zerbitzariaren URLa';
-$string['config_server_url_description'] = 'Lehenetsitako kredentzialak Blindside Networks-ek eskainitako <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">Moodlerako doako BigBlueButton zerbitzurako (leiho berrian zabaltzen da)</a> dira, eta hurrengo mugak ditu:
-<ol>
-<li>Saio bakoitzaren iraupena gehienez 60 minutukoa izan daiteke</li>
-<li>Saio bakoitzeko parte-hartzaileak gehienez 25 izan daitezke</li>
-<li>Grabazioak zazpi (7) egunen buruan iraungitzen dira eta ezin dira deskargatu</li>
-<li>Ikasleen web-kamerak moderatzaileak baino ez ditu ikusiko.</li>
-</ol>';
+$string['config_server_url_description'] = 'Zure BigBlueButton zerbitzariaren URLa';
 $string['config_shared_secret'] = 'BigBlueButton sekretu partekatua';
-$string['config_shared_secret_description'] = 'Zure BigBlueButton zerbitzariaren segurtasun-sekretua. Lehenetsitako sekretua Blindside Networks enpresak hornitzen duen doako BigBlueButton zerbitzurako baliagarria da.';
+$string['config_shared_secret_description'] = 'Zure BigBlueButton zerbitzariaren segurtasun-sekretua.';
 $string['config_uidelegation_enabled'] = 'Interfaze grafikoaren ordezkaritza gaituta dago';
 $string['config_uidelegation_enabled_description'] = 'Ezarpen hauen bidez BigBlueButton zerbitzariaren interfaze grafikoaren ordezkaritza gaitu edo desgaitu daiteke .';
 $string['config_userlimit'] = 'Erabiltzaile-muga';
@@ -221,9 +226,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'Zein maiztasunar
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButtonek config.php-ko aldagai global zaharkitu bat erabiltzen du. Fitxategia moldatu ezazu hurrengo bertsioetan erabilera hori ez delako onartuko.';
 $string['config_warning_curl_not_installed'] = 'Funtzionalitate honek php-ren CURL hedapena instalatuta eta gaituta egotea behar du. Ezarpenetarako sarbidea soilik baldintza hau betetzean emango da.';
 $string['config_welcome_default'] = 'Ongi-etorri mezu lehenetsia';
-$string['config_welcome_default_description'] = 'Ongi-etorri mezua parte-hartzaile bat bilera-gelan sartzean erakusten da. Eremua hutsik utziz gero BigBlueButton zerbitzarian zehaztutako mezua erakutsiko da.';
+$string['config_welcome_default_description'] = 'Ongi-etorri mezua parte-hartzaile bat bilera-gelan sartzean erakusten da. Eremua hutsik utziz gero \'mod_form_field_welcome_default\' hizkuntza-katea erakutsiko da.';
 $string['config_welcome_editable'] = 'Irakasleek lehenetsitako ongi-etorri mezua editatu dezakete';
 $string['config_welcome_editable_description'] = 'Instantzia gehitu ala eguneratzean ongi-etorri mezua editatu daiteke';
+$string['credentials_warning'] = 'Lehenetsitako zerbitzariaren kredentzialak laster iraungiko dira (ikusi goiko oharrean nola lortu ditzakezun kredentzial berriak).';
 $string['dpainfonotsigned'] = 'Plugin hau gaitu aurretik, <a href="{$a}">Blindside Networks Inc.-eko datu-prozesatzen onespena</a> irakurri eta onartu duzula baieztatu behar duzu.';
 $string['enablingbigbluebutton'] = 'BigBlueButton jarduera gaitzen';
 $string['enablingbigbluebuttondpainfo'] = 'Datu-babeserako betebeharrak betetzeko, plugin hau gaitu aurretik <a href="{$a}" target="_blank">Blindside Networks Inc.-eko datu-prozesatzen onespena</a> irakurri eta onartu duzula ziurtatu behar duzu. Gomendioetarako harremanetan jarri zaitez zure pribatutasun adituekin.';
@@ -313,6 +319,7 @@ $string['instance_type_default'] = 'Bilera-gela grabazioarekin';
 $string['instance_type_recording_only'] = 'Soilik grabazioa';
 $string['instance_type_room_only'] = 'Bilera-gela soilik';
 $string['instanceprofilewithoutrecordings'] = 'Instantzia-profil honek ezin ditu grabazioak erakutsi';
+$string['managebbbextplugins'] = 'Kudeatu BigBlueButton hedapen-pluginak';
 $string['messageprovider:instance_updated'] = 'BigBlueButton saioa eguneratu da';
 $string['messageprovider:recording_ready'] = 'BigBlueButton grabazioa eskuragarri';
 $string['minute'] = 'minutu';
@@ -414,6 +421,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'Erregistroa sort
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'Saioa sortu duen erabiltzailearen IDa.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Grabazioen inguruko metadatuak gordetzen ditu.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'Grabazioa azkenengoz aldatu zueneko erabiltzailearen IDa.';
+$string['progress_createbigbluebuttonbn'] = 'BigBlueButton jarduera ({$a}) sortzen';
 $string['recordings_from_deleted_activities'] = 'Ezabatutako jardueren grabazioak';
 $string['recordingurlnotfound'] = 'Grabazioaren URLa baliogabea da.';
 $string['removedevents'] = 'Ezabatutako ekitaldiak';
@@ -433,8 +441,12 @@ $string['search:activity'] = 'BigBlueButton - aktibitatearen informazioa';
 $string['search:tags'] = 'BigBlueButton - etiketen informazioa';
 $string['sendnotification'] = 'Bidali jakinarazpena';
 $string['settings'] = 'BigBlueButton ezarpenak';
+$string['settings_credential_warning'] = 'BigBlueButton zerbitzariaren kredentzialak laster iraungiko dira. Ikusi <a href="{$a->settingslink}" target="_blank">BigBlueButton ezarpen orokorrak (leiho berrian irekitzen da)</a>.';
+$string['settings_credential_warning_no_capability'] = 'BigBlueButton zerbitzariaren kredentzialak laster iraungiko dira. Jarri harremanetan zure guneko kudeatzailearekin.';
 $string['started_at'] = 'Hasita';
 $string['starts_at'] = 'Hasiera-data';
+$string['subplugintype_bbbext'] = 'BigBlueButton jarduera hedapena';
+$string['subplugintype_bbbext_plural'] = 'BigBlueButton jarduera hedapenak';
 $string['taskname:check_dismissed_recordings'] = 'Bilatu oraindik aurkitu gabeko grabazioak';
 $string['taskname:check_pending_recordings'] = 'Eskuratu zai dauden grabazioak';
 $string['userlimitreached'] = 'Saioa baimendutako gehieneko erabiltzaile kopurura iritsi da.';

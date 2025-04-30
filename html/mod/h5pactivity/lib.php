@@ -26,6 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 use mod_h5pactivity\local\manager;
 use mod_h5pactivity\local\grader;
+use mod_h5pactivity\xapi\handler;
 
 /**
  * Checks if H5P activity supports a specific feature.
@@ -64,7 +65,7 @@ function h5pactivity_supports(string $feature) {
         case FEATURE_BACKUP_MOODLE2:
             return true;
         case FEATURE_MOD_PURPOSE:
-            return MOD_PURPOSE_CONTENT;
+            return MOD_PURPOSE_INTERACTIVECONTENT;
         default:
             return null;
     }
@@ -143,6 +144,12 @@ function h5pactivity_delete_instance(int $id): bool {
     $activity = $DB->get_record('h5pactivity', ['id' => $id]);
     if (!$activity) {
         return false;
+    }
+
+    if ($cm = get_coursemodule_from_instance('h5pactivity', $activity->id)) {
+        $context = context_module::instance($cm->id);
+        $xapihandler = handler::create('mod_h5pactivity');
+        $xapihandler->wipe_states($context->id);
     }
 
     // Remove activity record, and all associated attempt data.
@@ -242,7 +249,7 @@ function h5pactivity_rescale_activity_grades(stdClass $course, stdClass $cm, flo
  * Implementation of the function for printing the form elements that control
  * whether the course reset functionality affects the H5P activity.
  *
- * @param object $mform form passed by reference
+ * @param MoodleQuickForm $mform form passed by reference
  */
 function h5pactivity_reset_course_form_definition(&$mform): void {
     $mform->addElement('header', 'h5pactivityheader', get_string('modulenameplural', 'mod_h5pactivity'));
@@ -277,6 +284,7 @@ function h5pactivity_reset_userdata(stdClass $data): array {
         $params = ['courseid' => $data->courseid];
         $sql = "SELECT a.id FROM {h5pactivity} a WHERE a.course=:courseid";
         if ($activities = $DB->get_records_sql($sql, $params)) {
+            $xapihandler = handler::create('mod_h5pactivity');
             foreach ($activities as $activity) {
                 $cm = get_coursemodule_from_instance('h5pactivity',
                                                      $activity->id,
@@ -284,6 +292,8 @@ function h5pactivity_reset_userdata(stdClass $data): array {
                                                      false,
                                                      MUST_EXIST);
                 mod_h5pactivity\local\attempt::delete_all_attempts ($cm);
+                $context = context_module::instance($cm->id);
+                $xapihandler->wipe_states($context->id);
             }
         }
         // Remove all grades from gradebook.
@@ -745,7 +755,7 @@ function h5pactivity_print_recent_mod_activity(stdClass $activity, int $courseid
         'userurl' => new moodle_url('/user/view.php', array('id' => $activity->user->id, 'course' => $courseid)),
         'fullname' => $activity->user->fullname];
     if (isset($activity->grade)) {
-        $template['grade'] = get_string('grade_h5p', 'h5pactivity', $activity->grade);
+        $template['grade'] = get_string('gradenoun_h5p', 'h5pactivity', $activity->grade);
     }
 
     echo $OUTPUT->render_from_template('mod_h5pactivity/reviewattempts', $template);
@@ -758,7 +768,7 @@ function h5pactivity_print_recent_mod_activity(stdClass $activity, int $courseid
  * @param int $courseid Limit the search to this course
  * @return array $recentactivity recent activity in a course.
  */
-function h5pactivity_fetch_recent_activity(array $submissions, int $courseid) : array {
+function h5pactivity_fetch_recent_activity(array $submissions, int $courseid): array {
     global $USER;
 
     $course = get_course($courseid);
@@ -815,7 +825,7 @@ function h5pactivity_fetch_recent_activity(array $submissions, int $courseid) : 
 
             if (!isset($usersgroups[$cm->groupingid][$submission->userid])) {
                 $usersgroups[$cm->groupingid][$submission->userid] =
-                    groups_get_all_groups($course->id, $submission->userid, $cm->groupingid);
+                    groups_get_all_groups($course->id, $submission->userid, $cm->groupingid, 'g.*', false, true);
             }
 
             if (is_array($usersgroups[$cm->groupingid][$submission->userid])) {
@@ -860,4 +870,14 @@ function h5pactivity_extend_settings_navigation(settings_navigation $settingsnav
         $h5pactivitynode->add(get_string('attempts_report', 'h5pactivity'), $attemptsreporturl,
             settings_navigation::TYPE_SETTING, '', 'attemptsreport');
     }
+}
+
+/**
+ * Whether the activity is branded.
+ * This information is used, for instance, to decide if a filter should be applied to the icon or not.
+ *
+ * @return bool True if the activity is branded, false otherwise.
+ */
+function h5pactivity_is_branded(): bool {
+    return true;
 }

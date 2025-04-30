@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ur', version '4.1'.
+ * Strings for component 'auth_lti', language 'ur', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -27,4 +27,3 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ltidescription'] = 'ایل ٹی آئی توثیق پلگ ان، \'Publish as LTI ٹول\' کے اندراج پلگ ان کے ساتھ، دور دراز کے صارفین کو منتخب کورسز اور سرگرمیوں تک رسائی کی اجازت دیتا ہے۔ دوسرے الفاظ میں، موڈل ایک ایل ٹی آئی ٹول فراہم کنندہ کے طور پر کام کرتا ہے۔';
 $string['pluginname'] = 'ایل ٹی آئی';
-$string['privacy:metadata'] = 'ایل ٹی آئی توثیق پلگ ان کوئی ذاتی ڈیٹا ذخیرہ نہیں کرتا ہے۔';

@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/enrol/externallib.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since Moodle 2.4
  */
-class role_external_test extends \externallib_advanced_testcase {
+final class role_external_test extends \externallib_advanced_testcase {
 
     /**
      * Tests set up
@@ -45,7 +45,7 @@ class role_external_test extends \externallib_advanced_testcase {
     /**
      * Test assign_roles
      */
-    public function test_assign_roles() {
+    public function test_assign_roles(): void {
         global $USER;
 
         $this->resetAfterTest(true);
@@ -94,7 +94,7 @@ class role_external_test extends \externallib_advanced_testcase {
     /**
      * Test unassign_roles
      */
-    public function test_unassign_roles() {
+    public function test_unassign_roles(): void {
         global $USER;
 
         $this->resetAfterTest(true);

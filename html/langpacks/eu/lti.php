@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', version '4.1'.
+ * Strings for component 'lti', language 'eu', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'Onartu kalifikazioak tresnatik';
 $string['accept_grades_admin_help'] = 'Zehaztu tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
 Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.';
+$string['accept_grades_from_tool'] = 'Baimendu {$a} kalifikazio-liburuan kalifikazioak gehitzea';
 $string['accept_grades_help'] = 'Zehaztu kanpoko tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
 Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.
@@ -46,6 +47,7 @@ $string['add_ltiadv'] = 'Gehitu LTI Advantage bat';
 $string['add_ltilegacy'] = 'Gehitu Zaharkitutako LTI (1.1/2.0) bat';
 $string['addnewapp'] = 'Gaitu kanpoko aplikazioa';
 $string['addserver'] = 'Gehitu konfiantzazko beste zerbitzari bat';
+$string['addtool'] = 'Gehitu tresna';
 $string['addtype'] = 'Gehitu aurretik konfiguratutako tresna';
 $string['allow'] = 'Baimendu';
 $string['allowsetting'] = 'Baimendu tresnek Moodlen ezarpenen 8K gordetzen.';
@@ -86,18 +88,27 @@ $string['configtoolurl'] = 'Urrutiko tresnan lehenetsitako URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
 $string['configured'] = 'Konfiguratuta';
 $string['confirmtoolactivation'] = 'Ziur zaude tresna hau aktibatu nahi duzula?';
-$string['contentitem'] = 'Eduki-Item Mezua';
 $string['contentitem_deeplinking'] = 'Estekatze Sakona (Deep Linking) onartzen du  (Content-Item Message)';
 $string['contentitem_deeplinking_help'] = 'Hautatuz gero, \'Aukeratu edukia\' aukera eskuragarri izango da kanpoko tresna bat gehitzean.';
-$string['contentitem_help'] = 'Hautatuz gero, \'Aukeratu edukia\' aukera eskuragarri izango da kanpoko tresna bat gehitzean.';
 $string['contentitem_multiple_description'] = 'Hurrengo elementuak zure ikastarora gehituko dira:';
 $string['contentitem_multiple_graded'] = 'Kalifikatutako jarduera (Gehieneko kalifikazioa: {$a})';
+$string['contentselected'] = 'Edukia aukeratuta';
 $string['course_tool_types'] = 'Ikastaroko tresnak';
 $string['courseactivitiesorresources'] = 'Ikastaroko jarduerak edo baliabideak';
+$string['courseexternaltooladd'] = 'Gehitu LTI Kanpoko tresna berria';
+$string['courseexternaltooladdsuccess'] = '{$a} gehituta.';
+$string['courseexternaltooledit'] = 'Editatu {$a}';
+$string['courseexternaltooleditsuccess'] = 'Aldaketak gorde dira.';
+$string['courseexternaltooliconalt'] = '{$a}(r)entzako ikonoa';
+$string['courseexternaltools'] = 'LTI Kanpoko tresnak';
+$string['courseexternaltoolsinfo'] = 'LTI Kanpoko tresnak zure ikastaroan integratu ditzakezun aplikazio gehigarriak dira, hala nola eduki interaktiboa edo ebaluazioak. Zure ikasleek tresna horietara sarbidea izan dezakete zure ikastarotik atera gabe.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Ez duzu tresna hau editatzeko baimenik.';
+$string['courseexternaltoolsnoviewpermissions'] = 'Ikusi ikastaroko kanpoko tresnak';
 $string['courseid'] = 'Ikastaroaren ID zenbakia';
 $string['courseinformation'] = 'Ikastaroaren informazioa';
 $string['courselink'] = 'Joan ikastarora';
 $string['coursemisconf'] = 'Ikastaroa gaizki konfiguratuta dago';
+$string['coursetooldeleted'] = '{$a} ezabatuta';
 $string['createdon'] = 'Noiz sortua';
 $string['curllibrarymissing'] = 'PHP cURL hedapena beharrezkoa da kanpoko tresnarako.';
 $string['custom'] = 'Parametro pertsonalizatuak';
@@ -123,23 +134,19 @@ $string['delegate'] = 'Utzi irakaslearen esku';
 $string['delegate_tool'] = 'Estekatze Sakonean zehaztutakoa edo Utzi irakaslearen eskuetan';
 $string['delete'] = 'Ezabatu';
 $string['delete_confirmation'] = 'Ziur zaude aurretik konfiguratutako tresna ezabatu nahi duzula?';
+$string['deletecoursetool'] = 'Ezabatu {$a}';
+$string['deletecoursetoolconfirm'] = 'Ekintza honek {$a} zure ikastaroan eskuragarri dauden LTI tresnetatik kenduko du.';
+$string['deletecoursetoolwithusageconfirm'] = 'Une honetan {$a} zure ikastaroko jardueraren batean erabiltzen ari da. Tresna hau ezabatzen baduzu, jarduera horiek funtzionatzeari utziko diote.<br><br>Ziur zaude {$a} ezabatu nahi duzula?';
 $string['deletetype'] = 'Ezabatu aurretik konfiguratutako tresna';
-$string['display_description'] = 'Erakutsi jardueraren deskribapena hastean';
-$string['display_description_help'] = 'Aukeratuz gero, goian zehaztutako jardueraren deskribapena tresna-hornitzailearen edukiaren gainean erakutsiko da.
-
-Deskribapena tresnaren abiarazleentzako argibide gehigarriak emateko erabil daiteke, baina ez da beharrezkoa.
-
-Deskribapena ez da inoiz erakusten tresnaren hasierako edukiontzia leiho berri batean dagoenean.';
-$string['display_name'] = 'Erakutsi jardueraren izena';
-$string['display_name_help'] = 'Aukeratuz gero, goian zehaztutako jarduera-izena tresna-hornitzailearen edukiaren gainean erakutsiko da.
-
-Baliteke tresna-hornitzaileak izenburua ere erakustea. Aukera honek jardueraren izenburua bi aldiz erakustea saihets dezake.
-
-Izenburua da ez da inoiz erakusten tresnaren hasierako edukiontzia leiho berri batean dagoenean.';
+$string['display_description'] = 'Erakutsi jardueraren deskribapena ikaslea tresnan sartzen denean';
+$string['display_description_help'] = 'Tresna honetako edukiak ikastaroaren orri baten barruan enbotatuta erakusten da. Ezarpen honek jardueraren deskribapena orri horretan erakutsiko den ala ez zehazten du.';
+$string['display_name'] = 'Erakutsi jardueraren izena ikaslea tresnan sartzen denean';
+$string['display_name_help'] = 'Tresna honetako edukiak ikastaroaren orri baten barruan enbotatuta erakusten da. Ezarpen honek jardueraren izena orri horretan erakutsiko den ala ez zehazten du.';
 $string['domain_mismatch'] = 'Hasierako URLaren domeinua ez da dator bat tresnaren ezarpenekin.';
 $string['donot'] = 'Ez bidali';
 $string['donotaccept'] = 'Ez onartu';
 $string['donotallow'] = 'Ez baimendu';
+$string['dontshowinactivitychooser'] = 'Ez erakutsi jarduera-hautatzailean';
 $string['duplicateregurl'] = 'Erregistro URL hau jadanik erabiltzen ari da';
 $string['dynreg_update_btn_new'] = 'Erregistratu kanpoko tresna berri gisa';
 $string['dynreg_update_btn_update'] = 'Eguneratu';
@@ -150,6 +157,11 @@ $string['dynreg_update_url'] = 'URL oinarria';
 $string['dynreg_update_version'] = 'LTI bertsioa';
 $string['dynreg_update_warn_dupdomain'] = 'Ez da gomendagarria domeinu bereko kanpoko tresna anitz izatea.';
 $string['editdescription'] = 'Egin klik hemen tresna deskribatzeko';
+$string['editmanualinstancedeprecationwarning'] = 'Eskuz konfiguratutako Kanpoko tresna jarduerak dagoeneko ez dira onartzen. Ez kezkatu, jarduera honek oraindik ere dagoen moduan funtzionatuko du, baina aurrerantzean ezingo duzu hemendik tresnaren konfigurazioan aldaketarik egin.
+<br><br>
+Tresnan aldaketak egiteko, edo horrekin jarduera berriak sortzeko, tresna zure ikastarora gehitu behar da Ikastaroa > Gehiago > LTI Kanpoko Tresnak ataletik. Ondoren, jarduera berriak sortu ahalko dituzu tresna Jarduera hautatzailetik zuzenean aukeratuta.
+<br><br>
+LTI Kanpoko tresnen inguruan gehiago irakurri dezakezu dokumentazioaren <a href="{$a}" target="_blank">Kanpoko tresnak</a> atalean.';
 $string['edittype'] = 'Editatu aurretik konfiguratutako tresna';
 $string['embed'] = 'Enbotatu';
 $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
@@ -157,6 +169,7 @@ $string['enableemailnotification'] = 'Bidali jakinarazpenak posta elektroniko bi
 $string['enableemailnotification_help'] = 'Gaituz gero, ikasleek posta elektroniko bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
 $string['enterkeyandsecret'] = 'Idatzi kontsumitzaile-gakoa eta sekretu partekatua';
 $string['enterkeyandsecret_help'] = 'Kontsumitzaile-gakoa edo/eta sekretu partekatua eman bazaizu, sartu hemen';
+$string['entitycourseexternaltools'] = 'LTI Kanpoko tresnak';
 $string['errorbadurl'] = 'URLa ez da tresna edo kartutxo baliagarria';
 $string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da egokia.';
 $string['errorinvaliddata'] = 'Datu baliogabea: {$a}';
@@ -238,11 +251,11 @@ $string['launchinpopup_help'] = 'Hasierako edukiontziak tresnaren itxurari eragi
 Nabigatzailearen arabera, fitxa edo popup leiho berri batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
 $string['launchoptions'] = 'Abiarazte-aukerak';
-$string['leaveblank'] = 'Hutsik utzi behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
 $string['lti:addinstance'] = 'Gehitu kanpoko tresna berri bat';
 $string['lti:addmanualinstance'] = 'Gehitu eskuz konfiguratutako tresna bat';
+$string['lti:addmanualinstanceprohibitederror'] = 'Ikastaroko tresnaren definiziorik gabeko eskuzko tresnen sorrera dagoeneko ez da onartzen. Lehenik eta behin ikastaroko tresna bat sortu ezazu ondoren horren jarduera-instantziak sortzeko.';
 $string['lti:addpreconfiguredinstance'] = 'Gehitu aurretik konfiguratutako tresna bat';
 $string['lti:admin'] = 'Tresna abiaraztean izan zaitez kudeatzailea';
 $string['lti:grade'] = 'Ikusi kanpoko tresnak itzuli dituen kalifikazioak';
@@ -308,6 +321,7 @@ $string['no_tp_configured'] = 'Ez da ezarri kanpoko tresnen erregistrorik.';
 $string['no_tp_pending'] = 'Ez dago zain kanpoko tresnaren erregistrorik.';
 $string['no_tp_rejected'] = 'Ez da kanpoko tresnen erregistrorik gaitzetsi.';
 $string['noattempts'] = 'Ez da saiakerarik izan tresna honen instantzian';
+$string['nocourseexternaltoolsnotice'] = 'Oraindik ez dago LTI Kanpoko tresnarik.';
 $string['noltis'] = 'Ez dago kanpoko tresnaren instantziarik';
 $string['noprofileservice'] = 'Ez da profil-zerbitzua aurkitu';
 $string['noservers'] = 'Ez da zerbitzaririk aurkitu';
@@ -417,6 +431,8 @@ Kontsumitzaile-gakoa tresna-hornitzaileak eman behar du. Kontsumitzaile-gakoa lo
 
 Moodlekin komunikazio segurua eskatzen ez duten zerbitzu gehigarririk ematen ez duten tresnek (kalifikazio-txostenek bezala) ez dute baliabide-gakorik behar izaten.';
 $string['resourceurl'] = 'Baliabidearen URLa';
+$string['restricttocategory'] = 'Murriztu kategoriara';
+$string['restricttocategory_help'] = 'Tresna honen erabilera kategoria bateko ikastaroetara mugatzeko, aukeratu zerrendatik ikastaro-kategoria(k).';
 $string['return_to_course'] = 'Egin klik <a href="{$a->link}" target="_top">hemen</a> ikastarora itzultzeko.';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
@@ -427,6 +443,7 @@ $string['secure_launch_url_help'] = 'URL tresnaren antzekoa, baina URL tresnaren
 
 URL tresnan https helbidea ezar daiteke SSLren bidez abiaraztea behartzeko, eta eremu hau hutsik utz daiteke.';
 $string['selectcontent'] = 'Aukeratu edukia';
+$string['selectcontentvalidationerror'] = 'Jarduera honentzako edukia aukeratu behar duzu.';
 $string['send'] = 'Bidali';
 $string['services'] = 'Zerbitzuak';
 $string['services_help'] = 'Aukeratu tresna-hornitzaileari eskaini nahi dizkiozun zerbitzuak. Zerbitzu bat baino gehiago aukera daiteke.';
@@ -462,6 +479,7 @@ $string['show_in_course_lti2'] = 'Tresnaren ezarpenen erabilera';
 $string['show_in_course_lti2_help'] = 'Tresna hau jarduera-hautatzailean erakutsi daiteke irakasleak ikastaro batean txertatzea aukera dezan edo aurrez konfiguratutako zerrenda zabalgarriko menuan kanpoko tresna bat ikastarora gehitzean.';
 $string['show_in_course_no'] = 'Ez erakutsi. Erabili soilik dagokion tresnaren URLa sartzen denean.';
 $string['show_in_course_preconfigured'] = 'Erakutsi aurrez konfiguratutako tresna bezala kanpoko tresna bat gehitzean';
+$string['showinactivitychooser'] = 'Erakutsi jarduera-hautatzailean';
 $string['sitehost'] = 'Gunearen hostalari-izena';
 $string['siteid'] = 'Gunearen IDa';
 $string['size'] = 'Tamainaren parametroak';
@@ -510,6 +528,7 @@ $string['toolsetup'] = 'Kanpoko tresnaren ezarpenak';
 $string['tooltypeadded'] = 'Aurretik konfiguratutako tresna gehitu da';
 $string['tooltypedeleted'] = 'Aurretik konfiguratutako tresna ezabatu da';
 $string['tooltypenotdeleted'] = 'Ezin izan da aurrez ezarritako tresna ezabatu';
+$string['tooltypenotfounderror'] = 'Jarduera honetan erabilitako LTI tresna ezabatua izan da. Laguntza behar baduzu, jarri harremanetan zure irakaslearekin ala guneko kudeatzailearekin.';
 $string['tooltypes'] = 'Tresnak';
 $string['tooltypeupdated'] = 'Aurrez ezarritako tresna eguneratu da';
 $string['toolurl'] = 'Tresnaren URLa';
@@ -548,6 +567,7 @@ $string['unabletocreatetooltype'] = 'Ezin da tresna sortu';
 $string['unabletofindtooltype'] = '{$a->id}(e)rako tresna ezin izan da aurkitu';
 $string['unknownstate'] = 'Egoera ezezaguna';
 $string['update'] = 'Eguneratu';
+$string['usage'] = 'Erabilera kopurua';
 $string['useraccountinformation'] = 'Erabiltzaile-kontuaren informazioa';
 $string['userpersonalinformation'] = 'Erabiltzailearen informazio pertsonala';
 $string['using_tool_cartridge'] = 'Tresnaren kartutxoa erabiltzen';

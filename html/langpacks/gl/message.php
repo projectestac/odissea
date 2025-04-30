@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', version '4.1'.
+ * Strings for component 'message', language 'gl', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Contactos';
 $string['conversationactions'] = 'Menú de accións para conversa';
 $string['decline'] = 'Declinar';
 $string['defaultmessageoutputs'] = 'Axustes das notificacións';
-$string['defaults'] = 'Predeterminados';
 $string['deleteallconfirm'] = 'Confirma que quere eliminar toda esta conversa? Isto non a eliminará para outros participantes na conversa.';
 $string['deleteallmessages'] = 'Eliminar todas as mensaxes';
 $string['deleteallselfconfirm'] = 'Confirma que quere eliminar toda esta conversa persoal?';
@@ -68,12 +67,12 @@ $string['disableall'] = 'Desactivar as notificacións';
 $string['disabled'] = 'A mensaxería está desactivada neste sitio';
 $string['disallowed'] = 'Desbloqueado';
 $string['editmessages'] = 'Editar as mensaxes';
-$string['emailtagline'] = 'Esta é unha copia da mensaxe que se lle enviou en «{$a->sitename}». Vaia a {$a->url} para contestar.';
+$string['emailtagline'] = 'Esta é unha copia dunha mensaxe enviada a vostede no sitio {$a->sitename}. Vaia a <a href="{$a->url}">{$a->url}</a> para responder.';
 $string['enabled'] = 'Activado';
 $string['errorcallingprocessor'] = 'Produciuse un erro ao chamar á saída definida';
 $string['errorconversationdoesnotexist'] = 'Non existe a conversa';
 $string['errormessagetoolong'] = 'A mensaxe é máis longa que o máximo permitido.';
-$string['errortranslatingdefault'] = 'Produciuse un erro ao traducir o axuste predeterminado fornecido polo engadido, usando os valores predeterminados do sistema no seu canto.';
+$string['errortranslatingdefault'] = 'Produciuse un erro ao traducir o axuste predeterminado fornecido polo complemento, usando os valores predeterminados do sistema no seu canto.';
 $string['eventgroupmessagesent'] = 'Mensaxe enviada ao grupo';
 $string['eventmessagecontactadded'] = 'Contacto de mensaxe engadido';
 $string['eventmessagecontactremoved'] = 'Contacto de mensaxe retirado';
@@ -97,11 +96,7 @@ $string['info'] = 'Información do usuario';
 $string['isnotinyourcontacts'] = '{$a} non está nos seus contactos';
 $string['loadmore'] = 'Cargar máis';
 $string['loggedin'] = 'En liña';
-$string['loggedin_help'] = 'Configurar como quere recibir as notificacións cando estea conectado a Moodle';
-$string['loggedindescription'] = 'Cando vostede accedeu a Moodle';
 $string['loggedoff'] = 'Sen conexión';
-$string['loggedoff_help'] = 'Configurar como quere recibir as notificacións cando non estea rexistrado no Moodle';
-$string['loggedoffdescription'] = 'Cando non está rexistrado no Moodle';
 $string['managemessageoutputs'] = 'Preferencias de notificación predeterminadas';
 $string['message'] = 'Mensaxe';
 $string['messagecontactrequest'] = '{$a->user} solicita ser engadido como contacto. Visite a súa páxina de <a href="{$a->url}">solicitudes de contacto</a> para responder á solicitude';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Mensaxe enviada a 1 persoa';
 $string['sendbulkmessagesingle'] = 'Enviar unha mensaxe a 1 persoa';
 $string['sendcontactrequest'] = 'Enviar a solicitude de contacto';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Enviando «{$a->provider}» mediante «{$a->processor}»';
 $string['sendingviaenabled'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» estado activado';
 $string['sendingvialocked'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» estado bloqueado';
-$string['sendingviawhen'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» cando {$a->state}';
 $string['sendmessage'] = 'Enviar mensaxe';
 $string['sendmessageto'] = 'Enviar mensaxe a {$a}';
 $string['sendmessagetopopup'] = 'Enviar mensaxe a {$a} - nova xanela';
@@ -279,7 +272,7 @@ $string['viewmessageswith'] = 'Ver mensaxes con {$a}';
 $string['viewnotificationresource'] = 'Ir a: {$a}';
 $string['viewunreadmessageswith'] = 'Ver mensaxes non lidas con {$a}';
 $string['wouldliketocontactyou'] = 'Quere poñerse en contacto con vostede';
-$string['writeamessage'] = 'Escriba unha mensaxe ...';
+$string['writeamessage'] = 'Escriba unha mensaxe …';
 $string['you'] = 'Vostede:';
 $string['youhaveblockeduser'] = 'Vostede bloqueou a este usuario.';
 $string['yourcontactrequestpending'] = 'A súa solicitude de contacto con {$a} está pendente';

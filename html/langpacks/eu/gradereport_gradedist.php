@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'eu', version '4.1'.
+ * Strings for component 'gradereport_gradedist', language 'eu', version '4.4'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -42,6 +42,7 @@ $string['contextbuttontitle'] = 'Grafikoaren testuinguru-menua';
 $string['coursesum'] = 'Ikastarorako batura';
 $string['coverage'] = 'Kalifikazioen banaketa berriak ez ditu kalifikazio guztiak barne hartzen!';
 $string['coverage_export'] = 'Letretan barne hartu gabeko elementuak:';
+$string['csv'] = 'csv';
 $string['decimals'] = 'Beheko muga 0 eta 100 arteko zenbakia izan behar da. Gehienez 2 hamartar baimentzen dira.';
 $string['description'] = 'Erakutsi beharreko balioak';
 $string['download'] = 'Jaitsi';
@@ -74,6 +75,7 @@ $string['newletterssubmitted'] = 'Kalifikazio-letra berriak bidali dira';
 $string['newletterssubmitted_description'] = '{$a->userid} IDa duen erabiltzaileak kalifikazio-letra berriak bidali ditu.';
 $string['nogroupingentry'] = 'Talde-multzorik ez';
 $string['notification'] = 'Oharra: Kalifikazio-letren definizioak ikastaroko elementu guztietan aplikatuko dira.';
+$string['ods'] = 'ods';
 $string['p'] = '(%)';
 $string['percent'] = 'Ehunekoa';
 $string['pluginname'] = 'Kalifikazioen banaketa';
@@ -86,5 +88,7 @@ $string['privacy:null_reason'] = 'Plugin honek ez du datu pertsonalik biltzen. I
 $string['saved'] = 'Kalifikazio-letrak ondo aldatu dira.';
 $string['showgradeitem'] = 'Erakutsi kalifikazio-elementua';
 $string['showgradeitem_description'] = 'Erakutsi kalifikazioaren erakuste-mota kalifikazio-elementuaren aukera gisa.';
-$string['submitanddownload'] = 'Gorde aldaketak';
+$string['showgradeitemtype'] = 'Erakutsi kalifikazio-elementu mota';
+$string['showgradeitemtype_help'] = 'Erakutsi kalifikazio-elementu mota hala nola galdetegia, zeregina...';
 $string['sum'] = 'Batura';
+$string['xlsx'] = 'xlsx';

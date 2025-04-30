@@ -70,11 +70,9 @@ h4 {
 #custom-header .image-wrapper {
     display: flex;
     justify-content: flex-end;
-    height: 100%;
 }
 
 #custom-header .image-wrapper img {
-    height: 100%;
     object-fit: cover;
 }
 
@@ -251,18 +249,24 @@ nav.fixed-top.navbar {
 
     .social-icons {
         text-align: right;
+
         img,
         i {
             text-align: center;
-            margin-left: 5px;
+            margin-left: 4px;
             margin-bottom: 3px;
-            height: 32px;
-            width: 32px;
+            height: 35px;
+            width: 35px;
             line-height: 32px;
             font-size: 20px;
             color: $white;
             vertical-align: middle;
             border-radius: 60px;
+        }
+
+        .icon {
+            max-width: 32px;
+            max-height: 32px;
         }
 
         i.fa-globe {
@@ -291,7 +295,13 @@ nav.fixed-top.navbar {
         }
 
         i.fa-twitter {
-            background-color: #55acee;
+            font-family: sans-serif;
+            background-color: #000000;
+        }
+
+        i.fa-twitter::before {
+            content: "𝕏";
+            font-size: 1.2em;
         }
 
         i.fa-pinterest {
@@ -408,24 +418,6 @@ nav.fixed-top.navbar {
 #goto-top-link {
     /* Ensure image "to top" is always on top of all the content */
     z-index: 1000;
-}
-
-.availabilityinfoXTEC {
-    margin-left: 0;
-    margin-right: 0.2rem;
-}
-
-.availabilityinfoXTEC .badge {
-    min-width: 4rem;
-    text-align: center;
-    margin-left: 0.2rem;
-}
-
-a.dimmed + .availabilityinfoXTEC .badge-info {
-    background-color: #999;
-}
-.availabilityinfoXTEC .badge-info.isrestricted {
-    background-color: #999;
 }
 
 /* Login */
@@ -667,8 +659,7 @@ div#page.container-fluid section#region-main ul.nav-tabs li.active a {
     padding: 5px 10px;
 }
 
-.path-local-alexandriaimporter div#page.container-fluid section#region-main div#alexandria_restore
-.row {
+.path-local-alexandriaimporter div#page.container-fluid section#region-main div#alexandria_restore .row {
     padding: 1.0em;
 }
 
@@ -711,6 +702,37 @@ div#alexandria_restore div.tab-content #accordion .accordion-group .container-fl
 
 .activity-item:not(.activityinline) {
     padding: 0.4rem;
+}
+
+/* Rounded corners */
+
+.coursebox {
+    border-radius: .7rem;
+}
+
+.sitetopic .section-item {
+    border-radius: .7rem;
+}
+
+.forumpost {
+    border-radius: .7rem;
+}
+
+.block {
+    border-radius: .7rem;
+}
+
+.card-grid  {
+    border-radius: .7rem;
+}
+
+.card-carousel,
+.course-card {
+    border-radius: .7rem;
+}
+
+.card-img-top {
+    border-radius: .7rem .7rem 0 0;
 }
 
 /* Fix for menu of report builder */

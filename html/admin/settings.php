@@ -7,14 +7,6 @@ $section = required_param('section', PARAM_SAFEDIR);
 $return = optional_param('return','', PARAM_ALPHA);
 $adminediting = optional_param('adminedit', -1, PARAM_BOOL);
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2020.08.08 @aginard
-if (($section == 'messagesettingairnotifier') && !get_protected_agora()) {
-    print_error('accessdenied', 'admin');
-    die;
-}
-// ************ FI
-
 /// no guest autologin
 require_login(0, false);
 $PAGE->set_context(context_system::instance());

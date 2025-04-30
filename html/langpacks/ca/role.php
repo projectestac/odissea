@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', version '4.1'.
+ * Strings for component 'role', language 'ca', version '4.4'.
  *
  * @package     role
  * @category    string
@@ -114,6 +114,7 @@ $string['checksystempermissionsfor'] = 'Comprova els permisos de {$a->fullname}'
 $string['checkuserspermissionshere'] = 'Comprova els permisos que {$a->fullname} té en aquest {$a->contextlevel}';
 $string['chooseroletoassign'] = 'Escolliu un rol per assignar';
 $string['cohort:assign'] = 'Afegir i eliminar membres de la cohort';
+$string['cohort:configurecustomfields'] = 'Configurar els camps personalitzats de la cohort';
 $string['cohort:manage'] = 'Crear, esborrar i moure cohorts';
 $string['cohort:view'] = 'Mostrar les cohorts globals al lloc';
 $string['comment:delete'] = 'Esborrar comentaris';
@@ -152,7 +153,9 @@ $string['competency:userevidencemanage'] = 'Gestionar evidències d\'aprenentatg
 $string['competency:userevidencemanageown'] = 'Gestionar evidències d\'aprenentatge previ pròpies';
 $string['competency:userevidenceview'] = 'Visualitzar evidències d\'aprenentatge propi d\'un usuari';
 $string['confirmaddadmin'] = 'Realment voleu afegir l\'usuari <strong>{$a}</strong> com a nou administrador del lloc?';
+$string['confirmaddadmins'] = 'Esteu segur que voleu afegir els següents usuaris a la llista d\'administradors del lloc?';
 $string['confirmdeladmin'] = 'Realment voleu eliminar l\'usuari <strong>{$a}</strong> de la llista d\'administradors del lloc?';
+$string['confirmremoveadmins'] = 'Esteu segur que voleu eliminar els següents usuaris de la llista d\'administradors del lloc?';
 $string['confirmroleprevent'] = 'Realment voleu eliminar <strong>«{$a->role}»</strong> de la llista de rols permesos per la capacitat «{$a->cap}» en el context «{$a->context}»?';
 $string['confirmroleunprohibit'] = 'Realment voleu eliminar <strong>«{$a->role}»</strong> de la llista de rols prohibits per la capacitat «{$a->cap}» en el context «{$a->context}»?';
 $string['confirmunassign'] = 'Esteu segur que voleu eliminar aquest rol d\'aquest usuari?';
@@ -213,6 +216,7 @@ $string['course:view'] = 'Mostrar els cursos sense participació';
 $string['course:viewcoursegrades'] = 'Veure qualificacions de cursos';
 $string['course:viewhiddenactivities'] = 'Veure activitats ocultes';
 $string['course:viewhiddencourses'] = 'Veure cursos ocults';
+$string['course:viewhiddengroups'] = 'Mostrar els grups ocults';
 $string['course:viewhiddensections'] = 'Veure seccions ocultes';
 $string['course:viewhiddenuserfields'] = 'Veure camps d\'usuari ocults';
 $string['course:viewparticipants'] = 'Veure participants';
@@ -252,6 +256,7 @@ $string['eventroleallowswitchupdated'] = 'Habilita la commutació de rols';
 $string['eventroleallowviewupdated'] = 'Habilita la visualització de rols';
 $string['eventroleassigned'] = 'Rol assignat';
 $string['eventrolecapabilitiesupdated'] = 'S\'han actualitzat les capacitats del rol';
+$string['eventrolecreated'] = 'S\'ha creat el rol';
 $string['eventroledeleted'] = 'Rol suprimit';
 $string['eventroleunassigned'] = 'Rol sense assignar';
 $string['eventroleupdated'] = 'El rol s\'ha actualitzat';
@@ -310,6 +315,7 @@ $string['manager'] = 'Gestor';
 $string['managerdescription'] = 'Els gestors poden accedir als cursos i modificar-los, però normalment no hi participen.';
 $string['manageroles'] = 'Gestiona els rols';
 $string['maybeassignedin'] = 'Tipus de context en què es pot assignar aquest rol';
+$string['moodlenet:shareactivity'] = 'Compartir activitats a MoodleNet';
 $string['morethan'] = 'Més que {$a}';
 $string['multipleroles'] = 'Rols múltiples';
 $string['my:configsyspages'] = 'Configura les plantilles del sistema per a les pàgines de Tauler';

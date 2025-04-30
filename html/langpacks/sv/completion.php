@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'sv', version '4.1'.
+ * Strings for component 'completion', language 'sv', version '4.4'.
  *
  * @package     completion
  * @category    string
@@ -249,4 +249,3 @@ $string['viewingactivity'] = 'Visar {$a}';
 $string['withconditions'] = 'Med villkor';
 $string['writingcompletiondata'] = 'Skriver slutförandedata';
 $string['xdays'] = '{$a} dagar';
-$string['yourprogress'] = 'Dina framsteg';

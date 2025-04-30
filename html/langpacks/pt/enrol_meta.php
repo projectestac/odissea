@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'pt', version '4.1'.
+ * Strings for component 'enrol_meta', language 'pt', version '4.4'.
  *
  * @package     enrol_meta
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Adicionar ao grupo';
-$string['coursesort'] = 'Ordenar a lista de disciplinas';
-$string['coursesort_help'] = 'Esta opção determina se a lista de disciplinas em que pode sincronizar as inscrições estão ordenadas por ordem predefinida (ou seja, a ordem definida em Administração do Site / Disciplinas / Gerir disciplinas e categorias) ou por ordem alfabética de configuração da disciplina.';
+$string['coursesort'] = 'Ordem da lista de disciplinas de origem';
+$string['coursesort_help'] = 'Ao sincronizar a disciplina de origem com a disciplina de destino, como devem ser ordenadas as disciplinas de origem?';
 $string['creategroup'] = 'Criar um novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} disciplina {$a->name}';
 $string['enrolmetasynctask'] = 'Sincronização de inscrições com disciplina';
@@ -36,13 +36,15 @@ $string['meta:config'] = 'Configurar instâncias de Sincronização com discipli
 $string['meta:selectaslinked'] = 'Selecionar a disciplina para sincronizar inscrições';
 $string['meta:unenrol'] = 'Cancelar inscrição de utilizadores suspensos';
 $string['nosyncroleids'] = 'Papéis que não são sincronizados';
-$string['nosyncroleids_desc'] = 'Por predefinição todas as atribuições de papéis feitas ao nível da disciplina são sincronizadas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
+$string['nosyncroleids_desc'] = 'Selecione quaisquer papéis que não devam ser sincronizadas entre a disciplina de origem e o disciplina de destino.';
 $string['pluginname'] = 'Sincronização com disciplina';
-$string['pluginname_desc'] = 'Este módulo de inscrição permite sincronizar inscrições e atribuições de papéis entre duas disciplinas.';
-$string['privacy:metadata:core_group'] = 'O módulo de inscrição por sincronização pode criar um novo grupo ou usar um grupo existente para adicionar todos os participantes da disciplina vinculada.';
+$string['pluginname_desc'] = 'O módulo de inscrição por sincronização permite sincronizar inscrições e atribuições de papéis entre duas disciplinas.';
+$string['privacy:metadata:core_group'] = 'O módulo de inscrição por sincronização pode criar um novo grupo ou usar um grupo existente para adicionar todos os participantes da disciplina de origem.';
+$string['samemetacourse'] = 'Não pode adicionar sincronização com disciplina com a própria disciplina.';
 $string['syncall'] = 'Sincronizar todos os utilizadores inscritos';
-$string['syncall_desc'] = 'Se ativar esta opção, todos os utilizadores inscritos são sincronizados mesmo que não possuam nenhum papel na disciplina de origem das inscrições. Caso contrário, apenas os utilizadores que possuem pelo menos um papel sincronizado na disciplina de origem serão inscritos na disciplina.';
+$string['syncall_desc'] = 'Se ativar esta opção, todos os utilizadores inscritos são sincronizados mesmo que não possuam nenhum papel na disciplina de origem. Caso contrário, apenas serão inscritos na disciplina os utilizadores que tenham pelo menos um papel na disciplina de origem .';
+$string['unknownmetacourse'] = 'Nome curto da meta-disciplina desconhecido';
 $string['wscannotcreategroup'] = 'Sem permissão para criar grupo na disciplina vinculada com ID = {$a}.';
-$string['wsinvalidcourse'] = 'O ID da disciplina = {$a} não existe ou sem permissão para vincular na meta-inscrição.';
-$string['wsinvalidmetacourse'] = 'O ID da meta-disciplina = {$a} não existe ou sem permissão para adicionar instância de inscrição.';
+$string['wsinvalidcourse'] = 'O ID da disciplina = {$a} não existe ou não tem permissão para vincular na meta-inscrição.';
+$string['wsinvalidmetacourse'] = 'O ID da meta-disciplina = {$a} não existe ou não tem permissão para adicionar instância de inscrição.';
 $string['wsnoinstancesspecified'] = 'Sem instâncias especificadas';

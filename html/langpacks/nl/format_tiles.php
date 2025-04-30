@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'nl', version '4.1'.
+ * Strings for component 'format_tiles', language 'nl', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -259,7 +259,6 @@ $string['imagedeletedfrom'] = 'Afbeelding verwijderd van "{$a}"';
 $string['imagesavedfor'] = 'Afbeelding bewaard voor {$a}';
 $string['imagesize'] = 'Afmeting afbeelding';
 $string['jsactivate'] = 'Geanimeerde navigatie - zet uit';
-$string['jsdeactivate'] = 'Geanimeerde navigatie - zet aan';
 $string['jsdeactivated'] = 'Je hebt geanimeerde navigatie uitgeschakeld in je account';
 $string['jsnavsettings'] = 'JavaScriptnavigatie';
 $string['jsreactivated'] = 'Je hebt geanimeerde navigatie ingeschakeld in je account. Dit kan sneller zijn in gebruik. Het vereist dat JavaScript ingeschakeld staat.';
@@ -308,6 +307,7 @@ $string['phototitletitlelineheight'] = 'Lijn hoogte titel';
 $string['phototitletitlepadding'] = 'Verticale afstand titels';
 $string['picknewicon'] = 'Kies een nieuw icoon';
 $string['picknewiconphoto'] = 'Kies een nieuw icoon of achtergrondfoto';
+$string['plugin_description'] = 'Een visueel rijk cursusformat, waar secties en activiteiten worden getoond als tegels, met aanpasbare foto\'s, iconen en kleuren.';
 $string['pluginname'] = 'Tegel formaat';
 $string['previoustopic'] = 'Vorig onderwerp';
 $string['privacy:metadata:preference:format_tiles_stopjsnav'] = 'Of de gebruiker geanimeerde JavaScriptnavigatie heeft uitgeschakeld.';
@@ -361,11 +361,13 @@ $string['showoverallprogress_desc'] = 'Toon "Algemene voortgang %" indicator aan
 $string['showprogresssphototiles_desc'] = 'Als deze optie is ingeschakeld, wordt de vooruitgang getoond op de fototegels (vb: Vooruitgang 2/5)';
 $string['showseczerocoursewide'] = 'Toon sectie nul boven alle andere secties';
 $string['showseczerocoursewide_desc'] = 'Indien aangevinkt, wordt sectie nul (allerbovenste sectie) getoond op de cursus landingspagina en aan de bovenkant van <b>elke cursussectiepagina</b> (ook dus boven elke tegel inhoud.) Indien niet aangevinkt (aanbevolen), toont sectie nul alleen op de cursus landingspagina';
-$string['showseparatewin'] = 'Toon bestand in een apart venster';
+$string['showseparatewin'] = 'Toon in apart venster';
 $string['sitename'] = 'Site-naam';
 $string['snapwarning'] = 'Het is misschien mogelijk om je cursus in Tegels-indeling te bewerken met een ander thema en daarna terug te schakelen naar Snap-thema als je klaar bent met bewerken.';
 $string['snapwarning_help'] = 'Theme_settings # Allow_user_themes';
 $string['style'] = 'Stijl';
+$string['subtileiconcolourbackground'] = 'Sub-tegeliconen - gebruik niet-transparant kleurige cirkels';
+$string['subtileiconcolourbackground_desc'] = 'Indien aangevinkt, worden sub-tegeliconen als witte iconen in een niet-transparante achtergrond cirkel. Anders, tonen iconen (1) van zichzelf gekleurd en (2) in een cirkel die niet gevuld is.';
 $string['subtileszeczerotoggled'] = 'Topsectie omgeschakeld van lijst naar sub-tegelformat';
 $string['suremigratelegacyoptions'] = 'Weet je zeker dat je tegelfoto\'s en icoonkeuzes wilt migreren voor deze cursus?';
 $string['sureresetcolours'] = 'Weet je zeker dat je de kleur van cursustegels wilt opnieuw instellen naar de standaard? Dit heeft effect op {$a} cursussen';
@@ -378,6 +380,7 @@ $string['tileicon_help'] = 'Geselecteerd onderdeel wordt overschreven, alleen vo
 $string['tileicons'] = 'Tegeliconen';
 $string['tileoutcome'] = 'Uitslag voor deze tegel';
 $string['tileoutcome_help'] = 'Indien je een competentie selecteert voor deze tegel, ben je in staat om een set van <em>filterknoppen</em> te tonen, 1 voor elke competentie, die indien ingedrukt de tegels filtert die gekoppeld zijn aan de competentie';
+$string['tileselecttip'] = 'Wanneer in bewerkingsmodus, klik dan in de cursus  op het icoon of de foto om te wijzigen. Het scherm om een nieuw icoon te kiezen verschijnt.';
 $string['tilesformatregistration'] = 'Tegelsformat registratie';
 $string['tilesreset'] = 'Tegels & iconen zijn opnieuw ingesteld voor deze cursus';
 $string['tilestyle'] = 'Tegelstijl';

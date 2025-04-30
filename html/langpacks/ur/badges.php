@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ur', version '4.1'.
+ * Strings for component 'badges', language 'ur', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = 'اعمال';
 $string['activate'] = 'رسائی کو فعال کریں';
 $string['activatesuccess'] = 'بیجز تک رسائی کامیابی کے ساتھ فعال کر دی گئی۔';
 $string['addalignment'] = 'بیرونی مہارت یا معیاری شامل کریں';
-$string['addbackpack'] = 'بیک پیک شامل کریں';
 $string['addbadge'] = 'بیجز شامل کریں';
 $string['addbadge_help'] = 'ان تمام بیجز کو منتخب کریں جو اس بیج کی ضرورت میں شامل کیے جائیں۔ متعدد آئٹمز کو منتخب کرنے کے لیے CTRL کلید کو دبائے رکھیں۔';
 $string['addbadgecriteria'] = 'بیج کا معیار شامل کریں';
@@ -109,7 +108,6 @@ $string['backpackemailverifytokenmismatch'] = 'آپ کے کلک کردہ لنک 
 $string['backpackexporterror'] = 'بیج کو بیک پیک میں برآمد نہیں کر سکتے';
 $string['backpackimport'] = 'بیج درآمد کی ترتیبات';
 $string['backpackimport_help'] = 'بیک پیک کنکشن کامیابی کے ساتھ قائم ہونے کے بعد، آپ کے بیک پیک کے بیجز آپ کے بیجز کے صفحہ اور آپ کے پروفائل صفحہ پر دکھائے جا سکتے ہیں۔ اس علاقے میں، آپ اپنے بیک پیک سے بیجز کے وہ مجموعے منتخب کر سکتے ہیں جنہیں آپ اپنے پروفائل میں ڈسپلے کرنا چاہتے ہیں۔';
-$string['backpackneedsupdate'] = 'اس پروفائل سے منسلک بیک پیک سائٹ کے بیک پیک سے میل نہیں کھاتا۔ آپ کو بیک پیک کو منقطع اور دوبارہ جوڑنے کی ضرورت ہے۔';
 $string['backpackprovider'] = 'بیک پیک فراہم کنندہ';
 $string['backpacksettings'] = 'بیک پیک ترتیبات';
 $string['backpackweburl'] = 'بیک پیک یو آر ایل';
@@ -252,8 +250,6 @@ $string['enablebadges'] = 'بیجز کو فعال کریں';
 $string['endorsement'] = 'توثیق';
 $string['error:backpackdatainvalid'] = 'بیگ سے ڈیٹا کی واپسی غلط تھی۔';
 $string['error:backpackemailnotfound'] = 'ای میل \'{$a}\' ایک بیگ سے وابستہ نہیں ہے۔ آپ کو اس اکاؤنٹ کے لیے <a href="http://backpack.openbadges.org">بیک پیک بنانا ہوگا</a> یا کسی اور ای میل ایڈریس کے ساتھ سائن ان کرنا ہوگا۔';
-$string['error:backpacknotavailable'] = 'آپ کی سائٹ انٹرنیٹ سے قابل رسائی نہیں ہے، اس لیے اس سائٹ سے جاری کردہ کسی بھی بیج کی بیرونی بیگ کی خدمات سے تصدیق نہیں کی جا سکتی ہے۔';
-$string['error:backpackproblem'] = 'آپ کے بیگ کے سروس فراہم کنندہ سے منسلک ہونے میں ایک مسئلہ تھا۔ براہ کرم کچھ دیر بعد کوشش کریں.';
 $string['error:badgeawardnotfound'] = 'اس انعام یافتہ بیج کی توثیق نہیں کی جا سکتی۔ ہو سکتا ہے یہ بیج منسوخ کر دیا گیا ہو۔';
 $string['error:badgenotfound'] = 'بیج نہیں ملا';
 $string['error:cannotact'] = 'بیج کو فعال نہیں کیا جا سکتا۔';
@@ -305,7 +301,6 @@ $string['eventbadgelistingviewed'] = 'بیج کی فہرست دیکھی گئی';
 $string['eventbadgerevoked'] = 'بیج منسوخ کر دیا گیا';
 $string['eventbadgeupdated'] = 'بیج اپ ڈیٹ ہو گیا';
 $string['eventbadgeviewed'] = 'بیج دیکھا گیا';
-$string['evidence'] = 'ثبوت';
 $string['existingrecipients'] = 'موجودہ بیج وصول کنندگان';
 $string['existsinbackpack'] = 'بیج بیک پیک میں پہلے سے موجود ہے';
 $string['expired'] = 'میعاد ختم';
@@ -437,8 +432,6 @@ $string['privacy:metadata:manualaward:datemet'] = 'وہ تاریخ جب صارف
 $string['privacy:metadata:manualaward:issuerid'] = 'بیج دینے والے صارف کی ID';
 $string['privacy:metadata:manualaward:issuerrole'] = 'بیج دینے والے صارف کا کردار';
 $string['privacy:metadata:manualaward:recipientid'] = 'اس صارف کی ID جسے دستی طور پر بیج دیا گیا ہے';
-$string['recipientdetails'] = 'وصول کنندہ کی تفصیلات';
-$string['recipientidentificationproblem'] = 'موجودہ صارفین میں اس بیج کے وصول کنندہ کو تلاش نہیں کیا جا سکتا۔';
 $string['recipients'] = 'بیج وصول کنندگان';
 $string['recipientvalidationproblem'] = 'موجودہ صارف کی تصدیق اس بیج کے وصول کنندہ کے طور پر نہیں کی جا سکتی۔';
 $string['relatedbages'] = 'متعلقہ بیجز';
@@ -457,8 +450,6 @@ $string['selectgroup_end'] = 'صرف عوامی مجموعے دکھائے جات
 $string['selectgroup_start'] = 'اس سائٹ پر ڈسپلے کرنے کے لیے اپنے بیگ سے مجموعے منتخب کریں:';
 $string['selecting'] = 'منتخب بیجز کے ساتھ...';
 $string['setup'] = 'کنکشن قائم کریں';
-$string['sitebackpack'] = 'فعال بیرونی بیک پیک';
-$string['sitebackpack_help'] = 'بیرونی بیک پیک جس سے صارف اس سائٹ سے منسلک ہو سکتے ہیں۔ نوٹ کریں کہ اس ترتیب کو تبدیل کرنے کے بعد جب صارفین اپنے بیک بیگ کو منسلک کر لیں تو ہر صارف کو اپنے بیک پیک کی ترتیبات کے صفحہ پر جانے اور منقطع ہونے کے بعد دوبارہ منسلک کرنے کی ضرورت ہوگی۔';
 $string['sitebackpackdeleted'] = 'سائٹ کا بیک پیک حذف کر دیا گیا ہے۔';
 $string['sitebackpacknotdeleted'] = 'اس بیک پیک کو حذف نہیں کیا جا سکا کیونکہ یہ فی الحال سائٹ ڈیفالٹ ہے۔';
 $string['sitebackpackwarning'] = 'بیک پیک سے منسلک نہیں ہو سکا۔ <br/><br/>چیک کریں کہ "بیج جاری کنندہ ای میل ایڈریس" ایڈمن سیٹنگ بیک پیک ویب سائٹ پر کسی اکاؤنٹ کے لیے درست ای میل ہے۔ <br/><br/>چیک کریں کہ <a href="{$a->url}">سائٹ بیک پیک کی ترتیبات کے صفحہ</a> پر موجود "بیج جاری کرنے والا پاس ورڈ"، اکاؤنٹ کے لیے درست پاس ورڈ ہے۔ بیک پیک کی ویب سائٹ. <br/><br/>بیک پیک واپس آ گیا: "{$a->warning}"';

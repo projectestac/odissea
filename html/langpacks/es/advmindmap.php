@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'advmindmap', language 'es', version '4.1'.
+ * Strings for component 'advmindmap', language 'es', version '4.4'.
  *
  * @package     advmindmap
  * @category    string
@@ -62,11 +62,11 @@ $string['largeconvas'] = 'Aumentar el área de edición';
 $string['lastupdated'] = 'Última actualización:';
 $string['lockedbyyou'] = 'Este mapa mental grupal está bloqueado por usted, haga clic en este botón para desbloquearlo y volver al curso:';
 $string['modulename'] = 'Advance Mindmap';
-$string['modulenameplural'] = '';
+$string['modulenameplural'] = 'MapasMentales Avanzados';
 $string['notavailable'] = 'No disponible todavía';
 $string['numdummygroups'] = 'Número de grupos ficticios';
 $string['pluginadministration'] = 'Administración de Advance Mindmap';
-$string['pluginname'] = '';
+$string['pluginname'] = 'MapaMental Avanzado';
 $string['print'] = 'Imprimir:';
 $string['removeinstances'] = 'Borrar todas las instancias de mindmap';
 $string['smallconvas'] = 'Reducir el área de edición';

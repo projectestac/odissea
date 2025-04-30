@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'it', version '4.1'.
+ * Strings for component 'tag', language 'it', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -73,6 +73,7 @@ $string['eventtagupdated'] = 'Aggiornamento tag';
 $string['exclusivemode'] = 'Visualizza solamente associati al tag {$a->tagarea}';
 $string['flag'] = 'Contrassegna';
 $string['flagasinappropriate'] = 'Contrassegna come non appropriato';
+$string['flagcount'] = 'Conteggio dei con rassegni';
 $string['flagged'] = 'Tag contrassegnato';
 $string['helprelatedtags'] = 'Tag correlati separati da virgola';
 $string['id'] = 'id';
@@ -152,6 +153,7 @@ $string['tagarea_blog_external'] = 'Intervento blog esterno';
 $string['tagarea_course'] = 'Corsi';
 $string['tagarea_course_modules'] = 'Attività e risorse';
 $string['tagarea_post'] = 'Intervento blog';
+$string['tagarea_tag'] = 'Tag correlati';
 $string['tagarea_user'] = 'Interessi dell\'utente';
 $string['tagareaenabled'] = 'Abilitato';
 $string['tagareaname'] = 'Nome';

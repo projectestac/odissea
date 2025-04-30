@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'el', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'el', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Κλειδί Dropbox API';
 $string['cachelimit'] = 'Όριο προσωρινής μνήμης';
 $string['cachelimit_info'] = 'Δώστε το μέγιστο μέγεθος αρχείων (σε bytes) που θα αποθηκευτούν σε κρυφή μνήμη στον εξυπηρετητή για ψευδώνυμα/συντομεύσεις Dropbox. Τα αρχεία της κρυφής μνήμης θα χρησιμοποιούνται όταν η πηγή δεν είναι πλέον διαθέσιμη. Κενή τιμή ή μηδενική σημαίνει κρυφή αποθήκευση όλων των αρχείων ανεξάρτητα από το μέγεθος.';
 $string['configplugin'] = 'Ρυθμίσεις Dropbox';
 $string['crontask'] = 'Επεξεργασία παρασκηνίου για το αποθετήριο Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Εμφάνιση ενός φακέλου Dropbox';
-$string['instruction'] = 'Μπορείτε να πάρετε το κλειδί σας API και τον μυστικό κωδικό σας από τους <a href="https://www.dropbox.com/developers/apps">κατασκευαστές του Dropbox</a>. Κατά τη ρύθμιση του κλειδιού σας, επιλέξτε «Πλήρες Dropbox» ως «Επίπεδο πρόσβασης».';
 $string['issuer'] = 'Υπηρεσία OAuth2';
 $string['issuer_help'] = 'Επιλέξτε την υπηρεσία OAuth2 που έχει διαμορφωθεί για να μιλάει στο API του Dropbox. Εάν η υπηρεσία δεν υπάρχει ακόμα, θα πρέπει να τη δημιουργήσετε.';
 $string['logoutdesc'] = '(Αποσύνδεση όταν ολοκληρωθεί η χρήση του Dropbox)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Διαδικτυακή αποθήκευση Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Το πρόσθετο «Αποθετήριο Dropbox» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
 $string['privacy:metadata:repository_dropbox:query'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Dropbox.';
 $string['remember'] = 'Θυμήσου με';
-$string['secret'] = 'Μυστικός κωδικός Dropbox';

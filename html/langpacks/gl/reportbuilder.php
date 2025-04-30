@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'gl', version '4.1'.
+ * Strings for component 'reportbuilder', language 'gl', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -32,7 +32,7 @@ $string['addcolumn'] = 'Engadir a columna «{$a}»';
 $string['addusers'] = 'Engadir usuarios manualmente';
 $string['aggregatecolumn'] = 'Agregar a columna «{$a}»';
 $string['aggregationavg'] = 'Media';
-$string['aggregationcount'] = 'Número';
+$string['aggregationcount'] = 'Cantidade';
 $string['aggregationcountdistinct'] = 'Número distintos';
 $string['aggregationgroupconcat'] = 'Valores separados por coma';
 $string['aggregationgroupconcatdistinct'] = 'Valores distintos separados por coma';
@@ -54,12 +54,13 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} máis {$a->morecount} m�
 $string['audiencenotsaved'] = 'A audiencia non foi gardada';
 $string['audiencesaved'] = 'A audiencia foi gardada';
 $string['audienceupdated'] = 'Actualizouse a audiencia';
+$string['audienceusedbyschedule'] = 'Esta audiencia é utilizada nun calendario para este informe';
 $string['cardview'] = 'Vista de tarxeta';
 $string['cardview_help'] = 'A vista de tarxeta permítelle definir o deseño do informe cando se ve en dispositivos estreitos. As columnas máis aló do límite estabelecido aquí contraeranse, cunha opción para expandir a tarxeta para ver todos os datos do informe.';
 $string['cardviewfirstcolumntitle'] = 'Título da primeira columna';
 $string['cardviewsettingssaved'] = 'Gardados os axustes da vista de tarxeta';
 $string['cardviewvisiblecolumns'] = 'Columnas visíbeis';
-$string['categoryselect'] = 'Escoller unha categoría';
+$string['categoryselect'] = 'Seleccionar unha categoría';
 $string['close'] = 'Pechar';
 $string['closeeditor'] = 'Pechar o editor «{$a}»';
 $string['columnadded'] = 'Engadiuse a columna «{$a}»';
@@ -68,8 +69,8 @@ $string['columndeleted'] = 'Eliminouse a columna «{$a}»';
 $string['columnmoved'] = 'Moveuse a columna «{$a}»';
 $string['columnsortdirectionasc'] = 'Ordenar a columna «{$a}» en ascendente';
 $string['columnsortdirectiondesc'] = 'Ordenar a columna «{$a}» en descendente';
-$string['columnsortdisable'] = 'Desactivar a ordenación da columna «{$a}»';
-$string['columnsortenable'] = 'Activar a ordenación da columna «{$a}»';
+$string['columnsortdisable'] = 'Desactivar a ordenación inicial para a columna {$a}';
+$string['columnsortenable'] = 'Activar a ordenación inicial para a columna {$a}';
 $string['columnsortupdated'] = 'Actualizouse a ordenación da columna «{$a}«';
 $string['conditionadded'] = 'Engadiuse a condición «{$a}»';
 $string['conditiondeleted'] = 'Eliminouse a condición «{$a}»';
@@ -112,7 +113,7 @@ $string['editreportname'] = 'Editar o nome do informe';
 $string['editscheduledetails'] = 'Editar detalles da programación';
 $string['editschedulename'] = 'Editar o nome da programación';
 $string['enablecustomreports'] = 'Activar os informes personalizados';
-$string['enablecustomreports_desc'] = 'Se está activado, os usuarios poden crear e ver informes personalizados do creador de informes.';
+$string['enablecustomreports_desc'] = 'Se está activado, os usuarios poden crear e ver informes personalizados do construtor de informes.';
 $string['enableschedule'] = 'Activar a programación';
 $string['entitycourse'] = 'Curso';
 $string['entityuser'] = 'Usuario';
@@ -123,7 +124,8 @@ $string['errorsourceinvalid'] = 'Non foi posíbel atopar a orixe do informe vál
 $string['errorsourceunavailable'] = 'A orixe do informe non está dispoñíbel';
 $string['filteradded'] = 'Engadiuse o filtro «{$a}»';
 $string['filtercontains'] = 'Contén';
-$string['filterdatecurrent'] = 'Actualt';
+$string['filterdatebefore'] = 'Antes de';
+$string['filterdatecurrent'] = 'Actual';
 $string['filterdatedays'] = 'día(s)';
 $string['filterdatefrom'] = 'Dende a data';
 $string['filterdatefuture'] = 'No futuro';
@@ -230,7 +232,7 @@ $string['recurrenceweekly'] = 'Semanal';
 $string['renameaudience'] = 'Cambia o nome da audiencia «{$a}»';
 $string['renamecolumn'] = 'Cambiar o nome da columna «{$a}»';
 $string['renamefilter'] = 'Cambia o nome do filtro «{$a}»';
-$string['reportbuilder'] = 'Creador de informes';
+$string['reportbuilder'] = 'Construtor de informes';
 $string['reportcreated'] = 'Informe creado';
 $string['reportdeleted'] = 'Informe eliminado';
 $string['reports'] = 'Informes';
@@ -261,7 +263,7 @@ $string['sendscheduleconfirm'] = 'Confirma que quere poñer en cola a programaci
 $string['showhide'] = 'Amosar/agochar «{$a}»';
 $string['showhidecard'] = 'Amosar/agochar a tarxeta';
 $string['sorting'] = 'Ordenando';
-$string['sorting_help'] = 'A ordenación define a orde inicial das columnas do informe. A orde pódese inverter premendo na icona Arriba/abaixo. Os usuarios poden definir a súa propia orde de clasificación premendo no nome dunha columna.';
+$string['sorting_help'] = 'Pode definir a orde de clasificación inicial das columnas no informe, que após poden ser cambiadas polos usuarios premendo nos nomes das columnas.';
 $string['switchedit'] = 'Cambiar ao modo de edición';
 $string['switchpreview'] = 'Cambiar ao modo anterior';
 $string['tasksendschedule'] = 'Enviar o calendario do informe';

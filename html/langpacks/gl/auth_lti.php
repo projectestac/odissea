@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'gl', version '4.1'.
+ * Strings for component 'auth_lti', language 'gl', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ltidescription'] = 'O engadido de autenticación LTI, xunto co engadido de matriculación «Publicar como unha ferramenta LTI», permite aos usuarios remotos acceder a cursos e actividades seleccionados. Noutras palabras, Moodle funciona como un provedor de ferramentas LTI.';
+$string['mustbeloggedin'] = 'Acceda para ligar a súa conta existente.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'O engadido de autenticación LTI non almacena ningún dato persoal.';

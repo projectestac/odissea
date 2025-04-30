@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'es', version '4.1'.
+ * Strings for component 'reportbuilder', language 'es', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} mas {$a->morecount} más
 $string['audiencenotsaved'] = 'Audiencia no guardada';
 $string['audiencesaved'] = 'Audiencia guardada';
 $string['audienceupdated'] = 'Audiencia actualizada';
+$string['audienceusedbyschedule'] = 'Esta audiencia se utiliza en una programación para este informe.';
 $string['cardview'] = 'Vista de tarjeta';
 $string['cardview_help'] = 'La vista de tarjeta le permite definir el diseño de su informe cuando se ve en dispositivos estrechos. Las columnas se colapsarán más allá del límite establecido aquí, con un interruptor para expandir la tarjeta y ver todos los datos del informe.';
 $string['cardviewfirstcolumntitle'] = 'Título de la primera columna';
@@ -68,8 +69,8 @@ $string['columndeleted'] = 'Columna \'{$a}\' eliminada';
 $string['columnmoved'] = 'Columna \'{$a}\' movida';
 $string['columnsortdirectionasc'] = 'Ordenar la columna \'{$a}\' en orden ascendente';
 $string['columnsortdirectiondesc'] = 'Ordenar la columna \'{$a}\' en orden descendente';
-$string['columnsortdisable'] = 'Deshabilitar la ordenación inicial por la columna {$a}';
-$string['columnsortenable'] = 'Habilitar la ordenación inicial por la columna {$a}';
+$string['columnsortdisable'] = 'Deshabilitar la ordenación inicial por la columna "{$a}"';
+$string['columnsortenable'] = 'Habilitar la ordenación inicial por la columna "{$a}"';
 $string['columnsortupdated'] = 'Actualizada la ordenación por la columna \'{$a}\'';
 $string['conditionadded'] = 'Condición \'{$a}\' añadida';
 $string['conditiondeleted'] = 'Condición \'{$a}\' eliminada';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Número de ID del curso con enlace';
 $string['courseselect'] = 'Seleccionar curso';
 $string['courseshortnamewithlink'] = 'Nombre corto del curso con enlace';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Personalizar informe';
 $string['customreports'] = 'Informes personalizados';
 $string['customreportslimit'] = 'Límite de informes personalizados';
 $string['customreportslimit_desc'] = 'El número de informes personalizados puede limitarse por razones de rendimiento. Si se ajusta a cero, entonces no hay límite.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'No se pudo encontrar una fuente de informe vál
 $string['errorsourceunavailable'] = 'La fuente del informe no está disponible';
 $string['filteradded'] = 'Filtro \'{$a}\' añadido';
 $string['filtercontains'] = 'Contiene';
+$string['filterdateafter'] = 'Después';
+$string['filterdatebefore'] = 'Antes';
 $string['filterdatecurrent'] = 'Actual';
 $string['filterdatedays'] = 'día(s)';
 $string['filterdatefrom'] = 'Fecha desde';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Termina en';
 $string['filterequalorgreaterthan'] = 'Mayor o igual que';
 $string['filterequalorlessthan'] = 'Menor o igual que';
 $string['filterfieldoperator'] = 'operador {$a}';
+$string['filterfieldto'] = '{$a} a';
+$string['filterfieldunit'] = 'Unidad {$a}';
 $string['filterfieldvalue'] = 'valor {$a}';
 $string['filtergreaterthan'] = 'Mayor que';
 $string['filterinvalid'] = 'Filtro no válido';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Clasificación';
 $string['sorting_help'] = 'Puede configurar el orden inicial de las columnas en el informe, que pueden cambiar los usuarios clicando sobre los nombres de las columnas.';
 $string['switchedit'] = 'Cambiar al modo de edición';
 $string['switchpreview'] = 'Cambiar al modo de vista previa';
+$string['tagarea_reportbuilder_report'] = 'Informes personalizados';
 $string['tasksendschedule'] = 'Enviar calendario del informe';
 $string['tasksendschedules'] = 'Enviar calendarios de informes';
 $string['timeadded'] = 'Hora de añadido';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'en', version '4.1'.
+ * Strings for component 'reportbuilder', language 'en', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} plus {$a->morecount} mor
 $string['audiencenotsaved'] = 'Audience not saved';
 $string['audiencesaved'] = 'Audience saved';
 $string['audienceupdated'] = 'Audience updated';
+$string['audienceusedbyschedule'] = 'This audience is used in a schedule for this report';
 $string['cardview'] = 'Card view';
 $string['cardview_help'] = 'Card view allows you to define the layout of your report when viewed on narrow devices. Columns will collapse beyond the limit set here, with a toggle to expand the card to view all report data.';
 $string['cardviewfirstcolumntitle'] = 'First column title';
@@ -68,8 +69,8 @@ $string['columndeleted'] = 'Deleted column \'{$a}\'';
 $string['columnmoved'] = 'Moved column \'{$a}\'';
 $string['columnsortdirectionasc'] = 'Sort column \'{$a}\' ascending';
 $string['columnsortdirectiondesc'] = 'Sort column \'{$a}\' descending';
-$string['columnsortdisable'] = 'Disable initial sorting for column {$a}';
-$string['columnsortenable'] = 'Enable initial sorting for column {$a}';
+$string['columnsortdisable'] = 'Disable initial sorting for column \'{$a}\'';
+$string['columnsortenable'] = 'Enable initial sorting for column \'{$a}\'';
 $string['columnsortupdated'] = 'Updated sorting for column \'{$a}\'';
 $string['conditionadded'] = 'Added condition \'{$a}\'';
 $string['conditiondeleted'] = 'Deleted condition \'{$a}\'';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Course ID number with link';
 $string['courseselect'] = 'Select course';
 $string['courseshortnamewithlink'] = 'Course short name with link';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Custom report';
 $string['customreports'] = 'Custom reports';
 $string['customreportslimit'] = 'Custom reports limit';
 $string['customreportslimit_desc'] = 'The number of custom reports may be limited for performance reasons. If set to zero, then there is no limit.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Could not find valid report source';
 $string['errorsourceunavailable'] = 'Report source is not available';
 $string['filteradded'] = 'Added filter \'{$a}\'';
 $string['filtercontains'] = 'Contains';
+$string['filterdateafter'] = 'After';
+$string['filterdatebefore'] = 'Before';
 $string['filterdatecurrent'] = 'Current';
 $string['filterdatedays'] = 'day(s)';
 $string['filterdatefrom'] = 'Date from';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Ends with';
 $string['filterequalorgreaterthan'] = 'Greater than or equal';
 $string['filterequalorlessthan'] = 'Less than or equal';
 $string['filterfieldoperator'] = '{$a} operator';
+$string['filterfieldto'] = '{$a} to';
+$string['filterfieldunit'] = '{$a} unit';
 $string['filterfieldvalue'] = '{$a} value';
 $string['filtergreaterthan'] = 'Greater than';
 $string['filterinvalid'] = 'Invalid filter';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Sorting';
 $string['sorting_help'] = 'You can set the initial sort order of columns in the report, which can then be changed by users by clicking on column names.';
 $string['switchedit'] = 'Switch to edit mode';
 $string['switchpreview'] = 'Switch to preview mode';
+$string['tagarea_reportbuilder_report'] = 'Custom reports';
 $string['tasksendschedule'] = 'Send report schedule';
 $string['tasksendschedules'] = 'Send report schedules';
 $string['timeadded'] = 'Time added';

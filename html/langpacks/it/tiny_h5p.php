@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'it', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'it', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Sfoglia repository...';
-$string['buttontitle'] = 'Inserimento H5P';
+$string['buttontitle'] = 'Inserimento contenuto H5P';
 $string['copyrightbutton'] = 'Pulsante copyright';
 $string['downloadbutton'] = 'Consenti scaricamento';
 $string['embedbutton'] = 'Pulsante incorpora';
@@ -41,5 +41,5 @@ $string['instructions'] = 'È possibile inserire contenuto H5P inserendo un URL 
 $string['invalidh5purl'] = 'URL non valido';
 $string['modaltitle'] = 'Inserimento contenuto H5P';
 $string['noh5pcontent'] = 'Nessun contenuto H5P aggiunto';
-$string['pluginname'] = 'Inserimento H5P Tiny';
+$string['pluginname'] = 'Inserimento H5P';
 $string['privacy:metadata'] = 'Il plugin H5P per Tiny non memorizza dati personali.';

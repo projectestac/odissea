@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ar', version '4.1'.
+ * Strings for component 'block_myoverview', language 'ar', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'قائمة التجميع المنسدلة';
 $string['aria:hiddencourses'] = 'إظهار المقررات المزالة من المعاينة';
 $string['aria:hidecourse'] = 'أزل {$a} من العرض';
 $string['aria:inprogress'] = 'أظهر المقررات الدراسية الجارية';
-$string['aria:lastaccessed'] = 'أظهر المقررات الدراسية حسب تاريخ آخر وصول';
 $string['aria:list'] = 'التبديل إلى عرض القائمة';
 $string['aria:past'] = 'أظهر المقررات الدراسية المنتهية';
 $string['aria:removefromfavourites'] = 'إرفع النجمة من';
-$string['aria:shortname'] = 'رتب المقررات الدراسية حسب أسمائها المختصرة';
 $string['aria:showcourse'] = 'استعادة {$a} إلى العرض';
 $string['aria:sortingdropdown'] = 'قائمة الفرز المنسدلة';
 $string['aria:summary'] = 'التبديل إلى عرض الملخص';
-$string['aria:title'] = 'رتب المقررات الدراسية حسب أسمائها';
 $string['availablegroupings'] = 'المنقحات المتاحة';
 $string['availablegroupings_desc'] = 'مرشحات المقررات الدراسية المتاحة للمستخدمين ليختاروا منها. إن لم يتم تحديد أحدها، سيتم عرض كل المقررات.';
 $string['card'] = 'بطاقة';
 $string['cards'] = 'بطاقات';
-$string['clearsearch'] = 'إخلاء مربع البحث';
 $string['completepercent'] = 'مكتمل بنسبة {$a}%';
 $string['courseprogress'] = 'تقدم المساق:';
+$string['createcourse'] = 'إنشاء المقرر الدراسي';
 $string['customfield'] = 'حقل مخصص';
 $string['customfiltergrouping'] = 'الحقل المستعمل';
 $string['customfiltergrouping_nofields'] = 'هذا الخيار يتطلب وضع حقل مخصص للمساق وجعله مرئياً للجميع.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'الفرز حسب الاسم المختصر';
 $string['sortbytitle'] = 'الفرز حسب اسم المساق';
 $string['summary'] = 'الملخص';
 $string['title'] = 'اسم المساق';
+$string['viewquickstart'] = 'معاينة دليل البدء السريع';
+$string['zero_default_intro'] = 'بمجرد انضمامك إلى مقرر، سيظهر هنا.';
+$string['zero_default_title'] = 'لستَ منضمًا إلى أي مساق.';
+$string['zero_nocourses_intro'] = 'هل تحتاج مساعدة لتبدأ؟ راجع <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">توثيقات مودل</a> أو تلمس خطواتك الأولى مع دليلنا للبدء السريع.';
+$string['zero_nocourses_title'] = 'أنشئ مقررك الدراسي الأول';
+$string['zero_request_intro'] = 'هل تحتاج مساعدة لتبدأ؟ راجع <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">توثيقات مودل</a> أو تلمس خطواتك الأولى مع <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">دليلنا للبدء السريع</a>.';
+$string['zero_request_title'] = 'أطلب مساقك الأول';

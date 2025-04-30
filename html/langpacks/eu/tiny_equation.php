@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'eu', version '4.1'.
+ * Strings for component 'tiny_equation', language 'eu', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'Grekerazko ikurren fitxan dauden TeX komandoen 
 $string['librarygroup4'] = 'Aurreratua';
 $string['librarygroup4_desc'] = 'Fitxan aurreratuan dauden TeX komandoen zerrenda.';
 $string['modaltitle'] = 'Ekuazio editorea';
-$string['pluginname'] = 'Tiny-ren ekuazio editorea';
+$string['pluginname'] = 'Ekuazio editorea';
 $string['preview'] = 'Ekuazioaren aurreikuspena';
 $string['privacy:metadata'] = 'TinyMCE-rako ekuazio editoreak ez du datu pertsonalik biltzen.';
 $string['saveequation'] = 'Gorde ekuazioa';

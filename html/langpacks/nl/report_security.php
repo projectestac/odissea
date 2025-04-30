@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', version '4.1'.
+ * Strings for component 'report_security', language 'nl', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -80,10 +80,6 @@ $string['check_guestrole_error'] = 'Fout geconfigureerde gastrol "{$a}" gedetect
 $string['check_guestrole_name'] = 'Gast rol';
 $string['check_guestrole_notset'] = 'Gast rol niet ingeschakeld';
 $string['check_guestrole_ok'] = 'Gastrol definitie OK';
-$string['check_mediafilterswf_details'] = '<p>Automatisch embedden van swf is heel gevaarlijk - elke geregistreerde gebruiker kan een XSS-aanval starten tegen andere servergebruikers. Schakel dit uit op productieservers.</p>';
-$string['check_mediafilterswf_error'] = 'Flash mediafilter is ingeschakeld - dit is erg gevaarlijk voor de meeste servers';
-$string['check_mediafilterswf_name'] = '.swf media filter ingeschakeld';
-$string['check_mediafilterswf_ok'] = 'Flash mediafilter is niet ingeschakeld';
 $string['check_nodemodules_details'] = '<p>De map <em>{$a->path}</em> bevat Node.js modules en hun afhankelijkheden, typisch geïnstalleerd door NPM. Deze modules kunnen nodig zijn voor lokale Moodle-ontwikkeling, zoals voor het gebruik van het grunt framework. Ze zijn niet nodig om een Moodle-site in productie te gebruiken en kunnen mogelijk gevaarlijke code bevatten die je site kwetsbaar maakt voor aanvallen.</p><p>Het is sterk aangeraden om deze map te verwijderen als je site bereikbaar is via een publieke URL of om om minstens de toegang ertoe te beveiligen via de configuratie van je webserver.</p>';
 $string['check_nodemodules_info'] = 'De map node_modules zou niet mogen aanwezig zijn op publieke sites';
 $string['check_nodemodules_name'] = 'Map voor node_modules';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'nl', version '4.1'.
+ * Strings for component 'contentbank', language 'nl', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Auteur';
 $string['choosecontext'] = 'Kies cursus of categorie...';
-$string['close'] = 'Sluiten';
 $string['contentbank'] = 'Inhoudsbank';
 $string['contentbankpreferences'] = 'Voorkeuren voor de inhoudsbank';
+$string['contentcopied'] = 'Inhoud gekopieerd.';
+$string['contentcreated'] = 'Inhoud gemaakt.';
 $string['contentdeleted'] = 'Inhoud verwijderd.';
 $string['contentname'] = 'Inhoud naam';
 $string['contentnotdeleted'] = 'Er is een fout opgetreden bij het verwijderen van de inhoud.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Inhoud hernoemd.';
 $string['contentsmoved'] = 'Inhoudsbank verplaatst naar {$a}';
 $string['contenttypenoaccess'] = 'Je kan deze {$a} instantie niet bekijken.';
 $string['contenttypenoedit'] = 'Je kunt deze inhoud niet bewerken';
+$string['contentupdated'] = 'Inhoud bijgewerkt.';
 $string['contentvisibilitychanged'] = 'Inhoud is nu {$a}.';
 $string['contentvisibilitynotset'] = 'Er is een fout opgetreden bij het instellen van de zichtbaarheid van de inhoud.';
 $string['contextnotallowed'] = 'Je hebt geen toegangsrecht in de inhoudsbank in deze context.';
+$string['copycontent'] = 'Inhoud kopiëren';
+$string['copyof'] = 'Kopie van {$a}';
 $string['deletecontent'] = 'Inhoud verwijderen';
 $string['deletecontentconfirm'] = 'Weet je zeker dat je inhoud <em>\'{$a->name}\'</em> en alle bijhorende bestanden wil verwijderen?  Deze bewerking kan niet ongedaan worden gemaakt.';
 $string['deletecontentconfirmlinked'] = 'De inhoud wordt alleen verwijderd uit de inhoudsbank. Alle plaatsen die er momenteel naar linken, worden automatisch bijgewerkt om in plaats daarvan een kopie van de inhoud te gebruiken.';
@@ -64,6 +68,7 @@ $string['more'] = 'Meer';
 $string['name'] = 'Inhoud';
 $string['nocontentavailable'] = 'Geen inhoud beschikbaar';
 $string['nocontenttypes'] = 'Geen inhoudstypes beschikbaar';
+$string['nopermissiontocopy'] = 'Je hebt geen toestemming om inhoud te kopiëren.';
 $string['nopermissiontodelete'] = 'Je hebt geen toestemming om de inhoud te verwijderen.';
 $string['nopermissiontomanage'] = 'Je hebt het recht niet om inhoud te beheren.';
 $string['notavailable'] = 'Sorry, deze inhoud is niet beschikbaar.';

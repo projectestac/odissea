@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ar', version '4.1'.
+ * Strings for component 'assignsubmission_file', language 'ar', version '4.4'.
  *
  * @package     assignsubmission_file
  * @category    string
@@ -33,7 +33,7 @@ $string['default'] = 'ممكّن افتراضياً';
 $string['default_help'] = 'إذا اخترتها، سيتم تمكين طريقة التقديم هذه بشكل افتراضي لتقديم كافة الواجبات الجديدة.';
 $string['defaultacceptedfiletypes'] = 'أنواع الملفات المقبولة الافتراضية';
 $string['enabled'] = 'ملف التقديمات';
-$string['enabled_help'] = 'إذا مكّن فالطلاب قادرون على تحميل ملف واحد أو أكثر لتقديمها.';
+$string['enabled_help'] = 'عند تمكينه سيكون الطلاب قادرين على رفع ملف واحد أو أكثر بمثابة تسليمهم للواجب.';
 $string['eventassessableuploaded'] = 'ملف تم رفعه';
 $string['file'] = 'التسليمات بالملفات';
 $string['maxbytes'] = 'أعلى حجم للملف';

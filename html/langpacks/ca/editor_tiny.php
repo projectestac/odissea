@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tiny', language 'ca', version '4.1'.
+ * Strings for component 'editor_tiny', language 'ca', version '4.4'.
  *
  * @package     editor_tiny
  * @category    string
@@ -25,9 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['branding'] = 'Branding TinyMCE';
+$string['branding_desc'] = 'Doneu suport al TinyMCE mostrant el logotip a la cantonada inferior de l\'editor de text. El logotip enllaça amb el lloc web de TinyMCE.';
+$string['plugin_disabled'] = '{$a} deshabilitat.';
+$string['plugin_enabled'] = '{$a} habilitat.';
+$string['pluginname'] = 'Editor TinyMCE';
+$string['privacy:reason'] = 'L\'editor TinyMCE no desa cap preferència ni cap dada d\'usuari.';
+$string['settings'] = 'Paràmetres generals';
+$string['subplugintype_tiny'] = 'Connector del TinyMCE';
+$string['subplugintype_tiny_plural'] = 'Connectors del TinyMCE';
 $string['tiny:0_characters'] = '{0} caràcters';
 $string['tiny:0_words'] = '{0} paraules';
 $string['tiny:accessibility'] = 'Accessibilitat';
+$string['tiny:accordion'] = 'Acordió';
+$string['tiny:accordion_body...'] = 'Cos de l\'acordió...';
+$string['tiny:accordion_summary...'] = 'Resum de l\'acordió...';
 $string['tiny:action'] = 'Acció';
 $string['tiny:activity'] = 'Activitat';
 $string['tiny:address'] = 'Adreça';
@@ -38,6 +50,7 @@ $string['tiny:align_left'] = 'Alinea a l\'esquerra';
 $string['tiny:align_right'] = 'Alinea a la dreta';
 $string['tiny:alignment'] = 'Alineació';
 $string['tiny:alignment1'] = 'alineació';
+$string['tiny:alignment_0'] = 'Alineació {0}';
 $string['tiny:all'] = 'Tot';
 $string['tiny:alternative_description'] = 'Descripció alternativa';
 $string['tiny:alternative_source'] = 'Font alternativa';
@@ -48,12 +61,16 @@ $string['tiny:anchors'] = 'Àncores';
 $string['tiny:animals_and_nature'] = 'Animals i natura';
 $string['tiny:arrows'] = 'Fletxes';
 $string['tiny:austral_sign'] = 'signe de l\'austral';
+$string['tiny:b'] = 'B';
 $string['tiny:background_color'] = 'Color de fons';
+$string['tiny:background_color_0'] = 'Color de fons {0}';
 $string['tiny:black'] = 'Negre';
 $string['tiny:block'] = 'Bloc';
+$string['tiny:block_0'] = 'Bloc {0}';
 $string['tiny:blockquote'] = 'Citació';
-$string['tiny:blocks'] = 'Blocs';
+$string['tiny:blocks'] = 'Estils de paràgraf';
 $string['tiny:blue'] = 'Blau';
+$string['tiny:blue_component'] = 'Component blava';
 $string['tiny:body'] = 'Cos';
 $string['tiny:bold'] = 'Negreta';
 $string['tiny:border'] = 'Vora';
@@ -61,7 +78,9 @@ $string['tiny:border_color'] = 'Color de la vora';
 $string['tiny:border_style'] = 'Estil de la vora';
 $string['tiny:border_width'] = 'Amplada de la vora';
 $string['tiny:bottom'] = 'Part inferior';
+$string['tiny:browse_files'] = 'Navega pels fitxers';
 $string['tiny:browse_for_an_image'] = 'Explora per cercar una imatge';
+$string['tiny:browse_links'] = 'Navega pels enllaços';
 $string['tiny:bullet_list'] = 'Llista de pics';
 $string['tiny:cancel'] = 'Cancel·la';
 $string['tiny:caption'] = 'Llegenda';
@@ -118,6 +137,7 @@ $string['tiny:dashed'] = 'Guions';
 $string['tiny:datetime'] = 'Data/hora';
 $string['tiny:decrease_indent'] = 'Disminueix el sagnat';
 $string['tiny:default'] = 'Predeterminat';
+$string['tiny:delete_accordion'] = 'Esborra l\'acordió';
 $string['tiny:delete_column'] = 'Suprimeix la columna';
 $string['tiny:delete_row'] = 'Suprimeix la fila';
 $string['tiny:delete_table'] = 'Suprimeix la taula';
@@ -131,6 +151,7 @@ $string['tiny:dotted'] = 'Puntejat';
 $string['tiny:double'] = 'Doble';
 $string['tiny:drachma_sign'] = 'signe del dracma';
 $string['tiny:drop_an_image_here'] = 'Deixa anar una imatge aquí';
+$string['tiny:dropped_file_type_is_not_supported'] = 'El tipus de fitxer utilitzat no està suportat';
 $string['tiny:edit'] = 'Edita';
 $string['tiny:embed'] = 'Incrusta';
 $string['tiny:emojis'] = 'Emojis';
@@ -157,22 +178,29 @@ $string['tiny:focus_to_contextual_toolbar'] = 'Enfoca la barra d\'eines contextu
 $string['tiny:focus_to_element_path'] = 'Enfoca la ruta d\'elements';
 $string['tiny:focus_to_menubar'] = 'Enfoca la barra de menú';
 $string['tiny:focus_to_toolbar'] = 'Enfoca la barra d\'eines';
+$string['tiny:font'] = 'Tipus de lletra';
+$string['tiny:font_0'] = 'Tipus de lletra {0}';
+$string['tiny:font_size_0'] = 'Mida de la lletra {0}';
 $string['tiny:font_sizes'] = 'Mides dels tipus de lletra';
 $string['tiny:fonts'] = 'Tipus de lletra';
 $string['tiny:food_and_drink'] = 'Menjar i beguda';
 $string['tiny:footer'] = 'Peu de pàgina';
 $string['tiny:format'] = 'Format';
+$string['tiny:format_0'] = 'Format {0}';
 $string['tiny:formats'] = 'Formats';
 $string['tiny:formatting'] = 'formatació';
 $string['tiny:french_franc_sign'] = 'signe del franc francès';
 $string['tiny:fullscreen'] = 'Pantalla completa';
+$string['tiny:g'] = 'G';
 $string['tiny:general'] = 'General';
 $string['tiny:german_penny_symbol'] = 'signe del penic alemany';
 $string['tiny:gray'] = 'Gris';
 $string['tiny:green'] = 'Verd';
+$string['tiny:green_component'] = 'Component verda';
 $string['tiny:groove'] = 'Solc';
 $string['tiny:guarani_sign'] = 'signe del guaraní';
 $string['tiny:handy_shortcuts'] = 'Dreceres útils';
+$string['tiny:hash'] = '#';
 $string['tiny:header'] = 'Capçalera';
 $string['tiny:header_cell'] = 'Cel·la de capçalera';
 $string['tiny:heading_1'] = 'Encapçalament 1';
@@ -184,6 +212,7 @@ $string['tiny:heading_6'] = 'Encapçalament 6';
 $string['tiny:headings'] = 'Encapçalaments';
 $string['tiny:height'] = 'Alçada';
 $string['tiny:help'] = 'Ajuda';
+$string['tiny:hex_color_code'] = 'Codi de color hexadecimal';
 $string['tiny:hidden'] = 'Ocult';
 $string['tiny:history'] = 'historial';
 $string['tiny:horizontal_align'] = 'Alineació horitzontal';
@@ -241,6 +270,7 @@ $string['tiny:lira_sign'] = 'signe de la lira';
 $string['tiny:list_properties'] = 'Propietats de la llista';
 $string['tiny:list_properties...'] = 'Propietats de la llista...';
 $string['tiny:livre_tournois_sign'] = 'signe de la lliura tornesa';
+$string['tiny:loading...'] = 'Carregant...';
 $string['tiny:loading_emojis...'] = 'S\'estan carregant els emojis...';
 $string['tiny:lower_alpha'] = 'Lletra minúscula';
 $string['tiny:lower_greek'] = 'Lletra grega minúscula';
@@ -265,6 +295,7 @@ $string['tiny:new_document'] = 'Document nou';
 $string['tiny:new_sheqel_sign'] = 'signe del nou xéquel';
 $string['tiny:new_window'] = 'Finestra nova';
 $string['tiny:next'] = 'Següent';
+$string['tiny:no'] = 'No';
 $string['tiny:no_alignment'] = 'Sense alineació';
 $string['tiny:no_color'] = 'Sense color';
 $string['tiny:nonbreaking_space'] = 'Espai no separable';

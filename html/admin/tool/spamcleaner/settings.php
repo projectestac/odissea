@@ -27,15 +27,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
-// 2012.05.23 @sarjona
-if ($hassiteconfig && get_protected_agora()) {
-// ************ ORIGINAL
-/*
 if ($hassiteconfig) {
-*/
-// ************ FI
-
     $ADMIN->add('reports', new admin_externalpage('toolspamcleaner', get_string('pluginname', 'tool_spamcleaner'), "$CFG->wwwroot/$CFG->admin/tool/spamcleaner/index.php", 'moodle/site:config'));
 }
 

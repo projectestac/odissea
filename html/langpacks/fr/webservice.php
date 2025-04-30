@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', version '4.1'.
+ * Strings for component 'webservice', language 'fr', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'Code PHP pour REST (requête POST)';
 $string['potusers'] = 'Aucun utilisateur autorisé';
 $string['potusersmatching'] = 'Aucun utilisateur autorisé correspondant';
 $string['print'] = 'Tout imprimer';
-$string['privacy:metadata:serviceusers'] = 'Une liste des utilisateurs pouvant utiliser un certain service externe';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'Adresses IP restreinte pour l’utilisation du service';
-$string['privacy:metadata:serviceusers:timecreated'] = 'La date et l’heure de création de l’enregistrement';
-$string['privacy:metadata:serviceusers:userid'] = 'L’identifiant de l’utilisateur';
-$string['privacy:metadata:serviceusers:validuntil'] = 'La date et l’heure à laquelle l’autorisation prend fin';
-$string['privacy:metadata:tokens'] = 'Un enregistrement des jetons d’interaction avec Moodle au moyen de services web ou d’apps mobiles.';
-$string['privacy:metadata:tokens:creatorid'] = 'L’identifiant de l’utilisateur qui a créé le jeton';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP restreintes à l’utilisation de ce jeton';
-$string['privacy:metadata:tokens:lastaccess'] = 'La date et l’heure de la dernière utilisation du jeton';
-$string['privacy:metadata:tokens:privatetoken'] = 'Un jeton encore plus privé utilisé occasionnellement pour valider certaines opérations, telles que SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'La date et l’heure de création du jeton';
-$string['privacy:metadata:tokens:token'] = 'Le jeton de l’utilisateur';
-$string['privacy:metadata:tokens:tokentype'] = 'Le type de jeton';
-$string['privacy:metadata:tokens:userid'] = 'L’identifiant de l’utilisateur dont c’est le jeton';
-$string['privacy:metadata:tokens:validuntil'] = 'La date de l’échéance du jeton';
-$string['privacy:request:notexportedsecurity'] = 'Pas exporté pour des raisons de sécurité';
+$string['privacy:metadata'] = 'L’API WebService n’enregistre aucune donnée';
 $string['protocol'] = 'Protocole';
 $string['removefunction'] = 'Supprimer';
 $string['removefunctionconfirm'] = 'Voulez-vous vraiment supprimer la fonction « {$a->function} » du service « {$a->service} » ?';
@@ -214,11 +199,16 @@ $string['testwithtestclient'] = 'Tester le service';
 $string['testwithtestclientdescription'] = 'Simuler l’accès externe au service en utilisant le client de test des web services. Dans le client test, veuillez sélectionner un protocole activé avec authentification par jeton. <strong>ATTENTION ! Les fonctions testées SERONT EXÉCUTÉES pour cet utilisateur. Soyez prudent avec ce que vous testez !</strong>';
 $string['token'] = 'Jeton';
 $string['tokenauthlog'] = 'Authentification jeton';
+$string['tokencopied'] = 'Texte copié dans le presse-papier.';
 $string['tokencreatedbyadmin'] = 'Ne peut être réinitialisé que par un administrateur (*)';
 $string['tokencreator'] = 'Créateur';
 $string['tokenfilter'] = 'Filtre des jetons';
 $string['tokenfilterreset'] = 'Afficher tous les jetons';
 $string['tokenfiltersubmit'] = 'N’afficher que les jetons correspondant';
+$string['tokenname'] = 'Nom';
+$string['tokennamehint'] = 'Si aucun nom n’est saisi, un nom aléatoire sera utilisé.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copier maintenant le jeton. Il ne sera plus possible de l’afficher une fois cette page quittée.';
 $string['unknownoptionkey'] = 'Clef d’option inconnue ({$a})';
 $string['unnamedstringparam'] = 'Un paramètre chaîne de caractère n’a pas de nom.';
 $string['updateusersettings'] = 'Modifier';
@@ -229,12 +219,11 @@ $string['userasclientsdescription'] = 'Les étapes suivantes vous aident à conf
 $string['usermissingcaps'] = 'Capacités manquantes : {$a}';
 $string['usernameorid'] = 'Nom d’utilisateur / ID utilisateur';
 $string['usernameorid_help'] = 'Veuillez saisir un nom d’utilisateur ou un ID utilisateur';
-$string['usernameoridnousererror'] = 'Aucun utilisateur trouvé avec ce nom d’utilisateur ou cet ID.';
-$string['usernameoridoccurenceerror'] = 'Il y a plus d’un utilisateur avec ce nom d’utilisateur. Veuillez saisir l’ID utilisateur.';
 $string['usernotallowed'] = 'L’utilisateur n’a pas les permissions requises pour utiliser ce service. Vous devez d’abord autoriser cet utilisateur sur la page page d’administration des utilisateurs autorisés pour {$a}.';
 $string['userservices'] = 'Services de l’utilisateur : {$a}';
 $string['usersettingssaved'] = 'Réglages utilisateur enregistrés';
 $string['validuntil'] = 'Valide jusqu’au';
+$string['validuntil_empty'] = 'Ce jeton n’a pas de date d’échéance.';
 $string['validuntil_help'] = 'Si cette option est activée, le service sera désactivé pour cet utilisateur après cette date.';
 $string['webservice'] = 'Service web';
 $string['webservices'] = 'Services web';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ur', version '4.1'.
+ * Strings for component 'contentbank', language 'ur', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'مصنف';
-$string['close'] = 'بند کریں';
 $string['contentbank'] = 'کنٹینٹ بینک';
 $string['contentbankpreferences'] = 'کنٹینٹ بینک کی ترجیحات';
 $string['contentdeleted'] = 'مواد کو حذف کر دیا گیا ہے۔';

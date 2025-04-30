@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', version '4.1'.
+ * Strings for component 'workshop', language 'nl', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Te laat afgegeven';
 $string['latesubmissions_desc'] = 'Taken aanvaarden na de deadline';
 $string['latesubmissions_help'] = 'Indien ingeschakeld kunnen taken ingestuurd worden na de deadline of tijdens de beoordelingsfase. Te laat ingestuurde taken kunnen niet meer bewerkt worden.';
 $string['latesubmissionsallowed'] = 'Te laat afgeven toegestaan';
-$string['legacyallocationplugincron'] = 'Verouderde cron workshop toewijzing';
 $string['maxbytes'] = 'Maximale grootte van de inzending';
 $string['modulename'] = 'Workshop';
 $string['modulename_help'] = 'De workshopmodule maakt het ophalen, nakijken en peer-evaluatie van leerlingenwerk mogelijk.

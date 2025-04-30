@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', version '4.1'.
+ * Strings for component 'lesson', language 'zh_cn', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -34,8 +34,8 @@ $string['actionaftercorrectanswer_help'] = '正确回答问题之后，有三个
 * 显示一个未回答的页面 - 按随机顺序显示页面。有未回答的问题的页面会被重新显示';
 $string['actions'] = '行为';
 $string['activitylink'] = '链接到下一个活动';
-$string['activitylink_help'] = '想在练习结束时显示一个到课程中其它活动的链接，请在下拉列表中选择该活动。';
-$string['activitylinkname'] = '转到{$a}';
+$string['activitylink_help'] = '要在课程结束时提供指向课程中其他活动的链接，请从下拉菜单中选择该活动。';
+$string['activitylinkname'] = '转到 {$a}';
 $string['activityoverview'] = '你有到期的练习';
 $string['addabranchtable'] = '新建内容页';
 $string['addanendofbranch'] = '新建分支结束页';
@@ -132,7 +132,7 @@ $string['configmediaclose'] = '在打开媒体文件的弹出窗口中显示关�
 $string['configmediaheight'] = '设置开媒体文件的弹出窗口的高度';
 $string['configmediawidth'] = '设置开媒体文件的弹出窗口的宽度';
 $string['configpassword_desc'] = '进入这个程序教学，是否需要一个密码。';
-$string['configslideshowbgcolor'] = '幻灯片模式的背景色，如果激活了该模式的话';
+$string['configslideshowbgcolor'] = '幻灯片的背景颜色（如果已启用）';
 $string['configslideshowheight'] = '幻灯片模式的高度，如果激活了该模式的话';
 $string['configslideshowwidth'] = '幻灯片模式的宽度，如果激活了该模式的话';
 $string['configtimelimit_desc'] = '如果设置了一个时间限制，那么在该程序教学开始的时候就会显示一个警告，并且显示一个倒计时计时器。如果设置为0，则没有时间限制。';
@@ -148,7 +148,7 @@ $string['correctresponse'] = '给正确答案的响应';
 $string['createaquestionpage'] = '新建一个问题页';
 $string['credit'] = '学分';
 $string['customscoring'] = '是否自定义分数';
-$string['customscoring_help'] = '如启用，可以给每个答案一个分数值（可以是正数或负数）。';
+$string['customscoring_help'] = '如果启用，则可以为每个答案输入整数值（正数或负数）。';
 $string['deadline'] = '截止时间';
 $string['defaultessayresponse'] = '您的简答题将由您的老师评分。';
 $string['deleteallattempts'] = '删除所有对练习的尝试';
@@ -165,16 +165,17 @@ $string['detailedstats'] = '详细统计';
 $string['didnotanswerquestion'] = '未回答此题。';
 $string['didnotreceivecredit'] = '没有获得学分';
 $string['disabled'] = '禁用';
-$string['displaydefaultfeedback'] = '是否显示默认反馈信息';
+$string['displaydefaultfeedback'] = '使用默认反馈';
 $string['displaydefaultfeedback_help'] = '如果启用，当某个特定的问题没有设定反馈内容时，将显示默认反馈：“此答案正确”和“此答案错误”。 ';
-$string['displayinleftmenu'] = '在左侧菜单中显示？';
-$string['displayleftif'] = '显示左侧菜单，仅当成绩高于';
+$string['displayinleftmenu'] = '在菜单中显示？';
+$string['displayleftif'] = '在菜单显示的最低成绩';
 $string['displayleftif_help'] = '此设置决定在看到左侧菜单之前是否必须先获得一定的分数。这将强制学生在第一次访问时必须浏览完整个练习。在达到分数线后，他们就可以使用左侧菜单进行复习了。';
-$string['displayleftmenu'] = '显示左侧菜单';
-$string['displayleftmenu_help'] = '开启此选项后，会显示页面列表。';
+$string['displayleftmenu'] = '显示菜单';
+$string['displayleftmenu_help'] = '如果启用，将显示一个允许用户浏览页面列表的菜单。';
+$string['displaymode'] = '显示模式';
 $string['displayofgrade'] = '显示成绩（仅适用于学生）';
 $string['displayreview'] = '提供重试一道题目的选项';
-$string['displayreview_help'] = '如果启用，当学生未能正确回答问题时，可以选择再答一次但不计分，或者继续练习。';
+$string['displayreview_help'] = '如果启用，当一个问题回答错误时，学生可以选择再试一次，没有加分，或者继续上课。如果学生点击移动到另一个问题，那么选择的（错误的）答案将紧随其后。默认情况下，错误答案跳转设置为“此页”，得分为0，因此建议您将错误答案跳转设置为不同的页面，以避免与您的学生混淆。';
 $string['displayscorewithessays'] = '<p>您在自动评分的题目中得分{$a->score}/{$a->tempmaxgrade}。</p>
 <p>您的{$a->essayquestions}道简答题将稍后评分，并添加到您的最终得分中。</p>
 <p>您当前不包含简答题的成绩是：{$a->score} /{$a->grade}。</p>';
@@ -188,7 +189,7 @@ $string['editendofcluster'] = '编辑一个簇结束页';
 $string['editessay'] = '编辑一个简答题页';
 $string['editinglesson'] = '编辑程序教学';
 $string['editingquestionpage'] = '编辑{$a}题目页面';
-$string['editlesson'] = '编辑{$a}';
+$string['editlesson'] = '编辑课程';
 $string['editlessonsettings'] = '修改程序教学的设置';
 $string['editmatching'] = '编辑一个匹配题页';
 $string['editmultichoice'] = '编辑一个选择题页';
@@ -200,9 +201,9 @@ $string['editquestion'] = '编辑一个问题页';
 $string['editshortanswer'] = '编辑一个填空题页';
 $string['edittruefalse'] = '编辑一个判断正误题页';
 $string['email'] = 'Email';
-$string['emailallgradedessays'] = 'Email所有的已评分的问答题';
-$string['emailgradedessays'] = 'Email已评分的问答题';
-$string['emailsuccess'] = 'Email发送成功';
+$string['emailallgradedessays'] = '发送论文评分通知';
+$string['emailgradedessays'] = '发送论文评分通知';
+$string['emailsuccess'] = '通知发送成功';
 $string['emptypassword'] = '密码不能为空';
 $string['enabled'] = '启用';
 $string['endofbranch'] = '分支结束';
@@ -216,7 +217,7 @@ $string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在�
 $string['essay'] = '问答题';
 $string['essayemailmessage2'] = '<p>问答题：<blockquote>{$a->question}</blockquote></p><p>您的回答：<blockquote><em>{$a->response}</em></blockquote></p><p>评分人评论：<blockquote><em>{$a->comment}</em></blockquote></p><p>此问答题您得到了{$a->earned}分（满分{$a->outof}）。</p><p>您此程序教学的成绩已经变为{$a->newgrade}%。</p>';
 $string['essayemailmessagesmall'] = '<p>你已经收到了{$a->outof}中的{$a->outof}的{$a->RENEED}作为这篇文章的题目。</p><p>你的{$a->LESSION}课的成绩已经更改为{$a->newgrade}%</p>';
-$string['essayemailsubject'] = '题目{$a}的成绩';
+$string['essayemailsubject'] = '课程题目的成绩可用';
 $string['essaynotgradedyet'] = '这篇文章还没有评分';
 $string['essayresponses'] = '论文回复';
 $string['essays'] = '问答题';
@@ -320,6 +321,7 @@ $string['linkedmedia'] = '链接的媒体';
 $string['loginfail'] = '登录错误，请重试…';
 $string['lowscore'] = '低分';
 $string['lowtime'] = '低用时';
+$string['manageoverrides'] = '管理覆盖';
 $string['manualgrading'] = '问答题评分';
 $string['matchesanswer'] = '答案匹配';
 $string['matching'] = '匹配题';
@@ -328,20 +330,18 @@ $string['maxgrade'] = '最高分';
 $string['maxgrade_help'] = '此设置决定此程序教学的最高分。如果设为0，此程序教学将不会出现在成绩页面上。';
 $string['maximumnumberofanswersbranches'] = '最大选项数';
 $string['maximumnumberofanswersbranches_help'] = '此设置决定在此程序教学中可以使用的选项的最大个数。如果只使用判断题，那么可以设为0。此设置随时可以改变，因为它只影响教师界面，不影响数据。';
-$string['maximumnumberofattempts'] = '允许试答次数';
+$string['maximumnumberofattempts'] = '每个问题的最大尝试次数';
 $string['maximumnumberofattempts_help'] = '此设置决定每个问题最多可以回答的次数。如果持续回答错误，当达到此最大值时，会显示教程的下一页。';
 $string['maximumnumberofattemptsreached'] = '达到最大尝试次数-移至下一页';
 $string['mediaclose'] = '显示关闭按钮';
-$string['mediafile'] = '弹出文件或网页';
+$string['mediafile'] = '链接的媒体';
 $string['mediafile_help'] = '如果想在程序教学开始时弹出一个窗口，请选择在窗口里显示的文件。每个教程页面都会有一个重新打开此弹出窗口的链接，可以在需要的时候使用。';
 $string['mediafilepopup'] = '点击这里查看';
-$string['mediaheight'] = '弹出窗口高度：';
-$string['mediawidth'] = '弹出窗口宽度：';
+$string['mediaheight'] = '弹出窗口高度';
+$string['mediawidth'] = '弹出窗口宽度';
 $string['messageprovider:graded_essay'] = '程序教学评分通知';
 $string['minimumnumberofquestions'] = '至少回答题目数';
-$string['minimumnumberofquestions_help'] = '此设置决定用来计算此活动成绩的最少题目数量。如果此教程包含一个或多个内容页面，那么最小题目数应设为0。
-
-假如它被设为20，那么在教程的起始页会显示下面文字：“在此教程中，希望您回答至少20个问题。 如果愿意，您可以回答更多问题。但是，如果您回答少于20个问题，您的成绩将按照回答了20个问题的方式计算。”';
+$string['minimumnumberofquestions_help'] = '此设置指定将用于计算活动成绩的最小问题数。';
 $string['missingname'] = '请输入昵称';
 $string['modattempts'] = '允许学生检查';
 $string['modattempts_help'] = '如果启用，学生可以再次从头浏览此程序教学。';
@@ -532,16 +532,17 @@ $string['savechangesandeol'] = '保存所有修改并跳转到程序教学的最
 $string['saveoverrideandstay'] = '保存并输入另一个覆盖';
 $string['savepage'] = '保存页面';
 $string['score'] = '分数';
-$string['score_help'] = '得分只在启用自定义得分时使用。每个答案都可以给出一个分数值(正或负)。';
+$string['score_help'] = '如果在课程设置中启用了自定义评分，则可以为每个答案输入整数值（正值或负值）。';
 $string['scores'] = '分数';
 $string['search:activity'] = '程序教学-活动信息';
 $string['secondpluswrong'] = '不完全正确，您想再试一次吗？';
 $string['selectallattempts'] = '选择所有尝试';
 $string['selectaqtype'] = '选择一个题目类型';
+$string['selectreport'] = '选择报告';
 $string['sent'] = '发送';
 $string['shortanswer'] = '填空题';
-$string['showanunansweredpage'] = '显示一个未回答的页面';
-$string['showanunseenpage'] = '显示一个未浏览的页面';
+$string['showanunansweredpage'] = '显示未回答的页面';
+$string['showanunseenpage'] = '显示未浏览的页面';
 $string['singleanswer'] = '一个答案';
 $string['skip'] = '跳跃导航';
 $string['slideshow'] = '幻灯片';

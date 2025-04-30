@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ro', version '4.1'.
+ * Strings for component 'enrol_self', language 'ro', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Numai membrii cohortei';
 $string['cohortonly_help'] = 'Înscrierea personală poate fi limitată numai la membrii unei cohorte specificate. Rețineți că modificarea acestei setări nu are niciun efect asupra înscrierilor existente.';
 $string['confirmbulkdeleteenrolment'] = 'Sigur doriți să ștergeți aceste înregistrări ale utilizatorilor?';
 $string['customwelcomemessage'] = 'Mesaj de bun venit personalizat';
-$string['customwelcomemessage_help'] = 'Un mesaj de întâmpinare personalizat poate fi adăugat ca text simplu sau format Moodle-auto, inclusiv etichete HTML și etichete multi-lang.
-
-Următorii substituenți pot fi incluși în mesaj:
-
-* Denumirea materiei {$a->coursename}
-* Link către pagina de profil a utilizatorului {$a->profileurl}
-* E-mail utilizator {$a->email}
-* Numele complet al utilizatorului {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Formate acceptate: text simplu sau format Moodle-auto. Sunt acceptate, de asemenea, etichetele HTML și etichetele în mai multe limbi, precum și următorii substituenți:
+<ul>
+<li>Numele cursului {$a->coursename}</li>
+<li>Link către pagina de profil a utilizatorului {$a->profileurl}</li>
+<li>E-mailul utilizatorului {$a->email}</li>
+<li>Nume complet al utilizatorului {$a->fullname}</li>
+<li>Prenume utilizator {$a->firstname}</li>
+<li>Numele utilizatorului {$a->lastname}</li>
+<li>Rolul cursului utilizator {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Atribuire implicită a rolului';
 $string['defaultrole_desc'] = 'Selectați rolul care ar trebui să fie atribuit utilizatorilor în timpul autoînscrierii';
 $string['deleteselectedusers'] = 'Ștergeți înregistrările utilizatorilor selectați';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Data de început';
 $string['enrolstartdate_help'] = 'Dacă este activată, utilizatorii se pot înscrie singuri începând cu această dată.';
 $string['expiredaction'] = 'Acțiune de expirare a înscrierii';
 $string['expiredaction_help'] = 'Selectați acțiunea de efectuat la expirarea înscrierii utilizatorului. Vă rugăm să rețineți că unele date și setări ale utilizatorilor sunt eliminate din curs în timpul anulării cursului.';
+$string['expiryinactivemessageenrolledbody'] = 'Bună {$a->user},
+
+Înscrierea ta în cursul {$a->course} expiră în {$a->timeend} deoarece nu ai accesat cursul în ultimele {$a->inactivetime} zile.
+
+Pentru a fi în continuare înregistrat, loghează-te și accesează <a href="{$a->url}">{$a->course}</a> înainte de {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Înscrierea ta expiră: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Stimate {$a->user},
 
 Aceasta este o notificare că înscrierea dvs. la cursul \'{$a->curs}\' urmează să expire pe {$a->timeend}.

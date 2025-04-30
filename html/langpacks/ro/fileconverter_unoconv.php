@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'fileconverter_unoconv', language 'ro', version '4.1'.
+ * Strings for component 'fileconverter_unoconv', language 'ro', version '4.4'.
  *
  * @package     fileconverter_unoconv
  * @category    string

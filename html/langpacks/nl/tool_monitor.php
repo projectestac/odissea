@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'nl', version '4.1'.
+ * Strings for component 'tool_monitor', language 'nl', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Te monitoren zone';
 $string['cachedef_eventsubscriptions'] = 'Dit bewaart de lijst met gebeurtenis-inschrijvingen per cursus';
 $string['contactadmin'] = 'Neem contact op met je beheerder om dit in te schakelen';
 $string['core'] = 'Kern';
+$string['coresubsystem'] = 'Subsysteem ({$a})';
 $string['currentsubscriptions'] = 'Je huidige inschrijvingen';
 $string['defaultmessagetemplate'] = 'Regelnaam: {rulename}<br />Beschrijving: {description}<br />Gebeurtenisnaam: {eventname}';
 $string['deleterule'] = 'Verwijder regel';
@@ -68,9 +69,11 @@ $string['messagetemplate_help'] = 'Er is een melding gestuurd naar wie ingeschre
 
 * Link naar de locatie van de gebeurtenis {link}
 * Link naar de gemonitorde zone {modulelink}
+* Naam van de cursusmodule {modulename}
 * Naam van de regel {rulename}
 * Beschrijving {description}
-* Gebeurtenis {eventname}';
+* Volledige naam van de cursus {coursefullname}
+* Korte naam van de cursus {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instantie';
 $string['monitor:managerules'] = 'Beheer regels gebeurtenismonitor';

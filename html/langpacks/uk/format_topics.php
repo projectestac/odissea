@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'uk', version '4.1'.
+ * Strings for component 'format_topics', language 'uk', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,17 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Додати тему';
 $string['currentsection'] = 'Ця тема';
-$string['deletesection'] = 'Вилучити секцію';
-$string['editsection'] = 'Редагувати секцію';
-$string['editsectionname'] = 'Редагувати назву секції';
 $string['hidefromothers'] = 'Приховати секцію';
 $string['indentation'] = 'Дозволити відступи на сторінці курсу';
 $string['indentation_help'] = 'Дозвольте викладачам та іншим користувачам із можливістю керування діяльністю робити відступи для елементів на сторінці курсу.';
-$string['newsectionname'] = 'Нова назва для секції {$a}';
+$string['legacysectionname'] = 'Секція';
 $string['page-course-view-topics'] = 'Головна сторінка будь-якого курсу в тематичному форматі.';
 $string['page-course-view-topics-x'] = 'Будь-яка сторінка курсу в тематичному форматі';
+$string['plugin_description'] = 'Курс поділений на спеціальні секції (теми).';
 $string['pluginname'] = 'Тематичний формат';
 $string['privacy:metadata'] = 'Плагін формату Теми не зберігає жодних персональних даних.';
 $string['section0name'] = 'Загальне';

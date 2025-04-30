@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'ru', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'ru', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -74,7 +74,7 @@ $string['checkdesc:headerh3'] = 'Заголовки, следующие посл
 $string['checkdesc:headershavetext'] = 'Чтобы заголовок был осознаваемым, он должен содержать текст.';
 $string['checkdesc:iisnotused'] = 'Курсив (i) использовать не следует. Вместо этого следует использовать «em».';
 $string['checkdesc:imgaltisdifferent'] = 'Альтернативный текст изображения не должен совпадать с именем файла изображения.';
-$string['checkdesc:imgaltistoolong'] = 'Альтернативный текст изображения не должен превышать 125 символов.';
+$string['checkdesc:imgaltistoolong'] = 'Убедитесь, что альтернативный текст изображения достаточно краток и описывает изображение.';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'Альтернативный текст изображения  не должен быть пустым, особенно если у изображения есть область со ссылкой, ведущей в другое место.';
 $string['checkdesc:imgaltnotplaceholder'] = 'Альтернативный текст изображения не должен быть неинформативным текстом-заполнителем, таким как «изображение».';
 $string['checkdesc:imghasalt'] = 'Альтернативный текст изображения не должен отсутствовать для изображений, если только они  не являются чисто декоративными и не имеют конкретного значения.';

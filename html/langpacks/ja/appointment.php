@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'ja', version '4.1'.
+ * Strings for component 'appointment', language 'ja', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -67,6 +67,7 @@ $string['attendanceinstructions'] = 'セッションに参加したユーザを�
 $string['attendedsession'] = '参加したセッション';
 $string['attendees'] = '参加者';
 $string['attendeestablesummary'] = 'このセッションに参加検討中か参加したことのある人';
+$string['availableplaceholders'] = '使用可能なプレースホルダー';
 $string['availableseats'] = '{$a}  席可能';
 $string['book'] = '予約';
 $string['bookedat'] = '<strong>予約済:</strong> {$a}';
@@ -97,6 +98,7 @@ $string['capacity_help'] = '「 定員 」は、そのセッションに参加�
 
   アポイントメントのセッションが定員に達した場合、コースページにはセッションの詳細は表示されません。「全てのセッション」では詳細がグレーアウトし、学習者はそのセッションに申し込むことができません。';
 $string['closed'] = '受付終了';
+$string['completionattended'] = 'アポイントメントを予約して参加する';
 $string['completionattended_help'] = '有効になっている場合、受講者の予約出席が「フル出席」または「一部出席」とマークされていれば、アクティビティは完了したとみなされます。';
 $string['completionbooked'] = 'このアクティビティを完了するには、受講者はアポイントメントが必要です';
 $string['completionbooked_help'] = '有効にすると、受講者のステータスが「予約済み」、「フル参加」、「一部参加」の場合、アクティビティは完了したとみなされます。受講者がキャンセルした場合、キャンセル待ちの場合、または出席が「No show」と表示されている場合、アクティビティは完了したとはみなされません。';
@@ -157,6 +159,7 @@ $string['eventsignup'] = 'セッション登録';
 $string['eventupdatesession'] = 'セッション更新';
 $string['full'] = '日付は満席です';
 $string['fullfilter'] = '満席';
+$string['fullybooked'] = '満席';
 $string['goback'] = '戻る';
 $string['icalendarheading'] = 'iCalender形式の添付ファイル';
 $string['joinwaitlist'] = 'キャンセル待ちに加わる';
@@ -184,6 +187,205 @@ $string['partiallyfull'] = '部分的に満席';
 $string['placeholder:alldates'] = '[全日付]';
 $string['placeholder:appointmentname'] = '[アポイントメント名]';
 $string['placeholder:attendeeslink'] = '[参加者リンク]';
+$string['placeholder:details'] = '詳細';
+$string['placeholder:finishtime'] = '終了時刻';
+$string['placeholder:firstname'] = '名';
+$string['placeholder:lastname'] = '姓';
+$string['placeholder:reminderperiod'] = '[リマインダー期間]';
+$string['placeholder:sessiondate'] = '[セッション日]';
+$string['placeholder:starttime'] = '開始時刻';
+$string['placeholdersdesc'] = 'プレースホルダー';
+$string['placeholdersdesc_help'] = 'プレースホルダーを使用すると、動的なコンテンツを追加できます。たとえば、[firstname] プレースホルダーは、ユーザに送信される通知内でユーザの名前に置き換えられます';
+$string['pluginadministration'] = 'アポイントメント管理';
+$string['pluginname'] = 'アポイントメント';
+$string['potentialattendees'] = '潜在的な参加者';
+$string['privacy:metadata:appointment_signups'] = 'アポイントメントセッションへのユーザの登録';
+$string['privacy:metadata:appointment_signups:id'] = '登録ID';
+$string['privacy:metadata:appointment_signups:mailedreminder'] = 'リマインダーが最後に送信された時間';
+$string['privacy:metadata:appointment_signups:sessionid'] = 'セッションID';
+$string['privacy:metadata:appointment_signups_status'] = 'セッションへのユーザ登録ステータス';
+$string['privacy:metadata:appointment_signups_status:grade'] = 'セッションに参加したことで割り当てられた評定';
+$string['privacy:metadata:appointment_signups_status:note'] = 'セッションキャンセルの理由を保存';
+$string['privacy:metadata:appointment_signups_status:signupid'] = '登録ID';
+$string['privacy:metadata:appointment_signups_status:statuscode'] = '登録ステータス 例)キャンセル、拒否、全員出席';
+$string['privacy:metadata:appointment_signups_status:timecreated'] = '登録が作成された時間';
+$string['privacy:metadata:userid'] = 'アポイントメント活動にアクセスしたユーザID';
+$string['remindermessage'] = 'リマインダーメッセージ';
+$string['remindermessage_help'] = 'このメッセージは、セッション開始日付の数日前に送信されます。';
+$string['reminderperiod'] = 'メッセージ送信までの日数';
+$string['reminderperiod_help'] = 'リマインダーは、セッション開始の何日も前に送信されます。';
+$string['requestmessage'] = 'メッセージをリクエスト';
+$string['requestmessage_help'] = '「承認が必要」が有効になっていると、「リクエストメッセージ」セクションが利用できます。
+ 「リクエストメッセージ」セクションには、学習者がアポイントメントセッションに参加するための承認プロセスに関して、学習者とマネージャに送信された通知が表示されます。
+ 「件名」は、マネージャと学習者に送信される承認リクエストメールに表示される件名です。
+ 「メッセージ」は、学習者に送信されるEメールの文面で、アポイントセッションへの参加依頼がマネージャに送信され、承認されたことを通知します。
+ 「マネージャに通知」は、学習者のマネージャに送信されるメールの文面で、アポイントセッションへの参加を承認することを要求します。';
+$string['requeststablesummary'] = 'このセッションの参加をリクエストしている人';
+$string['room'] = 'ルーム';
+$string['saveattendance'] = '出席を保存';
+$string['search:activity'] = 'アポイントメント活動';
+$string['seatsavailable'] = '空席あり';
+$string['seatsbooked'] = '席を予約';
+$string['sessionavailability'] = 'セッションの空き状況';
+$string['sessiondatetime'] = 'セッションの日付/時間';
+$string['sessiondescription'] = '説明';
+$string['sessionduration'] = 'セッションの持続時間';
+$string['sessionfinished'] = '終了';
+$string['sessionfinishtime'] = 'セッションの終了時間';
+$string['sessioninprogress'] = '進行中のセッション';
+$string['sessionisfull'] = 'このセッションは、ただいま満席です。別の時間を選択するか、インストラクターに相談してください。';
+$string['sessionnotstarted'] = '未開始';
+$string['sessionrequiresmanagerapproval'] = 'このセッションを予約するためには、マネージャの承認が必要です。';
+$string['sessions'] = 'セッション';
+$string['sessionsdetailstablesummary'] = '現在のセッションの詳しい説明';
+$string['sessionstartdate'] = 'セッション開始日';
+$string['sessionstartdateandtime'] = '{$a->startdate}, {$a->starttime} - {$a->endtime} (タイムゾーン: {$a->timezone})';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
+$string['sessionstartfinishdateandtime'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime} (タイムゾーン: {$a->timezone})';
+$string['sessionstartfinishdateandtimewithouttimezone'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime';
 $string['sessionstarttime'] = 'セッション開始時間';
 $string['sessionstatus'] = 'セッションステータス';
+$string['setting:defaultcancellationmessagedefault'] = 'これは、以下のアポイントメントがキャンセルされたことをお知らせするためのものです:<br><br>
+*** 以下の予約はキャンセルされました。***
+参加者：   [firstname] [lastname]<br>
+予　約：   [appointmentname]<br>
+日　付：<br>
+[alldates]<br><br>
+場　所：   [session:location]<br>
+会　場：   [session:venue]<br>
+ルーム：[session:room]';
+$string['setting:defaultcancellationsubjectdefault'] = 'アポイントメント予約キャンセル';
+$string['setting:defaultconfirmationmessagedefault'] = 'これはあなたが次のアポイントメントに予約が入っていることを確認するためのものです。<br><br>
+ 参加者: [firstname] [lastname]<br>
+ アポイントメント名: [appointmentname]<br><br>
+
+ 日付:<br>
+ [alldates]<br><br>
+
+ 場所: [session:location]<br>
+ 会場: [session:venue]<br>
+ ルーム: [session:room]<br><br>
+
+ ***アポイントメントの開始する10分前には到着するようにしてください***<br><br>
+
+ 予約を再予約あるいはキャンセルするには<br>
+ 予約を再予約あるいはキャンセルするには、あなたはこの予約をキャンセルして新しいセッションを再予約する必要があります。<br>
+予約をキャンセルするには、アポイントメントページに戻り、「キャンセルする」を選択してください。<br><br>
+
+ [details]<br><br>
+
+ あなたはこのアポイントメントの[reminderperiod]営業日前にリマインダーを受け取ります。<br><br>';
+$string['setting:defaultconfirmationsubjectdefault'] = 'アポイントメント予約確認: [appointmentname], [starttime]-[finishtime], [sessiondate]';
+$string['setting:defaultremindermessagedefault'] = 'これはあなたが予約している次のアポイントメントのリマインダーです:<br><br>
+
+ 参加者: [firstname] [lastname]<br>
+ アポイントメント名: [appointmentname]<br><br>
+
+ 日付:<br>
+ [alldates]<br><br>
+
+ 場所: [session:location]<br>
+ 会場: [session:venue]<br>
+ ルーム: [session:room]<br><br>
+
+ ***アポイントメントの開始する10分前には到着するようにしてください***<br><br>
+
+ 予約を再予約あるいはキャンセルするには<br>
+ 予約を再予約あるいはキャンセルするには、あなたはこの予約をキャンセルして新しいセッションを再予約する必要があります。<br>
+予約をキャンセルするには、アポイントメントページに戻り、「キャンセルする」を選択してください。<br><br>
+
+ [details]';
+$string['setting:defaultremindersubjectdefault'] = 'アポイントメント予約リマインダー: [appointmentname], [starttime]-[finishtime], [sessiondate]';
+$string['setting:defaultrequestmessagedefault'] = '下記のアポイントメントの予約リクエストがマネージャに送信されました：
+
+ 参加者: [firstname] [lastname]
+ アポイントメント名: [appointmentname]
+
+ 日付:
+ [alldates]
+
+ 場所: [session:location]
+ 会場: [session:venue]
+ ルーム: [session:room]';
+$string['setting:defaultrequestsubjectdefault'] = 'アポイントメント予約リクエスト: [appointmentname], [starttime]-[finishtime]';
+$string['setting:defaultupdatemessagedefault'] = 'これは、予約したまたはウェイトリストに登録した予定が変更されたことをお知らせするものです：<br><br>
+参加者: [firstname] [lastname]<br>
+予定: [appointmentname]<br><br>
+日付:<br>
+[alldates]<br><br>
+場所: [session:location]<br>
+会場: [session:venue]<br>
+ルーム: [session:room]<br><br>
+これは予約確定通知ではありませんのでご注意ください<br><br>
+
+予約またはウェイトリストの登録をキャンセルするには、予約ページに戻り、「キャンセル」を選択してください。<br><br>
+
+[details]<br><br>';
+$string['setting:defaultupdatesubjectdefault'] = '予約更新: [appointmentname], [starttime]-[finishtime], [sessiondate]';
+$string['setting:defaultwaitlistedmessagedefault'] = 'これは、あなたがキャンセル待ちリストに追加されたことをお知らせするためのものです。
+
+ アポイントメント名: [appointmentname]
+ 場所: [session:location]
+ 参加者: [firstname] [lastname]
+
+ ***これは予約確認ではありませんのでご注意ください。***
+ キャンセル待ちリストに登録することで、この予約に興味を持ったことになります。セッションが利用可能になった際に直接ご連絡させていただきます。
+
+ キャンセル待ちを解除するには、この予約に戻り、キャンセルをクリックしてください。キャンセル待ちリスト解除の確認メールはありませんのでご注意ください。';
+$string['setting:defaultwaitlistedsubjectdefault'] = '[appointmentname]のキャンセル待ち報告';
+$string['setting:oneemailperday'] = '複数日にわたるイベントの場合、各日に対して個別のメールを送信します。';
+$string['setting:oneemailperday_caption'] = '各日に対して個別のメール';
+$string['settings'] = '設定';
+$string['shortname'] = '# 省略名';
+$string['shortname_help'] = '「省略名」は、「カレンダーに表示」が有効なとき、学習カレンダーに表示されます。';
+$string['showoncalendar'] = 'カレンダー表示設定';
+$string['showoncalendar_help'] = '「サイト」を選択すると、アポイントメント活動セッションはグローバルイベントとしてサイトカレンダーに表示されます。 すべてのサイトユーザはこれらのセッションを閲覧することもできます。
+
+ 「コース」を選択すると、すべてのアポイントメント管理セッションがコースカレンダーに表示され、サイトレベルカレンダーにコースイベントとして表示され、そのコースに登録しているすべてのユーザが閲覧できます。
+
+ 「なし」が選択されている場合、「ユーザのカレンダーに表示する」オプションが選択されている場合に限り、アポイントメント活動セッションは、確認済みの参加者のカレンダーにユーザイベントとして表示されます。';
+$string['sign-ups'] = '登録';
+$string['signupforthissession'] = 'このアポイントメントセッションに登録';
+$string['split'] = '自動分割';
+$string['split_help'] = 'この設定は、時間枠内に作成された各セッションの継続期間を定義します。0に設定すると、このオプションは無効になります。';
 $string['status'] = 'ステータス';
+$string['status_approved'] = '承認済';
+$string['status_booked'] = '予約済';
+$string['status_declined'] = '辞退済';
+$string['status_fully_attended'] = '完全出席';
+$string['status_no_show'] = '表示なし';
+$string['status_partially_attended'] = '部分的に出席しました';
+$string['status_requested'] = 'リクエストされました';
+$string['status_user_cancelled'] = 'ユーザがキャンセル';
+$string['status_waitlisted'] = 'キャンセル待ち';
+$string['suppressemail'] = 'Eメール通知を停止';
+$string['suppressemail_help'] = 'このオプションは、アポイントメントセッションからユーザに気づかれずに、ユーザを追加/削除したい場合に使用してください。このオプションが設定されている場合、通常のEメールは選択されたユーザには送信されません。';
+$string['takeattendance'] = '出欠をとる';
+$string['thirdpartyemailaddress'] = '第三者のEメールアドレス';
+$string['thirdpartyemailaddress_help'] = '「第三者のEメールアドレス」は、ユーザがセッションに登録した際に確認メッセージを受け取る第三者（外部講師など）のメールアドレスを指定するためのオプションフィールドです。
+ 「複数のEメールアドレス」を入力する場合は、各アドレスをカンマで区切ってください。例: bob@example.com,joe@example.com';
+$string['thirdpartywaitlist'] = 'キャンセル待ちのセッションについて第三者に通知';
+$string['thirdpartywaitlist_help'] = '「キャンセル待ちのセッションについて第三者に通知する」を選択した場合、学習者がキャンセル待ち中のセッションに登録すると、第三者に通知されます。
+
+ 「キャンセル待ちのセッションについて第三者に通知する」が無効な場合、ユーザが予定されたセッションに登録（またはキャンセル）した場合にのみ、第三者に通知されます。';
+$string['timecancelled'] = 'キャンセルされた時間';
+$string['timeframes'] = '時間枠';
+$string['timerequested'] = 'リクエストされた時間';
+$string['timesignedup'] = '登録された時間';
+$string['timestart'] = '開始時間';
+$string['unapprovedrequests'] = '未承認のリクエスト';
+$string['unknowndate'] = '(日付不明)';
+$string['unknowntime'] = '(時間不明)';
+$string['updatemessage'] = 'メッセージを更新';
+$string['updatemessage_help'] = 'このメッセージは、セッションが変更されるたびに送信されます。';
+$string['usercalentry'] = 'ユーザのカレンダーにエントリを表示';
+$string['usercalentry_help'] = 'この設定を有効にすると、予定セッションの出席者のカレンダーにユーザイベントのエントリが追加されます。オフにすると、カレンダーの表示設定が「コース」または「サイト」に設定されているセッションの参加者のカレンダ ーに、イベントが重複して表示されるのを防ぐことができます。';
+$string['usercancelledon'] = '{$a} をキャンセルしたユーザ';
+$string['usernotsignedup'] = 'ステータス：登録していません';
+$string['usersignedup'] = 'ステータス：登録しました';
+$string['usersignedupon'] = '{$a} に登録したユーザ';
+$string['userwillbewaitlisted'] = 'このセッションは満席です。「登録」ボタンをクリックすると、キャンセル待ちリストに登録されます。';
+$string['venue'] = '会場';
+$string['waitlistedat'] = '<strong>キャンセル待ちリスト登録済み:</strong> {$a}';
+$string['waitlistedmessage'] = 'キャンセル待ちメッセージ';
+$string['waitlistedmessage_help'] = 'このメッセージは、ユーザがキャンセル待ちセッションに登録する度に送信されます。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'en', version '4.1'.
+ * Strings for component 'group', language 'en', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Are you sure you want to delete group \'{$a}\'?
 $string['deletegrouping'] = 'Delete grouping';
 $string['deletegroupingconfirm'] = 'Are you sure you want to delete grouping \'{$a}\'? (Groups in the grouping are not deleted.)';
 $string['deletegroupsconfirm'] = 'Are you sure you want to delete the following groups?';
-$string['deleteselectedgroup'] = 'Delete selected group';
+$string['deleteselectedgroup'] = 'Delete';
+$string['disablemessagingaction'] = 'Disable messaging';
 $string['editgroupingsettings'] = 'Edit grouping settings';
 $string['editgroupsettings'] = 'Edit group settings';
 $string['editusersgroupsa'] = 'Edit groups for "{$a}"';
 $string['enablemessaging'] = 'Group messaging';
 $string['enablemessaging_help'] = 'If enabled, group members can send messages to the others in their group via the messaging drawer.';
+$string['enablemessagingaction'] = 'Enable messaging';
 $string['encoding'] = 'Encoding';
 $string['enrolmentkey'] = 'Enrolment key';
 $string['enrolmentkey_help'] = 'An enrolment key enables access to the course to be restricted to only those who know the key. If a group enrolment key is specified, then not only will entering that key let the user into the course, but it will also automatically make them a member of this group.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'An enrolment key enables access to the course to
 Note: Group enrolment keys must be enabled in the self enrolment settings and an enrolment key for the course must also be specified.';
 $string['enrolmentkeyalreadyinuse'] = 'This enrolment key is already used for another group.';
 $string['erroraddremoveuser'] = 'Error adding/removing user {$a} to group';
+$string['erroraddtogroup'] = 'Invalid value for addtogroup. It should be 0 for no group mode or 1 for a new group to be created.';
+$string['erroraddtogroupgroupname'] = 'You cannot specify groupname when addtogroup is set.';
 $string['erroreditgroup'] = 'Error creating/updating group {$a}';
 $string['erroreditgrouping'] = 'Error creating/updating grouping {$a}';
 $string['errorinvalidgroup'] = 'Error, invalid group {$a}';
@@ -113,6 +117,8 @@ $string['groupmembers'] = 'Group members';
 $string['groupmemberssee'] = 'See group members';
 $string['groupmembersselected'] = 'Members of selected group';
 $string['groupmode'] = 'Group mode';
+$string['groupmode_groupsseparate_help'] = 'Students are divided into groups and can only see their group\'s work.';
+$string['groupmode_groupsvisible_help'] = 'Students are divided into groups, but can see the work of other groups.';
 $string['groupmode_help'] = '* No groups
 * Separate groups: Students are divided into groups and can only see their group\'s work.
 * Visible groups: Students are divided into groups, but can see the work of other groups.
@@ -135,7 +141,6 @@ $string['groupspreview'] = 'Groups preview';
 $string['groupsseparate'] = 'Separate groups';
 $string['groupsvisible'] = 'Visible groups';
 $string['grouptemplate'] = 'Group @';
-$string['hidepicture'] = 'Hide picture';
 $string['importgroups'] = 'Import groups';
 $string['importgroups_help'] = 'Groups may be imported via text file. The format of the file should be as follows:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Include only active enrolments';
 $string['includeonlyactiveenrol_help'] = 'If enabled, suspended users will not be included in groups.';
 $string['javascriptrequired'] = 'This page requires JavaScript to be enabled.';
+$string['manageactions'] = 'Manage';
 $string['memberofgroup'] = 'Group member of: {$a}';
 $string['members'] = 'Members per group';
 $string['membersofselectedgroup'] = 'Members of:';
+$string['messagingdisabled'] = 'Successfully disabled messaging in {$a} group(s)';
+$string['messagingenabled'] = 'Successfully enabled messaging in {$a} group(s)';
 $string['mygroups'] = 'My groups';
 $string['namingscheme'] = 'Naming scheme';
 $string['namingscheme_help'] = 'The at symbol (@) may be used to create groups with names containing letters. For example Group @ will generate groups named Group A, Group B, Group C, ...
@@ -175,6 +183,9 @@ $string['numgroups'] = 'Number of groups';
 $string['nummembers'] = 'Members per group';
 $string['othergroups'] = 'Other groups';
 $string['overview'] = 'Overview';
+$string['participation'] = 'Show group in dropdown menu for activities in group mode';
+$string['participation_help'] = 'Should group members be able to select this group for activities in separate or visible groups mode? (Only applicable if group membership is visible or only visible to members.)';
+$string['participationshort'] = 'Participation';
 $string['potentialmembers'] = 'Potential members: {$a}';
 $string['potentialmembs'] = 'Potential members';
 $string['printerfriendly'] = 'Printer-friendly display';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'Insufficient users to populate this number of groups
 $string['usercount'] = 'User count';
 $string['usercounttotal'] = 'User count ({$a})';
 $string['usergroupmembership'] = 'Selected user\'s membership:';
+$string['visibility'] = 'Group membership visibility';
+$string['visibility_help'] = '* Visible - all course participants can view who is in the group
+* Only visible to members - course participants not in the group can’t view the group or its members
+* Only see own membership - a user can see they are in the group but can’t view other group members
+* Hidden - only teachers can view the group and its members
+
+Users with the view hidden groups capability can always view group membership.
+
+Note that you can\'t change this setting if the group has members.';
+$string['visibilityall'] = 'Visible';
+$string['visibilitymembers'] = 'Only visible to members';
+$string['visibilitynone'] = 'Hidden';
+$string['visibilityown'] = 'Only see own membership';
+$string['visibilityshort'] = 'Visibility';
+$string['withselected'] = 'With selected';

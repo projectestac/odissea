@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', version '4.1'.
+ * Strings for component 'error', language 'nl', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -116,7 +116,7 @@ $string['cannotinsertrecord'] = 'Kon geen nieuw record ID {$a} toevoegen';
 $string['cannotmailconfirm'] = 'Fout bij het versturen van de bevestigingsmail voor het wijzigen van het wachtwoord';
 $string['cannotmanualctrack'] = 'Deze activiteit ondersteunt het manueel opvolgen van voltooien niet.';
 $string['cannotmapfield'] = 'Koppeling mislukt: 2 velden koppelen naar hetzelfde beoordelingsitem {$a}';
-$string['cannotmarktopic'] = 'Kon dat onderdeel voor die cursus niet beoordelen';
+$string['cannotmarktopic'] = 'Kon die sectie van deze cursus niet markeren';
 $string['cannotmigratedatacomments'] = 'Kan gegevens module notities niet verplaatsen';
 $string['cannotmodulename'] = 'Kan de modulenaam niet aan de navigatie toevoegen.';
 $string['cannotmoduletype'] = 'Kan het moduletype niet aan de navigatie toevoegen.';
@@ -234,6 +234,10 @@ $string['dmlparseexception'] = 'Fout bij het verwerken van de SQL-query';
 $string['dmlreadexception'] = 'Fout bij het lezen van de databank';
 $string['dmltransactionexception'] = 'Databank transactiefout';
 $string['dmlwriteexception'] = 'Fout bij het schrijven van de databank';
+$string['dndmaxbytes'] = 'Het bestand is te groot. De maximaal toegestane grootte is {$a->size}.';
+$string['dndread'] = 'Fout bij het lezen van het bestand';
+$string['dndunkownfile'] = 'Dit bestandstype wordt niet ondersteund';
+$string['dndupload'] = 'Er is een onbekende fout opgetreden tijdens het uploaden van het bestand';
 $string['downgradedcore'] = 'Fout: de code die je gebruikt is ouder dan de versie die deze databank heeft gemaakt!';
 $string['downloadedfilecheckfailed'] = 'Controle van het gedownloade bestand mislukt';
 $string['duplicatefieldname'] = 'Dubbele veldnaam "{$a}" gevonden';
@@ -242,6 +246,7 @@ $string['duplicateparaminsql'] = 'FOUT: dubbele parameternaam in query';
 $string['duplicaterolename'] = 'Er is al een rol met die naam!';
 $string['duplicateroleshortname'] = 'Er is al een rol met deze korte naam!';
 $string['duplicateusername'] = 'Gebruikersnaam bestaat al - record genegeerd';
+$string['editedpagenotfound'] = 'Het systeem kon niet bepalen op welke pagina je bent. Probeer de pagina te vernieuwen en de bewerking te herhalen.';
 $string['emailfail'] = 'E-mailen mislukt';
 $string['encryption_decryptfailed'] = 'Decodering is mislukt';
 $string['encryption_encryptfailed'] = 'Versleuteling is mislukt';
@@ -378,7 +383,7 @@ $string['invalidrole'] = 'Ongeldige rol';
 $string['invalidroleid'] = 'Ongeldige rol ID';
 $string['invalidscaleid'] = 'Ongeldige schaal-ID';
 $string['invalidsection'] = 'Cursusmodulerecord bevat ongeldige sectie';
-$string['invalidsesskey'] = 'Je sessie is waarschijnlijk verlopen. Opnieuw inloggen aub.';
+$string['invalidsesskey'] = 'Je sessie is waarschijnlijk verlopen. Controleer of je aangemeld bent of ga terug naar het vorige scherm en herlaad de pagina.';
 $string['invalidshortname'] = 'Ongeldig korte cursusnaam';
 $string['invalidsourcefield'] = 'Het bronveld van het concept is niet geldig';
 $string['invalidstatedetected'] = 'Er ging wat fout: {$a}. Dit zou normaal niet mogen gebeuren';
@@ -427,6 +432,10 @@ $string['moduledisable'] = 'Deze module ({$a}) is voor deze cursus uitgeschakeld
 $string['moduledoesnotexist'] = 'Deze module bestaat niet';
 $string['moduleinstancedoesnotexist'] = 'De instantie van deze module bestaat niet';
 $string['modulemissingcode'] = 'De code die nodig is om deze functie uit te voeren ontbreekt in module {$a}.';
+$string['moodlenet:invalidshareformat'] = 'Ongeldig MoodleNet formaat';
+$string['moodlenet:invalidsharestatus'] = 'Ongeldige MoodleNet-deelstatus';
+$string['moodlenet:invalidsharetype'] = 'Ongeldig MoodleNet-sharetype';
+$string['moodlenet:usernotconfigured'] = 'Je hebt het recht niet om inhoud te delen op MoodleNet of je account is niet juist geconfigureerd.';
 $string['movecatcontentstoroot'] = 'De categorie-inhoud naar root verplaatsen is niet toegestaan. Je moet de inhoud naar een bestaande categorie verplaatsen!';
 $string['movecatcontentstoselected'] = 'Een deel van de categorie-inhoud kan niet worden verplaatst naar de geselecteerde categorie.';
 $string['movecategorynotpossible'] = 'Je kunt categorie \'{$a}\' niet naar de geselecteerde categorie verplaatsen.';
@@ -498,8 +507,10 @@ $string['opensslsignerror'] = 'OpenSSL kan gegevens niet ondertekenen';
 $string['orderidnotfound'] = 'Order ID {$a} niet gevonden';
 $string['pagenotexist'] = '<p> Er is een ongebruikelijke fout opgetreden bij het bekijken van een pagina die niet bestaat: </p>{$a}';
 $string['pagenotexisttitle'] = '404 Fout: bestand niet gevonden';
+$string['passwordexceeded'] = 'Wachtwoord mag niet langer zijn dan {$a} tekens.';
 $string['pathdoesnotstartslash'] = 'Geen geldig argumentenpad opgegeven, het pad begint niet met een schuine streep!';
 $string['pleasereport'] = 'Probeer tijd te maken om ons te laten weten wat je probeerde te doen toen de fout gebeurde.';
+$string['pluginnotexist'] = 'Plugin {$a} bestaat niet';
 $string['pluginrequirementsnotmet'] = 'Plugin "{$a->pluginname}" ({$a->pluginversion}) kon niet geïnstalleerd worden. Er is een nieuwere versie van Moodle nodig (je gebruikt nu {$a->currentmoodle} en je hebt {$a->requiremoodle} nodig).';
 $string['pluginunsupported'] = 'Plugin "{$a->pluginname}" {$a->pluginversion} ondersteunt Moodleversie {$a->moodleversion} niet. Zoek plugin-informatie over de ondersteunde versies.';
 $string['prefixcannotbeempty'] = '<p>Fout: databank tabel prefix kan niet leeg zijn ({$a})</p>
@@ -511,6 +522,7 @@ $string['processingstops'] = 'Verwerking stopt hier. De overgebleven records wor
 $string['protected_cc_not_supported'] = 'Protected cartridge niet ondersteund.';
 $string['querystringcannotbeempty'] = 'De query string kan niet leeg zijn.';
 $string['redirecterrordetected'] = 'Niet-ondersteunde verwijzing gevonden. De uitvoering van het script is gestopt.';
+$string['redissessionhandlerproblem'] = 'Het opzetten van de redis-sessie is mislukt. Neem contact op met je serverbeheerder.';
 $string['refoundto'] = 'Kan teruggegeven worden aan {$a}';
 $string['refoundtoorigi'] = 'Teruggegeven op oorspronkelijke hoeveelheid: {$a}';
 $string['registrationdisabled'] = 'Registratie is uitgeschakeld op deze site';
@@ -612,6 +624,7 @@ $string['usermustbemnet'] = 'De gebruikers in de MNET-toeganscontrolelijst moete
 $string['usernamelowercase'] = 'De gebruikersnaam moet in kleine letters zijn';
 $string['usernotaddederror'] = 'Gebruiker niet toegevoegd - fout';
 $string['usernotaddedregistered'] = 'Gebruiker niet toegevoegd - gebruiker bestaat al';
+$string['usernotaddedusernameexists'] = 'Gebruiker niet toegevoegd - gebruikersnaam bestaat al onder een ander e-mailadres';
 $string['usernotavailable'] = 'Je hebt het recht niet om de detailgegevens van deze gebruiker te zien.';
 $string['usernotdeletedadmin'] = 'Gebruiker niet verwijderd want beheerdersaccounts kunnen niet verwijderd worden.';
 $string['usernotdeleteddeleted'] = 'Deze gebruiker is al verwijderd';

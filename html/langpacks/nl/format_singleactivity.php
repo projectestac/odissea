@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'nl', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'nl', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = 'Geef een activiteitstype op dat geselecteerd z
 $string['erroractivitytype'] = 'Activiteitstype is niet ingesteld in cursusinstellingen';
 $string['orphaned'] = 'Verweesd';
 $string['orphanedwarning'] = 'Deze activiteiten kunnen door gebruikers niet bereikt worden!';
-$string['pluginname'] = 'Eén activiteitsformat';
+$string['plugin_description'] = 'De cursus bevat slechts één activiteit of hulpmiddel.';
+$string['pluginname'] = 'Eén activiteit';
 $string['privacy:metadata'] = 'De één activiteitsplugin bewaart geen persoonlijke gegevens.';
 $string['sectionname'] = '';
 $string['warningchangeformat'] = 'Wanneer je de bestaande curus format wijzigt naar "Eén activiteit-format", zorg er dan voor dat je eerst alle bestaande activiteiten, "Mededelingen" inbegrepen, verwijdert. Ook de sectiestructuur kan gewijzigd worden.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'eu', version '4.1'.
+ * Strings for component 'auth_oauth2', language 'eu', version '4.4'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -63,13 +63,13 @@ Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin,
 Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
 Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: lotutako sarbidearen berrespena';
-$string['createaccountswarning'] = 'Autentifikazio-plugin honek zure gunean kontuak sortzea ahalbidetzen du. Ezarpen hau erabili nahi baduzu baliteke "authpreventaccountcreation" ezarpena gaitzea nahi izatea.';
-$string['createnewlinkedlogin'] = 'Estekatu beste kontu bat ({$a})';
+$string['createaccountswarning'] = 'Autentifikazio-plugin honek zure gunean kontuak sortzea ahalbidetzen du. Plugin hau erabiltzen baduzu baliteke "Galarazi kontuen sorrera identifikatzean" ezarpena gaitu ala desgaitu nahi izatea.';
+$string['createnewlinkedlogin'] = 'Estekatu kontu berri bat ({$a})';
 $string['emailconfirmlink'] = 'Estekatu zure kontuak';
 $string['emailconfirmlinksent'] = '<p>Helbide elektroniko hau duen kontu bat aurkitu da baina oraindik lotu gabe dago.</p>
 <p>Kontuak lotu behar dira sartu baino lehen.</p>
-<p>E-mail bat bidaliko zen <b>{$a}</b> helbidera.</p>
-<p>Bertan kontuak lotzeko jarraibide errazak aurkituko dituzu.</p>
+<p>Honezkero e-mail bat bidaliko zen <b>{$a}</b> helbidera.</p>
+<p>Bertan zure kontuak lotzeko jarraibide errazak aurkituko dituzu.</p>
 <p>Zailtasunen bat baduzu, jarri harremanetan guneko kudeatzailearekin.</p>';
 $string['emailpasswordchangeinfo'] = 'Kaixo, {$a->firstname}:
 
@@ -113,5 +113,5 @@ $string['privacy:metadata:auth_oauth2:userid'] = 'OAuth 2 saio-hasierarekin lotu
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'Kontu hau aldatu zueneko erabiltzailearen IDa.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Kontu honekin lotutako kanpoko erabiltzailearen erabiltzaile-izena.';
 $string['testidplogin'] = 'Probatu saio-hasiera honekin:';
-$string['userinfo'] = 'Hornitzaileko erabiltzaile-datuak';
+$string['userinfo'] = 'Hornitzaileko erabiltzaile-datuak:';
 $string['value'] = 'Balioa';

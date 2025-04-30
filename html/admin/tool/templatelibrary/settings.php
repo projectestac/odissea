@@ -25,8 +25,8 @@
  */
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2016.08.16 @sarjona
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
 if (get_protected_agora()) {
 // ************ FI
 
@@ -38,7 +38,7 @@ $temp = new admin_externalpage(
 );
 $ADMIN->add('development', $temp);
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2016.08.16 @sarjona
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
 }
 // ************ FI

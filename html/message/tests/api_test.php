@@ -41,11 +41,13 @@ final class api_test extends \advanced_testcase {
         testhelper::send_fake_message($sender, $recipient);
         testhelper::send_fake_message($sender, $recipient);
 
+        $this->assertEquals(1, api::count_unread_conversations($recipient));
+
         api::mark_all_notifications_as_read($recipient->id);
         api::mark_all_messages_as_read($recipient->id);
 
-        $this->assertEquals(message_count_unread_messages($recipient), 0);
-        $this->assertDebuggingCalled();
+        // We've marked all of recipients conversation messages as read.
+        $this->assertEquals(0, api::count_unread_conversations($recipient));
     }
 
     public function test_mark_all_read_for_user_touser_with_fromuser(): void {
@@ -71,42 +73,23 @@ final class api_test extends \advanced_testcase {
         testhelper::send_fake_message($sender2, $recipient);
         testhelper::send_fake_message($sender2, $recipient);
 
+        $this->assertEquals(2, api::count_unread_conversations($recipient));
+
         api::mark_all_notifications_as_read($recipient->id, $sender1->id);
         $conversationid = api::get_conversation_between_users([$recipient->id, $sender1->id]);
         api::mark_all_messages_as_read($recipient->id, $conversationid);
 
-        $this->assertEquals(message_count_unread_messages($recipient), 3);
-        $this->assertDebuggingCalled();
-    }
-
-    public function test_mark_all_read_for_user_touser_with_type() {
-        $this->resetAfterTest();
-
-        $sender = $this->getDataGenerator()->create_user(array('firstname' => 'Test1', 'lastname' => 'User1'));
-        $recipient = $this->getDataGenerator()->create_user(array('firstname' => 'Test2', 'lastname' => 'User2'));
-
-        testhelper::send_fake_message($sender, $recipient, 'Notification', 1);
-        testhelper::send_fake_message($sender, $recipient, 'Notification', 1);
-        testhelper::send_fake_message($sender, $recipient, 'Notification', 1);
-        testhelper::send_fake_message($sender, $recipient);
-        testhelper::send_fake_message($sender, $recipient);
-        testhelper::send_fake_message($sender, $recipient);
-
-        api::mark_all_notifications_as_read($recipient->id);
-        $this->assertEquals(message_count_unread_messages($recipient), 3);
-        $this->assertDebuggingCalled();
-
-        api::mark_all_messages_as_read($recipient->id);
-        $this->assertEquals(message_count_unread_messages($recipient), 0);
-        $this->assertDebuggingCalled();
+        // We've marked only the conversation with sender1 messages as read.
+        $this->assertEquals(1, api::count_unread_conversations($recipient));
     }
 
     /**
      * Test count_blocked_users.
      */
-    public function test_count_blocked_users() {
+    public function test_count_blocked_users(): void {
         global $USER;
         $this->resetAfterTest();
+
 
         // Set this user as the admin.
         $this->setAdminUser();
@@ -131,7 +114,7 @@ final class api_test extends \advanced_testcase {
      * If checks this by placing some users in the same course, where default caps would permit a user to view another user's
      * profile.
      */
-    public function test_message_search_users_messagingallusers_disabled() {
+    public function test_message_search_users_messagingallusers_disabled(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -223,7 +206,7 @@ final class api_test extends \advanced_testcase {
      * This test verifies that any contacts are returned, as well as any non-contacts,
      * provided the searching user can view their profile.
      */
-    public function test_message_search_users_messagingallusers_enabled() {
+    public function test_message_search_users_messagingallusers_enabled(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -325,7 +308,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Verify searching for users find themselves when they have self-conversations.
      */
-    public function test_message_search_users_self_conversations() {
+    public function test_message_search_users_self_conversations(): void {
         $this->resetAfterTest();
 
         // Create some users.
@@ -354,7 +337,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Verify searching for users works even if no matching users from either contacts, or non-contacts can be found.
      */
-    public function test_message_search_users_with_empty_result() {
+    public function test_message_search_users_with_empty_result(): void {
         $this->resetAfterTest();
 
         // Create some users, but make sure neither will match the search term.
@@ -379,7 +362,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test verifying that limits and offsets work for both the contacts and non-contacts return data.
      */
-    public function test_message_search_users_limit_offset() {
+    public function test_message_search_users_limit_offset(): void {
         $this->resetAfterTest();
 
         // Create 20 users.
@@ -455,7 +438,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests searching users as a user having the 'moodle/user:viewdetails' capability.
      */
-    public function test_message_search_users_with_cap() {
+    public function test_message_search_users_with_cap(): void {
         $this->resetAfterTest();
         global $DB;
 
@@ -511,7 +494,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests searching users with messaging disabled.
      */
-    public function test_message_search_users_messaging_disabled() {
+    public function test_message_search_users_messaging_disabled(): void {
         $this->resetAfterTest();
 
         // Create a user.
@@ -657,7 +640,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests searching messages.
      */
-    public function test_search_messages() {
+    public function test_search_messages(): void {
         $this->resetAfterTest();
 
         // Create some users.
@@ -1256,36 +1239,36 @@ final class api_test extends \advanced_testcase {
 
         // Verify format of the return structure.
         foreach ($conversations as $conv) {
-            $this->assertObjectHasAttribute('id', $conv);
-            $this->assertObjectHasAttribute('name', $conv);
-            $this->assertObjectHasAttribute('subname', $conv);
-            $this->assertObjectHasAttribute('imageurl', $conv);
-            $this->assertObjectHasAttribute('type', $conv);
-            $this->assertObjectHasAttribute('isfavourite', $conv);
-            $this->assertObjectHasAttribute('membercount', $conv);
-            $this->assertObjectHasAttribute('isread', $conv);
-            $this->assertObjectHasAttribute('unreadcount', $conv);
-            $this->assertObjectHasAttribute('members', $conv);
+            $this->assertObjectHasProperty('id', $conv);
+            $this->assertObjectHasProperty('name', $conv);
+            $this->assertObjectHasProperty('subname', $conv);
+            $this->assertObjectHasProperty('imageurl', $conv);
+            $this->assertObjectHasProperty('type', $conv);
+            $this->assertObjectHasProperty('isfavourite', $conv);
+            $this->assertObjectHasProperty('membercount', $conv);
+            $this->assertObjectHasProperty('isread', $conv);
+            $this->assertObjectHasProperty('unreadcount', $conv);
+            $this->assertObjectHasProperty('members', $conv);
             foreach ($conv->members as $member) {
-                $this->assertObjectHasAttribute('id', $member);
-                $this->assertObjectHasAttribute('fullname', $member);
-                $this->assertObjectHasAttribute('profileimageurl', $member);
-                $this->assertObjectHasAttribute('profileimageurlsmall', $member);
-                $this->assertObjectHasAttribute('isonline', $member);
-                $this->assertObjectHasAttribute('showonlinestatus', $member);
-                $this->assertObjectHasAttribute('isblocked', $member);
-                $this->assertObjectHasAttribute('iscontact', $member);
-                $this->assertObjectHasAttribute('isdeleted', $member);
-                $this->assertObjectHasAttribute('canmessage', $member);
-                $this->assertObjectHasAttribute('requirescontact', $member);
-                $this->assertObjectHasAttribute('contactrequests', $member);
+                $this->assertObjectHasProperty('id', $member);
+                $this->assertObjectHasProperty('fullname', $member);
+                $this->assertObjectHasProperty('profileimageurl', $member);
+                $this->assertObjectHasProperty('profileimageurlsmall', $member);
+                $this->assertObjectHasProperty('isonline', $member);
+                $this->assertObjectHasProperty('showonlinestatus', $member);
+                $this->assertObjectHasProperty('isblocked', $member);
+                $this->assertObjectHasProperty('iscontact', $member);
+                $this->assertObjectHasProperty('isdeleted', $member);
+                $this->assertObjectHasProperty('canmessage', $member);
+                $this->assertObjectHasProperty('requirescontact', $member);
+                $this->assertObjectHasProperty('contactrequests', $member);
             }
-            $this->assertObjectHasAttribute('messages', $conv);
+            $this->assertObjectHasProperty('messages', $conv);
             foreach ($conv->messages as $message) {
-                $this->assertObjectHasAttribute('id', $message);
-                $this->assertObjectHasAttribute('useridfrom', $message);
-                $this->assertObjectHasAttribute('text', $message);
-                $this->assertObjectHasAttribute('timecreated', $message);
+                $this->assertObjectHasProperty('id', $message);
+                $this->assertObjectHasProperty('useridfrom', $message);
+                $this->assertObjectHasProperty('text', $message);
+                $this->assertObjectHasProperty('timecreated', $message);
             }
         }
     }
@@ -1293,7 +1276,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test verifying that html format messages are supported, and that message_format_message_text() is being called appropriately.
      */
-    public function test_get_conversations_message_format() {
+    public function test_get_conversations_message_format(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -1437,7 +1420,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests retrieving conversations when a 'self' conversation exists.
      */
-    public function test_get_conversations_self_conversations() {
+    public function test_get_conversations_self_conversations(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -1718,7 +1701,7 @@ final class api_test extends \advanced_testcase {
      * test is performed is because we do not need as much data for group conversations (saving DB calls), so we want
      * to confirm this happens.
      */
-    public function test_get_conversations_user_in_group_and_individual_chat() {
+    public function test_get_conversations_user_in_group_and_individual_chat(): void {
         $this->resetAfterTest();
 
         $this->resetAfterTest();
@@ -1777,7 +1760,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test verifying that group linked conversations are returned and contain a subname matching the course name.
      */
-    public function test_get_conversations_group_linked() {
+    public function test_get_conversations_group_linked(): void {
         global $CFG, $DB;
         $this->resetAfterTest();
 
@@ -1826,7 +1809,7 @@ final class api_test extends \advanced_testcase {
         // Consider first conversations is self-conversation.
         $this->assertEquals(2, $conversations[0]->membercount);
         $this->assertEquals($course1->shortname, $conversations[0]->subname);
-        $this->assertEquals('https://www.example.com/moodle/theme/image.php/_s/boost/core/1/g/g1', $conversations[0]->imageurl);
+        $this->assertEquals('https://www.example.com/moodle/theme/image.php/boost/core/1/g/g1', $conversations[0]->imageurl);
 
         // Now, disable the conversation linked to the group and verify it's no longer returned.
         $DB->set_field('message_conversations', 'enabled', 0, ['id' => $conversations[0]->id]);
@@ -1840,7 +1823,7 @@ final class api_test extends \advanced_testcase {
     * This provides sets of data to for testing.
     * @return array
     */
-   public function get_conversations_mixed_provider() {
+   public static function get_conversations_mixed_provider(): array {
        return array(
             'Test that conversations with messages contacts is correctly ordered.' => array(
                 'users' => array(
@@ -2134,7 +2117,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test that creation can't create the same conversation twice for 1:1 conversations.
      */
-    public function test_create_conversation_duplicate_conversations() {
+    public function test_create_conversation_duplicate_conversations(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -2157,7 +2140,7 @@ final class api_test extends \advanced_testcase {
      * @param array $messagesdata The list of messages to create.
      * @param array $expectations The list of expected outcomes.
      */
-    public function test_get_conversations_mixed($usersdata, $contacts, $messagesdata, $expectations) {
+    public function test_get_conversations_mixed($usersdata, $contacts, $messagesdata, $expectations): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -2882,7 +2865,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests deleting a conversation by conversation id.
      */
-    public function test_delete_conversation_by_id() {
+    public function test_delete_conversation_by_id(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -2962,7 +2945,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests counting unread conversations.
      */
-    public function test_count_unread_conversations() {
+    public function test_count_unread_conversations(): void {
         $this->resetAfterTest(true);
 
         // Create some users.
@@ -2999,7 +2982,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests counting unread conversations where one conversation is disabled.
      */
-    public function test_count_unread_conversations_disabled() {
+    public function test_count_unread_conversations_disabled(): void {
         $this->resetAfterTest(true);
 
         // Create some users.
@@ -3082,7 +3065,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user can't send a message without proper capability.
      */
-    public function test_can_send_message_without_sendmessage_cap() {
+    public function test_can_send_message_without_sendmessage_cap(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -3221,7 +3204,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user with the messageanyuser capability can send a message.
      */
-    public function test_can_send_message_with_messageanyuser_cap() {
+    public function test_can_send_message_with_messageanyuser_cap(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -3267,7 +3250,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user when blocked will not be able to send messages if they are blocked.
      */
-    public function test_can_send_message_even_if_blocked() {
+    public function test_can_send_message_even_if_blocked(): void {
         $this->resetAfterTest();
 
         $user1 = self::getDataGenerator()->create_user();
@@ -3280,7 +3263,7 @@ final class api_test extends \advanced_testcase {
      * Tests the user will be able to send a message even if they are blocked as the user
      * has the capability 'moodle/site:messageanyuser'.
      */
-    public function test_can_send_message_even_if_blocked_with_message_any_user_cap() {
+    public function test_can_send_message_even_if_blocked_with_message_any_user_cap(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3298,7 +3281,7 @@ final class api_test extends \advanced_testcase {
      * Tests the user will be able to send a message even if they are blocked as the user
      * has the capability 'moodle/site:readallmessages'.
      */
-    public function test_can_send_message_even_if_blocked_with_read_all_message_cap() {
+    public function test_can_send_message_even_if_blocked_with_read_all_message_cap(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3315,7 +3298,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user can not always send a message if they are blocked just because they share a course.
      */
-    public function test_can_send_message_even_if_blocked_shared_course() {
+    public function test_can_send_message_even_if_blocked_shared_course(): void {
         $this->resetAfterTest();
 
         // Create some users.
@@ -3334,7 +3317,7 @@ final class api_test extends \advanced_testcase {
      * Tests the user can always send a message even if they are blocked because they share a course and
      * have the capability 'moodle/site:messageanyuser' at the course context.
      */
-    public function test_can_send_message_even_if_blocked_shared_course_with_message_any_user_cap() {
+    public function test_can_send_message_even_if_blocked_shared_course_with_message_any_user_cap(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3411,7 +3394,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Verify the behaviour of can_send_message_to_conversation() for authenticated users without the sendmessage capability.
      */
-    public function test_can_send_message_to_conversation_sendmessage_cap() {
+    public function test_can_send_message_to_conversation_sendmessage_cap(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -3461,7 +3444,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Verify the behaviour of can_send_message_to_conversation() for authenticated users without the messageanyuser capability.
      */
-    public function test_can_send_message_to_conversation_messageanyuser_cap() {
+    public function test_can_send_message_to_conversation_messageanyuser_cap(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -3902,7 +3885,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test returning blocked users.
      */
-    public function test_get_blocked_users() {
+    public function test_get_blocked_users(): void {
         global $USER;
         $this->resetAfterTest();
 
@@ -3929,237 +3912,9 @@ final class api_test extends \advanced_testcase {
     }
 
     /**
-     * Test returning contacts with unread message count.
-     * MDL-69643
-     */
-    public function test_get_contacts_with_unread_message_count() {
-        global $DB;
-
-        $this->resetAfterTest();
-
-        $user1 = self::getDataGenerator()->create_user();
-        $user2 = self::getDataGenerator()->create_user();
-        $user3 = self::getDataGenerator()->create_user();
-        $user4 = self::getDataGenerator()->create_user();
-
-        // Add the users to each of their contacts.
-        api::add_contact($user1->id, $user2->id);
-        api::add_contact($user2->id, $user3->id);
-
-        testhelper::send_fake_message($user1, $user2);
-        testhelper::send_fake_message($user1, $user2);
-        testhelper::send_fake_message($user1, $user2);
-        $message4id = testhelper::send_fake_message($user1, $user2);
-
-        testhelper::send_fake_message($user3, $user2);
-        $message6id = testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-
-        // Send a message that should never be included as the user is not a contact.
-        testhelper::send_fake_message($user4, $user2);
-
-        // Get the contacts and the unread message count.
-        $messages = api::get_contacts_with_unread_message_count($user2->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(2, $messages);
-        ksort($messages);
-
-        $messageinfo1 = array_shift($messages);
-        $messageinfo2 = array_shift($messages);
-
-        $this->assertEquals($user1->id, $messageinfo1->id);
-        $this->assertEquals(4, $messageinfo1->messagecount);
-        $this->assertEquals($user3->id, $messageinfo2->id);
-        $this->assertEquals(5, $messageinfo2->messagecount);
-
-        // Mark some of the messages as read.
-        $m4 = $DB->get_record('messages', ['id' => $message4id]);
-        $m6 = $DB->get_record('messages', ['id' => $message6id]);
-        api::mark_message_as_read($user2->id, $m4);
-        api::mark_message_as_read($user2->id, $m6);
-
-        // Get the contacts and the unread message count.
-        $messages = api::get_contacts_with_unread_message_count($user2->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(2, $messages);
-        ksort($messages);
-
-        // Confirm read messages are not included.
-        $messageinfo1 = array_shift($messages);
-        $messageinfo2 = array_shift($messages);
-        $this->assertEquals($user1->id, $messageinfo1->id);
-        $this->assertEquals(3, $messageinfo1->messagecount);
-        $this->assertEquals($user3->id, $messageinfo2->id);
-        $this->assertEquals(4, $messageinfo2->messagecount);
-
-        // Now, let's populate the database with messages from user2 to user 1.
-        testhelper::send_fake_message($user2, $user1);
-        testhelper::send_fake_message($user2, $user1);
-        $messageid = testhelper::send_fake_message($user2, $user1);
-
-        // Send a message that should never be included as the user is not a contact.
-        testhelper::send_fake_message($user4, $user1);
-
-        // Get the contacts and the unread message count.
-        $messages = api::get_contacts_with_unread_message_count($user1->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(1, $messages);
-        $messageinfo1 = array_shift($messages);
-        $this->assertEquals($user2->id, $messageinfo1->id);
-        $this->assertEquals(3, $messageinfo1->messagecount);
-
-        // Mark the last message as read.
-        $m = $DB->get_record('messages', ['id' => $messageid]);
-        api::mark_message_as_read($user1->id, $m);
-
-        $messages = api::get_contacts_with_unread_message_count($user1->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(1, $messages);
-
-        // Confirm read messages are not included.
-        $messageinfo1 = array_shift($messages);
-        $this->assertEquals($user2->id, $messageinfo1->id);
-        $this->assertEquals(2, $messageinfo1->messagecount);
-    }
-
-    /**
-     * Test returning contacts with unread message count when there are no messages.
-     */
-    public function test_get_contacts_with_unread_message_count_no_messages() {
-        $this->resetAfterTest();
-
-        $user1 = self::getDataGenerator()->create_user();
-        $user2 = self::getDataGenerator()->create_user();
-
-        // Add the users to each of their contacts.
-        api::add_contact($user2->id, $user1->id);
-
-        // Check we get the correct message count.
-        $messages = api::get_contacts_with_unread_message_count($user2->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(1, $messages);
-
-        $messageinfo = array_shift($messages);
-
-        $this->assertEquals($user1->id, $messageinfo->id);
-        $this->assertEquals(0, $messageinfo->messagecount);
-    }
-
-    /**
-     * Test returning non-contacts with unread message count.
-     * MDL-69643
-     */
-    public function test_get_non_contacts_with_unread_message_count() {
-        global $DB;
-        $this->resetAfterTest();
-
-        $user1 = self::getDataGenerator()->create_user();
-        $user2 = self::getDataGenerator()->create_user();
-        $user3 = self::getDataGenerator()->create_user();
-        $user4 = self::getDataGenerator()->create_user();
-
-        // Add a user to the contact list of the users we are testing this function with.
-        api::add_contact($user1->id, $user4->id);
-        api::add_contact($user2->id, $user4->id);
-
-        testhelper::send_fake_message($user1, $user2);
-        testhelper::send_fake_message($user1, $user2);
-        testhelper::send_fake_message($user1, $user2);
-        $message4id = testhelper::send_fake_message($user1, $user2);
-
-        testhelper::send_fake_message($user3, $user2);
-        $message6id = testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-        testhelper::send_fake_message($user3, $user2);
-
-        // Send a message that should never be included as the user is a contact.
-        testhelper::send_fake_message($user4, $user2);
-
-
-        // Get the non-contacts and the unread message count.
-        $messages = api::get_non_contacts_with_unread_message_count($user2->id);
-        $this->assertDebuggingCalled();
-
-        // Check we get the correct message count.
-        ksort($messages);
-        $this->assertCount(2, $messages);
-        $messageinfo1 = array_shift($messages);
-        $messageinfo2 = array_shift($messages);
-        $this->assertEquals($user1->id, $messageinfo1->id);
-        $this->assertEquals(4, $messageinfo1->messagecount);
-        $this->assertEquals($user3->id, $messageinfo2->id);
-        $this->assertEquals(5, $messageinfo2->messagecount);
-
-        // Mark some of the messages as read.
-        $m4 = $DB->get_record('messages', ['id' => $message4id]);
-        $m6 = $DB->get_record('messages', ['id' => $message6id]);
-        api::mark_message_as_read($user2->id, $m4);
-        api::mark_message_as_read($user2->id, $m6);
-
-        // Get the non-contacts and the unread message count.
-        $messages = api::get_non_contacts_with_unread_message_count($user2->id);
-        $this->assertDebuggingCalled();
-
-        // Check the marked message is not returned in the message count.
-        ksort($messages);
-        $this->assertCount(2, $messages);
-        $messageinfo1 = array_shift($messages);
-        $messageinfo2 = array_shift($messages);
-        $this->assertEquals($user1->id, $messageinfo1->id);
-        $this->assertEquals(3, $messageinfo1->messagecount);
-        $this->assertEquals($user3->id, $messageinfo2->id);
-        $this->assertEquals(4, $messageinfo2->messagecount);
-
-        // Now, let's populate the database with messages from user2 to user 1.
-        testhelper::send_fake_message($user2, $user1);
-        testhelper::send_fake_message($user2, $user1);
-        $messageid = testhelper::send_fake_message($user2, $user1);
-
-        // Send a message that should never be included as the user is a contact.
-        testhelper::send_fake_message($user4, $user1);
-
-        // Get the non-contacts and the unread message count.
-        $messages = api::get_non_contacts_with_unread_message_count($user1->id);
-        $this->assertDebuggingCalled();
-
-        // Confirm the size is correct.
-        $this->assertCount(1, $messages);
-        $messageinfo1 = array_shift($messages);
-        $this->assertEquals($user2->id, $messageinfo1->id);
-        $this->assertEquals(3, $messageinfo1->messagecount);
-
-        // Mark the last message as read.
-        $m = $DB->get_record('messages', ['id' => $messageid]);
-        api::mark_message_as_read($user1->id, $m);
-
-        // Get the non-contacts and the unread message count.
-        $messages = api::get_non_contacts_with_unread_message_count($user1->id);
-        $this->assertDebuggingCalled();
-
-        // Check the marked message is not returned in the message count.
-        $this->assertCount(1, $messages);
-        $messageinfo1 = array_shift($messages);
-        $this->assertEquals($user2->id, $messageinfo1->id);
-        $this->assertEquals(2, $messageinfo1->messagecount);
-    }
-
-    /**
      * Test marking a message as read.
      */
-    public function test_mark_message_as_read() {
+    public function test_mark_message_as_read(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4200,7 +3955,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test marking a notification as read.
      */
-    public function test_mark_notification_as_read() {
+    public function test_mark_notification_as_read(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4593,7 +4348,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test can create a contact request.
      */
-    public function test_can_create_contact_request() {
+    public function test_can_create_contact_request(): void {
         global $CFG;
         $this->resetAfterTest();
 
@@ -4625,7 +4380,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test creating a contact request.
      */
-    public function test_create_contact_request() {
+    public function test_create_contact_request(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4638,8 +4393,8 @@ final class api_test extends \advanced_testcase {
         $sink->close();
         // Test customdata.
         $customdata = json_decode($messages[0]->customdata);
-        $this->assertObjectHasAttribute('notificationiconurl', $customdata);
-        $this->assertObjectHasAttribute('actionbuttons', $customdata);
+        $this->assertObjectHasProperty('notificationiconurl', $customdata);
+        $this->assertObjectHasProperty('actionbuttons', $customdata);
         $this->assertCount(2, (array) $customdata->actionbuttons);
 
         $this->assertEquals($user1->id, $request->userid);
@@ -4649,7 +4404,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test confirming a contact request.
      */
-    public function test_confirm_contact_request() {
+    public function test_confirm_contact_request(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4675,7 +4430,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test declining a contact request.
      */
-    public function test_decline_contact_request() {
+    public function test_decline_contact_request(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4693,7 +4448,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test retrieving contact requests.
      */
-    public function test_get_contact_requests() {
+    public function test_get_contact_requests(): void {
         global $PAGE;
         $this->resetAfterTest();
 
@@ -4717,12 +4472,12 @@ final class api_test extends \advanced_testcase {
 
         $this->assertEquals($user2->id, $request->id);
         $this->assertEquals(fullname($user2), $request->fullname);
-        $this->assertObjectHasAttribute('profileimageurl', $request);
-        $this->assertObjectHasAttribute('profileimageurlsmall', $request);
-        $this->assertObjectHasAttribute('isonline', $request);
-        $this->assertObjectHasAttribute('showonlinestatus', $request);
-        $this->assertObjectHasAttribute('isblocked', $request);
-        $this->assertObjectHasAttribute('iscontact', $request);
+        $this->assertObjectHasProperty('profileimageurl', $request);
+        $this->assertObjectHasProperty('profileimageurlsmall', $request);
+        $this->assertObjectHasProperty('isonline', $request);
+        $this->assertObjectHasProperty('showonlinestatus', $request);
+        $this->assertObjectHasProperty('isblocked', $request);
+        $this->assertObjectHasProperty('iscontact', $request);
     }
 
     /**
@@ -4747,7 +4502,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test getting contact requests when there are none.
      */
-    public function test_get_contact_requests_no_requests() {
+    public function test_get_contact_requests_no_requests(): void {
         $this->resetAfterTest();
 
         $user1 = self::getDataGenerator()->create_user();
@@ -4760,7 +4515,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test getting contact requests with limits.
      */
-    public function test_get_contact_requests_with_limits() {
+    public function test_get_contact_requests_with_limits(): void {
         $this->resetAfterTest();
 
         $user1 = self::getDataGenerator()->create_user();
@@ -4778,7 +4533,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test adding contacts.
      */
-    public function test_add_contact() {
+    public function test_add_contact(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4800,7 +4555,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test removing contacts.
      */
-    public function test_remove_contact() {
+    public function test_remove_contact(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4816,7 +4571,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test blocking users.
      */
-    public function test_block_user() {
+    public function test_block_user(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4838,7 +4593,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test unblocking users.
      */
-    public function test_unblock_user() {
+    public function test_unblock_user(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4854,7 +4609,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test muting a conversation.
      */
-    public function test_mute_conversation() {
+    public function test_mute_conversation(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -4886,7 +4641,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test unmuting a conversation.
      */
-    public function test_unmute_conversation() {
+    public function test_unmute_conversation(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -5144,7 +4899,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test can create a group conversation.
      */
-    public function test_can_create_group_conversation() {
+    public function test_can_create_group_conversation(): void {
         global $CFG;
         $this->resetAfterTest();
 
@@ -5248,7 +5003,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test creating an invalid conversation.
      */
-    public function test_create_conversation_invalid() {
+    public function test_create_conversation_invalid(): void {
         $this->expectException('moodle_exception');
         api::create_conversation(3, [1, 2, 3]);
     }
@@ -5256,7 +5011,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test creating an individual conversation with too many members.
      */
-    public function test_create_conversation_individual_too_many_members() {
+    public function test_create_conversation_individual_too_many_members(): void {
         $this->expectException('moodle_exception');
         api::create_conversation(api::MESSAGE_CONVERSATION_TYPE_INDIVIDUAL, [1, 2, 3]);
     }
@@ -5320,7 +5075,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test enable_conversation.
      */
-    public function test_enable_conversation() {
+    public function test_enable_conversation(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -5342,7 +5097,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test disable_conversation.
      */
-    public function test_disable_conversation() {
+    public function test_disable_conversation(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -5365,7 +5120,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test update_conversation_name.
      */
-    public function test_update_conversation_name() {
+    public function test_update_conversation_name(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -5431,7 +5186,7 @@ final class api_test extends \advanced_testcase {
         $this->assertEquals(true, $member1->showonlinestatus);
         $this->assertEquals(false, $member1->iscontact);
         $this->assertEquals(false, $member1->isblocked);
-        $this->assertObjectHasAttribute('contactrequests', $member1);
+        $this->assertObjectHasProperty('contactrequests', $member1);
         $this->assertEmpty($member1->contactrequests);
 
         $this->assertEquals($user2->id, $member2->id);
@@ -5440,7 +5195,7 @@ final class api_test extends \advanced_testcase {
         $this->assertEquals(true, $member2->showonlinestatus);
         $this->assertEquals(true, $member2->iscontact);
         $this->assertEquals(false, $member2->isblocked);
-        $this->assertObjectHasAttribute('contactrequests', $member2);
+        $this->assertObjectHasProperty('contactrequests', $member2);
         $this->assertEmpty($member2->contactrequests);
 
         $this->assertEquals($user3->id, $member3->id);
@@ -5449,7 +5204,7 @@ final class api_test extends \advanced_testcase {
         $this->assertEquals(true, $member3->showonlinestatus);
         $this->assertEquals(false, $member3->iscontact);
         $this->assertEquals(true, $member3->isblocked);
-        $this->assertObjectHasAttribute('contactrequests', $member3);
+        $this->assertObjectHasProperty('contactrequests', $member3);
         $this->assertEmpty($member3->contactrequests);
     }
 
@@ -5606,18 +5361,18 @@ final class api_test extends \advanced_testcase {
         $messages = $messagessink->get_messages();
         // Test customdata.
         $customdata = json_decode($messages[0]->customdata);
-        $this->assertObjectHasAttribute('notificationiconurl', $customdata);
-        $this->assertObjectHasAttribute('actionbuttons', $customdata);
+        $this->assertObjectHasProperty('notificationiconurl', $customdata);
+        $this->assertObjectHasProperty('actionbuttons', $customdata);
         $this->assertCount(1, (array) $customdata->actionbuttons);
-        $this->assertObjectHasAttribute('placeholders', $customdata);
+        $this->assertObjectHasProperty('placeholders', $customdata);
         $this->assertCount(1, (array) $customdata->placeholders);
 
         // Verify the message returned.
         $this->assertInstanceOf(\stdClass::class, $message1);
-        $this->assertObjectHasAttribute('id', $message1);
+        $this->assertObjectHasProperty('id', $message1);
         $this->assertEquals($user1->id, $message1->useridfrom);
         $this->assertEquals('this is a message', $message1->text);
-        $this->assertObjectHasAttribute('timecreated', $message1);
+        $this->assertObjectHasProperty('timecreated', $message1);
 
         // Verify events. Note: the event is a message read event because of an if (PHPUNIT) conditional within message_send(),
         // however, we can still determine the number and ids of any recipients this way.
@@ -5657,17 +5412,17 @@ final class api_test extends \advanced_testcase {
         $messages = $messagessink->get_messages();
         // Verify the message returned.
         $this->assertInstanceOf(\stdClass::class, $message1);
-        $this->assertObjectHasAttribute('id', $message1);
+        $this->assertObjectHasProperty('id', $message1);
         $this->assertEquals($user1->id, $message1->useridfrom);
         $this->assertEquals('message to the group', $message1->text);
-        $this->assertObjectHasAttribute('timecreated', $message1);
+        $this->assertObjectHasProperty('timecreated', $message1);
         // Test customdata.
         $customdata = json_decode($messages[0]->customdata);
-        $this->assertObjectHasAttribute('actionbuttons', $customdata);
+        $this->assertObjectHasProperty('actionbuttons', $customdata);
         $this->assertCount(1, (array) $customdata->actionbuttons);
-        $this->assertObjectHasAttribute('placeholders', $customdata);
+        $this->assertObjectHasProperty('placeholders', $customdata);
         $this->assertCount(1, (array) $customdata->placeholders);
-        $this->assertObjectNotHasAttribute('notificationiconurl', $customdata);    // No group image means no image.
+        $this->assertObjectNotHasProperty('notificationiconurl', $customdata);    // No group image means no image.
 
         // Verify events. Note: the event is a message read event because of an if (PHPUNIT) conditional within message_send(),
         // however, we can still determine the number and ids of any recipients this way.
@@ -5681,7 +5436,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test verifying that messages can be sent to existing linked group conversations.
      */
-    public function test_send_message_to_conversation_linked_group_conversation() {
+    public function test_send_message_to_conversation_linked_group_conversation(): void {
         global $CFG, $PAGE;
         $this->resetAfterTest();
 
@@ -5727,14 +5482,14 @@ final class api_test extends \advanced_testcase {
         $messages = $messagessink->get_messages();
         // Verify the message returned.
         $this->assertInstanceOf(\stdClass::class, $message1);
-        $this->assertObjectHasAttribute('id', $message1);
+        $this->assertObjectHasProperty('id', $message1);
         $this->assertEquals($user1->id, $message1->useridfrom);
         $this->assertEquals('message to the group', $message1->text);
-        $this->assertObjectHasAttribute('timecreated', $message1);
+        $this->assertObjectHasProperty('timecreated', $message1);
         // Test customdata.
         $customdata = json_decode($messages[0]->customdata);
-        $this->assertObjectHasAttribute('notificationiconurl', $customdata);
-        $this->assertObjectHasAttribute('notificationsendericonurl', $customdata);
+        $this->assertObjectHasProperty('notificationiconurl', $customdata);
+        $this->assertObjectHasProperty('notificationsendericonurl', $customdata);
         $this->assertEquals($groupimageurl, $customdata->notificationiconurl);
         $this->assertEquals($group->name, $customdata->conversationname);
         $userpicture = new \user_picture($user1);
@@ -5808,7 +5563,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Test the get_conversation() function with a muted conversation.
      */
-    public function test_get_conversation_with_muted_conversation() {
+    public function test_get_conversation_with_muted_conversation(): void {
         $this->resetAfterTest();
 
         $user1 = self::getDataGenerator()->create_user();
@@ -5834,7 +5589,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Data provider for test_get_conversation_counts().
      */
-    public function get_conversation_counts_test_cases() {
+    public static function get_conversation_counts_test_cases(): array {
         $typeindividual = api::MESSAGE_CONVERSATION_TYPE_INDIVIDUAL;
         $typegroup = api::MESSAGE_CONVERSATION_TYPE_GROUP;
         $typeself = api::MESSAGE_CONVERSATION_TYPE_SELF;
@@ -6341,7 +6096,7 @@ final class api_test extends \advanced_testcase {
         $expectedcounts,
         $expectedunreadcounts,
         $deletedusers
-    ) {
+    ): void {
         $this->resetAfterTest();
         $generator = $this->getDataGenerator();
         $users = [
@@ -6406,7 +6161,7 @@ final class api_test extends \advanced_testcase {
             $counts['types'][api::MESSAGE_CONVERSATION_TYPE_SELF]);
     }
 
-    public function test_delete_all_conversation_data() {
+    public function test_delete_all_conversation_data(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -6518,7 +6273,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user can delete message for all users as a teacher.
      */
-    public function test_can_delete_message_for_all_users_teacher() {
+    public function test_can_delete_message_for_all_users_teacher(): void {
         global $DB;
         $this->resetAfterTest(true);
 
@@ -6546,7 +6301,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests the user can delete message for all users as a student.
      */
-    public function test_can_delete_message_for_all_users_student() {
+    public function test_can_delete_message_for_all_users_student(): void {
         $this->resetAfterTest(true);
 
         // Create fake data to test it.
@@ -6569,7 +6324,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests tdelete message for all users in group conversation.
      */
-    public function test_delete_message_for_all_users_group_conversation() {
+    public function test_delete_message_for_all_users_group_conversation(): void {
         global $DB;
         $this->resetAfterTest(true);
 
@@ -6615,7 +6370,7 @@ final class api_test extends \advanced_testcase {
     /**
      * Tests delete message for all users in private conversation.
      */
-    public function test_delete_message_for_all_users_individual_conversation() {
+    public function test_delete_message_for_all_users_individual_conversation(): void {
         global $DB;
         $this->resetAfterTest(true);
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ro', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'ro', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Vezi {$a} rezultate';
 $string['ajaxchoosescale'] = 'Alegeți';
 $string['ajaxclicktoclose'] = 'Click pentru eliminare';
 $string['ajaxerror'] = 'Eroare';
 $string['ajaxfailedupdate'] = 'Nu se poate actualiza [1] în [2]';
 $string['ajaxfieldchanged'] = 'Câmpul pe care îl editați acum este schimbat, doriți să utilizați valoarea actualizată?';
+$string['aria:dropdowncolumns'] = 'S-au găsit coloane restrânse';
+$string['cellactions'] = 'Acțiuni în cadrul celulei';
+$string['clearall'] = 'Șterge tot';
+$string['clearsearch'] = 'Anulează selecția utilizatorilor';
+$string['collapsedcolumns'] = 'Coloane restrânse <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Editarea raportului evaluatorului';
 $string['eventgradereportviewed'] = 'Raport evaluator vizualizat';
 $string['grader:manage'] = 'Modificați raportul notelor';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Dacă se afiș
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Dacă se afișează imaginea de profil a utilizatorului lângă nume';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Numărul de cursanți afișați pe pagină în raportul de note';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Aveți câteva categorii de note restrânse în cursul „{$a->name}”';
+$string['reopencolumn'] = 'Extinde coloana {$a}';
 $string['summarygrader'] = 'Un tabel cu numele elevilor în prima coloană, cu activități evaluabile grupate după curs și categorii  în partea de sus.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} notă';

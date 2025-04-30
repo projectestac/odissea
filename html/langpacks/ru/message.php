@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', version '4.1'.
+ * Strings for component 'message', language 'ru', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Собеседники';
 $string['conversationactions'] = 'Меню действий беседы';
 $string['decline'] = 'Отказаться';
 $string['defaultmessageoutputs'] = 'Способ доставки уведомлений по умолчанию';
-$string['defaults'] = 'По умолчанию';
 $string['deleteallconfirm'] = 'Вы уверены, что хотите удалить всю эту беседу ? Это не удалит её для других участников беседы.';
 $string['deleteallmessages'] = 'Удалить все сообщения';
 $string['deleteallselfconfirm'] = 'Вы уверены, что хотите удалить всю эту личную беседу?';
@@ -97,11 +96,7 @@ $string['info'] = 'Информация';
 $string['isnotinyourcontacts'] = '{$a} нет в ваших контактах';
 $string['loadmore'] = 'Загрузить больше';
 $string['loggedin'] = 'На сайте';
-$string['loggedin_help'] = 'Настройте, как вы хотите получать уведомления после входа в Moodle';
-$string['loggedindescription'] = 'Когда Вы на сайте';
 $string['loggedoff'] = 'Не в сети';
-$string['loggedoff_help'] = 'Настройте, как Вы хотите получать уведомления, когда Вы не находитесь на сайте Moodle';
-$string['loggedoffdescription'] = 'Когда Вы вне сайта';
 $string['managemessageoutputs'] = 'Настройки уведомлений по умолчанию';
 $string['message'] = 'Сообщение';
 $string['messagecontactrequest'] = '{$a->user} просит добавить себя в качестве собеседника. Посетите страницу <a href="{$a->url} "> запросов контактов </a>, чтобы ответить на запрос.';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Сообщение отправлено 
 $string['sendbulkmessagesingle'] = 'Отправить сообщение одному человеку';
 $string['sendcontactrequest'] = 'Отправить запрос на добавление в собеседники';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Отправка «{$a->provider}» через «{$a->processor}»';
 $string['sendingviaenabled'] = 'Состояние отправки «{$a->provider}» через «{$a->processor}» : включено';
 $string['sendingvialocked'] = 'Состояние отправки "{$a->provider}" через "{$a->processor}": заблокировано';
-$string['sendingviawhen'] = 'Отправка «{$a->provider}» через «{$a->processor}», если {$a->state}';
 $string['sendmessage'] = 'Отправить сообщение';
 $string['sendmessageto'] = 'Отправить сообщение для {$a}';
 $string['sendmessagetopopup'] = 'Отправить сообщение для {$a} - в новом окне';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'Просмотреть уведомление
 $string['viewmessageswith'] = 'Просмотреть сообщения от {$a}';
 $string['viewnotificationresource'] = 'Перейти к: {$a}';
 $string['viewunreadmessageswith'] = 'Непрочитанные сообщения от {$a}';
+$string['waitingforcontactaccept'] = 'Ожидают добавления в качестве собеседника';
 $string['wouldliketocontactyou'] = 'Хотят связаться с вами';
 $string['writeamessage'] = 'Напишите сообщение...';
 $string['you'] = 'Вы:';

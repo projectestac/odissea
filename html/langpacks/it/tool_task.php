@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'it', version '4.1'.
+ * Strings for component 'tool_task', language 'it', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'La coda delle elaborazioni ad hoc è vuota';
-$string['adhocqueueold'] = 'L\'elaborazione più vecchia è {$a->age}, che è maggiore di {$a->max}';
+$string['adhocqueueold'] = 'L\'elaborazione più vecchia che non ha girato è {$a->age}, che è maggiore di {$a->max}';
 $string['adhocqueuesize'] = 'La coda ad hoc contiene {$a} elaborazioni.';
 $string['adhoctaskid'] = 'ID elaborazione ad hoc: {$a}';
+$string['adhoctaskrun'] = 'Elaborazione ad hoc avviata';
 $string['adhoctasks'] = 'Elaborazione ad hoc';
-$string['asap'] = 'ASAP';
+$string['adhoctasksdue'] = 'Elaborazioni ad hoc da svolgere';
+$string['adhoctasksfailed'] = 'Elaborazioni ad hoc in errore';
+$string['adhoctasksfuture'] = 'Elaborazioni ad hoc in future';
+$string['adhoctasksrunning'] = 'Elaborazioni ad hoc in esecuzione';
+$string['asap'] = '<abbr title="As soon as possible">ASAP</abbr>';
+$string['backtoadhoctasks'] = 'Torna alle elaborazioni ad hoc';
 $string['backtoscheduledtasks'] = 'Torna alle elaborazioni pianificate';
 $string['blocking'] = 'Blocco';
 $string['cannotfindthepathtothecli'] = 'Non è stato possibile trovare il percorso del CLI PHP, l\'elaborazione non è stata avviata. È possibile impostare il \'Percorso del CLI PHP\' in Amministrazione del sito / Server / Percorsi di sistema';
 $string['checkadhocqueue'] = 'Coda elaborazioni ad hoc';
 $string['checkcronrunning'] = 'Esecuzione del cron';
+$string['checklongrunningtaskcount'] = 'Elaborazioni che girano a lungo: {$a}';
+$string['checklongrunningtasks'] = 'Elaborazioni che girano a lungo';
 $string['checkmaxfaildelay'] = 'Ritardo massimo elaborazioni in errore';
 $string['classname'] = 'Nome classe';
 $string['clearfaildelay_confirm'] = 'Sei sicuro di annullare il ritardo massimo dell\'elaborazione \'{$a}\'? A seguire l\'elaborazione riprenderà la sua pianificazione.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Modifica elaborazione pianificata:  {$a}';
 $string['enablerunnow'] = 'Abilita \'Esegui adesso\' per le elaborazioni pianificate';
 $string['enablerunnow_desc'] = 'Gli amministratori potranno lanciare singole elaborazioni direttamente dall\'interfaccia senza attendere l\'elaborazione pianificata. La funzione richiede l\'impostazione del \'Percorso del CLI PHP\' nei Percorsi di sistema. Da tenere presente che l\'elaborazione girerà sul web server, quindi durante l\'elaborazione le prestazioni potrebbero degradarsi.';
 $string['faildelay'] = 'Ritardo in caso di errore';
+$string['failed'] = 'In errore';
 $string['fromcomponent'] = 'Dal componente: {$a}';
 $string['hostname'] = 'Nome host';
 $string['lastcronstart'] = 'Tempo trascorso dall\'ultima elaborazione del cron:  {$a}';
 $string['lastruntime'] = 'Ultima elaborazione';
 $string['lastupdated'] = 'Ultimo aggiornamento: {$a}.';
 $string['nextruntime'] = 'Prossima elaborazione';
+$string['noclassname'] = 'Nome della classe non specificato';
+$string['notasks'] = 'Non ci sono elaborazioni da eseguire';
+$string['payload'] = 'Payload';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'Plugin disabilitato';
 $string['pluginname'] = 'Configurazione elaborazioni pianificate';
 $string['privacy:metadata'] = 'Il plugin "Elaborazioni pianificate" non memorizza dati personali.';
 $string['resettasktodefaults'] = 'Ripristina la pianificazione di default';
 $string['resettasktodefaults_help'] = 'La pianificazione personalizzata sarà eliminata e verrà ripristinata la pianificazione di default';
+$string['run_adhoctasks'] = 'Esegui elaborazioni ad hoc';
+$string['runadhoc'] = 'Esegui ora elaborazioni ad hoc';
+$string['runadhoc_confirm'] = 'Le elaborazioni verranno eseguite sul server web e potranno richiedere del tempo per essere completate.';
+$string['runadhoctask'] = 'Esegui \'{$a->task}\' ID attività {$a->taskid}';
+$string['runadhoctasks'] = 'Esegui tutte le elaborazioni \'{$a}\'';
+$string['runadhoctasksfailed'] = 'Esegui attività \'{$a}\' non riuscite';
 $string['runagain'] = 'Esegui di nuovo';
+$string['runclassname'] = 'Esegui tutte';
+$string['runclassnamefailedonly'] = 'Esegui elaborazioni in errore';
+$string['runningalltasks'] = 'Esecuzione di tutte le elaborazioni';
+$string['runningfailedtasks'] = 'Esecuzione delle elaborazioni in errore';
 $string['runningtasks'] = 'Elaborazioni in corso';
 $string['runnow'] = 'Esegui adesso';
 $string['runnow_confirm'] = 'Sei sicuro di eseguire l\'elaborazione ‘{$a}’ adesso? L\'elaborazione sarà lanciata sul server web e richiederà del tempo per essere completata.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Schema di esecuzione';
 $string['scheduled'] = 'Pianificata';
 $string['scheduledtaskchangesdisabled'] = 'La modifica delle elaborazioni pianificate è disabilitata';
 $string['scheduledtasks'] = 'Elaborazioni pianificate';
+$string['showall'] = 'Visualizza tutte';
+$string['showfailedonly'] = 'Visualizza solo quelle in errore';
+$string['showsummary'] = 'Visualizza riepilogo elaborazioni ad hoc';
+$string['slowtask'] = 'L\'elaborazione ha girato per più di {$a}';
 $string['started'] = 'Avviata';
+$string['taskage'] = 'Tempo di elaborazione';
+$string['taskdetails'] = 'Elaborazioni che girano per più di {$a->time} (max {$a->maxtime}): {$a->count}';
 $string['taskdisabled'] = 'Elaborazione disabilitata';
 $string['taskfailures'] = '{$a} elaborazioni in errore';
+$string['taskid'] = 'ID elaborazione';
 $string['tasklogs'] = 'Log delle elaborazioni';
 $string['tasknofailures'] = 'Non ci sono elaborazioni in errore';
+$string['taskrunningtime'] = 'L\'elaborazione ha girato per {$a}';
 $string['taskscheduleday'] = 'Giorno';
 $string['taskscheduleday_help'] = 'Il giorno del mese nel quale svolgere l\'elaborazione. Il formato da usare è lo stesso del cron Unix. Esempi:
 

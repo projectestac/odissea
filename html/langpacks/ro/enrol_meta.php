@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ro', version '4.1'.
+ * Strings for component 'enrol_meta', language 'ro', version '4.4'.
  *
  * @package     enrol_meta
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Adăugați la grup';
-$string['coursesort'] = 'Sortează lista cursurilor';
-$string['coursesort_help'] = 'Aceasta determină dacă lista cursurilor, care pot fi legate, sunt sortate după ordinea de sortare (adică, ordinea setată în Administrarea site-ului> Cursuri> Gestionați cursurile și categoriile) sau alfabetic după setarea cursului.';
+$string['coursesort'] = 'Lista ordonată a cursurilor sursă';
+$string['coursesort_help'] = 'Când conectați cursul sursă la cursul țintă, cum ar trebui să fie ordonate cursurile sursă?';
 $string['creategroup'] = 'Creați un grup nou';
 $string['defaultgroupnametext'] = '{$a->name} curs {$a->increment}';
 $string['enrolmetasynctask'] = 'Sarcină de sincronizare meta-înscriere';
@@ -36,13 +36,16 @@ $string['meta:config'] = 'Configurați instanțe de meta-înscriere';
 $string['meta:selectaslinked'] = 'Selectați cursul ca meta-link';
 $string['meta:unenrol'] = 'Retrageți utilizatorii suspendați';
 $string['nosyncroleids'] = 'Roluri care nu sunt sincronizate';
-$string['nosyncroleids_desc'] = 'În mod implicit, toate atribuțiile de rol la nivel de curs sunt sincronizate de la cursuri-părinte la cursuri-copil. Rolurile selectate aici nu vor fi incluse în procesul de sincronizare. Rolurile disponibile pentru sincronizare vor fi actualizate în următoarea execuție cron.';
+$string['nosyncroleids_desc'] = 'Selectați orice rol care nu ar trebui sincronizat între cursul sursă și cursul țintă.';
 $string['pluginname'] = 'Meta-link-ul cursului';
-$string['pluginname_desc'] = 'Plugin-ul pentru înscrierea meta-link-ului cursului sincronizează înscrierile și rolurile din două cursuri diferite.';
-$string['privacy:metadata:core_group'] = 'Înscrierea meta-plugin-ului poate crea un grup nou sau poate utiliza un grup existent, pentru a adăuga toți participanții la curs.';
+$string['pluginname_desc'] = 'Link-ul meta cursului sincronizează înscrierile și rolurile din cursul sursă în cursul țintă.';
+$string['privacy:metadata:core_group'] = 'Plugin-ul meta link pentru înscriere în curs poate crea un grup nou sau poate utiliza un grup existent pentru a adăuga participanți din cursul sursă.';
+$string['samemetacourse'] = 'Nu poți adăuga o legătură meta către același curs';
 $string['syncall'] = 'Sincronizați toți utilizatorii înscriși';
-$string['syncall_desc'] = 'Dacă este activat, toți utilizatorii înscriși sunt sincronizați, chiar dacă nu au niciun rol în cursul-părinte, dacă sunt dezactivați, doar utilizatorii care au cel puțin un rol sincronizat sunt înscriși în cursul copil.';
+$string['syncall_desc'] = 'Dacă este activată opțiunea, toți utilizatorii înscriși sunt sincronizați din cursul sursă, chiar dacă nu au niciun rol în curs.
+În caz contrar, doar utilizatorii care au cel puțin un rol sunt înscriși la cursul țintă.';
+$string['unknownmetacourse'] = 'Denumire prescurtată a cursului meta necunoscută';
 $string['wscannotcreategroup'] = 'Nicio permisiune de a crea un grup în ID curs asociat = {$a}.';
-$string['wsinvalidcourse'] = 'Id-ul cursului = {$a} nu există sau nu există permisiunea de a conecta în meta-înscriere.';
-$string['wsinvalidmetacourse'] = 'Meta curs id = {$a} nu există sau nu există permisiunea de a adăuga instanță de înscriere.';
+$string['wsinvalidcourse'] = 'ID-ul cursului = {$a} nu există sau nu aveți permisiunea de a adăuga meta-link al cursului.';
+$string['wsinvalidmetacourse'] = 'Meta curs ID = {$a} nu există sau nu aveți permisiunea de a adăuga o instanță de înscriere.';
 $string['wsnoinstancesspecified'] = 'Nu există instanțe specificate';

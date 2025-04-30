@@ -48,6 +48,7 @@ export default class Component extends DndSection {
             LOCKED: 'editinprogress',
             RESTRICTIONS: 'restrictions',
             PAGEITEM: 'pageitem',
+            OVERLAYBORDERS: 'overlay-preview-borders',
         };
 
         // We need our id to watch specific events.
@@ -63,7 +64,7 @@ export default class Component extends DndSection {
      * @return {Component}
      */
     static init(target, selectors) {
-        return new Component({
+        return new this({
             element: document.getElementById(target),
             selectors,
         });
@@ -147,12 +148,15 @@ export default class Component extends DndSection {
         if (!element.pageItem) {
             return;
         }
-        if (element.pageItem.sectionId !== this.id && this.isPageItem) {
+        const section = state.section.get(this.id);
+        const isRelevantPageItem = element.pageItem.sectionId === this.id || !this.isPageItem;
+        const isSectionOrCollapsed = element.pageItem.type === 'section' || section.indexcollapsed;
+
+        if (!(isRelevantPageItem && isSectionOrCollapsed)) {
             this.pageItem = false;
             this.getElement(this.selectors.SECTION_ITEM).classList.remove(this.classes.PAGEITEM);
             return;
         }
-        const section = state.section.get(this.id);
         if (section.indexcollapsed && !element.pageItem?.isStatic) {
             this.pageItem = (element.pageItem?.sectionId == this.id);
         } else {
@@ -163,5 +167,23 @@ export default class Component extends DndSection {
         if (this.pageItem && !this.reactive.isEditing) {
             this.element.scrollIntoView({block: "nearest"});
         }
+    }
+
+    /**
+     * Overridden version of the component addOverlay async method.
+     *
+     * The course index is not compatible with overlay elements.
+     */
+    async addOverlay() {
+        this.element.classList.add(this.classes.OVERLAYBORDERS);
+    }
+
+    /**
+     * Overridden version of the component removeOverlay.
+     *
+     * The course index is not compatible with overlay elements.
+     */
+    removeOverlay() {
+        this.element.classList.remove(this.classes.OVERLAYBORDERS);
     }
 }

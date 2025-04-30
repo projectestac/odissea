@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ja', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'ja', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = '新しいグループを作成する';
 $string['defaultgroupnametext'] = '{$a->name} コーホート {$a->increment}';
 $string['enrolcohortsynctask'] = 'コーホート登録同期タスク';
 $string['instanceexists'] = '選択されたロールにコーホートはすでに同期されています。';
+$string['plugindisabled'] = 'コホート同期プラグインは無効にされています。';
 $string['pluginname'] = 'コーホート同期';
 $string['pluginname_desc'] = 'コーホート登録プラグインではコーホートメンバとコース参加者を同期します。';
 $string['privacy:metadata:core_group'] = 'コーホート同期プラグインは新しいグループを作成または既存のグループを使用してコーホートのメンバすべてを追加することができます。';

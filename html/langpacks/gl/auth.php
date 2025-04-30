@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', version '4.1'.
+ * Strings for component 'auth', language 'gl', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actauthhdr'] = 'Hai engadidos de autenticación dispoñíbeis';
+$string['actauthhdr'] = 'Hai complementos de autenticación dispoñíbeis';
 $string['allowaccountssameemail'] = 'Permitir contas co mesmo correo-e';
 $string['allowaccountssameemail_desc'] = 'Se o activa, máis dunha conta de usuario pode compartir o mesmo enderezo de correo-e. Isto pode implicar riscos de seguridade ou privacidade; por exemplo, co correo-e para confirmación de cambio de contrasinal.';
 $string['alternatelogin'] = 'Se introduce aquí un URL, empregarase como páxina de acceso ao sitio. A páxina debería conter un formulario cuxa propiedad de acción estea estabelecida a <strong>«{$a}»</strong> e devolva os campos <strong>nome de usuario</strong> e <strong>contrasinal</strong>.<br />Teña tino e non introduza un URL incorrecto xa pode bloquear o sitio.<br />Deixe este axuste en branco para empregar a páxina de acceso predeterminada.';
@@ -38,12 +38,14 @@ $string['auth_changingemailaddress'] = 'Vostede solicitou un cambio de enderezo 
 $string['auth_common_settings'] = 'Axustes comúns';
 $string['auth_data_mapping'] = 'Asignación de datos';
 $string['auth_fieldlock'] = 'Bloquear o valor';
-$string['auth_fieldlock_expl'] = '<p><b>Bloquear o valor:</b> Se se activa, os usuarios e administradores de Moodle non poderán editar directamente o campo. Empregue esta opción se mantén estes datos nun sistema de autenticación externo. </p>';
+$string['auth_fieldlock_expl'] = '<p>Bloquear o valor: Se está activado, os usuarios non poderán editar o campo. Use esta opción se mantén estes datos nun sistema de autenticación externo. </p>';
 $string['auth_fieldlockfield'] = 'Bloquear o valor ({$a})';
 $string['auth_fieldlocks'] = 'Bloquear os campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Vostede pode bloquear os campos de datos dos usuarios, isto é útil en sitios onde eses datos son mantidos por administradores de forma manual, editando os rexistros dos usuarios ou enviándoos mediante a utilidade «Enviar usuarios». Se vostede bloquea campos requiridos por Moodle, asegúrese de que fornece eses datos ao crear as contas dos usuarios; doutro modo as contas non serán utilizábeis.</p><p>Considere fixar este axuste de bloqueo en «Desbloqueado se está baleiro», para evitar este problema.</p>';
 $string['auth_fieldmapping'] = 'Asignación de datos ({$a})';
 $string['auth_invalidnewemailkey'] = 'Erro: Si está tentando confirmar un cambio de enderezo de correo. debe ter cometido un error ao copiar o URL que lle enviamos por correo. Copie a ligazón e tenteo de novo.';
+$string['auth_loginrecaptcha'] = 'Activar reCAPTCHA para o acceso';
+$string['auth_loginrecaptcha_desc'] = 'Engade un elemento de formulario de confirmación visual/sonoro á páxina de acceso. Isto reduce o risco de intentos de acceso non xustificados. Consulte <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> para obter máis detalles.';
 $string['auth_multiplehosts'] = 'Pode especificar varios servidores (p.ex. servidor1.com;servidor2.com;servidor3.com) ou (p.ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'O método de de autenticación {$a} non está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Fixo máis intentos dos permitidos para actualizar e seu enderezo de correo. A súa solicitude de actualización foi cancelada.';
@@ -97,7 +99,7 @@ $string['errormaxconsecutiveidentchars'] = 'Os contrasinais deben ter como máxi
 $string['errorminpassworddigits'] = 'Os contrasinais deben ter polo menos {$a} díxito(s).';
 $string['errorminpasswordlength'] = 'Os contrasinais deben ter polo menos unha lonxitude de {$a} caracteres.';
 $string['errorminpasswordlower'] = 'Os contrasinais deben ter polo menos {$a} letra(s) minúscula(s).';
-$string['errorminpasswordnonalphanum'] = 'O contrasinal debe ter polo menos {$a} caracteres especiais, como *, - ou #';
+$string['errorminpasswordnonalphanum'] = 'O contrasinal debe ter polo menos {$a} caracteres especiais, como *, - ou #.';
 $string['errorminpasswordupper'] = 'Os contrasinais deben ter polo menos {$a} letra(s) maiúscula(s).';
 $string['errorpasswordreused'] = 'Xa usou este contrasinal con anterioridade polo que non se permite o seu uso';
 $string['errorpasswordupdate'] = 'Produciuse un erro ao actualizar o contrasnal. O contrasinal non cambiou';
@@ -122,10 +124,10 @@ $string['informminpasswordupper'] = 'cando menos {$a} letra(s) maiúscula(s)';
 $string['informpasswordpolicy'] = 'O contrasinal debería ter {$a}';
 $string['instructions'] = 'Instrucións';
 $string['internal'] = 'Interno';
-$string['limitconcurrentlogins'] = 'Limitar os accesos concorrentes';
-$string['limitconcurrentlogins_desc'] = 'Se se activa, limitarase o número de accesos concorrentes dende o navegador de cada usuario. A sesión máis vella elimínase ao chegar ao límite, así que teña en conta que os usuarios poden perder traballo que non teñan gardado. Esta opción non é compatíbel cos engadidos de acceso único (SSO).';
+$string['limitconcurrentlogins'] = 'Limitar os accesos simultáneos';
+$string['limitconcurrentlogins_desc'] = 'Se se activa, limitarase o número de accesos simultáneos dende o navegador de cada usuario. A sesión máis vella elimínase ao chegar ao límite, así que teña en conta que os usuarios poden perder traballo que non teñan gardado. Esta opción non é compatíbel cos engadidos de acceso único (SSO).';
 $string['locked'] = 'Bloqueado';
-$string['md5'] = 'Cifrado (hash) MD5';
+$string['md5'] = 'Resumo criptográfico MD5';
 $string['nopasswordchange'] = 'Non é posíbel cambiar o contrasinal';
 $string['nopasswordchangeforced'] = 'Vostede non pode continuar sen cambiar o seu contrasinal, porén, non se dispón unha páxina para cambiala. Póñase en contacto con seu administrador de Moodle.';
 $string['noprofileedit'] = 'Non é posíbel editar o perfil';
@@ -154,7 +156,7 @@ $string['security_question'] = 'Pregunta de seguridade';
 $string['selfregistration'] = 'Autorexistro';
 $string['selfregistration_help'] = 'Se se selecciona un engadido de autenticación como o autorexistro baseado en correo, entón permíteselles aos potenciais usuarios rexistrarse e crear contas. Isto resulta na posibilidade de que os «spammers» creen contas para poder empregar as mensaxes no foro, artigos de blog, etc como lixo. Para evitar este risco, o autorexistro debe ser desactivado ou limitado axustándoo engadido para autenticación <em>Dominios de correo permitidos</em>';
 $string['settingmigrationmismatch'] = 'Detectouse unha discrepancia de valores ao corrixir os nomes de axuste do engadido! O engadido de autenticación «{$a->plugin}» tiña o axuste «{$a->setting}» configurado a «{$a->legacy}» baixo o nome antigo (legacy) e tiña «{$a->current}» baixo o nome actual. Este último valor foi axustado como o valor correcto, pero debería revisar e confirmar que iso é o agardado.';
-$string['sha1'] = 'Cifrado (hash) SHA-1';
+$string['sha1'] = 'Resumo criptográfico SHA-1';
 $string['showguestlogin'] = 'Pode agochar ou amosar o botón de acceso para convidados na páxina de acceso.';
 $string['stdchangepassword'] = 'Empregar a páxina estándar para o cambio de contrasinal';
 $string['stdchangepassword_expl'] = 'Se o sistema externo de autenticación permite cambios de contrasinal en Moodle, cambie isto a «Si». Este axuste substitúe o «URL para cambiar o contrasinal».';
@@ -170,6 +172,6 @@ $string['update_oncreate'] = 'Ao crearse';
 $string['update_onlogin'] = 'En cada acceso';
 $string['update_onupdate'] = 'Ao actualizar';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() non admite o tipo de usuario seleccionado: usertype: {$a}';
-$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() non admite o tipo de usuario seleccionado (...aínda)';
+$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() non admite o tipo de usuario seleccionado (…aínda)';
 $string['username'] = 'Nome de usuario';
-$string['username_help'] = 'Teña en conta que algúns engadidos de autenticación no lle permitirán cambiar o nome de usuario.';
+$string['username_help'] = 'Teña en conta que algúns complementos de autenticación no lle permitirán cambiar o nome de usuario.';

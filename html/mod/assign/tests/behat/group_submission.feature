@@ -58,7 +58,7 @@ Feature: Group assignment submissions
     And I should see "This submission is the work of my group, except where we have acknowledged the use of the works of other people."
     And I press "Continue"
     And I should see "Confirm submission"
-    And I should see "- Required"
+    And I should see "You are required to agree to this statement before you can submit."
     And I set the field "submissionstatement" to "1"
     And I press "Continue"
     And I should see "Submitted for grading" in the "Submission status" "table_row"
@@ -324,3 +324,21 @@ Feature: Group assignment submissions
     And I am on the "Assign 2" "assign activity" page logged in as student2
     And I should see "Submitted for grading" in the "Submission status" "table_row"
     And I should not see "Users who need to submit"
+
+  Scenario: Group submission does not use non-participation groups
+    Given the following "groups" exist:
+      | name    | course | idnumber | participation |
+      | Group A | C1     | CG1      | 0             |
+    And the following "group members" exist:
+      | group  | user     |
+      | CG1    | student1 |
+    And the following "activity" exists:
+      | activity         | assign                      |
+      | course           | C1                          |
+      | name             | Test assignment name        |
+      | submissiondrafts | 0                           |
+      | teamsubmission   | 1                           |
+      | groupmode        | 1                           |
+    When I am on the "Test assignment name" Activity page logged in as student1
+    Then I should see "Default group"
+    And I should not see "Group A"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'nl', version '4.1'.
+ * Strings for component 'quiz_grading', language 'nl', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Toon ook vragen die automatisch beoord
 $string['attemptstograde'] = 'Te beoordelen pogingen';
 $string['automaticallygraded'] = 'Automatisch beoordeeld';
 $string['backtothelistofquestions'] = 'Terug naar de lijst met vragen';
-$string['bydate'] = 'Op Datum';
-$string['bystudentfirstname'] = 'Op voornaam leerling';
-$string['bystudentidnumber'] = 'Op leerling ID-nummer';
-$string['bystudentlastname'] = 'Op achternaam leerling';
 $string['cannotgradethisattempt'] = 'Kan deze poging niet beoordelen';
 $string['cannotloadquestioninfo'] = 'Kon vraagspecifieke vraaginformatie niet laden';
 $string['changeoptions'] = 'Wijzig opties';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'Alle {$a} pogingen voor deze vraag.';
 $string['gradingattempt'] = 'Pogingnummer {$a->attempt} voor {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Pogingen beoordelen {$a->from} van {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Pogingnummer {$a->attempt} voor {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Poging nummer {$a->attempt} van {$a->fullname}{$a->idnumber}';
 $string['gradingnextungraded'] = 'Volgende {$a} onbeoordeelde pogingen';
 $string['gradingnotallowed'] = 'Je hebt het recht niet om in deze test de antwoorden manueel te beoordelen';
 $string['gradingquestionx'] = 'Beoordelen voor {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Beoordeelbare vraag met ID {$a} niet gevonden';
 $string['noquestionsfound'] = 'Geen manueel te beoordelen vragen gevonden';
 $string['nothingfound'] = 'Niets om te tonen';
 $string['options'] = 'Opties';
-$string['orderattempts'] = 'Rangschik pogingen';
 $string['orderattemptsby'] = 'Sorteer pogingen op';
 $string['pluginname'] = 'Manueel beoordelen';
 $string['privacy:preference:order'] = 'De volgorde waarin te beoordelen pogingen getoond worden.';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Vragen per pagina';
 $string['questionsthatneedgrading'] = 'Vragen die beoordeeld moeten worden';
 $string['questiontitle'] = 'Vraag {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} pogingen {$a->openspan}beoordeeld{$a->closespan}).';
 $string['random'] = 'Willekeurig';
-$string['randomly'] = 'Willekeurig';
 $string['saveandnext'] = 'Bewaar en toon volgende';
 $string['showstudentnames'] = 'Toon namen van leerlingen';
 $string['tograde'] = 'Te beoordelen';

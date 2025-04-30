@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', version '4.1'.
+ * Strings for component 'form', language 'de', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Sie müssen hier mindestens {$a->format} Buchstaben 
 $string['err_nonzero'] = 'Sie müssen hier eine Zahl eingeben, die nicht mit 0 beginnt.';
 $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
 $string['err_numeric'] = 'Sie müssen hier eine Zahl eingeben.';
-$string['err_positiveint'] = 'Sie müssen hier eine Zahl eingeben, die größer als 0 ist.';
+$string['err_positiveint'] = 'Sie müssen hier eine ganze Zahl eingeben, die größer als 0 ist.';
 $string['err_rangelength'] = 'Sie müssen hier zwischen {$a->format[0]} und {$a->format[1]} Buchstaben eingeben.';
 $string['err_required'] = 'Sie müssen hier einen Wert eingeben.';
 $string['err_wrappingwhitespace'] = 'Der Wert darf nicht mit einem Leerzeichen anfangen oder enden.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Akzeptierte Dateitypen:';
 $string['filetypesany'] = 'Alle Dateitypen';
 $string['filetypesnotall'] = 'Es ist nicht erlaubt, hier \'Alle Dateitypen\' auszuwählen';
 $string['filetypesnotallowed'] = 'Dieser Dateipyo ist hier nicht erlaubt: {$a}';
-$string['filetypesnotwhitelisted'] = 'Dieser Dateipyo ist hier nicht erlaubt: {$a}';
 $string['filetypesothers'] = 'Andere Dateien';
 $string['filetypesunknown'] = 'Unbekannte Dateitypen: {$a}';
+$string['formactions'] = 'Formularaktionen';
 $string['general'] = 'Allgemeines';
 $string['hideadvanced'] = 'Optionale Felder verbergen';
 $string['hour'] = 'Stunde';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Anregungen';
 $string['time'] = 'Zeit';
 $string['timeunit'] = 'Zeiteinheit';
 $string['timing'] = 'Zeitsteuerung';
+$string['togglesensitive'] = 'Umschaltempfindlich';
 $string['unmaskpassword'] = 'Klartext';
 $string['year'] = 'Jahr';

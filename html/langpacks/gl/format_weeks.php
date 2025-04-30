@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'gl', version '4.1'.
+ * Strings for component 'format_weeks', language 'gl', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Engadir semana';
 $string['automaticenddate'] = 'Calcule a data de remate a partires do número de seccións';
 $string['automaticenddate_help'] = 'Se está activado, a data de remate do curso calcúlase automaticamente a partires do número de seccións e da data de inicio do curso.';
 $string['currentsection'] = 'Esta semana';
-$string['deletesection'] = 'Eliminar a semana';
-$string['editsection'] = 'Editar a semana';
-$string['editsectionname'] = 'Editar o nome da semana';
 $string['hidefromothers'] = 'Agochar a semana';
 $string['indentation'] = 'Permitir o sangrado na páxina do curso';
 $string['indentation_help'] = 'Permitir que o profesorado, e outros usuarios con capacidade de xestión de actividades, sangrar elementos na páxina do curso.';
-$string['newsectionname'] = 'Novo nome para a semana {$a}';
-$string['page-course-view-weeks'] = 'Páxina principal de calquera curso en formato semanal';
-$string['page-course-view-weeks-x'] = 'Páxina de calquera curso en formato semanal';
-$string['pluginname'] = 'Formato semanal';
-$string['privacy:metadata'] = 'O engadido de formato semanal non almacena ningún dato persoal.';
+$string['page-course-view-weeks'] = 'Calquera páxina principal dun curso en formato de seccións semanais';
+$string['page-course-view-weeks-x'] = 'Calquera páxina dun curso en formato de seccións semanais';
+$string['plugin_description'] = 'O curso divídese en apartados correspondentes a cada semana, a partir da data de inicio do curso.';
+$string['pluginname'] = 'Seccións semanais';
+$string['privacy:metadata'] = 'O complemento de formato de seccións semanais non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';
 $string['sectionname'] = 'semana';
 $string['showfromothers'] = 'Amosar a semana';

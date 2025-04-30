@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', version '4.1'.
+ * Strings for component 'enrol', language 'eu', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Ez duzu baimenik edo ezin duzu rolik esleitu ik
 $string['bulkuseroperation'] = 'Erabiltzaile-eragiketa masiboak';
 $string['configenrolplugins'] = 'Mesedez, aukeratu beharrezko plugin guztiak eta zerrendatu ordena egokian.';
 $string['custominstancename'] = 'Pertsonalizatu instantziaren izena';
+$string['customwelcomemessage'] = 'Pertsonalizatu ongi-etorria emateko mezua';
+$string['customwelcomemessage_help'] = 'Onartutako formatuak: Testu soila edo Moodleko formatu automatikoa. HTML etiketak eta etiketa eleaniztunak ere onartzen dira, baina hurrengo gakoak ere:
+<ul>
+<li>Ikastaroaren izena {$a->coursename}</li>
+<li>Erabiltzailearen profilerako esteka {$a->profileurl}</li>
+<li>Erabiltzailearen helbide elektronikoa {$a->email}</li>
+<li>Erabiltzailearen izen osoa {$a->fullname}</li>
+<li>Erabiltzailearen izena {$a->firstname}</li>
+<li>Erabiltzailearen abizenak {$a->lastname}</li>
+<li>Erabiltzailearen ikastaroko rola {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Kaixo, {$a->fullname}: {$a->coursename} ikastaroan matrikulatuta zaude.';
 $string['defaultenrol'] = 'Gehitu instantzia ikastaro berrietarako';
 $string['defaultenrol_desc'] = 'Plugin hau modu lehenetsian ikastaro berri guztiei gehi dakieke.';
 $string['deleteinstanceconfirm'] = '"{$a->name}" matrikulatzeko-metodoa ezabatzekotan zaude. Metodo hori erabilita dagoeneko matrikulatutako {$a->users} guztiak desmatrikulatuko dira eta erabiltzaileen kalifikazioak, taldeetako partaidetza eta foroetako harpidetzak bezalako ikastaroko datu guztiak ezabatuko dira.
@@ -124,11 +136,12 @@ $string['otheruserdesc'] = 'Ondorengo erabilzaileak ez daude matrikulatuta ikast
 $string['participationactive'] = 'Aktiboa';
 $string['participationnotcurrent'] = 'Ez aktiboa';
 $string['participationstatus'] = 'Egoera';
-$string['participationsuspended'] = 'Bertan behera utzia';
+$string['participationsuspended'] = 'Etenda';
 $string['periodend'] = 'noiz arte {$a}';
 $string['periodnone'] = '{$a} matrikulatuta';
 $string['periodstart'] = 'noiztik {$a}';
 $string['periodstartend'] = '{$a->start} -tik  {$a->end} arte';
+$string['plugindisabled'] = '{$a} matrikulazio-plugina desgaituta dago';
 $string['privacy:metadata:user_enrolments'] = 'Matrikulak';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Matrikulazio-pluginaren instantzia';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'Erabiltzailearen matrikula azkenik aldatu zuen erabiltzailearen IDa';
@@ -139,12 +152,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Erabiltzailearen matrikul
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Erabiltzailearen matrikula aldatu zeneko unea';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Erabiltzailearen matrikula hasi zeneko unea';
 $string['privacy:metadata:user_enrolments:userid'] = 'Erabiltzailearen IDa';
-$string['proceedtocourse'] = 'Jarraitu ikastaro-edukiarekin';
 $string['recovergrades'] = 'Berreskuratu erabiltzailearen lehengo kalfikazioak, posible bada';
 $string['rolefromcategory'] = '{$a->role} (Ikastaro-kategoriatik heredatutakoa)';
 $string['rolefrommetacourse'] = '{$a->role} (Goragoko ikastarotik heredatutakoa)';
 $string['rolefromsystem'] = '{$a->role} (Gune mailan esleitutakoa)';
 $string['rolefromthiscourse'] = '{$a->role} (Ikastaro honetan esleitutakoa)';
+$string['sendcoursewelcomemessage'] = 'Bidali ikastaroko ongi-etorri mezua';
+$string['sendcoursewelcomemessage_help'] = 'Erabiltzaile edo kohorte bat ikastaroan matrikulatzean, ongi-etorri e-maila bidali ahal zaie. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['sendfromcoursecontact'] = 'Ikastaroko kontaktuak bidalita';
 $string['sendfromkeyholder'] = 'Gako-zainak bidalita';
 $string['sendfromnoreply'] = 'Ez-erantzun helbidetik bidalita';
@@ -163,7 +177,7 @@ $string['unassignnotpermitted'] = 'Ez duzu baimenik rolak kentzeko ikastaro hone
 $string['unenrol'] = 'Desmatrikulatu';
 $string['unenrolconfirm'] = 'Ziur zaude ("{$a->course}" ikastarotik "{$a->enrolinstancename}" matrikulazio-metodoa erabiliz matrikulatuta dagoen) "{$a->user}" erabiltzailea desmatrikulatu nahi duzula?';
 $string['unenrolleduser'] = '"{$a->fullname}" erabiltzailea ikastarotik desmatrikulatu da';
-$string['unenrolme'] = '{$a} ikastarotik desmatrikulatu nahi dut';
+$string['unenrolme'] = 'Desmatrikulatu nazazu Ikastaro honetatik';
 $string['unenrolnotpermitted'] = 'Ez duzu baimenik erabiltzaile hau ikastaro honetatik desmatrikulatzeko.';
 $string['unenrolroleusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['uninstallmigrating'] = '"{$a}" matrikulak migratzen';

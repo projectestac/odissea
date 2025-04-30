@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', version '4.1'.
+ * Strings for component 'cache', language 'ja', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'コンテンツバンク�
 $string['cachedef_contextwithinsights'] = '洞察のコンテクスト';
 $string['cachedef_course_image'] = 'コースイメージ';
 $string['cachedef_course_user_dates'] = '相対日付モードで設定するコースのユーザ日付';
+$string['cachedef_courseactionsinstances'] = '読込み済みコースアクションインスタンス';
 $string['cachedef_coursecat'] = '特定ユーザのコースカテゴリ一覧';
 $string['cachedef_coursecatrecords'] = 'コースカテゴリレコード';
 $string['cachedef_coursecattree'] = 'コースカテゴリツリー';
 $string['cachedef_coursecompletion'] = 'コース完了ステータス';
 $string['cachedef_coursecontacts'] = 'コース連絡先一覧';
 $string['cachedef_courseeditorstate'] = 'フロントエンドでコースの変更を検出するためのセッションコース状態キャッシュキー';
+$string['cachedef_coursehiddengroups'] = '可視性が制限されたコースのグループ数';
 $string['cachedef_coursemodinfo'] = 'それぞれのコースのモジュールおよびセクションに関する累積情報';
 $string['cachedef_coursesectionspreferences'] = 'コースセクションプレファレンス';
 $string['cachedef_databasemeta'] = 'データベースメタ情報';
-$string['cachedef_deprecatedcapabilities'] = 'システム非推奨ケイパビリティリスト';
 $string['cachedef_eventinvalidation'] = 'イベント無効化';
 $string['cachedef_externalbadges'] = '特定ユーザの外部バッジ';
 $string['cachedef_file_imageinfo'] = 'ファイルイメージ情報 例) サイズ';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = '評定文字クエリ';
 $string['cachedef_gradesetting'] = 'コース評定設定';
 $string['cachedef_groupdata'] = 'コースグループ情報';
 $string['cachedef_h5p_content_type_translations'] = 'H5Pコンテンツタイプライブラリ翻訳';
+$string['cachedef_h5p_libraries'] = 'H5Pライブラリ';
 $string['cachedef_h5p_library_files'] = 'H5Pライブラリファイル';
+$string['cachedef_hookcallbacks'] = 'フックコールバック';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - クリーニング済みコンテンツ';
 $string['cachedef_langmenu'] = '利用可能な言語一覧';
 $string['cachedef_license'] = 'ライセンス一覧';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'ロッキング';
 $string['cachedef_message_processors_enabled'] = 'メッセージプロセッサ有効ステータス';
 $string['cachedef_message_time_last_message_between_users'] = '会話内直近メッセージの作成日時';
 $string['cachedef_modelfirstanalyses'] = 'モデルおよび分析可能による最初の分析';
+$string['cachedef_moodlenet_usercanshare'] = 'ユーザはMoodleNetにリソースを共有できる';
+$string['cachedef_navigation_cache'] = 'ナビゲーションキャッシュ';
 $string['cachedef_navigation_expandcourse'] = 'ナビゲーション拡張可能コース';
 $string['cachedef_observers'] = 'イベントオブザーバ';
 $string['cachedef_plugin_functions'] = 'プラグイン利用可能コールバック';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'コースごとの利用停止ユーザ
 $string['cachedef_tagindexbuilder'] = 'タグ付きアイテムの検索結果';
 $string['cachedef_tags'] = 'タグコレクションおよびエリア';
 $string['cachedef_temp_tables'] = '一時テーブルキャッシュ';
+$string['cachedef_theme_usedincontext'] = 'デフォルトのテーマをオーガーライドするためにコンテクストでテーマが使用されています。';
 $string['cachedef_user_course_content_items'] = 'ユーザのコースあたりのコンテンツアイテム数 (活動、リソースおよびサブシステム)';
 $string['cachedef_user_favourite_course_content_items'] = 'ユーザの星付きアイテム';
 $string['cachedef_user_group_groupings'] = 'ユーザのコースあたりのグルーピングおよびグループ';

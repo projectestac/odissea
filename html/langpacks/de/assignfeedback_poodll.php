@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_poodll', language 'de', version '4.1'.
+ * Strings for component 'assignfeedback_poodll', language 'de', version '4.4'.
  *
  * @package     assignfeedback_poodll
  * @category    string

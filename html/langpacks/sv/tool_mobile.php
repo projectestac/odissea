@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'sv', version '4.1'.
+ * Strings for component 'tool_mobile', language 'sv', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -98,7 +98,6 @@ $string['managefiletypes'] = 'Hantera filtyper';
 $string['minimumversion'] = 'Om en appversion har specificerats (3.8.0 eller högre) uppmanas alla användare som använder en äldre appversion att uppgradera sin app innan de får åtkomst till webbplatsen.';
 $string['minimumversion_key'] = 'Lägsta appversion som krävs';
 $string['mobileapp'] = 'Mobilapp';
-$string['mobileappconnected'] = 'Kopplat till mobilapp';
 $string['mobileappearance'] = 'Mobilvy';
 $string['mobileappenabled'] = 'Denna sajt är åtkomlig via mobilappen. <br /><a href="{$a}">Ladda ned appen här.</a>';
 $string['mobileappsubscription'] = 'Apprenumeration';
@@ -119,7 +118,6 @@ $string['notificationsseemore'] = 'OBS! Statistik över Moodle-appanvändning be
 $string['notificationssentnotifications'] = 'Skickade notiser';
 $string['oauth2identityproviders'] = 'OAuth 2 identity providers';
 $string['offlineuse'] = 'Offline-användning';
-$string['openusingembeddedbrowser'] = 'Öppna med inbäddad webbläsare';
 $string['pluginname'] = 'Moodle-app verktyg';
 $string['pluginnotenabledorconfigured'] = 'Pluginmodulen inte aktiverad eller konfigurerad';
 $string['privacy:metadata:core_userkey'] = 'Användarens nycklar som använts för att skapa nyckel för automatisk inloggning för den aktuella användaren.';

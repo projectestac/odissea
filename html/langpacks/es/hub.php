@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'es', version '4.1'.
+ * Strings for component 'hub', language 'es', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,8 +43,10 @@ $string['coursename'] = 'Nombre';
 $string['coursepublished'] = 'Este curso ha sido compartido con éxito en \'{$a}\'.';
 $string['courseshortname'] = 'Nombre corto';
 $string['courseshortname_help'] = 'Escriba un nombre corto para su curso. No necesita ser único.';
+$string['coursesnodates'] = 'Número de cursos sin fecha de inicio y terminación ({$a})';
 $string['coursesnumber'] = 'Número de cursos ({$a})
 ';
+$string['dbtype'] = 'Tipo de base de datos ({$a})';
 $string['demourl'] = 'URL de demostración';
 $string['demourl_help'] = 'Introduzca la dirección URL de demostración de su curso. De forma predeterminada es la URL de su curso. La dirección URL de demostración se muestra como un enlace en un resultado de búsqueda.';
 $string['downloadable'] = 'Descargable';
@@ -97,6 +99,7 @@ $string['postaladdress'] = 'Dirección postal';
 $string['postaladdress_help'] = 'Dirección postal de este sitio, so de la entidad representada por este sitio.';
 $string['postsnumber'] = 'Número de mensajes ({$a})';
 $string['previousregistrationdeleted'] = 'El registro previo ha sido borrado de {$a}. Usted puede reiniciar el proceso de registro. Gracias.';
+$string['primaryauthtype'] = 'Tipo de autenticación primaria ({$a})';
 $string['questionsnumber'] = 'Número de preguntas ({$a})';
 $string['registeredactiveuserdevices'] = 'Número de usuarios activos con dispositivos móviles registrados que están recibiendo notificaciones ({$a})';
 $string['registeredcourses'] = 'Cursos registrados';
@@ -160,6 +163,7 @@ $string['siteregistrationupdated'] = 'Se ha actualizado el registro del sitio';
 $string['siterelease'] = 'Revisión de Moodle';
 $string['siterelease_help'] = 'Número de revisión del sitio Moodle';
 $string['sitereleasenum'] = 'Versión de Moodle ({$a})';
+$string['sitetheme'] = 'Tema del sitio ({$a})';
 $string['siteurl'] = 'URL del sitio';
 $string['siteurl_help'] = 'La URL es la dirección de este sitio. Si la configuración de privacidad permiten que la gente vea la dirección del sitio esta es la URL que se utilizará.';
 $string['siteversion'] = 'Versión de Moodle';

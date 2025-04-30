@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'sv', version '4.1'.
+ * Strings for component 'tool_monitor', language 'sv', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Område att bevaka';
 $string['cachedef_eventsubscriptions'] = 'Detta lagrar listan med händelsbevakningar för individuella kurser';
 $string['contactadmin'] = 'Kontakta administratören för att aktivera det.';
 $string['core'] = 'System';
+$string['coresubsystem'] = 'Undersystem ({$a})';
 $string['currentsubscriptions'] = 'Nuvarande bevakningar';
 $string['defaultmessagetemplate'] = 'Regel: {rulename}<br />Beskrivning: {description}<br />Händelse: {eventname}';
 $string['deleterule'] = 'Ta bort regel';

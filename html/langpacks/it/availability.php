@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'it', version '4.1'.
+ * Strings for component 'availability', language 'it', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Aggiungi criterio...';
 $string['and'] = 'and';
 $string['condition_group'] = 'Insieme di criteri';
 $string['condition_group_info'] = 'Insieme di criteri di accesso per l\'implementazione di logiche complesse';
+$string['disabled_verb'] = 'Non può essere modificato perché il set di regole include una regola contenente dati privati.';
+$string['editsettings'] = 'Modifica condizioni';
 $string['enableavailability'] = 'Abilita disponibilità condizionata';
 $string['enableavailability_desc'] = 'La disponibilità condizionata consente di definire i criteri (basati su valutazione, date, completamento) per l\'accesso alle attività e alle risorse.';
 $string['error_list_nochildren'] = 'Gli insiemi di criteri di accesso devono contenere almeno una condizione';

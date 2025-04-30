@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_xmldb', language 'zh_cn', version '4.4'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -38,7 +38,7 @@ $string['check_defaults'] = '查找不一致的默认值';
 $string['check_foreign_keys'] = '搜索无效的外键';
 $string['check_indexes'] = '查找缺失的数据库索引';
 $string['check_oracle_semantics'] = '查找长度不正确的语义';
-$string['checkbigints'] = '检查bigint类型数据';
+$string['checkbigints'] = '检查整数';
 $string['checkdefaults'] = '检查默认值';
 $string['checkforeignkeys'] = '检查外键';
 $string['checkindexes'] = '检查索引';
@@ -160,7 +160,7 @@ $string['newkey'] = '新建键值';
 $string['newtable'] = '创建新表';
 $string['newtablefrommysql'] = '从 MySQL 建新表';
 $string['nofieldsspecified'] = '未指定任何字段';
-$string['nomasterprimaryuniquefound'] = '您的外键对应的字段必须是对应表中的主键或唯一键。注意，字段只是UNIQUE INDEX是不够的。';
+$string['nomasterprimaryuniquefound'] = '外键引用的列必须包含在被引用表的主 KEY 或唯一 KEY 中。请注意，位于 UNIQUE INDEX 中的列不够好。';
 $string['nomissingorextraindexesfound'] = '没有发现缺失或额外的索引，因此不需要采取进一步动作。';
 $string['noreffieldsspecified'] = '为指定任何对应字段';
 $string['noreftablespecified'] = '未找到对应字段';
@@ -177,7 +177,7 @@ $string['pendingchangescannotbesavedreload'] = '此文件中有更改，但无�
 $string['persistentfieldscomplete'] = '已添加以下字段：';
 $string['persistentfieldsconfirm'] = '是否要添加以下字段：';
 $string['persistentfieldsexist'] = '以下字段已存在：';
-$string['pluginname'] = 'XMLDB编辑器';
+$string['pluginname'] = 'XMLDB 编辑器';
 $string['primarykeyonlyallownotnullfields'] = '主键不可为 null';
 $string['privacy:metadata'] = 'XMLDB编辑器插件不存储任何个人数据。';
 $string['reconcile_files'] = '查找需要调整的XMLDB文件';

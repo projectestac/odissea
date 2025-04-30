@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'pt', version '4.1'.
+ * Strings for component 'analytics', language 'pt', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Combinada ou Mista';
 $string['modeinstructionfacetoface'] = 'Presencial';
 $string['modeinstructionfullyonline'] = 'E-Learning';
 $string['modeloutputdir'] = 'Diretoria dos modelos';
-$string['modeloutputdirinfo'] = 'Diretoria onde o processador de previsões guarda toda a informação da avaliação. Útil para análise e pesquisa.';
 $string['modeloutputdirwithdefaultinfo'] = 'Diretoria onde os processadores de previsões guardam todas as informações de avaliação. Útil para análise e pesquisa. Se estiver em branco, \'{$a}\' será usada como predefinição.';
 $string['modeltimelimit'] = 'Duração máxima de análise por modelo';
 $string['modeltimelimitinfo'] = 'Esta configuração limita o tempo que cada modelo gasta a analisaro o conteúdo do site.';

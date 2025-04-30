@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'nl', version '4.1'.
+ * Strings for component 'tool_usertours', language 'nl', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -134,7 +134,6 @@ $string['placement_help'] = 'Een stap kan boven, onder links of rechts van het d
 
 Als de stap niet past op een bepaalde pagina op de opgegeven plaats, dan zal die automatisch ergens anders weergegeven worden.';
 $string['pluginname'] = 'Rondleidingen';
-$string['previousstep'] = 'Vorige';
 $string['privacy:metadata:preference:completed'] = 'Het tijdstip waarop een gebruiker laatst een gebruikersrondleiding voltooide.';
 $string['privacy:metadata:preference:requested'] = 'Het tijdstip waarop een gebruiker laatst manueel op een gebruikersrondleiding vroeg';
 $string['privacy:request:preference:completed'] = 'Je hebt de "{$a->name}" gebruikersrondleiding als voltooid gemarkeerd op {$a->time}';
@@ -149,6 +148,9 @@ $string['selector_defaulttitle'] = 'Geef een beschrijvende tekst';
 $string['selectordisplayname'] = 'Een CSS-selector die overeenkomt met \'{$a}\'';
 $string['selecttype'] = 'Selecteer een stap-type';
 $string['sharedtourslink'] = 'Rondleidingsopslagruimte';
+$string['showtoureachtime'] = 'elke keer dat een filter hiermee overeenkomt';
+$string['showtouruntilcomplete'] = 'totdat deze gesloten is';
+$string['showtourwhen'] = 'Rondleiding tonen';
 $string['skip'] = 'Sla over';
 $string['skip_tour'] = 'Rondleiding overslaan';
 $string['target'] = 'Doel';
@@ -248,6 +250,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'De nieuwe cursusinstellin
 $string['tour_activityinfo_course_teacher_title'] = 'Nieuw: activiteitsinformatie';
 $string['tour_final_step_content'] = 'Dit is het einde van je rondleiding. Je zult dit niet meer zien, tenzij je opnieuw start via de link onderaan de pagina.';
 $string['tour_final_step_title'] = 'Einde van de rondleiding';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sorteer kolommen en kies welke je wil weergeven. Gebruik deze snelkoppeling in de bewerkingsmodus om toegang te krijgen tot veelvoorkomende taken met betrekking tot het bekijken en bewerken van cijferitems.';
+$string['tour_gradebook_action_title'] = 'Snelle links naar acties';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filter leerlingen op de initialen van hun voor- of achternaam.';
+$string['tour_gradebook_filter_title'] = 'Filteren op naam';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Gebruik het zoekvak om snel specifieke leerlingen te vinden.';
+$string['tour_gradebook_search_title'] = 'Leerlingen gemakkelijk vinden';
+$string['tour_gradebook_tour_description'] = 'Zoek- en navigatiefuncties in het cijferlijst-rapport van de beoordelaar';
+$string['tour_gradebook_tour_name'] = 'Cijferlijst beoordelerrapport';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Plaats hier belangrijk nieuws.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Iets te melden voor iedereen?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Voeg hier nieuwe inhoud toe of bewerk bestaande inhoud.';

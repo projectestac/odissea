@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'ar', version '4.1'.
+ * Strings for component 'block_exaport', language 'ar', version '4.4'.
  *
  * @package     block_exaport
  * @category    string
@@ -58,11 +58,14 @@ $string['forms.item.title'] = 'العنوان';
 $string['forms.item.title_help'] = 'نص عنوان المساعدة';
 $string['grouptitle'] = 'عنوان المجموعة';
 $string['iconfile_merge'] = 'دمج صورة الأيقونة هذه مع أيقونة المجلد';
+$string['import_short'] = 'استيراد';
+$string['importexport'] = 'الاستيراد/التصدير';
 $string['invalidassignmentid'] = 'مُعرَّف الواجب غير صحيح';
 $string['invalidfileatthisassignment'] = 'الملف غير موجود في هذا الواجب!';
 $string['lastname'] = 'الاسم الأخير';
 $string['linkedfilenotfound'] = 'الملف $a->filename في $a->url ($a->title) لم يتم العثور عليه. لم يتم استيراد الملف!';
 $string['maincategory'] = 'التصنيف الرئيسي';
+$string['makeimport'] = 'استيراد';
 $string['mandatoryfields'] = 'اسم الحقل، فئته ومقدمته كلها مطلوبة. يرجى إملاؤها.';
 $string['mandatoryfieldsforcat'] = 'اسم الحقل مطلوب. يرجى إملاؤه.';
 $string['moodleimport'] = 'الاستيراد من واجبات مودل';

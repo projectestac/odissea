@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ar', version '4.1'.
+ * Strings for component 'auth_db', language 'ar', version '4.4'.
  *
  * @package     auth_db
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_dbsuspenduser'] = 'تم تعليق المستخدم {$a->name} ا�
 $string['auth_dbsuspendusererror'] = 'خطأ عند تعليق المستخدم: {$a}';
 $string['auth_dbsybasequoting'] = 'استعمل اقتباسات sybase';
 $string['auth_dbsybasequotinghelp'] = 'نمط Sybase لاستعادة علامة الاقتباس المفردة في النص المرمز - مطلوب من أجل Oracle، MS SQL وبعض قواعد البيانات الأخرى. لا تستعملها مع MySQL!';
-$string['auth_dbsyncuserstask'] = 'مزامنة مهمة المستخدمين';
+$string['auth_dbsyncuserstask'] = 'مهمة مزامنة المستخدمين';
 $string['auth_dbtable'] = 'اسم الجدول في قاعدة البيانات';
 $string['auth_dbtable_key'] = 'جدول';
 $string['auth_dbtableempty'] = 'الجدول الخارجي فارغ.';

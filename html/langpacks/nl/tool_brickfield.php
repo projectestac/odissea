@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'nl', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'nl', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -177,6 +177,7 @@ $string['mobileservice'] = 'Mobiele diensten ingeschakeld ({$a})';
 $string['module'] = 'Module';
 $string['modulename'] = 'Naam';
 $string['moreinfo'] = 'Meer informatie';
+$string['newwindowphrases'] = 'new window|nieuw venster|nieuw-venster|nieuw_venster';
 $string['noerrorsfound'] = 'Er zijn geen veel voorkomende toegankelijkheidsfouten gevonden in jouw zoekparameters. Proficiat!';
 $string['norecords'] = 'Geen relevante records gevonden in jouw zoekparameters.';
 $string['notregistered'] = 'Je toegankelijkheids-toolkit moet geregistreerd worden.';

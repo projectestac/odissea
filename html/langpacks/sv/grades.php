@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'sv', version '4.1'.
+ * Strings for component 'grades', language 'sv', version '4.4'.
  *
  * @package     grades
  * @category    string
@@ -126,7 +126,6 @@ $string['changereportdefaults'] = 'Ändra standardvärdena för rapport';
 $string['chooseaction'] = 'Välj en åtgärd...';
 $string['choosecategory'] = 'Välj kategori';
 $string['collapsecriterion'] = 'Fäll ihop kriterier';
-$string['combo'] = 'Flikar och nedrullningsmeny';
 $string['compact'] = 'Kompakt';
 $string['componentcontrolsvisibility'] = 'Huruvida detta betygsobjekt döljs styrs av aktivitetens inställningar.';
 $string['contract'] = 'Fäll ihop';
@@ -162,7 +161,6 @@ $string['displaylettergrade'] = 'Visa bokstavsbetyg';
 $string['displaypercent'] = 'Visa procent';
 $string['displaypoints'] = 'Visa poäng';
 $string['displayweighted'] = 'Visa viktade betyg';
-$string['dropdown'] = 'Nedrullningsmeny';
 $string['droplow'] = 'Ignorera de lägsta';
 $string['droplow_help'] = '<p>Om detta är aktiverat, så kommer de X lägsta betygen att undantas från beräkningen. X är det valda värdet för det här alternativet.</p>';
 $string['droplowestvalue'] = 'Uteslut det lägsta betygsvärdet';
@@ -245,6 +243,10 @@ $string['feedbackhistoryfiles'] = 'Historikfiler för återkoppling';
 $string['feedbacks'] = 'Återkopplingar';
 $string['feedbacksaved'] = 'Återkoppling sparad';
 $string['feedbackview'] = 'Visa återkoppling';
+$string['filterbothactive'] = 'Första ({$a->first}) Sista ({$a->last})';
+$string['filterbyname'] = 'Filtrera efter namn';
+$string['filterfirstactive'] = 'Första ({$a->first})';
+$string['filterlastactive'] = 'Sista ({$a->last})';
 $string['finalgrade'] = 'Slutbetyg';
 $string['finalgrade_help'] = '<p>Det slutliga betyget (cachat) efter det att alla beräkningar har genomförts.</p>';
 $string['fixedstudents'] = 'Statisk kolumn för studenter';
@@ -551,7 +553,6 @@ $string['mygrades_desc'] = 'Denna inställning gör det möjligt att länka till
 $string['mypreferences'] = 'Mina inställningar';
 $string['myreportpreferences'] = 'Mina rapportinställningar';
 $string['myself'] = 'Mig själv';
-$string['navmethod'] = 'Navigeringsmetod';
 $string['neverdeletehistory'] = 'Radera aldrig historiken';
 $string['newcategory'] = 'Ny kategori';
 $string['newitem'] = 'Nytt betygsobjekt';
@@ -731,8 +732,6 @@ $string['savechanges'] = 'Spara';
 $string['savepreferences'] = 'Spara inställningar';
 $string['scaleconfirmdelete'] = 'Är du säker på att du vill ta bort "{$a}"-skalan?';
 $string['scaledpct'] = 'Skalad %';
-$string['searchgroups'] = 'Sök i grupper';
-$string['searchusers'] = 'Sök bland användare';
 $string['seeallcoursegrades'] = 'Visa alla kursbetyg';
 $string['select'] = 'Välj {$a}';
 $string['selectalloroneuser'] = 'Välj alla eller en användare';
@@ -815,7 +814,6 @@ $string['showverbose'] = 'Visa {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['showweight'] = 'Visa viktningar';
 $string['showweight_help'] = 'Om en kolumn ska visas för betygsvikten.';
 $string['simpleview'] = 'Enskild vy';
-$string['singleview'] = 'Enskild vy för {$a}';
 $string['sitewide'] = 'Webbplatsövergripande';
 $string['sort'] = 'Sortera';
 $string['sortasc'] = 'Sortera i stigande ordning';
@@ -835,7 +833,6 @@ $string['submittedon'] = 'Inskickad: {$a}';
 $string['sumofgradesupgradedgrades'] = 'OBS! Aggregeringsmetoden "Summan av betyg" har ändrats till "Naturlig" som en del av en webbplatsuppgradering. Eftersom "Summan av resultat" tidigare användes i den här kursen rekommenderar vi att du granskar den här ändringen i betygsboken.';
 $string['switchtofullview'] = 'Växla till fullständig vy';
 $string['switchtosimpleview'] = 'Växla till enkel vy';
-$string['tabs'] = 'Flikar';
 $string['topcategory'] = 'Superkategori';
 $string['total'] = 'Summa';
 $string['totalweight100'] = 'Den sammanlagda viktningen är lika med 100';

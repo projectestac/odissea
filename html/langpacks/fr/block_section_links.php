@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'fr', version '4.1'.
+ * Strings for component 'block_section_links', language 'fr', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = 'Augmenter de';
 $string['incby1_help'] = 'Chaque fois qu’un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
 $string['incby2'] = 'Augmenter de (alternative)';
 $string['incby2_help'] = 'Chaque fois qu’un lien de section est affiché, cette valeur est ajoutée au numéro de section, à partir de 1.';
-$string['jumptocurrenttopic'] = 'Section actuelle';
+$string['jumptocurrenttopic'] = 'Aller à la section marquée';
 $string['jumptocurrentweek'] = 'Semaine actuelle';
 $string['numsections1'] = 'Nombre de sections';
 $string['numsections1_help'] = 'Lorsque le nombre de section d’un cours atteint ce nombre, la valeur d’incrément est utilisée.';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Le bloc Liens vers sections affiche seulement des
 $string['section_links:addinstance'] = 'Ajouter un bloc liens vers sections';
 $string['showsectionname'] = 'Afficher le nom de section';
 $string['showsectionname_help'] = 'Afficher le nom de section en plus de son numéro';
-$string['topics'] = 'Sections';
-$string['weeks'] = 'Semaines';

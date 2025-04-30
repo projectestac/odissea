@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'en', version '4.1'.
+ * Strings for component 'lesson', language 'en', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -150,7 +150,7 @@ $string['correctresponse'] = 'Correct response';
 $string['createaquestionpage'] = 'Create a question page';
 $string['credit'] = 'Credit';
 $string['customscoring'] = 'Custom scoring';
-$string['customscoring_help'] = 'If enabled, then each answer may be given a numerical point value (positive or negative).';
+$string['customscoring_help'] = 'If enabled, a whole number value (positive or negative) may be entered for each answer.';
 $string['deadline'] = 'Deadline';
 $string['defaultessayresponse'] = 'Your essay will be graded by your teacher.';
 $string['deleteallattempts'] = 'Delete all lesson attempts';
@@ -540,7 +540,7 @@ $string['savechangesandeol'] = 'Save all changes and go to the end of the lesson
 $string['saveoverrideandstay'] = 'Save and enter another override';
 $string['savepage'] = 'Save page';
 $string['score'] = 'Score';
-$string['score_help'] = 'Score is only used when custom scoring is enabled. Each answer can then be given a numerical point value (positive or negative).';
+$string['score_help'] = 'If custom scoring is enabled in the lesson settings, a whole number value (positive or negative) may be entered for each answer.';
 $string['scores'] = 'Scores';
 $string['search:activity'] = 'Lesson - activity information';
 $string['secondpluswrong'] = 'Not quite.  Would you like to try again?';

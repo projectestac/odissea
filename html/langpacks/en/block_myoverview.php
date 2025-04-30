@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'en', version '4.1'.
+ * Strings for component 'block_myoverview', language 'en', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Grouping drop-down menu';
 $string['aria:hiddencourses'] = 'Show courses removed from view';
 $string['aria:hidecourse'] = 'Remove {$a} from view';
 $string['aria:inprogress'] = 'Show courses in progress';
-$string['aria:lastaccessed'] = 'Sort courses by last accessed date';
 $string['aria:list'] = 'Switch to list view';
 $string['aria:past'] = 'Show past courses';
 $string['aria:removefromfavourites'] = 'Remove star for';
-$string['aria:shortname'] = 'Sort courses by course short name';
 $string['aria:showcourse'] = 'Restore {$a} to view';
 $string['aria:sortingdropdown'] = 'Sorting drop-down menu';
 $string['aria:summary'] = 'Switch to summary view';
-$string['aria:title'] = 'Sort courses by course name';
 $string['availablegroupings'] = 'Available filters';
 $string['availablegroupings_desc'] = 'Course filters which are available for selection by users. If none are selected, all courses will be displayed.';
 $string['card'] = 'Card';
 $string['cards'] = 'Cards';
-$string['clearsearch'] = 'Clear search';
 $string['completepercent'] = '{$a}% complete';
 $string['courseprogress'] = 'Course progress:';
+$string['createcourse'] = 'Create course';
 $string['customfield'] = 'Custom field';
 $string['customfiltergrouping'] = 'Field to use';
 $string['customfiltergrouping_nofields'] = 'This option requires a course custom field to be set up and visible to everyone.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Sort by short name';
 $string['sortbytitle'] = 'Sort by course name';
 $string['summary'] = 'Summary';
 $string['title'] = 'Course name';
+$string['viewquickstart'] = 'View Quickstart guide';
+$string['zero_default_intro'] = 'Once you\'re enrolled in a course, it will appear here.';
+$string['zero_default_title'] = 'You\'re not enrolled in any courses.';
+$string['zero_nocourses_intro'] = 'Need help getting started? Check out the <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle documentation</a> or take your first steps with our Quickstart guide.';
+$string['zero_nocourses_title'] = 'Create your first course';
+$string['zero_request_intro'] = 'Need help getting started? Check out the <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle documentation</a> or take your first steps with our <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Quickstart guide</a>.';
+$string['zero_request_title'] = 'Request your first course';

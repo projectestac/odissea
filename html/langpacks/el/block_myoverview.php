@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'el', version '4.1'.
+ * Strings for component 'block_myoverview', language 'el', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,20 +44,16 @@ $string['aria:groupingdropdown'] = 'Αναπτυσσόμενο μενού ομα
 $string['aria:hiddencourses'] = 'Εμφάνιση των μαθημάτων που αφαιρέθηκαν από την εμφάνιση';
 $string['aria:hidecourse'] = 'Αφαίρεση {$a} από την εμφάνιση';
 $string['aria:inprogress'] = 'Εμφάνιση μαθημάτων σε εξέλιξη';
-$string['aria:lastaccessed'] = 'Ταξινόμηση μαθημάτων κατά την ημερομηνία τελευταίας πρόσβασης';
 $string['aria:list'] = 'Εναλλαγή στην προβολή λίστας';
 $string['aria:past'] = 'Εμφάνιση περασμένων μαθημάτων';
 $string['aria:removefromfavourites'] = 'Αφαίρεση αστερίσκου από';
-$string['aria:shortname'] = 'Ταξινόμηση μαθημάτων κατά σύντομο όνομα μαθήματος';
 $string['aria:showcourse'] = 'Επαναφορά {$a} στην εμφάνιση';
 $string['aria:sortingdropdown'] = 'Αναπτυσσόμενο μενού ταξινόμησης';
 $string['aria:summary'] = 'Εναλλαγή σε συνοπτική προβολή';
-$string['aria:title'] = 'Ταξινόμηση μαθημάτων κατά όνομα μαθήματος';
 $string['availablegroupings'] = 'Διαθέσιμα φίλτρα';
 $string['availablegroupings_desc'] = 'Φίλτρα μαθήματος που είναι διαθέσιμα για επιλογή από τους χρήστες. Αν δεν επιλεγεί κανένα, θα εμφανιστούν όλα τα μαθήματα.';
 $string['card'] = 'Κάρτα';
 $string['cards'] = 'Κάρτες';
-$string['clearsearch'] = 'Καθαρισμός αναζήτησης';
 $string['completepercent'] = '{$a}% ολοκληρωμένο';
 $string['courseprogress'] = 'Πρόοδος μαθήματος:';
 $string['customfield'] = 'Προσαρμοσμένο πεδίο';

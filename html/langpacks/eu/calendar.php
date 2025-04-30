@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', version '4.1'.
+ * Strings for component 'calendar', language 'eu', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'Egutegiaren URLa';
 $string['calendarheading'] = '{$a} egutegia';
 $string['calendarpreferences'] = 'Egutegiaren hobespenak';
 $string['calendartypes'] = 'Egutegi motak';
-$string['calendarurl'] = 'Egutegiaren URLa: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Egutegiaren URLa arbelera kopiatu da';
 $string['category'] = 'Kategoria';
 $string['categoryevent'] = 'Kategoria-mailako ekitaldia';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Kopiatu egutegiaren URLa';
 $string['copyurl'] = 'Kopiatu URLa';
 $string['course'] = 'Ikastaroa';
 $string['coursecalendar'] = '{$a} egutegia';
+$string['coursecalendarlink'] = 'Ikastaroko egutegia';
 $string['courseevent'] = 'Ikastaroko ekitaldia';
 $string['courseevents'] = 'Ikastaroko ekitaldiak';
 $string['courses'] = 'Ikastaroak';
@@ -169,14 +169,13 @@ $string['gotocalendar'] = 'Joan egutegira';
 $string['group'] = 'Taldea';
 $string['groupevent'] = 'Talde-ekitaldia';
 $string['groupevents'] = 'Talde-ekitaldiak';
-$string['hideeventtype'] = 'Ezkutatu {$a} ekitaldiak';
+$string['hideeventtype'] = 'Ezkutatu {$a} motako ekitaldiak';
 $string['hourly'] = 'Orduro';
 $string['importcalendar'] = 'Inportatu egutegia';
 $string['importcalendarexternal'] = 'Inportatu kanpoko egutegia?';
 $string['importcalendarfrom'] = 'Inportatu hemendik:';
 $string['importcalendarheading'] = 'Inportatu egutegia...';
 $string['importfromfile'] = 'Egutegiaren fitxategia (.ics)';
-$string['importfrominstructions'] = 'Eman kanpoko egutegi baten URLa, edo igo fitxategi bat.';
 $string['importfromurl'] = 'Egutegiaren URLa';
 $string['invalideventtype'] = 'Aukeratu duzun ekitaldi mota baliogabea da';
 $string['invalidtimedurationminutes'] = 'Minututan sartu duzun iraupena ez da egokia. Mesedez, sartu 0 baino handiagoko iraupen egoki bat minututan edo aukeratu "iraupenik ez".';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} ekitaldi';
 $string['mon'] = 'Al';
 $string['monday'] = 'Astelehena';
 $string['monthly'] = 'Hilero';
-$string['monthlyview'] = 'Hileko ikuspegia';
 $string['monthnext'] = 'Hurrengo hilabetea';
 $string['monthprev'] = 'Aurreko hilabetea';
 $string['monththis'] = 'Hilabete honetan';
@@ -197,7 +195,9 @@ $string['moreevents'] = '{$a} gehiago';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Inoiz ez';
 $string['newevent'] = 'Ekitaldi berria';
+$string['newmonthannouncement'] = 'Egutegiak orain {$a} erakusten du.';
 $string['nocalendarsubscriptions'] = 'Oraindik ez duzu egutegi-harpidetzarik. {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Oraindik ez dago egutegi-harpidetzarik. <a href="{$a}">Inportatu kanpoko egutegi bat</a>';
 $string['notitle'] = 'izenbururik ez';
 $string['noupcomingevents'] = 'Ez dago ekitaldirik laster';
 $string['oneevent'] = 'Ekitaldi 1';

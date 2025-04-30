@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', version '4.1'.
+ * Strings for component 'calendar', language 'ca', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL del calendari';
 $string['calendarheading'] = 'Calendari {$a}';
 $string['calendarpreferences'] = 'Preferències del calendari';
 $string['calendartypes'] = 'Tipus de calandari';
-$string['calendarurl'] = 'URL del calendari: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'URL del calendari copiat al porta-retalls';
 $string['category'] = 'Categoria';
 $string['categoryevent'] = 'Esdeveniment de categoria';
@@ -175,7 +174,6 @@ $string['importcalendarexternal'] = 'Voleu importar un calendari extern?';
 $string['importcalendarfrom'] = 'Importa des de';
 $string['importcalendarheading'] = 'S\'està important el calendari...';
 $string['importfromfile'] = 'Fitxer del calendari (*.ics)';
-$string['importfrominstructions'] = 'Proporcioneu l\'URL d\'un calendari remot o pengeu un fitxer.';
 $string['importfromurl'] = 'URL del calendari';
 $string['invalideventtype'] = 'El tipus d\'esdeveniment que heu escollit no és vàlid.';
 $string['invalidtimedurationminutes'] = 'La durada en minuts que heu introduït no és vàlida. Introduïu un valor major que zero o escolliu sense durada.';
@@ -187,7 +185,6 @@ $string['manyevents'] = '{$a} esdeveniments';
 $string['mon'] = 'dl';
 $string['monday'] = 'dilluns';
 $string['monthly'] = 'Mensual';
-$string['monthlyview'] = 'Vista mensual';
 $string['monthnext'] = 'Més següent';
 $string['monthprev'] = 'Mes anterior';
 $string['monththis'] = 'Aquest mes';

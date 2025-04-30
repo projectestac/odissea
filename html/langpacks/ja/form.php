@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', version '4.1'.
+ * Strings for component 'form', language 'ja', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'あなたはここに少なくとも {$a->format} �
 $string['err_nonzero'] = 'あなたはここにゼロから始まらない数字を入力する必要があります。';
 $string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を入力する必要があります。';
 $string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
-$string['err_positiveint'] = 'あなたはここにゼロより大きな数字を入力する必要があります。';
+$string['err_positiveint'] = 'あなたはここにゼロより大きな整数を入力する必要があります。';
 $string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} 文字を入力する必要があります。';
 $string['err_required'] = 'あなたはここに値を入力する必要があります。';
 $string['err_wrappingwhitespace'] = '値を空白で開始または終了しないでください。';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = '許可されるファイルタイプ:';
 $string['filetypesany'] = 'すべてのファイルタイプ';
 $string['filetypesnotall'] = 'ここでは「すべてのファイルタイプ」を選択できません。';
 $string['filetypesnotallowed'] = 'これらのファイルタイプはここでは許可されていません: {$a}';
-$string['filetypesnotwhitelisted'] = 'これらのファイルタイプはここでは許可されていません: {$a}';
 $string['filetypesothers'] = 'その他ファイル';
 $string['filetypesunknown'] = '不明なファイルタイプ: {$a}';
+$string['formactions'] = 'フォーム操作';
 $string['general'] = '一般';
 $string['hideadvanced'] = '拡張要素を隠す';
 $string['hour'] = '時';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'サジェスチョン';
 $string['time'] = '時間';
 $string['timeunit'] = '時間単位';
 $string['timing'] = 'タイミング';
+$string['togglesensitive'] = 'トグル感度';
 $string['unmaskpassword'] = 'マスク解除';
 $string['year'] = '年';

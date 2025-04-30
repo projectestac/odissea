@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'it', version '4.1'.
+ * Strings for component 'tool_usertours', language 'it', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -135,7 +135,6 @@ $string['placement_help'] = 'È possibile posizionare un passo sopra, sotto, a d
 
 Qualora il passo non si adatti ad essere visualizzato nella posizione impostata, sarà posizionato altrove automaticamente.';
 $string['pluginname'] = 'Tour utente';
-$string['previousstep'] = 'Precedente';
 $string['privacy:metadata:preference:completed'] = 'L\'orario nel quale un utente ha più recentemente completato il tour.';
 $string['privacy:metadata:preference:requested'] = 'L\'orario nel quale un utente ha più recentemente resettato manualmente il tour.';
 $string['privacy:request:preference:completed'] = 'Il {$a->time} hai contrassegnato come completato il tour utente "{$a->name}"';
@@ -150,6 +149,9 @@ $string['selector_defaulttitle'] = 'Inserisci un testo descrittivo';
 $string['selectordisplayname'] = 'Un selettore CSS corrispondente a \'{$a}\'';
 $string['selecttype'] = 'Seleziona il tipo di passo';
 $string['sharedtourslink'] = 'Repository dei tour';
+$string['showtoureachtime'] = 'ogni volta che un filtro corrisponde';
+$string['showtouruntilcomplete'] = 'finché non è stato chiuso';
+$string['showtourwhen'] = 'Visualizza tour';
 $string['skip'] = 'Salta';
 $string['skip_tour'] = 'Salta tour';
 $string['target'] = 'Obiettivo';
@@ -249,6 +251,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'L\'impostazione \'Visuali
 $string['tour_activityinfo_course_teacher_title'] = 'Novità: informazioni sull’attività';
 $string['tour_final_step_content'] = 'Il tour è terminato. Per visualizzarlo di nuovo fai click sul link presente nel piè di pagina.';
 $string['tour_final_step_title'] = 'Fine del tour';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordina le colonne e scegli quali visualizzare. In modalità Modifica, utilizzare questa scorciatoia per accedere alle attività frequenti relative alla visualizzazione e alla modifica degli elementi di valutazione.';
+$string['tour_gradebook_action_title'] = 'Collegamenti rapidi alle azioni';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtra gli studenti in base alle iniziali del loro nome o cognome.';
+$string['tour_gradebook_filter_title'] = 'Filtra per nome';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Utilizzare la casella di ricerca per trovare rapidamente studenti specifici.';
+$string['tour_gradebook_search_title'] = 'Trova facilmente gli studenti';
+$string['tour_gradebook_tour_description'] = 'Funzioni di ricerca e navigazione nel report del Registro delle valutazioni';
+$string['tour_gradebook_tour_name'] = 'Report del valutatore del registro delle valutazioni';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Inserire qui le novità importanti.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Informazioni da dare a tutti?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Aggiungere contenuti o modificare gli esistenti.';

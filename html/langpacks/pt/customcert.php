@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'pt', version '4.1'.
+ * Strings for component 'customcert', language 'pt', version '4.4'.
  *
  * @package     customcert
  * @category    string
@@ -85,7 +85,7 @@ $string['elements_help'] = 'Esta é a lista de elementos que serão mostrados no
 
 Nota: Os elementos são processados por esta ordem. A ordem pode ser alterada usando as setas ao lado de cada elemento.';
 $string['elementwidth'] = 'Largura';
-$string['elementwidth_help'] = 'Especifique a largura do elemento - \'0\' significa que não há restrição de largura.';
+$string['elementwidth_help'] = 'Especifique a largura do elemento. Se \'0\' for permitido, será automaticamente calculada.';
 $string['emailnonstudentbody'] = 'Em anexo está o certificado \'{$a->certificatename}\' de \'{$a->userfullname}\' referente à disciplina \'{$a->coursefullname}\'.';
 $string['emailnonstudentbodyplaintext'] = 'Em anexo está o certificado \'{$a->certificatename}\' de \'{$a->userfullname}\' referente à disciplina \'{$a->coursefullname}\'.';
 $string['emailnonstudentcertificatelinktext'] = 'Ver relatório do certificado';

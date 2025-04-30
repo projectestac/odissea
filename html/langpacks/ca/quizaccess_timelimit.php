@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'ca', version '4.1'.
+ * Strings for component 'quizaccess_timelimit', language 'ca', version '4.4'.
  *
  * @package     quizaccess_timelimit
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'El qüestionari té un límit de temps de {$a}. El temps començarà a comptar des del moment en què inicieu l\'intent i s\'ha d\'enviar abans que el temps acabi. Confirmeu que voleu començar ara?';
+$string['confirmstart'] = 'El vostre intent tindrà un límit de temps de {$a}. Quan comenci, el temporitzador començarà a comptar enrere i no es pot posar en pausa. Heu d\'acabar el vostre intent abans que finalitzi. Esteu segur que voleu començar ara?';
 $string['confirmstartheader'] = 'Límit de temps';
 $string['pluginname'] = 'Límit de temps per accedir a la pregunta';
 $string['quiztimelimit'] = 'Límit de temps: {$a}';

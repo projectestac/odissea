@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'uk', version '4.1'.
+ * Strings for component 'chat', language 'uk', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -110,7 +110,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Чати';
 $string['neverdeletemessages'] = 'Ніколи не видаляти повідомлення';
 $string['nextchattime'] = 'Наступний час чату:';
-$string['nextsession'] = 'Наступна запланована сесія';
 $string['no_complete_sessions_found'] = 'Чат не знайдено';
 $string['nochat'] = 'Не знайдено жодного чату';
 $string['noguests'] = 'Чат закритий для гостей';
@@ -159,7 +158,6 @@ $string['serverip'] = 'ІР серверу';
 $string['servermax'] = 'Максимально користувачів';
 $string['serverport'] = 'Порт серверу';
 $string['sessions'] = 'Чат-сесії';
-$string['sessionstart'] = 'Наступний сеанс чату розпочнеться {$a->date} (відтепер {$a->fromnow})';
 $string['sessionstartsin'] = 'Наступний сеанс чату розпочнеться {$a} з цього моменту.';
 $string['strftimemessage'] = '%H:%M:%S';
 $string['studentseereports'] = 'Кожен може переглядати минулі сесії';

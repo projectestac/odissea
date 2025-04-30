@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'es', version '4.1'.
+ * Strings for component 'filter_wiris', language 'es', version '4.4'.
  *
  * @package     filter_wiris
  * @category    string
@@ -42,7 +42,7 @@ $string['clickwirisplugincorrectlyinstalled'] = 'Clique el siguiente botón para
 $string['clickwirisquizzescorrectlyinstalled'] = 'Clique el siguiente botón para comprobar si WirisQuizzes está instalado correctamente.';
 $string['connectionsettings'] = 'Ajustes de conexión';
 $string['connectionsettings_text'] = '&nbsp;';
-$string['contact'] = 'Para más información o si tiene alguna duda, contacte con el Soporte de WIRIS:';
+$string['contact'] = 'Para más información  vea <a href="https://docs.wiris.com/mathtype/en/mathtype-for-lms/mathtype-for-moodle.html"> o contacte con el Soporte de WIRIS.';
 $string['disabled'] = 'Deshabilitado';
 $string['editormodalwindow'] = 'Ventana modal habilitada';
 $string['editormodalwindow_help'] = '&nbsp;';
@@ -55,6 +55,9 @@ $string['enabled'] = 'Habilitado';
 $string['error'] = 'ERROR';
 $string['errordeletingcache'] = 'Error borrando caché en área {$a}';
 $string['errorsavingcache'] = 'Error guardando caché en área {a}';
+$string['existsandenabledinmoodle'] = '¿{$a} existe y está habilitado en Moodle?';
+$string['existsinmoodle'] = '¿{$a} existe en Moodle?';
+$string['failure'] = 'FALLO';
 $string['filter_standalone'] = 'Sólo filtro MathType';
 $string['filter_standalonedesc'] = 'Usted podrá mostrar fórmulas ya existentes pero no está disponible la creación de nuevas fórmulas. También elimina el mensaje de aviso.';
 $string['filtermustbeinstalled'] = 'El filtro debe instalarse en la carpeta de filtros de Moodle.';
@@ -74,11 +77,19 @@ $string['imageserviceprotocol_help'] = 'Especifica el protocolo de servicio del 
 $string['imagesettings'] = 'Configuración de imagen';
 $string['imagesettings_text'] = '&nbsp;';
 $string['impossibletofindwirisfilterversion'] = 'Imposible encontrar un archvio de versión de filtro MathType.';
+$string['integrationinstallation'] = 'Instalación de integración';
+$string['isenabled'] = '¿Está habilitado {$a}?';
 $string['lookingforfilterfiles'] = 'Buscando archivos de filtro';
 $string['lookingforwirisfilterversion'] = 'Buscando versión de filtro MathType';
 $string['lookingforwirisplugin'] = 'Buscando MathType';
 $string['lookingforwirispluginenabled'] = 'Buscando MathType';
+$string['mathtypefilter'] = 'Filtro MathType';
+$string['moodleversion'] = 'Versión de Moodle';
+$string['mtatto'] = 'MathType para Atto';
+$string['mttinymcecurrent'] = 'MathType para TinyMCE (actual)';
+$string['mttinymcelegacy'] = 'MathType para TinyMCE (obsoleto)';
 $string['mustbeinstalled'] = 'debe instalarse.';
+$string['no'] = 'No';
 $string['noteditorspluginsinstalled'] = 'No hay plugins de editores instalados.';
 $string['notsupportededitor'] = 'no es un editor soportado.';
 $string['ok'] = 'De acuerdo';
@@ -88,15 +99,21 @@ $string['or'] = 'o';
 $string['pluginname'] = 'MathType de WIRIS';
 $string['pluginperformance'] = 'Modo de rendimiento de imagen';
 $string['pluginperformance_help'] = 'Especifica si la respuesta debería ser un JSON en vez de un binario que permita atrapar solicitudes. Habilite el rendimiento para usar respuesta JSON.';
+$string['pluginversion'] = 'Versión {$a}';
 $string['privacy:metadata'] = 'MathType no almacena ningún dato por sí mismo.';
 $string['rendertype'] = 'Tipo de renderización';
 $string['rendertype_help'] = 'Especifica cómo renderizar las fórmulas<br>- PHP: llama al servicio de renderización Wiris desde el módulo de filtrado.<br>- Cliente: todas las solicitudes a los servidores Wiris desde el navegador.<br><i>Se recomienda encarecidamente dejar el servicio de renderizado del lado del cliente (PHP), que es el configurado por defecto. Sólo se recomienda activar el renderizado del lado del cliente (Client) en entornos de alta concurrencia, donde haya un gran número de usuarios concurrentes que necesiten representar expresiones matemáticas complejas simultáneamente.</i>';
 $string['securitysettings'] = 'Ajustes de seguridad';
 $string['securitysettings_text'] = '&nbsp;';
+$string['success'] = 'ÉXITO';
+$string['themathtypefilter'] = 'El filtro MathType';
 $string['tinymce'] = 'TinyMCE';
+$string['tinymcecurrent'] = 'TinyMCE (actual)';
 $string['tinymceincompatibility'] = 'MathType para TinyMCE (obsoleto) no está soportado en Moodle 4.2 o superior. Debe desinstalar el plugin localizado en "./lib/editor/tinymce/plugins/tiny_mce_wiris" e instalar el plugin MathType para TinyMCE 6. Puede <a href="https://moodle.org/plugins/tiny_wiris">instalarlo aquí';
+$string['tinymcelegacy'] = 'TinyMCE (obsoleto)';
 $string['title'] = 'Página de prueba de filtro MathType';
 $string['version'] = 'versión';
+$string['versionmustbethesame'] = 'Para que el plugin funcione correctamente es necesario que las versiones de MathType de cualquier Editor HTML y Visor de MathType sean iguales.';
 $string['versionsdontmatch'] = 'las versiones no coinciden';
 $string['windowsettings'] = 'Ajustes de ventana';
 $string['windowsettings_text'] = '&nbsp;';
@@ -112,3 +129,4 @@ $string['wirispluginfiltermustbeinstalled'] = 'Debe instalarse el filtro MathTyp
 $string['wirispluginfor'] = 'MathType para';
 $string['wirispluginforatto'] = 'MathType para Atto';
 $string['wirispluginfortinymce'] = 'MathType para TinyMCE';
+$string['yes'] = 'Sí';

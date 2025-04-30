@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'pt', version '4.1'.
+ * Strings for component 'cache', language 'pt', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'Extensões permitidas e re
 $string['cachedef_contextwithinsights'] = 'Contexto com perceções';
 $string['cachedef_course_image'] = 'Imagens da disciplina';
 $string['cachedef_course_user_dates'] = 'As datas do utilizador para as disciplinas configuradas para o modo de datas relativas';
+$string['cachedef_courseactionsinstances'] = 'Carregadas instâncias de ações da disciplina';
 $string['cachedef_coursecat'] = 'Listas das categorias de disciplinas para um utilizador em particular';
 $string['cachedef_coursecatrecords'] = 'Registos de categorias de disciplinas';
 $string['cachedef_coursecattree'] = 'Árvore de categorias de disciplinas';
 $string['cachedef_coursecompletion'] = 'Estado de conclusão da disciplina';
 $string['cachedef_coursecontacts'] = 'Lista de contactos da disciplina';
 $string['cachedef_courseeditorstate'] = 'Chaves de cache do estado da sessão da disciplina para detetar alterações da disciplina no frontend';
+$string['cachedef_coursehiddengroups'] = 'Número de grupos numa disciplina com visibilidade restrita';
 $string['cachedef_coursemodinfo'] = 'Informação acumulada sobre módulos e secções para cada disciplina';
 $string['cachedef_coursesectionspreferences'] = 'Preferências da secção da disciplina';
 $string['cachedef_databasemeta'] = 'Meta-informação da base de dados';
-$string['cachedef_deprecatedcapabilities'] = 'Lista de recursos obsoletos do sistema';
 $string['cachedef_eventinvalidation'] = 'Invalidação de evento';
 $string['cachedef_externalbadges'] = 'Medalhas externas para um utilizador em particular';
 $string['cachedef_file_imageinfo'] = 'Informações do ficheiro da imagem, por exemplo: as dimensões';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'Consultas às notas alfabéticas';
 $string['cachedef_gradesetting'] = 'Configuração da nota da disciplina';
 $string['cachedef_groupdata'] = 'Informação de grupos da disciplina';
 $string['cachedef_h5p_content_type_translations'] = 'Traduções de bibliotecas de tipo de conteúdo H5P';
+$string['cachedef_h5p_libraries'] = 'Bibliotecas H5P';
 $string['cachedef_h5p_library_files'] = 'Ficheiros de biblioteca H5P';
+$string['cachedef_hookcallbacks'] = 'Callbacks Hook';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - conteúdo limpo';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponíveis';
 $string['cachedef_license'] = 'Lista de licenças';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'Bloqueio';
 $string['cachedef_message_processors_enabled'] = 'Estado dos processadores de mensagens ativado';
 $string['cachedef_message_time_last_message_between_users'] = 'Data/hora de criação da mensagem mais recente';
 $string['cachedef_modelfirstanalyses'] = 'Primeira análise por modelo e analisável';
+$string['cachedef_moodlenet_usercanshare'] = 'Os utilizadores podem partilhar recursos no MoodleNet';
+$string['cachedef_navigation_cache'] = 'Cache da navegação';
 $string['cachedef_navigation_expandcourse'] = 'Disciplinas expansíveis no bloco Navegação';
 $string['cachedef_observers'] = 'Observadores de eventos';
 $string['cachedef_plugin_functions'] = 'Callbacks de módulos disponíveis';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'Lista de utilizadores suspensos por dis
 $string['cachedef_tagindexbuilder'] = 'Resultados da pesquisa de itens marcados com palavras-chave';
 $string['cachedef_tags'] = 'Coleções de palavras-chave e áreas';
 $string['cachedef_temp_tables'] = 'Cache de tabelas temporárias';
+$string['cachedef_theme_usedincontext'] = 'Foi usado um tema no contexto para substituir o tema predefinido';
 $string['cachedef_user_course_content_items'] = 'Itens de conteúdo do utilizador (atividades, recursos e respetivos subtipos) por disciplina';
 $string['cachedef_user_favourite_course_content_items'] = 'Itens do utilizador marcados com estrela';
 $string['cachedef_user_group_groupings'] = 'Grupos e agrupamentos do utilizador por disciplina';

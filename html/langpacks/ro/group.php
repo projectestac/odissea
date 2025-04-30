@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ro', version '4.1'.
+ * Strings for component 'group', language 'ro', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Sigur doriţi ştergerea grupului \'{$a}\'?';
 $string['deletegrouping'] = 'Şterge grupare';
 $string['deletegroupingconfirm'] = 'Sunteţi sigur că doriţi să ştergeţi gruparea {$a}? (Grupurile din cadrul grupării nu vor fi şterse)';
 $string['deletegroupsconfirm'] = 'Sigur doriţi ştergerea următoarelor grupuri?';
-$string['deleteselectedgroup'] = 'Şterge grupul selectat';
+$string['deleteselectedgroup'] = 'Şterge';
+$string['disablemessagingaction'] = 'Dezactivează mesageria';
 $string['editgroupingsettings'] = 'Editează setări grupare';
 $string['editgroupsettings'] = 'Editează setări grup';
 $string['editusersgroupsa'] = 'Editează grupurile pentru "{$a}"';
 $string['enablemessaging'] = 'Mesagerie în grup';
 $string['enablemessaging_help'] = 'Dacă este activat, membrii grupului pot trimite mesaje celorlalți din grupul lor prin sertarul de mesagerie.';
+$string['enablemessagingaction'] = 'Activează mesageria';
 $string['encoding'] = 'Codificare';
 $string['enrolmentkey'] = 'Cheie de înregistrare';
 $string['enrolmentkey_help'] = 'O cheie de înscriere permite accesul la curs să fie limitat doar la cei care cunosc cheia. Dacă este specificată o cheie de înscriere în grup, atunci nu numai că introducerea acelei chei va permite utilizatorului să participe la curs, dar va deveni automat membru al acestui grup.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'O cheie de înscriere permite accesul la curs s�
 Notă: Cheile de înscriere în grup trebuie să fie activate în setările de autoînscriere și trebuie specificată și o cheie de înscriere pentru curs.';
 $string['enrolmentkeyalreadyinuse'] = 'Această cheie de înrolare este deja folosită pentru alt grup';
 $string['erroraddremoveuser'] = 'S-a produs o eroare la adăugarea/ştergerea utilizatorului {$a} la grup';
+$string['erroraddtogroup'] = 'Valoarea nu este validă pentru addtogroup. Ar trebui să fie 0 pentru modul no gropu sau 1 pentru un nou grup care va fi creat.';
+$string['erroraddtogroupgroupname'] = 'Nu poți specifica groupname când addtogroup este setat.';
 $string['erroreditgroup'] = 'S-a produs o eroare la crearea/actualizarea grupului {$a}';
 $string['erroreditgrouping'] = 'S-a produs o eroare la crearea/actualizarea grupării {$a}';
 $string['errorinvalidgroup'] = 'Eroare, grup {$a} incorect';
@@ -113,6 +117,8 @@ $string['groupmembers'] = 'Membri ai grupului';
 $string['groupmemberssee'] = 'Afişează membri grup';
 $string['groupmembersselected'] = 'Membrii grupului selectat';
 $string['groupmode'] = 'Mod Grupuri';
+$string['groupmode_groupsseparate_help'] = 'Studenții sunt împărțiți în grupuri și pot vedea doar activitatea din grupul lor.';
+$string['groupmode_groupsvisible_help'] = 'Studenții sunt divizați în grupuri, dar pot vedea activitatea altor grupuri.';
 $string['groupmode_help'] = '* Fără grupuri
 * Grupuri separate: Cursanții sunt împărțiți în grupuri și pot vedea doar activitatea grupului lor.
 * Grupuri vizibile: Cursanții sunt împărțiți în grupuri, dar pot vedea activitatea altor grupuri.
@@ -135,7 +141,6 @@ $string['groupspreview'] = 'Previzualizare grupuri';
 $string['groupsseparate'] = 'Grupuri separate';
 $string['groupsvisible'] = 'Grupuri vizibile';
 $string['grouptemplate'] = 'Grup @';
-$string['hidepicture'] = 'Ascunde imagine';
 $string['importgroups'] = 'Importă grupuri';
 $string['importgroups_help'] = 'Grupurile pot fi importate prin fișier text. Formatul fișierului ar trebui să fie după cum urmează:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Include doar utilizatorii activi';
 $string['includeonlyactiveenrol_help'] = 'Dacă este activată, utilizatorii suspendați nu vor fi incluși în grupuri';
 $string['javascriptrequired'] = 'Această pagină necesită JavaScript pentru a fi activat.';
+$string['manageactions'] = 'Administrează';
 $string['memberofgroup'] = 'Grup membru al: {$a}';
 $string['members'] = 'Număr de membri într-un grup';
 $string['membersofselectedgroup'] = 'Membri ai:';
+$string['messagingdisabled'] = 'S-a dezactivat cu succes mesageria în {$a} grup(uri)';
+$string['messagingenabled'] = 'S-a activat cu succes mesgaeria în {$a} grup(uri)';
 $string['mygroups'] = 'Grupurile mele';
 $string['namingscheme'] = 'Convenţie nume';
 $string['namingscheme_help'] = 'Simbolul (@) poate fi utilizat pentru a crea grupuri cu nume care conţin litere. De exemplu, Grupul @ va genera grupuri numite Grupul A, Grupul B, Grupul C, ...
@@ -175,6 +183,9 @@ $string['numgroups'] = 'Număr de grupuri';
 $string['nummembers'] = 'Număr de membri în cadrul unui grup';
 $string['othergroups'] = 'Alte grupuri';
 $string['overview'] = 'Privire de ansamblu';
+$string['participation'] = 'Afișați grupul în meniul derulant pentru activitățile în modul grup';
+$string['participation_help'] = 'Membrii grupului ar trebui să poată selecta acest grup pentru activități în modul de grupuri separate sau vizibile? (Se aplică numai dacă apartenența la grup este vizibilă sau vizibilă numai pentru membri.)';
+$string['participationshort'] = 'Participare';
 $string['potentialmembers'] = 'Membri potenţiali: {$a}';
 $string['potentialmembs'] = 'Membri potențiali';
 $string['printerfriendly'] = 'Afişare pentru imprimare';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'Nu există suficienţi utilizatori pentru a completa
 $string['usercount'] = 'Număr utilizatori';
 $string['usercounttotal'] = 'Număr utilizatori ({$a})';
 $string['usergroupmembership'] = 'Apartenenţa utilizatorului selectat:';
+$string['visibility'] = 'Vizibilitatea apartenenței la grup';
+$string['visibility_help'] = '* Vizibil - toți participanții la curs pot vedea cine face parte din grup
+* Vizibil numai pentru membri - participanții la curs care nu fac parte din grup nu pot vedea grupul sau membrii acestuia
+* Vizualizare doar grupul din care face parte - un utilizator poate vedea că este într-un grup, dar nu poate vedea alți membri ai grupului
+* Ascuns - numai profesorii pot vizualiza grupul și membrii acestuia
+
+Utilizatorii cu capacitatea de vizualizare a grupurilor ascunse pot vedea întotdeauna apartenența la grup.
+
+Rețineți că nu puteți modifica această setare dacă grupul are membri.';
+$string['visibilityall'] = 'Vizibil';
+$string['visibilitymembers'] = 'Vizibil doar pentru membri';
+$string['visibilitynone'] = 'Ascuns';
+$string['visibilityown'] = 'Vezi doar propria apartenență la grup';
+$string['visibilityshort'] = 'Vizibilitate';
+$string['withselected'] = 'Cu selecția';

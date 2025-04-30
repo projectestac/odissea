@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'sv', version '4.1'.
+ * Strings for component 'h5pactivity', language 'sv', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -78,6 +78,7 @@ $string['grade_h5p'] = 'Betyg: {$a}';
 $string['grade_highest_attempt'] = 'Högsta betyg';
 $string['grade_last_attempt'] = 'Sista försöket';
 $string['grade_manual'] = 'Beräkna inte betyg';
+$string['gradenoun_h5p'] = 'Betyg: {$a}';
 $string['h5pactivity:addinstance'] = 'Ny H5P';
 $string['h5pactivity:reviewattempts'] = 'Granska H5P-försök';
 $string['h5pactivity:submit'] = 'Skicka in H5P-försök';
@@ -122,7 +123,6 @@ $string['result_other'] = 'Okänd interaktionstyp';
 $string['result_sequencing_answer'] = 'Positionsvärde';
 $string['result_sequencing_choice'] = 'Positioner';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Visa alla försök ({$a} inlämnade)';
 $string['review_mode'] = 'Granska försök';
 $string['review_my_attempts'] = 'Visa mina försök';
 $string['review_none'] = 'Deltagare kan inte granska egna försök';

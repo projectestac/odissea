@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ja', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'ja', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'オーバーライドを削除する';
 $string['save'] = '保存';
 $string['savegrades'] = '評点保存';
 $string['savegradessuccess'] = '{$a} アイテムに評点が設定されました。';
-$string['searchgrades'] = '評定項目を検索する';
 $string['selectagrade'] = '評定項目を選択する';
 $string['selectgradeitemlink'] = '評定項目を選択する';
 $string['singleview:view'] = 'シングルビューを表示する';
 $string['singleviewdescription'] = 'あなたはシングルビューで選択した評点をオーバーライドまたは除外できます。また、評点を一括挿入できます。';
+$string['singleviewreport_gradeitem'] = 'このアイテムのシングルビュー';
+$string['singleviewreport_user'] = 'このユーザのシングルビュー';
 $string['summarygrade'] = '範囲、評点、フィードバックおよび特定の評点をオーバーライドまたは除外に関するカラムを含むユーザテーブルです。';
 $string['summaryuser'] = '評定カテゴリ、範囲、評点、フィードバックおよび特定の評点をオーバーライドまたは除外に関するカラムを含む評定項目テーブルです。';
 $string['unsavedataalert'] = 'あなたが評定表の変更を保存していないため、評点一括挿入を進めた場合、これらの変更を失うことになります。';

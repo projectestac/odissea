@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'el', version '4.1'.
+ * Strings for component 'completion', language 'el', version '4.4'.
  *
  * @package     completion
  * @category    string
@@ -239,4 +239,3 @@ $string['viewingactivity'] = 'Εμφάνιση {$a}';
 $string['withconditions'] = 'Υπό συνθήκες';
 $string['writingcompletiondata'] = 'Αποθήκευση δεδομένων ολοκλήρωσης';
 $string['xdays'] = '{$a} ημέρες';
-$string['yourprogress'] = 'Η πρόοδός σου';

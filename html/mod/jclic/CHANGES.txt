@@ -3,6 +3,12 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in 3.1.0 - 2024102800 (2024/10/28)
+---------------------------------------------------------------------------------------
+- Format improvements and code cleaning all over the module
+- Moodle 4.0 required
+- Tested with Moodle 4.4
+
 Changes in 3.0.6 - 2021060100 (2021/06/01)
 ---------------------------------------------------------------------------------------
 - Prepared version for Moodle 3.11

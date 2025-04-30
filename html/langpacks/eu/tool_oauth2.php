@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'eu', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'eu', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -33,15 +33,10 @@ $string['authnotconnected'] = 'Sistemako kontua ez dago lineaz kanpoko sarbidera
 $string['clever_service'] = 'Clever';
 $string['configured'] = 'Konfiguratuta';
 $string['configuredstatus'] = 'Konfiguratuta';
-$string['connectsystemaccount'] = 'Konektatu sistemako kontura';
+$string['connectsystemaccount'] = 'Konektatu sistemako kontu batera';
 $string['createfromtemplate'] = 'Sortu OAuth 2 zerbitzu bat txantiloitik';
 $string['createfromtemplatedesc'] = 'Aukeratu beheko Oauth2 zerbitzuko txantiloietako bat zerbitzu mota ezagunetarako konfigurazio egoki bat duen OAuth zerbitzu bat sortzeko. Honek OAuth2 zerbitzu bat sortuko du, autentifikaziorako beharrezkoak diren amaiera-puntu eta parametro guztiekin, baina zerbitzua erabili ahal izateko aurretik zure bezero IDa eta sekretua sartu beharko dituzu.';
 $string['createnewendpoint'] = 'Sortu amaiera-puntu berria "{$a}" emailearentzat';
-$string['createnewfacebookissuer'] = 'Sortu Facebook zerbitzu berria';
-$string['createnewgoogleissuer'] = 'Sortu Google zerbitzu berria';
-$string['createnewissuer'] = 'Sortu pertsonalizatutako zerbitzu berria';
-$string['createnewmicrosoftissuer'] = 'Sortu Microsoft zerbitzu berria';
-$string['createnewnextcloudissuer'] = 'Sortu nextcloud zerbitzu berria';
 $string['createnewservice'] = 'Sortu zerbitzu berria:';
 $string['createnewuserfieldmapping'] = 'Sortu erabiltzaile-eremu lotura berria "{$a}" emailearentzat';
 $string['custom_service'] = 'Pertsonalizatua';
@@ -89,7 +84,7 @@ $string['issuerloginscopes'] = 'Saio-hasiera eskaeran sartu beharreko esparruak.
 $string['issuerloginscopes_help'] = 'Sistema batzuk saio-hasiera eskaeran esparru gehigarriak behar dituzte erabiltzailearen oinarrizko profila irakurri ahal izateko.OpenID Connect betetzen duten sistementzako esparru estandarrak "openid profile email" dira.';
 $string['issuerloginscopesoffline'] = 'Saio-hasiera eskaeran lineaz kanpoko sarbiderako sartu beharreko esparruak.';
 $string['issuerloginscopesoffline_help'] = 'OAuth sistema bakoitzak modu ezberdin bat zehazten du lineaz kanpoko sarbiderako. Esaterako Microsoft-ek "offline_access" esparru gehigarria behar du.';
-$string['issuername'] = 'izena';
+$string['issuername'] = 'Izena';
 $string['issuername_help'] = 'Identitate-emailearen izena. Sarbide-orrian erakutsi daiteke.';
 $string['issuerrequireconfirmation'] = 'Behartu helbide elektronikoaren egiaztapena';
 $string['issuerrequireconfirmation_help'] = 'Behartu erabiltzaile guztiek euren helbide elektronikoa egiaztatzea OAuth bidez saioa hasi aurretik. Honek eragina du saio-hastearekin batera sortutako kontuetan, baita existitzen zen Moodle kontu bat helbide elektronikoa lotuz OAuth bidezko saio-hasiera egiteko konektatzen denean ere.';
@@ -101,16 +96,17 @@ $string['issuershowonloginpage_help'] = 'OAuth autentifikazio-plugina gaituta ba
 $string['issuersservicesallow'] = 'Baimendu zerbitzuak';
 $string['issuersservicesnotallow'] = 'Ez baimendu zerbitzuak';
 $string['issuerusedforinternal'] = 'Barne-zerbitzuak';
-$string['issuerusedforlogin'] = 'Sarrera-orria';
+$string['issuerusedforlogin'] = 'Saio-hasiera';
 $string['issuerusein'] = 'Zerbitzu hau erabiliko da';
-$string['issuerusein_help'] = 'OAuth 2 zerbitzuak zenbait barne-zerbitzutan, sarrera-orrian edo bietan erabili daitezke, behar izanez gero.';
-$string['issueruseineverywhere'] = 'Sarrera-orria eta barne-zerbitzuak';
+$string['issuerusein_help'] = 'OAuth 2 zerbitzuak zenbait barne-zerbitzutan, saio-hasieran edo bietan erabili daitezke, behar izanez gero.';
+$string['issueruseineverywhere'] = 'Saio-hasiera eta barne-zerbitzuak';
 $string['issueruseininternalonly'] = 'Barne-zerbitzuak soilik';
-$string['issueruseinloginonly'] = 'Sarrera-orria soilik';
+$string['issueruseinloginonly'] = 'Saio-hasiera soilik';
 $string['linkedin_service'] = 'LinkedIn';
-$string['logindisplay'] = 'Erakutsi sarrera-orrian honela:';
+$string['logindisplay'] = 'Erakutsi saio-hasiera orrian honela:';
 $string['loginissuer'] = 'Baimendu saioa hastea';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Konfiguratu gabe';
 $string['notdiscovered'] = 'Zerbitzu-aurkikuntza ez da ondo egin';

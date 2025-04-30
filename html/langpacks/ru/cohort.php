@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ru', version '4.1'.
+ * Strings for component 'cohort', language 'ru', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Член глобальной группы';
 $string['cohorts'] = 'Глобальные группы';
 $string['cohortsin'] = '{$a}: доступные глобальные группы';
 $string['component'] = 'Источник';
+$string['contextcohortnotallowed'] = 'Глобальная группа <b>{$a}</b> не разрешена в данном контексте.';
 $string['contextnotfound'] = 'Контекст <b>{$a}</b> не найден или у Вас нет разрешения на создание в нем глобальной группы. Будет использоваться контекст по умолчанию.';
 $string['csvcontainserrors'] = 'В данных CSV найдены ошибки. Подробности ниже.';
 $string['csvcontainswarnings'] = 'В данных CSV найдены предупреждения. Подробности ниже.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'Текущие пользователи';
 $string['currentusersmatching'] = 'Подходящие текущие пользователи';
 $string['defaultcontext'] = 'Контекст по умолчанию';
 $string['delcohort'] = 'Удалить глобальную группу';
-$string['delconfirm'] = 'Вы действительно хотите удалить глобальную группу «{$a}»?';
+$string['delconfirm'] = 'Это приведет к удалению глобальной группы «{$a}» и всех связанных с ней данных.';
 $string['description'] = 'Описание';
 $string['displayedrows'] = 'отображено строк - {$a->displayed} из {$a->total}.';
 $string['duplicateidnumber'] = 'Глобальная группа с таким идентификационным номером уже существует';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'ID пользователя
 $string['removeuserwarning'] = 'Удаление пользователей из глобальной группы может привести к отчислению пользователей из нескольких курсов, что приведет к удалению пользовательских настроек, оценок, членства в группах и других сведений о пользователе из затронутых курсов.';
 $string['search'] = 'Поиск';
 $string['searchcohort'] = 'Найти группу';
+$string['selectcohort'] = 'Выберите глобальную группу';
 $string['selectfromcohort'] = 'Выбрать пользователей из глобальной группы';
 $string['systemcohorts'] = 'Системные глобальные группы';
 $string['unknowncohort'] = 'Группа не найдена ({$a})!';

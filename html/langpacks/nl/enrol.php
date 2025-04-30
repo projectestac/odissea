@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', version '4.1'.
+ * Strings for component 'enrol', language 'nl', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Je hebt het recht niet om rollen toe te wijzen 
 $string['bulkuseroperation'] = 'Bulk gebruikersbewerking';
 $string['configenrolplugins'] = 'Selecteer alle vereiste plugins en zet ze in de juiste volgorde.';
 $string['custominstancename'] = 'Aangepaste instantienaam';
+$string['customwelcomemessage'] = 'Aangepaste welkomstboodschap';
+$string['customwelcomemessage_help'] = 'Aanvaarde opmaak: platte tekst of Moodle-auto-opmaak. HTML-tags en multi lang-tags worden ook aanvaard en ook volgende plaatshouders
+<ul>
+<li>Cursusnaam {$a->coursename}</li>
+<li>Link naar profielpagina van de gebruiker {$a->profileurl}</li>
+<li>E-mailadres gebruiker {$a->email}</li>
+<li>Volledige naam gebruiker {$a->fullname}
+<li>Voornaam gebruiker {$a->firstname}</li>
+<li>Achternaam gebruiker {$a->lastname}</li>
+<li>Cursusrol van de gebruiker {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Beste {$a->fullname}, je bent aangemeld in de cursus {$a->coursename}';
 $string['defaultenrol'] = 'Voeg toe aan nieuwe cursussen';
 $string['defaultenrol_desc'] = 'Het is mogelijk om deze plugin standaard aan alle nieuwe cursussen toe te voegen.';
 $string['deleteinstanceconfirm'] = 'Je gaat de aanmeldingsplugin "{$a->name}" verwijderen. Alle  {$a->users} aangemelde gebruikers zullen hierdoor afgemeld worden en al hun cursusgerelateerde gegevens, zoals cijfers, groeplidmaatschap en foruminschrijvingen zullen verwijderd worden.
@@ -129,6 +141,7 @@ $string['periodend'] = 'tot {$a}';
 $string['periodnone'] = 'aangemeld {$a}';
 $string['periodstart'] = 'van {$a}';
 $string['periodstartend'] = 'van {$a->start} tot {$a->end}';
+$string['plugindisabled'] = '{$a} aanmeldingsplugin is uitgeschakeld';
 $string['privacy:metadata:user_enrolments'] = 'Aanmeldingen';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Een aanmeldingsplugininstantie';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'De ID van de gebruiker die laatst de gebruikersaanmelding heeft gewijzigd';
@@ -139,12 +152,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Het tijdstip waarop de aa
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Het tijdstip waarop de aanmelding van de gebruiker gewijzigd is';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Het tijdstip waarop de aanmelding van de gebruiker start';
 $string['privacy:metadata:user_enrolments:userid'] = 'De ID van de gebruiker';
-$string['proceedtocourse'] = 'Ga verder naar cursusinhoud';
 $string['recovergrades'] = 'Herstel de oude cijfers van de gebruiker indien mogelijk';
 $string['rolefromcategory'] = '{$a->role} (geërfd van cursuscategorie)';
 $string['rolefrommetacourse'] = '{$a->role} (geërfd van bovenliggende cursus)';
 $string['rolefromsystem'] = '{$a->role} (toegewezen op site-niveau)';
 $string['rolefromthiscourse'] = '{$a->role} (toegewezen in deze cursus)';
+$string['sendcoursewelcomemessage'] = 'Stuur welkomstbericht';
+$string['sendcoursewelcomemessage_help'] = 'Wanneer een gebruiker of een site-groep aangemeld wordt in een cursus, dan kun je hen een welkomstbericht sturen via e-mail. Als die verstuurd wordt vanuit het cursuscontact (standaard de leraars), en er heeft meer dan één gebruiker deze rol, dan zal de e-mail verstuurd worden vanaf het adres van de gebruiker die de rol eerst kreeg.';
 $string['sendfromcoursecontact'] = 'Van het cursuscontact';
 $string['sendfromkeyholder'] = 'Van de sleutelhouder';
 $string['sendfromnoreply'] = 'Van het niet-beantwoordenadres';
@@ -163,7 +177,7 @@ $string['unassignnotpermitted'] = 'Je hebt het recht niet om rollen te verwijder
 $string['unenrol'] = 'Zeg lidmaatschap op';
 $string['unenrolconfirm'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}" afmelden (was aangemeld via "{$a->enrolinstancename}") ?';
 $string['unenrolleduser'] = 'De gebruiker "{$a->fullname}"  is uitgeschreven voor de cursus';
-$string['unenrolme'] = 'Zeg mijn lidmaatschap van {$a} op';
+$string['unenrolme'] = 'Zeg mijn lidmaatschap van deze cursus op';
 $string['unenrolnotpermitted'] = 'Je hebt het recht niet om deze gebruiker af te melden uit deze cursus.';
 $string['unenrolroleusers'] = 'Gebruikers afmelden';
 $string['uninstallmigrating'] = 'Migreren van "{$a}" aanmeldingen';

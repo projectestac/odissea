@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ro', version '4.1'.
+ * Strings for component 'repository_flickr_public', language 'ro', version '4.4'.
  *
  * @package     repository_flickr_public
  * @category    string

@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "auswerten",
 		
-		"home_getting_started_welcome_header_text": "Wir stellen Ihnen WirisQuizzes 4.8.0 vor: Jetzt mit handgeschriebenen Diagrammbearbeitungen",
+		"home_getting_started_welcome_header_text": "Wir stellen Ihnen WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Wir freuen uns, Ihnen einen neuen Antworttyp vorzustellen, der es Ihren Studierenden ermöglicht, ein Diagramm handschriftlich zu bearbeiten. Wenn Sie mehr über diese Funktion erfahren möchten, lesen Sie unsere Versionshinweise und die Dokumentationsunterlagen. Wir hoffen, dass Ihnen und Ihren Studierenden diese neue Funktion für WirisQuizzes gefällt!",
         "home_getting_started_release_notes_button_text": "Versionshinweise",
         "home_getting_give_us_feedback_button_text": "Ihr Feedback",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Automatisierte Schülerbetreuung",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Sie haben das automatische Feedback für diese Frage aktiviert",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Bitte definieren Sie die Art der Aufgabe, die Sie erstellen werden, und geben Sie die erforderlichen Felder an. Das Feedback wird automatisch von unserer Engine generiert. Sie können testen, wie Ihre Schüler das Feedback sehen werden. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Weitere Informationen",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Panel schließen",
+		"quizzes_studio_math_multistep_define_task_title" : "Definieren Sie die Aufgabe",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Link zur Dokumentation",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Art der Aufgabe",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Gleichung mit einer Variable ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Grundrechenarten ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Wählen Sie das Feld aus dem Dropdown-Menü. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Zu lösende Aufgabe ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Schreiben Sie hier nicht die richtige Antwort, sondern nur die zu lösende Gleichung. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Zufallsvariablen ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Gleichungsvariable ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Name der Variable",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Geben Sie die einzelne Variable für die zu lösende Gleichung an.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Falsch",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Fast geschafft",
+		"quizzes_studio_multistep_correct_feedback_label": "Richtig",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Reichen Sie Ihre Schritte ein, um die automatisierte Schülerbetreuung zu sehen",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Du bist auf dem richtigen Weg. Weiter so!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Du hast diese Frage richtig beantwortet.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Löse die Gleichung",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Führe die Vorgänge durch",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Test",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Löschen",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Erlaubte Multiplikationszeichen",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Implizite Multiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Üblicherweise wird die Multiplikation von Elementen akzeptiert, die nacheinander geschrieben werden. Beispiel: 2y wird als 2 mal y interpretiert.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Punktmultiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Elemente, die mit einem Punkt oder Sternchen multipliziert werden, bezeichnen Multiplikation. Beispiel: 2 · y wird als 2 mal y interpretiert.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Kreuzmultiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Elemente, die mit einem Kreuz multipliziert werden, bezeichnen Multiplikation. Beispiel: 2 x y wird als 2 mal y interpretiert.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Zu lösende Aufgabe fehlt",
+		"quizzes_studio_math_multistep_equation_variable_error": "Variablenname fehlt",
+
+		"quizzes_studio_multistep_error_session_start_title": "Fehler",
+		"quizzes_studio_multistep_error_session_start_message": "Beim Versuch, Ihre Aufgabe zu laden, ist etwas schief gelaufen. Bitte versuchen Sie es erneut oder gehen Sie zurück, um sicherzustellen, dass die Aufgabe korrekt definiert ist.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Erneut versuchen",
+		"quizzes_studio_multistep_error_session_start_go_back": "Zurück",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Kontaktieren Sie uns",
+
+		"syntax_math_multistep": "Mathematik mit automatisierter Schülerbetreuung"
 	}
 }
 

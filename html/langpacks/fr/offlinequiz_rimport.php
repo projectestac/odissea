@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'fr', version '4.1'.
+ * Strings for component 'offlinequiz_rimport', language 'fr', version '4.4'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -33,6 +33,7 @@ $string['errordifferentpage'] = 'Une page différente existe déjà';
 $string['errordifferentresultexists'] = 'Un résultat différent existe déjà';
 $string['errordoublepage'] = 'La page existe déjà';
 $string['errorfilenotfound'] = 'Fichier non trouvé';
+$string['errorfilenotimage'] = 'Le fichier n’est pas une image, ou le PDF ne contient pas une image.';
 $string['errorgifnotsupported'] = 'Images GIF non supportées';
 $string['errorgrouperror'] = 'Erreur de groupe';
 $string['errorimagenotsupported'] = 'Type d’image non supporté';

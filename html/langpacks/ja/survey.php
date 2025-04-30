@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', version '4.1'.
+ * Strings for component 'survey', language 'ja', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = '実体験';
 $string['actualclass'] = 'クラスの実体験';
 $string['actualstudent'] = '{$a} の実体験';
 $string['allquestionrequireanswer'] = 'すべての質問は必須回答であり答える必要があります。';
-$string['allquestions'] = 'すべての質問を順番に、すべての学生';
 $string['allscales'] = 'すべての評価尺度、すべての学生';
 $string['alreadysubmitted'] = 'あなたはこの調査をすでに送信しています。';
 $string['analysisof'] = '{$a} の分析';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'どのようなことに一番驚きましたか?';
 $string['ciq5short'] = '驚いた時';
 $string['ciqintro'] = '今までのクラスの中での出来事を思い出して以下の質問に答えてください。';
 $string['ciqname'] = 'クリティカルインシデント';
-$string['clicktocontinue'] = '続ける';
 $string['clicktocontinuecheck'] = '確認して続ける';
 $string['colles1'] = '私の学習は興味のあることに集中します。';
 $string['colles10'] = '他の学生に自分の意見に関する説明を求めます。';
@@ -191,7 +189,7 @@ $string['collespintro'] = 'この調査の目的はあなたがオンライン�
 ありがとうございます。';
 $string['collespname'] = 'COLLES (要望)';
 $string['completiondetail:submit'] = '回答を送信する';
-$string['completionsubmit'] = '学生は送信する必要があります。';
+$string['completionsubmit'] = '提出する';
 $string['customintro'] = '説明';
 $string['deleteallanswers'] = 'すべての調査回答を削除する';
 $string['deleteanalysis'] = '回答分析を削除する';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = '調査には以下の3つのタイプがありま�
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = '{$a} さん、調査にご回答頂きましてありがとうございます';
 $string['time'] = '時間';
-$string['viewsurveyresponses'] = '{$a} 件の調査結果を表示する';

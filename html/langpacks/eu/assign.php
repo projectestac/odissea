@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'eu', version '4.1'.
+ * Strings for component 'assign', language 'eu', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Oraindik ez duzu bidalketarik egin.';
 $string['allocatedmarker'] = 'Esleitutako kalifikatzailea';
 $string['allocatedmarker_help'] = 'Bidalketa honi esleitutako kalifikatzailea.';
 $string['allowsubmissions'] = 'Baimendu erabiltzaileari zereginean bidalketak egiten jarraitzea.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Zereginaren nondik norakoak eta bidalketarako formularioa eskuragarri izango dituzu <strong>{$a}</strong>-tik aurrera';
 $string['allowsubmissionsfromdate'] = 'Bidalketetarako hasiera-data';
 $string['allowsubmissionsfromdate_help'] = 'Gaituz gero, ikasleek ezingo dute bidalketa egin data hau baino lehen. Desgaituz gero, ikasleek bidalketa egin ahal izango dute oraintxe bertan.';
-$string['allowsubmissionsfromdatesummary'] = 'Zeregin honetan bidalketak onartuko dira <strong>{$a}</strong>-tik aurrera';
 $string['allowsubmissionsshort'] = 'Baimendu aldaketak bidalketan';
 $string['alwaysshowdescription'] = 'Beti erakutsi deskribapena';
 $string['alwaysshowdescription_help'] = 'Desgaituz gero, ikasleek goiko zereginaren deskripzioa soilik ikusiko dute "Baimendu bidalketak hemendik" aukeran markatutako egunetik aurrera.';
@@ -136,7 +134,7 @@ $string['collapsegradepanel'] = 'Tolestu kalifikazio-panela';
 $string['collapsereviewpanel'] = 'Tolestu berrikusketa-panela';
 $string['comment'] = 'Iruzkina';
 $string['completiondetail:submit'] = 'Bidalketa bat egitea';
-$string['completionsubmit'] = 'Ikasleak bidalketa bat egin behar du';
+$string['completionsubmit'] = 'Bidalketa bat egitea';
 $string['configshowrecentsubmissions'] = 'Duela gutxiko aktibitatearen txostenetan guztiek ikus ditzakete bidalketen jakinarazpenak';
 $string['confirmbatchgradingoperation'] = 'Ziur zaude {$a->operation} nahi duzula {$a->count} ikaslerentzat?';
 $string['confirmstart'] = '{$a} duzu zeregin hau osatzeko. Hasten zarenean, erlojuan atzera-kontaketa hasiko da eta ezin da pausatu.';
@@ -223,6 +221,11 @@ $string['eventsubmissionviewed'] = 'Bidalketa ikusi da.';
 $string['eventworkflowstateupdated'] = 'Lan-fluxu egoera eguneratu da.';
 $string['expandreviewpanel'] = 'Zabaldu berrikusketa-panela';
 $string['extensionduedate'] = 'Entregatze-dataren luzapena';
+$string['extensionduedatecurrent'] = 'Oraingo entregatze-dataren luzapena';
+$string['extensionduedatefrom'] = 'Hasiera-data: {$a}';
+$string['extensionduedatenone'] = 'Bat ere ez';
+$string['extensionduedateto'] = 'Amaiera-data: {$a}';
+$string['extensionduedatewithout'] = 'Luzapenik ez duten erabiltzaileak: {$a}';
 $string['extensionnotafterduedate'] = 'Luzapenaren data entregatze-data baino beranduagokoa izan behar da';
 $string['extensionnotafterfromdate'] = 'Luzapenaren data bidaltzeko hasiera-data baino beranduagokoa izan behar da';
 $string['feedback'] = 'Feedbacka';
@@ -336,6 +339,8 @@ $string['markerfilter'] = 'Kalifikatzaile iragazkia';
 $string['markerfilternomarker'] = 'Kalifikatzailerik ez';
 $string['markingallocation'] = 'Erabili kalifikatzaile esleipena';
 $string['markingallocation_help'] = 'Kalifikazio lan-fluxuarekin batera gaituz gero, ikasle konkretuei kalifikatzaileak eslei dakizkieke.';
+$string['markinganonymous'] = 'Baimendu kalifikazioen argitaratze partziala ebaluazioa modu anonimoan egiterakoan';
+$string['markinganonymous_help'] = 'Gaituz gero, bidalketa anonimoak eta kalifikazio lan-fluxua erabiltzen direnean, kalifikazioen argitaratze partziala baimentzen du ebaluazioa modu anonimoan egiten ari denean.';
 $string['markingworkflow'] = 'Erabili kalifikazio lan-fluxua';
 $string['markingworkflow_help'] = 'Gaituz gero, kalifikazioak lan-fluxu egoera ezberdinetatik igaroko dira ikasleei erakutsi baino lehen. Honek kalifikazio erronda anitz egiteko eta kalifikazioak ikasle guztiei aldi berean argitaratzeko aukera ematen du.';
 $string['markingworkflowstate'] = 'Kalifikazio lan-fluxuaren egoera';
@@ -461,8 +466,6 @@ $string['quickgrading_help'] = 'Kalifikazio azkarraren bidez, kalifikazioak (eta
 $string['quickgradingchangessaved'] = 'Kalifikazio aldaketak gorde dira';
 $string['quickgradingresult'] = 'Kalifikazio azkarra';
 $string['recordid'] = 'Identifikatzailea';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} ikastaroa hasi ondoren';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} ikastaroa hasi aurretik';
 $string['relativedatessubmissiontimeleft'] = 'Ikasleko kalkulatuta';
 $string['removeallgroupoverrides'] = 'Ezabatu talde-salbuespen guztiak';
 $string['removealluseroverrides'] = 'Ezabatu erabiltzaile-salbuespen guztiak';
@@ -474,7 +477,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Ziur zaude zure bidalketa eza
 $string['removesubmissionforstudent'] = 'Ezabatu ikaslearen bidalketa:  (IDa={$a->id}, izen osoa={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Gainditu arte berrireki aukera ez da bateragarria bidalketa anonimekin, kalifikazioak ez direlako kalifikatzailera bidaltzen ikasleen identitateak ezagutarazi arte.';
 $string['requireallteammemberssubmit'] = 'Behartu taldekide guztiak bidalketa egitera';
-$string['requireallteammemberssubmit_help'] = 'Gaituz gero, bidalketa amaitutzat emateko taldekide guztiek bidalketa-botoian klik egin behar dute. Desgaituz gero, bidalketa egina egongo da taldekide bakar batek bidalketa egin bezain laster.';
+$string['requireallteammemberssubmit_help'] = 'Ezarpen hau Bidalketa ezarpenetako \'Behartu ikasleak bidali botoian klik egitera\' aukerarekin batera erabili behar da.
+
+Gaituz gero, taldekide guztiek bidalketa-botoian klik egin behar dute taldearen bidalketa amaitutzat emateko. Desgaituz gero, edozein taldekidek bidalketa bidali ahalko du.';
 $string['requiresubmissionstatement'] = 'Behartu ikasleak bidalketa-adierazpena onartzera';
 $string['requiresubmissionstatement_help'] = 'Behartu ikasleak bidalketa-adierazpena onartzera zeregin honen bidalketa guztietan.';
 $string['revealidentities'] = 'Ezagutarazi ikasleen identitatea';
@@ -498,7 +503,7 @@ $string['search:activity'] = 'Zeregina - jardueraren informazioa';
 $string['selectedusers'] = 'Aukeratutako erabiltzaileak';
 $string['selectlink'] = 'Aukeratu...';
 $string['selectuser'] = 'Aukeratu {$a}';
-$string['sendlatenotifications'] = 'Eman kalifikatzaileei epez kanpoko bidalketen berri';
+$string['sendlatenotifications'] = 'Jakinarazi kalifikatzaileei epez kanpoko bidalketak daudenean';
 $string['sendlatenotifications_help'] = 'Gaituz gero, kalifikatzaileek (normalean irakasleak) mezu bat jasotzen dute ikasleek bidalketa bat berandu egiten duten bakoitzean. Mezularitza-metodoak konfiguratuta daude horretarako.';
 $string['sendnotifications'] = 'Jakinarazi kalifikatzaileei bidalketak daudenean';
 $string['sendnotifications_help'] = 'Gaituz gero, kalifikatzaileek (normalean irakasleak) mezu bat jasotzen dute ikasleek bidalketa bat egiten duten bakoitzean, nahiz garaiz edo berandu bidali. Mezularitza-metodoak konfiguratuta daude horretarako.';
@@ -565,6 +570,7 @@ $string['submissionstatement'] = 'Bidalketa-adierazpena';
 $string['submissionstatement_help'] = 'Ikasle bakoitzak bere lanak bidali ahal izateko onartu behar duten adierazpena.';
 $string['submissionstatementacceptedlog'] = '{$a} erabiltzaileak bidalketa-adierazpena onartu du';
 $string['submissionstatementdefault'] = 'Bidalketa hau nik egindako lana da, eta besteen ekarpenak baditu, egilearen aitorpena egin dut lanean bertan.';
+$string['submissionstatementrequired'] = 'Onespen hau onartu behar duzu bidalketa egin aurretik.';
 $string['submissionstatementteamsubmission'] = 'Taldekako bidalketa-adierazpena';
 $string['submissionstatementteamsubmission_help'] = 'Ikasle bakoitzak bere taldeko lana bidali ahal izateko onartu behar duen adierazpena.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Taldeko kide guztiek bidalketak egiten dituzteneko taldekako bidalketa-adierazpena';

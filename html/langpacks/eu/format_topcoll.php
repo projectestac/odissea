@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'eu', version '4.1'.
+ * Strings for component 'format_topcoll', language 'eu', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Gehitu atala';
 $string['arrow'] = 'Gezia';
 $string['bulb'] = 'Bonbilla';
 $string['cachedef_activitymodulecountcache'] = 'Emandako ikastaroko modulura sarbidea duen ikasle kopuruaren cachea gordetzen du.';
@@ -63,7 +62,6 @@ $string['coursesectionactivityfurtherinformationlesson'] = 'Erakutsi ikasgaien i
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Baimendu ikasgaien informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Erakutsi galdetegien informazioa';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Baimendu galdetegien informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['creatingsection'] = 'Atal berria sortzen';
 $string['ctreset'] = 'Gai Batuen berrabiarazte-aukerak';
 $string['ctreset_help'] = 'Berrabiarazi Gai Batuen berezko baloreak.';
 $string['currentsection'] = 'Atal hau';
@@ -144,9 +142,6 @@ $string['displayinstructions'] = 'Erakutsi argibideak';
 $string['displayinstructions_help'] = 'Argibideak erabiltzaileari erakutsi behar zaizkion zehazten du.';
 $string['donotshowdate'] = 'Ez erakutsi data';
 $string['donotshowdate_help'] = 'Ez erakutsi data astekako atalen egitura erabili eta \'Erabili berezko atal-izena\' desmarkatua izan denean.';
-$string['duplicate'] = 'Bikoiztu';
-$string['duplicateconfirm'] = 'Ziur zaude atala bikoiztu nahi duzula? Honek denbora bat eraman dezake bertako elementu kopuruaren arabera.';
-$string['duplicating'] = 'Bikoizten';
 $string['editsection'] = 'Editatu atala';
 $string['editsectionname'] = 'Editatu atalaren izena';
 $string['em0_0'] = '0.0em';
@@ -192,7 +187,6 @@ $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
 $string['enableadditionalmoddata'] = 'Gaitu informazio gehigarria';
 $string['enableadditionalmoddatadesc'] = 'Ezarpen hau jardueren informazioa gaitu ala desgaitzeko gune mailako etengailu bat da. Gaituta egon behar du honekin lotutako ikastaro mailako ezarpenek eragina izan dezaten. Funtzionalitate hau konputazionalki garestia izan daitekeenez, martxan dagoen gune batean gaitu aurretik proba sakonak egitea irmoki gomendatzen dugu. Oharra: ezarpen hau aldatzeak cachea ezabatzen du.';
-$string['errornosectioninfo'] = 'Adierazitako atalak ez dauka informaziorik';
 $string['eye'] = 'Begia';
 $string['feedbackavailable'] = 'Feedbacka eskuragarri';
 $string['folder'] = 'Karpeta';
@@ -233,12 +227,9 @@ $string['point'] = 'Puntua';
 $string['power'] = 'Indarra';
 $string['privacy:metadata:preference:toggle'] = 'Ikastaro bateko etengailuen egoera.';
 $string['privacy:request:preference:toggle'] = '"{$a->name}" IDa duen ikastaroak "{$a->value}" balioa dauka eta horrek etengailuen "{$a->decoded}" egoera esan nahi du.';
-$string['progresscounter'] = 'Jarduerak bikoizten ({$a->size}/{$a->current})';
-$string['progressfull'] = 'Atala bikoizten';
 $string['radio'] = 'Aukera-botoia';
 $string['readme_desc'] = 'Mesedez klik egin  \'{$a->url}\' Gai Batuen inguruko askoz informazio gehiago izateko.';
 $string['readme_title'] = 'Gai Batuak irakur-nazazu';
-$string['rebuildcoursecache'] = 'Berriz eraiki ikastaroko cachea';
 $string['resetactivitymeta'] = 'Modulu gehigarrien informazioa';
 $string['resetactivitymeta_help'] = 'Modulu gehigarrien informazioa guneko balio lehenetsietara berrabiarazten du.';
 $string['resetallactivitymeta'] = 'Modulu gehigarri guztien informazioa';

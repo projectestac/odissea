@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'fr', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'fr', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Enregistrement automatique';
-$string['pluginname'] = 'Enregistrement automatique Tiny';
+$string['pluginname'] = 'Enregistrement automatique';
 $string['privacy:metadata:database:tiny_autosave'] = 'Une table contenant les données de session d’auto-enregistrement pour l’éditeur TinyMCE';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = 'Le contenu de la session d’auto-enregistrement';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = 'L’horodatage de la modification de la session d’auto-enregistrement';

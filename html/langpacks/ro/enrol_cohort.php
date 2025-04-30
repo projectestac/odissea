@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ro', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'ro', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'Creează grup nou';
 $string['defaultgroupnametext'] = '{$a->name} cohortă {$a->increment}';
 $string['enrolcohortsynctask'] = 'Sarcina de sincronizare a înscrierii cohortei';
 $string['instanceexists'] = 'Cohorta este sincronizată deja cu poziția selectată';
+$string['plugindisabled'] = 'Plugin-ul pentru sincronizarea cohortelor este dezactivat';
 $string['pluginname'] = 'Sincronizarea cohortei';
 $string['pluginname_desc'] = 'Plugin-ul de înscriere a cohortei sincronizează membrii cohortei cu participanții la curs.';
 $string['privacy:metadata:core_group'] = 'Plugin-ul de înscriere a cohortei poate crea un grup nou sau poate utiliza un grup existent, pentru a adăuga toți membrii cohortei.';

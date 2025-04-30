@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'zh_cn', version '4.1'.
+ * Strings for component 'hub', language 'zh_cn', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = '名称';
 $string['coursepublished'] = '本课程已在“{$a}”上成功分享';
 $string['courseshortname'] = '简称';
 $string['courseshortname_help'] = '输入您课程的简称。它可以与其它课程重名。';
+$string['coursesnodates'] = '没有结束日期的课程数（{$a}）';
 $string['coursesnumber'] = '课程数（{$a}）';
+$string['dbtype'] = '数据库类型（{$a}）';
 $string['demourl'] = '演示网页地址';
 $string['demourl_help'] = '输入您课程的演示URL。缺省会填入您课程的URL。演示URL会在搜索结果中显示为链接。';
 $string['downloadable'] = '可下载';
@@ -96,6 +98,7 @@ $string['postaladdress'] = '通信地址';
 $string['postaladdress_help'] = '本站，或者代表本站的实体的通信地址。';
 $string['postsnumber'] = '帖子数（{$a}）';
 $string['previousregistrationdeleted'] = '已从{$a}删除早前的注册。您可以重新开始注册过程。谢谢。';
+$string['primaryauthtype'] = '主认证类型（{$a}）';
 $string['questionsnumber'] = '题目数（{$a}）';
 $string['registeredactiveuserdevices'] = '使用注册移动设备接收通知的活跃用户数 ({$a})';
 $string['registeredcourses'] = '已注册课程';
@@ -159,6 +162,7 @@ $string['siteregistrationupdated'] = '网站注册已更新';
 $string['siterelease'] = 'Moodle发行版';
 $string['siterelease_help'] = '本站使用的Moodle发行版本号。';
 $string['sitereleasenum'] = 'Moodle 发布 ({$a})';
+$string['sitetheme'] = '网站主题（{$a}）';
 $string['siteurl'] = '网站的网页地址';
 $string['siteurl_help'] = '本站的网址。如果允许其它人看到网站地址，那么会使用此URL。';
 $string['siteversion'] = 'Moodle版本';

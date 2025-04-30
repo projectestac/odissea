@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "evaluer",
 		
-		"home_getting_started_welcome_header_text": "Introduktion til WirisQuizzes 4.8.0: Nu med håndskrevne grafsvar",
+		"home_getting_started_welcome_header_text": "Introduktion til WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Vi er glade for at introducere en ny svartype, der giver dine elever mulighed for at svare ved at skrive en graf i hånden. For at lære mere om denne funktion henvises der til vores produktbemærkninger og dokumentation. Vi håber, at du og dine elever nyder denne nye tilføjelse til WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Udgivelsesbemærkninger",
         "home_getting_give_us_feedback_button_text": "Giv os din feedback",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Automatiseret studievejledning",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Du har aktiveret den automatiske feedback for dette spørgsmål.",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Angiv venligst typen af opgave, du vil oprette, og specificér de nødvendige felter. Feedback vil automatisk blive genereret af vores system. Du kan teste, hvordan dine studerende vil se feedbacken.",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Flere oplysninger",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Luk panel",
+		"quizzes_studio_math_multistep_define_task_title" : "Definer opgaven",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Link til dokumentation",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Opgavetype",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Enkelt variabel ligning ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Grundlæggende operationer ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Vælg feltet fra rullemenuen. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Opgave at løse ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Skriv ikke det rigtige svar her, kun ligningen der skal løses. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Tilfældige variabler ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Ligningsvariabel ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Variabelnavn ",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Angiv den enkelte variabel for den ligning, der skal løses.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Forkert",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Næsten færdig",
+		"quizzes_studio_multistep_correct_feedback_label": "Korrekt",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Indsend dine trin for at se den automatiserede studievejledning",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Du er på rette vej. Fortsæt!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Du har svaret rigtigt på dette spørgsmål.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Løs ligningen.",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Udfør operationerne",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Test",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Ryd",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Tilladte multiplikationssymboler",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Implicit multiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Det accepterer traditionelt multiplikation af elementer, der skrives i rækkefølge. Eksempel: 2y fortolkes som 2 gange y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Punktmultiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Elementer, der anvendes med prik eller asterisk, angiver multiplikation. Eksempel: 2 · y tolkes som 2 gange y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Krydsmultiplikation",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Elementer, der anvendes med kryds, angiver multiplikation. Eksempel: 2 × y fortolkes som 2 gange y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Opgave, der skal løses, mangler",
+		"quizzes_studio_math_multistep_equation_variable_error": "Variabelnavn mangler ",
+
+		"quizzes_studio_multistep_error_session_start_title": "Fejl",
+		"quizzes_studio_multistep_error_session_start_message": "Noget gik galt, da du forsøgte at indlæse din opgave. Prøv igen, eller gå tilbage for at sikre dig, at opgaven er korrekt defineret.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Prøv igen",
+		"quizzes_studio_multistep_error_session_start_go_back": "Gå tilbage",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Kontakt os",
+
+		"syntax_math_multistep": "Matematik med automatiseret studievejledning"
 	}
 }
 

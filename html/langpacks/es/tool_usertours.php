@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'es', version '4.1'.
+ * Strings for component 'tool_usertours', language 'es', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -131,7 +131,6 @@ $string['placement_help'] = 'Un paso puede colocarse, ya sea arriba, debajo, a l
 
 Si el paso no cupiera en una página particular en el sitio especificado, será colocado automáticamente en otra parte.';
 $string['pluginname'] = 'Tours para usuarios';
-$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'La hora en la que un usuario completó por vez última un tour para usuario.';
 $string['privacy:metadata:preference:requested'] = 'La hora en la que un usuario solicitó manualmente por última vez un tour para usuario.';
 $string['privacy:request:preference:completed'] = 'Marcó por última vez el tour para usuario "{$a->name}" como completado en {$a->time}';
@@ -146,6 +145,9 @@ $string['selector_defaulttitle'] = 'Introduce un título descriptivo';
 $string['selectordisplayname'] = 'Un selector CSS conteniendo \'{$a}\'';
 $string['selecttype'] = 'Seleccionar tipo de paso';
 $string['sharedtourslink'] = 'Repositorio de tours';
+$string['showtoureachtime'] = 'cada vez que coincida con un filtro';
+$string['showtouruntilcomplete'] = 'hasta que se haya cerrado';
+$string['showtourwhen'] = 'Mostrar tour';
 $string['skip'] = 'Omitir';
 $string['skip_tour'] = 'Salir del tour';
 $string['target'] = 'Objetivo';
@@ -245,12 +247,20 @@ $string['tour_activityinfo_course_teacher_content'] = 'Las nuevas configuracione
 $string['tour_activityinfo_course_teacher_title'] = 'Nuevo: información de la actividad';
 $string['tour_final_step_content'] = 'Este es el final del recorrido. No se mostrará de nuevo a menos que lo restablezca utilizando el enlace en el pie de página.';
 $string['tour_final_step_title'] = 'Fin del tour';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordenar preguntas y elegir cuáles mostrar. En modo Edición, use este atajo para acceder a tareas frecuentes relacionadas con ver y editar ítems de calificación.';
+$string['tour_gradebook_action_title'] = 'Enlaces rápidos a acciones';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtrar estudiantes por las iniciales de su nombre o apellido.';
+$string['tour_gradebook_filter_title'] = 'Filtrar por nombre';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Use la caja de búsqueda para encontrar rápidamente estudiantes específicos.';
+$string['tour_gradebook_search_title'] = 'Encontrar estudiantes fácilmente';
+$string['tour_gradebook_tour_description'] = 'Búsqueda y características de navegación en el informe del calificador del libro';
+$string['tour_gradebook_tour_name'] = 'Informe del calificador del libro';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publique noticias importantes aquí.';
 $string['tour_navigation_course_announcements_teacher_title'] = '¿Algo que decir a todos?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Añadir nuevo contenido o editar el existente.';
 $string['tour_navigation_course_edit_teacher_title'] = 'Activar modo de edición';
 $string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Navega a través de las actividades y realiza un seguimiento de tu progreso.';
-$string['tour_navigation_course_index_student_title'] = 'Encontrar su camino alrededor';
+$string['tour_navigation_course_index_student_title'] = 'Navega por el contenido del curso';
 $string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Arrastra y suelta actividades para reordenar el contenido del curso.';
 $string['tour_navigation_course_index_teacher_title'] = 'Índice del curso';
 $string['tour_navigation_course_student_tour_des'] = 'Dónde navegar por las actividades de un curso';

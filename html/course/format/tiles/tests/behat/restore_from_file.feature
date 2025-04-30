@@ -5,11 +5,13 @@ Feature: Backup and restore of fixture mbz files including images
     Given the following "courses" exist:
       | fullname | shortname | category | format |
       | Course 1 | C1        | 0        | tiles  |
+    And the following config values are set as admin:
+      | enableasyncbackup | 0 |
 
   @javascript @_file_upload
   Scenario: Restore the Moodle 311 mbz file
     Given I am on the "Course 1" "restore" page logged in as "admin"
-    And I press "Manage backup files"
+    And I press "Manage course backups"
     And I upload "course/format/tiles/tests/fixtures/mbz/moodle-311-sample.mbz" file to "Files" filemanager
     And I press "Save changes"
     And I restore "moodle-311-sample.mbz" backup into a new course using this options:
@@ -37,7 +39,7 @@ Feature: Backup and restore of fixture mbz files including images
   @javascript @_file_upload
   Scenario: Restore the Moodle 43 early beta mbz file
     Given I am on the "Course 1" "restore" page logged in as "admin"
-    And I press "Manage backup files"
+    And I press "Manage course backups"
     And I upload "course/format/tiles/tests/fixtures/mbz/moodle-43-early-beta.mbz" file to "Files" filemanager
     And I press "Save changes"
     And I restore "moodle-43-early-beta.mbz" backup into a new course using this options:
@@ -65,7 +67,7 @@ Feature: Backup and restore of fixture mbz files including images
   @javascript @_file_upload
   Scenario: Restore the Moodle 43 late beta mbz file
     Given I am on the "Course 1" "restore" page logged in as "admin"
-    And I press "Manage backup files"
+    And I press "Manage course backups"
     And I upload "course/format/tiles/tests/fixtures/mbz/moodle-43-late-beta.mbz" file to "Files" filemanager
     And I press "Save changes"
     And I restore "moodle-43-late-beta.mbz" backup into a new course using this options:
@@ -99,7 +101,7 @@ Feature: Backup and restore of fixture mbz files including images
   @javascript @_file_upload
   Scenario: Restore the Moodle 42 pre 2024 mbz file
     Given I am on the "Course 1" "restore" page logged in as "admin"
-    And I press "Manage backup files"
+    And I press "Manage course backups"
     And I upload "course/format/tiles/tests/fixtures/mbz/moodle-42-pre-2024.mbz" file to "Files" filemanager
     And I press "Save changes"
     And I restore "moodle-42-pre-2024.mbz" backup into a new course using this options:

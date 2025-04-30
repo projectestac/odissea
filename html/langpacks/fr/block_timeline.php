@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'fr', version '4.1'.
+ * Strings for component 'block_timeline', language 'fr', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'Tout';
 $string['ariadayfilter'] = 'Filtrer la chronologie par date';
 $string['ariadayfilteroption'] = 'Option de filtre {$a}';
 $string['ariaeventlistitem'] = 'L’activité {$a->name} dans {$a->course} doit être effectuée le {$a->date}';
-$string['ariaeventlistpagelimit'] = 'Afficher {$a} activités par page';
-$string['ariaeventlistpaginationnavcourses'] = 'Pagination de la chronologie des activités du cours {$a}';
-$string['ariaeventlistpaginationnavdates'] = 'Pagination de la Filtrer les éléments de la chronologie des activités';
 $string['ariaviewselector'] = 'Trier les éléments de la Filtrer les éléments de la chronologie';
 $string['ariaviewselectoroption'] = 'Option de tri {$a}';
 $string['duedate'] = 'Date limite';

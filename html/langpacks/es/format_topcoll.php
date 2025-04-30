@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'es', version '4.1'.
+ * Strings for component 'format_topcoll', language 'es', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Añadir sección';
 $string['arrow'] = 'Flecha';
 $string['bulb'] = 'Bombilla';
 $string['cachedef_activitymodulecountcache'] = 'Cachéa el número de estudiantes que pueden acceder a un módulo dado en un curso.';
@@ -60,7 +59,6 @@ $string['coursesectionactivityfurtherinformationlesson'] = 'Mostrar información
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Muestra información de la lección, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Mostrar información de la prueba';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Muestra información de la prueba, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
-$string['creatingsection'] = 'Creando nueva sección';
 $string['ctreset'] = 'Resetear opciones de Collapsed Topics';
 $string['ctreset_help'] = 'Establecer valorespor defecto a Collapsed Topics.';
 $string['currentsection'] = 'Esta sección';
@@ -138,9 +136,6 @@ $string['displayinstructions'] = 'Mostrar instrucciones';
 $string['displayinstructions_help'] = 'Establece si las instrucciones se deben mostrar al usuario o no.';
 $string['donotshowdate'] = 'No mostrar la fecha';
 $string['donotshowdate_help'] = 'No mostrar la fecha cuando se utiliza una estructura semanal y la opción \'Usar el nombre de sección predeterminada\' ha sido desmarcada.';
-$string['duplicate'] = 'Duplicar';
-$string['duplicateconfirm'] = '¿Está seguro de que desea duplicar la sección actual? Esto puede llevar un tiempo dependiendo de la cantidad de recursos.';
-$string['duplicating'] = 'Duplicando';
 $string['editsection'] = 'Editar sección';
 $string['editsectionname'] = 'Editar nombre de sección';
 $string['em0_0'] = '0.0em';
@@ -185,7 +180,6 @@ $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
 $string['enableadditionalmoddata'] = 'Habilitar información adicional';
-$string['errornosectioninfo'] = 'El tema indicado no tiene información';
 $string['eye'] = 'Ojo';
 $string['feedbackavailable'] = 'Comentarios disponibles';
 $string['folder'] = 'Carpeta';
@@ -226,12 +220,9 @@ $string['point'] = 'Punto';
 $string['power'] = 'Polaridad';
 $string['privacy:metadata:preference:toggle'] = 'El estado de los conmutadores en un curso.';
 $string['privacy:request:preference:toggle'] = 'La id del curso "{$a->name}" tiene el valor "{$a->value}" que representa "{$a->decoded}" para el estado de los conmutadores.';
-$string['progresscounter'] = 'Duplicando actividades ({$a->current}/{$a->size})';
-$string['progressfull'] = 'Duplicando tema';
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Por favor haga clic en \'{$a->url}\' para mucha más información sobre Temas Colapsados.';
 $string['readme_title'] = 'Léeme de Temas Colapsados';
-$string['rebuildcoursecache'] = 'Reconstruir la caché del curso';
 $string['resetactivitymeta'] = 'Información adicional del módulo';
 $string['resetactivitymeta_help'] = 'Reinicia toda la información adicional del módulo para que siga el valor predeterminado del sitio.';
 $string['resetallactivitymeta'] = 'Toda la información adicional del módulo';

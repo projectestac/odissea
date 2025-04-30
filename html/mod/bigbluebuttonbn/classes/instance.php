@@ -20,6 +20,7 @@ use cm_info;
 use context;
 use context_course;
 use context_module;
+use core\dml\table;
 use mod_bigbluebuttonbn\local\config;
 use mod_bigbluebuttonbn\local\helpers\files;
 use mod_bigbluebuttonbn\local\helpers\roles;
@@ -63,16 +64,22 @@ class instance {
     /** @var int The current groupid if set */
     protected $groupid;
 
+    /** @var int The course module id. */
+    protected $cmid;
+
     /**
-     * instance constructor.
+     * Instance constructor.
      *
-     * @param cm_info $cm
+     * Never called directly. Use self::get_from_instanceid or self::get_from_cmid.
+     *
+     * @param int $cmid
      * @param stdClass $course
      * @param stdClass $instancedata
      * @param int|null $groupid
      */
-    public function __construct(cm_info $cm, stdClass $course, stdClass $instancedata, ?int $groupid = null) {
-        $this->cm = $cm;
+    private function __construct(int $cmid, stdClass $course, stdClass $instancedata, ?int $groupid = null) {
+        $this->cmid = $cmid;
+        $this->cm = null; // This is not retrieved later, whenever we call ::get_cm() it will be retrieved.
         $this->course = $course;
         $this->instancedata = $instancedata;
         $this->groupid = $groupid;
@@ -87,7 +94,7 @@ class instance {
      */
     public static function get_group_instance_from_instance(self $originalinstance, int $groupid): ?self {
         return new self(
-            $originalinstance->get_cm(),
+            $originalinstance->get_cm_id(),
             $originalinstance->get_course(),
             $originalinstance->get_instance_data(),
             $groupid
@@ -101,42 +108,7 @@ class instance {
      * @return null|self
      */
     public static function get_from_instanceid(int $instanceid): ?self {
-        global $DB;
-
-        $coursetable = new \core\dml\table('course', 'c', 'c');
-        $courseselect = $coursetable->get_field_select();
-        $coursefrom = $coursetable->get_from_sql();
-
-        $cmtable = new \core\dml\table('course_modules', 'cm', 'cm');
-        $cmfrom = $cmtable->get_from_sql();
-
-        $bbbtable = new \core\dml\table('bigbluebuttonbn', 'bbb', 'b');
-        $bbbselect = $bbbtable->get_field_select();
-        $bbbfrom = $bbbtable->get_from_sql();
-
-        $sql = <<<EOF
-    SELECT {$courseselect}, {$bbbselect}
-      FROM {$cmfrom}
-INNER JOIN {$coursefrom} ON c.id = cm.course
-INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
-INNER JOIN {$bbbfrom} ON cm.instance = bbb.id
-     WHERE bbb.id = :instanceid
-EOF;
-
-        $result = $DB->get_record_sql($sql, [
-            'modname' => 'bigbluebuttonbn',
-            'instanceid' => $instanceid,
-        ]);
-
-        if (empty($result)) {
-            return null;
-        }
-
-        $course = $coursetable->extract_from_result($result);
-        $instancedata = $bbbtable->extract_from_result($result);
-        $cm = get_fast_modinfo($course)->instances['bigbluebuttonbn'][$instancedata->id];
-
-        return new self($cm, $course, $instancedata);
+        return self::get_instance_info_retriever($instanceid, self::IDTYPE_INSTANCEID);
     }
 
     /**
@@ -146,32 +118,79 @@ EOF;
      * @return null|self
      */
     public static function get_from_cmid(int $cmid): ?self {
+        return self::get_instance_info_retriever($cmid, self::IDTYPE_CMID);
+    }
+
+    /**
+     * Get the instance information from a cmid.
+     */
+    const IDTYPE_CMID = 0;
+    /**
+     * Get the instance information from an id.
+     */
+    const IDTYPE_INSTANCEID = 1;
+
+    /**
+     * Helper to get the instance information from an id.
+     *
+     * Used by self::get_from_id and self::get_cmid.
+     *
+     * @param int $id The id to look for.
+     * @param int $idtype self::IDTYPE_CMID or self::IDTYPE_INSTANCEID
+     * @return null|self
+     * @throws \moodle_exception
+     */
+    private static function get_instance_info_retriever(int $id, int $idtype = self::IDTYPE_INSTANCEID): ?self {
         global $DB;
 
-        $coursetable = new \core\dml\table('course', 'c', 'c');
-        $courseselect = $coursetable->get_field_select();
-        $coursefrom = $coursetable->get_from_sql();
+        if (!in_array($idtype, [self::IDTYPE_CMID, self::IDTYPE_INSTANCEID])) {
+            throw new \moodle_exception('Invalid idtype');
+        }
 
-        $cmtable = new \core\dml\table('course_modules', 'cm', 'cm');
-        $cmfrom = $cmtable->get_from_sql();
+        [
+            'coursetable' => $coursetable,
+            'courseselect' => $courseselect,
+            'coursefrom' => $coursefrom,
+            'cmfrom' => $cmfrom,
+            'cmselect' => $cmselect,
+            'bbbtable' => $bbbtable,
+            'bbbselect' => $bbbselect,
+            'bbbfrom' => $bbbfrom,
+            'subplugintables' => $subplugintables,
+            'subpluginselects' => $subpluginselects,
+            'subpluginfroms' => $subpluginfroms
+        ] = self::get_tables_info();
 
-        $bbbtable = new \core\dml\table('bigbluebuttonbn', 'bbb', 'b');
-        $bbbselect = $bbbtable->get_field_select();
-        $bbbfrom = $bbbtable->get_from_sql();
-
-        $sql = <<<EOF
-    SELECT {$courseselect}, {$bbbselect}
-      FROM {$cmfrom}
-INNER JOIN {$coursefrom} ON c.id = cm.course
-INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
-INNER JOIN {$bbbfrom} ON cm.instance = bbb.id
-     WHERE cm.id = :cmid
-EOF;
-
-        $result = $DB->get_record_sql($sql, [
+        $select = implode(', ', array_merge([$courseselect, $bbbselect, $cmselect], $subpluginselects));
+        $subpluginsleftjoins = '';
+        foreach ($subpluginfroms as $tablealias => $subpluginfrom) {
+            $subpluginsleftjoins .= "LEFT JOIN {$subpluginfrom} ON bbb.id = {$tablealias}.bigbluebuttonbnid\n";
+        }
+        $params = [
             'modname' => 'bigbluebuttonbn',
-            'cmid' => $cmid,
-        ]);
+            'bbbid' => $id,
+        ];
+        $where = 'bbb.id = :bbbid';
+        $from = <<<EOF
+                {$bbbfrom}
+                INNER JOIN {$cmfrom} ON cm.instance = bbb.id
+                INNER JOIN {$coursefrom} ON c.id = cm.course
+                INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
+EOF;
+        if ($idtype == self::IDTYPE_CMID) {
+            $params['cmid'] = $id;
+            $where = 'cm.id = :cmid';
+            $from = <<<EOF
+                {$cmfrom}
+                INNER JOIN {$coursefrom} ON c.id = cm.course
+                INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
+                INNER JOIN {$bbbfrom} ON cm.instance = bbb.id
+EOF;
+        }
+
+        $sql = "SELECT {$select} FROM {$from} {$subpluginsleftjoins} WHERE {$where}";
+
+        $result = $DB->get_record_sql($sql, $params);
 
         if (empty($result)) {
             return null;
@@ -179,9 +198,13 @@ EOF;
 
         $course = $coursetable->extract_from_result($result);
         $instancedata = $bbbtable->extract_from_result($result);
-        $cm = get_fast_modinfo($course)->get_cm($cmid);
-
-        return new self($cm, $course, $instancedata);
+        self::extract_plugin_table_info($instancedata, $result, $subplugintables);
+        if ($idtype == self::IDTYPE_INSTANCEID) {
+            $cmid = $result->cmid;
+        } else {
+            $cmid = $id;
+        }
+        return new self($cmid, $course, $instancedata);
     }
 
     /**
@@ -193,10 +216,20 @@ EOF;
      * @return null|self
      */
     public static function get_from_meetingid(string $meetingid): ?self {
+        global $DB;
+        // Here we try to manage cases where the meetingid was actually produced by the old plugin or we have actually
+        // changed the identifiers for the instance.
         $matches = self::parse_meetingid($meetingid);
+        $existinginstanceid = $DB->get_field('bigbluebuttonbn', 'id', ['meetingid' => $matches['meetingid']]);
+        if (empty($existinginstanceid)) {
+            debugging("The meeting id with ID ($meetingid) was not found in the bigbluebuttonbn table", DEBUG_DEVELOPER);
+            $existinginstanceid = $matches['instanceid']; // We try to "guess" the meeting id from its instance id. We should
+            // not really do that as this changes simply if we move the course elsewhere.
+            debugging("Trying to get the instanceid from the meeting ID. This will soon be deprecated", DEBUG_DEVELOPER);
+        }
+        $instance = self::get_from_instanceid($existinginstanceid);
 
-        $instance = self::get_from_instanceid($matches['instanceid']);
-
+        // Check for the group if any.
         if ($instance && array_key_exists('groupid', $matches)) {
             $instance->set_group_id($matches['groupid']);
         }
@@ -233,24 +266,31 @@ EOF;
      */
     public static function get_all_instances_in_course(int $courseid): array {
         global $DB;
+        [
+            'coursetable' => $coursetable,
+            'courseselect' => $courseselect,
+            'coursefrom' => $coursefrom,
+            'cmfrom' => $cmfrom,
+            'bbbtable' => $bbbtable,
+            'bbbselect' => $bbbselect,
+            'bbbfrom' => $bbbfrom,
+            'subplugintables' => $subplugintables,
+            'subpluginselects' => $subpluginselects,
+            'subpluginfroms' => $subpluginfroms
+        ] = self::get_tables_info();
 
-        $coursetable = new \core\dml\table('course', 'c', 'c');
-        $courseselect = $coursetable->get_field_select();
-        $coursefrom = $coursetable->get_from_sql();
-
-        $cmtable = new \core\dml\table('course_modules', 'cm', 'cm');
-        $cmfrom = $cmtable->get_from_sql();
-
-        $bbbtable = new \core\dml\table('bigbluebuttonbn', 'bbb', 'b');
-        $bbbselect = $bbbtable->get_field_select();
-        $bbbfrom = $bbbtable->get_from_sql();
-
+        $selects = implode(', ', array_merge([$courseselect, $bbbselect], $subpluginselects));
+        $subpluginsleftjoins = '';
+        foreach ($subpluginfroms as $tablealias => $subpluginfrom) {
+            $subpluginsleftjoins .= "LEFT JOIN {$subpluginfrom} ON bbb.id = {$tablealias}.bigbluebuttonbnid\n";
+        }
         $sql = <<<EOF
-    SELECT cm.id as cmid, {$courseselect}, {$bbbselect}
+    SELECT cm.id as cmid, {$selects}
       FROM {$cmfrom}
 INNER JOIN {$coursefrom} ON c.id = cm.course
 INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
 INNER JOIN {$bbbfrom} ON cm.instance = bbb.id
+{$subpluginsleftjoins}
      WHERE cm.course = :courseid
 EOF;
 
@@ -263,11 +303,65 @@ EOF;
         foreach ($results as $result) {
             $course = $coursetable->extract_from_result($result);
             $instancedata = $bbbtable->extract_from_result($result);
-            $cm = get_fast_modinfo($course)->get_cm($result->cmid);
-            $instances[$cm->id] = new self($cm, $course, $instancedata);
+            self::extract_plugin_table_info($instancedata, $result, $subplugintables);
+            $instances[$result->cmid] = new self($result->cmid, $course, $instancedata);
         }
 
         return $instances;
+    }
+
+    /**
+     * Helper method to extract result from subplugin tables.
+     * @param object $instancedata instance data
+     * @param object $result result from sql query
+     * @param array $subplugintables array of subplugin tables
+     */
+    private static function extract_plugin_table_info(object &$instancedata, object $result, array $subplugintables) {
+        foreach ($subplugintables as $subplugintable) {
+            $subplugindata = (array) $subplugintable->extract_from_result($result);
+            if (isset($subplugindata['id'])) {
+                unset($subplugindata['id']); // Make sure that from the subplugin we don't conflict with the bigbluebutton id.
+            }
+            $instancedata = (object) array_merge($subplugindata, (array) $instancedata);
+        }
+    }
+
+    /**
+     * Get the additional tables returned from the subplugin.
+     *
+     * @return array
+     */
+    private static function get_tables_info(): array {
+        $coursetable = new table('course', 'c', 'c');
+        $courseselect = $coursetable->get_field_select();
+        $coursefrom = $coursetable->get_from_sql();
+
+        $cmtable = new table('course_modules', 'cm', 'cm');
+        $cmselect = $cmtable->get_field_select();
+        $cmfrom = $cmtable->get_from_sql();
+
+        $bbbtable = new table('bigbluebuttonbn', 'bbb', 'b');
+        $bbbselect = $bbbtable->get_field_select();
+        $bbbfrom = $bbbtable->get_from_sql();
+
+        // Look now for additional tables returned from the subplugin.
+        $subpluginselects = [];
+        $subpluginfroms = [];
+        $subplugintables = [];
+        $subplugintablesnames = extension::get_join_tables();
+        foreach ($subplugintablesnames as $index => $subplugintablename) {
+            $tablealias = 'ext'.$index;
+            $subplugintable = new table($subplugintablename, $tablealias, 'ext'.$index);
+            $subpluginselects[$tablealias] = $subplugintable->get_field_select();
+            $subpluginfroms[$tablealias] = $subplugintable->get_from_sql();
+            $subplugintables[$tablealias] = $subplugintable;
+        }
+        return compact(
+            'coursetable', 'courseselect', 'coursefrom',
+            'cmtable', 'cmselect', 'cmfrom',
+            'bbbtable', 'bbbselect', 'bbbfrom',
+            'subplugintables', 'subpluginselects', 'subpluginfroms',
+        );
     }
 
     /**
@@ -341,6 +435,12 @@ EOF;
      * @return cm_info
      */
     public function get_cm(): cm_info {
+        if ($this->cm === null) {
+            // We do a sort of late binding here as if we call get_cm on a disabled module or in a call stack where
+            // get_cm was already called, we will get an exception or infinite loop.
+            $modinfo = get_fast_modinfo($this->course);
+            $this->cm = $modinfo->get_cm($this->cmid);
+        }
         return $this->cm;
     }
 
@@ -350,7 +450,7 @@ EOF;
      * @return int
      */
     public function get_cm_id(): int {
-        return $this->get_cm()->id;
+        return $this->cmid;
     }
 
     /**
@@ -1021,7 +1121,7 @@ EOF;
      */
     public function get_view_url(): moodle_url {
         return new moodle_url('/mod/bigbluebuttonbn/view.php', [
-            'id' => $this->cm->id,
+            'id' => $this->get_cm()->id,
         ]);
     }
 
@@ -1033,8 +1133,8 @@ EOF;
     public function get_logout_url(): moodle_url {
         return new moodle_url('/mod/bigbluebuttonbn/bbb_view.php', [
             'action' => 'logout',
-            'id' => $this->cm->id,
-            'courseid' => $this->cm->course // Used to find the course if ever the activity is deleted
+            'id' => $this->get_cm()->id,
+            'courseid' => $this->get_cm()->course // Used to find the course if ever the activity is deleted
             // while the meeting is running.
         ]);
     }
@@ -1071,7 +1171,7 @@ EOF;
     public function get_join_url(): moodle_url {
         return new moodle_url('/mod/bigbluebuttonbn/bbb_view.php', [
             'action' => 'join',
-            'id' => $this->cm->id,
+            'id' => $this->get_cm()->id,
             'bn' => $this->instancedata->id,
         ]);
     }
@@ -1207,7 +1307,7 @@ EOF;
      *
      * @return string
      */
-    public function get_guest_access_password() : string {
+    public function get_guest_access_password(): string {
         $guestpassword = $this->get_instance_var('guestpassword');
         if (empty($guestpassword)) {
             $this->generate_guest_credentials();
@@ -1221,10 +1321,21 @@ EOF;
      *
      * @return void
      */
-    private function generate_guest_credentials():void {
+    private function generate_guest_credentials(): void {
         global $DB;
         [$this->instancedata->guestlinkuid, $this->instancedata->guestpassword] =
             \mod_bigbluebuttonbn\plugin::generate_guest_meeting_credentials();
         $DB->update_record('bigbluebuttonbn', $this->instancedata);
+    }
+
+    /**
+     * Is this meeting configured to display avatars of the users ?
+     *
+     * Note: this is for now a global setting.
+     *
+     * @return bool
+     */
+    public function is_profile_picture_enabled(): bool {
+        return (bool) config::get('profile_picture_enabled');
     }
 }

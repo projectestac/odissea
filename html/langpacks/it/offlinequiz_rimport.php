@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'it', version '4.1'.
+ * Strings for component 'offlinequiz_rimport', language 'it', version '4.4'.
  *
  * @package     offlinequiz_rimport
  * @category    string

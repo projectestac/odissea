@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'gl', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'gl', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,7 +33,8 @@ $string['creategroup'] = 'Crear un grupo novo';
 $string['defaultgroupnametext'] = '{$a->name} círculo {$a->increment}';
 $string['enrolcohortsynctask'] = 'Tarefa de sincronización de círculo';
 $string['instanceexists'] = 'O círculo xa está sincronizado co rol seleccionado';
+$string['plugindisabled'] = 'O complemento de sincronización de círculos está desactivado';
 $string['pluginname'] = 'Sincronizar círculo';
 $string['pluginname_desc'] = 'O engadido de matrícula círculo sincroniza os membros do círculo cos participantes no curso.';
-$string['privacy:metadata:core_group'] = 'O engadido de matriculación de círculo pode crear un novo grupo ou usar un grupo existente para engadir todos os membros do círculo.';
+$string['privacy:metadata:core_group'] = 'O complemento de matriculación de círculo pode crear un novo grupo ou usar un grupo existente para engadir todos os membros do círculo.';
 $string['status'] = 'Activo';

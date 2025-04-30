@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ar', version '4.1'.
+ * Strings for component 'user', language 'ar', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'إضافة شرط@';
-$string['adverbfor_and'] = 'و@';
-$string['adverbfor_andnot'] = 'و@';
-$string['adverbfor_or'] = 'أو@';
-$string['applyfilters'] = 'تطبيق المرشحات@';
-$string['clearfilterrow'] = 'إزالة صف المرشح@';
-$string['clearfilters'] = 'إخلاء المرشحات@';
+$string['addcondition'] = 'إضافة شرط';
+$string['adverbfor_and'] = 'و';
+$string['adverbfor_andnot'] = 'و';
+$string['adverbfor_or'] = 'أو';
+$string['applyfilters'] = 'تطبيق المرشحات';
+$string['clearfilterrow'] = 'إزالة صف المرشح';
+$string['clearfilters'] = 'إخلاء المرشحات';
 $string['clearfilterselection'] = 'إزالة "{$a}" من المرشح';
 $string['countparticipantsfound'] = 'تم العثور على {$a} من المشتركين';
 $string['filterbykeyword'] = 'كلمة مفتاحية';
-$string['filterrowlegend'] = 'ترشيح {$a}@';
-$string['filtersetmatchdescription'] = 'كيفية الربط ما بين عدة مرشحات@';
-$string['filtertype'] = 'نوع المرشح@';
-$string['match'] = 'مطابق@';
-$string['matchofthefollowing'] = 'من الآتي:@';
+$string['filterrowlegend'] = 'ترشيح {$a}';
+$string['filtersetmatchdescription'] = 'كيفية الربط ما بين عدة مرشحات';
+$string['filtertype'] = 'نوع المرشح';
+$string['match'] = 'مطابق';
+$string['matchofthefollowing'] = 'من الآتي:';
 $string['moodlenetprofile'] = 'مُعرَّف الملف الشخصي لشبكة مودل';
 $string['moodlenetprofile_help'] = 'مُعرَّف حسابك في شبكة مودل يربط ملفك الشخصي في شبكة مودل بهذا الموقع.';
 $string['placeholdertype'] = 'إطبع...';
-$string['placeholdertypeorselect'] = 'إطبع أو إختر...@';
+$string['placeholdertypeorselect'] = 'إطبع أو إختر...';
 $string['privacy:courserequestpath'] = 'المقررات الدراسية المطلوبة';
 $string['privacy:descriptionpath'] = 'وصف الملف الشخصي';
 $string['privacy:devicespath'] = 'أجهزة المستخدم';
@@ -149,7 +149,7 @@ $string['privacy:passwordresetpath'] = 'إعادة تعيينات كلمة ال�
 $string['privacy:privatefilespath'] = 'الملفات الخاصة';
 $string['privacy:profileimagespath'] = 'صور الملف الشخصي';
 $string['privacy:sessionpath'] = 'بيانات الجلسة';
-$string['selectfiltertype'] = 'إختر@';
+$string['selectfiltertype'] = 'إختر';
 $string['supportmessagealternative'] = 'بدلاً من ذلك بإمكانك مراسلة {$a}.';
 $string['supportmessagenotsent'] = 'للأسف تعذر إرسال رسالتك.';
 $string['supportmessagesent'] = 'رسالتك قد أُرسلت.';
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'كن حذرًا مع هذه ا�
 $string['target:upcomingactivitiesdue'] = 'استحقاقات النشاطات القادمة';
 $string['target:upcomingactivitiesdue_help'] = 'هذا المقصد يقوم بتوليد رسائل تذكير بمواعيد استحقاق النشاطات القادمة.';
 $string['target:upcomingactivitiesdueinfo'] = 'كل رؤى مواعيد استحقاق النشاطات القادمة مدرجة هنا. هؤلاء الطلبة قد تلقوا تلك الرؤى مباشرة.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'الملف الشخصي للمستخدم';

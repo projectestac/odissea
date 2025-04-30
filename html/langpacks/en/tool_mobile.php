@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'en', version '4.1'.
+ * Strings for component 'tool_mobile', language 'en', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Auto-login key generation is blocked
 $string['autologinmintimebetweenreq'] = 'Minimum time between auto-login requests';
 $string['autologinmintimebetweenreq_desc'] = 'The minimum time between auto-login requests from the mobile app. If app users are frequently asked to enter their credentials when viewing content embedded from the site, then set a lower value.';
 $string['autologinnotallowedtoadmins'] = 'Auto-login is not allowed for site admins.';
+$string['autologout'] = 'Enforce auto logout for your users';
+$string['autologout_desc'] = 'For security reasons, you can enforce automatic logout for your users when they leave or close the app, or it goes to background. Users will have to log in again when they return to the app.';
+$string['autologoutcustom'] = 'Custom time after users leave or close the app';
+$string['autologoutinmediate'] = 'Immediately after users leave or close the app';
+$string['autologouttime'] = 'Auto logout timer';
 $string['cachedef_plugininfo'] = 'This stores the list of plugins with mobile addons';
 $string['cachedef_subscriptiondata'] = 'This stores the Moodle app subscription information.';
 $string['clickheretolaunchtheapp'] = 'Click here if the app does not open automatically.';
@@ -96,7 +101,6 @@ $string['managefiletypes'] = 'Manage file types';
 $string['minimumversion'] = 'If an app version is specified (3.8.0 or higher), any users using an older app version will be prompted to upgrade their app before being allowed access to the site.';
 $string['minimumversion_key'] = 'Minimum app version required';
 $string['mobileapp'] = 'Mobile app';
-$string['mobileappconnected'] = 'Mobile app connected';
 $string['mobileappearance'] = 'Mobile appearance';
 $string['mobileappenabled'] = 'This site has mobile app access enabled.<br /><a href="{$a}">Download the mobile app</a>.';
 $string['mobileappsubscription'] = 'Moodle app subscription';
@@ -117,7 +121,6 @@ $string['notificationsseemore'] = 'Note: Moodle app usage statistics are not cal
 $string['notificationssentnotifications'] = 'Notifications sent';
 $string['oauth2identityproviders'] = 'OAuth 2 identity providers';
 $string['offlineuse'] = 'Offline use';
-$string['openusingembeddedbrowser'] = 'Open using embedded browser';
 $string['pluginname'] = 'Moodle app tools';
 $string['pluginnotenabledorconfigured'] = 'Plugin not enabled or configured.';
 $string['privacy:metadata:core_userkey'] = 'User\'s keys used to create auto-login key for the current user.';

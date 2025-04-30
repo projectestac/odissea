@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'nl', version '4.1'.
+ * Strings for component 'block_myprofile', language 'nl', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,24 +27,19 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Toon instellingen voor de plaats voor inhoud';
 $string['display_address'] = 'Toon adres';
-$string['display_aim'] = 'Toon AIM';
 $string['display_city'] = 'Toon gemeente';
 $string['display_country'] = 'Toon land';
 $string['display_currentlogin'] = 'Toon huidige login';
 $string['display_email'] = 'Toon e-mail';
 $string['display_firstaccess'] = 'Toon eerste toegang';
-$string['display_icq'] = 'Toon ICQ';
 $string['display_idnumber'] = 'Toon ID-nummer';
 $string['display_institution'] = 'Toon instituut';
 $string['display_lastaccess'] = 'Toon laatste toegang';
 $string['display_lastip'] = 'Toon laatste IP';
 $string['display_lastlogin'] = 'Toon laatste login';
-$string['display_msn'] = 'Toon MSN';
 $string['display_phone1'] = 'Toon telefoonnummer';
 $string['display_phone2'] = 'Toon mobiel telefoonnummer';
 $string['display_picture'] = 'Toon afbeelding';
-$string['display_skype'] = 'Toon Skype';
-$string['display_yahoo'] = 'Toon Yahoo';
 $string['myprofile:addinstance'] = 'Voeg een nieuw aangemeld gebruikersblok toe';
 $string['myprofile:myaddinstance'] = 'Voeg een nieuw aangemeld gebruikersblok toe aan Mijn startpagina.';
 $string['myprofile_settings'] = 'Zichtbare gebruikersinformatie';

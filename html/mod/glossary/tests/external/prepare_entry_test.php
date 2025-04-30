@@ -21,12 +21,8 @@ defined('MOODLE_INTERNAL') || die();
 global $CFG;
 require_once($CFG->dirroot . '/webservice/tests/helpers.php');
 
-use external_api;
+use core_external\external_api;
 use externallib_advanced_testcase;
-use mod_glossary_external;
-use context_module;
-use context_user;
-use external_util;
 
 /**
  * External function test for prepare_entry.
@@ -43,7 +39,7 @@ final class prepare_entry_test extends externallib_advanced_testcase {
     /**
      * test_prepare_entry
      */
-    public function test_prepare_entry() {
+    public function test_prepare_entry(): void {
         global $USER;
         $this->resetAfterTest(true);
 

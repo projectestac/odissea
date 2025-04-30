@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ur', version '4.1'.
+ * Strings for component 'form', language 'ur', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -50,7 +50,6 @@ $string['filesofthesetypes'] = 'قبول شدہ فائل کی اقسام:';
 $string['filetypesany'] = 'فائل کی تمام اقسام';
 $string['filetypesnotall'] = 'یہاں \'تمام فائل کی اقسام\' کو منتخب کرنے کی اجازت نہیں ہے';
 $string['filetypesnotallowed'] = 'فائل کی ان اقسام کی یہاں اجازت نہیں ہے: {$a}';
-$string['filetypesnotwhitelisted'] = 'فائل کی ان اقسام کی یہاں اجازت نہیں ہے: {$a}';
 $string['filetypesothers'] = 'دیگر فائلیں';
 $string['filetypesunknown'] = 'فائل کی نامعلوم اقسام: {$a}';
 $string['general'] = 'جنرل';

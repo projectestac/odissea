@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'it', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'it', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,17 +30,13 @@ $string['acceptrisk_help'] = 'Disattivare la verifica dell\'e-mail può consenti
 $string['authconfirm'] = 'L\'azione garantirà all\'account autenticato un accesso permanente a Moodle via API. L\'uso deve essere inteso come account di sistema per la gestione di file il cui proprietario è Moodle.';
 $string['authconnected'] = 'L\'account di sistema è ora collegato per l\'accesso offline.';
 $string['authnotconnected'] = 'L\'account di sistema non è stato collegato per l\'accesso offline.';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Configurato';
 $string['configuredstatus'] = 'Configurato';
 $string['connectsystemaccount'] = 'Collega ad un account di sistema';
 $string['createfromtemplate'] = 'Crea un servizio OAuth 2 da un modello';
 $string['createfromtemplatedesc'] = 'Nell\'elenco sottostante è possibile selezionare un modello di servizio OAuth 2 con configurazione valida per i tipi di servizio conosciuti. Tramite la selezione del modello sarà creato un servizio OAuth 2 con i corretti endpoint e con i parametri necessari all\'autenticazione, tuttavia prima di utilizzare il servizio sarà comunque necessario inserire il client ID ed il client secret.';
 $string['createnewendpoint'] = 'Crea endpoint per l\'issuer "{$a}"';
-$string['createnewfacebookissuer'] = 'Crea servizio Facebook';
-$string['createnewgoogleissuer'] = 'Crea servizio Google';
-$string['createnewissuer'] = 'Crea servizio personalizzato';
-$string['createnewmicrosoftissuer'] = 'Crea servizio Microsoft';
-$string['createnewnextcloudissuer'] = 'Crea servizio Nextcloud';
 $string['createnewservice'] = 'Crea nuovo servizio:';
 $string['createnewuserfieldmapping'] = 'Crea mappatura di campo per l\'issuer "{$a}"';
 $string['custom_service'] = 'Personalizzato';
@@ -110,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Visualizza nella pagina di autenticazione come';
 $string['loginissuer'] = 'Autenticazione consentita';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Non configurato';
 $string['notdiscovered'] = 'L\'individuazione del servizio non è andata a buon fine.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'gl', version '4.1'.
+ * Strings for component 'h5p', language 'gl', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -139,6 +139,7 @@ $string['h5ppackage_help'] = 'Un tipo de contido H5P é un ficheiro cunha extens
 $string['h5pprivatefile'] = 'Este contido H5P non se pode amosar porque non ten acceso ao ficheiro .h5p.';
 $string['h5psettings'] = 'Axustes de H5P';
 $string['h5ptitle'] = 'Visite h5p.org para ver máis contido.';
+$string['height'] = 'altura';
 $string['helpChoosingLicense'] = 'Axúdame a escoller unha licenza';
 $string['hideadvanced'] = 'Agochar avanzadas';
 $string['icon'] = 'Icona';
@@ -207,6 +208,7 @@ $string['missinglibrary'] = 'Non se atopa a biblioteca requirida {$a->@library}'
 $string['missinglibraryfile'] = 'Non se atopa o ficheiro «{$a->%file}» na biblioteca: «{$a->%name}»';
 $string['missinglibraryjson'] = 'Non foi foi posíbel atopar o ficheiro library.json cun formato json válido para a biblioteca {$a->%name}';
 $string['missinglibraryproperty'] = 'Non se atopa a propiedade requirida {$a->%property} en {$a->%library}';
+$string['missingmainlibrary'] = 'Falta a biblioteca principal {$a->@biblioteca}';
 $string['missingmbstring'] = 'A extensión mbstring de PHP non está cargada. É necesaria para que o H5P funcione correctamente.';
 $string['missinguploadpermissions'] = 'Teña en conta que poden existir bibliotecas no ficheiro que enviou, mais non se lle permitirá enviar novas bibliotecas. Póñase en contacto co seu administrador.';
 $string['next'] = 'Seguinte';
@@ -221,7 +223,7 @@ $string['nounzip'] = 'O ficheiro que enviou non é un paquete HTML5 válido. (No
 $string['offlineDialogBody'] = 'Non puidemos enviar información sobre o completado desta tarefa. Verifique a súa conexión a Internet.';
 $string['offlineDialogHeader'] = 'Perdeuse a súa conexión co servidor';
 $string['offlineDialogRetryButtonLabel'] = 'Volver intentalo agora';
-$string['offlineDialogRetryMessage'] = 'Volver tentalo en :num....';
+$string['offlineDialogRetryMessage'] = 'Volver tentalo en :num….';
 $string['offlineSuccessfulSubmit'] = 'Resultados enviados correctamente.';
 $string['optionalInfo'] = 'Información opcional';
 $string['originator'] = 'Orixinador';
@@ -269,7 +271,7 @@ $string['showmore'] = 'Amosar máis';
 $string['size'] = 'Tamaño';
 $string['someKeywordsExits'] = 'Algunhas destas palabras clave xa existen';
 $string['source'] = 'Orixe';
-$string['startingover'] = 'Comezar de novo.';
+$string['startingover'] = 'Comezar de novo..';
 $string['status'] = 'Estado';
 $string['subContentWarning'] = 'O subcontido (imaxes, preguntas etc.) compartirase baixo :license a non ser que se especifique o contrario na ferramenta de autoría';
 $string['sublevel'] = 'Subnivel';
@@ -288,6 +290,7 @@ $string['updatedlibraries'] = 'Actualizáronse {$a->%old} bibliotecas H5P.';
 $string['updatedlibrary'] = 'Actualizouse {$a->%old} biblioteca H5P.';
 $string['uploadlibraries'] = 'Enviar os tipos de contido H5P';
 $string['uploadsuccess'] = 'Enviáronse correctamente os tipos de contido H5P';
+$string['width'] = 'largura';
 $string['wrongversion'] = 'A versión da biblioteca H5P {$a->%machineName} empregada neste contido non é válida. O contido contén {{$a->%contentLibrary}, mais debería ser {$a->%semanticsLibrary}.';
 $string['year'] = 'Ano';
 $string['years'] = 'Ano(s)';

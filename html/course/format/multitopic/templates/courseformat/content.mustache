@@ -138,11 +138,12 @@
             "selector": "<select><option>Section 4</option></select>"
         },
         "singlesection": {
-            "num": 1,
-            "id": 35,
+            "num": 5,
+            "id": 37,
             "header": {
                 "name": "Single Section Example",
-                "url": "#"
+                "url": "#",
+                "headinglevel": 3
             },
             "cmlist": {
                 "cms": [
@@ -152,9 +153,9 @@
                                 "cmname": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Assign example</span></a>",
                                 "hasname": "true"
                             },
-                            "id": 4,
-                            "cmid": 4,
-                            "anchor": "module-4",
+                            "id": 6,
+                            "cmid": 6,
+                            "anchor": "module-6",
                             "module": "assign",
                             "extraclasses": ""
                         }
@@ -180,7 +181,7 @@
         {{/tabs}}
     </div>
     {{{completionhelp}}}
-    <ul class="sections topics" data-for="course_sectionlist" data-originalsinglesectionid="{{{originalsinglesectionid}}}">
+    <ul class="sections topics {{format}}" data-for="course_sectionlist" data-originalsinglesectionid="{{originalsinglesectionid}}">
         {{#initialsection}}
             {{$ core_courseformat/local/content/section }}
                 {{> format_multitopic/courseformat/content/section }}
@@ -192,10 +193,21 @@
             {{/ core_courseformat/local/content/section }}
         {{/sections}}
     </ul>
+    {{#singlesection}}
+        <div class="single-section">
+            <ul class="sections topics {{format}}">
+                {{$ core_courseformat/local/content/section }}
+                    {{> core_courseformat/local/content/section }}
+                {{/ core_courseformat/local/content/section }}
+            </ul>
+        </div>
+    {{/singlesection}}
     {{#numsections}}
-        {{$ core_courseformat/local/content/addsection}}
-            {{> format_multitopic/courseformat/content/addsection}}
-        {{/ core_courseformat/local/content/addsection}}
+        {{^singlesection}}
+            {{$ core_courseformat/local/content/addsection}}
+                {{> format_multitopic/courseformat/content/addsection}}
+            {{/ core_courseformat/local/content/addsection}}
+        {{/singlesection}}
     {{/numsections}}
     {{#bulkedittools}}
         {{$ core_courseformat/local/content/bulkedittools}}

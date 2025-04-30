@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ro', version '4.1'.
+ * Strings for component 'enrol', language 'ro', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Nu aveți permisiunea sau nu puteți aloca rolu
 $string['bulkuseroperation'] = 'Operația în bloc a utilizatorului';
 $string['configenrolplugins'] = 'Vă rugăm să selectați și să ordonați corespunzător toate plugin-urile necesare.';
 $string['custominstancename'] = 'Numele sesiunii personalizate';
+$string['customwelcomemessage'] = 'Mesaj de bun venit personalizat';
+$string['customwelcomemessage_help'] = 'Formate acceptate: Text sau auto-format Moodle. Etichetele HTML și etichetele multi-lang sunt de asemenea acceptate, la fel și următorii substituenți:
+<ul>
+<li>Denumire curs {$a->coursename}</li>
+<li>Link către pagina de profil a utilizatorului {$a->profileurl}</li>
+<li>Email-ul utilizatorului {$a->email}</li>
+<li>Numele întreg al utilizatorului {$a->fullname}</li>
+<li>Prenumele utilizatorului {$a->firstname}</li>
+<li>Numele de familie al utilizatorului {$a->lastname}</li>
+<li>Rolul în curs al utilizatorului {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Dragă, {$a->fullname}, ești înscris la cursul {$a->coursename}';
 $string['defaultenrol'] = 'Adăugați sesiune la noile cursuri';
 $string['defaultenrol_desc'] = 'Este posibilă adăugarea implicită a acestui plugin la toate cursurile noi.';
 $string['deleteinstanceconfirm'] = 'Urmează să ștergeți metoda de înscriere "{$a->name}". Toți {$a->users} utilizatorii înscriși în prezent cu ajutorul acestei metode vor fi retrași, iar datele legate de curs, cum ar fi notele cursanților, calitatea de membru al grupului sau subscrierile la forum, vor fi șterse.
@@ -129,6 +141,7 @@ $string['periodend'] = 'până la {$a}';
 $string['periodnone'] = 'înscris {$a}';
 $string['periodstart'] = 'de la {$a}';
 $string['periodstartend'] = 'de la {$a->start} la {$a->end}';
+$string['plugindisabled'] = 'plugin enrol {$a} este dezactivat';
 $string['privacy:metadata:user_enrolments'] = 'Înscrieri';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Sesiunea plugin-ului de înscriere';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ID-ul utilizatorului care a modificat recent înscrierea utilizatorului';
@@ -139,12 +152,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'Când se încheie înscri
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Momentul în care a fost modificată înscrierea utilizatorului';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Cînd începe înscrierea utilizatorului';
 $string['privacy:metadata:user_enrolments:userid'] = 'ID-ul utilizatorului';
-$string['proceedtocourse'] = 'Accesați conținutul cursului';
 $string['recovergrades'] = 'Recuperează notele mai vechi ale utilizatorului, dacă este posibil';
 $string['rolefromcategory'] = '{$a->role} (Transmis de la categoria de curs)';
 $string['rolefrommetacourse'] = '{$a->role} (Transmis de la cursul-părinte)';
 $string['rolefromsystem'] = '{$a->role} (Alocat la nivel de site)';
 $string['rolefromthiscourse'] = '{$a->role} (Alocat în acest curs)';
+$string['sendcoursewelcomemessage'] = 'Trimite mesaj de bun venit la curs';
+$string['sendcoursewelcomemessage_help'] = 'Când înscrieți un utilizator sau o cohortă la curs, i se poate trimite un e-mail cu mesaj de bun venit. Dacă este trimis de la persoana de contact din curs (în mod implicit profesorul) și mai multe persoane au acest rol, e-mailul este trimis de la primul utilizator căruia i-a fost atribuit rolul.';
 $string['sendfromcoursecontact'] = 'De la contactul cursului';
 $string['sendfromkeyholder'] = 'De la deținătorul cheii';
 $string['sendfromnoreply'] = 'De la adresele fără răspuns';
@@ -163,7 +177,7 @@ $string['unassignnotpermitted'] = 'Nu aveți permisiunea de a anula alocarea rol
 $string['unenrol'] = 'Retras';
 $string['unenrolconfirm'] = 'Doriți să retrageți "{$a->user}" (înscris anterior prin "{$a->enrolinstancename}") de la "{$a->course}"?';
 $string['unenrolleduser'] = 'Utilizatorul "{$a->fullname}" nu mai e înscris la curs';
-$string['unenrolme'] = 'Retrage-mă de la {$a}';
+$string['unenrolme'] = 'Retrage-mă de la acest curs';
 $string['unenrolnotpermitted'] = 'Nu aveți permisiunea sau nu puteți retrage acest utilizator de la acest curs.';
 $string['unenrolroleusers'] = 'Utilizatori retrași';
 $string['uninstallmigrating'] = 'Înscrieri "{$a}" transferate';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', version '4.1'.
+ * Strings for component 'tag', language 'nl', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -73,6 +73,7 @@ $string['eventtagupdated'] = 'Tag aangepast';
 $string['exclusivemode'] = 'Toon enkel getagd {$a->tagarea}';
 $string['flag'] = 'Markeer';
 $string['flagasinappropriate'] = 'Markeer als niet geschikt';
+$string['flagcount'] = 'Vlag tellen';
 $string['flagged'] = 'Tag gemarkeerd';
 $string['helprelatedtags'] = 'Komma gescheiden gerelateerde tags';
 $string['id'] = 'id';

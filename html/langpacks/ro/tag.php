@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ro', version '4.1'.
+ * Strings for component 'tag', language 'ro', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -73,6 +73,7 @@ $string['eventtagupdated'] = 'Etichetă actualizată';
 $string['exclusivemode'] = 'Afișează doar ce e etichetat {$a->tagarea}';
 $string['flag'] = 'Flag';
 $string['flagasinappropriate'] = 'Marchează ca incorect';
+$string['flagcount'] = 'Număr de elemente evidențiate';
 $string['flagged'] = 'Etichetă marcată';
 $string['helprelatedtags'] = 'Etichete înrudite separate prin virgulă';
 $string['id'] = 'idetificator';

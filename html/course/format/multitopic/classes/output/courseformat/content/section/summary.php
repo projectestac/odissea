@@ -61,6 +61,11 @@ class summary extends summary_base {
      */
     public function format_summary_text(): string {
         $section = $this->fmtsection;
+
+        if (!empty($section->component)) {
+            return parent::format_summary_text();
+        }
+
         $context = context_course::instance($section->course);
 
         // ADDED.

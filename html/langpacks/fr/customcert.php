@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'fr', version '4.1'.
+ * Strings for component 'customcert', language 'fr', version '4.4'.
  *
  * @package     customcert
  * @category    string
@@ -31,11 +31,15 @@ $string['addelement'] = 'Ajouter un élément';
 $string['aligncenter'] = 'Centré';
 $string['alignleft'] = 'Alignement gauche';
 $string['alignment'] = 'Alignement';
-$string['alignment_help'] = 'Cette propriété définit l\'alignement horizontal de l\'élément. Certains éléments peuvent ne pas prendre en charge cela, alors que le comportement d\'autres éléments peut différer.';
+$string['alignment_help'] = 'Cette propriété définit l’alignement horizontal de l’élément. Certains éléments peuvent ne pas prendre en charge cela, alors que le comportement d’autres éléments peut différer.';
 $string['alignright'] = 'Alignement droit';
 $string['awardedto'] = 'Décerné à';
 $string['cannotverifyallcertificates'] = 'Vous n’avez pas le droit de vérifier l’ensemble des certificats.';
 $string['certificate'] = 'Certificat';
+$string['certificateexecutionperiod'] = 'Période de traitement des certificats';
+$string['certificateexecutionperiod_desc'] = 'Si la valeur est différente de 0, la tâche ne traitera pas les certificats dont le cours est inactif ou dont la dernière émission est antérieure au délai configuré. Cela peut contribuer à améliorer les performances de la tâche programmée.';
+$string['certificatesperrun'] = 'Nombre de certificats par exécution';
+$string['certificatesperrun_desc'] = 'Saisir le nombre de certificats à traiter par exécution de tâche programmée, où 0 signifie que tous les certificats seront traités dans la même tâche.';
 $string['code'] = 'Code de contrôle';
 $string['copy'] = 'Copier';
 $string['coursetimereq'] = 'Temps passé requis (min)';
@@ -79,7 +83,7 @@ $string['editcustomcert'] = 'Modifier le certificat';
 $string['editelement'] = 'Modifier l’élément';
 $string['edittemplate'] = 'Modifier le modèle';
 $string['elementheight'] = 'Hauteur';
-$string['elementheight_help'] = 'Spécifier la hauteur de l\'élément. Si « 0 » est autorisé, la hauteur est automatiquement calculée.';
+$string['elementheight_help'] = 'Spécifier la hauteur de l’élément. Si « 0 » est autorisé, la hauteur est automatiquement calculée.';
 $string['elementname'] = 'Nom de l’élément';
 $string['elementname_help'] = 'Ce nom sera utilisé pour identifier cet élément lors de l’édition d’un certificat. Remarque : ce nom ne sera pas affiché sur le PDF.';
 $string['elementplugins'] = 'Plugins des éléments';
@@ -125,6 +129,8 @@ $string['getcustomcert'] = 'Afficher le certificat';
 $string['gradeoutcome'] = 'Objectifs';
 $string['height'] = 'Hauteur';
 $string['height_help'] = 'La hauteur du certificat PDF en mm. Comme référence, une feuille de papier A4 est 297mm de haut et une lettre est 279mm de haut.';
+$string['includeinnotvisiblecourses'] = 'Inclut les certificats des cours cachés';
+$string['includeinnotvisiblecourses_desc'] = 'Les certificats des cours cachés ne sont pas traités par défaut. Si vous souhaitez les inclure, activez ce paramètre.';
 $string['invalidcode'] = 'Le code fourni est non valide.';
 $string['invalidcolour'] = 'La couleur choisie est non valide, veuillez saisir un nom de couleur HTML valide, ou une couleur hexadécimale à 3 ou 6 caractères.';
 $string['invalidelementwidthorheightnotnumber'] = 'Veuillez saisir un nombre valide.';
@@ -159,6 +165,9 @@ $string['norecipients'] = 'Aucun destinataire';
 $string['notemplates'] = 'Aucun modèle';
 $string['notissued'] = 'Non attribué';
 $string['notverified'] = 'Non vérifié';
+$string['numbersuffix_nd_as_in_second'] = 'ème';
+$string['numbersuffix_rd_as_in_third'] = 'ème';
+$string['numbersuffix_st_as_in_first'] = 'er';
 $string['options'] = 'Options';
 $string['page'] = 'Page {$a}';
 $string['pluginadministration'] = 'Administration du certificat personnalisé';
@@ -193,8 +202,11 @@ $string['rightmargin_help'] = 'La marge de droite du certificat en mm.';
 $string['save'] = 'Enregistrer';
 $string['saveandclose'] = 'Enregistrer et fermer';
 $string['saveandcontinue'] = 'Enregistrer et continuer';
+$string['savechanges'] = 'Enregistrer';
 $string['savechangespreview'] = 'Enregistrer et prévisualiser';
 $string['savetemplate'] = 'Enregistrer le modèle';
+$string['scheduledtaskconfigdesc'] = 'Configurer les paramètres de la tâche planifiée qui traite les certificats.';
+$string['scheduledtaskconfigheading'] = 'Configuration des tâches planifiées';
 $string['search:activity'] = 'Certificat personnalisé - information de l’activité';
 $string['setprotection'] = 'Régler une protection';
 $string['setprotection_help'] = 'Choisir les actions sur le certificat que vous souhaitez interdire à vos utilisateurs.';
@@ -202,8 +214,10 @@ $string['showposxy'] = 'Afficher la position X et Y';
 $string['showposxy_desc'] = 'Cela affichera la position X et Y lors de l’édition d’un élément, permettant à l’utilisateur de spécifier avec précision l’emplacement.
 
 Ceci n’est pas nécessaire si vous prévoyez d’utiliser uniquement l’interface de glisser-déposer à cette fin.';
+$string['subplugintype_customcertelement'] = 'Élément';
 $string['subplugintype_customcertelement_plural'] = 'Éléments';
 $string['taskemailcertificate'] = 'S’occupe d’envoyer par courriel les certificats.';
+$string['taskissuecertificate'] = 'Tâche d\'émission des certificats';
 $string['templatename'] = 'Nom du modèle';
 $string['templatenameexists'] = 'Ce nom de modèle est déjà utilisé, veuillez en choisir un autre.';
 $string['topcenter'] = 'Centre';
@@ -212,8 +226,12 @@ $string['topright'] = 'En haut à droite';
 $string['type'] = 'Type';
 $string['uploadimage'] = 'Déposer une image';
 $string['uploadimagedesc'] = 'Ce lien vous mènera à un nouvel écran où vous pourrez télécharger des images. Les images téléchargées ainsi seront disponibles sur votre cours pour tous les utilisateurs qui peuvent créer un certificat personnalisé.';
+$string['useadhoc'] = 'Utiliser la tâche ad hoc pour l\'envoi par courriel du certificat';
+$string['useadhoc_desc'] = 'Si ce réglage est activé, les courriels liés aux certificats seront envoyés immédiatement via une tâche ad hoc créée pour chaque activité. Sinon, les courriels seront gérés par la tâche programmée.
+
+L\'activation de cette option peut améliorer les performances en déchargeant le traitement d\'envoi des courriels vers les tâches ad hoc.';
 $string['userlanguage'] = 'Utiliser les préférences utilisateur';
-$string['userlanguage_help'] = 'Vous pouvez forcer la langue du certificat pour remplacer les préférences linguistiques de l\'utilisateur.';
+$string['userlanguage_help'] = 'Vous pouvez forcer la langue du certificat pour remplacer les préférences linguistiques de l’utilisateur.';
 $string['verified'] = 'Vérifié';
 $string['verify'] = 'Vérifier';
 $string['verifyallcertificates'] = 'Autoriser la vérification de l’ensemble des certificats';

@@ -16,13 +16,13 @@
 
 namespace mod_bigbluebuttonbn\external;
 
-use external_api;
+use core_external\external_api;
 use mod_bigbluebuttonbn\instance;
 use mod_bigbluebuttonbn\meeting;
 use mod_bigbluebuttonbn\test\testcase_helper_trait;
 use moodle_exception;
 use require_login_exception;
-use restricted_context_exception;
+use core_external\restricted_context_exception;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -37,7 +37,7 @@ require_once($CFG->dirroot . '/webservice/tests/helpers.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers \mod_bigbluebuttonbn\external\end_meeting
  */
-class end_meeting_test extends \externallib_advanced_testcase {
+final class end_meeting_test extends \externallib_advanced_testcase {
     use testcase_helper_trait;
     /**
      * Setup for test
@@ -62,7 +62,8 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL with no instance
      */
-    public function test_execute_no_instance() {
+    public function test_execute_no_instance(): void {
+        $this->resetAfterTest();
         $this->expectException(moodle_exception::class);
         $endmeeting = $this->end_meeting(1234, 5678);
     }
@@ -70,7 +71,7 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL without login
      */
-    public function test_execute_without_login() {
+    public function test_execute_without_login(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -84,7 +85,7 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL with invalid login
      */
-    public function test_execute_with_invalid_login() {
+    public function test_execute_with_invalid_login(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -102,7 +103,7 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * When login as a student
      */
-    public function test_execute_with_student_login() {
+    public function test_execute_with_student_login(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -120,7 +121,7 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * Test execute admin logic
      */
-    public function test_execute_with_admin_login() {
+    public function test_execute_with_admin_login(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -143,7 +144,7 @@ class end_meeting_test extends \externallib_advanced_testcase {
     /**
      * Test execute admin logic
      */
-    public function test_execute_end_meeting_already_ended() {
+    public function test_execute_end_meeting_already_ended(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();

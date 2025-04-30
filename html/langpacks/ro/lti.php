@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ro', version '4.1'.
+ * Strings for component 'lti', language 'ro', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'Acceptați notele din instrument';
 $string['accept_grades_admin_help'] = 'Specificați dacă furnizorul de instrument extern poate adăuga, actualiza, citi și șterge notele asociate instanțelor acestui instrument.
 
 Unii furnizori de  instrumente externe acceptă raportarea notelor înapoi la Moodle pe baza acțiunilor întreprinse în cadrul instrumentului, creând experiență mai integrată.';
+$string['accept_grades_from_tool'] = 'Permite ca {$a} să adauge note în catalog';
 $string['accept_grades_help'] = 'Specificați dacă furnizorul de instrumente extern poate adăuga, actualiza, citi și șterge notele asociate numai acestei instanțe de instrumente externe.
 
 Unii furnizori de instrumente externe acceptă raportarea notelor înapoi la Moodle pe baza acțiunilor întreprinse în cadrul instrumentului extern, creând o experiență mai integrată.
@@ -46,6 +47,7 @@ $string['add_ltiadv'] = 'Adăugați LTI Advantage';
 $string['add_ltilegacy'] = 'Adăugați compatibilitate LTI';
 $string['addnewapp'] = 'Activați aplicația externă.';
 $string['addserver'] = 'Adăugați un nou server de încredere';
+$string['addtool'] = 'Adaugă instrument';
 $string['addtype'] = 'Adăugați un instrument preconfigurat';
 $string['allow'] = 'Permite';
 $string['allowsetting'] = 'Permiteți instrumentului să stocheze 8K de setări în Moodle';
@@ -86,18 +88,27 @@ $string['configtoolurl'] = 'Adresa URL implicită a instrumentului la distanță
 $string['configtypes'] = 'Activați aplicațiile LTI';
 $string['configured'] = 'Configurat';
 $string['confirmtoolactivation'] = 'Sigur doriți să activați acest instrument?';
-$string['contentitem'] = 'Mesaj de conținut-articol';
 $string['contentitem_deeplinking'] = 'Suportă conectarea profundă (mesaj de conținut)';
 $string['contentitem_deeplinking_help'] = 'Dacă este bifată, opțiunea „Selectare conținut” va fi disponibilă la adăugarea unui instrument extern.';
-$string['contentitem_help'] = 'Dacă este bifată, opțiunea „Selectare conținut” va fi disponibilă la adăugarea unui instrument extern.';
 $string['contentitem_multiple_description'] = 'Următoarele elemente vor fi adăugate la cursul dvs.:';
 $string['contentitem_multiple_graded'] = 'Activitate gradată (nota maximă: {$a})';
+$string['contentselected'] = 'Conținut selectat';
 $string['course_tool_types'] = 'Instrumente de curs';
 $string['courseactivitiesorresources'] = 'Activitățile cursului sau resursele';
+$string['courseexternaltooladd'] = 'Adaugă nou instrument extern LTI';
+$string['courseexternaltooladdsuccess'] = '{$a} adăugat.';
+$string['courseexternaltooledit'] = 'Editează {$a}';
+$string['courseexternaltooleditsuccess'] = 'Modificări salvate.';
+$string['courseexternaltooliconalt'] = 'Pictogramă a {$a}';
+$string['courseexternaltools'] = 'Instrumente externe LTI';
+$string['courseexternaltoolsinfo'] = 'Instrumentele externe LTI sunt aplicații suplimentare pe care le puteți integra în cursul dvs., cum ar fi conținutul interactiv sau evaluările. Cursanții le pot accesa și utiliza fără a părăsi cursul.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Nu ai permisiunea să editeză acest instrument (legătura) de curs';
+$string['courseexternaltoolsnoviewpermissions'] = 'Vezi instrumentele externe ale cursului';
 $string['courseid'] = 'Numărul ID-ului cursului';
 $string['courseinformation'] = 'Informații despre curs';
 $string['courselink'] = 'Mergi la curs';
 $string['coursemisconf'] = 'Cursul este mal configurat';
+$string['coursetooldeleted'] = '{$a} șters';
 $string['createdon'] = 'Creat în';
 $string['curllibrarymissing'] = 'Este necesară extensia PHP cURL pentru instrumentul extern.';
 $string['custom'] = 'Particularizați parametrii';
@@ -126,24 +137,19 @@ $string['delegate'] = 'Delegat profesor';
 $string['delegate_tool'] = 'Așa cum se specifică în definiția Deep Linking sau Delegate la profesor';
 $string['delete'] = 'Ștergeți';
 $string['delete_confirmation'] = 'Sigur doriți să ștergeți acest instrument preconfigurat?';
+$string['deletecoursetool'] = 'Șterge {$a}';
+$string['deletecoursetoolconfirm'] = 'Această acțiune va șterge {$a} din instrumentele LTI disponibile în cursul tău.';
+$string['deletecoursetoolwithusageconfirm'] = '{$a} este utilizat în prezent în cel puțin o activitate din cursul tău. Dacă ștergi acest instrument, activitățile care îl folosesc nu vor mai funcționa.<br><br>Ești sigur că vrei să ștergi {$a}?';
 $string['deletetype'] = 'Ștergeți instrumentul preconfigurat';
-$string['display_description'] = 'Afișează descrierea activității la lansare';
-$string['display_description_help'] = 'Dacă este selectată, descrierea activității (specificată mai sus) se va afișa deasupra conținutului furnizorului de instrumente.
-
-Descrierea poate fi utilizată pentru a oferi instrucțiuni suplimentare pentru lansatoarele instrumentului, dar nu este necesară.
-
-Descrierea nu este afișată niciodată când containerul de lansare al instrumentului se află într-o fereastră nouă.';
-$string['display_name'] = 'Afișați numele activității la lansare';
-$string['display_name_help'] = 'Dacă este selectat, numele activității (specificat mai sus) se va afișa deasupra conținutului furnizorului de instrumente.
-
-Este posibil ca furnizorul de instrumente să afișeze și titlul. Această opțiune poate împiedica titlul activității
-fiind afișat de două ori.
-
-Titlul nu este afișat niciodată când containerul de lansare al instrumentului se află într-o fereastră nouă.';
+$string['display_description'] = 'Afișează descrierea activității cînd studenții accesează instrumentul';
+$string['display_description_help'] = 'Conținutul acestui instrument este afișat încorporat într-o pagină a cursului. Această setare determină dacă descrierea activității este afișată în pagina respectivă.';
+$string['display_name'] = 'Afișați numele activității când studenții accesează instrumentul';
+$string['display_name_help'] = 'Conținut din acest instrument este afișat încorporat într-o pagină a cursului. Această setare determină dacă denumirea activității este afișată în pagina respectivă.';
 $string['domain_mismatch'] = 'Domeniul URL-ului instrumentului nu se potrivește cu configurația instrumentului.';
 $string['donot'] = 'Nu trimite';
 $string['donotaccept'] = 'Nu accepta';
 $string['donotallow'] = 'Nu permite';
+$string['dontshowinactivitychooser'] = 'Nu afișa în fereastra de selectare a activității';
 $string['duplicateregurl'] = 'Această adresă URL de înregistrare este deja utilizată';
 $string['dynreg_update_btn_new'] = 'Înregistrați ca instrument extern nou';
 $string['dynreg_update_btn_update'] = 'Actualizează';
@@ -155,6 +161,11 @@ $string['dynreg_update_url'] = 'Legătură principală';
 $string['dynreg_update_version'] = 'Versiune LTI';
 $string['dynreg_update_warn_dupdomain'] = 'Nu este recomandat să aveți multiple instrumente externe în același domeniu.';
 $string['editdescription'] = 'Faceți click aici pentru a oferi o descriere acestui instrument';
+$string['editmanualinstancedeprecationwarning'] = 'Activitățile Instrument extern configurate manual nu mai sunt acceptate. Nu vă faceți griji, această activitate va funcționa în continuare așa cum este, dar nu mai puteți face modificări la configurația instrumentului de aici.
+<br><br>
+Pentru a face modificări instrumentului sau pentru a crea noi activități cu acesta, instrumentul trebuie adăugat la cursul în meniul cursului Mai multe > Instrumente externe LTI. Apoi, veți putea crea activități noi, selectând instrumentul direct în selectorul de activități.
+<br><br>
+Puteți citi mai multe despre adăugarea instrumentelor externe LTI în documentația <a href="{$a}" target="_blank">Instrument extern</a>.';
 $string['edittype'] = 'Editați instrumentul preconfigurat';
 $string['embed'] = 'Încorporat';
 $string['embed_no_blocks'] = 'Încorporați, fără blocuri';
@@ -162,6 +173,7 @@ $string['enableemailnotification'] = 'Trimiteți e-mailuri de notificare';
 $string['enableemailnotification_help'] = 'Dacă este activat, elevii vor primi notificări prin e-mail atunci când trimiterile lor de instrumente sunt notate.';
 $string['enterkeyandsecret'] = 'Introduceți cheia de consum și secretul partajat';
 $string['enterkeyandsecret_help'] = 'Dacă vi s-a dat o cheie de consum și / sau un secret comun, introduceți-le aici';
+$string['entitycourseexternaltools'] = 'Instrumente externe LTI';
 $string['errorbadurl'] = 'Adresa URL nu este un instrument URL valid sau un cartuș.';
 $string['errorincorrectconsumerkey'] = 'Cheia consumatorului este incorectă.';
 $string['errorinvaliddata'] = 'Datele nu sunt valide: {$a}';
@@ -249,11 +261,11 @@ proprietățile imobiliare ale instrumentului, iar altele oferă o senzație mai
          În funcție de browser, se va deschide într-o filă nouă sau într-o fereastră pop-up.
          Este posibil ca browserele să împiedice deschiderea ferestrei noi.';
 $string['launchoptions'] = 'Opțiuni de lansare';
-$string['leaveblank'] = 'Lăsați necompletat dacă nu aveți nevoie de ele';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Adăugați configurații de instrumente specifice cursului';
 $string['lti:addinstance'] = 'Adăugați un nou instrument extern';
 $string['lti:addmanualinstance'] = 'Adăugați un instrument configurat manual';
+$string['lti:addmanualinstanceprohibitederror'] = 'Crearea manuală a instrumentelor fără definiție de instrument de curs nu mai este acceptată. Creați mai întâi un instrument de curs și apoi utilizați-l pentru a crea instanțe de activitate.';
 $string['lti:addpreconfiguredinstance'] = 'Adăugați un instrument preconfigurat';
 $string['lti:admin'] = 'Fii administrator atunci când instrumentul este lansat';
 $string['lti:grade'] = 'Vizualizați notele returnate de instrumentul extern';
@@ -318,6 +330,7 @@ $string['no_tp_configured'] = 'Nu sunt configurate înregistrări de instrumente
 $string['no_tp_pending'] = 'Nu există înregistrări de instrumente externe în așteptare.';
 $string['no_tp_rejected'] = 'Nu există înregistrări de instrumente externe respinse.';
 $string['noattempts'] = 'Nu s-au făcut încercări cu această instanță a instrumentului';
+$string['nocourseexternaltoolsnotice'] = 'Nu există încă instrumente externe LTI.';
 $string['noltis'] = 'Nu există instanțe de instrumente externe';
 $string['noprofileservice'] = 'Serviciul de profil nu a fost găsit';
 $string['noservers'] = 'Nu s-au găsit servere';
@@ -438,6 +451,8 @@ furnizorii de instrumente. Poate fi un proces automat sau poate necesita un dial
 Instrumente care nu necesită comunicare sigură de la Moodle și nu oferă servicii suplimentare (cum ar fi raportarea calificărilor)
 s-ar putea să nu necesite o cheie de resursă.';
 $string['resourceurl'] = 'Adresa URL a resursei';
+$string['restricttocategory'] = 'Restricționează la categorie';
+$string['restricttocategory_help'] = 'Pentru a restricționa folosirea acestui instrument în cadrul unei categorii, selectează categoria sau categoriile din listă.';
 $string['return_to_course'] = 'Faceți clic pe <a href="{$a->link} "target ="_ top "> aici </a> pentru a reveni la curs.';
 $string['saveallfeedback'] = 'Salvează tot feedback-ul meu';
 $string['search:activity'] = 'Instrument extern - informații despre activitate';
@@ -448,6 +463,7 @@ $string['secure_launch_url_help'] = 'Similar cu adresa URL a instrumentului, dar
 
 Adresa URL a instrumentului poate fi setată și la o adresă https pentru a forța lansarea prin SSL, iar acest câmp poate fi lăsat necompletat.';
 $string['selectcontent'] = 'Selectați conținut';
+$string['selectcontentvalidationerror'] = 'Trebuie să selectezi conținut pentru această activitate.';
 $string['send'] = 'Trimite';
 $string['services'] = 'Servicii';
 $string['services_help'] = 'Selectați acele servicii pe care doriți să le oferiți furnizorului de instrumente. Pot fi selectate mai multe servicii.';
@@ -484,6 +500,7 @@ $string['show_in_course_lti2'] = 'Utilizarea configurării instrumentului';
 $string['show_in_course_lti2_help'] = 'Acest instrument poate fi afișat în selectorul de activități pe care un profesor îl poate selecta pentru a adăuga la un curs sau în meniul derulant al instrumentului preconfigurat atunci când adăugați un instrument extern la un curs.';
 $string['show_in_course_no'] = 'Nu arata; utilizați numai atunci când este introdus un URL de instrument de potrivire';
 $string['show_in_course_preconfigured'] = 'Afișați ca instrument preconfigurat atunci când adăugați un instrument extern';
+$string['showinactivitychooser'] = 'Afișează în fereastra de selectare a activității';
 $string['sitehost'] = 'Numele gazdei site-ului';
 $string['siteid'] = 'ID-ul site-ului';
 $string['size'] = 'Parametrii de dimensiune';
@@ -535,6 +552,7 @@ $string['toolsetup'] = 'Configurarea instrumentului extern';
 $string['tooltypeadded'] = 'A fost adăugat un instrument preconfigurat';
 $string['tooltypedeleted'] = 'Instrumentul preconfigurat a fost șters';
 $string['tooltypenotdeleted'] = 'Nu s-a putut șterge instrumentul preconfigurat';
+$string['tooltypenotfounderror'] = 'Instrumentul LTI utilizat în această activitate a fost șters. Dacă ai nevoie de ajutor, contactează profesorul sau administratorule site-ului.';
 $string['tooltypes'] = 'Instrumente';
 $string['tooltypeupdated'] = 'Instrument preconfigurat actualizat';
 $string['toolurl'] = 'Adresa URL a instrumentului';
@@ -573,6 +591,7 @@ $string['unabletocreatetooltype'] = 'Instrumentul nu a putut fi creat';
 $string['unabletofindtooltype'] = 'Nu s-a putut găsi instrumentul pentru {$a->id}';
 $string['unknownstate'] = 'Stare necunoscută';
 $string['update'] = 'Actualizează';
+$string['usage'] = 'Contor de utilizare';
 $string['useraccountinformation'] = 'Informații despre contul de utilizator';
 $string['userpersonalinformation'] = 'Informații personale ale utilizatorului';
 $string['using_tool_cartridge'] = 'Utilizarea cartușului pentru scule';

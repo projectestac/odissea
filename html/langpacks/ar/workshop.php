@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ar', version '4.1'.
+ * Strings for component 'workshop', language 'ar', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -165,6 +165,7 @@ $string['feedbackreviewer'] = 'إفادة موجهة إلى المقيِّم';
 $string['feedbacksettings'] = 'الإفادة';
 $string['formataggregatedgrade'] = '{$a->grade}';
 $string['formataggregatedgradeover'] = '<del>{$a->grade}</del><br /><ins>{$a->over}</ins>';
+$string['formatpeergrade'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span>';
 $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span>';
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
@@ -208,7 +209,6 @@ $string['latesubmissions'] = 'التسليمات المتأخرة';
 $string['latesubmissions_desc'] = 'إسمح بالتسليمات بعد الموعد النهائي';
 $string['latesubmissions_help'] = 'عند تمكينه، يمكن للكاتب تسليم عمله بعد الموعد النهائي للتسليم أو خلال طور التقييم. مع ذلك، التسليمات المتأخرة لا يمكن تحريرها.';
 $string['latesubmissionsallowed'] = 'التسليمات المتأخرة مسموح بها';
-$string['legacyallocationplugincron'] = 'التعيين السابق لمشغل الوظائف الدورية لورشة العمل';
 $string['maxbytes'] = 'أقصى حجم لمرفقات التسليم';
 $string['modulename'] = 'ورشة عمل';
 $string['modulename_help'] = 'وحدة نشاط ورشة العمل تُمكِّن تجميع، مراجعة وتقييم أعمال الطلاب تقييماً مناظراً.

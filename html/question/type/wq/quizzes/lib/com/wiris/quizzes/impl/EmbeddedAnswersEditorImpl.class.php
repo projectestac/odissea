@@ -9,6 +9,9 @@ class com_wiris_quizzes_impl_EmbeddedAnswersEditorImpl implements com_wiris_quiz
 	public function setReadOnly($readOnly) {
 		com_wiris_quizzes_impl_QuizzesComponentBuilderImpl::throwNotImplementedInServerTechnology();
 	}
+	public function showAutomatedStudentGuidance($visible) {
+		com_wiris_quizzes_impl_QuizzesComponentBuilderImpl::throwNotImplementedInServerTechnology();
+	}
 	public function setStyle($key, $value) {
 		com_wiris_quizzes_impl_QuizzesComponentBuilderImpl::throwNotImplementedInServerTechnology();
 	}

@@ -24,8 +24,8 @@
  * - Proxy handler: a private class to keep track of the state object changes.
  * - StateMap class: a private class extending Map class that triggers event when a state list is modifed.
  *
- * @module     core/local/reactive/stateManager
- * @class     core/local/reactive/stateManager
+ * @module     core/local/reactive/statemanager
+ * @class      StateManager
  * @copyright  2021 Ferran Recio <ferran@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -490,6 +490,21 @@ export default class StateManager {
     }
 
     /**
+     * Get all element ids from the given state.
+     *
+     * @param {String} name the state object name
+     * @return {Array} the element ids.
+     */
+    getIds(name) {
+        const state = this.state;
+        const current = state[name];
+        if (!(current instanceof StateMap)) {
+            throw Error(`${name} is not an instance of StateMap`);
+        }
+        return [...state[name].keys()];
+    }
+
+    /**
      * Register a state modification and generate the necessary events.
      *
      * This method is used mainly by proxy helpers to dispatch state change event.
@@ -590,6 +605,7 @@ export default class StateManager {
 
         // List of the published events to prevent redundancies.
         let publishedEvents = new Set();
+        let transactionEvents = [];
 
         fieldChanges.forEach((event) => {
 
@@ -603,6 +619,7 @@ export default class StateManager {
                 }, this.target);
 
                 publishedEvents.add(eventkey);
+                transactionEvents.push(event);
             }
         });
 
@@ -611,6 +628,7 @@ export default class StateManager {
             action: 'transaction:end',
             state: this.state,
             element: null,
+            changes: transactionEvents,
         }, this.target);
     }
 }

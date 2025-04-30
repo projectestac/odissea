@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'sv', version '4.1'.
+ * Strings for component 'workshop', language 'sv', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Sent inskickade uppgifter';
 $string['latesubmissions_desc'] = 'Tillåt inskickning av uppgifter efter sluttiden.';
 $string['latesubmissions_help'] = 'Om aktiverat kan en workshopdeltagare lämna in sitt arbete efter tidsfristen för inlämning eller under bedömningsfasen. För sent inlämnade arbeten kan däremot inte redigeras.';
 $string['latesubmissionsallowed'] = 'Sent inskickade uppgifter accepteras';
-$string['legacyallocationplugincron'] = 'Äldre typ av crontilldelning av workshop';
 $string['maxbytes'] = 'Maximal filstorlek för inlämningsbilagor';
 $string['modulename'] = 'Workshop';
 $string['modulename_help'] = 'Aktiviteten <em>Workshop</em> möjliggör insamling, granskning och medarbetarbedömning av elevernas arbeten.

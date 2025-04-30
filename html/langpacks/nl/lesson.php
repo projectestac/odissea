@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', version '4.1'.
+ * Strings for component 'lesson', language 'nl', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -150,7 +150,7 @@ $string['correctresponse'] = 'Juist antwoord';
 $string['createaquestionpage'] = 'Maak een vragenpagina';
 $string['credit'] = 'Krediet';
 $string['customscoring'] = 'Aangepaste cijfers';
-$string['customscoring_help'] = '<p>Hiermee kun je een numerieke puntenwaarde geven voor elk antwoord. Antwoorden kunnen een negatief of een positief cijfer krijgen. Geïmporteerde vragen zullen automatisch 1 punt voor een juist en 0 punten voor een fout antwoord krijgen. Je kunt dit wijzigen na het importeren.</p>';
+$string['customscoring_help'] = 'Indien ingeschakeld kan een geheel getal (positief of negatief) ingegeven worden voor elk antwoord.';
 $string['deadline'] = 'Deadline';
 $string['defaultessayresponse'] = 'Je antwoord op deze open vraag zal door de leraar beoordeeld worden.';
 $string['deleteallattempts'] = 'Verwijder alle pogingen';
@@ -555,7 +555,7 @@ $string['savechangesandeol'] = 'Bewaar alle wijzigingen en ga naar het einde van
 $string['saveoverrideandstay'] = 'Bewaar en geef nog een overschrijving';
 $string['savepage'] = 'Bewaar pagina';
 $string['score'] = 'Cijfer';
-$string['score_help'] = 'Score wordt alleen gebruikt als aangepaste score is ingeschakeld. Elk antwoord kan vervolgens worden voorzien van een numerieke puntwaarde (positief of negatief).';
+$string['score_help'] = 'Als aangepaste score is ingeschakeld in de les, dan kun je een geheel getal (positief of negatief) als waarde ingeven voor elk antwoord.';
 $string['scores'] = 'Cijfers';
 $string['search:activity'] = 'Les - activiteitsinformatie';
 $string['secondpluswrong'] = 'Niet echt. Wil je nog eens proberen?';

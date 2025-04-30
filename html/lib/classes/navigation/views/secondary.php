@@ -89,6 +89,7 @@ class secondary extends view {
                 'grades' => 2,
                 'badgesview' => 7,
                 'competencies' => 8,
+                'communication' => 14,
             ],
             self::TYPE_CUSTOM => [
                 'contentbank' => 5,
@@ -122,6 +123,7 @@ class secondary extends view {
                 'backup' => 9,
                 'restore' => 10,
                 'competencybreakdown' => 11,
+                'sendtomoodlenet' => 16,
             ],
             self::TYPE_CUSTOM => [
                 'advgrading' => 2,
@@ -420,18 +422,6 @@ class secondary extends view {
                     // Also check if the first node is an external link. If it is, add all children.
                     $this->add_external_nodes_to_secondary($recursivenode, $recursivenode, $rootnode);
                 }
-            }
-        }
-
-        // Move some nodes into a 'course reuse' node.
-        $overflownode = $this->get_course_overflow_nodes($rootnode);
-        if (!is_null($overflownode)) {
-            $actionnode = $this->get_first_action_for_node($overflownode);
-            if ($actionnode) {
-                // All additional nodes will be available under the 'Course reuse' page.
-                $text = get_string('coursereuse');
-                $rootnode->add($text, $actionnode->action, navigation_node::TYPE_COURSE, null, 'coursereuse',
-                    new \pix_icon('t/edit', $text));
             }
         }
 

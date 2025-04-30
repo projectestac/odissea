@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', version '4.1'.
+ * Strings for component 'scorm', language 'nl', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -77,6 +77,7 @@ $string['browse'] = 'Bekijken';
 $string['browsed'] = 'Voorgeproefd';
 $string['browsemode'] = 'Probeermodus';
 $string['browserepository'] = 'Blader door de opslagruimte';
+$string['cachedef_elements'] = 'Element cache';
 $string['calculatedweight'] = 'Berekende weging';
 $string['calendarend'] = '{$a} sluit';
 $string['calendarstart'] = '{$a} opent';
@@ -98,7 +99,7 @@ $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling z
 $string['completionscorerequireddesc'] = 'Maximale score van {$a} vereist voor voltooiing.';
 $string['completionstatus_completed'] = 'Voltooid';
 $string['completionstatus_passed'] = 'Geslaagd';
-$string['completionstatusallscos'] = 'Vereis alle scos om hun voltooiingsstatus te melden';
+$string['completionstatusallscos'] = 'Alle SCO\'s moeten de voltooiingsstatus retourneren';
 $string['completionstatusallscos_help'] = 'Somige SCORM-pakketten bevatten meerdere onderdelen of "scos" - wanneer dit is ingeschakeld moeten alle scos in het pakket hun relevante lesson_status voor deze activiteit als voltooid markeren.';
 $string['completionstatusrequired'] = 'Vereist status';
 $string['completionstatusrequired_help'] = 'Het controleren van één of meerdere statussen zal er voor zorgen dat en gebruiker minstens één gecontroleerde status moet bereiken om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
@@ -106,7 +107,7 @@ $string['completionstatusrequireddesc'] = 'Leerling moet minstens één van volg
 $string['confirmloosetracks'] = 'WAARSCHUWING: Dit pakket is blijkbaar gewijzigd of aangepast. Als de pakketstructuur is gewijzigd, dan zou het afgelegde leerpad van sommige gebruikers zou kunnen verloren gegaan zijn tijdens het updateproces.';
 $string['contents'] = 'Inhoud';
 $string['coursepacket'] = 'Cursuspakket';
-$string['coursestruct'] = 'Cursusstructuur';
+$string['coursestruct'] = 'Inhoudsstructuur';
 $string['crontask'] = 'Achtergrondverwerking voor SCORM';
 $string['currentwindow'] = 'Huidig venster';
 $string['datadir'] = 'Fout van het bestandssysteem: de gegevensfolder van de cursus kan niet gemaakt worden';
@@ -121,12 +122,10 @@ $string['details'] = 'SCO opvolgdetails';
 $string['directories'] = 'Toon de links naar mappen';
 $string['disabled'] = 'Uitgeschakeld';
 $string['display'] = 'Toon';
-$string['displayactivityname'] = 'Activiteitsnaam tonen';
-$string['displayactivityname_help'] = 'Al dan niet de activiteitsnaam boven de SCORM-speler tonen';
 $string['displayattemptstatus'] = 'Toon pogingstatus';
 $string['displayattemptstatus_help'] = 'Hiermee wordt een samenvatting van de pogingen van de gebruiker getoond in het cursusoverzichtsblok in Mijn startpagina en/of de SCORM ingangspagina.';
 $string['displayattemptstatusdesc'] = 'Of een samenvatting van de pogingen van de gebruiker getoond moeten worden op het cursusoverzichtsblok op Mijn startpagina en/of de startpagina van het SCORM-pakket.';
-$string['displaycoursestructure'] = 'Toon cursusstructuur op startpagina';
+$string['displaycoursestructure'] = 'Toon inhoudsstructuur op startpagina';
 $string['displaycoursestructure_help'] = 'Indien ingeschakeld zal de inhoudsopgave getoond worden op de SCORM beschrijvingspagina';
 $string['displaycoursestructuredesc'] = 'Deze instelling regelt de standaardinstelling voor het tonen van de inhoudsopgave op de startpagina van het SCORM-pakket.';
 $string['displaydesc'] = 'Of SCORM-pakketten in een nieuw venster getoond moeten worden.';
@@ -206,7 +205,7 @@ $string['hidebrowse_help'] = '<p>Als deze optie op ja wordt gezet, dan zal de le
 $string['hidebrowsedesc'] = 'Met de voorbeeldmodus kan een leerling de activiteit bekijken voor hij die probeert.';
 $string['hideexit'] = 'Verberg de uitgang-link';
 $string['hidereview'] = 'Verberg de knop voor herzien';
-$string['hidetoc'] = 'Weergave cursusstructuur';
+$string['hidetoc'] = 'Weergave inhoudsstructuur in de speler';
 $string['hidetoc_help'] = 'Deze instelling bepaalt hoe de inhoudstabel getoond wordt in de SCORM-speler.';
 $string['hidetocdesc'] = 'Deze instelling regelt hoede inhoudsopgave in de SCORM-speler getoond wordt.';
 $string['highestattempt'] = 'Beste poging';
@@ -222,7 +221,6 @@ $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de doo
 $string['indicator:socialbreadthdef'] = 'SCORM sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de SCORM-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, alleen deelnemer)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Info';
 $string['interactions'] = 'Interacties';
 $string['invalidactivity'] = 'Fout in SCORM-activiteit';
 $string['invalidhacpsession'] = 'Ongeldige HACP-sessie';
@@ -231,6 +229,7 @@ $string['invalidmanifestresource'] = 'Waarschuwing: volgende bronnen hebben een 
 $string['invalidstatus'] = 'Ongeldige status';
 $string['invalidurl'] = 'Ongeldige URL opgegeven';
 $string['invalidurlhttpcheck'] = 'Ongeldige URL opgegeven. Foutopsporingsbericht: <pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'De volgende upgrade-stap kan even duren. Je site heeft {$a} opgevolgde SCORM\'s die gemigreerd moeten worden naar een nieuwe tabelstructuur. Wees geduldig want het is niet mogelijk om een voortgangsbalk te tonen.';
 $string['last'] = 'Laatst bekeken op';
 $string['lastaccess'] = 'Laatst bekeken';
 $string['lastattempt'] = 'Laatste voltooide poging';
@@ -248,6 +247,7 @@ $string['maximumattemptsdesc'] = 'Deze instelling regelt het maximale aantal pog
 $string['maximumgradedesc'] = 'Deze instelling regelt het standaard maximumcijfer voor een activiteit';
 $string['menubar'] = 'Toon menubalk';
 $string['min'] = 'Minimumscore';
+$string['minimumscoregreater'] = 'Minimale score moet groter zijn dan nul.';
 $string['missing_attribute'] = 'Attribuut ontbreekt {$a->attr} in tag {$a->tag}';
 $string['missing_tag'] = 'Ontbrekende tag {$a->tag}';
 $string['missingparam'] = 'Een vereiste parameter ontbreekt of is fout';
@@ -354,7 +354,7 @@ $string['privacy:metadata:attempt'] = 'Het pogingnummer';
 $string['privacy:metadata:scoes_track:element'] = 'De naam van het op te volgen element';
 $string['privacy:metadata:scoes_track:value'] = 'De waarde van het gegeven element';
 $string['privacy:metadata:scorm_aicc_session'] = 'De sessie-informatie over de AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'De opgevolgde gegevesn van de SCOes die bij de activiteit horen';
+$string['privacy:metadata:scorm_attempt'] = 'SCORM-pogingen van een gebruiker';
 $string['privacy:metadata:timemodified'] = 'De tijd waarop het op te volgen element laatst was gewijzigd';
 $string['privacy:metadata:userid'] = 'De ID van de gebruiker die toegang had tot de SCORM-activiteit';
 $string['protectpackagedownloads'] = 'Bescherm pakketdownloads';

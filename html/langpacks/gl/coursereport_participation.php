@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_participation', language 'gl', version '4.1'.
+ * Strings for component 'coursereport_participation', language 'gl', version '4.4'.
  *
  * @package     coursereport_participation
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'el', version '4.1'.
+ * Strings for component 'backup', language 'el', version '4.4'.
  *
  * @package     backup
  * @category    string

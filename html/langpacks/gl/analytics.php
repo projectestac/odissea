@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'gl', version '4.1'.
+ * Strings for component 'analytics', language 'gl', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -32,7 +32,7 @@ $string['analytics'] = 'Analítica';
 $string['analyticsdisabled'] = 'A analítica está desactivada. Pode activala en «Administración do sitio> Funcións avanzadas».';
 $string['analyticslogstore'] = 'Almacén de rexistros utilizada para a análise';
 $string['analyticslogstore_help'] = 'O almacén de rexistros que utilizará a API de análise para ler a actividade dos usuarios.';
-$string['analyticssettings'] = 'Axustes da analítica';
+$string['analyticssettings'] = 'Axustes do analítica';
 $string['analyticssiteinfo'] = 'Información do sitio';
 $string['calclifetime'] = 'Manter os cálculos analíticos para';
 $string['configlcalclifetime'] = 'Isto especifica o tempo que quere manter os datos do cálculo; isto non eliminará as predicións, senón que eliminará os datos empregados para xerar as predicións. Empregar aquí a opción predeterminada é o mellor, xa que mantén controlado o uso do disco, con todo, se está a empregar táboas de cálculo para outros fins, pode que queira aumentar este valor.';
@@ -41,11 +41,11 @@ $string['defaultpredictoroption'] = 'Procesador predeterminado ({$a})';
 $string['defaulttimesplittingmethods'] = 'Intervalos de análise predeterminados para a avaliación do modelo';
 $string['defaulttimesplittingmethods_help'] = 'O intervalo de análise define cando o sistema calculará as predicións e a parte dos rexistros de actividade que serán considerados para esas predicións. O proceso de avaliación do modelo reiterará a través destes intervalos de análise a menos que se especifique un intervalo de análise específico.';
 $string['disabledmodel'] = 'Modelo desactivado';
-$string['erroralreadypredict'] = 'O ficheiro {$ a} xa foi usado para xerar predicións.';
+$string['erroralreadypredict'] = 'O ficheiro {$a} xa foi usado para xerar predicións.';
 $string['errorcannotreaddataset'] = 'Non é posíbel ler o ficheiro do conxunto de datos {$a}.';
 $string['errorcannotusetimesplitting'] = 'Non é posíbel usar o intervalo fornecido para este modelo.';
 $string['errorcannotwritedataset'] = 'O ficheiro do conxunto de datos {$a} non se pode modificar.';
-$string['errorexportmodelresult'] = 'Non é posíbel exportar o modelo de aprendizaxe automática.';
+$string['errorexportmodelresult'] = 'Non é posíbel exportar o modelo de aprendizaxe de máquina.';
 $string['errorimport'] = 'Produciuse un erro ao importar o ficheiro JSON fornecido.';
 $string['errorimportmissingclasses'] = 'Os seguintes compoñentes analíticos non están dispoñíbeis neste sitio: {$a->missingclasses}.';
 $string['errorimportmissingcomponents'] = 'O modelo fornecido require a instalación dos seguintes engadidos: {$a}. Teña en conta que as versións non necesariamente deben coincidir coas versións instaladas no seu sitio. A instalación do mesmo ou unha versión máis recente do engadido debería estar ben na maioría dos casos.';
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Mesturado ou híbrido';
 $string['modeinstructionfacetoface'] = 'Cara a cara';
 $string['modeinstructionfullyonline'] = 'Totalmente en liña';
 $string['modeloutputdir'] = 'Directorio de saída de modelos';
-$string['modeloutputdirinfo'] = 'Directorio onde os procesadores de predición almacenan toda a información de avaliación. Útil para depurar e investigar.';
 $string['modeloutputdirwithdefaultinfo'] = 'Directorio onde os procesadores de predición almacenan toda a información de avaliación. Útil para depurar e investigar. Se está baleiro, empregarase {$a} como predeterminado.';
 $string['modeltimelimit'] = 'Límite de tempo de análise por modelo';
 $string['modeltimelimitinfo'] = 'Este axuste limita o tempo que cada modelo inviste analizando os contidos do sitio.';
@@ -153,7 +152,7 @@ $string['privacy:metadata:analytics:predictions:timecreated'] = 'Cando se realiz
 $string['privacy:metadata:analytics:predictions:timeend'] = 'Hora de fin dos cálculos';
 $string['privacy:metadata:analytics:predictions:timestart'] = 'Hora de inicio dos cálculos';
 $string['processingsitecontents'] = 'Procesando os contidos do sitio';
-$string['successfullyanalysed'] = 'Analizado satisfactoriamente';
+$string['successfullyanalysed'] = 'Analizado correctamente';
 $string['timesplittingmethod'] = 'Intervalo de análise';
 $string['timesplittingmethod_help'] = 'O intervalo de análise define cando o sistema calculará as predicións e a parte dos rexistros de actividade que serán considerados para estas predicións. Por exemplo, a duración do curso pódese dividir en partes, cunha predición xerada ao final de cada parte.';
 $string['timesplittingmethod_link'] = 'Métodos_para_dividir_o_tempo';

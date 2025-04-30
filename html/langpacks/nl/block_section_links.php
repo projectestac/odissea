@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'nl', version '4.1'.
+ * Strings for component 'block_section_links', language 'nl', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = 'Verhoog met';
 $string['incby1_help'] = 'Met deze waarde neemt de sectie toe telkens er een sectielink getoond wordt, te beginnen met 1.';
 $string['incby2'] = 'Alternatief verhoog met';
 $string['incby2_help'] = 'Met deze waarde neemt de sectie toe telkens er een sectielink getoond wordt, te beginnen met 1.';
-$string['jumptocurrenttopic'] = 'Ga naar het huidige onderwerp';
+$string['jumptocurrenttopic'] = 'Ga naar het gemarkeerde onderwerp';
 $string['jumptocurrentweek'] = 'Ga naar deze week';
 $string['numsections1'] = 'Aantal secties';
 $string['numsections1_help'] = 'Als het aantal secties in de cursus dit aantal bereikt, dan wordt de toenemen-met-waarde gebruikt.';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Het koppelblok Secties toont alleen gegevens die 
 $string['section_links:addinstance'] = 'Voeg een nieuw sectielinksblok toe';
 $string['showsectionname'] = 'Toon sectienaam';
 $string['showsectionname_help'] = 'Toon sectienaam en sectienummer';
-$string['topics'] = 'Onderwerpen';
-$string['weeks'] = 'Weken';

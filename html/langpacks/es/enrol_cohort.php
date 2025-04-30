@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'es', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'es', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -28,11 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['addgroup'] = 'Agregar al grupo';
 $string['assignrole'] = 'Asignar rol';
 $string['cohort:config'] = 'Configurar instancias de cohortes';
-$string['cohort:unenrol'] = 'Dar de baja usuarios suspendidos';
-$string['creategroup'] = 'Crear nuevo grupo';
+$string['cohort:unenrol'] = 'Desmatricular a los usuarios suspendidos';
+$string['creategroup'] = 'Crea un nuevo grupo';
 $string['defaultgroupnametext'] = '{$a->name} cohorte {$a->increment}';
-$string['enrolcohortsynctask'] = 'Tarea de sincronización de inscripción de cohorte';
-$string['instanceexists'] = 'Cohorte ya sincronizada con el rol seleccionado';
+$string['enrolcohortsynctask'] = 'Tarea de sincronización de matriculación de cohortes';
+$string['instanceexists'] = 'La cohorte ya está sincronizada con el rol seleccionado';
+$string['plugindisabled'] = 'El plugin de sincronización de cohorte está deshabilitado';
 $string['pluginname'] = 'Sincronizar cohorte';
 $string['pluginname_desc'] = 'El plugin de matriculación de cohortes sincroniza a los miembros de dicha cohorte con los participantes del curso.';
 $string['privacy:metadata:core_group'] = 'El complemento de inscripción de cohortes puede crear un nuevo grupo o utilizar uno ya existente para añadir a todos los miembros de la cohorte.';

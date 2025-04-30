@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'el', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'el', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -34,11 +34,6 @@ $string['connectsystemaccount'] = 'Συνδεθείτε σε λογαριασμ�
 $string['createfromtemplate'] = 'Δημιουργία μιας υπηρεσίας OAuth 2 από ένα υπόδειγμα';
 $string['createfromtemplatedesc'] = 'Επιλέξτε ένα από τα υποδείγματα υπηρεσιών OAuth 2 παρακάτω για να δημιουργήσετε μια υπηρεσία OAuth με έγκυρες ρυθμίσεις για έναν από τους γνωστούς τύπους υπηρεσιών. Αυτό θα δημιουργήσει την υπηρεσία OAuth 2, με όλα τα σωστά τελικά σημεία και τις παραμέτρους που απαιτούνται για την αυθεντικοποίηση (έλεγχο ταυτότητας), παρόλο που θα χρειαστεί να εισάγετε το αναγνωριστικό πελάτη και το μυστικό για τη νέα υπηρεσία πριν να μπορέσετε να την χρησιμοποιήσετε.';
 $string['createnewendpoint'] = 'Δημιουργία νέου τελικού σημείου για τον εκδότη «{$a}»';
-$string['createnewfacebookissuer'] = 'Δημιουργία νέας υπηρεσίας Facebook';
-$string['createnewgoogleissuer'] = 'Δημιουργία νέας υπηρεσίας Google';
-$string['createnewissuer'] = 'Δημιουργία νέας προσαρμοσμένης υπηρεσίας';
-$string['createnewmicrosoftissuer'] = 'Δημιουργία νέας υπηρεσίας Microsoft';
-$string['createnewnextcloudissuer'] = 'Δημιουργία νέας υπηρεσίας Nextcloud';
 $string['createnewservice'] = 'Δημιουργία νέας υπηρεσίας:';
 $string['createnewuserfieldmapping'] = 'Δημιουργία νέας αντιστοίχισης πεδίων χρήστη για τον εκδότη «{$a}»';
 $string['custom_service'] = 'Προσαρμοσμένο';

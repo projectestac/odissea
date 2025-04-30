@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'zh_cn', version '4.1'.
+ * Strings for component 'user', language 'zh_cn', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -41,7 +41,7 @@ $string['filtertype'] = '过滤器类型';
 $string['match'] = '匹配';
 $string['matchofthefollowing'] = '以下各项:';
 $string['moodlenetprofile'] = 'MoodleNet 配置文件ID';
-$string['moodlenetprofile_help'] = '此字段用于将您的 MoodleNet 个人资料链接到 Moodle。 它需要一个符合 WebFinger 的 URI。';
+$string['moodlenetprofile_help'] = '您的 MoodleNet 个人资料与此站点相关联。';
 $string['placeholdertype'] = '输入...';
 $string['placeholdertypeorselect'] = '输入或选择…';
 $string['privacy:courserequestpath'] = '申请的课程';
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = '要小心处理这条消息。�
 $string['target:upcomingactivitiesdue'] = '即将到来的活动';
 $string['target:upcomingactivitiesdue_help'] = '此目标为即将到来的活动生成提醒。';
 $string['target:upcomingactivitiesdueinfo'] = '此处列出了所有即将到来的应有见解的活动。这些学生直接收到了这些见解。';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = '用户资料';

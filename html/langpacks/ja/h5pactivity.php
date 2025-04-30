@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ja', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ja', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = '未報告';
 $string['attempts'] = '受験';
 $string['attempts_none'] = 'このユーザには表示する受験がありません。';
 $string['attempts_report'] = '受験レポート';
+$string['attempts_report_header_label'] = '受験 ({$a})';
 $string['choice'] = '選択肢';
 $string['completion'] = '完了';
 $string['contentbank'] = 'コンテンツバンクに関する詳細情報';
@@ -63,6 +64,8 @@ $string['displayembed'] = '埋め込みボタン';
 $string['displayexport'] = 'ダウンロードを許可する';
 $string['dnduploadh5pactivity'] = 'H5P活動を追加する';
 $string['duration'] = '継続時間';
+$string['enablesavestate'] = '状態を保存する';
+$string['enablesavestate_help'] = 'ユーザの現在の状態を自動的に保存します。ユーザは後で戻って、中断したところから再開できます。';
 $string['enabletracking'] = '受験トラッキングを有効にする';
 $string['false'] = '×';
 $string['grade_average_attempt'] = '平均点';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = '評定: {$a}';
 $string['grade_highest_attempt'] = '最高点';
 $string['grade_last_attempt'] = '最新の受験';
 $string['grade_manual'] = '評点を計算しない';
+$string['gradenoun_h5p'] = '評定: {$a}';
 $string['h5pactivity:addinstance'] = '新しいH5Pを追加する';
 $string['h5pactivity:reviewattempts'] = 'H5P受験をレビューする';
 $string['h5pactivity:submit'] = 'H5P受験を送信する';
@@ -106,7 +110,7 @@ $string['package_help'] = 'パッケージファイルはH5Pインタラクテ�
 $string['page-mod-h5pactivity-x'] = 'すべてのH5Pモジュールページ';
 $string['pluginadministration'] = 'H5P管理';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'このコンテンツはプレビューモードで表示されています。受験追跡は保存されません。';
+$string['previewmode'] = 'あなたはプレビューモードです。';
 $string['privacy:metadata:attempt'] = '受験回数';
 $string['privacy:metadata:rawscore'] = '獲得点数';
 $string['privacy:metadata:timecreated'] = '追跡されたエレメントが作成された日時です。';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = '前回のエレメント追跡日時
 $string['privacy:metadata:userid'] = 'H5P活動にアクセスしたユーザのIDです。';
 $string['privacy:metadata:xapi_track'] = '受験トラッキング情報';
 $string['privacy:metadata:xapi_track_results'] = '受験結果追跡情報';
+$string['privacy:metadata:xapisummary'] = 'H5Pアクティビティにはユーザが保存しているxAPIコンテンツ状態に関する情報が含まれます。';
 $string['report_viewed'] = 'レポートが閲覧されました。';
 $string['result_compound'] = '結合部分点';
 $string['result_fill-in'] = 'テキスト入力';
@@ -123,12 +128,13 @@ $string['result_other'] = '不明なインタラクションタイプ';
 $string['result_sequencing_answer'] = 'ポジション値';
 $string['result_sequencing_choice'] = 'ポジション';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'すべての受験を表示する ({$a} 送信済み)';
 $string['review_mode'] = '受験をレビューする';
 $string['review_my_attempts'] = '私の受験を表示する';
 $string['review_none'] = '参加者は自分の受験をレビューできない';
 $string['review_on_completion'] = '参加者は自分の受験をレビューできる';
-$string['review_user_attempts'] = 'ユーザ受験を表示する ({$a})';
+$string['review_user_attempts'] = '表示する ({$a})';
+$string['savestatefreq'] = '状態保存頻度';
+$string['savestatefreq_help'] = 'ユーザの現在の状態が保存される頻度 (秒) です。';
 $string['score'] = '点数';
 $string['score_out_of'] = '{$a->rawscore} / {$a->maxscore}';
 $string['search:activity'] = 'H5P -  活動情報';
@@ -136,7 +142,10 @@ $string['startdate'] = '開始日時';
 $string['statement_received'] = 'xAPI記述受信';
 $string['totalscore'] = '合計点';
 $string['tracking_messages'] = '一部のH5Pでは受験数、解答数および評定数のような高度なレポートによる受験トラッキングを提供します。注意: 受験トラッキングデータを提供しないH5Pもあります。その場合、次の設定は効果がありません。';
+$string['trackingdisabled'] = 'この活動の受験トラッキングは有効にされていません。';
+$string['trackingdisabled_enable'] = 'この活動の受験トラッキングは有効にされていません。あなたは<a href="{$a}">設定</a>で有効にできます。';
 $string['true'] = '○';
 $string['usecontentbank'] = 'あなたのH5Pファイルを管理するため<a href="{$a}" target="_blank">コンテンツバンク (新しいウィンドウで開く)</a>を使用する';
 $string['view'] = '表示';
 $string['view_report'] = 'レポートを表示する';
+$string['viewattempts'] = '受験を表示する ({$a})';

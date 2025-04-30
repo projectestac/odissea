@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ar', version '4.1'.
+ * Strings for component 'cache', language 'ar', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'الإمتدادات ال�
 $string['cachedef_contextwithinsights'] = 'السياق مع الرؤى';
 $string['cachedef_course_image'] = 'صور المساق';
 $string['cachedef_course_user_dates'] = 'تواريخ المستخدم للمساقات المضبوطة على نمط التواريخ النسبية';
+$string['cachedef_courseactionsinstances'] = 'عيِّنات مقاطع المساق المحملة';
 $string['cachedef_coursecat'] = 'قوائم تصنيفات المقررات الدراسية لمستخدم معين';
 $string['cachedef_coursecatrecords'] = 'سجلات فئات المقررات الدراسية';
 $string['cachedef_coursecattree'] = 'شجرة تصنيفات المقررات الدراسية';
-$string['cachedef_coursecompletion'] = 'حالة الانتهاء من الدورة';
+$string['cachedef_coursecompletion'] = 'حالة الانتهاء من المساق';
 $string['cachedef_coursecontacts'] = 'قائمة الاتصالات بالمساق';
 $string['cachedef_courseeditorstate'] = 'مفاتيح تخبئة حالة جلسة المساق للتحري عن التغييرات في المساق عند طرف الواجهة';
+$string['cachedef_coursehiddengroups'] = 'عدد المجموعات في المساق ذات تقييدات في الرؤية';
 $string['cachedef_coursemodinfo'] = 'المعلومات المتراكمة حول الوحدات والمقاطع لكل مساق';
 $string['cachedef_coursesectionspreferences'] = 'تفضيلات مقاطع المساق';
 $string['cachedef_databasemeta'] = 'قاعدة البيانات الوصفية للمعلومات';
-$string['cachedef_deprecatedcapabilities'] = 'قائمة إمكانيات النظام المهملة';
 $string['cachedef_eventinvalidation'] = 'إبطال الحدث';
 $string['cachedef_externalbadges'] = 'شارات خارجية لمستخدم معين';
 $string['cachedef_file_imageinfo'] = 'معلومات ملف الصورة، كأبعادها مثلاً';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'استعلامات حرف التقدير';
 $string['cachedef_gradesetting'] = 'إعداد علامة المساق';
 $string['cachedef_groupdata'] = 'معلومات مجموعة المادة';
 $string['cachedef_h5p_content_type_translations'] = 'ترجمات مكتبات نوع المحتوى لـ H5P';
+$string['cachedef_h5p_libraries'] = 'مكتبات H5P';
 $string['cachedef_h5p_library_files'] = 'ملفات مكتبة H5P';
+$string['cachedef_hookcallbacks'] = 'استدعاءات الوَصلة';
 $string['cachedef_htmlpurifier'] = 'HTML تنقية - تنظيف المحتوى';
 $string['cachedef_langmenu'] = 'قائمة اللغات المتاحة';
 $string['cachedef_license'] = 'قائمة التراخيص';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'التأمين';
 $string['cachedef_message_processors_enabled'] = 'تمكين حالة معالجات الرسائل';
 $string['cachedef_message_time_last_message_between_users'] = 'تم إنشاء الوقت لأحدث للرسالة في المحادثة';
 $string['cachedef_modelfirstanalyses'] = 'أول تحليل حسب النموذج وقابل للتحليل';
+$string['cachedef_moodlenet_usercanshare'] = 'يمكن للمستخدمين مشاركة الموارد مع شبكة مودل';
+$string['cachedef_navigation_cache'] = 'خبء التنقل';
 $string['cachedef_navigation_expandcourse'] = 'مساقات التنقل القابلة للتوسيع';
 $string['cachedef_observers'] = 'مراقبوا الحدث';
 $string['cachedef_plugin_functions'] = 'خطوط رجوع الإضافات المتاحة';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'قائمة المستخدمين الم�
 $string['cachedef_tagindexbuilder'] = 'نتائج البحث عن العناصر الموسومة';
 $string['cachedef_tags'] = 'مجموعات الوسوم ومناطقها';
 $string['cachedef_temp_tables'] = 'خبء الجداول المؤقتة';
+$string['cachedef_theme_usedincontext'] = 'تم استعمال المظهر في السياق متخطيًا المظهر الافتراضي';
 $string['cachedef_user_course_content_items'] = 'فقرات محتوى المستخدم (النشاطات، الموارد وأنواعها الفرعية) لكل مساق';
 $string['cachedef_user_favourite_course_content_items'] = 'فقرات المستخدم المعلمة بنجمة';
 $string['cachedef_user_group_groupings'] = 'مجموعات المستخدم ومجموعات لكل مادة';

@@ -32,7 +32,6 @@ defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
 require_once($CFG->dirroot . '/mod/assign/locallib.php');
-require_once($CFG->dirroot . '/mod/assign/upgradelib.php');
 require_once($CFG->dirroot . '/mod/assign/tests/generator.php');
 
 /**
@@ -41,12 +40,17 @@ require_once($CFG->dirroot . '/mod/assign/tests/generator.php');
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class locallib_test extends \advanced_testcase {
-
+final class locallib_test extends \advanced_testcase {
     // Use the generator helper.
     use mod_assign_test_generator;
 
-    public function test_return_links() {
+    /** @var array */
+    public $extrastudents;
+
+    /** @var array */
+    public $extrasuspendedstudents;
+
+    public function test_return_links(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -60,7 +64,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(['param' => 1], $assign->get_return_params());
     }
 
-    public function test_get_feedback_plugins() {
+    public function test_get_feedback_plugins(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -74,7 +78,7 @@ class locallib_test extends \advanced_testcase {
         }
     }
 
-    public function test_get_submission_plugins() {
+    public function test_get_submission_plugins(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -88,7 +92,7 @@ class locallib_test extends \advanced_testcase {
         }
     }
 
-    public function test_is_blind_marking() {
+    public function test_is_blind_marking(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -145,7 +149,7 @@ class locallib_test extends \advanced_testcase {
      *
      * @return array Provider data
      */
-    public function get_assign_perpage_provider() {
+    public static function get_assign_perpage_provider(): array {
         return array(
             array(
                 'maxperpage' => -1,
@@ -175,7 +179,7 @@ class locallib_test extends \advanced_testcase {
      * @param integer $maxperpage site config value
      * @param array $userprefs Array of user preferences and expected page sizes
      */
-    public function test_get_assign_perpage($maxperpage, $userprefs) {
+    public function test_get_assign_perpage($maxperpage, $userprefs): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -199,7 +203,7 @@ class locallib_test extends \advanced_testcase {
      * This is specifically checking an assignment with no grade to make sure we do not
      * get an exception thrown when rendering the grading table for this type of assignment.
      */
-    public function test_gradingtable_filter_by_requiresgrading_no_grade() {
+    public function test_gradingtable_filter_by_requiresgrading_no_grade(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -230,7 +234,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test submissions with extension date.
      */
-    public function test_gradingtable_extension_due_date() {
+    public function test_gradingtable_extension_due_date(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -289,7 +293,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test that late submissions with extension date calculate correctly.
      */
-    public function test_gradingtable_extension_date_calculation_for_lateness() {
+    public function test_gradingtable_extension_date_calculation_for_lateness(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -352,7 +356,7 @@ class locallib_test extends \advanced_testcase {
             $output);
     }
 
-    public function test_gradingtable_status_rendering() {
+    public function test_gradingtable_status_rendering(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -403,7 +407,7 @@ class locallib_test extends \advanced_testcase {
      * Check that group submission information is rendered correctly in the
      * grading table.
      */
-    public function test_gradingtable_group_submissions_rendering() {
+    public function test_gradingtable_group_submissions_rendering(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -493,7 +497,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(1, $xpath->evaluate('count(//td[@id="' . $xpathuniqueidroot . '_r3_c10"]//textarea)'));
     }
 
-    public function test_show_intro() {
+    public function test_show_intro(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -519,7 +523,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(true, $assign->testable_show_intro());
     }
 
-    public function test_has_submissions_or_grades() {
+    public function test_has_submissions_or_grades(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -554,7 +558,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(true, $assign->has_submissions_or_grades());
     }
 
-    public function test_delete_grades() {
+    public function test_delete_grades(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -580,7 +584,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, count($gradinginfo->items));
     }
 
-    public function test_delete_instance() {
+    public function test_delete_instance(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -603,7 +607,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(true, $assign->delete_instance());
     }
 
-    public function test_reset_userdata() {
+    public function test_reset_userdata(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -682,7 +686,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($assign2duedate + (4 * DAYSECS), $instance2->duedate);
     }
 
-    public function test_plugin_settings() {
+    public function test_plugin_settings(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -702,7 +706,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals('12', $plugin->get_config('maxfilesubmissions'));
     }
 
-    public function test_update_calendar() {
+    public function test_update_calendar(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -779,7 +783,7 @@ class locallib_test extends \advanced_testcase {
 
     }
 
-    public function test_update_instance() {
+    public function test_update_instance(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -802,7 +806,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($now, $instance->duedate);
     }
 
-    public function test_cannot_submit_empty() {
+    public function test_cannot_submit_empty(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -821,7 +825,7 @@ class locallib_test extends \advanced_testcase {
             $output, 'Can submit empty offline assignment');
     }
 
-    public function test_cannot_submit_empty_no_submission() {
+    public function test_cannot_submit_empty_no_submission(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -843,7 +847,7 @@ class locallib_test extends \advanced_testcase {
             $output, 'Cannot submit empty onlinetext assignment');
     }
 
-    public function test_can_submit_with_submission() {
+    public function test_can_submit_with_submission(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -878,7 +882,7 @@ class locallib_test extends \advanced_testcase {
      * @param string $data The file submission data
      * @param bool $expected The expected return value
      */
-    public function test_new_submission_empty($data, $expected) {
+    public function test_new_submission_empty($data, $expected): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -914,7 +918,7 @@ class locallib_test extends \advanced_testcase {
      *
      * @return array of testcases
      */
-    public function new_submission_empty_testcases() {
+    public static function new_submission_empty_testcases(): array {
         return [
             'With file and onlinetext' => [
                 [
@@ -931,7 +935,7 @@ class locallib_test extends \advanced_testcase {
         ];
     }
 
-    public function test_list_participants() {
+    public function test_list_participants(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -950,7 +954,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(10, $assign->list_participants(null, true));
     }
 
-    public function test_list_participants_activeenrol() {
+    public function test_list_participants_activeenrol(): void {
         global $CFG, $DB;
 
         $this->resetAfterTest();
@@ -975,7 +979,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(10, $assign->list_participants(null, true));
     }
 
-    public function test_list_participants_with_group_restriction() {
+    public function test_list_participants_with_group_restriction(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -1002,7 +1006,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(2, count($assign->list_participants(null, true)));
     }
 
-    public function test_get_participant_user_not_exist() {
+    public function test_get_participant_user_not_exist(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
 
@@ -1010,7 +1014,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertNull($assign->get_participant('-1'));
     }
 
-    public function test_get_participant_not_enrolled() {
+    public function test_get_participant_not_enrolled(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $assign = $this->create_instance($course);
@@ -1019,7 +1023,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertNull($assign->get_participant($user->id));
     }
 
-    public function test_get_participant_no_submission() {
+    public function test_get_participant_no_submission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $assign = $this->create_instance($course);
@@ -1033,7 +1037,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertFalse($participant->grantedextension);
     }
 
-    public function test_get_participant_granted_extension() {
+    public function test_get_participant_granted_extension(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $assign = $this->create_instance($course);
@@ -1050,7 +1054,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertTrue($participant->grantedextension);
     }
 
-    public function test_get_participant_with_ungraded_submission() {
+    public function test_get_participant_with_ungraded_submission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $assign = $this->create_instance($course);
@@ -1072,7 +1076,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Tests that if a student with no submission who can no longer submit is not a participant.
      */
-    public function test_get_participant_with_no_submission_no_capability() {
+    public function test_get_participant_with_no_submission_no_capability(): void {
         global $DB;
         $this->resetAfterTest();
         $course = self::getDataGenerator()->create_course();
@@ -1093,7 +1097,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Tests that if a student that has submitted but can no longer submit is a participant.
      */
-    public function test_get_participant_with_submission_no_capability() {
+    public function test_get_participant_with_submission_no_capability(): void {
         global $DB;
         $this->resetAfterTest();
         $course = self::getDataGenerator()->create_course();
@@ -1119,7 +1123,7 @@ class locallib_test extends \advanced_testcase {
         self::assertFalse($participant->grantedextension);
     }
 
-    public function test_get_participant_with_graded_submission() {
+    public function test_get_participant_with_graded_submission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $assign = $this->create_instance($course);
@@ -1147,7 +1151,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * No active group and non-group submissions disallowed => 2 groups.
      */
-    public function test_count_teams_no_active_non_group_allowed() {
+    public function test_count_teams_no_active_non_group_allowed(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1170,7 +1174,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * No active group and non group submissions allowed => 2 groups + the default one.
      */
-    public function test_count_teams_non_group_allowed() {
+    public function test_count_teams_non_group_allowed(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1206,7 +1210,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Active group => just selected one.
      */
-    public function test_count_teams_no_active_group() {
+    public function test_count_teams_no_active_group(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1241,7 +1245,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Active group => just selected one.
      */
-    public function test_count_teams_groups_only() {
+    public function test_count_teams_groups_only(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1274,7 +1278,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(2, $assign->count_teams());
     }
 
-    public function test_submit_to_default_group() {
+    public function test_submit_to_default_group(): void {
         global $DB, $SESSION;
 
         $this->resetAfterTest();
@@ -1310,7 +1314,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
     }
 
-    public function test_count_submissions_no_draft() {
+    public function test_count_submissions_no_draft(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1334,7 +1338,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_REOPENED));
     }
 
-    public function test_count_submissions_draft() {
+    public function test_count_submissions_draft(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1358,7 +1362,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_REOPENED));
     }
 
-    public function test_count_submissions_submitted() {
+    public function test_count_submissions_submitted(): void {
         global $SESSION;
 
         $this->resetAfterTest();
@@ -1384,7 +1388,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_REOPENED));
     }
 
-    public function test_count_submissions_graded() {
+    public function test_count_submissions_graded(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1410,7 +1414,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_REOPENED));
     }
 
-    public function test_count_submissions_graded_group() {
+    public function test_count_submissions_graded_group(): void {
         global $SESSION;
 
         $this->resetAfterTest();
@@ -1526,7 +1530,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(1, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_DRAFT));
     }
 
-    public function test_get_grading_userid_list_only_active() {
+    public function test_get_grading_userid_list_only_active(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1541,7 +1545,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(1, $assign->testable_get_grading_userid_list());
     }
 
-    public function test_get_grading_userid_list_all() {
+    public function test_get_grading_userid_list_all(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1557,12 +1561,12 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(2, $assign->testable_get_grading_userid_list());
     }
 
-    public function test_cron() {
+    public function test_cron(): void {
         global $PAGE;
         $this->resetAfterTest();
 
         // First run cron so there are no messages waiting to be sent (from other tests).
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1580,7 +1584,7 @@ class locallib_test extends \advanced_testcase {
         $this->mark_submission($teacher, $assign, $student, 50.0);
 
         $this->expectOutputRegex('/Done processing 1 assignment submissions/');
-        cron_setup_user();
+        \core\cron::setup_user();
         $sink = $this->redirectMessages();
         \assign::cron();
         $messages = $sink->get_messages();
@@ -1600,11 +1604,11 @@ class locallib_test extends \advanced_testcase {
         $this->assertFalse($customdata->blindmarking);
     }
 
-    public function test_cron_without_notifications() {
+    public function test_cron_without_notifications(): void {
         $this->resetAfterTest();
 
         // First run cron so there are no messages waiting to be sent (from other tests).
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1623,7 +1627,7 @@ class locallib_test extends \advanced_testcase {
             'sendstudentnotifications' => 0,
         ]);
 
-        cron_setup_user();
+        \core\cron::setup_user();
         $sink = $this->redirectMessages();
         \assign::cron();
         $messages = $sink->get_messages();
@@ -1631,11 +1635,11 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(0, count($messages));
     }
 
-    public function test_cron_regraded() {
+    public function test_cron_regraded(): void {
         $this->resetAfterTest();
 
         // First run cron so there are no messages waiting to be sent (from other tests).
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1653,14 +1657,14 @@ class locallib_test extends \advanced_testcase {
         $this->mark_submission($teacher, $assign, $student, 50.0);
 
         $this->expectOutputRegex('/Done processing 1 assignment submissions/');
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         // Regrade.
         $this->mark_submission($teacher, $assign, $student, 50.0);
 
         $this->expectOutputRegex('/Done processing 1 assignment submissions/');
-        cron_setup_user();
+        \core\cron::setup_user();
         $sink = $this->redirectMessages();
         \assign::cron();
         $messages = $sink->get_messages();
@@ -1673,11 +1677,11 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test delivery of grade notifications as controlled by marking workflow.
      */
-    public function test_markingworkflow_cron() {
+    public function test_markingworkflow_cron(): void {
         $this->resetAfterTest();
 
         // First run cron so there are no messages waiting to be sent (from other tests).
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1700,7 +1704,7 @@ class locallib_test extends \advanced_testcase {
             'workflowstate' => ASSIGN_MARKING_WORKFLOW_STATE_READYFORRELEASE,
         ]);
 
-        cron_setup_user();
+        \core\cron::setup_user();
         $sink = $this->redirectMessages();
         \assign::cron();
         $messages = $sink->get_messages();
@@ -1714,7 +1718,7 @@ class locallib_test extends \advanced_testcase {
         $assign->testable_apply_grade_to_user($submission, $student->id, 0);
 
         // Now run cron and see that one message was sent.
-        cron_setup_user();
+        \core\cron::setup_user();
         $sink = $this->redirectMessages();
         $this->expectOutputRegex('/Done processing 1 assignment submissions/');
         \assign::cron();
@@ -1725,11 +1729,11 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($assign->get_instance()->name, $messages[0]->contexturlname);
     }
 
-    public function test_cron_message_includes_courseid() {
+    public function test_cron_message_includes_courseid(): void {
         $this->resetAfterTest();
 
         // First run cron so there are no messages waiting to be sent (from other tests).
-        cron_setup_user();
+        \core\cron::setup_user();
         \assign::cron();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1750,7 +1754,7 @@ class locallib_test extends \advanced_testcase {
         \phpunit_util::stop_message_redirection();
 
         // Now run cron and see that one message was sent.
-        cron_setup_user();
+        \core\cron::setup_user();
         $this->preventResetByRollback();
         $sink = $this->redirectEvents();
         $this->expectOutputRegex('/Done processing 1 assignment submissions/');
@@ -1763,7 +1767,7 @@ class locallib_test extends \advanced_testcase {
         $sink->close();
     }
 
-    public function test_is_graded() {
+    public function test_is_graded(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1782,7 +1786,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(false, $assign->testable_is_graded($otherstudent->id));
     }
 
-    public function test_can_grade() {
+    public function test_can_grade(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -1812,7 +1816,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(false, $assign->can_grade());
     }
 
-    public function test_can_view_submission() {
+    public function test_can_view_submission(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -1854,7 +1858,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(false, $assign->can_view_submission($suspendedstudent->id));
     }
 
-    public function test_update_submission() {
+    public function test_update_submission(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1876,7 +1880,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($student->id, $gradinginfo->items[0]->grades[$student->id]->usermodified);
     }
 
-    public function test_update_submission_team() {
+    public function test_update_submission_team(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1918,7 +1922,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($otherstudent->id, $gradinginfo->items[0]->grades[$otherstudent->id]->usermodified);
     }
 
-    public function test_update_submission_suspended() {
+    public function test_update_submission_suspended(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1940,7 +1944,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($student->id, $gradinginfo->items[0]->grades[$student->id]->usermodified);
     }
 
-    public function test_update_submission_blind() {
+    public function test_update_submission_blind(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -1963,7 +1967,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertNull($gradinginfo->items[0]->grades[$student->id]->usermodified);
     }
 
-    public function test_group_submissions_submit_for_marking_requireallteammemberssubmit() {
+    public function test_group_submissions_submit_for_marking_requireallteammemberssubmit(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2017,7 +2021,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
     }
 
-    public function test_group_submissions_submit_for_marking() {
+    public function test_group_submissions_submit_for_marking(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2081,7 +2085,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
     }
 
-    public function test_submissions_open() {
+    public function test_submissions_open(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -2131,7 +2135,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(false, $assign->testable_submissions_open($student->id));
     }
 
-    public function test_get_graders() {
+    public function test_get_graders(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -2148,7 +2152,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(2, $assign->testable_get_graders($student->id));
     }
 
-    public function test_get_graders_separate_groups() {
+    public function test_get_graders_separate_groups(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -2183,7 +2187,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(4, $assign->testable_get_graders($otherstudent->id));
     }
 
-    public function test_get_notified_users() {
+    public function test_get_notified_users(): void {
         global $CFG, $DB;
 
         $this->resetAfterTest();
@@ -2227,7 +2231,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(1, $assign->testable_get_notifiable_users($otherstudent->id));
     }
 
-    public function test_get_notified_users_in_grouping() {
+    public function test_get_notified_users_in_grouping(): void {
         global $CFG, $DB;
 
         $this->resetAfterTest();
@@ -2278,7 +2282,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertCount(0, $assign->testable_get_notifiable_users($otherstudent->id));
     }
 
-    public function test_group_members_only() {
+    public function test_group_members_only(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -2338,7 +2342,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertTrue(isset($participants[$otherstudent->id]));
     }
 
-    public function test_get_uniqueid_for_user() {
+    public function test_get_uniqueid_for_user(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -2358,7 +2362,7 @@ class locallib_test extends \advanced_testcase {
         }
     }
 
-    public function test_show_student_summary() {
+    public function test_show_student_summary(): void {
         global $CFG, $PAGE;
 
         $this->resetAfterTest();
@@ -2422,7 +2426,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertMatchesRegularExpression('/Feedback/', $output, 'Show feedback if there is a grade');
     }
 
-    public function test_show_student_summary_with_feedback() {
+    public function test_show_student_summary_with_feedback(): void {
         global $CFG, $PAGE;
 
         $this->resetAfterTest();
@@ -2495,7 +2499,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test reopen behavior when in "Manual" mode.
      */
-    public function test_attempt_reopen_method_manual() {
+    public function test_attempt_reopen_method_manual(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2593,7 +2597,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test reopen behavior when in "Reopen until pass" mode.
      */
-    public function test_attempt_reopen_method_untilpass() {
+    public function test_attempt_reopen_method_untilpass(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2649,15 +2653,15 @@ class locallib_test extends \advanced_testcase {
         $this->add_submission($student, $assign);
         $this->submit_for_grading($student, $assign);
 
-        // Mark the submission as passing.
-        $this->mark_submission($teacher, $assign, $student, 80.0);
+        // Mark the second submission as passing.
+        $this->mark_submission($teacher, $assign, $student, 80.0, [], 1);
 
         // Check that the student does not have a button for Add a new attempt.
         $this->setUser($student);
         $output = $assign->view_student_summary($student, true);
         $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
 
-        // Re-mark the submission as not passing.
+        // Re-mark the second submission as not passing.
         $this->mark_submission($teacher, $assign, $student, 40.0, [], 1);
 
         // Check that the student now has a button for Add a new attempt.
@@ -2667,7 +2671,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
     }
 
-    public function test_attempt_reopen_method_untilpass_passing() {
+    public function test_attempt_reopen_method_untilpass_passing(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2710,7 +2714,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
     }
 
-    public function test_attempt_reopen_method_untilpass_no_passing_requirement() {
+    public function test_attempt_reopen_method_untilpass_no_passing_requirement(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2756,7 +2760,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test student visibility for each stage of the marking workflow.
      */
-    public function test_markingworkflow() {
+    public function test_markingworkflow(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2858,7 +2862,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Test that a student allocated a specific marker is only shown to that marker.
      */
-    public function test_markerallocation() {
+    public function test_markerallocation(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2898,7 +2902,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Ensure that a teacher cannot submit for students as standard.
      */
-    public function test_teacher_submit_for_student() {
+    public function test_teacher_submit_for_student(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2930,7 +2934,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Ensure that a teacher with the editothersubmission capability can submit on behalf of a student.
      */
-    public function test_teacher_submit_for_student_with_capability() {
+    public function test_teacher_submit_for_student_with_capability(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -2997,7 +3001,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Ensure that disabling submit after the cutoff date works as expected.
      */
-    public function test_disable_submit_after_cutoff_date() {
+    public function test_disable_submit_after_cutoff_date(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -3050,7 +3054,7 @@ class locallib_test extends \advanced_testcase {
      * @param   array   $instanceconfig
      * @param   bool    $isenabled
      */
-    public function test_submission_comment_plugin_settings($globalenabled, $instanceconfig, $isenabled) {
+    public function test_submission_comment_plugin_settings($globalenabled, $instanceconfig, $isenabled): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -3062,7 +3066,7 @@ class locallib_test extends \advanced_testcase {
         $this->assertEquals($isenabled, (bool) $plugin->is_enabled('enabled'));
     }
 
-    public function submission_plugin_settings_provider() {
+    public static function submission_plugin_settings_provider(): array {
         return [
             'CFG->usecomments true, empty config => Enabled by default' => [
                 true,
@@ -3108,7 +3112,7 @@ class locallib_test extends \advanced_testcase {
     /**
      * Testing for comment inline settings
      */
-    public function test_feedback_comment_commentinline() {
+    public function test_feedback_comment_commentinline(): void {
         global $CFG, $USER;
 
         $this->resetAfterTest();
@@ -3188,7 +3192,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * @param   array   $instanceconfig
      * @param   bool    $isenabled
      */
-    public function test_feedback_plugin_settings($instanceconfig, $isenabled) {
+    public function test_feedback_plugin_settings($instanceconfig, $isenabled): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
 
@@ -3197,7 +3201,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
         $this->assertEquals($isenabled, (bool) $plugin->is_enabled('enabled'));
     }
 
-    public function feedback_plugin_settings_provider() {
+    public static function feedback_plugin_settings_provider(): array {
         return [
             'No configuration => disabled' => [
                 [],
@@ -3221,7 +3225,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing if gradebook feedback plugin is enabled.
      */
-    public function test_is_gradebook_feedback_enabled() {
+    public function test_is_gradebook_feedback_enabled(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3246,7 +3250,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing if gradebook feedback plugin is disabled.
      */
-    public function test_is_gradebook_feedback_disabled() {
+    public function test_is_gradebook_feedback_disabled(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3269,7 +3273,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing can_edit_submission.
      */
-    public function test_can_edit_submission() {
+    public function test_can_edit_submission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3294,7 +3298,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing can_edit_submission with the editothersubmission capability.
      */
-    public function test_can_edit_submission_with_editothersubmission() {
+    public function test_can_edit_submission_with_editothersubmission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3325,7 +3329,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing can_edit_submission
      */
-    public function test_can_edit_submission_separategroups() {
+    public function test_can_edit_submission_separategroups(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3363,7 +3367,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing can_edit_submission
      */
-    public function test_can_edit_submission_separategroups_with_editothersubmission() {
+    public function test_can_edit_submission_separategroups_with_editothersubmission(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3372,6 +3376,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
         $student2 = $this->getDataGenerator()->create_and_enrol($course, 'student');
         $student3 = $this->getDataGenerator()->create_and_enrol($course, 'student');
         $student4 = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $student5 = $this->getDataGenerator()->create_and_enrol($course, 'student');
 
         $grouping = $this->getDataGenerator()->create_grouping(array('courseid' => $course->id));
         $group1 = $this->getDataGenerator()->create_group(['courseid' => $course->id]);
@@ -3389,6 +3394,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
             'submissiondrafts' => 1,
             'groupingid' => $grouping->id,
             'groupmode' => SEPARATEGROUPS,
+            'preventsubmissionnotingroup' => 0,
         ]);
 
         // Add the capability to the new \assignment for student 1.
@@ -3402,18 +3408,33 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
         $this->assertTrue($assign->can_edit_submission($student2->id, $student1->id));
         $this->assertFalse($assign->can_edit_submission($student3->id, $student1->id));
         $this->assertFalse($assign->can_edit_submission($student4->id, $student1->id));
+        $this->assertFalse($assign->can_edit_submission($student5->id, $student1->id));
 
         // Verify other students do not have the ability to edit submissions for other users.
         $this->assertTrue($assign->can_edit_submission($student2->id, $student2->id));
         $this->assertFalse($assign->can_edit_submission($student1->id, $student2->id));
         $this->assertFalse($assign->can_edit_submission($student3->id, $student2->id));
         $this->assertFalse($assign->can_edit_submission($student4->id, $student2->id));
+        $this->assertFalse($assign->can_edit_submission($student5->id, $student2->id));
+
+        // Add the required capability to edit other submissions and to view all groups to the teacher.
+        $roleid = create_role('Dummy role 2', 'dummyrole2', 'dummy role description');
+        assign_capability('mod/assign:editothersubmission', CAP_ALLOW, $roleid, $assign->get_context()->id);
+        assign_capability('moodle/site:accessallgroups', CAP_ALLOW, $roleid, $assign->get_context()->id);
+        role_assign($roleid, $teacher->id, $assign->get_context()->id);
+
+        // Verify the teacher has the ability to edit submissions for other users including users not in a group.
+        $this->assertTrue($assign->can_edit_submission($student1->id, $teacher->id));
+        $this->assertTrue($assign->can_edit_submission($student2->id, $teacher->id));
+        $this->assertTrue($assign->can_edit_submission($student3->id, $teacher->id));
+        $this->assertTrue($assign->can_edit_submission($student4->id, $teacher->id));
+        $this->assertTrue($assign->can_edit_submission($student5->id, $teacher->id));
     }
 
     /**
      * Test if the view blind details capability works
      */
-    public function test_can_view_blind_details() {
+    public function test_can_view_blind_details(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3446,7 +3467,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing get_shared_group_members
      */
-    public function test_get_shared_group_members() {
+    public function test_get_shared_group_members(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3499,7 +3520,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Testing get_shared_group_members
      */
-    public function test_get_shared_group_members_override() {
+    public function test_get_shared_group_members_override(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3560,7 +3581,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test get plugins file areas
      */
-    public function test_get_plugins_file_areas() {
+    public function test_get_plugins_file_areas(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3633,7 +3654,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * This function needs to obey the group override logic as per the assign grading table and
      * the overview block.
      */
-    public function test_override_exists() {
+    public function test_override_exists(): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -3732,7 +3753,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test the quicksave grades processor
      */
-    public function test_process_save_quick_grades() {
+    public function test_process_save_quick_grades(): void {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
         $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
@@ -3808,7 +3829,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test updating activity completion when submitting an assessment.
      */
-    public function test_update_activity_completion_records_solitary_submission() {
+    public function test_update_activity_completion_records_solitary_submission(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course(['enablecompletion' => 1]);
@@ -3844,7 +3865,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test updating activity completion when submitting an assessment.
      */
-    public function test_update_activity_completion_records_team_submission() {
+    public function test_update_activity_completion_records_team_submission(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course(['enablecompletion' => 1]);
@@ -3895,7 +3916,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test updating activity completion when submitting an assessment for MDL-67126.
      */
-    public function test_update_activity_completion_records_team_submission_new() {
+    public function test_update_activity_completion_records_team_submission_new(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course(['enablecompletion' => 1]);
@@ -3935,7 +3956,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * Data provider for test_fix_null_grades
      * @return array[] Test data for test_fix_null_grades. Each element should contain grade, expectedcount and gradebookvalue
      */
-    public function fix_null_grades_provider() {
+    public static function fix_null_grades_provider(): array {
         return [
             'Negative less than one is errant' => [
                 'grade' => -0.64,
@@ -3970,7 +3991,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * @param number $expectedcount The finalgrade we expect in the gradebook after fixing the grades.
      * @dataProvider fix_null_grades_provider
      */
-    public function test_fix_null_grades($grade, $gradebookvalue) {
+    public function test_fix_null_grades($grade, $gradebookvalue): void {
         global $DB;
 
         $this->resetAfterTest();
@@ -4010,7 +4031,6 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
 
         // Call fix_null_grades().
         $method = new \ReflectionMethod(\assign::class, 'fix_null_grades');
-        $method->setAccessible(true);
         $result = $method->invoke($assign);
 
         $this->assertSame(true, $result);
@@ -4027,7 +4047,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test grade override displays 'Graded' for students
      */
-    public function test_grade_submission_override() {
+    public function test_grade_submission_override(): void {
         global $DB, $PAGE, $OUTPUT;
 
         $this->resetAfterTest();
@@ -4083,7 +4103,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test the result of get_filters is consistent.
      */
-    public function test_get_filters() {
+    public function test_get_filters(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -4103,7 +4123,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * @param array $expectedproperties an map containing the expected names and values for the assign instance data.
      */
     public function test_assign_get_instance(array $courseconfig, array $assignconfig, array $enrolconfig,
-            array $expectedproperties) {
+            array $expectedproperties): void {
         $this->resetAfterTest();
 
         set_config('enablecourserelativedates', true); // Enable relative dates at site level.
@@ -4122,7 +4142,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * The test_assign_get_instance data provider.
      */
-    public function assign_get_instance_provider() {
+    public static function assign_get_instance_provider(): array {
         $timenow = time();
 
         // The get_default_instance() method shouldn't calculate any properties per-user. It should just return the record data.
@@ -4183,7 +4203,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      * @param array $expectedproperties an map containing the expected names and values for the assign instance data.
      */
     public function test_assign_get_default_instance(array $courseconfig, array $assignconfig, array $enrolconfig,
-            array $expectedproperties) {
+            array $expectedproperties): void {
         $this->resetAfterTest();
 
         set_config('enablecourserelativedates', true); // Enable relative dates at site level.
@@ -4203,7 +4223,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * The test_assign_get_default_instance data provider.
      */
-    public function assign_get_default_instance_provider() {
+    public static function assign_get_default_instance_provider(): array {
         $timenow = time();
 
         // The get_default_instance() method shouldn't calculate any properties per-user. It should just return the record data.
@@ -4243,7 +4263,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test that cron task uses task API to get its last run time.
      */
-    public function test_cron_use_task_api_to_get_lastruntime() {
+    public function test_cron_use_task_api_to_get_lastruntime(): void {
         global $DB;
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course();
@@ -4293,7 +4313,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     /**
      * Test submissions that need grading output after one ungraded submission
      */
-    public function test_submissions_need_grading() {
+    public function test_submissions_need_grading(): void {
         global $PAGE;
 
         $this->resetAfterTest();
@@ -4348,7 +4368,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::should_provide_intro_attachments
      */
-    public function test_should_provide_intro_attachments_with_show_intro_disabled() {
+    public function test_should_provide_intro_attachments_with_show_intro_disabled(): void {
         $this->resetAfterTest();
         $futuredate = time() + 300;
         list($assign, $instance, $student) = $this->create_submission([
@@ -4363,7 +4383,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::should_provide_intro_attachments
      */
-    public function test_should_provide_intro_attachments_with_bypass_capability() {
+    public function test_should_provide_intro_attachments_with_bypass_capability(): void {
         $this->resetAfterTest();
         list($assign, $instance, $student) = $this->create_submission([
             'submissionattachments' => 1,
@@ -4378,7 +4398,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::should_provide_intro_attachments
      */
-    public function test_should_provide_intro_attachments_with_submissionattachments_disabled() {
+    public function test_should_provide_intro_attachments_with_submissionattachments_disabled(): void {
         $this->resetAfterTest();
         list($assign, $instance, $student) = $this->create_submission();
         $this->assertTrue($assign->should_provide_intro_attachments($student->id));
@@ -4389,7 +4409,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::should_provide_intro_attachments
      */
-    public function test_should_provide_intro_attachments_with_submissionattachments_enabled_and_submissions_closed() {
+    public function test_should_provide_intro_attachments_with_submissionattachments_enabled_and_submissions_closed(): void {
         $this->resetAfterTest();
         // Set cut-off date to the past.
         list($assign, $instance, $student) = $this->create_submission([
@@ -4405,7 +4425,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::should_provide_intro_attachments
      */
-    public function test_should_provide_intro_attachments_submissionattachments_enabled_and_an_open_submission() {
+    public function test_should_provide_intro_attachments_submissionattachments_enabled_and_an_open_submission(): void {
         $this->resetAfterTest();
         set_config('enabletimelimit', '1', 'assign');
         list($assign, $instance, $student) = $this->create_submission([
@@ -4424,7 +4444,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::is_attempt_in_progress
      */
-    public function test_is_attempt_in_progress_with_open_submission() {
+    public function test_is_attempt_in_progress_with_open_submission(): void {
         global $DB;
         $this->resetAfterTest();
         set_config('enabletimelimit', '1', 'assign');
@@ -4443,7 +4463,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::is_attempt_in_progress
      */
-    public function test_is_attempt_in_progress_with_open_submission_and_no_timestarted() {
+    public function test_is_attempt_in_progress_with_open_submission_and_no_timestarted(): void {
         $this->resetAfterTest();
         set_config('enabletimelimit', '1', 'assign');
         list($assign, $instance, $student) = $this->create_submission([
@@ -4458,7 +4478,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::is_attempt_in_progress
      */
-    public function test_is_attempt_in_progress_with_no_open_submission() {
+    public function test_is_attempt_in_progress_with_no_open_submission(): void {
         global $DB;
         $this->resetAfterTest();
         set_config('enabletimelimit', '1', 'assign');
@@ -4545,7 +4565,7 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
      *
      * @covers \assign::is_userid_filtered
      */
-    public function test_is_userid_filtered() {
+    public function test_is_userid_filtered(): void {
         $this->resetAfterTest();
 
         // Generate data and simulate student submissions.

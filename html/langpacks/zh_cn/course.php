@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'zh_cn', version '4.1'.
+ * Strings for component 'course', language 'zh_cn', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = '无页脚';
 $string['activitychooserrecommendations'] = '推荐的活动';
 $string['activitychoosersettings'] = '活动选择器设置';
 $string['activitychoosertabmode'] = '活动选择器标签';
-$string['activitychoosertabmode_desc'] = '通过活动选择器，教师可以轻松选择要添加到课程中的活动和资源。 此设置确定应在其中显示哪些标签。 请注意，仅当用户为一个或多个活动标星时，才为用户显示“标星的”标签，并且仅当站点管理员指定了一些推荐活动时，才显示“推荐的”标签。';
+$string['activitychoosertabmode_desc'] = '活动选择器列出了教师要添加到其课程中的活动和资源。要将项目添加到“推荐”选项卡，请转到 <a href=\'../course/recommendations.php\'>推荐的活动</a>。';
+$string['activitychoosertabmodefive'] = '已加星标、推荐、全部';
+$string['activitychoosertabmodefour'] = '已加星标、推荐、全部、活动、资源';
 $string['activitychoosertabmodeone'] = '标星的，全部，活动，资源，推荐的';
+$string['activitychoosertabmodesix'] = '已加星标、推荐、活动、资源';
 $string['activitychoosertabmodethree'] = '标星的，活动，资源，推荐的';
 $string['activitychoosertabmodetwo'] = '标星的，全部，推荐的';
 $string['activitydate:closed'] = '已关闭:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = '标星{$a}活动';
 $string['aria:recommendedtab'] = '推荐的活动';
 $string['browsecourseadminindex'] = '使用此索引浏览课程管理。';
 $string['browsesettingindex'] = '使用此索引浏览课程管理。';
+$string['communicationroomlink'] = '与课程参与者聊天';
 $string['completion_automatic:done'] = '完成:';
 $string['completion_automatic:failed'] = '失败:';
 $string['completion_automatic:todo'] = '要做:';
@@ -65,6 +69,7 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname}被{$a->setby}�
 $string['completionrequirements'] = '{$a}的完成要求';
 $string['courseaccess'] = '课程访问权限';
 $string['coursealreadyfinished'] = '课程已经结束';
+$string['coursecommunication_desc'] = '新课程的默认通信服务。默认情况下，现有课程不会选择任何提供商。';
 $string['coursecontentnotification'] = '发送内容更改通知';
 $string['coursecontentnotification_help'] = '勾选此框以通知课程参与者新的或更改的活动或资源。 只有可以访问活动或资源的用户才会收到通知。';
 $string['coursecontentnotifnew'] = '{$a->coursename}新内容';
@@ -74,6 +79,7 @@ $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href=""{$a->l
 $string['coursecontentnotifupdate'] = '{$a->coursename} 内容更改';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href=""{$a->link}"">{$a->modulename}</a>
 在课程中已更改 <a href=""{$a->courselink}"">{$a->coursename}</a>.</p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
+$string['coursecount'] = '课程数';
 $string['coursenotyetfinished'] = '课程还没有结束';
 $string['coursenotyetstarted'] = '课程还没有开始';
 $string['courseparticipants'] = '课程参与者';
@@ -87,6 +93,7 @@ $string['customfield_visibletoall'] = '每个人';
 $string['customfield_visibletoteachers'] = '教师';
 $string['customfieldsettings'] = '普通课程自定义字段设置';
 $string['daystakingcourse'] = '上课天数';
+$string['defaultsettingscategory'] = '默认设置';
 $string['downloadcontent'] = '包含在课程内容下载中';
 $string['downloadcontent_help'] = '此活动或资源是否应包含在可供下载的课程内容的zip文件中？ 文件、文件夹、页面和标签可以完全下载。对于其他所有活动和资源，仅名称和描述可以下载。此选项需要在课程设置中启用下载课程内容。
 
@@ -97,7 +104,9 @@ $string['downloadcoursecontent_help'] = '此设置确定具有下载课程内容
 $string['enabledownloadcoursecontent'] = '启用课程内容下载';
 $string['errorendbeforestart'] = '结束日期({$a})在课程开始日期之前。';
 $string['favourite'] = '标星的课程';
+$string['gotosection'] = '转到{$a}节';
 $string['gradetopassnotset'] = '本课程没有设置及格成绩，可以在课程的成绩项目中设置(成绩册设置)。';
+$string['hideendedcoursestask'] = '在结束日期隐藏课程';
 $string['informationformodule'] = '关于{$a}活动的信息';
 $string['module'] = '活动';
 $string['namewithlink'] = '带链接的类别';
@@ -111,6 +120,8 @@ $string['noteachinginfomessage'] = '{$a->userfirstname}，您好！<p>开始日�
 $string['participants:perpage'] = '每页的参与者数量';
 $string['participants:perpage_help'] = '在每门课程的参与人页面上显示的用户数量。';
 $string['participantsnavigation'] = '参加者三级导航。';
+$string['pdfexportfont'] = 'PDF 字体';
+$string['pdfexportfont_help'] = '用于生成的 PDF 文件（例如作业提交）的字体';
 $string['privacy:completionpath'] = '课程完成情况';
 $string['privacy:favouritespath'] = '课程标星的信息';
 $string['privacy:metadata:activityfavouritessummary'] = '此课程系统包含用户已为活动选择器中的哪些项目标星的信息。';
@@ -123,6 +134,8 @@ $string['relativedatessubmissionduedateafter'] = '课程开始后的{$a->datedif
 $string['relativedatessubmissionduedatebefore'] = '课程开始前的{$a->datediffstr}';
 $string['searchactivitiesbyname'] = '按名称搜索活动';
 $string['searchresults'] = '搜索结果：{$a}';
+$string['sectionlink'] = '永久链接';
+$string['showstartedcoursestask'] = '在开始日期显示课程';
 $string['studentsatriskincourse'] = '{$a}课程中处于风险之中的学生';
 $string['studentsatriskinfomessage'] = '{$a->userfirstname}, 您好！<p>已确认{$a->coursename} 课程中的学生处于风险之中。</ p>';
 $string['submitsearch'] = '提交搜索';
@@ -153,3 +166,4 @@ $string['targetlabelstudentgradetopassno'] = '有可能获得通过此课程的�
 $string['targetlabelstudentgradetopassyes'] = '学生有不能获得通过该课程的最低成绩的风险。';
 $string['targetlabelteachingno'] = '‎课程有无法开始的风险‎';
 $string['targetlabelteachingyes'] = '具有教学权限的用户可以访问该课程';
+$string['totalactivities'] = '活动：{$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'it', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'it', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,4 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Salvataggio automatico';
-$string['pluginname'] = 'Salvataggio automatico Tiny';
+$string['pluginname'] = 'Salvataggio automatico';
+$string['privacy:metadata:database:tiny_autosave'] = 'Tabella che memorizza i dati della sessione di salvataggio automatico dell\'editor TinyMCE';
+$string['privacy:metadata:database:tiny_autosave:drafttext'] = 'Contenuto del testo della sessione di salvataggio automatico';
+$string['privacy:metadata:database:tiny_autosave:timemodified'] = 'Orario dell\'ultima modifica della sessione di salvataggio automatico';
+$string['privacy:metadata:database:tiny_autosave:userid'] = 'ID dell\'utente che ha creato la sessione di salvataggio automatico';

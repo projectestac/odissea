@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ca', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'ca', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -30,12 +30,15 @@ $string['ajaxclicktoclose'] = 'Cliqueu la caixeta per esborrar-ho';
 $string['ajaxerror'] = 'Error';
 $string['ajaxfailedupdate'] = 'No es pot actualitzar [1] per [2]';
 $string['ajaxfieldchanged'] = 'El camp que esteu editant ha estat modificat, el voleu actualitzar al nou valor?';
+$string['collapsedcolumns'] = 'Columnes contretes <span class="badge badge-pill badge-primary ml-1" data-collapse="count">{$a}</span>';
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe del qualificador';
 $string['grader:manage'] = 'Gestionar l\'informe del qualificador';
 $string['grader:view'] = 'Veure l\'informe del qualificador';
 $string['overriddengrade'] = 'Qualificació rectificada';
 $string['pluginname'] = 'Informe del qualificador';
 $string['preferences'] = 'Preferències de l\'informe de qualificacions';
+$string['privacy:metadata:preference:grade_report_quickgrading'] = 'Si s\'ha de mostrar un quadre d\'entrada de text per a cada qualificació, tot permetent editar moltes qualificacions al mateix temps';
+$string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Si s\'ha de mostrar un quadre d\'entrada de text de comentaris amb una vora puntejada per a cada qualificació, tot permetent editar els comentaris de moltes qualificacions alhora';
 $string['summarygrader'] = 'Una taula amb els noms dels estudiants a la primera columna, amb activitats avaluables agrupades per curs i categoria a la part superior.';
 $string['useractivityfeedback'] = 'retroacció {$a}';
 $string['useractivitygrade'] = 'qualificació {$a}';

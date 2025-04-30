@@ -25,6 +25,8 @@
 
 namespace core;
 
+use Exception;
+
 defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__.'/../../moodle_database.php');
@@ -162,13 +164,13 @@ abstract class test_moodle_database extends \moodle_database {
      * @param string $table
      * @return array database_column_info[] of database_column_info objects indexed with column names
      */
-    public function fetch_columns($table) : array {
+    public function fetch_columns($table): array {
         return $this->_tables[$table]['columns'];
     }
 
     /**
      * Default implementation
-     * @param StdClass $column metadata
+     * @param \stdClass $column metadata
      * @param mixed $value
      * @return mixed $value
      */
@@ -324,10 +326,10 @@ abstract class test_moodle_database extends \moodle_database {
 
     /**
      * Default implementation, throws Exception
-     * @return string $sql
+     * @return string $arr,...
      * @throws Exception
      */
-    public function sql_concat() {
+    public function sql_concat(...$arr) {
         throw new Exception("sql_concat() not implemented");
     }
 

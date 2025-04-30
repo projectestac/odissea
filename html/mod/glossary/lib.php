@@ -1009,8 +1009,8 @@ function glossary_get_entries($glossaryid, $entrylist, $pivot = "") {
 /**
  * @global object
  * @global object
- * @param object $concept
- * @param string $courseid
+ * @param string $concept
+ * @param int $courseid
  * @return array
  */
 function glossary_get_entries_search($concept, $courseid) {
@@ -1289,7 +1289,7 @@ function glossary_print_entry_icons($course, $cm, $glossary, $entry, $mode='',$h
 
             $url = "edit.php?cmid=$cm->id&amp;id=$entry->id&amp;mode=$mode&amp;hook=".urlencode($hook);
             $return .= "<a class='icon' title=\"" . get_string("edit") . "\" href=\"$url\">" .
-                       $OUTPUT->pix_icon('t/edit', get_string('editentrya', 'mod_glossary', $altsuffix)) . '</a>';
+                       $OUTPUT->pix_icon('i/edit', get_string('editentrya', 'mod_glossary', $altsuffix)) . '</a>';
         } elseif ( $importedentry ) {
             $return .= "<font size=\"-1\">" . get_string("exportedentry","glossary") . "</font>";
         }
@@ -1834,7 +1834,7 @@ function glossary_print_approval_menu($cm, $glossary,$mode, $hook, $sortkey = ''
 
     glossary_print_all_links($cm, $glossary, $mode, $hook);
 
-    glossary_print_sorting_links($cm, $mode, 'CREATION', 'asc');
+    glossary_print_sorting_links($cm, $mode, $sortkey, $sortorder);
 }
 /**
  * @param object $cm
@@ -2056,9 +2056,14 @@ function glossary_print_sorting_links($cm, $mode, $sortkey = '',$sortorder = '')
     $bopen  = '<b>';
     $bclose = '</b>';
 
-     $neworder = '';
-     $currentorder = '';
-     $currentsort = '';
+    $neworder = '';
+    $currentorder = '';
+    $currentsort = '';
+
+    if ($sortkey === '') {
+        $sortkey = 'CREATION';
+    }
+
      if ( $sortorder ) {
          if ( $sortorder == 'asc' ) {
              $currentorder = $asc;
@@ -2081,20 +2086,18 @@ function glossary_print_sorting_links($cm, $mode, $sortkey = '',$sortorder = '')
              $icon = " " . $OUTPUT->pix_icon('asc', $newordertitle, 'glossary');
          }
      }
-     $ficon     = '';
-     $fneworder = '';
-     $fbtag     = '';
-     $fendbtag  = '';
 
-     $sicon     = '';
-     $sneworder = '';
+    $ficon     = '';
+    $fneworder = '';
 
-     $sbtag      = '';
-     $fbtag      = '';
-     $fendbtag      = '';
-     $sendbtag      = '';
+    $sicon     = '';
+    $sneworder = '';
 
-     $sendbtag  = '';
+    $sbtag      = '';
+    $fbtag      = '';
+    $fendbtag      = '';
+
+    $sendbtag  = '';
 
      if ( $sortkey == 'CREATION' or $sortkey == 'FIRSTNAME' ) {
          $ficon       = $icon;
@@ -2363,6 +2366,7 @@ function glossary_generate_export_file($glossary, $ignored = "", $hook = 0) {
                     $co .= glossary_full_tag("CONCEPT",4,false,trim($entry->concept));
                     $co .= glossary_full_tag("DEFINITION",4,false,$entry->definition);
                     $co .= glossary_full_tag("FORMAT",4,false,$entry->definitionformat); // note: use old name for BC reasons
+                    $co .= glossary_full_tag('DEFINITIONTRUST', 4, false, $entry->definitiontrust);
                     $co .= glossary_full_tag("USEDYNALINK",4,false,$entry->usedynalink);
                     $co .= glossary_full_tag("CASESENSITIVE",4,false,$entry->casesensitive);
                     $co .= glossary_full_tag("FULLMATCH",4,false,$entry->fullmatch);
@@ -2791,7 +2795,7 @@ function glossary_get_post_actions() {
 /**
  * Implementation of the function for printing the form elements that control
  * whether the course reset functionality affects the glossary.
- * @param object $mform form passed by reference
+ * @param MoodleQuickForm $mform form passed by reference
  */
 function glossary_reset_course_form_definition(&$mform) {
     $mform->addElement('header', 'glossaryheader', get_string('modulenameplural', 'glossary'));
@@ -3167,7 +3171,7 @@ function glossary_extend_settings_navigation(settings_navigation $settings, navi
     // Safe guard check - Ideally, there shouldn't be any hidden entries if the glossary has 'defaultapproval'.
     if (has_capability('mod/glossary:approve', $settings->get_page()->cm->context) &&
             (!$glossary->defaultapproval || $hiddenentries)) {
-        $glossarynode->add(get_string('pendingapproval', 'glossary'),
+        $glossarynode->add(get_string('pendingapprovalcount', 'glossary', $hiddenentries),
             new moodle_url('/mod/glossary/view.php', ['id' => $settings->get_page()->cm->id, 'mode' => 'approval']),
             navigation_node::TYPE_CUSTOM, null, 'pendingapproval');
     }

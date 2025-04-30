@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'uk', version '4.1'.
+ * Strings for component 'qtype_ordering', language 'uk', version '4.4'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -30,7 +30,6 @@ $string['addmultipleanswers'] = 'Додати {$a} елементів';
 $string['addsingleanswer'] = 'Додати один елемент';
 $string['allornothing'] = 'Все або нічого';
 $string['answer'] = 'Текст елементу';
-$string['answerheader'] = 'Елемент перетягування {no}';
 $string['correctorder'] = 'Правильний порядок для цих елементів такий:';
 $string['defaultanswerformat'] = 'Стандартний формат відповіді';
 $string['defaultquestionname'] = 'Перетягніть наступні елементи в правильному порядку.';
@@ -85,7 +84,6 @@ $string['pluginnameadding'] = 'Додавання питання на впоря
 $string['pluginnameediting'] = 'Редагування питання на впорядкування';
 $string['pluginnamesummary'] = 'Розмістіть перемішані елементи в правильному порядку.';
 $string['positionx'] = 'Позиція {$a}';
-$string['privacy:metadata'] = 'Модуль типу питання на впорядкування не зберігає жодних особистих даних.';
 $string['relativeallpreviousandnext'] = 'Відносно ВСІХ попередніх і наступних елементів';
 $string['relativenextexcludelast'] = 'Відносно наступного елемента (за винятком останнього)';
 $string['relativenextincludelast'] = 'Відносно наступного елемента (включно з останнім)';

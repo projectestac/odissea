@@ -19,7 +19,7 @@
  *
  * @package   format_simple
  * @copyright 2012-onwards UPCnet
- * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, 
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
  *            Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -36,30 +36,40 @@ class cmname extends cmname_base {
      * Override export for template data.
      *
      * @param renderer_base $output typically, the renderer that's calling this function
-     * @return stdClass data context for a mustache template
+     * @return array data context for a mustache template
      */
-	public function export_for_template(renderer_base $output): array {
+    public function export_for_template(renderer_base $output): array {
+
         global $PAGE;
 
-		$format = $this->format;
+        $format = $this->format;
         $course = $format->get_course();
         $userisediting = $PAGE->user_is_editing();
         $mod = $this->mod;
 
         $data = parent::export_for_template($output);
+
+        if ($mod->modname === 'label') {
+            $data['content'] = $mod->content;
+            $data['iconclass'] = '';
+            return $data;
+        }
+
         if (!$userisediting) {
             global $CFG;
-            require_once($CFG->dirroot . '/course/format/simple/lib.php');
+            require_once $CFG->dirroot . '/course/format/simple/lib.php';
 
-            $iconsize = !empty($course->simpleiconsize)?$course->simpleiconsize:renderer::DEFAULTICONSIZE;
+            $iconsize = !empty($course->simpleiconsize) ? $course->simpleiconsize : renderer::DEFAULTICONSIZE;
             $newicon = simple_get_icon_url($mod, $mod->id, $iconsize);
-            
+
             $data['iconsize'] = $iconsize;
             $data['icon'] = $newicon;
-        } 
+        }
 
         $data['iconclass'] = '';
+
         return $data;
-	}
+
+    }
 
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ko', version '4.1'.
+ * Strings for component 'message', language 'ko', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -53,7 +53,6 @@ $string['contacts'] = '연락처';
 $string['conversationactions'] = '대화 실행 메뉴';
 $string['decline'] = '거절';
 $string['defaultmessageoutputs'] = '기본 메세지 출력';
-$string['defaults'] = '기본';
 $string['deleteallconfirm'] = '정말 이 모든 대화를 삭제하시겠습니까?  다른 참석자들한테는 적용되지 않을 것입니다.';
 $string['deleteallmessages'] = '모든 메시지 삭제';
 $string['deleteallselfconfirm'] = '이 모든 사적인 대화를 삭제하시겠습니까?';
@@ -87,9 +86,7 @@ $string['individualconversations'] = '비공개';
 $string['info'] = '사용자 정보';
 $string['isnotinyourcontacts'] = '{$a}님은 연락처에 없습니다.';
 $string['loggedin'] = '온라인';
-$string['loggedindescription'] = '내가 로그인 했을때';
 $string['loggedoff'] = '오프라인';
-$string['loggedoffdescription'] = '내가 오프라인일때';
 $string['managemessageoutputs'] = '메세지 출력 관리';
 $string['message'] = '쪽지';
 $string['messagedrawerviewsettings'] = '메시지 설정';
@@ -135,8 +132,6 @@ $string['selfconversation'] = '개인 공간';
 $string['selfconversationdefaultmessage'] = '나중에 액세스 할 수 있도록 초안 메시지, 링크, 메모 등을 저장합니다.';
 $string['send'] = '보내기';
 $string['sendcontactrequest'] = '연락처 요청 보내기';
-$string['sendingvia'] = '"{$a->processor}"를 통해 "{$a->provider}" 를 보냄';
-$string['sendingviawhen'] = '{$a->state} 일때 "{$a->processor}"를 통해 "{$a->provider}" 를 보냄';
 $string['sendmessage'] = '쪽지 보내기';
 $string['sendmessageto'] = '{$a} 에게 쪽지 보내기';
 $string['sendmessagetopopup'] = '{$a} 에게 쪽지 보내기 - 새 창';

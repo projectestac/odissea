@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ca', version '4.1'.
+ * Strings for component 'enrol', language 'ca', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,15 @@ $string['assignnotpermitted'] = 'No teniu permís o no podeu assignar rols en aq
 $string['bulkuseroperation'] = 'Operació amb usuaris en bloc';
 $string['configenrolplugins'] = 'Seleccioneu tots els mòduls requerits i organitzeu-los en l\'ordre apropiat.';
 $string['custominstancename'] = 'Nom de la instància personalitzat';
+$string['customwelcomemessage'] = 'Missatge de benvinguda personalitzat';
+$string['customwelcomemessage_help'] = 'Podeu afegir un missatge personalitzat de benvinguda en text net o en format automàtic de Moodle, incloses les etiquetes HTML i les etiquetes en múltiples llengües.
+
+Els marcadors de posició següents poden ser inclosos en el missatge:
+
+* Nom del curs {$a->coursename}
+* Enllaç a la pàgina de perfil de l\'usuari {$a->profileurl}
+*Adreça electrònica de l\'usuari {$a->email}
+*Nom complet de l\'usuari {$a->fullname}';
 $string['defaultenrol'] = 'Afegeix instància als nous cursos';
 $string['defaultenrol_desc'] = 'És possible afegir aquest mòdul a tots els nous cursos per defecte.';
 $string['deleteinstanceconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}». Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
@@ -131,6 +140,7 @@ $string['periodend'] = 'fins a {$a}';
 $string['periodnone'] = 'inscrits {$a}';
 $string['periodstart'] = 'des de {$a}';
 $string['periodstartend'] = 'des de {$a->start} fins a {$a->end}';
+$string['plugindisabled'] = 'El connector d\'inscripció {$a} està desactivat';
 $string['privacy:metadata:user_enrolments'] = 'Inscripcions';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'La instància del connector d\'inscripció';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'L\'ID de l\'usuari que va modificar per darrera vegada la inscripció de l\'usuari';
@@ -141,12 +151,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'El moment en què finalit
 $string['privacy:metadata:user_enrolments:timemodified'] = 'El moment en què es va modificar la inscripció de l\'usuari';
 $string['privacy:metadata:user_enrolments:timestart'] = 'El moment en què s\'inicia la inscripció de l\'usuari';
 $string['privacy:metadata:user_enrolments:userid'] = 'L\'ID de l\'usuari';
-$string['proceedtocourse'] = 'Vés al contingut del curs';
 $string['recovergrades'] = 'Recupera les qualificacions antigues d\'usuari si és possible';
 $string['rolefromcategory'] = '{$a->role} (Heretat de la categoria de curs)';
 $string['rolefrommetacourse'] = '{$a->role} (Heretat del curs pare)';
 $string['rolefromsystem'] = '{$a->role} (Assignat a nivell de lloc)';
 $string['rolefromthiscourse'] = '{$a->role} (Assignat en aquest curs)';
+$string['sendcoursewelcomemessage'] = 'Envia un missatge de benvinguda al curs';
+$string['sendcoursewelcomemessage_help'] = 'En inscriure un usuari o una cohort al curs, se li pot enviar un missatge de benvinguda per correu electrònic. Si s\'envia des del contacte del curs (per defecte, el professor), i més d\'un usuari té aquesta funció, el correu electrònic s\'envia des del primer usuari a qui se li assigna la funció.';
 $string['sendfromcoursecontact'] = 'De la persona de contacte del curs';
 $string['sendfromkeyholder'] = 'Del propietari de la clau';
 $string['sendfromnoreply'] = 'De l\'adreça de no-resposta';
@@ -165,7 +176,7 @@ $string['unassignnotpermitted'] = 'No teniu permís per llevar l\'assignació de
 $string['unenrol'] = 'Cancel·la la inscripció';
 $string['unenrolconfirm'] = 'Esteu segur que voleu cancel·lar la inscripció de l\'usuari «{$a->user}» (inscrit prèviament via «{$a->enrolinstancename}») al curs «{$a->course}»?';
 $string['unenrolleduser'] = 'L\'usuari «{$a->fullname}» s\'ha donat de baixa del curs';
-$string['unenrolme'] = 'Cancel·la la meva inscripció en {$a}';
+$string['unenrolme'] = 'Cancel·la la meva inscripció en aquest curs';
 $string['unenrolnotpermitted'] = 'No teniu permís per cancel·lar la inscripció d\'aquest usuari al curs.';
 $string['unenrolroleusers'] = 'Dóna de baixa usuaris';
 $string['uninstallmigrating'] = 'S\'estan migrant "{$a}" inscripcions';

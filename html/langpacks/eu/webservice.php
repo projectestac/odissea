@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'eu', version '4.1'.
+ * Strings for component 'webservice', language 'eu', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'PHP kodea REST-erako (POST request)';
 $string['potusers'] = 'Baimenik gabeko erabiltzaileak';
 $string['potusersmatching'] = 'Bat datozen baimenik gabeko erabiltzaileak';
 $string['print'] = 'Inprimatu guztia';
-$string['privacy:metadata:serviceusers'] = 'Kanpoko zerbitzu zehatz bat erabili dezaketen erabiltzaileen zerrenda';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'Zerbitzua erabiltzeko mugatutako IP helbidea';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Erregistroa sortu zeneko data';
-$string['privacy:metadata:serviceusers:userid'] = 'Erabiltzailearen IDa';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Baimena amaitzen deneko data';
-$string['privacy:metadata:tokens'] = 'Web-zerbitzu edo Mobile aplikazioen bitartez Moodlerekin harremanetan jartzeko tokenen erregistroa.';
-$string['privacy:metadata:tokens:creatorid'] = 'Tokena sortu zuen erabiltzailearen IDa';
-$string['privacy:metadata:tokens:iprestriction'] = 'Token hau erabiltzeko mugatutako IP helbidea';
-$string['privacy:metadata:tokens:lastaccess'] = 'Tokena azkenengoz erabili zeneko data';
-$string['privacy:metadata:tokens:privatetoken'] = 'Noizean behin eragiketa zehatz batzuk balidatzeko erabilitako token pribatuagoa, hala nola SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'Tokena sortu zeneko unea';
-$string['privacy:metadata:tokens:token'] = 'Erabiltzailearen tokena';
-$string['privacy:metadata:tokens:tokentype'] = 'Token mota';
-$string['privacy:metadata:tokens:userid'] = 'Tokenaren jabea den erabiltzailearen IDa';
-$string['privacy:metadata:tokens:validuntil'] = 'Tokena iraungiko deneko unea';
-$string['privacy:request:notexportedsecurity'] = 'Ez da esportatzen segurtasun-arrazoiak direla eta';
+$string['privacy:metadata'] = 'WebService APIak ez du datu pertsonalik biltzen';
 $string['protocol'] = 'Protokoloa';
 $string['removefunction'] = 'Ezabatu';
 $string['removefunctionconfirm'] = 'Ziur zaude "{$a->function}" funtzioa "{$a->service}" zerbitzutik ezabatu nahi duzula?';
@@ -214,11 +199,16 @@ $string['testwithtestclient'] = 'Probatu zerbitzua';
 $string['testwithtestclientdescription'] = 'Simulatu kanpotiko zerbitzurako sarbidea web-zerbitzuaren proba-bezeroa erabilita. Erabil ezazu token bidezko autentifikazioa gaituta duen gaitutako protokolo bat. <strong>KONTUZ: Probatuko dituzun funtziok erabiltzaile honentzako EXEKUTATUKO DIRA, beraz probatuko duzuna kontuz aukeratu!</strong>';
 $string['token'] = 'Tokena';
 $string['tokenauthlog'] = 'Token bidezko autentifikazioa';
+$string['tokencopied'] = 'Testua arbelera kopiatu da.';
 $string['tokencreatedbyadmin'] = 'Soiik kudeatzaile batek berrabiaraz dezake (*)';
 $string['tokencreator'] = 'Sortzailea';
 $string['tokenfilter'] = 'Tokenen iragazkia';
 $string['tokenfilterreset'] = 'Erakutsi token guztiak';
 $string['tokenfiltersubmit'] = 'Erakutsi soilik bat datozen tokenak';
+$string['tokenname'] = 'Izena';
+$string['tokennamehint'] = 'Ez baduzu izen bat idazten ausazko izen bat erabiliko da.';
+$string['tokennameprefix'] = 'Web-zerbitzua-{$a}';
+$string['tokennewmessage'] = 'Kopiatu tokena orain. Ez da berriz erakutsiko orri hau uzten duzunean.';
 $string['unknownoptionkey'] = 'Aukera-gako ezezaguna ({$a})';
 $string['unnamedstringparam'] = 'Kateko parametro batek ez du izenik';
 $string['updateusersettings'] = 'Eguneratu';
@@ -229,12 +219,11 @@ $string['userasclientsdescription'] = 'Hurrengo urratsek lagunduko dizute Moodle
 $string['usermissingcaps'] = 'Falta diren gaitasunak: {$a}';
 $string['usernameorid'] = 'Erabiltzaile-izena / Erabiltzailearen IDa';
 $string['usernameorid_help'] = 'Idatzi erabiltzaile-izena edo erabiltzailearen IDa.';
-$string['usernameoridnousererror'] = 'Ez da aurkitu erabiltzaile-izen/ erabiltzailearen ID hori duen erabiltzailerik.';
-$string['usernameoridoccurenceerror'] = 'Erabiltzaile-izen hori duen erabiltzaile bat baino gehiago aurkitu da. Mesedez, idatzi erabiltzaile IDa.';
 $string['usernotallowed'] = 'Erabiltzaileak ez du zerbitzu hau erabiltzeko baimenik. Aurretik erabiltzaile honi sarbidea eman behar diozu {$a}(e)ko baimendutako erabiltzaileen kudeaketa-orrian.';
 $string['userservices'] = 'Erabiltzailearen zerbitzuak: {$a}';
 $string['usersettingssaved'] = 'Erabiltzailearen ezarpenak gorde dira';
 $string['validuntil'] = 'Noiz arte indarrean';
+$string['validuntil_empty'] = 'Token honek ez dauka iraungitze-datarik.';
 $string['validuntil_help'] = 'Gaituz gero, data hori heltzean zerbitzua erabiltzaile honentzako desgaituko da.';
 $string['webservice'] = 'Web-zerbitzua';
 $string['webservices'] = 'Web-zerbitzuak';

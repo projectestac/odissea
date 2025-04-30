@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendanceregister', language 'es', version '4.1'.
+ * Strings for component 'attendanceregister', language 'es', version '4.4'.
  *
  * @package     attendanceregister
  * @category    string
@@ -45,8 +45,7 @@ $string['count'] = '#';
 $string['crontask'] = 'Volver a calcular las sesiones del registro de asistencia';
 $string['dayscertificable'] = 'Días atrás';
 $string['dayscertificable_exceeded'] = 'No debe ser más de {$a} días.';
-$string['dayscertificable_help'] = 'Limita la antigüedad de las sesiones sin conexión. <br/>
-Un estudiante no puede grabar una sesión fuera de línea mayor a este número de días.';
+$string['dayscertificable_help'] = 'Limita que tan antiguas pueden ser las sesiones fuera de línea.<br /> Un estudiante no puede anotar una sesión fuera de línea más antigua que este número de días.';
 $string['duration'] = 'Duración';
 $string['duration_hh_mm'] = '{$a->hours} h, {$a->minutes} min';
 $string['duration_mm'] = '{$a->minutes} min';
@@ -57,16 +56,7 @@ $string['force_recalc_all_session'] = 'Recalcular todas las Sessiones en línea'
 $string['force_recalc_all_session_help'] = 'Elimine y vuelva a calcular todas las sesiones en línea de todos los usuarios monitorizados. <br />¡Normalmente usted <b> no necesita hacerlo </b>! <br />Las nuevas sesiones se calculan automáticamente en segundo plano (después de algún retraso). <br />Esta operación puede ser útil <b> solamente </b>:<ul><li> Después de cambiar el rol de un usuario que actuó anteriormente en cualquiera de los cursos seguidos con un rol diferente(es decir, cambiar de Profesor a Estudiante, cuando se realiza un seguimiento de Estudiante y no de Profesor). </li><li> Después de modificar la configuración de Registro que afecta el cálculo de Sesiones(es decir, <i> Modo de seguimiento de asistencia </i>, <i> Tiempo de espera de sesión en línea </i>) </li></ul>¡Usted <b> no necesita volver a calcular cuando inscriba nuevos usuarios </b>! <br /> <br />El recálculo puede ejecutarse inmediatamente o programarse para su ejecución por el siguiente cron. La ejecución programada podría ser más eficiente para cursos muy concurridos.';
 $string['force_recalc_all_session_now'] = 'Recalcular Sesiones, ahora';
 $string['force_recalc_user_session'] = 'Recalcular Sesiones en línea de este Usuario';
-$string['force_recalc_user_session_help'] = 'Eliminar y volver a calcular todas las sesiones en línea de este usuario. <br />
-Normalmente usted <b> no necesita hacerlo </b>! <br />
-Las nuevas sesiones se calculan automáticamente en segundo plano (después de algún retraso). <br />
-Esta operación puede ser útil <b> solamente </b>:
-<ul>
-<li> Después de cambiar el rol del usuario, el / ella actuó previamente en cualquiera de los cursos seguidos con un rol diferente
-(es decir, cambiar de profesor a Estudiante, cuando se realiza un seguimiento de Estudiante y no de Profesor). </li>
-<li> Después de modificar la configuración de Registro que afecta el cálculo de Sesiones
-(es decir, <i> Modo de seguimiento de asistencia </i>, <i> Tiempo de espera de sesión en línea </i>) </li>
-</ul>';
+$string['force_recalc_user_session_help'] = 'Borrar y recalcular todas las sesiones en línea de este Usuario.<br /> Normalmente Usted <b>no necesita hacerlo it</b>!<br /> Las nuevas sesiones son recalculadas automáticamente (después de una demora).<br /> Esta operación puede ser útil <b>solamente</b>: <ul> <li>Después de cambiar  el rol del  Usuario que previamente tenía un rol diferente en alguno de los cursos supervisador (por ejemplo: cambiar de profesor a alumno, cuando los alumnos son supervisados y los profesores no lo son).</li> <li>Después de modificar las configuraciones del Registro que afectan los cálculos de las sesiones (por ejemplo: <i>Modo de Medir Asistencia</i>, <i>Tiempo-fuera de sesión en línea</i>)</li> </ul>';
 $string['fullname'] = 'Nombre';
 $string['grandtotal_time'] = 'Tiempo total';
 $string['insert_new_offline_session'] = 'Insertar una nueva sesión de trabajo fuera de línea';
@@ -103,8 +93,7 @@ $string['offline_session_ref_course'] = 'Curso de Referencia';
 $string['offline_session_ref_course_help'] = 'Seleccione el curso para el que se hizo este trabajo fuera de línea o el curso que cubre el tema de trabajo';
 $string['offline_session_saved'] = 'Nueva sesión fuera de línea grabada';
 $string['offline_session_start'] = 'Empezar';
-$string['offline_session_start_help'] = 'Elegir las fechas de principio y fin &amp; Hora de la sesión de trabajo fuera de línea que desea anotar.<br />
-La sesión fuera de línea no puede solaparse con ninguna sesión previamente grabada, ni en línea ni fuera de línea, ni con la sesión en línea actual.';
+$string['offline_session_start_help'] = 'Elegir las fechas de principio y fin  &amp; Hora de la sesión de trabajo fuera de línea que desea anotar.<br /> TLa sesión fuera de línea no puede solaparse con ninguna sesión previamente grabada, ni en línea ni fuera de línea, ni con la sesión en línea actual.';
 $string['offline_sessions_certification'] = 'Sesiones de trabajo fuera de línea';
 $string['offline_sessions_certification_help'] = 'Les permite a los usuarios insertar sesiones de trabajo fuera de línea.<br /> Esto es una forma de <i>Auto-Certificación</i> del trabajo realizado.<br /> Esto puede ser útil si la "burocracia" requiere que se mantengan registros de todas las actividades de los estudiantes.<br /> Solamente los usuarios reales pueden añadir sesiones fuera de línea: <i>Los que se identificaron como...</i> administradores ¡no pueden hacerlo!';
 $string['offline_sessions_total_duration'] = 'Tiempo total fuera de línea';
@@ -139,7 +128,7 @@ $string['privacy:metadata:attendanceregister_session'] = 'Guarda registro de las
 $string['privacy:metadata:attendanceregister_session:addedbyuserid'] = 'Si la sesión fuera de línea es insertada por otro usuario, esta es la userid relacionada';
 $string['privacy:metadata:attendanceregister_session:comments'] = 'Comentarios a sesiones fuera de línea';
 $string['privacy:metadata:attendanceregister_session:duration'] = 'La duración de la sesión';
-$string['privacy:metadata:attendanceregister_session:login'] = 'El sello de tiempo del ingreso';
+$string['privacy:metadata:attendanceregister_session:login'] = 'El sello de tiempo del acceso';
 $string['privacy:metadata:attendanceregister_session:logout'] = 'El sello de tiempo de la salida';
 $string['privacy:metadata:attendanceregister_session:onlinesess'] = 'Si es que la sesión es en línea o fuera de línea';
 $string['privacy:metadata:attendanceregister_session:refcourse'] = 'El curso al cual se refiere una sesión fuera de línea';
@@ -171,9 +160,9 @@ $string['total_time_offline'] = 'Tiempo total fuera de línea';
 $string['total_time_online'] = 'Tiempo total en línea';
 $string['tracked_courses'] = 'Cursos supervisados/seguidos';
 $string['tracked_users'] = 'Usuarios supervisados/seguidos';
-$string['type_category'] = 'Todos los cursos en la misma categoría';
+$string['type_category'] = 'Todos los cursos de la misma categoría';
 $string['type_course'] = 'Únicamente este curso';
-$string['type_meta'] = 'Todos los cursos ligados por meta liga a curso';
+$string['type_meta'] = 'Todos los cursos enlazados por metaenlace a curso';
 $string['unknown'] = '(desconocido)';
 $string['unreasoneable_session'] = '¿Estás seguro? ¡Es más de {$a} horas!';
 $string['updating_online_sessions_of'] = 'Actualizando sesiones en línea de {$a}';

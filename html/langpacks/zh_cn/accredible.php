@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'zh_cn', version '4.1'.
+ * Strings for component 'accredible', language 'zh_cn', version '4.4'.
  *
  * @package     accredible
  * @category    string
@@ -38,12 +38,16 @@ $string['additionalactivitiesthree'] = '这个名称将会出现在证书上。'
 $string['additionalactivitiestwo'] = '在活动页面上只会显示以这个成就编号发布的证书/徽章。';
 $string['apikeyhelp'] = '输入您来自accredible.com的API Key';
 $string['apikeylabel'] = 'API密钥';
+$string['attributemappingcoursecustomfields'] = '属性映射：课程自定义字段';
+$string['attributemappingcoursefields'] = '属性映射：课程字段';
+$string['attributemappinguserprofilefields'] = '属性映射：用户配置文件字段';
 $string['autoissueheader'] = '自动发布条件';
 $string['certificatename'] = '证书/徽章名称';
 $string['certificateurl'] = '证书/徽章超链接';
 $string['chooseexam'] = '选择最终测试';
 $string['completionissuecheckbox'] = '是，课程结业后发放';
 $string['completionissueheader'] = '自动发布条件：依据课程完成度';
+$string['coursetotal'] = '总课程';
 $string['dashboardlink'] = 'Accredible控制面板链接';
 $string['dashboardlinktext'] = '要删除或者设计证书的样式，请前往<a href="https://accredible.com/issuer/login" target="_blank">控制面板</a>';
 $string['datecreated'] = '日期已创建';

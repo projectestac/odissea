@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', version '4.1'.
+ * Strings for component 'resource', language 'es', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -105,10 +105,10 @@ $string['resource:addinstance'] = 'Añadir un nuevo recurso';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
 $string['resourcecontent'] = 'Archivos y subcarpetas';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Archivo';
 $string['selectmainfile'] = 'Por favor, seleccione el archivo principal haciendo clic en el icono junto a su nombre.';
 $string['showdate'] = 'Mostrar la fecha de subida/modificación';

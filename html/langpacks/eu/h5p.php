@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'eu', version '4.1'.
+ * Strings for component 'h5p', language 'eu', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -50,6 +50,7 @@ $string['authorname'] = 'Egilearen izena';
 $string['authorrole'] = 'Egilearen rola';
 $string['back'] = 'Atzera';
 $string['by'] = 'egilea';
+$string['cancelCrop'] = 'Baztertu mozketa';
 $string['cancelPublishConfirmationDialogCancelButtonText'] = 'Ez';
 $string['cancelPublishConfirmationDialogConfirmButtonText'] = 'Bai';
 $string['cancelPublishConfirmationDialogDescription'] = 'Ziur zaude partekatze-prozesua bertan behera utzi nahi duzula?';
@@ -69,6 +70,7 @@ $string['changelog'] = 'Aldaketa-erregistroa';
 $string['changeplaceholder'] = 'Argazkia moztu da, testua aldatu da...';
 $string['city'] = 'Hiria';
 $string['close'] = 'Itxi';
+$string['confirmCrop'] = 'Baieztatu mozketa';
 $string['confirmdialogbody'] = 'Baieztatu ezazu mesedez aurrera egin nahi duzula. Ekintza honek ez du atzera bueltarik.';
 $string['confirmdialogheader'] = 'Baieztatu ekintza';
 $string['confirmlabel'] = 'Baieztatu';
@@ -92,6 +94,7 @@ $string['couldNotParseJSONFromZip'] = 'Ezin izan da paketeko JSON edukia aztertu
 $string['couldNotReadFileFromZip'] = 'Ezin izan da paketea irakurri: {$a->%fileName}';
 $string['country'] = 'Herrialdea';
 $string['creativecommons'] = 'Creative Commons';
+$string['cropImage'] = 'Moztu irudia';
 $string['currentStep'] = ':step. urratsa guztirako :total(e)tik';
 $string['date'] = 'Data';
 $string['deletelibraryconfirm'] = '<p>Ziur zaude <em>\'{$a->version}\'</em> bertsioa <em>\'{$a->name}\'</em> liburutegitik ezabatu nahi duzula? Liburutegia eta bere erabilera guztiak ezabatuko dira.</p><p>Ekintza honek ez du atzera bueltarik.</p>';
@@ -127,6 +130,8 @@ $string['filter_displayh5p_description'] = 'Erakutsi H5P iragazkiak URLak enbota
 $string['fullscreen'] = 'Pantaila osoa';
 $string['gpl'] = 'GNU Lizentzia Publiko Orokorraren 3. bertsioa';
 $string['h5p'] = 'H5P';
+$string['h5pcustomcss'] = 'CSS pertsonalizatua';
+$string['h5pcustomcss_help'] = 'H5P edukian aplikatu beharreko CSSa.';
 $string['h5peditor'] = 'H5P editorea';
 $string['h5pfilenotfound'] = 'Ez da H5P fitxategia aurkitu';
 $string['h5pinvalidurl'] = 'H5P edukiaren URL baliogabea.';
@@ -139,6 +144,7 @@ $string['h5ppackage_help'] = 'H5P eduki-mota H5p edo ZIP luzapena duen fitxategi
 $string['h5pprivatefile'] = 'H5P eduki hau ezin da erakutsi ez duzulako .h5p fitxategirako sarbiderik.';
 $string['h5psettings'] = 'H5P ezarpenak';
 $string['h5ptitle'] = 'Ikusi h5p.org eduki gehiago ezagutzeko.';
+$string['height'] = 'altuera';
 $string['helpChoosingLicense'] = 'Lagundu iezadazu lizentzia bat aukeratzen';
 $string['hideadvanced'] = 'Ezkutatu aurreratuak';
 $string['icon'] = 'Ikonoa';
@@ -212,6 +218,7 @@ $string['missinglibrary'] = 'Beharrezkoa den {$a->@library} liburutegia falta da
 $string['missinglibraryfile'] = '"{$a->%file}" fitxategia falta da hurrengo liburutegian: "{$a->%name}"';
 $string['missinglibraryjson'] = 'Ezin izan da aurkitu json formatu baliagarria duen  {$a->%name} liburutegiaren library.json fitxategia';
 $string['missinglibraryproperty'] = 'Beharrezkoa den {$a->%property} ezaugarria falta da {$a->%library} liburutegian';
+$string['missingmainlibrary'] = '{$a->@library} liburutegi nagusia falta da';
 $string['missingmbstring'] = 'PHP-ren mbstring hedapena ez dago kargatuta. H5Pk hedapen hori behar du behar bezala funtzionatzeko';
 $string['missinguploadpermissions'] = 'Kontuan izan igo duzun fitxategian liburutegiak egon daitezkeela, baina zuk ez duzu liburutegi berriak igotzeko baimenik. Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez.';
 $string['next'] = 'Hurrengoa';
@@ -258,6 +265,8 @@ $string['reviewAndSave'] = 'Berrikusi eta Gorde';
 $string['reviewAndShare'] = 'Berrikusi eta Partekatu';
 $string['reviewInfo'] = 'Berrikusi informazioa';
 $string['reviewMessage'] = 'Partekatu baino lehen azpiko informazioa berrikusi ezazu, mesedez.';
+$string['rotateLeft'] = 'Biratu ezkerrera';
+$string['rotateRight'] = 'Biratu eskuinera';
 $string['saveChanges'] = 'Gorde aldaketak';
 $string['screenshots'] = 'Pantaila-argazkiak';
 $string['screenshotsDescription'] = 'Gehitu zure edukiaren bost pantaila-argazkira arte';
@@ -293,6 +302,7 @@ $string['updatedlibraries'] = '{$a->%old} H5P liburutegi eguneratu dira.';
 $string['updatedlibrary'] = 'H5P liburutegi {$a->%old} eguneratu da.';
 $string['uploadlibraries'] = 'Igo H5P eduki-motak';
 $string['uploadsuccess'] = 'H5P eduki-motak ondo igo dira';
+$string['width'] = 'zabalera';
 $string['wrongversion'] = 'Testuinguru honetan erabilitako H5P liburutegiaren {$a->%machineName} bertsioa ez da baliozkoa. Edukiak {$a->%contentLibrary} dauka, eta {$a->%semanticsLibrary} izan beharko luke.';
 $string['year'] = 'Urtea';
 $string['years'] = 'Urtea(k)';

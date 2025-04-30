@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ur', version '4.1'.
+ * Strings for component 'completion', language 'ur', version '4.4'.
  *
  * @package     completion
  * @category    string
@@ -228,4 +228,3 @@ $string['viewingactivity'] = '{$a} کو دیکھ رہا ہے';
 $string['withconditions'] = 'شرائط کے ساتھ';
 $string['writingcompletiondata'] = 'تحریری تکمیل کا ڈیٹا';
 $string['xdays'] = '{$a} دن';
-$string['yourprogress'] = 'آپ کی پیشرفت';

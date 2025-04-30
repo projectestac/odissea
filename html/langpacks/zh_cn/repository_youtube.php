@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'zh_cn', version '4.1'.
+ * Strings for component 'repository_youtube', language 'zh_cn', version '4.4'.
  *
  * @package     repository_youtube
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
 $string['apikey'] = 'API密钥';
 $string['configplugin'] = 'YouTube容器配置';
 $string['information'] = '为您的Moodle站点获取一个<a href=”https://developers.google.com/youtube/v3/getting-started“>Google API密钥</a>。';

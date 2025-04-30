@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', version '4.1'.
+ * Strings for component 'feedback', language 'nl', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Vet';
 $string['calendarend'] = '{$a} sluit';
 $string['calendarstart'] = '{$a} opent';
 $string['cannotaccess'] = 'Je hebt alleen toegang tot deze feedback vanuit een cursus';
+$string['cannotcreatepagebreak'] = 'Er kan geen paginascheiding aan het begin ingevoegd worden en er kan slechts één paginascheiding op het einde zijn.';
 $string['cannotsavetempl'] = 'Bewaren van sjablonen is niet toegelaten';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha is niet ingesteld';
@@ -58,7 +59,7 @@ $string['completed'] = 'Voltooid';
 $string['completed_feedbacks'] = 'Ingevulde antwoorden';
 $string['completedon'] = 'Voltooid op {$a}';
 $string['completiondetail:submit'] = 'Feedback insturen';
-$string['completionsubmit'] = 'Bekijk als voltooid als de feedback verstuurd is';
+$string['completionsubmit'] = 'Feedback verzenden';
 $string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de site startpagina ingevuld worden zonder aangemeld te zijn.';
 $string['confirmdeleteentry'] = 'Ben je zeker dat je dit wil verwijderen?';
 $string['confirmdeleteitem'] = 'Ben je zeker dat je dit element wil verwijderen?';
@@ -195,7 +196,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Meerkeuze (beoordeling)';
 $string['multichoicetype'] = 'Meerkeuze type';
 $string['multiplesubmit'] = 'Meerdere inzendingen toestaan';
-$string['multiplesubmit_help'] = 'Indien er gekozen is voor anonieme onderzoeken, dan kunnen gebruikers een onbeperkt aantal keer het formulier insturen';
+$string['multiplesubmit_help'] = 'Indien ingesteld op ja:
+
+* Voor anonieme onderzoeken: deelnemers kunnen onbeperkt antwoorden insturen en alle antwoorden zullen bewaard worden.
+* Voor niet-anonieme onderzoeken: deelnemers kunnen onbeperkt antwoorden, maar enkel hun laatste antwoord zal bewaard worden.';
 $string['name'] = 'Naam';
 $string['name_required'] = 'Naam verplicht';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

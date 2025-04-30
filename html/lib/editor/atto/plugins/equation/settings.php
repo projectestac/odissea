@@ -24,13 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.06.05 @pferre22
-if (!get_protected_agora()) {
-    return;
-}
-// ************ FI
-
 $ADMIN->add('editoratto', new admin_category('atto_equation', new lang_string('pluginname', 'atto_equation')));
 
 $settings = new admin_settingpage('atto_equation_settings', new lang_string('settings', 'atto_equation'));

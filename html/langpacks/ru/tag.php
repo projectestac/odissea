@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ru', version '4.1'.
+ * Strings for component 'tag', language 'ru', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -151,6 +151,7 @@ $string['tagarea_blog_external'] = 'Записи во внешних  блога
 $string['tagarea_course'] = 'Курсы';
 $string['tagarea_course_modules'] = 'Элементы и ресурсы';
 $string['tagarea_post'] = 'Записи блогов';
+$string['tagarea_tag'] = 'Связанные теги';
 $string['tagarea_user'] = 'Интересы пользователей';
 $string['tagareaenabled'] = 'Включено';
 $string['tagareaname'] = 'Название';

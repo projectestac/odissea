@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'sv', version '4.1'.
+ * Strings for component 'plugin', language 'sv', version '4.4'.
  *
  * @package     plugin
  * @category    string

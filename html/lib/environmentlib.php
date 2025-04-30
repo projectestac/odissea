@@ -895,7 +895,7 @@ function environment_check_php($version, $env_select) {
  * Looks for buggy PCRE implementation, we need unicode support in Moodle...
  * @param string $version xml version we are going to use to test this server
  * @param int|string $env_select one of ENV_SELECT_NEWER | ENV_SELECT_DATAROOT | ENV_SELECT_RELEASE decide xml to use. String means plugin name.
- * @return stdClass results encapsulated in one environment_result object, null if irrelevant
+ * @return ?environment_results results encapsulated in one environment_result object, null if irrelevant
  */
 function environment_check_pcre_unicode($version, $env_select) {
     $result = new environment_results('pcreunicode');
@@ -1053,14 +1053,15 @@ function environment_check_database($version, $env_select) {
 
     $dbinfo = $DB->get_server_info();
     $current_version = normalize_version($dbinfo['version']);
-    $needed_version = $vendors[$current_vendor];
 
-/// Check we have a needed version
-    if (!$needed_version) {
+    // Check we have a needed version.
+    if (empty($vendors[$current_vendor])) {
         $result->setStatus(false);
         $result->setErrorCode(NO_DATABASE_VENDOR_VERSION_FOUND);
         return $result;
     }
+
+    $needed_version = $vendors[$current_vendor];
 
     // Check if the DB Vendor has been properly configured.
     // Hack: this is required when playing with MySQL and MariaDB since they share the same PHP module and base DB classes,
@@ -1102,8 +1103,8 @@ function environment_check_database($version, $env_select) {
  * such bypass functions are able to directly handling the result object
  * although it should be only under exceptional conditions.
  *
- * @param string xmldata containing the bypass data
- * @param object result object to be updated
+ * @param array $xml xml containing the bypass data
+ * @param environment_results $result object to be updated
  * @return void
  */
 function process_environment_bypass($xml, &$result) {
@@ -1143,8 +1144,8 @@ function process_environment_bypass($xml, &$result) {
  * such restrict functions are able to directly handling the result object
  * although it should be only under exceptional conditions.
  *
- * @param string xmldata containing the restrict data
- * @param object result object to be updated
+ * @param array $xml xmldata containing the restrict data
+ * @param environment_results $result object to be updated
  * @return void
  */
 function process_environment_restrict($xml, &$result) {
@@ -1180,8 +1181,8 @@ function process_environment_restrict($xml, &$result) {
  *
  * @uses INCORRECT_FEEDBACK_FOR_REQUIRED
  * @uses INCORRECT_FEEDBACK_FOR_OPTIONAL
- * @param string xmldata containing the feedback data
- * @param object reult object to be updated
+ * @param array $xml xmldata containing the feedback data
+ * @param environment_results $result object to be updated
  */
 function process_environment_messages($xml, &$result) {
 
@@ -1550,7 +1551,7 @@ function get_level($element) {
         $level = $element['@']['level'];
         if (!in_array($level, ['required', 'optional', 'recommended'])) {
             debugging('The level of a check in the environment.xml file must be "required", "optional" or "recommended".',
-                DEBUG_DEVELOPER);
+                    DEBUG_DEVELOPER);
             $level = 'required';
         }
     } else {

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ar', version '4.1'.
+ * Strings for component 'report_security', language 'ar', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -81,10 +81,6 @@ $string['check_guestrole_error'] = 'دور الضيف "{$a}" ليس معرفاً
 $string['check_guestrole_name'] = 'دور الضيف';
 $string['check_guestrole_notset'] = 'دور الضيف غير مُعد.';
 $string['check_guestrole_ok'] = 'تعريف دور الضيف جيد.';
-$string['check_mediafilterswf_details'] = '<p>التضمين التلقائي لـ swf خطر جداً - قد يقوم أي مستخدم مسجل في الموقع بإطلاق هجوم من نوع XSS ضد مستخدميه الآخرين. لطفاً، عطل هذا الإعداد في المواقع الإنتاجية.</p>';
-$string['check_mediafilterswf_error'] = 'مرشح وسائط فلاش مُمَكَّن - هذا خطير جداً في أغلب المخدمات.';
-$string['check_mediafilterswf_name'] = 'تمكين مرشح وسائط فلاش';
-$string['check_mediafilterswf_ok'] = 'مرشح وسائط فلاش معطل';
 $string['check_nodemodules_details'] = '<p>يحتوي المجلد <code>{$a->path}</code> على وحدات Node.js وتبعياتها، والمنصبة عادة من قبل الأداة NPM. قد تكون هناك حاجة لهذه الوحدات في  التطوير المحلي لمودل، مثل استعمال إطار عمل الناخر. ليس لها حاجة عند تشغيل مودل في موقع إنتاجي وهي قد تحتوي على رموز برمجية خطرة قد تعرض موقعك إلى هجمات خارجية.</p><p>يوصى بشدة بإزالة المجلد إذا كان الموقع متاحاً على رابط عمومي، أو على الأقل، إمنع وصول الويب إليه في إعدادات تهيئة المخدم عندك.</p>';
 $string['check_nodemodules_info'] = 'مجلد node_modules لا ينبغي تواجده في المواقع العمومية.';
 $string['check_nodemodules_name'] = 'مجلد وحدات Node.js';

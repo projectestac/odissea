@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'sv', version '4.1'.
+ * Strings for component 'course', language 'sv', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -123,6 +123,7 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} efter kursst
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} innan kursstart';
 $string['searchactivitiesbyname'] = 'Sök efter aktiviteter via namn';
 $string['searchresults'] = 'Sökresultat: {$a}';
+$string['sectionlink'] = 'Permalänk';
 $string['studentsatriskincourse'] = 'Deltagare i riskzonen i kursen {$a}';
 $string['studentsatriskinfomessage'] = 'Hej {$a->userfirstname},
 <p>Studenter i kursen {$a->coursename} har identifierats löpa risk.<p>';

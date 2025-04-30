@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'ko', version '4.1'.
+ * Strings for component 'quizaccess_openclosedate', language 'ko', version '4.4'.
  *
  * @package     quizaccess_openclosedate
  * @category    string
@@ -27,4 +27,3 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = '죄송합니다, 이 퀴즈를 이용할 수 없음';
 $string['pluginname'] = '시작 및 종료일 퀴즈 접근 규칙';
-$string['quiznotavailable'] = '{$a} 까지는 퀴즈를 이용할 수 없음';

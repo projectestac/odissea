@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', version '4.1'.
+ * Strings for component 'assign', language 'nl', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Je hebt nog geen inzending ingediend.';
 $string['allocatedmarker'] = 'Toegewezen beoordelaar';
 $string['allocatedmarker_help'] = 'Beoordelaar toegewezen aan deze inzending.';
 $string['allowsubmissions'] = 'Sta de gebruiker toe om inzendingen te blijven maken voor deze opdracht.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'De opdrachtdetails en het instuurformulier zullen beschikbaar zijn vanaf <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Insturen toestaan vanaf';
 $string['allowsubmissionsfromdate_help'] = 'Indien ingeschakeld zullen leerlingen niet kunnen insturen voor deze datum. Indien uitgeschakeld zullen leerlingen hun opdracht onmiddellijk kunnen insturen.';
-$string['allowsubmissionsfromdatesummary'] = 'Deze opdracht zal inzendingen ontvangen vanaf <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Sta het wijzigen van ingestuurde opdrachten toe';
 $string['alwaysshowdescription'] = 'Toon de beschrijving altijd';
 $string['alwaysshowdescription_help'] = 'Indien uitgeschakeld, zal de opdrachtbeschrijving voor de leerlingen pas zichtbaar worden vanaf de "Insturen toestaan vanaf"-datum.';
@@ -137,7 +135,7 @@ $string['collapsegradepanel'] = 'Beoordelingsscherm inklappen';
 $string['collapsereviewpanel'] = 'Overzichtsscherm inklappen';
 $string['comment'] = 'Commentaar';
 $string['completiondetail:submit'] = 'Een inzending maken';
-$string['completionsubmit'] = 'Leerling moet iets insturen';
+$string['completionsubmit'] = 'Een inzending maken';
 $string['configshowrecentsubmissions'] = 'Iedereen kan in rapportages over "Recente activiteit" zien dat er opdrachten zijn ingestuurd.';
 $string['confirmbatchgradingoperation'] = 'Weet je zeker dat je wil {$a->operation} voor {$a->count} leerlingen?';
 $string['confirmstart'] = 'Je hebt {$a} om deze opdracht te voltooien. Wanneer je begint, telt de timer af en kan deze niet worden gepauzeerd.';
@@ -224,6 +222,8 @@ $string['eventsubmissionviewed'] = 'Inzending bekeken';
 $string['eventworkflowstateupdated'] = 'De status van de workflow is aangepast.';
 $string['expandreviewpanel'] = 'Beoordelingsscherm openklappen';
 $string['extensionduedate'] = 'Verlengen van de uiterste inleverdatum';
+$string['extensionduedatecurrent'] = 'Huidige verlengingsdatum';
+$string['extensionduedatenone'] = 'Geen';
 $string['extensionnotafterduedate'] = 'De datum voor de extra tijd moet na de uiterste inleverdatum zijn.';
 $string['extensionnotafterfromdate'] = 'De extra tijd einddatum moet na de startdatum zijn';
 $string['feedback'] = 'Feedback';
@@ -340,6 +340,8 @@ $string['markerfilter'] = 'Filter beoordelaars';
 $string['markerfilternomarker'] = 'Geen beoordelaar';
 $string['markingallocation'] = 'Gebruik toewijzing beoordelaars';
 $string['markingallocation_help'] = 'Indien dit ingeschakeld is samen met de beoordelingsworkflow, dan kun je beoordelaars toewijzen aan individuele leerlingen.';
+$string['markinganonymous'] = 'Sta gedeeltelijke vrijgave van cijfers toe terwijl anoniem wordt beoordeeld';
+$string['markinganonymous_help'] = 'Indien ingeschakeld in combinatie met anonieme inzendingen en de beoordelingsworkflow, is gedeeltelijke vrijgave van cijfers mogelijk terwijl anoniem wordt beoordeeld.';
 $string['markingworkflow'] = 'Gebruik beoordelings-workflow';
 $string['markingworkflow_help'] = 'Indien ingeschakeld zullen beoordelingen door een workflow gaan, vooraleer ze aan leerlingen vrijgegeven worden. Dit laat meerdere beoordelingssessies toe zodat de cijfers tegelijk aan alle leerlingen gegeven kunnen worden.';
 $string['markingworkflowstate'] = 'Status van de beoordelings-workflow';
@@ -465,8 +467,6 @@ $string['quickgrading_help'] = 'Met snel beoordelen kun je rechtstreeks cijfers 
 $string['quickgradingchangessaved'] = 'De wijzigingen aan de cijfers zijn bewaard';
 $string['quickgradingresult'] = 'Snel beoordelen';
 $string['recordid'] = 'Identificatie';
-$string['relativedatessubmissionduedateafter'] = '{$a->dateiffstr} na het begin van de cursus';
-$string['relativedatessubmissionduedatebefore'] = '{$a->dateiffstr} voor het begin van de cursus';
 $string['relativedatessubmissiontimeleft'] = 'Berekend voor elke leerling';
 $string['removeallgroupoverrides'] = 'Verwijder alle groepsoverschrijvingen';
 $string['removealluseroverrides'] = 'Verwijder alle gebruikersoverschrijvingen';
@@ -478,7 +478,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Weet je zeker dat je je inzen
 $string['removesubmissionforstudent'] = 'Verwijder inzending voor leerling: (id={$a->id}, fullname={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'De optie "Opnieuw openen tot geslaagd" is niet compatibel met de optie anoniem insturen, omdat de cijfers niet in de cijferlijst komen tot de identiteit van de leerling vrijgegeven wordt.';
 $string['requireallteammemberssubmit'] = 'Eis dat alle groepsleden insturen';
-$string['requireallteammemberssubmit_help'] = 'Indien ingeschakeld moeten alle leden van de groep op de insturen-knop klikken voor de opdracht als ingestuurd beschouwd wordt. Indien uitgeschakeld zal de opdracht van de groep als ingestuurd beschouwd worden als één van de leden van de groep op de instuurknop klikt.';
+$string['requireallteammemberssubmit_help'] = 'Deze instelling moet samen gebruikt worden met de \'Leerlingen moeten op de "Instuur"-knop klikken\' in de \'Instellingen insturen opdrachten\'-sectie.
+
+Indien ingeschakeld moeten alle leden van de groep op de insturen-knop klikken voor de opdracht als ingestuurd beschouwd wordt. Indien uitgeschakeld zal de opdracht van de groep als ingestuurd beschouwd worden als één van de leden van de groep op de instuurknop klikt.';
 $string['requiresubmissionstatement'] = 'Eis dat leerlingen de voorwaarden voor insturen aanvaarden.';
 $string['requiresubmissionstatement_help'] = 'Eisen dat leerlingen de voorwaarden voor insturen aanvaarden voor deze opdracht.';
 $string['revealidentities'] = 'Toon identiteit leerlingen';
@@ -569,6 +571,7 @@ $string['submissionstatement'] = 'Voorwaarden voor insturen';
 $string['submissionstatement_help'] = 'Verklaring die de leerling moet aanvaarden voor het insturen van zijn opdracht.';
 $string['submissionstatementacceptedlog'] = 'Voorwaarden voor insturen aanvaard door gebruiker {$a}';
 $string['submissionstatementdefault'] = 'Deze opdracht is mijn eigen werk, behalve waar ik verwijs naar het werk van anderen.';
+$string['submissionstatementrequired'] = 'Je moet hiermee akkoord gaan voor je instuurt.';
 $string['submissionstatementteamsubmission'] = 'Verklaring groepsinzending';
 $string['submissionstatementteamsubmission_help'] = 'Verklaring die elke leerling moet accepteren om het werk van zijn groep in te dienen.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Een verklaring voor de groep waar alle groepsleden hun opdracht indienen';

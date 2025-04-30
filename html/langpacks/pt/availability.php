@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'pt', version '4.1'.
+ * Strings for component 'availability', language 'pt', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Adicionar condição';
 $string['and'] = 'e';
 $string['condition_group'] = 'Conjugar condições';
 $string['condition_group_info'] = 'Adicionar conjunto de condições de acesso conjugadas com operadores lógicos (e/ou)';
+$string['disabled_verb'] = 'Não pode ser alterado porque o conjunto de regras inclui uma regra que contém dados privados.';
+$string['editsettings'] = 'Editar restrições';
 $string['enableavailability'] = 'Ativar condições de acesso';
 $string['enableavailability_desc'] = 'Se ativar esta opção, poderá definir em cada secção/atividade/recurso as condições necessárias (baseadas na data, notas, conclusão de outras atividades, etc.) para um aluno poder aceder à atividade/recurso.';
 $string['error_list_nochildren'] = 'Os conjuntos de condições de acesso devem conter pelo menos uma condição.';

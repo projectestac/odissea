@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'es', version '4.1'.
+ * Strings for component 'auth_lti', language 'es', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -40,7 +40,6 @@ $string['haveexistingaccount'] = 'Tengo una cuenta existente';
 $string['linkthisaccount'] = 'Vincular esta cuenta';
 $string['mustbeloggedin'] = 'Inicie sesión para enlazar su cuenta actual';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'El complemento de autenticación LTI no almacena ningún dato personal.';
 $string['privacy:metadata:auth_lti'] = 'Autenticación LTI';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'Este complemento está conectado al subsistema de autenticación.';
 $string['privacy:metadata:auth_lti:issuer'] = 'La URL del emisor que identifica la plataforma donde pertenece el usuario enlazado.';
@@ -48,9 +47,9 @@ $string['privacy:metadata:auth_lti:issuer256'] = 'La hash SHA256 del URL emisor.
 $string['privacy:metadata:auth_lti:sub'] = 'La cadena de caracteres del asunto que identifica al usuario en el emisor.';
 $string['privacy:metadata:auth_lti:sub256'] = 'La hash SHA256 de la cadena de caracteres del asunto que  identifica al usuario en el emisor.';
 $string['privacy:metadata:auth_lti:tableexplanation'] = 'Cuentas LTI enlazadas a una cuenta de usuario Moodle.';
-$string['privacy:metadata:auth_lti:timecreated'] = 'El sello de tiempo de cuando la cuenta del usuario fue enlazada al ingreso LTI.';
-$string['privacy:metadata:auth_lti:timemodified'] = 'La marca de tiempo del momento en que este registro fue modificado.';
-$string['privacy:metadata:auth_lti:userid'] = 'La ID de la cuenta del usuario a donde está enlazado el ingreso LTI';
+$string['privacy:metadata:auth_lti:timecreated'] = 'El sello de tiempo de cuando la cuenta del usuario fue enlazada al acceso LTI.';
+$string['privacy:metadata:auth_lti:timemodified'] = 'El sello de tiempo de cuando este registro fue modificado.';
+$string['privacy:metadata:auth_lti:userid'] = 'La ID de la cuenta del usuario a donde está enlazado el acceso LTI';
 $string['provisioningmodeauto'] = 'Cuentas nuevas solamente (automático)';
 $string['provisioningmodeexistingonly'] = 'Cuentas existentes solamente (solicitud)';
 $string['provisioningmodenewexisting'] = 'Cuentas existentes y nuevas (solicitud)';

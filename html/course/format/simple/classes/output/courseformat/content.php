@@ -19,7 +19,7 @@
  *
  * @package   format_simple
  * @copyright 2012-onwards UPCnet
- * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, 
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
  *            Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -40,16 +40,20 @@ class content extends content_base {
      * Export this data so it can be used as the context for a mustache template (core/inplace_editable).
      *
      * @param renderer_base $output typically, the renderer that's calling this function
-     * @return stdClass data context for a mustache template
+     * @return object|\stdClass data context for a mustache template
      */
     public function export_for_template(renderer_base $output) {
         global $PAGE;
 
+        $PAGE->requires->js_call_amd('format_topics/mutations', 'init');
+        $PAGE->requires->js_call_amd('format_topics/section', 'init');
+
         $data = parent::export_for_template($output);
 
         if ($PAGE->user_is_editing()) {
-            $data->format= 'topics';
+            $data->format = 'topics';
         }
+
         return $data;
     }
 
@@ -58,7 +62,7 @@ class content extends content_base {
      *
      * This method redirects the default template when the course content is rendered.
      */
-	public function get_template_name(\renderer_base $renderer): string {
+    public function get_template_name(\renderer_base $renderer): string {
         global $PAGE;
 
         if ($PAGE->user_is_editing()) {
@@ -67,5 +71,5 @@ class content extends content_base {
 
         return 'format_simple/local/content';
     }
-    
+
 }

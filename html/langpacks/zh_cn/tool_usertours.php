@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_usertours', language 'zh_cn', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -133,7 +133,6 @@ $string['placement_help'] = '步骤可以放在目标的上方、下方、左边
 
 如果该步骤不适合在特定页面的指定位置，它将被自动放在其他地方。';
 $string['pluginname'] = '用户导航';
-$string['previousstep'] = '上一个';
 $string['privacy:metadata:preference:completed'] = '用户最后一次完成用户导览的时间。';
 $string['privacy:metadata:preference:requested'] = '用户最后一次手动申请用户导览的时间。';
 $string['privacy:request:preference:completed'] = '您最后一次将"{$a->name}"用户的导览标记为完成，时间是{$a->time}。';
@@ -148,6 +147,9 @@ $string['selector_defaulttitle'] = '输入描述性标题';
 $string['selectordisplayname'] = '匹配“{$A}”的CSS选择器';
 $string['selecttype'] = '选择步骤类型';
 $string['sharedtourslink'] = '导览资源库';
+$string['showtoureachtime'] = '每次过滤器匹配它时';
+$string['showtouruntilcomplete'] = '直到它被关闭';
+$string['showtourwhen'] = '展示tour';
 $string['skip'] = '跳过';
 $string['skip_tour'] = '跳过浏览';
 $string['target'] = '目标';
@@ -247,6 +249,14 @@ $string['tour_activityinfo_course_teacher_content'] = '新的课程设置 "显�
 $string['tour_activityinfo_course_teacher_title'] = '新增：活动信息';
 $string['tour_final_step_content'] = '您的用户导览已结束。除非使用页脚中的链接重置它，否则它不会再次显示。';
 $string['tour_final_step_title'] = '导览结束';
+$string['tour_gradebook_action_content'] = '<div class=“text-center”>@@PIXICON：：tour/tour_grader_report_action_menu：：tool_usertours@@</div>对列进行排序并选择要显示的列。在编辑模式下，使用此快捷方式可以访问与查看和编辑成绩项目相关的常见任务。';
+$string['tour_gradebook_action_title'] = '操作的快速链接';
+$string['tour_gradebook_filter_content'] = '<div class=“text-center”>@@PIXICON：：tour/tour_grader_report_initials：：tool_usertours@@</div>按学生名字或姓氏的首字母筛选学生。';
+$string['tour_gradebook_filter_title'] = '按姓名筛选';
+$string['tour_gradebook_search_content'] = '<div class=“text-center”>@@PIXICON：：tour/tour_grader_report_search：：tool_usertours@@</div>使用搜索框快速查找特定学生。';
+$string['tour_gradebook_search_title'] = '轻松找到学生';
+$string['tour_gradebook_tour_description'] = '成绩簿评分器报告中的搜索和导航功能';
+$string['tour_gradebook_tour_name'] = '成绩簿评分报告';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>在这里发布重要消息。';
 $string['tour_navigation_course_announcements_teacher_title'] = '有什么要告诉大家的吗？';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>添加新内容或编辑现有内容。';

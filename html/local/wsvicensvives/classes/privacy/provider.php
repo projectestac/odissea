@@ -20,8 +20,6 @@
 
 namespace local_wsvicensvives\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for local_wsvicensvives implementing null_provider.
  */

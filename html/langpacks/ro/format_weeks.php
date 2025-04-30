@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ro', version '4.1'.
+ * Strings for component 'format_weeks', language 'ro', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Adaugă săptămână';
+$string['addsection'] = 'Adaugă săptămână';
 $string['automaticenddate'] = 'Calculați data de încheiere din numărul de secțiuni';
 $string['automaticenddate_help'] = 'Dacă este activată, data de încheiere a cursului va fi calculată automat din numărul de secțiuni și data de începere a cursului.';
-$string['currentsection'] = 'Această săptămână';
-$string['deletesection'] = 'Șterge săptămâna';
-$string['editsection'] = 'Editează săptămâna';
-$string['editsectionname'] = 'Editează numele săptămânii';
-$string['hidefromothers'] = 'Ascunde săptămâna';
+$string['currentsection'] = 'Săptămâna curentă';
+$string['hidefromothers'] = 'Ascunde';
 $string['indentation'] = 'Permite indentarea pe pagina de curs';
-$string['indentation_help'] = 'Permite profesorilor și altor utilizatori cu capabilitate de administratre a activităților să indenteze itemi pe pagina cursului.';
-$string['newsectionname'] = 'Un nume nou pentru săptămâna {$a}';
-$string['page-course-view-weeks'] = 'Orice pagină principală de curs în format săptămânal';
-$string['page-course-view-weeks-x'] = 'Orice pagină de curs în format săptămânal';
-$string['pluginname'] = 'Format săptămânal';
-$string['privacy:metadata'] = 'Plugin-ul Weekly format nu stochează date personale';
+$string['indentation_help'] = 'Permite profesorilor și altor utilizatori cu capabilitate de administratre a activităților să indenteze elemente pe pagina cursului.';
+$string['page-course-view-weeks'] = 'Orice pagină principală de curs în format de curs săptămânal';
+$string['page-course-view-weeks-x'] = 'Orice pagină de curs în format de curs săptămânal';
+$string['plugin_description'] = 'Cursul este împărțit în secțiuni care corespund fiecărei săptămâni, începând cu date de deschidere a cursului.';
+$string['pluginname'] = 'Secțiuni săptămânale';
+$string['privacy:metadata'] = 'Plugin-ul format secțiuni săptămânale nu stochează date personale.';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Săptămână';
-$string['showfromothers'] = 'Afișează săptămâna';
+$string['showfromothers'] = 'Afișează';

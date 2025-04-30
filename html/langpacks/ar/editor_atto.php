@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ar', version '4.1'.
+ * Strings for component 'editor_atto', language 'ar', version '4.4'.
  *
  * @package     editor_atto
  * @category    string
@@ -49,7 +49,7 @@ $string['recover'] = 'استعد';
 $string['richtexteditor'] = 'معالج النصوص';
 $string['settings'] = 'إعدادات شريط أدوات Atto';
 $string['subplugintype_atto'] = 'إضافة Atto';
-$string['subplugintype_atto_plural'] = 'إضافات Atto';
+$string['subplugintype_atto_plural'] = 'ملحقات Atto';
 $string['taskautosavecleanup'] = 'حذف مسودات الحفظ التلقائي منتهية الصلاحية';
 $string['textrecovered'] = 'تمت الاستعادة التلقائية لهذا النص من نسخة مسودة.';
 $string['toolbarconfig'] = 'تهيئة شريط الأدوات';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ar', version '4.1'.
+ * Strings for component 'assignsubmission_onlinetext', language 'ar', version '4.4'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -29,7 +29,7 @@ $string['allowonlinetextsubmissions'] = 'ممكّن';
 $string['default'] = 'ممكّن بشكل افتراضي';
 $string['default_help'] = 'إذا اخترتها، سيتم تمكين هذه الطريقة في التقديم بشكل افتراضي لتقديم كافة الواجبات الجديدة.';
 $string['enabled'] = 'نص في وضع متصل.';
-$string['enabled_help'] = 'إذا مكّن .. يكون الطلاب قادرين على الطباعة النصية مباشرة في حقل التسليم ..';
+$string['enabled_help'] = 'عند تمكينه، يكون الطلاب قادرين على الطباعة النصية مباشرة في حقل المحرر المتعلق بتسليمهم.';
 $string['eventassessableuploaded'] = 'نص عبر الإنترنت تم رفعه';
 $string['nosubmission'] = 'لا يوجد شيء تم تقديمه في هذا الواجب ..!';
 $string['numwords'] = '({$a} كلمات )';

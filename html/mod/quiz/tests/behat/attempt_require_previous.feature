@@ -13,9 +13,9 @@ Feature: Attempt a quiz where some questions require that the previous question 
       | fullname | shortname | category |
       | Course 1 | C1        | 0        |
     And the following "course enrolments" exist:
-      | user     | course | role    |
-      | student  | C1     | student |
-      | teacher  | C1     | teacher |
+      | user     | course | role           |
+      | student  | C1     | student        |
+      | teacher  | C1     | editingteacher |
     And the following "question categories" exist:
       | contextlevel | reference | name           |
       | Course       | C1        | Test questions |
@@ -65,8 +65,10 @@ Feature: Attempt a quiz where some questions require that the previous question 
       | question | page | requireprevious |
       | TF1      | 1    | 0               |
       | TF2      | 1    | 1               |
+
     When I am on the "Quiz 1" "mod_quiz > View" page logged in as "teacher"
     And I press "Preview quiz"
+
     Then I should see "First question"
     And I should see "This question cannot be attempted until the previous question has been completed."
     And I should not see "Second question"

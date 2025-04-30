@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'en', version '4.1'.
+ * Strings for component 'offlinequiz', language 'en', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Add';
-$string['addarandomquestion'] = 'questions randomly';
+$string['addarandomquestion'] = 'a random question';
 $string['addarandomquestion_help'] = 'Moodle adds a random selection of multiple choice questions (or all-or-nothing multiple-choice questions) to the current offline quiz group. The number of questions added can be set. The questions are chosen from the current question category (and, if selected, its sub-categories).';
 $string['addarandomselectedquestion'] = 'Add a random selected question ...';
 $string['addlist'] = 'Add attendance list';
@@ -64,7 +64,14 @@ $string['attemptsnum'] = 'Results: {$a}';
 $string['attemptsonly'] = 'Show students with results only';
 $string['attendanceoverview'] = 'Attendances';
 $string['attendances'] = 'Attendances';
+$string['attendancesevaluationheadline'] = '2. Evaluation';
 $string['attendancesheadline'] = 'Attendances';
+$string['attendancespreparationheadline'] = '1. Preparation';
+$string['attendenceoverviewattwithoutresults'] = 'Present without results:';
+$string['attendenceoverviewattwithresults'] = 'Present with results:';
+$string['attendenceoverviewcorrectionnecessary'] = 'Correction necessary (pages):';
+$string['attendenceoverviewnoattwithoutresults'] = 'Absent without results:';
+$string['attendenceoverviewnoattwithresults'] = 'Absent with results:';
 $string['backtopreview'] = 'Show Preview';
 $string['basicideasofofflinequiz'] = 'The basic ideas of offline quiz-making';
 $string['blackwhitethreshold'] = 'Black/white threshold.';
@@ -96,7 +103,8 @@ $string['configpapergray'] = 'white-value of paper, which is used for the evalua
 $string['configshuffleanswers'] = 'Shuffle answers';
 $string['configshufflequestions'] = 'If you enable this option, then the order of questions in the offline quiz groups will be randomly shuffled each time you re-create the preview in the "Create forms" tab.';
 $string['configshufflewithin'] = 'If you enable this option, then the parts making up the individual questions will be randomly shuffled when the question- and answer-forms are created.';
-$string['configuseridentification'] = 'A formula describing the user identification. This formula is used to assign answer forms to users in the system. The right hand side of the equation must denote a field in the user table of Moodle.';
+$string['configuseridentification'] = 'A formula describing the user identification. This formula is used to assign answer forms to users in the system. The left hand side of the equation defines the number of digits (integer only, up to 10 digits). The right hand side of the equation must denote a field in the user table of Moodle (e.g. id, idnumber, phone1).
+In addition, the equation can also deal with prefix and suffix which is added to the marked digits (e.g. "a[7]=username" or "b[5]cd=username"). These concatenations of strings and numbers denote the value of the used field in the user table, that is used for user identification.';
 $string['confirmremovequestion'] = 'Are you sure you want to remove this {$a} question?';
 $string['copy'] = 'Copy';
 $string['copyright'] = '<strong>Warning: The texts on this page are just for your personal information. Like any other texts these questions are under copyright restrictions. You are not allowed to copy them or to show them to other people!</strong>';
@@ -109,6 +117,20 @@ $string['correctheader'] = 'Correction necessary:';
 $string['correctionerrors'] = 'Forms with correction errors:';
 $string['correctionform'] = 'Correction';
 $string['correctionforms'] = 'Correction forms';
+$string['correctionheader'] = 'Correction';
+$string['correctionheader_help'] = '<p>The answer forms displayed here need your your attention and must be corrected manually. An automatic evaluation is not possible.</p>
+<u>The following errors may occur...</u>
+<ul>
+  <li><strong>Inaccurate markings:</strong> Some marks could not be evaluated.</li>
+  <li><strong>Invalid group number:</strong> The group number could not be evaluated.</li>
+  <li><strong>Invalid page number:</strong> The page number could not be evaluated.</li>
+  <li><strong>Not adjusted:</strong> The answer form was scanned crooked and cannot be evaluated.</li>
+  <li><strong>Different result exists:</strong> An evaluated result with a deviating group number already exists.</li>
+  <li><strong>Pages incomplete:</strong> The current answer sheet has been evaluated, but at least 1 additional sheet is missing to complete the evaluation for the identified participant. (Only occurs with multi-page answer forms.)</li>
+  <li><strong>Result exists:</strong> An evaluated result already exists.</li>
+  <li><strong>User not in course:</strong> The identified participant is not currently registered in the course.</li>
+  <li><strong>User does not exist:</strong> The identified participant is unknown.</li>
+</ul>';
 $string['correctionoptionsheading'] = 'Correction options';
 $string['correctupdated'] = 'Updated correction form for group {$a}.';
 $string['couldnotgrab'] = 'Could not grab image {$a}';
@@ -135,6 +157,10 @@ $string['decimalplaces'] = 'Decimal places';
 $string['decimalplaces_help'] = 'Number of digits that should be shown after the decimal point when displaying grades for the offline quiz.';
 $string['defaultparticipantsusage'] = 'Record attendance';
 $string['defaultparticipantsusagedesc'] = 'Determines if attendances should be recorded with attendance lists by default.';
+$string['defaultpdffont'] = 'Default form font';
+$string['defaultpdffont_help'] = 'The default font offlinequiz will use for forms. You may want to manually download tcpdf package and extract its fonts/ directory into your $CFG->dataroot/fonts/ for more fonts. It is recommended to use Freeserif as the default as it supports the most characters. See https://www.gnu.org/software/freefont/coverage.html for the full compatibility list.';
+$string['defaultpdffontsize'] = 'Default fontsize';
+$string['defaultpdffontsize_help'] = 'The default font size all forms will use.';
 $string['deletelistcheck'] = 'Do you really want to delete the selected list and all it\'s participants?';
 $string['deletepagecheck'] = 'Do you really want to delete the selected pages?';
 $string['deletepagesafterselected'] = 'Remove page breaks after selected questions';
@@ -152,6 +178,9 @@ $string['difficultytitleb'] = 'Difficulty B';
 $string['difficultytitlediff'] = 'Difference';
 $string['disableimgnewlines'] = 'Disable new lines before and after images';
 $string['disableimgnewlines_help'] = 'This option disables new lines before and after images in the pdf question sheets. Warning: This might lead to formatting problems.';
+$string['discriminationindex_info'] = 'Since the discrimination index calculates prediction of the question between good and inferior grades it can\'t be calculated if either
+- there are no different responses of the students in this question
+- there are no different grades in the exam';
 $string['displayoptions'] = 'Display options';
 $string['documentschanged'] = 'One ore more question(s) in the offlinequiz was/ were changed since creating the documents.<br>Future results will be regraded automatically during the evaluation to the current version of the question(s) chosen here. In the documents the origin version of the question(s) is still shown.';
 $string['documentschangedwithresults'] = 'One ore more question(s) in the offlinequiz was/ were changed since creating the documents.<br>Existing results were regraded automatically to the current version of the question(s) chosen here. In the documents the origin version of the question(s) is still shown.';
@@ -216,6 +245,19 @@ $string['fileprefixform'] = 'question_form';
 $string['fileprefixparticipants'] = 'participants_list';
 $string['filesizetolarge'] = 'Some of your image files are very large. The dimensions will be resized during the interpretation. Please try to scan with a resolution between 200 and 300 dpi and in black and white mode. This will speed up the interpretation next time.';
 $string['filterbytags'] = 'Filter by tags...';
+$string['fontfamilycourier'] = 'Courier';
+$string['fontfamilyfreemono'] = '(Free-)Mono';
+$string['fontfamilyfreesans'] = '(Free-)Sans';
+$string['fontfamilyfreeserif'] = '(Free-)Serif (recommended)';
+$string['fontfamilyhelvetica'] = 'Helvetica';
+$string['fontfamilyhysmyeongjostdmedium'] = 'MyungJo Medium (Korean)';
+$string['fontfamilykozgopromedium'] = 'Kozuka Gothic Pro (Japanese Sans-Serif)';
+$string['fontfamilykozminproregular'] = 'Kozuka Mincho Pro (Japanese Serif)';
+$string['fontfamilymsungstdlight'] = 'MSung Light (Trad. Chinese)';
+$string['fontfamilystsongstdlight'] = 'STSong Light (Simp. Chinese)';
+$string['fontfamilysymbol'] = 'Symbol';
+$string['fontfamilytimes'] = 'Times';
+$string['fontfamilyzapfdingbats'] = 'ZapfDingbats';
 $string['fontsize'] = 'Fontsize';
 $string['forautoanalysis'] = 'For automatic analysis';
 $string['formforcorrection'] = 'Correction form for group {$a}';
@@ -248,6 +290,7 @@ $string['groupoutofrange'] = 'Group was out of range and replaced with group A.'
 $string['hasresult'] = 'Result exists';
 $string['hotspotdeletiontask'] = 'Deletion of hotspots';
 $string['html'] = 'HTML';
+$string['id'] = 'User-ID';
 $string['idnumber'] = 'ID number';
 $string['imagefile'] = 'Image file';
 $string['imagenotfound'] = 'Image file: {$a} not found!';
@@ -363,8 +406,8 @@ $string['noresults'] = 'There are no results.';
 $string['noreview'] = 'You are not allowed to review this offline quiz';
 $string['noscannedpage'] = 'There is no scanned page with ID {$a}!';
 $string['notagselected'] = 'No tag selected';
+$string['notavailable'] = 'N/A';
 $string['nothingtodo'] = 'Nothing to do!';
-$string['notonattendancelist'] = 'Not on attendance list:';
 $string['notxtfile'] = 'No TXT file';
 $string['notyetgraded'] = 'Not yet graded';
 $string['nozipfile'] = 'No ZIP file';
@@ -389,7 +432,7 @@ $string['offlinequiz:preview'] = 'Preview offline quizzes';
 $string['offlinequiz:view'] = 'View offline quiz information';
 $string['offlinequiz:viewreports'] = 'View offline quiz reports';
 $string['offlinequizcloses'] = 'Offline Quiz closes';
-$string['offlinequizcloseson'] = 'The review for this offline quiz will close at {$a}';
+$string['offlinequizcloseson'] = 'The review for this offline quiz will close {$a}';
 $string['offlinequizcontent'] = 'Offline quiz content';
 $string['offlinequizisclosed'] = 'Offline quiz closed)';
 $string['offlinequizisclosedwillopen'] = 'Offline quiz closed (opens {$a})';
@@ -450,6 +493,8 @@ or TIFs. A resolution between 200 and 300dpi is recommended.</p>';
 $string['partuncheckedwithoutresult'] = '{$a} unchecked participants without result';
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} unchecked participants with result</a>';
 $string['pdfdeletedforgroup'] = 'Form for group {$a} deleted';
+$string['pdffont'] = 'Form font';
+$string['pdffont_help'] = 'Here you can choose a font for all your PDF forms: answer forms, correction forms, attendance forms. As well as question forms, if you choose a PDF format for it. The choice should also depend on which characters you use in your forms. With DOCX and LATEX format the question sheets are not affected by it.';
 $string['pdfintro'] = 'Additional information';
 $string['pdfintro_help'] = 'This information will be printed on the first page of the question sheet and should contain general information about how to fill in the answer form.';
 $string['pdfintrotext'] = '<b>How do I mark correctly?</b><br />This answer form will be scanned automatically. Please do not fold or spot. Use a black or blue pen to mark the fields. If you want to correct a marking, completely fill the box with color. This field will be interpreted like an empty box.<br />';
@@ -461,7 +506,7 @@ $string['pluginadministration'] = 'Offline quiz administration';
 $string['pluginname'] = 'Offline Quiz';
 $string['point'] = 'point';
 $string['preparation'] = '1. Preparation';
-$string['present'] = 'present';
+$string['present'] = 'Present';
 $string['preventsamequestion'] = 'Prevent multiple usage of the same question in different groups';
 $string['preview'] = 'Preview';
 $string['previewforgroup'] = 'Group {$a}';
@@ -471,6 +516,7 @@ $string['printstudycodefield_help'] = 'If checked, the study code field will be 
 $string['privacy:data_folder_name'] = 'Offlinequiz data';
 $string['privacy:metadata:core_files'] = 'The offlinequiz uses the file API to store the generated question sheets, answer sheets and correction sheets as well as the filled out answer sheets.';
 $string['privacy:metadata:core_question'] = 'The offlinequiz uses the question API for saving the questions for the quizes.';
+$string['privacy:metadata:mod_quiz'] = 'The offlinequiz uses the quiz API for saving results of the quizes.';
 $string['privacy:metadata:offlinequiz'] = 'The offlinequiz table saves every information specific to an offlinequiz instance.';
 $string['privacy:metadata:offlinequiz:course'] = 'The \'course\' column in the offlinequiz table saves in which course this offlinequiz is stored in.';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'The amount of decimal points to calculate for the grades.';
@@ -824,6 +870,7 @@ $string['statisticsplural'] = 'Statistics';
 $string['statisticsviewheader'] = '3. Statistics';
 $string['statsoverview'] = 'Statistics overview';
 $string['studycode'] = 'Study code';
+$string['subplugintype_offlinequiz'] = 'Offlinequiz report';
 $string['subplugintype_offlinequiz_plural'] = 'Offlinequiz reports';
 $string['tabattendances'] = 'Attendances';
 $string['tabattendancesoverview'] = 'Attendances';
@@ -833,7 +880,7 @@ $string['tabeditgrades'] = 'Grades';
 $string['tabeditgroupquestions'] = 'Questions';
 $string['tabeditparticipants'] = 'Participants';
 $string['tabofflinequizcontent'] = 'Preparation';
-$string['tabofflinequizcorrect'] = 'Correct';
+$string['tabofflinequizcorrect'] = 'Correction';
 $string['tabofflinequizupload'] = 'Upload';
 $string['tabparticipantlists'] = 'Attendance lists';
 $string['tabparticipantscorrect'] = 'Correct';
@@ -841,7 +888,6 @@ $string['tabparticipantsupload'] = 'Upload';
 $string['tabpreview'] = 'Forms';
 $string['tabquestionandanswerstats'] = 'Question and answer analysis';
 $string['tabquestionstats'] = 'Question analysis';
-$string['tabregrade'] = 'Regrading';
 $string['tabresults'] = 'Results';
 $string['tabresultsoverview'] = 'Results';
 $string['tabstatistics'] = 'Statistics';
@@ -854,6 +900,61 @@ $string['totalpointsx'] = 'Total of marks: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total of {$a} questions in category.';
 $string['trigger'] = 'lower/higher boundary';
 $string['tutorial'] = 'Tutorial for offline quizzes';
+$string['tutorial:feedback:1:1'] = 'There are no questions on the answer form. The answer form only contains the boxes for marking your answers in.';
+$string['tutorial:feedback:1:2'] = 'The layout of the question sheet doesn\'t have to look exactly the same as the one in the screenshot. It is only to show you the questions and it is not scanned in after the examination.';
+$string['tutorial:feedback:2:1'] = 'This cross is too pale. It is possible that it will not be scanned correctly.';
+$string['tutorial:feedback:2:2'] = 'A cross of normal line width will always be interpreted correctly.';
+$string['tutorial:feedback:2:3'] = 'A thick cross could be interpreted as having been corrected (filled in completely).';
+$string['tutorial:feedback:2:4'] = 'An empty box will never be interpreted as a cross.';
+$string['tutorial:feedback:2:5'] = 'A completely filled in box is interpreted exactly the same as an empty box.';
+$string['tutorial:feedback:3:1'] = 'Only the crosses in the boxes are scanned. That is why it is so important to mark the right boxes under your matriculation number.';
+$string['tutorial:feedback:3:2'] = 'Only the crosses in the boxes are scanned. That is why it is so important to mark the right boxes under your matriculation number.';
+$string['tutorial:feedback:3:3'] = 'Only the crosses in the boxes are scanned. That is why it is so important to mark the right boxes under your matriculation number.';
+$string['tutorial:feedback:3:4'] = 'Only the crosses in the boxes are scanned. That is why it is so important to mark the right boxes under your matriculation number.';
+$string['tutorial:feedback:4:0'] = 'You have made a mistake. Your matriculation number is {$a->correctusernumber}, but you marked {$a->selectedusernumber}';
+$string['tutorial:feedback:4:1'] = 'You have successfully completed this tutorial.';
+$string['tutorial:feedback:correct'] = 'Correct!';
+$string['tutorial:feedback:wrong'] = 'Wrong!';
+$string['tutorial:generatedusernumberwarning'] = 'This is a generated matriculation number since your account doesn\'t have one!';
+$string['tutorial:header:1'] = '1. Question sheets and answer forms';
+$string['tutorial:header:2'] = '2. Crosses and corrections';
+$string['tutorial:header:3'] = '3. The answer form';
+$string['tutorial:header:4'] = '4. Marking your matriculation number';
+$string['tutorial:header:5'] = '5. Finally...';
+$string['tutorial:introduction:1'] = 'In the examination you will get two sheets: one with the questions and one with boxes to mark your answers on. The questions are numbered and so are the boxes on the answer form. Each answer is marked with a letter. After the examination, the answer form is scanned and interpreted by a computer.';
+$string['tutorial:introduction:2:1'] = 'The boxes on the answer sheet are 5 millimetres wide. The boxes belonging to the same question are in one row. The number of the question is on the left hand side and the letter corresponding to the answer item is at the top of the column.';
+$string['tutorial:introduction:2:2'] = 'Use a black or blue pen to mark the fields. If you want to correct a mark, fill in the box completely. This field will then be interpreted like an empty box.';
+$string['tutorial:introduction:3:1'] = 'The answer form contains a block for your name (A), a block for your matriculation number (B) and a block for the answers (C). Fill in the boxes for your name, signature and matriculation number first. Note that the machine will not try to interpret your handwriting after the examination. These boxes are only for documentation purposes.';
+$string['tutorial:introduction:3:2'] = 'Mark the boxes for your matriculation number carefully as the computer will need these marks to identify your results. Mistakes in the block with your matriculation number can lead to delays and misinterpretation.';
+$string['tutorial:introduction:4'] = 'At the end of this tutorial we offer you a little test where you can learn how to fill in the marks for your matriculation number correctly. Under the box for your matriculation number is a matrix of boxes. Each column stands for one digit of your matriculation number. The rows mark the numbers written on the left and right hand side. Click on the boxes to mark them. Click again to delete your mark. If you want to start again, please <a href="javascript: document.location.reload()">reload the page</a>.';
+$string['tutorial:introduction:5'] = 'Please keep in mind, that the answer forms are interpreted by a computer. This machine can\'t read anything you write beside the boxes. For the computer program anything outside the boxes is just a spot that prevents the machine from interpreting the form correctly. You punish yourself if you don\'t place the marks correctly.';
+$string['tutorial:option:1:1'] = 'An answer form';
+$string['tutorial:option:1:2'] = 'A question sheet';
+$string['tutorial:option:3:1'] = 'The system reads your name using optical character recognition software.';
+$string['tutorial:option:3:2'] = 'Your signature is scanned using software used for finger prints in criminal investigations.';
+$string['tutorial:option:3:3'] = 'Only the crosses in the boxes under your matriculation number are interpreted.';
+$string['tutorial:option:3:4'] = 'The system reads your matriculation number using optical character recognition software.';
+$string['tutorial:question:1'] = 'This image shows:';
+$string['tutorial:question:2'] = 'Which mark will be interpreted as a cross for sure?';
+$string['tutorial:question:3'] = 'How does the computer assign the answer form to the right person?';
+$string['tutorial:question:4'] = 'Matriculation Number';
+$string['tutorial:question:5'] = 'Good luck!';
+$string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; How many offlinequiz documents will be given to you during an exam?';
+$string['tutorial:questionsheet:1:1'] = 'a)&nbsp;&nbsp;0';
+$string['tutorial:questionsheet:1:2'] = 'b)&nbsp;&nbsp;1';
+$string['tutorial:questionsheet:1:3'] = 'c)&nbsp;&nbsp;2';
+$string['tutorial:questionsheet:1:4'] = 'd)&nbsp;&nbsp;3';
+$string['tutorial:questionsheet:1:5'] = 'e)&nbsp;&nbsp;4';
+$string['tutorial:questionsheet:1:marks'] = '(Points: 1)';
+$string['tutorial:questionsheet:2'] = '2)&nbsp;&nbsp; What content is available on a questionnaire of the offlinequiz?';
+$string['tutorial:questionsheet:2:1'] = 'a)&nbsp;&nbsp;Questions';
+$string['tutorial:questionsheet:2:2'] = 'b)&nbsp;&nbsp;Answer options';
+$string['tutorial:questionsheet:2:3'] = 'c)&nbsp;&nbsp;Correct answers';
+$string['tutorial:questionsheet:2:4'] = 'd)&nbsp;&nbsp;Further information';
+$string['tutorial:questionsheet:2:5'] = 'e)&nbsp;&nbsp;None of them';
+$string['tutorial:questionsheet:2:marks'] = '(Marks: 1)';
+$string['tutorial:title'] = 'Tutorial';
+$string['tutorial:title:navigation'] = 'Navigation';
 $string['type'] = 'Type';
 $string['uncheckparts'] = 'Mark selected participants as absent';
 $string['updatedsumgrades'] = 'The sum of all grades of group {$a->letter} was re-calculated to {$a->grade}.';

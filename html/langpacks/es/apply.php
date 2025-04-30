@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'apply', language 'es', version '4.1'.
+ * Strings for component 'apply', language 'es', version '4.4'.
  *
  * @package     apply
  * @category    string
@@ -222,7 +222,7 @@ $string['save_entry_button'] = 'Enviar esta entrada';
 $string['save_item'] = 'Guardar elemento';
 $string['saving_failed'] = 'El guardado falló';
 $string['saving_failed_because_missing_or_false_values'] = 'El guardado falló por pérdida o falsedad de los valores.';
-$string['separator_decimal'] = '';
+$string['separator_decimal'] = '.';
 $string['separator_thousand'] = ',';
 $string['show_all'] = 'Mostrar todos {$a}';
 $string['show_perpage'] = 'Mostrar {$a} por página';

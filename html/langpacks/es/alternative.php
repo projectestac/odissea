@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'alternative', language 'es', version '4.1'.
+ * Strings for component 'alternative', language 'es', version '4.4'.
  *
  * @package     alternative
  * @category    string

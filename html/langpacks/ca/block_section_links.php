@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ca', version '4.1'.
+ * Strings for component 'block_section_links', language 'ca', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -37,5 +37,3 @@ $string['numsections2'] = 'Nombre de seccions alternativament';
 $string['numsections2_help'] = 'Una vegada que el nombre de seccions del curs arriba a aquest valor s\'utilitza l\'increment per valor.';
 $string['pluginname'] = 'Enllaç a la secció';
 $string['section_links:addinstance'] = 'Afegir un bloc nou d\'enllaços a les seccions';
-$string['topics'] = 'Temes';
-$string['weeks'] = 'Setmanes';

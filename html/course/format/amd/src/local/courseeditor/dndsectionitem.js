@@ -71,6 +71,17 @@ export default class extends BaseComponent {
         }
     }
 
+    /**
+     * Enable or disable the draggable property.
+     *
+     * @param {bool} value the new draggable value
+     */
+    setDraggable(value) {
+        if (this.getDraggableData) {
+            this.dragdrop?.setDraggable(value);
+        }
+    }
+
     // Drag and drop methods.
 
     /**
@@ -110,6 +121,10 @@ export default class extends BaseComponent {
     validateDropData(dropdata) {
         // Course module validation.
         if (dropdata?.type === 'cm') {
+            // Prevent content loops with subsections.
+            if (this.section?.component && dropdata?.delegatesection === true) {
+                return false;
+            }
             // The first section element is already there so we can ignore it.
             const firstcmid = this.section?.cmlist[0];
             return dropdata.id !== firstcmid;
@@ -135,11 +150,13 @@ export default class extends BaseComponent {
      * Drop event handler.
      *
      * @param {Object} dropdata the accepted drop data
+     * @param {Event} event the drop event
      */
-    drop(dropdata) {
+    drop(dropdata, event) {
         // Call the move mutation.
         if (dropdata.type == 'cm') {
-            this.reactive.dispatch('cmMove', [dropdata.id], this.id, this.section?.cmlist[0]);
+            const mutation = (event.altKey) ? 'cmDuplicate' : 'cmMove';
+            this.reactive.dispatch(mutation, [dropdata.id], this.id, this.section?.cmlist[0]);
         }
     }
 }

@@ -67,12 +67,19 @@ abstract class base {
     protected static $levels = [CONTEXT_SYSTEM];
 
     /**
+     * An area id from the componentname and the area name.
+     *
+     * @var string
+     */
+    public $areaid;
+
+    /**
      * Constructor.
      *
      * @throws \coding_exception
      * @return void
      */
-    public final function __construct() {
+    final public function __construct() {
 
         $classname = get_class($this);
 
@@ -538,7 +545,7 @@ abstract class base {
      * @param \core_search\document $doc
      * @return \core_search\document_icon
      */
-    public function get_doc_icon(document $doc) : document_icon {
+    public function get_doc_icon(document $doc): document_icon {
         return new document_icon('i/empty');
     }
 

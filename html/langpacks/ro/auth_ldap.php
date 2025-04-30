@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ro', version '4.1'.
+ * Strings for component 'auth_ldap', language 'ro', version '4.4'.
  *
  * @package     auth_ldap
  * @category    string
@@ -153,6 +153,8 @@ $string['renamingnotallowed'] = 'Redenumirea utilizatorului nu este permisă în
 $string['rootdseerror'] = 'Eroare la interogarea rootDSE pentru Active Directory';
 $string['start_tls'] = 'Utilizați un serviciu LDAP obișnuit (portul 389) cu criptare TLS';
 $string['start_tls_key'] = 'Utilizați TLS';
+$string['sync_updateuserchunk'] = 'Setați această valoare la numărul de utilizatori pe care doriți să îi actualizați per tranzacție. Setarea la 0 va actualiza toți utilizatorii într-o singură tranzacție.';
+$string['sync_updateuserchunk_key'] = 'Numărul de utilizatori care vor fi actualizați în procesul de sincronizare';
 $string['syncroles'] = 'Sincronizați rolurile de sistem din LDAP';
 $string['synctask'] = 'Procesul de sincronizare utilizatori LDAP';
 $string['systemrolemapping'] = 'Maparea rolurilor sistemului';

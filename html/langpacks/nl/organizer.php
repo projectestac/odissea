@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'nl', version '4.1'.
+ * Strings for component 'organizer', language 'nl', version '4.4'.
  *
  * @package     organizer
  * @category    string
@@ -147,7 +147,7 @@ $string['availableslotsfor'] = 'Beschikbare tijdslots';
 $string['back'] = 'Terug';
 $string['btn_add'] = 'Nieuwe tijdslots toevoegen';
 $string['btn_assign'] = 'Tijdslot toewijzen';
-$string['btn_comment'] = 'Opmerking bewerken';
+$string['btn_comment'] = 'Je opmerking bewerken';
 $string['btn_delete'] = 'Geselecteerde tijdslots verwijderen';
 $string['btn_deleteappointment'] = 'Afspraak verwijderen';
 $string['btn_deletesingle'] = 'Geselecteerd tijdslot verwijderen';
@@ -173,7 +173,7 @@ $string['calendarsettings'] = 'Kalenderinstellingen';
 $string['can_reregister'] = 'Je kunt je opnieuw registreren voor een andere afspraak';
 $string['cannot_eval'] = 'Beoordelen niet mogelijk, de leerling heeft een';
 $string['cfg_dontshowidentity'] = 'Identiteit verbergen';
-$string['cfg_dontshowidentity_desc'] = 'Verberg de identiteit van een deelnemer in de lijst met tijdsloten';
+$string['cfg_dontshowidentity_desc'] = 'Verberg de identiteit van een deelnemer in de lijst met tijdslots';
 $string['cfg_limitedwidth'] = 'Kleiner contentgebied';
 $string['configahead'] = 'vooruit';
 $string['configday'] = 'dag';

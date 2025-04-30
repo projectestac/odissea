@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ur', version '4.1'.
+ * Strings for component 'data', language 'ur', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -369,7 +369,6 @@ $string['timemodified'] = 'وقت میں ترمیم کی گئی';
 $string['todatabase'] = 'اس ڈیٹا بیس میں۔';
 $string['type'] = 'فیلڈ کی قسم';
 $string['undefinedprocessactionmethod'] = 'ایکشن "{$a}" کو ہینڈل کرنے کے لیے Data_Preset میں کارروائی کا کوئی طریقہ بیان نہیں کیا گیا ہے۔';
-$string['unsupportedexport'] = '({$a->fieldtype}) برآمد نہیں کیا جا سکتا۔';
 $string['unsupportedfields'] = 'غیر تعاون یافتہ فیلڈز';
 $string['unsupportedfieldslist'] = 'درج ذیل فیلڈز کو ایکسپورٹ نہیں کیا جا سکتا:';
 $string['updatefield'] = 'موجودہ فیلڈ کو اپ ڈیٹ کریں';

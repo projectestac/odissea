@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'de', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'de', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,14 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'API Key';
 $string['cachelimit'] = 'Cache-Begrenzung';
 $string['cachelimit_info'] = 'Legen Sie die maximale Dateigröße (in Bytes) fest, die auf dem Server bei Dropbox Aliases/Verknüpfungen gecacht werden soll. Gecachte Dateien werden genutzt, wenn die Quelldatei nicht verfügbar ist. Leere Einträge oder der Wert \'0\' bedeuten, dass alle Dateien unabhängig von ihrer Größe gecacht werden.';
 $string['configplugin'] = 'Einstellungen für Dropbox';
 $string['crontask'] = 'Hintergrundprozess für Dropbox Repository';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropbox-Dateien anzeigen';
-$string['instruction'] = 'Sie erhalten API Key und Secret von <a href="https://www.dropbox.com/developers/apps">Dropbox Developers</a>. Bei der Beantragung wählen Sie bitte "Full Dropbox" als "Access level" aus.';
 $string['issuer'] = 'OAuth 2 Service';
 $string['issuer_help'] = 'Wählen Sie den OAuth 2-Service aus, der für die Kommunikation mit der Dropbox-API konfiguriert ist. Wenn der Service noch nicht existiert, müssen Sie ihn erstellen.';
 $string['logoutdesc'] = '(Ausloggen wenn die Nutzung von Dropbox abgeschlossen wird)';
@@ -42,4 +40,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Das Dropbox-Repository Plugin speichert keine personenbezogenen Daten. Es überträgt aber Nutzerdaten von Moodle an das entfernte System.';
 $string['privacy:metadata:repository_dropbox:query'] = 'Die Dropbox-Repository Suchanfrage des Nutzers';
 $string['remember'] = 'Eingeloggt bleiben';
-$string['secret'] = 'Secret';

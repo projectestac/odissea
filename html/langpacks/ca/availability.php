@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ca', version '4.1'.
+ * Strings for component 'availability', language 'ca', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Afegeix una restricció...';
 $string['and'] = 'i';
 $string['condition_group'] = 'Conjunt de restriccions';
 $string['condition_group_info'] = 'Afegeix un conjunt de restriccions imbricades per aplicar la lògica complexa.';
+$string['disabled_verb'] = 'No es pot canviar perquè el conjunt de regles inclou una regla que conté dades privades.';
+$string['editsettings'] = 'Edita paràmetres';
 $string['enableavailability'] = 'Habilita l\'accés restringit';
 $string['enableavailability_desc'] = 'Si s\'activa, això us permet establir les condicions que controlen si es pot accedir a una activitat o un recurs  (segons la data, la qualificació o la compleció).';
 $string['error_list_nochildren'] = 'Els conjunts de restriccions haurien de contenir almenys una condició.';

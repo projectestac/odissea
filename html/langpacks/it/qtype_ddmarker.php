@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'it', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'it', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -41,12 +41,22 @@ $string['dropbackground'] = 'Immagine di sfondo dove trascinare gli indicatori';
 $string['dropzone'] = 'Area di rilascio {$a}';
 $string['dropzoneheader'] = 'Aree di rilascio';
 $string['dropzones'] = 'Aree di rilascio';
-$string['dropzones_help'] = 'Le aree di rilascio vengono definite inserendo le coordinate.  Durante l\'inserimento, l\'anteprima verrà aggiornata in tempo reale facilitando il posizionamento degli elementi.
+$string['dropzones_help'] = 'Le zone di rilascio possono essere definite tramite coordinate o trascinate in posizione nell\'anteprima in alto.
 
-* Cerchio: centro_x, centro_y; raggio<br>Esempio: <code>80, 100; 50</code>
-* Poligono: x1, y1; x2, y2; ...; xn, yn<br>Esempio: <code>20, 60; 100, 60; 20, 100</code>
-* Rettangolo: sinistra, alto, larghezza, altezza<br>Esempio: <code>20, 60; 80, 40</code>';
-$string['followingarewrong'] = 'I seguenti indicatori sono stati posizionati in un\'area sbagliata: {$a}.';
+Selezionando prima una forma (cerchio, rettangolo o poligono) verrà aggiunta una nuova forma di zona di rilascio in alto a sinistra dell\'anteprima. Potrebbe essere utile ridurre al minimo la sezione Marcatori in modo da poter vedere l\'anteprima durante la modifica delle zone di rilascio.
+
+La modifica di una forma inizia con un clic sulla forma nell\'anteprima per visualizzare le maniglie di modifica. Puoi spostare la forma utilizzando la maniglia centrale o regolare le dimensioni della forma con le maniglie dei vertici.
+
+Solo per i poligoni, tenendo premuto il pulsante di controllo (pulsante di comando su un Mac) mentre fai clic su una maniglia dei vertici verrà aggiunto un nuovo vertice al poligono. Mantieni una forma poligonale il più semplice possibile, senza attraversare le linee.
+
+Per informazioni, le tre forme utilizzano le coordinate in questo modo:
+
+* Cerchio: centro_x, centro_y; raggio<br />ad esempio: <code>80,100;50</code>
+* Rettangolo: top_left_x, top_left_y; larghezza, altezza<br />ad esempio: <code>20,60;80,40</code>
+* Poligono: x1, y1; x2, y2; ...; xn, yn<br />ad esempio: <code>20,60;100,60;20,100</code>
+
+Selezionando un testo marcatore, quel testo verrà aggiunto alla forma nell\'anteprima.';
+$string['followingarewrong'] = 'I seguenti indicatori sono stati posizionati in un\'area errata: {$a}.';
 $string['followingarewrongandhighlighted'] = 'I seguenti indicatori non sono stati posizionati correttamente: {$a}. Gli indicatori evidenziati sono ora visualizzati nelle posizioni corrette.<br />Fai click su un marker per evidenziare l\'area corrispondente.';
 $string['formerror_dragrequired'] = 'È necessarioaggiungere almeno un indicatore a questa domanda.';
 $string['formerror_droprequired'] = 'È necessario definire almeno una zona di rilascio per questa domanda.';
@@ -78,7 +88,7 @@ $string['pluginnamesummary'] = 'Gli indicatori verranno trascinati e rilasciati 
 Da notare che questo tipo di domanda non è accessibile.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
-$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia indicatori\' non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin di tipo domanda con Trascina e rilascia indicatori consente agli autori delle domande di impostare le opzioni predefinite come preferenze dell\'utente.';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';
 $string['privacy:preference:penalty'] = 'Penalità per ogni tentativo errato quando le domande vengono eseguite utilizzando il comportamento \'Interattivo con tentativi multipli\' o \'Modalità adattiva\'.';
 $string['privacy:preference:shuffleanswers'] = 'Randomizzazione automatica delle risposte.';

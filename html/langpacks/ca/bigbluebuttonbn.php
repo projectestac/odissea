@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ca', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'ca', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -36,10 +36,11 @@ $string['bigbluebuttonbn:join'] = 'Accedeix a una conferència';
 $string['bigbluebuttonbn:managerecordings'] = 'Gestiona els enregistraments de bigbluebuttonbn';
 $string['bigbluebuttonbn:view'] = 'Veure sala/activitat';
 $string['calendarstarts'] = '{$a} està programada per';
+$string['config_dpa_note'] = 'Nota: per complir amb les vostres obligacions de protecció de dades, abans d\'utilitzar un proveïdor de serveis per a aquest connector, heu d\'assegurar-vos que heu llegit i acceptat l\'acord de tractament de dades del proveïdor de serveis. Per al servei gratuït BigBlueButton predeterminat, aquest és l\'<a href="{$a}" target="_blank">acord de processament de dades de Blindside Networks</a>. Consulteu els vostres propis professionals de la privadesa per obtenir assessorament.';
 $string['config_extended_capabilities'] = 'Configuració de les capacitats ampliades';
 $string['config_extended_capabilities_description'] = 'Configuració de les capacitats ampliades quan el servidor BigBlueButton les ofereix.';
 $string['config_general'] = 'Configuració general';
-$string['config_general_description'] = 'Aquesta configuració s\'utilitzarà <b>sempre</b>';
+$string['config_general_description'] = 'Per configurar el BigBlueButton, podeu optar per utilitzar el vostre propi servidor BigBlueButton i les credencials corresponents, o bé obtenir unes credencials mitjançant el <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">portal de registre de Blindside Networks (s\'obre en una finestra nova)</a>.';
 $string['config_importrecordings'] = 'Configuració per a la característica «Importa enregistraments»';
 $string['config_importrecordings_description'] = 'Aquesta configuració és per a una característica específica';
 $string['config_importrecordings_enabled'] = 'S\'ha activat la importació d\'enregistraments';
@@ -47,6 +48,7 @@ $string['config_importrecordings_enabled_description'] = 'Quan aquesta opció i 
 $string['config_importrecordings_from_deleted_enabled'] = 'S\'ha activat la importació d\'enregistraments des d\'activitats eliminades';
 $string['config_recording_hide_button_default'] = 'Amaga el botó d\'enregistrar';
 $string['config_server_url'] = 'URL del servidor BigBlueButton';
+$string['dpainfonotsigned'] = 'Abans d\'activar aquest connector, heu de confirmar que heu llegit i acceptat l\'<a href="{$a}">acord de tractament de dades de Blindside Networks</a>.';
 $string['end_session_confirm'] = 'Segur que voleu acabar la sessió?';
 $string['end_session_confirm_title'] = 'Voleu acabar la sessió?';
 $string['event_activity_created'] = 'Activitat BigBlueButtonBN creada';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'uk', version '4.1'.
+ * Strings for component 'hub', language 'uk', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Назва';
 $string['coursepublished'] = 'Цей курс успішно опубліковано на "{$a}".';
 $string['courseshortname'] = 'Коротка назва';
 $string['courseshortname_help'] = 'Вкажіть коротку назву вашого курсу. Унікальність не обов’язкова.';
+$string['coursesnodates'] = 'Кількість курсів без встановленої дати завершення ({$a})';
 $string['coursesnumber'] = 'Кількість курсів ({$a})';
+$string['dbtype'] = 'Тип бази даних ({$a})';
 $string['demourl'] = 'URL демонстрації';
 $string['demourl_help'] = 'Вкажіть URL для демонстраційного показу вашого курсу. Стандартно це URL вашого курсу. Це посилання буде використовуватися на сторінці результатів пошуку курсів.';
 $string['downloadable'] = 'Завантажуванні';
@@ -96,6 +98,7 @@ $string['postaladdress'] = 'Поштова адреса';
 $string['postaladdress_help'] = 'Поштова адреса цього сайту або особи, яка його представляє.';
 $string['postsnumber'] = 'Кількість повідомлень ({$a})';
 $string['previousregistrationdeleted'] = 'Попередню реєстрацію було видалено з {$a}.  Ви можете почати процес реєстрації заново. Дякуємо.';
+$string['primaryauthtype'] = 'Основний тип автентифікації ({$a})';
 $string['questionsnumber'] = 'Кількість питань ({$a})';
 $string['registeredactiveuserdevices'] = 'Кількість активних користувачів з зареєстрованими мобільними пристроями, які отримують сповіщення ({$a})';
 $string['registeredcourses'] = 'Зареєстровані курси';
@@ -158,6 +161,7 @@ $string['siteregistrationupdated'] = 'Реєстрацію сайту оновл
 $string['siterelease'] = 'Moodle реліз';
 $string['siterelease_help'] = 'Номер версії Moodle цього сайту.';
 $string['sitereleasenum'] = 'Реліз Moodle ({$a})';
+$string['sitetheme'] = 'Тема сайту ({$a})';
 $string['siteurl'] = 'Адреса сайту';
 $string['siteurl_help'] = 'Адреса цього сайту. Якщо установки конфіденційності дозволяють людям бачити ваш сайт, то буде використана ця адреса.';
 $string['siteversion'] = 'Moodle версія';

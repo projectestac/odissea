@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adobeconnect', language 'fr', version '4.1'.
+ * Strings for component 'adobeconnect', language 'fr', version '4.4'.
  *
  * @package     adobeconnect
  * @category    string
@@ -61,7 +61,7 @@ $string['duplicatemeetingname'] = 'Un nom de réunion en double a été trouvé 
 $string['duplicateurl'] = 'Une URL de réunion en double a été trouvée sur le serveur';
 $string['editingfor'] = 'Modification pour : $a';
 $string['email_login'] = 'Connexion par courriel';
-$string['email_login_desc'] = 'Cochez cette option uniquement si votre connexion au serveur Connect Pro est définie pour utiliser l’adresse électronique. Notez que l’activation/désactivation de cette option lors de l’utilisation régulière de ce module d’activité peut potentiellement créer des utilisateurs dupliqués sur le serveur Connect Pro.';
+$string['email_login_desc'] = 'Cochez cette option uniquement si votre connexion au serveur Connect Pro est définie pour utiliser le courriel. Notez que l’activation/désactivation de cette option lors de l’utilisation régulière de ce module d’activité peut potentiellement créer des utilisateurs dupliqués sur le serveur Connect Pro.';
 $string['emptyxml'] = 'Impossible de se connecter au serveur Adobe Connect Pro pour le moment. Veuillez informer votre administrateur Moodle.';
 $string['endtime'] = 'Heure de fin';
 $string['error1'] = 'Vous devez être administrateur du site pour accéder à cette page';

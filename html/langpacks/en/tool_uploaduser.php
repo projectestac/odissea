@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'en', version '4.1'.
+ * Strings for component 'tool_uploaduser', language 'en', version '4.4'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -53,6 +53,7 @@ $string['infoprefix'] = 'Info:';
 $string['invalidtheme'] = 'Theme "{$a}" is not installed and will be ignored.';
 $string['invalidupdatetype'] = 'This option cannot be selected with the chosen upload type.';
 $string['invaliduserdata'] = 'Invalid data detected for user {$a} and it has been automatically cleaned.';
+$string['invaliduserdatavalues'] = 'Incorrect data ({$a->values}) found for user {$a->username}. This data has been corrected or deleted.';
 $string['linex'] = 'Line {$a}';
 $string['matchemail'] = 'Match on email address';
 $string['nochanges'] = 'No changes';

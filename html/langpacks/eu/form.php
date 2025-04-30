@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', version '4.1'.
+ * Strings for component 'form', language 'eu', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Hemen gutxienez {$a->format} karaktere idatzi behar 
 $string['err_nonzero'] = 'Hemen 0-rekin hasten ez den zenbaki bat idatzi behar duzu.';
 $string['err_nopunctuation'] = 'Hemen ezin duzu inongo puntuazio-markarik idatzi.';
 $string['err_numeric'] = 'Hemen zenbaki bat idatzi behar duzu.';
-$string['err_positiveint'] = '0 baino handiagoa den zenbaki bat idatzi behar duzu.';
+$string['err_positiveint'] = '0 baino handiagoa den zenbaki oso bat idatzi behar duzu.';
 $string['err_rangelength'] = 'Hemen {$a->format[0]} eta {$a->format[1]}-ren arteko karaktere-kopurua idatzi behar duzu.';
 $string['err_required'] = 'Hemen balio bat eman behar duzu';
 $string['err_wrappingwhitespace'] = 'Balioak ezin du zuriune batekin hasi edo amaitu.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Onartutako fitxategi motak:';
 $string['filetypesany'] = 'Fitxategi mota guztiak';
 $string['filetypesnotall'] = 'Hemen ezin da \'Fitxategi mota guztiak\' aukeratu';
 $string['filetypesnotallowed'] = 'Hauek dira hemen onartzen ez diren fitxategi-motak: {$a}';
-$string['filetypesnotwhitelisted'] = 'Hauek dira hemen onartzen ez diren fitxategi motak: {$a}';
 $string['filetypesothers'] = 'Bestelako fitxategiak';
 $string['filetypesunknown'] = 'Fitxategi mota ezezagunak: {$a}';
+$string['formactions'] = 'Formulario-ekintzak';
 $string['general'] = 'Orokorra';
 $string['hideadvanced'] = 'Ezkutatu aurreratuak';
 $string['hour'] = 'Ordua';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Iradokizunak';
 $string['time'] = 'Denbora';
 $string['timeunit'] = 'Denbora-unitatea';
 $string['timing'] = 'Denbora-tartea';
+$string['togglesensitive'] = 'Kontrol sentikorra';
 $string['unmaskpassword'] = 'Desmaskaratu';
 $string['year'] = 'Urtea';

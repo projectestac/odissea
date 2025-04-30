@@ -15,6 +15,21 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	public function clearDeprecationWarnings() {
 		$this->deprecationWarnings = new _hx_array(array());
 	}
+	public function getAvailableRefId() {
+		$i = 1;
+		{
+			$_g = 0; $_g1 = $this->slots;
+			while($_g < $_g1->length) {
+				$s = $_g1[$_g];
+				++$_g;
+				if($s->syntax->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP) {
+					$i += Std::parseInt($s->syntax->getParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$REF_ID));
+				}
+				unset($s);
+			}
+		}
+		return $i;
+	}
 	public function removeCorrectAnswer($index) {
 		$_g = 0; $_g1 = $this->slots;
 		while($_g < $_g1->length) {

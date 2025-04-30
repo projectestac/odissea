@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'ar', version '4.1'.
+ * Strings for component 'h5p', language 'ar', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -50,6 +50,7 @@ $string['authorname'] = 'اسم المؤلف';
 $string['authorrole'] = 'دور المؤلف';
 $string['back'] = 'عودة';
 $string['by'] = 'بواسطة';
+$string['cancelCrop'] = 'إلغاء الاقتصاص';
 $string['cancelPublishConfirmationDialogCancelButtonText'] = 'لا';
 $string['cancelPublishConfirmationDialogConfirmButtonText'] = 'نعم';
 $string['cancelPublishConfirmationDialogDescription'] = 'هل أنت متأكد من رغبتك في إلغاء عملية المشاركة؟';
@@ -69,6 +70,7 @@ $string['changelog'] = 'سجل التعديل';
 $string['changeplaceholder'] = 'الصورة اقتصَّت، النص تغير... إلخ.';
 $string['city'] = 'المدينة';
 $string['close'] = 'إغلاق';
+$string['confirmCrop'] = 'تأكيد الاقتصاص';
 $string['confirmdialogbody'] = 'لطفاً، أكّد رغبتك في المتابعة. هذا الإجراء لا يمكن التراجع عنه.';
 $string['confirmdialogheader'] = 'تأكيد الإجراء';
 $string['confirmlabel'] = 'التأكيد';
@@ -92,6 +94,7 @@ $string['couldNotParseJSONFromZip'] = 'تعذر استعراب نصوص JSON م�
 $string['couldNotReadFileFromZip'] = 'تعذرت قراءة الملف من الحزمة: {$a->%fileName}';
 $string['country'] = 'البلد';
 $string['creativecommons'] = 'المشاع الإبداعي';
+$string['cropImage'] = 'إقتصاص الصورة';
 $string['currentStep'] = 'الخطوة :step of :total';
 $string['date'] = 'التاريخ';
 $string['deletelibraryconfirm'] = '<p>هل أنت متأكد من رغبتك في حذف الإصدار <em>\'{$a->version}\'</em> من المكتبة <em>\'{$a->name}\'</em>؟ هذا سيزيل المكتبة.</p><p>هذا الإجراء لا يمكن التراجع عنه.</p>';
@@ -127,6 +130,8 @@ $string['filter_displayh5p_description'] = 'إن منقح عرض H5P يقوم ب
 $string['fullscreen'] = 'ملء الشاشة';
 $string['gpl'] = 'الترخيص العام، الإصدار 3';
 $string['h5p'] = 'H5P';
+$string['h5pcustomcss'] = 'CSS مخصص';
+$string['h5pcustomcss_help'] = 'أنماط CSS لتطبيقها في وحداتك من H5P.';
 $string['h5peditor'] = 'محرر H5P';
 $string['h5pfilenotfound'] = 'ملف H5P غير موجود';
 $string['h5pinvalidurl'] = 'رابط محتوى H5P غير صحيح.';
@@ -139,6 +144,7 @@ $string['h5ppackage_help'] = 'نوع محتوى H5P هو ملف بامتداد H
 $string['h5pprivatefile'] = 'لا يمكن عرض محتوى H5P لأنك لا تمتلك حق الوصول إلى ملف .h5p.';
 $string['h5psettings'] = 'إعدادات H5P';
 $string['h5ptitle'] = 'قم بزيارة h5p.org للتحري عن المزيد من المحتوى.';
+$string['height'] = 'الارتفاع';
 $string['helpChoosingLicense'] = 'ساعدني في اختيار الرخصة';
 $string['hideadvanced'] = 'إخفاء المتقدمة';
 $string['icon'] = 'الأيقونة';
@@ -207,6 +213,7 @@ $string['missinglibrary'] = 'المكتبة المطلوبة {$a->@library} مف
 $string['missinglibraryfile'] = 'الملف "{$a->%file}" مفقود من المكتبة: "{$a->%name}"';
 $string['missinglibraryjson'] = 'تعذر العثور على ملف المكتبة library.json بصيغة json صحيحة للمكتبة {$a->%name}';
 $string['missinglibraryproperty'] = 'الخاصية المطلوبة {$a->%property} مفقودة من {$a->%library}';
+$string['missingmainlibrary'] = 'المكتبة الرئيسية {$a->@library} مفقودة';
 $string['missingmbstring'] = 'إن الامتداد mbstring لـ PHP غير شغال. إنه مطلوب ليعمل H5P بشكل صحيح.';
 $string['missinguploadpermissions'] = 'لاحظ أن المكتبات قد تكون موجودة في الملف الذي رفعته، ولكن ليس مسموحاً لك رفع مكتبات جديدة. لطفاً، تواصل مع المشرف.';
 $string['next'] = 'التالي';
@@ -253,6 +260,8 @@ $string['reviewAndSave'] = 'مراجعة وحفظ';
 $string['reviewAndShare'] = 'مراجعة ومشاركة';
 $string['reviewInfo'] = 'مراجعة المعلومة';
 $string['reviewMessage'] = 'يرجى مراجعة المعلومة أدناه قبل المشاركة';
+$string['rotateLeft'] = 'التدوير يسارًا';
+$string['rotateRight'] = 'التدوير يمينًا';
 $string['saveChanges'] = 'حفظ التغييرات';
 $string['screenshots'] = 'لقطات الشاشة';
 $string['screenshotsDescription'] = 'أضف ما أقصاه خمس لقطات شاشة من المحتوى الخاص بك';
@@ -288,6 +297,7 @@ $string['updatedlibraries'] = 'مكتبات H5P {$a->%old} المحدثة.';
 $string['updatedlibrary'] = 'مكتبة H5P {$a->%old} المحدثة.';
 $string['uploadlibraries'] = 'إرفع أنواع محتوى H5P';
 $string['uploadsuccess'] = 'تم رفع أنواع محتوى H5P بنجاح';
+$string['width'] = 'العرض';
 $string['wrongversion'] = 'إصدار مكتبة H5P {$a->%machineName} المستعمل في هذا المحتوى غير صحيح. المحتوى يضم {$a->%contentLibrary}، بينما ينبغي أن يكون {$a->%semanticsLibrary}.';
 $string['year'] = 'سنة';
 $string['years'] = 'سنوات';

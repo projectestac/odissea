@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', version '4.1'.
+ * Strings for component 'form', language 'fr', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Vous devez saisir au moins {$a->format} caractères 
 $string['err_nonzero'] = 'Vous ne devez pas saisir de nombre commençant par 0 dans ce champ.';
 $string['err_nopunctuation'] = 'Vous ne devez saisir aucune ponctuation dans ce champ.';
 $string['err_numeric'] = 'Vous devez saisir un nombre dans ce champ.';
-$string['err_positiveint'] = 'Vous devez saisir un nombre plus grand que 0.';
+$string['err_positiveint'] = 'Vous devez saisir un nombre entier plus grand que 0.';
 $string['err_rangelength'] = 'Vous devez saisir entre {$a->format[0]} et {$a->format[1]} caractères dans ce champ.';
 $string['err_required'] = 'Vous devez remplir ce champ.';
 $string['err_wrappingwhitespace'] = 'La valeur ne doit pas commencer ou se terminer par un espace.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'Types de fichier acceptés :';
 $string['filetypesany'] = 'Tous les types de fichier';
 $string['filetypesnotall'] = 'Il n’est pas permis de choisir ici « Tous les types de fichier ».';
 $string['filetypesnotallowed'] = 'Ces types de fichier ne sont pas autorisés ici : {$a}';
-$string['filetypesnotwhitelisted'] = 'Ces types de fichier ne sont pas autorisés ici : {$a}';
 $string['filetypesothers'] = 'Autres fichiers';
 $string['filetypesunknown'] = 'Types de fichier inconnu : {$a}';
+$string['formactions'] = 'Actions de formulaire';
 $string['general'] = 'Généraux';
 $string['hideadvanced'] = 'Cacher éléments supplémentaires';
 $string['hour'] = 'Heure';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'Suggestions';
 $string['time'] = 'Durée';
 $string['timeunit'] = 'Unité de temps';
 $string['timing'] = 'Durée';
+$string['togglesensitive'] = 'Basculer l’affichage sensible';
 $string['unmaskpassword'] = 'Révéler';
 $string['year'] = 'Année';

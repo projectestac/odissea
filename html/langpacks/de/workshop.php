@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', version '4.1'.
+ * Strings for component 'workshop', language 'de', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Verspätete Einreichungen';
 $string['latesubmissions_desc'] = 'Erlaube verspätete Einreichungen';
 $string['latesubmissions_help'] = 'Wenn diese Option aktiviert ist, können Einreichungen auch nach dem festgelegten Abgabezeitpunkt oder während der Beurteilungsphase noch abgegeben werden. Diese können danach jedoch nicht mehr bearbeitet werden.';
 $string['latesubmissionsallowed'] = 'Verspätete Einreichungen sind zugelassen';
-$string['legacyallocationplugincron'] = 'Alte Cron-Zuteilung für gegenseitige Beurteilungen';
 $string['maxbytes'] = 'Maximale Dateigröße zur Abgabe';
 $string['modulename'] = 'Gegenseitige Beurteilung';
 $string['modulename_help'] = 'Die gegenseitige Beurteilung (Peer Assessment, früher Workshop) ist ein besonderer mehrstufiger Aufgabentyp:

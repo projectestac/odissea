@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', version '4.1'.
+ * Strings for component 'blog', language 'nl', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blog over {$a->modtype}: {$a->modname}';
 $string['association'] = 'Associatie';
 $string['associations'] = 'Associaties';
 $string['associationunviewable'] = 'Dit item kan niet door anderen bekeken worden tot er een cursus mee geassocieerd is of tot het \'Publiceer naar\'-veld gewijzigd is';
+$string['author'] = 'Auteur';
 $string['autotags'] = 'Voeg deze tags toe';
 $string['autotags_help'] = 'Geef één of meer lokale tags in (gescheiden door komma\'s) die je automatisch wil toevoegen aan elk blogitem dat van de externe blog naar je lokale blog gekopieëerd wordt.';
 $string['backupblogshelp'] = 'Als dit ingeschakeld is, dan zullen blogs in de automatische site-back-ups opgenomen worden';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blog over deze {$a->type}';
 $string['blogaboutthiscourse'] = 'Voeg een item toe over deze cursus';
 $string['blogaboutthismodule'] = 'Voeg een item toe over dit {$a}';
 $string['blogadministration'] = 'Blogbeheer';
+$string['blogattachment'] = 'Blogbijlage';
 $string['blogdeleteconfirm'] = 'Blog-item \'{$a}\' verwijderen?';
 $string['blogdisable'] = 'Bloggen is uitgeschakeld';
 $string['blogentries'] = 'Blogitems';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Blogs';
 $string['blogscourse'] = 'Cursus blogs';
 $string['blogssite'] = 'Site blogs';
 $string['blogtags'] = 'Blogtags';
+$string['cannoteditentryorblog'] = 'Je kunt dit bericht of deze blog niet bewerken';
 $string['cannotviewcourseblog'] = 'Je hebt niet de juiste rechten om blog in deze cursus te zien.';
 $string['cannotviewcourseorgroupblog'] = 'Je hebt niet de juiste rechten om blog in deze cursus/groep te zien.';
 $string['cannotviewsiteblog'] = 'Je hebt niet de juiste rechten om alle site-blogs te zien.';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Beschrijving van deze tekst';
 $string['entryerrornotyours'] = 'Deze tekst is niet van jouw';
 $string['entrysaved'] = 'Je tekst is bewaard';
 $string['entrytitle'] = 'Titel van deze tekst';
+$string['entrytitlewithlink'] = 'Titel met link';
 $string['eventblogassociationadded'] = 'Blogassociatie gemaakt';
 $string['eventblogassociationdeleted'] = 'Blog associatie verwijderd';
 $string['eventblogentriesviewed'] = 'Blogitems bekeken';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'Fout blog filtertype ingeschakeld';
 $string['intro'] = 'Deze RSS-feed is automatisch gegenereerd uit één of meer blogs';
 $string['invalidgroupid'] = 'Ongeldig groep-ID';
 $string['invalidurl'] = 'Deze URL is onbereikbaar';
-$string['linktooriginalentry'] = 'Link naar het originele blogitem';
+$string['linktooriginalentry'] = 'Origineel blogitem';
 $string['maxexternalblogsperuser'] = 'Maximale aantal externe blogs per gebruiker';
 $string['myprofileuserblogs'] = 'Blog bekijken';
 $string['name'] = 'Naam';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'De ID van de gebruikers die het blogb
 $string['privacy:metadata:post:usermodified'] = 'De gebruiker die het blogbericht het laatst bewerkt heeft';
 $string['privacy:path:blogassociations'] = 'Geassocieerde blogberichten';
 $string['privacy:unknown'] = 'Onbekend';
+$string['published'] = 'Gepubliceerd';
 $string['publishto'] = 'Publiceer naar';
 $string['publishto_help'] = 'Er zijn 3 opties
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'Er zijn 3 opties
 $string['publishtocourse'] = 'Gebruikers die een cursus met je delen';
 $string['publishtocourseassoc'] = 'Leden van de geassocieerde cursus';
 $string['publishtocourseassocparam'] = 'Leden van {$a}';
+$string['publishtodraft'] = 'Klad';
 $string['publishtogroup'] = 'Gebruikers die een groep met jou delen';
 $string['publishtogroupassoc'] = 'Jouw groepsleden in de geassocieerde cursus';
 $string['publishtogroupassocparam'] = 'Jouw groepsleden in {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'Bekijk de blogs van de site';
 $string['viewuserentries'] = 'Bekijk alle items door {$a}';
 $string['worldblogs'] = 'Blog-items die als Wereldtoegankelijk aangeduid zijn, kunnen door alle internetgebruikers gelezen worden';
 $string['wrongexternalid'] = 'Foute externe blog-ID';
-$string['wrongpostid'] = 'Fout blog post ID';

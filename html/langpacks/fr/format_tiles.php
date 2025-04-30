@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'fr', version '4.1'.
+ * Strings for component 'format_tiles', language 'fr', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -49,7 +49,7 @@ $string['cachedef_modalcmids'] = 'ID de module de cours (par cours) qui doit êt
 $string['canceltask'] = 'Annuler la tâche';
 $string['changedcolour'] = 'Couleur des tuiles par défaut pour le cours {$a}';
 $string['checkforproblemcourses'] = 'Rechercher et résoudre les problèmes de cours';
-$string['clearphoto'] = 'Réinitialiser cette vignette';
+$string['clearphoto'] = 'Réinitialiser cette tuile';
 $string['clickiffailstoload'] = 'Cliquer si la page ne se charge pas';
 $string['close'] = 'Fermer';
 $string['collapse'] = 'Réduire la section';
@@ -79,7 +79,7 @@ $string['contact'] = 'Entrer en contact';
 $string['contactdeveloper'] = 'Contacter le développeur';
 $string['contents'] = 'Contenus';
 $string['controls'] = 'Contrôles';
-$string['coursephotomigrationincomplete'] = 'Les icônes et les photos des vignettes n\'ont pas encore été migrées suite à une mise à niveau du système. Les éléments manquants devraient apparaître quelques heures après la mise à niveau.';
+$string['coursephotomigrationincomplete'] = 'Les icônes et les photos des tuiles n’ont pas encore été migrées suite à une mise à niveau du système. Les éléments manquants devraient apparaître quelques heures après la mise à niveau.';
 $string['courseshowtileprogress'] = 'Progression dans chaque tuile';
 $string['courseshowtileprogress_error'] = 'Vous avez le \'Suivi de l’achèvement > Activer le suivi de l’achèvement\' réglé sur \'Non\' (voir plus bas sur cette page) qui entre en conflit avec ce paramètre. Si vous souhaitez afficher la progression sur les tuiles, définissez le \'Suivi de l’achèvement > Activer le suivi de l’achèvement\' sur \'Oui\'. Sinon, réglez ce paramètre sur \'Non\'.';
 $string['courseshowtileprogress_help'] = '<p>Lorsque cette option est sélectionnée, la progression des activités de l’utilisateur sera affichée dans chaque tuile, soit sous la forme d’une <em>fraction</em> (par ex. \'Progrès 2/10\' signifiant que 2 activités sur 10 sont achevées), soit sous la forme d’un <em>pourcentage</em> dans un cercle.</p><p>Il ne peut être utilisé que si l’option \'Achèvement > Activer le suivi de l’achèvement\' a été activée.</p><p>S’il n’y a pas d’activités traçables dans une tuile donnée, l’indicateur ne sera pas affiché pour cette tuile.</p>';
@@ -256,14 +256,13 @@ $string['icontitle-volume-up'] = 'Haut parleur';
 $string['icontitle-wrench'] = 'Clé à molette';
 $string['imagecannotbeused'] = 'L’image ne peut pas être utilisée';
 $string['imagedeletedfrom'] = 'Image supprimée de « {$a} »';
-$string['imagesavedfor'] = 'Image enregistrée pour la tuile {$a}';
+$string['imagesavedfor'] = 'Image enregistrée pour {$a}';
 $string['imagesize'] = 'Taille de l’image';
 $string['jsactivate'] = 'Désactiver la navigation animée';
-$string['jsdeactivate'] = 'Activer la navigation animée';
 $string['jsdeactivated'] = 'Vous avez désactivé la navigation animée. Vous pouvez la réactiver à l’aide du menu de navigation.';
 $string['jsnavsettings'] = 'Navigation Javascript';
 $string['jsreactivated'] = 'Vous avez activé la navigation animée. Cela peut être plus rapide à utiliser, mais nécessite l’activation de JavaScript.';
-$string['legacytiledata'] = 'Nombre de données de vignettes héritées';
+$string['legacytiledata'] = 'Nombre de données de tuiles héritées';
 $string['links'] = 'Liens';
 $string['loading'] = 'Chargement';
 $string['maxcoursesectionsallowed'] = 'Le nombre maximum de sections de cours autorisées dans cet environnement est de {$ a}.';
@@ -288,7 +287,7 @@ $string['notregistered'] = 'Votre plugin Tuiles n’est pas encore enregistré a
 $string['novaliddefaultcolour'] = 'Aucune couleur valide définie pour la couleur de tuile par défaut ci-dessous';
 $string['numberofsections'] = 'Nombre de sections dans le cours';
 $string['ok'] = 'D’accord';
-$string['onlywhenediting'] = 'Uniquement lors de l\'édition';
+$string['onlywhenediting'] = 'Uniquement lors de l’édition';
 $string['other'] = 'Autre';
 $string['outcomes'] = 'résultats';
 $string['outcomesunavailable'] = 'Résultats non disponibles';
@@ -308,6 +307,7 @@ $string['phototitletitlelineheight'] = 'Hauteur de ligne de la tuile';
 $string['phototitletitlepadding'] = 'Remplissage de la ligne verticale du titre';
 $string['picknewicon'] = 'Choisir une nouvelle icône';
 $string['picknewiconphoto'] = 'Choisir une nouvelle icône ou une photo d’arrière-plan';
+$string['plugin_description'] = 'Un format visuellement riche, où les sections et activités sont représentées par des tuiles, avec des photos, des icônes et des couleurs personnalisables.';
 $string['pluginname'] = 'Format Tuiles';
 $string['previoustopic'] = 'Section précédente';
 $string['privacy:metadata:preference:format_tiles_stopjsnav'] = 'Est-ce que l’utilisateur a désactivé la navigation JavaScript animée.';
@@ -334,8 +334,8 @@ $string['registrationdeferred'] = 'Merci. Nous essayons d’enregistrer votre pl
 $string['reopenlastsection'] = 'Ré-ouvrir la dernière tuile visitée';
 $string['reopenlastsection_desc'] = 'Si coché, si un utilisateur revient sur un cours, la dernière section qu’il avait ouverte sera ré-ouverte à l’arrivée.';
 $string['resetallcoursecolours'] = 'Réinitialiser toutes les couleurs de cours';
-$string['resetalltiles'] = 'Réinitialiser les photos et les icônes des vignettes';
-$string['resetalltilessure'] = 'Êtes-vous sûr de vouloir réinitialiser les vignettes de ce cours ? Cela supprimera toutes les photos en mosaïque et réinitialisera toutes les icônes par défaut ? Le contenu ne sera pas supprimé. Il s’agit d’une action destructrice qui ne peut être annulée. Sauvegardez d’abord votre cours en cas de doute.';
+$string['resetalltiles'] = 'Réinitialiser les photos et les icônes des tuiles';
+$string['resetalltilessure'] = 'Voulez-vous vraiment réinitialiser les tuiles de ce cours ? Cela supprimera toutes les photos en mosaïque et réinitialisera toutes les icônes par défaut ? Le contenu ne sera pas supprimé. Il s’agit d’une action destructrice qui ne peut être annulée. Sauvegardez d’abord votre cours en cas de doute.';
 $string['resetcolours'] = 'Réinitialiser les couleurs';
 $string['resetcolours_desc'] = 'Appuyez sur ce bouton pour réinitialiser la couleur de la tuile pour tous les cours qui n’ont pas l’une des couleurs ci-dessous. Les cours seront remplacés par la couleur de tuile par défaut ci-dessous. Vous pouvez l’utiliser après avoir modifié la palette de couleurs ci-dessous, mais assurez-vous d’avoir <strong>enregistré toutes les modifications</strong> des couleurs ci-dessous avant d’appuyer sur ce bouton. Attention, cela pourrait changer la couleur de nombreux cours !';
 $string['resetincomplete'] = 'Réinitialisation incomplète';
@@ -361,26 +361,29 @@ $string['showoverallprogress_desc'] = 'Afficher l’indicateur « % de progressi
 $string['showprogresssphototiles_desc'] = 'Si cette option est sélectionnée, la progression de l’étudiant (par exemple, Progression 2/5) sera affichée sur les tuiles photo';
 $string['showseczerocoursewide'] = 'Afficher la section 0 en haut de toutes les tuiles';
 $string['showseczerocoursewide_desc'] = 'Si coché, la section zéro (la section du haut) sera affichée sur la page d’accueil du cours et en haut de <b>chaque page de section du parcours </b> (c’est-à-dire en haut du contenu de chaque tuile). Si la case n’est pas cochée (recommandé), elle ne sera affichée que sur la page d’atterrissage du parcours.';
-$string['showseparatewin'] = 'Afficher le fichier dans une fenêtre séparée';
+$string['showseparatewin'] = 'Afficher dans une fenêtre séparée';
 $string['sitename'] = 'Nom du site';
 $string['snapwarning'] = 'Il peut être possible de modifier votre cours au format Tuiles en utilisant un autre thème, puis de revenir au thème Snap une fois que vous avez terminé l’édition.';
 $string['snapwarning_help'] = 'Theme_settings#Allow_user_themes';
 $string['style'] = 'Style';
+$string['subtileiconcolourbackground'] = 'Icônes de sous-tuiles - utiliser un cercle d’arrière-plan de couleur unie';
+$string['subtileiconcolourbackground_desc'] = 'Si cette case est cochée, les icônes de sous-tuiles sont affichées sous forme d’icônes blanches dans un cercle de couleur unie à l’arrière-plan. Sinon, les icônes sont (1) elles-mêmes colorées et (2) dans un cercle coloré, mais non uni.';
 $string['subtileszeczerotoggled'] = 'Section du haut alternant entre le format liste et sous tuiles';
-$string['suremigratelegacyoptions'] = 'Êtes-vous sûr de vouloir migrer {$a} choix de photos ou d\'icônes de vignette pour ce cours ?';
+$string['suremigratelegacyoptions'] = 'Voulez-vous vraiment migrer {$a} choix de photos ou d’icônes de tuile pour ce cours ?';
 $string['sureresetcolours'] = 'Voulez-vous vraiment réinitialiser les couleurs par défaut des tuiles de cours ? Cela affectera {$a} cours';
 $string['tilecolourgeneral'] = 'Palette de couleurs - couleur optionnelle';
 $string['tilecolourgeneral_descr'] = 'Ce réglage permet à l’administrateur de déterminer les couleurs disponibles pour les enseignants dans leurs cours. Pour désactiver une couleur, la régler sur noir (#000). Si vous modifiez les couleurs ici, aucune modification ne sera reportée dans les cours existants jusqu’à ce que leur enseignant n’essaie de changer la couleur d’une tuile, auquel cas seules les couleurs définies ici lui seront proposées.';
 $string['tilecolourschanged'] = 'Les couleurs des tuiles ont été réinitialisées. Toutes les tuiles ont maintenant des couleurs conformes aux couleurs ci-dessous.';
-$string['tileicon'] = 'Icône à afficher sur cette tuile uniquement';
+$string['tileicon'] = 'Icône / photo à afficher sur cette tuile uniquement';
 $string['tileicon_help'] = 'L’élément sélectionné ici remplacera, pour cette tuile uniquement, l’icône de tuile qui a été définie au niveau du cours.';
 $string['tileicons'] = 'Icônes de tuile';
 $string['tileoutcome'] = 'Résultat pour cette tuile';
 $string['tileoutcome_help'] = 'Si vous sélectionnez un résultat pour cette tuile, vous pourrez alors, dans les paramètres du cours, afficher un ensemble de <em>boutons de filtrage</em>, un pour chaque résultat, qui, appuyé, affichera les tuiles en fonction du résultat qui leur a été attribué.';
+$string['tileselecttip'] = 'Dans le cours, en mode édition, cliquez simplement sur l’icône ou la photo que vous souhaitez modifier.  La fenêtre du sélecteur d’icônes s’affiche.';
 $string['tilesformatregistration'] = 'Enregistrement du format Tuiles';
-$string['tilesreset'] = 'Les vignettes et les icônes ont été réinitialisées pour ce cours';
-$string['tilestyle'] = 'Style de vignette';
-$string['tilestyle_desc'] = 'Style 1 = les vignettes photo afficheront le titre en haut de la vignette, style 2 = titre en bas';
+$string['tilesreset'] = 'Les tuiles et les icônes ont été réinitialisées pour ce cours';
+$string['tilestyle'] = 'Style de tuile';
+$string['tilestyle_desc'] = 'Style 1 = les tuiles photo afficheront le titre en haut de la tuile, style 2 = titre en bas';
 $string['togglecompletion'] = 'Cliquez pour basculer le statut d’achèvement';
 $string['togglecompletioncomplete'] = 'Cliquer pour modifier le statut d’achèvement (terminé)';
 $string['togglecompletionincomplete'] = 'Cliquer pour modifier le statut d’achèvement (non terminé)';
@@ -389,11 +392,11 @@ $string['toowide'] = 'Trop large pour la tuile';
 $string['transparenttitleadjustments'] = 'Ajustements de transparence de titre';
 $string['transparenttitleadjustments_desc'] = 'Sur les tuiles photo avec des arrière-plans de titre transparents, en fonction de votre thème, vous souhaiterez peut-être les ajuster pour vous assurer que les lignes transparentes du titre ne se chevauchent pas lorsqu’elles sont enveloppées.
 Notez que celles-ci varient également un peu selon les navigateurs. Valeurs suggérées pour Chrome : Thèmes basés sur Boost et Clean : 30,5 et 4 | Adaptable : 32 et 4 | Moove : 32 et 2 | Remui : 32 et 2,5';
-$string['unmigratedcoursesintro'] = 'Il semble que toutes les icônes et photos des cours suivants {$a} n\'aient pas été migrées suite à une mise à jour du système. Cliquez sur le bouton pour traiter un cours maintenant. Si vous attendez, le processus "cron" en arrière-plan devrait traiter tout cela, mais si vous souhaitez traiter un cours donné maintenant, cliquez sur le bouton';
+$string['unmigratedcoursesintro'] = 'Il semble que toutes les icônes et photos des cours suivants {$a} n’aient pas été migrées suite à une mise à jour du système. Cliquez sur le bouton pour traiter un cours maintenant. Si vous attendez, le processus "cron" en arrière-plan devrait traiter tout cela, mais si vous souhaitez traiter un cours donné maintenant, cliquez sur le bouton';
 $string['uploadnewphoto'] = 'Déposer une nouvelle photo';
 $string['uploadnewphoto_help'] = 'Importez une image à utiliser sur cette tuile';
-$string['usecourseindex'] = 'Utiliser l\'index des cours';
-$string['usecourseindex_desc'] = 'Dans une vignette de cours, quand l\'index du parcours doit-il s\'afficher à gauche ?';
+$string['usecourseindex'] = 'Utiliser l’index des cours';
+$string['usecourseindex_desc'] = 'Dans une tuile de cours, quand l’index du parcours doit-il s’afficher à gauche ?';
 $string['usejavascriptnav'] = 'Utiliser la navigation JavaScript à partir de la page d’accueil du format Tuiles';
 $string['usejavascriptnav_desc'] = 'Une fois cochée, si l’utilisateur clique sur une tuile sur la page d’accueil du cours, avec javascript activé, JS sera utilisé pour passer au contenu de la tuile. Le contenu des tuiles sera stocké localement dans le navigateur selon les autres paramètres ci-dessous. Si cette case n’est pas cochée, JS ne sera pas utilisé et la navigation existante sera utilisée à la place. Les autres paramètres JS ci-dessous seront ignorés.';
 $string['usejseditingexpandcollapse'] = 'Mode d’édition - utilisez JavaScript pour développer / réduire les tuiles';

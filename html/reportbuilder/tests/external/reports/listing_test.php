@@ -20,7 +20,7 @@ namespace core_reportbuilder\external\reports;
 
 use context_system;
 use core_reportbuilder_generator;
-use external_api;
+use core_external\external_api;
 use externallib_advanced_testcase;
 use core_reportbuilder\report_access_exception;
 use core_reportbuilder\local\models\report;
@@ -39,7 +39,7 @@ require_once("{$CFG->dirroot}/webservice/tests/helpers.php");
  * @copyright   2022 Paul Holden <paulh@moodle.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class listing_test extends externallib_advanced_testcase {
+final class listing_test extends externallib_advanced_testcase {
 
     /**
      * Text execute method

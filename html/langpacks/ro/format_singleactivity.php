@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ro', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'ro', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = 'Se specifică tipul de activitate care va fi s
 $string['erroractivitytype'] = 'Tipul de activitate nu este configurat în Setările cursului';
 $string['orphaned'] = 'Orfan';
 $string['orphanedwarning'] = 'Aceste activități le sunt inaccesibile de utilizatorilor!';
-$string['pluginname'] = 'Format o singură activitate';
+$string['plugin_description'] = 'Cursul conține doar o activitate sau resursă.';
+$string['pluginname'] = 'O singură activitate';
 $string['privacy:metadata'] = 'Pluginul pentru un singur format de activitate nu stochează date personale.';
 $string['sectionname'] = 'Nume secțiune';
 $string['warningchangeformat'] = 'Atunci când se schimbă formatul cursului existent în "single activity", asigurați-vă că ați eliminat toate activitățile suplimentare din curs, inclusiv "News forum". Rețineți că structura secțiunii poate fi modificată.';

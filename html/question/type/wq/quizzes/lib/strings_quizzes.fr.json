@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "évaluer",
 		
-		"home_getting_started_welcome_header_text": "Présentation de WirisQuizzes 4.8.0 : maintenant avec des réponses graphiques manuscrites",
+		"home_getting_started_welcome_header_text": "Présentation de WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Nous sommes ravis de présenter un nouveau type de réponse qui permet à vos élèves de répondre en écrivant un graphique à la main. Pour en savoir plus sur cette fonctionnalité, consultez nos notes de version et notre documentation. Nous espérons que vos élèves et vous apprécierez ce nouvel ajout à WirisQuizzes !",
         "home_getting_started_release_notes_button_text": "Notes de version",
         "home_getting_give_us_feedback_button_text": "Faites-nous part de vos commentaires",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Assistance automatisée aux étudiants",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Vous avez activé le système de commentaires automatiques pour cette question",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Veuillez définir le type de tâche que vous allez créer et spécifier les champs requis. Les commentaires seront automatiquement générés par notre moteur. Vous avez la possibilité de tester la façon dont vos étudiants visualiseront les commentaires. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Plus d'informations",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Fermer le panneau",
+		"quizzes_studio_math_multistep_define_task_title" : "Définir la tâche",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Lien vers la documentation",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Type de tâche",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Equation à simple variable ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Opérations basiques ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Choisissez le champ dans le menu déroulant. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Tâche à résoudre ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "N'écrivez pas ici la réponse correcte, mais seulement l'équation à résoudre. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Variables aléatoires ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Variable d'équation ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Nom de la variable",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Spécifiez la variable unique de l'équation à résoudre.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Incorrect",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Presque terminé",
+		"quizzes_studio_multistep_correct_feedback_label": "Correct",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Soumettez vos étapes pour consulter l'assistance automatisée aux étudiants",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Vous êtes sur la bonne voie. Continuez !",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Vous avez donné la bonne réponse à cette question.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Résolvez l'équation",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Réalisez les opérations",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Test",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Effacer",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Symboles de multiplication autorisés",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Multiplication implicite",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Conventionnellement, la multiplication d'éléments écrits consécutivement est acceptée. Exemple : 2y est interprété comme 2 fois y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Point de multiplication",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Les éléments utilisés avec le point ou l'astérisque indiquent une multiplication. Exemple : 2 · y est interprété comme 2 fois y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Croix de multiplication",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Les éléments utilisés avec le point ou l'astérisque indiquent une multiplication. Exemple : 2 × y est interprété comme 2 fois y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "La tâche à résoudre est manquante",
+		"quizzes_studio_math_multistep_equation_variable_error": "Le nom de la variable est manquant",
+
+		"quizzes_studio_multistep_error_session_start_title": "Erreur",
+		"quizzes_studio_multistep_error_session_start_message": "Un problème est survenu lors du chargement de votre tâche. Veuillez réessayer ou revenir en arrière pour vous assurer que la tâche est correctement définie.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Réessayer",
+		"quizzes_studio_multistep_error_session_start_go_back": "Revenir en arrière",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Contactez-nous",
+
+		"syntax_math_multistep": "Mathématiques avec assistance automatisée aux étudiants"
 	}
 }
 

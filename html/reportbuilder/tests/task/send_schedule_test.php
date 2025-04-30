@@ -37,14 +37,14 @@ use core_user\reportbuilder\datasource\users;
  * @copyright   2021 Paul Holden <paulh@moodle.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class send_schedule_test extends advanced_testcase {
+final class send_schedule_test extends advanced_testcase {
 
     /**
      * Data provider for {@see test_execute_viewas_user}
      *
      * @return array[]
      */
-    public function execute_report_viewas_user_provider(): array {
+    public static function execute_report_viewas_user_provider(): array {
         return [
             'View report as schedule creator' => [schedule::REPORT_VIEWAS_CREATOR, null, 'admin', 'admin'],
             'View report as schedule recipient' => [schedule::REPORT_VIEWAS_RECIPIENT, null, 'userone', 'usertwo'],
@@ -183,9 +183,11 @@ class send_schedule_test extends advanced_testcase {
         $generator = $this->getDataGenerator()->get_plugin_generator('core_reportbuilder');
 
         // Create a report that won't return any data.
-        $report = $generator->create_report(['name' => 'Myself', 'source' => users::class]);
+        $report = $generator->create_report(['name' => 'Myself', 'source' => users::class, 'default' => false]);
 
+        $generator->create_column(['reportid' => $report->get('id'), 'uniqueidentifier' => 'user:username']);
         $generator->create_condition(['reportid' => $report->get('id'), 'uniqueidentifier' => 'user:username']);
+
         manager::get_report_from_persistent($report)->set_condition_values([
             'user:username_operator' => text::IS_EQUAL_TO,
             'user:username_value' => 'baconlettucetomato',

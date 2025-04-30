@@ -1820,7 +1820,7 @@ function mod_workshop_core_calendar_provide_event_action(calendar_event $event,
  * @param stdClass $workshop The module instance to get the range from
  * @return array Returns an array with min and max date.
  */
-function mod_workshop_core_calendar_get_valid_event_timestart_range(\calendar_event $event, \stdClass $workshop) : array {
+function mod_workshop_core_calendar_get_valid_event_timestart_range(\calendar_event $event, \stdClass $workshop): array {
     $mindate = null;
     $maxdate = null;
 
@@ -1897,7 +1897,7 @@ function mod_workshop_core_calendar_get_valid_event_timestart_range(\calendar_ev
  * @param \calendar_event $event
  * @param stdClass $workshop The module instance to get the range from
  */
-function mod_workshop_core_calendar_event_timestart_updated(\calendar_event $event, \stdClass $workshop) : void {
+function mod_workshop_core_calendar_event_timestart_updated(\calendar_event $event, \stdClass $workshop): void {
     global $DB;
 
     $courseid = $event->courseid;
@@ -2187,7 +2187,7 @@ function workshop_check_updates_since(cm_info $cm, $from, $filter = array()) {
  * @param  array  $args The path (the part after the filearea and before the filename).
  * @return array|null The itemid and the filepath inside the $args path, for the defined filearea.
  */
-function mod_workshop_get_path_from_pluginfile(string $filearea, array $args) : ?array {
+function mod_workshop_get_path_from_pluginfile(string $filearea, array $args): ?array {
     if ($filearea !== 'instructauthors' && $filearea !== 'instructreviewers' && $filearea !== 'conclusion') {
         return null;
     }
@@ -2250,6 +2250,38 @@ function workshop_get_coursemodule_info($coursemodule) {
     }
 
     return $result;
+}
+
+/**
+ * Get the current user preferences that are available
+ *
+ * @return array[]
+ */
+function mod_workshop_user_preferences(): array {
+    $preferencedefinition = [
+        'type' => PARAM_BOOL,
+        'null' => NULL_NOT_ALLOWED,
+        'default' => false,
+        'permissioncallback' => [core_user::class, 'is_current_user'],
+    ];
+
+    return [
+        'workshop-viewlet-allexamples-collapsed' => $preferencedefinition,
+        'workshop-viewlet-allsubmissions-collapsed' => $preferencedefinition,
+        'workshop-viewlet-assessmentform-collapsed' => $preferencedefinition,
+        'workshop-viewlet-assignedassessments-collapsed' => $preferencedefinition,
+        'workshop-viewlet-cleargrades-collapsed' => $preferencedefinition,
+        'workshop-viewlet-conclusion-collapsed' => $preferencedefinition,
+        'workshop-viewlet-examples-collapsed' => $preferencedefinition,
+        'workshop-viewlet-examplesfail-collapsed' => $preferencedefinition,
+        'workshop-viewlet-gradereport-collapsed' => $preferencedefinition,
+        'workshop-viewlet-instructauthors-collapsed' => $preferencedefinition,
+        'workshop-viewlet-instructreviewers-collapsed' => $preferencedefinition,
+        'workshop-viewlet-intro-collapsed' => $preferencedefinition,
+        'workshop-viewlet-ownsubmission-collapsed' => $preferencedefinition,
+        'workshop-viewlet-publicsubmissions-collapsed' => $preferencedefinition,
+        'workshop-viewlet-yourgrades-collapsed' => $preferencedefinition,
+    ];
 }
 
 /**

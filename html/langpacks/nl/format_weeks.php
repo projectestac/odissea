@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'nl', version '4.1'.
+ * Strings for component 'format_weeks', language 'nl', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Voeg week toe';
+$string['addsection'] = 'Week toevoegen';
 $string['automaticenddate'] = 'Bereken de einddatum uit het aantal secties';
 $string['automaticenddate_help'] = 'Indien ingeschakeld zal de einddatum van de cursus automatisch berekend worden uit het aantal secties en de cursus startdatum.';
 $string['currentsection'] = 'Deze week';
-$string['deletesection'] = 'Verwijder week';
-$string['editsection'] = 'Bewerk week';
-$string['editsectionname'] = 'Bewerk weeknaam';
-$string['hidefromothers'] = 'Verberg week';
+$string['hidefromothers'] = 'Verberg';
 $string['indentation'] = 'Sta inspringen toe op de cursuspagina';
 $string['indentation_help'] = 'Leraren en andere gebruikers met de mogelijkheid om activiteiten te beheren toestaan om items op de cursuspagina in te laten springen.';
-$string['newsectionname'] = 'Nieuwe naam voor week {$a}';
 $string['page-course-view-weeks'] = 'Alle hoofdpagina\'s van cursussen in weekformat';
 $string['page-course-view-weeks-x'] = 'Alle cursuspagina\'s in weekopmaak';
+$string['plugin_description'] = 'De cursus is verdeeld in secties die overeenkomen met elke week, te beginnen vanaf de startdatum van de cursus.';
 $string['pluginname'] = 'Weekformat';
-$string['privacy:metadata'] = 'De weekformaatplugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De weekformatplugin bewaart geen persoonlijke gegevens.';
 $string['section0name'] = 'Algemeen';
 $string['sectionname'] = 'Week';
-$string['showfromothers'] = 'Toon week';
+$string['showfromothers'] = 'Toon';

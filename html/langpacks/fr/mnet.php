@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'fr', version '4.1'.
+ * Strings for component 'mnet', language 'fr', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Ajouter au contrôle d’accès';
 $string['allhosts'] = 'Tous les serveurs';
 $string['allhosts_no_options'] = 'Aucune option n’est disponible lorsque plusieurs hôtes sont affichés';
 $string['allow'] = 'Autoriser';
+$string['allowaccess'] = 'Permettre l’accès';
 $string['applicationtype'] = 'Type d’application';
 $string['authfail_nosessionexists'] = 'Échec d’autorisation : la session mnet n’existe pas.';
 $string['authfail_sessiontimedout'] = 'Échec d’autorisation : la session mnet est échue.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Le temps de 60 secondes imparti pour la suppressio
 $string['deleteuserrecord'] = 'SSO ACL : suppression de l’enregistrement de l’utilisateur « {$a->user} » de {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Une erreur est survenue. Aucune action n’a été effectuée. Si vous n’étiez pas en train de supprimer la clef SSL de votre serveur, il est possible que vous ayez été la cible d’une attaque.';
 $string['deny'] = 'Interdire';
+$string['denyaccess'] = 'Refuser l’accès';
 $string['description'] = 'Description';
 $string['duplicate_usernames'] = 'Il a été impossible de créer un index pour les colonnes « mnethostid » et « username » de votre table d’utilisateurs.<br />Un tel problème peut survenir lorsque des <a href="{$a}" target="_blank">noms d’utilisateur sont présents à double dans votre table d’utilisateurs</a>.<br />La mise à jour devrait malgré tout se terminer correctement. Cliquer sur le lien ci-dessus pour obtenir des instructions vous permettant de corriger ce problème (dans une nouvelle fenêtre). Vous pourrez ainsi vous en occuper après la fin de la mise à jour.<br />';
 $string['enabled_for_all'] = '(Ce service a été activé pour tous les serveurs).';

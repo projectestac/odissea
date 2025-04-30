@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', version '4.1'.
+ * Strings for component 'quiz', language 'ca', version '4.4'.
  *
  * @package     quiz
  * @category    string
@@ -89,7 +89,7 @@ $string['asshownoneditscreen'] = 'Tal com apareix a la pantalla d\'edició';
 $string['attempt'] = 'Intent {$a}';
 $string['attemptalreadyclosed'] = 'Aquest intent ja està tancat.';
 $string['attemptclosed'] = 'Aquest intent encara s\'ha d\'acabar.';
-$string['attemptduration'] = 'Temps emprat';
+$string['attemptduration'] = 'Durada';
 $string['attemptedon'] = 'Intentat el';
 $string['attempterror'] = 'No podeu contestar aquest qüestionari en aquest moment perquè: {$a}';
 $string['attempterrorcontentchange'] = 'Aquesta previsualització del qüestionari ja no existeix. (Quan s\'edita un qüestionari, qualsevol previsualització en progrés se suprimeix automàticament.)';
@@ -128,7 +128,6 @@ $string['back'] = 'Torna a la previsualització de la pregunta';
 $string['backtocourse'] = 'Torna al curs';
 $string['backtoquestionlist'] = 'Torna a la llista de preguntes';
 $string['backtoquiz'] = 'Torna a l\'edició del qüestionari';
-$string['basicideasofquiz'] = 'Idees bàsiques sobre la preparació de qüestionaris';
 $string['bestgrade'] = 'La millor nota';
 $string['bothattempts'] = 'Mostra els estudiants amb intents i sense intents';
 $string['browsersecurity'] = 'Seguretat del navegador';
@@ -190,17 +189,12 @@ $string['comments'] = 'Comentaris';
 $string['completedon'] = 'Completat el';
 $string['completionattemptsexhausted'] = 'O que tots els intents disponibles s\'hagin completat';
 $string['completionattemptsexhausted_help'] = 'Marca el qüestionari com a completat quan l\'estudiant hagi exhaurit el nombre màxim d\'intents.';
-$string['completionattemptsexhausteddesc'] = 'Completa si s\'han exhaurit tots els intents disponibles';
 $string['completiondetail:minattempts'] = 'Contesta intents: {$a}';
-$string['completiondetail:passgrade'] = 'Rebre una nota d\'aprovat';
 $string['completiondetail:passorexhaust'] = 'Rebre una nota d\'aprovat o completar tots els intents disponibles';
 $string['completionminattempts'] = 'Nombre mínim d\'intents:';
 $string['completionminattemptsdesc'] = 'Nombre mínim d\'intents requerits: {$a}';
 $string['completionminattemptserror'] = 'El nombre mínim d\'intents ha de ser inferior o igual als intents permesos.';
 $string['completionminattemptsgroup'] = 'Intents requerits';
-$string['completionpass'] = 'Exigeix un aprovat';
-$string['completionpass_help'] = 'Si s\'habilita, aquesta activitat es considera completada quan l\'estudiant obté un aprovat o més (tal i com s\'especifica en la secció de Qualificació dels paràmetres del qüestionari.';
-$string['completionpassdesc'] = 'L\'estudiant ha d\'aconseguir un aprovat per a completar l\'activitat';
 $string['completionpassorattemptsexhausteddesc'] = 'L\'estudiant ha d\'aconseguir un aprovat o exhaurir tots els intents disponibles per a completar l\'activitat';
 $string['configadaptive'] = 'Si marqueu el Sí en aquesta opció l\'estudiant podrà intentar respondre diverses vegades una pregunta durant el mateix intent.';
 $string['configattemptsallowed'] = 'Restricció del nombre d\'intents de què disposen els estudiants per resoldre el qüestionari.';
@@ -294,7 +288,7 @@ $string['dragtoafter'] = 'Després de {$a}';
 $string['dragtostart'] = 'Al començament';
 $string['duplicateresponse'] = 'S\'ha ignorat aquesta tramesa perquè ja vau donar anteriorment una resposta equivalent.';
 $string['eachattemptbuildsonthelast'] = 'Cada intent reprèn l\'anterior';
-$string['eachattemptbuildsonthelast_help'] = '<p>Si es permet de fer múltiples intents i aquest paràmetre s\'ha activat, cada nou intent contindrà els resultats de l\'intent anterior. Això permet que el qüestionari es pugui completar al llarg de diferents intents.';
+$string['eachattemptbuildsonthelast_help'] = 'Si es permet de fer múltiples intents i aquest paràmetre s\'ha activat, cada nou intent contindrà els resultats de l\'intent anterior. Això permet que el qüestionari es pugui completar al llarg de diferents intents.';
 $string['editcategories'] = 'Edita categories';
 $string['editcategory'] = 'Edita categoria';
 $string['editcatquestions'] = 'Edita preguntes de la categoria';
@@ -444,6 +438,7 @@ $string['gradeaverage'] = 'Qualificació mitjana';
 $string['gradeboundary'] = 'Límit de qualificació';
 $string['gradeessays'] = 'Qualifica les preguntes de resposta oberta';
 $string['gradehighest'] = 'Qualificació més alta';
+$string['gradeitems'] = 'Elements de qualificació';
 $string['grademethod'] = 'Mètode de qualificació';
 $string['grademethod_help'] = 'En el cas que es permetin múltiples intents per respondre el qüestionari hi ha diferents formes per calcular la qualificació final.
 
@@ -454,7 +449,6 @@ $string['grademethod_help'] = 'En el cas que es permetin múltiples intents per 
 $string['gradesdeleted'] = 'S\'han suprimit les qualificacions del qüestionari';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'La qualificació per aprovar no pot ser zero, ja que aquest qüestionari té el mètode de compleció configurat per demanar la qualificació mínima per aprovar. Poseu un valor diferent a zero.';
-$string['gradetopassnotset'] = 'Aquest qüestionari encara no té configurada cap qualificació per aprovar. Podeu establir-la a l\'apartat de «Qualificació» dels paràmetres del qüestionari.';
 $string['gradetopassoutof'] = 'Qualificació per aprovar: {$a->grade} de {$a->maxgrade}';
 $string['gradingdetails'] = 'Punts per a aquesta tramesa: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Amb les penalitzacions prèvies això dóna <strong>{$a->cur}/{$a->max}</strong>.';
@@ -522,12 +516,13 @@ $string['manualgrading'] = 'S\'està qualificant';
 $string['mark'] = 'Tramet';
 $string['markall'] = 'Tramet la pàgina';
 $string['marks'] = 'Notes';
-$string['marks_help'] = 'Les puntuacions numèriques per a cada pregunta i la puntuació global de l\'intent.';
+$string['marks_help'] = 'La nota obtinguda per cada pregunta i la puntuació global de l\'intent. Només podeu seleccionar Notes si està seleccionat Notes màximes.';
 $string['match'] = 'Aparellament';
 $string['matchanswer'] = 'Resposta correcta';
 $string['matchanswerno'] = 'Resposta correcta {$a}';
 $string['max'] = 'Màx.';
 $string['maxmark'] = 'Nota màxima';
+$string['maxmarks'] = 'Notes màximes';
 $string['messageprovider:attempt_overdue'] = 'Avís quan el vostre intent del qüestionari arribi al termini de venciment';
 $string['messageprovider:confirmation'] = 'Confirmació de les vostres trameses de qüestionaris';
 $string['messageprovider:submission'] = 'Notificació de trameses de qüestionari';

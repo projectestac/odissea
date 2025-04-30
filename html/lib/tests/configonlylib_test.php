@@ -29,12 +29,12 @@ require_once(__DIR__ . '/../configonlylib.php');
  * @copyright  2012 Petr Skoda {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class configonlylib_test extends \advanced_testcase {
+final class configonlylib_test extends \advanced_testcase {
 
     /**
      * Test cleaning of invalid utf-8 entities.
      */
-    public function test_min_fix_utf8() {
+    public function test_min_fix_utf8(): void {
         $this->assertSame('abc', min_fix_utf8('abc'));
         $this->assertSame("žlutý koníček přeskočil potůček \n\t\r", min_fix_utf8("žlutý koníček přeskočil potůček \n\t\r\0"));
         $this->assertSame('aš', min_fix_utf8('a'.chr(130).'š'), 'This fails with buggy iconv() when mbstring extenstion is not available as fallback.');
@@ -43,7 +43,7 @@ class configonlylib_test extends \advanced_testcase {
     /**
      * Test minimalistic parameter cleaning.
      */
-    public function test_min_clean_param() {
+    public function test_min_clean_param(): void {
         $this->assertSame('foo', min_clean_param('foo', 'RAW'));
         $this->assertSame('aš', min_clean_param('a'.chr(130).'š', 'RAW'));
 
@@ -60,7 +60,7 @@ class configonlylib_test extends \advanced_testcase {
     /**
      * Test minimalistic getting of page parameters.
      */
-    public function test_min_optional_param() {
+    public function test_min_optional_param(): void {
         $this->resetAfterTest();
 
         $_GET['foo'] = 'bar';
@@ -81,7 +81,7 @@ class configonlylib_test extends \advanced_testcase {
     /**
      * Test fail-safe minimalistic slashargument processing.
      */
-    public function test_min_get_slash_argument() {
+    public function test_min_get_slash_argument(): void {
         global $CFG;
 
         $this->resetAfterTest();
@@ -152,7 +152,7 @@ class configonlylib_test extends \advanced_testcase {
     public function test_min_get_minimum_version(): void {
         // This is fairly hard to write a test for, but we can at least check that it returns a number
         // greater than the version when the feature was first introduced.
-        $firstintroduced = 1669593600; // Equivalent to 20221128 00:00:00 GMT.
+        $firstintroduced = 1693612800; // Equivalent to 20230902 00:00:00 GMT.
         // Deduct our two day tolerance.
         $firstintroduced = $firstintroduced - (DAYSECS * 2);
         $this->assertGreaterThanOrEqual($firstintroduced, min_get_minimum_revision());
@@ -186,7 +186,7 @@ class configonlylib_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function min_is_revision_valid_and_current_provider(): array {
+    public static function min_is_revision_valid_and_current_provider(): array {
         return [
             'Negative value' => [-1, false],
             'Empty value' => [0, false],

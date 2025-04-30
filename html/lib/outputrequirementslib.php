@@ -180,23 +180,12 @@ class page_requirements_manager {
         $this->yui3loader = new stdClass();
         $this->YUI_config = new YUI_config();
 
-        if (is_https() && !empty($CFG->useexternalyui)) {
-            // On HTTPS sites all JS must be loaded from https sites,
-            // YUI CDN does not support https yet, sorry.
-            $CFG->useexternalyui = 0;
-        }
-
         // Set up some loader options.
         $this->yui3loader->local_base = $CFG->wwwroot . '/lib/yuilib/'. $CFG->yui3version . '/';
         $this->yui3loader->local_comboBase = $CFG->wwwroot . '/theme/yui_combo.php'.$sep;
 
-        if (!empty($CFG->useexternalyui)) {
-            $this->yui3loader->base = 'http://yui.yahooapis.com/' . $CFG->yui3version . '/';
-            $this->yui3loader->comboBase = 'http://yui.yahooapis.com/combo?';
-        } else {
-            $this->yui3loader->base = $this->yui3loader->local_base;
-            $this->yui3loader->comboBase = $this->yui3loader->local_comboBase;
-        }
+        $this->yui3loader->base = $this->yui3loader->local_base;
+        $this->yui3loader->comboBase = $this->yui3loader->local_comboBase;
 
         // Enable combo loader? This significantly helps with caching and performance!
         $this->yui3loader->combine = !empty($CFG->yuicomboloading);
@@ -218,7 +207,7 @@ class page_requirements_manager {
 
         $configname = $this->YUI_config->set_config_source('lib/yui/config/yui2.js');
         $this->YUI_config->add_group('yui2', array(
-            // Loader configuration for our 2in3, for now ignores $CFG->useexternalyui.
+            // Loader configuration for our 2in3.
             'base' => $CFG->wwwroot . '/lib/yuilib/2in3/' . $CFG->yui2version . '/build/',
             'comboBase' => $CFG->wwwroot . '/theme/yui_combo.php'.$sep,
             'combine' => $this->yui3loader->combine,
@@ -341,7 +330,8 @@ class page_requirements_manager {
                 'contextid'             => $contextid,
                 'contextInstanceId'     => (int) $contextinstanceid,
                 'langrev'               => get_string_manager()->get_revision(),
-                'templaterev'           => $this->get_templaterev()
+                'templaterev'           => $this->get_templaterev(),
+                'siteId'                => (int) SITEID,
             );
             if ($CFG->debugdeveloper) {
                 $this->M_cfg['developerdebug'] = true;
@@ -382,12 +372,8 @@ class page_requirements_manager {
         // Include block drag/drop if editing is on
         if ($page->user_is_editing()) {
             $params = array(
-                'courseid' => $page->course->id,
-                'pagetype' => $page->pagetype,
-                'pagelayout' => $page->pagelayout,
-                'subpage' => $page->subpage,
                 'regions' => $page->blocks->get_regions(),
-                'contextid' => $page->context->id,
+                'pagehash' => $page->get_edited_page_hash(),
             );
             if (!empty($page->cm->id)) {
                 $params['cmid'] = $page->cm->id;
@@ -398,6 +384,7 @@ class page_requirements_manager {
                                         'emptydragdropregion'),
                                   'moodle');
             $page->requires->yui_module('moodle-core-blocks', 'M.core_blocks.init_dragdrop', array($params), null, true);
+            $page->requires->js_call_amd('core_block/edit', 'init', ['pagehash' => $page->get_edited_page_hash()]);
         }
 
         // Include the YUI CSS Modules.
@@ -458,6 +445,10 @@ class page_requirements_manager {
      * @param bool $inhead initialise in head
      */
     public function js($url, $inhead = false) {
+        if ($url == '/question/qengine.js') {
+            debugging('The question/qengine.js has been deprecated. ' .
+                'Please use core_question/question_engine', DEBUG_DEVELOPER);
+        }
         $url = $this->js_fix_url($url);
         $where = $inhead ? 'head' : 'footer';
         $this->jsincludes[$where][$url->out()] = $url;
@@ -710,15 +701,28 @@ class page_requirements_manager {
     }
 
     /**
-     * Returns the actual url through which a script is served.
+     * Returns the actual url through which a JavaScript file is served.
      *
-     * @param moodle_url|string $url full moodle url, or shortened path to script
+     * @param moodle_url|string $url full moodle url, or shortened path to script.
+     * @throws coding_exception if the given $url isn't a shortened url starting with / or a moodle_url instance.
      * @return moodle_url
      */
     protected function js_fix_url($url) {
         global $CFG;
 
         if ($url instanceof moodle_url) {
+            // If the URL is external to Moodle, it won't be handled by Moodle (!).
+            if ($url->is_local_url()) {
+                $localurl = $url->out_as_local_url();
+                // Check if the URL points to a Moodle PHP resource.
+                if (strpos($localurl, '.php') !== false) {
+                    // It's a Moodle PHP resource e.g. a resource already served by the proper Moodle Handler.
+                    return $url;
+                }
+                // It's a local resource: we need to further examine it.
+                return $this->js_fix_url($url->out_as_local_url(false));
+            }
+            // The URL is not a Moodle resource.
             return $url;
         } else if (null !== $url && strpos($url, '/') === 0) {
             // Fix the admin links if needed.
@@ -736,7 +740,7 @@ class page_requirements_manager {
             if (substr($url, -3) === '.js') {
                 $jsrev = $this->get_jsrev();
                 if (empty($CFG->slasharguments)) {
-                    return new moodle_url('/lib/javascript.php', array('rev'=>$jsrev, 'jsfile'=>$url));
+                    return new moodle_url('/lib/javascript.php', ['rev' => $jsrev, 'jsfile' => $url]);
                 } else {
                     $returnurl = new moodle_url('/lib/javascript.php');
                     $returnurl->set_slashargument('/'.$jsrev.$url);
@@ -1851,6 +1855,12 @@ class YUI_config {
     public $insertBefore = 'firstthemesheet';
     public $groups = array();
     public $modules = array();
+    /** @var array The log sources that should be not be logged. */
+    public $logInclude = [];
+    /** @var array Tog sources that should be logged. */
+    public $logExclude = [];
+    /** @var string The minimum log level for YUI logging statements. */
+    public $logLevel;
 
     /**
      * @var array List of functions used by the YUI Loader group pattern recognition.
@@ -1860,9 +1870,9 @@ class YUI_config {
     /**
      * Create a new group within the YUI_config system.
      *
-     * @param String $name The name of the group. This must be unique and
+     * @param string $name The name of the group. This must be unique and
      * not previously used.
-     * @param Array $config The configuration for this group.
+     * @param array $config The configuration for this group.
      * @return void
      */
     public function add_group($name, $config) {
@@ -1878,9 +1888,9 @@ class YUI_config {
      * Note, any existing configuration for that group will be wiped out.
      * This includes module configuration.
      *
-     * @param String $name The name of the group. This must be unique and
+     * @param string $name The name of the group. This must be unique and
      * not previously used.
-     * @param Array $config The configuration for this group.
+     * @param array $config The configuration for this group.
      * @return void
      */
     public function update_group($name, $config) {
@@ -1899,7 +1909,7 @@ class YUI_config {
      * name of the module being loaded.
      *
      * @param $function String the body of the JavaScript function. This should be used i
-     * @return String the name of the function to use in the group pattern configuration.
+     * @return string the name of the function to use in the group pattern configuration.
      */
     public function set_config_function($function) {
         $configname = 'yui' . (count($this->jsconfigfunctions) + 1) . 'ConfigFn';
@@ -1917,7 +1927,7 @@ class YUI_config {
      * When jsrev is positive, the function is minified and stored in a MUC cache for subsequent uses.
      *
      * @param $file The path to the JavaScript function used for YUI configuration.
-     * @return String the name of the function to use in the group pattern configuration.
+     * @return string the name of the function to use in the group pattern configuration.
      */
     public function set_config_source($file) {
         global $CFG;
@@ -1943,7 +1953,7 @@ class YUI_config {
     /**
      * Retrieve the list of JavaScript functions for YUI_config groups.
      *
-     * @return String The complete set of config functions
+     * @return string The complete set of config functions
      */
     public function get_config_functions() {
         $configfunctions = '';
@@ -1959,7 +1969,7 @@ class YUI_config {
      * Update the header JavaScript with any required modification for the YUI Loader.
      *
      * @param $js String The JavaScript to manipulate.
-     * @return String the modified JS string.
+     * @return string the modified JS string.
      */
     public function update_header_js($js) {
         // Update the names of the the configFn variables.
@@ -1974,9 +1984,9 @@ class YUI_config {
     /**
      * Add configuration for a specific module.
      *
-     * @param String $name The name of the module to add configuration for.
-     * @param Array $config The configuration for the specified module.
-     * @param String $group The name of the group to add configuration for.
+     * @param string $name The name of the module to add configuration for.
+     * @param array $config The configuration for the specified module.
+     * @param string $group The name of the group to add configuration for.
      * If not specified, then this module is added to the global
      * configuration.
      * @return void
@@ -2040,7 +2050,7 @@ class YUI_config {
      * This works through all modules capable of serving YUI modules, and attempts to get
      * metadata for each of those modules.
      *
-     * @return Array of module metadata
+     * @return array of module metadata
      */
     private function get_moodle_metadata() {
         $moodlemodules = array();
@@ -2077,8 +2087,8 @@ class YUI_config {
     /**
      * Helper function process and return the YUI metadata for all of the modules under the specified path.
      *
-     * @param String $path the UNC path to the YUI src directory.
-     * @return Array the complete array for frankenstyle directory.
+     * @param string $path the UNC path to the YUI src directory.
+     * @return array the complete array for frankenstyle directory.
      */
     private function get_moodle_path_metadata($path) {
         // Add module metadata is stored in frankenstyle_modname/yui/src/yui_modname/meta/yui_modname.json.
@@ -2107,10 +2117,10 @@ class YUI_config {
      * We must do this because we aggressively cache content on the browser, and we must also override use of the
      * external CDN which will serve the true authoritative copy of the code without our patches.
      *
-     * @param String combobase The local combobase
-     * @param String yuiversion The current YUI version
-     * @param Int patchlevel The patch level we're working to for YUI
-     * @param Array patchedmodules An array containing the names of the patched modules
+     * @param string $combobase The local combobase
+     * @param string $yuiversion The current YUI version
+     * @param int $patchlevel The patch level we're working to for YUI
+     * @param array $patchedmodules An array containing the names of the patched modules
      * @return void
      */
     public function define_patched_core_modules($combobase, $yuiversion, $patchlevel, $patchedmodules) {

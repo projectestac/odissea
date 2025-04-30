@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'de', version '4.1'.
+ * Strings for component 'tool_task', language 'de', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad-hoc';
 $string['adhocempty'] = 'Die Warteschlange für Ad-hoc-Tasks ist leer.';
-$string['adhocqueueold'] = 'Der älteste Task ist {$a->age}, was mehr ist als {$a->max}';
+$string['adhocqueueold'] = 'Die älteste unverarbeitete Task ist {$a->age}, was mehr ist als {$a->max}';
 $string['adhocqueuesize'] = 'Die Warteschlange für Ad-hoc-Tasks hat {$a} Tasks.';
 $string['adhoctaskid'] = 'Ad-hoc-Task-ID: {$a}';
+$string['adhoctaskrun'] = 'Ad-hoc-Taskausführung initiiert';
 $string['adhoctasks'] = 'Ad-hoc-Tasks';
-$string['asap'] = 'ASAP';
+$string['adhoctasksdue'] = 'Ad-hoc-Tasks sind fällig';
+$string['adhoctasksfailed'] = 'Ad-hoc-Tasks sind fehlgeschlagen';
+$string['adhoctasksfuture'] = 'Zukünftige Ad-hoc-Tasks';
+$string['adhoctasksrunning'] = 'Ad-hoc-Tasks werden ausgeführt';
+$string['asap'] = '<abbr title="So schnell wie möglich">Schnell</abbr>';
+$string['backtoadhoctasks'] = 'Zurück zu den Ad-hoc-Tasks';
 $string['backtoscheduledtasks'] = 'Zurück zu den geplanten Vorgängen';
 $string['blocking'] = 'Blockierend';
 $string['cannotfindthepathtothecli'] = 'Der Pfad zum Ausführen von PHP CLI wurde auf dem Server nicht gefunden. Die Ausführung wurde daher abgebrochen. Tragen Sie den richtigen Pfad unter "Pfad für PHP CLI" ein unter Website Administration - Server - Systempfade';
 $string['checkadhocqueue'] = 'Warteschlange für Ad-hoc-Tasks';
 $string['checkcronrunning'] = 'Cron wird ausgeführt';
+$string['checklongrunningtaskcount'] = 'Lange laufende Tasks: {$a}';
+$string['checklongrunningtasks'] = 'Lang laufende Tasks';
 $string['checkmaxfaildelay'] = 'Maximale Fehlerverzögerung für Tasks';
 $string['classname'] = 'Class-Name';
 $string['clearfaildelay_confirm'] = 'Möchten Sie die Fehlerverzögerung für den Vorgang \'{$a}\' wirklich löschen? Nach dem Löschen wird der Vorgang gemäß seinem normalen Zeitplan ausgeführt.';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Geplanten Vorgang bearbeiten: {$a}';
 $string['enablerunnow'] = '\'Sofort ausführen\' von geplanten Vorgängen erlauben';
 $string['enablerunnow_desc'] = 'Diese Option ermöglicht es Administrator/innen, einen einzelnen geplanten Vorgang sofort auszuführen, ohne auf den planmäßigen Termin zu warten. Dafür muss "Pfad zu PHP CLI" in Systempfade eingestellt sein. Ein solcher Vorgang läuft auf dem Webserver, so dass diese Option deaktiviert sein könnte, um Leistungseinbrüche zu vermeiden.';
 $string['faildelay'] = 'Fehlerverzögerung';
+$string['failed'] = 'Fehlgeschlagen';
 $string['fromcomponent'] = 'Von der Komponente: {$a}';
 $string['hostname'] = 'Host-Name';
 $string['lastcronstart'] = 'Zeit seit dem letzen Cron-Aufruf: {$a}';
 $string['lastruntime'] = 'Letzte Ausführung';
 $string['lastupdated'] = 'Zuletzt aktualisiert {$a}.';
 $string['nextruntime'] = 'Nächste Ausführung';
+$string['noclassname'] = 'Klassenname nicht angegeben';
+$string['notasks'] = 'Keine Task zum Ausführen';
+$string['payload'] = 'Nutzlast';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'Plugin deaktiviert';
 $string['pluginname'] = 'Einstellungen für geplante Tasks';
 $string['privacy:metadata'] = 'Das Plugin zur Konfiguration geplanter Vorgänge speichert keine personenbezogenen Daten.';
 $string['resettasktodefaults'] = 'Zeitplan dieses Vorgangs auf Standardwerte zurücksetzen';
 $string['resettasktodefaults_help'] = 'Damit werden alle lokalen Änderungen rückgängig gemacht und die Originaleinstellungen für den Vorgang wieder hergestellt.';
+$string['run_adhoctasks'] = 'Ad-hoc-Tasks ausführen';
+$string['runadhoc'] = 'Ad-hoc-Tasks jetzt ausführen?';
+$string['runadhoc_confirm'] = 'Die Tasks werden auf dem Webserver ausgeführt und könnten einige Zeit brauchen, bis sie fertig sind.';
+$string['runadhoctask'] = '\'{$a->task}\' Task-ID {$a->taskid} ausführen';
+$string['runadhoctasks'] = 'Alle \'{$a}\' Tasks ausführen';
+$string['runadhoctasksfailed'] = 'Fehlgeschlagene \'{$a}\' Tasks ausführen';
 $string['runagain'] = 'Noch einmal';
+$string['runclassname'] = 'Alle ausführen';
+$string['runclassnamefailedonly'] = 'Alle ausführen ist fehlgeschlagen';
+$string['runningalltasks'] = 'Alle Tasks werden ausgeführt';
+$string['runningfailedtasks'] = 'Fehlgeschlagene Tasks';
 $string['runningtasks'] = 'Gerade laufende Tasks';
 $string['runnow'] = 'Sofort ausführen';
 $string['runnow_confirm'] = 'Möchten Sie den Vorgang \'{$a}\' wirklich sofort ausführen? Der Vorgang läuft auf dem Webserver und könnte eventuell lange dauern, um fertig zu werden.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Ausführungsmuster';
 $string['scheduled'] = 'Geplant';
 $string['scheduledtaskchangesdisabled'] = 'Änderungen in der Liste der geplanten Vorgänge sind nicht erlaubt.';
 $string['scheduledtasks'] = 'Geplante Tasks';
+$string['showall'] = 'Alle anzeigen';
+$string['showfailedonly'] = 'Nur fehlgeschlagene anzeigen';
+$string['showsummary'] = 'Zusammenfassung der Ad-hoc-Tasks anzeigen';
+$string['slowtask'] = 'Die Task ist länger als {$a} gelaufen';
 $string['started'] = 'Gestartet';
+$string['taskage'] = 'Laufzeit';
+$string['taskdetails'] = 'Tasks, die länger laufen als {$a->time} (max {$a->maxtime}): {$a->count}';
 $string['taskdisabled'] = 'Vorgang deaktiviert';
 $string['taskfailures'] = '{$a} Task(s) schlagen fehl';
+$string['taskid'] = 'Task-ID';
 $string['tasklogs'] = 'Task-Logdaten';
 $string['tasknofailures'] = 'Keine Task ist fehlgeschlagen.';
+$string['taskrunningtime'] = 'Die Task ist {$a} gelaufen';
 $string['taskscheduleday'] = 'Tag';
 $string['taskscheduleday_help'] = 'Zeitplanung: Tag des Monats. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
 

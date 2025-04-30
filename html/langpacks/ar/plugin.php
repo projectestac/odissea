@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ar', version '4.1'.
+ * Strings for component 'plugin', language 'ar', version '4.4'.
  *
  * @package     plugin
  * @category    string
@@ -124,6 +124,8 @@ $string['type_cachestore'] = 'مخزن المخبوءات';
 $string['type_cachestore_plural'] = 'مخازن المخبوءات';
 $string['type_calendartype'] = 'نوع التقويم';
 $string['type_calendartype_plural'] = 'أنواع التقويم';
+$string['type_communication'] = 'مزود الاتصالات';
+$string['type_communication_plural'] = 'مزودو الاتصالات';
 $string['type_contentbank'] = 'بنك المحتوى';
 $string['type_contentbank_plural'] = 'إضافات بنك المحتوى';
 $string['type_contenttype'] = 'بنك المحتوى';
@@ -206,7 +208,7 @@ $string['uninstallextraconfirmblock'] = 'هناك عدة نسخ {$a->instances} 
 $string['uninstallextraconfirmenrol'] = 'يوجد {$a->enrolments} لتسجيلات المستخدمين.';
 $string['uninstallextraconfirmmod'] = 'يوجد  {$a->instances} نسخ مطابقة لهذا النموذج في {$a->courses} مساقات';
 $string['uninstalling'] = 'يجري إلغاء تنصيب {$a->name}';
-$string['updateavailable'] = 'هناك إصدار جديد {$a} متاح!';
+$string['updateavailable'] = '_هناك إصدار جديد {$a} متاح!';
 $string['updateavailable_moreinfo'] = 'مزيد من المعلومات...';
 $string['updateavailable_release'] = 'الإطلاق {$a}';
 $string['updatepluginconfirm'] = 'تأكيد تحديث الإضافة';
@@ -238,11 +240,11 @@ $string['validationmsg_missingversionphp'] = 'ملف version.php غير موجو
 $string['validationmsg_multiplelangenfiles'] = 'تم العثور على ملفات متعددة للغة الإنجليزية';
 $string['validationmsg_onedir'] = 'بنية غير صالحة لحزمة ZIP.';
 $string['validationmsg_onedir_help'] = 'ينبغي أن تحتوي حزمة ZIP على مجلد جذر واحد يحتفظ برمز الإضافة. يجب أن يتطابق اسم هذا المجلد الجذر مع اسم الإضافة.';
-$string['validationmsg_pathwritable'] = 'التحقق من اتاحة الكتابة';
-$string['validationmsg_pluginversion'] = 'إصدار الإضافة';
+$string['validationmsg_pathwritable'] = 'التحقق من إتاحة الكتابة';
+$string['validationmsg_pluginversion'] = 'إصدار الملحق';
 $string['validationmsg_pluginversiontoolow'] = 'هناك إصدار أحدث من هذه الإضافة منصب سلفاً';
-$string['validationmsg_release'] = 'اصدر الإضافة';
-$string['validationmsg_requiresmoodle'] = 'طلب إصدارة Moodle';
+$string['validationmsg_release'] = 'نسخة الملحق';
+$string['validationmsg_requiresmoodle'] = 'إصدار مودل المطلوب';
 $string['validationmsg_rootdir'] = 'اسم الإضافة المراد تنصيبها';
 $string['validationmsg_rootdir_help'] = 'يمثل اسم المجلد الجذر في حزمة ZIP اسم الإضافة المراد تنصيبها. إذا كان الاسم غير صحيح، فقد ترغب في إعادة تسمية المجلد الجذر في ملف ZIP قبل تنصيب الإضافة.';
 $string['validationmsg_rootdirinvalid'] = 'اسم الإضافة غير صالح';
@@ -254,7 +256,7 @@ $string['validationmsg_unknowntype'] = 'نوع مجهول للملحق';
 $string['validationmsg_versionphpsyntax'] = 'تم اكتشاف صيغة غير مدعومة في ملف version.php';
 $string['validationmsglevel_debug'] = 'فحص الأخطاء';
 $string['validationmsglevel_error'] = 'خطأ';
-$string['validationmsglevel_info'] = 'حسنا';
+$string['validationmsglevel_info'] = 'جيد';
 $string['validationmsglevel_warning'] = 'تحذير';
 $string['version'] = 'الإصدار';
 $string['versiondb'] = 'الإصدار الحالي';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'pt', version '4.1'.
+ * Strings for component 'local_mobile', language 'pt', version '4.4'.
  *
  * @package     local_mobile
  * @category    string

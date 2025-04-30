@@ -117,7 +117,6 @@ Feature: Edit quiz page - adding things
 
     And I select "Questions" from the "Question bank tertiary navigation" singleselect
     And I should see "Question bank"
-    And I should see "Select a category"
 
     # Create the Essay 01 question.
     When I press "Create a new question ..."
@@ -131,8 +130,6 @@ Feature: Edit quiz page - adding things
     And I should see "Essay 01"
 
     # Create the Essay 02 question.
-    And I should see "Select a category"
-    And I set the field "Select a category:" to "Subcat 1"
     When I press "Create a new question ..."
     And I set the field "item_qtype_essay" to "1"
     And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
@@ -144,7 +141,6 @@ Feature: Edit quiz page - adding things
     And I should see "Essay 02"
 
     # Create the Essay 03 question.
-    And I set the field "Select a category" to "Default for C1"
     And I wait until the page is ready
     When I press "Create a new question ..."
     And I set the field "item_qtype_essay" to "1"
@@ -201,8 +197,6 @@ Feature: Edit quiz page - adding things
     # Add Esay 02 from question bank.
     And I open the "Page 1" add to quiz menu
     And I follow "from question bank"
-    And I should see "Select a category"
-    And I set the field "Select a category" to "Subcat 1"
     And I click on "Add to quiz" "link" in the "Essay 02" "table_row"
     And I should see "Essay 03" on quiz page "1"
     And I should see "Essay 01" on quiz page "1"
@@ -242,3 +236,19 @@ Feature: Edit quiz page - adding things
     And I should see "Essay 02" on quiz page "3"
     And I should see "Random" on quiz page "4"
     And I should see "Essay for page 4" on quiz page "4"
+
+  @accessibility @javascript
+  Scenario: Check the accessibility of the quiz questions page
+    Given the following "question categories" exist:
+      | contextlevel | reference | name           |
+      | Course       | C1        | Test questions |
+    And the following "questions" exist:
+      | questioncategory | qtype     | name           | questiontext              |
+      | Test questions   | truefalse | First question | Answer the first question |
+      | Test questions   | truefalse | Other question | Answer the first question |
+    And quiz "Quiz 1" contains the following questions:
+      | question          | page |
+      | First question    | 1    |
+    When I reload the page
+    Then I should see "First question"
+    And the page should meet accessibility standards

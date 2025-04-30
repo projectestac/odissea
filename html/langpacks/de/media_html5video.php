@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_html5video', language 'de', version '4.1'.
+ * Strings for component 'media_html5video', language 'de', version '4.4'.
  *
  * @package     media_html5video
  * @category    string

@@ -28,9 +28,9 @@ namespace filter_glossary;
 /**
  * Test case for glossary.
  */
-class filter_test extends \advanced_testcase {
+final class filter_test extends \advanced_testcase {
 
-    public function test_link_to_entry_with_alias() {
+    public function test_link_to_entry_with_alias(): void {
         global $CFG;
         $this->resetAfterTest(true);
 
@@ -71,7 +71,7 @@ class filter_test extends \advanced_testcase {
         $this->assertEquals($glossary->name . ': second alias', $matches[2][2]);
     }
 
-    public function test_longest_link_used() {
+    public function test_longest_link_used(): void {
         global $CFG;
         $this->resetAfterTest(true);
 
@@ -108,7 +108,7 @@ class filter_test extends \advanced_testcase {
         $this->assertEquals($glossary->name . ': Time',   $matches[2][0]);
     }
 
-    public function test_link_to_category() {
+    public function test_link_to_category(): void {
         global $CFG;
         $this->resetAfterTest(true);
 
@@ -125,7 +125,7 @@ class filter_test extends \advanced_testcase {
                 array('course' => $course->id, 'mainglossary' => 1));
 
         // Create two entries with ampersands and one normal entry.
-        /** @var mod_glossary_generator $generator */
+        /** @var \mod_glossary_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_glossary');
         $category = $generator->create_category($glossary, array('name' => 'My category', 'usedynalink' => 1));
 
@@ -146,7 +146,7 @@ class filter_test extends \advanced_testcase {
     /**
      * Test ampersands.
      */
-    public function test_ampersands() {
+    public function test_ampersands(): void {
         global $CFG;
         $this->resetAfterTest(true);
 
@@ -163,7 +163,7 @@ class filter_test extends \advanced_testcase {
                 array('course' => $course->id, 'mainglossary' => 1));
 
         // Create two entries with ampersands and one normal entry.
-        /** @var mod_glossary_generator $generator */
+        /** @var \mod_glossary_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_glossary');
         $normal = $generator->create_content($glossary, array('concept' => 'normal'));
         $amp1 = $generator->create_content($glossary, array('concept' => 'A&B'));
@@ -192,7 +192,7 @@ class filter_test extends \advanced_testcase {
     /**
      * Test brackets.
      */
-    public function test_brackets() {
+    public function test_brackets(): void {
         global $CFG;
         $this->resetAfterTest(true);
 
@@ -209,7 +209,7 @@ class filter_test extends \advanced_testcase {
                 array('course' => $course->id, 'mainglossary' => 1));
 
         // Create two entries with ampersands and one normal entry.
-        /** @var mod_glossary_generator $generator */
+        /** @var \mod_glossary_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_glossary');
         $simple = $generator->create_content($glossary, array('concept' => 'simple'));
         $withbrackets = $generator->create_content($glossary, array('concept' => 'more complex (perhaps)'));
@@ -235,7 +235,7 @@ class filter_test extends \advanced_testcase {
         $this->assertEquals($glossary->name . ': Test (2)', $matches[2][2]);
     }
 
-    public function test_exclude_excludes_link_to_entry_with_alias() {
+    public function test_exclude_excludes_link_to_entry_with_alias(): void {
         global $CFG, $GLOSSARY_EXCLUDEENTRY;
 
         $this->resetAfterTest(true);
@@ -275,7 +275,7 @@ class filter_test extends \advanced_testcase {
         $this->assertEquals($glossary->name . ': other entry', $matches[2][0]);
     }
 
-    public function test_exclude_does_not_exclude_categories() {
+    public function test_exclude_does_not_exclude_categories(): void {
         global $CFG, $GLOSSARY_EXCLUDEENTRY;
         $this->resetAfterTest(true);
 
@@ -292,7 +292,7 @@ class filter_test extends \advanced_testcase {
                 array('course' => $course->id, 'mainglossary' => 1));
 
         // Create two entries with ampersands and one normal entry.
-        /** @var mod_glossary_generator $generator */
+        /** @var \mod_glossary_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_glossary');
         $category = $generator->create_category($glossary, array('name' => 'My category', 'usedynalink' => 1));
 

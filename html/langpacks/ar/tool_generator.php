@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ar', version '4.1'.
+ * Strings for component 'tool_generator', language 'ar', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'النشاطات الإضافية';
+$string['additionalmodules_help'] = 'إختر المزيد من النشاطات التي تستعمل الوظيفة course_backend_generator_create_activity لتضمينها في المساق التجريبي.';
 $string['bigfile'] = 'ملف كبير {$a}';
 $string['courseexplanation'] = 'تقوم هذه الأداة بإنشاء مقررات تجريبية قياسية تتضمن العديد من الأقسام والأنشطة والملفات.
 
@@ -72,6 +74,7 @@ $string['progress_createcourse'] = 'إنشاء مساق {$a}';
 $string['progress_createforum'] = 'إنشاء منتدى ({$a} منشورات)';
 $string['progress_createpages'] = 'إنشاء صفحات ({$a})';
 $string['progress_createsmallfiles'] = 'إنشاء ملفات صغيرة ({$a})';
+$string['progress_createusers'] = 'يجري إنشاء حسابات المستخدمين ({$a})';
 $string['progress_enrol'] = 'ضم المستخدمين إلى المساق ({$a})';
 $string['progress_sitecompleted'] = 'اكتمل الموقع ({$a} s)';
 $string['shortsize_0'] = 'XS';
@@ -110,5 +113,17 @@ $string['testplansize_2'] = 'M ({$a->users} من المستخدمين، {$a->loo
 $string['testplansize_3'] = 'L ({$a->users} من المستخدمين، {$a->loops} من الجولات و {$a->rampup} فترة التوليد';
 $string['testplansize_4'] = 'XL ({$a->users} من المستخدمين، {$a->loops} من الجولات و {$a->rampup} فترة التوليد';
 $string['testplansize_5'] = 'XXL ({$a->users} من المستخدمين، {$a->loops} من الجولات و {$a->rampup} فترة التوليد';
+$string['testscenario'] = 'إنشاء سيناريوهات تجريبية';
+$string['testscenario_description'] = 'إن إنشاء السيناريوهات التجريبية يستعمل صيغة محدودة من ملف الميزة لإنشاء كل العناصر الضرورية لتشغيل الاختبار اليدوي.';
+$string['testscenario_errorparsing'] = 'وقع خطأ عند تحليل ملف الميزة: {$a}';
+$string['testscenario_file'] = 'ملف الميزة';
+$string['testscenario_filedesc'] = 'ملفات الميزة المرفوعة ينبغي أن تقتصر على سيناريوهات ذات خطوات core_data_generator. ليست حتى الآن متوافقة مع ملامح السيناريو. سيتم تنفيذ كل السيناريوهات حالاً ولكن سيتم تجاهل الخطوات التي في الخلفية.';
+$string['testscenario_invalidfile'] = 'صيغة الملف غير صحيحة أو هو يحتوي على خطوات خاطئة.';
+$string['testscenario_invalidstep'] = 'خطوة مجهولة. إنشاء السيناريوهات التجريبية يستعمل الخطوات المولدة فقط.';
+$string['testscenario_nosteps'] = 'ليست هناك خطوات لتنفيذها في الملف.';
+$string['testscenario_notready'] = 'لم يتم تنصيب مكتبات Composer و Behat<br><br>يرجى تنفيذ هذا الأمر لتمكين هذه الأداة: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'ملامح السيناريو غير مدعومة';
+$string['testscenario_scenarionosteps'] = 'لا يحتوي هذا السيناريو لى أي خطوات.';
+$string['testscenario_steps'] = 'خطوات السيناريو التجريبي:';
 $string['updateuserspassword'] = 'تحديث كلمة مرور مستخدمي المادة';
-$string['updateuserspassword_help'] = 'يحتاج JMeter إلى تسجيل الدخول كمستخدمين للمادة، يمكنك تعيين كلمة مرور المستخدمين باستخدام $CFG-> tool_generator_users_password في config.php؛ يقوم هذا الإعداد بتحديث كلمة مرور مستخدم المادة وفقًا لـ $CFG-> tool_generator_users_password. قد يكون ذلك مفيدًا إذا كنت تستخدم مادة لم يتم إنشاؤها بواسطة tool_generator أو لم يتم تعيين $CFG-> tool_generator_users_password عند إنشاء دورات الاختبار.';
+$string['updateuserspassword_help'] = 'يحتاج JMeter إلى تسجيل الدخول بمثابة مستخدمي المساق، يمكنك تعيين كلمة مرور المستخدمين باستعمال $CFG->tool_generator_users_password في ملف التهيئة config.php؛ يقوم هذا الإعداد بتحديث كلمة مرور مستخدم المساق وفقًا لـ $CFG->tool_generator_users_password. قد يكون ذلك مفيدًا إذا كنت تستعمل مساقًا لم يتم إنشاؤه بواسطة tool_generator أو لم يتم تعيين $CFG->tool_generator_users_password عند إنشاء المساقات التجريبية.';

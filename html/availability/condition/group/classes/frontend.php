@@ -52,8 +52,11 @@ class frontend extends \core_availability\frontend {
         $jsarray = array();
         $context = \context_course::instance($course->id);
         foreach ($groups as $rec) {
-            $jsarray[] = (object)array('id' => $rec->id, 'name' =>
-                    format_string($rec->name, true, array('context' => $context)));
+            $jsarray[] = (object)array(
+                'id' => $rec->id,
+                'name' => format_string($rec->name, true, array('context' => $context)),
+                'visibility' => $rec->visibility
+            );
         }
         return array($jsarray);
     }
@@ -69,7 +72,7 @@ class frontend extends \core_availability\frontend {
         require_once($CFG->libdir . '/grouplib.php');
 
         if ($courseid != $this->allgroupscourseid) {
-            $this->allgroups = groups_get_all_groups($courseid, 0, 0, 'g.id, g.name');
+            $this->allgroups = groups_get_all_groups($courseid, 0, 0, 'g.id, g.name, g.visibility');
             $this->allgroupscourseid = $courseid;
         }
         return $this->allgroups;

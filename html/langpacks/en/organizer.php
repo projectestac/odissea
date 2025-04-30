@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'en', version '4.1'.
+ * Strings for component 'organizer', language 'en', version '4.4'.
  *
  * @package     organizer
  * @category    string
@@ -930,6 +930,8 @@ $string['status_help'] = 'Current status of this slot.';
 $string['status_no_entries'] = 'This organizer has no registered students.';
 $string['stroptimal'] = 'optimal';
 $string['studentcomment_title'] = 'Student comments';
+$string['synchronizegroupmembers'] = 'Synchronize group members';
+$string['synchronizegroupmembers_help'] = 'If Moodle group members change the changes will be put through to booked slots.';
 $string['taballapp'] = 'Appointments';
 $string['tabstatus'] = 'Registration status';
 $string['tabstud'] = 'Student view';
@@ -989,6 +991,8 @@ $string['trainerid_help'] = 'Select the teacher you want to lead the appointment
 $string['unavailableslot'] = 'This slot is available from';
 $string['unknown'] = 'Unknown';
 $string['userslots_mingreatermax'] = 'Minimum user slots is greater than maximum.';
+$string['userslotsdailymax'] = 'Maximum of slots per participant or group per day';
+$string['userslotsdailymax_help'] = 'Amount of slots a participant or group is allowed to book per day. \'0\' means there is no daily limit.';
 $string['userslotsmax'] = 'Maximum of slots per participant or group';
 $string['userslotsmax_help'] = 'Amount of slots a participant or group is allowed to book.';
 $string['userslotsmin'] = 'Minimum of slots per participant or group';

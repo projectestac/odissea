@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'ru', version '4.1'.
+ * Strings for component 'tiny_equation', language 'ru', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'Команды TeX, которые будут �
 $string['librarygroup4'] = 'Дополнительно';
 $string['librarygroup4_desc'] = 'Команды TeX, которые будут отображаться на вкладке «Дополнительно»';
 $string['modaltitle'] = 'Редактор формул';
-$string['pluginname'] = 'Редактор формул Tiny';
+$string['pluginname'] = 'Редактор формул';
 $string['preview'] = 'Предварительный просмотр формулы';
 $string['privacy:metadata'] = 'Редактор формул для TinyMCE не хранит никаких личных данных.';
 $string['saveequation'] = 'Сохранить формулу';

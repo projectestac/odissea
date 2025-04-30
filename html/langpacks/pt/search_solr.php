@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search_solr', language 'pt', version '4.1'.
+ * Strings for component 'search_solr', language 'pt', version '4.4'.
  *
  * @package     search_solr
  * @category    string
@@ -29,13 +29,13 @@ $string['connectionerror'] = 'O servidor Solr indicado não está disponível ou
 $string['connectionsettings'] = 'Configurações da ligação';
 $string['errorcreatingschema'] = 'Erro ao criar o esquema Solr: {$a}';
 $string['errorsolr'] = 'O motor de busca Solr relatou um erro: {$a}';
-$string['errorvalidatingschema'] = 'Erro ao validar o esquema Solr: O campo {$a->fieldname} não existe. Por favor, <a href="{$a->setupurl}">siga esta hiperligação</a> para configurar os campos necessários.';
+$string['errorvalidatingschema'] = 'Erro ao validar o esquema Solr: O campo {$a->fieldname} não existe. Por favor, siga esta <a href="{$a->setupurl}">hiperligação</a> para configurar os campos necessários.';
 $string['extensionerror'] = 'A Extensão PHP do Apache Solr não está instalada. Por favor, consulte a documentação.';
 $string['fileindexing'] = 'Ativar a indexação de ficheiros';
 $string['fileindexing_help'] = 'Se o seu instalador Solr o suportar, esta funcionalidade permite que o Moodle envie ficheiros para indexação.
 Precisará de reindexar todo o conteúdo do site depois de ativar esta opção para que todos os ficheiros sejam adicionados.';
 $string['fileindexsettings'] = 'Configurações de indexação de ficheiros';
-$string['maxindexfilekb'] = 'Tamanho máximo dos ficheiros (KB) para indexar';
+$string['maxindexfilekb'] = 'Tamanho máximo dos ficheiros (kB) para indexar';
 $string['maxindexfilekb_help'] = 'Os ficheiros com tamanho maior que o valor indicado não serão incluídos na indexação. Se definir como zero, todos os ficheiros serão indexados, independentemente do tamanho.';
 $string['minimumsolr4'] = 'Solr 4.0 é a versão mínima necessária para o Moodle';
 $string['missingconfig'] = 'O seu servidor Apache Solr ainda não está configurado no Moodle.';

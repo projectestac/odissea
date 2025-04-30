@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'es', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'es', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Publicar grabaciones';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Desproteger grabaciones';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Cancelar la publicación de grabaciones';
 $string['bigbluebuttonbn:view'] = 'Ver sala BigBlueButton';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Ver todos los formatos de grabación';
 $string['bigbluebuttondisablednotification'] = 'El módulo de actividad de BigBlueButton se ha desactivado y actualmente no se puede acceder a ninguna actividad de curso existente de BigBlueButton. Antes de volver a habilitar este complemento, asegúrese de haber leído y aceptado el <a href="{$a}" target="_blank">acuerdo de tratamiento de datos</a> con Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'Módulo de actividad BigBlueButton desactivado.';
 $string['cachedef_currentfetch'] = 'Datos para enumerar cualquier grabación recuperada recientemente.';
 $string['cachedef_recordings'] = 'Grabación de metadatos';
 $string['cachedef_serverinfo'] = 'Información de servidor remoto';
+$string['cachedef_subplugins'] = 'Caché usada por rutinas de subplugin para acelerar cuando haga falta el proceso de descubrimiento del plugin.';
 $string['cachedef_validatedurls'] = 'Caché de comprobaciones de URL validadas';
 $string['calendarstarts'] = '{$a} está programado para';
 $string['cannotperformaction'] = 'No se puede realizar la acción {$a} en esta grabación';
-$string['completionattendance'] = 'El estudiante debe asistir a la reunión durante un mínimo de:';
+$string['completionattendance'] = 'Requiere asistencia (minutos)';
 $string['completionattendance_desc'] = 'Entre y permanezca en la sala durante al menos {$a} minuto(s).';
 $string['completionattendance_event_desc'] = 'El estudiante ha entrado a la sala y permaneció en la sesión durante al menos {$a} minuto(s)';
-$string['completionattendancegroup'] = 'Requerir asistencia';
+$string['completionattendancegroup'] = 'Requerir asistencia (minutos)';
 $string['completionattendancegroup_help'] = 'Se requiere la asistencia a la reunión durante (n) minutos para completar.';
 $string['completionengagement_desc'] = 'Participar en actividades durante la reunión.';
 $string['completionengagementchats'] = 'Chats';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'Estado de actualización completa';
 $string['completionvalidatestate'] = 'Validar finalización';
 $string['completionvalidatestatetriggered'] = 'Se ha activado la finalización de la validación.';
 $string['completionview'] = 'Requerir vista';
-$string['completionview_desc'] = 'El estudiante debe unirse a una sala para completarlo.';
+$string['completionview_desc'] = 'Ver en la sala';
 $string['completionview_event_desc'] = 'Se ha unido a la sala.';
+$string['config_checksum_algorithm'] = 'Algoritmo de suma de comprobación del servidor BigBlueButton';
+$string['config_checksum_algorithm_description'] = 'SHA1 es compatible con servidores más antiguos. SHA256 y SHA512 son más seguros. SHA512 cumple con FIPS 140-2.';
 $string['config_default_messages'] = 'Mensajes por defecto';
 $string['config_default_messages_description'] = 'Establecer mensajes por defecto para las actividades';
 $string['config_disablecam_default'] = 'Desactivar la cámara web activada por defecto';
@@ -109,7 +113,7 @@ $string['config_experimental_features_description'] = 'Configuración para carac
 $string['config_extended_capabilities'] = 'Compatibilidad extendida';
 $string['config_extended_capabilities_description'] = 'Configuración para compatibilidad extendida cuando el servidor BigBlueButton lo ofrezca';
 $string['config_general'] = 'Ajustes generales';
-$string['config_general_description'] = 'Estos ajustes se aplican siempre.';
+$string['config_general_description'] = 'Para configurar BigBlueButton, usted puede o bien usar sus credenciales y servidor BigBlueButton o bien obtener credenciales mediante <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">el portal de registro Blindside Networks Registration Portal (se abre en ventana nueva)</a>.';
 $string['config_guestaccess_enabled'] = 'Acceso de invitado externo';
 $string['config_guestaccess_enabled_description'] = 'Permitir que usuarios sin cuenta en su sitio accededan a la sala.';
 $string['config_hideuserlist_default'] = 'Ocultar la lista de usuarios activada por defecto';
@@ -140,10 +144,12 @@ $string['config_poll_interval'] = 'Intervalo de la encuesta (en segundos) para a
 $string['config_poll_interval_description'] = 'El intervalo de la encuesta debe ser de al menos 2 segundos. Si es necesario, puede reducir la carga en el servidor remoto aumentando el intervalo.';
 $string['config_presentation_default'] = 'Fichero de presentación predeterminado';
 $string['config_presentation_default_description'] = 'Se puede proporcionar un fichero para su uso en todas las salas.';
-$string['config_preuploadpresentation'] = 'Presentación previa a la carga';
+$string['config_preuploadpresentation'] = 'Archivo de presentación';
 $string['config_preuploadpresentation_description'] = 'Estas configuraciones habilitan o deshabilitan opciones en la interfaz de usuario y también definen valores predeterminados para estas opciones. La función solo funciona si el servidor Moodle está accesible para BigBlueButton.';
-$string['config_preuploadpresentation_editable'] = 'Presentación previa a la carga editable';
-$string['config_preuploadpresentation_editable_description'] = 'La función de carga previa de la presentación se puede editar en la Interfaz de Usuario cuando se añade o actualiza la sala o la conferencia.';
+$string['config_preuploadpresentation_editable'] = 'Archivo de presentación en página de actividad';
+$string['config_preuploadpresentation_editable_description'] = 'Opción en ajustes de actividad para cargar archivo de presentación a mostrar en la página de la actividad.';
+$string['config_profile_picture_enabled'] = 'Mostrar imágenes del perfil';
+$string['config_profile_picture_enabled_description'] = '¿Deben mostrarse las fotos de perfil de los participantes en las sesiones de BigBlueButton?';
 $string['config_recording'] = 'Grabación';
 $string['config_recording_all_from_start_default'] = 'Grabar todo desde el principio';
 $string['config_recording_all_from_start_default_description'] = '¿Debería estar activado por defecto el ajuste "Empezar a grabar desde el principio" cuando se añade una nueva sala de BigBlueButton?';
@@ -162,6 +168,9 @@ $string['config_recording_protect_editable'] = 'El estado de las grabaciones pro
 $string['config_recording_protect_editable_description'] = 'Si está marcada, la interfaz incluye una opción para proteger/desproteger grabaciones.';
 $string['config_recording_refresh_period'] = 'Período de actualización de la grabación (en segundos)';
 $string['config_recording_refresh_period_description'] = '¿Con qué frecuencia se debe consultar el servidor BigBlueButton para actualizar la información remota para una grabación?';
+$string['config_recording_safe_formats'] = 'Formatos de grabación visibles para todos';
+$string['config_recording_safe_formats_description'] = 'Seleccione los formatos visibles para todo el mundo.
+El resto de formatos sólo los pueden ver los profesores y otros usuarios con los permisos mod/bigbluebuttonbn:viewallrecordingformats y mod/bigbluebuttonbn:managerecordings.';
 $string['config_recordingready_enabled'] = 'Enviar notificación de grabación disponible';
 $string['config_recordingready_enabled_description'] = 'Si se activa, se enviará una notificación cuando esté disponible un enlace de grabación. Esta característica requiere que el servidor BigBlueButton tenga habilitado el script post_publish_recording_ready_callback.';
 $string['config_recordings'] = 'Mostrar grabaciones';
@@ -187,15 +196,9 @@ $string['config_scheduled_description'] = 'Estas configuraciones definen algunos
 $string['config_scheduled_pre_opening'] = 'Accesible antes de la hora de apertura';
 $string['config_scheduled_pre_opening_description'] = 'El tiempo en minutos para que la sesión sea accesible antes de que sea la hora de apertura programada.';
 $string['config_server_url'] = 'URL del servidor BigBlueButton';
-$string['config_server_url_description'] = 'Las credenciales por defecto son para un  <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank"> servicio gratuito de BigBlueButton de Moodle (abre en ventana nueva)</a> proporcionado por Blindside Networks con las siguientes restricciones:
-<ol>
-<li>La duración máxima de cada sesión es de 60 minutos</li>
-<li>El número maximo de usuarios concurrentes por sesión es 25</li>
-<li>Las grabaciones expiran tras siete (7) días y no son desacargables</li>
-<li>Las cámaras web de estudiantes solamente son visibles para el moderador.</li>
-</ol>';
+$string['config_server_url_description'] = 'La URL de su servidor BigBlueButton';
 $string['config_shared_secret'] = 'Clave secreta de BigBlueButton';
-$string['config_shared_secret_description'] = 'La clave de seguridad de su servidor BigBlueButton. Esta clave por defecto es para un servidor BigBlueButton libre proporcionado por Blindside Networks.';
+$string['config_shared_secret_description'] = 'La clave de seguridad de su servidor BigBlueButton.';
 $string['config_uidelegation_enabled'] = 'La delegación de interfaz de usuario está habilitada';
 $string['config_uidelegation_enabled_description'] = 'Esta configuración habilita o deshabilita la delegación de interfaz de usuario al servidor de BigBlueButton.';
 $string['config_userlimit'] = 'Límite de usuarios';
@@ -221,9 +224,10 @@ $string['config_waitformoderator_ping_interval_description'] = '¿Cada cuánto t
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButtonBN está utilizando config.php con una variable global que ha quedado obsoleta. Convierta el archivo, ya que no será compatible con versiones futuras.';
 $string['config_warning_curl_not_installed'] = 'Esta función requiere que la extensión CURL para php  se encuentre instalada y habilitada. La configuración de estos parameteros será posible solo si esta condición se cumple.';
 $string['config_welcome_default'] = 'Mensaje de bienvenida por defecto';
-$string['config_welcome_default_description'] = 'El mensaje de bienvenida se muestra cuando los participantes entran en la sala. Si el campo está en blanco, entonces se muestra un mensaje configurado en el servidor BigBlueButton.';
+$string['config_welcome_default_description'] = 'El mensaje de bienvenida se muestra cuando los participantes entran en la sala. Si el campo se deja en blanco, se usará la cadena de lenguaje "mod_form_field_welcome_default".';
 $string['config_welcome_editable'] = 'Los profesores pueden editar el mensaje de bienvenida predeterminado';
 $string['config_welcome_editable_description'] = 'El mensaje de bienvenida puede editarse cuando se crea o se actualiza la instancia';
+$string['credentials_warning'] = 'El uso de las credenciales de servidor por defecto expirará pronto (vea la nota superior para obtener nuevas credenciales).';
 $string['dpainfonotsigned'] = 'Antes de habilitar esta extensión, debe confirmar que ha leído y aceptado el <a href="{$a}">acuerdo de procesamiento de datos de Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'Habilitar la actividad de BigBlueButton';
 $string['enablingbigbluebuttondpainfo'] = 'Para cumplir con sus obligaciones de protección de datos, antes de habilitar este plugin, usted podría necesitar asegurarse de que ha leído y aceptado el  <a href="{$a}" target="_blank">Acuerdo de Procesamiento de datos de Blindside Networks</a>. Por favor consulte con sus propios profesionales de privacidad para asesoría.';
@@ -313,6 +317,7 @@ $string['instance_type_default'] = 'Sala con grabaciones';
 $string['instance_type_recording_only'] = 'Solo grabaciones';
 $string['instance_type_room_only'] = 'Sólo sala';
 $string['instanceprofilewithoutrecordings'] = 'Este perfil de instancia no puede mostrar grabaciones';
+$string['managebbbextplugins'] = 'Gestionar plugins de extensión de BigBlueButton';
 $string['messageprovider:instance_updated'] = 'Sesión BigBlueButton actualizado';
 $string['messageprovider:recording_ready'] = 'Grabación BigBlueButton disponible';
 $string['minute'] = 'minuto';
@@ -371,7 +376,7 @@ $string['mod_form_field_voicebridge'] = 'Puente de voz [####]';
 $string['mod_form_field_voicebridge_format_error'] = 'Error de formato. Debe introducir un número entre 1 y 9999.';
 $string['mod_form_field_voicebridge_help'] = 'Número de la conferencia de voz que los participantes introducen para unirse a la conferencia de voz cuando se utiliza la marcación. Debe introducirse un número entre 1 y 9999. Si el valor es 0, el número estático de voicebridge será ignorado y un número aleatorio será generado por BigBlueButton. Un número 7 precederá a los cuatro dígitos tecleados';
 $string['mod_form_field_voicebridge_notunique_error'] = 'No es un valor único. Este número ha sido usado por otra sala o conferencia.';
-$string['mod_form_field_wait'] = 'Esperar al moderaror';
+$string['mod_form_field_wait'] = 'Esperar al moderador';
 $string['mod_form_field_wait_help'] = '¿Deben esperar los observadores hasta que un moderador entre a la sesión antes de entrar en la sala?';
 $string['mod_form_field_welcome'] = 'Mensaje de bienvenida';
 $string['mod_form_field_welcome_default'] = 'Bienvenido a <b>%%CONFNAME%%.';
@@ -414,6 +419,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'La hora a la que
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'El ID de usuario del usuario que desencadenó el evento.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Almacena metadatos sobre grabaciones.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'El ID de usuario del usuario que cambió por última vez una grabación.';
+$string['progress_createbigbluebuttonbn'] = 'Creación de la actividad BigBlueButton ({$a})';
 $string['recordings_from_deleted_activities'] = 'Grabaciones de actividades eliminadas';
 $string['recordingurlnotfound'] = 'La URL de grabación no es válida.';
 $string['removedevents'] = 'Eventos eliminados';
@@ -433,8 +439,12 @@ $string['search:activity'] = 'BigBlueButtonBN - información de actividad';
 $string['search:tags'] = 'BigBlueButtonBN - información de etiquetas';
 $string['sendnotification'] = 'Enviar notificación';
 $string['settings'] = 'Configuración de BigBlueButton';
+$string['settings_credential_warning'] = 'Las credenciales del servidor BigBlueButton expirarán pronto. Vea <a href="{$a->settingslink}" target="_blank">los ajustes generales de BigBlueButton (se abre en ventana nueva)</a>.';
+$string['settings_credential_warning_no_capability'] = 'Las credenciales del servidor BigBlueButton expirarán pronto. Por favor, contacte con el administrador de su sitio.';
 $string['started_at'] = 'Empezado';
 $string['starts_at'] = 'Empieza';
+$string['subplugintype_bbbext'] = 'Extensión de actividad BigBlueButton';
+$string['subplugintype_bbbext_plural'] = 'Extensiones de actividad BigBlueButton';
 $string['taskname:check_dismissed_recordings'] = 'Buscar grabaciones que aún no se hayan encontrado';
 $string['taskname:check_pending_recordings'] = 'Obtener grabaciones pendientes';
 $string['userlimitreached'] = 'El número máximo de usuarios permitidos en la sala se ha alcanzado';

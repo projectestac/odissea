@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'it', version '4.1'.
+ * Strings for component 'quiz_statistics', language 'it', version '4.4'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -66,6 +66,8 @@ $string['firstattemptsavg'] = 'Voto medio dei primi tentativi';
 $string['firstattemptscount'] = 'Numero di primi tentativi completati e valutati';
 $string['frequency'] = 'Frequenza';
 $string['getstatslockprogress'] = 'In attesa per elaborazione in corso. Attendere o riprovare più tardi.';
+$string['getstatslocktimeout'] = 'Timeout del lock del calcolo delle statistiche';
+$string['getstatslocktimeoutdesc'] = 'I secondi da attendere per un lock quando si tenta di eseguire il calcolo statistico di un quiz. Questa impostazione esiste principalmente per eseguire test, non modificarla a meno che non se ne conoscano le conseguenze.';
 $string['highestattempts'] = 'tentativo migliore';
 $string['highestattemptsavg'] = 'Media delle valutazioni dei tentativi migliori';
 $string['intended_weight'] = 'Peso previsto';
@@ -86,6 +88,7 @@ In questo caso la nostra equazione per ricavare il peso ottimale della domanda n
 
 If you edit a quiz and give these question(s) with negative covariance a max grade of zero then the effective question weight of these questions will be zero and the real effective question weight of other questions will be as calculated now.';
 $string['nogradedattempts'] = 'Non sono presenti tentativi del quiz, oppure i tentativi richiedono la valutazione manuale.';
+$string['nostats'] = 'Non è stato possibile completare il calcolo delle statistiche. Potrebbe essere in corso un calcolo di lunga durata. Riprovare più tardi.';
 $string['nostudentsingroup'] = 'In questo gruppo non ci sono studenti';
 $string['optiongrade'] = 'Credito parziale';
 $string['partofquestion'] = 'Parte di domanda';
@@ -105,6 +108,7 @@ $string['quizoverallstatistics'] = 'Statistiche complessive quiz';
 $string['quizstructureanalysis'] = 'Analisi struttura quiz';
 $string['random_guess_score'] = 'Indice delle risposte date a caso';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
+$string['rangeofvalues'] = 'Gamma di statistiche per queste domande';
 $string['recalculatenow'] = 'Ricalcola ora';
 $string['recalculatetask'] = 'Ricalcola statistiche delle domande';
 $string['reportsettings'] = 'Impostazioni di calcolo delle statistiche';

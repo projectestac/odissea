@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'es', version '4.1'.
+ * Strings for component 'attendance', language 'es', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -109,8 +109,7 @@ $string['backtoparticipants'] = 'Volver a la lista de participantes';
 $string['below'] = 'Inferior {$a}%';
 $string['calclose'] = 'Cerrar';
 $string['calendarevent'] = 'Crear un evento de calendario por sesión';
-$string['calendarevent_help'] = 'Si está habilitado, se creará un evento de calendario para esta sesión.
-Si está deshabilitado, se eliminará cualquier evento de calendario existente para esta sesión.';
+$string['calendarevent_help'] = 'Si se habilita, será creado un evento del calendario para esta sesión. Si se deshabilita, cualquier evento de calendario existente para esta sesión será eliminado.';
 $string['caleventcreated'] = 'Evento del calendario para la sesión creado con éxito';
 $string['caleventdeleted'] = 'Evento del calendario para la sesión eliminado con éxito';
 $string['calmonths'] = 'Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre';
@@ -284,7 +283,7 @@ $string['hidensessiondetails'] = 'Ocultar detalles de la sesión';
 $string['identifyby'] = 'Identificar estudiantes por';
 $string['import'] = 'Importar';
 $string['importfile'] = 'Importar fichero';
-$string['importfile_help'] = 'Importar fichero';
+$string['importfile_help'] = 'El archivo CSV debe contener un encabezado y campos para identificar los grupos, la hora y las fechas de sesiones a crear. <br/>La siguiente página tras la subida del archivo le mostrará ejemplos de todos los campos a los que usted puede mapear sus propios cambpos. <br/>Ejemplo :<br/>groups;sessiondate;from;to<br/>grupoA:05-10-2022;13:00;14:00<br/>grupoB;05-10-2022;14:00;15:00';
 $string['importsessions'] = 'Importar Sesiones';
 $string['importstatus'] = 'Campo de estado';
 $string['importstatus_help'] = 'Esto permite incluir un valor de estado en la importación, por ejemplo, valores como A, R o FJ';
@@ -401,7 +400,7 @@ $string['pageof'] = 'Página {$a->page} de {$a->numpages}';
 $string['participant'] = 'Participante';
 $string['password'] = 'Contraseña';
 $string['passwordgrp'] = 'Contraseña del estudiante';
-$string['passwordgrp_help'] = 'Si se establece, los estudiantes deberán ingresar esta contraseña antes de que puedan establecer su propio estado de asistencia para la sesión. Si está vacío, no se requiere contraseña.';
+$string['passwordgrp_help'] = 'Si se establece, los estudiantes deberán introducir esta contraseña antes de que puedan establecer su propio estado de asistencia para la sesión. Si está vacío, no se requiere contraseña.';
 $string['passwordheader'] = 'Use la contraseña indicada debajo para registrar su asistencia';
 $string['passwordrequired'] = 'Debes indicar la contraseña antes de poder enviar tu asistencia';
 $string['percentage'] = 'Porcentaje';
@@ -421,11 +420,11 @@ $string['preventsharediptime_help'] = 'Permitir que una dirección IP se reutili
 $string['preview'] = 'Vista previa del archivo';
 $string['previewhtml'] = 'Vista previa del formato HTML';
 $string['priorto'] = 'La fecha de la sesión es anterior a la fecha de inicio del curso ({$a}) para que las nuevas sesiones programadas antes de esta fecha se oculten (no accesibles). Puede cambiar la fecha de inicio del curso en cualquier momento (consulte la configuración del curso) para tener acceso a las sesiones anteriores. <br> <br> Por favor cambie la fecha de la sesión o simplemente haga clic en el botón "Añadir sesión" de nuevo para confirmar.';
-$string['privacy:metadata:attendancelog'] = '';
-$string['privacy:metadata:attendancesessions'] = '';
-$string['privacy:metadata:attendancewarningdone'] = '';
+$string['privacy:metadata:attendancelog'] = 'Bitácora de asistencias del usuario grabada.';
+$string['privacy:metadata:attendancesessions'] = 'Sesiones cuyas asistencias serán grabadas.';
+$string['privacy:metadata:attendancewarningdone'] = 'Bitácora de advertencias enviadas a usuarios acerca de sus registros de asistencias.';
 $string['privacy:metadata:duration'] = 'Duración de la sesión (en segundos)';
-$string['privacy:metadata:groupid'] = '';
+$string['privacy:metadata:groupid'] = 'ID del grupo asociada con la sesión.';
 $string['privacy:metadata:ipaddress'] = 'Dirección IP desde donde se marcó la asistencia.';
 $string['privacy:metadata:lasttaken'] = 'Sello de tiempo de cuando se tomó por última vez la asistencia a sesión.';
 $string['privacy:metadata:lasttakenby'] = 'ID del último usuario en tomar asistencia en esta sesión.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', version '4.1'.
+ * Strings for component 'scorm', language 'it', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -73,6 +73,7 @@ $string['browse'] = 'Anteprima';
 $string['browsed'] = 'Visitato';
 $string['browsemode'] = 'Modalità anteprima';
 $string['browserepository'] = 'Visita repository';
+$string['cachedef_elements'] = 'Elemento di cache';
 $string['calculatedweight'] = 'Peso calcolato';
 $string['calendarend'] = '{$a} chiude';
 $string['calendarstart'] = '{$a} apre';
@@ -102,7 +103,7 @@ $string['completionstatusrequireddesc'] = 'Lo studente dovrà ottenere almeno un
 $string['confirmloosetracks'] = 'ATTENZIONE: Il pacchetto sembra cambiato o modificato. Se la struttura del pacchetto è cambiata, alcuni tracciamenti degli utenti potrebbero andare persi durante il processo di aggiornamento.';
 $string['contents'] = 'Contenuti';
 $string['coursepacket'] = 'Pacchetto del corso';
-$string['coursestruct'] = 'Struttura del corso';
+$string['coursestruct'] = 'Struttura del contenuto';
 $string['crontask'] = 'Elaborazione in background: SCORM';
 $string['currentwindow'] = 'Stessa finestra';
 $string['datadir'] = 'Errore filesystem: non è possibile creare la cartella dei dati del corso';
@@ -117,12 +118,10 @@ $string['details'] = 'Dettagli tracciamento';
 $string['directories'] = 'Visualizza collegamenti';
 $string['disabled'] = 'Disabilitato';
 $string['display'] = 'Visualizzazione pacchetto';
-$string['displayactivityname'] = 'Visualizza nome dell\'attività';
-$string['displayactivityname_help'] = 'Consente di visualizzare il nome dell\'attività sopra lo SCORM player.';
 $string['displayattemptstatus'] = 'Visualizza  lo stato dei tentativi';
 $string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei tentativi nel blocco Panoramica corsi nella Dashboard e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
 $string['displayattemptstatusdesc'] = 'Imposta la visualizzazione del riepilogo dei tentativi dell\'utente nella Dashboard all\'interno del blocco Panoramica corsi e/o nella pagina di ingresso dell\'attività SCORM.';
-$string['displaycoursestructure'] = 'Visualizza la struttura del corso nella pagina di ingresso';
+$string['displaycoursestructure'] = 'Visualizza la struttura del contenuto nella pagina di ingresso';
 $string['displaycoursestructure_help'] = 'Visualizza la struttura del corso nella pagina di riepilogo SCORM.';
 $string['displaycoursestructuredesc'] = 'Imposta la visualizzazione della struttura del corso nella pagina di ingresso';
 $string['displaydesc'] = 'Imposta la visualizzazione di un pacchetto SCORM in una nuova finestra';
@@ -199,7 +198,7 @@ $string['hidebrowse_help'] = 'La modalità anteprima consente la visualizzazione
 $string['hidebrowsedesc'] = 'La modalità anteprima consente allo studente la visione dell\'attività prima di effettuare un tentativo';
 $string['hideexit'] = 'Nascondere il link (Esci dal corso)';
 $string['hidereview'] = 'Nascondere il pulsante Rivedi';
-$string['hidetoc'] = 'Visualizza nel player la struttura del corso';
+$string['hidetoc'] = 'Visualizza nel player la struttura del contenuto';
 $string['hidetoc_help'] = 'La modalità di visualizzazione della struttura del corso (TOC) nel player SCORM.';
 $string['hidetocdesc'] = 'La modalità di visualizzazione della struttura del corso (TOC) nel player SCORM.';
 $string['highestattempt'] = 'Tentativo migliore';
@@ -215,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensi
 $string['indicator:socialbreadthdef'] = 'SCORM sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività SCORM (Livelli: Nessuna partecipazione, Partecipazione da solo)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Info';
 $string['interactions'] = 'Interazioni';
 $string['invalidactivity'] = 'L\'attività SCORM è errata';
 $string['invalidhacpsession'] = 'La sessione HACP non è valida';
@@ -224,6 +222,7 @@ $string['invalidmanifestresource'] = 'ATTENZIONE: le seguenti risorse sono prese
 $string['invalidstatus'] = 'Stato non valido';
 $string['invalidurl'] = 'La URL specificata non è valida';
 $string['invalidurlhttpcheck'] = 'È stato specificato un URL non valido: Messaggio di debug: <pre> {$a->cmsg} </pre>';
+$string['largetrackupgrade'] = 'Il completamento del prossimo passaggio di aggiornamento potrà richiedere del tempo, il sito ha {$a} tracciamenti SCORM che devono essere migrati nella nuova struttura della tabella. Si prega di pazientare poiché non è possibile visualizzare una barra di avanzamento.';
 $string['last'] = 'Accesso più recente il';
 $string['lastaccess'] = 'Accesso più recente';
 $string['lastattempt'] = 'Ultimo tentativo completato';
@@ -241,6 +240,7 @@ $string['maximumattemptsdesc'] = 'Imposta il valore di default per il numero mas
 $string['maximumgradedesc'] = 'Imposta il valore di default per il punteggio massimo dell\'attività';
 $string['menubar'] = 'Visualizza la barra dei menu';
 $string['min'] = 'Punteggio minimo';
+$string['minimumscoregreater'] = 'Il punteggio minimo deve essere maggiore di 0.';
 $string['missing_attribute'] = 'Attributo mancante {$a->attr} nel tag {$a->tag}';
 $string['missing_tag'] = 'Tag mancante {$a->tag}';
 $string['missingparam'] = 'Un parametro obbligatorio è mancante o errato';
@@ -332,7 +332,7 @@ $string['privacy:metadata:attempt'] = 'Numero del tentativo.';
 $string['privacy:metadata:scoes_track:element'] = 'Nome dell\'elemento da tracciare.';
 $string['privacy:metadata:scoes_track:value'] = 'Valore dell\'elemento dato.';
 $string['privacy:metadata:scorm_aicc_session'] = 'Informazioni sulla sessione tramite AICC HACP.';
-$string['privacy:metadata:scorm_scoes_track'] = 'Dati tracciati degli SCO appartenenti all\'attività.';
+$string['privacy:metadata:scorm_attempt'] = 'Tentativi SCORM svolti dagli utenti';
 $string['privacy:metadata:timemodified'] = 'Ora dell\'ultima modifica apportata all\'elemento tracciato.';
 $string['privacy:metadata:userid'] = 'ID dell\'utente che ha avuto accesso all\'attività SCORM.';
 $string['protectpackagedownloads'] = 'Evita il download del pacchetto';

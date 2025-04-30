@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'en', version '4.1'.
+ * Strings for component 'label', language 'en', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'The participant has reached this p
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Add a new Text and media area';
 $string['label:view'] = 'View Text and media area';
+$string['labelname'] = 'Title in course index';
+$string['labelname_help'] = 'The title is only used to identify the Text and media area in the course index and for activity completion. If you leave it empty,  a title will be automatically generated using the first characters of the text.';
 $string['labeltext'] = 'Text';
 $string['modulename'] = 'Text and media area';
 $string['modulename_help'] = 'The Text and media area enables you to display text and multimedia on the course page.

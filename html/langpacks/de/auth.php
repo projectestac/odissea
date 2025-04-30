@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', version '4.1'.
+ * Strings for component 'auth', language 'de', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = 'Hilfe zur Kennwortänderung';
 $string['auth_changepasswordhelp_expl'] = 'Nutzerhilfe für vergessene {$a} Kennwörter anzeigen. Diese Hilfe wird neben oder statt der <strong>URL zur Kennwortänderung</strong> oder der Moodle internen Kennwortänderung angezeigt.';
 $string['auth_changepasswordurl'] = 'URL zur Kennwortänderung';
 $string['auth_changepasswordurl_expl'] = 'Tragen Sie hier eine URL ein, unter der ein neues Kennwort für \'{$a}\' angefordert werden kann. Wenn Sie diese Option nutzen, sollten Sie die Einstellung "Standardseite zur Kennwortänderung benutzen" auf "Nein" setzen.';
-$string['auth_changingemailaddress'] = 'Sie möchten Ihre E-Mail-Adresse von {$a->oldemail} nach {$a->newemail} ändern. Aus Sicherheitsgründen wird eine Nachricht an Ihre neue E-Mail-Adresse gesendet. Ihre E-Mail-Adresse wird erst geändert, wenn Sie die in der Nachricht enthaltene URL aufrufen und damit die Änderung bestätigen.';
+$string['auth_changingemailaddress'] = 'Sie möchten Ihre E-Mail-Adresse von {$a->oldemail} nach {$a->newemail} ändern. Aus Sicherheitsgründen wird eine Nachricht an Ihre neue E-Mail-Adresse gesendet. Ihre E-Mail-Adresse wird erst geändert, wenn Sie die in der Nachricht enthaltene URL aufrufen und damit die Änderung bestätigen. Der Bestätigungslink gilt 10 Minuten.';
 $string['auth_common_settings'] = 'Allgemeine Einstellungen';
 $string['auth_data_mapping'] = 'Datenzuordnung';
 $string['auth_fieldlock'] = 'Feld sperren';
@@ -44,6 +44,10 @@ $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administrator/innen gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicherstellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
 $string['auth_fieldmapping'] = 'Daten übernehmen ({$a})';
 $string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie gerade versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Kopieren Sie die URL noch einmal und versuchen Sie es erneut.';
+$string['auth_loginpasswordtoggle'] = 'Kennwort im Klartext anzeigen';
+$string['auth_loginpasswordtoggle_desc'] = 'Icon im Kennwortfeld hinzufügen, das Nutzer/innen beim Login erlaubt, ihr eingegebenes Kennwort im Klartext anzuzeigen.';
+$string['auth_loginrecaptcha'] = 'reCAPTCHA für die Anmeldung aktivieren';
+$string['auth_loginrecaptcha_desc'] = 'Fügen Sie ein visuelles/akustisches Bestätigungselement zur Anmeldeseite hinzu. Dadurch wird das Risiko ungerechtfertigter Anmeldeversuche verringert. Weitere Informationen finden Sie unter <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Mehrere Adressen können angegeben werden (z.B. host1.com;host2.de;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Die Authentifizierung ‘{$a}\' ist nicht konfiguriert.';
 $string['auth_outofnewemailupdateattempts'] = 'Sie haben die zulässige Zahl von Versuchen überschritten, Ihre E-Mail-Adresse zu ändern. Der Änderungsvorgang wurde abgebrochen.';

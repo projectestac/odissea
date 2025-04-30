@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', version '4.1'.
+ * Strings for component 'chat', language 'ca', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -103,7 +103,6 @@ Els xats són especialment útils quan el grup no es pot trobar presencialment. 
 $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Xats';
 $string['neverdeletemessages'] = 'No suprimeixis mai els missatges';
-$string['nextsession'] = 'Propera sessió programada';
 $string['no_complete_sessions_found'] = 'No s\'han trobat sessions completades.';
 $string['nochat'] = 'No es troba el xat';
 $string['noguests'] = 'El xat no està obert a visitants';
@@ -137,7 +136,6 @@ $string['serverip'] = 'Adreça IP del servidor';
 $string['servermax'] = 'Nombre màxim d\'usuaris';
 $string['serverport'] = 'Port del servidor';
 $string['sessions'] = 'Sessions de xat';
-$string['sessionstart'] = 'La propera sessió de xat començarà el: {$a->date}, (d\'aquí a {$a->fromnow})';
 $string['sessionstartsin'] = 'La propera sessió de xat començarà en {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tothom pot veure les sessions anteriors';

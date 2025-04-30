@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'ar', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'ar', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -75,7 +75,7 @@ $string['checkdesc:headerh3'] = 'العناوين التي تأتي بعد وس�
 $string['checkdesc:headershavetext'] = 'يحتاج العنوان إلى تواجد نص فيه ليكون مفهومًا.';
 $string['checkdesc:iisnotused'] = 'لا ينبغي استعمال عناصر "Italic" (i)، ينبغي استعمال "em" بدلاً منها.';
 $string['checkdesc:imgaltisdifferent'] = 'النص البديل للصورة ينبغي أن لا يكون هو نفسه اسم ملف الصورة.';
-$string['checkdesc:imgaltistoolong'] = 'النص البديل للصورة ينبغي أن لا يزيد عن الحد المسموح به، (125) حرف.';
+$string['checkdesc:imgaltistoolong'] = 'تأكد من أن النص البديل للصورة موجز بما يكفي لوصفها.';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'النص البديل للصورة ينبغي أن لا يكون خاليًا، وخاصة عندما تكون الصورة رابطًا يذهب إلى موضع آخر.';
 $string['checkdesc:imgaltnotplaceholder'] = 'النص البديل للصورة ينبغي أن لا يكون نص لعنصر نائب بسيط، مثل "image".';
 $string['checkdesc:imghasalt'] = 'النص البديل للصورة ينبغي أن لا يكون مفقودًا لعناصر الصور، ما لم تكن الصورة لمجرد التزيين وبلا أي معنى.';

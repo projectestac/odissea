@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ur', version '4.1'.
+ * Strings for component 'glossary', language 'ur', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -305,7 +305,6 @@ $string['totalentries'] = 'کل اندراجات';
 $string['usedynalink'] = 'لغت کے اندراجات کو خود بخود لنک کریں';
 $string['usedynalink_help'] = 'اگر کسی منتظم کی طرف سے پوری سائٹ پر لغت کے خودکار لنکنگ کو فعال کر دیا گیا ہے اور یہ ترتیب فعال ہے، تو "ایک نیا اندراج شامل کریں" فارم میں اندراج کو خود بخود لنک کرنے کا اختیار شامل ہوتا ہے جہاں کہیں بھی تصوراتی الفاظ اور جملے باقی کورس میں ظاہر ہوں۔';
 $string['visibletabs'] = 'نظر آنے والے ٹیبز';
-$string['waitingapproval'] = 'منظوری کا انتظار ہے';
 $string['warningstudentcapost'] = '(صرف اس صورت میں لاگو ہوتا ہے جب لغت بنیادی نہ ہو)';
 $string['withauthor'] = 'مصنف کے ساتھ تصورات';
 $string['withoutauthor'] = 'مصنف کے بغیر تصورات';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ro', version '4.1'.
+ * Strings for component 'forum', language 'ro', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Înscriere la toate forumurile';
 $string['allunsubscribe'] = 'Anulare subscriere la toate forumurile';
 $string['allusers'] = 'Toți utilizatorii';
 $string['alreadyfirstpost'] = 'Aceasta este deja prima postare în discuție';
+$string['announcementsettings'] = 'Setări implicite ale forumului de anunțuri';
+$string['announcementsettings_help'] = 'Aceste setări definesc acțiunile implicite ale tuturor forumurilor de anunțuri.';
 $string['anyfile'] = 'Orice fişier';
 $string['areaattachment'] = 'Atașamente';
 $string['areapost'] = 'Mesaje';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Cursanții pot fi blocați de la postare, pentru 
 $string['blockperioddisabled'] = 'Nu bloca';
 $string['blogforum'] = 'Forum standard afișat într-un format asemănător unui blog';
 $string['bynameondate'] = 'de către {$a->name}- {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Numărul de discuții de pe forum';
 $string['cachedef_forum_is_tracked'] = 'Starea de urmărire a forumului pentru utilizator';
 $string['calendardue'] = '{$a} este scadent';
 $string['cancelreply'] = 'Anulează răspunsul';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Închide notarea';
 $string['completiondetail:discussions'] = 'Începeți {$a} discuții';
 $string['completiondetail:posts'] = 'Faceți {$a} postări pe forum';
 $string['completiondetail:replies'] = 'Postează {$a} replici';
-$string['completiondiscussions'] = 'Cursantul trebuie să creeze discuții:';
+$string['completiondiscussions'] = 'Începerea discuțiilor';
 $string['completiondiscussionsdesc'] = 'Cursantul trebuie să creeze cel puțin {$a} discuții';
 $string['completiondiscussionsgroup'] = 'Necesită discuții';
 $string['completiondiscussionshelp'] = 'se solicită discuții pentru a finaliza activitatea';
-$string['completionposts'] = 'Cursantul trebuie să posteze discuții sau răspunsuri:';
+$string['completionposts'] = 'Începe discuția sau postează replici';
 $string['completionpostsdesc'] = 'Cursantul trebuie să posteze cel puțin {$a} discuții sau răspuns/ răspunsuri';
 $string['completionpostsgroup'] = 'Trebuie să existe postări';
 $string['completionpostshelp'] = 'se solicită discuții sau răspunsuri pentru a finaliza activitatea';
-$string['completionreplies'] = 'Cursanții trebuie să posteze replici:';
+$string['completionpostsinforums'] = 'Postare în forumuri';
+$string['completionreplies'] = 'Postare replici';
 $string['completionrepliesdesc'] = 'Cursantul trebuie să posteze cel puțin {$a} răspuns / răspunsuri';
 $string['completionrepliesgroup'] = 'Trebuie să existe răspunsuri';
 $string['completionreplieshelp'] = 'se solicită răspunsuri pentru a finaliza activitatea';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'A fost postat conținut';
 $string['eventcoursesearched'] = 'S-a căutat în curs';
 $string['eventdiscussioncreated'] = 'Discuție creată';
 $string['eventdiscussiondeleted'] = 'Discuție ștearsă';
+$string['eventdiscussionlockupdated'] = 'Blocarea discuției a fost actualizată';
 $string['eventdiscussionmoved'] = 'Discuția a fost mutată';
 $string['eventdiscussionpinned'] = 'Discuția a fost fixată';
 $string['eventdiscussionsubscriptioncreated'] = 'Abonamentul pentru discuții a fost creat';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Abonamentul la discuție a fost
 $string['eventdiscussionunpinned'] = 'Discuția nu a fost fixată';
 $string['eventdiscussionupdated'] = 'Discuție actualizată';
 $string['eventdiscussionviewed'] = 'Discuție vizualizată';
+$string['eventforumsubscriptionupdated'] = 'Modul de subscripție a fost actualizat';
 $string['eventpostcreated'] = 'Postare creată';
 $string['eventpostdeleted'] = 'Postare ștearsă';
 $string['eventpostupdated'] = 'Postare actualizată';
@@ -298,6 +304,7 @@ $string['forum:addinstance'] = 'Adaugă un nou forum';
 $string['forum:addnews'] = 'Adăugați anunțuri';
 $string['forum:addquestion'] = 'Adaugă întrebare';
 $string['forum:allowforcesubscribe'] = 'Permiteți abonarea forțată';
+$string['forum:canmailnow'] = 'Poate posta pe forumul Q & A fără întârziere de editare';
 $string['forum:canoverridecutoff'] = 'Postare în forumuri după data limită';
 $string['forum:canoverridediscussionlock'] = 'Răspuns la discuțiile blocate';
 $string['forum:canposttomygroups'] = 'Postați în toate grupurile la care aveți acces';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'Această postare nu are atașamente';
 $string['nodiscussions'] = 'Nici o intervenţie nu a fost publicată la acest subiect';
 $string['nodiscussionsstartedby'] = '{$a} nu a început nicio discuție';
 $string['nodiscussionsstartedbyyou'] = 'Încă nu ați început nicio discuție';
-$string['noguestpost'] = 'Ne pare rău, oaspeții nu au voie să posteze.';
+$string['noguestpost'] = 'Doar utilizatorii logați pot să posteze pe acest forum.';
+$string['noguestpost:title'] = 'Loghează-te pentru a continua';
 $string['noguestsubscribe'] = 'Ne pare rău, oaspeții nu au voie să se aboneze.';
 $string['noguesttracking'] = 'Ne pare rău, utilizatorii vizitatori nu au permisiunea de a seta opţiuni de urmărire.';
 $string['nomorepostscontaining'] = 'Nu s-au mai găsit alte intervenţii care să conţină {$a}.';
@@ -543,9 +551,6 @@ $string['postbyuser'] = '{$a->post} de către {$a->user}';
 $string['postincontext'] = 'Citeşte această intervenţie în context';
 $string['postisprivatereply'] = 'Acesta este un răspuns privat. (Îl pot vedea și profesorii și alți utilizatori cu capacitatea de a vizualiza răspunsurile private.)';
 $string['postmailinfo'] = 'Aceasta este o copie a mesajului postat în {$a}.';
-$string['postmailinfolink'] = 'Aceasta este o copie a mesajului postat în {$a->coursename}.
-
-Pentru a răspunde, dați click pe acest link: {$a->replylink}';
 $string['postmailnow'] = '<p>Această intervenţie va fi trimisă automat la toţi utilizatorii care s-au înscris la acest forum.</p>';
 $string['postmailreply'] = 'Pentru a răspunde dați click pe acest link: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

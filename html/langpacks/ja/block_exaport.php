@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'ja', version '4.1'.
+ * Strings for component 'block_exaport', language 'ja', version '4.4'.
  *
  * @package     block_exaport
  * @category    string
@@ -30,6 +30,7 @@ $string['accessoptions'] = 'アクセスオプション';
 $string['add'] = '追加';
 $string['addButton'] = '追加';
 $string['add_directory_structure'] = 'ディレクトリの構造を追加する';
+$string['add_mixed'] = '成果物を追加する';
 $string['add_this_file'] = 'このファイルを追加';
 $string['addbookmark'] = 'ブックマークを追加';
 $string['addcategory'] = 'カテゴリを追加';
@@ -43,7 +44,10 @@ $string['awaiting'] = '($a 待機)';
 $string['back'] = '戻る';
 $string['back_to_desp'] = '言語ポートフォリオに戻る';
 $string['backtocourse'] = 'コースに戻る';
+$string['badges_help'] = 'あなたに付与されたバッジ<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>取得済バッジを確認する</a>';
 $string['badsessionkey'] = 'セッションキーに問題があります';
+$string['block_exaport_allowcustomlayout_body'] = 'ビューの所有者に対して、カスタムビューレイアウト設定（下記オプション）の使用を許可する';
+$string['block_exaport_allowcustomlayout_head'] = 'ビュー所有者向けのビューレイアウトカスタムオプションを有効にする';
 $string['block_exaport_app_alloweditdelete_body'] = 'exabisコンピテンシーとdakoraの組み合わせの場合のみ有効';
 $string['block_exaport_app_alloweditdelete_head'] = '教師のレビュー後、学生は各アイテムを編集・削除できます。';
 $string['block_exaport_app_externaleportfolio_body'] = 'アプリ用';
@@ -64,6 +68,10 @@ $string['block_exaport_teachercanseeartifactsofstudents_body'] = '教師にこ�
 <br />生徒はこのアクセスを無効にすることはできません。他のユーザへのアクセスは、これまでと同様に与えることができます。';
 $string['block_exaport_teachercanseeartifactsofstudents_configurationlink'] = '必須ユーザプロファイルフィールドの追加';
 $string['block_exaport_teachercanseeartifactsofstudents_head'] = '教師は自分の生徒のすべての成果物を見ることができる';
+$string['block_exaport_used_layout'] = '使用されているレイアウト';
+$string['block_exaport_used_layout_body'] = '見た目に問題がある場合はレイアウトを変更してください。現在は、アーティファクトのリストのみに使用されています。';
+$string['block_exaport_used_layout_clean_old'] = 'タイル(v4.6.7でサポート終了)';
+$string['block_exaport_used_layout_moodle_bootstrap'] = 'カード';
 $string['block_exaport_userquota'] = 'ユーザごとのExabis eポートフォリオへの格納最大値';
 $string['block_exaport_userquota_body'] = 'ユーザが各自のExabis eポートフォリオに格納できる最大バイト値。<br>サイト全体の値: {$a->bytes}<a href="{$a->settingsurl}">設定はこちら</a>';
 $string['blockcontent'] = 'ブロックコンテンツ';
@@ -134,12 +142,19 @@ $string['couldntupdatecategory'] = 'カテゴリを更新できませんでし�
 $string['couldntupdatedesc'] = '説明を更新できませんでした!';
 $string['course'] = 'コース';
 $string['create_as_note'] = 'アーティファクトとして作成';
+$string['create_view_content_help_text'] = '<ul>
+                <li><strong>レイアウトを設計する：</strong>コンテンツブロックをドラッグアンドドロップして設置し、あなたのストーリーを伝えましょう。列("レイアウト"セクションで設定可能)を設定してポートフォリオを設計しましょう。</li>
+                <li><strong>わかりやすく整理する：</strong> ヘッダー、リンク、ノートを使用して効果的な構成にしましょう。</li>
+                <li><strong>スタイルをカスタマイズする：</strong> 利用可能なオプションからフォントや色を選択して、あなたらしさを加えましょう。</li>
+            </ul>
+            <strong>忘れないで： eポートフォリオは、あなた自身とあなたのもつスキルを伝えるものです。わかりやすく、魅力的なものにしましょう！</strong>';
 $string['createepxexport'] = 'EPXファイルを作成してください。';
 $string['createexport'] = 'SCORMファイルを作成してください。';
 $string['createexport_directory'] = 'ディレクトリの階層を作成する';
 $string['createpage'] = 'ページをつくるために下のタブからコンテンツブロックをドラッグ＆ドロップしてください。';
 $string['current_category'] = '現在のカテゴリ';
 $string['cvinformation'] = '履歴書情報';
+$string['cvinformation_help'] = 'Exabis e-Portfolioに格納されている履歴書データ(学歴、職歴etc...)<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>履歴書データを確認する</a>';
 $string['date'] = '日付';
 $string['delete'] = '削除';
 $string['delete_all_shareall'] = '全員への共有をすべて削除しますか?';
@@ -217,6 +232,12 @@ $string['explaining'] = 'ポートフォリオはWebのアドレスやファイ�
 $string['explainingall'] = 'ポートフォリオ内のすべてのアイテム';
 $string['explainingfile'] = 'ファイル。これらのファイルは認証済みコースメンバーと共有と共有されます。';
 $string['explaininglink'] = 'リンク。これらのリンクは認証済みコースメンバーと共有と共有されます。';
+$string['explainingmoredata'] = '<strong>ここは学習の証を集約するためのスペースです。</strong>
+            <ul>
+                <li><strong>最高の作品を追加する：</strong> ファイル、ウェブリンク、プロジェクト、プレゼンテーションおよびその説明をアップロードします。</li>
+                <li><strong>経験を振り返る：</strong> 各作品について、何を学んだか、乗り越えた課題、達成したことを説明します。</li>
+            </ul>
+            <strong>各項目はあなたのスキルや知識をアピールするストーリーだと考えてください。</strong>';
 $string['explainingnote'] = 'ノート。これらのノートは認証済みコースメンバーと共有と共有されます。';
 $string['explainingshare'] = '参加者にリンクを先の表示を許可するには、それらの名前をクリックし、変更を保存をクリックしてください。一人以上の参加者を選択することができます。';
 $string['explainingshared'] = 'これらの参加者は、すでに外部リンクやファイルやノートを共有しています。';
@@ -247,6 +268,7 @@ $string['go'] = 'Go!';
 $string['gradeitem'] = '採点';
 $string['grouptitle'] = 'グループタイトル';
 $string['headertext'] = 'ヘッダーテキスト';
+$string['headertext_help'] = 'ヘッダーラインを追加';
 $string['height'] = '高さ';
 $string['hidesummary'] = '(概要を隠す)';
 $string['i_shared'] = '私はあなたとeポートフォリオのビューを共有しました。';
@@ -274,7 +296,17 @@ $string['invalidinstance'] = '無効なインスタンスです。';
 $string['item'] = 'アイテム';
 $string['itemgrading'] = '採点';
 $string['items'] = 'アイテム';
+$string['items_help'] = 'あなたの成果物<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>成果物を確認する</a>';
 $string['lastname'] = '姓';
+$string['layout_settings'] = 'レイアウト設定';
+$string['layout_settings_border_width'] = '枠線の幅';
+$string['layout_settings_custom_css'] = 'カスタムCSS';
+$string['layout_settings_custom_css_description'] = 'ここでは独自のCSSを使用できます。';
+$string['layout_settings_description'] = 'ここでは、ビューのレイアウトオプションを変更したり、独自のCSSを使用して、お好みのビューにすることができます。';
+$string['layout_settings_font_size'] = 'フォントの大きさ';
+$string['layout_settings_font_weight'] = '太字';
+$string['layout_settings_view_content'] = 'ビューのコンテンツブロック';
+$string['layout_settings_view_headers'] = 'ビューのヘッダーブロック';
 $string['link'] = 'リンク';
 $string['linkedfilenotfound'] = '$a->url ($a->title) にファイル $a->filename が見つかりません。ファイルはインポートされませんでした。';
 $string['list'] = 'リスト';
@@ -290,10 +322,12 @@ $string['mandatoryfields'] = 'フィールド名、カテゴリと説明は必�
 $string['mandatoryfieldsforcat'] = 'フィールド名は必須入力です。入力してください。';
 $string['media'] = 'メディア';
 $string['media_allowed_notes'] = '以下のサイトからのURLが利用可能です。';
+$string['media_help'] = 'YoutubeやVimeoなどのソースを利用できるメディアデータ';
 $string['mediacontent'] = 'URLもしくは埋め込みコード *';
 $string['membercount'] = '会員数';
 $string['messageprovider:sharing'] = '通知を共有する';
 $string['moodleimport'] = 'Moodleの課題からインポート';
+$string['moreinfolink'] = 'もっと見る';
 $string['movebottom'] = '最後に移動';
 $string['movetop'] = '最初に移動';
 $string['myfilearea'] = '私のファイル領域';
@@ -354,6 +388,7 @@ $string['pdf_settings_showuserpicture'] = 'ユーザ写真';
 $string['pdf_settings_uploadfont'] = '自分のフォントをアップロードする';
 $string['personal'] = '情報';
 $string['personalinformation'] = '個人情報';
+$string['personalinformation_help'] = '名前やメールアドレスなどの個人情報<br><a href=\'{$a}\' target=\'_blank\' class=\'external-link\'>プロファイルを確認する</a>';
 $string['pluginname'] = 'Exabis eポートフォリオ';
 $string['privacy:metadata:block_exaportcate'] = 'ユーザカテゴリ';
 $string['privacy:metadata:block_exaportcate:courseid'] = 'コースID';
@@ -536,11 +571,15 @@ $string['selected_competencies'] = '達成されたコンピテンシー';
 $string['selectitems'] = 'アイテムを選択してください。';
 $string['settings_allow_loginas_head'] = '別のユーザとしてログインすることを許可する';
 $string['settings_create_desp_categories_head'] = 'Despカテゴリを作成します。';
+$string['settings_disable_externaccess_head'] = 'ビューの共有オプション「外部アクセス」を無効にする';
 $string['settings_disable_external_comments_head'] = '外部ビューでコメントの共有を無効にする。';
 $string['settings_disable_shareall_body'] = 'グローバル共有を削除するためには<a href="{$a}">ここ</a>,をクリックしてください。';
 $string['settings_disable_shareall_head'] = 'すべてのユーザとの共有を無効にする。';
+$string['settings_disable_shareemails_head'] = 'ビューの共有オプション「メールで共有」を無効にする';
 $string['settings_interaktion_exacomp_body'] = 'exabis コンピテンシーブロックとの相互利用※インストールされている場合';
 $string['settings_interaktion_exacomp_head'] = 'exabis eポートフォリオ － exabis コンピテンシー相互利用';
+$string['settings_layout_settings_description'] = 'ここでは、ビューのレイアウトオプションを変更したり、独自のCSSを使用して、お好みのビューにすることができます。<br>これらのビューは<strong>すべてのビュー</strong>のデフォルト設定として使用されます。';
+$string['settings_layout_settings_heading'] = 'レイアウト設定';
 $string['share'] = '共有する';
 $string['share_to_other_users'] = 'マイコース内ではない他のユーザと共有します。';
 $string['shareallexceptthose'] = '以下のユーザを除く<span class=\'block_eportfolio_bold\'>すべてのユーザ</span> (ここにリストされていないものも含む) のアクセス';
@@ -595,6 +634,8 @@ $string['url'] = 'URL';
 $string['urlnotempty'] = 'URLを入力する必要があります。';
 $string['userdefinedsort'] = '独自の検索を定義してください。';
 $string['view'] = 'ビュー';
+$string['view_preview_help'] = 'ビューをプレビューする';
+$string['view_preview_help_title'] = 'プレビュー';
 $string['view_saved'] = 'ビューを保存する';
 $string['view_sharing'] = '共有中';
 $string['view_sharing_noaccess'] = 'アクセスがありません';
@@ -606,6 +647,7 @@ $string['view_specialitem_media'] = 'メディア';
 $string['view_specialitem_personal'] = '個人情報';
 $string['view_specialitem_text'] = 'テキスト';
 $string['view_specialitem_text_defaulttext'] = 'ここにテキストを入力してください。';
+$string['view_specialitem_text_help'] = 'テキストを必要に応じて追加';
 $string['view_specialitems'] = '特別アイテム';
 $string['viewand'] = 'と';
 $string['viewcategories'] = 'カテゴリを管理';
@@ -666,6 +708,35 @@ $string['what_is_embed_code_content'] = '<p>埋め込みコードは、YouTube�
                 <li>このコードをポートフォリオのテキストエリア欄に貼り付けてください</li>
             </ol>';
 $string['what_is_embed_code_title'] = '埋め込みコードとは？';
+$string['whyEportfolio'] = 'eポートフォリオの重要性';
+$string['whyEportfolio_description'] = '<h4>あなたの努力を無駄にしないで！デジタルポートフォリオを作成しよう</h4>
+                <br>
+                <p>課題、プレゼンテーション、プロジェクトに費やした努力。提出した後、それらのが引き出しの中に埋もれてしまっていると感じたことはありませんか？</p>
+                <p>しかし、その成果物は <strong>あなたのスキルや知識を証明する重要な資産です。</strong>それをうまく活用すれば、就職活動やクライアントへのアピールに役立ちます</p>
+                <p><strong>デジタルポートフォリオを作成することで</strong> これまでの成果物をまとめて一元管理し、自分の強みを簡単に紹介できるようになります。あなたが思うより簡単に始められます！</p>
+                <br>
+                <h4>ePortfolioとは？</h4>
+                <br>
+                <p><strong>ePortfolio</strong> (electronic portfolio)とは<strong>スキルや経験</strong> をまとめた<strong>デジタルの作品集です。</strong>.
+                    履歴書では学歴や職歴に焦点をあてている一方、ePortfolioは<strong>具体的な成果物</strong>を通じて、あなたの能力をより深く理解してもらうためのツールです。
+                    自分が<strong>どんなスキルを持っていてどんな仕事ができるか</strong>を実際の成果物を通じて見せられるため<strong>あなたの強み</strong>をもっと効果的にアピールできます。
+                </p>
+                <p><strong>応募する職種や役割に応じて見せる内容を変えなければならない</strong>
+                    場合もありますが
+                    <strong>Exabis ePortfolio</strong>を使用すれば特定の職種や機会に合わせて
+<strong>複数のビューを作成する</strong>ことが可能です。
+                </p>
+                <br>
+                <h4>ePortfolioの作り方</h4>
+                <br>
+                <ol>
+                    <li><strong>成果物を集める</strong>: これまでに取り組んだプロジェクト、プレゼンテーション、課題を振り返り、必要な資料を整理します。</li>
+                    <li><strong>優れた作品を選ぶ</strong>: 自身のスキルを最もよく示しているものや、高く評価された成果物を選び出します。</li>
+                    <li><strong>説明を加える</strong>: 各成果物が示しているスキルや能力について簡潔にまとめた説明文を添え、背景や意図を明確にします。</li>
+                    <li><strong>作成と改善を繰り返す</strong>: 最初はシンプルに作成して構いません。成長に合わせて内容を見直し、より洗練されたポートフォリオに仕上げていきましょう。</li>
+                </ol>
+                <p><strong>Exabis ePortfolio</strong>はこれらのプロセスをサポートし、効率的にeポートフォリオを作成するお手伝いをします。
+あなたの努力を最大限に活かし、効果的にアピールできるポートフォリオを作成してみませんか？</p>';
 $string['width'] = '幅';
 $string['wrongfileid'] = 'ファイルidが正しくありません。';
 $string['wrongfilepostid'] = 'ファイルidが正しくありません。';

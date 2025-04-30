@@ -30,12 +30,15 @@ require_once($CFG->dirroot . '/course/lib.php');
  * @copyright  2017 Andrés Melo <andres.torres@blackboard.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class markerallocation_test extends \advanced_testcase {
+final class markerallocation_test extends \advanced_testcase {
+
+    /** @var \stdClass course record. */
+    private $course;
 
     /**
      * Create all the needed elements to test the difference between both functions.
      */
-    public function test_markerusers() {
+    public function test_markerusers(): void {
         $this->resetAfterTest();
         global $DB;
 

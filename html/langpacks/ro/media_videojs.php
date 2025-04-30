@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_videojs', language 'ro', version '4.1'.
+ * Strings for component 'media_videojs', language 'ro', version '4.4'.
  *
  * @package     media_videojs
  * @category    string
@@ -30,8 +30,6 @@ $string['audioextensions'] = 'Extensii de fișiere audio';
 $string['configaudiocssclass'] = 'O clasă CSS care va fi adăugată la elementul &lt;audio&gt; .';
 $string['configaudioextensions'] = 'O listă de extensii de fișiere audio acceptate, separate prin virgulă. VideoJS va încerca să folosească playerul video nativ al browserului atunci când este disponibil sau funcționalitatea nativă VideoJS.';
 $string['configlimitsize'] = 'Dacă este activat, iar lățimea și înălțimea nu sunt specificate, videoclipul se va afișa cu lățimea și înălțimea implicite. Altfel se va întinde la lățimea maximă posibilă.';
-$string['configrtmp'] = 'Dacă este activată, legăturile care încep cu rtmp: // vor fi tratate de plugin, indiferent dacă extensia este activată în setarea Extensii de fișiere video (extensii video). Flash backback trebuie să fie activat pentru ca RTMP să funcționeze.';
-$string['configuseflash'] = 'Utilizați Flash player dacă formatul video nu este acceptat în mod nativ de browser și / sau în mod nativ de playerul VideoJS. Dacă este activat, VideoJS va fi angajat pentru orice extensie de fișier din lista de mai sus fără verificarea browserului. Vă rugăm să rețineți că Flash nu este disponibil în browserele mobile și este descurajat în multe computere desktop.';
 $string['configvideocssclass'] = 'O clasă CSS care va fi adăugată la & lt; video & gt; element. De exemplu, clasa CSS „vjs-big-play-centered” va plasa butonul de redare în mijloc. Pentru detalii, inclusiv modul de setare a unui skin personalizat, consultați docs.videojs.com.';
 $string['configvideoextensions'] = 'O listă separată prin virgulă de extensii de fișiere video acceptate. VideoJS va încerca să folosească playerul video nativ al browserului atunci când este disponibil.';
 $string['configyoutube'] = 'Utilizați VideoJS pentru a reda videoclipuri YouTube. Rețineți că listele de redare YouTube nu sunt încă acceptate de VideoJS.';
@@ -39,8 +37,6 @@ $string['limitsize'] = 'Limita de dimensiune';
 $string['pluginname'] = 'Player VideoJS';
 $string['pluginname_help'] = 'Un wrapper JavaScript pentru fișierele video redate de playerul video nativ al browserului. (Suportul pentru format depinde de browser.)';
 $string['privacy:metadata'] = 'Pluginul media VideoJS player nu stochează date personale.';
-$string['rtmp'] = 'Fluxuri RTMP';
-$string['useflash'] = 'Folosiți rezerva Flash';
 $string['videocssclass'] = 'Clasa CSS pentru video';
 $string['videoextensions'] = 'Extensii de fișiere video';
 $string['youtube'] = 'Videoclipuri YouTube';

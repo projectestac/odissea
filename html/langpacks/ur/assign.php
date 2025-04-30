@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ur', version '4.1'.
+ * Strings for component 'assign', language 'ur', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -41,10 +41,8 @@ $string['addsubmission_help'] = 'آپ نے ابھی تک جمع نہیں کرا�
 $string['allocatedmarker'] = 'مختص مارکر';
 $string['allocatedmarker_help'] = 'مارکر اس جمع کرانے کے لیے مختص کیا گیا ہے۔';
 $string['allowsubmissions'] = 'صارف کو اس اسائنمنٹ پر گذارشات جاری رکھنے کی اجازت دیں۔';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'تفویض کی تفصیلات اور جمع کرانے کا فارم <strong>{$a}</strong> سے دستیاب ہوگا';
 $string['allowsubmissionsfromdate'] = 'سے گذارشات کی اجازت دیں';
 $string['allowsubmissionsfromdate_help'] = 'فعال ہونے پر، طلباء اس تاریخ سے پہلے جمع نہیں کر سکیں گے۔ غیر فعال ہونے پر، طلباء فوراً جمع کرانا شروع کر سکیں گے۔';
-$string['allowsubmissionsfromdatesummary'] = 'یہ اسائنمنٹ <strong>{$a}</strong> کی جانب سے گذارشات قبول کرے گی';
 $string['allowsubmissionsshort'] = 'جمع کرانے کی تبدیلیوں کی اجازت دیں';
 $string['alwaysshowdescription'] = 'ہمیشہ وضاحت دکھائیں';
 $string['alwaysshowdescription_help'] = 'غیر فعال ہونے پر، اوپر دی گئی تفویض کی تفصیل صرف "جمع کرانے کی اجازت دیں" کی تاریخ پر طلباء کے لیے نظر آئے گی۔';
@@ -405,8 +403,6 @@ $string['quickgrading_help'] = 'فوری درجہ بندی آپ کو براہ ر
 $string['quickgradingchangessaved'] = 'گریڈ کی تبدیلیاں محفوظ ہو گئیں';
 $string['quickgradingresult'] = 'فوری درجہ بندی';
 $string['recordid'] = 'شناخت کنندہ';
-$string['relativedatessubmissionduedateafter'] = 'کورس شروع ہونے کے بعد {$a->datediffstr}';
-$string['relativedatessubmissionduedatebefore'] = 'کورس شروع ہونے سے پہلے {$a->datediffstr}';
 $string['relativedatessubmissiontimeleft'] = 'ہر طالب علم کے لیے شمار کیا جاتا ہے';
 $string['removeallgroupoverrides'] = 'تمام گروپ اوور رائیڈز کو حذف کریں';
 $string['removealluseroverrides'] = 'تمام صارف اوور رائیڈز کو حذف کریں';

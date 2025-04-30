@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'el', version '4.1'.
+ * Strings for component 'format_tiles', language 'el', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -179,16 +179,6 @@ $string['icontitle-mobile-phone'] = 'Κινητό τηλέφωνο';
 $string['icontitle-mortar-board'] = 'Καπέλο αποφοίτησης';
 $string['icontitle-music'] = 'Μουσική';
 $string['icontitle-newspaper-o'] = 'Εφημερίδα';
-$string['icontitle-number_1'] = 'Αριθμός 1';
-$string['icontitle-number_10'] = 'Αριθμός 10';
-$string['icontitle-number_2'] = 'Αριθμός 2';
-$string['icontitle-number_3'] = 'Αριθμός 3';
-$string['icontitle-number_4'] = 'Αριθμός 4';
-$string['icontitle-number_5'] = 'Αριθμός 5';
-$string['icontitle-number_6'] = 'Αριθμός 6';
-$string['icontitle-number_7'] = 'Αριθμός 7';
-$string['icontitle-number_8'] = 'Αριθμός 8';
-$string['icontitle-number_9'] = 'Αριθμός 9';
 $string['icontitle-pencil-square-o'] = 'Μολύβι σε τετράγωνο';
 $string['icontitle-person'] = 'Άτομο';
 $string['icontitle-pie-chart'] = 'Γράφημα πίτας';
@@ -222,9 +212,7 @@ $string['imagecannotbeused'] = 'Η εικόνα δεν μπορεί να χρη�
 $string['imagedeletedfrom'] = 'Η εικόνα διαγράφηκε από τον/την «{$a}»';
 $string['imagesavedfor'] = 'Η εικόνα αποθηκεύτηκε για πλακίδιο «{$a}»';
 $string['imagesize'] = 'Μέγεθος εικόνας';
-$string['items'] = 'στοιχεία';
 $string['jsactivate'] = 'Πλοήγηση με κινούμενα σχέδια';
-$string['jsdeactivate'] = 'Πλοήγηση χωρίς κινούμενα σχέδια';
 $string['jsdeactivated'] = 'Έχετε απενεργοποιήσει την πλοήγηση με κινούμενα σχέδια στο λογαριασμό σας';
 $string['jsnavsettings'] = 'Περιήγηση JavaScript';
 $string['jsreactivated'] = 'Έχετε ενεργοποιήσει την πλοήγηση με κινούμενα σχέδια στο λογαριασμό σας. Αυτό μπορεί να είναι πιο γρήγορο στη χρήση. Απαιτεί ενεργοποιημένη τη JavaScript.';

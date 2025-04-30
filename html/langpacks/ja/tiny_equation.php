@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'ja', version '4.1'.
+ * Strings for component 'tiny_equation', language 'ja', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'ギリシャ文字タブに一覧表示され�
 $string['librarygroup4'] = '高度';
 $string['librarygroup4_desc'] = '拡張タブに一覧表示されるTeXコマンドです。';
 $string['modaltitle'] = '数式エディタ';
-$string['pluginname'] = 'Tiny数式エディタ';
+$string['pluginname'] = '数式エディタ';
 $string['preview'] = '数式プレビュー';
 $string['privacy:metadata'] = 'TinyMCE数式エディタプラグインはいかなる個人データも保存しません。';
 $string['saveequation'] = '数式を保存する';

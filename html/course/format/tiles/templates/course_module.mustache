@@ -136,7 +136,8 @@
         {{/is_label}}
 
         {{#is_label}}
-            <div class="cm-inner">
+            {{! In Moodle 4.5 this could cover subsections too as they are label like}}
+            <div class="cm-inner{{#issubsection}} activity-item p-3{{/issubsection}}">
                 {{#hascompletion}}
                     {{#completionenabled}}
                         {{>format_tiles/completion_button_subtile}}
@@ -148,7 +149,7 @@
 
         {{#dimmed}}
             {{#clickable}}
-                <a href="{{url}}" class="dim-overlay cm-link"{{#modalType}} data-action="launch-tiles-cm-modal"{{/modalType}}
+                <a id="cm-link-{{id}}" href="{{url}}" class="dim-overlay cm-link"{{#modalType}} data-action="launch-tiles-cm-modal"{{/modalType}}
                     {{#onclick}} onclick="{{{onclick}}}"{{/onclick}}>
                 </a>
             {{/clickable}}

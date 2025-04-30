@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_sketch', language 'ro', version '4.1'.
+ * Strings for component 'tiny_sketch', language 'ro', version '4.4'.
  *
  * @package     tiny_sketch
  * @category    string

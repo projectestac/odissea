@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ar', version '4.1'.
+ * Strings for component 'hotpot', language 'ar', version '4.4'.
  *
  * @package     hotpot
  * @category    string
@@ -56,7 +56,7 @@ $string['d_index'] = 'مؤشر التمييز';
 $string['entry_title'] = 'اسم الوحدة كعنوان';
 $string['entrycm'] = 'النشاط السابق';
 $string['entrycmcourse'] = 'النشاط السابق في هذا المساق';
-$string['entrycmsection'] = 'النشاط السابق في هذا المقطع من المساق';
+$string['entrycmsection'] = 'النشاط السابق في هذا القسم من المقرر الدراسي';
 $string['entrygrade'] = 'علامة النشاط السابق';
 $string['entryoptions_help'] = 'خانات التأشير هذه تحدد عرض أو إخفاء العناصر في صفحة إدخال HotPot.
 
@@ -113,7 +113,7 @@ $string['exit_hotpotgrade_highest_zero'] = 'لم تحرز أعلى من {$a} ل�
 $string['exit_next_text'] = 'حاول النشاط التالي';
 $string['exitcm'] = 'النشاط التالي';
 $string['exitcmcourse'] = 'النشاط التالي في هذا المساق';
-$string['exitcmsection'] = 'النشاط التالي في هذا المقطع من المساق';
+$string['exitcmsection'] = 'النشاط التالي في هذا القسم من المقرر الدراسي';
 $string['exitgrade'] = 'علامة النشاط التالي';
 $string['exitpage_help'] = 'هل ينبغي عرض صفحة خروج بعد إكمال اختبار HotPot؟
 

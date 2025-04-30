@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'uk', version '4.1'.
+ * Strings for component 'form', language 'uk', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -50,7 +50,6 @@ $string['filesofthesetypes'] = 'Прийнятні типи файлів:';
 $string['filetypesany'] = 'Усі типи файлів';
 $string['filetypesnotall'] = 'Тут не можна вибирати «Усі типи файлів».';
 $string['filetypesnotallowed'] = 'Ці типи файлів тут заборонені: {$a}';
-$string['filetypesnotwhitelisted'] = 'Ці типи файлів тут заборонені: {$a}';
 $string['filetypesothers'] = 'Інші файли';
 $string['filetypesunknown'] = 'Невідомі типи файлів: {$a}';
 $string['general'] = 'Загальне';

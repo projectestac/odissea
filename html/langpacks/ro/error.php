@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ro', version '4.1'.
+ * Strings for component 'error', language 'ro', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -116,7 +116,7 @@ $string['cannotinsertrecord'] = 'Nu s-a putut insera un nou ID de înregistrare 
 $string['cannotmailconfirm'] = 'Eroare la trimiterea e-mailului de confirmare a modificării parolei';
 $string['cannotmanualctrack'] = 'Activitatea nu oferă urmărirea manuală a finalizării';
 $string['cannotmapfield'] = 'S-a detectat un conflict de mapare - două câmpuri mapează același element de notă {$a}';
-$string['cannotmarktopic'] = 'Nu am putut marca acel subiect pentru acest curs';
+$string['cannotmarktopic'] = 'Secțiunea cursului nu a putut fi marcată';
 $string['cannotmigratedatacomments'] = 'Nu se pot migra comentariile modulului de date';
 $string['cannotmodulename'] = 'Nu se poate obține numele modulului în navigarea de construire';
 $string['cannotmoduletype'] = 'Nu se poate obține tipul de modul în navigarea de construire';
@@ -234,6 +234,10 @@ $string['dmlparseexception'] = 'Eroare la analizarea interogării SQL';
 $string['dmlreadexception'] = 'Eroare la citirea din baza de date';
 $string['dmltransactionexception'] = 'Eroare tranzacție bază de date';
 $string['dmlwriteexception'] = 'Eroare la scrierea în baza de date';
+$string['dndmaxbytes'] = 'Fișierul este prea mare. Permisiunea maximă permisă este {$a->size}.';
+$string['dndread'] = 'Eroare la citirea fișierului';
+$string['dndunkownfile'] = 'Acest tip de fișier nu este acceptat.';
+$string['dndupload'] = 'A apărut o eroare necunoscută la încărcarea fișierului.';
 $string['downgradedcore'] = 'EROARE!!! Codul pe care îl utilizați este mai vechi decât versiunea care a creat aceste baze de date!';
 $string['downloadedfilecheckfailed'] = 'Verificarea fișierului descărcat a eșuat';
 $string['duplicatefieldname'] = 'A fost detectat numele de câmp duplicat „{$a}”';
@@ -242,6 +246,7 @@ $string['duplicateparaminsql'] = 'EROARE: nume parametru duplicat în interogare
 $string['duplicaterolename'] = 'Există deja un rol cu acest nume!';
 $string['duplicateroleshortname'] = 'Există deja un rol cu acest nume scurt!';
 $string['duplicateusername'] = 'Numele de utilizator duplicat - înregistrarea este omisă';
+$string['editedpagenotfound'] = 'Sistemul nu a putut determina pagina pe care vă aflați. Te rugăm să actualizezi pagina și să încercidin nou.';
 $string['emailfail'] = 'Trimiterea prin e-mail a eșuat';
 $string['encryption_decryptfailed'] = 'Decriptarea a eșuat';
 $string['encryption_encryptfailed'] = 'Criptarea a eșuat';
@@ -378,7 +383,7 @@ $string['invalidrole'] = 'Rol invalid';
 $string['invalidroleid'] = 'ID rol invalid';
 $string['invalidscaleid'] = 'Cod scală incorect';
 $string['invalidsection'] = 'Înregistrarea modulului de curs conține o secțiune invalidă';
-$string['invalidsesskey'] = 'Cel mai probabil sesiunea dvs. a expirat. Vă rog Loghați-vă din nou.';
+$string['invalidsesskey'] = 'Cel mai probabil, sesiunea dumneavoastră a expirat. Verificați dacă sunteți autentificat sau reveniți la ecranul anterior și reîncărcați pagina.';
 $string['invalidshortname'] = 'Acesta este un nume de curs scurt invalid';
 $string['invalidsourcefield'] = 'Câmpul sursă al fișierului proiect nu este valid';
 $string['invalidstatedetected'] = 'Ceva nu a funcționat corect: {$a}. Acest lucru nu ar trebui să se întâmple în mod normal.';
@@ -427,6 +432,10 @@ $string['moduledisable'] = 'Acest modul ({$a}) a fost dezactivat pentru acest cu
 $string['moduledoesnotexist'] = 'Acest modul nu există';
 $string['moduleinstancedoesnotexist'] = 'Instanța acestui modul nu există';
 $string['modulemissingcode'] = 'Modulului {$a} îi lipsește codul necesar, pentru a îndeplini această funcție';
+$string['moodlenet:invalidshareformat'] = 'Formatul distribuirii către MoodleNet este incorect';
+$string['moodlenet:invalidsharestatus'] = 'Status incorect de partajare MoodleNet';
+$string['moodlenet:invalidsharetype'] = 'Tipul de distribuire către MoodleNet nu este valid';
+$string['moodlenet:usernotconfigured'] = 'Nu ai permisiunea de a partaja conținut în MoodleNet, sau contul tău este incorect configurat.';
 $string['movecatcontentstoroot'] = 'Nu este permisă mutarea conținutului categoriei în rădăcină. Trebuie să mutați conținutul într-o categorie existentă!';
 $string['movecatcontentstoselected'] = 'O parte din conținutul categoriei nu poate fi mutat în categoria selectată.';
 $string['movecategorynotpossible'] = 'Nu puteți muta categoria "{$a}" în categoria selectată.';
@@ -498,8 +507,10 @@ $string['opensslsignerror'] = 'OpenSSL nu poate să semneze datele';
 $string['orderidnotfound'] = 'ID-ul comenzii {$a} nu a fost găsit';
 $string['pagenotexist'] = 'A apărut o eroare neobișnuită (s-a încercat accesarea unei pagini care nu există)';
 $string['pagenotexisttitle'] = 'Eroare 404: Fișierul nu a fost găsit';
+$string['passwordexceeded'] = 'Parola nu poate să aibă mai mult de {$a} caractere.';
 $string['pathdoesnotstartslash'] = 'Nu sunt furnizate argumente valabile, calea nu începe cu slash!';
 $string['pleasereport'] = 'Dacă aveți timp, vă rugăm să ne anunțați ce ați încercat să faceți, atunci când a apărut eroarea:';
+$string['pluginnotexist'] = 'Plugin-ul {$a} nu există';
 $string['pluginrequirementsnotmet'] = 'Plugin-ul „{$a->pluginname}” ({$a->pluginversion}) nu a putut fi instalat. Necesită o versiune mai nouă a Moodle (în prezent utilizați {$a->currentmoodle} și aveți nevoie de {$a->requiremoodle}).Pluginul „{$a->pluginname}” ({$a->pluginversion}) nu a putut fi instalat. Este necesară o versiune mai nouă a Moodle (în prezent utilizați {$a->currentmoodle}; deci, aveți nevoie de {$a->requiremoodle}).';
 $string['pluginunsupported'] = 'Pluginul „{$a->pluginname}” {$a->pluginversion} nu acceptă această versiune de Moodle {$a->moodleversion}. Căutați informații despre plugin pentru a găsi versiuni acceptate.';
 $string['prefixcannotbeempty'] = '<p>Eroare: prefixul tabelului bazei de date nu poate fi necompletat ({$a}) </p>
@@ -511,6 +522,7 @@ $string['processingstops'] = 'Procesarea se oprește aici. Înregistrările răm
 $string['protected_cc_not_supported'] = 'Cartușele protejate nu sunt acceptate.';
 $string['querystringcannotbeempty'] = 'Șirul de interogare nu poate fi necompletat.';
 $string['redirecterrordetected'] = 'A fost detectată o redirecționare neacceptată, executarea scriptului a fost încheiată';
+$string['redissessionhandlerproblem'] = 'Setarea sesiunii redis nu s-a finalizat cu succes. Te rugăm să anunți administratorul serverului.';
 $string['refoundto'] = 'Poate fi rambursat la {$a}';
 $string['refoundtoorigi'] = 'Rambursat la suma inițială: {$a}';
 $string['registrationdisabled'] = 'Înregistrarea este dezactivată pe acest site';
@@ -585,7 +597,7 @@ $string['unknowncoursesection'] = 'Secțiune de curs necunoscută în curs "{$a}
 $string['unknownevent'] = 'Eveniment necunoscut';
 $string['unknownfiletype'] = 'Eroare tip de filtru necunoscut';
 $string['unknowngroup'] = 'Grup necunoscut "{$a}"';
-$string['unknownhelp'] = 'Subiect de ajutor necunoscut {$a}';
+$string['unknownhelp'] = 'Secțiune de suport necunoscută {$a}';
 $string['unknownjsinrequirejs'] = 'Nu se poate găsi biblioteca JavaScript: {$a}';
 $string['unknownmodulename'] = 'Numele modulului necunoscut pentru formular';
 $string['unknownrole'] = 'Rol necunoscut "{$a}"';
@@ -613,6 +625,7 @@ $string['usermustbemnet'] = 'Utilizatorii din lista de control acces MNET trebui
 $string['usernamelowercase'] = 'Numele de utilizator trebuie să fie scris cu litere mici';
 $string['usernotaddederror'] = 'Utilizatorul nu a fost adăugat - eroare';
 $string['usernotaddedregistered'] = 'Utilizatorul nu a fost adăugat - este deja înregistrat';
+$string['usernotaddedusernameexists'] = 'Utilizatorul nu a fost adăugat - numele de utilizator există deja cu un alt email';
 $string['usernotavailable'] = 'Detaliile acestui utilizator nu vă sunt disponibile';
 $string['usernotdeletedadmin'] = 'Utilizatorul nu a fost șters deoarece nu se pot șterge conturile de administrator';
 $string['usernotdeleteddeleted'] = 'Acest utilizator a fost șters.';

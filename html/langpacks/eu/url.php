@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', version '4.1'.
+ * Strings for component 'url', language 'eu', version '4.4'.
  *
  * @package     url
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowvariables'] = 'Baimendu URLko aldagaiak';
+$string['allowvariables_desc'] = 'Baimendu URLetan aldagaiak gehitu ahal izatea. Aldagaiek barneko informazioa URLetan txertatzea ahalbidetzen dizute, hala nola erabiltzaileen izena. Kontuan izan funtzio hau erabiltzeak ekar lezakeen pribatutasun arrisku potentziala.';
 $string['chooseavariable'] = 'Aukeratu aldagai bat...';
 $string['clicktoopen'] = 'Egin klik {$a} estekan baliabidea irekitzeko.';
 $string['configdisplayoptions'] = 'Aukeratu eskuragarri egon behar duten aukera guztiak, dauden ezarpenak ez dira aldatuko. CTRL tekla erabili hainbat eramu aukeratzeko.';

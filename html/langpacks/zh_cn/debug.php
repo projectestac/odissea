@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'zh_cn', version '4.1'.
+ * Strings for component 'debug', language 'zh_cn', version '4.4'.
  *
  * @package     debug
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', version '4.1'.
+ * Strings for component 'workshop', language 'es', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Envíos de última hora';
 $string['latesubmissions_desc'] = 'Permitir envíos fuera de plazo';
 $string['latesubmissions_help'] = 'Si está activada esta opción, un autor puede enviar su trabajo fuera de plazo o durante la fase de evaluación. Sin embargo, los envíos de última hora no se pueden editar.';
 $string['latesubmissionsallowed'] = 'Se permiten envíos de última hora';
-$string['legacyallocationplugincron'] = 'Asignación de talleres a través del cron';
 $string['maxbytes'] = 'Tamaño máximo del archivo de entrega';
 $string['modulename'] = 'Taller';
 $string['modulename_help'] = 'El módulo de actividad taller permite la recopilación, revisión y evaluación por pares del trabajo de los estudiantes.

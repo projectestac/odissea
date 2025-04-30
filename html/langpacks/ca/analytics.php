@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ca', version '4.1'.
+ * Strings for component 'analytics', language 'ca', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Híbrid';
 $string['modeinstructionfacetoface'] = 'Cara a cara';
 $string['modeinstructionfullyonline'] = 'Totalment en línia';
 $string['modeloutputdir'] = 'Directori de sortida dels models';
-$string['modeloutputdirinfo'] = 'Directori on els processadors de prediccions emmagatzemen tota la informació d\'avaluació. Útil per descobrir errors i per la recerca.';
 $string['modeloutputdirwithdefaultinfo'] = 'Directori on els processadors de prediccions emmagatzemen tota la informació d\'avaluació. Útil per descobrir errors i per la recerca. Si està buit, s\'usarà {$a} per defecte.';
 $string['modeltimelimit'] = 'Tamps màxim d\'anàlisi per model';
 $string['modeltimelimitinfo'] = 'Aquest paràmetre limita el temps que cada model empra analitzant els continguts del lloc.';

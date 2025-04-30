@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'sv', version '4.1'.
+ * Strings for component 'auth_mnet', language 'sv', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNet-autentisering';
 $string['privacy:metadata:external:mahara'] = 'Denna pluginmodul kan skicka data externt till en länkad Mahara-applikation.';
 $string['privacy:metadata:external:moodle'] = 'Denna pluginmodul kan skicka data externt till en länkad Moodleapplikation.';
 $string['privacy:metadata:mnet_external:address'] = 'Användarens adress';
-$string['privacy:metadata:mnet_external:aim'] = 'Användarens AIM-id';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Alternativnamn för användare';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'En inställning om användaren ska prenumerera automatiskt på forum som användaren publicerar i.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'En användarinställning för vilken typ av kalender som ska användas.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'En inställning för att 
 $string['privacy:metadata:mnet_external:firstaccess'] = 'Den tid då den här användaren först anslut till webbplatsen.';
 $string['privacy:metadata:mnet_external:firstname'] = 'Användarens förnamn';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Den fonetiska informationen om användarens förnamn.';
-$string['privacy:metadata:mnet_external:icq'] = 'Användarens ICQ-nummer.';
 $string['privacy:metadata:mnet_external:id'] = 'Användar-ID';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Ett identifikationsnummer som ges av institutionen';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Alternativ text för användarens bild.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Den fonetiska info
 $string['privacy:metadata:mnet_external:maildigest'] = 'En inställning avseende e-postsammandrag för denna användare.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'En inställning för användaren om att visa sin e-postadress för andra användare.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Användarens mellannamn';
-$string['privacy:metadata:mnet_external:msn'] = 'Användarens MSN-id';
 $string['privacy:metadata:mnet_external:phone1'] = 'Användarens telefonnummer';
 $string['privacy:metadata:mnet_external:phone2'] = 'Ett ytterligare telefonnummer till användaren';
 $string['privacy:metadata:mnet_external:picture'] = 'Bildinformationen som är associerad med den här användaren.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'En flagga för att avgöra om användaren har godkänt webbplatspolicyn.';
-$string['privacy:metadata:mnet_external:skype'] = 'Användarens Skype-ID';
 $string['privacy:metadata:mnet_external:suspended'] = 'En flagga som visar om användaren har stängts av i det här systemet.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Användarens tidszon';
 $string['privacy:metadata:mnet_external:trackforums'] = 'En preferens för forum och spårning av dem.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Trust bit mask';
-$string['privacy:metadata:mnet_external:url'] = 'URL relaterad till den här användaren.';
 $string['privacy:metadata:mnet_external:username'] = 'Användarnamn som är relaterat till användaren.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'Användarens Yahoo-id';
 $string['privacy:metadata:mnet_log'] = 'Information om fjärråtgärder som utförs av en lokal användare som är inloggad i ett fjärrsystem.';
 $string['privacy:metadata:mnet_log:action'] = 'Åtgärd utförd av användaren';
 $string['privacy:metadata:mnet_log:cmid'] = 'Kursmodulens ID';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'uk', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'uk', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ $string['dropzones_help'] = 'Зони перекидання можна визн
 * Прямокутник: лівий_верхній_х, лівий_верхній_y, ширина, висота<br>наприклад: <code>20, 60; 80, 40</code>
 
  Вибір тексту маркера додасть цей текст до фігури в попередньому перегляді.';
-$string['followingarewrong'] = 'Наступні маркери розміщено не в тій області: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Наступні маркери були розміщені неправильно: {$a}. Виділені маркери тепер відображаються з правильним розташуванням. <br />Натисніть на маркер, щоб виділити дозволену область.';
+$string['followingarewrong'] = 'Маркери розміщено в неправильній області: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Неправильно розміщені маркери: {$a}. Виділені маркери тепер відображаються з правильним розташуванням. Натисніть на маркер, щоб виділити дозволену область.';
 $string['formerror_dragrequired'] = 'Ви повинні додати принаймні один маркер до цього запитання.';
 $string['formerror_droprequired'] = 'Ви повинні визначити принаймні одну зону випадання для цього запитання.';
 $string['formerror_nobgimage'] = 'Вам потрібно вибрати картинку в якості тла, на якій будуть розміщувати маркери відповідей.';

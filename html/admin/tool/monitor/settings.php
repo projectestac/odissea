@@ -25,11 +25,9 @@
  */
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2015.05.19 @pferre22
-if (!get_protected_agora()) {
-    return;
-}
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
+if (get_protected_agora()) {
 // ************ FI
 
 // Manage rules page.
@@ -40,3 +38,8 @@ $temp = new admin_externalpage(
     'tool/monitor:managerules'
 );
 $ADMIN->add('reports', $temp);
+
+// XTEC ************ AFEGIT - Allow access only to xtecadmin.
+// 2024.10.16 @aginard
+}
+// ************ FI

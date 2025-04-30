@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'en', version '4.1'.
+ * Strings for component 'survey', language 'en', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Actual';
 $string['actualclass'] = 'Class actual';
 $string['actualstudent'] = '{$a} actual';
 $string['allquestionrequireanswer'] = 'All questions are required and must be answered.';
-$string['allquestions'] = 'All questions in order, all students';
 $string['allscales'] = 'All scales, all students';
 $string['alreadysubmitted'] = 'You have already submitted this survey';
 $string['analysisof'] = 'Analysis of {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'What event surprised you most?';
 $string['ciq5short'] = 'Suprising moment';
 $string['ciqintro'] = 'While thinking about recent events in this class, answer the questions below.';
 $string['ciqname'] = 'Critical incidents';
-$string['clicktocontinue'] = 'Click here to continue';
 $string['clicktocontinuecheck'] = 'Click here to check and continue';
 $string['colles1'] = 'my learning focuses on issues that interest me.';
 $string['colles10'] = 'I ask other students to explain their ideas.';
@@ -191,7 +189,7 @@ Your carefully considered responses will help us improve the way this unit is pr
 Thanks very much.';
 $string['collespname'] = 'COLLES (Preferred)';
 $string['completiondetail:submit'] = 'Submit answers';
-$string['completionsubmit'] = 'Student must make a submission';
+$string['completionsubmit'] = 'Make a submission';
 $string['customintro'] = 'Description';
 $string['deleteallanswers'] = 'Delete all survey responses';
 $string['deleteanalysis'] = 'Delete response analysis';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'There are 3 available survey types:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Thanks for answering this survey, {$a}';
 $string['time'] = 'Time';
-$string['viewsurveyresponses'] = 'View {$a} survey responses';

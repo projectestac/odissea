@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'eu', version '4.1'.
+ * Strings for component 'auth_lti', language 'eu', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -40,7 +40,6 @@ $string['haveexistingaccount'] = 'Dagoeneko kontu bat daukat';
 $string['linkthisaccount'] = 'Lotu kontu hau';
 $string['mustbeloggedin'] = 'Hasi saioa existitzen den zure kontua lotzeko';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'LTI autentifikazio-pluginak ez du datu pertsonalik biltzen.';
 $string['privacy:metadata:auth_lti'] = 'LTI autentifikazioa';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'Plugin hau autentifikazio-sistemarekin lotuta dago.';
 $string['privacy:metadata:auth_lti:issuer'] = 'Lotutako erabiltzailearen jatorrizko plataforma identifikatzen duen emailearen URLa.';

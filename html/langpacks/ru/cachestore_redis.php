@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'ru', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'ru', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'Путь к файлу ЦС';
+$string['ca_file_help'] = 'Расположение файла центра сертификации в локальной файловой системе';
+$string['clustermode'] = 'Режим кластера';
+$string['clustermode_help'] = 'Включение этого параметра запустит функцию кластера Redis, что позволит вашему серверу обслуживать несколько серверов для одновременной обработки запросов.';
+$string['clustermodeunavailable'] = 'Кластер Redis в настоящее время недоступен. Убедитесь, что расширение PHP Redis поддерживает функциональность кластера Redis.';
 $string['compressor_none'] = 'Без сжатия.';
 $string['compressor_php_gzip'] = 'Использовать сжатие gzip.';
 $string['compressor_php_zstd'] = 'Использовать сжатие Zstandard.';
+$string['connectiontimeout'] = 'Время ожидания соединения';
+$string['connectiontimeout_help'] = 'Устанавливает тайм-аут при попытке подключения к серверу Redis.';
+$string['encrypt_connection'] = 'Использовать TLS-шифрование.';
+$string['encrypt_connection_help'] = 'Использовать TLS для подключения к Redis. Не используйте «tls://» в имени хоста для Redis, вместо этого используйте этот параметр.';
 $string['password'] = 'Пароль';
 $string['password_help'] = 'Пароль сервера Redis';
 $string['pluginname'] = 'Redis';
@@ -40,15 +49,48 @@ $string['privacy:metadata:redis'] = 'Плагин хранилища кэша «
 $string['privacy:metadata:redis:data'] = 'Различные данные, хранящиеся в кэше';
 $string['serializer_igbinary'] = 'Сериализатор  igbinary.';
 $string['serializer_php'] = 'Сериализатор PHP по умолчанию.';
-$string['server'] = 'Сервер';
-$string['server_help'] = 'В параметре задается имя хоста или IP-адрес сервера Redis.';
+$string['server'] = 'Сервер(ы)';
+$string['server_help'] = 'Сервер Redis, который будет использоваться для тестирования.
+
+Некоторые примеры значений:
+
+* testredis.abc.com — для подключения к серверу Redis по имени хоста (по умолчанию порт 6379).
+* testredis.abc.com:1234 — для подключения к серверу Redis по имени хоста с определенным портом.
+* 1.2.3.4 — для подключения к серверу Redis по IP-адресу (по умолчанию порт 6379).
+* 1.2.3.4:1234 — для подключения к серверу Redis по IP-адресу с определенным портом.
+* unix:///var/redis.sock — для подключения к серверу Redis с помощью сокета Unix.
+* /var/redis.sock — для подключения к серверу Redis с использованием сокета Unix (альтернативный формат).
+Если включен режим кластера, укажите серверы, разделенные новой строкой, например:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+
+Для получения дополнительной информации см. разделы <a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">Принятие клиентских подключений</a> и <a href="https://". redis.io/resources/clients/#php" target="_new">PHP-клиенты Redis</a> .';
 $string['task_ttl'] = 'Освободить память, используемую просроченными записями в кэшах Redis';
+$string['test_clustermode'] = 'Режим кластера';
+$string['test_clustermode_desc'] = 'Включить тестирование режима кластера Redis.';
 $string['test_password'] = 'Пароль сервера';
 $string['test_password_desc'] = 'Пароль сервера тестирования Redis.';
 $string['test_serializer'] = 'Сериализатор';
 $string['test_serializer_desc'] = 'Сериализатор для тестирования.';
 $string['test_server'] = 'Сервер тестирования';
-$string['test_server_desc'] = 'Сервер Redis для тестирования.';
+$string['test_server_desc'] = 'Сервер Redis для тестирования.
+
+Некоторые примеры значений:
+
+* testredis.abc.com — для подключения к серверу Redis по имени хоста (по умолчанию порт 6379).
+* testredis.abc.com:1234 — для подключения к серверу Redis по имени хоста с определенным портом.
+* 1.2.3.4 — Для подключения к серверу Redis по IP-адресу (по умолчанию порт 6379).
+* 1.2.3.4:1234 — для подключения к серверу Redis по IP-адресу с определенным портом.
+* unix:///var/redis.sock — для подключения к серверу Redis с помощью сокета Unix.
+* /var/redis.sock — для подключения к серверу Redis с использованием сокета Unix (альтернативный формат).
+Если включен режим кластера, укажите серверы, разделенные новой строкой, например:<br>
+   172.23.0.11<br>
+   172.23.0.12<br>
+   172.23.0.13<br>
+
+Для получения дополнительной информации см. разделы <a href="https://redis.io/docs/reference/clients/#accepting-client-connections" target="_new">Принятие клиентских подключений</a> и <a href="https://". redis.io/resources/clients/#php" target="_new">PHP-клиенты Redis</a>.';
 $string['test_ttl'] = 'Тестирование TTL';
 $string['test_ttl_desc'] = 'Запустить тест производительности с использованием кэша, для которого требуется TTL (более медленные наборы).';
 $string['usecompressor'] = 'Использовать сжатие';

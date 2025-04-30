@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'gl', version '4.1'.
+ * Strings for component 'assignfeedback_offline', language 'gl', version '4.4'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -30,7 +30,7 @@ $string['default'] = 'Activado de xeito predeterminado';
 $string['default_help'] = 'De estar estabelecida, a cualificación en desconexión activarase a cualificación con follas de cálculo de modo predeterminado para as novas tarefas.';
 $string['downloadgrades'] = 'Descargar a folla de cualificacións';
 $string['enabled'] = 'Folla de cualificacións externa';
-$string['enabled_help'] = 'De estar activada, o profesor poderá descargar e enviar unha folla de cálculo con cualificacións de alumnos para cualificar as tarefas.';
+$string['enabled_help'] = 'De estar activada, o profesor poderá descargar e enviar unha folla de cálculo con cualificacións de alumnos para puntuar as tarefas.';
 $string['feedbackupdate'] = 'Estabeleza o campo «{$a->field}» para «{$a->student}» a «{$a->text}»';
 $string['gradelockedingradebook'] = 'A cualificación foi bloqueada no libro de cualificacións para {$a}';
 $string['graderecentlymodified'] = 'A cualificación foi modificada antes en Moodle que na folla de cualificacións para {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'eu', version '4.1'.
+ * Strings for component 'block_dedication', language 'eu', version '4.4'.
  *
  * @package     block_dedication
  * @category    string
@@ -85,6 +85,6 @@ $string['timespentincourse'] = 'Ikastaroan dedikatutako denbora';
 $string['timespentreport'] = 'Txosten osoa';
 $string['timespenttasknotrunning'] = 'Dedikatutako denbora kalkulatzeko ataza oraindik ez da exekutatu.';
 $string['totaltimespent'] = '<strong>Ikastaroan guztira dedikatutako denbora:</strong> {$a}';
-$string['user_dedication_datasource'] = 'Erabiltzaileen Dedikazioa';
+$string['user_dedication_datasource'] = 'Erabiltzaileen dedikazioa';
 $string['userdedication'] = '<em>{$a}</em>(r)en ikastaroko dedikazioren zehaztasunak.';
 $string['viewsessiondurationreport'] = 'Ikusi saioaren iraupenaren txostena';

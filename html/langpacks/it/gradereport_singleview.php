@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'it', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'it', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -64,17 +64,18 @@ $string['overridenone'] = 'Non modificare nessun voto';
 $string['overridenoneconfirm'] = 'A valle del salvataggio, saranno rimosse tutte le valutazioni sovrascritte precedentemente in questa pagina.';
 $string['overridenonegrades'] = 'Non sovrascrivere nulla';
 $string['pluginname'] = 'Scheda singola';
-$string['privacy:metadata'] = 'Il report Visualizzazione singola delle valutazioni visualizza dati memorizzati altrove.';
+$string['privacy:metadata'] = 'Il report Visualizzazione singola delle valutazioni visualizza solamente dati memorizzati da altri componenti.';
 $string['removeoverride'] = 'Rimuovi le sovrascritture delle valutazioni';
 $string['removeoverridesave'] = 'Rimuovi le sovrascritture';
 $string['save'] = 'Salva';
 $string['savegrades'] = 'Salvataggio delle valutazioni';
 $string['savegradessuccess'] = 'Sono state impostate le valutazioni per {$a} elementi';
-$string['searchgrades'] = 'Cerca elemento di valutazione';
 $string['selectagrade'] = 'Selezionare un elemento di valutazione';
 $string['selectgradeitemlink'] = 'Selezionare un elemento di valutazione';
 $string['singleview:view'] = 'Visualizzare scheda singola';
 $string['singleviewdescription'] = 'Nella visualizzazione singola è possibile sovrascrivere o escludere le valutazioni selezionate e inserire in blocco le valutazioni.';
+$string['singleviewreport_gradeitem'] = 'Visualizzazione singola per questo elemento';
+$string['singleviewreport_user'] = 'Visualizzazione singola per questo utente';
 $string['summarygrade'] = 'Una tabella di utenti, con colonne per intervalli, valutazioni, feedback e e la possibilità di modificare o escludere voti.';
 $string['summaryuser'] = 'Una tabella di elementi di valutazione, con colonne per le categorie di valutazione, intervalli, voti, feedback e la possibilità di modificare o escludere voti.';
 $string['unsavedataalert'] = 'Se nella pagina sono presenti modifiche non salvate, queste andranno perse se si procede con l\'inserimento massivo delle valutazioni.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Attenzione: dati non salvati';
 $string['userselect'] = 'Seleziona attività';
 $string['viewby'] = '';
 $string['viewsinglegradeitem'] = 'Selezionare un elemento di valutazione sopra';
-$string['viewsingleuser'] = 'Selezionare sopra un utente per visualizzane le valutazioni';
+$string['viewsingleuser'] = 'Cerca un utente per visualizzarne le valutazioni';
 $string['viewsingleuserorgradeitem'] = 'Visualizza tutte le valutazioni di un singolo utente o elemento di valutazione.';

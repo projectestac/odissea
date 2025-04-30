@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ur', version '4.1'.
+ * Strings for component 'message', language 'ur', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'رابطے';
 $string['conversationactions'] = 'بات چیت کے اعمال کا مینو';
 $string['decline'] = 'رد کرنا';
 $string['defaultmessageoutputs'] = 'اطلاع کی ترتیبات';
-$string['defaults'] = 'ڈیفالٹس';
 $string['deleteallconfirm'] = 'کیا آپ واقعی اس پوری گفتگو کو حذف کرنا چاہیں گے؟ یہ بات چیت کے دیگر شرکاء کے لیے اسے حذف نہیں کرے گا۔';
 $string['deleteallmessages'] = 'تمام پیغامات کو حذف کریں';
 $string['deleteallselfconfirm'] = 'کیا آپ واقعی اس پوری ذاتی گفتگو کو حذف کرنا چاہیں گے؟';
@@ -96,11 +95,7 @@ $string['info'] = 'صارف کی معلومات';
 $string['isnotinyourcontacts'] = '{$a} آپ کے رابطوں میں نہیں ہے';
 $string['loadmore'] = 'مزید لوڈ کریں';
 $string['loggedin'] = 'آن لائن';
-$string['loggedin_help'] = 'کنفیگر کریں کہ جب آپ Moodle میں لاگ ان ہوتے ہیں تو آپ کیسے اطلاعات موصول کرنا چاہیں گے';
-$string['loggedindescription'] = 'جب آپ موڈل میں لاگ ان ہوں';
 $string['loggedoff'] = 'آف لائن';
-$string['loggedoff_help'] = 'کنفیگر کریں کہ جب آپ Moodle میں لاگ ان نہیں ہوتے ہیں تو آپ کیسے اطلاعات موصول کرنا چاہیں گے';
-$string['loggedoffdescription'] = 'جب آپ Moodle میں لاگ ان نہیں ہوتے ہیں';
 $string['managemessageoutputs'] = 'پہلے سے طے شدہ اطلاع کی ترجیحات';
 $string['message'] = 'پیغام';
 $string['messagecontactrequest'] = '{$a->user} رابطہ کے طور پر شامل کرنے کی درخواست کر رہا ہے۔ درخواست کا جواب دینے کے لیے اپنے <a href="{$a->url}">رابطہ کی درخواستوں</a> کا صفحہ دیکھیں';
@@ -238,8 +233,6 @@ $string['sendbulkmessagesentsingle'] = '1 شخص کو پیغام بھیجا گی
 $string['sendbulkmessagesingle'] = '1 شخص کو پیغام بھیجیں';
 $string['sendcontactrequest'] = 'رابطہ کی درخواست بھیجیں';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = '"{$a->provider}" کو "{$a->processor}" کے ذریعے بھیجا جا رہا ہے';
-$string['sendingviawhen'] = '"{$a->provider}" کو "{$a->processor}" کے ذریعے بھیج رہا ہے جب {$a->state}';
 $string['sendmessage'] = 'پیغام بھیجیں';
 $string['sendmessageto'] = '{$a} کو پیغام بھیجیں';
 $string['sendmessagetopopup'] = '{$a} کو پیغام بھیجیں - نئی ونڈو';

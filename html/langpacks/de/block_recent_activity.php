@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'de', version '4.1'.
+ * Strings for component 'block_recent_activity', language 'de', version '4.4'.
  *
  * @package     block_recent_activity
  * @category    string
@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cleanuptask'] = 'Task zum Bereinigen des Blocks \'Letzte Aktivitäten\'';
+$string['cleanuptask'] = 'Task zum Bereinigen des Blocks \'Neue Aktivitäten\'';
 $string['pluginname'] = 'Neue Aktivitäten';
-$string['privacy:metadata'] = 'Der letzte Aktivitäten-Block enthält einen Cache mit Daten, die an anderen Stellen in Moodle gespeichert wurden.';
-$string['privacy:metadata:block_recent_activity'] = 'Temporärer Log früherer Trainer/innenaktivitäten. Wird nach zwei Tagen gelöscht.';
+$string['privacy:metadata'] = 'Der Block \'Neue Aktivitäten\' beinhaltet einen Cache mit Daten, die an anderen Stellen in Moodle gespeichert wurden.';
+$string['privacy:metadata:block_recent_activity'] = 'Temporärer Log \'Neue Aktivitäten von  Trainer/innen\'. Wird nach zwei Tagen gelöscht.';
 $string['privacy:metadata:block_recent_activity:action'] = 'Aktion: erstellt, aktualisiert oder gelöscht';
 $string['privacy:metadata:block_recent_activity:cmid'] = 'Kursaktivitäts-ID';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'Kurs-ID';
 $string['privacy:metadata:block_recent_activity:modname'] = 'Modultypbezeichung (für Löschaktion)';
-$string['privacy:metadata:block_recent_activity:timecreated'] = 'Zeitpunkt der Ausführung der Aktion';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Zeitpunkt, zu dem die Aktion ausgeführt wurde';
 $string['privacy:metadata:block_recent_activity:userid'] = 'Person, die die Aktion ausgeführt hat';
 $string['recent_activity:addinstance'] = 'Neuen Block \'Neue Aktivitäten\' hinzufügen';
-$string['recent_activity:viewaddupdatemodule'] = 'Hinzugefügte und aktualisierte Module im Block \'Letzte Aktivitäten\' anzeigen.';
-$string['recent_activity:viewdeletemodule'] = 'Gelöschte Module im Block \'Letzte Aktivitäten\' anzeigen.';
+$string['recent_activity:viewaddupdatemodule'] = 'Hinzugefügte und aktualisierte Module im Block \'Neue Aktivitäten\' anzeigen.';
+$string['recent_activity:viewdeletemodule'] = 'Gelöschte Module im Block \'Neue Aktivitäten\' anzeigen.';

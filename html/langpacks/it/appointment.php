@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'it', version '4.1'.
+ * Strings for component 'appointment', language 'it', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -69,6 +69,7 @@ $string['attendanceinstructions'] = 'Selezionare gli utenti che hanno presenziat
 $string['attendedsession'] = 'Sessioni presenziate';
 $string['attendees'] = 'Partecipanti';
 $string['attendeestablesummary'] = 'Persone che hanno in programma di partecipare o hanno partecipato alla sessione.';
+$string['availableplaceholders'] = 'Segnaposto disponibili';
 $string['availableseats'] = '{$a} posti disponibili';
 $string['book'] = 'Prenota';
 $string['bookedat'] = '<strong>Prenotato:</strong> {$a}';
@@ -161,6 +162,7 @@ $string['eventsignup'] = 'Prenotazione sessione';
 $string['eventupdatesession'] = 'Aggiornamento sessione';
 $string['full'] = 'La data è al completo';
 $string['fullfilter'] = 'Completo';
+$string['fullybooked'] = 'Al completo';
 $string['goback'] = 'Indietro';
 $string['icalendarheading'] = 'Allegati iCal';
 $string['joinwaitlist'] = 'Entra in lista di attesa';
@@ -195,6 +197,8 @@ $string['placeholder:lastname'] = '[lastname]';
 $string['placeholder:reminderperiod'] = '[reminderperiod]';
 $string['placeholder:sessiondate'] = '[sessiondate]';
 $string['placeholder:starttime'] = '[starttime]';
+$string['placeholdersdesc'] = 'Segnaposto';
+$string['placeholdersdesc_help'] = 'I segnaposto consentono di aggiungere un contenuto dinamico, ad es. Il segnaposto [firstname] verrà sostituito con il nome dell\'utente nella notifica consegnata all\'utente.';
 $string['pluginadministration'] = 'Gestione meeting';
 $string['pluginname'] = 'Meeting';
 $string['potentialattendees'] = 'Partecipanti potenziali';
@@ -382,5 +386,6 @@ $string['usersignedup'] = 'Stato: prenotato';
 $string['usersignedupon'] = 'Prenotato il {$a}';
 $string['userwillbewaitlisted'] = 'La sessione è al completo. Cliccando su "Prenota", sarai inserito nella lista di attesa della sessione.';
 $string['venue'] = 'Sede';
+$string['waitlistedat'] = '<strong>In lista d\'attesa:</strong> {$a}';
 $string['waitlistedmessage'] = 'Messaggio lista di attesa';
 $string['waitlistedmessage_help'] = 'Messaggio inviato quando si prenota una sessione in lista di attesa.';

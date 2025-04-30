@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'ko', version '4.1'.
+ * Strings for component 'repository_s3', language 'ko', version '4.4'.
  *
  * @package     repository_s3
  * @category    string

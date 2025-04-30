@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'en', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'en', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ For information the three shapes use coordinates in this way:
 * Polygon: x1, y1; x2, y2; ...; xn, yn<br />for example: <code>20,60;100,60;20,100</code>
 
 Selecting a Marker text will add that text to the shape in the preview.';
-$string['followingarewrong'] = 'The following markers have been placed in the wrong area : {$a}.';
-$string['followingarewrongandhighlighted'] = 'The following markers were incorrectly placed :  {$a}. Highlighted marker(s) are now shown with the correct placement(s).<br /> Click on the marker to highlight the allowed area.';
+$string['followingarewrong'] = 'Markers placed in the wrong area: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Incorrectly placed markers: {$a}. Highlighted markers are now shown with the correct placements. Click on the marker to highlight the allowed area.';
 $string['formerror_dragrequired'] = 'You must add at least one marker to this question.';
 $string['formerror_droprequired'] = 'You must define at least one drop zone for this question.';
 $string['formerror_nobgimage'] = 'You need to select an image to use as the background for the drag and drop area.';

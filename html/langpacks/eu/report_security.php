@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', version '4.1'.
+ * Strings for component 'report_security', language 'eu', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -81,10 +81,6 @@ $string['check_guestrole_error'] = '"{$a}" gonbidatu-rola ez dago modu egokian d
 $string['check_guestrole_name'] = 'Gonbidatu-rola';
 $string['check_guestrole_notset'] = 'Gonbidatu-rola ez da ezarri.';
 $string['check_guestrole_ok'] = 'Gonbidatu-rolaren definizioa ONDO dago.';
-$string['check_mediafilterswf_details'] = '<p>swf enbotatze automatikoa oso arriskutsua da - erregistratutako edozein erabiltzailek XSS eraso bat burutu dezake. Ezarpen hau desgaitu beharko litzateke lanean dauden guneetan.</p>';
-$string['check_mediafilterswf_error'] = 'Flash media iragazkia gaituta dago - hau oso arrikutsua izaten da zerbitzari gehienentzat';
-$string['check_mediafilterswf_name'] = '.swf media iragazkia gaituta dago';
-$string['check_mediafilterswf_ok'] = 'Flash media iragazkia ez dago gaituta.';
 $string['check_nodemodules_details'] = '<p><code>{$a->path}</code> direktorioak Node.js moduluak eta euren menpekotasunak ditu, normalean NPM bitartez instalatuta. Modulu hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako grunt framework-a erabiltzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
 <p>Direktorio hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
 $string['check_nodemodules_info'] = 'node_modules direktorioak ez luke gune publikoetan egon behar.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'sv', version '4.1'.
+ * Strings for component 'quiz_grading', language 'sv', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Visa alla frågor';
 $string['attemptstograde'] = 'Försök att bedöma';
 $string['automaticallygraded'] = 'Automatiskt bedömd';
 $string['backtothelistofquestions'] = 'Tillbaka till Manuell bedömning';
-$string['bydate'] = 'Kronologisk ordning';
-$string['bystudentfirstname'] = 'Efter deltagarens förnamn';
-$string['bystudentidnumber'] = 'På elev-id nummer';
-$string['bystudentlastname'] = 'På efternamn';
 $string['cannotgradethisattempt'] = 'Kan inte betygsätta försöket';
 $string['cannotloadquestioninfo'] = 'Kunde inte ladda frågespecifik information';
 $string['changeoptions'] = 'Uppdatera';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'Alla {$a} försök på den här frågan.';
 $string['gradingattempt'] = 'Försök nummer {$a->attempt} för {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Bedömnings försök {$a->from} till {$a->to} av {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Försök nummer {$a->attempt} av {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Försök nummer {$a->attempt} för {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Nästa {$a} ej bedömda försök';
 $string['gradingnotallowed'] = 'Du har inte behörighet att manuellt sätta betyg på svaren på det här testet.';
 $string['gradingquestionx'] = 'Bedömnings fråga {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Bedömningsfråga med ID {$a} hittades inte';
 $string['noquestionsfound'] = 'Inga manuellt bedömda frågor hittades';
 $string['nothingfound'] = 'Ingenting att visa';
 $string['options'] = 'Inställningar';
-$string['orderattempts'] = 'Sortera försök';
 $string['orderattemptsby'] = 'Sortera försök efter';
 $string['pluginname'] = 'Manuell betygsättning';
 $string['privacy:preference:order'] = 'I vilken ordning försök som behöver betygsättas visas.';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Frågor per sida';
 $string['questionsthatneedgrading'] = 'Manuell bedömning';
 $string['questiontitle'] = 'Fråga {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} försök {$a->openspan}graded{$a->closespan}).';
 $string['random'] = 'Slumpmässigt';
-$string['randomly'] = 'Slumpvis';
 $string['saveandnext'] = 'Spara och gå till nästa sida';
 $string['showstudentnames'] = 'Visa studenters namn';
 $string['tograde'] = 'Att bedöma';

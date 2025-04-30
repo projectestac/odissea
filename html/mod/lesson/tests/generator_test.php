@@ -25,9 +25,9 @@ namespace mod_lesson;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers     \mod_lesson_generator
  */
-class generator_test extends \advanced_testcase {
+final class generator_test extends \advanced_testcase {
 
-    public function test_create_instance() {
+    public function test_create_instance(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -47,7 +47,7 @@ class generator_test extends \advanced_testcase {
         $this->assertEquals('Another lesson', $records[$lesson->id]->name);
     }
 
-    public function test_create_content() {
+    public function test_create_content(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -68,7 +68,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the true/false question generator.
      */
-    public function test_create_question_truefalse() {
+    public function test_create_question_truefalse(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -93,7 +93,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the multichoice question generator.
      */
-    public function test_create_question_multichoice() {
+    public function test_create_question_multichoice(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -118,7 +118,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the essay question generator.
      */
-    public function test_create_question_essay() {
+    public function test_create_question_essay(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -143,7 +143,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the matching question generator.
      */
-    public function test_create_question_matching() {
+    public function test_create_question_matching(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -168,7 +168,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the numeric question generator.
      */
-    public function test_create_question_numeric() {
+    public function test_create_question_numeric(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -193,7 +193,7 @@ class generator_test extends \advanced_testcase {
     /**
      * This tests the shortanswer question generator.
      */
-    public function test_create_question_shortanswer() {
+    public function test_create_question_shortanswer(): void {
         global $DB;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -226,7 +226,9 @@ class generator_test extends \advanced_testcase {
      * @param string $type Type of page to test: LESSON_PAGE_CLUSTER, LESSON_PAGE_ENDOFCLUSTER or LESSON_PAGE_ENDOFBRANCH.
      */
     public function test_create_cluster_pages(string $type): void {
-        global $DB;
+        global $CFG, $DB;
+        require_once($CFG->dirroot . '/mod/lesson/locallib.php');
+        require_once($CFG->dirroot . '/mod/lesson/pagetypes/cluster.php');
         $this->resetAfterTest();
         $this->setAdminUser();
 

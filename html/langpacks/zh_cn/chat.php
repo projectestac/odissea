@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', version '4.1'.
+ * Strings for component 'chat', language 'zh_cn', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -113,7 +113,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = '聊天';
 $string['neverdeletemessages'] = '不删除聊天消息';
 $string['nextchattime'] = '下次聊天时间：';
-$string['nextsession'] = '下一个预定的会话';
 $string['no_complete_sessions_found'] = '没有找到已结束的会话。';
 $string['nochat'] = '没有找到聊天';
 $string['noguests'] = '此聊天室不对访客开放';
@@ -162,7 +161,6 @@ $string['serverip'] = '服务器 IP';
 $string['servermax'] = '最大用户数';
 $string['serverport'] = '服务器端口';
 $string['sessions'] = '聊天会话';
-$string['sessionstart'] = '下一个聊天会话将从{$a->date}开始，(离现在{$a->fromnow})';
 $string['sessionstartsin'] = '下一个聊天会话将从现在开始{$a}。';
 $string['strftimemessage'] = '';
 $string['studentseereports'] = '每个人都可以查看过去的会话';

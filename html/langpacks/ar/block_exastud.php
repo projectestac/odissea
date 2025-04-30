@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exastud', language 'ar', version '4.1'.
+ * Strings for component 'block_exastud', language 'ar', version '4.4'.
  *
  * @package     block_exastud
  * @category    string
@@ -30,6 +30,7 @@ $string['blocktitle'] = 'مراجعة الطالب';
 $string['certificate_issue_date'] = 'تاريخ منح الشهادة';
 $string['certificate_issue_date_class'] = 'تاريخ منح الشهادة';
 $string['certificate_issue_date_missed_message'] = 'لم يتم تحديد تاريخ المنح بعد. على المشرف إدخال تاريخ منح الشهادة لتوليدها بشكل صحيح.';
+$string['class_import_button_confirm'] = 'استورد الآن';
 $string['class_logo'] = 'شعار الصف';
 $string['classowner_changed_message'] = 'لقد قمت بتغيير معلم الصف "{$a->classtitle}" إلى {$a->owner}. لذلك لم يعد متاحًا لك تحرير هذا الصف من الآن فصاعدًا!';
 $string['configmember'] = 'طلاب {$a}';
@@ -77,6 +78,9 @@ $string['force_class_to_delete'] = 'يمكن فقط حذف الصفوف التي
 $string['form_subject_teacher_form_description'] = 'يمكنك نقل الموضوع {$a->subjecttitle} إلى معلم آخر. المعلم الحالي هو {$a->currentteacher_name}. كل التقييمات العائدة إلى {$a->currentteacher_name} تم نقلها إلى المعلم الجديد.';
 $string['form_subject_teacher_form_select_new_teacher'] = 'معلم جديد لـ {$a->subjecttitle}';
 $string['html_report'] = 'نظرة عامة';
+$string['import_class'] = 'استورد الفئة';
+$string['import_class_from_backup'] = 'استورد الفئة من الحفظ الاحتياطي';
+$string['import_class_reviewsimport'] = 'استورد المراجعات';
 $string['info_category_without_cross_competences'] = 'إذا كان التصنيف هو {$a->categorytitles} - لن يكون لهذا التقرير "كفاءات متعددة التخصصات"';
 $string['logging'] = 'تفعيل تسجيل الوقوعات';
 $string['logosize'] = 'لتحقيق الكفاءة، ينبغي أن تكون لافتة الشعار بأبعاد (840 × 100) بكسل. يرجى تجنب استعمال الشفافية في ملفات PNG لأن ذلك قد يسبب خطأ عند إنشاء تقرير PDF.';
@@ -102,7 +106,9 @@ $string['project_based_total'] = 'الدرجة الإجمالية';
 $string['project_based_upload_picture'] = 'يمكنع رفع شعار لتقرير خاص بالمشروع';
 $string['redirectingtoclassinput'] = 'لم يتم العثور على معلومات الفئة، تجري إعادة التوجيه إلى إدخال الفئة.';
 $string['redirectingtoperiodsinput'] = 'لم يتم العثور على معلومات الفترة، تجري إعادة التوجيه إلى إدخال الفترة.';
+$string['report_button_import'] = 'استيراد التقارير';
 $string['report_for_subjects'] = 'الشهادة لموضوع الملف التعريفي';
+$string['report_import_templates'] = 'استيراد';
 $string['report_select_all'] = 'إختيار الكل';
 $string['report_setting_current_title'] = 'العنوان الحالي';
 $string['report_setting_type_matrix_column_titles'] = 'عناوين الأعمدة';

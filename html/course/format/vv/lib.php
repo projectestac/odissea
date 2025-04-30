@@ -17,6 +17,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot . "/course/format/topics/lib.php");
+require_once($CFG->dirroot. '/course/format/lib.php');
 
 class format_vv extends format_topics {
 
@@ -32,7 +33,6 @@ class format_vv extends format_topics {
     public function supports_ajax() {
         $ajaxsupport = new stdClass();
         $ajaxsupport->capable = false;
-        $ajaxsupport->testedbrowsers = array();
         return $ajaxsupport;
     }
 
@@ -53,12 +53,12 @@ class format_vv extends format_topics {
                 $courseconfig = get_config('moodlecourse');
                 $default = $courseconfig->numsections;
             }
-            $courseformatoptions = array(
-                'numsections' => array(
+            $courseformatoptions = [
+                'numsections' => [
                     'default' => $default,
                     'type' => PARAM_INT,
-                ),
-            );
+                ],
+            ];
         }
         if ($foreditform && !isset($courseformatoptions['numsections']['label'])) {
             $courseconfig = get_config('moodlecourse');
@@ -66,17 +66,17 @@ class format_vv extends format_topics {
             if (!isset($max) || !is_numeric($max)) {
                 $max = 52;
             }
-            $sectionmenu = array();
+            $sectionmenu = [];
             for ($i = 0; $i <= $max; $i++) {
                 $sectionmenu[$i] = "$i";
             }
-            $courseformatoptionsedit = array(
-                'numsections' => array(
+            $courseformatoptionsedit = [
+                'numsections' => [
                     'label' => new lang_string('numberweeks'),
                     'element_type' => 'select',
-                    'element_attributes' => array($sectionmenu),
-                ),
-            );
+                    'element_attributes' => [$sectionmenu],
+                ],
+            ];
             $courseformatoptions = array_merge_recursive($courseformatoptions, $courseformatoptionsedit);
         }
         return $courseformatoptions;
@@ -139,5 +139,14 @@ class format_vv extends format_topics {
         $options['coursedisplay'] = COURSE_DISPLAY_SINGLEPAGE; // This format is only single-page.
         $options['hiddensections'] = 1; // Hidden sections are always invisible.
         return $options;
+    }
+
+    /**
+     * Return the format section preferences.
+     *
+     * @return array of preferences indexed by sectionid
+     */
+    public function get_sections_preferences(): array {
+        return [];
     }
 }

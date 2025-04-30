@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ru', version '4.1'.
+ * Strings for component 'block', language 'ru', version '4.4'.
  *
  * @package     block
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addblock'] = 'Добавить блок {$a}';
 $string['anypagematchingtheabove'] = 'Любая страница, подходящая под вышеуказанное';
 $string['appearsinsubcontexts'] = 'Отображаются в подчиненных контекстах';
 $string['assignrolesinblock'] = 'Назначение ролей в блоке «{$a}»';

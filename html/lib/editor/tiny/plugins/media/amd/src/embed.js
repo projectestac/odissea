@@ -23,20 +23,19 @@
 
 import Templates from 'core/templates';
 import {
-    get_string as getString,
-    get_strings as getStrings,
+    getString,
+    getStrings,
 } from 'core/str';
-import * as ModalFactory from 'core/modal_factory';
 import * as ModalEvents from 'core/modal_events';
 import {displayFilepicker} from 'editor_tiny/utils';
 import {getCurrentLanguage, getMoodleLang} from 'editor_tiny/options';
 import {component} from "./common";
-import Modal from './embedmodal';
+import EmbedModal from './embedmodal';
 import Selectors from './selectors';
 import {getEmbedPermissions} from './options';
 import {getFilePicker} from 'editor_tiny/options';
 
-export const MediaEmbed = class {
+export default class MediaEmbed {
     editor = null;
     canShowFilePicker = false;
     canShowFilePickerPoster = false;
@@ -115,17 +114,12 @@ export const MediaEmbed = class {
         const data = Object.assign({}, this.getCurrentEmbedData());
         this.isUpdating = Object.keys(data).length !== 0;
 
-        const modal = await ModalFactory.create({
-            type: Modal.TYPE,
+        this.currentModal = await EmbedModal.create({
             title: getString('createmedia', 'tiny_media'),
             templateContext: await this.getTemplateContext(data),
-            removeOnClose: true,
-            large: true,
         });
 
-        this.currentModal = modal;
-        await this.registerEventListeners(modal);
-        modal.show();
+        await this.registerEventListeners(this.currentModal);
     }
 
     getCurrentEmbedData() {
@@ -470,4 +464,4 @@ export const MediaEmbed = class {
             });
         });
     }
-};
+}

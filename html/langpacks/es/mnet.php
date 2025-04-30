@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'es', version '4.1'.
+ * Strings for component 'mnet', language 'es', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Agregar a control de acceso';
 $string['allhosts'] = 'Todos los hosts';
 $string['allhosts_no_options'] = 'No hay opciones disponibles cuando se ven múltiples hosts.';
 $string['allow'] = 'Permitir';
+$string['allowaccess'] = 'Permitir acceso';
 $string['applicationtype'] = 'Tipo de aplicación';
 $string['authfail_nosessionexists'] = 'Autorización fallida: la sesión mnet no existe.';
 $string['authfail_sessiontimedout'] = 'Autorización fallida: la sesión mnet ha sobrepasado el límite de tiempo.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Su ventana de 60 segundos para eliminar esta clave
 $string['deleteuserrecord'] = 'SSO ACL: eliminar registro para el usuario \'{$a->user}\' de {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Un error ha ocurrido. Si usted no estaba intentando eliminar su clave SSL, entonces es posible que usted haya sido sujeto de un ataque malicioso. Ninguna acción ha sido tomada.';
 $string['deny'] = 'Denegar';
+$string['denyaccess'] = 'Denegar acceso';
 $string['description'] = 'Descripción';
 $string['duplicate_usernames'] = 'Hemos fallado en crear un índice en las columnas "mnethostid" y "username" en su tabla de usuarios.<br />Esto puede ocurrir cuando tiene <a href="{$a}" target="_blank">nombres de usuarios duplicados en su tabla de usuarios</a>.<br />Su actualización aún debería completarse exitosamente. Haga clic en el vínculo de arriba, y luego en instrucciones de arreglo este problema aparecerá en una nueva ventana. Usted puede atenderlo al final de la actualización.<br />';
 $string['enabled_for_all'] = '(Este servicio ha sido habilitado para todos los hosts).';
@@ -236,12 +238,12 @@ $string['subscribe'] = 'Suscribir';
 $string['system'] = 'Sistema';
 $string['testclient'] = 'Cliente de prueba MNet';
 $string['testtrustedhosts'] = 'Probar una dirección';
-$string['testtrustedhostsexplain'] = 'Ingrese una dirección IP para ver si es un host de confianza.';
+$string['testtrustedhostsexplain'] = 'Introduzca una dirección IP para ver si es un host de confianza.';
 $string['theypublish'] = 'Ellos publican';
 $string['theysubscribe'] = 'Ellos suscriben';
 $string['transport_help'] = 'Estas opciones son recíprocas, de modo que usted solamente puede forzar a un servidor remoto a usar un certificado SSL firmado si su servidor tiene también un certificado SSL firmado.';
 $string['trustedhosts'] = 'Hosts XML-RPC';
-$string['trustedhostsexplain'] = '<p>El mecanismo de hosts de confianza permite que máquinas específicas ejecuten llamadas a través de XML-RPC a cualquier parte del API de Moodle. Esto está disponible para scripts para controlar el comportamiento de Moodle y puede ser una opción muy peligrosa para activar. Si se tienen dudas, mantenerlo desactivado.</p> <p><strong>Esto no es necesario para la Red de Trabajo Moodle(\'Moodle Networking\').</strong></p> <p>Para activarlo, ingrese una lista de direcciones IP o redes, una en cada línea. Algunos ejemplos:</p>Su host local:<br />127.0.0.1<br />Su host local (con un bloqueo de red):<br />127.0.0.1/32<br />Únicamente el host con dirección IP 192.168.0.7:<br />192.168.0.7/32<br />Cualquier host con una dirección IP entre 192.168.0.1 y 192.168.0.255:<br />192.168.0.0/24<br />Un host cualquiera:<br />192.168.0.0/0<br />Obviamente el último ejemplo <strong>no</strong> es una configuración recomendada.';
+$string['trustedhostsexplain'] = '<p>El mecanismo de hosts de confianza permite que máquinas específicas ejecuten llamadas a través de XML-RPC a cualquier parte del API de Moodle. Esto está disponible para scripts para controlar el comportamiento de Moodle y puede ser una opción muy peligrosa para activar. Si se tienen dudas, mantenerlo desactivado.</p> <p><strong>Esto no es necesario para la Red de Trabajo Moodle(\'Moodle Networking\').</strong></p> <p>Para activarlo, introduzca una lista de direcciones IP o redes, una en cada línea. Algunos ejemplos:</p>Su host local:<br />127.0.0.1<br />Su host local (con un bloqueo de red):<br />127.0.0.1/32<br />Únicamente el host con dirección IP 192.168.0.7:<br />192.168.0.7/32<br />Cualquier host con una dirección IP entre 192.168.0.1 y 192.168.0.255:<br />192.168.0.0/24<br />Un host cualquiera:<br />192.168.0.0/0<br />Obviamente el último ejemplo <strong>no</strong> es una configuración recomendada.';
 $string['turnitoff'] = 'Desconectarlo';
 $string['turniton'] = 'Conectarlo';
 $string['type'] = 'Tipo';

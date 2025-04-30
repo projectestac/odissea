@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'sv', version '4.1'.
+ * Strings for component 'form', language 'sv', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -50,7 +50,6 @@ $string['filesofthesetypes'] = 'Accepterade filtyper:';
 $string['filetypesany'] = 'Alla filtyper';
 $string['filetypesnotall'] = 'Det är inte tillåtet att välja \'Alla filtyper\' här';
 $string['filetypesnotallowed'] = 'Dessa filtyper är inte tillåtna här: {$a}';
-$string['filetypesnotwhitelisted'] = 'Dessa filtyper är inte tillåtna här: {$a}';
 $string['filetypesothers'] = 'Övriga filer';
 $string['filetypesunknown'] = 'Okända filtyper: {$a}';
 $string['general'] = 'Allmänt';

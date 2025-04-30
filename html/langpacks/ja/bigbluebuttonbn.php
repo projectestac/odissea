@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ja', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'ja', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'レコーディングを公開�
 $string['bigbluebuttonbn:unprotectrecordings'] = 'レコーディングを保護解除する';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'レコーディングを非公開にする';
 $string['bigbluebuttonbn:view'] = 'BigBlueButtonを表示する';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'すべてのレコーディングフォーマットを表示する';
 $string['bigbluebuttondisablednotification'] = 'BigBlueButtonの活動モジュールが無効にされたため、現在、既存のBigBlueButtonコース活動にアクセスできません。このプラグインを再度有効にする前にあなたがBlindside Networks Inc.の<a href="{$a}" target="_blank">データ処理契約</a>を読んで同意していることを確認してください。';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton活動モジュールが無効にされました。';
 $string['cachedef_currentfetch'] = '最近取得したデータを一覧表示するデータです。';
 $string['cachedef_recordings'] = 'レコーディングメタデータ';
 $string['cachedef_serverinfo'] = 'リモートサーバ情報';
+$string['cachedef_subplugins'] = 'サブプラグインのルーチンで使用されるキャッシュです。必要に応じてプラグインの検出処理を高速化します。';
 $string['cachedef_validatedurls'] = '検証済みURLチェックのキャッシュ';
 $string['calendarstarts'] = '{$a} は次にスケジュールされています:';
 $string['cannotperformaction'] = 'このレコーディングではアクション {$a} を実行できません。';
-$string['completionattendance'] = '学生は次のセッションに参加する必要があります:';
+$string['completionattendance'] = '要出席 (分)';
 $string['completionattendance_desc'] = 'ルームに入って少なくとも {$a} 分間滞在する必要があります。';
 $string['completionattendance_event_desc'] = '学生は少なくとも {$a} 分以上ルームに入っているかセッションに参加しています。';
-$string['completionattendancegroup'] = '要出席';
+$string['completionattendancegroup'] = '要出席 (分)';
 $string['completionattendancegroup_help'] = '完了には (n) 分のミーティング参加を要します。';
 $string['completionengagement_desc'] = 'ミーティング中に活動に参加する必要があります。';
 $string['completionengagementchats'] = 'チャット';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = '完了更新状況';
 $string['completionvalidatestate'] = '完了確認';
 $string['completionvalidatestatetriggered'] = '検証完了がトリガーされました。';
 $string['completionview'] = '要閲覧';
-$string['completionview_desc'] = '完了するには学生はルームを閲覧する必要があります。';
+$string['completionview_desc'] = 'ルーム閲覧';
 $string['completionview_event_desc'] = 'ルームを閲覧しました。';
+$string['config_checksum_algorithm'] = 'BigBlueButtonサーバチェックサムアルゴリズム';
+$string['config_checksum_algorithm_description'] = 'SHA1は古いサーバと互換性があります。SHA256およびSHA512はより安全です。SHA512はFIPS 140-2に準拠しています。';
 $string['config_default_messages'] = 'デフォルトメッセージ';
 $string['config_default_messages_description'] = '活動のメッセージデフォルトを設定する';
 $string['config_disablecam_default'] = '「ウェブカム有効化」をデフォルトで無効にする';
@@ -112,7 +116,7 @@ $string['config_experimental_features_description'] = '実験機能設定';
 $string['config_extended_capabilities'] = '拡張機能設定';
 $string['config_extended_capabilities_description'] = 'BigBlueButtonサーバが提供できる拡張機能の設定です。';
 $string['config_general'] = '一般設定';
-$string['config_general_description'] = 'これらの設定は常に使用されます。';
+$string['config_general_description'] = 'BigBlueButtonを設定するには独自のBigBlueButtonサーバおよび認証情報を使用するか、<a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks登録ポータル (新しいウィンドウで開きます)</a> から認証情報を取得してください。';
 $string['config_guestaccess_enabled'] = '外部ゲストアクセス';
 $string['config_guestaccess_enabled_description'] = 'あなたのサイトにアカウントのないユーザがルームにアクセスできるようにします。';
 $string['config_hideuserlist_default'] = '「ユーザ一覧秘匿」をデフォルトで有効にする';
@@ -143,10 +147,12 @@ $string['config_poll_interval'] = 'ルームの状態を更新するためのポ
 $string['config_poll_interval_description'] = 'ポーリング間隔は2秒以上にしてください。必要であればあなたは間隔を長くしてリモートサーバの負荷を軽減できます。';
 $string['config_presentation_default'] = 'デフォルトプレゼンテーションファイル';
 $string['config_presentation_default_description'] = 'すべてのルームで使用するにはファイルを提供する必要があります。';
-$string['config_preuploadpresentation'] = 'プレアップロードプレゼンテーション';
+$string['config_preuploadpresentation'] = 'プレゼンテーションファイル';
 $string['config_preuploadpresentation_description'] = 'これらの設定はUIのオプションを有効または無効にします。また、これらのオプションのデフォルト値を定義します。この機能はMoodleサーバがBigBlueButtonにアクセスできる場合のみ動作します。';
-$string['config_preuploadpresentation_editable'] = 'プリアップロードプレゼンテーション編集可';
-$string['config_preuploadpresentation_editable_description'] = 'ルームまたはカンファレンスの追加または更新時にUIでプリアップロードプレゼンテーション機能を編集できます。';
+$string['config_preuploadpresentation_editable'] = '活動ページのプレゼンテーションファイル';
+$string['config_preuploadpresentation_editable_description'] = '活動ページに表示するプレゼンテーションファイルをアップロードするオプションを活動設定に追加します。';
+$string['config_profile_picture_enabled'] = 'プロファイル画像を表示する';
+$string['config_profile_picture_enabled_description'] = 'BigBlueButtonのセッションで参加者のプロファイル画像を表示しますか?';
 $string['config_recording'] = 'レコーディング';
 $string['config_recording_all_from_start_default'] = '最初からレコーディングする';
 $string['config_recording_all_from_start_default_description'] = '新しいBigBlueButtonルーム追加時に「最初からレコーディングを開始する」設定をデフォルトで有効にしますか?';
@@ -165,6 +171,8 @@ $string['config_recording_protect_editable'] = '保護されたレコーディ�
 $string['config_recording_protect_editable_description'] = 'この設定を有効にした場合、インタフェースにレコーディングの保護/保護解除オプションが含まれます。';
 $string['config_recording_refresh_period'] = 'レコーディング更新期間 (秒)';
 $string['config_recording_refresh_period_description'] = 'レコーディングのリモート情報を更新するためにどのくらいの頻度でBigBlueButtonサーバに問い合わせしますか?';
+$string['config_recording_safe_formats'] = 'すべての人が閲覧可能なレコーディングフォーマット';
+$string['config_recording_safe_formats_description'] = 'すべての人が閲覧可能なフォーマットを選択してください。それ以外のフォーマットは教師およびケイパビリティ「mod/bigbluebuttonbn:viewallrecordingformats 」および「mod/bigbluebuttonbn:managerecordings」のある他のユーザのみ閲覧できます。';
 $string['config_recordingready_enabled'] = 'レコーディング利用可能通知を送信する';
 $string['config_recordingready_enabled_description'] = 'この設定を有効にした場合、レコーディングリンクが利用可能になった時点で通知が送信されます。この機能を使用するにはBigBlueButtonサーバでpost_publish_recording_ready_callbackスクリプトが有効にされている必要があります。';
 $string['config_recordings'] = 'レコーディングを表示する';
@@ -190,15 +198,9 @@ $string['config_scheduled_description'] = 'これらの設定ではスケジュ�
 $string['config_scheduled_pre_opening'] = 'オープニング時間前にアクセスできる';
 $string['config_scheduled_pre_opening_description'] = 'スケジュールオープニング時間前にルームが開く時間 (分) です。';
 $string['config_server_url'] = 'BigBlueButtonサーバURL';
-$string['config_server_url_description'] = 'デフォルトの認証情報はBlindside Networksが提供する<a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">Free BigBlueButton service for Moodle (新しいウィンドウで開く)</a>で以下のように制限されます:
-<ol>
-<li>1セッション最大長: 60分</li>
-<li>1セッション最大同時使用人数: 25人</li>
-<li>レコーディング有効期限: 7日間 (ダウンロード不可)</li>
-<li>学生のウェブカム: モデレータにのみ表示される</li>
-</ol>';
+$string['config_server_url_description'] = 'あなたのBigBlueButtonサーバのURLです。';
 $string['config_shared_secret'] = 'BigBlueButton共有シークレット';
-$string['config_shared_secret_description'] = 'BigBlueButtonサーバーのセキュリティシークレットです。デフォルトのシークレットはBlindside Networksが提供する無料のBigBlueButtonサービスのためのものです。';
+$string['config_shared_secret_description'] = 'あなたのBigBlueButtonサーバのセキュリティシークレットです';
 $string['config_uidelegation_enabled'] = 'UIデリゲーション有効';
 $string['config_uidelegation_enabled_description'] = 'これらの設定はBigBlueButtonサーバへのUIのデリゲーションを有効または無効にします。';
 $string['config_userlimit'] = 'ユーザ制限';
@@ -224,9 +226,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'モデレータ�
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButtonは非推奨のグローバル変数を持つconfig.phpを使用しています。今後のバージョンではサポートされないため、ファイルを変換してください。';
 $string['config_warning_curl_not_installed'] = 'この機能ではPHPのcURL拡張モジュールがインストールおよび有効にされている必要があります。この条件に合致している場合のみ、設定にアクセスすることができます。';
 $string['config_welcome_default'] = 'デフォルトウェルカムメッセージ';
-$string['config_welcome_default_description'] = 'ルームへの参加者の入室時に表示されるウェルカムメッセージです。フィールドを空白のままにした場合、BigBlueButtonサーバに設定されているメッセージが表示されます。';
+$string['config_welcome_default_description'] = 'ウエルカムメッセージは参加者が入室するときに表示されます。このフィールドを空白のままにした場合、言語ストリング「mod_form_field_welcome_default」 が使用されます。';
 $string['config_welcome_editable'] = 'デフォルトのウェルカムメッセージは教師が編集可能です。';
 $string['config_welcome_editable_description'] = 'インスタンスの追加または更新時にウェルカムメッセージの編集が可能です。';
+$string['credentials_warning'] = 'デフォルトのサーバ認証情報の使用はまもなく有効期限切れとなります (新しい認証情報を取得するには上のメモを参照してください)。';
 $string['dpainfonotsigned'] = 'このプラグインを有効にする前にあなたは<a href="{$a}">Blindside Networksデータ処理契約</a>を確実に読んで承諾する必要があります。';
 $string['enablingbigbluebutton'] = 'BigBlueButton活動を有効にする';
 $string['enablingbigbluebuttondpainfo'] = 'あなたのデータ保護義務に合致するため、このプラグインを有効にする前に<a href="{$a}" target="_blank">Blindside Networksデータ処理契約</a>を確実に読んで承諾する必要があります。あなたの個人情報保護専門家にご相談ください。';
@@ -316,6 +319,7 @@ $string['instance_type_default'] = 'レコーディング付きルーム';
 $string['instance_type_recording_only'] = 'レコーディングのみ';
 $string['instance_type_room_only'] = 'ルームのみ';
 $string['instanceprofilewithoutrecordings'] = 'このインスタンスプロファイルはレコーディングを表示できません。';
+$string['managebbbextplugins'] = 'BigBlueButton拡張プラグインを管理する';
 $string['messageprovider:instance_updated'] = 'BigBlueButtonセッションが更新されました。';
 $string['messageprovider:recording_ready'] = 'BigBlueButtonセッション利用可能';
 $string['minute'] = '分';
@@ -417,6 +421,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'ログが作成�
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'イベントを発生させたユーザのユーザIDです。';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'レコーディングに関するメタデータを保存します。';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = '最後にレコーディングを変更したユーザのユーザIDです。';
+$string['progress_createbigbluebuttonbn'] = 'BigBlueButton活動 ({$a}) を作成する';
 $string['recordings_from_deleted_activities'] = '削除された活動のレコーディング';
 $string['recordingurlnotfound'] = 'レコーディングURLは有効ではありません。';
 $string['removedevents'] = '削除されたイベント';
@@ -436,8 +441,12 @@ $string['search:activity'] = 'BigBlueButton - 活動情報';
 $string['search:tags'] = 'BigBlueButton - タグ情報';
 $string['sendnotification'] = '通知を送信する';
 $string['settings'] = 'BigBlueButton設定';
+$string['settings_credential_warning'] = 'BigBlueButton認証情報はまもなく有効期限切れとなります。詳細は<a href="{$a->settingslink}" target="_blank">BigBlueButton一般設定 (別ウィンドウで開きます)</a>をご覧ください。';
+$string['settings_credential_warning_no_capability'] = 'BigBlueButton認証情報はまもなく有効期限切れとなります。あなたのサイト管理者にお問い合わせください。';
 $string['started_at'] = '開始';
 $string['starts_at'] = '開始';
+$string['subplugintype_bbbext'] = 'BigBlueButton活動拡張モジュール';
+$string['subplugintype_bbbext_plural'] = 'BigBlueButton活動拡張モジュール';
 $string['taskname:check_dismissed_recordings'] = 'レコーディングが解除されていないか確認する';
 $string['taskname:check_pending_recordings'] = '保留中レコーディングを取得する';
 $string['userlimitreached'] = 'セッションに参加できるユーザ数が上限に達しました。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'fr', version '4.1'.
+ * Strings for component 'theme_classic', language 'fr', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'Préréglage de thème';
 $string['preset_desc'] = 'Veuillez choisir un préréglage pour modifier l’aspect du thème.';
 $string['presetfiles'] = 'Fichiers de préréglages additionnels pour le thème';
-$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pour des informations sur la façon de créer et partager vos propres fichiers de préréglages et consultez le <a href="https://archive.moodle.net/boost">catalogue des fichiers de préréglages</a> que d’autres utilisateurs ont partagés.';
+$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pour des informations sur la façon de créer et partager vos propres fichiers de préréglages et consultez le <a href="https://moodle.net/search?q=boost+presets">catalogue des fichiers de préréglages</a> que d’autres utilisateurs ont partagés.';
 $string['privacy:metadata'] = 'Le thème Classic n’enregistre aucune donnée personnelle.';
 $string['region-side-post'] = 'Droite';
 $string['region-side-pre'] = 'Gauche';

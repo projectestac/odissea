@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'gl', version '4.1'.
+ * Strings for component 'imscp', language 'gl', version '4.4'.
  *
  * @package     imscp
  * @category    string
@@ -43,19 +43,19 @@ $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcent
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
 $string['keepold'] = 'Arquivar paquetes';
 $string['keepoldexplain'] = 'Cantos paquetes se deberían de arquivar?';
-$string['modulename'] = 'Paquete de contido IMS';
+$string['modulename'] = 'Contido de paquete IMS';
 $string['modulename_help'] = 'Un paquete de contido IMS é unha colección de ficheiros que están empaquetados consonte a un estándar acordado de modo que poidan ser reutilizados en diferentes sistemas. O módulo de paquete de contido IMS activa tales paquetes de contido para que se suban como un ficheiro zip a un curso como un recurso.
 
 O contido adoita presentarse en varias páxinas, con navegación entre elas. Hai varios tipos de opcións para a presentación do contido nunha xanela de navegación cun menú de navegación ou botóns, etc.
 
-Pódese usar un paquete de contido IMS para presentar contido multimedia e animacións.';
+Pódese utilizar un paquete de contido IMS para a presentación de contido multimedia e animacións.';
 $string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'Paquetes de contido IMS';
 $string['navigation'] = 'Navegación';
-$string['packagefile'] = 'Ficheiro de paquete';
+$string['packagefile'] = 'Ficheiro de contido';
 $string['page-mod-imscp-x'] = 'Calquera páxina do módulo de contido IMS';
 $string['pluginadministration'] = 'Administración IMSCP';
-$string['pluginname'] = 'Paquete de contido IMS';
-$string['privacy:metadata'] = 'O engadido de paquete de contido IMS non almacena ningún dato persoal.';
-$string['search:activity'] = 'Paquete de contido IMS, información sobre os recursos';
+$string['pluginname'] = 'Contido de paquete IMS';
+$string['privacy:metadata'] = 'O complemento de paquete de contido IMS non almacena ningún dato persoal.';
+$string['search:activity'] = 'Paquete de contido IMS - información sobre os recursos';
 $string['toc'] = 'TdC';

@@ -152,9 +152,9 @@ class gradeimport_csv_load_data {
      * @param stdClass $record The grade record being inserted into the database.
      * @param int $studentid The student ID.
      * @param grade_item $gradeitem Grade item.
-     * @return bool|int true or insert id on success. Null if the grade value is too high or too low or grade item not exist.
+     * @return mixed true or insert id on success. Null if the grade value is too high or too low or grade item not exist.
      */
-    protected function insert_grade_record(stdClass $record, int $studentid, grade_item $gradeitem) {
+    protected function insert_grade_record(stdClass $record, int $studentid, grade_item $gradeitem): mixed {
         global $DB, $USER, $CFG;
         $record->importcode = $this->importcode;
         $record->userid     = $studentid;
@@ -476,8 +476,8 @@ class gradeimport_csv_load_data {
         // Check for mapto collisions.
         $maperrors = array();
         foreach ($map as $i => $j) {
-            if ($j == 0) {
-                // You can have multiple ignores.
+            if (($j == 0) || ($j == 'new')) {
+                // You can have multiple ignores or multiple new grade items.
                 continue;
             } else {
                 if (!isset($maperrors[$j])) {

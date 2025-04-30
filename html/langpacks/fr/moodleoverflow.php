@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodleoverflow', language 'fr', version '4.1'.
+ * Strings for component 'moodleoverflow', language 'fr', version '4.4'.
  *
  * @package     moodleoverflow
  * @category    string
@@ -215,7 +215,7 @@ $string['privacy:anonym_post_message'] = 'Ce contenu a été supprimé.';
 $string['privacy:anonym_user_name'] = 'Anonyme';
 $string['privacy:discussionsubscriptionpreference'] = 'Vous avez choisi la préfèrence d’abonnement à la discussion suivante pour ce forum : «{$a->preference}»';
 $string['privacy:grade'] = 'Votre rang pour ce forum Moodleoverflow.';
-$string['privacy:metadata:core_files'] = 'Moodleoverflow stocke les fichiers uploadés par l’utilisateur pour faire partie du message du forum.';
+$string['privacy:metadata:core_files'] = 'Moodleoverflow stocke les fichiers déposés par l’utilisateur pour faire partie du message du forum.';
 $string['privacy:metadata:moodleoverflow_discuss_subs'] = 'Informations sur les abonnements aux discussions de forum individuelles. Cela inclut quand un utilisateur a choisi de s’abonner ou de se désabonner d’une discussion.';
 $string['privacy:metadata:moodleoverflow_discuss_subs:discussion'] = 'L’ID de la discussion qui a été abonnée / désabonnée.';
 $string['privacy:metadata:moodleoverflow_discuss_subs:preference'] = 'Heure de début de l’abonnement.';

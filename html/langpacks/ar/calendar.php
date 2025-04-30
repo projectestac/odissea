@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ar', version '4.1'.
+ * Strings for component 'calendar', language 'ar', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'رابط التقويم';
 $string['calendarheading'] = 'التقويم {$a}';
 $string['calendarpreferences'] = 'تفضيلات التقويم';
 $string['calendartypes'] = 'أنواع التقويم';
-$string['calendarurl'] = 'رابط التقويم: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'رابط التقويم تم نسخه إلى الحافظة';
 $string['category'] = 'التصنيف';
 $string['categoryevent'] = 'حدث التصنيف';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'نسخ رابط التقويم';
 $string['copyurl'] = 'نسخ الرابط';
 $string['course'] = 'المساق';
 $string['coursecalendar'] = 'تقويم {$a}';
+$string['coursecalendarlink'] = 'تقويم المساق';
 $string['courseevent'] = 'حدث المساق';
 $string['courseevents'] = 'أحداث المساق';
 $string['courses'] = 'المقررات الدراسية';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = 'أتريد استيراد تقويم خار
 $string['importcalendarfrom'] = 'الاستيراد من';
 $string['importcalendarheading'] = 'استيراد التقويم...';
 $string['importfromfile'] = 'ملف التقويم (.ics)';
-$string['importfrominstructions'] = 'يرجى إما تقديم رابط للتقويم الخارجي أو رفع ملف.';
 $string['importfromurl'] = 'رابط التقويم';
 $string['invalideventtype'] = 'نوع الحدث الذي حددته غير صالح.';
 $string['invalidtimedurationminutes'] = 'المدة بالدقائق التي أدخلتها غير صالحة الرجاء أدخل المدة بالدقائق أكبر من الصفر أو اختر بلا مدة';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} أحداث';
 $string['mon'] = 'اثن';
 $string['monday'] = 'الاثنين';
 $string['monthly'] = 'شهرياً';
-$string['monthlyview'] = 'معاينة شهرية';
 $string['monthnext'] = 'الشهر القادم';
 $string['monthprev'] = 'الشهر السابق';
 $string['monththis'] = 'هذا الشهر';
@@ -197,7 +195,9 @@ $string['moreevents'] = '{$a} إضافية';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'مطلقاً';
 $string['newevent'] = 'حدث جديد';
+$string['newmonthannouncement'] = 'التقويم ليس مضبوطًا على {$a}.';
 $string['nocalendarsubscriptions'] = 'لا توجد لديك اشتراكات في التقويم بعد. هل تريد {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'لا توجد اشتراكات في التقويم حتى الآن. <a href="{$a}">استيراد تقويم خارجي</a>';
 $string['notitle'] = 'بلا عنوان';
 $string['noupcomingevents'] = 'لا توجد أحداث قادمة';
 $string['oneevent'] = 'حدث 1';

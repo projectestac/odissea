@@ -111,7 +111,7 @@ Feature: Manage custom report filters
     Then I should see "Filters reset"
     And the following fields in the "Full name" "core_reportbuilder > Filter" match these values:
       | Full name operator | Is any value |
-    And I should see "Admin User" in the "reportbuilder-table" "table"
+    And I should see "Admin User" in the "Users" "table"
 
   Scenario: Use report filters when previewing report
     Given the following "users" exist:

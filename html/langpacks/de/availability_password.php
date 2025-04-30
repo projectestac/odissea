@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_password', language 'de', version '4.1'.
+ * Strings for component 'availability_password', language 'de', version '4.4'.
  *
  * @package     availability_password
  * @category    string
@@ -32,16 +32,16 @@ $string['error_setpassword'] = 'Sie müssen ein Kennwort festlegen';
 $string['password:addinstance'] = 'Kennwortabfrage zu Aktivitäten hinzufügen';
 $string['passwordintro'] = 'Der Zugriff zu <em>{$a}</em> ist mit einem Kennwort geschützt. Wenn Sie das Kennwort nicht wissen, fragen Sie bitte Ihre Trainer/innen.';
 $string['passwordprotection'] = 'Kennwort erforderlich';
-$string['permanently'] = 'Dauerhaft';
+$string['permanently'] = 'dauerhaft';
 $string['pluginname'] = 'Voraussetzung: Kennwort';
 $string['privacy:metadata:availability_password_grant'] = 'Info zu Nutzer/innen, die das Kennwort für die Aktivität richtig eingegeben haben.';
 $string['privacy:metadata:availability_password_grant:cmid'] = 'Aktivitäts-ID, für die das Kennwort eingegeben wurde.';
 $string['privacy:metadata:availability_password_grant:courseid'] = 'Kurs-ID des Kurses, in dem das Kennwort eingegeben wurde.';
-$string['privacy:metadata:availability_password_grant:password'] = 'Das Kennwort, das eingegeben wurde.';
+$string['privacy:metadata:availability_password_grant:password'] = 'Kennwort, das eingegeben wurde.';
 $string['privacy:metadata:availability_password_grant:userid'] = 'Nutzer-ID der Person, die das Kennwort eingegeben hat.';
 $string['rememberpassword'] = 'Kennwort speichern';
 $string['requires_nopassword'] = 'Sie haben nicht das richtige Kennwort eingegeben.';
 $string['requires_password'] = 'Sie haben das richtige Kennwort eingegeben.';
 $string['title'] = 'Kennwort';
-$string['untillogout'] = 'Bis Nutzer/in sich abmeldet';
+$string['untillogout'] = 'bis Nutzer/in sich abmeldet';
 $string['wrongpassword'] = 'Falsches Kennwort';

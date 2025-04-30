@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'el', version '4.1'.
+ * Strings for component 'format_topcoll', language 'el', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Προσθήκη ενότητας';
 $string['arrow'] = 'Βέλος';
 $string['bulb'] = 'Λάμπα';
 $string['center'] = 'Κέντρο';
@@ -42,7 +41,6 @@ $string['coursesectionactivityfurtherinformationdata'] = 'Εμφάνιση πλ�
 $string['coursesectionactivityfurtherinformationfeedback'] = 'Εμφάνιση πληροφοριών ανατροφοδότησης';
 $string['coursesectionactivityfurtherinformationlesson'] = 'Εμφάνιση πληροφοριών διδασκαλίας';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Εμφάνιση πληροφοριών κουίζ';
-$string['creatingsection'] = 'Δημιουργία νέας ενότητας';
 $string['ctreset'] = 'Επιλογές επαναρχικοποίησης Συμπτυγμένων Θεμάτων';
 $string['ctreset_help'] = 'Επαναρχικοποίηση στις προεπιλεγμένες ρυθμίσεις των Συμπτυγμένων Θεμάτων.';
 $string['currentsection'] = 'Αυτή η ενότητα';
@@ -209,7 +207,6 @@ $string['privacy:metadata:preference:toggle'] = 'Η κατάσταση των ε
 $string['radio'] = 'Ραδιόφωνο';
 $string['readme_desc'] = 'Παρακαλούμε δείτε στο «{$a->url}» για περισσότερες πληροφορίες σχετικά με τα Συμπτυγμένα Θέματα.';
 $string['readme_title'] = 'Συμπτυγμένα Θέματα διάβασέ-με';
-$string['rebuildcoursecache'] = 'Επαναδημιουργία κρυφής μνήμης μαθήματος';
 $string['resetallcolour'] = 'Χρώματα';
 $string['resetallcolour_help'] = 'Επαναρχικοποιεί τα χρώματα και τις αδιαφάνειες σύμφωνα με τις προεπιλεγμένες τιμές του ιστοτόπου.';
 $string['resetalldisplayinstructions'] = 'Εμφάνιση οδηγιών';

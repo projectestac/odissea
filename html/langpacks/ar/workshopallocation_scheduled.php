@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'ar', version '4.1'.
+ * Strings for component 'workshopallocation_scheduled', language 'ar', version '4.4'.
  *
  * @package     workshopallocation_scheduled
  * @category    string
@@ -38,7 +38,7 @@ $string['currentstatusreset'] = 'إعادة تعيين';
 $string['currentstatusreset_help'] = 'حفظ النموذج مع هذا الاختيار يؤدي إلى إعادة تعيين الوضع الراهن. فستتم إزالة كافة المعلومات المنفذة السابقة حتى يمكن تنفيذ تخصيص جديد مرة أخرى (في حال تمكينها أعلاه).';
 $string['currentstatusresetinfo'] = 'قم بتأشير الخانة واحفظ النموذج لإعادة تعيين نتيجة التنفيذ';
 $string['currentstatusresult'] = 'نتيجة التنفيذ الأخيرة';
-$string['enablescheduled'] = 'مكّن جدولة التوزيع';
+$string['enablescheduled'] = 'تمكين جدولة التوزيع';
 $string['enablescheduledinfo'] = 'قم تلقائياً بتوزيع التسليمات عند نهاية طور التسليم';
 $string['pluginname'] = 'التوزيع المجدول';
 $string['privacy:metadata'] = 'ملحق التعيين المجدول لا يخزن أي بيانات شخصية. البيانات الشخصية الفعلية حول من سيقوم بتقييم من، يتم تخزينها بواسطة وحدة ورشة العمل نفسها وتشكل أساساً لتصدير تفاصيل التقييمات.';

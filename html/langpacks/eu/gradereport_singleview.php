@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'eu', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'eu', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Kendu baliogabetzeak';
 $string['save'] = 'Gorde';
 $string['savegrades'] = 'Kalifikazioak gordetzen';
 $string['savegradessuccess'] = 'Kalifikazioak ezarri dira {$a} elementuentzat';
-$string['searchgrades'] = 'Bilatu kalifikazio-elementuak';
 $string['selectagrade'] = 'Aukeratu kalifikazio-elementu bat';
 $string['selectgradeitemlink'] = 'Aukeratu kalifikazio-elementu bat';
 $string['singleview:view'] = 'Ikusi banakako ikuspegia';
 $string['singleviewdescription'] = 'Banakako ikuspegian aukeratutako kalifikazioak baliogabetu ala alde batera utzi eta kalifikazioak masiboki sartu ditzakezu.';
+$string['singleviewreport_gradeitem'] = 'Elementu honen banakako ikuspegia';
+$string['singleviewreport_user'] = 'Erabiltzaile honen banakako ikuspegia';
 $string['summarygrade'] = 'Erabiltzaileen taula bat hurrengo zutabeekin: ibiltartea, kalifikazioa, feedbacka eta kalifikazioren bat baliogabetu edo kanpoan utzi behar den zehazteko.';
 $string['summaryuser'] = 'Kalifikazio-elementuen taula bat hurrengo zutabeekin: kalifikazio-kategoria, ibiltartea, kalifikazioa, feedbacka eta kalifikazioren bat baliogabetu edo kanpoan utzi behar den zehazteko.';
 $string['unsavedataalert'] = 'Orri honetan gorde gabeko aldaketak badituzu galdu egingo dira kalifikazioak masiboki sartzearekin aurrera eginez gero.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Gorde gabeko datuen oharra';
 $string['userselect'] = 'Aukeratu jarduera';
 $string['viewby'] = 'Ikusi honen arabera';
 $string['viewsinglegradeitem'] = 'Aukeratu kalifikazio-elementu bat goian';
-$string['viewsingleuser'] = 'Aukeratu erabiltzaile bat goian bere kalifikazio guztiak ikusteko';
+$string['viewsingleuser'] = 'Bilatu erabiltzaile bat bere kalifikazio guztiak ikusteko';
 $string['viewsingleuserorgradeitem'] = 'Ikusi erabiltzaile ala kalifikazio-elementu bateko kalifikazio guztiak.';

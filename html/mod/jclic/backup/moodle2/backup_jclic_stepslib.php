@@ -37,22 +37,22 @@ class backup_jclic_activity_structure_step extends backup_activity_structure_ste
         $userinfo = $this->get_setting_value('userinfo');
 
         // Define each element separated
-        $jclic = new backup_nested_element('jclic', array('id'), array(
+        $jclic = new backup_nested_element('jclic', ['id'], [
             'name', 'intro', 'introformat', 'url', 'skin', 'maxattempts',
             'width', 'height', 'avaluation', 'maxgrade', 'grade', 'lang',
-            'exiturl', 'timeavailable', 'timedue', 'type'));
+            'exiturl', 'timeavailable', 'timedue', 'type']);
 
         $sessions = new backup_nested_element('sessions');
 
-        $session = new backup_nested_element('session', array('id'), array(
+        $session = new backup_nested_element('session', ['id'], [
             'session_id', 'user_id', 'session_datetime', 'project_name',
-            'session_key', 'session_code', 'session_context'));
+            'session_key', 'session_code', 'session_context']);
 
         $activities = new backup_nested_element('sessionactivities');
 
-        $activity = new backup_nested_element('sessionactivity', array('id'), array(
+        $activity = new backup_nested_element('sessionactivity', ['id'], [
             'session_id', 'activity_id', 'activity_name', 'num_actions', 'score',
-            'activity_solved', 'qualification', 'total_time', 'activity_code'));
+            'activity_solved', 'qualification', 'total_time', 'activity_code']);
 
         // Build the tree
         $jclic->add_child($sessions);
@@ -61,12 +61,12 @@ class backup_jclic_activity_structure_step extends backup_activity_structure_ste
         $activities->add_child($activity);
 
         // Define sources
-        $jclic->set_source_table('jclic', array('id' => backup::VAR_ACTIVITYID));
+        $jclic->set_source_table('jclic', ['id' => backup::VAR_ACTIVITYID]);
 
         // All the rest of elements only happen if we are including user info
         if ($userinfo) {
-            $session->set_source_table('jclic_sessions', array('jclicid' => backup::VAR_PARENTID));
-            $activity->set_source_table('jclic_activities', array('session_id' => '../../session_id'));
+            $session->set_source_table('jclic_sessions', ['jclicid' => backup::VAR_PARENTID]);
+            $activity->set_source_table('jclic_activities', ['session_id' => '../../session_id']);
         }
 
         // Define id annotations
@@ -74,8 +74,8 @@ class backup_jclic_activity_structure_step extends backup_activity_structure_ste
         $session->annotate_ids('user', 'user_id');
 
         // Define file annotations
-        $jclic->annotate_files('mod_jclic', 'intro', null);     // This file area hasn't itemid
-        $jclic->annotate_files('mod_jclic', 'content', null);   // This file area hasn't itemid
+        $jclic->annotate_files('mod_jclic', 'intro', null);   // This file area hasn't itemid
+        $jclic->annotate_files('mod_jclic', 'content', null); // This file area hasn't itemid
 
         // Return the root element (jclic), wrapped into standard activity structure
         return $this->prepare_activity_structure($jclic);

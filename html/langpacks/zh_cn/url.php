@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'zh_cn', version '4.1'.
+ * Strings for component 'url', language 'zh_cn', version '4.4'.
  *
  * @package     url
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowvariables'] = '允许 URL 变量';
+$string['allowvariables_desc'] = '允许将变量添加到 URL。通过变量，您可以将内部信息（例如用户名）作为 URL 的一部分进行传递。使用此功能时，请注意潜在的隐私风险。';
 $string['chooseavariable'] = '选择一个变量...';
 $string['clicktoopen'] = '点击{$a}链接打开资源。';
 $string['configdisplayoptions'] = '选择所有可以使用的选项。已有的设置不会改变。按住CTRL键选择多个字段。';

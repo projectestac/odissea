@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ar', version '4.1'.
+ * Strings for component 'portfolio', language 'ar', version '4.4'.
  *
  * @package     portfolio
  * @category    string
@@ -135,7 +135,7 @@ $string['leap2a_missingfield'] = 'حقل إدخال Leap2A {$a} مفقود';
 $string['leap2a_nonexistantlink'] = 'إدخال Leap2A ({$a->from}) حاول الارتباط بإدخال غير موجود ({$a->to}) مع الصلة {$a->rel}';
 $string['leap2a_overwritingselection'] = 'تجري الكتابة فوق النوع الأصلي للإدخال ({$a}) للاختيار الموجود في make_selection';
 $string['leap2a_selflink'] = 'إدخال Leap2A ({$a->id}) حاول الارتباط بنفسه مع الصلة {$a->rel}';
-$string['logs'] = 'سجل توثيق النقل';
+$string['logs'] = 'سجل وقوعات النقل';
 $string['logsummary'] = 'عمليات النقل الناجحة سابقاً';
 $string['manageportfolios'] = 'إدارة المحافظ';
 $string['manageyourportfolios'] = 'إدارة المحافظ الخاصة بك';

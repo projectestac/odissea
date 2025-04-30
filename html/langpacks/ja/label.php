@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ja', version '4.1'.
+ * Strings for component 'label', language 'ja', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者�
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = '新しいテキストおよびメディア領域を追加する';
 $string['label:view'] = 'テキストおよびメディア領域を表示する';
+$string['labelname'] = 'コースインデックスのタイトル';
+$string['labelname_help'] = 'タイトルはコースインデックスでテキストおよびメディアエリアを識別および活動完了のためにのみ使用されます。あなたが空白にした場合、タイトルはテキストの最初の文字を使用して自動生成されます。';
 $string['labeltext'] = 'テキスト';
 $string['modulename'] = 'テキストおよびメディア領域';
 $string['modulename_help'] = 'あなたはテキストおよびメディア領域でコースページにテキストおよびマルチメディアを表示できます。

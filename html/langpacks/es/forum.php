@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', version '4.1'.
+ * Strings for component 'forum', language 'es', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Suscribirse a todos los foros';
 $string['allunsubscribe'] = 'Darse de baja de la suscripción de todos los foros';
 $string['allusers'] = 'Todos los usuarios';
 $string['alreadyfirstpost'] = 'Ésta ya es la primera aportación al debate';
+$string['announcementsettings'] = 'Ajustes por defecto del foro de avisos';
+$string['announcementsettings_help'] = 'Estos ajustes definen los valores por defecto para todos los foros de avisos.';
 $string['anyfile'] = 'Cualquier archivo';
 $string['areaattachment'] = 'Archivos adjuntos';
 $string['areapost'] = 'Mensajes';
@@ -65,6 +67,7 @@ Los usuarios con el permiso \'moodle/forum:ostwithoutthrottling\' están exentos
 $string['blockperioddisabled'] = 'No bloquear';
 $string['blogforum'] = 'Foro estándar con formato de blog.';
 $string['bynameondate'] = 'de {$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Cantidad de foros de discusión';
 $string['cachedef_forum_is_tracked'] = 'Estado de seguimiento del foro para el usuario';
 $string['calendardue'] = '{$a} pendiente';
 $string['cancelreply'] = 'Cancelar respuesta';
@@ -114,15 +117,16 @@ $string['closegrader'] = 'Cerrar calificador';
 $string['completiondetail:discussions'] = 'Iniciar temas: {$a}';
 $string['completiondetail:posts'] = 'Hacer publicaciones en el foro: {$a}';
 $string['completiondetail:replies'] = 'Publicar respuestas: {$a}';
-$string['completiondiscussions'] = 'El usuario debe crear debates:';
+$string['completiondiscussions'] = 'Crear debates';
 $string['completiondiscussionsdesc'] = 'El estudiante debe crear al menos {$a} discusión(es)';
 $string['completiondiscussionsgroup'] = 'Requiere debates';
 $string['completiondiscussionshelp'] = 'se requieren debates para completar';
-$string['completionposts'] = 'El usuario debe aportar debates o réplicas:';
+$string['completionposts'] = 'Crear debates o réplicas';
 $string['completionpostsdesc'] = 'El estudiante debe publicar al menos {$a} discusión(es) o respuesta(s)';
 $string['completionpostsgroup'] = 'Requerir mensajes';
 $string['completionpostshelp'] = 'se requieren debates o réplicas para completar';
-$string['completionreplies'] = 'El usuario debe enviar réplicas:';
+$string['completionpostsinforums'] = 'Publicar en foros';
+$string['completionreplies'] = 'Enviar réplicas';
 $string['completionrepliesdesc'] = 'El estudiante debe publicar al menos {$a} respuesta(s)';
 $string['completionrepliesgroup'] = 'Requerir réplicas';
 $string['completionreplieshelp'] = 'se requieren réplicas para completar';
@@ -258,6 +262,7 @@ $string['eventassessableuploaded'] = 'Algún contenido ha sido publicado.';
 $string['eventcoursesearched'] = 'Curso buscado';
 $string['eventdiscussioncreated'] = 'Tema creado';
 $string['eventdiscussiondeleted'] = 'Tema borrado';
+$string['eventdiscussionlockupdated'] = 'Bloqueo de discusión actualizado';
 $string['eventdiscussionmoved'] = 'Tema movido';
 $string['eventdiscussionpinned'] = 'Debate fijado';
 $string['eventdiscussionsubscriptioncreated'] = 'Se ha suscrito a esta discusión';
@@ -265,6 +270,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Se ha borrado la suscripción d
 $string['eventdiscussionunpinned'] = 'Debate no fijado';
 $string['eventdiscussionupdated'] = 'Discusión actualizada';
 $string['eventdiscussionviewed'] = 'Tema visto';
+$string['eventforumsubscriptionupdated'] = 'Modo de suscripción actualizado';
 $string['eventpostcreated'] = 'Mensaje creado';
 $string['eventpostdeleted'] = 'Mensaje borrado';
 $string['eventpostupdated'] = 'Mensaje actualizado';
@@ -299,6 +305,7 @@ $string['forum:addinstance'] = 'Añadir un nuevo foro';
 $string['forum:addnews'] = 'Añadir noticias';
 $string['forum:addquestion'] = 'Añadir pregunta';
 $string['forum:allowforcesubscribe'] = 'Permitir la suscripción forzosa.';
+$string['forum:canmailnow'] = 'Puede escribir en foro de preguntas y respuestas sin demora';
 $string['forum:canoverridecutoff'] = 'Publicar en foros después de su fecha límite';
 $string['forum:canoverridediscussionlock'] = 'Contestar a discusiones bloqueadas';
 $string['forum:canposttomygroups'] = 'Puede publicar en todos los grupos a los que tiene acceso';
@@ -486,7 +493,8 @@ $string['noattachments'] = 'No hay archivos adjuntos a este mensaje';
 $string['nodiscussions'] = 'Aún no hay temas de debate en este foro';
 $string['nodiscussionsstartedby'] = '{$a} no ha comenzado ningún debate';
 $string['nodiscussionsstartedbyyou'] = 'Todavía no hay ningún debate iniciado';
-$string['noguestpost'] = 'Lo sentimos, los invitados no pueden enviar mensajes.';
+$string['noguestpost'] = 'Sólo pueden enviar mensajes usuarios autenticados.';
+$string['noguestpost:title'] = 'Autentíquese para continuar';
 $string['noguestsubscribe'] = 'Lo lamentamos pero los invitados no pueden suscribirse.';
 $string['noguesttracking'] = 'Lo sentimos, los invitados no pueden ajustar opciones de rastreo.';
 $string['nomorepostscontaining'] = 'No se encontraron más mensajes que contengan {$a}';
@@ -544,9 +552,6 @@ $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver el mensaje en su contexto';
 $string['postisprivatereply'] = 'Esta es una respuesta privada. Solo lo pueden ver usted y cualquier persona que tenga la capacidad de ver respuestas privadas, como profesores o administradores.';
 $string['postmailinfo'] = 'Esta es una copia del mensaje publicado en {$a}.';
-$string['postmailinfolink'] = 'Esta es una copia de un mensaje enviado a {$a->coursename}.
-
-Para responder haga clic en el link: {$a->replylink}';
 $string['postmailnow'] = '<p>Este mensaje será enviado inmediatamente a todos los suscritos al foro.</p>';
 $string['postmailreply'] = 'Para responder haga clic en este enlace: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
@@ -554,11 +559,11 @@ $string['postrating1'] = 'Conocimiento mayoritariamente separado';
 $string['postrating2'] = 'Separado y conectado';
 $string['postrating3'] = 'Conocimiento mayoritariamente conectado';
 $string['posts'] = 'Mensajes';
-$string['postsfrom'] = 'Mensaje de';
+$string['postsfrom'] = 'Mensajes desde';
 $string['postsmadebyuser'] = 'Aportación realizada por {$a}';
 $string['postsmadebyuserincourse'] = 'Aportación realizada por {$a->fullname} en {$a->coursename}';
 $string['postsmadeincourse'] = 'Mensajes publicados en {$a}';
-$string['poststo'] = 'Mensaje para';
+$string['poststo'] = 'Mensajes hasta';
 $string['posttoforum'] = 'Enviar al foro';
 $string['posttomygroups'] = 'Publicar una copia para todos los grupos';
 $string['posttomygroups_help'] = 'Publica una copia de este mensaje en todos los grupos a los que tenga acceso. Los participantes de los grupos a los que no tenga acceso no verán esta publicación';

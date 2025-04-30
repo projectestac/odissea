@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'ar', version '4.1'.
+ * Strings for component 'ouwiki', language 'ar', version '4.4'.
  *
  * @package     ouwiki
  * @category    string
@@ -117,4 +117,5 @@ $string['showwordcounts_help'] = 'عند تشغيله، سيتم احتساب ع
 $string['startannotation'] = 'بداية الشرح';
 $string['typeinpagename'] = 'أكتب اسم الصفحة هنا';
 $string['typeinsectionname'] = 'إطبع عنوان القسم هنا';
+$string['wikiintro'] = 'الوصف';
 $string['wikirecentchanges_from'] = 'تغييرات في الويكي (صفحة {$a})';

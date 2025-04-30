@@ -38,7 +38,7 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 		}
 		$postData = $this->webServiceEnvelope($s->write($mqr));
 		$httpl = new com_wiris_quizzes_impl_HttpToQuizzesListener($listener, $mqr, $this, $async);
-		$http = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getHttpObject($httpl, $this->getServiceUrl(), "quizzes", $postData);
+		$http = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getHttpObject($httpl, $this->getServiceUrl(), new com_wiris_quizzes_impl_ServiceProxyRoute("quizzes", null), $postData, "text/xml");
 		$http->setAsync($async);
 		$http->request(true);
 	}

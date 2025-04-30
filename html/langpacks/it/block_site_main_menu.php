@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'it', version '4.1'.
+ * Strings for component 'block_site_main_menu', language 'it', version '4.4'.
  *
  * @package     block_site_main_menu
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Menu principale';
-$string['privacy:metadata'] = 'Il blocco Menu principale visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Menu principale visualizza solamente dati memorizzati da altri componenti.';
 $string['site_main_menu:addinstance'] = 'Aggiungere blocco Menu principale';

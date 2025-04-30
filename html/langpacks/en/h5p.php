@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'en', version '4.1'.
+ * Strings for component 'h5p', language 'en', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -50,6 +50,7 @@ $string['authorname'] = 'Author\'s name';
 $string['authorrole'] = 'Author\'s role';
 $string['back'] = 'Back';
 $string['by'] = 'by';
+$string['cancelCrop'] = 'Cancel crop';
 $string['cancelPublishConfirmationDialogCancelButtonText'] = 'No';
 $string['cancelPublishConfirmationDialogConfirmButtonText'] = 'Yes';
 $string['cancelPublishConfirmationDialogDescription'] = 'Are you sure you want to cancel the sharing process?';
@@ -69,6 +70,7 @@ $string['changelog'] = 'Changelog';
 $string['changeplaceholder'] = 'Photo cropped, text changed, etc.';
 $string['city'] = 'City';
 $string['close'] = 'Close';
+$string['confirmCrop'] = 'Confirm crop';
 $string['confirmdialogbody'] = 'Please confirm that you wish to proceed. This action cannot be undone.';
 $string['confirmdialogheader'] = 'Confirm action';
 $string['confirmlabel'] = 'Confirm';
@@ -92,6 +94,7 @@ $string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: {$
 $string['couldNotReadFileFromZip'] = 'Unable to read file from the package: {$a->%fileName}';
 $string['country'] = 'Country';
 $string['creativecommons'] = 'Creative Commons';
+$string['cropImage'] = 'Crop image';
 $string['currentStep'] = 'Step :step of :total';
 $string['date'] = 'Date';
 $string['deletelibraryconfirm'] = '<p>Are you sure you want to delete version <em>\'{$a->version}\'</em> from library <em>\'{$a->name}\'</em>? It will remove the library and all its uses.</p><p>This operation can not be undone.</p>';
@@ -127,6 +130,8 @@ $string['filter_displayh5p_description'] = 'The Display H5P filter converts URLs
 $string['fullscreen'] = 'Fullscreen';
 $string['gpl'] = 'General Public License v3';
 $string['h5p'] = 'H5P';
+$string['h5pcustomcss'] = 'Custom CSS';
+$string['h5pcustomcss_help'] = 'CSS to apply to H5P content.';
 $string['h5peditor'] = 'H5P editor';
 $string['h5pfilenotfound'] = 'H5P file not found';
 $string['h5pinvalidurl'] = 'Invalid H5P content URL.';
@@ -139,6 +144,7 @@ $string['h5ppackage_help'] = 'An H5P content type is a file with an H5P or ZIP e
 $string['h5pprivatefile'] = 'This H5P content can\'t be displayed because you don\'t have access to the .h5p file.';
 $string['h5psettings'] = 'H5P settings';
 $string['h5ptitle'] = 'Visit h5p.org to check out more content.';
+$string['height'] = 'height';
 $string['helpChoosingLicense'] = 'Help me choose a license';
 $string['hideadvanced'] = 'Hide advanced';
 $string['icon'] = 'Icon';
@@ -207,6 +213,7 @@ $string['missinglibrary'] = 'Missing required library {$a->@library}';
 $string['missinglibraryfile'] = 'The file "{$a->%file}" is missing from library: "{$a->%name}"';
 $string['missinglibraryjson'] = 'Could not find library.json file with valid json format for library {$a->%name}';
 $string['missinglibraryproperty'] = 'The required property {$a->%property} is missing from {$a->%library}';
+$string['missingmainlibrary'] = 'Missing main library {$a->@library}';
 $string['missingmbstring'] = 'The mbstring PHP extension is not loaded. It is required for H5P to function properly.';
 $string['missinguploadpermissions'] = 'Note that the libraries may exist in the file you uploaded, but you\'re not allowed to upload new libraries. Please contact your administrator.';
 $string['next'] = 'Next';
@@ -253,6 +260,8 @@ $string['reviewAndSave'] = 'Review & Save';
 $string['reviewAndShare'] = 'Review & Share';
 $string['reviewInfo'] = 'Review info';
 $string['reviewMessage'] = 'Please review the info below before you share';
+$string['rotateLeft'] = 'Rotate left';
+$string['rotateRight'] = 'Rotate right';
 $string['saveChanges'] = 'Save changes';
 $string['screenshots'] = 'Screenshots';
 $string['screenshotsDescription'] = 'Add up to five screenshots of your content';
@@ -288,6 +297,7 @@ $string['updatedlibraries'] = 'Updated {$a->%old} H5P libraries.';
 $string['updatedlibrary'] = 'Updated {$a->%old} H5P library.';
 $string['uploadlibraries'] = 'Upload H5P content types';
 $string['uploadsuccess'] = 'H5P content types uploaded successfully';
+$string['width'] = 'width';
 $string['wrongversion'] = 'The version of the H5P library {$a->%machineName} used in this content is not valid. Content contains {$a->%contentLibrary}, but it should be {$a->%semanticsLibrary}.';
 $string['year'] = 'Year';
 $string['years'] = 'Year(s)';

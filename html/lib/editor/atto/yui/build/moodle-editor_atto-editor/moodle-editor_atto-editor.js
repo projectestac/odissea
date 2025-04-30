@@ -776,7 +776,7 @@ EditorTextArea.prototype = {
             // Insert the cleaned content.
             this.textarea.set('value', newValue);
 
-            // Trigger the onchange callback on the textarea, essentially to notify moodle-core-formchangechecker.
+            // Trigger the onchange callback on the textarea, essentially to notify the formchangechecker module.
             this.textarea.simulate('change');
 
             // Trigger handlers for this action.
@@ -3160,7 +3160,6 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorFilepicker]);
         "node-event-simulate",
         "yui-throttle",
         "moodle-core-notification-dialogue",
-        "moodle-core-notification-confirm",
         "moodle-editor_atto-rangy",
         "handlebars",
         "timers",

@@ -31,13 +31,6 @@ defined('MOODLE_INTERNAL') || die();
  */
 class orphaned extends base {
     public function is_uninstall_allowed() {
-        // XTEC ************ AFEGIT - Disable uninstalling
-        // 2014.09.09 @pferre22
-        if (!get_protected_agora()) {
-            return false;
-        }
-        //************ FI
-
         return true;
     }
 
@@ -71,7 +64,7 @@ class orphaned extends base {
      * @param string $type the name of the plugintype, eg. mod, auth or workshopform
      * @param string $typerootdir full path to the location of the plugin dir
      * @param string $typeclass the name of the actually called class
-     * @param core_plugin_manager $pluginman the plugin manager calling this method
+     * @param \core_plugin_manager $pluginman the plugin manager calling this method
      * @return array of plugintype classes, indexed by the plugin name
      */
     public static function get_plugins($type, $typerootdir, $typeclass, $pluginman) {

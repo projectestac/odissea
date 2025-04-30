@@ -38,6 +38,11 @@ defined('MOODLE_INTERNAL') || die();
  * Execute jclic upgrade from the given old version
  *
  * @param int $oldversion
+ * @throws ddl_exception
+ * @throws ddl_field_missing_exception
+ * @throws ddl_table_missing_exception
+ * @throws dml_exception
+ * @throws moodle_exception
  * @return bool
  */
 function xmldb_jclic_upgrade($oldversion) {
@@ -47,12 +52,13 @@ function xmldb_jclic_upgrade($oldversion) {
 
     if ($oldversion < 2011011900) {
         $table = new xmldb_table('jclic');
-        /// Define lang field format to be added to jclic
+
+        // Define lang field format to be added to jclic.
         $field = new xmldb_field('lang');
         $field->set_attributes(XMLDB_TYPE_CHAR, '10', null, XMLDB_NOTNULL, null, 'ca', 'url');
-        $result = $result && $dbman->add_field($table, $field);
+        $result = $dbman->add_field($table, $field);
 
-        /// Define exiturl field format to be added to jclic
+        // Define exiturl field format to be added to jclic.
         $field = new xmldb_field('exiturl');
         $field->set_attributes(XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null, 'url');
         $result = $result && $dbman->add_field($table, $field);
@@ -60,7 +66,7 @@ function xmldb_jclic_upgrade($oldversion) {
 
     if ($oldversion < 2011122902) {
 
-        /// Define field introformat to be added to jclic
+        // Define field introformat to be added to jclic
         $table = new xmldb_table('jclic');
         $field = new xmldb_field('description', XMLDB_TYPE_TEXT, 'small', null, null, null, null, 'name');
         if ($dbman->field_exists($table, $field)) {
@@ -77,9 +83,9 @@ function xmldb_jclic_upgrade($oldversion) {
 
         // conditionally migrate to html format in intro
         if ($CFG->texteditors !== 'textarea') {
-            $rs = $DB->get_recordset('jclic', array('introformat'=>FORMAT_MOODLE), '', 'id,intro,introformat');
+            $rs = $DB->get_recordset('jclic', ['introformat' => FORMAT_MOODLE], '', 'id,intro,introformat');
             foreach ($rs as $f) {
-                $f->intro       = text_to_html($f->intro, false, false, true);
+                $f->intro = text_to_html($f->intro, false, false, true);
                 $f->introformat = FORMAT_HTML;
                 $DB->update_record('jclic', $f);
                 upgrade_set_timeout();
@@ -87,7 +93,7 @@ function xmldb_jclic_upgrade($oldversion) {
             $rs->close();
         }
 
-        /// jclic savepoint reached
+        // jclic savepoint reached.
         upgrade_mod_savepoint(true, 2011122902, 'jclic');
     }
 
@@ -95,20 +101,20 @@ function xmldb_jclic_upgrade($oldversion) {
 
     if ($oldversion < 2012042700) {
 
-        require_once("$CFG->dirroot/mod/jclic/db/upgradelib.php");
-        // Add upgrading code from 1.9 (+ new file storage system)
+        require_once "$CFG->dirroot/mod/jclic/db/upgradelib.php";
+        // Add upgrading code from 1.9 (+ new file storage system).
         jclic_migrate_files();
 
-        // Add fields grade, timeavailable and timedue on table jclic
+        // Add fields grade, timeavailable and timedue on table jclic.
         $table = new xmldb_table('jclic');
         $field = new xmldb_field('grade', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'maxgrade');
         $dbman->add_field($table, $field);
 
         // Update jclic.grade with the jclic.max_grade value
-        if ($jclics = $DB->get_records('jclic')){
-            foreach($jclics as $jclic){
+        if ($jclics = $DB->get_records('jclic')) {
+            foreach ($jclics as $jclic) {
                 if (empty($jclic->maxgrade)) $jclic->maxgrade = 10;
-                $jclic->grade= $jclic->maxgrade;
+                $jclic->grade = $jclic->maxgrade;
                 $DB->update_record("jclic", $jclic);
             }
         }
@@ -119,7 +125,7 @@ function xmldb_jclic_upgrade($oldversion) {
         $field = new xmldb_field('timedue', XMLDB_TYPE_INTEGER, '10', XMLDB_UNSIGNED, null, null, '0', 'timeavailable');
         $dbman->add_field($table, $field);
 
-        // jclic savepoint reached
+        // jclic savepoint reached.
         upgrade_mod_savepoint(true, 2012042700, 'jclic');
     }
 
@@ -130,45 +136,45 @@ function xmldb_jclic_upgrade($oldversion) {
         $dbman->drop_index($table, $key);
 
         // Copy jclic_sessions.id to jclic_sessions.session_id and update jclic_activities.session_id
-        if ($sessions = $DB->get_records('jclic_sessions')){
-            foreach($sessions as $session){
+        if ($sessions = $DB->get_records('jclic_sessions')) {
+            foreach ($sessions as $session) {
                 $sql = 'UPDATE {jclic_activities} SET session_id=? WHERE session_id=? ';
                 $params = array($session->id, $session->session_id);
                 $DB->execute($sql, $params);
                 $session->session_id = $session->id;
-                $DB->update_record("jclic_sessions", $session);
+                $DB->update_record('jclic_sessions', $session);
             }
         }
 
-        // jclic savepoint reached
+        // jclic savepoint reached.
         upgrade_mod_savepoint(true, 2012050703, 'jclic');
     }
 
     if ($oldversion < 2014040400) {
-        if ($activities = $DB->get_records('jclic_activities',array(),'', 'id, total_time')){
-            foreach($activities as $activity){
-                $activity->total_time =  ceil($activity->total_time/1000);
+        if ($activities = $DB->get_records('jclic_activities', [], '', 'id, total_time')) {
+            foreach ($activities as $activity) {
+                $activity->total_time = ceil($activity->total_time / 1000);
                 $DB->update_record("jclic_activities", $activity);
             }
         }
 
-        // jclic savepoint reached
+        // jclic savepoint reached.
         upgrade_mod_savepoint(true, 2014040400, 'jclic');
     }
 
     if ($oldversion < 2015050600) {
 
-        if (isset($CFG->jclic_jarbase) && !empty($CFG->jclic_jarbase)) {
+        if (!empty($CFG->jclic_jarbase)) {
             set_config('jarbase', $CFG->jclic_jarbase, 'jclic');
         }
         unset_config('jclic_jarbase');
 
-        if (isset($CFG->jclic_lap) && !empty($CFG->jclic_lap)) {
+        if (!empty($CFG->jclic_lap)) {
             set_config('lap', $CFG->jclic_lap, 'jclic');
         }
         unset_config('jclic_lap');
 
-        if (isset($CFG->jclic_pluginjs) && !empty($CFG->jclic_pluginjs)) {
+        if (!empty($CFG->jclic_pluginjs)) {
             set_config('pluginjs', $CFG->jclic_pluginjs, 'jclic');
         }
         unset_config('jclic_pluginjs');
@@ -188,10 +194,10 @@ function xmldb_jclic_upgrade($oldversion) {
 
     if ($oldversion < 2018112000) {
 
-        // Modify default values for 'width' and 'height' on table 'jclic'
+        // Modify default values for 'width' and 'height' on table 'jclic'.
         $table = new xmldb_table('jclic');
 
-        // Change default width to 800
+        // Change default width to 800.
         $field = new xmldb_field('width', XMLDB_TYPE_INTEGER, '5');
         $field->setDefault('800');
         $dbman->change_field_default($table, $field);
@@ -212,7 +218,7 @@ function xmldb_jclic_upgrade($oldversion) {
         $field = new xmldb_field('lang', XMLDB_TYPE_CHAR, '30');
         $dbman->change_field_precision($table, $field);
 
-        upgrade_mod_savepoint(true, 2020110400, 'jclic');        
+        upgrade_mod_savepoint(true, 2020110400, 'jclic');
     }
 
     // Final return of upgrade result (true, all went good) to Moodle.

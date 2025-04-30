@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'ro', version '4.1'.
+ * Strings for component 'tiny_equation', language 'ro', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'Comenzile TeX afișate în tab-ul cu simboluri 
 $string['librarygroup4'] = 'Avansat';
 $string['librarygroup4_desc'] = 'Comenzile TeX afișate în tab-ul avansat';
 $string['modaltitle'] = 'Editor ecuație';
-$string['pluginname'] = 'Editor de ecuație Tiny';
+$string['pluginname'] = 'Editor de ecuație';
 $string['preview'] = 'Previzualizare ecuație';
 $string['privacy:metadata'] = 'Editorul ecuație pentru TinyMCE nu stochează date personale.';
 $string['saveequation'] = 'Salvează ecuația';

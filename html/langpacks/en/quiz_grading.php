@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'en', version '4.1'.
+ * Strings for component 'quiz_grading', language 'en', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Also show questions that have been gra
 $string['attemptstograde'] = 'Attempts to grade';
 $string['automaticallygraded'] = 'Automatically graded';
 $string['backtothelistofquestions'] = 'Back to the list of questions';
-$string['bydate'] = 'By date';
-$string['bystudentfirstname'] = 'By student first name';
-$string['bystudentidnumber'] = 'By student ID number';
-$string['bystudentlastname'] = 'By student last name';
 $string['cannotgradethisattempt'] = 'Cannot grade this attempt.';
 $string['cannotloadquestioninfo'] = 'Unable to load questiontype specific question information';
 $string['changeoptions'] = 'Change options';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'All {$a} attempts on this question.';
 $string['gradingattempt'] = 'Attempt number {$a->attempt} for {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Grading attempts {$a->from} to {$a->to} of {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Attempt number {$a->attempt} for {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Attempt number {$a->attempt} for {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Next {$a} ungraded attempts';
 $string['gradingnotallowed'] = 'You do not have permission to manually grade responses in this quiz';
 $string['gradingquestionx'] = 'Grading question {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Gradable question with ID {$a} not found';
 $string['noquestionsfound'] = 'No manually graded questions found';
 $string['nothingfound'] = 'Nothing to display';
 $string['options'] = 'Options';
-$string['orderattempts'] = 'Order attempts';
 $string['orderattemptsby'] = 'Order attempts by';
 $string['pluginname'] = 'Manual grading';
 $string['privacy:preference:order'] = 'What order to show the attempts that need grading.';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Questions per page';
 $string['questionsthatneedgrading'] = 'Questions that need grading';
 $string['questiontitle'] = 'Question {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} attempts {$a->openspan}graded{$a->closespan}).';
 $string['random'] = 'Random';
-$string['randomly'] = 'Randomly';
 $string['saveandnext'] = 'Save and show next';
 $string['showstudentnames'] = 'Show student names';
 $string['tograde'] = 'To grade';

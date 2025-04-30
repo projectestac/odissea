@@ -4,10 +4,10 @@
 
 if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2012.05.23 @sarjona
-if (get_protected_agora()) {
-// ************ FI
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
 
     // Experimental settings page
     $ADMIN->add('development', new admin_category('experimental', new lang_string('experimental','admin')));
@@ -38,6 +38,16 @@ if (get_protected_agora()) {
         new lang_string('enablecourserelativedates', 'core_admin'),
         new lang_string('enablecourserelativedates_desc', 'core_admin'), 0));
 
+    // Sharing to MoodleNet setting.
+    $temp->add(new admin_setting_configcheckbox('enablesharingtomoodlenet',
+        new lang_string('enablesharingtomoodlenet', 'core_admin'),
+        new lang_string('enablesharingtomoodlenet_desc', 'core_admin'), 0));
+
+    // New communication subsystem setting.
+    $temp->add(new admin_setting_configcheckbox('enablecommunicationsubsystem',
+        new lang_string('enablecommunicationsubsystem', 'core_admin'),
+        new lang_string('enablecommunicationsubsystem_desc', 'core_admin'), 0));
+
     $ADMIN->add('experimental', $temp);
 
     // "debugging" settingpage
@@ -56,6 +66,7 @@ if (get_protected_agora()) {
              100 => new lang_string('debugsqltrace100', 'admin'))));
     $temp->add(new admin_setting_configcheckbox('debugvalidators', new lang_string('debugvalidators', 'admin'), new lang_string('configdebugvalidators', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('debugpageinfo', new lang_string('debugpageinfo', 'admin'), new lang_string('configdebugpageinfo', 'admin'), 0));
+    $temp->add(new admin_setting_configcheckbox('debugtemplateinfo', new lang_string('debugtemplateinfo', 'admin'), new lang_string('debugtemplateinfo_desc', 'admin'), 0));
     $ADMIN->add('development', $temp);
 
     // "Profiling" settingpage (conditionally if the 'xhprof' extension is available only).
@@ -111,15 +122,26 @@ if (get_protected_agora()) {
         $ADMIN->add('development', new admin_externalpage('mnettestclient', new lang_string('testclient', 'mnet'), "$CFG->wwwroot/$CFG->admin/mnet/testclient.php"));
     }
 
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    }
+    // ************ FI
+
     $ADMIN->add('development', new admin_externalpage('purgecaches', new lang_string('purgecachespage', 'admin'),
             "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
 
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
+
     $ADMIN->add('development', new admin_externalpage('thirdpartylibs', new lang_string('thirdpartylibs','admin'), "$CFG->wwwroot/$CFG->admin/thirdpartylibs.php"));
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.05.23 @sarjona
-    } else {
-        $ADMIN->add('development', new admin_externalpage('purgecaches', get_string('purgecaches','admin'), "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
+    $ADMIN->add('development', new admin_externalpage('hooksoverview',
+        new lang_string('hooksoverview', 'admin'), "$CFG->wwwroot/$CFG->admin/hooks.php"));
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
+    // 2024.10.16 @aginard
     }
     // ************ FI
 

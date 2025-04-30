@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ro', version '4.1'.
+ * Strings for component 'auth_lti', language 'ro', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,9 +38,8 @@ $string['firstlaunchnotice'] = 'Se pare că este prima dată când aici. Vă rug
 $string['getstartedwithnewaccount'] = 'Începeți cu un cont nou';
 $string['haveexistingaccount'] = 'Am un cont existent';
 $string['linkthisaccount'] = 'Conectați acest cont';
-$string['mustbeloggedin'] = 'Autentifică-te pentru a te conecta la contul existent';
+$string['mustbeloggedin'] = 'Autentifică-te pentru a te conecta la contul existent.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'Pluginul de autentificare LTI nu stochează date personale.';
 $string['privacy:metadata:auth_lti'] = 'Autentificare LTI';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'Acest plugin este conectat la subsistemul de autentificare.';
 $string['privacy:metadata:auth_lti:issuer'] = 'URL-ul emitentului care identifică platforma căreia îi aparține utilizatorul conectat.';

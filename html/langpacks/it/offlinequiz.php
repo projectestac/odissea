@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'it', version '4.1'.
+ * Strings for component 'offlinequiz', language 'it', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -452,6 +452,7 @@ $string['printstudycodefield_help'] = 'Se selezionato, il campo codice del corso
 $string['privacy:data_folder_name'] = 'Dati quiz offline';
 $string['privacy:metadata:core_files'] = 'Il quiz offline utilizza le API File per archiviare i fogli domande, i fogli risposte e i fogli correzioni generati come anche i fogli risposte compilati.';
 $string['privacy:metadata:core_question'] = 'Il quiz offline utilizza le question API per salvare le domande per i quiz.';
+$string['privacy:metadata:mod_quiz'] = 'Il quiz offline utilizza le quiz API per salvare i risultati dei quiz.';
 $string['privacy:metadata:offlinequiz'] = 'La tabella offlinequiz salva ogni informazione relativa a un\'istanza di quiz offline.';
 $string['privacy:metadata:offlinequiz:course'] = 'La colonna \'course\' nella tabella offlinequiz salva in quale corso questo quiz offline è presente.';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'Il numero di posti decimali da calcolare per le valutazioni.';

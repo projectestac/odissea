@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'el', version '4.1'.
+ * Strings for component 'message', language 'el', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Επαφές';
 $string['conversationactions'] = 'Μενού ενεργειών συζήτησης';
 $string['decline'] = 'Άρνηση';
 $string['defaultmessageoutputs'] = 'Ρυθμίσεις ειδοποιήσεων';
-$string['defaults'] = 'Προεπιλογές';
 $string['deleteallconfirm'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε όλη αυτή τη συνομιλία; Δεν θα διαγραφεί το αντίγραφο των άλλων συμμετεχόντων στη συζήτηση.';
 $string['deleteallmessages'] = 'Διαγραφή όλων των μηνυμάτων';
 $string['deleteallselfconfirm'] = 'Σίγουρα θέλετε να διαγράψετε ολόκληρη αυτή την προσωπική συνομιλία;';
@@ -96,11 +95,7 @@ $string['info'] = 'Πληροφορίες χρήστη';
 $string['isnotinyourcontacts'] = 'Ο/Η {$a} δεν βρίσκεται στις επαφές σας';
 $string['loadmore'] = 'Φόρτωσε περισσότερα';
 $string['loggedin'] = 'Εντός σύνδεσης';
-$string['loggedin_help'] = 'Προσαρμόστε το πώς επιθυμείτε να λαμβάνετε ειδοποιήσεις όταν έχετε συνδεθεί στη πλατφόρμα';
-$string['loggedindescription'] = 'Όταν έχετε συνδεθεί στο Moodle';
 $string['loggedoff'] = 'Εκτός σύνδεσης';
-$string['loggedoff_help'] = 'Προσαρμόστε το πώς επιθυμείτε να λαμβάνετε ειδοποιήσεις όταν δεν έχετε συνδεθεί στο Moodle';
-$string['loggedoffdescription'] = 'Όταν δεν έχετε συνδεθεί στο Moodle';
 $string['managemessageoutputs'] = 'Προεπιλεγμένες προτιμήσεις ειδοποιήσεων';
 $string['message'] = 'Μήνυμα';
 $string['messagecontactrequest'] = 'Ο/Η χρήστης {$a->user} ζητά να προστεθεί ως επαφή. Επισκεφτείτε τη σελίδα <a href="{$a->url}">αιτήματα επικοινωνίας</a> για να απαντήσετε στο αίτημα';
@@ -238,8 +233,6 @@ $string['sendbulkmessagesentsingle'] = 'Το μήνυμα στάλθηκε σε 
 $string['sendbulkmessagesingle'] = 'Αποστολή μηνύματος σε 1 άτομο';
 $string['sendcontactrequest'] = 'Αποστολή αιτήματος δημιουργίας επαφής';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Αποστολή «{$a->provider}» μέσω «{$a->processor}»';
-$string['sendingviawhen'] = 'Αποστολή «{$a->provider}» μέσω «{$a->processor}» όταν {$a->state}';
 $string['sendmessage'] = 'Αποστολή μηνύματος';
 $string['sendmessageto'] = 'Αποστολή μηνύματος σε {$a}';
 $string['sendmessagetopopup'] = 'Αποστολή μηνύματος σε {$a} - νέο παράθυρο';

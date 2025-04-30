@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ja', version '4.1'.
+ * Strings for component 'data', language 'ja', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} コメント';
 $string['commentsoff'] = 'コメント機能は有効にされていません。';
 $string['completiondetail:entries'] = 'エントリを作成する: {$a}';
 $string['completionentries'] = '必須エントリ';
-$string['completionentriescount'] = 'エントリ数';
+$string['completionentriescount'] = 'エントリを追加する';
 $string['completionentriesdesc'] = '最少必須エントリ数 : {$a}';
 $string['configenablerssfeeds'] = 'ここではすべてのデータベースに関するRSSフィードを有効にします。さらにあなたはそれぞれのデータベースのRSSフィード設定を手動で有効にする必要があります。';
 $string['confirmdeletefield'] = 'あなたはこのフィールドを削除しようとしています。よろしいですか?';
@@ -94,7 +94,7 @@ $string['createfields'] = '異なるタイプのデータを収集するため�
 $string['createtemplates'] = 'テンプレートはあなたの活動のインタフェースを定義します。あなたがフィールドを作成した場合、テンプレートが自動的に作成されます。あなたは代わりにフィールドおよびテンプレートを含むプリセットも使用できます。';
 $string['csstemplate'] = 'カスタムCSS';
 $string['csvfailed'] = 'CSVファイルから生データを読み込めません。';
-$string['csvfile'] = 'CSVファイル';
+$string['csvfile'] = 'CSVまたはCSVファイルを含むZIP';
 $string['csvimport'] = 'CSVファイルインポート';
 $string['csvimport_help'] = 'エントリは最初の行にフィールド名の一覧そして1行あたり1レコードを含むテキストファイルによってインポートすることができます。';
 $string['csvwithselecteddelimiter'] = '<abbr title="カンマ区切り値">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'この活動を完了するにはさらに {$a->e
 $string['entrieslefttoaddtoview'] = '他の参加者のエントリを閲覧するにはさらに {$a->entrieslefttoview} 件以上のエントリを追加してください。';
 $string['entry'] = 'エントリ';
 $string['entrysaved'] = 'あなたのエントリが保存されました。';
+$string['errordatafilenotfound'] = 'ファイルをインポートできませんでした。利用可能なファイル形式はCSVまたはエントリのエクスポートに使用される形式のCSVファイルを含むZIPです。';
 $string['errormustbeteacher'] = 'このページを使用するにはあなたは教師である必要があります!';
 $string['errormustsupplyvalue'] = 'あなたはここで値を提供する必要があります。';
 $string['errorpresetexists'] = 'この名称のプリセットはすでに存在します。';
@@ -200,7 +201,11 @@ $string['fieldnotmatched'] = 'あなたのファイル内の次のフィール�
 $string['fieldoptions'] = 'オプション (1行あたり1つ)';
 $string['fields'] = 'フィールド';
 $string['fieldshelp'] = '異なるタイプのデータを収集するためのフィールドを作成してください。フィールドはあなたのデータベース内のエントリの構造を定義します。';
+$string['fieldsinformationtags'] = 'フィールド情報';
 $string['fieldsnavigation'] = 'フィールド3次ナビゲーション';
+$string['fieldtagdescription'] = '{$a} 説明';
+$string['fieldtagid'] = '{$a} ID';
+$string['fieldtagname'] = '{$a} 名称';
 $string['fieldupdated'] = 'フィールドが更新されました。';
 $string['fieldwidth'] = '幅';
 $string['fieldwidthlistview'] = '一覧表示の幅 (ピクセル)';
@@ -233,6 +238,7 @@ $string['importpreset_desc'] = 'この活動にプリセットが適用された
 $string['importpresetmissingcapability'] = 'あなたにはプリセットをインポートするためのパーミッションがありません。';
 $string['importsuccess'] = 'プリセットが適用されました。';
 $string['includeapproval'] = '承認ステータスを含む';
+$string['includefiles'] = 'エクスポートにファイルを含める';
 $string['includetags'] = 'タグを含む';
 $string['includetime'] = '追加/修正時間を含む';
 $string['includeuserdetails'] = 'ユーザ詳細を含む';
@@ -342,6 +348,7 @@ $string['openafterclose'] = 'あなたは終了日の後に開始日を指定し
 $string['optionaldescription'] = '短い説明 (任意)';
 $string['optionalfilename'] = 'ファイル名 (任意)';
 $string['other'] = 'その他';
+$string['otherfields'] = 'その他すべてのフィールド';
 $string['overrwritedesc'] = '既存のプリセットをこの名称で置換およびコンテンツを上書きする';
 $string['overwrite'] = '上書き';
 $string['overwritesettings'] = 'コメント、評価等の現在の設定を上書きする';
@@ -359,6 +366,7 @@ $string['presetnotselected'] = '選択されたプリセットはありません
 $string['presets'] = 'プリセット';
 $string['presetshelp'] = '出発点として使用するプリセットを選択してください。';
 $string['preview'] = '{$a} のプレビュー';
+$string['previewaction'] = 'プレビュー';
 $string['privacy:metadata:commentpurpose'] = 'データベースレコードのコメントです。';
 $string['privacy:metadata:data_content'] = 'フィールドコンテンツ';
 $string['privacy:metadata:data_content:content'] = 'コンテンツです。';
@@ -401,7 +409,7 @@ $string['resetalltemplates'] = 'すべてのテンプレートをリセットす
 $string['resetalltemplatesconfirm'] = 'あなたは現在のプリセットのすべてのテンプレートを削除しようとしています。あなたが後でテンプレートを復元したい場合、再度「プリセット」タブでプリセットを選択する必要があります。';
 $string['resetalltemplatesconfirmtitle'] = 'すべてのテンプレートをリセットしますか?';
 $string['resetsettings'] = 'フィルタをリセットする';
-$string['resettemplate'] = 'テンプレートをリセットする';
+$string['resettemplate'] = '現在のテンプレートをリセットする';
 $string['resettemplateconfirm'] = 'これで現在のプリセットの {$a} が完全に削除されます。';
 $string['resettemplateconfirmtitle'] = 'テンプレートをリセットしてもよろしいですか?';
 $string['resizingimages'] = 'イメージサムネイルのリサイズ...';
@@ -427,6 +435,7 @@ $string['searchresults'] = '「 {$a} 」を含むエントリ';
 $string['selectedrequired'] = '選択したすべてを含む';
 $string['selectexportoptions'] = 'エクスポートオプションを選択する';
 $string['selectfields'] = 'フィールドを選択する';
+$string['selectfordeletion'] = '削除するエントリを選択する';
 $string['showall'] = 'すべてのエントリを表示する';
 $string['showmore'] = 'さらに表示する';
 $string['single'] = '個別表示';
@@ -454,19 +463,14 @@ $string['todatabase'] = '>> データベース';
 $string['type'] = 'フィールドタイプ';
 $string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのアクションメソッドがData_Presetに定義されていません。';
 $string['unknown'] = '不明なフィールド';
-$string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできません。';
 $string['unsupportedfields'] = '未サポートフィールド';
 $string['unsupportedfieldslist'] = '次のフィールドはエクスポートできません:';
 $string['updatefield'] = '既存のフィールドを更新します。';
 $string['uploadfile'] = 'ファイルをアップロードする';
-$string['uploadrecords'] = 'ファイルからエントリをアップロードする';
-$string['uploadrecords_help'] = 'テキストファイルによりエントリをアップロードすることができます。ファイルのフォーマットは以下のとおりです:
+$string['uploadrecords'] = 'エントリをインポートする';
+$string['uploadrecords_help'] = '別のデータベースからエクスポートしたエントリをCSVまたはCSVファイルを含むZIP (エクスポートにファイルが含まれる場合) でインポートします。
 
-* それぞれの行には1レコードを含みます。
-* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
-* 最初のレコードにはファイル内の残りのレコードを定義するフィールド名一覧を含みます。
-
-フィールド囲み文字はレコード内のフィールドを囲む文字です。通常、設定する必要はありません。';
+代わりにインポート用CSVファイルを作成するにはデータベースにエントリを1つ追加してエクスポートしてください。そのCSVファイルを編集してさらにエントリを追加してください。';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = '検索に含む';

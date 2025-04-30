@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'nl', version '4.1'.
+ * Strings for component 'hub', language 'nl', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Naam';
 $string['coursepublished'] = 'Deze cursus is gepubliceerd op \'{$a}\'.';
 $string['courseshortname'] = 'Korte naam';
 $string['courseshortname_help'] = 'Geef een korte naam voor je cursus. Deze moet niet uniek zijn.';
+$string['coursesnodates'] = 'Aantal cursussen zonder ingestelde einddatum ({$a})';
 $string['coursesnumber'] = 'Aantal cursussen ({$a})';
+$string['dbtype'] = 'Databasetype ({$a})';
 $string['demourl'] = 'Demo URL';
 $string['demourl_help'] = 'Geef de demo URL van je cursus. Standaard is dat de URL van je cursus. De demo URL wordt getoond als een link in het zoekresultaat.';
 $string['downloadable'] = 'Downloadbaar';
@@ -96,6 +98,7 @@ $string['postaladdress'] = 'Postadres';
 $string['postaladdress_help'] = 'Postadres van deze site, of de entiteit die vertegenwoordigd wordt door deze site.';
 $string['postsnumber'] = 'Aantal berichten ({$a})';
 $string['previousregistrationdeleted'] = 'De vorige registratie is verwijderd van {$a}. Je kunt het registratieproces overdoen.';
+$string['primaryauthtype'] = 'Primair authenticatietype ({$a})';
 $string['questionsnumber'] = 'Aantal vragen ({$a})';
 $string['registeredactiveuserdevices'] = 'Aantal actieve gebruikers met geregistreerde mobiele toestellen die meldingen krijgen  ({$a})';
 $string['registeredcourses'] = 'Geregistreerde cursussen';
@@ -159,6 +162,7 @@ $string['siteregistrationupdated'] = 'Siteregistratie aangepast';
 $string['siterelease'] = 'Moodle release';
 $string['siterelease_help'] = 'Moodle release van deze site';
 $string['sitereleasenum'] = 'Moodle-versie ({$a})';
+$string['sitetheme'] = 'Sitethema ({$a})';
 $string['siteurl'] = 'Site URL';
 $string['siteurl_help'] = 'De URL is het adres van deze site. Als de privacy-instellingen het voor anderen toestaat om site adressen te zien, dan zal deze URL getoond worden.';
 $string['siteversion'] = 'Moodleversie';

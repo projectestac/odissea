@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onenote', language 'ru', version '4.1'.
+ * Strings for component 'assignsubmission_onenote', language 'ru', version '4.4'.
  *
  * @package     assignsubmission_onenote
  * @category    string
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['maxfilessubmission_help'] = 'Если отправка OneNote включена, каждый учащийся сможет загрузить до указанного количества страниц OneNote для отправки.';
 $string['maximumsubmissionsize'] = 'Размер страницы OneNote';
-$string['signinhelp'] = 'Нажмите кнопку выше, чтобы войти в OneNote и работать над заданием там.';
 $string['signinhelp1'] = 'Нажмите кнопку выше, чтобы войти в OneNote, если вы хотите работать над отправкой там.';
 $string['signinhelp2'] = 'Нажмите кнопку выше, чтобы войти в OneNote, если вы хотите просмотреть отправку там.';
 $string['workonthishelp'] = 'Нажмите кнопку выше, чтобы работать над заданием в OneNote. Помните, что вам нужно будет вернуться сюда, чтобы сохранить свою работу обратно в Moodle.';

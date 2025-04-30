@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'de', version '4.1'.
+ * Strings for component 'feedback', language 'de', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Fett';
 $string['calendarend'] = '{$a} endet';
 $string['calendarstart'] = '{$a} beginnt';
 $string['cannotaccess'] = 'Sie können auf dieses Formular nur aus einem Kurs zugreifen.';
+$string['cannotcreatepagebreak'] = 'Seitenumbrüche können nicht am Anfang eines Feedbacks hinzugefügt werden. Am Ende kann nur ein Seitenumbruch sein';
 $string['cannotsavetempl'] = 'Vorlagen speichern ist nicht erlaubt';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha wurde nicht ausgefüllt';
@@ -58,7 +59,7 @@ $string['completed'] = 'Abgeschlossen';
 $string['completed_feedbacks'] = 'Ausgefüllte Feedbacks';
 $string['completedon'] = 'Abgeschlossen am {$a}';
 $string['completiondetail:submit'] = 'Feedback einreichen';
-$string['completionsubmit'] = 'Als abgeschlossen ansehen, wenn das Feedback abgegeben wurde';
+$string['completionsubmit'] = 'Feedback abgeben';
 $string['configallowfullanonymous'] = 'Wenn diese Option aktiviert ist, kann ein Feedback ohne Anmeldung abgegeben werden. Dies betrifft aber ausschließlich Feedbacks auf der Startseite.';
 $string['confirmdeleteentry'] = 'Möchten Sie diesen Eintrag wirklich löschen?';
 $string['confirmdeleteitem'] = 'Möchten Sie dieses Element wirklich löschen?';
@@ -163,7 +164,7 @@ $string['insufficient_responses_for_this_group'] = 'Es gibt unzulängliche Antwo
 $string['insufficient_responses_help'] = 'Damit das Feedback anonym ist, müssen mindestens zwei Antworten abgegeben sein.';
 $string['item_label'] = 'Bezeichner';
 $string['item_name'] = 'Frage';
-$string['label'] = 'Textfeld';
+$string['label'] = 'Text- und Medienfeld';
 $string['labelcontents'] = 'Inhalte';
 $string['mapcourse'] = 'Kurs zuordnen';
 $string['mapcourse_help'] = 'Die auf der Startseite erstellten Feedbacks sind auf der gesamten Website verfügbar und werden über den Block \'Feedback\' in allen Kursen angezeigt.
@@ -199,7 +200,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span> {$a-
 $string['multichoicerated'] = 'Multiple-Choice (skaliert)';
 $string['multichoicetype'] = 'Typ';
 $string['multiplesubmit'] = 'Mehrfache Abgabe';
-$string['multiplesubmit_help'] = 'Wenn die Option für anonyme Fragebögen aktiviert ist, dürfen Nutzer/innen das Feedback beliebig oft abgeben.';
+$string['multiplesubmit_help'] = 'Wenn diese Option auf Ja eingestellt ist:
+
+* Bei anonymen Umfragen: Teilnehmer/innen können unbegrenzt Antworten einreichen und alle Antworten werden aufgezeichnet.
+* Bei nicht-anonymen Umfragen: Teilnehmer/innen können unbegrenzt viele Antworten einreichen, es wird jedoch nur ihre letzte Antwort aufgezeichnet.';
 $string['name'] = 'Name';
 $string['name_required'] = 'Name benötigt';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

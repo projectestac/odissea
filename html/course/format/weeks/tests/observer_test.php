@@ -23,7 +23,7 @@ namespace format_weeks;
  * @copyright 2017 Mark Nelson <markn@moodle.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class observer_test extends \advanced_testcase {
+final class observer_test extends \advanced_testcase {
 
     /**
      * Test setup.
@@ -35,7 +35,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we update a course with automatic end date set.
      */
-    public function test_course_updated_with_automatic_end_date() {
+    public function test_course_updated_with_automatic_end_date(): void {
         global $DB;
 
         // Generate a course with some sections.
@@ -64,7 +64,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we update a course with automatic end date set but no actual change is made.
      */
-    public function test_course_updated_with_automatic_end_date_no_change() {
+    public function test_course_updated_with_automatic_end_date_no_change(): void {
         global $DB;
 
         // Generate a course with some sections.
@@ -90,7 +90,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we update a course without automatic end date set.
      */
-    public function test_course_updated_without_automatic_end_date() {
+    public function test_course_updated_without_automatic_end_date(): void {
         global $DB;
 
         // Generate a course with some sections.
@@ -117,7 +117,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we adding a course section with automatic end date set.
      */
-    public function test_course_section_created_with_automatic_end_date() {
+    public function test_course_section_created_with_automatic_end_date(): void {
         global $DB;
 
         $numsections = 6;
@@ -143,7 +143,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we update a course without automatic end date set.
      */
-    public function test_create_section_without_automatic_end_date() {
+    public function test_create_section_without_automatic_end_date(): void {
         global $DB;
 
         // Generate a course with some sections.
@@ -175,7 +175,7 @@ class observer_test extends \advanced_testcase {
     /**
      * Tests when we deleting a course section with automatic end date set.
      */
-    public function test_course_section_deleted_with_automatic_end_date() {
+    public function test_course_section_deleted_with_automatic_end_date(): void {
         global $DB;
 
         // Generate a course with some sections.

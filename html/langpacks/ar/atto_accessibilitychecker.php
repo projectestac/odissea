@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'ar', version '4.1'.
+ * Strings for component 'atto_accessibilitychecker', language 'ar', version '4.4'.
  *
  * @package     atto_accessibilitychecker
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['emptytext'] = 'نص فارغ';
-$string['entiredocument'] = 'في داخل الوثيقة';
+$string['entiredocument'] = 'المستند بأكمله';
 $string['imagesmissingalt'] = 'الصور تتطلب نصاً بديلاً. لإصلاح هذا التحذير، أضف نعتاً بديلاً إلى وسوم الصورة. يمكن ترك النعت البديل فارغاً، ولكن فقط عندما تكون الصورة مزينة بالكامل ولا تحمل أي معلومات.';
 $string['needsmorecontrast'] = 'اللونان الأمامي والخلفي للنص ليس بينهما تباين كافٍ. لإصلاح هذا التحذير، قم بتغيير أحدهما لتصير قراءة النص أسهل.';
 $string['needsmoreheadings'] = 'هناك نص طويل بلا عنوان. العناوين تتيح للقراء عبر الشاشة التنقل ما بين الصفحات بسهولة مما يجعل الصفحة أكثر قبولاً من قبل الجميع.';

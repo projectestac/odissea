@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', version '4.1'.
+ * Strings for component 'tool_monitor', language 'ja', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'モニタエリア';
 $string['cachedef_eventsubscriptions'] = '個別のコースのイベント購読一覧保存';
 $string['contactadmin'] = '有効にするにはあなたの管理者にご連絡ください。';
 $string['core'] = 'コア';
+$string['coresubsystem'] = 'サブシステム ({$a})';
 $string['currentsubscriptions'] = 'あなたの現在の購読';
 $string['defaultmessagetemplate'] = 'ルール名: {rulename}<br />説明: {description}<br />イベント名: {eventname}';
 $string['deleterule'] = 'ルールを削除する';
@@ -64,13 +65,16 @@ $string['managesubscriptions'] = 'イベントモニタリング';
 $string['managesubscriptionslink'] = 'あなたは {$a} ページでルールを購読することができます。';
 $string['messageprovider:notification'] = 'ルール購読通知';
 $string['messagetemplate'] = '通知メッセージ';
-$string['messagetemplate_help'] = '通知閾値に達した場合、購読者に通知メッセージが送信されます。以下のプレースホルダのどれかまたはすべてを含むことができます:
+$string['messagetemplate_help'] = '通知閾値に達した場合、購読者に通知メッセージが送信されます。以下のプレースホルダのどれかまたはすべてを含めます:
 
 * イベントロケーションのリンク {link}
 * モニタエリアへのリンク {modulelink}
+* コースモジュール名 {modulename}
 * ルール名 {rulename}
 * 説明 {description}
-* イベント {eventname}';
+* イベント {eventname}
+* コースフルネーム {coursefullname}
+* コース省略名 {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'インスタンス';
 $string['monitor:managerules'] = 'イベントモニタルールを管理する';

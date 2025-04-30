@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'it', version '4.1'.
+ * Strings for component 'feedback', language 'it', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Grassetto';
 $string['calendarend'] = '{$a} chiude';
 $string['calendarstart'] = '{$a} apre';
 $string['cannotaccess'] = 'Puoi accedere al feedback solamente da un corso.';
+$string['cannotcreatepagebreak'] = 'Non è possibile aggiungere interruzioni di pagina all\'inizio e solo una singola interruzione di pagina può essere aggiunta alla fine.';
 $string['cannotsavetempl'] = 'il salvataggio dei modelli non è consentito';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Il captcha non è stato impostato.';
@@ -58,7 +59,7 @@ $string['completed'] = 'Completato';
 $string['completed_feedbacks'] = 'Risposte inviate';
 $string['completedon'] = 'Completato il {$a}';
 $string['completiondetail:submit'] = 'Inviare feedback';
-$string['completionsubmit'] = 'Completato all\'atto della consegna del feedback';
+$string['completionsubmit'] = 'Completato alla consegna del feedback';
 $string['configallowfullanonymous'] = 'L\'impostazione consente di completare un feedback senza  autenticarsi. È valida solo per feedback presenti nella pagina home.';
 $string['confirmdeleteentry'] = 'Confermi l\'eliminazione di questo elemento?';
 $string['confirmdeleteitem'] = 'Confermi l\'eliminazione di questa domanda?';
@@ -155,7 +156,7 @@ $string['insufficient_responses_for_this_group'] = 'Questo gruppo ha fornito un 
 $string['insufficient_responses_help'] = 'Per mantenere il questionario anonimo devono pervenire almeno due risposte.';
 $string['item_label'] = 'Etichetta';
 $string['item_name'] = 'Testo della domanda';
-$string['label'] = 'Etichetta';
+$string['label'] = 'Area di testo e media';
 $string['labelcontents'] = 'Contenuto';
 $string['mapcourse'] = 'Associa feedback ai corsi';
 $string['mapcourse_help'] = 'Di default i feedback creati nella pagina home del sito sono disponibili in tutti i corsi tramite il blocco feedback. Se desideri evitarlo, è possibile rendere permanente il blocco feedback oppure puoi associare il feedback solo a determinati corsi.';
@@ -189,7 +190,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Scelta multipla (valorizzata)';
 $string['multichoicetype'] = 'Tipo di scelta';
 $string['multiplesubmit'] = 'Compilazioni multiple';
-$string['multiplesubmit_help'] = 'Nei feedback anonimi gli utenti potranno compilare il feedback quante volte vorranno.';
+$string['multiplesubmit_help'] = 'Se impostato su Sì:
+
+* Per i feedback anonimi: i partecipanti potranno inviare risposte illimitate e tutte le risposte verranno registrate.
+* Per i feedback non anonimi: i partecipanti potranno inviare un numero illimitato di risposte, ma verrà registrata solo la loro ultima risposta.';
 $string['name'] = 'Titolo';
 $string['name_required'] = 'Il titolo è obbligatorio';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

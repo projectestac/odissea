@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'pt', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'pt', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Restaurar a partir desta disciplina depois do c
 $string['coursetemplatename_help'] = 'Indique o nome curto de uma disciplina existente para usar como um modelo na criação de todas as disciplinas';
 $string['coursetorestorefromdoesnotexist'] = 'A disciplina a partir da qual pretende fazer o restauro não existe';
 $string['courseupdated'] = 'Disciplina atualizada';
+$string['courseuploadnotallowed'] = 'Não tem permissão para carregar disciplinas para a categoria: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Já existe uma disciplina com este nome curto e não tem permissão para usar a ferramenta de carregar disciplina para atualizá-la.';
 $string['createall'] = 'Criar todas e incrementar o nome curto, se necessário';
 $string['createnew'] = 'Criar apenas as novas disciplinas, ignorar as existentes';
 $string['createorupdate'] = 'Criar as novas disciplinas ou atualizar as existentes';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Codificação do ficheiro CSV.';
 $string['errorcannotcreateorupdateenrolment'] = 'Não é possível criar ou atualizar o método de inscrição \'{$a}\'';
 $string['errorcannotdeleteenrolment'] = 'Não é possível apagar o método de inscrição \'{$a}\'';
 $string['errorcannotdisableenrolment'] = 'Não é possível desativar o método de inscrição \'{$a}\'';
+$string['errorunsupportedmethod'] = 'O método de inscrição \'{$a}\' não é compatível com carregamento de CSV';
 $string['errorwhiledeletingcourse'] = 'Erro ao eliminar a disciplina';
 $string['errorwhilerestoringcourse'] = 'Erro ao restaurar a disciplina';
 $string['generatedshortnamealreadyinuse'] = 'O nome curto gerado já está a ser usado';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'O modo de atualização não permite qu
 $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
 $string['updatewithdataonly'] = 'Atualizar apenas com os dados do CSV';
 $string['updatewithdataordefaults'] = 'Atualizar com os dados do CSV e dos predefinidos';
+$string['uploadcourse:use'] = 'Usar a ferramenta de carregar disciplinas';
 $string['uploadcourses'] = 'Carregar disciplinas';
 $string['uploadcourses_help'] = 'As disciplinas podem ser carregadas via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 

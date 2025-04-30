@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'zh_cn', version '4.1'.
+ * Strings for component 'form', language 'zh_cn', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,18 +41,18 @@ $string['err_minlength'] = '您必须在此处至少输入{$a->format}个字符�
 $string['err_nonzero'] = '您必须在此处输入一个不以0开头的数字。';
 $string['err_nopunctuation'] = '您不能在此处输入任何标点符号。';
 $string['err_numeric'] = '您必须在此处输入一个数字。';
-$string['err_positiveint'] = '您必须输入一个大于 0 的数字。';
+$string['err_positiveint'] = '您必须输入一个大于 0 的数字';
 $string['err_rangelength'] = '您必须在此处输入介于{$a->format [0]}和{$a->format [1]}之间的字符。';
 $string['err_required'] = '您必须在此处提供一个值。';
 $string['err_wrappingwhitespace'] = '该值不得以空格开头或结尾。';
-$string['err_wrongfileextension'] = '某些文件({$a->wrongfiles})无法上传。仅允许文件类型{$a->whitelist}。';
+$string['err_wrongfileextension'] = '某些文件({$a->wrongfiles})无法上传，仅允许文件类型{$a->whitelist}。';
 $string['filesofthesetypes'] = '接受的文件类型：';
 $string['filetypesany'] = '所有文件类型';
 $string['filetypesnotall'] = '此处不允许选择“所有文件类型”';
 $string['filetypesnotallowed'] = '此处不允许这些文件类型：{$a}';
-$string['filetypesnotwhitelisted'] = '此处不允许这些文件类型：{$a}';
 $string['filetypesothers'] = '其它文件';
 $string['filetypesunknown'] = '未知文件类型：{$a}';
+$string['formactions'] = '表单操作';
 $string['general'] = '常规项';
 $string['hideadvanced'] = '隐藏高级选项';
 $string['hour'] = '小时';
@@ -89,5 +89,6 @@ $string['suggestions'] = '建议';
 $string['time'] = '时间';
 $string['timeunit'] = '时间单位';
 $string['timing'] = '定时';
+$string['togglesensitive'] = '切换敏感';
 $string['unmaskpassword'] = '显示密码';
 $string['year'] = '年';

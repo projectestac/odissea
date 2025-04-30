@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'sv', version '4.1'.
+ * Strings for component 'report_security', language 'sv', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -78,10 +78,6 @@ $string['check_guestrole_error'] = 'Gästrollen "{$a}" är felaktigt definierad!
 $string['check_guestrole_name'] = 'Gästroll';
 $string['check_guestrole_notset'] = 'Gästroll är inte angiven.';
 $string['check_guestrole_ok'] = 'Gästroll OK.';
-$string['check_mediafilterswf_details'] = '<p>Automatisk swf-inbäddning är mycket farligt - alla registrerade användare kan starta en XSS-attack mot andra serveranvändare. Vänligen inaktivera den på produktionservrar.</p>';
-$string['check_mediafilterswf_error'] = 'Mediafilter för Flash är aktiverat - detta är mycket farligt för de flesta servrar.';
-$string['check_mediafilterswf_name'] = 'Aktiverat .swf-filter';
-$string['check_mediafilterswf_ok'] = 'Mediafilter för Flash är inte aktiverat.';
 $string['check_nodemodules_details'] = '<p>Katalogen <code>{$a->path}</code> innehåller Node.js-moduler och deras beroenden, vanligtvis installerade av NPM-verktyget. Dessa moduler kan behövas för lokal Moodle-utveckling, till exempel för att använda grunt-ramverket. De behövs inte för att köra en Moodle-plats i produktion och de kan innehålla potentiellt farlig kod som exponerar din webbplats för fjärrattacker.</p>
 <p>Det rekommenderas starkt att ta bort katalogen om webbplatsen är tillgänglig via en offentlig webbadress, eller åtminstone förbjuda webbåtkomst till den i din webserverkonfiguration.</p>';
 $string['check_nodemodules_info'] = 'Katalogen node_modules bör inte finnas på produktionsservrar.';

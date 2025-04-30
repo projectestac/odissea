@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'zh_cn', version '4.1'.
+ * Strings for component 'tiny_equation', language 'zh_cn', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,6 +38,7 @@ $string['librarygroup3_desc'] = '希腊符号标签页的 TeX 命令。';
 $string['librarygroup4'] = '高级';
 $string['librarygroup4_desc'] = '高级标签页的 TeX 命令。';
 $string['modaltitle'] = '公式编辑器';
+$string['pluginname'] = '公式编辑器';
 $string['preview'] = '公式预览';
 $string['privacy:metadata'] = 'TinyMCE的公式编辑器不存储任何个人数据';
 $string['saveequation'] = '保存公式';

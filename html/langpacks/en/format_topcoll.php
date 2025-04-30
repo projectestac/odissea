@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'en', version '4.1'.
+ * Strings for component 'format_topcoll', language 'en', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Add section';
 $string['arrow'] = 'Arrow';
 $string['bulb'] = 'Bulb';
 $string['cachedef_activitymodulecountcache'] = 'Caches the number of students who can access a given module on a given course.';
@@ -63,7 +62,6 @@ $string['coursesectionactivityfurtherinformationlesson'] = 'Show lesson informat
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Allow lesson information to be selected to be shown on a course.  For teachers / admins, show number of submissions.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Show quiz information';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Allow quiz information to be selected to be shown on a course.  For teachers / admins, show number of submissions.';
-$string['creatingsection'] = 'Creating new section';
 $string['ctreset'] = 'Collapsed Topics reset options';
 $string['ctreset_help'] = 'Reset to Collapsed Topics defaults.';
 $string['currentsection'] = 'This section';
@@ -74,6 +72,8 @@ $string['defaultdisplayblocksloc'] = 'Block location for display';
 $string['defaultdisplayblocksloc_desc'] = 'Choose the location for the blocks chosen above to display, pre or post side.';
 $string['defaultdisplayinstructions'] = 'Display instructions to users';
 $string['defaultdisplayinstructions_desc'] = 'Display instructions to users informing them how to use the toggles.  Can be yes or no.';
+$string['defaultflexiblemodules'] = 'Flexible modules';
+$string['defaultflexiblemodules_desc'] = 'Use flexible modules?';
 $string['defaultheadingsub'] = 'Defaults';
 $string['defaultheadingsubdesc'] = 'Default settings that can be overridden at the course level';
 $string['defaultlayoutcolumnorientation'] = 'Column orientation';
@@ -144,9 +144,6 @@ $string['displayinstructions'] = 'Display instructions';
 $string['displayinstructions_help'] = 'States that the instructions should be displayed to the user or not.';
 $string['donotshowdate'] = 'Do not show the date';
 $string['donotshowdate_help'] = 'Do not show the date when using a weekly based structure and \'Use default section name\' has been un-ticked.';
-$string['duplicate'] = 'Duplicate';
-$string['duplicateconfirm'] = 'Are you sure you want to duplicate the current section?  This can take a while depending on the amount of resources.';
-$string['duplicating'] = 'Duplicating';
 $string['editsection'] = 'Edit section';
 $string['editsectionname'] = 'Edit section name';
 $string['em0_0'] = '0.0em';
@@ -192,7 +189,6 @@ $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
 $string['enableadditionalmoddata'] = 'Enable additional information';
 $string['enableadditionalmoddatadesc'] = 'This is a \'Site level\' switch to turn the activity information on or off.  It needs to be \'on\' for the related settings that operate at a course level to take effect.  As this functionality can be computationally expensive, then it is strongly suggested that you undertake full testing before using on a production system.  Note: Purges the cache caches when changed.';
-$string['errornosectioninfo'] = 'The indicated topic have not information';
 $string['eye'] = 'Eye';
 $string['feedbackavailable'] = 'Feedback available';
 $string['folder'] = 'Folder';
@@ -202,11 +198,11 @@ $string['formatsettings'] = 'Format reset settings';
 $string['formatsettingsinformation'] = '<br />To reset the settings of the course format to the defaults, click on the icon to the right.';
 $string['four'] = 'Four';
 $string['groundsignal'] = 'Ground signal';
-$string['hidefromothers'] = 'Hide section';
+$string['hidefromothers'] = 'Hide';
 $string['information'] = 'Information';
 $string['informationchanges'] = 'Changes';
 $string['informationsettings'] = 'Information settings';
-$string['informationsettingsdesc'] = 'Collapsed Topics format information';
+$string['informationsettingsdesc'] = 'Collapsed Topics course format information';
 $string['instructions'] = 'Instructions: Clicking on the section name will show / hide the section.';
 $string['large'] = 'Large';
 $string['layoutstructuredays'] = 'days';
@@ -219,6 +215,7 @@ $string['maincoursepage'] = 'Main course page';
 $string['markedthissection'] = 'This section is highlighted as the current section';
 $string['markthissection'] = 'Highlight this section as the current section';
 $string['medium'] = 'Medium';
+$string['newsection'] = 'New section';
 $string['newsectionname'] = 'New name for section {$a}';
 $string['numbersections'] = 'Number of sections';
 $string['off'] = 'Off';
@@ -228,17 +225,15 @@ $string['onesection'] = 'One section';
 $string['onesection_help'] = 'States if only one section should be open at any given time.  Note: Ignored when editing to allow activities and resources to be moved around the sections.';
 $string['page-course-view-topcoll'] = 'Any course main page in the collapsed topics format';
 $string['page-course-view-topcoll-x'] = 'Any course page in the collapsed topics format';
+$string['plugin_description'] = 'The course is divided into toggleable sections.';
 $string['pluginname'] = 'Collapsed Topics';
 $string['point'] = 'Point';
 $string['power'] = 'Power';
 $string['privacy:metadata:preference:toggle'] = 'The state of the toggles on a course.';
 $string['privacy:request:preference:toggle'] = 'The course id "{$a->name}" has the value "{$a->value}" which represents "{$a->decoded}" for the state of the toggles.';
-$string['progresscounter'] = 'Duplicating activities ({$a->current}/{$a->size})';
-$string['progressfull'] = 'Duplicating topic';
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Please click on \'{$a->url}\' for lots more information about Collapsed Topics.';
 $string['readme_title'] = 'Collapsed Topics read-me';
-$string['rebuildcoursecache'] = 'Rebuild course cache';
 $string['resetactivitymeta'] = 'Additional module information';
 $string['resetactivitymeta_help'] = 'Resets the additional module information to follow the site default value.';
 $string['resetallactivitymeta'] = 'All additional module information';
@@ -272,6 +267,8 @@ $string['section0name'] = 'General';
 $string['sectionname'] = 'Section';
 $string['setcolour'] = 'Colour';
 $string['setcolour_help'] = 'Contains the settings to do with the colour of the format within the course.';
+$string['setflexiblemodules'] = 'Flexible modules';
+$string['setflexiblemodules_help'] = 'Use flexible modules?';
 $string['setlayout'] = 'Set layout';
 $string['setlayout_all'] = 'Toggle word, \'Topic x\' / \'Week x\' / \'Day x\' and section number';
 $string['setlayout_default'] = 'Default';
@@ -306,7 +303,7 @@ $string['setshowsectionsummary'] = 'Show the section summary when collapsed';
 $string['setshowsectionsummary_help'] = 'States if the section summary will always be shown regardless of toggle state.';
 $string['settings'] = 'Settings';
 $string['settingssettings'] = 'Settings settings';
-$string['settingssettingsdesc'] = 'Collapsed Topics format settings';
+$string['settingssettingsdesc'] = 'Collapsed Topics course format settings';
 $string['settogglealignment'] = 'Toggle text alignment';
 $string['settogglealignment_help'] = 'Sets the alignment of the text in the toggle.';
 $string['settoggleallenabled'] = 'Toggle all enabled';
@@ -341,7 +338,7 @@ $string['setviewsinglesectionenabled'] = 'View single section enabled';
 $string['setviewsinglesectionenabled_help'] = 'View single section functionality enabled.';
 $string['showadditionalmoddata'] = 'Show additional information for: {$a} in the course';
 $string['showadditionalmoddata_help'] = 'Allow all users to see the activity deadline and users with grading permission to see the number of submissions on the course page for activities.';
-$string['showfromothers'] = 'Show section';
+$string['showfromothers'] = 'Show';
 $string['sidepost'] = 'Post';
 $string['sidepre'] = 'Pre';
 $string['small'] = 'Small';

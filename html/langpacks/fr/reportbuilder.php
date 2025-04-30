@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'fr', version '4.1'.
+ * Strings for component 'reportbuilder', language 'fr', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} plus {$a->morecount} de 
 $string['audiencenotsaved'] = 'Audience non enregistrée';
 $string['audiencesaved'] = 'Audience enregistrée';
 $string['audienceupdated'] = 'Audience modifiée';
+$string['audienceusedbyschedule'] = 'Cette audience est utilisée dans la programmation de ce rapport';
 $string['cardview'] = 'Vue en cartes';
 $string['cardview_help'] = 'La vue en cartes permet de définir l’affichage d’un rapport lorsqu’il est consulté sur des appareips étroits. Les colonnes au-delà de la limite fixée ici se replient, avec la possibilté de déplier la carte pour voir toutes les données du rapport.';
 $string['cardviewfirstcolumntitle'] = 'Titre de la première colonne';
@@ -68,8 +69,8 @@ $string['columndeleted'] = 'Colonne « {$a} » supprimée';
 $string['columnmoved'] = 'Colonne « {$a} » déplacée';
 $string['columnsortdirectionasc'] = 'Trier la colonne « {$a} » par valeurs croissantes';
 $string['columnsortdirectiondesc'] = 'Trier la colonne « {$a} » par valeurs décroissantes';
-$string['columnsortdisable'] = 'Désactiver le tri initial de la colonne {$a}';
-$string['columnsortenable'] = 'Activer le tri initial de la colonne {$a}';
+$string['columnsortdisable'] = 'Désactiver le tri initial de la colonne « {$a} »';
+$string['columnsortenable'] = 'Activer le tri initial de la colonne « {$a} »';
 $string['columnsortupdated'] = 'Modifier le tri pour la colonne « {$a} »';
 $string['conditionadded'] = 'Condition « {$a} » ajoutée';
 $string['conditiondeleted'] = 'Condition « {$a} » supprimée';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'ID du cours avec lien';
 $string['courseselect'] = 'Sélectionner un cours';
 $string['courseshortnamewithlink'] = 'Nom abrégé du cours avec lien';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Rapport personnalisé';
 $string['customreports'] = 'Rapports personnalisés';
 $string['customreportslimit'] = 'Nombre maximal de rapports personnalisés';
 $string['customreportslimit_desc'] = 'Le nombre de rapports personnalisés peut être limité pour des raisons de performance. Si égal à zéro, il n’y a pas de limite.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Impossible de trouver une source de rapport val
 $string['errorsourceunavailable'] = 'La source du rapport n’est pas disponible';
 $string['filteradded'] = 'Filtre « {$a} » ajouté';
 $string['filtercontains'] = 'Contient';
+$string['filterdateafter'] = 'Après';
+$string['filterdatebefore'] = 'Avant';
 $string['filterdatecurrent'] = 'Actuel';
 $string['filterdatedays'] = 'jours(s)';
 $string['filterdatefrom'] = 'De';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Se termine par';
 $string['filterequalorgreaterthan'] = 'Plus grand ou égal à';
 $string['filterequalorlessthan'] = 'Plus petit ou égal à';
 $string['filterfieldoperator'] = 'Opérateur {$a}';
+$string['filterfieldto'] = '{$a} jusqu’à';
+$string['filterfieldunit'] = 'Unité {$a}';
 $string['filterfieldvalue'] = 'Valeur {$a}';
 $string['filtergreaterthan'] = 'Plus grand que';
 $string['filterinvalid'] = 'Filtre non valide';
@@ -163,7 +169,7 @@ $string['filtersreset'] = 'Filtres réinitialisés';
 $string['filterstartswith'] = 'Commence par';
 $string['hassystemrole'] = 'Rôle système attribué';
 $string['includedefaultsetup'] = 'Inclure le format par défaut';
-$string['includedefaultsetup_help'] = 'Ajouter au rapport les réglages par défaut tels que définis selon la source sélectionnée. Cela inclut les colonnes, les filtres et conditions  pré-définis.';
+$string['includedefaultsetup_help'] = 'Ajouter au rapport les réglages par défaut tels que définis selon la source sélectionnée. Cela inclut les colonnes, les filtres et conditions pré-définis.';
 $string['manuallyaddedusers'] = 'Utilisateurs ajouté manuellement';
 $string['messagebody'] = 'Corps';
 $string['messagecontent'] = 'Contenu du message';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Ordre de tri';
 $string['sorting_help'] = 'Il est possible de fixer l’ordre de tri initial des colonnes du rapport ; l’ordre de tri peut être ensuite modifié par les utilisateurs cliquant sur l’intitulé des colonnes.';
 $string['switchedit'] = 'Passer au mode éditeur';
 $string['switchpreview'] = 'Passer au mode aperçu';
+$string['tagarea_reportbuilder_report'] = 'Rapports personnalisés';
 $string['tasksendschedule'] = 'Programmation d’envoi de rapports';
 $string['tasksendschedules'] = 'Programmations d’envoi de rapports';
 $string['timeadded'] = 'Heure d’ajout';

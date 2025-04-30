@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'en', version '4.1'.
+ * Strings for component 'calendar', language 'en', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'Calendar URL';
 $string['calendarheading'] = '{$a} Calendar';
 $string['calendarpreferences'] = 'Calendar preferences';
 $string['calendartypes'] = 'Calendar types';
-$string['calendarurl'] = 'Calendar URL: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'Calendar URL copied to clipboard';
 $string['category'] = 'Category';
 $string['categoryevent'] = 'Category event';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Copy calendar URL';
 $string['copyurl'] = 'Copy URL';
 $string['course'] = 'Course';
 $string['coursecalendar'] = '{$a} calendar';
+$string['coursecalendarlink'] = 'Course calendar';
 $string['courseevent'] = 'Course event';
 $string['courseevents'] = 'Course events';
 $string['courses'] = 'Courses';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = 'Import an external calendar?';
 $string['importcalendarfrom'] = 'Import from';
 $string['importcalendarheading'] = 'Import calendar...';
 $string['importfromfile'] = 'Calendar file (.ics)';
-$string['importfrominstructions'] = 'Please provide either a URL to a remote calendar, or upload a file.';
 $string['importfromurl'] = 'Calendar URL';
 $string['invalideventtype'] = 'The event type you have selected is invalid.';
 $string['invalidtimedurationminutes'] = 'The duration in minutes you have entered is invalid. Please enter the duration in minutes greater than 0 or select no duration.';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} events';
 $string['mon'] = 'Mon';
 $string['monday'] = 'Monday';
 $string['monthly'] = 'Monthly';
-$string['monthlyview'] = 'Monthly view';
 $string['monthnext'] = 'Next month';
 $string['monthprev'] = 'Previous month';
 $string['monththis'] = 'This month';
@@ -197,7 +195,9 @@ $string['moreevents'] = '{$a} more';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Never';
 $string['newevent'] = 'New event';
+$string['newmonthannouncement'] = 'Calendar is now set to {$a}.';
 $string['nocalendarsubscriptions'] = 'No calendar subscriptions yet. Do you want to {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'No calendar subscriptions yet. <a href="{$a}">Import an external calendar</a>';
 $string['notitle'] = 'no title';
 $string['noupcomingevents'] = 'There are no upcoming events';
 $string['oneevent'] = '1 event';

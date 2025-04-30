@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_lp', language 'zh_cn', version '4.4'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = '还没有添加先前学习证据。';
 $string['nouserplans'] = '还没有创建任何学习计划。';
 $string['oneplanwascreated'] = '一个学习计划已创建';
 $string['outcome'] = '成果';
+$string['overridegrade'] = '完成后覆盖现有的能力等级。';
 $string['parentcompetency'] = '父级';
 $string['parentcompetency_edit'] = '编辑父级';
 $string['parentcompetency_help'] = '定义将在其下添加能力的父级。它可以是同一框架内的另一个能力，也可以是顶级能力的能力框架的根。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ro', version '4.1'.
+ * Strings for component 'mnet', language 'ro', version '4.4'.
  *
  * @package     mnet
  * @category    string
@@ -38,6 +38,7 @@ $string['addtoacl'] = 'Adaugă la Acces Control';
 $string['allhosts'] = 'Toate gazdele';
 $string['allhosts_no_options'] = 'La vizualizarea multiple hosts nu sunt opţiuni disponibile';
 $string['allow'] = 'Permite';
+$string['allowaccess'] = 'Permite accesul';
 $string['applicationtype'] = 'Tip de aplicație';
 $string['authfail_nosessionexists'] = 'Autorizarea a eșuat: sesiunea mnet nu există.';
 $string['authfail_sessiontimedout'] = 'Autorizarea a eșuat: sesiunea mnet a expirat.';
@@ -62,6 +63,7 @@ $string['deleteoutoftime'] = 'Fereastra de 60 de secunde pentru a șterge aceast
 $string['deleteuserrecord'] = 'SSO ACL: șterge înregistrarea pentru utilizator \'{$a->user}\' de la {$a->host}.';
 $string['deletewrongkeyvalue'] = 'A apărut o eroare. Dacă nu ați încercat să ștergeți cheia SSL a serverului dumneavoastră, este posibil să fi fost fost obiectul unui atac malware. Nu a fost întreprinsă nicio acțiune.';
 $string['deny'] = 'Interzice';
+$string['denyaccess'] = 'Nu permite accesul';
 $string['description'] = 'Descriere';
 $string['duplicate_usernames'] = 'Nu am reușit să creăm un index pe coloanele "mnethostid" și "utilizator" în tabelul dumneavoastră cu utilizatori. <br /> Aceasta se poate întâmpla atunci când aveți <a href="{$a}" target="_blank"> nume de utilizatori duplicate în </a> tabelul dumneavoastră cu utilizatori. <br /> Upgrade-ul dumneavoastră trebuie să fie completat cu succes. Faceți click pe link-ul de mai sus iar instrucțiunile cu privire la rezolvarea aceastei probleme vor apărea într-o fereastră nouă. Le puteți folosi la sfârșitul upgrade-ului. <br />';
 $string['enabled_for_all'] = '(This service has been enabled for all hosts).';

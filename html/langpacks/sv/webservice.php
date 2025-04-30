@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'sv', version '4.1'.
+ * Strings for component 'webservice', language 'sv', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,6 @@ $string['postrestparam'] = 'PHP-kod för REST (POST-begäran)';
 $string['potusers'] = 'Inte auktoriserade användare';
 $string['potusersmatching'] = 'Icke auktoriserade användare som matchar';
 $string['print'] = 'Skriv ut allt';
-$string['privacy:metadata:serviceusers'] = 'Lista med användare som kan använda en viss tjänst';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP-begränsning för användning av tjänsten';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Datum då posten skapades';
-$string['privacy:metadata:serviceusers:userid'] = 'ID förvanvändaren';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Förfallodatum för auktorisationen';
-$string['privacy:metadata:tokens'] = 'En post med tokens som används vid interaktion med Moodle via webbtjänster eller Mobilapplikationer.';
-$string['privacy:metadata:tokens:creatorid'] = 'ID för användaren som skapade detta token';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP-adress som får använda detta token';
-$string['privacy:metadata:tokens:lastaccess'] = 'Datum för senaste användning av token';
-$string['privacy:metadata:tokens:privatetoken'] = 'Ett mer privat token som används ibland för att godkänna vissa operationer, som t.ex. SSL';
-$string['privacy:metadata:tokens:timecreated'] = 'Datum då detta token skapades';
-$string['privacy:metadata:tokens:token'] = 'Användarens token';
-$string['privacy:metadata:tokens:tokentype'] = 'Typ av token';
-$string['privacy:metadata:tokens:userid'] = 'ID för ägaren av detta token';
-$string['privacy:metadata:tokens:validuntil'] = 'Förfallodatum för detta token';
-$string['privacy:request:notexportedsecurity'] = 'Exporteras ej av säkerhetsskäl';
 $string['protocol'] = 'Protokoll';
 $string['removefunction'] = 'Ta bort';
 $string['removefunctionconfirm'] = 'Vill du verkligen ta bort funktionen "{$a->function}" från tjänsten "{$a->service}"?';
@@ -226,8 +210,6 @@ $string['userasclientsdescription'] = 'Följande steg hjälper dig att konfigure
 $string['usermissingcaps'] = 'Saknade funktionsbehörigheter: {$a}';
 $string['usernameorid'] = 'Användarnamn / Användar-ID';
 $string['usernameorid_help'] = 'Ange användarnamn eller ID.';
-$string['usernameoridnousererror'] = 'Hittade inga användare med detta användarnamn/användar-id';
-$string['usernameoridoccurenceerror'] = 'Fler än en användare med detta användarnamn hittades. Vänligen ange användar-ID istället.';
 $string['usernotallowed'] = 'Användaren är inte behörig till den här tjänsten. Du behöver tilldela behörighet till användaren på {$a}s administration av behöriga användare.';
 $string['userservices'] = 'Användartjänster: {$a}';
 $string['usersettingssaved'] = 'Inställningar sparade';

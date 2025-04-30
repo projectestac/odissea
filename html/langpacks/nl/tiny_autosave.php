@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_autosave', language 'nl', version '4.1'.
+ * Strings for component 'tiny_autosave', language 'nl', version '4.4'.
  *
  * @package     tiny_autosave
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Automatisch opslaan';
-$string['pluginname'] = 'Tiny automatisch opslaan';
+$string['pluginname'] = 'Automatisch bewaren';
 $string['privacy:metadata:database:tiny_autosave'] = 'Een tabel om de sessies voor automatisch opslaan van de TinyMCE editor te bewaren';
 $string['privacy:metadata:database:tiny_autosave:drafttext'] = 'De tekstinhoud van de sessie voor automatisch opslaan';
 $string['privacy:metadata:database:tiny_autosave:timemodified'] = 'Het tijdstip waarop de sessie voor automatisch opslaan voor het laatst is aangepast';

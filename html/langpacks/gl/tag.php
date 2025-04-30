@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', version '4.1'.
+ * Strings for component 'tag', language 'gl', version '4.4'.
  *
  * @package     tag
  * @category    string
@@ -81,11 +81,11 @@ $string['inputstandardtags'] = 'Escribir a lista de novas etiquetas separada por
 $string['itemid'] = 'ID do elemento';
 $string['itemstaggedwith'] = '{$a->tagarea} etiquetas con «{$a->tag}»';
 $string['itemtype'] = 'Tipo de elemento';
-$string['lesstags'] = 'menos...';
+$string['lesstags'] = 'menos…';
 $string['managestandardtags'] = 'Xestionar as etiquetas estándar';
 $string['managetagcolls'] = 'Xestionar as coleccións de etiquetas';
 $string['managetags'] = 'Xestionar etiquetas';
-$string['moretags'] = 'máis...';
+$string['moretags'] = 'máis…';
 $string['name'] = 'Nome da etiqueta';
 $string['namesalreadybeeingused'] = 'Estes nomes de etiqueta xa están empregados';
 $string['nameuseddocombine'] = 'Este nome de etiqueta xa foi usado, quere combinar estas etiquetas?';
@@ -130,7 +130,7 @@ $string['searchable'] = 'Buscábel';
 $string['searchable_help'] = 'Se o marca, as etiquetas desta colección de busca poden ser buscadas na páxina de «Buscar etiquetas». Se o desmarca, as etiquetas aínda poden atoparse mediante outras páxinas de busca.';
 $string['searchresultsfor'] = 'Resultados da busca para «{$a}»';
 $string['searchtags'] = 'Buscar etiquetas';
-$string['seeallblogs'] = 'Ver todos os artigos do blog etiquetados con «{$a}»...';
+$string['seeallblogs'] = 'Ver todos os artigos do blog etiquetados con «{$a}»…';
 $string['select'] = 'Seleccionar';
 $string['selectcoll'] = 'Seleccionar a colección de etiquetas';
 $string['selectmaintag'] = 'Seleccionar a etiqueta que será usada após combinar';

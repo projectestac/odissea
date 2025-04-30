@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'it', version '4.1'.
+ * Strings for component 'calendar', language 'it', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -35,7 +35,6 @@ $string['calendarexporturl'] = 'URL Calendario';
 $string['calendarheading'] = 'Calendario {$a}';
 $string['calendarpreferences'] = 'Preferenze calendario';
 $string['calendartypes'] = 'Tipi di calendario';
-$string['calendarurl'] = 'URL del calendario: {$a}';
 $string['calendarurlcopiedtoclipboard'] = 'URL del calendario copiato negli appunti';
 $string['category'] = 'Categoria';
 $string['categoryevent'] = 'Evento di categoria';
@@ -54,6 +53,7 @@ $string['copycalendarurl'] = 'Copia l\'URL del calendario';
 $string['copyurl'] = 'Copia URL';
 $string['course'] = 'Corso';
 $string['coursecalendar'] = 'Calendario {$a}';
+$string['coursecalendarlink'] = 'Calendario corsi';
 $string['courseevent'] = 'Evento di corso';
 $string['courseevents'] = 'Eventi di corso';
 $string['courses'] = 'Corsi';
@@ -176,7 +176,6 @@ $string['importcalendarexternal'] = 'Importare un calendario esterno?';
 $string['importcalendarfrom'] = 'Importa da';
 $string['importcalendarheading'] = 'Importa calendario...';
 $string['importfromfile'] = 'File calendario (.ics)';
-$string['importfrominstructions'] = 'Per favore fornisci un URL di un calendario remoto oppure carica un file.';
 $string['importfromurl'] = 'URL calendario';
 $string['invalideventtype'] = 'Il tipo di evento selezionato non è valido.';
 $string['invalidtimedurationminutes'] = 'La durata in minuti dell\'evento non è valida. La durata in minuti deve essere maggiore di 0, oppure non selezionare una durata.';
@@ -188,7 +187,6 @@ $string['manyevents'] = '{$a} eventi';
 $string['mon'] = 'Lun';
 $string['monday'] = 'Lunedi';
 $string['monthly'] = 'Ogni mese';
-$string['monthlyview'] = 'Vista mensile';
 $string['monthnext'] = 'Prossimo mese';
 $string['monthprev'] = 'Mese precedente';
 $string['monththis'] = 'Questo mese';
@@ -197,7 +195,9 @@ $string['moreevents'] = '{$a} altro';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Mai';
 $string['newevent'] = 'Nuovo evento';
+$string['newmonthannouncement'] = 'Il calendario è ora impostato su {$a}.';
 $string['nocalendarsubscriptions'] = 'Non hai sottoscrizioni al calendario, desideri {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Al momento non sono presenti sottoscrizioni a calendari. <a href="{$a}">Importa un calendario esterno</a>';
 $string['notitle'] = 'senza titolo';
 $string['noupcomingevents'] = 'Non ci sono eventi in programma per i prossimi giorni.';
 $string['oneevent'] = '1 evento';

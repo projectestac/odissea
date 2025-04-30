@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ro', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'ro', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'Conectare la un cont din sistem';
 $string['createfromtemplate'] = 'Creează un serviciu cu OAuth 2 dintr-un șablon';
 $string['createfromtemplatedesc'] = 'Alegeți unul dintre șabloanele de servicii OAuth 2 de mai jos pentru a crea un serviciu OAuth cu o configurație validă pentru unul dintre tipurile de servicii cunoscute. Aceasta va crea serviciul OAuth 2, cu toate punctele finale (end points) și parametrii corecți necesari pentru autentificare, deși va trebui totuși să introduceți ID-ul clientului și jetonul secret pentru noul serviciu înainte de a putea fi utilizat.';
 $string['createnewendpoint'] = 'Creați un nou punct final pentru emitent „{$a}”';
-$string['createnewfacebookissuer'] = 'Creați un nou serviciu Facebook';
-$string['createnewgoogleissuer'] = 'Creați un nou serviciu Google';
-$string['createnewissuer'] = 'Creați un serviciu personalizat nou';
-$string['createnewmicrosoftissuer'] = 'Creați un nou serviciu Microsoft';
-$string['createnewnextcloudissuer'] = 'Creați un nou serviciu Nextcloud';
 $string['createnewservice'] = 'Creează serviciu nou:';
 $string['createnewuserfieldmapping'] = 'Creați o nouă mapare a câmpului utilizatorului pentru emitentul „{$a}”';
 $string['custom_service'] = 'Particularizare';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Afișează pe pagina de autentificare ca';
 $string['loginissuer'] = 'Permiteți autentificarea';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Neconfigurat';
 $string['notdiscovered'] = 'Descoperirea serviciului nu a reușit';

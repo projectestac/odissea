@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'de', version '4.1'.
+ * Strings for component 'report_performance', language 'de', version '4.4'.
  *
  * @package     report_performance
  * @category    string
@@ -30,11 +30,11 @@ $string['check_backup_comment_disable'] = 'Die Leistung kann während des Sicher
 $string['check_backup_comment_enable'] = 'Die Leistung kann während des Sicherungsvorgangs beeinträchtigt sein. Die Sicherungen sollten in verkehrarmen Zeiten eingeplant werden.';
 $string['check_backup_details'] = 'Wenn automatische Sicherungen aktiviert sind, werden zum angegebenen Zeitpunkt automatisch von allen Kursen Sicherungen angelegt. Während dieses Vorgangs werden Serverressourcen benötigt und die Leistung beeinträchtigt.';
 $string['check_cachejs_comment_disable'] = 'Wenn diese Option aktiviert ist, wird die Leistung zum Laden der Seite verbessert.';
-$string['check_cachejs_comment_enable'] = 'Wenn deaktiviert, kann die Seite langsam laden.';
-$string['check_cachejs_details'] = 'Javascript Caching und Kompression kann die Leistung beim Laden der Seite positiv beeinflussen. Für produktive Seiten wird dies empfohlen.';
-$string['check_dbschema_errors'] = 'Datenbankschema ist nicht ausgerichtet.';
+$string['check_cachejs_comment_enable'] = 'Wenn diese Option deaktiviert ist, könnte die Seite langsam laden.';
+$string['check_cachejs_details'] = 'JavaScript Caching und Kompression kann die Leistung beim Laden der Seite positiv beeinflussen. Für produktive Seiten wird dies empfohlen.';
+$string['check_dbschema_errors'] = 'Das Datenbankschema ist nicht korrekt.';
 $string['check_dbschema_name'] = 'Datenbankschema prüfen';
-$string['check_dbschema_ok'] = 'Datenbankschema ist korrekt.';
+$string['check_dbschema_ok'] = 'Das Datenbankschema ist korrekt.';
 $string['check_debugmsg_comment_developer'] = 'Bei einem anderen Wert als DEVELOPER kann die Leistung geringfügig verbessert werden.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Wenn diese Option auf DEVELOPER gesetzt ist, kann die Leistung geringfügig beeinträchtigt sein.';
 $string['check_debugmsg_details'] = 'Es gibt wenig Gründe, den Debug-Modus DEVELOPER zu aktivieren. Für Entwickler/innen ist dies jedoch durchaus sinnvoll.<p>Nachdem Sie eine Fehlermeldung gesehen haben, sollten Sie diese kopieren und abspeichern. Stellen Sie dann den Debug-Modus auf KEIN zurück. Die Debug-Mitteilungen werden auch von anderen Nutzer/innen gesehen. Hacker können daraus Schlüsse über die Konfiguration Ihrer Website und über Schwachstellen ziehen. Der Debug-Mitteilungen können sich auch negativ auf die Performance auswirken.</p>';

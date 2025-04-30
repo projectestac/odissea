@@ -145,7 +145,12 @@ class repository_onedrive extends repository {
 
         $repositoryname = get_string('pluginname', 'repository_onedrive');
 
-        $button = new single_button($url, get_string('logintoaccount', 'repository', $repositoryname), 'post', true);
+        $button = new single_button(
+            $url,
+            get_string('logintoaccount', 'repository', $repositoryname),
+            'post',
+            single_button::BUTTON_PRIMARY
+        );
         $button->add_action(new popup_action('click', $url, 'Login'));
         $button->class = 'mdl-align';
         $button = $OUTPUT->render($button);
@@ -351,7 +356,7 @@ class repository_onedrive extends repository {
                     'title' => $remotefile->name,
                     'path' => $this->build_node_path($remotefile->id, $remotefile->name, $path),
                     'date' => strtotime($remotefile->lastModifiedDateTime),
-                    'thumbnail' => $OUTPUT->image_url(file_folder_icon(64))->out(false),
+                    'thumbnail' => $OUTPUT->image_url(file_folder_icon())->out(false),
                     'thumbnail_height' => 64,
                     'thumbnail_width' => 64,
                     'children' => []
@@ -448,13 +453,21 @@ class repository_onedrive extends repository {
 
         $base = 'https://graph.microsoft.com/v1.0/';
 
-        $sourceurl = new moodle_url($base . 'me/drive/items/' . $sourceinfo->id . '/content');
-        $source = $sourceurl->out(false);
+        // Fetch the item info.
+        $infourl = (new moodle_url($base . 'me/drive/items/' . $sourceinfo->id))->out(false);
+        $response = $client->get($infourl);
+        if (!$response) {
+            throw new repository_exception('cannotdownload', 'repository');
+        }
+        $response = json_decode($response, true);
+        $downloadurl = $response['@microsoft.graph.downloadUrl'];
 
         // We use download_one and not the rest API because it has special timeouts etc.
         $path = $this->prepare_file($filename);
         $options = ['filepath' => $path, 'timeout' => 15, 'followlocation' => true, 'maxredirs' => 5];
-        $result = $client->download_one($source, null, $options);
+        // We cannot send authorization headers in the direct download request, it will fail.
+        $c = new curl();
+        $result = $c->download_one($downloadurl, null, $options);
 
         if ($result) {
             @chmod($path, $CFG->filepermissions);
@@ -876,16 +889,25 @@ class repository_onedrive extends repository {
 
         $systemservice = new repository_onedrive\rest($systemauth);
 
+        $base = 'https://graph.microsoft.com/v1.0/';
+
+        // Fetch the item info.
+        $infourl = (new moodle_url($base . 'me/drive/items/' . $source->id))->out(false);
+        $response = $userauth->get($infourl);
+        if (!$response) {
+            throw new repository_exception('cannotdownload', 'repository');
+        }
+        $response = json_decode($response, true);
+        $downloadurl = $response['@microsoft.graph.downloadUrl'];
+
         // Download the file.
         $tmpfilename = clean_param($source->id, PARAM_PATH);
         $temppath = make_request_directory() . $tmpfilename;
 
+        // We cannot send authorization headers in the direct download request, it will fail.
+        $c = new curl();
         $options = ['filepath' => $temppath, 'timeout' => 60, 'followlocation' => true, 'maxredirs' => 5];
-        $base = 'https://graph.microsoft.com/v1.0/';
-        $sourceurl = new moodle_url($base . 'me/drive/items/' . $source->id . '/content');
-        $sourceurl = $sourceurl->out(false);
-
-        $result = $userauth->download_one($sourceurl, null, $options);
+        $result = $c->download_one($downloadurl, null, $options);
 
         if (!$result) {
             throw new repository_exception('cannotdownload', 'repository');

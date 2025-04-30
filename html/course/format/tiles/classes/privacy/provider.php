@@ -65,7 +65,10 @@ class provider implements \core_privacy\local\metadata\provider,
      * @return collection
      */
     public static function get_metadata(collection $collection): collection {
-        $collection->add_user_preference('format_tiles_stopjsnav', 'privacy:metadata:preference:format_tiles_stopjsnav');
+        $names = array_keys(self::get_prefs_and_defaults());
+        foreach ($names as $prefname) {
+            $collection->add_user_preference($prefname, "privacy:metadata:preference:$prefname");
+        }
         return $collection;
     }
 
@@ -75,11 +78,25 @@ class provider implements \core_privacy\local\metadata\provider,
      * @throws \coding_exception
      */
     public static function export_user_preferences(int $userid) {
-        $preference = get_user_preferences('format_tiles_stopjsnav', 0, $userid);
-        if (isset($preference)) {
-            $value = $preference ? get_string('yes') : get_string('no');
-            \core_privacy\local\request\writer::export_user_preference('format_tiles', 'format_tiles_stopjsnav',
-                $value, get_string('privacy:metadata:preference:format_tiles_stopjsnav', 'format_tiles'));
+        foreach (self::get_prefs_and_defaults() as $prefname => $default) {
+            $preference = get_user_preferences($prefname, $default, $userid);
+            if (isset($preference)) {
+                $value = $preference ? get_string('yes') : get_string('no');
+                \core_privacy\local\request\writer::export_user_preference('format_tiles', $prefname,
+                    $value, get_string("privacy:metadata:preference:$prefname", 'format_tiles'));
+            }
         }
+
+    }
+
+    /**
+     * Return the plugin preference names and default values.
+     * @return int[]
+     */
+    private static function get_prefs_and_defaults(): array {
+        return [
+            'format_tiles_stopjsnav' => 0,
+            'format_tiles_high_contrast_mode' => 0,
+        ];
     }
 }

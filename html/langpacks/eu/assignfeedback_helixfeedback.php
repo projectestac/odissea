@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_helixfeedback', language 'eu', version '4.1'.
+ * Strings for component 'assignfeedback_helixfeedback', language 'eu', version '4.4'.
  *
  * @package     assignfeedback_helixfeedback
  * @category    string
@@ -31,4 +31,5 @@ $string['default_help'] = 'Markatuz gero, zeregin berri guztietan feedback metod
 $string['enabled'] = 'Bideo Feedbacka';
 $string['enabled_help'] = 'Gaituz gero, ebaluatzaileak bidalketa bakoitzarentzako bideo-feedbacka utzi ahalko du.';
 $string['pluginname'] = 'MEDIAL Bideo Feedbacka';
+$string['privacy:metadata'] = 'MEDIAL Bideo Feedbacka pluginak ez du datu pertsonalik biltzen.';
 $string['view_feedback'] = 'Ikusi Bideo Feedbacka';

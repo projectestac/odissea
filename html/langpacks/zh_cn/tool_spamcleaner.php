@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_spamcleaner', language 'zh_cn', version '4.4'.
  *
  * @package     tool_spamcleaner
  * @category    string
@@ -30,7 +30,8 @@ $string['privacy:metadata'] = '垃圾邮件清理器插件不存储任何个人�
 $string['spamauto'] = '自动检测常见的垃圾行为';
 $string['spamcannotdelete'] = '无法删除此用户';
 $string['spamcannotfinduser'] = '没有找到符合条件的用户';
-$string['spamcleanerintro'] = '这个脚本可以在用户信息中查找特定的字符串，并删除那些明显由垃圾发送者创建的帐号。搜索时可以使用多个关键字(如 casino, porn 等)<br /><br />Moodle 文档中有关于<a href="http://docs.moodle.org/en/Reducing_spam_in_Moodle">如何减少 Moodle 中的垃圾</a>的更多信息。';
+$string['spamcleanerintro'] = '<p>此脚本允许您在所有用户配置文件中搜索某些字符串，然后删除那些显然是由垃圾邮件发送者创建的帐户。您可以使用逗号搜索多个关键字（例如 casino、porn）。</p>
+<p>有关详细信息，请参阅文档 <a href=“https://docs.moodle.org/en/Reducing_spam_in_Moodle”>减少 Moodle 中的垃圾邮件</a>。</p>';
 $string['spamdeleteall'] = '删除以下全部用户帐号';
 $string['spamdeleteallconfirm'] = '您确定要删除以下全部帐号吗？这是不能恢复的。';
 $string['spamdeleteconfirm'] = '您确定要删除这一项吗？这是不能恢复的。';

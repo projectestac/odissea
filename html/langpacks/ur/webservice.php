@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ur', version '4.1'.
+ * Strings for component 'webservice', language 'ur', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -143,22 +143,6 @@ $string['postrestparam'] = 'پی ایچ پی کوڈ برائے REST (پوسٹ د
 $string['potusers'] = 'مجاز صارفین نہیں';
 $string['potusersmatching'] = 'مماثل مجاز صارفین نہیں ہیں';
 $string['print'] = 'تمام پرنٹ کریں';
-$string['privacy:metadata:serviceusers'] = 'ان صارفین کی فہرست جو ایک مخصوص بیرونی سروس استعمال کر سکتے ہیں';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'آئی پی سروس استعمال کرنے کے لیے محدود ہے';
-$string['privacy:metadata:serviceusers:timecreated'] = 'وہ تاریخ جب ریکارڈ بنایا گیا تھا';
-$string['privacy:metadata:serviceusers:userid'] = 'صارف کی شناخت';
-$string['privacy:metadata:serviceusers:validuntil'] = 'وہ تاریخ جب تک اجازت درست ہے';
-$string['privacy:metadata:tokens'] = 'ویب سروسز یا موبائل ایپلیکیشنز کے ذریعے موڈل کے ساتھ تعامل کے لیے ٹوکنز کا ریکارڈ۔';
-$string['privacy:metadata:tokens:creatorid'] = 'ٹوکن بنانے والے صارف کی ID';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP اس ٹوکن کو استعمال کرنے کے لیے محدود ہے';
-$string['privacy:metadata:tokens:lastaccess'] = 'وہ تاریخ جب ٹوکن آخری بار استعمال کیا گیا تھا';
-$string['privacy:metadata:tokens:privatetoken'] = 'ایک زیادہ پرائیویٹ ٹوکن کبھی کبھار کچھ کارروائیوں کی توثیق کرنے کے لیے استعمال ہوتا ہے، جیسے SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'وہ تاریخ جب ٹوکن بنایا گیا تھا';
-$string['privacy:metadata:tokens:token'] = 'صارف کا ٹوکن';
-$string['privacy:metadata:tokens:tokentype'] = 'ٹوکن کی قسم';
-$string['privacy:metadata:tokens:userid'] = 'اس صارف کی ID جس کا ٹوکن یہ ہے';
-$string['privacy:metadata:tokens:validuntil'] = 'وہ تاریخ جب تک ٹوکن درست ہے';
-$string['privacy:request:notexportedsecurity'] = 'سیکیورٹی وجوہات کی بنا پر برآمد نہیں کیا گیا';
 $string['protocol'] = 'پروٹوکول';
 $string['removefunction'] = 'ہٹانا';
 $string['removefunctionconfirm'] = 'کیا آپ واقعی "{$a->function}" کو سروس "{$a->service}" سے ہٹانا چاہتے ہیں؟';
@@ -222,8 +206,6 @@ $string['userasclientsdescription'] = 'مندرجہ ذیل اقدامات صار
 $string['usermissingcaps'] = 'غائب صلاحیتیں: {$a}';
 $string['usernameorid'] = 'صارف نام / صارف آئی ڈی';
 $string['usernameorid_help'] = 'صارف نام یا صارف کی شناخت درج کریں۔';
-$string['usernameoridnousererror'] = 'اس صارف نام/یوزر آئی ڈی کے ساتھ کوئی صارف نہیں ملا۔';
-$string['usernameoridoccurenceerror'] = 'اس صارف نام کے ساتھ ایک سے زیادہ صارف ملے۔ براہ کرم صارف کی شناخت درج کریں۔';
 $string['usernotallowed'] = 'صارف کو اس سروس کی اجازت نہیں ہے۔ پہلے آپ کو اس صارف کو {$a} کے اجازت یافتہ صارفین کے انتظامی صفحہ پر اجازت دینی ہوگی۔';
 $string['userservices'] = 'صارف کی خدمات: {$a}';
 $string['usersettingssaved'] = 'صارف کی ترتیبات محفوظ ہو گئیں';

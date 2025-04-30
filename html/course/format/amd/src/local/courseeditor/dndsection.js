@@ -26,6 +26,12 @@
  */
 
 import {BaseComponent, DragDrop} from 'core/reactive';
+import {getString} from 'core/str';
+import {prefetchStrings} from 'core/prefetch';
+import Templates from 'core/templates';
+
+// Load global strings.
+prefetchStrings('core', ['addfilehere']);
 
 export default class extends BaseComponent {
 
@@ -105,14 +111,20 @@ export default class extends BaseComponent {
      * @returns {boolean}
      */
     validateDropData(dropdata) {
-        // We accept any course module.
-        if (dropdata?.type === 'cm') {
+        // We accept files.
+        if (dropdata?.type === 'files') {
             return true;
         }
-        // We accept any section but the section 0 or ourself
+        // We accept any course module unless it can form a subsection loop.
+        if (dropdata?.type === 'cm') {
+            if (this.section?.component && dropdata?.delegatesection === true) {
+                return false;
+            }
+            return true;
+        }
+        // We accept any section but yourself and the next one.
         if (dropdata?.type === 'section') {
-            const sectionzeroid = this.course.sectionlist[0];
-            return dropdata?.id != this.id && dropdata?.id != sectionzeroid && this.id != sectionzeroid;
+            return dropdata?.id != this.id && dropdata?.number != this.section.number + 1;
         }
         return false;
     }
@@ -123,18 +135,26 @@ export default class extends BaseComponent {
      * @param {Object} dropdata the accepted drop data
      */
     showDropZone(dropdata) {
+        if (dropdata.type == 'files') {
+            this.addOverlay({
+                content: getString('addfilehere', 'core'),
+                icon: Templates.renderPix('t/download', 'core'),
+            }).then(() => {
+                // Check if we still need the file dropzone.
+                if (!this.dragdrop?.isDropzoneVisible()) {
+                    this.removeOverlay();
+                }
+                return;
+            }).catch((error) => {
+                throw error;
+            });
+        }
         if (dropdata.type == 'cm') {
             this.getLastCm()?.classList.add(this.classes.DROPDOWN);
         }
         if (dropdata.type == 'section') {
-            // The relative move of section depends on the section number.
-            if (this.section.number > dropdata.number) {
-                this.element.classList.remove(this.classes.DROPUP);
-                this.element.classList.add(this.classes.DROPDOWN);
-            } else {
-                this.element.classList.add(this.classes.DROPUP);
-                this.element.classList.remove(this.classes.DROPDOWN);
-            }
+            this.element.classList.remove(this.classes.DROPUP);
+            this.element.classList.add(this.classes.DROPDOWN);
         }
     }
 
@@ -145,20 +165,32 @@ export default class extends BaseComponent {
         this.getLastCm()?.classList.remove(this.classes.DROPDOWN);
         this.element.classList.remove(this.classes.DROPUP);
         this.element.classList.remove(this.classes.DROPDOWN);
+        this.removeOverlay();
     }
 
     /**
      * Drop event handler.
      *
      * @param {Object} dropdata the accepted drop data
+     * @param {Event} event the drop event
      */
-    drop(dropdata) {
+    drop(dropdata, event) {
+        // File handling.
+        if (dropdata.type == 'files') {
+            this.reactive.uploadFiles(
+                this.section.id,
+                this.section.number,
+                dropdata.files
+            );
+            return;
+        }
         // Call the move mutation.
         if (dropdata.type == 'cm') {
-            this.reactive.dispatch('cmMove', [dropdata.id], this.id);
+            const mutation = (event.altKey) ? 'cmDuplicate' : 'cmMove';
+            this.reactive.dispatch(mutation, [dropdata.id], this.id);
         }
         if (dropdata.type == 'section') {
-            this.reactive.dispatch('sectionMove', [dropdata.id], this.id);
+            this.reactive.dispatch('sectionMoveAfter', [dropdata.id], this.id);
         }
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'it', version '4.1'.
+ * Strings for component 'format_weeks', language 'it', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Aggiungi settimana';
+$string['addsection'] = 'Aggiungi settimana';
 $string['automaticenddate'] = 'Calcola la data di fine in base al numero di sezioni';
 $string['automaticenddate_help'] = 'Consente di calcolare automaticamente la data di fine in base al numero di sezioni e alla data di inizio del corso.';
-$string['currentsection'] = 'Questa settimana';
-$string['deletesection'] = 'Elimina settimana';
-$string['editsection'] = 'Modifica settimana';
-$string['editsectionname'] = 'Modifica nome della settimana';
-$string['hidefromothers'] = 'Nascondi settimana';
+$string['currentsection'] = 'Settimana corrente';
+$string['hidefromothers'] = 'Nascondi';
 $string['indentation'] = 'Consenti rientro nella pagina home del corso';
 $string['indentation_help'] = 'Consente ai docenti e ad altri utenti con il privilegio  di gestione delle attività di far rientrare gli elementi nella pagina home del corso.';
-$string['newsectionname'] = 'Nuovo nome della settimana {$a}';
-$string['page-course-view-weeks'] = 'Qualsiasi tipo di pagina principale dei corso in formato settimanale';
-$string['page-course-view-weeks-x'] = 'Qualsiasi pagina di corso in formato settimanale';
-$string['pluginname'] = 'Settimanale';
-$string['privacy:metadata'] = 'Il plugin formato di corso "Settimanale" non memorizza dati personali.';
+$string['page-course-view-weeks'] = 'Qualsiasi tipo di pagina principale dei corso in formato sezioni settimanali';
+$string['page-course-view-weeks-x'] = 'Qualsiasi pagina di corso in formato sezioni settimanali';
+$string['plugin_description'] = 'Il corso è suddiviso in sezioni corrispondenti ad ogni settimana, a partire dalla data di inizio del corso.';
+$string['pluginname'] = 'Sezioni settimanali';
+$string['privacy:metadata'] = 'Il plugin formato di corso "Sezioni settimanali" non memorizza dati personali.';
 $string['section0name'] = 'Introduzione';
 $string['sectionname'] = 'Settimana';
-$string['showfromothers'] = 'Visualizza settimana';
+$string['showfromothers'] = 'Visualizza';

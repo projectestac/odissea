@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', version '4.1'.
+ * Strings for component 'group', language 'it', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Sei sicuro di eliminare il gruppo \'{$a}\'?';
 $string['deletegrouping'] = 'Elimina raggruppamento';
 $string['deletegroupingconfirm'] = 'Sei sicuro di eliminare il raggruppamento \'{$a}\'? (I gruppi facenti parte del  raggruppamento non saranno eliminati.)';
 $string['deletegroupsconfirm'] = 'Sei sicuro di eliminare i gruppi elencati?';
-$string['deleteselectedgroup'] = 'Elimina il gruppo selezionato';
+$string['deleteselectedgroup'] = 'Elimina';
+$string['disablemessagingaction'] = 'Disabilita messaggistica';
 $string['editgroupingsettings'] = 'Modifica impostazioni raggruppamento';
 $string['editgroupsettings'] = 'Modifica impostazioni gruppo';
 $string['editusersgroupsa'] = 'Modifica i gruppi di "{$a}"';
 $string['enablemessaging'] = 'Messaggistica di gruppo';
 $string['enablemessaging_help'] = 'I membri dei gruppi potranno inviare messaggi ad altri membri dello stesso gruppo';
+$string['enablemessagingaction'] = 'Abilita messaggistica';
 $string['encoding'] = 'Codifica';
 $string['enrolmentkey'] = 'Chiave di iscrizione';
 $string['enrolmentkey_help'] = 'Una chiave d\'iscrizione consente l\'accesso al gruppo alle sole persone che ne sono in possesso. Specificando una chiave di iscrizione al gruppo, questa non solo consentirà l\'accesso al corso, ma aggiungerà la persona tra i membri del gruppo.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'Una chiave d\'iscrizione consente l\'accesso al 
 Nota: la chiave di iscrizione al gruppo deve essere abilitata nelle impostazioni del plugin Iscrizione spontanea e deve anche essere impostata una chiave d\'iscrizione del corso.';
 $string['enrolmentkeyalreadyinuse'] = 'Questa chiave di iscrizione è già stata usata per un altro gruppo.';
 $string['erroraddremoveuser'] = 'Errore durante l\'aggiunta/rimozione dell\'utente {$a} al gruppo';
+$string['erroraddtogroup'] = 'Valore non valido per addtogroup. Deve essere 0 per la modalità senza gruppo o 1 per creare un nuovo gruppo.';
+$string['erroraddtogroupgroupname'] = 'Non è possibile specificare groupname quando è impostato addtogroup.';
 $string['erroreditgroup'] = 'Errore nella creazione/modifica del gruppo {$a}';
 $string['erroreditgrouping'] = 'Errore nella creazione/modifica del raggruppamento {$a}';
 $string['errorinvalidgroup'] = 'Errore, il gruppo {$a} non è valido';
@@ -113,6 +117,8 @@ $string['groupmembers'] = 'Membri del gruppo';
 $string['groupmemberssee'] = 'Visualizza membri del gruppo';
 $string['groupmembersselected'] = 'Membri del gruppo selezionato';
 $string['groupmode'] = 'Modalità gruppo';
+$string['groupmode_groupsseparate_help'] = 'Gli studenti sono divisi in gruppi e possono visualizzare solo il lavoro del proprio gruppo.';
+$string['groupmode_groupsvisible_help'] = 'Gli studenti sono divisi in gruppi, ma possono visualizzare il lavoro degli altri gruppi.';
 $string['groupmode_help'] = '* Senza gruppi
 * Gruppi separati : ciascun partecipante è membro del gruppo al quale è stato assegnato e non ha facoltà di vedere i lavoro svolto dai membri degli altri gruppi
 * Gruppi visibili: ciascun partecipante è membro del gruppo al quale è stato assegnato ma può vedere il lavoro svolto dagli altri gruppi.
@@ -135,7 +141,6 @@ $string['groupspreview'] = 'Anteprima gruppi';
 $string['groupsseparate'] = 'Gruppi separati';
 $string['groupsvisible'] = 'Gruppi visibili';
 $string['grouptemplate'] = 'Group @';
-$string['hidepicture'] = 'Nascondi immagine';
 $string['importgroups'] = 'Importa gruppi';
 $string['importgroups_help'] = 'È possibile importare gruppi attraverso un file di testo. Il formato del file è descritto di seguito:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Includi solo iscrizioni attive';
 $string['includeonlyactiveenrol_help'] = 'Consente di escludere dai gruppi gli utenti sospesi.';
 $string['javascriptrequired'] = 'Questa pagina richiede Javascript abilitato';
+$string['manageactions'] = 'Gestione';
 $string['memberofgroup'] = 'Membro del gruppo: {$a}';
 $string['members'] = 'Membri per gruppo';
 $string['membersofselectedgroup'] = 'Membri di:';
+$string['messagingdisabled'] = 'La modalità gruppo è forzata per tutte le attività e non può essere modificata in un\'attività.';
+$string['messagingenabled'] = 'Messaggistica abilitata correttamente in {$a} gruppo/i';
 $string['mygroups'] = 'I miei gruppi';
 $string['namingscheme'] = 'Schema denominazione';
 $string['namingscheme_help'] = 'Il simbolo at (@) può essere utilizzato per creare gruppi con nomi che contengono lettere. Per esempio, Gruppo @ genererà i nomi Gruppo A, Gruppo B, Gruppo C, eccetera.
@@ -175,6 +183,9 @@ $string['numgroups'] = 'Numero di gruppi';
 $string['nummembers'] = 'Membri per gruppo';
 $string['othergroups'] = 'Altri gruppi';
 $string['overview'] = 'Riepilogo';
+$string['participation'] = 'Visualizza il gruppo nel menu a discesa per le attività in modalità gruppo';
+$string['participation_help'] = 'I membri del gruppo devono essere in grado di selezionare questo gruppo per le attività in modalità gruppi separati o visibili? (Applicabile solo se l\'appartenenza al gruppo è Visibile oppure Visibile solo ai membri).';
+$string['participationshort'] = 'Partecipazione';
 $string['potentialmembers'] = 'Membri potenziali: {$a}';
 $string['potentialmembs'] = 'Membri possibili';
 $string['printerfriendly'] = 'Versione stampabile';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'Utenti insufficienti per popolare questo numero di g
 $string['usercount'] = 'Numero utenti';
 $string['usercounttotal'] = 'Numero utenti ({$a})';
 $string['usergroupmembership'] = 'Appartenenza utente selezionato';
+$string['visibility'] = 'Visibilità dell’appartenenza ai gruppi';
+$string['visibility_help'] = '* Visibile - tutti i partecipanti al corso possono visualizzare chi appartiene al gruppo
+* Visibile solo ai membri - un utente che non fa parte del gruppo non potrà visualizzare il gruppo o i suoi membri
+* Visibile solo l\'appartenenza - un utente potrà sapere di appartenere ad un gruppo m anon potrà visualizzare gli altri membri
+* Nascosto - solo i docenti potranno visualizzare i gruppi e chi vi appartiene
+
+Gli utenti con il privilegio di visualizzazione dei gruppi nascosti potranno sempre visualizzare l\'appartenenza ai gruppi.
+
+Da notare che non è possibile cambiare questa impostazione se il gruppo contiene già dei membri.';
+$string['visibilityall'] = 'Visibile';
+$string['visibilitymembers'] = 'Visibile solo ai membri';
+$string['visibilitynone'] = 'Nascosto';
+$string['visibilityown'] = 'Visibile solo l\'appartenenza';
+$string['visibilityshort'] = 'Visibilità';
+$string['withselected'] = 'Con la selezione';

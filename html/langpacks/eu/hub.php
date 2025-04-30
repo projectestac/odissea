@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'eu', version '4.1'.
+ * Strings for component 'hub', language 'eu', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -43,7 +43,9 @@ $string['coursename'] = 'Izena';
 $string['coursepublished'] = 'Ikastaro hau ondo argitaratu da hemen: \'{$a}\'.';
 $string['courseshortname'] = 'Izen laburra';
 $string['courseshortname_help'] = 'Idatzi izen laburra zure ikastarorako. Ez du zertan bakarra izan.';
+$string['coursesnodates'] = 'Amaiera-data zehaztuta ez duten ikastaro kopurua ({$a})';
 $string['coursesnumber'] = 'Ikastaro-kopurua: ({$a})';
+$string['dbtype'] = 'Datu-base mota ({$a})';
 $string['demourl'] = 'Demoaren URLa';
 $string['demourl_help'] = 'Idatzi zure demostrazio-ikastaroaren URL helbidea. Modu lehenetsian ikastaroaren URLa da. Demostrazio-ikastaroaren URLa bilaketa-emaitzetan esteka gisa agertuko da.';
 $string['downloadable'] = 'Deskargagarria';
@@ -96,6 +98,7 @@ $string['postaladdress'] = 'Helbidea';
 $string['postaladdress_help'] = 'Gune honen posta-helbidea, edo guneak errepresentatzen duen erakundearena.';
 $string['postsnumber'] = 'Mezu-kopurua: ({$a})';
 $string['previousregistrationdeleted'] = 'Aurretiko erregistroa ezabatua izan da {$a} gunetik. Erregistro-prozesua berriz has dezakezu. Eskerrik asko.';
+$string['primaryauthtype'] = 'Autentifikazio-mota lehenetsia ({$a})';
 $string['questionsnumber'] = 'Galdera-kopurua: ({$a})';
 $string['registeredactiveuserdevices'] = 'Jakinarazpenak jasotzen ari diren erregistratutako gailu mugikorrak duen erabiltzaile aktiboen kopurua ({$a})';
 $string['registeredcourses'] = 'Erregistratutako ikastaroak';
@@ -159,6 +162,7 @@ $string['siteregistrationupdated'] = 'Gunearen erregistroa eguneratu da';
 $string['siterelease'] = 'Moodleren bertsioa';
 $string['siterelease_help'] = 'Gune honen Moodleren ezaugarriak';
 $string['sitereleasenum'] = 'Moodleren bertsioa ({$a})';
+$string['sitetheme'] = 'Gunearen azala ({$a})';
 $string['siteurl'] = 'Gunearen URLa';
 $string['siteurl_help'] = 'URL hau gunearen helbidea da. Pribatutasun-ezerpenek jendeak guneko helbidea ikustea baimenduz gero, URL hau erabiliko da horretarako.';
 $string['siteversion'] = 'Moodle bertsioa';

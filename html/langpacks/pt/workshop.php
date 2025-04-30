@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', version '4.1'.
+ * Strings for component 'workshop', language 'pt', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Submissões após data limite';
 $string['latesubmissions_desc'] = 'Permitir submissões após a data limite';
 $string['latesubmissions_help'] = 'Se ativar esta opção, o aluno pode enviar os seus trabalhos após a data limite ou durante a fase de avaliação. As submissões de trabalhos após o prazo não podem ser editadas.';
 $string['latesubmissionsallowed'] = 'O envio de trabalhos após data limite é permitido';
-$string['legacyallocationplugincron'] = 'Cron de retrocompatibildade da alocação do workshop';
 $string['maxbytes'] = 'Tamanho máximo do anexo da submissão';
 $string['modulename'] = 'Workshop';
 $string['modulename_help'] = 'A atividade Workshop permite inserir, analisar e avaliar o trabalho dos alunos pelos seus pares.

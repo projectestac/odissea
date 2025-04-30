@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'pt', version '4.1'.
+ * Strings for component 'organizer', language 'pt', version '4.4'.
  *
  * @package     organizer
  * @category    string
@@ -590,7 +590,7 @@ $string['mymoodle_reg_slot_group'] = 'O seu grupo {$a->groupname} já está insc
 $string['mymoodle_registered'] = '{$a->registered}/{$a->total} alunos inscritos num compromisso';
 $string['mymoodle_registered_group'] = '{$a->registered}/{$a->total} grupos inscritos num compromisso';
 $string['mymoodle_registered_group_short'] = '{$a->registered}/{$a->total} grupos inscritos';
-$string['mymoodle_registered_short'] = '$a->registered}/{$a->total} alunos inscritos';
+$string['mymoodle_registered_short'] = '{$a->registered} de {$a->total} participantes reservaram o mínimo de {$a->slotsmin} vagas.';
 $string['mymoodle_upcoming_app'] = 'O compromisso irá ocorrer {$a->date} às {$a->time} em {$a->location}';
 $string['mymoodle_upcoming_app_group'] = 'O compromisso do seu grupo {$a->groupname} será {$a->date} às {$a->time} em {$a->location}';
 $string['newslot'] = 'Addicionar mais vagas';
@@ -799,14 +799,10 @@ $string['slot_visible'] = 'Membros da vaga sempre visíveis';
 $string['slotassignedby'] = 'Vaga atribuída por';
 $string['slotdeleted_notify_student:fullmessage'] = 'Olá {$a->receivername}!
 
-O seu compromisso na disciplina {$a->coursehortname} de {$a->date} às {$a->time} em {$a->location} foi cancelado.
-Tenha em atenção que não tem mais compromissos no organizador {$a->organizername}.
-Por favor, clique na hiperligação para criar um novo compromisso: {$a->courselink}';
+O seu compromisso na disciplina {$a->courseshortname} agendado para {$a->date} às {$a->time} em {$a->location} foi cancelado.';
 $string['slotdeleted_notify_student:group:fullmessage'] = 'Olá {$a->receivername}!
 
-O seu compromisso na disciplina {$a->coursehortname} de {$a->date} às {$a->time} em {$a->location} foi cancelado.
-Tenha em atenção que não tem mais compromissos no organizador {$a->organizername}.
-Por favor, clique na hiperligação para criar um novo compromisso: {$a->courselink}';
+O seu compromisso na disciplina {$a->courseshortname} agendado para {$a->date} às {$a->time} em {$a->location} foi cancelado.';
 $string['slotdeleted_notify_student:group:smallmessage'] = 'O seu compromisso de {$a->date} às {$a->time} do organizador "{$a->organizername}" foi cancelado.';
 $string['slotdeleted_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Compromisso cancelado';
 $string['slotdeleted_notify_student:smallmessage'] = 'O seu compromisso de {$a->date} às {$a->time} do organizador "{$a->organizername}" foi cancelado.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ar', version '4.1'.
+ * Strings for component 'form', language 'ar', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'يجب عليك إدخال على الأقل {$a->fo
 $string['err_nonzero'] = 'يجب عليك إدخال رقم لا يبدا بصفر (0)';
 $string['err_nopunctuation'] = 'لا يجب ادخال رموز ترقيم هنا';
 $string['err_numeric'] = 'يجب ادخال الرقم هنا';
-$string['err_positiveint'] = 'ينبغي عليك إدخال رقم أكبر من 0.';
+$string['err_positiveint'] = 'ينبغي عليك إدخال رقم كامل أكبر من 0.';
 $string['err_rangelength'] = 'يجب الأدخل بين {$a->format[0]} و{$a->format[1]}الحروف هنا';
 $string['err_required'] = 'عليك إعطاء قيمة هنا.';
 $string['err_wrappingwhitespace'] = 'القيمة ينبغي أن لا تبدأ أو تنتهي بفراغ.';
@@ -50,9 +50,9 @@ $string['filesofthesetypes'] = 'أنواع الملفات المقبولة:';
 $string['filetypesany'] = 'كل أنواع الملفات';
 $string['filetypesnotall'] = 'غير مسموح به اختيار \'كل أنواع الملفات\' هنا';
 $string['filetypesnotallowed'] = 'أنواع الملفات هذه غير مسموح بها هنا: {$a}';
-$string['filetypesnotwhitelisted'] = 'أنواع الملفات هذه غير مسموح بها هنا: {$a}';
 $string['filetypesothers'] = 'الملفات الأخرى';
 $string['filetypesunknown'] = 'أنواع ملفات غير معروفة: {$a}';
+$string['formactions'] = 'إجراءات النموذج';
 $string['general'] = 'عامة';
 $string['hideadvanced'] = 'إخفاء المستوى المتقدم';
 $string['hour'] = 'ساعة';
@@ -89,5 +89,6 @@ $string['suggestions'] = 'الاقتراحات';
 $string['time'] = 'الوقت';
 $string['timeunit'] = 'وحدة الوقت';
 $string['timing'] = 'التوقيتات';
+$string['togglesensitive'] = 'تبديل تحسس حالة الأحرف';
 $string['unmaskpassword'] = 'إزالة الحجب';
 $string['year'] = 'سنة';

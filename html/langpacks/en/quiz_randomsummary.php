@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_randomsummary', language 'en', version '4.1'.
+ * Strings for component 'quiz_randomsummary', language 'en', version '4.4'.
  *
  * @package     quiz_randomsummary
  * @category    string
@@ -55,6 +55,7 @@ $string['pluginname'] = 'Random question summary';
 $string['preferencespage'] = 'Preferences just for this page';
 $string['preferencessave'] = 'Show report';
 $string['preferencesuser'] = 'Your preferences for this report';
+$string['privacy:metadata'] = 'This plugin does not store any user related data.';
 $string['questionfreq'] = 'Question frequency';
 $string['randomsummary'] = 'Random question summary';
 $string['randomsummaryfilename'] = 'Randomsummary';

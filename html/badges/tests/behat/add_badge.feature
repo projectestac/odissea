@@ -17,7 +17,7 @@ Feature: Add badges to the system
     And I add the "Navigation" block if not present
     And I click on "Site pages" "list_item" in the "Navigation" "block"
     Given I click on "Site badges" "link" in the "Navigation" "block"
-    Then I should see "There are currently no badges available for users to earn."
+    Then I should see "There are no matching badges available for users to earn."
 
   @javascript @_file_upload
   Scenario: Add a badge
@@ -33,6 +33,7 @@ Feature: Add badges to the system
       | Description | Test badge description |
       | Image author | http://author.example.com |
       | Image caption | Test caption image |
+      | Tags | Math, Physics |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     When I press "Create badge"
     Then I should see "Edit details"
@@ -46,8 +47,11 @@ Feature: Add badges to the system
     And I should see "Issuer details"
     And I should see "Test Badge Site"
     And I should see "testuser@example.com"
+    And I should see "Tags"
+    And I should see "Math"
+    And I should see "Physics"
     And I navigate to "Badges > Manage badges" in site administration
-    And I should not see "There are currently no badges available for users to earn."
+    And I should not see "There are no matching badges available for users to earn."
 
   @javascript @_file_upload
   Scenario: Add a badge related
@@ -159,7 +163,7 @@ Feature: Add badges to the system
     And I should see "Alignments (0)"
     And I should not see "Create badge"
     And I navigate to "Badges > Manage badges" in site administration
-    And I should not see "There are currently no badges available for users to earn."
+    And I should not see "There are no matching badges available for users to earn."
     # See buttons from the "Site badges" page.
     And I am on homepage
     When I click on "Site pages" "list_item" in the "Navigation" "block"
@@ -181,17 +185,24 @@ Feature: Add badges to the system
       | Description | Test badge description |
       | Image author | http://author.example.com |
       | Image caption | Test caption image |
+      | Tags | Math, Physics |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     When I select "Edit details" from the "jump" singleselect
     And I should see "Test badge with 'apostrophe' and other friends (&@#)"
     And I should not see "Issuer details"
+    And I should see "Math"
+    And I should see "Physics"
     And I set the following fields to these values:
       | Name | Test badge renamed |
       | Version | secondversion |
+      | Tags | Math, History |
     And I press "Save changes"
     And I select "Overview" from the "jump" singleselect
     Then I should not see "Test badge with 'apostrophe' and other friends (&@#)"
     And I should not see "firstversion"
+    And I should not see "Math, Physics"
     And I should see "Test badge renamed"
     And I should see "secondversion"
+    And I should see "Math"
+    And I should see "History"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_stash', language 'fr', version '4.1'.
+ * Strings for component 'block_stash', language 'fr', version '4.4'.
  *
  * @package     block_stash
  * @category    string
@@ -46,7 +46,7 @@ $string['configureremoval'] = 'Configurer la suppression';
 $string['copypaste'] = 'Copiez et collez ce code dans un éditeur de texte dans une ou plusieurs activités/ressources de votre cours.';
 $string['copytoclipboard'] = 'Copier dans le presse-papiers';
 $string['cost'] = 'Coût';
-$string['createquizzes'] = 'Créez un test dans ce cours pour configurer un retrait d\'élément de la réserve ici.';
+$string['createquizzes'] = 'Créez un test dans ce cours pour configurer un retrait d’élément de la réserve ici.';
 $string['createtrade'] = 'Créer une demande de troc';
 $string['decline'] = 'Décliner';
 $string['delete'] = 'Supprimer';
@@ -75,8 +75,8 @@ $string['edittradeitem'] = 'Modifier l’objet du troc « {$a} »';
 $string['eginthecastle'] = 'P. ex. Dans le château';
 $string['enabled'] = 'Activé';
 $string['eventitemacquired'] = 'Un objet a été récupéré.';
-$string['eventswapaccepted'] = 'Un troc d\'utilisateurs a été accepté.';
-$string['eventswapcreated'] = 'Un troc d\'utilisateurs a été créé.';
+$string['eventswapaccepted'] = 'Un troc d’utilisateurs a été accepté.';
+$string['eventswapcreated'] = 'Un troc d’utilisateurs a été créé.';
 $string['filtershortcodesnotactive'] = 'Le filtre Shortcodes est installé mais pas encore activé dans ce cours. Consultez <a href="{$a->activeurl}" target="_blank">cette page</a> pour l’activer dans le cours.';
 $string['filtershortcodesnotenabled'] = 'Le filtre Shortcodes est installé mais pas encore <a href="{$a->enableurl}" target="_blank">activé</a>.';
 $string['filtershortcodesnotinstalled'] = 'Nous vous conseillons d’installer et d’activer le <a href="{$a->installurl}" target="_blank">filtre Shortcodes</a>. Il rend l’utilisation des codes plus facile et plus fiable. De plus il permet d’utiliser le troc.';
@@ -91,26 +91,26 @@ $string['gainloss'] = 'Gagnez ou perdez';
 $string['gaintitle'] = 'Intitulé du gain';
 $string['gaintitle_help'] = 'Intitulé de la colonne d’objets que l’utilisateur récupérera grâce à ce troc.';
 $string['generalsettings'] = 'Paramètres généraux';
-$string['grouponly'] = 'Ne permettre que les trocs entre les élèves de leur groupe.';
+$string['grouponly'] = 'Ne permettre que les trocs entre les étudiants de leur groupe.';
 $string['image'] = 'Image';
 $string['imageandbutton'] = 'Image et bouton';
 $string['item'] = 'Objet';
 $string['itemamountlimit'] = 'Limite de montant';
-$string['itemamountlimit_help'] = 'Il s\'agit de la quantité maximale de cet élément rare disponible pour tous les étudiants de ce cours.';
+$string['itemamountlimit_help'] = 'Il s’agit de la quantité maximale de cet élément rare disponible pour tous les étudiants de ce cours.';
 $string['itemamountupdate'] = 'Le nombre pour cet élément a été modifié';
-$string['itemdeleted'] = 'L\'élément a été supprimé';
+$string['itemdeleted'] = 'L’élément a été supprimé';
 $string['itemdetail'] = 'Détails';
 $string['itemdetail_help'] = 'Détails concernant l’objet';
 $string['itemimage'] = 'Image';
 $string['itemimage_help'] = 'Cette image sera utilisée pour afficher l’objet. La taille recommandée est de 100x100 pixels.';
 $string['itemname'] = 'Nom de l’objet';
 $string['itemname_help'] = 'Le nom de l’objet qui sera affiché aux étudiants.';
-$string['itemremoval'] = 'Suppression d\'élément';
+$string['itemremoval'] = 'Suppression d’élément';
 $string['items'] = 'Objets';
 $string['itemslist'] = 'Liste des objets';
 $string['itemsremoved'] = 'Éléments supprimés';
 $string['leaderboard'] = 'Afficher le classement.';
-$string['leaderboard_groups'] = 'N\'afficher dans le classement que les utilisateurs de mes groupes.';
+$string['leaderboard_groups'] = 'N’afficher dans le classement que les utilisateurs de mes groupes.';
 $string['leaderboards'] = 'Classements';
 $string['locations'] = 'Lieux';
 $string['loss'] = 'Perte';
@@ -120,7 +120,7 @@ $string['maxnumber'] = 'Nombre maximum à récupérer';
 $string['maxpickup'] = 'Nombre maximum';
 $string['maxpickup_help'] = 'Le nombre de fois qu’un même objet peut être récupéré par chaque étudiant dans ce lieu. Par exemple, si vous spécifiez « 1 », il ne sera récupérable qu’une fois par étudiant. Par contre, si vous spécifiez « 5 », chaque étudiant pourra le récupérer 5 fois dans ce lieu. Pour les valeurs différentes de « 1 », il est préférable de l’utiliser en combinaison avec « l’intervalle de récupération ».';
 $string['mostitems'] = 'La plupart des éléments';
-$string['mostsingularitem'] = 'La plus grande partie d\'un élément unique spécifié';
+$string['mostsingularitem'] = 'La plus grande partie d’un élément unique spécifié';
 $string['mostsingularitemname'] = 'La plupart de « $a »';
 $string['mostuniqueitems'] = 'Les objets les plus uniques';
 $string['myitems'] = 'Mes éléments';
@@ -133,14 +133,14 @@ $string['navreport'] = 'Rapport';
 $string['navtrade'] = 'Troc';
 $string['new'] = 'Nouveau';
 $string['next'] = 'Suivant';
-$string['nofilterandnotiny'] = '📢 Saviez-vous qu\'il existe un nouveau plugin pour l\'éditeur TinyMCE qui facilite grandement la création d\'objets et d\'échanges ? Téléchargez et installez les <a href="https://moodle.org/plugins/filter_shortcodes">codes courts du plugin de filtre</a> et le <a href="https://moodle.org/plugins/tiny_stash"> Plugin de l\'éditeur TinyMCE Tiny Stash</a> pour améliorer considérablement votre expérience de création de cache. Une vidéo d’aperçu est disponible via le petit lien Tiny Stash précédent.';
+$string['nofilterandnotiny'] = '📢 Saviez-vous qu’il existe un nouveau plugin pour l’éditeur TinyMCE qui facilite grandement la création d’objets et d’échanges ? Téléchargez et installez les <a href="https://moodle.org/plugins/filter_shortcodes">codes courts du plugin de filtre</a> et le <a href="https://moodle.org/plugins/tiny_stash"> Plugin de l’éditeur TinyMCE Tiny Stash</a> pour améliorer considérablement votre expérience de création de cache. Une vidéo d’aperçu est disponible via le petit lien Tiny Stash précédent.';
 $string['noitems'] = 'Aucun élément sélectionné';
-$string['noitemstotrade'] = 'Vous n\'avez aucun élément à troquer';
-$string['nomorescarceitems'] = 'Le nombre maximum de cet élément a déjà été attribué. Envisagez d\'augmenter le montant de la rareté de cet objet.';
+$string['noitemstotrade'] = 'Vous n’avez aucun élément à troquer';
+$string['nomorescarceitems'] = 'Le nombre maximum de cet élément a déjà été attribué. Envisagez d’augmenter le montant de la rareté de cet objet.';
 $string['none'] = 'Aucun';
-$string['noquizzes'] = 'Vous n\'avez pas de test';
+$string['noquizzes'] = 'Vous n’avez pas de test';
 $string['nosingularitem'] = 'Veuillez ajouter au moins un élément pour utiliser ce classement';
-$string['notiny'] = '📢 Saviez-vous qu\'il existe un nouveau plugin pour l\'éditeur TinyMCE qui facilite grandement la création d\'objets et d\'échanges ? Téléchargez et installez le <a href="https://moodle.org/plugins/tiny_stash">plugin TinyMCE tiny stash</a> pour améliorer considérablement votre expérience de création de cache. Une vidéo d\'aperçu est disponible via le lien précédent.';
+$string['notiny'] = '📢 Saviez-vous qu’il existe un nouveau plugin pour l’éditeur TinyMCE qui facilite grandement la création d’objets et d’échanges ? Téléchargez et installez le <a href="https://moodle.org/plugins/tiny_stash">plugin TinyMCE tiny stash</a> pour améliorer considérablement votre expérience de création de cache. Une vidéo d’aperçu est disponible via le lien précédent.';
 $string['notrecorded'] = 'Pas enregistré';
 $string['number'] = 'Nombre';
 $string['offerdetail'] = 'Vous avez demandé un troc avec cet étudiant pour les articles suivants.';

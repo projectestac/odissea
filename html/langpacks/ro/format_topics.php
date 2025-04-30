@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ro', version '4.1'.
+ * Strings for component 'format_topics', language 'ro', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Adăugați subiect';
-$string['currentsection'] = 'Acest subiect';
-$string['deletesection'] = 'Șterge subiect';
-$string['editsection'] = 'Editează subiect';
-$string['editsectionname'] = 'Editați numele subiect';
-$string['hidefromothers'] = 'Ascunde tema';
+$string['currentsection'] = 'Secțiunea curentă';
+$string['hidefromothers'] = 'Ascunde';
 $string['indentation'] = 'Permite indentarea pe pagina de curs';
-$string['indentation_help'] = 'Permite profesorilor și altor utilizatori cu capabilitate de administrare a activităților să indenteze itemi de pe pagina cursului.';
-$string['newsectionname'] = 'Un nume nou pentru subiectul {$a}';
-$string['page-course-view-topics'] = 'Orice pagină principală de curs în format secțiuni';
-$string['page-course-view-topics-x'] = 'Orice pagină de curs curs în format secțiuni';
-$string['pluginname'] = 'Format secțiuni';
-$string['privacy:metadata'] = 'Plugin-ul pentru formatul secțiuni nu stochează date personale.';
+$string['indentation_help'] = 'Permite profesorilor și altor utilizatori cu capabilitate de administrare a activităților să indenteze elemente de pe pagina cursului.';
+$string['legacysectionname'] = 'Subiect';
+$string['newsection'] = 'Secțiune nouă';
+$string['page-course-view-topics'] = 'Orice pagină principală de curs din formatul de curs secțiuni personalizate';
+$string['page-course-view-topics-x'] = 'Orice pagină de curs din formatul de curs secțiuni personalizate';
+$string['plugin_description'] = 'Cursul este împărțit în secțiuni care se pot particulariza.';
+$string['pluginname'] = 'Secțiuni personalizate';
+$string['privacy:metadata'] = 'Plugin-ul pentru formatul de curs secțiuni personalizate nu stochează date personale.';
 $string['section0name'] = 'General';
-$string['sectionname'] = 'Subiect';
-$string['showfromothers'] = 'Afișează subiect';
+$string['section_highlight_feedback'] = 'Secțiunea{$a->name} evidențiată.';
+$string['section_unhighlight_feedback'] = 'Evidențiere eliminată din secțiunea {$a->name}.';
+$string['sectionname'] = 'Secțiune';
+$string['showfromothers'] = 'Afișează';

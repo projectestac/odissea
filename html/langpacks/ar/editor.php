@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'ar', version '4.1'.
+ * Strings for component 'editor', language 'ar', version '4.4'.
  *
  * @package     editor
  * @category    string
@@ -152,7 +152,7 @@ $string['underline'] = 'تسطير';
 $string['undo'] = 'التراجع عن الإجراء الأخير';
 $string['unorderedlist'] = 'قائمة نقطية';
 $string['upload'] = 'رفع';
-$string['vertical'] = 'عموديّ/ رأسي';
+$string['vertical'] = 'عمودي';
 $string['width'] = 'عرض';
 $string['wordclean'] = 'نظف ميكرو سوف وررد تش تي إم أل';
 $string['zip'] = 'ضغط';

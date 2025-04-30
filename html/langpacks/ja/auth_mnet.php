@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ja', version '4.1'.
+ * Strings for component 'auth_mnet', language 'ja', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNet認証';
 $string['privacy:metadata:external:mahara'] = 'このプラグインは外部にリンクされたMaharaアプリケーションにデータを送信することができます。';
 $string['privacy:metadata:external:moodle'] = 'このプラグインは外部にリンクされたMoodleアプリケーションにデータを送信することができます。';
 $string['privacy:metadata:mnet_external:address'] = 'ユーザのアドレスです。';
-$string['privacy:metadata:mnet_external:aim'] = 'ユーザのAIM IDです。';
 $string['privacy:metadata:mnet_external:alternatename'] = 'ユーザの代替名です。';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'ユーザがフォーラムを自動購読する場合の投稿に関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:calendartype'] = '使用するカレンダータイプのユーザプレファレンスです。';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'ユーザへのメール�
 $string['privacy:metadata:mnet_external:firstaccess'] = 'このユーザが最初にサイトにアクセスした日時です。';
 $string['privacy:metadata:mnet_external:firstname'] = 'ユーザの名です。';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'ユーザの名に関するヨミガナ詳細です。';
-$string['privacy:metadata:mnet_external:icq'] = 'ユーザのICQナンバーです。';
 $string['privacy:metadata:mnet_external:id'] = 'ユーザのIDです。';
 $string['privacy:metadata:mnet_external:idnumber'] = 'インスティテューションによって与えられたIDナンバです。';
 $string['privacy:metadata:mnet_external:imagealt'] = 'ユーザのイメージの代替テキストです。';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'ユーザの姓に
 $string['privacy:metadata:mnet_external:maildigest'] = 'このユーザのメールダイジェストに関する設定です。';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'ユーザが他のユーザにメールアドレスを表示することに関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:middlename'] = 'ユーザのミドルネームです。';
-$string['privacy:metadata:mnet_external:msn'] = 'ユーザのMSN IDです。';
 $string['privacy:metadata:mnet_external:phone1'] = 'ユーザの電話番号です。';
 $string['privacy:metadata:mnet_external:phone2'] = 'ユーザの追加電話番号です。';
 $string['privacy:metadata:mnet_external:picture'] = 'このユーザに関連する画像詳細です。';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'ユーザがサイトポリシーに同意したか決定するためのフラグです。';
-$string['privacy:metadata:mnet_external:skype'] = 'ユーザのSkype IDです。';
 $string['privacy:metadata:mnet_external:suspended'] = 'ユーザがこのシステムで利用停止された場合に表示されるフラグです。';
 $string['privacy:metadata:mnet_external:timezone'] = 'ユーザのタイムゾーンです。';
 $string['privacy:metadata:mnet_external:trackforums'] = 'フォーラムおよび未読管理に関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'トラストビットマスクです。';
-$string['privacy:metadata:mnet_external:url'] = 'このユーザに関連するURLです。';
 $string['privacy:metadata:mnet_external:username'] = 'このユーザのユーザ名です。';
-$string['privacy:metadata:mnet_external:yahoo'] = 'ユーザのYahoo IDです。';
 $string['privacy:metadata:mnet_log'] = 'リモートシステムにログインしたローカルユーザによって実行されたリモートアクションの詳細です。';
 $string['privacy:metadata:mnet_log:action'] = 'ユーザにより実行されたアクションです。';
 $string['privacy:metadata:mnet_log:cmid'] = 'コースモジュールIDです。';

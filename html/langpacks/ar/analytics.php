@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ar', version '4.1'.
+ * Strings for component 'analytics', language 'ar', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -48,7 +48,7 @@ $string['errorcannotwritedataset'] = 'ملف البيانات {$a} تتعذر ك
 $string['errorexportmodelresult'] = 'لا يمكن تصدير نموذج التعلم الآلي.';
 $string['errorimport'] = 'خطأ في استيراد ملف JSON المقدم.';
 $string['errorimportmissingclasses'] = 'لا تتوفر مكونات التحليلات التالية على هذا الموقع: {$a-> missingclasses}.';
-$string['errorimportmissingcomponents'] = 'يتطلب النموذج المقدم تنصيب الإضافات الآتية: {$a}. لاحظ أن الإصدارات لا تحتاج بالضرورة إلى التطابق مع الإصدارات المثبتة على موقعك. تنصيب الإضافة بالإصدار نفسه أو الأحدث منه سيكون أمراً حسناً في معظم الحالات.';
+$string['errorimportmissingcomponents'] = 'يتطلب النموذج المقدم تنصيب الملاحق الآتية: {$a}. لاحظ أن الإصدارات لا تحتاج بالضرورة إلى التطابق مع الإصدارات المنصبة في موقعك. تنصيب الملحق بالإصدار نفسه أو الأحدث منه سيكون أمراً حسناً في معظم الحالات.';
 $string['errorimportversionmismatches'] = 'يختلف إصدار المكونات التالية عن الإصدار المثبت على هذا الموقع: {$a}. يمكنك استخدام الخيار "تجاهل عدم تطابق الإصدار" لتجاهل هذه الاختلافات.';
 $string['errorinvalidcontexts'] = 'بعض السياقات المختارة لا يمكن استعمالها لهذا الغرض.';
 $string['errorinvalidindicator'] = '{$a} مؤشر غير صالح';
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'المخلوط أو الهجين';
 $string['modeinstructionfacetoface'] = 'وجهاً لوجه';
 $string['modeinstructionfullyonline'] = 'على الانترنت بالكامل';
 $string['modeloutputdir'] = 'مجلد تخريج النماذج';
-$string['modeloutputdirinfo'] = 'الدليل حيث تخزن معالجات التنبؤ جميع معلومات التقييم. مفيد للتصحيح والبحوث.';
 $string['modeloutputdirwithdefaultinfo'] = 'المجلد الذي تحفظ فيه معالجات التنبؤ كل بيانات التقييم. مفيد لأغراض تصحيح الأخطاء والبحث. إذا كان خالياً، سيتم استعمال {$a} بمثابة الافتراضي.';
 $string['modeltimelimit'] = 'الوقت الأقصى لتحليل كل نموذج';
 $string['modeltimelimitinfo'] = 'يحدد هذا الإعداد الوقت الذي يقضيه كل نموذج في تحليل محتويات الموقع.';

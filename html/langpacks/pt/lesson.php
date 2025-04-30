@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'pt', version '4.1'.
+ * Strings for component 'lesson', language 'pt', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -149,7 +149,7 @@ $string['correctresponse'] = 'Feedback da resposta correta';
 $string['createaquestionpage'] = 'Criar uma página de pergunta';
 $string['credit'] = 'Crédito';
 $string['customscoring'] = 'Pontuação personalizável';
-$string['customscoring_help'] = 'Se ativar esta opção, pode atribuir a cada resposta uma pontuação numérica (positiva ou negativa).';
+$string['customscoring_help'] = 'Se ativar esta opção, para cada resposta poderá ser dada uma pontuação com um valor numérico inteiro (positivo ou negativo).';
 $string['deadline'] = 'Até';
 $string['defaultessayresponse'] = 'A sua resposta à pergunta de desenvolvimento será avaliada pelo professor.';
 $string['deleteallattempts'] = 'Apagar todas as tentativas de realização da lição';
@@ -542,7 +542,7 @@ $string['savechangesandeol'] = 'Guardar todas as alterações e ir para o fim da
 $string['saveoverrideandstay'] = 'Guardar e adicionar outra exceção';
 $string['savepage'] = 'Guardar página';
 $string['score'] = 'Nota';
-$string['score_help'] = 'A pontuação só é usada quando a pontuação personalizada está ativada. A cada resposta poderá ser dada uma pontuação numérica (positiva ou negativa).';
+$string['score_help'] = 'Se a pontuação estiver ativada nas configurações da lição, para cada resposta poderá ser dada uma pontuação com um valor numérico inteiro (positivo ou negativo).';
 $string['scores'] = 'Notas';
 $string['search:activity'] = 'Lição - informações da atividade';
 $string['secondpluswrong'] = 'Resposta incorreta. Quer voltar a tentar?';

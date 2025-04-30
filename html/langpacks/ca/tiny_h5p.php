@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'ca', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'ca', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -26,13 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Navega pels repositoris...';
+$string['buttontitle'] = 'Contingut H5P';
+$string['copyrightbutton'] = 'Botó de drets d\'autor';
 $string['downloadbutton'] = 'Permet les baixades';
 $string['embedbutton'] = 'Botó d\'incrustació';
-$string['h5p:addembed'] = 'Afegiu contingut H5P incrustat';
-$string['h5pfile'] = 'Càrrega del fitxer H5P';
+$string['h5p:addembed'] = 'Afegeix contingut H5P incrustat';
+$string['h5pfile'] = 'Carrega un fitxer H5P';
 $string['h5pfileorurl'] = 'URL de l\'H5P o càrrega del fitxer';
 $string['h5poptions'] = 'Opcions d\'H5P';
 $string['h5purl'] = 'URL de l\'H5P';
+$string['helplinktext'] = 'Auxiliar H5P';
+$string['insert'] = 'Insereix contingut H5P';
 $string['instructions'] = 'Podeu inserir contingut H5P <strong>o bé</strong> introduint un URL <strong>o bé</strong> penjant un fitxer H5P.';
 $string['invalidh5purl'] = 'L\'URL no és vàlid';
+$string['modaltitle'] = 'Insereix el contingut H5P';
 $string['noh5pcontent'] = 'No s\'ha afegit cap contingut H5P';
+$string['pluginname'] = 'Insert H5P';
+$string['privacy:metadata'] = 'El connector H5P pel TinyMCE no emmagatzema cap dada personal.';

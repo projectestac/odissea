@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', version '4.1'.
+ * Strings for component 'scorm', language 'ca', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -110,8 +110,6 @@ $string['details'] = 'Detalls de seguiment';
 $string['directories'] = 'Mostra els enllaços del directori';
 $string['disabled'] = 'Inhabilitat';
 $string['display'] = 'Visualitza';
-$string['displayactivityname'] = 'Mostra el nom de l\'activitat';
-$string['displayactivityname_help'] = 'Si cal mostrar o no el nom de l\'activitat al damunt del reproductor SCORM';
 $string['displayattemptstatus'] = 'Mostrar estat dels intents';
 $string['displayattemptstatus_help'] = 'Aquest paràmetre permet mostrar un resum dels intents de l\'usuari al bloc de resum del curs al Tauler i/o a la pàgina d\'entrada de l\'SCORM.';
 $string['displayattemptstatusdesc'] = 'Determina si voleu mostrar o no un resum dels intents de l\'usuari al bloc de resum del curs ubicat al Tauler i/o a la pàgina d\'entrada de l\'SCORM';
@@ -195,7 +193,6 @@ $string['incomplete'] = 'Incomplet';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats SCORM en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Info';
 $string['interactions'] = 'Interaccions';
 $string['invalidactivity'] = 'L\'activitat SCORM és incorrecta';
 $string['invalidhacpsession'] = 'Sessió HACP no vàlida';
@@ -417,3 +414,4 @@ Notes sobre el maneig d\'intents múltiples:
 $string['whatgradedesc'] = 'Si s\'enregistra en el butlletí de qualificacions la qualificació més alta, la mitjana, la del primer o la del darrer intent completat, si es permeten diversos intents.';
 $string['width'] = 'Amplada';
 $string['window'] = 'Finestra';
+$string['youmustselectastatus'] = 'Heu de seleccionar un estat per requerir';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'de', version '4.1'.
+ * Strings for component 'booking', language 'de', version '4.4'.
  *
  * @package     booking
  * @category    string
@@ -29,27 +29,20 @@ $string['activitycompletionsuccess'] = 'Alle ausgewählten Nutzer/innen wurden f
 $string['addcategory'] = 'Kategorien bearbeiten';
 $string['addmorebookings'] = 'Buchungen hinzufügen';
 $string['addnewcategory'] = 'Neue Kategorie hinzufügen';
-$string['addnewinstitution'] = 'Neue Institution hinzufügen';
 $string['addnewtagtemplate'] = 'Neue Schlagwort-Vorlage hinzufügen';
 $string['address'] = 'Adresse';
 $string['addtocalendar'] = 'Zum Kalender hinzufügen';
 $string['addtogroup'] = 'Nutzer/innen automatisch in Gruppe einschreiben';
 $string['addtogroup_help'] = 'Nutzer/innen automatisch in Gruppe eintragen. Die Gruppe wird nach folgendem Schema automatisch erstellt: "Aktivitätsname - Name der Buchungsoption"';
 $string['advancedoptions'] = 'Erweiterte Einstellungen';
-$string['agreetobookingpolicy'] = 'Ich habe folgende Buchungsbedingungen gelesen und erkläre mich damit einverstanden';
 $string['allbookingoptions'] = 'Nutzer/innen für alle Buchungsmöglichkeiten herunterladen';
 $string['allmailssend'] = 'Alle Benachrichtigungen wurden erfolgreich versandt!';
-$string['allowdelete'] = 'Teilnehmer/innen dürfen Buchungen selbst stornieren';
 $string['allowupdate'] = 'Buchungen dürfen aktualisiert werden';
 $string['allusersbooked'] = 'Alle {$a} ausgewählten Teilnehmer/innen wurden dieser Buchungsmöglichkeit zugewiesen.';
 $string['answer'] = 'Antwort';
 $string['answered'] = 'Beantwortet';
 $string['associatedcourse'] = 'Dazu gehörender Kurs';
 $string['attachedfiles'] = 'Dateianhänge';
-$string['attachical'] = 'iCal Kalendereintrag hinzufügen';
-$string['attachicaldesc'] = 'Wenn diese Option aktiviert ist, wird eine E-Mail Benachrichtigungen im iCal Format  hinzugefügt.';
-$string['attachicalsess'] = 'Alle Sitzungsdaten als iCal Kalendereinträge hinzufügen';
-$string['attachicalsessdesc'] = 'E-Mail Benachrichtigungen enthalten alle Sitzungsdaten für eine Buchungsmöglichkeit als iCal Anhang.';
 $string['autoenrol'] = 'Nutzer/innen automatisch einschreiben';
 $string['autoenrol_help'] = 'Falls ausgewählt werden Nutzter/innen automatisch in den Kurs eingeschrieben sobald sie die Buchung durchgeführt haben und wieder ausgetragen, wenn die Buchung storniert wird.';
 $string['availability'] = 'Noch verfügbar';
@@ -61,29 +54,6 @@ $string['banusernameswarning'] = 'Sie können nicht buchen, da Ihr Nutzerkonto g
 $string['booked'] = 'Gebucht';
 $string['bookedpast'] = 'Gebucht (Kurs wurde bereits beendet)';
 $string['bookedtext'] = 'Buchungsbestätigung';
-$string['bookedtext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer. Z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamens einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['bookedusers'] = 'Gebuchte Nutzer/innen';
 $string['booking'] = 'Buchung';
 $string['booking:addinstance'] = 'Neue Buchung anlegen';
@@ -126,7 +96,6 @@ $string['booktootherbooking'] = 'Nutzer/innen zu anderer Buchungen hinzufügen';
 $string['btnbooknowname'] = 'Bezeichnung des Buttons "Jetzt buchen"';
 $string['btncacname'] = 'Bezeichnung des Buttons "Aktivitätsabschluss bestätigen"';
 $string['btncancelname'] = 'Bezeichnung des Buttons "Buchung stornieren"';
-$string['cancancelbook'] = 'Nutzer/innen das Stornieren und das Buchen nach dem Beginn der Veranstaltung erlauben?';
 $string['cancel'] = 'Stornieren';
 $string['cancelbooking'] = 'Buchung stornieren';
 $string['categories'] = 'Kategorien';
@@ -134,11 +103,8 @@ $string['category'] = 'Kategorie';
 $string['categoryname'] = 'Name der Kategorie';
 $string['cfgsignin'] = 'Konfiguration Anmeldeformular';
 $string['cfgsignin_desc'] = 'Einstellungen des Anmeldeformulars konfigurieren';
-$string['choosecourse'] = 'Einen Kurs auswählen';
 $string['closed'] = 'Buchung geschlossen';
 $string['completed'] = 'Abgeschlossen';
-$string['conectedbooking'] = 'Vorgeschaltete Buchung';
-$string['conectedbooking_help'] = 'Buchung von der Teilnehmer/innen übernommen werden. Es kann bestimmt werden wie viele Teilnehmer/innen übernommen werden.';
 $string['confirmationmessagesettings'] = 'E-Mail-Einstellungen bestätigen';
 $string['confirmbookingoffollowing'] = 'Bitte bestätigen Sie folgende Buchung';
 $string['confirmdeletebookingoption'] = 'Möchten Sie diese Buchungsmöglichkeit wirklich löschen?';
@@ -149,9 +115,7 @@ $string['coursedate'] = 'Termin';
 $string['courseendtime'] = 'Ende';
 $string['coursestarttime'] = 'Beginn';
 $string['csvfile'] = 'CSV-Datei';
-$string['csvfile_help'] = 'CSV-Datei darf nur eine Spalte mit der Bezeichnung Institution beinhalten.';
 $string['customfieldtype'] = 'Feldtyp';
-$string['customlabels'] = 'Benutzerdefinierte Bezeichnungen';
 $string['dateerror'] = 'Falsche Datumsangabe in Zeile {$a}:';
 $string['datenotset'] = 'Datum nicht angegeben';
 $string['dateparseformat'] = 'Datumsformat';
@@ -170,42 +134,15 @@ die Buchung für {$a->title} wurde erfolgreich storniert';
 $string['deletedbookingusersubject'] = 'Buchung {$a->title} wurde storniert';
 $string['deletedrule'] = 'Buchungsmöglichkeit erfolgreich gelöscht';
 $string['deletedtext'] = 'Stornierungsbenachrichtigung';
-$string['deletedtext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['deleterule'] = 'Löschen';
 $string['deletesubcategory'] = 'Löschen Sie zuerst alle Unterkategorien dieser Kategorie!';
 $string['deleteuserfrombooking'] = 'Buchung für Nutzer/innen wirklich stornieren?';
 $string['delnotification'] = 'Sie haben {$a->del} von {$a->all} Nutzer/innen gelöscht. Nutzer/innen, welche die Aktivität abgeschlossen haben, können nicht gelöscht werden!';
 $string['disablebookingusers'] = 'Buchung von Teilnehmer/innen deaktivieren - "Jetzt buchen" Button unsichtbar schalten.';
-$string['donotselectcourse'] = 'Kein Kurs ausgewählt';
 $string['download'] = 'Herunterladen';
 $string['downloadallresponses'] = 'Alle Antworten herunterladen';
 $string['downloadusersforthisoptionods'] = 'Nutzer/innen im .ods-Format herunterladen';
 $string['downloadusersforthisoptionxls'] = 'Nutzer/innen im .xls-Format herunterladen';
-$string['duplicatebooking'] = 'Diese Buchungsmöglichkeit duplizieren';
 $string['editcategory'] = 'Bearbeiten';
 $string['editinstitutions'] = 'Institutionen bearbeiten';
 $string['editotherbooking'] = 'Andere Buchungsmöglichkeiten';
@@ -227,9 +164,7 @@ Kurs: {$a->courselink}';
 $string['errorpagination'] = 'Bitte geben sie eine Zahl größer 0 ein';
 $string['eventduration'] = 'Dauer';
 $string['eventpoints'] = 'Punkte';
-$string['eventreport_viewed'] = 'Übersicht über Buchungen für eine Buchungsmöglichkeit angesehen';
 $string['eventtype'] = 'Art des Ereignisses';
-$string['eventuserprofilefields_updated'] = 'Nutzerprofil aktualisiert';
 $string['excelfile'] = 'CSV Datei mit Aktivitätsabschluss';
 $string['existingsubscribers'] = 'Vorhandene Nutzer/innen';
 $string['expired'] = 'Diese Aktivität wurde leider am {$a} beendet und steht nicht mehr zur Verfügung';
@@ -240,12 +175,11 @@ $string['fullname'] = 'Voller Name';
 $string['generaterecnum'] = 'Eintragsnummern erstellen';
 $string['generaterecnumareyousure'] = 'Neue Nummern erstellen und die alten verwerfen!';
 $string['generaterecnumnotification'] = 'Neue Nummern erfolgreich erstellt.';
-$string['goenrol'] = 'Gehe zu "Buchung vornehmen"';
 $string['gotobooking'] = '<< Zu den Buchungen';
-$string['gotop'] = 'Nach oben';
 $string['groupexists'] = 'Die Gruppe existiert bereits im Zielkurs. Bitte wählen Sie für die Buchungsmöglichkeit einen anderen Namen.';
 $string['groupname'] = 'Gruppenname';
 $string['hours'] = '{$a} Stunden';
+$string['howmanyusers'] = 'Wie viele Teilnehmer/innen können gebucht werden?';
 $string['importcsvbookingoption'] = 'Buchungsoptionen via CSV-Datei importieren';
 $string['importcsvtitle'] = 'CSV-Datei importieren';
 $string['importexcelbutton'] = 'Aktivitätsabschluss importieren';
@@ -253,7 +187,6 @@ $string['importexceltitle'] = 'Aktivitätsabschluss importieren';
 $string['importfinished'] = 'Importieren beendet!';
 $string['infonobookingoption'] = 'Bitte nutzen Sie den Block {$a}, um die erste Buchungsoption zu erstellen';
 $string['institution'] = 'Institution';
-$string['institutionname'] = 'Name der Institution';
 $string['institutions'] = 'Institutionen';
 $string['lblacceptingfrom'] = 'Bezeichnung für "Annehmen von"';
 $string['lblbooking'] = 'Bezeichnung für "Buchung"';
@@ -285,11 +218,9 @@ $string['modulename'] = 'Buchung';
 $string['modulenameplural'] = 'Buchungen';
 $string['mustchooseone'] = 'Sie müssen eine Buchungsmöglichkeit auswählen.';
 $string['mustfilloutuserinfobeforebooking'] = 'Bevor Sie buchen, füllen Sie bitte noch Ihre persönlichen Buchungsdaten aus';
-$string['myoptions'] = 'Meine Veranstaltungen ({$a})';
 $string['no'] = 'Nein';
 $string['nobookingselected'] = 'Keine Buchungsmöglichkeit ausgewählt';
 $string['nocourse'] = 'Kein Kurs für diese Buchungsmöglichkeit ausgewählt';
-$string['nodateset'] = 'Datum nicht angegeben';
 $string['noguestchoose'] = 'Gäste dürfen leider keine Buchungen vornehmen';
 $string['noresultsviewable'] = 'Die Ergebnisse sind momentan nicht einsehbar';
 $string['norighttobook'] = 'Sie können auf Grund Ihrer Rolle keine Buchung durchführen.';
@@ -298,64 +229,14 @@ $string['notbooked'] = 'Noch nicht gebucht';
 $string['notconectedbooking'] = 'Keine vorgeschaltete Buchung';
 $string['noteacherfound'] = 'Kein/e Trainer/in in Zeile {$a} gefunden.';
 $string['notificationtext'] = 'Benachrichtungstext bei Aktivitätsabschluss';
-$string['notificationtext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['notifyemail'] = 'Benachrichtigung vor dem Beginn';
-$string['notifyemail_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['notopenyet'] = 'Diese Aktivität ist vor {$a} nicht verfügbar';
 $string['nouserfound'] = 'Kein/e Nutzer/in gefunden:';
 $string['nousers'] = 'Keine Nutzer/innen!';
 $string['numgenerator'] = 'Automatische Nummerierung aktivieren?';
 $string['numrec'] = 'Nummerierung';
-$string['onlythisbookingurl'] = 'Nur dieser Buchungslink';
 $string['onwaitinglist'] = 'Sie sind auf der Warteliste';
+$string['optiondates'] = 'Mehrer Termine';
 $string['optiondatestime'] = 'Zeiten';
 $string['optionid'] = 'ID der Veranstaltung';
 $string['optionmenu'] = 'Diese Veranstaltung';
@@ -370,109 +251,13 @@ $string['pluginadministration'] = 'Buchungs-Verwaltung';
 $string['pluginname'] = 'Buchung';
 $string['pollstrftimedate'] = '%Y-%m-%d';
 $string['pollurl'] = 'Link zur Umfrage';
-$string['pollurl_help'] = 'Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['pollurlteachers'] = 'Link zur Umfrage für Trainer/innen';
-$string['pollurlteachers_help'] = 'Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['pollurlteacherstext'] = 'Link zum Absender der Umfrage für Trainer/innen';
-$string['pollurlteacherstext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['pollurlteacherstextmessage'] = 'Bitte nehmen Sie an der Umfrage teil:
 
 Link zur Umfrage: {pollurlteachers}';
 $string['pollurlteacherstextsubject'] = 'Bitte nehmen Sie an der Umfrage teil';
 $string['pollurltext'] = 'Umfragelink versenden';
-$string['pollurltext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['pollurltextmessage'] = 'Bitte nehmen Sie an der Umfrage teil:
 
 Link zur Umfrage: {pollurl}';
@@ -496,49 +281,16 @@ $string['selectatleastoneuser'] = 'Bitte mindestens 1 Nutzer/in auswählen!';
 $string['selectcategory'] = 'Kategorie auswählen';
 $string['selectoptionid'] = 'Bitte eine Buchungsmöglichkeit auswählen!';
 $string['selectoptioninotherbooking'] = 'Auswahl';
-$string['sendcustommessage'] = 'Nachricht selber schreiben und senden';
 $string['sendmailtobooker'] = 'Buchung für andere durchführen: E-Mail an den/die buchende Nutzer/in senden, anstatt an den/die Nutzer/in für den/die gebucht wurde.';
 $string['sendmailtobooker_help'] = 'Diese Option aktivieren, um Buchungsbestätigungsmails anstatt an die gebuchten Nutzer/innen zu senden an den/die Nutzer/in senden, die die Buchung durchgeführt hat. Dies betrifft nur Buchungen, die auf der Seite "Buchung für andere Nutzer/innen durchführen" getätigt wurden.';
 $string['sendpollurltoteachers'] = 'Link zur Umfrage versenden';
 $string['sendreminderemail'] = 'Erinnerungs-E-Mail versenden';
 $string['sendreminderemailsuccess'] = 'Benachrichtigung per E-Mail wurde erfolgreich versendet!';
-$string['showactive'] = 'Verfügbare Buchungsmöglichkeiten';
-$string['showallbookings'] = 'Alle Buchungsmöglichkeiten anzeigen';
-$string['showhelpfullnavigationlinks'] = 'Links zur Navigations anzeigen.';
 $string['showinapi'] = 'In API anzeigen?';
-$string['showonlymyinstitutions'] = 'Meine Institutionen';
-$string['sign_in_sheet_download'] = 'Unterschriftenliste herunterladen';
 $string['spaceleft'] = 'Verfügbarer Platz';
 $string['spacesleft'] = 'Verfügbarer Platz';
-$string['startendtimeknown'] = 'Beginn und Ende sind bekannt';
 $string['starttimenotset'] = 'Beginn ist nicht angegeben';
 $string['statuschangetext'] = 'Benachrichtigung über Statusänderung';
-$string['statuschangetext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
-$string['submitandaddnew'] = 'Speichern und neue Buchung hinzufügen';
 $string['subscribersto'] = 'Trainer/innen für \'{$a}\'';
 $string['subscribetocourse'] = 'Nutzer/innen in den Kurs einschreiben';
 $string['subscribeuser'] = 'Wollen Sie diese User wirklich in diesen Kurs einschreiben';
@@ -557,31 +309,6 @@ $string['usedinbooking'] = 'Das Löschen dieser Kategorie ist nicht möglich, da
 $string['userdownload'] = 'Nutzer/innenliste herunterladen';
 $string['userid'] = 'ID des Nutzers/der Nutzerin';
 $string['userleave'] = 'Nutzer/in hat Buchung storniert';
-$string['userleave_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['usernameofbookingmanager'] = 'Name des Buchungsverwalters';
 $string['usernameofbookingmanager_help'] = 'Benutzername des/der Nutzer/in, der als Absender/in der Buchungsbestätigunsmitteilungen angeführt wird. Wenn die Option "Eine Kopie des Bestätigungsmail an Buchungsverwalter senden" aktiviert ist, wird die Kopie der Buchungsbestätigung an diese/n Nutzer/in gesendet.';
 $string['usersonlist'] = 'Nutzerliste';
@@ -591,31 +318,6 @@ $string['waitinglisttaken'] = 'Auf der Warteliste';
 $string['waitinglistusers'] = 'Nutzer/innen auf der Warteliste';
 $string['waitingplacesavailable'] = 'Verfügbare Wartelistenplätze:  {$a->overbookingavailable} von {$a->maxoverbooking}';
 $string['waitingtext'] = 'Wartelistenbestätigung';
-$string['waitingtext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N ist die Trainernummer, z.B. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - QR Code der Userid einfügen</li>
-<li>{qr_username} - QR Code des Usernamen einfügen</li>
-<li>{times} - Zeiten</li>
-</ul>';
 $string['waitspaceavailable'] = 'Wartelistenplätze verfügbar';
 $string['week'] = 'Woche';
 $string['whichview'] = 'Standardansicht der Buchungsoptionen';

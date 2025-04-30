@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ro', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'ro', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} din {$a->total}';
 $string['partialwarning'] = 'Unele dintre fișierele din această temă pot fi accesate numai prin descărcare directă.';
+$string['pathtogserror'] = 'Calea configurată către ghostscript nu este setată corect: {$a}';
 $string['pathtogspathdesc'] = 'Vă rugăm să rețineți că adnotarea PDF necesită stabilirea path-ului către ghostscript {$a}.';
 $string['pen'] = 'Stilou';
 $string['pluginname'] = 'Adnotări PDF';

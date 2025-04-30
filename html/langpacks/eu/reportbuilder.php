@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'eu', version '4.1'.
+ * Strings for component 'reportbuilder', language 'eu', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} eta {$a->morecount} gehi
 $string['audiencenotsaved'] = 'Publikoa ez da gorde';
 $string['audiencesaved'] = 'Publikoa gorde da';
 $string['audienceupdated'] = 'Publikoa eguneratu da';
+$string['audienceusedbyschedule'] = 'Audientzia hau txosten honentzako programazio batean erabiltzen da';
 $string['cardview'] = 'Txartel-ikuspegia';
 $string['cardview_help'] = 'Txartel-ikuspegiak zure txostena gailu estuetan ikustean itxura zehaztea ahalbidetzen dizu. Zutabeak hemen zehaztutako mugatik gora tolestuko dira, eta txartela zabaltzeko eta txosteneko datu guztiak ikusteko etengailua agertuko da.';
 $string['cardviewfirstcolumntitle'] = 'Lehen zutabearen izenburua';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Ikastaroaren ID zenbakia estekarekin';
 $string['courseselect'] = 'Aukeratu ikastaroa';
 $string['courseshortnamewithlink'] = 'Ikastaroaren izen laburra estekarekin';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Txosten pertsonalizatua';
 $string['customreports'] = 'Txosten pertsonalizatuak';
 $string['customreportslimit'] = 'Txosten pertsonalizatuen muga';
 $string['customreportslimit_desc'] = 'Txosten pertsonalizatu kopurua mugatu daiteke errendimendu arrazoiak direla-eta. Zero jarriz gero ez da mugarik egongo.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Ezin izan da aurkitu txosten-jatorri baliagarri
 $string['errorsourceunavailable'] = 'Txostenaren jatorria ez dago eskuragarri';
 $string['filteradded'] = '\'{$a}\' iragazkia gehitu da';
 $string['filtercontains'] = 'Barne ditu';
+$string['filterdateafter'] = 'Data honen ondoren';
+$string['filterdatebefore'] = 'Data honen aurretik';
 $string['filterdatecurrent'] = 'Oraingoa';
 $string['filterdatedays'] = 'egun';
 $string['filterdatefrom'] = 'Noiztik';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Honela amaitzen da';
 $string['filterequalorgreaterthan'] = 'Handiagoa edo berdin';
 $string['filterequalorlessthan'] = 'Txikiagoa edo berdin';
 $string['filterfieldoperator'] = '{$a} eragilea';
+$string['filterfieldto'] = '{$a} hona arte';
+$string['filterfieldunit'] = '{$a} unitatea';
 $string['filterfieldvalue'] = '{$a} balioa';
 $string['filtergreaterthan'] = 'Hau baino handiagoa';
 $string['filterinvalid'] = 'Iragazki baliogabea';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Ordenatzea';
 $string['sorting_help'] = 'Txosteneko zutabeen hasierako ordena zehaztu dezakezu, gero erabiltzaileak zutabeen izenetan klik eginda aldatu ahalko dutena.';
 $string['switchedit'] = 'Aldatu editatze-modura';
 $string['switchpreview'] = 'Aldatu aurreikuspen-modura';
+$string['tagarea_reportbuilder_report'] = 'Txosten pertsonalizatua';
 $string['tasksendschedule'] = 'Bidali txostenaren programazioa';
 $string['tasksendschedules'] = 'Bidali txostenaren programazioak';
 $string['timeadded'] = 'Gehitze-data';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'ar', version '4.1'.
+ * Strings for component 'attendance', language 'ar', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -321,7 +321,7 @@ $string['months'] = 'الأشهر';
 $string['moreattendance'] = 'تم أخذ الحضور بنجاح في هذه الصفحة';
 $string['moveleft'] = 'إنتقل يساراً';
 $string['moveright'] = 'إنتقل يميناً';
-$string['multisessionexpanded'] = 'تم توسيع الجلسات المتعددة';
+$string['multisessionexpanded'] = 'الجلسات المتعددة موسعة';
 $string['multisessionexpanded_desc'] = 'إظهار إعدادات "الجلسات المتعددة" كأنها مُوسعة إفتراضياً عند إنشاء جلسات جديدة.';
 $string['mustselectusers'] = 'ينبغي إختيار المستخدمين المزمع تصديرهم';
 $string['newdate'] = 'تاريخ جديد';
@@ -540,7 +540,7 @@ $string['studentid'] = 'مُعرَّف الطالب';
 $string['studentmarked'] = 'تم تسجيل حضورك في هذه الجلسة.';
 $string['studentmarking'] = 'التسجيل من قبل الطلاب';
 $string['studentpassword'] = 'كلمة مرور الطالب';
-$string['studentrecordingexpanded'] = 'تم توسيع التسجيل من قبل الطلاب';
+$string['studentrecordingexpanded'] = 'التسجيل من قبل الطلاب موسع';
 $string['studentrecordingexpanded_desc'] = 'إظهار إعدادات "التسجيل من قبل الطلاب" موسعة إفتراضياً عند إنشاء الجلسات الجديدة.';
 $string['studentscanmark'] = 'السماح للطلاب بتسجيل حضورهم';
 $string['studentscanmark_desc'] = 'عند تأشيره، سيكون بإمكان المعلمين أن يسمحوا للطلاب بتسجيل حضورهم بأنفسهم.';

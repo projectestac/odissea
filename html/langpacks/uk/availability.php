@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'uk', version '4.1'.
+ * Strings for component 'availability', language 'uk', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Додати обмеження...';
 $string['and'] = 'та';
 $string['condition_group'] = 'Складне обмеження';
 $string['condition_group_info'] = 'Додати набір вкладених обмежень для застосовування складної логіки.';
+$string['disabled_verb'] = 'Не можна змінити, оскільки набір правил включає правило, що містить особисті дані.';
+$string['editsettings'] = 'Редагувати параметри';
 $string['enableavailability'] = 'Увімкнути обмежений доступ';
 $string['enableavailability_desc'] = 'Якщо ввімкнено, можна встановити умови (на основі дати, класу, завершення тощо), щоб контролювати, чи можна отримати доступ до діяльності або ресурсу.';
 $string['error_list_nochildren'] = 'Складні обмеження повинні містити принаймні одну умову.';
@@ -46,9 +48,9 @@ $string['list_and'] = 'Все з:';
 $string['list_and_hidden'] = 'Все з (інакше приховано):';
 $string['list_or'] = 'Будь-що з:';
 $string['list_or_hidden'] = 'Будь-що з (інакше приховано):';
-$string['list_root_and'] = 'Не доступно, якщо:';
+$string['list_root_and'] = 'Доступно, якщо:';
 $string['list_root_and_hidden'] = 'Не доступно (приховано), якщо:';
-$string['list_root_or'] = 'Не доступно, якщо будь-що з:';
+$string['list_root_or'] = 'Доступно, якщо будь-що з:';
 $string['list_root_or_hidden'] = 'Не доступно (приховано), якщо будь-що з:';
 $string['listheader_multi_after'] = 'з наступних';
 $string['listheader_multi_and'] = 'всім';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_media', language 'nl', version '4.1'.
+ * Strings for component 'tiny_media', language 'nl', version '4.4'.
  *
  * @package     tiny_media
  * @category    string
@@ -28,10 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcaptionstrack'] = 'Onderschriftspoor toevoegen';
 $string['addchapterstrack'] = 'Hoofdstukspoor toevoegen';
 $string['adddescriptionstrack'] = 'Beschrijvingsspoor toevoegen';
+$string['addfilesdrop'] = 'Slepen en neerzetten om een afbeelding te uploaden of klik om te selecteren';
 $string['addmetadatatrack'] = 'Metadataspoor toevoegen';
 $string['addsource'] = 'Alternatieve bron toevoegen';
 $string['addsource_help'] = 'We raden je aan een alternatieve bron voor de media toe te voegen, omdat desktop- en mobiele browsers verschillende bestandsindelingen ondersteunen.';
 $string['addsubtitlestrack'] = 'Ondertitelingsspoor toevoegen';
+$string['addurl'] = 'Voeg toe';
 $string['advancedsettings'] = 'Geavanceerde instellingen';
 $string['alignment'] = 'Uitlijning';
 $string['alignment_bottom'] = 'Onder';
@@ -43,37 +45,44 @@ $string['audio'] = 'Audio';
 $string['audiosourcelabel'] = 'URL audiobron';
 $string['autoplay'] = 'Automatisch afspelen';
 $string['browserepositories'] = 'Blader in opslagruimten';
+$string['browserepositoriesimage'] = 'Blader in opslagruimten';
 $string['captions'] = 'Onderschriften';
 $string['captions_help'] = 'Bijschriften kunnen worden gebruikt om alles wat er in de track gebeurt te beschrijven, inclusief non-verbale geluiden zoals een rinkelende telefoon.';
 $string['captionssourcelabel'] = 'Ondertitelingstrack-URL';
 $string['chapters'] = 'Hoofdstukken';
 $string['chapters_help'] = 'Hoofdstuktitels kunnen worden verstrekt voor gebruik bij het navigeren door de mediabron.';
 $string['chapterssourcelabel'] = 'URL van hoofdstuktrack';
-$string['constrain'] = 'Automatische grootte';
+$string['constrain'] = 'Verhoudingen behouden';
 $string['controls'] = 'Regelaars tonen';
 $string['createmedia'] = 'Media invoegen';
 $string['default'] = 'Standaard';
+$string['deleteimage'] = 'Verwijder afbeelding';
+$string['deleteimagewarning'] = 'Weet je zeker dat je de afbeelding wil verwijderen?';
 $string['deleteselected'] = 'Geselecteerde bestanden verwijderen';
 $string['descriptions'] = 'Beschrijvingen';
 $string['descriptions_help'] = 'Audiobeschrijvingen kunnen worden gebruikt om een vertelling te geven waarin visuele details worden uitgelegd die niet alleen uit de audio blijken.';
 $string['descriptionssourcelabel'] = 'Beschrijving track-URL';
 $string['displayoptions'] = 'Weergave-opties';
-$string['enteralt'] = 'Beschrijf deze afbeelding voor iemand die ze niet kan zien';
+$string['enteralt'] = 'Beschrijf deze afbeelding voor iemand die ze niet kan zien:';
 $string['entername'] = 'Naam';
 $string['entersource'] = 'Bron-URL';
 $string['entertitle'] = 'Titel';
-$string['enterurl'] = 'URL';
+$string['enterurl'] = 'Toevoegen via URL';
+$string['enterurlor'] = 'Of voeg toe via URL';
 $string['filemanager'] = 'Bestandsbeheer';
 $string['hasmissingfiles'] = 'Waarschuwing! De volgende bestanden waarnaar wordt verwezen in het tekstgebied lijken te ontbreken:';
 $string['height'] = 'Hoogte';
 $string['helplinktext'] = 'Media helper';
 $string['imagebuttontitle'] = 'Afbeelding';
+$string['imagedetails'] = 'Afbeeldingsdetails';
 $string['imageproperties'] = 'Afbeeldingseigenschappen';
-$string['imageurlrequired'] = 'Een afbeelding moet een URL hebben.';
+$string['imageurlrequired'] = 'Een afbeelding moet een geldige URL hebben.';
+$string['insertimage'] = 'Afbeelding invoegen';
 $string['label'] = 'Label';
 $string['languagesavailable'] = 'Beschikbare talen';
 $string['languagesinstalled'] = 'Geïnstalleerde talen';
 $string['link'] = 'Link';
+$string['loading'] = 'Afbeelding voorbereiden';
 $string['loop'] = 'Loop';
 $string['managefiles'] = 'Bestanden beheren';
 $string['mediabuttontitle'] = 'Multimedia';
@@ -84,13 +93,18 @@ $string['metadata_help'] = 'Metadatatracks, voor gebruik vanuit een script, moge
 $string['metadatasourcelabel'] = 'Track-URL met metadata';
 $string['missingfiles'] = 'Ontbrekende bestanden';
 $string['mute'] = 'Gedempt';
-$string['pluginname'] = 'Tiny media invoegen';
+$string['pluginname'] = 'Media invoegen';
 $string['presentation'] = 'Deze afbeelding is enkel decoratief';
 $string['presentationoraltrequired'] = 'Afbeeldingen moeten een beschrijving hebben, tenzij wanneer aangegeven is dat ze enkele decoratief zijn.';
 $string['privacy:metadata'] = 'De media-plug-in voor TinyMCE slaat geen persoonlijke gegevens op.';
 $string['remove'] = 'Verwijderen';
-$string['saveimage'] = 'Bewaar afbeelding';
+$string['repositorynotpermitted'] = 'Plak een afbeeldingslink in onderstaand veld.';
+$string['repositoryuploadnotpermitted'] = 'Plak een afbeeldingslink in onderstaand veld of <br>klik op de Blader opslagruimten-knop.';
+$string['saveimage'] = 'Bewaar';
 $string['size'] = 'Breedte x hoogte (in pixels)';
+$string['sizecustom'] = 'Aangepaste grootte';
+$string['sizecustom_help'] = 'Deze afbeelding is een voorbeeld.<br>Wijzigingen naar je juiste grootte zullen zichtbaar zijn nadat je bewaard hebt.';
+$string['sizeoriginal'] = 'Oorspronkelijke grootte';
 $string['srclang'] = 'Taal';
 $string['subtitles'] = 'Ondertiteling';
 $string['subtitles_help'] = 'Ondertitels kunnen worden gebruikt om een transcriptie of vertaling van de dialoog te bieden.';
@@ -101,6 +115,7 @@ $string['unusedfilesdesc'] = 'De volgende ingesloten bestanden worden niet gebru
 $string['unusedfilesheader'] = 'Ongebruikte bestanden';
 $string['unusedfilesremovalnotice'] = 'Alle ongebruikte bestanden worden automatisch verwijderd bij het opslaan van wijzigingen.';
 $string['updatemedia'] = 'Media bijwerken';
+$string['uploading'] = 'Uploadn';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Hoogte video';
 $string['videosourcelabel'] = 'Videobron-URL';

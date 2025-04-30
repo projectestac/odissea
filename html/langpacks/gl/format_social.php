@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'gl', version '4.1'.
+ * Strings for component 'format_social', language 'gl', version '4.4'.
  *
  * @package     format_social
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Número de debates';
 $string['numberdiscussions_help'] = 'Estes axustes especifican cantos debates deberían amosarse.';
-$string['pluginname'] = 'Formato social';
+$string['plugin_description'] = 'O curso céntrase nun foro principal na páxina do curso. Pódense engadir actividades e recursos adicionais mediante o bloque Actividades sociais.';
+$string['pluginname'] = 'Social';
 $string['privacy:metadata'] = 'O engadido de formato social non almacena ningún dato persoal.';
 $string['sectionname'] = 'sección';

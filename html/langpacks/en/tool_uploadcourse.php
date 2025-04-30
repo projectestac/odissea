@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'en', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'en', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Restore from this course after upload';
 $string['coursetemplatename_help'] = 'Enter an existing course shortname to use as a template for the creation of all courses.';
 $string['coursetorestorefromdoesnotexist'] = 'The course to restore from does not exist';
 $string['courseupdated'] = 'Course updated';
+$string['courseuploadnotallowed'] = 'No permission to upload courses in category: {$a}';
+$string['courseuploadupdatenotallowed'] = 'A course with this short name exists but you don\'t have permission to use the upload courses functionality to update it.';
 $string['createall'] = 'Create all, increment shortname if needed';
 $string['createnew'] = 'Create new courses only, skip existing ones';
 $string['createorupdate'] = 'Create new courses, or update existing ones';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Encoding of the CSV file.';
 $string['errorcannotcreateorupdateenrolment'] = 'Cannot create or update enrolment method \'{$a}\'';
 $string['errorcannotdeleteenrolment'] = 'Cannot delete enrolment method \'{$a}\'';
 $string['errorcannotdisableenrolment'] = 'Cannot disable enrolment method \'{$a}\'';
+$string['errorunsupportedmethod'] = 'Enrolment method \'{$a}\' is not supported in csv upload';
 $string['errorwhiledeletingcourse'] = 'Error while deleting the course';
 $string['errorwhilerestoringcourse'] = 'Error while restoring the course';
 $string['generatedshortnamealreadyinuse'] = 'The generated shortname is already in use';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Update mode does not allow anything to 
 $string['updateonly'] = 'Only update existing courses';
 $string['updatewithdataonly'] = 'Update with CSV data only';
 $string['updatewithdataordefaults'] = 'Update with CSV data and defaults';
+$string['uploadcourse:use'] = 'Use upload course tool';
 $string['uploadcourses'] = 'Upload courses';
 $string['uploadcourses_help'] = 'Courses may be uploaded via text file. The format of the file should be as follows:
 

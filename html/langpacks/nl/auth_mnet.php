@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'nl', version '4.1'.
+ * Strings for component 'auth_mnet', language 'nl', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNet authenticatie';
 $string['privacy:metadata:external:mahara'] = 'Deze plugin kan extern data versturen naar een gelinkte Mahara-applicatie.';
 $string['privacy:metadata:external:moodle'] = 'Deze plugin kan extern data versturen naar een gelinkte Moodle-applicatie.';
 $string['privacy:metadata:mnet_external:address'] = 'Het adres van de gebruiker.';
-$string['privacy:metadata:mnet_external:aim'] = 'De AIM identifier van de gebruiker';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Een alternatieve naam voor de gebruiker.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Een voorkeur als de gebruiker zich automatisch moet abonneren op forums waar de gebruiker berichten plaatst.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Een gebruikersvoorkeur voor het type agenda dat moet worden gebruikt.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Een voorkeur om het sture
 $string['privacy:metadata:mnet_external:firstaccess'] = 'De datum en tijd dat deze gebruiker de eerste keer toegang tot de site had.';
 $string['privacy:metadata:mnet_external:firstname'] = 'De voornaam van de gebruiker.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'De fonetische weergave van de voornaam van de gebruiker.';
-$string['privacy:metadata:mnet_external:icq'] = 'Het ICQ nummer van de gebruiker.';
 $string['privacy:metadata:mnet_external:id'] = 'De ID van de gebruiker';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Een identificatienummer gegeven door de instelling';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Alternatieve tekst voor de gebruikersafbeelding.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'De fonetische weer
 $string['privacy:metadata:mnet_external:maildigest'] = 'Een instelling voor het e-mailoverzicht voor deze gebruiker.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Een voorkeur voor de gebruiker over het weergeven van zijn e-mailadres aan andere gebruikers.';
 $string['privacy:metadata:mnet_external:middlename'] = 'De middelste naam van de gebruiker';
-$string['privacy:metadata:mnet_external:msn'] = 'De MSN-id van de gebruiker';
 $string['privacy:metadata:mnet_external:phone1'] = 'Een telefoonnummer voor de gebruiker.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Een extra telefoonnummer voor de gebruiker.';
 $string['privacy:metadata:mnet_external:picture'] = 'De afbeeldingsdetails die aan deze gebruiker zijn gekoppeld.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Een vlag om te bepalen of de gebruiker akkoord is gegaan met het sitebeleid.';
-$string['privacy:metadata:mnet_external:skype'] = 'De skype-ID van de gebruiker';
 $string['privacy:metadata:mnet_external:suspended'] = 'Een vlag om aan te geven of de gebruiker is geblokkeerd op dit systeem.';
 $string['privacy:metadata:mnet_external:timezone'] = 'De tijdzone van de gebruiker';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Een voorkeur voor forums en het volgen ervan.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Het trust-bitmasker';
-$string['privacy:metadata:mnet_external:url'] = 'Een URL gerelateerd aan deze gebruiker.';
 $string['privacy:metadata:mnet_external:username'] = 'De gebruikersnaam van deze gebruiker.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'De Yahoo ID van de gebruiker';
 $string['privacy:metadata:mnet_log'] = 'Details van externe activiteiten van een lokale gebruiker die in een extern systeem aangemeld is.';
 $string['privacy:metadata:mnet_log:action'] = 'Actie door de gebruiker.';
 $string['privacy:metadata:mnet_log:cmid'] = 'ID van de cursusmodule.';

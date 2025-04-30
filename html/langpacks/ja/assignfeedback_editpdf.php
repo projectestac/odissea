@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'ja', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = '楕円';
 $string['pagenumber'] = 'ページ {$a}';
 $string['pagexofy'] = 'ページ {$a->page} / {$a->total}';
 $string['partialwarning'] = 'この提出のいくつかのファイルは直接ダウンロードのみでアクセスすることができます。';
+$string['pathtogserror'] = '設定済みGhostscriptのパスが正しく設定されていません: {$a}';
 $string['pathtogspathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にGhostscriptのパスを設定する必要があることに留意してください。';
 $string['pen'] = 'ペン';
 $string['pluginname'] = 'PDF注釈';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_poodll', language 'fr', version '4.1'.
+ * Strings for component 'assignfeedback_poodll', language 'fr', version '4.4'.
  *
  * @package     assignfeedback_poodll
  * @category    string
@@ -41,7 +41,7 @@ $string['pluginname'] = 'Feedback Poodll';
 $string['poodll:reviewfeedbacks'] = 'Peut réviser les feedbacks Poodll (enregistrements)';
 $string['poodll:use'] = 'Autoriser l’usage des feedback Poodll';
 $string['poodllfeedbackinactive'] = 'Les feedbacks Poodll ne sont pas actifs.';
-$string['privacy:metadata'] = 'Le plugin Poodll Assignment Feedback stocke des données personnelles.';
+$string['privacy:metadata'] = 'Le plugin Poodll Assignment Feedback enregistre des données personnelles.';
 $string['privacy:metadata:filepurpose'] = 'Les enregistrements (remises de fichiers Poodll) pour ce feedback de devoir.';
 $string['privacy:path'] = 'feedback_poodll';
 $string['reallydeletefeedback'] = 'Voulez-vous vraiment supprimer ce feedback ?';

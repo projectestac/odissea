@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'de', version '4.1'.
+ * Strings for component 'grouptool', language 'de', version '4.4'.
  *
  * @package     grouptool
  * @category    string
@@ -49,7 +49,7 @@ $string['already_occupied'] = 'Der Gruppenplatz in Gruppe <strong>{$a->grpname}<
 $string['already_queued'] = '<strong>{$a->username}</strong> ist bereits in der Warteliste von Gruppe <strong>{$a->groupname}</strong>!';
 $string['already_registered'] = '<strong>{$a->username}</strong> ist bereits in Gruppe <strong>{$a->groupname}</strong> registriert!';
 $string['alwaysshowdescription'] = 'Beschreibung immer anzeigen';
-$string['alwaysshowdescription_help'] = 'Wenn deaktiviert, wird die Beschreibung nur während des Anmeldezeitraums angezeigt.';
+$string['alwaysshowdescription_help'] = 'Wenn die Option deaktiviert ist, wird die Beschreibung für Teilnehmer/innen nur ab dem Anmeldebeginn angezeigt.';
 $string['asterisk_marks_moodle_registrations'] = 'Teilnehmer/innen mit führendem Asterisk/Stern sind bereits in den entsprechenden Moodle-Gruppen angemeldet.';
 $string['availabledate'] = 'Anmeldebeginn';
 $string['availabledate_help'] = 'Beginn des Anmeldezeitraums. Nach diesem Datum ist es Teilnehmer/innen möglich sich selbst zu den ausgewählten Gruppen anzumelden (falls dies zugelassen ist).';
@@ -515,6 +515,7 @@ $string['registrations_missing'] = '{$a} Anmeldungen fehlen';
 $string['regpresent'] = 'Teilnehmer/in ist bereits {$a}';
 $string['rename_failed'] = 'Umbenennung fehlgeschlagen!';
 $string['renamed_group'] = 'Umbenennung erfolgreich!';
+$string['report'] = 'Gruppenverwaltung Bericht';
 $string['require_registration'] = 'Anmeldungen notwendig';
 $string['require_registration_help'] = 'Die Aktivität wird als abgeschlossen markiert, wenn Teilnehmer/innen zumindest in der definierten Anzahl von Gruppen angemeldet sind. Registrierungen in Wartelisten werden von der Regel nicht berücksichtigt. Wenn die Zahl höher als 1 ist, muss "Mehrfache Anmeldungen zulassen" aktiviert sein und "Maximalanzahl zu wählender Gruppen" muss höher oder gleich diesem Wert sein.';
 $string['reset_agrps'] = 'Setze aktive Gruppen zurück';
@@ -569,10 +570,10 @@ $string['sources_missing'] = 'Es existiert zumindest 1 Gruppe, bei der keine Que
 $string['start'] = 'Start';
 $string['status'] = 'Status';
 $string['status_help'] = '<ul>
-<li><span style="font-weight:bold">✔</span> angemeldet in Moodle-Gruppe und Gruppenverwaltung</li>
-<li><span style="font-weight:bold">?</span> angemeldet in Moodle-Gruppe, nicht aber in der Gruppenverwaltung</li>
-<li><span style="font-weight:bold">+</span> angemeldet in der Gruppenverwaltung, nicht aber in Moodle-Gruppe</li>
-<li><span style="font-weight:bold">1, 2, 3...</span> auf Warteliste in der Gruppenverwaltung</li>
+<li><strong>✔</strong> angemeldet in Moodle-Gruppe und Gruppenverwaltung</li>
+<li><strong>?</strong> angemeldet in Moodle-Gruppe, nicht aber in der Gruppenverwaltung</li>
+<li><strong>+</strong> angemeldet in der Gruppenverwaltung, nicht aber in Moodle-Gruppe</li>
+<li><strong>1, 2, 3...</strong> auf Warteliste in der Gruppenverwaltung</li>
 </ul>';
 $string['successfully_deleted_groups'] = 'Gruppen erfolgreich gelöscht!';
 $string['swapped_groups'] = 'Gruppen <strong>{$a->a}</strong> (Reihenfolge <strong>{$a->aorder}</strong>) und <strong>{$a->b}</strong> (Reihenfolge <strong>{$a->border}</strong>) wurde getauscht!';

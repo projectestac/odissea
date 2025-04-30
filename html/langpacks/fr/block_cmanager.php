@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'fr', version '4.1'.
+ * Strings for component 'block_cmanager', language 'fr', version '4.4'.
  *
  * @package     block_cmanager
  * @category    string
@@ -193,7 +193,7 @@ $string['formBuilder_deleteForm'] = 'Effacer le formulaire';
 $string['formBuilder_dropdownTxt'] = 'Menu déroulant';
 $string['formBuilder_editForm'] = 'Modifier le formulaire';
 $string['formBuilder_editingForm'] = 'Modification de formulaire';
-$string['formBuilder_instructions'] = 'Le centre de demande de cours a été développé pour permettre aux utilisateurs d’entrer des informations supplémentaires sur les demandes de cours. Ce formulaire peut être configuré pour vous permettre de recueillir un maximum d’informations concernant  l’utilisateur final. En particulier si vous avez besoin d’informations de vos utilisateurs pour vous aider à créer un cours, il convient de les configurer ici. Les utilisations typiques ont inclus:';
+$string['formBuilder_instructions'] = 'Le centre de demande de cours a été développé pour permettre aux utilisateurs d’entrer des informations supplémentaires sur les demandes de cours. Ce formulaire peut être configuré pour vous permettre de recueillir un maximum d’informations concernant l’utilisateur final. En particulier si vous avez besoin d’informations de vos utilisateurs pour vous aider à créer un cours, il convient de les configurer ici. Les utilisations typiques ont inclus :';
 $string['formBuilder_instructions1'] = 'Noms et codes de programme';
 $string['formBuilder_instructions2'] = 'Les dates de début et de fin souhaitées';
 $string['formBuilder_instructions3'] = 'Les clefs d’inscription souhaités';

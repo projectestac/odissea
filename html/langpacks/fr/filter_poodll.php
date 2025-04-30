@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_poodll', language 'fr', version '4.1'.
+ * Strings for component 'filter_poodll', language 'fr', version '4.4'.
  *
  * @package     filter_poodll
  * @category    string
@@ -46,7 +46,7 @@ $string['activate'] = 'Activer Poodll ?';
 $string['advancedsettings'] = 'Paramètres avancés';
 $string['alwayshtml5'] = 'Toujours utiliser HTML5';
 $string['appauthorised'] = 'Le filtre Poodll est autorisé pour ce site.';
-$string['appitselfnotauthorised'] = 'Aucun abonnement valide ne contient l\'accès au plugin : filter_poodll';
+$string['appitselfnotauthorised'] = 'Aucun abonnement valide ne contient l’accès au plugin : filter_poodll';
 $string['appnotauthorised'] = 'Le filtre Poodll n’est pas autorisé pour ce site.';
 $string['audio'] = 'Audio';
 $string['audiotranscode'] = 'Conversion automatique en MP3';

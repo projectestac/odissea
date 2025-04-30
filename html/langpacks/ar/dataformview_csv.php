@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformview_csv', language 'ar', version '4.1'.
+ * Strings for component 'dataformview_csv', language 'ar', version '4.4'.
  *
  * @package     dataformview_csv
  * @category    string
@@ -27,3 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowupdateexisting'] = 'السماح بتحديث المُدخلات الموجودة';
 $string['csv:addinstance'] = 'إضافة معاينة نموذج بيانات بشكل CSV جديد';
+$string['importfields'] = 'استيراد الحقول';
+$string['importoptions'] = 'استيراد الخيارات';
+$string['importresults'] = 'استيراد النتائج';

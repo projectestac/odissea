@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_sketch', language 'en', version '4.1'.
+ * Strings for component 'tiny_sketch', language 'en', version '4.4'.
  *
  * @package     tiny_sketch
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['forceaccessibility'] = 'Post sketch popup for accessibility';
+$string['forceaccessibility_desc'] = 'If enabled the sketch will be opened in the core media plugin after insert so that alt text can be added.';
 $string['helplinktext'] = 'Insert Sketch';
 $string['insert'] = 'Insert Sketch';
 $string['pluginname'] = 'Sketch';
@@ -32,5 +34,3 @@ $string['privacy:metadata'] = 'The Sketch plugin does not save or export user da
 $string['sketch_description'] = 'Quick sketch in Moodle';
 $string['sketch_long_description'] = 'Draw and edit images inside any editor in Moodle';
 $string['sketchtitle'] = 'Sketch and Save';
-$string['storeinrepo'] = 'Store as image file';
-$string['storeinrepo_desc'] = 'If checked the sketch will be saved as a standard image upload instead of a base64 inline image.';

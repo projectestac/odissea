@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quest', language 'es', version '4.1'.
+ * Strings for component 'quest', language 'es', version '4.4'.
  *
  * @package     quest
  * @category    string

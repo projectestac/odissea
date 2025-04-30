@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'fr', version '4.1'.
+ * Strings for component 'label', language 'fr', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant ce
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Ajouter une Zone texte et média';
 $string['label:view'] = 'Consulter une Zone texte et média';
+$string['labelname'] = 'Titre dans l’index du cours';
+$string['labelname_help'] = 'Le titre n’est utilisé que pour identifier la zone Texte et média dans l’index du cours et pour l’achèvement d’activités. S’il est laissé vide, un titre sera généré automatiquement à partir des premiers caractères du texte.';
 $string['labeltext'] = 'Texte';
 $string['modulename'] = 'Zone texte et média';
 $string['modulename_help'] = 'Une Zone texte et média permet d’afficher du texte et des contenus multimédia sur la page du cours.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'nl', version '4.1'.
+ * Strings for component 'tool_mobile', language 'nl', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,6 +35,11 @@ $string['autologinkeygenerationlockout'] = 'Auto-login sleutel genereren is gebl
 $string['autologinmintimebetweenreq'] = 'Minimale tijd tussen twee auto-login-aanvragen';
 $string['autologinmintimebetweenreq_desc'] = 'Deze instelling bepaalt de minimale tijd tussen verzoeken om automatisch in te loggen vanuit de app. Als app-gebruikers regelmatig gevraagd worden om hun wachtwoord opnieuw in te geven wanneer ze ingebedde inhoud van de site bekijken, zet dit dan op een lagere waarde.';
 $string['autologinnotallowedtoadmins'] = 'Auto-login is niet toegestaan voor site-beheerders.';
+$string['autologout'] = 'Automatisch uitloggen verplichten voor je gebruikers';
+$string['autologout_desc'] = 'Om veiligheidsredenen kunt je automatisch uitloggen voor je gebruikers afdwingen wanneer ze de app verlaten of sluiten, of wanneer deze naar de achtergrond gaat. Gebruikers zullen opnieuw moeten inloggen als ze terugkeren naar de app.';
+$string['autologoutcustom'] = 'Aangepaste tijd nadat gebruikers de app hebben verlaten of gesloten';
+$string['autologoutinmediate'] = 'Onmiddellijk nadat gebruikers de app verlaten of sluiten';
+$string['autologouttime'] = 'Automatische uitlogtimer';
 $string['cachedef_plugininfo'] = 'Dit bewaart de lijst met plugins met mobiele toevoegingen';
 $string['cachedef_subscriptiondata'] = 'Dit bewaart de Moodle app abonnementsinformatie.';
 $string['clickheretolaunchtheapp'] = 'Klik hier als de app niet automatisch opent.';
@@ -94,7 +99,6 @@ $string['managefiletypes'] = 'Beheer bestandstypes';
 $string['minimumversion'] = 'Als een app-versie wordt opgegeven (3.8.0 of hoger) dan zullen alle gebruikers die een oudere app gebruiken eerst moeten upgraden voor ze toegang krijgen tot de site.';
 $string['minimumversion_key'] = 'Minimale app-versie vereist';
 $string['mobileapp'] = 'Mobiele app';
-$string['mobileappconnected'] = 'Moodle app verbonden';
 $string['mobileappearance'] = 'Mobiel uiterlijk';
 $string['mobileappenabled'] = 'Deze site heeft toegang tot mobiele apps ingeschakeld.<br /><a href="{$a}">Download de mobiele app</a>.';
 $string['mobileappsubscription'] = 'Moodle app abonnement';
@@ -115,7 +119,6 @@ $string['notificationsseemore'] = 'Opmerking: de Moodle app gebruikersstatistiek
 $string['notificationssentnotifications'] = 'Verzonden berichten';
 $string['oauth2identityproviders'] = 'OAuth 2 identiteitsproviders';
 $string['offlineuse'] = 'Offline cursus';
-$string['openusingembeddedbrowser'] = 'Openen met ingesloten browser';
 $string['pluginname'] = 'Mobiele app tools';
 $string['pluginnotenabledorconfigured'] = 'Plugin niet ingeschakeld of geconfigureerd.';
 $string['privacy:metadata:core_userkey'] = 'Gebruikerssleutels die gebruikt zijn om de autologin-sleutel te maken voor de huidige gebruiker.';

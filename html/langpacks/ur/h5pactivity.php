@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ur', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ur', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -112,7 +112,6 @@ $string['result_other'] = 'تعامل کی نامعلوم قسم';
 $string['result_sequencing_answer'] = 'پوزیشن کی قدر';
 $string['result_sequencing_choice'] = 'پوزیشنز';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'تمام کوششیں دیکھیں ({$a} جمع کرائی گئی)';
 $string['review_mode'] = 'کوششوں کا جائزہ لیں';
 $string['review_my_attempts'] = 'میری کوششیں دیکھیں';
 $string['review_none'] = 'شرکاء اپنی کوششوں کا جائزہ نہیں لے سکتے';

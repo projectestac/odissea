@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ro', version '4.1'.
+ * Strings for component 'chat', language 'ro', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -113,7 +113,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Discuții';
 $string['neverdeletemessages'] = 'Nu şterge niciodată mesajele';
 $string['nextchattime'] = 'Când va avea loc următoarea discuție:';
-$string['nextsession'] = 'Următoarea sesiune programată';
 $string['no_complete_sessions_found'] = 'Nu s-au găsit sesiuni complete.';
 $string['nochat'] = 'Nu s-a găsit nicio discuție';
 $string['noguests'] = 'Această Cameră de discuții nu este deschisă vizitatorilor';
@@ -162,7 +161,6 @@ $string['serverip'] = 'IP server';
 $string['servermax'] = 'Număr maxim de utilizatori';
 $string['serverport'] = 'Port server';
 $string['sessions'] = 'Sesiuni discuţii';
-$string['sessionstart'] = 'Următoarea sesiune de discuții va începe pe {$a->date}, ({$a->fromnow} de acum)';
 $string['sessionstartsin'] = 'Următoarea sesiune de discuții va începe {$a} de acum.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Toţi utilizatorii pot vizualiza sesiunile anterioare';

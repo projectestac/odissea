@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'eu', version '4.1'.
+ * Strings for component 'block_myoverview', language 'eu', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Zabaltzen den menua talde-multzorako';
 $string['aria:hiddencourses'] = 'Erakutsi ikuspegitik kendutako ikastaroak';
 $string['aria:hidecourse'] = 'Kendu {$a} ikuspegitik';
 $string['aria:inprogress'] = 'Erakutsi martxan dauden ikastaroak';
-$string['aria:lastaccessed'] = 'Ordenatu ikastaroak azken sarreraren dataren arabera';
 $string['aria:list'] = 'Aldatu zerrenda-ikuspegira';
 $string['aria:past'] = 'Erakutsi iraganeko ikastaroak';
 $string['aria:removefromfavourites'] = 'Ez nabarmendu ondokoa';
-$string['aria:shortname'] = 'Ordenatu ikastaroak ikastaroaren izen laburraren arabera';
 $string['aria:showcourse'] = 'Berriz erakutsi {$a} ikuspegian';
 $string['aria:sortingdropdown'] = 'Zabaltzen den menua ordenatzen';
 $string['aria:summary'] = 'Aldatu laburpen-ikuspegira';
-$string['aria:title'] = 'Ordenatu ikastaroak izenaren arabera';
 $string['availablegroupings'] = 'Eskura dauden iragazkiak';
 $string['availablegroupings_desc'] = 'Erabiltzaileek aukeratu ditzaketen ikastaro-iragazkiak. Batere ez bada aukeratzen, ikastaro guztiak erakutsiko dira.';
 $string['card'] = 'Txartela';
 $string['cards'] = 'Txartelak';
-$string['clearsearch'] = 'Garbitu bilaketa';
 $string['completepercent'] = '%{$a}(e)an osatuta';
 $string['courseprogress'] = 'Ikastaro-aurrerapena:';
+$string['createcourse'] = 'Sortu ikastaroa';
 $string['customfield'] = 'Eremu pertsonalizatua';
 $string['customfiltergrouping'] = 'Erabili beharreko eremua';
 $string['customfiltergrouping_nofields'] = 'Ezarpen honek gutxienez edozeinentzako ikusgai dagoen ikastaroko eremu pertsonalizatu bat izatea behar du.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Ordenatu izen laburraren arabera';
 $string['sortbytitle'] = 'Ordenatu ikastaroaren izenaren arabera';
 $string['summary'] = 'Laburpena';
 $string['title'] = 'Ikastaroaren izena';
+$string['viewquickstart'] = 'Ikusi hasiberrientzako gida azkarra';
+$string['zero_default_intro'] = 'Ikastaroren batean matrikulatuta zaudenean, hemen agertuko da.';
+$string['zero_default_title'] = 'Ez zaude ezein ikastaroetan matrikulatuta.';
+$string['zero_nocourses_intro'] = 'Hasteko laguntza behar duzu? Begiratu <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleko dokumentazioa</a> edo eman lehen pausoak gure hasiberrientzako gidarekin.';
+$string['zero_nocourses_title'] = 'Sortu ezazu zure lehen ikastaroa';
+$string['zero_request_intro'] = 'Hasteko laguntza behar duzu? Begiratu <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleko dokumentazioa</a> edo eman lehen pausoak gure <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">hasiberrientzako gidarekin</a>.';
+$string['zero_request_title'] = 'Eskatu zure lehen ikastaroa';

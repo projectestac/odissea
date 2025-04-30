@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'zh_cn', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'zh_cn', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -44,6 +44,7 @@ $string['dropzones'] = '放置区域';
 $string['dropzones_help'] = '放置区域可以由坐标定义，或在上面的预览中拖动到合适位置。首先选择一个形状(圆形、矩形或多边形)，将在预览的左上角添加一个新的放置区域形状。这可能是有用的，以尽量减少标记部分，以便您编辑放置区域时可以看到预览。编辑形状首先在预览中单击形状以显示编辑手柄。您可以使用中心手柄移动形状，或使用顶点手柄调整形状的尺寸。仅对多边形而言，按住control按钮(Mac上是command按钮)同时点击顶点手柄将为多边形添加一个新的顶点。请尽量保持多边形的形状简单，不要交叉。这三个形状的坐标如下:*圆形：圆心_x,圆心_y;半径<br/>例如:<code>80,100;50</code>*矩形：左上_x,左上_y;宽度,高度<br/>例如:<code>20,60;80,40</code>* 多边形： x1, y1;x2, y2;…;例如:<code>20,60;100,60;20,100</code>选择一个标记文本将在预览中添加该文本到形状。';
 $string['followingarewrong'] = '以下标记被放置在错误的区域:{$a}。';
 $string['followingarewrongandhighlighted'] = '下列标记位置不正确:{$a}。高亮的标记现在显示在正确的位置。<br />点击标记，高亮显示允许的区域。';
+$string['formerror_dragrequired'] = '你必须在这个问题上加上至少一个标记。';
 $string['formerror_nobgimage'] = '您需要选择一个图片作为拖放区域的背景。';
 $string['formerror_noitemselected'] = '您指定了一个放置区域，但没有选择必须放置到该区域的标记。';
 $string['formerror_nosemicolons'] = '在您的坐标字符串中没有分号(;)。您的{$a->shape}坐标应该表示为- {$a->coordsstring}。';

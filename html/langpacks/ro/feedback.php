@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ro', version '4.1'.
+ * Strings for component 'feedback', language 'ro', version '4.4'.
  *
  * @package     feedback
  * @category    string
@@ -44,6 +44,7 @@ $string['bold'] = 'Îngroșat';
 $string['calendarend'] = 'Obiectul {$a} se închide';
 $string['calendarstart'] = '{$a} se deschide';
 $string['cannotaccess'] = 'Poți accesa feedback-ul doar de la un curs';
+$string['cannotcreatepagebreak'] = 'O pagină nouă nu poate fi adăugată la început, și doar o singură pagină nouă poate fi adăugată la sfârșit.';
 $string['cannotsavetempl'] = 'Nu este permisă salvarea șabloanelor';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha nu a fost trimisă';
@@ -58,7 +59,7 @@ $string['completed'] = 'Completat';
 $string['completed_feedbacks'] = 'Răspunsuri trimise';
 $string['completedon'] = 'Completat în {$a}';
 $string['completiondetail:submit'] = 'Trimite feedback';
-$string['completionsubmit'] = 'Vizualizare ca finalizat dacă feedback-ul este trimis';
+$string['completionsubmit'] = 'Trimite feedback';
 $string['configallowfullanonymous'] = 'Dacă este setat „da”, vizitatorii pot completa o activitate de tip feedback de pe prima pagină să se autentifice.';
 $string['confirmdeleteentry'] = 'Sunteți sigur(ă) că doriți să ștergeți această postare?';
 $string['confirmdeleteitem'] = 'Sunteți sigur(ă) că doriți să ștergeți acest element ?';
@@ -162,7 +163,7 @@ $string['insufficient_responses_for_this_group'] = 'Nu există răspunsuri sufic
 $string['insufficient_responses_help'] = 'Pentru ca feedback-ul să fie anonim, trebuie să existe cel puțin 2 răspunsuri.';
 $string['item_label'] = 'Etichetă';
 $string['item_name'] = 'Întrebare';
-$string['label'] = 'Etichetă';
+$string['label'] = 'Zonă text și media';
 $string['labelcontents'] = 'Conținuturi';
 $string['mapcourse'] = 'Alocați feedback-ul la cursuri';
 $string['mapcourse_help'] = 'În mod implicit, formularele de feedback create pe pagina dvs. de pornire sunt disponibile pe  tot site-ul și vor apărea în toate cursurile care folosesc blocul de feedback. Puteţi insista ca formularul de feedback să apară, făcându-l un bloc permanent sau puteți limita numărul de cursuri în care un formular de feedback va apărea, prin atribuirea acestuia la cursuri specifice.';
@@ -196,7 +197,10 @@ $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->
 $string['multichoicerated'] = 'Alegere multiplă (evaluat)';
 $string['multichoicetype'] = 'Tip cu alegere multiplă';
 $string['multiplesubmit'] = 'Permiteți mai multe trimiteri';
-$string['multiplesubmit_help'] = 'Dacă se dorește anonimizarea răspunsurilor la sondaje, utilizatorii vor putea trimite feedback de câte ori doresc. ';
+$string['multiplesubmit_help'] = 'Dacă este setat Da:
+
+* Pentru sondaje anonime: participanții pot trimite răspunsuri nelimitate și toate răspunsurile vor fi înregistrate.
+* Pentru sondaje non-anonime: participanții pot trimite răspunsuri nelimitate, dar doar cel mai recent răspuns al lor va fi înregistrat.';
 $string['name'] = 'Nume';
 $string['name_required'] = 'Numele cerut';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';

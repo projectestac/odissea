@@ -27,11 +27,11 @@
  */
 
 use auth_lti\local\ltiadvantage\utility\cookie_helper;
+use enrol_lti\local\ltiadvantage\lib\lti_cookie;
 use enrol_lti\local\ltiadvantage\lib\issuer_database;
 use enrol_lti\local\ltiadvantage\lib\launch_cache_session;
 use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
 use enrol_lti\local\ltiadvantage\repository\deployment_repository;
-use Packback\Lti1p3\ImsStorage\ImsCookie;
 use Packback\Lti1p3\LtiOidcLogin;
 
 require_once(__DIR__."/../../config.php");
@@ -102,10 +102,10 @@ if (!isloggedin()) {
 }
 
 // Now, do the OIDC login.
-LtiOidcLogin::new(
+$redirecturl = LtiOidcLogin::new(
     new issuer_database(new application_registration_repository(), new deployment_repository()),
     new launch_cache_session(),
-    new ImsCookie()
-)
-    ->doOidcLoginRedirect($targetlinkuri)
-    ->doRedirect();
+    new lti_cookie()
+)->getRedirectUrl($targetlinkuri, $_REQUEST);
+
+redirect($redirecturl);

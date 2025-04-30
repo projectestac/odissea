@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'it', version '4.1'.
+ * Strings for component 'repository_dropbox', language 'it', version '4.4'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Dropbox API Key';
 $string['cachelimit'] = 'Limite cache';
 $string['cachelimit_info'] = 'La dimensione massima dei file (espressa in byte) da inserire nella cache del server per alias/scorciatoie del repository Dropbox.
 I file nella cache saranno utilizzati quando il repository non è disponibile.
@@ -34,7 +33,6 @@ $string['configplugin'] = 'Configurazione Dropbox';
 $string['crontask'] = 'Elaborazione in background: repository dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Visualizzare folder Dropbox';
-$string['instruction'] = 'Per ottenere un API Key ed il Secret abbinato: <a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>. Durante l\'impostazione della chiave scegliere "Full Dropbox" come "Access level".';
 $string['issuer'] = 'Servizio OAuth 2';
 $string['issuer_help'] = 'Selezionare il servizio OAuth 2 configurato per comunicare con l\'API Dropbox. Se il servizio non esiste ancora, sarà necessario crearlo.';
 $string['logoutdesc'] = '(esegui il logout al termine dell\'utilizzo di dropbox)';
@@ -44,4 +42,3 @@ $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Il plugin Repository \'Dropbox\' non memorizza dati personali, ma trasmette i dati degli utenti da Moodle al sistema remoto.';
 $string['privacy:metadata:repository_dropbox:query'] = 'Query di ricerca testo per l\'utente del repository Dropbox.';
 $string['remember'] = 'Ricordami';
-$string['secret'] = 'Dropbox secret';

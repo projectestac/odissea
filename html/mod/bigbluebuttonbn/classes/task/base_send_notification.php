@@ -69,9 +69,14 @@ abstract class base_send_notification extends adhoc_task {
     /**
      * Get the bigbluebutton instance that this notification is for.
      *
-     * @return instance
+     * @return instance|null null if the instance could not be loaded.
      */
-    protected function get_instance(): instance {
+    protected function get_instance(): ?instance {
+        // This means the customdata is broken, and needs to be fixed.
+        if (empty($this->get_custom_data()->instanceid)) {
+            throw new \coding_exception("Task custom data was missing instanceid");
+        }
+
         if ($this->instance === null) {
             $this->instance = instance::get_from_instanceid($this->get_custom_data()->instanceid);
         }
@@ -180,10 +185,17 @@ abstract class base_send_notification extends adhoc_task {
      */
     protected function send_all_notifications(): void {
         $instance = $this->get_instance();
+
+        // Cannot do anything without a valid instance.
+        if (empty($instance)) {
+            mtrace("Instance was empty, skipping");
+            return;
+        }
+
         foreach ($this->get_recipients() as $recipient) {
             try {
                 \core_user::require_active_user($recipient, true, true);
-                cron_setup_user($recipient);
+                \core\cron::setup_user($recipient);
             } catch (moodle_exception $e) {
                 // Skip sending.
                 continue;
@@ -192,7 +204,7 @@ abstract class base_send_notification extends adhoc_task {
             $this->send_notification_to_current_user();
         }
 
-        cron_setup_user();
+        \core\cron::setup_user();
     }
 
     /**

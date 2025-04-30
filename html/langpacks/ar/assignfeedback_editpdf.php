@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ar', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'ar', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'بيضاوي';
 $string['pagenumber'] = 'صفحة {$a}';
 $string['pagexofy'] = 'صفحة {$a->page} من {$a->total}';
 $string['partialwarning'] = 'لا يمكن الوصول إلى بعض الملفات الموجودة في هذا التقديم إلا عن طريق التنزيل المباشر.';
+$string['pathtogserror'] = 'لم تتم تهيئة المسار المؤدي إلى ghostscript بشكل صحيح: {$a}';
 $string['pathtogspathdesc'] = 'يرجى ملاحظة أن التعليقات التوضيحية بتنسيق PDF تتطلب تعيين المسار إلى ghostscript في {$a}.';
 $string['pen'] = 'القلم';
 $string['pluginname'] = 'التعليق على PDF';

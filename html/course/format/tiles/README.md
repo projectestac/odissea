@@ -17,20 +17,21 @@ Once installed:
 
 ## Branches
 
-At the time of writing (August 2024) the following branches were being maintained:
+At the time of writing (October 2024) the following branches were being maintained:
 
-| Moodle version | Tiles branch     |
-|----------------|------------------|
-| 4.0            | moodle41b*       |
-| 4.1            | moodle41b        |
-| 4.2            | moodle42b        |
-| 4.3            | moodle43         |
-| 4.4            | master/moodle44  |
+| Moodle version | Tiles branch    |
+|----------------|-----------------|
+| 4.0            | moodle41b*      |
+| 4.1            | moodle41b*      |
+| 4.2            | moodle42b       |
+| 4.3            | moodle43        |
+| 4.4            | moodle44        |
+| 4.5            | master/moodle45 |
 
 (*The moodle41 branch was being used for both Moodle 4.0 and 4.1)
 
 ## Compatibility and Support
-This version of the plugin is compatible with Moodle 4.0/4.1.  Other versions are available for prior versions of Moodle.
+This version of the plugin is compatible with the Moodle version specified in the plugin's version.php file (under $plugin->supported).  Other versions are available for prior versions of Moodle.
 
 It supports the Privacy API.
 

@@ -31,10 +31,6 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return $CFG->wwwroot . '/theme/' . $this->page->theme->name . '/pix/favicon' . $type . '.ico';
     }
 
-    protected function render_context_header(\context_header $contextheader) {
-        return parent::render_context_header($contextheader);
-    }
-
     public function social_icons() {
         $cache = cache::make('core', 'htmlpurifier');
         if ($text = $cache->get('social_icons')) {
@@ -136,8 +132,8 @@ class core_renderer extends \theme_boost\output\core_renderer {
      */
     public function footer_logos(): string {
         $xtec_type = theme_xtecboost_get_xtec_type();
-        $logos = '<a href="http://ensenyament.gencat.cat/ca/inici/" class="brand ensenyament"><img src="' . $this->image_url('departament', 'theme') . '" alt="Departament d\'Educació" title="" /></a>';
-        $logos .= '<a href="http://xtec.gencat.cat" class="brand xtec"><img src="' . $this->image_url('xtec', 'theme') . '" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>';
+        $logos = '<a href="https://educacio.gencat.cat/ca/inici/" class="brand ensenyament"><img src="' . $this->image_url('departament', 'theme') . '" alt="Departament d\'Educació" title="" /></a>';
+        $logos .= '<a href="https://xtec.gencat.cat/ca/inici" class="brand xtec"><img src="' . $this->image_url('xtec', 'theme') . '" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>';
 
         if ($xtec_type === 'alexandria') {
             $href = 'https://alexandria.xtec.cat/';

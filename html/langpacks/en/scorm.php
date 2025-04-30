@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'en', version '4.1'.
+ * Strings for component 'scorm', language 'en', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -73,6 +73,7 @@ $string['browse'] = 'Preview';
 $string['browsed'] = 'Browsed';
 $string['browsemode'] = 'Preview mode';
 $string['browserepository'] = 'Browse repository';
+$string['cachedef_elements'] = 'Element cache';
 $string['calculatedweight'] = 'Calculated weight';
 $string['calendarend'] = '{$a} closes';
 $string['calendarstart'] = '{$a} opens';
@@ -94,7 +95,7 @@ $string['completionscorerequired_help'] = 'Enabling this setting will require a 
 $string['completionscorerequireddesc'] = 'Minimum score of {$a} is required for completion';
 $string['completionstatus_completed'] = 'Completed';
 $string['completionstatus_passed'] = 'Passed';
-$string['completionstatusallscos'] = 'Require all scos to return completion status';
+$string['completionstatusallscos'] = 'All SCOs must return completion status';
 $string['completionstatusallscos_help'] = 'Some SCORM packages contain multiple components or "scos" - when this is enabled all scos within the package must return the relevant lesson_status for this activity to be flagged complete.';
 $string['completionstatusrequired'] = 'Require status';
 $string['completionstatusrequired_help'] = 'Checking one or more statuses will require a user to achieve at least one of the checked statuses in order to be marked complete in this SCORM activity, as well as any other Activity Completion requirements.';
@@ -102,7 +103,7 @@ $string['completionstatusrequireddesc'] = 'Student must achieve at least one of 
 $string['confirmloosetracks'] = 'WARNING: The package seems to be changed or modified. If the package structure is changed, some users tracks may be lost during update process.';
 $string['contents'] = 'Contents';
 $string['coursepacket'] = 'Course package';
-$string['coursestruct'] = 'Course structure';
+$string['coursestruct'] = 'Content structure';
 $string['crontask'] = 'Background processing for SCORM';
 $string['currentwindow'] = 'Current window';
 $string['datadir'] = 'Filesystem error: Can\'t create course data directory';
@@ -117,12 +118,10 @@ $string['details'] = 'Track details';
 $string['directories'] = 'Show the directory links';
 $string['disabled'] = 'Disabled';
 $string['display'] = 'Display package';
-$string['displayactivityname'] = 'Display activity name';
-$string['displayactivityname_help'] = 'Whether or not to display the activity name above the SCORM player.';
 $string['displayattemptstatus'] = 'Display attempt status';
 $string['displayattemptstatus_help'] = 'This preference allows a summary of the users attempts to show in the course overview block in Dashboard and/or the SCORM entry page.';
 $string['displayattemptstatusdesc'] = 'Whether a summary of the user\'s attempts is shown in the course overview block in Dashboard and/or the SCORM entry page.';
-$string['displaycoursestructure'] = 'Display course structure on entry page';
+$string['displaycoursestructure'] = 'Display content structure on entry page';
 $string['displaycoursestructure_help'] = 'If enabled, the table of contents is displayed on the SCORM outline page.';
 $string['displaycoursestructuredesc'] = 'If enabled, the table of contents is displayed on the SCORM outline page.';
 $string['displaydesc'] = 'Whether to display the SCORM package in a new window.';
@@ -199,7 +198,7 @@ $string['hidebrowse_help'] = 'Preview mode allows a student to browse an activit
 $string['hidebrowsedesc'] = 'Preview mode allows a student to browse an activity before attempting it.';
 $string['hideexit'] = 'Hide exit link';
 $string['hidereview'] = 'Hide review button';
-$string['hidetoc'] = 'Display course structure in player';
+$string['hidetoc'] = 'Display content structure in player';
 $string['hidetoc_help'] = 'How the table of contents is displayed in the SCORM player';
 $string['hidetocdesc'] = 'This setting specifies how the table of contents is displayed in the SCORM player.';
 $string['highestattempt'] = 'Highest attempt';
@@ -215,7 +214,6 @@ $string['indicator:socialbreadth_help'] = 'This indicator is based on the social
 $string['indicator:socialbreadthdef'] = 'SCORM social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the SCORM activities during this analysis interval (Levels = No participation, Participant alone)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Info';
 $string['interactions'] = 'Interactions';
 $string['invalidactivity'] = 'SCORM activity is incorrect';
 $string['invalidhacpsession'] = 'Invalid HACP session';
@@ -224,6 +222,7 @@ $string['invalidmanifestresource'] = 'WARNING: The following resources were refe
 $string['invalidstatus'] = 'Invalid status';
 $string['invalidurl'] = 'Invalid URL specified';
 $string['invalidurlhttpcheck'] = 'Invalid URL specified. Debug message:<pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'This next upgrade step may take some time to complete, your site has {$a} SCORM track records that need to be migrated to the new table structure, please be patient as a progress bar is not able to be displayed.';
 $string['last'] = 'Last accessed on';
 $string['lastaccess'] = 'Last access';
 $string['lastattempt'] = 'Last completed attempt';
@@ -241,6 +240,7 @@ $string['maximumattemptsdesc'] = 'This preference sets the default maximum attem
 $string['maximumgradedesc'] = 'This preference sets the default maximum grade for an activity';
 $string['menubar'] = 'Show the menu bar';
 $string['min'] = 'Minimum score';
+$string['minimumscoregreater'] = 'Minimum score must be greater than 0.';
 $string['missing_attribute'] = 'Missing attribute {$a->attr} in tag {$a->tag}';
 $string['missing_tag'] = 'Missing tag {$a->tag}';
 $string['missingparam'] = 'A required parameter is missing or wrong';
@@ -332,7 +332,7 @@ $string['privacy:metadata:attempt'] = 'The attempt number';
 $string['privacy:metadata:scoes_track:element'] = 'The name of the element to be tracked';
 $string['privacy:metadata:scoes_track:value'] = 'The value of the given element';
 $string['privacy:metadata:scorm_aicc_session'] = 'The session information of the AICC HACP';
-$string['privacy:metadata:scorm_scoes_track'] = 'The tracked data of the SCOes belonging to the activity';
+$string['privacy:metadata:scorm_attempt'] = 'The SCORM attempts made by a user';
 $string['privacy:metadata:timemodified'] = 'The time when the tracked element was last modified';
 $string['privacy:metadata:userid'] = 'The ID of the user who accessed the SCORM activity';
 $string['protectpackagedownloads'] = 'Protect package downloads';

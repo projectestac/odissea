@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ja', version '4.1'.
+ * Strings for component 'license', language 'ja', version '4.4'.
  *
  * @package     license
  * @category    string
@@ -28,12 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['allrightsreserved'] = '不許複製・禁無断転載 (All rights reserved)';
 $string['cannotdeletecore'] = '標準ライセンスは削除できません。';
 $string['cannotdeletelicenseinuse'] = '現在、1つまたはそれ以上のファイルに割り当てられているため、ライセンスを削除できません。';
-$string['cc'] = 'クリエイティブ・コモンズ';
-$string['cc-nc'] = 'クリエイティブ・コモンズ - 表示-非営利';
-$string['cc-nc-nd'] = 'クリエイティブ・コモンズ - 表示-非営利-改変禁止';
-$string['cc-nc-sa'] = 'クリエイティブ・コモンズ - 表示-非営利-継承';
-$string['cc-nd'] = 'クリエイティブ・コモンズ - 表示-改変禁止';
-$string['cc-sa'] = 'クリエイティブ・コモンズ - 表示-継承';
+$string['cc'] = 'クリエイティブ・コモンズ - 3.0 国際';
+$string['cc-4.0'] = 'クリエイティブ・コモンズ - 4.0 国際';
+$string['cc-nc'] = 'クリエイティブ・コモンズ - 表示-非営利 3.0 国際';
+$string['cc-nc-4.0'] = 'クリエイティブ・コモンズ - 表示-非営利 4.0 国際';
+$string['cc-nc-nd'] = 'クリエイティブ・コモンズ - 表示-非営利-改変禁止 3.0 国際';
+$string['cc-nc-nd-4.0'] = 'クリエイティブ・コモンズ - 表示-非営利-改変禁止 40 国際';
+$string['cc-nc-sa'] = 'クリエイティブ・コモンズ - 表示-非営利-継承 3.0 国際';
+$string['cc-nc-sa-4.0'] = 'クリエイティブ・コモンズ - 表示-非営利-継承 4.0 国際';
+$string['cc-nd'] = 'クリエイティブ・コモンズ - 表示-改変禁止 3.0 国際';
+$string['cc-nd-4.0'] = 'クリエイティブ・コモンズ - 表示-改変禁止 40 国際';
+$string['cc-sa'] = 'クリエイティブ・コモンズ - 表示-継承 3.0 国際';
+$string['cc-sa-4.0'] = 'クリエイティブ・コモンズ - 表示-継承 4.0 国際';
 $string['licensenotfoundshortname'] = '省略名「 {$a} 」のライセンスが見つかりません。';
 $string['missinglicensesortorder'] = '1つまたはそれ以上のインストール済みライセンスが新しい並べ替え順で見つからないため、ライセンス並べ替え順を設定できません。';
 $string['public'] = 'パブリックドメイン';

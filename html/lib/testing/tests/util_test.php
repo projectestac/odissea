@@ -24,7 +24,7 @@ namespace core\testing;
  * @copyright  2023 Andrew Lyons <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class util_test extends \advanced_testcase {
+final class util_test extends \advanced_testcase {
     /**
      * Note: This test is required for the other two parts because the first time
      * a table is written to it may not have had the initial value reset.
@@ -38,11 +38,6 @@ class util_test extends \advanced_testcase {
             case 'mssql':
                 $this->markTestSkipped('MSSQL does not support sequences');
                 return;
-            case 'mysql':
-                $version = $DB->get_server_info();
-                if (version_compare($version['version'], '5.7.4', '<')) {
-                    return;
-                }
         }
 
         $this->resetAfterTest();

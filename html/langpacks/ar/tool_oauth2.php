@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ar', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'ar', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = 'الاتصال بحساب النظام';
 $string['createfromtemplate'] = 'إنشاء خدمة OAuth 2 من مظهر';
 $string['createfromtemplatedesc'] = 'اختر أحد مظاهر خدمة OAuth 2 أدناه لإنشاء خدمة OAuth بتكوين صالح لأحد أنواع الخدمات المعروفة. سيؤدي ذلك إلى إنشاء خدمة OAuth 2، مع جميع نقاط النهاية والمعاملات الصحيحة المطلوبة للمصادقة، على الرغم من أنك ستظل بحاجة إلى إدخال مُعرَّف العميل والسر للخدمة الجديدة قبل استعمالها.';
 $string['createnewendpoint'] = 'إنشاء نقطة نهاية جديدة للمصدر "{$a}"';
-$string['createnewfacebookissuer'] = 'إنشاء خدمة فيسبوك جديدة';
-$string['createnewgoogleissuer'] = 'إنشاء خدمة Google جديدة';
-$string['createnewissuer'] = 'إنشاء خدمة مخصصة جديدة';
-$string['createnewmicrosoftissuer'] = 'إنشاء خدمة Microsoft جديدة';
-$string['createnewnextcloudissuer'] = 'إنشاء خدمة Nextcloud جديدة';
 $string['createnewservice'] = 'إنشاء خدمة جديدة:';
 $string['createnewuserfieldmapping'] = 'إنشاء تعيين حقل مستخدم جديد للمصدر "{$a}"';
 $string['custom_service'] = 'مخصص';
@@ -112,6 +107,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'العرض في صفحة تسجيل الدخول بمثابة';
 $string['loginissuer'] = 'السماح بتسجيل الدخول';
 $string['microsoft_service'] = 'مايكروسوفت';
+$string['moodlenet_service'] = 'شبكة مودل';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'غير مهيأ';
 $string['notdiscovered'] = 'اكتشاف الخدمة غير ناجح';

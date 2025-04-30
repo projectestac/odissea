@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'es', version '4.1'.
+ * Strings for component 'geogebra', language 'es', version '4.4'.
  *
  * @package     geogebra
  * @category    string
@@ -83,7 +83,7 @@ $string['gradeit'] = 'Calificar';
 $string['grademethod'] = 'Método de calificación';
 $string['header_geogebra'] = 'Parámetros de GeoGebra';
 $string['height'] = 'Peso';
-$string['height_help'] = 'Valor en píxels.';
+$string['height_help'] = 'Valor en píxels. Debe ser mayor de cero';
 $string['highestattempt'] = 'Mejor intento';
 $string['httpnotallowed'] = 'Por el momento no está permitido usar archivos externos';
 $string['interfaceoptionsgrp'] = 'Interfaz de usuario';
@@ -166,4 +166,4 @@ $string['viewattempttab'] = 'Ver intento';
 $string['viewtab'] = 'Ver';
 $string['weight'] = 'Peso';
 $string['width'] = 'Ancho';
-$string['width_help'] = 'Valor en píxels. Si es cero o está vacío, el ancho de la actividad GeoGebra será el 100% del contenedor GeoGebra.';
+$string['width_help'] = 'Valor en píxels. Debe ser mayor de cero';

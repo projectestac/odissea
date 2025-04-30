@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_equation', language 'ar', version '4.1'.
+ * Strings for component 'tiny_equation', language 'ar', version '4.4'.
  *
  * @package     tiny_equation
  * @category    string
@@ -38,7 +38,7 @@ $string['librarygroup3_desc'] = 'أوامر TeX المدرجة في علامة �
 $string['librarygroup4'] = 'متقدم';
 $string['librarygroup4_desc'] = 'أوامر TeX المدرجة في علامة التبويب المتقدمة.';
 $string['modaltitle'] = 'محرر المعادلات';
-$string['pluginname'] = 'محرر المعادلات من Tiny';
+$string['pluginname'] = 'محرر المعادلات';
 $string['preview'] = 'استعراض المعادلة';
 $string['privacy:metadata'] = 'محرر المعادلات من TinyMCE لا يخزن أي بيانات شخصية.';
 $string['saveequation'] = 'حفظ المعادلة';

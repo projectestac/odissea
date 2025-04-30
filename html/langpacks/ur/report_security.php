@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ur', version '4.1'.
+ * Strings for component 'report_security', language 'ur', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -69,10 +69,6 @@ $string['check_guestrole_error'] = 'مہمان کا کردار "{$a}" غلط ط�
 $string['check_guestrole_name'] = 'مہمان کا کردار';
 $string['check_guestrole_notset'] = 'مہمان کا کردار متعین نہیں ہے۔';
 $string['check_guestrole_ok'] = 'مہمان کے کردار کی تعریف ٹھیک ہے۔';
-$string['check_mediafilterswf_details'] = '<p>خودکار swf ایمبیڈنگ بہت خطرناک ہے - کوئی بھی رجسٹرڈ صارف دوسرے سرور صارفین کے خلاف XSS حملہ کر سکتا ہے۔ براہ کرم اسے پروڈکشن سرورز پر غیر فعال کریں۔</p>';
-$string['check_mediafilterswf_error'] = 'فلیش میڈیا فلٹر فعال ہے - یہ زیادہ تر سرورز کے لیے بہت خطرناک ہے۔';
-$string['check_mediafilterswf_name'] = '.swf میڈیا فلٹر کو فعال کر دیا گیا';
-$string['check_mediafilterswf_ok'] = 'فلیش میڈیا فلٹر فعال نہیں ہے۔';
 $string['check_nodemodules_details'] = '<p>ڈائریکٹری <code>{$a->path}</code> Node.js ماڈیولز اور ان کے انحصار پر مشتمل ہے، جو عام طور پر NPM یوٹیلیٹی کے ذریعے انسٹال ہوتی ہے۔ ان ماڈیولز کی ضرورت مقامی موڈل ڈیولپمنٹ کے لیے ہو سکتی ہے، جیسے کہ گرنٹ فریم ورک استعمال کرنے کے لیے۔ موڈل سائٹ کو پروڈکشن میں چلانے کے لیے ان کی ضرورت نہیں ہے اور ان میں ممکنہ طور پر خطرناک کوڈ ہو سکتا ہے جو آپ کی سائٹ کو دور دراز کے حملوں کے لیے بے نقاب کرتا ہے۔ یا کم از کم اپنی ویب سرور کنفیگریشن میں اس تک ویب رسائی کو روک دیں۔</p>';
 $string['check_nodemodules_info'] = 'node_modules ڈائریکٹری عوامی سائٹس پر موجود نہیں ہونی چاہیے۔';
 $string['check_nodemodules_name'] = 'Node.js ماڈیول ڈائرکٹری';

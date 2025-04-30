@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ur', version '4.1'.
+ * Strings for component 'tool_mobile', language 'ur', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -77,7 +77,6 @@ $string['managefiletypes'] = 'فائل کی اقسام کا نظم کریں';
 $string['minimumversion'] = 'اگر ایپ کا ورژن متعین کیا گیا ہے (3.8.0 یا اس سے زیادہ)، پرانا ایپ ورژن استعمال کرنے والے کسی بھی صارف کو سائٹ تک رسائی کی اجازت دینے سے پہلے اپنی ایپ کو اپ گریڈ کرنے کا کہا جائے گا۔';
 $string['minimumversion_key'] = 'ایپ کا کم از کم ورژن درکار ہے';
 $string['mobileapp'] = 'موبائل ایپ';
-$string['mobileappconnected'] = 'موبائل ایپ منسلک ہے';
 $string['mobileappearance'] = 'موبائل کی ظاہری شکل';
 $string['mobileappenabled'] = 'اس سائٹ پر موبائل ایپ تک رسائی فعال ہے۔<br /><a href="{$a}">موبائل ایپ ڈاؤن لوڈ کریں</a>۔';
 $string['mobileappsubscription'] = 'موڈل ایپ سبسکرپشن';
@@ -98,7 +97,6 @@ $string['notificationsseemore'] = 'نوٹ: موڈل ایپ کے استعمال �
 $string['notificationssentnotifications'] = 'اطلاعات بھیج دی گئیں';
 $string['oauth2identityproviders'] = 'OAuth 2 شناخت فراہم کرنے والے';
 $string['offlineuse'] = 'آف لائن استعمال';
-$string['openusingembeddedbrowser'] = 'ایمبیڈڈ براؤزر کا استعمال کرکے کھولیں';
 $string['pluginname'] = 'موڈل ایپ ٹولز';
 $string['pluginnotenabledorconfigured'] = 'پلگ ان فعال یا کنفیگر نہیں ہے۔';
 $string['privacy:metadata:core_userkey'] = 'موجودہ صارف کے لیے آٹو لاگ ان کلید بنانے کے لیے استعمال کنندہ کی چابیاں۔';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'it', version '4.1'.
+ * Strings for component 'qtype_truefalse', language 'it', version '4.4'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -42,4 +42,5 @@ $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Vero/Falso\' non memo
 $string['privacy:preference:showstandardinstruction'] = 'Se visualizzare le istruzioni standard.';
 $string['selectone'] = 'Scegli una risposta:';
 $string['showstandardinstruction'] = 'Visualizza istruzioni standard';
+$string['showstandardinstruction_help'] = 'Opzione per visualizzare le istruzioni \'Seleziona una risposta:\' prima delle risposte vero/falso.';
 $string['true'] = 'Vero';

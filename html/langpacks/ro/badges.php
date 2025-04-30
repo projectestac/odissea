@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ro', version '4.1'.
+ * Strings for component 'badges', language 'ro', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = 'Acțiuni';
 $string['activate'] = 'Permite accesul';
 $string['activatesuccess'] = 'Accesul la ecusoane a fost permis cu succes.';
 $string['addalignment'] = 'Adăugați abilități externe sau standard';
-$string['addbackpack'] = 'Adăugați rucsac de insigne';
 $string['addbadge'] = 'Adaugă ecusoane';
 $string['addbadge_help'] = 'Selectează toate ecusoanele care trebuie adăugate acestei cerințe. Țineți apăsată tasta CTRL pentru a selecta mai multe elemente.';
 $string['addbadgecriteria'] = 'Adaugă criteriu ecuson';
@@ -103,8 +102,9 @@ $string['backpackbadgessettings'] = 'Schimbați setările rucsacului';
 $string['backpackbadgessummary'] = 'Ai afișate {$a->totalbadges} insigne din {$a->totalcollections} colecții.';
 $string['backpackcannotsendverification'] = 'Nu poate fi transmis e-mailul de verificare';
 $string['backpackconnected'] = 'Rucsacul este conectat';
-$string['backpackconnection'] = 'Conectare backpack';
-$string['backpackconnection_help'] = 'Conectarea la un rucsac îți permite să îți partajezi ecusoanele de pe acest site și să îți afișezi colecțiile publice de ecusoane din rucsac pe pagina ta de profil de pe acest site.';
+$string['backpackconnection'] = 'Conectare la un rucsac';
+$string['backpackconnection_connected'] = 'Rucsacul tău';
+$string['backpackconnection_help'] = 'Stocați și partajați ecusoanele dvs. din această platformă și afișați ecusoanele publice de pe alte site-uri web pe profilul dvs. de utilizator.';
 $string['backpackconnectioncancelattempt'] = 'Conectare utilizând o adresă de e-mail diferită';
 $string['backpackconnectionconnect'] = 'Conectare la backpack';
 $string['backpackconnectionnottested'] = 'Conexiunea nu poate fi testată pentru acest rucsac deoarece doar rucsacurile Open Badges v2.0 sunt acceptate.';
@@ -118,21 +118,27 @@ $string['backpackemail'] = 'Adresă e-mail';
 $string['backpackemail_help'] = 'Adresa de e-mail asociată cu backpack-ul dumneavoastră. Pe durata conectării dumneavoastră, orice ecuson dobândit pe acest site va fi asociat cu această adresă de e-mail.';
 $string['backpackemail_required'] = 'Adresa de email trebuie să fie completată';
 $string['backpackemailverificationpending'] = 'Verificare în așteptare';
-$string['backpackemailverifyemailbody'] = 'Bună,
+$string['backpackemailverifyemailbody'] = 'Bună {$a->userfirstname},
 
-A fost solicitată o nouă conectare la backpack-ul dumneavoastră OpenBadges  de către "{$a->sitename}" utilizând adresa dumneavoastră de e-mail.
+Aproape ai încheiat conectarea la rucsacul cu ecusoane pe \'{$a->sitename}\'.
 
-Pentru a confirma și activa conectarea la backpack-ul dumneavoastră, vă rugăm să mergeți pe
+Pentru a încheia conectarea la rucsac, verifică-ți adresa de email prin următorul link:
 
+{$a->buttonlink}
+
+
+Dacă link-ul nu funcționează, poți copia și lipi următorul URL în browser-ul tău:
 {$a->link}
 
-În majoritatea programelor de e-mail, aceasta ar trebui să fie afișat sub forma unui link scris cu albastru, pe care trebui doar să apăsați. Dacă acest lucru nu funcționează, atunci copiați și inserați adresa în spațiul destinat acesteia din partea superioară a browser-ului dumneavoastră web .
 
-Dacă aveți nevoie de asistență, vă rugăm să contactați administratorul site-ului,
+Dacă nu ai încercat să te conectezi la rucsacul cu ecusoanele, nu lua în considerare acest email.
+
+Pentru ajutor suplimentar, te rugăm să contactezi suportul de pe site,
+
 {$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}: Verificare prin e-mail a backpack-ului OpenBadges';
-$string['backpackemailverifypending'] = 'A fost transmis un e-mail de verificare către <strong>{$a}</strong>. Dați click pe link-ul de verificare din e-mail pentru a activa conectarea dumneavoastră la backpack.';
-$string['backpackemailverifysuccess'] = 'Vă mulțumim pentru verificarea adresei dumneavoastră de e-mail. În acest moment sunteți conectat la backpack-ul dumneavoastră.';
+$string['backpackemailverifypending'] = 'Ți-am trimis un email la <strong>{$a}</strong>. Dă click pe link-ul de verificare din e-mail pentru a-ți activa conectarea la backpack.';
+$string['backpackemailverifysuccess'] = 'Acum ești conectat la rucsac.';
 $string['backpackemailverifytokenmismatch'] = 'Token-ul din l-ul pe care ați dat click nu corespunde token-ului setat. Asigurați-vă că ați dat click pe  link-ul din cel mai recent e-mail primit.';
 $string['backpackexporterror'] = 'Nu se poate exporta ecusonul în rucsac';
 $string['backpackexporterrorwithinfo'] = 'Nu se poate exporta ecusonul "{$a->badgename}" în rucsac. Eroare: {$a->error}';
@@ -140,7 +146,6 @@ $string['backpackimport'] = 'Setările importului de ecusoane';
 $string['backpackimport_help'] = 'După ce conectarea la  backpack a fost realizată cu succes, ecusoanele din backpack-ul dumneavoastră pot fi afișate pe pagina de ecusoane și pe cea de profil.
 
 În acest loc puteți selecta colecțiile de ecusoane din backpack-ul dumneavoastră, pe care doriți să le afișați pe profil.';
-$string['backpackneedsupdate'] = 'Rucsacul conectat la acest profil nu se potrivește cu rucsacul site-ului. Trebuie să deconectați și să reconectați rucsacul.';
 $string['backpackprovider'] = 'Furnizor de rucsac';
 $string['backpacksettings'] = 'Setări rucsac';
 $string['backpackweburl'] = 'URL-ul backpack-ului';
@@ -154,7 +159,7 @@ $string['badgeprivacysetting_help'] = 'Ecusoanele dobândite pot fi afișate pe 
 Puteți gestiona separat setările de confidențialitate ale ecusonului pe pagina dumneavoastră de ecusoane.';
 $string['badgeprivacysetting_str'] = 'Afișează în mod automat ecusoanele dobândite pe pagina mea de profil';
 $string['badges'] = 'Ecusoane';
-$string['badgesalt'] = 'Salt la hașurarea adreselor de e-mail ale destinatarilor';
+$string['badgesalt'] = 'Cheia de securizare pentru generarea hash-ului adreselor de e-mail ale destinatarilor';
 $string['badgesalt_desc'] = 'Utilizarea hașurării permite serviciilor backpack să confirme câștigătorul ecusonului fără să fie nevoie să expună adresa de e-mail a acestuia. Această setare va utiliza numai numere și litere.
 
 Note: În scopul verificării destinatarului, vă rugăm să evitați modificarea acestei setări din momentul inițierii ecusoanelor.';
@@ -168,6 +173,7 @@ $string['badgestatus_3'] = 'Ecusonul este disponibil (blocat de criteriile de ac
 $string['badgestatus_4'] = 'Arhivat';
 $string['badgestoearn'] = 'Numărul de ecusoane disponibile: {$a}';
 $string['badgesview'] = 'Ecusoane curs';
+$string['badgetags'] = 'Etichete ale ecusonului';
 $string['badgeurl'] = 'Link către ecusoanele emise';
 $string['balignment'] = 'Criterii ({$a})';
 $string['bawards'] = 'Destinatari ({$a})';
@@ -191,6 +197,7 @@ $string['connected'] = 'Conectat';
 $string['connecting'] = 'În curs de conectare...';
 $string['contact'] = 'Contactați';
 $string['contact_help'] = 'O adresă de e-mail asociată cu emitentul ecusonului.';
+$string['copy'] = 'Copiere';
 $string['copyof'] = 'Copia {$a}';
 $string['course'] = 'Curs: {$a}';
 $string['coursebadges'] = 'Ecusoane';
@@ -291,8 +298,6 @@ $string['enablebadges'] = 'Activează ecusoane';
 $string['endorsement'] = 'Susținere';
 $string['error:backpackdatainvalid'] = 'Returnarea datelor în backpack nu este validă.';
 $string['error:backpackemailnotfound'] = 'E-mailul "{$a}" nu este asociat unui backpack. Este necesar <a href="http://backpack.openbadges.org">să creați un backpack</a> pentru acel cont sau să vă conectați cu o altă adresă de e-mail.';
-$string['error:backpacknotavailable'] = 'Site-ul dumneavoastră nu poate fi accesat de pe Internet, deci orice ecuson emis de pa acest site nu poate fi verificat de serviciile backpack externe.';
-$string['error:backpackproblem'] = 'A apărut o problemă la conectarea la fursnizorul dumneavoastră de servicii backpack. Vă rguăm să încercați mai târziu.';
 $string['error:badgeawardnotfound'] = 'Acest ecuson acordat nu poate fi verificat.  Este posibil ca acest ecuson să fi fost revocat.';
 $string['error:badgenotfound'] = 'Ecusonul nu a fost găsit';
 $string['error:cannotact'] = 'Ecusonul nu poate fi activat.';
@@ -344,7 +349,6 @@ $string['eventbadgelistingviewed'] = 'Lista ecusoanelor vizualizate';
 $string['eventbadgerevoked'] = 'Ecuson revizualizat';
 $string['eventbadgeupdated'] = 'Ecuson actualizat';
 $string['eventbadgeviewed'] = 'Ecuson vizualizat';
-$string['evidence'] = 'Evidență';
 $string['existingrecipients'] = 'Destinatari ecusonului existent';
 $string['existsinbackpack'] = 'Ecusonul există deja în backpack';
 $string['expired'] = 'Expirat';
@@ -358,6 +362,7 @@ $string['expireperiods'] = 'Acest ecuson expiră în {$a} secunde după ce a fos
 $string['expiresin'] = 'Expiră {$a}';
 $string['expirydate'] = 'Data expirării';
 $string['expirydate_help'] = 'Opțional, ecusoanele pot expira la o dată specifică sau data poate calculată pornind de la data la care ecusonul a fost emis utilizatorului.';
+$string['externalbackpack_required'] = 'Furnizorul rucsacului trebuie să fie completat';
 $string['externalbadges'] = 'Ecusoanele mele de pe alte site-uri web';
 $string['externalbadges_help'] = 'Această zonă afișează ecusoanele din backpack-ul dumneavoastră extern.';
 $string['externalbadgesp'] = 'Ecusoanele de pe alte site-uri web:';
@@ -402,6 +407,7 @@ Puteți gestiona ecusoanele aici făcându-le publice sau private pentru pagina 
 Puteți descărca toate ecusoanele sau fiecare ecuson în mod separat și le puteți salva pe calculatorul dumneavoastră. Ecusoanele descărcate pot fi adăugate la serviciul dumneavoastră backpack extern.';
 $string['localbadgesp'] = 'Ecusoane de la {$a}:';
 $string['localconnectto'] = 'Pentru a distribui ecusoanele în afara acestui site web, trebuie să vă <a href="{$a}">conectați la un backpack</a>.';
+$string['loginbackpacktitle'] = '<strong>Logare în rucsacul tău</strong>';
 $string['makeprivate'] = 'Faceți privat';
 $string['makepublic'] = 'Faceți public';
 $string['managebackpacks'] = 'Gestionați rucsacurile';
@@ -417,6 +423,7 @@ $string['month'] = 'Luni';
 $string['moredetails'] = 'Mai multe detalii';
 $string['mybackpack'] = 'Setările backpack-ului meu';
 $string['mybadges'] = 'Ecusoanele mele';
+$string['namewithlink'] = 'Denumire cu link';
 $string['never'] = 'Niciodată';
 $string['newbackpack'] = 'Adăugați un rucsac nou';
 $string['newbadge'] = 'Adaugă un nou ecuson';
@@ -432,6 +439,8 @@ $string['nocompetencies'] = 'Fără competențe selectate';
 $string['nocriteria'] = 'Criteriul pentru acest ecuson nu a fost configurat încă.';
 $string['noendorsement'] = 'Această insignă nu are nicio susținere.';
 $string['noexpiry'] = 'Acest ecuson nu are o dată de expirare.';
+$string['nomatchingawards'] = 'Nu există utilizatori corespunzători care au câștigat deja acest ecuson.';
+$string['nomatchingbadges'] = 'Nu există ecusoane corespunzătoare disponibile pe care să le câștige utilizatorii.';
 $string['noparamstoadd'] = 'Fără parametri suplimentari disponibili pentru a fi adăugați la această cerință a ecusonului.';
 $string['norelated'] = 'Această insignă nu are nicio insignă asociată.';
 $string['notacceptedrole'] = 'Rolul dumneavoastră curent nu se numără printre rolurile care pot emite manual acest ecuson.<br/>
@@ -505,8 +514,6 @@ $string['privacy:metadata:manualaward:issuerid'] = 'Identificatorul utilizatorul
 $string['privacy:metadata:manualaward:issuerrole'] = 'Poziția utilizatorului care a acordat ecusonul';
 $string['privacy:metadata:manualaward:recipientid'] = 'Identificatorul utilizatorului căruia i-a fost acordat manual ecusonul';
 $string['recipient'] = 'Destinatarul ecusonului';
-$string['recipientdetails'] = 'Detalii destinatar';
-$string['recipientidentificationproblem'] = 'Nu poate fi găsit destinatarul acestui ecuson printre urilizatorii existenți.';
 $string['recipients'] = 'Destinatari ecuson';
 $string['recipientvalidationproblem'] = 'Utilizatorul curent nu poate fi verificat ca destinatar al acestui ecuson.';
 $string['relatedbages'] = 'Ecusoane conexe';
@@ -531,8 +538,6 @@ $string['selectgroup_end'] = 'Sunt afișate numai colecțiile publice, <a href="
 $string['selectgroup_start'] = 'Selectați colecțiile din backpack-ul dumneavoastră pentru a fi afișate pe acest site:';
 $string['selecting'] = 'Cu ecusoanele selectate...';
 $string['setup'] = 'Configurează conexiune';
-$string['sitebackpack'] = 'Rucsac extern activ';
-$string['sitebackpack_help'] = 'Rucsacul extern la care utilizatorii se pot conecta de pe acest site. Rețineți că modificarea acestei setări după ce utilizatorii și-au conectat rucsacurile va necesita ca fiecare utilizator să meargă la pagina de setări a rucsacului și să se deconecteze, apoi să se reconecteze.';
 $string['sitebackpackdeleted'] = 'Site-ul rucsacului a fost șters.';
 $string['sitebackpacknotdeleted'] = 'Acest rucsac nu a putut fi șters deoarece este momentan implicit pe site';
 $string['sitebackpackwarning'] = 'Nu s-a putut conecta la rucsac. <br/> <br/> Verificați dacă setarea de administrator „Adresa de e-mail a emitentului de insignă” este adresa de e-mail validă pentru un cont de pe site-ul web al rucsacului. <br/> <br/> Verificați dacă „Parola emitentului insignei” din <a href="{$a->url}"> pagina de setări a rucsacului site-ului </a>, este parola corectă pentru contul de pe site-ul rucsacului. <br/> <br/> Rucsacul a returnat: „{$a->warning}”';
@@ -559,6 +564,8 @@ $string['statusmessage_2'] = 'Acest ecuson nu este în prezent disponibil pentru
 $string['statusmessage_3'] = 'Acest ecuson este în prezent disponibil pentru utilizatori, dar criteriile sale sunt blocate.';
 $string['statusmessage_4'] = 'Acest ecuson este în prezent arhivat.';
 $string['subject'] = 'Subiect mesaj';
+$string['tagarea_badge'] = 'Ecusoane';
+$string['tags'] = 'Tag-uri/Etichete';
 $string['targetcode'] = 'Cod';
 $string['targetcode_help'] = 'Un identificator unic de șir pentru referențierea abilității sau standardului extern în cadrul său.';
 $string['targetdescription'] = 'Descriere';
@@ -572,6 +579,7 @@ $string['targeturl_help'] = 'Un link către o pagină care descrie abilitatea sa
 $string['testbackpack'] = 'Rucsac de testare „{$a}”';
 $string['testsettings'] = 'Setări de testare';
 $string['type'] = 'Tip';
+$string['userbadges'] = 'Ecusoanele utilizatorului';
 $string['variablesubstitution'] = 'Substituirea variabilei în mesaje.';
 $string['variablesubstitution_help'] = 'În mesajul unui ecuson, anumite variabile pot fi inserate în subiectul și/ sau conținutul unui mesaj, astfel încât acestea să fie înlocuite cu valori reale în momentul trimiterii mesajului. Variabilele trebuie inserate în text exact în modul arătat mai jos. Pot fi utilizate următoarele variabile:
 
@@ -583,6 +591,7 @@ $string['variablesubstitution_help'] = 'În mesajul unui ecuson, anumite variabi
 
 %linkecuson%
 : Aceasta va fi înlocuită de adresa publică URL cu informații privind ecusonul emis.';
+$string['verifyemail'] = 'Verificare email';
 $string['version'] = 'Versiune';
 $string['version_help'] = 'Câmpul versiune poate fi utilizat pentru a urmări evoluția insignei. Dacă este specificat, versiunea este afișată pe pagina insignei.';
 $string['viewbadge'] = 'Vizualizare ecusoane emise';

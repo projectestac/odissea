@@ -50,6 +50,10 @@ export default class extends SectionBase {
             }
         }
 
+        if (this.section.component) {
+            return;
+        }
+
         const originalSingleSectionId = document.querySelector("ul.sections").dataset.originalsinglesectionid;
         const originalSingleSection = this.reactive.get("section", originalSingleSectionId);
         let singleSectionId;

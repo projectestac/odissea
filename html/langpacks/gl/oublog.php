@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'gl', version '4.1'.
+ * Strings for component 'oublog', language 'gl', version '4.4'.
  *
  * @package     oublog
  * @category    string
@@ -107,7 +107,6 @@ $string['re'] = 'Re: {$a}';
 $string['rss'] = 'RSS';
 $string['rssfeed'] = 'Fonte RSS';
 $string['savegrades'] = 'Gardar cualificacións';
-$string['searchblogs'] = 'Buscar blogs';
 $string['siteentries'] = 'Ver entradas do sitio';
 $string['summary'] = 'Resumo';
 $string['tags'] = 'Etiquetas';

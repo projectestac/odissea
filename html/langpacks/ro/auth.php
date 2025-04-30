@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ro', version '4.1'.
+ * Strings for component 'auth', language 'ro', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = 'Instrucţiuni pentru schimbarea parolei';
 $string['auth_changepasswordhelp_expl'] = 'Afişează instrucţiunile de recuperare a parolei utilizatorilor care şi-au uitat parola {$a}. Acestea vor fi afişate fie împreună cu, fie în locul <strong>URL schimbare parolă</strong> sau a paginii interne Moodle de schimbare a parolei.';
 $string['auth_changepasswordurl'] = 'URL schimbare parolă';
 $string['auth_changepasswordurl_expl'] = 'Specificaţi URL-ul către care vor fi direcţionaţi utilizatorii care şi-au uitat parola {$a}. Setaţi <strong>Utilizează pagina standard de schimbare a parolei</strong> pe <strong>Nu</strong>.';
-$string['auth_changingemailaddress'] = 'Aţi solicitat schimbarea adresei de email, din {$a->oldemail} în {$a->newemail}. Din motive de securitate, vă trimitem un email la noua adresă pentru a ne asigura că sunteţi titularul acesteia. Noua adresă de email va fi actualizată imediat după ce veţi deschide URL-ul pe care vi-l trimitem în email.';
+$string['auth_changingemailaddress'] = 'Aţi solicitat schimbarea adresei de email, din {$a->oldemail} în {$a->newemail}. Din motive de securitate, vă trimitem un email la noua adresă pentru a ne asigura că sunteţi titularul acesteia. Noua adresă de email va fi actualizată imediat după ce veţi deschide URL-ul pe care vi-l trimitem în email. Link-ul de confirmare va expira în <b>10 minutes</b>';
 $string['auth_common_settings'] = 'Setări comune';
 $string['auth_data_mapping'] = 'Mapare date';
 $string['auth_fieldlock'] = 'Blochează valoare';
@@ -44,6 +44,10 @@ $string['auth_fieldlocks'] = 'Blochează câmpuri utilizator';
 $string['auth_fieldlocks_help'] = '<p>Puteţi bloca câmpurile care conţin informaţii despre utilizator. Acest lucru este folositor pentru site-urile unde datele utilizatorilor sunt gestionate manual de către administratori sau sunt încărcate cu ajutorul funcţionalităţii "Încarcă utilizatori". Dacă blocaţi câmpuri obligatorii în Moodle, asiguraţi-vă că furnizaţi acele date atunci când creaţi conturi de utilizator, altfel acele conturi vor fi inutilizabile.</p><p>Puteţi seta modul de blocare pe \'Deblocat dacă e gol\' pentru a evita această problemă.</p>';
 $string['auth_fieldmapping'] = 'Maparea datelor ({$a})';
 $string['auth_invalidnewemailkey'] = 'Eroare: dacă încercaţi să confirmaţi o schimbare de adresă de email, este posibil să fi apărut o eroare la copierea URL-ului pe care vi l-am trimis prin email. Vă rugăm copiaţi adresa şi încercaţi din nou.';
+$string['auth_loginpasswordtoggle'] = 'Comutatorul de vizualizare a parolei';
+$string['auth_loginpasswordtoggle_desc'] = 'Afișează o pictogramă în câmpul parolă la conectare care le permite utilizatorilor să afișeze sau să ascundă parola introdusă.';
+$string['auth_loginrecaptcha'] = 'Activează reCAPTCHA pentru logare';
+$string['auth_loginrecaptcha_desc'] = 'Adăugați un element de formular de confirmare vizuală/audio la pagina de conectare. Acest lucru reduce riscul încercărilor de conectare nedorite. Consultați <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> pentru mai multe detalii.';
 $string['auth_multiplehosts'] = 'Se pot specifica mai multe host-uri SAU adrese (ex. host1.com;host2.com;host3.com) sau (ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Metoda de autentificare {$a} nu este configurată';
 $string['auth_outofnewemailupdateattempts'] = 'Aţi depăşit numărul permis de încercări de actualizare a adresei de email. Cererea Dvs. de actualizare a fost anulată.';

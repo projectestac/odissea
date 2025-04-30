@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', version '4.1'.
+ * Strings for component 'resource', language 'gl', version '4.4'.
  *
  * @package     resource
  * @category    string
@@ -101,15 +101,15 @@ $string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
 $string['printintro'] = 'Presentar a descrición do recurso';
 $string['printintroexplain'] = 'Presentar a descrición do recurso baixo o contido? É posíbel que algúns tipos de pantalla non presenten a descrición incluso aínda que estea activado.';
-$string['privacy:metadata'] = 'O engadido de recurso ficheiro non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de recurso ficheiro non almacena ningún dato persoal.';
 $string['resource:addinstance'] = 'Engadir un novo recurso';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
 $string['resourcecontent'] = 'Ficheiros e subcartafoles';
-$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
-$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
-$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
+$string['resourcedetails_sizedate'] = '{$a->size} · {$a->date}';
+$string['resourcedetails_sizetype'] = '{$a->size} · {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} · {$a->type} · {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} · {$a->date}';
 $string['search:activity'] = 'Ficheiro';
 $string['selectmainfile'] = 'Seleccione o ficheiro principal premendo na icona a carón do seu nome.';
 $string['showdate'] = 'Amosar a data de modificación/envío';

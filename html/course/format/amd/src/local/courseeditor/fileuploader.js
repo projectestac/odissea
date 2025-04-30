@@ -31,12 +31,12 @@
  */
 
 import Config from 'core/config';
-import ModalFactory from 'core/modal_factory';
+import ModalSaveCancel from 'core/modal_save_cancel';
 import ModalEvents from 'core/modal_events';
 import Templates from 'core/templates';
 import {getFirst} from 'core/normalise';
 import {prefetchStrings} from 'core/prefetch';
-import {get_string as getString, get_strings as getStrings} from 'core/str';
+import {getString, getStrings} from 'core/str';
 import {getCourseEditor} from 'core_courseformat/courseeditor';
 import {processMonitor} from 'core/process_monitor';
 import {debounce} from 'core/utils';
@@ -314,7 +314,6 @@ class HandlerManager {
                     this.lastHandlers[extension] ?? null
                 )
             ),
-            type: ModalFactory.types.SAVE_CANCEL,
             saveButtonText: getString('upload', 'moodle'),
         };
         // Create the modal.
@@ -346,10 +345,11 @@ class HandlerManager {
         let hasDefault = false;
         fileHandlers.forEach((handler, index) => {
             const isDefault = (defaultModule == handler.module);
+            const optionNumber = index + 1;
             data.handlers.push({
                 ...handler,
                 selected: isDefault,
-                labelid: `fileuploader_${data.uploadid}`,
+                labelid: `fileuploader_${data.uploadid}_${optionNumber}`,
                 value: index,
             });
             hasDefault = hasDefault || isDefault;
@@ -405,7 +405,7 @@ class HandlerManager {
      */
     modalBodyRenderedPromise(modalParams) {
         return new Promise((resolve, reject) => {
-            ModalFactory.create(modalParams).then((modal) => {
+            ModalSaveCancel.create(modalParams).then((modal) => {
                 modal.setRemoveOnClose(true);
                 // Handle body loading event.
                 modal.getRoot().on(ModalEvents.bodyRendered, () => {
@@ -493,7 +493,7 @@ async function loadErrorStrings(courseId) {
         {key: 'dndupload', component: 'core_error'},
         {key: 'dndunkownfile', component: 'core_error'},
     ];
-    window.console.log(allStrings);
+
     const loadedStrings = await getStrings(allStrings);
     allStrings.forEach(({key}, index) => {
         errors[key] = loadedStrings[index];

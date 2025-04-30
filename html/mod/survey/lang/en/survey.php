@@ -82,7 +82,7 @@ $string['cannotfindanswer'] = 'There are no answers for this survey yet.';
 $string['cannotfindquestion'] = 'Question doesn\'t exist';
 $string['cannotfindsurveytmpt'] = 'No survey templates found!';
 $string['completiondetail:submit'] = 'Submit answers';
-$string['completionsubmit'] = 'Student must make a submission';
+$string['completionsubmit'] = 'Make a submission';
 $string['ciqintro'] = 'While thinking about recent events in this class, answer the questions below.';
 $string['ciqname'] = 'Critical incidents';
 $string['ciq1'] = 'At what moment in class were you most engaged as a learner?';
@@ -281,8 +281,3 @@ $string['thanksforanswers'] = 'Thanks for answering this survey, {$a}';
 $string['time'] = 'Time';
 $string['notyetanswered'] = 'Not yet answered';
 $string['allquestionrequireanswer'] = 'All questions are required and must be answered.';
-
-// Deprecated since Moodle 4.0.
-$string['clicktocontinue'] = 'Click here to continue';
-$string['viewsurveyresponses'] = 'View {$a} survey responses';
-$string['allquestions'] = 'All questions in order, all students';

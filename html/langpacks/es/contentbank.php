@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'es', version '4.1'.
+ * Strings for component 'contentbank', language 'es', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a';
 $string['choosecontext'] = 'Elegir curso o categoría...';
-$string['close'] = 'Cerrar';
 $string['contentbank'] = 'Banco de contenidos';
 $string['contentbankpreferences'] = 'Preferencias del banco de contenidos';
+$string['contentcopied'] = 'Contenido copiado.';
+$string['contentcreated'] = 'Contenido creado.';
 $string['contentdeleted'] = 'El contenido ha sido eliminado.';
 $string['contentname'] = 'Nombre del contenido';
 $string['contentnotdeleted'] = 'Se encontró un error al intentar eliminar el contenido.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'El contenido ha sido renombrado.';
 $string['contentsmoved'] = 'Los contenidos del Banco de contenidos se movieron a {$a}.';
 $string['contenttypenoaccess'] = 'No puedes ver la instancia {$a}.';
 $string['contenttypenoedit'] = 'No puedes editar este contenido';
+$string['contentupdated'] = 'Contenido actualizado.';
 $string['contentvisibilitychanged'] = 'El contenido ahora es {$a}.';
 $string['contentvisibilitynotset'] = 'Se encontró un error al intentar configurar la visibilidad del contenido.';
 $string['contextnotallowed'] = 'Usted no tiene permitido acceder al banco de contenido en este contexto.';
+$string['copycontent'] = 'Copiar contenido';
+$string['copyof'] = 'Copia de {$a}';
 $string['deletecontent'] = 'Borrar contenido';
 $string['deletecontentconfirm'] = '¿ Estás seguro de eliminar el contenido <em>\'{$a->name}\'</em> y todos sus archivos asociados? Esta acción no puede deshacerse.';
 $string['deletecontentconfirmlinked'] = 'El contenido solamente será eliminado del Banco de contenido. Cualquier sitio que actualmente enlace hacia él será actualizado automáticamente para usar una copia del contenido en lugar del contenido.';
@@ -64,6 +68,7 @@ $string['more'] = 'Más';
 $string['name'] = 'Contenido';
 $string['nocontentavailable'] = 'Sin contenido disponible';
 $string['nocontenttypes'] = 'No hay tipos de contenido disponibles';
+$string['nopermissiontocopy'] = 'Usted no tiene permisos para copiar contenido.';
 $string['nopermissiontodelete'] = 'No tienes permiso para eliminar contenido';
 $string['nopermissiontomanage'] = 'No tiene permiso para administrar contenido';
 $string['notavailable'] = 'Lo sentimos, este contenido no está disponible.';

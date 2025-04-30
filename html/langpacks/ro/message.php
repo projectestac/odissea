@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ro', version '4.1'.
+ * Strings for component 'message', language 'ro', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Prieteni';
 $string['conversationactions'] = 'Meniul de acțiuni de conversație';
 $string['decline'] = 'Respinge';
 $string['defaultmessageoutputs'] = 'Setări de notificare';
-$string['defaults'] = 'Implicite';
 $string['deleteallconfirm'] = 'Sigur vrei să ștergi întreaga conversație? Nu va fi ștearsă și  pentru alți participanți la conversație.';
 $string['deleteallmessages'] = 'Șterge toate mesajele';
 $string['deleteallselfconfirm'] = 'Ești sigur că vrei să ștergi toată această conversație personală?';
@@ -97,11 +96,7 @@ $string['info'] = 'Informații despre utilizator';
 $string['isnotinyourcontacts'] = '{$a} nu este în contactele dumneavoastră';
 $string['loadmore'] = 'Încarcă mai mult';
 $string['loggedin'] = 'Online';
-$string['loggedin_help'] = 'Configurați modul în care doriți să primiți notificări când sunteți autentificat în Moodle';
-$string['loggedindescription'] = 'Când sunteți autentificat în Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoff_help'] = 'Configurați modul în care doriți să primiți notificări când nu sunteți autentificat în Moodle';
-$string['loggedoffdescription'] = 'Când nu sunteți conectat în Moodle';
 $string['managemessageoutputs'] = 'Preferințe de notificare implicite';
 $string['message'] = 'Mesaj';
 $string['messagecontactrequest'] = '{$a->user} solicită să fie adăugat ca persoană de contact. Accesați pagina <a href="{$a->url}"> solicitări de contact </a> pentru a răspunde la cerere';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Mesaj trimis la o persoană';
 $string['sendbulkmessagesingle'] = 'Trimite mesajul la o persoană';
 $string['sendcontactrequest'] = 'Trimiteți cererea de contact';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Trimitere"{$a->provider}"  via "{$a->processor}"';
 $string['sendingviaenabled'] = 'Se trimite "{$a->provider}" via "{$a->processor}" status-ul activat';
 $string['sendingvialocked'] = 'Sending "{$a->provider}" via "{$a->processor}" status-ul blocat';
-$string['sendingviawhen'] = 'Trimitere "{$a->provider}" via "{$a->processor}" când {$a->state}';
 $string['sendmessage'] = 'Trimite mesaj';
 $string['sendmessageto'] = 'Trimite mesaj la {$a}';
 $string['sendmessagetopopup'] = 'Trimite mesaj la {$a} - în fereastră nouă';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'Vizualizați notificarea completă';
 $string['viewmessageswith'] = 'Vizualizează mesajele cu {$a}';
 $string['viewnotificationresource'] = 'Mergi la: {$a}';
 $string['viewunreadmessageswith'] = 'Vizualizați mesajele necitite cu {$a}';
+$string['waitingforcontactaccept'] = 'Așteaptă să fie adăugat ca și contact';
 $string['wouldliketocontactyou'] = 'Dorește să vă contacteze';
 $string['writeamessage'] = 'Scrie un mesaj...';
 $string['you'] = 'Tu:';

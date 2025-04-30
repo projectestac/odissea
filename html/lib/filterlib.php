@@ -140,7 +140,7 @@ class filter_manager {
      * @param string $filtername The filter name, for example 'tex'.
      * @param context $context context object.
      * @param array $localconfig array of local configuration variables for this filter.
-     * @return moodle_text_filter The filter, or null, if this type of filter is
+     * @return ?moodle_text_filter The filter, or null, if this type of filter is
      *      not recognised or could not be created.
      */
     protected function make_filter_object($filtername, $context, $localconfig) {
@@ -473,7 +473,7 @@ abstract class moodle_text_filter {
      * @param array $options options passed to the filters
      * @return string the HTML content after the filtering has been applied.
      */
-    public abstract function filter($text, array $options = array());
+    abstract public function filter($text, array $options = array());
 
     /**
      * Filter text before changing format to HTML.
@@ -569,6 +569,12 @@ class filterobject {
 
     /** @var null|string once initialised, holds the mangled HTML to replace the regexp with. */
     public $workreplacementphrase = null;
+
+    /** @var null|callable hold a replacement function to be called. */
+    public $replacementcallback;
+
+    /** @var null|array data to be passed to $replacementcallback. */
+    public $replacementcallbackdata;
 
     /**
      * Constructor.
@@ -1099,32 +1105,49 @@ function filter_get_active_in_context($context) {
 
     $contextids = str_replace('/', ',', trim($context->path, '/'));
 
-    // The following SQL is tricky. It is explained on
-    // http://docs.moodle.org/dev/Filter_enable/disable_by_context.
-    $sql = "SELECT active.filter, fc.name, fc.value
-         FROM (SELECT f.filter, MAX(f.sortorder) AS sortorder
-             FROM {filter_active} f
-             JOIN {context} ctx ON f.contextid = ctx.id
-             WHERE ctx.id IN ($contextids)
-             GROUP BY filter
-             HAVING MAX(f.active * ctx.depth) > -MIN(f.active * ctx.depth)
-         ) active
-         LEFT JOIN {filter_config} fc ON fc.filter = active.filter AND fc.contextid = $context->id
-         ORDER BY active.sortorder";
-    $rs = $DB->get_recordset_sql($sql);
+    // Postgres recordset performance is much better with a limit.
+    // This should be much larger than anything needed in practice. The code below checks we don't hit this limit.
+    $maxpossiblerows = 10000;
+    // The key line in the following query is the HAVING clause.
+    // If a filter is disabled at system context, then there is a row with active -9999 and depth 1,
+    // so the -MIN is always large, and the MAX will be smaller than that and this filter won't be returned.
+    // Otherwise, there will be a bunch of +/-1s at various depths,
+    // and this clause verifies there is a +1 that deeper than any -1.
+    $rows = $DB->get_recordset_sql("
+            SELECT active.filter, fc.name, fc.value
+
+              FROM (
+                    SELECT fa.filter, MAX(fa.sortorder) AS sortorder
+                      FROM {filter_active} fa
+                      JOIN {context} ctx ON fa.contextid = ctx.id
+                     WHERE ctx.id IN ($contextids)
+                  GROUP BY fa.filter
+                    HAVING MAX(fa.active * ctx.depth) > -MIN(fa.active * ctx.depth)
+                   ) active
+         LEFT JOIN {filter_config} fc ON fc.filter = active.filter AND fc.contextid = ?
+
+          ORDER BY active.sortorder
+        ", [$context->id], 0, $maxpossiblerows);
 
     // Massage the data into the specified format to return.
-    $filters = array();
-    foreach ($rs as $row) {
+    $filters = [];
+    $rowcount = 0;
+    foreach ($rows as $row) {
+        $rowcount += 1;
         if (!isset($filters[$row->filter])) {
-            $filters[$row->filter] = array();
+            $filters[$row->filter] = [];
         }
         if (!is_null($row->name)) {
             $filters[$row->filter][$row->name] = $row->value;
         }
     }
+    $rows->close();
 
-    $rs->close();
+    if ($rowcount >= $maxpossiblerows) {
+        // If this ever did happen, which seems essentially impossible, then it would lead to very subtle and
+        // hard to understand bugs, so ensure it leads to an unmissable error.
+        throw new coding_exception('Hit the row limit that should never be hit in filter_get_active_in_context.');
+    }
 
     return $filters;
 }
@@ -1308,6 +1331,16 @@ function filter_get_global_states() {
     global $DB;
     $context = context_system::instance();
     return $DB->get_records('filter_active', array('contextid' => $context->id), 'sortorder', 'filter,active,sortorder');
+}
+
+/**
+ * Retrieve all the filters and their states (including overridden ones in any context).
+ *
+ * @return array filters objects containing filter name, context, active state and sort order.
+ */
+function filter_get_all_states(): array {
+    global $DB;
+    return $DB->get_records('filter_active');
 }
 
 /**

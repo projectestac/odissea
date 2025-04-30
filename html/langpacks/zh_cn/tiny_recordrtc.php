@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'zh_cn', version '4.1'.
+ * Strings for component 'tiny_recordrtc', language 'zh_cn', version '4.4'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -59,12 +59,13 @@ $string['insecurealert'] = '您的浏览器可能不允许此插件工作, 除�
 $string['insecurealert_title'] = '不安全的连接!';
 $string['maxfilesizehit'] = '您已达到文件上传的最大尺寸限制';
 $string['maxfilesizehit_title'] = '录制已停止';
-$string['norecordingfound'] = '好像出了问题, 似乎什么都没录下来';
+$string['norecordingfound'] = '出了问题, 似乎什么都没录下来';
 $string['norecordingfound_title'] = '找不到录制内容';
 $string['nowebrtc'] = '您的浏览器对 WebRTC 技术的支持有限或根本不支持，因此无法与此插件一起使用。请切换或升级您的浏览器。';
 $string['nowebrtc_title'] = '不支持 WebRTC';
 $string['onlyaudio'] = '仅限音频';
 $string['onlyvideo'] = '仅限视频';
+$string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'RecordRTC 插件不存储任何个人数据';
 $string['recordagain'] = '再次录制';
 $string['recordagain_desc'] = '您已经录制了一些内容。再次录制将删除此内容。您确定要重置录音吗？';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ca', version '4.1'.
+ * Strings for component 'qtype_ddimageortext', language 'ca', version '4.4'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Imatge de fons per a arrossegar-hi ítems';
 $string['dropzone'] = 'Zona de col·locació {$a}';
 $string['dropzoneheader'] = 'Zones de col·locació';
 $string['formerror_disallowedtags'] = 'No estan permeses les etiquetes HTML dins el text arrossegable.';
+$string['formerror_dragrequired'] = 'Heu d\'afegir almenys un element arrossegable a aquesta pregunta.';
+$string['formerror_droprequired'] = 'Heu de definir almenys una zona d\'arrossegament per a aquesta pregunta.';
 $string['formerror_multipledraginstance'] = 'Heu seleccionat aquesta imatge {$a} més d\'un cop com a elecció correcta per a una zona de destí, però no està definida com un element il·limitadament arrossegable.';
 $string['formerror_multipledraginstance2'] = 'Heu seleccionat aquesta imatge més d\'un cop com a elecció correcta per a una zona de destí, però no està definida com un element il·limitadament arrossegable.';
 $string['formerror_noallowedtags'] = 'El text descriptor d\'una imatge arrossegable no pot contenir etiquetes HTML.';

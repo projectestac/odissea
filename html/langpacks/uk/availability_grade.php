@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'uk', version '4.1'.
+ * Strings for component 'availability_grade', language 'uk', version '4.4'.
  *
  * @package     availability_grade
  * @category    string

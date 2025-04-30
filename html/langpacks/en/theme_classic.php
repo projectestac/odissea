@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'en', version '4.1'.
+ * Strings for component 'theme_classic', language 'en', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
 $string['presetfiles'] = 'Additional theme preset files';
-$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost">Presets repository</a> for presets that others have shared.';
+$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> for information on creating and sharing your own preset files, and see the <a href="https://moodle.net/search?q=boost+presets">Presets repository</a> for presets that others have shared.';
 $string['privacy:metadata'] = 'The Classic theme does not store any personal data.';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';

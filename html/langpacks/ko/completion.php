@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ko', version '4.1'.
+ * Strings for component 'completion', language 'ko', version '4.4'.
  *
  * @package     completion
  * @category    string
@@ -176,4 +176,3 @@ $string['viewcoursereport'] = '강좌 보고서 보기';
 $string['viewingactivity'] = '{$a} 를 보기';
 $string['writingcompletiondata'] = '이수 자료 기입';
 $string['xdays'] = '{$a} 일간';
-$string['yourprogress'] = '진도';

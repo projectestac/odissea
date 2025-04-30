@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'activequiz', language 'ar', version '4.1'.
+ * Strings for component 'activequiz', language 'ar', version '4.4'.
  *
  * @package     activequiz
  * @category    string
@@ -83,7 +83,7 @@ $string['groupworksettings'] = 'إعدادات المجموعة';
 $string['hide_correct_answer'] = 'إخفاء الإجابة الصحيحة';
 $string['hidenotresponded'] = 'إخفاء مالم يتم حله';
 $string['hidestudentresponses'] = 'إخفاء الردود';
-$string['highestsessiongrade'] = 'أعلى درجة للدورة';
+$string['highestsessiongrade'] = 'أعلى تقدير في الجلسات';
 $string['indvquestiontime'] = 'وقت السؤال';
 $string['indvquestiontime_help'] = '.وقت السؤال بالثواني';
 $string['instructorquizinst'] = '<p>لطفاً، إنتظر عند هذه الصفحة ريثما يقوم الطلبة بالاتصال. بمجرد النقر على <b>بدء الاختبار،</b> سيبدأ الاختبار بسؤاله الأول</p>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'de', version '4.1'.
+ * Strings for component 'format_topcoll', language 'de', version '4.4'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsection'] = 'Abschnitt hinzufügen';
 $string['arrow'] = 'Pfeil';
 $string['bulb'] = 'Glühlampe';
 $string['cachedef_activitymodulecountcache'] = 'Speichert die Anzahl der Teilnehmer/innen, die auf ein bestimmtes Modul in einem bestimmten Kurs zugreifen können.';
@@ -63,7 +62,6 @@ $string['coursesectionactivityfurtherinformationlesson'] = 'Lektionsinfos anzeig
 $string['coursesectionactivityfurtherinformationlessondesc'] = 'Im Kurs anzuzeigende Lektionsinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Testinfos anzeigen';
 $string['coursesectionactivityfurtherinformationquizdesc'] = 'Im Kurs anzuzeigende Testinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['creatingsection'] = 'Neuer Abschnitt wird erstellt ...';
 $string['ctreset'] = 'Rücksetzoptionen für komprimierte Abschnitte';
 $string['ctreset_help'] = 'Die Einstellungen können auf die Standardwerte für komprimierte Abschnitte zurückgesetzt werden.';
 $string['currentsection'] = 'Dieser Abschnitt';
@@ -74,6 +72,8 @@ $string['defaultdisplayblocksloc'] = 'Ort für den Block in der Anzeige';
 $string['defaultdisplayblocksloc_desc'] = 'Wählen Sie den Ort für die ausgewählten Blöcke, um sie anzuzeigen.';
 $string['defaultdisplayinstructions'] = 'Bedienhinweis';
 $string['defaultdisplayinstructions_desc'] = 'Diese Option legt fest, ob ein kurzer Bedienhinweis angezeigt wird.';
+$string['defaultflexiblemodules'] = 'Flexible Module';
+$string['defaultflexiblemodules_desc'] = 'Flexible Module verwenden?';
 $string['defaultheadingsub'] = 'Standardeinstellungen';
 $string['defaultheadingsubdesc'] = 'Standardeinstellungen, die auf Kursebene überschrieben werden können';
 $string['defaultlayoutcolumnorientation'] = 'Spaltenrichtung';
@@ -166,9 +166,6 @@ $string['displayinstructions'] = 'Bedienhinweis';
 $string['displayinstructions_help'] = 'Diese Option legt fest, ob ein kurzer Hinweis zur Bedienung angezeigt wird.';
 $string['donotshowdate'] = 'Datum nicht zeigen';
 $string['donotshowdate_help'] = 'Datum nicht anzeigen, wenn eine wochenbasierte Struktur verwendet wird und "Standard verwenden" nicht angekreuzt ist.';
-$string['duplicate'] = 'Duplizieren';
-$string['duplicateconfirm'] = 'Möchten Sie den Abschnitt wirklich duplizieren? Dies kann je nach Anzahl der Ressourcen eine Weile dauern.';
-$string['duplicating'] = 'Wird dupliziert …';
 $string['editsection'] = 'Abschnitt bearbeiten';
 $string['editsectionname'] = 'Abschnittstitel bearbeiten';
 $string['em0_0'] = '0.0em';
@@ -214,7 +211,6 @@ $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
 $string['enableadditionalmoddata'] = 'Zusätzliche Infos aktivieren';
 $string['enableadditionalmoddatadesc'] = 'Dies ist ein Schalter auf „Website-Ebene“, um die Aktivitätsinfos ein- oder auszuschalten. Es muss aktiviert sein, damit die entsprechenden Einstellungen auf Kursebene wirksam werden. Da diese Funktionalität rechenintensiv sein kann, wird dringend empfohlen, dass Sie vor der Verwendung auf einem Produktionssystem vollständige Tests durchführen. Hinweis: Löscht die Cache-Caches, wenn sie geändert werden.';
-$string['errornosectioninfo'] = 'Das angegebene Thema hat keine Infos.';
 $string['eye'] = 'Auge';
 $string['feedbackavailable'] = 'Feedback verfügbar';
 $string['folder'] = 'Verzeichnis';
@@ -224,11 +220,11 @@ $string['formatsettings'] = 'Standardwerte für das Format';
 $string['formatsettingsinformation'] = '<br />Klicken Sie auf das Symbol rechts, um die Einstellungen auf die Standardwerte zurückzusetzen.';
 $string['four'] = '4';
 $string['groundsignal'] = 'Massesignal';
-$string['hidefromothers'] = 'Abschnitt verbergen';
+$string['hidefromothers'] = 'Verbergen';
 $string['information'] = 'Infos';
 $string['informationchanges'] = 'Änderungen';
 $string['informationsettings'] = 'Einstellungen für Infos';
-$string['informationsettingsdesc'] = 'Infos zum Format "komprimierte Abschnitte"';
+$string['informationsettingsdesc'] = 'Infos zum Kursformat "Komprimierte Abschnitte"';
 $string['instructions'] = 'Hinweis: Ein Klick auf den Abschnittsnamen blendet den Inhalt ein oder aus.';
 $string['large'] = 'Groß';
 $string['layoutstructuredays'] = 'Tage';
@@ -241,6 +237,7 @@ $string['maincoursepage'] = 'Kursübersicht';
 $string['markedthissection'] = 'Dieser Abschnitt ist als aktueller Abschnitt markiert';
 $string['markthissection'] = 'Markieren Sie diesen Abschnitt als den aktuellen Abschnitt';
 $string['medium'] = 'Mittel';
+$string['newsection'] = 'Neuer Abschnitt';
 $string['newsectionname'] = 'Neuer Titel für Abschnitt {$a}';
 $string['numbersections'] = 'Anzahl der Abschnitte';
 $string['off'] = 'Aus';
@@ -250,17 +247,15 @@ $string['onesection'] = 'Nur ein Abschnitt';
 $string['onesection_help'] = 'Diese Option legt fest, dass immer nur ein Abschnitt angezeigt wird. Beim Bearbeiten des Kurses wird die Einstellung ignoriert, um Aktivitäten und Ressourcen bewegen zu können.';
 $string['page-course-view-topcoll'] = 'Jede Kurshauptseite im Format \'komprimierte Abschnitte\'';
 $string['page-course-view-topcoll-x'] = 'Jede Kursseite im Format \'komprimierte Abschnitte\'';
+$string['plugin_description'] = 'Der Kurs ist in auf- und zuklappbare Abschnitte unterteilt.';
 $string['pluginname'] = 'Komprimierte Abschnitte';
 $string['point'] = 'Punkt';
 $string['power'] = 'Plus / Minus';
 $string['privacy:metadata:preference:toggle'] = 'Auf-/Zuklappzustand innerhalb der Kurse';
 $string['privacy:request:preference:toggle'] = 'Für den Kurs mit der ID "{$a->name}" ist "{$a->value}" gespeichert, d.h. der Zustand ist "{$a->decoded}".';
-$string['progresscounter'] = 'Aktivitäten werden dupliziert ({$a->current}/{$a->size})';
-$string['progressfull'] = 'Abschnitt wird dupliziert ....';
 $string['radio'] = 'Radiobutton';
 $string['readme_desc'] = 'Weitere Infos zum Kursformat \'komprimierte Abschnitte\' finden Sie unter \'{$a->url}\' .';
 $string['readme_title'] = 'Weitere Infos';
-$string['rebuildcoursecache'] = 'Kurscache neu erstellen';
 $string['resetactivitymeta'] = 'Zusätzliche Modulinfo';
 $string['resetactivitymeta_help'] = 'Zusätzliche Modulinfo zurücksetzen, um den Standardwert für die Website einzustellen.';
 $string['resetallactivitymeta'] = 'Alle zusätzlichen Modulinfos';
@@ -294,6 +289,8 @@ $string['section0name'] = 'Allgemein';
 $string['sectionname'] = 'Abschnitt';
 $string['setcolour'] = 'Farbe';
 $string['setcolour_help'] = 'Farbeinstellung für Text, Hintergrund und Hintergrund bei Mauskontakt';
+$string['setflexiblemodules'] = 'Flexible Module';
+$string['setflexiblemodules_help'] = 'Flexible Module verwenden?';
 $string['setlayout'] = 'Layout festlegen';
 $string['setlayout_all'] = 'Umschalten, \'Thema x\' / \'Woche x\' / \'Tag x\' und Abschnittsnummer';
 $string['setlayout_default'] = 'Standard';
@@ -340,7 +337,7 @@ $string['setshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen, wenn zugekl
 $string['setshowsectionsummary_help'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte zugeklappt sind.';
 $string['settings'] = 'Einstellungen';
 $string['settingssettings'] = 'Einstellungen';
-$string['settingssettingsdesc'] = 'Einstellungen zum Format "komprimierte Abschnitte"';
+$string['settingssettingsdesc'] = 'Einstellungen zum Kursformat "Komprimierte Abschnitte"';
 $string['settogglealignment'] = 'Textausrichtung';
 $string['settogglealignment_help'] = 'Der Abschnittstitel kann links, zentriert oder rechts angezeigt werden.';
 $string['settoggleallenabled'] = '"Alle umschalten" aktiviert';
@@ -375,7 +372,7 @@ $string['setviewsinglesectionenabled'] = '"Nur ein Abschnitt" aktiviert';
 $string['setviewsinglesectionenabled_help'] = 'Die Option legt fest, dass "Nur ein Abschnitt" ist aktiviert.';
 $string['showadditionalmoddata'] = 'Zusätzliche Infos für {$a} im Kurs anzeigen';
 $string['showadditionalmoddata_help'] = 'Ermöglichen Sie allen Nutzer/innen, die Aktivitätsfrist anzuzeigen, und Trainer/innen, die Anzahl der Aktivitätseinreichungen auf der Kursseite anzuzeigen.';
-$string['showfromothers'] = 'Abschnitt zeigen';
+$string['showfromothers'] = 'Sichtbar machen';
 $string['sidepost'] = 'Nach';
 $string['sidepre'] = 'Vor';
 $string['small'] = 'Klein';

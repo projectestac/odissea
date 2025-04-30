@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/question/type/ddimageortext/tests/helper.php');
  * @copyright 2010 The Open University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class question_type_test extends \basic_testcase {
+final class question_type_test extends \basic_testcase {
     /** @var qtype_ddimageortext instance of the question type class to test. */
     protected $qtype;
 
@@ -44,11 +44,11 @@ class question_type_test extends \basic_testcase {
         $this->qtype = null;
     }
 
-    public function test_name() {
+    public function test_name(): void {
         $this->assertEquals($this->qtype->name(), 'ddimageortext');
     }
 
-    public function test_can_analyse_responses() {
+    public function test_can_analyse_responses(): void {
         $this->assertTrue($this->qtype->can_analyse_responses());
     }
 }

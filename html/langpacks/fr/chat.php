@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'fr', version '4.1'.
+ * Strings for component 'chat', language 'fr', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -111,7 +111,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Ne pas effacer les messages';
 $string['nextchattime'] = 'Horaire du prochain chat :';
-$string['nextsession'] = 'Prochaine session prévue';
 $string['no_complete_sessions_found'] = 'Aucune session complète trouvée.';
 $string['nochat'] = 'Aucun chat trouvé';
 $string['noguests'] = 'Ce salon n’est pas ouvert aux visiteurs anonymes';
@@ -160,7 +159,6 @@ $string['serverip'] = 'Adresse IP serveur';
 $string['servermax'] = 'Nombre max d’utilisateurs';
 $string['serverport'] = 'Port du serveur';
 $string['sessions'] = 'Sessions de chat';
-$string['sessionstart'] = 'La prochaine session de chat commencera le {$a->date}, (dans {$a->fromnow})';
 $string['sessionstartsin'] = 'La prochaine session de chat commencera dans {$a}';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tout le monde peut consulter les sessions précédentes';

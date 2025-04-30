@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_sketch', language 'pt', version '4.1'.
+ * Strings for component 'tiny_sketch', language 'pt', version '4.4'.
  *
  * @package     tiny_sketch
  * @category    string
@@ -32,5 +32,3 @@ $string['privacy:metadata'] = 'O módulo Sketch não guarda nem exporta quaisque
 $string['sketch_description'] = 'Sketch rápido no Moodle';
 $string['sketch_long_description'] = 'Desenhe e edite imagens dentro de qualquer editor no Moodle';
 $string['sketchtitle'] = 'Sketch e Guardar';
-$string['storeinrepo'] = 'Guardar como um ficheiro de imagem';
-$string['storeinrepo_desc'] = 'Se ativar esta opção, o sketch será guardado como se fosse um carregamento padrão de uma imagem em vez de uma imagem inline base64.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'ja', version '4.1'.
+ * Strings for component 'publication', language 'ja', version '4.4'.
  *
  * @package     publication
  * @category    string
@@ -34,8 +34,6 @@ $string['allowsubmissionsanddescriptionfromdatesummary'] = '課題詳細およ�
 $string['allowsubmissionsfromdate'] = '開始';
 $string['allowsubmissionsfromdate_import'] = '承認開始';
 $string['allowsubmissionsfromdate_upload'] = 'アップロード開始';
-$string['allowsubmissionsfromdateh'] = 'アップロード/承認の時間枠';
-$string['allowsubmissionsfromdateh_help'] = 'あなたは学生がファイルをアップロードできる期間またはファイル公開を承認する期間を設定できます。この期間中、学生はファイルを編集および公開の承認を取り消せます。';
 $string['allowsubmissionsfromdatesummary'] = 'この課題は <strong>{$a}</strong> からの提出を受け付けます。';
 $string['alwaysshowdescription'] = '常に説明を表示する';
 $string['alwaysshowdescription_help'] = 'この設定を無効にした場合、上の課題説明は「アップロード/承認開始」日にのみ学生に表示されます。';
@@ -47,8 +45,6 @@ $string['assignment'] = '課題';
 $string['assignment_help'] = 'ファイルをインポートする課題を選択してください。現在のところ、グループ課題はサポートされていないため選択できません。';
 $string['assignment_notfound'] = 'ファイルのインポート元の課題が見つかりませんでした。';
 $string['assignment_notset'] = '選択された課題はありません。';
-$string['autoimport'] = '自動的に課題と同期する';
-$string['autoimport_help'] = 'この設定を有効にした場合、対応する課題における新しい提出が学生フォルダモジュールに自動的にインポートされます。(任意) 新しいファイルに対して再度学生の承認を得る必要があります。';
 $string['availability'] = 'アップロード/承認の時間枠';
 $string['choose'] = '選択してください ...';
 $string['configautoimport'] = 'あなたが学生の提出物を自動的に学生フォルダインスタンスにインポートしたい場合、この設定を有効にしてください。この機能は学生フォルダインスタンスごとに個別に有効/無効に設定できます。';
@@ -74,20 +70,6 @@ $string['duedate_upload'] = 'アップロード終了';
 $string['duedatevalidation'] = '提出期限は提出許可日以降にする必要があります。';
 $string['edit_timeover'] = 'ファイルは変更期間中のみ編集できます。';
 $string['edit_uploads'] = 'ファイルを編集/アップロードする';
-$string['emailstudentsmail'] = '{a->username} が「 {$a->publication} 」に対する「 {$a->filename} 」の承認ステータスを {$a->apstatus} に変更しました ({$a->dayupdated} {$a->timeupdated})。
-
-次で確認できます:
-{a->url}';
-$string['emailstudentsmailhtml'] = '{a->username} が「 {$a->publication} 」に対する「 {$a->filename} 」の承認ステータスを {$a->apstatus} に変更しました ({$a->dayupdated} {$a->timeupdated})。
-<br /><br />
-<a href="{$a->url}">ウェブサイトで内容を確認できます</a>。';
-$string['emailteachermail'] = '{a->username} が「 {$a->publication} 」に対する「 {$a->filename} 」をアップロードしました ({$a->dayupdated} {$a->timeupdated})。
-
-次で確認できます:
-{a->url}';
-$string['emailteachermailhtml'] = '{a->username} が「 {$a->publication} 」に対する「 {$a->filename} 」をアップロードしました ({$a->dayupdated} {$a->timeupdated})。
-<br /><br />
-<a href="{$a->url}">ウェブサイトで内容を確認できます</a>。';
 $string['entiresperpage'] = '1ページあたりの参加者数';
 $string['eventpublicationapprovalchanged'] = '公開ファイルの承認が変更されました。';
 $string['eventpublicationduedateextended'] = '公開ファイルの期限が延長されました。';
@@ -102,10 +84,6 @@ $string['filedetails'] = '詳細';
 $string['filesofthesetypes'] = 'これらのタイプのファイルを追加できます:';
 $string['go'] = 'Go';
 $string['grantextension'] = '延長を許可する';
-$string['groupapprovalmode'] = 'グループ承認モード';
-$string['groupapprovalmode_all'] = 'すべてのグループメンバの承認を必要とする';
-$string['groupapprovalmode_help'] = 'ここであなたはファイルを表示するためにグループメンバ全員の承認が必要か、少なくとも1名のグループメンバの承認が必要か決定します。ファイルはグループメンバ全員または少なくとも1名のグループメンバの承認後にのみ表示されます。';
-$string['groupapprovalmode_single'] = '少なくとも1名のメンバの承認を必要とする';
 $string['guideline'] = '誰でも閲覧可:';
 $string['hidden'] = '秘匿';
 $string['importfrom_err'] = 'あなたがインポートしたい課題を選択する必要があります。';
@@ -133,12 +111,6 @@ $string['nothing_to_show_groups'] = '表示するものはありません - 利�
 $string['nothing_to_show_users'] = '表示するものはありません - 利用可能な学生はありません。';
 $string['nothingtodisplay'] = '表示するエントリはありません。';
 $string['notice'] = '注意:';
-$string['notice_groupimportrequireallapproval'] = 'あなたのファイルを誰でも利用できるようにするかどうか決定します。ファイルを公開するにはすべてのグループメンバの承認が必要です。';
-$string['notice_groupimportrequireoneapproval'] = 'あなたのファイルを誰でも利用できるようにするかどうか決定します。ファイルを公開するにはグループメンバ1名の承認で十分です。ファイルを承認する前にあなたのファイルを公開するかどうかグループ内で話し合ってください!';
-$string['notice_importnoapproval'] = '次のファイルは誰でも閲覧できます。';
-$string['notice_importrequireapproval'] = 'あなたのファイルを誰でも利用できるかどうかを決定します。';
-$string['notice_uploadnoapproval'] = 'すべてのファイルはアップロードされた時点ですぐに誰でも閲覧できます。教師は公開されたファイルをいつでも秘匿できる権利を留保します。';
-$string['notice_uploadrequireapproval'] = 'すべてのアップロードされたファイルは教師の確認後のみ閲覧可となります。';
 $string['notifications'] = '通知';
 $string['notifystudents'] = '承認変更に関して学生に通知する';
 $string['notifystudents_help'] = 'この設定を有効にした場合、学生はアップロードの承認ステータスが変更されるたびにメッセージを受信します。メッセージ送信方法は設定可能です。';
@@ -237,9 +209,5 @@ $string['visible'] = '閲覧可';
 $string['visibleforstudents'] = '誰でも閲覧可';
 $string['visibleforstudents_no'] = 'このファイルは学生には公開されません。';
 $string['visibleforstudents_yes'] = '学生はこのファイルを閲覧できます。';
-$string['warning_changefromobtainstudentapproval'] = 'この変更を実行した場合、あなたのみすべての学生にどのファイルを公開するか決定できます。学生に承認は求められません。承認済みとマークされたすべてのファイルは学生の決定とは無関係にすべての学生に公開されます。';
-$string['warning_changefromobtainteacherapproval'] = 'この設定を有効にした場合、すべてのアップロード済みファイルは他の参加者に公開されます。すべてのアップロード済みファイルは閲覧可能となります。あなたは特定の学生に対して手動でファイルを閲覧不可にできます。';
-$string['warning_changetoobtainstudentapproval'] = 'あなたがこの変更を実行した場合、学生は閲覧可マークが付けられたすべてのファイルに関して承認が求められます。ファイルは学生が承認した場合のみ、閲覧可能となります。';
-$string['warning_changetoobtainteacherapproval'] = 'この設定を無効にした場合、アップロードされたファイルは自動的に他の参加者から閲覧できなくなります。あなたはどのファイルを公開するか決定する必要があります。すでに公開されているファイルは表示されなくなります。';
 $string['withselected'] = '選択したものに対して ...';
 $string['zipusers'] = 'ZIPとしてダウンロードする';

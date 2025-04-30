@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'uk', version '4.1'.
+ * Strings for component 'tool_mobile', language 'uk', version '4.4'.
  *
  * @package     tool_mobile
  * @category    string
@@ -96,7 +96,6 @@ $string['managefiletypes'] = 'Керуйте типами файлів';
 $string['minimumversion'] = 'Якщо вказана версія програми (3.8.0 або вище), користувачам, які використовують старішу версію програми, буде запропоновано оновити програму, перш ніж отримати доступ до сайту.';
 $string['minimumversion_key'] = 'Необхідна мінімальна версія програми';
 $string['mobileapp'] = 'Мобільний додаток';
-$string['mobileappconnected'] = 'Мобільний додаток підключено';
 $string['mobileappearance'] = 'Мобільний зовнішній вигляд';
 $string['mobileappenabled'] = 'Цей сайт має доступ до мобільних додатків. <br /> <a href="{$a}"> Завантажте мобільний додаток </a>.';
 $string['mobileappsubscription'] = 'Підписка на додаток Moodle';
@@ -117,7 +116,6 @@ $string['notificationsseemore'] = 'Примітка. Статистика вик
 $string['notificationssentnotifications'] = 'Сповіщення надіслано';
 $string['oauth2identityproviders'] = 'Постачальники ідентифікації OAuth 2';
 $string['offlineuse'] = 'Використання в автономному режимі';
-$string['openusingembeddedbrowser'] = 'Відкрити за допомогою вбудованого браузера';
 $string['pluginname'] = 'Інструменти додатку Moodle';
 $string['pluginnotenabledorconfigured'] = 'Плагін не ввімкнено або не налаштовано.';
 $string['privacy:metadata:core_userkey'] = 'Ключі користувача, які використовуються для створення ключа автоматичного входу для поточного користувача.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ca', version '4.1'.
+ * Strings for component 'block_myoverview', language 'ca', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Menú desplegable d\'agrupaments';
 $string['aria:hiddencourses'] = 'Mostra els cursos suprimits de la vista';
 $string['aria:hidecourse'] = 'Suprimeix {$a} de la vista';
 $string['aria:inprogress'] = 'Mostra els cursos actuals';
-$string['aria:lastaccessed'] = 'Ordena els cursos per la data d\'últim accés';
 $string['aria:list'] = 'Canvia a la vista de llista';
 $string['aria:past'] = 'Mostra els cursos passats';
 $string['aria:removefromfavourites'] = 'Deixa de destacar';
-$string['aria:shortname'] = 'Ordena els cursos pel nom curt del curs';
 $string['aria:showcourse'] = 'Restaura {$a} en la vista';
 $string['aria:sortingdropdown'] = 'Ordena el menú';
 $string['aria:summary'] = 'Canvia a vista de resum';
-$string['aria:title'] = 'Ordena els cursos pel nom del curs';
 $string['availablegroupings'] = 'Filtres disponibles';
 $string['availablegroupings_desc'] = 'Filtres de cursos que els usuaris poden seleccionar. Si no se\'n selecciona cap, es mostraran tots els cursos.';
 $string['card'] = 'Targeta';
 $string['cards'] = 'Targetes';
-$string['clearsearch'] = 'Neteja la cerca';
 $string['completepercent'] = '{$a}% complet';
 $string['courseprogress'] = 'Progrés del curs:';
+$string['createcourse'] = 'Crea un curs';
 $string['customfield'] = 'Camp personalitzat';
 $string['customfiltergrouping'] = 'Camp utilitzable';
 $string['customfiltergrouping_nofields'] = 'Aquesta opció requereix que un camp personalitzat del curs estigui configurat i visible per tothom.';
@@ -93,3 +90,8 @@ $string['sortbyshortname'] = 'Ordena per nom curt';
 $string['sortbytitle'] = 'Ordena per nom del curs';
 $string['summary'] = 'Resum';
 $string['title'] = 'Nom del curs';
+$string['viewquickstart'] = 'Mostra la guia d\'inici ràpida';
+$string['zero_default_intro'] = 'Quan estiguis inscrit a un curs, apareixerà aquí';
+$string['zero_default_title'] = 'No estàs inscrit en cap curs';
+$string['zero_nocourses_title'] = 'Crea el teu primer curs';
+$string['zero_request_title'] = 'Sol·licita el teu primer curs';

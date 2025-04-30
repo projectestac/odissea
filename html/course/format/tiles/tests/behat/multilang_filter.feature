@@ -61,7 +61,7 @@ Feature: Multi lang filter works on course headings and content
   Scenario: Tile names are filtered
     When I log in as "teacher1"
     When I am on "Course 1" course homepage with editing mode on
-    And I click on "Edit tile name" "link" in the "li#section-1" "css_element"
+    And I click on "Edit section name" "link" in the "li#section-1" "css_element"
     And I set the field "New name for section Tile 1" to "<span lang=\"ES\" class=\"multilang\">Mosaico Español</span><span lang=\"EN\" class=\"multilang\">English Tile</span>"
     And I press enter
     And I wait until the page is ready

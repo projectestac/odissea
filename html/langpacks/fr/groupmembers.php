@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupmembers', language 'fr', version '4.1'.
+ * Strings for component 'groupmembers', language 'fr', version '4.4'.
  *
  * @package     groupmembers
  * @category    string
@@ -38,7 +38,7 @@ $string['nogroupsavailable'] = 'Il n’y a actuellement pas de groupe à affiche
 $string['noowngroupsavailable'] = 'Vous n’êtes actuellement assigné à aucun groupe.';
 $string['pluginadministration'] = 'Administration de Membres du Groupe';
 $string['pluginname'] = 'Membres du Groupe';
-$string['privacy:metadata'] = 'L’activité Membres du Groupe n’affiche que les informations sur les groupes, mais elle ne stocke ni ne modifie aucune donnée personnelle. Les groupes et groupements existants sont stockés ailleurs dans la base de données.';
+$string['privacy:metadata'] = 'L’activité Membres du Groupe n’affiche que les informations sur les groupes, mais elle n’enregistre ni ne modifie aucune donnée personnelle. Les groupes et groupements existants sont stockés ailleurs dans la base de données.';
 $string['setting_adminsettingsheading'] = 'Paramètres de Membres du Groupe';
 $string['setting_defaultsheading'] = 'Paramètres par défaut de Membres du Groupe';
 $string['setting_showemaildefault'] = 'Afficher les adresses de courriel';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ro', version '4.1'.
+ * Strings for component 'label', language 'ro', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Participantul a atins acest procen
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Adaugă o nouă zonă de text și conținut media';
 $string['label:view'] = 'Vizualizare zona de text și conținut media';
+$string['labelname'] = 'Titlul în indexul cursului';
+$string['labelname_help'] = 'Titlul este folosit doar pentru a identifica resursa Text și media din Indexul cursului și pentru finalizarea activității. Dacă îl lăsați gol, un titlu va fi generat automat utilizând primele caractere ale textului.';
 $string['labeltext'] = 'Text';
 $string['modulename'] = 'Zonă de text și conținut media';
 $string['modulename_help'] = 'Zona text și media vă permite să afișați text și multimedia pe pagina cursului.

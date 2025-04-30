@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ja', version '4.1'.
+ * Strings for component 'tool_task', language 'ja', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'アドホック';
 $string['adhocempty'] = 'アドホックタスクキューは空です。';
-$string['adhocqueueold'] = '{$a->max} 以上の最も古いタスクは {$a->age} です。';
+$string['adhocqueueold'] = '{$a->max} 以上の最も古い未処理のタスクは {$a->age} です。';
 $string['adhocqueuesize'] = 'アドホックタスクキューに {$a} 件のタスクがあります。';
 $string['adhoctaskid'] = 'アドホックタスクID: {$a}';
+$string['adhoctaskrun'] = 'アドホックタスク実行開始';
 $string['adhoctasks'] = 'アドホックタスク';
-$string['asap'] = '早急に';
+$string['adhoctasksdue'] = 'アドホックタスク期限';
+$string['adhoctasksfailed'] = 'アドホックタスク失敗';
+$string['adhoctasksfuture'] = '今後のアドホックタスク';
+$string['adhoctasksrunning'] = '実行中アドホックタスク';
+$string['asap'] = '<abbr title="早急に">早急に</abbr>';
+$string['backtoadhoctasks'] = 'アドホックタスクに戻る';
 $string['backtoscheduledtasks'] = 'スケジュールタスクに戻る';
 $string['blocking'] = 'ブロッキング';
 $string['cannotfindthepathtothecli'] = '実行可能なPHP CLIパスを見つけることができないため、タスクの実行は中断されました。サイト管理/サーバ/システムパスで「PHP CLIのパス」を設定してください。';
 $string['checkadhocqueue'] = 'アドホックタスクキュー';
 $string['checkcronrunning'] = 'Cron動作中';
+$string['checklongrunningtaskcount'] = '長時間実行タスク: {$a}';
+$string['checklongrunningtasks'] = '長時間実行';
 $string['checkmaxfaildelay'] = 'タスク最大遅延';
 $string['classname'] = 'クラス名';
 $string['clearfaildelay_confirm'] = '本当にタスク「 {$a} 」の失敗時の待機をクリアしてもよろしいですか? 待機をクリアした後、タスクは通常のスケジュールに従って実行されます。';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'スケジュールタスクを編集する: {$a}'
 $string['enablerunnow'] = 'スケジュールタスクの「今すぐ実行する」を許可する';
 $string['enablerunnow_desc'] = '定期的な実行を待つのではなく、管理者が個別のスケジュールタスクを今すぐ実行できるようにします。この機能ではシステムパスに「PHP CLIのパス」 (pathtophp) を設定する必要があります。タスクはウェブサーバ上で実行されるため、潜在的なパフォーマンスの問題を避ける目的でこの機能を無効にしてもよいでしょう。';
 $string['faildelay'] = '失敗時の待機';
+$string['failed'] = '失敗';
 $string['fromcomponent'] = '次のコンポーネントから: {$a}';
 $string['hostname'] = 'ホスト名';
 $string['lastcronstart'] = '前回のcron実行からの時間: {$a}';
 $string['lastruntime'] = '最近の実行';
 $string['lastupdated'] = '最終更新日時 {$a}';
 $string['nextruntime'] = '次の実行';
+$string['noclassname'] = 'クラス名が指定されていません。';
+$string['notasks'] = '実行するタスクがありません。';
+$string['payload'] = 'ペイロード';
 $string['pid'] = 'PID';
 $string['plugindisabled'] = 'プラグイン無効';
 $string['pluginname'] = 'スケジュールタスク設定';
 $string['privacy:metadata'] = 'スケジュールタスク設定プラグインはいかなる個人データも保存しません。';
 $string['resettasktodefaults'] = 'スケジュールタスクをデフォルトにリセットする';
 $string['resettasktodefaults_help'] = 'これでローカルの変更すべてが破棄されます。また、このタスクのスケジュールはオリジナル設定に戻されます。';
+$string['run_adhoctasks'] = 'アドホックタスクを実行する';
+$string['runadhoc'] = '今すぐアドホックタスクを実行しますか?';
+$string['runadhoc_confirm'] = 'タスクはウェブサーバ上で実行されるため、完了までに時間を要する場合があります。';
+$string['runadhoctask'] = '「 {$a->task} 」タスクを実行する (タスクID: {$a->taskid})';
+$string['runadhoctasks'] = 'すべての「 {$a->task} 」タスクを実行する';
+$string['runadhoctasksfailed'] = '「 {$a->task} 」タスクの実行に失敗しました。';
 $string['runagain'] = '再度実行する';
+$string['runclassname'] = 'すべてを実行する';
+$string['runclassnamefailedonly'] = 'すべての失敗を実行する';
+$string['runningalltasks'] = 'すべてのタスクを実行する';
+$string['runningfailedtasks'] = '失敗タスクを実行する';
 $string['runningtasks'] = 'タスク実行中';
 $string['runnow'] = '今すぐ実行する';
 $string['runnow_confirm'] = '本当にタスク「 {$a} 」を今すぐ実行してもよろしいですか? タスクはウェブサーバ上で実行されて完了までに時間を要します。';
@@ -72,11 +94,19 @@ $string['runpattern'] = '実行パターン';
 $string['scheduled'] = 'スケジュール';
 $string['scheduledtaskchangesdisabled'] = 'スケジュールタスク一覧の修正はMoodle設定で禁止されています。';
 $string['scheduledtasks'] = 'スケジュールタスク';
+$string['showall'] = 'すべてを表示する';
+$string['showfailedonly'] = '失敗のみ表示する';
+$string['showsummary'] = 'アドホックタスク概要を表示する';
+$string['slowtask'] = 'タスクは {$a} 以上実行されています。';
 $string['started'] = '開始';
+$string['taskage'] = '実行時間';
+$string['taskdetails'] = '{$a->time} (最大 {$a->maxtime}) 以上実行されているタスク: {$a->count}';
 $string['taskdisabled'] = 'タスク無効';
 $string['taskfailures'] = '{$a} 件のタスクが失敗しました。';
+$string['taskid'] = 'タスクID';
 $string['tasklogs'] = 'タスクログ';
 $string['tasknofailures'] = '失敗したタスクはありません。';
+$string['taskrunningtime'] = 'タスクは {$a} 実行されました。';
 $string['taskscheduleday'] = '日';
 $string['taskscheduleday_help'] = 'タスクスケジュールの日フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
 

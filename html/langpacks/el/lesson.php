@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', version '4.1'.
+ * Strings for component 'lesson', language 'el', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -148,7 +148,7 @@ $string['correctresponse'] = 'Σωστή ανταπόκριση';
 $string['createaquestionpage'] = 'Δημιουργία μιας σελίδας ερώτησης';
 $string['credit'] = 'Βαθμός';
 $string['customscoring'] = 'Ατομικός τρόπος βαθμολόγησης';
-$string['customscoring_help'] = 'Αν ενεργοποιηθεί, τότε σε κάθε απάντηση μπορεί να δοθεί μια αριθμητική τιμή βαθμών (θετική ή αρνητική).';
+$string['customscoring_help'] = 'Αν ενεργοποιηθεί, τότε σε κάθε απάντηση μπορεί να δοθεί μια ακέραια αριθμητική τιμή βαθμών (θετική ή αρνητική).';
 $string['deadline'] = 'Προθεσμία';
 $string['defaultessayresponse'] = 'Η έκθεσή σας θα βαθμολογηθεί από τον διδάσκοντά σας.';
 $string['deleteallattempts'] = 'Διαγραφή όλων των προσπαθειών της διδασκαλίας';
@@ -542,7 +542,7 @@ $string['savechangesandeol'] = 'Αποθήκευση των αλλαγών κα�
 $string['saveoverrideandstay'] = 'Αποθήκευση και εισαγωγή κι άλλης παράκαμψης';
 $string['savepage'] = 'Αποθήκευση σελίδας';
 $string['score'] = 'Το σκορ';
-$string['score_help'] = 'Το σκορ χρησιμοποιείται μόνο όταν είναι ενεργοποιημένη η προσαρμοσμένη βαθμολόγηση. Σε κάθε απάντηση μπορεί να δοθεί αριθμητική τιμή (θετική ή αρνητική).';
+$string['score_help'] = 'Όταν έχει ενεργοποιηθεί η προσαρμοσμένη βαθμολόγηση στις ρυθμίσεις διδασκαλίας, τότε για κάθε απάντηση μπορεί να εισαχθεί ένας ακέραιος αριθμός (θετικός ή αρνητικός).';
 $string['scores'] = 'Τα σκορ';
 $string['search:activity'] = 'Διδασκαλία - πληροφορίες δραστηριότητας';
 $string['secondpluswrong'] = 'Όχι ακριβώς. Θέλετε να δοκιμάσετε ξανά;';

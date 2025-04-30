@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'en', version '4.1'.
+ * Strings for component 'pdfannotator', language 'en', version '4.4'.
  *
  * @package     pdfannotator
  * @category    string
@@ -443,7 +443,8 @@ $string['subtitleforreportcommentform'] = 'Your message for the course manager';
 $string['successfullyEdited'] = 'Changes saved';
 $string['successfullyHidden'] = 'Participants now see this comment as hidden.';
 $string['successfullyRedisplayed'] = 'The comment is visible to participants once more';
-$string['successfullySubscribed'] = 'Your subscription to the question was registered.';
+$string['successfullySubscribed'] = 'Subscribed to question.';
+$string['successfullySubscribednotify'] = 'Your subscription to the question was registered.';
 $string['successfullyUnsubscribed'] = 'Your subscribtion was cancelled.';
 $string['successfullyUnsubscribedPlural'] = 'Your subscribtion was cancelled. All {$a} answers to the question were removed from this table.';
 $string['successfullyUnsubscribedSingular'] = 'Your subscribtion to the question was cancelled and the only answer removed from this table.';

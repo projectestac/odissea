@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', version '4.1'.
+ * Strings for component 'webservice', language 'it', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -147,22 +147,7 @@ $string['postrestparam'] = 'Codice PHP per REST (POST request)';
 $string['potusers'] = 'Utenti non autorizzati';
 $string['potusersmatching'] = 'Utenti non autorizzati che corrispondono';
 $string['print'] = 'Stampa tutto';
-$string['privacy:metadata:serviceusers'] = 'Elenco degli utenti che possono usare un determinato servizio esterno.';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'IP limitato per usare il servizio.';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Data e ora di creazione del record.';
-$string['privacy:metadata:serviceusers:userid'] = 'ID dell\'utente.';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Data di scadenza della validità dell\'autorizzazione.';
-$string['privacy:metadata:tokens'] = 'Record dei token per interagire con Moodle tramite i servizi web o le app di Moodle.';
-$string['privacy:metadata:tokens:creatorid'] = 'ID dell\'utente che ha creato il token.';
-$string['privacy:metadata:tokens:iprestriction'] = 'IP limitato per usare il token.';
-$string['privacy:metadata:tokens:lastaccess'] = 'Data e ora dell\'ultimo utilizzo del token.';
-$string['privacy:metadata:tokens:privatetoken'] = 'Token privato usato occasionalmente per validare determinate operazioni, ad esempio SSO.';
-$string['privacy:metadata:tokens:timecreated'] = 'Data e ora di creazione del token.';
-$string['privacy:metadata:tokens:token'] = 'Token dell\'utente.';
-$string['privacy:metadata:tokens:tokentype'] = 'Tipo di token.';
-$string['privacy:metadata:tokens:userid'] = 'ID dell\'utente a cui appartiene il token.';
-$string['privacy:metadata:tokens:validuntil'] = 'Data di scadenza della validità del token.';
-$string['privacy:request:notexportedsecurity'] = 'Non esportato per motivi di sicurezza';
+$string['privacy:metadata'] = 'Le API webservice non memorizzano dati personali';
 $string['protocol'] = 'Protocollo';
 $string['removefunction'] = 'Rimuovi';
 $string['removefunctionconfirm'] = 'Vuoi rimuovere la funzione "{$a->function}" dal servizio "{$a->service}"?';
@@ -211,11 +196,16 @@ $string['testwithtestclient'] = 'Prova il funzionamento del servizio';
 $string['testwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. È possibile utilizzare un protocollo abilitato con l\'autenticazione via token.<strong>Attenzione: la funzione SARA\' REALMENTE ESEGUITA, fare molta attenzione su cosa si sceglie di provare.</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Autenticazione token';
+$string['tokencopied'] = 'Testo copiato nella clipboard.';
 $string['tokencreatedbyadmin'] = 'Può essere reimpostata solo da un amministratore (*)';
 $string['tokencreator'] = 'Creatore';
 $string['tokenfilter'] = 'Filtro token';
 $string['tokenfilterreset'] = 'Visualizza tutti i token';
 $string['tokenfiltersubmit'] = 'Visualizza solo i token corrispondenti';
+$string['tokenname'] = 'Nome';
+$string['tokennamehint'] = 'Se non si inserisce un nome, sarà utilizzato un nome generato casualmente.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copiare il token adesso. Non sarà più visualizzato una volta cambiata la pagina.';
 $string['unknownoptionkey'] = 'L\'option key ({$a}) è sconosciuta';
 $string['unnamedstringparam'] = 'Un parametro stringa è privo di nome.';
 $string['updateusersettings'] = 'Aggiorna';
@@ -226,12 +216,11 @@ $string['userasclientsdescription'] = 'I passi che seguono chiariscono le impost
 $string['usermissingcaps'] = 'Privilegi mancanti: {$a}.';
 $string['usernameorid'] = 'Username / User id';
 $string['usernameorid_help'] = 'Inserisci un username o un user id';
-$string['usernameoridnousererror'] = 'Non sono stati trovati utenti con questo username/user id.';
-$string['usernameoridoccurenceerror'] = 'Sono stati trovati più utenti con lo stesso username. Per favore inserisci l\'ID dell\'utente.';
 $string['usernotallowed'] = 'L\'utente non è autorizzato ad usare questo servizio. Puoi autorizzarlo nella pagina {$a} di amministrazione degli utenti autorizzati';
 $string['userservices'] = 'Servizi utente: {$a}';
 $string['usersettingssaved'] = 'Le impostazioni utente sono state salvate';
 $string['validuntil'] = 'Valido fino';
+$string['validuntil_empty'] = 'Il token non ha data di scadenza';
 $string['validuntil_help'] = 'Dopo la data impostata l\'utente non potrà più accedere al servizio.';
 $string['webservice'] = 'Web service';
 $string['webservices'] = 'Web service';

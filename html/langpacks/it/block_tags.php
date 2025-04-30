@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'it', version '4.1'.
+ * Strings for component 'block_tags', language 'it', version '4.4'.
  *
  * @package     block_tags
  * @category    string
@@ -31,7 +31,7 @@ $string['configtitle'] = 'Titolo del blocco tag';
 $string['defaultdisplay'] = 'Visualizza tag';
 $string['disabledtags'] = 'I tag sono disabilitati';
 $string['pluginname'] = 'Tag';
-$string['privacy:metadata'] = 'Il blocco Tag visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Tag visualizza solamente dati memorizzati da altri componenti.';
 $string['recursivecontext'] = 'Includi contesti figlio';
 $string['recursivecontext_help'] = 'Deselezionando l\'impostazione, saranno visualizzati solo i tag associati ad elementi nel contesto di riferimento escludendo i contesti sottostanti. In questo modo sarà ad esempio possibile cercare nel contesto del corso senza cercare nelle attività del corso.';
 $string['standardonly'] = 'Solo standard';

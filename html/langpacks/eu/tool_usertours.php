@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'eu', version '4.1'.
+ * Strings for component 'tool_usertours', language 'eu', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'Urrats bakoitza jomugaren gainean, azpian, ezkerrea
 
 Urratsa orri zehatz batean ezin bada zehaztutako kokapenean erakutsi, automatikoki beste nonbait erakutsiko da.';
 $string['pluginname'] = 'Erabiltzaile-ibilaldiak';
-$string['previousstep'] = 'Aurrekoa';
 $string['privacy:metadata:preference:completed'] = 'Erabiltzaile batek azkenengo aldiz erabiltzaile-ibilaldia osatu zueneko data.';
 $string['privacy:metadata:preference:requested'] = 'Erabiltzaile batek azkenengo aldiz erabiltzaile-ibilaldia eskuz eskatu zueneko data.';
 $string['privacy:request:preference:completed'] = '"{$a->name}" erabiltzaile-ibilaldia azkenengoz osatutzat eman zenuen {$a->time}';
@@ -151,6 +150,9 @@ $string['selector_defaulttitle'] = 'Idatzi izenburu adierazgarria';
 $string['selectordisplayname'] = '\'{$a}\' patroiarekin bat datorren CSS hautatzailea';
 $string['selecttype'] = 'Aukeratu urrats mota';
 $string['sharedtourslink'] = 'Ibilbide-biltegia';
+$string['showtoureachtime'] = 'iragazki batekin bat datorren bakoitzean';
+$string['showtouruntilcomplete'] = 'ixten denera arte';
+$string['showtourwhen'] = 'Erakutsi ibilaldia';
 $string['skip'] = 'Saltatu';
 $string['skip_tour'] = 'Saltatu ibilbidea';
 $string['target'] = 'Jomuga';
@@ -250,6 +252,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'Ikastaroen \'Erakutsi jar
 $string['tour_activityinfo_course_teacher_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_final_step_content'] = 'Zure erabiltzaile-ibilbidearen amaiera duzu hau. Ez da berriro abiatuko behealdeko estekan klik egin ezean.';
 $string['tour_final_step_title'] = 'Ibilbidearen amaiera';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordenatu zutabeak eta aukeratu zeintzuk erakutsi. Edizio-moduan, lasterbide hau erabili ezazu kalifikazio-elementuak ikusi eta editatzearekin lotutako ohiko ekintzetara joateko.';
+$string['tour_gradebook_action_title'] = 'Ekintzetarako esteka azkarrak';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Iragazi ikasleak euren izen edo abizenen lehen letraren arabera.';
+$string['tour_gradebook_filter_title'] = 'Iragazi izenaren arabera';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Erabili bilaketa-kutxa ikasle zehatzak azkar aurkitzeko.';
+$string['tour_gradebook_search_title'] = 'Aurkitu ikasleak modu errazean';
+$string['tour_gradebook_tour_description'] = 'Kalifikazio-liburuko kalifikatzaile-txosteneko bilatu eta nabigazioa funtzioak';
+$string['tour_gradebook_tour_name'] = 'Kalifikazio-liburuko Kalifikatzaile-txostena';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Idatzi albiste garrantzitsuak hemen.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Guztiei esateko zerbait duzu?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Gehitu eduki berria edo editatu lehendik dagoen edukia.';

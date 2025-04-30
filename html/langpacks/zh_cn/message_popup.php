@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'zh_cn', version '4.1'.
+ * Strings for component 'message_popup', language 'zh_cn', version '4.4'.
  *
  * @package     message_popup
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '弹出通知';
+$string['pluginname'] = 'Web';
 $string['privacy:metadata'] = '消息Web插件不存储任何个人数据。';

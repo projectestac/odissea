@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'nl', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'nl', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Opnames publiceren';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Beveilig opnames ongedaan maken';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Publicatie van opnames ongedaan maken';
 $string['bigbluebuttonbn:view'] = 'Bekijk een BigBlueButton ruimte';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'Bekijk alle opnameformaten';
 $string['bigbluebuttondisablednotification'] = 'De BigBlueButton activiteitsmodule is uitgeschakeld en all bestaande BigBlueButton cursusactiviteiten zijn momenteel niet beschikbaar. Voor je deze plugin opnieuw inschakelt moet je er voor zorgen dat je de <a href="{$a}" target="_blank">gegevensverwerkingsovereenkomst</a> met Blindside Networks Inc. gelezen en aanvaard hebt.';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton activiteitsmodule uitgeschakeld';
 $string['cachedef_currentfetch'] = 'Gegevens om alle recent opgehaalde opnames weer te geven.';
 $string['cachedef_recordings'] = 'Metagegevens opnemen';
 $string['cachedef_serverinfo'] = 'Externe serverinformatie';
+$string['cachedef_subplugins'] = 'Cache die wordt gebruikt door subplugin-routines om het ontdekkingsproces van plug-ins te versnellen wanneer dat nodig is.';
 $string['cachedef_validatedurls'] = 'Cache van gevalideerde URL-controles';
 $string['calendarstarts'] = '{$a} is gepland voor';
 $string['cannotperformaction'] = 'Kan actie {$a} niet uitvoeren op deze opname';
-$string['completionattendance'] = 'Leerling moet de bijeenkomst bijwonen voor:';
+$string['completionattendance'] = 'Aanwezigheid vereisen (minuten)';
 $string['completionattendance_desc'] = 'De ruimte binnengaan en ten minste {$a} minuut(en) blijven.';
 $string['completionattendance_event_desc'] = 'Leerling is de ruimte binnengegaan en is minimaal {$a} minuut(en) in de sessie gebleven';
-$string['completionattendancegroup'] = 'Aanwezigheid vereist';
+$string['completionattendancegroup'] = 'Aanwezigheid vereisen (minuten)';
 $string['completionattendancegroup_help'] = 'Het bijwonen van de sessie gedurende (n) minuten is vereist voor voltooiing.';
 $string['completionengagement_desc'] = 'Meedoen tijdens de sessie';
 $string['completionengagementchats'] = 'Chats';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'Status voltooiing update';
 $string['completionvalidatestate'] = 'Bevestig voltooiing';
 $string['completionvalidatestatetriggered'] = 'Valideren dat de voltooiing is geactiveerd.';
 $string['completionview'] = 'Bekijken vereisen';
-$string['completionview_desc'] = 'Leerling moet de ruimte bekijken om te voltooien.';
+$string['completionview_desc'] = 'De kamer bekijken';
 $string['completionview_event_desc'] = 'Heeft de ruimte bekeken.';
+$string['config_checksum_algorithm'] = 'BigBlueButton server checksum-algoritme';
+$string['config_checksum_algorithm_description'] = 'SHA1 is compatibel met oudere servers. SHA256 en SHA521 zijn veiliger. SHA512 voldoet aan FIPS 140-2 .';
 $string['config_default_messages'] = 'Standaardberichten';
 $string['config_default_messages_description'] = 'Stel standaardberichten in voor activiteiten';
 $string['config_disablecam_default'] = 'Uitschakelen camera standaard ingeschakeld';
@@ -111,7 +115,7 @@ $string['config_experimental_features_description'] = 'Configuratie voor experim
 $string['config_extended_capabilities'] = 'Uitgebreide mogelijkheden';
 $string['config_extended_capabilities_description'] = 'Configuratie voor uitgebreide mogelijkheden wanneer de BigBlueButton server deze aanbiedt.';
 $string['config_general'] = 'Algemene instellingen';
-$string['config_general_description'] = 'Deze instellingen worden <strong>altijd</strong> gebruikt';
+$string['config_general_description'] = 'Om BigBlueButton in te stellen, kun je ofwel gebruik maken van je eigen BigBlueButtonserver en bijhorende aanmeldgegevens of je kunt aanmeldgegevens verkrijgen via de <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks Registration Portal (opent in a nieuw venster)</a>.';
 $string['config_guestaccess_enabled'] = 'Toegang externe gast';
 $string['config_guestaccess_enabled_description'] = 'Gebruikers zonder account voor je site toegang verlenen in de ruimte.';
 $string['config_hideuserlist_default'] = 'Gebruikerslijst verbergen standaard ingeschakeld';
@@ -142,10 +146,12 @@ $string['config_poll_interval'] = 'Interval (in seconden) om de status van de ru
 $string['config_poll_interval_description'] = 'Het Interval om de status van de ruimte te verversen moet minstens 2 seconden zijn. Indien nodig kun je de belasting op de externe server verlagen door deze waarde te verhogen.';
 $string['config_presentation_default'] = 'Standaard presentatiebestand';
 $string['config_presentation_default_description'] = 'Een bestand dat in alle ruimtes gebruikt kan worden.';
-$string['config_preuploadpresentation'] = 'Prestentatie vooraf uploaden';
+$string['config_preuploadpresentation'] = 'Prestentatiebestand';
 $string['config_preuploadpresentation_description'] = 'Deze instellingen schakelen opties in de gebruikersinterface in of uit en definiëren ook standaardwaarden voor deze opties. De functie werkt alleen als de Moodle-server toegankelijk is voor BigBlueButton ..';
-$string['config_preuploadpresentation_editable'] = 'Vooraf uploaden van een presentatie kan aangepast worden';
-$string['config_preuploadpresentation_editable_description'] = 'Het vooraf uploaden van de presentatie kan aangepast worden in de gebruikersinterface wanneer de ruimte wordt toegevoegd of aangepast.';
+$string['config_preuploadpresentation_editable'] = 'Presentatiebestand op activiteitspagina';
+$string['config_preuploadpresentation_editable_description'] = 'Optie in activiteitsinstellingen om het te tonen presentatiebestand te uploaden.';
+$string['config_profile_picture_enabled'] = 'Toon profielfoto\'s';
+$string['config_profile_picture_enabled_description'] = 'Moeten profielfoto\'s van deelnemers worden getoond in BigBlueButton-sessies?';
 $string['config_recording'] = 'Opname';
 $string['config_recording_all_from_start_default'] = 'Opname starten vanaf het begin';
 $string['config_recording_all_from_start_default_description'] = 'Moet de instelling \'Opname starten vanaf het begin\' standaard ingeschakeld worden wanneer er een nieuwe BigBlueButton-ruimte gemaakt wordt?';
@@ -164,6 +170,10 @@ $string['config_recording_protect_editable'] = 'De beschermstatus van opnames ka
 $string['config_recording_protect_editable_description'] = 'Indien ingeschakeld zal de interface een optie hebben om de opnames te beschermen.';
 $string['config_recording_refresh_period'] = 'Opnameverversingsperiode (in seconden)';
 $string['config_recording_refresh_period_description'] = 'Hoe vaak moet de BigBlueButton-server bevraagd worden om externe informatie over een opname te bekomen?';
+$string['config_recording_safe_formats'] = 'Opnameformaten die voor iedereen zichtbaar zijn';
+$string['config_recording_safe_formats_description'] = 'Selecteer de formaten die voor iedereen zichtbaar zijn.
+Alle andere formaten zijn alleen zichtbaar voor leraren en andere gebruikers met de mod/bigbluebuttonbn:viewallrecordingformats en
+ mod/bigbluebuttonbn:manageropnamemogelijkheden.';
 $string['config_recordingready_enabled'] = 'Melding wanneer de opname klaar is ingeschakeld';
 $string['config_recordingready_enabled_description'] = 'Indien ingeschakeld zal er een melding gestuurd worden wanneer de opname-iink beschikbaar is. Deze functie vereist dat post_publish_recording_ready_callback is ingeschakeld op de BigBlueButton-server';
 $string['config_recordings'] = 'Toon opnames';
@@ -189,15 +199,9 @@ $string['config_scheduled_description'] = 'Deze instellingen bepalen het standaa
 $string['config_scheduled_pre_opening'] = 'Toegang mogelijk voor het startmoment';
 $string['config_scheduled_pre_opening_description'] = 'De tijd in minuten dat de sessie toegankelijk is voor het geplande startmoment.';
 $string['config_server_url'] = 'BigBlueButton Server URL';
-$string['config_server_url_description'] = 'De standaard toegangsrechten zijn voor een <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">gratis BigBlueButton service voor Moodle (opent in een nieuw venster)</a> geleverd door Blindside Networks met volgende beperkingen:
-<ol>
-<li>De maximale lengte voor elke sessie is 60 minuten</li>
-<li>Het maximale aantal gelijktijdige gebruikers per sessie is 25</li>
-<li>Opnames verlopen na zeven (7) dagen en kunnen niet gedownload worden</li>
-<li>Webcams van de leerlingen zijn enkel zichtbaar voor de moderator.</li>
-</ol>';
+$string['config_server_url_description'] = 'De URL van je BibBlueButton-server';
 $string['config_shared_secret'] = 'BigBlueButton geheime sleutel';
-$string['config_shared_secret_description'] = 'De geheime sleutel van je BigBlueButton server. De standaard geheime sleutel is voor een BigBlueButton-service, geleverd door Blindside Networks.';
+$string['config_shared_secret_description'] = 'De geheime sleutel van je BigBlueButton server.';
 $string['config_uidelegation_enabled'] = 'UI-delegatie is ingeschakeld';
 $string['config_uidelegation_enabled_description'] = 'Deze instellingen schakelen de delegatie van de gebruikersinterface naar de BigBlueButton-server in of uit.';
 $string['config_userlimit'] = 'Gebruikerslimiet';
@@ -223,9 +227,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'Hoe vaak moet de
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton maakt gebruik van config.php met een globale variabele die is afgeschaft. Converteer het bestand want het zal niet meer worden ondersteund in toekomstige versies.';
 $string['config_warning_curl_not_installed'] = 'Deze functie vereist dat de CURL extensie voor php is geïnstalleerd en ingeschakeld. Deze instellingen zullen alleen toegankelijk zijn als is voldaan aan deze voorwaarde.';
 $string['config_welcome_default'] = 'Standaard welkomstbericht';
-$string['config_welcome_default_description'] = 'Het welkomstbericht wordt getoond wanneer deelnemers de ruimte betreden. Als het veld leeg gelaten wordt, dan wordt het bericht getoond dat op de BigBlueButton-server is ingesteld.';
+$string['config_welcome_default_description'] = 'Het welkomstbericht wordt getoond wanneer deelnemers de ruimte betreden. Als het veld leeg gelaten wordt, de taalstring \'mod_form_field_welcome_default\' gebruikt.';
 $string['config_welcome_editable'] = 'Standaard welkomstbericht is bewerkbaar door leraren';
 $string['config_welcome_editable_description'] = 'Welkomstbericht kan bewerkt worden wanneer de ruimte wordt toegevoegd of bewerkt';
+$string['credentials_warning'] = 'Het gebruik van standaard serverreferenties vervalt binnenkort (zie opmerking hierboven om nieuwe inloggegevens te verkrijgen).';
 $string['dpainfonotsigned'] = 'Voordat je deze plug-in inschakelt, moet je bevestigen dat je de <a href="{$a}">Blindside Networks-gegevensverwerkingsovereenkomst</a> hebt gelezen en geaccepteerd.';
 $string['enablingbigbluebutton'] = 'BigBlueButton-activiteit inschakelen';
 $string['enablingbigbluebuttondpainfo'] = 'Om te voldoen aan je gegevensbeschermingsverplichtingen moet je voor je deze plugin gebruikt, de <a href="{$a}" target="_blank">Blindside Networds gegevensverwerkingsovereenkomst</a>  gelezen en aanvaard hebben.
@@ -316,6 +321,7 @@ $string['instance_type_default'] = 'Ruimte met opnames';
 $string['instance_type_recording_only'] = 'Alleen opnames';
 $string['instance_type_room_only'] = 'Enkel ruimte';
 $string['instanceprofilewithoutrecordings'] = 'Dit instantieprofiel kan geen opnamen weergeven';
+$string['managebbbextplugins'] = 'Beheer plug-ins voor BigBlueButton-extensies';
 $string['messageprovider:instance_updated'] = 'BigBlueButton-sessie bijgewerkt';
 $string['messageprovider:recording_ready'] = 'BigBlueButton-opname beschikbaar';
 $string['minute'] = 'minuut';
@@ -417,6 +423,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'Het tijdstip waa
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'De gebruikers-ID van de gebruiker die de gebeurtenis heeft geactiveerd.';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Slaat metadata over opnames op.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'De gebruikers-ID van de gebruiker die het laatst een opname heeft gewijzigd.';
+$string['progress_createbigbluebuttonbn'] = 'BigBlueButton-activiteit maken ({$a})';
 $string['recordings_from_deleted_activities'] = 'Opnames van verwijderde activiteiten';
 $string['recordingurlnotfound'] = 'De opname-URL is ongeldig.';
 $string['removedevents'] = 'Verwijderde evenementen';
@@ -436,8 +443,12 @@ $string['search:activity'] = 'BigBlueButtonBN - activiteitsinformatie';
 $string['search:tags'] = 'BigBlueButtonBN - tagt informatie';
 $string['sendnotification'] = 'Stuur een melding';
 $string['settings'] = 'BigBlueButton-instellingen';
+$string['settings_credential_warning'] = 'De standaardgegevens voor de BigBlueButton-plug-in verlopen binnenkort. Zie BigBlueButton<a href="{$a->settingslink}" target="_blank"> plugin-instellingen (wordt in een nieuw venster geopend)</a>.';
+$string['settings_credential_warning_no_capability'] = 'Het gebruik van standaard serverreferenties vervalt binnenkort. Neem contact op met je sitebeheerder.';
 $string['started_at'] = 'Is begonnen';
 $string['starts_at'] = 'Begint';
+$string['subplugintype_bbbext'] = 'BigBlueButton-activiteitsextensie';
+$string['subplugintype_bbbext_plural'] = 'BigBlueButton-activiteitsextensies';
 $string['taskname:check_dismissed_recordings'] = 'Controleer op opnames die nog niet gevonden zijn';
 $string['taskname:check_pending_recordings'] = 'Opnames in behandeling ophalen';
 $string['userlimitreached'] = 'Het aantal toegestane gebruikers in een sessie is bereikt.';

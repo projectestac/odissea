@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_monitor', language 'zh_cn', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = '监看的区域';
 $string['cachedef_eventsubscriptions'] = '这是用以保存个别课程的事件订阅的列表';
 $string['contactadmin'] = '联系你的管理员来启用它';
 $string['core'] = '核心';
+$string['coresubsystem'] = '子系统 ({$a})';
 $string['currentsubscriptions'] = '你目前的订阅';
 $string['defaultmessagetemplate'] = '规则名称: {rulename}<br />说明: {description}<br />事件名称: {eventname}';
 $string['deleterule'] = '删除规则';
@@ -64,13 +65,16 @@ $string['managesubscriptions'] = '事件监看';
 $string['managesubscriptionslink'] = '你可以从这{$a}页面订阅规则';
 $string['messageprovider:notification'] = '规则订阅的通知';
 $string['messagetemplate'] = '通知讯息';
-$string['messagetemplate_help'] = '一旦达到发出通知的门槛，将会寄出通知信息给订阅者。此信息可以包含以下变动:
-<br /><br />
-* 到这事件位置的链接 {link}<br />
-* 到这被监看区域的链接 {modulelink}<br />
-* 规则名称 {rulename}<br />
-* 说明 {description}<br />
-* 事件 {eventname}';
+$string['messagetemplate_help'] = '达到通知阈值后，将向订阅者发送通知消息。它可以包括以下任何或所有占位符：
+
+* 活动地点链接 {link}
+* 监控区域链接 {modulelink}
+* 课程模块名称 {modulename}
+* 规则名称 {rulename}
+* 描述 {description}
+* 事件 {eventname}
+* 课程全名 {coursefullname}
+* 课程的简称 {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = '实例';
 $string['monitor:managerules'] = '管理事件监看规则';
@@ -122,5 +126,5 @@ $string['subhelp'] = '订阅细节';
 $string['subhelp_help'] = '当\'{$a->moduleinstance}\' 的事件\'{$a->eventname}\'在{$a->minutes} 分钟内发生{$a->frequency} 次，这个订阅就会起反应。';
 $string['subscribeto'] = '订阅规则"{$a}"';
 $string['taskchecksubscriptions'] = '激活/停用无效的规则订阅';
-$string['taskcleanevents'] = '移除不必要的监看事件';
+$string['taskcleanevents'] = '移除监看事件';
 $string['unsubscribe'] = '取消订阅';

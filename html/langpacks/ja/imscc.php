@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscc', language 'ja', version '4.1'.
+ * Strings for component 'imscc', language 'ja', version '4.4'.
  *
  * @package     imscc
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cc2moodle_checking_schema'] = 'CCフォーマット! スキーマ確認中 ...';
 $string['cc2moodle_invalid_schema'] = 'スキーマが有効ではありません。';
 $string['cc2moodle_manifest_dont_load'] = 'XMLマニフェストを読み込めません。';
-$string['cc2moodle_req_auth'] = 'エラー: 認証には共通カートリッジパッケージが必要です。';
+$string['cc2moodle_req_auth'] = 'エラー: 共通カートリッジパッケージには認証が必要です。';
 $string['cc2moodle_valid_schema'] = 'スキーマは有効です!';
 $string['cc_import_req_dom'] = 'エラー: 共通カートリッジのインポートにはDOM拡張モジュールが必要です。';
 $string['cc_import_req_libxml'] = 'エラー: 共通カートリッジのインポートにはLIBXML拡張モジュールが必要です。';

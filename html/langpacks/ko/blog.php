@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ko', version '4.1'.
+ * Strings for component 'blog', language 'ko', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -183,4 +183,3 @@ $string['viewmyentriesaboutmodule'] = '{$a} 에 대한 내 입력 내용 보기'
 $string['viewsiteentries'] = '모든 게시물 보기';
 $string['viewuserentries'] = '{$a}로 모든 항목 보기';
 $string['worldblogs'] = '공개하도록 설정된 게시물은 아무나 읽을 수 있습니다.';
-$string['wrongpostid'] = '잘못된 블로그 게시물 아이디';

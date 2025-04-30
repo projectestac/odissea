@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ru', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'ru', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'Овал';
 $string['pagenumber'] = 'Страница  {$a}';
 $string['pagexofy'] = 'Страница {$a->page} из {$a->total}';
 $string['partialwarning'] = 'Некоторые из представленных файлов могут быть доступны только путем прямого скачивания.';
+$string['pathtogserror'] = 'Путь к Ghostscript настроен неправильно: {$a}';
 $string['pathtogspathdesc'] = 'Обратите внимание, что для работы плагина «Аннотирование PDF» требуется указать путь в файлам Ghostscript на странице {$a}.';
 $string['pen'] = 'Ручка';
 $string['pluginname'] = 'Аннотирование PDF';

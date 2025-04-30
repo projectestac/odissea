@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'it', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'it', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = 'Specificare il tipo di attività selezionato d
 $string['erroractivitytype'] = 'Nelle impostazioni del corso non è impostato Il tipo di attività.';
 $string['orphaned'] = 'Orfane';
 $string['orphanedwarning'] = 'Queste attività non sono raggiungibili dagli utenti!';
-$string['pluginname'] = 'Formato attività singola';
+$string['plugin_description'] = 'Il corso contiene una sola attività o risorsa.';
+$string['pluginname'] = 'Attività singola';
 $string['privacy:metadata'] = 'Il plugin formato di corso "Attività singola" non memorizza dati personali.';
 $string['sectionname'] = '';
 $string['warningchangeformat'] = 'Quando si cambia il formato in uso con il formato "Attività singola" accertarsi di eliminare tutte le attività del corso, inclusi gli "Annunci". Da notare che la struttura delle sezioni potrà essere modificata.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ru', version '4.1'.
+ * Strings for component 'contentbank', language 'ru', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Автор';
 $string['choosecontext'] = 'Выберите курс или категорию...';
-$string['close'] = 'Закрыть';
 $string['contentbank'] = 'Банк контента';
 $string['contentbankpreferences'] = 'Настройки банка контента';
+$string['contentcopied'] = 'Контент скопирован.';
+$string['contentcreated'] = 'Контент создан.';
 $string['contentdeleted'] = 'Контент удален.';
 $string['contentname'] = 'Название контента';
 $string['contentnotdeleted'] = 'Произошла ошибка при удалении контента.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'Контент переименован.';
 $string['contentsmoved'] = 'Содержимое банка контента перемещено в {$a}.';
 $string['contenttypenoaccess'] = 'Вы не можете просмотреть этот контент {$a}.';
 $string['contenttypenoedit'] = 'Вы не можете редактировать этот контент';
+$string['contentupdated'] = 'Контент обновлен.';
 $string['contentvisibilitychanged'] = 'Контент сейчас {$a}.';
 $string['contentvisibilitynotset'] = 'Произошла ошибка при попытке установить видимость контента.';
 $string['contextnotallowed'] = 'В этом контексте вам не разрешен доступ к банку контента.';
+$string['copycontent'] = 'Скопировать контент';
+$string['copyof'] = 'Копия {$a}';
 $string['deletecontent'] = 'Удалить контент';
 $string['deletecontentconfirm'] = 'Вы действительно хотите удалить контент <em>«{$a->name}»</em> и все связанные файлы? Это действие не может быть отменено.';
 $string['deletecontentconfirmlinked'] = 'Содержимое будет удалено только из банка контента. Любые места, которые в настоящее время ссылаются на него, будут автоматически обновлены, чтобы вместо контента использовать его копию.';
@@ -64,6 +68,7 @@ $string['more'] = 'Больше';
 $string['name'] = 'Контент';
 $string['nocontentavailable'] = 'Контент недоступен';
 $string['nocontenttypes'] = 'Нет доступных типов контента';
+$string['nopermissiontocopy'] = 'У вас нет права на копирование контента.';
 $string['nopermissiontodelete'] = 'У вас нет разрешения на удаление контента.';
 $string['nopermissiontomanage'] = 'У вас нет разрешения на управление контентом.';
 $string['notavailable'] = 'К сожалению, этот контент недоступен.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', version '4.1'.
+ * Strings for component 'data', language 'fr', version '4.4'.
  *
  * @package     data
  * @category    string
@@ -83,7 +83,7 @@ $string['commentsn'] = '{$a} commentaire(s)';
 $string['commentsoff'] = 'La fonctionnalité de commentaire n’est pas activée';
 $string['completiondetail:entries'] = 'Ajouter des fiches : {$a}';
 $string['completionentries'] = 'Requiert des fiches';
-$string['completionentriescount'] = 'Nombre de fiches';
+$string['completionentriescount'] = 'Ajouter des fiches';
 $string['completionentriesdesc'] = 'Nombre minimale de fiches requises : {$a}';
 $string['configenablerssfeeds'] = 'Cette option permet l’activation des flux RSS pour toutes les bases de données. Il est en outre nécessaire d’activer manuellement les flux RSS dans les réglages de chaque base de données.';
 $string['confirmdeletefield'] = 'Vous êtes sur le point de supprimer ce champ. Voulez-vous vraiment continuer ?';
@@ -94,7 +94,7 @@ $string['createfields'] = 'Créer des champs pour collecter différents types de
 $string['createtemplates'] = 'Les modèles définissent l’interface de votre activité. Une fois des champs créés, les modèles seront créés automatiquement. Il est aussi possible d’utiliser un préréglage, qui inclut des champs et des modèles.';
 $string['csstemplate'] = 'CSS personnalisé';
 $string['csvfailed'] = 'Impossible de lire les données du fichier CSV';
-$string['csvfile'] = 'Fichier CSV';
+$string['csvfile'] = 'Fichier CSV ou ZIP contenant un fichier CSV';
 $string['csvimport'] = 'Importation fichier CSV';
 $string['csvimport_help'] = 'Des fiches peuvent être importées à partir d’un fichier texte pur, dont la première ligne contient la liste des noms des champs. Les lignes suivantes contiendront les données à importer, une fiche par ligne.';
 $string['csvwithselecteddelimiter'] = '<abbr title="Valeurs séparées par des virgules">CSV</abbr>';
@@ -154,6 +154,7 @@ $string['entrieslefttoadd'] = 'Vous devez ajouter encore {$a->entriesleft} fiche
 $string['entrieslefttoaddtoview'] = 'Vous devez ajouter encore {$a->entrieslefttoview} fiches avant de pouvoir consulter les fiches des autres participants.';
 $string['entry'] = 'Fiche';
 $string['entrysaved'] = 'Votre fiche a été enregistrée';
+$string['errordatafilenotfound'] = 'Le fichier n’a pas pu être importé. Les types de fichiers accepté sont CSV ou ZIP contant un fichier CSV dans le format utilisé pour exporter des fiches.';
 $string['errormustbeteacher'] = 'Vous devez être enseignant pour afficher cette page !';
 $string['errormustsupplyvalue'] = 'Veuillez renseigner une valeur.';
 $string['errorpresetexists'] = 'Un préréglage de ce nom existe déjà.';
@@ -198,7 +199,11 @@ $string['fieldnotmatched'] = 'Les champs suivants de votre fichier n’existent 
 $string['fieldoptions'] = 'Options (une par ligne)';
 $string['fields'] = 'Champs';
 $string['fieldshelp'] = 'Créer des champs pour collecter divers types de données. Les champs définissent la structure des fiches de votre base de données.';
+$string['fieldsinformationtags'] = 'Info sur le champ';
 $string['fieldsnavigation'] = 'Navigation tertiaire des champs';
+$string['fieldtagdescription'] = 'Description de {$a}';
+$string['fieldtagid'] = 'ID de {$a}';
+$string['fieldtagname'] = 'Nom de {$a}';
 $string['fieldupdated'] = 'Champ modifié';
 $string['fieldwidth'] = 'Largeur';
 $string['fieldwidthlistview'] = 'Largeur (en pixels) en vue liste';
@@ -231,6 +236,7 @@ $string['importpreset_desc'] = 'Le préréglage sera appliqué à cette activit�
 $string['importpresetmissingcapability'] = 'Vous n’avez pas les permissions requises pour importer un préréglage.';
 $string['importsuccess'] = 'Préréglage appliqué.';
 $string['includeapproval'] = 'Inclure le statut d’approbation';
+$string['includefiles'] = 'Inclure les fichiers dans l’exportation';
 $string['includetags'] = 'Inclure les tags';
 $string['includetime'] = 'Inclure la date d’ajout/de modification';
 $string['includeuserdetails'] = 'Inclure les infos sur l’utilisateur';
@@ -289,7 +295,7 @@ $string['missingfield'] = 'Erreur de programmation : veuillez indiquer le champ
 $string['missingfieldtype'] = 'Type de champ in trouvable pour {$a->name}';
 $string['missingfieldtypeimport'] = 'Les champs suivants n’ont pas été importés, car les types de champs correspondants ne sont pas installés :';
 $string['missingfieldtypes'] = 'Les champs suivants n’ont pas leur type de champ correspondant installé. Ils ne seront pas inclus dans le formulaire Ajouter une fiche.
-Veuillez contrôler le modèle Ajouter une fiche  et retirer les noms de ces champs.';
+Veuillez contrôler le modèle Ajouter une fiche et retirer les noms de ces champs.';
 $string['modulename'] = 'Base de données';
 $string['modulename_help'] = 'Une base de données permet aux participants de créer, afficher et rechercher une collection de fiches.
 
@@ -341,6 +347,7 @@ $string['openafterclose'] = 'Vous avez indiqué une date de début postérieure 
 $string['optionaldescription'] = 'Brève description (facultative)';
 $string['optionalfilename'] = 'Nom affiché (facultatif)';
 $string['other'] = 'Autre';
+$string['otherfields'] = 'Tous les autres champs';
 $string['overrwritedesc'] = 'Remplacer le préréglage de ce nom et écraser son contenu';
 $string['overwrite'] = 'Écraser';
 $string['overwritesettings'] = 'Écraser les réglages actuels, tels que commentaires, évaluations, etc.';
@@ -358,6 +365,7 @@ $string['presetnotselected'] = 'Aucun préréglage n’a été sélectionné';
 $string['presets'] = 'Préréglages';
 $string['presetshelp'] = 'Choisir un préréglage à utiliser pour commencer';
 $string['preview'] = 'Prévisualiser {$a}';
+$string['previewaction'] = 'Prévisualiser';
 $string['privacy:metadata:commentpurpose'] = 'Commentaires sur les fiches de base de données';
 $string['privacy:metadata:data_content'] = 'Le contenu d’un champ';
 $string['privacy:metadata:data_content:content'] = 'Contenu';
@@ -400,7 +408,7 @@ $string['resetalltemplates'] = 'Réinitialiser tous les modèles';
 $string['resetalltemplatesconfirm'] = 'Vous allez supprimer tous les modèles du préréglage actuel. Pour restaurer les modèles plus tard, veuillez de nouveau sélectionner le préréglage dans l’onglet « Préréglages ».';
 $string['resetalltemplatesconfirmtitle'] = 'Réinitialiser tous les modèles ?';
 $string['resetsettings'] = 'Réinitialiser les filtres';
-$string['resettemplate'] = 'Réinitialiser le modèle';
+$string['resettemplate'] = 'Réinitialiser le modèle actuel';
 $string['resettemplateconfirm'] = 'Cette opération va supprimer de manière permanente le {$a} de votre préréglage actuel.';
 $string['resettemplateconfirmtitle'] = 'Réinitialiser le modèle ?';
 $string['resizingimages'] = 'Génération des vignettes…';
@@ -426,6 +434,7 @@ $string['searchresults'] = 'Fiches contenant « {$a} »';
 $string['selectedrequired'] = 'Toute la sélection requise';
 $string['selectexportoptions'] = 'Sélectionner les options d’exportation';
 $string['selectfields'] = 'Sélectionner les champs';
+$string['selectfordeletion'] = 'Sélectionner la fiche pour suppression';
 $string['showall'] = 'Afficher toutes les fiches';
 $string['showmore'] = 'Afficher plus';
 $string['single'] = 'Affichage fiche';
@@ -453,17 +462,14 @@ $string['todatabase'] = 'à cette base de données.';
 $string['type'] = 'Type de champ';
 $string['undefinedprocessactionmethod'] = 'Aucune méthode n’est définie dans Data_Preset pour traiter l’action « {$a} ».';
 $string['unknown'] = 'Champ inconnu';
-$string['unsupportedexport'] = '({$a->fieldtype}) ne peut pas être exporté.';
 $string['unsupportedfields'] = 'Champs non pris en charge';
 $string['unsupportedfieldslist'] = 'Les champs suivants ne peuvent pas être exportés :';
 $string['updatefield'] = 'Modifier un champ existant';
 $string['uploadfile'] = 'Déposer un fichier';
-$string['uploadrecords'] = 'Importer des fiches à partir d’un fichier';
-$string['uploadrecords_help'] = 'Des fiches peuvent être déposées à partir d’un fichier texte. Le format de ce fichier doit être le suivant :
+$string['uploadrecords'] = 'Importer des fiches';
+$string['uploadrecords_help'] = 'Importer des fiches exportées d’une autre base de données,  via un fichier CSV ou un fichier ZIP contenant un fichier CSV (si des fichiers sont inclus dans l’exportation).
 
-* chaque ligne du fichier contient une fiche ;
-* chaque fiche est constituée d’une série de données séparées par le caractère de séparation sélectionné ;
-* la première ligne du fichier comprend les noms des champs définissant le format du reste du fichier.  Le délimiteur de champ est un caractère qui entoure chaque champ d’une fiche, par exemple les guillemets droits. Il peut être laissé vide.';
+Il est aussi possible de créer un fichier CSV à importer en ajoutant une fiche à la base de données. On exporte ensuite, puis modifie le fichier CSV en y ajoutant manuellement d’autres fiches.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Inclure dans la recherche.';

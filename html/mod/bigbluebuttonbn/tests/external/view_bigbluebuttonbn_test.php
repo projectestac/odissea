@@ -16,10 +16,9 @@
 
 namespace mod_bigbluebuttonbn\external;
 
-use external_api;
+use core_external\external_api;
 use mod_bigbluebuttonbn\instance;
 use mod_bigbluebuttonbn\test\testcase_helper_trait;
-use moodle_exception;
 use require_login_exception;
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,7 +36,7 @@ require_once($CFG->dirroot . '/webservice/tests/helpers.php');
  * @author    Laurent David (laurent@call-learning.fr)
  * @covers \mod_bigbluebuttonbn\external\view_bigbluebuttonbn
  */
-class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
+final class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
     use testcase_helper_trait;
 
     /**
@@ -63,7 +62,8 @@ class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL with no instance
      */
-    public function test_execute_no_instance() {
+    public function test_execute_no_instance(): void {
+        $this->resetAfterTest();
         $bbbactivities = $this->view_bigbluebuttonbn(1234);
 
         $this->assertIsArray($bbbactivities);
@@ -75,7 +75,7 @@ class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL without login
      */
-    public function test_execute_without_login() {
+    public function test_execute_without_login(): void {
         $this->resetAfterTest();
 
         $course = $this->getDataGenerator()->create_course();
@@ -88,7 +88,7 @@ class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
     /**
      * Test execute API CALL with invalid login
      */
-    public function test_execute_with_invalid_login() {
+    public function test_execute_with_invalid_login(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();
@@ -105,7 +105,7 @@ class view_bigbluebuttonbn_test extends \externallib_advanced_testcase {
     /**
      * When login as a student
      */
-    public function test_execute_with_valid_login() {
+    public function test_execute_with_valid_login(): void {
         $this->resetAfterTest();
 
         $generator = $this->getDataGenerator();

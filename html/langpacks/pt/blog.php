@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'pt', version '4.1'.
+ * Strings for component 'blog', language 'pt', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blogue sobre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Associação';
 $string['associations'] = 'Associações';
 $string['associationunviewable'] = 'Esta mensagem não pode ser visualizada até que seja associada uma disciplina ou a pasta \'Publicar para\' seja alterada.';
+$string['author'] = 'Autor';
 $string['autotags'] = 'Adicionar palavras-chave';
 $string['autotags_help'] = 'Insira uma ou mais palavras-chave locais (separadas por vírgulas) que pretende adicionar automaticamente a cada mensagem do blogue copiada do blogue externo no seu blogue local.';
 $string['backupblogshelp'] = 'Quando ativos, os blogues são incluídos nas cópias de segurança automáticas do site';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blogue sobre \'{$a->type}\'';
 $string['blogaboutthiscourse'] = 'Adicionar mensagem sobre esta disciplina';
 $string['blogaboutthismodule'] = 'Adicionar mensagem sobre {$a}';
 $string['blogadministration'] = 'Administração do blogue';
+$string['blogattachment'] = 'Anexo do blogue';
 $string['blogdeleteconfirm'] = 'Pretende apagar do blogue a mensagem \'{$a}\'?';
 $string['blogdisable'] = 'O sistema de blogues está desativado!';
 $string['blogentries'] = 'Mensagens do blogue';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Blogues';
 $string['blogscourse'] = 'Blogues da disciplina';
 $string['blogssite'] = 'Blogues do site';
 $string['blogtags'] = 'Palavras-chave do blogue';
+$string['cannoteditentryorblog'] = 'Não é possível editar esta entrada ou o blogue';
 $string['cannotviewcourseblog'] = 'Não tem permissão para ver blogues nesta disciplina';
 $string['cannotviewcourseorgroupblog'] = 'Não tem permissão para ver blogues nesta disciplina/grupo';
 $string['cannotviewsiteblog'] = 'Não tem permissão para ver todos os blogues';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Descrição da mensagem';
 $string['entryerrornotyours'] = 'Esta mensagem não é da sua autoria';
 $string['entrysaved'] = 'A sua mensagem foi gravada';
 $string['entrytitle'] = 'Título da mensagem';
+$string['entrytitlewithlink'] = 'Título da mensagem com hiperligação';
 $string['eventblogassociationadded'] = 'Associação de blogue criada';
 $string['eventblogassociationdeleted'] = 'Associação de blogue eliminada';
 $string['eventblogentriesviewed'] = 'Entradas de blogue visualizadas';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'Filtro incorreto';
 $string['intro'] = 'Esta lista RSS foi automaticamente gerado a partir de um ou mais blogues';
 $string['invalidgroupid'] = 'ID de grupo inválido';
 $string['invalidurl'] = 'O URL não está disponível';
-$string['linktooriginalentry'] = 'Ligar à mensagem original';
+$string['linktooriginalentry'] = 'Mensagem original';
 $string['maxexternalblogsperuser'] = 'Número máximo de blogues externos por utilizador';
 $string['myprofileuserblogs'] = 'Visualizar todas as entradas de blogue';
 $string['name'] = 'Nome';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'ID do utilizador que adicionou a mens
 $string['privacy:metadata:post:usermodified'] = 'O utilizador que modificou a mensagem pela última vez';
 $string['privacy:path:blogassociations'] = 'Tópicos de blogues associados';
 $string['privacy:unknown'] = 'Desconhecido';
+$string['published'] = 'Publicado';
 $string['publishto'] = 'Publicar para';
 $string['publishto_help'] = 'Existem 3 opções:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'Existem 3 opções:
 $string['publishtocourse'] = 'Os utilizadores partilham uma disciplina consigo';
 $string['publishtocourseassoc'] = 'Membros da disciplina associada';
 $string['publishtocourseassocparam'] = 'Membros de {$a}';
+$string['publishtodraft'] = 'Rascunho';
 $string['publishtogroup'] = 'Os utilizadores partilham um grupo consigo';
 $string['publishtogroupassoc'] = 'Os seus membros do grupo na disciplina associada';
 $string['publishtogroupassocparam'] = 'Os membros do grupo em {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'Ver todas as mensagens';
 $string['viewuserentries'] = 'Ver todas as mensagens de {$a}';
 $string['worldblogs'] = 'Todos podem ler as mensagens configuradas para estarem acessíveis a todos';
 $string['wrongexternalid'] = 'ID de blogue externo incorreto';
-$string['wrongpostid'] = 'ID da mensagem incorreto';

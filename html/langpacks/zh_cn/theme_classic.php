@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'zh_cn', version '4.1'.
+ * Strings for component 'theme_classic', language 'zh_cn', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = '经典';
 $string['preset'] = '主题预设';
 $string['preset_desc'] = '选择一个预设来大致改变主题的外观。';
 $string['presetfiles'] = '其他主题预设文件';
-$string['presetfiles_desc'] = '预设文件可用于显著改变主题的外观。请参见<a href=”https://docs.moodle.org/dev/Boost_Presets“>增强预设</a>有关创建和共享您自己的预设文件的信息，请参阅<a href=”https://archive.moodle.net/boost“>预设存储库</a>用于其他人共享的预设。';
+$string['presetfiles_desc'] = '预设文件可用于显著改变主题的外观。有关创建和共享您自己的预设文件的信息，请参阅 <a href=“https://docs.moodle.org/dev/Boost_Presets”>Boost 预设</a>，并查看 <a href=“https://moodle.net/search?q=boost+presets”>Presets 存储库</a>，了解其他人共享的预设。';
 $string['privacy:metadata'] = '经典主题不存储任何个人数据。';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';

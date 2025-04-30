@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_survey', language 'ca', version '4.1'.
+ * Strings for component 'qbehaviour_survey', language 'ca', version '4.4'.
  *
  * @package     qbehaviour_survey
  * @category    string

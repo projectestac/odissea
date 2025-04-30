@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', version '4.1'.
+ * Strings for component 'badges', language 'pt', version '4.4'.
  *
  * @package     badges
  * @category    string
@@ -29,7 +29,6 @@ $string['actions'] = 'Ações';
 $string['activate'] = 'Ativar acesso';
 $string['activatesuccess'] = 'O acesso às medalhas foi ativado com sucesso.';
 $string['addalignment'] = 'Adicionar competência ou norma externa';
-$string['addbackpack'] = 'Adicionar backpack';
 $string['addbadge'] = 'Adicionar medalhas';
 $string['addbadge_help'] = 'Selecione todas as medalhas que devem fazer parte dos requisitos desta medalha. Mantenha a tecla Ctrl pressionada para selecionar vários itens.';
 $string['addbadgecriteria'] = 'Adicionar critério da medalha';
@@ -100,8 +99,9 @@ $string['backpackbadgessettings'] = 'Alterar as configurações da backpack';
 $string['backpackbadgessummary'] = 'Tem {$a->totalbadges} medalhas mostradas de {$a->totalcollections} coleções.';
 $string['backpackcannotsendverification'] = 'Não é possível enviar e-mail de verificação';
 $string['backpackconnected'] = 'A backpack está ligada';
-$string['backpackconnection'] = 'Ligação à backpack';
-$string['backpackconnection_help'] = 'Ligar-se a uma backpack permite que partilhe as suas medalhas recebidas no site e que possa exibir na sua página de perfil as coleções de medalhas públicas da sua backpack.';
+$string['backpackconnection'] = 'Ligar a uma backpack';
+$string['backpackconnection_connected'] = 'A sua backpack';
+$string['backpackconnection_help'] = 'Guarde e partilhe as suas medalhas recebidas no site e mostre as coleções de medalhas públicas de outros sites na sua página de perfil.';
 $string['backpackconnectioncancelattempt'] = 'Autenticar-se usando um endereço de e-mail diferente';
 $string['backpackconnectionconnect'] = 'Ligar à backpack';
 $string['backpackconnectionnottested'] = 'A ligação para esta backpack não pode ser testada porque apenas são suportadas as backpack Open Badges v2.0.';
@@ -115,21 +115,25 @@ $string['backpackemail'] = 'Endereço de e-mail';
 $string['backpackemail_help'] = 'Endereço de e-mail associado à sua backpack. Enquanto estiver ligado, qualquer medalha recebida neste site será associada a este endereço de e-mail.';
 $string['backpackemail_required'] = 'O e-mail não pode estar em branco';
 $string['backpackemailverificationpending'] = 'Verificação pendente';
-$string['backpackemailverifyemailbody'] = 'Caro utilizador,
+$string['backpackemailverifyemailbody'] = 'Caro/a {$a->userfirstname,
 
-Foi solicitada uma nova ligação à sua backpack OpenBadges a partir do site \'{$a->sitename}\', usando seu endereço de e-mail.
+Está prestes a ligar-se à sua backpack de medalhas a partir do site \'{$a->sitename}\'.
 
-Para confirmar e ativar a ligação à sua backpack, visite a página:
+Para finalizar a ligação à sua backpack, verifique o seu endereço de e-mail através do seguinte botão:
 
+{$a->buttonlink}
+
+Se o botão não funcionar, copie e cole o seguinte URL no seu navegador:
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
+Se não tentou ligar-se à sua backpack de medalhas, ignore este e-mail.
 
-Se precisar de ajuda, entre em contacto com o administrador do site,
+Se precisar de ajuda, contacte o suporte do site,
+
 {$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}: e-mail de verificação da backpack Badges';
-$string['backpackemailverifypending'] = 'Um e-mail de verificação foi enviado para <strong>{$a}</strong>. Clique na hiperligação de verificação no e-mail para ativar a ligação à sua backpack.';
-$string['backpackemailverifysuccess'] = 'Obrigado por verificar o seu endereço de e-mail. Já está ligado à sua backpack.';
+$string['backpackemailverifypending'] = 'Foi enviado um e-mail de verificação para <strong>{$a}</strong>. Clique na hiperligação de verificação no e-mail para ativar a ligação à sua backpack.';
+$string['backpackemailverifysuccess'] = 'Agora está ligado à sua backpack.';
 $string['backpackemailverifytokenmismatch'] = 'O token na hiperligação que clicou não corresponde ao token guardado. Certifique-se de clicar na hiperligação do e-mail mais recente que recebeu.';
 $string['backpackexporterror'] = 'Não é possível exportar a medalha para a backpack';
 $string['backpackexporterrorwithinfo'] = 'Não é possível exportar a medalha "{$a->badgename}" para a backpack. Erro: {$a->error}';
@@ -137,7 +141,6 @@ $string['backpackimport'] = 'Configurações da importação de medalhas';
 $string['backpackimport_help'] = 'Depois de estabelecer com sucesso a ligação à backpack, as medalhas da sua backpack podem ser mostradas na sua página "Minhas medalhas" e no seu perfil.
 
 Nesta área, pode selecionar as coleções de medalhas da sua backpack que gostaria de mostrar no seu perfil.';
-$string['backpackneedsupdate'] = 'A backpack ligada a este perfil não corresponde à backpack do site. Tem de terminar sessão e voltar a ligar-se à backpack.';
 $string['backpackprovider'] = 'Fornecedor da backpack';
 $string['backpacksettings'] = 'Configurações da backpack';
 $string['backpackweburl'] = 'URL da backpack';
@@ -165,6 +168,7 @@ $string['badgestatus_3'] = 'Disponível (critérios bloqueados)';
 $string['badgestatus_4'] = 'Arquivado';
 $string['badgestoearn'] = 'Número de medalhas disponíveis: {$a}';
 $string['badgesview'] = 'Medalhas da disciplina';
+$string['badgetags'] = 'Palavras-chave da medalha';
 $string['badgeurl'] = 'Hiperligação para a medalha emitida';
 $string['balignment'] = 'Alinhamentos ({$a})';
 $string['bawards'] = 'Condecorados ({$a})';
@@ -188,6 +192,7 @@ $string['connected'] = 'Ligado';
 $string['connecting'] = 'A estabelecer a ligação...';
 $string['contact'] = 'Contacto';
 $string['contact_help'] = 'Endereço de e-mail associado ao emissor da medalha.';
+$string['copy'] = 'Copiar';
 $string['copyof'] = 'Cópia de {$a}';
 $string['course'] = 'Disciplina: {$a}';
 $string['coursebadges'] = 'Medalhas';
@@ -288,8 +293,6 @@ $string['enablebadges'] = 'Ativar medalhas';
 $string['endorsement'] = 'Acreditação';
 $string['error:backpackdatainvalid'] = 'A informação devolvida pela backpack é inválida.';
 $string['error:backpackemailnotfound'] = 'O e-mail \'{$a}\' não está associado à backpack. Tem de criar uma backpack <a href="http://backpack.openbadges.org"></a> para essa conta ou entrar com outro endereço de e-mail.';
-$string['error:backpacknotavailable'] = 'O seu site não está disponível a partir da internet e, por isso, nenhuma medalha atribuída neste site poderá ser verificada por um serviço externo de backpacks.';
-$string['error:backpackproblem'] = 'Ocorreu um problema ao ligar ao seu fornecedor de serviços de backpack. Por favor, tente mais tarde.';
 $string['error:badgeawardnotfound'] = 'Não é possível verificar esta medalha atribuída. Esta medalha pode ter sido revogada.';
 $string['error:badgenotfound'] = 'Medalha não encontrada';
 $string['error:cannotact'] = 'Não é possível ativar a medalha.';
@@ -341,7 +344,6 @@ $string['eventbadgelistingviewed'] = 'Listagem de medalhas visualizada';
 $string['eventbadgerevoked'] = 'Medalha revogada';
 $string['eventbadgeupdated'] = 'Medalha atualizada';
 $string['eventbadgeviewed'] = 'Medalha visualizada';
-$string['evidence'] = 'Evidência';
 $string['existingrecipients'] = 'Atuais condecorados com a medalha';
 $string['existsinbackpack'] = 'Medalha já existente na backpack';
 $string['expired'] = 'Expirada';
@@ -355,6 +357,7 @@ $string['expireperiods'] = 'A validade desta medalha termina {$a} segundo(s) ap�
 $string['expiresin'] = 'Expira {$a}';
 $string['expirydate'] = 'Data de validade';
 $string['expirydate_help'] = 'Opcionalmente, as medalhas podem expirar numa data específica ou a data pode ser calculada com base na data em que a medalha foi emitida para um utilizador.';
+$string['externalbackpack_required'] = 'O fornecedor da backpack não pode ficar em branco';
 $string['externalbadges'] = 'As minhas medalhas de outros sites';
 $string['externalbadges_help'] = 'Esta área exibe as medalhas da sua backpack externa.';
 $string['externalbadgesp'] = 'Medalhas de outros sites:';
@@ -399,6 +402,7 @@ Pode gerir as suas medalhas aqui e torná-las públicas ou privadas na página d
 Pode descarregar todas as medalhas, ou cada medalha separadamente, e guardá-las no seu computador. As medalhas que descarregou podem ser adicionadas ao seu serviço externo de backpack.';
 $string['localbadgesp'] = 'Medalhas de {$a}:';
 $string['localconnectto'] = 'Para partilhar estas medalhas fora deste site, tem de <a href="{$a}">ligar-se a uma backpack</a>.';
+$string['loginbackpacktitle'] = '<strong>Ligue-se à sua backpack</strong>';
 $string['makeprivate'] = 'Tornar privadas';
 $string['makepublic'] = 'Tornar públicas';
 $string['managebackpacks'] = 'Gerir backpacks';
@@ -414,6 +418,7 @@ $string['month'] = 'Mês/Meses';
 $string['moredetails'] = 'Mais detalhes';
 $string['mybackpack'] = 'Configurações da minha backpack';
 $string['mybadges'] = 'Minhas medalhas';
+$string['namewithlink'] = 'Nome com hiperligação';
 $string['never'] = 'Sem data de validade';
 $string['newbackpack'] = 'Adicionar uma nova backpack';
 $string['newbadge'] = 'Adicionar uma nova medalha';
@@ -429,6 +434,8 @@ $string['nocompetencies'] = 'Nenhuma competência selecionada.';
 $string['nocriteria'] = 'Os critérios desta medalha ainda não foram definidos.&nbsp;';
 $string['noendorsement'] = 'Esta medalha não tem uma acreditação.';
 $string['noexpiry'] = 'Esta medalha não tem uma data de validade.';
+$string['nomatchingawards'] = 'Ainda não existem condecorados correspondentes que tenham ganho esta medalha.';
+$string['nomatchingbadges'] = 'Não existem medalhas correspondentes disponíveis para os utilizadores ganharem.';
 $string['noparamstoadd'] = 'Não existem parâmetros adicionais disponíveis para adicionar aos requisitos desta medalha.';
 $string['norelated'] = 'Não existem medalhas relacionadas com esta medalha.';
 $string['notacceptedrole'] = 'O seu papel atual não está entre os papéis que podem emitir manualmente esta medalha.<br/>
@@ -502,8 +509,6 @@ $string['privacy:metadata:manualaward:issuerid'] = 'ID do utilizador condecorado
 $string['privacy:metadata:manualaward:issuerrole'] = 'O papel do utilizador condecorado com a medalha';
 $string['privacy:metadata:manualaward:recipientid'] = 'ID do utilizador condecorado manualmente com a medalha';
 $string['recipient'] = 'Condecorado com a medalha';
-$string['recipientdetails'] = 'Detalhes do condecorado';
-$string['recipientidentificationproblem'] = 'Não foi possível encontrar um condecorado com esta medalha entre os utilizadores existentes.';
 $string['recipients'] = 'Condecorados com a medalha';
 $string['recipientvalidationproblem'] = 'Não é possível verificar este utilizador como um condecorado com esta medalha.';
 $string['relatedbages'] = 'Medalhas relacionadas';
@@ -528,8 +533,6 @@ $string['selectgroup_end'] = 'Apenas as coleções públicas são exibidas. <a h
 $string['selectgroup_start'] = 'Selecione as coleções da sua backpack para exibir neste site:';
 $string['selecting'] = 'Com as medalhas selecionadas…';
 $string['setup'] = 'Configurar ligação';
-$string['sitebackpack'] = 'Backpack externa ativa';
-$string['sitebackpack_help'] = 'A backpack externa à qual os utilizadores podem ligar-se a partir deste site. Tenha em atenção que a alteração desta configuração depois dos utilizadores já se terem ligado às suas backpacks exigirá que cada utilizador tenha de aceder à página de configurações da backpack para  terminar a sessão e voltar a autenticar-se novamente.';
 $string['sitebackpackdeleted'] = 'A backpack do site foi apagada.';
 $string['sitebackpacknotdeleted'] = 'Não foi possível apagar esta backpack porque é a predefinida atual do site.';
 $string['sitebackpackwarning'] = 'Não foi possível ligar à backpack.<br/><br/>Verifique se o "endereço de e-mail do emissor de medalhas" é o e-mail válido para a conta no site da backpack.<br/><br/>Verifique se a "senha do emissor de medalhas", na <a href="{$a->url}">página de configurações do site da backpack</a>, é a senha correta da conta no site da backpack.<br/><br/>A backpack retornou a mensagem: "{$a->warning}"';
@@ -556,6 +559,8 @@ $string['statusmessage_2'] = 'De momento, esta medalha não está disponível pa
 $string['statusmessage_3'] = 'De momento, esta medalha está disponível para os utilizadores e os seus critérios estão bloqueados.';
 $string['statusmessage_4'] = 'Atualmente, esta medalha está arquivada.';
 $string['subject'] = 'Assunto da mensagem';
+$string['tagarea_badge'] = 'Medalhas';
+$string['tags'] = 'Palavras-chave';
 $string['targetcode'] = 'Código';
 $string['targetcode_help'] = 'Um identificador único para referenciar a competência ou norma externa no seu enquadramento.';
 $string['targetdescription'] = 'Descrição';
@@ -569,6 +574,7 @@ $string['targeturl_help'] = 'A hiperligação para a página que descreve a comp
 $string['testbackpack'] = 'Testar backpack \'{$a}\'';
 $string['testsettings'] = 'Testar configurações';
 $string['type'] = 'Tipo';
+$string['userbadges'] = 'Medalhas do utilizador';
 $string['variablesubstitution'] = 'Variável a substituir nas mensagens.';
 $string['variablesubstitution_help'] = 'Na mensagem de uma medalha, podem ser inseridas determinadas variáveis no assunto e/ou no corpo da mensagem para serem substituídas por valores reais quando a mensagem é enviada. As variáveis devem ser inseridas no texto tal como são exibidas abaixo. Podem ser usadas as seguintes variáveis:
 
@@ -580,6 +586,7 @@ Será substituída pelo nome completo do condecorado.
 
 %badgelink%<br>
 Será substituída pelo URL público com informação sobre a medalha emitida.';
+$string['verifyemail'] = 'Verificar e-mail';
 $string['version'] = 'Versão';
 $string['version_help'] = 'O campo da versão pode ser utilizado para registar o desenvolvimento da medalha. Se especificado, a versão é mostrada na página da medalha.';
 $string['viewbadge'] = 'Ver medalha emitida';

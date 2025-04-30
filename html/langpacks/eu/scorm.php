@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', version '4.1'.
+ * Strings for component 'scorm', language 'eu', version '4.4'.
  *
  * @package     scorm
  * @category    string
@@ -74,6 +74,7 @@ $string['browse'] = 'Aurrebista';
 $string['browsed'] = 'Nabigatua';
 $string['browsemode'] = 'Aurrebista-modua';
 $string['browserepository'] = 'Arakatu biltegia';
+$string['cachedef_elements'] = 'Elementu-cachea';
 $string['calculatedweight'] = 'Kalkulatutako pisua';
 $string['calendarend'] = '{$a}(r)en itxiera-data:';
 $string['calendarstart'] = '{$a}(r)en hasiera-data';
@@ -95,7 +96,7 @@ $string['completionscorerequired_help'] = 'Ezarpen hau gaituz gero, ikasleari SC
 $string['completionscorerequireddesc'] = 'Jarduera osatzeko {$a}-eko gutxieneko kalifikazioa beharrezkoa da.';
 $string['completionstatus_completed'] = 'Osatua';
 $string['completionstatus_passed'] = 'Gaindituta';
-$string['completionstatusallscos'] = 'Behartu SCO guztiek osatze-egoerara bueltatzea';
+$string['completionstatusallscos'] = 'SCO guztiek osatze-egoera bueltatzea';
 $string['completionstatusallscos_help'] = 'SCORM pakete batzuk osagai anitz edo "sco" dituzte - aukera hau gaitzean paketeko sco guztiek lesson_status balioa bueltatu behar dute jarduera hau osatutzat emateko.';
 $string['completionstatusrequired'] = 'Egoera behar da';
 $string['completionstatusrequired_help'] = 'Egoera bat edo gehiago aukeratuz gero, erabiltzaileei SCORM jarduera gainditutzat emateko, lortu beharko dute: gutxienez, aukeratutako egoeretako bat eta jarduera-osaketarako beste baldintzak ere bete beharko ditu.';
@@ -114,12 +115,10 @@ $string['deleteallattempts'] = 'Ezabatu SCORMetako saiakera guztiak';
 $string['deleteattemptcheck'] = 'Ziur al zaude saiakera hauek guztiz ezabatu nahi dituzula?';
 $string['deleteselected'] = 'Ezabatu aukeratutako saiakerak';
 $string['deleteuserattemptcheck'] = 'Ziur al zaude zure saiakera guztiak guztiz ezabatu nahi dituzula?';
-$string['details'] = 'Pistaren zehaztasunak';
+$string['details'] = 'Egin jarraipena xehetasunei';
 $string['directories'] = 'Erakutsi direktorioaren estekak';
 $string['disabled'] = 'Desgaituta';
 $string['display'] = 'Erakutsi paketea';
-$string['displayactivityname'] = 'Erakutsi jardueraren izena';
-$string['displayactivityname_help'] = 'SCORM erreproduzigailuaren gainean jardueraren izena erakustea edo ez.';
 $string['displayattemptstatus'] = 'Erakutsi saiakeren egoera';
 $string['displayattemptstatus_help'] = 'Gaituz gero, erabiltzailearen saiakeren laburpena Aginte-paneleko ikastaroaren ikuspegi orokorreko blokean edota SCORM-en laburpen-orrian erakutsiko dira.';
 $string['displayattemptstatusdesc'] = 'Erakutsi erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean Aginte-panelean edota SCORM-en laburpen-orrian.';
@@ -140,7 +139,7 @@ $string['eventreportviewed'] = 'Txostena ikusi da';
 $string['eventscolaunched'] = 'SCOa abiarazi da';
 $string['eventscorerawsubmitted'] = 'SCORM puntuazio gordina bidali da';
 $string['eventstatussubmitted'] = 'SCORMaren egoera bidali da';
-$string['eventtracksviewed'] = 'Ikusitako pistak';
+$string['eventtracksviewed'] = 'Ikusitako jarraipenen xehetasunak';
 $string['eventuserreportviewed'] = 'Erabiltzailearen txostena ikusi da';
 $string['everyday'] = 'Egunero';
 $string['everytime'] = 'Erabiltzen den aldi bakoitzean';
@@ -216,7 +215,6 @@ $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak SCORM motako bal
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala SCORM jardueretan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek SCORM jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['info'] = 'Informazioa';
 $string['interactions'] = 'Interakzioak';
 $string['invalidactivity'] = 'SCORM jarduera ez da egokia';
 $string['invalidhacpsession'] = 'HACP saio baliogabea';
@@ -225,6 +223,7 @@ $string['invalidmanifestresource'] = 'KONTUZ: baliabide hauek zure manifestuan a
 $string['invalidstatus'] = 'Egoera baliogabea';
 $string['invalidurl'] = 'URL baliogabea zehaztu da';
 $string['invalidurlhttpcheck'] = 'Balio ez duen URLa ezarri da. Arazketa mezua:<pre>{$a->cmsg}</pre>';
+$string['largetrackupgrade'] = 'Eguneratzearen hurrengo pauso honek osatzeko denbora-tarte bat eraman dezake, zure guneak SCORMetako {$a} jarraipen erregistro ditu eta taula egitura berri batera migratu behar dira, pazientzia izan ezazu aurrerapen-barrarik ez delako erakutsiko.';
 $string['last'] = 'Azken sarrera-data:';
 $string['lastaccess'] = 'Azken sarrera';
 $string['lastattempt'] = 'Osatutako azken saiakeraren puntuazioa';
@@ -242,6 +241,7 @@ $string['maximumattemptsdesc'] = 'Hobespen honek jarduera baterako lehenetsitako
 $string['maximumgradedesc'] = 'Hobespen honek jarduera baterako lehenetsitako gehieneko kalifikazioa ezartzen du';
 $string['menubar'] = 'Erakutsi menu-barra';
 $string['min'] = 'Gutxieneko puntuazioa';
+$string['minimumscoregreater'] = 'Gutxieneko kalifikazioa 0 baino handiagoa izan behar da.';
 $string['missing_attribute'] = '{$a->tag} etiketan {$a->attr} atributua falta da';
 $string['missing_tag'] = '{$a->tag} etiketa falta da';
 $string['missingparam'] = 'Beharrezko parametro bat falta da edo okerra da';
@@ -332,7 +332,7 @@ $string['privacy:metadata:attempt'] = 'Saiakeraren zenbakia';
 $string['privacy:metadata:scoes_track:element'] = 'Jarraitutako elementuaren izena';
 $string['privacy:metadata:scoes_track:value'] = 'Emandako elementuaren balioa';
 $string['privacy:metadata:scorm_aicc_session'] = 'AICC HACP-aren saioaren informazioa';
-$string['privacy:metadata:scorm_scoes_track'] = 'Jarduerarenak diren jarraitutako SCO-en datuak';
+$string['privacy:metadata:scorm_attempt'] = 'Erabiltzaile bakoitzak egindako SCORM saiakerak';
 $string['privacy:metadata:timemodified'] = 'Jarraitutako elementua azkenengoz aldatu zeneko unea';
 $string['privacy:metadata:userid'] = 'SCORM jardueran sartu zen erabiltzailearen IDa';
 $string['protectpackagedownloads'] = 'Babestu paketeen deskargak';
@@ -393,7 +393,7 @@ $string['statusbar'] = 'Erakutsi egoera-barra';
 $string['student_response'] = 'Erantzuna';
 $string['subplugintype_scormreport'] = 'Txostena';
 $string['subplugintype_scormreport_plural'] = 'Txostenak';
-$string['suspended'] = 'Etenda';
+$string['suspended'] = 'Bertan behera utzita';
 $string['syntax'] = 'Sintaxi-errorea';
 $string['tag_error'] = 'Etiketa ezezagun honek ({$a->tag}) eduki hau dauka: {$a->value}';
 $string['time'] = 'Ordua';

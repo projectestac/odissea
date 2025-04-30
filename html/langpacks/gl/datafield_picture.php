@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'gl', version '4.1'.
+ * Strings for component 'datafield_picture', language 'gl', version '4.4'.
  *
  * @package     datafield_picture
  * @category    string
@@ -29,7 +29,7 @@ $string['error_invalidparam1'] = 'A largura na vista única ten que ser un valor
 $string['error_invalidparam2'] = 'A altura na vista única ten que ser un valor numérico.';
 $string['error_invalidparam4'] = 'A largura na vista de lista ten que ser un valor numérico.';
 $string['error_invalidparam5'] = 'A altura na vista de lista ten que ser un valor numérico.';
-$string['fieldtypelabel'] = 'Campo de imaxe';
+$string['fieldtypelabel'] = 'Imaxe';
 $string['pluginname'] = 'Imaxe';
-$string['privacy:metadata'] = 'O compoñente de campo de imaxe non almacena ningún dato persoal, usa táboas definidas en mod_data.';
+$string['privacy:metadata'] = 'O compoñente do campo Imaxe non almacena ningún dato persoal; utiliza táboas definidas en mod_data.';
 $string['sample'] = 'Marcador de posición da descrición da imaxe';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_youtube', language 'ar', version '4.1'.
+ * Strings for component 'media_youtube', language 'ar', version '4.4'.
  *
  * @package     media_youtube
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['nocookie'] = 'استعمل النطاق الخالي من ملفات تعريف الارتباط';
+$string['nocookie_desc'] = 'استعمل النطاق youtube-nocookie.com لتضمين الفيديوهات. هذا من شأنه تقليل عدد ملفات تعريف الارتباط التي من أطراف ثالثة عند التضمين. هذا النطاق أيضًا ليس محظورًا من قبل بعض برامج صد الإعلانات.';
 $string['pluginname'] = 'يوتيوب';
 $string['pluginname_help'] = 'موقع مشاركة الفيديوهات youtube.com. روابط الفيديو وقوائم التشغيل مدعومة.';
 $string['privacy:metadata'] = 'إن ملحق مشغل وسائط يوتيوب لا يخزن أي بيانات شخصية.';

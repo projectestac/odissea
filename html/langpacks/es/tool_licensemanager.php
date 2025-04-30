@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_licensemanager', language 'es', version '4.1'.
+ * Strings for component 'tool_licensemanager', language 'es', version '4.4'.
  *
  * @package     tool_licensemanager
  * @category    string
@@ -36,7 +36,7 @@ $string['editlicense'] = 'Editar licencia';
 $string['editlicensename'] = 'Editar licencia \'{$a}\'';
 $string['enablelicensename'] = 'Habilitar licencia \'{$a}\'';
 $string['fullname'] = 'Nombre completo de la licencia';
-$string['fullnamerequirederror'] = 'Debe ingresar un nombre completo para la licencia.';
+$string['fullnamerequirederror'] = 'Debe introducir un nombre completo para la licencia.';
 $string['invalidurl'] = 'La URL de orígen no es válida';
 $string['license'] = 'Licencias';
 $string['licensemanager'] = 'Gestor de licencia';
@@ -45,11 +45,11 @@ $string['movelicenseupname'] = 'Mover la licencia \'{$a}\' hacia arriba';
 $string['pluginname'] = 'Gestor de licencia';
 $string['privacy:metadata'] = 'La extensión tool_licensemanager no almacena datos personales.';
 $string['shortname'] = 'Nombre corto de la licencia';
-$string['shortnamerequirederror'] = 'Debe ingresar un nombre corto para la licencia.';
+$string['shortnamerequirederror'] = 'Debe introducir un nombre corto para la licencia.';
 $string['sitedefaultlicenselock'] = 'Ésta es la licencia predeterminada para el sitio. No puede inhabilitarse.';
 $string['source'] = 'Orígen de la licencia';
 $string['source_help'] = 'La URL (con prefijo http:// o https://) en donde se encuentran los términos y condiciones de la licencia.';
-$string['sourcerequirederror'] = 'Debe ingresar un URL válido para el orígen de la licencia.';
+$string['sourcerequirederror'] = 'Debe introducir una URL válida para el origen de la licencia.';
 $string['version'] = 'Versión de la licencia';
 $string['version_help'] = 'Se utiliza la fecha de publicación de la versión de la licencia.';
 $string['versioncannotbefuture'] = 'La versión de la licencia no puede establecerse en una fecha futura.';

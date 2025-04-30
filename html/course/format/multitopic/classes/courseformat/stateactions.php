@@ -284,11 +284,19 @@ class stateactions extends \core_courseformat\stateactions {
         $format = course_get_format($course->id);
         $allsectionsextra = $format->fmt_get_sections_extra();
 
+        $delegatedids = [];
         foreach ($ids as $sectionid) {
             $sectionextra = $allsectionsextra[$sectionid];
+            if (!empty($sectionextra->sectionbase->component)) {
+                $delegatedids[] = $sectionid;
+                continue;
+            }
             if (!$visible && $sectionextra->section || $visible && $sectionextra->parentvisiblesan) {
                 course_update_section($course, $sectionextra->sectionbase, ['visible' => $visible]);
             }
+        }
+        if (count($delegatedids) > 0) {
+            parent::set_section_visibility($updates, $course, $delegatedids, $visible);
         }
         $this->section_state($updates, $course, $ids);
     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_helixfeedback', language 'en', version '4.1'.
+ * Strings for component 'assignfeedback_helixfeedback', language 'en', version '4.4'.
  *
  * @package     assignfeedback_helixfeedback
  * @category    string
@@ -31,4 +31,5 @@ $string['default_help'] = 'If set, this feedback method will be enabled by defau
 $string['enabled'] = 'Video Feedback';
 $string['enabled_help'] = 'If enabled, the marker can leave video feedback for each submission.';
 $string['pluginname'] = 'MEDIAL Video Feedback';
+$string['privacy:metadata'] = 'plugin does not store any personal data.';
 $string['view_feedback'] = 'View Video Feedback';

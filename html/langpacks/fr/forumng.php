@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'fr', version '4.1'.
+ * Strings for component 'forumng', language 'fr', version '4.4'.
  *
  * @package     forumng
  * @category    string
@@ -194,7 +194,7 @@ $string['draft_cannotreply'] = '<p>Il n’est pas possible d’ajouter une répo
 $string['draft_inreplyto'] = '(en réponse à {$a})';
 $string['draft_mismatch'] = 'Une erreur s’est produite pendant l’accès au brouillon du message (il se peut que vous n’en soyez pas l’auteur, ou bien qu’il ne fasse pas partie de la discussion en cours).';
 $string['draft_newdiscussion'] = '(nouvelle discussion)';
-$string['draft_noedit'] = 'L’option  "brouillon" ne peut être utilisée pendant l’édition des messages.';
+$string['draft_noedit'] = 'L’option "brouillon" ne peut être utilisée pendant l’édition des messages.';
 $string['draftexists'] = 'Une version de ce brouillon a été sauvegardé le {$a}. Si vous ne terminez pas la rédaction de ce message maintenant, vous le retrouverez en tant que brouillon sur la page principale de ce forum.';
 $string['drafts'] = 'Brouillons inachevés';
 $string['drafts_help'] = 'Lorsque vous enregistrer un brouillon, il apparaît dans cette liste. Cliquez sur le brouillon pour reprendre le travail.
@@ -252,7 +252,7 @@ $string['error_duplicate'] = 'Vous avez déjà rédigé un message en utilisant 
 $string['error_exception'] = 'Une erreur s’est produite sur le forum. Veuillez réessayer plus tard ou effectuer une autre action.<div class=\'forumng-errormessage\'>Message d’erreur : {$a}</div>';
 $string['error_feedlogin'] = 'Erreur chargement de l’utilisateur';
 $string['error_fileexception'] = 'Une erreur de traitement de fichier s’est produite. C’est susceptible d’être causé par un problème du système. Merci de réessayer plus tard.';
-$string['error_forwardemail'] = 'Il y a eu une erreur lors de l’envoi du courriel à  <strong>{$a}</strong>. Le courriel n’a pu être envoyé.';
+$string['error_forwardemail'] = 'Il y a eu une erreur lors de l’envoi du courriel à <strong>{$a}</strong>. Le courriel n’a pu être envoyé.';
 $string['error_invalidsubscriptionrequest'] = 'Votre demande d’abonnement n’est pas valide.';
 $string['error_makebig'] = 'Le cours ne contient que {$a->users} utilisateurs et vous avez demandé à {$a->readusers} lecteurs de lire chaque discussion. Merci de créer ou d’inscrire plus d’utilisateurs.';
 $string['error_markreadparams'] = 'Paramètre incorrect: nécessite un identifiant ou un cours.';

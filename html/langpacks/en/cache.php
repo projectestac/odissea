@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', version '4.1'.
+ * Strings for component 'cache', language 'en', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'Allowed extensions and its
 $string['cachedef_contextwithinsights'] = 'Context with insights';
 $string['cachedef_course_image'] = 'Course images';
 $string['cachedef_course_user_dates'] = 'The user dates for courses set to relative dates mode';
+$string['cachedef_courseactionsinstances'] = 'Loaded course actions instances';
 $string['cachedef_coursecat'] = 'Course categories lists for particular user';
 $string['cachedef_coursecatrecords'] = 'Course categories records';
 $string['cachedef_coursecattree'] = 'Course categories tree';
 $string['cachedef_coursecompletion'] = 'Course completion status';
 $string['cachedef_coursecontacts'] = 'List of course contacts';
 $string['cachedef_courseeditorstate'] = 'Session course state cache keys to detect course changes in the frontend';
+$string['cachedef_coursehiddengroups'] = 'Number of groups on a course with restricted visibility';
 $string['cachedef_coursemodinfo'] = 'Accumulated information about modules and sections for each course';
 $string['cachedef_coursesectionspreferences'] = 'Course section preferences';
 $string['cachedef_databasemeta'] = 'Database meta information';
-$string['cachedef_deprecatedcapabilities'] = 'System deprecated capabilities list';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'External badges for particular user';
 $string['cachedef_file_imageinfo'] = 'File image info e.g. dimensions';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'Grade letter queries';
 $string['cachedef_gradesetting'] = 'Course grade setting';
 $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_h5p_content_type_translations'] = 'H5P content-type libraries translations';
+$string['cachedef_h5p_libraries'] = 'H5P libraries';
 $string['cachedef_h5p_library_files'] = 'H5P library files';
+$string['cachedef_hookcallbacks'] = 'Hook callbacks';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
 $string['cachedef_langmenu'] = 'List of available languages';
 $string['cachedef_license'] = 'List of licences';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'Locking';
 $string['cachedef_message_processors_enabled'] = 'Message processors enabled status';
 $string['cachedef_message_time_last_message_between_users'] = 'Time created for most recent message in a conversation';
 $string['cachedef_modelfirstanalyses'] = 'First analysis by model and analysable';
+$string['cachedef_moodlenet_usercanshare'] = 'Users can share resources to MoodleNet';
+$string['cachedef_navigation_cache'] = 'Navigation cache';
 $string['cachedef_navigation_expandcourse'] = 'Navigation expandable courses';
 $string['cachedef_observers'] = 'Event observers';
 $string['cachedef_plugin_functions'] = 'Plugins available callbacks';
@@ -91,6 +96,7 @@ $string['cachedef_suspended_userids'] = 'List of suspended users per course';
 $string['cachedef_tagindexbuilder'] = 'Search results for tagged items';
 $string['cachedef_tags'] = 'Tags collections and areas';
 $string['cachedef_temp_tables'] = 'Temporary tables cache';
+$string['cachedef_theme_usedincontext'] = 'A theme has been used in context to override the default theme';
 $string['cachedef_user_course_content_items'] = 'User\'s content items (activities, resources and their subtypes) per course';
 $string['cachedef_user_favourite_course_content_items'] = 'User\'s starred items';
 $string['cachedef_user_group_groupings'] = 'User\'s groupings and groups per course';

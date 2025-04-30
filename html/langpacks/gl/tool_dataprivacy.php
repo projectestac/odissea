@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'gl', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'gl', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -325,6 +325,7 @@ $string['statusdeleted'] = 'Eliminado';
 $string['statusdetail'] = 'Estado:';
 $string['statusexpired'] = 'Caducado';
 $string['statuspending'] = 'Pendente';
+$string['statuspreprocessing'] = 'Pre-procesamento';
 $string['statusprocessing'] = 'Procesando';
 $string['statusready'] = 'Descarga preparada';
 $string['statusrejected'] = 'Rexeitado';

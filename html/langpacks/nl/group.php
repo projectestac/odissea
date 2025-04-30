@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', version '4.1'.
+ * Strings for component 'group', language 'nl', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = 'Ben je zeker dat je de groep \'{$a}\' wil verwi
 $string['deletegrouping'] = 'Verwijder groepering';
 $string['deletegroupingconfirm'] = 'Ben je zeker dat je de groepering \'{$a}\' wil verwijderen?(Groepen in de groepering worden niet verwijderd).';
 $string['deletegroupsconfirm'] = 'Ben je er zeker van dat je volgende groepen wil verwijderen?';
-$string['deleteselectedgroup'] = 'Verwijder geselecteerde groep';
+$string['deleteselectedgroup'] = 'Verwijder';
+$string['disablemessagingaction'] = 'Berichten uitschakelen';
 $string['editgroupingsettings'] = 'Bewerk instellingen groepering';
 $string['editgroupsettings'] = 'Bewerk instellingen groep';
 $string['editusersgroupsa'] = 'Bewerk groepen voor "{$a}"';
 $string['enablemessaging'] = 'Berichten naar groep';
 $string['enablemessaging_help'] = 'Indien ingeschakeld kunnen groepsleden berichten sturen naar andere leden in hun groep via het berichtenpaneel.';
+$string['enablemessagingaction'] = 'Berichten inschakelen';
 $string['encoding'] = 'Codering';
 $string['enrolmentkey'] = 'Cursussleutel';
 $string['enrolmentkey_help'] = 'Een aanmeldsleutel beperkt de toegang tot de cursus tot leerlingen die de sleutel kennen. Als een groepsaanmeldingssleutel is opgegeven, dan zal het ingeven van de sleutel de leerling niet alleen toegang geven tot de cursus, maar hem ook automatisch lid maken van deze groep.
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = 'Een aanmeldsleutel beperkt de toegang tot de cur
 Opmerking: Groepaanmeldingssleutels moet ingeschakeld zijn in de instellingen van Zelf aanmelden en daar moet ook een aanmeldingssleutel voor de cursus opgegeven worden. Het geven van die sleutel zal resulteren in een aanmelding in de cursus zonder lid te worden van een groep.';
 $string['enrolmentkeyalreadyinuse'] = 'Deze aanmeldingssleutel is al in gebruik voor een andere groep.';
 $string['erroraddremoveuser'] = 'Fout bij toevoegen/verwijderen van gebruiker {$a} aan groep';
+$string['erroraddtogroup'] = 'Ongeldige waarde voor addtogroup. Het moet 0 zijn voor geen groepsmodus of 1 voor het maken van een nieuwe groep.';
+$string['erroraddtogroupgroupname'] = 'Je kunt geen groepsnaam opgeven wanneer addtogroup is ingesteld.';
 $string['erroreditgroup'] = 'Fout bij het maken/updaten van groep {$a}';
 $string['erroreditgrouping'] = 'Fout bij het maken/updaten van groepering {$a}';
 $string['errorinvalidgroup'] = 'Fout, ongeldige groep {$a}';
@@ -114,6 +118,8 @@ $string['groupmembers'] = 'Groepsleden';
 $string['groupmemberssee'] = 'Bekijk groepsleden';
 $string['groupmembersselected'] = 'Leden van de geselecteerde groep';
 $string['groupmode'] = 'Groepsmodus';
+$string['groupmode_groupsseparate_help'] = 'Leerlingen zijn in groepen verdeeld en zien enkel het werk van hun groep.';
+$string['groupmode_groupsvisible_help'] = 'Leerlingen zijn in groepen verdeeld en zien ook het werk van andere groepen.';
 $string['groupmode_help'] = '* Geen groepen
 * Gescheiden groepen - leerlingen zijn in groepen verdeeld en zien enkel het werk van hun groep.
 * Zichtbare groepen - leerlingen zijn in groepen verdeeld en zien ook het werk van andere groepen.
@@ -136,7 +142,6 @@ $string['groupspreview'] = 'Voorbeeld groepen';
 $string['groupsseparate'] = 'Gescheiden groepen';
 $string['groupsvisible'] = 'Zichtbare groepen';
 $string['grouptemplate'] = 'Groep @';
-$string['hidepicture'] = 'Verberg foto';
 $string['importgroups'] = 'Importeer groepen';
 $string['importgroups_help'] = 'Groepen kunnen geïmporteerd worden via een tekstbestand. De opmaak van het bestand moet als volgt zijn:
 
@@ -149,9 +154,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Enkel actieve aanmeldingen meenemen';
 $string['includeonlyactiveenrol_help'] = 'Indien ingeschakeld zullen geschorste gebruikers niet mee opgenomen worden in groepen.';
 $string['javascriptrequired'] = 'Voor deze pagina moet Javascript ingeschakeld zijn';
+$string['manageactions'] = 'Beheer';
 $string['memberofgroup'] = 'Groepslid van: {$a}';
 $string['members'] = 'Leden per groep';
 $string['membersofselectedgroup'] = 'Leden van de geselecteerde groep';
+$string['messagingdisabled'] = 'Berichten succesvol uitgeschakeld in {$a} groep(en)';
+$string['messagingenabled'] = 'Berichten inschakelen in {$a} groep(en)';
 $string['mygroups'] = 'Mijn groepen';
 $string['namingscheme'] = 'Naamschema';
 $string['namingscheme_help'] = 'Het at-symbool (@) kan gebruikt worden om groepen te maken met namen die letters bevatten. Bijvoorbeeld Groep @ zal groepen genereren met de namen Groep A, Groep B, Groep C, ...
@@ -176,6 +184,9 @@ $string['numgroups'] = 'Aantal groepen';
 $string['nummembers'] = 'Aantal leden per groep';
 $string['othergroups'] = 'Andere groepen';
 $string['overview'] = 'Overzicht';
+$string['participation'] = 'Toon groep in rolmenu voor activiteiten in groepsmodus';
+$string['participation_help'] = 'Moeten groepsleden deze groep kunnen selecteren voor activiteiten in gescheiden of zichtbare groepen-modus? (Enkel toepasbaar als het groepslidmaatschap zichtbaar is voor iedereen of enkel zichtbaar voor leden.)';
+$string['participationshort'] = 'Deelname';
 $string['potentialmembers'] = 'Mogelijke groepsleden: {$a}';
 $string['potentialmembs'] = 'Mogelijke leden';
 $string['printerfriendly'] = 'Printervriendelijke overzichtspagina groeperingen';
@@ -200,3 +211,18 @@ $string['toomanygroups'] = 'Onvoldoende gebruikers om dit aantal groepen te vull
 $string['usercount'] = 'Aantal gebruikers';
 $string['usercounttotal'] = 'Aantal gebruikers ({$a})';
 $string['usergroupmembership'] = 'Geselecteerd gebruikerslidmaatschap:';
+$string['visibility'] = 'Groepslidmaatschap zichtbaarheid';
+$string['visibility_help'] = '* Zichtbaar - alle gebruikers zien wie lid is van de groep
+* Enkel zichtbaar voor leden - gebruikers die niet in de groep zitten kunnen de  groep noch de leden zien
+* Enkel eigen lidmaatschap zien - gebruikers zien dat ze in deze groep zitten, maar zien de andere leden niet
+* Verborgen - enkel leraren kunnen de groep en de leden zien
+
+Gebruikers die de mogelijkheid "verborgen groepen zien" hebben, kunnen altijd het groepslidmaatschap zien.
+
+Merk op dat je deze instelling niet meer kan wijzigen zodra een groep leden heeft.';
+$string['visibilityall'] = 'Zichtbaar';
+$string['visibilitymembers'] = 'Enkel zichtbaar voor leden';
+$string['visibilitynone'] = 'Verborgen';
+$string['visibilityown'] = 'Enkel eigen lidmaatschap zien';
+$string['visibilityshort'] = 'Zichtbaarheid';
+$string['withselected'] = 'Met geselecteerde';

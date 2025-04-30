@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_date', language 'de', version '4.1'.
+ * Strings for component 'datafield_date', language 'de', version '4.4'.
  *
  * @package     datafield_date
  * @category    string

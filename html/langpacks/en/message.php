@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', version '4.1'.
+ * Strings for component 'message', language 'en', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'Contacts';
 $string['conversationactions'] = 'Conversation actions menu';
 $string['decline'] = 'Decline';
 $string['defaultmessageoutputs'] = 'Notification settings';
-$string['defaults'] = 'Defaults';
 $string['deleteallconfirm'] = 'Are you sure you would like to delete this entire conversation? This will not delete it for other conversation participants.';
 $string['deleteallmessages'] = 'Delete all messages';
 $string['deleteallselfconfirm'] = 'Are you sure you would like to delete this entire personal conversation?';
@@ -97,11 +96,7 @@ $string['info'] = 'User info';
 $string['isnotinyourcontacts'] = '{$a} is not in your contacts';
 $string['loadmore'] = 'Load more';
 $string['loggedin'] = 'Online';
-$string['loggedin_help'] = 'Configure how you would like to receive notifications when you are logged into Moodle';
-$string['loggedindescription'] = 'When you are logged into Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoff_help'] = 'Configure how you would like to receive notifications when you are not logged into Moodle';
-$string['loggedoffdescription'] = 'When you are not logged into Moodle';
 $string['managemessageoutputs'] = 'Default notification preferences';
 $string['message'] = 'Message';
 $string['messagecontactrequest'] = '{$a->user} is requesting to be added as a contact. Visit your <a href="{$a->url}">contact requests</a> page to respond to the request';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = 'Message sent to 1 person';
 $string['sendbulkmessagesingle'] = 'Send message to 1 person';
 $string['sendcontactrequest'] = 'Send contact request';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = 'Sending "{$a->provider}" via "{$a->processor}"';
 $string['sendingviaenabled'] = 'Sending "{$a->provider}" via "{$a->processor}" enabled status';
 $string['sendingvialocked'] = 'Sending "{$a->provider}" via "{$a->processor}" locked status';
-$string['sendingviawhen'] = 'Sending "{$a->provider}" via "{$a->processor}" when {$a->state}';
 $string['sendmessage'] = 'Send message';
 $string['sendmessageto'] = 'Send message to {$a}';
 $string['sendmessagetopopup'] = 'Send message to {$a} - new window';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = 'View full notification';
 $string['viewmessageswith'] = 'View messages with {$a}';
 $string['viewnotificationresource'] = 'Go to: {$a}';
 $string['viewunreadmessageswith'] = 'View unread messages with {$a}';
+$string['waitingforcontactaccept'] = 'Waiting to be added as contact';
 $string['wouldliketocontactyou'] = 'Would like to contact you';
 $string['writeamessage'] = 'Write a message...';
 $string['you'] = 'You:';

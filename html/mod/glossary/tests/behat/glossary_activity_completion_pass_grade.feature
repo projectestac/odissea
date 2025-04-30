@@ -29,16 +29,16 @@ Feature: Pass grade completion in the glossary activity
       | scale[modgrade_type]     | Point                                             |
       | scale[modgrade_point]    | 100                                               |
       | Ratings > Grade to pass  | 50                                                |
-      | Completion tracking      | Show activity as complete when conditions are met |
-      | Require view             | 1                                                 |
-      | Require grade            | 1                                                 |
-      | completionpassgrade      | 1                                                 |
+      | Add requirements         | 1                  |
+      | View the activity        | 1                                                 |
+      | Receive a grade          | 1                                                 |
+      | Passing grade            | 1                                                 |
       | completionentriesenabled | 1                                                 |
       | completionentries        | 1                                                 |
     And I press "Save and display"
     And I log out
 
-  Scenario: View automatic completion items as a teacher
+  Scenario: A teacher can view a glossary activity completion conditions
     Given I log in as "teacher1"
     And I am on "Course 1" course homepage
     When I follow "Music history"
@@ -47,7 +47,7 @@ Feature: Pass grade completion in the glossary activity
     And "Music history" should have the "Receive a grade" completion condition
     And "Music history" should have the "Receive a passing grade" completion condition
 
-  Scenario: View automatic completion items as a failing student
+  Scenario: A student will not complete a glossary activity if the conditions are not met
     Given I am on the "Music history" "glossary activity" page logged in as student1
     And the "View" completion condition of "Music history" is displayed as "done"
     And the "Make entries: 1" completion condition of "Music history" is displayed as "todo"
@@ -75,7 +75,7 @@ Feature: Pass grade completion in the glossary activity
     And the "Receive a grade" completion condition of "Music history" is displayed as "done"
     And the "Receive a passing grade" completion condition of "Music history" is displayed as "failed"
 
-  Scenario: View automatic completion items as a passing student
+  Scenario: A student can complete a glossary activity by meeting the completion conditions
     Given I am on the "Music history" "glossary activity" page logged in as student1
     And the "View" completion condition of "Music history" is displayed as "done"
     And the "Make entries: 1" completion condition of "Music history" is displayed as "todo"

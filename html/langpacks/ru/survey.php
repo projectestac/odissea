@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ru', version '4.1'.
+ * Strings for component 'survey', language 'ru', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Фактический';
 $string['actualclass'] = 'Фактический класс';
 $string['actualstudent'] = '{$a} фактический';
 $string['allquestionrequireanswer'] = 'Все вопросы обязательные и на них должны быть ответы';
-$string['allquestions'] = 'Все вопросы по порядку, все студенты';
 $string['allscales'] = 'Все шкалы, все студенты';
 $string['alreadysubmitted'] = 'Ваш ответ на анкету уже существует';
 $string['analysisof'] = 'Анализы {$a}';
@@ -95,7 +94,6 @@ $string['ciq5'] = 'Какие события произвели на вас на
 $string['ciq5short'] = 'Наиболее впечатляющий момент';
 $string['ciqintro'] = 'Вспоминая о недавних событиях в классе, ответьте на следующие вопросы.';
 $string['ciqname'] = 'Критические инциденты';
-$string['clicktocontinue'] = 'Для продолжения нажмите сюда …';
 $string['clicktocontinuecheck'] = 'Проверить и продолжить…';
 $string['colles1'] = 'Мое обучение фокусируется на темах, которые меня интересуют';
 $string['colles10'] = 'Я прошу других студентов объяснить свои мысли';
@@ -181,7 +179,7 @@ $string['collespintro'] = 'Цель этого анкетирования сос
 Заранее благодарим.';
 $string['collespname'] = 'COLLES (Предпочтения)';
 $string['completiondetail:submit'] = 'Отправлять ответы';
-$string['completionsubmit'] = 'Студент должен дать ответ';
+$string['completionsubmit'] = 'Отправлен ответ';
 $string['customintro'] = 'Описание';
 $string['deleteallanswers'] = 'Удалить все ответы на опрос';
 $string['deleteanalysis'] = 'Удалить анализ ответов';
@@ -275,4 +273,3 @@ $string['surveytype_help'] = 'Доступны 3 типа анкет:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Спасибо, что заполнили анкету, {$a}';
 $string['time'] = 'Время';
-$string['viewsurveyresponses'] = 'Посмотреть заполненные анкеты';

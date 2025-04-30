@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'nl', version '4.1'.
+ * Strings for component 'enrol_meta', language 'nl', version '4.4'.
  *
  * @package     enrol_meta
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Voeg toe aan groep';
-$string['coursesort'] = 'Cursuslijst instellen';
-$string['coursesort_help'] = 'Dit bepaalt of de lijst met cursussen die gelinkt kunnen worden gesorteerd worden volgens een bepaalde sorteervolgorde (bijvoorbeeld de volgorde die ingesteld in Site-beheer>Cursussen>Beheer cursussen en categorieën) of in alfabetische volgorde.';
+$string['coursesort'] = 'Bron cursuslijst volgorde';
+$string['coursesort_help'] = 'Wanneer de broncursus aan de doelcursus gelinkt wordt, hoe moeten de broncursussen dan geordend worden?';
 $string['creategroup'] = 'Maak nieuwe groep';
 $string['defaultgroupnametext'] = '{$a->name} cursus {$a->increment}';
 $string['enrolmetasynctask'] = 'Koepelcursus aanmeldingssynchronisatietaak';
@@ -36,13 +36,15 @@ $string['meta:config'] = 'Configureer meta aanmeldingsinstellingen';
 $string['meta:selectaslinked'] = 'Selecteer cursus als koepelcursus';
 $string['meta:unenrol'] = 'Meld de geschorste gebruikers af';
 $string['nosyncroleids'] = 'Niet-gesynchroniseerde rollen';
-$string['nosyncroleids_desc'] = 'Standaard zijn alle roltoewijzingen op cursus niveau gesynchroniseerd van bovenliggende tot onderliggende cursussen. Rollen die hier geselecteerd zijn, worden niet opgenomen in het synchronisatie proces. De rollen die beschikbaar zijn voor synchronisatie worden bij de volgende crontaak bijgewerkt.';
+$string['nosyncroleids_desc'] = 'Selecteer rollen die niet gesynchroniseerd moeten worden tussen de broncursus en de doelcursus.';
 $string['pluginname'] = 'Link naar koepelcursus';
-$string['pluginname_desc'] = 'Koepelcursus aanmeldingsplugin synchroniseert aanmeldingen en rollen tussen twee verschillende cursussen';
-$string['privacy:metadata:core_group'] = 'Inschrijven meta-plug-in kan een nieuwe groep maken of een bestaande groep gebruiken om alle deelnemers aan de gekoppelde cursus toe te voegen.';
+$string['pluginname_desc'] = 'De koepelcursus link synchroniseert aanmeldingen en rollen van de broncursus naar de doelcursus.';
+$string['privacy:metadata:core_group'] = 'De koepelcursus aanmeldingsplugin kan een nieuwe groep maken of een bestaande gebruiken en er deelnemers aan toevoegen vanuit de broncursus.';
+$string['samemetacourse'] = 'Je kunt geen koepelcursus koppelen aan zichzelf.';
 $string['syncall'] = 'Synchroniseer alle aangemelde gebruikers';
-$string['syncall_desc'] = 'Indien ingeschakeld worden alle aangemelde gebruikers gesynchroniseerd, zelfs als ze geen rol hebben in de bovenliggende cursus.';
+$string['syncall_desc'] = 'Indien ingeschakeld worden alle aangemelde gebruikers gesynchroniseerd van de broncursus, zelfs als ze daar geen rol hebben. Anders zullen enkel gebruikers die minstens één rol hebben aangemeld worden in de doelcursus.';
+$string['unknownmetacourse'] = 'Onbekende koepelcursus korte naam';
 $string['wscannotcreategroup'] = 'Geen toestemming om groep te maken in gekoppelde cursus-ID = {$a}.';
-$string['wsinvalidcourse'] = 'Cursus-ID = {$a} bestaat niet of geen toestemming om te linken bij koepelcursus aanmelding.';
-$string['wsinvalidmetacourse'] = 'Koepelcursus id = {$a} bestaat niet of geen toestemming om aanmeldingen toe te voegen.';
+$string['wsinvalidcourse'] = 'Cursus-ID = {$a} bestaat niet of je hebt geen toestemming om te linken met koepelcursus aanmelding.';
+$string['wsinvalidmetacourse'] = 'Koepelcursus id = {$a} bestaat niet of je hebt geen toestemming om een aanmelding toe te voegen.';
 $string['wsnoinstancesspecified'] = 'Geen instanties opgegeven';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'en', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'en', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Remove overrides';
 $string['save'] = 'Save';
 $string['savegrades'] = 'Saving grades';
 $string['savegradessuccess'] = 'Grades were set for {$a} items';
-$string['searchgrades'] = 'Search grade items';
 $string['selectagrade'] = 'Select a grade item';
 $string['selectgradeitemlink'] = 'Select a grade item';
 $string['singleview:view'] = 'View single view';
 $string['singleviewdescription'] = 'In single view you can override or exclude selected grades and bulk insert grades.';
+$string['singleviewreport_gradeitem'] = 'Single view for this item';
+$string['singleviewreport_user'] = 'Single view for this user';
 $string['summarygrade'] = 'A table of users, with columns for range, grade, feedback, and whether to override or exclude a particular grade.';
 $string['summaryuser'] = 'A table of grade items, with columns for grade category, range, grade, feedback, and whether to override or exclude a particular grade.';
 $string['unsavedataalert'] = 'If you have unsaved changes on the page, you will lose them if you proceed with bulk insert grades.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Unsaved data warning';
 $string['userselect'] = 'Select activity';
 $string['viewby'] = 'View by';
 $string['viewsinglegradeitem'] = 'Select a grade item above';
-$string['viewsingleuser'] = 'Select a user above to view all their grades';
+$string['viewsingleuser'] = 'Search for a user to view all their grades';
 $string['viewsingleuserorgradeitem'] = 'View all the grades of a single user or grade item.';

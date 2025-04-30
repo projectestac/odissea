@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'ja', version '4.1'.
+ * Strings for component 'enrol_category', language 'ja', version '4.4'.
  *
  * @package     enrol_category
  * @category    string

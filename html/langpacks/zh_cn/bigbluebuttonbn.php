@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'zh_cn', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'zh_cn', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = '发布录制';
 $string['bigbluebuttonbn:unprotectrecordings'] = '取消对录制的保护';
 $string['bigbluebuttonbn:unpublishrecordings'] = '取消发布录制';
 $string['bigbluebuttonbn:view'] = '查看 BigBlueButton 空间';
+$string['bigbluebuttonbn:viewallrecordingformats'] = '查看所有录音格式';
 $string['bigbluebuttondisablednotification'] = 'BigBlueButton 活动模块已被禁用，任何现有的 BigBlueButton 课程活动目前都无法访问。 在重新启用此插件之前，请确保您已阅读并接受与 Blindside Networks Inc 签订的<a href="{$a}" target="_blank">数据处理协议</a>';
 $string['bigbluebuttondisablednotification_subject'] = 'BigBlueButton 活动模块已禁用。';
 $string['cachedef_currentfetch'] = '列出最近获取的任何记录的数据。';
 $string['cachedef_recordings'] = '记录元数据';
 $string['cachedef_serverinfo'] = '远程服务器信息';
+$string['cachedef_subplugins'] = '子插件例程使用的缓存，以加速插件发现过程。';
 $string['cachedef_validatedurls'] = '已验证URL检查的缓存';
 $string['calendarstarts'] = '{$a}计划于';
 $string['cannotperformaction'] = '无法对此录制执行操作{$a}';
-$string['completionattendance'] = '学生必须参加以下课程：';
+$string['completionattendance'] = '需要出席（分钟）';
 $string['completionattendance_desc'] = '学生必须进入房间并至少停留{$a}分钟。';
 $string['completionattendance_event_desc'] = '学生已进入房间并在课程中至少停留了{$a}分钟';
-$string['completionattendancegroup'] = '要求出席';
+$string['completionattendancegroup'] = '要求出席（分钟）';
 $string['completionattendancegroup_help'] = '完成会议需要参加（n）分钟。';
 $string['completionengagement_desc'] = '在会议期间参与活动';
 $string['completionengagementchats'] = '聊天室';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = '完成更新状态';
 $string['completionvalidatestate'] = '完成验证';
 $string['completionvalidatestatetriggered'] = '已经触发完成验证。';
 $string['completionview'] = '需要查看';
-$string['completionview_desc'] = '学生必须加入房间或播放录音才能完成。';
+$string['completionview_desc'] = '查看房间';
 $string['completionview_event_desc'] = '已查看房间。';
+$string['config_checksum_algorithm'] = 'BigBlueButton 服务器校验和算法';
+$string['config_checksum_algorithm_description'] = 'SHA1 与较旧的服务器兼容，SHA256 和 SHA512 更安全，SHA512 符合 FIPS 140-2 标准。';
 $string['config_default_messages'] = '默认消息';
 $string['config_default_messages_description'] = '设置活动消息的默认值';
 $string['config_disablecam_default'] = '禁用默认启用的网络摄像头';
@@ -109,7 +113,7 @@ $string['config_experimental_features_description'] = '实验功能的配置。'
 $string['config_extended_capabilities'] = '扩展功能';
 $string['config_extended_capabilities_description'] = 'BigBlueButton服务器提供扩展功能时的配置。';
 $string['config_general'] = '常规设置';
-$string['config_general_description'] = '始终使用这些设置。';
+$string['config_general_description'] = '要设置 BigBlueButton，您可以使用自己的 BigBlueButton 服务器和凭据，也可以通过 <a href=“https://registration-portal.blindsidenetworks.com/” target=“_blank”>Blindside Networks 注册门户 （opens in a new window） 获取凭据</a>。';
 $string['config_guestaccess_enabled'] = '外部访客访问';
 $string['config_guestaccess_enabled_description'] = '允许网站上没有帐户的用户访问房间';
 $string['config_hideuserlist_default'] = '默认启用隐藏用户列表';
@@ -140,10 +144,12 @@ $string['config_poll_interval'] = '以秒为单位刷新房间的状态';
 $string['config_poll_interval_description'] = '轮询间隔必须至少为 2 秒。如有必要，您可以通过增加间隔来降低远程服务器上的负载。';
 $string['config_presentation_default'] = '默认演示文件';
 $string['config_presentation_default_description'] = '可以提供一个文件供所有房间使用。';
-$string['config_preuploadpresentation'] = '预上传演示文稿';
+$string['config_preuploadpresentation'] = '演示文稿';
 $string['config_preuploadpresentation_description'] = '这些设置启用或禁用用户界面中的选项，并定义这些选项的默认值。仅当 BigBlueButton可以访问Moodle服务器时，该功能才有效。';
-$string['config_preuploadpresentation_editable'] = '预上传演示文稿可编辑';
+$string['config_preuploadpresentation_editable'] = '活动页面上的演示文件';
 $string['config_preuploadpresentation_editable_description'] = '添加或更新房间或会议时，可在用户界面中编辑预上传演示功能。';
+$string['config_profile_picture_enabled'] = '显示个人资料图片';
+$string['config_profile_picture_enabled_description'] = '参与者的个人资料图片是否应该在BigBlueButton会话中显示？';
 $string['config_recording'] = '录制';
 $string['config_recording_all_from_start_default'] = '从头开始录制';
 $string['config_recording_all_from_start_default_description'] = '添加新的 BigBlueButton 房间时，是否应默认启用“从头开始录制”设置？';
@@ -162,6 +168,9 @@ $string['config_recording_protect_editable'] = '可以编辑受保护的录制�
 $string['config_recording_protect_editable_description'] = '如果选中，该界面包括一个用于保护/取消保护录制内容的选项。';
 $string['config_recording_refresh_period'] = '录制刷新周期（秒）';
 $string['config_recording_refresh_period_description'] = '应该多久查询一次BigBlueButton服务器以刷新远程信息以进行录制？';
+$string['config_recording_safe_formats'] = '每个人都可以查看的录音格式';
+$string['config_recording_safe_formats_description'] = '选择每个人都可以查看的格式。
+所有其他格式只有具有mod/bigbluebuttonbn：viewallrecordingformats 和mod/bigbluebuttonbn权限教师和其他用户才能使用 ：管理录音功能。';
 $string['config_recordingready_enabled'] = '发送录制可用通知';
 $string['config_recordingready_enabled_description'] = '如果启用，当录制链接可用时，就会发出通知。此功能需要在BigBlueButton服务器上启用脚本post_publish_recording_ready_callback。';
 $string['config_recordings'] = '显示录制内容';
@@ -187,15 +196,9 @@ $string['config_scheduled_description'] = '这些设置定义了预定会议的�
 $string['config_scheduled_pre_opening'] = '在开放时间之前可以进入';
 $string['config_scheduled_pre_opening_description'] = '在预定开放时间之前，房间开放的时间（分钟）。';
 $string['config_server_url'] = 'BigBlueButton服务器URL';
-$string['config_server_url_description'] = '默认凭据适用于Blindside Networks提供的<a href=""https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/"" target=""_blank"">免费为Moodle提供的BigBlueButton服务（在新窗口打开）</a>限制如下：
-<ol>
-<li>每节课的最长时长为 60 分钟</li>
-<li>每个会话的最大并发用户数为 25</li>
-<li>录制内容将在七 (7) 天后过期且不可下载</li>
-<li>只有管理员可以看到学生的网络摄像头。</li>
-</ol>';
+$string['config_server_url_description'] = 'BigBlueButton 服务器的 URL。';
 $string['config_shared_secret'] = 'BigBlueButton共享密码';
-$string['config_shared_secret_description'] = '你的BigBlueButton服务器的安全密钥。默认的密钥是由Blindside Networks提供的免费BigBlueButton服务。';
+$string['config_shared_secret_description'] = 'BigBlueButton服务器的安全密钥。';
 $string['config_uidelegation_enabled'] = '启用了UI授权';
 $string['config_uidelegation_enabled_description'] = '这些设置启用或禁用对BigBlueButton服务器的UI授权。';
 $string['config_userlimit'] = '用户限制';
@@ -221,9 +224,10 @@ $string['config_waitformoderator_ping_interval_description'] = '服务器应该�
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButton使用了config.php中的全局变量，该变量已被废弃。请转换该文件，因为在未来的版本中它将不被支持。';
 $string['config_warning_curl_not_installed'] = '此功能需要安装并启用php的CURL扩展。只有满足此条件，才能访问设置。';
 $string['config_welcome_default'] = '默认欢迎信息';
-$string['config_welcome_default_description'] = '与会者进入房间时会显示欢迎消息。 如果该字段留空，则会显示在 BigBlueButton 服务器上设置的消息。';
+$string['config_welcome_default_description'] = '与会者进入房间时会显示欢迎消息，如果该字段留空，则会显示语言字符串mod_form_field_welcome_default';
 $string['config_welcome_editable'] = '默认欢迎消息可由教师编辑';
 $string['config_welcome_editable_description'] = '添加或更新实例时，可以编辑欢迎消息';
+$string['credentials_warning'] = '默认服务器凭据的使用将很快过期（请参阅上面的注释以获取新凭据）。';
 $string['dpainfonotsigned'] = '在启用此插件之前，您必须确认已阅读并接受 <a href=“{$a}”>Blindside Networks 数据处理协议</a>';
 $string['enablingbigbluebutton'] = '启用BigBlueButton活动';
 $string['enablingbigbluebuttondpainfo'] = '为了履行数据保护义务，在启用此插件之前，您必须确认您已阅读并接受<a href=""{$a}"" target=""_blank"">Blindside Networks 数据处理协议</a>。请咨询您自己的私人专家以获取建议。';
@@ -312,6 +316,7 @@ $string['instance_type_default'] = '有录制内容的房间';
 $string['instance_type_recording_only'] = '仅录制内容';
 $string['instance_type_room_only'] = '仅房间';
 $string['instanceprofilewithoutrecordings'] = '此实例简介文件无法显示录制内容';
+$string['managebbbextplugins'] = '管理 BigBlueButton 插件';
 $string['messageprovider:instance_updated'] = 'BigBlueButton会话已更新';
 $string['messageprovider:recording_ready'] = 'BigBlueButton录制可用';
 $string['minute'] = '分钟';
@@ -359,7 +364,7 @@ $string['mod_form_field_participant_list_type_user'] = '用户';
 $string['mod_form_field_record'] = '可以记录会话。';
 $string['mod_form_field_recordallfromstart'] = '从头开始记录';
 $string['mod_form_field_recordhidebutton'] = '隐藏录制按钮';
-$string['mod_form_field_recordings_deleted'] = '包括已删除活动的录音';
+$string['mod_form_field_recordings_deleted'] = '包括已删除活动的记录';
 $string['mod_form_field_recordings_html'] = '以普通HTML显示表格';
 $string['mod_form_field_recordings_imported'] = '仅显示导入的链接';
 $string['mod_form_field_recordings_preview'] = '显示录制预览';
@@ -413,6 +418,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = '创建日志的�
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = '触发事件的用户的用户 ID。';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = '存储关于录制内容的元数据。';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = '上次更改录制的用户的用户ID。';
+$string['progress_createbigbluebuttonbn'] = '创建 BigBlueButton 活动 （{$a}）';
 $string['recordings_from_deleted_activities'] = '已删除活动的录制内容';
 $string['recordingurlnotfound'] = '录制URL无效。';
 $string['removedevents'] = '已删除的事件';
@@ -432,8 +438,12 @@ $string['search:activity'] = 'BigBlueButton - 活动信息';
 $string['search:tags'] = 'BigBlueButton - 标签信息';
 $string['sendnotification'] = '发送通知';
 $string['settings'] = 'BigBlueButton 设置';
+$string['settings_credential_warning'] = 'BigBlueButton 服务器凭据即将过期。请参阅 <a href=“{$a->settingslink}” target=“_blank”>BigBlueButton 常规设置 （opens in a new window）</a>。';
+$string['settings_credential_warning_no_capability'] = 'BigBlueButton 服务器凭据即将过期。请联系您的网站管理员。';
 $string['started_at'] = '开始';
 $string['starts_at'] = '开始';
+$string['subplugintype_bbbext'] = 'BigBlueButton 活动扩展';
+$string['subplugintype_bbbext_plural'] = 'BigBlueButton 活动扩展';
 $string['taskname:check_dismissed_recordings'] = '检查尚未找到的录音';
 $string['taskname:check_pending_recordings'] = '获取待处理的录制内容';
 $string['userlimitreached'] = '已达到会话中允许的用户数。';

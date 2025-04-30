@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dbtransfer', language 'gl', version '4.1'.
+ * Strings for component 'dbtransfer', language 'gl', version '4.4'.
  *
  * @package     dbtransfer
  * @category    string

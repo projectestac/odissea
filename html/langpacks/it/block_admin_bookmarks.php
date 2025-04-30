@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'it', version '4.1'.
+ * Strings for component 'block_admin_bookmarks', language 'it', version '4.4'.
  *
  * @package     block_admin_bookmarks
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = 'Aggiungere blocco Segnalibri amministratore';
 $string['admin_bookmarks:myaddinstance'] = 'Aggiungere blocco Segnalibri amministratore nella Dashboard';
 $string['pluginname'] = 'Segnalibri amministratore';
-$string['privacy:metadata'] = 'Il blocco Segnalibri amministratore visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Segnalibri amministratore visualizza solamente dati memorizzati da altri componenti.';

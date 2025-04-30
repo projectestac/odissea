@@ -16,8 +16,13 @@
 
 namespace qbank_managecategories;
 
+defined('MOODLE_INTERNAL') || die();
+
 use moodle_url;
 use core_question\local\bank\question_edit_contexts;
+
+global $CFG;
+require_once($CFG->dirroot . '/mod/quiz/tests/quiz_question_helper_test_trait.php');
 
 /**
  * Unit tests for helper class.
@@ -28,7 +33,9 @@ use core_question\local\bank\question_edit_contexts;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @coversDefaultClass \qbank_managecategories\helper
  */
-class helper_test extends \advanced_testcase {
+final class helper_test extends \advanced_testcase {
+
+    use \quiz_question_helper_test_trait;
 
     /**
      * @var \context_module module context.
@@ -82,7 +89,7 @@ class helper_test extends \advanced_testcase {
      *
      * @covers ::question_remove_stale_questions_from_category
      */
-    public function test_question_remove_stale_questions_from_category() {
+    public function test_question_remove_stale_questions_from_category(): void {
         global $DB;
 
         $qcat1 = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
@@ -97,7 +104,7 @@ class helper_test extends \advanced_testcase {
         quiz_add_quiz_question($q2b->id, $this->quiz);
 
         // Adding a new random question does not add a new question, adds a question_set_references record.
-        quiz_add_random_questions($this->quiz, 0, $qcat2->id, 1, false);
+        $this->add_random_questions($this->quiz->id, 0, $qcat2->id, 1);
 
         // We added one random question to the quiz and we expect the quiz to have only one random question.
         $q2d = $DB->get_record_sql("SELECT qsr.*
@@ -145,7 +152,7 @@ class helper_test extends \advanced_testcase {
      * @covers ::question_can_delete_cat
      * @covers ::question_is_top_category
      */
-    public function test_question_can_delete_cat_top_category() {
+    public function test_question_can_delete_cat_top_category(): void {
 
         $qcategory1 = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
 
@@ -162,7 +169,7 @@ class helper_test extends \advanced_testcase {
      * @covers ::question_can_delete_cat
      * @covers ::question_is_only_child_of_top_category_in_context
      */
-    public function test_question_can_delete_cat_child_category() {
+    public function test_question_can_delete_cat_child_category(): void {
 
         $qcategory1 = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
 
@@ -177,7 +184,7 @@ class helper_test extends \advanced_testcase {
      *
      * @covers ::question_can_delete_cat
      */
-    public function test_question_can_delete_cat_capability() {
+    public function test_question_can_delete_cat_capability(): void {
 
         $qcategory1 = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
         $qcategory2 = $this->qgenerator->create_question_category(['contextid' => $this->context->id, 'parent' => $qcategory1->id]);
@@ -200,7 +207,7 @@ class helper_test extends \advanced_testcase {
      * @covers ::question_category_select_menu
      * @covers ::question_category_options
      */
-    public function test_question_category_select_menu() {
+    public function test_question_category_select_menu(): void {
 
         $this->qgenerator->create_question_category(['contextid' => $this->context->id, 'name' => 'Test this question category']);
         $contexts = new \core_question\local\bank\question_edit_contexts($this->context);
@@ -223,7 +230,7 @@ class helper_test extends \advanced_testcase {
      * @covers ::question_add_context_in_key
      * @covers ::add_indented_names
      */
-    public function test_question_category_options() {
+    public function test_question_category_options(): void {
 
         $qcategory1 = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
         $qcategory2 = $this->qgenerator->create_question_category(['contextid' => $this->context->id, 'parent' => $qcategory1->id]);
@@ -244,5 +251,35 @@ class helper_test extends \advanced_testcase {
             $count = count($oldcategorycontext);
             $this->assertCount($count + 1, $categorycontext);
         }
+    }
+
+    /**
+     * Test that get_categories_for_contexts function returns the correct question count number.
+     *
+     * @covers ::get_categories_for_contexts
+     */
+    public function test_question_category_question_count(): void {
+        global $DB;
+        // Create quiz.
+        $quiz = $this->quiz;
+        // Create category 1 and one hidden question.
+        $qcat = $this->qgenerator->create_question_category(['contextid' => $this->context->id]);
+        $q1 = $this->qgenerator->create_question('shortanswer', null, ['category' => $qcat->id]);
+        $DB->set_field('question_versions', 'status', 'hidden', ['questionid' => $q1->id]);
+
+        $contexts = new \core_question\local\bank\question_edit_contexts(\context_module::instance($quiz->cmid));
+        $contexts = $contexts->having_cap('moodle/question:add');
+        foreach ($contexts as $context) {
+            $contextslist[] = $context->id;
+        }
+        $contextslist = join(', ', $contextslist);
+        // Verify we have 0 question in category since it is hidden.
+        $categorycontexts = helper::get_categories_for_contexts($contextslist);
+        $this->assertEquals(0, reset($categorycontexts)->questioncount);
+        // Add an extra question.
+        $this->qgenerator->create_question('shortanswer', null, ['category' => $qcat->id]);
+        $categorycontexts = helper::get_categories_for_contexts($contextslist);
+        // Verify we have 1 question in category.
+        $this->assertEquals(1, reset($categorycontexts)->questioncount);
     }
 }

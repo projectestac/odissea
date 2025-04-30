@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ja', version '4.1'.
+ * Strings for component 'block_section_links', language 'ja', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = '増分値';
 $string['incby1_help'] = 'これはセクションリンクが1から表示される場合に毎回増分される値です。';
 $string['incby2'] = '代替増分値';
 $string['incby2_help'] = 'これはセクションリンクが1から表示される場合に毎回増分される値です。';
-$string['jumptocurrenttopic'] = '現在のトピックへジャンプする';
+$string['jumptocurrenttopic'] = 'ハイライトされたセクションにジャンプする';
 $string['jumptocurrentweek'] = '現在の週へジャンプする';
 $string['numsections1'] = 'セクション数';
 $string['numsections1_help'] = 'この値にコース内セクション数が到達した場合、増分値が使用されます。';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'セクションリンクブロックは他の場�
 $string['section_links:addinstance'] = '新しいセクションリンクブロックを追加する';
 $string['showsectionname'] = 'セクション名を表示する';
 $string['showsectionname_help'] = 'セクションナンバに加えてセクション名を表示します。';
-$string['topics'] = 'トピック';
-$string['weeks'] = '週';

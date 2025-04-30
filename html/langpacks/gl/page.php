@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'gl', version '4.1'.
+ * Strings for component 'page', language 'gl', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -68,8 +68,6 @@ $string['popupheight'] = 'Altura da xanela emerxente (en píxeles)';
 $string['popupheightexplain'] = 'Especifica a altura predeterminada das xanelas emerxentes.';
 $string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
-$string['printheading'] = 'Presentar o nome da páxina';
-$string['printheadingexplain'] = 'Presentar o nome da páxina sobre o contido?';
 $string['printintro'] = 'Presentar a descrición da páxina';
 $string['printintroexplain'] = 'Presentar a descrición da páxina sobre o contido?';
 $string['printlastmodified'] = 'Amosar a última data modificada';

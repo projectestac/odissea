@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'de', version '4.1'.
+ * Strings for component 'availability_role', language 'de', version '4.4'.
  *
  * @package     availability_role
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über eine bestimmte Kursrolle regeln';
+$string['description'] = 'Zugriff über eine bestimmte Kursrolle steuern';
 $string['error_selectrole'] = 'Sie müssen eine Rolle auswählen.';
 $string['missing'] = '[Rolle fehlt]';
 $string['pluginname'] = 'Voraussetzung: Kursrolle';
@@ -36,5 +36,5 @@ $string['setting_supportedrolesheading'] = 'Unterstützte Rollen';
 $string['setting_supportguestrole'] = 'Gastzugang';
 $string['setting_supportguestrole_desc'] = 'Wenn diese Option aktiviert ist, kann die Voraussetzung auch für Nutzer/innen gesetzt werden, die den Kurs als Gast betrachten.';
 $string['setting_supportnotloggedinrole'] = 'Nicht eingeloggt';
-$string['setting_supportnotloggedinrole_desc'] = 'Wenn diese Option aktiviert ist, kann die Voraussetzung auch für Nutzer/innen gesetzt werden, die in Moodle nicht eingeloggt sind.';
+$string['setting_supportnotloggedinrole_desc'] = 'Wenn diese Option aktiviert ist, kann die Voraussetzung auch für Nutzer/innen gesetzt werden, die nicht in Moodle eingeloggt sind.';
 $string['title'] = 'Kursrolle';

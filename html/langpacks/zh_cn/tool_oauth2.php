@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'zh_cn', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -37,11 +37,6 @@ $string['connectsystemaccount'] = '绑定系统账户';
 $string['createfromtemplate'] = '使用模板创建一个OAuth 2服务';
 $string['createfromtemplatedesc'] = '从以下模板中选择一项，这将使用针对选择的服务的一系列已知有效参数创建一个新服务。除了客户端ID和密钥外，所有认证所需的参数都会预先填好，补齐应用ID和密钥即可使用。';
 $string['createnewendpoint'] = '创建 {$a} 服务的终端';
-$string['createnewfacebookissuer'] = '创建 Facebook 服务';
-$string['createnewgoogleissuer'] = '创建 Google 服务';
-$string['createnewissuer'] = '创建自定义服务';
-$string['createnewmicrosoftissuer'] = '创建微软服务';
-$string['createnewnextcloudissuer'] = '创建新的Nextcloud服务';
 $string['createnewservice'] = '创建新服务：';
 $string['createnewuserfieldmapping'] = '为 {$a} 服务创建用户字段映射';
 $string['custom_service'] = '自定义';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = '领英';
 $string['logindisplay'] = '在登录页面上显示为';
 $string['loginissuer'] = '允许登陆';
 $string['microsoft_service'] = '微软';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = '未配置';
 $string['notdiscovered'] = '服务发现失败';

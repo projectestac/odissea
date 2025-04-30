@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'es', version '4.1'.
+ * Strings for component 'tool_recyclebin', language 'es', version '4.4'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -42,7 +42,7 @@ $string['deleteallconfirm'] = '¿Está seguro de que desea borrar todos los elem
 $string['deleteconfirm'] = '¿Está seguro de que desea borrar los elementos seleccionados de la papelera de reciclaje?';
 $string['deleteexpirywarning'] = 'Los contenidos serán borrados de forma definitiva después de {$a}.';
 $string['eventitemcreated'] = 'Elemento creado';
-$string['eventitemcreated_desc'] = 'Elementos creado con ID {$a->objectid}.';
+$string['eventitemcreated_desc'] = 'Elemento creado con ID {$a->objectid}.';
 $string['eventitemdeleted'] = 'Elemento borrado';
 $string['eventitemdeleted_desc'] = 'El elemento con ID {$a->objectid} ha sido borrado.';
 $string['eventitemrestored'] = 'Elemento restaurado';

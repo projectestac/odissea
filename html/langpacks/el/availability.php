@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'el', version '4.1'.
+ * Strings for component 'availability', language 'el', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,7 @@ $string['addrestriction'] = 'Προσθέστε περιορισμό ...';
 $string['and'] = 'και';
 $string['condition_group'] = 'Σετ περιορισμών';
 $string['condition_group_info'] = 'Προσθήκη ενός σετ ένθετων περιορισμών προς εφαρμογή σύνθετης λογικής.';
+$string['editsettings'] = 'Επεξεργασία ρυθμίσεων';
 $string['enableavailability'] = 'Ενεργοποίηση περιορισμένης πρόσβασης';
 $string['enableavailability_desc'] = 'Εάν ενεργοποιηθεί, σας επιτρέπει να θέσετε συνθήκες (βάσει ημερομηνίας, βαθμού ή ολοκλήρωσης) οι οποίες θα καθορίζουν εάν μια δραστηριότητα ή πόρος είναι προσβάσιμα.';
 $string['error_list_nochildren'] = 'Τα σετ περιορισμών πρέπει να περιέχουν τουλάχιστον μία συνθήκη';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_h5p', language 'gl', version '4.1'.
+ * Strings for component 'tiny_h5p', language 'gl', version '4.4'.
  *
  * @package     tiny_h5p
  * @category    string
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Examinar repositorios';
+$string['browserepositories'] = 'Examinar os repositorios…';
 $string['buttontitle'] = 'Configurar o contido H5P';
 $string['copyrightbutton'] = 'Botón de dereitos de autoría';
-$string['downloadbutton'] = 'Permitir descarga';
-$string['embedbutton'] = 'Botón de incrustado';
+$string['downloadbutton'] = 'Permitir a descarga';
+$string['embedbutton'] = 'Botón de inserción';
 $string['h5p:addembed'] = 'Engadir H5P incrustado';
-$string['h5pfile'] = 'Subida de ficheiro H5P';
-$string['h5pfileorurl'] = 'URL do H5P ou subida do arquivo';
+$string['h5pfile'] = 'Ficheiro H5P enviado';
+$string['h5pfileorurl'] = 'URL H5P ou envío de ficheiros';
 $string['h5poptions'] = 'Opcións H5P';
-$string['h5purl'] = 'URL do H5P';
+$string['h5purl'] = 'URL de H5P';
 $string['helplinktext'] = 'Axudante H5P';
 $string['insert'] = 'Inserir contido H5P';
-$string['instructions'] = 'Podes inserir contido H5P <strong>ben</strong> escribindo un URL <strong>ou</strong> subindo un ficheiro H5P.';
-$string['invalidh5purl'] = 'URL non válido';
+$string['instructions'] = 'Pode inserir contido H5P <strong>ben sexa</strong> introducindo un URL <strong>ou</strong> enviando un ficheiro H5P.';
+$string['invalidh5purl'] = 'URL incorrecto';
 $string['modaltitle'] = 'Inserir contido H5P';
 $string['noh5pcontent'] = 'Non se engadiu contido H5P';
 $string['pluginname'] = 'Inserir H5P «diminuto»';

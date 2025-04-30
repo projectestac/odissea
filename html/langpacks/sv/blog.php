@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'sv', version '4.1'.
+ * Strings for component 'blog', language 'sv', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blogg om  {$a->modtype}: {$a->modname}';
 $string['association'] = 'Koppling';
 $string['associations'] = 'Kopplingar';
 $string['associationunviewable'] = 'Det här inlägget kan inte ses av andra förrän en kurs associerats med det eller att \'Publicera till\'-fältet ändrats';
+$string['author'] = 'Författare';
 $string['autotags'] = 'Lägg till de här etiketterna';
 $string['autotags_help'] = 'Skriv in en eller flera lokala etiketter (separerade med kommatecken) som du vill automatiskt ska läggas till varje blogginlägg som kopieras från den externa bloggen in i din lokala blogg.';
 $string['backupblogshelp'] = 'Om detta är aktiverat så kommer bloggar att tas med i automatiska säkerhetskopieringar på webbplatsnivå.';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blogga om det här {$a->type}';
 $string['blogaboutthiscourse'] = 'Lägg till ett inlägg om den här kursen';
 $string['blogaboutthismodule'] = 'Lägg till ett inlägg om det här {$a}';
 $string['blogadministration'] = 'Bloggadministration';
+$string['blogattachment'] = 'Bloggbilaga';
 $string['blogdeleteconfirm'] = 'Ta bort \'{$a}\'?';
 $string['blogdisable'] = 'Bloggande är inaktiverat!';
 $string['blogentries'] = 'Blogginlägg';
@@ -216,4 +218,3 @@ $string['viewsiteentries'] = 'Visa alla inlägg ';
 $string['viewuserentries'] = 'Visa alla inlägg av {$a}';
 $string['worldblogs'] = 'Alla på internet kan läsa inlägg som gjorts tillgängliga för vem som helst';
 $string['wrongexternalid'] = 'Felaktigt externt blogg-ID';
-$string['wrongpostid'] = 'Felaktigt ID för inlägg i blogg';

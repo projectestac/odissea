@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformat_excel', language 'it', version '4.1'.
+ * Strings for component 'dataformat_excel', language 'it', version '4.4'.
  *
  * @package     dataformat_excel
  * @category    string

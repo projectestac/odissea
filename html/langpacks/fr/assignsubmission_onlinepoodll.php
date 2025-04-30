@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinepoodll', language 'fr', version '4.1'.
+ * Strings for component 'assignsubmission_onlinepoodll', language 'fr', version '4.4'.
  *
  * @package     assignsubmission_onlinepoodll
  * @category    string
@@ -60,7 +60,7 @@ $string['onlinepoodll:use'] = 'Autoriser l’utilisation des remises Podll en li
 $string['onlinepoodllfilename'] = 'onlinepoodll.html';
 $string['onlinepoodllsubmission'] = 'Autoriser la remise Poodll en ligne';
 $string['pluginname'] = 'Remises Poodll en ligne';
-$string['privacy:metadata'] = 'Le plugin Poodll Online Assignment Submission stocke des données personnelles.';
+$string['privacy:metadata'] = 'Le plugin Poodll Online Assignment Submission enregistre des données personnelles.';
 $string['privacy:metadata:filepurpose'] = 'Les enregistrements (dépôt de fichiers Poodll) pour cette remise de devoir.';
 $string['reallydeletesubmission'] = 'Voulez-vous vraiment supprimer ce dépôt ?';
 $string['recordertype'] = 'Type d’enregistrement Poodll';

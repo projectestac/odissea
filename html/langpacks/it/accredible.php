@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'it', version '4.1'.
+ * Strings for component 'accredible', language 'it', version '4.4'.
  *
  * @package     accredible
  * @category    string

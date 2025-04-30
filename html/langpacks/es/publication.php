@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'es', version '4.1'.
+ * Strings for component 'publication', language 'es', version '4.4'.
  *
  * @package     publication
  * @category    string
@@ -34,8 +34,6 @@ $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Los detalles de la t
 $string['allowsubmissionsfromdate'] = 'a partir de';
 $string['allowsubmissionsfromdate_import'] = 'Aprobación a partir de';
 $string['allowsubmissionsfromdate_upload'] = 'Es posible subir a partir de';
-$string['allowsubmissionsfromdateh'] = 'Horarios ara Subida/Aprobación';
-$string['allowsubmissionsfromdateh_help'] = 'Usted puede determinar el período de tiempo durante el cual los estudiantes pueden subir archivos o dar su aprobación para la publicación del archivo. Durante este período de tiempo, los estudiantes pueden editar sus archivos y también pueden quitar su aprobación para publicación.';
 $string['allowsubmissionsfromdatesummary'] = 'Esta Tarea aceptará envíos a partir de <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Siempre  mostrar descripción';
 $string['alwaysshowdescription_help'] = 'Si se deshabilita, la Descripción de la Tarea de arriba solamente estará visible para los estudiantes a partir de la fecha de "Permitir envíos a partir de".';
@@ -47,8 +45,6 @@ $string['assignment'] = 'Tarea';
 $string['assignment_help'] = 'Elija a tarea desde la cual importará archivos. En el momento, las tareas-grupales no están soportadas y por lo tanto, no son seleccionables.';
 $string['assignment_notfound'] = 'La tarea desde la cual fueron importados los archivos, ya no pudo encontrarse.';
 $string['assignment_notset'] = 'No se han elegido Tareas.';
-$string['autoimport'] = 'Sincronizar automáticamente con Tarea';
-$string['autoimport_help'] = 'Si se activa, los nuevos envío en la Tarea correspondiente serán importados automáticamente dentro del módulo de Carpeta del estudiante. (Opcional) Debe obtenerse aprobación-del-estudiante para los nuevos archivos.';
 $string['availability'] = 'Horario para Subida/Aprobación';
 $string['choose'] = 'elija por favor...';
 $string['configautoimport'] = 'Si Usted prefiere que los envíos de los estudiantes sean importados automáticamente dentro de las instancias de carpeta del estudiante. Esta característica puede ser habilitada/deshabilitada para cada instancia de carpeta del estudiante en forma separada.';
@@ -88,10 +84,6 @@ $string['filedetails'] = 'Detalles';
 $string['filesofthesetypes'] = 'Pueden añadirse archivos de estos tipos:';
 $string['go'] = 'Ir';
 $string['grantextension'] = 'otorgar extensión';
-$string['groupapprovalmode'] = 'Modo aprobación_de_grupo';
-$string['groupapprovalmode_all'] = 'TODOS los miembros del grupo deben de aprobar';
-$string['groupapprovalmode_help'] = 'Aquí Usted decide si se necesita que aprueben todos los miembros del grupo o solamente con que apruebe un miembro del grupo es suficiente para que los archivos sean visibles. Los archivos solamente serán visibles después de la aprobación por todos los miembros del grupo o al menos por un miembro del grupo.';
-$string['groupapprovalmode_single'] = 'al menos UNO de los miembros del grupo debe de aprobar';
 $string['guideline'] = 'visible para todos:';
 $string['hidden'] = 'oculto';
 $string['importfrom_err'] = 'Usted tiene que elegir una tarea a partir de la cual desea importar.';
@@ -116,12 +108,6 @@ $string['nothing_to_show_groups'] = 'nada para mostrar - sin grupos disponibles'
 $string['nothing_to_show_users'] = 'nada para mostrar - sin estudiantes disponibles';
 $string['nothingtodisplay'] = 'No hay entradas para mostrar';
 $string['notice'] = 'Aviso:';
-$string['notice_groupimportrequireallapproval'] = 'Decidir si es que los archivos están disponibles para todos. Todos los miembros del grupo tienen que dar su aprobación antes de que el archivo sea visible.';
-$string['notice_groupimportrequireoneapproval'] = 'Decidir si es que sus archivos están disponibles para todos, La aprobación de solamente un miembro del grupo es suficiente para que el archivo sea visible. ¡Por favor, discuta internamente en el grupo si es que su archivo debería de ser visible o no antes de aprobarlo!';
-$string['notice_importnoapproval'] = 'Los archivos siguientes son visibles para todos.';
-$string['notice_importrequireapproval'] = 'Decidir si sus archivos son disponibles para todos.';
-$string['notice_uploadnoapproval'] = 'Todos los archivos serán visibles inmediatamente para todos en cuanto sean subidos. El profesor se reserva el derecho de ocultar archivos publicados en cualquier momento.';
-$string['notice_uploadrequireapproval'] = 'Todos los archivos subidos serán hechos visibles ssolamente después de la revisión pro el profesor.';
 $string['notifications'] = 'Notificaciones';
 $string['notifystudents'] = 'Notificar a estudiantes acerca de cambios de aprobación';
 $string['notifystudents_help'] = 'Si se habilita, los estudiantes recibirán un mensaje cuando cambie el estado de aprobación de alguna de sus subidas. Los métodos del mensaje son configurables.';
@@ -200,9 +186,5 @@ $string['visible'] = 'visible';
 $string['visibleforstudents'] = 'visible para todos';
 $string['visibleforstudents_no'] = 'Este archivo NO está visible a los estudiantes';
 $string['visibleforstudents_yes'] = 'Los estudiantes SI pueden ver este archivo';
-$string['warning_changefromobtainstudentapproval'] = 'Si Usted realiza este cambio, solamente Usted puede decidir cuales archivos son visibles para todos los estudiantes. A los estudiantes no se les pide su aprobación. Todos los archivos marcados como aprobados se volverán visibles para todos los estudiantes independientemente de la decisión de los estudiantes.';
-$string['warning_changefromobtainteacherapproval'] = 'Después de arctivar esta configuración, todos los archivos subidos serán visibles para otros participantes. Todos los archivos subidos serán todos visibles.Usted puede hacer visibles manualmente archivos para ciertos estudiantes.';
-$string['warning_changetoobtainstudentapproval'] = 'Si Usted realiza este cambio, a los estudiantes se les pedirá su aprobación para que todos los archivos sean marcados como visibles. Los archivos solamente serán visibles después de la aprobación por los estudiantes.';
-$string['warning_changetoobtainteacherapproval'] = 'Deespués de desactivar esta opción los archivos subidos no serán visibles automáticamente para otros participantes. Usted tendrá que determinar cuales archivos serán visibles. Los archivos que ya eran visibles de volverán invisibles.';
 $string['withselected'] = 'Con los seleccionados...';
 $string['zipusers'] = 'Descargar como ZIP';

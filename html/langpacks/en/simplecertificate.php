@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'simplecertificate', language 'en', version '4.1'.
+ * Strings for component 'simplecertificate', language 'en', version '4.4'.
  *
  * @package     simplecertificate
  * @category    string
@@ -47,7 +47,8 @@ $string['certificatetext'] = 'Certificate Text';
 $string['certificatetext_help'] = 'This is the text that will be used in the certificate back, some special words will be replaced with variables such as course name, student\'s name, grade ...
 These are:
 <ul>
-<li>{USERNAME} -> Full user name</li>
+<li>{IDENTITY} -> User username (must be enabled at site level)</li>
+<li>{USERFULLNAME} -> Full user name</li>
 <li>{COURSENAME} -> Full course name (or a defined alternate course name)</li>
 <li>{GRADE} -> Formatted Grade</li>
 <li>{DATE} -> Formatted Date</li>
@@ -87,10 +88,26 @@ $string['coursegrade'] = 'Course Grade';
 $string['coursename'] = 'Alternative Course Name';
 $string['coursename_help'] = 'Alternative Course Name';
 $string['coursenotfound'] = 'Course not found';
-$string['coursesections'] = 'Course sections';
 $string['coursestartdate'] = 'Course Start Date';
 $string['coursetimereq'] = 'Required minutes in course';
 $string['coursetimereq_help'] = 'Enter here the minimum amount of time, in minutes, that a student must be logged into the course before they will be able to receive the certificate.';
+$string['customfilename'] = 'Custom PDF file name';
+$string['customfilename_help'] = 'This is the name of the PDF file for each certificate. If left blank, the same structure will be used as always: <i>certificatename_issueid.pdf</i>.<br>
+Special characters in names will be replaced with basic characters.<br>
+The following keywords can be used to generate dynamic names:
+<ul>
+    <li>{certificatename}: Certificate name</li>
+    <li>{issueid}: Issue id</li>
+    <li>{coursename}: Course name</li>
+    <li>{userid}: User id</li>
+    <li>{useridnumber}: User id number</li>
+    <li>{userfullname}: User name</li>
+    <li>{userfirstname}: User first name</li>
+    <li>{userlastname}: User last name</li>
+    <li>{timecreated1}: Issue time (Y_m)</li>
+    <li>{timecreated2}: Issue time (Ymd)</li>
+    <li>{timecreated3}: Issue time (Ymd_His)</li>
+</ul>';
 $string['datefmt'] = 'Date Format';
 $string['datefmt_help'] = 'Enter a valid PHP date format pattern (<a href="http://www.php.net/manual/en/function.strftime.php"> Date Formats</a>). Or, leave it empty to use the format of the user\'s chosen language.';
 $string['defaultcertificatetextx'] = 'Default Horizontal Text Position';
@@ -142,6 +159,8 @@ You can review it here:
     <a href="{$a->url}">Certificate Report</a>.';
 $string['emailteachers'] = 'Email Teachers';
 $string['emailteachers_help'] = 'If enabled, then teachers are alerted with an email whenever students receive a certificate.';
+$string['enableidentity'] = 'Enable user identity';
+$string['enableidentity_help'] = 'Enable the use of the "username" field in certificates. By default the {USERNAME} tag prints the full name of the user so the {IDENTITY} tag is used for the "username". In the future the {USERNAME} tag will be removed to avoid confusion.';
 $string['enablesecondpage'] = 'Enable Certificate Back page';
 $string['enablesecondpage_help'] = 'Enable Certificate Back page edition, if is disabled, only certificate QR code will be printed in back page (if the QR code is enabled)';
 $string['eventcertificate_verified'] = 'Certificate verified';
@@ -244,8 +263,6 @@ $string['simplecertificateissue'] = 'Certificate Issue';
 $string['size'] = 'Certificate Size';
 $string['size_help'] = 'These are the Width and Height size (in millimetres) of the certificate, Default size is A4 Landscape';
 $string['standardview'] = 'Issue a test certificate';
-$string['subtitleallcertificates'] = 'Certificates from all courses';
-$string['subtitlecoursecertificates'] = 'Course certificates';
 $string['summaryofattempts'] = 'Summary of Previously Received Certificates';
 $string['textposition'] = 'Certificate Text Position';
 $string['textposition_help'] = 'These are the XY coordinates (in millimetres) of the certificate text';

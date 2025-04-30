@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'nl', version '4.1'.
+ * Strings for component 'reportbuilder', language 'nl', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} plus {$a->morecount} mee
 $string['audiencenotsaved'] = 'Doelgroep niet bewaard';
 $string['audiencesaved'] = 'Doelgroep bewaard';
 $string['audienceupdated'] = 'Doelgroep geüpdatet';
+$string['audienceusedbyschedule'] = 'Deze doelgroep wordt gebruikt in een planning voor dit rapport';
 $string['cardview'] = 'Kaartweergave';
 $string['cardview_help'] = 'Met kaartweergave kun je de lay-out van je rapport definiëren voor smalle apparaten. Kolommen zullen samenvouwen tot voorbij de limiet die hier is ingesteld, met een schakelaar om de kaart uit te vouwen om alle rapportgegevens te bekijken.';
 $string['cardviewfirstcolumntitle'] = 'Titel eerste kolom';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'Cursus-ID nummer met link';
 $string['courseselect'] = 'Selecteer cursus';
 $string['courseshortnamewithlink'] = 'Korte naam cursus met link';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'Aangepast rapport';
 $string['customreports'] = 'Aangepaste rapporten';
 $string['customreportslimit'] = 'Limiet voor aangepaste rapporten';
 $string['customreportslimit_desc'] = 'Het aantal aangepaste rapporten kan om prestatieredenen worden beperkt. Indien ingesteld op nul, is er geen limiet.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'Kan geen geldige rapportbron vinden';
 $string['errorsourceunavailable'] = 'Rapportbron is niet beschikbaar';
 $string['filteradded'] = 'Filter \'{$a}\' toegevoegd';
 $string['filtercontains'] = 'bevat';
+$string['filterdateafter'] = 'Na';
+$string['filterdatebefore'] = 'Voor';
 $string['filterdatecurrent'] = 'Huidige';
 $string['filterdatedays'] = 'dag(en)';
 $string['filterdatefrom'] = 'Datum vanaf';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'Eindigt met';
 $string['filterequalorgreaterthan'] = 'Groter dan of gelijk aan';
 $string['filterequalorlessthan'] = 'Minder dan of gelijk';
 $string['filterfieldoperator'] = '{$a} operator';
+$string['filterfieldto'] = '{$a} naar';
+$string['filterfieldunit'] = '{$a} eenheid';
 $string['filterfieldvalue'] = '{$a} waarde';
 $string['filtergreaterthan'] = 'Greater than';
 $string['filterinvalid'] = 'Ongeldig filter';
@@ -264,6 +270,7 @@ $string['sorting'] = 'Sorteren';
 $string['sorting_help'] = 'Je kunt de initiële sorteervolgorde van kolommen in het rapport instellen. Gebruikers kunnen die dan wijzigen door op een kolomnaam te klikken.';
 $string['switchedit'] = 'Schakelen naar bewerkmodus';
 $string['switchpreview'] = 'Schakelen naar bekijkmodus';
+$string['tagarea_reportbuilder_report'] = 'Aangepaste rapporten';
 $string['tasksendschedule'] = 'Rapportschema verzenden';
 $string['tasksendschedules'] = 'Rapportplanning verzenden';
 $string['timeadded'] = 'Tijdstip toegevoegd';

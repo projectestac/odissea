@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'de', version '4.1'.
+ * Strings for component 'tool_generator', language 'de', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Zusätzliche Aktivitäten';
+$string['additionalmodules_help'] = 'Wählen Sie weitere Aktivitäten aus, die die Funktion course_backend_generator_create_activity implementieren, um sie in den Testkurs aufzunehmen.';
 $string['bigfile'] = 'Große Datei {$a}';
 $string['courseexplanation'] = 'Dieses Werkzeug erzeugt Standardtestkurse mit mehreren Abschnitten, Aktivitäten und Dateien.
 
@@ -71,6 +73,7 @@ $string['progress_createcourse'] = 'Kurse erzeugen ({$a})';
 $string['progress_createforum'] = 'Forenbeiträge erzeugen ({$a} Beiträge)';
 $string['progress_createpages'] = 'Textseiten erzeugen ({$a})';
 $string['progress_createsmallfiles'] = 'Kleine Dateien erzeugen ({$a})';
+$string['progress_createusers'] = 'Nutzerkonten werden angelegt ({$a})';
 $string['progress_enrol'] = 'Nutzer in Kurse einschreiben ({$a})';
 $string['progress_sitecompleted'] = 'Site abgeschlossen ({$a}s)';
 $string['shortsize_0'] = 'XS';
@@ -109,5 +112,17 @@ $string['testplansize_2'] = 'M ({$a->users} Nutzer, {$a->loops} Schleifen und {$
 $string['testplansize_3'] = 'L ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
 $string['testplansize_4'] = 'XL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
 $string['testplansize_5'] = 'XXL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testscenario'] = 'Testszenarien erstellen';
+$string['testscenario_description'] = 'Beim Erstellen von Testszenarien wird eine eingeschränkte Syntax der Funktionsdateien verwendet, um alle erforderlichen Elemente zum Ausführen eines manuellen Tests zu erstellen.';
+$string['testscenario_errorparsing'] = 'Fehler beim Parsen der Funktionsdatei: {$a}';
+$string['testscenario_file'] = 'Funktionsdatei';
+$string['testscenario_filedesc'] = 'Die hochgeladenen Funktionsdateien können nur Szenarios mit core_data_generator-Schritten enthalten. Dies ist noch nicht mit Szenarioskizzen kompatibel. Alle Szenarien werden gleichzeitig ausgeführt, aber Hintergrundschritte werden ignoriert.';
+$string['testscenario_invalidfile'] = 'Das Dateiformat ist ungültig oder enthält ungültige Schritte.';
+$string['testscenario_invalidstep'] = 'Unbekannter Schritt. Beim Erstellen von Testszenarien werden nur Generatorschritte akzeptiert.';
+$string['testscenario_nosteps'] = 'In der Datei sind keine auszuführbaren Schritte vorhanden.';
+$string['testscenario_notready'] = 'Composer- und Behat-Bibliotheken sind nicht installiert.<br><br>Führen Sie folgenden Befehl aus, um das Tool zu aktivieren: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Szenarioskizzen werden nicht unterstützt.';
+$string['testscenario_scenarionosteps'] = 'Dieses Szenario enthält keine Schritte.';
+$string['testscenario_steps'] = 'Schritte des Testszenarios:';
 $string['updateuserspassword'] = 'Aktualisierung Zugangskennwort für Nutzer/innen';
 $string['updateuserspassword_help'] = 'JMeter benötigt einen Login als Kursnutzer/in. Das Nutzerkennwort können Sie mit der Variable $CFG->tool_generator_users_password in der config.php erzeugen; Diese Einstellung aktualisiert das Kennwort, das zu  $CFG->tool_generator_users_password gehört. Dies kann hilfreich sein, wenn ein Kurs verwandt wird, der nicht mit dem Tool-Generator generiert wurde, oder wenn $CFG->tool_generator_users_password nicht gesetzt wurde, als Sie die Testkurse erstellt haben.';

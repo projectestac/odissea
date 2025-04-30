@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ru', version '4.1'.
+ * Strings for component 'workshop', language 'ru', version '4.4'.
  *
  * @package     workshop
  * @category    string
@@ -209,7 +209,6 @@ $string['latesubmissions'] = 'Работы, отправленные с опоз
 $string['latesubmissions_desc'] = 'Разрешить представление работ после крайнего срока';
 $string['latesubmissions_help'] = 'Если параметр включен, то автор может представить свою работу после истечения срока представления или в фазе оценки. Работы, отправленные с опозданием, уже нельзя будет изменить.';
 $string['latesubmissionsallowed'] = 'Разрешить работы, отправленные с опозданием';
-$string['legacyallocationplugincron'] = 'Устаревшее распределение работ семинара (cron)';
 $string['maxbytes'] = 'Максимальный размер вложенного файла';
 $string['modulename'] = 'Семинар';
 $string['modulename_help'] = 'Модуль «Семинар» позволяет накапливать, просматривать, рецензировать и взаимно оценивать студенческие работы.

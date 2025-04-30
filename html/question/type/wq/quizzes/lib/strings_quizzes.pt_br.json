@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "avaliar",
 		
-		"home_getting_started_welcome_header_text": "Apresentamos o WirisQuizzes 4.8.0: Agora com respostas baseadas em gráficos feitos à mão",
+		"home_getting_started_welcome_header_text": "Apresentamos o WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Temos o prazer de apresentar um novo tipo de resposta que permite que seus alunos respondam criando um gráfico à mão. Para saber mais sobre este recurso, confira nossos detalhes de versão e documentação. Esperamos que você e seus alunos gostem desta nova funcionalidade do WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Notas da versão",
         "home_getting_give_us_feedback_button_text": "Queremos saber sua opinião",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Equivalent set assertion is no longer available",
 		"quizzes_studio_syntax_list_assertion": "Syntax list assertion is no longer available",
 		"quizzes_studio_text_logic_operators" : "Text logic operators are no longer available",
-		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available"
+		"quizzes_studio_equivalent_unit_literal" : "Equivalent unit literal assertion is no longer available",
 
+		"quizzes_studio_math_multistep_switch_label" : "Orientação automatizada do aluno",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Você ativou o feedback automático para esta pergunta",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Defina o tipo de tarefa que você criará e especifique os campos obrigatórios. O feedback será gerado automaticamente pelo nosso motor. Você pode testar como seus alunos verão o feedback. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Mais informações",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Fechar painel",
+		"quizzes_studio_math_multistep_define_task_title" : "Definir a tarefa",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Link para a documentação",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Tipo de tarefa",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Equação de variável única ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Operações básicas ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Escolha o campo no menu suspenso. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Tarefa para resolver ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "Não escreva aqui a resposta correta, apenas a equação a resolver. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Variáveis aleatórias ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Variável de equação ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Nome da variável",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Especifique a variável única para a equação que será resolvida.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Incorreto",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Quase concluído",
+		"quizzes_studio_multistep_correct_feedback_label": "Correto",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Envie suas etapas para ver as orientações automatizadas do aluno",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Você está no caminho certo. Continue!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Você respondeu a esta pergunta corretamente.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Resolva a equação",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Realizar as operações",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Teste",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Limpar",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Símbolos de multiplicação permitidos",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Multiplicação implícita",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Convencionalmente, aceita a multiplicação de elementos que são escritos consecutivamente. Exemplo: 2y é interpretado como 2 vezes y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Multiplicação com o ponto",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Elementos operados com o ponto ou asterisco denotam multiplicação. Exemplo: 2 · y é interpretado como 2 vezes y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Multiplicação com o \"x\"",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Elementos operados com o \"x\" ou asterisco denotam multiplicação. Exemplo: 2 × y é interpretado como 2 vezes y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Tarefa a ser resolvida não foi definida",
+		"quizzes_studio_math_multistep_equation_variable_error": "Nome da variável não foi definido",
+
+		"quizzes_studio_multistep_error_session_start_title": "Erro",
+		"quizzes_studio_multistep_error_session_start_message": "Ocorreu um erro ao tentar carregar sua tarefa. Tente novamente ou volte para se certificar de que a tarefa está definida corretamente.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Tentar novamente",
+		"quizzes_studio_multistep_error_session_start_go_back": "Voltar",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Fale conosco",
+
+		"syntax_math_multistep": "Matemática com orientação automatizada do aluno"
 	}
 }
 

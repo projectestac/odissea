@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ko', version '4.1'.
+ * Strings for component 'block_myprofile', language 'ko', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,22 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = '제시 설정';
 $string['display_address'] = '주소 공개';
-$string['display_aim'] = 'AIM 공개';
 $string['display_city'] = '도시 공개';
 $string['display_country'] = '국가 공개';
 $string['display_currentlogin'] = '접속 여부 공개';
 $string['display_email'] = '이메일 공개';
 $string['display_firstaccess'] = '최초 접속 공개';
-$string['display_icq'] = 'ICQ 공개';
 $string['display_institution'] = '근무처 공개';
 $string['display_lastaccess'] = '최근 접속 공개';
 $string['display_lastip'] = '최근 접속 IP 공개';
-$string['display_msn'] = 'MSN 아이디 공개';
 $string['display_phone1'] = '전화번호 1 공개';
 $string['display_phone2'] = '전화번호 2 공개';
 $string['display_picture'] = '사진 공개';
-$string['display_skype'] = 'Skype 아이디 공개';
-$string['display_yahoo'] = 'Yahoo 아이디 공개';
 $string['myprofile:addinstance'] = '로그인 사용자 블록 추가';
 $string['myprofile:myaddinstance'] = '내 공부방에 로그인 사용자 블록 추가';
 $string['myprofile_settings'] = '볼 수 있는 사용자 정보';

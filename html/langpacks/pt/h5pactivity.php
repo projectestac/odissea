@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'pt', version '4.1'.
+ * Strings for component 'h5pactivity', language 'pt', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = 'Não reportado';
 $string['attempts'] = 'Tentativas';
 $string['attempts_none'] = 'Não existem tentativas deste utilizador para mostrar.';
 $string['attempts_report'] = 'Relatório das tentativas';
+$string['attempts_report_header_label'] = 'Tentativas ({$a})';
 $string['choice'] = 'Escolha';
 $string['completion'] = 'Conclusão';
 $string['contentbank'] = 'Mais informações sobre o banco de conteúdos';
@@ -63,6 +64,8 @@ $string['displayembed'] = 'Botão Incorporar';
 $string['displayexport'] = 'Permitir descarregar';
 $string['dnduploadh5pactivity'] = 'Adicionar uma atividade H5P';
 $string['duration'] = 'Duração';
+$string['enablesavestate'] = 'Guardar estado';
+$string['enablesavestate_help'] = 'Guardar automaticamente o estado atual do utilizador. O utilizador pode retornar mais tarde e continuar de onde ficou.';
 $string['enabletracking'] = 'Ativar monitorização da tentativa';
 $string['false'] = 'Falso';
 $string['grade_average_attempt'] = 'Nota média';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = 'Nota: {$a}';
 $string['grade_highest_attempt'] = 'Nota mais alta';
 $string['grade_last_attempt'] = 'Última tentativa';
 $string['grade_manual'] = 'Não calcular a média';
+$string['gradenoun_h5p'] = 'Nota: {$a}';
 $string['h5pactivity:addinstance'] = 'Adicionar novo H5P';
 $string['h5pactivity:reviewattempts'] = 'Rever as tentativas de H5P';
 $string['h5pactivity:submit'] = 'Submeter tentativas de H5P';
@@ -106,7 +110,7 @@ $string['package_help'] = 'O pacote é um ficheiro H5P que contém conteúdo H5P
 $string['page-mod-h5pactivity-x'] = 'Qualquer página do módulo H5P';
 $string['pluginadministration'] = 'Administração do H5P';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'Este conteúdo está a ser exibido no modo de visualização. Nenhuma monitorização da tentativa será armazenada.';
+$string['previewmode'] = 'Está em modo de pré-visualização.';
 $string['privacy:metadata:attempt'] = 'O número da tentativa';
 $string['privacy:metadata:rawscore'] = 'A pontuação obtida';
 $string['privacy:metadata:timecreated'] = 'Data e hora em que o elemento monitorizado foi criado';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = 'A última vez que o elemento foi mon
 $string['privacy:metadata:userid'] = 'O ID do utilizador que acedeu à atividade H5P';
 $string['privacy:metadata:xapi_track'] = 'Informação da monitorização da tentativa';
 $string['privacy:metadata:xapi_track_results'] = 'Informação da monitorização dos resultados da tentativa';
+$string['privacy:metadata:xapisummary'] = 'A atividade H5P contém informações relacionadas ao estado do conteúdo xAPI armazenado pelo utilizador.';
 $string['report_viewed'] = 'Relatório visualizado';
 $string['result_compound'] = 'Pontuação parcial combinada';
 $string['result_fill-in'] = 'Preencher espaços';
@@ -123,12 +128,13 @@ $string['result_other'] = 'Tipo de interação desconhecido';
 $string['result_sequencing_answer'] = 'Valor da posição';
 $string['result_sequencing_choice'] = 'Posições';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Ver todas as tentativas ({$a} submetidas)';
 $string['review_mode'] = 'Rever tentativas';
 $string['review_my_attempts'] = 'Ver as minhas tentativas';
 $string['review_none'] = 'Os participantes não podem rever as suas tentativas';
 $string['review_on_completion'] = 'Os participantes podem rever as suas tentativas';
-$string['review_user_attempts'] = 'Ver tentativas do utilizador ({$a})';
+$string['review_user_attempts'] = 'Ver ({$a})';
+$string['savestatefreq'] = 'Frequência de guardar estado';
+$string['savestatefreq_help'] = 'Com que frequência (em segundos) é guardado o estado atual do utilizador.';
 $string['score'] = 'Pontuação';
 $string['score_out_of'] = '{$a->rawscore} em {$a->maxscore}';
 $string['search:activity'] = 'H5P - informação da atividade';
@@ -136,7 +142,10 @@ $string['startdate'] = 'Data/hora de início';
 $string['statement_received'] = 'Declaração xAPI recebida';
 $string['totalscore'] = 'Pontuação total';
 $string['tracking_messages'] = 'Alguns H5P fornecem dados da monitorização das tentativas para relatórios avançados, como por exemplo, número de tentativas, respostas e notas. Nota: Alguns H5P não fornecem dados da monitorização das tentativas. Nesses casos, as configurações abaixo não terão efeito.';
+$string['trackingdisabled'] = 'A monitorização da tentativa não está ativada nesta atividade.';
+$string['trackingdisabled_enable'] = 'A monitorização da tentativa não está ativada nesta atividade. Pode ativar nas <a href="{$a}">Configurações</a>.';
 $string['true'] = 'Verdadeiro';
 $string['usecontentbank'] = 'Usar o <a href="{$a}" target="_blank">banco de conteúdos</a> para gerir os seus ficheiros H5P (abre numa nova janela)';
 $string['view'] = 'Visualizar';
 $string['view_report'] = 'Ver relatório';
+$string['viewattempts'] = 'Ver tentativas ({$a})';

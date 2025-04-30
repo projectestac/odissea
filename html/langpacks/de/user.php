@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'de', version '4.1'.
+ * Strings for component 'user', language 'de', version '4.4'.
  *
  * @package     user
  * @category    string
@@ -157,4 +157,5 @@ $string['supportmessagesentforloggedoutuser'] = 'Seien Sie vorsichtig mit dieser
 $string['target:upcomingactivitiesdue'] = 'Fälligkeit für anstehende Aktivitäten';
 $string['target:upcomingactivitiesdue_help'] = 'Dieses Ziel generiert Erinnerungen für anstehende Aktivitäten.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alle anstehenden Fälligkeiten für Aktivitäten sind hier aufgelistet. Folgende Teilnehmer/innen haben den Hinweis direkt erhalten.';
+$string['usergroupselectorcount'] = '{$a->fullname} ({$a->groupcount})';
 $string['userprofile'] = 'Nutzerprofil';

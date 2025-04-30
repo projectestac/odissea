@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'en', version '4.1'.
+ * Strings for component 'format_weeks', language 'en', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,21 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Add week';
+$string['addsection'] = 'Add week';
 $string['automaticenddate'] = 'Calculate the end date from the number of sections';
 $string['automaticenddate_help'] = 'If enabled, the end date for the course will be automatically calculated from the number of sections and the course start date.';
-$string['currentsection'] = 'This week';
-$string['deletesection'] = 'Delete week';
-$string['editsection'] = 'Edit week';
-$string['editsectionname'] = 'Edit week name';
-$string['hidefromothers'] = 'Hide week';
+$string['currentsection'] = 'Current week';
+$string['hidefromothers'] = 'Hide';
 $string['indentation'] = 'Allow indentation on course page';
 $string['indentation_help'] = 'Allow teachers, and other users with the manage activities capability, to indent items on the course page.';
-$string['newsectionname'] = 'New name for week {$a}';
-$string['page-course-view-weeks'] = 'Any course main page in weeks format';
-$string['page-course-view-weeks-x'] = 'Any course page in weeks format';
-$string['pluginname'] = 'Weekly format';
-$string['privacy:metadata'] = 'The Weekly format plugin does not store any personal data.';
+$string['page-course-view-weeks'] = 'Any course main page in weekly sections format';
+$string['page-course-view-weeks-x'] = 'Any course page in weekly sections format';
+$string['plugin_description'] = 'The course is divided into sections corresponding to each week, beginning from the course start date.';
+$string['pluginname'] = 'Weekly sections';
+$string['privacy:metadata'] = 'The Weekly sections format plugin does not store any personal data.';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Week';
-$string['showfromothers'] = 'Show week';
+$string['showfromothers'] = 'Show';

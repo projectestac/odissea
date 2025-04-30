@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', version '4.1'.
+ * Strings for component 'enrol', language 'pt', version '4.4'.
  *
  * @package     enrol
  * @category    string
@@ -36,6 +36,18 @@ $string['assignnotpermitted'] = 'Não tem permissão para atribuir papéis nesta
 $string['bulkuseroperation'] = 'Operações de utilizadores em massa';
 $string['configenrolplugins'] = 'Selecione todos os módulos necessários e coloque-os pela ordem correta.';
 $string['custominstancename'] = 'Nome personalizado da instância';
+$string['customwelcomemessage'] = 'Mensagem de boas-vindas personalizada';
+$string['customwelcomemessage_help'] = 'Formatos aceites: Texto simples ou Autoformatação Moodle. Tags HTML e tags multilingues também são aceites, bem como os seguintes espaços reservados:
+<ul>
+<li>Nome da disciplina {$a->coursename}</li>
+<li>Hiperligação para a página de perfil do utilizador {$a->profileurl}</li>
+<li>E-mail do utilizador {$a->email}</li>
+<li>Nome completo do utilizador {$a->fullname}</li>
+<li>Nome do utilizador {$a->firstname}</li>
+<li>Apelido do utilizador {$a->lastname}</li>
+<li>Papel do utilizador na disciplina {$a->courserole}</li>
+</ul>';
+$string['customwelcomemessageplaceholder'] = 'Caro/a {$a->fullname}, foi inscrito/a com sucesso na disciplina {$a->coursename}';
 $string['defaultenrol'] = 'Adicionar instância às novas disciplinas';
 $string['defaultenrol_desc'] = 'Se ativar esta opção, este módulo estará ativo por predefinição nas novas disciplinas criadas.';
 $string['deleteinstanceconfirm'] = 'Está prestes a apagar o método de inscrição "{$a->name}". Todos os utilizadores atualmente inscritos através deste método ({$a->users}) deixarão de estar inscritos e quaisquer informações relacionadas com a disciplina, tais como notas, participação em grupos ou subscrições de fóruns, serão apagadas. Tem a certeza de que pretende continuar?';
@@ -127,6 +139,7 @@ $string['periodend'] = 'até {$a}';
 $string['periodnone'] = '{$a} inscrito(s)';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} até {$a->end}';
+$string['plugindisabled'] = 'Módulo de inscrição {$a} está desativado';
 $string['privacy:metadata:user_enrolments'] = 'Inscrições';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'A instância do módulo de inscrição.';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ID do utilizador que modificou pela última vez a inscrição do utilizador.';
@@ -137,12 +150,13 @@ $string['privacy:metadata:user_enrolments:timeend'] = 'A data e hora em que term
 $string['privacy:metadata:user_enrolments:timemodified'] = 'A data e hora em que a inscrição do utilizador foi modificada.';
 $string['privacy:metadata:user_enrolments:timestart'] = 'A data e hora em que inicia a inscrição do utilizador.';
 $string['privacy:metadata:user_enrolments:userid'] = 'ID do utilizador';
-$string['proceedtocourse'] = 'Avançar para o conteúdo da disciplina';
 $string['recovergrades'] = 'Recuperar as notas antigas do utilizador (se possível)';
 $string['rolefromcategory'] = 'Papel "{$a->role}" herdado da categoria da disciplina';
 $string['rolefrommetacourse'] = 'Papel "{$a->role}" herdado de disciplina ascendente';
 $string['rolefromsystem'] = 'Papel "{$a->role}" atribuído no contexto do site';
 $string['rolefromthiscourse'] = 'Papel "{$a->role}" atribuído no contexto da disciplina';
+$string['sendcoursewelcomemessage'] = 'Enviar mensagem de boas-vindas à disciplina';
+$string['sendcoursewelcomemessage_help'] = 'Ao inscrever um utilizador ou um Grupo global na disciplina, poderá receber um e-mail com uma mensagem de boas-vindas. Se for determinado para ser enviado do contacto da disciplina (por predefinição, o professor) e mais do que um utilizador tem o papel de professor, o e-mail será enviado do primeiro utilizador a quem foi atribuído o papel de professor.';
 $string['sendfromcoursecontact'] = 'Do contacto da disciplina';
 $string['sendfromkeyholder'] = 'Do titular da chave';
 $string['sendfromnoreply'] = 'Do endereço \'Não responder\'';
@@ -161,7 +175,7 @@ $string['unassignnotpermitted'] = 'Não tem permissão para remover atribuiçõe
 $string['unenrol'] = 'Cancelar inscrição';
 $string['unenrolconfirm'] = 'Tem a certeza de que pretende cancelar a inscrição do utilizador "{$a->user}" na disciplina "{$a->course}" (anteriormente inscrito pelo método "{$a->enrolinstancename}")?';
 $string['unenrolleduser'] = 'Foi cancelada a inscrição do utilizador "{$a->fullname}" na disciplina';
-$string['unenrolme'] = 'Cancelar a minha inscrição em {$a}';
+$string['unenrolme'] = 'Cancelar a minha inscrição';
 $string['unenrolnotpermitted'] = 'Não tem permissão para cancelar a inscrição deste utilizador nesta disciplina.';
 $string['unenrolroleusers'] = 'Cancelar a inscrição de utilizadores';
 $string['uninstallmigrating'] = 'Migrar "{$a}" inscrições';

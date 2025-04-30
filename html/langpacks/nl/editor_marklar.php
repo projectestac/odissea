@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_marklar', language 'nl', version '4.1'.
+ * Strings for component 'editor_marklar', language 'nl', version '4.4'.
  *
  * @package     editor_marklar
  * @category    string
@@ -29,10 +29,12 @@ $string['insertimage'] = 'Afbeelding invoegen';
 $string['insertlink'] = 'Bestand invoegen';
 $string['pluginname'] = 'Marklar';
 $string['preferences'] = 'Voorkeuren Marklar editor';
+$string['preferencesediting'] = 'Opties bewerken';
 $string['preferencesformat'] = 'Bijkomende tekstopmaak kan ook met Marklar bewerkt worden';
 $string['preferencesformat_help'] = 'Marklar ondersteunt Markdown opgemaakte teksten. Het kan ook gebruikt worden voor het bewerken van teksten met andere opmaak. Selecteer alle bijkomende tekstopmaak die je ook met Marklar wil bewerken.
 
 Standaard wordt Marklar gebruikt voor Moodle auto-opmaak en platte tekst opgemaakte velden. Voor het bewerken van HTML zal een andere editor voor opgemaakte tekst gebruikt worden (zoals Atto of TinyMCE).';
+$string['preferencesmonospace'] = 'Gebruik monospace lettertype';
 $string['previewloading'] = 'Voorbeeld laden';
 $string['previewoff'] = 'Bewerk';
 $string['previewon'] = 'Voorbeeld';

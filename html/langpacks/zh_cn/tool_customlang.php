@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'zh_cn', version '4.1'.
+ * Strings for component 'tool_customlang', language 'zh_cn', version '4.4'.
  *
  * @package     tool_customlang
  * @category    string
@@ -43,7 +43,7 @@ $string['climissinglang'] = '缺失的语言';
 $string['climissingmode'] = '缺少或无效的模式（有效的是全部的，新的或更新的）。';
 $string['climissingsource'] = '缺少文件或文件夹';
 $string['clinolog'] = '没有可以导入到{$a}的内容';
-$string['confirmcheckin'] = '即将把修改过的字符串保存到您本地语言包中。这将从翻译器导出自定义的字符串到您的 Moodle 数据目录中，然后 Moodle 会开始使用这些修改过的字符串。按“继续”按钮保存。';
+$string['confirmcheckin'] = '您将要保存对本地语言包的修改。这会将自定义字符串从翻译器导出到您的网站数据目录中，您的网站将开始使用修改后的字符串。按“继续”继续保存。';
 $string['customlang:edit'] = '编辑本地翻译';
 $string['customlang:export'] = '导出本地翻译';
 $string['customlang:view'] = '查看本地翻译';
@@ -53,7 +53,7 @@ $string['exportfilter'] = '选择要导出的组件';
 $string['filter'] = '过滤字符串';
 $string['filtercomponent'] = '显示这些组件的字符串';
 $string['filtercustomized'] = '只显示自定义的';
-$string['filtermodified'] = '只显示修改过的';
+$string['filtermodified'] = '仅在此会话中修改';
 $string['filteronlyhelps'] = '只显示帮助';
 $string['filtershowstrings'] = '显示字符串';
 $string['filterstringid'] = '字符串标识符';
@@ -70,7 +70,7 @@ $string['import_update'] = '只更新本地自定义的字符串';
 $string['importfile'] = '导入文件';
 $string['langpack'] = '语言组件';
 $string['markinguptodate'] = '标记此自定义为最新';
-$string['markinguptodate_help'] = '如果在您自定义字符串后，原始的英文或主翻译有修改，那么自定义的翻译就过期了。请重新审查此自定义翻译。如果您认为它是最新的，就点此复选框。否则，就编辑它。';
+$string['markinguptodate_help'] = '如果自从您的网站上自定义字符串以来，英文原文或主翻译已修改，则自定义翻译可能会过时。查看自定义翻译。如果您发现它是最新的，请单击复选框。否则对其进行编辑。';
 $string['markuptodate'] = '标记为最新';
 $string['modifiedno'] = '没有需要保存的字符串';
 $string['modifiednum'] = '有 {$a} 条字符串修改过。您要把它们保存到您的本地语言包吗？';

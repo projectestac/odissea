@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'el', version '4.1'.
+ * Strings for component 'theme_boost', language 'el', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -52,4 +52,3 @@ $string['rawscsspre'] = 'Ακατέργαστος αρχικός κώδικας 
 $string['rawscsspre_desc'] = 'Σε αυτό το πεδίο μπορείτε να δώσετε κώδικα SCSS αρχικοποίησης. Θα παρεμβληθεί πριν από οτιδήποτε άλλο. Τις περισσότερες φορές θα χρησιμοποιήσετε αυτήν τη ρύθμιση για να ορίσετε μεταβλητές.';
 $string['region-side-pre'] = 'Δεξιά';
 $string['showfooter'] = 'Εμφάνιση υποσέλιδου';
-$string['totop'] = 'Μετάβαση στην κορυφή';

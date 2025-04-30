@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'pt', version '4.1'.
+ * Strings for component 'antivirus_clamav', language 'pt', version '4.4'.
  *
  * @package     antivirus_clamav
  * @category    string

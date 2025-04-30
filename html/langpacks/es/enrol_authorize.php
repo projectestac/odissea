@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_authorize', language 'es', version '4.1'.
+ * Strings for component 'enrol_authorize', language 'es', version '4.4'.
  *
  * @package     enrol_authorize
  * @category    string
@@ -65,13 +65,13 @@ $string['amount'] = 'Cantidad';
 $string['anauthcode'] = 'Obtener authcode';
 $string['anauthcodedesc'] = 'Si la tarjeta de crédito de un usuario no pueden ser capturada directamente en Internet, obtener el código de autorización a través del teléfono del banco del cliente.';
 $string['anavs'] = 'Sistema de verificación de direcciones';
-$string['anavsdesc'] = '';
+$string['anavsdesc'] = 'Elija esto si tiene activado el sistema de Verificación de Dirección (AVS) en su cuenta mercantil de Authorize.Net. Esto requiere campos de dirección como calle, estado, país y código postal cuando el usuario llene su formato de pago.';
 $string['ancaptureday'] = 'Día de captura';
-$string['ancapturedaydesc'] = '';
+$string['ancapturedaydesc'] = 'Capture la tarjeta de crédito automáticamente a menos que un profesor o administrador revise la orden dentro de los días especificados. CRON DEBE ESTAR HABILITADO. .<br />(0 días significa que está deshabilitada la captura programada, lo que significa que el profesor o administrador debe revisar manualmente las órdenes. Las transacciones serán canceladas si usted deshabilita la captura-programada o a menos que la revise dentro de los 30 días).';
 $string['anemailexpired'] = 'Notificación de expiración';
 $string['anemailexpireddesc'] = 'Esto es útil para la \'captura-manual\'. A los administradores se les notifica el número de días especificados previo a la caducidad de las órdenes pendientes.';
 $string['anemailexpiredteacher'] = 'Notificación de expiración - Profesor';
-$string['anemailexpiredteacherdesc'] = '';
+$string['anemailexpiredteacherdesc'] = 'Si ha habilitado la captura manual (vea arriba), y los profesores pueden manejar los pagos, se les puede notificar sobre órdenes a punto de caducar. Esto les mandará un Email a cada uno de los profesores del curso sobre el conteo de ordenes a punto de caducar.';
 $string['anlogin'] = 'Authorize.net: Usuario';
 $string['anpassword'] = 'Authorize.net: Contraseña';
 $string['anreferer'] = 'Escriba aquí la referencia URL en el caso de que usted la ajuste en su cuenta authorize.net, que enviará una cabecera "Referer: URL" en la petición web.';

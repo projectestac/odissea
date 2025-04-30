@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'zh_cn', version '4.1'.
+ * Strings for component 'contentbank', language 'zh_cn', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = '作者';
 $string['choosecontext'] = '选择课程或类别...';
-$string['close'] = '关闭';
 $string['contentbank'] = '内容库';
 $string['contentbankpreferences'] = '内容库偏好';
+$string['contentcopied'] = '已复制';
+$string['contentcreated'] = '已创建';
 $string['contentdeleted'] = '已删除';
 $string['contentname'] = '内容名称';
 $string['contentnotdeleted'] = '试图删除内容时遇到错误。';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = '已重命名';
 $string['contentsmoved'] = '内容库内容移动到{$a}。';
 $string['contenttypenoaccess'] = '您无法查看这个{$a}实例。';
 $string['contenttypenoedit'] = '您不能编辑此内容';
+$string['contentupdated'] = '已更新';
 $string['contentvisibilitychanged'] = '内容现在是 {$a}';
 $string['contentvisibilitynotset'] = '尝试设置内容可见性时遇到错误。';
 $string['contextnotallowed'] = '在这种情况下，您不允许访问内容库。';
+$string['copycontent'] = '复制内容';
+$string['copyof'] = '{$a} 的副本';
 $string['deletecontent'] = '删除内容';
 $string['deletecontentconfirm'] = '您确定要删除内容 <em>“{$a->name}”</em>和所有相关文件吗?此操作无法撤消。';
 $string['deletecontentconfirmlinked'] = '内容只会从内容库中删除。 当前链接到它的任何地方都将自动更新以使用内容的副本。';
@@ -64,6 +68,7 @@ $string['more'] = '更多';
 $string['name'] = '内容';
 $string['nocontentavailable'] = '没有可用的内容';
 $string['nocontenttypes'] = '无内容类型可用';
+$string['nopermissiontocopy'] = '您无权复制内容';
 $string['nopermissiontodelete'] = '您没有权限删除内容。';
 $string['nopermissiontomanage'] = '您没有管理内容的权限。';
 $string['notavailable'] = '抱歉，此内容不可用。';

@@ -62,6 +62,9 @@ export default class Component extends BaseComponent {
 
         for (let sectionid of element.sectionlist) {
             const section = this.reactive.get("section", sectionid);
+            if (section.component) {
+                continue;
+            }
             while (containerlevels[containerlevels.length - 1].indent >= section.indent) {
                 containerlevels.pop();
             }
@@ -86,6 +89,16 @@ export default class Component extends BaseComponent {
         for (let sectionid of element.sectionlist) {
             const section = this.reactive.get("section", sectionid);
             const sectionDom = this.sections[sectionid];
+            const linkDom = sectionDom.querySelector(":scope > .courseindex-item a.courseindex-link");
+            if (linkDom) {
+                const link = section.sectionurl.replace("&amp;", "&");
+                if (linkDom.href != link) {
+                    linkDom.href = link;
+                }
+            }
+            if (section.component) {
+                continue;
+            }
             if (sectionDom.dataset?.indent != section.indent) {
                 const sectiontitledom = sectionDom.querySelector(":scope > .courseindex-item");
                 if (sectiontitledom) {
@@ -99,13 +112,6 @@ export default class Component extends BaseComponent {
                 }
                 sectionDom.dataset.indent = section.indent;
             }
-            const linkDom = sectionDom.querySelector(":scope > .courseindex-item a.courseindex-link");
-            if (linkDom) {
-                const link = section.sectionurl.replace("&amp;", "&");
-                if (linkDom.href != link) {
-                    linkDom.href = link;
-                }
-            }
         }
     }
 
@@ -117,6 +123,11 @@ export default class Component extends BaseComponent {
      * @param {Object} details.element the element data.
      */
     async _createSection({state, element}) {
+        if (element.component) {
+            super._createSection({state, element});
+            return;
+        }
+
         // Create a fake node while the component is loading.
         const fakeelement = document.createElement('div');
         fakeelement.dataset.id = element.id;

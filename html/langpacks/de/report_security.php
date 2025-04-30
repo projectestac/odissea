@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', version '4.1'.
+ * Strings for component 'report_security', language 'de', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -79,10 +79,6 @@ $string['check_guestrole_error'] = 'Die Definition der Gastrolle "{$a}" ist fehl
 $string['check_guestrole_name'] = 'Gastrolle';
 $string['check_guestrole_notset'] = 'Die Gastrolle ist nicht eingestellt..';
 $string['check_guestrole_ok'] = 'Die Definition der Gastrolle ist in Ordnung.';
-$string['check_mediafilterswf_details'] = '<p>Die automatische Einbettung von Flash-Dateien .swf ist äußerst gefährlich, weil registrierte Nutzer/innen den Server über Cross-Website-Scripting (XSS) angreifen könnten. Diese Einstellung sollte auf produktiven Servern deaktiviert sein.</p>';
-$string['check_mediafilterswf_error'] = 'Der Flash-Mediafilter (.swf) ist aktiviert - dies ist für die meisten Webserver sehr gefährlich.';
-$string['check_mediafilterswf_name'] = 'Mediafilter (.swf)';
-$string['check_mediafilterswf_ok'] = 'Der Flash-Mediafilter (.swf) ist nicht aktiv.';
 $string['check_nodemodules_details'] = '<p>Das Verzeichnis <em>{$a->path}</em> enthält Node.js-Module und deren Abhängigkeiten, die normalerweise vom NPM-Dienstprogramm installiert werden. Diese Module werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Verwendung des Grunt-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen, und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten.</p>';
 $string['check_nodemodules_info'] = 'Das Verzeichnis node_modules sollte nicht auf öffentlichen Websites vorhanden sein.';
 $string['check_nodemodules_name'] = 'Node.js-Modulverzeichnis';

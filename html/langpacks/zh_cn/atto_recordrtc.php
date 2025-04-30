@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'zh_cn', version '4.1'.
+ * Strings for component 'atto_recordrtc', language 'zh_cn', version '4.4'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -69,8 +69,6 @@ $string['recordrtc:recordvideo'] = '直接在文本编辑器中录制视频';
 $string['settings'] = 'RecordRTC设置';
 $string['startrecording'] = '开始录制';
 $string['stoprecording'] = '停止录制';
-$string['timelimit'] = '时间限制 (秒)';
-$string['timelimit_desc'] = '音频视频片段允许的最大录制长度';
 $string['timelimitwarning'] = '您必须输入一个大于0的数字。';
 $string['uploadaborted'] = '上传已中止:';
 $string['uploadfailed'] = '上传失败:';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ro', version '4.1'.
+ * Strings for component 'block_myoverview', language 'ro', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Grupare meniu derulant';
 $string['aria:hiddencourses'] = 'Afișați cursurile ascunse din listă';
 $string['aria:hidecourse'] = 'Eliminați {$a} din vizualizare';
 $string['aria:inprogress'] = 'Afișați cursurile în progres';
-$string['aria:lastaccessed'] = 'Sortați cursurile după ultima dată de accesare';
 $string['aria:list'] = 'Treci la vizualizarea tip listă';
 $string['aria:past'] = 'Afișează cursurile din trecut';
 $string['aria:removefromfavourites'] = 'Elimină cursul din favorite';
-$string['aria:shortname'] = 'Sortează cursurile după numele scurt al cursului';
 $string['aria:showcourse'] = 'Restaurează {$a} pentru a vizualiza';
 $string['aria:sortingdropdown'] = 'Meniul derulant de sortare';
 $string['aria:summary'] = 'Treci la vizualizarea de tip rezumat';
-$string['aria:title'] = 'Sortează cursurile după numele cursului';
 $string['availablegroupings'] = 'Filtre disponibile';
 $string['availablegroupings_desc'] = 'Filtre de curs care sunt disponibile pentru selectare de către utilizatori. Dacă nu este selectat niciunul, vor fi afișate toate cursurile.';
 $string['card'] = 'Card';
 $string['cards'] = 'Carduri';
-$string['clearsearch'] = 'Șterge căutarea';
 $string['completepercent'] = '{$a}% complet';
 $string['courseprogress'] = 'Progres curs:';
+$string['createcourse'] = 'Creează curs';
 $string['customfield'] = 'Câmp personalizat';
 $string['customfiltergrouping'] = 'Câmp de utilizat';
 $string['customfiltergrouping_nofields'] = 'Această opțiune necesită configurarea unui câmp personalizat al cursului și vizibil pentru toată lumea.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Sortează după denumirea prescurtată';
 $string['sortbytitle'] = 'Sortează după titlul cursului';
 $string['summary'] = 'Rezumat';
 $string['title'] = 'Denumire curs';
+$string['viewquickstart'] = 'Vezi ghidul Quickstart';
+$string['zero_default_intro'] = 'Odată ce ești înscris la un curs, acesta va apărea aici.';
+$string['zero_default_title'] = 'Nu ești înscris la niciun curs.';
+$string['zero_nocourses_intro'] = 'Ai nevoie de ajutor pentru a începe? Verifică <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentația Moodle</a> sau folosește ghidul nostru Quickstart.';
+$string['zero_nocourses_title'] = 'Creează primul tău curs';
+$string['zero_request_intro'] = 'Ai nevoie de ajutor pentru a începe? Verifică <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentația Moodle</a> sau folosește <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">ghidul nostru Quickstart</a>.';
+$string['zero_request_title'] = 'Solicită primul tău curs';

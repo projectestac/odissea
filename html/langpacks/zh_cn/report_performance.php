@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'zh_cn', version '4.1'.
+ * Strings for component 'report_performance', language 'zh_cn', version '4.4'.
  *
  * @package     report_performance
  * @category    string
@@ -37,9 +37,7 @@ $string['check_dbschema_name'] = '数据库架构检查';
 $string['check_dbschema_ok'] = '数据库架构正确';
 $string['check_debugmsg_comment_developer'] = '如果设置为开发者以外其他项，性能可能会有所改进。';
 $string['check_debugmsg_comment_nodeveloper'] = '如果设置为开发者，性能可能略受影响。';
-$string['check_debugmsg_details'] = '将提供程序进行中出现错误信息，除非你是程序开发人员，否则没有什么好处。
-一旦你取得程序运行中的错误信息，赶快复制到其他地方，然后把调试信息重新设置为“无”。
-调试模式影响性能，还有可能会把网站的有关信息泄漏给骇客。';
+$string['check_debugmsg_details'] = '除非开发人员要求，否则进入开发人员级别很少有任何优势。<p>获得错误消息并将其复制并粘贴到某个位置后，强烈建议将 Debug 切换回 NONE。调试消息可以为黑客提供有关您网站设置的线索，并可能影响性能。</p>';
 $string['check_enablestats_comment_disable'] = '统计处理过程可能影响性能。若启用，统计设置要小心。';
 $string['check_enablestats_comment_enable'] = '统计处理过程可能影响性能。统计设置要小心。';
 $string['check_enablestats_details'] = '若启用，它将定期处理日志并进行统计。若你的网站访问量较大，可能需要更多时间。<p>在统计过程中，会消耗更多服务器资源从而可能影响性能。</p>';

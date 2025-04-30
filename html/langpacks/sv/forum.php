@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'sv', version '4.1'.
+ * Strings for component 'forum', language 'sv', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -496,6 +496,7 @@ $string['nodiscussions'] = 'Det finns ännu inga diskussionsämnen i detta forum
 $string['nodiscussionsstartedby'] = 'Den här användaren {$a} har inte inlett några diskussionsämnen.';
 $string['nodiscussionsstartedbyyou'] = 'Du har inte startat några diskussioner ännu';
 $string['noguestpost'] = 'Tyvärr, gäster har ingen behörighet att göra inlägg.';
+$string['noguestpost:title'] = 'Logga in för att fortsätta';
 $string['noguestsubscribe'] = 'Tyvärr, gäster kan inte prenumerera.';
 $string['noguesttracking'] = 'Tyvärr, gäster får inte ställa in bevakningsalternativ.';
 $string['nomorepostscontaining'] = 'Det gick inte att hitta några inlägg som innehåller \'{$a}\'';
@@ -553,9 +554,6 @@ $string['postbyuser'] = '{$a->post} av {$a->user}';
 $string['postincontext'] = 'Se detta inlägg i sitt sammanhang';
 $string['postisprivatereply'] = 'Detta är ett privat svar. Det är endast synligt för dig och användare som har behörighet att se privata svar, som t.ex. lärare och chefer.';
 $string['postmailinfo'] = 'Detta är en kopia av ett inlägg i "{$a}"-forumet.';
-$string['postmailinfolink'] = 'Detta är en kopia av ett meddelande i   {$a->coursename}.
-
-Klicka på länken för att svara: {$a->replylink}';
 $string['postmailnow'] = '<p>Det här inlägget kommer omedelbart att skicka med e-post till alla som prenumererar på forumet.</p>';
 $string['postmailreply'] = 'Klicka på den här länken för att svara: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

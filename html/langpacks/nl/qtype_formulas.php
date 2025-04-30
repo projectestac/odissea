@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'nl', version '4.1'.
+ * Strings for component 'qtype_formulas', language 'nl', version '4.4'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -35,8 +35,8 @@ moet een lijst met getallen of een lijst met strings zijn, afhankelijk van het g
 <pre class="prettyprint">123<br>[1, 0, 0, 1]<br>a<br>[1, a, b]<br>"exp(-a t)"<br>["vx t","vy t - 0.5 a t^2"]</pre';
 $string['answercombinedunitmulti'] = 'Antwoord en eenheid voor deel {$a->part}';
 $string['answercombinedunitsingle'] = 'Antwoord en eenheid';
-$string['answercoordinatemulti'] = 'Antwoord voor deel {$a->part} en coördinaat {$a->numanswer}';
-$string['answercoordinatesingle'] = 'Antwoord voor coördinaat {$->numanswer}';
+$string['answercoordinatemulti'] = 'Antwoordveld {$a->numanswer} voor deel {$a->part}';
+$string['answercoordinatesingle'] = 'Antwoordveld{$->numanswer}';
 $string['answermark'] = 'Deelcijfer*';
 $string['answermark_help'] = '**Vereist**.
 Het cijfer voor het antwoord op dit deel - moet groter zijn dan 0.
@@ -45,6 +45,8 @@ Het standaardcijfer voor de hele vraag is de som van alle deelcijfers.
 Merk op: als dit deelcijfer leeg gelaten wordt, dan zal dit deel verwijderd worden wanneer de vraag bewaard wordt.';
 $string['answermulti'] = 'Antwoord voor deel {$a->part}';
 $string['answerno'] = 'Deel {$a}';
+$string['answernotunique'] = 'Er zijn andere juiste antwoorden';
+$string['answernotunique_help'] = 'Als deze optie in ingeschakeld, dan zal de leerling "Een juist antwoord is:///" zien in plaats van "Het juiste antwoord is: ..." wanneer ze hun poging nakijken.';
 $string['answersingle'] = 'Antwoord';
 $string['answertype'] = 'Antwoordtype';
 $string['answertype_help'] = 'Er zijn vier antwoordtypes:
@@ -71,7 +73,7 @@ Je kunt ofwel een relatieve fout of een absolute fout met foutenmarge kiezen. Re
 Lees de documentatie voor de juiste definitie van relatieve- en absolute fout wanneer er meer dan één antwoordveld is.';
 $string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Expert';
-$string['correctnesssimple'] = 'Eenvoudig';
+$string['correctnesssimple'] = 'Eenvoudige modus';
 $string['defaultanswermark'] = 'Standaard deelcijfer';
 $string['defaultanswermark_desc'] = 'Standaard deelcijfer voor nieuwe vraagonderdelen';
 $string['defaultanswertype'] = 'Standaad antwoordtype';
@@ -92,6 +94,7 @@ $string['error_forloop'] = 'Syntax fout in de lus.';
 $string['error_forloop_expression'] = 'Expressie van de for-lus moet een lijst zijn.';
 $string['error_forloop_var'] = 'Variable van de for-lus heeft fouten.';
 $string['error_func_param'] = 'Fout getal of foute parameterypes voor de functie {$a}()';
+$string['error_grading_error'] = 'Beoordelingsfout! Waarschijnlijk het gevolg van een fout importbestand of databankcorruptie.';
 $string['error_mark'] = 'Het antwoordcijfer met een waarde groter dan 0 zijn.';
 $string['error_no_answer'] = 'Er is minstens één antwoord vereist.';
 $string['error_placeholder_format'] = 'Foute opmaak plaatshouder of niet toegestane tekens.';
@@ -99,6 +102,7 @@ $string['error_placeholder_main_duplicate'] = 'Dubbele plaatshouder in de hoofdv
 $string['error_placeholder_missing'] = 'Deze plaatshouder ontbreekt in de hoofdvraagtekst.';
 $string['error_placeholder_sub_duplicate'] = 'Deze plaatshouder is al gedefinieerd in een andere deelvraag.';
 $string['error_placeholder_too_long'] = 'De lengte van  de plaatshouder is beperkt tot 40 tekens.';
+$string['error_question_damaged'] = 'Fout: Vraag is beschadigd, aantal tekstfragmenten en aantal vraagdelen zijn niet gelijk.';
 $string['error_randvars_set_size'] = 'Het aantal genereerbare elementen moet groter zijn dan 1.';
 $string['error_randvars_type'] = 'Alle elementen in de set moeten van hetzelfde type zijn en dezelfde grootte hebben.';
 $string['error_rule'] = 'Fout bij het verwerken van de regel!';
@@ -125,6 +129,7 @@ $string['functiontakesatleasttwo'] = 'De functie {$a} moet minstens twee argumen
 $string['functiontakesnoargs'] = 'De functie {$a} verwerkt geen argumenten';
 $string['functiontakesonearg'] = 'De functie {$a} moet exact één argument krijgen';
 $string['functiontakesoneortwoargs'] = 'De functie {$a} moet één of twee argumenten krijgen';
+$string['functiontakesthreeargs'] = 'De functie {$a} moet exact drie argumenten hebben';
 $string['functiontakestwoargs'] = 'De functie {$a} moet exact twee argumenten krijgen';
 $string['globalvarshdr'] = 'Variablen';
 $string['illegalformulasyntax'] = 'Ongeldige formule-syntax beginnend met \'{$a}\'';
@@ -136,7 +141,7 @@ $string['modelanswer'] = 'Modelantwoord';
 $string['none'] = 'Geen';
 $string['number'] = 'Getal';
 $string['number_unit'] = 'Getal en eenheid';
-$string['numdataset'] = 'Getal van dataset';
+$string['numdataset'] = 'Aantal datasets';
 $string['numeric'] = 'Numeriek';
 $string['numeric_unit'] = 'Numeriek en eenheid';
 $string['numerical_formula'] = 'Numerieke formule';
@@ -171,8 +176,9 @@ Verder kan <tt> / </tt> gebruikt worden voor de inverse van een exponent. Een pe
 Leerlingen moeten dezelfde invoeropmaak gebruiken. Bijvoorbeeld:
 
 <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
+$string['previewerror'] = 'Geen voorbeeld beschikbaar. Controleer je definitie van willekeurige variabelen, globale variabelen, de locale variabelen van delen en antwoorden. Originele foutboodschap:';
 $string['privacy:metadata'] = 'De formule vraagtype-plugin bewaart geen persoonlijke gegevens.';
-$string['qtextpreview'] = 'Voorbeeld met dataset';
+$string['qtextpreview'] = 'Voorbeeld';
 $string['questiontext'] = 'Vraagtekst';
 $string['questiontext_help'] = 'In de gewone vraagtekst kun je ook globale variabelen en plaatshouders gebruiken.
 
@@ -188,15 +194,16 @@ $string['ruleid_help'] = 'Dit vraagtype heeft een ingebouwd eenheidsconversiesys
 De basisregel is de "Algemene SI-eenheden"-regels die standaardeenheden zoals bijvoorbeeld de eenheid voor lengte, zoals km, m, cm en mm. Deze optie heeft geen effect als er geen eenheid gebruikt wordt.';
 $string['settingusepopup'] = 'Gebruik tooltips';
 $string['settingusepopup_desc'] = 'Toon juist antwoord en feedback in een tooltip';
-$string['subqoptions'] = 'Extra opties';
+$string['subqoptions'] = 'Instellingen eenheden';
 $string['subqtext'] = 'Tekst deelvraag';
 $string['subqtext_help'] = 'De deelvraagtekst en antwoorden kunnen hier gegeven worden. De plaatshouders die gebruikt kunnen worden om plaats te houden voor bepaalde antwoordvelden zijn:
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
 
-De <tt> {_0}, {_1}, {_2} </tt> zijn de invoervelden voor coördinaten en <tt> {_u} </tt> is het invoerveld voor de eenheid.
+De <tt> {_0}, {_1}, {_2} </tt> zijn de verschillende invoervelden voor waarden en <tt> {_u} </tt> is het invoerveld voor de eenheid.
 
-Alle ontbrekende velden worden automatisch toegevoegd aan het einde van de tekst van de deelvraag. Een speciaal geval is dat wanneer <tt> {_0}, {_u} </tt>  na elkaar ingegeven zijn en er is maar één coördinaat en eenheid, vb <tt> {_0}{_u} </tt>,, dan zullen die gecombineerd worden in één lang antwoordveld voor antwoord en eenheid samen.';
+Alle ontbrekende velden worden automatisch toegevoegd aan het einde van de tekst van de deelvraag. Een speciaal geval is dat wanneer <tt> {_0}, {_u} </tt>  na elkaar ingegeven zijn en er is maar één waarde en eenheid, vb <tt> {_0}{_u} </tt>,, dan zullen die gecombineerd worden in één lang antwoordveld voor antwoord en eenheid samen.';
+$string['uniquecorrectansweris'] = 'Het juiste antwoord is: {$a}';
 $string['unit'] = 'Eenheid';
 $string['unitpenalty'] = 'Afleiding voor foute eenheid (0-1)*';
 $string['unitpenalty_help'] = 'Met deze optie kun je het aantal punten ingeven dat je wil afnemen van een leerling die de eenheid fout heeft.
@@ -210,7 +217,7 @@ $string['vars1_help'] = 'Je kunt hier variabelen definiëren zoals globale varia
 $string['vars2'] = 'Beoordelingsvariabelen';
 $string['vars2_help'] = 'Alle lokale variabelen en de antwoorden van de leerlingen kunnen hier gebruikt worden. Lees de documentatie voor geavanceerd gebruik.';
 $string['vars2_link'] = 'https://moodleformulas.org/';
-$string['varsdata'] = 'Geïnstantieerde dataset';
+$string['varsdata'] = 'Geïnstantieerde datasets';
 $string['varsglobal'] = 'Globale variabelen';
 $string['varsglobal_help'] = 'Hier kunnen formules opgegeven worden om de geïnstantieerde willekeurige variabelen te manipuleren (alle willekeurige variabelen zijn hier beschikbaar). De volledige lijst met mathematische functies en operators staat in de documentatie.
 

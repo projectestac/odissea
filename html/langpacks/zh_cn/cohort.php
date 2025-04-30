@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', version '4.1'.
+ * Strings for component 'cohort', language 'zh_cn', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = '队列成员';
 $string['cohorts'] = '群组';
 $string['cohortsin'] = '{$a}：可用群';
 $string['component'] = '来源';
+$string['contextcohortnotallowed'] = '在此上下文中不允许使用群组 <b>{$a}</b>';
 $string['contextnotfound'] = '情况 <b>{$a}</b>未找到，或者你没有在这里创建群的权限。将使用默认值。';
 $string['csvcontainserrors'] = '在CSV中发现错误。详见下面。';
 $string['csvcontainswarnings'] = '在CSV中发现警告。详见下面。';
@@ -48,7 +49,7 @@ $string['currentusers'] = '当前用户';
 $string['currentusersmatching'] = '匹配的当前用户';
 $string['defaultcontext'] = '默认情况';
 $string['delcohort'] = '删除群';
-$string['delconfirm'] = '您真的要删除群“{$a}”吗？';
+$string['delconfirm'] = '这将删除群组“{$a}”和所有关联数据';
 $string['description'] = '描述';
 $string['displayedrows'] = '{$a->displayed}行显示超过了{$a->total}。';
 $string['duplicateidnumber'] = '已有使用相同ID的群存在';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = '群组中用户的ID';
 $string['removeuserwarning'] = '从群删除用户可能会导致撤销该用户在多个课程的选课，也就是说会删除用户在这些课程的个人设置、成绩、分组和其它用户信息。';
 $string['search'] = '搜索';
 $string['searchcohort'] = '搜索群';
+$string['selectcohort'] = '选择群组';
 $string['selectfromcohort'] = '从群选择成员';
 $string['systemcohorts'] = '系统群';
 $string['unknowncohort'] = '未知群（{$a}）！';

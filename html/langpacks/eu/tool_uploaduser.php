@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'eu', version '4.1'.
+ * Strings for component 'tool_uploaduser', language 'eu', version '4.4'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -53,6 +53,7 @@ $string['infoprefix'] = 'Informazioa:';
 $string['invalidtheme'] = '"{$a}" azala ez dago instalatuta eta baztertua izango da.';
 $string['invalidupdatetype'] = 'Igoera-mota honetan ezin da aukera hau hautatu.';
 $string['invaliduserdata'] = '{$a} erabiltzailearen datu baliogabea antzeman da eta automatikoki garbitu da.';
+$string['invaliduserdatavalues'] = 'Datu baliogabeak ({$a->values}) antzeman dira {$a->username} erabiltzailearentzat. Datu horiek zuzendu ala ezabatu dira.';
 $string['linex'] = '{$a} lerroa';
 $string['matchemail'] = 'Parekatu helbide elektronikoa';
 $string['nochanges'] = 'Aldaketarik ez';

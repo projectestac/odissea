@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', version '4.1'.
+ * Strings for component 'form', language 'ca', version '4.4'.
  *
  * @package     form
  * @category    string
@@ -32,7 +32,7 @@ $string['custom'] = 'Personalitzat';
 $string['day'] = 'Dia';
 $string['default'] = 'Per defecte';
 $string['display'] = 'Mostra';
-$string['err_alphanumeric'] = 'Només s\'hi admeten lletres o nombres.';
+$string['err_alphanumeric'] = 'Aquí només s\'admeten lletres o números.';
 $string['err_email'] = 'Heu d\'introduir una adreça de correu vàlida.';
 $string['err_lettersonly'] = 'Només s\'hi admeten lletres.';
 $string['err_maxfiles'] = 'Aquí no podeu adjuntar més de {$a} fitxers.';
@@ -41,7 +41,7 @@ $string['err_minlength'] = 'Heu d\'introduir com a mínim {$a->format} caràcter
 $string['err_nonzero'] = 'Heu d\'introduir un nombre que no comenci per zero.';
 $string['err_nopunctuation'] = 'No s\'hi admeten signes de puntuació.';
 $string['err_numeric'] = 'Heu d\'introduir un nombre.';
-$string['err_positiveint'] = 'Heu d\'introduir un nombre més gran que zero.';
+$string['err_positiveint'] = 'Heu d\'introduir un número enter més gran que zero.';
 $string['err_rangelength'] = 'Heu d\'introduir una cadena entre {$a->format[0]} i {$a->format[1]} caràcters.';
 $string['err_required'] = 'Heu d\'introduir un valor.';
 $string['err_wrappingwhitespace'] = 'El valor no pot començar o acabar amb un espai en blanc.';

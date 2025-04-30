@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ca', version '4.1'.
+ * Strings for component 'install', language 'ca', version '4.4'.
  *
  * @package     install
  * @category    string
@@ -44,7 +44,7 @@ $string['clialreadyconfigured'] = 'El fitxer config.php ja existeix; feu servir 
 $string['clialreadyinstalled'] = 'El fitxer de configuració config.php ja existeix. Feu servir admin/cli/upgrade.php si voleu actualitzar Moodle per a aquest lloc web.';
 $string['cliinstallfinished'] = 'La instal·lació ha finalitzat amb èxit.';
 $string['cliinstallheader'] = 'Programa d\'instal·lació de línia d\'ordres de Moodle {$a}';
-$string['climustagreelicense'] = 'En el mode no interactiu heu d\'estar d\'acord amb la llicència especificant l\'opció --d\'acord-';
+$string['climustagreelicense'] = 'En mode no interactiu, heu d\'acceptar la llicència especificant l\'opció --agree-license';
 $string['cliskipdatabase'] = 'S\'està ometent la instal·lació de la base de dades.';
 $string['clisupportemail'] = 'Adreça electrònica de suport';
 $string['clitablesexist'] = 'Les taules de la base de dades ja existeixen. La instal·lació per línia d\'ordres no pot continuar.';
@@ -69,7 +69,7 @@ $string['databaseuser'] = 'Usuari de la base de dades:';
 $string['dataroot'] = 'Directori de dades';
 $string['datarooterror'] = 'No s\'ha pogut trobar o crear el directori de dades que heu especificat. Corregiu el camí o creeu el directori a mà.';
 $string['datarootpermission'] = 'Permisos dels directoris de dades';
-$string['datarootpublicerror'] = 'El directori de dades que heu especificat és accessible directament per web. Utilitzeu una altra ubicació.';
+$string['datarootpublicerror'] = 'El directori de dades que heu especificat és accessible directament via web. Heu d\'utilitzar una altra ubicació.';
 $string['dbconnectionerror'] = 'No es pot obrir la connexió amb la base de dades que heu especificat. Comproveu els paràmetres de la base de dades.';
 $string['dbcreationerror'] = 'Error en la creació de la base de dades. No s\'ha pogut crear la base de dades amb els paràmetres proporcionats.';
 $string['dbhost'] = 'Ordinador servidor';
@@ -181,9 +181,9 @@ $string['pathswrongadmindir'] = 'No existeix el directori d\'administració';
 $string['pgsqlextensionisnotpresentinphp'] = 'El PHP no s\'ha configurat correctament amb l\'extensió PGSQL de manera que pugui comunicar-se amb PostgreSQL. Reviseu el fitxer php.ini o recompileu el PHP.';
 $string['phpextension'] = 'Extensió PHP {$a}';
 $string['phpversion'] = 'Versió PHP';
-$string['phpversionhelp'] = '<p>Moodle necessita una versió de PHP 4.3.0 o 5.1.0 (les versions 5.0.x tenien uns quants problemes coneguts).</p>
-<p>A hores d\'ara esteu utilitzant la versió {$a}.</p>
-<p>Us cal actualitzar el PHP o traslladar Moodle a un ordinador amb una versió de PHP més recent.<br />(Si esteu utilitzant la versió 5.0.x, alternativament també podríeu tornar enrere a la 4.4.x)</p>';
+$string['phpversionhelp'] = '<p>El Moodle requereix una versió de PHP almenys 5.6.5 o 7.1 (7.0.x té algunes limitacions del motor).</p>
+<p>Actualment esteu executant la versió {$a}.</p>
+<p>Heu d\'actualitzar el PHP o canviar a un servidor amb una versió més nova del PHP.</p>';
 $string['releasenoteslink'] = 'Per a més informació sobre aquesta versió de Moodle, consulteu les notes de llançament a {$a}';
 $string['safemode'] = 'Mode segur';
 $string['safemodeerror'] = 'Moodle pot tenir problemes amb el mode segur activat';

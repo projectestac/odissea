@@ -52,8 +52,8 @@ abstract class question_wizard_form extends moodleform {
         $mform->addElement('hidden', 'returnurl');
         $mform->setType('returnurl', PARAM_LOCALURL);
 
-        $mform->addElement('hidden', 'scrollpos');
-        $mform->setType('scrollpos', PARAM_INT);
+        $mform->addElement('hidden', 'mdlscrollto');
+        $mform->setType('mdlscrollto', PARAM_INT);
 
         $mform->addElement('hidden', 'appendqnumstring');
         $mform->setType('appendqnumstring', PARAM_ALPHA);
@@ -256,7 +256,6 @@ abstract class question_edit_form extends question_wizard_form {
         $this->definition_inner($mform);
 
         if (core_tag_tag::is_enabled('core_question', 'question')
-            && class_exists('qbank_tagquestion\\tags_action_column')
             && \core\plugininfo\qbank::is_plugin_enabled('qbank_tagquestion')) {
             $this->add_tag_fields($mform);
         }
@@ -478,8 +477,7 @@ abstract class question_edit_form extends question_wizard_form {
             $element->setValue(array('text' => get_string($feedbackname.'default', 'question')));
 
             if ($withshownumpartscorrect && $feedbackname == 'partiallycorrectfeedback') {
-                $mform->addElement('advcheckbox', 'shownumcorrect',
-                        get_string('options', 'question'),
+                $mform->addElement('advcheckbox', 'shownumcorrect', '',
                         get_string('shownumpartscorrectwhenfinished', 'question'));
                 $mform->setDefault('shownumcorrect', true);
             }
@@ -503,8 +501,8 @@ abstract class question_edit_form extends question_wizard_form {
 
         $optionelements = array();
         if ($withclearwrong) {
-            $optionelements[] = $mform->createElement('advcheckbox', 'hintclearwrong',
-                    get_string('options', 'question'), get_string('clearwrongparts', 'question'));
+            $optionelements[] = $mform->createElement('advcheckbox', 'hintclearwrong', '',
+                    get_string('clearwrongparts', 'question'));
         }
         if ($withshownumpartscorrect) {
             $optionelements[] = $mform->createElement('advcheckbox', 'hintshownumcorrect', '',
@@ -803,8 +801,11 @@ abstract class question_edit_form extends question_wizard_form {
 
     /**
      * Perform the necessary preprocessing for the hint fields.
-     * @param object $question the data being passed to the form.
-     * @return object $question the modified data.
+     *
+     * @param object $question The data being passed to the form.
+     * @param bool $withclearwrong Clear wrong hints.
+     * @param bool $withshownumpartscorrect Show number correct.
+     * @return stdClass The modified data.
      */
     protected function data_preprocessing_hints($question, $withclearwrong = false,
             $withshownumpartscorrect = false) {
@@ -907,7 +908,7 @@ abstract class question_edit_form extends question_wizard_form {
      * @return the question type name, should be the same as the name() method
      *      in the question type class.
      */
-    public abstract function qtype();
+    abstract public function qtype();
 
     /**
      * Returns an array of editor options with collapsed options turned off.

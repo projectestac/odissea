@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'es', version '4.1'.
+ * Strings for component 'report_security', language 'es', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -30,7 +30,7 @@ $string['check_antivirus_error'] = 'Se han detectado {$a->errors} errores en el 
 $string['check_antivirus_info'] = 'Actualmente no hay escáneres antivirus habilitados';
 $string['check_antivirus_logstore_not_supported'] = 'No se puede verificar el estado de los escáneres antivirus debido al tipo de almacén de registros elegido';
 $string['check_antivirus_name'] = 'Antivirus';
-$string['check_antivirus_ok'] = '{$a->scanners} escáner(es) antivirus habilitado(s), no se han detectado problemas en el último {$a->lookback}';
+$string['check_antivirus_ok'] = '{$a->scanners} escáner(es) antivirus habilitado(s); no se han detectado problemas en los últimos {$a->lookback}';
 $string['check_configrw_details'] = '<p>Se recomienda que los permisos del archivo <code>config.php</code> se cambien después de la instalación para que este archivo no sea modificado por el servidor web.
 Por favor tenga en cuenta que esta medida no mejora la seguridad del servidor de forma significativa, pero si puede ralentizar o limitar vulnerabilidades comunes.</p>';
 $string['check_configrw_name'] = 'Archivo config.php escribible';
@@ -80,10 +80,6 @@ $string['check_guestrole_error'] = '¡El rol de invitado "{$a}" está definido i
 $string['check_guestrole_name'] = 'Rol de invitado';
 $string['check_guestrole_notset'] = 'El ron de invitado no está configurado.';
 $string['check_guestrole_ok'] = 'La definición del rol de invitado es correcta.';
-$string['check_mediafilterswf_details'] = '<p> La incrustación automática de archivos SWF es muy peligrosa - Cualquier usuario registrado puede lanzar un ataque XSS contra otros usuarios del servidor. Por favor, desactivarla en los servidores de producción. </p>';
-$string['check_mediafilterswf_error'] = 'El filtro para archivos multimedia de Flash está habilitado - esto es muy peligroso en la mayoría de los servidores.';
-$string['check_mediafilterswf_name'] = 'Habilitado el filtro .swf';
-$string['check_mediafilterswf_ok'] = 'El filtro para archivos multimedia Flash no está activado.';
 $string['check_nodemodules_details'] = '<p>El directorio <code>{$a->path}</code> contiene módulos Node.js y sus dependencias, típicamente instalados por la herramienta NPM. Estos módulos podrían ser necesarios para el desarrollo local de Moodle, como por ejemplo al usar el framework grunt. No son necesarios para correr un sitio Moodle y podrían contener código potencialmente peligroso que exponga su sitio a ataques remotos.</p><p>Se recomienda encarecidamente que quite el directorio si el sitio está disponible vía una URL pública, o cuando menos que prohíba el acceso web a él en su configuración del servidor web.</p>';
 $string['check_nodemodules_info'] = 'El directorio node_modules no debería estar presente en sitios públicos.';
 $string['check_nodemodules_name'] = 'Directorio de módulos Node.js';

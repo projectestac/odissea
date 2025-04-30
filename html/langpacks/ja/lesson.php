@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', version '4.1'.
+ * Strings for component 'lesson', language 'ja', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -150,7 +150,7 @@ $string['correctresponse'] = '正解';
 $string['createaquestionpage'] = '問題ページを作成する';
 $string['credit'] = '承認';
 $string['customscoring'] = 'カスタムスコア';
-$string['customscoring_help'] = 'この設定を有効にした場合、それぞれの答えには数字の点数 (プラスまたはマイナス) が与えられます。';
+$string['customscoring_help'] = 'この設定を有効にした場合、それぞれの答えに整数値 (プラスまたはマイナス) を入力できます。';
 $string['deadline'] = '終了日時';
 $string['defaultessayresponse'] = 'あなたの作文はあなたの教師によって評定されます。';
 $string['deleteallattempts'] = 'すべてのレッスン受験を削除する';
@@ -544,7 +544,7 @@ $string['savechangesandeol'] = 'すべての変更を保存してレッスンの
 $string['saveoverrideandstay'] = '保存して別のオーバーライドを入力する';
 $string['savepage'] = 'ページを保存する';
 $string['score'] = '評点';
-$string['score_help'] = '評点はカスタムスコアが有効にされた場合にのみ使用されます。それぞれの答えには数字による評点 (プラスまたはマイナス) を与えることができます。';
+$string['score_help'] = 'レッスン設定でカスタムスコアが有効にされた場合、それぞれの答えに整数値 (プラスまたはマイナス) を入力できます。';
 $string['scores'] = '評点';
 $string['search:activity'] = 'レッスン - 活動情報';
 $string['secondpluswrong'] = 'もう一度受験しますか?';

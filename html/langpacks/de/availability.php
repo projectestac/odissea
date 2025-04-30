@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'de', version '4.1'.
+ * Strings for component 'availability', language 'de', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -29,7 +29,9 @@ $string['accessrestrictions'] = 'Voraussetzungen';
 $string['addrestriction'] = 'Voraussetzung hinzufügen';
 $string['and'] = 'und';
 $string['condition_group'] = 'Zugriffsregel';
-$string['condition_group_info'] = 'Über Zugriffsregeln können Voraussetzungen logisch verknüpft werden';
+$string['condition_group_info'] = 'Voraussetzungen können logisch verknüpft werden';
+$string['disabled_verb'] = 'Kann nicht geändert werden, da der Regelsatz eine Regel enthält, die personenbezogene Daten enthält.';
+$string['editsettings'] = 'Voraussetzungen bearbeiten';
 $string['enableavailability'] = 'Voraussetzungen aktivieren';
 $string['enableavailability_desc'] = 'Diese Option erlaubt Bedingungen (z.B. Zeit, Bewertung, Abschluss), die den Zugriff auf Aktivitäten und Abschnitte regeln.';
 $string['error_list_nochildren'] = 'Zugriffsregeln müssen mindestens eine Bedingung enthalten.';

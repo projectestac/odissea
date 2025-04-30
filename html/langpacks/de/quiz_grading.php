@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'de', version '4.1'.
+ * Strings for component 'quiz_grading', language 'de', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Auch automatisch bewertete Fragen zeig
 $string['attemptstograde'] = 'Versuche zur Bewertung';
 $string['automaticallygraded'] = 'Automatisch bewertet';
 $string['backtothelistofquestions'] = 'Zurück zur Fragenliste';
-$string['bydate'] = 'Nach Datum';
-$string['bystudentfirstname'] = 'Nach Vorname';
-$string['bystudentidnumber'] = 'Nach ID der Teilnehmer/innen';
-$string['bystudentlastname'] = 'Nach Nachname';
 $string['cannotgradethisattempt'] = 'Dieser Versuch kann nicht bewertet werden';
 $string['cannotloadquestioninfo'] = 'Der Fragetyp "spezifische Informationen" konnten nicht geladen werden.';
 $string['changeoptions'] = 'Optionen ändern';
@@ -55,7 +51,6 @@ $string['gradingall'] = 'Alle Bewertungen ({$a}) für diese Frage';
 $string['gradingattempt'] = 'Versuch {$a->attempt} von {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Versuche von {$a->from} bis {$a->to} von {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Versuch Nummer {$a->attempt} von {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Versuch Nummer {$a->attempt} von {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Nächste {$a} unbewertete Versuche';
 $string['gradingnotallowed'] = 'Sie sind nicht berechtigt, Antworten in diesem Test manuell zu bewerten.';
 $string['gradingquestionx'] = 'Fragen bewerten {$a->number}: {$a->questionname}';
@@ -69,7 +64,6 @@ $string['invalidquestionid'] = 'Die bewertbare Frage mit ID {$a} wurde nicht gef
 $string['noquestionsfound'] = 'Keine manuell bewerteten Fragen gefunden';
 $string['nothingfound'] = 'Nichts anzuzeigen';
 $string['options'] = 'Optionen';
-$string['orderattempts'] = 'Versuche ordnen';
 $string['orderattemptsby'] = 'Versuche sortiert nach';
 $string['pluginname'] = 'Manuelle Bewertung';
 $string['privacy:preference:order'] = 'In welcher Sortierung sollen die Versuche angezeigt werden, die auf eine Bewertung warten?';
@@ -80,7 +74,6 @@ $string['questionsperpage'] = 'Fragen pro Seite';
 $string['questionsthatneedgrading'] = 'Fragen, die eine Bewertung erwarten';
 $string['questiontitle'] = 'Frage {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} Versuche {$a->openspan}bewertet{$a->closespan}).';
 $string['random'] = 'Zufall';
-$string['randomly'] = 'Zufällig';
 $string['saveandnext'] = 'Speichern und zur nächsten Seite';
 $string['showstudentnames'] = 'Namen der Teilnehmer/innen anzeigen';
 $string['tograde'] = 'Zu bewerten';

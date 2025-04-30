@@ -17,7 +17,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->version = 2021072700;
-$plugin->requires = 2014111000;
+$plugin->requires = 2022111800;
 $plugin->component = 'format_vv';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = '3.11 (Build: 2021072700)';
+$plugin->dependencies = [
+    'format_topics' => 2022112801,
+];

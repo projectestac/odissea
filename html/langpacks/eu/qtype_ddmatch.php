@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'eu', version '4.1'.
+ * Strings for component 'qtype_ddmatch', language 'eu', version '4.4'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['draganswerhere'] = 'Hartu erantzuna hemendik';
-$string['editingddmatch'] = 'Hartu eta eraman lotzeko Galdera editatzen';
+$string['editingddmatch'] = 'Hartu eta eraman lotzeko galdera editatzen';
 $string['pluginname'] = 'Hartu eta eraman lotzeko';
 $string['pluginname_help'] = 'Hartu eta eraman lotzeko galderak izen- edo adierazpen-zerrenda bat (galderak) beste izen-edo adierazpen-zerrenda batekin (erantzunak) lotzea eskatzen du.';
 $string['pluginname_link'] = 'question/type/ddmatch';

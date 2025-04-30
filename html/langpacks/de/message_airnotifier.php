@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'de', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'de', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,6 +45,7 @@ $string['devicetoken'] = 'Geräte-Token';
 $string['donotsendnotification'] = 'Systembenachrichtigung nicht an alle senden';
 $string['enableprocessor'] = 'Mobile Systemnachrichten aktivieren';
 $string['encryptnotifications'] = 'Benachrichtigungen verschlüsseln';
+$string['encryptnotifications_help'] = 'Aktivieren Sie die Ende-zu-Ende-Verschlüsselung von App-Benachrichtigungen. Einige Daten werden möglicherweise aus den Benachrichtigungen entfernt, wenn sie nicht verschlüsselt werden können.';
 $string['encryptprocessing'] = 'Für Endgeräte die keine Verschlüsselung unterstützen';
 $string['encryptprocessing_desc'] = 'Verschlüsselte Benachrichtigungen erfordern mindestens Android 8 oder iOS 13, sowie die Moodle App 4.2 oder aktueller.';
 $string['errorretrievingkey'] = 'Beim Abrufen des Zugriffsschlüssels ist ein Fehler aufgetreten. Ihre Website muss registriert sein, um diesen Service nutzen zu können. Wenn Ihre Website bereits registriert ist, aktualisieren Sie bitte Ihre Registrierung. Alternativ erhalten Sie einen Zugriffsschlüssel, indem Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps Portal</a> erstellen.';

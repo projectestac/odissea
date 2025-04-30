@@ -61,13 +61,7 @@ class util {
 
         if ($isresource) {
             // If it's a resource, could be a file e.g. PDF/HTML or could be a URL activity.
-            if ($cm->modname == 'url') {
-                $resourcetype = 'url';
-            } else {
-                $resourcetype = self::get_moodle_release() == 4.0
-                    ? self::get_mod_resource_icon_name_legacy($cm->context->id)
-                    : self::get_mod_resource_type($cm->icon);
-            }
+            $resourcetype = $cm->modname == 'url' ? 'url' : self::get_mod_resource_type($cm->icon);
         } else {
             $resourcetype = '';
         }
@@ -75,6 +69,17 @@ class util {
         $modaltype = \format_tiles\local\modal_helper::cm_modal_type($courseid, $cmrecord->id);
         $description = $cm->showdescription ? $cm->get_formatted_content() : '';
         $description = $description && trim(strip_tags($description)) ? $description : '';
+
+        // In Moodle 4.5+ the section may be a subsection, in which case we want the real (parent) section.
+        $section = $modinfo->get_section_info($cm->sectionnum);
+        if (self::get_moodle_release() >= 4.5 && ($section->is_delegated() ?? false)) {
+            $sectiondelegate = $section->get_component_instance();
+            if ($sectiondelegate) {
+                // This would give an error in Moodle 4.4 (but not 4.5) that get_parent_section() is not a function.
+                $section = $sectiondelegate->get_parent_section();
+            };
+        }
+
         return (object)[
             'id' => $cm->id,
             'courseid' => $courseid,
@@ -82,8 +87,8 @@ class util {
             'coursecontextid' => $coursecontext->id,
             'name' => $cm->get_formatted_name(),
             'modname' => $cm->modname,
-            'sectionnumber' => $cm->sectionnum,
-            'sectionid' => $cm->section,
+            'sectionnumber' => $section->section,
+            'sectionid' => $section->id,
             'completionenabled' => (bool)$completiondata,
             'completionstate' => $completiondata ? $completiondata->completionstate : null,
             'iscomplete' => in_array($completiondata->completionstate ?? null, [COMPLETION_COMPLETE, COMPLETION_COMPLETE_PASS])
@@ -167,22 +172,8 @@ class util {
      * @return string|null
      */
     public static function get_mod_resource_type(string $modicon): ?string {
-        // In Moodle 4.3+ we expect the mod icon string to be like f/pdf, f/video, f/html, f/audio.
-        // In Moodle 4.2- expect f/pdf-24, f/mpeg-24, f/mp3-24, f/powerpoint-24, f/document-24, f/spreadsheet-24, f/html-24.
-        $pattern = "/^f\/([a-z0-9]+)-24$/";
-        $matches = [];
-        preg_match($pattern, $modicon, $matches);
-        $icon = $matches[1] ?? null;
-        if (!$icon) {
-            return null;
-        }
-        $map = [
-            'pdf' => 'pdf', 'mpeg' => 'mp4',
-            'mp3' => 'mp3', 'powerpoint' => 'ppt',
-            'document' => 'doc', 'spreadsheet' => 'xls',
-            'html' => 'html',
-        ];
-        return $map[$icon] ?? $icon;
+        // Expect the mod icon string to be like f/pdf, f/video, f/html, f/audio.
+        return explode('/', $modicon)[1] ?? null;
     }
 
     /**
@@ -192,10 +183,10 @@ class util {
      * @throws \dml_exception
      */
     public static function using_js_nav() {
-        $userstopjsnav = get_user_preferences('format_tiles_stopjsnav', 0);
-
         // JS navigation and modals in Internet Explorer are not supported by this plugin so we disable JS nav here.
-        return !$userstopjsnav && get_config('format_tiles', 'usejavascriptnav') && !\core_useragent::is_ie();
+        return get_config('format_tiles', 'usejavascriptnav')
+            && !get_user_preferences('format_tiles_stopjsnav', 0)
+            && !\core_useragent::is_ie();
     }
 
     /**
@@ -254,27 +245,25 @@ class util {
      * Include AMD module required for tiles course.
      * @param \stdClass $course
      * @param int $contextid
-     * @param int|null $displaysection
+     * @param int|null $sectionnumber
      * @return void
      * @throws \coding_exception
      * @throws \dml_exception
      */
-    public static function init_js($course, int $contextid, $displaysection) {
+    public static function init_js($course, int $contextid, ?int $sectionnumber) {
         global $USER, $SESSION, $PAGE;
         if ($PAGE->user_allowed_editing()) {
-            $SESSION->editing_last_edited_section = $course->id . "-" . $displaysection;
+            $SESSION->editing_last_edited_section = $course->id . "-" . $sectionnumber;
         }
 
         $usejsnav = self::using_js_nav();
-        $jssectionnum = $displaysection ?? optional_param('expand', 0, PARAM_INT);
-
         if (!$PAGE->user_is_editing()) {
             // Initialise the main JS module for non editing users.
             $jsparams = [
                 'courseId' => $course->id,
                 'useJSNav' => $usejsnav, // See also lib.php page_set_course().
                 'isMobile' => \core_useragent::get_device_type() == \core_useragent::DEVICETYPE_MOBILE ? 1 : 0,
-                'jsSectionNum' => $jssectionnum,
+                'jsSectionNum' => $sectionnumber ?? optional_param('expand', 0, PARAM_INT),
                 'displayFilterBar' => $course->displayfilterbar,
                 'assumeDataStoreContent' => get_config('format_tiles', 'assumedatastoreconsent'),
                 'reOpenLastSection' => get_config('format_tiles', 'reopenlastsection'),
@@ -292,6 +281,7 @@ class util {
                 'pageType' => $PAGE->pagetype,
                 'allowPhotoTiles' => get_config('format_tiles', 'allowphototiles'),
                 'documentationurl' => get_config('format_tiles', 'documentationurl'),
+                'maxnumbericons' => self::get_icon_picker_max_number_icons(),
             ];
             $PAGE->requires->js_call_amd('format_tiles/edit_icon_picker', 'init', $editparams);
         }
@@ -334,74 +324,34 @@ class util {
         return $data;
     }
 
-    /**
-     * Get resource file type e.g. 'doc' from the icon URL e.g. 'document-24.png'
-     * So that we know which icon to display on sub-tiles.
-     *
-     * @param int $modcontextid the mod info object we are checking
-     * @return null|string the type e.g. 'doc'
-     */
-    public static function get_mod_resource_icon_name_legacy(int $modcontextid): ?string {
-        $file = self::get_mod_resource_file($modcontextid);
-        if (!$file) {
-            return null;
-        }
-        $extensions = [
-            'powerpoint' => 'ppt',
-            'document' => 'doc',
-            'spreadsheet' => 'xls',
-            'archive' => 'zip',
-            'application/pdf' => 'pdf',
-            'mp3' => 'mp3',
-            'mpeg' => 'mp4',
-            'image/jpeg' => 'image',
-            'image/png' => 'image',
-            'image/gif' => 'image',
-            'image/svg+' => 'image',
-            'text/plain' => 'txt',
-            'text/html' => 'html',
-        ];
-        $extension = $extensions[$file->get_mimetype()] ?? pathinfo($file->get_filename(), PATHINFO_EXTENSION);
-        $extension = in_array($extension, ['docx', 'odf']) ? 'doc' : $extension;
-        $extension = in_array($extension, ['xlsx', 'ods']) ? 'xls' : $extension;
-        $extension = in_array($extension, ['pptx', 'odp']) ? 'ppt' : $extension;
-        return $extension;
-    }
 
     /**
-     * Get the file relating to a resource course module from context ID.
-     * @param int $modcontextid
-     * @return \stored_file|null
-     * @throws \coding_exception
+     * Tile numbers have icon names in format number_1, number_2 etc up to number_99.
+     * (UI cannot handle greater than 2 chars).
+     * @param string $iconname
+     * @return int|null null if not a number icon.
      */
-    public static function get_mod_resource_file(int $modcontextid): ?\stored_file {
-        $fs = get_file_storage();
-        $files = $fs->get_area_files($modcontextid, 'mod_resource', 'content');
-        foreach ($files as $file) {
-            if ($file->get_filesize() && $file->get_filename() != '.' && $file->get_mimetype()) {
-                return $file;
-            }
+    public static function get_tile_number_from_icon_name(string $iconname): ?int {
+        if (preg_match('/^number_[\d]{1,2}$/', $iconname)) {
+            return filter_var($iconname, FILTER_SANITIZE_NUMBER_INT);
         }
         return null;
     }
 
     /**
-     * Is this Moodle environment 4.0, 4.0.1 or 4.0.2?
+     * The number of number icons to offer to editing teacher in icon picker.
+     * @return int
+     */
+    public static function get_icon_picker_max_number_icons() {
+        return 20;
+    }
+
+    /**
+     * Does the user want high contrast mode?
      * @return bool
      */
-    public static function is_moodle_402_minus(): bool {
-        global $CFG;
-        $matches = [];
-        preg_match('/^(\d+)\.(\d+)(\.(\d+))?.*$/', $CFG->release, $matches);
-        $ismoodle40 = ($matches[1] ?? null) == 4 && ($matches[2] ?? null) == 0;
-        if ($ismoodle40 && !isset($matches[3])) {
-            // Is Moodle 4.0.
-            return true;
-        }
-        if ($ismoodle40 && in_array($matches[4], [0, 1, 2])) {
-            // Is Moodle 4.0.0, 4.0.1 or 4.0.2.
-            return true;
-        }
-        return false;
+    public static function using_high_contrast(): bool {
+        return get_config('format_tiles', 'highcontrastmodeallow')
+            && get_user_preferences('format_tiles_high_contrast_mode', 0);
     }
 }

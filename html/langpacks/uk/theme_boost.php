@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'uk', version '4.1'.
+ * Strings for component 'theme_boost', language 'uk', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Необроблений початковий SCSS';
 $string['rawscsspre_desc'] = 'У цьому полі ви можете вказати код ініціалізації SCSS, він буде введений перед усім іншим. У більшості випадків ви будете використовувати це налаштування для визначення змінних.';
 $string['region-side-pre'] = 'Праворуч';
 $string['showfooter'] = 'Показати нижній колонтитул';
-$string['totop'] = 'Піднятись вгору';
 $string['unaddableblocks'] = 'Непотрібні блоки';
 $string['unaddableblocks_desc'] = 'Вказані блоки не потрібні під час використання цієї теми і не будуть перераховані в меню «Додати блок».';

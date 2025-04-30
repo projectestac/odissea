@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', version '4.1'.
+ * Strings for component 'plugin', language 'eu', version '4.4'.
  *
  * @package     plugin
  * @category    string
@@ -124,6 +124,8 @@ $string['type_cachestore'] = 'Cache-biltegia';
 $string['type_cachestore_plural'] = 'Cache-biltegiak';
 $string['type_calendartype'] = 'Egutegi mota';
 $string['type_calendartype_plural'] = 'Egutegi motak';
+$string['type_communication'] = 'Komunikazio hornitzailea';
+$string['type_communication_plural'] = 'Komunikazio hornitzaileak';
 $string['type_contentbank'] = 'Eduki-bankua';
 $string['type_contentbank_plural'] = 'Eduki-bankuko pluginak';
 $string['type_contenttype'] = 'Eduki-bankua';

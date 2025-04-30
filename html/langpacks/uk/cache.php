@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'uk', version '4.1'.
+ * Strings for component 'cache', language 'uk', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -53,10 +53,10 @@ $string['cachedef_coursecattree'] = 'Дерево категорій курсі�
 $string['cachedef_coursecompletion'] = 'Статус завершення курсу';
 $string['cachedef_coursecontacts'] = 'Список контактів курсу';
 $string['cachedef_courseeditorstate'] = 'Ключі кешу стану курсу сеансу для виявлення змін курсу в інтерфейсі';
+$string['cachedef_coursehiddengroups'] = 'Кількість груп на курсі з обмеженою видимістю';
 $string['cachedef_coursemodinfo'] = 'Накопичена інформація про модулі та секції для кожного курсу';
 $string['cachedef_coursesectionspreferences'] = 'Параметри розділу курсу';
 $string['cachedef_databasemeta'] = 'Мета-інформація бази даних';
-$string['cachedef_deprecatedcapabilities'] = 'Список застарілих можливостей системи';
 $string['cachedef_eventinvalidation'] = 'Анулювання подій';
 $string['cachedef_externalbadges'] = 'Зовнішні відзнаки для окремого користувача';
 $string['cachedef_file_imageinfo'] = 'Інформація про зображення файлу, напр. розміри';
@@ -66,7 +66,9 @@ $string['cachedef_grade_letters'] = 'Запити на листи оцінок';
 $string['cachedef_gradesetting'] = 'Встановлення оцінки курсу';
 $string['cachedef_groupdata'] = 'Інформація групи курсу';
 $string['cachedef_h5p_content_type_translations'] = 'Переклади бібліотек типу контенту H5P';
+$string['cachedef_h5p_libraries'] = 'Бібліотеки H5P';
 $string['cachedef_h5p_library_files'] = 'Файли бібліотеки H5P';
+$string['cachedef_hookcallbacks'] = 'Зворотні виклики';
 $string['cachedef_htmlpurifier'] = 'HTML Очищувач - очищений вміст';
 $string['cachedef_langmenu'] = 'Список доступних мов';
 $string['cachedef_license'] = 'Список ліцензій';

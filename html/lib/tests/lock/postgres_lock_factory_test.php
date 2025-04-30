@@ -24,7 +24,7 @@ namespace core\lock;
  * @copyright 2024 Martin Gauk <martin.gauk@tu-berlin.de>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class postgres_lock_factory_test extends \advanced_testcase {
+final class postgres_lock_factory_test extends \advanced_testcase {
     /**
      * Set up.
      */

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ru', version '4.1'.
+ * Strings for component 'atto_recordrtc', language 'ru', version '4.4'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -69,8 +69,6 @@ $string['recordrtc:recordvideo'] = 'Записывать видео прямо �
 $string['settings'] = 'Настройки записи RTC';
 $string['startrecording'] = 'Начать запись';
 $string['stoprecording'] = 'Остановить запись';
-$string['timelimit'] = 'Лимит времени в секундах';
-$string['timelimit_desc'] = 'Максимально разрешенная длина записи для аудио/видеоклипов';
 $string['timelimitwarning'] = 'Вы должны ввести число больше 0.';
 $string['uploadaborted'] = 'Загрузка прервана:';
 $string['uploadfailed'] = 'Загрузка не удалась:';

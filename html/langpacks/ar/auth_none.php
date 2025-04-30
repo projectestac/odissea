@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'ar', version '4.1'.
+ * Strings for component 'auth_none', language 'ar', version '4.4'.
  *
  * @package     auth_none
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nonedescription'] = 'يمكن للمستخدمين التوقيع ثم إنشاء حسابات صحيحة على الفور، دون حاجة للتوثيق في مقابل مزود خارجي أو إلى التوكيد من خلال البريد الإلكتروني. ينصح بالحرص عن استخدام هذا الخيار - وتدير عواقب مشاكل الحماية والإدارة التي قد تنتج عنه.';
+$string['auth_nonedescription'] = 'يمكن للمستخدمين تسجيل الدخول وإنشاء حسابات صحيحة على الفور، دون حاجة إلى مصادقة مخدم خارجي أو إلى التوكيد من خلال البريد الإلكتروني. كن حذرًا عند استعمال هذا الخيار - فكِّر في العواقب والمشاكل الأمنية التي قد تنتج عنه.';
 $string['checknoauth'] = 'لا مصادقة';
 $string['checknoauthdetails'] = '<p>إن إضافة<em>لا مصادقة</em> غير مخصص للمواقع ذات التشغيل الفعلي. لطفاً، قم بتعطيله ما لم يكن هذا الموقع اختبارياً لأغراض التطوير.</p>';
 $string['checknoautherror'] = 'إن إضافة "لا مصادقة" لا يمكن استعماله في المواقع الإنتاجية.';

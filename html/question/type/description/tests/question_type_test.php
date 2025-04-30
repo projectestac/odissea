@@ -35,7 +35,7 @@ require_once($CFG->dirroot . '/question/type/description/edit_description_form.p
  * @copyright  2013 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class question_type_test extends \advanced_testcase {
+final class question_type_test extends \advanced_testcase {
     protected $qtype;
 
     protected function setUp(): void {
@@ -46,28 +46,28 @@ class question_type_test extends \advanced_testcase {
         $this->qtype = null;
     }
 
-    public function test_name() {
+    public function test_name(): void {
         $this->assertEquals($this->qtype->name(), 'description');
     }
 
-    public function test_actual_number_of_questions() {
+    public function test_actual_number_of_questions(): void {
         $this->assertEquals(0, $this->qtype->actual_number_of_questions(null));
     }
 
-    public function test_can_analyse_responses() {
+    public function test_can_analyse_responses(): void {
         $this->assertFalse($this->qtype->can_analyse_responses());
     }
 
-    public function test_get_random_guess_score() {
+    public function test_get_random_guess_score(): void {
         $this->assertNull($this->qtype->get_random_guess_score(null));
     }
 
-    public function test_get_possible_responses() {
+    public function test_get_possible_responses(): void {
         $this->assertEquals(array(), $this->qtype->get_possible_responses(null));
     }
 
 
-    public function test_question_saving() {
+    public function test_question_saving(): void {
         $this->resetAfterTest(true);
         $this->setAdminUser();
 

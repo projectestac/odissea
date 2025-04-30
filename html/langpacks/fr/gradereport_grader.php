@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'fr', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'fr', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Consulter {$a} résultats';
 $string['ajaxchoosescale'] = 'Choisir';
 $string['ajaxclicktoclose'] = 'Cliquer cette boîte pour retirer';
 $string['ajaxerror'] = 'Erreur';
 $string['ajaxfailedupdate'] = 'Impossible de modifier [1] vers [2]';
 $string['ajaxfieldchanged'] = 'Le champ que vous modifiez actuellement a été modifié. Voulez-vous utiliser la nouvelle valeur ?';
+$string['aria:dropdowncolumns'] = 'Colonnes repliées trouvées';
+$string['cellactions'] = 'Actions de cellule';
+$string['clearall'] = 'Tout effacer';
+$string['clearsearch'] = 'Effacer la recherche des utilisateurs';
+$string['collapsedcolumns'] = 'Colonnes repliées <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Modification du rapport de l’évaluateur';
 $string['eventgradereportviewed'] = 'Rapport de l’évaluateur consulté';
 $string['grader:manage'] = 'Gérer le rapport de l’évaluateur';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'S’il faut af
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'S’il faut afficher l’avatar de l’utilisateur à côté de son nom';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Le nombre d’étudiants affiché par page dans le rapport de l’évaluateur';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Certaines catégories du carnet de notes sont repliées dans le cours « {$a->name} ».';
+$string['reopencolumn'] = 'Déplier la colonne {$a}';
 $string['summarygrader'] = 'Une table avec les noms des étudiants dans la première colonne, et les activités évaluables groupées par cours et catégories.';
 $string['useractivityfeedback'] = 'Feedback {$a}';
 $string['useractivitygrade'] = 'Note {$a}';

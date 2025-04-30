@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'es', version '4.1'.
+ * Strings for component 'cohort', language 'es', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Miembro de la cohorte';
 $string['cohorts'] = 'Cohortes';
 $string['cohortsin'] = '{$a}: cohortes disponibles';
 $string['component'] = 'Fuente';
+$string['contextcohortnotallowed'] = 'Cohorte <b>{$a}</b> no permitida en este contexto.';
 $string['contextnotfound'] = 'El contexto <b>{$a}</b> no se ha encontrado o usted no tiene permisos para crear una cohorte aquí. Se usará el contexto por defecto.';
 $string['csvcontainserrors'] = 'Se han encontrado errores en los datos CSV. Consulte los detalles a continuación.';
 $string['csvcontainswarnings'] = 'Se han detectado los siguientes avisos en los datos del CSV. Revise los detalles a continuación.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'Usuarios actuales';
 $string['currentusersmatching'] = 'Usuarios actuales coincidentes';
 $string['defaultcontext'] = 'Contexto por defecto';
 $string['delcohort'] = 'Eliminar cohorte';
-$string['delconfirm'] = '¿Realmente desea eliminar la cohorte  \'{$a}\'?';
+$string['delconfirm'] = 'Esto eliminará la cohorte  "{$a}" y todos sus datos asociados.';
 $string['description'] = 'Descripción';
 $string['displayedrows'] = '{$a->displayed} filas mostradas de {$a->total}.';
 $string['duplicateidnumber'] = 'Ya existe una cohorte con el mismo número ID';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'El ID del usuario que está
 $string['removeuserwarning'] = 'Quitar usuarios de una cohorte puede dar como resultado la baja de matrícula de estos usuarios en múltiples cursos, lo que implica la eliminación de las configuraciones de usuario, las calificaciones, la pertenencia a grupos y otra información de usuario en los cursos afectados.';
 $string['search'] = 'Buscar';
 $string['searchcohort'] = 'Buscar cohorte';
+$string['selectcohort'] = 'Seleccionar cohorte';
 $string['selectfromcohort'] = 'Seleccionar miembros de la cohorte';
 $string['systemcohorts'] = 'Cohortes del sistema';
 $string['unknowncohort'] = 'Cohorte desconocida ({$a})!';

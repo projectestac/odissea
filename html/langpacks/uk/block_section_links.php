@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'uk', version '4.1'.
+ * Strings for component 'block_section_links', language 'uk', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'Блок посилань на розділ по�
 $string['section_links:addinstance'] = 'Додавати новий блок секційних посилань';
 $string['showsectionname'] = 'Показувати назву розділу';
 $string['showsectionname_help'] = 'Показувати назву розділу додатково до номеру';
-$string['topics'] = 'Теми';
-$string['weeks'] = 'Тижні';

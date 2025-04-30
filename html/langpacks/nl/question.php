@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', version '4.1'.
+ * Strings for component 'question', language 'nl', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -176,6 +176,8 @@ $string['errorprocessingresponses'] = 'Er is een fout opgetreden tijdens het ver
 $string['errorsavingcomment'] = 'Fout bij het bewaren van de commentaar voor vraag {$a->name} in de databank.';
 $string['errorsavingflags'] = 'Fout bij het bewaren van de vlagstatus';
 $string['errorupdatingattempt'] = 'Fout bij het updaten van poging {$a->id} in de databank.';
+$string['eventqbankdisabled'] = 'Vragenbank-plug-in uitgeschakeld';
+$string['eventqbankenabled'] = 'Vraagbank-plug-in ingeschakeld';
 $string['eventquestioncategorycreated'] = 'Vraagcategorie aangemaakt';
 $string['eventquestioncategorydeleted'] = 'Vraagcategorie verwijderd';
 $string['eventquestioncategorymoved'] = 'Vraagcategorie verplaatst';
@@ -262,6 +264,7 @@ $string['invalidcategoryidtomove'] = 'Ongeldig categorie ID om te verplaatsen';
 $string['invalidconfirm'] = 'Bevestigingsstring was fout';
 $string['invalidcontextinhasanyquestions'] = 'Ongeldige context doorgegeven aan question_context_has_any_questions.';
 $string['invalidgrade'] = 'Cijfers komen niet overeen met beoordelingsopties - vraag overgeslagen';
+$string['invalidgradequestion'] = 'Cijfers ({$a->grades}) komen niet overeen met beoordelingsopties - vraag \'{$a->question}\' overgeslagen.';
 $string['invalidpenalty'] = 'Ingeldige strafpunten';
 $string['invalidwizardpage'] = 'Ongeldige of geen pagina opgegeven!';
 $string['lastmodifiedby'] = 'Laatst gewijzigd door';
@@ -305,6 +308,7 @@ $string['movingquestionsandfiles'] = 'Ben je er zeker van dat je de vraag / vrag
 $string['movingquestionsnofiles'] = 'Ben je er zeker van dat je deze vraag / vragen  {$a->questions} naar <strong>"{$a->tocontext}"</strong> wil verplaatsen?<br /> Er zijn <strong>geen bestanden</strong> gelinkt vanuit deze vraag / vragen in  {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Je moet een categorie kiezen om deze vragen naartoe te verplaatsen of klik op \'annuleer\'.';
 $string['nocate'] = 'Geen categorie {$a}!';
+$string['noconditionspecified'] = 'Geef een voorwaarde op';
 $string['nopermissionadd'] = 'Je hebt het recht niet om hier vragen toe te voegen.';
 $string['nopermissionedit'] = 'Je hebt het recht niet om vragen vanaf hier te bewerken.';
 $string['nopermissionmove'] = 'Je hebt het recht niet om vragen van hieruit te verplaatsen. Je moet de vraag in deze categorie bewaren of ze bewaren als nieuwe vraag.';
@@ -319,7 +323,6 @@ $string['notchanged'] = 'Niet gewijzigd sinds de laatste poging';
 $string['notenoughanswers'] = 'Dit vraagtype vereist minstens {$a} antwoorden';
 $string['notenoughdatatoeditaquestion'] = 'Noch een vraad ID, een categorie ID of een vraagtype is opgegeven.';
 $string['notenoughdatatomovequestions'] = 'Je moet de vraag id\'s opgeven van de vragen die je wil verplaatsen.';
-$string['notflagged'] = 'Niet aangeduid';
 $string['notgraded'] = 'Niet beoordeeld';
 $string['notshown'] = 'Niet getoond';
 $string['notyetanswered'] = 'Nog niet beantwoord';
@@ -422,7 +425,7 @@ $string['questionx'] = 'Vraag {$a}';
 $string['requiresgrading'] = 'Beoordelen vereist';
 $string['responsehistory'] = 'Antwoordgeschiedenis';
 $string['restart'] = 'Start opnieuw';
-$string['restartwiththeseoptions'] = 'Start opnieuw met deze opties';
+$string['restartwiththeseoptions'] = 'Bewaar voorbeeldopties en start opnieuw';
 $string['restoremultipletopcats'] = 'Het backupbestand bevat meer dan één vraagcategorie van het hoogste niveau voor context {$a}.';
 $string['reviewresponse'] = 'Bekijk antwoord';
 $string['rightanswer'] = 'Juist antwoord';
@@ -437,7 +440,9 @@ $string['selectcategoryabove'] = 'Selecteer één van de bovenstaande categorie�
 $string['selectquestionsforbulk'] = 'Selecteer vragen voor bulkoperaties';
 $string['settingsformultipletries'] = 'Meerdere pogingen';
 $string['shareincontext'] = 'Deel in context voor {$a}';
-$string['showhidden'] = 'Toon ook verborgen vragen';
+$string['shortversioninfo'] = 'v{$a->version} (van {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (laatste)';
+$string['showhidden'] = 'Toon verborgen vragen';
 $string['showmarkandmax'] = 'Toon cijfer en maximum';
 $string['showmaxmarkonly'] = 'Toon alleen maximum';
 $string['shown'] = 'Getoond';
@@ -490,6 +495,8 @@ $string['upgradeproblemcouldnotupdatecategory'] = 'Kon vragencategorie {$a->name
 $string['upgradeproblemunknowncategory'] = 'Probleem gevonden tijdens het upgraden van vragencategorieën.
 Categorie {$a->id} refereert naar bovenliggende categorie {$a->parent}, die niet bestaat. Bovenliggende categorie gewijzigd om het probleem op te lossen';
 $string['version_selection'] = 'Versie {$a->version}';
+$string['versioninfo'] = 'Versie {$a->version} (van {$a->latestversion})';
+$string['versioninfolatest'] = 'Versie {$a->version} (laatste)';
 $string['whethercorrect'] = 'Indien juist';
 $string['whethercorrect_help'] = 'Dit geldt zowel voor de tekstuele omschrijving \'juist\', \'gedeeltelijk juist\' of \'fout\', en alle gekleurde markeringen die dezelfde informatie overbrengt.';
 $string['whichtries'] = 'Welke pogingen';

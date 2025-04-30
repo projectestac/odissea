@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'pt', version '4.1'.
+ * Strings for component 'checkmark', language 'pt', version '4.4'.
  *
  * @package     checkmark
  * @category    string
@@ -56,19 +56,13 @@ $string['attendancegradelink_help'] = 'Se ativar esta opção, pode ligar os reg
 $string['attendancegradelink_hint'] = '<b>Atenção</b>: as notas calculadas automaticamente estão associados à assiduidade.';
 $string['attendancestatus'] = 'Estado atual da sua assiduidade';
 $string['attendant'] = 'Presente';
-$string['autograde_all'] = 'Avaliar todas as submissões';
 $string['autograde_confirm'] = 'Está prestes a atualizar as notas e comentários de <strong>{$a->total}</strong>. <strong>{$a->graded}</strong> notas e comentários já existentes serão substituídos.';
 $string['autograde_confirm_continue'] = 'Tem a certeza que pretende continuar?';
-$string['autograde_custom'] = 'Avaliar utilizadores selecionados';
 $string['autograde_error'] = 'Ocorreu um erro durante a avaliação automática.';
 $string['autograde_failed'] = 'A avaliação automática falhou!';
-$string['autograde_no_users_selected'] = 'Nenhum participante foi selecionado para avaliação. Selecione os utilizadores através das caixas de seleção na coluna mais à esquerda da tabela abaixo.';
 $string['autograde_non_numeric_grades'] = 'A avaliação automática requer que seja definida uma nota máxima numérica. Isto pode ser definido nas configurações da instância.';
 $string['autograde_notsupported'] = 'Esta escala não é suportada pela avaliação automática.';
 $string['autograde_one_success'] = 'Avaliação automática efetuada com sucesso! 1 submissão atualizada';
-$string['autograde_req'] = 'Avaliar';
-$string['autograde_str'] = 'Avaliação automática';
-$string['autograde_str_help'] = 'A avaliação automática calcula as notas dos participantes de acordo com os pontos por verificação e número de verificações assinaladas. Todos os pontos são somados e o total é usado como nota para a pauta. <ul><li>Avaliar os  utilizadores selecionados - apenas estes utilizadores serão avaliados. Se um utilizador não enviou nada, será adicionada uma submissão vazia.</li><li>Avaliar os que requerem avaliação - avalia todas as  submissões em que a data de submissão é mais atual do que a data de avaliação correspondente</li><li>Avaliar todas as submissões - todas as submissões presentes são avaliadas (para esta instância). NÃO adiciona submissões vazias.</li></ul><br />A nota é calculada com base nas notas das verificações e número de verificações assinaladas: <ul><li>Avaliação normal: cada verificação é igualmente ponderada (nota com número inteiro). A nota é calculada pela multiplicação da soma de verificações com o quociente da nota da Checkmark com o número de checkmarks.</li><li>Pesos individuais: a nota total é a soma das notas das verificações (de acordo com as configurações da instância).</li></ul>';
 $string['autograde_strall'] = 'Todas as submissões';
 $string['autograde_strchanged'] = 'Devido à avaliação automática, as notas do(s) aluno(s) <strong>{$a}</strong> serão alteradas.';
 $string['autograde_strmultiplesubmissions'] = '{$a} submissões';
@@ -100,11 +94,6 @@ $string['cantfixevent'] = 'Não foi possível corrigir o evento com ID {$a->id},
 $string['cfg_nowarning'] = 'Sem aviso';
 $string['cfg_pdfexampleswarning'] = 'Quantidade de verificações para mostrar aviso na exportação para PDF';
 $string['cfg_pdfexampleswarning_desc'] = 'Quantidade mínima de verificações que acima da qual será mostrado um aviso, uma vez que não pode ser garantida uma exportação razoável em PDF. Normalmente não tem que alterarar isto, exceto quando não quer que seja mostrado o aviso ou se quiser alterar a sua instalação.';
-$string['checkbrokengradebookgrades'] = 'Verificar ligação das notas à pauta';
-$string['checkbrokengradebookgrades_desc'] = 'Devido a um bug na versão 2.9.1 da Checkmark, as notas não foram transferidas para a pauta corretamente.
-As seguintes submissões foram afetadas por este bug:';
-$string['checkbrokengradebookgrades_mail'] = 'Devido a um bug na versão 2.9.1 da Checkmark, as notas não foram transferidas para a pauta corretamente.
-As seguintes submissões foram afetadas por este bug e foram corrigidas automaticamente:';
 $string['checkmark:addinstance'] = 'Adicionar uma instância Checkmark';
 $string['checkmark:grade'] = 'Avaliar a Checkmark';
 $string['checkmark:gradepresentation'] = 'Avaliar a apresentação';

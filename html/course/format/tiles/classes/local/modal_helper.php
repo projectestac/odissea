@@ -156,6 +156,7 @@ class modal_helper {
         // The cached values are for the course and does not take user visibility into account.
         // But they may save us some time.
         $cache = \cache::make('format_tiles', 'modalcmids');
+        $excludeddisplaytypes = [RESOURCELIB_DISPLAY_POPUP, RESOURCELIB_DISPLAY_NEW];
 
         // First "page" course modules.
         if (in_array('page', $allowedmodals)) {
@@ -164,7 +165,12 @@ class modal_helper {
             if ($cachedvalue === false) {
                 $pagecms = $modinfo->get_instances_of('page');
                 foreach ($pagecms as $pagecm) {
-                    $cmids->page[] = (int)$pagecm->id;
+                    // Issue #226 - it is unusual but possible for page to have 'open in pop up' set if admin as allowed.
+                    $needsmodal = !$pagecm->onclick &&
+                        !in_array($pagecm->get_custom_data()['display'] ?? null, $excludeddisplaytypes);
+                    if ($needsmodal) {
+                        $cmids->page[] = (int)$pagecm->id;
+                    }
                 }
                 sort($cmids->page);
                 $cache->set($cachekey, $cmids->page);
@@ -178,7 +184,6 @@ class modal_helper {
             $cachekey = $courseid . "_url";
             $cachedvalue = $cache->get($cachekey);
             if ($cachedvalue === false) {
-                $excludeddisplaytypes = [RESOURCELIB_DISPLAY_POPUP, RESOURCELIB_DISPLAY_NEW];
                 $urlcms = $modinfo->get_instances_of('url');
                 foreach ($urlcms as $urlcm) {
                     $needsmodal = !$urlcm->onclick &&

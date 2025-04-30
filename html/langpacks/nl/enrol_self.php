@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', version '4.1'.
+ * Strings for component 'enrol_self', language 'nl', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Enkel site-groepsleden';
 $string['cohortonly_help'] = 'Zelf aanmelden kan beperkt worden tot leden van een specifieke site-groep. Merk op dat het wijizgen van deze instelling geen effect heeft op bestaande aanmeldingen.';
 $string['confirmbulkdeleteenrolment'] = 'Weet je zeker dat je de aanmeldingen van deze gebruiker wil verwijderen?';
 $string['customwelcomemessage'] = 'Aangepaste welkomstboodschap';
-$string['customwelcomemessage_help'] = 'Een aangepast welkomstbericht dat toegevoegd kan worden als tekst of als Moodle-auto-opmaak, met HTML-tags en multilang-tags.
-
-Volgende plaatshouders kunnen gebruikt worden in het bericht:
-
-* Cursusnaam {$a->coursename}
-* Link naar profielpagina van de gebruiker {$a->profileurl}
-* E-mailadres gebruiker {$a->email}
-* Volledige naam gebruiker {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Aanvaarde opmaak: platte tekst of Moodle-auto-opmaak. HTML-tags en multi lang-tags worden ook aanvaard en ook volgende plaatshouders
+<ul>
+<li>Cursusnaam {$a->coursename}</li>
+<li>Link naar profielpagina van de gebruiker {$a->profileurl}</li>
+<li>E-mailadres gebruiker {$a->email}</li>
+<li>Volledige naam gebruiker {$a->fullname}
+<li>Voornaam gebruiker {$a->firstname}</li>
+<li>Achternaam gebruiker {$a->lastname}</li>
+<li>Cursusrol van de gebruiker {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Standaard roltoewijzing';
 $string['defaultrole_desc'] = 'Kies de rol die moet toegewezen worden tijdens zelf aanmelden';
 $string['deleteselectedusers'] = 'Verwijder geselecteerde gebruikersaanmeldingen';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Startdatum';
 $string['enrolstartdate_help'] = 'Indien ingeschakeld kunnen gebruikers zich slechts vanaf deze datum aanmelden.';
 $string['expiredaction'] = 'Actie bij verlopen van de aanmelding';
 $string['expiredaction_help'] = 'Selecteer een uit te voeren actie wanneer de aanmelding van een gebruiker vervalt. Merk op dat sommige gebruikersgegevens en instellingen gewist zullen worden tijdens het afmelden van de cursus.';
+$string['expiryinactivemessageenrolledbody'] = 'Beste {$a->user},
+
+Je aanmelding in de cursus {$a->course} vervalt op {$a->timeend} omdat je die niet meer bezocht hebt  in de laatste {$a->inactivetime} dagen.
+
+Bezoek de cursus om je aanmelding actief te houden via <a href="{$a->url}">{$a->course}</a> voor {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Je aanmelding vervalt: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Beste {$a->user},
 
 We laten je weten dat je aanmelding in cursus \' {$a->course}\' zal verlopen op  {$a->timeend}.

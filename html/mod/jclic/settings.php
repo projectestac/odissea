@@ -26,18 +26,17 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    require_once($CFG->dirroot.'/mod/jclic/lib.php');
+    require_once $CFG->dirroot . '/mod/jclic/lib.php';
 
     $settings->add(new admin_setting_configtext('jclic/jarbase', get_string('jclicjarbase', 'jclic'),
-                       get_string('jclicjarbase_help', 'jclic'), JCLIC_DEFAULT_JARBASE, PARAM_URL, 60));
+        get_string('jclicjarbase_help', 'jclic'), JCLIC_DEFAULT_JARBASE, PARAM_URL, 60));
 
     $settings->add(new admin_setting_configtext('jclic/lap', get_string('lap', 'jclic'),
-                       get_string('lap_help', 'jclic'), JCLIC_DEFAULT_LAP, PARAM_INT));
+        get_string('lap_help', 'jclic'), JCLIC_DEFAULT_LAP, PARAM_INT));
 
     $settings->add(new admin_setting_configtext('jclic/pluginjs', get_string('pluginjs', 'jclic'),
-                       get_string('pluginjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic/jclicplugin.js', PARAM_TEXT));
+        get_string('pluginjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic/jclicplugin.js', PARAM_TEXT));
 
     $settings->add(new admin_setting_configtext('jclic/jclicjs', get_string('jclicjs', 'jclic'),
-                       get_string('jclicjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic.js/jclic.min.js', PARAM_URL, 60));
+        get_string('jclicjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic.js/jclic.min.js', PARAM_URL, 60));
 }
-

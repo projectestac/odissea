@@ -33,7 +33,7 @@ global $CFG;
 
 require_once($CFG->dirroot.'/mod/lesson/locallib.php');
 
-class events_test extends \advanced_testcase {
+final class events_test extends \advanced_testcase {
 
     /** @var stdClass the course used for testing */
     private $course;
@@ -61,7 +61,7 @@ class events_test extends \advanced_testcase {
      * Test the page created event.
      *
      */
-    public function test_page_created() {
+    public function test_page_created(): void {
 
         // Set up a generator to create content.
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_lesson');
@@ -85,7 +85,7 @@ class events_test extends \advanced_testcase {
      * Test the page created event.
      *
      */
-    public function test_page_moved() {
+    public function test_page_moved(): void {
 
         // Set up a generator to create content.
         // paga3 is the first one and page1 the last one.
@@ -117,7 +117,7 @@ class events_test extends \advanced_testcase {
      * Test the page deleted event.
      *
      */
-    public function test_page_deleted() {
+    public function test_page_deleted(): void {
 
         // Set up a generator to create content.
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_lesson');
@@ -146,7 +146,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for updateing a page, so the unit test will simply
      * create and trigger the event and ensure data is returned as expected.
      */
-    public function test_page_updated() {
+    public function test_page_updated(): void {
 
         // Trigger an event: page updated.
         $eventparams = array(
@@ -179,7 +179,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for viewing an essay attempt, so the unit test will simply
      * create and trigger the event and ensure the legacy log data is returned as expected.
      */
-    public function test_essay_attempt_viewed() {
+    public function test_essay_attempt_viewed(): void {
         // Create a essays list viewed event
         $event = \mod_lesson\event\essay_attempt_viewed::create(array(
             'objectid' => $this->lesson->id,
@@ -197,16 +197,13 @@ class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\mod_lesson\event\essay_attempt_viewed', $event);
         $this->assertEquals(\context_module::instance($this->lesson->properties()->cmid), $event->get_context());
-        $expected = array($this->course->id, 'lesson', 'view grade', 'essay.php?id=' . $this->lesson->properties()->cmid .
-            '&mode=grade&attemptid='.$this->lesson->id, get_string('manualgrading', 'lesson'), $this->lesson->properties()->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
     /**
      * Test the lesson started event.
      */
-    public function test_lesson_started() {
+    public function test_lesson_started(): void {
         // Trigger and capture the event.
         $sink = $this->redirectEvents();
         $this->lesson->start_timer();
@@ -216,16 +213,13 @@ class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\mod_lesson\event\lesson_started', $event);
         $this->assertEquals(\context_module::instance($this->lesson->properties()->cmid), $event->get_context());
-        $expected = array($this->course->id, 'lesson', 'start', 'view.php?id=' . $this->lesson->properties()->cmid,
-            $this->lesson->properties()->id, $this->lesson->properties()->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
     /**
      * Test the lesson restarted event.
      */
-    public function test_lesson_restarted() {
+    public function test_lesson_restarted(): void {
 
         // Initialize timer.
         $this->lesson->start_timer();
@@ -248,7 +242,7 @@ class events_test extends \advanced_testcase {
     /**
      * Test the lesson restarted event.
      */
-    public function test_lesson_resumed() {
+    public function test_lesson_resumed(): void {
 
         // Initialize timer.
         $this->lesson->start_timer();
@@ -270,7 +264,7 @@ class events_test extends \advanced_testcase {
     /**
      * Test the lesson ended event.
      */
-    public function test_lesson_ended() {
+    public function test_lesson_ended(): void {
         global $DB, $USER;
 
         // Add a lesson timer so that stop_timer() does not complain.
@@ -290,9 +284,6 @@ class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\mod_lesson\event\lesson_ended', $event);
         $this->assertEquals(\context_module::instance($this->lesson->properties()->cmid), $event->get_context());
-        $expected = array($this->course->id, 'lesson', 'end', 'view.php?id=' . $this->lesson->properties()->cmid,
-            $this->lesson->properties()->id, $this->lesson->properties()->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
@@ -302,7 +293,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for assessing an essay, so the unit test will simply
      * create and trigger the event and ensure the legacy log data is returned as expected.
      */
-    public function test_essay_assessed() {
+    public function test_essay_assessed(): void {
         // Create an essay assessed event
         $gradeid = 5;
         $attemptid = 7;
@@ -326,9 +317,6 @@ class events_test extends \advanced_testcase {
         // Check that the event data is valid.
         $this->assertInstanceOf('\mod_lesson\event\essay_assessed', $event);
         $this->assertEquals(\context_module::instance($this->lesson->properties()->cmid), $event->get_context());
-        $expected = array($this->course->id, 'lesson', 'update grade', 'essay.php?id=' . $this->lesson->properties()->cmid,
-                $this->lesson->name, $this->lesson->properties()->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }
 
@@ -336,7 +324,7 @@ class events_test extends \advanced_testcase {
      * Test the content page viewed event.
      *
      */
-    public function test_content_page_viewed() {
+    public function test_content_page_viewed(): void {
         global $DB, $PAGE;
 
         // Set up a generator to create content.
@@ -370,7 +358,7 @@ class events_test extends \advanced_testcase {
      * Test the question viewed event.
      *
      */
-    public function test_question_viewed() {
+    public function test_question_viewed(): void {
         global $DB, $PAGE;
 
         // Set up a generator to create content.
@@ -407,7 +395,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for answering an truefalse question, so the unit test will simply
      * create and trigger the event and ensure data is returned as expected.
      */
-    public function test_question_answered() {
+    public function test_question_answered(): void {
 
         // Trigger an event: truefalse question answered.
         $eventparams = array(
@@ -440,7 +428,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for creating a user override, so the unit test will simply
      * create and trigger the event and ensure the event data is returned as expected.
      */
-    public function test_user_override_created() {
+    public function test_user_override_created(): void {
 
         $params = array(
             'objectid' => 1,
@@ -470,7 +458,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for creating a group override, so the unit test will simply
      * create and trigger the event and ensure the event data is returned as expected.
      */
-    public function test_group_override_created() {
+    public function test_group_override_created(): void {
 
         $params = array(
             'objectid' => 1,
@@ -500,7 +488,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for updating a user override, so the unit test will simply
      * create and trigger the event and ensure the event data is returned as expected.
      */
-    public function test_user_override_updated() {
+    public function test_user_override_updated(): void {
 
         $params = array(
             'objectid' => 1,
@@ -530,7 +518,7 @@ class events_test extends \advanced_testcase {
      * There is no external API for updating a group override, so the unit test will simply
      * create and trigger the event and ensure the event data is returned as expected.
      */
-    public function test_group_override_updated() {
+    public function test_group_override_updated(): void {
 
         $params = array(
             'objectid' => 1,
@@ -557,7 +545,7 @@ class events_test extends \advanced_testcase {
     /**
      * Test the user override deleted event.
      */
-    public function test_user_override_deleted() {
+    public function test_user_override_deleted(): void {
         global $DB;
 
         // Create an override.
@@ -581,7 +569,7 @@ class events_test extends \advanced_testcase {
     /**
      * Test the group override deleted event.
      */
-    public function test_group_override_deleted() {
+    public function test_group_override_deleted(): void {
         global $DB;
 
         // Create an override.

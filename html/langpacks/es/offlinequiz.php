@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'es', version '4.1'.
+ * Strings for component 'offlinequiz', language 'es', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -327,7 +327,6 @@ $string['noreview'] = 'No tiene permisos para revisar este cuestionario offline'
 $string['noscannedpage'] = '¡No hay página escaneada con ID {$a}!';
 $string['notagselected'] = 'No se ha seleccionado una etiqueta';
 $string['nothingtodo'] = '¡Nada que hacer!';
-$string['notonattendancelist'] = 'No está en la lista de asistencia:';
 $string['notxtfile'] = '';
 $string['notyetgraded'] = 'No calificado aún';
 $string['numattempts'] = 'Número de resultados importados:  {$a}';
@@ -634,7 +633,6 @@ $string['tabparticipantsupload'] = 'Cargar y corregir';
 $string['tabpreview'] = 'Impresos y vista previa';
 $string['tabquestionandanswerstats'] = 'Análisis de preguntas y respuestas';
 $string['tabquestionstats'] = 'Análisis de preguntas';
-$string['tabregrade'] = 'Recalificación';
 $string['tabresults'] = 'Resultados';
 $string['tabresultsoverview'] = 'Resultados';
 $string['tabstatistics'] = 'Estadísticas';

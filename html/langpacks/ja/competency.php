@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ja', version '4.1'.
+ * Strings for component 'competency', language 'ja', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'コンピテンシ評定がコー�
 $string['evidence_manualoverrideinplan'] = 'コンピテンシ評定が学習プラン「 {$a} 」で手動設定されました。';
 $string['invalidevidencedesc'] = '無効なエビデンス説明';
 $string['invalidgrade'] = '無効な評定';
-$string['invalidpersistenterror'] = 'エラー: {$a}';
 $string['invalidplan'] = '無効な学習プラン';
 $string['invalidtaxonomy'] = '無効な分類: {$a}';
 $string['invalidurl'] = 'URLが有効ではありません。「http://」または「https://」で始まっていることを確認してください。';

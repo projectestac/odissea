@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ca', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ca', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -135,7 +135,6 @@ $string['placement_help'] = 'Un pas es pot posar a la part superior, inferior, e
 
 Si el pas no encaixa al lloc determinat d\'una pàgina concreta, es mostrarà de manera automàtica a una altra banda.';
 $string['pluginname'] = 'Visites guiades';
-$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'El temps que un usuari tarda a completar una visita guiada d\'usuari.';
 $string['privacy:metadata:preference:requested'] = 'El temps que un usuari va demanar manualment per darrera vegada una visita guiada d\'usuari.';
 $string['privacy:request:preference:completed'] = 'Vau marcar la visita guiada d\'usuari "{$a->name}" com a completada l\'última vegada el {$a->time}';

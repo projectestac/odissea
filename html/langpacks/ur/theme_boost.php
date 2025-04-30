@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ur', version '4.1'.
+ * Strings for component 'theme_boost', language 'ur', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -51,4 +51,3 @@ $string['rawscss_desc'] = 'اس فیلڈ کو SCSS یا CSS کوڈ فراہم ک
 $string['rawscsspre'] = 'خام ابتدائی SCSS';
 $string['rawscsspre_desc'] = 'اس فیلڈ میں آپ شروع کرنے والا SCSS کوڈ فراہم کر سکتے ہیں، اسے ہر چیز سے پہلے انجکشن کیا جائے گا۔ زیادہ تر وقت آپ اس ترتیب کو متغیرات کی وضاحت کے لیے استعمال کریں گے۔';
 $string['region-side-pre'] = 'صحیح';
-$string['totop'] = 'اوپر جائیں';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exacomp', language 'es', version '4.1'.
+ * Strings for component 'block_exacomp', language 'es', version '4.4'.
  *
  * @package     block_exacomp
  * @category    string
@@ -402,7 +402,7 @@ $string['save_changes_competence_evaluation'] = 'Los cambios fueron guardados';
 $string['save_crosssub'] = 'Guardar cambios';
 $string['save_pre_planning_selection'] = 'Añadir ejemplos seleccionados a agenda semanal de estudiantes seleccionados';
 $string['save_selection'] = 'Guardar selección';
-$string['save_success'] = 'cambios exitosos';
+$string['save_success'] = 'cambiso exitosos';
 $string['scheduler_import_settings'] = 'Configuraciones para importación del agendador';
 $string['schedulerimport'] = 'Importar trabajos del agendador';
 $string['second_configuration_step'] = 'En este paso de la configuración, Usted tiene que pre-seleccionar rejillas de competencia..';

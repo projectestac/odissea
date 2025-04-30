@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'es', version '4.1'.
+ * Strings for component 'enrol_self', language 'es', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Sólo para los miembros de la cohorte';
 $string['cohortonly_help'] = 'La auto-matrícula puede ser restringida a los miembros de una cohorte específica. Cambiar esta configuración no tiene ningún efecto sobre las inscripciones ya existentes.';
 $string['confirmbulkdeleteenrolment'] = '¿Está seguro de que quiere eliminar estas matrículas de usuario?';
 $string['customwelcomemessage'] = 'Mensaje personalizado de bienvenida';
-$string['customwelcomemessage_help'] = 'Puede añadir un mensaje de bienvenida personalizado con texto plano o en auto-formato Moodle, incluidas las etiquetas HTML y multi-lang.
-
-Los siguientes marcadores pueden incluirse en el mensaje:
-
-* Nombre del curso {$a->coursename}
-* Enlace a la página de perfil del usuario {$a->profileurl}
-* Email del usuario {$a->email}
-* Nombre completo del usuario {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Formatos permitidos: Texto plano o auto-formato Moodle. También se aceptan etiquetas HTML y multi-lang, así como los siguientes marcadores:
+<ul>
+<li>Nombre del curso {$a->coursename}</li>
+<li>Enlace a la página de perfil del usuario {$a->profileurl}</li>
+<li>Email del usuario {$a->email}</li>
+<li>Nombre completo del usuario {$a->fullname}</li>
+<li>Nombre de pila del usuario {$a->firstname}</li>
+<li>Apellido(s) del usuario {$a->lastname}</li>
+<li>Rol del usuario en el curso {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Asignación de rol por defecto';
 $string['defaultrole_desc'] = 'Seleccione el rol que debe asignarse a los usuarios con auto-matriculación';
 $string['deleteselectedusers'] = 'Eliminar las matrículas de usuario seleccionadas';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Fecha de inicio';
 $string['enrolstartdate_help'] = 'Si está habilitado, los usuarios solo pueden matricularse a partir de este día.';
 $string['expiredaction'] = 'Acción al finalizar la matrícula';
 $string['expiredaction_help'] = 'Seleccione la acción a llevar a cabo cuando la matriculación del usuario expire. Tenga en cuenta que hay información y datos de configuración relativos al usuario que serán eliminados en el proceso de baja.';
+$string['expiryinactivemessageenrolledbody'] = 'Hola, {$a->user}.
+
+Su matrícula del curso {$a->course} expira el {$a->timeend} porque no lo ha visitado en los últimos {$a->inactivetime} días.
+
+Para mantener activa su matrícula, autentíquese y visite <a href="{$a->url}">{$a->course}</a> antes de {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Su matrícula está a punto de expirar: {$a->course}';
 $string['expirymessageenrolledbody'] = 'Apreciado {$a->user},
 
 Este es un aviso de que su matriculación en el curso \'{$a->course}\' está próximo a expirar en {$a->timeend}.

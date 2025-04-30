@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'es', version '4.1'.
+ * Strings for component 'auth_mnet', language 'es', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'Identificación de la Red Moodle (\'Moodle Network\')';
 $string['privacy:metadata:external:mahara'] = 'Este complemento puede enviar datos de forma externa a una aplicación vinculada de Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Este complemento puede enviar datos de forma externa a una aplicación vinculada de Moodle.';
 $string['privacy:metadata:mnet_external:address'] = 'La dirección del usuario.';
-$string['privacy:metadata:mnet_external:aim'] = 'El identificador AIM del usuario';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Un nombre alternativo para el usuario.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Una preferencia sobre si el usuario debe suscribirse automáticamente a los foros en los que publica.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'Una preferencia de usuario para el tipo de calendario que se utiliza.';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'Una preferencia para dete
 $string['privacy:metadata:mnet_external:firstaccess'] = 'El momento en el que este usuario accedió por primera vez al sitio.';
 $string['privacy:metadata:mnet_external:firstname'] = 'El nombre del usuario.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Los detalles fonéticos sobre el nombre del usuario.';
-$string['privacy:metadata:mnet_external:icq'] = 'El número ICQ del usuario.';
 $string['privacy:metadata:mnet_external:id'] = 'El ID de usuario';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Un número de identificación otorgado por la institución';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Texto alternativo para la imagen de usuario.';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Los detalles foné
 $string['privacy:metadata:mnet_external:maildigest'] = 'Una opción para el resumen de correo de este usuario.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Una preferencia del usuario acerca de mostrar su dirección de correo electrónico a otros usuarios.';
 $string['privacy:metadata:mnet_external:middlename'] = 'El segundo nombre del usuario';
-$string['privacy:metadata:mnet_external:msn'] = 'El identificador MSN del usuario';
 $string['privacy:metadata:mnet_external:phone1'] = 'Un número de teléfono para el usuario.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Un número de teléfono adicional para el usuario.';
 $string['privacy:metadata:mnet_external:picture'] = 'Los detalles de la foto asociada con este usuario.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Un marcador para determinar si el usuario ha aceptado la política del sitio.';
-$string['privacy:metadata:mnet_external:skype'] = 'El identificador de Skype del usuario';
 $string['privacy:metadata:mnet_external:suspended'] = 'Un marcador para mostrar si el usuario ha sido suspendido en este sistema.';
 $string['privacy:metadata:mnet_external:timezone'] = 'La zona horaria del usuario';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Una preferencia para los foros y su seguimiento.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'La máscara de bits de confianza';
-$string['privacy:metadata:mnet_external:url'] = 'Una URL relacionada con este usuario.';
 $string['privacy:metadata:mnet_external:username'] = 'El nombre de usuario de este usuario.';
-$string['privacy:metadata:mnet_external:yahoo'] = 'El identificador de Yahoo del usuario';
 $string['privacy:metadata:mnet_log'] = 'Detalles de las acciones remotas llevadas a cabo por un usuario local con sesión iniciada en un sistema remoto.';
 $string['privacy:metadata:mnet_log:action'] = 'Acción llevada a cabo por el usuario.';
 $string['privacy:metadata:mnet_log:cmid'] = 'ID del módulo de curso.';

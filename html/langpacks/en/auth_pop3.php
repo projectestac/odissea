@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pop3', language 'en', version '4.1'.
+ * Strings for component 'auth_pop3', language 'en', version '4.4'.
  *
  * @package     auth_pop3
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'eu', version '4.1'.
+ * Strings for component 'forum', language 'eu', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Harpidetu foro guztietara';
 $string['allunsubscribe'] = 'Kendu foro guztietako harpidetza';
 $string['allusers'] = 'Erabiltzaile guztiak';
 $string['alreadyfirstpost'] = 'Dagoeneko hau da eztabaidako lehen mezua.';
+$string['announcementsettings'] = 'Lehenetsitako Albisteak foroaren ezarpenak';
+$string['announcementsettings_help'] = 'Ezarpen hauek Albisteak foro guztietarako lehenetsitako balioak zehazten dituzte.';
 $string['anyfile'] = 'Edozein fitxategi';
 $string['areaattachment'] = 'Eranskinak';
 $string['areapost'] = 'Mezuak';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Ikasleei blokeatu egin ahal zaie denbora-tarte ba
 $string['blockperioddisabled'] = 'Ez blokeatu';
 $string['blogforum'] = 'Blog-formatuan azaltzen den foro estandarra';
 $string['bynameondate'] = '{$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Foroko eztabaida kopurua';
 $string['cachedef_forum_is_tracked'] = 'Erabiltzailearentzako foroetako jarraipenaren egoera';
 $string['calendardue'] = '{$a}(r)en amaiera-data';
 $string['cancelreply'] = 'Baztertu erantzuna';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Itxi kalifikatzailea';
 $string['completiondetail:discussions'] = 'Eztabaidak hastea: {$a}';
 $string['completiondetail:posts'] = 'Foroetako mezuak idaztea: {$a}';
 $string['completiondetail:replies'] = 'Erantzunak idaztea: {$a}';
-$string['completiondiscussions'] = 'Ikasleak eztabaida sortu behar du:';
+$string['completiondiscussions'] = 'Eztabaidak sortzea';
 $string['completiondiscussionsdesc'] = 'Erabiltzaileak gutxienez {$a} elkarrizketa sortu behar ditu';
 $string['completiondiscussionsgroup'] = 'Eztabaidak behar dira';
 $string['completiondiscussionshelp'] = 'osatzeko eztabaidak behar dira';
-$string['completionposts'] = 'Ikasleak eztabaidak edo erantzunak bidali  behar ditu:';
+$string['completionposts'] = 'Eztabaidak sortzea edo erantzunak bidaltzea';
 $string['completionpostsdesc'] = 'Erabiltzaileak gutxienez {$a} elkarrizketa edo erantzun idatzi behar ditu';
 $string['completionpostsgroup'] = 'Mezuak behar ditu';
 $string['completionpostshelp'] = 'Osatzeko eztabaidak edo erantzunak behar ditu';
-$string['completionreplies'] = 'Ikasleak eman beharreko erantzunak:';
+$string['completionpostsinforums'] = 'Mezuak foroetan';
+$string['completionreplies'] = 'Erantzunak bidaltzea';
 $string['completionrepliesdesc'] = 'Erabiltzaileak gutxienez {$a} erantzun idatzi behar ditu';
 $string['completionrepliesgroup'] = 'Erantzunak behar dira';
 $string['completionreplieshelp'] = 'osatzeko erantzunak behar dira';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'Mezua bidali da.';
 $string['eventcoursesearched'] = 'Ikastaroa bilatu da';
 $string['eventdiscussioncreated'] = 'Eztabaida sortu da';
 $string['eventdiscussiondeleted'] = 'Eztabaida ezabatu da';
+$string['eventdiscussionlockupdated'] = 'Eztabaida-blokeoa eguneratuta';
 $string['eventdiscussionmoved'] = 'Eztabaida mugitu da';
 $string['eventdiscussionpinned'] = 'Eztabaida finkatua.';
 $string['eventdiscussionsubscriptioncreated'] = 'Eztabaidaren harpidetza sortu da';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Eztabaidaren harpidetza ezabatu
 $string['eventdiscussionunpinned'] = 'Eztabaida finkatzea kendu da';
 $string['eventdiscussionupdated'] = 'Eztabaida eguneratu da';
 $string['eventdiscussionviewed'] = 'Eztabaida ikusi da';
+$string['eventforumsubscriptionupdated'] = 'Harpidetza modua eguneratuta';
 $string['eventpostcreated'] = 'Mezua sortu da';
 $string['eventpostdeleted'] = 'Mezua ezabatu da';
 $string['eventpostupdated'] = 'Mezua eguneratu da';
@@ -298,13 +304,14 @@ $string['forum:addinstance'] = 'Gehitu foro berria';
 $string['forum:addnews'] = 'Gehitu albisteak';
 $string['forum:addquestion'] = 'Gehitu galdera';
 $string['forum:allowforcesubscribe'] = 'Baimendu behartutako harpidetza';
+$string['forum:canmailnow'] = 'G eta E foroan mezuak atzerapenik gabe bidali ditzake';
 $string['forum:canoverridecutoff'] = 'Idatzi foroetan itxiera-dataren ondoren';
 $string['forum:canoverridediscussionlock'] = 'Erantzun blokeatutako eztabaidetan';
 $string['forum:canposttomygroups'] = 'Idatzi sarbidea duzun talde guztietan';
 $string['forum:cantogglefavourite'] = 'Nabarmendu eztabaidak';
 $string['forum:createattachment'] = 'Sortu erantsitako fitxategiak';
 $string['forum:deleteanypost'] = 'Ezabatu edozein mezu (edonoiz)';
-$string['forum:deleteownpost'] = 'Ezabatu norberaren mezuak  (data baino lehen)';
+$string['forum:deleteownpost'] = 'Ezabatu norberaren mezuak (data baino lehen)';
 $string['forum:editanypost'] = 'Editatu edozein mezu';
 $string['forum:exportdiscussion'] = 'Esportatu eztabaida osoa';
 $string['forum:exportforum'] = 'Esportatu foroa';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'Mezu honek ez du eranskinik';
 $string['nodiscussions'] = 'Oraindik ez dago eztabaidagairik foro honetan';
 $string['nodiscussionsstartedby'] = '{$a} erabiltzaileak ez du eztabaidarik hasi';
 $string['nodiscussionsstartedbyyou'] = 'Zeuk oraindik ez duzu eztabaidarik hasi';
-$string['noguestpost'] = 'Sentitzen dugu, gonbidatuek ezin dute mezurik bidali.';
+$string['noguestpost'] = 'Foro honetan soilik autentifikatutako erabiltzaileek idatzi dezakete.';
+$string['noguestpost:title'] = 'Hasi saioa jarraitzeko';
 $string['noguestsubscribe'] = 'Sentitzen dugu, gonbidatuek ez dute harpidetzeko baimenik.';
 $string['noguesttracking'] = 'Sentitzen dugu, gonbidatuek ezin dituzte mezuen jarraipenerako aukerak aldatu.';
 $string['nomorepostscontaining'] = 'Ez dago \'{$a}\' duen mezu gehiago';
@@ -543,9 +551,6 @@ $string['postbyuser'] = '{$a->user}(r)en {$a->post}';
 $string['postincontext'] = 'Ikusi mezu hau bere testuinguruan';
 $string['postisprivatereply'] = 'Hau erantzun pribatu bat da. (Irakasleek eta erantzun pribatuak ikusteko baimena duten erabiltzaileek ere ikusi ahal dute.)';
 $string['postmailinfo'] = 'Hau {$a} helbidean argitaratutako mezu baten kopia da.';
-$string['postmailinfolink'] = 'Hau {$a->coursename} ikastaroan argitaratutako mezu baten kopia da.
-
-Erantzuteko egin klik esteka honetan: {$a->replylink}';
 $string['postmailnow'] = '<p>Mezu hau forora harpidetutako partaide guztiei berehala bidaliko zaie.</p>';
 $string['postmailreply'] = 'Erantzuteko, egin klik esteka honetan: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

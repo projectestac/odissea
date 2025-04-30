@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ro', version '4.1'.
+ * Strings for component 'analytics', language 'ro', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Combinat sau hibrid';
 $string['modeinstructionfacetoface'] = 'Față în față';
 $string['modeinstructionfullyonline'] = 'Integral online';
 $string['modeloutputdir'] = 'Director de salvare a modele';
-$string['modeloutputdirinfo'] = 'Director în care procesoarele de predicție stochează toate informațiile de evaluare. Util pentru depanare și cercetare.';
 $string['modeloutputdirwithdefaultinfo'] = 'Director în care procesoarele de predicție stochează toate informațiile de evaluare. Util pentru depanare și cercetare. Dacă este gol, atunci {$a} va fi folosit ca implicit.';
 $string['modeltimelimit'] = 'Limita de timp de analiză pentru model';
 $string['modeltimelimitinfo'] = 'Această setare limitează timpul petrecut de fiecare model analizând conținutul site-ului.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ar', version '4.1'.
+ * Strings for component 'tool_langimport', language 'ar', version '4.4'.
  *
  * @package     tool_langimport
  * @category    string
@@ -48,6 +48,7 @@ $string['langupdatecomplete'] = 'تم إكمال تحديث حزم اللغات'
 $string['missingcfglangotherroot'] = 'قيمة تكوين مفقودة  $CFG->langotherroot';
 $string['missinglangparent'] = 'اللغة الأم مفقودة <em>{$a->parent}</em> من <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'لا يمكن إلغاء تنصيب حزمة اللغة الإنجليزية.';
+$string['noenglishuninstalltitle'] = 'يتعذر إلغاء التنصيب';
 $string['nolangupdateneeded'] = 'كل حزم اللغات الخاصة بك محدثة ولا تحتاج أي تحديث';
 $string['pluginname'] = 'حزم اللغات';
 $string['privacy:metadata'] = 'إن ملحق حزم اللغات لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'eu', version '4.1'.
+ * Strings for component 'tool_task', language 'eu', version '4.4'.
  *
  * @package     tool_task
  * @category    string
@@ -27,16 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'Ad hoc atazen ilara hutsik dago';
-$string['adhocqueueold'] = 'Ataza zaharrenak {$a->age} du eta hori {$a->max} baino gehiago da';
+$string['adhocqueueold'] = 'Prozesatu gabeko ataza zaharrenak {$a->age} du, eta hori {$a->max} baino gehiago da';
 $string['adhocqueuesize'] = 'Ad hoc atazen ilarak {$a} ataza du';
 $string['adhoctaskid'] = 'Ad hoc atazaren IDa: {$a}';
+$string['adhoctaskrun'] = 'Ad hoc atazaren exekuzioa hasita';
 $string['adhoctasks'] = 'Ad hoc atazak';
-$string['asap'] = 'Ahal bezain laster (ASAP)';
+$string['adhoctasksdue'] = 'Ad hoc atazen amaiera';
+$string['adhoctasksfailed'] = 'Huts egindako ad hoc atazak';
+$string['adhoctasksfuture'] = 'Etorkizuneko ad hoc atazak';
+$string['adhoctasksrunning'] = 'Exekutatzen ari diren ad hoc atazak';
+$string['asap'] = '<abbr title="Ahal bezain laster">ASAP</abbr>';
+$string['backtoadhoctasks'] = 'Itzuli Ad hoc atazetara';
 $string['backtoscheduledtasks'] = 'Itzuli programatutako atazetara';
 $string['blocking'] = 'Blokeoak';
 $string['cannotfindthepathtothecli'] = 'Ez da aurkitu PHP CLI exekutagarriaren bidea eta ondorioz atazaren exekuzioa bertan behera utzi da. Zehaztu \'PHP CLIrako bidea\' ezarpena Gunearen kudeaketa / Zerbitzaria / Sistemaren bideak atalean.';
 $string['checkadhocqueue'] = 'Ad hoc atazen ilara';
 $string['checkcronrunning'] = 'Cron-a martxan';
+$string['checklongrunningtaskcount'] = 'Iraupen luzeko ataza kopurua: {$a}';
+$string['checklongrunningtasks'] = 'Iraupen luzeko atazak';
 $string['checkmaxfaildelay'] = 'Atazen gehieneko atzerapena';
 $string['classname'] = 'Klasearen izena';
 $string['clearfaildelay_confirm'] = 'Ziur zaude \'{$a}\' atazaren huts egiteen ondoriozko atzerapena garbitu nahi duzula?';
@@ -52,19 +60,33 @@ $string['edittaskschedule'] = 'Editatu atazaren programazioa: {$a}';
 $string['enablerunnow'] = 'Baimendu \'Exekutatu orain\' programatutako atazetarako';
 $string['enablerunnow_desc'] = 'Baimendu kudeatzaileek ataza bat edozein unetan exekutatzea, programatutako unean exekutatu arte itxaron behar izan beharrean. Funtzio honek Sistemaren bideak ataleko \'PHP CLIrako bidea\' (pathtophp) ezarpena zehaztuta egotea behar du. Ataza web-zerbitzarian exekutatzen da, eta hori dela eta agian funtzionalitate hau desgaitu nahiko duzu errendimendu arazo potentzialak ekiditeko.';
 $string['faildelay'] = 'Huts egiteen ondoriozko atzerapena';
+$string['failed'] = 'Huts eginda';
 $string['fromcomponent'] = 'Zereginaren jatorrizko osagaia: {$a}';
 $string['hostname'] = 'Hostalari-izena';
 $string['lastcronstart'] = 'Azken cron-exekuziotik igarotako denbora: {$a}';
 $string['lastruntime'] = 'Azken exekuzioa';
 $string['lastupdated'] = 'Azkenengoz eguneratuta {$a}.';
 $string['nextruntime'] = 'Hurrengo exekuzioa';
+$string['noclassname'] = 'Klasearen izena ez da zehaztu';
+$string['notasks'] = 'Ez dago atazarik martxan';
+$string['payload'] = 'Karga';
 $string['pid'] = 'PIDa';
 $string['plugindisabled'] = 'Plugina desgaituta dago';
 $string['pluginname'] = 'Programatutako atazen ezarpenak';
 $string['privacy:metadata'] = 'Programatutako atazen ezarpenak pluginak ez du datu pertsonalik biltzen.';
 $string['resettasktodefaults'] = 'Berrabiarazi programatutako ataza lehenetsitako balioetara';
 $string['resettasktodefaults_help'] = 'Honek lokalki egindako edozein aldaketa baztertu eta ataza honen programazioa bere jatorrizko balioetara itzuliko du.';
+$string['run_adhoctasks'] = 'Exekutatu ad hoc atazak';
+$string['runadhoc'] = 'Exekutatu ad hoc atazak orain?';
+$string['runadhoc_confirm'] = 'Atazak web-zerbitzarian exekutatuko dira eta baliteke denbora-tarte bat behar izatea amaitzeko.';
+$string['runadhoctask'] = 'Exekutatu {$a->taskid} IDa duen \'{$a->task}\' ataza';
+$string['runadhoctasks'] = 'Exekutatu \'{$a}\' ataza guztiak';
+$string['runadhoctasksfailed'] = 'Exekutatu huts egindako \'{$a}\' atazak';
 $string['runagain'] = 'Exekutatu berriro';
+$string['runclassname'] = 'Exekutatu guztiak';
+$string['runclassnamefailedonly'] = 'Exekutatu huts egindako guztiak';
+$string['runningalltasks'] = 'Ataza guztiak exekutatzen';
+$string['runningfailedtasks'] = 'Huts egindako atazak exekutatzen';
 $string['runningtasks'] = 'Une honetan martxan dauden atazak';
 $string['runnow'] = 'Exekutatu orain';
 $string['runnow_confirm'] = 'Ziur zaude \'{$a}\' ataza orain exekutatu nahi duzula? Ataza web-zerbitzarian exekutatuko da eta denbora bat eman dezake osatu arte.';
@@ -72,11 +94,19 @@ $string['runpattern'] = 'Exekuzio-patroia';
 $string['scheduled'] = 'Programatuta';
 $string['scheduledtaskchangesdisabled'] = 'Moodleko konfigurazioan programatutako atazen zerrendari aldaketak egitea ekidin da.';
 $string['scheduledtasks'] = 'Programatutako atazak';
+$string['showall'] = 'Erakutsi guztiak';
+$string['showfailedonly'] = 'Erakutsi huts egindakoak soilik';
+$string['showsummary'] = 'Erakutsi ad hoc atazen laburpena';
+$string['slowtask'] = 'Atazaren exekuzioak {$a} baino denbora gehiago behar izan du';
 $string['started'] = 'Abian';
+$string['taskage'] = 'Exekuzio denbora';
+$string['taskdetails'] = 'Exekuzioak {$a->time} baino denbora gehiago (gehienekoa: {$a->maxtime}) behar izan duen ataza kopurua: {$a->count} ataza daude';
 $string['taskdisabled'] = 'Ataza desgaituta';
 $string['taskfailures'] = 'Huts egindako {$a} ataza';
+$string['taskid'] = 'Atazaren IDa';
 $string['tasklogs'] = 'Atazen erregistroak';
 $string['tasknofailures'] = 'Ez dago huts egindako atazarik';
+$string['taskrunningtime'] = 'Atazaren exekuzioak {$a} behar izan du';
 $string['taskscheduleday'] = 'Eguna';
 $string['taskscheduleday_help'] = 'Programatutako atazetarako hileko egunentzako eremua. Eremuak unix cron-aren formatu bera erabiltzen du. Hauek dira adibide batzuk:
 

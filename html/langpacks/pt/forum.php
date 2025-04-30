@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'pt', version '4.1'.
+ * Strings for component 'forum', language 'pt', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'Subscrever todos os fóruns';
 $string['allunsubscribe'] = 'Cancelar a subscrição de todos os fóruns';
 $string['allusers'] = 'Todos os utilizadores';
 $string['alreadyfirstpost'] = 'Este já é o primeiro tópico da discussão';
+$string['announcementsettings'] = 'Configurações predefinidas dos anúncios do fórum';
+$string['announcementsettings_help'] = 'Estas configurações definem os valores predefinidos para todos os fóruns Anúncios.';
 $string['anyfile'] = 'Qualquer ficheiro';
 $string['areaattachment'] = 'Anexos';
 $string['areapost'] = 'Mensagens';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = 'Os alunos podem ser impedidos de submeter mais do
 $string['blockperioddisabled'] = 'Não bloquear';
 $string['blogforum'] = 'Fórum standard em formato blogue';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
+$string['cachedef_forum_count_discussions'] = 'Número de tópicos de fórum';
 $string['cachedef_forum_is_tracked'] = 'Estado do seguimento do fórum para o utilizador';
 $string['calendardue'] = 'Termina o prazo de {$a}';
 $string['cancelreply'] = 'Cancelar resposta';
@@ -113,15 +116,16 @@ $string['closegrader'] = 'Fechar avaliador';
 $string['completiondetail:discussions'] = 'Iniciar tópicos: {$a}';
 $string['completiondetail:posts'] = 'Adicionar mensagens: {$a}';
 $string['completiondetail:replies'] = 'Adicionar respostas: {$a}';
-$string['completiondiscussions'] = 'Número de tópicos que o aluno deve criar:&nbsp;';
+$string['completiondiscussions'] = 'Criar tópicos';
 $string['completiondiscussionsdesc'] = 'O aluno deve criar pelo menos {$a} tópico(s) de discussão';
 $string['completiondiscussionsgroup'] = 'Número de tópicos';
 $string['completiondiscussionshelp'] = 'requer a criação de determinado número de tópicos para concluir a atividade';
-$string['completionposts'] = 'Número de tópicos ou respostas que o aluno deve criar:&nbsp;';
+$string['completionposts'] = 'Criar tópicos ou publicar respostas';
 $string['completionpostsdesc'] = 'O aluno deve criar ou responder a pelo menos {$a} tópico(s) de discussão';
 $string['completionpostsgroup'] = 'Número de mensagens';
 $string['completionpostshelp'] = 'número de tópicos ou respostas requeridos para concluir a atividade';
-$string['completionreplies'] = 'Número de respostas a tópicos que o aluno deve submeter:&nbsp;';
+$string['completionpostsinforums'] = 'Publicar em fóruns';
+$string['completionreplies'] = 'Publicar respostas';
 $string['completionrepliesdesc'] = 'O aluno deve responder a pelo menos {$a}';
 $string['completionrepliesgroup'] = 'Número de respostas';
 $string['completionreplieshelp'] = 'número de respostas requerido para concluir a atividade';
@@ -260,6 +264,7 @@ $string['eventassessableuploaded'] = 'Foi publicado algum conteúdo.';
 $string['eventcoursesearched'] = 'Disciplina procurada';
 $string['eventdiscussioncreated'] = 'Discussão criada';
 $string['eventdiscussiondeleted'] = 'Discussão eliminada';
+$string['eventdiscussionlockupdated'] = 'Bloqueio de tópico de discussão atualizado';
 $string['eventdiscussionmoved'] = 'Discussão movida';
 $string['eventdiscussionpinned'] = 'Tópico de discussão destacado';
 $string['eventdiscussionsubscriptioncreated'] = 'Subscrição da discussão criada';
@@ -267,6 +272,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'Subscrição da discussão apag
 $string['eventdiscussionunpinned'] = 'Foi removido o destaque do tópico de discussão';
 $string['eventdiscussionupdated'] = 'Discussão atualizada';
 $string['eventdiscussionviewed'] = 'Discussão visualizada';
+$string['eventforumsubscriptionupdated'] = 'Modo de subscrição atualizado';
 $string['eventpostcreated'] = 'Tópico criado';
 $string['eventpostdeleted'] = 'Tópico eliminado';
 $string['eventpostupdated'] = 'Tópico atualizado';
@@ -301,6 +307,7 @@ $string['forum:addinstance'] = 'Adicionar novo fórum';
 $string['forum:addnews'] = 'Adicionar anúncios';
 $string['forum:addquestion'] = 'Adicionar pergunta';
 $string['forum:allowforcesubscribe'] = 'Permitir forçar a subscrição';
+$string['forum:canmailnow'] = 'Pode publicar no fórum de perguntas e respostas sem atraso no tempo de edição';
 $string['forum:canoverridecutoff'] = 'Publicar em fóruns após a data limite';
 $string['forum:canoverridediscussionlock'] = 'Responder a tópicos de discussão bloqueados';
 $string['forum:canposttomygroups'] = 'Publicar para todos os grupos a que tem acesso';
@@ -488,7 +495,8 @@ $string['noattachments'] = 'Esta mensagem não tem anexos';
 $string['nodiscussions'] = 'Ainda não existem tópicos de discussão neste fórum';
 $string['nodiscussionsstartedby'] = '{$a} não iniciou nenhum tópico de discução';
 $string['nodiscussionsstartedbyyou'] = 'Ainda não começou nenhuma discussão';
-$string['noguestpost'] = 'Lamentamos mas como visitante não pode submeter mensagens neste fórum.';
+$string['noguestpost'] = 'Apenas utilizadores autenticados podem submeter mensagens neste fórum.';
+$string['noguestpost:title'] = 'Autentique-se para continuar';
 $string['noguestsubscribe'] = 'Os convidados não têm permissão para subscrever um fórum.';
 $string['noguesttracking'] = 'Lamentamos mas como visitante não pode assinalar mensagens não lidas.';
 $string['nomorepostscontaining'] = 'Não foram encontradas mais mensagens contendo \'{$a}';
@@ -546,9 +554,6 @@ $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver esta mensagem no contexto';
 $string['postisprivatereply'] = 'Esta mensagem é uma resposta privada. (Os professores, e qualquer utilizador com a permissão de visualizar respostas privadas, também poderão visualizar).';
 $string['postmailinfo'] = 'Esta é uma cópia de uma mensagem publicada em {$a}';
-$string['postmailinfolink'] = 'Esta é uma cópia de uma mensagem publicada na disciplina {$a->coursename}.
-
-Para responder à mensagem clique na seguinte hiperligação: {$a->replylink}';
 $string['postmailnow'] = '<p>Esta mensagem será enviada imediatamente a todos os subscritores do fórum.</p>';
 $string['postmailreply'] = 'Para responder, clique nesta hiperligação: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

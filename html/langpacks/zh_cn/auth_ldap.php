@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', version '4.1'.
+ * Strings for component 'auth_ldap', language 'zh_cn', version '4.4'.
  *
  * @package     auth_ldap
  * @category    string
@@ -153,6 +153,8 @@ $string['renamingnotallowed'] = 'LDAP不允许用户重命名';
 $string['rootdseerror'] = '活动牡蛎查询rootDSE出错';
 $string['start_tls'] = '使用一般 LDAP 服务 （端口 389） 以及 TLS 加密';
 $string['start_tls_key'] = '使用 TLS';
+$string['sync_updateuserchunk'] = '将此值设置为每个事务要更新的用户数。将此设置为 0 将更新一个事务中的所有用户。';
+$string['sync_updateuserchunk_key'] = '同步更新用户区块大小';
 $string['syncroles'] = '从 LDAP同步系统角色';
 $string['synctask'] = 'LDAP的用户同步任务';
 $string['systemrolemapping'] = '系统角色映射';

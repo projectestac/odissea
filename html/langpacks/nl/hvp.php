@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'nl', version '4.1'.
+ * Strings for component 'hvp', language 'nl', version '4.4'.
  *
  * @package     hvp
  * @category    string
@@ -91,7 +91,7 @@ $string['currentpage'] = 'Pagina $current van $total';
 $string['dataviewreportlabel'] = 'Bekijk antwoorden';
 $string['date'] = 'Datum';
 $string['disablefileextensioncheck'] = 'Bestandsextensie controleren uitschakelen';
-$string['disablefileextensioncheckwarning'] = 'Waarschuwing! Het uitschakelen van het controleren bestandsextensies kan gevolgen hebben voor de beveiliging omdat hierdoor php bestanden kunnen worden geüploaded. Dat kan ervoor zorgen dat hackers kwaadaardige code kunnen uitvoeren op je site. Zorg ervoor dat je weet wat je uploadt.';
+$string['disablefileextensioncheckwarning'] = 'Waarschuwing! Het uitschakelen van het controleren bestandsextensies kan gevolgen hebben voor de beveiliging omdat hierdoor php bestanden kunnen worden geüpload. Dat kan ervoor zorgen dat hackers kwaadaardige code kunnen uitvoeren op je site. Zorg ervoor dat je weet wat je uploadt.';
 $string['disablefullscreen'] = 'Volledig scherm uitschakelen';
 $string['disablehubconfirmationmsg'] = 'Wil je de hub nog steeds inschakelen?';
 $string['disablehubdescription'] = 'Het wordt sterk aangeraden deze optie ingeschakeld te laten. De H5P-hub zorgt voor een eenvoudige interface om nieuwe content types te halen en bestaande content types up-to-date te houden. In de toekomst zal dit het delen en hergebruiken van content vereenvoudigen. Als deze optie is uitgeschakeld, moet je content types handmatig via upload bestanden installeren en updaten.';

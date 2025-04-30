@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ru', version '4.1'.
+ * Strings for component 'url', language 'ru', version '4.4'.
  *
  * @package     url
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowvariables'] = 'Разрешить переменные в URL';
+$string['allowvariables_desc'] = 'Разрешить добавление переменных в URL-адреса. Переменные позволяют передавать внутреннюю информацию, например имя пользователя, как часть URL-адреса. Учитывайте потенциальных рисках конфиденциальности при использовании этой функции.';
 $string['chooseavariable'] = 'Выберите переменную ...';
 $string['clicktoopen'] = 'Нажмите на ссылку {$a}, чтобы открыть ресурс.';
 $string['configdisplayoptions'] = 'Выделите все варианты, которые должны быть доступны, существующие параметры не изменятся. Удерживайте нажатой клавишу CTRL для выбора нескольких полей.';

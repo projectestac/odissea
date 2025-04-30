@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'eu', version '4.1'.
+ * Strings for component 'qtype_calculatedmulti', language 'eu', version '4.4'.
  *
  * @package     qtype_calculatedmulti
  * @category    string

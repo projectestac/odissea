@@ -338,6 +338,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		}
 	}
 	public function setRandomSeed($seed) {
+		$this->setProperty(com_wiris_quizzes_api_PropertyName::$MULTISTEP_SESSION_ID, null);
 		$this->userData->randomSeed = $seed;
 	}
 	public function parseTextBoolean($text) {
@@ -1304,8 +1305,10 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					unset($tag,$s,$result,$j,$i1);
 				}
 			}
-			if($variables && $this->hasHandwritingConstraints()) {
-				$this->getHandwritingConstraints()->addQuestionInstanceConstraints($this);
+			if($variables) {
+				if($this->hasHandwritingConstraints()) {
+					$this->getHandwritingConstraints()->addQuestionInstanceConstraints($this);
+				}
 			}
 		}
 	}
@@ -1458,6 +1461,33 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 		return $this->getLocalDataImpl($name);
+	}
+	public function startMultiStepSession() {
+		$q = $this->question;
+		$slots = $q->getSlots();
+		$hasMultistep = false;
+		{
+			$_g = 0;
+			while($_g < $slots->length) {
+				$s = $slots[$_g];
+				++$_g;
+				if($s->getSyntax()->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH_MULTISTEP) {
+					$hasMultistep = true;
+					break;
+				}
+				unset($s);
+			}
+		}
+		if($hasMultistep) {
+			$listener = new com_wiris_quizzes_impl_MultistepSessionStartListener($this);
+			$payload = new Hash();
+			$payload->set("question", $q->serialize());
+			$payload->set("randomSeed", $this->userData->randomSeed);
+			$path = "multistep/start/v5";
+			$http = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getHttpObject($listener, com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$API_URL) . "/" . $path, new com_wiris_quizzes_impl_ServiceProxyRoute("api", $path), com_wiris_util_json_JSon::encode($payload), "application/json");
+			$http->setAsync(false);
+			$http->request(true);
+		}
 	}
 	public function setLocalDataImpl($name, $value, $parseHandwritingConstraints) {
 		if($this->localData === null) {

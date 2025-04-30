@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'de', version '4.1'.
+ * Strings for component 'organizer', language 'de', version '4.4'.
  *
  * @package     organizer
  * @category    string
@@ -176,7 +176,7 @@ $string['btn_remind'] = 'Erinnerung senden';
 $string['btn_reregister'] = 'Ummelden';
 $string['btn_save'] = 'Kommentar speichern';
 $string['btn_send'] = 'Senden';
-$string['btn_sendall'] = 'Erinnerungen an alle Teilnehmer/innen mit nicht genügend Buchungen versenden';
+$string['btn_sendall'] = 'Erinnerungen an alle Teilnehmer/innen mit nicht genügend Buchungen versenden:';
 $string['btn_start'] = 'Start';
 $string['btn_unqueue'] = 'Aus Warteliste entfernen';
 $string['btn_unregister'] = 'Abmelden';
@@ -844,7 +844,7 @@ $string['register_notify_teacher:unregister:group:smallmessage'] = 'Teilnehmer/i
 $string['register_notify_teacher:unregister:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Gruppe abgemeldet';
 $string['register_notify_teacher:unregister:smallmessage'] = 'Teilnehmer/in {$a->sendername} hat sich vom Zeitslot am {$a->date} um {$a->time} im/in {$a->location} abgemeldet.';
 $string['register_notify_teacher:unregister:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Teilnehmer/in abgemeldet';
-$string['register_promotion_student:fullmessage'] = 'Ihre Registrierung für einen Slot wurde vom Status "Warteliste" in "Gebucht" geändert.';
+$string['register_promotion_student:fullmessage'] = 'Ihre Registrierung für einen Termin wurde vom Status "Warteliste" in "Gebucht" geändert.';
 $string['register_promotion_student:group:fullmessage'] = 'Ihre Gruppenregistrierung für einen Termin wurde vom Status "Warteliste" in den Status "Gebucht" geändert.';
 $string['register_promotion_student:group:smallmessage'] = 'Ihre Gruppenregistrierung für einen Termin wurde vom Status "Warteliste" in den Status "Gebucht" geändert.';
 $string['register_promotion_student:group:subject'] = 'Moodle Terminplaner: Gruppen-Termin von Warteliste nachgerückt';
@@ -934,6 +934,8 @@ $string['status_help'] = 'Derzeitiger Status des Termins.';
 $string['status_no_entries'] = 'Für diesen Terminplaner sind keine Teilnehmer/innen angemeldet.';
 $string['stroptimal'] = 'optimal';
 $string['studentcomment_title'] = 'Kommentare Teilnehmer/innen';
+$string['synchronizegroupmembers'] = 'Gruppenmitglieder synchronisieren';
+$string['synchronizegroupmembers_help'] = 'Wenn sich die Mitglieder einer Gruppe ändern, wird dies automatisch bei den gebuchten Terminen berücksichtigt.';
 $string['taballapp'] = 'Termine';
 $string['tabstatus'] = 'Registrierungsstatus';
 $string['tabstud'] = 'Teilnehmer/innen Ansicht';
@@ -993,6 +995,8 @@ $string['trainerid_help'] = 'Markieren Sie den/die für den Termin zuständige/n
 $string['unavailableslot'] = 'Dieser Slot ist verfügbar ab';
 $string['unknown'] = 'Unbekannt';
 $string['userslots_mingreatermax'] = 'Die Minimalanzahl von Buchungen ist höher als die Maximalanzahl.';
+$string['userslotsdailymax'] = 'Maximale Anzahl der Buchungen pro Person oder pro Gruppe pro Tag.';
+$string['userslotsdailymax_help'] = 'Anzahl der Buchungen, die eine Person oder Gruppe pro Tag vornehmen kann. \'0\' bedeutet, dass es keine Begrenzung gibt.';
 $string['userslotsmax'] = 'Maximum Buchungen';
 $string['userslotsmax_help'] = 'Die Anzahl an möglichen Buchungen, die Teilnehmer/innen bzw. Gruppen buchen dürfen.';
 $string['userslotsmin'] = 'Minimum Buchungen';

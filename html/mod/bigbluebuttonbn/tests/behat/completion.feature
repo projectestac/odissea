@@ -2,7 +2,7 @@
 Feature: As a user I can complete a BigblueButtonBN activity by usual or custom criteria
 
   Background:
-    Given I accept dpa and enable bigbluebuttonbn plugin
+    Given I enable "bigbluebuttonbn" "mod" plugin
     And the following "courses" exist:
       | fullname    | shortname | category | enablecompletion |
       | Test course | C1        | 0        | 1                |
@@ -21,8 +21,8 @@ Feature: As a user I can complete a BigblueButtonBN activity by usual or custom 
     When I click on "Settings" "link"
     And I expand all fieldsets
     And I set the following fields to these values:
-      | Completion tracking | Show activity as complete when conditions are met |
-      | Require view        | 1                                                 |
+      | Add requirements         | 1                  |
+      | View the activity   | 1                                                 |
     And I press "Save and display"
     And I log out
     And I am on the "RoomRecordings" "bigbluebuttonbn activity" page logged in as traverst
@@ -37,8 +37,8 @@ Feature: As a user I can complete a BigblueButtonBN activity by usual or custom 
     And I click on "Settings" "link"
     And I expand all fieldsets
     And I set the following fields to these values:
-      | Completion tracking | Show activity as complete when conditions are met |
-      | Chats               | 1                                                 |
+      | Add requirements | 1 |
+      | Chats            | 1 |
     And I press "Save and display"
     # We start the meeting here so to make sure that meta_analytics-callback-url is set.
     And the following "mod_bigbluebuttonbn > meeting" exists:

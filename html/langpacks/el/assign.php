@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'el', version '4.1'.
+ * Strings for component 'assign', language 'el', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Δεν έχετε κάνει ακόμη υπο�
 $string['allocatedmarker'] = 'Βαθμολογητής που εκχωρήθηκε';
 $string['allocatedmarker_help'] = 'Βαθμολογητής που εκχωρήθηκε για αυτή την υποβολή.';
 $string['allowsubmissions'] = 'Επέτρεψε στο χρήστη να συνεχίζει να προσθέτει υποβολές σε αυτή την εργασία.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Τα στοιχεία της εργασίας και η φόρμα υποβολής θα είναι διαθέσιμα από το <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Ημερομηνία έναρξης υποβολών';
 $string['allowsubmissionsfromdate_help'] = 'Εάν ενεργοποιηθεί, οι μαθητές δεν θα μπορούν να υποβάλουν πριν από αυτήν την ημερομηνία. Εάν απενεργοποιηθεί, οι μαθητές θα μπορούν να ξεκινήσουν αμέσως την υποβολή τους.';
-$string['allowsubmissionsfromdatesummary'] = 'Για αυτή την ανάθεση θα γίνουν δεκτές υποβολές από <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Να επιτρέπονται αλλαγές στην υποβολή';
 $string['alwaysshowdescription'] = 'Εμφάνιση περιγραφής πάντα';
 $string['alwaysshowdescription_help'] = 'Αν απενεργοποιηθεί, η περιγραφή της ανάθεσης εργασίας παραπάνω θα γίνει ορατή για τους μαθητές μόνο κατά την ημερομηνία «Ημερομηνία έναρξης υποβολών» και μετά.';
@@ -131,7 +129,7 @@ $string['collapsegradepanel'] = 'Σύμπτυξη πίνακα βαθμών';
 $string['collapsereviewpanel'] = 'Σύμπτυξη πίνακα εξέτασης';
 $string['comment'] = 'Σχόλιο';
 $string['completiondetail:submit'] = 'Κάντε μια υποβολή';
-$string['completionsubmit'] = 'Ο μαθητής πρέπει να υποβάλλει στη δραστηριότητα για να την ολοκληρώσει';
+$string['completionsubmit'] = 'Κάντε μια υποβολή';
 $string['configshowrecentsubmissions'] = 'Όλοι μπορούν να δουν ειδοποιήσεις υποβολών σε πρόσφατες αναφορές δραστηριοτήτων.';
 $string['confirmbatchgradingoperation'] = 'Είστε βέβαιοι ότι θέλετε {$a->operation} για {$a->count} μαθητές;';
 $string['confirmstart'] = 'Έχετε {$a} για να ολοκληρώσετε αυτή την εργασία. Όταν ξεκινήσετε, το χρονόμετρο θα αρχίσει να μετρά αντίστροφα και δεν μπορεί να διακοπεί.';
@@ -443,8 +441,6 @@ $string['quickgrading_help'] = 'Η γρήγορη βαθμολόγηση σας 
 $string['quickgradingchangessaved'] = 'Οι αλλαγές στην βαθμολογία αποθηκεύτηκαν';
 $string['quickgradingresult'] = 'Γρήγορη βαθμολόγηση';
 $string['recordid'] = 'Αναγνωριστικό';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} μετά την έναρξη του μαθήματος';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} πριν από την έναρξη του μαθήματος';
 $string['relativedatessubmissiontimeleft'] = 'Υπολογισμένο για κάθε μαθητή';
 $string['removeallgroupoverrides'] = 'Διαγραφή όλων των παρακάμψεων ομάδας';
 $string['removealluseroverrides'] = 'Διαγραφή όλων των παρακάμψεων χρήστη';
@@ -456,7 +452,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Είστε βέβαιοι ό�
 $string['removesubmissionforstudent'] = 'Διαγραφή υποβολής για μαθητή: (id={$a->id}, fullname={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Η επιλογή ξανα-ανοίγματος μέχρι να επιτευχθεί επιτυχία δεν είναι συμβατή με τις ανώνυμες υποβολές, επειδή οι βαθμοί δεν εμφανίζονται στο βαθμολόγιο μέχρι να αποκαλυφθούν οι ταυτότητες των μαθητών.';
 $string['requireallteammemberssubmit'] = 'Απαιτείται η υποβολή όλων των μελών της ομάδας';
-$string['requireallteammemberssubmit_help'] = 'Εάν ενεργοποιηθεί, όλα τα μέλη της ομάδας μαθητών πρέπει να κάνουν κλικ στο κουμπί αποστολής για αυτήν την εργασία πριν να ολοκληρωθεί η υποβολή ομάδας. Εάν είναι απενεργοποιηθεί, η υποβολή ομάδας θα θεωρείται ότι ολοκληρώθηκε μόλις ένα οποιοδήποτε μέλος της ομάδας μαθητών κάνει κλικ στο κουμπί αποστολής.';
+$string['requireallteammemberssubmit_help'] = 'Αυτή η ρύθμιση πρέπει να χρησιμοποιείται σε συνδυασμό με τη ρύθμιση «Να απαιτείται από τους μαθητές να κάνουν κλικ στο κουμπί υποβολής» των ρυθμίσεων υποβολής.
+
+Εάν ενεργοποιηθεί, όλα τα μέλη της ομάδας πρέπει να κάνουν κλικ στο κουμπί υποβολής για να θεωρηθεί ότι η ομαδική υποβολή έχει υποβληθεί. Εάν απενεργοποιηθεί, κάθε μέλος της ομάδας μπορεί να κάνει κλικ στο κουμπί υποβολής.';
 $string['requiresubmissionstatement'] = 'Να απαιτείται οι μαθητές να αποδεχθούν τη δήλωση υποβολής';
 $string['requiresubmissionstatement_help'] = 'Να απαιτείται οι μαθητές να αποδεχθούν τη δήλωση υποβολής για όλες τις υποβολές σε αυτή την εργασία.';
 $string['revealidentities'] = 'Αποκάλυψη των ταυτοτήτων των μαθητών';
@@ -531,6 +529,7 @@ $string['submissionstatement'] = 'Δήλωση υποβολής';
 $string['submissionstatement_help'] = 'Δήλωση που κάθε μαθητής πρέπει να αποδεχθεί προκειμένου να υποβάλει την εργασία του.';
 $string['submissionstatementacceptedlog'] = 'Δήλωση υποβολής αποδεκτή από τον χρήστη {$a}';
 $string['submissionstatementdefault'] = 'Είμαι ο αποκλειστικός συγγραφέας αυτής της εργασίας που υποβάλω, εκτός από τα τμήματα που σαφώς έχω αναφέρει την πηγή τους.';
+$string['submissionstatementrequired'] = 'Απαιτείται να αποδεχτείτε αυτή τη δήλωση πριν υποβάλετε την αίτησή σας.';
 $string['submissionstatementteamsubmission'] = 'Δήλωση υποβολής ομάδας';
 $string['submissionstatementteamsubmission_help'] = 'Δήλωση που κάθε μαθητής πρέπει να αποδεχθεί για να υποβάλει την εργασία της ομάδας του.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Δήλωση υποβολής ομάδας, όταν υποβάλλουν όλα τα μέλη της ομάδας';

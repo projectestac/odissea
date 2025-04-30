@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'nl', version '4.1'.
+ * Strings for component 'gradereport_user', language 'nl', version '4.4'.
  *
  * @package     gradereport_user
  * @category    string
@@ -33,5 +33,6 @@ $string['pluginname'] = 'Rapport';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Of u rapport als huidige gebruiker of een andere gebruiker in de cijferlijstrapporten wilt bekijken';
 $string['tablesummary'] = 'De tabel is geschikt al een lijst met beoordeelde items, waaronder ook categorieën van beoordeelde items. Wanneer items in een categorie ondergebracht zijn, worden zij ook zo getoond.';
 $string['user:view'] = 'Bekijk gebruikersrapport';
+$string['userreport_user'] = 'Gebruikersrapport';
 $string['userreportdesc'] = 'Gebruikersrapporten bevatten de cijfers van een gebruiker, feedback en het cursustotaal.';
-$string['userreports'] = 'Selecteer hierboven een gebruiker om hun rapport te bekijken';
+$string['userreports'] = 'Zoek een gebruiker waarvan je het rapport wil bekijken';

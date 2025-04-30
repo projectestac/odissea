@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'uk', version '4.1'.
+ * Strings for component 'availability_group', language 'uk', version '4.4'.
  *
  * @package     availability_group
  * @category    string
@@ -31,8 +31,8 @@ $string['error_selectgroup'] = 'Вам потрібно вибрати груп�
 $string['missing'] = '(відсутня група)';
 $string['pluginname'] = 'Обмеження за групою';
 $string['privacy:metadata'] = 'Обмеження груповим плагіном не зберігає жодних особистих даних.';
-$string['requires_anygroup'] = 'Ви не належите до будь-якої групи';
-$string['requires_group'] = 'Ви не належите до групи <strong>{$a}</strong>';
-$string['requires_notanygroup'] = 'Ви належите до якоїсь групи';
-$string['requires_notgroup'] = 'Ви належите до групи <strong>{$a}</strong>';
+$string['requires_anygroup'] = 'Ви належите до будь-якої групи';
+$string['requires_group'] = 'Ви належите до групи <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'Ви не належите до якоїсь групи';
+$string['requires_notgroup'] = 'Ви не належите до групи <strong>{$a}</strong>';
 $string['title'] = 'Група';

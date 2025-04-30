@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ur', version '4.1'.
+ * Strings for component 'qtype_multichoice', language 'ur', version '4.4'.
  *
  * @package     qtype_multichoice
  * @category    string

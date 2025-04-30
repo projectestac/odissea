@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ar', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'ar', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'معاينة {$a} من النتائج';
 $string['ajaxchoosescale'] = 'إختر';
 $string['ajaxclicktoclose'] = 'انقر هذا المربع لحذفه';
 $string['ajaxerror'] = 'خطأ';
 $string['ajaxfailedupdate'] = 'تعذر تحديث [1] لـ [2]';
 $string['ajaxfieldchanged'] = 'الحقل الذي تقوم بتحريره حالياً قد تغير، هل ترغب باستعمال القيمة المحدثة؟';
+$string['aria:dropdowncolumns'] = 'أعمدة مطوية تم العثور عليها';
+$string['cellactions'] = 'إجراءات الخلية';
+$string['clearall'] = 'إخلاء الكل';
+$string['clearsearch'] = 'إخلاء خانة البحث من المستخدمين';
+$string['collapsedcolumns'] = 'الأعمدة المطوية <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'تحرير تقرير المقيِّم';
 $string['eventgradereportviewed'] = 'تقرير مقيم تمت معاينته';
 $string['grader:manage'] = 'إدارة تقرير المقيم';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'فيما إذ�
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'فيما إذا كان ينبغي إظهار صورة المستخدم بجوار اسمه';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'عدد الطلبة المعروضين في الصفحة في تقرير المقيِّم';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'لديك بعض التصنيفات المطوية في سجل التقديرات للمساق الدراسي "{$a->name}"';
+$string['reopencolumn'] = 'توسيع عمود {$a}';
 $string['summarygrader'] = 'جدول فيه أسماء الطلاب في العمود الأول مع النشاطات القابلة للتقييم منظمة في مجموعات حسب المساق والتصنيف عند رأسه.';
 $string['useractivityfeedback'] = 'إفادة {$a}';
 $string['useractivitygrade'] = 'علامة {$a}';

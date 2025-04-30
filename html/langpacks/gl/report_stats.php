@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'gl', version '4.1'.
+ * Strings for component 'report_stats', language 'gl', version '4.4'.
  *
  * @package     report_stats
  * @category    string
@@ -32,7 +32,7 @@ $string['page-report-stats-index'] = 'Informe estatístico do curso';
 $string['page-report-stats-user'] = 'Informe estatístico do usuario do curso';
 $string['page-report-stats-x'] = 'Calquera informe estatístico';
 $string['pluginname'] = 'Estatísticas';
-$string['privacy:dailypath'] = 'Estadísticas diarias';
+$string['privacy:dailypath'] = 'Estatísticas diarias';
 $string['privacy:metadata'] = 'O engadido de estatísticas non almacena ningún dato persoal.';
 $string['privacy:metadata:courseid'] = 'Un identificador para un curso';
 $string['privacy:metadata:roleid'] = 'O ID do rol do usuario.';

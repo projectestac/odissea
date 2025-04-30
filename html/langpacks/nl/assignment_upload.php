@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'nl', version '4.1'.
+ * Strings for component 'assignment_upload', language 'nl', version '4.4'.
  *
  * @package     assignment_upload
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_submitted'] = 'Er is een upload-opdracht ingestuurd.';
-$string['event_assessable_uploaded'] = 'Er is een bestand geüploaded.';
+$string['event_assessable_uploaded'] = 'Er is een bestand geüpload.';
 $string['pluginname'] = 'Upload';
 $string['privacy:metadata'] = 'De upload opdrachtplugin bewaart geen persoonlijke gegevens.';

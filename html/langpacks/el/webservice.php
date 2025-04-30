@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'el', version '4.1'.
+ * Strings for component 'webservice', language 'el', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -143,22 +143,6 @@ $string['postrestparam'] = 'Κώδικας PHP για REST (αίτημα POST)';
 $string['potusers'] = 'Μη εξουσιοδοτημένοι χρήστες';
 $string['potusersmatching'] = 'Μη εξουσιοδοτημένοι χρήστες που ταιριάζουν';
 $string['print'] = 'Εκτύπωση όλων';
-$string['privacy:metadata:serviceusers'] = 'Λίστα χρηστών που μπορούν να χρησιμοποιήσουν μια συγκεκριμένη εξωτερική υπηρεσία';
-$string['privacy:metadata:serviceusers:iprestriction'] = 'Μόνο αυτή η διεύθυνση IP θα χρησιμοποιεί την υπηρεσία';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Η ημερομηνία δημιουργίας του αρχείου';
-$string['privacy:metadata:serviceusers:userid'] = 'Το αναγνωριστικό του χρήστη';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Η ημερομηνία μέχρι την οποία η εξουσιοδότηση είναι έγκυρη';
-$string['privacy:metadata:tokens'] = 'Ένα ιστορικό των κουπονιών για αλληλεπίδραση με το Moodle μέσω υπηρεσιών ιστού ή εφαρμογών κινητού.';
-$string['privacy:metadata:tokens:creatorid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε το κουπόνι';
-$string['privacy:metadata:tokens:iprestriction'] = 'Το IP αυτό περιορίζεται να χρησιμοποιεί μόνο αυτό το κουπόνι';
-$string['privacy:metadata:tokens:lastaccess'] = 'Η ημερομηνία κατά την οποία χρησιμοποιήθηκε τελευταία φορά το κουπόνι';
-$string['privacy:metadata:tokens:privatetoken'] = 'Ένα πιο ιδιωτικό κουπόνι χρησιμοποιείται περιστασιακά για την επικύρωση ορισμένων λειτουργιών, όπως η ενιαία αυθεντικοποίηση SSO';
-$string['privacy:metadata:tokens:timecreated'] = 'Η ημερομηνία κατά την οποία δημιουργήθηκε το κουπόνι';
-$string['privacy:metadata:tokens:token'] = 'Το κουπόνι του χρήστη';
-$string['privacy:metadata:tokens:tokentype'] = 'Ο τύπος του κουπονιού';
-$string['privacy:metadata:tokens:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου είναι το κουπόνι';
-$string['privacy:metadata:tokens:validuntil'] = 'Η ημερομηνία κατά την οποία το κουπόνι καθίσταται άκυρο';
-$string['privacy:request:notexportedsecurity'] = 'Δεν εξήχθη για λόγους ασφαλείας';
 $string['protocol'] = 'Πρωτόκολλο';
 $string['removefunction'] = 'Αφαίρεση';
 $string['removefunctionconfirm'] = 'Θέλετε πραγματικά να καταργήσετε τη λειτουργία «{$a->function}» από την υπηρεσία «{$a->service}»;';
@@ -226,8 +210,6 @@ $string['userasclientsdescription'] = 'Τα παρακάτω βήματα σας
 $string['usermissingcaps'] = 'Δυνατότητες που λείπουν: {$a}';
 $string['usernameorid'] = 'Όνομα χρήστη / αναγνωριστικό χρήστη';
 $string['usernameorid_help'] = 'Εισαγάγετε ένα όνομα χρήστη ή ένα αναγνωριστικό χρήστη.';
-$string['usernameoridnousererror'] = 'Δεν βρέθηκαν χρήστες με αυτό το όνομα χρήστη / αναγνωριστικό χρήστη.';
-$string['usernameoridoccurenceerror'] = 'Έχουν βρεθεί περισσότεροι από ένας χρήστες με αυτό το όνομα χρήστη. Εισαγάγετε το αναγνωριστικό χρήστη.';
 $string['usernotallowed'] = 'Ο χρήστης δεν επιτρέπεται για αυτήν την υπηρεσία. Πρώτα πρέπει να επιτρέψετε αυτόν τον χρήστη στην σελίδα διαχείρισης επιτρεπόμενων χρηστών του {$a}.';
 $string['userservices'] = 'Υπηρεσίες χρηστών: {$a}';
 $string['usersettingssaved'] = 'Οι ρυθμίσεις χρήστη αποθηκεύτηκαν';

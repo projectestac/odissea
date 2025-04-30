@@ -1,6 +1,15 @@
 This files describes API changes in tagging, information provided
 here is intended especially for developers.
 
+=== 4.4 ===
+
+* New additional property 'viewurl' has been added to the pre-defined structure in tag_item_exporter. This property
+  represents the URL to view a given tag.
+* The `core_tag_manage_table` class has been deprecated, in favour of new report builder implementation
+* The `core_tag\taglist` class now includes a new property called `displaylink`, which has a default value of `true`.
+  When `displaylink` is set to `true`, the tag name will be displayed as a clickable hyperlink. If `displaylink` is set to `false`,
+  the tag name will be rendered as plain text instead.
+
 === 3.6 ===
 
 * The following functions have been finally deprecated and can not be used anymore:

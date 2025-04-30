@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'sv', version '4.1'.
+ * Strings for component 'offlinequiz', language 'sv', version '4.4'.
  *
  * @package     offlinequiz
  * @category    string
@@ -346,7 +346,6 @@ $string['noreview'] = 'Du är inte behörig att granska detta offline-kunskapste
 $string['noscannedpage'] = 'Det finns ingen inskannad sida med id {$a}!';
 $string['notagselected'] = 'Ingen etikett vald';
 $string['nothingtodo'] = 'Inget att göra!';
-$string['notonattendancelist'] = 'Ej på deltagarlistan:';
 $string['notxtfile'] = 'Ej TXT-fil';
 $string['notyetgraded'] = 'Ännu ej betygsatt';
 $string['nozipfile'] = 'Ingen ZIP-fil';
@@ -448,6 +447,7 @@ $string['printstudycodefield_help'] = 'Om markerat kommer studiekoden visas på 
 $string['privacy:data_folder_name'] = 'Offlinetest-data';
 $string['privacy:metadata:core_files'] = 'Offlinetest använder fil-API:t för att lagra de genererade frågebladen, svarsbladen och korrigeringsbladen samt de ifyllda svarsbladen.';
 $string['privacy:metadata:core_question'] = 'Offlinequiz använder fråge-API:t för att spara frågorna för kunskapstesten.';
+$string['privacy:metadata:mod_quiz'] = 'Offlinetest använder test-API:t för att spara resultat från kunskapstesten.';
 $string['privacy:metadata:offlinequiz'] = 'Tabellen offline-kunskapstest sparar all information som är specifik för en offlinekunskapstest-instans.';
 $string['privacy:metadata:offlinequiz:course'] = 'Kolumnen "course" i tabellen "offlinequiz" sparar i vilken kurs detta offline-kunskapstest lagras.';
 $string['privacy:metadata:offlinequiz:decimalpoints'] = 'Antalet decimaler som ska beräknas för betygen.';

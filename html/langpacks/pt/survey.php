@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', version '4.1'.
+ * Strings for component 'survey', language 'pt', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Real';
 $string['actualclass'] = 'Turma real';
 $string['actualstudent'] = '{$a} real';
 $string['allquestionrequireanswer'] = 'Todas as questões são de resposta obrigatória.';
-$string['allquestions'] = 'Todas as questões, por ordem, de todos os alunos';
 $string['allscales'] = 'Todas as escalas, todos os alunos';
 $string['alreadysubmitted'] = 'Já submeteu a sua resposta a este inquérito';
 $string['analysisof'] = 'Análise de {$a}';
@@ -97,7 +96,6 @@ $string['ciq5'] = 'Que evento o surpreendeu mais?';
 $string['ciq5short'] = 'Momento surpreendente';
 $string['ciqintro'] = 'Tendo em conta os eventos recentes da disciplina, responda às seguintes questões.';
 $string['ciqname'] = 'Incidentes críticos';
-$string['clicktocontinue'] = 'Clique aqui para continuar';
 $string['clicktocontinuecheck'] = 'Clique aqui para verificar e continuar';
 $string['colles1'] = 'A minha aprendizagem concentra-se nos assuntos que me interessam.';
 $string['colles10'] = 'Peço aos outros alunos que me expliquem as suas ideias.';
@@ -191,7 +189,7 @@ As suas respostas cuidadosamente consideradas ajudar-nos-ão a melhorar, no futu
 Muito obrigado pela sua colaboração.';
 $string['collespname'] = 'COLLES (Ideal)';
 $string['completiondetail:submit'] = 'Submeter respostas';
-$string['completionsubmit'] = 'O aluno tem de realizar uma submissão';
+$string['completionsubmit'] = 'Fazer uma submissão';
 $string['customintro'] = 'Descrição';
 $string['deleteallanswers'] = 'Apagar todas as respostas ao inquérito';
 $string['deleteanalysis'] = 'Apagar análise de respostas';
@@ -285,4 +283,3 @@ $string['surveytype_help'] = 'Existem 3 tipos de inquéritos disponíveis:
 $string['surveytype_link'] = 'mod/inquérito/mod';
 $string['thanksforanswers'] = '{$a}, muito obrigado por responder ao inquérito';
 $string['time'] = 'Data/hora';
-$string['viewsurveyresponses'] = 'Ver {$a} respostas ao inquérito';

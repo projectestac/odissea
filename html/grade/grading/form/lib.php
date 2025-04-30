@@ -695,13 +695,13 @@ abstract class gradingform_controller {
      * to the nearest int. Positive $gradingtype means that range 0..$gradingtype
      * is used for the grades and in this case grade does not have to be rounded.
      *
-     * Sometimes modules always expect grade to be rounded (like mod_assignment does).
+     * Sometimes modules always expect grade to be rounded (like mod_assign does).
      *
      * @param array $graderange array where first _key_ is the minimum grade and the
      *     last key is the maximum grade.
      * @param bool $allowgradedecimals if decimal values are allowed as grades.
      */
-    public final function set_grade_range(array $graderange, $allowgradedecimals = false) {
+    final public function set_grade_range(array $graderange, $allowgradedecimals = false) {
         $this->graderange = $graderange;
         $this->allowgradedecimals = $allowgradedecimals;
     }
@@ -711,7 +711,7 @@ abstract class gradingform_controller {
      *
      * @return array
      */
-    public final function get_grade_range() {
+    final public function get_grade_range() {
         if (empty($this->graderange)) {
             return array();
         }
@@ -723,7 +723,7 @@ abstract class gradingform_controller {
      *
      * @return bool
      */
-    public final function get_allow_grade_decimals() {
+    final public function get_allow_grade_decimals() {
         return $this->allowgradedecimals;
     }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'fr', version '4.1'.
+ * Strings for component 'theme_boost', language 'fr', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Préréglage de thème';
 $string['preset_desc'] = 'Veuillez choisir un préréglage pour modifier l’aspect du thème.';
 $string['presetfiles'] = 'Fichiers de préréglages additionnels pour le thème';
-$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pour des informations sur la façon de créer et partager vos propres fichiers de préréglages et consultez le <a href="https://archive.moodle.net/boost">catalogue des fichiers de préréglages</a> que d’autres utilisateurs ont partagés.';
+$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pour des informations sur la façon de créer et partager vos propres fichiers de préréglages et consultez le <a href="https://moodle.net/search?q=boost+presets">catalogue des fichiers de préréglages</a> que d’autres utilisateurs ont partagés.';
 $string['privacy:drawerblockclosed'] = 'Le réglage actuel pour le tiroir des blocs est « fermé ».';
 $string['privacy:drawerblockopen'] = 'Le réglage actuel pour le tiroir des blocs est « ourvert ».';
 $string['privacy:drawerindexclosed'] = 'Le réglage actuel pour le tiroir de l’index du cours est « fermé ».';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Code SCSS initial';
 $string['rawscsspre_desc'] = 'Ce champ permet d’indiquer du code SCSS d’initialisation, qui sera injecté dans la feuille de styles avant toute autre définition. La plupart du temps, ce code sera utilisé pour définir des variables.';
 $string['region-side-pre'] = 'Droite';
 $string['showfooter'] = 'Afficher le pied de page';
-$string['totop'] = 'Vers le haut de page';
 $string['unaddableblocks'] = 'Blocs inutiles';
 $string['unaddableblocks_desc'] = 'Les blocs de cette liste ne sont pas utiles avec ce thème et ne seront pas mentionnés dans le menu « Ajouter un bloc ».';

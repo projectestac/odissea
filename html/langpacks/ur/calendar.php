@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ur', version '4.1'.
+ * Strings for component 'calendar', language 'ur', version '4.4'.
  *
  * @package     calendar
  * @category    string
@@ -34,7 +34,6 @@ $string['calendar'] = 'کیلنڈر';
 $string['calendarheading'] = '{$a} کیلنڈر';
 $string['calendarpreferences'] = 'کیلنڈر کی ترجیحات';
 $string['calendartypes'] = 'کیلنڈر کی اقسام';
-$string['calendarurl'] = 'کیلنڈر URL: {$a}';
 $string['category'] = 'زمرہ';
 $string['categoryevent'] = 'زمرہ کی تقریب';
 $string['categoryevents'] = 'زمرہ کی تقاریب';
@@ -165,7 +164,6 @@ $string['importcalendar'] = 'کیلنڈر درآمد کریں';
 $string['importcalendarfrom'] = 'سے درآمد کریں';
 $string['importcalendarheading'] = 'کیلنڈر درآمد کریں۔۔۔';
 $string['importfromfile'] = 'کیلنڈر فائل (.ics)';
-$string['importfrominstructions'] = 'براہ کرم یا تو ریموٹ کیلنڈر کو یو آر ایل فراہم کریں، یا فائل اپ لوڈ کریں۔';
 $string['importfromurl'] = 'کیلنڈر URL';
 $string['invalideventtype'] = 'آپ نے جو تقریب کی قسم منتخب کی ہے وہ غلط ہے۔';
 $string['invalidtimedurationminutes'] = 'آپ کے درج کردہ منٹوں میں دورانیہ غلط ہے۔ براہ کرم 0 سے زیادہ منٹ میں دورانیہ درج کریں یا کوئی مدت نہیں منتخب کریں۔';
@@ -177,7 +175,6 @@ $string['manyevents'] = '{$a} تقاریب';
 $string['mon'] = 'سوموار';
 $string['monday'] = 'سوموار';
 $string['monthly'] = 'ماهوار';
-$string['monthlyview'] = 'ماہوار نظارہ';
 $string['monthnext'] = 'اگلے ماہ';
 $string['monthprev'] = 'پچھلے مہینے';
 $string['monththis'] = 'حالیہ ماہ';

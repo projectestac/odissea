@@ -25,33 +25,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Callback to add head elements.
- *
- * @return str valid html head content
- * @since  Moodle 3.3
- */
-function tool_mobile_before_standard_html_head() {
-    global $CFG, $PAGE;
-    $output = '';
-    // Smart App Banners meta tag is only displayed if mobile services are enabled and configured.
-    if (!empty($CFG->enablemobilewebservice)) {
-        $mobilesettings = get_config('tool_mobile');
-        if (!empty($mobilesettings->enablesmartappbanners)) {
-            if (!empty($mobilesettings->iosappid)) {
-                $output .= '<meta name="apple-itunes-app" content="app-id=' . s($mobilesettings->iosappid) . ', ';
-                $output .= 'app-argument=' . $PAGE->url->out() . '"/>';
-            }
-
-            if (!empty($mobilesettings->androidappid)) {
-                $mobilemanifesturl = "$CFG->wwwroot/$CFG->admin/tool/mobile/mobile.webmanifest.php";
-                $output .= '<link rel="manifest" href="'.$mobilemanifesturl.'" />';
-            }
-        }
-    }
-    return $output;
-}
-
-/**
  * Generate the app download url to promote moodle mobile.
  *
  * @return moodle_url|void App download moodle_url object or return if setuplink is not set.
@@ -81,6 +54,12 @@ function tool_mobile_create_app_download_url() {
 
     if (!empty($mobilesettings->androidappid)) {
         $downloadurl->param('androidappid', $mobilesettings->androidappid);
+    }
+
+    // For privacy reasons, add siteurl param only if the site is registered.
+    // This is to implement Google Play Referrer (so the site url is automatically populated in the app after installation).
+    if (\core\hub\registration::is_registered()) {
+        $downloadurl->param('siteurl', $CFG->wwwroot);
     }
 
     return $downloadurl;
@@ -213,21 +192,6 @@ function tool_mobile_myprofile_navigation(\core_user\output\myprofile\tree $tree
 }
 
 /**
- * Callback to add footer elements.
- *
- * @return str valid html footer content
- * @since  Moodle 3.4
- */
-function tool_mobile_standard_footer_html() {
-    global $CFG;
-    $output = '';
-    if (!empty($CFG->enablemobilewebservice) && $url = tool_mobile_create_app_download_url()) {
-        $output .= html_writer::link($url, get_string('getmoodleonyourmobile', 'tool_mobile'), ['class' => 'mobilelink']);
-    }
-    return $output;
-}
-
-/**
  * Callback to be able to change a message/notification data per processor.
  *
  * @param  str $procname    processor name
@@ -263,18 +227,5 @@ function tool_mobile_pre_processor_message_send($procname, $data) {
         }
 
         $data->fullmessagehtml .= html_writer::tag('p', get_string('readingthisemailgettheapp', 'tool_mobile', $url->out()));
-    }
-}
-
-/**
- * Callback to add headers before the HTTP headers are sent.
- *
- */
-function tool_mobile_before_http_headers() {
-    global $CFG;
-
-    // Set Partitioned and Secure attributes to the MoodleSession cookie if the user is using the Moodle app.
-    if (\core_useragent::is_moodle_app()) {
-        \core\session\utility\cookie_helper::add_attributes_to_cookie_response_header('MoodleSession'.$CFG->sessioncookie, ['Secure', 'Partitioned']);
     }
 }

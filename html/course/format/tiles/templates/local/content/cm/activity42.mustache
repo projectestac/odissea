@@ -64,73 +64,18 @@
                 {{> core_courseformat/local/content/cm/badges }}
             {{/ core_courseformat/local/content/cm/badges }}
         {{/hasname}}
-        {{#cmname}}
-            {{#ismoodle40}}
-            {{! In moodle 4.0 the template was different }}
-                <div class="activity-instance d-flex flex-column">
-                    <div class="activitytitle media {{textclasses}} modtype_{{modname}} position-relative align-self-start">
-                        {{^is_label}}
-                            {{^ismoodle42minus}}
-                                <div class="activityiconcontainer {{purpose}} courseicon align-self-start mr-3">
-                                    <img src="{{{icon}}}" class="activityicon {{iconclass}}"
-                                         alt="{{#ismoodle40}}{{{modname}}}{{/ismoodle40}}{{^ismoodle40}}{{#cleanstr}} activityicon, moodle, {{{pluginname}}} {{/cleanstr}}{{/ismoodle40}}"
-                                    >
-                                </div>
-                            {{/ismoodle42minus}}
-                            {{#ismoodle42minus}}
-                                {{^editing}}
-                                    <div class="activityiconcontainer {{purpose}} courseicon align-self-start mr-3">
-                                        <img src="{{{icon}}}" class="activityicon {{iconclass}}"
-                                             alt="{{{modname}}}"
-                                        >
-                                    </div>
-                                {{/editing}}
-                                {{#editing}}
-                                    {{^ismoodle402minus}}
-                                        {{! In Moodle 4.0.0 - 4.0.2 the icon may be supplied by core if editing as template was different }}
-                                        {{! The "title" template was used }}
-                                        <div class="activityiconcontainer {{purpose}} courseicon align-self-start mr-3">
-                                            <img src="{{{icon}}}" class="activityicon {{iconclass}}"
-                                                 alt="{{{modname}}}"
-                                            >
-                                        </div>
-                                    {{/ismoodle402minus}}
-                                {{/editing}}
-                            {{/ismoodle42minus}}
-                        {{/is_label}}
-                        <div class="media-body align-self-center">
-                            {{#showpluginname}}
-                                <div class="text-uppercase small">
-                                    {{{pluginname}}}
-                                </div>
-                            {{/showpluginname}}
-                            <div class="activityname">
-                                {{#activityname}}
-                                    {{#editing}}
-                                    {{! We use the core template for non subtiles if user is editing, so modals will not be launched}}
-                                        {{$ core/inplace_editable }}
-                                            {{> core/inplace_editable }}
-                                        {{/ core/inplace_editable }}
-                                    {{/editing}}
-                                    {{^editing}}
-                                    {{! If user is not editing, we use this for non subtiles as we need to add data-action for modal launch}}
-                                        <a href="{{url}}"{{#modalType}} data-action="launch-tiles-cm-modal"{{/modalType}} class="aalink stretched-link" onclick="{{onclick}}"><span class="instancename">{{{cmtitle}}}</span></a>
-                                    {{/editing}}
-                                {{/activityname}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {{/ismoodle40}}
-            {{^ismoodle40}}
+        <div class="tiles-activity-container ml-2"
+             {{#clickable}}data-cmid="{{cmid}}" data-modinstance="{{modinstance}}" data-title="{{{activityname}}}"{{/clickable}}
+        >
+            {{#cmname}}
                 {{$ format_tiles/local/content/cm/cmname }}
                     {{> format_tiles/local/content/cm/cmname }}
                 {{/ format_tiles/local/content/cm/cmname }}
-            {{/ismoodle40}}
-        {{/cmname}}
+            {{/cmname}}
+        </div>
 
         {{#afterlink}}
-            <div class="afterlink d-flex align-items-center ml-3">
+            <div class="afterlink">
                 {{{afterlink}}}
             </div>
         {{/afterlink}}

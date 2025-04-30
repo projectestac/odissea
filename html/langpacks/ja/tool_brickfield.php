@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'ja', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'ja', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -74,7 +74,7 @@ $string['checkdesc:headerh3'] = 'H3ヘッダ (エディタのラージヘッダ�
 $string['checkdesc:headershavetext'] = '認識しやすいようにヘッダにテキストを含む必要があります。';
 $string['checkdesc:iisnotused'] = 'イタリック (i) 要素は使用せず代わりに「em」を使用してください。';
 $string['checkdesc:imgaltisdifferent'] = 'イメージalt (代替) テキストはイメージのファイル名にしないでください。';
-$string['checkdesc:imgaltistoolong'] = 'イメージalt (代替) テキストは最大許容文字数 (半角125文字) を超えないようにしてください。';
+$string['checkdesc:imgaltistoolong'] = 'イメージalt (代替) テキストは画像を説明するのに十分簡潔であることを確認してください。';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'イメージalt (代替) テキストは空にしないでください。イメージに別の場所へのリンクがある場合、特に注意が必要です。';
 $string['checkdesc:imgaltnotplaceholder'] = 'イメージalt (代替) テキストは「image」のような単純なプレースホルダテキストにしないでください。';
 $string['checkdesc:imghasalt'] = 'イメージalt (代替) テキストは意味のない純粋な装飾ではない限りイメージ要素に欠くべきではありません。';
@@ -178,6 +178,7 @@ $string['mobileservice'] = 'モバイルサービス有効 ({$a})';
 $string['module'] = 'モジュール';
 $string['modulename'] = '名称';
 $string['moreinfo'] = '詳細情報';
+$string['newwindowphrases'] = '新しいウィンドウ|新しいウィンドウ|新しいウィンドウ';
 $string['noerrorsfound'] = 'あなたの検索パラメータに一般的なアクセシビリティエラーは見つかりませんでした。おめでとうございます!';
 $string['norecords'] = 'あなたの検索パラメータに該当するレコードは見つかりませんでした。';
 $string['notregistered'] = 'あなたのアクセシビリティツールキットの登録が必要です。';

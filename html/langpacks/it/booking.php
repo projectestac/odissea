@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'it', version '4.1'.
+ * Strings for component 'booking', language 'it', version '4.4'.
  *
  * @package     booking
  * @category    string
@@ -32,38 +32,6 @@ $string['activatemails'] = 'Attiva email (conferme, notifiche e altro)';
 $string['active'] = 'Attiva';
 $string['activitycompletionsuccess'] = 'Tutti gli utenti selezionati sono stati contrassegnati per il completamento dell\'attività';
 $string['activitycompletiontext'] = 'Messaggio da inviare all\'utente al termine dell\'opzione di prenotazione';
-$string['activitycompletiontext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Riepilogo dettagliato dell\'opzione di prenotazione (incl. sessioni e link all\'opzione di prenotazione)</li>
-<li>{gotobookingoption} - Link per l\'opzione di prenotazione</li>
-<li>{status} - Stato della prenotazione</li>
-<li>{participant}</li>
-<li>{email} - Emai dell\'utente</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher} - Nome del primo insegnante</li>
-<li>{teacher} - Lista di tutti gli insegnanti </li>
-<li>{teacherN} - Nome dello specifico insegnante, e.g. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Inserisci il codice QR con l\'ID utente</li>
-<li>{qr_username} - Inserisci il codice QR con l\'ID utente</li>
-<li>{dates} - Orari delle sessioni</li>
-<li>{shorturl} - URL abbreviato dell\'opzione di prenotazione</li>
-<li>{usercalendarurl} - Link per iscriversi al calendario utente (eventi personali)</li>
-<li>{coursecalendarurl} - Link per iscriversi al calendario dei corsi (eventi del corso)</li>
-</ul>';
 $string['activitycompletiontextmessage'] = 'Hai completato la seguente opzione di prenotazione:
 
 {$a->bookingdetails}
@@ -71,22 +39,17 @@ $string['activitycompletiontextmessage'] = 'Hai completato la seguente opzione d
 Vai al corso: {$a->courselink}
 Vedi tutte le opzioni di prenotazione: {$a->bookinglink}';
 $string['activitycompletiontextsubject'] = 'Opzione di prenotazione completata';
-$string['add_optiondate_series'] = 'Crea serie di date';
 $string['addastemplate'] = 'Aggiungi come modello';
 $string['addbookingrule'] = 'Aggiungi regola';
 $string['addcategory'] = 'Modifica categorie';
-$string['addcustomfield'] = 'Aggiungi campo personalizzato';
 $string['addholiday'] = 'Aggiungi festività';
 $string['additionalpricecategories'] = 'Aggiungi o modifica le categorie di prezzo';
 $string['addmorebookings'] = 'Aggiungi ulteriori prenotazioni';
 $string['addnewcategory'] = 'Aggiungi una nuova categoria';
-$string['addnewinstitution'] = 'Aggiungi un\'organizzazione';
-$string['addnewlocation'] = 'Aggiungi un nuovo luogo';
 $string['addnewreporttemplate'] = 'Aggiungi un nuovo modello di report';
 $string['addnewtagtemplate'] = 'Aggiungi un modello di tag';
 $string['addoptiondate'] = 'Aggiungi data';
 $string['addpricecategory'] = 'Aggiungi categoria di prezzo';
-$string['addpricecategory_info'] = 'Puoi aggiungere un\'altra categoria di prezzo';
 $string['address'] = 'Indirizzo';
 $string['addsemester'] = 'Aggiungi semestre';
 $string['addtocalendar'] = 'Aggiungi al calendario del corso';
@@ -129,13 +92,11 @@ $string['aftercompletedtext_help'] = 'Lascia vuoto questo campo per utilizzare i
 <li>{usercalendarurl} - Link per iscriversi al calendario utente (eventi personali)</li>
 <li>{coursecalendarurl} - Link per iscriversi al calendario dei corsi (eventi del corso)</li>
 </ul>';
-$string['agreetobookingpolicy'] = 'Ho letto e accetto le seguenti condizioni di prenotazione';
 $string['alertrecalculate'] = '<b>Attenzione!</b> Tutti i prezzi verranno ricalcolati e tutti i vecchi prezzi verranno sovrascritti.';
 $string['allbookingoptions'] = 'Tutte le opzioni di prenotazione';
 $string['allchangessaved'] = 'Tutte le modifiche sono state salvate.';
 $string['allcomments'] = 'Tutti possono commentare';
 $string['allmailssend'] = 'Tutte le e-mail agli utenti sono state inviate!';
-$string['allowdelete'] = 'Consenti agli utenti di annullare la loro prenotazione da soli';
 $string['allowupdate'] = 'Consenti l\'aggiornamento della prenotazione';
 $string['allratings'] = 'Ognuno può votare';
 $string['allteachers'] = 'Tutti gli insegnanti';
@@ -153,11 +114,6 @@ $string['asglobaltemplate'] = 'Use as global template';
 $string['associatedcourse'] = 'Corso associato';
 $string['astemplate'] = 'Usa come modello in questo corso';
 $string['attachedfiles'] = 'File allegati';
-$string['attachical'] = 'Allega un singolo evento iCal per prenotazione';
-$string['attachicaldesc'] = 'Le notifiche e-mail includeranno un evento iCal allegato, se abilitato. L\'iCal includerà solo un\'ora di inizio e un\'ora di fine, entrambe definite
-nelle impostazioni dell\'opzione di prenotazione o dall\'ora di inizio della prima sessione all\'ora di fine dell\'ultima sessione';
-$string['attachicalsess'] = 'Allega tutte le date delle sessioni come eventi iCal';
-$string['attachicalsessdesc'] = 'Le notifiche e-mail includeranno tutte le date delle sessioni definite per un\'opzione di prenotazione come allegato iCal.';
 $string['autcrheader'] = 'Creazione automatica dell\'opzione di prenotazione';
 $string['autcrwhatitis'] = 'Se questa opzione è abilitata, crea automaticamente una nuova opzione di prenotazione e le assegna un utente come gestore/insegnante di prenotazione. Gli utenti vengono selezionati in base a un valore del campo del profilo utente personalizzato.';
 $string['autoenrol'] = 'Iscrizione automatica degli utenti';
@@ -165,8 +121,6 @@ $string['autoenrol_help'] = 'Se selezionati, gli utenti verranno iscritti al cor
 $string['automaticcoursecreation'] = 'Creazione automatica dei corsi Moodle (PRO)';
 $string['availability'] = 'Ancora disponibile';
 $string['availabilityconditions'] = 'Condizioni di disponibilità';
-$string['availabilityinfotexts_desc'] = 'Disponibile solo nella versione PRO.';
-$string['availabilityinfotexts_heading'] = 'Testi informativi disponibilità per prenotazione posti e lista d\'attesa';
 $string['available'] = 'Posti disponibili';
 $string['availableplaces'] = 'Posti disponibili: {$a->available} of {$a->maxanswers}';
 $string['backtoresponses'] = '&lt;&lt; Torna alle risposte';
@@ -240,120 +194,9 @@ $string['beforecompletedtext_help'] = 'Lascia vuoto questo campo per utilizzare 
 <li>{coursecalendarurl} - Link per iscriversi al calendario dei corsi (eventi del corso)</li>
 </ul>';
 $string['biggerthan'] = 'è più grande di (numero)';
-$string['bo_cond_alreadybooked'] = 'già prenotato: è già prenotato da questo utente';
-$string['bo_cond_alreadybooked_available'] = 'Non ancora prenotato';
-$string['bo_cond_alreadybooked_full_available'] = 'L\'utente non ha ancora prenotato';
-$string['bo_cond_alreadybooked_full_not_available'] = 'Opzione di prenotazione già prenotata';
-$string['bo_cond_alreadybooked_not_available'] = 'Booked';
-$string['bo_cond_booking_time'] = 'booking_time: prenotabile solo entro un certo tempo';
-$string['bo_cond_booking_time_available'] = 'Entro i normali tempi di prenotazione';
-$string['bo_cond_booking_time_full_available'] = 'Entro i normali tempi di prenotazione. Da {$a} fino a {$b}';
-$string['bo_cond_booking_time_full_not_available'] = 'Non entro i normali tempi di prenotazione. Da {$a} fino a {$b}';
-$string['bo_cond_booking_time_not_available'] = 'Non entro i normali tempi di prenotazione.';
-$string['bo_cond_customuserprofilefield_available'] = 'Prenotalo';
-$string['bo_cond_customuserprofilefield_field'] = 'Campo del profilo';
-$string['bo_cond_customuserprofilefield_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_customuserprofilefield_full_not_available'] = 'Solo gli utenti con il campo personalizzato {$a->profilefield} impostato sul valore {$a->value} possono prenotare.
-     <br>Ma hai comunque il diritto di prenotare un utente.';
-$string['bo_cond_customuserprofilefield_not_available'] = 'Non è consentito prenotare';
-$string['bo_cond_customuserprofilefield_operator'] = 'Operatore';
-$string['bo_cond_customuserprofilefield_value'] = 'Valore';
-$string['bo_cond_fullybooked'] = 'completamente prenotato: completamente prenotato';
-$string['bo_cond_fullybooked_available'] = 'Prenotalo';
-$string['bo_cond_fullybooked_full_available'] = 'Booking is possible';
-$string['bo_cond_fullybooked_full_not_available'] = 'Al completo. Prenotazione non più possibile.';
-$string['bo_cond_fullybooked_not_available'] = 'Al completo';
-$string['bo_cond_fullybookedoverride'] = 'fullybookedoverride: può essere prenotato oltre il disponibile dallo staff';
-$string['bo_cond_fullybookedoverride_available'] = 'Prenotalo';
-$string['bo_cond_fullybookedoverride_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_fullybookedoverride_full_not_available'] = 'Già al completo, ma hai comunque il diritto di prenotare un utente.';
-$string['bo_cond_fullybookedoverride_not_available'] = 'Al completo';
-$string['bo_cond_isbookable'] = 'è prenotabile: La prenotazione è consentita';
-$string['bo_cond_isbookable_available'] = 'Prenotalo';
-$string['bo_cond_isbookable_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_isbookable_full_not_available'] = 'La prenotazione è vietata per questa opzione di prenotazione.
-     <br>Ma hai comunque il diritto di prenotare un utente.';
-$string['bo_cond_isbookable_not_available'] = 'Non è consentito prenotare';
-$string['bo_cond_iscancelled'] = 'è annullato: Opzione di prenotazione annullata';
-$string['bo_cond_iscancelled_available'] = 'Prenotalo';
-$string['bo_cond_iscancelled_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_iscancelled_full_not_available'] = 'Annullato - prenotazione non possibile';
-$string['bo_cond_iscancelled_not_available'] = 'Annullata';
-$string['bo_cond_isloggedin'] = 'è connesso: l\'utente è connesso';
-$string['bo_cond_isloggedin_available'] = 'Prenotalo';
-$string['bo_cond_isloggedin_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_isloggedin_full_not_available'] = 'L\'utente non è connesso.';
-$string['bo_cond_isloggedin_not_available'] = 'Effettua il login per prenotare questa opzione.';
-$string['bo_cond_max_number_of_bookings'] = 'max_number_of_bookings: Raggiunto il numero massimo di prenotazioni per utente';
-$string['bo_cond_max_number_of_bookings_available'] = 'Prenotalo';
-$string['bo_cond_max_number_of_bookings_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_max_number_of_bookings_full_not_available'] = 'L\'utente ha raggiunto il numero massimo di prenotazioni';
-$string['bo_cond_max_number_of_bookings_not_available'] = 'Numero massimo di prenotazioni raggiunto';
-$string['bo_cond_onnotifylist_available'] = 'Prenotalo';
-$string['bo_cond_onnotifylist_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_onnotifylist_full_not_available'] = 'L\'utente ha raggiunto il numero massimo di prenotazioni';
-$string['bo_cond_onnotifylist_not_available'] = 'Raggiunto il numero massimo di prenotazioni';
-$string['bo_cond_onwaitinglist'] = 'onwaitinglist: l\'utente è in lista d\'attesa';
-$string['bo_cond_onwaitinglist_available'] = 'Prenotalo';
-$string['bo_cond_onwaitinglist_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_onwaitinglist_full_not_available'] = 'L\'utente è in lista d\'attesa';
-$string['bo_cond_onwaitinglist_not_available'] = 'Al completo - Sei in lista d\'attesa';
-$string['bo_cond_previouslybooked'] = 'previousbooked: l\'utente ha precedentemente prenotato una determinata opzione';
-$string['bo_cond_previouslybooked_available'] = 'Prenotalo';
-$string['bo_cond_previouslybooked_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_previouslybooked_full_not_available'] = 'Solo gli utenti che hanno precedentemente prenotato questa <a href="{$a}">opzione</a> possono prenotare.
-     <br>Ma hai comunque il diritto di prenotare un utente.';
-$string['bo_cond_previouslybooked_not_available'] = 'Non è consentito prenotare';
-$string['bo_cond_previouslybooked_optionid'] = 'Opzione di prenotazione';
-$string['bo_cond_priceisset'] = 'priceisset: il prezzo è impostato';
-$string['bo_cond_priceisset_available'] = 'Prenotalo';
-$string['bo_cond_priceisset_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_priceisset_full_not_available'] = 'Un prezzo è fissato, pagamento richiesto';
-$string['bo_cond_priceisset_not_available'] = 'Devi pagare';
-$string['bo_cond_userprofilefield'] = 'userprofilefield: il campo del profilo utente ha un determinato valore';
-$string['bo_cond_userprofilefield_available'] = 'Prenotalo';
-$string['bo_cond_userprofilefield_field'] = 'Campo del profilo';
-$string['bo_cond_userprofilefield_full_available'] = 'La prenotazione è possibile';
-$string['bo_cond_userprofilefield_full_not_available'] = 'Solo gli utenti con il campo personalizzato {$a->profilefield} impostato al valore {$a->value} possono prenotare.
-     <br>Ma hai comunque il diritto di prenotare un utente.';
-$string['bo_cond_userprofilefield_not_available'] = 'Non è consentito prenotare';
-$string['bo_cond_userprofilefield_operator'] = 'Operatore';
-$string['bo_cond_userprofilefield_value'] = 'Valore';
 $string['booked'] = 'Prenotato';
 $string['bookedpast'] = 'Prenotato (corso terminato)';
 $string['bookedtext'] = 'Conferma della prenotazione';
-$string['bookedtext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Riepilogo dettagliato dell\'opzione di prenotazione (incl. sessioni e link all\'opzione di prenotazione)</li>
-<li>{gotobookingoption} - Link per l\'opzione di prenotazione</li>
-<li>{status} - Stato della prenotazione</li>
-<li>{participant}</li>
-<li>{email} - Emai dell\'utente</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher} - Nome del primo insegnante</li>
-<li>{teacher} - Lista di tutti gli insegnanti </li>
-<li>{teacherN} - Nome dello specifico insegnante, e.g. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Inserisci il codice QR con l\'ID utente</li>
-<li>{qr_username} - Inserisci il codice QR con l\'ID utente</li>
-<li>{dates} - Orari delle sessioni</li>
-<li>{shorturl} - URL abbreviato dell\'opzione di prenotazione</li>
-<li>{usercalendarurl} - Link per iscriversi al calendario utente (eventi personali)</li>
-<li>{coursecalendarurl} - Link per iscriversi al calendario dei corsi (eventi del corso)</li>
-</ul>';
 $string['bookedtextmessage'] = 'La tua prenotazione è stata registrata:
 
 {$a->bookingdetails}
@@ -372,7 +215,6 @@ $string['booking:addinstance'] = 'Aggiungere nuova prenotazione';
 $string['booking:bookforothers'] = 'Prenota per altri';
 $string['booking:canseeinvisibleoptions'] = 'Visualizza le opzioni invisibili.';
 $string['booking:cansendmessages'] = 'Inviare messaggi';
-$string['booking:cantoggleformmode'] = 'Modificare tutte le impostazioni';
 $string['booking:changelockedcustomfields'] = 'Modificare i campi delle opzioni di prenotazione personalizzate bloccate.';
 $string['booking:choose'] = 'Prenota';
 $string['booking:comment'] = 'Aggiungere commenti';
@@ -392,9 +234,7 @@ $string['booking:updatebooking'] = 'Gestire le opzioni della prenotazione';
 $string['booking:viewallratings'] = 'Visualizzare tutte le valutazioni grezze fornite dai singoli';
 $string['booking:viewanyrating'] = 'Visualizzare le valutazioni totali ricevute da chiunque';
 $string['booking:viewrating'] = 'Visualizzare il punteggio totale che hai ricevuto';
-$string['booking_customfield'] = 'Campi personalizzati per le opzioni di prenotazione';
 $string['bookingaction'] = 'Azione';
-$string['bookinganswer_cancelled'] = 'Opzione di prenotazione annullata per/da un utente';
 $string['bookingattachment'] = 'Allegato';
 $string['bookingcategory'] = 'Categoria';
 $string['bookingchangedtext'] = 'Messaggio da inviare quando cambia un\'opzione di prenotazione (verrà inviato solo agli utenti che hanno già prenotato). Usa il segnaposto {changes} per mostrare le modifiche. Immettere 0 per disattivare le notifiche di modifica.';
@@ -457,16 +297,7 @@ $string['bookingname'] = 'Nome prenotazione';
 $string['bookingnotopenyet'] = 'Il tuo evento inizia tra {$a} minuti. Il link che hai utilizzato ti reindirizzerà se fai nuovamente clic su di esso entro 15 minuti prima.';
 $string['bookingopen'] = 'Aperto';
 $string['bookingopeningtime'] = 'Da';
-$string['bookingoption_booked'] = 'Opzione di prenotazione scelta';
-$string['bookingoption_cancelled'] = 'Opzione di prenotazione cancellata';
-$string['bookingoption_completed'] = 'Opzione di prenotazione completata';
-$string['bookingoption_created'] = 'Possibilità di prenotazione creata';
-$string['bookingoption_deleted'] = 'Possibilità di prenotazione cancellata';
-$string['bookingoption_updated'] = 'Possibilità di prenotazione aggiornata';
 $string['bookingoptioncalendarentry'] = 'Impostazioni predefinite per le opzioni di prenotazione';
-$string['bookingoptiondate_created'] = 'Data dell\'opzione di prenotazione creata';
-$string['bookingoptiondate_deleted'] = 'Data dell\'opzione di prenotazione eliminata';
-$string['bookingoptiondate_updated'] = 'Data opzione prenotazione aggiornata';
 $string['bookingoptiondefaults'] = 'Impostazioni predefinite per le opzioni di prenotazione';
 $string['bookingoptiondefaultsdesc'] = 'Consente di impostare le impostazioni predefinite per la creazione di opzioni di prenotazione e bloccarle se necessario.';
 $string['bookingoptionimage'] = 'Carica un\'immagine';
@@ -474,14 +305,12 @@ $string['bookingoptionname'] = 'Nome dell\'opzione di prenotazione';
 $string['bookingoptionprice'] = 'Prezzo';
 $string['bookingoptionsfromtemplatemenu'] = 'Nuova opzione di prenotazione dal modello';
 $string['bookingoptionsmenu'] = 'Possibilità di prenotazione';
-$string['bookingoptiontext'] = 'Il testo della possibilità di prenotazione dipende dallo stato della prenotazione';
 $string['bookingoptiontitle'] = 'Titolo dell\'opzione di prenotazione';
 $string['bookingorganizatorname'] = 'Nome organizzatore';
 $string['bookingpassed'] = 'Il tuo evento è terminato.';
 $string['bookingplacesenoughmessage'] = 'Ancora abbastanza posti disponibili per la prenotazione.';
 $string['bookingplacesfullmessage'] = 'Non ci sono più posti disponibili.';
 $string['bookingplacesinfotexts'] = 'Mostra i testi delle informazioni sulla disponibilità per la prenotazione dei posti';
-$string['bookingplacesinfotexts_info'] = 'Mostra brevi messaggi informativi invece del numero di posti disponibili per la prenotazione.';
 $string['bookingplaceslowmessage'] = 'Sono rimasti solo pochi posti di prenotazione';
 $string['bookingplaceslowpercentage'] = 'Percentuale di prenotazione posti messaggio basso';
 $string['bookingplaceslowpercentagedesc'] = 'Se i posti di prenotazione disponibili raggiungono o scendono al di sotto di questa percentuale, verrà mostrato un messaggio di posti di prenotazione bassi.';
@@ -490,7 +319,6 @@ $string['bookingpolicy'] = 'Politica di prenotazione';
 $string['bookingpollurl'] = 'URL del sondaggio';
 $string['bookingpollurlteachers'] = 'URL del sondaggio docenti';
 $string['bookingpricecategory'] = 'Categoria di prezzo';
-$string['bookingpricecategory_info'] = 'Definire il nome della categoria, ad esempio "studenti".';
 $string['bookingpricesettings'] = 'Impostazioni del prezzo';
 $string['bookingpricesettings_desc'] = 'Consente di personalizzare i prezzi delle prenotazioni.';
 $string['bookingrule'] = 'Regola';
@@ -532,7 +360,6 @@ $string['caladdascourseevent'] = 'Aggiungi al calendario (visibile solo ai parte
 $string['caladdassiteevent'] = 'Aggiungi al calendario (visibile a tutti gli utenti)';
 $string['caldonotadd'] = 'Non aggiungere al calendario del corso';
 $string['caleventtype'] = 'Visibilità degli eventi del calendario';
-$string['cancancelbook'] = 'Consenti all\'utente di cancellare la prenotazione durante il periodo di prenotazione?';
 $string['cancancelbookdays'] = 'Non consente agli utenti di annullare la prenotazione n giorni prima dell\'inizio. Meno significa che gli utenti possono ancora annullare n giorni DOPO l\'inizio del corso.';
 $string['cancancelbookdaysno'] = 'Non limitare';
 $string['cancel'] = 'Annulla';
@@ -561,8 +388,6 @@ $string['changeold'] = '[ELIMINATO]';
 $string['changesemester'] = 'Cambia semestre';
 $string['changesemester:warning'] = '<strong>Attenzione: </strong> Facendo clic su "Salva modifiche", tutte le date saranno eliminate e sostituite con quelle del semestre scelto.';
 $string['choose...'] = 'Seleziona..';
-$string['choosecourse'] = 'Scegli un corso';
-$string['choosecourse_help'] = 'Selezionare "Nuovo corso" se si desidera creare un nuovo corso Moodle per questa opzione di prenotazione.';
 $string['choosepdftitle'] = 'Seleziona un titolo per il foglio presenze';
 $string['chooseperiod'] = 'Selezionare il periodo di tempo';
 $string['chooseperiod_help'] = 'Selezionare un periodo di tempo entro il quale creare la serie di date.';
@@ -575,15 +400,6 @@ $string['completedcomments'] = 'Solo con il completamento attività';
 $string['completedratings'] = 'Solo con il completamento attività';
 $string['completionmodule'] = 'Al completamento dell\'attività del corso selezionata, abilita l\'eliminazione in blocco delle prenotazioni degli utenti';
 $string['completionmodule_help'] = 'Visualizza il pulsante di eliminazione in blocco per prenotare le risposte, se è stato completato un altro modulo del corso. Le prenotazioni degli utenti verranno cancellate con un clic di un pulsante nella pagina del report! Solo le attività con completamento abilitato possono essere selezionate dall\'elenco';
-$string['condition_select_student_in_bo_desc'] = 'Selezionare tutti gli studenti dell\'opzione di prenotazione (interessati dalla regola) che hanno un determinato ruolo.';
-$string['condition_select_student_in_bo_roles'] = 'Selezionare il ruolo';
-$string['condition_select_teacher_in_bo_desc'] = 'Selezionare i docenti dell\'opzione di prenotazione (interessati dalla regola).';
-$string['condition_select_user_from_event_desc'] = 'Scegliere un utente che sia in qualche modo collegato all\'evento';
-$string['condition_select_user_from_event_type'] = 'Scegliere il ruolo';
-$string['condition_select_users_userids'] = 'Selezionare gli utenti che si desidera indirizzare';
-$string['condition_textfield'] = 'Valore';
-$string['conectedbooking'] = 'Prenotazione collegata';
-$string['conectedbooking_help'] = 'Istanza di prenotazione idonea per il trasferimento degli utenti prenotati. È possibile definire da quale possibilità di prenotazione all\'interno dell\'istanza di prenotazione selezionata e quanti utenti saranno accettati.';
 $string['confirmactivtyfrom'] = 'Conferma l\'attività degli utenti da';
 $string['confirmationmessagesettings'] = 'Impostazione e-mail di conferma';
 $string['confirmbookingoffollowing'] = 'Si prega di confermare la prenotazione del seguente corso';
@@ -612,8 +428,6 @@ $string['courseurl'] = 'URL del corso';
 $string['createnewbookingoption'] = 'Nuova opzione di prenotazione';
 $string['createnewbookingoptionfromtemplate'] = 'Aggiungi una nuova opzione di prenotazione dal modello';
 $string['csvfile'] = 'File CSV';
-$string['csvfile_help'] = 'Il file CSV deve contenere solo una colonna denominata Institution.';
-$string['custom_field_changed'] = 'Campo personalizzato modificato';
 $string['customdatesbtn'] = '<i class="fa fa-plus-square"></i> Date personalizzate...';
 $string['customdownloadreport'] = 'Download del report';
 $string['customfield'] = 'Campo personalizzato da impostare nelle impostazioni dell\'opzione di prenotazione. Verrà quindi mostrato nella panoramica delle opzioni di prenotazione.';
@@ -639,7 +453,6 @@ $string['customfieldvalue_help'] = 'Puoi inserire qualsiasi valore desideri (tes
                                         <li>ZoomMeeting</li>
                                         <li>BigBlueButtonMeeting</li>
                                     </ul> quindi inserisci il link completo alla sessione della riunione che inizia con https:// o http://';
-$string['customlabels'] = 'Etichette personalizzate';
 $string['customprofilefield'] = 'Campo profilo personalizzato da verificare';
 $string['customprofilefieldvalue'] = 'Valore del campo del profilo personalizzato da verificare';
 $string['customreporttemplate'] = 'Modello di rapporto personalizzato';
@@ -670,7 +483,6 @@ $string['defaultvalue_help'] = 'Inserire un valore predefinito per ogni prezzo d
 $string['delcustfield'] = 'Elimina questo campo e tutte le impostazioni di campo associate nelle possibilità di prenotazione';
 $string['deletebooking'] = 'Vuoi davvero cancellarti dal seguente corso? <br /><br /> <b>{$a} </b>';
 $string['deletebookingrule'] = 'Eliminare la regola';
-$string['deletebookingrule_confirmtext'] = 'Si vuole davvero eliminare la seguente regola?';
 $string['deletecategory'] = 'Cancella';
 $string['deletecustomfield'] = 'Eliminare il campo personalizzato?';
 $string['deletecustomfield_help'] = 'Attenzione: l\'impostazione di questa casella di controllo eliminerà il campo personalizzato associato durante il salvataggio.';
@@ -680,37 +492,6 @@ La tua prenotazione per {$a->title} ({$a->startdate} {$a->starttime}) è stata c
 $string['deletedbookingusersubject'] = 'Prenotazione per {$a->title} cancellata';
 $string['deletedrule'] = 'Regola cancellata';
 $string['deletedtext'] = 'Messaggio di prenotazione annullata (inserire 0 per disattivare)';
-$string['deletedtext_help'] = 'Lasciare vuoto per utilizzare il testo predefinito del sito. È possibile utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['deletedtextmessage'] = 'L\'opzione di prenotazione è stata eliminata:{$a->title}
 
 Utente: {$a->participant}
@@ -734,10 +515,6 @@ $string['description'] = 'Descrizione';
 $string['disablebookingusers'] = 'Disattiva la prenotazione degli utenti: nascondi il pulsante Prenota ora.';
 $string['disablepricecategory'] = 'Disattivare la categoria di prezzo';
 $string['disablepricecategory_help'] = 'Quando si disattiva una categoria di prezzo, non sarà più possibile utilizzarla.';
-$string['donotselectcourse'] = 'Nessun corso selezionato';
-$string['donotselecteventtype'] = 'Nessun tipo di evento selezionato';
-$string['donotselectinstitution'] = 'Nessun organizzazione selezionata';
-$string['donotselectlocation'] = 'Nessun luogo selezionato';
 $string['dontaddpersonalevents'] = 'Non aggiungere eventi del calendario personale';
 $string['dontaddpersonaleventsdesc'] = 'Per ogni opzione prenotata e per tutte le sue sessioni, vengono creati eventi personali nel calendario di moodle. Sopprimendoli si migliorano le prestazioni per i siti a carico elevato.';
 $string['dontuse'] = 'Non usare il modello';
@@ -745,7 +522,6 @@ $string['download'] = 'Scarica';
 $string['downloadallresponses'] = 'Scaricare tutte le risposte per tutte le possibilità di prenotazione';
 $string['downloadusersforthisoptionods'] = 'Scaricare gli utenti come .ods';
 $string['downloadusersforthisoptionxls'] = 'Scaricare gli utenti come .xls';
-$string['duplicatebooking'] = 'Duplicare questa possibilità di prenotazione';
 $string['duplicatename'] = 'Questo nome dell\'opzione di prenotazione esiste già. Per favore, scegline un altro.';
 $string['duplicationrestore'] = 'Duplicazione, backup e ripristino';
 $string['duplicationrestoredesc'] = 'Qui è possibile impostare le informazioni che si desidera includere durante la duplicazione o il backup/ripristino delle istanze di prenotazione.';
@@ -762,6 +538,7 @@ $string['editotherbooking'] = 'Altre regole di prenotazione';
 $string['editrule'] = 'Modifica';
 $string['edittag'] = 'Modifica';
 $string['editteachers'] = 'Modifica';
+$string['editteacherslink'] = 'Modifica docenti';
 $string['educationalunitinminutes'] = 'Durata di un\'unità didattica (minuti)';
 $string['educationalunitinminutes_desc'] = 'Inserire la durata di un\'unità didattica in minuti. Verrà utilizzata per calcolare le unità didattiche eseguite.';
 $string['enable'] = 'Abilita';
@@ -775,7 +552,6 @@ $string['enrolledratings'] = 'Solo iscritti';
 $string['enrolmentstatus'] = 'Iscrivere gli utenti all\'ora di inizio del corso (Default: Not checked &rarr; enrol them immediately.)';
 $string['enrolmentstatus_help'] = 'Avviso: Affinché l\'iscrizione automatica funzioni, è necessario modificare l\'impostazione dell\'istanza di prenotazione
  "Iscrizione automatica degli utenti" a "Sì".';
-$string['enter_userprofilefield'] = 'Selezionare gli utenti inserendo un valore nel campo del profilo utente personalizzato.';
 $string['entervalidurl'] = 'Per favore inserisci un URL valido.';
 $string['equals'] = 'ha esattamente questo valore (testo o numero)';
 $string['equalsnot'] = 'non ha esattamente questo valore (testo o numero)';
@@ -821,17 +597,12 @@ $string['errortoomanydecimals'] = 'Sono ammessi solo 2 decimali.';
 $string['eventalreadyover'] = 'Questo evento è già finito.';
 $string['eventduration'] = 'Durata evento';
 $string['eventpoints'] = 'Punti';
-$string['eventreport_viewed'] = 'Visualizzato report';
-$string['eventteacher_added'] = 'Aggiunto docente';
-$string['eventteacher_removed'] = 'Rimosso docente';
 $string['eventtype'] = 'Tipo di evento';
 $string['eventtype_help'] = 'Puoi inserire il tipo di evento manualmente o scegliere da un elenco di tipi di eventi precedenti.
                               Puoi scegliere un solo tipo di evento. Una volta salvato, il tipo di evento verrà aggiunto all\'elenco.';
-$string['eventuserprofilefields_updated'] = 'Aggiornato profilo utente';
 $string['excelfile'] = 'File CSV con il completamento attività';
 $string['existingsubscribers'] = 'Iscritti esistenti';
 $string['expired'] = 'Spiacenti, questa attività è stata chiusa il {$a} e non è più disponibile';
-$string['fields'] = 'Campi da visualizzare in diversi contesti';
 $string['fillinatleastoneoption'] = 'È necessario fornire almeno due possibili risposte.';
 $string['filterbtn'] = 'Filtro';
 $string['filterenddate'] = 'Fino a';
@@ -841,7 +612,6 @@ $string['friday'] = 'Venerdì';
 $string['full'] = 'Completo';
 $string['fullname'] = 'Nome e cognome';
 $string['fullybooked'] = 'Al completo';
-$string['generatenewurl'] = 'Genera nuovo URL breve';
 $string['generaterecnum'] = 'Genera numeri';
 $string['generaterecnumareyousure'] = 'Questo genererà nuovi numeri ed eliminerà definitivamente quello vecchi!';
 $string['generaterecnumnotification'] = 'Sono stati generati nuovi numeri.';
@@ -860,11 +630,9 @@ $string['globalpollurltext'] = 'Messaggio per l\'invio dell\'URL del sondaggio a
 $string['globalstatuschangetext'] = 'Messaggio di modifica dello stato (modello globale)';
 $string['globaluserleave'] = 'L\'utente ha cancellato la propria prenotazione (modello globale)';
 $string['globalwaitingtext'] = 'Conferma lista d\'attesa (modello globale)';
-$string['goenrol'] = 'Vai alla registrazione';
 $string['gotobooking'] = '&lt;&lt; Prenotazioni';
 $string['gotobookingoption'] = 'Vai all\'opzione di prenotazione';
 $string['gotomanageresponses'] = '&lt;&lt; Gestire le risposte';
-$string['gotop'] = 'Vai in alto';
 $string['groupdeleted'] = 'Questa istanza di prenotazione crea automaticamente i gruppi nel corso di destinazione. Ma il gruppo è stato eliminato manualmente nel corso di destinazione. Attiva la seguente casella di controllo per ricreare il gruppo';
 $string['groupexists'] = 'Il gruppo esiste già nel corso target, scegli un altro nome per l\'opzione di prenotazione';
 $string['groupname'] = 'Nome del gruppo';
@@ -878,6 +646,7 @@ $string['holidays'] = 'Vacanze';
 $string['holidaystart'] = 'Vacanze (inizio)';
 $string['hours'] = '{$a} ore';
 $string['howmanytimestorepeat'] = 'Quante volte ripetere?';
+$string['howmanyusers'] = 'Massimo numero di utenti che un insegnante assegnato all\'opzione può prenotare';
 $string['howoftentorepeat'] = 'Quante volte ripetere?';
 $string['icalcancel'] = 'Includi l\'evento iCal quando la prenotazione viene annullata come evento annullato';
 $string['icalcanceldesc'] = 'Quando un utente annulla una prenotazione o viene rimosso dall\'elenco degli utenti prenotati, allega un allegato iCal come evento annullato.';
@@ -885,8 +654,6 @@ $string['icalcfg'] = 'Configurazione degli allegati iCal';
 $string['icalcfgdesc'] = 'Configura i file iCal.ics allegati ai messaggi di posta elettronica. Questi file consentono di aggiungere le date di prenotazione al calendario personale.';
 $string['icalfieldlocation'] = 'Testo da visualizzare nella posizione del campo iCal';
 $string['icalfieldlocationdesc'] = 'Scegli dall\'elenco a discesa quale testo deve essere utilizzato per la posizione del campo del calendario';
-$string['import_failed'] = 'L\'importazione non è riuscita per il seguente motivo:';
-$string['import_partial'] = 'L\'importazione è stata completata solo in parte. Si sono verificati problemi con le seguenti righe e non sono state importate:';
 $string['importcsvbookingoption'] = 'Importa CSV con opzioni di prenotazione';
 $string['importcsvtitle'] = 'Importa CSV';
 $string['importexcelbutton'] = 'Completamento dell\'attività di importazione';
@@ -901,14 +668,11 @@ $string['infonobookingoption'] = 'Per aggiungere un\'opzione di prenotazione, ut
 $string['infotext:prolicensenecessary'] = 'Per utilizzare questa funzione è necessaria una licenza Booking PRO.
 <a href="https://wunderbyte.at/en/contact" target="_blank"> Contattate Wunderbyte</a> se volete acquistare una licenza PRO.';
 $string['infowaitinglist'] = '<div class="infowaitinglist"><i>Sei in lista d\'attesa per questa opzione</i></div>';
-$string['instance_not_saved_no_valid_license'] = 'Impossibile salvare l\'istanza di prenotazione come modello.
-                                                   Esegui l\'upgrade alla versione PRO per salvare un numero illimitato di modelli.';
 $string['instancesuccessfullysaved'] = 'Questa istanza di prenotazione è stata salvata correttamente come modello.';
 $string['instancetemplate'] = 'Modello di istanza';
 $string['institution'] = 'Istituzione';
 $string['institution_help'] = 'Puoi inserire il nome dell\'istituto manualmente o scegliere da un elenco di istituti precedenti.
                                      Puoi scegliere un solo istituto. Una volta salvato, l\'istituto verrà aggiunto all\'elenco.';
-$string['institutionname'] = 'Nome dell\'istituto';
 $string['institutions'] = 'Istituzioni';
 $string['invisibleoption'] = 'Opzione di prenotazione invisibile';
 $string['invisibleoption:notallowed'] = 'Non è possibile visualizzare questa opzione di prenotazione.';
@@ -925,8 +689,6 @@ $string['lblsputtname'] = 'Nome dell\'etichetta: invia l\'URL del sondaggio agli
 $string['lblsurname'] = 'Nome dell\'etichetta: Cognome';
 $string['lblteachname'] = 'Nome dell\'etichetta: Insegnanti';
 $string['leftandrightdate'] = '{$a->leftdate} a {$a->righttdate}';
-$string['license_activated'] = 'Versione PRO attivata con successo.<br>(Scade:';
-$string['license_invalid'] = 'Chiave di licenza non valida';
 $string['licensekey'] = 'Chiave di licenza PRO';
 $string['licensekeycfg'] = 'Attiva la versione PRO';
 $string['licensekeycfgdesc'] = 'Con una licenza PRO puoi creare tutti i modelli di prenotazione che desideri e utilizzare funzionalità PRO come modelli di posta globali, testi informativi sulla lista d\'attesa o notifiche degli insegnanti.';
@@ -956,13 +718,11 @@ $string['managebookinginstancetemplates'] = 'Gestisci i modelli di istanza di pr
 $string['managecustomreporttemplates'] = 'Gestisci modelli di report personalizzati';
 $string['manageoptiontemplates'] = 'Gestisci modelli di opzioni';
 $string['manageresponses'] = 'Gestire le risposte';
-$string['match_userprofilefield'] = 'Selezionare gli utenti in base al campo corrispondente nell\'opzione di prenotazione e nel campo del profilo utente.';
 $string['maxoverbooking'] = 'Massimo numero di posti in lista d\'attesa';
 $string['maxparticipantsnumber'] = 'Massimo numero di partecipanti';
 $string['maxperuser'] = 'Numero massimo di prenotazioni correnti per utente';
 $string['maxperuser_help'] = 'Il numero massimo di prenotazioni che un singolo utente può effettuare in questa attività contemporaneamente. Dopo che l\'ora di fine di un evento è trascorsa, non viene più conteggiata in questo limite.';
 $string['maxperuserwarning'] = 'Attualmente hai utilizzato {$a->count} su {$a->limit} prenotazioni massime disponibili ({$a->eventtype}) per il tuo account utente';
-$string['message_sent'] = 'Messaggio inviato';
 $string['messageprovider:bookingconfirmation'] = 'Conferme di prenotazione';
 $string['messagesend'] = 'Il tuo messaggio è stato inviato.';
 $string['messagesubject'] = 'Soggetto';
@@ -975,15 +735,11 @@ $string['modulename'] = 'Prenotazione';
 $string['modulenameplural'] = 'Prenotazioni';
 $string['monday'] = 'Lunedì';
 $string['moveoptionto'] = 'Sposta l\'opzione di prenotazione su un\'altra istanza di prenotazione';
-$string['multiicalfiles'] = 'Allega un file iCal per data per la compatibilità con MS Outlook 2010';
-$string['multiicalfilesdesc'] = 'Solo MS Outlook 2010 non supporta più date all\'interno di un file iCal. Le versioni precedenti e successive lo supportano (es. Outlook365). Se desideri inviare date compatibili con MS Outlook, attiva questa opzione per allegare più file iCal (uno per data/evento)';
 $string['multiselect'] = 'Selezione multipla';
 $string['mustchooseone'] = 'Devi scegliere un\'opzione prima di salvare. Niente è stato salvato.';
 $string['mustfilloutuserinfobeforebooking'] = 'Prima di procedere con il modulo di prenotazione, si prega di compilare alcune informazioni personali di prenotazione';
-$string['mybookings'] = 'Le mie prenotazioni';
 $string['mybookingsbooking'] = 'Prenotazione (Corso)';
 $string['mybookingsoption'] = 'Opzione';
-$string['myoptions'] = 'Opzioni che gestisco';
 $string['newcourse'] = 'Nuovo corso';
 $string['newcoursecategorycfield'] = 'Campo personalizzato dell\'opzione di prenotazione da utilizzare come categoria del corso';
 $string['newcoursecategorycfielddesc'] = 'Scegliere un campo personalizzato per l\'opzione di prenotazione che verrà utilizzato come categoria di corso per i corsi creati automaticamente.
@@ -998,7 +754,6 @@ $string['nocancelreason'] = 'È necessario fornire una motivazione per la cancel
 $string['nocfnameselected'] = 'Niente è stato selezionato. Digita un nuovo nome o selezionane uno dall\'elenco.';
 $string['nocomments'] = 'Commento disabilitato';
 $string['nocourse'] = 'Nessun corso selezionato per questa opzione di prenotazione';
-$string['nodateset'] = 'Data del corso non impostata';
 $string['nofieldchosen'] = 'Nessun campo scelto';
 $string['nogrouporcohortselected'] = 'Devi selezionare almeno un gruppo o un gruppo globale.';
 $string['noguestchoose'] = 'Spiacenti, gli ospiti non possono inserire dati';
@@ -1020,69 +775,7 @@ $string['notes'] = 'Note di prenotazione';
 $string['notificationlist'] = 'Elenco delle notifiche';
 $string['notificationlistdesc'] = 'Quando non c\'è più posto disponibile, gli utenti possono comunque registrarsi per essere avvisati quando c\'è un posto libero.';
 $string['notificationtext'] = 'Messaggio di notifica';
-$string['notificationtext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['notifyemail'] = 'Notifica al partecipante prima dell\'inizio';
-$string['notifyemail_help'] = 'Leave this blank to use the site default text. You can use any of the following placeholders in the text:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['notifyemailmessage'] = 'Your booking will start soon:
 
 Stato della prenotazione: {$a->status}
@@ -1093,37 +786,6 @@ Per visualizzare tutti i corsi prenotati, cliccare sul seguente link: {$a->booki
 Il corso associato è disponibile qui: {$a->courselink}';
 $string['notifyemailsubject'] = 'La vostra prenotazione inizierà presto';
 $string['notifyemailteachers'] = 'Notifica all\'insegnante prima dell\'inizio (PRO)';
-$string['notifyemailteachers_help'] = 'Leave this blank to use the site default text. You can use any of the following placeholders in the text:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['notifyemailteachersmessage'] = 'La prenotazione inizierà presto:
 
 {$a->bookingdetails}
@@ -1143,17 +805,15 @@ $string['numberrows'] = 'Numero di righe';
 $string['numberrowsdesc'] = 'Numera ogni riga del foglio di accesso. Il numero verrà visualizzato a sinistra del nome nella stessa colonna';
 $string['numgenerator'] = 'Abilitare la generazione del numero di record?';
 $string['numrec'] = 'Numero di record';
-$string['onlythisbookingurl'] = 'Link a questo URL di prenotazione';
 $string['onlyusersfrominstitution'] = 'È possibile aggiungere solo utenti di questa istituzione: {$a}';
 $string['onwaitinglist'] = 'Sei in lista d\'attesa';
-$string['option_template_not_saved_no_valid_license'] = 'Impossibile salvare il modello dell\'opzione di prenotazione come modello.
-                                                   Esegui l\'upgrade alla versione PRO per salvare un numero illimitato di modelli.';
 $string['optionannotation'] = 'Annotazione interna';
 $string['optionannotation_help'] = 'Aggiungete osservazioni interne, annotazioni o qualsiasi altra cosa vogliate. Verrà visualizzato solo in questo modulo e in nessun altro.';
 $string['optionbookablebody'] = '{$a->title} è di nuovo disponibile. <a href="{$a->url}">Clicca qui</a> per andare direttamente lì.<br><br>';
 $string['optionbookabletitle'] = '{$a->title} è di nuovo disponibile';
 $string['optiondate'] = 'Data';
 $string['optiondateend'] = 'Fine';
+$string['optiondates'] = 'Sessione di date multiple';
 $string['optiondatesmanager'] = 'Gestire le date delle opzioni';
 $string['optiondatesmessage'] = 'Sessione {$a->number}: {$a->date} <br> Da: {$a->starttime} <br> A: {$a->endtime}';
 $string['optiondatessuccessfullydelete'] = 'Session time was deleted.';
@@ -1200,134 +860,12 @@ $string['pdfportrait'] = 'Verticale';
 $string['pluginadministration'] = 'Amministrazione delle prenotazioni';
 $string['pluginname'] = 'Prenotazione';
 $string['pollurl'] = 'URL del sondaggio';
-$string['pollurl_help'] = 'Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Riepilogo dettagliato dell\'opzione di prenotazione (incl. sessioni e link all\'opzione di prenotazione)</li>
-<li>{gotobookingoption} - Link all\'opzione di prenotazione</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - Email utente</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Inserisci il codice QR con l\'ID utente</li>
-<li>{qr_username} -Inserisci il codice QR con il nome utente dell\'utente</li>
-<li>{times} - Tempi di sessione</li>
-<li>{shorturl} - URL breve dell\'opzione</li>
-<li>{usercalendarurl} - Link per iscriversi al calendario utente (eventi personali)Link per iscriversi al calendario dei corsi (eventi del corso)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['pollurlteachers'] = 'URL sondaggio insegnanti';
-$string['pollurlteachers_help'] = 'Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{numberparticipants} - Number of participants (without waiting list)</li>
-<li>{numberwaitinglist} - Number of participants on the waiting list</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['pollurlteacherstext'] = 'Messaggio per l\'URL del sondaggio inviato agli insegnanti';
-$string['pollurlteacherstext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['pollurlteacherstextmessage'] = 'Si prega di rispondere al sondaggio:
 URL sondaggio: <a href="{pollurlteachers}" target="_blank">{pollurlteachers}</a>';
 $string['pollurlteacherstextsubject'] = 'Si prega di rispondere al sondaggio';
 $string['pollurltext'] = 'Messaggio per l\'invio dell\'URL del sondaggio agli utenti prenotati';
-$string['pollurltext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['pollurltextmessage'] = 'Si prega di rispondere al sondaggio:
 
 URL del sondaggio: <a href="{pollurl}" target="_blank">{pollurl}</a>';
@@ -1344,10 +882,8 @@ $string['pricecategoriessubtitle'] = '<p>Qui è possibile definire diverse categ
     <b>Fate attenzione:</b> Una volta aggiunta una categoria, non è possibile eliminarla.
     È possibile solo disattivarla o rinominarla.</p>';
 $string['pricecategory'] = 'Categoria di prezzo';
-$string['pricecategory_changed'] = 'Categoria di prezzo modificata';
 $string['pricecategoryfield'] = 'Campo del profilo utente per la categoria di prezzo';
 $string['pricecategoryfielddesc'] = 'Scegliere il campo del profilo utente, che memorizza l\'identificativo della categoria di prezzo per ogni utente.';
-$string['pricecategoryfieldoff'] = 'Non mostrare';
 $string['pricecategoryidentifier'] = 'Identificatore della categoria di prezzo';
 $string['pricecategoryidentifier_help'] = 'Inserire un breve testo per identificare la categoria, ad esempio "stud" o "acad".';
 $string['pricecategoryname'] = 'Nome della categoria di prezzo';
@@ -1363,37 +899,6 @@ $string['priceformulamultiply_help'] = 'Valore aggiuntivo con cui <strong>moltip
 $string['priceformulaoff'] = 'Impedire il ricalcolo dei prezzi';
 $string['priceformulaoff_help'] = 'Attivare questa opzione per evitare che la funzione "Calcola tutti i prezzi dall\'istanza con formula" ricalcoli i prezzi per questa opzione di prenotazione.
  con formula" ricalcoli i prezzi per questa opzione di prenotazione.';
-$string['privacy:metadata:booking_answers'] = 'Rappresenta la prenotazione di un evento';
-$string['privacy:metadata:booking_answers:bookingid'] = 'ID dell\'istanza di prenotazione';
-$string['privacy:metadata:booking_answers:completed'] = 'L\'utente che ha prenotato ha completato l\'attività';
-$string['privacy:metadata:booking_answers:frombookingid'] = 'ID della prenotazione collegata';
-$string['privacy:metadata:booking_answers:notes'] = 'Note aggiuntive';
-$string['privacy:metadata:booking_answers:numrec'] = 'Numero di record';
-$string['privacy:metadata:booking_answers:optionid'] = 'ID dell\'opzione di prenotazione';
-$string['privacy:metadata:booking_answers:status'] = 'Informazioni sullo stato di questa prenotazione';
-$string['privacy:metadata:booking_answers:timecreated'] = 'Indicatore orario al momento della creazione della prenotazione';
-$string['privacy:metadata:booking_answers:timemodified'] = 'Indicatore orario dell\'ultima modifica della prenotazione';
-$string['privacy:metadata:booking_answers:userid'] = 'Utente prenotato per questo evento';
-$string['privacy:metadata:booking_answers:waitinglist'] = 'Vero se l\'utente è in lista d\'attesa';
-$string['privacy:metadata:booking_icalsequence'] = 'Sequenza Ical';
-$string['privacy:metadata:booking_icalsequence:optionid'] = 'ID opzione di prenotazione per ical';
-$string['privacy:metadata:booking_icalsequence:sequencevalue'] = 'Valore di sequenza dell\'Ical';
-$string['privacy:metadata:booking_icalsequence:userid'] = 'ID utente per ical';
-$string['privacy:metadata:booking_ratings'] = 'La vostra valutazione di un evento';
-$string['privacy:metadata:booking_ratings:optionid'] = 'ID dell\'opzione di prenotazione valutata';
-$string['privacy:metadata:booking_ratings:rate'] = 'Tariffa assegnata';
-$string['privacy:metadata:booking_ratings:userid'] = 'Utente che ha valutato questo evento';
-$string['privacy:metadata:booking_teachers'] = 'Insegnante/i di un evento';
-$string['privacy:metadata:booking_teachers:bookingid'] = 'ID dell\'istanza di prenotazione per l\'insegnante';
-$string['privacy:metadata:booking_teachers:calendarid'] = 'ID dell\'evento del calendario per l\'insegnante';
-$string['privacy:metadata:booking_teachers:completed'] = 'Se il compito è completato per l\'insegnante';
-$string['privacy:metadata:booking_teachers:optionid'] = 'ID dell\'opzione di prenotazione che viene appresa';
-$string['privacy:metadata:booking_teachers:userid'] = 'Utente che sta insegnando questo evento';
-$string['privacy:metadata:booking_userevents'] = 'Eventi dell\'utente nel calendario';
-$string['privacy:metadata:booking_userevents:eventid'] = 'ID dell\'evento nella tabella eventi';
-$string['privacy:metadata:booking_userevents:optiondateid'] = 'ID di optiondate (sessione) per l\'evento utente';
-$string['privacy:metadata:booking_userevents:optionid'] = 'ID dell\'opzione di prenotazione per l\'evento dell\'utente';
-$string['privacy:metadata:booking_userevents:userid'] = 'ID utente per l\'evento utente';
 $string['problemsofcohortorgroupbooking'] = '<br><p>Non tutti gli utenti possono essere prenotati con la prenotazione di gruppo globale:</p> <ul>
 <li>Gli utenti di {$a->notenrolledusers} non sono iscritti al corso</li>
 <li>{$a->notsubscribedusers} utenti non hanno prenotato per altri motivi</li>
@@ -1410,9 +915,6 @@ $string['recalculateall'] = 'Calcolare tutti i prezzi';
 $string['recalculateprices'] = 'Calcolare tutti i prezzi dall\'istanza con la formula';
 $string['recreategroup'] = 'Ricrea il gruppo nel corso di destinazione e iscrivi gli utenti nel gruppo';
 $string['recurringheader'] = 'Opzioni ricorrenti';
-$string['reminder1_sent'] = 'Primo promemoria inviato';
-$string['reminder2_sent'] = 'Secondo promemoria inviato';
-$string['reminder_teacher_sent'] = 'Invio di un promemoria per gli insegnanti';
 $string['removeafterminutes'] = 'Rimuovi il completamento dell\'attività dopo N minuti';
 $string['removeresponses'] = 'Rimuovi tutte le risposte';
 $string['removeuseronunenrol'] = 'Rimuovere l\'utente dalla prenotazione al momento della disiscrizione dal corso associato?';
@@ -1431,9 +933,6 @@ $string['responsesfields'] = 'Campi nella pagina di gestione delle risposte';
 $string['responsesto'] = 'Risposte a {$a}';
 $string['restrictanswerperiodclosing'] = 'L\'opzione di prenotazione è disponibile fino a una certa data';
 $string['restrictanswerperiodopening'] = 'L\'opzione di prenotazione è disponibile solo dopo una certa data.';
-$string['restrictwithcustomuserprofilefield'] = 'Un campo del profilo utente personalizzato deve avere un determinato valore';
-$string['restrictwithpreviouslybooked'] = 'L\'utente ha prenotato in precedenza una determinata opzione';
-$string['restrictwithuserprofilefield'] = 'Un campo del profilo utente scelto deve avere un determinato valore';
 $string['resultofcohortorgroupbooking'] = '<p>Questo è il risultato della tua prenotazione di coorte:</p>
 <ul>
 <li>{$a->sumcohortmembers} utenti trovati nelle coorti selezionate</li>
@@ -1443,30 +942,6 @@ $string['resultofcohortorgroupbooking'] = '<p>Questo è il risultato della tua p
 $string['rootcategory'] = 'Radice';
 $string['roundpricesafterformula'] = 'Prezzi arrotondati (formula dei prezzi)';
 $string['roundpricesafterformula_desc'] = '';
-$string['rule_customprofilefield'] = 'Campo del profilo utente personalizzato';
-$string['rule_datefield'] = 'Campo data';
-$string['rule_days'] = 'Numero di giorni prima';
-$string['rule_daysbefore'] = 'Attivare n giorni prima di una certa data';
-$string['rule_daysbefore_desc'] = 'Scegliere un campo di data delle opzioni di prenotazione e il numero di giorni PRIMA di tale data.';
-$string['rule_event'] = 'Evento';
-$string['rule_mailtemplate'] = 'Modello di posta elettronica';
-$string['rule_name'] = 'Nome personalizzato della regola';
-$string['rule_operator'] = 'Operatore';
-$string['rule_optionfield'] = 'Campo opzione da confrontare';
-$string['rule_optionfield_address'] = 'Indirizzo (address)';
-$string['rule_optionfield_bookingclosingtime'] = 'Fine del periodo di prenotazione consentito (bookingclosingtime)';
-$string['rule_optionfield_bookingopeningtime'] = 'Inizio del periodo di prenotazione consentito (bookingopeningtime)';
-$string['rule_optionfield_courseendtime'] = 'Fine (courseendtime)';
-$string['rule_optionfield_coursestarttime'] = 'Inizio (coursestarttime)';
-$string['rule_optionfield_location'] = 'Luogo (luogo)';
-$string['rule_optionfield_text'] = 'Nome dell\'opzione di prenotazione (text)';
-$string['rule_react_on_event'] = 'Reagire all\'evento';
-$string['rule_react_on_event_desc'] = 'Scegliere un evento che deve attivare la regola.';
-$string['rule_sendmail_cpf'] = '[Preview] Inviare un\'e-mail all\'utente con un campo profilo personalizzato';
-$string['rule_sendmail_cpf_desc'] = 'Scegliere un evento che deve attivare la regola "Invia un\'e-mail". Inserire un modello di e-mail
- (si possono usare segnaposto come {bookingdetails}) e definire a quali utenti deve essere inviata l\'e-mail.
-  Esempio: Tutti gli utenti che hanno il valore "Centro di Vienna" in un campo del profilo utente personalizzato chiamato "Centro studi".';
-$string['rule_value'] = 'Valore';
 $string['saturday'] = 'Sabato';
 $string['saveinstanceastemplate'] = 'Aggiungi un\'istanza di prenotazione al modello';
 $string['savenewtagtemplate'] = 'Salva';
@@ -1482,10 +957,6 @@ $string['searchsurname'] = 'Cognome';
 $string['searchtag'] = 'Cerca tag';
 $string['searchwaitinglist'] = 'In lista d\'attesa';
 $string['select'] = 'Selezione';
-$string['select_student_in_bo'] = 'Selezionare gli utenti di un\'opzione di prenotazione';
-$string['select_teacher_in_bo'] = 'Selezionare gli insegnanti di un\'opzione di prenotazione';
-$string['select_user_from_event'] = 'Selezionare l\'utente dall\'evento';
-$string['select_users'] = 'Selezione diretta degli utenti senza collegamento all\'opzione di prenotazione';
 $string['selectanoption'] = 'Per favore, seleziona un\'opzione di prenotazione';
 $string['selectatleastoneuser'] = 'Per favore, seleziona almeno 1 utente!';
 $string['selectcategory'] = 'Seleziona la categoria genitore';
@@ -1506,9 +977,6 @@ $string['semesterssubtitle'] = 'Qui è possibile aggiungere, modificare o elimin
 Dopo il salvataggio, le voci saranno ordinate in base al loro <strong>start date in descending order</strong>';
 $string['semesterstart'] = 'Primo giorno del semestre';
 $string['semesterstart_help'] = 'Il giorno dell\'inizio del semestre.';
-$string['send_mail'] = 'Inviare l\'e-mail';
-$string['sendcopytobookingmanger'] = 'Inviare l\'e-mail di conferma al responsabile della prenotazione';
-$string['sendcustommessage'] = 'Invia messaggio personalizzato';
 $string['sendmailtobooker'] = 'Pagina "prenota altri utenti": invia un messaggio di posta all\'utente che prenota invece agli utenti che hanno prenotato';
 $string['sendmailtobooker_help'] = 'Attiva questa opzione per inviare mail di conferma della prenotazione all\'utente che prenota altri utenti invece che agli utenti che sono stati aggiunti a un\'opzione di prenotazione. Questo è rilevante solo per le prenotazioni effettuate nella pagina "prenota altri utenti".';
 $string['sendpollurltoteachers'] = 'Invia URL sondaggio';
@@ -1524,33 +992,16 @@ $string['sessionremindermailmessage'] = '<p>Tenete presente che: Siete prenotati
 <p>Partecipante: {$a->participant}</p>';
 $string['sessionremindermailsubject'] = 'Promemoria: hai una sessione imminente';
 $string['sessions'] = 'Sessione/i';
-$string['shortcodeslistofbookingoptions'] = 'Elenco delle opzioni di prenotazione';
-$string['shorturl'] = 'URL breve di questa opzione';
-$string['showactive'] = 'Prenotazioni attive';
-$string['showallbookings'] = 'Tutte le prenotazioni';
 $string['showcoursenameandbutton'] = 'Mostra il nome del corso, le informazioni brevi e un pulsante che reindirizza alle opzioni di prenotazione disponibili';
 $string['showcustomfields'] = 'Campi delle opzioni di prenotazione personalizzate';
 $string['showcustomfields_desc'] = 'Seleziona i campi delle opzioni di prenotazione personalizzate da mostrare nel foglio presenza';
 $string['showdates'] = 'Visualizza le date';
 $string['showdescription'] = 'Visualizza la descrizione';
-$string['showdescriptioninline'] = 'Visualizza le descrizioni complete in linea (proprio all\'interno della tabella)';
-$string['showdescriptionmodal'] = 'Visualizza i link informativi (predefinito)';
-$string['showdescriptionmode'] = 'Seleziona la modalità di descrizione';
-$string['showdescriptionmode_help'] = 'È possibile selezionare come visualizzare le descrizioni: puoi mostrarle solo dopo aver fatto clic sui link delle informazioni o in linea, direttamente all\'interno della tabella.';
-$string['showhelpfullnavigationlinks'] = 'Visualizza i link di navigazione.';
-$string['showhelpfullnavigationlinks_help'] = 'Visualizza i link \'Vai alla registrazione\' e \'Vai all\'inizio\'.';
 $string['showinapi'] = 'Visualizza nelle API?';
 $string['showlistoncoursepage'] = 'Mostra l\'elenco nella pagina del corso';
-$string['showlistoncoursepagelbl'] = 'Visualizza le opzioni di prenotazione disponibili sulla pagina del corso';
-$string['showlistoncoursepagelbl_help'] = 'Attivado questa impostazione, verrà visualizzato un elenco di opzioni di prenotazione disponibili
-                                             Visualizzato proprio nella pagina del corso sotto il link dell\'istanza di prenotazione.
-                                             Puoi anche scegliere di visualizzare solo il nome del corso, una breve informazione e un pulsante
-                                             reindirizzamento alle opzioni di prenotazione disponibili.';
 $string['showmybookingsonly'] = 'Le mie prenotazioni';
-$string['showonlymyinstitutions'] = 'La mia istituzione';
 $string['showprogressbars'] = 'Mostra le barre di avanzamento del tempo trascorso';
 $string['showviews'] = 'Visualizzazioni da elencare nella panoramica delle opzioni di prenotazione';
-$string['sign_in_sheet_download'] = 'Download sign-in sheet';
 $string['signature'] = 'Firma';
 $string['signinadddatemanually'] = 'Aggiungere manualmente la data';
 $string['signinaddemptyrows'] = 'Aggiungi righe vuote';
@@ -1558,7 +1009,6 @@ $string['signincustfields'] = 'Campi personalizzati del profilo';
 $string['signincustfields_desc'] = 'Seleziona i campi personalizzati del profilo da visualizzare nel foglio firme';
 $string['signinextracols'] = 'Colonna aggiuntiva';
 $string['signinextracols_desc'] = 'Puoi stampare fino a 3 colonne aggiuntive sul foglio firme. Inserisci il titolo della colonna o lascialo vuoto per non aggiungere colonne aggiuntive';
-$string['signinextracols_heading'] = 'Colonne aggiuntive nel foglio firme';
 $string['signinextrasessioncols'] = 'Aggiungi colonne supplementari per le date';
 $string['signinhidedate'] = 'Nascondi la data';
 $string['signinlogo'] = 'Logo da visualizzare sul foglio firme';
@@ -1572,15 +1022,8 @@ $string['signinsheetfields'] = 'Campi del foglio firme (PDF)';
 $string['signinsheetlocation'] = 'Luogo:';
 $string['spaceleft'] = 'spazio disponibile';
 $string['spacesleft'] = 'spazi disponibili';
-$string['startendtimeknown'] = 'L\'ora di inizio e di fine del corso è nota';
 $string['starttimenotset'] = 'Data di inizio non impostata';
 $string['status'] = 'Stato';
-$string['status_attending'] = 'Partecipazione';
-$string['status_complete'] = 'Completato';
-$string['status_failed'] = 'Non andato a buon fine';
-$string['status_incomplete'] = 'Incompleto';
-$string['status_noshow'] = 'Assente';
-$string['status_unknown'] = 'Sconosciuto';
 $string['statuschangetext'] = 'Messaggio di modifica dello stato';
 $string['statuschangetextmessage'] = 'Gentile {$a->participant},
 
@@ -1598,7 +1041,6 @@ $string['studentbooked'] = 'Utenti che hanno prenotato';
 $string['studentdeleted'] = 'Utenti già cancellati';
 $string['studentnotificationlist'] = 'Utenti nell\'elenco di notifica';
 $string['studentwaitinglist'] = 'Utenti in lista d\'attesa';
-$string['submitandaddnew'] = 'Salva e aggiungi nuovo';
 $string['submitandgoback'] = 'Salva e torna indietro';
 $string['subscribersto'] = 'Docenti di \'{$a}\'';
 $string['subscribetocourse'] = 'Iscrivi gli utenti al corso';
@@ -1606,36 +1048,18 @@ $string['subscribeuser'] = 'Vuoi iscrivere gli utenti al seguente corso?';
 $string['substitutions'] = 'Sostituzione/i';
 $string['successfulcalculation'] = 'Calcolo del prezzo riuscito!';
 $string['successfulldeleted'] = 'La categoria è stata eliminata.';
-$string['successfulldeletedinstitution'] = 'L\'istituzione è stata eliminata';
 $string['sucesfullcompleted'] = 'L\'attività è stata completata correttamente dagli utenti.';
 $string['sucesfullytransfered'] = 'Gli utenti sono stati trasferiti correttamente.';
-$string['sum_units'] = 'Somma di unità';
 $string['sunday'] = 'Domenica';
-$string['tableheader_courseendtime'] = 'Fine del corso';
-$string['tableheader_coursestarttime'] = 'Inizio del corso';
-$string['tableheader_maxanswers'] = 'Posti disponibili';
-$string['tableheader_maxoverbooking'] = 'Posti in lista d\'attesa';
-$string['tableheader_minanswers'] = 'Numero minimo di partecipanti';
-$string['tableheader_teacher'] = 'Insegnante/i';
-$string['tableheader_text'] = 'Nome del corso';
 $string['tagdeleted'] = 'Il modello di tag è stato eliminato.';
 $string['tagsuccessfullysaved'] = 'Il tag è stato salvato.';
 $string['tagtag'] = 'Tag';
 $string['tagtemplates'] = 'Modelli di tag';
 $string['tagtext'] = 'Testo';
 $string['taken'] = 'Occupato';
-$string['task_clean_booking_db'] = 'Prenotazione: Database pulito';
-$string['task_enrol_bookedusers_tocourse'] = 'Prenotazione: Iscrivere gli utenti prenotati al corso';
-$string['task_remove_activity_completion'] = 'Prenotazione: Rimuovere il completamento dell\'attività';
-$string['task_send_completion_mails'] = 'Prenotazione: Invio di e-mail di completamento';
-$string['task_send_confirmation_mails'] = 'Prenotazione: Invio di e-mail di conferma';
-$string['task_send_mail_by_rule_adhoc'] = 'Prenotazione: Inviare email per regola (attività ad hoc)';
-$string['task_send_notification_mails'] = 'Prenotazione: Invio di e-mail di notifica';
-$string['task_send_reminder_mails'] = 'Prenotazione: Inviare e-mail di promemoria';
 $string['teacher'] = 'Insegnante';
 $string['teacherroleid'] = 'Iscrivi il docente al corso con quel ruolo';
 $string['teachers'] = 'Docenti';
-$string['teachers_instance_report'] = 'Rapporto degli insegnanti';
 $string['teachersforoption'] = 'Insegnanti';
 $string['teachingreportforinstance'] = 'Rapporto di sintesi sull\'insegnamento per';
 $string['teachingreportfortrainer'] = 'Relazione sulle unità didattiche svolte per il formatore';
@@ -1651,8 +1075,6 @@ $string['timerestrict'] = 'Limita la risposta a questo periodo di tempo: questa 
 $string['titleprefix'] = 'Prefisso';
 $string['titleprefix_help'] = 'Aggiungere un prefisso che verrà visualizzato prima del titolo dell\'opzione, ad esempio "BB42".';
 $string['to'] = 'a';
-$string['toggleformmode_expert'] = '<i class="fa fa-expand" aria-hidden="true"></i> Passare alla modalità esperto';
-$string['toggleformmode_simple'] = '<i class="fa fa-compress" aria-hidden="true"></i> Passare alla modalità semplice';
 $string['toomuchusersbooked'] = 'Il numero massimo di utenti che puoi prenotare è: {$a}';
 $string['topic'] = 'Argomento';
 $string['transefusers'] = 'Trasferisci utenti';
@@ -1666,8 +1088,6 @@ $string['tuesday'] = 'Martedì';
 $string['undocancelreason'] = 'Volete davvero annullare la cancellazione di questa opzione di prenotazione?';
 $string['undocancelthisbookingoption'] = 'Annulla la cancellazione di questa opzione di prenotazione';
 $string['units'] = 'Unità';
-$string['units_courses'] = 'Corsi / Unità';
-$string['units_unknown'] = 'Numero di unità sconosciuto';
 $string['unlimitedplaces'] = 'Illimitato';
 $string['updatebooking'] = 'Modifica questa opzione di prenotazione';
 $string['uploadheaderimages'] = 'Immagini di intestazione per le opzioni di prenotazione';
@@ -1698,7 +1118,6 @@ $string['waitinglist'] = 'Lista d\'attesa';
 $string['waitinglistenoughmessage'] = 'Ancora abbastanza posti in lista d\'attesa disponibili.';
 $string['waitinglistfullmessage'] = 'Nessun posto disponibile in lista d\'attesa.';
 $string['waitinglistinfotexts'] = 'Mostra i testi delle informazioni sulla disponibilità per la lista d\'attesa';
-$string['waitinglistinfotexts_info'] = 'Mostra brevi messaggi informativi invece del numero di posti disponibili in lista d\'attesa.';
 $string['waitinglistlowmessage'] = 'Sono rimasti solo pochi posti in lista d\'attesa.';
 $string['waitinglistlowpercentage'] = 'Percentuale di messaggi in lista d\'attesa in esaurimento';
 $string['waitinglistlowpercentagedesc'] = 'Se i posti disponibili in lista d\'attesa raggiungono o scendono al di sotto di questa percentuale verrà visualizzato un messaggio di lista d\'attesa in esaurimento.';
@@ -1706,37 +1125,6 @@ $string['waitinglisttaken'] = 'In lista d\'attesa';
 $string['waitinglistusers'] = 'Utenti in lista d\'attesa';
 $string['waitingplacesavailable'] = 'Posti in lista d\'attesa disponibili: {$a->overbookingavailable} of {$a->maxoverbooking}';
 $string['waitingtext'] = 'Conferma lista d\'attesa';
-$string['waitingtext_help'] = 'Lascia vuoto questo campo per utilizzare il testo predefinito del sito. Puoi utilizzare uno dei seguenti segnaposto nel testo:
-<ul>
-<li>{bookingdetails} - Detailed summary of the booking option (incl. sessions und link to booking option)</li>
-<li>{gotobookingoption} - Link to booking option</li>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{email} - User email</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-<li>{pollurlteachers}</li>
-<li>{location}</li>
-<li>{institution}</li>
-<li>{address}</li>
-<li>{eventtype}</li>
-<li>{teacher}</li>
-<li>{teacherN} - N is number of teacher ex. {teacher1}</li>
-<li>{pollstartdate}</li>
-<li>{qr_id} - Insert QR code with user id</li>
-<li>{qr_username} - Insert QR code with user username</li>
-<li>{times} - Session times</li>
-<li>{shorturl} - Short URL of option</li>
-<li>{usercalendarurl} - Link to subscribe to user calendar (personal events)</li>
-<li>{coursecalendarurl} - Link to subscribe to course calendar (course events)</li>
-</ul>';
 $string['waitingtextmessage'] = 'Ora siete in lista d\'attesa per:
 
 {$a->bookingdetails}

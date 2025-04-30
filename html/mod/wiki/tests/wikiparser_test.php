@@ -39,7 +39,7 @@ require_once($CFG->dirroot . '/mod/wiki/parser/parser.php');
  *
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class wikiparser_test extends \advanced_testcase {
+final class wikiparser_test extends \advanced_testcase {
 
     /**
      * URL inside the clickable text of some link should not be turned into a new link via the url_tag_rule.
@@ -49,7 +49,7 @@ class wikiparser_test extends \advanced_testcase {
      * @param string $input The input text.
      * @param string $output The expected output HTML as a result of the parsed input text.
      */
-    public function test_urls_inside_link_text(string $markup, string $input, string $output) {
+    public function test_urls_inside_link_text(string $markup, string $input, string $output): void {
 
         $parsingresult = wiki_parser_proxy::parse($input, $markup, [
             'link_callback' => '/mod/wiki/locallib.php:wiki_parser_link',
@@ -64,7 +64,7 @@ class wikiparser_test extends \advanced_testcase {
      *
      * @return array
      */
-    public function urls_inside_link_text_provider() {
+    public static function urls_inside_link_text_provider(): array {
         return [
             'creole implicit link' => [
                 'markup' => 'creole',
@@ -171,7 +171,7 @@ class wikiparser_test extends \advanced_testcase {
      * - The edit link points to the right page,
      * - The links properly works with get_section.
      */
-    public function test_special_headings() {
+    public function test_special_headings(): void {
 
         // First testing HTML markup.
 
@@ -340,7 +340,7 @@ class wikiparser_test extends \advanced_testcase {
      * @covers \wiki_parser_proxy::parse
      * @dataProvider format_parser_provider
      */
-    public function test_format_parser(string $format, string $expected) {
+    public function test_format_parser(string $format, string $expected): void {
         $this->resetAfterTest();
         $this->setAdminUser();
         $generator = $this->getDataGenerator();

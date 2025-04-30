@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'eu', version '4.1'.
+ * Strings for component 'format_topics', language 'eu', version '4.4'.
  *
  * @package     format_topics
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Gehitu gaia';
-$string['currentsection'] = 'Gai hau';
-$string['deletesection'] = 'Ezabatu gaia';
-$string['editsection'] = 'Editatu gaia';
-$string['editsectionname'] = 'Editatu gaiaren izena';
-$string['hidefromothers'] = 'Ezkutatu gaia';
+$string['currentsection'] = 'Atal hau';
+$string['hidefromothers'] = 'Ezkutatu';
 $string['indentation'] = 'Baimendu koskatzea ikastaro-orrian';
 $string['indentation_help'] = 'Baimendu irakasleek eta jarduerak kudeatzeko baimenak dituzten bestelako erabiltzaileek elementuak ikastaro-orrian koskatzea.';
-$string['newsectionname'] = 'izen berria {$a} gairako';
-$string['page-course-view-topics'] = 'Gai-formatuko edozein ikastaroko hasiera-orria';
-$string['page-course-view-topics-x'] = 'Gai-formatuko edozein ikastaro-orri';
-$string['pluginname'] = 'Gai-formatua';
-$string['privacy:metadata'] = 'Gai-formatua pluginak ez du datu pertsonalik biltzen.';
+$string['legacysectionname'] = 'Gaia';
+$string['newsection'] = 'Atal berria';
+$string['page-course-view-topics'] = 'Atal pertsonalizatuak formatuko edozein ikastaroko hasiera-orria';
+$string['page-course-view-topics-x'] = 'Atal pertsonalizatuak formatuko edozein ikastaro-orri';
+$string['plugin_description'] = 'Ikastaroa atal pertsonalizatuetan antolatuta dago.';
+$string['pluginname'] = 'Atal pertsonalizatuak';
+$string['privacy:metadata'] = 'Atal pertsonalizatuak formatua pluginak ez du datu pertsonalik biltzen.';
 $string['section0name'] = 'Orokorra';
-$string['sectionname'] = 'Gaia';
-$string['showfromothers'] = 'Erakutsi gaia';
+$string['section_highlight_feedback'] = '{$a->name} atala nabarmenduta.';
+$string['section_unhighlight_feedback'] = '{$a->name} atalaren nabarmentzea kenduta.';
+$string['sectionname'] = 'Atala';
+$string['showfromothers'] = 'Erakutsi';

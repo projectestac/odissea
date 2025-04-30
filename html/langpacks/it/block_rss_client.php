@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'it', version '4.1'.
+ * Strings for component 'block_rss_client', language 'it', version '4.4'.
  *
  * @package     block_rss_client
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfeed'] = 'Aggiungi un URL di feed news:';
+$string['addfeed'] = 'Aggiungi un URL di feed RSS:';
 $string['addheadlineblock'] = 'Aggiungi il titolo per il blocco RSS';
 $string['addnew'] = 'Aggiungi nuovo';
 $string['addnewfeed'] = 'Aggiungi un feed';
@@ -34,16 +34,16 @@ $string['choosefeedlabel'] = 'Scegli quale feed rendere disponibile in questo bl
 $string['clientchannellink'] = 'Sito sorgente...';
 $string['clientnumentries'] = 'Numero predefinito di voci da visualzzare per ogni feed';
 $string['clientshowchannellinklabel'] = 'Si deve visualizzare un collegamento al sito originario (channel link)?<br/> (Da notare che se non è fornito alcun collegamento feed nel feed delle news, <br/>allora nessun collegamento verrà  visualizzato):';
-$string['clientshowimagelabel'] = 'Visualizza canale immagine se disponibile:';
+$string['clientshowimagelabel'] = 'Visualizza immagine del canale se disponibile:';
 $string['configblock'] = 'Configura questo blocco';
-$string['couldnotfindfeed'] = 'Non ho trovato il feed tramite l\'id';
+$string['couldnotfindfeed'] = 'Non è stato possibile trovare il feed tramite l\'ID';
 $string['couldnotfindloadrssfeed'] = 'Non è stato possibile trovare o caricare il feed RSS.';
-$string['customtitlelabel'] = 'Titolo personalizzato (lasciare in bianco per usare il titolo del feed originario):';
+$string['customtitlelabel'] = 'Titolo personalizzato (lasciare vuoto per visualizzare il titolo originale del feed):';
 $string['deletefeedconfirm'] = 'Sei sicuro di voler cancellare questo feed?';
 $string['disabledrssfeeds'] = 'I feed RSS sono disabilitati';
 $string['displaydescriptionlabel'] = 'Visualizza descrizione per ogni link?';
 $string['editafeed'] = 'Modifica un feed';
-$string['editfeeds'] = 'Modifica, sottoscrivi o revoca l\'iscrizione al feed news RSS/Atom';
+$string['editfeeds'] = 'Modifica, sottoscrivi o revoca sottoscrizione al feed RSS';
 $string['editnewsfeeds'] = 'Modifica feed di news';
 $string['editrssblock'] = 'Modifica titolo blocco RSS';
 $string['enableautodiscovery'] = 'Abilita l\'individuazione automatica dei feed';
@@ -51,20 +51,20 @@ $string['enableautodiscovery_help'] = 'Consente di trovare automaticamentei feed
 $string['failedfeed'] = 'Non è stato possibile scaricare il feed. Verrà effettuato un nuovo tentativo dopo {$a}';
 $string['failedfeeds'] = 'Non è stato possibile scaricare uno o più feed RSS.';
 $string['feed'] = 'Feed';
-$string['feedadded'] = 'Feed News aggiunto';
-$string['feeddeleted'] = 'Feed News eliminato';
-$string['feeds'] = 'Feed news';
+$string['feedadded'] = 'RSS Feed aggiunto';
+$string['feeddeleted'] = 'RSS Feed eliminato';
+$string['feeds'] = 'Feed RSS';
 $string['feedsaddedit'] = 'Aggiungi/modifica feed';
 $string['feedsconfigurenewinstance'] = 'Prima che questo blocco possa visualizzare un feed RSS, devi configurarlo facendo click qui.';
 $string['feedsconfigurenewinstance2'] = 'Per configurare il blocco e visualizzare i feed RSS devi fare click sull\'icona di modifica.';
-$string['feedupdated'] = 'Feed news Aggiornato';
+$string['feedupdated'] = 'Feed RSS aggiornato';
 $string['feedurl'] = 'URL del feed';
 $string['findmorefeeds'] = 'Trova altri feed RSS';
-$string['managefeeds'] = 'Gestisci tutti i miei feed';
+$string['managefeeds'] = 'Gestione feed RSS';
 $string['nofeeds'] = 'Non ci sono altri feed RSS definiti per questo sito.';
 $string['numentries'] = 'Elementi per feed';
-$string['pickfeed'] = 'Scegli un feed news';
-$string['pluginname'] = 'Feed RSS remoto';
+$string['pickfeed'] = 'Seleziona un feed RSS';
+$string['pluginname'] = 'Feed RSS';
 $string['privacy:metadata:block_rss_client:description'] = 'Descrizione del feed RSS.';
 $string['privacy:metadata:block_rss_client:preferredtitle'] = 'Titolo personalizzato del feed RSS.';
 $string['privacy:metadata:block_rss_client:shared'] = 'Disponibilità del feed RSS in tutti i corsi,';
@@ -75,13 +75,13 @@ $string['privacy:metadata:block_rss_client:title'] = 'Titolo del feed RSS';
 $string['privacy:metadata:block_rss_client:url'] = 'URL del feed RSS';
 $string['privacy:metadata:block_rss_client:userid'] = 'ID dell\'utente che ha aggiunto il feed RSS.';
 $string['refreshfeedstask'] = 'Aggiornamento feed RSS';
-$string['remotenewsfeed'] = 'Feed news remoto';
-$string['rss_client:addinstance'] = 'Aggiungere blocco Feed RSS remoto';
+$string['remotenewsfeed'] = 'Feed RSS';
+$string['rss_client:addinstance'] = 'Aggiungere blocco feed RSS';
 $string['rss_client:createprivatefeeds'] = 'Creare feed RSS privati';
 $string['rss_client:createsharedfeeds'] = 'Creare feed RSS condivisi';
 $string['rss_client:manageanyfeeds'] = 'Gestire qualsiasi feed RSS';
 $string['rss_client:manageownfeeds'] = 'Gestire i propri feed RSS';
-$string['rss_client:myaddinstance'] = 'Aggiungere blocco Feed RSS remoto nella Dashboard';
+$string['rss_client:myaddinstance'] = 'Aggiungere blocco feed RSS nella Dashboard';
 $string['seeallfeeds'] = 'Visualizza tutti i feed';
 $string['sharedfeed'] = 'Feed condivisi';
 $string['shownumentrieslabel'] = 'Numero massimo di voci da visualizzare per blocco.';
@@ -90,5 +90,5 @@ $string['submitters2'] = 'Creatori';
 $string['timeout'] = 'Tempo in minuti prima che un feed RSS sparisca dalla cache. Notare che questo tempo definisce il minimo intervallo prima della scomparsa; il feed sarà ripristinato nella cache alla prossima esecuzione del cron dopo la scomparsa. Valori raccomandati sono 30 min o superiori.';
 $string['timeout2'] = 'Timeout';
 $string['timeoutdesc'] = 'Tempo di permanenza nella cache di un RSS feed. (minuti)';
-$string['updatefeed'] = 'Aggiorna l\'URL di un feed News:';
+$string['updatefeed'] = 'Aggiorna l\'URL di un feed RSS';
 $string['viewfeed'] = 'Visualizza feed';

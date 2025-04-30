@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'it', version '4.1'.
+ * Strings for component 'qtype_essay', language 'it', version '4.4'.
  *
  * @package     qtype_essay
  * @category    string
@@ -64,13 +64,14 @@ $string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Creazione domanda Componimento';
 $string['pluginnameediting'] = 'Modifica domanda Componimento';
 $string['pluginnamesummary'] = 'Consente la creazione di domande la cui risposta  può essere il caricamento di o più file e/o la redazione di un testo online. La risposta dovrà essere valutata manualmente.';
-$string['privacy:metadata'] = 'Il plugin Tipi di domande \'Componimento\' non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin di tipo domanda Componimento consente agli autori delle domande di impostare opzioni predefinite come preferenze utente.';
 $string['privacy:preference:attachments'] = 'Numero di allegati consentiti.';
 $string['privacy:preference:attachmentsrequired'] = 'Numero di allegati richiesti.';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default impostato per una specifica domanda.';
 $string['privacy:preference:maxbytes'] = 'Dimensione massima del file.';
 $string['privacy:preference:responsefieldlines'] = 'Numero di linee del riquadro di input (Area di testo)';
 $string['privacy:preference:responseformat'] = 'Formato della risposta (HTML editor, plain text, ecc.).';
+$string['privacy:preference:responserequired'] = 'Opzione per indicare allo studente se l\'inserimento del testo è obbligatorio oppure no.';
 $string['responsefieldlines'] = 'Dimensione del riquadro di input';
 $string['responseformat'] = 'Formato risposta';
 $string['responseisrequired'] = 'L\'inserimento di testo è obbligatorio';

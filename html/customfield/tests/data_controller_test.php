@@ -31,8 +31,7 @@ use customfield_textarea;
  * @copyright  2018 Toni Barbera <toni@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class data_controller_test extends \advanced_testcase {
-
+final class data_controller_test extends \advanced_testcase {
     /**
      * Get generator.
      *
@@ -45,7 +44,7 @@ class data_controller_test extends \advanced_testcase {
     /**
      * Test for function data_controller::create()
      */
-    public function test_constructor() {
+    public function test_constructor(): void {
         global $DB;
         $this->resetAfterTest();
 
@@ -115,7 +114,7 @@ class data_controller_test extends \advanced_testcase {
     /**
      * Test for function \core_customfield\field_controller::create() in case of wrong parameters
      */
-    public function test_constructor_errors() {
+    public function test_constructor_errors(): void {
         global $DB;
         $this->resetAfterTest();
 

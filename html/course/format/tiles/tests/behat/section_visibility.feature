@@ -39,16 +39,24 @@ Feature: Show/hide course sections in format_tiles
     And I wait until the page is ready
     And I toggle expand or collapse section "1" for edit
     And I wait until the page is ready
-    And I add a "Forum" to section "1" and I fill the form with:
+    And I add a "forum" activity to course "Course 1" section "1"
+    And I wait until the page is ready
+    And I wait "2" seconds
+    And I set the following fields to these values:
       | Forum name   | Test hidden forum 11 name        |
       | Description  | Test hidden forum 11 description |
       | Availability | Hide on course page              |
+    And I press "Save and return to course"
     And I wait until the page is ready
     And I wait "1" seconds
-    And I add a "Forum" to section "1" and I fill the form with:
+    And I add a "forum" activity to course "Course 1" section "1"
+    And I wait until the page is ready
+    And I wait "2" seconds
+    And I set the following fields to these values:
       | Forum name   | Test hidden forum 12 name        |
       | Description  | Test hidden forum 12 description |
       | Availability | Show on course page              |
+    And I press "Save and return to course"
     And I wait until the page is ready
 
     And I am on "Course 1" course homepage
@@ -59,10 +67,14 @@ Feature: Show/hide course sections in format_tiles
     And I toggle expand or collapse section "2" for edit
     And I wait until the page is ready
     And I wait "1" seconds
-    And I add a "Forum" to section "2" and I fill the form with:
+    And I add a "forum" activity to course "Course 1" section "2"
+    And I wait until the page is ready
+    And I wait "2" seconds
+    And I set the following fields to these values:
       | Forum name   | Test hidden forum 21 name        |
       | Description  | Test hidden forum 21 description |
       | Availability | Hide on course page              |
+    And I press "Save and return to course"
     And I wait until the page is ready
     And activity in format tiles is dimmed "Test hidden forum 21 name"
 
@@ -74,18 +86,26 @@ Feature: Show/hide course sections in format_tiles
     And I toggle expand or collapse section "3" for edit
     And I wait until the page is ready
     And I wait "1" seconds
-    And I add a "Forum" to section "3" and I fill the form with:
+    And I add a "forum" activity to course "Course 1" section "3"
+    And I wait until the page is ready
+    And I wait "2" seconds
+    And I set the following fields to these values:
       | Forum name   | Test hidden forum 31 name        |
       | Description  | Test hidden forum 31 description |
       | Availability | Hide on course page              |
+    And I press "Save and return to course"
     And I wait until the page is ready
     And I wait "1" seconds
     And activity in format tiles is dimmed "Test hidden forum 31 name"
     And I wait "1" seconds
-    And I add a "Forum" to section "3" and I fill the form with:
+    And I add a "forum" activity to course "Course 1" section "3"
+    And I wait until the page is ready
+    And I wait "2" seconds
+    And I set the following fields to these values:
       | Forum name   | Test visible forum 32 name        |
       | Description  | Test visible forum 32 description |
       | Availability | Show on course page              |
+    And I press "Save and return to course"
     And I wait until the page is ready
     And I wait "1" seconds
     And activity in format tiles is not dimmed "Test hidden forum 31 name"

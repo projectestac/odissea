@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ro', version '4.1'.
+ * Strings for component 'tool_usertours', language 'ro', version '4.4'.
  *
  * @package     tool_usertours
  * @category    string
@@ -136,7 +136,6 @@ $string['placement_help'] = 'Un pas poate fi plasat deasupra, dedesubt, la stân
 
 Dacă pasul nu se potrivește pe o anumită pagină în locul specificat, acesta va fi plasat automat în altă parte.';
 $string['pluginname'] = 'Orientare utilizatori';
-$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'Ora la care ultimul utilizator a finalizat un tur al utilizatorului.';
 $string['privacy:metadata:preference:requested'] = 'Ora în care ultimul utilizator a solicitat manual un tur al utilizatorului.';
 $string['privacy:request:preference:completed'] = 'Ați marcat ultima dată turul utilizatorului „{$a->name}” ca finalizat la {$a->time}';
@@ -151,6 +150,9 @@ $string['selector_defaulttitle'] = 'Inserează un titlu descriptiv';
 $string['selectordisplayname'] = 'Un selector CSS care se potrivește cu „{$a}”';
 $string['selecttype'] = 'Selectați tipul de pas';
 $string['sharedtourslink'] = 'Depozit de tururi';
+$string['showtoureachtime'] = 'de fiecare dată când un filtru îi corespunde';
+$string['showtouruntilcomplete'] = 'până când a fost închis';
+$string['showtourwhen'] = 'Prezentare tur';
 $string['skip'] = 'Omite';
 $string['skip_tour'] = 'Omite turul';
 $string['target'] = 'Target';
@@ -250,6 +252,14 @@ $string['tour_activityinfo_course_teacher_content'] = 'Noile setări ale cursulu
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: Informații despre activitate';
 $string['tour_final_step_content'] = 'Acesta este sfârșitul turului dvs. de utilizator. Nu se va afișa din nou decât dacă îl resetați folosind linkul din subsol.';
 $string['tour_final_step_title'] = 'Sfârșitul turului';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div> Sortați coloanele și alegeți pe care să le afișați. În modul Editare, utilizați această comandă rapidă pentru a accesa task-uri frecvente legate de vizualizarea și editarea elementelor de notare.';
+$string['tour_gradebook_action_title'] = 'Legături rapide spre acțiuni';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtrează cursanții după inițialele prenumelui sau numelui de familie.';
+$string['tour_gradebook_filter_title'] = 'Filtrează după nume';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Folosește caseta de căutare pentru a găsi rapid anumiți cursanți.';
+$string['tour_gradebook_search_title'] = 'Găsește cursanții mai ușor';
+$string['tour_gradebook_tour_description'] = 'Funcțiile de căutare și navigare în raportul de evaluare din Catalogului de note';
+$string['tour_gradebook_tour_name'] = 'Raportul de note din Catalogul de note';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Postează noutăți importante aici.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Aveți un mesaj pentru toată lumea?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Adaugă conținut nou sau editează conținutul existent.';

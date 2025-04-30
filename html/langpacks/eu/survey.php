@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', version '4.1'.
+ * Strings for component 'survey', language 'eu', version '4.4'.
  *
  * @package     survey
  * @category    string
@@ -29,7 +29,6 @@ $string['actual'] = 'Benetakoa';
 $string['actualclass'] = 'Benetako klasea';
 $string['actualstudent'] = '{$a} benetakoa';
 $string['allquestionrequireanswer'] = 'Galdera guztiak beharrezkoak dira eta erantzun behar zaie.';
-$string['allquestions'] = 'Galdera guztiak ordenean, ikasle guztiak';
 $string['allscales'] = 'Eskala guztiak, ikasle guztiak';
 $string['alreadysubmitted'] = 'Hausnarketa hau bidali duzu dagoeneko';
 $string['analysisof'] = '{$a}(e)ren analisia';
@@ -96,7 +95,6 @@ $string['ciq5'] = 'Zerk harritu zaitu gehien?';
 $string['ciq5short'] = 'Une harrigarriena.';
 $string['ciqintro'] = 'Ikastaroko azken gertaerak gogoan dituzula, erantzun ondorengo galderei?';
 $string['ciqname'] = 'Gertaera larriak';
-$string['clicktocontinue'] = 'Egin klik hemen jarraitzeko';
 $string['clicktocontinuecheck'] = 'Egin klik hemen aztertu eta jarraitzeko';
 $string['colles1'] = 'Nire ikaste-jarduna interesatzen zaizkidan gaietara bideratuta dago.';
 $string['colles10'] = 'Beste ikasleei bere ideiak azaltzeko eskatzen diet.';
@@ -190,7 +188,7 @@ Zure erantzunek unitate hau etorkizunean hobetzen lagunduko digute.
 Eskerrik asko.';
 $string['collespname'] = 'COLLES (Nahia)';
 $string['completiondetail:submit'] = 'Erantzunak bidaltzea';
-$string['completionsubmit'] = 'Ikasleak bidalketa bat egin behar du';
+$string['completionsubmit'] = 'Bidalketa bat egitea';
 $string['customintro'] = 'Deskribapena';
 $string['deleteallanswers'] = 'Ezabatu hausnarketen erantzun guztiak';
 $string['deleteanalysis'] = 'Ezabatu erantzunen analisiak';
@@ -284,4 +282,3 @@ $string['surveytype_help'] = '3 hausnarketa mota daude eskuragarri:
 $string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Eskerrik asko erantzuteagatik, {$a}';
 $string['time'] = 'Denbora';
-$string['viewsurveyresponses'] = 'Ikusi hausnarketaren {$a} erantzun';

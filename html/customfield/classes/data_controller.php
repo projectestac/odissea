@@ -24,6 +24,7 @@
 
 namespace core_customfield;
 
+use backup_nested_element;
 use core_customfield\output\field_data;
 
 defined('MOODLE_INTERNAL') || die;
@@ -82,7 +83,7 @@ abstract class data_controller {
      * @throws \coding_exception
      * @throws \moodle_exception
      */
-    public static function create(int $id, \stdClass $record = null, field_controller $field = null) : data_controller {
+    public static function create(int $id, \stdClass $record = null, field_controller $field = null): data_controller {
         global $DB;
         if ($id && $record) {
             // This warning really should be in persistent as well.
@@ -122,7 +123,7 @@ abstract class data_controller {
      *
      * @return string
      */
-    public function get_form_element_name() : string {
+    public function get_form_element_name(): string {
         return 'customfield_' . $this->get_field()->get('shortname');
     }
 
@@ -160,7 +161,7 @@ abstract class data_controller {
      *
      * @return string
      */
-    abstract public function datafield() : string;
+    abstract public function datafield(): string;
 
     /**
      * Delete data. Element can override it if related information needs to be deleted as well (such as files)
@@ -185,7 +186,7 @@ abstract class data_controller {
      *
      * @return field_controller
      */
-    public function get_field() : field_controller {
+    public function get_field(): field_controller {
         return $this->field;
     }
 
@@ -223,7 +224,7 @@ abstract class data_controller {
      * @param mixed $value
      * @return bool
      */
-    protected function is_empty($value) : bool {
+    protected function is_empty($value): bool {
         if ($this->datafield() === 'value' || $this->datafield() === 'charvalue' || $this->datafield() === 'shortcharvalue') {
             return '' . $value === '';
         }
@@ -236,7 +237,7 @@ abstract class data_controller {
      * @param mixed $value
      * @return bool
      */
-    protected function is_unique($value) : bool {
+    protected function is_unique($value): bool {
         global $DB;
 
         // Ensure the "value" datafield can be safely compared across all databases.
@@ -261,7 +262,7 @@ abstract class data_controller {
      * @param array $files
      * @return array array of errors
      */
-    public function instance_form_validation(array $data, array $files) : array {
+    public function instance_form_validation(array $data, array $files): array {
         $errors = [];
         $elementname = $this->get_form_element_name();
         if ($this->get_field()->get_configdata_property('uniquevalues') == 1) {
@@ -287,7 +288,7 @@ abstract class data_controller {
      *
      * @return string
      */
-    public function display() : string {
+    public function display(): string {
         global $PAGE;
         $output = $PAGE->get_renderer('core_customfield');
         return $output->render(new field_data($this));
@@ -298,7 +299,7 @@ abstract class data_controller {
      *
      * @return mixed
      */
-    public abstract function get_default_value();
+    abstract public function get_default_value();
 
     /**
      * Returns the value as it is stored in the database or default value if data record is not present
@@ -317,7 +318,7 @@ abstract class data_controller {
      *
      * @return \context
      */
-    public function get_context() : \context {
+    public function get_context(): \context {
         if ($this->get('contextid')) {
             return \context::instance_by_id($this->get('contextid'));
         } else if ($this->get('instanceid')) {
@@ -333,7 +334,7 @@ abstract class data_controller {
      *
      * @param \MoodleQuickForm $mform
      */
-    public abstract function instance_form_definition(\MoodleQuickForm $mform);
+    abstract public function instance_form_definition(\MoodleQuickForm $mform);
 
     /**
      * Returns value in a human-readable format or default value if data record is not present
@@ -354,10 +355,33 @@ abstract class data_controller {
         } else if ($this->datafield() === 'decvalue') {
             return (float)$value;
         } else if ($this->datafield() === 'value') {
-            return format_text($value, $this->get('valueformat'), ['context' => $this->get_context()]);
+            return format_text($value, $this->get('valueformat'), [
+                'context' => $this->get_context(),
+                'trusted' => $this->get('valuetrust'),
+            ]);
         } else {
             return format_string($value, true, ['context' => $this->get_context()]);
         }
+    }
+
+    /**
+     * Callback for backup, allowing custom fields to add additional data to the backup.
+     * It is not an abstract method for backward compatibility reasons.
+     *
+     * @param \backup_nested_element $customfieldelement The custom field element to be backed up.
+     */
+    public function backup_define_structure(backup_nested_element $customfieldelement): void {
+    }
+
+    /**
+     * Callback for restore, allowing custom fields to restore additional data from the backup.
+     * It is not an abstract method for backward compatibility reasons.
+     *
+     * @param \restore_structure_step $step The restore step instance.
+     * @param int $newid The new ID for the custom field data after restore.
+     * @param int $oldid The original ID of the custom field data before backup.
+     */
+    public function restore_define_structure(\restore_structure_step $step, int $newid, int $oldid): void {
     }
 
     /**

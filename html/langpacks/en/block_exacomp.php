@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exacomp', language 'en', version '4.1'.
+ * Strings for component 'block_exacomp', language 'en', version '4.4'.
  *
  * @package     block_exacomp
  * @category    string
@@ -471,6 +471,8 @@ $string['pre_planning_storage_already_contains'] = 'Example is already in planni
 $string['pre_planning_storage_disabled'] = 'Hidden example can not be added to planning storage.';
 $string['pre_planning_storage_example_button'] = 'in my planning storage';
 $string['pre_planning_storage_popup_button'] = 'Planning storage';
+$string['preselect_delete_subject_because_it_is_disabled'] = 'Preselected for deletion because this subject is disabled in Komet';
+$string['preselect_delete_subject_because_it_was_not_imported_in_last_import'] = 'Preselected for deletion because this subject did not exist in the previous import task BUT is being used.';
 $string['print'] = 'Print';
 $string['privacy:metadata:block_exacompcmassign'] = 'Storage for auto grading mechanism: does not need to be exported';
 $string['privacy:metadata:block_exacompcmassign:coursemoduleid'] = 'Course module id';
@@ -587,6 +589,10 @@ $string['report_subject'] = 'educational standard';
 $string['report_type'] = 'type of report';
 $string['reports'] = 'Type of report';
 $string['result'] = 'result';
+$string['role:student'] = '';
+$string['role:students'] = '';
+$string['role:teacher'] = '';
+$string['role:teachers'] = '';
 $string['save'] = 'Save';
 $string['save_as_draft'] = 'Save interdisciplinary subject as draft';
 $string['save_changes_competence_evaluation'] = 'Changes were saved';
@@ -781,6 +787,8 @@ $string['subject_singular'] = 'Field of competence';
 $string['submission'] = 'Submission';
 $string['submissionmissing'] = 'At least one link or file must be submitted';
 $string['submit_example'] = 'Submit';
+$string['sync_all_grids_with_komet'] = 'Sync all grids with Komet';
+$string['sync_all_grids_with_komet_description'] = 'Keep only the Komet grids and competencies. Delete everything else unless a grid or competency is already in use';
 $string['tab_admin_configuration'] = 'Competence grids pre-selection';
 $string['tab_admin_import'] = 'Import/Export';
 $string['tab_admin_settings'] = 'Admin Settings';

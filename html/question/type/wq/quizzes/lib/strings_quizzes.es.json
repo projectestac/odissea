@@ -600,7 +600,7 @@
 		
 		"evaluate_keyword": "evaluar",
 		
-		"home_getting_started_welcome_header_text": "Presentamos WirisQuizzes 4.8.0: ahora con respuestas gráficas escritas a mano",
+		"home_getting_started_welcome_header_text": "Presentamos WirisQuizzes 4.12.0",
         "home_getting_started_welcome_description_text": "Nos complace presentar un nuevo tipo de respuesta que permite a sus alumnos responder escribiendo a mano un gráfico. Para obtener más información sobre esta función, consulte nuestras notas de la versión y la documentación. ¡Esperamos que usted y sus alumnos disfruten de esta nueva incorporación a WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Notas de la versión",
         "home_getting_give_us_feedback_button_text": "Haznos llegar tus comentarios",
@@ -640,8 +640,54 @@
 		"quizzes_studio_equivalent_set_assertion": "Igual como lista ya no está disponible",
 		"quizzes_studio_syntax_list_assertion": "Lista ya no está disponible",
 		"quizzes_studio_text_logic_operators" : "Operadores lógicos ya no están disponibles",
-		"quizzes_studio_equivalent_unit_literal" : "Unidad literalmente equivalente ya no está disponible"
+		"quizzes_studio_equivalent_unit_literal" : "Unidad literalmente equivalente ya no está disponible",
 
+		"quizzes_studio_math_multistep_switch_label" : "Guía automatizada para estudiantes",
+		"quizzes_studio_math_multistep_helper_panel_title" : "Has activado los comentarios automáticos para esta pregunta",
+		"quizzes_studio_math_multistep_helper_panel_description" : "Define el tipo de tarea que vas a crear y especifica los campos obligatorios. Nuestro motor generará los comentarios automáticamente. Puedes probar cómo verán tus estudiantes los comentarios. ",
+		"quizzes_studio_math_multistep_helper_panel_hyperlink" : "Más información",
+		"quizzes_studio_math_multistep_helper_panel_close_button" : "Cerrar panel",
+		"quizzes_studio_math_multistep_define_task_title" : "Definir la tarea",
+		"quizzes_studio_math_multistep_documentation_tooltip" : "Enlace a la documentación",
+		"quizzes_studio_math_multistep_type_of_task_label" : "Tipo de tarea",
+		"quizzes_studio_math_multistep_type_of_task_single_variable_equation": "Ecuación de una variable ",
+		"quizzes_studio_math_multistep_type_of_task_basic_operations": "Operaciones básicas ",
+		"quizzes_studio_math_multistep_type_of_task_dropdown_description": "Selecciona el campo en el menú desplegable. ",
+		"quizzes_studio_math_multistep_task_to_solve_label" : "Tarea a resolver ",
+		"quizzes_studio_math_multistep_task_to_solve_math_type_description": "No escribas aquí la respuesta correcta, solo la ecuación a resolver. ",
+		"quizzes_studio_math_multistep_random_variables_label" : "Variables aleatorias ",
+		"quizzes_studio_math_multistep_equation_variable_label" : "Variable de ecuación ",
+		"quizzes_studio_math_multistep_equation_variable_placeholder" : "Nombre de la variable",
+		"quizzes_studio_math_multistep_equation_variable_description" : "Especifica la variable única para la ecuación que se resolverá.",
+		"quizzes_studio_multistep_incorrect_feedback_label" : "Incorrecto",
+		"quizzes_studio_multistep_partially_correct_feedback_label" : "Casi listo",
+		"quizzes_studio_multistep_correct_feedback_label": "Correcto",
+		"quizzes_studio_test_question_multistep_feedback_empty": "Envía tus pasos para ver la guía automatizada para estudiantes",
+		"quizzes_studio_test_question_multistep_feedback_on_track": "Estás en el camino correcto. ¡Sigue así!",
+		"quizzes_studio_test_question_multistep_feedback_finished": "Has respondido correctamente a esta pregunta.",
+		"quizzes_studio_test_question_task_prompt_label_equation": "Resuelve la ecuación",
+		"quizzes_studio_test_question_task_prompt_label_basic_operations": "Realiza las operaciones",
+		"quizzes_studio_test_question_student_answer_test_button_label": "Prueba",
+		"quizzes_studio_test_question_student_answer_clear_button_label": "Borrar",
+
+    "quizzes_studio_math_input_options_input_syntax_multiplication_symbols_title": "Símbolos de multiplicación permitidos",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_label": "Multiplicación implícita",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_implicit_product_helper_text": "Convencionalmente acepta la multiplicación de elementos que se escriben consecutivamente. Ejemplo: 2y se interpreta como 2 veces y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_label": "Punto de multiplicación",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_dot_product_helper_text": "Los elementos con un punto o un asterisco denotan una multiplicación. Ejemplo: 2 · y se interpreta como 2 por y.",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_label": "Cruz de multiplicación",
+		"quizzes_studio_math_input_options_input_syntax_multiplication_symbols_cross_product_helper_text": "Los elementos con una cruz denotan una multiplicación. Ejemplo: 2 × y se interpreta como 2 veces y.",
+    
+		"quizzes_studio_math_multistep_task_to_solve_math_type_error": "Falta la tarea a resolver",
+		"quizzes_studio_math_multistep_equation_variable_error": "Falta el nombre de la variable",
+
+		"quizzes_studio_multistep_error_session_start_title": "Error",
+		"quizzes_studio_multistep_error_session_start_message": "Se ha producido un error al intentar cargar tu tarea. Inténtalo de nuevo o regresa para comprobar que la tarea esté definida correctamente.",
+		"quizzes_studio_multistep_error_session_start_try_again": "Inténtalo de nuevo",
+		"quizzes_studio_multistep_error_session_start_go_back": "Volver",
+		"quizzes_studio_multistep_error_session_start_contact_us": "Contáctanos",
+
+		"syntax_math_multistep": "Matemáticas con guía automatizada para estudiantes"
 	}
 }
 

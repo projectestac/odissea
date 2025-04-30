@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'eu', version '4.1'.
+ * Strings for component 'attendance', language 'eu', version '4.4'.
  *
  * @package     attendance
  * @category    string
@@ -284,7 +284,7 @@ $string['hidensessiondetails'] = 'Ezkutatu saioaren xehetasunak';
 $string['identifyby'] = 'Identifikatu ikasleak honen arabera:';
 $string['import'] = 'Inportatu';
 $string['importfile'] = 'Inportatu fitxategia';
-$string['importfile_help'] = 'Inportatu fitxategia';
+$string['importfile_help'] = 'CSV fitxategiak sortu beharreko taldeak, denbora eta saioen eremuak identifikatzen dituen goiburua izan behar du.<br/> Fitxategia igo ondorengoko orriak lotu ditzakezun eremu guztien adibideak erakutsiko dizkizu.<br/>Adibidea:<br/>groups;sessiondate;from;to<br/>groupA:05-10-2022;13:00;14:00<br/>groupB;05-10-2022;14:00;15:00';
 $string['importsessions'] = 'Inportatu saioak';
 $string['importstatus'] = 'Egoera-eremua';
 $string['importstatus_help'] = 'Eremu honek inportatzerakoan egoera adierazteko aukera ematen du - esaterako E, S edo B balioak';

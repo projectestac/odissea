@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'sv', version '4.1'.
+ * Strings for component 'availability', language 'sv', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,7 @@ $string['addrestriction'] = 'Lägg till begränsning...';
 $string['and'] = 'och';
 $string['condition_group'] = 'Begränsningar';
 $string['condition_group_info'] = 'Lägg till en uppsättning nästlade begränsningar för att tillämpa komplex logik.';
+$string['editsettings'] = 'Redigera inställningar';
 $string['enableavailability'] = 'Aktivera begränsad åtkomst';
 $string['enableavailability_desc'] = 'När detta är aktiverat kan du ange villkor (t.ex. datum, betyg eller slutförande) för att styra åtkomsten till aktiviteten.';
 $string['error_list_nochildren'] = 'Kombination av begränsningar måste innehålla minst ett villkor';

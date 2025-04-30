@@ -45,7 +45,7 @@ class overrides implements \cache_data_source {
      * specified by this interface.
      *
      * @param cache_definition $definition
-     * @return object
+     * @return stdClass
      */
     public static function get_instance_for_cache(cache_definition $definition): overrides {
         if (is_null(self::$instance)) {
@@ -63,6 +63,11 @@ class overrides implements \cache_data_source {
      */
     public function load_for_cache($key) {
         global $DB;
+
+        // Ignore getting data if this is a cache invalidation - {@see \cache_helper::purge_by_event()}.
+        if ($key == 'lastinvalidation') {
+            return null;
+        }
 
         [$quizid, $ug, $ugid] = explode('_', $key);
         $quizid = (int) $quizid;

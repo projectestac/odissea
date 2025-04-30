@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'sv', version '4.1'.
+ * Strings for component 'h5p', language 'sv', version '4.4'.
  *
  * @package     h5p
  * @category    string
@@ -126,6 +126,7 @@ $string['h5ppackage_help'] = 'En H5P-innehållstyp är en fil med en H5P- eller 
 $string['h5pprivatefile'] = 'Det här H5P-innehållet kan inte visas eftersom du inte har tillgång till .h5p-filen.';
 $string['h5psettings'] = 'Inställningar';
 $string['h5ptitle'] = 'Besök h5p.org för att se mer innehåll.';
+$string['height'] = 'höjd';
 $string['helpChoosingLicense'] = 'Hjälp mig välja licenstyp';
 $string['hideadvanced'] = 'Dölj avancerade inställningar';
 $string['icon'] = 'Ikon';

@@ -42,6 +42,7 @@ class course_module_viewed extends \core\event\course_module_viewed {
     }
 
     // TODO: Delete after 2.8 upgrade
+
     /**
      * Returns description of what happened.
      *
@@ -57,13 +58,20 @@ class course_module_viewed extends \core\event\course_module_viewed {
      * @return array|null
      */
     protected function get_legacy_logdata() {
-        return array($this->courseid, 'jclic', 'view', 'view.php?id=' . $this->context->instanceid, $this->objectid,
-            $this->context->instanceid);
+        return [
+            $this->courseid,
+            'jclic',
+            'view',
+            'view.php?id=' . $this->context->instanceid,
+            $this->objectid,
+            $this->context->instanceid,
+        ];
     }
 
     /**
      * Return localised event name.
      *
+     * @throws \coding_exception
      * @return string
      */
     public static function get_name() {
@@ -73,10 +81,11 @@ class course_module_viewed extends \core\event\course_module_viewed {
     /**
      * Get URL related to the action.
      *
+     * @throws \moodle_exception
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/mod/jclic/view.php', array('id' => $this->contextinstanceid));
+        return new \moodle_url('/mod/jclic/view.php', ['id' => $this->contextinstanceid]);
     }
 
     /**

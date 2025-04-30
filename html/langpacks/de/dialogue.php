@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dialogue', language 'de', version '4.1'.
+ * Strings for component 'dialogue', language 'de', version '4.4'.
  *
  * @package     dialogue
  * @category    string
@@ -39,6 +39,7 @@ $string['cachedef_unreadcounts'] = 'Anzahl ungelesene Mitteilungen einer Person 
 $string['cachedef_userdetails'] = 'Nutzerdetails (Kurs), alle eingeschriebenen Nutzer/innen';
 $string['cannotclosedraftconversation'] = 'Eine Konversation, die nicht gestartet wurde, kann nicht abgeschlossen werden!';
 $string['cannotdeleteopenconversation'] = 'Eine laufende Konversation kann nicht gelöscht werden.';
+$string['cannotreopendraftconversation'] = 'Sie öffnen erneut eine Konversation, die noch nicht begonnen hat.';
 $string['closeconversation'] = 'Konversation abschließen';
 $string['closed'] = 'Abgeschlossen';
 $string['completed'] = 'Fertiggestellt';
@@ -57,6 +58,9 @@ $string['conversationlistdisplayheader'] = 'Anzeige {$a->show} {$a->state} Konve
 $string['conversationopened'] = 'Konversation wurde eröffnet';
 $string['conversationopenedcron'] = 'Konversationen werden automatisch eröffnet';
 $string['conversationopenedwith'] = '<strong>1</strong> Konversation eröffnet mit:';
+$string['conversationreopen'] = 'Konversation erneut geöffnet';
+$string['conversationreopenconfirm'] = 'Möchten Sie die Konversation {$a} wirklich erneut öffnen?';
+$string['conversationreopened'] = 'Konversation {$a} wurde erneut geöffnet';
 $string['conversations'] = 'Konversationen';
 $string['conversationsopenedwith'] = '<strong>{$a}</strong> Konversationen eröffnet mit:';
 $string['cutoffdate'] = 'Neue Teilnehmer/innen aufnehmen bis';
@@ -78,6 +82,8 @@ $string['dialogue:delete'] = 'Lösche eigene';
 $string['dialogue:deleteany'] = 'Lösche alle';
 $string['dialogue:open'] = 'Öffne eine beliebige Konversation';
 $string['dialogue:receive'] = 'Empfangen, wer kann der/die Empfänger/in sein, wenn eine Konversation geöffnet wird.';
+$string['dialogue:reopen'] = 'Eigene erneut öffnen';
+$string['dialogue:reopenany'] = 'Jede erneut öffnen';
 $string['dialogue:reply'] = 'Antworten';
 $string['dialogue:replyany'] = 'Allen antworten';
 $string['dialogue:viewany'] = 'Alle anzeigen';
@@ -127,7 +133,7 @@ $string['maxattachments_help'] = 'Diese Einstellung legt die maximale Anzahl von
 $string['maxattachmentsize'] = 'Maximale Größe der Anhänge';
 $string['maxattachmentsize_help'] = 'Diese Einstellung legt die maximale Größe einer Datei fest, die an eine einzelne Nachricht eines Dialogs angehängt werden kann.';
 $string['message'] = 'Nachricht';
-$string['messageapibasicmessage'] = '<p>{$a->userfrom} hat eine neue Nachricht in einer Konversation, an der Sie teilnehmen, geschickt mit dem Betreff: <i>{$a->subject}</i><br/><br/><a href="{$a->url}">In Moodle anzeigen</a></p>';
+$string['messageapibasicmessage'] = '<p>{$a->userfrom} hat eine neue Nachricht in einer Konversation, an der Sie teilnehmen, im Kurs <i>{$a->course}</i> mit dem Betreff: <i>{$a->subject}</i> geschickt.<br/><br/><a href="{$a->url}">In Moodle anzeigen</a></p>';
 $string['messageapismallmessage'] = '{$a} hat eine neue Nachricht in einer Konversation geschickt, an der Sie teilnehmen.';
 $string['messageprovider:post'] = 'Dialog Benachrichtigungen';
 $string['messages'] = 'Meldungen';
@@ -145,6 +151,7 @@ $string['nodraftsfound'] = 'Keine Entwürfe gefunden!';
 $string['nomatchingpeople'] = 'Keine übereinstimmenden Personen \'{$a}\'';
 $string['nopermissiontoclose'] = 'Sie haben keine Berechtigung, diese Konversation abzuschließen!';
 $string['nopermissiontodelete'] = 'Sie haben keine Berechtigung zum Löschen!';
+$string['nopermissiontoreopen'] = 'Sie haben nicht das Recht, diese Konversation erneut zu öffnen.';
 $string['nosubject'] = '[kein Betreff]';
 $string['numberattachments'] = '{$a} Anhänge';
 $string['numberunread'] = '{$a} ungelesen';
@@ -173,6 +180,7 @@ $string['privacy:metadata:state'] = 'Stauts';
 $string['privacy:metadata:timecreated'] = 'Erstellt';
 $string['privacy:metadata:timemodified'] = 'Bearbeitet';
 $string['privacy:metadata:userid'] = 'Nutzer-ID';
+$string['reopenconversation'] = 'Konversation erneut öffnen';
 $string['repliedby'] = '<strong>{$a->fullname}</strong> <small>antwortete</small> {$a->timeago}';
 $string['repliedbyfullyear'] = '<strong>{$a->fullname}</strong> <small>antwortete am</small> {$a->datefull} <small>({$a->time})</small>';
 $string['repliedbyshortyear'] = '<strong>{$a->fullname}</strong> <small>antwortete am</small> {$a->dateshort} um <small>({$a->time})</small>';

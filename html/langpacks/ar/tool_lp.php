@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ar', version '4.1'.
+ * Strings for component 'tool_lp', language 'ar', version '4.4'.
  *
  * @package     tool_lp
  * @category    string
@@ -129,7 +129,7 @@ $string['linkedcourseslist'] = 'المقررات الدراسية المرتبط
 $string['listcompetencyframeworkscaption'] = 'قائمة أطر الكفاءات';
 $string['listofevidence'] = 'قائمة الشواهد';
 $string['listplanscaption'] = 'قائمة خطط التعلم';
-$string['listtemplatescaption'] = 'قائمة مظاهر خطة التعلم';
+$string['listtemplatescaption'] = 'قائمة قوالب خطة التعلم';
 $string['loading'] = 'جار التحميل...';
 $string['locatecompetency'] = 'تحديد الكفاءة';
 $string['managecompetenciesandframeworks'] = 'إدارة الكفاءات وأطر العمل';
@@ -148,7 +148,7 @@ $string['nfiles'] = '{$a} ملف (ملفات)';
 $string['noactivities'] = 'لا توجد أنشطة';
 $string['nocompetencies'] = 'لم يتم إنشاء كفاءات في هذا الإطار.';
 $string['nocompetenciesinactivity'] = 'لم يتم ربط أي كفاءات بهذا النشاط أو المورد.';
-$string['nocompetenciesincourse'] = 'لا توجد كفاءات مرتبطة بهذه المادة.';
+$string['nocompetenciesincourse'] = 'لا توجد كفاءات مرتبطة بهذا المساق.';
 $string['nocompetenciesinevidence'] = 'لم يتم ربط الكفاءات بهذا الشاهد.';
 $string['nocompetenciesinlearningplan'] = 'لم يتم ربط أي كفاءات بخطة التعلم هذه.';
 $string['nocompetenciesinlist'] = 'لم يتم اختيار كفاءات.';
@@ -161,7 +161,7 @@ $string['nofiles'] = 'لا ملفات';
 $string['nolinkedcourses'] = 'لا توجد مواد مرتبطة بهذه الكفاءة';
 $string['noparticipants'] = 'لم يتم العثور على المشاركين.';
 $string['noplanswerecreated'] = 'لم يتم إنشاء خطط تعليمية.';
-$string['notemplates'] = 'لم يتم إنشاء مظاهر خطة التعلم حتى الآن.';
+$string['notemplates'] = 'لم يتم إنشاء قوالب خطة التعلم حتى الآن.';
 $string['nourl'] = 'لا يوجد رابط';
 $string['nouserevidence'] = 'لم تتم إضافة أي شاهد على التعلم المسبق حتى الآن.';
 $string['nouserplans'] = 'لم يتم إنشاء خطط تعلم حتى الآن.';
@@ -270,7 +270,7 @@ $string['templatecohortnotsyncedwhilehidden'] = 'لن تتم مزامنة الد
 $string['templatecompetencies'] = 'كفاءات مظهر خطة التعلم';
 $string['templatecreated'] = 'تم إنشاء مظهر خطة التعلم';
 $string['templatename'] = 'الاسم';
-$string['templates'] = 'مظاهر خطة التعلم';
+$string['templates'] = 'قوالب خطة التعلم';
 $string['templateupdated'] = 'تم تحديث مظهر خطة التعلم';
 $string['totalrequiredtocomplete'] = 'المجموع المطلوبة إكماله';
 $string['unlinkcompetencycourse'] = 'أتريد إلغاء ربط الكفاءة \'{$a}\' بالمساق؟';

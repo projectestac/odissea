@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_credit', language 'ca', version '4.1'.
+ * Strings for component 'workshopeval_credit', language 'ca', version '4.4'.
  *
  * @package     workshopeval_credit
  * @category    string

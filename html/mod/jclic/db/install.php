@@ -36,14 +36,15 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_jclic_install() {
     global $DB;
 
-    $records = array(
-        array_combine(array('setting_key', 'setting_value'), array('ALLOW_CREATE_GROUPS', 'false')),
-        array_combine(array('setting_key', 'setting_value'), array('ALLOW_CREATE_USERS', 'false')),
-        array_combine(array('setting_key', 'setting_value'), array('SHOW_GROUP_LIST', 'false')),
-        array_combine(array('setting_key', 'setting_value'), array('SHOW_USER_LIST', 'false')),
-        array_combine(array('setting_key', 'setting_value'), array('USER_TABLES', 'true')),
-        array_combine(array('setting_key', 'setting_value'), array('TIME_LAP', '10'))
-    );
+    $records = [
+        array_combine(['setting_key', 'setting_value'], ['ALLOW_CREATE_GROUPS', 'false']),
+        array_combine(['setting_key', 'setting_value'], ['ALLOW_CREATE_USERS', 'false']),
+        array_combine(['setting_key', 'setting_value'], ['SHOW_GROUP_LIST', 'false']),
+        array_combine(['setting_key', 'setting_value'], ['SHOW_USER_LIST', 'false']),
+        array_combine(['setting_key', 'setting_value'], ['USER_TABLES', 'true']),
+        array_combine(['setting_key', 'setting_value'], ['TIME_LAP', '10'])
+    ];
+
     foreach ($records as $record) {
         $DB->insert_record('jclic_settings', $record, false);
     }

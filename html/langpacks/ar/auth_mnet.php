@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ar', version '4.1'.
+ * Strings for component 'auth_mnet', language 'ar', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'مصادقة شبكة مودل';
 $string['privacy:metadata:external:mahara'] = 'هذه الإضافة يمكنها إرسال البيانات خارجياً إلى تطبيق مرتبط من مهارا.';
 $string['privacy:metadata:external:moodle'] = 'هذه الإضافة يمكنها إرسال البيانات خارجياً إلى تطبيق مرتبط من مودل.';
 $string['privacy:metadata:mnet_external:address'] = 'عنوان المستخدم';
-$string['privacy:metadata:mnet_external:aim'] = 'مُعرَّف AIM للمستخدم';
 $string['privacy:metadata:mnet_external:alternatename'] = 'الاسم البديل للمستخدم';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'تفضيل بشأن ما إذا كان ينبغي اعتبار المستخدم مشتركاً بشكل تلقائي في المنتديات بمجرد طرحه لمشاركة فيها';
 $string['privacy:metadata:mnet_external:calendartype'] = 'تفضيل المستخدم لنوعية التقويم الذي يستعمله';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'تفضيل بشأن إي�
 $string['privacy:metadata:mnet_external:firstaccess'] = 'وقت أول دخول لهذا المستخدم إلى الموقع';
 $string['privacy:metadata:mnet_external:firstname'] = 'الاسم الأول للمستخدم';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'التفاصيل اللفظية بشأن الاسم الأول للمستخدم';
-$string['privacy:metadata:mnet_external:icq'] = 'رقم ICQ للمستخدم';
 $string['privacy:metadata:mnet_external:id'] = 'مُعرَّف المستخدم';
 $string['privacy:metadata:mnet_external:idnumber'] = 'رقم تعريفي تقدمه المؤسسة';
 $string['privacy:metadata:mnet_external:imagealt'] = 'النص البديل لصورة المستخدم';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'التفاصيل �
 $string['privacy:metadata:mnet_external:maildigest'] = 'إعداد بشأن تلخيص الرسائل المرسلة إلى المستخدم';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'تفضيل المستخدم بشأن إظهار بريده الالكتروني للمستخدمين الآخرين';
 $string['privacy:metadata:mnet_external:middlename'] = 'الاسم الأوسط للمستخدم';
-$string['privacy:metadata:mnet_external:msn'] = 'مُعرَّف MSN للمستخدم';
 $string['privacy:metadata:mnet_external:phone1'] = 'رقم هاتف المستخدم';
 $string['privacy:metadata:mnet_external:phone2'] = 'رقم هاتف إضافي للمستخدم';
 $string['privacy:metadata:mnet_external:picture'] = 'تفاصيل الصورة المرتبطة بهذا المستخدم';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'علم لتأشير فيما إذا كان المستخدم قد وافق على سياسة الموقع';
-$string['privacy:metadata:mnet_external:skype'] = 'مُعرَّف Skype للمستخدم';
 $string['privacy:metadata:mnet_external:suspended'] = 'علم لتأشير فيما إذا كان حساب المستخدم معلقاً في هذا النظام';
 $string['privacy:metadata:mnet_external:timezone'] = 'المنطقة الزمنية للمستخدم';
 $string['privacy:metadata:mnet_external:trackforums'] = 'تفضيل بشأن المنتديات ومتابعتها';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'قناع بت الثقة';
-$string['privacy:metadata:mnet_external:url'] = 'الرابط العائد لهذا المستخدم';
 $string['privacy:metadata:mnet_external:username'] = 'اسم الدخول لهذا المستخدم';
-$string['privacy:metadata:mnet_external:yahoo'] = 'مُعرَّف Yahoo للمستخدم';
 $string['privacy:metadata:mnet_log'] = 'تفاصيل عن الإجراءات البعيدة المتخذة من قبل مستخدم محلي وموثقة في نظام بعيد';
 $string['privacy:metadata:mnet_log:action'] = 'الإجراء المتخذ من قبل المستخدم';
 $string['privacy:metadata:mnet_log:cmid'] = 'مُعرَّف وحدة المقرر';

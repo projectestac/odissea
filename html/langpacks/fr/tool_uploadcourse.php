@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'fr', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Cours existant modèle';
 $string['coursetemplatename_help'] = 'Indiquez ici le nom abrégé d’un cours existant à utiliser comme modèle pour tous les cours créés.';
 $string['coursetorestorefromdoesnotexist'] = 'Le cours indiqué pour servir de modèle n’existe pas';
 $string['courseupdated'] = 'Cours modifié';
+$string['courseuploadnotallowed'] = 'Vous n’avez pas les autorisations requises pour déposer des cours dans la catégorie {$a}';
+$string['courseuploadupdatenotallowed'] = 'Un cours avec ce nom abrégé existe, mais vous n’avez pas les autorisations requises pour utiliser l’outil de dépôt pour sa mise à jour.';
 $string['createall'] = 'Tout créer, en incrémentant si nécessaire le nom abrégé';
 $string['createnew'] = 'Créer uniquement les nouveaux cours et passer les cours existants';
 $string['createorupdate'] = 'Créer de nouveaux cours ou modifier les cours existants';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Encodage du fichier CSV';
 $string['errorcannotcreateorupdateenrolment'] = 'Impossible de créer ou modifier la méthode d’inscription « {$a} »';
 $string['errorcannotdeleteenrolment'] = 'Impossible de supprimer la méthode d’inscription « {$a} »';
 $string['errorcannotdisableenrolment'] = 'Impossible de désactiver la méthode d’inscription « {$a} »';
+$string['errorunsupportedmethod'] = 'La méthode d’inscription « {$a} » n’est pas prise en charge par fichier CSV';
 $string['errorwhiledeletingcourse'] = 'Erreur lors de la suppression du cours';
 $string['errorwhilerestoringcourse'] = 'Erreur lors de la restauration du cours';
 $string['generatedshortnamealreadyinuse'] = 'Le nom abrégé généré existe déjà';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Le mode de modification choisi ne perme
 $string['updateonly'] = 'Ne modifier que les cours existants';
 $string['updatewithdataonly'] = 'Ne modifier qu’à partir des données CSV';
 $string['updatewithdataordefaults'] = 'Modifier à partir des données CSV et des réglages par défaut';
+$string['uploadcourse:use'] = 'Utiliser l’outil de dépôt de cours';
 $string['uploadcourses'] = 'Modifier des cours par lots';
 $string['uploadcourses_help'] = 'Des cours peuvent être créés ou modifiés en déposant un fichier texte.  Le format de ce fichier doit être le suivant :
 

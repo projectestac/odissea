@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ar', version '4.1'.
+ * Strings for component 'hub', language 'ar', version '4.4'.
  *
  * @package     hub
  * @category    string
@@ -33,7 +33,7 @@ $string['analyticsenabledmodels'] = 'عدد نماذج التنبؤ الممكن
 $string['analyticspredictions'] = 'عدد التنبؤات التي تم إنشاؤها ({$a})';
 $string['audience'] = 'الجمهور';
 $string['audience_help'] = 'قم بتحديد المستهدفين من هذا المساق.';
-$string['audienceadmins'] = 'المسؤولون عن مودل';
+$string['audienceadmins'] = 'مشرفو مودل';
 $string['audienceeducators'] = 'المعلمون';
 $string['audiencestudents'] = 'الطلاب';
 $string['badgesnumber'] = 'عدد الشارات ({$a})';
@@ -43,7 +43,9 @@ $string['coursename'] = 'الاسم';
 $string['coursepublished'] = 'تمت مشاركة هذا المساق بنجاح في \'{$a}\'.';
 $string['courseshortname'] = 'الاسم القصير';
 $string['courseshortname_help'] = 'أدخل اسماً مختصراً للمساق. ليس من الضروري أن يكون فريداً.';
+$string['coursesnodates'] = 'عدد المقررات التي لم يتم فيها تعيين تاريخ الانتهاء ({$a})';
 $string['coursesnumber'] = 'عدد المقررات الدراسية ({$a})';
+$string['dbtype'] = 'نوع قاعدة البيانات ({$a})';
 $string['demourl'] = 'رابط تجريبي';
 $string['demourl_help'] = 'أدخل رابط تجريبي لمادتك، بشكل افتراضي هو رابط المادة .
 يتم عرض العنوان التجريبي كرابط في نتيجة البحث .';
@@ -97,6 +99,7 @@ $string['postaladdress'] = 'العنوان البريدي';
 $string['postaladdress_help'] = 'العنوان البريدي لهذا الموقع، أو للكيان المتمثل بهذا الموقع.';
 $string['postsnumber'] = 'عدد منشورات المنتديات ({$a})';
 $string['previousregistrationdeleted'] = 'تم حذف التسجيل السابق من {$a}. بإمكانك إعادة بدء عملية التسجيل. شكراً لك';
+$string['primaryauthtype'] = 'نوع المصادقة الأساسي ({$a})';
 $string['questionsnumber'] = 'عدد الأسئلة ({$a})';
 $string['registeredactiveuserdevices'] = 'عدد المستخدمين النشطين الحائزين على أجهزة جوال مسجلة ويتلقون الإشعارات ({$a})';
 $string['registeredcourses'] = 'المقررات الدراسية المسجلة';
@@ -162,6 +165,7 @@ $string['siteregistrationupdated'] = 'تم تحديث تسجيل الموقع';
 $string['siterelease'] = 'إصدار مودل';
 $string['siterelease_help'] = 'رقم الإصدار لمودل في هذا الموقع';
 $string['sitereleasenum'] = 'إصدار مودل ({$a})';
+$string['sitetheme'] = 'قالب الموقع ({$a})';
 $string['siteurl'] = 'رابط الموقع';
 $string['siteurl_help'] = 'الرابط هو عنوان هذا الموقع. إن كانت إعدادات الخصوصية تسمح للناس بمعاينة عناوين المواقع، فإذن هذا هو الرابط الذي سيتم استعماله.';
 $string['siteversion'] = 'رقم إصدار مودل';

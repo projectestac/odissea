@@ -28,24 +28,23 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-require_once(dirname(__FILE__).'/locallib.php');
-require_once($CFG->libdir.'/completionlib.php');
-
+require_once dirname(__FILE__, 3) . '/config.php';
+require_once __DIR__ . '/locallib.php';
+require_once $CFG->libdir . '/completionlib.php';
 
 $id = optional_param('id', 0, PARAM_INT); // course_module ID, or
-$n  = optional_param('n', 0, PARAM_INT);  // jclic instance ID - it should be named as the first character of the module
+$n = optional_param('n', 0, PARAM_INT);  // jclic instance ID - it should be named as the first character of the module
 
 if ($id) {
-    $cm         = get_coursemodule_from_id('jclic', $id, 0, false, MUST_EXIST);
-    $course     = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
-    $jclic  = $DB->get_record('jclic', array('id' => $cm->instance), '*', MUST_EXIST);
+    $cm = get_coursemodule_from_id('jclic', $id, 0, false, MUST_EXIST);
+    $course = $DB->get_record('course', ['id' => $cm->course], '*', MUST_EXIST);
+    $jclic = $DB->get_record('jclic', ['id' => $cm->instance], '*', MUST_EXIST);
 } elseif ($n) {
-    $jclic  = $DB->get_record('jclic', array('id' => $n), '*', MUST_EXIST);
-    $course     = $DB->get_record('course', array('id' => $jclic->course), '*', MUST_EXIST);
-    $cm         = get_coursemodule_from_instance('jclic', $jclic->id, $course->id, false, MUST_EXIST);
+    $jclic = $DB->get_record('jclic', ['id' => $n], '*', MUST_EXIST);
+    $course = $DB->get_record('course', ['id' => $jclic->course], '*', MUST_EXIST);
+    $cm = get_coursemodule_from_instance('jclic', $jclic->id, $course->id, false, MUST_EXIST);
 } else {
-    print_error('You must specify a course_module ID or an instance ID');
+    throw new moodle_exception('You must specify a course_module ID or an instance ID', 'mod_jclic');
 }
 
 require_login($course, true, $cm);
@@ -55,39 +54,35 @@ require_capability('mod/jclic:view', $context);
 $ispreview = false;
 if (has_capability('moodle/grade:viewall', $context)) {
     $action = optional_param('action', false, PARAM_TEXT);
-    if ($action == 'preview') {
+    if ($action === 'preview') {
         $ispreview = true;
     } else {
-        redirect('report.php?mode=details&id='.$cm->id);
+        redirect('report.php?mode=details&id=' . $cm->id);
     }
 }
 
-$params = array(
+$params = [
     'context' => $context,
-    'objectid' => $jclic->id
-);
+    'objectid' => $jclic->id,
+];
+
 $event = \mod_jclic\event\course_module_viewed::create($params);
 $event->add_record_snapshot('jclic', $jclic);
 $event->trigger();
 
-/// Print the page header
+// Print the page header.
 
-$PAGE->set_url('/mod/jclic/view.php', array('id' => $cm->id));
+$PAGE->set_url('/mod/jclic/view.php', ['id' => $cm->id]);
 $PAGE->set_title(format_string($jclic->name));
 $PAGE->set_heading(format_string($course->fullname));
 $PAGE->set_context($context);
 
-// Mark viewed if required
+// Mark viewed if required.
 $completion = new completion_info($course);
 $completion->set_module_viewed($cm);
 
 echo $OUTPUT->header();
-
 echo $OUTPUT->heading($jclic->name);
-
-if ($CFG->branch < 400) {
-    jclic_view_intro($jclic, $cm);
-}
 
 jclic_view_activity($jclic, $context, $ispreview);
 

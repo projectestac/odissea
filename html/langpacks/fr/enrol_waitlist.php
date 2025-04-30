@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_waitlist', language 'fr', version '4.1'.
+ * Strings for component 'enrol_waitlist', language 'fr', version '4.4'.
  *
  * @package     enrol_waitlist
  * @category    string
@@ -83,7 +83,7 @@ $string['waitlist:config'] = 'Configurer les inscriptions à la liste d’attent
 $string['waitlist:manage'] = 'Gérer les utilisateurs inscrits';
 $string['waitlist:unenrol'] = 'Désinscrire des utilisateurs d’un cours';
 $string['waitlist:unenrolself'] = 'Se désinscrire à un cours';
-$string['waitlist:unenrolwaitlist'] = 'Désinscrire les utilisateurs  sur la liste d’attente d’un cours';
+$string['waitlist:unenrolwaitlist'] = 'Désinscrire les utilisateurs sur la liste d’attente d’un cours';
 $string['waitlistinfo'] = '<b>Ce cours est actuellement complet</b>. <br/><br/>Merci de votre demande d’inscription. Vous êtes désormais sur la liste d’attente et serez informé par courriel si une place se libère.';
 $string['welcometocourse'] = 'Bienvenue au cours {$a}';
 $string['welcometocoursetext'] = 'Bienvenue au cours {$a->coursename}&nbsp;!

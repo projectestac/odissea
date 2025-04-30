@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'en', version '4.1'.
+ * Strings for component 'auth_lti', language 'en', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,9 +38,8 @@ $string['firstlaunchnotice'] = 'It looks like this is your first time here. Plea
 $string['getstartedwithnewaccount'] = 'Get started with a new account';
 $string['haveexistingaccount'] = 'I have an existing account';
 $string['linkthisaccount'] = 'Link this account';
-$string['mustbeloggedin'] = 'Sign in to link your existing account';
+$string['mustbeloggedin'] = 'Log in to link your existing account.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'The LTI authentication plugin does not store any personal data.';
 $string['privacy:metadata:auth_lti'] = 'LTI authentication';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'This plugin is connected to the authentication subsystem.';
 $string['privacy:metadata:auth_lti:issuer'] = 'The issuer URL identifying the platform to which the linked user belongs.';

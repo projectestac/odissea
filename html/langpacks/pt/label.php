@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', version '4.1'.
+ * Strings for component 'label', language 'pt', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta perc
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Adicionar novo recurso Área de texto e multimédia';
 $string['label:view'] = 'Ver o recurso Área de texto e multimédia';
+$string['labelname'] = 'Título no índice da disciplina';
+$string['labelname_help'] = 'O título é utilizado apenas para identificar a Área de texto e multimédia no índice da disciplina e para conclusão da atividade. Se ficar em branco, o nome será gerado automaticamente usando os primeiros caracteres do texto.';
 $string['labeltext'] = 'Texto';
 $string['modulename'] = 'Área de texto e multimédia';
 $string['modulename_help'] = 'O recurso Área de texto e multimédia permite inserir texto e conteúdos multimédia na página da disciplina.

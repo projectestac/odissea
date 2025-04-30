@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'fr', version '4.1'.
+ * Strings for component 'enrol_self', language 'fr', version '4.4'.
  *
  * @package     enrol_self
  * @category    string
@@ -33,14 +33,16 @@ $string['cohortonly'] = 'Seulement les membres de la cohorte';
 $string['cohortonly_help'] = 'L’auto-inscription peut être restreinte aux seuls membres d’une cohorte spécifique. La modification de ce réglage n’a pas d’effet sur les inscriptions existantes.';
 $string['confirmbulkdeleteenrolment'] = 'Voulez-vous vraiment supprimer les inscriptions de cet utilisateur ?';
 $string['customwelcomemessage'] = 'Message de bienvenue personnalisé';
-$string['customwelcomemessage_help'] = 'Un message d’accueil personnalisé peut être ajouté en texte pur ou en format Moodle, avec des balises HTML et la syntaxe multilingue.
-
-Les paramètres suivants peuvent être inclus dans le message :
-
-* nom du cours {$a->coursename}
-* lien vers le profil de l’utilisateur {$a->profileurl}
-* adresse de courriel de l’utilisateur {$a->email}
-* nom complet de l’utilisateur {$a->fullname}';
+$string['customwelcomemessage_help'] = 'Formats acceptés : texte pur ou format Moodle. Les balises HTML et la syntaxe multilingue sont aussi acceptés, ainsi que les paramètres suivants :
+<ul>
+<li>nom du cours {$a->coursename}</li>
+<li>lien vers le profil de l’utilisateur {$a->profileurl}</li>
+<li>adresse de courriel de l’utilisateur {$a->email}</li>
+<li>nom complet de l’utilisateur {$a->fullname}</li>
+<li>prénom de l’utilisateur {$a->firstname}</li>
+<li>nom de famille de l’utilisateur {$a->lastname}</li>
+<li>rôle de l’utilisateur dans le cours {$a->courserole}</li>
+</ul>';
 $string['defaultrole'] = 'Rôle attribué par défaut';
 $string['defaultrole_desc'] = 'Sélectionner le rôle à attribuer aux utilisateurs lors de l’auto-inscription';
 $string['deleteselectedusers'] = 'Supprimer les inscriptions des utilisateurs sélectionnés';
@@ -56,6 +58,12 @@ $string['enrolstartdate'] = 'Date de début';
 $string['enrolstartdate_help'] = 'Si ce réglage est activé, les utilisateurs peuvent s’inscrire à partir de cette date seulement.';
 $string['expiredaction'] = 'Action à l’échéance de l’inscription';
 $string['expiredaction_help'] = 'Sélectionner une action à effectuer à l’échéance de l’inscription des utilisateurs. Veuillez noter que des données utilisateur et des réglages sont effacés du cours lors de la désinscription du cours.';
+$string['expiryinactivemessageenrolledbody'] = 'Bonjour {$a->user},
+
+Votre inscription au cours {$a->course} arrive à échéance le {$a->timeend}, car vous n’avez pas visité le cours durant les {$a->inactivetime} derniers jours.
+
+Pour conserver votre inscription, veuillez vous connecter et accéder à <a href="{$a->url}">{$a->course}</a> avant {$a->timeend}.';
+$string['expiryinactivemessageenrolledsubject'] = 'Votre inscription arrive à échéance : {$a->course}';
 $string['expirymessageenrolledbody'] = 'Cher {$a->user},
 
 Ce message est une notification de la prochaine échéance le {$a->timeend} de votre inscription au cours « {$a->course} ».
@@ -118,7 +126,7 @@ $string['status_help'] = 'Si ce réglage est désactivé, les utilisateurs s’�
 $string['syncenrolmentstask'] = 'Tâche de synchronisation des auto-inscriptions';
 $string['unenrol'] = 'Désinscrire l’utilisateur';
 $string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} » ?';
-$string['unenroluser'] = 'Voulez vous vraiment désinscrire « {$a->user} » du cours « {$a->course} » ?';
+$string['unenroluser'] = 'Voulez-vous vraiment désinscrire « {$a->user} » du cours « {$a->course} » ?';
 $string['unenrolusers'] = 'Désinscrire des utilisateurs';
 $string['usepasswordpolicy'] = 'Utiliser la politique de mots de passe';
 $string['usepasswordpolicy_desc'] = 'Utiliser la politique de mots de passe standard pour les clefs d’inscription.';

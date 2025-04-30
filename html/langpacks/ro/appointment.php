@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'ro', version '4.1'.
+ * Strings for component 'appointment', language 'ro', version '4.4'.
  *
  * @package     appointment
  * @category    string

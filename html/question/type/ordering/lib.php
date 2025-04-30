@@ -32,9 +32,13 @@
  * @param array $args extra arguments
  * @param bool $forcedownload whether or not force download
  * @param array $options additional options affecting the file serving
+ * @codeCoverageIgnore
+ * This code can not be tested currently as pluginfile() is not testable.
  */
-function qtype_ordering_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array()) {
+function qtype_ordering_pluginfile(stdClass $course, stdClass $cm, stdClass $context, string $filearea, array $args,
+        bool $forcedownload, array $options = []) {
     global $CFG;
-    require_once($CFG->dirroot.'/lib/questionlib.php');
+    require_once($CFG->dirroot . '/lib/questionlib.php');
+
     question_pluginfile($course, $context, 'qtype_ordering', $filearea, $args, $forcedownload);
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'zh_cn', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'zh_cn', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = '椭圆形';
 $string['pagenumber'] = '第 {$a} 页';
 $string['pagexofy'] = '第 {$a->page} 页，共 {$a->total} 页';
 $string['partialwarning'] = '提交某些文件只能通过直接下载进行访问。';
+$string['pathtogserror'] = '未正确设置 ghostscript 路径：{$a}';
 $string['pathtogspathdesc'] = '请注意，这个说明的pdf文件要在{$a}设定到ghostscript的目录。';
 $string['pen'] = '笔';
 $string['pluginname'] = '批注的PDF';

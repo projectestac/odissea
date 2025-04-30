@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_progress', language 'ro', version '4.1'.
+ * Strings for component 'report_progress', language 'ro', version '4.4'.
  *
  * @package     report_progress
  * @category    string
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityorder'] = 'Ordinea activității';
+$string['activitysection'] = 'Secțiune';
 $string['allactivitiesandresources'] = 'Toate activitățile și resursele';
 $string['alphabetical'] = 'Alfabetic';
 $string['include'] = 'Include';
+$string['no_filter_by_section'] = 'Nu filtra după secțiune';
 $string['orderincourse'] = 'Ordine în curs';
 $string['page-report-progress-index'] = 'Raportul privind completarea activității';
 $string['page-report-progress-user'] = 'Raport de finalizare a activității utilizatorului';

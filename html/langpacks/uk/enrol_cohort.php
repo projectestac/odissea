@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'uk', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'uk', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'Створити нову групу';
 $string['defaultgroupnametext'] = 'Група {$a->name}{$a->increment}';
 $string['enrolcohortsynctask'] = 'Завдання синхронізації реєстрації когорти';
 $string['instanceexists'] = 'Гурт вже синхронізовано з вибраною роллю';
+$string['plugindisabled'] = 'Плагін синхронізації когорти вимкнено';
 $string['pluginname'] = 'Синхронізація гурту';
 $string['pluginname_desc'] = 'Модуль реєстрації гурту синхронізує членів гурту з учасниками навчального курсу.';
 $string['privacy:metadata:core_group'] = 'Плагін «Реєстрація когорти» може створити нову групу або використовувати наявну групу, щоб додати всіх членів когорти.';

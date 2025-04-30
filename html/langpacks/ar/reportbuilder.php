@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ar', version '4.1'.
+ * Strings for component 'reportbuilder', language 'ar', version '4.4'.
  *
  * @package     reportbuilder
  * @category    string
@@ -54,6 +54,7 @@ $string['audiencemultiselectpostfix'] = '{$a->elements} فضلاً عن {$a->mor
 $string['audiencenotsaved'] = 'الجمهور غير محفوظ';
 $string['audiencesaved'] = 'تم حفظ الجمهور';
 $string['audienceupdated'] = 'جمهور تم تحيثه';
+$string['audienceusedbyschedule'] = 'هذا الجمهور مُستعمل في جدولة ما لهذا التقرير';
 $string['cardview'] = 'معاينة البطاقة';
 $string['cardview_help'] = 'تسمح لك معاينة البطاقة بتعريف مخطط تقريرك عند معاينته في الأجهزة ذات الشاشات الضيقة. ستنطوي الأعمدة عندما يقل العرض عن الحد الموضوع هنا، مع زر تبديل لتوسيع البطاقة لغرض معاينة كل بيانات التقرير.';
 $string['cardviewfirstcolumntitle'] = 'عنوان العمود الأول';
@@ -83,6 +84,7 @@ $string['courseidnumberewithlink'] = 'مُعرَّف المساق مع رابط�
 $string['courseselect'] = 'إختر المساق';
 $string['courseshortnamewithlink'] = 'الاسم المختصر للمقرر الدراسي الدراسي مع رابطه';
 $string['customfieldcolumn'] = '{$a}';
+$string['customreport'] = 'التقرير المخصص';
 $string['customreports'] = 'التقارير المخصصة';
 $string['customreportslimit'] = 'محدد التقارير المخصصة';
 $string['customreportslimit_desc'] = 'قد يكون عدد التقارير المخصصة محددًا لأسباب تتعلق بالأداء. عند ضبطه على صفر فلن يكون هناك حد.';
@@ -123,6 +125,8 @@ $string['errorsourceinvalid'] = 'تعذر العثور على مصدر صالح 
 $string['errorsourceunavailable'] = 'مصدر التقرير غير متاح';
 $string['filteradded'] = 'المرشح المضاف \'{$a}\'';
 $string['filtercontains'] = 'يحتوي';
+$string['filterdateafter'] = 'بعد';
+$string['filterdatebefore'] = 'قبل';
 $string['filterdatecurrent'] = 'الحالي';
 $string['filterdatedays'] = 'يوم';
 $string['filterdatefrom'] = 'التاريخ من';
@@ -144,6 +148,8 @@ $string['filterendswith'] = 'ينتهي بـ';
 $string['filterequalorgreaterthan'] = 'أكبر من أو يساوي';
 $string['filterequalorlessthan'] = 'أصغر من أو يساوي';
 $string['filterfieldoperator'] = 'عامل {$a}';
+$string['filterfieldto'] = '{$a} إلى';
+$string['filterfieldunit'] = 'وحدة {$a}';
 $string['filterfieldvalue'] = 'قيمة {$a}';
 $string['filtergreaterthan'] = 'أكبر من';
 $string['filterinvalid'] = 'مرشح غير صالح';
@@ -264,6 +270,7 @@ $string['sorting'] = 'الفرز';
 $string['sorting_help'] = 'يمكنك ضبط ترتيب الفرز الابتدائي للأعمدة في التقرير، ويمكن للمستخدمين بعدها تغييره عبر النقر على اسم العمود.';
 $string['switchedit'] = 'التبديل إلى وضع التحرير';
 $string['switchpreview'] = 'التبديل إلى وضع المعاينة';
+$string['tagarea_reportbuilder_report'] = 'التقارير المخصصة';
 $string['tasksendschedule'] = 'إرسال جدولة التقرير';
 $string['tasksendschedules'] = 'إرسال جدولات التقرير';
 $string['timeadded'] = 'وقت الإضافة';

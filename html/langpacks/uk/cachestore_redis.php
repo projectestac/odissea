@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'uk', version '4.1'.
+ * Strings for component 'cachestore_redis', language 'uk', version '4.4'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -25,9 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ca_file'] = 'Шлях до файлу CA';
+$string['ca_file_help'] = 'Розташування файлу центру сертифікації в локальній файловій системі';
 $string['compressor_none'] = 'Без компресії.';
 $string['compressor_php_gzip'] = 'Використовуйте стиснення gzip.';
 $string['compressor_php_zstd'] = 'Використовуйте стиснення Zstandard.';
+$string['encrypt_connection'] = 'Використовуйте шифрування TLS.';
+$string['encrypt_connection_help'] = 'Використовуйте TLS для підключення до Redis. Не використовуйте \'tls://\' в імені хоста для Redis, замість цього використовуйте цей параметр.';
 $string['password'] = 'Пароль';
 $string['password_help'] = 'Це встановлює пароль сервера Redis.';
 $string['pluginname'] = 'Відновити';

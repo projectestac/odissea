@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabeltype_coursedata', language 'el', version '4.1'.
+ * Strings for component 'customlabeltype_coursedata', language 'el', version '4.4'.
  *
  * @package     customlabeltype_coursedata
  * @category    string

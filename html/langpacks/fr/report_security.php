@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', version '4.1'.
+ * Strings for component 'report_security', language 'fr', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -77,10 +77,6 @@ $string['check_guestrole_error'] = 'Rôle de visiteur anonyme « {$a} » incor
 $string['check_guestrole_name'] = 'Rôle de visiteur anonyme';
 $string['check_guestrole_notset'] = 'Le rôle de visiteur anonyme n’est pas défini.';
 $string['check_guestrole_ok'] = 'Définition correcte du rôle de visiteur anonyme.';
-$string['check_mediafilterswf_details'] = '<p>L’intégration automatique de fichier Flash SWF est très dangereuse. Tout utilisateur enregistré pourrait lancer une attaque XSS contre d’autres utilisateurs du serveur. Ce réglage devrait être désactivé sur des sites en production.</p>';
-$string['check_mediafilterswf_error'] = 'Le filtre média Flash est activé. Ceci est très dangereux dans la plupart des cas.';
-$string['check_mediafilterswf_name'] = 'Filtre .swf activé';
-$string['check_mediafilterswf_ok'] = 'Le filtre média Flash n’est pas activé.';
 $string['check_nodemodules_details'] = '<p>Le dossier <code>{$a->path}</code> contient des modules Node.js et leur dépendances, installés typiquement par l’utilitaire NPM. Ces modules peuvent être requis pour le développement de Moodle en local, par exemple pour utiliser grunt. Ils ne sont pas nécessaires pour le fonctionnement d’un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site peut être atteint au moyen d’une URL publique ou au moins d’en empêcher l’accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_nodemodules_info'] = 'Le dossier <em>node_modules</em> ne devrait pas être présent sur des sites publics.';
 $string['check_nodemodules_name'] = 'Dossier des modules Node.js';

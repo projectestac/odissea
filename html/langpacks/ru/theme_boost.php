@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ru', version '4.1'.
+ * Strings for component 'theme_boost', language 'ru', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Предустановка темы';
 $string['preset_desc'] = 'Выберите предустановку, чтобы в целом изменить внешний вид темы.';
 $string['presetfiles'] = 'Дополнительные файлы предустановки темы';
-$string['presetfiles_desc'] = 'Файлы с предустановками (шаблоны) могут использоваться для существенного изменения внешнего вида темы. См. <a href=https://docs.moodle.org/dev/Boost_Presets> Шаблоны темы Boost</a> для получения информации о создании и распространении собственных файлов с шаблонами и см. <a href=http://moodle.net/boost> Репозиторий шаблонов </a> для шаблонов, представленных другими пользователями.';
+$string['presetfiles_desc'] = 'Файлы с предустановками (шаблоны) могут использоваться для существенного изменения внешнего вида темы. См. <a href=https://docs.moodle.org/dev/Boost_Presets> Шаблоны темы Boost</a> для получения информации о создании и распространении собственных файлов с шаблонами, а также см. <a href="https://moodle.net/search?q=boost+presets">Репозиторий шаблонов</a> для шаблонов, представленных другими пользователями.';
 $string['privacy:drawerblockclosed'] = 'Текущая настройка для боковой панели - закрыто.';
 $string['privacy:drawerblockopen'] = 'Текущая настройка для боковой панели - открыто.';
 $string['privacy:drawerindexclosed'] = 'Текущая настройка для оглавления курса - закрыто.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'Исходный SCSS';
 $string['rawscsspre_desc'] = 'В этом поле вы можете предоставить инициализирующий код SCSS, он будет вводиться перед всем остальным. Чаще всего этот параметр используется для определения переменных.';
 $string['region-side-pre'] = 'Справа';
 $string['showfooter'] = 'Показать нижний колонтитул';
-$string['totop'] = 'Наверх';
 $string['unaddableblocks'] = 'Недобавляемые блоки';
 $string['unaddableblocks_desc'] = 'Указанные блоки не используются в этой теме и не будут перечислены в списке «Добавить блок».';

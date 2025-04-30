@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ru', version '4.1'.
+ * Strings for component 'tool_uploadcourse', language 'ru', version '4.4'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -70,6 +70,8 @@ $string['coursetemplatename'] = 'Восстановить из этого кур
 $string['coursetemplatename_help'] = 'Введите короткое имя существующего курса для использования в качестве шаблона при создании всех курсов.';
 $string['coursetorestorefromdoesnotexist'] = 'Курс для восстановления не существует';
 $string['courseupdated'] = 'Курс обновлен';
+$string['courseuploadnotallowed'] = 'Нет разрешения на загрузку курсов в категории: {$a}';
+$string['courseuploadupdatenotallowed'] = 'Курс с таким коротким названием уже имеется, и у вас нет права использовать загрузку курса для его обновления.';
 $string['createall'] = 'Создать все, при необходимости увеличивать короткое имя';
 $string['createnew'] = 'Создать только новые курсы, пропустить существующие';
 $string['createorupdate'] = 'Создать только новые курсы или обновить существующие';
@@ -86,6 +88,7 @@ $string['encoding_help'] = 'Кодировка файла CSV.';
 $string['errorcannotcreateorupdateenrolment'] = 'Не удалось создать или обновить метод зачисления «{$a}»';
 $string['errorcannotdeleteenrolment'] = 'Не удалось удалить метод зачисления «{$a}»';
 $string['errorcannotdisableenrolment'] = 'Не удалось отключить метод зачисления «{$a}»';
+$string['errorunsupportedmethod'] = 'Метод регистрации «{$a}» не поддерживается при загрузке с помощью CSV.';
 $string['errorwhiledeletingcourse'] = 'Ошибка при удалении курса';
 $string['errorwhilerestoringcourse'] = 'Ошибка при восстановлении курса';
 $string['generatedshortnamealreadyinuse'] = 'Сгенерированные короткие имена уже используются';
@@ -131,6 +134,7 @@ $string['updatemodedoessettonothing'] = 'Режим обновления не р
 $string['updateonly'] = 'Только обновление существующих курсов';
 $string['updatewithdataonly'] = 'Обновление только данными из CSV';
 $string['updatewithdataordefaults'] = 'Обновление данными из CSV и значениями по умолчанию';
+$string['uploadcourse:use'] = 'Использовать инструмент загрузки курсов';
 $string['uploadcourses'] = 'Загрузка курсов';
 $string['uploadcourses_help'] = 'Курсы могут быть загружены с помощью текстового файла. Формат файла должен быть следующим:
 

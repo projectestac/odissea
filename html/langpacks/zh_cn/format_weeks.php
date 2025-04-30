@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'zh_cn', version '4.1'.
+ * Strings for component 'format_weeks', language 'zh_cn', version '4.4'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,19 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = '增加周数';
+$string['addsection'] = '添加周';
 $string['automaticenddate'] = '根据节数计算结束日期';
 $string['automaticenddate_help'] = '如果启用，将根据节数和课程开始日期自动计算课程的结束日期。';
 $string['currentsection'] = '本周';
-$string['deletesection'] = '删除周次';
-$string['editsection'] = '编辑周次';
-$string['editsectionname'] = '编辑周名称';
-$string['hidefromothers'] = '隐藏星期';
-$string['newsectionname'] = '周{$a}的新名称';
-$string['page-course-view-weeks'] = '使用星期格式的课程主页';
-$string['page-course-view-weeks-x'] = '使用星期格式的课程页面';
-$string['pluginname'] = '星期格式';
-$string['privacy:metadata'] = '每周格式插件不存储任何个人数据。';
+$string['hidefromothers'] = '隐藏';
+$string['indentation'] = '允许课程页缩进';
+$string['indentation_help'] = '允许教师和其他具有管理活动功能的用户缩进课程页面上的项目。';
+$string['page-course-view-weeks'] = '以周格式显示的课程主页';
+$string['page-course-view-weeks-x'] = '以周格式显示的课程页面';
+$string['plugin_description'] = '课程从课程开课日期开始，每周分成几个部分。';
+$string['pluginname'] = '周格式';
+$string['privacy:metadata'] = '周格式插件不存储任何个人数据。';
 $string['section0name'] = '常规';
 $string['sectionname'] = '教学周';
-$string['showfromothers'] = '显示星期';
+$string['showfromothers'] = '显示';

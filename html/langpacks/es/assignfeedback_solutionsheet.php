@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'es', version '4.1'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'es', version '4.4'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -40,8 +40,7 @@ $string['fromnowon'] = 'Activar desde ahora';
 $string['fromnowon_help'] = 'Si se marca, el profesor puede optar por mostrar la hoja de soluciones al crear la actividad.';
 $string['hidesolutionsafter'] = 'Ocultar soluciones después de';
 $string['pluginname'] = 'Hoja de soluciones';
-$string['privacy:metadata'] = 'El plugin de Hoja de soluciones no almacena información personal,
-sólo los datos de configuración para la tarea (incuyendo la misma hoja de soluciones).';
+$string['privacy:metadata'] = 'El plugin de la hoja de solución no almacena ningún dato personal, solamente datos de configuración para la Tarea (incluyendo la propia hoja de solución).';
 $string['requiresubmission'] = 'Requiere subir respuestas para ver';
 $string['requiresubmission_help'] = 'Si se activa, los estudiantes sólo pueden ver las soluciones si antes han enviado su respuesta a la tarea. Esta condición es adicional a las demás restricciones.';
 $string['requiresubmissionmsg'] = 'Sólo estudiantes que enviaron respuesta podrán ver las soluciones.';

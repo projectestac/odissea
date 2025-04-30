@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'en', version '4.1'.
+ * Strings for component 'choicegroup', language 'en', version '4.4'.
  *
  * @package     choicegroup
  * @category    string
@@ -59,6 +59,7 @@ $string['choicegroupfull'] = 'This group choice is full and there are no availab
 $string['choicegroupname'] = 'Group choice name';
 $string['choicegroupopen'] = 'Open';
 $string['choicegroupoptions'] = 'Choice options';
+$string['choicegroupoptions_description'] = 'Define available group options for participants';
 $string['choicegroupoptions_help'] = 'Here is where you specify which groups participants can choose from.
 
 The list on the left displays all available groups and groupings. To add one or several groups, select these from the list and click "Add". To add all groups from a grouping, select the grouping and click "Add".
@@ -74,6 +75,8 @@ $string['collapse_all_groupings'] = 'Collapse All Groupings';
 $string['completiondetail:submit'] = 'Choose a group';
 $string['completionsubmit'] = 'Show as complete when user makes a choice';
 $string['createdate'] = 'Group creation date';
+$string['defaultgroupdescriptionstate'] = 'Default group description display';
+$string['defaultgroupdescriptionstate_desc'] = 'Should the group description be displayed by default or not.';
 $string['defaultsettings'] = 'Default settings';
 $string['del'] = 'Remove';
 $string['del_group'] = 'Remove Group';

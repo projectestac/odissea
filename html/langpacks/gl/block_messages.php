@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_messages', language 'gl', version '4.1'.
+ * Strings for component 'block_messages', language 'gl', version '4.4'.
  *
  * @package     block_messages
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['messages:addinstance'] = 'Engadir un novo bloque de mensaxes';
-$string['messages:myaddinstance'] = 'Engadir un novo bloque de mensaxes na área persoal';
+$string['messages:addinstance'] = 'Engadir un bloque de mensaxes novo';
+$string['messages:myaddinstance'] = 'Engadir un bloque de mensaxes novo ao Taboleiro';
 $string['pluginname'] = 'Mensaxes';
 $string['privacy:metadata'] = 'O bloque de mensaxes só amosa datos almacenados noutras localizacións.';

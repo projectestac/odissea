@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'es', version '4.1'.
+ * Strings for component 'tool_monitor', language 'es', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'Área para monitorizar';
 $string['cachedef_eventsubscriptions'] = 'Esto almacena la lista de suscripciones a eventos para cursos individuales';
 $string['contactadmin'] = 'Ponte en contacto con tu administrador para habilitarlo.';
 $string['core'] = 'Core';
+$string['coresubsystem'] = 'Subsistema ({$a})';
 $string['currentsubscriptions'] = 'Sus suscripciones actuales';
 $string['defaultmessagetemplate'] = 'Nombre de la regla: {rulename}<br />Descripción: {description}<br />Nombre del evento: {eventname}';
 $string['deleterule'] = 'Eliminar regla';
@@ -64,13 +65,16 @@ $string['managesubscriptions'] = 'Monitorización de eventos';
 $string['managesubscriptionslink'] = 'Puede suscribirse a las reglas desde la página de {$a}.';
 $string['messageprovider:notification'] = 'Notificaciones de reglas de suscripción.';
 $string['messagetemplate'] = 'Mensaje de notificación';
-$string['messagetemplate_help'] = 'Un mensaje de notificación es enviado a los suscriptores una vez que se ha alcanzado el umbral de notificaciones. Puede incluir cualquiera o ninguno de los siguientes marcadores:
+$string['messagetemplate_help'] = 'Se envía un mensaje de notificación a los suscriptores una vez que se ha alcanzado el umbral de notificaciones. Puede incluir cualquiera o ninguno de los siguientes marcadores:
 
 * Enlace a la localización del evento {link}
 * Enlace al área monitorizada {modulelink}
+* Nombre del módulo de curso {modulename}
 * Nombre de la regla {rulename}
 * Descripción {description}
-* Evento {eventname}';
+* Evento {eventname}
+* Nombre completo del curso {coursefullname}
+* Nombre corto del curso {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instancia';
 $string['monitor:managerules'] = 'Gestionar reglas de monitorización de eventos';

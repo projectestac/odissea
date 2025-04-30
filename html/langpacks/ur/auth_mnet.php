@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ur', version '4.1'.
+ * Strings for component 'auth_mnet', language 'ur', version '4.4'.
  *
  * @package     auth_mnet
  * @category    string
@@ -36,7 +36,6 @@ $string['pluginname'] = 'MNet کی توثیق';
 $string['privacy:metadata:external:mahara'] = 'یہ پلگ ان منسلک مہارا ایپلیکیشن کو بیرونی طور پر ڈیٹا بھیج سکتا ہے۔';
 $string['privacy:metadata:external:moodle'] = 'یہ پلگ ان ایک منسلک موڈل ایپلیکیشن کو بیرونی طور پر ڈیٹا بھیج سکتا ہے۔';
 $string['privacy:metadata:mnet_external:address'] = 'صارف کا پتہ۔';
-$string['privacy:metadata:mnet_external:aim'] = 'صارف کا AIM شناخت کنندہ';
 $string['privacy:metadata:mnet_external:alternatename'] = 'صارف کے لیے ایک متبادل نام۔';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'ایک ترجیح کہ آیا صارف کو ان فورمز پر خودکار رکنیت حاصل کرنی چاہیے جس میں صارف پوسٹ کرتا ہے۔';
 $string['privacy:metadata:mnet_external:calendartype'] = 'استعمال کرنے کے لیے کیلنڈر کی قسم کے لیے صارف کی ترجیح۔';
@@ -50,7 +49,6 @@ $string['privacy:metadata:mnet_external:emailstop'] = 'صارف کو ای میل
 $string['privacy:metadata:mnet_external:firstaccess'] = 'وہ وقت جب اس صارف نے پہلی بار سائٹ تک رسائی حاصل کی۔';
 $string['privacy:metadata:mnet_external:firstname'] = 'صارف کا پہلا نام۔';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'صارف کے پہلے نام کے بارے میں صوتیاتی تفصیلات۔';
-$string['privacy:metadata:mnet_external:icq'] = 'صارف کا ICQ نمبر۔';
 $string['privacy:metadata:mnet_external:id'] = 'یوزر آئی ڈی';
 $string['privacy:metadata:mnet_external:idnumber'] = 'ادارے کی طرف سے دیا گیا شناختی نمبر';
 $string['privacy:metadata:mnet_external:imagealt'] = 'صارف کی تصویر کے لیے متبادل متن۔';
@@ -63,19 +61,15 @@ $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'صارف کے کن
 $string['privacy:metadata:mnet_external:maildigest'] = 'اس صارف کے لیے میل ڈائجسٹ کی ترتیب۔';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'دوسرے صارفین کو اپنا ای میل پتہ ظاہر کرنے کے بارے میں صارف کی ترجیح۔';
 $string['privacy:metadata:mnet_external:middlename'] = 'صارف کا درمیانی نام';
-$string['privacy:metadata:mnet_external:msn'] = 'صارف کا MSN شناخت کنندہ';
 $string['privacy:metadata:mnet_external:phone1'] = 'صارف کے لیے ایک فون نمبر۔';
 $string['privacy:metadata:mnet_external:phone2'] = 'صارف کے لیے ایک اضافی فون نمبر۔';
 $string['privacy:metadata:mnet_external:picture'] = 'اس صارف سے وابستہ تصویر کی تفصیلات۔';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'ایک نشان اس بات کا تعین کرنے کے لیے کہ آیا صارف نے سائٹ کی پالیسی سے اتفاق کیا ہے۔';
-$string['privacy:metadata:mnet_external:skype'] = 'صارف کا Skype شناخت کنندہ';
 $string['privacy:metadata:mnet_external:suspended'] = 'یہ دکھانے کے لیے ایک نشان کہ آیا صارف کو اس سسٹم پر معطل کر دیا گیا ہے۔';
 $string['privacy:metadata:mnet_external:timezone'] = 'صارف کا ٹائم زون';
 $string['privacy:metadata:mnet_external:trackforums'] = 'فورمز اور ان سے باخبر رہنے کی ترجیح۔';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'ٹرسٹ بٹ ماسک';
-$string['privacy:metadata:mnet_external:url'] = 'اس صارف سے متعلق یو آر ایل۔';
 $string['privacy:metadata:mnet_external:username'] = 'اس صارف کا صارف نام۔';
-$string['privacy:metadata:mnet_external:yahoo'] = 'صارف کا یاہو شناخت کنندہ';
 $string['privacy:metadata:mnet_log'] = 'ریموٹ سسٹم میں لاگ ان ہونے والے مقامی صارف کے ذریعے کی گئی ریموٹ کارروائیوں کی تفصیلات۔';
 $string['privacy:metadata:mnet_log:action'] = 'صارف کے ذریعہ کی گئی کارروائی۔';
 $string['privacy:metadata:mnet_log:cmid'] = 'کورس ماڈیول کی آئی ڈی۔';

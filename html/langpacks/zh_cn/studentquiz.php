@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'zh_cn', version '4.1'.
+ * Strings for component 'studentquiz', language 'zh_cn', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -74,7 +74,6 @@ $string['filter_label_approved'] = '已批准的问题';
 $string['filter_label_comment'] = '留言';
 $string['filter_label_createdate'] = '创建';
 $string['filter_label_difficulty_level'] = '难度';
-$string['filter_label_fast_filters'] = '问题的快速筛选';
 $string['filter_label_myattempts'] = '我的尝试';
 $string['filter_label_mydifficulty'] = '我的难度';
 $string['filter_label_mylastattempt'] = '我最近一次的尝试';

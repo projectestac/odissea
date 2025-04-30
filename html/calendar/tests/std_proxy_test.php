@@ -25,7 +25,7 @@ use core_calendar\local\event\proxies\std_proxy;
  * @copyright 2017 Cameron Ball <cameron@cameron1729.xyz>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class std_proxy_test extends \advanced_testcase {
+final class std_proxy_test extends \advanced_testcase {
     /**
      * @var \stdClass[] $objects Array of objects to proxy.
      */
@@ -54,7 +54,7 @@ class std_proxy_test extends \advanced_testcase {
      * @param string $member   Object member to retrieve.
      * @param mixed  $expected Expected value of member.
      */
-    public function test_proxy($id, $member, $expected) {
+    public function test_proxy($id, $member, $expected): void {
         $proxy = new std_proxy($id, function($id) {
             return $this->objects[$id];
         });
@@ -70,7 +70,7 @@ class std_proxy_test extends \advanced_testcase {
      * @param string $member      Object member to retrieve.
      * @param mixed  $storedvalue Value as would be stored externally.
      */
-    public function test_base_values($id, $member, $storedvalue) {
+    public function test_base_values($id, $member, $storedvalue): void {
         $proxy = new std_proxy(
             $id,
             function($id) {
@@ -89,7 +89,7 @@ class std_proxy_test extends \advanced_testcase {
      * @dataProvider get_set_testcases
      * @param int $id ID of the object being proxied.
      */
-    public function test_get_invalid_member($id) {
+    public function test_get_invalid_member($id): void {
         $proxy = new std_proxy($id, function($id) {
             return $this->objects[$id];
         });
@@ -104,7 +104,7 @@ class std_proxy_test extends \advanced_testcase {
      * @dataProvider get_set_testcases
      * @param int $id Object ID.
      */
-    public function test_get_proxied_instance($id) {
+    public function test_get_proxied_instance($id): void {
         $proxy = new std_proxy($id, function($id) {
             return $this->objects[$id];
         });
@@ -115,7 +115,7 @@ class std_proxy_test extends \advanced_testcase {
     /**
      * Test cases for proxying test.
      */
-    public function proxy_testcases() {
+    public static function proxy_testcases(): array {
         return [
             'Object 1 member 1' => [
                 1,
@@ -153,7 +153,7 @@ class std_proxy_test extends \advanced_testcase {
     /**
      * Test cases for getting and setting tests.
      */
-    public function get_set_testcases() {
+    public static function get_set_testcases(): array {
         return [
             'Object 1' => [1],
             'Object 2' => [5]

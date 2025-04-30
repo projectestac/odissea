@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlesson', language 'ar', version '4.1'.
+ * Strings for component 'customlesson', language 'ar', version '4.4'.
  *
  * @package     customlesson
  * @category    string
@@ -80,6 +80,8 @@ $string['essayscore'] = 'درجة المقالة';
 $string['firstanswershould'] = 'الجواب الأول ينبغي أن يقفز إلى صفحة "الصحيح"';
 $string['highscore'] = 'الدرجة العليا';
 $string['highscores'] = 'الدرجات العليا';
+$string['importcount'] = 'استيراد {$a} من الأسئلة';
+$string['importindividualdata'] = 'استيراد بيانات منفردة';
 $string['importquestions'] = 'استيراد الأسئلة';
 $string['jumps_help'] = 'لكل جواب (للأسئلة) أو وصف (لصفحات المحتوى) انتقالة خاصة به. يمكن للانتقالة أن تكون نسبية، مثل: هذه الصفحة، الصفحة التالية، أو مطلقة، عبر تحديد أي صفحة من صفحات الدرس.';
 $string['lesson:addinstance'] = 'إضافة درس مخصص جديد';

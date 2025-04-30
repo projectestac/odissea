@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ro', version '4.1'.
+ * Strings for component 'course', language 'ro', version '4.4'.
  *
  * @package     course
  * @category    string
@@ -32,8 +32,11 @@ $string['activitychooserhidefooter'] = 'Fără subsol';
 $string['activitychooserrecommendations'] = 'Activități recomandate';
 $string['activitychoosersettings'] = 'Setările selectorului de activități';
 $string['activitychoosertabmode'] = 'Taburile selectorului de activități';
-$string['activitychoosertabmode_desc'] = 'Selectorul de activități permite profesorului să selecteze cu ușurință activitățile și resursele pe care să le adauge la curs. Această setare determină care taburi ar trebui să fie afișate în selector. Rețineți că tabul cu favorite este afișată numai pentru un utilizator dacă a marcat una sau mai multe activități ca fiind favorite, iar tabul recomandate este afișat numai dacă un administrator de site a specificat unele activități recomandate.';
+$string['activitychoosertabmode_desc'] = 'Selectorul de activități listează activități și resurse pe care un profesor le poate adăuga la cursul său. Pentru a adăuga elemente în fila Recomandate, accesați <a href=\'../course/recommendations.php\'>Activități recomandate</a>.';
+$string['activitychoosertabmodefive'] = 'Evidențiat, Recomandat, Toate';
+$string['activitychoosertabmodefour'] = 'Evidențiat, Recomandat, Toate, Activități, Resurse';
 $string['activitychoosertabmodeone'] = 'Favorite, Toate, Activități, Resurse, Recomandate';
+$string['activitychoosertabmodesix'] = 'Evidențiat, Recomandat, Activități, Resurse';
 $string['activitychoosertabmodethree'] = 'Favorite, Activități, Resurse, Recomandate';
 $string['activitychoosertabmodetwo'] = 'Favorite, Toate, Recomandate';
 $string['activitydate:closed'] = 'Închis:';
@@ -51,6 +54,7 @@ $string['aria:modulefavourite'] = 'Marcați favorită activitatea {$a}';
 $string['aria:recommendedtab'] = 'Activități recomandate';
 $string['browsecourseadminindex'] = 'Analizați administrarea cursului cu acest index.';
 $string['browsesettingindex'] = 'Analizați setările cu acest index.';
+$string['communicationroomlink'] = 'Discuție cu participanții la curs';
 $string['completion_automatic:done'] = 'Completat:';
 $string['completion_automatic:failed'] = 'Eșuat:';
 $string['completion_automatic:todo'] = 'De îndeplinit:';
@@ -65,12 +69,14 @@ $string['completion_setby:manual:markdone'] = '{$a->activityname} este marcată 
 $string['completionrequirements'] = 'Criterii de completare pentru {$a}';
 $string['courseaccess'] = 'Acces la curs';
 $string['coursealreadyfinished'] = 'Curs încheiat deja';
+$string['coursecommunication_desc'] = 'Serviciul de comunicare implicit pentru noile cursuri. Cursurile existente nu vor avea niciun furnizor selectat în mod implicit.';
 $string['coursecontentnotification'] = 'Trimiteți o notificare de modificare a conținutului';
 $string['coursecontentnotification_help'] = 'Bifați caseta pentru a notifica participanții la curs despre această activitate sau resursă modificată. Doar utilizatorii care pot accesa activitatea sau resursa vor primi notificarea.';
 $string['coursecontentnotifnew'] = '{$a->coursename} conținut nou';
 $string['coursecontentnotifnewbody'] = '<p>Resursa /  Activitatea de tip {$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> a fost adăugat(ă) în cursul <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Modificați setările pentru notificări </a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} modificarea conținutului';
 $string['coursecontentnotifupdatebody'] = '<p>Notificare!<br><br>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> a fost modificat(ă) în cursul <br><a href="{$a->courselink}">{$a->coursename}</a>.</p><p><br><br><a href="{$a->notificationpreferenceslink}">Modificați setările notificărilor.</a></p>';
+$string['coursecount'] = 'Numărul de cursuri';
 $string['coursenotyetfinished'] = 'Cursul nu s-a încheiat încă';
 $string['coursenotyetstarted'] = 'Cursul nu a început încă';
 $string['courseparticipants'] = 'Participanți la curs';
@@ -84,6 +90,7 @@ $string['customfield_visibletoall'] = 'Orice utilizator';
 $string['customfield_visibletoteachers'] = 'Profesori';
 $string['customfieldsettings'] = 'Setări obișnuite ale câmpurilor personalizate din cursului';
 $string['daystakingcourse'] = 'Zile de participare la curs';
+$string['defaultsettingscategory'] = 'Setări implicite';
 $string['downloadcontent'] = 'Include în descărcarea conținutului cursului';
 $string['downloadcontent_help'] = 'Această activitate sau resursă ar trebui să fie inclusă în fișierul zip, conținutul cursului disponibil pentru descărcare? Fișierul, folderul, pagina și eticheta pot fi descărcate complet. Pentru toate celelalte activități și resurse, sunt descărcate doar numele și descrierea. Această opțiune necesită descărcarea conținutului cursului pentru a fi activată în setările cursului.
 
@@ -94,7 +101,9 @@ $string['downloadcoursecontent_help'] = 'Această setare determină dacă conți
 $string['enabledownloadcoursecontent'] = 'Activați descărcarea conținutului cursului';
 $string['errorendbeforestart'] = 'Data de încheiere ({$a}) este înainte de data de începere a cursului.';
 $string['favourite'] = 'Curs evidențiat';
+$string['gotosection'] = 'Mergi la secțiunea {$a}';
 $string['gradetopassnotset'] = 'Acest curs nu are notă de trecere. Poate fi setată în elementul de notă al cursului (Configurare catalog de note).';
+$string['hideendedcoursestask'] = 'Ascunde cursurile la data încheierii';
 $string['informationformodule'] = 'Informații despre activitatea {$a}';
 $string['module'] = 'Activitate';
 $string['namewithlink'] = 'Denumirea categoriei cu link';
@@ -111,6 +120,8 @@ $string['noteachinginfomessage'] = 'Bună {$a->userfirstname},
 $string['participants:perpage'] = 'Numărul de participanți per pagină';
 $string['participants:perpage_help'] = 'Specificați numărul de participanți afișati per pagină';
 $string['participantsnavigation'] = 'Navigare separată a participanților.';
+$string['pdfexportfont'] = 'Font PDF';
+$string['pdfexportfont_help'] = 'Fontul care va fi utilizat pentru fișierele PDF generate, de exemplu răspunsurile la sarcinile de lucru.';
 $string['privacy:completionpath'] = 'Finalizarea cursului';
 $string['privacy:favouritespath'] = 'Informații de curs favorite';
 $string['privacy:metadata:activityfavouritessummary'] = 'Sistemul de cursuri conține informații despre ce elemente din selectorul de activități au fost marcate ca fiind favorite de utilizator.';
@@ -123,6 +134,8 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} după încep
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} înainte de începerea cursului';
 $string['searchactivitiesbyname'] = 'Caută activități după nume';
 $string['searchresults'] = 'Rezultatele căutării: {$a}';
+$string['sectionlink'] = 'Permalink';
+$string['showstartedcoursestask'] = 'Afișează cursurile la data începerii';
 $string['studentsatriskincourse'] = 'Cursanți cu risc în cursul {$a}';
 $string['studentsatriskinfomessage'] = 'Bună {$a->userfirstname},
 <p> Cursanții din cursul {$a->coursename} au fost identificați ca fiind expuși riscului de abandon. </p>';
@@ -154,3 +167,4 @@ $string['targetlabelstudentgradetopassno'] = 'Cursant care este probabil să în
 $string['targetlabelstudentgradetopassyes'] = 'Elevul care riscă să nu îndeplinească nota minimă pentru finalizarea cursului.';
 $string['targetlabelteachingno'] = 'Cursuri cu riscul de a nu începe';
 $string['targetlabelteachingyes'] = 'Utilizatori cu capacități de predare care au acces la curs';
+$string['totalactivities'] = 'Activități: {$a}';

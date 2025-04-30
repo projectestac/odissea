@@ -90,18 +90,17 @@ if ($users and !empty($CFG->enablegroupmembersonly) and $qv->cm->groupmembersonl
     }
 }
 
-// Create results table
-if (function_exists('get_extra_user_fields') ) {
-    $extrafields = get_extra_user_fields($qv->context);
-} else {
-    $extrafields = array();
-}
-$tablecolumns = array_merge(array('picture', 'fullname'), $extrafields,
-        array('state', 'unread', 'grade', 'delivers', 'time', 'actions'));
+$extrafields = \core_user\fields::for_identity($context, false)->excluding(...array())->get_required_fields();
 
-$extrafieldnames = array();
+$tablecolumns = array_merge(
+    ['picture', 'fullname'],
+    $extrafields,
+    ['state', 'unread', 'grade', 'delivers', 'time', 'actions']
+);
+
+$extrafieldnames = [];
 foreach ($extrafields as $field) {
-    $extrafieldnames[] = get_user_field_name($field);
+    $extrafieldnames[] = \core_user\fields::get_display_name($field);
 }
 
 $tableheaders = array_merge(

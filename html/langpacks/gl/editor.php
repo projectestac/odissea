@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'gl', version '4.1'.
+ * Strings for component 'editor', language 'gl', version '4.4'.
  *
  * @package     editor
  * @category    string
@@ -46,9 +46,9 @@ $string['cellspacing'] = 'Espazado da cela';
 $string['choosechar'] = 'Escolla o carácter';
 $string['chooseicon'] = 'Escolla unha icona para inserir';
 $string['close'] = 'Pechar';
-$string['closeafterreplace'] = 'Pechar após substituír';
+$string['closeafterreplace'] = 'Pechar despois de substituír';
 $string['cols'] = 'Columnas';
-$string['configeditorplugins'] = 'Escolla os engadidos do editor que quere empregar e dispóñaos na orde recomendada.';
+$string['configeditorplugins'] = 'Escolla os complementos do editor que quere empregar e dispóñaos na orde recomendada.';
 $string['copy'] = 'Copiar a selección';
 $string['createanchor'] = 'Crear unha ancora';
 $string['createfolder'] = 'Crear un cartafol';
@@ -60,7 +60,7 @@ $string['editors'] = 'Editores de texto';
 $string['editorsettings'] = 'Administrar os editores';
 $string['editorxformat'] = 'Formato {$a}';
 $string['enterurlfirst'] = 'Debe introducir antes un URL';
-$string['filebrowser'] = 'Navegador de ficheiros';
+$string['filebrowser'] = 'Navegador de archivos';
 $string['findwhat'] = 'Buscar';
 $string['fontname'] = 'Nome do tipo de letra';
 $string['fontsize'] = 'Tamaño da letra';
@@ -81,7 +81,7 @@ $string['insertlink'] = 'Inserir unha ligazón';
 $string['insertsmile'] = 'Inserir unha emoticona';
 $string['inserttable'] = 'Inserir unha táboa';
 $string['italic'] = 'Cursiva';
-$string['itemsreplaced'] = 'elementos substituídos';
+$string['itemsreplaced'] = 'items substituídos';
 $string['justifycenter'] = 'Xustificado no centro';
 $string['justifyfull'] = 'Xustificación total';
 $string['justifyleft'] = 'Xustificación esquerda';
@@ -109,7 +109,7 @@ $string['nolink'] = 'Impedir o ligado automático';
 $string['normal'] = 'Normal';
 $string['notimage'] = 'O ficheiro seleccionado non é unha imaxe. Escolla unha imaxe.';
 $string['notset'] = 'Non definido';
-$string['ok'] = 'Aceptar';
+$string['ok'] = 'De acordo';
 $string['options'] = 'Opcións';
 $string['orderedlist'] = 'Lista ordenada';
 $string['outdent'] = 'Diminuír a sangría';

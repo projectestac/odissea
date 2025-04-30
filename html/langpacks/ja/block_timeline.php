@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ja', version '4.1'.
+ * Strings for component 'block_timeline', language 'ja', version '4.4'.
  *
  * @package     block_timeline
  * @category    string
@@ -29,9 +29,6 @@ $string['all'] = 'すべて';
 $string['ariadayfilter'] = '日付でタイムラインをフィルタする';
 $string['ariadayfilteroption'] = '{$a} フィルタオプション';
 $string['ariaeventlistitem'] = '{$a->course} の {$a->name} 活動は {$a->date} が期限です。';
-$string['ariaeventlistpagelimit'] = '1ページあたり {$a} 活動を表示する';
-$string['ariaeventlistpaginationnavcourses'] = 'コース {$a} のタイムライン活動ページネーション';
-$string['ariaeventlistpaginationnavdates'] = 'タイムライン活動ページネーション';
 $string['ariaviewselector'] = 'タイムラインアイテムを並べ替える';
 $string['ariaviewselectoroption'] = '{$a} 並べ替えオプション';
 $string['duedate'] = '期限';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupformation', language 'nl', version '4.1'.
+ * Strings for component 'groupformation', language 'nl', version '4.4'.
  *
  * @package     groupformation
  * @category    string

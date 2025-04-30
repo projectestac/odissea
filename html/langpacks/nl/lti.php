@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'nl', version '4.1'.
+ * Strings for component 'lti', language 'nl', version '4.4'.
  *
  * @package     lti
  * @category    string
@@ -31,6 +31,7 @@ $string['accept_grades_admin'] = 'Aanvaard cijfers van de tool';
 $string['accept_grades_admin_help'] = 'Specifieer of de tool provider cijfers die geassocieerd zijn met deze tool mag toevoegen, updaten, lezen, en verwijderen.
 
 Sommige tool providers ondersteunen de mogelijkheid om cijfers terug te rapporteren aan Moodle op basis van acties ondernomen binnen de tool, waardoor een meer integrale ervaring wordt gecreëerd.';
+$string['accept_grades_from_tool'] = 'Geef {$a} toestemming om cijfers toe te voegen aan de cijferlijst';
 $string['accept_grades_help'] = 'Specifieer of de tool provider cijfers die geassocieerd zijn met enkel deze externe instantie van de tool mag toevoegen, updaten, lezen, en verwijderen.
 
 Sommige tool providers ondersteunen de mogelijkheid om cijfers terug te rapporteren aan Moodle op basis van acties ondernomen binnen de tool, waardoor een meer integrale ervaring wordt gecreëerd.
@@ -46,6 +47,7 @@ $string['add_ltiadv'] = 'Voeg toe LTI Advantage';
 $string['add_ltilegacy'] = 'Voeg verouderde LTI toe';
 $string['addnewapp'] = 'Schakel de externe applicatie in';
 $string['addserver'] = 'Voeg een vertrouwde server toe';
+$string['addtool'] = 'Tool toevoegen';
 $string['addtype'] = 'Voeg voorgeconfigureerde tool toe';
 $string['allow'] = 'Sta toe';
 $string['allowsetting'] = 'Sta de tool toe om 8K aan instellingen in Moodle te bewaren';
@@ -87,18 +89,27 @@ $string['configtoolurl'] = 'Standaard externe tool URL';
 $string['configtypes'] = 'LTI applicaties inschakelen';
 $string['configured'] = 'Geconfigureerd';
 $string['confirmtoolactivation'] = 'Bent je er zeker van dat je deze tool wilt activeren?';
-$string['contentitem'] = 'Inhoud-item bericht';
 $string['contentitem_deeplinking'] = 'Ondersteunt Deep Linking (Content-Item-Message)';
 $string['contentitem_deeplinking_help'] = 'Indien ingeschakeld zal de optie "Selecteer inhoud" beschikbaar zijn bij het toevoegen van een externe tool.';
-$string['contentitem_help'] = 'Indien ingeschakeld zal de optie "Selecteer inhoud" beschikbaar zijn bij het toevoegen van een externe tool.';
 $string['contentitem_multiple_description'] = 'Volgende items zullen aan je cursus toegevoegd worden:';
 $string['contentitem_multiple_graded'] = 'Beoordeelde activiteit (Maximumcijfer: {$a})';
+$string['contentselected'] = 'Inhoud geselecteerd';
 $string['course_tool_types'] = 'Cursus tools';
 $string['courseactivitiesorresources'] = 'Cursusactiviteiten en bronnen';
+$string['courseexternaltooladd'] = 'Nieuwe LTI Externe tool toevoegen';
+$string['courseexternaltooladdsuccess'] = '{$a} toegevoegd.';
+$string['courseexternaltooledit'] = '{$a} bewerken';
+$string['courseexternaltooleditsuccess'] = 'Wijzigingen opgeslagen.';
+$string['courseexternaltooliconalt'] = 'Icoon voor {$a}';
+$string['courseexternaltools'] = 'LTI Externe tools';
+$string['courseexternaltoolsinfo'] = 'Externe LTI-tools zijn add-on-apps die je in je cursus kunt integreren, zoals interactieve inhoud of beoordelingen. Je leerlingen kunnen ze openen en gebruiken zonder je cursus te verlaten.';
+$string['courseexternaltoolsnoeditpermissions'] = 'Je hebt geen rechten om dit hulpmiddel te bewerken';
+$string['courseexternaltoolsnoviewpermissions'] = 'Bekijk cursus externe tools';
 $string['courseid'] = 'Cursus ID nummer';
 $string['courseinformation'] = 'Cursusinformatie';
 $string['courselink'] = 'Ga naar cursus';
 $string['coursemisconf'] = 'Cursus is slecht geconfigureerd';
+$string['coursetooldeleted'] = '{$a} verwijderd';
 $string['createdon'] = 'Gemaakt op';
 $string['curllibrarymissing'] = 'PHP Curl moet geïnstalleerd zijn om de Externe Tool te kunnen gebruiken';
 $string['custom'] = 'Eigen parameters';
@@ -122,23 +133,19 @@ $string['delegate'] = 'Delegeer aan leraar';
 $string['delegate_tool'] = 'Zoals opgegeven in Deep Linking definitie of delegeer naar leraar';
 $string['delete'] = 'Verwijder';
 $string['delete_confirmation'] = 'Ben je zeker dat je deze voorgeconfigureerde tool wil verwijderen?';
+$string['deletecoursetool'] = 'Verwijderen {$a}';
+$string['deletecoursetoolconfirm'] = 'Dit zal {$a} verwijderen van de beschikbare LTI-tools in je cursus.';
+$string['deletecoursetoolwithusageconfirm'] = '{$a} wordt momenteel gebruikt in ten minste één activiteit in je cursus. Als je deze tool verwijdert, werken de activiteiten die er gebruik van maken niet meer.<br><br>Weet je zeker dat je {$a} wilt verwijderen?';
 $string['deletetype'] = 'Verwijder de voorgeconfigureerde tool';
-$string['display_description'] = 'Toon de activiteitsbeschrijving bij lancering';
-$string['display_description_help'] = 'Indien geselecteerd, dan zal de activiteitsbeschrijving (hierboven vermeld) getoond worden boven de hoofdinhoud van de tool provider.
-
-De beschrijving kan worden gebruikt om aanvullende instructies te geven aan diegenen die de tool lanceren, maar dit is geen vereiste.
-
-De beschrijving wordt nooit getoond wanneer de lanceringscontainer van de tool opent in een nieuw venster.';
-$string['display_name'] = 'Toon de activiteitsnaam bij lancering';
-$string['display_name_help'] = 'Indien geselecteerd, dan zal de activiteitsnaam (hierboven vermeld) getoond worden boven de hoofdinhoud van de tool provider.
-
-Het is mogelijk dat ook de tool provider  de titel toont. Deze optie laat toe te vermijden dat de activiteitstitel twee keer wordt getoond
-
-De titel wordt nooit getoond wanneer de lanceringscontainer van de tool opent in een nieuw venster.';
+$string['display_description'] = 'Geef de beschrijving van de activiteit weer wanneer leerlingen de tool openen';
+$string['display_description_help'] = 'Inhoud van deze tool wordt ingebed weergegeven op een pagina in de cursus. Deze instelling bepaalt of de activiteitbeschrijving op die pagina wordt weergegeven.';
+$string['display_name'] = 'Geef de naam van de activiteit weer wanneer leerlingen de tool openen';
+$string['display_name_help'] = 'Inhoud van deze tool wordt ingebed weergegeven op een pagina in de cursus. Deze instelling bepaalt of de naam van de activiteit op die pagina wordt weergegeven.';
 $string['domain_mismatch'] = 'Het domein van de URL komt niet overeen met de tool-configuratie.';
 $string['donot'] = 'Verstuur dit niet';
 $string['donotaccept'] = 'Aanvaard dit niet';
 $string['donotallow'] = 'Sta dit niet toe';
+$string['dontshowinactivitychooser'] = 'Niet weergeven in activiteitenkiezer';
 $string['duplicateregurl'] = 'De registratie-URL is al in gebruik';
 $string['dynreg_update_btn_new'] = 'Registreer als nieuwe externe tool';
 $string['dynreg_update_btn_update'] = 'Aanpassen';
@@ -149,6 +156,11 @@ $string['dynreg_update_url'] = 'Basis-URL';
 $string['dynreg_update_version'] = 'LTI-versie';
 $string['dynreg_update_warn_dupdomain'] = 'Het wordt afgeraden om meerdere externe tools onder hetzelfde domein te hebben.';
 $string['editdescription'] = 'Klik hier om deze tool een beschrijving te geven';
+$string['editmanualinstancedeprecationwarning'] = 'Handmatig geconfigureerde externe toolactiviteiten worden niet langer ondersteund. Maak je geen zorgen, deze activiteit werkt nog steeds zoals hij is, maar je kunt hier geen wijzigingen meer aanbrengen in de toolconfiguratie.
+<br><br>
+Om wijzigingen in de tool aan te brengen of er nieuwe activiteiten mee te maken, moet de tool aan je cursus worden toegevoegd in Cursus > Meer > LTI Externe tools. Vervolgens kun je nieuwe activiteiten maken door de tool rechtstreeks in de Activiteitskiezer te selecteren.
+<br><br>
+Je kunt meer lezen over het toevoegen van externe LTI-tools in de documentatie <a href="{$a}" target="_blank">Externe tool</a>.';
 $string['edittype'] = 'Bewerk voorgeconfigureerde tool';
 $string['embed'] = 'Embed';
 $string['embed_no_blocks'] = 'Embed, zonder blokken';
@@ -156,6 +168,7 @@ $string['enableemailnotification'] = 'Verstuur e-mails met meldingen';
 $string['enableemailnotification_help'] = 'Indien ingeschakeld, zullen de leerlingen een e-mailmelding ontvangen wanneer hun tool opdrachten beoordeeld werden.';
 $string['enterkeyandsecret'] = 'Geef je consumer key en shared secret';
 $string['enterkeyandsecret_help'] = 'Als je een verbruikerssleutel en/of gedeeld geheim gekregen hebt, geeft het dan hier in';
+$string['entitycourseexternaltools'] = 'LTI Externe tools';
 $string['errorbadurl'] = 'URL is geen geldige tool URL of cartridge';
 $string['errorincorrectconsumerkey'] = 'Verbruikerssleutel is niet juist.';
 $string['errorinvaliddata'] = 'Ongeldige gegevens: {$a}';
@@ -238,11 +251,11 @@ $string['launchinpopup_help'] = 'De container voor lancering beïnvloedt de wijz
 * **Nieuw venster** - De tool opent in een nieuw venster, waar het alle beschikbare ruimte inneemt.
 Afhankelijk van de browser zal het openen in een nieuwe tab of in een pop-up venster. Het is mogelijk dat de browser het openen van een nieuw venster verhindert.';
 $string['launchoptions'] = 'Opties voor lancering';
-$string['leaveblank'] = 'Laat leeg als je ze niet nodig hebt';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Voeg cursusspecifieke tool-configuraties toe';
 $string['lti:addinstance'] = 'Voeg een nieuwe externe tool-activiteit toe';
 $string['lti:addmanualinstance'] = 'Voeg manueel voorgeconfigureerde tool toe';
+$string['lti:addmanualinstanceprohibitederror'] = 'Het handmatig maken van tools zonder definitie van een cursustool wordt niet langer ondersteund. Maak eerst een cursustool en gebruik die vervolgens om activiteitsinstanties te maken.';
 $string['lti:addpreconfiguredinstance'] = 'Voeg voorgeconfigureerde tool toe';
 $string['lti:admin'] = 'Wordt beheerder wanneer de tool wordt gestart';
 $string['lti:grade'] = 'Bekijk cijfers die door de externe tool gegeven zijn';
@@ -309,6 +322,7 @@ $string['no_tp_configured'] = 'Er zijn geen ongeregistreerde externe tool regist
 $string['no_tp_pending'] = 'Er zijn geen wachtende externe tool registraties.';
 $string['no_tp_rejected'] = 'Er zijn geen verworpen externe tool registraties.';
 $string['noattempts'] = 'Er werden geen pogingen ondernomen op deze tool instantie.';
+$string['nocourseexternaltoolsnotice'] = 'Er zijn nog geen externe LTI-tools';
 $string['noltis'] = 'Er zijn geen externe tool-exemplaren.';
 $string['noprofileservice'] = 'Profielservice niet gevonden';
 $string['noservers'] = 'Er werden geen servers aangetroffen.';
@@ -415,6 +429,8 @@ De consumentensleutel moet door de tool provider worden verstrekt. De methode om
 
 Voor tools die geen beveiligde communicatie met Moodle vereisen en die geen bijkomende diensten verstrekken (zoals rapportering van cijfers) heb je waarschijnlijk geen consumentensleutel nodig.';
 $string['resourceurl'] = 'Bron-URL';
+$string['restricttocategory'] = 'Beperken tot categorie';
+$string['restricttocategory_help'] = 'Om het gebruik van deze externe tool voor alle cursussen binnen een categorie te beperken, selecteer je cursuscategorie/categorieën uit de lijst.';
 $string['return_to_course'] = 'Klik op <a href="{$a->link}" target="_top">hier</a> om terug naar de cursus te keren.';
 $string['saveallfeedback'] = 'Bewaar al mijn feedback';
 $string['search:activity'] = 'Externe tool - activiteitsinformatie';
@@ -425,6 +441,7 @@ $string['secure_launch_url_help'] = 'Gelijkaardig aan de tool-URL, maar gebruikt
 
 Je kunt de tool-URL ook als https-adres plaatsen om  te dwingen via SSL te starten. Dit veld mag dan leeg gelaten worden.';
 $string['selectcontent'] = 'Selecteer inhoud';
+$string['selectcontentvalidationerror'] = 'Je moet inhoud voor deze activiteit selecteren.';
 $string['send'] = 'Verstuurd';
 $string['services'] = 'Diensten';
 $string['services_help'] = 'Kies die diensten die je wil aanbieden aan de tool provider. Er kan meer dan één dienst geselecterd worden.';
@@ -459,6 +476,7 @@ $string['show_in_course_lti2'] = 'Tool-configuratie gebruik';
 $string['show_in_course_lti2_help'] = 'Deze tool kan getoond worden in de activiteitenkiezer zodat een leraar die kan kiezen om aan een cursus toe te voegen in een rolmenu voor voorgeconfigureerde tools.';
 $string['show_in_course_no'] = 'Niet weergeven, alleen gebruiken wanneer een juiste tool-URL wordt ingegeven';
 $string['show_in_course_preconfigured'] = 'Toon als voorgeconfigureerde tool wanneer een externe tool toegevoegd wordt.';
+$string['showinactivitychooser'] = 'Weergeven in activiteitenkiezer';
 $string['sitehost'] = 'Hostnaam van de website';
 $string['siteid'] = 'Website ID';
 $string['size'] = 'Parameters afmetingen';
@@ -506,6 +524,7 @@ $string['toolsetup'] = 'Configuratie externe tool';
 $string['tooltypeadded'] = 'Voorgeconfigureerde tool toegevoegd';
 $string['tooltypedeleted'] = 'Voorgeconfigureerde tool verwijderd';
 $string['tooltypenotdeleted'] = 'Kon voorgeconfigureerde tool niet verwijderen';
+$string['tooltypenotfounderror'] = 'De LTI-tool die bij deze activiteit wordt gebruikt, is verwijderd. Als je hulp nodig hebt, neem dan contact op met je leraar of sitebeheerder.';
 $string['tooltypes'] = 'Tools';
 $string['tooltypeupdated'] = 'Voorgeconfigureerde tool aangepast';
 $string['toolurl'] = 'Tool-URL';
@@ -542,6 +561,7 @@ $string['unabletocreatetooltype'] = 'Kon tool niet maken';
 $string['unabletofindtooltype'] = 'Kon tool niet vinden voor {$a->id}';
 $string['unknownstate'] = 'Onbekende status';
 $string['update'] = 'Update';
+$string['usage'] = 'Gebruik';
 $string['useraccountinformation'] = 'Informatie gebruikersaccount';
 $string['userpersonalinformation'] = 'Persoonlijke gebruikersinformatie';
 $string['using_tool_cartridge'] = 'Tool cartridge gebruiken';

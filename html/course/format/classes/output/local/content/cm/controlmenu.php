@@ -65,7 +65,7 @@ class controlmenu implements named_templatable, renderable {
      *
      * @param course_format $format the course format
      * @param section_info $section the section info
-     * @param cm_info $mod the course module ionfo
+     * @param cm_info $mod the course module info
      * @param array $displayoptions optional extra display options
      */
     public function __construct(course_format $format, section_info $section, cm_info $mod, array $displayoptions = []) {
@@ -106,11 +106,11 @@ class controlmenu implements named_templatable, renderable {
     }
 
     /**
-     * Generate the aciton menu element.
+     * Generate the action menu element.
      *
      * This method is public in case some block needs to modify the menu before output it.
      * @param \renderer_base $output typically, the renderer that's calling this function
-     * @return aciton_menu the activity action menu
+     * @return action_menu|null the activity action menu
      */
     public function get_action_menu(\renderer_base $output): ?action_menu {
 
@@ -128,19 +128,14 @@ class controlmenu implements named_templatable, renderable {
 
         // Convert control array into an action_menu.
         $menu = new action_menu();
-        $icon = $output->pix_icon('i/menu', get_string('edit'));
-        $menu->set_menu_trigger($icon, 'btn btn-icon d-flex align-items-center justify-content-center');
-
+        $menu->set_kebab_trigger(get_string('edit'));
         $menu->attributes['class'] .= ' section-cm-edit-actions commands';
 
         // Prioritise the menu ahead of all other actions.
         $menu->prioritise = true;
 
-        $ownerselector = $displayoptions['ownerselector'] ?? '#module-' . $mod->id;
+        $ownerselector = $this->displayoptions['ownerselector'] ?? '#module-' . $mod->id;
         $menu->set_owner_selector($ownerselector);
-
-        $constraint = $displayoptions['constraintselector'] ?? '.course-content';
-        $menu->set_constraint($constraint);
 
         foreach ($controls as $control) {
             if ($control instanceof action_menu_link) {
@@ -166,7 +161,7 @@ class controlmenu implements named_templatable, renderable {
     protected function cm_control_items() {
         $format = $this->format;
         $mod = $this->mod;
-        $sectionreturn = $format->get_section_number();
+        $sectionreturn = $format->get_sectionnum();
         if (!empty($this->displayoptions['disableindentation']) || !$format->uses_indentation()) {
             $indent = -1;
         } else {

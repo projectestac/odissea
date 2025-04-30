@@ -40,14 +40,14 @@ use core_reportbuilder\local\report\{column, filter};
 class instance extends base {
 
     /**
-     * Database tables that this entity uses and their default aliases
+     * Database tables that this entity uses
      *
-     * @return array
+     * @return string[]
      */
-    protected function get_default_table_aliases(): array {
+    protected function get_default_tables(): array {
         return [
-            'tag_instance' => 'ti',
-            'context' => 'tictx',
+            'tag_instance',
+            'context',
         ];
     }
 
@@ -121,6 +121,7 @@ class instance extends base {
             ->add_fields("{$instancealias}.contextid, " . context_helper::get_preload_record_columns_sql($contextalias))
             // Sorting may not order alphabetically, but will at least group contexts together.
             ->set_is_sortable(true)
+            ->set_is_deprecated('See \'context:name\' for replacement')
             ->add_callback(static function($contextid, stdClass $context): string {
                 if ($contextid === null) {
                     return '';
@@ -142,6 +143,7 @@ class instance extends base {
             ->add_fields("{$instancealias}.contextid, " . context_helper::get_preload_record_columns_sql($contextalias))
             // Sorting may not order alphabetically, but will at least group contexts together.
             ->set_is_sortable(true)
+            ->set_is_deprecated('See \'context:link\' for replacement')
             ->add_callback(static function($contextid, stdClass $context): string {
                 if ($contextid === null) {
                     return '';

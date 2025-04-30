@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ar', version '4.1'.
+ * Strings for component 'block_section_links', language 'ar', version '4.4'.
  *
  * @package     block_section_links
  * @category    string
@@ -29,7 +29,7 @@ $string['incby1'] = 'زِدهُ بمقدار';
 $string['incby1_help'] = 'هذه قيمة زيادة القسم عند كل مرة يتم فيها عرض رابط قسم بدءاً من 1.';
 $string['incby2'] = 'بدلاً، زِدهُ بمقدار';
 $string['incby2_help'] = 'هذه قيمة زيادة القسم عند كل مرة يتم فيها عرض رابط قسم بدءاً من 1.';
-$string['jumptocurrenttopic'] = 'الأنتقال إلى الموضوع الحالي';
+$string['jumptocurrenttopic'] = 'الانتقال إلى القسم المميز';
 $string['jumptocurrentweek'] = 'الأنتقال إلى الأسبوع الحالي';
 $string['numsections1'] = 'عدد المقاطع';
 $string['numsections1_help'] = 'بمجرد وصول عدد المقاطع في المساق إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم.';
@@ -40,5 +40,3 @@ $string['privacy:metadata'] = 'كتلة روابط المقاطع تظهر فق�
 $string['section_links:addinstance'] = 'إضافة كتلة جديدة لروابط المقاطع';
 $string['showsectionname'] = 'عرض اسم القسم';
 $string['showsectionname_help'] = 'عرض اسم القسم فضلاً عن رقمه';
-$string['topics'] = 'مواضيع';
-$string['weeks'] = 'أسابيع';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'gl', version '4.1'.
+ * Strings for component 'report_security', language 'gl', version '4.4'.
  *
  * @package     report_security
  * @category    string
@@ -31,8 +31,8 @@ $string['check_antivirus_info'] = 'Actualmente non hai activado ningún escáner
 $string['check_antivirus_logstore_not_supported'] = 'Non foi posíbel verificar o estado dos escáneres antivirus por mor do tipo de almacén de rexistros escollido';
 $string['check_antivirus_name'] = 'Antivirus';
 $string['check_antivirus_ok'] = '{$a->scanners} escáner(es) antivirus activado(s), no se detectou ningún problema no último {$a->lookback}';
-$string['check_configrw_details'] = '<p>Recoméndase que os permisos do ficheiro config.php se cambien após a instalación para que este ficheiro non sexa modificado polo servidor web.
-Teña en conta que esta medida non mellora a seguridade do servidor de forma significativa, pero si que pode atrasar ou limitar «exploits» xenéricos.</p>';
+$string['check_configrw_details'] = '<p>Recoméndase cambiar os permisos de ficheiro de <code>config.php</code> após a instalación para que o ficheiro non poida ser modificado polo servidor web.
+Teña en conta que esta medida non mellora seguridade do servidor de xeito significativo, aínda que pode retardar ou limitar os «exploits» xerais.</p>';
 $string['check_configrw_name'] = 'Ficheiro config.php escribíbel';
 $string['check_configrw_ok'] = 'O config.php non pode ser modificado por scripts PHP.';
 $string['check_configrw_warning'] = 'Os scripts PHP poden modificar o config.php.';
@@ -46,8 +46,9 @@ $string['check_crawlers_error'] = 'Permítese o acceso a motores de busca pero e
 $string['check_crawlers_info'] = 'Os motores de busca poden entrar como convidados.';
 $string['check_crawlers_name'] = 'Aberto aos motores de busca';
 $string['check_crawlers_ok'] = 'O acceso dos motores de busca non está activado.';
-$string['check_defaultuserrole_details'] = '<p>Todos os usuarios con sesión iniciada teñen as capacidades do rol de usuario predeterminado. Asegúrese de que este rol non ten permisos arriscados.</p>
-<p>O rol de usuario predeterminado só pode herdar o tipo <em>usuario autenticado</em>. Non se debe activar a capacidade de ver o curso.</p>';
+$string['check_defaultuserrole_details'] = '<p>Todos os usuarios conectados reciben capacidades do rol de usuario predeterminado. Asegúrese de que non se permiten capacidades de risco neste rol.</p>
+<p>O único tipo de legado admitido para o rol de usuario predeterminado é o <em>usuario autenticado</em>. Non se debe activar a capacidade de vista do curso.</p>
+<p>Comprobe se está activada a opción de aprobación automática de solicitudes de eliminación de datos  (tool_dataprivacy | automaticdatadeletionapproval) . Os usuarios poden solicitar borrados que poderían eliminar grandes cantidades de datos.</p>';
 $string['check_defaultuserrole_error'] = 'O rol do usuario predeterminado «{$a}» está incorrectamente definido!';
 $string['check_defaultuserrole_name'] = 'Rol predeterminado para todos os usuarios';
 $string['check_defaultuserrole_notset'] = 'Non se estabeleceu o rol predeterminado.';
@@ -68,23 +69,19 @@ $string['check_embed_details'] = '<p>A incorporación de obxectos sen límite é
 $string['check_embed_error'] = 'Está activada a incorporación de obxectos sen límite; isto é moi perigoso para a maioría de servidores.';
 $string['check_embed_name'] = 'Permitir EMBED e OBJECT';
 $string['check_embed_ok'] = 'Non se permite a incorporación de obxectos sen límite.';
-$string['check_frontpagerole_details'] = '<p>O rol predeterminado de páxina de portada dáselle a todos os usuarios rexistrados para actividades da páxina de portada. Asegúrese de que este rol non permite realizar actividades arriscadas.</p>
-<p>Recoméndase que se cree un rol especial para este propósito e que non se use o tipo de rol herdado.</p>';
-$string['check_frontpagerole_error'] = 'Detectouse un rol de páxina de portada «{$a}» definido incorrectamente!';
-$string['check_frontpagerole_name'] = 'Rol de páxina de portada';
-$string['check_frontpagerole_notset'] = 'Non está estabelecido un rol para páxina de portada.';
-$string['check_frontpagerole_ok'] = 'A definición do rol de páxina de portada está conforme.';
+$string['check_frontpagerole_details'] = '<p>O rol predeterminado de inicio do sitio outórgaselle a todos os usuarios autenticados para as actividades de inicio do sitio. Asegúrese de que non se permiten capacidades de risco para este rol.</p>
+<p>Recoméndase que se cree un rol especial para este fin e non se utilice un rol de tipo legado.</p>';
+$string['check_frontpagerole_error'] = 'Detectouse un rol de inicio do sitio «{$a}» definido incorrectamente!';
+$string['check_frontpagerole_name'] = 'Rol de inicio do sitio';
+$string['check_frontpagerole_notset'] = 'O rol de inicio do sitio non está definido';
+$string['check_frontpagerole_ok'] = 'O rol de inicio do sitio é correcto.';
 $string['check_guestrole_details'] = '<p>O rol de convidado utilízase para convidados, que non teñan iniciado sesión como usuarios e con acceso temporal de convite ao curso. Asegúrese de que non haxa capacidades arriscadas permitidas neste rol.</p>
 <p>O único tipo herdado permitido para o rol de convidado é <em>Convidado</em>.</p>';
 $string['check_guestrole_error'] = 'O rol do usuario convidado «{$a}» está incorrectamente definido!';
 $string['check_guestrole_name'] = 'Rol de convidado';
 $string['check_guestrole_notset'] = 'Non se estabeleceu o rol de convidado.';
 $string['check_guestrole_ok'] = 'A definición do rol de páxina principal está conforme.';
-$string['check_mediafilterswf_details'] = '<p>A incorporación automática de swf é moi perigosa; calquera usuario rexistrado pode lanzar un ataque XSS contra outros usuarios do servidor. Esta opción debería de desactivarse nos servidores en produción.</p>';
-$string['check_mediafilterswf_error'] = 'Está activado o filtro de multimedia Flash. Isto é moi perigoso para a maioría de servidores.';
-$string['check_mediafilterswf_name'] = 'Está activo o filtro de multimedia .swf';
-$string['check_mediafilterswf_ok'] = 'O filtro de multimedia Flash non está activo.';
-$string['check_nodemodules_details'] = '<p>O directorio <em>{$a->path}</em> contén módulos Node.js e as súas dependencias, normalmente instaladas pola utilidade NPM. Estes módulos poden ser necesarios para o desenvolvemento local de Moodle, como para usar o marco «grunt». Non son necesarios para executar un sitio de Moodle na produción e poden conter un código potencialmente perigoso que expón o seu sitio a ataques remotos.</p><p>Recoméndase eliminar o directorio se o sitio está dispoñíbel a través dun URL público, ou polo menos prohibir o acceso á web na súa configuración de servidor web.</p>';
+$string['check_nodemodules_details'] = '<p>O directorio <code>{$a->path}</code> contén módulos Node.js e as súas dependencias, normalmente instalados pola utilidade NPM. Estes módulos poden ser necesarios para o desenvolvemento local de Moodle, ou para o uso do marco de traballo «grunt». Non son necesarios para executar un sitio de Moodle en produción e poden conter código potencialmente perigoso que expón o seu sitio a ataques remotos.</p><p> Recoméndase encarecidamente eliminar o directorio se o sitio está dispoñíbel a través dun URL público, ou polo menos prohibir o acceso web a el na configuración do seu servidor web.</p>';
 $string['check_nodemodules_info'] = 'O directorio node_modules non debería estar presente en sitios públicos.';
 $string['check_nodemodules_name'] = 'Directorio de módulos Node.js';
 $string['check_openprofiles_details'] = '<p>Os perfís abertos pode ser obxecto de abuso por emisores de lixo. Recoméndase que tanto <code>Forzar os usuarios a iniciar sesión para o perfil</code> como <code>Forzar os usuarios para iniciar sesión</code> estean activados.</p>';
@@ -93,10 +90,10 @@ $string['check_openprofiles_name'] = 'Perfís de usuario abertos';
 $string['check_openprofiles_ok'] = 'Requírese iniciar sesión antes de ver os perfís de usuario.';
 $string['check_passwordpolicy_details'] = '<p>Recoméndase que se estabeleza unha directiva de contrasinais, xa que a adiviñación de contrasinal adoita ser o camiño máis sinxelo de acadar acceso sen autorización.
 Non facer os requisitos demasiado estritos, pois isto pode resultar en que os usuarios non son quen de lembrar os seus contrasinais ou esqueceríanos ou anotaríanos.</p>';
-$string['check_passwordpolicy_error'] = 'Non hai directiva de contrasinais.';
+$string['check_passwordpolicy_error'] = 'Non hai norma de contrasinais.';
 $string['check_passwordpolicy_name'] = 'Directiva de contrasinais';
-$string['check_passwordpolicy_ok'] = 'Activouse a directiva de contrasinais.';
-$string['check_preventexecpath_details'] = '<p>Permitir que se configuren rutas executábeis a través da IGU de administración é un vector para a escalada de privilexios.</p>';
+$string['check_passwordpolicy_ok'] = 'Activouse a norma sobre contrasinal.';
+$string['check_preventexecpath_details'] = '<p>Permitir configurar rutas executábeis a través da GUI de administración é un vector para a escalada de privilexios. Isto debe forzarse en config.php:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Rutas executábeis';
 $string['check_preventexecpath_ok'] = 'As rutas executábeis só poden estabelecerse en config.php.';
 $string['check_preventexecpath_warning'] = 'Os camiños executábeis pódense configurar na IGU de administración.';
@@ -118,10 +115,10 @@ $string['check_riskbackup_details_users'] = '<p>Debido a roles superiores ou a s
 $string['check_riskbackup_detailsok'] = 'Ningún rol permite explicitamente a copia de datos de usuario. No entanto, vexa que os administradores coa capacidade de «facer-calquera-cousa» adoitan ser quen de facelo.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} en {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
-$string['check_riskbackup_name'] = 'Copia de seguridade dos datos de usuario';
-$string['check_riskbackup_ok'] = 'Ningún rol permite explicitamente facer unha copia de seguridade de datos de usuario';
+$string['check_riskbackup_name'] = 'Copia de seguranza dos datos de usuario';
+$string['check_riskbackup_ok'] = 'Ningún rol permite explicitamente facer unha copia de seguranza de datos de usuario';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) en {$a->contextname}</a>';
-$string['check_riskbackup_warning'] = 'Atopáronse {$a->rolecount} roles, {$a->overridecount} sobrescrituras e {$a->usercount} usuarios coa capacidade de facer copia de seguridade de datos de usuario.';
+$string['check_riskbackup_warning'] = 'Atopáronse {$a->rolecount} roles, {$a->overridecount} sobrescrituras e {$a->usercount} usuarios coa capacidade de facer copia de seguranza de datos de usuario.';
 $string['check_riskxss_details'] = '<p>RISK_XSS indica todas as capacidades perigosas que soamente os usuarios deberían usar.</p>
 <p>Comprobe a seguinte lista de usuarios e asegúrese de que confía neles completamente neste servidor:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Usuarios XSS de confianza';
@@ -132,7 +129,7 @@ $string['check_unsecuredataroot_error'] = 'O seu cartafol dataroot <code>{$a}</c
 $string['check_unsecuredataroot_name'] = 'Dataroot inseguro';
 $string['check_unsecuredataroot_ok'] = 'O cartafol dataroot non debe ser accesíbel vía web.';
 $string['check_unsecuredataroot_warning'] = 'O seu cartafol dataroot <code>{$a}</code> está nunha localización inadecuada e pode estar exposto como web.';
-$string['check_vendordir_details'] = '<p>O directorio <em>{$a->path}</em> contén varias bibliotecas de terceiros e as súas dependencias, normalmente instaladas por PHP Composer. Estas bibliotecas poden ser necesarias para o desenvolvemento local de Moodle, como para instalar o marco PHPUnit. Non son necesarios para executar un sitio de Moodle na produción e poden conter un código potencialmente perigoso que expón o seu sitio a ataques remotos.</p><p>Recoméndase eliminar o directorio se o sitio está dispoñíbel a través dun URL público, ou polo menos prohibir o acceso á web na súa configuración de servidor web.</p>';
+$string['check_vendordir_details'] = '<p>O directorio <code>{$a->path}</code> contén varias bibliotecas de terceiros e as súas dependencias, normalmente instaladas por PHP Composer. Estas bibliotecas poden ser necesarias para o desenvolvemento local de Moodle, ou para a instalación do marco de traballo PHPUnit. Non son necesarios para executar un sitio de Moodle en produción e poden conter código potencialmente perigoso que expón o seu sitio a ataques remotos.</p><p> Recoméndase encarecidamente eliminar o directorio se o sitio está dispoñíbel a través dun URL público, ou polo menos prohibir o acceso web a el na configuración do seu servidor web.</p>';
 $string['check_vendordir_info'] = 'O directorio do vendedor non debería estar presente en sitios públicos.';
 $string['check_vendordir_name'] = 'Directorio do vendedor';
 $string['check_webcron_details'] = '<p>Executar o cron por web pode expoñer información privilexiada a usuarios anónimos. Recomendase usar o cron soamente mediante a interface por liña de ordes (CLI) ou configurar un contrasinal para do cron para o acceso remoto.</p>';
@@ -144,7 +141,7 @@ $string['description'] = 'Descrición';
 $string['details'] = 'Detalles';
 $string['eventreportviewed'] = 'Viuse o informe de comprobación de seguridade';
 $string['issue'] = 'Incidencia';
-$string['pluginname'] = 'Vista xeral de seguridade';
-$string['privacy:metadata'] = 'O engadido de vista xeral de seguridade non almacena ningún dato persoal.';
-$string['security:view'] = 'Ver informe de seguridade';
+$string['pluginname'] = 'Comprobacións de seguridade';
+$string['privacy:metadata'] = 'O complemento de vista xeral do seguranza non almacena ningún dato persoal.';
+$string['security:view'] = 'Ver informe de seguranza';
 $string['timewarning'] = 'O procesamento dos datos poder levar un bo anaco, teña paciencia...';

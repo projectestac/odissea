@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ar', version '4.1'.
+ * Strings for component 'contentbank', language 'ar', version '4.4'.
  *
  * @package     contentbank
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'المؤلف';
 $string['choosecontext'] = 'حدد المساق أو التصنيف...';
-$string['close'] = 'إغلاق';
 $string['contentbank'] = 'بنك المحتوى';
 $string['contentbankpreferences'] = 'تفضيلات بنك المحتوى الحالية';
+$string['contentcopied'] = 'المحتوى تم نسخه.';
+$string['contentcreated'] = 'المحتوى تم إنشاؤه.';
 $string['contentdeleted'] = 'تم حذف المحتوى.';
 $string['contentname'] = 'اسم المحتوى';
 $string['contentnotdeleted'] = 'حدث خطأ ما عند محاولة حذف المحتوى.';
@@ -38,9 +39,12 @@ $string['contentrenamed'] = 'تمت إعادة تسمية المحتوى.';
 $string['contentsmoved'] = 'محتويات بنك المحتوى تم نقلها إلى {$a}.';
 $string['contenttypenoaccess'] = 'لا يمكنك معاينة هذه العينة من {$a}.';
 $string['contenttypenoedit'] = 'لا يمكنك تعديل هذا المحتوى.';
+$string['contentupdated'] = 'المحتوى تم تحديثه.';
 $string['contentvisibilitychanged'] = 'المحتوى الآن {$a}.';
 $string['contentvisibilitynotset'] = 'وقع خطأ عند محاولة تعيين حالة إظهار المحتوى.';
 $string['contextnotallowed'] = 'ليس مسموحاً لك بالوصول إلى بنك المحتوى في هذا السياق.';
+$string['copycontent'] = 'نسخ المحتوى';
+$string['copyof'] = 'نسخة من {$a}';
 $string['deletecontent'] = 'إحذف المحتوى';
 $string['deletecontentconfirm'] = 'هل أنت متأكد من رغبتك في حذف المحتوى <em>\'{$a->name}\'</em> وكل الملفات ذات الصلة؟ هذا الإجراء لا يمكن التراجع عنه.';
 $string['deletecontentconfirmlinked'] = 'سيتم حذف المحتوى فقط من بنك المحتوى. أي مواضع ترتبط به حاليًا سيتم تحديثها لتستعمل نسخة منه عوضًا عن الأصل.';
@@ -64,6 +68,7 @@ $string['more'] = 'المزيد';
 $string['name'] = 'المحتوى';
 $string['nocontentavailable'] = 'لا محتوى متاح';
 $string['nocontenttypes'] = 'ليس هناك أي نوع محتوى متاح';
+$string['nopermissiontocopy'] = 'ليست لديك صلاحية نسخ المحتوى.';
 $string['nopermissiontodelete'] = 'ليست لديك صلاحية حذف المحتوى.';
 $string['nopermissiontomanage'] = 'ليست لديك صلاحية إدارة المحتوى.';
 $string['notavailable'] = 'عذرًا، هذا المحتوى غير متاح.';

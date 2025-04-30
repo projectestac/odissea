@@ -63,6 +63,9 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      */
     const TTL_EXPIRE_BATCH = 10000;
 
+    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
+    const CONNECTION_TIMEOUT = 3;
+
     /**
      * Name of this store.
      *
@@ -94,7 +97,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     /**
      * Connection to Redis for this store.
      *
-     * @var Redis
+     * @var Redis|RedisCluster
      */
     protected $redis;
 
@@ -111,6 +114,14 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @var int
      */
     protected $compressor = self::COMPRESSOR_NONE;
+
+
+    /**
+     * The number of seconds to wait for a connection or response from the Redis server.
+     *
+     * @var int
+     */
+    protected $connectiontimeout = self::CONNECTION_TIMEOUT;
 
     /**
      * Bytes read or written by last call to set()/get() or set_many()/get_many().
@@ -177,7 +188,10 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @param string $name
      * @param array $configuration
      */
-    public function __construct($name, array $configuration = array()) {
+    public function __construct(
+        $name,
+        array $configuration = [],
+    ) {
         $this->name = $name;
 
         if (!array_key_exists('server', $configuration) || empty($configuration['server'])) {
@@ -189,57 +203,129 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
         if (array_key_exists('compressor', $configuration)) {
             $this->compressor = (int)$configuration['compressor'];
         }
-        $password = !empty($configuration['password']) ? $configuration['password'] : '';
-        $prefix = !empty($configuration['prefix']) ? $configuration['prefix'] : '';
+        if (array_key_exists('connectiontimeout', $configuration)) {
+            $this->connectiontimeout = (int)$configuration['connectiontimeout'];
+        }
         if (array_key_exists('lockwait', $configuration)) {
             $this->lockwait = (int)$configuration['lockwait'];
         }
         if (array_key_exists('locktimeout', $configuration)) {
             $this->locktimeout = (int)$configuration['locktimeout'];
         }
-        $this->redis = $this->new_redis($configuration['server'], $prefix, $password);
+        $this->redis = $this->new_redis($configuration);
     }
 
     /**
-     * Create a new Redis instance and
-     * connect to the server.
+     * Create a new Redis or RedisCluster instance and connect to the server.
      *
-     * @param string $server The server connection string
-     * @param string $prefix The key prefix
-     * @param string $password The server connection password
-     * @return Redis
+     * @param array $configuration The redis instance configuration.
+     * @return Redis|RedisCluster|null
      */
-    protected function new_redis($server, $prefix = '', $password = '') {
-        $redis = new Redis();
-        // Check for Unix socket.
-        if ($server[0] === '/') {
-            $port = 0;
-        } else {
-            $port = 6379; // No Unix socket so set default port.
-            if (strpos($server, ':')) { // Check for custom port.
-                $serverconf = explode(':', $server);
-                $server = $serverconf[0];
-                $port = $serverconf[1];
+    protected function new_redis(array $configuration): Redis|RedisCluster|null {
+        $encrypt = (bool) ($configuration['encryption'] ?? false);
+        $clustermode = (bool) ($configuration['clustermode'] ?? false);
+        $password = !empty($configuration['password']) ? $configuration['password'] : '';
+
+        // Set Redis server(s).
+        $servers = explode("\n", $configuration['server']);
+        $trimmedservers = [];
+        foreach ($servers as $server) {
+            $server = strtolower(trim($server));
+            if (!empty($server)) {
+                if ($server[0] === '/' || str_starts_with($server, 'unix://')) {
+                    $port = 0;
+                    $trimmedservers[] = $server;
+                } else {
+                    $port = 6379; // No Unix socket so set default port.
+                    if (strpos($server, ':')) { // Check for custom port.
+                        list($server, $port) = explode(':', $server);
+                    }
+                    if (!$clustermode && $encrypt) {
+                        $server = 'tls://' . $server;
+                    }
+                    $trimmedservers[] = $server.':'.$port;
+                }
+
+                // We only need the first record for the single redis.
+                if (!$clustermode) {
+                    // Handle the case when the server is not a Unix domain socket.
+                    if ($port !== 0) {
+                        // We only need the first record for the single redis.
+                        $serverchunks = explode(':', $trimmedservers[0]);
+                        // Get the last chunk as the port.
+                        $port = array_pop($serverchunks);
+                        // Combine the rest of the chunks back into a string as the server.
+                        $server = implode(':', $serverchunks);
+                    }
+                    break;
+                }
             }
         }
 
+        // TLS/SSL Configuration.
+        $exceptionclass = $clustermode ? 'RedisClusterException' : 'RedisException';
+        $opts = [];
+        if ($encrypt) {
+            $opts = empty($configuration['cafile']) ?
+                ['verify_peer' => false, 'verify_peer_name' => false] :
+                ['cafile' => $configuration['cafile']];
+
+            // For a single (non-cluster) Redis, the TLS/SSL config must be added to the 'stream' key.
+            if (!$clustermode) {
+                $opts['stream'] = $opts;
+            }
+        }
+        // Connect to redis.
+        $redis = null;
         try {
-            if ($redis->connect($server, $port)) {
+            // Create a $redis object of a RedisCluster or Redis class.
+            if ($clustermode) {
+                $redis = new RedisCluster(
+                    null,
+                    $trimmedservers,
+                    $this->connectiontimeout, // Timeout.
+                    $this->connectiontimeout, // Read timeout.
+                    true,
+                    $password,
+                    !empty($opts) ? $opts : null,
+                );
+            } else {
+                $redis = new Redis();
+                $redis->connect(
+                    $server,
+                    $port,
+                    $this->connectiontimeout, // Timeout.
+                    null,
+                    100, // Retry interval.
+                    $this->connectiontimeout, // Read timeout.
+                    $opts,
+                );
                 if (!empty($password)) {
                     $redis->auth($password);
                 }
-                // If using compressor, serialisation will be done at cachestore level, not php-redis.
-                if ($this->compressor == self::COMPRESSOR_NONE) {
-                    $redis->setOption(Redis::OPT_SERIALIZER, $this->serializer);
-                }
-                if (!empty($prefix)) {
-                    $redis->setOption(Redis::OPT_PREFIX, $prefix);
-                }
-                $this->isready = true;
-            } else {
-                $this->isready = false;
             }
-        } catch (\RedisException $e) {
+
+            // In case of a TLS connection,
+            // if phpredis client does not communicate immediately with the server the connection hangs.
+            // See https://github.com/phpredis/phpredis/issues/2332.
+            if ($encrypt && !$redis->ping('Ping')) {
+                throw new $exceptionclass("Ping failed");
+            }
+
+            // If using compressor, serialisation will be done at cachestore level, not php-redis.
+            if ($this->compressor === self::COMPRESSOR_NONE) {
+                $redis->setOption(Redis::OPT_SERIALIZER, $this->serializer);
+            }
+
+            // Set the prefix.
+            $prefix = !empty($configuration['prefix']) ? $configuration['prefix'] : '';
+            if (!empty($prefix)) {
+                $redis->setOption(Redis::OPT_PREFIX, $prefix);
+            }
+            $this->isready = true;
+        } catch (RedisException | RedisClusterException $e) {
+            $server = $clustermode ? implode(',', $trimmedservers) : $server.':'.$port;
+            debugging("Failed to connect to Redis at {$server}, the error returned was: {$e->getMessage()}");
             $this->isready = false;
         }
 
@@ -249,10 +335,10 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     /**
      * See if we can ping Redis server
      *
-     * @param Redis $redis
+     * @param RedisCluster|Redis $redis
      * @return bool
      */
-    protected function ping(Redis $redis) {
+    protected function ping(RedisCluster|Redis $redis): bool {
         try {
             if ($redis->ping() === false) {
                 return false;
@@ -328,7 +414,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return array An array of the values of the given keys.
      */
     public function get_many($keys) {
-        $values = $this->redis->hMGet($this->hash, $keys);
+        $values = $this->redis->hMGet($this->hash, $keys) ?: [];
 
         if ($this->compressor == self::COMPRESSOR_NONE) {
             return $values;
@@ -420,7 +506,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
                 $ttlparams[] = $key;
             }
         }
-        if ($usettl) {
+        if ($usettl && count($ttlparams) > 0) {
             // Store all the key values with current time.
             $this->redis->zAdd($this->hash . self::TTL_SUFFIX, [], ...$ttlparams);
             // The return value to the zAdd function never indicates whether the operation succeeded
@@ -735,7 +821,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     public function store_total_size(): ?int {
         try {
             $details = $this->redis->info('MEMORY');
-        } catch (\RedisException $e) {
+        } catch (RedisException $e) {
             return null;
         }
         if (empty($details['used_memory'])) {
@@ -759,6 +845,10 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
             'password' => $data->password,
             'serializer' => $data->serializer,
             'compressor' => $data->compressor,
+            'connectiontimeout' => $data->connectiontimeout,
+            'encryption' => $data->encryption,
+            'cafile' => $data->cafile,
+            'clustermode' => $data->clustermode,
         );
     }
 
@@ -779,6 +869,18 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
         }
         if (!empty($config['compressor'])) {
             $data['compressor'] = $config['compressor'];
+        }
+        if (!empty($config['connectiontimeout'])) {
+            $data['connectiontimeout'] = $config['connectiontimeout'];
+        }
+        if (!empty($config['encryption'])) {
+            $data['encryption'] = $config['encryption'];
+        }
+        if (!empty($config['cafile'])) {
+            $data['cafile'] = $config['cafile'];
+        }
+        if (!empty($config['clustermode'])) {
+            $data['clustermode'] = $config['clustermode'];
         }
         $editform->set_data($data);
     }
@@ -805,11 +907,19 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
         if (!empty($config->test_password)) {
             $configuration['password'] = $config->test_password;
         }
+        if (!empty($config->test_encryption)) {
+            $configuration['encryption'] = $config->test_encryption;
+        }
+        if (!empty($config->test_cafile)) {
+            $configuration['cafile'] = $config->test_cafile;
+        }
+        if (!empty($config->test_clustermode)) {
+            $configuration['clustermode'] = $config->test_clustermode;
+        }
         // Make it possible to test TTL performance by hacking a copy of the cache definition.
         if (!empty($config->test_ttl)) {
             $definition = clone $definition;
             $property = (new ReflectionClass($definition))->getProperty('ttl');
-            $property->setAccessible(true);
             $property->setValue($definition, 999);
         }
         $cache = new cachestore_redis('Redis test', $configuration);
@@ -832,6 +942,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
 
         return ['server' => TEST_CACHESTORE_REDIS_TESTSERVERS,
                 'prefix' => $DB->get_prefix(),
+                'encryption' => defined('TEST_CACHESTORE_REDIS_ENCRYPT') && TEST_CACHESTORE_REDIS_ENCRYPT,
         ];
     }
 

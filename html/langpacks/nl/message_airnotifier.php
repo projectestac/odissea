@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'nl', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'nl', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,6 +45,7 @@ $string['devicetoken'] = 'Apparaatstoken';
 $string['donotsendnotification'] = 'Stuur helemaal geen meldigingen';
 $string['enableprocessor'] = 'Schakel mobiele meldingen in';
 $string['encryptnotifications'] = 'Versleutel meldingen';
+$string['encryptnotifications_help'] = 'Schakel waar mogelijk end-to-end-codering van app-meldingen in.  Sommige gegevens kunnen worden verwijderd uit de meldingen als ze niet kunnen worden versleuteld.';
 $string['encryptprocessing'] = 'Voor toestellen die geen encryptie ondersteunen';
 $string['encryptprocessing_desc'] = 'Geëncrypteerde meldingen vereisen minstens Android 8, IOS 13 en Moodle App 4.2 of nieuwer.';
 $string['errorretrievingkey'] = 'Er is een fout opgetreden bij het ontvangen van de sleutel. Jouw Moodle-site moet geregistreerd zijn om deze service te kunnen gebruiken. Als je site al geregistreerd is, probeer deze registratie dan te updaten.

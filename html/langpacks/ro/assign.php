@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ro', version '4.1'.
+ * Strings for component 'assign', language 'ro', version '4.4'.
  *
  * @package     assign
  * @category    string
@@ -44,10 +44,8 @@ $string['addsubmission_help'] = 'Nu ați trimis încă niciun răspuns';
 $string['allocatedmarker'] = 'Persoană pentru notare alocat';
 $string['allocatedmarker_help'] = 'Persoană pentru notare alocat acestui răspuns';
 $string['allowsubmissions'] = 'Permiteți utilizatorului să continue să trimită răspunsuri la această sarcină.';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Detaliile despre atribuire și formularul de răspuns vor fi disponibile de la <strong> {$a} </strong>';
 $string['allowsubmissionsfromdate'] = 'Acceptați răspunsuri de la data de:';
 $string['allowsubmissionsfromdate_help'] = 'Dacă este activată, cursanții nu vor putea răspunde înainte de această dată. Dacă este dezactivat, cursanții vor putea începe să răspundă imediat.';
-$string['allowsubmissionsfromdatesummary'] = 'Se pot trimite răspunsuri doar de la data de: <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Premiteți schimbarea lucrărilor';
 $string['alwaysshowdescription'] = 'Întotdeauna afișează descrierea';
 $string['alwaysshowdescription_help'] = 'Dacă este dezactivată, descrierea sarcinii de mai sus va deveni vizibilă doar pentru cursanți la data „Permiteți răspunsuri de la”.';
@@ -65,7 +63,7 @@ $string['assign:releasegrades'] = 'Afișează notele';
 $string['assign:revealidentities'] = 'Afișează identitatea studentului';
 $string['assign:reviewgrades'] = 'Revizuire note';
 $string['assign:showhiddengrader'] = 'Vedeți identitatea unei persoane care face notarea și are status ascuns';
-$string['assign:submit'] = 'Trimitere sarcină de lucru';
+$string['assign:submit'] = 'Trimitere răspuns';
 $string['assign:view'] = 'Vizualizare sarcină de lucru';
 $string['assign:viewblinddetails'] = 'Vizualizați identitățile cursanților când este activată Trimitere răspuns anonim';
 $string['assign:viewgrades'] = 'Afişează note';
@@ -82,7 +80,7 @@ $string['assignmentmailhtml'] = '<p> {$a->grader} a postat feedback despre răsp
 <p> Puteți vedea că este atașat la <a href="{$a->url} "> răspunsul dvs. al sarcinii </a>. </p>';
 $string['assignmentmailsmall'] = '{$a->grader} a postat feedback despre răspunsul dvs. pentru „{$a->assignment}” Puteți să-l vedeți anexat la răspunsul dvs.';
 $string['assignmentname'] = 'Denumirea sarcinii de lucru';
-$string['assignmentplugins'] = 'Plugin-uri sarcină de lucru';
+$string['assignmentplugins'] = 'Plugin-uri ale sarcinii de lucru';
 $string['assignmentsperpage'] = 'Sarcini de lucru per pagină';
 $string['assignsubmission'] = 'Plugin temă';
 $string['assignsubmissionpluginname'] = 'Plugin temă';
@@ -136,7 +134,7 @@ $string['collapsegradepanel'] = 'Restrângeți panoul de notare';
 $string['collapsereviewpanel'] = 'Restrângeți panoul de analiză';
 $string['comment'] = 'Comentariu';
 $string['completiondetail:submit'] = 'Trimite un răspuns';
-$string['completionsubmit'] = 'Cursantul trebuie să trimită un răspuns';
+$string['completionsubmit'] = 'Trimite un răspuns';
 $string['configshowrecentsubmissions'] = 'Notificările despre cursurile trimise sunt disponibile public în cadrul raportului despre activităţile recente.';
 $string['confirmbatchgradingoperation'] = 'Sunteți sigur(ă) că doriți să {$a->operation} pentru {$a->count} cursanți?';
 $string['confirmstart'] = 'Ai {$a} să termini această sarcină. Când începi, cronometrul va porni numărătoarea inversă și nu poate fi întrerupt.';
@@ -223,6 +221,11 @@ $string['eventsubmissionviewed'] = 'Răspuns vizualizat';
 $string['eventworkflowstateupdated'] = 'Starea fluxului de lucru a fost actualizată.';
 $string['expandreviewpanel'] = 'Extinde panoul de analiză';
 $string['extensionduedate'] = 'Termen de predare extins';
+$string['extensionduedatecurrent'] = 'Extinderea datei curente de trimitere a răspunsului';
+$string['extensionduedatefrom'] = 'De la {$a}';
+$string['extensionduedatenone'] = 'Nici unul';
+$string['extensionduedateto'] = 'Către {$a}';
+$string['extensionduedatewithout'] = 'Utilizatori fără extensie: {$a}';
 $string['extensionnotafterduedate'] = 'Data prelungirii trebuie să fie ulterioară datei limită';
 $string['extensionnotafterfromdate'] = 'Data prelungirii trebuie să fie ulterioară datei de început a trimiterii răspunsurilor';
 $string['feedback'] = 'Feedback';
@@ -343,6 +346,8 @@ $string['markerfilter'] = 'Filtru utilizator notare';
 $string['markerfilternomarker'] = 'Fără marker';
 $string['markingallocation'] = 'Utilizați alocarea de utilizatori de notare';
 $string['markingallocation_help'] = 'Dacă este activată împreună cu fluxul de notare, utilizatorii de notare pot fi alocați anumitor studenți.';
+$string['markinganonymous'] = 'Permiteți publicarea parțială a notelor în timp ce punctați în mod anonim';
+$string['markinganonymous_help'] = 'Dacă este activat împreună cu trimiterea răspunsurilor anonime și fluxul de lucru de notare, permite publicarea parțială a notelor în timp ce sunt notate anonim.';
 $string['markingworkflow'] = 'Utilizați fluxul de notare';
 $string['markingworkflow_help'] = 'Dacă este activată, notele vor trece printr-o serie de etape ale fluxului de notare înainte de a fi atribuite cursanților. Acest lucru permite mai multe runde de notare și permite atribuirea notelor pentru toți cursanții în același timp.';
 $string['markingworkflowstate'] = 'Starea fluxului de notare';
@@ -468,8 +473,6 @@ $string['quickgrading_help'] = 'Notarea rapidă vă permite să atribuiți note 
 $string['quickgradingchangessaved'] = 'S-a salvat modificarea notelor';
 $string['quickgradingresult'] = 'Notare rapidă';
 $string['recordid'] = 'Identificator';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} după începerea cursului';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} înainte de începerea cursului';
 $string['relativedatessubmissiontimeleft'] = 'Calculat pentru fiecare cursant';
 $string['removeallgroupoverrides'] = 'Șterge toate suprascrierile pentru grupuri';
 $string['removealluseroverrides'] = 'Șterge toate suprascrierile pentru utilizatori';
@@ -481,7 +484,9 @@ $string['removesubmissionconfirmwithtimelimit'] = 'Sigur vrei să elimini mesaju
 $string['removesubmissionforstudent'] = 'Elimină răspunsul pentru cursantul: (id={$a->id}, fullname={$a->fullname}).';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Opțiunea Redeschis automat până când se obține o notă de trecere este incompatibilă cu setarea Trimitere răspuns anonim, deoarece notele nu sunt alocate în carnetul de note până când nu sunt dezvăluite identitățile cursanților.';
 $string['requireallteammemberssubmit'] = 'Se solicită tuturor membrilor grupului să facă click pe butonul de trimitere a răspunsului';
-$string['requireallteammemberssubmit_help'] = 'Dacă este activat, toți membrii grupului trebuie să facă click pe butonul de trimitere a răspunsului pentru această sarcină de lucru înainte ca trimiterea de grup să fie considerată ca fiind trimisă. Dacă este dezactivată, trimiterea de grup va fi considerată trimisă imediat ce un membru al grupului a făcut clic pe butonul de trimitere.';
+$string['requireallteammemberssubmit_help'] = 'Această setare trebuie utilizată împreună cu „Solicită cursanților să dea click pe butonul de trimitere răspuns” din Setările de trimitere a Răspunsurilor.
+
+Dacă este activat, toți membrii grupului trebuie să dea click pe butonul de trimitere răspuns pentru ca răspunsul trimis de grup să fie considerat trimis spre evaluare. Dacă este dezactivată această setare, orice membru al grupului poate da click pe butonul de trimitere răspuns.';
 $string['requiresubmissionstatement'] = 'Solicită cursanților să accepte declarația de trimitere a răspunsului.';
 $string['requiresubmissionstatement_help'] = 'Solicită cursanților să declare că răspunsul trimis este o lucrare proprie, acest lucru se aplică tuturor răspunsurile trimise la această sarcină de lucru.';
 $string['revealidentities'] = 'Afișează identitatea studentului';
@@ -578,6 +583,7 @@ $string['submissionstatement'] = 'Declarație de depunere răspuns';
 $string['submissionstatement_help'] = 'Declarație pe care fiecare cursant trebuie să o accepte pentru a-și putea trimite răspunsul.';
 $string['submissionstatementacceptedlog'] = 'Declarație de trimitere răspuns acceptată de utilizatorul {$a}';
 $string['submissionstatementdefault'] = 'Acest răspuns este lucrarea mea proprie, cu excepția cazului în care am recunoscut utilizarea lucrărilor altor persoane.';
+$string['submissionstatementrequired'] = 'Vi se cere să fiți de acord cu această declarație înainte de a trimite răspunsul.';
 $string['submissionstatementteamsubmission'] = 'Declarație de depunere în grup';
 $string['submissionstatementteamsubmission_help'] = 'Declarație pe care fiecare cursant trebuie să o accepte pentru a trimite răspunsul pentru grupul său.';
 $string['submissionstatementteamsubmissionallsubmit'] = 'Declarație de depunere a grupului în care depun toți membrii grupului';

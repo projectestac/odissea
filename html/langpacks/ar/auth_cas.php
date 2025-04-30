@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ar', version '4.1'.
+ * Strings for component 'auth_cas', language 'ar', version '4.4'.
  *
  * @package     auth_cas
  * @category    string
@@ -54,7 +54,7 @@ $string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
 $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_cas_curl_ssl_version_default'] = 'إفتراضي';
 $string['auth_cas_curl_ssl_version_key'] = 'إصدار cURL SSL';
-$string['auth_cas_enabled'] = 'في حالة رغبتك في استخدام توثيق  CAS قم نشغيل هذا.';
+$string['auth_cas_enabled'] = 'قم بتشغيله إذا رغبت في استعمال نظام المصادقة المركزي.';
 $string['auth_cas_hostname'] = 'اسم المستضيف لمخدم المصادقة المركزي <br />على سبيل المثال: host.domain.fr';
 $string['auth_cas_hostname_key'] = 'اسم المضيف';
 $string['auth_cas_invalidcaslogin'] = 'عذراَ، لقد أخفقت محاولت دخولك - بربما أنت غير مخول للقيام بذلك.';
@@ -67,16 +67,16 @@ $string['auth_cas_logoutcas'] = 'إختر \'نعم\' إذا أردت تسجيل 
 $string['auth_cas_logoutcas_key'] = 'خيار الخروج من خدمة المصادقة المركزية';
 $string['auth_cas_multiauth'] = 'إختر \'نعم\' إذا أردت أن يكون لديك مصادقة متعددة (خدمة المصادقة المركزية + طرق مصادقة أخرى)';
 $string['auth_cas_multiauth_key'] = 'المصادقة المتعددة';
-$string['auth_cas_port'] = 'منفذ خادم خدمة التوثيق المركزية';
+$string['auth_cas_port'] = 'منفذ مخدم تظام المصادقة المركزي';
 $string['auth_cas_port_key'] = 'منفذ';
 $string['auth_cas_proxycas'] = 'إختر \'نعم\' إن كنت تستعمل خدمة المصادقة المركزية في نمط تشغيل الوكيل';
 $string['auth_cas_proxycas_key'] = 'نمط الوكيل';
-$string['auth_cas_server_settings'] = 'إعدادات خادم خدمة التوثيق المركزية';
+$string['auth_cas_server_settings'] = 'إعدادات مخدم نظام المصادقة المركزي';
 $string['auth_cas_text'] = 'أتصال أمن';
-$string['auth_cas_use_cas'] = 'استخدم خدمة التوثيق المركزية';
+$string['auth_cas_use_cas'] = 'استعمل نظام المصادقة المركزي';
 $string['auth_cas_version'] = 'إصدار خدمة المصادقة المركزية المزمع استعمالها';
 $string['auth_casdescription'] = 'هذه الطريقةِ تستعمل (خدمة التوثيق المركزيةِ) لتوثيق لمستخدمين في بيئة تسجيل دخول واحدة. تستطيع أيضاً استعمال توثيق LDAP المبسط. إذا كان اسم المستخدم وكلمة المرور صحيحين وفقاً لخدمة التوثيق المركزيةِ، سينشئ مودل إدخالاً جديداً في قاعدة بياناته للمستخدم الجديد ويَأْخذُ معلومات المستخدم من LDAP إذا كانت مطلوبة. في محاولات الدخول اللاحقة، سيتم التحقق من اسم المستخدم وكلمة المرور فقط.';
-$string['auth_casnotinstalled'] = 'لا يمكن استخدام خدمة التوثيق المركزية. لم يتم تثبت وحدة (PHP LDAP)';
+$string['auth_casnotinstalled'] = 'يتعذر استعمال نظام المصادقة المركزي. لم يتم تثبت وحدة (PHP LDAP)';
 $string['noldapserver'] = 'لم يتم تعريف مخدم LDAP لخدمة المصادقة المركزية! تم تعطيل المزامنة.';
 $string['pluginname'] = 'مُخدم خدمة المصادقة المركزية';
 $string['privacy:metadata'] = 'إن إضافة مخدم خدمة المصادقة المركزية (SSO) لا تخزن أي بيانات شخصية.';

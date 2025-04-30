@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'de', version '4.1'.
+ * Strings for component 'gradereport_gradedist', language 'de', version '4.4'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -42,6 +42,7 @@ $string['contextbuttontitle'] = 'Diagramm Kontextmenü';
 $string['coursesum'] = 'Summe für den Kurs';
 $string['coverage'] = 'Die neue Notenverteilung erfasst nicht alle Bewertungen!';
 $string['coverage_export'] = 'Durch Notenstufen nicht erfasste Bewertungen:';
+$string['csv'] = 'csv';
 $string['decimals'] = 'Sie können als untere Grenze nur Zahlen von 0 bis 100 eingeben. Dabei sind bis zu zwei Dezimalstellen erlaubt.';
 $string['description'] = 'Beschriftung';
 $string['download'] = 'Herunterladen';
@@ -74,6 +75,7 @@ $string['newletterssubmitted'] = 'Neue Notenstufen gespeichert';
 $string['newletterssubmitted_description'] = 'Der Benutzer mit id {$a->userid} speicherte die neuen Notenstufen.';
 $string['nogroupingentry'] = 'Keine Gruppierung';
 $string['notification'] = 'Hinweis: Die Notenstufen werden für alle Spalten Ihres Kurses übernommen und können nur für den gesamten Kurs gesetzt werden.';
+$string['ods'] = 'ods';
 $string['p'] = '(%)';
 $string['percent'] = 'Prozent';
 $string['pluginname'] = 'Notenverteilung';
@@ -86,5 +88,7 @@ $string['privacy:null_reason'] = 'Dieses Plugin speichert keine personenbezogene
 $string['saved'] = 'Die Notenstufen wurden erfolgreich geändert.';
 $string['showgradeitem'] = 'Auswahl Bewertungsspalte';
 $string['showgradeitem_description'] = 'Zeige Bewertungsaspekte mit folgenden Bewertungsanzeige-Typen als Auswahlmöglichkeit unter Bewertungsspalte an.';
-$string['submitanddownload'] = 'Änderungen speichern';
+$string['showgradeitemtype'] = 'Bewertungsaspekt-Typ anzeigen';
+$string['showgradeitemtype_help'] = 'Der Typ von Bewertungsaspekten wie "Test" oder "Aufgabe" werden angezeigt.';
 $string['sum'] = 'Summe';
+$string['xlsx'] = 'xlsx';

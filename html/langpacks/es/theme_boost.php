@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'es', version '4.1'.
+ * Strings for component 'theme_boost', language 'es', version '4.4'.
  *
  * @package     theme_boost
  * @category    string
@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost (Impulso)';
 $string['preset'] = 'Tema preestablecido';
 $string['preset_desc'] = 'Elija uno preestablecido para cambiar de forma general el aspecto del tema.';
 $string['presetfiles'] = 'Ficheros adicionales del tema preestablecido';
-$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia del tema. Consulte <a href="https://docs.moodle.org/dev/Boost_Presets">Ajustes preestablecidos de Boost</a> para obtener información sobre cómo crear y compartir sus propios archivos preestablecidos, y consulte el <a href="https://archive.moodle.net/boost">Repositorio de ajustes preestablecidos </a> para consultar los que otros han compartido.';
+$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia del tema. Consulte <a href="https://docs.moodle.org/dev/Boost_Presets">Ajustes preestablecidos de Boost</a> para obtener información sobre cómo crear y compartir sus propios archivos preestablecidos, y consulte el <a href="https://moodle.net/search?q=boost+presets">Repositorio de ajustes preestablecidos </a> para consultar los que otros han compartido.';
 $string['privacy:drawerblockclosed'] = 'La preferencia actual para el cajón de bloque está cerrada.';
 $string['privacy:drawerblockopen'] = 'La preferencia actual para el cajón de bloque está abierta.';
 $string['privacy:drawerindexclosed'] = 'La preferencia actual para el cajón de índice está cerrada.';
@@ -60,6 +60,5 @@ $string['rawscsspre'] = 'SCSS inicial sin modificar';
 $string['rawscsspre_desc'] = 'En este campo puede proporcionar el código inicial SCSS, será inyectado antes de cualquier otro código. Esta opción se suele utilizar para definir variables.';
 $string['region-side-pre'] = 'Derecha';
 $string['showfooter'] = 'Mostrar pie de página';
-$string['totop'] = 'Ir arriba';
 $string['unaddableblocks'] = 'Bloques innecesarios';
 $string['unaddableblocks_desc'] = 'Los bloques definidos en este campo no son necesarios con este tema y no se mostrarán en el menú "Agregar un bloque".';

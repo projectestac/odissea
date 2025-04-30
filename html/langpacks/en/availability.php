@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'en', version '4.1'.
+ * Strings for component 'availability', language 'en', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,8 @@ $string['addrestriction'] = 'Add restriction...';
 $string['and'] = 'and';
 $string['condition_group'] = 'Restriction set';
 $string['condition_group_info'] = 'Add a set of nested restrictions to apply complex logic.';
+$string['disabled_verb'] = 'Cannot be changed as ruleset includes a rule containing private data.';
+$string['editsettings'] = 'Edit restrictions';
 $string['enableavailability'] = 'Enable restricted access';
 $string['enableavailability_desc'] = 'If enabled, conditions (based on date, grade, completion etc.) may be set to control whether an activity or resource can be accessed.';
 $string['error_list_nochildren'] = 'Restriction sets should contain at least one condition.';

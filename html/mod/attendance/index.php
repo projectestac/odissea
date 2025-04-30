@@ -26,10 +26,10 @@ require_once('../../config.php');
 
 $id = required_param('id', PARAM_INT);
 
-$course = $DB->get_record('course', array('id' => $id), '*', MUST_EXIST);
+$course = $DB->get_record('course', ['id' => $id], '*', MUST_EXIST);
 require_login($course);
 
-$PAGE->set_url('/mod/attendance/index.php', array('id' => $id));
+$PAGE->set_url('/mod/attendance/index.php', ['id' => $id]);
 $PAGE->set_pagelayout('incourse');
 
 \mod_attendance\event\course_module_instance_list_viewed::create_from_course($course)->trigger();
@@ -47,7 +47,7 @@ $context = context_course::instance($course->id);
 require_capability('mod/attendance:view', $context);
 
 if (! $atts = get_all_instances_in_course("attendance", $course)) {
-    $url = new moodle_url('/course/view.php', array('id' => $course->id));
+    $url = new moodle_url('/course/view.php', ['id' => $course->id]);
     notice(get_string('thereareno', 'moodle', $strplural), $url);
     die;
 }
@@ -63,24 +63,24 @@ $table = new html_table();
 
 if ($usesections) {
     $strsectionname = get_string('sectionname', 'format_'.$course->format);
-    $table->head  = array ($strsectionname, $strname);
-    $table->align = array ("center", "left");
+    $table->head = [$strsectionname, $strname];
+    $table->align = ["center", "left"];
 } else {
-    $table->head  = array ($strname);
-    $table->align = array ("left");
+    $table->head = [$strname];
+    $table->align = ["left"];
 }
 
 foreach ($atts as $att) {
     // Get the responses of each attendance.
-    $viewurl = new moodle_url('/mod/attendance/view.php', array('id' => $att->coursemodule));
+    $viewurl = new moodle_url('/mod/attendance/view.php', ['id' => $att->coursemodule]);
 
     $dimmedclass = $att->visible ? '' : 'class="dimmed"';
     $link = '<a '.$dimmedclass.' href="'.$viewurl->out().'">'.$att->name.'</a>';
 
     if ($usesections) {
-        $tabledata = array (get_section_name($course, $att->section), $link);
+        $tabledata = [get_section_name($course, $att->section), $link];
     } else {
-        $tabledata = array ($link);
+        $tabledata = [$link];
     }
 
     $table->data[] = $tabledata;

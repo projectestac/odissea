@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'en', version '4.1'.
+ * Strings for component 'block_massaction', language 'en', version '4.4'.
  *
  * @package     block_massaction
  * @category    string
@@ -44,6 +44,7 @@ $string['applicablecourseformats_description'] = 'Mass Actions block will only b
 $string['backgroundtaskinformation'] = 'The action you demanded is being executed in the background. You can continue your work while waiting for it to finish.';
 $string['blockname'] = 'Mass Actions';
 $string['blocktitle'] = 'Mass Actions';
+$string['bulkeditingdisabled'] = 'To use this block, you need to enable bulk editing mode.';
 $string['choosecoursetoduplicateto'] = 'Choose the course you want to duplicate the selected course modules to';
 $string['choosesectiontoduplicateto'] = 'Choose the section you want the selected course modules to be duplicated to.';
 $string['choosetargetcourse'] = 'Choose target course';
@@ -97,7 +98,7 @@ $string['pluginname'] = 'Mass Actions';
 $string['privacy:metadata'] = 'This block only offers the possibility to apply standard operations on multiple course modules at the same time.
 Thus, no data is being stored by this block.';
 $string['sectionnotexist'] = 'Target section does not exist';
-$string['sectionrestricted'] = 'Source section is restricted';
+$string['sectionrestricted'] = 'Source section is restricted: You are not allowed to apply an action to activities in section {$a}.';
 $string['sectionselect'] = 'Section selection';
 $string['sectionselect_help'] = 'You can only select sections which include at least one course module.
 Additionally, when using the Tiles or One Topic course format you can only select sections which are currently visible.';

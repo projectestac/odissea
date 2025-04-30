@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ar', version '4.1'.
+ * Strings for component 'cohort', language 'ar', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'عضو الدفعة';
 $string['cohorts'] = 'الدفعات';
 $string['cohortsin'] = '{$a}: الدفعات المتاحة';
 $string['component'] = 'المصدر';
+$string['contextcohortnotallowed'] = 'الدفعة <b>{$a}</b> غير مسموح بها في هذا السياق.';
 $string['contextnotfound'] = 'لم يتم العثور على السياق <b>{$a}</b> أو ليس لديك صلاحية إنشاء دفعة هناك. سيتم استعمال السياق الافتراضي.';
 $string['csvcontainserrors'] = 'تم العثور على أخطاء في بيانات CSV. أنظر التفاصيل أدناه.';
 $string['csvcontainswarnings'] = 'تم العثور على تحذيرات في بيانات CSV. انظر التفاصيل أدناه.';
@@ -48,7 +49,7 @@ $string['currentusers'] = 'المستخدمون الحاليون';
 $string['currentusersmatching'] = 'المستخدمون الحاليون المطابقون';
 $string['defaultcontext'] = 'السياق الافتراضي';
 $string['delcohort'] = 'حذف الدفعة';
-$string['delconfirm'] = 'هل حقاً تريد حذف الدفعة \'{$a}\'؟';
+$string['delconfirm'] = 'هذا من شأنه حذف الزُمرة \'{$a}\' مع كل البيانات ذات الصلة بها.';
 $string['description'] = 'الوصف';
 $string['displayedrows'] = '{$a->displayed} الصفوف تعرض من {$a->total}.';
 $string['duplicateidnumber'] = 'دفعة بنفس رقم المُعرَّف موجود مسبقاً';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'مُعرَّف المستخ
 $string['removeuserwarning'] = 'إزالة المستخدمين من الدفعة قد يؤدي إلى إلغاء انضمامات المستخدمين في مقررات متعددة وهذا الأمر يتضمن حذف إعداداتهم، تقديراتهم، عضوياتهم في المجموعات وغيرها من معلومات المستخدمين في المقررات الدراسية المتأثرة بتلك الإزالة.';
 $string['search'] = 'بحث';
 $string['searchcohort'] = 'البحث عن الدفعة';
+$string['selectcohort'] = 'إختر الزمرة';
 $string['selectfromcohort'] = 'إختر أعضاءً من الدفعة';
 $string['systemcohorts'] = 'دفعات النظام';
 $string['unknowncohort'] = 'دفعة مرة غير معروفة ({$a})!';

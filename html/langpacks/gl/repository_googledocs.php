@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'gl', version '4.1'.
+ * Strings for component 'repository_googledocs', language 'gl', version '4.4'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -46,7 +46,7 @@ $string['presentationformat'] = 'Formato de importación predeterminado de prese
 $string['privacy:metadata:repository_googledocs'] = 'O engadido de repositorio de Google Drive almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
 $string['privacy:metadata:repository_googledocs:email'] = 'O correo do usuario do repositorio de Google Drive.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'A consulta de busca de texto de usuario do repositorio Google Drive.';
-$string['searchfor'] = 'Buscar por: {$a}';
+$string['searchfor'] = 'Resultados da busca para:';
 $string['servicenotenabled'] = 'O acceso non está configurado. Asegúrese de que o servizo «Drive API» está activo.';
 $string['shareddrives'] = 'Unidades compartidas';
 $string['spreadsheetformat'] = 'Formato de importación predeterminado de folla de cálculo';

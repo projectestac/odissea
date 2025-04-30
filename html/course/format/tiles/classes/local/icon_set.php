@@ -40,8 +40,8 @@ class icon_set {
      * @var array
      */
     private $fontawesometileicons = [
-        'fa-asterisk',
         'fa-address-book-o',
+        'fa-asterisk',
         'fa-balance-scale',
         'fa-bar-chart',
         'fa-bell-o',
@@ -252,17 +252,18 @@ class icon_set {
             'format_tiles:close' => 'fa-close',
             'format_tiles:cloud-download' => 'fa-cloud-download',
             'format_tiles:cloud-upload' => 'fa-cloud-upload',
-            'format_tiles:filter' => 'fa-filter',
+            'format_tiles:completion-check' => 'fa-check',
+            'format_tiles:completion-fail' => 'fa-times',
             'format_tiles:eye-slash' => 'fa-eye-slash',
+            'format_tiles:filter' => 'fa-filter',
             'format_tiles:home' => 'fa-home',
             'format_tiles:image' => 'fa-image',
             'format_tiles:lock' => 'fa-lock',
             'format_tiles:pencil' => 'fa-pencil',
             'format_tiles:random' => 'fa-random',
+            'format_tiles:sort' => 'fa-sort',
             'format_tiles:toggle-off' => 'fa-toggle-off',
             'format_tiles:toggle-on' => 'fa-toggle-on',
-            'format_tiles:completion-check' => 'fa-check',
-            'format_tiles:completion-fail' => 'fa-times',
         ];
 
         $tileicons = [];

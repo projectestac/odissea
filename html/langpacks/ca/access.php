@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ca', version '4.1'.
+ * Strings for component 'access', language 'ca', version '4.4'.
  *
  * @package     access
  * @category    string
@@ -38,8 +38,8 @@ $string['hideblocka'] = 'Oculta el bloc {$a}';
 $string['showblocka'] = 'Mostra el bloc {$a}';
 $string['sitemap'] = 'Mapa del lloc';
 $string['skipa'] = 'Omet {$a}';
-$string['skipblock'] = 'Omet bloc';
-$string['skipnavigation'] = 'Omet navegació';
+$string['skipblock'] = 'Omet el bloc';
+$string['skipnavigation'] = 'Omet la navegació';
 $string['skipto'] = 'Vés a {$a}';
 $string['tocontent'] = 'Vés al contingut principal';
 $string['tonavigation'] = 'Vés a navegació';

@@ -680,9 +680,11 @@ class sqlsrv_native_moodle_database extends moodle_database {
      * @return bool
      */
     private function free_result($resource) {
-        if (!is_bool($resource)) { // true/false resources cannot be freed
+        if (!is_bool($resource) && is_resource($resource)) {
+            // We need to make sure that the statement resource is in the correct type before freeing it.
             return sqlsrv_free_stmt($resource);
         }
+        return false;
     }
 
     /**
@@ -1189,7 +1191,7 @@ class sqlsrv_native_moodle_database extends moodle_database {
     /**
      * Update record in database, as fast as possible, no safety checks, lobs not supported.
      * @param string $table name
-     * @param mixed $params data record as object or array
+     * @param stdClass|array $params data record as object or array
      * @param bool true means repeated updates expected
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
@@ -1231,7 +1233,8 @@ class sqlsrv_native_moodle_database extends moodle_database {
      * specify the record to update
      *
      * @param string $table The database table to be checked against.
-     * @param object $dataobject An object with contents equal to fieldname=>fieldvalue. Must have an entry for 'id' to map to the table specified.
+     * @param stdClass|array $dataobject An object with contents equal to fieldname=>fieldvalue.
+     *        Must have an entry for 'id' to map to the table specified.
      * @param bool true means repeated updates expected
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
@@ -1446,9 +1449,7 @@ class sqlsrv_native_moodle_database extends moodle_database {
         return $text;
     }
 
-    public function sql_concat() {
-        $arr = func_get_args();
-
+    public function sql_concat(...$arr) {
         foreach ($arr as $key => $ele) {
             $arr[$key] = $this->sql_cast_to_char($ele);
         }

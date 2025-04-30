@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_media', language 'it', version '4.1'.
+ * Strings for component 'tiny_media', language 'it', version '4.4'.
  *
  * @package     tiny_media
  * @category    string
@@ -28,10 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcaptionstrack'] = 'Aggiungi traccia didascalie';
 $string['addchapterstrack'] = 'Aggiungi traccia capitoli';
 $string['adddescriptionstrack'] = 'Aggiungi traccia descrizione';
+$string['addfilesdrop'] = 'Trascina e rilascia un\'immagine da caricare oppure fare clic per selezionarla';
 $string['addmetadatatrack'] = 'Aggiungi traccia metadati';
 $string['addsource'] = 'Aggiungi sorgente alternativa';
 $string['addsource_help'] = 'Si raccomanda di inserire sorgenti alternative dei media poiché i browser desktop e mobile supportano formati di file diversi.';
 $string['addsubtitlestrack'] = 'Aggiungi traccia sottotitoli';
+$string['addurl'] = 'Aggiungi';
 $string['advancedsettings'] = 'Impostazioni avanzate';
 $string['alignment'] = 'Allineamento';
 $string['alignment_bottom'] = 'In basso';
@@ -43,37 +45,44 @@ $string['audio'] = 'Audio';
 $string['audiosourcelabel'] = 'URL sorgente audio';
 $string['autoplay'] = 'Riproduci automaticamente';
 $string['browserepositories'] = 'Sfoglia repository...';
+$string['browserepositoriesimage'] = 'Sfoglia i repository';
 $string['captions'] = 'Didascalie';
 $string['captions_help'] = 'I sottotitoli possono essere utilizzati per descrivere tutto ciò che accade nella traccia, compresi i suoni non verbali come lo squillo del telefono.';
 $string['captionssourcelabel'] = 'URL traccia didascalie';
 $string['chapters'] = 'Capitoli';
 $string['chapters_help'] = 'È possibile inserire i titoli dei capitoli per facilitare la navigazione della risorsa multimediale.';
 $string['chapterssourcelabel'] = 'URL traccia capitoli';
-$string['constrain'] = 'Dimensionamento automatico';
+$string['constrain'] = 'Mantieni proporzioni';
 $string['controls'] = 'Visualizza controlli';
 $string['createmedia'] = 'Inserisci media';
 $string['default'] = 'Default';
+$string['deleteimage'] = 'Elimina immagini';
+$string['deleteimagewarning'] = 'Sei sicuro di rimuovere l\'immagine?';
 $string['deleteselected'] = 'Elimina file selezionati';
 $string['descriptions'] = 'Descrizioni';
 $string['descriptions_help'] = 'Le descrizioni audio possono essere utilizzate per fornire una narrazione che spieghi dettagli visivi non evidenti dal solo audio.';
 $string['descriptionssourcelabel'] = 'URL traccia descrizioni';
 $string['displayoptions'] = 'Opzioni di visualizzazione';
-$string['enteralt'] = 'Descrizione dell\'immagine utile a coloro che non possono vederla';
+$string['enteralt'] = 'Descrizione dell\'immagine utile a coloro che non possono vederla:';
 $string['entername'] = 'Nome';
 $string['entersource'] = 'URL sorgente';
 $string['entertitle'] = 'Titolo';
-$string['enterurl'] = 'URL';
+$string['enterurl'] = 'Aggiungi via URL';
+$string['enterurlor'] = 'Oppure aggiungi via URL';
 $string['filemanager'] = 'Gestione file';
 $string['hasmissingfiles'] = 'Attenzione! I seguenti file a cui si fa riferimento nell\'area di testo sembrano mancanti:';
 $string['height'] = 'Altezza';
 $string['helplinktext'] = 'Aiuto per i media';
 $string['imagebuttontitle'] = 'Immagine';
+$string['imagedetails'] = 'Dettagli immagine';
 $string['imageproperties'] = 'Proprietà immagine';
-$string['imageurlrequired'] = 'Un\'immagine deve avere un URL.';
+$string['imageurlrequired'] = 'Un\'immagine deve avere un URL valido.';
+$string['insertimage'] = 'Inserisci immagine';
 $string['label'] = 'Etichetta';
 $string['languagesavailable'] = 'Lingue disponibili';
 $string['languagesinstalled'] = 'Lingue installate';
 $string['link'] = 'Link';
+$string['loading'] = 'Preparazione immagine';
 $string['loop'] = 'Ripeti';
 $string['managefiles'] = 'Gestione file';
 $string['mediabuttontitle'] = 'Multimedia';
@@ -84,13 +93,18 @@ $string['metadata_help'] = 'Le tracce di metadati, destinate all\'utilizzo media
 $string['metadatasourcelabel'] = 'URL traccia metadati';
 $string['missingfiles'] = 'File mancanti';
 $string['mute'] = 'Silenziato';
-$string['pluginname'] = 'Inserimento media Tiny';
+$string['pluginname'] = 'Inserimento media';
 $string['presentation'] = 'L\'immagine è puramente decorativa';
 $string['presentationoraltrequired'] = 'Le immagini devono avere un testo descrittivo oppure si deve indicare che sono puramente decorative.';
 $string['privacy:metadata'] = 'Il plugin Media per TinyMCE non memorizza dati personali.';
 $string['remove'] = 'Rimuovi';
-$string['saveimage'] = 'Salva immagine';
+$string['repositorynotpermitted'] = 'Incollare il collegamento a un\'immagine nel campo sottostante.';
+$string['repositoryuploadnotpermitted'] = 'Incollare il collegamento a un\'immagine nel campo sottostante oppure<br>cliccare sul pulsante Sfoglia repository.';
+$string['saveimage'] = 'Salva';
 $string['size'] = 'Larghezza x altezza (in pixel)';
+$string['sizecustom'] = 'Dimensioni personalizzate';
+$string['sizecustom_help'] = 'Questa immagine è solo un\'anteprima. Le modifiche alle sue dimensioni saranno visibili dopo averla salvata.';
+$string['sizeoriginal'] = 'Dimensioni originali';
 $string['srclang'] = 'Lingua';
 $string['subtitles'] = 'Sottotitoli';
 $string['subtitles_help'] = 'È possibile utilizzare i sottotitoli per fornire una trascrizione o una traduzione del dialogo.';
@@ -101,6 +115,7 @@ $string['unusedfilesdesc'] = 'I seguenti file incorporati non sono utilizzati da
 $string['unusedfilesheader'] = 'File inutilizzati';
 $string['unusedfilesremovalnotice'] = 'I file inutilizzati saranno eliminati automaticamente quando si salvano le modifiche.';
 $string['updatemedia'] = 'Aggiorna media';
+$string['uploading'] = 'Caricamento in corso';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Altezza video';
 $string['videosourcelabel'] = 'URL sorgente video';

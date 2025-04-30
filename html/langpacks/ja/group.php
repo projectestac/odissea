@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', version '4.1'.
+ * Strings for component 'group', language 'ja', version '4.4'.
  *
  * @package     group
  * @category    string
@@ -56,12 +56,14 @@ $string['deletegroupconfirm'] = '本当にグループ「 {$a} 」を削除し�
 $string['deletegrouping'] = 'グルーピングを削除する';
 $string['deletegroupingconfirm'] = '本当にグルーピング「 {$a} 」を削除してもよろしいですか? (グルーピング内のグループは削除されません。)';
 $string['deletegroupsconfirm'] = '本当に次のグループを削除してもよろしいですか?';
-$string['deleteselectedgroup'] = '選択したグループを削除する';
+$string['deleteselectedgroup'] = '削除';
+$string['disablemessagingaction'] = 'メッセージングを無効にする';
 $string['editgroupingsettings'] = 'グルーピング設定を編集する';
 $string['editgroupsettings'] = 'グループ設定を編集する';
 $string['editusersgroupsa'] = '「 {$a} 」のグループを編集する';
 $string['enablemessaging'] = 'グループメッセージング';
 $string['enablemessaging_help'] = 'この設定を有効にした場合、グループメンバはメッセージングドロワを使用してグループ内の他の人にメッセージを送信できます。';
+$string['enablemessagingaction'] = 'メッセージングを有効にする';
 $string['encoding'] = 'エンコーディング';
 $string['enrolmentkey'] = '登録キー';
 $string['enrolmentkey_help'] = '登録キーでキーを知っているユーザにのみコースアクセスを制限できます。グループ登録キーが指定された場合、ユーザがそのキーを入力してコースに登録されるだけでなく、自動的にこのグループのメンバとなります。
@@ -69,6 +71,8 @@ $string['enrolmentkey_help'] = '登録キーでキーを知っているユーザ
 注意: 自己登録設定でグループ登録キーを有効にする必要があります。またコース登録キーも指定する必要があります。';
 $string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['erroraddremoveuser'] = 'ユーザ {$a} のグループ登録/削除中にエラーが発生しました。';
+$string['erroraddtogroup'] = 'addtogroupの値が無効です。グループモードなしの場合は「 0」、新しいグループを作成する場合は「1」を指定する必要があります。';
+$string['erroraddtogroupgroupname'] = 'addtogroupが設定されている場合、あなたはgroupnameを指定できません。';
 $string['erroreditgroup'] = 'グループ {$a} の作成/更新中にエラーが発生しました。';
 $string['erroreditgrouping'] = 'グルーピング {$a} の作成/更新中にエラーが発生しました。';
 $string['errorinvalidgroup'] = 'エラー、無効なグループです: {$a}';
@@ -113,6 +117,8 @@ $string['groupmembers'] = 'グループメンバ';
 $string['groupmemberssee'] = 'グループメンバを確認する';
 $string['groupmembersselected'] = '選択したグループのメンバ';
 $string['groupmode'] = 'グループモード';
+$string['groupmode_groupsseparate_help'] = '学生はグループに分けられ自分のグループの作業のみ確認できます。';
+$string['groupmode_groupsvisible_help'] = '学生はグループに分けられますが、他のグループの作業を確認できます。';
 $string['groupmode_help'] = '* グループなし
 * 分離グループ: 学生はグループに分けられ自分のグループの作業のみ閲覧できます。
 * 可視グループ: 学生はグループに分けられますが、他のグループの作業を閲覧できます。
@@ -135,7 +141,6 @@ $string['groupspreview'] = 'グループプレビュー';
 $string['groupsseparate'] = '分離グループ';
 $string['groupsvisible'] = '可視グループ';
 $string['grouptemplate'] = 'グループ @';
-$string['hidepicture'] = '画像を隠す';
 $string['importgroups'] = 'グループをインポートする';
 $string['importgroups_help'] = 'テキストファイルでグループをインポートできます。ファイルのフォーマットは以下のとおりです:
 
@@ -148,9 +153,12 @@ $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'アクティブな登録のみ含む';
 $string['includeonlyactiveenrol_help'] = 'この設定を有効にした場合、利用停止ユーザはグループに含まれません。';
 $string['javascriptrequired'] = 'このページではJavaScriptを有効にする必要があります。';
+$string['manageactions'] = '管理';
 $string['memberofgroup'] = 'グループメンバ: {$a}';
 $string['members'] = 'グループあたりのメンバ数';
 $string['membersofselectedgroup'] = 'メンバ:';
+$string['messagingdisabled'] = '正常に {$a} グループのメッセージングを無効にしました。';
+$string['messagingenabled'] = '正常に {$a} グループのメッセージングを有効にしました。';
 $string['mygroups'] = 'マイグループ';
 $string['namingscheme'] = 'ネーミングスキーム';
 $string['namingscheme_help'] = 'アットマーク (@) の使用でグループ名に文字を含むグループを作成できます。例えば「グループ @」は「グループ A」「グループ B」「グループ C」のようなグループ名のグループを生成します。
@@ -175,6 +183,9 @@ $string['numgroups'] = 'グループ数';
 $string['nummembers'] = 'グループあたりのメンバ数';
 $string['othergroups'] = '他のグループ';
 $string['overview'] = '概要';
+$string['participation'] = 'グループモードの活動のドロップダウンメニューにグループを表示する';
+$string['participation_help'] = 'グループメンバが分離グループモードまたは可視グループモードの活動でこのグループを選択できるようにしますか? (グループメンバシップが表示されている場合、またはメンバにのみ表示されている場合にのみ適用されます)';
+$string['participationshort'] = '参加';
 $string['potentialmembers'] = '潜在的メンバ: {$a}';
 $string['potentialmembs'] = '潜在的メンバ';
 $string['printerfriendly'] = 'プリンタフレンドリ表示';
@@ -199,3 +210,18 @@ $string['toomanygroups'] = 'この数のグループを作成するにはユー�
 $string['usercount'] = 'ユーザ数';
 $string['usercounttotal'] = 'ユーザ数 ({$a})';
 $string['usergroupmembership'] = '選択したユーザのメンバシップ:';
+$string['visibility'] = 'グループメンバシップ可視性';
+$string['visibility_help'] = '* 閲覧可 - コース参加者全員がグループの参加者を確認できます。
+* メンバにのみ表示する - グループに参加していないコース参加者はグループまたはメンバを閲覧できません。
+* 自分のメンバシップのみ確認する - ユーザは自分がグループに属していることは確認できますが、他のグループメンバを閲覧できません。
+* 秘匿 - 教師のみグループおよびそのメンバを確認できます。
+
+秘匿グループを閲覧できるケイパビリティのあるユーザは常にグループメンバシップを閲覧できます。
+
+グループにメンバがいる場合、この設定を変更できないことに留意してください。';
+$string['visibilityall'] = '閲覧可';
+$string['visibilitymembers'] = 'メンバにのみ表示する';
+$string['visibilitynone'] = '秘匿する';
+$string['visibilityown'] = '自分のメンバシップのみ確認する';
+$string['visibilityshort'] = '可視性';
+$string['withselected'] = '選択したものを';

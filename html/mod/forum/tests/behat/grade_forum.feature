@@ -66,8 +66,9 @@ Feature: I can grade a students interaction across a forum
     But I should not see "Test Forum 1 rating"
 
     # The values saved should be reflected here.
-    Given I click on "Edit  forum Test Forum 1 whole forum" "link"
-    When I expand all fieldsets
+    And I click on grade item menu "Test Forum 1 whole forum" of type "gradeitem" on "grader" page
+    And I choose "Edit grade item" in the open action menu
+    When I click on "Show more..." "link" in the ".modal-dialog" "css_element"
     Then the field "Maximum grade" matches value "10"
     Then the field "Grade to pass" matches value "4"
     And I should see "Tutor" in the "Parent category" "fieldset"
@@ -118,8 +119,9 @@ Feature: I can grade a students interaction across a forum
     But I should not see "Test Forum 1 whole forum"
 
     # The values saved should be reflected here.
-    Given I click on "Edit  forum Test Forum 1 rating" "link"
-    When I expand all fieldsets
+    And I click on grade item menu "Test Forum 1 rating" of type "gradeitem" on "grader" page
+    And I choose "Edit grade item" in the open action menu
+    When I click on "Show more..." "link" in the ".modal-dialog" "css_element"
     Then the field "Maximum grade" matches value "10"
     Then the field "Grade to pass" matches value "4"
     And I should see "Tutor" in the "Parent category" "fieldset"
@@ -145,15 +147,17 @@ Feature: I can grade a students interaction across a forum
     And I should see "Test Forum 1 whole forum"
 
     # The values saved should be reflected here.
-    Given I click on "Edit  forum Test Forum 1 rating" "link"
-    When I expand all fieldsets
+    And I click on grade item menu "Test Forum 1 rating" of type "gradeitem" on "grader" page
+    And I choose "Edit grade item" in the open action menu
+    When I click on "Show more..." "link" in the ".modal-dialog" "css_element"
     Then the field "Maximum grade" matches value "100"
     Then the field "Grade to pass" matches value "40"
     And I should see "Peers" in the "Parent category" "fieldset"
-    And I press "cancel"
+    And I press "Cancel"
 
-    Given I click on "Edit  forum Test Forum 1 whole forum" "link"
-    When I expand all fieldsets
+    And I click on grade item menu "Test Forum 1 whole forum" of type "gradeitem" on "grader" page
+    And I choose "Edit grade item" in the open action menu
+    When I click on "Show more..." "link" in the ".modal-dialog" "css_element"
     Then the field "Maximum grade" matches value "10"
     Then the field "Grade to pass" matches value "4"
     And I should see "Tutor" in the "Parent category" "fieldset"

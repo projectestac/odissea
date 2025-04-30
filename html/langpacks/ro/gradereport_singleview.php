@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ro', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'ro', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -74,6 +74,8 @@ $string['selectagrade'] = 'Selectează un element de notă';
 $string['selectgradeitemlink'] = 'Selectează un element de notă';
 $string['singleview:view'] = 'Vizualizare listă simplă';
 $string['singleviewdescription'] = 'Într-o singură vizualizare, puteți suprascrie sau exclude note selectate și note de inserare în bloc.';
+$string['singleviewreport_gradeitem'] = 'Afișarea acestui element';
+$string['singleviewreport_user'] = 'Vizualizarea notelor unui utilizator';
 $string['summarygrade'] = 'Un tabel de utilizatori, cu coloane pentru interval, notă, feedback și dacă trebuie să înlocuiți sau să excludeți o anumită notă.';
 $string['summaryuser'] = 'Un tabel cu elemente de notare, cu coloane pentru categoria de notă, interval, notă, feedback și dacă trebuie să înlocuiți sau să excludeți o anumită notă.';
 $string['unsavedataalert'] = 'Dacă aveți modificări nesalvate pe pagină, le veți pierde dacă veți continua cu de inserare note în bloc.';
@@ -82,5 +84,5 @@ $string['unsaveddatawarning'] = 'Avertizare pentru datele nesalvate';
 $string['userselect'] = 'Selectează activitate';
 $string['viewby'] = 'Vizualizat de';
 $string['viewsinglegradeitem'] = 'Selectează un element de notă de mai sus';
-$string['viewsingleuser'] = 'Selectează un utilizator de mai sus pentru a vedea toate notele sale';
+$string['viewsingleuser'] = 'Caută un utilizator pentru a-i vedea toate notele';
 $string['viewsingleuserorgradeitem'] = 'Vizualizați toate notele unui singur utilizator sau ale unui element de notă.';

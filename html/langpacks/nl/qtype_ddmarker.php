@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'nl', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'nl', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ Ter informatie: de drie vormen gebruiken coördinaten op volgende manieren:
 * Polygoon: x1, y1; x2, y2; ...; xn, yn<br>bijvoorbeeld: <code>20, 60; 100, 60; 20, 100</code>
 
 Het selecteren van een markeertekst zal die tekst toevoegen aan de vorm in het voorbeeld.';
-$string['followingarewrong'] = 'Volgende woorden staan in de foute zone: {$a}';
-$string['followingarewrongandhighlighted'] = 'Volgende woorden zijn fout geplaatst:  {$a}. De gemarkeerde woorden worden nu getoond op de juiste plaats.<br /> Klik op het gemarkeerde woord om de toegestane zone aan te geven.';
+$string['followingarewrong'] = 'Markeringen staan in de foute zone: {$a}';
+$string['followingarewrongandhighlighted'] = 'Fout geplaatste markeringen:  {$a}. De gemarkeerde woorden worden nu getoond op de juiste plaats. Klik op het gemarkeerde woord om de toegestane zone te tonen.';
 $string['formerror_dragrequired'] = 'Je moet ten minste één markering aan deze vraag toevoegen.';
 $string['formerror_droprequired'] = 'Je moet ten minste één neerzetzone definiëren voor deze vraag.';
 $string['formerror_nobgimage'] = 'Je moet een afbeelding selecteren om als achtergrond te gebruiken in de zone voor slepen en neerzetten.';

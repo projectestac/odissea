@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'game', language 'fr', version '4.1'.
+ * Strings for component 'game', language 'fr', version '4.4'.
  *
  * @package     game
  * @category    string
@@ -58,7 +58,7 @@ $string['common_problems_crossword_param1'] = 'Le nombre maximum de colonnes/lig
 $string['common_problems_shortanswer_hangman'] = 'Tous les caractères ne sont pas dans la langue du jeu';
 $string['completedon'] = 'Terminé le';
 $string['completionpass'] = 'Exiger une note de passage';
-$string['completionpass_help'] = 'Si elle est activée, cette activité est considérée comme terminée lorsque l\'étudiant reçoit une note de passage (telle que spécifiée dans la section Note des paramètres du quiz) ou supérieure.';
+$string['completionpass_help'] = 'Si elle est activée, cette activité est considérée comme terminée lorsque l’étudiant reçoit une note de passage (telle que spécifiée dans la section Note des paramètres du quiz) ou supérieure.';
 $string['computerepetitions'] = 'Recalculer les statistiques';
 $string['confighangmanimagesets'] = 'Définit combien d’ensembles d’images sont utilisés pour le pendu';
 $string['confighidebookquiz'] = 'Définit si le jeu « Livre avec des questions » est montré aux enseignants ou non';

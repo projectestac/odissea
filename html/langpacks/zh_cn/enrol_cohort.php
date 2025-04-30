@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'zh_cn', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'zh_cn', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = '创建新组';
 $string['defaultgroupnametext'] = '{$a->name} 群{$a->increment}';
 $string['enrolcohortsynctask'] = '队列报名同步任务';
 $string['instanceexists'] = '群已与选定角色同步。';
+$string['plugindisabled'] = '群组同步插件已禁用';
 $string['pluginname'] = '群同步';
 $string['pluginname_desc'] = '群选课插件同步课程成员和群成员';
 $string['privacy:metadata:core_group'] = '注册队列插件可以创建一个新的群组或使用现有群组添加群组的所有成员。';

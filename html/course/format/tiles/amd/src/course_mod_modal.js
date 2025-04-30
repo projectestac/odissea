@@ -32,16 +32,11 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
     function ($, modalFactory, config, Templates, Notification, ajax, Fragment, ModalEvents) {
         "use strict";
 
-        /**
-         * Keep references for all modals we have already added to the page,
-         * so that we can relaunch then if needed
-         * @type {{}}
-         */
-        var modalStore = {};
         var loadingIconHtml;
         const win = $(window);
         var courseId;
         var tilesConfig;
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
         const Selector = {
             modal: ".modal",
@@ -85,7 +80,6 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                 const moodleMediaPlayer = modal.find(Selector.moodleMediaPlayer);
 
                 if (iframes.length || objects.length || moodleMediaPlayer.length) {
-                    modalStore[modal.data("cmid")] = undefined;
                     modal.remove();
                 }
             });
@@ -112,11 +106,13 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                 title: title,
                 body: loadingIconHtml
             }).done(function (modal) {
-                modalStore[cmId] = modal;
                 modal.setLarge();
                 modal.show();
                 const modalRoot = $(modal.root);
-                modalRoot.attr("id", "embed_mod_modal_" + cmId);
+                const modalId = "embed_mod_modal_" + cmId;
+                // If modal exists from previous launch, remove.
+                $(`#${modalId}`).remove();
+                modalRoot.attr("id", modalId);
                 modalRoot.data("cmid", cmId);
                 modalRoot.data("section", sectionNum);
                 modalRoot.addClass("embed_cm_modal");
@@ -157,6 +153,10 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                         template = 'format_tiles/embed_file_modal_body';
                     } else if (objectType === "pdf") {
                         templateData.objectType = 'application/pdf';
+                        // Issue #222 - Safari second page load of PDF.
+                        // Safari fails to re-load cached PDF, so for now bust cache by adding ?t={time}.
+                        // (Reason seems to be related to 'Accept-Ranges: bytes' in response from readfile_accel()).
+                        templateData.cachebustparam = isSafari ? Date.now() : null;
                         template = 'format_tiles/embed_file_modal_body';
                     } else if (objectType === "url") {
                         templateData.objectType = 'url';
@@ -168,7 +168,7 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                     if (template !== null) {
                         Templates.render(template, templateData).done(function (html) {
                             modal.setBody(html);
-                            modalRoot.find(Selector.modalBody).animate({"min-height": Math.round(win.height() - 120)}, "fast");
+                            modalRoot.find(Selector.modalBody).animate({"min-height": Math.round(win.height() + 20)}, "fast");
 
                             if (objectType === "html" || objectType === 'url') {
                                 // HTML files only - set widths to 100% since they may contain embedded videos etc.
@@ -230,6 +230,7 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                 Templates.render("format_tiles/embed_module_modal_header_btns", headerTemplateData).done(function (html) {
                     modalRoot.find(Selector.embedModuleButtons).remove();
                     modalRoot.find($('button.close')).remove();
+                    modalRoot.find($('button.btn-close')).remove(); // Moodle 4.5+.
                     modalRoot.find(Selector.modalHeader).append(html);
                     modalRoot.find(Selector.closeBtn).detach().appendTo(modalRoot.find(Selector.embedModuleButtons));
                     const toggleCompletionSelector = '[data-action="toggle-manual-completion"]';
@@ -369,7 +370,7 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                     tilesConfig = $('#format-tiles-js-config').data();
                     const courseIndex = $('nav#courseindex');
 
-                    if (['course-view-tiles', 'section-view-tiles'].includes(pageType)) {
+                    if (['course-view-tiles', 'section-view-tiles', 'course-view-section-tiles'].includes(pageType)) {
                         // We are on a main tiles page, /course/view.php or /course/section.php in Moodle 4.4+.
                         // If any link in the course index on the left is clicked, check if it needs a modal.
                         // If it does, launch the modal instead of following the link.
@@ -521,26 +522,18 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                             const moduleContextId = clickedCmObject.data('contextid');
                             const sectionNum = clickedCmObject.closest(Selector.sectionMain).data('section');
 
-                            // If we already have this modal on the page, launch it.
-                            var existingModal = modalStore[cmId];
-                            if (typeof existingModal === "object") {
-                                existingModal.show();
-                            } else {
-
-                                // We don't already have it, so make it.
-                                launchCmModal(
-                                    cmId,
-                                    moduleContextId,
-                                    sectionNum,
-                                    clickedCmObject.data('title'),
-                                    clickedCmObject.data('modal'),
-                                    clickedCmObject.hasClass(CLASS.COMPLETION_ENABLED),
-                                    clickedCmObject.data('completion-state')
-                                        ? parseInt(clickedCmObject.data('completion-state')) : null,
-                                    clickedCmObject.hasClass(CLASS.COMPLETION_MANUAL),
-                                    clickedCmObject.find('.modal-description').html(),
-                                );
-                            }
+                            launchCmModal(
+                                cmId,
+                                moduleContextId,
+                                sectionNum,
+                                clickedCmObject.data('title'),
+                                clickedCmObject.data('modal'),
+                                clickedCmObject.hasClass(CLASS.COMPLETION_ENABLED),
+                                clickedCmObject.data('completion-state')
+                                    ? parseInt(clickedCmObject.data('completion-state')) : null,
+                                clickedCmObject.hasClass(CLASS.COMPLETION_MANUAL),
+                                clickedCmObject.find('.modal-description').html(),
+                            );
                         });
 
                         // Render the loading icon and append it to body so that we can use it later.
@@ -550,12 +543,6 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                                 loadingIconHtml = html; // TODO get this from elsewhere.
                             }).fail(Notification.exception);
 
-                        // If completion of a cm changes, remove it from store so that it can be re-rendered with correct heading.
-                        $(document).on('format-tiles-completion-changed', function(e, data) {
-                            if (data.cmid && modalStore[data.cmid]) {
-                                modalStore[data.cmid] = undefined;
-                            }
-                        });
                     } else if (pageType.match('^mod-[a-z]+-view$')) {
                         courseIndex.on('click', function (e) {
                             const target = $(e.target);

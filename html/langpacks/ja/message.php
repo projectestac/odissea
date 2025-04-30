@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', version '4.1'.
+ * Strings for component 'message', language 'ja', version '4.4'.
  *
  * @package     message
  * @category    string
@@ -54,7 +54,6 @@ $string['contacts'] = 'コンタクト';
 $string['conversationactions'] = '会話アクションメニュー';
 $string['decline'] = '拒否';
 $string['defaultmessageoutputs'] = '通知設定';
-$string['defaults'] = 'デフォルト';
 $string['deleteallconfirm'] = '本当にこの会話すべてを削除してもよろしいですか? これで他の会話参加者の会話が削除されるこはありません。';
 $string['deleteallmessages'] = 'すべてのメッセージを削除する';
 $string['deleteallselfconfirm'] = '本当にこのプライベートな会話全体を削除してもよろしいですか?';
@@ -97,11 +96,7 @@ $string['info'] = 'ユーザ情報';
 $string['isnotinyourcontacts'] = 'あなたのコンタクトに {$a} は登録されていません。';
 $string['loadmore'] = 'さらに読み込む';
 $string['loggedin'] = 'オンライン';
-$string['loggedin_help'] = 'あなたがMoodleにログインしている場合、どのように通知を受信するか設定してください。';
-$string['loggedindescription'] = 'あなたがMoodleにログインしている場合';
 $string['loggedoff'] = 'オフライン';
-$string['loggedoff_help'] = 'あなたがMoodleにログインしていない場合、どのように通知を受信するか設定してください。';
-$string['loggedoffdescription'] = 'あなたがMoodleにログインしていない場合';
 $string['managemessageoutputs'] = 'デフォルト通知プレファレンス';
 $string['message'] = 'メッセージ';
 $string['messagecontactrequest'] = '{$a->user} がコンタクトに追加するようリクエストしています。リクエストに返答するにはあなたの<a href="{$a->url}">コンタクトリクエスト</a>ページにアクセスしてください。';
@@ -242,10 +237,8 @@ $string['sendbulkmessagesentsingle'] = '1 名にメッセージが送信され�
 $string['sendbulkmessagesingle'] = '1 名にメッセージを送信する';
 $string['sendcontactrequest'] = 'コンタクトリクエストを送信する';
 $string['sender'] = '{$a}:';
-$string['sendingvia'] = '「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendingviaenabled'] = '「 {$a->processor} 」経由で「 {$a->provider} 」有効ステータスを送信する';
 $string['sendingvialocked'] = '「 {$a->processor} 」経由で「 {$a->provider} 」ロックステータスを送信する';
-$string['sendingviawhen'] = '{$a->state} の場合、「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendmessage'] = 'メッセージを送信する';
 $string['sendmessageto'] = '{$a} にメッセージを送信する';
 $string['sendmessagetopopup'] = '{$a} にメッセージを送信する - 新しいウィンドウ';
@@ -278,6 +271,7 @@ $string['viewfullnotification'] = '通知詳細を表示する';
 $string['viewmessageswith'] = '{$a} のメッセージを表示する';
 $string['viewnotificationresource'] = '移動する: {$a}';
 $string['viewunreadmessageswith'] = '{$a} の未読メッセージを表示する';
+$string['waitingforcontactaccept'] = '連絡先への追加を待っています。';
 $string['wouldliketocontactyou'] = 'あなたへのコンタクト希望';
 $string['writeamessage'] = 'メッセージを書く ...';
 $string['you'] = 'あなた:';

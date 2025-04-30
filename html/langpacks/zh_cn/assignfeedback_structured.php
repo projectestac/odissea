@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_structured', language 'zh_cn', version '4.1'.
+ * Strings for component 'assignfeedback_structured', language 'zh_cn', version '4.4'.
  *
  * @package     assignfeedback_structured
  * @category    string
@@ -66,8 +66,11 @@ $string['criteriasetuse'] = '使用这个设置';
 $string['criteriasetusesaved'] = '使用保存的条件集';
 $string['criteriaused'] = '无法再编辑此分配的标准，因为已经给出了一些反馈。';
 $string['criteriondesc'] = '标准{$a}描述（可选）';
+$string['criterionname'] = '标准{$a} 名称';
 $string['default'] = '默认启用';
 $string['default_help'] = '如果设置，默认情况下，将为所有新工作分配启用此反馈方法。';
+$string['defaultcritdesc'] = '第一个标准的默认描述';
+$string['defaultcritname'] = '第一个标准的默认名称';
 $string['enabled'] = '结构化反馈';
 $string['enabled_help'] = '如果启用，教师将能够定义任何数量的标准来提供具体反馈。';
 $string['escapetocancel'] = '退出以取消';

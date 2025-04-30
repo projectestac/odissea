@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', version '4.1'.
+ * Strings for component 'qtype_ddmarker', language 'eu', version '4.4'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -56,8 +56,8 @@ Hauek dira hiru formen koordenatuak definitzean erabiltzen den notazioa:
 * Poligonoa: x1,y1; x2,y2; ...; xn, yn<br />adibidez: <code>20,60;100,60;20,100</code>
 
 Markatzailearen testu bat aukeratzeak testu hori aurrebistako formara gehituko da.';
-$string['followingarewrong'] = 'Ondoko markatzaileak okerreko tokian jarri dira: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Hurrengo markatzaileak modu ezegokian kokatu dira: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira.<br /> Egin klik markatzailean baimendutako eremua nabarmentzeko.';
+$string['followingarewrong'] = 'Markatzaileak okerreko tokian jarri dira: {$a}.';
+$string['followingarewrongandhighlighted'] = 'Modu ezegokian kokatuko markatzaileak: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira. Egin klik markatzailean baimendutako eremua nabarmentzeko.';
 $string['formerror_dragrequired'] = 'Galdera honetara gutxienez markatzaile bat gehitu behar duzu.';
 $string['formerror_droprequired'] = 'Gutxienez askatze-eremu bat zehaztu behar duzu galdera honentzako.';
 $string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';

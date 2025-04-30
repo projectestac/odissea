@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ur', version '4.1'.
+ * Strings for component 'question', language 'ur', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -283,7 +283,6 @@ $string['notchanged'] = 'آخری کوشش سے تبدیل نہیں ہوا';
 $string['notenoughanswers'] = 'اس قسم کے سوال کے لیے کم از کم {$a} جوابات درکار ہیں';
 $string['notenoughdatatoeditaquestion'] = 'نہ تو سوال کی شناخت، نہ ہی زمرہ کی شناخت اور سوال کی قسم کی وضاحت کی گئی تھی۔';
 $string['notenoughdatatomovequestions'] = 'آپ کو ان سوالات کی سوالیہ شناخت فراہم کرنے کی ضرورت ہے جنہیں آپ منتقل کرنا چاہتے ہیں۔';
-$string['notflagged'] = 'نشان زد نہیں';
 $string['notgraded'] = 'درجہ بندی نہیں کی';
 $string['notshown'] = 'نہیں دکھایا';
 $string['notyetanswered'] = 'ابھی تک جواب نہیں دیا';

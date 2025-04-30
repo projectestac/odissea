@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'el', version '4.1'.
+ * Strings for component 'question', language 'el', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -307,7 +307,6 @@ $string['notchanged'] = 'Δεν άλλαξε από την τελευταία π
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['notenoughdatatoeditaquestion'] = 'Δεν ορίστηκε ούτε ένα αναγνωριστικό ερώτησης, ούτε ένα αναγνωριστικό κατηγορίας και τύπος ερώτησης.';
 $string['notenoughdatatomovequestions'] = 'Πρέπει να παρέχετε τα αναγνωριστικά των ερωτήσεων που θέλετε να μετακινήσετε.';
-$string['notflagged'] = 'Μη σημαιοδοτημένη';
 $string['notgraded'] = 'Χωρίς βαθμό';
 $string['notshown'] = 'Δεν προβλήθηκε';
 $string['notyetanswered'] = 'Δεν έχει απαντηθεί ακόμα';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ar', version '4.1'.
+ * Strings for component 'repository', language 'ar', version '4.4'.
  *
  * @package     repository
  * @category    string
@@ -264,7 +264,7 @@ $string['uploading'] = 'يتم التحميل';
 $string['uploadsucc'] = 'تم رفع الملف بنجاح';
 $string['uselatestfile'] = 'استعمل الملف الأخير';
 $string['usenonjsfilemanager'] = 'إفتح مدير الملفات في نافذة جديدة';
-$string['usenonjsfilepicker'] = 'إفتح منتقِ الملفات في نافذة جديدة';
+$string['usenonjsfilepicker'] = 'إفتح منتقي الملفات في نافذة جديدة';
 $string['usercontextrepositorydisabled'] = 'لا يمكنك تحرير هذا المستودع في سياق المستخدم';
 $string['wrongcontext'] = 'لا يمكنك الوصول إلى هذا السياق';
 $string['xhtmlerror'] = 'قد تكون مستعملاً لترميز مقدمة مقيَّدة لـ XHTML. بعض مكونات واجهة المستخدم لياهو YUI لا تعمل في هذا النمط؛ لطفاً، قم بتعطيله.';

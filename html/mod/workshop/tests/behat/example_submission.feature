@@ -38,7 +38,7 @@ Feature: Provide example submission
     And I should see "First example submission"
     And I change phase in workshop "TestWorkshop" to "Submission phase"
     And I am on the "TestWorkshop" "workshop activity" page logged in as student1
-    And I click on "Example submissions to assess" "link"
+    And I should see "Example submissions to assess"
     When I click on "Assess" "button"
     Then I should see "Assessed example submission"
     And I should see "First example submission"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'es', version '4.1'.
+ * Strings for component 'gradereport_singleview', language 'es', version '4.4'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -70,11 +70,12 @@ $string['removeoverridesave'] = 'Eliminar anulaciones';
 $string['save'] = 'Guardar';
 $string['savegrades'] = 'Guardando calificaciones';
 $string['savegradessuccess'] = 'Calificaciones aplicadas a {$a} elemento/s';
-$string['searchgrades'] = 'Buscar ítems de calificación';
 $string['selectagrade'] = 'Seleccione un ítem de calificación';
 $string['selectgradeitemlink'] = 'Seleccione un ítem de calificación';
 $string['singleview:view'] = 'Ver vista simple';
 $string['singleviewdescription'] = 'En la vista simple puede anular o excluir las calificaciones seleccionadas e insertar calificaciones en bloque.';
+$string['singleviewreport_gradeitem'] = 'Vista única para este elemento';
+$string['singleviewreport_user'] = 'Vista única para este usuario';
 $string['summarygrade'] = 'Una tabla de usuarios, con columnas de rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';
 $string['summaryuser'] = 'Una tabla de elementos calificables, con columnas de categoría, rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';
 $string['unsavedataalert'] = 'Si no ha guardado los cambios en este página, los perderá si procede con la inserción en bloque de calificaciones.';
@@ -83,5 +84,5 @@ $string['unsaveddatawarning'] = 'Aviso de datos no guardados';
 $string['userselect'] = 'Seleccionar actividad';
 $string['viewby'] = 'Ver por';
 $string['viewsinglegradeitem'] = 'Seleccione un ítem de calificación arriba';
-$string['viewsingleuser'] = 'Seleccione un usuario arriba para ver todas sus calificaciones';
+$string['viewsingleuser'] = 'Busque un usuario para ver todas sus calificaciones';
 $string['viewsingleuserorgradeitem'] = 'Ver todas las calificaciones de un único usuario o de un ítem de calificación.';

@@ -30,7 +30,7 @@
     {{#showprogressphototiles}}
         {{#progress}}
             <div class="progress-complete-alt completioncheckbox complete tileallcomplete" id="tileallcomplete-{{tileid}}" data-numcomplete="{{numComplete}}"
-                 data-numoutof="{{numOutOf}}" title="{{#str}}allcomplete, format_tiles{{/str}}"{{#usetooltips}} data-toggle="tooltip"{{/usetooltips}}>
+                 data-numoutof="{{numOutOf}}">
                 {{#pix}}completion-check, format_tiles, {{#str}}allcomplete, format_tiles{{/str}}{{/pix}}
             </div>
         {{/progress}}
@@ -39,7 +39,7 @@
 {{^hastilephoto}}
     {{#progress}}
         <div class="progress-complete-alt completioncheckbox complete tileallcomplete" id="tileallcomplete-{{tileid}}" data-numcomplete="{{numComplete}}"
-             data-numoutof="{{numOutOf}}" title="{{#str}}allcomplete, format_tiles{{/str}}"{{#usetooltips}} data-toggle="tooltip"{{/usetooltips}}>
+             data-numoutof="{{numOutOf}}">
             {{#pix}}completion-check, format_tiles, {{#str}}allcomplete, format_tiles{{/str}}{{/pix}}
         </div>
     {{/progress}}

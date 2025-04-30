@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ur', version '4.1'.
+ * Strings for component 'page', language 'ur', version '4.4'.
  *
  * @package     page
  * @category    string
@@ -59,8 +59,6 @@ $string['popupheight'] = 'پاپ اپ اونچائی (پکسل میں)';
 $string['popupheightexplain'] = 'پاپ اپ ونڈوز کی ڈیفالٹ اونچائی بتاتا ہے۔';
 $string['popupwidth'] = 'پاپ اپ چوڑائی (پکسل میں)';
 $string['popupwidthexplain'] = 'پاپ اپ ونڈوز کی ڈیفالٹ چوڑائی بتاتا ہے۔';
-$string['printheading'] = 'صفحہ کا نام دکھائیں';
-$string['printheadingexplain'] = 'مواد کے اوپر صفحہ کا نام دکھائیں؟';
 $string['printintro'] = 'صفحہ کی تفصیل دکھائیں';
 $string['printintroexplain'] = 'مواد کے اوپر صفحہ کی تفصیل دکھائیں؟';
 $string['printlastmodified'] = 'آخری ترمیم شدہ تاریخ دکھائیں';

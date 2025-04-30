@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_lpmonitoring', language 'fr', version '4.1'.
+ * Strings for component 'report_lpmonitoring', language 'fr', version '4.4'.
  *
  * @package     report_lpmonitoring
  * @category    string
@@ -63,21 +63,21 @@ $string['incms'] = 'dans les activités';
 $string['incourses'] = 'dans les cours';
 $string['invalidframework'] = 'Référentiel de compétences non valide';
 $string['invalidscaleconfiguration'] = 'Configuration du barème non valide';
-$string['learningplan'] = 'Plan d\'apprentissage';
+$string['learningplan'] = 'Plan d’apprentissage';
 $string['learningplancompetencies'] = 'Compétences du plan d’études : {$a}';
 $string['learningplanswithtag'] = 'Plans d’études associés à cette étiquette';
 $string['linkedcms'] = 'Activités liées';
 $string['linkedusers'] = 'Utilisateurs liés';
 $string['moodleuserid'] = 'ID utilisateur Moodle';
 $string['nextuser'] = 'Utilisateur suivant';
-$string['nocompetenciesforusererror'] = 'Aucune compétence n\'a été trouvée pour les plans associés à l\'ID utilisateur : {$a}.';
+$string['nocompetenciesforusererror'] = 'Aucune compétence n’a été trouvée pour les plans associés à l’ID utilisateur : {$a}.';
 $string['nocompetenciesintemplate'] = 'Aucune compétence n’a été liée à ce modèle de plan d’études';
 $string['nodataavailable'] = 'Aucune donnée disponible';
 $string['nolearningplanavailable'] = 'Aucun plan d’études disponible';
 $string['nomatchingrecords'] = 'Aucun enregistrement correspondant trouvé';
 $string['nopermissionsplanview'] = 'Désolé, mais vous ne disposez pas actuellement des permissions pour afficher le plan d’études pour {$a}';
 $string['nopermissionsusercompetencyview'] = 'Désolé, mais vous ne disposez pas actuellement des permissions pour consulter une compétence utilisateur pour {$a}';
-$string['noplansforusererror'] = 'Aucun plan de formation trouvé pour l\'ID utilisateur : {$a}.';
+$string['noplansforusererror'] = 'Aucun plan de formation trouvé pour l’ID utilisateur : {$a}.';
 $string['noscaleavailable'] = 'Aucun barème disponible';
 $string['notemplateselected'] = 'Aucun modèle de plan d’études sélectionné';
 $string['noticebulkrating'] = 'Aucune modification ne sera apportée pour les étudiants déjà évalués ; pour forcer l’évaluation choisir l’option « Forcer les évaluations des utilisateurs déjà évalués »';
@@ -115,7 +115,7 @@ $string['selectuser'] = 'Choisir un utilisateur';
 $string['statslearningplan'] = 'Statistiques des plans d’études';
 $string['studentid'] = 'ID étudiant';
 $string['studentidmapping'] = 'Cartographie des identités des étudiants';
-$string['studentidmappingdesc'] = 'Ce paramètre fait 2 choses : 1) affiche sous la forme de l\'identifiant de l\'étudiant dans le PDF (par exemple, ID d\'étudiant) et 2) indique au service Web report_lpmonitoring_get_user_pdf à quoi s\'attendre et quoi tester lors de la recherche d\'un utilisateur.';
+$string['studentidmappingdesc'] = 'Ce paramètre fait 2 choses : 1) affiche sous la forme de l’identifiant de l’étudiant dans le PDF (par exemple, ID d’étudiant) et 2) indique au service Web report_lpmonitoring_get_user_pdf à quoi s’attendre et quoi tester lors de la recherche d’un utilisateur.';
 $string['successtaskmsg'] = 'Les évaluations seront appliquées d’ici quelques minutes';
 $string['tabdetail'] = 'Détail';
 $string['tabreport'] = 'Rapport';

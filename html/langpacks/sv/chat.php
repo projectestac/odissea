@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'sv', version '4.1'.
+ * Strings for component 'chat', language 'sv', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -113,7 +113,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chattar';
 $string['neverdeletemessages'] = 'Ta aldrig bort meddelanden';
 $string['nextchattime'] = 'Nästa chattillfälle:';
-$string['nextsession'] = 'Nästa schemalagda session';
 $string['no_complete_sessions_found'] = 'Hittade inga slutförda sessioner.';
 $string['nochat'] = 'Det gick inte att hitta någon chat';
 $string['noguests'] = 'Chatten är inte öppen för gäster';
@@ -162,7 +161,6 @@ $string['serverip'] = 'Serveradress';
 $string['servermax'] = 'Max antal användare';
 $string['serverport'] = 'Serverport';
 $string['sessions'] = 'Chattsessioner';
-$string['sessionstart'] = 'Nästa chattsession startar {$a->date} (om {$a->fromnow})';
 $string['sessionstartsin'] = 'Nästa chattsession börjar om {$a} från nu.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Alla kan se de sessioner som har varit';

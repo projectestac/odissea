@@ -85,9 +85,9 @@ class mod_data_generator extends testing_module_generator {
     /**
      * Creates a field for a mod_data instance.
      *
-     * @param StdClass $record
-     * @param mod_data $data
-     * @return data_field_{type}
+     * @param stdClass $record
+     * @param stdClass|null $data
+     * @return data_field_base
      */
     public function create_field(stdClass $record = null, $data = null) {
         $record = (array) $record;
@@ -325,7 +325,7 @@ class mod_data_generator extends testing_module_generator {
                     get_file_storage()->create_file_from_string(['component' => 'user', 'filearea' => 'draft',
                         'contextid' => $usercontext->id, 'itemid' => $itemid, 'filepath' => '/',
                         'filename' => $filename],
-                        file_get_contents($CFG->dirroot.'/mod/data/pix/monologo.png'));
+                        file_get_contents($CFG->dirroot.'/mod/data/field/picture/pix/sample.png'));
                 }
 
                 $fieldname = 'field_' . $fieldid . '_file';

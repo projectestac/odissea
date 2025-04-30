@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', version '4.1'.
+ * Strings for component 'webservice', language 'ca', version '4.4'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Activa els protocols de serveis web';
 $string['addaservice'] = 'Afegeix servei';
 $string['addcapabilitytousers'] = 'Comprova la capacitat dels usuaris';
 $string['addcapabilitytousersdescription'] = 'Els usuaris tenen dos capacitats webservice:createtoken i la capacitat d\'associar els protocols utilitzats, per exemple webservice/rest:use, webservice/soap:use. Per aconseguir això, creeu un rol de servei web amb les capacitats apropiades permeses i assigneu-lo a l\'usuari de serveis web com a rol del sistema.';
+$string['addexternalservice'] = 'Afegeix un servei extern';
 $string['addfunction'] = 'Afegeix funció';
 $string['addfunctionhelp'] = 'Seleccioneu la funció per afegir al servei.';
 $string['addfunctions'] = 'Afegeix funcions';
@@ -61,13 +62,16 @@ $string['default'] = 'Per defecte per "{$a}"';
 $string['deleteaservice'] = 'Suprimeix el servei';
 $string['deleteservice'] = 'Suprimeix el servei: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Suprimir un servei requereix també suprimir els tokens relacionats amb el servei web. Realment voleu suprimir el servei extern "{$a}"?';
+$string['deletetoken'] = 'Suprimeix el testimoni';
 $string['deletetokenconfirm'] = 'Voleu realment suprimir el token de sevei web per a <strong>{$a->user}</strong> al servei <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Obsolet';
 $string['disabledwarning'] = 'Tots els protocols de serveis web estan inhabilitats. Podeu trobar el paràmetre «Habilita els serveis web» a Característiques avançades.';
 $string['doc'] = 'Documentació';
 $string['docaccessrefused'] = 'No esteu habilitat per a veure la documentació per aquest token.';
 $string['downloadfiles'] = 'Es poden baixar fitxers';
 $string['downloadfiles_help'] = 'Si està activat, qualsevol usuari pot descarregar fitxers amb les seves claus de seguretat. Per descomptat que es limita als fitxers que cada usuari pugui descarregar-se del lloc.';
 $string['editaservice'] = 'Edita servei';
+$string['editexternalservice'] = 'Edita el servei extern';
 $string['editservice'] = 'Edita el servei: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Habilita';
 $string['enabledocumentation'] = 'Habilita la documentació del desenvolupador';
@@ -143,6 +147,7 @@ $string['postrestparam'] = 'Codi PHP per a REST (sol·licitud POST)';
 $string['potusers'] = 'Usuaris no autoritzats';
 $string['potusersmatching'] = 'Cerca d\'usuaris no autoritzats.';
 $string['print'] = 'Imprimeix-ho tot';
+$string['privacy:metadata'] = 'L\'API de WebService no emmagatzema cap dada';
 $string['protocol'] = 'Protocol';
 $string['removefunction'] = 'Suprimeix';
 $string['removefunctionconfirm'] = 'Voleu realment suprimir la funció "{$a->function}" del servei "{$a->service}"?';
@@ -151,6 +156,7 @@ $string['required'] = 'Requerit';
 $string['requiredcapability'] = 'Capacitat requerida';
 $string['requiredcapability_help'] = 'Si ho marqueu, sols els usuaris amb la capacitat habilitada podran accedir al servei.';
 $string['requiredcaps'] = 'Capacitats requerides';
+$string['resettokencomplete'] = 'S\'ha reiniciat el testimoni seleccionat';
 $string['resettokenconfirm'] = 'Voleu realment reinicialitzar aquest clau de servei web per a <strong>{$a->user}</strong> al servei <strong>{$a->service}</strong>?';
 $string['resettokenconfirmsimple'] = 'Voleu realment reiniciar aquesta clau? Qualsevol enllaç desat que contingui aquesta clau antiga no funcionarà mai més.';
 $string['response'] = 'Resposta';
@@ -172,6 +178,7 @@ $string['service'] = 'Servei';
 $string['servicehelpexplanation'] = 'Un servei és un conjunt de funcions. Un servei pot ser accessible per a tots els usuaris o sols per a uns usuaris especificats.';
 $string['servicename'] = 'Nom del servei';
 $string['servicenotavailable'] = 'El servei web no està disponible (no existeix o pot estar desactivat)';
+$string['servicerequireslogin'] = 'El servei web no està disponible. (La sessió s\'ha tancat o ha caducat.)';
 $string['servicesbuiltin'] = 'Integra serveis';
 $string['servicescustom'] = 'Personalitza serveis';
 $string['serviceusers'] = 'Usuaris autoritzats';
@@ -189,8 +196,16 @@ $string['testwithtestclient'] = 'Proveu el servei';
 $string['testwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Utilitza un protocol habilitat amb autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['token'] = 'Testimoni';
 $string['tokenauthlog'] = 'Autenticació de testimoni';
+$string['tokencopied'] = 'El text s\'ha copiat al porta-retalls.';
 $string['tokencreatedbyadmin'] = 'Només ho pot reinicialitzar l\'administrador (*)';
 $string['tokencreator'] = 'Creador';
+$string['tokenfilter'] = 'Filtre de testimonis';
+$string['tokenfilterreset'] = 'Mostra tots els testimonis';
+$string['tokenfiltersubmit'] = 'Mostra només els testimonis coincidents';
+$string['tokenname'] = 'Nom';
+$string['tokennamehint'] = 'Si no introduïu un nom, s\'utilitzarà un nom aleatori.';
+$string['tokennameprefix'] = 'Webservice-{$a}';
+$string['tokennewmessage'] = 'Copia el testimoni ara. No es tornarà a mostrar un cop sortiu d\'aquesta pàgina.';
 $string['unknownoptionkey'] = 'Tecla d\'opció desconeguda ({$a})';
 $string['unnamedstringparam'] = 'Un paràmetre de cadena no té nom.';
 $string['updateusersettings'] = 'Actualitza';
@@ -201,12 +216,11 @@ $string['userasclientsdescription'] = 'Els passos següents us ajudaran a config
 $string['usermissingcaps'] = 'Capacitats perdudes: {$a}';
 $string['usernameorid'] = 'Nom d\'usuari / ID d\'usuari';
 $string['usernameorid_help'] = 'Introduïu un nom d\'usuari o un ID d\'usuari.';
-$string['usernameoridnousererror'] = 'No hi ha usuaris amb aquest nom d\'usuari o ID d\'usuari.';
-$string['usernameoridoccurenceerror'] = 'S\'ha trobat més d\'un usuari amb aquest nom d\'usuari. Introduïu l\'ID d\'usuari.';
 $string['usernotallowed'] = 'L\'usuari no té permés aquest servei. Primer us cal permetre aquest usuari en la pàgina d\'administració {$a} del usuaris permesos.';
 $string['userservices'] = 'Serveis de l\'usuari: {$a}';
 $string['usersettingssaved'] = 'S\'han desat els paràmetres de l\'usuari';
 $string['validuntil'] = 'Vàlid fins';
+$string['validuntil_empty'] = 'Aquest testimoni no té data de venciment.';
 $string['validuntil_help'] = 'Si ho habiliteu, el servei serà inactivat després d\'aquesta data per a aquest usuari.';
 $string['webservice'] = 'Servei web';
 $string['webservices'] = 'Serveis web';

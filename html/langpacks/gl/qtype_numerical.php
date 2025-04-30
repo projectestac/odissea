@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'gl', version '4.1'.
+ * Strings for component 'qtype_numerical', language 'gl', version '4.4'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -32,7 +32,7 @@ $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Erro';
 $string['answermustbenumberorstar'] = 'A resposta debe ser un número, por exemplo -1.234 ou 3e8, ou «*».';
 $string['answerno'] = 'Resposta {$a}';
-$string['decfractionofquestiongrade'] = 'coma unha fracción (0-1) da cualificación da pregunta';
+$string['decfractionofquestiongrade'] = 'Coma unha fracción (0-1) da cualificación da pregunta';
 $string['decfractionofresponsegrade'] = 'coma unha fracción (0-1) da cualificación da resposta';
 $string['decimalformat'] = 'decimais';
 $string['editableunittext'] = 'o elemento de entrada de texto';
@@ -55,8 +55,6 @@ $string['numericalmultiplier'] = 'Multiplicador';
 $string['numericalmultiplier_help'] = 'O multiplicador é o factor polo que se multiplicará a resposta numérica correcta.
 
 A primeira unidade (Unidade 1) ten un multiplicador predeterminado de 1. Daquela, se a resposta numérica correcta é 5500 e estabelece W como unidade en Unidade 1 que ten 1 como multiplicador predeterminado, a resposta correcta é 5500 W.
-
-Se engade a unidade kW cun multiplicador de 0.001, engadirá unha resposta correcta de 5.5 kW. Isto significa que as respostas 5500W ou 5.5kW corrixiríanse como correctas.
 
 Vexa que o erro aceptado tamén se multiplica, de modo que un erro permitido de 100W podería converterse nun erro de 0.1kW.';
 $string['oneunitshown'] = 'A Unidade 1 preséntase automaticamente ao lado da caixa de resposta.';
@@ -85,7 +83,7 @@ $string['studentunitanswer'] = 'Introducir as unidade utilizando';
 $string['tolerancetype'] = 'Tipo de tolerancia';
 $string['unit'] = 'Unidade';
 $string['unitappliedpenalty'] = 'Estas puntuacións inclúen unha penalización de {$a} por mala unidade.';
-$string['unitchoice'] = 'unha selección de escolla múltiple';
+$string['unitchoice'] = 'unha selección de escolla múltipla';
 $string['unitedit'] = 'Editar a unidade';
 $string['unitgraded'] = 'A unidade debe ser dada e será cualificada.';
 $string['unithandling'] = 'Manexo da unidade';

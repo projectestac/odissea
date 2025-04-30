@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', version '4.1'.
+ * Strings for component 'install', language 'zh_cn', version '4.4'.
  *
  * @package     install
  * @category    string
@@ -32,7 +32,7 @@ $string['admindirsetting'] = '个别网站主机的/admin用在了如控制面�
 $string['admindirsettinghead'] = '设定管理目录...';
 $string['admindirsettingsub'] = '个别网站主机的/admin用在了如控制面板之类的特殊功能上。这与标准的Moodle管理页面冲突了。修改管理目录的名称并将新名称填写在这里就可以避免冲突。例如: <br /> <br /><b>moodleadmin</b><br /> <br />
 这将修正Moodle中的管理链接。';
-$string['availablelangs'] = '可用的语言包';
+$string['availablelangs'] = '可用语言包';
 $string['caution'] = '原因';
 $string['chooselanguage'] = '选择一种语言';
 $string['chooselanguagehead'] = '选择一种语言';
@@ -40,14 +40,14 @@ $string['chooselanguagesub'] = '请选择在安装过程中使用的语言。这
 $string['cliadminemail'] = '新的管理员电子邮件地址';
 $string['cliadminpassword'] = '新管理用户密码';
 $string['cliadminusername'] = '管理帐号用户名';
-$string['clialreadyconfigured'] = 'config.php 文件已存在。如果您想安装此网站，请使用 admin/cli/install_database.php。';
-$string['clialreadyinstalled'] = '文件config.php已存在。如果您想升级此网站，请使用admin/cli/upgrade.php。';
+$string['clialreadyconfigured'] = '配置文件 config.php 已存在。请使用 admin/cli/install_database.php 为此站点安装 Moodle。';
+$string['clialreadyinstalled'] = '配置文件 config.php 已存在。请使用 admin/cli/install_database.php 升级此站点的 Moodle。';
 $string['cliinstallfinished'] = '安装圆满成功。';
 $string['cliinstallheader'] = 'Moodle {$a}命令行安装程序';
-$string['climustagreelicense'] = '在非交互模式，您必须使用--agree-license参数表示接受授权协议';
+$string['climustagreelicense'] = '在非交互模式下，您必须通过指定 --agree-license 选项来同意许可证';
 $string['cliskipdatabase'] = '跳过数据库安装。';
 $string['clisupportemail'] = '支持电子邮件地址';
-$string['clitablesexist'] = '数据库表已经存在，命令行安装不能继续。';
+$string['clitablesexist'] = '数据库表已经存在，命令行安装无法继续。';
 $string['compatibilitysettings'] = '检查您的PHP设置...';
 $string['compatibilitysettingshead'] = '检查您的PHP设置...';
 $string['compatibilitysettingssub'] = '要正确地安装Moodle，您的服务器需要通过以下测试';
@@ -77,27 +77,28 @@ $string['dbpass'] = '密码';
 $string['dbport'] = '端口';
 $string['dbprefix'] = '表格名称前缀';
 $string['dbtype'] = '类型';
-$string['directorysettings'] = '<p>请确认安装Moodle的位置。</p>
+$string['directorysettings'] = '<p>请确认此 Moodle 装置的位置。</p>
 
-<p><b>Web地址：</b>
-指定访问Moodle的完整Web地址。如果您的网站可以通过多个URL访问，那么请选择学生最惯常使用的一个。地址的末尾不要有斜线。</p>
+<p><b>网址：</b>
+指定将访问 Moodle 的完整 Web 地址。如果您的网站可通过多个 URL 访问，请选择您的学生最常使用的。 不包括末尾斜杠。</p>
 
-<p><b>Moodle目录：</b>
-指定安装的完整路径，要确保大小写正确。</p>
+<p><b>Moodle 目录：</b>
+指定此安装的完整目录路径并确保大写/小写正确。</p>
 
 <p><b>数据目录：</b>
-Moodle需要一个位置存放上传的文件。这个目录对于Web服务器用户(通常是“nobody”或“apache”)应当是可读可写的，但不能直接通过Web访问它。如果它不存在，安装程序会尝试建立。</p>';
+您需要一个 Moodle 可以保存上传文件的地方。 这个目录应可由 Web 服务器用户读取和写入（通常为 \'nobody\' 或 \'apache\'），但不得直接通过 WEB访问。如果不存在，安装程序将尝试创建它。</p>';
 $string['directorysettingshead'] = '请确认安装Moodle的位置';
-$string['directorysettingssub'] = '<b>Web地址：</b>
-指定访问Moodle的完整Web地址。如果您的网站可以通过多个URL访问，那么请选择学生最惯常使用的一个。地址的末尾不要有斜线。
+$string['directorysettingssub'] = '<<b>网址：</b>
+指定将访问 Moodle 的完整 Web 地址。如果您的网站可通过多个 URL 访问，请选择您的学生最常使用的。 不包括末尾斜杠。
 <br />
 <br />
-<b>Moodle目录：</b>
-指定安装的完整路径，要确保大小写正确。<br />
+<b>Moodle 目录：</b>
+指定此安装的完整目录路径并确保大写/小写正确。
+<br />
 <br />
 <b>数据目录：</b>
-Moodle需要一个位置存放上传的文件。这个目录对于Web服务器用户(通常是“nobody”或“apache”)应当是可读可写的，但不能直接通过Web访问它。如果它不存在，安装程序会尝试建立。';
-$string['dirroot'] = 'Moodle目录';
+您需要一个 Moodle 可以保存上传文件的地方。 这个目录必须可由 Web 服务器用户读取写入通常为 \'nobody\' 或 \'apache\'），但不得直接通过 WEB访问。如果不存在，安装程序将尝试创建它。';
+$string['dirroot'] = 'Moodle 目录';
 $string['dirrooterror'] = '“Moodle目录”的设置看上去不对——在那里找不到安装好的Moodle。下面的值已经重置了。';
 $string['download'] = '下载';
 $string['downloadlanguagebutton'] = '下载“{$a}”语言包';
@@ -119,7 +120,7 @@ $string['fileuploadshelp'] = '<p>您的服务器好像关闭了文件上传功�
 <p>要激活文件上传，您（或您的系统管理员）需要修改系统的php.ini文件，将其中<b>file_uploads</b>的值改为\'1\'。</p>';
 $string['inputdatadirectory'] = '数据目录：';
 $string['inputwebadress'] = 'Web地址：';
-$string['inputwebdirectory'] = 'Moodle目录：';
+$string['inputwebdirectory'] = 'Moodle 目录：';
 $string['installation'] = '安装';
 $string['invaliddbprefix'] = '前缀无效。 前缀只能由小写字母和下划线组成。';
 $string['langdownloaderror'] = '很不幸，无法下载“{$a}”语言包。安装过程将以英文继续。';
@@ -138,7 +139,7 @@ $string['memorylimithelp'] = '<p>您服务器的PHP内存限制是{$a}。</p>
 <blockquote>php_value memory_limit 40M</blockquote>
 <p>然而，在一些服务器上这会让<b>所有</b>PHP页面无法正常工作(在访问页面时会有错误)，因此您可能不得不删除.htaccess文件。</p></li>
 </ol>';
-$string['mysqliextensionisnotpresentinphp'] = 'PHP的MySQLi扩展并未安装正确，因此无法与MySQL通信。请检查您的php.ini文件或重新编译PHP。对PHP4，MySQLi扩展不可用。';
+$string['mysqliextensionisnotpresentinphp'] = 'PHP 没有正确配置 MySQLi 扩展，无法与 MySQL 通信。请检查您的 php.ini 文件或重新编译 PHP。';
 $string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
 $string['nativeauroramysqlhelp'] = '<p>数据库是存储大部分 Moodle 设置和数据的地方，必须在此处进行配置。</p>
 <p>数据库名称、用户名和密码为必填字段； 表前缀是可选的。</p>
@@ -146,19 +147,23 @@ $string['nativeauroramysqlhelp'] = '<p>数据库是存储大部分 Moodle 设置
 <p>如果数据库当前不存在，并且您指定的用户有权限，Moodle 将尝试创建一个具有正确权限和设置的新数据库。</p>
 <p>此驱动程序与旧版 MyISAM 引擎不兼容。</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
-$string['nativemariadbhelp'] = '<p>这里必须指定数据库来保存Moodle的配置和数据。</p>
-<p>数据库名、数据库用户名和密码是必须字段，表前缀可选</p>
-<p>如果指定的数据库不存在且指定的数据库用户有足够权限，Moodle会自动创建一个数据库</p>
-<p>驱动程序和MyISAM存储引擎不兼容</p>';
+$string['nativemariadbhelp'] = '<p>数据库是大多数 Moodle 设置和数据存储的位置，必须在此处进行配置。</p>
+<p>数据库名称、用户名和密码是必填字段;表前缀是可选的。</p>
+<p>数据库名称只能包含字母数字字符、美元 （$） 和下划线 （_）。</p>
+<p>如果数据库当前不存在，并且您指定的用户具有权限，则 Moodle 将尝试创建具有正确权限和设置的新数据库。</p>
+<p>此驱动程序与传统的 MyISAM 引擎不兼容。</p>';
 $string['nativemysqli'] = '改进的MySQL (native/mysqli)';
-$string['nativemysqlihelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
-用户名和密码必须已经存在。如果该用户有相应权限，数据库会被自动创建。表前缀可选。';
+$string['nativemysqlihelp'] = '<p>数据库是大多数 Moodle 设置和数据存储的位置，必须在此处进行配置。</p>
+<p>数据库名称、用户名和密码是必填字段;表前缀是可选的。</p>
+<p>数据库名称只能包含字母数字字符、美元 （$） 和下划线 （_）。</p>
+<p>如果数据库当前不存在，并且您指定的用户具有权限，则 Moodle 将尝试创建具有正确权限和设置的新数据库。</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
 这个数据库必须已经创建，并且有用户名和密码可以访问它。必须设置表前缀。';
 $string['nativepgsql'] = 'PostgreSQL (native/pgsql)';
-$string['nativepgsqlhelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
-这个数据库必须已经创建，并且有用户名和密码可以访问它。必须设置表前缀。';
+$string['nativepgsqlhelp'] = '<p>数据库是大多数 Moodle 设置和数据存储的位置，必须在此处进行配置。</p>
+<p>数据库名称、用户名、密码和表前缀是必填字段。</p>
+<p>数据库必须已存在，并且用户必须具有对数据库的读取和写入访问权限。</p>';
 $string['nativesqlsrv'] = 'SQL*服务器Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
 这个数据库必须已经创建，并且有用户名和密码可以访问它。必须设置表前缀。';
@@ -171,28 +176,31 @@ $string['pathshead'] = '确认路径';
 $string['pathsrodataroot'] = '数据目录不可写';
 $string['pathsroparentdataroot'] = '父目录({$a->parent})不可写。安装程序无法建立数据目录({$a->dataroot})。';
 $string['pathssubadmindir'] = '有些网络主机使用/admin这个URL来访问控制面板或其它功能。很不幸，这个设置和Moodle管理页面的标准路径冲突。这个问题可以解决，只需在您的安装目录中把admin目录换名，然后把新名字输入到这里。例如<em>moodleadmin</em>。这么做会改变Moodle中的管理链接。';
-$string['pathssubdataroot'] = 'Moodle需要一个位置存放上传的文件。这个目录对于Web服务器用户(通常是“nobody”或“apache”)应当是可读可写的，但应当不能直接通过Web访问它。如果它不存在，安装程序会尝试建立。';
-$string['pathssubdirroot'] = 'Moodle安装的完整路径。';
-$string['pathssubwwwroot'] = '可以访问到Moodle的完整网址。
-Moodle不支持通过多个地址访问。如果您的网站有多个公开地址，您必须把这个地址以外的所有地址都设为永久重定向。如果您的网站既可以通过内部地址访问，也可以通过这个公开地址访问，那么请配置DNS使内部网用户也能使用公开地址。如果此地址不正确，请在浏览器中修改URL来重新安装，并设定另一个地址。';
+$string['pathssubdataroot'] = '<p>Moodle 将在其中存储用户上传的所有文件内容的目录。</p>
+<p>此目录应可由 Web 服务器用户（通常为 \'www-data\'、\'nobody\' 或 \'apache\'）读取和写入。</p>
+<p>它不能通过 Web 直接访问。</p>
+<p>如果该目录当前不存在，则在安装过程中将尝试创建该目录。</p>';
+$string['pathssubdirroot'] = '<p>包含 Moodle 代码的目录的完整路径。</p>';
+$string['pathssubwwwroot'] = '<p>将访问 Moodle 的完整地址，即用户在浏览器的地址栏中输入以访问Moodle 的地址。</p>
+<p>无法使用多个地址访问 Moodle。如果您的网站可以通过多个地址访问，请选择最简单的地址并为其他每个地址设置永久重定向。</p>
+<p>如果您的网站可以从 Internet 和内部网络（有时称为 Intranet）访问，请使用此处的公共地址。</p>
+<p>如果当前地址不正确，请更改浏览器地址栏中的 URL 并重新开始安装。</p>';
 $string['pathsunsecuredataroot'] = '数据目录所在位置不安全';
 $string['pathswrongadmindir'] = '管理目录不存在';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP的PGSQL扩展并未安装正确，因此无法与PostgreSQL通信。请检查您的php.ini文件或重新编译PHP。';
 $string['phpextension'] = '{$a} PHP扩展';
 $string['phpversion'] = 'PHP版本';
-$string['phpversionhelp'] = '<p>Moodle需要PHP 4.3.0或5.1.0（5.0.x有若干已知的问题）以上的版本。</p>
-<p>您当前使用的是{$a}</p>
-<p>您必须升级PHP或者转移到一个有新版PHP的服务器上！<br />
-（如果正使用5.0.x，您也可以降级到4.4.x版）</p>
-';
-$string['releasenoteslink'] = '想了解本版本Moodle的信息，请访问发行说明：{$a}';
+$string['phpversionhelp'] = '<p>Moodle 需要至少 5.6.5 或 7.1 的 PHP 版本（7.0.x 有一些引擎限制）。</p>
+<p>您当前运行的是版本 {$a}。</p>
+<p>您必须升级 PHP 或移动到具有较新 PHP 版本的主机。</p>';
+$string['releasenoteslink'] = '有关此版本 Moodle 的信息，请参阅 {$a} 的发行说明';
 $string['safemode'] = '安全模式';
 $string['safemodeerror'] = '在安全模式下运行Moodle可能会有麻烦';
-$string['safemodehelp'] = '<p>在安全模式下运行Moodle可能会遇到一系列的问题，至少在会无法创建新文件。</p>
+$string['safemodehelp'] = '<p>Moodle 在开启安全模式时可能会遇到各种问题，尤其是可能不允许创建新文件。</p>
 
-<p>只有那些有安全妄想证的公共Web站点才会使用安全模式，因此如果遇到这个方面的麻烦，最好的方法就是为您的Moodle站点换一个Web主机提供商。</p>
+<p>安全模式通常仅由公共 Web 主机启用，因此您可能已经为您的 Moodle 网站找到一家新的网络托管公司。</p>
 
-<p>如果您喜欢可以继续安装过程，但将来会遇到问题的。</p>';
+<p>如果您愿意，可以尝试继续安装，但预计以后会出现一些问题。</p>';
 $string['sessionautostart'] = '自动开启会话';
 $string['sessionautostarterror'] = '这应当是关闭的';
 $string['sessionautostarthelp'] = '<p>Moodle需要会话支持，否则便无法正常工作。</p>
@@ -204,7 +212,7 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = '您看到这个页面表明您已经成功地在您的计算机上安装并启用了<strong>{$a->packname} {$a->packversion}</strong>软件包。恭喜您！';
 $string['welcomep30'] = '<strong>{$a->installername}</strong>的此发行版包含了可以创建<strong>Moodle</strong>运行环境的应用程序：';
 $string['welcomep40'] = '这个软件包还包含了<strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>。';
-$string['welcomep50'] = '使用本软件包中包含的应用程序时应遵循它们各自的授权协议。整个<strong>{$a->installername}</strong>软件包都是<a href="http://www.opensource.org/docs/definition_plain.html">开源</a>的，并且遵循<a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>授权协议发布。';
+$string['welcomep50'] = '此软件包中所有应用程序的使用均受其各自许可证的约束。完整的 <strong>{$a->installername}</strong> 软件包是 <a href=“https://www.opensource.org/docs/definition_plain.html”>开源的，</a>并在 <a href=“https://www.gnu.org/copyleft/gpl.html”>GPL 许可证下分发</a>';
 $string['welcomep60'] = '接下来的页面会引导您通过一系列步骤在您的计算机上安装并配置好<strong>Moodle</strong>。您可以接受缺省的设置，或者根据需要修改它们。';
 $string['welcomep70'] = '点击“向后”按钮以继续<strong>Moodle</strong>的安装过程。';
 $string['wwwroot'] = '网站地址';

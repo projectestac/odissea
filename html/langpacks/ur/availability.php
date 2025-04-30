@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ur', version '4.1'.
+ * Strings for component 'availability', language 'ur', version '4.4'.
  *
  * @package     availability
  * @category    string
@@ -30,6 +30,7 @@ $string['addrestriction'] = 'پابندی شامل کریں...';
 $string['and'] = 'اور';
 $string['condition_group'] = 'پابندی سیٹ';
 $string['condition_group_info'] = 'پیچیدہ منطق کو لاگو کرنے کے لیے نیسٹڈ پابندیوں کا ایک سیٹ شامل کریں۔';
+$string['editsettings'] = 'ترتیبات میں ترمیم کریں';
 $string['enableavailability'] = 'محدود رسائی کو فعال کریں';
 $string['enableavailability_desc'] = 'اگر فعال ہو تو، حالات (تاریخ، گریڈ، تکمیل وغیرہ کی بنیاد پر) کو کنٹرول کرنے کے لیے سیٹ کیا جا سکتا ہے کہ آیا کسی سرگرمی یا وسائل تک رسائی حاصل کی جا سکتی ہے۔';
 $string['error_list_nochildren'] = 'پابندی کے سیٹ میں کم از کم ایک شرط ہونی چاہیے۔';

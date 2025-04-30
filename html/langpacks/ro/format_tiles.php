@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ro', version '4.1'.
+ * Strings for component 'format_tiles', language 'ro', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -215,7 +215,6 @@ $string['imagedeletedfrom'] = 'Imagine ștearsă din "{$a}"';
 $string['imagesavedfor'] = 'Imagine salvată pentru cardul {$a}';
 $string['imagesize'] = 'Dimensiunea imaginii';
 $string['jsactivate'] = 'Navigare animată - oprește';
-$string['jsdeactivate'] = 'Navigare animată - pornește';
 $string['jsdeactivated'] = 'Ai dezactivat navigarea automată în contul tău.';
 $string['jsnavsettings'] = 'Navigare JavaScript';
 $string['links'] = 'Link-uri';

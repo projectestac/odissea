@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism', language 'zh_cn', version '4.1'.
+ * Strings for component 'plagiarism', language 'zh_cn', version '4.4'.
  *
  * @package     plagiarism
  * @category    string
@@ -31,5 +31,5 @@ $string['configplagiarismplugins'] = '请选择您要配置的抄袭插件';
 $string['enableplagiarism'] = '启用抄袭插件';
 $string['manageplagiarism'] = '管理抄袭插件';
 $string['nopluginsinstalled'] = '没有安装任何抄袭插件';
-$string['plagiarism'] = '反抄袭';
+$string['plagiarism'] = '抄袭';
 $string['privacy:metadata:plagiarism'] = '抄袭子系统充当通道，将来自插件的请求传递给各种抄袭插件。';

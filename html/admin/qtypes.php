@@ -236,16 +236,7 @@ foreach ($sortedqtypes as $qtypename => $localname) {
     }
 
     // Uninstall link, if available.
-
-    // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
-    // 2012.08.20 @sarjona
-    if ($needed[$qtypename] || !get_protected_agora()) {
-    // ************ ORIGINAL
-    /*
     if ($needed[$qtypename]) {
-    */
-    // ************ FI
-
         $row[] = '';
     } else {
         $uninstallurl = core_plugin_manager::instance()->get_uninstall_url('qtype_'.$qtypename, 'manage');

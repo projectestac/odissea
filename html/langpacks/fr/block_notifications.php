@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_notifications', language 'fr', version '4.1'.
+ * Strings for component 'block_notifications', language 'fr', version '4.4'.
  *
  * @package     block_notifications
  * @category    string
@@ -38,10 +38,10 @@ $string['configuration_comment'] = 'Aucun canal de notification activé.';
 $string['course_configuration_presets_comment'] = 'Les préréglages vous permettent de définir les paramètres utilisateur par défaut pour les canaux courriel et sms. Ces paramètres affecteront seulement les utilisateurs qui n’ont pas définies leurs préférences.';
 $string['course_module'] = 'Module';
 $string['data'] = 'Base de données';
-$string['email'] = 'adresse électronique';
-$string['email_icon_tooltip'] = 'La notification de nouveau contenu par adresse électronique est activé.';
+$string['email'] = 'courriel';
+$string['email_icon_tooltip'] = 'La notification de nouveau contenu par courriel est activée.';
 $string['email_notification_preset'] = 'courriel prédéfini';
-$string['email_notification_preset_explanation'] = 'Des notifications par adresse électronique prédéfinies pour l’utilisateur si le canal est activé.';
+$string['email_notification_preset_explanation'] = 'Des notifications par courriel prédéfinies pour l’utilisateur si le canal est activé.';
 $string['events_explanation'] = 'Activer ici les événements qui seront notifiés.';
 $string['folder'] = 'Dossier';
 $string['forum'] = 'Forum';
@@ -63,7 +63,7 @@ $string['notifications'] = 'Notifications';
 $string['notifications:addinstance'] = 'Ajouter un bloc Notifications';
 $string['notifications:myaddinstance'] = 'Ajouter le bloc Notifications à ma page Moodle';
 $string['notify'] = 'Tâche bloc Notifications';
-$string['notify_by_email'] = 'Notifier par adresse électronique';
+$string['notify_by_email'] = 'Notifier par courriel';
 $string['notify_by_rss'] = 'Notifier par RSS';
 $string['notify_by_sms'] = 'Notifier par SMS';
 $string['page'] = 'Page';

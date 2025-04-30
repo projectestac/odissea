@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'zh_cn', version '4.1'.
+ * Strings for component 'appointment', language 'zh_cn', version '4.4'.
  *
  * @package     appointment
  * @category    string
@@ -97,6 +97,7 @@ $string['capacity_help'] = '**容量**是一个会话中可用的座位数。
 当预约会话达到容量时，会话详细信息不会显示在课程页面上。“查看所有课程”页面上的详细信息将显示为灰色，学习者无法注册课程。
 &nbsp；';
 $string['closed'] = '关闭的';
+$string['completionattended'] = '预约并参加';
 $string['completionbooked'] = '学员必须预约才能完成此活动';
 $string['completionbooked_help'] = '如果启用，如果学习者状态为“已预订”、“已全部参加”或“部分参加”，则该活动将被视为已完成。如果学员已取消、已列入等待名单，或他们的出席被标记为“未出席”，则活动将不会被视为已完成。';
 $string['completiondetail:booked'] = '预约';
@@ -155,6 +156,7 @@ $string['eventsignup'] = '会话注册';
 $string['eventupdatesession'] = '已更新会话';
 $string['full'] = '日期已满';
 $string['fullfilter'] = '已满';
+$string['fullybooked'] = '已订满';
 $string['goback'] = '返回';
 $string['icalendarheading'] = 'iCalendar附件';
 $string['joinwaitlist'] = '加入等待列表';
@@ -189,6 +191,8 @@ $string['placeholder:lastname'] = '[姓]';
 $string['placeholder:reminderperiod'] = '[提醒周期]';
 $string['placeholder:sessiondate'] = '[会议日期]';
 $string['placeholder:starttime'] = '[开始时间]';
+$string['placeholdersdesc'] = '占位符';
+$string['placeholdersdesc_help'] = '占位符允许你添加一个动态的内容，例如[firstname]占位符将被替换为用户的名字，在发送给用户的通知中。';
 $string['pluginadministration'] = '预约管理';
 $string['pluginname'] = '预约';
 $string['potentialattendees'] = '潜在与会者';
@@ -230,10 +234,15 @@ $string['sessionfinished'] = '完成';
 $string['sessionfinishtime'] = '会话完成时间';
 $string['sessioninprogress'] = '会话进行中';
 $string['sessionisfull'] = '此会话现在已满。您需要选择其他时间或与讲师协商。';
+$string['sessionnotstarted'] = '未开始';
 $string['sessionrequiresmanagerapproval'] = '此会话需要管理员批准才能预订。';
 $string['sessions'] = '会话';
 $string['sessionsdetailstablesummary'] = '关于当前会话的完整描述';
 $string['sessionstartdate'] = '会话开始日期';
+$string['sessionstartdateandtime'] = '{$a->startdate}, {$a->starttime} - {$a->endtime} (time zone: {$a->timezone})';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
+$string['sessionstartfinishdateandtime'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime} (time zone: {$a->timezone})';
+$string['sessionstartfinishdateandtimewithouttimezone'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = '会话开始时间';
 $string['setting:defaultcancellationmessagedefault'] = '兹通知您以下预约已取消：<br><br>
 ***预订已取消***<br><br>
@@ -359,5 +368,6 @@ $string['usersignedup'] = '状态：已注册';
 $string['usersignedupon'] = '用户注册{$a}';
 $string['userwillbewaitlisted'] = '此会议预约当前已满。单击“注册”按钮，您将被置于会话的等待列表中。';
 $string['venue'] = '地点';
+$string['waitlistedat'] = '<strong>候补名单:</strong> {$a}';
 $string['waitlistedmessage'] = '等待列表消息';
 $string['waitlistedmessage_help'] = '每当用户注册等待列表会话时，就会发送此消息。';

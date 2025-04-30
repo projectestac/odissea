@@ -251,21 +251,9 @@ function get_table_row(\core\plugininfo\filter $plugininfo, stdClass $state,
         $row[] = '';
     }
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2013.11.12 @sarjona
-    if (get_protected_agora()) {
-    // ************ FI
-
     // Uninstall.
     $row[] = html_writer::link(filters_action_url($filter, 'delete'),
             get_string('uninstallplugin', 'core_admin'));
-
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2013.11.12 @sarjona
-    } else {
-        $row[] = '';
-    }
-    // ************ FI
 
     return $row;
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'zh_cn', version '4.1'.
+ * Strings for component 'repository', language 'zh_cn', version '4.4'.
  *
  * @package     repository
  * @category    string
@@ -37,7 +37,7 @@ $string['aliaseschange'] = '有 {$a} 个链接到这个文件。 如果您继续
 $string['allowexternallinks'] = '允许外部链接';
 $string['areacategoryintro'] = '类别描述';
 $string['areacourseintro'] = '课程介绍';
-$string['areacourseoverviewfiles'] = '课程摘要文件';
+$string['areacourseoverviewfiles'] = '课程图片';
 $string['areamainfile'] = '主文件';
 $string['arearoot'] = '系统';
 $string['areauserbackup'] = '用户备份';
@@ -48,11 +48,11 @@ $string['attachedfiles'] = '附件文件';
 $string['attachment'] = '附件';
 $string['author'] = '作者';
 $string['automatedbackup'] = '自动备份';
-$string['back'] = '« 返回';
-$string['backtodraftfiles'] = '« 返回到草稿文件管理器';
+$string['back'] = '返回';
+$string['backtodraftfiles'] = '返回到草稿文件管理器';
 $string['cachecleared'] = '缓存文件已删除';
 $string['cacheexpire'] = '缓存过期';
-$string['cannotaccessparentwin'] = '如果父窗口使用HTTPS协议打开，那么我们就不能访问window.opener对象，于是就不能自动刷新容器，但是我们已经得到了您的会话。只需回到文件选择器并再次选择容器，就一切正常了。';
+$string['cannotaccessparentwin'] = '使用 HTTPS 时，存储库不会自动刷新。相反，您需要返回到文件选取器并再次选择存储库。';
 $string['cannotdelete'] = '无法删除此文件。';
 $string['cannotdownload'] = '无法下载此文件';
 $string['cannotdownloaddir'] = '无法下载此目录';
@@ -74,12 +74,12 @@ $string['configsyncfiletimeout'] = '从外部同步文件大小的超时时间�
 $string['configsyncimagetimeout'] = '同步时从外部库下载图片文件的超时时间，以秒为单位。';
 $string['confirmdelete'] = '你确定要删除容器 - {$a}吗？如果你选择“继续并下载“，那么引用外部内容的文件将被下载到 Moodle，但可能要花费很长时间。';
 $string['confirmdeletefile'] = '您确定要删除此文件吗?';
-$string['confirmdeletefilewithhref'] = '您确定您要删除这个文件吗？有 {$a} 个别名或快捷方式引用了这个文件。如果您继续，那么这些别名将被转换为真实副本。';
+$string['confirmdeletefilewithhref'] = '您确定要删除此文件吗？此文件有 {$a} 个链接。如果继续，则当前链接到该文件的位置将自动更新为使用文件的副本。';
 $string['confirmdeletefolder'] = '您确定要删除这个文件夹吗？所有的文件和子文件夹将被删除。';
 $string['confirmdeleteselectedfile'] = '您确定要删除选定的 {$a} 个文件吗？';
 $string['confirmremove'] = '您确信要删除这个容器（{$a}）插件、它的配置选项和<strong>所有实例</strong>吗？如果选择“继续并下载”，对外部内容的文件引用将下载到Moodle。 这可能需要很长时间来处理。';
-$string['confirmrenamefile'] = '您确定您要移动或重命名这个文件吗？有 {$a} 个别名或快捷方式引用了这个文件。如果您继续，那么这些别名将被转换为真实副本。';
-$string['confirmrenamefolder'] = '您确定您要移动或重命名这个文件夹吗？任何引用这个文件夹的别名或快捷方式将被转换成真实副本。';
+$string['confirmrenamefile'] = '您确定您要移动或重命名这个文件吗？';
+$string['confirmrenamefolder'] = '您确定要移动/重命名此文件夹吗？当前链接到此文件夹中文件的任何位置都将自动更新为使用该文件的副本。';
 $string['continueuninstall'] = '继续';
 $string['continueuninstallanddownload'] = '继续并下载';
 $string['copying'] = '拷贝';
@@ -92,7 +92,7 @@ $string['createinstance'] = '创建一个容器实例';
 $string['createrepository'] = '创建一个容器实例';
 $string['createxxinstance'] = '创建“{$a}”实例';
 $string['date'] = '日期';
-$string['datecreated'] = '创建';
+$string['datecreated'] = '创建成功';
 $string['deleted'] = '容器已删除';
 $string['deleterepository'] = '删除此容器';
 $string['detailview'] = '查看详情';
@@ -119,7 +119,7 @@ $string['entername'] = '请输入文件夹名';
 $string['enternewname'] = '请输入新文件名';
 $string['error'] = '发生未知错误！';
 $string['errordoublereference'] = '该文件的快捷方式已经存在，无法以快捷方式或别名形式覆盖文件';
-$string['errornotyourfile'] = '您不能选择别人添加的文件';
+$string['errornotyourfile'] = '您只能选择您添加的文件。';
 $string['errorpostmaxsize'] = '您尝试上传的文件太大，服务器无法处理了。';
 $string['erroruniquename'] = '容器实例名应该唯一';
 $string['errorwhilecommunicatingwith'] = '错误！在访问容器"{$a}"时发生错误';
@@ -152,7 +152,7 @@ $string['instancesforusers'] = '{$a}个用户私有实例';
 $string['invalidfiletype'] = '不能接受{$a}文件类型。';
 $string['invalidjson'] = '无效的JSON字符串';
 $string['invalidparams'] = '无效的参数';
-$string['invalidplugin'] = '容器插件 {$a} 无效';
+$string['invalidplugin'] = '无效的存储库 {$a} 插件';
 $string['invalidrepositoryid'] = '无效的容器ID';
 $string['isactive'] = '激活？';
 $string['keyword'] = '关键词';

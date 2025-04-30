@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_link', language 'zh_cn', version '4.1'.
+ * Strings for component 'tiny_link', language 'zh_cn', version '4.4'.
  *
  * @package     tiny_link
  * @category    string
@@ -31,6 +31,7 @@ $string['enterurl'] = '输入网址';
 $string['helplinktext'] = '链接';
 $string['link'] = '链接';
 $string['openinnewwindow'] = '在新窗口中打开';
+$string['pluginname'] = '链接';
 $string['privacy:metadata'] = 'TinyMCE的链接插件不存储任何个人数据。';
 $string['texttodisplay'] = '要显示的文本';
 $string['unlink'] = '取消链接';

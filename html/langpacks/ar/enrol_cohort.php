@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ar', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'ar', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'أنشئ مجموعة جديدة';
 $string['defaultgroupnametext'] = 'الدفعة {$a->name} {$a->increment}';
 $string['enrolcohortsynctask'] = 'مهمة مزامنة الانضمام إلى الدفعة';
 $string['instanceexists'] = 'الدفعة سبقت مزامنتها مع الدور المحدد';
+$string['plugindisabled'] = 'ملحق مزامنة الدفعات تم تعطيله';
 $string['pluginname'] = 'مزامنة الدفعة';
 $string['pluginname_desc'] = 'تقوم إضافة الانضمام إلى الدفعة بمزامنة أعضاء الدفعة مع المشتركين في المقرر الدراسي.';
 $string['privacy:metadata:core_group'] = 'يمكن لإضافة الانضمام إلى الدفعة إنشاء مجموعة جديدة أو استعمال مجموعة موجودة لإضافة كل أعضاء الدفعة.';

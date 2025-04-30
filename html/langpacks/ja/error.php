@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ja', version '4.1'.
+ * Strings for component 'error', language 'ja', version '4.4'.
  *
  * @package     error
  * @category    string
@@ -116,7 +116,7 @@ $string['cannotinsertrecord'] = '新しいレコードID {$a} を追加できま
 $string['cannotmailconfirm'] = 'パスワード変更確認メール送信中にエラーが発生しました。';
 $string['cannotmanualctrack'] = '活動が手動完了トラッキングをサポートしていません。';
 $string['cannotmapfield'] = 'マッピングの衝突が発生しました。2つのフィールドが同じ評定項目 {$a} にマップされています。';
-$string['cannotmarktopic'] = 'このコースのトピックをマークできませんでした。';
+$string['cannotmarktopic'] = 'このコースではそのセクションをマークできませんでした。';
 $string['cannotmigratedatacomments'] = 'データモジュールコメントを移行できません。';
 $string['cannotmodulename'] = 'ビルドナビゲーションでモジュール名を取得できません。';
 $string['cannotmoduletype'] = 'ビルドナビゲーションでモジュールタイプを取得できません。';
@@ -234,7 +234,11 @@ $string['dmlparseexception'] = 'SQLクエリ構文解釈中にエラーが発生
 $string['dmlreadexception'] = 'データベースの読み込み中にエラーが発生しました。';
 $string['dmltransactionexception'] = 'データベーストランザクションエラー';
 $string['dmlwriteexception'] = 'データベースへの書き込み中にエラーが発生しました。';
-$string['downgradedcore'] = 'エラー!!! あなたが使用しているコードはこれらのデータベースが作成されたものより古いコードです! ';
+$string['dndmaxbytes'] = 'ファイルが大きすぎます。許可される最大サイズは {$a->size} です。';
+$string['dndread'] = 'ファイルの読み込み中にエラーが発生しました。';
+$string['dndunkownfile'] = 'このファイルタイプはサポートされていません。';
+$string['dndupload'] = 'ファイルのアップロード中に不明なエラーが発生しました。';
+$string['downgradedcore'] = 'エラー: あなたが使用しているコードはデータベースに記録されているバージョンよりも古いものです。';
 $string['downloadedfilecheckfailed'] = 'ダウンロードファイルのチェックに失敗しました。';
 $string['duplicatefieldname'] = '重複フィールド名「 {$a} 」が検出されました。';
 $string['duplicatenosupport'] = '{$a->modtype} モジュールがバックアップおよびリストアをサポートしないため「 {$a->modname} 」活動を複製できません。';
@@ -242,6 +246,7 @@ $string['duplicateparaminsql'] = 'エラー: クエリのパラメータ名が�
 $string['duplicaterolename'] = 'この名称のロールはすでに存在します!';
 $string['duplicateroleshortname'] = 'この省略名のロールはすでに存在します!';
 $string['duplicateusername'] = '重複ユーザ名 - レコードをスキップする';
+$string['editedpagenotfound'] = 'システムは現在あなたがいるページを判断できませんでした。ページを更新して再度お試しください。';
 $string['emailfail'] = 'メール送信に失敗しました。';
 $string['encryption_decryptfailed'] = '復号化に失敗しました。';
 $string['encryption_encryptfailed'] = '暗号化に失敗しました。';
@@ -378,7 +383,7 @@ $string['invalidrole'] = '無効なロールです。';
 $string['invalidroleid'] = '無効なロールIDです。';
 $string['invalidscaleid'] = '正しくないスケールIDです。';
 $string['invalidsection'] = 'コースモジュールレコードに無効なセクションが含まれています。';
-$string['invalidsesskey'] = '恐らく、あなたのセッションはタイムアウトしたようです。再度ログインしてください。';
+$string['invalidsesskey'] = '恐らく、あなたのセッションはタイムアウトしたようです。あなたがログインしているかどうかを確認するか、前の画面に戻ってページを再度読み込んでください。';
 $string['invalidshortname'] = '無効なコース省略名です。';
 $string['invalidsourcefield'] = '下書きファイルのソースフィールドが無効です。';
 $string['invalidstatedetected'] = '不明なエラーが発生しました: {$a}。通常、このエラーは発生しません。';
@@ -427,6 +432,10 @@ $string['moduledisable'] = 'このモジュール ({$a}) はこの特定のコ�
 $string['moduledoesnotexist'] = 'このモジュールは存在しません。';
 $string['moduleinstancedoesnotexist'] = 'このモジュールのインスタンスが存在しません。';
 $string['modulemissingcode'] = 'この関数を実行するために必要なコードがモジュール {$a} にありません。';
+$string['moodlenet:invalidshareformat'] = '無効なMoodleNet共有フォーマットです。';
+$string['moodlenet:invalidsharestatus'] = '無効なMoodleNet共有ステータスです。';
+$string['moodlenet:invalidsharetype'] = '無効なMoodleNet共有タイプです。';
+$string['moodlenet:usernotconfigured'] = 'あなたにMoodleNetにコンテンツを共有するための権限がないか、あなたのアカウントが正しく設定されていません。';
 $string['movecatcontentstoroot'] = 'カテゴリコンテンツのルートへの移動は許可されていません。あなたはコンテンツを既存のカテゴリに移動する必要があります!';
 $string['movecatcontentstoselected'] = '一部のカテゴリコンテンツは選択されたカテゴリには移動できません。';
 $string['movecategorynotpossible'] = 'あなたは選択したカテゴリにカテゴリ「 {$a} 」を移動できません。';
@@ -498,8 +507,10 @@ $string['opensslsignerror'] = 'OpenSSLでデータを署名できません。';
 $string['orderidnotfound'] = '注文ID {$a} が見つかりませんでした。';
 $string['pagenotexist'] = '<p>存在しないページの表示を試みたため、不明なエラーが発生しました:</p>{$a}';
 $string['pagenotexisttitle'] = '404エラー: ファイルが見つかりません。';
+$string['passwordexceeded'] = 'パスワードは {$a} 文字以上にできません。';
 $string['pathdoesnotstartslash'] = '有効な引数が提供されていないか、パスがスラッシュで始まっていません!';
 $string['pleasereport'] = 'あなたに時間がある場合、エラーが発生時にあなたが何を試みたのか私たちにお教えください:';
+$string['pluginnotexist'] = '{$a} プラグインは存在しません。';
 $string['pluginrequirementsnotmet'] = 'プラグイン「 {$a->pluginname} 」 ({$a->pluginversion}) をインストールできませんでした。インストールするには新しいバージョンのMoodleが必要です (現在使用しているバージョン: {$a->currentmoodle} インストールに必要なバージョン: {$a->requiremoodle})。';
 $string['pluginunsupported'] = 'プラグイン「 {$a->pluginname} 」 {$a->pluginversion} はこのバージョンのMoodle {$a->moodleversion} をサポートしません。サポートされるバージョンを確認するため、プラグイン情報を探してください。';
 $string['prefixcannotbeempty'] = '<p>エラー: データベーステーブル接頭辞に空白は指定できません ({$a})</p>
@@ -511,6 +522,7 @@ $string['processingstops'] = '処理はここで停止します。残りのレ�
 $string['protected_cc_not_supported'] = '保護カートリッジはサポートされていません。';
 $string['querystringcannotbeempty'] = 'クエリストリングは空白にできません。';
 $string['redirecterrordetected'] = 'サポートされないリダイレクトが検出されました。スクリプトの実行が停止されました。';
+$string['redissessionhandlerproblem'] = 'Redisセッションのセットアップに失敗しました。サーバ管理者にご連絡ください。';
 $string['refoundto'] = '払戻し可能額: {$a}';
 $string['refoundtoorigi'] = '元の金額まで払戻し: {$a}';
 $string['registrationdisabled'] = 'このサイトでは登録が無効にされています。';
@@ -585,7 +597,7 @@ $string['unknowncoursesection'] = 'コース「 {$a} 」の不明なコースセ
 $string['unknownevent'] = '不明なイベントです。';
 $string['unknownfiletype'] = '不明なファイルタイプです。';
 $string['unknowngroup'] = '不明なグループ「 {$a} 」です。';
-$string['unknownhelp'] = '不明なヘルプトピック「 {$a} 」です。';
+$string['unknownhelp'] = '不明なヘルプセクション「 {$a} 」です。';
 $string['unknownjsinrequirejs'] = 'JavaScriptライブラリ「 {$a} 」が見つかりません。';
 $string['unknownmodulename'] = '不明なフォームのモジュール名です。';
 $string['unknownrole'] = '不明なロール「 {$a} 」です。';
@@ -613,6 +625,7 @@ $string['usermustbemnet'] = 'MNETアクセスコントロールリストのユ�
 $string['usernamelowercase'] = 'ユーザ名は半角英数字小文字にしてください。';
 $string['usernotaddederror'] = 'ユーザは追加されませんでした - エラー。';
 $string['usernotaddedregistered'] = 'ユーザは追加されませんでした - すでに登録されています。';
+$string['usernotaddedusernameexists'] = 'ユーザが追加されませんでした - ユーザ名がすでに別のメールアドレスで存在します。';
 $string['usernotavailable'] = 'あなたはこのユーザの詳細を閲覧できません。';
 $string['usernotdeletedadmin'] = '管理者アカウントは削除できないため、ユーザは削除されませんでした。';
 $string['usernotdeleteddeleted'] = 'このユーザはすでに削除されています。';

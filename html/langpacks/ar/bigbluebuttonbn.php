@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ar', version '4.1'.
+ * Strings for component 'bigbluebuttonbn', language 'ar', version '4.4'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -44,18 +44,20 @@ $string['bigbluebuttonbn:publishrecordings'] = 'نشر التسجيلات';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'إلغاء حماية التسجيلات';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'إلغاء نشر التسجيلات';
 $string['bigbluebuttonbn:view'] = 'معاينة غرفة BBB';
+$string['bigbluebuttonbn:viewallrecordingformats'] = 'معاينة كل صيغ التسجيل';
 $string['bigbluebuttondisablednotification'] = 'لقد تم تعطيل وحدة نشاط BigBlueButton ونشاطات المقررات المتعلقة به لم تعد متاحة. قبل إعادة تمكين هذه الإضافة، يرجى التأكد من أنك قد قرأت  ووافقت على <a href="{$a}" target="_blank">اتفاقية معالجة البيانات</a> مع شركة Blindside Networks Inc.';
 $string['bigbluebuttondisablednotification_subject'] = 'وحدة نشاط BBB معطلة.';
 $string['cachedef_currentfetch'] = 'بيانات لاستعراض أي تسجيلات تم جلبها مؤخرًا.';
 $string['cachedef_recordings'] = 'البيانات الوصفية للتسجيل';
 $string['cachedef_serverinfo'] = 'معلومات المخدم البعيد';
+$string['cachedef_subplugins'] = 'بيانات الخبء المستعملة من قبل إجرائيات الملاحق الفرعية لتسريع عملية اكتشاف الملحق عند الحاجة.';
 $string['cachedef_validatedurls'] = 'خبء عمليات التحقق من عناوين الروابط';
 $string['calendarstarts'] = '{$a} مجدول لغرض';
 $string['cannotperformaction'] = 'يتعذر القيام بإجراء {$a} لهذا التسجيل';
-$string['completionattendance'] = 'ينبغي على الطالب حضور الاجتماع من أجل:';
+$string['completionattendance'] = 'يتطلب الحضور (دقائق)';
 $string['completionattendance_desc'] = 'أدخل وابقَ في الغرفة لمدة {$a} من الدقائق على الأقل.';
 $string['completionattendance_event_desc'] = 'قام الطالب بدخول الغرفة والبقاء في جلستها لمدة {$a} من الدقائق على الأقل';
-$string['completionattendancegroup'] = 'تتطلب الحضور';
+$string['completionattendancegroup'] = 'يتطلب الحضور (دقائق)';
 $string['completionattendancegroup_help'] = 'حضور الاجتماع لمدة (س) من الدقائق مطلوب للإكمال.';
 $string['completionengagement_desc'] = 'الانخراط في النشاطات خلال الاجتماع.';
 $string['completionengagementchats'] = 'المحادثات';
@@ -79,8 +81,10 @@ $string['completionupdatestate'] = 'حالة تحديث الإكمال';
 $string['completionvalidatestate'] = 'تحقق من الإكمال';
 $string['completionvalidatestatetriggered'] = 'تم تشغيل التحقق من الإكمال.';
 $string['completionview'] = 'يتطلب المعاينة';
-$string['completionview_desc'] = 'على الطالب معاينة الغرفة لإكماله.';
+$string['completionview_desc'] = 'معاينة الغرفة';
 $string['completionview_event_desc'] = 'قد عاين صفحة الغرفة.';
+$string['config_checksum_algorithm'] = 'خوارزمية اختبار صحة BigBlueButton';
+$string['config_checksum_algorithm_description'] = 'إن SHA1 تتوافق مع المخدمات الأقدم. إن SHA256 و SHA512 أكثر أمانًا. إن SHA512 متوافقة مع FIPS 140-2).';
 $string['config_default_messages'] = 'الرسائل الافتراضية';
 $string['config_default_messages_description'] = 'ضبط إفتراضيات الرسائل للنشاطات';
 $string['config_disablecam_default'] = 'تعطيل كامرة الويب مُمَكَّن إفتراضيًا';
@@ -109,7 +113,7 @@ $string['config_experimental_features_description'] = 'التهيئة للمزا
 $string['config_extended_capabilities'] = 'الإمكانات الموسعة';
 $string['config_extended_capabilities_description'] = 'التهيئة للإمكانات الموسعة عندما يقدمها مخدم غرف اجتماعات BBB.';
 $string['config_general'] = 'الإعدادات العامة';
-$string['config_general_description'] = 'هذه الإعدادات مستعملة دائماً.';
+$string['config_general_description'] = 'لإعداد BigBlueButton، يمكنك إما استعمال مخدم BigBlueButton الخاص بك ومعطيات دخوله، أو الحصول على المعطيات عبر <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">بوابة التسجيل في Blindside (يُفتح في نافذة جديدة)</a>.';
 $string['config_guestaccess_enabled'] = 'وصول الضيوف الخارجيين.';
 $string['config_guestaccess_enabled_description'] = 'السماح للمستخدمين الذين لا يمتلكون حسابات في مودل بالوصول إلى غرفة الاجتماع.';
 $string['config_hideuserlist_default'] = 'إخفاء قائمة المستخدمين مُمَكَّن إفتراضيًا';
@@ -140,10 +144,12 @@ $string['config_poll_interval'] = 'مدة الاستطلاع (بالثواني) 
 $string['config_poll_interval_description'] = 'مدة الاستطلاع ينبغي أن تكون ثانيتين على الأقل. عند الضرورة، يمكنك تخفيف الحمل على المخدم البعيد عبر زيادة المدة.';
 $string['config_presentation_default'] = 'الملف الافتراضي للعرض التقديمي';
 $string['config_presentation_default_description'] = 'يمكن توفير الملف المستعمل في كل الغرف.';
-$string['config_preuploadpresentation'] = 'الرفع المسبق للعرض التقديمي';
+$string['config_preuploadpresentation'] = 'ملف العرض التقديمي';
 $string['config_preuploadpresentation_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل الخيارات في واجهة المستخدم وكذلك تحديد القيم الافتراضية لهذه الخيارات. تعمل الميزة فقط إذا كان BBB قادرًا على الوصول إلى مخدم مودل.';
-$string['config_preuploadpresentation_editable'] = 'التحميل المسبق للعرض قابل للتحرير';
-$string['config_preuploadpresentation_editable_description'] = 'ميزة التحميل المسبق للعرض قابلة للتعديل في واجهة المستخدم عند إضافة أو تحديث الغرفة أو المؤتمر.';
+$string['config_preuploadpresentation_editable'] = 'ملف العرض التقديمي في صفحة النشاط';
+$string['config_preuploadpresentation_editable_description'] = 'الخيار في إعدادات النشاط لرفع ملف العرض التقديمي لإظهاره في صفحة النشاط.';
+$string['config_profile_picture_enabled'] = 'إظهار صور الملفات الشخصية';
+$string['config_profile_picture_enabled_description'] = 'هل ينبغي إظهار الملفات الشخصية للمشاركين في جلسات BigBlueButton؟';
 $string['config_recording'] = 'التسجيل';
 $string['config_recording_all_from_start_default'] = 'بدء التسجيل منذ بدء الجلسة';
 $string['config_recording_all_from_start_default_description'] = 'هل ينبغي تمكين الإعداد \'بدء التسجيل منذ بدء الجلسة\' إفتراضيًا عند إضافة غرفة BBB جديدة؟';
@@ -162,6 +168,10 @@ $string['config_recording_protect_editable'] = 'حالة التسجيلات ال
 $string['config_recording_protect_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيارًا لحماية/إلغاء حماية التسجيلات.';
 $string['config_recording_refresh_period'] = 'مهلة تنشيط التسجيل (بالثواني)';
 $string['config_recording_refresh_period_description'] = 'ما هو تواتر استقدام البيانات من مخدم Bigbluebutton لتحديث المعلومات لدى المستخدمين بالنسبة إلى التسجيل؟';
+$string['config_recording_safe_formats'] = 'يمكن معاينة كل صيغ التسجيل من قبل الجميع';
+$string['config_recording_safe_formats_description'] = 'إختر الصيغ التي يمكن للجميع معاينتها.
+كل الصيغ الأخرى قابلة للمعاينة حصرًا من قبل المعلمين وغيرهم من المستخدمين الذين لهم الإمكانية mod/bigbluebuttonbn:viewallrecordingformats والإمكانية
+ mod/bigbluebuttonbn:managerecordings.';
 $string['config_recordingready_enabled'] = 'إرسال إشعار جهوزية التسجيل';
 $string['config_recordingready_enabled_description'] = 'عند تمكينه، سيتم إرسال إشعار عندما يصير التسجيل جاهزاً. هذه الميزة تتطلب تمكين النص البرمجي post_publish_recording_ready_callback في مخدم BBB.';
 $string['config_recordings'] = 'إظهار التسجيلات';
@@ -187,15 +197,9 @@ $string['config_scheduled_description'] = 'تحدد هذه الإعدادات ا
 $string['config_scheduled_pre_opening'] = 'متاح قبل وقت الفتح';
 $string['config_scheduled_pre_opening_description'] = 'الوقت بالدقائق الذي تكون فيه الجلسة متاحة للوصول إليها قبل موعد فتحها.';
 $string['config_server_url'] = 'عنوان الرابط لمخدم غرف اجتماعات BBB';
-$string['config_server_url_description'] = 'معطيات الدخول الافتراضية لميزة <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">خدمة BigBlueButton مجانية لمودل (يُفتح بنافذة جديدة)</a> مقدم من قبل Blindside Networks مع التقييدات الآتية:
-<ol>
-<li>أقصى مدة لكل جلسة هي 60 دقيقة</li>
-<li>أقصى عدد من المستخدمين المتزامنين لكل جلسة هو 25</li>
-<li>تنتهي صلاحية التسجيلات بعد (7) سبعة أيام ولا يمكن تنزيلها</li>
-<li>كامرات الويب للطلاب مرئية فقط من جانب المشرف.</li>
-</ol>';
+$string['config_server_url_description'] = 'عنوان رابط مخدم BigBlueButton.';
 $string['config_shared_secret'] = 'السر المشارك لـ BigBlueButton';
-$string['config_shared_secret_description'] = 'سر الأمان لمخدم غرف اجتماعات BBB. هذا السر الافتراضي هو لمخدم غرف اجتماعات BBB المجاني الذي توفره Blindside Networks.';
+$string['config_shared_secret_description'] = 'سر الأمان لمخدم BigBlueButton.';
 $string['config_uidelegation_enabled'] = 'تفويض واجهة المستخدم مُمَكَّن';
 $string['config_uidelegation_enabled_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل تفويض واجهة المستخدم لمخدم غرف اجتماعات BBB.';
 $string['config_userlimit'] = 'تحديد المستخدمين';
@@ -221,9 +225,10 @@ $string['config_waitformoderator_ping_interval_description'] = 'ما هو توا
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'يستعمل BBB الملف config.php مع متغير عام تم إهماله. يرجى تحويل الملف لأنه لن يتم دعمه في الإصدارات المستقبلية.';
 $string['config_warning_curl_not_installed'] = 'هذه الميزة تتطلب تنصيب الامتداد CURL في php وتمكينه. يمكن الوصول إلى الإعدادات فقط عند تلبية هذا الشرط.';
 $string['config_welcome_default'] = 'رسالة الترحيب الافتراضية';
-$string['config_welcome_default_description'] = 'يتم عرض رسالة ترحيبية عند دخول المشاركين إلى الغرفة. إذا تُرك الحقل فارغًا، ستُعرض الرسالة الترحيبية المعدة مسبقًا في مخدم BBB.';
+$string['config_welcome_default_description'] = 'يتم عرض رسالة ترحيبية عند دخول المشاركين إلى الغرفة. إذا تُرك الحقل فارغًا، سيجري استعمال عبارة اللغة الموسومة \'mod_form_field_welcome_default\'.';
 $string['config_welcome_editable'] = 'يمكن للمعلمين تعديل رسالة الترحيب الافتراضية';
 $string['config_welcome_editable_description'] = 'يمكن تحرير رسالة الترحيب عند إضافة المثيل أو تحديثه';
+$string['credentials_warning'] = 'استعمال معطيات المخدم الافتراضية ستنتهي صلاحيته قريبًا (أنظر الملاحظة أعلاه للحصول على معطيات جديدة).';
 $string['dpainfonotsigned'] = 'قبل تمكين هذا الملحق، ينبغي عليك تأكيد قراءتك وقبولك لـ <a href="{$a}">اتفاقية معالجة البيانات لـ Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'تمكين وحدة نشاط BBB';
 $string['enablingbigbluebuttondpainfo'] = 'من أجل تلبية مستلزمات حماية بياناتك، فقبل تمكين هذا الملحق، تأكد من قراءة <a href="{$a}" target="_blank">اتفاقية معالجة البيانات من Blindside Networks Inc.</a> والموافقة عليها.<br/>
@@ -314,6 +319,7 @@ $string['instance_type_default'] = 'الغرفة مع التسجيلات';
 $string['instance_type_recording_only'] = 'التسجيلات فقط';
 $string['instance_type_room_only'] = 'الغرفة فقط';
 $string['instanceprofilewithoutrecordings'] = 'نسخة المثيل هذه لا يمكنها عرض التسجيلات';
+$string['managebbbextplugins'] = 'إدارة ملاحق موسع BigBlueButton';
 $string['messageprovider:instance_updated'] = 'تم تحديث جلسة BBB';
 $string['messageprovider:recording_ready'] = 'تسجيل BBB جاهز للمعاينة';
 $string['minute'] = 'دقيقة';
@@ -415,6 +421,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'الوقت ال�
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'مُعرَّف المستخدم الذي أثار الحدث';
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'يخزن البيانات الوصفية للتسجيلات';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'مُعرَّف المستخدم الذي أجرى آخر تغيير في التسجيل';
+$string['progress_createbigbluebuttonbn'] = 'يجري إنشاء نشاط BigBlueButton ({$a})';
 $string['recordings_from_deleted_activities'] = 'التسجيلات من النشاطات المحذوفة';
 $string['recordingurlnotfound'] = 'عنوان رابط الاجتماع غير صالح.';
 $string['removedevents'] = 'الأحداث المحذوفة';
@@ -434,8 +441,12 @@ $string['search:activity'] = 'BBB - معلومات النشاط';
 $string['search:tags'] = 'BBB - معلومات الوسوم';
 $string['sendnotification'] = 'إرسال الإشعار';
 $string['settings'] = 'إعدادات BigBlueButton';
+$string['settings_credential_warning'] = 'معطيات مخدم BigBlueButton ستنتهي صلاحيتها قريبًا. أنظر <a href="{$a->settingslink}" target="_blank">إعدادات BigBlueButton العامة (يُفتح في نافذة جديدة)</a>.';
+$string['settings_credential_warning_no_capability'] = 'معطيات مخدم BigBlueButton ستنتهي صلاحيتها قريبًا. يرجى التواصل مع مشرف موقعك.';
 $string['started_at'] = 'بدأت';
 $string['starts_at'] = 'تبدأ';
+$string['subplugintype_bbbext'] = 'موسع نشاط BigBlueButton';
+$string['subplugintype_bbbext_plural'] = 'موسعات نشاط BigBlueButton';
 $string['taskname:check_dismissed_recordings'] = 'تحقق من وجود تسجيلات لم يُعثر عليها بعد';
 $string['taskname:check_pending_recordings'] = 'إحضار التسجيلات التي قيد الانتظار';
 $string['userlimitreached'] = 'وصلنا إلى العدد الأقصى للمستخدمين المسموح بهم في الجلسة.';

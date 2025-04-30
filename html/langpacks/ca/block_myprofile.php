@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ca', version '4.1'.
+ * Strings for component 'block_myprofile', language 'ca', version '4.4'.
  *
  * @package     block_myprofile
  * @category    string
@@ -27,22 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Visualitza els paràmetres per a la regió de contingut';
 $string['display_address'] = 'Visualitza l\'adreça';
-$string['display_aim'] = 'Visualitza AIM';
 $string['display_city'] = 'Visualitza la ciutat';
 $string['display_country'] = 'Visualitza el país';
 $string['display_currentlogin'] = 'Visualitza el nom d\'usuari actual';
 $string['display_email'] = 'Visualitza el correu electrònic';
 $string['display_firstaccess'] = 'Visualitza el primer accés';
-$string['display_icq'] = 'Visualitza ICQ';
 $string['display_institution'] = 'Visualitza institució';
 $string['display_lastaccess'] = 'Visualitza el darrer accés';
 $string['display_lastip'] = 'Visualitza la darrera IP';
-$string['display_msn'] = 'Visualitza MSN';
 $string['display_phone1'] = 'Mostra el telèfon';
 $string['display_phone2'] = 'Mostra el telèfon mòbil';
 $string['display_picture'] = 'Visualitza la imatge';
-$string['display_skype'] = 'Visualitza Skype';
-$string['display_yahoo'] = 'Visualitza Yahoo';
 $string['myprofile:addinstance'] = 'Afegeix un bloc nou d\'usuaris que han iniciat sessió';
 $string['myprofile:myaddinstance'] = 'Afegeix un bloc nou d\'usuaris connectats a la pàgina del Tauler';
 $string['myprofile_settings'] = 'Informació de l\'usuari visible';

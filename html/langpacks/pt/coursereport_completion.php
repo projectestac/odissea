@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_completion', language 'pt', version '4.1'.
+ * Strings for component 'coursereport_completion', language 'pt', version '4.4'.
  *
  * @package     coursereport_completion
  * @category    string

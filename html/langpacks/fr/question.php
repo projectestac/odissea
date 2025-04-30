@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', version '4.1'.
+ * Strings for component 'question', language 'fr', version '4.4'.
  *
  * @package     question
  * @category    string
@@ -175,6 +175,8 @@ $string['errorprocessingresponses'] = 'Une erreur est survenue lors du traitemen
 $string['errorsavingcomment'] = 'Erreur lors de l’enregistrement dans la base de données du commentaire pour la question {$a->name}.';
 $string['errorsavingflags'] = 'Erreur durant l’enregistrement de l’indicateur d’état.';
 $string['errorupdatingattempt'] = 'Erreur lors de la mise à jour dans la base de données de la tentative {$a->id}.';
+$string['eventqbankdisabled'] = 'Plugin banque de questions désactivé';
+$string['eventqbankenabled'] = 'Plugin banque de questions activé';
 $string['eventquestioncategorycreated'] = 'Catégorie de questions créée';
 $string['eventquestioncategorydeleted'] = 'Catégorie de question supprimée';
 $string['eventquestioncategorymoved'] = 'Catégorie de question déplacée';
@@ -264,6 +266,7 @@ $string['invalidcategoryidtomove'] = 'Identifiant de la catégorie à déplacer 
 $string['invalidconfirm'] = 'La chaîne de confirmation est incorrecte';
 $string['invalidcontextinhasanyquestions'] = 'Contexte non valide passé à la fonction question_context_has_any_questions().';
 $string['invalidgrade'] = 'Les notes ({$a}) ne correspondent pas aux réglages d’évaluation - question ignorée.';
+$string['invalidgradequestion'] = 'Les notes ({$a->grades}) ne correspondent pas aux réglages des notes – question « {$a->question} » sautée.';
 $string['invalidpenalty'] = 'Pénalité non valide';
 $string['invalidwizardpage'] = 'Page de l’assistant incorrecte ou non spécifiée !';
 $string['lastmodifiedby'] = 'Dernière modification par';
@@ -307,6 +310,7 @@ $string['movingquestionsandfiles'] = 'Voulez-vous vraiment déplacer la(les) que
 $string['movingquestionsnofiles'] = 'Voulez-vous vraiment déplacer la(les) question(s) {$a->questions} vers le contexte « {$a->tocontext} »?<br />Il n’y a <strong>aucun fichier</strong> liés depuis cette(ces) question(s) dans {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Vous devez choisir une catégorie dans laquelle déplacer cette question ou cliquer sur « Annuler ».';
 $string['nocate'] = 'Aucune catégorie {$a} !';
+$string['noconditionspecified'] = 'Veuillez indiquer une condition';
 $string['nopermissionadd'] = 'Vous n’avez pas les permissions requises pour ajouter des questions ici.';
 $string['nopermissionedit'] = 'Vous n’avez pas les permissions requises pour modifier ici les questions.';
 $string['nopermissionmove'] = 'Vous n’avez pas les permissions requises pour déplacer des questions depuis ici. Vous devez enregistrer la question dans cette catégorie ou l’enregistrer comme nouvelle question.';
@@ -321,7 +325,6 @@ $string['notchanged'] = 'Non modifiée depuis la dernière tentative';
 $string['notenoughanswers'] = 'Ce type de question requiert au moins {$a} réponses';
 $string['notenoughdatatoeditaquestion'] = 'L’identifiant de la question, l’identifiant de la catégorie et le type de question n’ont pas été spécifiés.';
 $string['notenoughdatatomovequestions'] = 'Vous devez fournir les identifiants des questions que vous voulez déplacer.';
-$string['notflagged'] = 'Non marquée';
 $string['notgraded'] = 'Non noté';
 $string['notshown'] = 'Non montré';
 $string['notyetanswered'] = 'Pas encore répondu';
@@ -413,7 +416,7 @@ $string['questionpreviewdefaults'] = 'Réglages par défaut de la prévisualisat
 $string['questionpreviewdefaults_desc'] = 'Ces réglages sont utilisés lors de la première prévisualisation d’une question dans la banque de questions. Lorsqu’un utilisateur a prévisualisé une question, ses préférences personnelles sont enregistrées.';
 $string['questions'] = 'Questions';
 $string['questionsaveerror'] = 'Des erreurs sont survenues lors de l’enregistrement de la question ({$a})';
-$string['questionsinuse'] = '* Indique les questions qui ne peuvent pas être supprimées, car elles sont utilisées. Ces questions seront cachées dans la banque de questions, à moins que vous ne cochiez « Montrer les anciennes questions ».';
+$string['questionsinuse'] = '* Indique les questions qui ne peuvent pas être supprimées, car elles sont utilisées. Ces questions seront cachées dans la banque de questions, à moins que vous ne régliez « Montrer les anciennes questions » sur oui.';
 $string['questionsmovedto'] = 'Les questions encore utilisées ont été déplacées vers « {$a} » dans la catégorie de cours mère.';
 $string['questionsrescuedfrom'] = 'Questions enregistrées depuis le contexte {$a}.';
 $string['questionsrescuedfrominfo'] = 'Ces questions (dont certaines sont peut-être cachées) ont été enregistrées lors de la suppression du contexte {$a}, car elles sont encore utilisées dans certains tests ou d’autres activités.';
@@ -426,7 +429,7 @@ $string['questionx'] = 'Question {$a}';
 $string['requiresgrading'] = 'Nécessite évaluation';
 $string['responsehistory'] = 'Historique des réponses';
 $string['restart'] = 'Recommencer';
-$string['restartwiththeseoptions'] = 'Recommencer avec ces options';
+$string['restartwiththeseoptions'] = 'Enregistrer les options de prévisualisation et recommencer';
 $string['restoremultipletopcats'] = 'Le fichier de sauvegarde contient plus d’une catégorie racine de questions pour le contexte {$a}.';
 $string['reviewresponse'] = 'Relire la réponse';
 $string['rightanswer'] = 'Réponse juste';
@@ -441,7 +444,9 @@ $string['selectcategoryabove'] = 'Choisir une catégorie ci-dessus';
 $string['selectquestionsforbulk'] = 'Sélectionner des questions pour des actions en masse';
 $string['settingsformultipletries'] = 'Tentatives multiples';
 $string['shareincontext'] = 'Partager dans le contexte pour {$a}';
-$string['showhidden'] = 'Montrer aussi les anciennes questions';
+$string['shortversioninfo'] = 'v{$a->version} (sur {$a->latestversion})';
+$string['shortversioninfolatest'] = 'v{$a->version} (dernière)';
+$string['showhidden'] = 'Montrer les questions cachées';
 $string['showmarkandmax'] = 'Montrer la note et la note maximale';
 $string['showmaxmarkonly'] = 'Montrer la note maximale seulement';
 $string['shown'] = 'Affiché';
@@ -493,6 +498,8 @@ $string['upgradeproblemcategoryloop'] = 'Un problème a été détecté lors de 
 $string['upgradeproblemcouldnotupdatecategory'] = 'Impossible de modifier la catégorie de question {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Un problème a été détecté lors de la modification des catégories de question : la catégorie {$a->id} fait référence à la catégorie parente {$a->parent}, qui n’existe pas. La catégorie parente a été changée pour corriger le problème.';
 $string['version_selection'] = 'Version {$a->version}';
+$string['versioninfo'] = 'Version {$a->version} (sur {$a->latestversion})';
+$string['versioninfolatest'] = 'Version {$a->version} (dernière)';
 $string['whethercorrect'] = 'Si correcte';
 $string['whethercorrect_help'] = 'L’indication « Correct », « Partiellement correct » ou « Incorrect » ainsi que toutes les indications surlignées en couleur portant la même information.';
 $string['whichtries'] = 'Choix des tentatives';

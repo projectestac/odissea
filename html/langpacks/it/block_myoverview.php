@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'it', version '4.1'.
+ * Strings for component 'block_myoverview', language 'it', version '4.4'.
  *
  * @package     block_myoverview
  * @category    string
@@ -44,22 +44,19 @@ $string['aria:groupingdropdown'] = 'Raggruppamento menu a discesa';
 $string['aria:hiddencourses'] = 'Visualizza corsi rimossi dalla visualizzazione';
 $string['aria:hidecourse'] = 'Elimina {$a} dalla visualizzazione';
 $string['aria:inprogress'] = 'Visualizza corsi in svolgimento';
-$string['aria:lastaccessed'] = 'Ordina corsi per ultima data di accesso';
 $string['aria:list'] = 'Passa alla vista elenco';
 $string['aria:past'] = 'Visualizza corsi conclusi';
 $string['aria:removefromfavourites'] = 'Rimuovi dai preferiti';
-$string['aria:shortname'] = 'Ordina corsi in base al titolo abbreviato';
 $string['aria:showcourse'] = 'Riporta {$a} nella visualizzazione';
 $string['aria:sortingdropdown'] = 'Ordinamento menu a discesa';
 $string['aria:summary'] = 'Passa alla vista sommario';
-$string['aria:title'] = 'Ordina corsi per nome del corso';
 $string['availablegroupings'] = 'Filtri disponibili';
 $string['availablegroupings_desc'] = 'I filtri dei corsi possono essere utilizzati dagli utenti. Selezionando nessun filtro, saranno visualizzati tutti i corsi.';
 $string['card'] = 'Matrice';
 $string['cards'] = 'Matrici';
-$string['clearsearch'] = 'Pulisci ricerca';
 $string['completepercent'] = '{$a}% completato';
 $string['courseprogress'] = 'Stato avanzamento corso:';
+$string['createcourse'] = 'Crea corso';
 $string['customfield'] = 'Campo personalizzato';
 $string['customfiltergrouping'] = 'Campo da utilizzare';
 $string['customfiltergrouping_nofields'] = 'Per utilizzare l\'impostazione devono essere disponibili campi personalizzati del corso visibili a tutti.';
@@ -93,3 +90,10 @@ $string['sortbyshortname'] = 'Ordina per titolo abbreviato del corso';
 $string['sortbytitle'] = 'Ordina per titolo del corso';
 $string['summary'] = 'Sommario';
 $string['title'] = 'Titolo del corso';
+$string['viewquickstart'] = 'Visualizza la guida rapida';
+$string['zero_default_intro'] = 'I corsi ai quali sarai iscritto compariranno qui.';
+$string['zero_default_title'] = 'Non sei iscritto in nessun corso.';
+$string['zero_nocourses_intro'] = 'Servei aiuto per iniziare? Dai un\'occhiata alla <a href="{$a->doctarget}" title="{$a->doctitle}" target="{$a->doctarget}">Documentazione di Moodle</a> o muovi i primi passi con la nostra guida rapida.';
+$string['zero_nocourses_title'] = 'Crea il primo corso';
+$string['zero_request_intro'] = 'Serve aiuto per iniziare? Dai un\'occhiata alla <a href="{$a->doctarget}" title="{$a->doctitle}" target="{$a->doctarget}">Documentazione di Moodle</a> o muovi i primi passi con la nostra <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Guida rapida</a>.';
+$string['zero_request_title'] = 'Richiedi il tuo primo corso';

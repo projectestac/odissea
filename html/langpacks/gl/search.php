@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'gl', version '4.1'.
+ * Strings for component 'search', language 'gl', version '4.4'.
  *
  * @package     search
  * @category    string
@@ -125,7 +125,7 @@ $string['search:section'] = 'Seccións do curso';
 $string['search:user'] = 'Usuarios';
 $string['searcharea'] = 'Área de buscas';
 $string['searchareacategories'] = 'Categorías da área de busca';
-$string['searching'] = 'Buscando en ...';
+$string['searching'] = 'Buscando en …';
 $string['searchnotpermitted'] = 'Non está autorizado para facer unha busca';
 $string['searchsetupdescription'] = 'Os pasos seguintes axudaranlle a configurar a busca global en Moodle.';
 $string['searchwithin'] = 'Buscar en';

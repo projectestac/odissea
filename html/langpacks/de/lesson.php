@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', version '4.1'.
+ * Strings for component 'lesson', language 'de', version '4.4'.
  *
  * @package     lesson
  * @category    string
@@ -151,7 +151,7 @@ $string['correctresponse'] = 'Feedback bei richtiger Antwort';
 $string['createaquestionpage'] = 'Fragenseite anlegen';
 $string['credit'] = 'Bewertung';
 $string['customscoring'] = 'Standardbewertung (Punkte)';
-$string['customscoring_help'] = 'Wenn diese Option aktiviert ist, kann jede Antwort mit einer numerischen Punktzahl zu versehen werden, wobei auch negative Punkte möglich sind.';
+$string['customscoring_help'] = 'Wenn diese Option aktiviert ist, kann jeder ganzzahlige Wert (positiv oder negativ)  eingegeben werden.';
 $string['deadline'] = 'Verfügbar bis';
 $string['defaultessayresponse'] = 'Die Freitext-Antwort wird später bewertet.';
 $string['deleteallattempts'] = 'Alle Versuche der Lektion löschen';
@@ -554,7 +554,7 @@ $string['savechangesandeol'] = 'Alle Änderungen speichern und zum Ende der Lekt
 $string['saveoverrideandstay'] = 'Speichern und weitere Änderung anlegen';
 $string['savepage'] = 'Seite speichern';
 $string['score'] = 'Bewertung';
-$string['score_help'] = 'Punkte werden nur verwendet, wenn eine nutzerdefinierte Bewertung aktiviert ist. Jeder Antwort kann einen (positiver oder negativer) Zahlenwert gegeben werden.';
+$string['score_help'] = 'Wenn in den Lektionseinstellungen die nutzerdefinierte Bewertung aktiviert ist, kann für jede Antwort ein ganzzahliger Wert (positiv oder negativ) eingegeben werden.';
 $string['scores'] = 'Bewertung';
 $string['search:activity'] = 'Lektion - Aktivitätsinfo';
 $string['secondpluswrong'] = 'Nicht ganz. Möchten Sie es noch einmal versuchen?';

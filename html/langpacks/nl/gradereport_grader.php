@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'nl', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'nl', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Bekijk {$a} resultaten';
 $string['ajaxchoosescale'] = 'Kies';
 $string['ajaxclicktoclose'] = 'Klik hier om te verwijderen';
 $string['ajaxerror'] = 'Fout';
 $string['ajaxfailedupdate'] = 'Kan [1] niet updaten voor [2]';
 $string['ajaxfieldchanged'] = 'Het veld dat je nu aan het bewerken bent, is gewijzigd. Wil je de aangepaste waarde gebruiken?';
+$string['aria:dropdowncolumns'] = 'Samengevouwen kolommen gevonden';
+$string['cellactions'] = 'Cel-acties';
+$string['clearall'] = 'Wis alles';
+$string['clearsearch'] = 'Wis gezochte gebruikers';
+$string['collapsedcolumns'] = 'Samengevouwen kolommen <span class="badge badge-pill badge-primary ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Beoordelersrapport bewerken';
 $string['eventgradereportviewed'] = 'Beoordelaarsrapport bekeken';
 $string['grader:manage'] = 'Beheer rapportage';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Of u een extra
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Of de profielafbeelding van de gebruiker naast de naam wordt weergegeven';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Het aantal leerlingen dat per pagina wordt weergegeven in het rapport van de beoordelaar';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Je hebt een aantal cijferlijst categorieën samengevouwen in de cursus "{$ ->name}"';
+$string['reopencolumn'] = 'Vergroot kolom {$a}';
 $string['summarygrader'] = 'Een tabel met de namen van leerlingen in de eerste kolom, met beoordeelbare activiteiten gegroepeerd per cursus en categorie bovenaan.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} cijfer';

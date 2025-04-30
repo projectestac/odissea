@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ja', version '4.1'.
+ * Strings for component 'assignsubmission_file', language 'ja', version '4.4'.
  *
  * @package     assignsubmission_file
  * @category    string

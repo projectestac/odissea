@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ur', version '4.1'.
+ * Strings for component 'chat', language 'ur', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -102,7 +102,6 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'گفتگو';
 $string['neverdeletemessages'] = 'پیغامات کو کبھی حذف نہ کریں';
 $string['nextchattime'] = 'اگلی گفتگو کا وقت:';
-$string['nextsession'] = 'شیڈول کا اگلا سیشن';
 $string['no_complete_sessions_found'] = 'کوئی مکمل سیشن نہیں ملا۔';
 $string['nochat'] = 'کوئی گفتگو نہیں ملی';
 $string['noguests'] = 'مہمانوں کیلیے یہ گفتگو کھلی نہیں';
@@ -150,7 +149,6 @@ $string['serverip'] = 'سرور کا آئی پی';
 $string['servermax'] = 'زیادہ سے زیادہ صارفین';
 $string['serverport'] = 'سرور پورٹ';
 $string['sessions'] = 'گفتگو کے سیشن';
-$string['sessionstart'] = 'اگلا گفتگو سیشن {$a->date} کو شروع ہوگا، ({$a->fromnow} اب سے)';
 $string['sessionstartsin'] = 'اگلا گفتگو سیشن اب سے {$a} سے شروع ہوگا۔';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'ہر کوئی پرانے سیشن دیکھ سکتا ہے';

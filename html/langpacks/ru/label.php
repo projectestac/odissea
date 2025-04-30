@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ru', version '4.1'.
+ * Strings for component 'label', language 'ru', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Участник достиг эт
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Добавлять новый ресурс «Текст и медиа»';
 $string['label:view'] = 'Просматривать ресурс «Текст и медиа»';
+$string['labelname'] = 'Название в оглавлении курса';
+$string['labelname_help'] = 'Название используется только для идентификации области «Текст и медиа» в оглавлении курса и выполнении элемента. Если оставить пустым, оно будет автоматически генерироваться из первых символов текста.';
 $string['labeltext'] = 'Текст';
 $string['modulename'] = 'Текст и медиа';
 $string['modulename_help'] = 'Ресурс «Текст и медиа» позволяет на странице курса вставлять текст и мультимедиа между ссылками на другие ресурсы и элементы курса.

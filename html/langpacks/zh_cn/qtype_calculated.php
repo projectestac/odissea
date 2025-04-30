@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'zh_cn', version '4.1'.
+ * Strings for component 'qtype_calculated', language 'zh_cn', version '4.4'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -101,7 +101,7 @@ $string['newlocal2'] = '只有此题可用的新文件集中的文件';
 $string['newlocal3'] = '只有此题可用的新链接集中的链接';
 $string['newsetwildcardvalues'] = '个新通配符数据集合';
 $string['nextitemtoadd'] = '下一个“要添加的数据项”';
-$string['nextpage'] = '下页';
+$string['nextpage'] = '下一页';
 $string['nocoherencequestionsdatyasetcategory'] = '对 id 为 {$a->id} 的试题，id 为 {$a->qcat} 的类别与通配符 {$a->name} 的类别 id {$a->sharedcat} 不一致。请修改此题目。';
 $string['nocommaallowed'] = '不能使用“,”，可以像 0.013 或 1.3e-2 这样用';
 $string['nodataset'] = '无数据集';
@@ -131,7 +131,7 @@ $string['sharedwildcards'] = '共享通配符';
 $string['showitems'] = '显示';
 $string['significantfigures'] = '保留 {$a} 位';
 $string['significantfiguresformat'] = '有效数字';
-$string['synchronize'] = '与测验中其它题目共享的数据集同步数据';
+$string['synchronize'] = '将共享数据集中的数据与测验中的其他问题同步';
 $string['synchronizeno'] = '不同步';
 $string['synchronizeyes'] = '同步';
 $string['synchronizeyesdisplay'] = '同步，并将共享数据集名显示为题名前缀';

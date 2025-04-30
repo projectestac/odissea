@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'es', version '4.1'.
+ * Strings for component 'assignfeedback_editpdf', language 'es', version '4.4'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,6 +74,7 @@ $string['oval'] = 'Óvalo';
 $string['pagenumber'] = 'Página {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
 $string['partialwarning'] = 'Algunos archivos en este envío sólo pueden ser accedidos en forma directa.';
+$string['pathtogserror'] = 'La ruta configurada al ghostscript no está configurada correctamente: {$a}';
 $string['pathtogspathdesc'] = 'Por favor tenga en cuenta que la anotación de PDF requiere que la ruta de ghostscript sea especificada en {$a}.';
 $string['pen'] = 'Bolígrafo';
 $string['pluginname'] = 'Anotar PDF';

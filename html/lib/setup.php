@@ -154,6 +154,16 @@ if (defined('BEHAT_SITE_RUNNING')) {
     }
 }
 
+// Set default warn runtime.
+if (!isset($CFG->taskruntimewarn)) {
+    $CFG->taskruntimewarn = 12 * 60 * 60;
+}
+
+// Set default error runtime.
+if (!isset($CFG->taskruntimeerror)) {
+    $CFG->taskruntimeerror = 24 * 60 * 60;
+}
+
 // Normalise dataroot - we do not want any symbolic links, trailing / or any other weirdness there
 if (!isset($CFG->dataroot)) {
     if (isset($_SERVER['REMOTE_ADDR'])) {
@@ -246,7 +256,7 @@ if (!isset($_SERVER['REMOTE_ADDR']) && isset($_SERVER['argv'][0])) {
 
 // sometimes default PHP settings are borked on shared hosting servers, I wonder why they have to do that??
 ini_set('precision', 14); // needed for upgrades and gradebook
-ini_set('serialize_precision', 17); // Make float serialization consistent on all systems.
+ini_set('serialize_precision', -1); // Make float serialization consistent on all systems.
 
 // Scripts may request no debug and error messages in output
 // please note it must be defined before including the config.php script
@@ -271,21 +281,25 @@ if (!defined('PHPUNIT_TEST')) {
     define('PHPUNIT_TEST', false);
 }
 
-// Performance tests needs to always display performance info, even in redirections.
+// Performance tests needs to always display performance info, even in redirections;
+// MDL_PERF_TEST is used in https://github.com/moodlehq/moodle-performance-comparison scripts.
 if (!defined('MDL_PERF_TEST')) {
     define('MDL_PERF_TEST', false);
-} else {
-    // We force the ones we need.
-    if (!defined('MDL_PERF')) {
-        define('MDL_PERF', true);
-    }
-    if (!defined('MDL_PERFDB')) {
-        define('MDL_PERFDB', true);
-    }
-    if (!defined('MDL_PERFTOFOOT')) {
-        define('MDL_PERFTOFOOT', true);
-    }
 }
+// Make sure all MDL_PERF* constants are always defined.
+if (!defined('MDL_PERF')) {
+    define('MDL_PERF', MDL_PERF_TEST);
+}
+if (!defined('MDL_PERFTOFOOT')) {
+    define('MDL_PERFTOFOOT', MDL_PERF_TEST);
+}
+if (!defined('MDL_PERFTOLOG')) {
+    define('MDL_PERFTOLOG', false);
+}
+if (!defined('MDL_PERFINC')) {
+    define('MDL_PERFINC', false);
+}
+// Note that PHPUnit and Behat tests should pass with both MDL_PERF true and false.
 
 // When set to true MUC (Moodle caching) will be disabled as much as possible.
 // A special cache factory will be used to handle this situation and will use special "disabled" equivalents objects.
@@ -362,11 +376,16 @@ if (file_exists("$CFG->dataroot/climaintenance.html")) {
     }
 }
 
-// Sometimes people use different PHP binary for web and CLI, make 100% sure they have the supported PHP version.
-if (version_compare(PHP_VERSION, '5.6.5') < 0) {
+// Some core parts of Moodle may make use of language features not available in older PHP versions.s
+// When this happens as part of our core bootstrap, we can end up having confusing and spurious error
+// messages which are hard to diagnose.
+// This check allows us to insert a very basic check for the absolute minimum version of PHP for the
+// Moodle core to be able to load the environment and error pages.
+// It should only be updated in these circumstances, not with every PHP version.
+if (version_compare(PHP_VERSION, '8.1.0') < 0) {
     $phpversion = PHP_VERSION;
     // Do NOT localise - lang strings would not work here and we CAN NOT move it to later place.
-    echo "Moodle 3.2 or later requires at least PHP 5.6.5 (currently using version $phpversion).\n";
+    echo "Moodle 4.4 or later requires at least PHP 8.1 (currently using version $phpversion).\n";
     echo "Some servers may have multiple PHP versions installed, are you using the correct executable?\n";
     exit(1);
 }
@@ -378,7 +397,7 @@ if (!defined('AJAX_SCRIPT')) {
 
 // Exact version of currently used yui2 and 3 library.
 $CFG->yui2version = '2.9.0';
-$CFG->yui3version = '3.17.2';
+$CFG->yui3version = '3.18.1';
 
 // Patching the upstream YUI release.
 // If we need to patch a YUI modules between official YUI releases, the yuipatchlevel will need to be manually
@@ -601,12 +620,8 @@ if (!empty($_SERVER['HTTP_X_moz']) && $_SERVER['HTTP_X_moz'] === 'prefetch'){
 //the problem is that we need specific version of quickforms and hacked excel files :-(
 ini_set('include_path', $CFG->libdir.'/pear' . PATH_SEPARATOR . ini_get('include_path'));
 
-// Register our classloader, in theory somebody might want to replace it to load other hacked core classes.
-if (defined('COMPONENT_CLASSLOADER')) {
-    spl_autoload_register(COMPONENT_CLASSLOADER);
-} else {
-    spl_autoload_register('core_component::classloader');
-}
+// Register our classloader.
+\core_component::register_autoloader();
 
 // Remember the default PHP timezone, we will need it later.
 core_date::store_default_php_timezone();
@@ -661,19 +676,29 @@ if (PHPUNIT_TEST and !PHPUNIT_UTIL) {
 }
 
 // Load any immutable bootstrap config from local cache.
-$bootstrapcachefile = $CFG->localcachedir . '/bootstrap.php';
-if (is_readable($bootstrapcachefile)) {
+$bootstraplocalfile = $CFG->localcachedir . '/bootstrap.php';
+$bootstrapsharedfile = $CFG->cachedir . '/bootstrap.php';
+
+if (!is_readable($bootstraplocalfile) && is_readable($bootstrapsharedfile)) {
+    // If we don't have a local cache but do have a shared cache then clone it,
+    // for example when scaling up new front ends.
+    make_localcache_directory('', true);
+    copy($bootstrapsharedfile, $bootstraplocalfile);
+}
+if (is_readable($bootstraplocalfile)) {
     try {
-        require_once($bootstrapcachefile);
+        require_once($bootstraplocalfile);
         // Verify the file is not stale.
         if (!isset($CFG->bootstraphash) || $CFG->bootstraphash !== hash_local_config_cache()) {
             // Something has changed, the bootstrap.php file is stale.
             unset($CFG->siteidentifier);
-            @unlink($bootstrapcachefile);
+            @unlink($bootstraplocalfile);
+            @unlink($bootstrapsharedfile);
         }
     } catch (Throwable $e) {
         // If it is corrupted then attempt to delete it and it will be rebuilt.
-        @unlink($bootstrapcachefile);
+        @unlink($bootstraplocalfile);
+        @unlink($bootstrapsharedfile);
     }
 }
 
@@ -691,6 +716,12 @@ if (isset($CFG->debug)) {
     $CFG->debug = 0;
 }
 $CFG->debugdeveloper = (($CFG->debug & DEBUG_DEVELOPER) === DEBUG_DEVELOPER);
+
+// Set a default value for whether to show exceptions in a pretty format.
+if (!property_exists($CFG, 'debug_developer_use_pretty_exceptions')) {
+    $CFG->debug_developer_use_pretty_exceptions = true;
+
+}
 
 // Find out if PHP configured to display warnings,
 // this is a security problem because some moodle scripts may
@@ -1007,6 +1038,11 @@ if (!empty($CFG->debugvalidators) and !empty($CFG->guestloginbutton)) {
 // can be using in the logfile and stripped out if needed.
 set_access_log_user();
 
+if (CLI_SCRIPT && !empty($CFG->version)) {
+    // Allow auth plugins to optionally authenticate users on the CLI.
+    require_once($CFG->libdir. '/authlib.php');
+    auth_plugin_base::login_cli_admin_user();
+}
 
 // Ensure the urlrewriteclass is setup correctly (to avoid crippling site).
 if (isset($CFG->urlrewriteclass)) {

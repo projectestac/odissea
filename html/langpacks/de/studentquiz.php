@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'de', version '4.1'.
+ * Strings for component 'studentquiz', language 'de', version '4.4'.
  *
  * @package     studentquiz
  * @category    string
@@ -33,6 +33,7 @@ $string['addprivatecomment_help'] = 'Diese Kommentare sind ausschließlich zwisc
 $string['addpubliccomment'] = 'Öffentlichen Kommentar hinzufügen';
 $string['after_answering_end_date'] = 'Dieses StudentQuiz wurde am {$a} für weitere Antworten geschlossen.';
 $string['after_submission_end_date'] = 'Dieses StudentQuiz wurde am {$a} für das Einreichen von Fragen geschlossen.';
+$string['anonymous_user'] = 'Anonyme Person';
 $string['anonymous_user_name'] = 'Anonyme/r Nutzer/in #{$a}';
 $string['answeringndbeforestart'] = 'Der Endtermin für die Beantwortung von Fragen kann nicht vor dem Starttermin liegen.';
 $string['api_state_change_error_content'] = 'Diese Frage kann nicht gelöscht werden, da sie bestätigt wurde.';
@@ -163,7 +164,7 @@ $string['error_permission'] = 'Sie müssen Teil einer Gruppe sein, um diese Seit
 $string['error_sendalert'] = 'Es gab einen Fehler. Ihr Bericht an {$a} konnte nicht gesendet werden.';
 $string['expandall'] = 'Alle Kommentare ausklappen';
 $string['expandcomment'] = 'Kommentar ausklappen';
-$string['filter'] = 'Filter';
+$string['filter'] = 'Schnellfilter';
 $string['filter_advanced_element'] = '{$a} (erweiteres Element)';
 $string['filter_comment_label_date'] = 'Datum';
 $string['filter_comment_label_forename'] = 'Vorname';
@@ -172,15 +173,17 @@ $string['filter_comment_label_sort_toggle'] = 'Sortieren nach {$a->field} {$a->t
 $string['filter_comment_label_surname'] = 'Nachname';
 $string['filter_ishigher'] = 'Ist höher';
 $string['filter_islower'] = 'Ist tiefer';
+$string['filter_label_answered'] = 'Beantwortet';
 $string['filter_label_approved'] = 'Bestätigte Fragen';
 $string['filter_label_comment'] = 'Kommentare';
 $string['filter_label_createdate'] = 'Erstellt';
 $string['filter_label_difficulty_level'] = 'Schwierigkeiten';
-$string['filter_label_fast_filters'] = 'Schnellfilter für Fragen';
 $string['filter_label_myattempts'] = 'Meine Versuche';
 $string['filter_label_mydifficulty'] = 'Meine Schwierigkeit';
 $string['filter_label_mylastattempt'] = 'Mein letzter Versuch';
 $string['filter_label_myrate'] = 'Meine Bewertung';
+$string['filter_label_notmine'] = 'Nicht meine';
+$string['filter_label_notmine_help'] = 'Fragen, die nicht von Ihnen erstellt wurden';
 $string['filter_label_onlyapproved'] = 'Bestätigt';
 $string['filter_label_onlyapproved_help'] = 'Von Ihrer Lehrperson bestätigte Fragen';
 $string['filter_label_onlydifficult'] = 'Schwer für alle';
@@ -193,6 +196,7 @@ $string['filter_label_onlymine'] = 'Meine';
 $string['filter_label_onlymine_help'] = 'Fragen, die Sie erstellten.';
 $string['filter_label_onlynew'] = 'Unbeantwortete';
 $string['filter_label_onlynew_help'] = 'Fragen, die Sie noch nie beantwortet haben';
+$string['filter_label_owner'] = 'Besitzer/in';
 $string['filter_label_question'] = 'Fragetitel';
 $string['filter_label_question_creation_item'] = '{$a->creationtext} {$a->rowtext} {$a->inputtext}';
 $string['filter_label_question_creation_item_inputtext'] = '{$a->inputtext} {$a->inputtype}';

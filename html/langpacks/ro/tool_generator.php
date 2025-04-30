@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ro', version '4.1'.
+ * Strings for component 'tool_generator', language 'ro', version '4.4'.
  *
  * @package     tool_generator
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalmodules'] = 'Activități suplimentare';
+$string['additionalmodules_help'] = 'Selectează mai multe activități care implementează funcția course_backend_generator_create_activity pentru a fi incluse în cursul de testare.';
 $string['bigfile'] = 'Fișier mare {$a}';
 $string['courseexplanation'] = 'Acest instrument creează cursuri de testare standard care includ multe
 secțiuni, activități și fișiere.
@@ -79,6 +81,7 @@ $string['progress_createcourse'] = 'Se creează cursul {$a}';
 $string['progress_createforum'] = 'Se creează un forum ({$a} postări)';
 $string['progress_createpages'] = 'Crearea paginilor ({$a})';
 $string['progress_createsmallfiles'] = 'Crearea fișierelor mici ({$a})';
+$string['progress_createusers'] = 'Se creează conturi de utilizator ({$a})';
 $string['progress_enrol'] = 'Înscrierea utilizatorilor la curs ({$a})';
 $string['progress_sitecompleted'] = 'Site finalizat ({$a})';
 $string['shortsize_0'] = 'XS';
@@ -121,5 +124,17 @@ $string['testplansize_2'] = 'M ({$a->users} utilizatori, {$a->loops} bucle și {
 $string['testplansize_3'] = 'L ({$a->users} utilizatori, {$a->loops} bucle și {$a->rampup} perioadă de rampup)';
 $string['testplansize_4'] = 'XL ({$a->users} utilizatori, {$a->loops} bucle și {$a->rampup} perioadă de rampup)';
 $string['testplansize_5'] = 'XXL ({$a->users} utilizatori, {$a->loops} bucle și {$a->rampup} perioadă de rampup)';
+$string['testscenario'] = 'Creează scenarii de testare';
+$string['testscenario_description'] = 'Crearea scenariilor de testare folosește o sintaxă limitată a fișierelor de funcționalități pentru a crea toate elementele necesare pentru a rula un test manual.';
+$string['testscenario_errorparsing'] = 'Eroare la procesarea fișierului funcționalități extinse: {$a}';
+$string['testscenario_file'] = 'Fișier funcționalități extinse';
+$string['testscenario_filedesc'] = 'Fișierele caracteristice de încărcare pot conține doar scenarii cu pași core_data_generator. Încă nu sunt compatibile cu schițele scenariilor. Toate scenariile vor fi executate odată, dar procesele din fundalul vor fi ignorate.';
+$string['testscenario_invalidfile'] = 'Formatul fișierului nu este valid sau conține pași care nu sunt valizi.';
+$string['testscenario_invalidstep'] = 'Pas necunoscut. Crearea scenariilor de testare acceptă doar pașii generați.';
+$string['testscenario_nosteps'] = 'Nu există pași de executat în fișier.';
+$string['testscenario_notready'] = 'Composer și bibliotecile Behat nu sunt încă instalate.<br><br>Executați această comandă pentru a activa acest instrument: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Schițele scenariului nu sunt acceptate.';
+$string['testscenario_scenarionosteps'] = 'Acest scenariu nu are pași.';
+$string['testscenario_steps'] = 'Se testează pașii scenariului:';
 $string['updateuserspassword'] = 'Actualizați parola utilizatorilor cursului';
 $string['updateuserspassword_help'] = 'JMeter trebuie să se conecteze ca utilizatori de curs, puteți seta parola utilizatorilor utilizând $CFG->tool_generator_users_password în config.php; această setare actualizează parola utilizatorului cursului în conformitate cu $CFG->tool_generator_users_password. Poate fi util în cazul în care utilizați un curs care nu a fost generat de tool_generator sau $CFG->tool_generator_users_password nu a fost setat când ați creat cursurile de testare.';

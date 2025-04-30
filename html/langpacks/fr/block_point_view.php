@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_point_view', language 'fr', version '4.1'.
+ * Strings for component 'block_point_view', language 'fr', version '4.4'.
  *
  * @package     block_point_view
  * @category    string
@@ -67,6 +67,9 @@ $string['enableforfuturemodules_help'] = 'Activer automatiquement les réactions
 $string['enablepoint_views'] = 'Activer les <b>Réactions</b>';
 $string['errorfilemanager'] = '<b>ERREUR</b> : le nom du fichier <b>{$a}.png</b> n’est pas conforme.';
 $string['errorfilemanagerempty'] = 'Veuillez fournir au moins un fichier.';
+$string['eventreactionadded'] = 'Réaction ajoutée';
+$string['eventreactionremoved'] = 'Réaction retirée';
+$string['eventreactionupdated'] = 'Réaction modifiée';
 $string['forthismodule'] = 'Pour ce module ({$a}) :';
 $string['greentrack'] = 'Piste verte';
 $string['header_activities'] = 'Configuration des Réactions et Pistes de difficulté';
@@ -80,6 +83,7 @@ $string['noreactionsyet'] = 'Il n’y a pas encore de module de cours avec réac
 $string['pluginname'] = 'Point de vue';
 $string['point_view:access_overview'] = 'Voir le détail des réactions';
 $string['point_view:addinstance'] = 'Ajouter une instance du bloc Point de vue';
+$string['point_view:addreaction'] = 'Voir la zone de réactions et ajouter des réactions';
 $string['point_view:myaddinstance'] = 'Ajouter une instance du bloc Point de vue sur le tableau de bord';
 $string['privacy:metadata:activity_votes_database:cmid'] = 'ID de l’activité';
 $string['privacy:metadata:activity_votes_database:courseid'] = 'ID du cours';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'gl', version '4.1'.
+ * Strings for component 'quiz_grading', language 'gl', version '4.4'.
  *
  * @package     quiz_grading
  * @category    string
@@ -31,10 +31,6 @@ $string['alsoshowautomaticallygraded'] = 'Amosa tamén as preguntas que se cuali
 $string['attemptstograde'] = 'Intentos para cualificar';
 $string['automaticallygraded'] = 'Cualificado automaticamente';
 $string['backtothelistofquestions'] = 'Volver á lista de preguntas';
-$string['bydate'] = 'Pola data';
-$string['bystudentfirstname'] = 'Polo nome propio do alumno';
-$string['bystudentidnumber'] = 'Polo número ID do alumno';
-$string['bystudentlastname'] = 'Polo apelido do alumno';
 $string['cannotgradethisattempt'] = 'Non é posíbel cualificar este intento';
 $string['cannotloadquestioninfo'] = 'Non é posíbel cargar a información específica sobre o tipo de pregunta';
 $string['changeoptions'] = 'Cambiar as opcións';
@@ -55,11 +51,10 @@ $string['gradingall'] = 'Todos {$a} os intentos nesta pregunta.';
 $string['gradingattempt'] = 'Intento número {$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Cualificación de intentos de {$a->from} a {$a->to} de {$a->of}';
 $string['gradingattemptwithcustomfields'] = 'Intento número {$a->attempt} para {$a->fullname} ({$a->customfields})';
-$string['gradingattemptwithidnumber'] = 'Intento número {$a->attempt} de {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Seguinte(s) {$a} intentos sen cualificar';
-$string['gradingnotallowed'] = 'Non ten permiso para cualificar manualmente as respostas nesta proba';
+$string['gradingnotallowed'] = 'Non ten permiso para cualificar manualmente as respostas neste exame';
 $string['gradingquestionx'] = 'Cualificando a pregunta {$a->number}: {$a->questionname}';
-$string['gradingreport'] = 'Informe de cualificación manual';
+$string['gradingreport'] = 'Informe da cualificación manual';
 $string['gradingungraded'] = '{$a} intentos sen cualificar';
 $string['gradinguser'] = 'Intentos de {$a}';
 $string['hideautomaticallygraded'] = 'Agochar as preguntas que se cualificaron automaticamente';
@@ -69,19 +64,17 @@ $string['invalidquestionid'] = 'Non se atopou a pregunta cualificábel co ID {$a
 $string['noquestionsfound'] = 'Non se atoparon preguntas cualificadas manualmente';
 $string['nothingfound'] = 'Nada para presentar';
 $string['options'] = 'Opcións';
-$string['orderattempts'] = 'Ordenar intentos';
 $string['orderattemptsby'] = 'Ordenar intentos por';
 $string['pluginname'] = 'Cualificación manual';
-$string['privacy:preference:order'] = 'En que orde amosar os intentos que precisan cualificación.';
+$string['privacy:preference:order'] = 'En que orde amosar os intentos que precisan de cualificación.';
 $string['privacy:preference:pagesize'] = 'Cantos intentos amosar en cada páxina da interface de cualificación.';
-$string['qno'] = 'P núm.';
+$string['qno'] = 'Q núm.';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionsperpage'] = 'Preguntas por páxina';
 $string['questionsthatneedgrading'] = 'Preguntas que requiren cualificación';
 $string['questiontitle'] = 'Pregunta {$a->number} : «{$a->name}» ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} intentos {$a->openspan}cualificados{$a->closespan}).';
-$string['random'] = 'Ao chou';
-$string['randomly'] = 'Ao chou';
-$string['saveandnext'] = 'Gardar e ir á seguinte páxina';
+$string['random'] = 'Aleatoria';
+$string['saveandnext'] = 'Gardar e amosar a seguir';
 $string['showstudentnames'] = 'Amosar os nomes dos alumnos';
 $string['tograde'] = 'Cualificar';
 $string['total'] = 'Total';

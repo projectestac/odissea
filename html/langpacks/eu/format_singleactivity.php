@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'eu', version '4.1'.
+ * Strings for component 'format_singleactivity', language 'eu', version '4.4'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -32,7 +32,8 @@ $string['defactivitytypedesc'] = 'Zehaztu ikastaro berria sortzean modu lehenets
 $string['erroractivitytype'] = 'Jarduera mota ez da ezarri Ikastaroaren ezarpenetan';
 $string['orphaned'] = 'Umezurtza';
 $string['orphanedwarning'] = 'Erabiltzaileek ezin dituzte jarduera hauek aurkitu!';
-$string['pluginname'] = 'Jarduera bakarreko formatua';
+$string['plugin_description'] = 'Ikastaroak jarduera ala baliabide bakarra dauka.';
+$string['pluginname'] = 'Jarduera bakarra';
 $string['privacy:metadata'] = 'Jarduera bakarreko formatua pluginak ez du datu pertsonalik biltzen.';
 $string['sectionname'] = '';
 $string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Albisteak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';

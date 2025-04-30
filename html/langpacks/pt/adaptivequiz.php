@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'pt', version '4.1'.
+ * Strings for component 'adaptivequiz', language 'pt', version '4.4'.
  *
  * @package     adaptivequiz
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'de', version '4.1'.
+ * Strings for component 'hotpot', language 'de', version '4.4'.
  *
  * @package     hotpot
  * @category    string
@@ -79,7 +79,7 @@ $string['clues'] = 'Spurensuche';
 $string['completed'] = 'Beendet';
 $string['completioncompleted'] = 'Status "abgeschlossen" erforderlich';
 $string['completionmingrade'] = 'Minimale Bewertung erforderlich';
-$string['completionpass'] = 'Bestehensbewertung erforderlich';
+$string['completionpass'] = 'Bestehensgrenze erreichen';
 $string['completionwarning'] = 'Diese Felder sind deaktiviert, wenn "Keine Bewertung" oder "Keine Gewichtung" eingestellt sind.';
 $string['configbodystyles'] = 'Standardmäßig werden die Designeinstellungen von HotPot durch die Designeinstellungen von Moodle überschrieben. Alternativ können Sie hier auswählen, welche Designeinstellungen aus HotPot vorrangig behandelt werden sollen.';
 $string['configenablecache'] = 'Die Nutzung des HotPot-Caches kann die Quizbereitstellung entscheidend beschleunigen.';

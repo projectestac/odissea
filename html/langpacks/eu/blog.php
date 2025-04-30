@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', version '4.1'.
+ * Strings for component 'blog', language 'eu', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = '{$a->modtype}: {$a->modname} -ri buruzko bloga
 $string['association'] = 'Lotura';
 $string['associations'] = 'Loturak';
 $string['associationunviewable'] = 'Besteek ezin dute sarrera hau ikusi ikastaro batekin lotu arte edo "Norentzat argitaratu" eremua aldatu arte.';
+$string['author'] = 'Egilea';
 $string['autotags'] = 'Gehitu etiketa hauek';
 $string['autotags_help'] = 'Idatzi etiketa lokal bat edo gehiago (komaz banatuta) kanpoko blogetik zure blog lokalera kopiatutako blog-sarrera bakoitzari automatikoki gehitzea nahi baduzu.';
 $string['backupblogshelp'] = 'Gaituz gero, blogak ere GUNEAren segurtasun-kopia automatizatuetan sartuko dira';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = '{$a->type}(r)i buruzko bloga';
 $string['blogaboutthiscourse'] = 'Gehitu sarrera bat ikastaro honi buruz';
 $string['blogaboutthismodule'] = 'Gehitu sarrera bat honi buruz: {$a}';
 $string['blogadministration'] = 'Blog-kudeaketa';
+$string['blogattachment'] = 'Blogeko eranskina';
 $string['blogdeleteconfirm'] = '\'{$a}\' blog-sarrera hau ezabatu nahi duzu?';
 $string['blogdisable'] = 'Blogak desgaituta daude!';
 $string['blogentries'] = 'Blog-sarrerak';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Blogak';
 $string['blogscourse'] = 'Ikastaroko blogak';
 $string['blogssite'] = 'Guneko blogak';
 $string['blogtags'] = 'Blogaren etiketak';
+$string['cannoteditentryorblog'] = 'Ezin duzu sarrera edo blog hau editatu';
 $string['cannotviewcourseblog'] = 'Ez duzu baimenik ikastaro honetako blogak ikusteko';
 $string['cannotviewcourseorgroupblog'] = 'Ez duzu baimenik ikastaro/talde honetako blogak ikusteko';
 $string['cannotviewsiteblog'] = 'Ez duzu baimenik guneko blog guztiak ikusteko';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Deskribapena idatzi';
 $string['entryerrornotyours'] = 'Sarrera hau ez da zurea';
 $string['entrysaved'] = 'Zure sarrera gorde da';
 $string['entrytitle'] = 'Izenburua idatzi';
+$string['entrytitlewithlink'] = 'Idatzi izenburua estekarekin';
 $string['eventblogassociationadded'] = 'Blog-lotura sortu da';
 $string['eventblogassociationdeleted'] = 'Blog-lotura ezabatu da';
 $string['eventblogentriesviewed'] = 'Blog-sarrerak ikusi dira';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'Zehaztutako blog-iragazki mota ezegokia da';
 $string['intro'] = 'RSS jario hau automatikoki sortu da blog batetik edo batzuetatik';
 $string['invalidgroupid'] = 'Taldearen ID-a ez da egokia';
 $string['invalidurl'] = 'Ezin da aurkitu URL hau';
-$string['linktooriginalentry'] = 'Jatorrizko blog-sarrerarako esteka';
+$string['linktooriginalentry'] = 'Jatorrizko blog-sarrera';
 $string['maxexternalblogsperuser'] = 'Gehieneko kanpoko blog-kopurua erabiltzaileko';
 $string['myprofileuserblogs'] = 'Ikusi blog-sarrera guztiak';
 $string['name'] = 'Izena';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'Blog-sarrera gehitu zuen erabiltzaile
 $string['privacy:metadata:post:usermodified'] = 'Sarrera azkenengoz aldatu zuen erabiltzailea';
 $string['privacy:path:blogassociations'] = 'Lotutako blog-sarrerak';
 $string['privacy:unknown'] = 'Ezezaguna';
+$string['published'] = 'Publikatuta';
 $string['publishto'] = 'Norentzat argitaratu';
 $string['publishto_help'] = 'Hiru aukera posible ditugu:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'Hiru aukera posible ditugu:
 $string['publishtocourse'] = 'Zurekin ikastaroa konpartitzen duten erabiltzaileak';
 $string['publishtocourseassoc'] = 'Lotutako ikastaroko kideak';
 $string['publishtocourseassocparam'] = '{$a}-ko kideak';
+$string['publishtodraft'] = 'Zirriborroa';
 $string['publishtogroup'] = 'Zurekin taldea konpartitzen duten erabiltzaileak';
 $string['publishtogroupassoc'] = 'Zure taldekideak lotutako ikastaroan';
 $string['publishtogroupassocparam'] = 'Zure taldekiak {$a}-n';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'Ikusi sarrera guztiak';
 $string['viewuserentries'] = 'Ikusi {$a}-ren sarrera guztiak';
 $string['worldblogs'] = 'Edozeinek ikus ditzake mundu osoarentzat argitaratutako sarrerak';
 $string['wrongexternalid'] = 'Kanpoko blogaren ID baliogabea';
-$string['wrongpostid'] = 'Blog-mezuaren ID okerra';

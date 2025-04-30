@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', version '4.1'.
+ * Strings for component 'glossary', language 'de', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -77,7 +77,7 @@ $string['cnfapprovalstatus'] = 'Wenn diese Option aktiviert ist, müssen Glossar
 $string['cnfcasesensitive'] = 'Wenn diese Option aktiviert ist, wird bei der Verlinkung von Einträgen die Groß-/Kleinschreibung berücksichtigt.';
 $string['cnfdefaulthook'] = 'Standardansicht für Glossar wählen';
 $string['cnfdefaultmode'] = 'Standardframe für Glossar wählen';
-$string['cnffullmatch'] = 'Wenn diese Option aktiviert ist, wird ein Wort automatisch verlinkt, wenn es vollständig mit einem Glossareintrag übereinstimmt.';
+$string['cnffullmatch'] = 'Wenn diese Option aktiviert ist, wird ein Wort automatisch verlinkt, falls es vollständig mit einem Glossareintrag übereinstimmt.';
 $string['cnflinkentry'] = 'Wenn diese Option aktiviert ist, wird ein neuer Eintrag automatisch verlinkt.';
 $string['cnflinkglossaries'] = 'Wenn diese Option aktiviert ist, werden Glossare automatisch verlinkt.';
 $string['cnfrelatedview'] = 'Wählen Sie das Anzeigeformat für die automatische Verlinkung und die Eintragsdarstellung.';
@@ -92,7 +92,7 @@ $string['comments'] = 'Kommentare';
 $string['commentson'] = 'Kommentare eingeschaltet';
 $string['commentupdated'] = 'Der Kommentar wurde geändert.';
 $string['completiondetail:entries'] = 'Einträge hinzufügen: {$a}';
-$string['completionentries'] = 'Teilnehmer/innen müssen Einträge anlegen:';
+$string['completionentries'] = 'Einträge anlegen:';
 $string['completionentriesdesc'] = 'Teilnehmer/in muss mindestens {$a} Einträge anlegen';
 $string['completionentriesgroup'] = 'Einträge notwendig';
 $string['concept'] = 'Begriff';
@@ -296,6 +296,7 @@ $string['page-mod-glossary-view'] = 'Glossaransichtsseite
 ';
 $string['page-mod-glossary-x'] = 'Jede Glossarseite';
 $string['pendingapproval'] = 'Genehmigung ausstehend';
+$string['pendingapprovalcount'] = 'Ausstehende Freigabe ({$a})';
 $string['pluginadministration'] = 'Glossar-Administration';
 $string['pluginname'] = 'Glossar';
 $string['popupformat'] = 'Popup-Format';
@@ -351,7 +352,6 @@ $string['usedynalink_help'] = 'Wenn diese Option aktiviert ist, wird beim Hinzuf
 
 Voraussetzung ist die globale Freischaltung der Glossarverlinkung durch die Administrator/innen.';
 $string['visibletabs'] = 'Sichtbare Tabs';
-$string['waitingapproval'] = 'Einträge zur Prüfung';
 $string['warningstudentcapost'] = '(gilt nur, wenn dieses Glossar kein Hauptglossar ist)';
 $string['withauthor'] = 'Begriffe mit Autor/in';
 $string['withoutauthor'] = 'Begriffe ohne Autor/in';

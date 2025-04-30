@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', version '4.1'.
+ * Strings for component 'glossary', language 'eu', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -77,7 +77,7 @@ $string['cnfapprovalstatus'] = 'Zehaztu ikasleek egindako sarreren onarpen-egoer
 $string['cnfcasesensitive'] = 'Zehaztu sarreretan, estekatzen direnean, modu lehenetsian letra larri eta xeheak bereiziko diren ala ez';
 $string['cnfdefaulthook'] = 'Erabaki glosarioa lehen ikustaldian nola agertuko den';
 $string['cnfdefaultmode'] = 'Erabaki glosarioa lehen ikustaldian zein markotan agertuko den.';
-$string['cnffullmatch'] = 'Zehaztu sarrera batek, estekatzen bada, modu lehenetsian testuarekin letra larri eta xeheetan bat etorri behar duen ala ez';
+$string['cnffullmatch'] = 'Zehaztu sarrera batek, estekatzen bada, modu lehenetsian hitz osoekin (eta ez hitzen barruko beste hitzen barruan) bat etorri behar duen ala ez.';
 $string['cnflinkentry'] = 'Zehaztu sarrerak modu lehenetsian automatikoki estekatuko diren ala ez';
 $string['cnflinkglossaries'] = 'Zehaztu glosariora automatikoki estekatu behar den ala ez';
 $string['cnfrelatedview'] = 'Aukeratu estekatze automatikoa erabiltzean sarrerak ikusteko formatua.';
@@ -92,7 +92,7 @@ $string['comments'] = 'Iruzkinak';
 $string['commentson'] = 'Honen inguruko iruzkinak';
 $string['commentupdated'] = 'Iruzkina eguneratu da.';
 $string['completiondetail:entries'] = 'Sarrerak egitea: {$a}';
-$string['completionentries'] = 'Ikasleak sarrerak sortu behar ditu:';
+$string['completionentries'] = 'Sarrerak gehitzea';
 $string['completionentriesdesc'] = 'Erabiltzaileak gutxienez {$a} sarrera sortu behar ditu';
 $string['completionentriesgroup'] = 'Sarrerak behar dira';
 $string['concept'] = 'Kontzeptua';
@@ -104,7 +104,7 @@ $string['date'] = 'data';
 $string['dateview'] = 'Arakatu dataren arabera';
 $string['defaultapproval'] = 'Aldez aurretik onartua';
 $string['defaultapproval_help'] = 'Ez ezarriz gero, sarrerek irakaslearen onarpena beharko dute gainerako guztientzat ikusgai jarri aurretik.';
-$string['defaulthook'] = 'Lehenetsitako gakoa';
+$string['defaulthook'] = 'Lehenetsitako kakoa';
 $string['defaultmode'] = 'Lehenetsitako modua';
 $string['defaultsortkey'] = 'Lehenetsitako ordenatze-gakoa';
 $string['defaultsortorder'] = 'Lehenetsitako ordenatze-irizpidea';
@@ -281,6 +281,7 @@ $string['page-mod-glossary-edit'] = 'Glosarioan sarrerak gehitzeko/editatzeko or
 $string['page-mod-glossary-view'] = 'Ikusi glosarioa editatzeko orria';
 $string['page-mod-glossary-x'] = 'Glosarioaren edozein orri';
 $string['pendingapproval'] = 'Onarpenaren zain';
+$string['pendingapprovalcount'] = 'Onarpenaren zain ({$a})';
 $string['pluginadministration'] = 'Glosario kudeaketa';
 $string['pluginname'] = 'Glosarioa';
 $string['popupformat'] = 'Popup formatua';
@@ -334,7 +335,6 @@ $string['totalentries'] = 'Sarrerak guztira';
 $string['usedynalink'] = 'Estekatu automatikoki glosarioko sarrerak';
 $string['usedynalink_help'] = 'Kudeatzaileak gune mailako glosariorako esteka automatikoa gaitu badu eta ezarpen hau gaituta badago, "Gehitu sarrera berria" aukerari esker sarrerak automatikoki estekatuko dira kontzeptuen hitz  eta esaldiekin, ikastaroan zehar agertzen direnean.';
 $string['visibletabs'] = 'Ikusgai dauden fitxak';
-$string['waitingapproval'] = 'Onarpenaren zain';
 $string['warningstudentcapost'] = '(Soilik glosario nagusia ez bada)';
 $string['withauthor'] = 'Kontzeptuak eta egilea';
 $string['withoutauthor'] = 'Kontzeptuak egilerik gabe';

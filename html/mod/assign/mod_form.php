@@ -205,12 +205,6 @@ class mod_assign_mod_form extends moodleform_mod {
         $mform->addElement('selectyesno', 'sendstudentnotifications', $name);
         $mform->addHelpButton('sendstudentnotifications', 'sendstudentnotificationsdefault', 'assign');
 
-        // Plagiarism enabling form. To be removed (deprecated) with MDL-67526.
-        if (!empty($CFG->enableplagiarism)) {
-            require_once($CFG->libdir . '/plagiarismlib.php');
-            plagiarism_get_form_elements_module($mform, $ctx->get_course_context(), 'mod_assign');
-        }
-
         $this->standard_grading_coursemodule_elements();
         $name = get_string('blindmarking', 'assign');
         $mform->addElement('selectyesno', 'blindmarking', $name);
@@ -231,6 +225,12 @@ class mod_assign_mod_form extends moodleform_mod {
         $mform->addElement('selectyesno', 'markingallocation', $name);
         $mform->addHelpButton('markingallocation', 'markingallocation', 'assign');
         $mform->hideIf('markingallocation', 'markingworkflow', 'eq', 0);
+
+        $name = get_string('markinganonymous', 'assign');
+        $mform->addElement('selectyesno', 'markinganonymous', $name);
+        $mform->addHelpButton('markinganonymous', 'markinganonymous', 'assign');
+        $mform->hideIf('markinganonymous', 'markingworkflow', 'eq', 0);
+        $mform->hideIf('markinganonymous', 'blindmarking', 'eq', 0);
 
         $this->standard_coursemodule_elements();
         $this->apply_admin_defaults();
@@ -325,10 +325,13 @@ class mod_assign_mod_form extends moodleform_mod {
     public function add_completion_rules() {
         $mform =& $this->_form;
 
-        $mform->addElement('advcheckbox', 'completionsubmit', '', get_string('completionsubmit', 'assign'));
+        $suffix = $this->get_suffix();
+        $completionsubmitel = 'completionsubmit' . $suffix;
+        $mform->addElement('advcheckbox', $completionsubmitel, '', get_string('completionsubmit', 'assign'));
         // Enable this completion rule by default.
-        $mform->setDefault('completionsubmit', 1);
-        return array('completionsubmit');
+        $mform->setDefault($completionsubmitel, 1);
+
+        return [$completionsubmitel];
     }
 
     /**
@@ -338,7 +341,8 @@ class mod_assign_mod_form extends moodleform_mod {
      * @return bool
      */
     public function completion_rule_enabled($data) {
-        return !empty($data['completionsubmit']);
+        $suffix = $this->get_suffix();
+        return !empty($data['completionsubmit' . $suffix]);
     }
 
 }

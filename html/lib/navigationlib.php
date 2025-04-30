@@ -23,6 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\moodlenet\utilities;
 use core_contentbank\contentbank;
 
 defined('MOODLE_INTERNAL') || die();
@@ -93,7 +94,7 @@ class navigation_node implements renderable {
     public $id = null;
     /** @var string|int The identifier for the node, used to retrieve the node */
     public $key = null;
-    /** @var string The text to use for the node */
+    /** @var string|lang_string The text to use for the node */
     public $text = null;
     /** @var string Short text to use if requested [optional] */
     public $shorttext = null;
@@ -115,6 +116,8 @@ class navigation_node implements renderable {
     public $forceopen = false;
     /** @var array An array of CSS classes for the node */
     public $classes = array();
+    /** @var array An array of HTML attributes for the node */
+    public $attributes = [];
     /** @var navigation_node_collection An array of child nodes */
     public $children = array();
     /** @var bool If set to true the node will be recognised as active */
@@ -157,6 +160,12 @@ class navigation_node implements renderable {
     public $showinsecondarynavigation = true;
     /** @var bool If set to true the children of this node will be displayed within a submenu when applicable */
     public $showchildreninsubmenu = false;
+    /** @var string tab element ID. */
+    public $tab;
+    /** @var string unique identifier. */
+    public $moremenuid;
+    /** @var bool node that have children. */
+    public $haschildren;
 
     /**
      * Constructs a new navigation_node
@@ -362,8 +371,8 @@ class navigation_node implements renderable {
      * Adds a navigation node as a child of this node.
      *
      * @param string $text
-     * @param moodle_url|action_link $action
-     * @param int $type
+     * @param moodle_url|action_link|string $action
+     * @param ?int $type
      * @param string $shorttext
      * @param string|int $key
      * @param pix_icon $icon
@@ -434,7 +443,7 @@ class navigation_node implements renderable {
      * use the get method instead.
      *
      * @param int|string $key The key of the node we are looking for
-     * @param int $type One of navigation_node::TYPE_*
+     * @param ?int $type One of navigation_node::TYPE_*
      * @return navigation_node|false
      */
     public function find($key, $type) {
@@ -550,6 +559,16 @@ class navigation_node implements renderable {
             $this->classes[] = $class;
         }
         return true;
+    }
+
+    /**
+     * Adds an HTML attribute to this node.
+     *
+     * @param string $name
+     * @param string $value
+     */
+    public function add_attribute(string $name, string $value): void {
+        $this->attributes[] = ['name' => $name, 'value' => $value];
     }
 
     /**
@@ -1146,7 +1165,7 @@ class navigation_node_collection implements IteratorAggregate, Countable {
      *
      * @param string|int $key The key of the node we want to find.
      * @param int $type One of navigation_node::TYPE_*.
-     * @return navigation_node|null
+     * @return navigation_node|null|false
      */
     public function get($key, $type=null) {
         if ($type !== null) {
@@ -1175,7 +1194,7 @@ class navigation_node_collection implements IteratorAggregate, Countable {
      *
      * @param string|int $key  The key of the node we want to find.
      * @param int $type  One of navigation_node::TYPE_*.
-     * @return navigation_node|null
+     * @return navigation_node|false
      */
     public function find($key, $type=null) {
         if ($type !== null && array_key_exists($type, $this->orderedcollection) && array_key_exists($key, $this->orderedcollection[$type])) {
@@ -1950,7 +1969,7 @@ class global_navigation extends navigation_node {
      * @param int $categoryid The category id to load or null/0 to load all base level categories
      * @param bool $showbasecategories If set to true all base level categories will be loaded as well
      *        as the requested category and any parent categories.
-     * @return navigation_node|void returns a navigation node if a category has been loaded.
+     * @return true|void
      */
     protected function load_all_categories($categoryid = self::LOAD_ROOT_CATEGORIES, $showbasecategories = false) {
         global $CFG, $DB;
@@ -2283,10 +2302,10 @@ class global_navigation extends navigation_node {
                     null, $section->id, new pix_icon('i/section', ''));
                 $sectionnode->nodetype = navigation_node::NODETYPE_BRANCH;
                 $sectionnode->hidden = (!$section->visible || !$section->available);
+                $sectionnode->add_attribute('data-section-name-for', $section->id);
                 if ($this->includesectionnum !== false && $this->includesectionnum == $section->section) {
                     $this->load_section_activities($sectionnode, $section->section, $activities);
                 }
-                $section->sectionnode = $sectionnode;
                 $navigationsections[$sectionid] = $section;
             }
         }
@@ -2370,7 +2389,7 @@ class global_navigation extends navigation_node {
     /**
      * Loads a stealth module from unavailable section
      * @param navigation_node $coursenode
-     * @param stdClass $modinfo
+     * @param stdClass|course_modinfo $modinfo
      * @return navigation_node or null if not accessible
      */
     protected function load_stealth_activity(navigation_node $coursenode, $modinfo) {
@@ -2949,6 +2968,9 @@ class global_navigation extends navigation_node {
             }
         } else if (count($this->extendforuser) > 0) {
             $coursenode->add(get_string('participants'), null, self::TYPE_CONTAINER, get_string('participants'), 'participants');
+        } else if ($siteparticipantsnode = $this->rootnodes['site']->get('participants', self::TYPE_CUSTOM)) {
+            // The participants node was added for the site, but cannot be viewed inside the course itself, so remove.
+            $siteparticipantsnode->remove();
         }
 
         // Badges.
@@ -2976,6 +2998,18 @@ class global_navigation extends navigation_node {
             if ($this->page->context->contextlevel < CONTEXT_MODULE && strpos($this->page->pagetype, 'grade-') === 0) {
                 $gradenode->make_active();
             }
+        }
+
+        // Add link for configuring communication.
+        if ($navoptions->communication) {
+            $url = new moodle_url('/communication/configure.php', [
+                'contextid' => \core\context\course::instance($course->id)->id,
+                'instanceid' => $course->id,
+                'instancetype' => 'coursecommunication',
+                'component' => 'core_course',
+            ]);
+            $coursenode->add(get_string('communication', 'communication'), $url,
+                navigation_node::TYPE_SETTING, null, 'communication');
         }
 
         return true;
@@ -3174,7 +3208,7 @@ class global_navigation extends navigation_node {
      * may be of more use to you.
      *
      * @param string|int $key The key of the node you wish to receive.
-     * @param int $type One of navigation_node::TYPE_*
+     * @param ?int $type One of navigation_node::TYPE_*
      * @return navigation_node|false
      */
     public function find($key, $type) {
@@ -3625,7 +3659,7 @@ class navbar extends navigation_node {
         global $CFG;
         if (during_initial_install()) {
             $this->duringinstall = true;
-            return false;
+            return;
         }
         $this->page = $page;
         $this->text = get_string('home');
@@ -4143,7 +4177,7 @@ class flat_navigation extends navigation_node_collection {
      */
     public function __construct(moodle_page &$page) {
         if (during_initial_install()) {
-            return false;
+            return;
         }
         debugging("Flat navigation has been deprecated in favour of primary/secondary navigation concepts");
         $this->page = $page;
@@ -4238,8 +4272,8 @@ class flat_navigation extends navigation_node_collection {
 
             $addblockurl = "?{$url->get_query_string(false)}";
 
-            $PAGE->requires->js_call_amd('core/addblockmodal', 'init',
-                [$PAGE->pagetype, $PAGE->pagelayout, $addblockurl]);
+            $PAGE->requires->js_call_amd('core_block/add_modal', 'init',
+                [$addblockurl, $this->page->get_edited_page_hash()]);
         }
     }
 
@@ -4276,7 +4310,7 @@ class flat_navigation extends navigation_node_collection {
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class settings_navigation extends navigation_node {
-    /** @var stdClass the current context */
+    /** @var context the current context */
     protected $context;
     /** @var moodle_page the moodle page that the navigation belongs to */
     protected $page;
@@ -4296,7 +4330,7 @@ class settings_navigation extends navigation_node {
      */
     public function __construct(moodle_page &$page) {
         if (during_initial_install()) {
-            return false;
+            return;
         }
         $this->page = $page;
         // Initialise the main navigation. It is most important that this is done
@@ -4622,6 +4656,33 @@ class settings_navigation extends navigation_node {
             $coursenode->force_open();
         }
 
+        // MoodleNet links.
+        if ($this->page->user_is_editing()) {
+            $this->page->requires->js_call_amd('core/moodlenet/mutations', 'init');
+        }
+        $usercanshare = utilities::can_user_share($coursecontext, $USER->id, 'course');
+        $issuerid = get_config('moodlenet', 'oauthservice');
+        try {
+            $issuer = \core\oauth2\api::get_issuer($issuerid);
+            $isvalidinstance = utilities::is_valid_instance($issuer);
+            if ($usercanshare && $isvalidinstance) {
+                $this->page->requires->js_call_amd('core/moodlenet/send_resource', 'init');
+                $action = new action_link(new moodle_url(''), '', null, [
+                    'data-action' => 'sendtomoodlenet',
+                    'data-type' => 'course',
+                ]);
+                // Share course to MoodleNet link.
+                $coursenode->add(get_string('moodlenet:sharetomoodlenet', 'moodle'),
+                    $action, self::TYPE_SETTING, null, 'exportcoursetomoodlenet')->set_force_into_more_menu(true);
+                // MoodleNet share progress link.
+                $url = new moodle_url('/moodlenet/shareprogress.php');
+                $coursenode->add(get_string('moodlenet:shareprogress'),
+                    $url, self::TYPE_SETTING, null, 'moodlenetshareprogress')->set_force_into_more_menu(true);
+            }
+        } catch (dml_missing_record_exception $e) {
+            debugging("Invalid MoodleNet OAuth 2 service set in site administration: 'moodlenet | oauthservice'. " .
+                "This must be a valid issuer.");
+        }
 
         if ($adminoptions->update) {
             // Add the course settings link
@@ -4702,36 +4763,6 @@ class settings_navigation extends navigation_node {
             badges_add_course_navigation($coursenode, $course);
         }
 
-        // Import data from other courses.
-        if ($adminoptions->import) {
-            $url = new moodle_url('/backup/import.php', array('id' => $course->id));
-            $coursenode->add(get_string('import'), $url, self::TYPE_SETTING, null, 'import', new pix_icon('i/import', ''));
-        }
-
-        // Backup this course
-        if ($adminoptions->backup) {
-            $url = new moodle_url('/backup/backup.php', array('id'=>$course->id));
-            $coursenode->add(get_string('backup'), $url, self::TYPE_SETTING, null, 'backup', new pix_icon('i/backup', ''));
-        }
-
-        // Restore to this course
-        if ($adminoptions->restore) {
-            $url = new moodle_url('/backup/restorefile.php', array('contextid'=>$coursecontext->id));
-            $coursenode->add(get_string('restore'), $url, self::TYPE_SETTING, null, 'restore', new pix_icon('i/restore', ''));
-        }
-
-        // Copy this course.
-        if ($adminoptions->copy) {
-            $url = new moodle_url('/backup/copy.php', array('id' => $course->id));
-            $coursenode->add(get_string('copycourse'), $url, self::TYPE_SETTING, null, 'copy', new pix_icon('t/copy', ''));
-        }
-
-        // Reset this course
-        if ($adminoptions->reset) {
-            $url = new moodle_url('/course/reset.php', array('id'=>$course->id));
-            $coursenode->add(get_string('reset'), $url, self::TYPE_SETTING, null, 'reset', new pix_icon('i/return', ''));
-        }
-
         // Questions
         require_once($CFG->libdir . '/questionlib.php');
         question_extend_settings_navigation($coursenode, $coursecontext)->trim_if_empty();
@@ -4783,6 +4814,56 @@ class settings_navigation extends navigation_node {
             $coursenode->get('download')->set_force_into_more_menu(true);
         }
 
+        // Course reuse options.
+        if ($adminoptions->import
+                || $adminoptions->backup
+                || $adminoptions->restore
+                || $adminoptions->copy
+                || $adminoptions->reset) {
+            $coursereusenav = $coursenode->add(
+                get_string('coursereuse'),
+                new moodle_url('/backup/view.php', ['id' => $course->id]),
+                self::TYPE_CONTAINER, null, 'coursereuse', new pix_icon('t/edit', ''),
+            );
+
+            // Import data from other courses.
+            if ($adminoptions->import) {
+                $url = new moodle_url('/backup/import.php', ['id' => $course->id]);
+                $coursereusenav->add(get_string('import'), $url, self::TYPE_SETTING, null, 'import', new pix_icon('i/import', ''));
+            }
+
+            // Backup this course.
+            if ($adminoptions->backup) {
+                $url = new moodle_url('/backup/backup.php', ['id' => $course->id]);
+                $coursereusenav->add(get_string('backup'), $url, self::TYPE_SETTING, null, 'backup', new pix_icon('i/backup', ''));
+            }
+
+            // Restore to this course.
+            if ($adminoptions->restore) {
+                $url = new moodle_url('/backup/restorefile.php', ['contextid' => $coursecontext->id]);
+                $coursereusenav->add(
+                    get_string('restore'),
+                    $url,
+                    self::TYPE_SETTING,
+                    null,
+                    'restore',
+                    new pix_icon('i/restore', ''),
+                );
+            }
+
+            // Copy this course.
+            if ($adminoptions->copy) {
+                $url = new moodle_url('/backup/copy.php', ['id' => $course->id]);
+                $coursereusenav->add(get_string('copycourse'), $url, self::TYPE_SETTING, null, 'copy', new pix_icon('t/copy', ''));
+            }
+
+            // Reset this course.
+            if ($adminoptions->reset) {
+                $url = new moodle_url('/course/reset.php', ['id' => $course->id]);
+                $coursereusenav->add(get_string('reset'), $url, self::TYPE_SETTING, null, 'reset', new pix_icon('i/return', ''));
+            }
+        }
+
         // Return we are done
         return $coursenode;
     }
@@ -4808,7 +4889,7 @@ class settings_navigation extends navigation_node {
      * @return navigation_node|false
      */
     protected function load_module_settings() {
-        global $CFG;
+        global $CFG, $USER;
 
         if (!$this->page->cm && $this->context->contextlevel == CONTEXT_MODULE && $this->context->instanceid) {
             $cm = get_coursemodule_from_id(false, $this->context->instanceid, 0, false, MUST_EXIST);
@@ -4887,6 +4968,26 @@ class settings_navigation extends navigation_node {
         $function = $this->page->activityname.'_extend_settings_navigation';
         if (function_exists($function)) {
             $function($this, $modulenode);
+        }
+
+        // Send activity to MoodleNet.
+        $usercanshare = utilities::can_user_share($this->context->get_course_context(), $USER->id);
+        $issuerid = get_config('moodlenet', 'oauthservice');
+        try {
+            $issuer = \core\oauth2\api::get_issuer($issuerid);
+            $isvalidinstance = utilities::is_valid_instance($issuer);
+            if ($usercanshare && $isvalidinstance) {
+                $this->page->requires->js_call_amd('core/moodlenet/send_resource', 'init');
+                $action = new action_link(new moodle_url(''), '', null, [
+                    'data-action' => 'sendtomoodlenet',
+                    'data-type' => 'activity',
+                ]);
+                $modulenode->add(get_string('moodlenet:sharetomoodlenet', 'moodle'),
+                    $action, self::TYPE_SETTING, null, 'exportmoodlenet')->set_force_into_more_menu(true);
+            }
+        } catch (dml_missing_record_exception $e) {
+            debugging("Invalid MoodleNet OAuth 2 service set in site administration: 'moodlenet | oauthservice'. " .
+                "This must be a valid issuer.");
         }
 
         // Remove the module node if there are no children.
@@ -5656,18 +5757,6 @@ class settings_navigation extends navigation_node {
             }
         }
 
-        // Backup this course
-        if ($adminoptions->backup) {
-            $url = new moodle_url('/backup/backup.php', array('id'=>$course->id));
-            $frontpage->add(get_string('backup'), $url, self::TYPE_SETTING, null, 'backup', new pix_icon('i/backup', ''));
-        }
-
-        // Restore to this course
-        if ($adminoptions->restore) {
-            $url = new moodle_url('/backup/restorefile.php', array('contextid'=>$coursecontext->id));
-            $frontpage->add(get_string('restore'), $url, self::TYPE_SETTING, null, 'restore', new pix_icon('i/restore', ''));
-        }
-
         // Questions
         require_once($CFG->libdir . '/questionlib.php');
         question_extend_settings_navigation($frontpage, $coursecontext)->trim_if_empty();
@@ -5684,6 +5773,34 @@ class settings_navigation extends navigation_node {
         foreach ($pluginsfunction as $plugintype => $plugins) {
             foreach ($plugins as $pluginfunction) {
                 $pluginfunction($frontpage, $course, $coursecontext);
+            }
+        }
+
+        // Course reuse options.
+        if ($adminoptions->backup || $adminoptions->restore) {
+            $coursereusenav = $frontpage->add(
+                get_string('coursereuse'),
+                new moodle_url('/backup/view.php', ['id' => $course->id]),
+                self::TYPE_CONTAINER, null, 'coursereuse', new pix_icon('t/edit', ''),
+            );
+
+            // Backup this course.
+            if ($adminoptions->backup) {
+                $url = new moodle_url('/backup/backup.php', ['id' => $course->id]);
+                $coursereusenav->add(get_string('backup'), $url, self::TYPE_SETTING, null, 'backup', new pix_icon('i/backup', ''));
+            }
+
+            // Restore to this course.
+            if ($adminoptions->restore) {
+                $url = new moodle_url('/backup/restorefile.php', ['contextid' => $coursecontext->id]);
+                $coursereusenav->add(
+                    get_string('restore'),
+                    $url,
+                    self::TYPE_SETTING,
+                    null,
+                    'restore',
+                    new pix_icon('i/restore', ''),
+                );
             }
         }
 
@@ -5758,8 +5875,6 @@ class settings_navigation_ajax extends settings_navigation {
 
     /**
      * Initialise the site admin navigation.
-     *
-     * @return array An array of the expandable nodes
      */
     public function initialise() {
         if ($this->initialised || during_initial_install()) {
@@ -5882,10 +5997,9 @@ class navigation_json {
 }
 
 /**
- * The cache class used by global navigation and settings navigation.
+ * The navigation_cache class is used for global and settings navigation data.
  *
- * It is basically an easy access point to session with a bit of smarts to make
- * sure that the information that is cached is valid still.
+ * It provides an easy access to the session cache with TTL of 1800 seconds.
  *
  * Example use:
  * <code php>
@@ -5904,13 +6018,14 @@ class navigation_json {
 class navigation_cache {
     /** @var int represents the time created */
     protected $creation;
-    /** @var array An array of session keys */
-    protected $session;
+    /** @var cache_session The session cache instance */
+    protected $cache;
+    /** @var array The current cache area data */
+    protected $session = [];
+
     /**
-     * The string to use to segregate this particular cache. It can either be
-     * unique to start a fresh cache or if you want to share a cache then make
-     * it the string used in the original cache.
-     * @var string
+     * @var string A unique string to segregate this particular cache.
+     * It can either be unique to start a fresh cache or shared to use an existing cache.
      */
     protected $area;
     /** @var int a time that the information will time out */
@@ -5923,152 +6038,121 @@ class navigation_cache {
     const CACHEUSERID = 1;
     /** @var int cache value */
     const CACHEVALUE = 2;
-    /** @var null|array An array of navigation cache areas to expire on shutdown */
-    public static $volatilecaches;
+    /** @var null|array An array of cache areas to expire on shutdown */
+    public static $volatilecaches = null;
 
     /**
-     * Contructor for the cache. Requires two arguments
+     * Contructor for the cache. Requires a area string be passed in.
      *
-     * @param string $area The string to use to segregate this particular cache
-     *                it can either be unique to start a fresh cache or if you want
-     *                to share a cache then make it the string used in the original
-     *                cache
+     * @param string $area The unique string to segregate this particular cache.
      * @param int $timeout The number of seconds to time the information out after
      */
     public function __construct($area, $timeout=1800) {
+        global $USER;
         $this->creation = time();
-        $this->area = $area;
+        $this->area = "user_{$USER->id}_{$area}";
         $this->timeout = time() - $timeout;
-        if (rand(0,100) === 0) {
-            $this->garbage_collection();
-        }
+        $this->cache = cache::make('core', 'navigation_cache');
     }
 
     /**
-     * Used to set up the cache within the SESSION.
+     * Ensure the navigation cache is initialised
      *
-     * This is called for each access and ensure that we don't put anything into the session before
-     * it is required.
+     * This is called for each access and ensures that no data is put into the cache before it is required.
      */
-    protected function ensure_session_cache_initialised() {
-        global $SESSION;
+    protected function ensure_navigation_cache_initialised() {
         if (empty($this->session)) {
-            if (!isset($SESSION->navcache)) {
-                $SESSION->navcache = new stdClass;
+            $this->session = $this->cache->get($this->area);
+            if (!is_array($this->session)) {
+                $this->session = [];
             }
-            if (!isset($SESSION->navcache->{$this->area})) {
-                $SESSION->navcache->{$this->area} = array();
-            }
-            $this->session = &$SESSION->navcache->{$this->area}; // pointer to array, =& is correct here
         }
     }
 
     /**
-     * Magic Method to retrieve something by simply calling using = cache->key
+     * Magic Method to retrieve a cached item by simply calling using = cache->key
      *
-     * @param mixed $key The identifier for the information you want out again
-     * @return void|mixed Either void or what ever was put in
+     * @param mixed $key The identifier for the cached information
+     * @return mixed|void The cached information or void if not found
      */
     public function __get($key) {
         if (!$this->cached($key)) {
             return;
         }
-        $information = $this->session[$key][self::CACHEVALUE];
-        return unserialize($information);
+        return unserialize($this->session[$key][self::CACHEVALUE]);
     }
 
     /**
-     * Magic method that simply uses {@link set();} to store something in the cache
+     * Magic method that simply uses {@see navigation_cache::set()} to store an item in the cache
      *
-     * @param string|int $key
-     * @param mixed $information
+     * @param string|int $key The key to store the information against
+     * @param mixed $information The information to cache
      */
     public function __set($key, $information) {
         $this->set($key, $information);
     }
 
     /**
-     * Sets some information against the cache (session) for later retrieval
+     * Sets some information in the session cache for later retrieval
      *
      * @param string|int $key
      * @param mixed $information
      */
     public function set($key, $information) {
         global $USER;
-        $this->ensure_session_cache_initialised();
+        $this->ensure_navigation_cache_initialised();
         $information = serialize($information);
-        $this->session[$key]= array(self::CACHETIME=>time(), self::CACHEUSERID=>$USER->id, self::CACHEVALUE=>$information);
+        $this->session[$key] = [self::CACHETIME => time(), self::CACHEUSERID => $USER->id, self::CACHEVALUE => $information];
+        $this->cache->set($this->area, $this->session);
     }
     /**
      * Check the existence of the identifier in the cache
      *
-     * @param string|int $key
-     * @return bool
+     * @param string|int $key The identifier to check
+     * @return bool True if the item exists in the cache, false otherwise
      */
     public function cached($key) {
-        global $USER;
-        $this->ensure_session_cache_initialised();
-        if (!array_key_exists($key, $this->session) || !is_array($this->session[$key]) || $this->session[$key][self::CACHEUSERID]!=$USER->id || $this->session[$key][self::CACHETIME] < $this->timeout) {
-            return false;
-        }
-        return true;
+        $this->ensure_navigation_cache_initialised();
+        return isset($this->session[$key]) &&
+            is_array($this->session[$key]);
     }
     /**
      * Compare something to it's equivilant in the cache
      *
-     * @param string $key
-     * @param mixed $value
+     * @param string $key  The key to check
+     * @param mixed $value The value to compare
      * @param bool $serialise Whether to serialise the value before comparison
      *              this should only be set to false if the value is already
      *              serialised
-     * @return bool If the value is the same false if it is not set or doesn't match
+     * @return bool True if the value is the same as the cached one, false otherwise
      */
     public function compare($key, $value, $serialise = true) {
         if ($this->cached($key)) {
             if ($serialise) {
                 $value = serialize($value);
             }
-            if ($this->session[$key][self::CACHEVALUE] === $value) {
-                return true;
-            }
+            return $this->session[$key][self::CACHEVALUE] === $value;
         }
         return false;
     }
     /**
-     * Wipes the entire cache, good to force regeneration
+     * Deletes the entire cache area, forcing a fresh cache to be created
      */
     public function clear() {
-        global $SESSION;
-        unset($SESSION->navcache);
-        $this->session = null;
+        $this->cache->delete($this->area);
+        $this->session = [];
     }
     /**
-     * Checks all cache entries and removes any that have expired, good ole cleanup
-     */
-    protected function garbage_collection() {
-        if (empty($this->session)) {
-            return true;
-        }
-        foreach ($this->session as $key=>$cachedinfo) {
-            if (is_array($cachedinfo) && $cachedinfo[self::CACHETIME]<$this->timeout) {
-                unset($this->session[$key]);
-            }
-        }
-    }
-
-    /**
-     * Marks the cache as being volatile (likely to change)
+     * Marks the cache as volatile (likely to change)
      *
-     * Any caches marked as volatile will be destroyed at the on shutdown by
-     * {@link navigation_node::destroy_volatile_caches()} which is registered
-     * as a shutdown function if any caches are marked as volatile.
+     * Any caches marked as volatile will be destroyed on shutdown by {@see navigation_node::destroy_volatile_caches()}
      *
-     * @param bool $setting True to destroy the cache false not too
+     * @param bool $setting True to mark the cache as volatile, false to remove the volatile flag
      */
     public function volatile($setting = true) {
-        if (self::$volatilecaches===null) {
-            self::$volatilecaches = array();
-            core_shutdown_manager::register_function(array('navigation_cache','destroy_volatile_caches'));
+        if (self::$volatilecaches === null) {
+            self::$volatilecaches = [];
+            core_shutdown_manager::register_function(['navigation_cache', 'destroy_volatile_caches']);
         }
 
         if ($setting) {
@@ -6081,19 +6165,16 @@ class navigation_cache {
     /**
      * Destroys all caches marked as volatile
      *
-     * This function is static and works in conjunction with the static volatilecaches
-     * property of navigation cache.
-     * Because this function is static it manually resets the cached areas back to an
-     * empty array.
+     * This function is static and works with the static volatilecaches property of navigation cache.
+     * It manually resets the cached areas back to an empty array.
      */
     public static function destroy_volatile_caches() {
-        global $SESSION;
-        if (is_array(self::$volatilecaches) && count(self::$volatilecaches)>0) {
+        if (is_array(self::$volatilecaches) && count(self::$volatilecaches) > 0) {
+            $cache = cache::make('core', 'navigation_cache');
             foreach (self::$volatilecaches as $area) {
-                $SESSION->navcache->{$area} = array();
+                $cache->delete($area);
             }
-        } else {
-            $SESSION->navcache = new stdClass;
+            self::$volatilecaches = null;
         }
     }
 }

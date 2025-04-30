@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', version '4.1'.
+ * Strings for component 'glossary', language 'en', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -77,7 +77,7 @@ $string['cnfapprovalstatus'] = 'Define the approval status by default of an entr
 $string['cnfcasesensitive'] = 'Define if an entry, when linked, is case sensitive by default';
 $string['cnfdefaulthook'] = 'Select the default selection to show when the glossary is first viewed';
 $string['cnfdefaultmode'] = 'Select the default frame to show when the glossary is first viewed.';
-$string['cnffullmatch'] = 'Define if an entry, when linked, should match the case in the target text by default';
+$string['cnffullmatch'] = 'Define if an entry, when linked, should match whole words (and not words inside other words) by default.';
 $string['cnflinkentry'] = 'Define if an entry should be automatically linked by default';
 $string['cnflinkglossaries'] = 'Define if a glossary should be automatically linked by default';
 $string['cnfrelatedview'] = 'Select the display format to be used for automatic linking and entry view.';
@@ -92,7 +92,7 @@ $string['comments'] = 'Comments';
 $string['commentson'] = 'Comments on';
 $string['commentupdated'] = 'The comment has been updated.';
 $string['completiondetail:entries'] = 'Make entries: {$a}';
-$string['completionentries'] = 'Student must create entries:';
+$string['completionentries'] = 'Add entries';
 $string['completionentriesdesc'] = 'Student must create at least {$a} entry/entries';
 $string['completionentriesgroup'] = 'Require entries';
 $string['concept'] = 'Concept';
@@ -281,6 +281,7 @@ $string['page-mod-glossary-edit'] = 'Glossary add/edit entry page';
 $string['page-mod-glossary-view'] = 'View glossary edit page';
 $string['page-mod-glossary-x'] = 'Any glossary module page';
 $string['pendingapproval'] = 'Pending approval';
+$string['pendingapprovalcount'] = 'Pending approval ({$a})';
 $string['pluginadministration'] = 'Glossary administration';
 $string['pluginname'] = 'Glossary';
 $string['popupformat'] = 'Popup format';
@@ -334,7 +335,6 @@ $string['totalentries'] = 'Total entries';
 $string['usedynalink'] = 'Automatically link glossary entries';
 $string['usedynalink_help'] = 'If site-wide glossary auto-linking has been enabled by an administrator and this setting is enabled, the "Add a new entry" form includes the option to automatically link the entry wherever the concept words and phrases appear throughout the rest of the course.';
 $string['visibletabs'] = 'Visible tabs';
-$string['waitingapproval'] = 'Waiting approval';
 $string['warningstudentcapost'] = '(Applies only if the glossary is not the main one)';
 $string['withauthor'] = 'Concepts with author';
 $string['withoutauthor'] = 'Concepts without author';

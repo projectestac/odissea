@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ja', version '4.1'.
+ * Strings for component 'forum', language 'ja', version '4.4'.
  *
  * @package     forum
  * @category    string
@@ -44,6 +44,8 @@ $string['allsubscribe'] = 'すべてのフォーラムを購読する';
 $string['allunsubscribe'] = 'すべてのフォーラムの購読を解除する';
 $string['allusers'] = 'すべてのユーザ';
 $string['alreadyfirstpost'] = 'このディスカッションにはすでに最初の投稿があります。';
+$string['announcementsettings'] = 'デフォルトアナウンスメントフォーラム設定';
+$string['announcementsettings_help'] = 'この設定ではすべてのアナウンスメントフォーラムのデフォルトを定義します。';
 $string['anyfile'] = 'すべてのファイル';
 $string['areaattachment'] = '添付ファイル';
 $string['areapost'] = 'メッセージ';
@@ -64,6 +66,7 @@ $string['blockperiod_help'] = '指定された時間内に指定された投稿�
 $string['blockperioddisabled'] = 'ブロックしない';
 $string['blogforum'] = 'ブログフォーマットで表示される標準フォーラム';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
+$string['cachedef_forum_count_discussions'] = 'フォーラムディスカッションカウント';
 $string['cachedef_forum_is_tracked'] = 'ユーザのフォーラムトラッキングステータス';
 $string['calendardue'] = '{$a} が期限です。';
 $string['cancelreply'] = '返信をキャンセルする';
@@ -113,15 +116,16 @@ $string['closegrader'] = '評定者を閉じる';
 $string['completiondetail:discussions'] = 'ディスカッションを開始する: {$a}';
 $string['completiondetail:posts'] = 'フォーラム投稿を作成する: {$a}';
 $string['completiondetail:replies'] = '返信を投稿する: {$a}';
-$string['completiondiscussions'] = '学生はディスカッションを作成する必要があります:';
+$string['completiondiscussions'] = 'ディスカッションを開始する';
 $string['completiondiscussionsdesc'] = '学生は少なくとも {$a} 件のディスカッションを作成する必要があります。';
 $string['completiondiscussionsgroup'] = '必須ディスカッション数';
 $string['completiondiscussionshelp'] = '完了に必要なディスカッション数';
-$string['completionposts'] = '学生は次の件数のディスカッションまたは返信を投稿する必要があります:';
+$string['completionposts'] = 'ディスカッションを開始または投稿に返信する';
 $string['completionpostsdesc'] = '学生は少なくとも {$a} 件のディスカッションまたは返信を投稿する必要があります。';
 $string['completionpostsgroup'] = '必須投稿数';
 $string['completionpostshelp'] = '完了に必要なディスカッションまたは返信数';
-$string['completionreplies'] = '学生は次の件数の返信を投稿する必要があります:';
+$string['completionpostsinforums'] = 'フォーラム内投稿';
+$string['completionreplies'] = '投稿に返信する';
 $string['completionrepliesdesc'] = '学生は少なくとも {$a} 件の返信を投稿する必要があります。';
 $string['completionrepliesgroup'] = '必須返信数';
 $string['completionreplieshelp'] = '完了に必要な返信数';
@@ -257,6 +261,7 @@ $string['eventassessableuploaded'] = 'コンテンツが投稿されました。
 $string['eventcoursesearched'] = 'コースが検索されました。';
 $string['eventdiscussioncreated'] = 'ディスカッションが作成されました。';
 $string['eventdiscussiondeleted'] = 'ディスカッションが削除されました。';
+$string['eventdiscussionlockupdated'] = 'ディスカッションロックが更新されました。';
 $string['eventdiscussionmoved'] = 'ディスカッションが移動されました。';
 $string['eventdiscussionpinned'] = 'ディスカッションがピン留めされました。';
 $string['eventdiscussionsubscriptioncreated'] = 'ディスカッション購読が作成されました。';
@@ -264,6 +269,7 @@ $string['eventdiscussionsubscriptiondeleted'] = 'ディスカッション購読�
 $string['eventdiscussionunpinned'] = 'ディスカッションがピン留め解除されました。';
 $string['eventdiscussionupdated'] = 'ディスカッションが更新されました。';
 $string['eventdiscussionviewed'] = 'ディスカッションが閲覧されました。';
+$string['eventforumsubscriptionupdated'] = '購読モードが更新されました。';
 $string['eventpostcreated'] = '投稿が作成されました。';
 $string['eventpostdeleted'] = '投稿が削除されました。';
 $string['eventpostupdated'] = '投稿が更新されました。';
@@ -298,6 +304,7 @@ $string['forum:addinstance'] = '新しいフォーラムを追加する';
 $string['forum:addnews'] = 'アナウンスメントを追加する';
 $string['forum:addquestion'] = '質問を追加する';
 $string['forum:allowforcesubscribe'] = '強制購読を許可する';
+$string['forum:canmailnow'] = '編集時間遅延なしにQ&Aフォーラムに投稿できる';
 $string['forum:canoverridecutoff'] = '遮断日以降にフォーラムに投稿する';
 $string['forum:canoverridediscussionlock'] = 'ロックされたディスカッションに返信する';
 $string['forum:canposttomygroups'] = 'あなたがアクセスできるグループすべてに投稿する';
@@ -485,7 +492,8 @@ $string['noattachments'] = 'このフォーラムには添付ファイルがあ�
 $string['nodiscussions'] = 'このフォーラムにはまだディスカッショントピックはありません。';
 $string['nodiscussionsstartedby'] = '{$a} から開始されたディスカッションはありません。';
 $string['nodiscussionsstartedbyyou'] = 'あなたが開始したディスカッションはありません。';
-$string['noguestpost'] = '申し訳ございません、ゲストは投稿できません。';
+$string['noguestpost'] = 'ログインしたユーザのみこのフォーラムに投稿できます。';
+$string['noguestpost:title'] = 'ログインして続ける';
 $string['noguestsubscribe'] = '申し訳ございません、ゲストは購読できません。';
 $string['noguesttracking'] = '申し訳ございません、ゲストは未読管理オプションを設定できません。';
 $string['nomorepostscontaining'] = 'これ以上「 {$a} 」 を含んだ投稿はありません。';
@@ -544,9 +552,6 @@ $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'この投稿をコンテクスト内に表示する';
 $string['postisprivatereply'] = 'これはプライベート返信です (教師およびプライベート返信を閲覧できるケイパビリティのあるユーザのみ閲覧できます)。';
 $string['postmailinfo'] = 'これはウェブサイト {$a} に投稿されたメッセージのコピーです。';
-$string['postmailinfolink'] = 'これは {$a->coursename} に投稿されたメッセージのコピーです。
-
-返信するにはこのリンクをクリックしてください: {$a->replylink}';
 $string['postmailnow'] = '<p>この投稿はすべてのフォーラム購読者にすぐに送信されます。</p>';
 $string['postmailreply'] = '返信するにはこのリンクをクリックしてください: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';

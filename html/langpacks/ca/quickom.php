@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quickom', language 'ca', version '4.1'.
+ * Strings for component 'quickom', language 'ca', version '4.4'.
  *
  * @package     quickom
  * @category    string

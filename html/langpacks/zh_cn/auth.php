@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', version '4.1'.
+ * Strings for component 'auth', language 'zh_cn', version '4.4'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = '修改密码帮助';
 $string['auth_changepasswordhelp_expl'] = '当用户丢失了他们的 {$a} 密码后显示给他们的帮助信息。系统将会把此信息和<strong>修改密码地址</strong>一起显示给用户或用它来替代 Moodle 内部的修改密码机制。';
 $string['auth_changepasswordurl'] = '修改密码地址';
 $string['auth_changepasswordurl_expl'] = '设定一个当用户丢失了他们的 {$a} 密码时发给用户的地址。需要将<strong>使用标准修改密码页面</strong>设定为<strong>否</strong>。';
-$string['auth_changingemailaddress'] = '您已请求将Email地址由 {$a->oldemail} 变更为 {$a->newemail}。出于安全的考虑，服务器将自动向 {$a->newemail} 发送一封邮件，以确认它属于您。您只要访问邮件中的URL，Email地址会立刻更新。';
+$string['auth_changingemailaddress'] = '您已请求更改电子邮件地址，从{$a->oldemail}更改为{$a->newemail}。出于安全考虑，我们将以新地址向您发送电子邮件，以确认该地址属于您。您的电子邮件地址将在您打开该邮件中发送给您的URL后立即更新。确认链接将在<b>10分钟后过期</b>';
 $string['auth_common_settings'] = '公用设置';
 $string['auth_data_mapping'] = '数据映射';
 $string['auth_fieldlock'] = '锁定值';
@@ -45,6 +45,10 @@ $string['auth_fieldlocks_help'] = '<p>您可以锁定指定的用户数据字段
 <p>如果想要避免这个问题，可以考虑将锁定模式设定为“如果空则不锁定”。</p>';
 $string['auth_fieldmapping'] = '数据映射 ({$a})';
 $string['auth_invalidnewemailkey'] = '错误：URL 不正确，请完整拷贝后重试。';
+$string['auth_loginpasswordtoggle'] = '密码可见性切换';
+$string['auth_loginpasswordtoggle_desc'] = '在登录屏幕上的密码字段中添加一个图标，允许用户显示或隐藏他们输入的密码。';
+$string['auth_loginrecaptcha'] = '启用 reCAPTCHA 登录';
+$string['auth_loginrecaptcha_desc'] = '将视觉/音频确认表单元素添加到登录页面，这样可以降低不必要的登录尝试的风险。有关详细信息，请参阅 <a target=“_blank” href=“https://www.google.com/recaptcha”>Google reCAPTCHA</a>。';
 $string['auth_multiplehosts'] = '可以指定多个主机名或地址（如 host1.com;host2.com;host3.com 或 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx）';
 $string['auth_notconfigured'] = '认证方法{$a}尚未配置。';
 $string['auth_outofnewemailupdateattempts'] = '更改Email地址的许可次数已到，您的请求被取消。';

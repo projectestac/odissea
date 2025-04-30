@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'ru', version '4.1'.
+ * Strings for component 'countries', language 'ru', version '4.4'.
  *
  * @package     countries
  * @category    string
@@ -140,7 +140,7 @@ $string['JM'] = 'Ямайка';
 $string['JO'] = 'Иордания';
 $string['JP'] = 'Япония';
 $string['KE'] = 'Кения';
-$string['KG'] = 'Киргизстан';
+$string['KG'] = 'Кыргызстан';
 $string['KH'] = 'Камбоджа';
 $string['KI'] = 'Кирибати';
 $string['KM'] = 'Коморы';

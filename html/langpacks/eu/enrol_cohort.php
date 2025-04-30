@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'eu', version '4.1'.
+ * Strings for component 'enrol_cohort', language 'eu', version '4.4'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,6 +33,7 @@ $string['creategroup'] = 'Sortu talde berri bat';
 $string['defaultgroupnametext'] = '{$a->name} kohortea {$a->increment}';
 $string['enrolcohortsynctask'] = 'Kohorte bidezko matrikulazioen sinkronizazio ataza';
 $string['instanceexists'] = 'Kohortea dagoeneko sinkronizatu da aukeratutako rolarekin';
+$string['plugindisabled'] = 'Kohorte-sinkronizaziorako plugina desgaituta dago';
 $string['pluginname'] = 'Sinkronizatu kohortea';
 $string['pluginname_desc'] = 'Kohorteak matrikulatzeko pluginak kohorte jakin bateko partaideak ikastaroko partaideekin sinkronizatzen ditu.';
 $string['privacy:metadata:core_group'] = 'Kohorteak matrikulatzeko pluginak talde berri bat sortu edo existitzen den talde bat erabil dezake kohorteko partaideak bertara sartzeko.';

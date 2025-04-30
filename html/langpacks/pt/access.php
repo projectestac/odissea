@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'pt', version '4.1'.
+ * Strings for component 'access', language 'pt', version '4.4'.
  *
  * @package     access
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'Acessibilidade';
 $string['accesshelp'] = 'Ajuda sobre Acessibilidade';
-$string['accesskey'] = 'Tecla de acesso, {$a}';
-$string['accessstatement'] = 'Informação sobre acessibilidade';
+$string['accesskey'] = 'Chave de acesso, {$a}';
+$string['accessstatement'] = 'Declaração de acessibilidade';
 $string['activitynext'] = 'Atividade seguinte';
 $string['activityprev'] = 'Atividade anterior';
 $string['breadcrumb'] = 'Barra de navegação';
@@ -39,7 +39,7 @@ $string['showblocka'] = 'Mostrar bloco {$a}';
 $string['sitemap'] = 'Mapa do site';
 $string['skipa'] = 'Ignorar {$a}';
 $string['skipblock'] = 'Ignorar bloco';
-$string['skipnavigation'] = 'Ignorar ir para';
+$string['skipnavigation'] = 'Ignorar navegação';
 $string['skipto'] = 'Ir para {$a}';
 $string['tocontent'] = 'Ir para o conteúdo principal';
 $string['tonavigation'] = 'Ir para';

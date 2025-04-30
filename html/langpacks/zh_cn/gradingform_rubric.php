@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'zh_cn', version '4.1'.
+ * Strings for component 'gradingform_rubric', language 'zh_cn', version '4.4'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -87,7 +87,7 @@ $string['save'] = '保存';
 $string['saverubric'] = '保存量规并使其可用';
 $string['saverubricdraft'] = '保存为草稿';
 $string['scoreinputforlevel'] = '级别 {$a} 的分数输入';
-$string['scorepostfix'] = '{$a}分';
+$string['scorepostfix'] = '{$a} 分';
 $string['showdescriptionstudent'] = '向被评价者显示量规描述';
 $string['showdescriptionteacher'] = '在评价过程中显示量规描述';
 $string['showremarksstudent'] = '向被评价者显示标记';
@@ -96,3 +96,5 @@ $string['showscoreteacher'] = '在评价过程中显示每个级别的分数';
 $string['sortlevelsasc'] = '级别排序：';
 $string['sortlevelsasc0'] = '按分数降序';
 $string['sortlevelsasc1'] = '按分数升序';
+$string['zerolevelsabsent'] = '警告：这个题目的最低得分不是0；这可能会导致活动出现意想不到的分数。为了避免这种情况，每个标准应该有一个0点的级别。<br>
+如果使用刻度进行分级，则可以忽略此警告，并且标题中的最小级别对应于刻度的最小值。';

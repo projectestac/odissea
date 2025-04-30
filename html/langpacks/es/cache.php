@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', version '4.1'.
+ * Strings for component 'cache', language 'es', version '4.4'.
  *
  * @package     cache
  * @category    string
@@ -47,16 +47,17 @@ $string['cachedef_contentbank_enabled_extensions'] = 'Extensiones permitidas y s
 $string['cachedef_contextwithinsights'] = 'Contexto con intuiciones (predicciones)';
 $string['cachedef_course_image'] = 'Imágenes del curso';
 $string['cachedef_course_user_dates'] = 'Las fechas del usuario para cursos configurados al modo de fechas relativas';
+$string['cachedef_courseactionsinstances'] = 'Instancias de acciones de curso cargadas';
 $string['cachedef_coursecat'] = 'Listas de categorías de cursos para un usuario en particular';
 $string['cachedef_coursecatrecords'] = 'Registros de categorías de cursos';
 $string['cachedef_coursecattree'] = 'Árbol de categorías de cursos';
 $string['cachedef_coursecompletion'] = 'Estado de finalización del curso';
 $string['cachedef_coursecontacts'] = 'Lista de contactos del curso';
 $string['cachedef_courseeditorstate'] = 'El estado del curso de la sesión cachea claves para detectar cambios de curso en la parte del usuario.';
+$string['cachedef_coursehiddengroups'] = 'Número de grupos en un curso con visibilidad restringida';
 $string['cachedef_coursemodinfo'] = 'Información acumulada sobre los módulos y secciones para cada curso';
 $string['cachedef_coursesectionspreferences'] = 'Preferencias de sección de curso';
 $string['cachedef_databasemeta'] = 'Meta Información de Base de Datos';
-$string['cachedef_deprecatedcapabilities'] = 'Lista de capacidades deprecadas del sistema';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas de un usuario concreto';
 $string['cachedef_file_imageinfo'] = 'Información sobre imagen de archivo como por ejemplo dimensiones';
@@ -66,7 +67,9 @@ $string['cachedef_grade_letters'] = 'Consultas de calificaciones con letras';
 $string['cachedef_gradesetting'] = 'Configuración de calificación del curso';
 $string['cachedef_groupdata'] = 'Información de grupos del curso';
 $string['cachedef_h5p_content_type_translations'] = 'Traducciones de librerías de contenido H5P';
+$string['cachedef_h5p_libraries'] = 'Bibliotecas H5P';
 $string['cachedef_h5p_library_files'] = 'Archivos de librería H5P';
+$string['cachedef_hookcallbacks'] = 'Retrollamadas de hook';
 $string['cachedef_htmlpurifier'] = 'Depurador de HTML - Limpieza de contenido';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponibles';
 $string['cachedef_license'] = 'Lista de licencias';
@@ -74,6 +77,8 @@ $string['cachedef_locking'] = 'Bloqueando';
 $string['cachedef_message_processors_enabled'] = 'Estado habilitado de procesadores de mensaje';
 $string['cachedef_message_time_last_message_between_users'] = 'Hora de creación del mensaje más reciente en una conversación';
 $string['cachedef_modelfirstanalyses'] = 'Primer análisis por modelo y analizable';
+$string['cachedef_moodlenet_usercanshare'] = 'Los usuarios pueden compartir recursos en MoodleNet';
+$string['cachedef_navigation_cache'] = 'Caché de navegación';
 $string['cachedef_navigation_expandcourse'] = 'Cursos expandibles en la navegación';
 $string['cachedef_observers'] = 'Observadores del evento';
 $string['cachedef_plugin_functions'] = 'Llamadas de retorno disponibles de Plugins';
@@ -87,10 +92,11 @@ $string['cachedef_reportbuilder_allowed_reports'] = 'Usuarios que tiene permitid
 $string['cachedef_repositories'] = 'Datos de repositorios';
 $string['cachedef_roledefs'] = 'Definiciones de roles';
 $string['cachedef_string'] = 'Caché de cadenas de idioma';
-$string['cachedef_suspended_userids'] = 'Listado de usuarios suspendidos por curso';
+$string['cachedef_suspended_userids'] = 'Listado de usuarios expulsados por curso';
 $string['cachedef_tagindexbuilder'] = 'Resultados de la búsqueda de elementos etiquetados';
 $string['cachedef_tags'] = 'Etiquetas de colecciones y áreas';
 $string['cachedef_temp_tables'] = 'Tabla temporal de caché';
+$string['cachedef_theme_usedincontext'] = 'Se ha usado un tema en contexto para sobreescribir el tema por defecto';
 $string['cachedef_user_course_content_items'] = 'Elementos de contenido del usuario (actividades, recursos y sus subtipos) por curso';
 $string['cachedef_user_favourite_course_content_items'] = 'Elementos destacados del usuario';
 $string['cachedef_user_group_groupings'] = 'Grupos y agrupamientos de usuarios por curso';
@@ -122,7 +128,7 @@ $string['deletestoreconfirmation'] = '¿Está seguro de querer eliminar el almac
 $string['deletestorehasmappings'] = 'Usted no puede eliminar este almacén porque tiene mapeos. Por favor elimine todos los mapeos antes de eliminar el almacén.';
 $string['deletestoresuccess'] = 'Se eliminó exitosamente el almacén de caché';
 $string['editdefinitionmapping'] = 'Editar mapeo de definición';
-$string['editdefinitionmappings'] = 'Mapeos del almacén de definiciones {$a}';
+$string['editdefinitionmappings'] = 'Mapeos de almacén de definiciones {$a}';
 $string['editdefinitionsharing'] = 'Editar la definición de compartición para {$a}';
 $string['editmappings'] = 'Editar mapeos';
 $string['editsharing'] = 'Editar compartir';
@@ -141,8 +147,7 @@ $string['invalidstore'] = 'Almacén de caché proporcionado inválido';
 $string['localstorenotification'] = 'Esta caché puede ser mapeada con seguridad al almacenamiento local para cada servidor web';
 $string['lockdefault'] = 'Por defecto';
 $string['locking'] = 'Bloqueando';
-$string['locking_help'] = 'El bloqueo es un mecanismo que restringe el acceso a datos en caché a un proceso a la vez, previene que los datos se
-sobrescriban. El método de bloqueo determina cómo el bloqueo es adquirido y comprobado.';
+$string['locking_help'] = 'El bloqueo (locking) es un mecanismo que restringe el acceso a los datos cacheados a un proceso a la vez, para impedir que los datos se sobrescriban. El método de bloqueo determina como se adquiere el bloqueo y como se revisa.';
 $string['lockname'] = 'Nombre';
 $string['locknamedesc'] = 'El nombre debe ser único y sólo puede contener caracteres: a-z_A-Z';
 $string['locknamenotunique'] = 'El nombre elegido no es único. Elija un nombre diferente, por favor.';

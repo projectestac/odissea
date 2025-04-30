@@ -27,20 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir . '/behat/lib.php');
 require_once($CFG->dirroot . '/course/lib.php');
 
-// Added compatibility for PHP 7.4.
-if (!function_exists('str_contains')) {
-    function str_contains($haystack, $needle): bool {
-        return $needle !== '' && mb_strpos($haystack, $needle) !== false;
-    }
-}
-
-global $CFG;
-
 // Add block button in editing mode.
 $addblockbutton = $OUTPUT->addblockbutton();
-
-user_preference_allow_ajax_update('drawer-open-index', PARAM_BOOL);
-user_preference_allow_ajax_update('drawer-open-block', PARAM_BOOL);
 
 if (isloggedin()) {
     $courseindexopen = (get_user_preferences('drawer-open-index', true) == true);
@@ -50,7 +38,7 @@ if (isloggedin()) {
     $blockdraweropen = false;
 }
 
-if (defined('BEHAT_SITE_RUNNING')) {
+if (defined('BEHAT_SITE_RUNNING') && get_user_preferences('behat_keep_drawer_closed') != 1) {
     $blockdraweropen = true;
 }
 
@@ -60,11 +48,10 @@ if ($courseindexopen) {
 }
 
 $blockshtml = $OUTPUT->blocks('side-pre');
-$hasblocks = (str_contains($blockshtml, 'data-block=') || !empty($addblockbutton));
+$hasblocks = (strpos($blockshtml, 'data-block=') !== false || !empty($addblockbutton));
 if (!$hasblocks) {
     $blockdraweropen = false;
 }
-
 $courseindex = core_course_drawer();
 if (!$courseindex) {
     $courseindexopen = false;
@@ -72,8 +59,8 @@ if (!$courseindex) {
 
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $forceblockdraweropen = $OUTPUT->firstview_fakeblocks();
-$secondarynavigation = false;
 
+$secondarynavigation = false;
 $overflow = '';
 if ($PAGE->has_secondary_navigation()) {
     $tablistnav = $PAGE->has_tablist_secondary_navigation();

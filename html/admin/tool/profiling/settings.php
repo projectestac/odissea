@@ -25,12 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2012.08.20 @sarjona
-// 2018.05.26 @svallde2
-if (get_protected_agora()) {
-// ************ FI
-
 // Profiling tool, added to development.
 $hasextension = extension_loaded('tideways_xhprof');
 $hasextension = $hasextension || extension_loaded('tideways');
@@ -40,9 +34,3 @@ if ($hasextension && $isenabled) {
     $ADMIN->add('development', new admin_externalpage('toolprofiling', get_string('pluginname', 'tool_profiling'),
             "$CFG->wwwroot/$CFG->admin/tool/profiling/index.php", 'moodle/site:config'));
 }
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2012.08.20 @sarjona
-// 2018.05.26 @svallde2
-}
-// ************ FI

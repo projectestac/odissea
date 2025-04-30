@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'pt', version '4.1'.
+ * Strings for component 'tool_dataprivacy', language 'pt', version '4.4'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -30,9 +30,13 @@ $string['addcategory'] = 'Adicionar categoria';
 $string['addnewdefaults'] = 'Adicionar uma nova predefinição de módulo';
 $string['addpurpose'] = 'Adicionar finalidade';
 $string['addroleoverride'] = 'Adicionar exceção de papel';
+$string['allowfiltering'] = 'Permitir filtrar exportações por disciplina';
+$string['allowfiltering_desc'] = 'Se ativar esta opção, o responsável pela privacidade pode optar por exportar os dados do utilizador das disciplinas selecionadas em vez de todas as disciplinas. Quando esta funcionalidade estiver ativada, os pedidos de exportação começarão como \'Pendente\' e só poderão ser aprovados após a conclusão da tarefa em segundo plano.';
 $string['approve'] = 'Aprovar';
 $string['approvedrequestsubmitted'] = 'O seu pedido foi enviado e será processado em breve.';
 $string['approverequest'] = 'Aprovar pedido';
+$string['approverequestall'] = 'Aprovar pedido (todos os dados)';
+$string['approveselectedcourses'] = 'Aprovar disciplinas selecionadas';
 $string['automaticdatadeletionapproval'] = 'Aprovação automática das solicitações de eliminação de dados';
 $string['automaticdatadeletionapproval_desc'] = 'Se ativar esta opção, as solicitações de eliminação de dados são aprovadas automaticamente.<br/>Tenha em atenção que, com esta configuração ativada, a aprovação automática será aplicada apenas às novas solicitações de eliminação de dados. As solicitações de eliminação de dados existentes com aprovação pendente ainda terão que ser aprovadas manualmente pelo responsável pela privacidade.';
 $string['automaticdataexportapproval'] = 'Aprovação automática das solicitações de exportação de dados';
@@ -45,7 +49,7 @@ $string['cachedef_contextlevel'] = 'Finalidade e categoria dos níveis de contex
 $string['cachedef_purpose'] = 'Finalidade dos dados';
 $string['cachedef_purpose_overrides'] = 'Exceções de finalidade na ferramenta de privacidade de dados';
 $string['cancelrequest'] = 'Cancelar pedido';
-$string['cancelrequestconfirmation'] = 'Tem a certeza de que pretende cancelar este pedido?';
+$string['cancelrequestconfirmation'] = 'Pretende cancelar este pedido?';
 $string['cannotreset'] = 'Não é possível repor este pedido. Apenas os pedidos rejeitados podem ser repostos.';
 $string['categories'] = 'Categorias';
 $string['categorieslist'] = 'Lista de categorias';
@@ -153,6 +157,7 @@ $string['errorinvalidrequeststatus'] = 'Estado da solicitação inválido!';
 $string['errorinvalidrequesttype'] = 'Tipo de solicitação inválido!';
 $string['errornocapabilitytorequestforothers'] = 'O utilizador {$a->requestedby} não tem permissão para realizar a solicitação de dados em nome do utilizador {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Não existem contextos expirados para processar';
+$string['errornoselectedcourse'] = 'Tem de selecionar pelo menos uma disciplina';
 $string['errorrequestalreadyexists'] = 'Já existe uma solicitação em processamento.';
 $string['errorrequestnotfound'] = 'Pedido não encontrado';
 $string['errorrequestnotwaitingforapproval'] = 'A solicitação não está a aguardar aprovação. Ou ainda não está concluída ou já foi processada.';
@@ -169,6 +174,7 @@ $string['expiry'] = 'Expiração';
 $string['explanationtitle'] = 'Ícones usados nesta página e o respetivo significado.';
 $string['external'] = 'Adicional';
 $string['externalexplanation'] = 'Módulo adicional instalado neste site.';
+$string['filterexportdata'] = 'Aprovar pedido (dados das disciplinas selecionadas)';
 $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Página principal do site';
 $string['gdpr_art_6_1_a_description'] = 'O titular dos dados deu o seu consentimento para o tratamento dos seus dados pessoais para uma ou mais finalidades específicas';
@@ -226,6 +232,7 @@ $string['noassignedroles'] = 'Nenhum papel atribuído neste contexto';
 $string['noblockstoload'] = 'Sem blocos';
 $string['nocategories'] = 'Ainda não existem categorias';
 $string['nocoursestoload'] = 'Sem atividades';
+$string['nocoursetofilter'] = 'O utilizador não está inscrito em nenhuma disciplina para selecionar';
 $string['nodatarequests'] = 'Não existem solicitações de dados';
 $string['nodatarequestsmatchingfilter'] = 'Não exitem pedidos de dados correspondentes ao filtro indicado';
 $string['noexpiredcontexts'] = 'Este contexto não tem quaisquer dados cujo período de retenção já tenha expirado.';
@@ -287,6 +294,7 @@ $string['requesttype_help'] = 'Selecione o motivo pelo qual gostaria de contacta
 $string['requesttypedelete'] = 'Apagar todos os meus dados pessoais';
 $string['requesttypedeleteshort'] = 'Apagar';
 $string['requesttypeexport'] = 'Exportar todos os meus dados pessoais';
+$string['requesttypeexportallowfiltering'] = 'Exportar os meus dados pessoais';
 $string['requesttypeexportshort'] = 'Exportar';
 $string['requesttypeothers'] = 'Solicitação genérica';
 $string['requesttypeothersshort'] = 'Mensagem';
@@ -319,6 +327,7 @@ $string['roleoverride'] = 'Exceção de papel';
 $string['roleoverrideoverview'] = 'A política de retenção predefinida pode ser redefinida para utilizadores com papéis específicos, permitindo que especifique uma política de retenção mais ampla ou mais restrita. Um utilizador só expira quando todos os seus papéis expirarem.';
 $string['roleoverrides'] = 'Exceções de papel';
 $string['selectbulkaction'] = 'Por favor, selecione uma ação em massa.';
+$string['selectcourses'] = 'Selecione as disciplinas para exportar';
 $string['selectdatarequests'] = 'Por favor, selecione solicitações de dados.';
 $string['selectuserdatarequest'] = 'Selecione os pedidos de dados para {$a->requesttype} de {$a->username}.';
 $string['send'] = 'Enviar';
@@ -335,6 +344,7 @@ $string['statusdeleted'] = 'Apagado';
 $string['statusdetail'] = 'Estado:';
 $string['statusexpired'] = 'Expirado';
 $string['statuspending'] = 'Pendente';
+$string['statuspreprocessing'] = 'Em pré-processamento';
 $string['statusprocessing'] = 'Processamento';
 $string['statusready'] = 'Pronto para descarregar';
 $string['statusrejected'] = 'Rejeitado';

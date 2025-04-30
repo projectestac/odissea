@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'de', version '4.1'.
+ * Strings for component 'customcert', language 'de', version '4.4'.
  *
  * @package     customcert
  * @category    string
@@ -92,7 +92,7 @@ $string['elements_help'] = 'Dies ist die Liste der Elemente, die auf dem Zertifi
 
 Bitte beachten Sie: Die Elemente werden in dieser Reihenfolge gezeichnet. Die Reihenfolge kann mit den Pfeilen neben jedem Element verändert werden.';
 $string['elementwidth'] = 'Breite';
-$string['elementwidth_help'] = 'Geben Sie die Breite des Elementes an - \'0\' bedeutet keine Breitenbeschränkung.';
+$string['elementwidth_help'] = 'Geben Sie die Breite des Elementes an. Mit \'0\' wird die Breite automatisch berechnet..';
 $string['emailnonstudentbody'] = 'Anbei erhalten Sie das Zertifikat \'{$a->certificatename}\' für \'{$a->userfullname}\' aus dem Kurs \'{$a->coursefullname}\'.';
 $string['emailnonstudentbodyplaintext'] = 'Anbei erhalten Sie das Zertifikat \'{$a->certificatename}\' für \'{$a->userfullname}\' aus dem Kurs \'{$a->coursefullname}\'.';
 $string['emailnonstudentcertificatelinktext'] = 'Zertifikatsbericht anzeigen';

@@ -14,20 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-
-/**
- * external API for mobile web services
- *
- * @package    core_webservice
- * @category   external
- * @copyright  2011 Jerome Mouneyrac <jerome@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-defined('MOODLE_INTERNAL') || die;
-
-require_once("$CFG->libdir/externallib.php");
-
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
 /**
  * Web service related functions
  *
@@ -37,7 +27,7 @@ require_once("$CFG->libdir/externallib.php");
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since Moodle 2.2
  */
-class core_webservice_external extends external_api {
+class core_webservice_external extends \core_external\external_api {
 
     /**
      * Returns description of method parameters
@@ -85,7 +75,7 @@ class core_webservice_external extends external_api {
 
         // Site information.
         $siteinfo =  array(
-            'sitename' => external_format_string($SITE->fullname, $systemcontext),
+            'sitename' => \core_external\util::format_string($SITE->fullname, $systemcontext),
             'siteurl' => $CFG->wwwroot,
             'username' => $USER->username,
             'firstname' => $USER->firstname,
@@ -152,9 +142,8 @@ class core_webservice_external extends external_api {
                         $version = $componentversions[$function->component];
                     }
                 } else {
-                    // Function component should always have a version.php,
-                    // otherwise the function should have been described with component => 'moodle'.
-                    throw new moodle_exception('missingversionfile', 'webservice', '', $function->component);
+                    // Ignore this component or plugin, it was probably incorrectly uninstalled.
+                    continue;
                 }
             }
             $functioninfo['version'] = $version;
@@ -167,8 +156,9 @@ class core_webservice_external extends external_api {
         $siteinfo['mobilecssurl'] = !empty($CFG->mobilecssurl) ? $CFG->mobilecssurl : '';
 
         // Retrieve some advanced features. Only enable/disable ones (bool).
-        $advancedfeatures = array("usecomments", "usetags", "enablenotes", "messaging", "enableblogs",
-                                    "enablecompletion", "enablebadges", "messagingallusers", "enablecustomreports");
+        $advancedfeatures = ["usecomments", "usetags", "enablenotes", "messaging", "enableblogs",
+            "enablecompletion", "enablebadges", "messagingallusers", "enablecustomreports", "enableglobalsearch"];
+
         foreach ($advancedfeatures as $feature) {
             if (isset($CFG->{$feature})) {
                 $siteinfo['advancedfeatures'][] = array(
@@ -182,6 +172,12 @@ class core_webservice_external extends external_api {
             'name' => 'mnet_dispatcher_mode',
             'value' => ($CFG->mnet_dispatcher_mode == 'strict') ? 1 : 0
         );
+        // Competencies.
+        $enablecompetencies = get_config('core_competency', 'enabled');
+        $siteinfo['advancedfeatures'][] = [
+            'name' => 'enablecompetencies',
+            'value' => (!empty($enablecompetencies)) ? 1 : 0,
+        ];
 
         // User can manage own files.
         $siteinfo['usercanmanageownfiles'] = has_capability('moodle/user:manageownfiles', $context);
@@ -219,6 +215,8 @@ class core_webservice_external extends external_api {
             // For performance, only when enabled.
             $siteinfo['usersessionscount'] = $DB->count_records('sessions', ['userid' => $USER->id]);
         }
+
+        $siteinfo['policyagreed'] = $USER->policyagreed;
 
         return $siteinfo;
     }
@@ -292,6 +290,7 @@ class core_webservice_external extends external_api {
                 'limitconcurrentlogins' => new external_value(PARAM_INT, 'Number of concurrent sessions allowed', VALUE_OPTIONAL),
                 'usersessionscount' => new external_value(PARAM_INT, 'Number of active sessions for current user.
                     Only returned when limitconcurrentlogins is used.', VALUE_OPTIONAL),
+                'policyagreed' => new external_value(PARAM_INT, 'Whether user accepted all the policies.', VALUE_OPTIONAL),
             )
         );
     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_wikimedia', language 'es', version '4.1'.
+ * Strings for component 'repository_wikimedia', language 'es', version '4.4'.
  *
  * @package     repository_wikimedia
  * @category    string

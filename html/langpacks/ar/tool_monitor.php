@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ar', version '4.1'.
+ * Strings for component 'tool_monitor', language 'ar', version '4.4'.
  *
  * @package     tool_monitor
  * @category    string
@@ -33,6 +33,7 @@ $string['areatomonitor'] = 'منطقة المراقبة';
 $string['cachedef_eventsubscriptions'] = 'هذا يخزن قائمة اشتراكات الحدث للمساقات الفردية';
 $string['contactadmin'] = 'اتصل بالمسؤول الخاص بك لتمكينها.';
 $string['core'] = 'النواة';
+$string['coresubsystem'] = 'النظام الفرعي ({$a})';
 $string['currentsubscriptions'] = 'اشتراكاتك الحالية';
 $string['defaultmessagetemplate'] = 'اسم القاعدة: {rulename}
 الوصف: {description}
@@ -70,9 +71,12 @@ $string['messagetemplate_help'] = 'يتم إرسال رسالة إشعار إل�
 
 * رابط إلى موقع الحدث {link}
 * رابط إلى المنطقة المراقبة {modulelink}
+* اسم وحدة المساق {modulename}
 * اسم القاعدة {rulename}
 * الوصف {description}
-* الحدث {eventname}';
+* الحدث {eventname}
+* الاسم الكامل للمساق {coursefullname}
+* الاسم المختصر للمساق {courseshortname}';
 $string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'العينة';
 $string['monitor:managerules'] = 'إدارة قواعد مراقبة الحدث';

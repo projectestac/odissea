@@ -64,7 +64,7 @@ class course_output implements \renderable, \templatable {
      * Course Module IDs for which modal windows should be used.
      * @var array of CM IDs
      */
-    private $modalscmids;
+    private array $modalscmids;
 
     /**
      * User's device type e.g. DEVICE_TYPE_MOBILE ('mobile')
@@ -120,11 +120,10 @@ class course_output implements \renderable, \templatable {
     private $moodlerelease;
 
     /**
-     * Is this Moodle release 4.0.0 - 4.0.2?
+     * Whether we are using javascript animated navigation.
      * @var bool
      */
-    private $ismoodle402minus;
-
+    private $usingjsnav;
 
     /**
      * Identifier of the standard tile style (see settings.php).
@@ -143,7 +142,7 @@ class course_output implements \renderable, \templatable {
      * @param int|null $sectionnum the id of the current section.
      * @param \renderer_base|null $courserenderer the course renderer.
      */
-    public function __construct($course, $fromajax = false, $sectionnum = null, \renderer_base $courserenderer = null) {
+    public function __construct($course, $fromajax = false, $sectionnum = null, \renderer_base|null $courserenderer = null) {
         $this->course = $course;
         $this->fromajax = $fromajax;
         $this->sectionnum = $sectionnum;
@@ -167,7 +166,8 @@ class course_output implements \renderable, \templatable {
         $this->courseformatoptions = $this->get_course_format_options($this->fromajax);
 
         $this->moodlerelease = util::get_moodle_release();
-        $this->ismoodle402minus = $this->moodlerelease === 4.0 && util::is_moodle_402_minus();
+
+        $this->usingjsnav = \format_tiles\local\util::using_js_nav();
     }
 
     /**
@@ -189,12 +189,15 @@ class course_output implements \renderable, \templatable {
                 // Issue #153 avoid multiple glossary auto link JS onclick events.
                 $PAGE->requires->should_create_one_time_item_now('filter_glossary_autolinker');
 
-            } catch (\Exception $e) {
+            } catch (\Exception) {
                 debugging('Could not set glossary autolink created', DEBUG_DEVELOPER);
             }
         }
         $data = $this->get_basic_data();
-        $data = $this->append_section_zero_data($data, $output);
+        if (!$this->sectionnum) {
+            $data = $this->append_section_zero_data($data, $output);
+        }
+
         // We have assembled the "common data" needed for both single and multiple section pages.
         // Now we can go off and get the specific data for the single or multiple page as required.
         if ($this->sectionnum !== null) {
@@ -226,23 +229,23 @@ class course_output implements \renderable, \templatable {
         $data['istrackeduser'] = $this->completionenabled && $this->completioninfo->is_tracked_user($USER->id);
         $data['from_ajax'] = $this->fromajax;
         $data['ismobile'] = $this->devicetype == \core_useragent::DEVICETYPE_MOBILE;
-        if (isset($SESSION->format_tiles_jssuccessfullyused)) {
-            // If this flag is set, user is being shown JS versions of pages.
-            // Allow them to cancel the session var if they have no JS.
-            $data['showJScancelLink'] = 1;
-        } else {
-            $data['showJScancelLink'] = 0;
-        }
+        // If this session flag is set, user is being shown JS versions of pages.
+        // Allow them to cancel the session var if they have no JS.
+        $data['showJScancelLink'] = isset($SESSION->format_tiles_jssuccessfullyused) ? 1 : 0;
         $data['editing'] = $this->isediting;
         $data['sesskey'] = sesskey();
         $data['showinitialpageloadingicon'] = !$this->isediting
             && \format_tiles\local\dynamic_styles::page_needs_loading_icon($this->course->id);
         $data['jsnavadminallowed'] = get_config('format_tiles', 'usejavascriptnav');
+        $data['usingjsnav'] = $this->usingjsnav ? 1 : 0;
         $data['jsnavuserenabled'] = !get_user_preferences('format_tiles_stopjsnav');
-        $data['usingjsnav'] = $data['jsnavadminallowed'] && $data['jsnavuserenabled'];
+        $data['abovetilescontrols'] = $this->get_above_tiles_controls($data['jsnavadminallowed'], $data['usingjsnav']);
+        $data['hasabovetilescontrols'] = !empty($data['abovetilescontrols']);
 
         $data['useSubtiles'] = get_config('format_tiles', 'allowsubtilesview') && $this->courseformatoptions['courseusesubtiles'];
         $data['usetooltips'] = get_config('format_tiles', 'usetooltips');
+        $data['outerextraclasses'] = get_config('format_tiles', 'subtileiconcolourbackground')
+            ? 'format-tiles-colour-subtile-icon-bg' : '';
 
         foreach ($this->courseformatoptions as $k => $v) {
             $data[$k] = $v;
@@ -262,7 +265,7 @@ class course_output implements \renderable, \templatable {
                 'icon' => 'exclamation-triangle', 'class' => 'warning',
             ];
         }
-        $data['ismoodle42minus'] = $this->ismoodle402minus;
+        $data['singlesectionnum'] = $this->sectionnum;
         return $data;
     }
 
@@ -284,25 +287,27 @@ class course_output implements \renderable, \templatable {
     /**
      * Temporary function for Moodle 4.0 upgrade - todo to be replaced.
      * @param object $section
-     * @return string|bool
+     * @return string|null
      * @throws \coding_exception
      */
-    private function temp_section_activity_summary($section) {
+    private function temp_section_activity_summary($section): ?string {
         $widgetclass = $this->format->get_output_classname('content\\section\\cmsummary');
         $widget = new $widgetclass($this->format, $section);
-        return $this->courserenderer->render($widget);
+        $result = $this->courserenderer->render($widget);
+        return trim(strip_tags($result)) ? $result : null;
     }
 
     /**
      * Temporary function for Moodle 4.0 upgrade - todo to be replaced.
      * @param object $section
-     * @return bool|string
+     * @return string|null
      * @throws \coding_exception
      */
-    private function temp_section_availability_message($section) {
+    private function temp_section_availability_message($section): ?string {
         $widgetclass = $this->format->get_output_classname('content\\section\\availability');
         $widget = new $widgetclass($this->format, $section);
-        return $this->courserenderer->render($widget);
+        $result = $this->courserenderer->render($widget);
+        return trim(strip_tags($result)) ? $result : null;
     }
 
     /**
@@ -438,6 +443,8 @@ class course_output implements \renderable, \templatable {
         $data['tileid'] = $thissection->section;
         $data['secid'] = $thissection->id;
         $data['tileicon'] = format_option::get($this->course->id, format_option::OPTION_SECTION_ICON, $thissection->id);
+        $data['tilenumber'] = $data['tileicon'] ? util::get_tile_number_from_icon_name($data['tileicon']) : null;
+        $data['current'] = $this->format->is_section_current($thissection);
 
         // If photo tile backgrounds are allowed by site admin, prepare the image for this section.
         if (get_config('format_tiles', 'allowphototiles')) {
@@ -481,6 +488,7 @@ class course_output implements \renderable, \templatable {
         if ($this->canviewhidden) {
             $data['availabilitymessage'] = self::temp_section_availability_message($thissection);
         }
+        $data['isdelegatedsection'] = $this->moodlerelease >= 4.5 && ($thissection->is_delegated() ?? false);
         return $data;
     }
 
@@ -570,12 +578,19 @@ class course_output implements \renderable, \templatable {
             $isphototile = $allowedphototiles && in_array($section->id, $phototileids);
             $showsection = $section->uservisible ||
                 ($section->visible && !$section->available && !empty($section->availableinfo));
-            if ($sectionnum != 0 && $showsection) {
+            $isdelegated = $this->moodlerelease >= 4.5 && ($section->is_delegated() ?? false);
+            if ($sectionnum != 0 && $showsection && !$isdelegated) {
+                $rawtitle = $this->truncate_title(get_section_name($this->course, $sectionnum));
                 if ($uselinebreakfilter) {
-                    $title = $this->apply_linebreak_filter($this->truncate_title(get_section_name($this->course, $sectionnum)));
+                    $title = $this->apply_linebreak_filter($rawtitle);
                 } else {
-                    $title = format_string($this->truncate_title(get_section_name($this->course, $sectionnum)));
+                    $title = format_string($rawtitle);
                 }
+                $ariatitle = get_string('tilearialabel', 'format_tiles',
+                    trim($title)
+                        ? $title
+                        : get_string('tilearialabel', 'format_tiles', $this->format->get_default_section_name($section))
+                );
                 if ($allowedphototiles && $tilestyle == self::TILE_STYLE_BOTTOM_TITLE && $isphototile) {
                     // Replace the last space with &nbsp; to avoid having one word on the last line of the tile title.
                     $title = preg_replace('/\s(\S*)$/', '&nbsp;$1', $title);
@@ -587,19 +602,22 @@ class course_output implements \renderable, \templatable {
                     'tileid' => $section->section,
                     'secid' => $section->id,
                     'title' => $title,
-                    'tilearialabel' => get_string('tilearialabel', 'format_tiles', $title),
+                    'tilearialabel' => $ariatitle,
                     'tileicon' => format_option::get($this->course->id, format_option::OPTION_SECTION_ICON, $section->id),
                     'current' => course_get_format($this->course)->is_section_current($section),
                     'hidden' => !$section->visible,
                     'visible' => $section->visible,
                     'restrictionlock' => !($section->available),
                     'userclickable' => $section->available || $section->uservisible,
-                    'activity_summary' => self::temp_section_activity_summary($section),
+                    'activity_summary' => $data['usetooltips'] ? self::temp_section_activity_summary($section) : '',
                     'titleclass' => strlen($title) >= $longtitlelength ? ' longtitle' : '',
                     'progress' => false,
                     'isactive' => $this->course->marker == $section->section,
                     'extraclasses' => "tilestyle-$tilestyle ",
+                    'isdelegated' => $isdelegated,
                 ];
+
+                $newtile['tilenumber'] = $newtile['tileicon'] ? util::get_tile_number_from_icon_name($newtile['tileicon']) : null;
 
                 // If photo tile backgrounds are allowed by site admin, prepare them for this tile.
                 if ($isphototile) {
@@ -773,7 +791,7 @@ class course_output implements \renderable, \templatable {
 
     /**
      * Gets the data (context) to be used with the activityinstance template
-     * @param object $section the section object we want content for
+     * @param \section_info $section the section object we want content for
      * @param \renderer_base $output
      * @see \cm_info for full detail of $mod instance variables
      * @see \core_completion\manager::get_activities() which covers similar ground
@@ -823,7 +841,7 @@ class course_output implements \renderable, \templatable {
     /**
      * Assemble and return the data to render a single course module.
      * @param \cm_info $mod
-     * @param object $section
+     * @param \section_info $section
      * @param bool $previouswaslabel
      * @param bool $isfirst
      * @param \renderer_base $output
@@ -886,48 +904,36 @@ class course_output implements \renderable, \templatable {
         if (isset($mod->instance)) {
             $moduleobject['modinstance'] = $mod->instance;
         }
-        if ($mod->modname == 'resource') {
-            $moduleobject['modresourceicon'] = $this->moodlerelease == 4.0
-                ? util::get_mod_resource_icon_name_legacy($mod->context->id)
-                : util::get_mod_resource_type($mod->icon);
-        } else {
-            $moduleobject['modresourceicon'] = null;
-        }
+        $moduleobject['modresourceicon'] = $mod->modname == 'resource'
+            ? util::get_mod_resource_type($mod->icon) : null;
 
         if (!$treataslabel) {
             $iconclass = '';
-            if ($mod->modname == 'resource' && $this->moodlerelease <= 4.2) {
-                // We may want to use a specific icon instead like PDF.
-                // In Moodle 4.3+ this is not needed as core does it.
-                $unknownicons = ['dat'];
-                if (in_array($moduleobject['modresourceicon'], $unknownicons)) {
-                    $moduleobject['modresourceicon'] = 'unknown';
-                }
-                $filepath = "$CFG->dirroot/course/format/tiles/pix/resource_subtile/"
-                    . $moduleobject['modresourceicon'] . ".svg";
-                if (file_exists($filepath)) {
-                    $modiconurl = $output->image_url(
-                        "resource_subtile/" . $moduleobject['modresourceicon'], 'format_tiles'
-                    );
+            $modiconurl = $mod->get_icon_url($output);
+            if (!\core_component::has_monologo_icon('mod', $mod->modname)) {
+                if ($mod->modname == 'customcert') {
+                    // Temporary icon for mod_customcert where monologo not yet implemented (their issue #568).
+                    $modiconurl = $output->image_url('tileicon/award-solid', 'format_tiles');
                 } else {
-                    $modiconurl = $mod->get_icon_url($output);
-                    // Stop unsupported icons appearing as a white box.
+                    // Use the mod's legacy icon but with no filtering.
                     $iconclass = 'nofilter';
                 }
-            } else if ($mod->modname == 'customcert') {
-                // Temporary icon for mod_customcert.
-                $modiconurl = $output->image_url('tileicon/award-solid', 'format_tiles');
-            } else if (in_array($moduleobject['modresourceicon'], ['video', 'audio'])) {
-                // Override icon with local version.
-                $modiconurl = $output->image_url(
-                    'resource_subtile/' . $moduleobject['modresourceicon'],
-                    'format_tiles'
-                );
-            } else {
-                $modiconurl = $mod->get_icon_url($output);
             }
-            $needslargeicon = in_array($moduleobject['modresourceicon'], ['pdf', 'doc', 'ppt', 'xls', 'html']);
-            $iconclass = $needslargeicon ? "$iconclass format-tiles-large-activity-icon" : $iconclass;
+
+            // No filter icons.  Big blue button has a coloured monologo which cannot be filtered.
+            $nofiltericons = ['bigbluebuttonbn'];
+            if (in_array($mod->modname, $nofiltericons)) {
+                $iconclass = 'nofilter';
+            }
+
+            // Turnitin logo is too small and blurry on subtiles and wrong colour.
+            if ($mod->modname === 'turnitintooltwo' && $this->courseformatoptions['courseusesubtiles']) {
+                if (file_exists("$CFG->dirroot/mod/turnitintooltwo/pix/tii-icon.png")) {
+                    $modiconurl = $output->image_url('tii-icon', 'turnitintooltwo');
+                    $iconclass = '';
+                }
+            }
+
             $moduleobject['icon'] = [
                 'url' => $modiconurl,
                 'label' => $moduleobject['activityname'],
@@ -1002,8 +1008,7 @@ class course_output implements \renderable, \templatable {
                     rebuild_course_cache($mod->course, true);
                 }
             }
-        }
-        if ($mod->modname == 'url') {
+        } else if ($mod->modname == 'url') {
             $externalurl = $DB->get_field('url', 'externalurl', ['id' => $mod->instance]);
             $modifiedvideourl = self::check_modify_embedded_url($externalurl);
 
@@ -1015,11 +1020,13 @@ class course_output implements \renderable, \templatable {
                     $moduleobject['modnameDisplay'] = $videostring;
                 }
                 $moduleobject['icon'] = [
-                    'url' => $output->image_url("resource_subtile/mp4", 'format_tiles'),
+                    'url' => $output->image_url("play", 'format_tiles'),
                     'label' => $videostring,
                 ];
             }
         }
+
+        $moduleobject['issubsection'] = $mod->modname == 'subsection';
 
         if (
             ($mod->modname === 'url' || $mod->modname === 'resource')
@@ -1031,7 +1038,8 @@ class course_output implements \renderable, \templatable {
         }
 
         // Now completion information for the individual course module.
-        $completion = $mod->completion && $this->completioninfo && $this->completioninfo->is_enabled($mod) && $mod->available;
+        $completion = $mod->completion && $this->completioninfo && $this->completioninfo->is_enabled($mod)
+            && $mod->available && $mod->modname !== 'subsection';
         if ($completion) {
             // Add completion icon to the course module if appropriate.
             $moduleobject['hascompletion'] = true;
@@ -1072,17 +1080,6 @@ class course_output implements \renderable, \templatable {
                 }
             }
         }
-        if ($this->ismoodle402minus) {
-            // Convert the icon array into two separate props, if it's a non-sub-tile.
-            if (isset($moduleobject['icon'])) {
-                $issubtile = $this->courseformatoptions['courseusesubtiles']
-                    && ($section->section != 0 || $this->courseformatoptions['usesubtilesseczero']);
-                if (!$issubtile) {
-                    $moduleobject['iconclass'] = $moduleobject['icon']['iconclass'];
-                    $moduleobject['icon'] = $moduleobject['icon']['url'];
-                }
-            }
-        }
         return $moduleobject;
     }
 
@@ -1095,7 +1092,7 @@ class course_output implements \renderable, \templatable {
         $visiblesectionnums = [];
         $currentsectionarrayindex = -1;
         foreach ($this->modinfo->get_section_info_all() as $section) {
-            if ($section->section == 0) {
+            if ($section->section == 0 || ($this->moodlerelease >= 4.5 && $section->is_delegated())) {
                 continue;
             }
             if ($section->uservisible) {
@@ -1133,6 +1130,13 @@ class course_output implements \renderable, \templatable {
             'isComplete' => $numcomplete > 0 && $numcomplete == $numoutof ? 1 : 0,
             'isOverall' => $isoverall,
         ];
+        if ($numoutof && $numcomplete < $numoutof) {
+            $progressdata['progresstitle'] = get_string(
+                'progresstitle',
+                'format_tiles',
+                (object)$progressdata
+            );
+        }
         if ($aspercent) {
             // Percent in circle.
             $progressdata['showAsPercent'] = true;
@@ -1206,5 +1210,39 @@ class course_output implements \renderable, \templatable {
             }
         }
         return false;
+    }
+
+    /**
+     * Get an array of the controls to show above the tiles e.g. high contrast mode.
+     * @param bool $jsnavadminallowed
+     * @param bool $usingjsnav
+     * @return array
+     * @throws \coding_exception
+     * @throws \dml_exception|\moodle_exception
+     */
+    public function get_above_tiles_controls(bool $jsnavadminallowed, bool $usingjsnav): array {
+        $controls = [];
+        $courseurl = '/course/view.php';
+        $courseurlparams = ['id' => $this->course->id, 'sesskey' => sesskey()];
+        if ($jsnavadminallowed) {
+            $controls[] = [
+                'url' => new \moodle_url($courseurl, array_merge($courseurlparams, ['format-tiles-action' => 'toggleanimatednav'])),
+                'label' => get_string('jsactivate', 'format_tiles'),
+                'iconname' => $usingjsnav ? 'toggle-on' : 'toggle-off',
+                'icontitle' => get_string($usingjsnav ? 'on' : 'off', 'format_tiles'),
+            ];
+        }
+        if (get_config('format_tiles', 'highcontrastmodeallow')) {
+            $usehighcontrast = \format_tiles\local\util::using_high_contrast();
+            $controls[] = [
+                'url' => new \moodle_url(
+                    $courseurl, array_merge($courseurlparams, ['format-tiles-action' => 'togglehighcontrast'])
+                ),
+                'label' => get_string('highcontrastmode', 'format_tiles'),
+                'iconname' => $usehighcontrast ? 'toggle-on' : 'toggle-off',
+                'icontitle' => get_string($usehighcontrast ? 'on' : 'off', 'format_tiles'),
+            ];
+        }
+        return $controls;
     }
 }

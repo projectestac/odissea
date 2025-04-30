@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', version '4.1'.
+ * Strings for component 'cohort', language 'ja', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'コーホートメンバ';
 $string['cohorts'] = 'コーホート';
 $string['cohortsin'] = '{$a}: 利用可能なコーホート';
 $string['component'] = 'ソース';
+$string['contextcohortnotallowed'] = 'このコンテクストでコーホート <b>{$a}</b> は許可されません。';
 $string['contextnotfound'] = 'コンテクスト <b>{$a}</b> が見つからないか、あなたにはコーホートを作成するためのパーミッションがありません。デフォルトコンテクストが使用されます。';
 $string['csvcontainserrors'] = 'CSVデータにエラーが見つかりました。詳細は以下をご覧ください。';
 $string['csvcontainswarnings'] = 'CSVデータに警告が見つかりました。詳細は以下をご覧ください。';
@@ -48,7 +49,7 @@ $string['currentusers'] = '現在のユーザ';
 $string['currentusersmatching'] = '既存ユーザとの合致';
 $string['defaultcontext'] = 'デフォルトコンテクスト';
 $string['delcohort'] = 'コーホートを削除する';
-$string['delconfirm'] = '本当にコーホート「 {$a} 」を削除してもよろしいですか?';
+$string['delconfirm'] = 'これでコホート「 {$a} 」および関連データすべてが削除されます。';
 $string['description'] = '説明';
 $string['displayedrows'] = '{$a->total} 行中 {$a->displayed} 行が表示されます。';
 $string['duplicateidnumber'] = '同一IDナンバのコーホートがすでに存在します。';
@@ -81,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'コーホートに関連す
 $string['removeuserwarning'] = 'コーホートからユーザを削除することにより、結果としてユーザ設定、評定、グループメンバシップおよびコースに関係するユーザ情報も含めて複数のコースからユーザを登録解除することになります。';
 $string['search'] = '検索';
 $string['searchcohort'] = 'コーホートを検索する';
+$string['selectcohort'] = 'コーホートを選択する';
 $string['selectfromcohort'] = 'コーホートからメンバを選択する';
 $string['systemcohorts'] = 'システムコーホート';
 $string['unknowncohort'] = '不明なコーホートです ({$a})!';

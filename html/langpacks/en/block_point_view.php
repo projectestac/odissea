@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_point_view', language 'en', version '4.1'.
+ * Strings for component 'block_point_view', language 'en', version '4.4'.
  *
  * @package     block_point_view
  * @category    string
@@ -68,6 +68,9 @@ $string['enableforfuturemodules_help'] = 'Automatically enable reactions on new 
 $string['enablepoint_views'] = 'Enable <b>Reactions</b>';
 $string['errorfilemanager'] = '<b>ERROR</b>: The name of <b>{$a}.png</b> is not conform.';
 $string['errorfilemanagerempty'] = 'Please provide at least one file.';
+$string['eventreactionadded'] = 'Reaction added';
+$string['eventreactionremoved'] = 'Reaction removed';
+$string['eventreactionupdated'] = 'Reaction updated';
 $string['forthismodule'] = 'For this module ({$a}):';
 $string['greentrack'] = 'Green track';
 $string['header_activities'] = 'Configuration of Reaction and Difficulty tracks';
@@ -81,6 +84,7 @@ $string['noreactionsyet'] = 'There is no course module with reactions yet.';
 $string['pluginname'] = 'Point of view';
 $string['point_view:access_overview'] = 'View reactions details';
 $string['point_view:addinstance'] = 'Add a Point of View block instance';
+$string['point_view:addreaction'] = 'See reaction zone and add reactions';
 $string['point_view:myaddinstance'] = 'Add a Point of View block instance on dashboard';
 $string['privacy:metadata:activity_votes_database:cmid'] = 'Course activity ID';
 $string['privacy:metadata:activity_votes_database:courseid'] = 'Course ID';

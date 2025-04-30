@@ -12,17 +12,20 @@ class script_enable_service extends agora_script_base{
     public $cli = true;
     protected $category = "Upgrade";
 
-    public function params(){
+    public function params(): array {
+
         $params = [];
-        $params['password'] = optional_param('password', false, PARAM_TEXT);
-        $params['xtecadminPassword'] = optional_param('xtecadminPassword', false, PARAM_TEXT);
-        $params['clientName'] = optional_param('clientName', false, PARAM_TEXT);
-        $params['clientCode'] = optional_param('clientCode', false, PARAM_TEXT);
-        $params['clientAddress'] = optional_param('clientAddress', false, PARAM_TEXT);
-        $params['clientCity'] = optional_param('clientCity', false, PARAM_TEXT);
-        $params['clientDNS'] = optional_param('clientDNS', false, PARAM_TEXT);
+
+        $params['password'] = '';
+        $params['xtecadminPassword'] = '';
+        $params['clientName'] = '';
+        $params['clientCode'] = '';
+        $params['clientAddress'] = '';
+        $params['clientCity'] = '';
+        $params['clientDNS'] = '';
 
         return $params;
+
     }
 
     protected function _execute($params = array(), $execute = true) {
@@ -46,6 +49,7 @@ class script_enable_service extends agora_script_base{
         $adminuser->institution = $params['clientName'];
         $adminuser->address = $params['clientAddress'];
         $adminuser->city = $params['clientCity'];
+
         $DB->update_record('user', $adminuser);
 
         // Force change of password of user admin

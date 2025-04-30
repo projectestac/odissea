@@ -20,7 +20,7 @@ require_once($CFG->dirroot.'/blocks/licenses_vicensvives/locallib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 require_once($CFG->dirroot.'/lib/tablelib.php');
 
-function str_contains($haystack, $needle) {
+function vv_str_contains($haystack, $needle) {
     // Normaliza el texto a carñacteres ASCII en mínuscula y sin espacios duplicados.
     $normalize = function($text) {
         $text = core_text::specialtoascii($text);
@@ -39,7 +39,7 @@ require_login($courseid, false);
 
 require_capability('moodle/course:update', context_system::instance());
 
-$baseurl = new moodle_url('/blocks/licenses_vicensvives/licenses.php', array('course' => $courseid));
+$baseurl = new moodle_url('/blocks/licenses_vicensvives/licenses.php', ['course' => $courseid]);
 
 $PAGE->set_url($baseurl);
 
@@ -56,18 +56,18 @@ $ws = new vicensvives_ws();
 
 $lang = $CFG->lang == 'ca' ? 'ca' : 'es';
 
-$levels = array(0 => '');
+$levels = [0 => ''];
 foreach ($ws->levels($lang) as $level) {
     $levels[$level->idLevel] = $level->shortname;
 }
 
-$subjects = array(0 => '');
+$subjects = [0 => ''];
 foreach ($ws->subjects($lang) as $subject) {
     $subjects[$subject->idSubject] = $subject->name;
 }
 
 // Obtener únicamente las licencias del libro del curso.
-$course = $DB->get_record('course', array('id' => $courseid));
+$course = $DB->get_record('course', ['id' => $courseid]);
 $idbook = null;
 if (preg_match('/^vv-([0-9]+)-/', $course->idnumber, $match)) {
     $idbook = (int) $match[1];
@@ -75,7 +75,7 @@ if (preg_match('/^vv-([0-9]+)-/', $course->idnumber, $match)) {
 
 $licenses = vicensvives_count_licenses($idbook);
 
-$allbooks = array();
+$allbooks = [];
 
 foreach ($ws->books() as $book) {
     if (isset($licenses[$book->idBook])) {
@@ -83,33 +83,33 @@ foreach ($ws->books() as $book) {
     }
 }
 
-$search = array(
+$search = [
     'fullname' => optional_param('fullname', '', PARAM_TEXT),
     'idsubject' => optional_param('idsubject', '', PARAM_INT),
     'idlevel' => optional_param('idlevel', '', PARAM_INT),
     'isbn' => optional_param('isbn', '', PARAM_TEXT),
-);
+];
 
-$customdata = array('levels' => $levels, 'subjects' => $subjects, 'search' => $search);
+$customdata = ['levels' => $levels, 'subjects' => $subjects, 'search' => $search];
 $form = new \block_courses_vicensvives\filter_form(null, $customdata, 'get');
 
 if ($form->is_cancelled()) {
     redirect($baseurl);
 }
 
-$filteredbooks = array();
+$filteredbooks = [];
 
 foreach ($allbooks as $book) {
-    if ($search['fullname'] and !str_contains($book->fullname, $search['fullname'])) {
+    if ($search['fullname'] && !vv_str_contains($book->fullname, $search['fullname'])) {
         continue;
     }
-    if ($search['idsubject'] and $book->idSubject != $search['idsubject']) {
+    if ($search['idsubject'] && $book->idSubject != $search['idsubject']) {
         continue;
     }
-    if ($search['idlevel'] and $book->idLevel != $search['idlevel']) {
+    if ($search['idlevel'] && $book->idLevel != $search['idlevel']) {
         continue;
     }
-    if ($search['isbn'] and !str_contains($book->isbn, $search['isbn'])) {
+    if ($search['isbn'] && !vv_str_contains($book->isbn, $search['isbn'])) {
         continue;
     }
     $filteredbooks[$book->idBook] = $book;
@@ -121,7 +121,7 @@ echo $OUTPUT->heading('');
 $form->display();
 
 if ($filteredbooks) {
-    $a = array('total' => count($allbooks), 'found' => count($filteredbooks));
+    $a = ['total' => count($allbooks), 'found' => count($filteredbooks)];
     $string = get_string('searchresult', 'block_courses_vicensvives', $a);
 } else {
     $string = get_string('searchempty', 'block_courses_vicensvives', count($allbooks));
@@ -131,10 +131,10 @@ echo $OUTPUT->heading($string);
 $table = new flexible_table('vicensvives_books');
 $url = new moodle_url($baseurl, $search);
 $table->define_baseurl($url);
-$table->define_columns(array('name', 'subject', 'level', 'isbn', 'student', 'teacher'));
+$table->define_columns(['name', 'subject', 'level', 'isbn', 'student', 'teacher']);
 $table->set_attribute('class', 'vicensvives_books');
 $table->column_class('actions', 'vicensvives_actions');
-$table->define_headers(array(
+$table->define_headers([
     get_string('fullname', 'block_courses_vicensvives'),
     get_string('subject', 'block_courses_vicensvives'),
     get_string('level', 'block_courses_vicensvives'),
@@ -145,7 +145,7 @@ $table->define_headers(array(
     get_string('teacherlicenses', 'block_licenses_vicensvives')
     . '<br/> (' . get_string('activated', 'block_licenses_vicensvives')
     . ' / ' . get_string('total', 'block_licenses_vicensvives') . ')',
-));
+]);
 $table->pagesize(50, count($filteredbooks));
 $table->setup();
 
@@ -156,14 +156,14 @@ core_collator::asort_objects_by_property($filteredbooks, 'fullname');
 $books = array_slice($filteredbooks, $table->get_page_start(), $table->get_page_size());
 
 foreach ($books as $book) {
-    $table->add_data(array(
+    $table->add_data([
         $book->fullname,
         isset($subjects[$book->idSubject]) ? $subjects[$book->idSubject] : '',
         isset($levels[$book->idLevel]) ? $levels[$book->idLevel] : '',
         $book->isbn,
         $licenses[$book->idBook]->studentactivated . ' / ' . $licenses[$book->idBook]->studenttotal,
         $licenses[$book->idBook]->teacheractivated . ' / ' . $licenses[$book->idBook]->teachertotal,
-    ));
+    ]);
 }
 
 $table->finish_output();

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache_mongodb', language 'es', version '4.1'.
+ * Strings for component 'cache_mongodb', language 'es', version '4.4'.
  *
  * @package     cache_mongodb
  * @category    string
@@ -36,7 +36,7 @@ $string['replicaset'] = 'Conjunto réplica';
 $string['replicaset_help'] = 'El nombre del conjunto réplica al cual conectarse. Si se da, el amo (master) será determinado al usar el comando ismaster en las semillas (seeds), de forma que el conductor puede terminar conectándose a un servidor que ni siquiera estaba enlistado.';
 $string['server'] = 'Servidor';
 $string['server_help'] = 'Esta es la cadena de conexión para el servidor que Usted quiere usar. Se pueden especificar servidores múltiples al separarlos con comas.';
-$string['testserver'] = '';
+$string['testserver'] = 'Servidores de prueba';
 $string['testserver_desc'] = 'Esta es la cadena de caracteres para la conexión con el servidor de prueba que desea utilizar. Los servidores de prueba son totalmente opcionales, y especificando un servidor de prueba puede ejecutar pruebas PHPUnit para este entorno y ejecutar pruebas de rendimiento.';
 $string['username'] = 'Nombredeusuario';
 $string['username_help'] = 'El nombredeusuario a usar al hacer una conexión';

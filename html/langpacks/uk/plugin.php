@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'uk', version '4.1'.
+ * Strings for component 'plugin', language 'uk', version '4.4'.
  *
  * @package     plugin
  * @category    string
@@ -124,6 +124,8 @@ $string['type_cachestore'] = 'Сховище кешу';
 $string['type_cachestore_plural'] = 'Сховища кешу';
 $string['type_calendartype'] = 'Тип календаря';
 $string['type_calendartype_plural'] = 'Типи календаря';
+$string['type_communication'] = 'Провайдер зв\'язку';
+$string['type_communication_plural'] = 'Провайдери зв\'язку';
 $string['type_contentbank'] = 'Контент-банк';
 $string['type_contentbank_plural'] = 'Плагіни банку вмісту';
 $string['type_contenttype'] = 'Контент-банк';

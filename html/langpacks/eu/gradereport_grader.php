@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'eu', version '4.1'.
+ * Strings for component 'gradereport_grader', language 'eu', version '4.4'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Ikusi {$a} emaitza';
 $string['ajaxchoosescale'] = 'Aukeratu';
 $string['ajaxclicktoclose'] = 'Ezabatzeko egin klik laukitxo honetan';
 $string['ajaxerror'] = 'Errorea';
 $string['ajaxfailedupdate'] = 'Ezin da [1] [2]-rako eguneratu';
 $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi al duzu eguneratutako balioa erabili?';
+$string['aria:dropdowncolumns'] = 'Tolestutako zutabeak aurkitu dira';
+$string['cellactions'] = 'Gelaxka-ekintzak';
+$string['clearall'] = 'Garbitu guztiak';
+$string['clearsearch'] = 'Garbitu bilatutako erabiltzaileak';
+$string['collapsedcolumns'] = 'Tolestutako zutabeak  <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Kalifikatzaile-txostena editatzen';
 $string['eventgradereportviewed'] = 'Kalifikatzaile-txostena ikusi da';
 $string['grader:manage'] = 'Kudeatu kalifikatzaile-txostena';
@@ -59,6 +65,7 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Kategoria eta 
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Izenaren ondoren erabiltzailearen profilaren irudia erakutsiko den edo ez';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Kalifikatzaile-txosteneko orri bakoitzean erakutsi beharreko ikasle-kopurua';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Tolestuta erakusten diren kalifikazio-liburuko kategoriak dituzu "{$a->name}" ikastaroan';
+$string['reopencolumn'] = 'Zabaldu {$a} zutabea';
 $string['summarygrader'] = 'Lehen zutabean ikasleen izenak izango dituen taula bat, eta aktibitate kalifikagarriak gainean ikastaro eta kategorietan multzokatuta dituena.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} kalifikazio';

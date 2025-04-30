@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ro', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ro', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = 'Nu a fost raportat';
 $string['attempts'] = 'Încercări';
 $string['attempts_none'] = 'Acest utilizator nu are încercări de afișat.';
 $string['attempts_report'] = 'Raport de încercări';
+$string['attempts_report_header_label'] = 'Încercări ({$a})';
 $string['choice'] = 'Alegere';
 $string['completion'] = 'Finalizare';
 $string['contentbank'] = 'Mai multe informații despre banca de conținut';
@@ -63,6 +64,8 @@ $string['displayembed'] = 'Buton cod de încorporare';
 $string['displayexport'] = 'Permite descărcarea';
 $string['dnduploadh5pactivity'] = 'Adaugă o activitate H5P';
 $string['duration'] = 'Durata';
+$string['enablesavestate'] = 'Salvează status-ul';
+$string['enablesavestate_help'] = 'Salvează automat status-ul curent al utilizatorului. Utilizatorul își poate relua mai târziu activitatea.';
 $string['enabletracking'] = 'Activează urmărirea încercărilor';
 $string['false'] = 'Fals';
 $string['grade_average_attempt'] = 'Nota medie';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = 'Nota: {$a}';
 $string['grade_highest_attempt'] = 'Cea mai mare notă';
 $string['grade_last_attempt'] = 'Ultima încercare';
 $string['grade_manual'] = 'Nu calcula o notă';
+$string['gradenoun_h5p'] = 'Nota: {$a}';
 $string['h5pactivity:addinstance'] = 'Adaugă o activitate H5P';
 $string['h5pactivity:reviewattempts'] = 'Examinează încercările H5P';
 $string['h5pactivity:submit'] = 'Trimite încercări H5P';
@@ -106,7 +110,7 @@ $string['package_help'] = 'Fișierul pachet este un fișier .h5p care conține c
 $string['page-mod-h5pactivity-x'] = 'Orice pagină a modulului H5P';
 $string['pluginadministration'] = 'Administrarea H5P';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'Acest conținut este afișat în modul previzualizare. Nu va fi stocată nicio informație de urmărire a încercării.';
+$string['previewmode'] = 'Ești în modul previzualizare.';
 $string['privacy:metadata:attempt'] = 'Numărul încercării';
 $string['privacy:metadata:rawscore'] = 'Scorul obținut';
 $string['privacy:metadata:timecreated'] = 'Ora când a fost creat elementul urmărit';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = 'Ultima dată când a fost urmărit e
 $string['privacy:metadata:userid'] = 'ID-ul utilizatorului care a accesat activitatea H5P';
 $string['privacy:metadata:xapi_track'] = 'Informațiile de urmărire a încercării';
 $string['privacy:metadata:xapi_track_results'] = 'Rezultate informațiilor despre urmărirea încercării';
+$string['privacy:metadata:xapisummary'] = 'Activitatea H5P conține informații referitoare la starea conținutului xAPI stocată de utilizator.';
 $string['report_viewed'] = 'Raport vizualizat';
 $string['result_compound'] = 'Scor parțial combinat';
 $string['result_fill-in'] = 'Text completat';
@@ -123,12 +128,13 @@ $string['result_other'] = 'Tipul de interacțiune necunoscut';
 $string['result_sequencing_answer'] = 'Valoarea poziției';
 $string['result_sequencing_choice'] = 'Roluri';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Vezi toate încercările ({$a} trimise)';
 $string['review_mode'] = 'Revizuirea încercărilor';
 $string['review_my_attempts'] = 'Vizualizare încercările mele';
 $string['review_none'] = 'Participanții nu își pot revedea propriile încercări';
 $string['review_on_completion'] = 'Participanții își pot revedea propriile încercări';
-$string['review_user_attempts'] = 'Vezi încercările utilizatorilor ({$a})';
+$string['review_user_attempts'] = 'Vezi ({$a})';
+$string['savestatefreq'] = 'Salvează status-ul frecvent';
+$string['savestatefreq_help'] = 'Cât de des (în secunde) este salvat status-ul curent al utilizatorului.';
 $string['score'] = 'Notă';
 $string['score_out_of'] = '{$a->rawscore} din {$a->maxscore}';
 $string['search:activity'] = 'H5P - informații despre activitate';
@@ -137,7 +143,10 @@ $string['statement_received'] = 'Declarație xAPI primită';
 $string['totalscore'] = 'Total notă';
 $string['tracking_messages'] = 'Unele interacțiuni H5P furnizează date de urmărire ale încercărilor pentru o raportare avansată, cum ar fi numărul de încercări, răspunsuri și note.
 Notă: Unele interacțiuni H5P nu furnizează date de urmărire a încercărilor. În astfel de cazuri, următoarele setări nu vor avea efect.';
+$string['trackingdisabled'] = 'Monitorizarea încercărilor nu este activată pentru această activitate.';
+$string['trackingdisabled_enable'] = 'Monitorizarea încercărilor nu este activată pentru această activitate. Se poate activa în <a href="{$a}">Settings</a>.';
 $string['true'] = 'Adevărat';
 $string['usecontentbank'] = 'Utilizează <a href="{$a}" target="_blank"> banca de conținut (se deschide într-o fereastră nouă) </a> pentru a-ți gestiona fișierele H5P';
 $string['view'] = 'Vizualizare';
 $string['view_report'] = 'Vizualizare raport';
+$string['viewattempts'] = 'Vezi încercări ({$a})';

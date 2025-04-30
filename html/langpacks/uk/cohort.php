@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'uk', version '4.1'.
+ * Strings for component 'cohort', language 'uk', version '4.4'.
  *
  * @package     cohort
  * @category    string
@@ -40,6 +40,7 @@ $string['cohortmember'] = 'Член когорти';
 $string['cohorts'] = 'Групи';
 $string['cohortsin'] = '{$a}: доступні групи';
 $string['component'] = 'Джерело';
+$string['contextcohortnotallowed'] = 'Когорта <b>{$a}</b> не дозволена в цьому контексті.';
 $string['contextnotfound'] = 'Контекст <b>{$a}</b> не знайдено, або ж ви не маєте прав для створення в ньому гуртів. Буде використано типовий контекст.';
 $string['csvcontainserrors'] = 'В даних CSV було виявлено помилку. Див. деталі нижче.';
 $string['csvcontainswarnings'] = 'В даних CSV було виявлено попередження. Див. деталі нижче.';

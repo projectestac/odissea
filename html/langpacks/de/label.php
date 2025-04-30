@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'de', version '4.1'.
+ * Strings for component 'label', language 'de', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz 
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Text- und Medienfeld hinzufügen';
 $string['label:view'] = 'Text- und Medienfeld anzeigen';
+$string['labelname'] = 'Titel im Kursindex';
+$string['labelname_help'] = 'Der Titel wird nur verwendet, um das Text- und Medienfeld im Kursindex und zum Abschluss der Aktivität zu identifizieren. Wenn Sie es leer lassen, wird automatisch ein Titel aus den ersten Zeichen des Textes generiert.';
 $string['labeltext'] = 'Text';
 $string['modulename'] = 'Text- und Medienfeld';
 $string['modulename_help'] = 'Das \'Text- und Medienfeld\' ermöglicht es, Texte und Multimedia auf der Kursseite anzuzeigen.

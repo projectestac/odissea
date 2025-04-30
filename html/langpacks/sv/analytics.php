@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'sv', version '4.1'.
+ * Strings for component 'analytics', language 'sv', version '4.4'.
  *
  * @package     analytics
  * @category    string
@@ -97,7 +97,6 @@ $string['modeinstructionblendedhybrid'] = 'Både ansikte mot ansikte och on-line
 $string['modeinstructionfacetoface'] = 'Ansikte mot ansikte';
 $string['modeinstructionfullyonline'] = 'Uteslutande on-line';
 $string['modeloutputdir'] = 'Katalog för modellresultat';
-$string['modeloutputdirinfo'] = 'Katalog där förutsägelsemotorer lagrar all utvärderingsdata. Denna kan vara användbar vid felsökningar och forskning.';
 $string['modeloutputdirwithdefaultinfo'] = 'Katalog där förutsägelsemotorer lagrar all utvärderingsdata. Denna kan vara användbar vid felsökningar och forskning. Om fältet lämnats tomt används {$a} som standard.';
 $string['modeltimelimit'] = 'Tidsgräns för analys per modell';
 $string['modeltimelimitinfo'] = 'Den här inställningen begränsar den tid som varje modell ägnar åt att analysera webbplatsinnehållet.';

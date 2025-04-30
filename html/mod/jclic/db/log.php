@@ -33,8 +33,8 @@ defined('MOODLE_INTERNAL') || die();
 
 global $DB;
 
-$logs = array(
-    array('module'=>'jclic', 'action'=>'add', 'mtable'=>'jclic', 'field'=>'name'),
-    array('module'=>'jclic', 'action'=>'view', 'mtable'=>'jclic', 'field'=>'name'),
-    array('module'=>'jclic', 'action'=>'update', 'mtable'=>'jclic', 'field'=>'name'),
-);
+$logs = [
+    ['module'=>'jclic', 'action'=>'add', 'mtable'=>'jclic', 'field'=>'name'],
+    ['module'=>'jclic', 'action'=>'view', 'mtable'=>'jclic', 'field'=>'name'],
+    ['module'=>'jclic', 'action'=>'update', 'mtable'=>'jclic', 'field'=>'name'],
+];

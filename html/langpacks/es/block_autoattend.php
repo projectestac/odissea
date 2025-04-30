@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_autoattend', language 'es', version '4.1'.
+ * Strings for component 'block_autoattend', language 'es', version '4.4'.
  *
  * @package     block_autoattend
  * @category    string
@@ -77,7 +77,7 @@ $string['attendforuser'] = 'Asistencia para el usuario en este curso';
 $string['attendgrade'] = 'Calificación';
 $string['attendgradeshort'] = 'C';
 $string['attendkey'] = 'Clave';
-$string['attendkey_help'] = 'En caso de especificar una palabra clave los estudiantes deberán ingresarla para que la asistencia sea anotada. Esto ocurre únicamente en modo semiautomático, en los modos manual y automático la clave es ignorada. Cuando se marca la casilla "Clave aleatoria" se generará una clave de 5 caracteres de forma automática.';
+$string['attendkey_help'] = 'En caso de especificar una palabra clave los estudiantes deberán introducirla para que la asistencia se anote. Esto ocurre únicamente en modo semiautomático, en los modos manual y automático la clave se ignora. Cuando se marca la casilla "Clave aleatoria" se generará una clave de 5 caracteres de forma automática.';
 $string['attendnotstarted'] = 'El control de asistencia aún no ha comenzado en este curso';
 $string['attendreport'] = 'Informe de asistencia';
 $string['attendsubmiterr'] = 'Ha ocurrido un error anotando la asistencia';

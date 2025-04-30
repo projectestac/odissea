@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ur', version '4.1'.
+ * Strings for component 'quiz', language 'ur', version '4.4'.
  *
  * @package     quiz
  * @category    string
@@ -123,7 +123,6 @@ $string['back'] = 'پیش نظارہ سوال پر واپس جائیں';
 $string['backtocourse'] = 'کورس پر واپس';
 $string['backtoquestionlist'] = 'سوالوں کی فہرست پر واپس جائیں';
 $string['backtoquiz'] = 'کوئز ایڈیٹنگ پر واپس جائیں';
-$string['basicideasofquiz'] = 'کوئز بنانے کے بنیادی خیالات';
 $string['bestgrade'] = 'بہترین گریڈ';
 $string['bothattempts'] = 'طالب علموں کو کوشش کے ساتھ اور بغیر دکھائیں';
 $string['browsersecurity'] = 'براؤزر سیکیورٹی';
@@ -175,17 +174,12 @@ $string['comments'] = 'تبصرے';
 $string['completedon'] = 'پر مکمل ہوا';
 $string['completionattemptsexhausted'] = 'یا تمام دستیاب کوششیں مکمل ہوگئیں';
 $string['completionattemptsexhausted_help'] = 'کوئز مکمل ہونے پر نشان زد کریں جب طالب علم زیادہ سے زیادہ کوششیں کر لے۔';
-$string['completionattemptsexhausteddesc'] = 'اگر تمام دستیاب کوششیں ختم ہو جائیں تو مکمل کریں';
 $string['completiondetail:minattempts'] = 'کوشش کریں: {$a}';
-$string['completiondetail:passgrade'] = 'پاس گریڈ حاصل کریں';
 $string['completiondetail:passorexhaust'] = 'پاس گریڈ حاصل کریں یا تمام دستیاب کوششیں مکمل کریں';
 $string['completionminattempts'] = 'کوششوں کی کم از کم تعداد:';
 $string['completionminattemptsdesc'] = 'مطلوبہ کوششوں کی کم از کم تعداد: {$a}';
 $string['completionminattemptserror'] = 'کوششوں کی کم از کم تعداد اجازت شدہ کوششوں سے کم یا برابر ہونی چاہیے۔';
 $string['completionminattemptsgroup'] = 'کوششوں کی ضرورت ہے';
-$string['completionpass'] = 'پاسنگ گریڈ کی ضرورت ہے';
-$string['completionpass_help'] = 'اگر فعال ہو، تو اس سرگرمی کو مکمل سمجھا جاتا ہے جب طالب علم پاس گریڈ حاصل کرتا ہے (جیسا کہ کوئز سیٹنگز کے گریڈ سیکشن میں بیان کیا گیا ہے) یا اس سے زیادہ۔';
-$string['completionpassdesc'] = 'اس سرگرمی کو مکمل کرنے کے لیے طالب علم کو پاسنگ گریڈ حاصل کرنا ضروری ہے';
 $string['completionpassorattemptsexhausteddesc'] = 'طالب علم کو پاسنگ گریڈ حاصل کرنا چاہیے، یا اس سرگرمی کو مکمل کرنے کے لیے تمام دستیاب کوششوں کو ختم کرنا چاہیے';
 $string['configadaptive'] = 'اگر آپ اس اختیار کے لیے ہاں کا انتخاب کرتے ہیں تو طالب علم کو کوئز میں ایک ہی کوشش کے اندر بھی ایک سوال کے متعدد جوابات دینے کی اجازت ہوگی۔';
 $string['configattemptsallowed'] = 'کوئز میں طلبہ کو کوششوں کی تعداد پر پابندی کی اجازت ہے۔';
@@ -373,12 +367,12 @@ $string['gradeaverage'] = 'اوسط درجہ';
 $string['gradeboundary'] = 'گریڈ کی حد';
 $string['gradeessays'] = 'گریڈ کے مضامین';
 $string['gradehighest'] = 'اعلیٰ ترین درجہ';
+$string['gradeitems'] = 'گریڈ آئٹمز';
 $string['grademethod'] = 'درجہ بندی کا طریقہ';
 $string['grademethod_help'] = 'جب ایک سے زیادہ کوششوں کی اجازت دی جاتی ہے تو، کوئز کے فائنل گریڈ کا حساب لگانے کے لیے درج ذیل طریقے دستیاب ہیں: * تمام کوششوں کا اعلیٰ ترین درجہ * تمام کوششوں کا اوسط (مطلب) گریڈ * پہلی کوشش (دیگر تمام کوششوں کو نظر انداز کر دیا جاتا ہے) * آخری کوشش (باقی تمام کوششیں نظر انداز کیا جاتا ہے)';
 $string['gradesdeleted'] = 'کوئز کے درجات حذف کر دیے گئے';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}۔';
 $string['gradetopassmustbeset'] = 'پاس کرنے کا گریڈ صفر نہیں ہو سکتا کیونکہ اس کوئز میں پاسنگ گریڈ کی ضرورت کے لیے اس کی تکمیل کا طریقہ مقرر ہے۔ براہ کرم ایک غیر صفر قدر سیٹ کریں۔';
-$string['gradetopassnotset'] = 'اس کوئز میں ابھی تک پاس کرنے کا کوئی گریڈ نہیں ہے۔ اسے کوئز سیٹنگز کے گریڈ سیکشن میں سیٹ کیا جا سکتا ہے۔';
 $string['gradetopassoutof'] = 'پاس کرنے کے لیے گریڈ: {$a->maxgrade} میں سے {$a->grade}';
 $string['gradingdetails'] = 'اس جمع کرانے کے نشانات: {$a->raw}/{$a->max}۔';
 $string['gradingdetailsadjustment'] = 'پچھلے جرمانے کے ساتھ یہ <strong>{$a->cur}/{$a->max}</strong> دیتا ہے۔';
@@ -439,8 +433,6 @@ $string['layoutasshown'] = 'صفحہ کی ترتیب جیسا کہ دکھایا 
 $string['layoutasshownwithpages'] = 'صفحہ کی ترتیب جیسا کہ دکھایا گیا ہے۔ <small>(ہر {$a} سوالات پر خودکار نیا صفحہ۔)</small>';
 $string['layoutshuffledandpaged'] = 'سوالات تصادفی طور پر فی صفحہ {$a} سوالات کے ساتھ بدل جاتے ہیں۔';
 $string['layoutshuffledsinglepage'] = 'سوالات تصادفی طور پر بدل گئے، سبھی ایک صفحے پر۔';
-$string['legacyquizaccessrulescron'] = 'لیگیسی کرون کوئز تک رسائی کے قواعد';
-$string['legacyquizreportscron'] = 'لیگیسی کرون کوئز رپورٹس';
 $string['link'] = 'لنک';
 $string['listitems'] = 'کوئز میں اشیاء کی فہرست';
 $string['literal'] = 'لفظی';

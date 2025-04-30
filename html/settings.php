@@ -29,10 +29,10 @@ $CFG->core_media_enable_html5video = true;
 $CFG->repositorygetfiletimeout = 300;
 $CFG->alternateloginurl = '';
 $CFG->mymoodleredirect = false;
-$CFG->enablestats = false;
-$CFG->enableanalytics = false;
 $CFG->themedesignermode = false;
 $CFG->cachejs = true;
+$CFG->langcache = true;
+$CFG->langstringcache = true;
 $CFG->slasharguments = true;
 $CFG->themelist = 'xtecboost';
 $CFG->useexternalyui = false;
@@ -100,15 +100,6 @@ $CFG->session_handler_class = '\core\session\database'; // Default
 $CFG->session_database_acquire_lock_timeout = 120;
 $CFG->sessioncookie = $CFG->dbuser;
 
-if (!empty($agora['moodle2']['memcached_session_servers'])) {
-    $CFG->session_handler_class = '\core\session\memcached';
-    $CFG->session_memcached_save_path = $agora['moodle2']['memcached_session_servers'];
-    $CFG->session_memcached_prefix = $CFG->memcache_prefix . 'sess_';
-    $CFG->session_memcached_acquire_lock_timeout = 120;
-    $CFG->session_memcached_lock_expire = 7200;
-    $CFG->session_memcached_lock_retry_sleep = 150;
-}
-
 if (!empty($agora['moodle2']['redis_session_servers'])) {
     $CFG->session_handler_class = '\core\session\redis';
     $CFG->session_redis_host = $agora['moodle2']['redis_session_servers'];
@@ -118,22 +109,20 @@ if (!empty($agora['moodle2']['redis_session_servers'])) {
     $CFG->session_redis_prefix = $CFG->redis_prefix . 'sess_'; // Optional, default is don't set one
     $CFG->session_redis_acquire_lock_timeout = 120;
     $CFG->session_redis_lock_expire = 7200;
-}
 
-// MUC configuration
-if (isset($agora['server']['root']) && !empty($agora['server']['root'])) {
-    $CFG->agora_muc_path = $agora['server']['root'] . $agora['moodle2']['localmuc'] . '/' . $CFG->dbuser;
-    $CFG->cachedir = $CFG->agora_muc_path . '/cache';
-    $CFG->localcachedir = $CFG->agora_muc_path . '/localcache';
-}
-
-// Move locking. Default location is moodledata
-if (!empty($agora['moodle2']['redis_session_servers'])) {
+    // Move locking. Default location is moodledata
     $CFG->local_redislock_redis_server = $agora['moodle2']['redis_session_servers'];
     $CFG->lock_factory = '\\local_redislock\\lock\\redis_lock_factory';
     $CFG->local_redislock_logging = false;
 } else {
     $CFG->lock_factory = '\\core\\lock\\db_record_lock_factory';
+}
+
+// MUC configuration
+if (!empty($agora['server']['root'])) {
+    $CFG->agora_muc_path = $agora['server']['root'] . $agora['moodle2']['localmuc'] . '/' . $CFG->dbuser;
+    $CFG->cachedir = $CFG->agora_muc_path . '/cache';
+    $CFG->localcachedir = $CFG->agora_muc_path . '/localcache';
 }
 
 // if (isset($agora['proxy']['host']) && !empty($agora['proxy']['host'])) {

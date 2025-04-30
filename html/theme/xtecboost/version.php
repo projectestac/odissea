@@ -15,17 +15,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Theme Boost Union - Version file
+ * Theme XTEC Boost - Version file
  *
- * @package    theme_xtecbooston
+ * @package    theme_xtecboost
  * @copyright  2023 Israel Forés Monzó, <israel.fores@ithinkupc.com>
+ * @copyright  2024 Toni Ginard, <toni.ginard@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_xtecboost';
-$plugin->version = 2023120400;
+$plugin->version = 2024110400;
 $plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [

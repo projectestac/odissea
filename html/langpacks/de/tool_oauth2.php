@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'de', version '4.1'.
+ * Strings for component 'tool_oauth2', language 'de', version '4.4'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -35,33 +35,28 @@ $string['configured'] = 'Konfiguriert';
 $string['configuredstatus'] = 'Konfiguriert';
 $string['connectsystemaccount'] = 'Mit Systemaccount verbinden';
 $string['createfromtemplate'] = 'OAuth 2-Service aus einer Vorlage anlegen';
-$string['createfromtemplatedesc'] = 'Wählen Sie eine der Vorlagen aus, um einen OAuth 2-Service mit einer gültigen Konfiguration zu erstellen. Der OAuth 2-Service wird mit allen Parametern und den richtigen Endpoints erstellt, die für die Authentifizierung notwendig sind. Sie müssen anschließend nur noch die Client-ID und das Client-Secret in Moodle eingeben, um den OAuth 2-Service verwenden zu können.';
-$string['createnewendpoint'] = 'Neuen Endpoint für den Service \'{$a}\' anlegen';
-$string['createnewfacebookissuer'] = 'Neuen Facebook-Service anlegen';
-$string['createnewgoogleissuer'] = 'Neuen Google-Service anlegen';
-$string['createnewissuer'] = 'Neuen eigenen Service anlegen';
-$string['createnewmicrosoftissuer'] = 'Neuen Microsoft-Service anlegen';
-$string['createnewnextcloudissuer'] = 'Neuen Nextcloud-Service anlegen';
+$string['createfromtemplatedesc'] = 'Wählen Sie eine der Vorlagen aus, um einen OAuth 2-Service mit einer gültigen Konfiguration zu erstellen. Der OAuth 2-Service wird mit allen Parametern und den richtigen Endpunkte erstellt, die für die Authentifizierung notwendig sind. Sie müssen anschließend nur noch die Client-ID und das Client-Secret in Moodle eingeben, um den OAuth 2-Service verwenden zu können.';
+$string['createnewendpoint'] = 'Neuen Endpunkt für den Service \'{$a}\' anlegen';
 $string['createnewservice'] = 'Neuen Service anlegen:';
 $string['createnewuserfieldmapping'] = 'Neue Nutzerfeldzuordnung für Service/Identitätsaussteller \'{$a}\' erstellen';
 $string['custom_service'] = 'Nutzerdefiniert';
 $string['deleteconfirm'] = 'Möchten Sie wirklich den Service/Identitätsaussteller \'{$a}\' löschen? Alle darauf zurückgreifenden Plugins funktionieren dadurch nicht mehr.';
-$string['deleteendpointconfirm'] = 'Möchten Sie wirklich den Endpoint \'{$a->endpoint}\' für den Service/Identitätsaussteller \'{$a->issuer}\' löschen? Alle Plugins, die diesen Endpoint verwenden, werden dann nicht mehr funktionieren.';
+$string['deleteendpointconfirm'] = 'Möchten Sie wirklich den Endpoint \'{$a->endpoint}\' für den Service/Identitätsaussteller \'{$a->issuer}\' löschen? Alle Plugins, die diesen Endpunkt verwenden, werden dann nicht mehr funktionieren.';
 $string['deleteuserfieldmappingconfirm'] = 'Möchten Sie wirklich die Nutzerfeldzuordnung für den Aussteller \'{$a}\' löschen?';
 $string['discovered'] = 'Serviceerkennung erfolgreich';
-$string['discovered_help'] = 'Eine erfolgreiche Serviceerkennung bedeutet, dass die OAuth 2-Endpoints automatisch aus der Basis-URL für den OAuth 2-Service ermittelt werden konnten. Das funktioniert aber nicht bei allen Diensten automatisch, so dass die Endpoints und die Nutzerfeldzuordnung in diesem Fall manuell eingegeben werden müssen.';
+$string['discovered_help'] = 'Eine erfolgreiche Serviceerkennung bedeutet, dass die OAuth 2-Endpunkte automatisch aus der Basis-URL für den OAuth 2-Service ermittelt werden konnten. Das funktioniert aber nicht bei allen Diensten automatisch, so dass die Endpunkte und die Nutzerfeldzuordnung in diesem Fall manuell eingegeben werden müssen.';
 $string['discoverystatus'] = 'Erkennung';
-$string['editendpoint'] = 'Endpoint bearbeiten:  {$a->endpoint} für Service/Identitätsaussteller {$a->issuer}';
-$string['editendpoints'] = 'Endpoints konfigurieren';
+$string['editendpoint'] = 'Endpunkt bearbeiten:  {$a->endpoint} für Service/Identitätsaussteller {$a->issuer}';
+$string['editendpoints'] = 'Endpunkte konfigurieren';
 $string['editissuer'] = 'Service/Identitätsaussteller bearbeiten: {$a}';
 $string['edituserfieldmapping'] = 'Nutzerfeldzuordnung für Service/Identitätsaussteller {$a} bearbeiten';
 $string['edituserfieldmappings'] = 'Nutzerfeldzuordnung konfigurieren';
-$string['endpointdeleted'] = 'Endpoint gelöscht';
+$string['endpointdeleted'] = 'Endpunkt gelöscht';
 $string['endpointname'] = 'Name';
-$string['endpointname_help'] = 'Schlüssel für die Suche nach diesem Endpoint. Er muss mit "_endpoint" enden.';
-$string['endpointsforissuer'] = 'Endpoint für den Service/Identitätsaussteller: {$a}';
+$string['endpointname_help'] = 'Schlüssel für die Suche nach diesem Endpunkt. Er muss mit "_endpoint" enden.';
+$string['endpointsforissuer'] = 'Endpunkt für den Service/Identitätsaussteller: {$a}';
 $string['endpointurl'] = 'URL';
-$string['endpointurl_help'] = 'URL für diesen Endpoint. Die URL muss das Protokoll https:// verwenden.';
+$string['endpointurl_help'] = 'URL für diesen Endpunkt. Die URL muss das Protokoll https:// verwenden.';
 $string['facebook_service'] = 'Facebook';
 $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
@@ -111,6 +106,7 @@ $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Auf der Anmeldeseite anzeigen als';
 $string['loginissuer'] = 'Login erlauben';
 $string['microsoft_service'] = 'Microsoft';
+$string['moodlenet_service'] = 'MoodleNet';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Nicht konfiguriert';
 $string['notdiscovered'] = 'Serviceerkennung war nicht erfolgreich';

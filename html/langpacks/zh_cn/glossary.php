@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'zh_cn', version '4.1'.
+ * Strings for component 'glossary', language 'zh_cn', version '4.4'.
  *
  * @package     glossary
  * @category    string
@@ -92,7 +92,7 @@ $string['comments'] = '评论';
 $string['commentson'] = '评论：';
 $string['commentupdated'] = '该评论已更新。';
 $string['completiondetail:entries'] = '创建条目：{$a}';
-$string['completionentries'] = '学生必须创建条目：';
+$string['completionentries'] = '创建条目：';
 $string['completionentriesdesc'] = '学生必须创建至少{$a}个条目';
 $string['completionentriesgroup'] = '必建词条';
 $string['concept'] = '词条名';
@@ -142,7 +142,7 @@ $string['displayformats'] = '显示格式';
 $string['displayformatssetup'] = '显示格式设置';
 $string['duplicatecategory'] = '类别重名';
 $string['duplicateentry'] = '词条重名';
-$string['editalways'] = '总可以编辑';
+$string['editalways'] = '总允许编辑';
 $string['editalways_help'] = '此设置决定词条是永远可编辑还是学生只能在指定的时间窗口（通常 30 分钟）内编辑他们的词条。';
 $string['editcategories'] = '编辑类别';
 $string['editcategory'] = '编辑类别';
@@ -170,6 +170,7 @@ $string['errconceptalreadyexists'] = '此词条名已存在。此词汇表中不
 $string['errdeltimeexpired'] = '您不能删除它。时限已到！';
 $string['erredittimeexpired'] = '该词条的编辑时间已过。';
 $string['errorparsingxml'] = '解析文件发生错误。请确认 XML 语法正确。';
+$string['errreservedkeywords'] = '一个或多个关键字包含不能使用的特殊字符。';
 $string['eventcategorycreated'] = '分类已创建';
 $string['eventcategorydeleted'] = '分类已删除';
 $string['eventcategoryupdated'] = '分类已更新';
@@ -279,6 +280,7 @@ $string['page-mod-glossary-edit'] = '词汇表添加/编辑词条页面';
 $string['page-mod-glossary-view'] = '查看词汇表编辑页面';
 $string['page-mod-glossary-x'] = '任意词汇表模块页面';
 $string['pendingapproval'] = '正在等待批准';
+$string['pendingapprovalcount'] = '等待审批 ({$a})';
 $string['pluginadministration'] = '词汇表管理';
 $string['pluginname'] = '词汇表';
 $string['popupformat'] = '弹出窗口格式';
@@ -333,7 +335,6 @@ $string['totalentries'] = '词条总数';
 $string['usedynalink'] = '自动链接词条';
 $string['usedynalink_help'] = '如果管理员启用了全站词汇表自动链接功能，且此设置也被启用，那么“添加新词条”表单就会有自动链接课程中出现的词名到词条的选项。';
 $string['visibletabs'] = '可见选项卡';
-$string['waitingapproval'] = '待审';
 $string['warningstudentcapost'] = '（仅适用于非主词汇表）';
 $string['withauthor'] = '词名（含作者）';
 $string['withoutauthor'] = '词名（不含作者）';

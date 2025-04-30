@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'eu', version '4.1'.
+ * Strings for component 'tool_xmldb', language 'eu', version '4.4'.
  *
  * @package     tool_xmldb
  * @category    string

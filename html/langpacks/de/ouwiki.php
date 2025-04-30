@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'de', version '4.1'.
+ * Strings for component 'ouwiki', language 'de', version '4.4'.
  *
  * @package     ouwiki
  * @category    string
@@ -355,14 +355,6 @@ $string['savetemplate'] = 'Wiki als Vorlage sichern';
 $string['search'] = 'Wiki durchsuchen';
 $string['search:activity'] = 'OUWiki - Aktivitätsinformationen';
 $string['search:page_version'] = 'OUWiki - Seiten-Versionen';
-$string['search_help'] = 'Geben Sie Ihren Suchbegriff ein.
-
-Um exakte Ausdrücke zu suchen, nutzen Sie bitte die Anführungszeichen.
-
-Um ein Wort aus der Suche auszuschließen, setzen Sie ein Minuszeichen direkt vor das Wort.
-
-Beispiel:
-Der Suchbegriff <tt>picasso -skulptur "frühe werke"</tt> wird Ergebnisse liefern für ‘picasso’ oder für ‘frühe werke’, aber alle Elemente ausschließen, in denen ‘skulptur’ vorkommt.';
 $string['seedetails'] = 'Alle Versionen';
 $string['showannotationicons'] = 'Anmerkungen zeigen';
 $string['showwordcounts'] = 'Wortanzahl zeigen';

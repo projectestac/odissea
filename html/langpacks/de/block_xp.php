@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'de', version '4.1'.
+ * Strings for component 'block_xp', language 'de', version '4.4'.
  *
  * @package     block_xp
  * @category    string
@@ -367,7 +367,7 @@ $string['numberoflevels'] = 'Anzahl der Level';
 $string['occasionally'] = 'Manchmal';
 $string['outofsync'] = 'XP Plugins Inkompatibilität';
 $string['outofsyncexcessive'] = 'Große Versionsunterschiede';
-$string['outofsyncexcessiveinfo'] = 'XP+ ist wesentlich älter als XP, was zu unerwarteten Problemen führen kann. Um eine Fehlfunktion zu vermeiden, könnte sich XP+ automatisch deaktivieren.';
+$string['outofsyncexcessiveinfo'] = 'XP+ ist wesentlich älter als XP, was zu unerwarteten Problemen führen kann. Um eine Fehlfunktion zu vermeiden, wird sich XP+ zukünftig automatisch deaktivieren.';
 $string['outofsyncinfo'] = 'Die XP-Plugins sind nicht miteinander kompatibel, was zu unerwarteten Problemen führen kann. In Zukunft wird sich XP+ automatisch selbst deaktivieren. Die Version {$a->localxpversion} von Level Up XP+ (local_xp) wird erwartet.';
 $string['pagecurrentnotvisibletoviewers'] = 'Diese Seite ist derzeit für Teilnehmer/innen nicht sichtbar.';
 $string['pagecurrentvisibletoviewers'] = 'Diese Seite ist derzeit für Teilnehmer/innen sichtbar.';

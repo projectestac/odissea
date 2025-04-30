@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ja', version '4.1'.
+ * Strings for component 'auth_lti', language 'ja', version '4.4'.
  *
  * @package     auth_lti
  * @category    string
@@ -38,9 +38,8 @@ $string['firstlaunchnotice'] = 'これはあなたの最初の利用のようで
 $string['getstartedwithnewaccount'] = '新しいアカウントでスタートする';
 $string['haveexistingaccount'] = '私には既存のアカウントがあります';
 $string['linkthisaccount'] = 'このアカウントにリンクする';
-$string['mustbeloggedin'] = 'サインインしてあなたの既存のアカウントにリンクする';
+$string['mustbeloggedin'] = 'ログインしてあなたの既存のアカウントにリンクする';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'LTI認証プラグインはいかなる個人データも保存しません。';
 $string['privacy:metadata:auth_lti'] = 'LTI認証';
 $string['privacy:metadata:auth_lti:authsubsystem'] = 'このプラグインは認証サブシステムに接続されています。';
 $string['privacy:metadata:auth_lti:issuer'] = 'リンク先ユーザが所属するプラットフォームを識別するためのイシュアURLです。';

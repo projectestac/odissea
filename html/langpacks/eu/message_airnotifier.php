@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'eu', version '4.1'.
+ * Strings for component 'message_airnotifier', language 'eu', version '4.4'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -45,6 +45,7 @@ $string['devicetoken'] = 'Gailuaren tokena';
 $string['donotsendnotification'] = 'Ez bidali inolako jakinarazpenik';
 $string['enableprocessor'] = 'Gaitu mobile jakinarazpenak.';
 $string['encryptnotifications'] = 'Zifratu jakinarazpenak';
+$string['encryptnotifications_help'] = 'Gaitu aplikazioaren jakinarazpenen end-to-end zifratzea. Baliteke jakinarazpenetatik edukiren bat kentzea datu hori ezin bada zifratu.';
 $string['encryptprocessing'] = 'Zifratzea onartzen ez duten gailuentzat';
 $string['encryptprocessing_desc'] = 'Zifratutako jakinarazpenek gutxienez Android 6 ala iOS 13 eta Moodle Aplikazioaren 4.2 edo goragoko bertsioa izatea behar dute.';
 $string['errorretrievingkey'] = 'Errorea gertatu da sarrera-gakoa berreskuratzean. Zure gunea erregistratuta egon behar da zerbitzu hau erabiltzeko. Zure gunea dagoeneko erregistratuta badago mesedez saiatu zure erregistroa eguneratzen. Bestela, sarbide-gako bat lortu dezakezu <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a> kontu bat sortuta.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'de', version '4.1'.
+ * Strings for component 'qtype_ddmatch', language 'de', version '4.4'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -28,8 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['draganswerhere'] = 'Antwort hierher ziehen';
 $string['editingddmatch'] = 'Drag-and-Drop Zuordnungsfrage bearbeiten';
 $string['pluginname'] = 'Drag-and-Drop-Zuordnung';
-$string['pluginname_help'] = 'Bei der Drag-and-Drop Zuordnungsfrage müssen die Nutzer/innen eine Liste von Namen oder Aussagen (Fragen) korrekt mit einer zweiten Liste von Namen oder Aussagen (Antworten) verbinden, indem Texte oder Bilder mit der Maus verschoben und abgelegt werden.';
+$string['pluginname_help'] = 'Bei der Drag-and-Drop Zuordnungsfrage müssen die Nutzer/innen eine Liste von Namen oder Aussagen (Fragen) korrekt mit einer zweiten Liste von Namen oder Aussagen (Antworten) verbinden.';
 $string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Drag-and-Drop Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Drag-and-Drop Zuordnungsfrage bearbeiten';
 $string['pluginnamesummary'] = 'Bei dieser Erweiterung der Zuordnungsfrage können Antworten per Drag-and-Drop zugeordnet werden.';
+$string['privacy:metadata'] = 'Der Fragetyp Drag-and-Drop Zuordnungsfrage speichert keine personenbezogenen Daten.';

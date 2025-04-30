@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ru', version '4.1'.
+ * Strings for component 'gradingform_rubric', language 'ru', version '4.4'.
  *
  * @package     gradingform_rubric
  * @category    string

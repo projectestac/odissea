@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'fr', version '4.1'.
+ * Strings for component 'journal', language 'fr', version '4.4'.
  *
  * @package     journal
  * @category    string
@@ -52,8 +52,8 @@ $string['feedbackupdatedforuser'] = 'Feedback mis à jour pour {$a}';
 $string['firstnameasc'] = 'Prénom croissant';
 $string['firstnamedesc'] = 'Prénom décroissant';
 $string['gradeingradebook'] = 'Note dans le carnet';
-$string['incorrectcmid'] = 'L\'ID du module de cours est incorrect';
-$string['incorrectcourseid'] = 'L\'ID du cours est incorrect';
+$string['incorrectcmid'] = 'L’ID du module de cours est incorrect';
+$string['incorrectcourseid'] = 'L’ID du cours est incorrect';
 $string['incorrectcoursesectionid'] = 'La section de cours sélectionnée est incorrecte';
 $string['incorrectjournalentry'] = 'L’entrée de journal est incorrecte';
 $string['incorrectjournalid'] = 'L’ID de journal sélectionné est incorrect';
@@ -78,7 +78,7 @@ $string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Journaux';
 $string['needsregrade'] = 'L’entrée a changé depuis que le dernier feedback a été sauvegardé';
 $string['newjournalentries'] = 'Nouvelles entrées';
-$string['nodatachanged'] = 'Aucune donnée n\'a été modifiée.';
+$string['nodatachanged'] = 'Aucune donnée n’a été modifiée.';
 $string['nodeadline'] = 'Toujours ouvert';
 $string['noentriesmanagers'] = 'Il n’y a pas d’enseignants';
 $string['noentry'] = 'Journal vide';
@@ -88,8 +88,8 @@ $string['notstarted'] = 'Vous n’avez pas encore écrit dans ce journal';
 $string['overallrating'] = 'Note globale';
 $string['pluginadministration'] = 'Administration du module journal';
 $string['pluginname'] = 'Journal';
-$string['privacy:metadata:journal_entries'] = 'Un enregistrement d\'entrée de journal';
-$string['privacy:metadata:journal_entries:entrycomment'] = 'Le commentaire reçu par l\'utilisateur au journal';
+$string['privacy:metadata:journal_entries'] = 'Un enregistrement d’entrée de journal';
+$string['privacy:metadata:journal_entries:entrycomment'] = 'Le commentaire reçu par l’utilisateur au journal';
 $string['privacy:metadata:journal_entries:modified'] = 'La date et l’heure de début des entrées de journal';
 $string['privacy:metadata:journal_entries:rating'] = 'La note reçue par l’utilisateur au journal';
 $string['privacy:metadata:journal_entries:teacher'] = 'L’enseignant qui a donné du feedback à l’utilisateur sur le journal';

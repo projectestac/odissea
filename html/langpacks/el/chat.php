@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'el', version '4.1'.
+ * Strings for component 'chat', language 'el', version '4.4'.
  *
  * @package     chat
  * @category    string
@@ -109,7 +109,6 @@ $string['modulename_link'] = '';
 $string['modulenameplural'] = 'Συνομιλίες';
 $string['neverdeletemessages'] = 'Να μη γίνεται ποτέ διαγραφή μηνυμάτων';
 $string['nextchattime'] = 'Ώρα επόμενης γραπτής συνομιλίας:';
-$string['nextsession'] = 'Επόμενη χρονοπρογραμματισμένη σύνοδος';
 $string['no_complete_sessions_found'] = 'Δεν βρέθηκαν ολοκληρωμένες σύνοδοι.';
 $string['nochat'] = 'Η συνομιλία δε βρέθηκε';
 $string['noguests'] = 'Η συνομιλία δεν είναι ανοιχτή σε επισκέπτες';
@@ -158,7 +157,6 @@ $string['serverip'] = 'Διεύθυνση IP εξυπηρετητή';
 $string['servermax'] = 'Μέγιστος αριθμός χρηστών';
 $string['serverport'] = 'Θύρα (port) εξυπηρετητή';
 $string['sessions'] = 'Σύνοδοι γραπτής συνομιλίας';
-$string['sessionstart'] = 'Η επόμενη σύνοδος γραπτής συνομιλίας θα αρχίσει στις {$a->date}, ({$a->fromnow} από τώρα)';
 $string['sessionstartsin'] = 'Η επόμενη σύνοδος γραπτής συνομιλίας θα ξεκινήσει {$a} από τώρα.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Όλοι μπορούν να δουν τις περασμένες συνόδους';

@@ -23,7 +23,7 @@ namespace tool_brickfield\local\areas\core_question;
  * @copyright   2020 onward: Brickfield Education Labs, https://www.brickfield.ie
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class questionanswers_test extends \advanced_testcase {
+final class questionanswers_test extends \advanced_testcase {
 
     /**
      * Set up before class.
@@ -36,7 +36,7 @@ class questionanswers_test extends \advanced_testcase {
     /**
      * Test find course areas.
      */
-    public function test_find_course_areas() {
+    public function test_find_course_areas(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -122,7 +122,7 @@ class questionanswers_test extends \advanced_testcase {
     /**
      * Test find relevant areas.
      */
-    public function test_find_relevant_areas() {
+    public function test_find_relevant_areas(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 
@@ -153,7 +153,7 @@ class questionanswers_test extends \advanced_testcase {
     /**
      * Test find system areas.
      */
-    public function test_find_system_areas() {
+    public function test_find_system_areas(): void {
         $this->resetAfterTest();
         $this->setAdminUser();
 

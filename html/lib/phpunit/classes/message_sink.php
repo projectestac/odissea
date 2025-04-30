@@ -93,7 +93,10 @@ class phpunit_message_sink {
      * @param string $type Message type.
      * @return array List of messages.
      */
-    public function get_messages_by_component_and_type(string $component, string $type) {
+    public function get_messages_by_component_and_type(
+        string $component,
+        string $type,
+    ): array {
         return array_filter($this->get_messages_by_component($component), function($message) use ($type) {
             return $message->eventtype == $type;
         });

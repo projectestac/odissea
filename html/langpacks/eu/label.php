@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'eu', version '4.1'.
+ * Strings for component 'label', language 'eu', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -45,6 +45,8 @@ $string['indicator:socialbreadthdef_help'] = 'Partaide honek Testua eta multimed
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Gehitu Testua eta multimedia eremu berria';
 $string['label:view'] = 'Ikusi Testua eta multimedia eremua';
+$string['labelname'] = 'Izenburua ikastaroaren aurkibidean';
+$string['labelname_help'] = 'Izenburua soilik Testua eta multimedia eremua ikastaro aurkibidean eta jarduera-osaketan identifikatzeko erabiltzen da. Hutsik utziz gero izenburu bat sortuko da automatikoki testuaren lehen karaktereak erabilita.';
 $string['labeltext'] = 'Testua';
 $string['modulename'] = 'Testua eta multimedia eremua';
 $string['modulename_help'] = 'Testua eta multimedia eremuaren bidez ikastaroaren hasiera-orrian testu, irudiak eta bestelako multimedia baliabideak txerta daitezke.

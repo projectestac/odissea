@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', version '4.1'.
+ * Strings for component 'choice', language 'fr', version '4.4'.
  *
  * @package     choice
  * @category    string
@@ -54,7 +54,7 @@ $string['chooseaction'] = 'Choisir une action…';
 $string['chooseoption'] = 'Choisir : {$a}';
 $string['closebeforeopen'] = 'La date de fermeture indiquée est antérieure à la date d’ouverture.';
 $string['completiondetail:submit'] = 'Faire un choix';
-$string['completionsubmit'] = 'Afficher comme terminé quand l’utilisateur a rempli le sondage';
+$string['completionsubmit'] = 'Faire un choix';
 $string['description'] = 'Description';
 $string['deselectalloption'] = 'Désélectionner tous les « {$a} »';
 $string['displayhorizontal'] = 'Afficher horizontalement';

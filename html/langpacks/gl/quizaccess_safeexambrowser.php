@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_safeexambrowser', language 'gl', version '4.1'.
+ * Strings for component 'quizaccess_safeexambrowser', language 'gl', version '4.4'.
  *
  * @package     quizaccess_safeexambrowser
  * @category    string
@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedbrowserkeys'] = 'Teclas permitidas no navegador';
-$string['allowedbrowserkeys_help'] = 'Nesta caixa pode escribir as teclas permitidas para o navegador seguro de exame para acceder a esta proba. Se non se escriben teclas, quere dicir que non se require o emprego dun navegador seguro de exame para esta proba.';
-$string['allowedbrowserkeysdistinct'] = 'Todas as teclas deben ser diferentes.';
-$string['allowedbrowserkeyssyntax'] = 'Ten que escribir a lista de teclas permitidas a razón de unha por liña. Unha tecla debe ser unha cadea hexadecimal de 64 caracteres.';
-$string['allowedkeys_adv'] = 'As teclas son una configuración avanzada';
-$string['allowedkeys_adv_desc'] = 'Se esta opción está activada, a lista de teclas permitidas do navegador é un campo avanzado no formulario de configuración da proba.';
-$string['pluginname'] = 'Regra de acceso á proba co navegador seguro de exame';
+$string['allowedbrowserkeys'] = 'Chaves de exame do navegador permitidas';
+$string['allowedbrowserkeys_help'] = 'Nesta caixa pode introducir as chaves de exame permitidas do navegador para as versións do Navegador de exame seguro que están permitidas para acceder a este cuestionario. Se non se introducen chaves, entón non se require ningunha chave específica de exame do navegador para este cuestionario.';
+$string['allowedbrowserkeysdistinct'] = 'As chaves deben ser todas diferentes.';
+$string['allowedbrowserkeyssyntax'] = 'Debe introducir as chaves permitidas nunha por liña. Unha chave debe ser unha cadea hex de 64 caracteres.';
+$string['allowedkeys_adv'] = 'As chaves son un axuste avanzado';
+$string['allowedkeys_adv_desc'] = 'Se esta opción está activada, entón a lista das chaves permitidas do navegador é un campo avanzado no formulario de axustes do cuestionario.';
+$string['pluginname'] = 'Regra de acceso ao cuestionario do Navegador de exame seguro';
 $string['privacy:metadata'] = 'O complemento de Regra de acceso para Navegador de exame seguro non almacena ningún dato persoal.';
-$string['safebrowserdownloadurl'] = 'URL para descargar o navegador seguro de exame';
-$string['safebrowserdownloadurl_desc'] = 'Se escribe aquí un URL, informaráselle aos usuarios que poden descargar a versión requirida do navegador seguro de exame desde alí.';
-$string['safebrowsermustbeused'] = 'Ten que empregar unha versión aprobada do navegador seguro de exame para tentar esta proba.';
-$string['safebrowsermustbeusedwithlink'] = 'Ten que empregar unha versión aprobada do navegador seguro de exame para tentar esta proba. Pode descargalo de {$a->link}.';
-$string['safeexambrowser:exemptfromcheck'] = 'Eximir da comprobación de navegador seguro de exame';
+$string['safebrowserdownloadurl'] = 'URL de descarga do Navegador de exame seguro.';
+$string['safebrowserdownloadurl_desc'] = 'Se fornece un URL aquí, entón os usuarios serán informados de que poden descargar a versión requirida do Navegador de exame seguro dende alí.';
+$string['safebrowsermustbeused'] = 'Debe usar unha versión aprobada do Navegador de exame seguro para tentar este cuestionario.';
+$string['safebrowsermustbeusedwithlink'] = 'Debe usar unha versión aprobada do Navegador de exame seguro para tentar este cuestionario. Pode descargalo dende {$a->link}.';
+$string['safeexambrowser:exemptfromcheck'] = 'Exención de comprobación para o Navegador de exame seguro';

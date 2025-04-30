@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ar', version '4.1'.
+ * Strings for component 'h5pactivity', language 'ar', version '4.4'.
  *
  * @package     h5pactivity
  * @category    string
@@ -52,6 +52,7 @@ $string['attempt_success_unknown'] = 'غير مبلغ عنها';
 $string['attempts'] = 'محاولات';
 $string['attempts_none'] = 'ليس لهذا المستخدم محاولات لعرضها.';
 $string['attempts_report'] = 'تقرير المحاولات';
+$string['attempts_report_header_label'] = 'المحاولات ({$a})';
 $string['choice'] = 'خيار';
 $string['completion'] = 'إكمال';
 $string['contentbank'] = 'مزيد من المعلومات عن بنك المحتوى';
@@ -63,6 +64,8 @@ $string['displayembed'] = 'زر التضمين';
 $string['displayexport'] = 'إسمح بالتنزيل';
 $string['dnduploadh5pactivity'] = 'أضف نشاط H5P';
 $string['duration'] = 'المدة';
+$string['enablesavestate'] = 'حفظ الحالة';
+$string['enablesavestate_help'] = 'الحفظ التلقائي لحالة المستخدم الحالية. يمكن للمستخدم العودة لاحقًا والاستئناف من حيث انتهى.';
 $string['enabletracking'] = 'تمكين تعقب المحاولة';
 $string['false'] = 'خاطئ';
 $string['grade_average_attempt'] = 'متوسط العلامة';
@@ -79,6 +82,7 @@ $string['grade_h5p'] = 'العلامة: {$a}';
 $string['grade_highest_attempt'] = 'أعلى درجة';
 $string['grade_last_attempt'] = 'آخر محاولة';
 $string['grade_manual'] = 'لا تحتسب الدرجة';
+$string['gradenoun_h5p'] = 'العلامة: {$a}';
 $string['h5pactivity:addinstance'] = 'إضافة H5P جديد';
 $string['h5pactivity:reviewattempts'] = 'مراجعة محاولات H5P';
 $string['h5pactivity:submit'] = 'تسليم محاولات H5P';
@@ -106,7 +110,7 @@ $string['package_help'] = 'ملف الرزمة هو ملف h5p يتضمن محت
 $string['page-mod-h5pactivity-x'] = 'أي صفحة لوحدة H5P';
 $string['pluginadministration'] = 'إدارة H5P';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'يجري عرض المحتوى بنمط العرض المسبق. لن يتم حفظ تعقب المحاولة.';
+$string['previewmode'] = 'أنت الآن بنمط العرض المسبق.';
 $string['privacy:metadata:attempt'] = 'رقم المحاولة';
 $string['privacy:metadata:rawscore'] = 'الدرجة المحرزة';
 $string['privacy:metadata:timecreated'] = 'وقت إنشاء العنصر المتعقَّب';
@@ -114,6 +118,7 @@ $string['privacy:metadata:timemodified'] = 'وقت آخر تعقب للعنصر'
 $string['privacy:metadata:userid'] = 'مُعرَّف المستخدم الذي وصل إلى نشاط H5P';
 $string['privacy:metadata:xapi_track'] = 'معلومات تعقب المحاولة';
 $string['privacy:metadata:xapi_track_results'] = 'معلومات تعقب نتائج المحاولة';
+$string['privacy:metadata:xapisummary'] = 'نشاط H5P يحتوي على معلومات تتعلق بحالة المحتوى xAPI المخزونة من قبل المستخدم.';
 $string['report_viewed'] = 'تمت معاينة التقرير';
 $string['result_compound'] = 'الدرجة الجزئية المجمعة';
 $string['result_fill-in'] = 'نص ملء الفراغ';
@@ -123,12 +128,13 @@ $string['result_other'] = 'نوع تفاعل مجهول';
 $string['result_sequencing_answer'] = 'قيمة موجبة';
 $string['result_sequencing_choice'] = 'المواضع';
 $string['result_sequencing_position'] = 'رقم {$a}';
-$string['review_all_attempts'] = 'معاينة كل المحاولات ({$a} مسلمة)';
 $string['review_mode'] = 'مراجعة المحاولات';
 $string['review_my_attempts'] = 'معاينة محاولاتي';
 $string['review_none'] = 'المشاركون لا يمكنهم مراجعة محاولاتهم';
 $string['review_on_completion'] = 'المشاركون يمكنهم مراجعة محاولاتهم';
-$string['review_user_attempts'] = 'معاينة محاولات المستخدم ({$a})';
+$string['review_user_attempts'] = 'معاينة ({$a})';
+$string['savestatefreq'] = 'تواتر حفظ الحالة';
+$string['savestatefreq_help'] = 'كم مرة (بالثواني) يتم فيها حفظ حالة المستخدم.';
 $string['score'] = 'الدرجة';
 $string['score_out_of'] = '{$a->rawscore} من أصل {$a->maxscore}';
 $string['search:activity'] = 'H5P - معلومات النشاط';
@@ -136,7 +142,10 @@ $string['startdate'] = 'تاريخ البدء';
 $string['statement_received'] = 'عبارة xAPI تم تلقيها';
 $string['totalscore'] = 'الدرجة الإجمالية';
 $string['tracking_messages'] = 'بعض أنواع H5P تقدم بيانات تعقب المحاولة للتقارير المتقدمة، مثل عدد المحاولات، الإجابات والتقديرات. ملاحظة: بعض أنواع H5P لا تقدم بيانات تعقب المحاولة. في تلك الحالات، الإعدادات التالية لن يكون لها تأثير.';
+$string['trackingdisabled'] = 'تتبع المحاولة غير مُمَكَّن لهذا النشاط.';
+$string['trackingdisabled_enable'] = 'تتبع المحاولة غير مُمَكَّن لهذا النشاط. يمكنك تمكينه من <a href="{$a}">الإعدادات</a>.';
 $string['true'] = 'صح';
 $string['usecontentbank'] = 'استعمل <a href="{$a}" target="_blank">بنك المحتوى (يُفتح بنافذة جديدة)</a> لإدارة ملفاتك في H5P';
 $string['view'] = 'معاينة';
 $string['view_report'] = 'معاينة التقرير';
+$string['viewattempts'] = 'معاينة محاولات ({$a})';

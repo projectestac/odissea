@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'de', version '4.1'.
+ * Strings for component 'tool_brickfield', language 'de', version '4.4'.
  *
  * @package     tool_brickfield
  * @category    string
@@ -75,7 +75,7 @@ $string['checkdesc:headerh3'] = 'Überschriften, die nach h3-Überschriften folg
 $string['checkdesc:headershavetext'] = 'Eine Überschrift \'h3 ... h5\' muss Text enthalten, um wahrnehmbar zu sein.';
 $string['checkdesc:iisnotused'] = 'Italic-Elemente \'i\' sollten nicht verwendet werden. Besser ist stattdessen \'em\' (emphasis).';
 $string['checkdesc:imgaltisdifferent'] = 'Der alternative Text \'alt\' bei Bildern sollte nicht der Dateiname des Bildes sein.';
-$string['checkdesc:imgaltistoolong'] = 'Der alternative Text \'alt\' bei Bildern sollte nicht länger als die maximal erlaubten 125 Zeichen sein.';
+$string['checkdesc:imgaltistoolong'] = 'Stellen Sie sicher, dass der alternative Bildtext (alt) präzise genug ist, um das Bild zu beschreiben.';
 $string['checkdesc:imgaltnotemptyinanchor'] = 'Der alternative Text \'alt\' bei Bildern sollte nicht leer sein, vor allem wenn das Bild ein Link nach irgendwo ist.';
 $string['checkdesc:imgaltnotplaceholder'] = 'Der alternative Text \'alt\' bei Bildern sollte kein beliebiger Platzhaltertext wie etwa \'Bild\' oder \'image\' sein.';
 $string['checkdesc:imghasalt'] = 'Der alternative Text \'alt\' bei Bildern sollte bei Bildelemente immer vorhanden sein, außer die Bilder sind rein dekorativ oder haben keine Bedeutung.';

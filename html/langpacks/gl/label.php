@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'gl', version '4.1'.
+ * Strings for component 'label', language 'gl', version '4.4'.
  *
  * @package     label
  * @category    string
@@ -25,38 +25,40 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Ofrecer crear unha etiqueta cando se arrastren ficheiros multimedia e se solten nun curso';
-$string['configdndresizeheight'] = 'Cando se crea unha etiqueta a partires dunha imaxe arrastrada e soltada, redimensionar o seu tamaño se for mais alto que estes píxeles (0 para non redimensionar)';
-$string['configdndresizewidth'] = 'Cando se crea unha etiqueta a partires dunha imaxe arrastrada e soltada, redimensionar o seu tamaño se for máis largo que estes píxeles (0 para non redimensionar)';
+$string['configdndmedia'] = 'Ofrecer crear unha área de texto e multimedia cando se arrastren ficheiros multimedia e se solten nun curso';
+$string['configdndresizeheight'] = 'Cando se crea unha área de texto e multimedia a partires dunha imaxe arrastrada e soltada, redimensionar o seu tamaño se for mais alto que estes píxeles. Se se define a cero non se redimensionará)';
+$string['configdndresizewidth'] = 'Cando se crea unha área de texto e multimedia a partires dunha imaxe arrastrada e soltada, cambia o seu tamaño se for a estes píxeles. Se se define a cero non se redimensionará)';
 $string['dndmedia'] = 'Arrastrar e soltar multimedia';
 $string['dndresizeheight'] = 'Redimensionar o alto ao arrastrar e soltar';
 $string['dndresizewidth'] = 'Redimensionar o largo ao arrastrar e soltar';
 $string['dnduploadlabel'] = 'Engadir unha imaxe á páxina do curso';
-$string['dnduploadlabeltext'] = 'Engadir unha etiqueta á páxina do curso';
-$string['indicator:cognitivedepth'] = 'Etiqueta cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso etiqueta.';
-$string['indicator:cognitivedepthdef'] = 'Etiqueta cognitiva';
-$string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen os recursos de Etiqueta durante este intervalo de análise (Niveis = Sen vista, Ver)';
+$string['dnduploadlabeltext'] = 'Engadir unha área de texto e multimedia á páxina do curso';
+$string['indicator:cognitivedepth'] = 'Área cognitiva de texto e multimedia';
+$string['indicator:cognitivedepth_help'] = 'Este indicador baséase na profundidade cognitiva acadada polo alumno nun recurso de área de texto e multimedia.';
+$string['indicator:cognitivedepthdef'] = 'Área cognitiva de texto e multimedia';
+$string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo ofrecido polos recursos da área de texto e multimedia durante este intervalo de análise (Niveis = Sen vista, Vista)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:socialbreadth'] = 'Etiqueta social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso etiqueta.';
-$string['indicator:socialbreadthdef'] = 'Etiqueta social';
-$string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos de Etiqueta durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
+$string['indicator:socialbreadth'] = 'Área social de texto e multimedia';
+$string['indicator:socialbreadth_help'] = 'Este indicador baséase na amplitude social acadada polo alumno nun recurso de área de texto e multimedia.';
+$string['indicator:socialbreadthdef'] = 'Área social de texto e multimedia';
+$string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos de texto e multimedia durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['label:addinstance'] = 'Engadir unha nova etiqueta';
-$string['label:view'] = 'Ver a etiqueta';
-$string['labeltext'] = 'Texto da etiqueta';
-$string['modulename'] = 'Etiqueta';
-$string['modulename_help'] = 'O módulo etiqueta permite inserir texto e multimedia nunha páxina de curso xunto con ligazóns a outros recursos e actividades. As etiquetas son moi versátiles e poden axudar a mellorar a aparencia dun curso se se empregan intelixentemente.
+$string['label:addinstance'] = 'Engadir unha nova área de texto e multimedia';
+$string['label:view'] = 'Vista da área de texto e multimedia';
+$string['labelname'] = 'Nome';
+$string['labelname_help'] = 'O nome usase só para identificar a área de texto e medios no índice do curso e para completar a actividade. Se deixa isto baleiro, xerarase automaticamente un nome empregando os primeiros caracteres do texto.';
+$string['labeltext'] = 'Texto';
+$string['modulename'] = 'Área de texto e multimedia';
+$string['modulename_help'] = 'A área de texto e multimedia permite amosar texto e multimedia na páxina do curso.
 
-As etiquetas poden usarse
+Pode usar unha área de texto e mulimedia para:
 
-* Para dividir unha larga lista de actividades cunha subcabeceira ou unha imaxe
-* Para amosar directamente un ficheiro de son ou vídeo incrustado na páxina do curso
-* Para engadir unha descrición curta a unha sección de curso';
+*Dividir unha longa lista de actividades do curso cun subtítulo ou unha imaxe
+* Amosar un vídeo incrustado directamente na páxina do curso
+* Engadir unha breve descrición a unha sección do curso';
 $string['modulename_link'] = 'mod/label/view';
-$string['modulenameplural'] = 'Etiquetas';
-$string['pluginadministration'] = 'Administración de etiqueta';
-$string['pluginname'] = 'Etiqueta';
-$string['privacy:metadata'] = 'O engadido de recurso etiqueta non almacena ningún dato persoal.';
-$string['search:activity'] = 'Etiqueta';
+$string['modulenameplural'] = 'Áreas de texto e multimedia';
+$string['pluginadministration'] = 'Administración da area de texto e multimedia';
+$string['pluginname'] = 'Área de texto e multimedia';
+$string['privacy:metadata'] = 'O complemento de Área de texto e multimedia non almacena ningún dato persoal.';
+$string['search:activity'] = 'Área de texto e multimedia';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'it', version '4.1'.
+ * Strings for component 'blog', language 'it', version '4.4'.
  *
  * @package     blog
  * @category    string
@@ -34,6 +34,7 @@ $string['associatewithmodule'] = 'Blog su {$a->modtype}: {$a->modname}';
 $string['association'] = 'Associazione';
 $string['associations'] = 'Associazioni';
 $string['associationunviewable'] = 'Questo intervento non può essere visualizzato da altri utenti finché non sarà associato un corso oppure non sarà cambiato il campo \'Pubblica in\'';
+$string['author'] = 'Autore';
 $string['autotags'] = 'Aggiungi questi tag';
 $string['autotags_help'] = 'Inserisci uno più tag locali (separati da virgole) da aggiungere automaticamente agli interventi copiati dal blog esterno al blog locale. ';
 $string['backupblogshelp'] = 'Se abilitato, i blog verranno inclusi nei backup automatici di SITO';
@@ -43,6 +44,7 @@ $string['blogaboutthis'] = 'Blog su questo {$a->type}';
 $string['blogaboutthiscourse'] = 'Aggiungi un intervento su questo corso';
 $string['blogaboutthismodule'] = 'Aggiungi un intervento su questo {$a}';
 $string['blogadministration'] = 'Gestione blog';
+$string['blogattachment'] = 'Allegato blog';
 $string['blogdeleteconfirm'] = 'Vuoi eliminare l\'intervento blog \'{$a}\'?';
 $string['blogdisable'] = 'I blog sono disabilitati!';
 $string['blogentries'] = 'Interventi blog';
@@ -57,6 +59,7 @@ $string['blogs'] = 'Blog';
 $string['blogscourse'] = 'Blog del corso';
 $string['blogssite'] = 'Blog del sito';
 $string['blogtags'] = 'Tag dei blog';
+$string['cannoteditentryorblog'] = 'Non puoi modificare questa voce o blog';
 $string['cannotviewcourseblog'] = 'Non sei autorizzato a vedere i blog in questo corso';
 $string['cannotviewcourseorgroupblog'] = 'Non sei autorizzato a visualizzare i blog di questo corso o gruppo';
 $string['cannotviewsiteblog'] = 'Non sei autorizzato a visualizzare i blog del sito';
@@ -87,6 +90,7 @@ $string['entrybodyonlydesc'] = 'Descrizione intervento';
 $string['entryerrornotyours'] = 'Questo intervento non ti appartiene';
 $string['entrysaved'] = 'Il tuo intervento è stato salvato';
 $string['entrytitle'] = 'Titolo intervento';
+$string['entrytitlewithlink'] = 'Titolo dell\'articolo con collegamento';
 $string['eventblogassociationadded'] = 'Creazione associazione blog';
 $string['eventblogassociationdeleted'] = 'Eliminazione associazione blog';
 $string['eventblogentriesviewed'] = 'Visualizzazione intervento blog';
@@ -114,7 +118,7 @@ $string['incorrectblogfilter'] = 'È stato specificato un tipo di filtro blog er
 $string['intro'] = 'Questo RSS è stato creato automaticamente da uno o più blog.';
 $string['invalidgroupid'] = 'ID gruppo non valida';
 $string['invalidurl'] = 'L\'URL non è raggiungibile';
-$string['linktooriginalentry'] = 'Collegamento all\'intervento originale';
+$string['linktooriginalentry'] = 'intervento blog originale';
 $string['maxexternalblogsperuser'] = 'Numero massimo di blog esterni per ciascun utente';
 $string['myprofileuserblogs'] = 'Visualizza tutti gli interventi blog';
 $string['name'] = 'Nome';
@@ -157,6 +161,7 @@ $string['privacy:metadata:post:userid'] = 'ID dell\'utente che ha inserito l\'in
 $string['privacy:metadata:post:usermodified'] = 'Utente che ha modificato l\'intervento più recentemente';
 $string['privacy:path:blogassociations'] = 'Interventi blog associati';
 $string['privacy:unknown'] = 'Sconosciuto';
+$string['published'] = 'Pubblicato';
 $string['publishto'] = 'Pubblicazione';
 $string['publishto_help'] = 'Sono disponibili 3 opzioni:
 
@@ -166,6 +171,7 @@ $string['publishto_help'] = 'Sono disponibili 3 opzioni:
 $string['publishtocourse'] = 'Utenti iscritti ai tuoi stessi corsi';
 $string['publishtocourseassoc'] = 'Membri del corso associato';
 $string['publishtocourseassocparam'] = 'Membri di {$a}';
+$string['publishtodraft'] = 'Bozza';
 $string['publishtogroup'] = 'Utenti membri dei tuoi stessi gruppi';
 $string['publishtogroupassoc'] = 'I membri del tuo gruppo nel corso associato';
 $string['publishtogroupassocparam'] = 'I membri del tuo gruppo in {$a}';
@@ -214,4 +220,3 @@ $string['viewsiteentries'] = 'Visualizza tutti gli interventi';
 $string['viewuserentries'] = 'Visualizza tutti gli interventi di {$a}';
 $string['worldblogs'] = 'Chiunque può leggere gli interventi impostati come pubblici';
 $string['wrongexternalid'] = 'L\'ID del blog esterno non è corretta';
-$string['wrongpostid'] = 'Id errata dell\'intervento blog';

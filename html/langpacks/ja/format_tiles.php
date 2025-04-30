@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ja', version '4.1'.
+ * Strings for component 'format_tiles', language 'ja', version '4.4'.
  *
  * @package     format_tiles
  * @category    string
@@ -244,7 +244,6 @@ $string['imagedeletedfrom'] = '"{$a}"から画像が削除されました。';
 $string['imagesavedfor'] = '画像がタイル{$a}に保存されました';
 $string['imagesize'] = '画像サイズ';
 $string['jsactivate'] = 'アニメーション付きナビゲーション「オン」';
-$string['jsdeactivate'] = 'アニメーション付きナビゲーション「オフ」';
 $string['jsdeactivated'] = 'あなたのアカウントでアニメーション付きナビゲーションを無効にしました。';
 $string['jsnavsettings'] = 'JavaScriptナビゲーション';
 $string['jsreactivated'] = 'あなたのアカウントでは、アニメーション付きナビゲーションが有効になっています。こちらの方が早いかもしれません。JavaScriptを有効にする必要があります。';
@@ -349,6 +348,7 @@ $string['tileicon_help'] = 'ここで選択されたアイテムは、コース�
 $string['tileicons'] = 'タイルのアイコン';
 $string['tileoutcome'] = 'このタイルのアウトカム';
 $string['tileoutcome_help'] = 'このタイルに結果を選択した場合、コース設定でフィルターボタンのセットを表示することができます。各結果に対して1つずつ表示され、押したときにどの結果が割り当てられているかによって表示されたタイルをフィルターします';
+$string['tileselecttip'] = 'タイルのアイコンや写真を簡単に変更する方法をご紹介します。コース上で編集モードをオンにした状態で、変更したいアイコンや写真をクリックするだけです。アイコンの選択画面が表示されます。';
 $string['tilesformatregistration'] = 'タイルフォーマットの登録';
 $string['togglecompletion'] = 'クリックすると完了ステータスが切り替わります。';
 $string['tootall'] = 'タイルに対して高すぎる';

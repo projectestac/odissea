@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'ar', version '4.1'.
+ * Strings for component 'theme_classic', language 'ar', version '4.4'.
  *
  * @package     theme_classic
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'تحضير مسبق للنمط';
 $string['preset_desc'] = 'إنتقِ إعداداً مسبقاً لتغيير شكل المظهر على نطاق واسع.';
 $string['presetfiles'] = 'ملفات محددة مسبقاً للمظهر';
-$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير سمة المظهر بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://archive.moodle.net/boost">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
+$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير سمة المظهر بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://moodle.net/search?q=boost+presets">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
 $string['privacy:metadata'] = 'المظهر Classic لا يخزن أيّ بيانات شخصية.';
 $string['region-side-post'] = 'يمين';
 $string['region-side-pre'] = 'يسار';

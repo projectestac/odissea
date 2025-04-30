@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'uk', version '4.1'.
+ * Strings for component 'competency', language 'uk', version '4.4'.
  *
  * @package     competency
  * @category    string
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'Оцінювання компет�
 $string['evidence_manualoverrideinplan'] = 'Оцінювання компетентності дане вручну в плані «{$a}».';
 $string['invalidevidencedesc'] = 'Опис підтвердження недійсний';
 $string['invalidgrade'] = 'Оцінювання недійсне';
-$string['invalidpersistenterror'] = 'Помилка: {$a}';
 $string['invalidplan'] = 'Навчальний план недійсний';
 $string['invalidtaxonomy'] = 'Таксономія недійсна: {$a}';
 $string['invalidurl'] = 'URL не дійсний. Він має починатися з « http:// » або « https:// ».';

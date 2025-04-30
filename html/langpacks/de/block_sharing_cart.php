@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'de', version '4.1'.
+ * Strings for component 'block_sharing_cart', language 'de', version '4.4'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_string'] = 'Aktivität';
+$string['async_restore_in_progress'] = 'Geteiltes Element "{$a->modtext}" in Abschnitt Nr. {$a->section} wiederherstellen';
 $string['backup'] = 'In den Zwischenspeicher kopieren';
 $string['backup_heavy_load_warning_message'] = 'Wenn der Abschnitt mehrere Aktivitäten beinhaltet, kann die Verarbeitung längere Zeit in Anspruch nehmen.';
+$string['backupnotfound'] = 'Sicherungsdatei nicht gefunden';
 $string['bulkdelete'] = 'Mehrere Elemente löschen';
 $string['clicktomove'] = 'Klicken um zu verschieben';
 $string['clipboard'] = 'Dieses Element kopieren';
@@ -44,6 +46,9 @@ $string['conflict_description_note'] = '*Formatierungen der Abschnittsbeschreibu
 $string['conflict_no_overwrite'] = 'Aktuellen Abschnittstitel <strong>"{$a}"</strong> und Abschnittseinstellungen  beibehalten';
 $string['conflict_overwrite_title'] = 'Abschnittstitel mit <strong>"{$a}"</strong> sowie Abschnittseinstellungen überschreiben';
 $string['conflict_submit'] = 'Weiter';
+$string['copy_activity'] = 'Aktivität kopieren';
+$string['copy_activity_reason'] = 'Diese Ansicht ist verfügbar, weil Sie Zugriff auf gesicherte Aktivitäten haben, aber keine Rechte Aktivitäten zu verwalten/verschieben.';
+$string['copy_activity_title'] = 'Ausgewählte Aktivität kopieren';
 $string['copy_section'] = 'Abschnitt kopieren';
 $string['copy_section_title'] = 'Ausgewählte Abschnitte kopieren';
 $string['copyhere'] = 'Hierher kopieren';
@@ -60,6 +65,7 @@ $string['missing_capability'] = 'Notwendiges Recht fehlt: {$a}';
 $string['modal_bulkdelete_confirm'] = 'Markierte löschen';
 $string['modal_bulkdelete_title'] = 'Möchten Sie wirklich löschen?';
 $string['modal_checkbox'] = 'Möchten Sie Nutzerdaten mitkopieren (z.B. Glossar-, Wiki-, Datenbankinhalte)?';
+$string['modal_checkbox_anonymize'] = 'Möchten Sie die Nutzerdaten anonymisieren?';
 $string['modal_confirm_backup'] = 'Bestätigen';
 $string['modal_confirm_delete'] = 'Löschen';
 $string['movedir'] = 'In Verzeichnis bewegen';
@@ -88,8 +94,16 @@ $string['settings:add_to_sharing_cart'] = 'Zum Zwischenspeicher hinzufügen';
 $string['settings:add_to_sharing_cart_desc'] = 'Wählen Sie zwischen der Drag-and-Drop- oder der Anklicken-Methode zum Hinzufügen von Modulen und Abschnitten zum gemeinsamen Zwischenspeicher.
 Die "Anklicken"-Methode ist die Standardmethode für den "Zwischenspeicher zum Teilen", bei der Sie auf das Warenkorbsymbol klicken müssen, bevor das Modul in den Zwischenspeicher gelegt wird.
 Mit "Drag and Drop" können Sie Module und Aktivitäten sowie ganze Abschnitte per Drag and Drop in den Zwischenspeicher oder auf das Warenkorbsymbol in der Fußzeile ziehen. Beachten Sie bitte, dass dies nur für Moodle 4.0+ unterstützt wird.';
+$string['settings:backup_mode'] = 'Sicherungsmodus';
+$string['settings:backup_mode_desc'] = 'Wählen Sie zwischen dem unmittelbaren und dem asynchronen Sicherungsmodus';
+$string['settings:backup_restore_mode_async'] = 'Asynchron';
+$string['settings:backup_restore_mode_immediate'] = 'Unmittelbar';
 $string['settings:click_to_add'] = 'Klicken zum Hinzufügen';
 $string['settings:drag_and_drop'] = 'Drag-and-Drop';
+$string['settings:restore_mode'] = 'Wiederherstellungsmodus';
+$string['settings:restore_mode_desc'] = 'Wählen Sie zwischen dem unmittelbaren und dem asynchronen Wiederherstellungsmodus';
+$string['settings:show_copy_activity_in_block'] = '"Aktivität kopieren" im Block anzeigen';
+$string['settings:show_copy_activity_in_block_desc'] = '"Aktivität kopieren" im Block "Zwischenspeicher zum Teilen" unter allen Modulen/Aktivitäten anzeigen - Dies ist nur verfügbar, wenn die Person das Recht zur Sicherung von Aktivitäten, aber nicht das Recht zum Verwalten/Verschieben von Aktivitäten besitzt.';
 $string['settings:show_copy_section_in_block'] = '"Abschnitt kopieren" im Block anzeigen';
 $string['settings:show_copy_section_in_block_desc'] = '"Abschnitt kopieren" im Block "Zwischenspeicher zum Teilen" anzeigen';
 $string['settings:userdata_copyable_modtypes'] = 'Aktivitätstypen mit kopierbaren Nutzerdaten';

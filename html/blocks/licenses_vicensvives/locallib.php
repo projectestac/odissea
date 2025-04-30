@@ -19,7 +19,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once("$CFG->dirroot/blocks/courses_vicensvives/lib/vicensvives.php");
 
 function vicensvives_count_licenses($idcoursebook=null) {
-    $result = array();
+    $result = [];
     $ws = new vicensvives_ws();
 
     foreach ($ws->licenses($idcoursebook) as $license) {
