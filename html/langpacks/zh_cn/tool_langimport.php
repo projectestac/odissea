@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = '无法连接到下载服务器。无法自动安装或更新语言包。请从<a href=“{$a->src}”>{$a->src}</a>下载相应的ZIP文件，并手动将其解压缩到数据目录<code>{$a->dest}</code>';
+$string['downloadnotavailable'] = '无法连接到下载服务器。无法自动安装或更新语言包。请从<a href="{$a->src}">{$a->src}</a>手动下载相应的 ZIP 文件，并解压到您的数据目录<code>{$a->dest}</code>。';
 $string['install'] = '安装选定的语言包';
 $string['installedlangs'] = '安装语言包';
 $string['installfailed'] = '语言包安装失败！';

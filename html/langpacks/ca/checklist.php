@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additem'] = 'Afegeix';
 $string['autoupdate'] = 'Marca quan es completen els mòduls';
 $string['comments'] = 'Comentaris';
 $string['duedatesoncalendar'] = 'Afegeix dates de venciment al calendari';

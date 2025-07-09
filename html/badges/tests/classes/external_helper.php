@@ -52,6 +52,8 @@ trait external_helper {
         $this->assertEquals($expected['imageauthorurl'], $actual['imageauthorurl']);
         $this->assertEquals($expected['imagecaption'], $actual['imagecaption']);
         $this->assertEquals($expected['badgeurl'], $actual['badgeurl']);
+        $this->assertEquals($expected['recipientid'], $actual['recipientid']);
+        $this->assertEquals($expected['recipientfullname'], $actual['recipientfullname']);
         $this->assertEquals($expected['endorsement'] ?? null, $actual['endorsement'] ?? null);
 
         if ($isrecipient || $canconfiguredetails) {
@@ -174,6 +176,8 @@ trait external_helper {
             'visible' => (int) $siteissuedbadge->visible,
             'badgeurl' => \moodle_url::make_webservice_pluginfile_url($systemcontext->id, 'badges', 'badgeimage',
                                                                       $sitebadge->id, '/', 'f3')->out(false),
+            'recipientid' => $student->id,
+            'recipientfullname' => fullname($student),
             'email' => $student->email,
             'endorsement' => null,
             'alignment' => [],
@@ -254,6 +258,8 @@ trait external_helper {
             'visible' => (int) $courseissuedbadge->visible,
             'badgeurl' => \moodle_url::make_webservice_pluginfile_url($coursecontext->id, 'badges', 'badgeimage',
                                                                       $coursebadge->id, '/', 'f3')->out(false),
+            'recipientid' => $student->id,
+            'recipientfullname' => fullname($student),
             'email' => $student->email,
             'endorsement' => null,
             'alignment' => [],

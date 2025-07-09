@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontfamily'] = 'Letra-mota';
+$string['fontfamily:use'] = 'Baimendu plugina erabiltzea';
 $string['fonts'] = 'Letra-motak';
 $string['fonts_desc'] = 'Eskuragarri dauden letra-motak (letra-mota bat errenkada bakoitzean).';
 $string['menuitem_fontfamily'] = 'Letra-mota';

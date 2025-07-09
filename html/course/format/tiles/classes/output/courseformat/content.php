@@ -69,6 +69,12 @@ class content extends content_base {
                         . get_string('version', 'format_tiles', \format_tiles\local\util::get_tiles_plugin_release()) . ')';
                 }
                 $data->editoradvice[] = ['text' => $messgage, 'icon' => 'info-circle', 'class' => 'secondary'];
+
+                // Inline folders will not display in sub-tiles view so warn if present.
+                $folderwarning = self::get_inline_folder_warning($course->id);
+                if ($folderwarning) {
+                    $data->editoradvice[] = ['text' => $folderwarning, 'icon' => 'exclamation-triangle', 'class' => 'warning'];
+                }
             }
             // If completion tracking is on but nothing to track at activity level, display help to teacher.
             $warneditorcompletion = $course->enablecompletion
@@ -131,4 +137,27 @@ class content extends content_base {
         return $data;
     }
 
+    /**
+     * Folders set to display inline will not work this format (if using subtiles).
+     * Find any instance so we can warn editing user.
+     * @param int $courseid the course ID.
+     */
+    private function get_inline_folder_warning(int $courseid): ?string {
+        global $DB, $CFG;
+        require_once("$CFG->dirroot/mod/folder/lib.php");
+        $inlinefolder = $DB->get_record_sql(
+            "SELECT cm.id, f.name
+            FROM {folder} f
+            JOIN {course_modules} cm ON cm.instance = f.id
+            JOIN {modules} m ON m.id = cm.module and m.name = 'folder'
+            WHERE f.course = :courseid and f.display = :display LIMIT 1",
+            ['courseid' => $courseid, 'display' => FOLDER_DISPLAY_INLINE]
+        );
+        if ($inlinefolder) {
+            $editurl = new \moodle_url('/course/modedit.php', ['update' => $inlinefolder->id]);
+            $link = \html_writer::link($editurl, $inlinefolder->name);
+            return get_string('folderdisplayerror', 'format_tiles', $link);
+        }
+        return null;
+    }
 }

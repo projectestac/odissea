@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Préréglage de thème';
 $string['preset_desc'] = 'Veuillez choisir un préréglage pour modifier l’aspect du thème.';
 $string['presetfiles'] = 'Fichiers de préréglages additionnels pour le thème';
-$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> pour des informations sur la façon de créer et partager vos propres fichiers de préréglages et consultez le <a href="https://moodle.net/search?q=boost+presets">catalogue des fichiers de préréglages</a> que d’autres utilisateurs ont partagés.';
+$string['presetfiles_desc'] = 'Des fichiers de préréglages peuvent être utilisés afin de changer totalement la présentation d’un thème.';
 $string['privacy:drawerblockclosed'] = 'Le réglage actuel pour le tiroir des blocs est « fermé ».';
 $string['privacy:drawerblockopen'] = 'Le réglage actuel pour le tiroir des blocs est « ourvert ».';
 $string['privacy:drawerindexclosed'] = 'Le réglage actuel pour le tiroir de l’index du cours est « fermé ».';

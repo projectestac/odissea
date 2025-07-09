@@ -42,6 +42,7 @@ final class grouping_handler_test extends advanced_testcase {
      * Setup.
      */
     public function setUp(): void {
+        parent::setUp();
         $this->handler = grouping_handler::create();
     }
 

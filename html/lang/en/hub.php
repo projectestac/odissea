@@ -24,6 +24,8 @@
  */
 $string['activeparticipantnumberaverage'] = 'Average number of recently active participants ({$a})';
 $string['activeusersnumber'] = 'Number of recently active users ({$a})';
+$string['aiusagedata'] = 'AI usage data';
+$string['aiusagestats'] = 'AI usage stats ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Number of actions taken on generated predictions ({$a})';
 $string['analyticsactionsnotuseful'] = 'Number of actions marking a prediction as not useful ({$a})';
 $string['analyticsenabledmodels'] = 'Number of enabled prediction models ({$a})';
@@ -33,6 +35,7 @@ $string['audience_help'] = 'Select the intended audience for the course.';
 $string['audienceeducators'] = 'Educators';
 $string['audiencestudents'] = 'Students';
 $string['audienceadmins'] = 'Moodle administrators';
+$string['average_time'] = 'Average processing time ({$a})';
 $string['badgesnumber'] = 'Number of badges ({$a})';
 $string['communityremoved'] = 'That course link has been removed from your list';
 $string['confirmregistration'] = 'Confirm registration';
@@ -63,6 +66,7 @@ $string['errorotherhubsnotsupported'] = 'This page can no longer be used for reg
 $string['errorws'] = '{$a}';
 $string['errorwstokenreset'] = '{$a}. Registration token on this site has been reset. You can now register your site again.';
 $string['errorregistrationupdate'] = 'An error occurred during registration update ({$a})';
+$string['fail_count'] = 'Fail count ({$a})';
 $string['geolocation'] = 'Geolocation';
 $string['geolocation_help'] = 'In future we may provide location-based searching. If you want to specify the location for your course use a latitude/longitude value here (eg: -31.947884,115.871285).  One way to find this is to use Google Maps.';
 $string['imageurl'] = 'Image URL';
@@ -77,6 +81,7 @@ $string['licence_link'] = 'licenses';
 $string['logourl'] = 'Logo URL';
 $string['mobilenotificationsenabled'] = 'Mobile notifications enabled ({$a})';
 $string['mobileservicesenabled'] = 'Mobile services enabled ({$a})';
+$string['models'] = 'Models';
 $string['modulenumberaverage'] = 'Average number of course modules ({$a})';
 $string['mustselectsubject'] = 'You must select a subject';
 $string['name'] = 'Name';
@@ -84,16 +89,19 @@ $string['name_help'] = 'This name will be showing in the course listing.';
 $string['neverchecked'] = 'Never checked';
 $string['next'] = 'Next';
 $string['no'] = 'No';
+$string['noaiusagedata'] = 'AI usage data (none)';
 $string['nocheckstatusfromunreghub'] = 'The site is not registered on the hub so the status can not be checked.';
 $string['nohubselected'] = 'No hub selected';
 $string['none'] = 'None';
 $string['operation'] = 'Actions';
 $string['participantnumberaverage'] = 'Average number of participants ({$a})';
+$string['pluginusagedata'] = 'Plugin usage data collected from: <a href="{$a->overview}">Plugins overview</a>, <a href="{$a->activities}">Manage activities</a>, and <a href="{$a->blocks}">Manage blocks</a>';
 $string['policyagreed'] = 'Privacy notice and data processing agreement';
 $string['policyagreeddesc'] = 'I agree to the <a href="{$a}" target="_blank">Privacy notice and data processing agreement</a>';
 $string['postaladdress'] = 'Postal address';
 $string['postaladdress_help'] = 'Postal address of this site, or of the entity represented by this site.';
 $string['postsnumber'] = 'Number of posts ({$a})';
+$string['predominant_error'] = 'Predominant HTTP error ({$a})';
 $string['previousregistrationdeleted'] = 'The previous registration has been deleted from {$a}. You can restart the registration process. Thank you.';
 $string['primaryauthtype'] = 'Primary authentication type ({$a})';
 $string['questionsnumber'] = 'Number of questions ({$a})';
@@ -105,15 +113,15 @@ $string['registeredactiveuserdevices'] = 'Number of active users with registered
 $string['registerwithmoodleorg'] = 'Register your site';
 $string['registerwithmoodleorgupdate'] = 'Update your site registration';
 $string['registerwithmoodleorgcomplete'] = 'Complete your site registration';
-$string['registerwithmoodleorginfo'] = 'We\'d love to stay in touch and provide you with important things for your Moodle site! By registering:
+$string['registerwithmoodleorginfo'] = 'Registering your site involves periodically sending <a href="{$a->moreinformation}" class="focus-expand">anonymised site stats</a> to Moodle HQ. This helps us gain insights into how you\'re using Moodle, and make decisions about new features and plugins.
 
-* You can subscribe to receive notifications of new Moodle releases, security alerts and other important news.
-* You can access and activate mobile push notifications from your Moodle site through our free Moodle app.
-* You are contributing to our Moodle statistics of the worldwide community, which help us improve Moodle and our community sites.
-* If you wish, your site can be included in the list of registered Moodle sites in your country.';
-$string['registerwithmoodleorginfoapp'] = 'About the Moodle app';
-$string['registerwithmoodleorginfostats'] = 'Moodle statistics';
-$string['registerwithmoodleorginfosites'] = 'Other sites in my country';
+Plus, it enables you to:
+
+* Stay up to date with important updates, like security alerts and new available releases.
+* Activate mobile push notifications for the <a href="{$a->moodleapp}">Moodle App</a>.
+* Increase the visibility of your site by featuring it on the list of registered Moodle sites in your country (optional).';
+$string['registerwithmoodleorginfosites'] = 'Discover other sites in my country';
+$string['registerwithmoodleorginfostats'] = 'View global Moodle stats';
 $string['registerwithmoodleorgremove'] = 'You are about to unregister your site. You will no longer receive security alert notifications and users will not be able to receive push notifications from your site to their Moodle app. However, you will be able to re-register at any time! Are you sure you want to continue?';
 $string['registrationconfirmed'] = 'Site registration confirmed';
 $string['registrationconfirmedon'] = 'Thank you for registering your site. Registration information will be kept up to date by the \'Site registration\' scheduled task.';
@@ -143,6 +151,27 @@ $string['sitelang'] = 'Language';
 $string['sitelang_help'] = 'What is the main language used on your Moodle site?';
 $string['sitename'] = 'Name';
 $string['sitename_help'] = 'The name of the site will be shown on the site listing if the hub allows that.';
+$string['siteorganisationtype'] = 'Organisation type';
+$string['siteorganisationtype:charityornotforprofit'] = 'Charity or Not For Profit';
+$string['siteorganisationtype:charterschool'] = 'Charter school';
+$string['siteorganisationtype:college'] = 'College';
+$string['siteorganisationtype:collegedepartment'] = 'College department';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Commercial course provider';
+$string['siteorganisationtype:companydepartment'] = 'Company department';
+$string['siteorganisationtype:companyinternal'] = 'Company internal';
+$string['siteorganisationtype:donotshare'] = 'Do not share';
+$string['siteorganisationtype:government'] = 'Government';
+$string['siteorganisationtype:highschool'] = 'High school';
+$string['siteorganisationtype:highschooldepartment'] = 'High school department';
+$string['siteorganisationtype:highschooldistrict'] = 'High school district';
+$string['siteorganisationtype:hospital'] = 'Hospital';
+$string['siteorganisationtype:independentteacher'] = 'Independent teacher';
+$string['siteorganisationtype:other'] = 'Other';
+$string['siteorganisationtype:primaryschool'] = 'Primary school';
+$string['siteorganisationtype:schooldistrict'] = 'School district';
+$string['siteorganisationtype:universitydepartment'] = 'University department';
+$string['siteorganisationtype:wholeuniversity'] = 'Whole university';
+$string['siteorganisationtype_help'] = 'Providing your organisation type will help us better understand the types of organisations using Moodle and their needs.';
 $string['sitephone'] = 'Phone';
 $string['sitephone_help'] = 'Your phone number will only be seen by the hub administrator.';
 $string['siteprivacy'] = 'Site listing';
@@ -150,8 +179,6 @@ $string['siteprivacy_help'] = 'You can choose to have your site listed publicly 
 $string['siteprivacynotpublished'] = 'Do not list my site';
 $string['siteprivacypublished'] = 'Only display my site name';
 $string['siteprivacylinked'] = 'Display my site name with the link';
-$string['siteregistrationcontact'] = 'Display contact form';
-$string['siteregistrationcontact_help'] = 'If you allow it, other people in our Moodle community (who need a login account) can contact you via a form on our Moodle community site. However, they will never be able to see your email address.';
 $string['siteregistrationemail'] = 'Notifications of new Moodle releases, security alerts and other important news';
 $string['siteregistrationemail_help'] = 'You have the option of subscribing to our low-volume mailing list for notifications of new Moodle releases, security alerts and other important news. You may unsubscribe at any time.';
 $string['siteregistrationupdated'] = 'Site registration updated';
@@ -164,8 +191,12 @@ $string['siteurl_help'] = 'The URL is the address of this site.  If privacy sett
 $string['siteversion'] = 'Moodle version';
 $string['siteversion_help'] = 'The Moodle version of this site.';
 $string['skipregistration'] = 'Skip';
+$string['success_count'] = 'Success count ({$a})';
 $string['subject'] = 'Subject';
 $string['subject_help'] = 'Select the main subject area which the course covers.';
+$string['timefrom'] = 'Time from ({$a})';
+$string['timeto'] = 'Time to ({$a})';
+$string['time_range'] = 'Time range';
 $string['type'] = 'Shared';
 $string['unregister'] = 'Unregister';
 $string['unregistrationerror'] = 'An error occurred while attempting to unregister the site: {$a}';
@@ -178,3 +209,8 @@ $string['wrongtoken'] = 'The registration failed for some unknown reason (networ
 
 // Deprecate since 3.11.
 $string['sitecommnewsno'] = 'No, I do not wish to receive any emails';
+
+// Deprecated since 4.5.
+$string['registerwithmoodleorginfoapp'] = 'About the Moodle app';
+$string['siteregistrationcontact'] = 'Display contact form';
+$string['siteregistrationcontact_help'] = 'If you allow it, other people in our Moodle community (who need a login account) can contact you via a form on our Moodle community site. However, they will never be able to see your email address.';

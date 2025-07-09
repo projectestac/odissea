@@ -1,8 +1,10 @@
+=== 4.5 Onwards ===
+
+This file has been replaced by UPGRADING.md. See MDL-81125 for further information.
+
+===
 This files describes API changes in /theme/* themes,
 information provided here is intended especially for theme designer.
-
-=== 4.4.1 ===
-* New `core/context_header` mustache template has been added. This template can be overridden by themes to modify the context header.
 
 === 4.4 ===
 * Theme selection is now performed using cards and modals.

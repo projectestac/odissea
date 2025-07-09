@@ -325,11 +325,7 @@ class format_multitopic extends core_courseformat\base {
                     $parent->hassubsections = true;
                     if ($levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC) {
                         $parent->pagedepth = max($parent->pagedepth, $thissectionextra->pagedepth);
-                        $showsection = $thissection->uservisible || ($thissection->section == 0) ||
-                                ($parent->uservisible || ($parent->section == 0))
-                                && ($thissection->visible || !$course->hiddensections)
-                                && ($thissection->available || !empty($thissection->availableinfo));
-                        if ($showsection) {
+                        if ($this->is_section_visible($thissection)) {
                             $parent->pagedepthdirect = max($parent->pagedepthdirect, $levelsan);
                         }
                     }
@@ -1275,14 +1271,28 @@ class format_multitopic extends core_courseformat\base {
         // Previous to Moodle 4.0 thas logic was hardcoded. To prevent errors in the contrib plugins
         // the default logic is the same required for topics and weeks format and still uses
         // a "hiddensections" format setting.
+        if (!empty($section->component)) {
+            return parent::is_section_visible($section);
+        }
         $course = $this->get_course();
         $hidesections = $course->hiddensections ?? true;
+        $sectionextra = $this->fmt_get_sections_extra(false)[$section->id];
+        $parent = ($section->section == 0) ? null : $section->modinfo->get_section_info_by_id($sectionextra->parentid);
         // Show the section if the user is permitted to access it, OR if it's not available
         // but there is some available info text which explains the reason & should display,
         // OR it is hidden but the course has a setting to display hidden sections as unavilable.
-        return $section->uservisible || ($section->section == 0) ||
-            ($section->visible || !$hidesections)
-            && ($section->available || !empty($section->availableinfo));
+        return (!$parent || ($parent->section == 0) || $parent->uservisible)
+            && ($sectionextra->parentvisiblesan || has_capability(
+                        'moodle/course:viewhiddensections',
+                        context_course::instance($course->id),
+                        $section->modinfo->userid
+                    )
+                )
+            && (
+                ($section->section == 0) || $section->uservisible
+                || ($section->visible || !$hidesections)
+                    && ($section->available || !empty($section->availableinfo))
+            );
     }
     // END INCLUDED.
 
@@ -1294,14 +1304,19 @@ class format_multitopic extends core_courseformat\base {
      * @param string $availableinfo the 'availableinfo' propery of the section_info as it was evaluated by conditional availability.
      */
     public function section_get_available_hook(section_info $section, &$available, &$availableinfo): void {
-        $sectionsextra = $this->fmt_get_sections_extra(false);
-        $parentid = $sectionsextra[$section->id]->parentid;
+        $sectionextra = $this->fmt_get_sections_extra(false)[$section->id];
+        $parentid = $sectionextra->parentid;
         if (isset($parentid)) {
-            $parent = $sectionsextra[$parentid]->sectionbase;
-            if (!($parent->visible && $parent->available) && ($parent->id != $this->fmtrootsectionid)) {
+            $parent = $section->modinfo->get_section_info_by_id($parentid);
+            if (!(
+                ($parent->section == 0)
+                || $parent->uservisible && ($parent->available || $sectionextra->levelsan >= 2)
+            )) {
                 $available = false;
                 if (!$parent->uservisible) {
                     $availableinfo = '';
+                } else {
+                    $availableinfo = get_string('notavailable');
                 }
             }
         }

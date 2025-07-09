@@ -25,7 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['description'] = '仅允许已经完成（或未完成）此课程的学生。';
 $string['getdescription'] = '你完成了这个课程。';
 $string['getdescriptionnot'] = '你<b>没</b>完成这个课程。';
+$string['missing'] = '（你必须决定此课程是否必须完成）';
+$string['pluginname'] = '完成课程限制条件';
+$string['privacy:metadata'] = '完成课程限制插件不存储任何个人数据。';
 $string['requires_completed'] = '你完成了这个课程';
 $string['requires_notcompleted'] = '你<b>没</b>完成这个课程';
+$string['title'] = '已完成课程';

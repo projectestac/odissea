@@ -114,4 +114,12 @@ $callbacks = [
         'hook' => \core\hook\task\after_failed_task_max_delay::class,
         'callback' => core\task\failed_task_callbacks::class . '::send_failed_task_max_delay_message',
     ],
+    [
+        'hook' => \core\hook\di_configuration::class,
+        'callback' => [\core\router\hook_callbacks::class, 'provide_di_configuration'],
+    ],
+    [
+        'hook' => \core_files\hook\before_file_created::class,
+        'callback' => [\core_files\redactor\hook_listener::class, 'file_redaction_handler'],
+    ],
 ];

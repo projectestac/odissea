@@ -22,6 +22,7 @@ use core\context\system;
 use core_reportbuilder_generator;
 use core_reportbuilder\local\models\report;
 use core_reportbuilder\local\report\base;
+use core_reportbuilder\exception\{source_invalid_exception, source_unavailable_exception};
 use core_reportbuilder\tests\core_reportbuilder_testcase;
 use core_user\reportbuilder\datasource\users;
 use stdClass;

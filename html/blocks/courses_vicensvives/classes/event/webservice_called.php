@@ -24,21 +24,11 @@ class webservice_called extends \core\event\base {
     }
 
     public static function get_name() {
-        return get_string('webservicecalled', 'block_courses_vicensvives');
+        return get_string('eventwebservicecalled', 'block_courses_vicensvives');
     }
 
     public function get_description() {
         return 'Se ha llamado el webservice: ' . $this->get_info();
-    }
-
-    public function get_legacy_logdata() {
-        $info = $this->get_info();
-
-        if (strlen($info) > 255) {
-            $info = substr($info, 0, 252) . '...';
-        }
-
-        return array($this->courseid, 'vicensvives', 'webservice', $this->other['script'], $info);
     }
 
     private function get_info() {

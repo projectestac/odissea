@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cloze:use'] = 'Den Cloze-Fragen-Editor in TinyMCE nutzen';
 $string['cloze:viewplugin'] = 'Helfer zum Bearbeiten von Lückentextfragen';
 $string['customgrade'] = 'Nutzerdefiniert';
 $string['err_custom_rate'] = 'Ungültiger Wert für nutzerdefinierten Prozentsatz';

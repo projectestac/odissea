@@ -226,10 +226,10 @@ $string['topright'] = 'En haut à droite';
 $string['type'] = 'Type';
 $string['uploadimage'] = 'Déposer une image';
 $string['uploadimagedesc'] = 'Ce lien vous mènera à un nouvel écran où vous pourrez télécharger des images. Les images téléchargées ainsi seront disponibles sur votre cours pour tous les utilisateurs qui peuvent créer un certificat personnalisé.';
-$string['useadhoc'] = 'Utiliser la tâche ad hoc pour l\'envoi par courriel du certificat';
+$string['useadhoc'] = 'Utiliser la tâche ad hoc pour l’envoi par courriel du certificat';
 $string['useadhoc_desc'] = 'Si ce réglage est activé, les courriels liés aux certificats seront envoyés immédiatement via une tâche ad hoc créée pour chaque activité. Sinon, les courriels seront gérés par la tâche programmée.
 
-L\'activation de cette option peut améliorer les performances en déchargeant le traitement d\'envoi des courriels vers les tâches ad hoc.';
+L’activation de cette option peut améliorer les performances en déchargeant le traitement d’envoi des courriels vers les tâches ad hoc.';
 $string['userlanguage'] = 'Utiliser les préférences utilisateur';
 $string['userlanguage_help'] = 'Vous pouvez forcer la langue du certificat pour remplacer les préférences linguistiques de l’utilisateur.';
 $string['verified'] = 'Vérifié';

@@ -629,14 +629,18 @@ function update_moduleinfo($cm, $moduleinfo, $course, $mform = null) {
         // This code is used both when submitting the form, which uses a long
         // name to avoid clashes, and by unit test code which uses the real
         // name in the table.
+        $newavailability = $cm->availability;
         if (property_exists($moduleinfo, 'availabilityconditionsjson')) {
             if ($moduleinfo->availabilityconditionsjson !== '') {
-                $cm->availability = $moduleinfo->availabilityconditionsjson;
+                $newavailability = $moduleinfo->availabilityconditionsjson;
             } else {
-                $cm->availability = null;
+                $newavailability = null;
             }
         } else if (property_exists($moduleinfo, 'availability')) {
-            $cm->availability = $moduleinfo->availability;
+            $newavailability = $moduleinfo->availability;
+        }
+        if ($cm->availability != $newavailability) {
+            $cm->availability = $newavailability;
         }
         // If there is any availability data, verify it.
         if ($cm->availability) {
@@ -928,6 +932,12 @@ function prepare_new_moduleinfo_data($course, $modulename, $section, string $suf
             );
             $formfield = 'advancedgradingmethod_'.$areaname;
             $data->{$formfield} = '';
+        }
+    }
+
+    if (plugin_supports('mod', $data->modulename, FEATURE_QUICKCREATE)) {
+        if (get_string_manager()->string_exists('quickcreatename', "mod_{$data->modulename}")) {
+            $data->name = get_string("quickcreatename", "mod_{$data->modulename}");
         }
     }
 

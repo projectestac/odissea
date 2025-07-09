@@ -226,7 +226,7 @@ trait quizaccess_seb_test_helper_trait {
      * @param string|null $xml Template content.
      * @return \quizaccess_seb\template Just created template.
      */
-    public function create_template(string $xml = null) {
+    public function create_template(?string $xml = null) {
         $data = [];
 
         if (!is_null($xml)) {
@@ -296,6 +296,8 @@ trait quizaccess_seb_test_helper_trait {
             'userconfirmquit' => '1',
             'enableaudiocontrol' => '1',
             'muteonstartup' => '0',
+            'allowcapturecamera' => '1',
+            'allowcapturemicrophone' => '1',
             'allowspellchecking' => '0',
             'allowreloadinexam' => '1',
             'activateurlfiltering' => '1',

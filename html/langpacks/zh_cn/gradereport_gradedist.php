@@ -64,7 +64,7 @@ $string['gradedistviewed'] = '已查看的成绩分布';
 $string['gradedistviewed_description'] = 'ID 为  {$a->userid}  的用户查看了成绩分布。';
 $string['gradeitem'] = '“评分”列';
 $string['gradeletter'] = '分数段';
-$string['highchartsmissing'] = '要查看图表，请从 <a href=“http://code.highcharts.com/”>http://code.highcharts.com/ 下载 Highcharts 库的 4.x 版</a>。将核心模块 highcharts.src.js 和 exporting.src.js 模块一起复制到目录中，或者如果您更喜欢它们的缩小版本 highcharts.js 和 exporting.js，也可以分别复制到目录 moodleroot/grade/report/gradedist/js 中。';
+$string['highchartsmissing'] = '要查看图表，请从 <a href="http://code.highcharts.com/">http://code.highcharts.com/ </a>下载 Highcharts 库的 4.x 版。将核心模块 highcharts.src.js 和 exporting.src.js 模块一起复制到目录中，或者如果您更喜欢它们的缩小版本 highcharts.js 和 exporting.js，也可以分别复制到目录 moodleroot/grade/report/gradedist/js 中。';
 $string['interval'] = '下限必须介于 0 和 100 之间。';
 $string['labelgroup'] = '将视图聚焦在组上';
 $string['labelgrouping'] = '将视图聚焦在组上';

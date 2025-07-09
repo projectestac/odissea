@@ -198,7 +198,7 @@ $string['discussionmoved'] = 'تم نقل هذه المناقشة إلى \'{$a}\
 $string['discussionmovedpost'] = 'لقد تم نقل هذه المناقشة إلى <a href="{$a->discusshref}">هنا</a> في المنتدى <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'اسم المناقشة';
 $string['discussionnownotsubscribed'] = '{$a->name} لن يتم إبلاغه بشأن المنشورات الجديدة في \'{$a->discussion}\' من \'{$a->forum}\'';
-$string['discussionnowsubscribed'] = 'سيتم إبلاغك بشأن المنشورات الجديدة في \'{$a->discussion}\' التي في المنتدى \'{$a->forum}\'';
+$string['discussionnowsubscribed'] = 'سيتم إبلاغك بشأن المنشورات الجديدة في \'{$a->discussion}\' التي في المنتدى \'{$a->forum}\'.';
 $string['discussionpin'] = 'تثبيت';
 $string['discussionpinned'] = 'مثبتة';
 $string['discussionpinned_help'] = 'المناقشات المثبتة ستظهر في أعلى المنتدى';

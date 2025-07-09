@@ -159,7 +159,7 @@ $string['dynreg_update_warn_dupdomain'] = 'Ez da gomendagarria domeinu bereko ka
 $string['editdescription'] = 'Egin klik hemen tresna deskribatzeko';
 $string['editmanualinstancedeprecationwarning'] = 'Eskuz konfiguratutako Kanpoko tresna jarduerak dagoeneko ez dira onartzen. Ez kezkatu, jarduera honek oraindik ere dagoen moduan funtzionatuko du, baina aurrerantzean ezingo duzu hemendik tresnaren konfigurazioan aldaketarik egin.
 <br><br>
-Tresnan aldaketak egiteko, edo horrekin jarduera berriak sortzeko, tresna zure ikastarora gehitu behar da Ikastaroa > Gehiago > LTI Kanpoko Tresnak ataletik. Ondoren, jarduera berriak sortu ahalko dituzu tresna Jarduera hautatzailetik zuzenean aukeratuta.
+Tresnan aldaketak egiteko, edo horrekin jarduera berriak sortzeko, tresna zure ikastarora gehitu behar da Ikastaroa > Gehiago > LTI Kanpoko Tresnak ataletik. Ondoren, jarduera berriak sortu ahalko dituzu tresna Jarduera-hautatzailetik zuzenean aukeratuta.
 <br><br>
 LTI Kanpoko tresnen inguruan gehiago irakurri dezakezu dokumentazioaren <a href="{$a}" target="_blank">Kanpoko tresnak</a> atalean.';
 $string['edittype'] = 'Editatu aurretik konfiguratutako tresna';
@@ -472,9 +472,9 @@ $string['share_roster_admin_help'] = 'Zehaztu tresnak abiarazten ari deneko ikas
 $string['share_roster_help'] = 'Zehaztu tresnak abiarazten ari deneko ikastaroetan matrikulatutako erabiltzaileen zerrendara sarbidea izango ote duen.
 
 Ohar zaitez ezarpen honek tresnaren konfigurazioa gainidatz dezakeela.';
-$string['show_in_course_activity_chooser'] = 'Erakutsi jarduera-hautagailua aurrez konfiguratutako tresna gisa.';
+$string['show_in_course_activity_chooser'] = 'Erakutsi jarduera-hautatzailea aurrez konfiguratutako tresna gisa.';
 $string['show_in_course_lti1'] = 'Tresnaren ezarpenen erabilera';
-$string['show_in_course_lti1_help'] = 'Tresna hau jarduera-hautagailuan erakuts daiteke irakasleak aukera dezan ikastaro batean txertatzeko. Bestela, aurrez konfiguratutako zerrenda zabalgarriko menuan kanpoko tresna bat ikastarora gehitzean. Hurrengo aukera bat kanpoko tresna bat ikastarora gehitzean soilik konfigurazioa tresnaren URL zehatza sartzen denean erabiltzea da.';
+$string['show_in_course_lti1_help'] = 'Tresna hau jarduera-hautatzailean erakuts daiteke irakasleak aukera dezan ikastaro batean txertatzeko. Bestela, aurrez konfiguratutako zerrenda zabalgarriko menuan kanpoko tresna bat ikastarora gehitzean. Hurrengo aukera bat kanpoko tresna bat ikastarora gehitzean soilik konfigurazioa tresnaren URL zehatza sartzen denean erabiltzea da.';
 $string['show_in_course_lti2'] = 'Tresnaren ezarpenen erabilera';
 $string['show_in_course_lti2_help'] = 'Tresna hau jarduera-hautatzailean erakutsi daiteke irakasleak ikastaro batean txertatzea aukera dezan edo aurrez konfiguratutako zerrenda zabalgarriko menuan kanpoko tresna bat ikastarora gehitzean.';
 $string['show_in_course_no'] = 'Ez erakutsi. Erabili soilik dagokion tresnaren URLa sartzen denean.';

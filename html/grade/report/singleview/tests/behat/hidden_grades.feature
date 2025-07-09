@@ -57,8 +57,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And I navigate to "View > Single view" in the course gradebook
     And I click on "Users" "link" in the ".page-toggler" "css_element"
 
-    When I set the field "Search users" to "Student1"
-    And I click on "Student1" "list_item"
+    When I click on "Student1" in the "Search users" search combo box
     And the field "Grade for Test assignment name 1" matches value "80"
     And the field "Grade for Test assignment name 2" matches value "90"
     And the field "Grade for Test assignment name 3" matches value "10"
@@ -89,8 +88,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Manual grade" "checkbox" should exist in the "Manual grade" "table_row"
     And "Exclude for Course total" "checkbox" should exist in the "Course total" "table_row"
 
-    And I set the field "Search users" to "Student2"
-    And I click on "Student2" "list_item"
+    And I click on "Student2" in the "Search users" search combo box
     And the field "Grade for Test assignment name 1" matches value "70"
     And the field "Grade for Test assignment name 2" matches value "60"
     And the field "Grade for Test assignment name 3" matches value "50"
@@ -122,9 +120,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Course total" "checkbox" should exist in the "Course total" "table_row"
 
     And I click on "Grade items" "link" in the ".page-toggler" "css_element"
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 1"
-    And I click on "Test assignment name 1" in the "grade" search widget
+    And I click on "Test assignment name 1" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "80"
     And the field "Grade for Student2 2" matches value "70"
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
@@ -136,9 +132,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Student1 1" "checkbox" should exist in the "Student1 1" "table_row"
     And "Exclude for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 2"
-    And I click on "Test assignment name 2" in the "grade" search widget
+    And I click on "Test assignment name 2" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "90"
     And the field "Grade for Student2 2" matches value "60"
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
@@ -150,9 +144,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Student1 1" "checkbox" should exist in the "Student1 1" "table_row"
     And "Exclude for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 3"
-    And I click on "Test assignment name 3" in the "grade" search widget
+    And I click on "Test assignment name 3" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "10"
     And the field "Grade for Student2 2" matches value "50"
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
@@ -164,9 +156,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Override for Student1 1" "checkbox" should exist in the "Student1 1" "table_row"
     And "Override for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Manual grade"
-    And I click on "Manual grade" in the "grade" search widget
+    And I click on "Manual grade" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "30"
     And the field "Grade for Student2 2" matches value "40"
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
@@ -178,9 +168,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Student1 1" "checkbox" should exist in the "Student1 1" "table_row"
     And "Exclude for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Course total"
-    And I click on "Course total" in the "grade" search widget
+    And I click on "Course total" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "210"
     And the field "Grade for Student2 2" matches value "220"
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
@@ -197,10 +185,8 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     Given I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode off
     And I navigate to "View > Single view" in the course gradebook
-    When I click on "Grade items" "link" in the ".page-toggler" "css_element"
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Course total"
-    And I click on "Course total" in the "grade" search widget
+    And I click on "Grade items" "link" in the ".page-toggler" "css_element"
+    And I click on "Course total" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     | 210       |
@@ -208,9 +194,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Manual grade"
-    And I click on "Manual grade" in the "grade" search widget
+    When I click on "Manual grade" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     | 30        |
@@ -218,9 +202,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 3"
-    And I click on "Test assignment name 3" in the "grade" search widget
+    And I click on "Test assignment name 3" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     | 10        |
@@ -228,9 +210,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 2"
-    And I click on "Test assignment name 2" in the "grade" search widget
+    And I click on "Test assignment name 2" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     | 90        |
@@ -238,9 +218,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 1"
-    And I click on "Test assignment name 1" in the "grade" search widget
+    And I click on "Test assignment name 1" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     | 80        |
@@ -249,8 +227,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
     And I click on "Users" "link" in the ".page-toggler" "css_element"
-    And I set the field "Search users" to "Student1"
-    And I click on "Student1" "list_item"
+    And I click on "Student1" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
       | Grade item                 | Grade     |
       | Test assignment name 1     | 80        |
@@ -264,8 +241,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should exist in the "Manual grade" "table_row"
     And "Hidden" "icon" should not exist in the "Course total" "table_row"
 
-    And I set the field "Search users" to "Student2"
-    And I click on "Student2" "list_item"
+    And I click on "Student2" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
       | Grade item                 | Grade     |
       | Test assignment name 1     | 70        |
@@ -288,8 +264,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And I am on "Course 1" course homepage with editing mode off
     And I navigate to "View > Single view" in the course gradebook
     When I click on "Users" "link" in the ".page-toggler" "css_element"
-    And I set the field "Search users" to "Student2"
-    And I click on "Student2" "list_item"
+    And I click on "Student2" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
     # Total is weird!!!!!!!!!!!!!!.
       | Grade item                 | Grade     |
@@ -304,8 +279,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Manual grade" "table_row"
     And "Hidden" "icon" should not exist in the "Course total" "table_row"
 
-    And I set the field "Search users" to "Student1"
-    And I click on "Student1" "list_item"
+    And I click on "Student1" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
       | Grade item                 | Grade     |
       | Test assignment name 1     |           |
@@ -320,9 +294,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Course total" "table_row"
 
     And I click on "Grade items" "link" in the ".page-toggler" "css_element"
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 1"
-    And I click on "Test assignment name 1" in the "grade" search widget
+    And I click on "Test assignment name 1" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -330,9 +302,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 2"
-    And I click on "Test assignment name 2" in the "grade" search widget
+    And I click on "Test assignment name 2" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -340,9 +310,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 3"
-    And I click on "Test assignment name 3" in the "grade" search widget
+    And I click on "Test assignment name 3" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -350,9 +318,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Manual grade"
-    And I click on "Manual grade" in the "grade" search widget
+    And I click on "Manual grade" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -360,9 +326,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Course total"
-    And I click on "Course total" in the "grade" search widget
+    And I click on "Course total" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade        |
       | Student1 1     | 210          |
@@ -377,11 +341,9 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
       | role                    | editingteacher  |
       | moodle/grade:viewhidden | prohibit        |
     And I am on "Course 1" course homepage with editing mode on
-    When I navigate to "View > Single view" in the course gradebook
+    And I navigate to "View > Single view" in the course gradebook
     And I click on "Grade items" "link" in the ".page-toggler" "css_element"
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Course total"
-    And I click on "Course total" in the "grade" search widget
+    And I click on "Course total" in the "Search items" search combo box
     And the field "Grade for Student1 1" matches value "210"
     And the field "Grade for Student2 2" matches value "220"
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
@@ -393,9 +355,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Student1 1" "checkbox" should exist in the "Student1 1" "table_row"
     And "Exclude for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Manual grade"
-    And I click on "Manual grade" in the "grade" search widget
+    When I click on "Manual grade" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -403,9 +363,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 3"
-    And I click on "Test assignment name 3" in the "grade" search widget
+    And I click on "Test assignment name 3" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -413,9 +371,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 2"
-    And I click on "Test assignment name 2" in the "grade" search widget
+    And I click on "Test assignment name 2" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -423,9 +379,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Hidden" "icon" should not exist in the "Student1 1" "table_row"
     And "Hidden" "icon" should not exist in the "Student2 2" "table_row"
 
-    And I click on ".gradesearchwidget" "css_element"
-    And I set the field "Search items" to "Test assignment name 1"
-    And I click on "Test assignment name 1" in the "grade" search widget
+    And I click on "Test assignment name 1" in the "Search items" search combo box
     And the following should exist in the "generaltable" table:
       | User full name | Grade     |
       | Student1 1     |           |
@@ -437,8 +391,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Exclude for Student2 2" "checkbox" should exist in the "Student2 2" "table_row"
 
     And I click on "Users" "link" in the ".page-toggler" "css_element"
-    And I set the field "Search users" to "Student1"
-    And I click on "Student1" "list_item"
+    And I click on "Student1" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
       | Grade item                 | Grade     | Feedback |
       | Test assignment name 1     |           |          |
@@ -463,8 +416,7 @@ Feature: We don't show hidden grades for users without the 'moodle/grade:viewhid
     And "Override for Course total" "checkbox" should exist in the "Course total" "table_row"
     And "Exclude for Course total" "checkbox" should exist in the "Course total" "table_row"
 
-    And I set the field "Search users" to "Student2"
-    And I click on "Student2" "list_item"
+    And I click on "Student2" in the "Search users" search combo box
     And the following should exist in the "generaltable" table:
       | Grade item                 | Grade     | Feedback |
       | Test assignment name 2     |           |          |

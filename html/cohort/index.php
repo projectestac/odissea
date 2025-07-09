@@ -104,8 +104,7 @@ if ($editcontrols = cohort_edit_controls($context, $baseurl)) {
     echo $OUTPUT->render($editcontrols);
 }
 
-$reportparams = ['contextid' => $context->id, 'showall' => $showall];
-$report = system_report_factory::create(cohorts::class, $context, '', '', 0, $reportparams);
+$report = system_report_factory::create(cohorts::class, $context, '', '', 0, ['showall' => $showall]);
 
 // Check if it needs to search by name.
 if (!empty($searchquery)) {
@@ -115,5 +114,21 @@ if (!empty($searchquery)) {
     ]);
 }
 
+// Show the report.
 echo $report->output();
+
+// Show the delete selected button if there are records.
+if ($DB->record_exists('cohort', [])) {
+
+    echo $OUTPUT->render(new single_button(
+        new moodle_url('#'),
+        get_string('deleteselected'),
+        'post',
+        single_button::BUTTON_PRIMARY,
+        ['data-action' => 'cohort-delete-selected']
+    ));
+
+    $PAGE->requires->js_call_amd('core_cohort/actions', 'init');
+}
+
 echo $OUTPUT->footer();

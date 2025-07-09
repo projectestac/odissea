@@ -54,7 +54,7 @@ $string['allmethodbadges'] = 'Alle gewählten Badges wurden erworben';
 $string['allmethodcohort'] = 'Mitglied in allen gewählten globalen Gruppen';
 $string['allmethodcompetencies'] = 'Alle ausgewählten Kompetenzen sind abgeschlossen.';
 $string['allmethodcourseset'] = 'Alle gewählten Kurse sind abgeschlossen';
-$string['allmethodmanual'] = 'Alle ausgewählten Rollen verleihen den Badge';
+$string['allmethodmanual'] = 'Alle gewählten Rollen verleihen den Badge';
 $string['allmethodprofile'] = 'Alle gewählten Nutzerprofilfelder sind vollständig';
 $string['allowcoursebadges'] = 'Kursbezogene Badges erlauben';
 $string['allowcoursebadges_desc'] = 'Diese Option erlaubt, kursbezogene Badges zu erstellen und zu verleihen.';
@@ -62,7 +62,7 @@ $string['allowexternalbackpack'] = 'Externe Backpack-Verbindung';
 $string['allowexternalbackpack_desc'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen eine Verbindung zu einem externen Backpack herstellen und ihre Badges von dieser Website freigeben. Nutzer/innen können außerdem festlegen, dass alle öffentlichen Badge Collections von ihrem externen Backpack auf ihrer Profilseite angezeigt werden.
 
 Es wird empfohlen, diese Option deaktiviert zu lassen, wenn die Website nicht über das Internet erreichbar ist (z.B. ein lokales Moodle).';
-$string['any'] = 'Einer von diesen';
+$string['any'] = 'Eine von diesen';
 $string['anymethod'] = 'Eine der gewählten Bedingungen ist erfüllt';
 $string['anymethodactivity'] = 'Eine der gewählten Aktivitäten ist abgeschlossen';
 $string['anymethodbadges'] = 'Einer der gewählten Badges wurde erworben';
@@ -483,7 +483,7 @@ $string['privacy:metadata:backpack:email'] = 'E-Mail-Adresse, die mit dem Backpa
 $string['privacy:metadata:backpack:externalbackpackid'] = 'ID des Backpacks';
 $string['privacy:metadata:backpack:userid'] = 'ID der Person, deren Backpack das ist';
 $string['privacy:metadata:backpackoauth2'] = 'OAuth2-Info, wenn sich eine Person zu einem externen Backpack verbindet';
-$string['privacy:metadata:backpackoauth2:issuerid'] = 'Oauth 2-Service-ID';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'OAuth2-Service-ID';
 $string['privacy:metadata:backpackoauth2:scope'] = 'Umfang der Backpack-Verbindung auflisten';
 $string['privacy:metadata:backpackoauth2:token'] = 'Token der Backpack-Verbindung';
 $string['privacy:metadata:backpackoauth2:userid'] = 'ID der Person, die die Verbindung aufgebaut hat';
@@ -496,7 +496,7 @@ $string['privacy:metadata:badge:usermodified'] = 'ID der Person, die den Badge b
 $string['privacy:metadata:criteriamet'] = 'Liste von Kriterien, die erreicht wurden';
 $string['privacy:metadata:criteriamet:datemet'] = 'Das Datum, an dem das Kriterium erfüllt wurde';
 $string['privacy:metadata:criteriamet:userid'] = 'ID der Person, die die Kriterien erfüllt hat';
-$string['privacy:metadata:external:backpacks'] = 'Geteilte Daten, wenn eine Person Ihre Badges an ein externes Backpack überträgt';
+$string['privacy:metadata:external:backpacks'] = 'Geteilte Daten, wenn eine Person ihre Badges an ein externes Backpack überträgt';
 $string['privacy:metadata:external:backpacks:badge'] = 'Name des Badge';
 $string['privacy:metadata:external:backpacks:description'] = 'Beschreibung des Badge';
 $string['privacy:metadata:external:backpacks:image'] = 'Bild des Badge';
@@ -556,11 +556,11 @@ Sobald ein Badge einmal verliehen wurde, wird er automatisch **gesperrt**. Gespe
 *Warum werden Badges gesperrt?*
 
 Wir möchten sicherstellen, dass immer dieselbe Leistung erbracht werden muss, um den Badge zu erwerben. Derzeit ist es nicht möglich, einmal erworbene Badges zurückzuziehen. Wenn die Kriterien für Badges nachträglich geändert werden könnten, würden Nutzer/innen mit dem gleichen Badge möglicherweise ganz andere Anforderungen erfüllt haben.';
-$string['statusmessage_0'] = 'Dieser Badge ist derzeit für Nutzer/innen nicht verfügbar. Klicken Sie auf \'\'Zugriff aktivieren\'\', damit der Badge von Nutzer/innen erworben werden kann.';
-$string['statusmessage_1'] = 'Dieser Badge ist derzeit für Nutzer/innen verfügbar. Klicken Sie auf \'\'Zugriff verhindern\'\', wenn Sie Änderungen vornehmen möchten.';
-$string['statusmessage_2'] = 'Dieser Badge ist derzeit für Nutzer/innen nicht verfügbar und seine Kriterien sind gesperrt. Klicken Sie auf \'\'Zugriff aktivieren\'\', damit er wieder von Nutzer/innen erworben werden kann.';
-$string['statusmessage_3'] = 'Dieser Badge ist derzeit für Nutzer/innen verfügbar und seine Kriterien sind gesperrt.';
-$string['statusmessage_4'] = 'Dieser Badge ist derzeit archiviert.';
+$string['statusmessage_0'] = 'Dieser Badge ist aktuell für Nutzer/innen nicht verfügbar. Klicken Sie auf \'\'Zugriff aktivieren\'\', damit der Badge von Nutzer/innen erworben werden kann.';
+$string['statusmessage_1'] = 'Dieser Badge ist aktuell für Nutzer/innen verfügbar. Klicken Sie auf \'\'Zugriff verhindern\'\', wenn Sie Änderungen vornehmen möchten.';
+$string['statusmessage_2'] = 'Dieser Badge ist aktuell für Nutzer/innen nicht verfügbar und seine Kriterien sind gesperrt. Klicken Sie auf \'\'Zugriff aktivieren\'\', damit er wieder von Nutzer/innen erworben werden kann.';
+$string['statusmessage_3'] = 'Dieser Badge ist aktuell für Nutzer/innen verfügbar und seine Kriterien sind gesperrt.';
+$string['statusmessage_4'] = 'Dieser Badge ist aktuell archiviert.';
 $string['subject'] = 'Betreff';
 $string['tagarea_badge'] = 'Badges';
 $string['tags'] = 'Tags';

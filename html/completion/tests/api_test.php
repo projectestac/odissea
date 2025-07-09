@@ -23,6 +23,7 @@ namespace core_completion;
  * @category test
  * @copyright 2017 Mark Nelson <markn@moodle.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core_completion\api
  */
 final class api_test extends \advanced_testcase {
 
@@ -30,6 +31,7 @@ final class api_test extends \advanced_testcase {
      * Test setup.
      */
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
     }
 
@@ -291,7 +293,6 @@ final class api_test extends \advanced_testcase {
 
     /**
      * Test for mark_course_completions_activity_criteria() with different completionpassgrade settings.
-     * @covers ::mark_course_completions_activity_criteria
      */
     public function test_mark_course_completions_activity_criteria_completion_states(): void {
         global $DB, $CFG;

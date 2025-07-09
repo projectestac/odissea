@@ -199,7 +199,7 @@ export const addMenubarItem = (menubar, section, menuitem, after = null) => {
  * @returns {string}
  */
 export const addContextmenuItem = (contextmenu, ...menuitems) => {
-    const contextmenuItems = (contextmenu ? contextmenu : '').split(' ');
+    const contextmenuItems = (contextmenu || '').split(' ');
 
     return contextmenuItems
         .concat(menuitems)
@@ -215,12 +215,45 @@ export const addContextmenuItem = (contextmenu, ...menuitems) => {
  * @returns {string}
  */
 export const addQuickbarsToolbarItem = (quicktoolbar, ...toolbaritems) => {
-    const quicktoolbarItems = (quicktoolbar ? quicktoolbar : '').split(' ');
+    const quicktoolbarItems = (quicktoolbar || '').split(' ');
 
     return quicktoolbarItems
         .concat(toolbaritems)
         .filter((item) => item !== '')
         .join(' ');
+};
+
+/**
+ * This function will calculate and add items to toolbar with below logic:
+ * 1. If the number of the items is larger than one, it will add all the items to a menu button.
+ * 2. If the number of the items is one, it will add the item directly to the toolbar.
+ *
+ * @param {TinyMCE} editor
+ * @param {Array} items
+ * @param {String} menuName
+ * @param {String} menuIcon
+ * @param {String} menuIconText
+ * @param {String} singleIcon
+ * @param {String} singleIconText
+ * @param {String} singleAction
+ */
+export const addDynamicToolbarMenu = (editor, items, menuName, menuIcon,
+        menuIconText, singleIcon, singleIconText, singleAction) => {
+    if (items.length > 1) {
+        // Use context menu.
+        editor.ui.registry.addMenuButton(menuName, {
+            icon: menuIcon,
+            tooltip: menuIconText,
+            fetch: callback => callback(`${items.join(' ')}`),
+        });
+    } else {
+        // Use single button.
+        editor.ui.registry.addButton(menuName, {
+            icon: singleIcon,
+            tooltip: singleIconText,
+            onAction: singleAction,
+        });
+    }
 };
 
 /**
@@ -241,7 +274,7 @@ export const getDocumentationLink = (pluginName) => `https://docs.moodle.org/en/
  * @returns {object}
  */
 export const getPluginMetadata = async(component, pluginName, url = null) => {
-    const name = await getString('helplinktext', component);
+    const name = await getString('pluginname', component);
     return {
         getMetadata: () => ({
             name,

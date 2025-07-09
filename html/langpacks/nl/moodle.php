@@ -196,7 +196,7 @@ $string['backupdaterecordtype'] = '<br />{$a->recordtype} - {$a->recordname}<br 
 $string['backupdetails'] = 'Details van de back-up';
 $string['backuperrorinvaliddestination'] = 'De bestemmingsfolder voor de back-ups is niet beschrijfbaar';
 $string['backupexecuteathelp'] = 'Starttijd automatische back-ups';
-$string['backupfailed'] = 'Sommige cursussen zijn niet bewaard!';
+$string['backupfailed'] = 'Sommige cursussen zijn niet bewaard.';
 $string['backupfilename'] = 'back-up';
 $string['backupfinished'] = 'De back-up is succesvol afgerond';
 $string['backupfromthissite'] = 'Was de back-up op deze site gemaakt?';
@@ -375,7 +375,7 @@ $string['courseadministration'] = 'Cursusbeheer';
 $string['courseapprovedemail'] = 'Je gevraagde cursus is goedgekeurd, <a href="{$a->url}">{$a->name}</a>, en je hebt daar als rol  {$a->teacher}.';
 $string['courseapprovedemail2'] = 'Je aangevraagde cursus is goedgekeurd: <a href="{$a->url}">{$a->name}</a>.';
 $string['courseapprovedfailed'] = 'Het goedkeuren van deze cursus is mislukt!';
-$string['courseapprovedsubject'] = 'Je cursus is goedgekeurd';
+$string['courseapprovedsubject'] = 'Je cursus is goedgekeurd.';
 $string['courseavailable'] = 'Deze cursus is zichtbaar';
 $string['courseavailablenot'] = 'Deze cursus is niet zichtbaar';
 $string['coursebackup'] = 'Back-up  van cursussen';
@@ -580,7 +580,7 @@ $string['deletecoursecheck'] = 'Weet je zeker dat je deze cursus en alle gegeven
 $string['deleted'] = 'Verwijderd';
 $string['deletedactivity'] = '{$a} verwijderd';
 $string['deletedcourse'] = '{$a} is volledig verwijderd';
-$string['deletednot'] = 'Kon {$a} niet verwijderen!';
+$string['deletednot'] = 'Kon {$a} niet verwijderen.';
 $string['deletepicture'] = 'Verwijder';
 $string['deletesection'] = 'Verwijder';
 $string['deleteselected'] = 'Verwijder geselecteerde';
@@ -1195,7 +1195,7 @@ $string['labelvalue'] = '{$a->label}: {$a->value}';
 $string['langltr'] = 'Taalrichting van links naar rechts';
 $string['langrtl'] = 'Taalrichting van rechts naar links';
 $string['language'] = 'Taal';
-$string['languagegood'] = 'Dit taalpakket is helemaal bijgewerkt! :-)';
+$string['languagegood'] = 'Dit taalpakket is helemaal bijgewerkt.';
 $string['languageselector'] = 'Taalkiezer';
 $string['last'] = 'Laatste';
 $string['lastaccess'] = 'Laatste bezoek';
@@ -1528,16 +1528,17 @@ $string['newuser'] = 'Nieuwe gebruiker';
 $string['newusernewpasswordsubj'] = 'Nieuwe account';
 $string['newusernewpasswordtext'] = 'Hallo {$a->firstname},
 
-Er is voor jou een nieuwe account gemaakt op \'{$a->sitename}\' en je hebt daarvoor een nieuw, tijdelijk wachtwoord gekregen.
+Er is voor jou een nieuwe account gemaakt op \'{$a->sitename}\' .
 
-De informatie die je nu nodig hebt om op de site in te loggen is:
-gebruikersnaam: {$a->username}
-wachtwoord: {$a->newpassword}
+    gebruikersnaam: {$a->username}
+    wachtwoord: {$a->newpassword}
+
 (je zult je wachtwoord moeten wijzigen wanneer je je de eerste keer aanmeldt op de site)
 
-Om \'{$a->sitename}\' te beginnen gebruiken, klik op {$a->link}
+Om \'{$a->sitename}\' te beginnen gebruiken, meld je je aan op
+    {$a->link}
 
-Vriendelijke groeten van de \'{$a->sitename}\'-beheerder,
+Als je hulp nodig hebt, neem dan contact op met de beheerder,
 {$a->signoff}';
 $string['newusers'] = 'Nieuwe gebruikers';
 $string['newwindow'] = 'Nieuw venster';
@@ -1683,13 +1684,13 @@ $string['passwordsenttext'] = '<p>Er is een e-mail verstuurd naar {$a->email}.</
 $string['passwordset'] = 'Je wachtwoord is ingesteld';
 $string['path'] = 'Pad';
 $string['pathnotexists'] = 'Dit pad bestaat niet op je server!';
-$string['pathslasherror'] = 'Het pad mag niet eindigen met een schuine streep!';
-$string['paymentinstant'] = 'Gebruik de knop om te betalen en je zult binnen enkele minuten aangemeld zijn!';
+$string['pathslasherror'] = 'Het pad mag niet eindigen met een schuine streep.';
+$string['paymentinstant'] = 'Gebruik de knop om te betalen en je zult binnen enkele minuten aangemeld zijn.';
 $string['paymentpending'] = '(<small><b><u>{$a}</u></b> open</small>)';
 $string['paymentrequired'] = 'Betaling vereist om deze cursus binnen te gaan.';
 $string['payments'] = 'Betalingen';
-$string['paymentsorry'] = 'Bedankt voor je betaling! Jammer genoeg is je betaling nog niet volledig verwerkt en ben je nog niet geregistreerd om de cursus "{$a->fullname}" binnen te gaan. Probeer binnen enkele seconden nog eens de cursus binnen te gaan, maar als je blijft problemen hebben, waarschuw dan de {$a->teacher} of de site beheerder';
-$string['paymentthanks'] = 'Bedankt voor je betaling! Je bent nu aangemeld in je cursus:<br />"{$a}"';
+$string['paymentsorry'] = 'Bedankt voor je betaling! Wanneer ze verwerkt is, zul je de cursus "{$a->fullname}" kunnen openen. Wacht even en probeer opnieuw, maar als je blijft problemen hebben, waarschuw dan de {$a->teacher} of de site beheerder.';
+$string['paymentthanks'] = 'Bedankt voor je betaling! Je bent nu aangemeld in je cursus {$a}.';
 $string['pendingrequests'] = 'Wachtende aanvragen';
 $string['percents'] = '{$a}%';
 $string['periodending'] = 'Periode eindigt ({$a})';

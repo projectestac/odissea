@@ -184,6 +184,7 @@ $string['editsubmissionother'] = 'Modifier le travail de {$a}';
 $string['enabled'] = 'Activé';
 $string['enabletimelimit'] = 'Activer les devoirs limités dans le temps';
 $string['enabletimelimit_help'] = 'Si ce réglage est activé, il est possible de fixer une durée limite dans les réglages du devoir.';
+$string['errorgradechangessaveddetail'] = 'Les modifications de la note et du feedback n’ont pas été enregistrées';
 $string['errornosubmissions'] = 'Il n’y a pas de devoir remis à télécharger';
 $string['errorquickgradingvsadvancedgrading'] = 'Les notes n’ont pas été enregistrées, car ce devoir utilise actuellement l’évaluation avancée';
 $string['errorrecordmodified'] = 'Les notes n’ont pas été enregistrées, car quelqu’un a modifié une ou plusieurs notes depuis que vous avez chargé cette page.';
@@ -524,7 +525,7 @@ Vous pouvez consulter l’état de votre travail remis&nbsp;:
 
  {$a->url}';
 $string['submissiondrafts'] = 'Exiger que les étudiants cliquent sur le bouton envoyer';
-$string['submissiondrafts_help'] = 'Si ce réglage est activé, les étudiants devront explicitement cliquer sur un bouton de remise pour confirmer que leur devoir est terminé. Cela permet aux étudiants de conserver dans le système une version brouillon de leur travail avant de l’envoyer. Si le réglage est activé après que des étudiants ont déjà remis leur travaux, ceux-ci seront considérés comme définitifs.';
+$string['submissiondrafts_help'] = 'Les étudiants doivent-ils disposer d’un bouton de remise pour indiquer qu’ils ont terminé les modifications à leur travail et qu’il est prêt à être évalué.';
 $string['submissioneditable'] = 'L’étudiant peut modifier ce travail remis';
 $string['submissionempty'] = 'Rien n’a été remis';
 $string['submissionlog'] = 'Étudiant : {$a->fullname}, statut : {$a->status}';

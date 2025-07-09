@@ -27,6 +27,7 @@ use testable_plugininfo_base;
  * @package   core
  * @copyright 2019 Andrew Nicols
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core\plugininfo\base
  */
 final class base_test extends \advanced_testcase {
 
@@ -38,6 +39,7 @@ final class base_test extends \advanced_testcase {
 
         require_once($CFG->dirroot.'/lib/tests/fixtures/testable_plugin_manager.php');
         require_once($CFG->dirroot.'/lib/tests/fixtures/testable_plugininfo_base.php');
+        parent::setUpBeforeClass();
     }
 
     /**
@@ -47,6 +49,7 @@ final class base_test extends \advanced_testcase {
         // The caches of the testable singleton must be reset explicitly. It is
         // safer to kill the whole testable singleton at the end of every test.
         testable_core_plugin_manager::reset_caches();
+        parent::tearDown();
     }
 
     /**
@@ -275,7 +278,6 @@ final class base_test extends \advanced_testcase {
 
     /**
      * Ensure that plugintype_supports_ordering() returns true.
-     * @covers ::plugintype_supports_ordering
      */
     public function test_plugintype_supports_ordering(): void {
         $this->assertFalse(base::plugintype_supports_ordering());

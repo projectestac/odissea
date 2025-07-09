@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontfamily'] = 'Schriftart';
+$string['fontfamily:use'] = 'Nutzung des Plugins erlauben';
 $string['fonts'] = 'Schriftarten';
 $string['fonts_desc'] = 'Liste der verfügbaren Schriftarten, getrennt durch eine neue Zeile.';
 $string['menuitem_fontfamily'] = 'Schriftart';

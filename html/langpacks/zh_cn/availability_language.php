@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = '要求学生使用某种语言';
+$string['description'] = '要求学生使用特定语言';
 $string['getdescription'] = '语言是 {$a} 的学生';
 $string['getdescriptionnot'] = '语言不是 {$a} 的学生';
 $string['missing'] = '您必须选择一种语言。';
+$string['pluginname'] = '按语言种类限制';
+$string['privacy:metadata'] = '语种限制插件不存储任何个人数据。';
+$string['title'] = '语言';

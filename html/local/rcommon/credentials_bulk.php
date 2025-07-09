@@ -33,7 +33,7 @@ switch($action){
 }
 
 if($action != 'assign') {
-	print_error('Unknown action '.$action);
+    throw new \moodle_exception('Unknown action '.$action);
 }
 
 $id = required_param('id', PARAM_INT);
@@ -51,7 +51,7 @@ echo $OUTPUT->heading($book->name . ' (' . $book->isbn . ')',3);
 
 echo '<div class="generalbox box contentbox">';
 if (!in_array(core_text::strtolower($book->format), rcommon_book::$allowedformats)) {
-	print_error('Not a valid book');
+    throw new \moodle_exception('Not a valid book');
 }
 define("MAX_USERS_PER_PAGE", 5000);
 
@@ -104,12 +104,7 @@ $already_unassigned = $ids_cnt - $already_asigned_users_cnt;
 $search_where = !empty($searchtext)?" AND (firstname LIKE '%{$searchtext}%' OR lastname LIKE '%{$searchtext}%' OR username LIKE '%{$searchtext}%')": '';
 
 if (empty($courseid)){
-	// MARSUPIAL ************* MODIFICAT -> Add extra control for just show the users confirmed and non deleted in the assigment books credentials process
-	// 2012.09.05 @mmartinez
-		$users_to_show = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {user} u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {rcommon_user_credentials} WHERE isbn = '{$book->isbn}') AND deleted = 0 AND confirmed = 1{$search_where} ORDER BY lastname");
-	// ************ ORIGINAL
-		//$users_to_show    = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {$CFG->prefix}user u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {$CFG->prefix}rcommon_user_credentials WHERE isbn = '{$book->isbn}'){$search_where} ORDER BY lastname");
-	// ************ FI
+	$users_to_show = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {user} u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {rcommon_user_credentials} WHERE isbn = '{$book->isbn}') AND deleted = 0 AND confirmed = 1{$search_where} ORDER BY lastname");
 } else {
 	/// Setup for group handling.
 	$context = context_system::instance(); // pinned blocks do not have own context
@@ -118,9 +113,6 @@ if (empty($courseid)){
 	// Get all the possible users
 	if ($course->id != SITEID) {
 		if ($selectedgroup) {   // If using a group, only get users in that group.
-			// MARSUPIAL ************ MODIFICAT -> Deprecated code in Moodle 2.x
-			// 2012.12.14 @abertranb
-
 			require_once($CFG->dirroot . '/group/lib.php');
 			$users_to_show_role = groups_get_members_by_role($selectedgroup, $course->id, 'u.id,u.firstname,u.lastname,u.email', 'u.lastname ASC', 'u.id not in (SELECT DISTINCT euserid FROM '.$CFG->prefix.'rcommon_user_credentials WHERE isbn = \''.$book->isbn.'\')');
 			$users_to_show = array();
@@ -130,15 +122,9 @@ if (empty($courseid)){
 						$users_to_show[] = $u;
 				}
 			}
-			// ************ MODIFICAT
-			//$users_to_show = get_group_users($selectedgroup, 'u.lastname ASC', "SELECT DISTINCT euserid FROM {$CFG->prefix}rcommon_user_credentials WHERE isbn = '{$book->isbn}'", 'u.id, u.firstname, u.lastname, u.idnumber, u.email');
-			// ************ FI
 		} else {
-			// MARSUPIAL ************ MODIFICAT -> Deprecated code in Moodle 2.x
-			// 2012.12.14 @abertranb
 			$context_course = context_course::instance($course->id);
 			list($esqljoin, $eparams) = get_enrolled_sql($context_course);
-			//$params = array_merge($params, $eparams);
 
 			$sql = "SELECT u.id,u.firstname,u.lastname,u.email
 			                      FROM {user} u
@@ -150,20 +136,11 @@ if (empty($courseid)){
 			                  ORDER BY u.lastname ASC";
 
 			$users_to_show = $DB->get_records_sql($sql, $eparams);
-			// ************ MODIFICAT
-			//$users_to_show = get_course_users($course->id, '', "SELECT DISTINCT euserid FROM {$CFG->prefix}rcommon_user_credentials WHERE isbn = '{$book->isbn}'", 'u.id, u.firstname, u.lastname, u.idnumber, u.email');
-			// ************ FI
 		}
 	} else {
-		// MARSUPIAL ************ MODIFICAT -> Deprecated code in Moodle 2.x
-		// 2012.12.14 @abertranb
 		$extrasql = 'id <> '.$CFG->siteguest.' AND id not in (SELECT DISTINCT euserid FROM {rcommon_user_credentials} WHERE isbn = \''.$book->isbn.'\')';
 		$users_to_show = get_users_listing('', '', 0, 0, '', '', '',
 		$extrasql, null, $context);
-		// ************ MODIFICAT
-		//$users_to_show = get_site_users("u.lastaccess DESC", "u.id, u.firstname, u.lastname, u.idnumber", false, "SELECT DISTINCT euserid FROM {$CFG->prefix}rcommon_user_credentials WHERE isbn = '{$book->isbn}'");
-		// ************ FI
-
 	}
 }
 $user_to_show_cnt = is_array($users_to_show)?count($users_to_show): 0;
@@ -317,4 +294,3 @@ echo '<input type="hidden" name="sesskey" value="'. sesskey() . '" />
            echo '</td></tr></table></form>';
    echo '<p style="text-align: center;"><a href="books.php?id=' . $id . '"><button>'. get_string('back') . '</button></a></p>';
 echo $OUTPUT->footer();
-

@@ -25,12 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['createaccount'] = '결제 계정 생성';
+$string['deleteorarchive'] = '삭제 또는 보관';
+$string['editpaymentaccount'] = '결제 계정 수정';
 $string['eventaccountcreated'] = '결제 계정이 생성되었습니다.';
 $string['eventaccountdeleted'] = '결제 계정이 삭제되었습니다.';
 $string['eventaccountupdated'] = '결제 계정이 업데이트 되었습니다.';
+$string['gatewaydisabled'] = '비활성화되었습니다.';
+$string['gatewayenabled'] = '활성화되었습니다.';
 $string['noaccountsavilable'] = '사용 가능한 결제 계정이 없습니다.';
 $string['nogateway'] = '사용할 수 있는 결제 게이트웨이가 없습니다.';
+$string['nogatewayselected'] = '먼저 결제 게이트웨이를 선택해야 합니다.';
 $string['paymentaccount'] = '결제 계정';
+$string['paymentaccounts'] = '결제 계정';
 $string['privacy:metadata:database:payments'] = '결제 정보';
 $string['privacy:metadata:database:payments:amount'] = '결제 금액';
 $string['privacy:metadata:database:payments:currency'] = '결제 통화';

@@ -66,7 +66,7 @@ $string['enroldownload_help'] = '所选hub中的一些课程正在打广告，�
 其它的课程以模板形式提供给您，可以在您自己的Moodle网站下载和使用。';
 $string['enrollable'] = '可以参与的课程';
 $string['enrollablecourses'] = '可加入课程';
-$string['errorcourselisting'] = '请注意：无法在 moodle.net 上搜索社区课程。以前共享的可供下载的课程现在可在 archive.moodle.net 上下载。有关详细信息，请参见 <a href=“https://docs.moodle.org/en/Sunsetting_moodle.net”>Sunsetting moodle.net</a>。';
+$string['errorcourselisting'] = '请注意：无法在 moodle.net 上搜索社区课程。以前共享的可供下载的课程现在可在 archive.moodle.net 上下载。有关详细信息，请参见 <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Sunsetting moodle.net</a>。';
 $string['errorhublisting'] = '从 Moodle.org 检索中心列表时出错，请稍后再试。（{$a}）';
 $string['fileinfo'] = '语言：{$a->lang} - 许可证：{$a->license} - 更新时间：{$a->timeupdated}';
 $string['hideall'] = '隐藏所有课程中心';

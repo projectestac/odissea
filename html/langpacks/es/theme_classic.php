@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic (Clásico)';
 $string['preset'] = 'Preconfiguración del tema';
 $string['preset_desc'] = 'Elegir una preconfiguración para cambiar ampliamente el aspecto del tema.';
 $string['presetfiles'] = 'Archivos de preconfiguración adcional del tema';
-$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia del tema. Consulte <a href="https://docs.moodle.org/dev/Boost_Presets">Ajustes preestablecidos de Boost</a> para obtener información sobre cómo crear y compartir sus propios archivos preestablecidos, y consulte el <a href="https://moodle.net/search?q=boost+presets">Repositorio de ajustes preestablecidos </a> para consultar los que otros han compartido.';
+$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia de un tema.';
 $string['privacy:metadata'] = 'El tema Classic (Clásico) no almacena ningún dato personal.';
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';

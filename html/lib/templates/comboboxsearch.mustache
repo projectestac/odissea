@@ -49,7 +49,7 @@
 {{#buttonheader}}
     <small>{{.}}</small>
 {{/buttonheader}}
-<div class="{{#parentclasses}}{{.}}{{/parentclasses}} dropdown" data-instance="{{instance}}">
+<div class="{{#parentclasses}}{{.}}{{/parentclasses}} dropdown comboboxsearch" data-instance="{{instance}}">
 
     {{#usebutton}}
         <div tabindex="0"
@@ -58,7 +58,7 @@
              role="combobox"
              aria-haspopup="dialog"
              aria-controls="dialog-{{instance}}-{{uniqid}}"
-             class="{{#buttonclasses}}{{.}}{{/buttonclasses}} btn dropdown-toggle d-flex text-left align-items-center p-0 font-weight-bold"
+             class="{{#buttonclasses}}{{.}}{{/buttonclasses}} btn dropdown-toggle d-flex text-start align-items-center p-0 font-weight-bold"
              aria-label="{{label}}"
              data-input-element="input-{{instance}}-{{uniqid}}">
             {{{buttoncontent}}}

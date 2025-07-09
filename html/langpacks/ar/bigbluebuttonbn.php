@@ -422,6 +422,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'مُعرَّف الم
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'يخزن البيانات الوصفية للتسجيلات';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'مُعرَّف المستخدم الذي أجرى آخر تغيير في التسجيل';
 $string['progress_createbigbluebuttonbn'] = 'يجري إنشاء نشاط BigBlueButton ({$a})';
+$string['recordingnotfound'] = 'التسجيل لم يتم العثور عليه.';
 $string['recordings_from_deleted_activities'] = 'التسجيلات من النشاطات المحذوفة';
 $string['recordingurlnotfound'] = 'عنوان رابط الاجتماع غير صالح.';
 $string['removedevents'] = 'الأحداث المحذوفة';

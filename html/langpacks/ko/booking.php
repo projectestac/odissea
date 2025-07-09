@@ -25,9 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessdenied'] = '접근 거부됨';
+$string['activatemails'] = '이메일 활성화하기(확정, 공지 그 외)';
+$string['active'] = '활성화하기';
+$string['activitycompletiontext'] = '예약이 완료되면 예약자에게 메세지가 발송됨';
+$string['activitycompletiontextsubject'] = '예약이 완료됨';
 $string['answer'] = '답변하기';
 $string['answered'] = '답변완료';
 $string['attachedfiles'] = '첨부파일';
+$string['banusernames'] = '금지된 사용자 이름';
+$string['banusernameswarning'] = '사용자 이름이 차단되어 예약하실 수 없습니다.';
 $string['bookedtext'] = '예약 확인';
 $string['bookingoptionsmenu'] = '예약 옵션';
 $string['bookingpolicy'] = '예약 정책';

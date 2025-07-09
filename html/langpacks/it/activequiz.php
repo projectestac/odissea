@@ -93,7 +93,7 @@ $string['instructorquizinst'] = '<p>Si prega di attendere su questa pagina fino 
             Riproponi domanda
             <ul>
                 <li>
-Permette all\'istruttore di riproporre la domanda corrente o precedente (disponibile durante la revisione di una domanda).
+Permette al docente di riproporre la domanda corrente o precedente (disponibile durante la revisione di una domanda).
             </li>
             </ul>
         </li>
@@ -108,7 +108,7 @@ Permette all\'istruttore di riproporre la domanda corrente o precedente (disponi
   Termina domanda
             <ul>
                 <li>
-                   Termina la domanda corrente. Consente inoltre all\'istruttore di terminare anticipatamente una domanda a tempo (disponibile mentre una domanda è in esecuzione).<i>Se la domanda non è a tempo, l\'istruttore dovrà cliccare su <b>termina domanda.</b></i>
+                   Termina la domanda corrente. Consente inoltre al docente di terminare anticipatamente una domanda a tempo (disponibile mentre una domanda è in esecuzione).<i>Se la domanda non è a tempo, il docente dovrà cliccare su <b>termina domanda.</b></i>
                 </li>
             </ul>
         </li>
@@ -132,7 +132,7 @@ Permette all\'istruttore di riproporre la domanda corrente o precedente (disponi
             Ricarica risultati
             <ul>
                 <li>
-                 Ricarica le risposte dello studente nella casella delle informazioni. Consente all\'istruttore di vedere quanti studenti o gruppi hanno risposto e quanti non hanno ancora risposto (disponibile durante la revisione di una domanda).
+                 Ricarica le risposte dello studente nella casella delle informazioni. Consente al docente di vedere quanti studenti o gruppi hanno risposto e quanti non hanno ancora risposto (disponibile durante la revisione di una domanda).
                 </li>
             </ul>
         </li>
@@ -148,7 +148,7 @@ Permette all\'istruttore di riproporre la domanda corrente o precedente (disponi
             Visualizza risposta corretta
             <ul>
                 <li>
-                    Fornisce all\'istruttore una vista della domanda con la risposta corretta selezionata (disponibile durante la revisione di una domanda). Questo non mostrerà la risposta corretta per i tipi di domande classificate manualmente, come saggi o domande di disegno.
+                    Fornisce al docente una vista della domanda con la risposta corretta selezionata (disponibile durante la revisione di una domanda). Questo non mostrerà la risposta corretta per i tipi di domande classificate manualmente, come saggi o domande di disegno.
                 </li>
             </ul>
         </li>
@@ -237,7 +237,7 @@ $string['showstudentresponses'] = 'Mostra risposte';
 $string['start_session'] = 'Inizia sessione';
 $string['startedon'] = 'Iniziato il';
 $string['startquiz'] = 'Inizia quiz';
-$string['studentquizinst'] = '<p> Attendi che l\'istruttore avvii il quiz. Una volta avviato, vedrai un timer che esegue il conto alla rovescia non appena inizia la prima domanda</p>';
+$string['studentquizinst'] = '<p> Attendi che il docente avvii il quiz. Una volta avviato, vedrai un timer che esegue il conto alla rovescia non appena inizia la prima domanda</p>';
 $string['successregrade'] = 'Quiz rivalutato con successo';
 $string['teacherjoinquizinstruct'] = 'Usa questo se vuoi provare un quiz tu stesso/a <br/> (dovrai anche avviare il quiz in una finestra separata)';
 $string['teacherstartinstruct'] = 'Usa questo per avviare un quiz da sottoporre agli studenti<br /> Usa la casella di testo per definire un nome per questa sessione (per orientarti nella revisione dei risultati in un secondo momento).';

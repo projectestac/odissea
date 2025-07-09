@@ -23,18 +23,18 @@ class vicensvives_ws {
     public static function configured() {
         global $CFG;
 
-        return !empty($CFG->vicensvives_sharekey) and !empty($CFG->vicensvives_sharepass);
+        return !empty($CFG->vicensvives_sharekey) && !empty($CFG->vicensvives_sharepass);
     }
 
     public function book($bookid) {
         if (!$bookid) {
             return null;
         }
-        return $this->call('get', 'books/' . $bookid, array('lti_info' => "true"));
+        return $this->call('get', 'books/' . $bookid, ['lti_info' => "true"]);
     }
 
     public function books() {
-        $books = $this->call('get', 'books', array('own' => "true")) ?: array();
+        $books = $this->call('get', 'books', ['own' => "true"]) ?: [];
 
         foreach ($books as $key => $book) {
             if (empty($book->idBook)) {
@@ -47,7 +47,7 @@ class vicensvives_ws {
     }
 
     public function levels($lang) {
-        $levels = $this->call('get', 'levels', array('lang' => $lang)) ?: array();
+        $levels = $this->call('get', 'levels', ['lang' => $lang]) ?: [];
         foreach ($levels as $key => $level) {
             if (empty($level->idLevel)) {
                 unset($levels[$key]);
@@ -57,7 +57,7 @@ class vicensvives_ws {
     }
 
     public function licenses($book=null, $activated=null) {
-        $params = array();
+        $params = [];
         if ($book !== null) {
             $params['book'] = (int) $book;
         }
@@ -69,17 +69,17 @@ class vicensvives_ws {
 
     public function send_token($token) {
         global $CFG;
-        $params = array(
+        $params = [
             'url' => $CFG->wwwroot,
             'token' => $token,
             'identifier' => get_site_identifier(),
             'serviceEndpoint' => $CFG->wwwroot . '/webservice/rest/server.php',
-        );
+        ];
         return (bool) $this->call('post', 'schools/moodle', $params);
     }
 
     public function subjects($lang) {
-        $subjects = $this->call('get', 'subjects', array('lang' => $lang)) ?: array();
+        $subjects = $this->call('get', 'subjects', ['lang' => $lang]) ?: [];
         foreach ($subjects as $key => $subject) {
             if (empty($subject->idSubject)) {
                 unset($subjects[$key]);
@@ -91,7 +91,7 @@ class vicensvives_ws {
     private function call($method, $path, $params=null) {
         global $CFG;
 
-        if (empty($CFG->vicensvives_sharekey) or empty($CFG->vicensvives_sharepass)) {
+        if (empty($CFG->vicensvives_sharekey) ||  empty($CFG->vicensvives_sharepass)) {
             throw new vicensvives_ws_error('wsnotconfigured');
         }
 
@@ -102,13 +102,13 @@ class vicensvives_ws {
         list($status, $response) = $this->curl($method, $path, $params);
 
         // El token no existe o ha caducado.
-        if ($status == 401 and isset($response->cod) and $response->cod == 401007) {
+        if ($status == 401 && isset($response->cod) && $response->cod == 401007) {
             $this->refresh_token();
             list($status, $response) = $this->curl($method, $path, $params);
         }
 
         // Credenciales ya usadas en otro sitio (schools/moodle).
-        if ($status == 401 and isset($response->cod) and $response->cod == 401025) {
+        if ($status == 401 && isset($response->cod) && $response->cod == 401025) {
             throw new vicensvives_ws_error('wssitemismatch');
         }
 
@@ -151,7 +151,7 @@ class vicensvives_ws {
         }
 
         // Start the header.
-        $header = array();
+        $header = [];
         if ($auth) {
             $header[] = 'Authorization: Bearer ' . $CFG->vicensvives_accesstoken;
         }
@@ -174,23 +174,23 @@ class vicensvives_ws {
 
         $this->log($method, $path, $params, $status, $response);
 
-        return array($status, $response);
+        return [$status, $response];
     }
 
     private function log($method, $path, $params, $status, $response) {
         global $PAGE, $SCRIPT;
 
-        $data = array(
+        $data = [
             'context' => $PAGE->context,
-            'other' => array(
+            'other' => [
                 'script' => $SCRIPT,
                 'method' => $method,
                 'path' => $path,
                 'params' => $params,
                 'status' => $status,
                 'message' => !empty($response->msg) ? $response->msg : '',
-            ),
-        );
+            ],
+        ];
 
         $event = \block_courses_vicensvives\event\webservice_called::create($data);
         $event->trigger();
@@ -201,17 +201,17 @@ class vicensvives_ws {
 
         unset_config('vicensvives_accesstoken');
 
-        $params = array(
+        $params = [
             'client_id' => $CFG->vicensvives_sharekey,
             'client_secret' => $CFG->vicensvives_sharepass,
             'grant_type' => 'client_credentials',
-        );
+        ];
 
         list($status, $response) = $this->curl('post', 'oauth', $params, false);
 
-        if ($status == 200 and !empty($response->access_token)) {
+        if ($status == 200 && !empty($response->access_token)) {
             set_config('vicensvives_accesstoken', $response->access_token);
-        } else if ($status == 401 and isset($response->cod) and $response->cod == 401001) {
+        } else if ($status == 401 && isset($response->cod) && $response->cod == 401001) {
             throw new vicensvives_ws_error('wsauthfailed');
         } else {
             throw new vicensvives_ws_error('wsunknownerror');

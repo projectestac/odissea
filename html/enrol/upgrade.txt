@@ -1,12 +1,10 @@
+=== 4.5 Onwards ===
+
+This file has been replaced by UPGRADING.md. See MDL-81125 for further information.
+
+===
 This files describes API changes in /enrol/* - plugins,
 information provided here is intended especially for developers.
-
-=== 4.4.5 ===
-
-* The `after_user_enrolled` hook now contains a `roleid` property to allow for listeners to determine which role was
-  assigned during user enrolment (if any)
-* The base enrolment `enrol_plugin::send_course_welcome_message_to_user` method also now accepts a `$roleid` parameter
-  in order to correctly populate the `courserole` placeholder
 
 === 4.4 ===
 

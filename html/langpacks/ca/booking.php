@@ -29,6 +29,7 @@ $string['bookingduration'] = 'Durada';
 $string['cancelbooking'] = 'Cancel·la la reserva';
 $string['comments'] = 'Comentaris';
 $string['csvfile'] = 'Fitxer CSV';
+$string['download'] = 'Baixa';
 $string['eventduration'] = 'Durada de l\'esdeveniment';
 $string['location'] = 'Ubicació';
 $string['next'] = 'Següent';

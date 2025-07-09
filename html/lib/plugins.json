@@ -1,5 +1,13 @@
 {
     "standard": {
+        "aiplacement": [
+            "courseassist",
+            "editor"
+        ],
+        "aiprovider": [
+            "openai",
+            "azureai"
+        ],
         "antivirus": [
             "clamav"
         ],
@@ -144,6 +152,7 @@
         "customfield": [
             "checkbox",
             "date",
+            "number",
             "select",
             "text",
             "textarea"
@@ -229,7 +238,6 @@
             "mediaplugin",
             "multilang",
             "tex",
-            "tidy",
             "urltolink"
         ],
         "format": [
@@ -320,6 +328,7 @@
             "quiz",
             "resource",
             "scorm",
+            "subsection",
             "survey",
             "url",
             "wiki",
@@ -479,12 +488,16 @@
             "simpledb",
             "solr"
         ],
+        "smsgateway": [
+            "aws"
+        ],
         "theme": [
             "boost",
             "classic"
         ],
         "tiny": [
             "accessibilitychecker",
+            "aiplacement",
             "autosave",
             "equation",
             "h5p",
@@ -510,7 +523,6 @@
             "filetypes",
             "generator",
             "httpsreplace",
-            "innodb",
             "installaddon",
             "langimport",
             "licensemanager",
@@ -592,7 +604,8 @@
             "authorize"
         ],
         "filter": [
-            "censor"
+            "censor",
+            "tidy"
         ],
         "h5plib": [
             "v124",
@@ -675,6 +688,7 @@
             "assignmentupgrade",
             "bloglevelupgrade",
             "health",
+            "innodb",
             "qeupgradehelper",
             "timezoneimport"
         ],

@@ -246,6 +246,7 @@ $string['tour_activityinfo_course_teacher_content'] = 'Els paràmetres nous de c
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: informació de l\'activitat';
 $string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour_final_step_title'] = 'Final de la visita guiada';
+$string['tour_gradebook_filter_title'] = 'Filtra per nom';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Envia notícies importants aquí.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Hi ha res que vulgueu contar a tothom?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Afegeix contingut nou o edita\'n l\'existent.';

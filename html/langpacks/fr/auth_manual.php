@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_manualdescription'] = 'Cette méthode supprime pour les utilisateurs la possibilité de créer eux-mêmes leur compte. Tous les comptes doivent être créés par l’administrateur.';
+$string['auth_manualdescription'] = 'Cette méthode retire aux utilisateurs la possibilité de créer eux-mêmes leur compte. Tous les comptes doivent être créés par l’administrateur.';
 $string['expiration'] = 'Activer l’échéance des mots de passe';
 $string['expiration_desc'] = 'Si ce réglage est activé, les mots de passe arriveront à échéance après une durée spécifiée.';
 $string['expiration_warning'] = 'Délai de notification';

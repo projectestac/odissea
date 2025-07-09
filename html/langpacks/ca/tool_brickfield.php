@@ -90,5 +90,6 @@ $string['checkdesc:tabletdshouldnotmerge'] = 'Les taules, idealment, no haurien 
 $string['checkdesc:tablethshouldhavescope'] = 'L\'«scope» de fila o columna d\'una taula (utilitzat per mapar fila i columna a cada cel·la) s\'hauria de declarar.';
 $string['checkidvalidation'] = 'Tasca per comprovar per a cada «checkID» no vàlid';
 $string['checkscompleted'] = 'Comprovacions completades: {$a}';
+$string['checktype:image'] = 'Imatge';
 $string['pluginname'] = 'Eines d\'accessibilitat';
 $string['printable:downloadpdf'] = 'Descarrega el pdf';

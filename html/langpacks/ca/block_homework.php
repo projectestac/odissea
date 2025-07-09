@@ -35,4 +35,5 @@ $string['grade'] = 'Qualificació';
 $string['group'] = 'Grup';
 $string['name'] = 'Nom';
 $string['save'] = 'Desa';
+$string['section'] = 'Secció';
 $string['student'] = 'Estudiant';

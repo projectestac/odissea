@@ -36,7 +36,7 @@ $string['adhoctasksdue'] = 'Ad-hoc-Tasks sind fällig';
 $string['adhoctasksfailed'] = 'Ad-hoc-Tasks sind fehlgeschlagen';
 $string['adhoctasksfuture'] = 'Zukünftige Ad-hoc-Tasks';
 $string['adhoctasksrunning'] = 'Ad-hoc-Tasks werden ausgeführt';
-$string['asap'] = '<abbr title="So schnell wie möglich">Schnell</abbr>';
+$string['asap'] = '<abbr title="So bald wie möglich">Möglichst sofort</abbr>';
 $string['backtoadhoctasks'] = 'Zurück zu den Ad-hoc-Tasks';
 $string['backtoscheduledtasks'] = 'Zurück zu den geplanten Vorgängen';
 $string['blocking'] = 'Blockierend';

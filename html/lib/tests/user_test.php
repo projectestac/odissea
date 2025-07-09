@@ -30,6 +30,7 @@ final class user_test extends \advanced_testcase {
      * Setup test data.
      */
     protected function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest(true);
     }
 
@@ -873,6 +874,32 @@ final class user_test extends \advanced_testcase {
         // With override, show real name.
         $options = ['override' => true];
         $this->assertEquals('John Doe', \core_user::get_fullname($user, $context, $options));
+    }
+
+    /**
+     * Test retrieving dummy user fullname
+     *
+     * @covers \core_user::get_dummy_fullname
+     */
+    public function test_get_dummy_fullname(): void {
+        $context = \context_system::instance();
+
+        // Show real name as the force names config are not set.
+        $this->assertEquals('firstname lastname', \core_user::get_dummy_fullname($context));
+
+        // With override, still show real name.
+        $options = ['override' => true];
+        $this->assertEquals('firstname lastname', \core_user::get_dummy_fullname($context, $options));
+
+        // Set the alternative names config.
+        set_config('alternativefullnameformat', 'alternatename lastname firstname');
+
+        // Show default name format.
+        $this->assertEquals('firstname lastname', \core_user::get_dummy_fullname($context));
+
+        // With override, show alternative name format.
+        $options = ['override' => true];
+        $this->assertEquals('alternatename lastname firstname', \core_user::get_dummy_fullname($context, $options));
     }
 
     /**

@@ -42,5 +42,5 @@ $string['privacy:metadata'] = 'Le plugin de type de question Vrai/faux n’enreg
 $string['privacy:preference:showstandardinstruction'] = 'Si les instructions standard doivent être affichées';
 $string['selectone'] = 'Veuillez choisir une réponse.';
 $string['showstandardinstruction'] = 'Afficher les instructions standards';
-$string['showstandardinstruction_help'] = 'S’il faut afficher les instructions « Veuillez choisir une réponse » avant les réponses vrai/faux.';
+$string['showstandardinstruction_help'] = 'S’il faut afficher les instructions « Veuillez choisir une réponse. » avant les réponses vrai/faux.';
 $string['true'] = 'Vrai';

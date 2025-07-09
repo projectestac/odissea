@@ -16,8 +16,6 @@
 
 namespace core;
 
-use lang_string;
-
 /**
  * Unit tests for (some of) ../moodlelib.php.
  *
@@ -2117,13 +2115,13 @@ final class moodlelib_test extends \advanced_testcase {
         $leadingbackslash = (version_compare(PHP_VERSION, '8.2.0', '>=')) ? '\\' : '';
 
         $expected1 = <<<EOF
-{$leadingbackslash}lang_string::__set_state(array(
-   'identifier' => 'no',
+{$leadingbackslash}core\lang_string::__set_state(array(
    'component' => 'moodle',
    'a' => NULL,
-   'lang' => NULL,
    'string' => NULL,
    'forcedstring' => false,
+   'identifier' => 'no',
+   'lang' => NULL,
 ))
 EOF;
 
@@ -4677,7 +4675,7 @@ EOT;
             ],
             'method_of_object' => [
                 [new lang_string('parentlanguage', 'core_langconfig'), 'my_foobar_method'],
-                'lang_string::my_foobar_method',
+                'core\lang_string::my_foobar_method',
             ],
             'function_as_literal' => [
                 'my_foobar_callback',
@@ -5192,13 +5190,20 @@ EOT;
      * @dataProvider get_home_page_provider
      * @param string $user Whether the user is logged, guest or not logged.
      * @param int $expected Expected value after calling the get_home_page method.
-     * @param int $defaulthomepage The $CFG->defaulthomepage setting value.
-     * @param int $enabledashboard Whether the dashboard should be enabled or not.
-     * @param int $userpreference User preference for the home page setting.
+     * @param int|string|null $defaulthomepage The $CFG->defaulthomepage setting value.
+     * @param int|null $enabledashboard Whether the dashboard should be enabled or not.
+     * @param int|string|null $userpreference User preference for the home page setting.
+     * $param int|null $allowguestmymoodle The $CFG->allowguestmymoodle setting value.
      * @covers ::get_home_page
      */
-    public function test_get_home_page(string $user, int $expected, ?int $defaulthomepage = null, ?int $enabledashboard = null,
-            ?int $userpreference = null): void {
+    public function test_get_home_page(
+        string $user,
+        int $expected,
+        int|string|null $defaulthomepage = null,
+        ?int $enabledashboard = null,
+        int|string|null $userpreference = null,
+        ?int $allowguestmymoodle = null,
+    ): void {
         global $CFG, $USER;
 
         $this->resetAfterTest();
@@ -5215,6 +5220,9 @@ EOT;
         if (isset($enabledashboard)) {
             $CFG->enabledashboard = $enabledashboard;
         }
+        if (isset($allowguestmymoodle)) {
+            $CFG->allowguestmymoodle = $allowguestmymoodle;
+        }
 
         if ($USER) {
             set_user_preferences(['user_home_page_preference' => $userpreference], $USER->id);
@@ -5229,21 +5237,39 @@ EOT;
      *
      * @return array
      */
-    public function get_home_page_provider(): array {
+    public static function get_home_page_provider(): array {
+        global $CFG;
+
         return [
             'No logged user' => [
                 'user' => 'nologged',
                 'expected' => HOMEPAGE_SITE,
             ],
-            'Guest user' => [
+            'Guest user. Dashboard set as default home page and enabled for guests' => [
+                'user' => 'guest',
+                'expected' => HOMEPAGE_MY,
+            ],
+            'Guest user. Dashboard set as default home page but disabled for guests' => [
                 'user' => 'guest',
                 'expected' => HOMEPAGE_SITE,
+                'defaulthomepage' => HOMEPAGE_MY,
+                'enabledashboard' => 1,
+                'userpreference' => null,
+                'allowguestmymoodle' => 0,
+            ],
+            'Guest user. My courses set as default home page' => [
+                'user' => 'guest',
+                'expected' => HOMEPAGE_SITE,
+                'defaulthomepage' => HOMEPAGE_MYCOURSES,
+            ],
+            'Guest user. User preference set as default page' => [
+                'user' => 'guest',
+                'expected' => HOMEPAGE_SITE,
+                'defaulthomepage' => HOMEPAGE_USER,
             ],
             'Logged user. Dashboard set as default home page and enabled' => [
                 'user' => 'logged',
                 'expected' => HOMEPAGE_MY,
-                'defaulthomepage' => HOMEPAGE_MY,
-                'enabledashboard' => 1,
             ],
             'Logged user. Dashboard set as default home page but disabled' => [
                 'user' => 'logged',
@@ -5275,6 +5301,11 @@ EOT;
                 'defaulthomepage' => HOMEPAGE_SITE,
                 'enabledashboard' => 0,
             ],
+            'Logged user. URL set as default home page.' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_URL,
+                'defaulthomepage' => "/home",
+            ],
             'Logged user. User preference set as default page with dashboard enabled and user preference set to dashboard' => [
                 'user' => 'logged',
                 'expected' => HOMEPAGE_MY,
@@ -5303,6 +5334,13 @@ EOT;
                 'enabledashboard' => 0,
                 'userpreference' => HOMEPAGE_MYCOURSES,
             ],
+            'Logged user. User preference set as default page with user preference set to URL.' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_URL,
+                'defaulthomepage' => HOMEPAGE_USER,
+                'enabledashboard' => null,
+                'userpreference' => "/home",
+            ],
         ];
     }
 
@@ -5323,6 +5361,39 @@ EOT;
         $CFG->enabledashboard = 0;
         $default = get_default_home_page();
         $this->assertEquals(HOMEPAGE_MYCOURSES, $default);
+    }
+
+    /**
+     * Test getting default home page for {@see HOMEPAGE_URL}
+     *
+     * @covers ::get_default_home_page_url
+     */
+    public function test_get_default_home_page_url(): void {
+        global $CFG;
+
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $this->assertNull(get_default_home_page_url());
+
+        // Site configuration.
+        $CFG->defaulthomepage = "/home";
+        $this->assertEquals("{$CFG->wwwroot}/home", get_default_home_page_url());
+
+        // Site configuration with invalid value.
+        $CFG->defaulthomepage = "home";
+        $this->assertNull(get_default_home_page_url());
+
+        // User preference.
+        $CFG->defaulthomepage = HOMEPAGE_USER;
+
+        $userpreference = "/about";
+        set_user_preference('user_home_page_preference', $userpreference);
+        $this->assertEquals("{$CFG->wwwroot}/about", get_default_home_page_url());
+
+        // User preference with invalid value.
+        set_user_preference('user_home_page_preference', "about");
+        $this->assertNull(get_default_home_page_url());
     }
 
     /**
@@ -5599,6 +5670,47 @@ EOT;
                 true,
                 ['one'],
             ],
+        ];
+    }
+
+    /**
+     * Test case for checking the email greetings in various user notification emails.
+     *
+     * @dataProvider email_greetings_provider
+     * @param string $funcname The name of the function to call for sending the email.
+     * @param mixed $extra Any extra parameter required by the function.
+     * @covers ::send_password_change_info()
+     * @covers ::send_confirmation_email()
+     * @covers ::setnew_password_and_mail()
+     * @covers ::send_password_change_confirmation_email()
+     */
+    public function test_email_greetings($funcname, $extra): void {
+        $this->resetAfterTest();
+
+        $user = $this->getDataGenerator()->create_user();
+
+        $sink = $this->redirectEmails(); // Make sure we are redirecting emails.
+        $funcname($user, $extra);
+        $result = $sink->get_messages();
+        $sink->close();
+        // Test greetings.
+        $this->assertStringContainsString('Hi ' . $user->firstname, quoted_printable_decode($result[0]->body));
+    }
+
+    /**
+     * Data provider for test_email_greetings tests.
+     *
+     * @return array
+     */
+    public static function email_greetings_provider(): array {
+        $extrasendpasswordchangeconfirmationemail = new \stdClass();
+        $extrasendpasswordchangeconfirmationemail->token = '123';
+
+        return [
+            ['send_password_change_info', null],
+            ['send_confirmation_email', null],
+            ['setnew_password_and_mail', false],
+            ['send_password_change_confirmation_email', $extrasendpasswordchangeconfirmationemail],
         ];
     }
 }

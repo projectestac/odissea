@@ -177,7 +177,7 @@ export default class Component extends DndCmItem {
         }
         // Check if the completion value has changed.
         const completionElement = this.getElement(this.selectors.CM_COMPLETION);
-        if (completionElement.dataset.value == element.completionstate) {
+        if (!completionElement || completionElement.dataset.value == element.completionstate) {
             return;
         }
 
@@ -222,7 +222,13 @@ export default class Component extends DndCmItem {
      * @return {String} the anchor link.
      */
     _getActivitySectionURL(cm) {
-        const section = this.reactive.get('section', cm.sectionid);
+        let section = this.reactive.get('section', cm.sectionid);
+
+        // If the section is delegated get its parent section if it has one.
+        if (section.component && section.parentsectionid) {
+            section = this.reactive.get('section', section.parentsectionid);
+        }
+
         if (!section) {
             return '#';
         }

@@ -177,7 +177,7 @@ final class settings_provider_test extends \advanced_testcase {
     public function test_hideifs(): void {
         $settinghideifs = settings_provider::get_quiz_hideifs();
 
-        $this->assertCount(23, $settinghideifs);
+        $this->assertCount(25, $settinghideifs);
 
         $this->assertArrayHasKey('seb_templateid', $settinghideifs);
         $this->assertCount(1, $settinghideifs['seb_templateid']);
@@ -357,6 +357,26 @@ final class settings_provider_test extends \advanced_testcase {
         $this->assert_hide_if(
             $settinghideifs['seb_enableaudiocontrol'][0],
             'seb_enableaudiocontrol',
+            'seb_requiresafeexambrowser',
+            'noteq',
+            settings_provider::USE_SEB_CONFIG_MANUALLY
+        );
+
+        $this->assertArrayHasKey('seb_allowcapturecamera', $settinghideifs);
+        $this->assertCount(1, $settinghideifs['seb_allowcapturecamera']);
+        $this->assert_hide_if(
+            $settinghideifs['seb_allowcapturecamera'][0],
+            'seb_allowcapturecamera',
+            'seb_requiresafeexambrowser',
+            'noteq',
+            settings_provider::USE_SEB_CONFIG_MANUALLY
+        );
+
+        $this->assertArrayHasKey('seb_allowcapturemicrophone', $settinghideifs);
+        $this->assertCount(1, $settinghideifs['seb_allowcapturemicrophone']);
+        $this->assert_hide_if(
+            $settinghideifs['seb_allowcapturemicrophone'][0],
+            'seb_allowcapturemicrophone',
             'seb_requiresafeexambrowser',
             'noteq',
             settings_provider::USE_SEB_CONFIG_MANUALLY
@@ -622,7 +642,7 @@ final class settings_provider_test extends \advanced_testcase {
     /**
      * Test SEB usage options.
      *
-     * @param string $settingcapability Setting capability to check manual option against.
+     * @param string $settingcapability Setting capability to check options against.
      *
      * @dataProvider settings_capability_data_provider
      */
@@ -656,14 +676,32 @@ final class settings_provider_test extends \advanced_testcase {
 
         $options = settings_provider::get_requiresafeexambrowser_options($this->context);
 
-        $this->assertCount(2, $options);
+        $this->assertCount(1, $options);
         $this->assertFalse(array_key_exists(settings_provider::USE_SEB_CONFIG_MANUALLY, $options));
         $this->assertFalse(array_key_exists(settings_provider::USE_SEB_TEMPLATE, $options));
         $this->assertFalse(array_key_exists(settings_provider::USE_SEB_UPLOAD_CONFIG, $options));
-        $this->assertTrue(array_key_exists(settings_provider::USE_SEB_CLIENT_CONFIG, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_CLIENT_CONFIG, $options));
         $this->assertTrue(array_key_exists(settings_provider::USE_SEB_NO, $options));
 
         assign_capability($settingcapability, CAP_ALLOW, $this->roleid, $this->context->id);
+        $options = settings_provider::get_requiresafeexambrowser_options($this->context);
+        $this->assertCount(1, $options);
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_CONFIG_MANUALLY, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_TEMPLATE, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_UPLOAD_CONFIG, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_CLIENT_CONFIG, $options));
+        $this->assertTrue(array_key_exists(settings_provider::USE_SEB_NO, $options));
+
+        assign_capability('quizaccess/seb:manage_seb_configuremanually', CAP_ALLOW, $this->roleid, $this->context->id);
+        $options = settings_provider::get_requiresafeexambrowser_options($this->context);
+        $this->assertCount(2, $options);
+        $this->assertTrue(array_key_exists(settings_provider::USE_SEB_CONFIG_MANUALLY, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_TEMPLATE, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_UPLOAD_CONFIG, $options));
+        $this->assertFalse(array_key_exists(settings_provider::USE_SEB_CLIENT_CONFIG, $options));
+        $this->assertTrue(array_key_exists(settings_provider::USE_SEB_NO, $options));
+
+        assign_capability('quizaccess/seb:manage_seb_usesebclientconfig', CAP_ALLOW, $this->roleid, $this->context->id);
         $options = settings_provider::get_requiresafeexambrowser_options($this->context);
         $this->assertCount(3, $options);
         $this->assertTrue(array_key_exists(settings_provider::USE_SEB_CONFIG_MANUALLY, $options));
@@ -1134,6 +1172,9 @@ final class settings_provider_test extends \advanced_testcase {
 
         $this->assertFalse(settings_provider::can_configure_manually($this->context));
 
+        assign_capability('quizaccess/seb:manage_seb_configuremanually', CAP_ALLOW, $this->roleid, $this->context->id);
+        $this->assertFalse(settings_provider::can_configure_manually($this->context));
+
         assign_capability($settingcapability, CAP_ALLOW, $this->roleid, $this->context->id);
         $this->assertTrue(settings_provider::can_configure_manually($this->context));
     }
@@ -1228,6 +1269,11 @@ final class settings_provider_test extends \advanced_testcase {
 
         $this->set_up_user_and_role();
 
+        $this->assertTrue(settings_provider::is_conflicting_permissions($this->context));
+
+        assign_capability('quizaccess/seb:manage_seb_configuremanually', CAP_ALLOW, $this->roleid, $this->context->id);
+        $this->assertTrue(settings_provider::is_conflicting_permissions($this->context));
+
         assign_capability($settingcapability, CAP_ALLOW, $this->roleid, $this->context->id);
         $this->assertFalse(settings_provider::is_conflicting_permissions($this->context));
     }
@@ -1293,6 +1339,8 @@ final class settings_provider_test extends \advanced_testcase {
         $allsettings->seb_regexblocked = 20;
         $allsettings->seb_templateid = 21;
         $allsettings->seb_allowedbrowserexamkeys = 22;
+        $allsettings->seb_allowcapturecamera = 23;
+        $allsettings->seb_allowcapturemicrophone = 24;
 
         return $allsettings;
     }
@@ -1396,6 +1444,8 @@ final class settings_provider_test extends \advanced_testcase {
                 'seb_enableaudiocontrol' => [
                     'seb_muteonstartup' => [],
                 ],
+                'seb_allowcapturecamera' => [],
+                'seb_allowcapturemicrophone' => [],
                 'seb_allowspellchecking' => [],
                 'seb_activateurlfiltering' => [
                     'seb_filterembeddedcontent' => [],

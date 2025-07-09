@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Camp d\'imatge';
+$string['fieldtypelabel'] = 'Imatge';
 $string['pluginname'] = 'Imatge';

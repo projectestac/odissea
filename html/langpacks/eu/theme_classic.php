@@ -33,7 +33,7 @@ $string['pluginname'] = 'Klasikoa';
 $string['preset'] = 'Azalaren aurretiko ezarpenak';
 $string['preset_desc'] = 'Aukeratu aurretiko ezarpen bat azalaren itxura orokorra aldatzeko.';
 $string['presetfiles'] = 'Azalaren aurretiko ezarpenen fitxategi gehigarriak';
-$string['presetfiles_desc'] = 'Aurretiko ezarpenen fitxategiak azalaren itxura drastikoki aldatzeko erabili daitezke. Ikusi <a href="https://docs.moodle.org/dev/Boost_Presets">Boost-eko aurretiko ezarpenak</a> zure aurretiko ezarpen-fitxategiak sortu eta partekatzeko informazio gehiago eskuratzeko, eta ikusi <a href="https://moodle.net/search?q=boost+presets">Aurretiko ezarpenen biltegia</a> besteek partekatutako aurretiko ezarpenak aurkitzeko.';
+$string['presetfiles_desc'] = 'Aurretiko ezarpen-fitxategiak azalaren itxura drastikoki aldatzeko erabili daitezke.';
 $string['privacy:metadata'] = 'Classic azalak ez du datu pertsonalik biltzen.';
 $string['region-side-post'] = 'Eskuin';
 $string['region-side-pre'] = 'Ezker';

@@ -39,23 +39,23 @@ Feature: Teacher can allocate icons to tiles
     And I wait until the page is ready
     And I wait "3" seconds
     And "Pick a new icon or background photo" "dialogue" should be visible
-    And I click on ".tile-icon[data-original-title=\"Map\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"Map\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
     And I click on "#tileicon_2" "css_element"
     And I wait until the page is ready
-    And I click on ".tile-icon[data-original-title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
     And I click on "#tileicon_3" "css_element"
     And I wait until the page is ready
-    And I click on ".tile-icon[data-original-title=\"Star (shaded)\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"Star (shaded)\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
     And I click on "#tileicon_4" "css_element"
     And I wait until the page is ready
-    And I click on ".tile-icon[data-original-title=\"Tasks\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"Tasks\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
     And I click on "#tileicon_5" "css_element"
     And I wait until the page is ready
-    And I click on ".tile-icon[data-original-title=\"British pound\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"British pound\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
 
 #    // one title edit just to check we can after the above (this is also done elsewhere)

@@ -414,7 +414,7 @@ $string['maxbytesfile'] = '这个文件 {$a->file} 太大了。你可以上传�
 $string['maxdraftitemids'] = '上传大量文件后，您的文件上传会暂时受到限制。 请稍候，然后重试。';
 $string['messageundeliveredbynotificationsettings'] = '无法发送消息，因为站点管理员已禁用用户之间的个人消息（在通知设置中）。';
 $string['messagingdisable'] = '本站的消息系统已禁用';
-$string['mimetexisnotexist'] = '您的系统未配置为运行 mimeTeX。你需要从 <a href=“https://www.forkosh.com/mimetex.zip”>https://www.forkosh.com/mimetex.zip 获取 C 源</a>码，编译后将可执行文件放入你的 moodle/filter/tex/ 目录下。';
+$string['mimetexisnotexist'] = '您的系统未配置为运行 mimeTeX。您需从 <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip </a>获取 C 语言源代码，编译后将可执行文件放入你的 moodle/filter/tex/ 目录下。';
 $string['mimetexnotexecutable'] = '自定义mimetex不可执行！';
 $string['missing_moodle_backup_xml_file'] = '找不到备份XML文件：{$a}';
 $string['missingcategoryrole'] = '无法为用户分配角色：缺少类别角色。';

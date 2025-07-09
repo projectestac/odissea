@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['typename_checklist'] = 'Elenco di controllo';
 $string['typename_choicegroup'] = 'Scelta gruppo';
+$string['typename_quiz'] = 'Quiz';
 $string['typename_quizgame'] = 'Quizventure';

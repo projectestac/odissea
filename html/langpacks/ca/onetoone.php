@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attendance'] = 'Assistència';
+$string['copy'] = 'Copia';
 $string['details'] = 'Detalls';
 $string['edit'] = 'Edita';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';

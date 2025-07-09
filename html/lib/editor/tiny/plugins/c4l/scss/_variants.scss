@@ -1,0 +1,61 @@
+/* Component variants */
+
+/* Legacy */
+
+.c4l-keyconcept.c4l-full-width-variant,
+.c4l-quote.c4l-full-width-variant,
+.c4l-dodontcards.c4l-full-width-variant,
+.c4l-dodontcards-do,
+.c4l-dodontcards.c4l-full-width-variant .c4l-dodontcards-dont,
+.c4l-figure.c4l-full-width-variant,
+.c4l-proceduralcontext.c4l-full-width-variant,
+.c4l-learningoutcomes.c4l-full-width-variant,
+.c4l-allpurposecard.c4l-full-width-variant {
+    max-width: 100%;
+}
+
+.c4l-tip.c4l-full-width-variant,
+.c4l-reminder.c4l-full-width-variant,
+.c4l-attention.c4l-full-width-variant {
+    /* 100% - 1% due to the outbound icon */
+    max-width: 99%;
+}
+
+.c4l-readingcontext.c4l-full-width-variant,
+.c4l-example.c4l-full-width-variant,
+.c4l-expectedfeedback.c4l-full-width-variant {
+    /* 100% - 6% due to the shadow */
+    max-width: 94%;
+}
+
+/* Variants */
+
+/* .c4lv prefix instead of .c4l only for the parent class of an element supporting variants */
+
+.c4lv-keyconcept.c4l-full-width-variant,
+.c4lv-quote.c4l-full-width-variant,
+.c4lv-dodontcards.c4l-full-width-variant,
+.c4lv-dodontcards-do,
+.c4lv-dodontcards.c4l-full-width-variant .c4l-dodontcards-dont,
+.c4lv-figure.c4l-full-width-variant,
+.c4lv-proceduralcontext.c4l-full-width-variant,
+.c4lv-learningoutcomes.c4l-full-width-variant,
+.c4lv-expectedfeedback.c4l-full-width-variant,
+.c4lv-allpurposecard.c4l-full-width-variant,
+.c4lv-custom-component.c4l-full-width-variant {
+    max-width: 100%;
+}
+
+.c4lv-tip.c4l-full-width-variant,
+.c4lv-reminder.c4l-full-width-variant,
+.c4lv-attention.c4l-full-width-variant {
+    /* 100% - 1% due to the outbound icon */
+    max-width: 99%;
+}
+
+.c4lv-readingcontext.c4l-full-width-variant,
+.c4lv-example.c4l-full-width-variant,
+.c4lv-expectedfeedback.c4l-full-width-variant {
+    /* 100% - 6% due to the shadow */
+    max-width: 94%;
+}

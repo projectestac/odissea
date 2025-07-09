@@ -28,6 +28,7 @@ require_once $CFG->dirroot.'/grade/lib.php';
 require_once $CFG->dirroot.'/grade/report/user/lib.php';
 
 $courseid = required_param('id', PARAM_INT);
+// 0 - view all reports. null - view own report. non-zero and non-null - view other user report.
 $userid   = optional_param('userid', null, PARAM_INT);
 $userview = optional_param('userview', 0, PARAM_INT);
 
@@ -95,7 +96,8 @@ if (has_capability('moodle/grade:viewall', $context)) {
     $currentgroup = $gpr->groupid;
     // Conditionally add the group JS if we have groups enabled.
     if ($groupmode) {
-        $PAGE->requires->js_call_amd('gradereport_user/group', 'init');
+        $baseurl = new moodle_url('/grade/report/user/index.php', ['id' => $courseid]);
+        $PAGE->requires->js_call_amd('core_course/actionbar/group', 'init', [$baseurl->out(false)]);
     }
 
     // To make some other functions work better later.

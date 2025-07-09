@@ -69,7 +69,8 @@ function hotpot_supports($feature) {
         'FEATURE_PLAGIARISM'       => false,
         'FEATURE_RATE'             => false,
         'FEATURE_SHOW_DESCRIPTION' => true, // default=false (Moodle 2.2)
-        'FEATURE_USES_QUESTIONS'   => false
+        'FEATURE_USES_QUESTIONS'   => false,
+        'FEATURE_CAN_DISPLAY'      => true, // Moodle >= 5.0
     );
     if (defined('MOD_ARCHETYPE_OTHER')) {
         $constants['FEATURE_MOD_ARCHETYPE'] = MOD_ARCHETYPE_OTHER; // Moodle >= 2.x
@@ -82,7 +83,7 @@ function hotpot_supports($feature) {
             return $value;
         }
     }
-    return false;
+    return null; // Return null to ensure we get the default value for any unknown FEATURE.
 }
 
 /**

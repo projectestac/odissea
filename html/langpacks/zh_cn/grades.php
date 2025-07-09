@@ -277,9 +277,9 @@ $string['gradeanalysis'] = '成绩分析';
 $string['gradebook'] = '成绩册';
 $string['gradebookcalculationsfixbutton'] = '接受成绩变更并修正计算错误';
 $string['gradebookcalculationsuptodate'] = '成绩册中的计算是最新的。 您可能需要重新加载此页面才能查看更改。';
-$string['gradebookcalculationswarning'] = '注意：在计算成绩簿中显示的成绩时检测到一些错误。如果您的课程尚未开始或正在进行中，建议通过单击下面的按钮来修复错误，尽管这会导致某些成绩发生变化。如果您的课程已结束且已提交成绩，您可能不想解决此问题。
+$string['gradebookcalculationswarning'] = '注：在计算成绩簿中显示的成绩时检测到一些错误。如果您的课程尚未开始或正在进行中，建议通过单击下面的按钮来修复错误，尽管这会导致某些成绩发生变化。如果您的课程已结束且已提交成绩，您可能不想解决此问题。
 
-较新的版本是 {$a->currentversion};您使用的是成绩簿版本 {$a->gradebookVersion}。您可以在 <a href=“{$a->url}”>成绩簿计算更改中查看更改列表</a>。';
+较新的版本是 {$a->currentversion};您使用的是成绩簿版本 {$a->gradebookVersion}。您可在 <a href="{$a->url}">成绩簿计算更改</a>中查看更改列表。';
 $string['gradebookhiddenerror'] = '当前成绩册设置为对学生隐藏所有信息。';
 $string['gradebookhistories'] = '成绩历史记录';
 $string['gradebooknavigationmenu'] = '成绩单导航菜单';

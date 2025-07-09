@@ -75,13 +75,17 @@ class core_text {
     }
 
     /**
-     * Reset internal textlib caches.
-     * @static
      * @deprecated since Moodle 4.0. See MDL-53544.
-     * @todo To be removed in Moodle 4.4 - MDL-71748
      */
-    public static function reset_caches() {
-        debugging("reset_caches() is deprecated. Typo3 has been removed and caches aren't used anymore.", DEBUG_DEVELOPER);
+    #[\core\attribute\deprecated(
+        'core_text::reset_caches',
+        since: '4.0',
+        reason:'Typo3 has been removed and caches aren\'t used anymore.',
+        mdl: 'MDL-53544',
+        final: true,
+    )]
+    public static function reset_caches(): void {
+        \core\deprecation::emit_deprecation_if_present([self::class, __FUNCTION__]);
     }
 
     /**
@@ -675,5 +679,17 @@ class core_text {
         }
 
         return mb_convert_case($text, MB_CASE_TITLE, 'UTF-8');
+    }
+
+    /**
+     * Trims control characters out of a string.
+     * Example: (\x00-\x1f) and (\x7f)
+     *
+     * @param string $text Input string
+     * @return string Cleaned string value
+     */
+    public static function trim_ctrl_chars(string $text): string {
+        // Remove control characters text.
+        return preg_replace('/[\x00-\x08\x0b-\x0c\x0e-\x1f\x7f]/i', '', $text);
     }
 }

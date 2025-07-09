@@ -79,7 +79,7 @@ abstract class question_engine {
      * @param moodle_database $db a database connectoin. Defaults to global $DB.
      * @return question_usage_by_activity loaded from the database.
      */
-    public static function load_questions_usage_by_activity($qubaid, moodle_database $db = null) {
+    public static function load_questions_usage_by_activity($qubaid, ?moodle_database $db = null) {
         $dm = new question_engine_data_mapper($db);
         return $dm->load_questions_usage_by_activity($qubaid);
     }
@@ -91,7 +91,7 @@ abstract class question_engine {
      * @param question_usage_by_activity the usage to save.
      * @param moodle_database $db a database connectoin. Defaults to global $DB.
      */
-    public static function save_questions_usage_by_activity(question_usage_by_activity $quba, moodle_database $db = null) {
+    public static function save_questions_usage_by_activity(question_usage_by_activity $quba, ?moodle_database $db = null) {
         $dm = new question_engine_data_mapper($db);
         $observer = $quba->get_observer();
         if ($observer instanceof question_engine_unit_of_work) {
@@ -154,7 +154,7 @@ abstract class question_engine {
      * @return boolean whether any of these questions are being used by any of
      *      those usages.
      */
-    public static function questions_in_use(array $questionids, qubaid_condition $qubaids = null) {
+    public static function questions_in_use(array $questionids, ?qubaid_condition $qubaids = null) {
         if (is_null($qubaids)) {
             return false;
         }
@@ -1133,6 +1133,20 @@ abstract class question_utils {
         ];
 
         return $editoroptions;
+    }
+
+    /**
+     * Format question fragment string and apply filtering,
+     *
+     * @param string $text current text that we want to be apply filters.
+     * @param context $context of the page question are in.
+     * @return string  result has been modified by filters.
+     */
+    public static function format_question_fragment(string $text, context $context): string {
+        global $PAGE;
+        $filtermanager = \filter_manager::instance();
+        $filtermanager->setup_page_for_filters($PAGE, $context);
+        return $filtermanager->filter_string($text, $context);
     }
 }
 

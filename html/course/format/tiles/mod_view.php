@@ -80,7 +80,7 @@ if ($cm->modname === 'resource') {
 
     // If the URL is a YouTube video etc, it may need converting into an embed URL.
     $modifiedurl = !optional_param('noembed', false, PARAM_BOOL)
-        ? \format_tiles\output\course_output::check_modify_embedded_url($redirecturl)
+        ? \format_tiles\local\video_cm::check_modify_embedded_url($redirecturl)
         : null;
 
     redirect(new moodle_url($modifiedurl ?: $redirecturl));

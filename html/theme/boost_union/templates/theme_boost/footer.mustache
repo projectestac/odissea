@@ -1,0 +1,293 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_boost/footer
+
+    Page footer.
+
+    Example context (json):
+    {
+        "output": {
+            "page_doc_link": "Documentation for this page",
+            "supportemail": "<a href=\"#\">Contact site support</a>",
+            "has_popover_links": true,
+            "services_support": "Services and support",
+            "login_info": "You are logged in as cute kitten",
+            "moodle_release": "90210",
+            "has_communication_links": true,
+            "communication_url": "https://element:8081/#/room/#yourroom:synapse",
+            "communication_link": "<a href=\"#\">Communication room</a>"
+        },
+        "anystaticpagelinkedfromfooter": true,
+        "anyaccessibilitypagelinkedfromfooter": true,
+        "imprintlinkpositionfooter": true,
+        "imprintlink": "https://localhost/theme/boost_union/pages/imprint.php",
+        "imprintpagetitle": "Imprint",
+        "contactlinkpositionfooter": true,
+        "contactlink": "https://localhost/theme/boost_union/pages/contact.php",
+        "contactpagetitle": "Contact",
+        "footerbutton": true,
+        "footershowchat": true,
+        "footershowcontact": true,
+        "footershowhelp": true,
+        "footershowlogininfo": true,
+        "footershowpopoverlinks": true,
+        "footershowpowered": true,
+        "footershowservices": true,
+        "footershowusertour": true,
+        "helplinkpositionfooter": true,
+        "helplink": "https://localhost/theme/boost_union/pages/help.php",
+        "helppagetitle": "Help",
+        "maintenancelinkpositionfooter": true,
+        "maintenancelink": "https://localhost/theme/boost_union/pages/maintenance.php",
+        "maintenancepagetitle": "Maintenance",
+        "aboutuslinkpositionfooter": true,
+        "aboutuslink": "https://localhost/theme/boost_union/pages/aboutus.php",
+        "aboutuspagetitle": "About us",
+        "offerslinkpositionfooter": true,
+        "offerslink": "https://localhost/theme/boost_union/pages/offers.php",
+        "offerspagetitle": "Offers",
+        "accessibilitydeclarationlinkpositionfooter": true,
+        "accessibilitydeclarationlink": "https://localhost/theme/boost_union/accessibility/declaration.php",
+        "accessibilitydeclarationpagetitle": "Declaration of accessibility",
+        "accessibilitysupportlinkpositionfooter": true,
+        "accessibilitysupportlink": "https://localhost/theme/boost_union/accessibility/support.php",
+        "accessibilitysupporttitle": "Accessibility support",
+        "page1linkpositionfooter": true,
+        "page1link": "https://localhost/theme/boost_union/pages/page1.php",
+        "page1pagetitle": "Generic page 1",
+        "page2linkpositionfooter": true,
+        "page2link": "https://localhost/theme/boost_union/pages/page2.php",
+        "page2pagetitle": "Generic page 2",
+        "page3linkpositionfooter": true,
+        "page3link": "https://localhost/theme/boost_union/pages/page3.php",
+        "page3pagetitle": "Generic page 3",
+        "suppressfooterlinkicons": false
+    }
+}}
+{{!
+    This template is a modified version of theme_boost/footer
+
+    Modifications compared to the original template:
+    * Added the possibility to show the imprint page link.
+    * Added the possibility to show the contact page link.
+    * Added the possibility to show the help page link.
+    * Added the possibility to show the maintenance page link.
+    * Added the possibility to show the about us page link.
+    * Added the possibility to show the offers page link.
+    * Added the possibility to show the accessibility declaration page link.
+    * Added the possibility to show the accessibility support page link.
+    * Added the possibility to show the generic page 1 link.
+    * Added the possibility to show the generic page 2 link.
+    * Added the possibility to show the generic page 3 link.
+    * Added the accessibility button (and the element to allow JS to add the back-to-top button).
+    * Added the bottom menu bar to show menus in footer for mobile devices.
+    * Added the possibility to suppress the footer button (question mark in the circle).
+    * Added the possibility to suppress each link in the footer popover individually.
+      Three things are particularly important to know:
+      * During this restructuring, standard_end_of_body_html was split into two functions
+        standard_end_of_body_html_additionalhtmlfooter and standard_end_of_body_html_endtoken to allow a better
+        structure of the resulting link list.
+      * The function standard_footer_html() returns several links. The checks if each link is displayed or not
+        happens within this function and not here in Mustache.
+      * The "Reset user tour on this page" link is added to the page by Moodle core with a quite aggressive JavaScript
+        code. If this JS code does not find the placeholder div, it will add the link at another location on the page.
+        That's why we keep the placeholder here and hide it with CSS if the link should be suppressed.
+    * Added the possibility to suppress the icons in front of the footer links.
+}}
+
+<footer id="page-footer" class="footer-popover bg-white">
+    <div data-region="footer-container-popover">
+        {{#output.has_communication_links}}
+            <button onclick="window.open('{{output.communication_url}}', '_blank', 'noreferrer')" class="btn btn-icon bg-primary text-white icon-no-margin btn-footer-communication" aria-label="{{#str}}communicationroomlink, course{{/str}}">
+                {{#pix}}t/messages-o, core{{/pix}}
+            </button>
+        {{/output.has_communication_links}}
+        {{#footerbutton }}
+            <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
+                {{#pix}}e/question, core{{/pix}}
+            </button>
+        {{/footerbutton }}
+        <div id="boost-union-footer-buttons">
+            {{#accessibilitybutton}}
+                <a id="btn-accessibility-support" class="btn btn-icon bg-secondary icon-no-margin d-print-none" href="{{accessibilitybuttonlink}}" aria-label="{{accessibilitybuttonsrlinktitle}}">
+                    <i class="icon fa fa-universal-access fa-fw" aria-hidden="true"></i>
+                </a>
+            {{/accessibilitybutton}}
+        </div>
+    </div>
+    {{#footerbutton }}
+        <div class="footer-content-popover container" data-region="footer-content-popover">
+            {{#footershowchat}}
+                {{#output.has_communication_links}}
+                    <div class="footer-section p-3 border-bottom footer-link-communication">
+                        <div class="footer-support-link">{{{ output.communication_link }}}</div>
+                    </div>
+                {{/output.has_communication_links}}
+            {{/footershowchat}}
+            {{#footershowpopoverlinks}}
+                {{# output.has_popover_links }}
+                    <div class="footer-section p-3 border-bottom">
+                        {{#footershowhelp}}
+                            {{# output.page_doc_link }}
+                                <div class="footer-support-link">{{{ output.page_doc_link }}}</div>
+                            {{/ output.page_doc_link }}
+                        {{/footershowhelp}}
+
+                        {{#footershowservices}}
+                            {{# output.services_support_link }}
+                                <div class="footer-support-link">{{{ output.services_support_link }}}</div>
+                            {{/ output.services_support_link }}
+                        {{/footershowservices}}
+
+                        {{#footershowcontact}}
+                            {{# output.supportemail }}
+                                <div class="footer-support-link">{{{ output.supportemail }}}</div>
+                            {{/ output.supportemail }}
+                        {{/footershowcontact}}
+                    </div>
+                {{/ output.has_popover_links }}
+            {{/footershowpopoverlinks}}
+            {{#anystaticpagelinkedfromfooter}}
+                <div class="footer-section p-3 border-bottom">
+                    {{# aboutuslinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_aboutuslink">
+                            <a href="{{ aboutuslink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-info-circle fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ aboutuspagetitle }}</a>
+                        </div>
+                    {{/ aboutuslinkpositionfooter }}
+
+                    {{# offerslinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_offerslink">
+                            <a href="{{ offerslink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-briefcase fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ offerspagetitle }}</a>
+                        </div>
+                    {{/ offerslinkpositionfooter }}
+
+                    {{# imprintlinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_imprintlink">
+                            <a href="{{ imprintlink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-building-o fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ imprintpagetitle }}</a>
+                        </div>
+                    {{/ imprintlinkpositionfooter }}
+
+                    {{# contactlinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_contactlink">
+                            <a href="{{ contactlink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-address-card fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ contactpagetitle }}</a>
+                        </div>
+                    {{/ contactlinkpositionfooter }}
+
+                    {{# helplinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_helplink">
+                            <a href="{{ helplink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-question-circle-o fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ helppagetitle }}</a>
+                        </div>
+                    {{/ helplinkpositionfooter }}
+
+                    {{# maintenancelinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_maintenancelink">
+                            <a href="{{ maintenancelink }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-wrench fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ maintenancepagetitle }}</a>
+                        </div>
+                    {{/ maintenancelinkpositionfooter }}
+
+                    {{# page1linkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_page1link">
+                            <a href="{{ page1link }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-arrow-circle-o-right fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ page1pagetitle }}</a>
+                        </div>
+                    {{/ page1linkpositionfooter }}
+
+                    {{# page2linkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_page2link">
+                            <a href="{{ page2link }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-arrow-circle-o-right fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ page2pagetitle }}</a>
+                        </div>
+                    {{/ page2linkpositionfooter }}
+
+                    {{# page3linkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_page3link">
+                            <a href="{{ page3link }}">{{^ suppressfooterlinkicons }}<i class="icon fa fa-arrow-circle-o-right fa-fw " aria-hidden="true"></i>{{/ suppressfooterlinkicons }}{{ page3pagetitle }}</a>
+                        </div>
+                    {{/ page3linkpositionfooter }}
+                </div>
+            {{/anystaticpagelinkedfromfooter}}
+            {{#anyaccessibilitypagelinkedfromfooter}}
+                <div class="footer-section p-3 border-bottom">
+                    {{# accessibilitydeclarationlinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_accessibilitydeclarationlink">
+                            <a href="{{ accessibilitydeclarationlink }}"><i class="icon fa fa-universal-access fa-fw " aria-hidden="true"></i>{{ accessibilitydeclarationpagetitle }}</a>
+                        </div>
+                    {{/ accessibilitydeclarationlinkpositionfooter }}
+
+                     {{# accessibilitysupportlinkpositionfooter }}
+                        <div class="footer-support-link theme_boost_union_footer_accessibilitysupportlink">
+                            <a href="{{ accessibilitysupportlink }}"><i class="icon fa fa-universal-access fa-fw " aria-hidden="true"></i>{{ accessibilitysupportpagetitle }}</a>
+                        </div>
+                    {{/ accessibilitysupportlinkpositionfooter }}
+                </div>
+            {{/anyaccessibilitypagelinkedfromfooter}}
+            {{#footershowlogininfo}}
+                <div class="footer-section p-3 border-bottom">
+                    <div class="logininfo">
+                        {{{ output.login_info }}}
+                    </div>
+                </div>
+            {{/footershowlogininfo}}
+            <div class="tool_usertours-resettourcontainer"></div>
+            {{^footershowusertour}}<style>.tool_usertours-resettourcontainer{display:none;}</style>{{/footershowusertour}}
+            {{# output.standard_footer_html }}
+                <div class="footer-section p-3 border-bottom">
+                    {{{ output.standard_footer_html }}}
+                </div>
+            {{/ output.standard_footer_html }}
+            {{#footershowpowered}}
+                <div class="footer-section p-3 border-bottom">
+                    <div>{{#str}}poweredbymoodle, core{{/str}}</div>
+                    {{#output.moodle_release}}
+                        <div>
+                            {{#str}}version, core{{/str}} {{{ output.moodle_release }}}
+                        </div>
+                    {{/output.moodle_release}}
+                </div>
+            {{/footershowpowered}}
+            {{# output.standard_end_of_body_html_additionalhtmlfooter }}
+                <div class="footer-section p-3 border-bottom">
+                    {{{ output.standard_end_of_body_html_additionalhtmlfooter }}}
+                </div>
+            {{/ output.standard_end_of_body_html_additionalhtmlfooter }}
+            {{{ output.standard_end_of_body_html_endtoken }}}
+        </div>
+    {{/footerbutton }}
+    {{^footerbutton }}
+        {{{ output.standard_end_of_body_html_endtoken }}}
+    {{/footerbutton }}
+
+    <div class="footer-content-debugging footer-dark bg-dark text-light">
+        <div class="container-fluid footer-dark-inner">
+            {{{ output.debug_footer_html }}}
+        </div>
+    </div>
+
+    {{#bottombar.drawer}}
+        {{#bottombar}}
+        <nav class="navbar fixed-bottom navbar-light bg-white navbar-expand boost-union-bottom-menu d-block d-md-none" aria-label="{{#str}}sitemenubar, admin{{/str}}">
+            <div class="bottom-navigation">
+                {{> core/moremenu}}
+            </div>
+        </nav>
+        {{/bottombar}}
+    {{/bottombar.drawer}}
+</footer>
+{{#js}}
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+{{/js}}

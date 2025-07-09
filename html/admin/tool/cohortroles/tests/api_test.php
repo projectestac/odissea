@@ -43,6 +43,7 @@ final class api_test extends \advanced_testcase {
      * Setup function- we will create a course and add an assign instance to it.
      */
     protected function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest(true);
 
         // Create some users.
@@ -71,7 +72,7 @@ final class api_test extends \advanced_testcase {
             'roleid' => -8,
             'cohortid' => $this->cohort->id
         );
-        $this->expectException(\core_competency\invalid_persistent_exception::class);
+        $this->expectException(\core\invalid_persistent_exception::class);
         api::create_cohort_role_assignment($params);
     }
 

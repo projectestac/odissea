@@ -22,7 +22,6 @@
     {
         "documentationurl": "http://evolutioncode.uk",
         "sesskey": "abcde13455",
-        "showregisterbutton": 1,
         "tabs": [
          {
             "name": "tab1",
@@ -45,17 +44,7 @@
     {{#documentationurl}}
         <a class="btn btn-primary" href="{{documentationurl}}" target="_blank">{{#str}}documentation, format_tiles{{/str}}</a>
     {{/documentationurl}}
-    <a class="btn btn-primary" href="https://evolutioncode.uk/contact" target="_blank">{{#str}}contactdeveloper, format_tiles{{/str}}</a>
 </div>
-{{#showregisterbutton}}
-    <div class="box generalbox adminerror alert alert-danger py-3">
-        {{#str}}notregistered, format_tiles{{/str}}
-        {{{registerhelpicon}}}
-        <a href="{{config.wwwroot}}/course/format/tiles/editor/register.php?sesskey={{sesskey}}" class="btn btn-secondary" title="">
-            {{#str}}register, format_tiles{{/str}}
-        </a>
-    </div>
-{{/showregisterbutton}}
 
 <ul class="nav nav-tabs" role="tablist">
     {{#tabs}}

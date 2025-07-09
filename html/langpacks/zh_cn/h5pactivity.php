@@ -102,7 +102,7 @@ $string['newsubmissions'] = 'H5P已提交';
 $string['no_compatible_track'] = '此交互({$a})不提供跟踪信息或所提供的跟踪
 与当前活动版本不兼容。';
 $string['noparticipants'] = '没有要展示的参与者';
-$string['opencontentbank'] = '<a href=“{$a}”target=“\\u blank”>访问内容库中的H5P文件（在新窗口中打开）。';
+$string['opencontentbank'] = '<a href="{$a}"target="_blank">访问内容库中的H5P文件</a>（在新窗口中打开）。';
 $string['outcome'] = '成果';
 $string['package'] = '打包文件';
 $string['package_help'] = '打包文件是包含h5p交互内容的h5p文件。';

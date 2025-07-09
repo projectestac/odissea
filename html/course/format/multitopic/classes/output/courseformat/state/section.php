@@ -54,8 +54,11 @@ class section extends base_section {
      */
     public function export_for_template(\renderer_base $output): stdClass {
         $data = parent::export_for_template($output);
+        $format = $this->format;
+        $course = $format->get_course();
         $section = $this->section;
         $sectionextra = $this->fmtsectionextra;
+        $data->sectionurl = course_get_url($course, $section)->out(false);
         $data->levelsan = $sectionextra->levelsan;
         $data->indent = max($sectionextra->levelsan, 0);
         $data->pageid = ($sectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC) ? $section->id : $sectionextra->parentid;
@@ -78,8 +81,9 @@ class section extends base_section {
      * @return bool if the section can be edited in bulk
      */
     protected function is_bulk_editable(): bool {
+        global $CFG;
         $section = $this->section;
-        return ($section->section != 0); // Should be levelsan >= 2, this but doesn't work.
+        return ($this->fmtsectionextra->levelsan >= 2) || ($section->section != 0) && ($CFG->version < 2024042200);
     }
 
 }

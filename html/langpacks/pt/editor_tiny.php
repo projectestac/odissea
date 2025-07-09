@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['branding'] = 'Marca TinyMCE';
 $string['branding_desc'] = 'Apoie o TinyMCE exibindo o logótipo no canto inferior do editor de texto. O logótipo está vinculado ao site do TinyMCE.';
+$string['extended_valid_elements'] = 'Elementos válidos adicionais';
+$string['extended_valid_elements_desc'] = 'Permite-lhe utilizar elementos e atributos HTML adicionais no editor.';
 $string['plugin_disabled'] = '\'{$a}\' desativado.';
 $string['plugin_enabled'] = '\'{$a}\' ativado.';
 $string['pluginname'] = 'Editor TinyMCE';
@@ -232,7 +234,7 @@ $string['tiny:imageproxy_http_error_unknown_imageproxy_error'] = 'Erro de HTTP I
 $string['tiny:increase_indent'] = 'Aumentar indentação';
 $string['tiny:indentation'] = 'indentação';
 $string['tiny:indian_rupee_sign'] = 'símbolo da rupia indiana';
-$string['tiny:inline'] = 'Em linha';
+$string['tiny:inline'] = 'Inserido';
 $string['tiny:insert'] = 'Inserir';
 $string['tiny:insert_column_after'] = 'Inserir coluna à direita';
 $string['tiny:insert_column_before'] = 'Inserir coluna à esquerda';

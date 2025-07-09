@@ -625,12 +625,12 @@ function feedback_get_post_actions() {
 function feedback_reset_userdata($data) {
     global $CFG, $DB;
 
-    $resetfeedbacks = array();
-    $dropfeedbacks = array();
-    $status = array();
+    $resetfeedbacks = [];
+    $dropfeedbacks = [];
+    $status = [];
     $componentstr = get_string('modulenameplural', 'feedback');
 
-    //get the relevant entries from $data
+    // Get the relevant entries from $data.
     foreach ($data as $key => $value) {
         switch(true) {
             case substr($key, 0, strlen(FEEDBACK_RESETFORM_RESET)) == FEEDBACK_RESETFORM_RESET:
@@ -652,21 +652,27 @@ function feedback_reset_userdata($data) {
         }
     }
 
-    //reset the selected feedbacks
+    // Reset the selected feedbacks.
     foreach ($resetfeedbacks as $id) {
-        $feedback = $DB->get_record('feedback', array('id'=>$id));
+        $feedback = $DB->get_record('feedback', ['id' => $id]);
         feedback_delete_all_completeds($feedback);
-        $status[] = array('component'=>$componentstr.':'.$feedback->name,
-                        'item'=>get_string('resetting_data', 'feedback'),
-                        'error'=>false);
+        $status[] = [
+            'component' => $componentstr.':'.$feedback->name,
+            'item' => get_string('resetting_data', 'feedback'),
+            'error' => false,
+        ];
     }
 
     // Updating dates - shift may be negative too.
     if ($data->timeshift) {
         // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
         // See MDL-9367.
-        $shifterror = !shift_course_mod_dates('feedback', array('timeopen', 'timeclose'), $data->timeshift, $data->courseid);
-        $status[] = array('component' => $componentstr, 'item' => get_string('datechanged'), 'error' => $shifterror);
+        $shifterror = !shift_course_mod_dates('feedback', ['timeopen', 'timeclose'], $data->timeshift, $data->courseid);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('date'),
+            'error' => $shifterror,
+        ];
     }
 
     return $status;
@@ -688,7 +694,7 @@ function feedback_reset_course_form_definition(&$mform) {
         return;
     }
 
-    $mform->addElement('static', 'hint', get_string('resetting_data', 'feedback'));
+    $mform->addElement('static', 'hint', get_string('resetting_delete', 'feedback'));
     foreach ($feedbacks as $feedback) {
         $mform->addElement('checkbox', FEEDBACK_RESETFORM_RESET.$feedback->id, $feedback->name);
     }
@@ -731,7 +737,7 @@ function feedback_reset_course_form($course) {
     global $DB, $OUTPUT;
 
     echo get_string('resetting_feedbacks', 'feedback'); echo ':<br />';
-    if (!$feedbacks = $DB->get_records('feedback', array('course'=>$course->id), 'name')) {
+    if (!$feedbacks = $DB->get_records('feedback', ['course' => $course->id], 'name')) {
         return;
     }
 
@@ -921,23 +927,6 @@ function feedback_get_context() {
 }
 
 /**
- *  returns true if the current role is faked by switching role feature
- *
- * @global object
- * @return boolean
- */
-function feedback_check_is_switchrole() {
-    global $USER;
-    if (isset($USER->switchrole) AND
-            is_array($USER->switchrole) AND
-            count($USER->switchrole) > 0) {
-
-        return true;
-    }
-    return false;
-}
-
-/**
  * count users which have not completed the feedback
  *
  * @global object
@@ -1073,7 +1062,7 @@ function feedback_count_complete_users($cm, $group = false) {
 function feedback_get_complete_users($cm,
                                      $group = false,
                                      $where = '',
-                                     array $params = null,
+                                     ?array $params = null,
                                      $sort = '',
                                      $startpage = false,
                                      $pagecount = false) {
@@ -2816,16 +2805,9 @@ function feedback_extend_settings_navigation(settings_navigation $settings, navi
     }
 
     if (has_capability('mod/feedback:edititems', $context)) {
-        $questionnode = $feedbacknode->add(get_string('questions', 'feedback'), null,
+        $feedbacknode->add(get_string('questions', 'feedback'),
+            new moodle_url('/mod/feedback/edit.php', ['id' => $settings->get_page()->cm->id]),
             navigation_node::TYPE_CUSTOM, null, 'questionnode');
-        $questionnode->add(get_string('edit_items', 'feedback'),
-            new moodle_url('/mod/feedback/edit.php', ['id' => $settings->get_page()->cm->id]));
-
-        $questionnode->add(get_string('export_questions', 'feedback'),
-            new moodle_url('/mod/feedback/export.php', ['id' => $settings->get_page()->cm->id, 'action' => 'exportfile']));
-
-        $questionnode->add(get_string('import_questions', 'feedback'),
-            new moodle_url('/mod/feedback/import.php', ['id' => $settings->get_page()->cm->id]));
 
         $feedbacknode->add(get_string('templates', 'feedback'),
             new moodle_url('/mod/feedback/manage_templates.php', ['id' => $settings->get_page()->cm->id, 'mode' => 'manage']),
@@ -2885,7 +2867,7 @@ function feedback_page_type_list($pagetype, $parentcontext, $currentcontext) {
 
 /**
  * Move save the items of the given $feedback in the order of $itemlist.
- * @param string $itemlist a comma separated list with item ids
+ * @param array $itemlist a list with item ids
  * @param stdClass $feedback
  * @return bool true if success
  */
@@ -2935,8 +2917,8 @@ function feedback_can_view_analysis($feedback, $context, $courseid = false) {
  */
 function mod_feedback_get_fontawesome_icon_map() {
     return [
-        'mod_feedback:required' => 'fa-exclamation-circle',
-        'mod_feedback:notrequired' => 'fa-question-circle-o',
+        'mod_feedback:notrequired' => 'fa-circle-question',
+        'mod_feedback:required' => 'fa-circle-exclamation',
     ];
 }
 

@@ -75,7 +75,7 @@ $string['coursecontentnotification_help'] = 'Marque la casilla para notificar a 
 $string['coursecontentnotifnew'] = '{$a->coursename} contenido nuevo';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> es nuevo en el curso <a href="{$a-> courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} cambio de contenido';
-$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> se ha cambiado en el curso <a href="{$a- >courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> se ha cambiado en el curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
 $string['coursecount'] = 'Recuento de cursos';
 $string['coursenotyetfinished'] = 'El curso aún no ha sido completado.';
 $string['coursenotyetstarted'] = 'El curso aún no ha comenzado.';

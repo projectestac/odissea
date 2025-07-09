@@ -422,6 +422,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'Saioa sortu duen erab
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Grabazioen inguruko metadatuak gordetzen ditu.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'Grabazioa azkenengoz aldatu zueneko erabiltzailearen IDa.';
 $string['progress_createbigbluebuttonbn'] = 'BigBlueButton jarduera ({$a}) sortzen';
+$string['recordingnotfound'] = 'Grabazioa ez da aurkitu.';
 $string['recordings_from_deleted_activities'] = 'Ezabatutako jardueren grabazioak';
 $string['recordingurlnotfound'] = 'Grabazioaren URLa baliogabea da.';
 $string['removedevents'] = 'Ezabatutako ekitaldiak';

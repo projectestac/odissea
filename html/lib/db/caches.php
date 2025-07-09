@@ -26,6 +26,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die();
+
 $definitions = array(
 
     // Used to store processed lang files.
@@ -621,6 +623,31 @@ $definitions = array(
         'simpledata' => true,
         'staticacceleration' => true,
     ],
+
+    'routes' => [
+        'mode' => cache_store::MODE_APPLICATION,
+        'simplekeys' => true,
+        'simpledata' => true,
+        'canuselocalstore' => true,
+    ],
+    // Cache to store user AI policy acceptance status.
+    'ai_policy' => [
+        'mode' => cache_store::MODE_APPLICATION,
+        'simplekeys' => true, // Cache must use simple keys (a-zA-Z0-9_).
+        'simpledata' => true, // Cache stores integer values which are simple data.
+        'staticacceleration' => true,
+        'datasource' => \core_ai\cache\policy::class,
+        'canuselocalstore' => true,
+    ],
+    // Cache to store AI rate limits.
+    // Used by AI provider plugins to limit the number of requests to external services.
+    'ai_ratelimit' => [
+        'mode' => cache_store::MODE_APPLICATION,
+        'simplekeys' => true, // Cache must use simple keys (a-zA-Z0-9_).
+        'simpledata' => true, // Cache stores integer values which are simple data.
+        'staticacceleration' => true,
+    ],
+
     // The navigation_cache class used this cache to store the navigation nodes.
     'navigation_cache' => [
         'mode' => cache_store::MODE_SESSION,

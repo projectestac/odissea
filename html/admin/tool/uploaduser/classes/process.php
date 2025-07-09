@@ -110,7 +110,7 @@ class process {
      * @param string|null $progresstrackerclass
      * @throws \coding_exception
      */
-    public function __construct(\csv_import_reader $cir, string $progresstrackerclass = null) {
+    public function __construct(\csv_import_reader $cir, ?string $progresstrackerclass = null) {
         $this->cir = $cir;
         if ($progresstrackerclass) {
             if (!class_exists($progresstrackerclass) || !is_subclass_of($progresstrackerclass, \uu_progress_tracker::class)) {
@@ -931,7 +931,7 @@ class process {
             }
 
             if ($dologout) {
-                \core\session\manager::kill_user_sessions($existinguser->id);
+                \core\session\manager::destroy_user_sessions($existinguser->id);
             }
 
         } else {

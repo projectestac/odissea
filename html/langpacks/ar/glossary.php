@@ -135,7 +135,7 @@ $string['displayformatdefault'] = 'إفتراضياً كما هو تنسيق ا�
 $string['displayformatdictionary'] = 'نمط قاموسي بسيط';
 $string['displayformatencyclopedia'] = 'دائرة معارف';
 $string['displayformatentrylist'] = 'قائمة مصطلحات';
-$string['displayformatfaq'] = 'أسئلة متكررة';
+$string['displayformatfaq'] = 'الأسئلة الشائعة';
 $string['displayformatfullwithauthor'] = 'كامل مع الكاتب';
 $string['displayformatfullwithoutauthor'] = 'كامل بدون الكاتب';
 $string['displayformats'] = 'تنسيقات العرض';

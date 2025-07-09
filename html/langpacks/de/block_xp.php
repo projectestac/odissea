@@ -34,12 +34,34 @@ $string['addarule'] = 'Eine Regel hinzufügen';
 $string['addinstructions'] = 'Fügen Sie weitere Infos hinzu';
 $string['additionalresources'] = 'Weitere Ressourcen';
 $string['addlevel'] = 'Level hinzufügen';
+$string['addondeactivated'] = 'XP+ deaktiviert';
+$string['addondeactivatedinfo'] = 'Die XP-Plugins sind untereinander inkompatibel, was zur Deaktivierung von XP+ führte. Es wird die Version {$a->localxpversion} von Level Up XP+ (local_xp) erwartet.';
 $string['addoninstallationerror'] = 'Das Plugin local_xp scheint nicht richtig installiert zu sein. Administrator/innen sollten die Installation abschließen.';
 $string['addonnotactivated'] = 'Das Plugin ist nicht aktiv.';
 $string['addrulesformhelp'] = 'Die letzte Spalte definiert die Menge an Erfahrungspunkte, wenn die Kriterien erfüllt sind.';
 $string['admindefaultrulesintro'] = 'Die folgenden Regeln werden in Kursen, in denen der Block hinzugefügt wird, als Standard verwendet.';
 $string['admindefaultsettingsintro'] = 'Die folgenden Einstellungen werden als Standard verwendet, wenn der Block neu in einen Kurs eingefügt wird. Einige Einstellungen können gesperrt werden, wobei dann deren Wert in allen Instanzen des Plugins festgesetzt wird.';
 $string['admindefaultvisualsintro'] = 'Das Folgende wird als Standard genutzt, wenn der Block neu in einen Kurs eingefügt wird.';
+$string['adminnoticeaddondeactivatedmessage'] = 'Level Up XP+ wurde deaktiviert!
+
+Sie erhalten diese Warnung, da Level Up XP+ deaktiviert wurde, um potenzielle Probleme zu vermeiden. Die beiden Plugins Level Up XP (block_xp) und Level Up XP+ (local_xp) sind derzeit nicht miteinander kompatibel. Dieses Problem tritt auf, wenn XP auf eine neue Hauptversion aktualisiert wurde, XP+ jedoch veraltet ist.
+
+Diese Nichtübereinstimmung kann zu Funktionsverlusten, Fehlern und anderen unerwarteten Folgen führen. Um dies zu beheben, müssen Sie Level Up XP+ aktualisieren.
+
+Level Up XP (block_xp) Version: {$a->blockxpversion}
+Level Up XP+ (local_xp) Version: {$a->localxpversion}
+Erwartete Level Up XP+ Version: {$a->localxpversionexpected}
+
+Zusätzliche Ressourcen:
+
+- [Dokumentation zur Aktualisierung] (https://docs.levelup.plus/xp/docs/upgrade)
+- [Dokumentation zur XP+-Deaktivierung] (https://docs.levelup.plus/xp/docs/addon-deactivated)
+- [Dokumentation zur Kompatibilität] (https://docs.levelup.plus/xp/docs/addon-deactivated)
+
+--
+
+Dieser Hinweis wurde an alle Administratoren gesendet. Um die Administratorhinweise zu deaktivieren, besuchen Sie bitte die Administratoreinstellungen von Level Up XP.';
+$string['adminnoticeaddondeactivatedsubject'] = 'Plugn XP+ deaktiviert';
 $string['adminnoticeoutofsyncmessage'] = 'Level Up XP und Level Up XP+ Inkompatibilitätshinweis!
 
 Sie erhalten diesen Hinweis als Warnung, weil die beiden Plugins Level Up XP (block_xp) und Level Up XP+ (local_xp) derzeit „nicht synchron“ und inkompatibel zueinander sind. Dieses Problem tritt auf, wenn XP auf eine neue Hauptversion aktualisiert wurde, während XP+ weiterhin veraltet ist.
@@ -80,7 +102,9 @@ $string['basexp'] = 'Basis des Algorithmus';
 $string['blockappearance'] = 'Blockdarstellung';
 $string['blockappearancemovedtopluginsettings'] = 'Die Einstellungen Blockdarstellung wurde in die Plugineinstellungen verschoben.';
 $string['cachedef_filters'] = 'Level-Filter';
+$string['cachedef_metadata'] = 'Metadaten';
 $string['cachedef_ruleevent_eventslist'] = 'Liste einiger Ereignisse';
+$string['canjoinfromdatex'] = 'Sie können sich von {$a} verbinden.';
 $string['cannotbesetindefaults'] = 'Dies kann nicht in den Standardeinstellungen festgelegt werden.';
 $string['cannotearnpoints'] = 'Kann keine Punkte sammeln.';
 $string['cannotshowblockconfig'] = 'Normalerweise würden hier die Einstellungen angezeigt, aber Ihr Block konnte nicht gefunden werden. Um das Aussehen des Blocks zu ändern, gehen Sie [hierher]({$a}) zurück (oder wo Sie den Block eingefügt haben), aktivieren den Bearbeitungsmodus und folgen der "Konfigurieren"-Option im Dropdown-Menü des Blocks. Wenn Sie den Block nicht finden können, fügen Sie ihn erneut zu Ihrem Kurs hinzu.';
@@ -91,12 +115,14 @@ $string['changetocourse'] = 'Zum Kurs wechseln';
 $string['changetositewide'] = 'Zurück zu systemweit';
 $string['cheatguard'] = 'Schutz gegen Betrug';
 $string['cheatguardsettingsmovednotice'] = 'Die Einstellungen zum Schutz gegen Betrug wurden auf die [Event Regeln Seite]({$a->url}) verschoben';
+$string['checkaddoncompatibility'] = 'Level Up XP Addon Kompatibitität';
 $string['chooseacondition'] = 'Eine Bedingung wählen';
 $string['clearfilter'] = 'Filter löschen';
 $string['clicktoselectcm'] = 'Klicken Sie, um eine Aktivität oder ein Material auszuwählen';
 $string['cmselector'] = 'Auswahl der Kursmodule';
 $string['coefxp'] = 'Koeffizient des Algorithmus';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['comparisonmethod'] = 'Vergleichsmethode';
 $string['compatibilitycheck'] = 'Kompatibilitätsüberprüfung';
 $string['completionrules'] = 'Abschlussregeln';
 $string['completionrules_help'] = 'Die Abschlussregeln sind in drei Kategorien unterteilt: Aktivitätsabschluss, Abschnittsabschluss und Kursabschluss. Durch das Hinzufügen von Bedingungen zu den Kategorien wird bestimmt, wann und wie viele Punkte vergeben werden.
@@ -198,6 +224,8 @@ $string['enablexpgain_help'] = 'Wenn die Einstellung \'Nein\' gewählt wird, erw
 
 _Hinweis_: Mithilfe der Berechtigung \'block/xp:earnxp\' kann dies u. U. genauer gesteuert werden.';
 $string['entersearchterm'] = 'Suchbegriff eingeben';
+$string['envcheckaddonincompatibilitymessage'] = 'Das Plugin Level Up XP+ (local_xp) ist nicht kompatibel mit Level Up XP (block_xp). Dies führt dazu, dass XP+ deaktiviert wird. Um dies zu verhindern, aktualisieren Sie bitte beide Plugins. Weitere Informationen finden Sie unter https://docs.levelup.plus/xp/docs/compatibility.';
+$string['erroraddondeactivated'] = 'Level Up XP+ wurde deaktiviert. Weitere Informationen finden Sie in der [Dokumentation]({$a->docsurl}).';
 $string['errorcontextcoursemismatchforwholesite'] = 'Die URL dieser <em>Level Up XP</em> Seite stimmt nicht mit der aktuellen Plugin-Konfiguration überein. Dort wird <em>Level up XP</em> als "Für die gesamte Seite" deklariert. Auf dieser Seite wurde jedoch erwartet, dass "Pro Kurs" verwendet wird. Bitte <a href="{$a->nexturl}">hier klicken </a>, um zur richtigen Seite zu navigieren. Suchen Sie nach der Administratoreinstellung \'block_xp_context\', wenn Sie Ihre Konfiguration ändern möchten.';
 $string['errorcontextcoursemismatchpercourse'] = 'Die URL dieser <em>Level Up XP</em> Seite stimmt nicht mit der aktuellen Plugin-Konfiguration überein. Dort wird <em>Level up XP</em> als "Pro Kurs" deklariert. Auf dieser Seite wird jedoch erwartet, dass "Für die gesamte Seite" verwendet wird. Es stammt höchstwahrscheinlich aus einem <em>Block</em>, der in einer anderen Konfiguration zum Dashboard oder zur Startseite hinzugefügt wurde. Sie sollten den Block entfernen und nur innerhalb einzelner Kurse verwenden.';
 $string['errorformvalues'] = 'Prüfen Sie bitte die Formulareinträge.';
@@ -271,6 +299,12 @@ $string['installed'] = 'Installiert';
 $string['instructions'] = 'Anleitungen';
 $string['instructions_help'] = 'Die Anleitungen werden auf der Informationsseite angezeigt. Sie können sie nutzen, um Informationen und Anleitungen zu den Levels, zur Punktevergabe usw. weiterzugeben.';
 $string['invalidxp'] = 'Ungültiger Punktewert';
+$string['join'] = 'Mitmachen';
+$string['joinleadeboardconfirmnote'] = 'Fantastisch, wir freuen uns, dich dabei zu haben!
+
+Bitte beachte, dass es nach deiner Anmeldung eine Wartezeit gibt, bevor du die Bestenliste verlassen kannst, falls du deine Meinung änderst.';
+$string['joinleadeboardlockednote'] = 'Sie können der Bestenliste nicht beitreten.';
+$string['joinleaderboard'] = 'Bestenliste beitreten';
 $string['keeplogs'] = 'Logdaten behalten';
 $string['ladder'] = 'Bestenliste';
 $string['ladder_help'] = 'In der Bestenliste werden die Teilnehmer/innen auf der Grundlage ihrer Punkte bewertet. Wenn sie in einem Kurs mit Gruppen verwendet wird, kann eine Bestenliste für jede Gruppe von Teilnehmer/innen erstellt werden.
@@ -289,6 +323,7 @@ $string['ladderiso_help'] = 'Erstellen Sie getrennte Bestenlisten für verschied
 [Mehr Infos](https://docs.levelup.plus/xp/docs/leaderboard-isolation)';
 $string['ladderisocohorts'] = 'globale Gruppen verwenden';
 $string['ladderisodefault'] = 'Default (Gruppenmodus)';
+$string['ladderparticipation'] = 'Teilnahme';
 $string['laddersettingsmovednotice'] = 'Die Einstellungen für die Bestenliste wurden auf die [Seite Bestenliste]({$a->url}) verschoben.';
 $string['learnmore'] = 'Mehr erfahren';
 $string['level'] = 'Level';

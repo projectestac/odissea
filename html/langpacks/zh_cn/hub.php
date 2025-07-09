@@ -93,7 +93,7 @@ $string['none'] = '无';
 $string['operation'] = '动作';
 $string['participantnumberaverage'] = '课程成员数平均值（{$a}）';
 $string['policyagreed'] = '隐私通知和数据处理协议';
-$string['policyagreeddesc'] = '我同意 <a href=“{$a}” target=“_blank”>隐私声明和数据处理协议</a>';
+$string['policyagreeddesc'] = '我同意 <a href="{$a}" target="_blank">隐私声明和数据处理协议</a>';
 $string['postaladdress'] = '通信地址';
 $string['postaladdress_help'] = '本站，或者代表本站的实体的通信地址。';
 $string['postsnumber'] = '帖子数（{$a}）';

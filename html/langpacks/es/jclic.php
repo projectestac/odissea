@@ -53,6 +53,7 @@ $string['filetype_help'] = 'Este ajuste determina cómo se incluye en el curso l
 * URL externa - Permite que se indique una URL. Nota: La URL debe empezar con http(s) o www y contener un fichero "jclic.zip" válido.';
 $string['filetypeexternal'] = 'URL externa';
 $string['filetypelocal'] = 'Jclic cargado';
+$string['grade'] = 'Calificación';
 $string['height'] = 'Altura';
 $string['invalidjclicfile'] = 'El JClic indicado no es válido. Debe tener la extensión ".jclic"';
 $string['invalidurl'] = 'La URL indicada no es válida. Debe empezar con http(s) y debe ser un fichero JClic válido.';

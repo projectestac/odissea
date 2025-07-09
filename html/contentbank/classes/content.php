@@ -393,8 +393,24 @@ abstract class content {
         global $USER;
         $context = \context::instance_by_id($this->get_contextid());
 
+        $displaypreference = get_user_preferences('core_contentbank_displayunlisted', 1);
+
+        if (($this->get_visibility() == self::VISIBILITY_UNLISTED) && !$displaypreference) {
+            return false;
+        }
+
         return $USER->id == $this->content->usercreated ||
             $this->get_visibility() == self::VISIBILITY_PUBLIC ||
             has_capability('moodle/contentbank:viewunlistedcontent', $context);
+    }
+
+    /**
+     * Checks if there are any custom field related to this content.
+     *
+     * @return bool     True if there is at least one populated field.
+     */
+    public function has_custom_fields(): bool {
+        $handler = \core_contentbank\customfield\content_handler::create();
+        return !empty($handler->get_instance_data($this->get_id()));
     }
 }

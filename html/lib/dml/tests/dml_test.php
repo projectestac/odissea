@@ -530,8 +530,6 @@ EOD;
 
     /**
      * Test the database debugging as SQL comment in anon class
-     *
-     * @covers ::add_sql_debugging
      */
     public function test_sql_debugging_anon_class(): void {
         global $CFG;
@@ -3924,8 +3922,6 @@ EOD;
 
     /**
      * Test DML libraries sql_cast_to_char method
-     *
-     * @covers ::sql_cast_to_char
      */
     public function test_cast_to_char(): void {
         $DB = $this->tdb;
@@ -4671,6 +4667,44 @@ EOD;
                 'falias' => 'Dan, Grace',
             ],
         ], $DB->get_records_sql($sql));
+    }
+
+    /**
+     * Test that the SQL_INT_MAX constant can be used for all insert, update, select and delete queries
+     */
+    public function test_sql_max_int(): void {
+        $DB = $this->tdb;
+        $dbman = $DB->get_manager();
+
+        $table = $this->get_test_table();
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('intfield', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('charfield', XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null);
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $dbman->create_table($table);
+
+        $tablename = $table->getName();
+
+        // Insert.
+        $id = $DB->insert_record($tablename, ['intfield' => SQL_INT_MAX, 'charfield' => 'Test']);
+        $this->assertEquals((object) [
+            'intfield' => SQL_INT_MAX,
+            'charfield' => 'Test',
+        ], $DB->get_record($tablename, ['id' => $id], 'intfield, charfield'));
+
+        // Update.
+        $DB->set_field($tablename, 'charfield', 'Test 2', ['intfield' => SQL_INT_MAX]);
+        $this->assertEquals((object) [
+            'intfield' => SQL_INT_MAX,
+            'charfield' => 'Test 2',
+        ], $DB->get_record($tablename, ['id' => $id], 'intfield, charfield'));
+
+        // Select.
+        $this->assertEquals('Test 2', $DB->get_field($tablename, 'charfield', ['intfield' => SQL_INT_MAX]));
+
+        // Delete.
+        $DB->delete_records($tablename, ['intfield' => SQL_INT_MAX]);
+        $this->assertFalse($DB->record_exists($tablename, ['id' => $id]));
     }
 
     public function test_sql_fullname(): void {
@@ -6398,6 +6432,62 @@ EOD;
             "Found invalid DB server version format when reading version from DB: '{$version}' ({$description}).");
         $db2->dispose();
     }
+
+    /**
+     * Test the COUNT() window function with the actual DB Server.
+     *
+     * @covers \moodle_database::get_counted_recordset_sql()
+     * @covers \moodle_database::get_counted_records_sql()
+     * @covers \moodle_database::generate_fullcount_sql()
+     * @return void
+     */
+    public function test_count_window_function(): void {
+        $DB = $this->tdb;
+        $dbman = $DB->get_manager();
+
+        $table = $this->get_test_table();
+        $tablename = $table->getName();
+
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('course', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $dbman->create_table($table);
+
+        for ($i = 1; $i <= 5; $i++) {
+            $DB->insert_record($tablename, ['course' => $i], false);
+        }
+
+        // Test with the get_recordset_select().
+        $rs = $DB->get_counted_recordset_sql(
+            sql: "SELECT * FROM {{$tablename}}",
+            fullcountcolumn: 'fullcount',
+            sort: "course DESC",
+            limitfrom: 1,
+            limitnum: 3,
+        );
+        // Check whether the fullcount column returns the correct number.
+        $this->assertEquals(5, $rs->current()->fullcount);
+        // Check whether the `limitfrom` works properly.
+        $this->assertEquals(4, $rs->current()->course);
+        // Check whether the 'limitnum' works properly.
+        $this->assertEquals(3, iterator_count($rs));
+
+        // Test with the get_records_select().
+        $rs = $DB->get_counted_records_sql(
+            sql: "SELECT * FROM {{$tablename}}",
+            fullcountcolumn: 'fullcount',
+            sort: "course DESC",
+            limitfrom: 3,
+            limitnum: 2,
+        );
+        $resetrs = reset($rs);
+        // Check whether the fullcount column returns the correct number.
+        $this->assertEquals(5, $resetrs->fullcount);
+        // Check whether the 'limitfrom' works properly.
+        $this->assertEquals(2, $resetrs->course);
+        // Check whether the 'limitnum' works properly.
+        $this->assertEquals(2, count($rs));
+    }
 }
 
 /**
@@ -6418,7 +6508,7 @@ class moodle_database_for_testing extends moodle_database {
     protected function get_dblibrary() {}
     public function get_name() {}
     public function get_configuration_help() {}
-    public function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, array $dboptions=null) {}
+    public function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, ?array $dboptions=null) {}
     public function get_server_info() {}
     protected function allowed_param_types() {}
     public function get_last_error() {}
@@ -6431,17 +6521,17 @@ class moodle_database_for_testing extends moodle_database {
     public function set_debug($state) {}
     public function get_debug() {}
     public function change_database_structure($sql, $tablenames = null) {}
-    public function execute($sql, array $params=null) {}
-    public function get_recordset_sql($sql, array $params=null, $limitfrom=0, $limitnum=0) {}
-    public function get_records_sql($sql, array $params=null, $limitfrom=0, $limitnum=0) {}
-    public function get_fieldset_sql($sql, array $params=null) {}
+    public function execute($sql, ?array $params=null) {}
+    public function get_recordset_sql($sql, ?array $params=null, $limitfrom=0, $limitnum=0) {}
+    public function get_records_sql($sql, ?array $params=null, $limitfrom=0, $limitnum=0) {}
+    public function get_fieldset_sql($sql, ?array $params=null) {}
     public function insert_record_raw($table, $params, $returnid=true, $bulk=false, $customsequence=false) {}
     public function insert_record($table, $dataobject, $returnid=true, $bulk=false) {}
     public function import_record($table, $dataobject) {}
     public function update_record_raw($table, $params, $bulk=false) {}
     public function update_record($table, $dataobject, $bulk=false) {}
-    public function set_field_select($table, $newfield, $newvalue, $select, array $params=null) {}
-    public function delete_records_select($table, $select, array $params=null) {}
+    public function set_field_select($table, $newfield, $newvalue, $select, ?array $params=null) {}
+    public function delete_records_select($table, $select, ?array $params=null) {}
     public function sql_concat(...$arr) {}
     public function sql_concat_join($separator="' '", $elements=array()) {}
     public function sql_group_concat(string $field, string $separator = ', ', string $sort = ''): string {

@@ -143,7 +143,7 @@ $string['nativeoci'] = 'Oracle (natif, oci)';
 $string['nativeocihelp'] = 'Vous devez maintenant configurer la base de données où seront stockées les données de Moodle. Cette base de données doit être déjà créée, tout comme le nom d’utilisateur et le mot de passe pour y accéder. Le préfixe des tables est obligatoire.';
 $string['nativepgsql'] = 'PostgreSQL (natif, pgsql)';
 $string['nativepgsqlhelp'] = '<p>La base de données permet l’enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
-<p>Le nom de la base de données, son nom d’utilisateur,  son mot de passe et le préfixe des tables sont des champs obligatoires.</p>
+<p>Le nom de la base de données, son nom d’utilisateur, son mot de passe et le préfixe des tables sont des champs obligatoires.</p>
 <p>La base de données doit déjà exister et l’utilisateur indiqué avoir les permissions pour la lire et y écrire.</p>';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Vous devez maintenant configurer la base de données où seront stockées les données de Moodle. Cette base de données doit être déjà créée, tout comme le nom d’utilisateur et le mot de passe pour y accéder. Le préfixe des tables est obligatoire.';

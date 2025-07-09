@@ -295,7 +295,7 @@ $string['missingfield'] = 'Erreur de programmation : veuillez indiquer le champ
 $string['missingfieldtype'] = 'Type de champ in trouvable pour {$a->name}';
 $string['missingfieldtypeimport'] = 'Les champs suivants n’ont pas été importés, car les types de champs correspondants ne sont pas installés :';
 $string['missingfieldtypes'] = 'Les champs suivants n’ont pas leur type de champ correspondant installé. Ils ne seront pas inclus dans le formulaire Ajouter une fiche.
-Veuillez contrôler le modèle Ajouter une fiche et retirer les noms de ces champs.';
+Veuillez contrôler le modèle Ajouter une fiche et supprimer les noms de ces champs.';
 $string['modulename'] = 'Base de données';
 $string['modulename_help'] = 'Une base de données permet aux participants de créer, afficher et rechercher une collection de fiches.
 
@@ -397,7 +397,7 @@ $string['required'] = 'Requis';
 $string['requiredentries'] = 'Fiches requises (anciennement)';
 $string['requiredentries_help'] = 'Si ce réglage est activé, un message s’affiche indiquant le nombre de fiches requis. Ce réglage n’est pas en lien avec l’achèvement de l’activité.
 
-Pour spécifier un nombre de fiches qu’un participant a l’obligation de créer dans cette activité pour qu’elle soit considérée comme terminée, le nouveau réglage « Requiert des fiches » doit être utilisé. Pour retirer définitivement le présent réglage, fixez sa valeur à aucun et enregistrez les modifications.';
+Pour spécifier un nombre de fiches qu’un participant a l’obligation de créer dans cette activité pour qu’elle soit considérée comme terminée, le nouveau réglage « Requiert des fiches » doit être utilisé. Pour supprimer définitivement le présent réglage, fixer sa valeur à aucun et enregistrer les modifications.';
 $string['requiredentriestoview'] = 'Fiches requises avant consultation';
 $string['requiredentriestoview_help'] = 'Le nombre de fiches qu’un participant doit ajouter avant de pouvoir consulter les fiches d’autres étudiants.
 
@@ -467,7 +467,7 @@ $string['unsupportedfieldslist'] = 'Les champs suivants ne peuvent pas être exp
 $string['updatefield'] = 'Modifier un champ existant';
 $string['uploadfile'] = 'Déposer un fichier';
 $string['uploadrecords'] = 'Importer des fiches';
-$string['uploadrecords_help'] = 'Importer des fiches exportées d’une autre base de données,  via un fichier CSV ou un fichier ZIP contenant un fichier CSV (si des fichiers sont inclus dans l’exportation).
+$string['uploadrecords_help'] = 'Importer des fiches exportées d’une autre base de données, via un fichier CSV ou un fichier ZIP contenant un fichier CSV (si des fichiers sont inclus dans l’exportation).
 
 Il est aussi possible de créer un fichier CSV à importer en ajoutant une fiche à la base de données. On exporte ensuite, puis modifie le fichier CSV en y ajoutant manuellement d’autres fiches.';
 $string['uploadrecords_link'] = 'mod/data/import';

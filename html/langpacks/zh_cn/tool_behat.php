@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_datatoot未设置或无效。';
 $string['errorsetconfig'] = '需要在config.php中设置$CFG->behat_dataroot、$CFG->behat_prefix和$CFG->behat_wwwroot。';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix and $CFG->behat_wwwroot 的值需要与 $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot and $CFG->phpunit_prefix 的值不同。<br/>或者如果 $CFG->behat_prefix 相同, $CFG->behat_dbname 或者 $CFG->behat_dbhost 需要与 $CFG->phpunit_dbname 和 $CFG->phpunit_dbhost 和 $CFG->dbname 和 $CFG->dbhost 不同。';
 $string['fieldvalueargument'] = '字段值参数';
-$string['fieldvalueargument_help'] = '此参数应由 field 值完成。字段类型有很多，包括简单的字段类型（如复选框、选择或文本区域）或复杂的字段类型（如日期选择器）。有关预期字段值的详细信息，请参阅开发文档 <a href=“https://moodledev.io/general/development/tools/behat” target=“_blank”>Acceptance_testing</a>。';
+$string['fieldvalueargument_help'] = '此参数应由字段值完成。字段类型有很多，包括简单的字段类型（如复选框、选择或文本区域）或复杂的字段类型（如日期选择器）。有关预期字段值的详细信息，请参阅开发文档 <a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance_testing</a>。';
 $string['giveninfo'] = '给定设置环境的过程';
 $string['infoheading'] = '信息';
 $string['installinfo'] = '阅读{$a}以获取安装和测试执行信息';

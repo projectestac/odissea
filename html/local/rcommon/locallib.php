@@ -453,12 +453,12 @@ class credentials{
         if (empty($columns)) {
             $cir->close();
             $cir->cleanup();
-            print_error('cannotreadtmpfile', 'error', $returnurl);
+            throw new \moodle_exception('cannotreadtmpfile', 'error', $returnurl);
         }
         if (count($columns) < 2) {
             $cir->close();
             $cir->cleanup();
-            print_error('csvfewcolumns', 'error', $returnurl);
+            throw new \moodle_exception('csvfewcolumns', 'error', $returnurl);
         }
 
         // test columns
@@ -474,7 +474,7 @@ class credentials{
             } else {
                 $cir->close();
                 $cir->cleanup();
-                print_error('invalidfieldname', 'error', $returnurl, $field);
+                throw new \moodle_exception('invalidfieldname', 'error', $returnurl, $field);
             }
             if (in_array($newfield, $processed)) {
                 $cir->close();
@@ -489,7 +489,7 @@ class credentials{
             if (!in_array($lcfield, $processed)) {
                 $cir->close();
                 $cir->cleanup(true);
-                print_error('fieldrequired', 'error', $returnurl, $lcfield);
+                throw new \moodle_exception('fieldrequired', 'error', $returnurl, $lcfield);
             }
         }
 

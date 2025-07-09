@@ -92,7 +92,7 @@ $string['hideremote'] = '隐藏远程用户';
 $string['host'] = '主机';
 $string['hostcoursenotfound'] = '未发现主机或课程';
 $string['hostdeleted'] = '主机被删除';
-$string['hostexists'] = '具有该主机名的主机已存在记录。（它可能已被删除。<a href=“{$a}”>编辑记录</a>';
+$string['hostexists'] = '具有该主机名的主机已存在记录（它可能已被删除）。<a href="{$a}">编辑记录</a>';
 $string['hostlist'] = '已联网主机列表';
 $string['hostname'] = '主机名';
 $string['hostnamehelp'] = '完整的远程主机域名，例如：www.example.com';

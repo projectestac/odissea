@@ -53,6 +53,7 @@ $string['filetype_help'] = 'This setting determines how the JClic activity is in
 * External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid JClic file.';
 $string['filetypeexternal'] = 'External URL';
 $string['filetypelocal'] = 'Uploaded JClic';
+$string['grade'] = 'Grade';
 $string['height'] = 'Height';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid JClic file.';

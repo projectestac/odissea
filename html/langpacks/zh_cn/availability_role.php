@@ -25,5 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['description'] = '仅允许指定的课程角色';
+$string['error_selectrole'] = '必须选择一个角色';
+$string['missing'] = '[缺失角色]';
+$string['pluginname'] = '课程角色限制';
+$string['privacy:metadata'] = '课程角色限制插件不存储任何个人数据。';
 $string['requires_notrole'] = '你不是 <em>{$a}</em>';
 $string['requires_role'] = '你是 <em>{$a}</em>';
+$string['setting_supportedrolesheading'] = '支持角色';
+$string['setting_supportguestrole'] = '客人角色';
+$string['setting_supportguestrole_desc'] = '如果激活，活动的可用性将被限制或禁止作为访客的用户。';
+$string['setting_supportnotloggedinrole'] = '未登录角色';
+$string['setting_supportnotloggedinrole_desc'] = '如果激活，活动的可用性将被限制或禁止未登录的用户。';
+$string['title'] = '角色限制';

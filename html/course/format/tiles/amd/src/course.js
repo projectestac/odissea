@@ -34,7 +34,6 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
         var isMobile;
         var loadingIconHtml;
         var stringStore = [];
-        var HEADER_BAR_HEIGHT = 60; // This varies by theme and version so will be reset once pages loads below.
         var reopenLastVisitedSection = false;
         var courseId;
         var courseContextId;
@@ -371,38 +370,25 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                     $('#page-content').outerHeight() ?? 0
                 ];
                 contentArea.hide();
-                overlay.css('min-height', `${Math.ceil(Math.max(...heights)) +  footerHeight + 20}px`);
+                overlay.css('min-height', `${Math.ceil(Math.max(...heights)) + footerHeight + 20}px`);
             };
 
             var expandAndScroll = function () {
                 // Scroll to the top of content bearing section
-                // we have to wait until possible reOrg and slide down totally before calling this, else co-ords are wrong.
-                var scrollTo = (tile.offset().top) - $('#section-zero-container').offset().top + HEADER_BAR_HEIGHT;
-                if (scrollTo === $(window).scrollTop) {
-                    // Scroll by at least one pixel otherwise z-index on selected tile is not changed.
-                    // Until mouse moves.
-                    scrollTo += 1;
+                // We have to wait until possible reOrg and slide down totally before calling this, else co-ords are wrong.
+                var scrollTo = tile.offset().top;
+                const MIN_SCROLL = 10;
+                if (Math.abs(scrollTo) > MIN_SCROLL) {
+                    if (scrollTo === $(window).scrollTop) {
+                        // Scroll by at least one pixel otherwise z-index on selected tile is not changed.
+                        // Until mouse moves.
+                        scrollTo += 1;
+                    }
+                    document.getElementById('page').scrollBy({top: scrollTo, left: 0, behavior: 'smooth'});
                 }
-
-                // If user tries to scroll during animation, stop animation.
-                var events = "mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
-                const page = $("html, body");
-                page.on(events, function () {
-                    page.stop();
-                });
-
-                page.animate({scrollTop: scrollTo}, "slow", "swing", function () {
-                    // Animation complete, remove stop handler.
-                    page.off(events, function () {
-                        page.stop();
-                    });
-                    // For users with screen readers, move focus to the first item within the tile.
-                    contentArea.find(Selector.FOCUSABLE_ELEMS).eq(0).focus();
-                });
 
                 // For users with screen readers, move focus to the first item within the tile.
                 // Short timeout for this to allow for animation to finish.
-                // (Not relying on the animation callback alone for the delay as it's slightly too slow.)
                 setTimeout(() => {
                     contentArea.find(Selector.FOCUSABLE_ELEMS).eq(0).focus();
                 }, 300);
@@ -485,24 +471,17 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
 
         var failedLoadSectionNotify = function(sectionNum, failResult, contentArea) {
             if (failResult) {
-                // Notify the user and invite them to refresh.  We did get a "failResult" from server,
-                // So it looks like we do have a connection and can launch this.
-                if (failResult.errorcode === 'notavailablecourse') {
+                if (failResult.errorcode === 'servicerequireslogin') {
+                    // Moodle may refresh the page here anyway but we do it if not.
+                    // Session may have expired and refresh will force new login.
+                    window.location.reload();
+                } else {
+                    // We did get a "failResult" from server.
+                    // So it looks like we do have a connection and can notify user this way.
                     Notification.confirm(
                         stringStore.sectionerrortitle,
                         failResult.message,
                         stringStore.continue
-                    );
-                } else {
-                    Notification.confirm(
-                        stringStore.sectionerrortitle,
-                        stringStore.sectionerrorstring,
-                        stringStore.refresh,
-                        stringStore.cancel,
-                        function () {
-                            window.location.reload();
-                        },
-                        null
                     );
                     require(["core/log"], function(log) {
                         log.debug(failResult);
@@ -556,7 +535,7 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                     $(Selector.ABOVE_TILES).removeClass('sec-zero-closed');
                 }
             } else {
-                // Storage not available so we dont know if sec zero was previously collapsed - expand it.
+                // Storage not available, so we don't know if sec zero was previously collapsed - expand it.
                 buttonHideSecZero.addClass(ClassNames.OPEN).removeClass(ClassNames.CLOSED);
                 sectionZero.slideDown(300);
                 $(Selector.ABOVE_TILES).removeClass('sec-zero-closed');
@@ -598,6 +577,9 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                 // Still contact the server in case content has changed (e.g. restrictions now satisfied).
                 getSectionContentFromServer(courseContextId, sectionId).done(function (html, js) {
                     setCourseContentHTML(relatedContentArea, html, js);
+                }).fail(function (failResult) {
+                    failedLoadSectionNotify(sectionNumber, failResult, relatedContentArea);
+                    cancelTileSelections(sectionNumber);
                 });
             } else {
                 relatedContentArea.html(loadingIconHtml);
@@ -837,7 +819,6 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                             $('#sectionlink-' + currentSectionNumber).focus();
                         });
 
-                        setSectionZeroFromUserPref();
                         // Most filter button related JS is in filter_buttons.js module which is required below.
 
                         if (isMultiSectionPage) {
@@ -934,21 +915,26 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                     const sectionZero = $(Selector.SECTION_ZERO);
 
                     // When the user presses the button to collapse or expand Section zero (section at the top of the course).
-                    pageContent.on(Event.CLICK, Selector.HIDE_SEC0_BTN, function (e) {
-                        if (sectionZero.css(CSS.DISPLAY) === "none") {
-                            // Sec zero is collapsed so expand it on user click.
-                            sectionZero.slideDown(250);
-                            $(Selector.ABOVE_TILES).removeClass('sec-zero-closed');
-                            $(e.currentTarget).addClass(ClassNames.OPEN).removeClass(ClassNames.CLOSED);
-                            browserStorage.setSecZeroCollapseStatus("collapsed");
-                        } else {
-                            // Sec zero is expanded so collapse it on user click.
-                            sectionZero.slideUp(250);
-                            $(Selector.ABOVE_TILES).addClass('sec-zero-closed');
-                            $(e.currentTarget).addClass(ClassNames.CLOSED).removeClass(ClassNames.OPEN);
-                            browserStorage.setSecZeroCollapseStatus("expanded");
-                        }
-                    });
+                    // Button will absent if site admin has disabled sec zero collapse, in which case nothing to do here.
+                    const buttonHideSecZero = $(Selector.HIDE_SEC0_BTN);
+                    if (buttonHideSecZero.length) {
+                        setSectionZeroFromUserPref();
+                        pageContent.on(Event.CLICK, Selector.HIDE_SEC0_BTN, function (e) {
+                            if (sectionZero.css(CSS.DISPLAY) === "none") {
+                                // Sec zero is collapsed so expand it on user click.
+                                sectionZero.slideDown(250);
+                                $(Selector.ABOVE_TILES).removeClass('sec-zero-closed');
+                                $(e.currentTarget).addClass(ClassNames.OPEN).removeClass(ClassNames.CLOSED);
+                                browserStorage.setSecZeroCollapseStatus("collapsed");
+                            } else {
+                                // Sec zero is expanded so collapse it on user click.
+                                sectionZero.slideUp(250);
+                                $(Selector.ABOVE_TILES).addClass('sec-zero-closed');
+                                $(e.currentTarget).addClass(ClassNames.CLOSED).removeClass(ClassNames.OPEN);
+                                browserStorage.setSecZeroCollapseStatus("expanded");
+                            }
+                        });
+                    }
 
                     if (useFilterButtons) {
                         require(["format_tiles/filter_buttons"], function (filterButtons) {
@@ -977,7 +963,6 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                     // E.g. after we lose connection and cannot display content on a user tile click.
                     var stringKeys = [
                         {key: "sectionerrortitle", component: "format_tiles"},
-                        {key: "sectionerrorstring", component: "format_tiles"},
                         {key: "refresh"},
                         {key: "cancel", component: "moodle"},
                         {key: "noconnectionerror", component: "format_tiles"},

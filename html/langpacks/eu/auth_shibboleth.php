@@ -40,7 +40,7 @@ $string['auth_shib_idp_list_description'] = 'Sartu erabiltzaileari sarbide-orria
 $string['auth_shib_instructions'] = 'Erabili <a href="{$a}">Shibboleth login</a> Shibboleth-en bidez sartzeko zure erakundeak onartzen badu. Bestela, hemen erakusten den sarrera arrunteko formularioa erabili.';
 $string['auth_shib_instructions_help'] = 'Hemen zure erabiltzaileei Shibboleth erabiltzeko argibide pertsonalizatuak eman beharko zenizkieke. Sarbide-orriko argibideen atalean agertu beharko lirateke, eta "<b>{$a}</b>" esteka erakutsi, Shibboletheko erabiltzaileak erraz sar daitezen. Zuriz utziz gero, argibide estandarrak erakutsiko dira (ez Shibboleth-enak berak)';
 $string['auth_shib_instructions_key'] = 'Sartzeko argibideak';
-$string['auth_shib_integrated_wayf'] = 'Moodleren WAYF zerbitzua';
+$string['auth_shib_integrated_wayf'] = 'Moodleko WAYF zerbitzua';
 $string['auth_shib_integrated_wayf_description'] = 'Aukera hau gaituz gero, Moodlek bere WAYF zerbitzua erabiliko du Shibboleth-en konfiguratuta dagoenaren ordez. Moodlek sarbide-orri alternatibo honetan menuko zerrenda bat erakutsiko du eta bertan erabiltzaileak bere Identitate Hornitzailea aukeratu beharko du.';
 $string['auth_shib_logout_return_url'] = 'Saioa amaitzean erabili beharreko ordezko URLa.';
 $string['auth_shib_logout_return_url_description'] = 'Sartu saioa amaitu ondoren Shibboleth erabiltzaileak berbideratzeko erabiliko den URLa.<br />Hutsik utziz gero, erabiltzaileak Moodlek bideratzen dituen kokapenera bideratuko dira.';

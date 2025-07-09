@@ -1145,9 +1145,6 @@ body.jsenabled.format-tiles #collapsiblesec0 {
 .format-tiles .embed_cm_modal iframe {
     border: 0;
 }
-.format-tiles .embed_cm_modal a {
-    color: #979797;
-}
 .format-tiles .embed_cm_modal .modal-body {
     max-height: 95%;
     overflow-y: auto;
@@ -1496,6 +1493,18 @@ body.jsenabled.format-tiles #collapsiblesec0 {
 .format-tiles .subtile .dropdown-menu .dropdown-item {
     padding-top: 3px;
     padding-bottom: 3px;
+}
+.format-tiles .above-tiles-buttons a.dropdown-item .custom-switch.checked .custom-control-label::before {
+    color: #fff;
+    border-color: #0f6cbf;
+    background-color: #0f6cbf;
+}
+.format-tiles .above-tiles-buttons a.dropdown-item .custom-switch.checked .custom-control-label::after {
+    background-color: #fff;
+    left: -1.75rem;
+}
+.format-tiles .above-tiles-buttons a.dropdown-item:hover .custom-switch.checked .custom-control-label::before {
+    border-color: #fff;
 }
 .format-tiles.editing .section .activity.subtile .cm-inner {
     margin-top: 25px;

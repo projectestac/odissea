@@ -360,7 +360,7 @@ $string['notification_instance_updated_intro'] = 'Aktiviteten <a href="{$a->link
 $string['notification_instance_updated_small'] = 'BigBlueButton-mötet {$a->} uppdaterades';
 $string['notification_instance_updated_subject'] = 'Din BigBlueButton-mötesaktivitet har uppdaterats';
 $string['notification_recording_ready_html'] = 'En inspelning är nu tillgänglig för ett möte nyligen i <b><a href="{$a->link}">{$a->name}</a></b>.';
-$string['notification_recording_ready_plain'] = 'En inspelning är nu tillgänglig för ett möte nyligen i {$a->name}. Se {$a->länk} för att visa mötet.';
+$string['notification_recording_ready_plain'] = 'En inspelning är nu tillgänglig för ett möte nyligen i {$a->name}. Se {$a->link} för att visa mötet.';
 $string['notification_recording_ready_small'] = 'En ny inspelning är tillgänglig för {$a->name}';
 $string['notification_recording_ready_subject'] = 'Inspelning klar';
 $string['pluginadministration'] = 'Administrera BigBlueButton';

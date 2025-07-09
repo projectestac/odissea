@@ -67,6 +67,56 @@ export default class {
     }
 
     /**
+     * Private method to call core_courseformat_create_module webservice.
+     *
+     * @method _callEditWebservice
+     * @param {number} courseId
+     * @param {string} modName module name
+     * @param {number} targetSectionNum target section number
+     * @param {number} targetCmId optional target cm id
+     */
+    async _callAddModuleWebservice(courseId, modName, targetSectionNum, targetCmId) {
+        const args = {
+            courseid: courseId,
+            modname: modName,
+            targetsectionnum: targetSectionNum,
+        };
+        if (targetCmId) {
+            args.targetcmid = targetCmId;
+        }
+        let ajaxresult = await ajax.call([{
+            methodname: 'core_courseformat_create_module',
+            args,
+        }])[0];
+        return JSON.parse(ajaxresult);
+    }
+
+    /**
+     * Private method to call core_courseformat_new_module webservice.
+     *
+     * @method _callEditWebservice
+     * @param {number} courseId
+     * @param {string} modName module name
+     * @param {number} targetSectionId target section number
+     * @param {number} targetCmId optional target cm id
+     */
+    async _callNewModuleWebservice(courseId, modName, targetSectionId, targetCmId) {
+        const args = {
+            courseid: courseId,
+            modname: modName,
+            targetsectionid: targetSectionId,
+        };
+        if (targetCmId) {
+            args.targetcmid = targetCmId;
+        }
+        let ajaxresult = await ajax.call([{
+            methodname: 'core_courseformat_new_module',
+            args,
+        }])[0];
+        return JSON.parse(ajaxresult);
+    }
+
+    /**
      * Execute a basic section state action.
      * @param {StateManager} stateManager the current state manager
      * @param {string} action the action name
@@ -134,6 +184,7 @@ export default class {
      * @param {int|null|undefined} data.targetSectionId the target section id
      * @param {int|null|undefined} data.targetCmId the target cm id
      * @param {String|null|undefined} data.component optional component (for format plugins)
+     * @param {Object|undefined} [data.feedbackParams] the params to build the feedback message
      * @return {Object} the log entry
      */
     async _getLoggerEntry(stateManager, action, itemIds, data = {}) {
@@ -142,7 +193,7 @@ export default class {
             stateManager.setLogger(new SRLogger());
             isLoggerSet = true;
         }
-        const feedbackParams = {
+        let feedbackParams = {
             action,
             itemType: data.itemType ?? action.split('_')[0],
         };
@@ -160,6 +211,9 @@ export default class {
         }
         if (data.targetCmId) {
             feedbackParams.targetCmName = stateManager.get('cm', data.targetCmId).name;
+        }
+        if (data.feedbackParams) {
+            feedbackParams = {...feedbackParams, ...data.feedbackParams};
         }
 
         const message = await getString(
@@ -362,6 +416,8 @@ export default class {
         const course = stateManager.get('course');
         const updates = await this._callEditWebservice('section_add', course.id, [], targetSectionId);
         stateManager.processUpdates(updates);
+        const logEntry = this._getLoggerEntry(stateManager, 'section_add', []);
+        stateManager.addLoggerEntry(await logEntry);
     }
 
     /**
@@ -372,9 +428,11 @@ export default class {
      */
     async sectionDelete(stateManager, sectionIds) {
         const course = stateManager.get('course');
+        const logEntry = this._getLoggerEntry(stateManager, 'section_delete', sectionIds);
         const updates = await this._callEditWebservice('section_delete', course.id, sectionIds);
         this.bulkReset(stateManager);
         stateManager.processUpdates(updates);
+        stateManager.addLoggerEntry(await logEntry);
     }
 
     /**
@@ -384,11 +442,69 @@ export default class {
      */
     async cmDelete(stateManager, cmIds) {
         const course = stateManager.get('course');
+        const logEntry = this._getLoggerEntry(stateManager, 'cm_delete', cmIds);
         this.cmLock(stateManager, cmIds, true);
         const updates = await this._callEditWebservice('cm_delete', course.id, cmIds);
         this.bulkReset(stateManager);
         this.cmLock(stateManager, cmIds, false);
         stateManager.processUpdates(updates);
+        stateManager.addLoggerEntry(await logEntry);
+    }
+
+    /**
+     * Add a new module to a specific course section.
+     *
+     * @param {StateManager} stateManager the current state manager
+     * @param {string} modName the modulename to add
+     * @param {number} targetSectionNum the target section number
+     * @param {number} targetCmId optional the target cm id
+     */
+    async addModule(stateManager, modName, targetSectionNum, targetCmId) {
+        if (!modName) {
+            throw new Error(`Mutation addModule requires moduleName`);
+        }
+        if (!targetSectionNum) {
+            throw new Error(`Mutation addModule requires targetSectionNum`);
+        }
+        if (!targetCmId) {
+            targetCmId = 0;
+        }
+        const course = stateManager.get('course');
+        const updates = await this._callAddModuleWebservice(course.id, modName, targetSectionNum, targetCmId);
+        stateManager.processUpdates(updates);
+    }
+
+    /**
+     * Add a new module to a specific course section.
+     *
+     * @param {StateManager} stateManager the current state manager
+     * @param {string} modName the modulename to add
+     * @param {number} targetSectionId the target section id
+     * @param {number} targetCmId optional the target cm id
+     */
+    async newModule(stateManager, modName, targetSectionId, targetCmId) {
+        if (!modName) {
+            throw new Error(`Mutation newModule requires moduleName`);
+        }
+        if (!targetSectionId) {
+            throw new Error(`Mutation newModule requires targetSectionId`);
+        }
+        if (!targetCmId) {
+            targetCmId = 0;
+        }
+        const course = stateManager.get('course');
+        const pluginname = await getString(
+            'pluginname',
+            `${modName.toLowerCase()}`,
+        );
+        const logEntry = this._getLoggerEntry(stateManager, 'cm_add', [], {
+            feedbackParams: {
+                'modname': pluginname,
+            },
+        });
+        const updates = await this._callNewModuleWebservice(course.id, modName, targetSectionId, targetCmId);
+        stateManager.processUpdates(updates);
+        stateManager.addLoggerEntry(await logEntry);
     }
 
     /**
@@ -422,8 +538,10 @@ export default class {
      * @param {array} cmIds the list of course modules ids
      * @param {bool} complete the new completion value
      */
-    cmCompletion(stateManager, cmIds, complete) {
+    async cmCompletion(stateManager, cmIds, complete) {
         const newState = (complete) ? 1 : 0;
+        const action = (newState == 1) ? 'cm_complete' : 'cm_uncomplete';
+        const logEntry = this._getLoggerEntry(stateManager, action, cmIds);
         stateManager.setReadOnly(false);
         cmIds.forEach((id) => {
             const element = stateManager.get('cm', id);
@@ -433,6 +551,7 @@ export default class {
             }
         });
         stateManager.setReadOnly(true);
+        stateManager.addLoggerEntry(await logEntry);
     }
 
     /**

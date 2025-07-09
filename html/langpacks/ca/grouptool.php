@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cfg_show_members'] = 'Mostra els membres del grup';
+$string['copy'] = 'Copia';
 $string['description'] = 'Descripció';
 $string['duedateno'] = 'Sense data de venciment';
 $string['import'] = 'Importa';
@@ -33,6 +34,7 @@ $string['limit'] = 'límit';
 $string['nogroups'] = 'No hi ha cap grup en aquest curs.';
 $string['overview'] = 'Resum';
 $string['preview'] = 'Previsualització';
+$string['resize'] = 'Canvia la mida';
 $string['select'] = 'Selecciona';
 $string['show_members'] = 'Mostra els membres del grup';
 $string['start'] = 'Comença';

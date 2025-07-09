@@ -37,6 +37,7 @@ $string['eventchaptercreated'] = 'فصل تم إنشاؤه';
 $string['eventchapterdeleted'] = 'فصل تم حذفه';
 $string['eventchapterupdated'] = 'فصل تم تحديثه';
 $string['eventchapterviewed'] = 'فصل تمت معاينته';
+$string['faq'] = 'الأسئلة الشائعة للمحفظة';
 $string['feedbackupdated'] = '...الإفادات تم تحديثها...';
 $string['giportfolio:addinstance'] = 'إضافة محفظة جديدة';
 $string['giportfolio:printclassplan'] = 'طباعة خطط الصف';

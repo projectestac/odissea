@@ -189,8 +189,8 @@ class edit_renderer extends \plugin_renderer_base {
         $output .= html_writer::empty_tag('input', ['type' => 'text', 'id' => 'inputmaxgrade',
                 'name' => 'maxgrade', 'size' => ($structure->get_decimal_places_for_grades() + 2),
                 'value' => $structure->formatted_quiz_grade(),
-                'class' => 'form-control d-inline-block align-middle w-auto ml-1']);
-        $output .= html_writer::empty_tag('input', ['type' => 'submit', 'class' => 'btn btn-secondary ml-1 d-inline-block w-auto ',
+                'class' => 'form-control d-inline-block align-middle w-auto ms-1']);
+        $output .= html_writer::empty_tag('input', ['type' => 'submit', 'class' => 'btn btn-secondary ms-1 d-inline-block w-auto ',
                 'name' => 'savechanges', 'value' => get_string('save', 'quiz')]);
         $output .= html_writer::end_tag('fieldset');
         $output .= html_writer::end_tag('form');
@@ -213,7 +213,7 @@ class edit_renderer extends \plugin_renderer_base {
             'name'  => 'repaginate',
             'id'    => 'repaginatecommand',
             'value' => get_string('repaginatecommand', 'quiz'),
-            'class' => 'btn btn-secondary mr-1',
+            'class' => 'btn btn-secondary me-1',
             'data-header' => $header,
             'data-form'   => $form,
         ];
@@ -332,7 +332,7 @@ class edit_renderer extends \plugin_renderer_base {
             'type' => 'submit',
             'name' => 'repaginate',
             'value' => get_string('go'),
-            'class' => 'btn btn-secondary ml-1'
+            'class' => 'btn btn-secondary ms-1'
         ];
 
         $formcontent = html_writer::tag('form', html_writer::div(
@@ -520,6 +520,8 @@ class edit_renderer extends \plugin_renderer_base {
         foreach ($structure->get_slots_in_section($section->id) as $slot) {
             $output .= $this->question_row($structure, $slot, $contexts, $pagevars, $pageurl);
         }
+
+        $this->page->requires->js_call_amd('mod_quiz/question_slot', 'init');
         return html_writer::tag('ul', $output, ['class' => 'section img-text']);
     }
 
@@ -775,7 +777,6 @@ class edit_renderer extends \plugin_renderer_base {
         if ($structure->get_slot_by_number($slot)->qtype !== 'random') {
             $data['versionselection'] = true;
             $data['versionoption'] = $structure->get_version_choices_for_slot($slot);
-            $this->page->requires->js_call_amd('mod_quiz/question_slot', 'init', [$slotid]);
         }
 
         // Render the question slot template.

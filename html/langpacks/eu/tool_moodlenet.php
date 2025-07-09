@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addingaresource'] = 'Edukia MoodleNet-etik gehitzen';
 $string['aria:enterprofile'] = 'Idatzi zure MoodleNet profilaren IDa';
 $string['aria:footermessage'] = 'Bilatu edukia MoodleNet-en';
-$string['autoenablenotification'] = '<p>Moodle 4.0 bertsiotik aurrera, Ezarpen aurreratuetan <a href="https://moodle.net/">MoodleNet</a>-eko integrazioa gaituta dago modu lehenetsian. Jarduerak sortu eta kudeatzeko gaitasuna duten erabiltzaileek jarduera hautatzailean MoodleNet arakatu dezakete eta MoodleNet-eko baliabideak euren ikastaroetara inportatu ditzakete.</p><p>Nahi izanez gero, beste MoodleNet instantzia bat zehaztu daiteke <a href="{$a->settingslink}">MoodleNet-eko sarrerako ezarpenetan</a>.</p>';
+$string['autoenablenotification'] = '<p>Moodle 4.0 bertsiotik aurrera, Ezarpen aurreratuetan <a href="https://moodle.net/">MoodleNet</a>-eko integrazioa gaituta dago modu lehenetsian. Jarduerak sortu eta kudeatzeko gaitasuna duten erabiltzaileek jarduera-hautatzailean MoodleNet arakatu dezakete eta MoodleNet-eko baliabideak euren ikastaroetara inportatu ditzakete.</p><p>Nahi izanez gero, beste MoodleNet instantzia bat zehaztu daiteke <a href="{$a->settingslink}">MoodleNet-eko sarrerako ezarpenetan</a>.</p>';
 $string['autoenablenotification_subject'] = 'Lehenetsitako MoodleNet ezarpena aldatu da.';
 $string['browsecontentmoodlenet'] = 'Edo bilatu edukia MoodleNet-en';
 $string['clearsearch'] = 'Garbitu bilaketa';

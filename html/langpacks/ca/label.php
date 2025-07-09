@@ -25,29 +25,40 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Ofereix crear una etiqueta quan els fitxers multimèdia s\'han arrossegat i soltat sobre el curs.';
-$string['configdndresizeheight'] = 'Quan es crea una etiqueta arrossegant i soltant una imatge, canvia la mida si té una alçada superior a aquesta quantitat de píxels (0 per a no canviar la mida).';
-$string['configdndresizewidth'] = 'Quan es crea una etiqueta arrossegant i soltant una imatge, canvia la mida si té una amplada superior a aquesta quantitat de píxels (0 per a no canviar la mida).';
-$string['dndmedia'] = 'Arrossega i solta multimèdia';
-$string['dndresizeheight'] = 'Alçada de redimensionat en arrossegar i soltar';
-$string['dndresizewidth'] = 'Amplada de redimensionat en arrossegar i soltar';
+$string['configdndmedia'] = 'Ofereix crear una àrea de text i multimèdia quan els fitxers multimèdia s\'han arrossegat i deixat anar sobre el curs.';
+$string['configdndresizeheight'] = 'Quan es crea una àrea de text i multimèdia arrossegant i deixant anar una imatge, canvia\'n les dimensions si fa més d\'aquesta quantitat de píxels d\'alçària. Si s\'estableix a 0, no se\'n canvien les dimensions.';
+$string['configdndresizewidth'] = 'Quan es crea una àrea de text i multimèdia arrossegant i deixant anar un imatge, canvia\'n les dimensions si fa més d\'aquesta quantitat de píxels d\'amplària. Si s\'estableix a 0, no se\'n canvien les dimensions.';
+$string['dndmedia'] = 'Arrossega i deixa anar multimèdia';
+$string['dndresizeheight'] = 'Alçària de redimensionament en arrossegar i deixar anar';
+$string['dndresizewidth'] = 'Amplària de redimensionament en arrossegar i deixar anar';
 $string['dnduploadlabel'] = 'Afegeix un recurs multimèdia a la pàgina del curs';
-$string['dnduploadlabeltext'] = 'Afegeix una etiqueta a la pàgina del curs';
-$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats d\'Etiqueta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['dnduploadlabeltext'] = 'Afegeix una àrea de text i multimèdia a la pàgina del curs';
+$string['indicator:cognitivedepth'] = 'Àrea de text i multimèdia cognitius';
+$string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva que ha assolit l\'estudiant a un recurs de l\'àrea de text i multimèdia.';
+$string['indicator:cognitivedepthdef'] = 'Àrea de text i multimèdia cognitius';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva que ofereixen els recursos de l\'àrea de text i multimèdia en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Àrea de text i multimèdia socials';
+$string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'abast social que ha assolit l\'estudiant a un recurs de l\'àrea de text i multimèdia.';
+$string['indicator:socialbreadthdef'] = 'Àrea de text i multimèdia socials';
+$string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació social que ofereixen els recursos de l\'àrea de text i multimèdia en el decurs d\'aquest interval d\'anàlisi (Nivells = No participació, Participant solitari)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['label:addinstance'] = 'Afegeix una etiqueta nova';
-$string['labeltext'] = 'Text de l\'etiqueta';
-$string['modulename'] = 'Etiqueta';
-$string['modulename_help'] = 'El recurs etiqueta permet inserir textos i multimèdia entre els enllaços a activitats i recursos d\'una secció en la pàgina principal del curs. Les etiquetes són molt versàtils i poden ajudar a millorar l\'aparença d\'un curs si s\'utilitzen amb seny.
+$string['label:addinstance'] = 'Afegeix una àrea de text i multimèdia nova';
+$string['label:view'] = 'Visualitza l\'àrea de text i multimèdia';
+$string['labelname'] = 'Títol a l\'índex del curs';
+$string['labelname_help'] = 'El títol només s\'utilitza per identificar l\'àrea de text i multimèdia a l\'índex del curs i per a la compleció d\'activitats. Si es deixa buit, s\'empraran els primers caràcters del text per generar un títol de manera automàtica.';
+$string['labeltext'] = 'Text';
+$string['modulename'] = 'Àrea de text i multimèdia';
+$string['modulename_help'] = 'El recurs d\'àrea de text i multimèdia permet inserir textos i elements multimèdia a la pàgina del curs.
 
-Les etiquetes es poden utilitzar
+Podeu utilitzar una àrea de text i multimèdia per fer el següent:
 
-* Per a separar una llista llarga d\'activitats amb subtítols o alguna imatge
-* Per a mostrar un fitxer incrustat d\'àudio o vídeo directament en la pàgina principal del curs
-* Per a afegir una breu descripció en una secció del curs';
+* Separar una llista llarga d\'activitats del curs amb subtítols o imatges.
+* Mostrar un fitxer incrustat d\'àudio o vídeo directament a la pàgina del curs.
+* Afegir una descripció breu a una secció del curs.';
 $string['modulename_link'] = 'mod/label/view';
-$string['modulenameplural'] = 'Etiquetes';
-$string['pluginadministration'] = 'Administració d\'etiquetes';
+$string['modulenameplural'] = 'Àrees de text i multimèdia';
+$string['pluginadministration'] = 'Administració d\'àrees de text i multimèdia';
 $string['pluginname'] = 'Àrea de text i multimèdia';
-$string['search:activity'] = 'Etiqueta';
+$string['privacy:metadata'] = 'El connector Àrea de text i multimèdia no emmagatzema cap dada personal.';
+$string['search:activity'] = 'Àrea de text i multimèdia';

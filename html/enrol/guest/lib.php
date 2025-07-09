@@ -261,7 +261,7 @@ class enrol_guest_plugin extends enrol_plugin {
      * @param array instance fields
      * @return int id of new instance, null if can not be created
      */
-    public function add_instance($course, array $fields = NULL) {
+    public function add_instance($course, ?array $fields = NULL) {
         $fields = (array)$fields;
 
         if (!isset($fields['password'])) {
@@ -573,7 +573,7 @@ class enrol_guest_plugin extends enrol_plugin {
  */
 function enrol_guest_get_fontawesome_icon_map() {
     return [
-        'enrol_guest:withpassword' => 'fa-key',
-        'enrol_guest:withoutpassword' => 'fa-unlock-alt',
+        'enrol_guest:withoutpassword' => 'fa-lock-open',
+        'enrol_guest:withpassword' => 'fa-lock',
     ];
 }

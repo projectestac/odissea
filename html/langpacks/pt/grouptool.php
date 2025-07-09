@@ -517,6 +517,7 @@ $string['registrations_missing'] = '{$a} registos em falta';
 $string['regpresent'] = 'Utilizador já {$a}';
 $string['rename_failed'] = 'Ocorreu um erro ao renomear!';
 $string['renamed_group'] = 'Grupo foi renomeado!';
+$string['report'] = 'Relatório da Ferramenta de Grupos';
 $string['require_registration'] = 'Requer registos';
 $string['require_registration_help'] = 'O número mínimo de grupos em que os alunos têm de se inscrever para marcar esta atividade como concluída. Não são considerados pela regra as vagas em filas de espera. Se o número for maior do que 1, é necessário ativar "Registos múltiplos" e "Máximo de grupos a escolher" tem de ser maior ou igual a esse valor';
 $string['reset_agrps'] = 'Reiniciar os grupos ativos';

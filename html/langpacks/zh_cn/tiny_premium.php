@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'API 密钥';
-$string['apikey_desc'] = '如果您已购买订阅，或者您正在免费试用，则可以在 <a href=“https://www.tiny.cloud”>Tiny Cloud 帐户页面上找到您的 API 密钥</a>。';
+$string['apikey_desc'] = '如果您已购买订阅或在免费试用，则可以在 <a href="https://www.tiny.cloud">Tiny Cloud 帐户页面</a>上找到您的 API 密钥。';
 $string['emptyapikeywarning'] = '在添加 API 密钥之前，启用的 TinyMCE Premium 插件将不可用。';
 $string['helplinktext'] = '高级插件';
 $string['pluginname'] = 'TinyMCE 高级版';
@@ -48,5 +48,5 @@ $string['premiumplugin:tableofcontents'] = '目录';
 $string['premiumplugin:tinymcespellchecker'] = '拼写检查专业版';
 $string['premiumplugin:typography'] = '高级排版';
 $string['premiumplugins'] = '高级插件';
-$string['premiumplugins_desc'] = '访问 TinyMCE Premium 插件需要 API 密钥。并非所有列出的插件都可用于您的 TinyMCE Premium 订阅。您可以在 <a href=“https://www.tiny.cloud”>Tiny Cloud 帐户页面上查看可用的插件</a>。';
+$string['premiumplugins_desc'] = '使用 TinyMCE 高级插件需要 API 密钥。并非所有列出的插件都可能在您的 TinyMCE 高级订阅中可用。您可以在您的 <a href="https://www.tiny.cloud">Tiny Cloud</a> 账户页面查看可用的插件。';
 $string['privacy:metadata'] = 'TinyMCE 的 Tiny 高级插件不存储任何个人数据。';

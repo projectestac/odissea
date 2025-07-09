@@ -71,13 +71,16 @@ function xmldb_qbank_columnsortorder_upgrade(int $oldversion): bool {
         upgrade_plugin_savepoint(true, 2024042201, 'qbank', 'columnsortorder');
     }
 
-    if ($oldversion < 2024042202) {
+    if ($oldversion < 2024051000) {
         // Remove plugin entry created by previously incorrect 2024042201 savepoint.
         $DB->delete_records('config_plugins', ['plugin' => 'qbank_qbank_columnsortorder']);
-        upgrade_plugin_savepoint(true, 2024042202, 'qbank', 'columnsortorder');
+        upgrade_plugin_savepoint(true, 2024051000, 'qbank', 'columnsortorder');
     }
 
-    if ($oldversion < 2024042203) {
+    // Automatically generated Moodle v4.5.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2024100701) {
         // When upgrading to version 2024042201, if there were any values for colsize in qbank_columnsortorder plugin,
         // they were getting incorrectly updated, resulting in corrupted colsize value,
         // e.g., '"width":"30"}-"width":"30"},"width":"180"}-"width":"180"}' and thus breaking the question bank page.
@@ -86,7 +89,7 @@ function xmldb_qbank_columnsortorder_upgrade(int $oldversion): bool {
         if ($pluginconfig && preg_match($pattern, $pluginconfig->value)) {
             $DB->delete_records('config_plugins', ['plugin' => 'qbank_columnsortorder', 'name' => 'colsize']);
         }
-        upgrade_plugin_savepoint(true, 2024042203, 'qbank', 'columnsortorder');
+        upgrade_plugin_savepoint(true, 2024100701, 'qbank', 'columnsortorder');
     }
 
     return true;

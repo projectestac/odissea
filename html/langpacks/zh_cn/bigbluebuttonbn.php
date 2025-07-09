@@ -113,7 +113,7 @@ $string['config_experimental_features_description'] = '实验功能的配置。'
 $string['config_extended_capabilities'] = '扩展功能';
 $string['config_extended_capabilities_description'] = 'BigBlueButton服务器提供扩展功能时的配置。';
 $string['config_general'] = '常规设置';
-$string['config_general_description'] = '要设置 BigBlueButton，您可以使用自己的 BigBlueButton 服务器和凭据，也可以通过 <a href=“https://registration-portal.blindsidenetworks.com/” target=“_blank”>Blindside Networks 注册门户 （opens in a new window） 获取凭据</a>。';
+$string['config_general_description'] = '要设置 BigBlueButton，您可以使用自己的 BigBlueButton 服务器和凭据，也可以通过 <a href="https://registration-portal.blindsidenetworks.com/" target="_blank">Blindside Networks 注册门户 （opens in a new window） 获取凭据</a>。';
 $string['config_guestaccess_enabled'] = '外部访客访问';
 $string['config_guestaccess_enabled_description'] = '允许网站上没有帐户的用户访问房间';
 $string['config_hideuserlist_default'] = '默认启用隐藏用户列表';
@@ -438,7 +438,7 @@ $string['search:activity'] = 'BigBlueButton - 活动信息';
 $string['search:tags'] = 'BigBlueButton - 标签信息';
 $string['sendnotification'] = '发送通知';
 $string['settings'] = 'BigBlueButton 设置';
-$string['settings_credential_warning'] = 'BigBlueButton 服务器凭据即将过期。请参阅 <a href=“{$a->settingslink}” target=“_blank”>BigBlueButton 常规设置 （opens in a new window）</a>。';
+$string['settings_credential_warning'] = 'BigBlueButton 服务器凭据即将过期。请参阅 <a href="{$a->settingslink}" target="_blank">BigBlueButton 常规设置 （opens in a new window）</a>。';
 $string['settings_credential_warning_no_capability'] = 'BigBlueButton 服务器凭据即将过期。请联系您的网站管理员。';
 $string['started_at'] = '开始';
 $string['starts_at'] = '开始';

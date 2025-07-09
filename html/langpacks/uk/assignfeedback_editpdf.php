@@ -74,6 +74,7 @@ $string['oval'] = 'Овал';
 $string['pagenumber'] = 'Сторінка {$a}';
 $string['pagexofy'] = 'Сторінка  {$a->page} з {$a->total}';
 $string['partialwarning'] = 'До деяких файлів у цьому поданні можна отримати доступ лише шляхом прямого завантаження.';
+$string['pathtogserror'] = 'Налаштований шлях до ghostscript встановлено неправильно: {$a}';
 $string['pathtogspathdesc'] = 'Зверніть увагу, що анотований PDF вимагає, щоб шлях до ghostscript був встановленим в {$a}.';
 $string['pen'] = 'Перо';
 $string['pluginname'] = 'Анотація PDF';

@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['admindesceventaccount'] = 'Defineix quin compte ConnectTxt cal emprar per enviar missatges generats en resposta a esdeveniments del sistema Moodle. És necessari per tal que funcioni el connector de missatgeria de moodletxt+.';
 $string['adminheadermiscsettings'] = 'Paràmetres diversos';
 $string['adminlabelaccdesc'] = 'Descripció del compte:';
+$string['buttonadd'] = 'Afegeix';
 $string['labelgroupdesc'] = 'Descripció del grup:';
 $string['nexttoken'] = 'Següent';
 $string['optionallusers'] = 'Tots els usuaris';

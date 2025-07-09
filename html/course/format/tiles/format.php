@@ -57,7 +57,4 @@ $outputclass = $format->get_output_classname('content');
 $widget = new $outputclass($format);
 echo $renderer->render($widget);
 
-// Include format.js (required for dragging sections around).
-$PAGE->requires->js('/course/format/tiles/format.js');
-
 // Other JS initialisation has been moved to render_content() in /course/format/tiles/classes/output/renderer.php.

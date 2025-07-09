@@ -1640,4 +1640,159 @@ calendar,core_calendar|/calendar/view.php?view=month',
         $upgrade = get_config('core', 'upgraderunning');
         $this->assertFalse($upgrade);
     }
+
+    /**
+     * Data provider for {@see test_upgrade_change_binary_column_to_int()}.
+     *
+     * @return array[]
+     */
+    public static function upgrade_change_binary_column_to_int_provider(): array {
+        return [
+            'Binary column' => [
+                XMLDB_TYPE_BINARY,
+                null,
+                true,
+                false,
+            ],
+            'Integer column' => [
+                XMLDB_TYPE_INTEGER,
+                '1',
+                false,
+                false,
+            ],
+            'Non-binary and non-integer column' => [
+                XMLDB_TYPE_TEXT,
+                null,
+                false,
+                true,
+            ],
+        ];
+    }
+
+    /**
+     * Unit test for {@see upgrade_change_binary_column_to_int()}.
+     *
+     * @dataProvider upgrade_change_binary_column_to_int_provider
+     * @covers ::upgrade_change_binary_column_to_int()
+     * @param int $type The field type.
+     * @param string|null $length The field length.
+     * @param bool $expectedresult Whether the conversion succeeded.
+     * @param bool $expecexception Whether to expect an exception.
+     * @return void
+     */
+    public function test_upgrade_change_binary_column_to_int(
+        int $type,
+        ?string $length,
+        bool $expectedresult,
+        bool $expecexception,
+    ): void {
+        global $DB;
+        $this->resetAfterTest();
+
+        $dbman = $DB->get_manager();
+        $tmptablename = 'test_convert_table';
+        $fieldname = 'success';
+        $table = new xmldb_table($tmptablename);
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE);
+        $table->add_field($fieldname, $type, $length, null, XMLDB_NOTNULL);
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $dbman->create_table($table);
+
+        // Insert sample data.
+        $ones = [];
+        $truerecord = (object)[$fieldname => 1];
+        $falserecord = (object)[$fieldname => 0];
+        $ones[] = $DB->insert_record($tmptablename, $truerecord);
+        $DB->insert_record($tmptablename, $falserecord);
+        $ones[] = $DB->insert_record($tmptablename, $truerecord);
+        $DB->insert_record($tmptablename, $falserecord);
+        $ones[] = $DB->insert_record($tmptablename, $truerecord);
+        $ones[] = $DB->insert_record($tmptablename, $truerecord);
+
+        if ($expecexception) {
+            $this->expectException(coding_exception::class);
+        }
+
+        $result = upgrade_change_binary_column_to_int($tmptablename, $fieldname);
+        $this->assertEquals($expectedresult, $result);
+
+        // Verify converted column and data.
+        if ($result) {
+            $columns = $DB->get_columns($tmptablename);
+            // Verify the new field has been created and is no longer a binary field.
+            $this->assertArrayHasKey($fieldname, $columns);
+            $field = $columns[$fieldname];
+            $this->assertFalse($field->binary);
+
+            // Verify that the renamed old field has now been removed.
+            $this->assertArrayNotHasKey("tmp$fieldname", $columns);
+
+            // Confirm that the values for the converted column are the same.
+            $records = $DB->get_fieldset($tmptablename, 'id', [$fieldname => 1]);
+            $this->assertEqualsCanonicalizing($ones, $records);
+        }
+
+        // Cleanup.
+        $dbman->drop_table($table);
+    }
+
+    /**
+     * Test for upgrade script replacing full urls with relative urls in defaulthomepage setting
+     *
+     * @covers ::upgrade_change_binary_column_to_int()
+     */
+    public function test_upgrade_store_relative_url_sitehomepage(): void {
+        global $CFG;
+        $this->resetAfterTest();
+
+        // Check updating the value for the defaulthomepage.
+        $CFG->defaulthomepage = $CFG->wwwroot . '/page1';
+        upgrade_store_relative_url_sitehomepage();
+        $this->assertEquals('/page1', $CFG->defaulthomepage);
+
+        $CFG->defaulthomepage = HOMEPAGE_SITE;
+        upgrade_store_relative_url_sitehomepage();
+        $this->assertEquals(HOMEPAGE_SITE, $CFG->defaulthomepage);
+
+        // Check updating user preferences.
+        $user1 = $this->getDataGenerator()->create_user();
+        $user2 = $this->getDataGenerator()->create_user();
+        set_user_preference('user_home_page_preference', $CFG->wwwroot . '/page2', $user1);
+        set_user_preference('user_home_page_preference', HOMEPAGE_MY, $user2);
+        upgrade_store_relative_url_sitehomepage();
+        $this->assertEquals('/page2', get_user_preferences('user_home_page_preference', null, $user1->id));
+        $this->assertEquals(HOMEPAGE_MY, get_user_preferences('user_home_page_preference', null, $user2->id));
+    }
+
+    /**
+     * Test the check_aurora_version check when the Moodle instance is not using Amazon Aurora as a database architecture.
+     *
+     * @covers ::check_aurora_version
+     */
+    public function test_check_aurora_version_is_not_used(): void {
+        global $CFG;
+
+        $this->resetAfterTest();
+        $CFG->dbtype = 'pgsql';
+
+        $result = new environment_results('custom_checks');
+        $this->assertNull(check_aurora_version($result));
+    }
+
+    /**
+     * Test the check_aurora_version check when the Moodle instance is using Amazon Aurora as a database architecture.
+     *
+     * @covers ::check_aurora_version
+     */
+    public function test_check_aurora_version_is_used(): void {
+        global $CFG;
+
+        $this->resetAfterTest();
+        $CFG->dbtype = 'auroramysql';
+
+        $result = new environment_results('custom_checks');
+        $this->assertInstanceOf(environment_results::class, check_aurora_version($result));
+        $this->assertEquals('Aurora compatibility', $result->getInfo());
+        $this->assertFalse($result->getStatus());
+    }
 }

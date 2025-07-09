@@ -21,7 +21,7 @@ namespace core_reportbuilder\external\columns;
 use core_reportbuilder_generator;
 use core_external\external_api;
 use externallib_advanced_testcase;
-use core_reportbuilder\report_access_exception;
+use core_reportbuilder\exception\report_access_exception;
 use core_reportbuilder\local\models\column;
 use core_user\reportbuilder\datasource\users;
 
@@ -62,15 +62,13 @@ final class add_test extends externallib_advanced_testcase {
 
         $this->assertTrue($result['hassortablecolumns']);
         $this->assertCount(1, $result['sortablecolumns']);
+
         $sortablecolumn = reset($result['sortablecolumns']);
         $this->assertEquals('Full name', $sortablecolumn['title']);
         $this->assertEquals(SORT_ASC, $sortablecolumn['sortdirection']);
         $this->assertEquals(0, $sortablecolumn['sortenabled']);
         $this->assertEquals(1, $sortablecolumn['sortorder']);
-        $this->assertEquals('t/uplong', $sortablecolumn['sorticon']['key']);
-        $this->assertEquals('moodle', $sortablecolumn['sorticon']['component']);
-        $str = get_string('columnsortdirectiondesc', 'core_reportbuilder', 'Full name');
-        $this->assertEquals($str, $sortablecolumn['sorticon']['title']);
+        $this->assertArrayHasKey('sorticon', $sortablecolumn);
 
         // Assert report columns.
         $columns = column::get_records(['reportid' => $report->get('id')]);

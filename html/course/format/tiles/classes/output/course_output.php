@@ -194,19 +194,20 @@ class course_output implements \renderable, \templatable {
             }
         }
         $data = $this->get_basic_data();
-        if (!$this->sectionnum) {
-            $data = $this->append_section_zero_data($data, $output);
-        }
-
         // We have assembled the "common data" needed for both single and multiple section pages.
         // Now we can go off and get the specific data for the single or multiple page as required.
-        if ($this->sectionnum !== null) {
-            // We are outputting a single section page.
-            if ($this->sectionnum == 0) {
-                return $this->append_section_zero_data($data, $output);
-            } else {
-                return $this->append_single_section_page_data($output, $data);
-            }
+
+        // Only show section zero if we need it.
+        $onmultisectionpage = !($this->sectionnum ?? false);
+        $processsectionzero = $onmultisectionpage || get_config('format_tiles', 'showseczerocoursewide');
+        if ($processsectionzero) {
+            // Only show section 0 on multi section page, or single sec page with admin setting to show course wide.
+            $data = $this->append_section_zero_data($data, $output);
+        } else {
+            $data['section_zero_show'] = 0;
+        }
+        if (!$onmultisectionpage) {
+            return $this->append_single_section_page_data($output, $data);
         } else {
             // We are outputting multi section page.
             return $this->append_multi_section_page_data($data);
@@ -365,15 +366,10 @@ class course_output implements \renderable, \templatable {
         $data['section_zero']['tileid'] = 0;
         $data['section_zero']['visible'] = true;
 
-        // Only show section zero if we need it.
-        $data['section_zero_show'] = 0;
-        if ($this->sectionnum == 0 || get_config('format_tiles', 'showseczerocoursewide')) {
-            // We only want to show section zero if we are on the landing page, or admin has said we should show it course wide.
-            if ($seczero->summary || !empty($data['section_zero']['content']['course_modules'])) {
-                // We do have something to show, so need to show it.
-                $data['section_zero_show'] = 1;
-            }
-        }
+        // Do not show if entirely empty.
+        $data['section_zero_show'] = $seczero->summary || !empty($data['section_zero']['content']['course_modules']);
+        $data['section_zero']['is_collapsible'] = get_config('format_tiles', 'seczerocollapsible');
+
         if ($this->courseformatoptions['courseusesubtiles'] && $this->courseformatoptions['usesubtilesseczero']) {
             $data['section_zero']['useSubtiles'] = 1;
         } else {
@@ -851,7 +847,7 @@ class course_output implements \renderable, \templatable {
      * @throws \moodle_exception
      */
     private function course_module_data($mod, $section, $previouswaslabel, $isfirst, $output): array {
-        global $PAGE, $CFG, $DB;
+        global $CFG, $DB;
         $displayoptions = [];
         $obj = new \core_courseformat\output\local\content\section\cmitem($this->format, $section, $mod, $displayoptions);
         $moduleobject = (array)$obj->export_for_template($output);
@@ -910,19 +906,8 @@ class course_output implements \renderable, \templatable {
         if (!$treataslabel) {
             $iconclass = '';
             $modiconurl = $mod->get_icon_url($output);
-            if (!\core_component::has_monologo_icon('mod', $mod->modname)) {
-                if ($mod->modname == 'customcert') {
-                    // Temporary icon for mod_customcert where monologo not yet implemented (their issue #568).
-                    $modiconurl = $output->image_url('tileicon/award-solid', 'format_tiles');
-                } else {
-                    // Use the mod's legacy icon but with no filtering.
-                    $iconclass = 'nofilter';
-                }
-            }
-
-            // No filter icons.  Big blue button has a coloured monologo which cannot be filtered.
-            $nofiltericons = ['bigbluebuttonbn'];
-            if (in_array($mod->modname, $nofiltericons)) {
+            if (!\format_tiles\local\util::has_monologo_icon('mod', $mod->modname)) {
+                // To use the mod's non-monologo icon we need no filtering.
                 $iconclass = 'nofilter';
             }
 
@@ -993,26 +978,12 @@ class course_output implements \renderable, \templatable {
         }
 
         if ($mod->modname == 'folder') {
-            // Folders set to display inline will not work this theme.
-            // This is not a very elegant solution, but it will ensure that the URL is correctly shown.
-            // If the user is editing it will change the format of the folder.
-            // It will show on a separate page, and alert the editing user as to what it has done.
             $moduleobject['url'] = new \moodle_url('/mod/folder/view.php', ['id' => $mod->id]);
-            if ($PAGE->user_is_editing()) {
-                $folder = $DB->get_record('folder', ['id' => $mod->instance]);
-                if ($folder->display == FOLDER_DISPLAY_INLINE) {
-                    $DB->set_field('folder', 'display', FOLDER_DISPLAY_PAGE, ['id' => $folder->id]);
-                    \core\notification::info(
-                        get_string('folderdisplayerror', 'format_tiles', $moduleobject['url']->out())
-                    );
-                    rebuild_course_cache($mod->course, true);
-                }
-            }
-        } else if ($mod->modname == 'url') {
+        }
+        if ($mod->modname == 'url'&& \format_tiles\local\video_cm::is_video_cm($this->course->id, $mod->id)) {
             $externalurl = $DB->get_field('url', 'externalurl', ['id' => $mod->instance]);
-            $modifiedvideourl = self::check_modify_embedded_url($externalurl);
-
-            if ($modifiedvideourl || self::is_video_url($externalurl)) {
+            $modifiedvideourl = \format_tiles\local\video_cm::check_modify_embedded_url($externalurl);
+            if ($modifiedvideourl) {
                 // Even though it's really a URL activity, display it as "video" activity with video icon.
                 $videostring = get_string('displaytitle_mod_mp4', 'format_tiles');
                 if ($this->courseformatoptions['courseusesubtiles']) {
@@ -1148,69 +1119,6 @@ class course_output implements \renderable, \templatable {
         return $progressdata;
     }
 
-    /**
-     * If the URL is a YouTube or Vimeo URL etc, make some adjustments for embedding.
-     * Teacher probably used standard watch URL so fix it if so.
-     * @see \format_tiles_testcase::test_video_urls()
-     * @param string $url
-     * @return string|null string the URL if it was en embed video URL, null if not.
-     */
-    public static function check_modify_embedded_url(string $url): ?string {
-
-        // Keep pattern replacements here specific as remote end may use params unknown to this code.
-        // Sophisticated editors wanting to use other params can enter the embed URL directly and won't need this.
-
-        // First match type - "watch" URL with no other params.
-        // E.g. https://www.youtube.com/watch?v=abcdefghijk ==> https://www.youtube.com/embed/abcdefghijk transform.
-        $pattern = '/^(http(s)??\:\/\/)?(www\.)?((youtube\.com\/watch\?v=[a-zA-Z0-9\-_]{11}))$/';
-        if (preg_match($pattern, $url)) {
-            return str_replace('watch?v=', 'embed/', $url);
-        }
-
-        // Second match type - "youtu.be" URL with no other params.
-        // E.g. https://youtu.be/abcdefghijk ==> https://www.youtube.com/embed/abcdefghijk transform.
-        $pattern = '/^(http(s)??\:\/\/)?(www\.)?((youtu\.be\/([a-zA-Z0-9\-_]{11})))$/';
-        $matches = null;
-        preg_match($pattern, $url, $matches);
-        if ($matches && isset($matches[6])) {
-            return 'https://www.youtube.com/embed/' . $matches[6];
-        }
-
-        // Third match type - "shorts" URL with no other params.
-        // E.g. https://www.youtube.com/shorts/abcdefghijk ==> https://www.youtube.com/embed/abcdefghijk transform.
-        $pattern = '/^(http(s)??\:\/\/)?(www\.)?((youtube\.com\/shorts\/[a-zA-Z0-9\-_]{11}))$/';
-        if (preg_match($pattern, $url)) {
-            return str_replace('shorts/', 'embed/', $url);
-        }
-
-        // Vimeo.
-        // E.g. https://vimeo.com/347119375 ==> https://player.vimeo.com/video/347119375 transform.
-        $pattern = '/^(https?:\/\/)?(www.)?vimeo.com\/([a-zA-Z0-9\-_]{6,11})$/';
-        $matches = null;
-        preg_match($pattern, $url, $matches);
-        if ($matches && isset($matches[3])) {
-            return "https://player.vimeo.com/video/$matches[3]";
-        }
-        return null;
-    }
-
-    /**
-     * Is the URL provided a video URL (i.e. show Video icon for URL activity?).
-     * @param string $url
-     * @return bool
-     */
-    public static function is_video_url(string $url): bool {
-        $patterns = [
-            '/^(http(s)??\:\/\/)?(www\.)?(youtube\.com\/|youtu\.be\/)/',
-            '/^(https?:\/\/)?(www.)?vimeo.com\//',
-        ];
-        foreach ($patterns as $pattern) {
-            if (preg_match($pattern, $url)) {
-                return true;
-            }
-        }
-        return false;
-    }
 
     /**
      * Get an array of the controls to show above the tiles e.g. high contrast mode.
@@ -1228,19 +1136,16 @@ class course_output implements \renderable, \templatable {
             $controls[] = [
                 'url' => new \moodle_url($courseurl, array_merge($courseurlparams, ['format-tiles-action' => 'toggleanimatednav'])),
                 'label' => get_string('jsactivate', 'format_tiles'),
-                'iconname' => $usingjsnav ? 'toggle-on' : 'toggle-off',
-                'icontitle' => get_string($usingjsnav ? 'on' : 'off', 'format_tiles'),
+                'checked' => $usingjsnav,
             ];
         }
         if (get_config('format_tiles', 'highcontrastmodeallow')) {
-            $usehighcontrast = \format_tiles\local\util::using_high_contrast();
             $controls[] = [
                 'url' => new \moodle_url(
                     $courseurl, array_merge($courseurlparams, ['format-tiles-action' => 'togglehighcontrast'])
                 ),
                 'label' => get_string('highcontrastmode', 'format_tiles'),
-                'iconname' => $usehighcontrast ? 'toggle-on' : 'toggle-off',
-                'icontitle' => get_string($usehighcontrast ? 'on' : 'off', 'format_tiles'),
+                'checked' => \format_tiles\local\util::using_high_contrast(),
             ];
         }
         return $controls;

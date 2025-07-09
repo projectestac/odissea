@@ -121,7 +121,7 @@ $string['groupmode_groupsseparate_help'] = '学生们被分成小组，只能看
 $string['groupmode_groupsvisible_help'] = '学生被分成小组，但可以看到其他小组的作品。';
 $string['groupmode_help'] = '* 没有小组
 * 独立小组 - 每个小组的成员都只能看到自己的小组，不能看到其它的小组
-* 可视小组 - 每个小组成员都在自己的小组内完成工作，但也可以看到其它小组的情况
+* 公开小组 - 每个小组成员都在自己的小组内完成工作，但也可以看到其它小组的情况
 
 在课程级别设置的小组模式是所有活动的默认模式。如果在课程级别强制使用小组模式，则无法在活动中更改该模式。';
 $string['groupmodeforce'] = '强制小组模式';
@@ -138,7 +138,7 @@ $string['groupsinselectedgrouping'] = '小组在：';
 $string['groupsnone'] = '没有小组';
 $string['groupsonly'] = '仅小组';
 $string['groupspreview'] = '小组预览';
-$string['groupsseparate'] = '分隔小组';
+$string['groupsseparate'] = '独立小组';
 $string['groupsvisible'] = '可视小组';
 $string['grouptemplate'] = '小组@';
 $string['importgroups'] = '导入小组';

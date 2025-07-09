@@ -25,103 +25,65 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_string'] = 'Activité :';
-$string['async_restore_in_progress'] = 'Restauration de l’élément « {$a->modtext} » vers la section numéro {$a->section}';
-$string['backup'] = 'Copier dans le panier d’activités';
-$string['backup_heavy_load_warning_message'] = 'Si la section contient plusieurs activités, la durée de traitement sera plus longue.';
-$string['backupnotfound'] = 'Fichier de sauvegarde introuvable';
-$string['bulkdelete'] = 'Purge du panier';
-$string['clicktomove'] = 'Cliquer pour déplacer ici';
-$string['clipboard'] = 'Coller cet élément';
-$string['confirm_backup'] = 'Voulez-vous vraiment copier cet élément dans le panier d’activités ?';
-$string['confirm_backup_section'] = 'Voulez-vous copier cette section de cours et ses ressources / activités dans le panier d’activités ?';
-$string['confirm_delete'] = 'Voulez-vous vraiment supprimer cet élément ?';
-$string['confirm_delete_selected'] = 'Voulez-vous vraiment supprimer tous les éléments sélectionnés ?';
-$string['confirm_restore'] = 'Voulez-vous vraiment coller cet élément dans le cours ?';
-$string['confirm_userdata'] = 'Souhaitez-vous inclure les données utilisateurs dans la copie de cette activité ?
-OK - Copier *avec* les données utilisateur
-Annuler - Copier *sans* les données utilisateur';
-$string['conflict_description'] = 'Voulez-vous écraser le titre de section du cours ?';
-$string['conflict_description_note'] = '* Les formats de résumé de section (couleur de police, images…) et paramètres de disponibilité seront écrasés après copie dans le cours.';
-$string['conflict_no_overwrite'] = 'Conserver le titre et paramètres de section actuel <strong>« {$a} »</strong>';
-$string['conflict_overwrite_title'] = 'Écraser le titre et paramètres de section par <strong>« {$a} »</strong>';
-$string['conflict_submit'] = 'Continuer';
-$string['copy_activity'] = 'Copier l’activité';
-$string['copy_activity_reason'] = 'Cette vue est accessible parce que vous avez accès à la sauvegarde d’activités mais pas à la gestion/déplacement des activités.';
-$string['copy_activity_title'] = 'Copier l’activité sélectionnée';
+$string['anonymize_user_data'] = 'Souhaitez-vous anonymiser les données utilisateur ?';
+$string['atleast_one_course_module_must_be_included'] = 'Au moins un module de cours doit être inclus, veuillez sélectionner au moins un module de cours à inclure.';
+$string['backup'] = 'Sauvegarder';
+$string['backup_failed'] = 'La sauvegarde a échoué. Vous pouvez supprimer l’élément du panier d’activités et essayer à nouveau.';
+$string['backup_item'] = 'Sauvegarder l’élément';
+$string['backup_settings'] = 'Paramètres de sauvegarde';
+$string['backup_without_user_data'] = 'Sauvegarder sans les données utilisateur';
+$string['bulk_delete'] = 'Suppression en masse';
+$string['cancel_bulk_delete'] = 'Annuler';
+$string['confirm_copy_item'] = 'Voulez-vous vraiment copier cet élément ?';
+$string['confirm_copy_item_form_text'] = 'Voulez-vous vraiment copier cet élément ? Vous pouvez sélectionner ci-dessous les éléments à inclure dans la copie.';
+$string['confirm_delete_item'] = 'Voulez-vous vraiment supprimer cet élément ? Tous les sous-éléments seront également supprimés.';
+$string['confirm_delete_items'] = 'Voulez-vous vraiment supprimer ces éléments ? Tous les sous-éléments seront également supprimés.';
+$string['copy_item'] = 'Copier l’élément';
 $string['copy_section'] = 'Copier la section';
-$string['copy_section_title'] = 'Copier la section sélectionnée';
-$string['copyhere'] = 'Coller ici';
-$string['define_required_capabilities'] = 'Veuillez définir les capacités requises';
-$string['delete_folder'] = 'et tout son contenu';
-$string['drop_here'] = 'Déposer ici..';
-$string['folder_string'] = 'Dossier :';
-$string['forbidden'] = 'Vous n’avez pas l’autorisation d’accéder à cet élément';
-$string['inprogess_pleasewait'] = 'Veuillez patienter…';
-$string['invalidoperation'] = 'Une opération non valide a été détectée';
-$string['label_image_replaced_text'] = '(Étiquette : Image)';
-$string['missing_capabilities'] = 'Capacités requises manquantes : {$a}';
-$string['missing_capability'] = 'Capacité requise manquante : {$a}';
-$string['modal_bulkdelete_confirm'] = 'Supprimer la sélection';
-$string['modal_bulkdelete_title'] = 'Voulez-vous vraiment supprimer ?';
-$string['modal_checkbox'] = 'Voulez-vous copier les données utilisateur ? (Ex. données de glossaire/wiki/bases de données)';
-$string['modal_checkbox_anonymize'] = 'Anonymiser les données des utilisateurs ?';
-$string['modal_confirm_backup'] = 'Confirmer';
-$string['modal_confirm_delete'] = 'Supprimer';
-$string['movedir'] = 'Déplacer dans un dossier';
-$string['no_backup_support'] = 'Le support de la sauvegarde n’est pas géré pour cet élément';
-$string['notarget'] = 'Cible non trouvée';
+$string['copy_this_course'] = 'Copier ce cours';
+$string['copy_user_data'] = 'Voulez-vous copier les données utilisateur (par exemple les contributions de glossaire, wiki, base de données) ?';
+$string['copying_this_item'] = 'Copie de l’élément';
+$string['delete_item'] = 'Supprimer l’élément';
+$string['delete_items'] = 'Supprimer les éléments';
+$string['delete_marked_items'] = 'Supprimer les éléments cochés';
+$string['deselect_all'] = 'Tout désélectionner';
+$string['drop_here'] = 'Déposer ici…';
+$string['into_section'] = 'dans la section';
+$string['into_sharing_cart'] = 'dans le panier d’activités';
+$string['items'] = 'Éléments';
+$string['legacy_section_info'] = 'Cette section est d’un type obsolète. Le panier d’activités ne peut la copier, mais ses activités sont toujours disponibles individuellement.';
+$string['maybe_the_queue_is_stuck'] = 'Si vous souhaitez exécuter la restauration maintenant, cliquez sur le bouton ci-dessus.';
+$string['module_is_disabled_on_site'] = 'Cette activité a été désactivée sur le site, vous ne pourrez pas la restaurer.';
+$string['no_course_modules_in_section'] = 'Aucune activité de cours dans cette section';
+$string['no_course_modules_in_section_description'] = 'Cette section ne contient aucune activité de cours, par conséquent vous ne pouvez pas la copier.';
+$string['no_items'] = 'Aucun élément.<br>
+<br>
+Glissez et déposez des activités ou sections dans le panier d’activités ou cliquez sur l’icône <i class="fa fa-shopping-basket"></i> pour ajouter des éléments au panier d’activités.';
+$string['no_restores'] = '<div class="no-restores text-muted">Aucune restauration en cours.<br>
+<br>
+Cliquez sur l’icône <i class="fa fa-clone"></i> pour ajouter des éléments du panier d’activités au cours.</div>';
+$string['original_course'] = 'Cours original :';
 $string['pluginname'] = 'Panier d’activités';
-$string['privacy:metadata:block_sharing_cart'] = 'Les données du panier d’activités sont stockées ici';
-$string['privacy:metadata:block_sharing_cart:ctime'] = 'Heure de création';
-$string['privacy:metadata:block_sharing_cart:modicon'] = 'Icône du module d’activité';
-$string['privacy:metadata:block_sharing_cart:modname'] = 'Le nom du module d’activité';
-$string['privacy:metadata:block_sharing_cart:modtext'] = 'Le titre du module d’activité';
-$string['privacy:metadata:block_sharing_cart:tree'] = 'Le titre du dossier du panier d’activités qui s’affiche dans le bloc';
-$string['privacy:metadata:block_sharing_cart:userid'] = 'L’identifiant de l’utilisateur';
-$string['privacy:metadata:block_sharing_cart:weight'] = 'Ordre des éléments, tri par ordre croissant';
-$string['privacy:metadata:block_sharing_cart_plugins'] = 'Les données des plugins de panier d’activités sont stockées ici';
-$string['privacy:metadata:block_sharing_cart_plugins:data'] = 'Données des plugins de panier d’activités';
-$string['privacy:metadata:block_sharing_cart_plugins:plugin'] = 'Le nom du plugin';
-$string['privacy:metadata:block_sharing_cart_plugins:userid'] = 'L’identifiant de l’utilisateur';
-$string['recordnotfound'] = 'Impossible de trouver l’élément';
-$string['requireajax'] = 'Le panier d’activités nécessite l’activation d’AJAX';
-$string['requirejs'] = 'Le panier d’activités nécessite l’activation de JavaScript dans votre navigateur';
-$string['restore'] = 'Coller dans le cours';
-$string['restore_heavy_load_warning_message'] = 'Les durées de chargement sont plus longues, car plus de 10 activités / ressources sont en cours de traitement.';
-$string['section_name_conflict'] = 'Conflit de titre de section';
-$string['settings:add_to_sharing_cart'] = 'Ajouter au panier partagé';
-$string['settings:add_to_sharing_cart_desc'] = 'Choisissez entre le glisser-déposer ou cliquez pour ajouter une méthode pour ajouter des modules et des sections au panier de partage. -
-La méthode « Cliquer pour ajouter » est la méthode standard dans le panier partagé, où vous devez cliquer sur l’icône du panier, avant qu’il ne soit ajouté au panier de partage. -
-Le « Glisser-déposer » vous permet de glisser-déposer des modules/activités et sections dans le bloc du panier de partage ou dans l’icône du panier dans le pied de page. Veuillez noter que ceci n’est pris en charge que pour Moodle 4.0+';
-$string['settings:backup_mode'] = 'Mode de sauvegarde';
-$string['settings:backup_mode_desc'] = 'Choisissez entre un processus de sauvegarde immédiat ou asynchrone';
-$string['settings:backup_restore_mode_async'] = 'Asynchrone';
-$string['settings:backup_restore_mode_immediate'] = 'Immédiat';
-$string['settings:click_to_add'] = 'Cliquez pour ajouter';
-$string['settings:drag_and_drop'] = 'Glisser déposer';
-$string['settings:restore_mode'] = 'Mode de restauration';
-$string['settings:restore_mode_desc'] = 'Choisissez entre un processus de restauration immédiat ou asynchrone';
-$string['settings:show_copy_activity_in_block'] = 'Afficher « Copier l’activité » dans le bloc';
-$string['settings:show_copy_activity_in_block_desc'] = 'Afficher « Copier l’activité » dans le bloc du panier partagé, sous tous les modules/activités - Seulement disponible si l’utilisateur a la capacité de sauvegarder des activités mais pas de gérer/déplacer des activités';
+$string['privacy:metadata:sharing_cart_items:file_id'] = 'L’ID du fichier de restauration';
+$string['privacy:metadata:sharing_cart_items:name'] = 'Le nom de l’élément';
+$string['privacy:metadata:sharing_cart_items:old_instance_id'] = 'L’ID de l’ancienne version de l’élément';
+$string['privacy:metadata:sharing_cart_items:original_course_fullname'] = 'Le nom complet de cours original';
+$string['privacy:metadata:sharing_cart_items:parent_item_id'] = 'L’ID de l’élément parent de cet élément';
+$string['privacy:metadata:sharing_cart_items:sortorder'] = 'L’ordre de tri de l’élément';
+$string['privacy:metadata:sharing_cart_items:status'] = 'Le statut de l’élément';
+$string['privacy:metadata:sharing_cart_items:tabledesc'] = 'La table stockant les éléments du panier d’activités';
+$string['privacy:metadata:sharing_cart_items:timecreated'] = 'La date et heure à laquelle l’élément a été créé';
+$string['privacy:metadata:sharing_cart_items:timemodified'] = 'La date et heure à laquelle l’élément a été modifié';
+$string['privacy:metadata:sharing_cart_items:type'] = 'Le type d’élément';
+$string['privacy:metadata:sharing_cart_items:user_id'] = 'L’ID utilisateur à qui appartient l’élément';
+$string['rename_item'] = 'Renommer l’élément';
+$string['restore_failed'] = 'La restauration a échoué (ID de tâche : {$a}). Ce message disparaîtra après un certain temps.';
+$string['restores'] = 'Restaurations';
+$string['run_now'] = 'Exécuter maintenant';
+$string['select_all'] = 'Tout sélectionner';
 $string['settings:show_copy_section_in_block'] = 'Afficher « Copier la section » dans le bloc';
 $string['settings:show_copy_section_in_block_desc'] = 'Afficher « Copier la section » dans le bloc du panier partagé, sous tous les modules/activités';
-$string['settings:userdata_copyable_modtypes'] = 'Type de module avec données utilisateur copiables';
-$string['settings:userdata_copyable_modtypes_desc'] = 'Lors de la copie d’une activité dans le panier d’activités, une boîte de dialogue affiche une option si une copie d’une activité comprend les données utilisateur ou non, si ce type de module est coché ci-dessus et qu’un opérateur a les capacités <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> et <strong>moodle/restore:userinfo</strong> (par défaut, seul le rôle de gestionnaire a ces capacités.)';
-$string['settings:workaround_qtypes'] = 'Solution pour les types de questions';
-$string['settings:workaround_qtypes_desc'] = 'La solution pour la restauration de question sera effectuée si son type de question est cochée.
-Cependant, lorsque les questions à restaurer existent déjà, ces données seront incompatibles, cette solution de contournement va essayer de faire un autre doublon au lieu de réutiliser les données existantes.
-Cette solution peut être utile pour éviter certaines erreurs de restauration, telles que <i>error_question_match_sub_missing_in_db</i>.';
-$string['sharing_cart'] = 'Panier d’activités';
+$string['settings:show_sharing_cart_basket'] = 'Afficher le panier d’activités';
+$string['settings:show_sharing_cart_basket_desc'] = 'Afficher le panier d’activés sur la page du cours en mode édition. Cela permet aux utilisateurs de cliquer et copier les activités et sections dans le panier d’activités. Si vous cachez le panier, les utilisateurs ont toujours la possibilité de glisser et déposer les activités et sections dans le panier d’activités.';
 $string['sharing_cart:addinstance'] = 'Ajouter un bloc panier d’activités';
-$string['sharing_cart_help'] = '<div>
- <strong>Copier un élément du cours vers le panier d’activités</strong>
-<p>Dans le menu contextuel de l’activité ou de la ressource, vous verrez apparaitre la fonction "Copier dans le panier d’activités".  Cliquez sur cette fonction pour envoyer une copie de la ressource/activité vers le panier d’activités. L’élément sera copié dans le panier. Suivant le type d’élément copié, il vous sera parfois demandé si vous souhaitez y inclure les données utilisateurs. L’élément sera copié avec ou sans données utilisateurs.</p>
- <strong>Coller un élément du panier d’activités vers le cours  </strong>
-<p>Depuis le bloc panier d’activités, cliquez sur l’icône "Coller dans le cours" de l’activité/ressource souhaitée et indiquez sur quelle section vous souhaitez coller l’élément. Pour annuler la copie, cliquez sur l’icône "Annuler" dans l’en-tête du cours.</p>
-<strong>Créer des répertoires au sein du panier d’activités</strong>
-<p>Cliquez sur l’icône "Déplacer dans un dossier" de l’élément que vous souhaitez déplacer.  Si vous n’avez pas de dossier sur le panier, vous serez invité à saisir le nom du nouveau dossier à créer.  Si vous avez déjà des dossiers sur votre panier, vous pouvez sélectionner un dossier existant dans la liste déroulante.   Pour basculer sur le champ de saisie d’un nouveau nom de dossier, cliquez sur l’icône "Modifier".</p>
-</div>';
-$string['unexpectederror'] = 'Une erreur inattendue est survenue';
-$string['uninstalled_plugin_warning_title'] = 'Ce plugin est désinstallé. Essayer de récupérer cela sans réinstaller le plugin : {$a} provoquera des erreurs. La restauration est désactivée';
-$string['variouscourse'] = 'de différents cours';
+$string['you_may_need_to_reload_the_course_warning'] = 'Élément(s) inséré(s). Il peut-être nécessaire de rafraîchir la page du cours pour constater les modifications apportées.';

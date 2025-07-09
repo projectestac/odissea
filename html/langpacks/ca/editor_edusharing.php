@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['floatNone'] = 'Cap';
 $string['search'] = 'Cerca';
 $string['yes'] = 'Sí';

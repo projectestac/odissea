@@ -137,3 +137,6 @@ $string['report_normal'] = 'Resum de resultats';
 /* Revision Moodle 3.1 */
 $string['jclicjs'] = 'URL del fitxer jclic.js';
 $string['jclicjs_help'] = 'URL on es cercarà el fitxer jclic.js necessari perquè funcioni el player no-Java.';
+
+/* Revision Moodle 4.5 */
+$string['grade'] = 'Qualificació';

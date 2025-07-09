@@ -34,12 +34,34 @@ $string['addarule'] = 'Gehitu arau bat';
 $string['addinstructions'] = 'Gehitu informazio gehiago';
 $string['additionalresources'] = 'Baliabide gehigarriak';
 $string['addlevel'] = 'Gehitu maila';
+$string['addondeactivated'] = 'XP+ desgaituta';
+$string['addondeactivatedinfo'] = 'XP pluginen bertsioak ez dira elkarrekiko bateragarriak, eta ondorioz XP+ plugina desgaitua izan da. Maila gora! XP+-eko (local_xp) {$a->localxpversion} bertsioa espero da.';
 $string['addoninstallationerror'] = 'Pluginarekin (block_xp) arazo bat dagoela antzeman dugu, badirudi ez dagoela ondo instalatuta. Kudeatzaile batek instalazioa amaitu beharko luke.';
 $string['addonnotactivated'] = 'Gehigarria ez dago gaituta.';
 $string['addrulesformhelp'] = 'Azken zutabeak irizpidea betetzen denean irabazten diren esperientzia-puntuak zehazten du.';
 $string['admindefaultrulesintro'] = 'Hurrengo arauak lehenetsitako gisa erabiliko dira blokea ikastaro batean gehitzen denean.';
 $string['admindefaultsettingsintro'] = 'Azpiko ezarpenak lehenetsitako gisa erabiliko dira blokea ikastaro batean gehitzen denean. Ezarpen batzuk blokeatu daitezke, eta horrela pluginaren instantzia guztiak balio horiek erabiltzera behartuko dira.';
 $string['admindefaultvisualsintro'] = 'Hurrengoak lehenetsitako gisa erabiliko dira blokea ikastaro batean gehitzen denean.';
+$string['adminnoticeaddondeactivatedmessage'] = 'Maila gora XP+ desgaitua izan da!
+
+Mezu hau jaso duzu arazo potentzialak ekiditeko Maila Gora XP+ plugina desgaitu delako. Maila Gora XP (block_xp) eta Maila gora XP+ (local_xp) pluginak une honetan elkarrekiko bateraezinak dira. Arazo hau gertatzen da XP bertsio berriago batera eguneratu den bitartean XP+ eguneratu gabe geratu denean.
+
+Sinkronizazio falta honek funtzionalitate galera, arazoak eta bestelako ezusteko ondorioak izan ditzake. Arazo hau konpontzeko, Maila Gora XP+ eguneratu beharko duzu.
+
+- Maila Gora XP (block_xp) bertsioa: {$a->blockxpversion}
+- Maila Gora XP+ (local_xp) bertsioa: {$a->localxpversion}
+- Maila Gora XP+ esperotako bertsioa: {$a->localxpversionexpected}
+
+Baliabide gehigarriak:
+
+- [Eguneratze dokumentazioa](https://docs.levelup.plus/xp/docs/upgrade)
+- [XP+ desgaituta dokumentazioa](https://docs.levelup.plus/xp/docs/addon-deactivated)
+- [Bateragarritasun dokumentazioa](https://docs.levelup.plus/xp/docs/requirements-compatibility)
+
+--
+
+Jakinarazpen hau kudeatzaile guztiei bidali zaie. Kudeatzaile jakinarazpen guztiak desgaitzeko, joan Maila Gora XP pluginaren kudeaketa-ezarpenetara.';
+$string['adminnoticeaddondeactivatedsubject'] = 'XP+ plugina desgaituta!';
 $string['adminnoticeoutofsyncmessage'] = 'Maila gora XP eta Maila gora XP+ arteko bateraezintasun abisua!
 
 Mezu hau jaso duzu Maila Gora XP (block_xp) eta Maila gora XP+ (local_xp) pluginak une honetan "sinkronizatu gabe" daudelako eta elkarrekiko bateraezinak direlako. Arazo hau gertatzen da XP bertsio berriago batera eguneratu den bitartean XP+ eguneratu gabe geratu denean.
@@ -79,7 +101,9 @@ $string['basexp'] = 'Algoritmoaren oinarria';
 $string['blockappearance'] = 'Blokearen itxura';
 $string['blockappearancemovedtopluginsettings'] = 'Blokearen itxuraren ezarpenak pluginaren ezarpen-orrira mugitu dira.';
 $string['cachedef_filters'] = 'Mailen iragazkiak';
+$string['cachedef_metadata'] = 'Metadatuak';
 $string['cachedef_ruleevent_eventslist'] = 'Ekitaldi batzuen zerrenda';
+$string['canjoinfromdatex'] = '{$a}(e)tik aurrera bat egin ahalko duzu.';
 $string['cannotbesetindefaults'] = 'Hau ezin da lehenetsitako balioetan zehaztu.';
 $string['cannotearnpoints'] = 'Ezin du punturik lortu.';
 $string['cannotshowblockconfig'] = 'Normalean hemen itxuraren ezarpenak erakutsiko lirateke, baina ezin izan da zure blokea aurkitu. Blokearen itxura aldatzeko, itzuli [hona]({$a}) (edo blokea gehitu zenuen lekura), edizioa aktibatu ezazu, eta egin klik blokearen menuko "Konfiguratu" aukeran. Ezin baduzu blokea aurkitu, zure ikastaroan berriz gehitu ezazu.';
@@ -90,12 +114,14 @@ $string['changetocourse'] = 'Aldatu ikastaro honetara:';
 $string['changetositewide'] = 'Itzuli gune mailara';
 $string['cheatguard'] = 'Kopiatzearen kontrako babesa';
 $string['cheatguardsettingsmovednotice'] = 'Kopiatzearen kontrako babesaren ezarpenak [ekitaldi-arauen orrira]({$a->url}) mugitu dira.';
+$string['checkaddoncompatibility'] = 'Maila Gora XP gehigarrien bategarritasuna';
 $string['chooseacondition'] = 'Aukeratu baldintza bat';
 $string['clearfilter'] = 'Garbitu iragazkia';
 $string['clicktoselectcm'] = 'Egin klik jarduera edo baliabidea aukeratzeko';
 $string['cmselector'] = 'Ikastaro-moduluen hautatzailea';
 $string['coefxp'] = 'Algoritmoaren koefizientea';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['comparisonmethod'] = 'Konparaketa metodoa';
 $string['compatibilitycheck'] = 'Bateragarritasun egiaztapena';
 $string['completionrules'] = 'Osatze arauak';
 $string['completionrules_help'] = 'Osatze arauak hiru kategoriatan banatuta daude: jarduera osaketa, atal osaketa eta ikastaro osaketa. Kategorietan baldintzak gehituta puntuak noiz eta nola banatuko diren zehaztuko da.
@@ -197,6 +223,8 @@ $string['enablexpgain_help'] = '\'Ez\' aukeratuz gero, ikastaroan inork ez du pu
 
 Kontuan izan aukera hau zehatzago kontrolatu daitekeela _block/xp:earnxp_ gaitasuna erabilita.';
 $string['entersearchterm'] = 'Idatzi bilatu beharreko terminoa';
+$string['envcheckaddonincompatibilitymessage'] = 'Maila gora XP+ plugina (local_xp) ez da bateragarria Maila gora XP pluginarekin (block_xp). Ondorioz Maila gora XP+ plugina desgaitu da. Arazo hau saihesteko, bi pluginak eguneratu itzazu. Informazio gehiagorako, joan https://docs.levelup.plus/xp/docs/compatibility orrira.';
+$string['erroraddondeactivated'] = 'Maila gora XP+ desgaitua izan da. Informazio gehiagorako irakurri [dokumentazioa]({$a->docsurl}).';
 $string['errorcontextcoursemismatchforwholesite'] = '<em>Maila gora XP</em> pluginaren orri honen URLa ez dator bat pluginaren oraingo konfigurazioarekin. Zure oraingo konfigurazioak <em>Maila gora XP</em> plugina \'Gune mailan\' erabiliko dela zehazten du, baina orri hau \'Ikastaro bakoitzean\' erabiltzea espero da. <a href="{$a->nexturl}">Egin klik hemen</a> mesedez orri zuzenera nabigatzeko. Bilatu ezazu \'block_xp_context\' konfigurazio-ezarpena konfigurazio hau aldatu nahi baduzu.';
 $string['errorcontextcoursemismatchpercourse'] = '<em>Maila gora XP</em> pluginaren orri honen URLa ez dator bat pluginaren oraingo konfigurazioarekin. Zure oraingo konfigurazioak <em>Maila gora XP</em> plugina \'Ikastaro bakoitzean\' erabiliko dela zehazten du, baina orri hau \'Gune mailan\' erabiltzea espero da. Hau ziur aski konfigurazio ezberdin bat zegoenean aginte-panelean edo hasiera-orrian gehitutako <em>bloke</em> batek eragingo zuen. Esandako orri horietatik blokea kendu beharko zenuke, eta blokea banakako ikastaroetan soilik erabili.';
 $string['errorformvalues'] = 'Arazo batzuk daude formularioko balioetan, konpondu itzazu mesedez.';
@@ -271,6 +299,12 @@ $string['installed'] = 'Instalatuta';
 $string['instructions'] = 'Argibideak';
 $string['instructions_help'] = 'Argibideak informazio-orrian erakutsiko dira. Argibideak informazioa partekatzeko eta mailen inguruko azalpenak emateko erabili ditzakezu, esaterako puntuak nola lortzen diren.';
 $string['invalidxp'] = 'Balio-puntu baliobageak';
+$string['join'] = 'Batu';
+$string['joinleadeboardconfirmnote'] = 'Primeran, pozik gaude zu taldean izateaz!
+
+Kontuan izan mesedez batu ondoren iritziz aldatzen baduzu itxaron-epe bat dagoela lider-panela utzi ahal izateko.';
+$string['joinleadeboardlockednote'] = 'Ezin duzu lider-panelera batu.';
+$string['joinleaderboard'] = 'Batu lider-panelera';
 $string['keeplogs'] = 'Gorde erregistroak';
 $string['ladder'] = 'Lider-panela';
 $string['ladder_help'] = 'Lider-panelak ikasleak euren puntuazioaren arabera sailkatzen ditu. Taldeak dituen ikastaro batean erabiltzen denean, talde bakoitzarentzako lider-panel bana sortu lezake.
@@ -289,8 +323,30 @@ $string['ladderiso_help'] = 'Partaide-multzo ezberdinentzako banatutako lider-pa
 [Informazio gehiago](https://docs.levelup.plus/xp/docs/leaderboard-isolation)';
 $string['ladderisocohorts'] = 'Kohorteak erabilita';
 $string['ladderisodefault'] = 'Lehenetsia (talde-modua)';
+$string['ladderparticipation'] = 'Partaidetza';
+$string['ladderparticipation_help'] = 'Partaideek lider-panelean parte hartu behar duten zehazten du, baita bertara batu ala irteteko aukera izango duten.
+
+- Automatikoa, ez dago ateratzeko aukerarik
+- Automatikoa, ateratzeko aukerarekin
+- Aukerazkoa, nahi duenak batu ahal du
+
+Erabiltzaileek lider-panelera batu ala bertatik ateratzea erabaki ondoren iritziz aldatu dezakete. Dena den, ezusteko portaerak ekidite aldera, lider-panelera batzen diren erabiltzaileek 3 egunez ezingo dute berriz atera.
+
+[Informazio gehiago](https://docs.levelup.plus/xp/docs/leaderboard-opt-out)';
+$string['ladderparticipationforced'] = 'Automatikoa, ez dago ateratzeko aukerarik';
+$string['ladderparticipationoptin'] = 'Aukerazkoa, nahi duenak batu ahal du';
+$string['ladderparticipationoptout'] = 'Automatikoa, ateratzeko aukerarekin';
+$string['ladderparticipationreset'] = 'Kendu gordetako partaidetza-egoera guztiak.';
+$string['ladderparticipationreset_help'] = 'Markatuz gero, erabiltzaile guztien partaidetza-egoerak ezabatuko dira, eta beraz erabiltzaileek berriro batu/atera beharko dute.';
 $string['laddersettingsmovednotice'] = 'Lider-panelaren ezarpenak [lider-panelaren orrira]({$a->url}) mugitu dira.';
 $string['learnmore'] = 'Ikasi gehiago';
+$string['leave'] = 'Utzi';
+$string['leaveleadeboardconfirmnote'] = 'Ziur zaude lider-panela utzi nahi duzula?
+
+Ateratzen zarenean ezingo dituzu lider-paneleko puntuazioak ikusi, baina iritziz aldatuz gero berriro batua ahalko duzu.';
+$string['leaveleadeboardlockednote'] = 'Ezin duzu lider-panela utzi.';
+$string['leaveleadeboardlockeduntilnote'] = 'Ezin duzu lider-panela utzi {$a}(e)ra arte.';
+$string['leaveleaderboard'] = 'Utzi lider-panela';
 $string['level'] = 'Maila';
 $string['levelbadge'] = 'Mailaren domina';
 $string['levelbadges'] = 'Mailen dominak';
@@ -316,7 +372,7 @@ $string['levelup'] = 'Maila gora!';
 $string['levelupoptionsunavailableforlevelone'] = 'Maila bat eskuratzeko aukerak desgaituta daude lehen mailarako.';
 $string['levelupplus'] = 'Maila gora XP+';
 $string['levelx'] = '{$a}. maila';
-$string['likenotice'] = '<strong>Plugin hau gustoko duzu?</strong> Hartu mesedez tarte bat Moodle.org-ko <a href="{$a->moodleorg}" target="_blank">zure gogokoetara gehitzeko</a> eta <a href="{$a->github}" target="_blank">izarra emateko GitHub-en</a>.';
+$string['likenotice'] = 'Maila gora XP gustuko duzu? Hartu mesedez tarte bat Moodle.org-ko <a href="{$a->moodleorg}" target="_blank">zure plugin gogokoetara gehitzeko</a>.';
 $string['limitparticipants'] = 'Mugatu partaideak';
 $string['limitparticipants_help'] = 'Ezarpen honek lider-panelean nori erakusten zaion kontrolatzen du. Aldamenekoak rankingean uneko erabiltzailearen gainetik eta azpitik dauden partaideak dira. Esaterako, \'Erakutsi 2 aldameneko\' aukeratuta soilik uneko erabiltzailearen rankingeko aurreko eta hurrengo partaideak erakutsiko dira.';
 $string['list'] = 'Zerrenda';
@@ -351,6 +407,7 @@ $string['navreport'] = 'Txostena';
 $string['navrules'] = 'Arauak';
 $string['navsettings'] = 'Ezarpenak';
 $string['navvisuals'] = 'Itxura';
+$string['newversioninstallednotice'] = 'Bertsio berri bat instalatu da! Ezagutu berrikuntzak [kaleratze-oharretan]({$a->releasenotesurl}).';
 $string['nextlevelin'] = 'hurrengo mailarako';
 $string['noconditionsyet'] = 'Oraindik ez dago baldintzarik!';
 $string['noconditionsyetintro'] = 'Baldintza bat gehituta hasi zaitez.';
@@ -362,8 +419,11 @@ $string['noneareavailable'] = 'Bat ere ez dago eskuragarri';
 $string['notecompatibilityissues'] = 'Kontuan izan behean identifikatutako bateragarritasun-arazoak:';
 $string['notesomesettingslocked'] = 'Kontuan izan balitekeela ezarpen batzuk ezin editatzea kudeatzaile batek blokeatu izan baditu.';
 $string['nothingmatchesfilter'] = 'Ez dago iragazkiarekin bat datorren ezer.';
+$string['notparticipating'] = 'Ez du parte hartzen';
+$string['notranked'] = 'Puntuaziorik ez';
 $string['numberoflevels'] = 'Maila kopurua';
 $string['occasionally'] = 'Noizean behin';
+$string['onlyparticipantscanaccessranking'] = 'Soilik lider-panelean dauden kideek dute puntuazioetarako sarbidea.';
 $string['outofsync'] = 'XP pluginen bateraezintasuna';
 $string['outofsyncexcessive'] = 'Gehiegizko desinkronizazioa';
 $string['outofsyncexcessiveinfo'] = 'XP+ XP baino askoz zaharragoa da eta horrek ezusteko arazoak ekar ditzake. Etorkizunean XP+ automatikoki desgaituko da.';
@@ -373,7 +433,10 @@ $string['pagecurrentvisibletoviewers'] = 'Orri hau ikasleentzat ikusgai dago une
 $string['pagesettings'] = 'Orriaren ezarpenak';
 $string['participant'] = 'Partaidea';
 $string['participants'] = 'Partaideak';
+$string['participatesinleaderboard'] = 'Lider-panelean parte hartzen du.';
+$string['participatesnotinleaderboard'] = 'Ez du lider-panelean parte hartzen.';
 $string['participatetolevelup'] = 'Ikastaroan parte hartu ezazu puntuak irabazi eta mailaz igotzeko!';
+$string['participating'] = 'Parte hartzen';
 $string['perpagecolon'] = 'Orri bakoitzeko:';
 $string['pickaconditiontype'] = 'Aukeratu baldintza-mota';
 $string['pluginavailabilityxpdesc'] = 'Plugin honek irakasleari jardueren eskuragarritasuna ikaslearen mailaren arabera murrizteko aukera ematen du.';
@@ -428,9 +491,13 @@ $string['property:component'] = 'Ekitaldiaren osagaia';
 $string['property:crud'] = 'Ekitaldiaren CRUDa';
 $string['property:eventname'] = 'Ekitaldiaren izena';
 $string['property:target'] = 'Ekitaldiaren helburua';
-$string['questreleasenotice'] = '🎉 Pozik gaude **Maila Gora Bilaketa (Level Up Quest)** izeneko gure **gamifikazio plugin berria** iragarrita 🥳. Bihurtu itzazu zure ikastaroak **abentura zirraragarri**, **berrengaiatze estrategiez** eta **ospakizunez** betez 🤯! Ezagutu ezazu [Level Up Quest-en webgunea]({$a->questurl}) eta gure [iragartze-mezua hemen]({$a->questblogurl}). 👈';
+$string['provisionstates'] = 'Erabiltzaile-hornikuntza automatikoa';
+$string['provisionstates_desc'] = 'Modu lehenetsian, erabiltzaileak XP-k antzeman ondoren soilik agertuko dira lider-panelean (eta gune mailako txostenean). Erabiltzaile-hornikuntza funtzio aurreratu bat da falta diren erabiltzaileen erregistroak euren rolaren arabera automatikoki sortzen dituena. Lan hau programatutako ataza baten bitartez periodikoki egiten da, egunean behin modu lehenetsian. [Ikasi gehiago](https://docs.levelup.plus/xp/docs/automatic-user-provisioning)';
+$string['questpromonotice'] = 'Eraman gamifikazioa hurrengo mailara, ezagutu [Maila Gora Bilaketa (Level Up Quest)]({$a->questurl}).';
+$string['questreleasenotice'] = 'Eraman gamifikazioa hurrengo mailara, ezagutu **Maila Gora Bilaketa (Level Up Quest)** 🥳. Bihurtu itzazu zure ikastaroak **abentura zirraragarri**, **berrengaiatze estrategiez** eta **ospakizunez** betez 🤯! Ezagutu ezazu [Level Up Quest-en webgunea]({$a->questurl}) eta gure [iragartze-mezua hemen]({$a->questblogurl}). 👈';
 $string['quickeditpoints'] = 'Puntuen editatze azkarra';
 $string['rank'] = 'Rankinga';
+$string['ranked'] = 'Puntuatuta';
 $string['ranking'] = 'Rankinga';
 $string['ranking_help'] = 'Rankinga oraingo erabiltzaileak lider-panelean duen kokapen absolutua da. Ranking erlatiboa erabiltzailearen esperientzia-puntuen eta bere aldamenekoen arteko diferentzia da.';
 $string['reallydeleteuserstate'] = 'Erabiltzaile bat ezabatzea lider-paneletik kentzeko soilik da erabilgarria. Beste edozein arrazoietarako, horren ordez bere puntuak 0ra aldatzea gomendatzen dugu. Kontuan izan erabiltzaileak ezabatzeak ez duela etorkizunean puntuak lortzeko gaitasunean eragiten.
@@ -468,6 +535,7 @@ $string['resetallcoursestodefaultsintro'] = 'Egin klik azpiko botoian ikastaro g
 $string['resetcoursedata'] = 'Berrabiarazi ikastaroko datuak';
 $string['resetcourserulestodefaults'] = 'Berrabiarazi ikastaroko arauak lehenetsitako balioetara';
 $string['resetgroupdata'] = 'Berrabiarazi taldeko datuak';
+$string['resetladderparticiptionofeveryone'] = 'Berrabiarazi partaide guztien partaidetza-egoera';
 $string['resetlevelstodefaults'] = 'Berrabiarazi mailak lehenetsitako balioetara';
 $string['resettodefaults'] = 'Berrabiarazi lehenetsitako balioetara';
 $string['resetvisualstodefaults'] = 'Berrabiarazi mailen itxura lehenetsitako balioetara';
@@ -630,6 +698,7 @@ $string['someoneelse'] = 'Beste norbait';
 $string['somethinghappened'] = 'Zerbait gertatu da';
 $string['taskadminnotices'] = 'Kudeatzaileen jakinarazpenak';
 $string['taskcollectionloggerpurge'] = 'Garbitu bildutako erregistroak';
+$string['taskstateprovisioner'] = 'Egoera-hornitzailea';
 $string['taskusagereport'] = 'Erabilera txostena';
 $string['teamleaderboard'] = 'Taldearen lider-panela';
 $string['teamleaderboard_help'] = 'Taldearen lider-panelak taldeko kideen lortutako puntuazioaren araberako sailkapena erakusten du.
@@ -672,6 +741,10 @@ $string['usagereport_desc'] = 'Aldizka partekatu pluginaren garatzaileekin erabi
 $string['usealgo'] = 'Erabili algoritmoa';
 $string['usecustomlevelbadges'] = 'Erabili mailen domina pertsonalizatuak';
 $string['usecustomlevelbadges_help'] = '\'Bai\' aukeratuz gero, maila bakoitzarentzako irudi bana eman beharko duzu.';
+$string['userladderparticipation'] = 'Lider-paneleko partaidetza';
+$string['userladderparticipation_help'] = 'Erabiltzailea lider-panelean parte hartzen duen ala ez zehazten du. Honek ez dio taldekako lider-panelari eragiten.';
+$string['userladderparticipationlocked'] = 'Blokeatu partaidetza data honetara arte:';
+$string['userladderparticipationlocked_help'] = 'Erabiltzaileek data honetatik aurrea euren partaidetza-hobespenak aldatzeko aukera izango dute.';
 $string['usingalgo'] = 'Algoritmoa erabilita';
 $string['value'] = 'Balioa';
 $string['valuessaved'] = 'Balioak ondo gorde dira.';

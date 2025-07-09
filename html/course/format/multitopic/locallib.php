@@ -442,6 +442,9 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
  * @return string
  */
 function format_multitopic_image_attribution($imagename, $authorwithurl, $licencecode): string {
+    global $CFG;
+    require_once($CFG->libdir . '/licenselib.php');
+
     $o = '';
     $authorwithurlarray = explode('|', $authorwithurl ?? '');
     $authorhtml = $authorwithurlarray[0];
@@ -449,10 +452,10 @@ function format_multitopic_image_attribution($imagename, $authorwithurl, $licenc
         $authorurl = $authorwithurlarray[1];
         $authorhtml = \html_writer::tag('a', $authorhtml, ['href' => $authorurl, 'target' => '_blank']);
     }
-    $licencehtml = ($licencecode && $licencecode != 'unknown') ? get_string($licencecode, 'license') : '';
-    if ($licencehtml && substr($licencecode, 0 , 3) == 'cc-') { // TODO: Links to other licences? Make this into a list?
-        $licenceurl = 'https://creativecommons.org/licenses/by-' . substr($licencecode, 3, 5) . '/4.0';
-        $licencehtml = \html_writer::tag('a', $licencehtml, ['href' => $licenceurl, 'target' => '_blank']);
+    $licence = license_manager::get_licenses()[$licencecode] ?? null;
+    $licencehtml = ($licencecode && ($licencecode != 'unknown' && $licence)) ? $licence->fullname : '';
+    if ($licencehtml && $licence->source) {
+        $licencehtml = \html_writer::tag('a', $licencehtml, ['href' => $licence->source, 'target' => '_blank']);
     }
     $o .= \html_writer::tag('span', get_string('image', 'format_multitopic') . ": {$imagename}"
                             . (($authorhtml || $licencehtml) ? ',' : ''),

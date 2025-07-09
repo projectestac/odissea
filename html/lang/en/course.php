@@ -85,7 +85,6 @@ $string['customfield_visibility_help'] = 'This setting determines who can view t
 $string['customfield_visibletoall'] = 'Everyone';
 $string['customfield_visibletoteachers'] = 'Teachers';
 $string['customfieldsettings'] = 'Common course custom fields settings';
-$string['daystakingcourse'] = 'Days taking course';
 $string['defaultsettingscategory'] = 'Default settings';
 $string['downloadcourseconfirmation'] = 'You are about to download a zip file of course content (excluding items which cannot be downloaded and any files larger than {$a}).';
 $string['downloadcoursecontent'] = 'Download course content';
@@ -97,6 +96,10 @@ The setting has no effect on mobile app content download for offline usage.';
 $string['enabledownloadcoursecontent'] = 'Enable download course content';
 $string['errorendbeforestart'] = 'The end date ({$a}) is before the course start date.';
 $string['favourite'] = 'Starred course';
+$string['filterbothactive'] = 'First ({$a->first}) Last ({$a->last})';
+$string['filterbyname'] = 'Filter by name';
+$string['filterfirstactive'] = 'First ({$a->first})';
+$string['filterlastactive'] = 'Last ({$a->last})';
 $string['gradetopassnotset'] = 'This course does not have a grade to pass set. It may be set in the grade item of the course (Gradebook setup).';
 $string['hideendedcoursestask'] = 'Hide courses on end date';
 $string['informationformodule'] = 'Information about the {$a} activity';
@@ -167,3 +170,6 @@ $string['gotosection'] = 'Go to section {$a}';
 
 // Deprecated since Moodle 4.3.
 $string['aria:courseimage'] = 'Course image';
+
+// Deprecated since Moodle 4.5.
+$string['daystakingcourse'] = 'Days taking course';

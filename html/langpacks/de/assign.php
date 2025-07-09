@@ -197,6 +197,7 @@ $string['editsubmissionother'] = 'Abgabe bearbeiten für {$a}';
 $string['enabled'] = 'Aktiviert';
 $string['enabletimelimit'] = 'Zeitgesteuerte Aufgaben aktivieren';
 $string['enabletimelimit_help'] = 'Wenn diese Option aktiviert ist, können Sie auf der Seite mit den Aufgabeneinstellungen ein Zeitlimit festlegen.';
+$string['errorgradechangessaveddetail'] = 'Die Änderungen von Bewertungen und Feedback konnten nicht gespeichert werden.';
 $string['errornosubmissions'] = 'Keine Abgaben zum Herunterladen verfügbar';
 $string['errorquickgradingvsadvancedgrading'] = 'Die Aufgabe verwendet das erweiterte Bewertungsschema. Daher werden diese Bewertungen nun nicht abgespeichert.';
 $string['errorrecordmodified'] = 'Bevor Sie die Seite aufgerufen haben, hat jemand anders einen oder mehrere Daten geändert. Deswegen können Ihre Einträge nun nicht gespeichert werden.';
@@ -535,9 +536,7 @@ $string['submissioncopiedtext'] = 'Sie haben Ihre bisherige Aufgabenlösung für
 Sie können den Status der Aufgabenlösung sehen unter
     {$a->url}';
 $string['submissiondrafts'] = 'Abgabetaste muss gedrückt werden';
-$string['submissiondrafts_help'] = 'Diese Option legt fest, dass Teilnehmer/innen die Taste zum Abgeben klicken müssen, um ihre Einreichung als fertig zu deklarieren. Auf diese Weise können Aufgabenlösungen zunächst als Entwurf gespeichert und weiterhin überarbeitet werden.
-
-Wenn diese Einstellung von "Nein" in "Ja" geändert wird und Teilnehmer/innen bereits Entwürfe eingereicht haben, gelten diese Einreichungen als endgültig.';
+$string['submissiondrafts_help'] = 'Sollen Teilnehmer/innen über eine Taste zum Senden haben, die ihnen anzeigt, wenn sie mit den Änderungen an ihrer Aufgabenabgabe fertig sind und diese zur Bewertung bereit ist?';
 $string['submissioneditable'] = 'Teilnehmer/innen können die eingereichte Lösung bearbeiten';
 $string['submissionempty'] = 'Es wurde nichts eingereicht.';
 $string['submissionlog'] = 'Teilnehmer/in: {$a->fullname}, Status: {$a->status}';

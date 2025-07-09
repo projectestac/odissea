@@ -285,5 +285,5 @@ $string['tourlist_explanation'] = '您可以根据您的喜好创建尽可能多
 $string['tours'] = '导航';
 $string['usertours'] = '用户导航';
 $string['usertours:managetours'] = '创建、编辑和删除用户导航';
-$string['viewtour_edit'] = '您可以<a href=“{$a->editlink}”>编辑导览默认值</a>和<a href=“{$a->resetlink}”>强制显示导览</a>给所有用户。。';
+$string['viewtour_edit'] = '您可<a href="{$a->editlink}">编辑教程默认设置</a>并<a href="{$a->resetlink}">强制向所有用户显示教程</a>。';
 $string['viewtour_info'] = '这是 \'{$a->tourname}\' 导航。它适用于 \'{$a->path}\'。';

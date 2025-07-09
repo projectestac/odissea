@@ -14,10 +14,10 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
         $from = optional_param('from', '', PARAM_TEXT);
 
         if (!isset($data->bookid) || ($book = $DB->get_record('rcommon_books', array('id' => $data->bookid))) == false){
-            print_error(get_string('nobookid','local_rcommon'));
+            throw new \moodle_exception(get_string('nobookid','local_rcommon'));
             //save error on bd
         } else if (($publisher = $DB->get_record('rcommon_publisher', array('id' => $book->publisherid))) == false){
-            print_error(get_string('nopublisher','local_rcommon'));
+            throw new \moodle_exception(get_string('nopublisher','local_rcommon'));
             //save error on bd
         }
 		if(!$usr_creden){
@@ -54,10 +54,10 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
             exit;
             //save error on bd
         } else if (!empty($data->unitid) && ($unit = $DB->get_record('rcommon_books_units', array('id' => $data->unitid))) == false){
-            print_error(get_string('nounit','block_rcommon'));
+            throw new \moodle_exception(get_string('nounit','block_rcommon'));
             //save error on bd
         } else if (!empty($data->activityid) && ($activ = $DB->get_record('rcommon_books_activities', array('id' => $data->activityid))) == false){
-            print_error('noactivity','block_rcommon');
+            throw new \moodle_exception('noactivity','block_rcommon');
             //save error on bd
         }
 
@@ -186,8 +186,9 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
                 $desctext .= '<br>'.$response->AutenticarUsuarioContenidoResult->Descripcion;
             }
 
-            print_error(get_string('error_authentication', 'local_rcommon', $response->AutenticarUsuarioContenidoResult->Codigo).'<br>'.$desctext.$msg);
-        } else {
-            return $response;
+            throw new \moodle_exception(get_string('error_authentication', 'local_rcommon', $response->AutenticarUsuarioContenidoResult->Codigo).'<br>'.$desctext.$msg);
         }
+
+    return $response;
+
 }

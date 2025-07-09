@@ -418,6 +418,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'User ID dell\'utente 
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Metadati delle registrazioni';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'User ID dell\'utente che ha modificato più recentemente una registrazione.';
 $string['progress_createbigbluebuttonbn'] = 'Creazione dell\'attività BigBlueButton ({$a})';
+$string['recordingnotfound'] = 'La registrazione non è stata trovata.';
 $string['recordings_from_deleted_activities'] = 'Registrazioni di attività eliminate';
 $string['recordingurlnotfound'] = 'L\'URL della registrazione non è valido.';
 $string['removedevents'] = 'Eventi eliminati';

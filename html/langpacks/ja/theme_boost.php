@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'テーマプリセット';
 $string['preset_desc'] = 'テーマのスタイルを広範囲に変更するためプリセットを選択してください。';
 $string['presetfiles'] = '追加テーマプリセットファイル';
-$string['presetfiles_desc'] = 'プリセットはテーマのアピアランスを劇的に変化させるために使用することができます。あなたのプリセットファイルの作成および共有に関して<a href="https://docs.moodle.org/dev/Boost_Presets">Boostプリセット</a>をご覧ください。また、他の人が共有しているプリセットに関して<a href="https://moodle.net/search?q=boost+presets">プリセットリポジトリ</a>をご覧ください。';
+$string['presetfiles_desc'] = 'プリセットはテーマのアピアランスを劇的に変化させるために使用することができます。';
 $string['privacy:drawerblockclosed'] = 'ブロックドロワの現在のプレファレンスはクローズです。';
 $string['privacy:drawerblockopen'] = 'ブロックドロワの現在のプレファレンスはオープンです。';
 $string['privacy:drawerindexclosed'] = 'インデックスドロワの現在のプレファレンスはクローズです。';

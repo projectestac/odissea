@@ -36,7 +36,7 @@ $string['adhoctasksdue'] = 'Ad-hoctaken vervallen';
 $string['adhoctasksfailed'] = 'Ad-hoctaken zijn mislukt';
 $string['adhoctasksfuture'] = 'Toekomstige ad-hoctaken';
 $string['adhoctasksrunning'] = 'Ad-hoctaken worden uitgevoerd';
-$string['asap'] = 'ASAP';
+$string['asap'] = '<abbr title="Zo spoedig mogelijk">z.s.m.</abbr>';
 $string['backtoadhoctasks'] = 'Terug naar ad-hoctaken';
 $string['backtoscheduledtasks'] = 'Terug naar geplande taken';
 $string['blocking'] = 'Blokkering';

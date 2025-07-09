@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Letra-tamaina';
+$string['fontsize:use'] = 'Baimendu plugina erabiltzea';
 $string['menuitem_fontsize'] = 'Letra-tamaina';
 $string['pluginname'] = 'Letra-tamaina plugina';
 $string['privacy:metadata'] = 'Letra-tamaina pluginak ez du datu pertsonalik biltzen.';

@@ -42,8 +42,8 @@ Feature: In an assignment, teachers can filter displayed submissions and see dra
   @javascript
   Scenario: View assignments with draft status on the view all submissions page
     Given I am on the "Test assignment" Activity page logged in as teacher1
-    And I follow "View all submissions"
-    When I set the field "Filter" to "Draft"
+    And I navigate to "Submissions" in current page administration
+    When I set the field "Status" to "Draft"
     Then I should see "Student 2"
     And I should not see "Student 1"
     And I should not see "Student 3"
@@ -51,14 +51,12 @@ Feature: In an assignment, teachers can filter displayed submissions and see dra
   @javascript
   Scenario: View assignments with draft status in the grader
     Given I am on the "Test assignment" Activity page logged in as teacher1
-    And I follow "View all submissions"
-    And I click on "Grade" "link" in the "Student 1" "table_row"
+    And I go to "Student 1" "Test assignment" activity advanced grading page
     When I click on "[data-region=user-filters]" "css_element"
     And I set the field "filter" to "Draft"
     Then I should see "1 of 1"
-    And I should see "No users selected"
-    And I click on "[data-region=user-selector]" "css_element"
-    And I type "Student"
     And I should see "Student 2"
-    And I should not see "Student 1"
-    And I should not see "Student 3"
+    And I open the autocomplete suggestions list in the "[data-region=user-selector]" "css_element"
+    And I should see "Student 2" in the ".form-autocomplete-suggestions" "css_element"
+    And I should not see "Student 1" in the ".form-autocomplete-suggestions" "css_element"
+    And I should not see "Student 3" in the ".form-autocomplete-suggestions" "css_element"

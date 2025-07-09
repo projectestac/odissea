@@ -24,6 +24,7 @@ namespace core;
  * @category   test
  * @copyright  2012 Petr Skoda {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \auth_plugin_base
  */
 final class authlib_test extends \advanced_testcase {
     public function test_lockout(): void {
@@ -507,7 +508,6 @@ final class authlib_test extends \advanced_testcase {
 
     /**
      * Test the find_cli_user method
-     * @covers ::find_cli_user
      */
     public function test_find_cli_user(): void {
         global $CFG, $USER;
@@ -540,7 +540,6 @@ final class authlib_test extends \advanced_testcase {
 
     /**
      * Test the get_enabled_auth_plugin_classes method
-     * @covers ::get_enabled_auth_plugin_classes
      */
     public function test_get_enabled_auth_plugin_classes(): void {
         global $CFG;
@@ -548,6 +547,24 @@ final class authlib_test extends \advanced_testcase {
         $plugins = \auth_plugin_base::get_enabled_auth_plugin_classes();
         $this->assertEquals(get_class($plugins[0]), 'auth_plugin_manual');
         $this->assertEquals(count($plugins), 3);
+    }
+
+    /**
+     * Test case for checking the email greetings in account lockout notification emails.
+     *
+     * @covers ::login_lock_account()
+     */
+    public function test_email_greetings(): void {
+        $this->resetAfterTest();
+
+        $user = $this->getDataGenerator()->create_user();
+
+        $sink = $this->redirectEmails(); // Make sure we are redirecting emails.
+        login_lock_account($user);
+        $result = $sink->get_messages();
+        $sink->close();
+        // Test greetings.
+        $this->assertStringContainsString('Hi ' . $user->firstname, quoted_printable_decode($result[0]->body));
     }
 
 }

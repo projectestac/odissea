@@ -71,14 +71,14 @@ $string['assign:viewownsubmissionsummary'] = 'Ikusi norbere bidalketaren laburpe
 $string['assignfeedback'] = 'Feedbackaren plugina';
 $string['assignfeedbackpluginname'] = 'Feedbackaren plugina';
 $string['assignmentisdue'] = 'Epea amaitu da';
-$string['assignmentmail'] = '{$a->grader}(e)k feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako.
+$string['assignmentmail'] = '{$a->grader} erabiltzaileak feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako.
 
 Zure zereginaren bidalketaren eranskin gisa ikus dezakezu:
 
  {$a->url}';
 $string['assignmentmailhtml'] = '<p>{$a->grader}(e)k feedbacka bidali du zure \'<i>{$a->assignment}</i>\' zereginaren bidalketarako.</p>
 <p>Zure <a href="{$a->url}">zereginaren bidalketaren eranskin gisa ikus dezakezu</a>.</p>';
-$string['assignmentmailsmall'] = '{$a->grader}(e)k feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako. Zure zereginaren bidalketaren eranskin gisa ikus dezakezu.';
+$string['assignmentmailsmall'] = '{$a->grader} erabiltzaileak feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako. Zure zereginaren bidalketaren eranskin gisa ikus dezakezu.';
 $string['assignmentname'] = 'Zereginaren izena';
 $string['assignmentplugins'] = 'Zereginaren pluginak';
 $string['assignmentsperpage'] = 'Zereginak orriko';
@@ -186,6 +186,7 @@ $string['editsubmissionother'] = 'Editatu {$a}(r)en bidalketa';
 $string['enabled'] = 'Gaituta';
 $string['enabletimelimit'] = 'Gaitu erlojupeko zereginak';
 $string['enabletimelimit_help'] = 'Gaituz gero, zereginaren ezarpenen orrian denbora-muga bat zehaztu ahalko duzu.';
+$string['errorgradechangessaveddetail'] = 'Kalifikazioa eta feedbackari egindako aldaketak gordetzeak huts egin du';
 $string['errornosubmissions'] = 'Ez dago jaisteko bidalketarik';
 $string['errorquickgradingvsadvancedgrading'] = 'Kalifikazioak ez dira gorde zeregin honek kalifikazio aurreratua erabiltzen duelako';
 $string['errorrecordmodified'] = 'Kalifikazioak ez dira gorde norbaitek aldatu duelako erregistro bat edo gehiago zuk orria kargatu ondoren.';
@@ -239,7 +240,7 @@ Zereginaren zure bidalketarekin batera ikusi dezakezu:
  {$a->url}';
 $string['feedbackavailablehtml'] = '{$a->username}(e)k feedbacka bidali du zure zereginaren bidalketarako: \'<i>{$a->assignment}</i>\'<br /><br /> Feedback hau ikusi dezakezu <a href="{$a->url}">zeregineko bidalketaren eranskin gisa</a>.';
 $string['feedbackavailablesmall'] = '{$a->username}(e)k feedbacka bidali du {$a->assignment} zereginerako';
-$string['feedbackavailabletext'] = '{$a->username}(e)k feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako.
+$string['feedbackavailabletext'] = '{$a->username} erabiltzaileak feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako.
 
 Zure zereginaren bidalketaren eranskin gisa ikus dezakezu:
 
@@ -534,7 +535,7 @@ Zure zeregin bidalketaren egoera hemen ikus dezakezu:
 
    {$a->url}';
 $string['submissiondrafts'] = 'Behartu ikasleak bidali botoian klik egitera';
-$string['submissiondrafts_help'] = 'Gaituz gero, ikasleek bidali botoian klik egin beharko dute bidalketa amaitutzat emateko. Mekanismo honi esker, ikasleek sisteman zirriborro moduko bidalketa bat gorde dezakete. Aukera hau "Ez" egoeratik "Bai" egoerara aldatzen bada eta dagoeneko ikasleen bidalketak badaude, amaitutako bidalketatzat hartuko dira.';
+$string['submissiondrafts_help'] = 'Ikasleek bidalketa bidaltzeko botoi bat izan behar dute euren bidalketan aldaketak egiten amaitu dutenean bidalketa kalifikatzeko prest dagoela adierazteko?';
 $string['submissioneditable'] = 'Ikasleak bere bidalketa edita dezake';
 $string['submissionempty'] = 'Ez da ezer bidali';
 $string['submissionlog'] = 'Ikaslea: {$a->fullname}, Egoera: {$a->status}';

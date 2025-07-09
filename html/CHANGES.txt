@@ -4,6 +4,41 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 25.07.07
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.9+
+- Updated langpacks
+- attendance: Upgraded module
+- boost_union: Added theme
+- choicegroup: Upgraded module
+- cloze: Upgraded tiny plugin
+- cloze: Upgraded atto plugin
+- fontcolor: Upgraded tiny plugin
+- fontfamily: Upgraded tiny plugin
+- fontsize: Upgraded tiny plugin
+- geogebra: Upgraded module
+- hotpot: Upgraded module
+- HVP: Upgraded module
+- jclic: Upgraded module
+- journal: Upgraded module
+- Local Àgora: Updated cache definitions for format_tiles and boost_union
+- local_rcommon: Updated code for Moodle 4.5
+- multitopic: Upgraded course format
+- Questions: Updated scripts to clean up duplicates
+- questionnaire: Upgraded module
+- Theme selector: Restrict access to boost_union
+- tiles: Upgraded course format
+- tiny_c4l: Added tiny plugin
+- vicensvives: Updated block and WS
+- Wiris: Upgraded all components
+
+
+Changes 25.05.19
+---------------------------------------------------------------------------------------
+- Revert "MDL-80848 mod_forum: to have id as the backup sorting condition"
+- rcontent: Added missing lang string
+
+
 Changes 25.03.25
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.4.7+

@@ -250,7 +250,7 @@ $string['tour_activityinfo_course_teacher_content'] = 'De nieuwe cursusinstellin
 $string['tour_activityinfo_course_teacher_title'] = 'Nieuw: activiteitsinformatie';
 $string['tour_final_step_content'] = 'Dit is het einde van je rondleiding. Je zult dit niet meer zien, tenzij je opnieuw start via de link onderaan de pagina.';
 $string['tour_final_step_title'] = 'Einde van de rondleiding';
-$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sorteer kolommen en kies welke je wil weergeven. Gebruik deze snelkoppeling in de bewerkingsmodus om toegang te krijgen tot veelvoorkomende taken met betrekking tot het bekijken en bewerken van cijferitems.';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sorteer kolommen en kies welke je wil weergeven. Gebruik deze snelkoppeling in de bewerkingsmodus om toegang te krijgen tot veelvoorkomende taken met betrekking tot het bekijken en bewerken van cijfers per sectie.';
 $string['tour_gradebook_action_title'] = 'Snelle links naar acties';
 $string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filter leerlingen op de initialen van hun voor- of achternaam.';
 $string['tour_gradebook_filter_title'] = 'Filteren op naam';

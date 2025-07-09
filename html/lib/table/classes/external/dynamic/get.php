@@ -224,14 +224,11 @@ class get extends external_api {
             );
         }
 
+        /** @var \core_table\dynamic $instance */
         $instance = new $tableclass($uniqueid);
         $instance->set_filterset($filterset);
         self::validate_context($instance->get_context());
-        if (!method_exists($instance, 'has_capability')) {
-            // Method \core_table\dynamic::has_capability() will be added in Moodle 4.5. Until then if it is not
-            // implemented, we will require the admin capability.
-            require_capability('moodle/site:config', \context_system::instance());
-        } else if (!$instance->has_capability()) {
+        if (!$instance->has_capability()) {
             throw new \moodle_exception('nopermissiontoaccesspage');
         }
 

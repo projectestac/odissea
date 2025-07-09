@@ -134,3 +134,6 @@ $string['report_normal'] = 'Summary results';
 /* Revision Moodle 3.1 */
 $string['jclicjs'] = 'jclic.js file URL';
 $string['jclicjs_help'] = 'URL where to find jclic.js needed for the non-Java player..';
+
+/* Revision Moodle 4.5 */
+$string['grade'] = 'Grade';

@@ -30,6 +30,7 @@ $string['answer_checked'] = 'Ответ проверен';
 $string['answer_correct'] = 'Ваш ответ верен';
 $string['answer_fail'] = 'Неверный ответ';
 $string['answer_incorrect'] = 'Ваш ответ неверен';
+$string['answer_noanswer'] = 'Отсутствует';
 $string['answer_pass'] = 'Верный ответ';
 $string['answer_text'] = 'Текст ответа';
 $string['answer_unchecked'] = 'Непроверенный ответ';

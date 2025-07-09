@@ -30,6 +30,7 @@ use customfield_textarea;
  * @category   test
  * @copyright  2018 Toni Barbera <toni@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core_customfield\data_controller
  */
 final class data_controller_test extends \advanced_testcase {
     /**
@@ -75,11 +76,16 @@ final class data_controller_test extends \advanced_testcase {
         // Generate new data_controller records for these fields, specifying field controller or fieldid or both.
         $data0 = data_controller::create(0, (object)$params, $field0);
         $this->assertInstanceOf(customfield_checkbox\data_controller::class, $data0);
-        $data1 = data_controller::create(0,
-            (object)($params + ['fieldid' => $field1->get('id')]), $field1);
+        $data1 = data_controller::create(
+            0,
+            (object)($params + ['fieldid' => $field1->get('id')]),
+            $field1
+        );
         $this->assertInstanceOf(customfield_date\data_controller::class, $data1);
-        $data2 = data_controller::create(0,
-            (object)($params + ['fieldid' => $field2->get('id')]));
+        $data2 = data_controller::create(
+            0,
+            (object)($params + ['fieldid' => $field2->get('id')])
+        );
         $this->assertInstanceOf(customfield_select\data_controller::class, $data2);
         $data3 = data_controller::create(0, (object)$params, $field3);
         $this->assertInstanceOf(customfield_text\data_controller::class, $data3);
@@ -98,8 +104,10 @@ final class data_controller_test extends \advanced_testcase {
         $this->assertInstanceOf(customfield_date\data_controller::class, data_controller::create($data1->get('id')));
 
         // Retrieve data by id and field.
-        $this->assertInstanceOf(customfield_select\data_controller::class,
-            data_controller::create($data2->get('id'), null, $field2));
+        $this->assertInstanceOf(
+            customfield_select\data_controller::class,
+            data_controller::create($data2->get('id'), null, $field2)
+        );
 
         // Retrieve data by record without field.
         $datarecord = $DB->get_record(\core_customfield\data::TABLE, ['id' => $data3->get('id')], '*', MUST_EXIST);
@@ -108,7 +116,6 @@ final class data_controller_test extends \advanced_testcase {
         // Retrieve data by record with field.
         $datarecord = $DB->get_record(\core_customfield\data::TABLE, ['id' => $data4->get('id')], '*', MUST_EXIST);
         $this->assertInstanceOf(customfield_textarea\data_controller::class, data_controller::create(0, $datarecord, $field4));
-
     }
 
     /**
@@ -132,9 +139,11 @@ final class data_controller_test extends \advanced_testcase {
         $d = data_controller::create($datarecord->id, $datarecord);
         $debugging = $this->getDebuggingMessages();
         $this->assertEquals(1, count($debugging));
-        $this->assertEquals('Too many parameters, either id need to be specified or a record, but not both.',
-            $debugging[0]->message);
-        $this->resetDebugging();
+        $this->assertEquals(
+            'Too many parameters, either id need to be specified or a record, but not both.',
+            $debugging[0]->message
+        );
+            $this->resetDebugging();
         $this->assertInstanceOf(customfield_text\data_controller::class, $d);
 
         // Retrieve non-existing data.
@@ -143,7 +152,6 @@ final class data_controller_test extends \advanced_testcase {
             $this->fail('Expected exception');
         } catch (\dml_missing_record_exception $e) {
             $this->assertStringMatchesFormat('Can\'t find data record in database table customfield_data%a', $e->getMessage());
-            $this->assertEquals(\dml_missing_record_exception::class, get_class($e));
         }
 
         // Missing field id.
@@ -153,7 +161,6 @@ final class data_controller_test extends \advanced_testcase {
         } catch (\coding_exception $e) {
             $this->assertEquals('Coding error detected, it must be fixed by a programmer: Not enough parameters to ' .
                 'initialise data_controller - unknown field', $e->getMessage());
-            $this->assertEquals(\coding_exception::class, get_class($e));
         }
 
         // Mismatching field id.
@@ -163,7 +170,6 @@ final class data_controller_test extends \advanced_testcase {
         } catch (\coding_exception $e) {
             $this->assertEquals('Coding error detected, it must be fixed by a programmer: Field id from the record ' .
                 'does not match field from the parameter', $e->getMessage());
-            $this->assertEquals(\coding_exception::class, get_class($e));
         }
 
         // Nonexisting class.
@@ -173,7 +179,6 @@ final class data_controller_test extends \advanced_testcase {
             $this->fail('Expected exception');
         } catch (\moodle_exception $e) {
             $this->assertEquals('Field type invalid not found', $e->getMessage());
-            $this->assertEquals(\moodle_exception::class, get_class($e));
         }
     }
 }

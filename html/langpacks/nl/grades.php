@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activities'] = 'Activiteiten';
-$string['addcategory'] = 'Voeg categorie toe';
+$string['addcategory'] = 'Categorie toevoegen';
 $string['addcategoryerror'] = 'Kon geen categorie toevoegen';
 $string['addexceptionerror'] = 'Fout opgetreden bij het toevoegen van een uitzondering voor userid:gradeitem';
 $string['addfeedback'] = 'Feedback toevoegen';

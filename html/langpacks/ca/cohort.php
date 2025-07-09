@@ -82,6 +82,7 @@ $string['privacy:metadata:cohort_members:userid'] = 'L\'ID de l\'usuari que est�
 $string['removeuserwarning'] = 'Treure usuaris d\'una cohort pot esdevenir una desmatriculació d\'usuaris de múltiples cursos, que inclou l\'eliminació de la configuració de l\'usuari, les qualificacions, la pertinença a grups i una altra informació de l\'usuari dels cursos afectats.';
 $string['search'] = 'Cerca';
 $string['searchcohort'] = 'Cerca cohort';
+$string['selectcohort'] = 'Seleccioneu la cohort';
 $string['selectfromcohort'] = 'Selecciona membres de la cohort';
 $string['systemcohorts'] = 'Cohorts de sistema';
 $string['unknowncohort'] = 'Cohort desconeguda ({$a})!';

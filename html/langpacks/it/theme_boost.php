@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Preimpostazioni tema';
 $string['preset_desc'] = 'Seleziona una preimpostazione per cambiare il look globale del tema';
 $string['presetfiles'] = 'File addizionali di preimpostazione del tema';
-$string['presetfiles_desc'] = 'I file di preimpostazione possono essere utilizzati per modificare radicalmente l\'aspetto del tema. Consultare <a href="https://docs.moodle.org/dev/Boost_Presets">Potenzia le preimpostazioni</a> per informazioni sulla creazione e la condivisione dei tuoi file preimpostati e consulta <a href="https:// moodle.net/search?q=boost+presets">Archivio di preimpostazioni</a> per le preimpostazioni condivise da altri.';
+$string['presetfiles_desc'] = 'I file di preimpostazione possono essere utilizzati per modificare radicalmente l\'aspetto del tema.';
 $string['privacy:drawerblockclosed'] = 'Preferenza corrente quando il cassetto è chiuso.';
 $string['privacy:drawerblockopen'] = 'Preferenza corrente quando il cassetto è aperto.';
 $string['privacy:drawerindexclosed'] = 'Preferenza corrente quando il cassetto indice è chiuso.';

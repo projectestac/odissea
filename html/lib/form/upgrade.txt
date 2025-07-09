@@ -1,10 +1,10 @@
+=== 4.5 Onwards ===
+
+This file has been replaced by UPGRADING.md. See MDL-81125 for further information.
+
+===
 This files describes API changes in core_form libraries and APIs,
 information provided here is intended especially for developers.
-
-=== 4.4.5 ===
-
-* The `cohort` form element now accepts new `includes` option, which is passed to the corresponding external
-  service to determine which cohorts to return (self, parents, all)
 
 === 4.4 ===
 

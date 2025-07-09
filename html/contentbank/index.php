@@ -75,10 +75,26 @@ foreach ($enabledcontenttypes as $contenttypename) {
     }
 }
 
-$foldercontents = $cb->search_contents($search, $contextid, $contenttypes);
-
 // Get the toolbar ready.
 $toolbar = array ();
+
+if (has_capability('moodle/contentbank:viewunlistedcontent', $context)) {
+    $display = get_user_preferences('core_contentbank_displayunlisted', 1);
+    $toolbar[] = [
+        'name' => 'displayunlisted',
+        'id' => 'displayunlisted',
+        'checkbox' => true,
+        'checked' => !empty($display),
+        'label' => get_string('displayunlisted', 'contentbank'),
+        'class' => 'displayunlisted m-2',
+        'action' => 'displayunlisted',
+    ];
+    $PAGE->requires->js_call_amd(
+        'core_contentbank/displayunlisted',
+        'init',
+        ['[data-action=displayunlisted]']
+    );
+}
 
 // Place the Add button in the toolbar.
 if (has_capability('moodle/contentbank:useeditor', $context)) {
@@ -128,6 +144,8 @@ if (!empty($errormsg) && get_string_manager()->string_exists($errormsg, 'core_co
     $statusmsg = get_string($statusmsg, 'core_contentbank');
     echo $OUTPUT->notification($statusmsg, 'notifysuccess');
 }
+
+$foldercontents = $cb->search_contents($search, $contextid, $contenttypes);
 
 // Render the contentbank contents.
 $folder = new \core_contentbank\output\bankcontent($foldercontents, $toolbar, $context, $cb);

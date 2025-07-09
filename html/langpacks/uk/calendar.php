@@ -53,6 +53,7 @@ $string['copycalendarurl'] = 'Скопіюйте URL-адресу календа
 $string['copyurl'] = 'Скопіюйте URL-адресу';
 $string['course'] = 'Курсу';
 $string['coursecalendar'] = 'календар {$a}';
+$string['coursecalendarlink'] = 'Календар курсу';
 $string['courseevent'] = 'Подія курсу';
 $string['courseevents'] = 'Події курсу';
 $string['courses'] = 'Курси';
@@ -194,7 +195,9 @@ $string['moreevents'] = 'Ще на {$a}';
 $string['namewithsource'] = '{$a->name} ({$a->source})';
 $string['never'] = 'Ніколи';
 $string['newevent'] = 'Створити подію';
+$string['newmonthannouncement'] = 'Календар тепер налаштовано на {$a}.';
 $string['nocalendarsubscriptions'] = 'Ще немає підписок на календар. Ви хочете {$a}';
+$string['nocalendarsubscriptionsimportexternal'] = 'Ще немає підписок на календарі. <a href="{$a}">Імпорт зовнішнього календаря</a>';
 $string['notitle'] = 'без назви';
 $string['noupcomingevents'] = 'Немає подій у майбутньому';
 $string['oneevent'] = '1 подія';

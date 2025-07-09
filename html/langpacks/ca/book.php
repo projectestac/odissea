@@ -61,8 +61,8 @@ Un llibre pot utilitzar-se
 * Com a portafolis de presentació del treball de l\'estudiant';
 $string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Llibres';
-$string['movechapterdown'] = 'Mou avall el capítol «{$a}»';
-$string['movechapterup'] = 'Mou amunt el capítol «{$a}»';
+$string['movechapterdown'] = 'Mou cap avall el capítol «{$a}»';
+$string['movechapterup'] = 'Mou cap amunt el capítol «{$a}»';
 $string['navexit'] = 'Surt del llibre';
 $string['navimages'] = 'Imatges';
 $string['navnext'] = 'Següent';

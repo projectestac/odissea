@@ -136,7 +136,7 @@ $string['updatewithdataonly'] = 'Ne modifier qu’à partir des données CSV';
 $string['updatewithdataordefaults'] = 'Modifier à partir des données CSV et des réglages par défaut';
 $string['uploadcourse:use'] = 'Utiliser l’outil de dépôt de cours';
 $string['uploadcourses'] = 'Modifier des cours par lots';
-$string['uploadcourses_help'] = 'Des cours peuvent être créés ou modifiés en déposant un fichier texte.  Le format de ce fichier doit être le suivant :
+$string['uploadcourses_help'] = 'Des cours peuvent être créés ou modifiés en déposant un fichier texte. Le format de ce fichier doit être le suivant :
 
 * chaque ligne du fichier contient un seul enregistrement ;
 * chaque enregistrement est constitué d’une série de données séparées par le caractère de séparation sélectionné ;

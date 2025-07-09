@@ -25,6 +25,7 @@ use completion_completion;
  * @category test
  * @copyright 2017 Mark Nelson <markn@moodle.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core_completion\progress
  */
 final class progress_test extends \advanced_testcase {
 
@@ -33,6 +34,7 @@ final class progress_test extends \advanced_testcase {
      */
     public function setUp(): void {
         global $CFG;
+        parent::setUp();
 
         $CFG->enablecompletion = true;
         $this->resetAfterTest();
@@ -122,8 +124,6 @@ final class progress_test extends \advanced_testcase {
 
     /**
      * Tests that the course progress percentage is returned correctly for various grade to pass settings
-     *
-     * @covers \core_completion\progress::get_course_progress_percentage.
      */
     public function test_course_progress_percentage_completion_state(): void {
         global $DB, $CFG;

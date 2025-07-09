@@ -245,18 +245,18 @@ class block_manager {
      * @return boolean - is there one of these blocks in the current page?
      */
     public function is_block_present($blockname) {
-        if (empty($this->blockinstances)) {
+        if (empty($this->birecordsbyregion)) {
             return false;
         }
 
         $requiredbythemeblocks = $this->get_required_by_theme_block_types();
-        foreach ($this->blockinstances as $region) {
+        foreach ($this->birecordsbyregion as $region) {
             foreach ($region as $instance) {
-                if (empty($instance->instance->blockname)) {
+                if (empty($instance->blockname)) {
                     continue;
                 }
-                if ($instance->instance->blockname == $blockname) {
-                    if ($instance->instance->requiredbytheme) {
+                if ($instance->blockname == $blockname) {
+                    if ($instance->requiredbytheme) {
                         if (!in_array($blockname, $requiredbythemeblocks)) {
                             continue;
                         }
@@ -834,6 +834,14 @@ class block_manager {
             $pagetypepattern = $this->page->pagetype;
         }
 
+        if (!empty($this->birecordsbyregion)) {
+            $addableblocks = $this->get_addable_blocks();
+
+            if (!array_key_exists($blockname, $addableblocks)) {
+                throw new moodle_exception('blockcannotadd');
+            }
+        }
+
         $blockinstance = new stdClass;
         $blockinstance->blockname = $blockname;
         $blockinstance->parentcontextid = $this->page->context->id;
@@ -943,6 +951,30 @@ class block_manager {
                 $this->add_block($blockname, $region, $weight, $showinsubcontexts, $pagetypepattern, $subpagepattern);
             }
         }
+    }
+
+    /**
+     * Given an array of blocks in the format used by {@see add_blocks}, removes any blocks from
+     * the list if they are not installed in the system.
+     *
+     * @param array $blocks Array keyed by region
+     * @return array Updated array
+     */
+    public function filter_nonexistent_blocks(array $blocks): array {
+        $installed = array_fill_keys(
+            array_map(fn($block) => $block->name, $this->get_installed_blocks()),
+            true,
+        );
+        $result = [];
+        foreach ($blocks as $region => $regionblocks) {
+            $result[$region] = [];
+            foreach ($regionblocks as $blockname) {
+                if (array_key_exists($blockname, $installed)) {
+                    $result[$region][] = $blockname;
+                }
+            }
+        }
+        return $result;
     }
 
     /**
@@ -1342,7 +1374,7 @@ class block_manager {
 
             $controls[] = new action_menu_link_secondary(
                 $editactionurl,
-                new pix_icon('t/edit', $str, 'moodle', array('class' => 'iconsmall', 'title' => '')),
+                new pix_icon('i/settings', $str, 'moodle', ['class' => 'iconsmall', 'title' => '']),
                 $str,
                 [
                     'class' => 'editing_edit',
@@ -1726,22 +1758,17 @@ class block_manager {
      * Convenience function to check whether a block is implementing a secondary nav class and return it
      * initialised to the calling function
      *
-     * @todo MDL-74939 Remove support for old 'local\views\secondary' class location
      * @param block_base $block
      * @return \core\navigation\views\secondary
      */
     protected function get_secondarynav(block_base $block): \core\navigation\views\secondary {
         $class = "core_block\\navigation\\views\\secondary";
+
+        // Check whether block defines its own secondary navigation.
         if (class_exists("block_{$block->name()}\\navigation\\views\\secondary")) {
             $class = "block_{$block->name()}\\navigation\\views\\secondary";
-        } else if (class_exists("block_{$block->name()}\\local\\views\\secondary")) {
-            // For backwards compatibility, support the old location for this class (it was in a
-            // 'local' namespace which shouldn't be used for core APIs).
-            debugging("The class block_{$block->name()}\\local\\views\\secondary uses a deprecated " .
-                    "namespace. Please move it to block_{$block->name()}\\navigation\\views\\secondary.",
-                    DEBUG_DEVELOPER);
-            $class = "block_{$block->name()}\\local\\views\\secondary";
         }
+
         $secondarynav = new $class($this->page);
         $secondarynav->initialise();
         return $secondarynav;
@@ -2685,6 +2712,9 @@ function blocks_get_default_site_course_blocks() {
 /**
  * Add the default blocks to a course.
  *
+ * Because this function is used on install, we skip over any default blocks that do not exist
+ * so that install can complete successfully even if blocks are removed.
+ *
  * @param object $course a course object.
  */
 function blocks_add_default_course_blocks($course) {
@@ -2712,11 +2742,17 @@ function blocks_add_default_course_blocks($course) {
     }
     $page = new moodle_page();
     $page->set_course($course);
-    $page->blocks->add_blocks($blocknames, $pagetypepattern);
+    $page->blocks->add_blocks(
+        $page->blocks->filter_nonexistent_blocks($blocknames),
+        $pagetypepattern,
+    );
 }
 
 /**
  * Add the default system-context blocks. E.g. the admin tree.
+ *
+ * Because this function is used on install, we skip over any default blocks that do not exist
+ * so that install can complete successfully even if blocks are removed.
  */
 function blocks_add_default_system_blocks() {
     global $DB;
@@ -2724,7 +2760,17 @@ function blocks_add_default_system_blocks() {
     $page = new moodle_page();
     $page->set_context(context_system::instance());
     // We don't add blocks required by the theme, they will be auto-created.
-    $page->blocks->add_blocks(array(BLOCK_POS_LEFT => array('admin_bookmarks')), 'admin-*', null, null, 2);
+    $page->blocks->add_blocks(
+        $page->blocks->filter_nonexistent_blocks([
+            BLOCK_POS_LEFT => [
+                'admin_bookmarks',
+            ],
+        ]),
+        'admin-*',
+        null,
+        false,
+        2,
+    );
 
     if ($defaultmypage = $DB->get_record('my_pages', array('userid' => null, 'name' => '__default', 'private' => 1))) {
         $subpagepattern = $defaultmypage->id;
@@ -2738,22 +2784,22 @@ function blocks_add_default_system_blocks() {
         $mycoursesubpagepattern = null;
     }
 
-    $page->blocks->add_blocks([
+    $page->blocks->add_blocks($page->blocks->filter_nonexistent_blocks([
         BLOCK_POS_RIGHT => [
             'recentlyaccesseditems',
         ],
         'content' => [
             'timeline',
             'calendar_month',
-        ]],
+        ]]),
         'my-index',
         $subpagepattern
     );
 
-    $page->blocks->add_blocks([
+    $page->blocks->add_blocks($page->blocks->filter_nonexistent_blocks([
         'content' => [
             'myoverview'
-        ]],
+        ]]),
         'my-index',
         $mycoursesubpagepattern
     );

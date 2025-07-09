@@ -61,6 +61,7 @@ $string['four'] = 'Quatre';
 $string['hidefromothers'] = 'Oculta la secció';
 $string['instructions'] = 'Instruccions: en fer clic sobre el nom de la secció, aquesta es mostra / s’amaga.';
 $string['large'] = 'Llarg';
+$string['newsection'] = 'Secció nova';
 $string['numbersections'] = 'Nombre de seccions';
 $string['one'] = 'Un';
 $string['pluginname'] = 'Temes replegats';

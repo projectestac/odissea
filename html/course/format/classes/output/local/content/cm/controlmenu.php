@@ -27,10 +27,9 @@ namespace core_courseformat\output\local\content\cm;
 use action_menu;
 use action_menu_link;
 use cm_info;
-use core\output\named_templatable;
 use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\basecontrolmenu;
 use core_courseformat\output\local\courseformat_named_templatable;
-use renderable;
 use section_info;
 use stdClass;
 
@@ -41,21 +40,7 @@ use stdClass;
  * @copyright 2020 Ferran Recio <ferran@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class controlmenu implements named_templatable, renderable {
-
-    use courseformat_named_templatable;
-
-    /** @var course_format the course format */
-    protected $format;
-
-    /** @var section_info the section object */
-    private $section;
-
-    /** @var action_menu the activity aciton menu */
-    protected $menu;
-
-    /** @var cm_info the course module instance */
-    protected $mod;
+class controlmenu extends basecontrolmenu {
 
     /** @var array optional display options */
     protected $displayoptions;
@@ -69,9 +54,7 @@ class controlmenu implements named_templatable, renderable {
      * @param array $displayoptions optional extra display options
      */
     public function __construct(course_format $format, section_info $section, cm_info $mod, array $displayoptions = []) {
-        $this->format = $format;
-        $this->section = $section;
-        $this->mod = $mod;
+        parent::__construct($format, $section, $mod, $mod->id);
         $this->displayoptions = $displayoptions;
     }
 
@@ -79,11 +62,15 @@ class controlmenu implements named_templatable, renderable {
      * Export this data so it can be used as the context for a mustache template.
      *
      * @param \renderer_base $output typically, the renderer that's calling this function
-     * @return stdClass data context for a mustache template
+     * @return stdClass|null data context for a mustache template
      */
-    public function export_for_template(\renderer_base $output): stdClass {
+    public function export_for_template(\renderer_base $output): ?stdClass {
 
         $mod = $this->mod;
+
+        if (!$this->format->show_activity_editor_options($this->mod)) {
+            return null;
+        }
 
         $menu = $this->get_action_menu($output);
 
@@ -94,7 +81,7 @@ class controlmenu implements named_templatable, renderable {
         $data = (object)[
             'menu' => $menu->export_for_template($output),
             'hasmenu' => true,
-            'id' => $mod->id,
+            'id' => $this->menuid,
         ];
 
         // After icons.
@@ -119,6 +106,14 @@ class controlmenu implements named_templatable, renderable {
         }
 
         $mod = $this->mod;
+
+        // In case module is delegating a section, we should return delegated section action menu.
+        if ($delegated = $mod->get_delegated_section_info()) {
+            $controlmenuclass = $this->format->get_output_classname('content\\cm\\delegatedcontrolmenu');
+            $controlmenu = new $controlmenuclass($this->format, $delegated, $mod);
+
+            return $controlmenu->get_action_menu($output);
+        }
 
         $controls = $this->cm_control_items();
 

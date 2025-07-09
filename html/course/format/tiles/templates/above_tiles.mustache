@@ -82,9 +82,9 @@
             </div>
         {{/is_multi_section}}
         {{^is_multi_section}}
-            {{^editing}}{{#section_zero_show}}
+            {{^editing}}{{#section_zero_show}}{{#section_zero.is_collapsible}}
                 <div class="buttonhidesec0 open ml-1" id="buttonhidesec0"></div>
-            {{/section_zero_show}}{{/editing}}
+            {{/section_zero.is_collapsible}}{{/section_zero_show}}{{/editing}}
         {{/is_multi_section}}
     </div>
 {{/editing}}

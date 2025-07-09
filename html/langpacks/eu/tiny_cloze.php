@@ -25,16 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cloze:viewplugin'] = 'Txertatutako erantzunen (Cloze) galderak editatzeko laguntzailea';
+$string['cloze:use'] = 'Erabili txertatutako erantzunetako (Cloze) galderen editorea TinyMCE-n';
+$string['cloze:viewplugin'] = 'Txertatutako erantzunetako (Cloze) galderak editatzeko laguntzailea';
 $string['customgrade'] = 'Pertsonalizatua';
 $string['err_custom_rate'] = 'Ehuneko ratio pertsonalizatuarentzako balioa ez da baliozkoa.';
 $string['err_empty_answer'] = 'Erantzuna hutsik dago.';
 $string['err_none_correct'] = 'Ez da erantzun zuzenik aurkitu.';
 $string['err_not_numeric'] = 'Balioa zenbakizkoa izan behar da.';
-$string['helplinktext'] = 'Txertatutako erantzunen (Cloze) galderen editorea';
+$string['helplinktext'] = 'Txertatutako erantzunetako (Cloze) galderen editorea';
 $string['insert'] = 'Txertatu galdera';
 $string['multichoice'] = 'Aukera anizkoitzak - erantzun bakarra';
 $string['multiresponse'] = 'Aukera anizkoitzak - erantzun anitz';
-$string['pluginname'] = 'Txertatutako erantzunen (Cloze) galderen editorea';
-$string['privacy:metadata'] = 'Txertatutako erantzunen (Cloze) editoreak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Txertatutako erantzunetako (Cloze) galderen editorea';
+$string['privacy:metadata'] = 'Txertatutako erantzunetako (Cloze) galderen editoreak ez du datu pertsonalik biltzen.';
 $string['select'] = 'Aukeratu galdera mota';

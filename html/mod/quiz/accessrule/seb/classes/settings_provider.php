@@ -212,12 +212,13 @@ class settings_provider {
      * @param \MoodleQuickForm $mform the wrapped MoodleQuickForm.
      */
     protected static function add_seb_templates(\mod_quiz_mod_form $quizform, \MoodleQuickForm $mform) {
-        if (self::can_use_seb_template($quizform->get_context()) || self::is_conflicting_permissions($quizform->get_context())) {
+        $context = $quizform->get_context();
+        if (self::can_use_seb_template($context) || self::is_conflicting_permissions($context)) {
             $element = $mform->createElement(
                 'select',
                 'seb_templateid',
                 get_string('seb_templateid', 'quizaccess_seb'),
-                self::get_template_options()
+                self::get_template_options($context->instanceid)
             );
         } else {
             $element = $mform->createElement('hidden', 'seb_templateid');
@@ -230,7 +231,7 @@ class settings_provider {
 
         // In case if the user can't use templates, but the quiz is configured to use them,
         // we'd like to display template, but freeze it.
-        if (self::is_conflicting_permissions($quizform->get_context())) {
+        if (self::is_conflicting_permissions($context)) {
             self::freeze_element($quizform, $mform, 'seb_templateid');
         }
     }
@@ -471,6 +472,8 @@ class settings_provider {
             'seb_showwificontrol' => 'selectyesno',
             'seb_enableaudiocontrol' => 'selectyesno',
             'seb_muteonstartup' => 'selectyesno',
+            'seb_allowcapturecamera' => 'selectyesno',
+            'seb_allowcapturemicrophone' => 'selectyesno',
             'seb_allowspellchecking' => 'selectyesno',
             'seb_activateurlfiltering' => 'selectyesno',
             'seb_filterembeddedcontent' => 'selectyesno',
@@ -500,6 +503,8 @@ class settings_provider {
             'seb_showwificontrol' => PARAM_BOOL,
             'seb_enableaudiocontrol' => PARAM_BOOL,
             'seb_muteonstartup' => PARAM_BOOL,
+            'seb_allowcapturecamera' => PARAM_BOOL,
+            'seb_allowcapturemicrophone' => PARAM_BOOL,
             'seb_allowspellchecking' => PARAM_BOOL,
             'seb_activateurlfiltering' => PARAM_BOOL,
             'seb_filterembeddedcontent' => PARAM_BOOL,
@@ -511,13 +516,14 @@ class settings_provider {
     }
 
     /**
-     * Check that we have conflicting permissions.
+     * Check that we have conflicting permissions with the current SEB settings.
      *
-     * In Some point we can have settings save by the person who use specific
-     * type of SEB usage (e.g. use templates). But then another person who can't
-     * use template (but still can update other settings) edit the same quiz. This is
-     * conflict of permissions and we'd like to build the settings form having this in
-     * mind.
+     * Check if the existing settings of the quiz (if any) are conflicting with the
+     * capabilities of the managing user.
+     *
+     * E.g. a quiz is using an SEB template and a site admin is able to select this
+     * option while a course manager cannot. Therefore it will return true for a course
+     * manager and return false for a site admin.
      *
      * @param \context $context Context used with capability checking.
      *
@@ -535,17 +541,22 @@ class settings_provider {
         }
 
         if (!self::can_use_seb_template($context) &&
-            $settings->get('requiresafeexambrowser') == self::USE_SEB_TEMPLATE) {
+                $settings->get('requiresafeexambrowser') == self::USE_SEB_TEMPLATE) {
+            return true;
+        }
+
+        if (!self::can_use_seb_client_config($context) &&
+                $settings->get('requiresafeexambrowser') == self::USE_SEB_CLIENT_CONFIG) {
             return true;
         }
 
         if (!self::can_upload_seb_file($context) &&
-            $settings->get('requiresafeexambrowser') == self::USE_SEB_UPLOAD_CONFIG) {
+                $settings->get('requiresafeexambrowser') == self::USE_SEB_UPLOAD_CONFIG) {
             return true;
         }
 
         if (!self::can_configure_manually($context) &&
-            $settings->get('requiresafeexambrowser') == self::USE_SEB_CONFIG_MANUALLY) {
+                $settings->get('requiresafeexambrowser') == self::USE_SEB_CONFIG_MANUALLY) {
             return true;
         }
 
@@ -566,7 +577,7 @@ class settings_provider {
         }
 
         if (self::can_use_seb_template($context) || self::is_conflicting_permissions($context)) {
-            if (!empty(self::get_template_options())) {
+            if (!empty(self::get_template_options($context->instanceid))) {
                 $options[self::USE_SEB_TEMPLATE] = get_string('seb_use_template', 'quizaccess_seb');
             }
         }
@@ -575,7 +586,9 @@ class settings_provider {
             $options[self::USE_SEB_UPLOAD_CONFIG] = get_string('seb_use_upload', 'quizaccess_seb');
         }
 
-        $options[self::USE_SEB_CLIENT_CONFIG] = get_string('seb_use_client', 'quizaccess_seb');
+        if (self::can_use_seb_client_config($context) || self::is_conflicting_permissions($context)) {
+            $options[self::USE_SEB_CLIENT_CONFIG] = get_string('seb_use_client', 'quizaccess_seb');
+        }
 
         return $options;
     }
@@ -584,10 +597,18 @@ class settings_provider {
      * Returns a list of templates.
      * @return array
      */
-    protected static function get_template_options(): array {
+    protected static function get_template_options($cmid): array {
         $templates = [];
-        $records = template::get_records(['enabled' => 1], 'name');
-        if ($records) {
+        $templatetable = template::TABLE;
+        $sebquizsettingstable = seb_quiz_settings::TABLE;
+        $select = "enabled = 1
+            OR EXISTS (
+                SELECT 1
+                  FROM {{$sebquizsettingstable}}
+                 WHERE templateid = {{$templatetable}}.id
+                   AND cmid = ?
+            )";
+        if ($records = template::get_records_select($select, [$cmid], 'id, name')) {
             foreach ($records as $record) {
                 $templates[$record->get('id')] = $record->get('name');
             }
@@ -628,6 +649,8 @@ class settings_provider {
             'seb_showkeyboardlayout' => 1,
             'seb_showwificontrol' => 0,
             'seb_enableaudiocontrol' => 0,
+            'seb_allowcapturecamera' => 0,
+            'seb_allowcapturemicrophone' => 0,
             'seb_muteonstartup' => 0,
             'seb_allowspellchecking' => 0,
             'seb_activateurlfiltering' => 0,
@@ -746,6 +769,16 @@ class settings_provider {
     }
 
     /**
+     * Check if the current user can select to use the SEB client configuration.
+     *
+     * @param \context $context Context to check access in.
+     * @return bool
+     */
+    public static function can_use_seb_client_config(\context $context): bool {
+        return has_capability('quizaccess/seb:manage_seb_usesebclientconfig', $context);
+    }
+
+    /**
      * Check if the current user can use preconfigured templates.
      *
      * @param \context $context Context to check access in.
@@ -792,6 +825,10 @@ class settings_provider {
      * @return bool
      */
     public static function can_configure_manually(\context $context): bool {
+        if (!has_capability('quizaccess/seb:manage_seb_configuremanually', $context)) {
+            return false;
+        }
+
         foreach (self::get_seb_config_elements() as $name => $type) {
             if (self::can_manage_seb_config_setting($name, $context)) {
                 return true;
@@ -883,6 +920,8 @@ class settings_provider {
                 'seb_enableaudiocontrol' => [
                     'seb_muteonstartup' => [],
                 ],
+                'seb_allowcapturecamera' => [],
+                'seb_allowcapturemicrophone' => [],
                 'seb_allowspellchecking' => [],
                 'seb_activateurlfiltering' => [
                     'seb_filterembeddedcontent' => [],

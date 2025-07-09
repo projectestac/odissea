@@ -193,50 +193,6 @@ final class base_test extends advanced_testcase {
     }
 
     /**
-     * Test adding single join
-     */
-    public function test_add_join(): void {
-        $entity = new base_test_entity();
-
-        $tablejoin = "JOIN {course} c2 ON c2.id = c1.id";
-        $entity->add_join($tablejoin);
-
-        $this->assertEquals([$tablejoin], $entity->get_joins());
-    }
-
-    /**
-     * Test adding multiple joins
-     */
-    public function test_add_joins(): void {
-        $entity = new base_test_entity();
-
-        $tablejoins = [
-            "JOIN {course} c2 ON c2.id = c1.id",
-            "JOIN {course} c3 ON c3.id = c1.id",
-        ];
-        $entity->add_joins($tablejoins);
-
-        $this->assertEquals($tablejoins, $entity->get_joins());
-    }
-
-    /**
-     * Test adding duplicate joins
-     */
-    public function test_add_duplicate_joins(): void {
-        $entity = new base_test_entity();
-
-        $tablejoins = [
-            "JOIN {course} c2 ON c2.id = c1.id",
-            "JOIN {course} c3 ON c3.id = c1.id",
-        ];
-        $entity
-            ->add_joins($tablejoins)
-            ->add_joins($tablejoins);
-
-        $this->assertEquals($tablejoins, $entity->get_joins());
-    }
-
-    /**
      * Test getting column
      */
     public function test_get_column(): void {

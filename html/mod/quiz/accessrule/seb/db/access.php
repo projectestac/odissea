@@ -49,6 +49,26 @@ $capabilities = [
             'editingteacher' => CAP_ALLOW
         ]
     ],
+    // Ability to select "Yes – Configure manually" as an option for "Require the use of Safe Exam Browser".
+    'quizaccess/seb:manage_seb_configuremanually' => [
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => [
+            'manager' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+        ],
+        'clonepermissionsfrom' => 'quizaccess/seb:manage_seb_requiresafeexambrowser',
+    ],
+    // Ability to select "Yes – Use SEB client config" as an option for "Require the use of Safe Exam Browser".
+    'quizaccess/seb:manage_seb_usesebclientconfig' => [
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => [
+            'manager' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+        ],
+        'clonepermissionsfrom' => 'quizaccess/seb:manage_seb_requiresafeexambrowser',
+    ],
     'quizaccess/seb:manage_seb_templateid' => [
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,
@@ -177,6 +197,22 @@ $capabilities = [
             'manager' => CAP_ALLOW,
             'editingteacher' => CAP_ALLOW
         ]
+    ],
+    'quizaccess/seb:manage_seb_allowcapturecamera' => [
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => [
+            'manager' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+        ],
+    ],
+    'quizaccess/seb:manage_seb_allowcapturemicrophone' => [
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => [
+            'manager' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+        ],
     ],
     'quizaccess/seb:manage_seb_allowspellchecking' => [
         'captype' => 'write',

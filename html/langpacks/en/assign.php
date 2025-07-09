@@ -41,7 +41,7 @@ $string['addnewgroupoverride'] = 'Add group override';
 $string['addnewuseroverride'] = 'Add user override';
 $string['addsubmission'] = 'Add submission';
 $string['addsubmission_help'] = 'You have not made a submission yet.';
-$string['allocatedmarker'] = 'Allocated Marker';
+$string['allocatedmarker'] = 'Allocated marker';
 $string['allocatedmarker_help'] = 'Marker allocated to this submission.';
 $string['allowsubmissions'] = 'Allow the user to continue making submissions to this assignment.';
 $string['allowsubmissionsfromdate'] = 'Allow submissions from';
@@ -122,7 +122,8 @@ $string['batchsetmarkingworkflowstateforusers'] = 'Set marking workflow state fo
 $string['beginassignment'] = 'Begin assignment';
 $string['blindmarking'] = 'Anonymous submissions';
 $string['blindmarking_help'] = 'Anonymous submissions hide the identity of students from markers. Anonymous submission settings will be locked once a submission or grade has been made in relation to this assignment.';
-$string['blindmarkingenabledwarning'] = 'Anonymous submissions are enabled for this activity. Grades will not be added to the gradebook until student identities are revealed via the grading action menu.';
+$string['blindmarkingenabledwarning'] = 'Anonymous submissions are enabled for this activity.';
+$string['blindmarkingnogradewarning'] = 'Anonymous submissions are enabled for this activity. Grades will not be added to the gradebook until student identities are revealed via the grading action menu.';
 $string['cachedef_overrides'] = 'User and group override information';
 $string['calendardue'] = '{$a} is due';
 $string['calendargradingdue'] = '{$a} is due to be graded';
@@ -189,6 +190,7 @@ $string['editsubmissionother'] = 'Edit submission for {$a}';
 $string['enabled'] = 'Enabled';
 $string['enabletimelimit'] = 'Enable timed assignments';
 $string['enabletimelimit_help'] = 'If enabled, you can set a time limit on assignment settings page.';
+$string['errorgradechangessaveddetail'] = 'The changes to the grade and feedback failed to save';
 $string['errornosubmissions'] = 'There are no submissions to download';
 $string['errorquickgradingvsadvancedgrading'] = 'The grades were not saved because this assignment is currently using advanced grading';
 $string['errorrecordmodified'] = 'The grades were not saved because someone has modified one or more records more recently than when you loaded the page.';
@@ -545,7 +547,7 @@ You can see the status of your assignment submission:
 
     {$a->url}';
 $string['submissiondrafts'] = 'Require students to click the submit button';
-$string['submissiondrafts_help'] = 'If enabled, students will have to click a submit button to declare their submission as final. This allows students to keep a draft version of the submission on the system. If this setting is changed from "No" to "Yes" after students have already submitted, those submissions will be regarded as final.';
+$string['submissiondrafts_help'] = 'Should students have a submit button to indicate when they have finished making changes to their submission and it is ready for grading?';
 $string['submissioneditable'] = 'Student can edit this submission';
 $string['submissionempty'] = 'Nothing was submitted';
 $string['submissionlog'] = 'Student: {$a->fullname}, Status: {$a->status}';

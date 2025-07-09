@@ -187,6 +187,7 @@ $string['editsubmissionother'] = 'Modifica consegna di {$a}';
 $string['enabled'] = 'Abilitato';
 $string['enabletimelimit'] = 'Abilita compiti a tempo';
 $string['enabletimelimit_help'] = 'Consente di impostare un limite di tempo nelle impostazioni del compito.';
+$string['errorgradechangessaveddetail'] = 'Le modifiche al voto e al feedback non sono state salvate';
 $string['errornosubmissions'] = 'Non ci sono consegne da scaricare';
 $string['errorquickgradingvsadvancedgrading'] = 'La valutazione non è stata salvata poiché il compito sta usando la valutazione avanzata.';
 $string['errorrecordmodified'] = 'La valutazione non è stata salvata poiché uno o più record sono stati modificati da qualcuno più recentemente del tuo caricamento della pagina.';
@@ -533,7 +534,7 @@ Per visualizzare lo stato della tua consegna:
 
 {$a->url}';
 $string['submissiondrafts'] = 'Gli studenti devono premere il pulsante di consegna';
-$string['submissiondrafts_help'] = 'L\'impostazione obbliga gli studenti a premere il pulsante di consegna per confermare che la consegna del  proprio compito è definitiva. In questo modo gli studenti possono mantenere il compito in bozza prima di consegnarlo definitivamente. Cambiare l\'impostazione da "No" a "Si" dopo la consegna degli studenti  renderà definitive le consegne già effettuate.';
+$string['submissiondrafts_help'] = 'L\'impostazione obbliga gli studenti a premere il pulsante di consegna per confermare che la consegna del  proprio compito è definitiva.';
 $string['submissioneditable'] = 'Lo studente può modificare la consegna';
 $string['submissionempty'] = 'Non sono presenti consegne';
 $string['submissionlog'] = 'Studente: {$a->fullname}, Stato: {$a->status}';

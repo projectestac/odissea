@@ -129,6 +129,7 @@ $string['linktourl'] = 'Mit diesem Element verbundender Link';
 $string['lockteachermarks'] = 'Kennzeichnungen von Trainer/innen sperren';
 $string['lockteachermarks_help'] = 'Wenn diese Einstellung aktiv ist, können Trainer/innen, sobald  einmal eine \'Ja\' Kennzeichnung vergeben wurde, diese nicht mehr ändern. Benutzer mit der Berechtigung \'mod/checklist:updatelocked\' können die Sperre übergeben und die Kennzeichnung trotzdem ändern.';
 $string['lockteachermarkswarning'] = 'Hinweis: Sobald Sie diese Kennzeichnungen gespeichert haben, werden Sie \'Ja\' Kennzeichnungen nicht mehr ändern können';
+$string['missinguser'] = 'Nutzer/in existiert nicht';
 $string['modulename'] = 'Fortschrittsliste';
 $string['modulename_help'] = 'Die Fortschrittslistenaktivität erlaubt Trainer/innen, eine Fortschrittsliste (Todo- oder Aufgabenliste) für die Teilnehmer/innen zu erstellen, welche diese abarbeiten sollen.';
 $string['modulename_link'] = 'mod/checklist/view';

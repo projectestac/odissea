@@ -47,12 +47,6 @@
     }
 }}
 {{#description}}<div class="p-3">{{{description}}}</div>{{/description}}
-<object id="resourceobject_{{id}}" class="resourceobject" data="{{config.wwwroot}}/course/format/tiles/mod_view.php?cmid={{cmid}}{{#cachebustparam}}&t={{cachebustparam}}{{/cachebustparam}}" type="{{objectType}}"
-        width="{{#width}}{{width}}{{/width}}{{^width}}800{{/width}}"
-        height="{{#height}}{{height}}{{/height}}{{^height}}600{{/height}}">
-    {{! the size is hardcoded in the object obove intentionally because it is adjusted by JS - see $("#page-content").on("click", ".launch-tiles-cm-modal"}}
-    {{! data field and value field are left blank as they are populated with the URL also by JS (lazy loaded to avoid unnecessary downloads) }}
-    {{! note that if it's not a PDF, Moodle will generally use an iframe not an object - see resourcelib.php  - but does not apply here}}
-    <param name="src" value="{{config.wwwroot}}/course/format/tiles/mod_view.php?cmid={{cmid}}">
-    {{#str}}filenoshowtext, format_tiles{{/str}}
-</object>
+<iframe id="resourceobject_{{id}}" src="{{config.wwwroot}}/course/format/tiles/mod_view.php?cmid={{cmid}}{{#cachebustparam}}&t={{cachebustparam}}{{/cachebustparam}}"
+    title="{{{activityname}}}" width="{{#width}}{{width}}{{/width}}{{^width}}800{{/width}}" height="{{#height}}{{height}}{{/height}}{{^height}}600{{/height}}">
+</iframe>

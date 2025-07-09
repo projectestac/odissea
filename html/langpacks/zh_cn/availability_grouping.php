@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = '只允许那些通过特定分组方式而隶属于某群组的学生进入';
-$string['error_selectgrouping'] = '必须选择一个群组';
-$string['missing'] = '(无分组)';
-$string['pluginname'] = '按分组限制';
-$string['privacy:metadata'] = '分组限制插件不储存任何私人数据。';
-$string['requires_grouping'] = '你属于 <strong>{$a}</strong>的小组';
-$string['requires_notgrouping'] = '你不属于 <strong>{$a}</strong>的小组';
-$string['title'] = '群组';
+$string['description'] = '只允许那些通过特定分组方式而隶属于某大组的学生进入';
+$string['error_selectgrouping'] = '必须选择一个大组';
+$string['missing'] = '(无大组)';
+$string['pluginname'] = '按大组限制';
+$string['privacy:metadata'] = '大组限制插件不储存任何私人数据。';
+$string['requires_grouping'] = '你属于 <strong>{$a}</strong>大组';
+$string['requires_notgrouping'] = '你不属于 <strong>{$a}</strong>大组';
+$string['title'] = '大组';

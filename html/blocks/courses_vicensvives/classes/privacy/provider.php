@@ -20,8 +20,6 @@
 
 namespace block_courses_vicensvives\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for block_courses_vicensvives implementing null_provider.
  */

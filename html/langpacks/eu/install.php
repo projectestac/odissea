@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admindirerror'] = 'Kudeaketarako zehaztu den direktorioa ez da egokia';
 $string['admindirname'] = 'Admin direktorioa';
-$string['admindirsetting'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
+$string['admindirsetting'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleko kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
 $string['admindirsettinghead'] = 'Ezarri Admin direktorioa...';
-$string['admindirsettingsub'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
+$string['admindirsettingsub'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleko kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
 $string['availablelangs'] = 'Hizkuntza-pakete eskuragarriak';
 $string['caution'] = 'Kontuz';
 $string['chooselanguage'] = 'Aukeratu hizkuntza bat';
@@ -195,7 +195,7 @@ $string['pathserrcreatedataroot'] = 'Instalatzaileak ezin du datu-direktorioa ({
 $string['pathshead'] = 'Egiaztatu bideak';
 $string['pathsrodataroot'] = 'Dataroot direktorioa ez da idazteko modukoa.';
 $string['pathsroparentdataroot'] = 'Goragoko direktorioa ({$a->parent}) ez da idazteko modukoa. Instalatzaileak ezin du datu-direktorioa ({$a->dataroot}) sortu.';
-$string['pathssubadmindir'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeatze-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
+$string['pathssubadmindir'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleko kudeatze-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
 $string['pathssubdataroot'] = '<p>Moodlek erabiltzaileek igotako fitxategien edukiak bilduko dituen direktorio bat.</p>
 <p>Direktorio honetan web-zerbitzariaren erabiltzaileak irakurtzeko eta idazteko baimena izan beharko ditu (normalean \'www-data\', \'nobody\', edo \'apache\').</p>
 <p>Ez litzateke web bidez eskuragarri egon beharko.</p>

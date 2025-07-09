@@ -31,6 +31,7 @@ $string['agelocationverificationdisabled'] = 'Age and location verification disa
 $string['authnotexisting'] = 'The autorization plugin doesn\'t exist';
 $string['backupcontainexternal'] = 'This backup file contains external Moodle Network Hosts that are not configured locally';
 $string['backuptablefail'] = 'Backup tables could NOT be set up successfully!';
+$string['blockcannotadd'] = 'Cannot add block';
 $string['blockcannotconfig'] = 'This block does not support global configuration';
 $string['blockcannotinistantiate'] = 'Problem in instantiating block object';
 $string['blockcannotread'] = 'Could not read data for blockid= {$a}';
@@ -96,7 +97,7 @@ $string['cannotfindinfo'] = 'Cannot find info for: "{$a}"';
 $string['cannotfindlang'] = 'Cannot find "{$a}" language pack!';
 $string['cannotfindteacher'] = 'Cannot find teacher';
 $string['cannotfinduser'] = 'Cannot find user named "{$a}"';
-$string['cannotgeoplugin'] = 'Cannot connect to the geoPlugin server at https://www.geoplugin.com. Please check your proxy settings or install the MaxMind GeoLite City data file.';
+$string['cannotgeoplugin'] = 'Cannot connect to the geoPlugin server at https://www.geoplugin.com. Please check your proxy settings or install the MaxMind GeoIP City data file.';
 $string['cannotgetblock'] = 'Could not retrieve blocks from the database';
 $string['cannotgetcats'] = 'Cannot get category record';
 $string['cannotgetdata'] = 'Cannot get data';
@@ -144,7 +145,6 @@ $string['cannotsavemd5file'] = 'Cannot save md5 file';
 $string['cannotsavezipfile'] = 'Cannot save ZIP file';
 $string['cannotservefile'] = 'Cannot serve file due to a server configuration problem.';
 $string['cannotsetparentforcatoritem'] = 'Cannot set parent for category or course item!';
-$string['cannotsetpassword'] = 'Could not set user password!';
 $string['cannotsetprefgrade'] = 'Could not set preference aggregationview to {$a} for this grade category';
 $string['cannotsettheme'] = 'Could not set the theme!';
 $string['cannotsetupblock'] = 'Blocks tables could NOT be set up successfully!';
@@ -279,6 +279,8 @@ $string['filternotenabled'] = 'Filter not enabled!';
 $string['filternotinstalled'] = 'Filter {$a} is not currently installed';
 $string['forumblockingtoomanyposts'] = 'You have exceeded the posting threshold set for this forum';
 $string['functionalityremoved'] = 'You are trying to access functionality that has been removed.';
+$string['gdfeaturenotsupported'] = 'The GD extension was not compiled with methods for {$a}';
+$string['gdmimetypenotsupported'] = 'MIME type not supported.';
 $string['generalexceptionmessage'] = 'Exception - {$a}';
 $string['gradepubdisable'] = 'Grade publishing disabled';
 $string['gradesneedregrading'] = 'The course grades need to be recalculated';
@@ -344,6 +346,7 @@ $string['invalidelementid'] = 'Incorrect element ID!';
 $string['invalidentry'] = 'This is not valid entry!';
 $string['invalidevent'] = 'Invalid event';
 $string['invalidfieldname'] = '"{$a}" is not a valid field name';
+$string['invalidfile'] = 'File not found';
 $string['invalidfiletype'] = '"{$a}" is not a valid file type';
 $string['invalidformatpara'] = 'Incorrect format for choose parameter';
 $string['invalidformdata'] = 'Incorrect form data';
@@ -391,6 +394,7 @@ $string['invalidxmlfile'] = '"{$a}" is not a valid XML file';
 $string['iplookupfailed'] = 'Cannot find geo information about this IP address {$a}';
 $string['iplookupprivate'] = 'Cannot display lookup of private IP address';
 $string['ipmismatch'] = 'Client IP address mismatch';
+$string['itemnotfound'] = 'No {$a->itemtype} was found with an identifier of \'{$a->identifier}\'';
 $string['listcantmovedown'] = 'Failed to move item down, as it is the last of its peers.';
 $string['listcantmoveleft'] = 'Failed to move item left, as it has no parent';
 $string['listcantmoveright'] = 'Failed to move item right, as there is no peer to make it a child of. Move it below another peer and then you can move it right.';
@@ -439,7 +443,6 @@ $string['multiplerecordsfound'] = 'Multiple records found, only one record expec
 $string['multiplerestorenotallow'] = 'Multiple restore execution not allowed!';
 $string['mustbeloggedin'] = 'You must be logged in to do this';
 $string['mustbeteacher'] = 'You must be a teacher to look at this page';
-$string['myisamproblem'] = 'Database tables are using MyISAM database engine, it is recommended to use ACID compliant engine with full transaction support such as InnoDB.';
 $string['needcopy'] = 'You need to copy something first!';
 $string['needcoursecategroyid'] = 'Either course id or category must be specified';
 $string['needphpext'] = 'You need to add {$a} support to your PHP installation';
@@ -483,6 +486,7 @@ $string['nostartdatenoenddate'] = 'A course end date can only be set if a start 
 $string['nostatstodisplay'] = 'Sorry, there is no available data to display';
 $string['notallowedtoupdateprefremotely'] = 'You are not allowed to update this user preference remotely';
 $string['notavailable'] = 'That is not currently available';
+$string['notfound'] = 'Not found';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'You are not a member of this course group';
 $string['notownerofkey'] = 'You are not owner of this key';
@@ -530,6 +534,7 @@ $string['restricteduser'] = 'Sorry, but your current account "{$a}" is restricte
 $string['reverseproxyabused'] = 'Reverse proxy enabled so the server cannot be accessed directly.<br />Please contact the server administrator.';
 $string['rpcerror'] = 'Ooops! Your MNET communication has failed! Here\'s that error message to pass on to your administrator: {$a}';
 $string['secretalreadyused'] = 'Change password confirmation link was already used, password was not changed';
+$string['sectioncantbefound'] = '<p><strong>This content can\'t be found.</strong></p><p>It may have been deleted, or the URL may be incorrect.</p>';
 $string['sectionnotexist'] = 'This section does not exist';
 $string['sendmessage'] = 'Send message';
 $string['sendmessagesent'] = 'Thanks for your feedback about:<br>{$a}';
@@ -649,9 +654,6 @@ $string['alreadyloggedin'] = 'You are already logged in as {$a}, you need to log
 $string['youcannotdeletecategory'] = 'You cannot delete category \'{$a}\' because you can neither delete the contents, nor move them elsewhere.';
 $string['protected_cc_not_supported'] = 'Protected cartridges not supported.';
 
-// Deprecated since Moodle 4.1.
-$string['cannotswitcheditmodeon'] = 'Could not switch edit mode on';
-
 // Deprecated since Moodle 4.3.
 $string['prefixtoolong'] = '<p>Error: database table prefix is too long ({$a->dbfamily})</p>
 <p>The site administrator must fix this problem. Maximum length for table prefixes in {$a->dbfamily} is {$a->maxlength} characters.</p>';
@@ -659,3 +661,7 @@ $string['prefixtoolong'] = '<p>Error: database table prefix is too long ({$a->db
 // Deprecated since Moodle 4.4.
 $string['cannotmarktopic'] = 'Could not mark that section for this course';
 $string['unknownhelp'] = 'Unknown help section {$a}';
+
+// Deprecated since Moodle 4.5.
+$string['cannotsetpassword'] = 'Could not set user password!';
+$string['myisamproblem'] = 'Database tables are using MyISAM database engine, it is recommended to use ACID compliant engine with full transaction support such as InnoDB.';

@@ -173,7 +173,7 @@ abstract class info {
      * @return bool True if this item is available to the user, false otherwise
      */
     public function is_available(&$information, $grabthelot = false, $userid = 0,
-            \course_modinfo $modinfo = null) {
+            ?\course_modinfo $modinfo = null) {
         global $USER;
 
         // Default to no information.
@@ -262,7 +262,7 @@ abstract class info {
      * @return string Information string (for admin) about all restrictions on
      *   this item
      */
-    public function get_full_information(\course_modinfo $modinfo = null) {
+    public function get_full_information(?\course_modinfo $modinfo = null) {
         // Do nothing if there are no availability restrictions.
         if (is_null($this->availability)) {
             return '';
@@ -792,11 +792,10 @@ abstract class info {
         // plugin could also rely on the completion plugin.
         $pluginmanager = \core_plugin_manager::instance();
         $enabled = $pluginmanager->get_enabled_plugins('availability');
-        $componentparams = new \stdClass();
         foreach ($enabled as $plugin => $info) {
-            // Use the static method.
+            /** @var \core_availability\condition $class */
             $class = '\availability_' . $plugin . '\condition';
-            if ($class::completion_value_used($course, $cmid)) {
+            if (class_exists($class) && $class::completion_value_used($course, $cmid)) {
                 return true;
             }
         }

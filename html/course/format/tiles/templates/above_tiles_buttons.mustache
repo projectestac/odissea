@@ -1,5 +1,5 @@
 <div class="above-tiles-buttons text-right{{^section_zero_show}} section-zero-empty{{/section_zero_show}}">
-    {{#section_zero_show}}
+    {{#section_zero_show}}{{#section_zero.is_collapsible}}
         <button class="sectionbutton buttonhidesec0 open float-right ml-1" data-section="0">
             <span class="sec-zero-open-icon justify-content-center align-items-center h-100" title="{{#str}}closetopsection, format_tiles{{/str}}">
                 {{#pix}}close, format_tiles, {{#str}}closetopsection, format_tiles{{/str}}{{/pix}}
@@ -9,7 +9,7 @@
             </span>
 
         </button>
-    {{/section_zero_show}}
+    {{/section_zero.is_collapsible}}{{/section_zero_show}}
 
     {{#hasabovetilescontrols}}
         <div class="btn-group">
@@ -21,7 +21,9 @@
             <div class="dropdown-menu dropdown-menu-right">
                 {{#abovetilescontrols}}
                     <a class="dropdown-item" href="{{{url}}}">
-                        {{#pix}}{{iconname}}, format_tiles, {{icontitle}}{{/pix}} {{{label}}}
+                        <div class="custom-control custom-switch{{#checked}} checked{{/checked}}">
+                            <span class="custom-control-label">{{label}}</span>
+                        </div>
                     </a>
                 {{/abovetilescontrols}}
             </div>

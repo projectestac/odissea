@@ -39,7 +39,7 @@ $string['internal'] = '内部（存储在Moodle中的文件）';
 $string['issuer'] = 'OAuth 2 服务';
 $string['issuer_help'] = '选择配置为与Google Drive API对话的OAuth 2服务。如果该服务尚不存在，则需要创建它。';
 $string['mydrive'] = '我的驱动器';
-$string['oauth2serviceslink'] = '<a href=“{$a}”title=“链接到OAuth 2服务配置”>OAuth 2 服务配置</a>';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="链接到 OAuth 2 服务配置">OAuth 2 服务配置</a>';
 $string['owner'] = '所有者：{$a}';
 $string['pluginname'] = 'Google文件';
 $string['presentationformat'] = '默认演示文稿导入格式';

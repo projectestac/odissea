@@ -56,7 +56,7 @@ $string['bulkcompletiontracking_help'] = '<b>بلا</b>: لا تشير إلى ا
 <b>مع حالة (حالات)</b>: عرض النشاط أنها كاملة عندما يتم استيفاء الشروط';
 $string['checkactivity'] = 'مربع اختيار النشاط / المورد: {$a}';
 $string['checkall'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد';
-$string['checkallsection'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد في القسم الآتي: {$a}';
+$string['checkallsection'] = 'تحديد أو إلغاء تحديد كل الأنشطة والموارد في المقطع الآتي: {$a}';
 $string['completeactivity'] = 'إكمال النشاط';
 $string['completed'] = 'منتهٍ';
 $string['completedunlocked'] = 'خيارات الإكمال غير مؤمنة';

@@ -39,7 +39,7 @@ $string['badnamingscheme'] = 'يجب أن يحتوي على واحد بالضب�
 $string['byfirstname'] = 'أبجدياً حسب الاسم الأول، الاسم الأخير';
 $string['byidnumber'] = 'أبجدياً حسب رقم المعرّف';
 $string['bylastname'] = 'أبجدياً حسب الاسم الأخير، الاسم الأول';
-$string['createautomaticgrouping'] = 'أنشئ مجموعات آلياً';
+$string['createautomaticgrouping'] = 'إنشاء التجميعات آلياً';
 $string['creategroup'] = 'أنشئ مجموعة';
 $string['creategrouping'] = 'إنشاء تجميع';
 $string['creategroupinselectedgrouping'] = 'إنشاء مجموعة ضمن التجميع';

@@ -91,8 +91,8 @@ final class allow_temporary_caches_test extends \advanced_testcase {
             get_fast_modinfo($course);
         } finally {
             // You have to do this after phpunit_disable or it breaks later tests.
-            \cache_factory::reset();
-            \cache_factory::instance(true);
+            factory::reset();
+            factory::instance(true);
         }
     }
 }

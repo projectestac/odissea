@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit_button_add'] = 'Afegeix';
+$string['horizontal'] = 'horitzontal';
+$string['nameilms'] = 'Secció';
 $string['panel_details'] = 'Detalls';

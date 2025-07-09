@@ -279,7 +279,7 @@ $string['defaultissuername_desc'] = 'Nom de la personne ou de l’entité émett
 $string['defaultissuerpassword'] = 'Mot de passe de l’émetteur de badge';
 $string['defaultissuerpassword_help'] = 'Un compte avec l’adresse de courriel identique à celle indiquée comme adresse de courriel de l’émetteur de badges dans l’Administration du site > Badges > Réglages des badges est nécessaire sur le site du sac à badges. Le mot de passe de ce compte doit être saisi ici.';
 $string['delbadge'] = 'Voulez-vous supprimer le badge « {$a} » et supprimer également tous les badges déjà délivrés ?';
-$string['delconfirm'] = 'Supprimer et supprimer les badges délivrés';
+$string['delconfirm'] = 'Supprimer et retirer les badges délivrés';
 $string['delcritconfirm'] = 'Voulez-vous vraiment supprimer ce critère ?';
 $string['deletehelp'] = '<p>La suppression complète d’un badge effacera tous ses éléments (informations, critères, etc.). Les utilisateurs ayant reçu le badge ne pourront plus y accéder, ni l’afficher sur leur page de profil.</p>
 <p>Remarque : les utilisateurs ayant reçu ce badge et l’ayant enregistré sur leur sac à badges externe conserveront le badge dans leur sac à badges. Ils ne pourront cependant plus accéder aux critères, ni aux preuves renvoyant vers ce site web.<p>';

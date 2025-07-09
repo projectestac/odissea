@@ -1010,11 +1010,21 @@ function format_tiles_pluginfile($course, $cm, $context, $filearea, $args, $forc
  */
 function format_tiles_output_fragment_get_cm_list(array $args): string {
     global $PAGE, $DB;
-    $section = $DB->get_record('course_sections', ['id' => $args['sectionid']]);
+    $sectionid = $args['sectionid'];
+    $section = $DB->get_record('course_sections', ['id' => $sectionid]);
     if (!$section) {
-        throw new \Exception("Section not found with ID " . $args['sectionid']);
+        throw new moodle_exception(
+            'invalidsectionid', 'format_tiles', '', $sectionid, "Section ID '$sectionid' not found"
+        );
     }
     $course = get_course($section->course);
+
+    if ($course->format != 'tiles') {
+        throw new moodle_exception(
+            'invalidsectionid', 'format_tiles', '',
+            $sectionid, "Course '$course->id' is not a tiles course"
+        );
+    }
 
     // We don't need to check course context permission as fragment API does that.
     // But we should check that the user can see this specific section as may be hidden.

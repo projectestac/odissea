@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Neuen Block \'Neueste Badges\' hinzufügen';
-$string['badges:myaddinstance'] = 'Neuen Block \'Neueste Badges\' im Dashboard hinzufügen';
+$string['badges:addinstance'] = 'Neuen Block \'Neue Badges\' hinzufügen';
+$string['badges:myaddinstance'] = 'Neuen Block \'Neue Badges\' im Dashboard hinzufügen';
 $string['nothingtodisplay'] = 'Sie haben keine Badges.';
 $string['numbadgestodisplay'] = 'Anzahl der neuesten Badges zum Anzeigen';
-$string['pluginname'] = 'Neueste Badges';
-$string['privacy:metadata'] = 'Der Block \'Neueste Badges\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';
+$string['pluginname'] = 'Neue Badges';
+$string['privacy:metadata'] = 'Der Block \'Neue Badges\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';

@@ -29,14 +29,12 @@ final class cron_test extends \advanced_testcase {
      * Reset relevant caches between tests.
      */
     public function setUp(): void {
+        parent::setUp();
         cron::reset_user_cache();
     }
 
     /**
      * Test the setup_user function.
-     *
-     * @covers ::setup_user
-     * @covers ::reset_user_cache
      */
     public function test_setup_user(): void {
         // This function uses the $GLOBALS super global. Disable the VariableNameLowerCase sniff for this function.

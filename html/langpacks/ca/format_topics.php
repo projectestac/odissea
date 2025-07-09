@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['currentsection'] = 'Aquest tema';
 $string['hidefromothers'] = 'Oculta el tema';
 $string['legacysectionname'] = 'Tema';
+$string['newsection'] = 'Secció nova';
 $string['page-course-view-topics'] = 'Qualsevol curs de la pàgina principal en format de temes';
 $string['page-course-view-topics-x'] = 'Qualsevol pàgina del curs en format de temes';
 $string['plugin_description'] = 'El curs està dividit en seccions personalitzables.';

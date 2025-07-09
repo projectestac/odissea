@@ -40,6 +40,7 @@ final class view_page_test extends externallib_advanced_testcase {
      * Set up for every test.
      */
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
     }
 

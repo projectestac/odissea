@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cloze:use'] = 'Use cloze questions editor in TinyMCE';
 $string['cloze:viewplugin'] = 'Helper to edit cloze questions';
 $string['customgrade'] = 'Custom';
 $string['err_custom_rate'] = 'Invalid value for custom percent rate.';

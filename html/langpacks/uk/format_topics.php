@@ -30,6 +30,7 @@ $string['hidefromothers'] = 'Приховати секцію';
 $string['indentation'] = 'Дозволити відступи на сторінці курсу';
 $string['indentation_help'] = 'Дозвольте викладачам та іншим користувачам із можливістю керування діяльністю робити відступи для елементів на сторінці курсу.';
 $string['legacysectionname'] = 'Секція';
+$string['newsection'] = 'Новий розділ';
 $string['page-course-view-topics'] = 'Головна сторінка будь-якого курсу в тематичному форматі.';
 $string['page-course-view-topics-x'] = 'Будь-яка сторінка курсу в тематичному форматі';
 $string['plugin_description'] = 'Курс поділений на спеціальні секції (теми).';

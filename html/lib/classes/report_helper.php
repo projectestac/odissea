@@ -17,7 +17,6 @@
 namespace core;
 
 use context_course;
-use moodle_url;
 use stdClass;
 
 /**
@@ -86,31 +85,18 @@ class report_helper {
             echo \html_writer::tag(
                 'div',
                 $options,
-                ['class' => 'tertiary-navigation full-width-bottom-border ml-0 d-flex', 'id' => 'tertiary-navigation']);
+                ['class' => 'tertiary-navigation full-width-bottom-border ms-0 d-flex', 'id' => 'tertiary-navigation']);
         } else {
             echo $OUTPUT->heading($pluginname, 2, 'mb-3');
         }
     }
 
     /**
-     * Save the last selected report in the session
-     *
      * @deprecated since Moodle 4.0
-     * @param int $id The course id
-     * @param moodle_url $url The moodle url
-     * @return void
      */
-    public static function save_selected_report(int $id, moodle_url $url): void {
-        global $USER;
-
-        debugging('save_selected_report() has been deprecated because it is no longer used and will be '.
-            'removed in future versions of Moodle', DEBUG_DEVELOPER);
-
-        // Last selected report.
-        if (!isset($USER->course_last_report)) {
-            $USER->course_last_report = [];
-        }
-        $USER->course_last_report[$id] = $url;
+    #[\core\attribute\deprecated(null, reason: 'It is no longer used', since: '4.0', final: true)]
+    public static function save_selected_report() {
+        \core\deprecation::emit_deprecation_if_present([self::class, __FUNCTION__]);
     }
 
     /**

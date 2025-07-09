@@ -100,8 +100,8 @@ $string['cannotsubscribe'] = '抱歉，您必须是小组成员才能订阅。';
 $string['cannottrack'] = '不能停止跟踪此讨论区';
 $string['cannotunsubscribe'] = '不能退订此讨论区';
 $string['cannotupdatepost'] = '您不能更新此帖';
-$string['cannotuseseperategroupsandsingletopic'] = '单独的小组不能用于单一的简单讨论。';
-$string['cannotusesingletopicandseperategroups'] = '单独的简单讨论不能用于单独的小组。';
+$string['cannotuseseperategroupsandsingletopic'] = '独立小组不能用于单独简单讨论。';
+$string['cannotusesingletopicandseperategroups'] = '单独简单讨论不能用于独立小组。';
 $string['cannotviewpostyet'] = '您还不能在此话题中阅读其他同学的帖子，因为您还没有发帖';
 $string['cannotviewusersposts'] = '您不能查看此用户发表的帖子。';
 $string['cleanreadtime'] = '几点将旧帖标记为已读';
@@ -354,7 +354,7 @@ $string['forumtrackednot'] = '不跟踪未读帖子';
 $string['forumtype'] = '讨论区类型';
 $string['forumtype_help'] = '有 5 种讨论类型：
 
-* 单一的简单讨论 - 每个人都可以回复的单一讨论主题（不能与单独的群组一起使用）
+* 单个简单讨论 - 每个人都可以回复的单一讨论主题（不能与独立小组一起使用）
 * 每人发布一个讨论 - 每个学生可以发布一个新的讨论主题，然后每个人都可以回复该主题
 * 问答论坛 - 学生必须先发布对老师发布的问题的回复，然后才能查看其他学生的帖子
 * 以类似博客的格式显示的标准论坛 - 一个开放的论坛，任何人都可以在任何时候开始新的讨论，其中讨论主题显示在一个带有“讨论此主题”链接的页面上
@@ -469,7 +469,7 @@ $string['modulename_help'] = '在讨论区模块用户可以进行异步的讨�
 * 用来继续课堂上没有讨论完的话题。
 * 用作只有教师之间的讨论(使用隐藏的讨论区)
 * 当作意见簿，收集助教及学生对于教材或教学方式的建议。
-* 作为一对一的个别辅导区，让师生间私密地沟通 (在讨论区中使用分隔小组，且让每人一组)。
+* 作为一对一的个别辅导区，让师生间私密地沟通 (在讨论区中使用独立小组，且让每人一组)。
 * 作为"脑筋急转弯"的场所，让学生提出难题和各种解决方案。';
 $string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = '讨论区';

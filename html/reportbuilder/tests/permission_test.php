@@ -20,6 +20,7 @@ namespace core_reportbuilder;
 
 use advanced_testcase;
 use context_system;
+use core_reportbuilder\exception\report_access_exception;
 use core_reportbuilder_generator;
 use Throwable;
 use core_user\reportbuilder\datasource\users;
@@ -34,7 +35,6 @@ use core_reportbuilder\reportbuilder\audience\manual;
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class permission_test extends advanced_testcase {
-
     /**
      * Test whether user can view reports list
      */

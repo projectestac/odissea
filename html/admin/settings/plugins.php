@@ -102,6 +102,8 @@ if ($hassiteconfig) {
         new lang_string('limitconcurrentlogins_desc', 'core_auth'), 0, $options));
     $temp->add(new admin_setting_configtext('alternateloginurl', new lang_string('alternateloginurl', 'auth'),
                                             new lang_string('alternatelogin', 'auth', htmlspecialchars(get_login_url(), ENT_COMPAT)), ''));
+    $temp->add(new admin_setting_configcheckbox('showloginform', new lang_string('showloginform', 'core_auth'),
+                                                new lang_string('showloginform_desc', 'core_auth'), 1));
     $temp->add(new admin_setting_configtext('forgottenpasswordurl', new lang_string('forgottenpasswordurl', 'auth'),
                                             new lang_string('forgottenpassword', 'auth'), '', PARAM_URL));
     $temp->add(new admin_setting_confightmleditor('auth_instructions', new lang_string('instructions', 'auth'),
@@ -297,7 +299,7 @@ if ($hassiteconfig) {
         $items[] = new admin_setting_configcheckbox('filtermatchonepertext', new lang_string('filtermatchonepertext', 'admin'), new lang_string('configfiltermatchonepertext', 'admin'), 0);
         $items[] = new admin_setting_configcheckbox('filternavigationwithsystemcontext',
                 new lang_string('filternavigationwithsystemcontext', 'admin'),
-                new lang_string('configfilternavigationwithsystemcontext', 'admin'), 0);
+                new lang_string('configfilternavigationwithsystemcontext', 'admin'), 1);
         foreach ($items as $item) {
             $item->set_updatedcallback('reset_text_filters_cache');
             $temp->add($item);
@@ -566,6 +568,18 @@ if ($hassiteconfig || has_capability('moodle/question:config', $systemcontext)) 
 
     $settings->add(new admin_setting_configselect('question_preview/history',
             get_string('responsehistory', 'question'), '', 0, $hiddenofvisible));
+
+    // Question editing settings.
+    $settings = new admin_settingpage('qediting',
+            get_string('questionediting', 'question'),
+            'moodle/question:config');
+    $ADMIN->add('qtypesettings', $settings);
+
+    $settings->add(new admin_setting_heading('qediting_options',
+            '', get_string('questionediting_desc', 'question')));
+
+    $settings->add(new admin_setting_configcheckbox('questiondefaultssave',
+            get_string('questiondefaultssave', 'question'), get_string('questiondefaultssave_desc', 'question'), 1));
 
     // Settings for particular question types.
     $plugins = core_plugin_manager::instance()->get_plugins_of_type('qtype');
@@ -864,12 +878,49 @@ if ($hassiteconfig && core_communication\api::is_available()) {
     }
 }
 
+// SMS plugins.
+if ($hassiteconfig) {
+    $ADMIN->add(
+        'modules',
+        new admin_category(
+            'sms',
+            new lang_string('sms', 'core_sms'),
+        ),
+    );
+    $ADMIN->add(
+        'sms',
+        new admin_externalpage(
+            'smsgateway',
+            new lang_string('manage_sms_gateways', 'core_sms'),
+            $CFG->wwwroot . '/sms/sms_gateways.php',
+        ),
+    );
+    foreach (core_component::get_plugin_list('smsgateway') as $plugin => $path) {
+        $settingspath = $path . '/settings.php';
+        if (file_exists($settingspath)) {
+            $settings = new admin_settingpage(
+                'smsgateway_' . $plugin . '_settings',
+                new lang_string('pluginname', 'smsgateway_' . $plugin),
+                'moodle/site:config',
+            );
+            include($settingspath);
+            $ADMIN->add('smsgateway', $settings);
+        }
+    }
+}
+
 // Content bank content types.
 if ($hassiteconfig) {
     $ADMIN->add('modules', new admin_category('contentbanksettings', new lang_string('contentbank')));
     $temp = new admin_settingpage('managecontentbanktypes', new lang_string('managecontentbanktypes'));
     $temp->add(new admin_setting_managecontentbankcontenttypes());
     $ADMIN->add('contentbanksettings', $temp);
+    $ADMIN->add('contentbanksettings',
+        new admin_externalpage('contentbank', new lang_string('contentbankcustomfields', 'contentbank'),
+            $CFG->wwwroot . '/contentbank/customfield.php',
+            'moodle/contentbank:configurecustomfields'
+        )
+    );
     $plugins = core_plugin_manager::instance()->get_plugins_of_type('contenttype');
     foreach ($plugins as $plugin) {
         /** @var \core\plugininfo\contentbank $plugin */

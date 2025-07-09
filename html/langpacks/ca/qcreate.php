@@ -31,3 +31,4 @@ $string['modulename_link'] = 'mod/qcreate/view';
 $string['overview'] = 'Resum';
 $string['preview'] = 'Previsualització';
 $string['previewquestion'] = 'Previsualitza la pregunta';
+$string['sendstudentnotifications'] = 'Notifica-ho als estudiants';

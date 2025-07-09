@@ -1,0 +1,11 @@
+{
+    "name": "c4l",
+    "private": true,
+    "description": "A plugin for the Moodle TinyMCE editor providing a set of visual components designed explicitly for Learning, based on the parent project componentsforlearning.org.",
+    "scripts": {
+        "sass": "sass --no-source-map --style=compressed scss/main.scss styles.css; sass --no-source-map --style=compressed scss/editor.scss editor_styles.css"
+    },
+    "devDependencies": {
+        "sass": "^1.64.1"
+    }
+}

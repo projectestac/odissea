@@ -38,20 +38,20 @@ class courses_vicensvives_setting_wscheck extends admin_setting {
     }
 
     public function output_html($data, $query='') {
-        $errors = array();
+        $errors = [];
 
         // Comprueba la conexión con el web service de Vicens Vives.
         $ws = new vicensvives_ws();
         try {
             $ws->books();
         } catch (vicensvives_ws_error $e) {
-            $errors[] = html_writer::tag('div', $e->getMessage(), array('class' => 'alert alert-danger'));
+            $errors[] = html_writer::tag('div', $e->getMessage(), ['class' => 'alert alert-danger']);
         }
 
         // Comprueba si el plugin local del web service está instalado.
         if (!courses_vicensvives_setting_moodlews::get_service()) {
             $message = get_string('moodlewsnotinstalled', 'block_courses_vicensvives');
-            $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
+            $errors[] = html_writer::tag('div', $message, ['class' => 'alert alert-danger']);
         }
 
         $adminroot = admin_get_root();
@@ -60,13 +60,13 @@ class courses_vicensvives_setting_wscheck extends admin_setting {
             // Comprueba si el web service está configurado.
             if (!courses_vicensvives_setting_moodlews::is_enabled()) {
                 $message = get_string('moodlewsnotenabled', 'block_courses_vicensvives');
-                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
+                $errors[] = html_writer::tag('div', $message, ['class' => 'alert alert-danger']);
             }
 
             // Comprueba si ha habido un error en enviar el token.
             if (array_key_exists('s__vicensvives_moodlews', $adminroot->errors)) {
                 $message = $adminroot->errors['s__vicensvives_moodlews']->error;
-                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
+                $errors[] = html_writer::tag('div', $message, ['class' => 'alert alert-danger']);
             }
         }
 
@@ -87,10 +87,10 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
     const ROLESHORTNAME = 'wsvicensvives';
     const ROLENAME = 'Web Service Vicens Vives';
 
-    private static $capabilities = array(
+    private static $capabilities = [
         'webservice/rest:use',
         'moodle/grade:edit',
-    );
+    ];
 
     public function __construct() {
         parent::__construct('vicensvives_moodlews', '', '', null);
@@ -106,7 +106,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
     }
 
     public function output_html($data, $query='') {
-        $attributes = array('type' => 'hidden', 'name' => $this->get_full_name(),  'value' => '1');
+        $attributes = ['type' => 'hidden', 'name' => $this->get_full_name(),  'value' => '1'];
         return html_writer::empty_tag('input', $attributes);
     }
 
@@ -114,7 +114,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         // Marcamos el parámetro como configurado.
         set_config($this->name, '1', $this->plugin);
 
-        if (vicensvives_ws::configured() and self::get_service()) {
+        if (vicensvives_ws::configured() && self::get_service()) {
             return self::enable();
         }
 
@@ -123,7 +123,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
 
     public static function get_service() {
         global $DB;
-        $conditions = array('component' => self::SERVICE);
+        $conditions = ['component' => self::SERVICE];
         return $DB->get_record('external_services', $conditions);
     }
 
@@ -143,7 +143,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
 
         // Servicio activado.
         $service = self::get_service();
-        if (!$service or !$service->enabled) {
+        if (!$service || !$service->enabled) {
             return false;
         }
 
@@ -161,7 +161,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         $context = context_system::instance();
         $rolecaps = role_context_capabilities($roleid, $context);
         foreach (self::$capabilities as $name) {
-            if (!isset($rolecaps[$name]) or $rolecaps[$name] != CAP_ALLOW) {
+            if (!isset($rolecaps[$name]) ||  $rolecaps[$name] != CAP_ALLOW) {
                 return false;
             }
         }
@@ -197,7 +197,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         // Servicio.
         $service = self::get_service();
         if (!$service->enabled) {
-            $DB->set_field('external_services', 'enabled', 1, array('id' => $service->id));
+            $DB->set_field('external_services', 'enabled', 1, ['id' => $service->id]);
         }
 
         // Usuario.
@@ -217,7 +217,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         $roleid = self::get_role_id();
         if (!$roleid) {
             $roleid = create_role(self::ROLENAME, self::ROLESHORTNAME, '');
-            set_role_contextlevels($roleid, array(CONTEXT_SYSTEM));
+            set_role_contextlevels($roleid, [CONTEXT_SYSTEM]);
         }
         foreach (self::$capabilities as $name) {
             assign_capability($name, CAP_ALLOW, $roleid, $context, true);
@@ -256,7 +256,7 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
 
     private static function get_role_id() {
         global $DB;
-        $conditions = array('shortname' => self::ROLESHORTNAME);
+        $conditions = ['shortname' => self::ROLESHORTNAME];
         return $DB->get_field('role', 'id', $conditions);
     }
 
@@ -264,38 +264,38 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         global $DB;
 
         $context = context_system::instance();
-        $conditions = array(
+        $conditions = [
             'tokentype' => EXTERNAL_TOKEN_PERMANENT,
             'userid' => $userid,
             'externalserviceid' => $service->id,
             'contextid' => $context->id,
-        );
+        ];
         return $DB->get_field('external_tokens', 'token', $conditions);
     }
 
     private static function get_user_id() {
         global $CFG, $DB;
-        $conditions = array(
+        $conditions = [
             'username' => self::USERNAME,
             'mnethostid' => $CFG->mnet_localhost_id,
             'deleted' => 0,
-        );
+        ];
         return $DB->get_field('user', 'id', $conditions);
     }
 
     private static function create_default_blocks() {
-        global $CFG,$DB;
+        global $CFG, $DB;
         require_once($CFG->libdir.'/blocklib.php');
         $page = new moodle_page();
         $systemcontext = context_system::instance();
         $page->set_context($systemcontext);
 
         $page->blocks->add_region(BLOCK_POS_RIGHT);
-    
-        $conditions = array(
-            'subpagepattern' => NULL
-        );
-    
+
+        $conditions = [
+            'subpagepattern' => null,
+        ];
+
         // Create frontpage blocks.
         $pagetypepattern = 'site-index';
         $conditions['pagetypepattern'] = $pagetypepattern;
@@ -304,20 +304,20 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
         if (!$DB->get_record('block_instances', $conditions)) {
             $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
         }
-    
+
         $blockname = 'licenses_vicensvives';
         $conditions['blockname'] = $blockname;
         if (!$DB->get_record('block_instances', $conditions)) {
             $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
         }
-    
+
         // Add the block to the default /my.
         $pagetypepattern = 'my-index';
         $conditions['pagetypepattern'] = $pagetypepattern;
         if (!$DB->get_record('block_instances', $conditions)) {
             $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
         }
-    
+
         $blockname = 'courses_vicensvives';
         $conditions['blockname'] = $blockname;
         if (!$DB->get_record('block_instances', $conditions)) {

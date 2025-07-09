@@ -775,7 +775,7 @@ $string['qname'] = 'Name';
 $string['qti'] = 'IMS-QTI';
 $string['qtypename'] = 'Typ, Name';
 $string['question'] = 'Frage';
-$string['questionbank'] = 'aus der Fragensammlung';
+$string['questionbank'] = 'aus einer Fragensammlung';
 $string['questionbankmanagement'] = 'Fragensammlung verwalten';
 $string['questionbehaviour'] = 'Frageverhalten';
 $string['questioncats'] = 'Fragenkategorien';
@@ -840,7 +840,7 @@ $string['quizisopenwillclose'] = 'Test geöffnet (Ende {$a})';
 $string['quiznavigation'] = 'Test-Navigation';
 $string['quizopen'] = 'Testöffnung';
 $string['quizopenclose'] = 'Anfangs- und Endzeiten';
-$string['quizopenclose_help'] = 'Teilnehmer/innen dürfen ihre Versuche nach dem Beginn anfangen und müssen sie vor den Ende beendet haben.';
+$string['quizopenclose_help'] = 'Teilnehmer/innen dürfen ihre Versuche nach dem Beginn anfangen und müssen sie vor dem Ende beendet haben.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
 $string['quizopened'] = 'Der Test ist geöffnet';
 $string['quizopenedon'] = 'Der Test beginnt am {$a}';
@@ -961,13 +961,13 @@ $string['reviewofquestion'] = 'Überprüfung der Frage {$a->question} in {$a->qu
 $string['reviewopen'] = 'Später, während der Test noch geöffnet ist';
 $string['reviewoptions'] = 'Was sollen die Teilnehmer/innen zu welchem Zeitpunkt überprüfen?';
 $string['reviewoptionsheading'] = 'Überprüfungsoptionen';
-$string['reviewoptionsheading_help'] = 'Mit diesen Optionen legen Sie fest, welche Infos angezeigt werden, wenn Teilnehmer/innen einen Versuch überprüfen oder sich den Ergebnisbericht anschauen.
+$string['reviewoptionsheading_help'] = 'Mit diesen Optionen legen Sie fest, welche Informationen angezeigt werden, wenn Teilnehmer/innen einen Versuch überprüfen oder sich den Ergebnisbericht anschauen.
 
-**Während des Versuchs** – Einstellungen sind nur mit gewissen Frageverhalten wie \'Mehrfachbeantwortung\' relevant, und steuern zum Beispiel das Feedback im direkten Zusammenhang mit der aktuell bearbeiteten Frage.
+**Während des Versuchs** – Einstellungen sind nur mit gewissen Frageverhalten wie \'Mehrfachbeantwortung\' relevant und steuern zum Beispiel das Feedback im direkten Zusammenhang mit der aktuell bearbeiteten Frage.
 
-**Direkt nach dem Versuch** steuert, was während zwei Minuten, nachdem Test abgeschickt und beendet wurde, angezeigt wird.
+**Direkt nach dem Versuch** steuert, was während zwei Minuten, nachdem der Test abgeschickt und beendet wurde, angezeigt wird.
 
-**Später, während der Test noch geöffnet ist** steuert was danach, und vor dem Zeitpunkt der Testschließung angezeigt wird.
+**Später, während der Test noch geöffnet ist** steuert, was danach und vor dem Zeitpunkt der Testschließung angezeigt wird.
 
 **Wenn der Test abgeschlossen ist** – Einstellungen treten nach dem Zeitpunkt der Testschließung in Kraft. Wenn kein Termin für die Testschließung definiert ist, kommt diese Einstellung nie zur Anwendung.';
 $string['reviewoverallfeedback'] = 'Gesamtfeedback';

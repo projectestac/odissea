@@ -234,7 +234,9 @@ abstract class backup_controller_dbops extends backup_dbops {
             'sectionid'  => $task->get_sectionid(),
             'modulename' => $task->get_modulename(),
             'title'      => $task->get_name(),
-            'directory'  => 'activities/' . $task->get_modulename() . '_' . $task->get_moduleid());
+            'directory'  => 'activities/' . $task->get_modulename() . '_' . $task->get_moduleid(),
+            'insubsection' => ($task->is_in_subsection()) ? 1 : '',
+        );
 
         // Now get activity settings
         // Calculate prefix to find valid settings
@@ -246,7 +248,7 @@ abstract class backup_controller_dbops extends backup_dbops {
                 continue;
             }
             // Validate level is correct (activity)
-            if ($setting->get_level() != backup_setting::ACTIVITY_LEVEL) {
+            if (!in_array($setting->get_level(), [backup_setting::ACTIVITY_LEVEL, backup_setting::SUBACTIVITY_LEVEL])) {
                 throw new backup_controller_exception('setting_not_activity_level', $setting);
             }
             $settinginfo = array(
@@ -268,7 +270,10 @@ abstract class backup_controller_dbops extends backup_dbops {
         $contentinfo = array(
             'sectionid'  => $task->get_sectionid(),
             'title'      => $task->get_name(),
-            'directory'  => 'sections/' . 'section_' . $task->get_sectionid());
+            'directory'  => 'sections/' . 'section_' . $task->get_sectionid(),
+            'parentcmid' => $task->get_delegated_cm() ?? '',
+            'modname' => $task->get_modname() ?? '',
+        );
 
         // Now get section settings
         // Calculate prefix to find valid settings
@@ -280,7 +285,7 @@ abstract class backup_controller_dbops extends backup_dbops {
                 continue;
             }
             // Validate level is correct (section)
-            if ($setting->get_level() != backup_setting::SECTION_LEVEL) {
+            if (!in_array($setting->get_level(), [backup_setting::SECTION_LEVEL, backup_setting::SUBSECTION_LEVEL])) {
                 throw new backup_controller_exception('setting_not_section_level', $setting);
             }
             $settinginfo = array(
@@ -359,7 +364,7 @@ abstract class backup_controller_dbops extends backup_dbops {
      * @param \core\progress\base $progress Optional progress monitor
      */
     public static function get_moodle_backup_information($backupid,
-            \core\progress\base $progress = null) {
+            ?\core\progress\base $progress = null) {
 
         // Start tracking progress if required (for load_controller).
         if ($progress) {
@@ -580,6 +585,7 @@ abstract class backup_controller_dbops extends backup_dbops {
                         'backup_import_activities'         => 'activities',
                         'backup_import_blocks'             => 'blocks',
                         'backup_import_filters'            => 'filters',
+                        'backup_import_badges'             => 'badges',
                         'backup_import_calendarevents'     => 'calendarevents',
                         'backup_import_permissions'        => 'permissions',
                         'backup_import_questionbank'       => 'questionbank',
@@ -600,6 +606,8 @@ abstract class backup_controller_dbops extends backup_dbops {
                          'questionbank'
                     );
                     self::force_enable_settings($controller, $settings);
+                    // Badges are not included by default when duplicating activities.
+                    self::force_settings($controller, ['badges'], false);
                 }
                 break;
             case backup::MODE_AUTOMATED:
@@ -640,9 +648,19 @@ abstract class backup_controller_dbops extends backup_dbops {
      * @param array $settings a map from admin config names to setting names (Config name => Setting name)
      */
     private static function force_enable_settings(backup_controller $controller, array $settings) {
+        self::force_settings($controller, $settings, true);
+    }
+
+    /**
+     * Set these settings to the given $value. No defaults from admin settings.
+     *
+     * @param backup_controller $controller The backup controller.
+     * @param array $settings a map from admin config names to setting names (Config name => Setting name).
+     * @param mixed $value the value to set the settings to.
+     */
+    private static function force_settings(backup_controller $controller, array $settings, $value) {
         $plan = $controller->get_plan();
         foreach ($settings as $config => $settingname) {
-            $value = true;
             if ($plan->setting_exists($settingname)) {
                 $setting = $plan->get_setting($settingname);
                 // We do not allow this setting to be locked for a duplicate function.

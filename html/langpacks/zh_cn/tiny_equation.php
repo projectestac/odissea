@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['buttontitle'] = '公式编辑器';
 $string['cursorinfo'] = '箭头表示插入新字符的位置。';
-$string['editequation'] = '使用 <a href=“{$a}” target=“_blank”>TeX 编辑公式</a>';
+$string['editequation'] = '使用 <a href="{$a}" target="_blank">TeX</a> 编辑公式';
 $string['helplinktext'] = '公式帮助';
 $string['librarygroup1'] = '运算符';
 $string['librarygroup1_desc'] = '运算符标签页的 TeX 命令。';

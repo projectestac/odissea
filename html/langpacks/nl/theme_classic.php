@@ -33,7 +33,7 @@ $string['pluginname'] = 'Klassiek';
 $string['preset'] = 'Thema preset';
 $string['preset_desc'] = 'Kies een preset om de algemene look van het thema te wijzigen';
 $string['presetfiles'] = 'Bijkomende thema presets';
-$string['presetfiles_desc'] = 'Preset-bestanden kunnen gebruikt worden om het uiterlijk van het thema grondig te veranderen. Zie <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> voor informatie over het maken en delen van je preset-bestanden en zie <a href="https://moodle.net/search?q=boost+presets">Presets repository</a> voor presets die anderen hebben gedeeld.';
+$string['presetfiles_desc'] = 'Preset-bestanden kunnen gebruikt worden om het uiterlijk van het thema grondig te veranderen.';
 $string['privacy:metadata'] = 'Het klassieke thema bewaart geen persoonlijke gegevens.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';

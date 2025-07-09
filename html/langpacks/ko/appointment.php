@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsession'] = '세션 추가';
+$string['entitiysession'] = '세션';
+$string['error:eventoccurred'] = '이미 발생한 이벤트를 취소할 수 없습니다.';
+$string['error:invaliduserid'] = '유효하지 않은 유저 ID';
+$string['eventdeletesession'] = '세션 삭제';
+$string['location'] = '위치';
 $string['modulename_link'] = 'Appointments';

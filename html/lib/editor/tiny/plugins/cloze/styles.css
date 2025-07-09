@@ -1,17 +1,13 @@
-@media (min-width: 992px) {
-    .tiny_cloze .form-control {
-        width: 500px;
-    }
-    .tiny_cloze_col0 .form-group {
-        width: 550px;
-    }
+.tiny_cloze .tiny_cloze_fraction {
+    max-width: fit-content;
 }
-
 .tiny_cloze img {
     cursor: pointer;
     width: 0.8rem;
 }
-
+.tiny_cloze .col-2 label {
+    margin-top: 0.5rem;
+}
 .tiny_cloze .error {
     border-color: red;
 }

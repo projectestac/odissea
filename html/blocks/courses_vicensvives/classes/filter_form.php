@@ -31,7 +31,7 @@ class filter_form extends \moodleform {
         $search = $this->_customdata['search'];
 
         $mform->addElement('header', 'search', get_string('search'));
-        if (!$search['fullname'] and !$search['idsubject'] and !$search['idlevel'] and !$search['isbn']) {
+        if (!$search['fullname'] && !$search['idsubject'] && !$search['idlevel'] && !$search['isbn']) {
             $mform->setExpanded('search', false, true);
         }
 
@@ -55,9 +55,9 @@ class filter_form extends \moodleform {
         $mform->setType('isbn', PARAM_TEXT);
         $mform->setDefault('isbn', $search['isbn']);
 
-        $buttonarray = array();
+        $buttonarray = [];
         $buttonarray[] = &$mform->createElement('submit', 'search', get_string('search'));
         $buttonarray[] = &$mform->createElement('cancel', 'reset', get_string('reset'));
-        $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
+        $mform->addGroup($buttonarray, 'buttonar', '', [' '], false);
     }
 }

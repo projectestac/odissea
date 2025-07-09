@@ -35,6 +35,7 @@ final class sectiondelegate_test extends \advanced_testcase {
     public static function setUpBeforeClass(): void {
         global $CFG;
         require_once($CFG->libdir . '/tests/fixtures/sectiondelegatetest.php');
+        parent::setUpBeforeClass();
     }
 
     /**
@@ -76,6 +77,33 @@ final class sectiondelegate_test extends \advanced_testcase {
     }
 
     /**
+     * Test that the instance method returns null when the delegate class is disabled.
+     *
+     * @covers ::instance
+     */
+    public function test_instance_disabled(): void {
+        global $DB;
+        $this->resetAfterTest();
+
+        $course = $this->getDataGenerator()->create_course(['format' => 'topics', 'numsections' => 3]);
+
+        // Section 2 has an existing delegate class.
+        course_update_section(
+            $course,
+            $DB->get_record('course_sections', ['course' => $course->id, 'section' => 2]),
+            [
+                'component' => 'test_component',
+                'itemid' => testsectiondelegate::DISABLEDITEMID,
+            ]
+        );
+
+        $modinfo = get_fast_modinfo($course->id);
+        $sectioninfos = $modinfo->get_section_info_all();
+
+        $this->assertNull(sectiondelegate::instance($sectioninfos[2]));
+    }
+
+    /**
      * Test has_delegate_class().
      *
      * @covers ::has_delegate_class
@@ -100,13 +128,13 @@ final class sectiondelegate_test extends \advanced_testcase {
 
         $sectioninfo = formatactions::section($course)->create_delegated('test_component', 1);
 
-        /** @var testsectiondelegate */
+        /** @var testsectiondelegate $delegated */
         $delegated = $sectioninfo->get_component_instance();
 
         $format = course_get_format($course);
 
         $outputclass = $format->get_output_classname('content\\section\\controlmenu');
-        /** @var \core_courseformat\output\local\content\section\controlmenu */
+        /** @var \core_courseformat\output\local\content\section\controlmenu $controlmenu */
         $controlmenu = new $outputclass($format, $sectioninfo);
         $renderer = $PAGE->get_renderer('format_' . $course->format);
         $sectionmenu = $controlmenu->get_action_menu($renderer);
@@ -140,5 +168,22 @@ final class sectiondelegate_test extends \advanced_testcase {
         $delegated->set_section_action_menu(null);
         $result = $delegated->get_section_action_menu($format, $controlmenu, $renderer);
         $this->assertNull($result);
+    }
+
+    /**
+     * Test get_parent_section().
+     *
+     * @covers ::get_parent_section
+     */
+    public function test_get_parent_section(): void {
+        $this->resetAfterTest();
+
+        $course = $this->getDataGenerator()->create_course(['format' => 'topics', 'numsections' => 1]);
+        $sectioninfo = formatactions::section($course)->create_delegated('test_component', 1);
+
+        /** @var testsectiondelegate $delegated */
+        $delegated = $sectioninfo->get_component_instance();
+
+        $this->assertNull($delegated->get_parent_section());
     }
 }

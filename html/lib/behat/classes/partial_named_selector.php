@@ -265,6 +265,9 @@ XPATH
 .//li[contains(concat(' ', normalize-space(@class), ' '), ' section ')][./descendant::*[self::h3]
     [normalize-space(.) = %locator%][contains(concat(' ', normalize-space(@class), ' '), ' sectionname ') or
     contains(concat(' ', normalize-space(@class), ' '), ' section-title ')]] |
+.//li[contains(concat(' ', normalize-space(@class), ' '), ' section ')][./descendant::*[self::h4]
+    [normalize-space(.) = %locator%][contains(concat(' ', normalize-space(@class), ' '), ' sectionname ') or
+    contains(concat(' ', normalize-space(@class), ' '), ' section-title ')]] |
 .//div[contains(concat(' ', normalize-space(@class), ' '), ' sitetopic ')]
     [./descendant::*[self::h2][normalize-space(.) = %locator%] or %locator% = 'frontpage']
 XPATH
@@ -335,7 +338,7 @@ XPATH
 XPATH
         ,
             'select_menu' => <<<XPATH
-//*[@role='combobox'][@aria-labelledby = //label[contains(normalize-space(string(.)), %locator%)]/@id]
+//*[@role='combobox'][@aria-labelledby = //span[contains(normalize-space(string(.)), %locator%)]/@id]
 XPATH
         ,
         ],

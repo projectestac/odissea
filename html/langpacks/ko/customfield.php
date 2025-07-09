@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action'] = '동작';
+$string['addingnewcustomfield'] = '새 {$a} 추가';
+$string['addnewcategory'] = '새 카테고리 추가';
 $string['defaultvalue'] = '디폴트 값';
 $string['edit'] = '수정';

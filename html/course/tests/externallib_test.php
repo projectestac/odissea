@@ -47,6 +47,7 @@ final class externallib_test extends externallib_advanced_testcase {
     protected function setUp(): void {
         global $CFG;
         require_once($CFG->dirroot . '/course/externallib.php');
+        parent::setUp();
     }
 
     /**
@@ -891,6 +892,49 @@ final class externallib_test extends externallib_advanced_testcase {
             'value' => userdate(1580389200),
             'valueraw' => 1580389200,
         ], reset($course['customfields']));
+
+        // Set the multilang filter to apply to strings + reset filer caches.
+        filter_set_global_state('multilang', TEXTFILTER_ON);
+        filter_set_applies_to_strings('multilang', true);
+        \filter_manager::reset_caches();
+
+        // Let's create a custom field (number), and test the placeholders/multilang display.
+        /** @var core_customfield_generator $cfgenerator */
+        $cfgenerator = $this->getDataGenerator()->get_plugin_generator('core_customfield');
+        $numberfieldata = [
+            'categoryid' => $fieldcategory->get('id'),
+            'name' => 'Price',
+            'shortname' => 'price',
+            'type' => 'number',
+            'configdata' => [
+                'display' => '{value}',
+                'decimalplaces' => 2,
+            ],
+        ];
+
+        // Create a number custom field with default display template.
+        $numberfield = $cfgenerator->create_field($numberfieldata);
+        $cfgenerator->add_instance_data($numberfield, $newcourse->id, 15);
+
+        // Create a number custom field with multilang display template.
+        $numberfieldata['name'] = 'Price (multilang)';
+        $numberfieldata['shortname'] = 'pricemultilang';
+        $numberfieldata['configdata']['display'] = '<span lang="en" class="multilang">$ {value}</span>'
+            . '<span lang="es" class="multilang">€ {value}</span>';
+        $numberfield1 = $cfgenerator->create_field($numberfieldata);
+        $cfgenerator->add_instance_data($numberfield1, $newcourse->id, 20);
+
+        $courses = external_api::clean_returnvalue(
+            core_course_external::get_courses_returns(),
+            core_course_external::get_courses(['ids' => [$newcourse->id]])
+        );
+
+        $course = reset($courses);
+        $this->assertCount(3, $course['customfields']);
+
+        // Assert the received number custom fields display placeholders correctly with multilang filter when applied.
+        $this->assertEquals('15.00', $course['customfields'][1]['value']);
+        $this->assertEquals('$ 20.00', $course['customfields'][2]['value']);
     }
 
     /**
@@ -1170,6 +1214,9 @@ final class externallib_test extends externallib_advanced_testcase {
         $sections = core_course_external::get_course_contents($course->id, array());
         // We need to execute the return values cleaning process to simulate the web service server.
         $sections = external_api::clean_returnvalue(core_course_external::get_course_contents_returns(), $sections);
+
+        $this->assertEmpty($sections[0]['component']);
+        $this->assertEmpty($sections[0]['itemid']);
 
         $modinfo = get_fast_modinfo($course);
         $testexecuted = 0;
@@ -1846,6 +1893,54 @@ final class externallib_test extends externallib_advanced_testcase {
         $result = core_course_external::get_course_contents($course->id);
         $this->assertDebuggingCalled();
         $result = external_api::clean_returnvalue(core_course_external::get_course_contents_returns(), $result);
+    }
+
+    /**
+     * Test get_course_contents for courses with sub-sections.
+     *
+     * @covers ::get_course_contents
+     */
+    public function test_get_course_contents_subsections(): void {
+        global $DB, $PAGE;
+        $this->resetAfterTest();
+
+        list($course, $forumcm, $datacm, $pagecm, $labelcm, $urlcm) = $this->prepare_get_course_contents_test();
+
+        // Add subsection.
+        $manager = \core_plugin_manager::resolve_plugininfo_class('mod');
+        $manager::enable_plugin('subsection', 1);
+        $modsubsection = $this->getDataGenerator()->create_module('subsection', ['course' => $course->id, 'section' => 2]);
+
+        // This is needed until MDL-76728 is resolved.
+        $PAGE->set_url('/course/view.php', ['id' => $course->id]);
+
+        $result = core_course_external::get_course_contents($course->id);
+        $result = external_api::clean_returnvalue(core_course_external::get_course_contents_returns(), $result);
+
+        $this->assertCount(5, $result); // We have 4 original sections plus the one created by mod_subsection.
+
+        foreach ($result as $section) {
+
+            if ($section['section'] == 5) { // This is the new section created by modsubsection.
+                $this->assertEquals('mod_subsection', $section['component']);
+                $this->assertEquals($modsubsection->id, $section['itemid']);
+            } else {
+                $this->assertEmpty($section['component']);
+                $this->assertEmpty($section['itemid']);
+            }
+
+            if ($section['section'] == 2) { // This is the section where mod_subsection is.
+                foreach ($section['modules'] as $module) {
+                    if ($module['modname'] == 'subsection') {
+                        $this->assertNotEmpty($module['customdata']);
+                        $customdata = json_decode($module['customdata']);
+                        $lastsection = end($result);
+                        // Customdata contains the section id of the section created by the module.
+                        $this->assertEquals($lastsection['id'], $customdata->sectionid);
+                    }
+                }
+            }
+        }
     }
 
     /**
@@ -2857,8 +2952,13 @@ final class externallib_test extends externallib_advanced_testcase {
 
         $category1 = self::getDataGenerator()->create_category(array('name' => 'Cat 1'));
         $category2 = self::getDataGenerator()->create_category(array('parent' => $category1->id));
-        $course1 = self::getDataGenerator()->create_course(
-            array('category' => $category1->id, 'shortname' => 'c1', 'format' => 'topics'));
+        $numsections = 4;
+        $course1 = self::getDataGenerator()->create_course([
+            'category' => $category1->id,
+            'shortname' => 'c1',
+            'format' => 'topics',
+            'numsections' => $numsections,
+        ]);
 
         $fieldcategory = self::getDataGenerator()->create_custom_field_category(['name' => 'Other fields']);
         $customfield = ['shortname' => 'test', 'name' => 'Custom field', 'type' => 'text',
@@ -3062,6 +3162,20 @@ final class externallib_test extends externallib_advanced_testcase {
         $this->assertCount(0, $result['courses']);
 
         $result = core_course_external::get_courses_by_field('idnumber', 'x');
+        $result = external_api::clean_returnvalue(core_course_external::get_courses_by_field_returns(), $result);
+        $this->assertCount(0, $result['courses']);
+
+        $existingsections = $DB->get_records('course_sections', ['course' => $course1->id]);
+        $this->assertEquals(count($existingsections), $numsections + 1); // Includes generic section.
+
+        $section = array_shift($existingsections);
+        $result = core_course_external::get_courses_by_field('sectionid', $section->id);
+        $result = external_api::clean_returnvalue(core_course_external::get_courses_by_field_returns(), $result);
+        $this->assertCount(1, $result['courses']);
+        $this->assertEquals($course1->id, $result['courses'][0]['id']);
+
+        // Wrong section.
+        $result = core_course_external::get_courses_by_field('sectionid', 1234);
         $result = external_api::clean_returnvalue(core_course_external::get_courses_by_field_returns(), $result);
         $this->assertCount(0, $result['courses']);
     }
@@ -3850,6 +3964,12 @@ final class externallib_test extends externallib_advanced_testcase {
         $this->assignUserCapability('moodle/user:viewdetails', $usercontext, $teacherroleid);
 
         // Sorted by course id DESC.
+        // User without moodle/user:viewalldetails capability will not be able to see the course details.
+        $result = core_course_external::get_recent_courses($student->id);
+        $this->assertCount(0, $result);
+
+        // User with moodle/user:viewalldetails capability will be able to see the course details.
+        $this->assignUserCapability('moodle/user:viewalldetails', $usercontext, $teacherroleid);
         $result = core_course_external::get_recent_courses($student->id);
         $this->assertCount(1, $result);
         $this->assertEquals($courses[0]->id, array_shift($result)->id);
@@ -3953,6 +4073,12 @@ final class externallib_test extends externallib_advanced_testcase {
 
         $this->assertEquals(2, count($users['users']));
         $this->assertEquals($expectedusers, $users);
+
+        // Prohibit the capability for viewing course participants.
+        $this->unassignUserCapability('moodle/course:viewparticipants', null, null, $course1->id);
+        $this->expectException(required_capability_exception::class);
+        $this->expectExceptionMessage('Sorry, but you do not currently have permissions to do that (View participants)');
+        core_course_external::get_enrolled_users_by_cmid($forum1->cmid);
     }
 
     /**

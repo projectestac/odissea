@@ -27,7 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Attribuer le rôle « {$a->role_shortname} » à l’utilisateur « {$a->user_username} » dans le cours « {$a->course_shortname} » (identifiant {$a->course_id})';
 $string['assignrolefailed'] = 'Échec de l’attribution du rôle « {$a->role_shortname} » à l’utilisateur « {$a->user_username} » dans le cours « {$a->course_shortname} » (identifiant {$a->course_id})';
-$string['autocreate'] = 'Des cours peuvent être créés automatiquement si des inscriptions existent pour un cours qui n’existe pas encore dans Moodle.';
+$string['autocreate'] = '<p>Des cours peuvent être créés automatiquement si des inscriptions existent pour un cours qui n’existe pas encore dans Moodle.</p>
+<p>Si la création de cours automatique est utilisée, il est recommandé de retirer les capacités suivantes des rôles concernés pour éviter des modifications des champs de cours indiqués ci-dessus (ID number, shortname, fullname and summary) : moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary.</p>';
 $string['autocreate_key'] = 'Créer automatiquement';
 $string['autocreation_settings'] = 'Réglages de la création automatique de cours';
 $string['autoupdate_settings'] = 'Réglages de mise à jour automatique des cours';

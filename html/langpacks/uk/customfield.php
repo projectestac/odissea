@@ -85,6 +85,7 @@ $string['privacy:metadata:customfield_data:timecreated'] = 'Час створе�
 $string['privacy:metadata:customfield_data:timemodified'] = 'Час останньої зміни даних';
 $string['privacy:metadata:customfield_data:value'] = 'Значення даних, якщо це текст';
 $string['privacy:metadata:customfield_data:valueformat'] = 'Формат значення, якщо це текст';
+$string['privacy:metadata:customfield_data:valuetrust'] = 'Прапор довіри значення, якщо воно є текстом';
 $string['privacy:metadata:customfieldpluginsummary'] = 'Поля для різних компонентів';
 $string['privacy:metadata:filepurpose'] = 'Файл, вкладений до даних спеціального поля';
 $string['shortname'] = 'Коротке ім\'я';

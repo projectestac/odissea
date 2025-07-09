@@ -874,7 +874,7 @@ abstract class base {
      * of the view script, it is not enough to change just this function. Do not forget
      * to add proper redirection.
      *
-     * @param int|stdClass $section Section object from database or just field course_sections.section
+     * @param int|stdClass|section_info $section Section object from database or just field course_sections.section
      *     if null the course view page is returned
      * @param array $options options for view URL. At the moment core uses:
      *     'navigation' (bool) if true and section not empty, the function returns section page; otherwise, it returns course page.
@@ -1281,7 +1281,7 @@ abstract class base {
      * @param int|null $sectionid null if it is course format option
      * @return array array of options that have valid values
      */
-    protected function validate_format_options(array $rawdata, int $sectionid = null): array {
+    protected function validate_format_options(array $rawdata, ?int $sectionid = null): array {
         if (!$sectionid) {
             $allformatoptions = $this->course_format_options(true);
         } else {
@@ -1606,6 +1606,10 @@ abstract class base {
      * @return bool;
      */
     public function is_section_visible(section_info $section): bool {
+        // It is unlikely that a section is orphan, but it needs to be checked.
+        if ($section->is_orphan() && !has_capability('moodle/course:viewhiddensections', $this->get_context())) {
+            return false;
+        }
         // Previous to Moodle 4.0 thas logic was hardcoded. To prevent errors in the contrib plugins
         // the default logic is the same required for topics and weeks format and still uses
         // a "hiddensections" format setting.
@@ -2134,5 +2138,18 @@ abstract class base {
      */
     public function can_sections_be_removed_from_navigation(): bool {
         return false;
+    }
+
+    /**
+     * Determines whether the course module should display the activity editor options.
+     *
+     * @param cm_info $cm The activity module.
+     * @return bool True if the activity editor options are displayed, false otherwise.
+     */
+    public function show_activity_editor_options(cm_info $cm): bool {
+        if ($cm->get_delegated_section_info() && component_callback_exists('mod_' . $cm->modname, 'cm_info_view')) {
+            return false;
+        }
+        return true;
     }
 }

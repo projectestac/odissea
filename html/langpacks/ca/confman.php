@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions:export'] = 'Exporta';
 $string['comments'] = 'Comentaris';
+$string['none'] = 'Cap';

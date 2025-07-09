@@ -60,7 +60,9 @@
                 }
             ]
         },
-        "groupselector": "<div class='group-selector'></div>",
+        "searchdropdown": {"search dropdown": "context here"},
+        "groupselector": {"group selector": "context here"},
+        "initialselector": {"initial selector": "context here"},
         "collapsedcolumns": "<div class='collapse-columns'></div>",
         "pagereset": "http://moodle.local/grade/report/grader/index.php?id=2&userid=2&reset=1"
     }
@@ -81,7 +83,7 @@
         {{/searchdropdown}}
         {{#groupselector}}
             <div class="navitem">
-                {{{.}}}
+                {{>core/comboboxsearch}}
             </div>
             <div class="navitem-divider"></div>
         {{/groupselector}}
@@ -93,12 +95,12 @@
         {{/initialselector}}
         {{#pagereset}}
             <div class="navitem align-self-center">
-                <a href="{{{.}}}" class="btn btn-link">{{#str}}clearall, gradereport_grader{{/str}}</a>
+                <a href="{{{.}}}" class="btn btn-link">{{#str}}clearall, core{{/str}}</a>
             </div>
             <div class="navitem-divider"></div>
         {{/pagereset}}
         {{#collapsedcolumns}}
-            <div class="navitem flex-column align-self-center ml-auto {{#classes}}{{.}}{{/classes}}" aria-live="polite">
+            <div class="navitem flex-column align-self-center ms-auto {{#classes}}{{.}}{{/classes}}" aria-live="polite">
                 {{#content}}
                     {{>core/comboboxsearch}}
                 {{/content}}

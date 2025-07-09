@@ -88,42 +88,28 @@ class gradereport_user_renderer extends plugin_renderer_base {
      * @param object $course The course object.
      * @param int|null $userid The user ID.
      * @param int|null $groupid The group ID.
+     * @param string $usersearch Search string.
      * @return string The raw HTML to render.
      * @throws coding_exception
+     * @deprecated since Moodle 4.5. See user_selector use in \gradereport_user\output\action_bar::export_for_template.
      */
-    public function users_selector(object $course, ?int $userid = null, ?int $groupid = null): string {
+    public function users_selector(object $course, ?int $userid = null, ?int $groupid = null, string $usersearch = ''): string {
+
+        debugging('users_selector is deprecated.', DEBUG_DEVELOPER);
+
+        $courserenderer = $this->page->get_renderer('core', 'course');
         $resetlink = new moodle_url('/grade/report/user/index.php', ['id' => $course->id, 'group' => 0]);
-        $submitteduserid = optional_param('userid', '', PARAM_INT);
-
-        if ($submitteduserid) {
-            $user = core_user::get_user($submitteduserid);
-            $currentvalue = fullname($user);
-        } else {
-            $currentvalue = '';
-        }
-
-        $data = [
-            'currentvalue' => $currentvalue,
-            'instance' => rand(),
-            'resetlink' => $resetlink->out(false),
-            'name' => 'userid',
-            'value' => $submitteduserid ?? '',
-            'courseid' => $course->id,
-            'group' => $groupid ?? 0,
-        ];
-
-        $searchdropdown = new comboboxsearch(
-            true,
-            $this->render_from_template('core_user/comboboxsearch/user_selector', $data),
-            null,
-            'user-search d-flex',
-            null,
-            'usersearchdropdown overflow-auto',
-            null,
-            false,
+        $baseurl = new moodle_url('/grade/report/user/index.php', ['id' => $course->id]);
+        $this->page->requires->js_call_amd('gradereport_user/user', 'init', [$baseurl->out(false)]);
+        return $courserenderer->render(
+            new \core_course\output\actionbar\user_selector(
+                course: $course,
+                resetlink: $resetlink,
+                userid: $userid,
+                groupid: $groupid,
+                usersearch: $usersearch
+            )
         );
-        $this->page->requires->js_call_amd('gradereport_user/user', 'init');
-        return $this->render_from_template($searchdropdown->get_template(), $searchdropdown->export_for_template($this));
     }
 
     /**
@@ -186,8 +172,11 @@ class gradereport_user_renderer extends plugin_renderer_base {
      * @param int $userview The current view user setting constant
      * @param int $courseid The course ID.
      * @return string The raw HTML to render.
+     * @deprecated since Moodle 4.5 See select_menu use in \gradereport_user\output\action_bar::export_for_template.
      */
     public function view_mode_selector(int $userid, int $userview, int $courseid): string {
+
+        debugging('view_mode_selector is deprecated.', DEBUG_DEVELOPER);
 
         $viewasotheruser = new moodle_url('/grade/report/user/index.php', ['id' => $courseid, 'userid' => $userid,
             'userview' => GRADE_REPORT_USER_VIEW_USER]);

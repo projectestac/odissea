@@ -65,6 +65,7 @@ $string['disablefullscreen'] = '전체화면 끄기';
 $string['download'] = '다운로드';
 $string['downloadtitle'] = '이 콘텐츠를 H5P 파일로 다운로드';
 $string['editor'] = '편집기';
+$string['emailAddress'] = '이메일 주소';
 $string['embed'] = '소스';
 $string['embedtitle'] = '이 콘텐츠의 소스 코드를 확인하세요.';
 $string['fullscreen'] = '전체화면';

@@ -41,12 +41,12 @@ Feature: Bulk remove submissions
       | role                           | editingteacher |
       | mod/assign:editothersubmission | allow          |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I follow "View all submissions"
+    And I navigate to "Submissions" in current page administration
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"
-    When I set the field "operation" to "Remove submission"
-    And I click on "Go" "button" confirming the dialogue
+    And I click on "Delete" "button" in the "sticky-footer" "region"
+    And I click on "Delete" "button" in the "Remove submission" "dialogue"
     Then I should not see "I'm the student1 submission"
     And I should not see "I'm the student2 submission"
     And I log out
@@ -74,11 +74,11 @@ Feature: Bulk remove submissions
       | Test assignment name  | student2  | I'm the student2 submission  |
 
     When I am on the "Test assignment name" Activity page logged in as teacher1
-    And I follow "View all submissions"
+    And I navigate to "Submissions" in current page administration
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"
-    Then I should not see "Remove submission" in the "Choose operation" "select"
+    Then I should not see "Delete" in the "sticky-footer" "region"
 
   @javascript @skip_chrome_zerosize
   Scenario: Bulk remove submission when shared group users are added to the bulk
@@ -106,13 +106,13 @@ Feature: Bulk remove submissions
       | mod/assign:editothersubmission | allow          |
       | moodle/site:accessallgroups    | prevent        |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I follow "View all submissions"
+    And I navigate to "Submissions" in current page administration
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I should not see "I'm the student3 submission"
     And I set the field "selectall" to "1"
-    When I set the field "operation" to "Remove submission"
-    And I click on "Go" "button" confirming the dialogue
+    When I click on "Delete" "button" in the "sticky-footer" "region"
+    And I click on "Delete" "button" in the "Remove submission" "dialogue"
 
     Then I should not see "I'm the student1 submission"
     Then I should not see "I'm the student2 submission"
@@ -142,13 +142,13 @@ Feature: Bulk remove submissions
       | mod/assign:editothersubmission | allow          |
       | moodle/site:accessallgroups    | allow          |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I follow "View all submissions"
+    And I navigate to "Submissions" in current page administration
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I should see "I'm the student3 submission"
     And I set the field "selectall" to "1"
-    When I set the field "operation" to "Remove submission"
-    And I click on "Go" "button" confirming the dialogue
+    When I click on "Delete" "button" in the "sticky-footer" "region"
+    And I click on "Delete" "button" in the "Remove submission" "dialogue"
     Then I should not see "I'm the student1 submission"
     And I should not see "I'm the student2 submission"
     And I should not see "I'm the student3 submission"

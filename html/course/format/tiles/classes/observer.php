@@ -22,6 +22,7 @@
  */
 namespace format_tiles;
 use format_tiles\local\modal_helper;
+use format_tiles\local\video_cm;
 
 /**
  * Event observers supported by this format.
@@ -41,6 +42,7 @@ class observer {
         \format_tiles\local\tile_photo::delete_files_from_ids($courseid, -1);
         \format_tiles\local\format_option::unset_all_course($courseid);
         modal_helper::clear_cache_modal_cmids($courseid);
+        video_cm::clear_cached_cmids($courseid);
     }
 
     /**
@@ -64,7 +66,9 @@ class observer {
         if (modal_helper::mod_uses_cm_modal_cache($event->other['modulename'])) {
             modal_helper::clear_cache_modal_cmids($event->courseid, $event->other['modulename']);
         }
-
+        if ($event->other['modulename'] === 'url') {
+            video_cm::clear_cached_cmids($event->courseid);
+        }
     }
 
     /**
@@ -75,6 +79,9 @@ class observer {
         if (modal_helper::mod_uses_cm_modal_cache($event->other['modulename'])) {
             modal_helper::clear_cache_modal_cmids($event->courseid, $event->other['modulename']);
         }
+        if ($event->other['modulename'] === 'url') {
+            video_cm::clear_cached_cmids($event->courseid);
+        }
     }
 
     /**
@@ -84,6 +91,9 @@ class observer {
     public static function course_module_updated(\core\event\course_module_updated $event) {
         if (modal_helper::mod_uses_cm_modal_cache($event->other['modulename'])) {
             modal_helper::clear_cache_modal_cmids($event->courseid, $event->other['modulename']);
+        }
+        if ($event->other['modulename'] === 'url') {
+            video_cm::clear_cached_cmids($event->courseid);
         }
     }
 
@@ -108,6 +118,7 @@ class observer {
      */
     public static function course_restored(\core\event\course_restored $event) {
         modal_helper::clear_cache_modal_cmids($event->courseid);
+        video_cm::clear_cached_cmids($event->courseid);
     }
 
 }

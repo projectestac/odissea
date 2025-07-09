@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontfamily'] = 'Font family';
+$string['fontfamily:use'] = 'Allow the plugin usage';
 $string['fonts'] = 'Font families';
 $string['fonts_desc'] = 'List of available font families separated by a new line.';
 $string['menuitem_fontfamily'] = 'Font family';

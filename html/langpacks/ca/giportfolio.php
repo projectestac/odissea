@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['content'] = 'Contingut';
 $string['navnext'] = 'Següent';
+$string['numbering0'] = 'Cap';
 $string['private'] = 'Privat';
 $string['view'] = 'Visualitza';

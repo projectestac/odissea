@@ -186,6 +186,7 @@ $string['editsubmissionother'] = 'تحرير التسليم لـ {$a}';
 $string['enabled'] = 'مُمَكَّنة';
 $string['enabletimelimit'] = 'تمكين الواجبات الموقوتة';
 $string['enabletimelimit_help'] = 'عند تمكينه، ستتمكن من وضع محدد زمني في صفحة إعدادات الواجب.';
+$string['errorgradechangessaveddetail'] = 'فشل حفظ التغييرات في التقدير والإفادة';
 $string['errornosubmissions'] = 'لا يوجد تسليمات ليتم تنزيلها';
 $string['errorquickgradingvsadvancedgrading'] = 'لم يتم حفظ التقديرات لأن هذا الواجب يستعمل حالياً التقييم المتقدم';
 $string['errorrecordmodified'] = 'لم يتم حفظ الدرجات لأن شخصاً ما قام بتعديل سجل واحد أو أكثر في وقت أقرب من طلبك لهذه الصفحة.';
@@ -532,7 +533,7 @@ $string['submissioncopiedtext'] = 'لقد أنشأت نسخة من تسليمك 
 
     {$a->url}';
 $string['submissiondrafts'] = 'يتطلب الأمر أن يقوم الطلبة بالنقر على زر التسليم';
-$string['submissiondrafts_help'] = 'عند تمكينه، سيكون على الطلبة النقر على زر التسليم للتصريح بأن تسليمهم مكتمل بشكل نهائي. هذا يسمح للطلبة بالاحتفاظ بنسخة مسودة من التسليم في النظام. إذا تم تغيير هذا الإعداد من "لا" إلى "نعم" بعد قيام الطلبة بالتسليم فعلياً، فإن تلك التسليمات سيتم اعتبارها نهائية.';
+$string['submissiondrafts_help'] = 'هل ينبغي أن يكون لدى الطلبة زر للتسليم للاستجابة لرغبتهم في التسليم بعد إكمالهم للتغييرات وجهوزيتهم للحصول على تقييم.';
 $string['submissioneditable'] = 'يمكن للطالب تحرير هذا التسليم';
 $string['submissionempty'] = 'لم يتم تسليم شيء بعد';
 $string['submissionlog'] = 'الطالب: {$a->fullname}، الحالة: {$a->status}';

@@ -23,7 +23,6 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-require_once($CFG->dirroot . '/cache/lib.php');
 require_once($CFG->dirroot . '/backup/util/includes/backup_includes.php');
 require_once($CFG->dirroot . '/backup/util/includes/restore_includes.php');
 
@@ -178,12 +177,7 @@ class tool_uploadcourse_helper {
      * @return enrol_plugin[]
      */
     public static function get_enrolment_plugins() {
-        $cache = cache::make('tool_uploadcourse', 'helper');
-        if (($enrol = $cache->get('enrol')) === false) {
-            $enrol = enrol_get_plugins(false);
-            $cache->set('enrol', $enrol);
-        }
-        return $enrol;
+        return enrol_get_plugins(false);
     }
 
     /**

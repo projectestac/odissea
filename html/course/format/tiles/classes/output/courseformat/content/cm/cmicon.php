@@ -40,16 +40,14 @@ class cmicon extends \core_courseformat\output\local\content\cm\cmicon {
      * @return \array data context for a mustache template
      */
     public function export_for_template(\renderer_base $output): array {
-        global $DB;
         $data = parent::export_for_template($output);
         if ($this->mod->modname == 'url') {
-            $externalurl = $DB->get_field('url', 'externalurl', ['id' => $this->mod->instance]);
-            if (\format_tiles\output\course_output::is_video_url($externalurl)) {
+            if (\format_tiles\local\video_cm::is_video_cm($this->mod->course, $this->mod->id)) {
                 $data['icon'] = $output->image_url('play', 'format_tiles');
                 $data['pluginname'] = get_string('displaytitle_mod_mp4', 'format_tiles');
                 $data['formattilesclass'] = 'format-tiles-video';
             }
-        } else if ($this->mod->modname == 'bigbluebuttonbn') {
+        } else if (!\format_tiles\local\util::has_monologo_icon('mod', $this->mod->modname)) {
             $data['iconclass'] .= 'nofilter';
         }
         return $data;

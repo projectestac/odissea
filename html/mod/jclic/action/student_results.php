@@ -43,6 +43,8 @@ $context = context_module::instance($cm->id);
 
 require_capability('mod/jclic:view', $context);
 
+$strpercent = $jclic->maxgrade == 100 ? '%' : '';
+
 $strjclics = get_string("modulenameplural", "jclic");
 $strstarttime = get_string("starttime", "jclic");
 $strscore = get_string("score", "jclic");
@@ -78,10 +80,10 @@ if (count($sessions) > 0) {
     // Print session data
     foreach ($sessions as $session) {
         $starttime = '<a href="#" onclick="showSessionActivities(\'' . $session->session_id . '\');">' . date('d/m/Y H:i', strtotime($session->starttime)) . '</a>';
-        $table->data[] = array($starttime, $session->score . '%', $session->totaltime, $session->solved . ' / ' . $session->done, $session->attempts . ($jclic->maxattempts > 0 ? '/' . $jclic->maxattempts : ''));
+        $table->data[] = array($starttime, $session->score . $strpercent, $session->totaltime, $session->solved . ' / ' . $session->done, $session->attempts . ($jclic->maxattempts > 0 ? '/' . $jclic->maxattempts : ''));
 
         // Print activities for each session
-        $session_activities_html = jclic_get_session_activities_html($session->session_id);
+        $session_activities_html = jclic_get_session_activities_html($session->session_id, $strpercent);
         $cell = new html_table_cell();
         $cell->text = $session_activities_html;
         $cell->colspan = 5;
@@ -97,7 +99,7 @@ if (count($sessions) > 0) {
         $sessions_summary = jclic_get_sessions_summary($jclic->id, $USER->id);
         $table->data[] = [
             '<b>' . $strtotals . '</b>',
-            '<b>' . $sessions_summary->score . '%</b>',
+            '<b>' . $sessions_summary->score . $strpercent. '</b>',
             '<b>' . $sessions_summary->totaltime . '</b>',
             '<b>' . $sessions_summary->solved . ' / ' . $sessions_summary->done . '</b>',
             '<b>' . $sessions_summary->attempts . '</b>',

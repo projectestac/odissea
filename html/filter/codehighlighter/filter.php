@@ -15,38 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Code highlighter filter.
+ * File only retained to prevent fatal errors in code that tries to require/include this.
  *
- * Filter converting text code into a well-styled block of code.
- *
- * @package    filter_codehighlighter
- * @copyright  2023 Meirza <meirza.arson@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @todo MDL-82708 delete this file as part of Moodle 6.0 development.
+ * @deprecated This file is no longer required in Moodle 4.5+.
+ * @package filter_codehighlighter
+ * @copyright Meirza <meirza.arson@moodle.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class filter_codehighlighter extends moodle_text_filter {
-    /**
-     * Apply the filter to the text
-     *
-     * @param string $text to be processed by the text
-     * @param array $options filter options
-     * @return string text after processing
-     */
-    public function filter($text, array $options = []): string {
-        global $PAGE;
+defined('MOODLE_INTERNAL') || die();
 
-        if (!isset($options['originalformat'])) {
-            return $text;
-        }
-
-        // The pattern.
-        $re = '/<pre.+?class=".*?language-.*?"><code>/i';
-
-        // Stops looking after the first match.
-        preg_match($re, $text, $matches);
-        if ($matches) {
-            $PAGE->requires->js_call_amd('filter_codehighlighter/prism-init');
-        }
-
-        return $text;
-    }
-}
+debugging('This file is no longer required in Moodle 4.5+. Please do not include/require it.', DEBUG_DEVELOPER);

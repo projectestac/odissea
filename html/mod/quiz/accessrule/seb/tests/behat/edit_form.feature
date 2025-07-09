@@ -8,6 +8,7 @@ Feature: Safe Exam Browser settings in quiz edit form
     And the following "activities" exist:
       | activity | course | section | name   |
       | quiz     | C1     | 1       | Quiz 1 |
+      | quiz     | C1     | 1       | Quiz 2 |
 
   Scenario: Quiz setting "Require the use of Safe Exam Browser" has all types, except "Use an existing template".
     When I am on the "Quiz 1" "quiz activity editing" page logged in as admin
@@ -38,13 +39,13 @@ Feature: Safe Exam Browser settings in quiz edit form
       | contextlevel | System                               |
       | reference    |                                      |
     And the following "user" exists:
-      | username     | teacher |
-      | firstname    | Teacher |
-      | lastname     | One     |
+      | username  | teacher |
+      | firstname | Teacher |
+      | lastname  | One     |
     And the following "course enrolment" exists:
-      | user         | teacher        |
-      | course       | C1             |
-      | role         | editingteacher |
+      | user   | teacher        |
+      | course | C1             |
+      | role   | editingteacher |
     And I log in as "teacher"
     # Create the quiz.
     When I add a quiz activity to course "Course 1" section "0" and I fill the form with:
@@ -80,6 +81,8 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should not see "Show Wi-Fi control"
     Then I should not see "Enable audio controls"
     Then I should not see "Mute on startup"
+    Then I should not see "Allow browser access to camera"
+    Then I should not see "Allow browser access to microphone"
     Then I should not see "Enable spell checking"
     Then I should not see "Enable URL filtering"
     Then I should not see "Filter also embedded content"
@@ -112,6 +115,8 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should not see "Show Wi-Fi control"
     Then I should not see "Enable audio controls"
     Then I should not see "Mute on startup"
+    Then I should not see "Allow browser access to camera"
+    Then I should not see "Allow browser access to microphone"
     Then I should not see "Enable spell checking"
     Then I should not see "Enable URL filtering"
     Then I should not see "Filter also embedded content"
@@ -142,6 +147,8 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should not see "Show Wi-Fi control"
     Then I should not see "Enable audio controls"
     Then I should not see "Mute on startup"
+    Then I should not see "Allow browser access to camera"
+    Then I should not see "Allow browser access to microphone"
     Then I should not see "Enable spell checking"
     Then I should not see "Enable URL filtering"
     Then I should not see "Filter also embedded content"
@@ -176,6 +183,8 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should not see "Show Wi-Fi control"
     Then I should not see "Enable audio controls"
     Then I should not see "Mute on startup"
+    Then I should not see "Allow browser access to camera"
+    Then I should not see "Allow browser access to microphone"
     Then I should not see "Enable spell checking"
     Then I should not see "Enable URL filtering"
     Then I should not see "Filter also embedded content"
@@ -206,6 +215,8 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should see "Show Wi-Fi control"
     Then I should see "Enable audio controls"
     Then I should not see "Mute on startup"
+    Then I should see "Allow browser access to camera"
+    Then I should see "Allow browser access to microphone"
     Then I should see "Enable spell checking"
     Then I should see "Enable URL filtering"
     Then I should not see "Filter also embedded content"
@@ -232,3 +243,34 @@ Feature: Safe Exam Browser settings in quiz edit form
     Then I should not see "Allowed browser exam keys"
     Then I should not see "Safe Exam Browser config template"
     Then I should not see "Template 1"
+
+  Scenario: Disable templates that are already in use and seeing their visibility in settings
+    Given the following "quizaccess_seb > seb templates" exist:
+      | name       | enabled |
+      | Template 1 | 1       |
+      | Template 2 | 0       |
+    # Set Quiz 1 template to Template 1
+    When I am on the "Quiz 1" "quiz activity editing" page logged in as admin
+    And I expand all fieldsets
+    And I set the field "Require the use of Safe Exam Browser" to "Yes – Use an existing template"
+    Then I should see "Safe Exam Browser config template"
+    And the "Safe Exam Browser config template" select box should contain "Template 1"
+    And the "Safe Exam Browser config template" select box should not contain "Template 2"
+    And I set the field "Safe Exam Browser config template" to "Template 1"
+    And I press "Save and return to course"
+    # Disable Template 1
+    And I navigate to "Plugins > Activity modules > Quiz > Safe Exam Browser templates" in site administration
+    And I click on "Edit" "link" in the "Template 1" "table_row"
+    And I set the field "Enabled" to "No"
+    And I press "Save changes"
+    # Check Quiz 1 is still using Template 1
+    When I am on the "Quiz 1" "quiz activity editing" page logged in as admin
+    And I expand all fieldsets
+    And the field "Require the use of Safe Exam Browser" matches value "Yes – Use an existing template"
+    Then I should see "Template 1"
+    And the "Safe Exam Browser config template" select box should contain "Template 1"
+    And the "Safe Exam Browser config template" select box should not contain "Template 2"
+    # Check Quiz 3 cannot use any templates as they're all disabled
+    When I am on the "Quiz 2" "quiz activity editing" page logged in as admin
+    And I expand all fieldsets
+    And the "Require the use of Safe Exam Browser" select box should not contain "Yes – Use an existing template"

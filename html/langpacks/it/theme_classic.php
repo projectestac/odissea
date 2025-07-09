@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'Preimpostazioni del tema';
 $string['preset_desc'] = 'Seleziona una preimpostazione per cambiare il look del tema.';
 $string['presetfiles'] = 'File di preset addizionali del tema';
-$string['presetfiles_desc'] = 'I file di preset possono essere utilizzati per modificare radicalmente l\'aspetto del tema. Consultare <a href="https://docs.moodle.org/dev/Boost_Presets">Preset Boost</a> per informazioni sulla creazione e la condivisione dei file di preset e consultare il <a href="https://moodle.net/search?q=boost+presets">repository dei preset</a> per i preset condivisi da altri.';
+$string['presetfiles_desc'] = 'I file di preset possono essere utilizzati per modificare radicalmente l\'aspetto del tema.';
 $string['privacy:metadata'] = 'Il tema Classic non memorizza dati personali.';
 $string['region-side-post'] = 'Destra';
 $string['region-side-pre'] = 'Sinistra';

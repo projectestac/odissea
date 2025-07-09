@@ -177,7 +177,8 @@ class global_navigation_wrapper {
             if ($course->id == $SITE->id) {
                 $this->load_section_activities($coursenode, $section, $activities); // CHANGED: Pass section info rather than num.
             } else {
-                if ((!$section->uservisible && $section->section != 0) || (!$this->innershowemptysections &&
+                if (!(($section->section == 0) || $section->uservisible && course_get_format($course)->is_section_visible($section))
+                    || (!$this->innershowemptysections &&
                         !$section->hasactivites && !$sectionextra->hassubsections
                         && $this->inner->includesectionnum !== $section->section    // TODO: Remove?
                         && $this->innerincludesectionid !== $section->id)) {

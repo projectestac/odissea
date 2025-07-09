@@ -45,16 +45,20 @@ class sectionnavigation extends sectionnavigation_base {
     /** @var \format_multitopic\section_info_extra Multitopic-specific section information */
     protected $fmtsectionextra;
 
-    /** @var stdClass the calculated data to prevent calculations when rendered several times */
-    private $data = null;
+    /**
+     * @var stdClass the calculated data to prevent calculations when rendered several times
+     * Redeclaration deprecated since 5.0, see MDL-72526.
+     */
+    protected $data = null;
 
     /**
      * Constructor.
      *
      * @param course_format $format the course format
-     * @param \section_info $section section info
+     * @param \section_info|int $section section info or number
      */
     public function __construct(course_format $format, $section) {
+        $section = is_object($section) ? $section : $format->get_section($section);
         parent::__construct($format, $section->section);
         $this->section = $section;
         $this->fmtsectionextra = $format->fmt_get_section_extra($section);
@@ -90,7 +94,7 @@ class sectionnavigation extends sectionnavigation_base {
         while (isset($backextra->prevpageid)) {
             $backextra = $sectionsextra[$backextra->prevpageid];
             $back = $backextra->sectionbase;
-            if ($back->uservisible) {
+            if (($back->section == 0) || $back->uservisible && $format->is_section_visible($back)) {
                 $data->previousname = get_section_name($course, $back);
                 $data->previousurl = course_get_url($course, $back);
                 $data->hasprevious = true;
@@ -103,7 +107,7 @@ class sectionnavigation extends sectionnavigation_base {
         while (isset($nextextra->nextpageid)) {
             $nextextra = $sectionsextra[$nextextra->nextpageid];
             $next = $nextextra->sectionbase;
-            if ($next->uservisible) {
+            if (($next->section == 0) || $next->uservisible && $format->is_section_visible($next)) {
                 $data->nextname = get_section_name($course, $next);
                 $data->nexturl = course_get_url($course, $next);
                 $data->hasnext = true;

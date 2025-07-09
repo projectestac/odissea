@@ -208,7 +208,7 @@ $string['backuplogdetailed'] = '详细的运行日志';
 $string['backuploglaststatus'] = '最后的运行日志';
 $string['backupmissinguserinfoperms'] = '注意：本次备份不包含用户数据。“练习”模块和“工作室”模块与此种备份不兼容，所以它们完全不被备份。';
 $string['backupnext'] = '下一次备份';
-$string['backupnonisowarning'] = '警告：此备份来自 Moodle 的非 Unicode 版本（1.6 之前的版本）。如果此备份包含任何非 ISO-8859-1 文本它们可能已损坏，那么如果您尝试将它们还原到此 Unicode 版本的 Moodle，有关如何正确恢复此备份的更多信息，请参阅 <a href=“https://docs.moodle.org/en/Backup_FAQ”>Backup 常见问题解答</a>。';
+$string['backupnonisowarning'] = '警告：此备份来自非 Unicode 版本的 Moodle（1.6 版本之前）。如果此备份包含任何非 ISO-8859-1 文本，则在尝试将它们恢复到此 Unicode 版本的 Moodle 时可能会损坏。有关如何正确恢复此备份的更多信息，请参阅<a href="https://docs.moodle.org/en/Backup_FAQ">备份常见问题解答</a>。';
 $string['backupnotyetrun'] = '自动备份暂停';
 $string['backuporiginalname'] = '备份名称';
 $string['backuproleassignments'] = '备份这些角色的角色分配';
@@ -375,7 +375,7 @@ $string['country'] = '国家或地区';
 $string['course'] = '课程';
 $string['courseadministration'] = '课程管理';
 $string['courseapprovedemail'] = '您申请的课程已获批准，<a href="{$a->url}">{$a->name}</a>，并且您是 {$a->teacher}。';
-$string['courseapprovedemail2'] = '您申请的课程已获得批准：<a href=“{$a->url}”>{$a->name}</a>。';
+$string['courseapprovedemail2'] = '您申请开课已获批准：<a href="{$a->url}">{$a->name}</a>。';
 $string['courseapprovedfailed'] = '‎未能将课程保存为已批准！';
 $string['courseapprovedsubject'] = '您的课程已经通过';
 $string['courseavailable'] = '该课程允许学生学习';
@@ -483,7 +483,7 @@ $string['coursesummary'] = '课程概要';
 $string['coursesummary_help'] = '课程的简短描述。您在此处添加的内容是可搜索的。';
 $string['coursetitle'] = '课程： {$a->course}';
 $string['coursetitlebulkediting'] = '批量修改课程:($a->course)';
-$string['coursetitleediting'] = '课程修改:($a->course)';
+$string['coursetitleediting'] = '课程修改：{$a->course}';
 $string['courseupdates'] = '课程更新';
 $string['coursevisibility'] = '课程可见性';
 $string['coursevisibility_help'] = '* 显示：课程显示在课程列表中，学生可以访问它。
@@ -1056,7 +1056,7 @@ $string['groupremove'] = '删除选定的组';
 $string['groupremovemembers'] = '删除选定的成员';
 $string['groups'] = '小组';
 $string['groupsnone'] = '无小组';
-$string['groupsseparate'] = '分隔小组';
+$string['groupsseparate'] = '独立小组';
 $string['groupsvisible'] = '可视小组';
 $string['guest'] = '访客';
 $string['guestdescription'] = '访客拥有最小的权限，而且通常不能在任何地方输入文本。';
@@ -2008,7 +2008,7 @@ $string['selectedfile'] = '已选文件';
 $string['selectednowmove'] = '{$a}个文件要被移动位置。现在请前往目的地址点击“移动文件到这里”';
 $string['selectfiles'] = '选择文件';
 $string['selectfiltertype'] = '选择';
-$string['selectgroupsseparate'] = '选择不同的组别';
+$string['selectgroupsseparate'] = '选择独立小组';
 $string['selectgroupsvisible'] = '选择可见的组别';
 $string['selectitem'] = '选择“{$a}”';
 $string['selectmoduletoviewhelp'] = '选择一个活动或资源来查看其帮助。
@@ -2420,9 +2420,9 @@ $string['welcomeback'] = '你好，{$a->firstname}！👋';
 $string['welcometocourse'] = '欢迎加入{$a}';
 $string['welcometocoursetext'] = '欢迎来到 {$a->coursename}！
 
-如果您还没有这样做，您应该编辑您的个人资料页面，以便我们可以更多地了解您：
+若您还没编辑个人资料页面，建议您现在去编辑一下，这样我们就能更了解您：
 
-<a href=“{$a->profileurl}”>{$a->profileurl}</a>';
+<a href="{$a->profileurl}">{$a->profileurl}</a>';
 $string['welcometosite'] = '欢迎，{$a->firstname}！👋';
 $string['whatforlink'] = '你要如何处理这一链接？';
 $string['whatforpage'] = '你要如何处理这段文字？';

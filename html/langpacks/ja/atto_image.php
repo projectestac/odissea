@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alignment'] = 'アラインメント';
-$string['alignment_bottom'] = '最下部';
+$string['alignment_bottom'] = 'ボトム';
 $string['alignment_left'] = '左';
 $string['alignment_middle'] = '中央';
 $string['alignment_right'] = '右';

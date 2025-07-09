@@ -40,18 +40,23 @@ use core_courseformat\output\local\content\section\summary as summary_base;
  */
 class summary extends summary_base {
 
-    /** @var \section_info the course section class */
-    protected $fmtsection;
+    /**
+     * @var \section_info the course section class
+     * Redeclaration deprecated since 5.0, see MDL-72526.
+     */
+    protected $section;
 
     /**
      * Constructor.
+     *
+     * Redeclaration deprecated since 5.0, see MDL-72526.
      *
      * @param \format_multitopic $format the course format
      * @param \section_info $section the section info
      */
     public function __construct(\format_multitopic $format, \section_info $section) {
         parent::__construct($format, $section);
-        $this->fmtsection = $section;
+        $this->section = $section;
     }
 
     /**
@@ -60,7 +65,7 @@ class summary extends summary_base {
      * @return string HTML to output.
      */
     public function format_summary_text(): string {
-        $section = $this->fmtsection;
+        $section = $this->section;
 
         if (!empty($section->component)) {
             return parent::format_summary_text();

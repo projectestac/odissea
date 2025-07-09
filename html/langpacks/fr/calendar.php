@@ -157,7 +157,7 @@ $string['explain_site_timeformat'] = 'Vous pouvez choisir d’afficher les heure
 $string['export'] = 'Exportation';
 $string['exportbutton'] = 'Exporter';
 $string['exportcalendar'] = 'Exporter le calendrier';
-$string['exporthelp'] = '<p>L’URL du calendrier fournit un lien dynamique pour importer des  événements dans d’autres calendriers. Tout événement ajouté, modifié ou supprimé du calendrier source <strong>sera également</string> ajouté, modifié ou supprimé des autres calendrirers.</p>
+$string['exporthelp'] = '<p>L’URL du calendrier fournit un lien dynamique pour importer des événements dans d’autres calendriers. Tout événement ajouté, modifié ou supprimé du calendrier source <strong>sera également</string> ajouté, modifié ou supprimé des autres calendriers.</p>
 <p>L’exportation de calendrier permet de créer une copie des événements du calendrier, qui peut être importée dans d’autres calendriers. Les modifications faites alors dans le calendrier source <strong>ne seront pas</strong> reflétées dans les autres calendriers.';
 $string['forcecalendartype'] = 'Imposer le type de calendrier';
 $string['fri'] = 'Ve';

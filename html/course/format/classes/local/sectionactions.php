@@ -54,7 +54,7 @@ class sectionactions extends baseactions {
             'sequence' => '',
             'name' => $fields->name ?? null,
             'visible' => $fields->visible ?? 1,
-            'availability' => null,
+            'availability' => $fields->availability ?? null,
             'component' => $fields->component ?? null,
             'itemid' => $fields->itemid ?? null,
             'timemodified' => time(),
@@ -367,6 +367,8 @@ class sectionactions extends baseactions {
         $fields['timemodified'] = time();
         $DB->update_record('course_sections', $fields);
 
+        $sectioninfo->get_component_instance()?->section_updated((object) $fields);
+
         // We need to update the section cache before the format options are updated.
         \course_modinfo::purge_course_section_cache_by_id($courseid, $sectioninfo->id);
         rebuild_course_cache($courseid, false, true);
@@ -404,6 +406,18 @@ class sectionactions extends baseactions {
 
         $modules = explode(',', $sectioninfo->sequence);
         $cmids = [];
+
+        // In case the section is delegated by a module, we change also the visibility for the source module.
+        if ($sectioninfo->is_delegated()) {
+            $delegateinstance = $sectioninfo->get_component_instance();
+            // We only return sections delegated by course modules. Sections delegated to other
+            // types of components must implement their own methods to get the section.
+            if ($delegateinstance && ($delegateinstance instanceof \core_courseformat\sectiondelegatemodule)) {
+                $delegator = $delegateinstance->get_cm();
+                $modules[] = $delegator->id;
+            }
+        }
+
         foreach ($modules as $moduleid) {
             $cm = get_coursemodule_from_id(null, $moduleid, $this->course->id);
             if (!$cm) {

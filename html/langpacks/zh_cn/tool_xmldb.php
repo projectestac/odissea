@@ -44,13 +44,13 @@ $string['checkforeignkeys'] = '检查外键';
 $string['checkindexes'] = '检查索引';
 $string['checkoraclesemantics'] = '检查语义';
 $string['completelogbelow'] = '（查看下面完整的搜索日志）';
-$string['confirmcheckbigints'] = '此功能将在 Moodle 服务器中搜索 <a href=“https://tracker.moodle.org/browse/MDL-11038”>可能的错误整数字段</a>，自动生成（但不执行！）所需的 SQL 语句，以正确定义数据库中的所有整数。
+$string['confirmcheckbigints'] = '此功能将搜索您 Moodle 服务器中的<a href="https://tracker.moodle.org/browse/MDL-11038">潜在错误整数字段</a>，自动生成（但不执行！）所需的 SQL 语句，以确保数据库中的所有整数都正确定义。
 
-一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。
+生成后，您可以复制这些语句，并使用您喜欢的 SQL 界面安全地执行它们（执行前请别忘了备份您的数据）。
 
-强烈建议在执行错误整数搜索之前，先运行 Moodle 版本的最新（+ 版本）。
+强烈建议在执行错误整数搜索之前，运行最新版本（带有"+"的开发版本）的 Moodle。
 
-此功能不会对数据库执行任何操作（仅从中读取），因此可以随时安全地执行。';
+这项功能不会对数据库执行任何操作（只读），因此可随时安全执行。';
 $string['confirmcheckdefaults'] = '此功能将在 Moodle 服务器中搜索不一致的默认值，生成（但不执行）所需的 SQL 语句以正确定义所有默认值。
 
 一旦生成，你就可以复制这样的语句，并使用你最喜欢的SQL接口安全地执行它们（在这样做之前不要忘记备份你的数据）。

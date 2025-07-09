@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Gregorià';
 $string['pluginname'] = 'Calendari del tipus gregorià';
+$string['privacy:metadata'] = 'El connector de format de calendari gregorià no emmagatzema cap dada personal.';

@@ -281,7 +281,7 @@ final class context_helper_test extends \advanced_testcase {
             }
             $record = new \stdClass();
             $record->contextlevel = $classname::LEVEL;
-            $record->instanceid = 9999999999;
+            $record->instanceid = SQL_INT_MAX;
             $record->path = null;
             $record->depth = '2';
             $record->id = $DB->insert_record('context', $record);
@@ -482,9 +482,6 @@ final class context_helper_test extends \advanced_testcase {
         $page = $this->getDataGenerator()->create_module('page', array('course' => $course->id));
         $pagecontext = context\module::instance($page->cmid);
         $systemcontext = context\system::instance();
-
-        // Default is OFF.
-        $this->assertSame('0', $CFG->filternavigationwithsystemcontext);
 
         // First test passed values are returned if disabled.
         set_config('filternavigationwithsystemcontext', '0');

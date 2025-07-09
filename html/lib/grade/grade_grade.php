@@ -219,6 +219,12 @@ class grade_grade extends grade_object {
     public $label;
 
     /**
+     * Date when this grade was last graded.
+     * @var int $dategraded
+     */
+    public $dategraded = null;
+
+    /**
      * Returns array of grades for given grade_item+users
      *
      * @param grade_item $grade_item
@@ -1081,7 +1087,7 @@ class grade_grade extends grade_object {
      *
      * @param int|null $historyid
      */
-    protected function add_feedback_files(int $historyid = null) {
+    protected function add_feedback_files(?int $historyid = null) {
         global $CFG;
 
         // We only support feedback files for modules atm.
@@ -1102,7 +1108,7 @@ class grade_grade extends grade_object {
      *
      * @param int|null $historyid
      */
-    protected function update_feedback_files(int $historyid = null) {
+    protected function update_feedback_files(?int $historyid = null) {
         global $CFG;
 
         // We only support feedback files for modules atm.

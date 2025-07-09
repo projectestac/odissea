@@ -84,7 +84,7 @@ class di {
      * @return ContainerInterface
      */
     protected static function create_container(): ContainerInterface {
-        global $CFG, $DB;
+        global $CFG;
 
         // PHP Does not support function autoloading. We must manually include the file.
         require_once("{$CFG->libdir}/php-di/php-di/src/functions.php");
@@ -113,7 +113,11 @@ class di {
             \core\hook\manager::class => $hookmanager,
 
             // The database.
-            \moodle_database::class => $DB,
+            \moodle_database::class => function(): \moodle_database {
+                global $DB;
+
+                return $DB;
+            },
 
             // The string manager.
             \core_string_manager::class => fn() => get_string_manager(),
@@ -131,6 +135,9 @@ class di {
                 return new \core\system_clock();
             },
             \Psr\Clock\ClockInterface::class => \DI\get(\core\clock::class),
+
+            // Note: libphonenumber PhoneNumberUtil uses a singleton.
+            \libphonenumber\PhoneNumberUtil::class => fn() => \libphonenumber\PhoneNumberUtil::getInstance(),
         ]);
 
         // Add any additional definitions using hooks.

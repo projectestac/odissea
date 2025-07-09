@@ -36,17 +36,14 @@ defined('MOODLE_INTERNAL') || die();
 // The old class name is the key, the new class name is the value.
 // The array must be called $renamedclasses.
 $renamedclasses = [
-    // Since Moodle 4.1.
-    'core_admin\\local\\systemreports\\task_logs' => 'core_admin\\reportbuilder\\local\\systemreports\\task_logs',
-    'core_admin\\local\\entities\\task_log' => 'core_admin\\reportbuilder\\local\\entities\\task_log',
-    'core_course\\local\\entities\\course_category' => 'core_course\\reportbuilder\\local\\entities\\course_category',
-    'core_cohort\\local\\entities\\cohort' => 'core_cohort\\reportbuilder\\local\\entities\\cohort',
-    'core_cohort\\local\\entities\\cohort_member' => 'core_cohort\\reportbuilder\\local\\entities\\cohort_member',
-    'core_block\\local\\views\\secondary' => 'core_block\\navigation\\views\\secondary',
     // Since Moodle 4.2.
     'Box\\Spout' => 'OpenSpout',
     // Since Moodle 4.3.
     'core_question\\bank\\search\\condition' => 'core_question\\local\\bank\\condition',
     'core_question\\bank\\search\\category_condition' => 'qbank_managecategories\\category_condition',
     'core_question\\bank\\search\\hidden_condition' => 'qbank_deletequestion\\hidden_condition',
+    // Since Moodle 4.5.
+    'core_reportbuilder\\report_access_exception' => 'core_reportbuilder\\exception\\report_access_exception',
+    'core_reportbuilder\\source_invalid_exception' => 'core_reportbuilder\\exception\\source_invalid_exception',
+    'core_reportbuilder\\source_unavailable_exception' => 'core_reportbuilder\\exception\\source_unavailable_exception',
 ];

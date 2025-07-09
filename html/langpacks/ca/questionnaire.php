@@ -122,7 +122,7 @@ $string['dependquestion_help'] = 'Podeu seleccionar una pregunta mare i una opci
 $string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['displaymethod'] = 'Forma de presentació de la pregunta sense definir.';
 $string['download'] = 'Descarrega';
-$string['downloadtextformat'] = 'Descarrega en format text';
+$string['downloadtextformat'] = 'Descarrega en format de text';
 $string['downloadtextformat_help'] = 'Aquesta característica us permet desar totes les respostes d\'una enquesta en un fitxer de text (CSV).
 Podeu importar aquest fitxer en un full de càlcul (per exemple: Calc del LibreOffice, o un full de MS Excel), o amb un paquet d\'anàlisi estadística per processar les dades.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
@@ -158,6 +158,7 @@ $string['feedback_help'] = 'Ajuda de la retroacció';
 $string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = '{No} afegeixis més camps de retroacció';
 $string['feedbackbysection'] = 'Retroacció per seccions';
+$string['feedbackdefaultlabel'] = '[Secció nova]';
 $string['feedbackeditingglobal'] = 'S\'està editant la retroacció global de l\'enquesta';
 $string['feedbackeditingmessages'] = 'S\'estan editant els missatges de retroacció de l\'enquesta';
 $string['feedbackeditingsections'] = 'S\'estan editant les seccions de retroacció de l\'enquesta';

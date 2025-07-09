@@ -6,19 +6,17 @@ Feature: I can apply presets
 
   Scenario: Default settings are equal to Full preset
     Given I navigate to "Site admin presets" in site administration
-    And I should see "Full"
-    And I open the action menu in "Full" "table_row"
-    When I choose "Review settings and apply" in the open action menu
+    When I press "Review settings and apply" action in the "Full" report row
     Then I should not see "Setting changes"
 
   Scenario: Applying Starter Moodle preset changes status and settings
 #   Checking the settings before applying Full Moodle preset (we're only testing one of each type).
     Given I navigate to "Plugins > Activity modules > Manage activities" in site administration
-    And "Disable Database" "icon" should exist in the "Database" "table_row"
+    And I should see "Disable Database"
     And I navigate to "Plugins > Availability restrictions > Manage restrictions" in site administration
-    And "Hide" "icon" should exist in the "Restriction by grouping" "table_row"
+    And I should see "Disable Restriction by grouping"
     And I navigate to "Plugins > Blocks > Manage blocks" in site administration
-    And "Disable Logged in user" "icon" should exist in the "Logged in user" "table_row"
+    And I should see "Disable Logged in user"
     And I navigate to "Plugins > Course formats > Manage course formats" in site administration
     And "Disable" "icon" should exist in the "Social" "table_row"
     And I navigate to "Plugins > Question behaviours > Manage question behaviours" in site administration
@@ -26,9 +24,7 @@ Feature: I can apply presets
     And I navigate to "Plugins > Question types > Manage question types" in site administration
     And "Enabled" "icon" should exist in the "Calculated multichoice" "table_row"
     When I navigate to "Site admin presets" in site administration
-    And I should see "Starter"
-    And I open the action menu in "Starter" "table_row"
-    And I choose "Review settings and apply" in the open action menu
+    And I press "Review settings and apply" action in the "Starter" report row
     And I should see "Setting changes"
 #   Checking all the settings to be applied for the Starter (if will help to identify possible regressions).
     And I should see "Activities" in the "Setting changes" "table"
@@ -109,11 +105,11 @@ Feature: I can apply presets
     And the field "Enable badges" matches value "0"
     And the field "Enable competencies" matches value "0"
     And I navigate to "Plugins > Activity modules > Manage activities" in site administration
-    And "Disable Database" "icon" should not exist in the "Database" "table_row"
+    And I should see "Enable Database"
     And I navigate to "Plugins > Availability restrictions > Manage restrictions" in site administration
-    And "Hide" "icon" should not exist in the "Restriction by grouping" "table_row"
+    And I should see "Enable Restriction by grouping"
     And I navigate to "Plugins > Blocks > Manage blocks" in site administration
-    And "Disable Logged in user" "icon" should not exist in the "Logged in user" "table_row"
+    And I should see "Enable Logged in user"
     And I navigate to "Plugins > Course formats > Manage course formats" in site administration
     And "Disable" "icon" should not exist in the "Social" "table_row"
     And I navigate to "Plugins > Question behaviours > Manage question behaviours" in site administration
@@ -124,13 +120,11 @@ Feature: I can apply presets
   Scenario: Re-applying Starter Moodle preset does not display setting changes
 #   Apply Starter preset.
     Given I navigate to "Site admin presets" in site administration
-    And I open the action menu in "Starter" "table_row"
-    And I choose "Review settings and apply" in the open action menu
+    When I press "Review settings and apply" action in the "Starter" report row
     And I click on "Apply" "button"
     And I click on "Continue" "button"
 #   When the Starter preset it's applied again, no changes should be displayed.
-    When I open the action menu in "Starter" "table_row"
-    And I choose "Review settings and apply" in the open action menu
+    And I press "Review settings and apply" action in the "Starter" report row
     Then I should not see "Setting changes"
 
   Scenario: Applied exported settings
@@ -139,14 +133,12 @@ Feature: I can apply presets
     And I set the field "Name" to "Current"
     And I click on "Create preset" "button"
     And I should see "Current"
-    And I open the action menu in "Current" "table_row"
-    When I choose "Review settings and apply" in the open action menu
+    When I press "Review settings and apply" action in the "Current" report row
     And I should not see "Setting changes"
     And I click on "Continue" "button"
     And the following config values are set as admin:
       | enabled | 0 | core_competency |
-    And I open the action menu in "Current" "table_row"
-    And I choose "Review settings and apply" in the open action menu
+    And I press "Review settings and apply" action in the "Current" report row
     Then I should see "Setting changes"
     And I should see "Enable competencies" in the "core_competency" "table_row"
     And I click on "Apply" "button"

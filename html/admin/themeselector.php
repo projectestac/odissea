@@ -80,7 +80,7 @@ $themes = core_component::get_plugin_list('theme');
 // XTEC ************ AFEGIT - Allow access only to xtecadmin.
 // 2024.10.16 @aginard
 if (!get_protected_agora()) {
-    unset($themes['boost'], $themes['classic'], $themes['xtec2020']);
+    unset($themes['boost'], $themes['classic'], $themes['boost_union']);
 }
 // ************ FI
 

@@ -601,3 +601,36 @@ Other
 4.4.0.30 (2024121240)
 =====================
 - Adjust tests
+
+4.4.0.31 (2025041640)
+=====================
+- Make user pref controls more obvious if on/off (use same switch as edit mode)
+- Improve JS section load content error report notification
+- Remove registration form and contact links
+- Simplify page scroll
+- Inline folder warning
+- Refactor to video cm class
+- Fix issue 252 section zero heading
+- Remove any queued adhoc tasks for deleted code
+
+4.4.0.32 (2025052740)
+=====================
+- Issue 270 - add admin setting to prevent user collapsing section zero
+- Issue 239 - fix "Show section zero at top of all sections" Setting Not Working
+
+4.4.0.33 (2025052741)
+=====================
+- Issue 263 - use iframe for PDF modal instead of object
+- Edit admin settings strings re animated navigation
+
+4.4.0.34 (2025052742)
+=====================
+- Remove duplicate lines in version.php (incorrect previous merge)
+
+4.4.0.35 (2025052743)
+=====================
+- Remove format.js deprecated since 4.0 - see https://tracker.moodle.org/browse/MDL-74778.
+
+4.4.0.36 (2025052744)
+=====================
+- Remove redundant behat test steps

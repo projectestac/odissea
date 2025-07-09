@@ -224,7 +224,7 @@ class user extends grade_report {
      * @param int $userid The id of the user
      * @param bool $viewasuser Set this to true when the current user is a mentor/parent of the targetted user.
      */
-    public function __construct(int $courseid, ?object $gpr, object $context, int $userid, bool $viewasuser = null) {
+    public function __construct(int $courseid, ?object $gpr, object $context, int $userid, ?bool $viewasuser = null) {
         global $DB, $CFG;
         parent::__construct($courseid, $gpr, $context);
 
@@ -588,7 +588,7 @@ class user extends grade_report {
                     $class .= ($type == 'categoryitem' || $type == 'courseitem') ? " d$depth baggb" : " item b1b";
                 }
 
-                $itemicon = \html_writer::div(grade_helper::get_element_icon($element), 'mr-1');
+                $itemicon = \html_writer::div(grade_helper::get_element_icon($element), 'me-1');
                 $elementtype = grade_helper::get_element_type_string($element);
                 $itemtype = \html_writer::span($elementtype, 'd-block text-uppercase small ' . $hidden,
                     ['title' => $elementtype]);
@@ -737,7 +737,7 @@ class user extends grade_report {
                     // If the current grade item need to show a grade action menu, generate the appropriate output.
                     if ($gradeactionmenu = $this->gtree->get_grade_action_menu($gradegrade)) {
                         $gradecontainer = html_writer::div($data['grade']['content']);
-                        $grademenucontainer = html_writer::div($gradeactionmenu, 'pl-1 d-flex align-items-center');
+                        $grademenucontainer = html_writer::div($gradeactionmenu, 'ps-1 d-flex align-items-center');
                         $data['grade']['content'] = html_writer::div($gradecontainer . $grademenucontainer,
                             'd-flex align-items-center');
                     }

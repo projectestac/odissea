@@ -16,20 +16,16 @@
 
 namespace core\output;
 
-use moodle_exception;
-use renderable;
-use renderer_base;
-use templatable;
+use core\exception\moodle_exception;
 
 /**
  * Renderable class for the comboboxsearch.
  *
- * @package    core_output
+ * @package    core
  * @copyright  2022 Mathew May <Mathew.solutions>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class comboboxsearch implements renderable, templatable {
-
+class comboboxsearch implements renderable, named_templatable {
     /** @var bool $renderlater Should the dropdown render straightaway? We sometimes need to output the component without all of the
      * data and leave the rendering of any defaults and actual data to the caller. We will give you a basic placeholder that can
      * then be easily replaced.*/
@@ -53,7 +49,7 @@ class comboboxsearch implements renderable, templatable {
     /** @var null|string $buttonheader If the button item in the tertiary nav needs an extra top header for context. */
     protected $buttonheader;
 
-    /** @var boolean $usesbutton Whether to provide a A11y button. */
+    /** @var bool $usesbutton Whether to provide a A11y button. */
     protected $usesbutton;
 
     /** @var null|string $label The label of the combobox. */
@@ -99,15 +95,16 @@ class comboboxsearch implements renderable, templatable {
             throw new moodle_exception(
                 'incorrectdropdownvars',
                 'core',
-                '', null,
+                '',
+                null,
                 'Dropdown content must be set to render later.'
             );
         }
 
         if ($usebutton && !$label) {
             debugging(
-                    'You have requested to use the button but have not provided a label for the combobox.',
-                    DEBUG_DEVELOPER
+                'You have requested to use the button but have not provided a label for the combobox.',
+                DEBUG_DEVELOPER
             );
         }
 
@@ -140,7 +137,7 @@ class comboboxsearch implements renderable, templatable {
     public function export_for_template(renderer_base $output): array {
         return [
             'renderlater' => $this->renderlater,
-            'buttoncontent' => $this->buttoncontent ,
+            'buttoncontent' => $this->buttoncontent,
             'dropdowncontent' => $this->dropdowncontent,
             'parentclasses' => $this->parentclasses,
             'buttonclasses' => $this->buttonclasses,
@@ -157,9 +154,16 @@ class comboboxsearch implements renderable, templatable {
     /**
      * Returns the standard template for the dropdown.
      *
+     * @deprecated since Moodle 4.5. {@see named_templatable::get_template_name() instead}
      * @return string
      */
     public function get_template(): string {
+        debugging('get_template is deprecated. Please use get_template_name instead');
+
+        return 'core/comboboxsearch';
+    }
+
+    public function get_template_name(renderer_base $renderer): string {
         return 'core/comboboxsearch';
     }
 }

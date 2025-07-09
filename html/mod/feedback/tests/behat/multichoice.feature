@@ -22,7 +22,7 @@ Feature: Testing multichoice questions in feedback
       | activity   | name                | course | idnumber    |
       | feedback   | Learning experience | C1     | feedback0   |
     And I am on the "Learning experience" "feedback activity" page logged in as teacher1
-    And I click on "Edit questions" "link" in the "[role=main]" "css_element"
+    And I navigate to "Questions" in current page administration
 
   @javascript
   Scenario: Non-rated single-answer multiple choice questions in feedback
@@ -33,7 +33,7 @@ Feature: Testing multichoice questions in feedback
       | Multiple choice values | option a\noption b\noption c  |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the first page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 2 |
       | Label            | multichoice2                |
@@ -42,7 +42,7 @@ Feature: Testing multichoice questions in feedback
       | Required | 1 |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the second page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 3 |
       | Label            | multichoice3                |
@@ -150,8 +150,8 @@ Feature: Testing multichoice questions in feedback
     And I should see "1 (100.00 %)" in the "option i" "table_row"
     # Change the settings so we don't analyse empty submits
     And I am on the "Learning experience" "feedback activity" page
-    And I click on "Edit questions" "link" in the "[role=main]" "css_element"
-    And I open the action menu in "//div[contains(@class, 'feedback_itemlist') and contains(.,'multichoice1')]" "xpath_element"
+    And I navigate to "Questions" in current page administration
+    And I click on "Edit" "link" in the "this is a multiple choice 1" "mod_feedback > Question"
     And I choose "Edit question" in the open action menu
     And I set the field "Omit empty submits in analysis" to "Yes"
     And I press "Save changes to question"
@@ -161,7 +161,6 @@ Feature: Testing multichoice questions in feedback
     And I should see "1 (100.00 %)" in the "option a" "table_row"
     And I should not see "%" in the "option b" "table_row"
     And I should not see "%" in the "option c" "table_row"
-    And I log out
 
   @javascript
   Scenario: Non-rated multiple-answers multiple choice questions in feedback
@@ -173,7 +172,7 @@ Feature: Testing multichoice questions in feedback
       | Multiple choice values | option a\noption b\noption c  |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the first page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 2 |
       | Label            | multichoice2                |
@@ -182,7 +181,7 @@ Feature: Testing multichoice questions in feedback
       | Required | 1 |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the second page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 3 |
       | Label            | multichoice3                |
@@ -290,8 +289,8 @@ Feature: Testing multichoice questions in feedback
     And I should see "1 (100.00 %)" in the "option i" "table_row"
     # Change the settings so we don't analyse empty submits
     And I am on the "Learning experience" "feedback activity" page
-    And I click on "Edit questions" "link" in the "[role=main]" "css_element"
-    And I open the action menu in "//div[contains(@class, 'feedback_itemlist') and contains(.,'multichoice1')]" "xpath_element"
+    And I navigate to "Questions" in current page administration
+    And I click on "Edit" "link" in the "this is a multiple choice 1" "mod_feedback > Question"
     And I choose "Edit question" in the open action menu
     And I set the field "Omit empty submits in analysis" to "Yes"
     And I press "Save changes to question"
@@ -301,7 +300,6 @@ Feature: Testing multichoice questions in feedback
     And I should see "1 (100.00 %)" in the "option a" "table_row"
     And I should see "1 (100.00 %)" in the "option b" "table_row"
     And I should not see "%" in the "option c" "table_row"
-    And I log out
 
   @javascript
   Scenario: Non-rated single-answer dropdown multiple choice questions in feedback
@@ -312,7 +310,7 @@ Feature: Testing multichoice questions in feedback
       | Multiple choice values | option a\noption b\noption c  |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the first page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 2 |
       | Label            | multichoice2                |
@@ -321,7 +319,7 @@ Feature: Testing multichoice questions in feedback
       | Required | 1 |
     And I add a "Text and media area" question to the feedback with:
       | Contents | this is the second page of the feedback |
-    And I select "Add a page break" from the "typ" singleselect
+    And I add a page break to the feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question         | this is a multiple choice 3 |
       | Label            | multichoice3                |
@@ -409,8 +407,8 @@ Feature: Testing multichoice questions in feedback
     And I should see "1 (100.00 %)" in the "option i" "table_row"
     # Change the settings so we don't analyse empty submits
     And I am on the "Learning experience" "feedback activity" page
-    And I click on "Edit questions" "link" in the "[role=main]" "css_element"
-    And I open the action menu in "//div[contains(@class, 'feedback_itemlist') and contains(.,'multichoice1')]" "xpath_element"
+    And I navigate to "Questions" in current page administration
+    And I click on "Edit" "link" in the "this is a multiple choice 1" "mod_feedback > Question"
     And I choose "Edit question" in the open action menu
     And I set the field "Omit empty submits in analysis" to "Yes"
     And I press "Save changes to question"

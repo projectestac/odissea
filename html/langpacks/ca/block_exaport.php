@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix';
+$string['addButton'] = 'Afegeix';
 $string['comments'] = 'Comentaris';
 $string['date'] = 'Data';
 $string['descriptionsaved'] = 'S\'ha desat la descripció';
@@ -39,6 +40,7 @@ $string['importexport'] = 'Importa/Exporta';
 $string['invalidassignmentid'] = 'L\'ID de la tasca no és vàlid';
 $string['invalidcourseid'] = 'Aquest no és un ID de curs vàlid';
 $string['invalidinstance'] = 'Aquesta no és una instància vàlida';
+$string['layout_settings_font_weight'] = 'Negreta';
 $string['mediacontent'] = 'URL o codi d\'incrustació *';
 $string['name'] = 'Nom';
 $string['new'] = 'Nou';

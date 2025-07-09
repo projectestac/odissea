@@ -15,6 +15,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+use core\exception\response_aware_exception;
+use core\router\response\not_found_response;
 
 /**
  * This library contains all the Data Manipulation Language (DML) functions
@@ -132,7 +134,7 @@ class dml_read_exception extends dml_exception {
      * @param string $sql The SQL that ran just before this read error.
      * @param array $params The SQL's related parameters.(optional)
      */
-    function __construct($error, $sql=null, array $params=null) {
+    function __construct($error, $sql=null, ?array $params=null) {
         $this->error  = $error;
         $this->sql    = $sql;
         $this->params = $params;
@@ -161,7 +163,7 @@ class dml_multiple_records_exception extends dml_exception {
      * @param string $sql The SQL that ran just before this read error.
      * @param array $params The SQL's related parameters.(optional)
      */
-    function __construct($sql='', array $params=null) {
+    function __construct($sql='', ?array $params=null) {
         $errorinfo = $sql."\n[".var_export($params, true).']';
         parent::__construct('multiplerecordsfound', null, $errorinfo);
     }
@@ -176,7 +178,7 @@ class dml_multiple_records_exception extends dml_exception {
  * @copyright  2008 Petr Skoda (http://skodak.org)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class dml_missing_record_exception extends dml_exception {
+class dml_missing_record_exception extends dml_exception implements response_aware_exception {
     /** @var string A table's name.*/
     public $tablename;
     /** @var string An SQL query.*/
@@ -190,7 +192,7 @@ class dml_missing_record_exception extends dml_exception {
      * @param string $sql Optional SQL query.
      * @param array $params Optional SQL query's parameters.
      */
-    function __construct($tablename, $sql='', array $params=null) {
+    function __construct($tablename, $sql='', ?array $params=null) {
         if (empty($tablename)) {
             $tablename = null;
         }
@@ -218,6 +220,11 @@ class dml_missing_record_exception extends dml_exception {
         $errorinfo = $sql."\n[".var_export($params, true).']';
         parent::__construct($errcode, $tablename, $errorinfo);
     }
+
+    #[\Override]
+    public function get_response_classname(): string {
+        return not_found_response::class;
+    }
 }
 
 /**
@@ -243,7 +250,7 @@ class dml_write_exception extends dml_exception {
      * @param string $sql The SQL that ran just before this write error.
      * @param array $params The SQL's related parameters.(optional)
      */
-    function __construct($error, $sql=null, array $params=null) {
+    function __construct($error, $sql=null, ?array $params=null) {
         $this->error  = $error;
         $this->sql    = $sql;
         $this->params = $params;

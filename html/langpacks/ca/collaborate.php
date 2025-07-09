@@ -47,6 +47,7 @@ $string['instructorsettings'] = 'Paràmetres del professor';
 $string['instructorsettings:allow'] = 'Permet que els participants puguin:';
 $string['instructorsettings:allow_help'] = 'Aquesta configuració només afectarà els participants de la sessió';
 $string['instructorsettings:defaultsettings'] = 'Paràmetres per defecte del professor';
+$string['log:none'] = 'Cap';
 $string['meetingtimejoin'] = 'Accedeix a la sessió';
 $string['minutes'] = '{$a} minuts';
 $string['moderator'] = 'Moderador';

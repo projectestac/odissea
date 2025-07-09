@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configcatrubrictpl'] = 'استعمل هذا الإعداد لتحديد نمط عرض سلالم التقييم عند الترشيح حسب التصنيف. تتوافر هنا الرموز الاستبدالية: NAME، IDNUMBER، PARENT، ANCESTRY. بإمكانك قطم مخرجات أي رمز عبر إلحاقه بطول الحروف بين قوسين مموجين. (أي NAME{20}). سيتم عندها إضافة القطم. <br /><br />التفاصيل الكاملة تجدها في <a href="https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki">https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki</a>.';
-$string['configcoursenametpl'] = 'استعمل هذا الإعداد لتحديد نمط عرض اسم المساق. تتوافر هنا الرموز الاستبدالية: FULLNAME، SHORTNAME، IDNUMBER و CATEGORY. بإمكانك قطم مخرجات أي رمز عبر إلحاقه بطول الحروف بين قوسين مموجين. (أي FULLNAME{20}). سيتم عندها إضافة القطم. <br /><br />التفاصيل الكاملة تجدها في <a href="https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki">https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki</a>.';
+$string['configcoursenametpl'] = 'استعمل هذا الإعداد لتحديد نمط عرض اسم المقرر. تتوافر هنا الرموز الاستبدالية: FULLNAME، SHORTNAME، IDNUMBER و CATEGORY. بإمكانك قطم مخرجات أي رمز عبر إلحاقه بطول الحروف بين قوسين مموجين. (أي FULLNAME{20}). سيتم عندها إضافة القطم. <br /><br />التفاصيل الكاملة تجدها في <a href="https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki">https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki</a>.';
 $string['confighideallcourseslink'] = 'إخفاء رابط "كل المقررات الدراسية" عند أسفل الكتلة. <br>إخفاء الرابط لا يؤثر على ما يشاهده المدير';
 $string['configtitle'] = 'عنوان الكتلة';
-$string['coursenametpl'] = 'مظهر اسم المساق';
+$string['coursenametpl'] = 'قالب اسم المقرر';
 $string['courseswithxenrolment'] = 'المقررات الدراسية التي فيها {$a} من الانضمامات';
 $string['filtered_course_list:addinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة';
 $string['filtered_course_list:myaddinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة إلى صفحتي الرئيسية';

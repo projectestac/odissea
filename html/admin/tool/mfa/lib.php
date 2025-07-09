@@ -107,10 +107,27 @@ function tool_mfa_after_config(): void {
 }
 
 /**
+ * Any plugin typically an admin tool can add new bulk user actions
+ *
+ * @return array
+ */
+function tool_mfa_bulk_user_actions(): array {
+    if (!has_capability('moodle/site:config', context_system::instance())) {
+        return [];
+    }
+    return [
+        'tool_mfa_reset_factors' => new action_link(
+            new moodle_url('/admin/tool/mfa/reset_factor.php'),
+            get_string('resetfactor', 'tool_mfa'),
+        ),
+    ];
+}
+
+/**
  * Serves any files for the guidance page.
  *
- * @param stdClass $course
- * @param stdClass $cm
+ * @param stdClass|null $course
+ * @param stdClass|null $cm
  * @param context $context
  * @param string $filearea
  * @param array $args
@@ -118,7 +135,7 @@ function tool_mfa_after_config(): void {
  * @param array $options
  * @return bool
  */
-function tool_mfa_pluginfile(stdClass $course, stdClass $cm, context $context, string $filearea,
+function tool_mfa_pluginfile(stdClass|null $course, stdClass|null $cm, context $context, string $filearea,
     array $args, bool $forcedownload, array $options = []): bool {
     // Hardcode to only send guidance files from the top level.
     $fs = get_file_storage();

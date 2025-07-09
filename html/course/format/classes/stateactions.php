@@ -48,6 +48,7 @@ class stateactions {
      * @param int[] $ids the list of affected course module ids
      * @param int $targetsectionid optional target section id
      * @param int $targetcmid optional target cm id
+     * @throws moodle_exception
      */
     public function cm_move(
         stateupdates $updates,
@@ -85,6 +86,9 @@ class stateactions {
             $cm = $modinfo->get_cm($cmid);
             $currentsectionid = $cm->section;
             $targetsection = $modinfo->get_section_info_by_id($targetsectionid, MUST_EXIST);
+            if ($targetsection->is_delegated() && $cm->get_delegated_section_info()) {
+                throw new moodle_exception('subsectionmoveerror', 'core');
+            }
             $beforecm = (!empty($beforecmdid)) ? $modinfo->get_cm($beforecmdid) : null;
             if ($beforecm === null || $beforecm->id != $cmid) {
                 moveto_module($cm, $targetsection, $beforecm);
@@ -362,6 +366,9 @@ class stateactions {
             // We need to get the latest modinfo on each iteration because the section numbers change.
             $modinfo = get_fast_modinfo($course);
             $section = $modinfo->get_section_info_by_id($sectionid, MUST_EXIST);
+            if (!course_can_delete_section($course, $section)) {
+                continue;
+            }
             // Send all activity deletions.
             if (!empty($modinfo->sections[$section->section])) {
                 foreach ($modinfo->sections[$section->section] as $modnumber) {
@@ -542,8 +549,18 @@ class stateactions {
         course_modinfo::purge_course_modules_cache($course->id, $ids);
         rebuild_course_cache($course->id, false, true);
 
+        $delegatedsections = [];
         foreach ($cms as $cm) {
             $updates->add_cm_put($cm->id);
+            if (!$delegatedsection = $cm->get_delegated_section_info()) {
+                continue;
+            }
+            if (!in_array($delegatedsection->id, $delegatedsections)) {
+                $delegatedsections[] = $delegatedsection->id;
+            }
+        }
+        foreach ($delegatedsections as $sectionid => $section) {
+            $updates->add_section_put($sectionid);
         }
     }
 
@@ -706,6 +723,10 @@ class stateactions {
         $this->validate_cms($course, $ids, __FUNCTION__, ['moodle/course:manageactivities']);
         $modinfo = get_fast_modinfo($course);
         $cms = $this->get_cm_info($modinfo, $ids);
+        $cms = $this->filter_cms_with_section_delegate($cms);
+        if (empty($cms)) {
+            return;
+        }
         list($insql, $inparams) = $DB->get_in_or_equal(array_keys($cms), SQL_PARAMS_NAMED);
         $DB->set_field_select('course_modules', 'indent', $indent, "id $insql", $inparams);
         rebuild_course_cache($course->id, false, true);
@@ -1073,6 +1094,26 @@ class stateactions {
     }
 
     /**
+     * Remove course modules with section delegate from a list.
+     *
+     * @param cm_info[] $cms the list of course modules to filter.
+     * @return cm_info[] the filtered list of course modules indexed by id.
+     */
+    protected function filter_cms_with_section_delegate(array $cms): array {
+        $filtered = [];
+        $modules = [];
+        foreach ($cms as $cm) {
+            if (!isset($modules[$cm->module])) {
+                $modules[$cm->module] = sectiondelegate::has_delegate_class('mod_' . $cm->modname);
+            }
+            if (!$modules[$cm->module]) {
+                $filtered[$cm->id] = $cm;
+            }
+        }
+        return $filtered;
+    }
+
+    /**
      * Checks related to sections: course format support them, all given sections exist and topic 0 is not included.
      *
      * @param stdClass $course The course where given $sectionids belong.
@@ -1141,5 +1182,70 @@ class stateactions {
                 require_all_capabilities($capabilities, $coursecontext);
             }
         }
+    }
+
+    /**
+     * Create a course module.
+     *
+     * @param stateupdates $updates the affected course elements track
+     * @param stdClass $course the course object
+     * @param string $modname the module name
+     * @param int $targetsectionnum target section number
+     * @param int|null $targetcmid optional target cm id
+     */
+    public function create_module(
+        stateupdates $updates,
+        stdClass $course,
+        string $modname,
+        int $targetsectionnum,
+        ?int $targetcmid = null
+    ): void {
+        global $CFG;
+        require_once($CFG->dirroot . '/course/modlib.php');
+
+        $coursecontext = context_course::instance($course->id);
+        require_capability('moodle/course:update', $coursecontext);
+
+        // Method "can_add_moduleinfo" called in "prepare_new_moduleinfo_data" will handle the capability checks.
+        [, , , , $moduleinfo] = prepare_new_moduleinfo_data($course, $modname, $targetsectionnum);
+        $moduleinfo->beforemod = $targetcmid;
+        create_module((object) $moduleinfo);
+
+        // Adding module affects section structure, and if the module has a delegated section even the course structure.
+        $this->course_state($updates, $course);
+    }
+
+    /**
+     * Create a new course module.
+     *
+     * @param stateupdates $updates the affected course elements track
+     * @param stdClass $course the course object
+     * @param string $modname the module name
+     * @param int $targetsectionid target section id
+     * @param int|null $targetcmid optional target cm id
+     */
+    public function new_module(
+        stateupdates $updates,
+        stdClass $course,
+        string $modname,
+        int $targetsectionid,
+        ?int $targetcmid = null
+    ): void {
+        global $CFG;
+        require_once($CFG->dirroot . '/course/modlib.php');
+
+        $coursecontext = context_course::instance($course->id);
+        require_capability('moodle/course:update', $coursecontext);
+
+        $modinfo = get_fast_modinfo($course);
+        $section = $modinfo->get_section_info_by_id($targetsectionid, MUST_EXIST);
+
+        // Method "can_add_moduleinfo" called in "prepare_new_moduleinfo_data" will handle the capability checks.
+        [, , , , $moduleinfo] = prepare_new_moduleinfo_data($course, $modname, $section->sectionnum);
+        $moduleinfo->beforemod = $targetcmid;
+        create_module((object) $moduleinfo);
+
+        // Adding module affects section structure, and if the module has a delegated section even the course structure.
+        $this->course_state($updates, $course);
     }
 }

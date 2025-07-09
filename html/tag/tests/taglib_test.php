@@ -28,6 +28,7 @@ use core_tag;
  * @category test
  * @copyright 2014 Mark Nelson <markn@moodle.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core_tag_tag
  */
 final class taglib_test extends \advanced_testcase {
 
@@ -37,40 +38,8 @@ final class taglib_test extends \advanced_testcase {
      * This is executed before running any test in this file.
      */
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
-    }
-
-    /**
-     * Test that the tag_set function throws an exception.
-     * This function was deprecated in 3.1
-     */
-    public function test_tag_set_get(): void {
-        $this->expectException('coding_exception');
-        $this->expectExceptionMessage('tag_set() can not be used anymore. Please use ' .
-            'core_tag_tag::set_item_tags().');
-        tag_set();
-    }
-
-    /**
-     * Test that tag_set_add function throws an exception.
-     * This function was deprecated in 3.1
-     */
-    public function test_tag_set_add(): void {
-        $this->expectException('coding_exception');
-        $this->expectExceptionMessage('tag_set_add() can not be used anymore. Please use ' .
-            'core_tag_tag::add_item_tag().');
-        tag_set_add();
-    }
-
-    /**
-     * Test that tag_set_delete function returns an exception.
-     * This function was deprecated in 3.1
-     */
-    public function test_tag_set_delete(): void {
-        $this->expectException('coding_exception');
-        $this->expectExceptionMessage('tag_set_delete() can not be used anymore. Please use ' .
-            'core_tag_tag::remove_item_tag().');
-        tag_set_delete();
     }
 
     /**
@@ -141,17 +110,6 @@ final class taglib_test extends \advanced_testcase {
         $ti5 = core_tag_tag::add_item_tag('mod_book', 'book_chapters', $chapter1id,
             \context_module::instance($book1->cmid), 'A random tag for a book chapter');
         $this->assertEquals(1, $DB->get_field('tag_instance', 'ordering', ['id' => $ti5]));
-    }
-
-    /**
-     * Test that tag_assign function throws an exception.
-     * This function was deprecated in 3.1
-     */
-    public function test_tag_assign(): void {
-        $this->expectException(\coding_exception::class);
-        $this->expectExceptionMessage('tag_assign() can not be used anymore. Please use core_tag_tag::set_item_tags() ' .
-            'or core_tag_tag::add_item_tag() instead.');
-        tag_assign();
     }
 
     /**
@@ -832,17 +790,6 @@ final class taglib_test extends \advanced_testcase {
         $this->assertEquals('Tag1', $user2tags[2]->rawname);
         $this->assertEquals($collid2, $user1tags[0]->tagcollid);
         $this->assertEquals($collid2, $user2tags[2]->tagcollid);
-    }
-
-    /**
-     * Tests that tag_normalize function throws an exception.
-     * This function was deprecated in 3.1
-     */
-    public function test_normalize(): void {
-        $this->expectException(\coding_exception::class);
-        $this->expectExceptionMessage('tag_normalize() can not be used anymore. Please use ' .
-            'core_tag_tag::normalize().');
-        tag_normalize();
     }
 
     /**
@@ -1956,6 +1903,91 @@ final class taglib_test extends \advanced_testcase {
         // should throw an exception when we try to move another instance there.
         $this->expectException('Exception');
         core_tag_tag::change_instances_context([$fooinstance1->id], $context2);
+    }
+
+    /**
+     * Tests user pagination works correctly for filtered users.
+     */
+    public function test_user_get_tagged_users(): void {
+        global $DB;
+
+        // Create some users.
+        $users = [];
+        for ($i = 0; $i < 11; $i++) {
+            $users[] = $this->getDataGenerator()->create_user();
+        }
+
+        // Create the tag.
+        $tagcollid = core_tag_collection::get_default();
+        $tag = $this->getDataGenerator()->create_tag(['tagcollid' => $tagcollid, 'rawname' => 'bike']);
+
+        // Add the tag to the users.
+        for ($i = 0; $i < count($users); $i++) {
+            core_tag_tag::add_item_tag('core', 'user', $users[$i]->id,
+                    \context_user::instance($users[$i]->id), 'bike');
+        }
+
+        // The logged-in user.
+        $this->setUser($users[0]);
+
+        // Get the tagged users.
+        $tag = core_tag_tag::get($tag->id, '*');
+        $taggedusers = user_get_tagged_users($tag);
+
+        // Ensure it has content.
+        $this->assertEquals(1, $taggedusers->hascontent);
+
+        // Ensure it should have 1 user and the "more" link is hidden (null).
+        $this->assertEquals(1, $this->count_html_elements($taggedusers->content, 'li'));
+        $this->assertNull($taggedusers->nextpageurl);
+
+        // Test which users are visible to the logged-in user based on the course.
+        // Create a course to tag.
+        $course = $this->getDataGenerator()->create_course();
+        $studentrole = $DB->get_record('role', ['shortname' => 'student']);
+        for ($i = 0; $i < count($users); $i++) {
+            // Enrol only some users (0, 2, 4, 6, 8, 10).
+            if ($i % 2 === 0) {
+                $this->getDataGenerator()->enrol_user($users[$i]->id, $course->id, $studentrole->id);
+            }
+        }
+
+        // First page should have 5 users and the "more" link is visible (not null).
+        $taggedusers = user_get_tagged_users(
+            tag: $tag,
+            page: 0,
+        );
+        $this->assertNotNull($taggedusers->nextpageurl);
+        $this->assertEquals(5, $this->count_html_elements($taggedusers->content, 'li'));
+
+        // Second page should have 1 user and the "more" link is hidden (null).
+        $taggedusers = user_get_tagged_users(
+            tag: $tag,
+            page: 1,
+        );
+        $this->assertNull($taggedusers->nextpageurl);
+        $this->assertEquals(1, $this->count_html_elements($taggedusers->content, 'li'));
+    }
+
+    /**
+     * Counts the number of specified HTML elements in a given HTML string.
+     *
+     * @param string $html The HTML string to be parsed.
+     * @param string $tagname The name of the HTML tag to count (e.g., 'li', 'div').
+     * @return int The number of elements with the specified tag name found in the HTML.
+     */
+    private function count_html_elements(string $html, string $tagname): int {
+        // Load the HTML into DOMDocument.
+        $dom = new \DOMDocument();
+        libxml_use_internal_errors(true); // Suppress warnings for invalid HTML.
+        $dom->loadHTML($html);
+        libxml_clear_errors();
+
+        // Find all elements with the specified tag name.
+        $elements = $dom->getElementsByTagName($tagname);
+
+        // Count the number of elements.
+        return $elements->length;
     }
 
     /**

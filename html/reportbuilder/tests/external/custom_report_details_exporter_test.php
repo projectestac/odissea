@@ -45,7 +45,7 @@ final class custom_report_details_exporter_test extends advanced_testcase {
 
         /** @var core_reportbuilder_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('core_reportbuilder');
-        $report = $generator->create_report(['name' => 'My report', 'source' => users::class]);
+        $report = $generator->create_report(['name' => 'My report', 'source' => users::class, 'tags' => ['cat', 'dog']]);
 
         $exporter = new custom_report_details_exporter($report);
         $export = $exporter->export($PAGE->get_renderer('core_reportbuilder'));
@@ -55,7 +55,12 @@ final class custom_report_details_exporter_test extends advanced_testcase {
         $this->assertEquals($report->get('source'), $export->source);
 
         // Source name should be the name of the source.
+        $this->assertObjectHasProperty('sourcename', $export);
         $this->assertEquals(users::get_name(), $export->sourcename);
+
+        // We use the tag exporter for report tags.
+        $this->assertObjectHasProperty('tags', $export);
+        $this->assertEquals(['cat', 'dog'], array_column($export->tags, 'name'));
 
         // We use the user exporter for the modifier of the report.
         $this->assertObjectHasProperty('modifiedby', $export);

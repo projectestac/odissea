@@ -32,14 +32,6 @@ class block_courses_vicensvives extends block_list {
         return true;
     }
 
-    public function instance_config_save($data, $nolongerused = false) {
-        echo "esto no se cuando se ejecuta";die;
-        if (empty($data->quizid)) {
-            $data->quizid = $this->get_owning_activity()->id;
-        }
-        parent::instance_config_save($data);
-    }
-
     public function get_content() {
         global $CFG, $USER, $DB, $OUTPUT;
 
@@ -48,8 +40,8 @@ class block_courses_vicensvives extends block_list {
         }
 
         $this->content = new stdClass;
-        $this->content->items = array();
-        $this->content->icons = array();
+        $this->content->items = [];
+        $this->content->icons = [];
         $this->content->footer = '';
 
         $icon = $OUTPUT->pix_icon('i/course', '');
@@ -69,9 +61,9 @@ class block_courses_vicensvives extends block_list {
 
         // Profesores y gestores.
         $contextcat = context_coursecat::instance($CFG->block_courses_vicensvives_defaultcategory);
-        if (isloggedin() and !isguestuser()) {
+        if (isloggedin() && !isguestuser()) {
             $mycourses = enrol_get_my_courses(null, 'visible DESC, fullname ASC');
-            if (!$mycourses and !has_capability('moodle/course:create', $contextcat)) {
+            if (!$mycourses && !has_capability('moodle/course:create', $contextcat)) {
                 return $this->content;
             }
 
@@ -82,11 +74,11 @@ class block_courses_vicensvives extends block_list {
             foreach ($courses as $course) {
                 // Falta filtrar VV.
                 $coursecontext = context_course::instance($course->id); // Eliminamos alumnos de esta manera.
-                if (has_capability('moodle/course:update', $coursecontext) and $i < $CFG->block_courses_vicensvives_maxcourses) {
+                if (has_capability('moodle/course:update', $coursecontext) && $i < $CFG->block_courses_vicensvives_maxcourses) {
                     $linkcss = $course->visible ? "" : " class=\"dimmed\" ";
-                    $text = $icon . ' ' . format_string($course->shortname, true, array('context' => $coursecontext));
-                    $url = new moodle_url('/course/view.php', array('id' => $course->id));
-                    $attributes = array('class' => $course->visible ? '' : 'dimmed');
+                    $text = $icon . ' ' . format_string($course->shortname, true, ['context' => $coursecontext]);
+                    $url = new moodle_url('/course/view.php', ['id' => $course->id]);
+                    $attributes = ['class' => $course->visible ? '' : 'dimmed'];
                     $this->content->items[] = html_writer::link($url, $text, $attributes);
                     $i++;
                 } else if ($i >= $CFG->block_courses_vicensvives_maxcourses) {
@@ -121,10 +113,10 @@ class block_courses_vicensvives extends block_list {
     }
 
     public function applicable_formats() {
-        return array(
+        return [
             'all' => false,
             'site' => true,
-            'my' => true
-        );
+            'my' => true,
+        ];
     }
 }

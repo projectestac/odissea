@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['password'] = 'Contrasenya';
+$string['test_serializer'] = 'Serialitzador';
+$string['test_serializer_desc'] = 'Serialitzador que s\'utilitzarà per a les proves.';
+$string['test_server'] = 'Servidor de proves';

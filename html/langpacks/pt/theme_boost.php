@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Predefinição do tema';
 $string['preset_desc'] = 'Escolha uma predefinição para alterar amplamente a aparência do tema.';
 $string['presetfiles'] = 'Ficheiros adicionais de predefinições do tema';
-$string['presetfiles_desc'] = 'Os ficheiros de predefinições podem ser usados para alterar drasticamente a aparência do tema. Consulte a <a href="https://docs.moodle.org/dev/Boost_Presets">Personalização Boost</a> para obter informações sobre como criar e partilhar os seus próprios ficheiros de predefinições e consulte também o <a href="https://moodle.net/boost">Repositório de personalizações</a> para predefinições que outros tenham partilhado.';
+$string['presetfiles_desc'] = 'Os ficheiros de predefinições podem ser usados para alterar drasticamente a aparência do tema.';
 $string['privacy:drawerblockclosed'] = 'A preferência atual para o painel dos blocos é fechada.';
 $string['privacy:drawerblockopen'] = 'A preferência atual para o painel dos blocos é aberta.';
 $string['privacy:drawerindexclosed'] = 'A preferência atual para o painel do índice da disciplina é fechada.';

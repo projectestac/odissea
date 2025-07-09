@@ -432,6 +432,10 @@ class secondary extends view {
                     self::TYPE_COURSE, null, 'coursehome'), reset($nodekeys)
             );
         }
+
+        // Allow plugins to add nodes to the secondary navigation.
+        $hook = new \core\hook\navigation\secondary_extend($this);
+        \core\di::get(\core\hook\manager::class)->dispatch($hook);
     }
 
     /**
@@ -581,6 +585,12 @@ class secondary extends view {
         $rootnode = $issingleactivitycourse ? $this->find('course', self::TYPE_COURSE) : $this;
         $activenode = $this->find_active_node();
         $incourseadmin = false;
+
+        $activeleafnode = $this->page->settingsnav->find_active_node();
+        $parentnode = $activeleafnode->parent ?? null;
+        if ($issingleactivitycourse && $parentnode && $parentnode->key === 'quiz_report') {
+            $activenode = $parentnode;
+        }
 
         if (!$activenode || ($issingleactivitycourse && $activenode->key === 'course')) {
             // Could be in the course admin section.

@@ -26,17 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backup'] = 'Копировать в общую корзину';
-$string['clipboard'] = 'Копирование этого общего элемента';
-$string['confirm_delete'] = 'Вы уверены, что хотите удалить?';
-$string['confirm_delete_selected'] = 'Вы уверены, что хотите удалить все выбранные элементы?';
-$string['conflict_description'] = 'Вы хотите перезаписать заголовок раздела в курсе?';
-$string['conflict_overwrite_title'] = 'Измените заголовок раздела на <strong>"{$a}"</strong>';
-$string['conflict_submit'] = 'Продолжить';
-$string['copyhere'] = 'Копировать сюда';
-$string['inprogess_pleasewait'] = 'Пожалуйста, подождите…';
-$string['movedir'] = 'Переместить в папку';
 $string['pluginname'] = 'Общая корзина';
-$string['section_name_conflict'] = 'Конфликты заголовка раздела';
-$string['sharing_cart'] = 'Общая корзина';
-$string['unexpectederror'] = 'произошла непредвиденная ошибка';
-$string['variouscourse'] = 'с разных курсов';

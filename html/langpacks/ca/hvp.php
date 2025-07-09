@@ -133,6 +133,7 @@ $string['hvp:userestrictedlibraries'] = 'Utilitza tipus de contingut H5P restrin
 $string['hvp:view'] = 'Visualitza i interactua amb activitats H5P';
 $string['hvp:viewallresults'] = 'Visualitza els resultats d\'altres usuaris del curs';
 $string['hvp:viewresults'] = 'Visualitza els resultats de les preguntes pròpies';
+$string['icon'] = 'Icona';
 $string['installdenied'] = 'No teniu permís per instal·lar tipus de contingut. Contacteu amb l\'administrador del lloc.';
 $string['installedlibraries'] = 'Biblioteques instal·lades';
 $string['intro'] = 'Introducció';

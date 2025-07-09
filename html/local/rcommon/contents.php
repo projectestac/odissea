@@ -12,10 +12,10 @@ require_capability('local/rcommon:managecredentials', context_system::instance()
 $id = required_param('id', PARAM_INT);
 $publisher = $DB->get_record('rcommon_publisher', array('id' => $id));
 if (!$publisher) {
-    print_error(get_string('nopublisher','local_rcommon'));
+    throw new \moodle_exception(get_string('nopublisher','local_rcommon'));
 }
 
-require_once($CFG->libdir.'/adminlib.php');
+require_once( $CFG->libdir.'/adminlib.php');
 admin_externalpage_setup('marsupialcontent'.$publisher->id);
 echo $OUTPUT->header();
 

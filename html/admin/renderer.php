@@ -295,6 +295,7 @@ class core_admin_renderer extends plugin_renderer_base {
 
         $output .= $this->header();
         $output .= $this->output->heading(get_string('notifications', 'admin'));
+        $output .= $this->upgrade_news_message();
         $output .= $this->maturity_info($maturity);
         $output .= empty($CFG->disableupdatenotifications) ? $this->available_updates($availableupdates, $availableupdatesfetch) : '';
         $output .= $this->insecure_dataroot_warning($insecuredataroot);
@@ -766,6 +767,22 @@ class core_admin_renderer extends plugin_renderer_base {
     }
 
     /**
+     * Display a transient notification for important upgrades messages for
+     * specific releases.
+     *
+     * @return string HTML to output.
+     */
+    protected function upgrade_news_message() {
+        return $this->notification(
+            get_string('importantupdates_content', 'admin'),
+            'info',
+            false,
+            get_string('importantupdates_title', 'admin'),
+            'i/circleinfo, core'
+        );
+    }
+
+    /**
      * Display a warning about installing development code if necesary.
      * @param int $maturity
      * @return string HTML to output.
@@ -854,14 +871,14 @@ class core_admin_renderer extends plugin_renderer_base {
                 $registerbutton = $this->single_button(new moodle_url('/admin/registration/index.php'),
                     get_string('register', 'admin'));
                 $str = 'registrationwarning';
+                $type = 'error alert alert-danger';
             } else {
                 $registerbutton = '';
                 $str = 'registrationwarningcontactadmin';
+                $type = 'info';
             }
 
-            return $this->warning( get_string($str, 'admin')
-                    . '&nbsp;' . $this->help_icon('registration', 'admin') . $registerbutton ,
-                'error alert alert-danger');
+            return $this->warning( get_string($str, 'admin') . '&nbsp;' . $registerbutton , $type);
         }
 
         return '';
@@ -1015,7 +1032,7 @@ class core_admin_renderer extends plugin_renderer_base {
     function upgrade_reload($url) {
         return html_writer::empty_tag('br') .
                 html_writer::tag('div',
-                    html_writer::link($url, $this->pix_icon('i/reload', '', '', array('class' => 'icon icon-pre')) .
+                    html_writer::link($url, $this->pix_icon('i/reload', '', '', ['class' => 'icon']) .
                             get_string('reload'), array('title' => get_string('reload'))),
                 array('class' => 'continuebutton')) . html_writer::empty_tag('br');
     }
@@ -1252,7 +1269,7 @@ class core_admin_renderer extends plugin_renderer_base {
                 new moodle_url($this->page->url, array('installupdatex' => 1)),
                 get_string('updateavailableinstallall', 'core_admin', count($installableupdates)),
                 'post',
-                array('class' => 'singlebutton updateavailableinstallall mr-1')
+                array('class' => 'singlebutton updateavailableinstallall me-1')
             );
         }
 
@@ -1261,7 +1278,7 @@ class core_admin_renderer extends plugin_renderer_base {
                 new moodle_url($this->page->url, array('abortinstallx' => 1, 'confirmplugincheck' => 0)),
                 get_string('cancelinstallall', 'core_plugin', count($installabortable)),
                 'post',
-                array('class' => 'singlebutton cancelinstallall mr-1')
+                array('class' => 'singlebutton cancelinstallall me-1')
             );
         }
 
@@ -1270,17 +1287,17 @@ class core_admin_renderer extends plugin_renderer_base {
                 new moodle_url($this->page->url, array('abortupgradex' => 1)),
                 get_string('cancelupgradeall', 'core_plugin', count($upgradeabortable)),
                 'post',
-                array('class' => 'singlebutton cancelupgradeall mr-1')
+                array('class' => 'singlebutton cancelupgradeall me-1')
             );
         }
 
         $out .= html_writer::div(html_writer::link(new moodle_url($this->page->url, array('showallplugins' => 0)),
             get_string('plugincheckattention', 'core_plugin')).' '.html_writer::span($sumattention, 'badge bg-light text-dark'),
-            'btn btn-link mr-1');
+            'btn btn-link me-1');
 
         $out .= html_writer::div(html_writer::link(new moodle_url($this->page->url, array('showallplugins' => 1)),
             get_string('plugincheckall', 'core_plugin')).' '.html_writer::span($sumtotal, 'badge bg-light text-dark'),
-            'btn btn-link mr-1');
+            'btn btn-link me-1');
 
         $out .= $this->output->container_end(); // End of .actions container.
         $out .= $this->output->container_end(); // End of #plugins-check-info container.
@@ -1299,7 +1316,7 @@ class core_admin_renderer extends plugin_renderer_base {
      * @param null|moodle_url $cancel URL for the cancel link, defaults to the current page
      * @return string HTML
      */
-    public function plugins_management_confirm_buttons(moodle_url $continue=null, moodle_url $cancel=null) {
+    public function plugins_management_confirm_buttons(?moodle_url $continue=null, ?moodle_url $cancel=null) {
 
         $out = html_writer::start_div('plugins-management-confirm-buttons');
 
@@ -1387,13 +1404,13 @@ class core_admin_renderer extends plugin_renderer_base {
                     new moodle_url($this->page->url, array('installdepx' => 1)),
                     get_string('dependencyinstallmissing', 'core_plugin', count($installable)),
                     'post',
-                    array('class' => 'singlebutton dependencyinstallmissing d-inline-block mr-1')
+                    array('class' => 'singlebutton dependencyinstallmissing d-inline-block me-1')
                 );
             }
 
             $out .= html_writer::div(html_writer::link(new moodle_url('/admin/tool/installaddon/'),
                 get_string('dependencyuploadmissing', 'core_plugin'), array('class' => 'btn btn-link')),
-                'dependencyuploadmissing d-inline-block mr-1');
+                'dependencyuploadmissing d-inline-block me-1');
 
             $out .= $this->output->container_end(); // End of .plugins-check-dependencies-actions container.
 
@@ -1459,29 +1476,29 @@ class core_admin_renderer extends plugin_renderer_base {
             $info .= html_writer::div(
                 html_writer::link('https://moodle.org/plugins/view.php?plugin='.$plugin->component,
                     get_string('misdepinfoplugin', 'core_plugin')),
-                'misdepinfoplugin d-inline-block mr-3 mb-1'
+                'misdepinfoplugin d-inline-block me-3 mb-1'
             );
 
             $info .= html_writer::div(
                 html_writer::link('https://moodle.org/plugins/pluginversion.php?id='.$plugin->version->id,
                     get_string('misdepinfoversion', 'core_plugin')),
-                'misdepinfoversion d-inline-block mr-3 mb-1'
+                'misdepinfoversion d-inline-block me-3 mb-1'
             );
 
             $info .= html_writer::div(html_writer::link($plugin->version->downloadurl, get_string('download')),
-                'misdepdownload d-inline-block mr-3 mb-1');
+                'misdepdownload d-inline-block me-3 mb-1');
 
             if ($pluginman->is_remote_plugin_installable($plugin->component, $plugin->version->version, $reason)) {
                 $info .= $this->output->single_button(
                     new moodle_url($this->page->url, array('installdep' => $plugin->component)),
                     get_string('dependencyinstall', 'core_plugin'),
                     'post',
-                    array('class' => 'singlebutton dependencyinstall mr-3 mb-1')
+                    array('class' => 'singlebutton dependencyinstall me-3 mb-1')
                 );
             } else {
                 $reasonhelp = $this->info_remote_plugin_not_installable($reason);
                 if ($reasonhelp) {
-                    $info .= html_writer::div($reasonhelp, 'reasonhelp dependencyinstall d-inline-block mr-3 mb-1');
+                    $info .= html_writer::div($reasonhelp, 'reasonhelp dependencyinstall d-inline-block me-3 mb-1');
                 }
             }
 
@@ -1667,8 +1684,9 @@ class core_admin_renderer extends plugin_renderer_base {
     public function plugins_overview_panel(core_plugin_manager $pluginman, array $options = array()) {
 
         $plugininfo = $pluginman->get_plugins();
+        $this->page->requires->js_call_amd('core_admin/plugins_overview', 'init');
 
-        $numtotal = $numextension = $numupdatable = $numinstallable = 0;
+        $numtotal = $numextension = $numupdatable = $numinstallable = $nummissing = $numnew = 0;
 
         foreach ($plugininfo as $type => $plugins) {
             foreach ($plugins as $name => $plugin) {
@@ -1682,7 +1700,11 @@ class core_admin_renderer extends plugin_renderer_base {
                     }
                 }
                 if ($plugin->get_status() === core_plugin_manager::PLUGIN_STATUS_MISSING) {
+                    $nummissing++;
                     continue;
+                }
+                if ($plugin->get_status() === core_plugin_manager::PLUGIN_STATUS_NEW) {
+                    $numnew++;
                 }
                 $numtotal++;
                 if (!$plugin->is_standard()) {
@@ -1692,35 +1714,49 @@ class core_admin_renderer extends plugin_renderer_base {
         }
 
         $infoall = html_writer::link(
-            new moodle_url($this->page->url, array('contribonly' => 0, 'updatesonly' => 0)),
+            $this->page->url,
             get_string('overviewall', 'core_plugin'),
-            array('title' => get_string('filterall', 'core_plugin'))
+            ['title' => get_string('filterall', 'core_plugin'), 'data-filterby' => 'all', 'class' => 'active']
         ).' '.html_writer::span($numtotal, 'badge number number-all');
 
         $infoext = html_writer::link(
-            new moodle_url($this->page->url, array('contribonly' => 1, 'updatesonly' => 0)),
+            new moodle_url($this->page->url, [], 'additional'),
             get_string('overviewext', 'core_plugin'),
-            array('title' => get_string('filtercontribonly', 'core_plugin'))
+            ['title' => get_string('filtercontribonly', 'core_plugin'), 'data-filterby' => 'additional']
         ).' '.html_writer::span($numextension, 'badge number number-additional');
 
         if ($numupdatable) {
             $infoupdatable = html_writer::link(
-                new moodle_url($this->page->url, array('contribonly' => 0, 'updatesonly' => 1)),
+                new moodle_url($this->page->url, [], 'updatable'),
                 get_string('overviewupdatable', 'core_plugin'),
-                array('title' => get_string('filterupdatesonly', 'core_plugin'))
+                ['title' => get_string('filterupdatesonly', 'core_plugin'), 'data-filterby' => 'updatable']
             ).' '.html_writer::span($numupdatable, 'badge bg-info text-white number number-updatable');
         } else {
             // No updates, or the notifications disabled.
             $infoupdatable = '';
         }
 
-        $out = html_writer::start_div('', array('id' => 'plugins-overview-panel'));
-
-        if (!empty($options['updatesonly'])) {
-            $out .= $this->output->heading(get_string('overviewupdatable', 'core_plugin'), 3);
-        } else if (!empty($options['contribonly'])) {
-            $out .= $this->output->heading(get_string('overviewext', 'core_plugin'), 3);
+        if ($numnew) {
+            $infonew = html_writer::link(
+                new moodle_url($this->page->url, [], 'newplugin'),
+                get_string('status_new', 'plugin'),
+                ['title' => get_string('filternewpluginsonly', 'core_plugin'), 'data-filterby' => 'newplugin']
+            ).' '.html_writer::span($numnew, 'badge bg-success text-white number number-newplugin');
+        } else {
+            $infonew = '';
         }
+
+        if ($nummissing) {
+            $infomissing = html_writer::link(
+                new moodle_url($this->page->url, [], 'missing'),
+                get_string('status_missing', 'plugin'),
+                ['title' => get_string('filtermissingonly', 'core_plugin'), 'data-filterby' => 'missing']
+            ).' '.html_writer::span($nummissing, 'badge bg-danger text-white number number-missing');
+        } else {
+            $infomissing = '';
+        }
+
+        $out = html_writer::start_div('', ['id' => 'plugins-overview-panel']);
 
         if ($numinstallable) {
             $out .= $this->output->single_button(
@@ -1732,8 +1768,10 @@ class core_admin_renderer extends plugin_renderer_base {
         }
 
         $out .= html_writer::div($infoall, 'info info-all').
-            html_writer::div($infoext, 'info info-ext').
-            html_writer::div($infoupdatable, 'info info-updatable');
+            html_writer::div($infoext, 'info info-additional').
+            html_writer::div($infoupdatable, 'info info-updatable').
+            html_writer::div($infonew, 'info info-newplugin').
+            html_writer::div($infomissing, 'info info-missing');
 
         $out .= html_writer::end_div(); // End of #plugins-overview-panel block.
 
@@ -1752,38 +1790,6 @@ class core_admin_renderer extends plugin_renderer_base {
     public function plugins_control_panel(core_plugin_manager $pluginman, array $options = array()) {
 
         $plugininfo = $pluginman->get_plugins();
-
-        // Filter the list of plugins according the options.
-        if (!empty($options['updatesonly'])) {
-            $updateable = array();
-            foreach ($plugininfo as $plugintype => $pluginnames) {
-                foreach ($pluginnames as $pluginname => $pluginfo) {
-                    $pluginavailableupdates = $pluginfo->available_updates();
-                    if (!empty($pluginavailableupdates)) {
-                        foreach ($pluginavailableupdates as $pluginavailableupdate) {
-                            $updateable[$plugintype][$pluginname] = $pluginfo;
-                        }
-                    }
-                }
-            }
-            $plugininfo = $updateable;
-        }
-
-        if (!empty($options['contribonly'])) {
-            $contribs = array();
-            foreach ($plugininfo as $plugintype => $pluginnames) {
-                foreach ($pluginnames as $pluginname => $pluginfo) {
-                    if (!$pluginfo->is_standard()) {
-                        $contribs[$plugintype][$pluginname] = $pluginfo;
-                    }
-                }
-            }
-            $plugininfo = $contribs;
-        }
-
-        if (empty($plugininfo)) {
-            return '';
-        }
 
         $table = new html_table();
         $table->id = 'plugins-control-panel';
@@ -1890,13 +1896,15 @@ class core_admin_renderer extends plugin_renderer_base {
                     $row->attributes['class'] .= ' standard';
                     $source = '';
                 } else {
-                    $row->attributes['class'] .= ' extension';
-                    $source = html_writer::div(get_string('sourceext', 'core_plugin'), 'source badge bg-info text-white');
+                    $row->attributes['class'] .= ' additional';
+                    $source = html_writer::div(get_string('sourceext', 'core_plugin'), 'source badge mr-1 bg-info text-white');
                 }
 
                 if ($status === core_plugin_manager::PLUGIN_STATUS_MISSING) {
+                    $row->attributes['class'] .= ' missing';
                     $msg = html_writer::div(get_string('status_missing', 'core_plugin'), 'statusmsg badge bg-danger text-white');
                 } else if ($status === core_plugin_manager::PLUGIN_STATUS_NEW) {
+                    $row->attributes['class'] .= ' newplugin';
                     $msg = html_writer::div(get_string('status_new', 'core_plugin'), 'statusmsg badge bg-success text-white');
                 } else {
                     $msg = '';
@@ -1912,6 +1920,7 @@ class core_admin_renderer extends plugin_renderer_base {
 
                 $updateinfo = '';
                 if (is_array($plugin->available_updates())) {
+                    $row->attributes['class'] .= ' updatable';
                     foreach ($plugin->available_updates() as $availableupdate) {
                         $updateinfo .= $this->plugin_available_update_info($pluginman, $availableupdate);
                     }
@@ -2226,14 +2235,10 @@ class core_admin_renderer extends plugin_renderer_base {
      * @return string
      */
     public function moodleorg_registration_message() {
-
-        $out = format_text(get_string('registerwithmoodleorginfo', 'core_hub'), FORMAT_MARKDOWN);
-
-        $out .= html_writer::link(
-            MOODLE_PRODUCTURL.'/solutions/moodle-app/',
-            $this->output->pix_icon('i/info', '').' '.get_string('registerwithmoodleorginfoapp', 'core_hub'),
-            ['class' => 'btn btn-link', 'role' => 'opener', 'target' => '_href']
-        );
+        $a = new stdClass();
+        $a->moreinformation = '#id_sitestats'; // More information anchor.
+        $a->moodleapp = HUB_MOODLEORGHUBURL . '/solutions/moodle-app/';
+        $out = format_text(get_string('registerwithmoodleorginfo', 'core_hub', $a), FORMAT_MARKDOWN);
 
         $out .= html_writer::link(
             HUB_MOODLEORGHUBURL,

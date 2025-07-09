@@ -42,6 +42,7 @@ final class framework_test extends \advanced_testcase {
      * Set up function for tests.
      */
     public function setUp(): void {
+        parent::setUp();
         $factory = new \core_h5p\factory();
         $this->framework = $factory->get_framework();
     }
@@ -1098,8 +1099,6 @@ final class framework_test extends \advanced_testcase {
 
     /**
      * Test the behaviour of updateContent() with metadata.
-     *
-     * @covers ::updateContent
      */
     public function test_updateContent_withmetadata(): void {
         global $DB;

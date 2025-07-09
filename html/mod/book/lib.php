@@ -143,7 +143,7 @@ function book_reset_userdata($data) {
 
     if (!empty($data->reset_book_tags)) {
         // Loop through the books and remove the tags from the chapters.
-        if ($books = $DB->get_records('book', array('course' => $data->courseid))) {
+        if ($books = $DB->get_records('book', ['course' => $data->courseid])) {
             foreach ($books as $book) {
                 if (!$cm = get_coursemodule_from_instance('book', $book->id)) {
                     continue;
@@ -154,11 +154,10 @@ function book_reset_userdata($data) {
             }
         }
 
-
         $status[] = [
             'component' => get_string('modulenameplural', 'book'),
-            'item' => get_string('tagsdeleted', 'book'),
-            'error' => false
+            'item' => get_string('removeallbooktags', 'book'),
+            'error' => false,
         ];
     }
 
@@ -172,6 +171,7 @@ function book_reset_userdata($data) {
  */
 function book_reset_course_form_definition(&$mform) {
     $mform->addElement('header', 'bookheader', get_string('modulenameplural', 'book'));
+    $mform->addElement('static', 'bookdelete', get_string('delete'));
     $mform->addElement('checkbox', 'reset_book_tags', get_string('removeallbooktags', 'book'));
 }
 
@@ -699,12 +699,8 @@ function book_check_updates_since(cm_info $cm, $from, $filter = array()) {
  */
 function mod_book_get_fontawesome_icon_map() {
     return [
-        'mod_book:chapter' => 'fa-bookmark-o',
-        'mod_book:nav_prev' => 'fa-arrow-left',
-        'mod_book:nav_sep' => 'fa-minus',
         'mod_book:add' => 'fa-plus',
-        'mod_book:nav_next' => 'fa-arrow-right',
-        'mod_book:nav_exit' => 'fa-arrow-up',
+        'mod_book:chapter' => 'fa-book-bookmark',
     ];
 }
 

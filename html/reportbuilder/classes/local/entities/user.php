@@ -23,6 +23,8 @@ use context_system;
 use context_user;
 use core\context;
 use core_component;
+use core_date;
+use core_user;
 use html_writer;
 use lang_string;
 use moodle_url;
@@ -74,40 +76,33 @@ class user extends base {
     }
 
     /**
-     * Initialise the entity, add all user fields and all 'visible' user profile fields
+     * Initialise the entity
      *
      * @return base
      */
     public function initialise(): base {
-        $userprofilefields = $this->get_user_profile_fields();
+        $tablealias = $this->get_table_alias('user');
+
+        $userprofilefields = (new user_profile_fields(
+            "{$tablealias}.id",
+            $this->get_entity_name(),
+        ))
+            ->add_joins($this->get_joins());
 
         $columns = array_merge($this->get_all_columns(), $userprofilefields->get_columns());
         foreach ($columns as $column) {
             $this->add_column($column);
         }
 
+        // All the filters defined by the entity can also be used as conditions.
         $filters = array_merge($this->get_all_filters(), $userprofilefields->get_filters());
         foreach ($filters as $filter) {
-            $this->add_filter($filter);
-        }
-
-        $conditions = array_merge($this->get_all_filters(), $userprofilefields->get_filters());
-        foreach ($conditions as $condition) {
-            $this->add_condition($condition);
+            $this
+                ->add_condition($filter)
+                ->add_filter($filter);
         }
 
         return $this;
-    }
-
-    /**
-     * Get user profile fields helper instance
-     *
-     * @return user_profile_fields
-     */
-    protected function get_user_profile_fields(): user_profile_fields {
-        $userprofilefields = new user_profile_fields($this->get_table_alias('user') . '.id', $this->get_entity_name());
-        $userprofilefields->add_joins($this->get_joins());
-        return $userprofilefields;
     }
 
     /**
@@ -282,11 +277,8 @@ class user extends base {
         ))
             ->add_joins($this->get_joins())
             ->add_fields($userpictureselect)
-            ->set_type(column::TYPE_INTEGER)
             ->set_is_sortable($this->is_sortable('picture'))
-            // It doesn't make sense to offer integer aggregation methods for this column.
-            ->set_disabled_aggregation(['avg', 'max', 'min', 'sum'])
-            ->add_callback(static function ($value, stdClass $row): string {
+            ->add_callback(static function($value, stdClass $row): string {
                 global $OUTPUT;
 
                 return !empty($row->id) ? $OUTPUT->user_picture($row, ['link' => false, 'alttext' => false]) : '';
@@ -399,10 +391,8 @@ class user extends base {
 
         $namefields = fields::get_name_fields(true);
 
-        // Create a dummy user object containing all name fields.
-        $dummyuser = (object) array_combine($namefields, $namefields);
         $viewfullnames = has_capability('moodle/site:viewfullnames', context_system::instance());
-        $dummyfullname = fullname($dummyuser, $viewfullnames);
+        $dummyfullname = core_user::get_dummy_fullname(null, ['override' => $viewfullnames]);
 
         // Extract any name fields from the fullname format in the order that they appear.
         $matchednames = array_values(order_in_string($namefields, $dummyfullname));
@@ -430,6 +420,8 @@ class user extends base {
             'email' => new lang_string('email'),
             'city' => new lang_string('city'),
             'country' => new lang_string('country'),
+            'lang' => new lang_string('language'),
+            'timezone' => new lang_string('timezone'),
             'theme' => new lang_string('theme'),
             'description' => new lang_string('description'),
             'firstnamephonetic' => new lang_string('firstnamephonetic'),
@@ -595,6 +587,24 @@ class user extends base {
      */
     public static function get_options_for_country(): array {
         return get_string_manager()->get_list_of_countries();
+    }
+
+    /**
+     * List of options for the field lang.
+     *
+     * @return string[]
+     */
+    public static function get_options_for_lang(): array {
+        return get_string_manager()->get_list_of_translations();
+    }
+
+    /**
+     * List of options for the field timezone.
+     *
+     * @return string[]
+     */
+    public static function get_options_for_timezone(): array {
+        return core_date::get_list_of_timezones(null, true);
     }
 
     /**

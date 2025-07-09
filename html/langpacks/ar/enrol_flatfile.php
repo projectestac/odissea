@@ -52,7 +52,7 @@ $string['pluginname_desc'] = 'هذه الطريقة ستقوم بالتحقق د
 * operation - add | del
 * role - student | teacher | teacheredit
 * user idnumber - idnumber في جدول المستخدمين NB وليس المُعرَّف
-* course idnumber - idnumber في جدول المقررات الدراسية NB وليس المُعرَّف
+* course idnumber - idnumber في جدول المساقات NB وليس المُعرَّف
 * starttime - start time (بالثواني مقاسة منذ epoch) - إختياري
 * endtime - end time (بالثواني مقاسة منذ epoch) - إختياري
 

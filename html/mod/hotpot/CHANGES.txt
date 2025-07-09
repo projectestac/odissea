@@ -2,6 +2,12 @@
 Change log for mod_hotpot
 ========================================
 
+2025-05-03 (53)
+ - ensure FEATURE_CAN_DISPLAY is enabled so that vocab activities are displayed in Moodle >= 5.0
+
+2025-05-03 (52)
+ - modify db/subplugins.json for compatability with MDL-83705 and Moodle >= 5.x
+
 2024-02-10 (51)
  - fix link to user on function to 'get_recent_mod_activity()'
 

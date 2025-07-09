@@ -45,7 +45,14 @@ $string['filtername'] = 'Galdera txertatuak';
 $string['generalfeedback_desc'] = 'Modu lehenetsian galdera txertatuetan feedback orokorra erakutsi behar den edo ez.';
 $string['howquestionbehaves'] = 'Galderaren jokaera';
 $string['howquestionbehaves_desc'] = 'Galdera txertatuetan erabiltzeko jokaera lehenetsia';
+$string['iframedescription'] = 'Iframe-aren deskribapena';
+$string['iframedescription_help'] = 'Deskribapen honek orrian nabigatzeko pantaila-irakurleak erabiltzen dituztenei laguntzen die orri berean hainbat galdera txertatzen badituzu.
+Irisgarritasuna hobetu egingo da txertatutako galdera bakoitza ezberdintzeko moduan deskribatzen badituzu. Kontuan izan sistemak automatikoki "Galdera txertatua [[n]]" gisa erakutsiko duela, non \'n\' sistemak automatikoki kalkulatutako zenbaki bat izango den.
+Deskribapen-testuak gehienez 100 karaktere izan ditzake.';
+$string['iframedescriptionmaxlengthwarning'] = 'Deskribapenak gehienez 100 karaktere izan ditzake.';
+$string['iframedescriptionminlengthwarning'] = 'Deskribapenak gutxienez 3 karaktere izan behar ditu.';
 $string['iframetitle'] = 'Galdera txertatua';
+$string['iframetitleauto'] = 'Galdera txertatua {$a}';
 $string['invalidcategory'] = '"{$a->contextname}" testuinguruan ez da "{$a->catid}" ID zenbakia duen kategoria existitzen.';
 $string['invalidemptycategory'] = '"{$a->contextname}" testuinguruko "{$a->catname}" kategoriak ez dauka txertatu daitekeen galderarik.';
 $string['invalidquestion'] = '"{$a->catname}" kategorian ez da "{$a->qid}" ID zenbakia duen galderarik existitzen [{$a->catidnumber}]".';
@@ -60,7 +67,9 @@ $string['nameidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->count})';
 $string['noguests'] = 'Gonbidatuek ez dute galdera txertatuekin interakziorik izateko baimenik.';
 $string['notyourattempt'] = 'Hau ez da zure saiakera.';
 $string['pluginname'] = 'Galdera txertatuak';
+$string['previousattempts'] = 'Aurretiko saiakerak';
 $string['privacy:metadata'] = 'Galdera txertatuak iragazkiak ez du inolako datu pertsonalik biltzen.';
+$string['questionbank'] = 'Galdera bankua';
 $string['questionidnumber'] = 'Galderaren ID zenbakia';
 $string['questionidnumberchanged'] = 'Hemen erantzuten saiatu den galderak dagoeneko ez dauka {$a} ID zenbakia.';
 $string['questionnolongerhasidnumber'] = 'Hemen erantzuten saiatu den galderak dagoeneko ez dauka ID zenbakirik.';

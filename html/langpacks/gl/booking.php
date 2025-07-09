@@ -31,16 +31,12 @@ $string['addnewcategory'] = 'Engadir unha nova categoría';
 $string['addtocalendar'] = 'Engadir ao calendario';
 $string['addtogroup'] = 'Engadir os usuarios ao grupo de xeito automático';
 $string['addtogroup_help'] = 'Engadir os usuarios ao grupo de xeito automático - o grupo será creado co nome «Nome da reserva - Nome da opción»';
-$string['agreetobookingpolicy'] = 'Lin e acepto as seguintes condicións da reserva';
 $string['allbookingoptions'] = 'Descargar os usuarios de tódalas opcións de reserva';
 $string['allmailssend'] = 'Foron enviados con éxito tódolos correos aos usuarios!';
-$string['allowdelete'] = 'Permitir aos usuarios que cancelen as súas reservas';
 $string['allowupdate'] = 'Permitir a actualización da reserva';
 $string['answered'] = 'Contestada';
 $string['associatedcourse'] = 'Curso asociado';
 $string['attachedfiles'] = 'Ficheiros anexos';
-$string['attachical'] = 'Anexar actividades ical';
-$string['attachicaldesc'] = 'Se está activado, as notificacións por correo incluirán unha actividade ical anexa';
 $string['autoenrol'] = 'Matricular usuarios de xeito automático';
 $string['autoenrol_help'] = 'Se está activado, os usuarios serán matriculados no curso pertinente en canto fagan a reserva, e será anulada a matrícula do curso en canto cancelen a reserva.';
 $string['availability'] = 'Aínda dispoñible';
@@ -48,19 +44,6 @@ $string['available'] = 'Prazas dispoñibles';
 $string['booked'] = 'Reservado';
 $string['bookedpast'] = 'Reservado (curso finalizado)';
 $string['bookedtext'] = 'Confirmación de reserva';
-$string['bookedtext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-</ul>';
 $string['bookedusers'] = 'Usuarios reservados';
 $string['booking'] = 'Reservas';
 $string['booking:addinstance'] = 'Engadir nova reserva';
@@ -93,7 +76,6 @@ $string['cancelbooking'] = 'Anular a reserva';
 $string['categories'] = 'Categorías';
 $string['category'] = 'Categoría';
 $string['categoryname'] = 'Nome de categoría';
-$string['choosecourse'] = 'Escoller un curso';
 $string['closed'] = 'Reservas pechadas';
 $string['confirmationmessagesettings'] = 'Configuración do correo de confirmación';
 $string['confirmbookingoffollowing'] = 'Por favor, confirme a reserva para o seguinte curso';
@@ -111,23 +93,8 @@ $string['deletedbookingusermessage'] = 'Ola {$a->participant},
 A súa reserva para {$a->title} ({$a->startdate} {$a->starttime}) foi cancelada.';
 $string['deletedbookingusersubject'] = 'Cancelouse a reserva para {$a->title}';
 $string['deletedtext'] = 'Mensaxe para reserva cancelada';
-$string['deletedtext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-</ul>';
 $string['deletesubcategory'] = 'Por favor, elimine primeiro as subcategorías desta categoría!';
 $string['deleteuserfrombooking'] = 'Desexa eliminar os usuarios da reserva?';
-$string['donotselectcourse'] = 'Non se seleccionou un curso';
 $string['download'] = 'Descarga';
 $string['downloadallresponses'] = 'Descarga as respostas de tódalas opcións de reserva';
 $string['downloadusersforthisoptionods'] = 'Descargar os usuarios en formato ODS';
@@ -182,20 +149,6 @@ $string['pluginadministration'] = 'Administración de reservas';
 $string['pluginname'] = 'Reservas';
 $string['pollurl'] = 'URL da enquisa';
 $string['pollurltext'] = 'Enviar URL da enquisa';
-$string['pollurltext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-</ul>';
 $string['pollurltextmessage'] = 'Por favor, participe na enquisa
 
 URL {pollurl}';
@@ -208,31 +161,13 @@ $string['rootcategory'] = 'Inicio';
 $string['searchtag'] = 'Etiquetas de busca';
 $string['select'] = 'Selección';
 $string['selectcategory'] = 'Seleccionar categoría';
-$string['sendcustommessage'] = 'Enviar mensaxe personalizada';
 $string['sendmailtobooker'] = 'Páxina de reserva para outros usuarios: Enviar correo ao usuario que fai a reserva en lugar de aqueles que xa están rexistrados';
 $string['sendmailtobooker_help'] = 'Marca esta opción para enviar o correo de confirmación ao usuario que fai a reserva para outros usuarios, en lugar de envialo aos propios usuarios que foron engadidos á opción de reserva.
 Isto só se aplica nas reservas feitas en «reserva para outros usuarios».';
-$string['showallbookings'] = 'Amosar o resumo para tódalas reservas';
 $string['spaceleft'] = 'praza dispoñíbel';
 $string['spacesleft'] = 'prazas dispoñíbeis';
-$string['startendtimeknown'] = 'As datas de comezo e remate do curso son coñecidas';
 $string['starttimenotset'] = 'Data de comezo sen configurar';
 $string['statuschangetext'] = 'Mensaxe de cambio de estado';
-$string['statuschangetext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-</ul>';
-$string['submitandaddnew'] = 'Gardar e engadir';
 $string['subscribersto'] = 'Profesores para \'{$a}\\';
 $string['subscribetocourse'] = 'Matricular usuarios no curso';
 $string['subscribeuser'] = 'Desexa matricular os usuarios no seguinte curso';
@@ -250,20 +185,6 @@ $string['waitinglisttaken'] = 'Na lista de agarda';
 $string['waitinglistusers'] = 'Usuarios na lista de agarda';
 $string['waitingplacesavailable'] = 'Prazas dispoñíbeis na lista de agarda';
 $string['waitingtext'] = 'Confirmación lista de agarda';
-$string['waitingtext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
-<ul>
-<li>{status}</li>
-<li>{participant}</li>
-<li>{title}</li>
-<li>{duration}</li>
-<li>{starttime}</li>
-<li>{endtime}</li>
-<li>{startdate}</li>
-<li>{enddate}</li>
-<li>{courselink}</li>
-<li>{bookinglink}</li>
-<li>{pollurl}</li>
-</ul>';
 $string['waitspaceavailable'] = 'Prazas dispoñíbeis na lista de agarda';
 $string['withselected'] = 'Cos usuarios seleccionados:';
 $string['yourselection'] = 'A súa selección';

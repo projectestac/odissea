@@ -118,3 +118,14 @@ Feature: Single section course page
     Then I should see "Online users"
     And I am on the "Course 1 > Section 1" "course > section" page
     And I should see "Online users"
+
+  @javascript
+  Scenario: Delete a section from the section page redirects to the main course page
+    Given I am on the "C1 > Section 1" "course > section" page
+    And I turn editing mode on
+    When I choose the "Delete" item in the "Edit" action menu of the "page-header" "region"
+    And I click on "Delete" "button" in the "Delete section?" "dialogue"
+    # Section 1 should be removed.
+    Then I should not see "Section 1"
+    # The user should be redirected to the course page.
+    And I should see "General" in the "page" "region"

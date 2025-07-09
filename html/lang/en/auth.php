@@ -77,7 +77,7 @@ $string['emailchangecancel'] = 'Cancel email change';
 $string['emailchangepending'] = 'Change pending. Open the link sent to you at {$a->preference_newemail}.';
 $string['emailnowexists'] = 'The email address you tried to assign to your profile has been assigned to someone else since your original request. Your request for change of email address is hereby cancelled, but you may try again with a different address.';
 $string['emailupdate'] = 'Email address update';
-$string['emailupdatemessage'] = 'Dear {$a->fullname},
+$string['emailupdatemessage'] = 'Hi {$a->firstname},
 
 You have requested a change of your email address for your account on {$a->site}. To confirm this change, please go to the following web address:
 
@@ -158,6 +158,10 @@ $string['selfregistration_help'] = 'If an authentication plugin, such as email-b
 $string['settingmigrationmismatch'] = 'Values mismatch detected while correcting the plugin setting names! The authentication plugin \'{$a->plugin}\' had the setting \'{$a->setting}\' configured to \'{$a->legacy}\' under the legacy name and to \'{$a->current}\' under the current name. The latter value has been set as the valid one but you should check and confirm that it is expected.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'You can hide or show the guest login button on the login page.';
+$string['showloginform'] = 'Display manual login form';
+$string['showloginform_desc'] = 'If all users on the site use an authentication method such as OAuth 2 that doesn\'t require them to enter a username and password, you can hide the manual login form. Note that users with manual accounts will not be able to log in.
+
+If you hide the manual login form then can\'t log in, you can display it again using the command line php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Use standard page for changing password';
 $string['stdchangepassword_expl'] = 'If the external authentication system allows password changes through Moodle, switch this to Yes. This setting overrides \'Change Password URL\'.';
 $string['stdchangepassword_explldap'] = 'NOTE: It is recommended that you use LDAP over an SSL encrypted tunnel (ldaps://) if the LDAP server is remote.';

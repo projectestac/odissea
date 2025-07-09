@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Vorlagendatei';
 $string['preset_desc'] = 'Wählen Sie eine Vorlagendatei, um das Aussehen des Designs zu festzulegen.';
 $string['presetfiles'] = 'Zusätzliche Vorlagendateien';
-$string['presetfiles_desc'] = 'Vorlagendateien können verwendet werden, um das Aussehen des Designs \'Boost\' grundlegend zu verändern. Infos zum Erstellen und Freigeben von eigenen Vorlagendateien finden Sie unter <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost Presets </a>. Schauen Sie auch in das <a href="https://moodle.net/search?q=boost+presets"> Presets Repository </a>, um Vorlagendateien zu finden, die andere freigegeben haben.';
+$string['presetfiles_desc'] = 'Mithilfe von Vorlagendateien lässt sich das Erscheinungsbild eines Designs grundlegend verändern.';
 $string['privacy:drawerblockclosed'] = 'Die aktuelle Einstellung der Blockleiste ist geschlossen.';
 $string['privacy:drawerblockopen'] = 'Die aktuelle Einstellung der Blockleiste ist geöffnet.';
 $string['privacy:drawerindexclosed'] = 'Die aktuelle Einstellung des Kursindex ist geschlossen.';

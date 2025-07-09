@@ -24,7 +24,7 @@ use stdClass;
  * @package    core_courseformat
  * @copyright  2023 Ferran Recio <ferran@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @coversDefaultClass \core_courseformat\sectionactions
+ * @coversDefaultClass \core_courseformat\local\sectionactions
  */
 final class sectionactions_test extends \advanced_testcase {
     /**
@@ -33,6 +33,7 @@ final class sectionactions_test extends \advanced_testcase {
     public static function setUpBeforeClass(): void {
         global $CFG;
         require_once($CFG->dirroot . '/course/lib.php');
+        parent::setUpBeforeClass();
     }
 
     /**

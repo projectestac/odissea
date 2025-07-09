@@ -91,7 +91,7 @@ export default class Component extends BaseComponent {
             const sectionDom = this.sections[sectionid];
             const linkDom = sectionDom.querySelector(":scope > .courseindex-item a.courseindex-link");
             if (linkDom) {
-                const link = section.sectionurl.replace("&amp;", "&");
+                const link = section.sectionurl;
                 if (linkDom.href != link) {
                     linkDom.href = link;
                 }

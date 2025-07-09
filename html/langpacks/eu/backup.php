@@ -308,7 +308,7 @@ $string['overwrite'] = 'Gainidatzi';
 $string['pendingasyncdeletedetail'] = 'Ikastaro hau segurtasun-kopia asinkronoaren zain dago.<br/>Ikastaroak ezin dira ezabatu segurtasun-kopia egin arte.';
 $string['pendingasyncdetail'] = 'Segurtasun-kopia asinkronoek erabiltzaile batek aldiko baliabide bakar baten kopia zain izatea ahalbidetzen dute.<br/>
 Baliabide bereko kopia asinkrono anitz ezin dira itxaron-zerrendan jarri, horrek seguruenik eduki bereko segurtasun kopiak sortuko bailituzke.';
-$string['pendingasyncedit'] = 'Ikastaro honen segurtasun-kopia edo kopia baten eskaera zain dago. Ez ezazu ikastaroa editatu segurtasun-kopia osatu arte, mesedez.';
+$string['pendingasyncedit'] = 'Ikastaro honen segurtasun-kopia/kopia eskaera bat zain dago. Ez ezazu ikastaroa editatu segurtasun-kopia osatu arte, mesedez.';
 $string['pendingasyncerror'] = 'Baliabide honetarako segurtasun-kopiaren zain';
 $string['preparingdata'] = 'Datuak prestatzen';
 $string['preparingui'] = 'Orria erakusteko prestatzen';

@@ -553,6 +553,7 @@ $string['unabletocreatetooltype'] = 'Не удается создать инст
 $string['unabletofindtooltype'] = 'Не удается найти инструмент для {$a->id}';
 $string['unknownstate'] = 'Неизвестное состояние';
 $string['update'] = 'Обновить';
+$string['usage'] = 'Количество использований';
 $string['useraccountinformation'] = 'Информация учетной записи пользователя';
 $string['userpersonalinformation'] = 'Личная информация пользователя';
 $string['using_tool_cartridge'] = 'Использование картриджа инструмента';

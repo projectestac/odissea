@@ -189,6 +189,7 @@ $string['editsubmissionother'] = 'Editar submissão de {$a}';
 $string['enabled'] = 'Ativado';
 $string['enabletimelimit'] = 'Ativar trabalhos cronometrados';
 $string['enabletimelimit_help'] = 'Se ativar esta opção, poderá definir um limite de tempo na página das configurações do trabalho.';
+$string['errorgradechangessaveddetail'] = 'Ocorreu um erro ao guardar as alterações na nota e no feedback';
 $string['errornosubmissions'] = 'Não existem trabalhos submetidos para descarregar';
 $string['errorquickgradingvsadvancedgrading'] = 'As notas não foram guardadas porque este trabalho está a usar um método de avaliação avançado.';
 $string['errorrecordmodified'] = 'As notas não foram guardadas porque alguém alterou um ou mais registos desde o momento em que acedeu à página.';
@@ -234,7 +235,7 @@ Pode consultá-lo anexado à <a href="{$a->url}">submissão do seu trabalho</a>.
 $string['feedbackavailableanonsmall'] = 'Novo feedback para o trabalho na atividade \'{$a->assignment}\'';
 $string['feedbackavailableanontext'] = 'Existe um novo feedback relativo à sua submissão do trabalho na atividade \'{$a->assignment}\'
 
-Pode vê-lo anexado à submissão do seu trabalho:
+Pode consultá-lo anexado à submissão do seu trabalho:
 
 {$a->url}';
 $string['feedbackavailablehtml'] = '{$a->username} submeteu feedback ao seu trabalho que submeteu na atividade \'<i>{$a->assignment}</i>\'<br /><br />
@@ -532,7 +533,7 @@ Pode ver o estado da sua submissão de trabalho:
 
 {$a->url}';
 $string['submissiondrafts'] = 'Ativar o botão \'Submeter o trabalho\'';
-$string['submissiondrafts_help'] = 'Se ativar esta opção, os alunos terão de clicar no botão Submeter para declarar o seu envio como sendo o trabalho final. Isto permite que os alunos possam manter o trabalho em curso no sistema até o finalizarem. Se esta opção for alterada de "Não" para "Sim" após algum aluno já ter submetido o seu trabalho, este será considerado como final.';
+$string['submissiondrafts_help'] = 'Devem os aluno ter um botão de submissão para indicar quando terminarem de fazer alterações ao trabalho enviado e este estiver pronto para ser avaliado?';
 $string['submissioneditable'] = 'Os alunos podem editar esta submissão';
 $string['submissionempty'] = 'Nenhum trabalho submetido';
 $string['submissionlog'] = 'Aluno: {$a->fullname},

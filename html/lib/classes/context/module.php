@@ -170,7 +170,7 @@ class module extends context {
         $subcaps = array();
 
         $modulepath = "{$CFG->dirroot}/mod/{$module->name}";
-        $subplugins = \core_component::get_subplugins("mod_{$module->name}");
+        $subplugins = \core\component::get_subplugins("mod_{$module->name}");
 
         if (!empty($subplugins)) {
             foreach (array_keys($subplugins) as $subplugintype) {

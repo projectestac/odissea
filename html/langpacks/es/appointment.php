@@ -69,6 +69,7 @@ $string['attendanceinstructions'] = 'Selecciona usuarios que asistieron a la ses
 $string['attendedsession'] = 'Sesión asistida';
 $string['attendees'] = 'Asistentes';
 $string['attendeestablesummary'] = 'Personas que planearon asistir o han asistido a esta sesión.';
+$string['availableplaceholders'] = 'Marcadores de posición disponibles';
 $string['availableseats'] = '{$a} cupos disponibles';
 $string['book'] = 'Reserva';
 $string['bookedat'] = '<strong>Reservado:</strong> {$a}';

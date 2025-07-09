@@ -36,6 +36,8 @@ require_once 'beans.lib.php';
 require_once '../lib.php';
 require_once '../locallib.php';
 
+global $DB;
+
 $dbman = $DB->get_manager(); // loads ddl manager and xmldb classes
 
 $elements = [];
@@ -47,7 +49,7 @@ $currentBean = -1;
 $params = [];
 
 $xml_parser = xml_parser_create('');
-xml_set_element_handler($xml_parser, "startElement", "endElement");
+xml_set_element_handler($xml_parser, 'startElement', 'endElement');
 xml_parse($xml_parser, $payload);
 xml_parser_free($xml_parser);
 
@@ -100,6 +102,23 @@ switch ($beans[0]['ID']) {
 
         foreach ($beans as $bean) {
             if ($bean['ID'] === 'add activity') {
+
+                // Sometimes, the function getPrecision returns a value referred to 100, but the maximum grade is
+                // not 100. So, we need to scale the qualification.
+                $qualification = round(getPrecision($bean['ACTIVITY']['minActions'], $bean['ACTIVITY']['actions'], '' . $bean['ACTIVITY']['solved'], $bean['ACTIVITY']['score']));
+
+                $query = 'SELECT maxgrade
+                          FROM {jclic} j
+                          LEFT JOIN {jclic_sessions} js ON js.jclicid = j.id
+                          WHERE js.session_id=\''. $bean['PARAMS']['session'] .'\'';
+                $maxgrade = ($rs = $DB->get_record_sql($query)) ? (int)$rs->maxgrade : 0;
+
+                if ($maxgrade > 0) {
+                    $scaled_qualification = ($qualification / 100) * $maxgrade;
+                } else {
+                    $scaled_qualification = $qualification; // If maxgrade is 0, don't scale the qualification.
+                }
+
                 $jclic_activity = new stdClass();
                 $jclic_activity->session_id = $bean['PARAMS']['session'];
                 $jclic_activity->activity_id = $bean['PARAMS']['num'];
@@ -108,7 +127,7 @@ switch ($beans[0]['ID']) {
                 $jclic_activity->activity_solved = $bean['ACTIVITY']['solved'] == 'true' ? 1 : 0;
                 $jclic_activity->score = $bean['ACTIVITY']['score'];
                 $jclic_activity->grade = $jclic_activity->score;
-                $jclic_activity->qualification = round(getPrecision($bean['ACTIVITY']['minActions'], $bean['ACTIVITY']['actions'], '' . $bean['ACTIVITY']['solved'], $bean['ACTIVITY']['score']));
+                $jclic_activity->qualification = round($scaled_qualification);
                 $jclic_activity->total_time = getSeconds($bean['ACTIVITY']['time']);
                 $DB->insert_record('jclic_activities', $jclic_activity);
             }

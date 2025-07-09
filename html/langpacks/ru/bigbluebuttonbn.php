@@ -422,6 +422,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'ID пользоват
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Хранит метаданные о записях.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'ID пользователя, который последним изменил запись.';
 $string['progress_createbigbluebuttonbn'] = 'Создание собрания BigBlueButton ({$a})';
+$string['recordingnotfound'] = 'Запись не найдена.';
 $string['recordings_from_deleted_activities'] = 'Записи удаленных собраний';
 $string['recordingurlnotfound'] = 'URL-адрес записи недействителен.';
 $string['removedevents'] = 'Удаленные события';

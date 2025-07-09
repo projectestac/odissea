@@ -778,7 +778,7 @@ class grade_item extends grade_object {
      * @param string $groupwheresql Where conditions for $groupsql
      * @return int The number of hidden grades
      */
-    public function has_hidden_grades($groupsql="", array $params=null, $groupwheresql="") {
+    public function has_hidden_grades($groupsql="", ?array $params=null, $groupwheresql="") {
         global $DB;
         $params = (array)$params;
         $params['itemid'] = $this->id;
@@ -2211,25 +2211,21 @@ class grade_item extends grade_object {
         list($usql, $params) = $DB->get_in_or_equal($gis);
 
         if ($userid) {
-            $usersql = "AND g.userid=?";
+            $usersql = "AND userid=?";
             $params[] = $userid;
         } else {
             $usersql = "";
         }
 
-        $grade_inst = new grade_grade();
-        $fields = 'g.'.implode(',g.', $grade_inst->required_fields);
+        $gradeinst = new grade_grade();
+        $fields = implode(',', $gradeinst->required_fields);
 
         $params[] = $this->courseid;
-        $sql = "SELECT $fields
-                  FROM {grade_grades} g, {grade_items} gi
-                 WHERE gi.id = g.itemid AND gi.id $usql $usersql AND gi.courseid=?
-                 ORDER BY g.userid";
 
         $return = true;
 
         // group the grades by userid and use formula on the group
-        $rs = $DB->get_recordset_sql($sql, $params);
+        $rs = $DB->get_recordset_select('grade_grades', "itemid $usql $usersql", $params, 'userid', $fields);
         if ($rs->valid()) {
             $prevuser = 0;
             $grade_records   = array();

@@ -62,7 +62,7 @@ $string['expiryinactivemessageenrolledbody'] = '嗨{$a->user}，
 
 您在课程{$a->course}的注册将于{$a->timeend}到期，因为您在过去{$a->inactivetime}天内未访问过该课程。
 
-要使您的注册保持有效，请在 {$a->timeend} 之前登录并访问 <a href=“{$a->url}”>{$a->course}</a>。';
+要使您的注册保持有效，请在 {$a->timeend} 之前登录并访问 <a href="{$a->url}">{$a->course}</a>。';
 $string['expiryinactivemessageenrolledsubject'] = '您的注册即将到期：{$a->course}';
 $string['expirymessageenrolledbody'] = '亲爱的 {$a->user}：
 

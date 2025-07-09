@@ -37,8 +37,6 @@ $messageuser = optional_param_array('messageuser', false, PARAM_INT);
 $action = optional_param('action', '', PARAM_ALPHA);
 $perpage = optional_param('perpage', FEEDBACK_DEFAULT_PAGE_COUNT, PARAM_INT);  // how many per page
 $showall = optional_param('showall', false, PARAM_INT);  // should we show all users
-// $SESSION->feedback->current_tab = $do_show;
-$current_tab = 'nonrespondents';
 
 ////////////////////////////////////////////////////////
 //get the objects
@@ -264,7 +262,7 @@ if (empty($students)) {
             $checkbox = new \core\output\checkbox_toggleall('feedback-non-respondents', false, [
                 'id' => 'messageuser-' . $student->id,
                 'name' => 'messageuser[]',
-                'classes' => 'mr-1',
+                'classes' => 'me-1',
                 'value' => $student->id,
                 'label' => get_string('includeuserinrecipientslist', 'mod_feedback', fullname($student)),
                 'labelclasses' => 'accesshide',

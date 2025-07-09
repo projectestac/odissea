@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addingaresource'] = '从MoodleNet添加内容';
 $string['aria:enterprofile'] = '输入您的MoodleNet配置文件的ID';
 $string['aria:footermessage'] = '浏览MoodleNet上的内容';
-$string['autoenablenotification'] = '<p>在 Moodle 4.0 及更高版本中，<a href=“https://moodle.net/”>MoodleNet</a> 集成在“高级功能”中默认启用。具有创建和管理活动功能的用户可以通过活动选择器浏览 MoodleNet，并将 MoodleNet 资源导入到他们的课程中。</p><p>如果需要，可以在 <a href=“{$a->settingslink}”>MoodleNet 入站设置中指定备用 MoodleNet 实例</a>。</p>';
+$string['autoenablenotification'] = '<p>在 Moodle 4.0 及更高版本中，高级功能中的 <a href="https://moodle.net/">MoodleNet</a> 集成默认启用。具有创建和管理活动功能的用户可以通过活动选择器浏览 MoodleNet，并将 MoodleNet 资源导入到他们的课程中。</p><p>若需要，可在 <a href="{$a->settingslink}">MoodleNet 入站设置</a>中指定备用 MoodleNet 实例。</p>';
 $string['autoenablenotification_subject'] = '默认MoodleNet设置已更改。';
 $string['browsecontentmoodlenet'] = '或者浏览MoodleNet上的内容';
 $string['clearsearch'] = '清除搜索';

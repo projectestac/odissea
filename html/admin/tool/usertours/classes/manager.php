@@ -263,13 +263,13 @@ class manager {
             (object) [
                 'link'  => helper::get_edit_tour_link(),
                 'linkproperties' => [],
-                'img'   => 'b/tour-new',
+                'img'   => 'i/tour-new',
                 'title' => get_string('newtour', 'tool_usertours'),
             ],
             (object) [
                 'link'  => helper::get_import_tour_link(),
                 'linkproperties' => [],
-                'img'   => 'b/tour-import',
+                'img'   => 'i/tour-import',
                 'title' => get_string('importtour', 'tool_usertours'),
             ],
             (object) [
@@ -277,13 +277,13 @@ class manager {
                 'linkproperties' => [
                         'target' => '_blank',
                     ],
-                'img'   => 'b/tour-shared',
+                'img'   => 'i/tour-shared',
                 'title' => get_string('sharedtourslink', 'tool_usertours'),
             ],
         ];
 
         echo \html_writer::start_tag('div', [
-                'class' => 'tour-actions',
+                'class' => 'tour-actions mt-3',
             ]);
 
         echo \html_writer::start_tag('ul');
@@ -292,7 +292,7 @@ class manager {
             $linkproperties = $config->linkproperties;
             $linkproperties['href'] = $config->link;
             $action .= \html_writer::start_tag('a', $linkproperties);
-            $action .= $OUTPUT->pix_icon($config->img, $config->title, 'tool_usertours');
+            $action .= $OUTPUT->pix_icon($config->img, $config->title, 'tool_usertours', ['class' => 'iconsize-medium']);
             $action .= \html_writer::div($config->title);
             $action .= \html_writer::end_tag('a');
             $action .= \html_writer::end_tag('li');
@@ -503,8 +503,9 @@ class manager {
      * @param   int         $tourid     The ID of the tour to duplicate.
      */
     protected function duplicate_tour($tourid) {
-        $tour = helper::get_tour($tourid);
+        require_sesskey();
 
+        $tour = helper::get_tour($tourid);
         $export = $tour->to_record();
         // Remove the id.
         unset($export->id);

@@ -71,6 +71,7 @@ $string['colltypeinstructor'] = 'Col·lecció de professor';
 $string['colltypepeerreviewed'] = 'Col·lecció de tasca revisada per iguals';
 $string['colltypesingle'] = 'Col·lecció individual';
 $string['comments'] = 'Comentaris';
+$string['completegallery'] = 'Galeria completa';
 $string['configmaxbytes'] = 'Mida d\'element màxima per defecte per a totes les col·leccions multimèdia del lloc (subjecta als límits de cada curs i a altres paràmetres locals)';
 $string['content'] = 'Contingut';
 $string['content_help'] = 'L’element que voleu afegir a la vostra galeria.';
@@ -103,6 +104,7 @@ $string['galleryname'] = 'Nom de la galeria';
 $string['gallerythumbnail'] = 'Utilitza com a miniatura de la galeria';
 $string['gallerythumbnail_help'] = 'Si se selecciona, la miniatura d’aquest element s’utilitzarà com la miniatura de la galeria.';
 $string['galleryviewoptions'] = 'Opcions de visualització de la galeria';
+$string['galleryviewoptions_help'] = 'Determina les opcions de visualització de la galeria que es troben disponibles per a l\'alumnat.';
 $string['gridview'] = 'Visualització de graella';
 $string['gridviewcolumns'] = 'Columnes en la visualització de graella';
 $string['gridviewcolumns_help'] = 'En la visualització de graella, estableix el nombre de columnes que es mostren.';
@@ -144,6 +146,7 @@ $string['moralrights'] = 'Drets morals';
 $string['moralrights_help'] = 'Voleu declarar els vostres drets morals?
 
 En seleccionar que sí, doneu el vostre consentiment perquè, en potència, aquest element sigui utilitzat com a exemple de treball.';
+$string['noitemsadded'] = 'No s’ha afegit cap element a aquesta galeria.';
 $string['originalauthor'] = 'Autor original';
 $string['originalauthor_help'] = 'L’autor original de l’element.';
 $string['productiondate'] = 'Data de producció';

@@ -119,6 +119,24 @@ $functions = array(
         'ajax'          => true,
         'loginrequired' => true,
     ),
+    'core_badges_disable_badges' => [
+        'classname'     => 'core_badges\external\disable_badges',
+        'description'   => 'Disable badges',
+        'type'          => 'write',
+        'ajax'          => true,
+    ],
+    'core_badges_enable_badges' => [
+        'classname'     => 'core_badges\external\enable_badges',
+        'description'   => 'Enable badges',
+        'type'          => 'write',
+        'ajax'          => true,
+    ],
+    'core_badges_get_badge' => [
+        'classname'     => 'core_badges\external\get_badge',
+        'description'   => 'Retrieves a badge by id.',
+        'type'          => 'read',
+        'services'      => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
     'core_badges_get_user_badges' => array(
         'classname'     => 'core_badges_external',
         'methodname'    => 'get_user_badges',
@@ -373,7 +391,8 @@ $functions = array(
         'classpath' => 'cohort/externallib.php',
         'description' => 'Deletes all specified cohorts.',
         'type' => 'write',
-        'capabilities' => 'moodle/cohort:manage'
+        'capabilities' => 'moodle/cohort:manage',
+        'ajax' => true,
     ),
     'core_cohort_get_cohort_members' => array(
         'classname' => 'core_cohort_external',
@@ -571,6 +590,14 @@ $functions = array(
         'type'          => 'read',
         'ajax'          => true,
     ],
+    'core_courseformat_new_module' => [
+        'classname'     => 'core_courseformat\external\new_module',
+        'methodname'    => 'execute',
+        'description'   => 'Create a new module to course.',
+        'type'          => 'write',
+        'ajax'          => true,
+        'capabilities'  => 'moodle/course:manageactivities',
+    ],
     'core_courseformat_update_course' => [
         'classname'     => 'core_courseformat\external\update_course',
         'methodname'    => 'execute',
@@ -578,6 +605,14 @@ $functions = array(
         'type'          => 'write',
         'ajax'          => true,
         'capabilities'  => 'moodle/course:sectionvisibility, moodle/course:activityvisibility',
+    ],
+    'core_courseformat_create_module' => [
+        'classname'     => 'core_courseformat\external\create_module',
+        'methodname'    => 'execute',
+        'description'   => 'Add module to course.',
+        'type'          => 'write',
+        'ajax'          => true,
+        'capabilities'  => 'moodle/course:manageactivities',
     ],
     'core_course_edit_module' => array(
         'classname'   => 'core_course_external',
@@ -808,7 +843,8 @@ $functions = array(
         'description' => 'Get the list of potential users to enrol',
         'ajax' => true,
         'type' => 'read',
-        'capabilities' => 'moodle/course:enrolreview'
+        'capabilities' => 'moodle/course:enrolreview',
+        'readonlysession' => true,
     ),
     'core_enrol_search_users' => [
         'classname' => 'core_enrol_external',
@@ -2006,6 +2042,20 @@ $functions = array(
         'capabilities' => 'moodle/user:manageownfiles',
         'services' => array(MOODLE_OFFICIAL_MOBILE_SERVICE),
     ),
+    'core_user_prepare_private_files_for_edition' => [
+        'classname'     => '\core_user\external\prepare_private_files_for_edition',
+        'description'   => 'Prepares the draft area for user private files.',
+        'type'          => 'write',
+        'capabilities'  => 'moodle/user:manageownfiles',
+        'services'      => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
+    'core_user_update_private_files' => [
+        'classname'     => '\core_user\external\update_private_files',
+        'description'   => 'Copy files from a draft area to users private files area.',
+        'type'          => 'write',
+        'capabilities'  => 'moodle/user:manageownfiles',
+        'services'      => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
 
     // Competencies functions.
     'core_competency_create_competency_framework' => array(
@@ -2804,8 +2854,7 @@ $functions = array(
 
     // Filters functions.
     'core_filters_get_available_in_context' => array(
-        'classname'   => 'core_filters\external',
-        'methodname'  => 'get_available_in_context',
+        'classname'   => 'core_filters\external\get_available_in_context',
         'description' => 'Returns the filters available in the given contexts.',
         'type'        => 'read',
         'services'    => array(MOODLE_OFFICIAL_MOBILE_SERVICE),
@@ -3193,6 +3242,40 @@ $functions = array(
         'classname'   => 'core\external\moodlenet_send_course',
         'description' => 'Send course to MoodleNet',
         'type'        => 'read',
+        'ajax'        => true,
+    ],
+    'core_output_poll_stored_progress' => [
+        'classname'   => 'core\external\output\poll_stored_progress',
+        'methodname'  => 'execute',
+        'description' => 'Polls for the current percentage progress of a stored progress object',
+        'type'        => 'read',
+        'ajax'        => true,
+        'readonlysession' => true,
+    ],
+    'core_ai_set_policy_status' => [
+        'classname'   => 'core_ai\external\set_policy_status',
+        'description' => 'Set a users AI policy acceptance',
+        'type'        => 'write',
+        'ajax'        => true,
+        'services'    => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
+    'core_ai_get_policy_status' => [
+        'classname'   => \core_ai\external\get_policy_status::class,
+        'description' => 'Get a users AI policy acceptance',
+        'type'        => 'read',
+        'ajax'        => true,
+        'services'    => [MOODLE_OFFICIAL_MOBILE_SERVICE],
+    ],
+    'core_ai_set_action' => [
+        'classname'   => 'core_ai\external\set_action',
+        'description' => 'Update action',
+        'type'        => 'write',
+        'ajax'        => true,
+    ],
+    'core_sms_set_gateway_status' => [
+        'classname'   => 'core_sms\external\sms_gateway_status',
+        'description' => 'Set the sms gateway status',
+        'type'        => 'write',
         'ajax'        => true,
     ],
 );

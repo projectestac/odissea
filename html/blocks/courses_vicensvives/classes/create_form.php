@@ -41,10 +41,10 @@ class create_form extends \moodleform {
         $label = get_string('isbn', 'block_courses_vicensvives');
         $mform->addElement('static', 'isbn', $label, $this->_customdata['isbn']);
 
-        $options = array(
+        $options = [
             'vv' => 'Vicens Vives',
             'topics' => get_string('standardformat', 'block_courses_vicensvives'),
-        );
+        ];
         $mform->addElement('select', 'format', get_string('format', 'block_courses_vicensvives'), $options);
         $mform->setType('format', PARAM_ALPHA);
 
@@ -52,12 +52,12 @@ class create_form extends \moodleform {
         $content = \html_writer::div($text, 'vicensvives_create_warning');
         $mform->addElement('static', 'warning', '', $content);
 
-        $buttonarray = array();
+        $buttonarray = [];
         $label = get_string('create', 'block_courses_vicensvives');
         $buttonarray[] = $mform->createElement('submit', 'submitbutton', $label);
         $label = get_string('cancel', 'block_courses_vicensvives');
         $buttonarray[] = $mform->createElement('cancel', 'cancel', $label);;
-        $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
+        $mform->addGroup($buttonarray, 'buttonar', '', [' '], false);
         $mform->closeHeaderBefore('buttonar');
     }
 }

@@ -44,6 +44,7 @@ $string['emailUntitled'] = 'رسالة بدون عنوان';
 $string['faqPageIntro'] = 'جد إجابات عن الأسئلة كثيرة التكرار بشأن إعداد مُعرَّف Windows Live™ ، عبر استعمال حسابك في Windows Live ID لتسجيل الدخول في مودل واستعمال خدماته.';
 $string['faqWLIDQ3'] = 'كيف يمكنني تغيير كلمة مرور مُعرَّف Windows Live الخاص بي؟';
 $string['faqWLIDQ4'] = 'ما الذي عليَّ فعله إذا نسيت كلمة مرور مُعرَّف Windows Live الخاص بي؟';
+$string['identityHelpLink'] = 'الأسئلة الشائعة';
 $string['identityHomeLink'] = 'Windows Live&trade;';
 $string['identityLogoAltText'] = 'شعار Windows Live';
 $string['live_services_help'] = '<!--

@@ -37,6 +37,9 @@ define('SQL_PARAMS_QM', 2);
 /** SQL_PARAMS_DOLLAR - Bitmask, indicates $1, $2, ... type parameters are supported by db backend. */
 define('SQL_PARAMS_DOLLAR', 4);
 
+/** SQL_INT_MAX - Size of a large integer with cross database platform support. */
+define('SQL_INT_MAX', 9999999999);
+
 /** SQL_QUERY_SELECT - Normal select query, reading only. */
 define('SQL_QUERY_SELECT', 1);
 
@@ -301,7 +304,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_connection_exception if error
      */
-    abstract public function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, array $dboptions=null);
+    abstract public function connect($dbhost, $dbuser, $dbpass, $dbname, $prefix, ?array $dboptions=null);
 
     /**
      * Store various database settings
@@ -313,7 +316,7 @@ abstract class moodle_database {
      * @param array $dboptions driver specific options
      * @return void
      */
-    protected function store_settings($dbhost, $dbuser, $dbpass, $dbname, $prefix, array $dboptions=null) {
+    protected function store_settings($dbhost, $dbuser, $dbpass, $dbname, $prefix, ?array $dboptions=null) {
         $this->dbhost    = $dbhost;
         $this->dbuser    = $dbuser;
         $this->dbpass    = $dbpass;
@@ -373,7 +376,7 @@ abstract class moodle_database {
      *
      * @return bool success True for successful connection. False otherwise.
      */
-    public function create_database($dbhost, $dbuser, $dbpass, $dbname, array $dboptions=null) {
+    public function create_database($dbhost, $dbuser, $dbpass, $dbname, ?array $dboptions=null) {
         return false;
     }
 
@@ -597,7 +600,7 @@ abstract class moodle_database {
      * @param mixed $obj The library specific object. (optional)
      * @return void
      */
-    protected function print_debug($sql, array $params=null, $obj=null) {
+    protected function print_debug($sql, ?array $params=null, $obj=null) {
         if (!$this->get_debug()) {
             return;
         }
@@ -658,7 +661,7 @@ abstract class moodle_database {
      * @return array An array list containing sql 'where' part and 'params'.
      * @throws dml_exception
      */
-    protected function where_clause($table, array $conditions=null) {
+    protected function where_clause($table, ?array $conditions=null) {
         // We accept nulls in conditions
         $conditions = is_null($conditions) ? array() : $conditions;
 
@@ -891,7 +894,7 @@ abstract class moodle_database {
      * @param array $params The query parameters.
      * @return array (sql, params, type of params)
      */
-    public function fix_sql_params($sql, array $params=null) {
+    public function fix_sql_params($sql, ?array $params=null) {
         global $CFG;
 
         require_once($CFG->libdir . '/ddllib.php');
@@ -1314,7 +1317,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function execute($sql, array $params=null);
+    abstract public function execute($sql, ?array $params=null);
 
     /**
      * Get a number of records as a moodle_recordset where all the given conditions met.
@@ -1350,7 +1353,7 @@ abstract class moodle_database {
      * @return moodle_recordset A moodle_recordset instance
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_recordset($table, array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_recordset($table, ?array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         list($select, $params) = $this->where_clause($table, $conditions);
         return $this->get_recordset_select($table, $select, $params, $sort, $fields, $limitfrom, $limitnum);
     }
@@ -1396,7 +1399,7 @@ abstract class moodle_database {
      * @return moodle_recordset A moodle_recordset instance.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_recordset_select($table, $select, array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_recordset_select($table, $select, ?array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         $sql = "SELECT $fields FROM {".$table."}";
         if ($select) {
             $sql .= " WHERE $select";
@@ -1423,7 +1426,7 @@ abstract class moodle_database {
      * @return moodle_recordset A moodle_recordset instance.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function get_recordset_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
+    abstract public function get_recordset_sql($sql, ?array $params=null, $limitfrom=0, $limitnum=0);
 
     /**
      * Get all records from a table.
@@ -1459,7 +1462,7 @@ abstract class moodle_database {
      * @return array An array of Objects indexed by first column.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_records($table, array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_records($table, ?array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         list($select, $params) = $this->where_clause($table, $conditions);
         return $this->get_records_select($table, $select, $params, $sort, $fields, $limitfrom, $limitnum);
     }
@@ -1503,7 +1506,7 @@ abstract class moodle_database {
      * @return array of objects indexed by first column
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_records_select($table, $select, array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_records_select($table, $select, ?array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -1527,7 +1530,7 @@ abstract class moodle_database {
      * @return array of objects indexed by first column
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function get_records_sql($sql, array $params=null, $limitfrom=0, $limitnum=0);
+    abstract public function get_records_sql($sql, ?array $params=null, $limitfrom=0, $limitnum=0);
 
     /**
      * Get the first two columns from a number of records as an associative array where all the given conditions met.
@@ -1548,7 +1551,7 @@ abstract class moodle_database {
      * @return array an associative array
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_records_menu($table, array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_records_menu($table, ?array $conditions=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         $menu = array();
         if ($records = $this->get_records($table, $conditions, $sort, $fields, $limitfrom, $limitnum)) {
             foreach ($records as $record) {
@@ -1577,7 +1580,7 @@ abstract class moodle_database {
      * @return array an associative array
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_records_select_menu($table, $select, array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
+    public function get_records_select_menu($table, $select, ?array $params=null, $sort='', $fields='*', $limitfrom=0, $limitnum=0) {
         $menu = array();
         if ($records = $this->get_records_select($table, $select, $params, $sort, $fields, $limitfrom, $limitnum)) {
             foreach ($records as $record) {
@@ -1603,7 +1606,7 @@ abstract class moodle_database {
      * @return array an associative array
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_records_sql_menu($sql, array $params=null, $limitfrom=0, $limitnum=0) {
+    public function get_records_sql_menu($sql, ?array $params=null, $limitfrom=0, $limitnum=0) {
         $menu = array();
         if ($records = $this->get_records_sql($sql, $params, $limitfrom, $limitnum)) {
             foreach ($records as $record) {
@@ -1648,7 +1651,7 @@ abstract class moodle_database {
      * @return stdClass|false a fieldset object containing the first matching record, false or exception if error not found depending on mode
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_record_select($table, $select, array $params=null, $fields='*', $strictness=IGNORE_MISSING) {
+    public function get_record_select($table, $select, ?array $params=null, $fields='*', $strictness=IGNORE_MISSING) {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -1674,7 +1677,7 @@ abstract class moodle_database {
      * @return mixed a fieldset object containing the first matching record, false or exception if error not found depending on mode
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_record_sql($sql, array $params=null, $strictness=IGNORE_MISSING) {
+    public function get_record_sql($sql, ?array $params=null, $strictness=IGNORE_MISSING) {
         $strictness = (int)$strictness; // we support true/false for BC reasons too
         if ($strictness == IGNORE_MULTIPLE) {
             $count = 1;
@@ -1730,7 +1733,7 @@ abstract class moodle_database {
      * @return mixed the specified value false if not found
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_field_select($table, $return, $select, array $params=null, $strictness=IGNORE_MISSING) {
+    public function get_field_select($table, $return, $select, ?array $params=null, $strictness=IGNORE_MISSING) {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -1753,7 +1756,7 @@ abstract class moodle_database {
      * @return mixed the specified value false if not found
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_field_sql($sql, array $params=null, $strictness=IGNORE_MISSING) {
+    public function get_field_sql($sql, ?array $params=null, $strictness=IGNORE_MISSING) {
         if (!$record = $this->get_record_sql($sql, $params, $strictness)) {
             return false;
         }
@@ -1786,7 +1789,7 @@ abstract class moodle_database {
      * @return array of values
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function get_fieldset_select($table, $return, $select, array $params=null) {
+    public function get_fieldset_select($table, $return, $select, ?array $params=null) {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -1801,7 +1804,7 @@ abstract class moodle_database {
      * @return array of values
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function get_fieldset_sql($sql, array $params=null);
+    abstract public function get_fieldset_sql($sql, ?array $params=null);
 
     /**
      * Insert new record into database, as fast as possible, no safety checks, lobs not supported.
@@ -1916,7 +1919,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function set_field($table, $newfield, $newvalue, array $conditions=null) {
+    public function set_field($table, $newfield, $newvalue, ?array $conditions=null) {
         list($select, $params) = $this->where_clause($table, $conditions);
         return $this->set_field_select($table, $newfield, $newvalue, $select, $params);
     }
@@ -1932,7 +1935,7 @@ abstract class moodle_database {
      * @return bool true
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function set_field_select($table, $newfield, $newvalue, $select, array $params=null);
+    abstract public function set_field_select($table, $newfield, $newvalue, $select, ?array $params=null);
 
 
     /**
@@ -1943,7 +1946,7 @@ abstract class moodle_database {
      * @return int The count of records returned from the specified criteria.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function count_records($table, array $conditions=null) {
+    public function count_records($table, ?array $conditions=null) {
         list($select, $params) = $this->where_clause($table, $conditions);
         return $this->count_records_select($table, $select, $params);
     }
@@ -1958,7 +1961,7 @@ abstract class moodle_database {
      * @return int The count of records returned from the specified criteria.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function count_records_select($table, $select, array $params=null, $countitem="COUNT('x')") {
+    public function count_records_select($table, $select, ?array $params=null, $countitem="COUNT('x')") {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -1978,7 +1981,7 @@ abstract class moodle_database {
      * @return int the count
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function count_records_sql($sql, array $params=null) {
+    public function count_records_sql($sql, ?array $params=null) {
         $count = $this->get_field_sql($sql, $params);
         if ($count === false or !is_number($count) or $count < 0) {
             throw new coding_exception("count_records_sql() expects the first field to contain non-negative number from COUNT(), '$count' found instead.");
@@ -2008,7 +2011,7 @@ abstract class moodle_database {
      * @return bool true if a matching record exists, else false.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function record_exists_select($table, $select, array $params=null) {
+    public function record_exists_select($table, $select, ?array $params=null) {
         if ($select) {
             $select = "WHERE $select";
         }
@@ -2026,7 +2029,7 @@ abstract class moodle_database {
      * @return bool true if the SQL executes without errors and returns at least one record.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function record_exists_sql($sql, array $params=null) {
+    public function record_exists_sql($sql, ?array $params=null) {
         $mrs = $this->get_recordset_sql($sql, $params, 0, 1);
         $return = $mrs->valid();
         $mrs->close();
@@ -2042,7 +2045,7 @@ abstract class moodle_database {
      * @return bool true.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    public function delete_records($table, array $conditions=null) {
+    public function delete_records($table, ?array $conditions=null) {
         // truncate is drop/create (DDL), not transactional safe,
         // so we don't use the shortcut within them. MDL-29198
         if (is_null($conditions) && empty($this->transactions)) {
@@ -2098,7 +2101,7 @@ abstract class moodle_database {
      * @return bool true.
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
-    abstract public function delete_records_select($table, $select, array $params=null);
+    abstract public function delete_records_select($table, $select, ?array $params=null);
 
     /**
      * Returns the FROM clause required by some DBs in all SELECT statements.
@@ -2921,5 +2924,102 @@ abstract class moodle_database {
     public function is_fulltext_search_supported() {
         // No support unless specified.
         return false;
+    }
+
+    /**
+     * Whether the database is able to support the COUNT() window function and provides a performance improvement.
+     *
+     * @return bool
+     */
+    public function is_count_window_function_supported(): bool {
+        // No support unless specified.
+        return false;
+    }
+
+    /**
+     * Retrieve records with a select query and count the total number of records.
+     *
+     * @param string $sql The query string.
+     * @param string $fullcountcolumn The column name used for counting total records.
+     * @param string $sort (Optional) Sorting criteria for the records.
+     *                      The reason to separate $sort from $sql are:
+     *                      1. The $sort needs to be placed outside the full count subquery
+     *                         in order to function properly in MariaDB.
+     *                      2. For unsupported databases, it is not allowed to run a query to get the total with the $sort.
+     *                         Please refer to the {@see ::generate_fullcount_sql()} for details.
+     * @param array|null $params (Optional) Parameters to bind with the query.
+     * @param int $limitfrom (Optional) Offset for pagination.
+     * @param int $limitnum (Optional) Limit for pagination.
+     * @return array Fetched records.
+     */
+    public function get_counted_records_sql(
+        string $sql,
+        string $fullcountcolumn,
+        string $sort = '',
+        ?array $params = null,
+        int $limitfrom = 0,
+        int $limitnum = 0,
+    ): array {
+        $fullcountsql = $this->generate_fullcount_sql($sql, $params, $fullcountcolumn);
+        if ($sort) {
+            // Remove "ORDER BY" with any extra spaces from $sort.
+            $sort = preg_replace('/\s*ORDER\s+BY\s*/i', '', $sort);
+            $fullcountsql .= " ORDER BY " . $sort;
+        }
+        return $this->get_records_sql($fullcountsql, $params, $limitfrom, $limitnum);
+    }
+
+    /**
+     * Retrieve a recordset with a select query and count the total number of records.
+     *
+     * @param string $sql The query string.
+     * @param string $fullcountcolumn The column name used for counting total records.
+     * @param string $sort (Optional) Sorting criteria for the records.
+     *                      The reason to separate $sort from $sql are:
+     *                      1. The $sort needs to be placed outside the full count subquery
+     *                         in order to function properly in MariaDB.
+     *                      2. For unsupported databases, it is not allowed to run a query to get the total with the $sort.
+     *                         Please refer to the {@see ::generate_fullcount_sql()} for details.
+     * @param array|null $params (Optional) Parameters to bind with the query.
+     * @param int $limitfrom (Optional) Offset for pagination.
+     * @param int $limitnum (Optional) Limit for pagination.
+     * @return moodle_recordset A moodle_recordset instance..
+     */
+    public function get_counted_recordset_sql(
+        string $sql,
+        string $fullcountcolumn,
+        string $sort = '',
+        ?array $params = null,
+        int $limitfrom = 0,
+        int $limitnum = 0,
+    ): moodle_recordset {
+        $fullcountsql = $this->generate_fullcount_sql($sql, $params, $fullcountcolumn);
+        if ($sort) {
+            // Remove "ORDER BY" with any extra spaces from $sort.
+            $sort = preg_replace('/\s*ORDER\s+BY\s*/i', '', $sort);
+            $fullcountsql .= " ORDER BY " . $sort;
+        }
+        return $this->get_recordset_sql($fullcountsql, $params, $limitfrom, $limitnum);
+    }
+
+    /**
+     * Helper function to generate window COUNT() aggregate function to the SQL query.
+     *
+     * @param string $sql The SQL select query to execute.
+     * @param array|null $params array of sql parameters
+     * @param string $fullcountcolumn An alias column name for the window function results.
+     * @return string The generated query.
+     */
+    private function generate_fullcount_sql(
+        string $sql,
+        ?array $params,
+        string $fullcountcolumn,
+    ): string {
+        $fullcountvalue = "COUNT(1) OVER()";
+        if (!$this->is_count_window_function_supported()) {
+            $sqlcount = "SELECT COUNT(1) FROM ($sql) results";
+            $fullcountvalue = $this->count_records_sql($sqlcount, $params);
+        }
+        return "SELECT results.*, $fullcountvalue AS $fullcountcolumn FROM ($sql) results";
     }
 }

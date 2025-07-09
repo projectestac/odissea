@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Tamanho do tipo de letra';
+$string['fontsize:use'] = 'Permitir o uso do módulo';
 $string['menuitem_fontsize'] = 'Tamanho do tipo de letra';
 $string['pluginname'] = 'Tamanho do tipo de letra';
 $string['privacy:metadata'] = 'O módulo Tamanho do tipo de letra não armazena quaisquer dados pessoais.';

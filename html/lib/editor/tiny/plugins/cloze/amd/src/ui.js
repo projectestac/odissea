@@ -104,8 +104,7 @@ const TEMPLATE = {
   FORM: '<div class="tiny_cloze">' +
     '<p>{{name}} ({{qtype}})</p>' +
     '<form name="tiny_cloze_form">' +
-    '<div class="row ml-0">' +
-    '<div class="form-group">' +
+    '<div class="ml-0 form-group">' +
     '<label for="{{elementid}}_mark">{{STR.defaultmark}}</label>' +
     '<input id="{{elementid}}_mark" type="text" value="{{marks}}" ' +
     'class="{{CSS.MARKS}} form-control d-inline mx-2" />' +
@@ -114,16 +113,13 @@ const TEMPLATE = {
     M.util.image_url('t/add', 'core') + '" alt="{{STR.addmoreanswerblanks}}"></a>' +
     '</div>' +
     '<div class="msg-error hidden"></div>' +
-    '</div>' +
     '<div class="{{CSS.ANSWERS}} mb-3">' +
     '<ol class="pl-3">{{#answerdata}}' +
-    '<li class="mt-3"><div class="row ml-0">' +
-    '<div class="{{CSS.LEFT}} form-group">' +
-    '<label for="{{id}}_answer">{{STR.answer}}</label>' +
-    '<input id="{{id}}_answer" type="text" value="{{answer}}" ' +
-    'class="{{CSS.ANSWER}} form-control d-inline mx-2" />' +
-    '</div>' +
-    '<div class="{{CSS.LEFT}} form-group">' +
+    '<li class="mt-3"><div class="row form-group">' +
+    '<div class="col-2"><label for="{{id}}_answer">{{STR.answer}}</label></div>' +
+    '<div class="col-8"><input id="{{id}}_answer" type="text" value="{{answer}}" ' +
+    'class="{{CSS.ANSWER}} form-control d-inline mx-2" /></div>' +
+    '<div class="col-2">' +
     '<a class="{{CSS.ADD}}" title="{{STR.addmoreanswerblanks}}">' +
     '<img class="icon_smallicon" src="' +
     M.util.image_url('t/add', 'core') + '" alt="{{STR.addmoreanswerblanks}}"></a>' +
@@ -139,30 +135,33 @@ const TEMPLATE = {
     '</div>' +
     '</div>' +
     '{{#numerical}}' +
-    '<div class="row">' +
-    '<div class="{{CSS.RIGHT}} form-group">' +
+    '<div class="row form-group">' +
+    '<div class="col-2">' +
     '<label for="{{id}}_tolerance">{{{STR.tolerance}}}</label>' +
+    '</div><div class="col-8">' +
     '<input id="{{id}}_tolerance" type="text" value="{{tolerance}}" ' +
     'class="{{CSS.TOLERANCE}} form-control d-inline mx-2" />' +
     '</div>' +
     '</div>' +
     '{{/numerical}}' +
-    '<div class="row">' +
-    '<div class="{{CSS.RIGHT}} form-group">' +
+    '<div class="row form-group">' +
+    '<div class="col-2">' +
     '<label for="{{id}}_feedback">{{STR.feedback}}</label>' +
+    '</div><div class="col-8">' +
     '<input id="{{id}}_feedback" type="text" value="{{feedback}}" ' +
     'class="{{CSS.FEEDBACK}} form-control d-inline mx-2" />' +
-    '</div>' +
-    '<div class="{{CSS.RIGHT}} form-group">' +
+    '</div></div>' +
+    '<div class="row form-group">' +
+    '<div class="col-2">' +
     '<label id="{{id}}_grade">{{STR.grade}}</label>' +
+    '</div><div class="col-8">' +
     '<select id="{{id}}_grade" class="{{CSS.FRACTION}} custom-select mx-2">' +
     '{{{fractionOptions}}}' +
     '</select>' +
-    '</div>' +
-    '<div class="{{CSS.RIGHT}} form-group{{^isCustomGrade}} hidden{{/isCustomGrade}}">' +
+    '<span class="{{^isCustomGrade}} hidden{{/isCustomGrade}}">' +
     '<input id="{{id}}_grade_custom" type="text"{{#isCustomGrade}} value="{{fraction}}"{{/isCustomGrade}} ' +
     'class="{{CSS.FRAC_CUSTOM}} form-control d-inline mx-2" style="width: 4rem;" />%' +
-    '</div>' +
+    '</span></div>' +
     '</div></li>' +
     '{{/answerdata}}</ol></div>' +
     '</form>' +
@@ -309,7 +308,7 @@ const _getStr = async() => {
     {key: 'up', component: 'core'},
     {key: 'down', component: 'core'},
     {key: 'tolerance', component: 'qtype_calculated'},
-    {key: 'grade', component: 'grades'},
+    {key: 'gradenoun', component: 'core'},
     {key: 'caseno', component: 'mod_quiz'},
     {key: 'caseyes', component: 'mod_quiz'},
     {key: 'answersingleno', component: 'qtype_multichoice'},

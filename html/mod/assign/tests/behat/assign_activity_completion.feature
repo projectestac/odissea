@@ -54,7 +54,7 @@ Feature: View activity completion in the assignment activity
     And the manual completion button of "Music history" is displayed as "Done"
 
   @javascript
-  Scenario: The manual completion button will not be shown on the course page if the Show activity completion conditions is set to No
+  Scenario: Assign module manual completion button hidden if Show activity completion is set to No
     Given I am on the "Course 1" course page logged in as teacher1
     And I navigate to "Settings" in current page administration
     And I expand all fieldsets
@@ -121,8 +121,7 @@ Feature: View activity completion in the assignment activity
     And the "Receive a grade" completion condition of "Music history" is displayed as "todo"
     And I log out
     And I am on the "Music history" "assign activity" page logged in as teacher1
-    And I follow "View all submissions"
-    And I click on "Grade" "link" in the "Vinnie Student1" "table_row"
+    And I go to "Vinnie Student1" "Music history" activity advanced grading page
     And I set the field "Grade out of 100" to "33"
     And I set the field "Notify student" to "0"
     And I press "Save changes"
@@ -145,8 +144,7 @@ Feature: View activity completion in the assignment activity
     And the "Make a submission" completion condition of "Music history 2" is displayed as "done"
     And I log out
     And I am on the "Music history 2" "assign activity" page logged in as teacher1
-    And I follow "View all submissions"
-    And I click on "Grade" "link" in the "Vinnie Student1" "table_row"
+    And I go to "Vinnie Student1" "Music history 2" activity advanced grading page
     And I set the field "Grade out of 100" to "33"
     And I set the field "Notify student" to "0"
     And I set the field "Allow another attempt" to "Yes"

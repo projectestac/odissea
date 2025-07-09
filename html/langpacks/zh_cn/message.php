@@ -67,7 +67,7 @@ $string['disableall'] = '禁用通知';
 $string['disabled'] = '本站禁止发消息';
 $string['disallowed'] = '已锁定';
 $string['editmessages'] = '编辑信息';
-$string['emailtagline'] = '这是在网站 {$a->sitename} 上发送给您的消息的副本。前往 <a href=“{$a->url}”>{$a->url}</a> 进行回复。';
+$string['emailtagline'] = '这是在网站 {$a->sitename} 上发送给您的消息的副本。前往 <a href="{$a->url}">{$a->url}</a> 进行回复。';
 $string['enabled'] = '启用';
 $string['errorcallingprocessor'] = '调用定义的处理器出错';
 $string['errorconversationdoesnotexist'] = '会话不存在';

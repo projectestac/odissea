@@ -40,6 +40,7 @@
 <span class="d-none" data-region="courseid" data-courseid="{{courseid}}"></span>
 <span class="d-none" data-region="groupid" data-groupid="{{group}}"></span>
 <span class="d-none" data-region="instance" data-instance="{{instance}}"></span>
+<span class="d-none" data-region="currentvalue" data-currentvalue="{{currentvalue}}"></span>
 {{< core/search_input_auto }}
     {{$label}}{{#str}}searchusers, core{{/str}}{{/label}}
     {{$placeholder}}{{#str}}searchusers, core{{/str}}{{/placeholder}}
@@ -54,7 +55,7 @@
     {{/additionalattributes}}
 {{/ core/search_input_auto }}
 {{#currentvalue}}
-    <a class="ml-2 btn btn-link border-0 align-self-center" href="{{resetlink}}" data-action="resetpage" role="link" aria-label="{{#str}}clearsearch, core{{/str}}">
+    <a class="ms-2 btn btn-link border-0 align-self-center" href="{{resetlink}}" data-action="resetpage" role="link" aria-label="{{#str}}clearsearch, core{{/str}}">
         {{#str}}clear{{/str}}
     </a>
 {{/currentvalue}}

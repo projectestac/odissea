@@ -44,6 +44,7 @@ final class answerprocessor_test extends \advanced_testcase {
         global $CFG;
 
         require_once("{$CFG->dirroot}/question/type/numerical/questiontype.php");
+        parent::setUp();
     }
 
     /**

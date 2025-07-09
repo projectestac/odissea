@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = '主题预设';
 $string['preset_desc'] = '选择一种预设可明显改变主题外观。';
 $string['presetfiles'] = '主题预设附加文件';
-$string['presetfiles_desc'] = '预设文件可用于显著改变主题的外观。有关创建和共享您自己的预设文件的信息，请参阅 <a href=“https://docs.moodle.org/dev/Boost_Presets”>Boost 预设</a>，并查看 <a href=“https://moodle.net/search?q=boost+presets”>Presets 存储库</a>，了解其他人共享的预设。';
+$string['presetfiles_desc'] = '预设文件可用于大幅改变主题的外观。';
 $string['privacy:drawerblockclosed'] = '版块抽屉的默认选项已关闭。';
 $string['privacy:drawerblockopen'] = '版块抽屉的默认选项已开启。';
 $string['privacy:drawerindexclosed'] = '索引抽屉的默认选项已关闭。';

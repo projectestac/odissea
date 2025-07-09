@@ -56,7 +56,7 @@ $string['availablelist'] = '可获得的';
 $string['backtomeeting'] = '返回 $a会议';
 $string['cancelchanges'] = '取消';
 $string['connectiontesttitle'] = '连接测试窗口';
-$string['conntestintro'] = '<p>已运行一系列测试，以确定Adobe Connect Pro服务器是否已正确设置，以使此集成正常工作，并确定“活动全局设置”中提供的用户凭据是否具有执行“活动”模块所需必要任务的正确权限。如果以下任何测试失败，此活动模块将无法正常工作。</p><p> 有关如何设置Adobe Connect Pro服务器的更多帮助和文档，请参阅本活动模块的MoodleDocs帮助页面<a href=“{$a->url}”>帮助页面</a></p>';
+$string['conntestintro'] = '<p>已运行一系列测试，以确定Adobe Connect Pro服务器是否已正确设置，以使此集成正常工作，并确定“活动全局设置”中提供的用户凭据是否具有执行“活动”模块所需必要任务的正确权限。如果以下任何测试失败，此活动模块将无法正常工作。</p><p> 有关如何设置Adobe Connect Pro服务器的更多帮助和文档，请参阅本活动模块的MoodleDocs帮助页面<a href="{$a->url}">帮助页面</a></p>';
 $string['duplicatemeetingname'] = '在服务器上找到了重复的名称';
 $string['duplicateurl'] = '在服务器上找到重复的会议URL';
 $string['editingfor'] = '编辑: $a';

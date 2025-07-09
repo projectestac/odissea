@@ -41,4 +41,12 @@ $definitions = [
             'format_tiles/modaladminsettingchanged',
         ],
     ],
+    // List of cmids which are "video" (url) activities.  Key is the course ID.
+    'videocmids' => [
+        'mode' => cache_store::MODE_APPLICATION,
+        'simplekeys' => true,
+        'simpledata' => false,
+        'staticacceleration' => true,
+        'staticaccelerationsize' => 30,
+    ],
 ];

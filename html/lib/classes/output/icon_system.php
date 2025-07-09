@@ -14,21 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Contains class \core\output\icon_system
- *
- * @package    core
- * @category   output
- * @copyright  2016 Damyon Wiese
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 namespace core\output;
-
-use renderer_base;
-use pix_icon;
-
-defined('MOODLE_INTERNAL') || die();
 
 /**
  * Class allowing different systems for mapping and rendering icons.
@@ -160,5 +146,27 @@ abstract class icon_system {
      */
     public static function reset_caches() {
         self::$instance = null;
+    }
+
+    /**
+     * Overridable function to get the list of deprecated icons.
+     *
+     * @return array with the deprecated key icons (for instance, core:a/download_all).
+     */
+    public function get_deprecated_icons(): array {
+        $deprecated = [];
+        // Include deprecated icons in plugins too.
+        $callback = 'get_deprecated_icons';
+
+        if ($pluginsfunction = get_plugins_with_function($callback)) {
+            foreach ($pluginsfunction as $plugintype => $plugins) {
+                foreach ($plugins as $pluginfunction) {
+                    $plugindeprecated = $pluginfunction();
+                    $deprecated += $plugindeprecated;
+                }
+            }
+        }
+
+        return $deprecated;
     }
 }

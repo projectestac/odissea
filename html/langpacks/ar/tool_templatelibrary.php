@@ -38,5 +38,5 @@ $string['privacy:metadata'] = 'إن ملحق مكتبة القوالب لا يخ
 $string['search'] = 'ابحث';
 $string['searchtemplates'] = 'مظاهر البحث';
 $string['templatehasnoexample'] = 'لا يحتوي هذا المظهر على مثال لسياق ، لذلك لا يمكن تقديمه هنا. لإضافة سياق مثال إلى هذا المظهر ، قم بإدراج تعليق في Moustache "مثال على السياق (json):" ، متبوعًا بسياق نموذج مشفر json للمظهر.';
-$string['templates'] = 'المظاهر';
+$string['templates'] = 'القوالب';
 $string['templateselected'] = 'القالب: {$a}';

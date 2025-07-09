@@ -25,6 +25,7 @@ if ($hassiteconfig) {
 $ADMIN->add('root', new admin_category('users', new lang_string('users','admin')));
 $ADMIN->add('root', new admin_category('courses', new lang_string('courses','admin')));
 $ADMIN->add('root', new admin_category('grades', new lang_string('grades')));
+$ADMIN->add('root', new admin_category('ai', new lang_string('ai', 'ai')));
 $ADMIN->add('root', new admin_category('analytics', new lang_string('analytics', 'analytics')));
 
 // XTEC ************ AFEGIT - To let access only to xtecadmin user or admin if competencies are enabled

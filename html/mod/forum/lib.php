@@ -1702,6 +1702,9 @@ function forum_get_discussions($cm, $forumsort="", $fullpost=true, $unused=-1, $
     if (empty($forumsort)) {
         $forumsort = forum_get_default_sort_order();
     }
+    if (!str_contains($forumsort, 'id')) {
+        $forumsort .= ', d.id DESC';
+    }
     if (empty($fullpost)) {
         $postdata = "p.id, p.subject, p.modified, p.discussion, p.userid, p.created";
     } else {
@@ -1737,7 +1740,7 @@ function forum_get_discussions($cm, $forumsort="", $fullpost=true, $unused=-1, $
                    $umtable
              WHERE d.forum = ? AND p.parent = 0
                    $timelimit $groupselect $updatedsincesql
-          ORDER BY $forumsort, d.id DESC";
+          ORDER BY $forumsort";
 
     return $DB->get_records_sql($sql, $params, $limitfrom, $limitnum);
 }
@@ -4831,7 +4834,7 @@ function forum_discussion_update_last_post($discussionid) {
     $sql = "SELECT id, userid, modified
               FROM {forum_posts}
              WHERE discussion=?
-             ORDER BY modified DESC";
+             ORDER BY modified DESC, id DESC";
 
 // Lets go find the last post
     if (($lastposts = $DB->get_records_sql($sql, array($discussionid), 0, 1))) {
@@ -5049,26 +5052,26 @@ function forum_reset_userdata($data) {
     require_once($CFG->dirroot.'/rating/lib.php');
 
     $componentstr = get_string('modulenameplural', 'forum');
-    $status = array();
+    $status = [];
 
-    $params = array($data->courseid);
+    $params = [$data->courseid];
 
     $removeposts = false;
-    $typesql     = "";
+    $typesql = '';
     if (!empty($data->reset_forum_all)) {
         $removeposts = true;
-        $typesstr    = get_string('resetforumsall', 'forum');
-        $types       = array();
-    } else if (!empty($data->reset_forum_types)){
+        $typesstr = get_string('resetforumsall', 'forum');
+        $types = [];
+    } else if (!empty($data->reset_forum_types)) {
         $removeposts = true;
-        $types       = array();
-        $sqltypes    = array();
-        $forum_types_all = forum_get_forum_types_all();
+        $types = [];
+        $sqltypes = [];
+        $forumtypesall = forum_get_forum_types_all();
         foreach ($data->reset_forum_types as $type) {
-            if (!array_key_exists($type, $forum_types_all)) {
+            if (!array_key_exists($type, $forumtypesall)) {
                 continue;
             }
-            $types[] = $forum_types_all[$type];
+            $types[] = $forumtypesall[$type];
             $sqltypes[] = $type;
         }
         if (!empty($sqltypes)) {
@@ -5082,13 +5085,13 @@ function forum_reset_userdata($data) {
                             FROM {forum_discussions} fd, {forum} f
                            WHERE f.course=? AND f.id=fd.forum";
 
-    $allforumssql      = "SELECT f.id
-                            FROM {forum} f
-                           WHERE f.course=?";
+    $allforumssql = "SELECT f.id
+                       FROM {forum} f
+                      WHERE f.course=?";
 
-    $allpostssql       = "SELECT fp.id
-                            FROM {forum_posts} fp, {forum_discussions} fd, {forum} f
-                           WHERE f.course=? AND f.id=fd.forum AND fd.id=fp.discussion";
+    $allpostssql = "SELECT fp.id
+                      FROM {forum_posts} fp, {forum_discussions} fd, {forum} f
+                     WHERE f.course=? AND f.id=fd.forum AND fd.id=fp.discussion";
 
     $forumssql = $forums = $rm = null;
 
@@ -5107,12 +5110,12 @@ function forum_reset_userdata($data) {
 
     if ($removeposts) {
         $discussionssql = "$alldiscussionssql $typesql";
-        $postssql       = "$allpostssql $typesql";
+        $postssql = "$allpostssql $typesql";
 
-        // now get rid of all attachments
+        // Now get rid of all attachments.
         $fs = get_file_storage();
         if ($forums) {
-            foreach ($forums as $forumid=>$unused) {
+            foreach ($forums as $forumid => $unused) {
                 if (!$cm = get_coursemodule_from_instance('forum', $forumid)) {
                     continue;
                 }
@@ -5120,7 +5123,7 @@ function forum_reset_userdata($data) {
                 $fs->delete_area_files($context->id, 'mod_forum', 'attachment');
                 $fs->delete_area_files($context->id, 'mod_forum', 'post');
 
-                //remove ratings
+                // Remove ratings.
                 $ratingdeloptions->contextid = $context->id;
                 $rm->delete_ratings($ratingdeloptions);
 
@@ -5128,23 +5131,29 @@ function forum_reset_userdata($data) {
             }
         }
 
-        // first delete all read flags
+        // First delete all read flags.
         $DB->delete_records_select('forum_read', "forumid IN ($forumssql)", $params);
 
-        // remove tracking prefs
+        // Remove tracking prefs.
         $DB->delete_records_select('forum_track_prefs', "forumid IN ($forumssql)", $params);
 
-        // remove posts from queue
+        // Remove posts from queue.
         $DB->delete_records_select('forum_queue', "discussionid IN ($discussionssql)", $params);
 
-        // all posts - initial posts must be kept in single simple discussion forums
-        $DB->delete_records_select('forum_posts', "discussion IN ($discussionssql) AND parent <> 0", $params); // first all children
-        $DB->delete_records_select('forum_posts', "discussion IN ($discussionssql AND f.type <> 'single') AND parent = 0", $params); // now the initial posts for non single simple
+        // All posts - initial posts must be kept in single simple discussion forums.
+        // First all children.
+        $DB->delete_records_select('forum_posts', "discussion IN ($discussionssql) AND parent <> 0", $params);
+        // Now the initial posts for non single simple.
+        $DB->delete_records_select(
+            'forum_posts',
+            "discussion IN ($discussionssql AND f.type <> 'single') AND parent = 0",
+            $params
+        );
 
-        // finally all discussions except single simple forums
+        // Finally all discussions except single simple forums.
         $DB->delete_records_select('forum_discussions', "forum IN ($forumssql AND f.type <> 'single')", $params);
 
-        // remove all grades from gradebook
+        // Remove all grades from gradebook.
         if (empty($data->reset_gradebook_grades)) {
             if (empty($types)) {
                 forum_reset_gradebook($data->courseid);
@@ -5155,25 +5164,29 @@ function forum_reset_userdata($data) {
             }
         }
 
-        $status[] = array('component'=>$componentstr, 'item'=>$typesstr, 'error'=>false);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => $typesstr,
+            'error' => false,
+        ];
     }
 
-    // remove all ratings in this course's forums
+    // Remove all ratings in this course's forums.
     if (!empty($data->reset_forum_ratings)) {
         if ($forums) {
-            foreach ($forums as $forumid=>$unused) {
+            foreach ($forums as $forumid => $unused) {
                 if (!$cm = get_coursemodule_from_instance('forum', $forumid)) {
                     continue;
                 }
                 $context = context_module::instance($cm->id);
 
-                //remove ratings
+                // Remove ratings.
                 $ratingdeloptions->contextid = $context->id;
                 $rm->delete_ratings($ratingdeloptions);
             }
         }
 
-        // remove all grades from gradebook
+        // Remove all grades from gradebook.
         if (empty($data->reset_gradebook_grades)) {
             forum_reset_gradebook($data->courseid);
         }
@@ -5192,34 +5205,54 @@ function forum_reset_userdata($data) {
             }
         }
 
-        $status[] = array('component' => $componentstr, 'item' => get_string('tagsdeleted', 'forum'), 'error' => false);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('removeallforumtags', 'forum'),
+            'error' => false,
+        ];
     }
 
-    // remove all digest settings unconditionally - even for users still enrolled in course.
+    // Remove all digest settings unconditionally - even for users still enrolled in course.
     if (!empty($data->reset_forum_digests)) {
         $DB->delete_records_select('forum_digests', "forum IN ($allforumssql)", $params);
-        $status[] = array('component' => $componentstr, 'item' => get_string('resetdigests', 'forum'), 'error' => false);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('resetdigests', 'forum'),
+            'error' => false,
+        ];
     }
 
-    // remove all subscriptions unconditionally - even for users still enrolled in course
+    // Remove all subscriptions unconditionally - even for users still enrolled in course.
     if (!empty($data->reset_forum_subscriptions)) {
         $DB->delete_records_select('forum_subscriptions', "forum IN ($allforumssql)", $params);
         $DB->delete_records_select('forum_discussion_subs', "forum IN ($allforumssql)", $params);
-        $status[] = array('component' => $componentstr, 'item' => get_string('resetsubscriptions', 'forum'), 'error' => false);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('resetsubscriptions', 'forum'),
+            'error' => false,
+        ];
     }
 
-    // remove all tracking prefs unconditionally - even for users still enrolled in course
+    // Remove all tracking prefs unconditionally - even for users still enrolled in course.
     if (!empty($data->reset_forum_track_prefs)) {
         $DB->delete_records_select('forum_track_prefs', "forumid IN ($allforumssql)", $params);
-        $status[] = array('component'=>$componentstr, 'item'=>get_string('resettrackprefs','forum'), 'error'=>false);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('resettrackprefs', 'forum'),
+            'error' => false,
+        ];
     }
 
-    /// updating dates - shift may be negative too
+    // Updating dates - shift may be negative too.
     if ($data->timeshift) {
         // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
         // See MDL-9367.
-        shift_course_mod_dates('forum', array('assesstimestart', 'assesstimefinish'), $data->timeshift, $data->courseid);
-        $status[] = array('component'=>$componentstr, 'item'=>get_string('datechanged'), 'error'=>false);
+        shift_course_mod_dates('forum', ['assesstimestart', 'assesstimefinish'], $data->timeshift, $data->courseid);
+        $status[] = [
+            'component' => $componentstr,
+            'item' => get_string('date'),
+            'error' => false,
+        ];
     }
 
     return $status;
@@ -5232,28 +5265,31 @@ function forum_reset_userdata($data) {
  */
 function forum_reset_course_form_definition(&$mform) {
     $mform->addElement('header', 'forumheader', get_string('modulenameplural', 'forum'));
+    $mform->addElement('static', 'forumdelete', get_string('delete'));
 
-    $mform->addElement('checkbox', 'reset_forum_all', get_string('resetforumsall','forum'));
+    $mform->addElement('checkbox', 'reset_forum_digests', get_string('resetdigests', 'forum'));
 
-    $mform->addElement('select', 'reset_forum_types', get_string('resetforums', 'forum'), forum_get_forum_types_all(), array('multiple' => 'multiple'));
-    $mform->setAdvanced('reset_forum_types');
-    $mform->disabledIf('reset_forum_types', 'reset_forum_all', 'checked');
+    $mform->addElement('checkbox', 'reset_forum_subscriptions', get_string('resetsubscriptions', 'forum'));
 
-    $mform->addElement('checkbox', 'reset_forum_digests', get_string('resetdigests','forum'));
-    $mform->setAdvanced('reset_forum_digests');
+    $mform->addElement('checkbox', 'reset_forum_all', get_string('resetforumsall', 'forum'));
 
-    $mform->addElement('checkbox', 'reset_forum_subscriptions', get_string('resetsubscriptions','forum'));
-    $mform->setAdvanced('reset_forum_subscriptions');
+    $mform->addElement(
+        'select',
+        'reset_forum_types',
+        get_string('resetforums', 'forum'),
+        forum_get_forum_types_all(),
+        ['multiple' => 'multiple'],
+    );
+    $mform->hideIf('reset_forum_types', 'reset_forum_all', 'checked');
 
-    $mform->addElement('checkbox', 'reset_forum_track_prefs', get_string('resettrackprefs','forum'));
-    $mform->setAdvanced('reset_forum_track_prefs');
-    $mform->disabledIf('reset_forum_track_prefs', 'reset_forum_all', 'checked');
+    $mform->addElement('checkbox', 'reset_forum_track_prefs', get_string('resettrackprefs', 'forum'));
+    $mform->hideIf('reset_forum_track_prefs', 'reset_forum_all', 'checked');
 
     $mform->addElement('checkbox', 'reset_forum_ratings', get_string('deleteallratings'));
-    $mform->disabledIf('reset_forum_ratings', 'reset_forum_all', 'checked');
+    $mform->hideIf('reset_forum_ratings', 'reset_forum_all', 'checked');
 
     $mform->addElement('checkbox', 'reset_forum_tags', get_string('removeallforumtags', 'forum'));
-    $mform->disabledIf('reset_forum_tags', 'reset_forum_all', 'checked');
+    $mform->hideIf('reset_forum_tags', 'reset_forum_all', 'checked');
 }
 
 /**
@@ -5607,7 +5643,7 @@ function forum_get_courses_user_posted_in($user, $discussionsonly = false, $incl
  * @param int $limitnum The number of records to return
  * @return array An array of forums the user has posted within in the provided courses
  */
-function forum_get_forums_user_posted_in($user, array $courseids = null, $discussionsonly = false, $limitfrom = null, $limitnum = null) {
+function forum_get_forums_user_posted_in($user, ?array $courseids = null, $discussionsonly = false, $limitfrom = null, $limitnum = null) {
     global $DB;
 
     if (!is_null($courseids)) {
@@ -6371,11 +6407,11 @@ function forum_can_create_attachment($forum, $context) {
  */
 function mod_forum_get_fontawesome_icon_map() {
     return [
-        'mod_forum:i/pinned' => 'fa-map-pin',
+        'mod_forum:i/pinned' => 'fa-thumbtack',
         'mod_forum:t/selected' => 'fa-check',
-        'mod_forum:t/subscribed' => 'fa-envelope-o',
-        'mod_forum:t/unsubscribed' => 'fa-envelope-open-o',
         'mod_forum:t/star' => 'fa-star',
+        'mod_forum:t/subscribed' => 'fa-regular fa-envelope',
+        'mod_forum:t/unsubscribed' => 'fa-regular fa-envelope-open',
     ];
 }
 
@@ -6885,4 +6921,51 @@ function forum_refresh_events(int $courseid, stdClass $instance, stdClass $cm): 
     require_once($CFG->dirroot . '/mod/forum/locallib.php');
 
     forum_update_calendar($instance, $cm->id);
+}
+
+/**
+ * Callback adds navigation to view user posts if the navadduserpostslinks config is on.
+ *
+ * @param navigation_node $usernode User node within navigation
+ * @param stdClass $user User object
+ * @param \core\context\user $usercontext User context
+ * @param stdClass $course Current course
+ * @param \core\context $coursecontext Course context
+ */
+function mod_forum_extend_navigation_user(
+    navigation_node $usernode,
+    stdClass $user,
+    \core\context\user $usercontext,
+    stdClass $course,
+    \core\context $coursecontext,
+): void {
+    global $CFG;
+    if (!empty($CFG->navadduserpostslinks) && $coursecontext instanceof \core\context\system) {
+        $baseargs = ['id' => $user->id];
+
+        // Add nodes for forum posts and discussions if the user can view either or both
+        // There are no capability checks here as the content of the page is based
+        // purely on the forums the current user has access too.
+        $forumtab = \navigation_node::create(get_string('forumposts', 'forum'));
+        $forumtab->add(
+            get_string('posts', 'forum'),
+            new moodle_url('/mod/forum/user.php', $baseargs),
+        );
+        $forumtab->add(
+            get_string('discussions', 'forum'),
+            new moodle_url('/mod/forum/user.php',
+                array_merge($baseargs, ['mode' => 'discussions']),
+            ),
+        );
+
+        // We add the forum link either immediately after the 'viewuserdetails' link, or as the first item in the list.
+        foreach ($usernode->children as $child) {
+            if ($child->key === 'viewuserdetails') {
+                continue;
+            }
+            $addbefore = $child;
+            break;
+        }
+        $usernode->add_node($forumtab, $addbefore->key);
+    }
 }

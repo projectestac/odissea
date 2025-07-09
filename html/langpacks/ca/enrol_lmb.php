@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['coursehiddennever'] = 'Mai';
 $string['createnewusers'] = 'Crea comptes d\'usuari per a usuaris no registrats a Moodle';
 $string['never'] = 'Mai';
+$string['none'] = 'Cap';

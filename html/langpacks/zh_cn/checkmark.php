@@ -31,6 +31,9 @@ $string['attendancegradelink_hint'] = '注意: 自动计算的成绩已链接出
 $string['autograde_confirm'] = '您即将为<strong>{$a}</strong>更新成绩及反馈。之前的成绩及反馈将被覆盖。';
 $string['autograde_strchanged'] = '因进行了自动评分， <strong>{$a}</strong> 学员的成绩将发生改变。';
 $string['autogradebuttonstitle'] = '为检查点 {$a} 计算作业成绩';
+$string['emailteachers_help'] = '若启用，每当学生添加或更新一个勾选提交时，教师都会收到电子邮件通知。
+
+仅能够评分特定勾选的教师才会收到通知。例如，若课程使用独立分组，被限制在特定分组的教师不会收到其他分组学生的通知。';
 $string['emptysubmission'] = '您尚未提交任何内容';
 $string['notsubmittedyet'] = '还未提交';
 $string['submitted'] = '已提交';

@@ -4,7 +4,7 @@
 // Size of default icons.
 $icon-width: 16px;
 $icon-height: 16px;
-// Size of big icons.
+// Size of medium icons.
 $icon-medium-width: 32px;
 $icon-medium-height: 32px;
 // Size of big icons.
@@ -44,13 +44,28 @@ $iconsizes: map-merge((
         font-size: $icon-medium-height;
         width: $icon-medium-width;
         height: $icon-medium-height;
+        max-width: $icon-medium-width;
+        max-height: $icon-medium-height;
     }
 
     &.iconsize-big {
         width: $icon-big-width;
         height: $icon-big-height;
+        max-width: $icon-big-width;
+        max-height: $icon-big-height;
         font-size: $icon-big-height;
     }
+
+    &.emoticon {
+        max-width: map-get($iconsizes, 3);
+        max-height: map-get($iconsizes, 3);
+    }
+}
+
+// Force size for the SVG icons.
+img.icon {
+    width: 16px;
+    height: 16px;
 }
 
 .navbar-dark a .icon {

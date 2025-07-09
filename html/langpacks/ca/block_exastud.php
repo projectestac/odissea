@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix';
 $string['bp_title'] = 'Nom';
+$string['download'] = 'Baixa';
 $string['evaluation'] = 'Avaluació';
 $string['name'] = 'Nom';
 $string['perioddescription'] = 'Descripció';

@@ -16,12 +16,6 @@
 
 namespace core;
 
-defined('MOODLE_INTERNAL') || die();
-
-global $CFG;
-require_once($CFG->libdir . '/outputrequirementslib.php');
-
-
 /**
  * Unit tests for lib/outputrequirementslibphp.
  *

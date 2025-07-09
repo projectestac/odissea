@@ -668,83 +668,11 @@ class manager {
     }
 
     /**
-     * Ensure quality of service for the ad hoc task queue.
-     *
-     * This reshuffles the adhoc tasks queue to balance by type to ensure a
-     * level of quality of service per type, while still maintaining the
-     * relative order of tasks queued by timestamp.
-     *
-     * @param array $records array of task records
-     * @param array $records array of same task records shuffled
-     * @deprecated since Moodle 4.1 MDL-67648 - please do not use this method anymore.
-     * @todo MDL-74843 This method will be deleted in Moodle 4.5
-     * @see \core\task\manager::get_next_adhoc_task
+     * @deprecated since Moodle 4.1 MDL-67648
      */
-    public static function ensure_adhoc_task_qos(array $records): array {
-        debugging('The method \core\task\manager::ensure_adhoc_task_qos is deprecated.
-             Please use \core\task\manager::get_next_adhoc_task instead.', DEBUG_DEVELOPER);
-
-        $count = count($records);
-        if ($count == 0) {
-            return $records;
-        }
-
-        $queues = []; // This holds a queue for each type of adhoc task.
-        $limits = []; // The relative limits of each type of task.
-        $limittotal = 0;
-
-        // Split the single queue up into queues per type.
-        foreach ($records as $record) {
-            $type = $record->classname;
-            if (!array_key_exists($type, $queues)) {
-                $queues[$type] = [];
-            }
-            if (!array_key_exists($type, $limits)) {
-                $limits[$type] = 1;
-                $limittotal += 1;
-            }
-            $queues[$type][] = $record;
-        }
-
-        $qos = []; // Our new queue with ensured quality of service.
-        $seed = $count % $limittotal; // Which task queue to shuffle from first?
-
-        $move = 1; // How many tasks to shuffle at a time.
-        do {
-            $shuffled = 0;
-
-            // Now cycle through task type queues and interleaving the tasks
-            // back into a single queue.
-            foreach ($limits as $type => $limit) {
-
-                // Just interleaving the queue is not enough, because after
-                // any task is processed the whole queue is rebuilt again. So
-                // we need to deterministically start on different types of
-                // tasks so that *on average* we rotate through each type of task.
-                //
-                // We achieve this by using a $seed to start moving tasks off a
-                // different queue each time. The seed is based on the task count
-                // modulo the number of types of tasks on the queue. As we count
-                // down this naturally cycles through each type of record.
-                if ($seed < 1) {
-                    $shuffled = 1;
-                    $seed += 1;
-                    continue;
-                }
-                $tasks = array_splice($queues[$type], 0, $move);
-                $qos = array_merge($qos, $tasks);
-
-                // Stop if we didn't move any tasks onto the main queue.
-                $shuffled += count($tasks);
-            }
-            // Generally the only tasks that matter are those that are near the start so
-            // after we have shuffled the first few 1 by 1, start shuffling larger groups.
-            if (count($qos) >= (4 * count($limits))) {
-                $move *= 2;
-            }
-        } while ($shuffled > 0);
-
-        return $qos;
+    #[\core\attribute\deprecated('\core\task\manager::get_next_adhoc_task()', since: '4.1', mdl: 'MDL-67648', final: true)]
+    public static function ensure_adhoc_task_qos(): void {
+        \core\deprecation::emit_deprecation_if_present([self::class, __FUNCTION__]);
     }
 
     /**
@@ -1162,14 +1090,17 @@ class manager {
      * This function indicates that an adhoc task was not completed successfully and should be retried.
      *
      * @param \core\task\adhoc_task $task
+     * @param bool $finaliselog finalise the log of the current running task
      */
-    public static function adhoc_task_failed(adhoc_task $task) {
+    public static function adhoc_task_failed(adhoc_task $task, bool $finaliselog = true) {
         global $DB;
 
         $clock = \core\di::get(\core\clock::class);
 
         // Finalise the log output.
-        logmanager::finalise_log(true);
+        if ($finaliselog) {
+            logmanager::finalise_log(true);
+        }
 
         $delay = $task->get_fail_delay();
 
@@ -1272,14 +1203,17 @@ class manager {
      * This function indicates that a scheduled task was not completed successfully and should be retried.
      *
      * @param \core\task\scheduled_task $task
+     * @param bool $finaliselog finalise the log of the current running task
      */
-    public static function scheduled_task_failed(scheduled_task $task) {
+    public static function scheduled_task_failed(scheduled_task $task, bool $finaliselog = true) {
         global $DB;
 
         $clock = \core\di::get(\core\clock::class);
 
         // Finalise the log output.
-        logmanager::finalise_log(true);
+        if ($finaliselog) {
+            logmanager::finalise_log(true);
+        }
 
         $delay = $task->get_fail_delay();
 
@@ -1498,7 +1432,10 @@ class manager {
 
                     $task = self::scheduled_task_from_record($taskrecord);
                     $task->set_lock($lock);
-                    self::scheduled_task_failed($task);
+
+                    // We have to skip log finalisation when failing the task as the finalise_log method from
+                    // the log manager is only aware of the current running task (i.e., the cleanup task).
+                    self::scheduled_task_failed($task, false);
                 } else if ($runningtask->type == 'adhoc') {
                     // Ad hoc tasks are removed from the DB if they finish successfully.
                     // If we can't re-get this task, that means it finished and was properly
@@ -1510,7 +1447,10 @@ class manager {
 
                     $task = self::adhoc_task_from_record($taskrecord);
                     $task->set_lock($lock);
-                    self::adhoc_task_failed($task);
+
+                    // We have to skip log finalisation when failing the task as the finalise_log method from
+                    // the log manager is only aware of the current running task (i.e., the cleanup task).
+                    self::adhoc_task_failed($task, false);
                 }
             }
         }

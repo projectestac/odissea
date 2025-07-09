@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'ツールプロキシサービス';
-$string['privacy:metadata'] = 'ツールプロクシサービスプラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = 'ツールプロキシサービスプラグインはいかなる個人データも保存しません。';

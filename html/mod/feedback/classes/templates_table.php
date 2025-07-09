@@ -53,7 +53,10 @@ class mod_feedback_templates_table extends flexible_table {
             $tablecolumns[] = 'actions';
         }
 
-        $tableheaders = array(get_string('template', 'feedback'), '');
+        $tableheaders = [
+            get_string('template', 'feedback'),
+            html_writer::span(get_string('actions'), 'sr-only'),
+        ];
 
         $this->set_attribute('class', 'templateslist');
 
@@ -61,7 +64,7 @@ class mod_feedback_templates_table extends flexible_table {
         $this->define_headers($tableheaders);
         $this->define_baseurl($baseurl);
         $this->column_class('template', 'template');
-        $this->column_class('actions', 'text-right');
+        $this->column_class('actions', 'text-end');
         $this->sortable(false);
     }
 

@@ -32,6 +32,7 @@ $string['donotshowdate'] = 'Не відображати дату';
 $string['editsection'] = 'Редагувати секцію';
 $string['hidefromothers'] = 'Сховати секцію';
 $string['instructions'] = 'Інструкції: клацання на назві розділу покаже / приховає розділ';
+$string['newsection'] = 'Новий розділ';
 $string['numbersections'] = 'Кількість секцій';
 $string['pluginname'] = 'Згорнуті теми';
 $string['sctcloseall'] = 'Закрити все {$a}';

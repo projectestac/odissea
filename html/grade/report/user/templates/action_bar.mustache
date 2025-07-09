@@ -80,7 +80,7 @@
         {{/generalnavselector}}
         {{#groupselector}}
             <div class="navitem">
-                {{{groupselector}}}
+                {{>core/comboboxsearch}}
             </div>
             <div class="navitem-divider"></div>
         {{/groupselector}}
@@ -88,16 +88,16 @@
             <span class="d-none" data-region="courseid" data-courseid="{{courseid}}" aria-hidden="true"></span>
             <div class="navitem flex-column">
                 {{#content}}
-                    {{{.}}}
+                    {{>core/comboboxsearch}}
                 {{/content}}
             </div>
             <div class="navitem-divider"></div>
         {{/userselector}}
-        <div class="d-flex ml-sm-auto">
+        <div class="d-flex ms-sm-auto">
             {{#viewasselector}}
                 <div class="navitem-divider"></div>
                 <div class="navitem">
-                    {{{viewasselector}}}
+                    {{>gradereport_user/view_mode_selector}}
                 </div>
                 <div class="navitem-divider"></div>
             {{/viewasselector}}

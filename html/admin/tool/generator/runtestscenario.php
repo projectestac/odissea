@@ -25,6 +25,7 @@
 use tool_generator\local\testscenario\runner;
 use tool_generator\form\featureimport;
 use tool_generator\output\parsingresult;
+use tool_generator\output\stepsinformation;
 
 require(__DIR__ . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
@@ -54,7 +55,7 @@ try {
     die;
 }
 
-echo $output->paragraph(get_string('testscenario_filedesc', 'tool_generator'));
+echo $output->render(new stepsinformation($runner));
 
 $mform = new featureimport();
 
@@ -79,7 +80,11 @@ if (empty($content)) {
 }
 
 try {
-    $parsedfeature = $runner->parse_feature($content);
+    if ($data->executecleanup) {
+        $parsedfeature = $runner->parse_cleanup($content);
+    } else {
+        $parsedfeature = $runner->parse_feature($content);
+    }
 } catch (\Throwable $th) {
     echo $output->notification(get_string('testscenario_errorparsing', 'tool_generator', $th->getMessage()));
     echo $output->continue_button($currenturl);

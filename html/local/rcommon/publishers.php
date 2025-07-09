@@ -23,7 +23,7 @@ switch($action){
 		//get values
 		$publisher = required_param('publisher', PARAM_INT);
 		if (!$record = $DB->get_record('rcommon_publisher', array('id' => $publisher))){
-			print_error(get_string('nopublisher', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
+			throw new \moodle_exception(get_string('nopublisher', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
 		}
 	case 'add';
 		if ($fromform = $bform->get_data() and confirm_sesskey()) {
@@ -39,7 +39,7 @@ switch($action){
 			$record->timemodified		 = time();
 			//extra controls
 			if (empty($record->name)){
-				print_error(get_string('savekoemptyvalues', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
+				throw new \moodle_exception(get_string('savekoemptyvalues', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
 			}
 			if (!empty($record->urlwsauthentication) && $pos = core_text::strpos(core_text::strtolower($record->urlwsauthentication), '?wsdl')){
 				$record->urlwsauthentication = core_text::substr($record->urlwsauthentication, 0, $pos);
@@ -99,7 +99,7 @@ switch($action){
 		//do delete
 		if (empty($confirm)){
 	        if (!$record = $DB->get_record('rcommon_publisher', array('id' => $publisher))){
-				print_error(get_string('nopublisher', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
+                throw new \moodle_exception(get_string('nopublisher', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
 			}
 			echo $OUTPUT->header();
 

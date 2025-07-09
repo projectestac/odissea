@@ -31,6 +31,8 @@ require_once($CFG->dirroot . '/badges/criteria/award_criteria.php');
 
 /* Include required user badge exporter */
 use core_badges\external\user_badge_exporter;
+/* Include required badge class exporter */
+use core_badges\external\badgeclass_exporter;
 
 /*
  * Number of records per page.
@@ -102,16 +104,15 @@ define('BADGE_MESSAGE_MONTHLY', 4);
 define('BADGRIO_BACKPACKAPIURL', 'https://api.badgr.io/v2');
 define('BADGRIO_BACKPACKWEBURL', 'https://badgr.io');
 
-/*
- * @deprecated since 3.9 (MDL-66357).
+/**
+ * @deprecated since Moodle 4.5.
+ * @todo Final deprecation in Moodle 6.0. See MDL-82332.
  */
-define('BADGE_BACKPACKAPIURL', 'https://backpack.openbadges.org');
-define('BADGE_BACKPACKWEBURL', 'https://backpack.openbadges.org');
+define('OPEN_BADGES_V1', 1);
 
 /*
  * Open Badges specifications.
  */
-define('OPEN_BADGES_V1', 1);
 define('OPEN_BADGES_V2', 2);
 define('OPEN_BADGES_V2P1', 2.1);
 
@@ -422,7 +423,7 @@ function badges_get_badge_by_hash(string $hash): object|bool {
  * @return object
  */
 function badges_prepare_badge_for_external(stdClass $badge, stdClass $user): object {
-    global $PAGE, $USER;
+    global $PAGE, $SITE, $USER;
     if ($badge->type == BADGE_TYPE_SITE) {
         $context = context_system::instance();
     } else {
@@ -449,6 +450,17 @@ function badges_prepare_badge_for_external(stdClass $badge, stdClass $user): obj
             'imageauthorurl'   => $badge->imageauthorurl,
             'imagecaption'     => $badge->imagecaption,
         ];
+    }
+
+    // Recipient (the badge was awarded to this person).
+    $badge->recipientid = $user->id;
+    if ($user->deleted) {
+        $strdata = new stdClass();
+        $strdata->user = fullname($user);
+        $strdata->site = format_string($SITE->fullname, true, ['context' => context_system::instance()]);
+        $badge->recipientfullname = get_string('error:userdeleted', 'badges', $strdata);
+    } else {
+        $badge->recipientfullname = fullname($user);
     }
 
     // Create a badge instance to be able to get the endorsement and other info.
@@ -495,6 +507,85 @@ function badges_prepare_badge_for_external(stdClass $badge, stdClass $user): obj
 }
 
 /**
+ * Prepare badgeclass for external functions.
+ * @param core_badges\output\badgeclass $badgeclass
+ * @return stdClass
+ */
+function badges_prepare_badgeclass_for_external(core_badges\output\badgeclass $badgeclass): stdClass {
+    global $PAGE;
+    $context = $badgeclass->context;
+
+    $badgeurl = new \moodle_url('/badges/badgeclass.php', [
+        'id' => $badgeclass->badge->id,
+    ]);
+    $badgeurl = $badgeurl->out(false);
+    $file = \moodle_url::make_webservice_pluginfile_url(
+        $badgeclass->context->id,
+        'badges',
+        'badgeimage',
+        $badgeclass->badge->id,
+        '/',
+        'f3'
+    );
+    $image = $file->out(false);
+
+    $badge = (object) [
+        'id'            => $badgeurl,
+        'name'          => $badgeclass->badge->name,
+        'type'          => OPEN_BADGES_V2_TYPE_BADGE,
+        'description'   => $badgeclass->badge->description,
+        'issuer'        => $badgeclass->badge->issuername,
+        'hostedUrl'     => $badgeclass->badge->issuerurl,
+        'image'         => $image,
+    ];
+    // Create a badge instance to be able to get the endorsement and other info.
+    $badgeinstance = new badge($badgeclass->badge->id);
+    $endorsement   = $badgeinstance->get_endorsement();
+    $relatedbadges = $badgeinstance->get_related_badges();
+    $canconfiguredetails = has_capability('moodle/badges:configuredetails', $context);
+    $alignments = [];
+    foreach ($badgeinstance->get_alignments() as $alignment) {
+        $alignmentobj = (object) [
+            'id' => $alignment->id,
+            'badgeid' => $alignment->badgeid,
+            'targetName' => $alignment->targetname,
+            'targetUrl' => $alignment->targeturl,
+        ];
+        // Include only the properties visible by the user.
+        if ($canconfiguredetails) {
+            $alignmentobj->targetDescription = $alignment->targetdescription;
+            $alignmentobj->targetFramework = $alignment->targetframework;
+            $alignmentobj->targetCode = $alignment->targetcode;
+        }
+        $alignments[] = $alignmentobj;
+    }
+
+    if (!$canconfiguredetails) {
+        // Return only the properties visible by the user.
+        if (!empty($relatedbadges)) {
+            foreach ($relatedbadges as $relatedbadge) {
+                unset($relatedbadge->version);
+                unset($relatedbadge->language);
+                unset($relatedbadge->type);
+            }
+        }
+    }
+
+    $related = [
+        'context'       => $context,
+        'endorsement'   => $endorsement ? $endorsement : null,
+        'relatedbadges' => $relatedbadges,
+    ];
+
+    if (!empty($alignments)) {
+        $related['alignment'] = $alignments;
+    }
+
+    $exporter = new badgeclass_exporter($badge, $related);
+    return $exporter->export($PAGE->get_renderer('core', 'badges'));
+}
+
+/**
  * Extends the course administration navigation with the Badges page
  *
  * @param navigation_node $coursenode
@@ -524,7 +615,7 @@ function badges_add_course_navigation(navigation_node $coursenode, stdClass $cou
             navigation_node::TYPE_SETTING, null, 'coursebadges');
 
         if (has_capability('moodle/badges:createbadge', $coursecontext)) {
-            $url = new moodle_url('/badges/newbadge.php', array('type' => BADGE_TYPE_COURSE, 'id' => $course->id));
+            $url = new moodle_url('/badges/edit.php', ['action' => 'new', 'courseid' => $course->id]);
 
             $coursenode->get('coursebadges')->add(get_string('newbadge', 'badges'), $url,
                     navigation_node::TYPE_SETTING, null, 'newbadge');
@@ -1102,7 +1193,6 @@ function badges_change_sortorder_backpacks(int $backpackid, int $direction): voi
  */
 function badges_get_badge_api_versions() {
     return [
-        (string)OPEN_BADGES_V1 => get_string('openbadgesv1', 'badges'),
         (string)OPEN_BADGES_V2 => get_string('openbadgesv2', 'badges'),
         (string)OPEN_BADGES_V2P1 => get_string('openbadgesv2p1', 'badges')
     ];

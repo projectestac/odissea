@@ -37,6 +37,7 @@ export default class extends DndSection {
         this.name = 'content_section';
         // Default query selectors.
         this.selectors = {
+            ACTIONMENU: '.section-actions',
             SECTION_ITEM: `[data-for='section_title']`,
             CM: `[data-for="cmitem"]`,
             SECTIONINFO: `[data-for="sectioninfo"]`,
@@ -93,8 +94,8 @@ export default class extends DndSection {
         }
         await this.reactive.dispatch('sectionContentCollapsed', [this.id], false);
         const pendingOpen = new Pending(`courseformat/section:openSectionIfNecessary`);
-        this.element.scrollIntoView({block: "center"});
         setTimeout(() => {
+            document.querySelector("#" + pageCmInfo.anchor).scrollIntoView();
             this.reactive.dispatch('setPageItem', 'cm', pageCmInfo.id);
             pendingOpen.resolve();
         }, 250);
@@ -119,7 +120,7 @@ export default class extends DndSection {
      */
     validateDropData(dropdata) {
         // If the format uses one section per page sections dropping in the content is ignored.
-       if (dropdata?.type === 'section' && this.reactive.sectionReturn !== null) {
+        if (dropdata?.type === 'section' && this.reactive.sectionReturn !== null) {
             return false;
         }
         return super.validateDropData(dropdata);
@@ -136,7 +137,24 @@ export default class extends DndSection {
         if (!cms || cms.length === 0) {
             return null;
         }
-        return cms[cms.length - 1];
+        const lastCm = cms[cms.length - 1];
+        // If it is a delegated section return the last item overall.
+        if (this.section.component !== null) {
+            return lastCm;
+        }
+        // If it is a regular section and the last item overall has a parent cm, return the parent instead.
+        const parentSection = lastCm.parentNode.closest(this.selectors.CM);
+        return parentSection ?? lastCm;
+    }
+
+    /**
+     * Get a fallback element when there is no CM in the section.
+     *
+     * @returns {element|null} the las course module element of the section.
+     */
+    getLastCmFallback() {
+        // The sectioninfo is always present, even when the section is empty.
+        return this.getElement(this.selectors.SECTIONINFO);
     }
 
     /**
@@ -191,7 +209,7 @@ export default class extends DndSection {
             newAction = 'sectionShow';
         }
         // Find the affected action.
-        const affectedAction = this.getElement(selector);
+        const affectedAction = this._getActionMenu(selector);
         if (!affectedAction) {
             return;
         }
@@ -215,5 +233,15 @@ export default class extends DndSection {
                 Templates.replaceNode(icon, pixHtml, '');
             }
         }
+    }
+
+    /**
+     * Get the action menu element from the selector.
+     *
+     * @param {string} selector The selector to find the action menu.
+     * @returns The action menu element.
+     */
+    _getActionMenu(selector) {
+        return document.querySelector(`${this.selectors.ACTIONMENU}[data-sectionid='${this.id}'] ${selector}`);
     }
 }

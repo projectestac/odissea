@@ -422,6 +422,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'ID do utilizador que 
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Armazena metadados sobre gravações.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'ID do utilizador que alterou a gravação pela última vez.';
 $string['progress_createbigbluebuttonbn'] = 'A criar uma atividade BigBlueButton ({$a})';
+$string['recordingnotfound'] = 'A gravação não foi encontrada.';
 $string['recordings_from_deleted_activities'] = 'Gravações de atividades apagadas';
 $string['recordingurlnotfound'] = 'O URL da gravação é inválido.';
 $string['removedevents'] = 'Eventos apagados';

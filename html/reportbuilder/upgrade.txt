@@ -1,19 +1,10 @@
+=== 4.5 Onwards ===
+
+This file has been replaced by UPGRADING.md. See MDL-81125 for further information.
+
+===
 This file describes API changes in /reportbuilder/*
 Information provided here is intended especially for developers.
-
-=== 4.4.6 ===
-
-* The `core_reportbuilder_testcase` class has been moved to new autoloaded `core_reportbuilder\tests\core_reportbuilder_testcase`
-  location, affected tests no longer have to manually require `/reportbuilder/tests/helpers.php`
-
-=== 4.4.5 ===
-
-* The `get_active_conditions` method of the base report class has a new `$checkavailable` parameter to determine whether to check
-  the returned conditions availability
-
-=== 4.4.1 ===
-
-* New database helper method `sql_replace_parameters` to help ensure uniqueness of parameters within a SQL expression
 
 === 4.4 ===
 

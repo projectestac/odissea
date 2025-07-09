@@ -139,8 +139,10 @@ class mod_assign_extension_form extends moodleform {
             if ($earliestextension == $lateststextension) {
                 $currentdatesdisplay = userdate($lateststextension);
             } else {
-                $currentdatesdisplay = get_string('extensionduedatefrom', 'assign', userdate($earliestextension)) .
-                    '<br>' . get_string('extensionduedateto', 'assign', userdate($lateststextension));
+                $currentdatesdisplay = get_string('extensionduedaterange', 'assign', (object) [
+                    'earliest' => userdate($earliestextension),
+                    'latest' => userdate($lateststextension),
+                ]);
             }
             if ($userswithoutanextension) {
                 $currentdatesdisplay .= '<br>' . get_string('extensionduedatewithout', 'assign', $userswithoutanextension);

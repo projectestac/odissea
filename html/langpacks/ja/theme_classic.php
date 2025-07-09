@@ -33,7 +33,7 @@ $string['pluginname'] = 'クラシック';
 $string['preset'] = 'テーマプリセット';
 $string['preset_desc'] = 'テーマの概観を大きく変更するプリセットを選択してください。';
 $string['presetfiles'] = '追加テーマプリセットファイル';
-$string['presetfiles_desc'] = 'プリセットファイルはテーマの概観を劇的に変えるため使用できます。あなた独自のプリセットファイルを作成および共有するには<a href=https://docs.moodle.org/dev/Boost_Presets>Boostプリセット</a>をご覧ください。また、他の人が共有しているプリセットを閲覧するには<a href="https://moodle.net/search?q=boost+presets">プリセットリポジトリ</a>をご覧ください。';
+$string['presetfiles_desc'] = 'プリセットファイルはテーマの概観を劇的に変えるため使用できます。';
 $string['privacy:metadata'] = 'クラシックテーマはいかなる個人データも保存しません。';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';

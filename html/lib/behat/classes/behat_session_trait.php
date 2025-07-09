@@ -1060,6 +1060,39 @@ EOF;
         }
     }
 
+
+    /**
+     * Internal step definition to find deprecated icons.
+     *
+     * Part of behat_hooks class as is part of the testing framework, is auto-executed
+     * after each step so no features will splicitly use it.
+     *
+     * @throws Exception Unknown type, depending on what we caught in the hook or basic \Exception.
+     * @see Moodle\BehatExtension\Tester\MoodleStepTester
+     */
+    public function look_for_deprecated_icons() {
+        if (behat_config_manager::get_behat_run_config_value('no-icon-deprecations')) {
+            return;
+        }
+
+        if (!$this->running_javascript()) {
+            return;
+        }
+
+        // Look for any DOM element with deprecated icon.
+        $js = <<<EOF
+            [...document.querySelectorAll('.icon.deprecated')].some(
+                deprecatedicon => true
+            );
+        EOF;
+        if ($this->evaluate_script($js)) {
+            throw new \Exception(html_entity_decode(
+                "Deprecated icon in use. Enable \$CFG->debugdisplay for detailed debugging information in the console",
+                ENT_COMPAT,
+            ));
+        }
+    }
+
     /**
      * Converts HTML tags to line breaks to display the info in CLI
      *
@@ -1101,6 +1134,9 @@ EOF;
 
         // Look for deprecated styles.
         $this->look_for_deprecated_styles();
+
+        // Look for deprecated icons.
+        $this->look_for_deprecated_icons();
     }
 
     /**
@@ -1138,11 +1174,11 @@ EOF;
         if (empty($sid)) {
             throw new coding_exception('failed to get moodle session');
         }
-        $userid = $DB->get_field('sessions', 'userid', ['sid' => $sid]);
-        if (empty($userid)) {
-            throw new coding_exception('failed to get user from seession id '.$sid);
+        $session = \core\session\manager::get_session_by_sid($sid);
+        if (empty($session->userid)) {
+            throw new coding_exception('failed to get user from session id: '.$sid);
         }
-        return $DB->get_record('user', ['id' => $userid]);
+        return $DB->get_record('user', ['id' => $session->userid]);
     }
 
     /**
@@ -1692,6 +1728,32 @@ EOF;
         $matches = array_filter($tags, $callback);
 
         return !empty($matches);
+    }
+
+    /**
+     * Get the user object from an identifier.
+     *
+     * The user username and email fields are checked.
+     *
+     * @param string $identifier The user's username or email.
+     * @return stdClass|null The user id or null if not found.
+     */
+    protected function get_user_by_identifier(string $identifier): ?stdClass {
+        global $DB;
+
+        $sql = <<<EOF
+            SELECT *
+              FROM {user}
+             WHERE username = :username
+                OR email = :email
+        EOF;
+
+        $result = $DB->get_record_sql($sql, [
+            'username' => $identifier,
+            'email' => $identifier,
+        ]);
+
+        return $result ?: null;
     }
 
     /**

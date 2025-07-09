@@ -35,6 +35,7 @@ $string['overview'] = 'Això és un resum de tots els estudiants i les competèn
 $string['privacy:metadata:block_exacompglobalgradings:userid'] = 'ID de l\'estudiant';
 $string['save'] = 'Desa';
 $string['settings_addblock_to_newcourse_option_yes'] = 'Sí';
+$string['settings_assessment_scheme_0'] = 'Cap';
 $string['show_solution'] = 'Mostra la solució';
 $string['student'] = 'Estudiant';
 $string['tab_admin_import'] = 'Importa/Exporta';

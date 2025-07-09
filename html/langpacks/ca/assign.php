@@ -222,6 +222,7 @@ $string['eventsubmissionviewed'] = 'S\'ha visualitzat la tasca.';
 $string['eventworkflowstateupdated'] = 'S\'ha actualitzat l\'estat del flux.';
 $string['expandreviewpanel'] = 'Expandeix el plafó de revisió';
 $string['extensionduedate'] = 'Data de venciment de la pròrroga';
+$string['extensionduedatenone'] = 'Cap';
 $string['extensionnotafterduedate'] = 'La data de venciment de la pròrroga ha de ser posterior a la data de venciment de les trameses';
 $string['extensionnotafterfromdate'] = 'La data de venciment de la pròrroga ha de ser posterior a la data inicial de les trameses';
 $string['feedback'] = 'Retroacció';

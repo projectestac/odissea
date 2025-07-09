@@ -380,7 +380,7 @@ $string['selectnone'] = 'Tout désélectionner';
 $string['show'] = 'Afficher';
 $string['sided'] = 'Sur le côté';
 $string['skipview'] = 'Cacher la structure du contenu aux étudiants';
-$string['skipview_help'] = 'Ce réglage détermine si la structure du contenu est cachée aux étudiant. Si le paquetage ne contient qu’un seul objet d’apprentissage. Si la page ne contient qu’un seul objet d’apprentissage, l’affichage de la page de structure de contenu pourrait toujours être sautée. Si l’option  d’affichage est « jamais », la structure du contenue sera donc montrée à chaque accès. Il est possible de choisir de ne montrer la structure que lors du premier accès, en choisissant « Toujours, sauf la première fois ».
+$string['skipview_help'] = 'Ce réglage détermine si la structure du contenu est cachée aux étudiants. Si le paquetage ne contient qu’un seul objet d’apprentissage. Si la page ne contient qu’un seul objet d’apprentissage, l’affichage de la page de structure de contenu pourrait toujours être sautée. Si l’option d’affichage est « jamais », la structure du contenu sera donc montrée à chaque accès. Il est possible de choisir de ne montrer la structure que lors du premier accès, en choisissant « Toujours, sauf la première fois ».
 
 Notez que ce réglage n’a d’effet que pour les étudiants.';
 $string['skipviewdesc'] = 'Ce réglage détermine si la structure du contenu est par défaut cachée aux étudiants';

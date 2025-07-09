@@ -197,7 +197,7 @@ $string['never'] = '从未';
 $string['newevent'] = '新事件';
 $string['newmonthannouncement'] = '日历现在设置为 {$a}';
 $string['nocalendarsubscriptions'] = '尚无日历订阅，是否要 {$a}';
-$string['nocalendarsubscriptionsimportexternal'] = '尚无日历订阅。<a href=“{$a}”>导入外部日历</a>';
+$string['nocalendarsubscriptionsimportexternal'] = '尚无日历订阅。<a href="{$a}">导入外部日历</a>';
 $string['notitle'] = '无标题';
 $string['noupcomingevents'] = '没有即将到来的事件';
 $string['oneevent'] = '1个事件';

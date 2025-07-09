@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost (Impulso)';
 $string['preset'] = 'Tema preestablecido';
 $string['preset_desc'] = 'Elija uno preestablecido para cambiar de forma general el aspecto del tema.';
 $string['presetfiles'] = 'Ficheros adicionales del tema preestablecido';
-$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia del tema. Consulte <a href="https://docs.moodle.org/dev/Boost_Presets">Ajustes preestablecidos de Boost</a> para obtener información sobre cómo crear y compartir sus propios archivos preestablecidos, y consulte el <a href="https://moodle.net/search?q=boost+presets">Repositorio de ajustes preestablecidos </a> para consultar los que otros han compartido.';
+$string['presetfiles_desc'] = 'Los archivos preestablecidos se pueden utilizar para alterar drásticamente la apariencia de un tema.';
 $string['privacy:drawerblockclosed'] = 'La preferencia actual para el cajón de bloque está cerrada.';
 $string['privacy:drawerblockopen'] = 'La preferencia actual para el cajón de bloque está abierta.';
 $string['privacy:drawerindexclosed'] = 'La preferencia actual para el cajón de índice está cerrada.';

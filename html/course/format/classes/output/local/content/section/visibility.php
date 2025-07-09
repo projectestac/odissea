@@ -21,6 +21,7 @@ use core\output\local\dropdown\status;
 use core\output\named_templatable;
 use core_courseformat\base as course_format;
 use core_courseformat\output\local\courseformat_named_templatable;
+use core_courseformat\sectiondelegatemodule;
 use pix_icon;
 use renderable;
 use section_info;
@@ -60,38 +61,79 @@ class visibility implements named_templatable, renderable {
      */
     public function export_for_template(\renderer_base $output): ?stdClass {
         global $USER;
+
+        if ($this->section->visible) {
+            return null;
+        }
+
         $context = context_course::instance($this->section->course);
         $data = new stdClass();
-        $data->editing = $this->format->show_editor();
-        if (!$this->section->visible) {
+
+        if (!has_capability('moodle/course:sectionvisibility', $context, $USER)) {
             $data->notavailable = true;
-            if (has_capability('moodle/course:sectionvisibility', $context, $USER)) {
-                $data->hiddenfromstudents = true;
-                $data->notavailable = false;
-                $badgetext = $output->sr_text(get_string('availability'));
-                $badgetext .= get_string("hiddenfromstudents");
-                $icon = $this->get_icon('hide');
-                $choice = new choicelist();
-                $choice->add_option(
-                    'show',
-                    get_string("availability_show", 'core_courseformat'),
-                    $this->get_option_data('show', 'sectionShow')
-                );
-                $choice->add_option(
-                    'hide',
-                    get_string('availability_hide', 'core_courseformat'),
-                    $this->get_option_data('hide', 'sectionHide')
-                );
-                $choice->set_selected_value('hide');
-                $dropdown = new status(
-                    $output->render($icon) . ' ' . $badgetext,
-                    $choice,
-                    ['dialogwidth' => status::WIDTH['big']],
-                );
-                $data->dropwdown = $dropdown->export_for_template($output);
-            }
+            return $data;
+        }
+
+        $data->editing = $this->format->show_editor();
+
+        if ($this->section->is_orphan()) {
+            $data->editing = false;
+        }
+
+        $data->notavailable = false;
+        $data->hiddenfromstudents = true;
+        if ($data->editing && $this->is_section_visibility_editable()) {
+            $data->dropwdown = $this->get_visibility_dropdown($output);
+        } else {
+            // The user is editing but cannot edit the visibility on this specific section,
+            $data->editing = false;
         }
         return $data;
+    }
+
+    /**
+     * Check if the section visibility is editable.
+     *
+     * @return bool
+     */
+    protected function is_section_visibility_editable(): bool {
+        // Delegated section inside a hidden sections are not editable.
+        $parentsection = $this->section->get_component_instance()?->get_parent_section();
+        if ($parentsection && !$parentsection->visible) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Get the section visibility dropdown.
+     * @param \renderer_base $output typically, the renderer that's calling this function
+     * @return array
+     */
+    protected function get_visibility_dropdown(\renderer_base $output): array {
+        $badgetext = $output->sr_text(get_string('availability'));
+        $badgetext .= get_string('hiddenfromstudents');
+        $icon = $this->get_icon('hide');
+
+        $choice = new choicelist();
+        $choice->add_option(
+            'show',
+            get_string('availability_show', 'core_courseformat'),
+            $this->get_option_data('show', 'sectionShow')
+        );
+        $choice->add_option(
+            'hide',
+            get_string('availability_hide', 'core_courseformat'),
+            $this->get_option_data('hide', 'sectionHide')
+        );
+        $choice->set_selected_value('hide');
+
+        $dropdown = new status(
+            $output->render($icon) . ' ' . $badgetext,
+            $choice,
+            ['dialogwidth' => status::WIDTH['big']],
+        );
+        return $dropdown->export_for_template($output);
     }
 
     /**
@@ -104,14 +146,7 @@ class visibility implements named_templatable, renderable {
     private function get_option_data(string $name, string $action): array {
         $baseurl = course_get_url($this->section->course, $this->section);
         $baseurl->param('sesskey', sesskey());
-        $baseurl->param($name,  $this->section->section);
-
-        // The section page is not yet fully reactive and it needs to use the old non-ajax links.
-        $pagesectionid = $this->format->get_sectionid();
-        if ($this->section->id == $pagesectionid) {
-            $baseurl->param('sectionid', $pagesectionid);
-            $action = '';
-        }
+        $baseurl->param($action,  $this->section->section);
 
         return [
             'description' => get_string("availability_{$name}_help", 'core_courseformat'),

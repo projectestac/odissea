@@ -29,6 +29,7 @@ import * as Options from './options';
 import {addToolbarButton, addToolbarButtons, addToolbarSection,
     removeToolbarButton, removeSubmenuItem, updateEditorState} from './utils';
 import {addMathMLSupport, addSVGSupport} from './content';
+import Config from 'core/config';
 
 /**
  * Storage for the TinyMCE instances on the page.
@@ -155,7 +156,7 @@ export const setupForElementId = ({elementId, options}) => {
 const initialisePage = async() => {
     const lang = document.querySelector('html').lang;
 
-    const [tinyMCE, langData] = await Promise.all([getTinyMCE(), fetchLanguage(lang)]);
+    const [tinyMCE, langData] = await Promise.all([getTinyMCE(), fetchLanguage(Config.language)]);
     tinyMCE.addI18n(lang, langData);
 };
 initialisePage();
@@ -238,6 +239,11 @@ const getStandardConfig = (target, tinyMCE, options, plugins) => {
         // eslint-disable-next-line camelcase
         language: lang,
 
+        // Disable default iframe sandboxing.
+        // https://www.tiny.cloud/docs/tinymce/latest/content-filtering/#sandbox-iframes
+        // eslint-disable-next-line camelcase
+        sandbox_iframes: false,
+
         // Load the editor stylesheet into the editor iframe.
         // https://www.tiny.cloud/docs/tinymce/6/add-css-options/
         // eslint-disable-next-line camelcase
@@ -280,7 +286,7 @@ const getStandardConfig = (target, tinyMCE, options, plugins) => {
         // Override the standard block formats property (removing h1 & h2).
         // https://www.tiny.cloud/docs/tinymce/6/user-formatting-options/#block_formats
         // eslint-disable-next-line camelcase
-        block_formats: 'Paragraph=p;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre',
+        block_formats: 'Paragraph=p;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre;Blockquote=blockquote',
 
         // The list of plugins to include in the instance.
         // https://www.tiny.cloud/docs/tinymce/6/editor-important-options/#plugins
@@ -323,6 +329,22 @@ const getStandardConfig = (target, tinyMCE, options, plugins) => {
         // https://www.tiny.cloud/docs/tinymce/latest/spelling/
         // eslint-disable-next-line camelcase
         browser_spellcheck: true,
+
+        // Set the license_key to gpl.
+        // https://www.tiny.cloud/docs/tinymce/latest/license-key/
+        // eslint-disable-next-line camelcase
+        license_key: 'gpl',
+
+        // Disable the Alt+F12 shortcut.
+        // This was introduced in Tiny 7.1 to focus notifications, but it conflicts with the German keyboard layout
+        // which uses Alt+F12 to access the open curly brace.
+        // This is an upstream problem with TinyMCE and should be fixed in a future release.
+        // The recommended workaround is to disable the shortcut.
+        // See MDL-83257 for further information.
+        // eslint-disable-next-line camelcase
+        init_instance_callback: (editor) => {
+            editor.shortcuts.remove('alt+f12');
+        },
 
         setup: (editor) => {
             Options.register(editor, options);

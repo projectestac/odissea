@@ -114,12 +114,12 @@ M.util.CollapsibleRegion = function(Y, id, userpref, strtooltip) {
     }
     if (this.div.hasClass('collapsed')) {
         // Add the correct image and record the YUI node created in the process
-        this.icon = Y.Node.create('<img src="'+M.util.image_url(collapsedimage, 'moodle')+'" alt="" />');
+        this.icon = Y.Node.create('<img src="'+M.util.image_url(collapsedimage, 'moodle')+'" alt="" class="icon" />');
         // Shrink the div as it is collapsed by default
         this.div.setStyle('height', caption.get('offsetHeight')+'px');
     } else {
         // Add the correct image and record the YUI node created in the process
-        this.icon = Y.Node.create('<img src="'+M.util.image_url('t/expanded', 'moodle')+'" alt="" />');
+        this.icon = Y.Node.create('<img src="'+M.util.image_url('t/expanded', 'moodle')+'" alt="" class="icon" />');
     }
     a.append(this.icon);
 
@@ -829,14 +829,10 @@ M.util.add_lightbox = function(Y, node) {
     }
 
     node.setStyle('position', 'relative');
+
     var waiticon = Y.Node.create('<img />')
-    .setAttrs({
-        'src' : M.util.image_url(WAITICON.pix, WAITICON.component)
-    })
-    .setStyles({
-        'position' : 'relative',
-        'top' : '50%'
-    });
+        .setAttribute('src', M.util.image_url(WAITICON.pix, WAITICON.component))
+        .addClass('icon');
 
     var lightbox = Y.Node.create('<div></div>')
     .setStyles({
@@ -846,6 +842,7 @@ M.util.add_lightbox = function(Y, node) {
         'height' : '100%',
         'top' : 0,
         'left' : 0,
+        'paddingTop': '50%',
         'backgroundColor' : 'white',
         'textAlign' : 'center'
     })
@@ -874,8 +871,7 @@ M.util.add_spinner = function(Y, node) {
 
     var spinner = Y.Node.create('<img />')
         .setAttribute('src', M.util.image_url(WAITICON.pix, WAITICON.component))
-        .addClass('spinner')
-        .addClass('iconsmall')
+        .addClass('spinner icon')
         .hide();
 
     node.append(spinner);
@@ -1199,7 +1195,8 @@ function stripHTML(str) {
     throw new Error('stripHTML can not be used any more. Please use jQuery instead.');
 }
 
-function updateProgressBar(id, percent, msg, estimate) {
+// eslint-disable-next-line no-unused-vars
+function updateProgressBar(id, percent, msg, estimate, error) {
     var event,
         el = document.getElementById(id),
         eventData = {};
@@ -1211,6 +1208,7 @@ function updateProgressBar(id, percent, msg, estimate) {
     eventData.message = msg;
     eventData.percent = percent;
     eventData.estimate = estimate;
+    eventData.error = error;
 
     try {
         event = new CustomEvent('update', {

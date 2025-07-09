@@ -38,7 +38,7 @@ Feature: Teacher can allocate photos to tiles
   # TODO this is monolithic and needs refactoring into smaller scenarios.
 
   @javascript
-  Scenario: Teacher can use photo picker to pick photos (and icons), can backup and restore course, and student can view
+  Scenario: Teacher can use photo picker to pick photos (and icons), and student can view
     When I log in as "teacher1"
     And I am on "Business Law" course homepage with editing mode on
     And I wait until the page is ready
@@ -62,7 +62,7 @@ Feature: Teacher can allocate photos to tiles
     And I click on "#tileicon_2" "css_element"
     And I wait until the page is ready
     And I wait "1" seconds
-    And I click on ".tile-icon[data-original-title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
+    And I click on "button.pickericon[title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
     And I wait until the page is ready
     And I wait "2" seconds
 
@@ -99,56 +99,6 @@ Feature: Teacher can allocate photos to tiles
     And course "Business Law" tile "7" should show photo "placeholder_1.jpg"
     And course "Business Law" tile "8" should show no photo
 
-    And the following config values are set as admin:
-      | enableasyncbackup | 0 |
-    And I backup "Business Law" course using this options:
-      | Confirmation | Filename | test_backup.mbz |
-
-    # Remove the photo tiles so we can check they come back on restore.
-    And I wait until the page is ready
-    And I am on "Business Law" course homepage with editing mode on
-    And I wait "1" seconds
-    And I click on "#tileicon_1" "css_element"
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I click on ".tile-icon[data-original-title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
-    And I wait until the page is ready
-    And I wait "2" seconds
-
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I click on "#tileicon_3" "css_element"
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I click on ".tile-icon[data-original-title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
-    And I wait until the page is ready
-    And I wait "2" seconds
-
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I click on "#tileicon_7" "css_element"
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I click on ".tile-icon[data-original-title=\"Refresh\"]" "css_element" in the "#icon_picker_modal" "css_element"
-    And I wait until the page is ready
-    And I wait "2" seconds
-
-    And I am on the "Business Law" "restore" page
-    And I merge "test_backup.mbz" backup into the current course after deleting it's contents using this options:
-    And I am on site homepage
-    And I follow "Business Law"
-    And I wait until the page is ready
-    And I turn editing mode off
-    And I wait until the page is ready
-    And I wait "2" seconds
-    And course "Business Law" tile "1" should show photo "placeholder_1.jpg"
-    And course "Business Law" tile "2" should show no photo
-    And course "Business Law" tile "3" should show photo "placeholder_3.jpg"
-    And course "Business Law" tile "4" should show no photo
-    And course "Business Law" tile "5" should show no photo
-    And course "Business Law" tile "6" should show no photo
-    And course "Business Law" tile "7" should show photo "placeholder_1.jpg"
-
     And I am on "Course 2" course homepage with editing mode on
     And I wait until the page is ready
     And I wait "1" seconds
@@ -184,22 +134,6 @@ Feature: Teacher can allocate photos to tiles
     And course "Course 2" tile "6" should show photo "placeholder_3.jpg"
 
     And I log out tiles
-
-    And I log in as "admin"
-    And I am on "Business Law" course homepage with editing mode on
-    And I backup "Business Law" course using this options:
-      | Confirmation | Filename | test_backup.mbz |
-    And I wait until the page is ready
-    And I wait "1" seconds
-    And I restore "test_backup.mbz" backup into a new course using this options:
-    And I wait until the page is ready
-    And I turn editing mode off
-    And I wait "2" seconds
-    And course "Business Law copy 1" tile "1" should show photo "placeholder_1.jpg"
-    And course "Business Law copy 1" tile "3" should show photo "placeholder_3.jpg"
-    And course "Business Law copy 1" tile "7" should show photo "placeholder_1.jpg"
-
-    And I log out
 
     And the following "course enrolments" exist:
       | user     | course | role           |

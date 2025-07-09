@@ -53,6 +53,7 @@ final class access_controlled_link_manager_test extends \advanced_testcase {
      * SetUp to create an repository instance.
      */
     protected function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest(true);
 
         // Admin is necessary to create issuer object.

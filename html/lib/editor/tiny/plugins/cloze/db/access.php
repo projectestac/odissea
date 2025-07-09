@@ -22,14 +22,22 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') || die();
 
- $capabilities = [
-     'tiny/cloze:viewplugin' => [
-         'captype'      => 'write',
-         'contextlevel' => CONTEXT_COURSE,
-         'archetypes' => [
-             'editingteacher' => CAP_ALLOW,
-         ],
-     ],
- ];
+$capabilities = [
+    'tiny/cloze:use' => [
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => [
+            'editingteacher' => CAP_ALLOW,
+        ],
+    ],
+    // Deprecated since 1.12.
+    'tiny/cloze:viewplugin' => [
+        'captype'      => 'write',
+        'contextlevel' => CONTEXT_COURSE,
+        'archetypes' => [
+            'editingteacher' => CAP_ALLOW,
+        ],
+    ],
+];

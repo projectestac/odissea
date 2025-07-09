@@ -244,6 +244,9 @@ class manager {
             if (!file_exists($libfile)) {
                 continue;
             }
+            if (!plugin_supports('mod', $module->name, FEATURE_MODEDIT_DEFAULT_COMPLETION, true)) {
+                continue;
+            }
             $module->icon = $OUTPUT->image_url('monologo', $module->name)->out();
             $module->formattedname = format_string(get_string('modulename', 'mod_' . $module->name),
                 true, ['context' => $context]);
@@ -273,6 +276,9 @@ class manager {
      */
     public static function can_edit_bulk_completion($courseorid, $cm = null) {
         if ($cm) {
+            if (!plugin_supports('mod', $cm->modname, FEATURE_COMPLETION, true)) {
+                return false;
+            }
             return $cm->uservisible && has_capability('moodle/course:manageactivities', $cm->context);
         }
         $coursecontext = context_course::instance(is_object($courseorid) ? $courseorid->id : $courseorid);

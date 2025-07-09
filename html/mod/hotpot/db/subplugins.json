@@ -1,4 +1,9 @@
 {
+    "subplugintypes": {
+        "hotpotattempt": "attempt",
+        "hotpotsource": "source",
+        "hotpotreport": "report"
+    },
     "plugintypes": {
         "hotpotattempt": "mod\/hotpot\/attempt",
         "hotpotsource": "mod\/hotpot\/source",

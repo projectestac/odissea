@@ -194,24 +194,24 @@ $string['phpversionhelp'] = '<p>Moodleには少なくとも5.6.5または7.1のP
 $string['releasenoteslink'] = 'このバージョンのMoodleの情報に関して、{$a} のリリースノートをご覧ください。';
 $string['safemode'] = 'セーフモード';
 $string['safemodeerror'] = 'セーフモードが有効の場合、Moodleに問題が発生する場合があります。';
-$string['safemodehelp'] = '<p>セーフモードが有効にされている場合、Moodleには様々な問題が発生する場合があります。 特に新しいファイルを作成することができません。</p>
+$string['safemodehelp'] = '<p>セーフモードが有効にされている場合、Moodleには様々な問題が発生する場合があります。 特に新しいファイルを作成できません。</p>
 
-<p>通常セーフモードは被害妄想を持ったウェブホストで有効にされています。Moodleサイト用に別の新しいウェブホスティング会社を探してください。</p>
+<p>通常セーフモードは被害妄想を持ったウェブホストで有効にされています。そのため、あなたのMoodleサイト用に別の新しいウェブホスティング会社をお探しください。</p>
 
 <p>あなたはインストール作業を続けることも可能ですが、後でいくつかの問題が発生することが予想されます。</p>';
 $string['sessionautostart'] = 'セッション自動スタート';
 $string['sessionautostarterror'] = 'これは無効にしてください。';
-$string['sessionautostarthelp'] = '<p>Moodleはセッションサポートを必要とします。また、セッションサポートなしでは動作しません。</p>
+$string['sessionautostarthelp'] = '<p>Moodleはセッションサポートを必要とします。そしてセッションサポートなしでは動作しません。</p>
 
-<p>セッションはphp.iniファイルで有効にすることができます ... session.auto_startパラメータを探してください。</p>';
+<p>セッションはphp.iniファイルで有効にできます ... session.auto_startパラメータを探してください。</p>';
 $string['sqliteextensionisnotpresentinphp'] = 'PHPのSQLite拡張モジュールが適切に設定されていません。あなたのphp.iniファイルをチェックするか、PHPを再コンパイルしてください。';
 $string['upgradingqtypeplugin'] = '問題/タイププラグインのアップグレード';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
-$string['welcomep20'] = 'インストールが正常に完了して、あなたのコンピュータで <strong>{$a->packname} {$a->packversion}</strong> パッケージが起動されたため、このページが表示されています。おめでとうございます!';
-$string['welcomep30'] = 'このリリース <strong>{$a->installername}</strong> には<strong>Moodle</strong>で環境を作成するアプリケーションが含まれています。すなわち:';
-$string['welcomep40'] = 'パッケージには <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong> も含まれています。';
-$string['welcomep50'] = 'このパッケージ内のすべてのアプリケーションの使用は個別のライセンスによって規定されています。全体の<strong>{$a->installername}</strong>パッケージは<a href="https://www.opensource.org/docs/definition_plain.html">オープンソース</a>であり、<a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>ライセンスの下で配布されています。';
+$string['welcomep20'] = 'インストール正常完了後、あなたのコンピュータで<strong>{$a->packname} {$a->packversion}</strong>パッケージが起動されたため、このページが表示されています。おめでとうございます!';
+$string['welcomep30'] = 'このリリース<strong>{$a->installername}</strong>には<strong>Moodle</strong>で環境を作成するアプリケーションが含まれています。すなわち:';
+$string['welcomep40'] = 'パッケージには<strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>も含まれています。';
+$string['welcomep50'] = 'このパッケージ内すべてのアプリケーションの使用は個別のライセンスにより規定されています。全体の<strong>{$a->installername}</strong>パッケージは<a href="https://www.opensource.org/docs/definition_plain.html">オープンソース</a>であり、<a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>ライセンスの下で配布されています。';
 $string['welcomep60'] = '次からのページはあなたのコンピュータに<strong>Moodle</strong>を簡単に設定およびセットアップする手順にしたがって進みます。あなたはデフォルトの設定を使用することも、必要に応じて任意で設定を変更することもできます。';
 $string['welcomep70'] = '<strong>Moodle</strong>のセットアップを続けるには「次へ」ボタンをクリックしてください。';
 $string['wwwroot'] = 'ウェブアドレス';
-$string['wwwrooterror'] = '「ウェブアドレス」が正しくありません - Moodleインストレーションはそこには表示されません。以下の値はリセットされました。';
+$string['wwwrooterror'] = '「ウェブアドレス」が正しくありません - このMoodleインストレーションはそこには表示されません。以下の値はリセットされました。';

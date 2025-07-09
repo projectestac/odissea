@@ -31,6 +31,7 @@ final class migration_claim_test extends \advanced_testcase {
      * Setup run for each test case.
      */
     protected function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
     }
 

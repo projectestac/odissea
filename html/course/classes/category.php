@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+use core\exception\moodle_exception;
 
 /**
  * Class to store, cache, render and manage course category

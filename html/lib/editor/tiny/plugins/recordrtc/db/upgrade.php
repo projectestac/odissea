@@ -18,7 +18,7 @@
  * Tiny text editor recordrtc plugin upgrade script.
  *
  * @package    tiny_recordrtc
- * @copyright  Meirza <meirza.arson@moodle.com>
+ * @copyright  2024 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -28,7 +28,27 @@
  * @return bool
  */
 function xmldb_tiny_recordrtc_upgrade($oldversion) {
-    if ($oldversion < 2024042201) {
+    if ($oldversion < 2024042400) {
+        // Convert the old setting to the new one.
+        $allowedtypes = get_config('tiny_recordrtc', 'allowedtypes');
+        if ($allowedtypes === 'both') {
+            set_config(
+                'allowedtypes',
+                implode(',', [
+                    tiny_recordrtc\constants::TINYRECORDRTC_AUDIO_TYPE,
+                    tiny_recordrtc\constants::TINYRECORDRTC_VIDEO_TYPE,
+                ]),
+                'tiny_recordrtc'
+            );
+        }
+
+        upgrade_plugin_savepoint(true, 2024042400, 'tiny', 'recordrtc');
+    }
+
+    // Automatically generated Moodle v4.5.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2024100701) {
         // The input bitrate to be converted.
         $currentbitrate = get_config('tiny_recordrtc', 'audiobitrate');
 
@@ -42,7 +62,7 @@ function xmldb_tiny_recordrtc_upgrade($oldversion) {
         // Update the bitrate setting with the nearest supported bitrate.
         set_config('audiobitrate', $nearestbitrate, 'tiny_recordrtc');
 
-        upgrade_plugin_savepoint(true, 2024042201, 'tiny', 'recordrtc');
+        upgrade_plugin_savepoint(true, 2024100701, 'tiny', 'recordrtc');
     }
 
     return true;

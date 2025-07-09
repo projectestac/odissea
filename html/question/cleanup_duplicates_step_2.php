@@ -138,7 +138,7 @@ try {
             ORDER BY
                 c.id, q.name";
 
-    $renamedQuestions = $DB->get_records_sql($sql);
+    $renamedQuestions = $DB->get_records_sql($sql, [], $offset, $limit);
 
 } catch (Exception $e) {
     // Fall back to older Moodle structure
@@ -167,7 +167,7 @@ try {
                     c.id, q.name";
 
         if ($limit > 0) {
-            $renamedQuestions = $DB->get_records_sql($sql, [], 0, $limit);
+            $renamedQuestions = $DB->get_records_sql($sql, [], $offset, $limit);
         } else {
             $renamedQuestions = $DB->get_records_sql($sql);
         }

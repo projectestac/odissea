@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Font size';
+$string['fontsize:use'] = 'Allow the plugin usage';
 $string['menuitem_fontsize'] = 'Font size';
 $string['pluginname'] = 'Font size plugin';
 $string['privacy:metadata'] = 'Font size plugin does not store any personal data';

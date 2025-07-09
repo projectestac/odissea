@@ -82,6 +82,9 @@ class quizaccess_seb extends access_rule_base {
     /**
      * Validate the data from any form fields added using {@link add_settings_form_fields()}.
      *
+     * If the managing user cannot configure SEB by either lack of permissions or locked
+     * settings, then the form fields will be frozen and no validation will be done.
+     *
      * @param array $errors the errors found so far.
      * @param array $data the submitted form data.
      * @param array $files information about any uploaded files.
@@ -249,6 +252,8 @@ class quizaccess_seb extends access_rule_base {
                 . 'seb.userconfirmquit AS seb_userconfirmquit, '
                 . 'seb.enableaudiocontrol AS seb_enableaudiocontrol, '
                 . 'seb.muteonstartup AS seb_muteonstartup, '
+                . 'seb.allowcapturecamera AS seb_allowcapturecamera, '
+                . 'seb.allowcapturemicrophone AS seb_allowcapturemicrophone, '
                 . 'seb.allowspellchecking AS seb_allowspellchecking, '
                 . 'seb.allowreloadinexam AS seb_allowreloadinexam, '
                 . 'seb.activateurlfiltering AS seb_activateurlfiltering, '
@@ -481,7 +486,7 @@ class quizaccess_seb extends access_rule_base {
      *
      * @return string HTML code of the provided buttons.
      */
-    private function display_buttons(string $buttonshtml, $class = '', array $attributes = null): string {
+    private function display_buttons(string $buttonshtml, $class = '', ?array $attributes = null): string {
         $html = '';
 
         if (!empty($buttonshtml)) {

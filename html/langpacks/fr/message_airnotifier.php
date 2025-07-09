@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['airnotifier:managedevice'] = 'Gérer les appareils';
 $string['airnotifieraccesskey'] = 'Clef d’accès Airnotifier';
 $string['airnotifierappname'] = 'Nom de l’app Airnotifier';
-$string['airnotifierfielderror'] = 'Veuillez retirer tous les espaces ou caractères non nécessaires des champs suivants : {$a}';
+$string['airnotifierfielderror'] = 'Veuillez supprimer tous les espaces ou caractères non nécessaires des champs suivants : {$a}';
 $string['airnotifiermobileappname'] = 'Nom de l’App mobile';
 $string['airnotifierport'] = 'Port Airnotifier';
 $string['airnotifierurl'] = 'URL Airnotifier';

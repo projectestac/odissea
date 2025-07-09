@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displayDescription'] = 'Mostra la descripció';
+$string['image'] = 'Imatge';

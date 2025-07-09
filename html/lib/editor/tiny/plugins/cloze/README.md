@@ -1,9 +1,8 @@
-Moodle Tiny editor Cloze question type button
-=============================================
+Moodle Tiny Cloze question editor
+=================================
 
-![Release](https://img.shields.io/badge/Release-1.11-blue.svg)
-[![Moodle Plugin 
-CI](https://github.com/srobotta/moodle-tiny_cloze/workflows/Moodle%20Plugin%20CI/badge.svg?branch=main)](https://github.com/srobotta/moodle-tiny_cloze/actions?query=workflow%3A%22Moodle+Plugin+CI%22+branch%3Amain)
+![Release](https://img.shields.io/badge/Release-1.13-blue.svg)
+[![Moodle Plugin CI](https://github.com/srobotta/moodle-tiny_cloze/actions/workflows/moodle-plugin-ci.yml/badge.svg)](https://github.com/srobotta/moodle-tiny_cloze/actions/workflows/moodle-plugin-ci.yml)
 ![Supported](https://img.shields.io/badge/Moodle-4.1+-orange.svg)
 [![License GPL-3.0](https://img.shields.io/github/license/srobotta/moodle-tiny_cloze?color=lightgrey)](https://github.com/srobotta/moodle-tiny_cloze/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/srobotta/moodle-tiny_cloze)](https://github.com/srobotta/moodle-tiny_cloze/graphs/contributors)
@@ -13,6 +12,10 @@ Created collaboratively at [MoodleMoot DACH 23 Zurich](https://moodlemootdach.or
 A plugin for the Moodle Tiny editor to allow easier creation of Cloze questions
 see https://docs.moodle.org/en/Embedded_Answers_(Cloze)_question_type.
 Inspired by the Atto Cloze editor https://docs.moodle.org/en/Cloze_editor_for_Atto.
+
+In fall 2024 the cloze question editor plugin received the award for "Best Open-Source TinyMCE Plugin for Moodle"
+
+[![Best Open-Source TinyMCE Plugin for Moodle](tinymce-award-cloze-editor.png 'Best Open-Source TinyMCE Plugin for Moodle')](https://www.tiny.cloud/blog/celebrating-moodle-innovation-tinymce-awards-winners-2024/)
 
 ## Overview
 
@@ -124,6 +127,16 @@ If the problem persists then please [open a new issue on Github](https://github.
 or write a new comment on the [Moodle plugins directory](https://moodle.org/plugins/tiny_cloze).
 
 ## History
+
+### v1.13
+- Language string missing for "grade" [#28](https://github.com/srobotta/moodle-tiny_cloze/issues/28).
+- Improvements in the UI where possible answers are defined.
+- Bring plugin in line with [MDL-84884](https://tracker.moodle.org/browse/MDL-84884)
+[#27](https://github.com/srobotta/moodle-tiny_cloze/issues/27).
+
+### v1.12
+- Add Moodle 5.0 Support.
+- Refactoring to add JavaScript unit test.
 
 ### v1.11
 - Fix [Issue 25](https://github.com/srobotta/moodle-tiny_cloze/issues/25) on error in essay

@@ -422,6 +422,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'イベントを発生
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'レコーディングに関するメタデータを保存します。';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = '最後にレコーディングを変更したユーザのユーザIDです。';
 $string['progress_createbigbluebuttonbn'] = 'BigBlueButton活動 ({$a}) を作成する';
+$string['recordingnotfound'] = 'レコーディングが見つかりませんでした。';
 $string['recordings_from_deleted_activities'] = '削除された活動のレコーディング';
 $string['recordingurlnotfound'] = 'レコーディングURLは有効ではありません。';
 $string['removedevents'] = '削除されたイベント';

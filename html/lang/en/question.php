@@ -446,6 +446,10 @@ $string['questionbehavioursdisabled'] = 'Question behaviours to disable';
 $string['questionbehavioursdisabledexplained'] = 'Enter a comma-separated list of behaviours you do not want to appear in the drop-down menu.';
 $string['questionbehavioursorder'] = 'Question behaviours order';
 $string['questionbehavioursorderexplained'] = 'Enter a comma-separated list of behaviours in the order you want them to appear in the drop-down menu.';
+$string['questiondefaultssave'] = 'Save question options as user preference defaults';
+$string['questiondefaultssave_desc'] = 'Whether question options such as \'Default mark\', \'One or multiple answers?\' etc. should be saved as user preferences when the edit question form is submitted, for use as defaults the next time the user accesses the form.';
+$string['questionediting'] = 'Question editing';
+$string['questionediting_desc'] = 'These settings apply to edit question forms.';
 $string['questionidmismatch'] = 'Question ids mismatch';
 $string['questionformtagheader'] = '{$a} tags';
 $string['questionnamecopy'] = '{$a} (copy)';
@@ -515,6 +519,3 @@ $string['version_selection'] = 'Version {$a->version}';
 $string['versioninfo'] = 'Version {$a->version} (of {$a->latestversion})';
 $string['versioninfolatest'] = 'Version {$a->version} (latest)';
 $string['question_version'] = 'Question version';
-
-// Deprecated since Moodle 4.1.
-$string['nopermissionmove'] = 'You don\'t have permission to move questions from here. You must save the question in this category or save it as a new question.';

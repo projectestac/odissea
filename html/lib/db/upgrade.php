@@ -1170,7 +1170,54 @@ function xmldb_main_upgrade($oldversion) {
     // Automatically generated Moodle v4.4.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2024042201.09) {
+    if ($oldversion < 2024070500.01) {
+        // Remove the site_contactable config of the hub plugin from config plugin table.
+        unset_config('site_contactable', 'hub');
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024070500.01);
+    }
+
+    if ($oldversion < 2024071900.01) {
+        // Define table stored_progress to be created.
+        $table = new xmldb_table('stored_progress');
+
+        // Adding fields to table stored_progress.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('idnumber', XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('timestart', XMLDB_TYPE_INTEGER, '20', null, null, null, null);
+        $table->add_field('lastupdate', XMLDB_TYPE_INTEGER, '20', null, null, null, null);
+        $table->add_field('percentcompleted', XMLDB_TYPE_NUMBER, '5, 2', null, null, null, '0');
+        $table->add_field('message', XMLDB_TYPE_CHAR, '255', null, null, null, null);
+        $table->add_field('haserrored', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
+
+        // Adding keys to table stored_progress.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Adding indexes to table stored_progress.
+        $table->add_index('uid_index', XMLDB_INDEX_NOTUNIQUE, ['idnumber']);
+
+        // Conditionally launch create table for stored_progress.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024071900.01);
+    }
+
+    if ($oldversion < 2024072600.01) {
+        // If tool_innodb is no longer present, remove it.
+        if (!file_exists($CFG->dirroot . '/admin/tool/innodb/version.php')) {
+            // Delete tool_innodb.
+            uninstall_plugin('tool', 'innodb');
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024072600.01);
+    }
+
+    if ($oldversion < 2024080500.00) {
 
         // Fix missing default admin presets "sensible settings" (those that should be treated as sensitive).
         $newsensiblesettings = [
@@ -1190,10 +1237,191 @@ function xmldb_main_upgrade($oldversion) {
         set_config('sensiblesettings', $sensiblesettings, 'adminpresets');
 
         // Main savepoint reached.
-        upgrade_main_savepoint(true, 2024042201.09);
+        upgrade_main_savepoint(true, 2024080500.00);
     }
 
-    if ($oldversion < 2024042203.08) {
+    if ($oldversion < 2024082900.01) {
+        // If filter_tidy is no longer present, remove it.
+        if (!file_exists($CFG->dirroot . '/filter/tidy/version.php')) {
+            // Clean config.
+            uninstall_plugin('filter', 'tidy');
+        }
+
+        upgrade_main_savepoint(true, 2024082900.01);
+    }
+
+    if ($oldversion < 2024091000.01) {
+        // Define table ai_policy_register to be created.
+        $table = new xmldb_table('ai_policy_register');
+
+        // Adding fields to table ai_policy_register.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('userid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('contextid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('timeaccepted', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+
+        // Adding keys to table ai_policy_register.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $table->add_key('userid', XMLDB_KEY_FOREIGN_UNIQUE, ['userid'], 'user', ['id']);
+
+        // Conditionally launch create table for ai_policy_register.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Define table ai_action_generate_image to be created.
+        $table = new xmldb_table('ai_action_generate_image');
+
+        // Adding fields to table ai_action_generate_image.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('prompt', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('numberimages', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('quality', XMLDB_TYPE_CHAR, '21', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('aspectratio', XMLDB_TYPE_CHAR, '20', null, null, null, null);
+        $table->add_field('style', XMLDB_TYPE_CHAR, '20', null, null, null, null);
+        $table->add_field('sourceurl', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('revisedprompt', XMLDB_TYPE_TEXT, null, null, null, null, null);
+
+        // Adding keys to table ai_action_generate_image.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Conditionally launch create table for ai_action_generate_image.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Define table ai_action_register to be created.
+        $table = new xmldb_table('ai_action_register');
+
+        // Adding fields to table ai_action_register.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('actionname', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('actionid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('success', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('userid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('contextid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('provider', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('errorcode', XMLDB_TYPE_INTEGER, '4', null, null, null, null);
+        $table->add_field('errormessage', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('timecreated', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('timecompleted', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+
+        // Adding keys to table ai_action_register.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $table->add_key('userid', XMLDB_KEY_FOREIGN, ['userid'], 'user', ['id']);
+
+        // Adding indexes to table ai_action_register.
+        $table->add_index('action', XMLDB_INDEX_UNIQUE, ['actionname', 'actionid']);
+        $table->add_index('provider', XMLDB_INDEX_NOTUNIQUE, ['actionname', 'provider']);
+
+        // Conditionally launch create table for ai_action_register.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Define table ai_action_generate_text to be created.
+        $table = new xmldb_table('ai_action_generate_text');
+
+        // Adding fields to table ai_action_generate_text.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('prompt', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('responseid', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('fingerprint', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('generatedcontent', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('finishreason', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('prompttokens', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('completiontoken', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+
+        // Adding keys to table ai_action_generate_text.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Conditionally launch create table for ai_action_generate_text.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Define table ai_action_summarise_text to be created.
+        $table = new xmldb_table('ai_action_summarise_text');
+
+        // Adding fields to table ai_action_summarise_text.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('prompt', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('responseid', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('fingerprint', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('generatedcontent', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('finishreason', XMLDB_TYPE_CHAR, '128', null, null, null, null);
+        $table->add_field('prompttokens', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('completiontoken', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+
+        // Adding keys to table ai_action_summarise_text.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Conditionally launch create table for ai_action_summarise_text.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024091000.01);
+    }
+
+    if ($oldversion < 2024091700.01) {
+        // Convert the ai_action_register.success column to an integer, if necessary.
+        upgrade_change_binary_column_to_int('ai_action_register', 'success', XMLDB_NOTNULL, 'actionid');
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024091700.01);
+    }
+
+    if ($oldversion < 2024092000.01) {
+
+        // Define table sms_messages to be created.
+        $table = new xmldb_table('sms_messages');
+
+        // Adding fields to table sms_messages.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('recipientnumber', XMLDB_TYPE_CHAR, '30', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('content', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('component', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('messagetype', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('recipientuserid', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('issensitive', XMLDB_TYPE_INTEGER, '2', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('gatewayid', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('status', XMLDB_TYPE_CHAR, '100', null, null, null, null);
+        $table->add_field('timecreated', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+
+        // Adding keys to table sms_messages.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+        $table->add_key('gateway', XMLDB_KEY_FOREIGN, ['gatewayid'], 'sms_gateways', ['id']);
+
+        // Conditionally launch create table for sms_messages.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Define table sms_gateways to be created.
+        $table = new xmldb_table('sms_gateways');
+
+        // Adding fields to table sms_gateways.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('name', XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('gateway', XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('enabled', XMLDB_TYPE_INTEGER, '2', null, XMLDB_NOTNULL, null, '1');
+        $table->add_field('config', XMLDB_TYPE_TEXT, null, null, XMLDB_NOTNULL, null, null);
+
+        // Adding keys to table sms_gateways.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Conditionally launch create table for sms_gateways.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024092000.01);
+    }
+
+    if ($oldversion < 2024092600.00) {
         // If h5plib_v126 is no longer present, remove it.
         if (!file_exists($CFG->dirroot . '/h5p/h5plib/v126/version.php')) {
             // Clean config.
@@ -1205,7 +1433,185 @@ function xmldb_main_upgrade($oldversion) {
             set_config('h5plibraryhandler', 'h5plib_v127');
         }
 
-        upgrade_main_savepoint(true, 2024042203.08);
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024092600.00);
+    }
+
+    if ($oldversion < 2024100100.02) {
+        upgrade_store_relative_url_sitehomepage();
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100100.02);
+    }
+
+    // Automatically generated Moodle v4.5.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2024100701.02) {
+        $smsgateways = $DB->get_records('sms_gateways');
+        foreach ($smsgateways as $gateway) {
+            $newconfig = json_decode($gateway->config);
+            // Continue only if either the `returnurl` OR the `saveandreturn` property exists.
+            if (property_exists($newconfig, "returnurl") || property_exists($newconfig, "saveandreturn")) {
+                // Remove unnecessary data in the config.
+                unset($newconfig->returnurl, $newconfig->saveandreturn);
+
+                // Update the record with the new config.
+                $gateway->config = json_encode($newconfig);
+                $DB->update_record('sms_gateways', $gateway);
+            }
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100701.02);
+    }
+
+    if ($oldversion < 2024100702.03) {
+        // Due to a code restriction on the upgrade, invoking any core functions is not permitted.
+        // Thus, to acquire the list of provider plugins,
+        // we should extract them from the `config_plugins` database table.
+        $condition = $DB->sql_like('plugin', ':pattern');
+        $params = ['pattern' => 'aiprovider_%', 'name' => 'version'];
+        $sql = "SELECT plugin FROM {config_plugins} WHERE {$condition} AND name = :name";
+        $providers = $DB->get_fieldset_sql($sql, $params);
+        foreach ($providers as $provider) {
+            // Replace the provider's language string with the provider component's name.
+            if (get_string_manager()->string_exists('pluginname', $provider)) {
+                $providername = get_string('pluginname', $provider);
+                $sql = 'UPDATE {ai_action_register}
+                        SET provider = :provider
+                        WHERE LOWER(provider) = :providername';
+                $DB->execute($sql, ['provider' => $provider, 'providername' => strtolower($providername)]);
+            }
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100702.03);
+    }
+
+    if ($oldversion < 2024100704.07) {
+        // Add index for querying delegated sections.
+        $table = new xmldb_table('course_sections');
+        $index = new xmldb_index('component_itemid', XMLDB_INDEX_NOTUNIQUE, ['component', 'itemid']);
+
+        if (!$dbman->index_exists($table, $index)) {
+            $dbman->add_index($table, $index);
+        }
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100704.07);
+    }
+
+    if ($oldversion < 2024100704.09) {
+        // A [name => url] map of new OIDC endpoints to be updated/created.
+        $endpointuris = [
+            'discovery_endpoint' => 'https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration',
+            'token_endpoint' => 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+            'userinfo_endpoint' => 'https://graph.microsoft.com/oidc/userinfo',
+            'authorization_endpoint' => 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+            'device_authorization_endpoint' => 'https://login.microsoftonline.com/common/oauth2/v2.0/devicecode',
+            'end_session_endpoint' => 'https://login.microsoftonline.com/common/oauth2/v2.0/logout',
+            'kerberos_endpoint' => 'https://login.microsoftonline.com/common/kerberos',
+        ];
+
+        // A [name] map of endpoints to be deleted.
+        $deletedendpointuris = [
+            'userpicture_endpoint',
+        ];
+
+        // A [internalfield => externalfield] map of new OIDC-based user field mappings to be updated/created.
+        $userfieldmappings = [
+            'idnumber' => 'sub',
+            'firstname' => 'givenname',
+            'lastname' => 'familyname',
+            'email' => 'email',
+            'lang' => 'locale',
+        ];
+
+        $admin = get_admin();
+        $adminid = $admin ? $admin->id : '0';
+
+        $microsoftservices = $DB->get_records('oauth2_issuer', ['servicetype' => 'microsoft']);
+        foreach ($microsoftservices as $microsoftservice) {
+            $time = time();
+
+            // Insert/update the new endpoints.
+            foreach ($endpointuris as $endpointname => $endpointuri) {
+                $endpoint = ['issuerid' => $microsoftservice->id, 'name' => $endpointname];
+                $endpointid = $DB->get_field('oauth2_endpoint', 'id', $endpoint);
+
+                if ($endpointid) {
+                    $endpoint = array_merge($endpoint, [
+                        'id' => $endpointid,
+                        'url' => $endpointuri,
+                        'timemodified' => $time,
+                        'usermodified' => $adminid,
+                    ]);
+                    $DB->update_record('oauth2_endpoint', $endpoint);
+                } else {
+                    $endpoint = array_merge($endpoint, [
+                        'url' => $endpointuri,
+                        'timecreated' => $time,
+                        'timemodified' => $time,
+                        'usermodified' => $adminid,
+                    ]);
+                    $DB->insert_record('oauth2_endpoint', $endpoint);
+                }
+            }
+
+            // Delete the old endpoints.
+            foreach ($deletedendpointuris as $endpointname) {
+                $endpoint = ['issuerid' => $microsoftservice->id, 'name' => $endpointname];
+                $DB->delete_records('oauth2_endpoint', $endpoint);
+            }
+
+            // Insert/update new user field mappings.
+            foreach ($userfieldmappings as $internalfieldname => $externalfieldname) {
+                $fieldmap = ['issuerid' => $microsoftservice->id, 'internalfield' => $internalfieldname];
+                $fieldmapid = $DB->get_field('oauth2_user_field_mapping', 'id', $fieldmap);
+
+                if ($fieldmapid) {
+                    $fieldmap = array_merge($fieldmap, [
+                        'id' => $fieldmapid,
+                        'externalfield' => $externalfieldname,
+                        'timemodified' => $time,
+                        'usermodified' => $adminid,
+                    ]);
+                    $DB->update_record('oauth2_user_field_mapping', $fieldmap);
+                } else {
+                    $fieldmap = array_merge($fieldmap, [
+                        'externalfield' => $externalfieldname,
+                        'timecreated' => $time,
+                        'timemodified' => $time,
+                        'usermodified' => $adminid,
+                    ]);
+                    $DB->insert_record('oauth2_user_field_mapping', $fieldmap);
+                }
+            }
+
+            // Update the baseurl for the issuer.
+            $microsoftservice->baseurl = 'https://login.microsoftonline.com/common/v2.0';
+            $microsoftservice->timemodified = $time;
+            $microsoftservice->usermodified = $adminid;
+            $DB->update_record('oauth2_issuer', $microsoftservice);
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100704.09);
+    }
+
+    if ($oldversion < 2024100704.10) {
+
+        // Define field systememail to be added to oauth2_issuer.
+        $table = new xmldb_table('oauth2_issuer');
+        $field = new xmldb_field('systememail', XMLDB_TYPE_CHAR, '100', null, null, null, null, 'loginpagename');
+
+        // Conditionally launch add field systememail.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2024100704.10);
     }
 
     return true;

@@ -16,6 +16,9 @@
 
 namespace mod_quiz;
 
+use core\exception\coding_exception;
+use question_bank;
+
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
@@ -904,6 +907,40 @@ final class structure_test extends \advanced_testcase {
         $this->assertEquals(0, $structure->is_question_dependent_on_previous_slot(2));
     }
 
+    public function test_update_slot_version(): void {
+        $this->resetAfterTest();
+
+        $course = $this->getDataGenerator()->create_course();
+        $quizgenerator = $this->getDataGenerator()->get_plugin_generator('mod_quiz');
+        $quiz = $quizgenerator->create_instance(['course' => $course->id, 'questionsperpage' => 0,
+                'grade' => 100.0, 'sumgrades' => 2]);
+
+        get_coursemodule_from_instance('quiz', $quiz->id, $course->id);
+
+        $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
+        $cat = $questiongenerator->create_question_category();
+        $numq = $questiongenerator->create_question('numerical', null, ['category' => $cat->id]);
+        $questiongenerator->update_question($numq, null, ['name' => 'Second version of numq']);
+        quiz_add_quiz_question($numq->id, $quiz);
+
+        $quizobj = quiz_settings::create($quiz->id);
+        $quizobj->preload_questions();
+        [$question] = array_values($quizobj->get_questions(null, false));
+        $structure = $quizobj->get_structure();
+
+        // Updating to a version which exists, should succeed.
+        $this->assertTrue($structure->update_slot_version($question->slotid, 2));
+
+        // Updating to the same version as the current version should return false.
+        $this->assertFalse($structure->update_slot_version($question->slotid, 2));
+
+        // Updating to a version which does not exists, should throw exception.
+        $this->expectException(coding_exception::class);
+        $this->expectExceptionMessage('Version: 3 does not exist for question bank entry: ' . $question->questionbankentryid);
+        $structure->update_slot_version($question->slotid, 3);
+
+    }
+
     public function test_update_slot_grade_item(): void {
         $quizobj = $this->create_test_quiz([
                 ['TF1', 1, 'truefalse'],
@@ -949,7 +986,7 @@ final class structure_test extends \advanced_testcase {
             ['quizid' => $quizobj->get_quizid(), 'name' => 'Awesomeness!']);
         $structure = structure::create_for_quiz($quizobj);
 
-        $this->expectException(\coding_exception::class);
+        $this->expectException(coding_exception::class);
         $structure->update_slot_grade_item($structure->get_slot_by_number(1), $gradeitem->id);
     }
 

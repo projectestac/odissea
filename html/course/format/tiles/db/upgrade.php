@@ -217,5 +217,14 @@ function xmldb_format_tiles_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2024061800, 'format', 'tiles');
     }
 
+    // Remove any adhoc tasks queued for deleted code (commit 7f0c8db6).
+    if ($oldversion < 2025041631) {
+        $deletedclasses = ['\format_tiles\task\deferred_register', '\format_tiles\task\delete_empty_sections'];
+        foreach ($deletedclasses as $deletedclass) {
+            $DB->delete_records('task_adhoc', ['component' => 'format_tiles', 'classname' => $deletedclass]);
+        }
+        upgrade_plugin_savepoint(true, 2025041631, 'format', 'tiles');
+    }
+
     return true;
 }

@@ -421,6 +421,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'The user ID of the us
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Stores metadata about recordings.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'The user ID of the user who last changed a recording.';
 $string['progress_createbigbluebuttonbn'] = 'Creating BigBlueButton activity ({$a})';
+$string['recordingnotfound'] = 'The recording was not found.';
 $string['recordings_from_deleted_activities'] = 'Recordings from deleted activities';
 $string['recordingurlnotfound'] = 'The recording URL is invalid.';
 $string['removedevents'] = 'Deleted events';

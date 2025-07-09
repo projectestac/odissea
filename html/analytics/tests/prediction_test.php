@@ -63,6 +63,7 @@ final class prediction_test extends \advanced_testcase {
         foreach ($models as $model) {
             $model->delete();
         }
+        parent::tearDown();
     }
 
     /**

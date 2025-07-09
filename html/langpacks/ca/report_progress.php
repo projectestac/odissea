@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityorder'] = 'Ordre de les activitats';
+$string['activitysection'] = 'Secció';
 $string['allactivitiesandresources'] = 'Totes les activitats i els recursos';
 $string['alphabetical'] = 'Alfabètic';
 $string['include'] = 'Inclou';
+$string['no_filter_by_section'] = 'No filtris per secció';
 $string['orderincourse'] = 'Ordre en el curs';
 $string['page-report-progress-index'] = 'Informe de compleció d\'activitats';
 $string['page-report-progress-user'] = 'Informe de compleció d\'activitats de l\'usuari';

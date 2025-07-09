@@ -191,6 +191,7 @@ $string['connected'] = 'Connectat';
 $string['connecting'] = 'S\'està connectant...';
 $string['contact'] = 'Contacte';
 $string['contact_help'] = 'Una adreça de correu electrònic associada a l\'entitat emissora de la insígnia.';
+$string['copy'] = 'Copia';
 $string['copyof'] = 'Còpia de {$a}';
 $string['course'] = 'Curs: {$a}';
 $string['coursebadges'] = 'Insígnies';

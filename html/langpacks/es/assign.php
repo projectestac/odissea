@@ -189,6 +189,7 @@ $string['editsubmissionother'] = 'Editar entrega para {$a}';
 $string['enabled'] = 'Habilitado';
 $string['enabletimelimit'] = 'Habilitar asignaciones cronometradas';
 $string['enabletimelimit_help'] = 'Si está habilitado, puede establecer un límite de tiempo en la página de configuración de tareas.';
+$string['errorgradechangessaveddetail'] = 'Hubo un fallo al guardar los cambios en la calificación y la retroalimentación';
 $string['errornosubmissions'] = 'No hay entregas que descargar';
 $string['errorquickgradingvsadvancedgrading'] = 'No se guardaron las calificaciones porque esta tarea usa actualmente la calificación avanzada';
 $string['errorrecordmodified'] = 'Las calificaciones no se guardaron porque alguien acaba de modificar uno o más registros, antes de que usted terminara de cargar la página';
@@ -537,7 +538,7 @@ Puede ver el estado de sus tareas enviadas en:
 
 {$a->url}';
 $string['submissiondrafts'] = 'Requiere que los alumnos pulsen el botón de envío';
-$string['submissiondrafts_help'] = 'Si está habilitado, los estudiantes tendrán que pulsar un botón de Entrega para declarar que es su entrega definitiva. Esto permite que los estudiantes puedan tener una versión borrador de su entrega en el sistema. Si esta opción es cambiada de "No" a "Si" después de que los estudiantes hayan realizado algunas entregas, estas se considerarán como definitivas.';
+$string['submissiondrafts_help'] = '¿Deberían tener los estudiantes que pulsar un botón de entrega para indicar cuándo han terminado de hacer cambios en su entrega y que está lista para evaluar?';
 $string['submissioneditable'] = 'El estudiante puede editar esta entrega';
 $string['submissionempty'] = 'No se ha presentado nada.';
 $string['submissionlog'] = 'Estudiante: {$a->fullname}, Estado: {$a->status}';

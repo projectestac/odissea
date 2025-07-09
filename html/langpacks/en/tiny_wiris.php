@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_connection'] = 'An error occurred while loading MathType';
 $string['pluginname'] = 'MathType by WIRIS';
 $string['privacy:metadata'] = 'MathType for TinyMCE does not effect or store any data itself.';
+$string['wiris:use'] = 'Use TinyMCE wiris plugin';

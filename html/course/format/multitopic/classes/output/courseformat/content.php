@@ -97,8 +97,10 @@ class content extends content_base {
 
         // INCLUDED from course/format/classes/output/section_renderer.php print_single_section_page() .
         // Can we view the section in question?
-        if (!($sectioninfo = $displaysectionextra->sectionbase)
-            || (!$sectioninfo->uservisible && $sectioninfo->section != 0)) {    // CHANGED: Already have section info.
+        if (!(
+            ($sectioninfo = $displaysectionextra->sectionbase)
+            && ($sectioninfo->section == 0 || $sectioninfo->uservisible && $format->is_section_visible($sectioninfo))
+        )) {
             // This section doesn't exist or is not available for the user.
             // We actually already check this in course/view.php but just in case exit from this function as well.
             throw new \moodle_exception(
@@ -133,15 +135,9 @@ class content extends content_base {
                 $sectionextraatlevel[$level] = $thissectionextra;
             }
 
-            // Show the section if the user is permitted to access it, OR if it's not available
-            // but there is some available info text which explains the reason & should display,
-            // OR it is hidden but the course has a setting to display hidden sections as unavilable.
-            $showsection = $thissection->uservisible || ($thissection->section == 0) ||
-                    ($thissection->visible || !$course->hiddensections)
-                    && ($thissection->available || !empty($thissection->availableinfo));
-
             // Make and add tabs for visible pages.
-            if ($thissectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC && $showsection) {
+            if ($thissectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
+                && $format->is_section_visible($thissection)) {
 
                 $sectionname = get_section_name($course, $thissection);
 
@@ -184,7 +180,7 @@ class content extends content_base {
                 }
 
                 // Disable tabs for hidden sections.
-                if (!$thissection->uservisible && ($thissection->section != 0)) {
+                if (!(($thissection->section == 0) || $thissection->uservisible)) {
                     $inactivetabs[] = "tab_id_{$thissection->id}_l{$thissectionextra->levelsan}";
                 }
 
@@ -201,6 +197,11 @@ class content extends content_base {
                                     FORMAT_MULTITOPIC_SECTION_LEVEL_PAGE_USE); /* ... */
                         $level >= $nextsectionlevel + 1; /* ... */
                         $level--) {
+
+                    $parent = $sectionextraatlevel[$level - 1]->sectionbase;
+                    if (!(($parent->section == 0) || $parent->uservisible && $format->is_section_visible($parent))) {
+                        continue;
+                    }
 
                     // Make "add" tab.
                     $straddsection = get_string_manager()->string_exists('addsectionpage', 'format_' . $course->format) ?
@@ -305,6 +306,8 @@ class content extends content_base {
     /**
      * Export sections array data.
      *
+     * Redeclaration deprecated since 5.0, see MDL-72526.
+     *
      * @param renderer_base $output typically, the renderer that's calling this function
      * @return array data context for a mustache template
      */
@@ -345,7 +348,7 @@ class content extends content_base {
      * @param \course_modinfo $modinfo the current course modinfo object
      * @return \section_info[] an array of section_info to display
      */
-    private function get_sections_to_display(\course_modinfo $modinfo): array {
+    protected function get_sections_to_display(\course_modinfo $modinfo): array {
         $format = $this->format;
         $sectionsextra = $format->fmt_get_sections_extra();
         $displaysectionextra = $sectionsextra[$format->get_sectionid()];

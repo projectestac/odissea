@@ -403,7 +403,7 @@ $string['privacy:metadata:link:qformat'] = 'نظام الأسئلة الفرعي
 $string['privacy:metadata:link:qtype'] = 'نظام الأسئلة الفرعي يتعامل مع ملحق أنواع الأسئلة والذي يضم كل أنواعها المختلفة';
 $string['published'] = 'مشترك';
 $string['qbanknotfound'] = 'إن ملحق بنك الأسئلة \'{$a}\' غير موجود أو يتعذر التعرف عليه.';
-$string['qtypeveryshort'] = 'النوع';
+$string['qtypeveryshort'] = 'نوع';
 $string['question_version'] = 'إصدار السؤال';
 $string['questionaffected'] = '<a href="{$a->qurl}">السؤال "{$a->name}" ({$a->qtype})</a> موجود ضمن صنف الأسئلة هذا ولكنه قيد الاستعمال أيضاً في <a href="{$a->qurl}">الاختبار "{$a->quizname}"</a> في مساق آخر "{$a->coursename}".';
 $string['questionbank'] = 'بنك الأسئلة';

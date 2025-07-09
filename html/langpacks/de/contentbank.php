@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/in';
-$string['choosecontext'] = 'Kurs oder Kurbereich auswählen ...';
+$string['choosecontext'] = 'Kurs oder Kursbereich auswählen ...';
 $string['contentbank'] = 'Inhaltsspeicher';
 $string['contentbankpreferences'] = 'Inhaltsspeicher einstellen';
 $string['contentcopied'] = 'Inhalt kopiert.';

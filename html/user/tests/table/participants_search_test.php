@@ -36,6 +36,8 @@ use stdClass;
  * @category  test
  * @copyright 2020 Andrew Nicols <andrew@nicols.co.uk>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
+ * @covers \core_user\table\participants_search
  */
 final class participants_search_test extends advanced_testcase {
 
@@ -169,9 +171,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -779,9 +783,10 @@ final class participants_search_test extends advanced_testcase {
 
         // Run the search, assert count matches the number of expected users.
         $search = new participants_search($course, context_course::instance($course->id), $filterset);
-        $this->assertEquals(count($expectedusers), $search->get_total_participants_count());
-
         $rs = $search->get_participants();
+        $totalparticipants = $rs->current()->fullcount ?? 0;
+        $this->assertEquals(count($expectedusers), $totalparticipants);
+
         $this->assertInstanceOf(moodle_recordset::class, $rs);
 
         // Assert that each expected user is within the participant records.
@@ -977,9 +982,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -1523,9 +1530,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -1778,9 +1787,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -2002,9 +2013,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -2340,9 +2353,11 @@ final class participants_search_test extends advanced_testcase {
             $rs = $search->get_participants();
             $this->assertInstanceOf(moodle_recordset::class, $rs);
             $records = $this->convert_recordset_to_array($rs);
+            $resetrecords = reset($records);
+            $totalparticipants = $resetrecords->fullcount ?? 0;
 
             $this->assertCount($count, $records);
-            $this->assertEquals($count, $search->get_total_participants_count());
+            $this->assertEquals($count, $totalparticipants);
 
             foreach ($expectedusers as $expecteduser) {
                 $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -2701,9 +2716,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -3106,9 +3123,11 @@ final class participants_search_test extends advanced_testcase {
         $rs = $search->get_participants();
         $this->assertInstanceOf(moodle_recordset::class, $rs);
         $records = $this->convert_recordset_to_array($rs);
+        $resetrecords = reset($records);
+        $totalparticipants = $resetrecords->fullcount ?? 0;
 
         $this->assertCount($count, $records);
-        $this->assertEquals($count, $search->get_total_participants_count());
+        $this->assertEquals($count, $totalparticipants);
 
         foreach ($expectedusers as $expecteduser) {
             $this->assertArrayHasKey($users[$expecteduser]->id, $records);
@@ -3490,5 +3509,45 @@ final class participants_search_test extends advanced_testcase {
         }
 
         return $finaltests;
+    }
+
+    /**
+     * Tests sorting of participants in a course.
+     *
+     * This test runs a search for participants twice, first with an "ORDER BY" clause and second without.
+     * The test asserts the correct ordering of participants based on the sorting condition.
+     */
+    public function test_sort_participants(): void {
+        $this->resetAfterTest();
+
+        $course = $this->getDataGenerator()->create_course();
+        $coursecontext = context_course::instance($course->id);
+
+        // Generate users with their role.
+        $this->getDataGenerator()->create_and_enrol($course, 'teacher');
+        $this->getDataGenerator()->create_and_enrol($course, 'student');
+
+        // Create the basic filter.
+        $filterset = new participants_filterset();
+        $filterset->add_filter(new integer_filter('courseid', null, [(int) $course->id]));
+
+        // Run the search with using ORDER BY.
+        $search = new participants_search($course, $coursecontext, $filterset);
+        $rs = $search->get_participants(
+            sort: 'ORDER     BY id', // Adding spaces between "ORDER" and "BY" is intentional.
+        );
+        $records = $this->convert_recordset_to_array($rs);
+        $userids = array_keys($records);
+        $this->assertGreaterThan($userids[0], $userids[1]);
+
+        // Run the search without using ORDER BY.
+        $rs = $search->get_participants(
+            sort: 'id DESC',
+        );
+        $records = $this->convert_recordset_to_array($rs);
+        $userids = array_keys($records);
+        $this->assertGreaterThan($userids[1], $userids[0]);
+
+        $rs->close();
     }
 }

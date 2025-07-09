@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['filtername'] = 'مرشح H5P';
+$string['pluginname'] = 'مرشح H5P';
 $string['privacy:metadata'] = 'لا تخزن هذه الإضافة أي بيانات على الإطلاق.';

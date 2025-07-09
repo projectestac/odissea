@@ -1,9 +1,9 @@
+=== 4.5 Onwards ===
+
+This file has been replaced by UPGRADING.md. See MDL-81125 for further information.
+
+===
 This files describes API changes for code that uses the user API.
-
-=== 4.4.4 ===
-
-* The user profile field `display_name()` method now accepts an optional `$escape` parameter to define whether to
-  escape the returned name
 
 === 4.4 ===
 

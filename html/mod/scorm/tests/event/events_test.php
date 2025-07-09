@@ -52,6 +52,7 @@ final class events_test extends \advanced_testcase {
     protected $eventcm;
 
     protected function setUp(): void {
+        parent::setUp();
         $this->setAdminUser();
         $this->eventcourse = $this->getDataGenerator()->create_course();
         $this->eventuser = $this->getDataGenerator()->create_user();

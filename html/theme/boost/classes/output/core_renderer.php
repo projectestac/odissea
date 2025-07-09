@@ -121,13 +121,14 @@ class core_renderer extends \core_renderer {
                             'buttontype' => 'message',
                             'title' => get_string('message', 'message'),
                             'url' => new moodle_url('/message/index.php', array('id' => $user->id)),
-                            'image' => 'message',
+                            'image' => 't/message',
                             'linkattributes' => \core_message\helper::messageuser_link_params($user->id),
                             'page' => $this->page
                         )
                     );
 
                     if ($USER->id != $user->id) {
+                        $cancreatecontact = \core_message\api::can_create_contact($USER->id, $user->id);
                         $iscontact = \core_message\api::is_contact($USER->id, $user->id);
                         $isrequested = \core_message\api::get_contact_requests_between_users($USER->id, $user->id);
                         $contacturlaction = '';
@@ -140,6 +141,9 @@ class core_renderer extends \core_renderer {
                         // If the user is not a contact.
                         if (!$iscontact) {
                             if ($isrequested) {
+                                // Set it to true if a request has been sent.
+                                $cancreatecontact = true;
+
                                 // We just need the first request.
                                 $requests = array_shift($isrequested);
                                 if ($requests->userid == $USER->id) {
@@ -158,14 +162,15 @@ class core_renderer extends \core_renderer {
                                 $contacttitle = 'addtoyourcontacts';
                                 $contacturlaction = 'addcontact';
                             }
-                            $contactimage = 'addcontact';
+                            $contactimage = 't/addcontact';
                         } else {
                             // If the user is a contact.
                             $contacttitle = 'removefromyourcontacts';
                             $contacturlaction = 'removecontact';
-                            $contactimage = 'removecontact';
+                            $contactimage = 't/removecontact';
                         }
-                        $userbuttons['togglecontact'] = array(
+                        if ($cancreatecontact) {
+                            $userbuttons['togglecontact'] = array(
                                 'buttontype' => 'togglecontact',
                                 'title' => get_string($contacttitle, 'message'),
                                 'url' => new moodle_url('/message/index.php', array(
@@ -178,6 +183,7 @@ class core_renderer extends \core_renderer {
                                 'linkattributes' => $linkattributes,
                                 'page' => $this->page
                             );
+                        }
                     }
 
                     $this->page->requires->string_for_js('changesmadereallygoaway', 'moodle');
@@ -209,11 +215,6 @@ class core_renderer extends \core_renderer {
                     $prefix = get_string('modulename', $this->page->activityname);
                 }
             }
-        }
-
-        // Return the heading wrapped in an sr-only element so it is only visible to screen-readers.
-        if (!empty($this->page->layout_options['nocontextheader'])) {
-            return html_writer::div($heading, 'sr-only');
         }
 
         $contextheader = new \context_header($heading, $headinglevel, $imagedata, $userbuttons, $prefix);

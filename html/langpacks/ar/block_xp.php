@@ -74,6 +74,7 @@ $string['perpagecolon'] = 'لكل صفحة:';
 $string['privacy:metadata:log:eventname'] = 'اسم الحدث';
 $string['privacy:metadata:prefladderpagesize'] = 'حجم الصفحة المفضل للمستخدم عند معاينة السُّلم';
 $string['privacy:path:logs'] = 'سجلات الوقوعات';
+$string['promocontactintro'] = 'إتصل بنا لمزيد من المعلومات. ستجدنا في غاية التعاون وسريعين في الاستجابة!';
 $string['property:eventname'] = 'اسم الحدث';
 $string['rulecm'] = 'النشاط أو المورد';
 $string['ruleevent'] = 'حدث مُعيَّن';

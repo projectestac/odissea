@@ -29,7 +29,7 @@ use \core\oauth2\user_field_mapping;
  * @package    core
  * @copyright  2017 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
- * @coversDefaultClass \core\oauth2\api
+ * @covers \core\oauth2\api
  */
 final class oauth2_test extends \advanced_testcase {
 
@@ -256,8 +256,6 @@ final class oauth2_test extends \advanced_testcase {
      * Test endpoints creation for issuers.
      * @dataProvider create_endpoints_for_standard_issuer_provider
      *
-     * @covers ::create_endpoints_for_standard_issuer
-     *
      * @param string $type Issuer type to create.
      * @param string|null $discoveryurl Expected discovery URL or null if this endpoint doesn't exist.
      * @param bool $hasmappingfields True if it's expected the issuer to create has mapping fields.
@@ -339,6 +337,7 @@ final class oauth2_test extends \advanced_testcase {
             ],
             'Microsoft' => [
                 'type' => 'microsoft',
+                'discoveryurl' => '.well-known/openid-configuration',
             ],
             'Facebook' => [
                 'type' => 'facebook',
@@ -421,6 +420,12 @@ final class oauth2_test extends \advanced_testcase {
 
         $this->assertFalse($googleissuer->is_available_for_login());
 
+        // Set showonloginpage to SMTP with XOAUTH2 only.
+        $googleissuer->set('showonloginpage', issuer::SMTPWITHXOAUTH2);
+        $googleissuer->update();
+
+        $this->assertFalse($googleissuer->is_available_for_login());
+
         // Set showonloginpage to everywhere (service and login) and disable issuer.
         $googleissuer->set('showonloginpage', issuer::EVERYWHERE);
         $googleissuer->set('enabled', 0);
@@ -495,7 +500,7 @@ final class oauth2_test extends \advanced_testcase {
      * Test getting the list of internal fields.
      *
      * @dataProvider create_custom_profile_fields
-     * @covers ::get_internalfield_list
+     * @covers \core\oauth2\user_field_mapping::get_internalfield_list
      * @param array $given Categories and profile fields.
      * @param array $expected Expected value.
      */
@@ -522,7 +527,7 @@ final class oauth2_test extends \advanced_testcase {
      * Test getting the list of internal fields with flat array.
      *
      * @dataProvider create_custom_profile_fields
-     * @covers ::get_internalfields
+     * @covers \core\oauth2\user_field_mapping::get_internalfields
      * @param array $given Categories and profile fields.
      * @param array $expected Expected value.
      */
@@ -542,7 +547,7 @@ final class oauth2_test extends \advanced_testcase {
     /**
      * Test getting the list of empty external/custom profile fields.
      *
-     * @covers ::get_internalfields
+     * @covers \core\oauth2\user_field_mapping::get_internalfields
      */
     public function test_get_empty_internalfield_list(): void {
 

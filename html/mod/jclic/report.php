@@ -48,6 +48,8 @@ $context = context_module::instance($cm->id);
 require_capability('mod/jclic:view', $context);
 require_capability('moodle/grade:viewall', $context);
 
+$strpercent = $jclic->maxgrade == 100 ? '%' : '';
+
 $PAGE->set_url('/mod/jclic/report.php', ['id' => $cm->id, 'mode' => $mode]);
 $PAGE->set_title(format_string($jclic->name));
 $PAGE->set_heading(format_string($course->fullname));
@@ -114,7 +116,7 @@ $tableheaders = array_merge(
         get_string('attempts', 'jclic'),
         get_string('solveddone', 'jclic'),
         get_string('totaltime', 'jclic'),
-        get_string('grade', 'grades'),
+        get_string('grade', 'jclic'),
     ]);
 
 require_once $CFG->libdir . '/tablelib.php';
@@ -207,7 +209,7 @@ if (!empty($users)) {
                         $rowclass = null;
                         $starttime = '<a href="#" onclick="showSessionActivities(\'' . $session->session_id . '\');">' . date('d/m/Y H:i', strtotime($session->starttime)) . '</a>';
                         $solveddone = $session->solved . ' / ' . $session->done;
-                        $grade = $session->score;
+                        $grade = $session->score.$strpercent;
                         $totaltime = $session->totaltime;
                         $attempts = $session->attempts;
 
@@ -221,7 +223,7 @@ if (!empty($users)) {
                         // Print activities for each session
                         $html = '<tr class="jclic-session-activities-hidden" id="session_' . $session->session_id . '" >';
                         $html .= '<td colspan="' . (8 + count($extradata)) . '">';
-                        $html .= jclic_get_session_activities_html($session->session_id);
+                        $html .= jclic_get_session_activities_html($session->session_id, $strpercent);
                         $html .= '</td></tr>';
                         echo $html;
 
@@ -243,7 +245,7 @@ if (!empty($users)) {
             // Sessions summary
             $starttime = ($numsessions > 0) ? get_string('totals', 'jclic') : (isset($sessions_summary->starttime) ? date('d/m/Y H:i', strtotime($sessions_summary->starttime)) : '-');
             $solveddone = $sessions_summary->solved . ' / ' . $sessions_summary->done;
-            $grade = $sessions_summary->score;
+            $grade = $sessions_summary->score . $strpercent;
             $totaltime = $sessions_summary->totaltime;
             $attempts = $sessions_summary->attempts;
             $row = array_merge(

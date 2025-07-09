@@ -59,15 +59,19 @@
 }}
 {{#editing}}
     {{< core_courseformat/local/content/divider}}
-        {{$content}}{{> core_course/activitychooserbuttonactivity}}{{/content}}
+        {{$content}}
+            {{#activitychooserbutton}}{{> core_course/activitychooserbutton}}{{/activitychooserbutton}}
+        {{/content}}
     {{/ core_courseformat/local/content/divider}}
 {{/editing}}
 <div class="activity-item focus-control {{#modstealth}}hiddenactivity{{/modstealth}}{{!
         }}{{#modhiddenfromstudents}}hiddenactivity{{/modhiddenfromstudents}}{{!
         }}{{#modinline}}activityinline{{/modinline}}" data-activityname="{{activityname}}" data-region="activity-card">
-    {{$ core_courseformat/local/content/cm/bulkselect }}
-        {{> core_courseformat/local/content/cm/bulkselect }}
-    {{/ core_courseformat/local/content/cm/bulkselect }}
+    {{#cmbulk}}
+        {{$ core_courseformat/local/content/cm/bulkselect }}
+            {{> core_courseformat/local/content/cm/bulkselect }}
+        {{/ core_courseformat/local/content/cm/bulkselect }}
+    {{/cmbulk}}
     {{!
       Place the actual content of the activity-item in a separate template to make it easier for other formats to add
       additional content to the activity wrapper.

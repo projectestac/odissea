@@ -196,7 +196,7 @@ $string['backupdaterecordtype'] = '<br />{$a->recordtype} - {$a->recordname}<br 
 $string['backupdetails'] = 'バックアップ詳細';
 $string['backuperrorinvaliddestination'] = 'バックアップ先フォルダが存在しないか、書き込み可能ではありません。';
 $string['backupexecuteathelp'] = '何時に自動バックアップを実行するか選択してください。';
-$string['backupfailed'] = 'あなたのいくつかのコースが保存されませんでした!!';
+$string['backupfailed'] = 'あなたのいくつかのコースが保存されませんでした。';
 $string['backupfilename'] = 'backup';
 $string['backupfinished'] = 'バックアップが正常に完了しました。';
 $string['backupfromthissite'] = 'バックアップはこのサイトで作成されましたか?';
@@ -376,7 +376,7 @@ $string['courseadministration'] = 'コース管理';
 $string['courseapprovedemail'] = 'あなたのリクエストしたコース「 {$a->name} 」が承認されました。あなたは {$a->teacher} になりました。';
 $string['courseapprovedemail2'] = 'あなたのリクエストしたコース「 {$a->name} 」が承認されました: <a href="{$a->url}">{$a->name}</a>';
 $string['courseapprovedfailed'] = 'コースを承認済みとして保存できませんでした!';
-$string['courseapprovedsubject'] = 'あなたのコースが承認されました!';
+$string['courseapprovedsubject'] = 'あなたのコースが承認されました。';
 $string['courseavailable'] = '学生はこのコースを利用できる';
 $string['courseavailablenot'] = '学生はこのコースを利用できない';
 $string['coursebackup'] = 'コースバックアップ';
@@ -581,7 +581,7 @@ $string['deletecoursecheck'] = '本当にこのコースおよびコース内デ
 $string['deleted'] = '削除完了';
 $string['deletedactivity'] = '{$a} を削除しました。';
 $string['deletedcourse'] = '{$a} が完全に削除されました。';
-$string['deletednot'] = '{$a} を削除できませんでした!';
+$string['deletednot'] = '{$a} を削除できませんでした。';
 $string['deletepicture'] = '画像を削除する';
 $string['deletesection'] = '削除する';
 $string['deleteselected'] = '選択したものを削除する';
@@ -707,16 +707,16 @@ $string['emailconfirmsent'] = '<p>あなたの <b>{$a}</b> のメールアドレ
 <p>分からないことがある場合、サイト管理者にご連絡ください。</p>';
 $string['emailconfirmsentfailure'] = '確認メールの送信に失敗しました。';
 $string['emailconfirmsentsuccess'] = '確認メールが正常に送信されました。';
-$string['emaildigest'] = 'メール要約タイプ';
-$string['emaildigest_help'] = 'これはフォーラムにデフォルトとして使用される日次要約設定です。
+$string['emaildigest'] = 'メールダイジェストタイプ';
+$string['emaildigest_help'] = 'これはフォーラムがデフォルトで使用するデイリーダイジェスト設定です。
 
-* 要約なし - あなたはフォーラム投稿ごとに1通のメールを受信します。
-* 要約 - 投稿すべて - あなたはそれぞれのフォーラム投稿すべてのコンテンツを含むメール要約を1日1通受信します。
-* 要約 - 件名のみ - あなたはそれぞれのフォーラム投稿の件名を含むメールダイジェストを1日1通受信します。
+* ダイジェストなし - あなたはフォーラム投稿ごとに1通のメールを受信します。
+* ダイジェスト　- 投稿すべて - あなたはそれぞれのフォーラム投稿すべてのコンテンツを含むメールダイジェストを1日1通受信します。
+* ダイジェスト - 件名のみ - あなたはそれぞれのフォーラム投稿の件名を含むメールダイジェストを1日1通受信します。
 
-必要であれば、あなたはそれぞれのフォーラムで異なる設定を選択することもできます。';
+必要であれば、あなたはそれぞれのフォーラムで異なる設定を選択できます。';
 $string['emaildigestcomplete'] = 'すべて (投稿すべてを含む日次メール)';
-$string['emaildigestoff'] = '要約なし (フォーラム投稿ごとのメール)';
+$string['emaildigestoff'] = 'ダイジェストなし (フォーラム投稿ごとのメール)';
 $string['emaildigestsubjects'] = '件名 (件名のみを含む日次メール)';
 $string['emaildisable'] = 'このメールアドレスは無効です';
 $string['emaildisableclick'] = 'このメールアドレス宛にすべてのメールが送信されないようにする';
@@ -1189,7 +1189,7 @@ $string['labelvalue'] = '{$a->label}: {$a->value}';
 $string['langltr'] = '言語の向き 左 >> 右';
 $string['langrtl'] = '言語の向き 右 >> 左';
 $string['language'] = '言語設定';
-$string['languagegood'] = 'この言語パックは最新版です! :-)';
+$string['languagegood'] = 'この言語パックは最新版です。';
 $string['languageselector'] = '言語セレクタ';
 $string['last'] = '最後';
 $string['lastaccess'] = '最終アクセス';
@@ -1674,13 +1674,13 @@ $string['passwordsenttext'] = '<p>メールが {$a->email} 宛に送信されま
 $string['passwordset'] = 'あなたのパスワードが設定されました。';
 $string['path'] = 'パス';
 $string['pathnotexists'] = 'サーバにパスが見当たりません!';
-$string['pathslasherror'] = 'パスの最後にスラッシュを付けないでください!!';
-$string['paymentinstant'] = '下のボタンをお使いください。支払いおよび登録がすぐに完了します!';
+$string['pathslasherror'] = 'パスの最後にスラッシュを付けないでください。';
+$string['paymentinstant'] = '下のボタンをお使いください。支払いおよび登録がすぐに完了します。';
 $string['paymentpending'] = '(<small><b><u>{$a}</u></b> 保留</small>)';
 $string['paymentrequired'] = 'このコースへの登録は有料です。';
 $string['payments'] = '支払い';
-$string['paymentsorry'] = 'お支払いありがとうございます! 残念ですが、あなたの支払いおよびコース 「 {$a->fullname} 」 に入るための登録作業は完了していません。再度、支払いおよび登録作業を実施してください。引き続きエラーが表示される場合、{$a->teacher} またはサイト管理者にご連絡ください。';
-$string['paymentthanks'] = 'お支払いありがとうございます! あなたは次のコースに登録されました:<br /> 「 {$a} 」';
+$string['paymentsorry'] = 'お支払いありがとうございます。処理が完了した場合、あなたはコース「 {$a->fullname} 」に入れるようになります。しばらくお待ちください。問題が解決しない場合、{$a->teacher} またはサイト管理者にお問い合わせください。';
+$string['paymentthanks'] = 'お支払いありがとうございます。あなたは次のコースに登録されました: {$a}';
 $string['pendingrequests'] = '保留中のリクエスト';
 $string['percents'] = '{$a}%';
 $string['periodending'] = '期間終了 ({$a})';

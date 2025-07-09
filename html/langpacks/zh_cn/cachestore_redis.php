@@ -33,6 +33,8 @@ $string['clustermodeunavailable'] = 'Redis 集群不可用，请确保 PHP Redis
 $string['compressor_none'] = '没有压缩。';
 $string['compressor_php_gzip'] = '使用gzip压缩。';
 $string['compressor_php_zstd'] = '使用Zstandard压缩。';
+$string['connectiontimeout'] = '连接超时';
+$string['connectiontimeout_help'] = '这将设置尝试连接到 Redis 服务器时的超时时间。';
 $string['encrypt_connection'] = '使用 TLS 加密';
 $string['encrypt_connection_help'] = '使用 TLS 连接到 Redis，请勿在 Redis 的主机名中使用“tls://”，而应使用此选项。';
 $string['password'] = '密码';
@@ -64,7 +66,7 @@ $string['server_help'] = '用于测试的 Redis 服务器。
   172.23.0.12<br>
   172.23.0.13<br>
 
-有关详细信息，请参阅 <a href=“https://redis.io/docs/reference/clients/#accepting-client-connections”>接受客户端连接</a>和 <a href=“https://redis.io/resources/clients/#php”>Redis PHP 客户端</a>。';
+有关详细信息，请参阅 <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">接受客户端连接</a>和 <a href="https://redis.io/resources/clients/#php">Redis PHP 客户端</a>。';
 $string['task_ttl'] = '释放 Redis 缓存中过期条目使用的内存';
 $string['test_clustermode'] = '集群模式';
 $string['test_clustermode_desc'] = '启用 Redis 集群模式下的测试';
@@ -89,7 +91,7 @@ $string['test_server_desc'] = '用于测试的 Redis 服务器。
   172.23.0.12<br>
   172.23.0.13<br>
 
-有关详细信息，请参阅 <a href=“https://redis.io/docs/reference/clients/#accepting-client-connections”>接受客户端连接</a>和 <a href=“https://redis.io/resources/clients/#php”>Redis PHP 客户端</a>。';
+有关详细信息，请参阅 <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">接受客户端连接</a>和 <a href="https://redis.io/resources/clients/#php">Redis PHP 客户端</a>。';
 $string['test_ttl'] = '测试 TTL';
 $string['test_ttl_desc'] = '使用需要TTL（较慢的集合）的缓存运行性能测试。';
 $string['usecompressor'] = '使用压缩器';

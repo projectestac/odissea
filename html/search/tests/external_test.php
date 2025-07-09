@@ -34,6 +34,7 @@ namespace core_search;
 final class external_test extends \advanced_testcase {
 
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
     }
 

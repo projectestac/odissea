@@ -55,7 +55,7 @@ if ($courseid = optional_param('update', false, PARAM_INT)) {
 
     if ($updatedunits) {
         echo $OUTPUT->heading(get_string('updatedunits', 'block_courses_vicensvives'), 4);
-        echo html_writer::start_tag('ul', array('class' => 'vicensives_newunits'));
+        echo html_writer::start_tag('ul', ['class' => 'vicensives_newunits']);
         foreach ($updatedunits as $unit) {
             echo html_writer::tag('li', html_writer::tag('strong', $unit->label . '.') . ' ' . $unit->name);
         }
@@ -64,7 +64,7 @@ if ($courseid = optional_param('update', false, PARAM_INT)) {
         echo $OUTPUT->heading(get_string('noupdatedunits', 'block_courses_vicensvives'), 4);
     }
 
-    $urlcourse = new moodle_url('/course/view.php', array('id' => $courseid));
+    $urlcourse = new moodle_url('/course/view.php', ['id' => $courseid]);
     $link = html_writer::link($urlcourse, get_string('gotocourse', 'block_courses_vicensvives'));
     echo html_writer::div("($link)", 'continuebutton');
 
@@ -77,16 +77,16 @@ $fields = 'id, format, fullname, visible, summary, summaryformat';
 
 if (has_capability('moodle/course:update', context_system::instance())) {
     $select = $DB->sql_like('idnumber', ':idnumber');
-    $params = array('idnumber' => 'vv-%');
+    $params = ['idnumber' => 'vv-%'];
     $courses = $DB->get_records_select('course', $select, $params, 'sortorder', $fields);
 } else {
-    $courses = array();
+    $courses = [];
     foreach (enrol_get_my_courses($fields, 'visible DESC, fullname ASC') as $course) {
         if (!preg_match('/^vv-/i', $course->idnumber)) {
             continue;
         }
         $coursecontext = context_course::instance($course->id);
-        if ($course->visible or has_capability('moodle/course:viewhiddencourses', $coursecontext)) {
+        if ($course->visible ||  has_capability('moodle/course:viewhiddencourses', $coursecontext)) {
             $courses[] = $course;
         }
     }

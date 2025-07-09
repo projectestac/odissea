@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additem'] = 'Afegeix un element';
 $string['placeholder'] = 'Què he de fer?';
 $string['pluginname'] = 'La meva llista de feines pendents';
 $string['todo:myaddinstance'] = 'Afegiu un bloc de feines pendents al Tauler';

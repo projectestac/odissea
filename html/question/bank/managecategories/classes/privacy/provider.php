@@ -38,6 +38,7 @@ class provider implements
      * @return  collection A listing of user data stored through this system.
      */
     public static function get_metadata(collection $collection): collection {
+        $collection->add_user_preference('qbank_managecategories_showdescriptions', 'privacy:preference:showdescriptions');
         $collection->add_user_preference('qbank_managecategories_includesubcategories_filter_default',
             'privacy:preference:includesubcategories_filter_default');
         return $collection;
@@ -49,6 +50,17 @@ class provider implements
      * @param int $userid The userid of the user whose data is to be exported.
      */
     public static function export_user_preferences(int $userid) {
+        $showdescription = get_user_preferences('qbank_managecategories_showdescriptions', null, $userid);
+        if ($showdescription !== null) {
+            $displaydescription = $showdescription ? 'displaydescription' : 'descriptionnotdisplayed';
+            writer::export_user_preference(
+                'qbank_managecategories',
+                'showdescr',
+                $showdescription,
+                get_string($displaydescription, 'qbank_managecategories')
+            );
+        }
+
         $includesubcategories = get_user_preferences('qbank_managecategories_includesubcategories_filter_default', null, $userid);
         if (isset($includesubcategories)) {
             $displayquestions = $includesubcategories ? 'questionsubcategoriesdisplayed' : 'questionsubcategoriesnotdisplayed';

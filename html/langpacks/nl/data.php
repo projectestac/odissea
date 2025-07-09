@@ -219,7 +219,7 @@ $string['filtername'] = 'Databank automatisch linken';
 $string['footer'] = 'Voettekst';
 $string['forcelinkname'] = 'Geforceerde naam voor de link';
 $string['foundnorecords'] = 'Geen items gevonden (<a href="{$a->reseturl}">Wis filters</a>)';
-$string['foundrecords'] = '{$a->num} van {$a->max} ietms gevonden. (<a href="{$a->reseturl}">Wis filter</a>)';
+$string['foundrecords'] = '{$a->num} van {$a->max} items gevonden. (<a href="{$a->reseturl}">Wis filter</a>)';
 $string['fromfile'] = 'Importeer met zip-bestand';
 $string['fromfile_help'] = '<p align=\'center\'><strong>Sjabloonsets importeren vanuit Zip</strong></p>
 <p>Gebruik dit om sjabloonsets die je op je computer bewaard hebt met de exportfunctie te uploaden .</p>';

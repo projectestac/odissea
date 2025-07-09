@@ -32,4 +32,4 @@ $string['preferences'] = 'Preferències de l\'editor Marklar';
 $string['preferencesformat'] = 'Formats de text addicionals que també es poden editar amb Marklar';
 $string['preferencesformat_help'] = 'Marklar admet nativament el format de text Markdown. També es pot utilitzar per a editar textos en altres formats. Seleccioneu tots els formats de text que voleu editar amb Marklar.
 
-Per defecte, Marklar s\'utilitza en camps amb autoformat Moodle i text net. Per a editar HTML, s\'utilitzarà un altre editor de text enriquit (com Atto o TinyMCE).';
+Per defecte, Marklar s\'utilitza en camps amb format automàtic de Moodle i text net. Per a editar HTML, s\'utilitzarà un altre editor de text enriquit (com Atto o TinyMCE).';

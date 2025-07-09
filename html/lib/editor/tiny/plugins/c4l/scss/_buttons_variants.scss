@@ -1,0 +1,119 @@
+/* BUTTON VARIANTS */
+
+.c4lt-dialog-button .c4l-button-variants {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 3px;
+    justify-content: end;
+    width: 100%;
+    height: 42px;
+    margin-right: 3px;
+}
+
+.c4lt-dialog-button .c4l-button-variants .c4l-button-variant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf3ff;
+    color: #1679f9;
+    height: 42px;
+    width: 36px;
+}
+
+.c4lt-dialog-button .c4l-button-variants .c4l-button-variant.on,
+.c4lt-dialog-button .c4l-button-variants .c4l-button-variant:hover {
+    color: #fff;
+    background-color: #1679f9;
+}
+
+/* BUTTON VARIANTS ICON */
+
+.c4l-button-variant.align-center-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/align-center-variant-off]]);
+}
+
+.c4l-button-variant.align-center-variant-on::before,
+.c4l-button-variant.align-center-variant-on:hover::before,
+.c4l-button-variant.align-center-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/align-center-variant-on]]);
+}
+
+.c4l-button-variant.align-left-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/align-left-variant-off]]);
+}
+
+.c4l-button-variant.align-left-variant-on::before,
+.c4l-button-variant.align-left-variant-on:hover::before,
+.c4l-button-variant.align-left-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/align-left-variant-on]]);
+}
+
+.c4l-button-variant.align-right-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/align-right-variant-off]]);
+}
+
+.c4l-button-variant.align-right-variant-on::before,
+.c4l-button-variant.align-right-variant-on:hover::before,
+.c4l-button-variant.align-right-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/align-right-variant-on]]);
+}
+
+.c4l-button-variant.caption-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/caption-variant-off]]);
+}
+
+.c4l-button-variant.caption-variant-on::before,
+.c4l-button-variant.caption-variant-on:hover::before,
+.c4l-button-variant.caption-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/caption-variant-on]]);
+}
+
+.c4l-button-variant.comfort-reading-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/comfort-reading-variant-off]]);
+}
+
+.c4l-button-variant.comfort-reading-variant-on::before,
+.c4l-button-variant.comfort-reading-variant-on:hover::before,
+.c4l-button-variant.comfort-reading-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/comfort-reading-variant-on]]);
+}
+
+.c4l-button-variant.dont-card-only-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/dont-card-only-variant-off]]);
+}
+
+.c4l-button-variant.dont-card-only-variant-on::before,
+.c4l-button-variant.dont-card-only-variant-on:hover::before,
+.c4l-button-variant.dont-card-only-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/dont-card-only-variant-on]]);
+}
+
+.c4l-button-variant.full-width-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/full-width-variant-off]]);
+}
+
+.c4l-button-variant.full-width-variant-on::before,
+.c4l-button-variant.full-width-variant-on:hover::before,
+.c4l-button-variant.full-width-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/full-width-variant-on]]);
+}
+
+.c4l-button-variant.ordered-list-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/ordered-list-variant-off]]);
+}
+
+.c4l-button-variant.ordered-list-variant-on::before,
+.c4l-button-variant.ordered-list-variant-on:hover::before,
+.c4l-button-variant.ordered-list-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/ordered-list-variant-on]]);
+}
+
+.c4l-button-variant.quote-variant-off::before {
+    content: url([[pix:tiny_c4l|variants/quote-variant-off]]);
+}
+
+.c4l-button-variant.quote-variant-on::before,
+.c4l-button-variant.quote-variant-on:hover::before,
+.c4l-button-variant.quote-variant-off:hover::before {
+    content: url([[pix:tiny_c4l|variants/quote-variant-on]]);
+}

@@ -33,7 +33,7 @@ Feature: Grant an extension to an offline student
       | activity | course | name                 | intro                       | assignsubmission_onlinetext_enabled | assignsubmission_file_enabled | duedate          |
       | assign   | C1     | Test assignment name | Test assignment description | 0                                   | 0                             | ## 2014-01-01 ## |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    When I follow "View all submissions"
+    When I navigate to "Submissions" in current page administration
     And I open the action menu in "Student 1" "table_row"
     And I follow "Grant extension"
     And I should see "Student 1 (student1@example.com)"
@@ -64,10 +64,10 @@ Feature: Grant an extension to an offline student
       | Test assignment name | student2 | ## 2014-02-02 ## |
       | Test assignment name | student3 | ## 2014-03-03 ## |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    When I follow "View all submissions"
+    When I navigate to "Submissions" in current page administration
     And I set the field "selectall" to "1"
-    And I set the field "operation" to "Grant extension"
-    And I click on "Go" "button" confirming the dialogue
+    And I click on "Extend" "button" in the "sticky-footer" "region"
+    And I click on "Extend" "button" in the "Grant extension" "dialogue"
     And I should see "Student 1 (student1@example.com)"
     And I should see "Student 2 (student2@example.com)"
     And I should see "Student 3 (student3@example.com)"
@@ -75,9 +75,8 @@ Feature: Grant an extension to an offline student
     And I should see "Student 5 (student5@example.com)"
     And I should see "1 more..."
     And I should see "Wednesday, 1 January 2014, 12:00 AM" in the "fitem_id_duedate" "region"
-    And I should see "From Sunday, 2 February 2014, 12:00 AM" in the "fitem_id_currentextension" "region"
-    And I should see "To Monday, 3 March 2014, 12:00 AM" in the "fitem_id_currentextension" "region"
-    And I should see "Users without an extension: 4" in the "fitem_id_currentextension" "region"
+    And I should see "Various between Sunday, 2 February 2014, 12:00 AM and Monday, 3 March 2014, 12:00 AM" in the "fitem_id_currentextension" "region"
+    And I should see "Users with no current extension: 4" in the "fitem_id_currentextension" "region"
     And I set the field "Enable" to "1"
     And I press "Save changes"
     Then I should see "Extension granted until:" in the "Student 1" "table_row"
@@ -96,7 +95,7 @@ Feature: Grant an extension to an offline student
       | activity | course | name                 | intro                       | assignsubmission_onlinetext_enabled | assignsubmission_file_enabled | allowsubmissionsfromdate | duedate          |
       | assign   | C1     | Test assignment name | Test assignment description | 0                                   | 0                             | ## 2034-01-01 ##         | ## 2034-01-02 ## |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    When I follow "View all submissions"
+    When I navigate to "Submissions" in current page administration
     And I open the action menu in "Student 1" "table_row"
     And I follow "Grant extension"
     And I should see "Student 1 (student1@example.com)"
@@ -116,10 +115,10 @@ Feature: Grant an extension to an offline student
       | activity | course | name                 | intro                       | assignsubmission_onlinetext_enabled | assignsubmission_file_enabled | allowsubmissionsfromdate | duedate          |
       | assign   | C1     | Test assignment name | Test assignment description | 0                                   | 0                             | ## 2034-01-01 ##         | ## 2034-01-02 ## |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    When I follow "View all submissions"
+    When I navigate to "Submissions" in current page administration
     And I set the field "selectall" to "1"
-    And I set the field "operation" to "Grant extension"
-    And I click on "Go" "button" confirming the dialogue
+    And I click on "Extend" "button" in the "sticky-footer" "region"
+    And I click on "Extend" "button" in the "Grant extension" "dialogue"
     And I should see "Student 1 (student1@example.com)"
     And I should see "Student 2 (student2@example.com)"
     And I should see "Student 3 (student3@example.com)"

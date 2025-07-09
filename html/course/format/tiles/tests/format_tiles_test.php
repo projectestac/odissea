@@ -233,42 +233,42 @@ final class format_tiles_test extends \advanced_testcase {
 
     /**
      * Test video embed URL replacement
-     * @covers \format_tiles\output\course_output::check_modify_embedded_url
+     * @covers \format_tiles\local\video_cm::check_modify_embedded_url
      */
     public function test_video_urls(): void {
         $this->resetAfterTest();
         $this->assertEquals(
             'https://www.youtube.com/embed/abcdefghijk',
-            \format_tiles\output\course_output::check_modify_embedded_url('https://www.youtube.com/watch?v=abcdefghijk')
+            \format_tiles\local\video_cm::check_modify_embedded_url('https://www.youtube.com/watch?v=abcdefghijk')
         );
 
         $this->assertEquals(
             'https://www.youtube.com/embed/abcdefghijk',
-            \format_tiles\output\course_output::check_modify_embedded_url('https://youtu.be/abcdefghijk')
+            \format_tiles\local\video_cm::check_modify_embedded_url('https://youtu.be/abcdefghijk')
         );
 
         $this->assertEquals(
             'https://www.youtube.com/embed/abcdefghijk',
-            \format_tiles\output\course_output::check_modify_embedded_url('https://www.youtube.com/shorts/abcdefghijk')
+            \format_tiles\local\video_cm::check_modify_embedded_url('https://www.youtube.com/shorts/abcdefghijk')
         );
 
         $this->assertEquals(
             'https://player.vimeo.com/video/347119375',
-            \format_tiles\output\course_output::check_modify_embedded_url('https://vimeo.com/347119375')
+            \format_tiles\local\video_cm::check_modify_embedded_url('https://vimeo.com/347119375')
         );
 
         $this->assertTrue(
-            \format_tiles\output\course_output::is_video_url('https://www.youtube.com/embed/abcdefghijk?t=123')
+            \format_tiles\local\video_cm::is_video_url('https://www.youtube.com/embed/abcdefghijk?t=123')
         );
 
         $this->assertTrue(
-            \format_tiles\output\course_output::is_video_url(
+            \format_tiles\local\video_cm::is_video_url(
                 'https://www.youtube.com/shorts/abcdefghijk?t=4&feature=share'
             )
         );
 
         $this->assertTrue(
-            \format_tiles\output\course_output::is_video_url(
+            \format_tiles\local\video_cm::is_video_url(
                 'https://www.youtube.com/shorts/abcdefghijk?t=4&feature=share'
             )
         );
@@ -276,13 +276,13 @@ final class format_tiles_test extends \advanced_testcase {
         // If the URL contains a param that we're unsure how to handle, we don't modify (i.e. return null).
         $this->assertEquals(
             null,
-            \format_tiles\output\course_output::check_modify_embedded_url(
+            \format_tiles\local\video_cm::check_modify_embedded_url(
                 'https://www.youtube.com/shorts/abcdefghijk?t=4&feature=share'
             )
         );
 
         $this->assertTrue(
-            \format_tiles\output\course_output::is_video_url(
+            \format_tiles\local\video_cm::is_video_url(
                 'https://youtu.be/abcdefghijk?t=49'
             )
         );
@@ -290,7 +290,7 @@ final class format_tiles_test extends \advanced_testcase {
         // If the URL contains a param that we're unsure how to handle, we don't modify (i.e. return null).
         $this->assertEquals(
             null,
-            \format_tiles\output\course_output::check_modify_embedded_url(
+            \format_tiles\local\video_cm::check_modify_embedded_url(
                 'https://youtu.be/abcdefghijk?t=49'
             )
         );

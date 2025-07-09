@@ -26,9 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a';
+$string['download'] = 'Baixa';
 $string['export'] = 'Exporta';
 $string['grade'] = 'Qualificació';
+$string['horizontal'] = 'Horitzontal';
 $string['import'] = 'Importa';
+$string['multidownload'] = 'Baixa';
 $string['multiexport'] = 'Exporta';
 $string['optionaldescription'] = 'Descripció breu (opcional)';
 $string['search:activity'] = 'Datalynx: instàncies';

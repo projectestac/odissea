@@ -28,4 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['add'] = 'Afegeix';
 $string['appearance'] = 'Aparença';
 $string['edit'] = 'Edita';
+$string['image'] = 'Imatge';
 $string['itemdetail'] = 'Detalls';
+$string['itemimage'] = 'Imatge';
+$string['none'] = 'Cap';

@@ -19,6 +19,8 @@
  * @module    core_grades/searchwidget/initials
  * @copyright 2022 Mathew May <mathew.solutions>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @deprecated since Moodle 4.5 - please use core_course/actionbar/initials instead.
+ * @todo       Final deprecation in Moodle 6.0. See MDL-82421.
  */
 
 import Pending from 'core/pending';

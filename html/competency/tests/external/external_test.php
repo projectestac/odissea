@@ -24,10 +24,10 @@
 
 namespace core_competency\external;
 
+use core\invalid_persistent_exception;
 use core_competency\api;
 use core_competency\course_competency_settings;
 use core_competency\external;
-use core_competency\invalid_persistent_exception;
 use core_competency\plan;
 use core_competency\plan_competency;
 use core_competency\related_competency;
@@ -105,6 +105,7 @@ final class external_test extends externallib_advanced_testcase {
      */
     protected function setUp(): void {
         global $DB, $CFG;
+        parent::setUp();
 
         $this->resetAfterTest(true);
 
@@ -620,7 +621,7 @@ final class external_test extends externallib_advanced_testcase {
         try {
             $result = $this->update_competency_framework($f2->get('id'), 4, true);
             $this->fail('The scale cannot be changed once used.');
-        } catch (\core\invalid_persistent_exception $e) {
+        } catch (invalid_persistent_exception $e) {
             $this->assertMatchesRegularExpression('/scaleid/', $e->getMessage());
         }
     }

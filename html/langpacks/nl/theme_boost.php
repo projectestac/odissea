@@ -43,7 +43,7 @@ $string['pluginname'] = 'Boost';
 $string['preset'] = 'Thema standaardinstellingen';
 $string['preset_desc'] = 'Kies een standaardinstelling  om het uiterlijk van het thema in grote lijnen te veranderen.';
 $string['presetfiles'] = 'Extra thema instellingsbestanden';
-$string['presetfiles_desc'] = 'Preset-bestanden kunnen worden gebruikt om het uiterlijk van het thema drastisch te veranderen.  Zie <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> voor informatie over het maken en delen van uw eigen preset-bestanden, en zie de <a href="https://moodle.net/search?q=boost+presets">Presets repository</a> voor presets die anderen hebben gedeeld.';
+$string['presetfiles_desc'] = 'Preset-bestanden kunnen worden gebruikt om het uiterlijk van het thema drastisch te veranderen.';
 $string['privacy:drawerblockclosed'] = 'De huidige voorkeur voor het blokkenpaneel is gesloten.';
 $string['privacy:drawerblockopen'] = 'De huidige voorkeur voor het blokkenpaneel is open.';
 $string['privacy:drawerindexclosed'] = 'De huidige voorkeur voor de inhoudsopgave is gesloten.';

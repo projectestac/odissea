@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['download'] = 'Baixa';
 $string['export'] = 'Descarrega les dades com a';

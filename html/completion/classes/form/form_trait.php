@@ -93,7 +93,7 @@ trait form_trait {
      * @throws \coding_exception If the form is not moodleform_mod and $modname is null.
      */
     protected function add_completion_elements(
-        string $modname = null,
+        ?string $modname = null,
         bool $supportviews = false,
         bool $supportgrades = false,
         bool $rating = false,
@@ -238,7 +238,7 @@ trait form_trait {
         $component = "mod_{$modname}";
         $itemnames = component_gradeitems::get_itemname_mapping_for_component($component);
 
-        $indentation = ['parentclass' => 'ml-2'];
+        $indentation = ['parentclass' => 'ms-2'];
         $receiveagradeel = 'receiveagrade' . $suffix;
         $completionusegradeel = 'completionusegrade' . $suffix;
         $completionpassgradeel = 'completionpassgrade' . $suffix;

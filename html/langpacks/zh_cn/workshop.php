@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitydate:assessmentsclose'] = '评估结束：';
-$string['activitydate:assessmentsclosed'] = '评估结束：';
-$string['activitydate:assessmentsopen'] = '公开评估：';
-$string['activitydate:assessmentsopened'] = '公开评估：';
-$string['activitydate:submissionsclose'] = '截止报名日期：';
-$string['activitydate:submissionsclosed'] = '截止的意见书：';
-$string['activitydate:submissionsopen'] = '公开意见书：';
-$string['activitydate:submissionsopened'] = '公开的意见书：';
+$string['activitydate:assessmentsclose'] = '评分结束：';
+$string['activitydate:assessmentsclosed'] = '评分结束：';
+$string['activitydate:assessmentsopen'] = '开始评分：';
+$string['activitydate:assessmentsopened'] = '开始评分：';
+$string['activitydate:submissionsclose'] = '提交截止日期：';
+$string['activitydate:submissionsclosed'] = '提交截止日期：';
+$string['activitydate:submissionsopen'] = '开始提交日期：';
+$string['activitydate:submissionsopened'] = '开始提交日期：';
 $string['aggregategrades'] = '重新计算成绩';
 $string['aggregation'] = '成绩汇总';
 $string['allocate'] = '分配提交';
@@ -210,10 +210,10 @@ $string['latesubmissions_desc'] = '允许在截止日期后提交';
 $string['latesubmissions_help'] = '如果启用，作者可以在提交截止日期之后或在评价阶段提交他们的作品。但迟交的作品不能编辑。';
 $string['latesubmissionsallowed'] = '允许迟交';
 $string['maxbytes'] = '最大提交附件大小';
-$string['modulename'] = '互动评价';
+$string['modulename'] = '互评';
 $string['modulename_help'] = '互动评价活动模块可以收集、评价和对学生的工作进行同学间互评。学生可以提交任何数字内容(文件)，如文字处理文档或电子表格，还可以使用文本编辑器直接在字段中输入文本。提交的作品将使用教师定义的多标准评价表单进行评价。同学间互评和理解评价表单的过程，可由教师提供范例，连同参考评价一起预先练习。学生们有机会评价他们的一个或多个同学的提交。如果需要，提交和评价人可以是匿名的。学生在一次互动评价活动中获得两个成绩——提交的成绩和对同学提交评价的成绩。两个成绩都记录在成绩单上。';
 $string['modulename_link'] = 'mod/workshop/view';
-$string['modulenameplural'] = '互动评价';
+$string['modulenameplural'] = '互评';
 $string['myassessments'] = '我的评价';
 $string['mysubmission'] = '我的提交';
 $string['nattachments'] = '提交附件的最大数量';

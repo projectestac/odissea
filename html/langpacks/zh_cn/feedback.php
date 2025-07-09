@@ -115,7 +115,7 @@ $string['emailteachermail'] = '{$a->username}已经填写反馈：“{$a->feedba
 
 {$a->url}';
 $string['emailteachermailhtml'] = '<p>{$a->username} 已完成反馈 \'<i>{$a->feedback}\'</i>。</p>
-<p>它在网站上<a href=“{$a->url}”>可用</a>。</p>';
+<p>它在网站上<a href="{$a->url}">可用</a>。</p>';
 $string['entries_saved'] = '您的回答已被保存。谢谢。';
 $string['eventresponsedeleted'] = '删除响应';
 $string['eventresponsesubmitted'] = '提交的答复';

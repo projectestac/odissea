@@ -1395,10 +1395,10 @@ $string['newaccount'] = 'Νέος λογαριασμός';
 $string['newactivityname'] = 'Νέο όνομα για την δραστηριότητα {$a}';
 $string['newcourse'] = 'Νέο μάθημα';
 $string['newloginnotificationbodyfull'] = '<p>Γεια σας {$a->userfullname},</p>
-<p>Μόλις έγινε σύνδεση από μία νέα συσκευή στον λογαριασμό σας στο {$a->sitename}</p>
+<p>Μόλις έγινε σύνδεση από μία νέα συσκευή στον λογαριασμό σας στο {$a->sitename}.</p>
 <ul>
 <li>Ο λογαριασμός σας: {$a->username} {$a->useremail}</li>
-<li>{$a->χρόνος σύνδεσης}</li>
+<li>{$a->logintime}</li>
 <li>Συσκευή: {$a->logindevice}</li>
 <li>IP: {$a->loginip}</li>
 </ul>

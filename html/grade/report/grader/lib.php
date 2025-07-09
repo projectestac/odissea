@@ -102,7 +102,11 @@ class grade_report_grader extends grade_report {
      */
     public $canviewhidden;
 
-    /** @var int Maximum number of students that can be shown on one page */
+    /**
+     * @var int Maximum number of students that can be shown on one page
+     * @deprecated Since Moodle 4.5 MDL-84245. Use grade_report_grader::get_max_students_per_page() instead.
+     */
+    #[\core\attribute\deprecated('grade_report_grader::get_max_students_per_page()', since: '4.5', mdl: 'MDL-84245')]
     public const MAX_STUDENTS_PER_PAGE = 5000;
 
     /**
@@ -687,7 +691,7 @@ class grade_report_grader extends grade_report {
         // The browser's scrollbar may partly cover (in certain operative systems) the content in the student header
         // when horizontally scrolling through the table contents (most noticeable when in RTL mode).
         // Therefore, add slight padding on the left or right when using RTL mode.
-        $studentheader->attributes['class'] = "header pl-3";
+        $studentheader->attributes['class'] = "header ps-3";
         $studentheader->scope = 'col';
         $studentheader->header = true;
         $studentheader->id = 'studentheader';
@@ -762,7 +766,7 @@ class grade_report_grader extends grade_report {
             // The browser's scrollbar may partly cover (in certain operative systems) the content in the user cells
             // when horizontally scrolling through the table contents (most noticeable when in RTL mode).
             // Therefore, add slight padding on the left or right when using RTL mode.
-            $usercell->attributes['class'] .= ' pl-3';
+            $usercell->attributes['class'] .= ' ps-3';
             $usercell->text .= $this->gtree->get_cell_action_menu(['userid' => $userid], 'user', $this->gpr);
 
             $userrow->cells[] = $usercell;

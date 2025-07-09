@@ -1002,6 +1002,22 @@ EOF;
     }
 
     /**
+     * Whether to show the preuploaded presentation on the activity page.
+     *
+     * @return bool
+     */
+    public function should_show_presentation(): bool {
+        // Users with the correct capability should always be able to see presentation file.
+        if (has_capability('mod/bigbluebuttonbn:seepresentation', $this->get_context())) {
+            return true;
+        }
+        if (get_config('mod_bigbluebuttonbn', 'showpresentation_editable')) {
+            return (bool) $this->get_instance_var('showpresentation');
+        }
+        return (bool) get_config('mod_bigbluebuttonbn', 'showpresentation_default');
+    }
+
+    /**
      * Whether the current time is before the scheduled start time.
      *
      * @return bool
@@ -1134,7 +1150,8 @@ EOF;
         return new moodle_url('/mod/bigbluebuttonbn/bbb_view.php', [
             'action' => 'logout',
             'id' => $this->get_cm()->id,
-            'courseid' => $this->get_cm()->course // Used to find the course if ever the activity is deleted
+            'courseid' => $this->get_cm()->course, // Used to find the course if ever the activity is deleted
+            'sesskey' => sesskey(),
             // while the meeting is running.
         ]);
     }
@@ -1173,6 +1190,7 @@ EOF;
             'action' => 'join',
             'id' => $this->get_cm()->id,
             'bn' => $this->instancedata->id,
+            'sesskey' => sesskey(),
         ]);
     }
 

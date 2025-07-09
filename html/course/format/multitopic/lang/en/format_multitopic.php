@@ -77,6 +77,8 @@ $string['perioddurationoverride_help'] = 'The duration of this topic.
  Set to "No time" for, e.g., assignments that students are to complete while working on other topics.
  (Not applicable to pages.)';
 
+$string['plugin_description'] = 'Topics are displayed in tabbed pages,
+ with multiple collapsible topics available on each page.';
 $string['pluginname'] = 'Multitopic format';
 $string['privacy:metadata'] = 'The Multitopic format plugin does not store any personal data.';
 $string['section0name'] = 'General';

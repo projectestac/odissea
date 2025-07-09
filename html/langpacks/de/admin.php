@@ -405,7 +405,7 @@ $string['configsecureforms'] = 'Moodle kann eine erhöhte Sicherheitsstufe für 
 In einigen wenigen Fällen kann das Probleme verursachen, wenn der Nutzer eine Firewall benutzt (z.B. Zonealarm), die so konfiguriert ist, dass der HTTP_REFERER nicht mitgesendet wird.
 Das Ergebnis ist, dass Sie bei einem Formular nicht weiterkommen.
 Sofern Nutzer/innen z.B. Probleme mit der Zugangsseite haben, sollten Sie diese Einstellung deaktivieren - allerdings ist Ihre Seite so offener für Brute-Force-Attacken. Im Zweifelsfall belassen Sie es bei \'Ja\'.';
-$string['configservicespage'] = 'Geben Sie die URL einer Service- und Support-Seite ein oder lassen Sie sie leer, um auf Moodle-Services auf moodle.com zu verlinken. Dieser Link wird ausschließlich für Administrator/innen angezeigt.';
+$string['configservicespage'] = 'Geben Sie die URL einer Dienste- und Support-Seite ein oder lassen Sie sie leer, um auf Moodle-Services auf moodle.com zu verlinken. Dieser Link wird ausschließlich für Administrator/innen angezeigt.';
 $string['configsessioncookie'] = 'Diese Einstellung beeinflusst die Namen der Cookies, die für Moodle-Zugriffe benutzt werden. Dieser Eintrag ist sinnvoll, um die Überlagerung der Cookies zu verhindern, wenn mehrere Moodle-Systeme auf der gleichen Website installiert sind.';
 $string['configsessioncookiedomain'] = 'Diese Einstellung erlaubt es Ihnen, die Domain zu verändern, von der Moodle-Cookies benutzbar sind. Dies ist nützlich für Moodle-Anpassungen (z.B. Plugins zur Authentifikation oder zum Einschreiben), die Informationen bezüglich der Moodle-Session mit Programmen auf einer anderen Subdomain teilen müssen.<br /><strong>ACHTUNG: Es wird dringend empfohlen, diese Einstellung leer zu lassen und nicht zu verändern - ein falscher Wert könnte dazu führen, dass alle Logins auf diese Website zurückgewiesen werden!! </strong>';
 $string['configsessioncookiepath'] = 'Es könnte notwendig sein, ein Ziel für die Rücksendung von Moodle-Cookies anzugeben. Dafür können Sie hier ein Unterverzeichnis Ihrer Website definieren. Andernfalls sollte die Grundeinstellung \'/\' ausreichend sein.';
@@ -675,6 +675,7 @@ $string['enroladminnewcourse_help'] = 'Wenn Administrator/innen neue Kurse anleg
 $string['enrolinstancedefaults'] = 'Standardeinstellungen zur Einschreibung';
 $string['enrolinstancedefaults_desc'] = 'Standardeinstellungen zur Einschreibung in neue Kurse';
 $string['enrolmultipleusers'] = 'Nutzer/innen einschreiben';
+$string['ensureauroraversion'] = 'Ihre Website läuft auf der Amazon Aurora-Datenbank. Stellen Sie sicher, dass die MySQL-Version in Amazon Aurora mit der Moodle-Version kompatibel ist, die Sie installieren oder auf die Sie aktualisieren. Sie können die Kompatibilität in den <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Datenbank-Engine-Updates für Amazon Aurora MySQL Version 3</a> überprüfen.';
 $string['entitytasklog'] = 'Task-Logdaten';
 $string['environment'] = 'Serverumgebung';
 $string['environmenterrortodo'] = 'Sie müssen zunächst alle Probleme mit der Serverumgebung beheben, bevor Sie mit der Installation von Moodle fortfahren können.';
@@ -1185,8 +1186,7 @@ $string['proxyport'] = 'Proxy-Port';
 $string['proxytype'] = 'Proxy-Typ';
 $string['proxyuser'] = 'Proxy-Anmeldename';
 $string['purgecaches'] = 'Alle Caches löschen';
-$string['purgecachesconfirm'] = '<p>Zur Leistungsoptimierung werden JavaScripts, Designs, Sprachdateien, gefilterte Texte, RSS Feeds und viele andere Daten in einem Cache zwischengespeichert. </p>
-<p>Wenn Sie den Cache löschen, müssen alle zwischengespeicherten Daten erneuert und im Browser neu geladen werden. Auf diese Weise sehen Sie anschließend die wirklich aktuellen Werte und Darstellungen. Beim Löschen der Caches gehen keine Daten verloren, aber die Website wird anfangs wahrscheinlich langsamer reagieren.</p>';
+$string['purgecachesconfirm'] = 'Moodle kann Designs, JavaScript, Sprachstrings, gefilterten Text, RSS-Feeds und andere berechnete Daten zwischenspeichern. Durch das Leeren des Caches werden Daten vom Server gelöscht und Browser zum erneuten Abrufen gezwungen. So können Sie sicher sein, dass Ihnen die Werte des aktuellen Codes angezeigt werden. Das Leeren des Caches ist ungefährlich, Ihre Website kann jedoch vorübergehend langsamer erscheinen, bis Server und Clients neue Informationen berechnet und zwischengespeichert haben.';
 $string['purgecachesfinished'] = 'Caches wurden gelöscht.';
 $string['purgecachesnoneselected'] = 'Einen oder mehr Caches zum Löschen auswählen';
 $string['purgecachespage'] = 'Caches löschen';
@@ -1341,6 +1341,7 @@ $string['settingmaxinputvars'] = 'Die PHP-Einstellung max_input_vars sollte mind
 $string['settingmaxinputvarsrequired'] = 'Die PHP-Einstellung max_input_vars muss mindestens 5000 sein.';
 $string['settingmemorylimit'] = 'Unzureichende Speicherzuweisung - bitte setzen Sie eine höhere Speichergrenze memory_limit in den PHP-Einstellungen.';
 $string['settingsafemode'] = 'Moodle ist nicht vollständig kompatibel mit dem Safe Mode. Bitten Sie Ihre/n Server-Administrator/in, diesen Modus auszuschalten. Rechnen Sie mit verschiedenen Problemen, falls Sie Moodle mit eingeschaltetem Safe Mode installieren.';
+$string['settingzendexceptionignoreargs'] = 'Aus Sicherheitsgründen wird dringend empfohlen, die PHP-Einstellung zend.exception_ignore_args zu aktivieren.';
 $string['setupsearchengine'] = 'Einstellungen für die Suchmaschine';
 $string['showcommentscount'] = 'Kommentarzähler anzeigen';
 $string['showdetails'] = 'Details anzeigen';
@@ -1573,6 +1574,7 @@ $string['unsupportedphpversion80'] = 'PHP 8.0 (und höher) wird nicht unterstüt
 $string['unsupportedphpversion81'] = 'PHP 8.1 (und höher) wird nicht unterstützt.';
 $string['unsupportedphpversion82'] = 'PHP Version 8.2 und höher werden nicht unterstützt';
 $string['unsupportedphpversion83'] = 'PHP 8.3 und höher werden nicht unterstützt';
+$string['unsupportedphpversion84'] = 'PHP Version 8.4 und höher werden nicht unterstützt.';
 $string['unsuspenduser'] = 'Nutzerkonto aktivieren';
 $string['updateaccounts'] = 'Bestehende Nutzerkonten aktualisieren';
 $string['updateautocheck'] = 'Automatisch auf Aktualisierungen prüfen';

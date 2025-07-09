@@ -22,6 +22,7 @@ use section_info;
 use core_courseformat\stateupdates;
 use core_courseformat\output\local\content\section\controlmenu;
 use core_courseformat\base as course_format;
+use stdClass;
 
 /**
  * Section delegate base class.
@@ -58,7 +59,11 @@ abstract class sectiondelegate {
         if ($classname === null) {
             return null;
         }
-        return new $classname($sectioninfo);
+        $instance = new $classname($sectioninfo);
+        if (!$instance->is_enabled()) {
+            return null;
+        }
+        return $instance;
     }
 
     /**
@@ -81,6 +86,16 @@ abstract class sectiondelegate {
      */
     public static function has_delegate_class(string $pluginname): bool {
         return self::get_delegate_class_name($pluginname) !== null;
+    }
+
+    /**
+     * Check if the delegate is enabled.
+     *
+     * Usually this happens when the delegate plugin is disabled.
+     * @return bool
+     */
+    public function is_enabled(): bool {
+        return true;
     }
 
     /**
@@ -123,5 +138,28 @@ abstract class sectiondelegate {
         renderer_base $output,
     ): ?action_menu {
         return $controlmenu->get_default_action_menu($output);
+    }
+
+    /**
+     * Get the parent section of the current delegated section if any.
+     *
+     * @return section_info|null
+     */
+    public function get_parent_section(): ?section_info {
+        return null;
+    }
+
+    /**
+     * Handler executed when a section has been updated.
+     *
+     * This method uses a record instead of a section_info object because
+     * section updates can be done in batch and the course_info may not be yet updated.
+     *
+     * This method does not need to recalculate the section_info object.
+     *
+     * @param stdClass $sectionrecord the new section data
+     */
+    public function section_updated(stdClass $sectionrecord): void {
+        // By default, do nothing.
     }
 }

@@ -1104,6 +1104,16 @@ global $CFG;
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
+    'format_tiles/videocmids' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 30,
+      'component' => 'format_tiles',
+      'area' => 'videocmids',
+    ),
     'repository_googledocs/folder' => 
     array (
       'mode' => 1,
@@ -1238,6 +1248,59 @@ global $CFG;
       'area' => 'stepdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+    ),
+    'theme_boost_union/flavours' => 
+    array (
+      'mode' => 2,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'invalidationevents' => 
+      array (
+        0 => 'theme_boost_union_flavours_resorted',
+        1 => 'theme_boost_union_flavours_created',
+        2 => 'theme_boost_union_flavours_edited',
+        3 => 'theme_boost_union_flavours_deleted',
+        4 => 'theme_boost_union_cohort_deleted',
+      ),
+      'component' => 'theme_boost_union',
+      'area' => 'flavours',
+    ),
+    'theme_boost_union/touchiconsios' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'theme_boost_union',
+      'area' => 'touchiconsios',
+    ),
+    'theme_boost_union/smartmenus' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'overrideclass' => '\\theme_boost_union\\cache\\loader',
+      'component' => 'theme_boost_union',
+      'area' => 'smartmenus',
+    ),
+    'theme_boost_union/smartmenu_items' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'overrideclass' => '\\theme_boost_union\\cache\\loader',
+      'component' => 'theme_boost_union',
+      'area' => 'smartmenu_items',
+    ),
+    'theme_boost_union/hookoverrides' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'canuselocalstore' => true,
+      'staticacceleration' => false,
+      'component' => 'theme_boost_union',
+      'area' => 'hookoverrides',
     ),
     'quizaccess_seb/quizsettings' => 
     array (

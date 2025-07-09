@@ -30,3 +30,4 @@ $string['attendance'] = 'Assistència';
 $string['audio'] = 'Àudio';
 $string['grade'] = 'Qualificació';
 $string['overallprogress'] = 'Progrés general';
+$string['selectcolor'] = 'Selecciona el color';

@@ -14,80 +14,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Module to assist with creation and management of content.
+ * TODO describe module content
  *
  * @module     editor_tiny/content
- * @copyright  Andrew Lyons <andrew@nicols.co.uk>
+ * @copyright  2025 Andrew Lyons <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-// MathML valid elements retrieved from https://developer.mozilla.org/en-US/docs/Web/MathML/Element.
-const mathmlContent = [
-    'math',
-    'maction',
-    'annotation',
-    'annotation-xml',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mi',
-    'mmultiscripts',
-    'mn',
-    'mo',
-    'mover',
-    'mpadded',
-    'mphantom',
-    'mprescripts',
-    'mroot',
-    'mrow',
-    'ms',
-    'semantics',
-    'mspace',
-    'msqrt',
-    'mstyle',
-    'msub',
-    'msup',
-    'msubsup',
-    'mtable',
-    'mtd',
-    'mtext',
-    'mtr',
-    'munder',
-    'munderover',
-    'math',
-    'mi',
-    'mn',
-    'mo',
-    'ms',
-    'mspace',
-    'mtext',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mpadded',
-    'mphantom',
-    'mroot',
-    'mrow',
-    'msqrt',
-    'mstyle',
-    'mmultiscripts',
-    'mover',
-    'mprescripts',
-    'msub',
-    'msubsup',
-    'msup',
-    'munder',
-    'munderover',
-    'mtable',
-    'mtd',
-    'mtr',
-    'maction',
-    'annotation',
-    'annotation-xml',
-    'semantics',
-];
 
 /**
  * Add MathML support to the editor.
@@ -107,8 +39,21 @@ export const addMathMLSupport = (editor) => {
 
 
     editor.on('PreInit', () => {
-        editor.schema.addCustomElements(mathmlContent.join(','));
-        editor.schema.addCustomElements('~tiny-math-span,tiny-math-block');
+        editor.schema.addCustomElements({
+            // Add support for MathML by defining some tiny-math blocks which extends SPAN/DIV.
+            // Note: This is blind support and does not check the child content.
+            // Any invalid markup will be accepted.
+            // Note: We use the same names as the Tiny Premium Math plugin to avoid conflicts if both are enabled.
+            math: {
+                'extends': 'div',
+            },
+            'tiny-math-span': {
+                'extends': "span",
+            },
+            'tiny-math-block': {
+                'extends': "div",
+            },
+        });
 
         // Add a Parser filter to wrap math nodes in a tiny-math-[block|span] element.
         editor.parser.addNodeFilter('math', (nodes) => nodes.forEach((node) => {
@@ -148,7 +93,17 @@ export const addMathMLSupport = (editor) => {
  */
 export const addSVGSupport = (editor) => {
     editor.on('PreInit', () => {
-        editor.schema.addCustomElements('svg,tiny-svg-block');
+        editor.schema.addCustomElements({
+            // Add support for SVG by defining an SVG tag which extends DIV.
+            // Note: This is blind support and does not check the child content.
+            // Any invalid markup will be accepted.
+            svg: {
+                'extends': "div",
+            },
+            'tiny-svg-block': {
+                'extends': "div",
+            },
+        });
 
         editor.parser.addNodeFilter('svg', (nodes) => nodes.forEach((node) => {
             node.wrap(editor.editorManager.html.Node.create('tiny-svg-block', {

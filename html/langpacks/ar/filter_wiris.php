@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessproviderenabled'] = 'التحكم في الوصول';
 $string['accessproviderenabled_help'] = 'عند تمكينه، سيقتصر الوصول إلى خدمات MathType على المستخدمين المصرح لهم.';
 $string['alloweditorpluginactive'] = 'المحرر نشط دائمًا';
+$string['alloweditorpluginactive_help'] = 'سكون المحرر مُمَكَّنًا بغض النظر عن كون المرشح MathType معطلاً على مستوى المساق أو النشاط. إفتراضيًا، إذا كان المرشح MathType معطلاً في المساق/النشاط، يكون MathType معطلاً أيضًا على مستوى المساق/النشاط.';
 $string['area'] = 'المنطقة';
 $string['arenotinstalled'] = 'غير منصبة.';
 $string['atto'] = 'Atto';

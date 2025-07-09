@@ -850,16 +850,21 @@ final class userlib_test extends \advanced_testcase {
         accesslib_clear_all_caches_for_unit_testing();
 
         // Get student details as a user with super system capabilities.
+        $this->setAdminUser();
         $result = user_get_user_details($student, $course1);
         $this->assertEquals($student->id, $result['id']);
         $this->assertEquals($studentfullname, $result['fullname']);
+        $this->assertEquals($student->firstname, $result['firstname']);
+        $this->assertEquals($student->lastname, $result['lastname']);
         $this->assertEquals($course1->id, $result['enrolledcourses'][0]['id']);
 
-        $this->setUser($teacher);
         // Get student details as a user who can only see this user in a course.
+        $this->setUser($teacher);
         $result = user_get_user_details($student, $course1);
         $this->assertEquals($student->id, $result['id']);
         $this->assertEquals($studentfullname, $result['fullname']);
+        $this->assertEquals($student->firstname, $result['firstname']);
+        $this->assertEquals($student->lastname, $result['lastname']);
         $this->assertEquals($course1->id, $result['enrolledcourses'][0]['id']);
 
         // Get student details with required fields.
@@ -867,6 +872,23 @@ final class userlib_test extends \advanced_testcase {
         $this->assertCount(2, $result);
         $this->assertEquals($student->id, $result['id']);
         $this->assertEquals($studentfullname, $result['fullname']);
+        $this->assertArrayNotHasKey('firstname', $result);
+        $this->assertArrayNotHasKey('lastname', $result);
+        $this->assertArrayNotHasKey('enrolledcourses', $result);
+
+        // Change fullname display format for a user with viewfullnames capability.
+        set_config('fullnamedisplay', 'firstname');
+        $result = user_get_user_details($student, $course1);
+        $this->assertEquals($studentfullname, $result['fullname']);
+        $this->assertEquals($student->firstname, $result['firstname']);
+        $this->assertEquals($student->lastname, $result['lastname']);
+
+        // Now check for a user without viewfullnames capability.
+        $this->setUser($student);
+        $result = user_get_user_details($teacher, $course1);
+        $this->assertEquals($teacher->firstname, $result['fullname']);
+        $this->assertEquals($teacher->firstname, $result['firstname']);
+        $this->assertArrayNotHasKey('lastname', $result);
 
         // Get exception for invalid required fields.
         $this->expectException('moodle_exception');
@@ -1047,5 +1069,40 @@ final class userlib_test extends \advanced_testcase {
         $this->assertCount(3, $result);
         $this->assertCount(1, $result['groups']);
         $this->assertEquals($group2->id, $result['groups'][0]['id']);
+    }
+
+    /**
+     * Verifies that the get_name_placeholders function correctly generates
+     * an array of name placeholders for a given user object.
+     *
+     * @covers ::get_name_placeholders()
+     */
+    public function test_get_name_placeholders(): void {
+        $this->resetAfterTest();
+
+        // Set format for fullname and alternativefullname.
+        set_config('fullnamedisplay', 'firstname, lastname');
+        set_config('alternativefullnameformat', 'firstnamephonetic lastnamephonetic');
+
+        // Create the target user.
+        $user = $this->getDataGenerator()->create_user([
+                'firstname' => 'FN',
+                'lastname' => 'LN',
+                'firstnamephonetic' => 'FNP',
+                'lastnamephonetic' => 'LNP',
+                'middlename' => 'MN',
+                'alternatename' => 'AN',
+                ]);
+
+        // Add user name fields to $a as an object based on $user.
+        $a = new \stdClass();
+        $placeholders = \core_user::get_name_placeholders($user);
+        foreach ($placeholders as $field => $value) {
+            $a->{$field} = $value;
+        }
+        $this->assertEquals("Hello $a->firstname", "Hello FN");
+        $this->assertEquals("Bonjour $a->fullname", "Bonjour FN, LN");
+        $this->assertEquals("Privyet $a->alternativefullname", "Privyet FNP LNP");
+        $this->assertEquals("Hola $a->alternatename '$a->middlename' $a->lastname", "Hola AN 'MN' LN");
     }
 }

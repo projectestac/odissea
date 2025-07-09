@@ -139,7 +139,7 @@ function uninstall_plugin($type, $name) {
     $subplugintypes = core_component::get_plugin_types_with_subplugins();
     if (isset($subplugintypes[$type])) {
         $base = core_component::get_plugin_directory($type, $name);
-        $subplugins = core_component::get_subplugins("{$type}_{$name}");
+        $subplugins = \core\component::get_subplugins("{$type}_{$name}");
 
         if (!empty($subplugins)) {
             foreach (array_keys($subplugins) as $subplugintype) {
@@ -8708,7 +8708,7 @@ class admin_setting_managecontentbankcontenttypes extends admin_setting {
  *      pagelayout - This option can be used to set a specific pagelyaout, admin is default.
  *      nosearch - Do not display search bar
  */
-function admin_externalpage_setup($section, $extrabutton = '', array $extraurlparams = null, $actualurl = '', array $options = array()) {
+function admin_externalpage_setup($section, $extrabutton = '', ?array $extraurlparams = null, $actualurl = '', array $options = array()) {
     global $CFG, $PAGE, $USER, $SITE, $OUTPUT;
 
     $PAGE->set_context(null); // hack - set context to something, by default to system context
@@ -10441,7 +10441,7 @@ class admin_setting_configcolourpicker extends admin_setting {
      * @param string $defaultsetting
      * @param array $previewconfig Array('selector'=>'.some .css .selector','style'=>'backgroundColor');
      */
-    public function __construct($name, $visiblename, $description, $defaultsetting, array $previewconfig = null,
+    public function __construct($name, $visiblename, $description, $defaultsetting, ?array $previewconfig = null,
             $usedefaultwhenempty = true) {
         $this->previewconfig = $previewconfig;
         $this->usedefaultwhenempty = $usedefaultwhenempty;
@@ -10608,7 +10608,7 @@ class admin_setting_configstoredfile extends admin_setting {
      * @param int $itemid itemid for file storage
      * @param array $options file area options
      */
-    public function __construct($name, $visiblename, $description, $filearea, $itemid = 0, array $options = null) {
+    public function __construct($name, $visiblename, $description, $filearea, $itemid = 0, ?array $options = null) {
         parent::__construct($name, $visiblename, $description, '');
         $this->filearea = $filearea;
         $this->itemid   = $itemid;
@@ -11800,11 +11800,65 @@ class admin_setting_check extends admin_setting {
         $output = $OUTPUT->notification($loadingicon . $loadingstr, \core\output\notification::NOTIFY_INFO, false);
 
         // Add the action link.
-        $output .= $OUTPUT->render($this->check->get_action_link());
+        if ($actionlink = $this->check->get_action_link()) {
+            $output .= $OUTPUT->render($actionlink);
+        }
 
         // Wrap in a div with a reference. The JS getAndRender will replace this with the response from the webservice.
         $statusdiv = \html_writer::div($output, '', ['data-check-reference' => $domref]);
 
         return format_admin_setting($this, $this->visiblename, '', $statusdiv);
+    }
+}
+
+
+/**
+ * Show the save changes button.
+ */
+class admin_setting_savebutton extends admin_setting {
+    /**
+     * Constructor.
+     *
+     * @param string $name unique ascii name.
+     * @param string $visiblename localised name.
+     * @param string $description localised long description.
+     * @param mixed $defaultsetting string or array depending on implementation.
+     */
+    public function __construct(string $name, string $visiblename = "", string $description = "", $defaultsetting = "") {
+        $this->nosave = true;
+        parent::__construct($name, $visiblename, $description, $defaultsetting);
+    }
+
+    /**
+     * Always returns true, does nothing.
+     *
+     * @return bool Always return true.
+     */
+    public function get_setting(): bool {
+        return true;
+    }
+
+    /**
+     * Always returns '', does not write anything.
+     *
+     * @param mixed $data string or array, must not be NULL.
+     * @return string Always returns ''.
+     */
+    public function write_setting($data): string {
+        return '';
+    }
+
+    /**
+     * Return part of form with setting.
+     *
+     * This function should always be overwritten.
+     *
+     * @param mixed $data array or string depending on setting.
+     * @param string $query
+     * @return string
+     */
+    public function output_html($data, $query = ''): string {
+        global $OUTPUT;
+        return $OUTPUT->render_from_template('core_admin/setting_savebutton', []);
     }
 }

@@ -55,6 +55,8 @@ class external_api extends \core_external\external_api {
             'submissionnotopen' => 'This assignment is not open for submissions',
             'timelimitnotenabled' => 'Time limit is not enabled for assignment.',
             'opensubmissionexists' => 'Open assignment submission already exists.',
+            'couldnotremovesubmission' => 'Could not remove the submission for this user',
+            'submissionnotfoundtoremove' => 'There is no submission to remove',
         ];
 
         $message = $warningmessages[$warningcode];
@@ -102,7 +104,7 @@ class external_api extends \core_external\external_api {
      * @param int $attemptnumber Attempt number. Use -1 for last attempt.
      * @return bool|\stdClass
      */
-    protected static function get_user_or_group_submission(\assign $assignment, int $userid = null,
+    protected static function get_user_or_group_submission(\assign $assignment, ?int $userid = null,
             int $groupid = 0, bool $create = false, int $attemptnumber = -1) {
         if ($assignment->get_instance($userid)->teamsubmission) {
             $submission = $assignment->get_group_submission($userid, $groupid, $create, $attemptnumber);

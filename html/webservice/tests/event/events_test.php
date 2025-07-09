@@ -36,6 +36,7 @@ namespace core_webservice\event;
 final class events_test extends \advanced_testcase {
 
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
     }
 

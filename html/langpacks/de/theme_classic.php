@@ -33,7 +33,7 @@ $string['pluginname'] = 'Classic';
 $string['preset'] = 'Voreingestellte Preset-Datei';
 $string['preset_desc'] = 'Wählen Sie eine Preset-Datei, um das Aussehen des Designs zu ändern.';
 $string['presetfiles'] = 'Zusätzliche Preset-Dateien';
-$string['presetfiles_desc'] = 'Vorlagendateien können verwendet werden, um das Aussehen des Designs \'Boost\' grundlegend zu verändern. Infos zum Erstellen und Freigeben von eigenen Vorlagendateien finden Sie unter <a href="https://docs.moodle.org/dev/Boost_Presets"> Boost Presets </a>. Schauen Sie auch in das <a href="https://moodle.net/search?q=boost+presets"> Presets Repository </a>, um Vorlagendateien zu finden, die andere freigegeben haben.';
+$string['presetfiles_desc'] = 'Mithilfe von Vorlagendateien lässt sich das Erscheinungsbild eines Designs grundlegend verändern.';
 $string['privacy:metadata'] = 'Das Design Classic speichert keine personenbezogenen Daten.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';

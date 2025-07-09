@@ -25,16 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cloze:viewplugin'] = 'Helper to edit cloze questions';
+$string['cloze:use'] = 'Use cloze questions editor in TinyMCE';
 $string['customgrade'] = 'Custom';
 $string['err_custom_rate'] = 'Invalid value for custom percent rate.';
 $string['err_empty_answer'] = 'Empty answer.';
 $string['err_none_correct'] = 'No correct answer found.';
 $string['err_not_numeric'] = 'Value must be numeric.';
-$string['helplinktext'] = 'Cloze question editor';
 $string['insert'] = 'Insert question';
 $string['multichoice'] = 'Multiple choice - single response';
 $string['multiresponse'] = 'Multiple choice - multiple response';
 $string['pluginname'] = 'Cloze question editor';
 $string['privacy:metadata'] = 'Cloze Editor does not store any personal data';
 $string['select'] = 'Select question type';
+
+// Deprecated since Moodle 4.5.
+$string['helplinktext'] = 'Cloze question editor';
+
+// Deprecated since Tiny cloze editor 1.12.
+$string['cloze:viewplugin'] = 'Helper to edit cloze questions';
+

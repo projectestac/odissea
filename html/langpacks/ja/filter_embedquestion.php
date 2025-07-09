@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptoptions'] = '受験オプション';
 $string['authorizedsecrets'] = '公開秘密鍵';
-$string['authorizedsecrets_desc'] = 'インポート済み埋め込み問題が正しく動作するよう、ここに他のサーバの秘密鍵を一行ごとに追加してください。<br/><br/>このサーバの秘密鍵は次のとおりです: <code>{$a}</code>';
+$string['authorizedsecrets_desc'] = 'インポート済み埋め込み問題が正しく動作するようここに他のサーバの秘密鍵を一行ごとに追加してください。<br/><br/>このサーバの秘密鍵は次のとおりです: <code>{$a}</code>';
 $string['chooserandomly'] = 'このカテゴリから埋め込み可能な問題をランダムに選択する';
 $string['corruptattempt'] = 'あなたが前回ここで受験した問題は動作しなくなりました。あなたが続行をクリックした場合、その問題は削除されて新しい問題が作成されます。';
 $string['corruptattemptwithreason'] = 'あなたが前回ここで受験した問題は動作しなくなりました。({$a}) あなたが続行をクリックした場合、その問題は削除されて新しい問題が作成されます。';

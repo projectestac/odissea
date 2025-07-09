@@ -1739,7 +1739,7 @@ final class enrollib_test extends advanced_testcase {
     /**
      * Test the behaviour of validate_enrol_plugin_data().
      *
-     * @covers ::validate_enrol_plugin_data
+     * @covers \enrol_plugin::validate_enrol_plugin_data
      */
     public function test_validate_enrol_plugin_data(): void {
         $this->resetAfterTest();
@@ -1761,7 +1761,7 @@ final class enrollib_test extends advanced_testcase {
     /**
      * Test the behaviour of update_enrol_plugin_data().
      *
-     * @covers ::update_enrol_plugin_data
+     * @covers \enrol_plugin::update_enrol_plugin_data
      */
     public function test_update_enrol_plugin_data(): void {
         global $DB;
@@ -1826,5 +1826,46 @@ final class enrollib_test extends advanced_testcase {
         $expectedinstance->enrolenddate = $expectedinstance->enrolstartdate + $expectedinstance->enrolperiod;
         $modifiedinstance = $manualplugin->update_enrol_plugin_data($course->id, $enrolmentdata, $instance);
         $this->assertEquals($expectedinstance, $modifiedinstance);
+    }
+
+    /**
+     * Test case for checking the email greetings in various user notification emails.
+     *
+     * @covers \enrol_plugin::send_course_welcome_message_to_user
+     */
+    public function test_email_greetings(): void {
+        global $DB;
+        $this->resetAfterTest();
+
+        // Create course.
+        $course = $this->getDataGenerator()->create_course([
+            'fullname' => 'Course 1',
+            'shortname' => 'C1',
+        ]);
+        // Create user.
+        $student = $this->getDataGenerator()->create_user();
+        // Get manual plugin.
+        $manualplugin = enrol_get_plugin('manual');
+        $maninstance = $DB->get_record(
+            'enrol',
+            ['courseid' => $course->id, 'enrol' => 'manual'],
+            '*',
+            MUST_EXIST,
+        );
+
+        $messagesink = $this->redirectMessages();
+        $manualplugin->send_course_welcome_message_to_user(
+            instance: $maninstance,
+            userid: $student->id,
+            sendoption: ENROL_SEND_EMAIL_FROM_NOREPLY,
+            message: '',
+        );
+        $messages = $messagesink->get_messages_by_component_and_type(
+            'moodle',
+            'enrolcoursewelcomemessage',
+        );
+        $this->assertNotEmpty($messages);
+        $message = reset($messages);
+        $this->assertStringContainsString('Hi ' . $student->firstname, quoted_printable_decode($message->fullmessage));
     }
 }

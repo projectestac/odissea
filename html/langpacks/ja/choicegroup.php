@@ -59,6 +59,7 @@ $string['choicegroupfull'] = 'このグループは満員で空はありませ�
 $string['choicegroupname'] = 'グループ選択名';
 $string['choicegroupopen'] = '開始';
 $string['choicegroupoptions'] = '選択オプション';
+$string['choicegroupoptions_description'] = '参加者が利用可能なグループオプションを定義する';
 $string['choicegroupoptions_help'] = 'ここで参加者が選択できるグループを指定してください。
 
 左側のリストには利用可能なすべてのグループおよびグルーピングが表示されます。1つまたは複数のグループを追加するにはリストから選択して「追加」をクリックしてください。グルーピングからすべてのグループを追加するにはグルーピングを選択して「追加」をクリックしてください。
@@ -74,6 +75,8 @@ $string['collapse_all_groupings'] = 'すべてのグルーピングを折りた�
 $string['completiondetail:submit'] = 'グループを選択する';
 $string['completionsubmit'] = 'ユーザが選択した時点で完了と表示する';
 $string['createdate'] = 'グループ作成日';
+$string['defaultgroupdescriptionstate'] = 'デフォルトのグループ説明表示';
+$string['defaultgroupdescriptionstate_desc'] = 'グループの説明をデフォルトで表示するか、しないか。';
 $string['defaultsettings'] = 'デフォルト設定';
 $string['del'] = '選択解除';
 $string['del_group'] = 'グループを選択解除する';
@@ -93,7 +96,7 @@ $string['expand_all_groupings'] = 'すべてのグルーピングを展開する
 $string['expired'] = '申し訳ございません、この活動は {$a} で終了したため利用できなくなりました。';
 $string['fillinatleastoneoption'] = '少なくとも1つの可能性のある回答を提供する必要があります。';
 $string['fillinatleasttwooptions'] = '少なくとも2つの可能性のある回答を提供する必要があります。';
-$string['full'] = '(フル)';
+$string['full'] = '(満員)';
 $string['generallimitation'] = '一般制限';
 $string['groupdoesntexist'] = '指定されたグループの中にはこのコース内に存在しないものもあります。教師は必要なグループを作成するか、またはこの活動を修正する必要があります。';
 $string['groupmembers'] = 'グループメンバ';

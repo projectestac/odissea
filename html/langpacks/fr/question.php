@@ -196,7 +196,7 @@ $string['exportcategory_help'] = 'Ce réglage détermine la catégorie dont il f
 
 Certains formats (par exemple GIFT et Moodle XML) permettent l’inclusion de la catégorie et du contexte dans le fichier d’exportation, donnant ainsi la possibilité de la recréer au cours de l’importation. Le cas échéant, les cases adéquates devront être cochées.';
 $string['exporterror'] = 'Des erreurs sont survenues lors de l’exportation !';
-$string['exportfilename'] = 'quiz';
+$string['exportfilename'] = 'questions';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportonequestion'] = 'Télécharger cette question en format Moodle XML';
 $string['exportquestions'] = 'Exporter des questions vers un fichier';

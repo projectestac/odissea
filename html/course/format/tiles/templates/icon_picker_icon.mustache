@@ -39,8 +39,6 @@
         "displayname": "Puzzle Piece"
     }
 }}
-<button class="pickericondiv tile-icon pickericon" id="pickericon-{{filename}}" title="{{displayname}}" data-icon="{{filename}}" data-dismiss="modal"
-     {{#displayname}}data-toggle="tooltip" data-placement="right" data-original-title="{{displayname}}"{{/displayname}}
-     data-imagetype="tileicon">
-        {{#pix}}tileicon/{{filename}}, format_tiles{{/pix}}
+<button class="pickericondiv tile-icon pickericon" id="pickericon-{{filename}}" title="{{displayname}}" data-icon="{{filename}}" data-dismiss="modal" data-imagetype="tileicon">
+        {{#pix}}tileicon/{{filename}}, format_tiles, {{displayname}}{{/pix}}
 </button>

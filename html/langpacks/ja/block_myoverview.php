@@ -92,7 +92,7 @@ $string['summary'] = '概要';
 $string['title'] = 'コース名';
 $string['viewquickstart'] = 'クイックスタートガイドを表示する';
 $string['zero_default_intro'] = 'あなたがコースに登録した場合、ここに表示されるようになります。';
-$string['zero_default_title'] = 'あなたはどのコースにも登録していません。';
+$string['zero_default_title'] = 'あなたはどのコースにも登録されていません。';
 $string['zero_nocourses_intro'] = '始めるにあたって支援が必要ですか? <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleドキュメンテーション</a>を確認するか、私たちのクイックスタートガイドで最初の一歩を踏み出してください。';
 $string['zero_nocourses_title'] = 'あなたの最初のコースを作成する';
 $string['zero_request_intro'] = '始めるにあたって支援が必要ですか? <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleドキュメンテーション</a>を確認するか、私たちの<a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">クイックスタートガイド</a>で最初の一歩を踏み出してください。';

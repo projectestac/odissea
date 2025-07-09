@@ -283,6 +283,7 @@ class meeting {
         $presentation = $instance->get_presentation(); // This is for internal use.
         if (!empty($presentation)) {
             $meetinginfo->presentations[] = $presentation;
+            $meetinginfo->showpresentations = $instance->should_show_presentation();
         }
         $meetinginfo->attendees = [];
         if (!empty($info['attendees'])) {
@@ -496,6 +497,9 @@ class meeting {
         $meta['internalmeetingid'] = $data->{'internal_meeting_id'};
         $meta['callback'] = 'meeting_events';
         $meta['meetingid'] = $data->{'meeting_id'};
+        // Remove attendees from data to avoid duplicating callback logs; they are stored as summary logs.
+        $meta['data'] = clone $data->{'data'};
+        unset($meta['data']->{'attendees'});
 
         $eventcount = logger::log_event_callback($instance, $overrides, $meta);
         if ($eventcount === 1) {

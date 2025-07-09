@@ -30,6 +30,7 @@ $string['action_hide'] = 'Amaga';
 $string['action_show'] = 'Mostra';
 $string['blockname'] = 'Accions massives';
 $string['blocktitle'] = 'Accions massives';
+$string['newsection'] = 'Secció nova';
 $string['pluginname'] = 'Bloc d\'acció massiva';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['withselected'] = 'Amb el que s\'ha seleccionat';

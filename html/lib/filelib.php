@@ -405,7 +405,7 @@ function file_get_unused_draft_itemid() {
  * @param string $text some html content that needs to have embedded links rewritten to point to the draft area.
  * @return string|null returns string if $text was passed in, the rewritten $text is returned. Otherwise NULL.
  */
-function file_prepare_draft_area(&$draftitemid, $contextid, $component, $filearea, $itemid, array $options=null, $text=null) {
+function file_prepare_draft_area(&$draftitemid, $contextid, $component, $filearea, $itemid, ?array $options=null, $text=null) {
     global $CFG, $USER;
 
     $options = (array)$options;
@@ -489,7 +489,7 @@ function file_prepare_draft_area(&$draftitemid, $contextid, $component, $fileare
  *          mixed   $options.includetoken Use a token for authentication. True for current user, int value for other user id.
  *          string  The processed text.
  */
-function file_rewrite_pluginfile_urls($text, $file, $contextid, $component, $filearea, $itemid, array $options=null) {
+function file_rewrite_pluginfile_urls($text, $file, $contextid, $component, $filearea, $itemid, ?array $options=null) {
     global $CFG, $USER;
 
     $options = (array)$options;
@@ -1104,7 +1104,7 @@ function file_copy_file_to_file_area($file, $filename, $itemid) {
  * @param bool $forcehttps force https urls.
  * @return string|null if $text was passed in, the rewritten $text is returned. Otherwise NULL.
  */
-function file_save_draft_area_files($draftitemid, $contextid, $component, $filearea, $itemid, array $options=null, $text=null, $forcehttps=false) {
+function file_save_draft_area_files($draftitemid, $contextid, $component, $filearea, $itemid, ?array $options=null, $text=null, $forcehttps=false) {
     global $USER;
 
     // Do not merge files, leave it as it was.
@@ -1311,6 +1311,19 @@ function file_save_draft_area_files($draftitemid, $contextid, $component, $filea
     } else {
         return file_rewrite_urls_to_pluginfile($text, $draftitemid, $forcehttps);
     }
+}
+
+/**
+ * Clear a draft area.
+ *
+ * @param int $draftitemid Id of the draft area to clear.
+ * @return boolean success
+ */
+function file_clear_draft_area(int $draftitemid): bool {
+    global $USER;
+    $fs = get_file_storage();
+    $usercontext = context_user::instance($USER->id);
+    return $fs->delete_area_files($usercontext->id, 'user', 'draft', $draftitemid);
 }
 
 /**
@@ -2596,8 +2609,8 @@ function send_file($path, $filename, $lifetime = null , $filter=0, $pathisstring
             header('Cache-Control: private, max-age=10, no-transform');
             header('Expires: '. gmdate('D, d M Y H:i:s', 0) .' GMT');
             header('Pragma: ');
-        } else { //normal http - prevent caching at all cost
-            header('Cache-Control: private, must-revalidate, pre-check=0, post-check=0, max-age=0, no-transform');
+        } else { // Normal http - prevent caching at all cost.
+            header('Cache-Control: private, must-revalidate, pre-check=0, post-check=0, max-age=0, no-transform', 'no-store');
             header('Expires: '. gmdate('D, d M Y H:i:s', 0) .' GMT');
             header('Pragma: no-cache');
         }
@@ -2616,7 +2629,8 @@ function send_file($path, $filename, $lifetime = null , $filter=0, $pathisstring
         if ($mimetype == 'text/html' || $mimetype == 'application/xhtml+xml' || file_is_svg_image_from_mimetype($mimetype)) {
             $options = new stdClass();
             $options->noclean = true;
-            $options->nocache = true; // temporary workaround for MDL-5136
+            $options->context = context_course::instance($COURSE->id);
+
             if (is_object($path)) {
                 $text = $path->get_content();
             } else if ($pathisstring) {
@@ -2624,15 +2638,16 @@ function send_file($path, $filename, $lifetime = null , $filter=0, $pathisstring
             } else {
                 $text = implode('', file($path));
             }
-            $output = format_text($text, FORMAT_HTML, $options, $COURSE->id);
 
+            $output = format_text($text, FORMAT_HTML, $options);
             readstring_accel($output, $mimetype);
-
         } else if (($mimetype == 'text/plain') and ($filter == 1)) {
             // only filter text if filter all files is selected
             $options = new stdClass();
             $options->newlines = false;
             $options->noclean = true;
+            $options->context = context_course::instance($COURSE->id);
+
             if (is_object($path)) {
                 $text = htmlentities($path->get_content(), ENT_QUOTES, 'UTF-8');
             } else if ($pathisstring) {
@@ -2640,10 +2655,9 @@ function send_file($path, $filename, $lifetime = null , $filter=0, $pathisstring
             } else {
                 $text = htmlentities(implode('', file($path)), ENT_QUOTES, 'UTF-8');
             }
-            $output = '<pre>'. format_text($text, FORMAT_MOODLE, $options, $COURSE->id) .'</pre>';
 
+            $output = '<pre>'. format_text($text, FORMAT_MOODLE, $options) .'</pre>';
             readstring_accel($output, $mimetype);
-
         } else {
             // send the contents
             if ($pathisstring) {
@@ -2971,7 +2985,7 @@ function file_overwrite_existing_draftfile(stored_file $newfile, stored_file $ex
  * @since Moodle 3.2
  */
 function file_merge_files_from_draft_area_into_filearea($draftitemid, $contextid, $component, $filearea, $itemid,
-                                                        array $options = null) {
+                                                        ?array $options = null) {
     // We use 0 here so file_prepare_draft_area creates a new one, finaldraftid will be updated with the new draft id.
     $finaldraftid = 0;
     file_prepare_draft_area($finaldraftid, $contextid, $component, $filearea, $itemid, $options);
@@ -3155,6 +3169,8 @@ class curl {
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
+    /** @var array $curlresolveinfo Resolve addresses for the URL that have passed cuRL security checks, in a CURLOPT_RESOLVE compatible format. */
+    private $curlresolveinfo = [];
     /** @var array temporary params value if the value is not belongs to class stored_file. */
     public $_tmp_file_post_params = [];
 
@@ -3752,6 +3768,9 @@ class curl {
             return $this->error;
         }
 
+        // Set allowed resolve info if the URL is not blocked.
+        $this->curlresolveinfo = $this->securityhelper->get_resolve_info();
+
         return null;
     }
 
@@ -3787,6 +3806,10 @@ class curl {
 
         // Set the URL as a curl option.
         $this->setopt(array('CURLOPT_URL' => $url));
+
+        // Force cURL to only resolve the URL from IP/port combinations that were validated by the security helper.
+        // This prevents re-fetching DNS data on subsequent requests, which could return un-validated hosts/ports.
+        $this->setopt(['CURLOPT_RESOLVE' => $this->curlresolveinfo]);
 
         // Create curl instance.
         $curl = curl_init();
@@ -3898,6 +3921,10 @@ class curl {
                 }
 
                 curl_setopt($curl, CURLOPT_URL, $redirecturl);
+
+                // Force cURL to only resolve the URL from IP/port combinations that were validated by the security helper.
+                // This prevents re-fetching DNS data on subsequent requests, which could return un-validated hosts/ports.
+                $this->setopt(['CURLOPT_RESOLVE' => $this->curlresolveinfo]);
 
                 // If CURLOPT_UNRESTRICTED_AUTH is empty/false, don't send credentials to other hosts.
                 // Ref: https://curl.se/libcurl/c/CURLOPT_UNRESTRICTED_AUTH.html.
@@ -4747,8 +4774,7 @@ function file_pluginfile($relativepath, $forcedownload, $preview = null, $offlin
                 $filename = 'f1';
             }
 
-            if ((!empty($CFG->forcelogin) and !isloggedin()) ||
-                    (!empty($CFG->forceloginforprofileimage) && (!isloggedin() || isguestuser()))) {
+            if (!\core\output\user_picture::allow_view($context->instanceid)) {
                 // protect images if login required and not logged in;
                 // also if login is required for profile images and is not logged in or guest
                 // do not use require_login() because it is expensive and not suitable here anyway

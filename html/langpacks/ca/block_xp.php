@@ -65,6 +65,7 @@ $string['pluginname'] = 'Puja de nivell!';
 $string['progress'] = 'Progrés';
 $string['recentrewards'] = 'Recompenses recents';
 $string['rule'] = 'Regla';
+$string['rulecm'] = 'Activitat o recurs';
 $string['ruleset:all'] = 'TOTES les condicions són certes';
 $string['ruleset:any'] = 'QUALSEVOL de les condicions és certa';
 $string['ruleset:none'] = 'CAP de les condicions és certa';

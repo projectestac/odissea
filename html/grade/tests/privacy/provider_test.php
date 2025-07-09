@@ -50,6 +50,7 @@ final class provider_test extends provider_testcase {
 
     public function setUp(): void {
         global $PAGE;
+        parent::setUp();
         $this->resetAfterTest();
         $PAGE->get_renderer('core');
     }

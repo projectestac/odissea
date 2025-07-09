@@ -1428,7 +1428,7 @@ abstract class moodleform {
      * @param array $strings strings for javascript
      * @deprecated since Moodle 3.3 MDL-57471
      */
-    function init_javascript_enhancement($element, $enhancement, array $options=array(), array $strings=null) {
+    function init_javascript_enhancement($element, $enhancement, array $options=array(), ?array $strings=null) {
         debugging('$mform->init_javascript_enhancement() is deprecated and no longer does anything. '.
             'smartselect uses should be converted to the searchableselector form element.', DEBUG_DEVELOPER);
     }
@@ -3373,7 +3373,8 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
         $group->updateAttributes($attributes);
         $advanced = isset($this->_advancedElements[$group->getName()]);
 
-        $html = $OUTPUT->mform_element($group, $required, $advanced, $error, false);
+        $isinstickyfooter = $group->getName() && ($this->_stickyfooterelement == $group->getName());
+        $html = $OUTPUT->mform_element($group, $required, $advanced, $error, $isinstickyfooter);
         $fromtemplate = !empty($html);
         if (!$fromtemplate) {
             if (method_exists($group, 'getElementTemplateType')) {
@@ -3408,7 +3409,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
         }
         $this->_templates[$group->getName()] = $html;
         // Check if the element should be displayed in the sticky footer.
-        if ($group->getName() && ($this->_stickyfooterelement == $group->getName())) {
+        if ($isinstickyfooter) {
             $stickyfooter = new core\output\sticky_footer($html);
             $html = $OUTPUT->render($stickyfooter);
         }

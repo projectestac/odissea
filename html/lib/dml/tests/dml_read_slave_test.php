@@ -41,7 +41,6 @@ require_once(__DIR__.'/../../tests/fixtures/event_fixtures.php');
  * @covers     \moodle_read_slave_trait
  */
 final class dml_read_slave_test extends \base_testcase {
-
     /** @var float */
     static private $dbreadonlylatency = 0.8;
 
@@ -291,8 +290,6 @@ final class dml_read_slave_test extends \base_testcase {
      * so the latency parameter is applied properly.
      *
      * @return void
-     * @covers ::can_use_readonly
-     * @covers ::commit_delegated_transaction
      */
     public function test_transaction(): void {
         $DB = $this->new_db(true);
@@ -339,8 +336,6 @@ final class dml_read_slave_test extends \base_testcase {
      * so the latency parameter is applied properly.
      *
      * @return void
-     * @covers ::can_use_readonly
-     * @covers ::query_end
      */
     public function test_long_update(): void {
         $DB = $this->new_db(true);
@@ -382,8 +377,6 @@ final class dml_read_slave_test extends \base_testcase {
      * when the latency parameter is applied properly.
      *
      * @return void
-     * @covers ::can_use_readonly
-     * @covers ::commit_delegated_transaction
      */
     public function test_transaction_with_events(): void {
         $this->with_global_db(function () {

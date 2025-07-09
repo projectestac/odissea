@@ -200,6 +200,10 @@ class core_course_external extends external_api {
                 $sectionvalues = array();
                 $sectionvalues['id'] = $section->id;
                 $sectionvalues['name'] = get_section_name($course, $section);
+                // Temporary hack to be able to hide the subsections in certain app versions.
+                if (!empty($section->component) && \core_useragent::is_moodle_app()) {
+                    $sectionvalues['name'] = html_writer::span($sectionvalues['name'], 'course-' . $section->component);
+                }
                 $sectionvalues['visible'] = $section->visible;
 
                 $options = (object) array('noclean' => true);
@@ -212,6 +216,8 @@ class core_course_external extends external_api {
                 if (!empty($section->availableinfo)) {
                     $sectionvalues['availabilityinfo'] = \core_availability\info::format_info($section->availableinfo, $course);
                 }
+                $sectionvalues['component'] = $section->component;
+                $sectionvalues['itemid'] = $section->itemid;
 
                 $sectioncontents = array();
 
@@ -447,6 +453,10 @@ class core_course_external extends external_api {
                                                                 VALUE_OPTIONAL),
                     'uservisible' => new external_value(PARAM_BOOL, 'Is the section visible for the user?', VALUE_OPTIONAL),
                     'availabilityinfo' => new external_value(PARAM_RAW, 'Availability information.', VALUE_OPTIONAL),
+                    'component' => new external_value(PARAM_COMPONENT, 'The delegate component of this section if any.',
+                        VALUE_OPTIONAL),
+                    'itemid' => new external_value(PARAM_INT,
+                        'The optional item id delegate component can use to identify its instance.', VALUE_OPTIONAL),
                     'modules' => new external_multiple_structure(
                             new external_single_structure(
                                 array(
@@ -941,6 +951,8 @@ class core_course_external extends external_api {
         $params = self::validate_parameters(self::create_courses_parameters(),
                         array('courses' => $courses));
 
+        $courseconfig = get_config('moodlecourse');
+
         $availablethemes = core_component::get_plugin_list('theme');
         $availablelangs = get_string_manager()->get_list_of_translations();
 
@@ -967,6 +979,14 @@ class core_course_external extends external_api {
                 throw new moodle_exception('errorinvalidparam', 'webservice', '', 'shortname');
             }
 
+            // Make sure start/end date are correctly set.
+            if (!array_key_exists('startdate', $course)) {
+                $course['startdate'] = usergetmidnight(time());
+            }
+            if (!array_key_exists('enddate', $course) && $courseconfig->courseenddateenabled) {
+                $course['enddate'] = $course['startdate'] + $courseconfig->courseduration;
+            }
+
             // Make sure lang is valid
             if (array_key_exists('lang', $course)) {
                 if (empty($availablelangs[$course['lang']])) {
@@ -988,6 +1008,8 @@ class core_course_external extends external_api {
                 }
             }
 
+            $course['showactivitydates'] = $courseconfig->showactivitydates;
+
             //force visibility if ws user doesn't have the permission to set it
             $category = $DB->get_record('course_categories', array('id' => $course['categoryid']));
             if (!has_capability('moodle/course:visibility', $context)) {
@@ -995,7 +1017,6 @@ class core_course_external extends external_api {
             }
 
             //set default value for completion
-            $courseconfig = get_config('moodlecourse');
             if (completion_info::is_enabled_for_site()) {
                 if (!array_key_exists('enablecompletion', $course)) {
                     $course['enablecompletion'] = $courseconfig->enablecompletion;
@@ -3232,12 +3253,12 @@ class core_course_external extends external_api {
                     shortname: course short name
                     idnumber: course id number
                     category: category id the course belongs to
+                    sectionid: section id that belongs to a course
                 ', VALUE_DEFAULT, ''),
                 'value' => new external_value(PARAM_RAW, 'The value to match', VALUE_DEFAULT, '')
             )
         );
     }
-
 
     /**
      * Get courses matching a specific field (id/s, shortname, idnumber, category)
@@ -3267,6 +3288,7 @@ class core_course_external extends external_api {
             switch ($params['field']) {
                 case 'id':
                 case 'category':
+                case 'sectionid':
                     $value = clean_param($params['value'], PARAM_INT);
                     break;
                 case 'ids':
@@ -3297,6 +3319,9 @@ class core_course_external extends external_api {
                 // more efficiently.
                 list ($courses, $warnings) = util::validate_courses($courseids, [],
                         false, true);
+            } else if ($params['field'] === 'sectionid') {
+                $courseid = $DB->get_field('course_sections', 'course', ['id' => $value]);
+                $courses = $courseid ? [$DB->get_record('course', ['id' => $courseid])] : [];
             } else {
                 $courses = $DB->get_records('course', array($params['field'] => $value), 'id ASC');
             }
@@ -3922,10 +3947,10 @@ class core_course_external extends external_api {
         string $classification,
         int $limit = 0,
         int $offset = 0,
-        string $sort = null,
-        string $customfieldname = null,
-        string $customfieldvalue = null,
-        string $searchvalue = null,
+        ?string $sort = null,
+        ?string $customfieldname = null,
+        ?string $customfieldvalue = null,
+        ?string $searchvalue = null,
         array $requiredfields = []
     ) {
         global $CFG, $PAGE, $USER;
@@ -4227,7 +4252,7 @@ class core_course_external extends external_api {
      * @return array List of courses
      * @throws  invalid_parameter_exception
      */
-    public static function get_recent_courses(int $userid = 0, int $limit = 0, int $offset = 0, string $sort = null) {
+    public static function get_recent_courses(int $userid = 0, int $limit = 0, int $offset = 0, ?string $sort = null) {
         global $USER, $PAGE;
 
         if (empty($userid)) {
@@ -4252,7 +4277,7 @@ class core_course_external extends external_api {
 
         self::validate_context($usercontext);
 
-        if ($userid != $USER->id and !has_capability('moodle/user:viewdetails', $usercontext)) {
+        if ($userid != $USER->id && !has_capability('moodle/user:viewalldetails', $usercontext)) {
             return array();
         }
 
@@ -4302,21 +4327,27 @@ class core_course_external extends external_api {
      * @param int $groupid Group id from which the users will be obtained
      * @param bool $onlyactive Whether to return only the active enrolled users or all enrolled users in the course.
      * @return array List of users
-     * @throws invalid_parameter_exception
      */
     public static function get_enrolled_users_by_cmid(int $cmid, int $groupid = 0, bool $onlyactive = false) {
-    global $PAGE;
+        global $PAGE;
+
         $warnings = [];
 
-        self::validate_parameters(self::get_enrolled_users_by_cmid_parameters(), [
-                'cmid' => $cmid,
-                'groupid' => $groupid,
-                'onlyactive' => $onlyactive,
+        [
+            'cmid' => $cmid,
+            'groupid' => $groupid,
+            'onlyactive' => $onlyactive,
+        ] = self::validate_parameters(self::get_enrolled_users_by_cmid_parameters(), [
+            'cmid' => $cmid,
+            'groupid' => $groupid,
+            'onlyactive' => $onlyactive,
         ]);
 
         list($course, $cm) = get_course_and_cm_from_cmid($cmid);
         $coursecontext = context_course::instance($course->id);
         self::validate_context($coursecontext);
+
+        course_require_view_participants($coursecontext);
 
         $enrolledusers = get_enrolled_users($coursecontext, '', $groupid, 'u.*', null, 0, 0, $onlyactive);
 
@@ -4488,6 +4519,7 @@ class core_course_external extends external_api {
     public static function get_course_content_items_parameters() {
         return new external_function_parameters([
             'courseid' => new external_value(PARAM_INT, 'ID of the course', VALUE_REQUIRED),
+            'sectionnum' => new external_value(PARAM_INT, 'Number of the section', VALUE_DEFAULT),
         ]);
     }
 
@@ -4495,24 +4527,29 @@ class core_course_external extends external_api {
      * Given a course ID fetch all accessible modules for that course
      *
      * @param int $courseid The course we want to fetch the modules for
+     * @param int|null $sectionnum The section we want to fetch the modules for
      * @return array Contains array of modules and their metadata
      */
-    public static function get_course_content_items(int $courseid) {
+    public static function get_course_content_items(int $courseid, ?int $sectionnum = null) {
         global $USER;
 
         [
             'courseid' => $courseid,
+            'sectionnum' => $sectionnum,
         ] = self::validate_parameters(self::get_course_content_items_parameters(), [
             'courseid' => $courseid,
+            'sectionnum' => $sectionnum,
         ]);
 
         $coursecontext = context_course::instance($courseid);
         self::validate_context($coursecontext);
         $course = get_course($courseid);
+        // Get section_info object with all delegation information.
+        $sectioninfo = get_fast_modinfo($course)->get_section_info($sectionnum);
 
         $contentitemservice = \core_course\local\factory\content_item_service_factory::get_content_item_service();
 
-        $contentitems = $contentitemservice->get_content_items_for_user_in_course($USER, $course);
+        $contentitems = $contentitemservice->get_content_items_for_user_in_course($USER, $course, [], $sectioninfo);
         return ['content_items' => $contentitems];
     }
 
@@ -4596,9 +4633,17 @@ class core_course_external extends external_api {
         $coursecontext = context_course::instance($courseid);
         self::validate_context($coursecontext);
 
-        $activeplugin = get_config('core', 'activitychooseractivefooter');
+        // The active plugin must be set, and be present on the site.
+        $activeplugin = clean_param(
+            get_config('core', 'activitychooseractivefooter'),
+            PARAM_COMPONENT,
+        );
 
-        if ($activeplugin !== COURSE_CHOOSER_FOOTER_NONE) {
+        if (
+            $activeplugin !== COURSE_CHOOSER_FOOTER_NONE &&
+            !empty($activeplugin) &&
+            core_component::get_component_directory($activeplugin) !== null
+        ) {
             $footerdata = component_callback($activeplugin, 'custom_chooser_footer', [$courseid, $sectionid]);
             return [
                 'footer' => true,

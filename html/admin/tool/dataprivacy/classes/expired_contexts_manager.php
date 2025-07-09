@@ -55,7 +55,7 @@ class expired_contexts_manager {
      *
      * @param   \progress_trace $trace
      */
-    public function __construct(\progress_trace $trace = null) {
+    public function __construct(?\progress_trace $trace = null) {
         if (null === $trace) {
             $trace = new \null_progress_trace();
         }
@@ -123,6 +123,7 @@ class expired_contexts_manager {
             $expiredcontext = new expired_context(0, $orphan);
             $expiredcontext->delete();
         }
+        $orphaned->close();
 
         // Delete any child of a user context.
         $parentpath = $DB->sql_concat('ctxuser.path', "'/%'");
@@ -143,6 +144,7 @@ class expired_contexts_manager {
             $expiredcontext = new expired_context(0, $child);
             $expiredcontext->delete();
         }
+        $userchildren->close();
     }
 
     /**

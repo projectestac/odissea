@@ -31,6 +31,7 @@ final class external_settings_test extends \advanced_testcase {
      */
     public function tearDown(): void {
         external_settings::reset();
+        parent::tearDown();
     }
 
     /**

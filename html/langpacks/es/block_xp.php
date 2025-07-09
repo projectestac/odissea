@@ -34,12 +34,30 @@ $string['addarule'] = 'Añadir una regla';
 $string['addinstructions'] = 'Añadir más información';
 $string['additionalresources'] = 'Recursos adicionales';
 $string['addlevel'] = 'Añadir nivel';
+$string['addondeactivated'] = 'XP+ deshabilitado';
+$string['addondeactivatedinfo'] = 'Los plugins XP son incompatibles entre ellos, por lo que se ha deshabilitado XP+. Se espera la versión {$a->localxpversion} de Level Up XP+ (local_xp).';
 $string['addoninstallationerror'] = 'Hemos detectado un problema con el plugin (local_xp). No parece estar instalado correctamente. Un administrador debe finalizar su instalación.';
 $string['addonnotactivated'] = 'El plugin no está activado.';
 $string['addrulesformhelp'] = 'La última columna define la cantidad de puntos de experiencia  ganados cuando se cumple el criterio.';
 $string['admindefaultrulesintro'] = 'Las siguientes reglas serán usadas por defecto para los cursos en los que se añada el bloque.';
 $string['admindefaultsettingsintro'] = 'La configuración que aparece a continuación será usada por defecto cuando el bloque sea añadido por primera vez a un curso.';
 $string['admindefaultvisualsintro'] = 'Las siguientes imágenes serán usadas por defecto cuando el bloque sea añadido por primera vez a un curso.';
+$string['adminnoticeaddondeactivatedmessage'] = '¡Se ha deshabilitado Level Up XP+!
+
+Está recibiendo este aviso porque Level Up XP+ se ha deshabilitado para evitar posibles problemas. Los dos plugins Level Up (block_xp) y Level Up XP+ (local_xp) actualmente son incopatibles entre ellos. Esto sucede cuando XP se ha actualizado a una versión superior mientras que XP+ sigue sin actualizarse.
+
+Este desajuste puede llevar a pérdida de funcionalidad, errores y otras consecuencias inesperadas. Para resolver esto, debe actualizar Level Up XP+.
+
+- Level Up XP (block_xp) versión: {$a->blockxpversion}
+- Level Up XP+ (local_xp) versión: {$a->localxpversion}
+- Level Up XP+ versión esperada: {$a->localxpversionexpected}
+
+Recursos adicionales:
+
+- [Documentación de actualización](https://docs.levelup.plus/xp/docs/upgrade)
+- [Documentación de desactivación de XP+](https://docs.levelup.plus/xp/docs/addon-deactivated)
+- [Documentación de compatibilidad](https://docs.levelup.plus/xp/docs/requirements-compatibility)';
+$string['adminnoticeaddondeactivatedsubject'] = '¡Plugin XP+ deshabilitado!';
 $string['adminnoticeoutofsyncmessage'] = '¡Aviso de incompatibilidad de Level Up XP y Level Up XP+!
 
 Está recibiendo este aviso porque los dos plugins Level Up XP (block_xp) y Level Up XP+ (local_xp) actualmente están fuera de sincronización y son incompatibles el uno con el otro. Este problema ocurre cuando se ha actualizado XP a una nueva versión superior mientras que XP+ sigue sin actualizarse.
@@ -79,7 +97,9 @@ $string['basexp'] = 'Base del algoritmo';
 $string['blockappearance'] = 'Apariencia del bloque';
 $string['blockappearancemovedtopluginsettings'] = 'La configuración del aspecto del bloque se ha movido a la página de configuración del plugin.';
 $string['cachedef_filters'] = 'Filtros de nivel';
+$string['cachedef_metadata'] = 'Metadatos';
 $string['cachedef_ruleevent_eventslist'] = 'Lista de algunos eventos';
+$string['canjoinfromdatex'] = 'Usted podrá unirse desde {$a}.';
 $string['cannotbesetindefaults'] = 'Este no puede ajustarse en los valores por defecto.';
 $string['cannotearnpoints'] = 'No puede ganar puntos.';
 $string['cannotshowblockconfig'] = 'Normalmente mostraría la configuración de aspecto aquí, pero no puedo encontar su bloque. Para cambiar el aspecto del bloque, vuelva [aquí]({$a}) (o donde haya añadido el bloque), active edición y seleccione la opción "Configurar" en el desplegable del bloque. Si no puede encontrar el bloque, añádalo de nuevo a su curso.';
@@ -90,12 +110,14 @@ $string['changetocourse'] = 'Cambiar a curso';
 $string['changetositewide'] = 'Volver a todo el sitio';
 $string['cheatguard'] = 'Control de trampas';
 $string['cheatguardsettingsmovednotice'] = 'Los ajustes de trampas se han movido a [event rules page]({$a->url}).';
+$string['checkaddoncompatibility'] = 'Compatbilidad de extensión Level Up XP';
 $string['chooseacondition'] = 'Elegir una condición';
 $string['clearfilter'] = 'Limpiar filtro';
 $string['clicktoselectcm'] = 'Clicar para seleccionar una actividad o recurso';
 $string['cmselector'] = 'Selector de módulo de curso';
 $string['coefxp'] = 'Coeficiente del algoritmo';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['comparisonmethod'] = 'Método de comparación';
 $string['compatibilitycheck'] = 'Comprobación de compatibilidad';
 $string['completionrules'] = 'Reglas de finalización';
 $string['completionrules_help'] = 'Las reglas de finalización se separan en tres categorías: finalización de actividad, finalización de sección y finalización de curso. Añadir condiciones a las categorías determinará cuándo y cuántos puntos se consiguen.
@@ -195,6 +217,8 @@ $string['enablexpgain_help'] = 'Cuando se configura como NO, nadie podrá ganar 
 
 Por favor, tenga en cuenta que también puede controlarse con mayor precisión usando el permiso _block/xp:earnxp_.';
 $string['entersearchterm'] = 'Introducir un término de búsqueda';
+$string['envcheckaddonincompatibilitymessage'] = 'El plugin Level Up XP+ (local_xp) es incompatible con Level Up XP (block_xp). Esto hace que XP+ se deshabilite. Para evitar esto, por favor, actualice ambos plugins. Para más información, por favor, visite https://docs.levelup.plus/xp/docs/compatibility.';
+$string['erroraddondeactivated'] = 'Se ha deshabilitado Level Up XP+. Por favor, consulte la  [documentación]({$a->docsurl}) para más información.';
 $string['errorcontextcoursemismatchforwholesite'] = 'La URL de esta página <em>Level Up XP</em> no coincide con la configuración actual del plugin. Su configuración actual dice que <em>Level Up XP</em> se usa "Para todo el sitio". Sin embargo, esta página espera usarlo "Por curso". Por favor, <a href="{$a->nexturl}">clique aquí</a> para navegar a la página correcta. Busque el ajuste de administración "block_xp_context" si desea cambiar su configuración.';
 $string['errorcontextcoursemismatchpercourse'] = 'La URL de esta página <em>Level Up XP</em> no coincide con la configuración actual del plugin. Su configuración actual dice que <em>Level Up XP</em> se usa "Por curso". Sin embargo, esta página espera usarlo "Para todo el sitio".  Probablemente sea porque se añadió un <em>bloque</em> al tablero de la página principal cuando tenía otra configuración. Debe eliminar el bloque de las páginas anteriores y usarlo solamente en cursos individuales.';
 $string['errorformvalues'] = 'Hay algunos problemas en los valores del formato, por favor arréglelos.';
@@ -270,6 +294,12 @@ $string['installed'] = 'Instalado';
 $string['instructions'] = 'Instrucciones';
 $string['instructions_help'] = 'Las instrucciones se mostrarán en la página de información. Puede usarlas para compartir información e instrucciones sobre los niveles, cómo obtener puntos, etc.';
 $string['invalidxp'] = 'Valor de puntuación  inválida';
+$string['join'] = 'Unirse';
+$string['joinleadeboardconfirmnote'] = '¡Fantástico, estamos emocionados de tenerte de nuevo a bordo!
+
+Por favor, ten en cuenta que una vez que te unas hay un periodo de espera antes de poder salir de la tabla de ranking si cambias de opinión.';
+$string['joinleadeboardlockednote'] = 'No puedes unirte a la tabla de ranking.';
+$string['joinleaderboard'] = 'Unirse a la tabla de ranking';
 $string['keeplogs'] = 'Mantener registros';
 $string['ladder'] = 'Ranking';
 $string['ladder_help'] = 'El tablero ordena estudiantes basándose en su puntuación. Cuando se usa en un curso con grupos, puede crear un ranking para cada grupo de estudiantes.
@@ -288,8 +318,28 @@ $string['ladderiso_help'] = 'Cree tableros separados para distintos grupos de pe
 [Más información](https://docs.levelup.plus/xp/docs/leaderboard-isolation)';
 $string['ladderisocohorts'] = 'Usando cohortes';
 $string['ladderisodefault'] = 'Predeterminado (modo de grupo)';
+$string['ladderparticipation'] = 'Participación';
+$string['ladderparticipation_help'] = 'Define si se espera que los usuarios participen en la tabla de ranking, o si pueden unirse o salirse según su preferencia.
+
+- Automático, no opcional: Todos los usuarios se unen automáticamente a la tabla de ranking y no pueden abandonarla.
+- Automático, exclusión voluntaria disponible: Todos los usuarios se unen automáticamente a la tabla de rankign pero pueden optar por salirse de ella.
+- Opcional, al elegirlo: Todos los usuarios deben unirse expresamente a la tabla de ranking para participar en ella.
+
+Los usuarios pueden cambiar de opinión y salir o volver a unirse después de haber elegido lo uno o lo otro. Sin embargo, para evitar cambios no intencionados, los usuarios que se hayan unido no podán salirse durante 3 días.
+
+[Más información](https://docs.levelup.plus/xp/docs/leaderboard-opt-out)';
+$string['ladderparticipationforced'] = 'Automático, no opcional';
+$string['ladderparticipationoptin'] = 'Opcional, al elegirlo';
+$string['ladderparticipationoptout'] = 'Automático, exclusión voluntaria disponible';
+$string['ladderparticipationreset'] = 'Borrar los estados de participación grabados de todos.';
+$string['ladderparticipationreset_help'] = 'Cuando se selecciona, se borrará el estado de participación de todos los usuarios, y todos los usuarios tendrán que elegir si participan o no.';
 $string['laddersettingsmovednotice'] = 'Los ajustes de tablero se han movido a [leaderboard page]({$a->url}).';
 $string['learnmore'] = 'Aprender más';
+$string['leave'] = 'Salir';
+$string['leaveleadeboardconfirmnote'] = '¿Seguro que quieres abandonar la tabla de ranking?';
+$string['leaveleadeboardlockednote'] = 'Usted no puede abandonar la tabla de ranking';
+$string['leaveleadeboardlockeduntilnote'] = 'Usted no puede abandonar de la tabla de ranking hasta {$a}.';
+$string['leaveleaderboard'] = 'Salir de la tabla de ranking';
 $string['level'] = 'Nivel';
 $string['levelbadge'] = 'Insignia de nivel';
 $string['levelbadges'] = 'Insignias de nivel';
@@ -315,7 +365,7 @@ $string['levelup'] = '¡Subes de nivel!';
 $string['levelupoptionsunavailableforlevelone'] = 'Las opciones relacionadas con alcanzar el nivel no están disponibles para el primer nivel.';
 $string['levelupplus'] = '¡Sube de nivel XP+!';
 $string['levelx'] = 'Nivel #{$a}';
-$string['likenotice'] = '<strong>¿Le gusta el plugin?</strong> Por favor, dedique un momento a <a href="{$a->moodleorg}" target="_blank">añadirlo a sus favoritos</a> en Moodle.org and <a href="{$a->github}" target="_blank">darle una estrella en GitHub</a>.';
+$string['likenotice'] = '¿Le gusta Level Up XP? Por favor, tómese un momento para <a href="{$a->moodleorg}" target="_blank">añadirlo a sus plugins favoritos</a> en Moodle.org.';
 $string['limitparticipants'] = 'Limitar participantes';
 $string['limitparticipants_help'] = 'Este ajuste controla quién sale en el ranking. Los vecinos son los participantes que aparecen encima y debajo del usuario actual. Por ejemplo, cuando se muestra "Mostrando 2 vecinos", sólo se mostrarán los dos participantes con puntuación inmediatamente superior e inferior que el usuario actual.';
 $string['list'] = 'Lista';
@@ -350,6 +400,7 @@ $string['navreport'] = 'Reporte';
 $string['navrules'] = 'Reglas';
 $string['navsettings'] = 'Configuraciones';
 $string['navvisuals'] = 'Aspecto';
+$string['newversioninstallednotice'] = '¡Se ha instalado una nueva versión! Descubra qué hay nuevo en las  [notas de lanzamiento]({$a->releasenotesurl}).';
 $string['nextlevelin'] = 'próximo nivel en';
 $string['noconditionsyet'] = '¡Aún sin condiciones!';
 $string['noconditionsyetintro'] = 'Comience añadiendo una condición.';
@@ -361,8 +412,11 @@ $string['noneareavailable'] = 'Nada disponible.';
 $string['notecompatibilityissues'] = 'Por favor, tenga en cuenta los problemas de compatibilidad identificados a continuación:';
 $string['notesomesettingslocked'] = 'Algunos de los ajustes pueden no ser editables si un administrador los ha bloqueado.';
 $string['nothingmatchesfilter'] = 'Nada coincide con el filtro.';
+$string['notparticipating'] = 'Sin participación';
+$string['notranked'] = 'Sin raking';
 $string['numberoflevels'] = 'Número de niveles';
 $string['occasionally'] = 'Ocasionalmente';
+$string['onlyparticipantscanaccessranking'] = 'Sólo quienes participan en la tabla de ranking pueden acceder a los rankings.';
 $string['outofsync'] = 'Incompatibilidad de plugins XP';
 $string['outofsyncexcessive'] = 'Excesivamente fuera de sincronización';
 $string['outofsyncexcessiveinfo'] = 'XP+ es excesivamente más antiguo que XP y puede llevar a problemas inesperados. En el futuro, XP+ se desactivará automáticamente.';
@@ -372,7 +426,10 @@ $string['pagecurrentvisibletoviewers'] = 'Esta página actualmente está visible
 $string['pagesettings'] = 'Ajustes de página';
 $string['participant'] = 'Participante';
 $string['participants'] = 'Participantes';
+$string['participatesinleaderboard'] = 'Participa en la tabla de ranking.';
+$string['participatesnotinleaderboard'] = 'No participa en la tabla de ranking.';
 $string['participatetolevelup'] = '¡Participa en el curso para ganar puntos de experiencia y subir de nivel!';
+$string['participating'] = 'Participando.';
 $string['perpagecolon'] = 'Por página:';
 $string['pickaconditiontype'] = 'Elija un tipo de condición';
 $string['pluginavailabilityxpdesc'] = 'Este plugin permite a los instructores restringir el acceso a actividades según los niveles de los estudiantes.';
@@ -427,9 +484,13 @@ $string['property:component'] = 'Componente del evento';
 $string['property:crud'] = 'Evento CRUD';
 $string['property:eventname'] = 'Nombre del evento';
 $string['property:target'] = 'Meta del evento';
-$string['questreleasenotice'] = '🎉 Nos emociona anunciar **nuestro nuevo plugin de gamificación** llamado **Level Up Quest** 🥳. Convierta sus cursos en **aventuras emocionantes**, llenas de **estrategias de reenganche** y **festejos** 🤯! Mire la [web de Quest]({$a->questurl}) y nuestro [post de lanzamiento aquí]({$a->questblogurl}). 👈';
+$string['provisionstates'] = 'Disposición automática de usuario';
+$string['provisionstates_desc'] = 'Por defecto, los usuarios sólo aparecen en la tabla de ranking (y en el informe en modo de todo el sitio), tras haber sido detectados por XP. La disposición de usuario es una característica avanzada que crea automáticamente entradas para los usuarios que faltan vagamente identificados por su rol. Esto se hace periodicamente mediante una tarea programada que se ejecuta diariamente por defecto.  [Saber más](https://docs.levelup.plus/xp/docs/automatic-user-provisioning)';
+$string['questpromonotice'] = 'Lleve la gamificación al siguiente nivel, descubra [Level Up Quest]({$a->questurl}).';
+$string['questreleasenotice'] = 'Lleve la gamifiación al siguiente nivel, descubra **Level Up Quest** 🥳. Convierta sus cursos en **aventuras emocionantes**, llenas de **estrategias de reenganche** y **celebraciones** 🤯! Compruebe [Quest\'s website]({$a->questurl}) y nuestro [post de lanzamiento aquí]({$a->questblogurl}). 👈';
 $string['quickeditpoints'] = 'Edición rápida de puntos';
 $string['rank'] = 'Ranking';
+$string['ranked'] = 'En raking';
 $string['ranking'] = 'Ranking';
 $string['ranking_help'] = 'El rank es la posición absoluta del usuario actual en el tablero de ranking. El ranking relativo es la diferencia en puntos de experiencia entre un usuario y sus vecinos.';
 $string['reallydeleteuserstate'] = 'Borrar un usuario solamente es útil para borrarlo del tablero. Para otros casos, recomendamos poner sus puntos a 0 en vez de borrarlo. Borrar usuarios no afecta su posibilidad de ganar puntos en el futuro.
@@ -467,6 +528,7 @@ $string['resetallcoursestodefaultsintro'] = 'Clique el botón siguiente para res
 $string['resetcoursedata'] = 'Reiniciar datos del curso';
 $string['resetcourserulestodefaults'] = 'Resetear reglas de curso a valores por defecto';
 $string['resetgroupdata'] = 'Resetear datos de grupo';
+$string['resetladderparticiptionofeveryone'] = 'Resetear el estado de participación de todos';
 $string['resetlevelstodefaults'] = 'Resetear niveles al estado por defecto';
 $string['resettodefaults'] = 'Resetear a predeterminados';
 $string['resetvisualstodefaults'] = 'Resetear aspecto al estado por defecto';
@@ -633,6 +695,7 @@ $string['someoneelse'] = 'Otra persona';
 $string['somethinghappened'] = 'Algo ha pasado';
 $string['taskadminnotices'] = 'Avisos de administrador';
 $string['taskcollectionloggerpurge'] = 'Purgar registros guardados';
+$string['taskstateprovisioner'] = 'Disposición de estado';
 $string['taskusagereport'] = 'Informe de uso';
 $string['teamleaderboard'] = 'Tablero por equipos';
 $string['teamleaderboard_help'] = 'El tablero de ranking de equipos se basa en el total de los puntos acumulados por sus miembros.
@@ -675,6 +738,10 @@ $string['usagereport_desc'] = 'Intercambiar periódicamente información de uso 
 $string['usealgo'] = 'Usar el algoritmo';
 $string['usecustomlevelbadges'] = 'Usar insignias de nivel personalizadas';
 $string['usecustomlevelbadges_help'] = 'Cuando configura a SI, debe proporcionar una imagen para cada nivel.';
+$string['userladderparticipation'] = 'Participación en la tabla de ranking';
+$string['userladderparticipation_help'] = 'Determina si el usuario está participando actualmente en la tabla de ranking. Esto no afecta a la tabla de ranking de equipo.';
+$string['userladderparticipationlocked'] = 'Bloquear participación hasta';
+$string['userladderparticipationlocked_help'] = 'La fecha desde la que el usuario es libre de modificar su preferencia de participación.';
 $string['usingalgo'] = 'Usar algoritmo';
 $string['value'] = 'Valor';
 $string['valuessaved'] = 'Los valores se han guardado correctamente.';

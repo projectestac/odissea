@@ -230,7 +230,7 @@ if ($ADMIN->fulltree) {
     $settingscategory->add($page);
 
     // Javascript navigation settings.
-    $page = new admin_settingpage('format_tiles/tab-jsnav', get_string('jsnavsettings', 'format_tiles'));
+    $page = new admin_settingpage('format_tiles/tab-jsnav', get_string('jsactivate', 'format_tiles'));
 
     $name = 'format_tiles/usejavascriptnav';
     $title = get_string('usejavascriptnav', 'format_tiles');
@@ -295,6 +295,12 @@ if ($ADMIN->fulltree) {
     $title = get_string('showseczerocoursewide', 'format_tiles');
     $description = get_string('showseczerocoursewide_desc', 'format_tiles');
     $default = 0;
+    $page->add(new admin_setting_configcheckbox($name, $title, $description, $default));
+
+    $name = 'format_tiles/seczerocollapsible';
+    $title = get_string('seczerocollapsible', 'format_tiles');
+    $description = get_string('seczerocollapsible_desc', 'format_tiles');
+    $default = 1;
     $page->add(new admin_setting_configcheckbox($name, $title, $description, $default));
 
     $name = 'format_tiles/usetooltips';

@@ -88,7 +88,7 @@ $string['categorynamewithcount'] = '{$a->name} ({$a->questioncount})';
 $string['categorynamewithidnumber'] = '{$a->name} [{$a->idnumber}]';
 $string['categorynamewithidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->questioncount})';
 $string['changeoptions'] = '更改选项';
-$string['changepublishstatuscat'] = '<a href=“{$a->caturl}”>课程“{$a->coursename}”中的类别“{$a->name}</a>”的共享状态将从{$a->changefrom}更改为{$a->changeto}';
+$string['changepublishstatuscat'] = '课程“{$a->coursename}”中的<a href="{$a->caturl}">分类“{$a->name}</a>”的共享状态将从{$a->changefrom}更改为{$a->changeto}。';
 $string['check'] = '检查';
 $string['chooseqtypetoadd'] = '选择一个试题类型';
 $string['clearwrongparts'] = '清除不正确的回答';

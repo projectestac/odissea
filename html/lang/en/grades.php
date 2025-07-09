@@ -241,10 +241,6 @@ $string['feedbacks'] = 'Feedbacks';
 $string['feedbacksaved'] = 'Feedback saved';
 $string['feedbackview'] = 'View feedback';
 $string['finalgrade'] = 'Final grade';
-$string['filterbothactive'] = 'First ({$a->first}) Last ({$a->last})';
-$string['filterbyname'] = 'Filter by name';
-$string['filterfirstactive'] = 'First ({$a->first})';
-$string['filterlastactive'] = 'Last ({$a->last})';
 $string['finalgrade_help'] = 'If the overridden checkbox is ticked, a grade may be added or amended.';
 $string['fixedstudents'] = 'Static students column';
 $string['fixedstudents_help'] = 'Allows grades to scroll horizontally without losing sight of the students column, by making it static.';
@@ -512,7 +508,9 @@ $string['missingitemtypeoreid'] = 'Array key (itemtype or eid) missing';
 $string['missingscale'] = 'Scale must be selected';
 $string['mode'] = 'Mode';
 $string['modgrade'] = 'Grade';
-$string['modgrade_help'] = 'Select the type of grading used for this activity. If \'scale\' is chosen, you can then choose the scale from the drop-down menu. If using point grading, you can then enter the maximum grade available for this activity.';
+$string['modgrade_help'] = '* Point - A numerical value
+* None - Feedback only
+* Scale - An item from a list';
 $string['modgradecantchangegradetype'] = 'You cannot change the type, as grades already exist for this item.';
 $string['modgradecantchangegradetypemsg'] = 'Some grades have already been awarded, so the grade type cannot be changed. If you wish to change the maximum grade, you must first choose whether or not to rescale existing grades.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Some grades have already been awarded, so the grade type and scale cannot be changed.';
@@ -715,9 +713,9 @@ $string['recovergradesdefault'] = 'Recover grades default';
 $string['recovergradesdefault_help'] = 'By default recover old grades when re-enrolling a user in a course.';
 $string['refreshpreview'] = 'Refresh preview';
 $string['regradeanyway'] = 'Regrade anyway';
-$string['removeallcoursegrades'] = 'Delete all grades';
+$string['removeallcoursegrades'] = 'All grades';
 $string['removeallcoursegrades_help'] = 'If ticked, all grade items and grades that were manually added to the gradebook will be deleted, as well as data on overridden, excluded, hidden and locked grades. Only grade items and grades associated with activities will remain.';
-$string['removeallcourseitems'] = 'Delete all items and categories';
+$string['removeallcourseitems'] = 'All items and categories';
 $string['removeallcourseitems_help'] = 'If ticked, all categories and grade items which were manually added to the gradebook will be deleted, together with grades and data on overridden, excluded, hidden and locked grades. Only grade items associated with activities will remain.';
 $string['report'] = 'Report';
 $string['reportdefault'] = 'Report default ({$a})';
@@ -917,3 +915,9 @@ $string['gradeitemadvanced'] = 'Advanced grade item options';
 $string['gradeitemadvanced_help'] = 'Select all elements that should be displayed as advanced when editing grade items.';
 $string['aria-toggledropdown'] = 'Toggle the following dropdown';
 $string['aria:dropdowngrades'] = 'Grade items found';
+
+// Deprecated since Moodle 4.5.
+$string['filterbothactive'] = 'First ({$a->first}) Last ({$a->last})';
+$string['filterbyname'] = 'Filter by name';
+$string['filterfirstactive'] = 'First ({$a->first})';
+$string['filterlastactive'] = 'Last ({$a->last})';

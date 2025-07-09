@@ -535,7 +535,7 @@ Je kunt de status van je inzending zien:
 
 {$a->url}';
 $string['submissiondrafts'] = 'Leerlingen moeten op de "Instuur"-knop klikken';
-$string['submissiondrafts_help'] = 'Indien ingeschakeld, zullen leerlingen op een instuurknop moeten klikken om hun opdracht als voltooid te verklaren. Dit maakt het mogelijk dat leerlingen een concept van de opdracht op het systeem bewaren. Indien deze instelling van "Nee" naar "Ja" gewijzigd wordt, nadat leerlingen al iets ingestuurd hebben, dan zullen die ingestuurde opdrachten als voltooid beschouwd worden.';
+$string['submissiondrafts_help'] = 'Moeten leerlingen op een instuurknop klikken als ze klaar zijn met het wijzigen van de opdracht, zodat ze klaar staat om te laten beoordelen?';
 $string['submissioneditable'] = 'Leerling kan zijn ingestuurde opdracht bewerken';
 $string['submissionempty'] = 'Er is niets ingestuurd';
 $string['submissionlog'] = 'Leerling: {$a->fullname}, Status: {$a->status}';

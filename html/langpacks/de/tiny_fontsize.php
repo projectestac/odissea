@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Schriftgröße';
+$string['fontsize:use'] = 'Nutzung des Plugins erlauben';
 $string['menuitem_fontsize'] = 'Schriftgröße';
 $string['pluginname'] = 'Schriftgröße';
 $string['privacy:metadata'] = 'Das Plugin \'Schriftgröße\' speichert keine personenbezogenen Daten.';

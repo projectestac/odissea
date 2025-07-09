@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add_button'] = 'Afegeix';
 $string['breadcrumb:activitiesincompleted'] = 'Activitats no completades';
 $string['edit'] = 'Edita';
 $string['export'] = 'Exporta';

@@ -311,13 +311,18 @@ export default class Component extends BaseComponent {
         if (!target) {
             return;
         }
+
+        const sectionIsCollapsible = this._getCollapsibleSections();
+
         // Check if we have all sections collapsed/expanded.
         let allcollapsed = true;
         let allexpanded = true;
         state.section.forEach(
             section => {
-                allcollapsed = allcollapsed && section.contentcollapsed;
-                allexpanded = allexpanded && !section.contentcollapsed;
+                if (sectionIsCollapsible[section.id]) {
+                    allcollapsed = allcollapsed && section.contentcollapsed;
+                    allexpanded = allexpanded && !section.contentcollapsed;
+                }
             }
         );
         if (allcollapsed) {
@@ -328,6 +333,21 @@ export default class Component extends BaseComponent {
             target.classList.remove(this.classes.COLLAPSED);
             target.setAttribute('aria-expanded', true);
         }
+    }
+
+    /**
+     * Find collapsible sections.
+     */
+    _getCollapsibleSections() {
+        let sectionIsCollapsible = {};
+        const togglerDoms = this.element.querySelectorAll(this.selectors.COLLAPSE);
+        for (let togglerDom of togglerDoms) {
+            const headerDom = togglerDom.closest(this.selectors.SECTION_ITEM);
+            if (headerDom) {
+                sectionIsCollapsible[headerDom.dataset.id] = true;
+            }
+        }
+        return sectionIsCollapsible;
     }
 
     /**
@@ -445,9 +465,10 @@ export default class Component extends BaseComponent {
      * Refresh a section cm list.
      *
      * @param {Object} param
+     * @param {Object} param.state the full state object.
      * @param {Object} param.element details the update details.
      */
-    _refreshSectionCmlist({element}) {
+    _refreshSectionCmlist({state, element}) {
         const cmlist = element.cmlist ?? [];
         const section = this.getElement(this.selectors.SECTION, element.id);
         const listparent = section?.querySelector(this.selectors.SECTION_CMLIST);
@@ -456,6 +477,7 @@ export default class Component extends BaseComponent {
         if (listparent) {
             this._fixOrder(listparent, cmlist, this.selectors.CM, this.dettachedCms, createCm);
         }
+        this._refreshAllSectionsToggler(state);
     }
 
     /**
@@ -476,6 +498,7 @@ export default class Component extends BaseComponent {
         if (listparent) {
             this._fixOrder(listparent, sectionlist, this.selectors.SECTION, this.dettachedSections, createSection);
         }
+        this._refreshAllSectionsToggler(state);
     }
 
     /**
@@ -746,22 +769,22 @@ export default class Component extends BaseComponent {
             }
         });
 
-        // Dndupload add a fake element we need to keep.
-        let dndFakeActivity;
-
         // Remove the remaining elements.
+        const orphanElements = [];
         while (container.children.length > neworder.length) {
             const lastchild = container.lastChild;
-            if (lastchild?.classList?.contains('dndupload-preview')) {
-                dndFakeActivity = lastchild;
+            // Any orphan element is always displayed after the listed elements.
+            // Also, some third-party plugins can use a fake dndupload-preview indicator.
+            if (lastchild?.classList?.contains('dndupload-preview') || lastchild.dataset?.orphan) {
+                orphanElements.push(lastchild);
             } else {
                 dettachedelements[lastchild?.dataset?.id ?? 0] = lastchild;
             }
             container.removeChild(lastchild);
         }
-        // Restore dndupload fake element.
-        if (dndFakeActivity) {
-            container.append(dndFakeActivity);
-        }
+        // Restore orphan elements.
+        orphanElements.forEach((element) => {
+            container.append(element);
+        });
     }
 }
