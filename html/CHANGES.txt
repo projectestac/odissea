@@ -4,6 +4,11 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 25.10.09
+---------------------------------------------------------------------------------------
+- Tiles: Added course format
+
+
 Changes 25.10.02
 ---------------------------------------------------------------------------------------
 - Added filtering to param to search courses to prevent abuse
