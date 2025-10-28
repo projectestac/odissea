@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backup'] = 'Kopieer naar Kopieermachine';
 $string['copy_section'] = 'Kopieer sectie';
 $string['drop_here'] = 'Plaats hier..';
 $string['pluginname'] = 'Kopieermachine';

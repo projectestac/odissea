@@ -31,7 +31,7 @@ $string['accounts'] = '계정';
 $string['accountunlocked'] = '계정 잠금이 해제되었습니다. 이제 로그인할 수 있습니다.';
 $string['addcategory'] = '범주 추가';
 $string['additionalhtml'] = '추가적인 HTML';
-$string['additionalhtml_desc'] = '이 설정은 모든 페이지에 추가하고자 하는 HTML을 입력할 수 있도록 합니다. 페이지의 HEAD 태그안에, BODY 태그가 열린 바로 다음에, 혹은 BODY 태그가 닫히기 직전에 추가될 HTML을 설정할 수 있습니다. <br/> 이렇게 함으로써 모든 페이지에 사용자 맞춤 헤더와 푸터를 추가하거나 Google Analytics 와 같은 서비스에 대한 지원을  선택한 테마에 상관없이 매우 쉽게 추가할 수 있습니다.';
+$string['additionalhtml_desc'] = '이 설정으로 모든 페이지에 추가하고 싶은 HTML 코드를 지정할 수 있습니다. BODY 태그가 열린 직후 또는 BODY 태그가 닫히기 직전에, 해당 페이지의 HEAD 태그 안에 HTML 코드를 설정할 수 있습니다.<br />이렇게 하면 선택한 테마가 무엇이든 모든 페이지에 사용자 정의 헤더/푸터를 추가하거나 구글 애널리틱스와 같은 서비스 지원 기능을 추가할 수 있습니다.';
 $string['additionalhtml_heading'] = '모든 페이지에 추가될 추가 HTML';
 $string['additionalhtmlfooter'] = 'Body 가 닫히기 전에';
 $string['additionalhtmlfooter_desc'] = '여기에 있는 콘텐츠는 모든 페이지에서 body 태그가 닫히기 직전에  추가될 것입니다.';
@@ -44,10 +44,12 @@ $string['adminseesall'] = '관리자는 모든 것을 봄';
 $string['adminseesallevents'] = '관리자에게 일정 공개';
 $string['adminseesownevents'] = '관리자는 일반 사용자와 유사합니다.';
 $string['advancedfeatures'] = '추가기능 설정';
+$string['agedigitalconsentverification_desc'] = '사용자 등록을 위한 회원 가입 페이지를 표시하기 전에 디지털 이용 최소 연령 검증을 활성화하십시오. 이것은 미성년자가 부모/보호자의 동의 없이 사이트에 가입하는 것을 방지합니다. 더 많은 도움을 드리기 위해 <a target="_blank" href="{$a}">고객 지원</a> 세부 사항을 제공합니다.';
+$string['ageofdigitalconsentmap_desc'] = '디지털 서비스 이용 동의에 필요한 최소 연령 및 최소 연령이 다른 경우에 해당하는 국가의 연령은 여기에서 설정됩니다. 국가 코드, 연령의 서식에 맞춰 각각의 연령을 새로운 줄에 입력하십시오(국가 코드와 연령은 쉼표로 구분하십시오). 최소 연령은 국가 코드 대신 별(*) 표시를 사용합니다. 국가 코드는 ISO 3166-2 국제 표준에 따라 설정됩니다.';
 $string['allcountrycodes'] = '모든 국가 코드';
 $string['allowattachments'] = '첨부 허용';
 $string['allowbeforeblock'] = '허용 IP 우선 처리';
-$string['allowbeforeblockdesc'] = '일반적으로 차단 IP 목록이 우선 적용되지만, 이 기능을 켜 놓으면 허용된 IP 목록을 먼저 처리합니다.';
+$string['allowbeforeblockdesc'] = '기본적으로 IP 주소 차단 목록이 우선 적용됩니다. 하지만 이 기능을 사용하면 차단된 목록을 적용하기 전에 IP 주소 허용 목록을 먼저 처리합니다.';
 $string['allowcategorythemes'] = '범주별 테마 허용';
 $string['allowcohortthemes'] = '코호트 테마 허용';
 $string['allowcoursethemes'] = '강좌별 테마 허용';
@@ -56,9 +58,10 @@ $string['allowediplist'] = '허용된 IP 목록';
 $string['allowemailaddresses'] = '허용된 이메일 도메인';
 $string['allowemojipicker'] = '이모티콘 선택기';
 $string['allowframembedding'] = '프레임 임베딩 허용';
-$string['allowframembedding_help'] = '이 사이트를 외부 사이트 프레임 안으로 탑재 가능하게 허용. 이 기능을 활성화시키는 것은 보안상 권장하지 않습니다.';
+$string['allowframembedding_help'] = '이것을 활성화하면, \'LTI 도구로 게시\' 등록 플러그인을 사용할 때 권장한 것처럼, 사이트가 원격 시스템의 프레임에 내장됩니다. 다른 방법으로는, 프레임 임베딩을 보안상의 목적으로 비활성화할 것을 권장합니다. 모바일 앱에서는 이 설정이 적용되지 않으며 프레임 임베딩이 언제나 가능하다는 점을 명심하십시오.';
 $string['allowguestmymoodle'] = '강의 현황에 손님으로 접근 허용';
 $string['allowindexing'] = '검색 엔진 인덱스 허용';
+$string['allowindexing_desc'] = '이것은 검색 엔진이 귀하의 사이트를 검색하도록 허용할지 여부를 결정합니다. “모두”는 검색 엔진이 접속 페이지와 회원 가입 페이지를 포함해서 모든 곳을 검색하도록 허용하는데, 이는 필수 로그인이 활성화되어 있는 사이트도 검색된다는 의미입니다. 회원 가입 페이지가 검색될 수 있는 스팸의 위험을 피하려면, “접속 페이지와 회원 가입 페이지를 제외한 모두”를 사용하십시오. “없음”은 검색 엔진이 어떤 페이지도 검색하지 않도록 지시합니다. 이것은 단지 사이트 헤더에 있는 태그라는 점을 유념하십시오. 태그의 지시를 따를 것인지는 검색 엔진에 달려 있습니다.';
 $string['allowindexingeverywhere'] = '모든 위치에서';
 $string['allowindexingexceptlogin'] = '로그인 및 가입 페이지를 제외한 모든 위치에서';
 $string['allowobjectembed'] = 'Embed 와 Object 태그 허용';
@@ -68,9 +71,11 @@ $string['allowusermailcharset'] = '문자세트 선택 허용';
 $string['allowuserswitchrolestheycantassign'] = '역할 부여 능력이 없는 사용자에게 역할을 바꿀수 있도록 허용';
 $string['allowuserthemes'] = '개인별 테마 허용';
 $string['alternativefullnameformat'] = '대체할 이름 형식';
+$string['alternativefullnameformat_desc'] = '이것은 전체 이름 보기 기능을 통해 사용자에게 이름이 표시되는 방식을 규정합니다(매니저, 교사 및 조교 등 지정된 사용자가 수행합니다). “Full name format” 형식의 플레이스 홀더가 설정됩니다.';
 $string['always'] = '항상';
 $string['appearance'] = '꾸미기';
 $string['aspellpath'] = 'aspell 경로';
+$string['asyncbackupdisabled'] = '현재 사이트는 동기식 백업을 사용하도록 설정되었습니다. 비동기식 백업은 백업 또는 복원이 진행되는 동안에도 사용자가 다른 작업을 수행할 수 있도록 함으로써, 더 나은 사용자 경험을 제공합니다. 무들 4.5 장기 지원 버전의 모든 사이트에서 비동기식 백업이 활성화되어 있습니다. 4.5 장기 지원 버전 이후의 무들 학습 관리 시스템에서는 동기식 백업이 제거됩니다.';
 $string['authentication'] = '인증';
 $string['authpreventaccountcreation'] = '인증시 사용자 계정 생성 방지';
 $string['authpreventaccountcreation_help'] = '사용자 인증 시, 아직 계정이 없는 경우에는 자동으로 생성됨. 만일 인증에 LDAP과 같은 외부 데이터베이스가 사용된 경우 기존 계정이 있는 사용자만 사이트에 접속되도록 제한하고 싶은 경우, 이 옵션을 활성화 시킬 것. 이 경우 새 계정을 생성하려면 사용자의 특성을 업로드하거나 수동으로 생성해야 함. 단 엠넷 인증에는 적용되지 않음을 유의할 것.';
@@ -89,9 +94,15 @@ $string['blockediplist'] = '차단된 IP 목록';
 $string['blockinstances'] = '보기';
 $string['blockmultiple'] = '다중';
 $string['blockprotect'] = '인스턴스 보호';
-$string['blockprotect_help'] = '선택된 블록 인스턴스들은 사이트 전역 문맥에서 삭제되는 것으로부터 보호될 수 있습니다. 실수로 삭제되는 경우 복원하기가 어려운 찾아가기 블록과 설정 블록을 보호하기 위해 주로 사용될 수 있습니다.';
+$string['blockprotect_help'] = '특정 형식의 블록을 잠그면 누구든 인스턴스를 추가하거나 삭제할 수 없게 됩니다. (인스턴스를 편집하려면 다시 잠금을 해제하시면 됩니다.)
+
+이것은 내비게이션이나 환경설정처럼 실수로 삭제되었을 때 복원하기 매우 어려운 블록을 보호하기 위한 것입니다.';
+$string['blockprotectblock'] = '{$a}의 인스턴스 보호';
+$string['blockprotected'] = '{$a} 블록 인스턴스가 보호됩니다.';
 $string['blocksettings'] = '블록 관리';
 $string['blockunprotect'] = '보호해제';
+$string['blockunprotectblock'] = '{$a}의 인스턴스 보호 해제';
+$string['blockunprotected'] = '{$a} 블록 인스턴스가 보호되지 않습니다.';
 $string['bloglevel'] = '블로그 가시성';
 $string['bookmarkadded'] = '즐겨찾기에 추가됨';
 $string['bookmarkalreadyexists'] = '이 페이지는 이미 즐겨찾기에 포함되어 있습니다.';
@@ -117,8 +128,8 @@ $string['calendartype_desc'] = '전체 사이트에 대한 기본 달력을 선�
 $string['cannotdeletemodfilter'] = '\'{$a->filter}\' 는 \'{$a->module}\' 모듈의 일부분이므로 제거할 수 없습니다.';
 $string['cannotuninstall'] = '{$a}는 제거 할 수 없습니다.';
 $string['categoryemail'] = '이메일';
-$string['cfgwwwrootslashwarning'] = 'config.php의 $CFG->wwwroot 를 잘못 지정하였습니다. 마지막에\'/\' 문자가 들어있습니다. 이 문자를 제거하지 않으면 <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a> 과 같은 버그가 발생할 것입니다.';
-$string['cfgwwwrootwarning'] = 'config.php의 $CFG->wwwroot 를 잘못 지정하였습니다. URL 주소가 맞지 않습니다. 수정하지 않으면 <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a> 과 같은 버그가 발생할 것입니다.';
+$string['cfgwwwrootslashwarning'] = 'config.php 파일의 $CFG->wwwroot가 잘못 지정되었습니다. 마지막에 포함되어 있는 \'/\' 문자를 삭제해야 합니다.';
+$string['cfgwwwrootwarning'] = 'config.php 파일의 $CFG->wwwroot가 잘못 지정되었습니다. $CFG->wwwroot가 현재 페이지에 접속하기 위해 사용하는 URL 주소와 일치해야 합니다.';
 $string['change'] = '변경';
 $string['checkboxno'] = '아니오';
 $string['checkboxyes'] = '예';
@@ -137,10 +148,20 @@ $string['clistatusenabledlater'] = '상태: CLI 유지 보수 모드가 {$a}에�
 $string['clitypevalue'] = '유형 값';
 $string['clitypevaluedefault'] = '유형에 기본값({$a})을 쓰려면 엔터키를 누르세요';
 $string['cliunknowoption'] = '알 수 없는 옵션: {$a}  --help를 사용하기 바람';
+$string['cliupgradecompletenomaintenanceupgrade'] = '사용자 트래픽이 새 코드로 전환된 후 남아 있는 캐시를 삭제하려면 다음 명령을 수행하십시오.
+
+php admin/cli/purge_caches.php --muc
+php admin/cli/purge_caches.php --js
+php admin/cli/purge_caches.php --filter
+php admin/cli/purge_caches.php --other
+
+삭제 작업은 명령 사이에 간격을 두고 독립적으로 수행해서, 웹 서버에 부하가 급증하는 것을 줄여야 합니다.';
 $string['cliupgradedefault'] = '새 설정: {$a}';
 $string['cliupgradedefaultheading'] = '새 기본 값으로 설정';
 $string['cliupgradedefaultverbose'] = '새 설정: {$a->name}, 기본 값: {$a->defaultsetting}';
-$string['cliupgradefinished'] = '명령어 줄 판올림이 성공적으로 완료되었습니다.';
+$string['cliupgradefinished'] = '{$a->oldversion}에서 {$a->newversion}로 명령줄 업그레이드가 성공적으로 수행되었습니다.';
+$string['cliupgrademaintenancenotrequired'] = '이 업그레이드로 인해 사용자가 유지 관리 모드로 전환되지는 않습니다.';
+$string['cliupgrademaintenancerequired'] = '이 업그레이드로 인해 사용자는 유지 관리 모드로 전환됩니다.';
 $string['cliupgradenoneed'] = '설치 버전 {$a} 에 대해  업그레이드가 필요하지 않습니다. 감사합니다!';
 $string['cliupgradepending'] = '업그레이드 중';
 $string['cliyesnoprompt'] = 'y(예를 의미) 혹은 n(아니오를 의미)을 입력';
@@ -151,44 +172,46 @@ $string['commonfiltersettings'] = '공용 필터 설정';
 $string['commonsettings'] = '일반 설정';
 $string['componentinstalled'] = '구성요소가 설치되었음';
 $string['computedfromlogs'] = '{$a} 이후 기록에서 계산됨';
-$string['condifmodeditdefaults'] = '새 활동 생성 시, 기본으로 삼을 값들을 여기에 지정.  또한 고급 기능을 이용해 설정할 활동을 지정할 수 있음.';
+$string['condifmodeditdefaults'] = '새로운 활동이나 리소스를 생성할 때 설정 양식에서 기본값이 적용됩니다.';
 $string['confeditorhidebuttons'] = 'HTML 편집기에서 감추고자 하는 버튼을 선택하세요.';
 $string['configallcountrycodes'] = '사용자 개인정보 등에서 선택할 수 있는 국가 목록입니다. 빈칸(기본값)으로 두면, 기본 영어 팩에 있는 countries.php에 있는 목록이 사용됩니다. 이는 ISO 3166-1의 목록과 동일하다. 만일 뭔가 쓰려면, \'KR,FR,ES\' 처럼 컴마로 구분해 적으면 됩니다. 만일 새로운 비 표준 코드를 추가하려면, \'en\' 안에 있는 countries.php에 이들을 추가하고 자신의 언어팩에도 이들를 추가해야 할 것입니다.';
-$string['configallowassign'] = '왼쪽의 역할이 기표된 각 칼럼의 역할을 부여할 수 있게 허용';
+$string['configallowassign'] = '왼쪽 열의 각 역할에 대해 다른 사람에게 할당할 수 있는 역할을 선택하세요.';
 $string['configallowattachments'] = '가능하도록 설정하면, 사이트에서 보내는 이메일에 뱃지와 같은 것들을 첨부할 수 있습니다.';
 $string['configallowcategorythemes'] = '이것을 활성화하면, 범주 수준에서 테마를 설정할 수 있게 된다. 각각의 하위 범주 혹은 강좌 나름대로 테마를 지정하지 않는 한, 범주 수준에서 설정한 테마가 그 하위에도 적용된다. 경고: 범주 테마 활성화는 성능에 영향을 미칠 수도 있다.';
-$string['configallowcoursethemes'] = '이것을 활성화하면, 각 강좌 나름대로 독특한 테마로 설정될 수 있습니다. 강좌 테마는 다른 모든 테마(사이트, 사용자, 또는 세션 테마) 를 덮어쓰게 됩니다.';
-$string['configallowemailaddresses'] = '만약 특정 도메인의 이메일 주소만 허용하고자 한다면, 그 주소를 한 칸씩 띄어 적어 놓아라. 그 외 모든 다른 도메인은 거부된다. ( 예: <strong>sun.ac.kr moodle.org</strong> )';
+$string['configallowcohortthemes'] = '이것을 활성화하면 테마가 코호트 수준에서 설정됩니다. 이것은 하나의 코호트 사용자 또는 같은 테마를 적용한 하나 이상의 코호트 사용자 모두에게 영향을 미칩니다.';
+$string['configallowcoursethemes'] = '이것을 활성화하면, 각 강좌마다 독자적인 테마를 설정할 수 있습니다. 강좌 테마는 사이트, 사용자, 카테고리, 코호트 또는 URL로 정의된 테마 등 다른 모든 테마 선택을 변경하게 됩니다.';
+$string['configallowedemaildomains'] = '발신 메일의 “발신자” 항목에서 공개가 허용된 이메일 도메인을 나열하십시오. 기본값이 “비어 있음”이면 모든 발신 이메일에 대해 회신 불가 주소를 사용합니다. 와일드카드를 이용할 수 있습니다. 예를 들어, *.example.com은 example.com의 모든 하위 도메인에서 보낸 이메일의 수신을 허용하는데, example.com 도메인에서 보낸 이메일은 수신하지 않습니다. 와일드카드 이용을 위해 별도 항목이 필요합니다.';
+$string['configallowemailaddresses'] = '새 이메일 주소를 특정 도메인으로 제한하려면 공백으로 구분해서 여기에 열거하세요. 다른 모든 도메인은 거부될 것입니다. 하위 도메인을 허용하려면 도메인 앞에 \'.\'를 추가하세요. 루트 도메인과 하위 도메인을 모두 허용하려면 도메인을 두 번 추가합니다. 한 번은 도메인 앞에 \'.\'를 추가하고 다른 한 번은 \'.\' 없이 추가합니다(예: .ourcollege.edu.au ourcollege.edu.au).';
 $string['configallowemojipicker'] = '이모지 선택기는 사용자들이 스마일리와 같은 이모지를 아토 툴바의 이모지 선택기 버튼을 통해 메세지나, 다른 텍스트 영역에 입력할 수 있도록 합니다.';
 $string['configallowemojipickerincompatible'] = '현재 데이터베이스 설정이 이모지를 지원하지 않습니다. 이모지 선택기를 가능하게 하기 위해서는 다음을 참조하십시오. <a href="https://docs.moodle.org/en/MySQL_full_unicode_support">upgrade your database for full unicode support</a>.';
-$string['configallowguestmymoodle'] = '손님으로 접근을 허용하면, 강의 현황에 접근할 수 있습니다. 허용하지 않으면 시작 페이지로 연결됩니다.';
-$string['configallowobjectembed'] = '기본 보안 조치에 따라, 일반 사용자들은 멀티미디어 파일 (예:플래시,동영상,mp3)을 EMBED, OBJECT 등의 명령어나 태그를 사용해서 올릴 수 없습니다. (비록 안전한 미디어 파일일지라도) 관리자가 허락 옵션을 켜야만 파일을 올릴 수 있습니다.';
+$string['configallowguestmymoodle'] = '이것을 활성화하면, 대시보드에 게스트로 접속할 수 있습니다. 그렇지 않으면 게스트는 시작 페이지로 연결됩니다.';
+$string['configallowobjectembed'] = '보안상의 이유로 학생 역할의 사용자는 HTML의 EMBED 및 OBJECT 태그를 사용하여 택스트 내에 멀티미디어를 삽입할 수 없습니다. 하지만 멀티미디어 플러그인 필터를 사용하면 멀티미디어를 표시할 수 있습니다. 이러한 태그를 허용하려면 이 옵션을 활성화하세요.';
 $string['configallowoverride'] = '왼쪽 난의 역할을 가진 사람에게 기표된 칼럼의 역할을 덮어쓰기할 수 있도록 허용';
-$string['configallowoverride2'] = '왼쪽 열에 있는 역할에 의해 덮어쓰기 될 수 있는 역할들을 선택하십시요.<br />이 설정은 moodle/role:override의 능력을 갖거나 moodle/role:safeoverride의 능력을 갖는 사용자에게만 적용됨을 주목하십시요.';
-$string['configallowswitch'] = '이미 지니고 있는 어떤 역활을 교환하려는지 선택하시오. 표에 있는 항목의 경우, 사용자가 역할 교환을 위한 moodle/role:switchroles 능력이 있어야만 합니다.<br />
-moodle/course:view 능력만 지닌 역할을 교환할 수 있고, moodle/site:doanything 능력으로는 교환할 수 없기 때문에 표의 일부 영역은 비활성 됨을 주목하기 바랍니다.';
+$string['configallowoverride2'] = '왼쪽 열의 각 역할에 대해 덮어쓰기를 설정할 수 있는 역할을 선택하세요.<br />사용자는 또한 moodle/role:override 또는 moodle/role:safeoverride 기능을 가지고 있어야 합니다.';
+$string['configallowswitch'] = '왼쪽 열의 각 역할에 대해 전환할 수 있는 역할을 선택하세요.<br />사용자는 또한 moodle/role:switchroles 기능을 가지고 있어야 합니다.';
 $string['configallowthemechangeonurl'] = '활성화되면  무들 URL에 <br />?theme=themename 를 추가(예: mymoodlesite.com/?theme=afterburner )하거나  <br />&theme=themename  (예: mymoodlesite.com/course/view.php?id=2&theme=afterburner ) 를 추가하여 테마를 변경할 수 있습니다.';
 $string['configallowuserblockhiding'] = '사용자들이 사이트의 블록을 숨기거나 볼 수 있도록 허용하겠습니까? 이 기능은 접을 수 있는 블록의 상태을 기억하기 위해 자바 스크립트와 쿠키를 사용하며, 사용자 보기에만 영향을 미칩니다.';
 $string['configallowusermailcharset'] = '이 기능을 활성화시키면, 모든 사용자는 이메일에 자신만의 문자 세트를 이용할 수 있습니다.';
 $string['configallowuserswitchrolestheycantassign'] = '기본적으로 moodle/role:assign은 사용자들의 역활 교환에 필요하다. 이 설정을 활성화함으로서 이를 충족시키며 또한 결과적으로 "역할 부여 허용"표에서 펼침메뉴로 설정된 "교환할 역할"만을 이용할 수 있게 된다. "역할 부여 허용"표에서는 기존 역할을 능가하는 역활로 빠꾸는 것을 허용하지 않으므로 역할부여 허용 설정을 권장하는 것이다.';
 $string['configallowuserthemes'] = '이것을 활성화하면, 사용자는 자신만의 테마를 사용할 수 있게 됩니다. 개인별 테마는 기존의 (강좌 테마가 아닌)사이트 테마를 덮어쓰기 합니다.';
-$string['configallusersaresitestudents'] = '이 사이트 시작 페이지 활동에 대하여 모든 사용자가 학생으로 간주되도록 할 것입니까? 만약 "예"라고 설정한다면 승인된 사용자 누구라도 다른 과정에 손쉽게 학생으로 참여할 수 있게 됩니다. 만약 "아니오"를 선택한다면 사용자는 시작 페이지의 특정 과정에만 참여하도록 제한될 것입니다. 이 때는 관리자와 지정된 선생님만이 시작 페이지의 선생님으로서 활동할 수 있습니다.';
+$string['configallusersaresitestudents'] = '시작 페이지 활동의 경우, 모든 사용자를 학생으로 간주해야 할까요? 그렇다면 계정이 있는 모든 사용자가 이 활동에 학생으로 참여할 수 있습니다. 그렇지 않다면 최소한 한 개 이상의 과정에 이미 참여 중인 사용자만 이 활동에 참여할 수 있습니다. 관리자와 특별히 배정된 교사만 시작 페이지 활동의 교사로 활동할 수 있습니다.';
 $string['configauthenticationplugins'] = '사용하고자 하는 인증 플러그인을 선택하여 우선 순위로 나열하라.';
 $string['configautolang'] = '브라우저 설정에서 기본 언어를 검출. 비활성화된 경우 사이트 기본설정이 사용됨';
+$string['configautolangusercreation'] = '활성화된 경우, 사용자 계정이 첫 로그인에서 자동으로 생성될 때(예를 들어, LDAP 인증 또는 OAuth 2 인증을 사용하는 경우), 사용자의 브라우저 언어는 사용자의 선호 언어로 설정됩니다. 그렇지 않으면, 사이트의 기본 언어가 사용자의 선호 언어로 설정됩니다.';
 $string['configautologinguests'] = '어떤 강좌에 방문객이 접속했을 때, 자동적으로 손님자격으로 로그인이 되게 할 것인가?';
 $string['configbloglevel'] = '본 설정은 이 사이트에 있는 사용자 블로그를 어느 수준까지 보게 할 것인가를 지정하는 것입니다. 블로그에 게제된 유형 혹은 내용을 지정하는 것이 아니라 Viewer의 최대 영역을 지정한다는 점에 유의하기 바란다. 여러분이 블로그 사용을 꺼려하면 이를 비활성화 시킬 수 있습니다.';
 $string['configcalendarcustomexport'] = '달력 날짜 범위 맞춤 내보내기 활성화';
 $string['configcalendarexportsalt'] = '이 무작위 문장은 달력을 내보내기 하는데 사용되는 인증토큰의 보안을 증가시키기 위해 사용됩니다. 만일 이 해시 솔트를 변경하면 모든 현재의 토큰이 무효화 됨을 주목하십시요..';
-$string['configcookiesecure'] = '만일 서버가 https 접속만 허용한다면 보안 쿠키 제공 활성화를 권장한다. 만일 이를 활성화 해 놓았다면 웹서버는 http://나 https:// 주소로 우회시킨 설정에 대해서는 접속을 허용하지 않을 것이다. <em>wwwroot</em> 가 https:// 로 시작하지 않는  주소에 대해서는 이 설정은 자동적으로 꺼진다.';
+$string['configcookiesecure'] = '서버가 https 연결만 허용하는 경우 보안 쿠키 전송을 활성화할 것을 권유합니다. 보안 쿠키 전송이 활성화되면, 웹서버가 http://를 허용하지 않도록 하거나 https:// 주소로 영구 이동하도록 설정하고 HSTS 헤더를 전송하는 것이 좋습니다.  <em>wwwroot</em> 가 https://로 시작하지 않으면 이 설정은 적용되지 않습니다.';
 $string['configcountry'] = '만약 여기에 국가를 지정한다면, 지정된 국가는 새로운 사용자계정의 기본값으로 설정된다. 사용자 스스로 국가(언어)를 선택하게 하고 싶으면, 지정하지 말고 그냥 놓아 두십시요.';
 $string['configcourseoverviewfilesext'] = '콤마로 분리된 강좌 요약 파일 확장자 목록';
 $string['configcourseoverviewfileslimit'] = '강의 목록 페이지 강의 요약에 표시할 최대 파일 개수. 강의에 추가된 첫 번째 이미지 파일은 사용자의 강의 현황에 강의 이미지로 나타납니다. 나머지 파일들은 강의 목록에서 나타납니다.';
 $string['configcourserequestnotify'] = '강좌개설 요청이 있을 경우 이를 처리해야 할 관리자 아이디 지정';
 $string['configcourserequestnotify2'] = '강좌개설 요청이 있을 경우 이를 처리해야 할 사용자. 강좌 개설을 허용할 수 있는 사용자만 여기에 나열됨.';
 $string['configcoursesperpage'] = '강좌 목록에서 페이지당 표시될 강좌의 수를 입력하세요.';
-$string['configcronclionly'] = '이것이 설정되면 크론 스크립트는 웹 대신 명령어 줄에서만 실행될 수 있다. 이것은 아래의 크론 암호설정을 덮어쓰기 합니다.';
-$string['configcronremotepassword'] = '이것은 cron.php가 아래와 같이 URL에서 제공하는 양식을 이용하여 암호가 제공되지 않으면 웹에서 구동될 수 없다는 것을 의미한다.<pre> http://site.example.com/admin/cron.php?password=opensesame
- </pre> 여기를 비워놓으면 암호를 요구하지 않는다.';
+$string['configcronclionly'] = '웹 브라우저에서 크론을 실행하면 불특정 다수에게 개인정보가 노출될 수 있습니다. 따라서 명령줄에서만 크론을 실행하거나 또는 원격 접속을 위한 크론 암호 설정을 권장합니다.';
+$string['configcronremotepassword'] = '다음 URL 형식을 사용하여 비밀번호를 제공하지 않으면 cron.php 스크립트를 웹 브라우저에서 실행할 수 없습니다.<pre> http://site.example.com/admin/cron.php?password=opensesame
+ </pre>여기가 비어 있는 경우에는 비밀번호가 필요하지 않습니다.';
 $string['configcurlcache'] = 'cURL 캐시 잔존 시간, 초단위';
 $string['configcustommenuitems'] = '여기에서 테마에 의해 보여질 사용자 메뉴를 구성할 수 있습니다.
 각 줄은 파이프 문자로 구분된 메뉴 문장과 링크 URL(선택사항) 그리고 도구팁(선택사항)으로 구성됩니다. 하이픈을 사용하여 구조를 명시할 수 있습니다.
@@ -204,6 +227,7 @@ Moodle company
 -Moodle commercial hosting|http://moodle.com/hosting
 -Moodle commercial support|http://moodle.com/support
 </pre>';
+$string['configcustomusermenuitems'] = '사용자 메뉴의 컨텐츠를 설정할 수 있습니다(로그 아웃 링크는 자동으로 추가됩니다). 각 줄은 파이프 문자로 구분됩니다. 그리고 1) "langstringname, componentname" 양식의 문자열이나 일반 텍스트, 2) 필요한 위치에 한 줄 또는 그 이상의 # 문자를 추가해서 사용할 수 있는 URL. 구분선으로 이루어집니다.';
 $string['configdbsessions'] = '이를 켜 놓으면, 현재 세션 정보를 저장하기 위해서 데이테베이스를 이용할 것입니다. 이는 특히 큰 사이트나 많은 서버로 구성된 사이트에서 유용하게 쓰일 수 있습니다. 대부분 사이트에서는 이를 막아 놓고 서버 디스크에 세션 정보를 기록하도록 합니다. 만일 지금 이 옵션을 바꾸게 되면, 당신을 포함한 현재 접속된 모든 사용자의 접속이 끊어져 로그아웃될 것입니다. 그리고 MySQL을 사용한다면 my.cnf에 있는 \'max_allowed_packet\'을 최소 4M이상인지를 확인하십시요.';
 $string['configdebug'] = '이것을 "예"로 두면 지속적인 경고를 위해서 PHP 오류 보고가 증가할 것이다. 개발자에게나 유용한 기능이다.';
 $string['configdebugdisplay'] = '이것을 켜두면 오류보고가 HTML문서로 보여진다. 대체로 실용적이기는 하지만 XHTML, JS, 쿠키 및 HTTP 헤더를 깨지게 한다. 이를 꺼 두면 오류보고는 추후에 디버그 할 수 있도록 서버에 기록으로 남는다. PHP의 error_log로 기록위치를 설정할 수 있다.';
@@ -213,7 +237,7 @@ $string['configdefaulthomepage'] = '로그인된 사용자를 위한 홈 페이�
 $string['configdefaultrequestcategory'] = '사용자가 요청한 강좌는 자동적으로 이 범주에 속하게 됩니다.';
 $string['configdefaultrequestedcategory'] = '승인된 강좌가 수용될 기본 범주';
 $string['configdefaultuserroleid'] = '모든 로그인한 사용자는 이미 부여된 역할에 추가하여  이곳에서 지정한 사이트 수준에서의  역할의 능력을 부여받게 됩니다.  기본 역할은 인증된 사용자입니다.  능력을 금지하지 않으면 사용자들이 부여받은 다른 역할과 상충되지 않을 것입니다. 사이트 역할은 모든 사용자가 강좌 수준에서 부여하지 못하는 능력을 갖도록 해줍니다.';
-$string['configdeleteincompleteusers'] = '제시된 날 이후까지 계정 설정을 완료하지 않은 사용자는 자동 삭제됨';
+$string['configdeleteincompleteusers'] = '이 기간이 지나면 이름, 성 또는 이메일 계정이 누락된 모든 계정이 삭제됩니다.';
 $string['configdeleteunconfirmed'] = '만약 이메일 인증제를 사용한다면, 여기에 설정된 기간내에 사용자들이 확인 응답을 해야합니다. 이 기간이 경과한 후에는 확인 응답을 하지 않은 계정은 삭제됩니다.';
 $string['configdenyemailaddresses'] = '같은 방법으로 여기에 있는 특정 도메인 목록의 이메일 주소를 허용하지 않는다. 그 외 모든 다른 도메인들은 허용된다. 예: <strong>hanmail.net yahoo.co.uk<strong/>';
 $string['configdisableuserimages'] = '사용자가 개인정보 사진을 임의로 바꾸지 못하게 함';
@@ -222,9 +246,14 @@ $string['configdndallowtextandlinks'] = '파일처럼 강좌 페이지 안으로
 $string['configdoclang'] = '이 언어는 문서페이지 링크에 사용됩니다.';
 $string['configdocroot'] = '무들 문서 경로를 정의합니다. 만일 나름대로의 사용자 온라인 문서를 갖고자 할 경우에는 이를 바꿀 수 있습니다. 그러나 문서 경로가 http://docs.moodle.org 과 같은 형식을 사용하도록 하십시요.';
 $string['configdoctonewwindow'] = '만일 이 기능을 활성화 하면, 무들 문서로의 링크가 새 창에서 보여집니다.';
+$string['configduration_high'] = '이 값은 너무 높습니다. 최대값은 {$a}입니다.';
+$string['configduration_low'] = '이 값은 너무 낮습니다. 최소값은 {$a}입니다.';
 $string['configeditordictionary'] = '이것은 만약 aspell에 사용자가 쓰는 언어의 사전이 없을 때 사용할 값입니다.';
 $string['configeditorfontlist'] = '편집기의 펼침 목록에 나타날 글꼴 선택';
 $string['configemailchangeconfirmation'] = '사용자가 개인 정보에서 메일 주소를 변경하면 이메일 주소 확인 절차를 요구';
+$string['configemaildkimselector'] = 'DKIM 셀렉터는 무작위이므로 DNS 레코드가 DKIM 셀렉터와 일치해야 합니다.';
+$string['configemailfromvia'] = '발송 메일의 “발신자” 항목에서 정보를 추가하십시오. 이렇게 하면 이 메일이 누구에게서 온 것인지 수신자가 알 수 있고, 수신자가 실수로 회신 불가 이메일 주소로 답장하는 것을 방지합니다.';
+$string['configenableanalytics'] = '‘학업 중단 위험 학생’ 또는 ‘마감 예정 과제’ 같은 분석 모델은 예측을 생성하고, 인사이트 알림을 보내고, 메시지 전송과 같은 추가 기능을 제공합니다.';
 $string['configenableblogs'] = '이 스위치는 모든 사이트 사용자에게 자신만의 블로그를 제공합니다.';
 $string['configenablecalendarexport'] = '달력 내보내기 혹은 구독 활성화';
 $string['configenablecomments'] = '덧글 활성화';
@@ -246,6 +275,7 @@ $string['configextramemorylimit'] = '검색, 백업/복구 혹은 크론과 같�
 $string['configfilterall'] = '머릿말, 제목, 찾아가기 막대 등에 포함된 모든 문자열을 필터합니다. 다국어 필터를 사용할 때 유용하지만, 그렇지 않으면 적은 이득을 얻는 대신 사이트에 추가적인 부담만 주게 됩니다.';
 $string['configfiltermatchoneperpage'] = '이 자동 링크 필터는 전체 페이지에서 최초 일치하는 내용에만 단 한번 링크를 걸고 나머지는 무시한다.';
 $string['configfiltermatchonepertext'] = '이 자동 링크 필터는 페이지의 각 문서 항목(예: 자원 블록 등)에서 첫번째 일치하는 항목에 자동 링크를 시키고 나머지 것들은 모두 무시합니다. 이 설정은 페이지별 필터 설정이 <i>예</i>이면 무시됩니다.';
+$string['configfilternavigationwithsystemcontext'] = '필터 사용은 일반적으로 필터가 사용되는 컨텍스트와 연결됩니다(예, 강좌 컨텍스트). 그러나 사이트 탐색의 경우에는, 모든 것을 사이트 컨텍스트에 따라 필터링해야 “내용과 제목” 필터를 사용할 때 성능을 향상시킬 수 있습니다.';
 $string['configfilteruploadedfiles'] = '이 기능을 켜 놓으면 업로드된 모든 웹문서를 화면에 표시하기 전에 검색하나 그 외의 파일은 필터하지 않습니다.';
 $string['configforcelogin'] = '일반적으로 사이트의 시작 페이지와 강좌 목록은 로그인 하지 않고도 볼 수 있습니다. 하지만 로그인 하지 않고는 아무 것도 할 수 없게 하려면 이 설정을 켜 놓아야만 합니다.';
 $string['configforceloginforprofiles'] = '이 설정은 손님계정이 아닌 실제 계정으로 로그인 해야만 다른 사람의 개인정보를 볼 수 있게 합니다. 이 설정을 비 활성화 한 경우, 사용자가 개인정보에 광고를 게시하거나 부적절한 콘텐츠를 게시해서 전세계사람들이 보게 할 수도 있습니다.';
@@ -271,6 +301,7 @@ $string['configlangmenu'] = '로그인 페이지나 홈페이지 상에 언어 �
 $string['configlangstringcache'] = '데이터 경로에 컴파일된 파일 형태로 모든 언어의 문자열을 저장. 만일 무들을 번역하는 중이거나 소스 코드의 문자열을 변경시키고자 할 때에는, 이 기능을 꺼 놓을 수 있음. 그렇지 않다면 그냥 두는 편이 성능 상 이득을 볼 수 있음.';
 $string['configlatinexcelexport'] = '엑셀로 내보내기 위한 인코딩 선택';
 $string['configlocale'] = '사이트 전체의 로케일을 선택해라. 이것은 모든 언어팩의  포맷이나 날짜 언어를 덮어쓰기 할것입니다 .(그럼에도 불구하고 일정표의 요일은 영향받지 않습니다) 여기에 지정한 로케일은 서버에서 지원하도록 해야 합니다.(예: Linux에서 한글 로케일은 ko_KR.UTF-8) 대부분의 경우 이 부분은 공백으로 두는 편이 낫습니다.';
+$string['configlockrequestcategory'] = '이것을 활성화하면 시스템 컨텍스트 내의 신규 강좌 신청 권한이 있는 사용자가 신규 강좌 신청서에 있는 카테고리를 선택할 수 없습니다. 사용자가 단 하나의 카테고리에서만 신규 강좌를 신청하도록 제한하는 또 다른 방법은 카테고리 컨텍스트 내의 신규 강좌 신청 권한을 적용하는 것입니다.';
 $string['configloglifetime'] = '이것은 용자의 활동 기록을 얼마나 오래 보유할 것인가를 정하는 것입니다. 여기에 표시된 시간보다 오래된 기록은 자동으로 삭제됩니다. 필요하다면 가능한한 오래 유지하는 것이 좋습니다. 하지만 서버의 부하가 많고, 시스템 성능이 낮다면, 기록 보유 기간을 짧게 하는 편이 더 나을지도 모릅니다. 30보다 낮은 값은 통계가 제대로 동작하지 않을 수 있으므로 추천하지 않습니다.';
 $string['configlookahead'] = '앞을 내다보고자 하는 날들';
 $string['configmailnewline'] = '개행문자가 메일 메세지에 사용되었습니다. RFC 822bis에 따라 CRLF가 필요합니다. 어떤 메일서버는 LF를 CRLF로 자동변환하는 반면 어떤 서버는 CRLF를 CRCRLF로 잘 못 변환하고, 어떤 메일서버(예를 들어 qmail)는 LF만 있는 메일을 거부합니다 배달되지 않는 메일이 있거나 이중 개행문자가 있는 경우 이 설정을 변경해 보십시요.';
@@ -282,6 +313,7 @@ $string['configmaxevents'] = '보일 최대 행사';
 $string['configmaxusersperpage'] = '강좌, 모둠, 수업집단, 웹서비스등의 사용자 선택기에 표시될 최대 사용자 수';
 $string['configmessaging'] = '사이트 사용자 간에 내부 메세지 시스템을 이용할 수 있게 할까요?';
 $string['configmessagingallowemailoverride'] = '사용자가 자신의 프로필의 이메일 주소가 아닌 다른 이메일 주소로 이메일  메시지 통지를 받을 수 있도록 허용.';
+$string['configmessagingallusers'] = '이것을 활성화하면 사용자가 메시지를 보낼 사람을 선택할 때 사이트의 모든 사용자 목록을 볼 수 있으며, 사용자의 메시지 환경 설정이 사이트의 모든 사용자가 보내는 메시지를 수신하도록 허용합니다. 이것을 비활성화하면, 사용자는 자신의 강좌에 있는 사용자 목록만 볼 수 있으며, 관계자 메시지만 수신하거나 관계자 및 자신의 강좌에 있는 모든 사람의 메시지를 수신하도록 메시지 환경을 선택해서 설정할 수 있습니다.';
 $string['configmessagingdeleteallnotificationsdelay'] = '읽었거나 읽지 않은 알림을 공간 절약을 위해 삭제할 수 있습니다. 알림이 생성된 후 얼마 후에 삭제할 수 있습니까?';
 $string['configmessagingdeletereadnotificationsdelay'] = '읽은 통지는 공간을 절약하기 위해 삭제될 수 있습니다. 통지를 읽은 후 얼마나 지나야 삭제될 수 있습니까?';
 $string['configminpassworddigits'] = '비밀번호에 최소 여기에 제시된 수만큼의 숫자가 들어 있어야 합니다.';
@@ -300,6 +332,8 @@ $string['confignotloggedinroleid'] = '미등록 사용자들은 사이트의 관
 $string['configopentowebcrawlers'] = '이 설정을 체크해 놓으면 구글은 이 사이트에 손님계정으로 들어올 수 있게 된다. 또한, 구글서치를 통해서 들어오는 사람들도 자동적으로 손님 계정으로 로그인 될 것이다. 이미 손님계정의 방문을 허락한 곳이라면 구글은 아무 제한없이 투명하게 접속시킨다는 점을 유의하라.';
 $string['configoverride'] = 'config.php에 정의됨';
 $string['configpasswordpolicy'] = '이 기능을 켜 놓으면 암호부여 정책에 따라 사용자의 비밀번호가 유효한지 점검합니다. 암호부여 정책을 규정하기 위해 아래 내용을 설정하시오.(\'아니오\'를 선택하면 무시됩니다)';
+$string['configpasswordpolicycheckonlogin'] = '이것을 활성화하면 사용자가 로그인할 때마다 암호 정책에 따라 사용자 암호를 확인합니다. 암호가 확인되지 않으면 사용자는 다음 단계를 진행하기 전에 암호를 변경해야 합니다.
+암호 정책이 업데이트되면 이 설정을 활성화하는 것이 유용합니다.';
 $string['configpathtodu'] = 'du의 경로. 대개 /usr/bin/du 가 됩니다. 만약 이를 설정해 놓는다면, 이 경로에 있는 내용들이 다른 많은 파일들이 들어있는 경로보다 빠르게 출력될 것입니다.';
 $string['configperfdebug'] = '이 기능을 활성화시키면, 표준테마의 경우 맨 아랫단에 성능에 대한 정보가 나타날 것이다.';
 $string['configprofileroles'] = '개인정보 및 참여자  페이지에 제공될 역활 목록';
@@ -317,6 +351,7 @@ $string['configrequestedstudentname'] = '강좌에서 학생을 지칭하는 용
 $string['configrequestedstudentsname'] = '강좌에서 학생들을 지칭하는 용어';
 $string['configrequestedteachername'] = '강좌에서 선생님을 지칭하는 용어';
 $string['configrequestedteachersname'] = '강좌에서 선생님들을 지칭하는 용어';
+$string['configreverseproxyignore'] = '서버가 X-Forwarded-For 헤드에 첨부된 여러 개의 리버시 프록시 뒤에 있는 경우에는, 쉼표로 구분된 IP 주소 목록 또는 리버시 프록시 서브넷이 배제되도록 명시해서 사용자의 정확한 IP 주소를 찾을 수 있도록 하십시오.';
 $string['configsectioninterface'] = '인터페이스';
 $string['configsectionmail'] = '메일';
 $string['configsectionmaintenance'] = '유지보수';
@@ -328,11 +363,13 @@ $string['configsectionsecurity'] = '보안';
 $string['configsectionstats'] = '통계';
 $string['configsectionuser'] = '사용자';
 $string['configsecureforms'] = '무들은 웹 폼에서 데이터를 받을 때 추가적인 보안 레벨을 사용할 수 있습니다. 만약 이것을 활성화하면, 브라우저의 HTTP_REFERER 변수는 현재의 form adress와 교차로 확인된다. 매우 드믄 경우이지만, 만약 사용자가 웹 트래픽으로부터 벗어나기 위해 HTTP_REFERER를 제거하도록 설정한 방화벽을 사용할 경우 문제를 야기할 수 있습니다. 그 증상은 폼에 갇혀 버리는 것이다. 예를들어 만약 사용자들이 로그인하는데 문제를 가지고 있다면, 사이트를 brute-force password 공격에 더 노출 시킬지라도, 이 설정을 꺼 둘 수 있습니다. 자신이 없으면, \'예\'로 놓으십시요.';
+$string['configservicespage'] = '서비스 및 지원 페이지의 URL을 입력하거나 moodle.com의 무들 서비스에 연결되도록 비워 두십시오. 링크는 사이트 관리자에게만 표시됩니다.';
 $string['configsessioncookie'] = '이 설정은 무들세션을 위해 사용하는 쿠기의 이름을 지정하는 것이다. 이것은 선택적이고, 같은 웹사이트에서 하나 이상의 무들 프로그램이 구동되어 쿠키의 혼동이 생길 우려가 있을 때만 유용하다.';
 $string['configsessioncookiedomain'] = '이는 무들 쿠키를 활용할 수 있는 도메인을 변경할 수 있게 한다. 이것은 여타 서브도메인의 웹 응용프로그램과 무들 세션의 정보를 공유해야 할 무들의 최적화(예를들어 인증 혹은 등록 플러그인)에 유용하게 활용될 수 있다.
 <strong>경고: 기본설정(비어있음)으로 놓아둘 것을 강력히 권고한다 - 잘못된 설정은 사이트 접속을 차단하는 결과를 낳는다.</strong>';
 $string['configsessioncookiepath'] = '브라우저가 무들 쿠키를 전송하는 위치를 변경하려면 이 곳에 특정 디렉토리를 설정하면 된다. 그냥 두면 기본값인 \'/\'로 설정된다.';
 $string['configsessiontimeout'] = '사이트에 로그인한 사람이 오랫동안 아무 일도 안하고 시간을 허비한다면, 일정 시간 후에 자동적으로 로그아웃 된다(세션 종료). 이 변수는 이 시간의 길이를 규정한다.';
+$string['configsessiontimeoutwarning'] = '이 사이트에 로그인하는 사용자가 페이지를 로드하지 않고 장시간 유휴 상태로 있으면, 해당 세션을 곧 종료한다는 경고를 하게 됩니다. 이 변수는 이 시간이 어느 정도인지를 지정합니다.';
 $string['configshowcommentscount'] = '덧글 수를 보여 줌. 덧글의 링크를 보여줄 때마다 하나 이상의 쿼리가 발생';
 $string['configshowicalsource'] = 'iCal의 이벤트에 대한 소스 정보를 표시합니다';
 $string['configshowsiteparticipantslist'] = '사이트 참여자 목록에는 사이트의 모든 학생과 선생님 명단이 표시됩니다. 이 사이트 참여자의 목록을 볼 수 있도록 허용될 사람은 누구입니까?';

@@ -1,0 +1,532 @@
+/* Question and results page */
+
+.que.coderunner div.coderunner-examples,
+.que.coderunner div.coderunner-test-results {
+    width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+#page-question-type-coderunner table.coderunner-test-results td,
+#page-question-type-coderunner table.coderunner-test-results th,
+.que.coderunner table.coderunner-test-results td,
+.que.coderunner table.coderunnerexamples td,
+.que.coderunner textarea.edit_code {
+    font-family: courier, monospace;
+    vertical-align: top;
+}
+
+.que.coderunner textarea.edit_code {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.que.coderunner div.initialisationerror {
+    color: #ca3120;
+}
+
+.que.coderunner div.coderunnerexamples {
+    padding-bottom: 10px;
+}
+
+#page-question-type-coderunner div.ui_wrapper,
+.que.coderunner div.ui_wrapper {
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.que.coderunner .ace_editor,
+body#page-question-type-coderunner .ace_editor {
+    font-size: 100%;
+    line-height: 18px;
+}
+
+.que.coderunner p.for-example-para {
+    font-weight: bold;
+}
+
+.que.coderunner .btn {
+    margin-right: 10px;
+}
+
+.que.coderunner div.coderunner-test-results {
+    padding: 0.5em;
+}
+
+.que.coderunner label.answerprompt {
+    font-weight: bold;
+}
+
+.que.coderunner div.prompt {
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.que.coderunner div.coderunner-lang-select-div {
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.que.coderunner select.coderunner-lang-select {
+    margin: 0 0 0 10px;
+    padding: 1px 5px 1px 5px;
+}
+
+.que.coderunner input.answer_reset_btn {
+    margin-bottom: 5px;
+}
+
+.que.coderunner button[id$=answer_run-btn] {
+    color: whitesmoke !important;
+    background-color: darkgreen !important;
+    font-weight: bold !important;
+    padding: 10px 40px !important;
+}
+
+.que.coderunner pre[id$=answer_run-output-text] {
+    border-bottom: solid 5px darkgreen;
+}
+
+#page-question-type-coderunner table.coderunner-test-results td,
+#page-question-type-coderunner table.coderunner-test-results th,
+.que.coderunner table.coderunner-test-results td,
+.que.coderunner table.coderunner-test-results th,
+.que.coderunner table.coderunnerexamples td,
+.que.coderunner table.coderunnerexamples th {
+    border: 1px solid #b0b0b0;
+    padding: 0.4em;
+}
+
+#page-question-type-coderunner table.coderunner-test-results .header,
+.que.coderunner table.coderunner-test-results .header,
+.que.coderunner table.coderunnerexamples .header {
+    text-align: left;
+    background-color: #f8f8ff;
+}
+
+.que.coderunner table.coderunner-test-results tr.hidden-test {
+    opacity: 0.5;
+}
+
+#page-question-type-coderunner table.coderunner-test-results {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.que.coderunner table.coderunner-test-results,
+.que.coderunner table.coderunnerexamples {
+    margin-bottom: 1em;
+}
+
+#page-question-type-coderunner div.coderunner-test-results td:last-child,
+#page-question-type-coderunner div.coderunner-test-results td:first-child
+.que.coderunner div.coderunner-test-results td:last-child,
+.que.coderunner div.coderunner-test-results td:first-child {
+    min-width: 16px;
+}
+
+.que.coderunner textarea.coderunner-answer[cols] {
+    max-width: 100%;
+    width: auto;
+    line-height: 18px;
+}
+
+.que.coderunner div.coderunner-test-results {
+    color: black;
+}
+
+.que.coderunner div.precheck h3 {
+    margin: 3px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.que.coderunner pre.tablecell {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    white-space: pre;
+}
+
+.que.coderunner div.coderunner-test-results pre,
+.que.coderunner div.coderunner-examples pre {
+    margin-bottom: 0;
+}
+
+.que.coderunner div.coderunner-test-results.good,
+#page-question-type-coderunner tr.coderunner-failed-test.fixed {
+    background-color: #afa;
+}
+
+.que.coderunner div.coderunner-test-results.outputonly {
+    background-color: #f0f0f0;
+}
+
+.que.coderunner div.coderunner-test-results.good.precheck {
+    background: repeating-linear-gradient(0deg, #fff, #fff 8px, #f8f1f9 8px, #f8f1f9 16px);
+}
+
+.que.coderunner div.coderunner-test-results.bad,
+.que.coderunner div.pre_syntax_error,
+.que.coderunner div.pre_question_error {
+    background-color: #faa;
+}
+
+.que.coderunner div.coderunner-test-results.bad.precheck,
+.que.coderunner pre.pre_syntax_error .precheck {
+    background: repeating-linear-gradient(0deg, #fdd, #fdd 8px, #fee 8px, #fee 16px);
+}
+
+.que.coderunner pre.pre_syntax_error,
+.que.coderunner div.pre_question_error {
+    border: none;
+}
+
+div.coderunner-test-results.partial {
+    background-color: #fff3bf;
+}
+
+.que.coderunner span.answerprompt {
+    font-weight: bold;
+}
+
+.que.coderunner span.penaltyregime {
+    padding-left: 0.6em;
+}
+
+/* Ins and del elements are used to show differences. ins elements are
+   always hidden and del elements are always displayed (without decoration),
+   but the background colour of del elements is toggled by the
+   Show/Hide differences button.
+*/
+.que.coderunner div.coderunner-test-results del {
+    text-decoration: none;
+    background-color: #e0e000;
+}
+
+/* Add lines I seem to have somehow overridden in styles.php */
+.que.coderunner tr.r0 td {
+    background-color: #f5f5f5;
+}
+
+.que.coderunner tr.r1 td {
+    background-color: #e5e5e5;
+}
+
+.que.coderunner div.im-controls p.penaltyregime {
+    display: inline;
+    float: right;
+}
+
+.que.coderunner .ace_wrapper {
+    border: 1px solid #d9edf7;
+}
+
+.que.coderunner .ace_gutter-cell {
+    border-right: solid 1px #000;
+}
+
+.que.coderunner .ace_fold-widget {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.que.coderunner .ace_fold-widget:hover {
+    border: 1px solid gray;
+    margin-top: 1px;
+}
+
+/* expand */
+.que.coderunner .ace_fold-widget.ace_closed::before {
+    content: '►';
+    color: gray;
+    font-size: 80%;
+    margin: 0 2px;
+    margin-top: -4px;
+}
+
+/* collapse */
+.que.coderunner .ace_fold-widget.ace_open::before {
+    content: '▼';
+    color: gray;
+    font-size: 60%;
+    margin: 0 2px;
+}
+
+.que.coderunner .ace_line .ace_fold {
+    padding-right: 1px;
+    line-height: 9px;
+}
+
+.que.coderunner .ace_line .ace_fold::before {
+    background-image: none;
+    content: '←→';
+    float: right;
+    margin-top: -1px;
+}
+
+/* Fullscreen and exit fullscreen */
+.que.coderunner .button-exit-fullscreen,
+body#page-question-type-coderunner .button-exit-fullscreen {
+    bottom: 0;
+}
+
+.que.coderunner .button-fullscreen,
+body#page-question-type-coderunner .button-fullscreen {
+    bottom: -1px;
+}
+
+.que.coderunner .button-fullscreen,
+.que.coderunner .button-exit-fullscreen,
+body#page-question-type-coderunner .button-fullscreen,
+body#page-question-type-coderunner .button-exit-fullscreen {
+    border: none;
+    background: transparent;
+    margin: 0 0 2px 0;
+    height: 15px;
+    width: 20px;
+    padding: 0;
+    right: 15px;
+    z-index: 10;
+}
+
+.que.coderunner .button-fullscreen:focus,
+.que.coderunner .button-exit-fullscreen:focus,
+body#page-question-type-coderunner .button-fullscreen:focus,
+body#page-question-type-coderunner .button-exit-fullscreen:focus {
+    display: flex;
+    justify-content: center;
+    outline: 2px solid black;
+}
+
+.que.coderunner .button-fullscreen img.icon:hover,
+.que.coderunner .button-exit-fullscreen img.icon:hover,
+body#page-question-type-coderunner .button-fullscreen img.icon:hover,
+body#page-question-type-coderunner .button-exit-fullscreen img.icon:hover {
+    animation: scaletooriginalsize 0.3s ease-in-out 0.1s forwards;
+    transform: scale(1.2);
+}
+
+@keyframes scaletooriginalsize {
+    to {
+        transform: scale(1);
+    }
+}
+
+.que.coderunner .button-exit-fullscreen img.icon,
+.que.coderunner .button-fullscreen img.icon,
+body#page-question-type-coderunner .button-exit-fullscreen img.icon,
+body#page-question-type-coderunner .button-fullscreen img.icon {
+    margin-right: unset;
+    margin-bottom: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+/* Editing form. */
+body#page-question-type-coderunner div.edit_code textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: courier, monospace;
+}
+
+body#page-question-type-coderunner pre.templateparamserror {
+    color: #ca3120;
+}
+
+body#page-question-type-coderunner .qtype_coderunner_prototype_message {
+    color: #7e7f7f;
+}
+
+body#page-question-type-coderunner div#id_qtype_coderunner_error_div:empty,
+body#page-question-type-coderunner div#id_qtype_coderunner_warning_div:empty {
+    display: none;
+}
+
+body#page-question-type-coderunner div#id_qtype_coderunner_error_div {
+    font-size: 120%;
+    font-weight: bold;
+    color: red;
+    border: 2px solid red;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+
+body#page-question-type-coderunner div#id_qtype_coderunner_warning_div {
+    font-size: 120%;
+    font-weight: bold;
+    color: blue;
+    border: 2px solid blue;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+
+body#page-question-type-coderunner textarea#id_templateparams {
+    resize: both;
+}
+
+body#page-question-type-coderunner .uiparamtablediv {
+    padding-top: 8px;
+}
+
+body#page-question-type-coderunner table.uiparamtable,
+body#page-question-type-coderunner table.uiparamtable th,
+body#page-question-type-coderunner table.uiparamtable td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    background-color: #f8f8f8;
+}
+
+body#page-question-type-coderunner button.toggleuidetails {
+    border: none;
+    color: blue;
+}
+
+body#page-question-type-coderunner .ace_wrapper {
+    border: 1px solid #bbb;
+}
+
+body#page-question-type-coderunner div[id^=fitem_id_]:not([id=fitem_id_addanswers], [id=fitem_id_answer],
+[id=fitem_id_answerpreload], [id=fitem_id_attachments], [id=fitem_id_attachmentsrequired], [id=fitem_id_category],
+[id=fitem_id_datafiles], [id=fitem_id_defaultmark], [id=fitem_id_generalfeedback], [id=fitem_id_globalextra],
+[id=fitem_id_idnumber], [id=fitem_id_maxfilesize], [id=fitem_id_name], [id=fitem_id_prototypeextra],
+[id=fitem_id_questiontext], [id=fitem_id_resultcolumns], [id=fitem_id_status], [id=fitem_id_tags],
+[id=fitem_id_template], [id=fitem_id_templateparams], [id=fitem_id_versioninfo]),
+body#page-question-type-coderunner div[id^=fgroup_id_]:not([id=fgroup_id_answerbox_group], [id=fgroup_id_buttonar],
+[id=fgroup_id_coderunner_feedback_group], [id=fgroup_id_coderunner_giveup_group],
+[id=fgroup_id_coderunner_precheck_group], [id=fgroup_id_coderunner_type_checkboxes],
+[id=fgroup_id_coderunner_type_group], [id=fgroup_id_currentgrp], [id=fgroup_id_filenamesgroup],
+[id=fgroup_id_gradingcontrols], [id=fgroup_id_languages], [id=fgroup_id_markinggroup],
+[id=fgroup_id_prototypecontrols], [id=fgroup_id_sandboxcontrols], [id=fgroup_id_templatecontrols],
+[id=fgroup_id_twigcontrols], [id=fgroup_id_uicontrols], [id=fgroup_id_uiparametergroup],
+[id=fgroup_id_updatebuttonar]) {
+    background: #eee;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid #bbb;
+    border-top: 0;
+    border-bottom: 0;
+    overflow: visible;
+}
+
+body#page-question-type-coderunner label[for^=id_useasexample],
+body#page-question-type-coderunner label[for^=id_hiderestiffail],
+body#page-question-type-coderunner label.form-check {
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+body#page-question-type-coderunner p.question-type-details-header {
+    font-size: 130%;
+}
+
+body#page-question-type-coderunner div[id^=fgroup_id_][id*=show_columns]
+.felement span {
+    margin-right: 2em;
+}
+
+body#page-question-type-coderunner div[id^=fgroup_id_][id*=show_columns] {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+body#page-question-type-coderunner select#id_coderunner_type {
+    margin-right: 2em;
+}
+
+body#page-question-type-coderunner div[id^=fitem_id_testcode]:not(:first-of-type) {
+    margin-top: 14px;
+    border: 1px solid #bbb;
+    border-bottom: 0;
+    padding-top: 8px;
+}
+
+body#page-question-type-coderunner div[id=fitem_id_addanswers] {
+    margin-top: 14px;
+    padding-top: 8px;
+}
+
+body#page-question-type-coderunner input[name="usecurrentcat"] {
+    margin-right: 1px;
+    margin-left: 2em;
+}
+
+body#page-question-type-coderunner input[type="checkbox"] + label {
+    margin-right: 1em;
+}
+
+body#page-question-type-coderunner textarea.edit_code {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: courier, monospace;
+}
+
+body#page-question-type-coderunner textarea.uiloadfailed {
+    border: 6px solid orange;
+}
+
+body#page-question-type-coderunner div.uiloadfailed {
+    background-color: orange;
+    padding-left: 10px;
+}
+
+body#page-question-type-coderunner input.testcasemark,
+body#page-question-type-coderunner input.coderunner_answerbox_size,
+body#page-question-type-coderunner input#id_cputimelimitsecs,
+body#page-question-type-coderunner input#id_memlimitmb {
+    width: auto;
+}
+
+body#page-question-type-coderunner label + select,
+body#page-question-type-coderunner label + input {
+    margin-right: 1em;
+}
+
+body#page-question-type-coderunner div.testcaseexpression {
+    padding-top: 10px;
+    border-top: 1px solid lightgrey;
+}
+
+/* Bulk tester */
+li.bulktest.coderunner.context.quiz {
+    padding-left: 1.5em;
+    list-style-type: none;
+}
+
+/* Ace gapfiller ui */
+.ace-gap-background {
+    position: absolute;
+    background-color: SeaShell;
+    border-radius: 0;
+}
+
+.ace-gap-outline {
+    position: absolute;
+    outline: 1px solid;
+    outline-color: rgba(0, 0, 0, 0.5);
+}
+
+/* stylelint-disable declaration-no-important  */
+
+body#page-question-type-coderunner div[id^=fitem_id_testcode]:first-of-type {
+    border-top: 1px solid #ccc !important;
+}
+
+body#page-question-type-coderunner div[id^=fgroup_id_testcasecontrols_] {
+    border-bottom: 1px solid #ccc !important;
+}
+
+body#page-question-type-coderunner div[id^=fitem_id_testcode],
+body#page-question-type-coderunner div[id^=fitem_id_stdin_],
+body#page-question-type-coderunner div[id^=fitem_id_expected_],
+body#page-question-type-coderunner div[id^=fitem_id_extra_] {
+    margin-bottom: 0 !important;
+}
+
+/* stylelint-enable declaration-no-important  */

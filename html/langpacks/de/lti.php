@@ -62,7 +62,7 @@ $string['basicltifieldset'] = 'Angepasste Beispielwerte';
 $string['basicltiintro'] = 'Beschreibung der Aktivität';
 $string['basicltiname'] = 'Name der Aktivität';
 $string['basicltisettings'] = 'Basiseinstellungen für Externes Tool (Learning Tool Interoperability (LTI))';
-$string['cachedef_keyset'] = 'Legt die Schlüsselsatz-Informationen von Tools im Cache ab';
+$string['cachedef_keyset'] = 'Schlüsselsatz-Informationen von Tools im Cache ablegen';
 $string['cancel'] = 'Abbrechen';
 $string['cancelled'] = 'Abgebrochen';
 $string['cannot_delete'] = 'Sie sollten diese Tool-Konfiguration nicht löschen';
@@ -188,7 +188,7 @@ Drei Icons erscheinen in der Liste
 * **Löschen** - Ausgewählten Typ im Kurs löschen.';
 $string['external_tool_types'] = 'Vorkonfigurierte Tools';
 $string['failedtoconnect'] = 'Moodle konnte keine Kommunikation mit dem System \'{$a}\' aufbauen.';
-$string['failedtocreatetooltype'] = 'Fehler beim Anlegen eines neuen Tools. Prüfen Sie die URL und versuchen Sie es noch einmal.';
+$string['failedtocreatetooltype'] = 'Fehler beim Anlegen eines neuen Tools. Prüfen Sie die URL und versuchen Sie es nochmal.';
 $string['failedtodeletetoolproxy'] = 'Das Entfernen des Tools Registrierung ist fehlgeschlagen. Sie können auf "Manage external tool registrations" gehen und es manuell entfernen.';
 $string['filter_basiclti_configlink'] = 'Konfigurieren Sie die bevorzugten Seiten und deren Kennwörter';
 $string['filter_basiclti_password'] = 'Kennwort ist erforderlich';

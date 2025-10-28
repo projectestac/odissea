@@ -94,7 +94,6 @@ class admin_settingspage_tabs extends \admin_settingpage {
 
             $context['tabs'][] = $data;
         }
-        $context['documentationurl'] = get_config('format_tiles', 'documentationurl');
         $context['sesskey'] = sesskey();
 
         return $OUTPUT->render_from_template('format_tiles/admin_setting_tabs', $context);

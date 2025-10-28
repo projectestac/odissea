@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['canntenrol'] = 'Matrikulazioa desgaituta dago edo ez dago aktibo';
+$string['canntenrol'] = 'Matrikulazioa desgaituta dago edo zure matrikulazioa ez-aktibo dago.';
 $string['canntenrolearly'] = 'Oraindik ezin duzu matrikularik egin; matrikula {$a} datan hasiko da.';
 $string['canntenrollate'] = 'Ezin duzu matrikularik egin, matrikula {$a} datan itxi zelako.';
 $string['cohortnonmemberinfo'] = 'Soilik \'{$a}\' kohorteko kideak matrikula daitezke.';

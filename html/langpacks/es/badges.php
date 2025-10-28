@@ -301,6 +301,9 @@ $string['error:cannotact'] = 'No se puede activar la insignia.';
 $string['error:cannotawardbadge'] = 'No se puede conceder la insignia a un usuario.';
 $string['error:cannotdeletecriterion'] = 'Este criterio no puede ser borrado.';
 $string['error:cannotrevokebadge'] = 'No es posible revocar la insignia de un usuario.';
+$string['error:cannotsendtobackpack'] = '<strong>No se pudo añadir la insignia a la mochila</strong><br />
+Su proveedor de mochila envía este mensaje: "{$a}".<br /><br />
+Puede intentar descargar la insignia y añadirla manualmente a su mochila, o volver a intentarlo más tarde.';
 $string['error:clone'] = 'No se puede clonar la insignia';
 $string['error:connectionunknownreason'] = 'La conexión no tuvo éxito, pero no se conoce el motivo.';
 $string['error:duplicatename'] = 'Una insignia con ese nombre ya existe en el sistema.';

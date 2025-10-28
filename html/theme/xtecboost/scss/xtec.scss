@@ -408,8 +408,10 @@ nav.fixed-top.navbar {
         display: inline-block;
         margin: 8px 16px;
     }
-
-    .moodle_footer img {
+    a.educacio img {
+      height: 31px;
+    }
+    a.moodle img {
         width: 95px;
         margin-top: -8px;
     }

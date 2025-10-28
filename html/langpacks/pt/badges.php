@@ -299,6 +299,9 @@ $string['error:cannotact'] = 'Não é possível ativar a medalha.';
 $string['error:cannotawardbadge'] = 'Não é possível atribuir a medalha a um utilizador.';
 $string['error:cannotdeletecriterion'] = 'Este critério não pode ser eliminado.';
 $string['error:cannotrevokebadge'] = 'Não é possível revogar a medalha de um utilizador.';
+$string['error:cannotsendtobackpack'] = '<strong>Não é possível adicionar a medalha à backpack</strong><br />
+O fornecedor da sua backpack está a enviar esta mensagem: \'{$a}\'.<br /><br />
+Pode tentar descarregar a medalha e adicioná-la manualmente à sua backpack ou tentar novamente mais tarde.';
 $string['error:clone'] = 'Não é possível duplicar a medalha.';
 $string['error:connectionunknownreason'] = 'A ligação não foi bem-sucedida sem que nenhum motivo fosse indicado para o justificar.';
 $string['error:duplicatename'] = 'Já existe uma medalha com o este nome no sistema.';

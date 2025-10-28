@@ -107,7 +107,7 @@ $string['backpackemailverifyemailbody'] = 'こんにちは {$a->userfirstname} �
 
 「 {$a->sitename} 」のバッジバックパックへの接続はほぼ完了しました。
 
-バックパックへの接続を完了するには次のボタンからメールアドレスを確認してください:
+バックパックへの接続を完了するには次のボタンからメールアドレスをご確認ください:
 
 {$a->buttonlink}
 
@@ -280,6 +280,11 @@ $string['error:cannotact'] = 'バッジを有効にできません。';
 $string['error:cannotawardbadge'] = 'ユーザにバッジを授与できません。';
 $string['error:cannotdeletecriterion'] = 'このクライテリアは削除できません。';
 $string['error:cannotrevokebadge'] = 'ユーザからバッジを取り消せません。';
+$string['error:cannotsendtobackpack'] = '<strong>バックパックにバッジを追加できません。</strong>
+<br>
+あなたのバックパックプロバイダは次のメッセージを送信しました: 「 {$a} 」
+<br><br>
+バッジをダウンロードして手動であなたのバックパックに追加するか、後で再度お試しください。';
 $string['error:clone'] = 'バッジを複製できません。';
 $string['error:connectionunknownreason'] = '接続に成功しませんでしたが、理由は不明です。';
 $string['error:duplicatename'] = '当該名称のバッジはすでにシステム内に存在します。';
@@ -491,7 +496,7 @@ $string['selecting'] = '選択したバッジに対して ...';
 $string['setup'] = '接続をセットアップする';
 $string['sitebackpackdeleted'] = 'サイトバックパックが削除されました。';
 $string['sitebackpacknotdeleted'] = '現在サイトデフォルトであるため、このバックパックを削除できませんでした。';
-$string['sitebackpackwarning'] = 'バックパックに接続できませんでした。<br/><br/>「バッジイシュアメールアドレス」管理設定がバックパックウェブサイトのアカウントの有効なメールアドレスであることを確認してください。<br/><br/><a href="{$a->url}">サイトバックパック設定ページ</a>の「バッジイシュアパスワード」がバックパックウェブサイトのアカウントの正しいパスワードであることを確認してください。<br/><br/>バックパックメッセージ:  {$a->warning}';
+$string['sitebackpackwarning'] = 'バックパックに接続できませんでした。<br/><br/>「バッジイシュアメールアドレス」管理設定がバックパックウェブサイトのアカウントの有効なメールアドレスであることをご確認ください。<br/><br/><a href="{$a->url}">サイトバックパック設定ページ</a>の「バッジイシュアパスワード」がバックパックウェブサイトのアカウントの正しいパスワードであることをご確認ください。<br/><br/>バックパックメッセージ:  {$a->warning}';
 $string['sitebadges'] = 'サイトバッジ';
 $string['sitebadges_help'] = 'サイトバッジはサイト関連活動にのみユーザに授与ができます。これには一連のコースまたはユーザプロファイルの一部の完了も含みます。サイトバッジはユーザから別のユーザへの発行もできます。
 

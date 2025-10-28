@@ -113,8 +113,8 @@ class content extends content_base {
                 if ($isadmin) {
                     $message .= \html_writer::link(
                         new \moodle_url('/course/format/tiles/editor/migratecoursedata.php'),
-                        '<i class="icon fa fa-cog mr-1"></i>' . get_string('fixproblems', 'format_tiles'),
-                        ['class' => 'ml-1']
+                        '<i class="icon fa fa-cog me-1"></i>' . get_string('fixproblems', 'format_tiles'),
+                        ['class' => 'ms-1']
                     );
                 }
                 $data->editoradvice[] = [

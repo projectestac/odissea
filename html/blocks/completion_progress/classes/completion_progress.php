@@ -146,7 +146,7 @@ class completion_progress implements \renderable {
     public function __construct($courseorid) {
         global $CFG;
 
-        require_once($CFG->libdir.'/completionlib.php');
+        require_once($CFG->libdir . '/completionlib.php');
 
         if (is_object($courseorid)) {
             $this->course = $courseorid;
@@ -189,6 +189,78 @@ class completion_progress implements \renderable {
         $this->load_completions();
 
         return $this;
+    }
+
+    /**
+     * Compute and cache completion percentages for overview use.
+     * @param callable $progresscallback receives a percentage
+     * @return void
+     */
+    public function compute_overview_percentages($progresscallback = null): void {
+        global $DB;
+        if ($this->user) {
+            throw new coding_exception('cannot compute overview percentages when specialised for a user');
+        } else if (!$this->completionsforall) {
+            throw new coding_exception('cannot compute overview percentages until completions are loaded');
+        }
+
+        if (is_callable($progresscallback)) {
+            call_user_func($progresscallback, 0);
+        }
+
+        $numdone = 0;
+        $numcompletions = count($this->completions);
+        $cachetime = get_config('block_completion_progress', 'overviewcachetime') ?: defaults::OVERVIEWCACHETIME;
+        foreach ($this->completions as $userid => $completions) {
+            $trans = $DB->start_delegated_transaction();
+            $rec = [
+                'blockinstanceid' => $this->blockinstance->id,
+                'userid' => $userid,
+            ];
+            $rec = $DB->get_record('block_completion_progress', $rec) ?: (object)$rec;
+
+            if (!empty($rec->timemodified) && time() - $rec->timemodified < $cachetime) {
+                $trans->allow_commit();
+                continue;
+            }
+
+            if (count($completions) == 0) {
+                $rec->percentage = null;
+            } else {
+                $this->for_user((object)['id' => $userid]);
+                if (empty($this->visibleactivities)) {
+                    $rec->percentage = null;
+                } else {
+                    $completecount = 0;
+                    foreach ($completions as $cmid => $complete) {
+                        if (!isset($this->visibleactivities[$cmid])) {
+                            continue;
+                        }
+                        if ($complete == COMPLETION_COMPLETE || $complete == COMPLETION_COMPLETE_PASS) {
+                            $completecount++;
+                        }
+                    }
+                    $rec->percentage = (int)round(100 * $completecount / count($this->visibleactivities));
+                }
+            }
+            $rec->timemodified = time();
+
+            if (empty($rec->id)) {
+                $rec->id = $DB->insert_record('block_completion_progress', $rec);
+            } else {
+                $DB->update_record('block_completion_progress', $rec);
+            }
+            $trans->allow_commit();
+
+            $numdone++;
+            if (is_callable($progresscallback)) {
+                call_user_func($progresscallback, 100 * $numdone / $numcompletions);
+            }
+        }
+
+        if (is_callable($progresscallback)) {
+            call_user_func($progresscallback, 100);
+        }
     }
 
     /**
@@ -383,23 +455,23 @@ class completion_progress implements \renderable {
     /**
      * Used to compare two activity entries based on order on course page.
      *
-     * @param array $a
-     * @param array $b
+     * @param object $a
+     * @param object $b
      * @return integer
      */
     private function sorter_orderbycourse($a, $b): int {
         if ($a->section != $b->section) {
             return $a->section <=> $b->section;
         } else {
-            return $a->position <=> $b->position;
+            return strnatcasecmp($a->position, $b->position);
         }
     }
 
     /**
      * Used to compare two activity entries based their expected completion times
      *
-     * @param array $a
-     * @param array $b
+     * @param object $a
+     * @param object $b
      * @return integer
      */
     private function sorter_orderbytime($a, $b): int {
@@ -435,8 +507,23 @@ class completion_progress implements \renderable {
                 if ($cm->completion == COMPLETION_TRACKING_NONE) {
                     continue;
                 }
-                if ($selectedonly && !in_array($module.'-'.$cm->instance, $selectedcms)) {
+                if ($selectedonly && !in_array($module . '-' . $cm->instance, $selectedcms)) {
                     continue;
+                }
+
+                $sectionkey = $cm->sectionnum;
+                $positionkey = array_search($cm->id, $sections[$cm->sectionnum]);
+                $sectinfo = $modinfo->get_section_info($cm->sectionnum);
+                if (method_exists($sectinfo, 'is_delegated') && $sectinfo->is_delegated()) {
+                    // If $cm lives within a section delegated to a module, use the parent cm's sectionnum
+                    // as the section key, and make the position key be the parent cm's position followed
+                    // by $cm's position in the delegated section.
+                    $sectdelegate = $sectinfo->get_component_instance();
+                    if ($sectdelegate instanceof \core_courseformat\sectiondelegatemodule) {
+                        $parentcm = $sectdelegate->get_cm();
+                        $sectionkey = $parentcm->sectionnum;
+                        $positionkey = array_search($parentcm->id, $sections[$parentcm->sectionnum]) . ',' . $positionkey;
+                    }
                 }
 
                 $this->activities[$cm->id] = (object)[
@@ -446,8 +533,8 @@ class completion_progress implements \renderable {
                     'instance'   => $cm->instance,
                     'name'       => $cm->get_formatted_name(),
                     'expected'   => $cm->completionexpected,
-                    'section'    => $cm->sectionnum,
-                    'position'   => array_search($cm->id, $sections[$cm->sectionnum]),
+                    'section'    => $sectionkey,
+                    'position'   => $positionkey,
                     'url'        => $cm->url instanceof \moodle_url ? $cm->url->out() : '',
                     'onclick'    => $cm->onclick,
                     'context'    => $cm->context,
@@ -494,7 +581,7 @@ class completion_progress implements \renderable {
             }
 
             // Check for exclusions.
-            if (in_array($activity->type.'-'.$activity->instance.'-'.$this->user->id, $this->exclusions)) {
+            if (in_array($activity->type . '-' . $activity->instance . '-' . $this->user->id, $this->exclusions)) {
                 continue;
             }
 
@@ -577,8 +664,11 @@ class completion_progress implements \renderable {
 
             if ($compl->completionstate == COMPLETION_INCOMPLETE && $submission) {
                 $this->completions[$compl->userid][$compl->cmid] = 'submitted';
-            } else if ($compl->completionstate == COMPLETION_COMPLETE_FAIL && $submission
-                    && !$submission->graded) {
+            } else if (
+                $compl->completionstate == COMPLETION_COMPLETE_FAIL &&
+                $submission &&
+                !$submission->graded
+            ) {
                 $this->completions[$compl->userid][$compl->cmid] = 'submitted';
             } else {
                 $this->completions[$compl->userid][$compl->cmid] = $compl->completionstate;
@@ -627,7 +717,7 @@ class completion_progress implements \renderable {
                 // Assignments with individual submission, or groups requiring a submission per user,
                 // or ungrouped users in a group submission situation.
                 'module' => 'assign',
-                'query' => "SELECT ". $DB->sql_concat('s.userid', "'-'", 'c.id') ." AS id,
+                'query' => "SELECT {$DB->sql_concat('s.userid', "'-'", 'c.id')} AS id,
                              s.userid, c.id AS cmid,
                              MAX(CASE WHEN ag.grade IS NULL OR ag.grade = -1 THEN 0 ELSE 1 END) AS graded
                           FROM {assign_submission} s
@@ -653,7 +743,7 @@ class completion_progress implements \renderable {
             [
                 // Assignments with groups requiring only one submission per group.
                 'module' => 'assign',
-                'query' => "SELECT ". $DB->sql_concat('s.userid', "'-'", 'c.id') ." AS id,
+                'query' => "SELECT {$DB->sql_concat('s.userid', "'-'", 'c.id')} AS id,
                              s.userid, c.id AS cmid,
                              MAX(CASE WHEN ag.grade IS NULL OR ag.grade = -1 THEN 0 ELSE 1 END) AS graded
                           FROM {assign_submission} gs
@@ -676,7 +766,7 @@ class completion_progress implements \renderable {
 
             [
                 'module' => 'workshop',
-                'query' => "SELECT ". $DB->sql_concat('s.authorid', "'-'", 'c.id') ." AS id,
+                'query' => "SELECT {$DB->sql_concat('s.authorid', "'-'", 'c.id')} AS id,
                                s.authorid AS userid, c.id AS cmid,
                                1 AS graded
                              FROM {workshop_submissions} s, {workshop} w, {modules} m, {course_modules} c
@@ -693,7 +783,7 @@ class completion_progress implements \renderable {
             [
                 // Quizzes with 'first' and 'last attempt' grading methods.
                 'module' => 'quiz',
-                'query' => "SELECT ". $DB->sql_concat('qa.userid', "'-'", 'c.id') ." AS id,
+                'query' => "SELECT {$DB->sql_concat('qa.userid', "'-'", 'c.id')} AS id,
                            qa.userid, c.id AS cmid,
                            (CASE WHEN qa.sumgrades IS NULL THEN 0 ELSE 1 END) AS graded
                          FROM {quiz_attempts} qa
@@ -719,7 +809,7 @@ class completion_progress implements \renderable {
             [
                 // Quizzes with 'maximum' and 'average' grading methods.
                 'module' => 'quiz',
-                'query' => "SELECT ". $DB->sql_concat('qa.userid', "'-'", 'c.id') ." AS id,
+                'query' => "SELECT {$DB->sql_concat('qa.userid', "'-'", 'c.id')} AS id,
                            qa.userid, c.id AS cmid,
                            MIN(CASE WHEN qa.sumgrades IS NULL THEN 0 ELSE 1 END) AS graded
                          FROM {quiz_attempts} qa
@@ -747,5 +837,4 @@ class completion_progress implements \renderable {
             }
         }
     }
-
 }

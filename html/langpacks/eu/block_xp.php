@@ -100,6 +100,7 @@ $string['basepointsrelativedesc'] = 'Hasierako puntu kopurua.';
 $string['basexp'] = 'Algoritmoaren oinarria';
 $string['blockappearance'] = 'Blokearen itxura';
 $string['blockappearancemovedtopluginsettings'] = 'Blokearen itxuraren ezarpenak pluginaren ezarpen-orrira mugitu dira.';
+$string['cachedef_block_count'] = 'Bloke-instantzia kopurua';
 $string['cachedef_filters'] = 'Mailen iragazkiak';
 $string['cachedef_metadata'] = 'Metadatuak';
 $string['cachedef_ruleevent_eventslist'] = 'Ekitaldi batzuen zerrenda';
@@ -143,6 +144,7 @@ $string['configtitle'] = 'Izenburua';
 $string['configtitle_help'] = 'Blokearen izenburua.';
 $string['congratulationsyouleveledup'] = 'Zorionak!';
 $string['coolthanks'] = 'Oso ondo, eskerrik asko!';
+$string['copiedexcl'] = 'Kopiatuta!';
 $string['coursea'] = '"{$a}" ikastaroa';
 $string['courselog'] = 'Erregistroa';
 $string['courselogintro'] = 'Erregistroak antzemandako ekintzak erakusten ditu, baita horietan lortutako puntuak ere.';
@@ -205,8 +207,10 @@ Utzitako elementuak ikasleei eduki mota zehatzak kontsumitzeagatik puntuak eskur
 [Informazio gehiago](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'Utzitako elementuak (drops) edukian txertatutako kode laburrak dira aurkitzen dituen erabiltzaileei puntuak ematen dizkienak.';
 $string['editcondition'] = 'Editatu baldintza';
+$string['editingdefaultsettingsincoursemodenotice'] = '**Adi!** Ez zara une honetako ezarpenak aldatzen ari, lehenetsitako balioak baizik. Ikastaro baten ezarpenak aldatzeko, joan XP blokearen baitako "Ezarpenak" aukerara.';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**Kontuz!** Ez zara une honetan aktibo dauden ezarpenak aldatzen ari, lehenetsitako balioak baizik. Maila gora XP gune mailan erabiltzen denez, zure asmoa gune mailako ezarpenak aldatzea izango da ziur aski. [Nabigatu hona]({$a->url}) ezarpen horiek aldatzeko, edo jarraitu XP blokearen "Ezarpenak" esteka bera.';
 $string['editinstructions'] = 'Editatu informazioa';
+$string['embedleaderboard'] = 'Enbotatutako lider-panela';
 $string['enablecheatguard'] = 'Gaitu kopiatzearen kontrako babesa';
 $string['enablecheatguard_help'] = 'Kopiatzearen kontrako babesak ikasleek sistemaren erabilera okerra teknika obvioekin egitea mekanismo merke eta sinplearekin saihesten du, hala nola orri bera etengabe freskatzea edo ekintza bera behin eta berriz errepikatzea.
 
@@ -443,6 +447,7 @@ $string['pluginavailabilityxpdesc'] = 'Plugin honek irakasleari jardueren eskura
 $string['pluginenrolxpdesc'] = 'Plugin honek ikaslearen beste ikastaro bateko mailaren araberako ikastaroetako matrikulazio automatikoa gaitzen du.';
 $string['pluginname'] = 'Maila gora XP';
 $string['pluginshortcodesdesc'] = 'Plugin honek irakasleari edukietan XP-rekin lotutako elementuak erabilita (puntuak, maila, lider-panela) bere materialak pertsonalizatzeko aukera ematen dio, baita ikaslearen mailaren arabera edukiak erakutsi ala ezkutatu ere.';
+$string['pluginshortcodesrequiredtousefeature'] = '[Shortcodes](https://docs.levelup.plus/xp/docs/getting-started/installation/recommended-plugins) plugina instalatuta eta gaituta egon behar da funtzionalitate hau erabili ahal izateko.';
 $string['pluginsoutofsync'] = '__XP pluginen bateraezintasuna!__
 
 _Maila gora XP_ eta  _Maila gora XP+_ arteko bateragarritasun-arazoak daude. Etorkizunean Maila gora XP+ plugina automatikoki desgaituko da bateragarria ez bada.  Hori gertatzea saihesteko, jarri zaitez harremanetan zure guneko kudeatzailearekin. [Irakurri gehiago]({$a->url})';
@@ -513,6 +518,7 @@ _Maila gora XP_ gune mailan erabiltzean, erabiltzaileak ezabatzeak txostenetik d
 
 Ziur zaude erabiltzaile honen puntuak eta erregistroak ezabatu nahi dituzula?';
 $string['reallyresetallcourselevelstodefaults'] = 'Ziur zaude ikastaro GUZTIETAKO mailak lehenetsitako mailetara berrabiarazi nahi dituzula? Ekintza honek ez du atzera bueltarik.';
+$string['reallyresetallcoursessettingstodefaults'] = 'Ziur zaude ikastaro GUZTIETAKO lehenetsitako ezarpenak berrabiarazi nahi dituzula? Ekintza honek ez du atzera bueltarik.';
 $string['reallyresetallcoursestodefaults'] = 'Ziur zaude ikastaro GUZTIETAKO arauak lehenetsitako arauetara berrabiarazi nahi dituzuela? Ekintza honek ez du atzera bueltarik.';
 $string['reallyresetallcoursevisualstodefaults'] = 'Ziur zaude ikastaro GUZTIETAKO itxura lehenetsitako itxurara berrabiarazi nahi dituzula? Ekintza honek ez du atzera bueltarik.';
 $string['reallyresetcourselevelstodefaults'] = 'Ziur zaude ikastaro mailak lehenetsitako balioetara berrabiarazi nahi dituzula? Ekintza honek ez dauka atzera bueltarik.';
@@ -530,10 +536,12 @@ $string['removefilter'] = 'Kendu iragazkia';
 $string['reportisempty'] = 'Txostena hutsik dago, ikasleek oraindik ez dute punturik irabazi.';
 $string['reportisemptyenrolstudents'] = 'Txostena hutsik dago, ikastaroan oraindik ez dago ikaslerik matrikulatuta?';
 $string['requires'] = 'Behar du';
+$string['resetallcoursessettingstodefaults'] = 'Egin klik esteka honetan [ikastaro guztietako lehenetsitako ezarpenak berrabiarazteko]({$a->url}). Edozein aldaketa egin badituzu, aurretik gorde beharko dituzu. Kontuan izan ekintza honek ikastaro guztietako ezarpenak gainidatziko dituela eta ez duela atzera bueltarik. Ekintza honek ez du eragiten lehenetsitako mailetan, itxuran eta arauetan, aukera horiek berrabiarazteko dagozkien kudeaketa-orrietara joan beharko duzu.';
 $string['resetallcoursestodefaults'] = 'Berrabiarazi ikastaro guztiak lehenetsitako balioetara';
 $string['resetallcoursestodefaultsintro'] = 'Egin klik azpiko botoian ikastaro guztiak lehenetsitako balioetara berrabiarazteko.';
 $string['resetcoursedata'] = 'Berrabiarazi ikastaroko datuak';
 $string['resetcourserulestodefaults'] = 'Berrabiarazi ikastaroko arauak lehenetsitako balioetara';
+$string['resetcourses'] = 'Berrabiarazi ikastaroak';
 $string['resetgroupdata'] = 'Berrabiarazi taldeko datuak';
 $string['resetladderparticiptionofeveryone'] = 'Berrabiarazi partaide guztien partaidetza-egoera';
 $string['resetlevelstodefaults'] = 'Berrabiarazi mailak lehenetsitako balioetara';
@@ -692,6 +700,9 @@ Puntuen estiloa erabiltzailearen puntuak ala zehaztutako balioa erakutsiko denar
 [xppoints 123 plain]
 ```';
 $string['shortcode:xpprogressbar'] = 'Oraingo erabiltzailea hurrengo mailara heltzeko aurrerapen-barra.';
+$string['shortcodeinactiveleaderboarddisabled'] = 'Lider-panela desgaituta dago une honetan, eta kode laburra ez-aktibo egongo da. Lider-panela bere ezarpenetatik gaitu dezakezu.';
+$string['shortcodexpladderembedintro'] = 'Hurrengo kode laburrarekin, lider-panela gune honetako edozein lekutan enbotatu daiteke. Aukera eta informazio gehiago aurkitu daiteke [documentazioan](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
+$string['shortcodexpteamladderembedintro'] = 'Hurrengo kode laburrarekin, lider-panela gune honetako edozein lekutan enbotatu daiteke. Aukera eta informazio gehiago aurkitu daiteke [documentazioan](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
 $string['sitewide'] = 'Gune mailan';
 $string['somefeaturesrequireotherplugins'] = 'Funtzionalitate batzuk plugin gehigarriak instalatzea behar dute.';
 $string['someoneelse'] = 'Beste norbait';

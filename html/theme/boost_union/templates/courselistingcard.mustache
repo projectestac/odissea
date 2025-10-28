@@ -31,6 +31,7 @@
                 "fullname": "course 3",
                 "hasprogress": true,
                 "progress": 10,
+                "progressstyleasbar": false,
                 "visible": true
             }
         ]
@@ -50,7 +51,7 @@
             <div class="coursecontacts mx-3 d-flex flex-wrap">
                 {{#contacts}}
                     {{#canviewuserdetails}}<a href="{{config.wwwroot}}/user/profile.php?id={{{id}}}" tabindex="-1">{{/canviewuserdetails}}
-                        <div class="contact mr-2 mb-2">
+                        <div class="contact me-2 mb-2">
                             <img src="{{{userpicture}}}" class="rounded-circle shadow-sm" alt="{{{contactname}}}" data-toggle="tooltip" title="{{{contactname}}}" />
                         </div>
                     {{#canviewuserdetails}}</a>{{/canviewuserdetails}}
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                 {{/showshortname}}
-                <a href="{{viewurl}}" class="aalink coursename mr-2 mb-1">
+                <a href="{{viewurl}}" class="aalink coursename me-2 mb-1">
                     <span class="sr-only">
                         {{#str}}aria:coursename, core_course{{/str}}
                     </span>
@@ -103,14 +104,19 @@
         <div class="d-flex align-items-start mt-0 mb-2">
             {{#showcourseprogress}}
                 {{#hasprogress}}
-                    <div class="border-0 pl-3 border-radius w-100">
-                        {{> block_myoverview/progress-bar}}
+                    <div class="border-0 px-3 border-radius w-100">
+                        {{#progressstyleasbar}}
+                            {{> theme_boost_union/progress-bar}}
+                        {{/progressstyleasbar}}
+                        {{^progressstyleasbar}}
+                            {{> block_myoverview/progress-bar}}
+                        {{/progressstyleasbar}}
                     </div>
                 {{/hasprogress}}
             {{/showcourseprogress}}
             {{#showcourseenrolicons}}
                 {{#hasenrolicons}}
-                    <div class="menu border-0 pr-3 ml-auto">
+                    <div class="menu border-0 pe-3 ms-auto">
                         <div class="enrolmenticons d-flex">
                             {{#enrolmenticons}}
                                 <div class="enrolmenticon">
@@ -137,7 +143,7 @@
     {{#showbuttons}}
         <div class="d-flex card-footer align-items-start mt-0 px-3 py-2 border-top">
             {{#showcoursegoto}}
-                <a href="{{viewurl}}" tabindex="-1" class="gotobutton btn btn-primary mr-2">
+                <a href="{{viewurl}}" tabindex="-1" class="gotobutton btn btn-primary me-2">
                     {{#str}}courselistinggoto, theme_boost_union{{/str}}
                 </a>
             {{/showcoursegoto}}

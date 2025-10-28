@@ -142,8 +142,12 @@ const getCurrentColors = (type) => map$2(type === forecolor ? colorCache.state()
   text: color,
   value: color
 }));
-const addColor = color => {
-  colorCache.add(color);
+const addColor = (color, format) => {
+  if (forecolor.includes(format)) {
+    colorCache.add(color);
+  } else {
+    colorCacheBg.add(color);
+  }
 };
 
 const fallbackColor = '#000000';
@@ -226,7 +230,7 @@ const applyColor = (editor, format, value, onChoice) => {
     const dialog = colorPickerDialog(editor);
     dialog(colorOpt => {
       colorOpt.each(color => {
-        addColor(color);
+        addColor(color, format);
         handleColorChange(editor, format, color);
         onChoice(color);
       });

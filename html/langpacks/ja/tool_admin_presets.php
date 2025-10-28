@@ -86,7 +86,7 @@ $string['rollbackshow'] = '{a} プリセットバージョン履歴';
 $string['selectfile'] = 'ファイルを選択する';
 $string['settingname'] = '設定名';
 $string['settingsapplied'] = '設定変更';
-$string['settingsappliednotification'] = '以下の設定変更が適用されていることを確認してください。
+$string['settingsappliednotification'] = '以下の設定変更が適用されていることをご確認ください。
 <br/>あなたの気が変わった場合、プリセットアクションメニューの「バージョン履歴を表示する」で設定変更を元に戻せます。';
 $string['settingsnotapplicable'] = 'このMoodleバージョンには適用できない設定';
 $string['settingsnotapplied'] = '未変更設定';

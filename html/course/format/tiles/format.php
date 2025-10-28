@@ -57,4 +57,4 @@ $outputclass = $format->get_output_classname('content');
 $widget = new $outputclass($format);
 echo $renderer->render($widget);
 
-// Other JS initialisation has been moved to render_content() in /course/format/tiles/classes/output/renderer.php.
+// JS initialisation has been moved to render_content() in /course/format/tiles/classes/output/renderer.php.

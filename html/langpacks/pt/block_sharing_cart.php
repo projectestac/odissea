@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backup'] = 'Copiar para Carrinho de Partilha';
 $string['copy_section'] = 'Copiar secção';
 $string['drop_here'] = 'Largar aqui...';
 $string['pluginname'] = 'Carrinho de Partilha';

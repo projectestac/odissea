@@ -25,12 +25,12 @@
  */
 
 // Require config.
-require(__DIR__.'/../../../config.php');
+require(__DIR__ . '/../../../config.php');
 
 // Require plugin libraries.
-require_once($CFG->dirroot.'/theme/boost_union/lib.php');
-require_once($CFG->dirroot.'/theme/boost_union/locallib.php');
-require_once($CFG->dirroot.'/theme/boost_union/flavours/flavourslib.php');
+require_once($CFG->dirroot . '/theme/boost_union/lib.php');
+require_once($CFG->dirroot . '/theme/boost_union/locallib.php');
+require_once($CFG->dirroot . '/theme/boost_union/flavours/flavourslib.php');
 
 // Get parameters.
 $action = required_param('action', PARAM_TEXT);
@@ -45,11 +45,13 @@ require_capability('theme/boost_union:configure', $context);
 
 // Prepare the page.
 $PAGE->set_context($context);
-$PAGE->set_url(new moodle_url('/theme/boost_union/flavours/edit.php', ['action' => $action]));
+$PAGE->set_url(new core\url('/theme/boost_union/flavours/edit.php', ['action' => $action]));
 $PAGE->set_cacheable(false);
-$PAGE->navbar->add(get_string('pluginname', 'theme_boost_union'), new moodle_url('/admin/category.php',
-        ['category' => 'theme_boost_union']));
-$PAGE->navbar->add(get_string('flavoursflavours', 'theme_boost_union'), new moodle_url('/theme/boost_union/flavours/overview.php'));
+$PAGE->navbar->add(get_string('pluginname', 'theme_boost_union'), new core\url(
+    '/admin/category.php',
+    ['category' => 'theme_boost_union']
+));
+$PAGE->navbar->add(get_string('flavoursflavours', 'theme_boost_union'), new core\url('/theme/boost_union/flavours/overview.php'));
 switch ($action) {
     case 'create':
         $PAGE->set_title(theme_boost_union_get_externaladminpage_title(get_string('flavourscreateflavour', 'theme_boost_union')));
@@ -102,14 +104,38 @@ switch ($action) {
             $id = $DB->insert_record('theme_boost_union_flavours', $data);
 
             // Store the files.
-            file_save_draft_area_files($data->flavours_look_logo, $context->id, 'theme_boost_union',
-                    'flavours_look_logo', $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_logocompact, $context->id, 'theme_boost_union',
-                    'flavours_look_logocompact', $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_favicon, $context->id, 'theme_boost_union',
-                    'flavours_look_favicon', $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_backgroundimage, $context->id, 'theme_boost_union',
-                    'flavours_look_backgroundimage', $id, ['subdirs' => 0, 'maxfiles' => 1]);
+            file_save_draft_area_files(
+                $data->flavours_look_logo,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logo',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_logocompact,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logocompact',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_favicon,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_favicon',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_backgroundimage,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_backgroundimage',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
 
             // Get the files again to remember the filenames (and ignore the dot folder in the filearea).
             $looklogofilename = theme_boost_union_flavours_get_filename('look_logo', $id);
@@ -130,20 +156,20 @@ switch ($action) {
             theme_reset_all_caches();
 
             // Purge the flavours cache as well as the users might get other flavours which apply after the creation.
-            // We would have preferred using cache_helper::purge_by_definition, but this just purges the session cache
+            // We would have preferred using \core_cache\helper::purge_by_definition, but this just purges the session cache
             // of the current user and not for all users.
-            cache_helper::purge_by_event('theme_boost_union_flavours_created');
+            \core_cache\helper::purge_by_event('theme_boost_union_flavours_created');
 
             // Show success notification.
             \core\notification::success(get_string('flavoursnotificationcreated', 'theme_boost_union'));
 
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
 
             // Otherwise if the form was cancelled.
         } else if ($form->is_cancelled()) {
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
         }
 
         break;
@@ -176,14 +202,38 @@ switch ($action) {
             $DB->update_record('theme_boost_union_flavours', $data);
 
             // Store the files.
-            file_save_draft_area_files($data->flavours_look_logo, $context->id, 'theme_boost_union',
-                    'flavours_look_logo', $data->id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_logocompact, $context->id, 'theme_boost_union',
-                    'flavours_look_logocompact', $data->id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_favicon, $context->id, 'theme_boost_union',
-                    'flavours_look_favicon', $data->id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_save_draft_area_files($data->flavours_look_backgroundimage, $context->id, 'theme_boost_union',
-                    'flavours_look_backgroundimage', $data->id, ['subdirs' => 0, 'maxfiles' => 1]);
+            file_save_draft_area_files(
+                $data->flavours_look_logo,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logo',
+                $data->id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_logocompact,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logocompact',
+                $data->id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_favicon,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_favicon',
+                $data->id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_save_draft_area_files(
+                $data->flavours_look_backgroundimage,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_backgroundimage',
+                $data->id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
 
             // Get the files again to remember the filenames (and ignore the dot folder in the filearea).
             $looklogofilename = theme_boost_union_flavours_get_filename('look_logo', $id);
@@ -204,20 +254,20 @@ switch ($action) {
             theme_reset_all_caches();
 
             // Purge the flavours cache as well as the users might get other flavours which apply after the editing.
-            // We would have preferred using cache_helper::purge_by_definition, but this just purges the session cache
+            // We would have preferred using \core_cache\helper::purge_by_definition, but this just purges the session cache
             // of the current user and not for all users.
-            cache_helper::purge_by_event('theme_boost_union_flavours_edited');
+            \core_cache\helper::purge_by_event('theme_boost_union_flavours_edited');
 
             // Show success notification.
             \core\notification::success(get_string('flavoursnotificationedited', 'theme_boost_union'));
 
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
 
             // Otherwise if the form was cancelled.
         } else if ($form->is_cancelled()) {
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
 
             // Otherwise if the form was not yet submitted.
         } else {
@@ -226,14 +276,38 @@ switch ($action) {
             $looklogocompactdraftitemid = file_get_submitted_draft_itemid('flavours_look_logocompact');
             $favicondraftitemid = file_get_submitted_draft_itemid('flavours_look_favicon');
             $backgroundimagedraftitemid = file_get_submitted_draft_itemid('flavours_look_backgroundimage');
-            file_prepare_draft_area($looklogodraftitemid, $context->id, 'theme_boost_union', 'flavours_look_logo',
-                    $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_prepare_draft_area($looklogocompactdraftitemid, $context->id, 'theme_boost_union', 'flavours_look_logocompact',
-                    $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_prepare_draft_area($favicondraftitemid, $context->id, 'theme_boost_union', 'flavours_look_favicon',
-                    $id, ['subdirs' => 0, 'maxfiles' => 1]);
-            file_prepare_draft_area($backgroundimagedraftitemid, $context->id, 'theme_boost_union', 'flavours_look_backgroundimage',
-                    $id, ['subdirs' => 0, 'maxfiles' => 1]);
+            file_prepare_draft_area(
+                $looklogodraftitemid,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logo',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_prepare_draft_area(
+                $looklogocompactdraftitemid,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_logocompact',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_prepare_draft_area(
+                $favicondraftitemid,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_favicon',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
+            file_prepare_draft_area(
+                $backgroundimagedraftitemid,
+                $context->id,
+                'theme_boost_union',
+                'flavours_look_backgroundimage',
+                $id,
+                ['subdirs' => 0, 'maxfiles' => 1]
+            );
             $flavour->flavours_look_logo = $looklogodraftitemid;
             $flavour->flavours_look_logocompact = $looklogocompactdraftitemid;
             $flavour->flavours_look_favicon = $favicondraftitemid;
@@ -290,20 +364,20 @@ switch ($action) {
             theme_reset_all_caches();
 
             // Purge the flavours cache as well as the users might get other flavours which apply after the deletion.
-            // We would have preferred using cache_helper::purge_by_definition, but this just purges the session cache
+            // We would have preferred using \core_cache\helper::purge_by_definition, but this just purges the session cache
             // of the current user and not for all users.
-            cache_helper::purge_by_event('theme_boost_union_flavours_deleted');
+            \core_cache\helper::purge_by_event('theme_boost_union_flavours_deleted');
 
             // Show success notification.
             \core\notification::success(get_string('flavoursnotificationdeleted', 'theme_boost_union'));
 
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
 
             // Otherwise if the form was cancelled.
         } else if ($form->is_cancelled()) {
             // Redirect to overview page.
-            redirect(new moodle_url('/theme/boost_union/flavours/overview.php'));
+            redirect(new core\url('/theme/boost_union/flavours/overview.php'));
 
             // Otherwise if the form was not yet submitted.
         } else {

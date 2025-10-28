@@ -43,6 +43,31 @@ $capabilities = array('moodle/course:create', 'moodle/category:manage');
 // Populate usercatlist with list of category id's with course:create and category:manage capabilities.
 $usercatlist = core_course_category::make_categories_list($capabilities);
 
+// XTEC ************ AFEGIT - Added filtering to param to prevent abuse.
+// 2025.10.01 @corentin.robin
+
+// List of forbidden patterns to remove from search.
+$blacklist_patterns = [
+    '/(https?:\/\/[^\s]+|www\.[^\s]+)/i',
+    '/\b(?:seo|search\s*engine\s*optimization|search\s*ranking|boost\s*ranking|google\s*ranking|increase\s*ranking|higher\s*ranking|keyword\s*optimization|keyword\s*density|meta\s*tags?|content\s*marketing|digital\s*marketing|growth\s*hacking|traffic|web\s*traffic|site\s*traffic|website\s*traffic|increase\s*traffic|boost\s*traffic|targeted\s*traffic|real\s*visitors?|unique\s*visitors?|page\s*views?|buy\s*traffic|back\s*links?|link\s*building|link\s*exchange|guest\s*posts?|sponsored\s*posts?|dofollow\s*links?|high\s*authority\s*links?|domain\s*authority|dr\s*\d+|da\s*\d+|ahrefs|semrush|moz\s*rank|organic\s*reach|social\s*media\s*growth|followers?|subscribers?|likes?|views?|boost\s*followers?|buy\s*followers?|buy\s*likes?|buy\s*subscribers?|increase\s*engagement|email\s*marketing|newsletter\s*blast|sms\s*marketing|cold\s*emails?|automation\s*tools?|lead\s*generation|generate\s*leads?|sales\s*funnel|conversion\s*rate|click\s*through\s*rate|CTR|CPC|cost\s*per\s*click|adwords|google\s*ads?|facebook\s*ads?|instagram\s*ads?|tiktok\s*ads?|ppc\s*campaign|sponsored\s*campaign|promo(?:tions?)?|special\s*offers?|discounts?|limited\s*time\s*offer|exclusive\s*deal|flash\s*sale|coupon\s*codes?|voucher\s*codes?|free\s*trial|free\s*access|bonus\s*offer|best\s*price|lowest\s*price|cheap|affordable|budget\s*deal|low\s*cost|guaranteed\s*results?|100%\s*satisfaction|money\s*back\s*guarantee)\b/i',
+    '/\b(?:sex|sexual|sexy|porn|porno|pornography|adult\s*content|adult\s*video|xxx|call\s*girls?|companions?|cams?|webcams?|live\s*cams?|sex\s*cams?|private\s*show|strip\s*cams?|onlyfans?|fansly|justforfans|nudes?|naked|leaks?|leaked\s*videos?|hardcore|softcore|striptease|camgirl|cam\s*boy|cheating\s*wife|cheating\s*husband|sugar\s*daddy|casual\s*sex|one\s*night\s*stand|dating\s*site|adult\s*dating)\b/i',
+    '/\b(?:hacked|hacking|hackers|\bhacker\w*|hack|\.com)\b/i',
+];
+
+// Clean the search query by removing forbidden patterns.
+$search = preg_replace($blacklist_patterns, '', $search);
+
+// Limit the length of the search query to prevent abuse.
+$search = substr($search, 0, 50);
+
+// Block any attempt to change language via URL parameter.
+$lang = optional_param('lang', '', PARAM_RAW);
+if ($lang) {
+    force_current_language('ca');
+}
+
+// ************ FI
+
 $search = trim(strip_tags($search)); // trim & clean raw searched string
 
 $site = get_site();

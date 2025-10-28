@@ -329,8 +329,8 @@ class mobile {
                 if (!empty($status->studentavailability) &&
                     time() > $attforsession->sessdate + ($status->studentavailability * 60)) {
                     unset($statuses[$status->id]);
-                    continue;
                     $data['disabledduetotime'] = true;
+                    continue;
                 }
                 $data['statuses'][] = ['stid' => $status->id, 'description' => $status->description];
             }

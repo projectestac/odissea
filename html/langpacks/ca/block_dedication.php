@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admin_filter_courseid'] = 'Nom del curs';
 $string['admin_filter_courseid_help'] = 'Filtra l\'informe pel nom del curs';
-$string['admin_filter_form'] = 'Configuració del bloc Dedicació del curs';
+$string['admin_filter_form'] = 'Configuració del bloc Dedicació al curs';
 $string['admin_filter_form_help'] = 'El temps s\'estima basat en els conceptes de Sessió i Durada de sessió aplicats a les entrades de registre.
 
 <strong>Clic:</strong> Cada vegada que un usuari accedeix a una pàgina de Moodle s\'emmagatzema una entrada de registre.
@@ -44,16 +44,16 @@ $string['admin_filter_mintime'] = 'Inici del període';
 $string['admin_filter_mintime_help'] = 'Considera només les entrades del registre després d\'aquesta data';
 $string['admin_filter_submit'] = 'Calcula';
 $string['allloglifetime'] = 'Manté l\'historial de la sessió per';
-$string['averagetimespent'] = '<strong>Temps mitjà dedicat al curs:</strong> {$a}';
+$string['averagetimespent'] = '<strong>Mitjana de temps dedicat al curs:</strong> {$a}';
 $string['cleanuptask'] = 'Tasca de neteja de l\'historial de sessions.';
 $string['collect_dedication'] = 'Recull dades per a la dedicació del bloc';
 $string['configallloglifetime'] = 'Especifica el temps que voleu conservar les dades sobre la durada de la sessió. Les sessions més antigues s\'eliminen automàticament.';
 $string['connectionratiorow'] = 'Connexions per dia';
-$string['dedication:addinstance'] = 'Permet d\'addició del bloc de dedicació del curs';
+$string['dedication:addinstance'] = 'Permet d\'addició del bloc de dedicació al curs';
 $string['dedication:myaddinstance'] = 'Permet afegir el bloc de dedicació a la pàgina del tauler';
 $string['dedication:viewreports'] = 'Permet veure els informes de dedicació';
 $string['dedicationall'] = 'Dedicació de tots els membres del curs. Feu clic en qualsevol nom per veure la dedicació detallada d\'aquest.';
-$string['dedicationrow'] = 'Dedicació del curs';
+$string['dedicationrow'] = 'Temps connectat al curs';
 $string['enrolmententity'] = 'Matrícula';
 $string['enrolmentmethod'] = 'Mètode d\'inscripció';
 $string['entity_dedication'] = 'Dedicació';
@@ -65,7 +65,7 @@ $string['ignore_sessions_limit_desc'] = 'Elimina les sessions més curtes, quals
 $string['lastupdated'] = 'Última actualització: {$a}';
 $string['period'] = 'Període des de <em>{$a->mintime}</em> a <em>{$a->maxtime}</em>';
 $string['perioddiff'] = '<strong>Elapsed time:</strong>  {$a}';
-$string['pluginname'] = 'Dedicació del curs';
+$string['pluginname'] = 'Dedicació al curs';
 $string['privacy:metadata'] = 'El connector block_dedication emmagatzema els temps que els usuaris han dedicat als cursos.';
 $string['privacy:metadata:block_dedication:courseid'] = 'Identificador del curs per a la dedicació de l\'usuari';
 $string['privacy:metadata:block_dedication:timespent'] = 'Temps dedicat al curs';

@@ -65,9 +65,11 @@ $string['enablemessaging'] = 'Gruppenmitteilungen';
 $string['enablemessaging_help'] = 'Wenn aktiv, können Gruppenmitglieder an andere Mitglieder der Gruppe Mitteilungen senden.';
 $string['enablemessagingaction'] = 'Mitteilungen aktivieren';
 $string['encoding'] = 'Codierung';
-$string['enrolmentkey'] = 'Einschreibeschlüssel';
-$string['enrolmentkey_help'] = 'Ein Einschreibeschlüssel erlaubt die Einschränkung von Kurszugängen auf diejenigen, die den Einschreibeschlüssel kennen. Falls zusätzlich ein Einschreibeschlüssel für eine Gruppe angegeben ist, dann dient dieser Schlüssel dem Kurszugang, aber auch der automatischen Zuweisung der Nutzer zur richtigen Gruppe.';
-$string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
+$string['enrolmentkey'] = 'Einschreibekennwort';
+$string['enrolmentkey_help'] = 'Ein Einschreibekennwort schränkt den Kurszugang auf diejenigen ein, die das Einschreibekennwort kennen. Falls zusätzlich Einschreibekennwörter für Gruppen angegeben werden, dienen diese Einschreibekennwörter nicht nur dem Kurszugang, sondern auch der automatischen Zuweisung zur richtigen Gruppe.
+
+Hinweis: In den Einstellungen zur Selbsteinschreibung müssen Einschreibekennwörter für Gruppen aktiviert sein und zusätzlich muss ein Einschreibekennwort für den Kurs vorhanden sein.';
+$string['enrolmentkeyalreadyinuse'] = 'Dieses Einschreibekennwort wird bereits für eine andere Gruppe benutzt.';
 $string['erroraddremoveuser'] = 'Fehler beim Hinzufügen/Entfernen von {$a} in der Gruppe';
 $string['erroraddtogroup'] = 'Ungültiger Wert für addtogroup. Der Wert sollte 0 sein, wenn kein Gruppenmodus aktiviert ist, oder 1, wenn eine neue Gruppe erstellt werden soll.';
 $string['erroraddtogroupgroupname'] = 'Sie können nicht den Gruppennamen festlegen, wenn addtogroup gesetzt ist.';
@@ -147,7 +149,7 @@ $string['importgroups_help'] = 'Gruppen können über eine Textdatei angelegt we
 * Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
 * Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
 * Notwendiges Feld ist groupname (Gruppenname)
-* Optionale Felder sind groupidnumber (Gruppen-ID), description (Beschreibung), enrolmentkey (Gruppenschlüssel), groupingname (Gruppierungsname), enablemessaging (Mitteilungen aktivieren)
+* Optionale Felder sind groupidnumber (Gruppen-ID), description (Beschreibung), enrolmentkey (Einschreibekennwort für Gruppe), groupingname (Gruppierungsname), enablemessaging (Mitteilungen aktivieren)
 * Die Felder müssen in der englischen Bezeichnung angegeben sein';
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Nur aktive Einschreibungen einbeziehen';

@@ -1,0 +1,372 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'qtype_coderunner', language 'it', version '4.4'.
+ *
+ * @package     qtype_coderunner
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['HIDE'] = 'Nascondi';
+$string['HIDE_IF_FAIL'] = 'Nascondi in caso di fallimento';
+$string['HIDE_IF_SUCCEED'] = 'Nascondi in caso di successo';
+$string['SHOW'] = 'Visualizza';
+$string['aborted'] = 'Il test è stato arrestato per un errore';
+$string['ace-language'] = 'Linguaggio utilizzato dall\'editor Ace';
+$string['ace_gapfillerui_ui_source_descr'] = 'Inserisci "globalextra" per prendere il codice da mostrare dal campo globalextra oppure "test0" per prendere il codice dal campo del primo test';
+$string['ace_ui_notready'] = 'L\'editor Ace non è pronto. Prova a ricaricare la pagina?';
+$string['aceui_auto_switch_light_dark_descr'] = 'Consenti alle impostazioni del browser o del sistema operativo di sovrascrivere il tema chiaro impostato sull\'editor Ace';
+$string['aceui_font_size_descr'] = 'Dimensione del font dell\'editor Ace';
+$string['aceui_import_from_scratchpad_descr'] = 'Vero per permettere all\'editor Ace di ricevere in formato JSON la risposta utilizzata dallo scratchpad UI e estrarre il codice della risposta da lì. Facilità il cambio di UI. Lasciare vero a meno che si voglia permettere a Ace di modificare gli oggetti JSON con una chiave "answer_code"';
+$string['aceui_live_autocompletion_descr'] = 'Abilita la modalità di autocompletamento dell\'editor Ace';
+$string['aceui_theme_descr'] = 'Tema dell\'editor Ace. Il default è il tema chiaro "textmate". Un tema alternativo scuro è "tomorrow_night". Il tema chiaro viene sovrascritto dalle preferenze dell\'utente - Vedi auto_switch_dark';
+$string['addingcoderunner'] = 'Aggiunta di una nuova domanda CodeRunner';
+$string['advanced_customisation'] = 'Personalizzazione avanzata';
+$string['ajax_error'] = '*** ERRORE AJAX. NON SALVARE!! ***';
+$string['allok'] = 'Tutti i test sono stati superati';
+$string['allornone'] = 'Il codice di test deve essere fornito per tutti i casi di test oppure per nessuno';
+$string['allornothing'] = 'Valutazione tutto-o-niente';
+$string['allornothing_help'] = 'Se è spuntato \'tutto-o-niente\' tutti i casi di test devono essere passati per ottenere dei punti. Altrimenti, si ottengono dei punteggi sommando i punteggi di tutti i casi di test passati con successo e si ottiene il punteggio come frazione del punteggio massimo della domanda.
+
+Il punteggio per ogni caso di test può essere specificato solo se non è spuntata la casella \'tutto-o-niente\'.
+
+Se si utilizza un template di valutazione che riconosce punteggi parziali per i casi di test passati con successo, la casella \'tutto-o-niente\' dovrebbe di solito rimanere non spuntata.';
+$string['allowattachments'] = 'Consenti allegati';
+$string['allowedfilenames'] = 'Nomi di file consentiti';
+$string['allowedfilenamesregex'] = 'Nomi di file consentiti (regular expression)';
+$string['allowmultiplestdins'] = 'Consenti stdins multipli';
+$string['answer'] = 'Risposta';
+$string['answerbox_group'] = 'Campo di risposta';
+$string['answerboxlines'] = 'Righe';
+$string['answerpreload'] = 'Testo predefinito nel campo di risposta';
+$string['answerpreload_help'] = 'Il testo inserito qui sarà precaricato nel campo di risposta dello studente';
+$string['answerprompt'] = 'Risposta';
+$string['answerrequired'] = 'Per favore fornisci una risposta (non vuota)';
+$string['answertooshort'] = 'Risposta troppo corta. Deve essere almeno {$a} caratteri.';
+$string['answerunchanged'] = 'Devi completare o modificare la risposta precaricata';
+$string['asolutionis'] = 'Visualizza/Nascondi soluzione dell\'autore:';
+$string['atleastonetest'] = 'Devi fornire almeno un caso test per questa domanda.';
+$string['attachmentoptions'] = 'Opzioni degli allegati';
+$string['attachmentsoptional'] = 'Gli allegati sono opzionali';
+$string['attachmentsrequired'] = 'Gli allegati sono obbligatori';
+$string['attachmentsrequired_help'] = 'Questa opzione specifica il minimo numero di allegati richiesti perché la risposta sia valutata';
+$string['autotagbycategoryindextitle'] = 'Tag automatico di domande Coderunner';
+$string['autotagbycategorytitle'] = 'Tag automatico di Coderunner per categoria';
+$string['bad_dotdotdot'] = 'Uso scorretto di \'...\'. Deve essere alla fine, dopo due penalità numeriche in ordine crescente';
+$string['bad_empty_splitter'] = 'Il test splitter non può essere vuoto quando si utilizza un template combinator';
+$string['bad_new_prototype_name'] = 'Nome non consentito per il nuovo prototipo perché già in utilizzo';
+$string['badacelangstring'] = 'Stringa di linguaggio Ace non valida';
+$string['badcputime'] = 'Limite di tempo della CPU deve essere lasciato bianco o bisogna mettere un intero maggiore di zero';
+$string['bademptyprecheck'] = 'Falliti i controlli preliminari ottenendo il seguente output inatteso.';
+$string['badfilenamesregex'] = 'Espressione regolare non valida';
+$string['badfiles'] = 'Nome/i di file Non permessi: {$a}';
+$string['badjson'] = 'Output JSON malformato dal valutatore combinator. L\'output era: {$a->output}';
+$string['badjsonfunc'] = 'funzione JSON integrata non conosciuta ({$a->func})';
+$string['badmemlimit'] = 'Limite di memoria deve essere lasciato bianco o bisogna mettere un intero non negativo';
+$string['badpenalties'] = 'I criteri di penalizzazione devono consistere in una lista separata da virgole di numeri nell\'intervallo [0,100]';
+$string['badquestion'] = 'Errore nella domanda';
+$string['badrandomintarg'] = 'Argomento sbagliato per la funzione @randomint di JSON';
+$string['badrandompickarg'] = 'Argomento sbagliato per la funzione @randompic di JSON';
+$string['badsandboxparams'] = 'Il campo \'Other\' (parametri del sandbox) deve essere vuoto o un record JSON valido';
+$string['badtemplateparams'] = 'La valutazione dei parametri del template deve dare come risultato vuoto o un record JSON valido. Ottenuto: <pre class="templateparamserror">{$a}</pre>';
+$string['baduiparams'] = 'I parametri UI devono essere vuoti o un record JSON valido';
+$string['brokencombinator'] = 'Erano attesi {$a->numtests} risultati di test, ottenuti {$a->numresults}. Forse troppo output o un errore nella domanda?';
+$string['brokentemplategrader'] = 'Output sbagliato dal valutatore: {$a->output}. L\'esecuzione del tuo programma potrebbe essere stata interrota (esempio: timeout o superato il limite di memoria)';
+$string['bulkquestiontester'] = 'Il <a href="{$a->link}">script per test di massa</a> verifica che le risposte fornite come esempio per tutte le domande nel contesto corrente siano valutate correttamente. È utile solo dopo che siano state aggiunte alcune domande con delle risposte d\'esempio; l\'installazione iniziale non ne contiene.';
+$string['bulktestallincontext'] = 'Testa tutto';
+$string['bulktestcontinuefromhere'] = 'Esegui nuovamente o riprendi a partire da qui';
+$string['bulktestindextitle'] = 'Test di massa Coderunner';
+$string['bulktestrun'] = 'Esegui tutti i test di tutte le domande nel sistema (processo lento, solo per amministratori)';
+$string['bulktesttitle'] = 'Test delle domande in {$a}';
+$string['cachedef_coderunner_grading_cache'] = 'Salvare i risultati di valutazione nella cache in modo da evitare di andare sul server Jobe troppo spesso';
+$string['cannotrunprototype'] = 'Questo è un prototipo e non può essere eseguito. Se vuoi utilizzare questo prototipo, crea una nuova domanda e utilizza questo come tipo di domanda.';
+$string['coderunner'] = 'Codice del programma';
+$string['coderunner:sandboxwsaccess'] = 'Consenti accesso al sandbox Jobe attraverso web service';
+$string['coderunner:viewhiddentestcases'] = 'Visualizza i casi di test nascosti durante la revisione delle domande';
+$string['coderunner_grading_cache'] = 'Salvare i risultati di valutazione nella cache in modo da evitare di andare sul server Jobe troppo spesso';
+$string['coderunner_install_testsuite_failures'] = 'Test falliti';
+$string['coderunner_install_testsuite_intro'] = 'Questa pagina ti permette di testare che le domande Coderunner con una risposta di esempio stiano funzionando correttamente';
+$string['coderunner_install_testsuite_noanswer'] = 'Domande senza risposta di esempio';
+$string['coderunner_install_testsuite_title'] = 'Una suite di test per le risposte di esempio di Coderunner';
+$string['coderunner_link'] = 'question/type/coderunner';
+$string['coderunner_question_type'] = 'Tipo di domanda di Coderunner';
+$string['coderunnercategories'] = 'Categorie con domande Coderunner';
+$string['coderunnercontexts'] = 'Contesti con domande Coderunner';
+$string['coderunnersettings'] = 'Impostazioni di Coderunner';
+$string['coderunnersummary'] = 'La risposta è il codice in un linguaggio di programmazione che viene eseguito nell\'ambito di un insieme di casi test per determinarne la correttezza';
+$string['coderunnertype'] = 'Tipo di domanda';
+$string['coderunnertype_help'] = 'Seleziona il linguaggio di programmazione e il tipo di domanda. Una volta che il tipo è stato selezionato, è possibile visualizzare i dettagli nel pannello \'Tipo di domanda\' sotto.';
+$string['coderunnerwssettings'] = 'Impostazione del web-service di Sandbox';
+$string['columncontrols'] = 'Tabella dei risultati';
+$string['columncontrols_help'] = 'Queste caselle di spunta selezionano quali colonne della tabella dei risultati devono essere mostrate agli studenti dopo l\'invio';
+$string['confirm_proceed'] = 'Se salvi questa domanda con \'Personalizza\' non spuntato, tutte le personalizzazioni andranno perse. Procedere?';
+$string['confirmreset'] = 'Scarta tutte le modifiche a questa domanda e ripristina il campo di risposta al suo valore predefinito?';
+$string['corruptuiparams'] = 'I parametri UI per questa domanda o il suo prototipo sono sbagliati. Procedere con cautela.';
+$string['cputime'] = 'Tempo limite (s)';
+$string['customisation'] = 'Personalizzazione';
+$string['customisationcontrols'] = 'Personalizzazione';
+$string['customise'] = 'Personalizza';
+$string['datafiles'] = 'File di supporto';
+$string['datafiles_help'] = 'Qualunque file caricato qui sarà aggiunto alla directory di lavoro quando il programma con template espanso viene eseguito. Questo permette di aggiungere facilmente un grosso set di dati o file di supporto.';
+$string['default_penalty_regime'] = 'Criterio di penalizzazione di default';
+$string['default_penalty_regime_desc'] = 'Il criterio di penalizzazione di default che si applica alle nuove domande: è rappresentato con una lista separata da virgole contenente le percentuali di penalizzazione. Opzionalmente si può concludere la lista con un ", ..." per rappresentare una lista che continua con progressione aritmetica';
+$string['display'] = 'Visualizza';
+$string['downloadquizattempts'] = 'Scarica i tentativi del quiz';
+$string['downloadquizattemptshelp'] = 'Clicca il corso appropriato e/o il pulsante di download
+        per il corso e il quiz che desideri scaricare. I numeri tra parentesi
+        dopo i corsi sono il numero di quiz nel corso con almeno un tentativo
+        svolto. Il numero tra parentesi dopo il nome del quiz rappresenta
+        il numero di tentativi inviati.';
+$string['duplicateprototype'] = 'Questa domanda era stata definita di tipo  \'{$a->crtype}\' ma il prototipo non è unico nelle seguenti domande: {$a->outputstring} Per favore rimuovi tutte le istanze del prototipo aggiuntive, lasciandone una sola, oppure seleziona un altro tipo di domanda';
+$string['editingcoderunner'] = 'Modifica di una domanda CodeRunner';
+$string['empty_new_prototype_name'] = 'Il nome del nuovo tipo di domanda non può essere vuoto';
+$string['emptypenaltyregime'] = 'I criteri di penalizzazione devono essere definiti (a partire dalla versione 3.1)';
+$string['emptysandboxlanguage'] = 'Il linguaggio del Sandbox non può essere vuoto durante la creazione di un prototipo';
+$string['enable'] = 'Abilita';
+$string['enable_diff_check'] = 'Abilita il pulsante "Visualizza differenze"';
+$string['enable_diff_check_desc'] = 'Visualizza agli studenti un pulsante "Visualizza differenze" se la risposta è sbagliata ed è in utilizzo una valutazione a corrispondenza esatta.';
+$string['enable_sandbox_desc'] = 'Consenti l\'uso di un sandbox specificato per eseguire le risposte degli studenti';
+$string['enable_sandbox_ws'] = 'Abilita il web service di sandbox';
+$string['enable_sandbox_ws_desc'] = 'Abilita il web service per permettere accesso
+diretto al server sandbox (di solito Jobe). FUNZIONALITA\' SPERIMENTALE.';
+$string['enablecombinator'] = 'Abilita combinator';
+$string['enter_to_submit'] = 'Premi invio per inviare';
+$string['equalitygrader'] = 'Corrispondenza esatta';
+$string['error_access_denied'] = 'Accesso al server sandbox negato';
+$string['error_excessive_output'] = 'Output eccessivo';
+$string['error_jobe_unknown'] = 'Errore sconosciuto dal server Jobe';
+$string['error_json_params'] = 'Il set di parametri non è in un formato JSON corretto';
+$string['error_loading_prototype'] = 'Errore nel caricamento del prototipo. Forse problemi di rete o il server in down?';
+$string['error_loading_ui_descr'] = 'Errore nel caricamento della UI. Forse problemi di rete o il server in down?';
+$string['error_memory_limit'] = 'Superato il limite di memoria';
+$string['error_sandbox_server_overload'] = 'Server Jobe in sovraccarico';
+$string['error_submission_limit_reached'] = 'Superato il limite di richieste al sandbox Jobe';
+$string['error_timeout'] = 'Superato il tempo limite';
+$string['error_unknown_language'] = 'Richiesto un linguaggio sconosciuto';
+$string['error_unknown_runtime'] = 'Errore a runtime sconosciuto';
+$string['erroroninit'] = '**** ERRORE NELL\'INIZIALIZZAZIONE DELLA DOMANDA ****<br>{$a->error}<br>';
+$string['errorstring-accessdenied'] = 'Accesso al sandbox negato';
+$string['errorstring-autherror'] = 'Non sei autorizzato all\'utilizzo del sandbox';
+$string['errorstring-blocked-url'] = 'Questo URL è bloccato. Controlla l\'URL del server JOBE e le impostazioni di sicurezza di HTTP di Moodle';
+$string['errorstring-duplicate-name'] = 'Rinominare il nome della classe; questo nome va in conflitto con i file di supporto di questa domanda';
+$string['errorstring-jobe-failed'] = 'Richiesta fallita al server Jobe';
+$string['errorstring-jobe400'] = 'Errore dal server sandbox Jobe';
+$string['errorstring-ok'] = 'OK';
+$string['errorstring-overload'] = 'Il job non è stato eseguito a causa di un sovraccaricamento del server. Riprovare più tardi?';
+$string['errorstring-pastenotfound'] = 'Richiesta dello stato di un job non esistente';
+$string['errorstring-submissionfailed'] = 'Fallita la richiesta al Sandbox';
+$string['errorstring-submissionlimitexceeded'] = 'Raggiunto il limite di richieste al Sandbox server';
+$string['errorstring-unknown'] = 'Errore inatteso durante l\'esecuzione del codice. Il server sandbox potrebbe essere indisponibile o sovraccarico. Riprova a breve?';
+$string['errorstring-wronglangid'] = 'Richiesto linguaggio non esistente';
+$string['event_sandboxwebserviceexec'] = 'CR sandbox exec';
+$string['event_sandboxwebserviceexec_desc'] = 'È stato eseguito un job tramite il servizio web del sandbox di CodeRunner.';
+$string['exit_fullscreen'] = 'Esci da schermo intero';
+$string['expand'] = 'Espandi';
+$string['expandtitle'] = 'Visualizza le categorie della domanda';
+$string['expected'] = 'Output atteso';
+$string['expected_help'] = 'L\'output atteso dal test. Nel template si può prendere con {{TEST.expected}}.';
+$string['expectedcolhdr'] = 'Atteso';
+$string['exportthisquestion'] = 'Esporta questa domanda';
+$string['exportthisquestion_help'] = 'Questo creerà un file di esportazione in formato Moodle XML contenente solo questa domanda. Ad esempio potrebbe essere utile se pensi che questa domanda dimostri un bug di CodeRunner che vorresti segnalare agli sviluppatori.';
+$string['extra'] = 'Dati extra del template';
+$string['extra_help'] = 'Un utile campo di testo extra per il template, accessibile come {{TEST.extra}}';
+$string['extractcodefromjson'] = 'Conforme ad Ace/Scratchpad';
+$string['fail'] = 'Fallimento';
+$string['failedhidden'] = 'Il tuo codice ha fallito su dei casi di test nascosti';
+$string['failedntests'] = 'Fallito/i {$a->numerrors} caso/i di test';
+$string['failedtesting'] = 'Test fallito.';
+$string['fails'] = 'Fallimenti';
+$string['feedback'] = 'Feedback';
+$string['feedback_help'] = 'Scegliere \'Impostato dal quiz\' per utilizzare le opzioni di revisione del quiz (in particolare
+la voce \'Feedback specifico\') nel controllo della visualizzazione della tabella dei risultati. Utilizzare invece \'Visualizza sempre\' per mostrare la tabella dei risultati o \'Nascondi sempre\' per nasconderla, indipendentemente dalle impostazioni del quiz';
+$string['feedback_hide'] = 'Nascondi sempre';
+$string['feedback_quiz'] = 'Impostato dal quiz';
+$string['feedback_show'] = 'Visualizza sempre';
+$string['fileheader'] = 'File di supporto';
+$string['filenamesexplain'] = 'Descrizione';
+$string['filenamesregex'] = 'Espressione regolare';
+$string['filloutoneanswer'] = 'Devi inserire del codice sorgente che soddisfi le specifiche. Il codice che inserisci sarà eseguito per determinare la sua correttezza e verrà attribuito un punteggio di conseguenza.';
+$string['firstfailure'] = 'Primo caso di test fallito: {$a}';
+$string['forexample'] = 'Per esempio';
+$string['fullscreen'] = 'Schermo intero';
+$string['gapfillerui_delimiters_descr'] = 'Un array di stringhe, costituito da due elementi, usato per aprire e chiudere la descrizione del gap';
+$string['gapfillerui_sync_interval_secs_descr'] = 'L\'intervallo di tempo in secondi tra le chiamate per sincronizzare il contenuto della UI alla risposta della domanda. 0 Per non avere una sincronizzazione automatica';
+$string['gapfillerui_ui_source_descr'] = '"globalextra" per prendere l\'HTML da mostrare dal campo globalextra oppure "test0" per prenderlo dal campo di testo del primo caso test';
+$string['giveup'] = 'Pulsante di arresto';
+$string['giveup_aftermaxmarks'] = 'Disponibile una volta che il punteggio non può essere migliorato';
+$string['giveup_always'] = 'Sempre disponibile';
+$string['giveup_never'] = 'Mai disponibile';
+$string['globalextra'] = 'Global extra';
+$string['goodemptyprecheck'] = 'Passato';
+$string['gotcolhdr'] = 'Ottenuto';
+$string['grader'] = 'Valutatore';
+$string['grading'] = 'Valutazione';
+$string['gradingcontrols'] = 'Controlli di valutazione';
+$string['graph_ui_invalidserialisation'] = 'GraphUI: serializzazione non valida';
+$string['graphui_fontsize_descr'] = 'La dimensione del testo (in punti) usata per le etichette di nodi e archi';
+$string['graphui_isdirected_descr'] = 'Vero se vengono rilevati degli archi';
+$string['hidden'] = 'Nascosto';
+$string['hidecheck'] = 'Nascondi il controllo';
+$string['hidedetails'] = 'Nascondi dettagli';
+$string['hidedifferences'] = 'Nascondi differenze';
+$string['hiderestiffail'] = 'Nascondi rimanenti in caso di fallimento';
+$string['inputcolhdr'] = 'Input';
+$string['is_prototype'] = 'Usa come prototipo';
+$string['jobe_host'] = 'Server Jobe';
+$string['jobe_host_ws'] = 'Server Jobe da utilizzare per web service';
+$string['language'] = 'Linguaggio del Sandbox';
+$string['languages'] = 'Linguaggi';
+$string['languageselectlabel'] = 'Linguaggio';
+$string['mark'] = 'Punteggio';
+$string['marking'] = 'Distribuzione del punteggio';
+$string['markinggroup'] = 'Punteggii';
+$string['maxfilesize'] = 'Dimensione del file massima concessa (in bytes)';
+$string['memorylimit'] = 'Limite di memoria (MB)';
+$string['missinganswers'] = 'Risposte mancanti';
+$string['missingorbadfraction'] = 'Frazione errata o mancante';
+$string['missingoutput'] = 'Devi fornire l\'output atteso per questo caso di test';
+$string['missingprototypes'] = 'Prototipo assente';
+$string['missingprototypewhenrunning'] = 'Domanda rotta (il prototipo \'{$a->crtype}\' è assente o duplicato). Impossibile lanciare l\'esecuzione';
+$string['missinguiparams'] = 'I seguenti parametri UI sono richiesti ma non sono stati definiti:';
+$string['morehidden'] = 'Anche alcuni casi di test nascosti sono falliti.';
+$string['multipledefaults'] = 'Al più un linguaggio può essere selezionato di default';
+$string['multipleprototypes'] = 'Trovati multipli prototipi per il tipo \'{$a->crtype}\'';
+$string['mustrequirefewer'] = 'Non puoi richiedere più allegati di quanti ne permetti';
+$string['nearequalitygrader'] = 'Corrispondenza quasi-esatta';
+$string['negativeorzeromark'] = 'I punteggi devono essere maggiori di zero';
+$string['nodetailsavailable'] = 'Seleziona un tipo di domanda per avere aiuto dettagliato';
+$string['noerrorsallowed'] = 'Il tuo codice deve passare tutti i test per guadagnare dei punti. Prova di nuovo';
+$string['nolanguage'] = 'Per favore, prima scegli la lingua';
+$string['nonnumericmark'] = 'Punteggio non numerico.';
+$string['nooutput'] = '< Nessun output! >';
+$string['noqtype'] = 'Nessun tipo di domanda selezionato';
+$string['nosampleanswer'] = 'Nessuna risposta di esempio';
+$string['nouiparameters'] = 'La UI {$a->uiname} non prende parametri in ingresso';
+$string['options'] = 'Opzioni';
+$string['ordering'] = 'Ordinamento';
+$string['outputdisplayarea_invalid_mode'] = 'Modalità di visualizzazione dell\'output non valida';
+$string['outputdisplayarea_missing_image_extension'] = 'Non posso mostrare l\'immagine, includo l\'estensione del file nel nome del file:';
+$string['outputdisplayarea_missing_json_fields'] = 'Il JSON di output non contiene dei campi obbligatori:';
+$string['penaltyregime'] = '(Criteri di penalizzazione: {$a} %)';
+$string['penaltyregimelabel'] = 'Criteri di penalizzazione:';
+$string['pluginname'] = 'CodeRunner';
+$string['pluginname_link'] = 'question/type/coderunner';
+$string['pluginnameadding'] = 'Aggiunta di una domanda CodeRunner';
+$string['pluginnameediting'] = 'Modifica di una domanda CodeRunner';
+$string['pluginnamesummary'] = 'CodeRunner: esegui codice sorgente inviato dagli studenti in un sandbox';
+$string['precheck'] = 'Controlli preliminari';
+$string['precheck_all'] = 'Tutti';
+$string['precheck_disabled'] = 'Disabilitato';
+$string['precheck_empty'] = 'Vuoto';
+$string['precheck_examples'] = 'Esempi';
+$string['precheck_only'] = 'Solo controlli preliminari';
+$string['precheck_selected'] = 'Selezionato';
+$string['prototypeQ'] = 'È un prototipo?';
+$string['prototype_load_failure'] = 'Errore nel caricamento del prototipo';
+$string['prototypeexists'] = 'Questo è un prototipo; impossibile cambiare il tipo di domanda';
+$string['prototypeextra'] = 'Prototipo extra';
+$string['prototypeusageindex'] = 'Corsi disponibili';
+$string['questioncheckboxes'] = 'Personalizzazione';
+$string['questionloaderror'] = 'Caricamento della domanda fallito';
+$string['questionpreview'] = 'Anteprima della domanda';
+$string['questiontype'] = 'Tipo della domanda';
+$string['questiontype_required'] = 'Devi selezionare il tipo di domanda';
+$string['questiontypedetails'] = 'Dettagli del tipo di domanda';
+$string['regexgrader'] = 'Espressione regolare';
+$string['replacedollarscount'] = 'Questa categoria contiene {$a} domande CodeRunner.';
+$string['replaceexpectedwithgot'] = 'Premi sul pulsante &lt;&lt; per rimpiazzare l\'output atteso di questo caso di test con l\'effettivo output ottenuto dalla risposta d\'esempio';
+$string['reset'] = 'Ripristina risposta';
+$string['resethover'] = 'Scarta le modifiche e ripristina la risposta al valore predefinito';
+$string['resultcolumnheader'] = 'Risultati';
+$string['resultcolumns'] = 'Colonne del risultato';
+$string['resultstring-abnormaltermination'] = 'Interruzione anomala';
+$string['resultstring-compilationerror'] = 'Errore di compilazione';
+$string['resultstring-illegalsyscall'] = 'Chiamata ad una funzione non valida';
+$string['resultstring-internalerror'] = 'CodeRunner error (IE): per favore, avvisa un tutor';
+$string['resultstring-memorylimit'] = 'Superato il limite di memoria';
+$string['resultstring-norun'] = 'Nessuna esecuzione';
+$string['resultstring-outputlimit'] = 'Output eccessivo';
+$string['resultstring-runtimeerror'] = 'Errore di esecuzione';
+$string['resultstring-sandboxoverload'] = 'Server sandbox sovraccarico. Riprova tra poco';
+$string['resultstring-sandboxpending'] = 'CodeRunner error (PD): per favore, avvisa un tutor';
+$string['resultstring-sandboxpolicy'] = 'CodeRunner error (BP): per favore, avvisa un tutor';
+$string['resultstring-success'] = 'OK';
+$string['resultstring-timelimit'] = 'Superato il tempo limite';
+$string['run_failed'] = 'Non è stato possibile eseguire i test';
+$string['sampleanswerattachments'] = 'Allegati all\'esempio di risposta';
+$string['sampleanswerattachments_help'] = 'Se l\'esempio di risposta necessita di allegati, caricali qui';
+$string['sandboxcontrols'] = 'Sandbox';
+$string['sandboxerror'] = 'Errori dal sandbox [{$a->sandbox}]: {$a->message}';
+$string['sandboxparams'] = 'Parametri';
+$string['scratchpad_ui_request_failed'] = 'Richiesta al server sandbox fallita.';
+$string['scratchpadui_button_name_descr'] = 'Testo del pulsante di esecuzione.';
+$string['scratchpadui_def_button_name'] = 'Eseguit';
+$string['scratchpadui_def_prefix_name'] = 'Esegui anche il contenuto del campo Risposta';
+$string['scratchpadui_def_scratchpad_name'] = 'Scratchpad';
+$string['scratchpadui_help_text_descr'] = 'Testo di aiuto da mostrare';
+$string['scratchpadui_prefix_name_descr'] = 'Testo relativo alla casella di spunta "Esegui anche il contenuto del campo Risposta"';
+$string['seethisquestioninthequestionbank'] = 'Vedi questa domanda nel deposito domande';
+$string['showcolumns'] = 'Visualizza colonne:';
+$string['showdetails'] = 'Visualizza dettagli';
+$string['showdifferences'] = 'Visualizza differenze';
+$string['showsource'] = 'Debugging del template';
+$string['sourcecodeallruns'] = 'Debug: codice sorgente da tutte le esecuzioni dei test';
+$string['stdin'] = 'Standard Input';
+$string['stdin_help'] = 'Standard input forniti al test, disponibili nel template come {{TEST.stdin}}';
+$string['student_answer'] = 'Risposta dello studente';
+$string['submitbuttons'] = 'Pulsanti di invio';
+$string['supportscripts'] = 'Script di supporto';
+$string['syntax_errors'] = 'Errore/i di sintassi';
+$string['templateparams'] = 'Parametri del template';
+$string['templateparamsevalpertry'] = 'Valuta per studente';
+$string['templateparamslang'] = 'Preprocessore';
+$string['testallincategory'] = 'Testa tutte le domande in questa categoria';
+$string['testalltitle'] = 'Testa tutte le domande in questo contesto';
+$string['testcase'] = 'Caso di test {$a}';
+$string['testcasecontrols'] = 'Proprietà del test:';
+$string['testcases'] = 'Casi di test';
+$string['testcode'] = 'Codice del test';
+$string['testcode_help'] = 'Il codice del test, disponibile nel template come {{TEST.testcode}}';
+$string['testcolhdr'] = 'Test';
+$string['testingquestion'] = 'Test della domanda {$a}';
+$string['testtype_both'] = 'Entrambi';
+$string['testtype_normal'] = 'Solo controllo';
+$string['testtype_precheck'] = 'Solo controllo preliminare';
+$string['twigerror'] = 'Errore Twig {$a}';
+$string['twigerrorintest'] = 'Errore Twig nel processare questo test {$a}';
+$string['type_header'] = 'Tipo di domanda CodeRunner';
+$string['typename'] = 'Tipo di domanda';
+$string['uichanged'] = 'UI cambiata. Salva e ricarica la pagina per vedere e modificare eventuali parametri UI disponibili';
+$string['uicontrols'] = 'Input UIs';
+$string['uiparamdefault'] = 'Default';
+$string['uiparamdesc'] = 'Descrizione';
+$string['uiparametergroup'] = 'Parametri UI';
+$string['uiparameters'] = 'Parametri UI (JSON)';
+$string['uiparamname'] = 'Nome';
+$string['unauthorisedbulktest'] = 'Non hai accesso a nessuna domanda CodeRunner adeguata';
+$string['unauthoriseddbaccess'] = 'Non sei autorizzato all\'utilizzo di questo script';
+$string['useace'] = 'Il template usa ace';
+$string['useasexample'] = 'Usa come esempio';
+$string['validateonsave'] = 'Verifica al salvataggio';
+$string['wsmaxcputime'] = 'Massimo tempo di CPU (s)';
+$string['wsmaxhourlyrate'] = 'Massimo numero di invii per ora';
+$string['wsnolanguage'] = 'Linguaggio "{$a}" non conosciuto';
+$string['wssubmissionrateexceeded'] = 'Hai superato il massimo numero di tentativi del pulsante di test. Richiesta negata.';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+// phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
+
 /**
  * Extend the core_h5p renderer.
  *
@@ -34,7 +36,6 @@ defined('MOODLE_INTERNAL') || die();
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class theme_boost_union_core_h5p_renderer extends \core_h5p\output\renderer {
-
     /**
      * Add CSS styles when H5P content is displayed in core_h5p.
      *
@@ -46,30 +47,30 @@ class theme_boost_union_core_h5p_renderer extends \core_h5p\output\renderer {
         global $CFG;
 
         // Build the H5P CSS file URL.
-        $h5pcssurl = new moodle_url('/theme/boost_union/h5p/styles.php');
+        $h5pcssurl = new core\url('/theme/boost_union/h5p/styles.php');
 
         // Add the CSS file path and a version (to support browser caching) to H5P.
         $styles[] = (object) [
                 'path' => $h5pcssurl->out(),
-                'version' => '?ver='.theme_get_revision(),
+                'version' => '?ver=' . theme_get_revision(),
         ];
 
         // If the local_och5pcore plugin is installed, add some more styles.
-        if (file_exists($CFG->dirroot.'/local/och5pcore/version.php')) {
+        if (file_exists($CFG->dirroot . '/local/och5pcore/version.php')) {
             // If H5P interactive videos are installed.
             if (isset($libraries['H5P.InteractiveVideo']) && $libraries['H5P.InteractiveVideo']['majorVersion'] == '1') {
                 // Adding H5PEditor css file.
-                $h5peditoravurl = new moodle_url('/local/och5pcore/lib/style/H5PEditor.AV.css');
+                $h5peditoravurl = new core\url('/local/och5pcore/lib/style/H5PEditor.AV.css');
                 $styles[] = (object) [
                     'path' => $h5peditoravurl->out(),
-                    'version' => '?ver='.theme_get_revision(),
+                    'version' => '?ver=' . theme_get_revision(),
                 ];
 
                 // Adding opencast font css file.
-                $ocfontsurl = new moodle_url('/local/och5pcore/lib/style/oc-fonts.css');
+                $ocfontsurl = new core\url('/local/och5pcore/lib/style/oc-fonts.css');
                 $styles[] = (object) [
                     'path' => $ocfontsurl->out(),
-                    'version' => '?ver='.theme_get_revision(),
+                    'version' => '?ver=' . theme_get_revision(),
                 ];
             }
         }
@@ -86,21 +87,21 @@ class theme_boost_union_core_h5p_renderer extends \core_h5p\output\renderer {
         global $CFG;
 
         // If the local_och5pcore plugin is installed, add some more scripts.
-        if (file_exists($CFG->dirroot.'/local/och5pcore/version.php')) {
+        if (file_exists($CFG->dirroot . '/local/och5pcore/version.php')) {
             // If H5P interactive videos are installed.
             if (isset($libraries['H5P.InteractiveVideo']) && $libraries['H5P.InteractiveVideo']['majorVersion'] == '1') {
                 // Adding LTI related script into scripts array.
-                $h5prunltiurl = new moodle_url('/local/och5pcore/lib/js/H5PRunLTI.js');
+                $h5prunltiurl = new core\url('/local/och5pcore/lib/js/H5PRunLTI.js');
                 $scripts[] = (object) [
                     'path' => $h5prunltiurl->out(),
-                    'version' => '?ver='.theme_get_revision(),
+                    'version' => '?ver=' . theme_get_revision(),
                 ];
 
                 // Adding editor script to scripts array.
-                $h5peditoravurl = new moodle_url('/local/och5pcore/lib/js/H5PEditor.AV.js');
+                $h5peditoravurl = new core\url('/local/och5pcore/lib/js/H5PEditor.AV.js');
                 $scripts[] = (object) [
                     'path' => $h5peditoravurl->out(),
-                    'version' => '?ver='.theme_get_revision(),
+                    'version' => '?ver=' . theme_get_revision(),
                 ];
             }
         }
@@ -108,9 +109,9 @@ class theme_boost_union_core_h5p_renderer extends \core_h5p\output\renderer {
 }
 
 // Only if mod_hvp is installed.
-if (file_exists($CFG->dirroot.'/mod/hvp/renderer.php')) {
+if (file_exists($CFG->dirroot . '/mod/hvp/renderer.php')) {
     // Load the mod_hvp renderer.
-    require_once($CFG->dirroot.'/mod/hvp/renderer.php');
+    require_once($CFG->dirroot . '/mod/hvp/renderer.php');
 
     // If the mod_hvp_renderer exists now.
     if (class_exists('mod_hvp_renderer')) {
@@ -123,7 +124,6 @@ if (file_exists($CFG->dirroot.'/mod/hvp/renderer.php')) {
          * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
          */
         class theme_boost_union_mod_hvp_renderer extends mod_hvp_renderer {
-
             /**
              * Add styles when an H5(V)P is displayed.
              *
@@ -135,30 +135,30 @@ if (file_exists($CFG->dirroot.'/mod/hvp/renderer.php')) {
                 global $CFG;
 
                 // Build the H5P CSS file URL.
-                $h5pcssurl = new moodle_url('/theme/boost_union/h5p/styles.php');
+                $h5pcssurl = new core\url('/theme/boost_union/h5p/styles.php');
 
                 // Add the CSS file path and a version (to support browser caching) to H5P.
                 $styles[] = (object)[
                         'path' => $h5pcssurl->out(),
-                        'version' => '?ver='.theme_get_revision(),
+                        'version' => '?ver=' . theme_get_revision(),
                 ];
 
                 // If the local_och5p plugin is installed, add some more styles.
-                if (file_exists($CFG->dirroot.'/local/och5p/version.php')) {
+                if (file_exists($CFG->dirroot . '/local/och5p/version.php')) {
                     // If H5P interactive videos are installed.
                     if (isset($libraries['H5P.InteractiveVideo']) && $libraries['H5P.InteractiveVideo']['majorVersion'] == '1') {
                         // Adding H5PEditor css file.
-                        $h5peditoravurl = new moodle_url('/local/och5p/lib/style/H5PEditor.AV.css');
+                        $h5peditoravurl = new core\url('/local/och5p/lib/style/H5PEditor.AV.css');
                         $styles[] = (object) [
                             'path' => $h5peditoravurl->out(),
-                            'version' => '?ver='.theme_get_revision(),
+                            'version' => '?ver=' . theme_get_revision(),
                         ];
 
                         // Adding opencast font css file.
-                        $ocfontsurl = new moodle_url('/local/och5p/lib/style/oc-fonts.css');
+                        $ocfontsurl = new core\url('/local/och5p/lib/style/oc-fonts.css');
                         $styles[] = (object) [
                             'path' => $ocfontsurl->out(),
-                            'version' => '?ver='.theme_get_revision(),
+                            'version' => '?ver=' . theme_get_revision(),
                         ];
                     }
                 }
@@ -175,21 +175,21 @@ if (file_exists($CFG->dirroot.'/mod/hvp/renderer.php')) {
                 global $CFG;
 
                 // If the local_och5p plugin is installed, add some more scripts.
-                if (file_exists($CFG->dirroot.'/local/och5p/version.php')) {
+                if (file_exists($CFG->dirroot . '/local/och5p/version.php')) {
                     // If H5P interactive videos are installed.
                     if (isset($libraries['H5P.InteractiveVideo']) && $libraries['H5P.InteractiveVideo']['majorVersion'] == '1') {
                         // Adding LTI related script into scripts array.
-                        $h5prunltiurl = new moodle_url('/local/och5p/lib/js/H5PRunLTI.js');
+                        $h5prunltiurl = new core\url('/local/och5p/lib/js/H5PRunLTI.js');
                         $scripts[] = (object) [
                             'path' => $h5prunltiurl->out(),
-                            'version' => '?ver='.theme_get_revision(),
+                            'version' => '?ver=' . theme_get_revision(),
                         ];
 
                         // Adding editor script to scripts array.
-                        $h5peditoravurl = new moodle_url('/local/och5p/lib/js/H5PEditor.AV.js');
+                        $h5peditoravurl = new core\url('/local/och5p/lib/js/H5PEditor.AV.js');
                         $scripts[] = (object) [
                             'path' => $h5peditoravurl->out(),
-                            'version' => '?ver='.theme_get_revision(),
+                            'version' => '?ver=' . theme_get_revision(),
                         ];
                     }
                 }

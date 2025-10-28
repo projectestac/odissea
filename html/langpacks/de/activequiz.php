@@ -86,7 +86,7 @@ $string['hidestudentresponses'] = 'Antworten verbergen';
 $string['highestsessiongrade'] = 'Beste Bewertung der Sitzung';
 $string['indvquestiontime'] = 'Zeit für die Frage';
 $string['indvquestiontime_help'] = 'Zeit für die Frage in Sekunden';
-$string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle Ihre Zeilnehmer/innen verbunden sind.  Sobald <b>Test starten</b> gedrückt wurde, beginnt dieser mit der ersten Frage.</p>
+$string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle Ihre Teilnehmer/innen verbunden sind.  Sobald <b>Test starten</b> gedrückt wurde, beginnt dieser mit der ersten Frage.</p>
     <p>
 <p>Bedienelemente:</p>
     <ul>

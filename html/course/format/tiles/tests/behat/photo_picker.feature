@@ -51,12 +51,8 @@ Feature: Teacher can allocate photos to tiles
     And I press "Save changes"
     And I wait until the page is ready
     And I should see "Image saved for 'Tile 1'"
-    And I turn editing mode off
-    And I wait until the page is ready
-    And I wait "2" seconds
-    And course "Business Law" tile "1" should show photo "placeholder_1.jpg"
 
-    And I turn editing mode on
+    And I am on "Business Law" course homepage with editing mode on
     And I wait until the page is ready
     And I wait "1" seconds
     And I click on "#tileicon_2" "css_element"

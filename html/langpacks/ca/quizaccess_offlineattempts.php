@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Permet contestar el qüestionari fora de línia emprant l’app mòbil';
+$string['allowofflineattempts'] = 'Permet contestar el qüestionari fora de línia emprant l\'app mòbil';
 $string['allowofflineattempts_help'] = 'Si s’habilita, un usuari de l’app mòbil pot descarregar el qüestionari i contestar-lo fora de línia.
 
 Nota: No és possible contestar fora de línia un qüestionari que tingui un límit de temps, o que necessiti una adreça de xarxa, o que empri comportaments de pregunta diferents de la retroacció diferida (amb QBC o sense).';

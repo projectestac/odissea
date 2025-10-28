@@ -82,7 +82,6 @@ $string['not_all_expected_set'] = 'No totes les activitats amb criteris de compl
 $string['now_indicator'] = 'ARA';
 $string['overview'] = 'Resum dels estudiants';
 $string['pluginname'] = 'Progrés de la compleció';
-$string['privacy:metadata'] = 'El bloc del Progrés de la compleció només mostra les dades de compleció existents.';
 $string['progress'] = 'Progrés';
 $string['progressbar'] = 'Progrés de la compleció';
 $string['shortname'] = 'Nom curt del curs';

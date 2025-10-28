@@ -77,6 +77,15 @@ class mod_attendance_page_with_filter_controls {
     /** @var int */
     private $sesstype;
 
+    /** @var int */
+    public $page;
+
+    /** @var int */
+    public $group;
+
+    /** @var int */
+    public $sort;
+
     /**
      * initialise stuff.
      *

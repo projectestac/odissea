@@ -21,13 +21,13 @@
 
     The purpose of this template is to render a single section page
     of the course i.e. what a user would expect if they visited
-    wwwroot/course/view.php?id=2&section=3
+    wwwroot/course/section.php?id=2
 
     Either this or multi_section_page will be the first template called
     when the user launches a page from PHP (usually it will be multi_ that is called)
 
     If the user has javascript enabled, and is not editing, it is likey that this template
-    will not be used at all, as the user will never access a URL like wwwroot/course/view.php?id=2&section=3
+    will not be used at all, as the user will never access a URL like wwwroot/course/section.php?id=2
     Instead they will access multi_section_page from PHP and then each section will be added to that by AJAX using
     the single_section template directly, so bypassing the below
 

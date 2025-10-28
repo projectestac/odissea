@@ -181,7 +181,7 @@ $string['blockregionsheading_desc'] = '<p>Boost Union bietet eine große Anzahl 
 <li> Die Blockregionen <em>Off-Canvas</em> sind irgendwie etwas Besonderes, da sie als Overlay über der Moodle-Seite schweben. Die Region wird mit dem 9-Punkte-Symbol auf der rechten Seite der Navigationsleiste geöffnet. Sie haben drei Regionen für Off-Canvas, um bei Bedarf Spalten zu erstellen. </li></ul>
 <p>Beachten Sie bitte: </p>
 <ul><li>Standardmäßig sind alle zusätzlichen Blockregionen deaktiviert. Aktivieren Sie entsprechend Ihren Anforderungen die jeweiligen Blockregionen auf den jeweiligen Seitenlayouts . Versuchen Sie, dabei so fokussiert wie möglich zu sein - zu viele Blockregionen könnten Nutzer/innen erschlagen.</li>
-<li>Sobald eine zusätzliche Blockregion aktiviert ist, wird sie für alle authentifizierten Nutzer/innen sichtbar und kann von Trainer/innen und Manager/innen bearbeitet werden (abhängig davon, ob die jeweilige Person die Moodle-Seite bearbeiten darf). Aber es gibt aber auch die Rechte theme/boost_union:viewregion* und theme/boost_union:viewregion*, mit denen Sie die Verwendung jeder Blockregion optimieren können. </li>
+<li>Sobald eine zusätzliche Blockregion aktiviert ist, wird sie für alle authentifizierten Nutzer/innen sichtbar und kann von Trainer/innen und Manager/innen bearbeitet werden (abhängig davon, ob die jeweilige Person die Moodle-Seite bearbeiten darf). Aber es gibt aber auch die Rechte theme/boost_union:viewregion* und theme/boost_union:editregion*, mit denen Sie die Verwendung jeder Blockregion optimieren können. </li>
 <li>Die Blockregionen Außen (links), Außen (rechts), Inhalt (oben), Inhalt (unten) und Kopfbereich sind nicht für alle Seitenlayouts verfügbar. </li></ul>';
 $string['blockregionsheading_experimental'] = 'Beachten Sie bitte: Die Blockregionen \'Außen (links)\' und \'Außen (rechts)\' funktionieren mit dem aktuellen Implementationsstand zwar vollständig, müssen aber für mittelbreite Bildschirme als experimentell gelten. Vor diesem Hintergrund sollten Sie die Blockregionen mit Vorsicht verwenden. Das Problem wird mit einem zukünftigen Release behoben.';
 $string['blocksgeneralheading'] = 'Allgemeine Blöcke';
@@ -263,8 +263,8 @@ $string['contactcontentsetting'] = 'Inhalt der Kontaktseite';
 $string['contactcontentsetting_desc'] = 'In dieser Einstellung können Sie Textinhalte hinzufügen, die auf einer Kontaktseite angezeigt werden. Diese Kontaktseite ist nicht mit dem "Kontakt zum Website-Support" von Moodle identisch.';
 $string['contactdisabled'] = 'Die Kontaktseite ist für diese Website deaktiviert. Hier wird nichts angezeigt.';
 $string['contactheading'] = 'Kontakt';
-$string['contactlinkpositionboth'] = 'Link zur Kontaktseite in der Fußzeile und dem Fußzeilensymbol (Fragezeichen) hinzufügen';
-$string['contactlinkpositionfooter'] = 'Link zur Kontaktseite dem Fußzeilensymbol (Fragezeichen) hinzufügen';
+$string['contactlinkpositionboth'] = 'Link zur Kontaktseite in der Fußzeile und zum Fußzeilensymbol (Fragezeichen) hinzufügen';
+$string['contactlinkpositionfooter'] = 'Link zur Kontaktseite zum Fußzeilensymbol (Fragezeichen) hinzufügen';
 $string['contactlinkpositionfootnote'] = 'Link zur Kontaktseite in der Fußzeile hinzufügen';
 $string['contactlinkpositionnone'] = 'Link zur Kontaktseite nicht automatisch hinzufügen';
 $string['contactlinkpositionsetting'] = 'Linkposition für Kontaktseite';

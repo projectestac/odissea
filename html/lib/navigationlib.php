@@ -1017,7 +1017,21 @@ class navigation_node implements renderable {
                 );
             }
         }
+    }
 
+    /**
+     * Reset all static data.
+     *
+     * @throws coding_exception if called outside of a unit test
+     */
+    public static function reset_all_data(): void {
+        if (!defined('PHPUNIT_TEST') || !PHPUNIT_TEST) {
+            throw new coding_exception('Resetting all data is not allowed outside of PHPUnit tests.');
+        }
+
+        self::$fullmeurl = null;
+        self::$autofindactive = true;
+        self::$loadadmintree = false;
     }
 }
 
@@ -2536,7 +2550,7 @@ class global_navigation extends navigation_node {
         mdl: 'MDL-82845',
     )]
     protected function load_section_activities(navigation_node $sectionnode, $sectionnumber, array $activities, $course = null) {
-        \core\deprecation::emit_deprecation_if_present([self::class, __FUNCTION__]);
+        \core\deprecation::emit_deprecation([self::class, __FUNCTION__]);
         if (!is_object($course)) {
             $activity = reset($activities);
             $courseid = $activity->course;

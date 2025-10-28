@@ -49,7 +49,7 @@
 <li class="tile{{#hidden}} tile-hidden{{/hidden}}{{#restrictionlock}} tile-restricted{{/restrictionlock}}{{#isactive}} current{{/isactive}}{{#userclickable}} tile-clickable{{/userclickable}}{{#progress.isComplete}} is-complete{{/progress.isComplete}} {{extraclasses}}"
     id="tile-{{tileid}}" data-section="{{tileid}}" data-true-sectionid="{{secid}}" {{#hastilephoto}}{{{phototileinlinestyle}}}{{/hastilephoto}}>
     {{^hastilephoto}}<div class="tile-bg"></div>{{/hastilephoto}}
-    <a class="tile-link"{{#userclickable}} href="{{{config.wwwroot}}}/course/view.php?id={{courseid}}&section={{tileid}}"{{/userclickable}}
+    <a class="tile-link"{{#userclickable}} href="{{{config.wwwroot}}}/course/section.php?id={{secid}}"{{/userclickable}}
        data-section="{{tileid}}" id="sectionlink-{{tileid}}" aria-label="{{tilearialabel}}">
 
         {{^hastilephoto}}
@@ -69,10 +69,7 @@
                         {{/hidden}}{{/progress}}
                     </div>
                 </div>
-                <div class="tile-text" id="tileText-{{tileid}}"
-                    {{^ismobile}}{{#activity_summary}}{{#usetooltips}}
-                        data-toggle="tooltip" data-html="true" data-original-title="{{activity_summary}}"
-                    {{/usetooltips}}{{/activity_summary}}{{/ismobile}}>
+                <div class="tile-text" id="tileText-{{tileid}}">
                     <div class="tile-textinner{{titleclass}}" id="tileTextin-{{tileid}}">
                         {{#title}}<h3{{^title}} title="{{{tilearialabel}}}"{{/title}}>{{{title}}}</h3>{{/title}}
                     </div>
@@ -87,19 +84,12 @@
             {{#availabilitymessage}}
                 {{>format_tiles/availability_info}}
             {{/availabilitymessage}}
-            <div id="tileText-{{tileid}}"
-                 {{#activity_summary}}{{^ismobile}}{{#usetooltips}}
-                    data-original-title="{{activity_summary}}" data-toggle="tooltip" data-html="true"
-                 {{/usetooltips}}{{/ismobile}}{{/activity_summary}}>
+            <div id="tileText-{{tileid}}">
             <div class="photo-tile-text {{titleclass}}" id="tileTextin-{{tileid}}">
                 {{>format_tiles/progress_spacer}}
                 {{#title}}<h3>{{{title}}}</h3>{{/title}}
             </div>
-                <div class="tile-text"
-                    {{#activity_summary}}{{^ismobile}}{{#usetooltips}}
-                        data-original-title="{{activity_summary}}" data-toggle="tooltip" data-html="true"
-                    {{/usetooltips}}{{/ismobile}}{{/activity_summary}}
-                >
+                <div class="tile-text">
                 {{! This ensures that the bottom section of the tile shows the activity summary on hover, too}}
                 </div>
             </div>

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'El vostre intent tindrà un límit de temps de {$a}. Quan comenci, el temporitzador començarà a comptar enrere i no es pot posar en pausa. Heu d\'acabar el vostre intent abans que finalitzi. Esteu segur que voleu començar ara?';
+$string['confirmstart'] = 'El vostre intent tindrà un límit de temps de {$a}. Quan comenci, el temporitzador començarà a comptar enrere i no es pot posar en pausa. Heu d\'acabar el vostre intent abans que finalitzi. Confirmeu que voleu començar ara?';
 $string['confirmstartheader'] = 'Límit de temps';
 $string['pluginname'] = 'Límit de temps per accedir a la pregunta';
 $string['quiztimelimit'] = 'Límit de temps: {$a}';

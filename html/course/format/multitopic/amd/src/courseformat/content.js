@@ -257,6 +257,9 @@ export default class Component extends BaseComponent {
         super._refreshCourseSectionlist(param);
 
         const originalSingleSection = this.reactive.get("section", this.originalsinglesectionid);
+        if (originalSingleSection && originalSingleSection?.component) {
+            return;
+        }
         let singleSectionId;
         if (originalSingleSection) {
             singleSectionId = (originalSingleSection.levelsan < 2) ? originalSingleSection.id : originalSingleSection.pageid;

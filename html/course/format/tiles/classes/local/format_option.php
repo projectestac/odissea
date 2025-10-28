@@ -87,15 +87,111 @@ class format_option {
     }
 
     /**
+     * Fill caches for a given course ID and optiontype.
+     * @param int $courseid
+     * @param int $optiontype
+     * @return array
+     */
+    public static function fill_caches(int $courseid, int $optiontype): array {
+        global $DB;
+        $rs = $DB->get_recordset_sql(
+            "SELECT elementid, optionvalue
+                FROM {format_tiles_tile_options} WHERE courseid = ? AND optiontype = ?
+                ORDER BY elementid",
+            [$courseid, $optiontype]
+        );
+
+        $elementids = [];
+        if ($rs->valid()) {
+            $cacheoptions = \cache::make('format_tiles', 'formatoptions');
+            foreach ($rs as $record) {
+                $record->elementid = (int)$record->elementid;
+                $cacheoptionskey = $courseid . "_" . $optiontype . "_" . $record->elementid;
+                $cacheoptions->set($cacheoptionskey, $record->optionvalue);
+                $elementids[$record->elementid] = $record->elementid;
+            }
+            $elementids = array_values($elementids);
+
+            $cacheids = \cache::make('format_tiles', 'formatoptionelementids');
+            $cacheidskey = $courseid . "_" . $optiontype;
+            $cacheids->set($cacheidskey, $elementids);
+            $rs->close();
+        }
+        return $elementids;
+    }
+
+    /**
+     * Clear format options caches for whole course (ell elements within it).
+     * @param int $courseid
+     * @return void
+     */
+    public static function clear_caches_course(int $courseid) {
+        $optiontypes = self::get_option_types();
+        foreach ($optiontypes as $optiontype) {
+            self::clear_caches($courseid, $optiontype);
+        }
+    }
+
+    /**
+     * Clear caches for a given course ID and option type.
+     * @param int $courseid
+     * @param int $optiontype
+     */
+    public static function clear_caches(int $courseid, int $optiontype) {
+        $cacheids = \cache::make('format_tiles', 'formatoptionelementids');
+        $cacheidskey = $courseid . "_" . $optiontype;
+
+        $cacheoptions = \cache::make('format_tiles', 'formatoptions');
+        $ids = $cacheids->get($cacheidskey);
+        if (empty($ids)) {
+            return;
+        }
+        foreach ($ids as $id) {
+            $cacheoptionskey = $courseid . "_" . $optiontype . "_" . $id;
+            $cacheoptions->delete($cacheoptionskey);
+        }
+        $cacheids->delete($cacheidskey);
+    }
+
+    /**
      * Get a course format option value from the format_tiles_tile_options table.
      * @param int $courseid
      * @param int $optiontype
      * @param int $elementid the id of the element (e.g. section or cm id).
-     * @return false|mixed
+     * @return ?string
      */
-    public static function get(int $courseid, int $optiontype, int $elementid) {
-        $record = self::get_db_record($courseid, $optiontype, $elementid);
-        return $record ? $record->optionvalue : false;
+    public static function get(int $courseid, int $optiontype, int $elementid): ?string {
+        $cacheids = \cache::make('format_tiles', 'formatoptionelementids');
+        $cacheidskey = $courseid . "_" . $optiontype;
+        $cachedvalueids = $cacheids->get($cacheidskey);
+        if ($cachedvalueids === false) {
+            $cachedvalueids = self::fill_caches($courseid, $optiontype);
+        }
+        if (!$cachedvalueids || !in_array($elementid, $cachedvalueids)) {
+            return null;
+        }
+        $cache = \cache::make('format_tiles', 'formatoptions');
+        $cachekey = $courseid . "_" . $optiontype . "_" . $elementid;
+        $cachedvalue = $cache->get($cachekey);
+        return $cachedvalue ?? null;
+    }
+
+    /**
+     * Get a simple array of element IDs which have format options set of this option type.
+     * @param int $courseid
+     * @param int $optiontype
+     * @return array|null
+     * @throws \coding_exception
+     */
+    public static function get_element_ids_having_options(int $courseid, int $optiontype): ?array {
+        $cacheids = \cache::make('format_tiles', 'formatoptionelementids');
+        $cacheidskey = $courseid . "_" . $optiontype;
+        $cachedvalueids = $cacheids->get($cacheidskey);
+        if ($cachedvalueids === false) {
+            // Nothing is cached at all for this course.
+            return self::fill_caches($courseid, $optiontype);
+        }
+        return $cachedvalueids;
     }
 
     /**
@@ -107,13 +203,33 @@ class format_option {
      * @throws \moodle_exception
      */
     public static function get_multiple(int $courseid, int $optiontype): array {
-        global $DB;
         self::validate_option_type($optiontype);
-        return $DB->get_records_sql(
-            "SELECT elementid, optionvalue
-                FROM {format_tiles_tile_options} WHERE courseid = ? AND optiontype = ?",
-            [$courseid, $optiontype]
+        // Check this first as it is a quick way to check whole course and load cache if needed.
+        $cachedvalueids = self::get_element_ids_having_options($courseid, $optiontype);
+        if (empty($cachedvalueids)) {
+            return [];
+        }
+
+        // Now we know which element IDs have data, get individual cache entries for each element.
+        $cache = \cache::make('format_tiles', 'formatoptions');
+        $keyprefix = $courseid . "_" . $optiontype;
+        $cachekeys = array_map(
+            function($cacheid) use ($keyprefix) {
+                return $keyprefix . "_" . $cacheid;
+            }, $cachedvalueids
         );
+        $cachedvalues = $cache->get_many($cachekeys);
+        if (!$cachedvalues) {
+            return [];
+        }
+        // Cache keys have course ID and option type encoded as first two ints (e.g. 1_2_3) - we only want the last int.
+        $oldkeys = array_keys($cachedvalues);
+        $newkeys = array_map(
+            function($oldkey) {
+                return explode("_", $oldkey)[2];
+            }, $oldkeys
+        );
+        return array_combine($newkeys, $cachedvalues);
     }
 
     /**
@@ -128,6 +244,7 @@ class format_option {
         try {
             $record = self::get_db_record($courseid, $optiontype, $elementid);
             if ($record) {
+                self::clear_caches($courseid, $optiontype);
                 return $DB->delete_records('format_tiles_tile_options', ['id' => $record->id]);
             }
         } catch (\Exception $e) {
@@ -137,7 +254,7 @@ class format_option {
     }
 
     /**
-     * Unset multiple options of specifcied types for a course and element.
+     * Unset multiple options of specified types for a course and element.
      * @param int $courseid
      * @param int $elementid
      * @param array $optiontypes
@@ -150,6 +267,9 @@ class format_option {
         foreach ($optiontypes as $optiontype) {
             $params = ['courseid' => $courseid, 'elementid' => $elementid, 'optiontype' => $optiontype];
             if ($DB->delete_records('format_tiles_tile_options', $params)) {
+                // Do not limit the cache clear here to an element ID.
+                // Otherwise, on restore we have a problem when checking if photo exists before writing duplicate icon to same sec.
+                self::clear_caches($courseid, $optiontype);
                 $result = true;
             }
         }
@@ -165,6 +285,7 @@ class format_option {
         global $DB;
         try {
             $result = $DB->delete_records('format_tiles_tile_options', ['courseid' => $courseid]);
+            self::clear_caches_course($courseid);
 
             // Delete legacy tile icon choices.
             return $result && $DB->delete_records_select(
@@ -202,7 +323,10 @@ class format_option {
                 'courseid' => $courseid, 'elementid' => $elementid,
                 'optiontype' => $optiontype, 'optionvalue' => $optionvalue,
             ];
-            return $DB->insert_record('format_tiles_tile_options', $record);
+            if ($DB->insert_record('format_tiles_tile_options', $record)) {
+                self::clear_caches($courseid, $optiontype);
+                return true;
+            }
         }
         return true;
     }
@@ -213,13 +337,28 @@ class format_option {
      * @throws \moodle_exception
      */
     public static function validate_option_type(int $optiontype) {
-        $oclass = new \ReflectionClass(__CLASS__);
-        foreach ($oclass->getConstants() as $k => $v) {
-            if (strpos($k, 'OPTION_') === 0 && $v == $optiontype) {
-                return true;
-            }
+        $optiontypes = self::get_option_types();
+        if (in_array($optiontype, $optiontypes)) {
+            return true;
         }
         throw new \moodle_exception('invalidargument', 'format_tiles', '', '', 'Unexpected option type ' . $optiontype);
+    }
+
+    /**
+     * Get an array of valid OPTION_ types e.g. 1 for tile icon.
+     * @return array
+     */
+    public static function get_option_types() {
+        $oclass = new \ReflectionClass(__CLASS__);
+        $constants = $oclass->getConstants();
+        $filtered = array_filter(
+            $constants,
+            function($constant) {
+                return strpos($constant, 'OPTION_') === 0;
+            },
+            ARRAY_FILTER_USE_KEY
+        );
+        return array_values($filtered);
     }
 
     /**
@@ -338,20 +477,30 @@ class format_option {
      * @throws \dml_exception
      */
     public static function needs_migration_incomplete_warning(int $courseid): bool {
-        global $DB;
-        $haslegacyoptions = $DB->record_exists_sql(
-            "SELECT id FROM {course_format_options}
-                WHERE courseid = ? and format = 'tiles' AND name IN ('tilephoto', 'tileicon')",
-            [$courseid]
-        );
-        if (!$haslegacyoptions) {
+        global $DB, $SESSION;
+        $key = "tiles-migr-warn-$courseid";
+        if (($SESSION->$key ?? null) === false) {
+            // No need to check this again - if was once false, will always be.
             return false;
         }
         $hasmigratedoptions = $DB->record_exists_sql(
             "SELECT id FROM {format_tiles_tile_options} WHERE courseid = ? AND optiontype IN (?, ?)",
             [$courseid, self::OPTION_SECTION_PHOTO, self::OPTION_SECTION_ICON]
         );
-        return !$hasmigratedoptions;
+        if ($hasmigratedoptions) {
+            $SESSION->$key = false;
+            return false;
+        }
+        $haslegacyoptions = $DB->record_exists_sql(
+            "SELECT id FROM {course_format_options}
+                WHERE courseid = ? and format = 'tiles' AND name IN ('tilephoto', 'tileicon')",
+            [$courseid]
+        );
+        if (!$haslegacyoptions) {
+            $SESSION->$key = false;
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -370,19 +519,19 @@ class format_option {
         foreach ($mapping as $legacytype => $newtype) {
             $elements = self::get_multiple($courseid, $newtype);
             if (!empty($elements)) {
-                foreach ($elements as $element) {
+                foreach ($elements as $elementid => $optionvalue) {
                     $params = [
                         'courseid' => $courseid,
                         'format' => 'tiles',
-                        'sectionid' => $element->elementid,
+                        'sectionid' => $elementid,
                         'name' => $legacytype,
                     ];
                     $existingrecord = $DB->get_record($courseformattable, $params);
                     if ($existingrecord) {
-                        $existingrecord->value = $element->optionvalue;
+                        $existingrecord->value = $optionvalue;
                         $DB->update_record($courseformattable, $existingrecord);
                     } else {
-                        $params['value'] = $element->optionvalue;
+                        $params['value'] = $optionvalue;
                         $DB->insert_record('course_format_options', (object)$params);
                     }
                 }

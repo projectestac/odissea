@@ -29,5 +29,5 @@ $string['alttext'] = 'Text alternatiu';
 $string['clearcontent'] = 'Esborra el contingut';
 $string['filesseparator'] = 'Separador';
 $string['filesseparator_help'] = 'Selecciona nova línia per a mostrar diversos fitxers en línies separades.';
-$string['newline'] = 'Nova línia';
+$string['newline'] = 'Línia nova';
 $string['pluginname'] = 'Arxiu';

@@ -17,7 +17,6 @@
 namespace format_multitopic\output\courseformat\state;
 
 use core_courseformat\output\local\state\section as base_section;
-
 use core_courseformat\base as course_format;
 use section_info;
 use stdClass;
@@ -31,7 +30,6 @@ use stdClass;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class section extends base_section {
-
     /** @var \format_multitopic\section_info_extra Multitopic-specific section information */
     protected $fmtsectionextra;
 
@@ -85,5 +83,4 @@ class section extends base_section {
         $section = $this->section;
         return ($this->fmtsectionextra->levelsan >= 2) || ($section->section != 0) && ($CFG->version < 2024042200);
     }
-
 }

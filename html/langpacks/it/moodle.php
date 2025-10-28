@@ -919,7 +919,7 @@ $string['explanationdigitalminor'] = 'L’informazione è necessaria per stabili
 $string['extendperiod'] = 'Estendi periodo';
 $string['extendsession'] = 'Prolunga sessione';
 $string['failedloginattempts'] = '{$a->attempts} accessi falliti dall\'ultimo accesso corretto';
-$string['failedtaskbody'] = '<p>Gentile{$a->firstname},</p>
+$string['failedtaskbody'] = '<p>Gentile {$a->firstname},</p>
 <p>L\'elaborazione <b>{$a->taskname}</b> è andata in errore più volte e richiede attenzione.</p>
 <p><a href="{$a->link}">Visualizza elaborazione</a></p>';
 $string['failedtaskcontexturlname'] = 'Report sullo stato';

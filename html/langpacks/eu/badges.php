@@ -302,6 +302,9 @@ $string['error:cannotact'] = 'Ezin da domina aktibatu.';
 $string['error:cannotawardbadge'] = 'Ezin zaio domina erabiltzaile bati eman.';
 $string['error:cannotdeletecriterion'] = 'Irizpide hau ezin da ezabatu.';
 $string['error:cannotrevokebadge'] = 'Ezin zaio erabiltzaile bati domina bat baliogabetu';
+$string['error:cannotsendtobackpack'] = '<strong>Ezin da domina motxilara gehitu</strong><br />
+Zure motxila hornitzaileak mezu hau bidali du: \'{$a}\'.<br /><br />
+Domina deskargatzen eta ondoren zure motxilara eskuz gehitzen saiatu zaitezke, edo bestela beranduago saiatu zaitezke.';
 $string['error:clone'] = 'Ezin da domina klonatu.';
 $string['error:connectionunknownreason'] = 'Konexioa ez da modu egokian burutu, baina arrazoia ez dakigu.';
 $string['error:duplicatename'] = 'Badago aldez aurretik izen hori duen domina sisteman.';

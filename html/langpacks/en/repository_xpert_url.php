@@ -49,6 +49,7 @@ $string['copyrightyear'] = 'Copyright year';
 $string['debug'] = 'Debug images?';
 $string['debug_description'] = 'Turning debug images on will cause images to be replaced by a blue image with debug info';
 $string['download'] = 'Download';
+$string['invalidimage'] = 'The image was not downloaded into Moodle';
 $string['invalidurl'] = 'Invalid URL specified.';
 $string['large'] = 'Large: 1024 x 768 Max';
 $string['license'] = 'Copyright license';

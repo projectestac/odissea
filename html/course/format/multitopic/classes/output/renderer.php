@@ -46,7 +46,6 @@ require_once(__DIR__ . '/../../classes/coursecontentheaderfooter.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class renderer extends section_renderer {
-
     /**
      * Constructor method, calls the parent constructor.
      *
@@ -60,15 +59,16 @@ class renderer extends section_renderer {
 
         // ADDED.
         // If we're on the view page, patch the URL to use the section ID instead of section number.
-        if ($this->page->has_set_url()
-                && ($url = $this->page->url)->compare(new \moodle_url('/course/view.php'), URL_MATCH_BASE)
-                &&  $url->get_param('section')
-                && ($sectionid = optional_param('sectionid', null, PARAM_INT))) {
+        if (
+            $this->page->has_set_url()
+            && ($url = $this->page->url)->compare(new \moodle_url('/course/view.php'), URL_MATCH_BASE)
+            && $url->get_param('section')
+            && ($sectionid = optional_param('sectionid', null, PARAM_INT))
+        ) {
             $url->remove_params(['section']);
             $this->page->set_url($url, ['sectionid' => $sectionid]);
         }
         // END ADDED.
-
     }
 
     /**
@@ -132,7 +132,6 @@ class renderer extends section_renderer {
         // Date range for the topic, to be placed under the title.
         $datestring = '';
         if (isset($sectionextra->dateend) && ($sectionextra->datestart < $sectionextra->dateend)) {
-
             $dateformat = get_string('strftimedateshort');
             $startday = userdate($sectionextra->datestart + 12 * 60 * 60, $dateformat);
             $endday = userdate($sectionextra->dateend - 12 * 60 * 60, $dateformat);
@@ -142,7 +141,6 @@ class renderer extends section_renderer {
             } else {
                 $datestring = "({$startday}–{$endday})";
             }
-
         }
         // END ADDED.
 
@@ -204,9 +202,9 @@ class renderer extends section_renderer {
      * @return string HTML to output.
      */
     protected function render_coursecontentheaderfooter(
-                            \format_multitopic\coursecontentheaderfooter $headerfooter): string {
+        \format_multitopic\coursecontentheaderfooter $headerfooter
+    ): string {
         return $headerfooter->output();
     }
     // END ADDED.
-
 }

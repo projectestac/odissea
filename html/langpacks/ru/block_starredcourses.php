@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['displaycategories'] = 'Показывать категории';
-$string['displaycategories_help'] = 'Отображать категории курса в блоках курсов для элементов, помеченных звездочкой.';
+$string['displaycategories'] = 'Отображать категории';
+$string['displaycategories_help'] = 'Отображать категорию курса для курсов, помеченных звездочкой.';
 $string['nocourses'] = 'Нет избранных курсов';
-$string['pluginname'] = 'Избранные курсы';
-$string['privacy:metadata'] = 'Блок «Избранные курсы» не содержит персональных данных.';
-$string['starredcourses:myaddinstance'] = 'Добавить новый блок «Избранные курсы» на страницу «Личный кабинет»';
+$string['pluginname'] = 'Помеченные курсы';
+$string['privacy:metadata'] = 'Блок «Помеченные курсы» не содержит персональных данных.';
+$string['starredcourses:myaddinstance'] = 'Добавить новый блок «Помеченные курсы» на страницу «Личный кабинет»';

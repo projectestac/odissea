@@ -43,7 +43,7 @@ $string['auth_fieldlockfield'] = 'Feld sperren ({$a})';
 $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administrator/innen gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicherstellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
 $string['auth_fieldmapping'] = 'Daten übernehmen ({$a})';
-$string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie gerade versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Kopieren Sie die URL noch einmal und versuchen Sie es erneut.';
+$string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie gerade versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Kopieren Sie die URL erneut und versuchen Sie es nochmal.';
 $string['auth_loginpasswordtoggle'] = 'Kennwort im Klartext anzeigen';
 $string['auth_loginpasswordtoggle_desc'] = 'Icon im Kennwortfeld hinzufügen, das Nutzer/innen beim Login erlaubt, ihr eingegebenes Kennwort im Klartext anzuzeigen.';
 $string['auth_loginrecaptcha'] = 'reCAPTCHA für die Anmeldung aktivieren';
@@ -86,7 +86,7 @@ $string['createpassword'] = 'Kennwort erzeugen und Nutzer/in benachrichtigen';
 $string['createpasswordifneeded'] = 'Kennwort erzeugen und per E-Mail zusenden, falls erforderlich';
 $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
 $string['emailchangepending'] = 'Die Änderung ist noch nicht abgeschlossen. Öffnen Sie den zugesandten Link in {$a->preference_newemail}';
-$string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Der Änderungsvorgang wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
+$string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Die Änderung wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
 $string['emailupdatemessage'] = 'Guten Tag {$a->fullname},
 
@@ -154,12 +154,12 @@ $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Kennwort, mit dem ein
 $string['recaptcha'] = 'ReCaptcha';
 $string['recaptcha_help'] = 'Das Captcha dient dazu, Missbrauch durch automatisierte Programme zu verhindern. Befolgen Sie die Anleitung zur Bestätigung, dass Sie kein Roboter sind. Verschiedene Dinge sind möglich, z.B. eine Box zum Markieren, Buchstaben in einem angezeigten Bild oder eine Reihe zur Auswahl angezeigte Bilder.
 
-Sollten Sie nicht sicher sein, wie Sie antworten sollen, versuchen Sie es noch einmal mit einem neuen Captcha oder mit einem Audio-Captcha.';
+Sollten Sie nicht sicher sein, wie Sie antworten sollen, versuchen Sie es nochmal mit einem neuen Captcha oder mit einem Audio-Captcha.';
 $string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Sicherheitsfrage';
 $string['selfregistration'] = 'Selbstregistrierung';
 $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail basiert\') aktiviert ist, können sich alle Personen selbst registrieren und ein Nutzerkonto anlegen. Auf diese Weise könnten aber auch Spammer ein Nutzerkonto erhalten und Einträge in Foren, Blogs oder Profilen  missbrauchen. Um dieses Risiko zu vermeiden, können Sie die Selbstregistrierung ausschalten oder auf bestimmte E-Mail-Domains (z.B. meinefirma.de) beschränken.';
-$string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der Korrektur der Namen in den Plugin-Einstellungen erkannt wurden! Beim Authentifizierungs-Plugin \'{$a->plugin}\' war die Einstellung \'{$a->setting}\' konfiguriert mit dem veralteten Namen \'{$a->legacy}\' und dem aktuellen Namen \'{$a->current}\'. Der letztere Wert wurde als gültig gesetzt, aber Sie sollten dies noch einmal überprüfen.';
+$string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der Korrektur der Namen in den Plugin-Einstellungen erkannt wurden! Beim Authentifizierungs-Plugin \'{$a->plugin}\' war die Einstellung \'{$a->setting}\' mit dem veralteten Namen \'{$a->legacy}\' und dem aktuellen Namen \'{$a->current}\' konfiguriert. Der letztere Wert wurde als gültig gesetzt, aber Sie sollten dies nochmal überprüfen.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, ist ein Gast-Login für die Website nicht erlaubt.';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';

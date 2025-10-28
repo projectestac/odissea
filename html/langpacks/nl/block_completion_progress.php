@@ -85,7 +85,6 @@ $string['not_all_expected_set'] = 'Niet alle activiteiten met voltooiing hebben 
 $string['now_indicator'] = 'NU';
 $string['overview'] = 'Overzicht van leerlingen';
 $string['pluginname'] = 'Voortgang voltooiing';
-$string['privacy:metadata'] = 'Het blok Voortgang voltooiing toont alleen bestaande gegevens over voltooiing.';
 $string['progress'] = 'Voortgang';
 $string['progressbar'] = 'Voortgang voltooiing';
 $string['selectitem'] = 'Selecteer \'{$a}\'';

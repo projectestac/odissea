@@ -66,7 +66,7 @@ Feature: In a section for Teacher, hidden activities are dimmed
 
     And I should see "Test URL NV"
     And activity in format tiles is dimmed "Test URL NV"
-
+    And I wait "1" seconds
     And I click on close button for tile "1"
     And I log out tiles
 
@@ -85,6 +85,6 @@ Feature: In a section for Teacher, hidden activities are dimmed
     And I should not see "Test page NV"
     And I should not see "Test forum NV"
     And I should not see "Test URL NV"
-
+    And I wait "1" seconds
     And I click on close button for tile "1"
     And I log out tiles

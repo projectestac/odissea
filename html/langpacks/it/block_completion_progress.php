@@ -82,7 +82,6 @@ $string['not_all_expected_set'] = 'Non tutte le attività con il completamento h
 $string['now_indicator'] = 'ADESSO';
 $string['overview'] = 'Panoramica studenti';
 $string['pluginname'] = 'Stato di completamento';
-$string['privacy:metadata'] = 'Il blocco "Stato di completamento" visualizza solo dati di completamento già esistenti.';
 $string['progress'] = 'Stato';
 $string['progressbar'] = 'Stato di completamento';
 $string['selectitem'] = 'Seleziona \'{$a}\'';

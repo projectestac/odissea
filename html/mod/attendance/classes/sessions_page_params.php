@@ -64,4 +64,7 @@ class mod_attendance_sessions_page_params {
 
     /** @var int - sessionid of session */
     public $sessionid;
+
+    /** @var int */
+    public $sort;
 }

@@ -33,7 +33,6 @@ function xmldb_format_multitopic_upgrade($oldversion) {
     global $CFG, $DB;
 
     if ($oldversion < 2020090400) {
-
         // Change periodduration "0 days" to "0 day".
         $DB->execute(
             "UPDATE {course_format_options} SET value = '0 day'
@@ -45,7 +44,6 @@ function xmldb_format_multitopic_upgrade($oldversion) {
     }
 
     if ($oldversion < 2022012100) {
-
         // Add collapsible.
         $DB->execute(
             "INSERT INTO {course_format_options} (courseid, format, sectionid, name, value)
@@ -65,10 +63,12 @@ function xmldb_format_multitopic_upgrade($oldversion) {
     if ($oldversion < 2023072900) {
         // For sites migrating from 4.0.x or 4.1.x where the indentation was removed,
         // we are disabling 'indentation' value by default.
-        if ($oldversion >= 2022061400
+        if (
+            $oldversion >= 2022061400
             || !($CFG->version >= 2022041907.09 && $CFG->version < 2022042000
               || $CFG->version >= 2022112802.09 && $CFG->version < 2022112900
-              || $CFG->version >= 2023031400)) {
+              || $CFG->version >= 2023031400)
+        ) {
             set_config('indentation', 0, 'format_multitopic');
         } else {
             set_config('indentation', 1, 'format_multitopic');

@@ -49,6 +49,7 @@ $string['aria:favourite'] = 'Το μάθημα έχει αστερίσκο';
 $string['aria:favouritestab'] = 'Δραστηριότητες με αστερίσκο';
 $string['aria:modulefavourite'] = 'Επισήμανση της δραστηριότητας {$a} με αστερίσκο';
 $string['aria:recommendedtab'] = 'Συνιστώμενες δραστηριότητες';
+$string['communicationroomlink'] = 'Συνομιλία με τους συμμετέχοντες του μαθήματος';
 $string['completion_automatic:done'] = 'Ολοκληρώθηκε:';
 $string['completion_automatic:failed'] = 'Αποτυχία:';
 $string['completion_automatic:todo'] = 'Προς ενέργεια:';

@@ -189,14 +189,14 @@ $string['displayparticipantsidentity'] = 'Identität der Teilnehmer/innen anzeig
 $string['displayrank'] = 'Rang anzeigen';
 $string['displayrelativerank'] = 'Relativen Rang anzeigen';
 $string['documentation'] = 'Dokumentation';
-$string['drops'] = 'Tropfen';
-$string['drops_help'] = 'In Computerspielen können einige Charaktere Gegenstände oder Erfahrungspunkte fallen lassen, die die Spieler/innen dann einsammeln können. Diese Gegenstände und Erfahrungspunkte werden als Tropfen bezeichnet.
+$string['drops'] = 'Drops';
+$string['drops_help'] = 'In Computerspielen können einige Charaktere Gegenstände oder Erfahrungspunkte fallen lassen, die die Spieler/innen dann einsammeln können. Diese Gegenstände und Erfahrungspunkte werden als Drops bezeichnet.
 
-In Level Up XP sind Tropfen Shortcodes (z.B.`[xpdrop id=1 secret=abcdef]`), die Trainer/innen im Kurs vergeben können. Wenn diese von einer Person gefunden werden, werden sie automatisch _eingesammelt_ und die Punkte zu den bereits gesammelten Erfahrungspunkten dazugezählt.
+In Level Up XP sind Drops Shortcodes (z.B.`[xpdrop id=1 secret=abcdef]`), die Trainer/innen im Kurs vergeben können. Wenn diese von einer Person gefunden werden, werden sie automatisch _eingesammelt_ und die Punkte zu den bereits gesammelten Erfahrungspunkten dazugezählt.
 
-Derzeit sind Tropfen für die Nutzer/innen unsichtbar. Die Punkte werden automatisch erhöht, wenn ein Tropfen gefunden wurde.
+Derzeit sind Drops für die Nutzer/innen unsichtbar. Die Punkte werden automatisch erhöht, wenn ein Drop gefunden wurde.
 
-Tropfen können verwendet werden, um Punkte zu vergeben, wenn ein bestimmter Inhalt von den Teilnehmer/innen aufgerufen wurde. Einige Ideen für die Platzierung von Tropfen:
+Drops können verwendet werden, um Punkte zu vergeben, wenn ein bestimmter Inhalt von den Teilnehmer/innen aufgerufen wurde. Einige Ideen für die Platzierung von Drops:
 
 - Im Feedback von Tests, wenn alle Punkte erreicht wurden
 - In schwierigem Inhalt, um die Auseinandersetzung damit zu belohnen
@@ -204,7 +204,7 @@ Tropfen können verwendet werden, um Punkte zu vergeben, wenn ein bestimmter Inh
 - In einer schwer erreichbaren Seite einer Lektion
 
 [Weitere Infos (Englisch)](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
-$string['dropsintro'] = 'Tropfen sind Shortcodes, die im Kurs platziert werden können und Punkte vergeben, wenn sie von einer Person gefunden werden.';
+$string['dropsintro'] = 'Drops sind Shortcodes, die im Kurs platziert werden können und Punkte vergeben, wenn sie von einer Person gefunden werden.';
 $string['editcondition'] = 'Bedingung bearbeiten';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**Achtung!** Sie verändern nicht die aktiven Einstellungen, sondern die Standardeinstellungen. Da Level Up XP systemweit verwendet wird, haben Ihre Änderungen Auswirkungen auf alle Level Up Blöcke. Ändern Sie die [Einstellungen des einzelnen Blocks]({$a->url}) oder klicken Sie auf Einstellungen im jeweiligen Level Up Block.';
 $string['editinstructions'] = 'Informationen bearbeiten';
@@ -300,9 +300,9 @@ $string['instructions'] = 'Anleitungen';
 $string['instructions_help'] = 'Die Anleitungen werden auf der Informationsseite angezeigt. Sie können sie nutzen, um Informationen und Anleitungen zu den Levels, zur Punktevergabe usw. weiterzugeben.';
 $string['invalidxp'] = 'Ungültiger Punktewert';
 $string['join'] = 'Mitmachen';
-$string['joinleadeboardconfirmnote'] = 'Fantastisch, wir freuen uns, dich dabei zu haben!
+$string['joinleadeboardconfirmnote'] = 'Fantastisch, wir freuen uns, Sie dabei zu haben!
 
-Bitte beachte, dass es nach deiner Anmeldung eine Wartezeit gibt, bevor du die Bestenliste verlassen kannst, falls du deine Meinung änderst.';
+Beachten Sie bitte, dass es nach Ihrer Anmeldung eine Wartezeit gibt, bevor Sie die Bestenliste verlassen können, falls Sie Ihre Meinung ändern.';
 $string['joinleadeboardlockednote'] = 'Sie können der Bestenliste nicht beitreten.';
 $string['joinleaderboard'] = 'Bestenliste beitreten';
 $string['keeplogs'] = 'Logdaten behalten';
@@ -324,8 +324,29 @@ $string['ladderiso_help'] = 'Erstellen Sie getrennte Bestenlisten für verschied
 $string['ladderisocohorts'] = 'globale Gruppen verwenden';
 $string['ladderisodefault'] = 'Default (Gruppenmodus)';
 $string['ladderparticipation'] = 'Teilnahme';
+$string['ladderparticipation_help'] = 'Legt fest, ob Teilnehmer/innen an der Rangliste teilnehmen müssen oder ob sie nach Belieben beitreten oder austreten können.
+
+- Automatisch, kein Austritt möglich: Alle Teilnehmer/innen treten automatisch der Rangliste bei und können sie nicht verlassen.
+- Automatisch, Austritt möglich: Alle Teilnehmer/innen treten automatisch der Rangliste bei, können sie aber verlassen.
+- Optional, mit Opt-in: Teilnehmer/innen müssen sich ausdrücklich für die Rangliste anmelden, um daran teilzunehmen.
+
+Teilnehmer/innen können ihre Meinung ändern und die Rangliste nach dem An- oder Abmelden verlassen oder wieder beitreten. Um unbeabsichtigtes Verhalten zu verhindern, können Teilnehmer/innen, welche der Rangliste beitreten, jedoch 3 Tage lang nicht abmelden.
+
+[Weitere Informationen](https://docs.levelup.plus/xp/docs/leaderboard-opt-out)';
+$string['ladderparticipationforced'] = 'Automatisch, ohne Opt-out';
+$string['ladderparticipationoptin'] = 'Optional, mit Opt-in';
+$string['ladderparticipationoptout'] = 'Automatisch, Opt-out verfügbar';
+$string['ladderparticipationreset'] = 'Aufgezeichneten Status aller Teilnehmer/innen entfernen';
+$string['ladderparticipationreset_help'] = 'Wenn diese Option aktiviert ist, wird der Teilnahme-Status aller Nutzer/innen gelöscht, und alle Nutzer/innen müssen sich erneut an- oder abmelden.';
 $string['laddersettingsmovednotice'] = 'Die Einstellungen für die Bestenliste wurden auf die [Seite Bestenliste]({$a->url}) verschoben.';
 $string['learnmore'] = 'Mehr erfahren';
+$string['leave'] = 'Verlassen';
+$string['leaveleadeboardconfirmnote'] = 'Möchten Sie die Bestenliste wirklich verlassen?
+
+Wenn Sie die Bestenliste verlassen, verlieren Sie ihren Rang. Sie können aber jederzeit wieder neu einsteigen.';
+$string['leaveleadeboardlockednote'] = 'Sie können die Rangliste nicht verlassen.';
+$string['leaveleadeboardlockeduntilnote'] = 'Sie können die Rangliste bis {$a} nicht verlassen.';
+$string['leaveleaderboard'] = 'Verlasse die Bestenliste';
 $string['level'] = 'Level';
 $string['levelbadge'] = 'Levelabzeichen';
 $string['levelbadges'] = 'Levelabzeichen';
@@ -351,7 +372,7 @@ $string['levelup'] = 'Level Up!';
 $string['levelupoptionsunavailableforlevelone'] = 'Einstellungen zum Erreichen des Levels stehen für das erste Level nicht zur Verfügung.';
 $string['levelupplus'] = 'Level up XP+';
 $string['levelx'] = 'Level #{$a}';
-$string['likenotice'] = '<strong>Gefällt Ihnen das Plugin?</strong> Dann nehmen Sie sich bitte einen Moment Zeit, um <a href="{$a->moodleorg}" target="_blank">es zu Ihren Favoriten</a> auf Moodle.org hinzuzufügen und es <a href="{$a->github}" target="_blank">auf GitHub mit einem Stern zu versehen</a>.';
+$string['likenotice'] = 'Gefällt Ihnen das Plugin?  Dann nehmen Sie sich bitte einen Moment Zeit, um  <a href="{$a->moodleorg}" target="_blank">es zu Ihren Favoriten</a> auf Moodle.org hinzuzufügen.';
 $string['limitparticipants'] = 'Teilnehmer beschränken';
 $string['limitparticipants_help'] = 'Diese Einstellung steuert, wer in der Rangliste angezeigt wird. Nachbarn sind die Teilnehmer/innen, die über und unter dem aktuellen Nutzer eingestuft sind. Die Einstellung \'Zeige zwei Nachbarn\' zeigt beispielsweise nur die beiden Teilnehmer/innen direkt über und unter der aktuellen Person in der Rangliste an.';
 $string['list'] = 'Liste';
@@ -387,6 +408,7 @@ $string['navreport'] = 'Bericht';
 $string['navrules'] = 'Regeln';
 $string['navsettings'] = 'Einstellungen';
 $string['navvisuals'] = 'Darstellung';
+$string['newversioninstallednotice'] = 'Eine neue Version wurde installiert! Entdecken Sie, was neu ist unter [release notes]({$a->releasenotesurl}).';
 $string['nextlevelin'] = 'nächster Level in';
 $string['noconditionsyet'] = 'Noch keine Bedingungen!';
 $string['noconditionsyetintro'] = 'Beginnen Sie, indem Sie eine Bedingung hinzufügen.';
@@ -398,8 +420,11 @@ $string['noneareavailable'] = 'Keine sind verfügbar';
 $string['notecompatibilityissues'] = 'Bitte beachten Sie die Kompatibilitätsprobleme:';
 $string['notesomesettingslocked'] = 'Beachten Sie, dass manche Einstellungen nicht bearbeitet werden können, wenn sie von einem Administrator gesperrt wurden.';
 $string['nothingmatchesfilter'] = 'Nichts entspricht dem Filter.';
+$string['notparticipating'] = 'Nicht teilnehmend';
+$string['notranked'] = 'Nicht in der Bestenliste aufgeführt';
 $string['numberoflevels'] = 'Anzahl der Level';
 $string['occasionally'] = 'Manchmal';
+$string['onlyparticipantscanaccessranking'] = 'Nur Teilnehmer/innen der Bestenliste haben Zugriff zu der Bestenliste';
 $string['outofsync'] = 'XP Plugins Inkompatibilität';
 $string['outofsyncexcessive'] = 'Große Versionsunterschiede';
 $string['outofsyncexcessiveinfo'] = 'XP+ ist wesentlich älter als XP, was zu unerwarteten Problemen führen kann. Um eine Fehlfunktion zu vermeiden, wird sich XP+ zukünftig automatisch deaktivieren.';
@@ -409,7 +434,10 @@ $string['pagecurrentvisibletoviewers'] = 'Diese Seite ist derzeit für Teilnehme
 $string['pagesettings'] = 'Seiteneinstellungen';
 $string['participant'] = 'Teilnehmer/in';
 $string['participants'] = 'Teilnehmer/innen';
+$string['participatesinleaderboard'] = 'Nimmt in der Rangliste teil.';
+$string['participatesnotinleaderboard'] = 'Nimmt in der Rangliste nicht teil.';
 $string['participatetolevelup'] = 'Beteiligen Sie sich am Kurs, um Erfahrungspunkte zu sammeln und Ihr Level zu verbessern!';
+$string['participating'] = 'Teilnahme';
 $string['perpagecolon'] = 'Pro Seite:';
 $string['pickaconditiontype'] = 'Wählen Sie eine Bedingungsart';
 $string['pluginavailabilityxpdesc'] = 'Mit diesem Plugin können Trainer/innen den Zugriff auf Aktivitäten basierend auf dem jeweiligen Level einschränken.';
@@ -455,7 +483,7 @@ $string['promoemailusat'] = 'Schreiben Sie uns eine E-Mail an _levelup@branchup.
 $string['promoerrorsendingemail'] = 'Aua! Wir konnten die Nachricht nicht versenden... bitte senden Sie uns eine E-Mail direkt an: {$a}. Danke!';
 $string['promogetnow'] = 'Holen Sie sich XP+!';
 $string['promoifpreferemailusat'] = 'Psst!, Wenn Sie es vorziehen, können Sie uns direkt eine E-Mail an _{$a}_ senden.';
-$string['promointro'] = 'Werden Sie zum Spielleiter und entfesseln Sie das volle Potenzial von Level Up. Schalten Sie zusätzliche Funktionen mit Level Up XP+ frei!';
+$string['promointro'] = 'Werden Sie zum Spielleiter und entfesseln Sie das volle Potenzial mit zusätzlichen Funktionen von Level Up XP+!';
 $string['promointroinstalled'] = 'Das Add-on _Level Up XP+_ ist auf Ihrem System installiert und alle Funktionen sind aktiviert.';
 $string['promorulesdidyouknow'] = 'Wussten Sie, dass Teilnehmer/innen mit <em>Level Up XP+</em> Erfahrungspunkte für <em>Kurse abschließen</em> und <em>Aktivitäten abschließen</em> sammeln, oder sogar entsprechend ihrer <em>Bewertung</em> erhalten können? <a href="{$a->url}">Hier erfahren Sie mehr!</a>.';
 $string['promoyourmessagewassent'] = 'Danke, Ihre Nachricht wurde versendet. Wir antworten Ihnen in Kürze.';
@@ -464,30 +492,34 @@ $string['property:component'] = 'Ereignis-Komponente';
 $string['property:crud'] = 'CRUD-Eigenschaft';
 $string['property:eventname'] = 'Ereignis-Name';
 $string['property:target'] = 'Ereignis-Aufgabe';
-$string['questreleasenotice'] = '🎉Wir freuen uns, das **neue Gamification-Plugin Level Up Quest** anzukündigen 🥳. Verwandeln Sie Ihren Kurs in **aufregende Abenteuer**, voll mit **Motivationsstrategien** und **Feierlichkeiten** 🤯! Besuchen Sie die [Quest\'s Webseite]({$a->questurl}) und unsere [Infoseite]({$a->questblogurl}) dazu. 👈';
+$string['provisionstates'] = 'Automatische Benutzerbereitstellung';
+$string['provisionstates_desc'] = 'Standardmäßig erscheinen Teilnehmer/innen erst dann in der Rangliste (und im Bericht im systemweiten Modus), wenn sie von XP erkannt wurden. Die Nutzerbereitstellung ist eine erweiterte Funktion, die automatisch Einträge für fehlende Teilnehmer/innen erstellt, die anhand ihrer Rolle grob identifiziert werden. Dies geschieht regelmäßig über eine geplante Aufgabe, die standardmäßig täglich ausgeführt wird. [Lernmodus](https://docs.levelup.plus/xp/docs/automatic-user-provisioning)';
+$string['questpromonotice'] = 'Entfesseln Sie weitere Funktionen und entdecken Sie [Level Up Quest]({$a->questurl}).';
+$string['questreleasenotice'] = 'Entfesseln Sie zusätzliche Funktionen und entdecken Sie **Level Up Quest**🥳. Verwandeln Sie Ihren Kurs in **aufregende Abenteuer**, voll mit **Motivationsstrategien** und **Feierlichkeiten** 🤯! Besuchen Sie die [Quest\'s Webseite]({$a->questurl}) und unsere [Infoseite]({$a->questblogurl}) dazu. 👈';
 $string['quickeditpoints'] = 'Schnellbearbeitung von Punkten';
 $string['rank'] = 'Rang';
+$string['ranked'] = 'Gereiht';
 $string['ranking'] = 'Einstufung';
 $string['ranking_help'] = 'Der Rang ist die absolute Position einer Person in der Bestenliste. Der relative Rang ist der Unterschied in Punkten zwischen der Person und ihren Nachbarn.';
-$string['reallydeleteuserstate'] = 'Das Löschen einer Person ist nur hilfreich, um sie aus der Bestenliste zu entfernen. Für alle anderen Gründe sollten Sie stattdessen die Punkte auf 0 zu setzen. Beachten Sie, dass Nutzer/innen unabhängig von der Löschung zukünftig weiter Erfahrungspunkte sammeln können.
+$string['reallydeleteuserstate'] = 'Das Löschen einer Person ist nur hilfreich, um sie aus der Rangliste zu entfernen. Für alle anderen Gründe sollten Sie stattdessen die Punkte auf 0 zurücksetzen. Beachten Sie, dass Nutzer/innen unabhängig von der Löschung zukünftig weiter Erfahrungspunkte sammeln können.
 
 Wenn Sie _Level Up XP_ für die gesamte Website verwenden, werden gelöschte Nutzer/innen aus dem Bericht entfernt und Sie können ihnen keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, werden die Teilnehmer/innen möglicherweise weiterhin im Bericht angezeigt, wenn sie für den Kurs eingeschrieben sind.
 
 Möchten Sie die Punkte dieser Person wirklich löschen?';
-$string['reallydeleteuserstateandlogs'] = 'Das Löschen einer Person entfernt diese aus der Bestenliste und alle zugehörigen Protokolle.
+$string['reallydeleteuserstateandlogs'] = 'Das Löschen einer Person entfernt diese aus der Bestenliste und löscht alle zugehörigen Protokolle.
 
 Durch das Entfernen von Protokollen kann eine Person erneut Punkte für frühere Aktionen sammeln. Wenn Sie nur die Punkte zurücksetzen möchten, sollten Sie stattdessen die Punkte auf 0 zu setzen. Beachten Sie, dass das Löschen einer Person nicht ihre Möglichkeit beeinträchtigt, in Zukunft Punkte zu sammeln.
 
-Wichtig: Wenn Sie _Level Up XP_ für die gesamte Website verwenden, wird eine Person durch das Löschen aus dem Bericht verschwinden und Sie können keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, kann die Person trotzdem im Bericht erscheinen, wenn sie für den Kurs eingeschrieben ist.
+Wichtig: Wenn Sie _Level Up XP_ systemweit verwenden, wird eine Person durch das Löschen aus dem Bericht verschwinden und Sie können keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, kann die Person trotzdem im Bericht erscheinen, wenn sie für den Kurs eingeschrieben ist.
 
 Möchten Sie die Punkte und Protokolle dieser Person wirklich löschen?';
-$string['reallyresetallcourselevelstodefaults'] = 'Wirklich alle Kurslevels auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
-$string['reallyresetallcoursestodefaults'] = 'Wirklich alle Kursregeln auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
-$string['reallyresetallcoursevisualstodefaults'] = 'Wirklich das Erscheinungsbild aller Kurslevels auf das Standarderscheinungsbild zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
+$string['reallyresetallcourselevelstodefaults'] = 'Wirklich ALLE Kurse auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
+$string['reallyresetallcoursestodefaults'] = 'Wirklich alle Kursregeln in ALLEN Kursen auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
+$string['reallyresetallcoursevisualstodefaults'] = 'Wirklich das Erscheinungsbild aller Kurslevels in ALLEN Kursen auf das Standarderscheinungsbild zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['reallyresetcourselevelstodefaults'] = 'Möchten Sie die Kurslevel wirklich zu den Standardleveln zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
-$string['reallyresetcourserulestodefaults'] = 'Die Kursregeln wirklich auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
+$string['reallyresetcourserulestodefaults'] = 'Möchten Sie die Kursregeln wirklich auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['reallyresetcoursevisualstodefaults'] = 'Möchten Sie die Darstellung der Level wirklich zur Standarddarstellung zurücksetzen? Diese Aktion kann nicht rückängig gemacht werden.';
-$string['reallyresetdata'] = 'Möchten Sie wirklich alle Level und die Punkte für alle Personen in diesem Kurs zurücksetzen?';
+$string['reallyresetdata'] = 'Möchten Sie wirklich alle Level und die Punkte für alle Personen in diesem Kurs zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['reallyresetgroupdata'] = 'Möchten Sie wirklich alle Level und die Punkte für alle Personen in dieser Gruppe zurücksetzen?';
 $string['reallyreverttopluginsdefaults'] = 'Wollen Sie die Standardregeln wirklich auf die vom Plugin vorgeschlagenen Standards zurücksetzen? Diese Aktion ist nicht umkehrbar.';
 $string['recentrewards'] = 'Neue Belohnungen';
@@ -504,6 +536,7 @@ $string['resetallcoursestodefaultsintro'] = 'Klicken Sie auf die Schaltfläche u
 $string['resetcoursedata'] = 'Kursdaten zurücksetzen';
 $string['resetcourserulestodefaults'] = 'Kursregeln auf Standardwerte zurücksetzen';
 $string['resetgroupdata'] = 'Gruppendaten zurücksetzen';
+$string['resetladderparticiptionofeveryone'] = 'Teilnahmestatus von allen zurücksetzen';
 $string['resetlevelstodefaults'] = 'Level zu Standardlevel zurücksetzen';
 $string['resettodefaults'] = 'Auf Standardwerte zurücksetzen';
 $string['resetvisualstodefaults'] = 'Darstellung zur Standarddarstellung zurücksetzen';
@@ -666,6 +699,7 @@ $string['someoneelse'] = 'Jemand anderes';
 $string['somethinghappened'] = 'Etwas ist passiert';
 $string['taskadminnotices'] = 'Admin Hinweise';
 $string['taskcollectionloggerpurge'] = 'Sammelprotokolle löschen';
+$string['taskstateprovisioner'] = 'Status-Bereitstellung';
 $string['taskusagereport'] = 'Nutzungsbericht';
 $string['teamleaderboard'] = 'Team Bestenliste';
 $string['teamleaderboard_help'] = 'Die Team Bestenliste zeigt eine Rangliste der Teams auf der Grundlage der kumulierten Gesamtpunkte ihrer Mitglieder.
@@ -708,6 +742,10 @@ $string['usagereport_desc'] = 'Geben Sie regelmäßig anonyme Nutzungsinformatio
 $string['usealgo'] = 'Algorithmus benutzen';
 $string['usecustomlevelbadges'] = 'Eigene Levelauszeichnungen benutzen';
 $string['usecustomlevelbadges_help'] = 'Wenn \'Ja\' eingstellt wird, muß für jedes Level ein Bild hinterlegt werden.';
+$string['userladderparticipation'] = 'Rangliste Teilnahme';
+$string['userladderparticipation_help'] = 'Legt fest, ob die Nutzer/innen derzeit an der Rangliste teilnehmen. Dies hat keine Auswirkungen auf die Team-Rangliste.';
+$string['userladderparticipationlocked'] = 'Teilnahme sperren bis';
+$string['userladderparticipationlocked_help'] = 'Das Datum von dem an die Nutzer/innen die Teilnahme selbst festlegen können.';
 $string['usingalgo'] = 'Algorithmus verwenden';
 $string['value'] = 'Wert';
 $string['valuessaved'] = 'Die Werte wurden erfolgreich gespeichert.';
@@ -718,7 +756,7 @@ $string['visualsintro'] = 'Darstellung der Level und Bezeichnung der Punkte anpa
 $string['wewillreplyat'] = 'Wir wiederholen um: _{$a}_.';
 $string['when'] = 'Wann';
 $string['wherearexpused'] = 'Wo werden die Punkte benutzt?';
-$string['wherearexpused_desc'] = 'Bei Einstellung \'In Kursen\' gelten die gewonnenen Punkte nur für den Kurs, in dem der Block eingefügt wurde. Bei Einstellung \'Für die ganze Website\', steigt eine Person schneller im Rang auf als pro Kurs, da alle Erfahrung innerhalb der gesamten Website verwendet wird.';
+$string['wherearexpused_desc'] = 'Bei Einstellung \'In Kursen\' gelten die gewonnenen Punkte nur für den Kurs, in dem der Block eingefügt wurde. Bei Einstellung \'Für die ganze Website\', steigt eine Person schneller im Rang auf als pro Kurs, da alle Erfahrungspunkte innerhalb der gesamten Website verwendet werden.';
 $string['whoops'] = 'Hoppla!';
 $string['xp'] = 'Erfahrungspunkte';
 $string['xp:addinstance'] = 'Neuen Block \'XP\' hinzufügen';

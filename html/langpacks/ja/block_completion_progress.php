@@ -96,7 +96,6 @@ $string['not_all_expected_set'] = 'すべての活動の完了に「 {$a} 」日
 $string['now_indicator'] = '現在';
 $string['overview'] = '学生概要';
 $string['pluginname'] = '完了プログレス';
-$string['privacy:metadata'] = '完了プログレスブロックは既存の完了データのみ表示します。';
 $string['progress'] = '進捗';
 $string['progressbar'] = '完了プログレス';
 $string['selectitem'] = '「 {$a} 」を選択する';

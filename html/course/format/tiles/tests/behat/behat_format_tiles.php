@@ -554,7 +554,8 @@ class behat_format_tiles extends behat_base {
         $tilephoto = new \format_tiles\local\tile_photo($context, $sectionid);
         if (!$tilephoto->get_file()) {
             throw new \Behat\Mink\Exception\ExpectationException(
-                "File not found in files table for course $coursename tile $sectionnumber photo $photoname ",
+                "File not found in files table for course $coursename | course ID $courseid "
+                . "context ID $context->id | tile $sectionnumber | photo $photoname | element ID $sectionid",
                 $this->getSession()
             );
         }

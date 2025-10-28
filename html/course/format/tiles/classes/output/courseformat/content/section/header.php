@@ -78,19 +78,11 @@ class header extends \core_courseformat\output\local\content\section\header {
             }
         }
         $data->name = get_section_name($course, $section);
-        $moodlerelease = \format_tiles\local\util::get_moodle_release();
-
-        if ($moodlerelease > 4.1) {
-            $data->selecttext = $format->get_format_string('selectsection', $data->name);
-        }
-
+        $data->selecttext = $format->get_format_string('selectsection', $data->name);
         if (!$format->get_sectionnum()) {
             $data->sectionbulk = true;
         }
-
-        $data->ismoodle42minus = $moodlerelease <= 4.2;
-        $data->ismoodle41minus = $moodlerelease <= 4.1;
-
+        $data->isdelegatedsection = $section->is_delegated() ?? false;
         return $data;
     }
 }

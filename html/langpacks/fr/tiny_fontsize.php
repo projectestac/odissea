@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Taille de la police';
+$string['fontsize:use'] = 'Autoriser l\'utilisation du plugin';
 $string['menuitem_fontsize'] = 'Taille de la police';
 $string['pluginname'] = 'Plugin taille de la police';
 $string['privacy:metadata'] = 'Le plugin de taille de la police n’enregistre pas de donnée personnelle';

@@ -116,7 +116,7 @@ class mod_attendance_summary {
      *
      * @param int $userid User instance id
      *
-     * @return array
+     * @return stdClass
      */
     public function get_taken_sessions_summary_for($userid) {
         $usersummary = new stdClass();

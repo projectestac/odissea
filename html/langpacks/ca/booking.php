@@ -39,5 +39,6 @@ $string['select'] = 'Selecció';
 $string['selectcategory'] = 'Selecciona una categoria mare';
 $string['sendreminderemail'] = 'Envia un recordatori per correu electrònic';
 $string['signature'] = 'Signatura';
+$string['vuebookingstatsyes'] = 'Sí';
 $string['withselected'] = 'Amb els usuaris seleccionats:';
 $string['yes'] = 'Sí';

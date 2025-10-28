@@ -36,7 +36,6 @@ use core_courseformat\output\local\content\addsection as addsection_base;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class addsection extends addsection_base {
-
     /**
      * Export this data so it can be used as the context for a mustache template.
      *
@@ -98,13 +97,17 @@ class addsection extends addsection_base {
             $addstring = get_string('addsections');
         }
 
-        $params = ['courseid' => $course->id,                               // CHANGED.
-                    'insertparentid' => $format->get_sectionid(),
-                    'insertlevel' => FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC,
-                    'sesskey' => sesskey(),
-                    'returnurl' => new \moodle_url("/course/view.php?id={$course->id}"
-                        . (($format->get_sectionid() != $format->fmtrootsectionid) ?
-                        "&sectionid={$format->get_sectionid()}" : "")), ];
+        $params = [
+            'courseid' => $course->id, // CHANGED.
+            'insertparentid' => $format->get_sectionid(),
+            'insertlevel' => FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC,
+            'sesskey' => sesskey(),
+            'returnurl' => new \moodle_url(
+                "/course/view.php?id={$course->id}"
+                . (($format->get_sectionid() != $format->fmtrootsectionid) ?
+                "&sectionid={$format->get_sectionid()}" : "")
+            ),
+        ];
 
         // REMOVED section return.
 

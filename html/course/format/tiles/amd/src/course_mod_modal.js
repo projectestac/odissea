@@ -43,12 +43,12 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
             modalDialog: ".modal-dialog",
             modalBody: ".modal-body",
             sectionMain: ".section.main",
-            pageContent: "#page-content",
+            pageContent: "#page",
             regionMain: "#region-main",
             completionState: "#completion-check-",
             cmModal: ".embed_cm_modal",
             moodleMediaPlayer: ".mediaplugin_videojs",
-            closeBtn: "button.close",
+            closeBtn: "button.btn-close",
             ACTIVITY: "li.activity",
             URLACTIVITYPOPUPLINK: ".activity.modtype_url.urlpopup a",
             modalHeader: ".modal-header",
@@ -108,7 +108,7 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
             }).done(function (modal) {
                 modal.setLarge();
                 modal.show();
-                modal.setScrollable(false);
+                modal.setScrollable(true);
                 const modalRoot = $(modal.root);
                 const modalId = "embed_mod_modal_" + cmId;
                 // If modal exists from previous launch, remove.
@@ -415,9 +415,27 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                                                         data.description,
                                                     );
                                                 } else {
-                                                    window.location.href = config.wwwroot
-                                                        + `/course/view.php?id=${courseId}`
-                                                        + `&section=${data.sectionnumber}&cmid=${cmId}`;
+                                                    const newUrl = config.wwwroot
+                                                        + `/course/section.php?id=${data.sectionid}&cmid=${cmId}`;
+                                                    const isDifferentSection =
+                                                        !window.location.href.endsWith(`id=${data.sectionid}`)
+                                                        && !window.location.href.includes(`id=${data.sectionid}&cmid=`);
+                                                    if (isDifferentSection) {
+                                                        window.location.href = newUrl;
+                                                    } else {
+                                                        // We are in same section so just launch modal.
+                                                        launchCmModal(
+                                                            cmId,
+                                                            data.modulecontextid,
+                                                            data.sectionnumber,
+                                                            data.name,
+                                                            data.modaltype,
+                                                            data.completionenabled ? 1 : 0,
+                                                            data.iscomplete ? 1 : 0,
+                                                            data.ismanualcompletion,
+                                                            data.description,
+                                                        );
+                                                    }
                                                 }
                                             } else {
                                                 // Link URL may be anchor e.g. #module-138 if the item is a label.
@@ -435,8 +453,7 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                                                         }
                                                     } else {
                                                         window.location.href = config.wwwroot
-                                                            + `/course/view.php?id=${courseId}`
-                                                            + `&section=${data.sectionnumber}`;
+                                                            + `/course/section.php?id=${data.sectionid}`;
                                                     }
                                                 }
                                             }
@@ -559,9 +576,9 @@ define(["jquery", "core/modal_factory", "core/config", "core/templates", "core/n
                                             window.location.href = `${config.wwwroot}/course/view.php?id=${courseId}&cmid=${cmId}`;
                                         } else {
                                             const sectionElement = link.closest('.courseindex-section');
-                                            const sectionNumber = sectionElement ? sectionElement.data('number') : 0;
-                                            window.location.href = `${config.wwwroot}/course/view.php?id=${courseId}`
-                                                + `&section=${sectionNumber}&cmid=${cmId}`;
+                                            const sectionId = sectionElement ? sectionElement.data('id') : 0;
+                                            window.location.href =
+                                                `${config.wwwroot}/course/section.php?id=${sectionId}&cmid=${cmId}`;
                                         }
                                     } else {
                                         window.location.href = linkUrl;

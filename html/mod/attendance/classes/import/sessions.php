@@ -204,7 +204,7 @@ class sessions {
      * @param string $encoding The encoding of the csv file.
      * @param string $delimiter The specified delimiter for the file.
      * @param string $importid The id of the csv import.
-     * @param array $mappingdata The mapping data from the import form.
+     * @param stdClass $mappingdata The mapping data from the import form.
      * @param bool $useprogressbar Whether progress bar should be displayed, to avoid html output on CLI.
      * @param bool $courseshortname Course shortname for the course level imports.
      * @param bool $attendanceid ID for the attendance activity for course level imports.

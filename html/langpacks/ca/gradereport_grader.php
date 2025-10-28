@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedgrading'] = 'Mostra els resultats de: {$a}';
 $string['ajaxchoosescale'] = 'Trieu';
 $string['ajaxclicktoclose'] = 'Cliqueu la caixeta per esborrar-ho';
 $string['ajaxerror'] = 'Error';

@@ -41,6 +41,7 @@ $string['layouttype'] = 'Διάταξη αντικειμένων';
 $string['layouttype_help'] = 'Επιλογή οριζόντιας ή κάθετης εμφάνισης των αντικειμένων';
 $string['longestcontiguoussubset'] = 'Μεγαλύτερο συνεχόμενο υποσύνολο';
 $string['longestorderedsubset'] = 'Μεγαλύτερο ταξινομημένο υποσύνολο';
+$string['moved'] = 'Το {{$a.item}} μετακινήθηκε. Νέα θέση: {{$a.position}} από {{$a.total}}.';
 $string['noresponsedetails'] = 'Λυπούμαστε, δεν υπάρχουν διαθέσιμες λεπτομέρειες για την απόκριση σε αυτή την ερώτηση.';
 $string['noscore'] = 'Δεν υπάρχει βαθμός';
 $string['notenoughanswers'] = 'Οι ερωτήσεις ordering πρέπει να έχουν περισσότερες από {$a} απαντήσεις.';

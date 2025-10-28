@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(__DIR__.'/../../config.php');
+require_once(__DIR__ . '/../../config.php');
 
 // Require login.
 require_login();
@@ -51,48 +51,57 @@ echo $OUTPUT->header();
 // Show page heading.
 echo $OUTPUT->heading(get_string('settingsoverview_title', 'theme_boost_union'));
 
+// Show alert if Boost Union is not the active theme.
+echo theme_boost_union_is_not_active_alert();
+
 // First, compose template context for Boost Union setting pages.
 $templatecontext['cards'][] = [
     'label' => get_string('configtitlelook', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_look_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/admin/settings.php', ['section' => 'theme_boost_union_look']),
+    'url' => new \core\url('/admin/settings.php', ['section' => 'theme_boost_union_look']),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('configtitlefeel', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_feel_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/admin/settings.php', ['section' => 'theme_boost_union_feel']),
+    'url' => new \core\url('/admin/settings.php', ['section' => 'theme_boost_union_feel']),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('configtitlecontent', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_content_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/admin/settings.php', ['section' => 'theme_boost_union_content']),
+    'url' => new \core\url('/admin/settings.php', ['section' => 'theme_boost_union_content']),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('configtitlefunctionality', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_functionality_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/admin/settings.php', ['section' => 'theme_boost_union_functionality']),
+    'url' => new \core\url('/admin/settings.php', ['section' => 'theme_boost_union_functionality']),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('configtitleaccessibility', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_accessibility_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/admin/settings.php', ['section' => 'theme_boost_union_accessibility']),
+    'url' => new \core\url('/admin/settings.php', ['section' => 'theme_boost_union_accessibility']),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('configtitleflavours', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_flavours_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/theme/boost_union/flavours/overview.php'),
+    'url' => new \core\url('/theme/boost_union/flavours/overview.php'),
+];
+$templatecontext['cards'][] = [
+    'label' => get_string('configtitlesnippets', 'theme_boost_union'),
+    'desc' => get_string('settingsoverview_snippets_desc', 'theme_boost_union'),
+    'btn' => 'primary',
+    'url' => new \moodle_url('/theme/boost_union/snippets/overview.php'),
 ];
 $templatecontext['cards'][] = [
     'label' => get_string('smartmenus', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_smartmenus_desc', 'theme_boost_union'),
     'btn' => 'primary',
-    'url' => new \moodle_url('/theme/boost_union/smartmenus/menus.php'),
+    'url' => new \core\url('/theme/boost_union/smartmenus/menus.php'),
 ];
 
 // Then, add additional cards from Boost Union Child themes.
@@ -113,7 +122,7 @@ $templatecontext['cards'][] = [
     'label' => get_string('settingsoverview_all', 'theme_boost_union'),
     'desc' => get_string('settingsoverview_all_desc', 'theme_boost_union'),
     'btn' => 'secondary',
-    'url' => new \moodle_url('/admin/category.php', ['category' => 'theme_boost_union']),
+    'url' => new \core\url('/admin/category.php', ['category' => 'theme_boost_union']),
 ];
 
 // Render template.

@@ -88,7 +88,6 @@ $string['not_all_expected_set'] = 'Nicht alle Aktivitäten mit aktivierter Absch
 $string['now_indicator'] = 'JETZT';
 $string['overview'] = 'Überblick Teilnehmer/innen';
 $string['pluginname'] = 'Fortschrittsbalken';
-$string['privacy:metadata'] = 'Der Block ‚Fortschrittsbalken‘ stellt nur an anderer Stelle gespeicherte Abschlussdaten dar.';
 $string['progress'] = 'Fortschritt';
 $string['progressbar'] = 'Fortschrittsbalken';
 $string['selectitem'] = '{$a} auswählen';

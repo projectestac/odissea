@@ -92,12 +92,14 @@ final class notification_helper_test extends \advanced_testcase {
         $user4 = $generator->create_user();
         $user5 = $generator->create_user();
         $user6 = $generator->create_user(['suspended' => 1]);
+        $user7 = $generator->create_user();
         $generator->enrol_user($user1->id, $course->id, 'student');
         $generator->enrol_user($user2->id, $course->id, 'student');
         $generator->enrol_user($user3->id, $course->id, 'student');
         $generator->enrol_user($user4->id, $course->id, 'student');
         $generator->enrol_user($user5->id, $course->id, 'teacher');
         $generator->enrol_user($user6->id, $course->id, 'student');
+        $generator->enrol_user($user7->id, $course->id, 'student', 'manual', 0, 0, ENROL_USER_SUSPENDED);
 
         /** @var \mod_quiz_generator $quizgenerator */
         $quizgenerator = $generator->get_plugin_generator('mod_quiz');
@@ -154,6 +156,9 @@ final class notification_helper_test extends \advanced_testcase {
 
         // User6 should not be in the returned users because it is suspended.
         $this->assertArrayNotHasKey($user6->id, $users);
+
+        // User7 should not be in the returned users because it is suspended within the course.
+        $this->assertArrayNotHasKey($user7->id, $users);
 
         // Let's add some availability conditions.
         $availability =
@@ -296,6 +301,66 @@ final class notification_helper_test extends \advanced_testcase {
 
         // No new notification should have been sent.
         $this->assertEmpty($sink->get_messages_by_component('mod_quiz'));
+
+        // Clear sink.
+        $sink->clear();
+    }
+
+    /**
+     * Test content filtering in the quiz open soon notification.
+     */
+    public function test_send_notification_to_user_filter_content(): void {
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator();
+        $clock = $this->mock_clock_with_frozen();
+        $sink = $this->redirectMessages();
+
+        filter_set_global_state('multilang', TEXTFILTER_ON);
+        filter_set_applies_to_strings('multilang', true);
+
+        // Create a course and enrol a student.
+        $course = $generator->create_course([
+            'fullname' => '<span class="multilang" lang="en">A&B (en)</span><span class="multilang" lang="es">A&B (es)</span>'
+        ]);
+        $student = $generator->create_user();
+        $generator->enrol_user($student->id, $course->id, 'student');
+
+        $quizgenerator = $generator->get_plugin_generator('mod_quiz');
+
+        // Create a quiz with an open date < 48 hours.
+        $quiz = $quizgenerator->create_instance([
+            'name' => '<span class="multilang" lang="en">C&D (en)</span><span class="multilang" lang="es">C&D (es)</span>',
+            'course' => $course->id,
+            'timeopen' => $clock->time() + DAYSECS,
+        ]);
+        $clock->bump(5);
+
+        // Run the tasks.
+        $this->run_notification_helper_tasks();
+
+        // Get the notifications that should have been created during the adhoc task.
+        $messages = $sink->get_messages_by_component('mod_quiz');
+
+        $message = reset($messages);
+
+        $subjectstringparams = [
+            'timeopen' => userdate($quiz->timeopen),
+            'quizname' => 'C&D (en)'
+        ];
+        $expectedsubject = get_string('quizopendatesoonsubject', 'mod_quiz', $subjectstringparams);
+
+        $fullmessagestringparams = array_merge($subjectstringparams, [
+            'firstname' => $student->firstname,
+            'coursename' => 'A&B (en)',
+            'timeclose' => !empty($quiz->timeclose) ? userdate($quiz->timeclose) : get_string('statusna'),
+            'url' => new \moodle_url('/mod/quiz/view.php', ['id' => $quiz->cmid])
+        ]);
+        $expectedfullmessage = get_string('quizopendatesoonhtml', 'mod_quiz', $fullmessagestringparams);
+
+        // Validate
+        $this->assertEquals($expectedsubject, $message->subject);
+        $this->assertEquals($expectedfullmessage, $message->fullmessagehtml);
 
         // Clear sink.
         $sink->clear();

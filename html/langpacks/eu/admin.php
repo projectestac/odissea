@@ -721,6 +721,7 @@ $string['fullnamedisplayprivate'] = 'Izen osoaren formatua - pribatua';
 $string['gdrequired'] = 'GD hedapena orain Moodlen derrigorrezkoa da irudiak bihurtzeko.';
 $string['generalsettings'] = 'Ezarpen orokorrak';
 $string['geoipfile'] = 'GeoLite2 City MaxMind DB';
+$string['geopluginapikey'] = 'GeoPlugin APIaren gakoa';
 $string['getremoteaddrconf'] = 'Erregistratutako IP helbideen iturburua';
 $string['globalsearch'] = 'Bilaketa orokorra';
 $string['globalsearchmanage'] = 'Kudeatu bilaketa orokorra';

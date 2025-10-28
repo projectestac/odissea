@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtofavourites'] = '标星此课程';
+$string['addtofavourites'] = '收藏此课程';
 $string['all'] = '全部';
 $string['allincludinghidden'] = '所有的（包括被隐藏的）';
 $string['aria:addtofavourites'] = '用星号标记';
@@ -62,11 +62,11 @@ $string['customfiltergrouping'] = '要使用的字段';
 $string['customfiltergrouping_nofields'] = '这个选项需要设置一个课程自定义字段，并对所有人可见。';
 $string['displaycategories'] = '显示类别';
 $string['displaycategories_help'] = '在控制面板的课程项目上显示课程类别（包括卡片、列表和摘要）。';
-$string['favourites'] = '标星的';
-$string['future'] = '还未开始的';
+$string['favourites'] = '收藏';
+$string['future'] = '尚未开始';
 $string['hidden'] = '隐藏的课程';
-$string['hiddencourses'] = '从视图中移除的';
-$string['hidecourse'] = '从视图中移除';
+$string['hiddencourses'] = '已归档课程';
+$string['hidecourse'] = '归档本课程';
 $string['inprogress'] = '进行中';
 $string['lastaccessed'] = '最后访问';
 $string['layouts'] = '可用布局';
@@ -74,14 +74,14 @@ $string['layouts_help'] = '可供用户选择的课程概览布局。如果没�
 $string['list'] = '列表';
 $string['myoverview:myaddinstance'] = '增加一个新的课程概览区块到仪表板';
 $string['nocustomvalue'] = '没有 {$a}';
-$string['past'] = '过去的';
+$string['past'] = '已结束';
 $string['pluginname'] = '课程概览';
 $string['privacy:metadata:overviewgroupingpreference'] = '“课程概览”板块排序首选项。';
 $string['privacy:metadata:overviewpagingpreference'] = '“课程概览”板块分页首选项。';
 $string['privacy:metadata:overviewsortpreference'] = '“课程概述”板块排序首选项。';
 $string['privacy:metadata:overviewviewpreference'] = '“课程概览”板块视图首选项。';
 $string['privacy:request:preference:set'] = '设置 \'{$a->name}\' 的值是 \'{$a->value}\'';
-$string['removefromfavourites'] = '撤销标星此课程';
+$string['removefromfavourites'] = '取消收藏';
 $string['searchcourses'] = '搜索课程';
 $string['shortname'] = '简称';
 $string['show'] = '在视图中恢复';

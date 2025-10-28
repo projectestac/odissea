@@ -554,7 +554,7 @@ $string['postbymailsuccess'] = 'Ihre Antwort \'{$a->subject}\' wurde erfolgreich
 $string['postbymailsuccess_html'] = 'Ihre Antwort <a href="{$a->discussionurl}">{$a->subject}</a> wurde erfolgreich hinzugefügt.';
 $string['postbyuser'] = '{$a->post} von {$a->user}';
 $string['postincontext'] = 'Diskussion im Forum zeigen';
-$string['postisprivatereply'] = 'Dies ist eine private Antwort. (Trainer/nnen und Personen mit dem Recht "Private Antworten anzeigen" können diese ebenfalls sehen.)';
+$string['postisprivatereply'] = 'Dies ist eine private Antwort. (Trainer/innen und Personen mit dem Recht "Private Antworten anzeigen" können diese ebenfalls sehen.)';
 $string['postmailinfo'] = 'Dies ist eine Kopie einer Mitteilung, die in \'{$a}\' gepostet wurde.';
 $string['postmailnow'] = 'Dieser Beitrag wird direkt als E-Mail an alle Abonnent/innen des Forums versendet.';
 $string['postmailreply'] = 'Zum Antworten klicken Sie auf diesen Link: {$a}';

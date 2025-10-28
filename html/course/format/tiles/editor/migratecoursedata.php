@@ -87,7 +87,7 @@ if ($courseid) {
         );
         $continueurl = new moodle_url($pageurl, ['sesskey' => sesskey()]);
         echo html_writer::link($continueurl, get_string('continue'), ['class' => 'btn btn-danger']);
-        echo html_writer::link($courseurl, get_string('cancel'), ['class' => 'btn btn-secondary ml-2']);
+        echo html_writer::link($courseurl, get_string('cancel'), ['class' => 'btn btn-secondary ms-2']);
         echo $OUTPUT->footer();
         die();
     }

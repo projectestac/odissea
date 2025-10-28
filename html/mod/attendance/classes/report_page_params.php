@@ -30,17 +30,12 @@
  */
 class mod_attendance_report_page_params extends mod_attendance_page_with_filter_controls {
     /** @var int */
-    public $group;
-    /** @var int */
-    public $sort;
-    /** @var int */
     public $showextrauserdetails;
     /** @var int */
     public $showsessiondetails;
     /** @var int */
     public $sessiondetailspos;
-    /** @var int */
-    public $page;
+
 
     /**
      * mod_attendance_report_page_params constructor.

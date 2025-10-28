@@ -404,8 +404,8 @@ $string['listnoitem'] = 'Item not found';
 $string['listnopeers'] = 'No peers of item found';
 $string['listupdatefail'] = 'DB operation failed when editing list hierarchy';
 $string['logfilenotavailable'] = 'Logs not available';
-$string['loginasnoenrol'] = 'You cannot use enrol or unenrol when in course "Login as" session';
-$string['loginasonecourse'] = 'You cannot enter this course.<br /> You have to terminate the "Login as" session before entering any other course.';
+$string['loginasnoenrol'] = 'You cannot use enrol or unenrol when using \'Log in as\'.';
+$string['loginasonecourse'] = 'You cannot enter this course. You must finish the \'Log in as\' session before entering any other course.';
 $string['maxbytesfile'] = 'The file {$a->file} is too large. The maximum size you can upload is {$a->size}.';
 $string['maxareabytes'] = 'The file is larger than the space remaining in this area.';
 $string['maxdraftitemids'] = 'Your file uploads are temporarily limited after you uploaded a high volume of files. Please wait then try again.';
@@ -553,6 +553,7 @@ $string['sessionipnomatch2'] = '<p>Sorry, but your IP number seems to have chang
 $string['sessioncannotobtainlock'] = '<p>Unable to obtain lock for session id {$a->id} within {$a->acquiretimeout}.</p>
 <p>It is likely that another page ({$a->whohaslock}) is still running in another browser tab, or it did not release the lock due to an error.</p>
 <p>You can wait until the session lock timeout ({$a->lockexpire}) or you can restart your browser session. If this error persists, please notify the server administrator.</p>';
+$string['sessionstarterror'] = 'Couldn\'t start session. Please try again later.';
 $string['shortnametaken'] = 'Short name is already used for another course ({$a})';
 $string['sitepolicynotagreed'] = 'Site policy not agreed: <a href="{$a}">Click here to open the site policy.</a>';
 $string['scheduledbackupsdisabled'] = 'Scheduled backups have been disabled by the server admin';

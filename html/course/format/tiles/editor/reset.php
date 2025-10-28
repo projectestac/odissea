@@ -55,11 +55,11 @@ if (optional_param('sesskey', '', PARAM_TEXT)) {
     html_writer::div(get_string('resetalltilessure', 'format_tiles'), 'mb-2')
         . html_writer::link(
             new moodle_url('/course/format/tiles/editor/reset.php', ['courseid' => $courseid, 'sesskey' => sesskey()]),
-            html_writer::tag('span', get_string('reset'), ['class' => 'btn btn-danger mr-2'])
+            html_writer::tag('span', get_string('reset'), ['class' => 'btn btn-danger me-2'])
         )
         . html_writer::link(
             new moodle_url('/course/view.php', ['id' => $courseid]),
-            html_writer::tag('span', get_string('cancel'), ['class' => 'btn btn-secondary mr-2'])
+            html_writer::tag('span', get_string('cancel'), ['class' => 'btn btn-secondary me-2'])
         )
     );
     echo $OUTPUT->header();

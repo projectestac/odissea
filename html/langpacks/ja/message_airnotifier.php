@@ -80,7 +80,7 @@ $string['privacy:subcontext'] = 'メッセージAirNotifier';
 $string['requestaccesskey'] = 'アクセスキーをリクエストする';
 $string['sendnotificationnotenc'] = '暗号化せずに通知を送る';
 $string['sendtest'] = '私のデバイスにテストプッシュ通知を送信する';
-$string['sendtestconfirmation'] = 'あなたがこのサイトへの接続に使用しているデバイスにテストプッシュ通知が送信されます。あなたのデバイスがインターネットに接続およびモバイルアプリが開いていないことを確認してください (プッシュ通知はバックグラウンドで受信した場合のみ表示されるため)。';
+$string['sendtestconfirmation'] = 'あなたがこのサイトへの接続に使用しているデバイスにテストプッシュ通知が送信されます。あなたのデバイスがインターネットに接続およびモバイルアプリが開いていないことをご確認ください (プッシュ通知はバックグラウンドで受信した場合のみ表示されるため)。';
 $string['serverconnectivityerror'] = 'このサイトは通知サーバ {$a} に接続できません。';
 $string['showhide'] = 'デバイスを有効/無効にします。';
 $string['sitemustberegistered'] = 'パブリックAirNotifierインスタンスを使用するにはあなたのサイトの登録が必要です。代わりにあなたは<a href="https://apps.moodle.com">Moodleアプリポータル</a>でアカウントを作成してアクセスキーを取得できます。';

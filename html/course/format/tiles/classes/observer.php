@@ -23,6 +23,7 @@
 namespace format_tiles;
 use format_tiles\local\modal_helper;
 use format_tiles\local\video_cm;
+use format_tiles\local\format_option;
 
 /**
  * Event observers supported by this format.
@@ -119,6 +120,6 @@ class observer {
     public static function course_restored(\core\event\course_restored $event) {
         modal_helper::clear_cache_modal_cmids($event->courseid);
         video_cm::clear_cached_cmids($event->courseid);
+        format_option::clear_caches_course($event->courseid);
     }
-
 }

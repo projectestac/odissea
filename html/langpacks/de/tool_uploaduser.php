@@ -64,7 +64,7 @@ $string['renameerrors'] = 'Fehler beim Umbenennen';
 $string['requiredtemplate'] = 'Erforderlich. Geben Sie hier die Vorlagestruktur ein (%l = Nachname, %f = Vorname, %u = Anmeldename). In der Hilfedatei finden Sie weitere Details und Beispiele.';
 $string['rowpreviewnum'] = 'Vorschau für Zeilen';
 $string['unassignedsysrole'] = 'Nicht zugewiesene Systemrolle \'{$a}\'';
-$string['uploadpicture_baduserfield'] = 'Die gewählte Nutzermerkmal ist ungültig. Versuchen Sie es noch einmal.';
+$string['uploadpicture_baduserfield'] = 'Das gewählte Nutzermerkmal ist ungültig. Versuchen Sie es nochmal.';
 $string['uploadpicture_cannotmovezip'] = 'Die ZIP-Datei kann nicht in das temporäre Verzeichnis verschoben werden.';
 $string['uploadpicture_cannotprocessdir'] = 'Die entzippten Dateien können nicht verarbeitet werden.';
 $string['uploadpicture_cannotsave'] = 'Das Nutzerbild für {$a} kann nicht gespeichert werden. Prüfen Sie die ursprüngliche Bilddatei.';

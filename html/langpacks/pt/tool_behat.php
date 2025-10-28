@@ -29,7 +29,7 @@ $string['aim'] = 'Esta ferramenta de administração ajuda os programadores e cr
 Os procedimentos disponíveis para utilização em ficheiros \'.feature\' encontram-se listados abaixo.';
 $string['allavailablesteps'] = 'Todas as definições disponíveis da etapa';
 $string['errorbehatcommand'] = 'Erro ao executar o comando Behat CLI. Tente executar manualmente "{$a} --help" a partir da CLI para saber mais sobre o problema.';
-$string['errorcomposer'] = 'Dependências do compositor não estão instaladas.';
+$string['errorcomposer'] = 'Dependências de Composer não estão instaladas.';
 $string['errordataroot'] = '$CFG->behat_dataroot não está definido ou é inválido.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necessita de ser configurado em config.php.';
 $string['erroruniqueconfig'] = 'Os valores de $CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot têm de ser diferentes dos valores de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e $CFG->phpunit_prefix.<br/>Ou, se $CFG->behat_prefix é o mesmo, $CFG->behat_dbname ou $CFG->behat_dbhost têm de ser diferentes de $CFG->phpunit_dbname e $CFG->phpunit_dbhost e de $CFG->dbname e $CFG->dbhost.';
@@ -54,5 +54,5 @@ $string['warndirrootconfigfound'] = 'Um ficheiro de configuração foi encontrad
 $string['wheninfo'] = 'Quando. Ação que provoca um evento';
 $string['wrongbehatsetup'] = 'Existe um erro na configuração Behat e, por isso, as definições não podem ser listadas: <b>{$a->errormsg}</b><br/><br/>Por favor, verifique:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot estão definidos em config.php com diferentes valores de $CFG->dataroot, $CFG->prefix e $CFG->wwwroot.</li>
-<li>Executou "{$a->behatinit}" a partir da sua diretoria-raiz Moodle.</li>
-<li>As dependências estão instaladas em vendor/ e o ficheiro {$a->behatcommand} tem permissões de execução.</li></ul>';
+<li>Executou "{$a->behatinit}" a partir da diretoria raiz do seu Moodle.</li>
+<li>As dependências estão instaladas em \'vendor/\' e o ficheiro \'{$a->behatcommand}\' tem permissões de execução.</li></ul>';

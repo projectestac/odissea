@@ -31,6 +31,7 @@ $string['alignment_left'] = 'Αριστερά';
 $string['alignment_middle'] = 'Μέση';
 $string['alignment_right'] = 'Δεξιά';
 $string['alignment_top'] = 'Πάνω';
+$string['audio'] = 'Ήχος';
 $string['browserepositories'] = 'Περιήγηση στα αποθετήρια...';
 $string['constrain'] = 'Αυτόματο μέγεθος';
 $string['enteralt'] = 'Περιγραφή εικόνας για κάποιον που δεν μπορεί να την δει';

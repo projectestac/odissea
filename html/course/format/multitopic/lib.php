@@ -64,7 +64,6 @@ const FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC = 2;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class format_multitopic extends core_courseformat\base {
-
     // ADDED.
     /** @var int ID of section 0 / the General section, treated as the section root by the Multitopic format */
     public $fmtrootsectionid;
@@ -178,11 +177,8 @@ class format_multitopic extends core_courseformat\base {
         $modinfo = $course ? $this->get_modinfo() : null;
 
         if (isset($this->fmtsectionsextra) && $this->fmtmodinfo == $modinfo) {
-
             $fmtsectionsextra = $this->fmtsectionsextra;
-
         } else {
-
             $this->fmtsectionsextracomplete = false;
 
             if ($course) {
@@ -201,15 +197,20 @@ class format_multitopic extends core_courseformat\base {
             $fmtsectionsextra = [];
 
             // The previous section at, or above, each level.
-            $sectionextraprevatlevel = array_fill(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
-                                            FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1, null);
+            $sectionextraprevatlevel = array_fill(
+                FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
+                FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
+                null
+            );
 
             // The current section at, or above, each level.
-            $sectionextraatlevel = array_fill(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
-                                        FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1, null);
+            $sectionextraatlevel = array_fill(
+                FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
+                FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
+                null
+            );
 
             foreach ($sections as $thissection) {
-
                 // Create new object.
                 $thissectionextra = new \format_multitopic\section_info_extra($thissection);
 
@@ -222,8 +223,10 @@ class format_multitopic extends core_courseformat\base {
                 // Fix the section's level within appropriate bounds.
                 $levelsan = ($sectionextraatlevel[FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT] == null) ?
                         FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT
-                        : max(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
-                        min($thissection->level ?? FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC, FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC));
+                        : max(
+                            FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
+                            min($thissection->level ?? FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC, FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)
+                        );
                 $thissectionextra->levelsan = $levelsan;
 
                 // Update remembered sections.
@@ -286,21 +289,21 @@ class format_multitopic extends core_courseformat\base {
 
                 // Add this section to the list.
                 $fmtsectionsextra[$thissection->id] = $thissectionextra;
-
             }
 
             $this->fmtsectionsextra = $fmtsectionsextra;
             $this->fmtmodinfo = $modinfo;
-
         }
 
         if ($needall && !$this->fmtsectionsextracomplete) {
-
             // Reverse pass.
 
             // Remembered sections.
-            $sectionnextatlevel = array_fill(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
-                                            FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1, null);
+            $sectionnextatlevel = array_fill(
+                FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
+                FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
+                null
+            );
 
             foreach (array_reverse($fmtsectionsextra) as $thissectionextra) {
                 $thissection = $thissectionextra->sectionbase;
@@ -338,16 +341,13 @@ class format_multitopic extends core_courseformat\base {
                 for ($sublevel = $levelsan; $sublevel <= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC; $sublevel++) {
                     $sectionnextatlevel[$sublevel] = $thissectionextra;
                 }
-
             }
 
             $this->fmtsectionsextra = $fmtsectionsextra;
             $this->fmtsectionsextracomplete = true;
-
         }
 
         return $fmtsectionsextra;
-
     }
 
     /**
@@ -448,8 +448,11 @@ class format_multitopic extends core_courseformat\base {
         // END ADDED.
 
         if ((string)$section->name !== '') {
-            return $daystring . format_string($section->name, true,
-                    ['context' => context_course::instance($this->courseid)]);  // CHANGED.
+            return $daystring . format_string(
+                $section->name,
+                true,
+                ['context' => context_course::instance($this->courseid)]
+            );                                                                  // CHANGED.
         } else {
             return $daystring . $this->get_default_section_name($section);
         }
@@ -575,7 +578,7 @@ class format_multitopic extends core_courseformat\base {
             return $coursesections;
         }
 
-        $sectionpreferences = $this->fmt_set_get_sections_preferences();
+        $sectionpreferences = $this->get_sections_preferences_by_preference();
 
         foreach ($sectionpreferences as $preference => $sectionids) {
             if (!empty($sectionids) && is_array($sectionids)) {
@@ -598,29 +601,6 @@ class format_multitopic extends core_courseformat\base {
      * @return array of preferences indexed by preference name
      */
     public function get_sections_preferences_by_preference(): array {
-        return $this->fmt_set_get_sections_preferences();
-    }
-
-    /**
-     * Set the format section preferences.
-     *
-     * @param string $preferencename preference name
-     * @param int[] $sectionids affected section IDs
-     *
-     */
-    public function set_sections_preference(string $preferencename, array $sectionids): void {
-        $this->fmt_set_get_sections_preferences($preferencename, $sectionids);
-    }
-
-    /**
-     * Set and return the format section preferences.
-     *
-     * @param string|null $preferencename preference name
-     * @param int[]|null $sectionids affected section IDs
-     * @return array of preferences indexed by section ID
-     *
-     */
-    protected function fmt_set_get_sections_preferences(?string $preferencename = null, ?array $sectionids = null): array {
 
         $course = $this->get_course();
         $sectionsextra = $this->fmt_get_sections_extra();
@@ -636,7 +616,7 @@ class format_multitopic extends core_courseformat\base {
             if ($prefname != 'fmtcollapsedset') {
                 foreach ($sectids as $i => $sectionid) {
                     if (!isset($sectionsextra[$sectionid])) {
-                        unset($sectids[$i]);
+                        $sectionpreferences[$prefname][$i] = 0;
                     } else if ($prefname == 'contentcollapsed') {
                         $contentcollapsedindexed[$sectionid] = true;
                     }
@@ -644,16 +624,18 @@ class format_multitopic extends core_courseformat\base {
             }
         }
 
-        // Try autocollapsing content.
+        // Figure out autocollapse changes.
         $sectionidsold = $sectionpreferences['contentcollapsed'] ?? null;
         $collapsedset = $collapsedsetold;
         $autocollapsedchanged = false;
         foreach ($sectionsextra as $sectionid => $sectionextra) {
             $section = $sectionextra->sectionbase;
-            if ($sectionid > $collapsedsetold
-                    && $sectionextra->levelsan >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
-                    && ((($section->collapsible != '') ? $section->collapsible : $course->collapsible) != '0')
-                    && !isset($contentcollapsedindexed[$sectionid])) {
+            if (
+                ($sectionid > $collapsedsetold)
+                && ($sectionextra->levelsan >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)
+                && ((($section->collapsible != '') ? $section->collapsible : $course->collapsible) != '0')
+                && !isset($contentcollapsedindexed[$sectionid])
+            ) {
                 if (!isset($sectionpreferences['contentcollapsed'])) {
                     $sectionpreferences['contentcollapsed'] = [];
                 }
@@ -663,10 +645,12 @@ class format_multitopic extends core_courseformat\base {
             $collapsedset = max($collapsedset, $sectionid);
         }
         $sectionpreferences['fmtcollapsedset'] = [ $collapsedset ];
+
+        // Try writing autocollapse changes.
         $collapsedsetupdated = false;
         if ($autocollapsedchanged) {
             try {
-                $this->fmt_set_sections_preferences_sub($sectionpreferences);
+                $this->persist_to_user_preference($sectionpreferences);
                 $collapsedsetupdated = true;
             } catch (coding_exception $e) {
                 if (isset($sectionidsold)) {
@@ -677,71 +661,30 @@ class format_multitopic extends core_courseformat\base {
             }
         }
 
-        // Try writing specified changes.
-        $error = null;
-        if ($preferencename) {
-            $sectionidsold = $sectionpreferences[$preferencename] ?? null;
-            $sectionpreferences[$preferencename] = $sectionids;
+        // If nothing else, try writing last seen section.
+        if (!$collapsedsetupdated && ($collapsedset > $collapsedsetold)) {
             try {
-                $this->fmt_set_sections_preferences_sub($sectionpreferences);
-                $collapsedsetupdated = true;
+                $this->persist_to_user_preference($sectionpreferences);
             } catch (coding_exception $e) {
-                $error = $e;  // We may want to rethrow this.
-            }
-
-            // Try writing specified changes without last seen section.
-            if ($error && isset($sectionidsold) && count($sectionids) < count($sectionidsold)
-                    && !$collapsedsetupdated && $collapsedset > $collapsedsetold) {
-                $error = null;
                 if ($collapsedsetold > 0) {
                     $sectionpreferences['fmtcollapsedset'] = [ $collapsedsetold ];
                 } else {
                     unset($sectionpreferences['fmtcollapsedset']);
                 }
-                try {
-                    $this->fmt_set_sections_preferences_sub($sectionpreferences);
-                } catch (coding_exception $e) {
-                    $error = $e;  // We will want to rethrow this.
-                }
             }
-
-            if ($error) {
-                if (isset($sectionidsold)) {
-                    $sectionpreferences[$preferencename] = $sectionidsold;
-                } else {
-                    unset($sectionpreferences[$preferencename]);
-                }
-            }
-
-        }
-
-        // If nothing else, try writing last seen section.
-        if (!$collapsedsetupdated && $collapsedset > $collapsedsetold) {
-            $sectionpreferences['fmtcollapsedset'] = [ $collapsedset ];
-            try {
-                $this->fmt_set_sections_preferences_sub($sectionpreferences);
-                $collapsedsetupdated = true;
-            } catch (coding_exception $e) {
-                // Do nothing, because there's nothing we can do.
-                $collapsedsetupdated = false;
-            }
-        }
-
-        if ($error) {
-            throw $error;
         }
 
         return $sectionpreferences;
-
     }
 
     /**
-     * Set the format section preferences, given all preferences indexed by preference.
+     * Persist the section preferences to the user preferences.
      *
-     * @param array $sectionpreferences of preferences indexed by preference
-     *
+     * @param array $sectionpreferences the section preferences
      */
-    protected function fmt_set_sections_preferences_sub(array $sectionpreferences): void {
+    protected function persist_to_user_preference(
+        array $sectionpreferences
+    ): void {
         global $USER;
         $course = $this->get_course();
         set_user_preference('coursesectionspreferences_' . $course->id, json_encode($sectionpreferences), $USER->id);
@@ -764,15 +707,21 @@ class format_multitopic extends core_courseformat\base {
     public function get_view_url($section, $options = []) {
         global $CFG;
         $course = $this->get_course();
-        $url = new moodle_url( ($options['fmtedit'] ?? false) ? '/course/format/multitopic/_course_view.php'
-                                : '/course/view.php', ['id' => $course->id]);   // CHANGED.
+        $url = new moodle_url(
+            ($options['fmtedit'] ?? false) ?
+                '/course/format/multitopic/_course_view.php'
+                : '/course/view.php',
+            ['id' => $course->id]
+        );   // CHANGED.
         // REMOVED section return.
         // REMOVED convert sectioninfo to number.
         $sectionextra = ($section === null) ? null : $this->fmt_get_section_extra($section); // ADDED.
         if ($sectionextra !== null) {                                           // CHANGED.
             $pageid = $sectionextra->id;
-            if (!empty($sectionextra->sectionbase->component)
-                && $sectionextra->sectionbase->component == 'mod_subsection') {
+            if (
+                !empty($sectionextra->sectionbase->component)
+                && $sectionextra->sectionbase->component == 'mod_subsection'
+            ) {
                 $modinfo = get_fast_modinfo($course);
                 $pageid = $modinfo->get_instances_of('subsection')[$sectionextra->sectionbase->itemid]->section;
             }
@@ -783,7 +732,7 @@ class format_multitopic extends core_courseformat\base {
                 $pageextra->id : $pageextra->parentid;
             if ($pageid && $pageid != $this->fmtrootsectionid) {
                 if (!empty($pageextra->sectionbase->component)) {
-                    $url = new moodle_url( '/course/section.php', ['id' => $pageid]);
+                    $url = new moodle_url('/course/section.php', ['id' => $pageid]);
                 } else {
                     $url->param('sectionid', $pageid);
                 }
@@ -843,8 +792,10 @@ class format_multitopic extends core_courseformat\base {
         if ($navigation->includesectionnum === false) {
             // CHANGED.
             $selectedsectionid = optional_param('sectionid', null, PARAM_INT);
-            if ($selectedsectionid !== null && (!defined('AJAX_SCRIPT') || AJAX_SCRIPT == '0') &&
-                    $PAGE->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)) {
+            if (
+                $selectedsectionid !== null && (!defined('AJAX_SCRIPT') || AJAX_SCRIPT == '0') &&
+                $PAGE->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)
+            ) {
                 $navigationwrapper->innerincludesectionid = $selectedsectionid;
             }
             // END CHANGED.
@@ -920,7 +871,7 @@ class format_multitopic extends core_courseformat\base {
             $courseformatoptions = [
                 // INCLUDED /course/format/periods/lib.php function course_format_options 'periodduration'.
                 'periodduration' => [
-                    'default' => null,                                          // CHANGED.
+                    'default' => null, // CHANGED.
                     'type' => PARAM_NOTAGS,
                 ],
                 // END INCLUDED.
@@ -949,8 +900,8 @@ class format_multitopic extends core_courseformat\base {
                 'periodduration' => [
                     'label' => new lang_string('perioddurationdefault', 'format_multitopic'), // CHANGED.
                     'help' => 'perioddurationdefault',
-                    'help_component' => 'format_multitopic',                    // CHANGED.
-                    'element_type' => 'select',                                 // CHANGED.
+                    'help_component' => 'format_multitopic', // CHANGED.
+                    'element_type' => 'select', // CHANGED.
                     // REMOVED: Replaced periodduration type.
                     // ADDED.
                     'element_attributes' => [[
@@ -1048,13 +999,13 @@ class format_multitopic extends core_courseformat\base {
             $sectionformatoptions = [
                 // INCLUDED /course/format/onetopic/lib.php function section_format_options 'level'.
                 'level' => [
-                    'default' => FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC,         // CHANGED.
+                    'default' => FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC, // CHANGED.
                     'type' => PARAM_INT,
                 ],
                 // END INCLUDED.
                 // INCLUDED /course/format/periods/lib.php function section_format_options 'periodduration'.
                 'periodduration' => [
-                    'default' => null,                                          // ADDED.
+                    'default' => null, // ADDED.
                     'type' => PARAM_NOTAGS,
                 ],
                 // END INCLUDED.
@@ -1071,12 +1022,12 @@ class format_multitopic extends core_courseformat\base {
                 // INCLUDED /course/format/onetopic/lib.php function section_format_options $foreditform 'level'.
                 'level' => [
                     // REMOVED: 'default' & 'type'.
-                    'label' => get_string('level', 'format_multitopic'),        // CHANGED.
+                    'label' => get_string('level', 'format_multitopic'), // CHANGED.
                     'element_type' => 'select',
                     'element_attributes' => [
                         [
                             FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1 => get_string('asprincipal', 'format_multitopic'), // CHANGED.
-                            FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 2 => get_string('aschild', 'format_multitopic'),     // CHANGED.
+                            FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 2 => get_string('aschild', 'format_multitopic'), // CHANGED.
                             FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC => get_string('topic'), // ADDED.
                         ],
                     ],
@@ -1088,8 +1039,8 @@ class format_multitopic extends core_courseformat\base {
                 'periodduration' => [
                     'label' => new lang_string('perioddurationoverride', 'format_multitopic'), // CHANGED.
                     'help' => 'perioddurationoverride',
-                    'help_component' => 'format_multitopic',                    // CHANGED.
-                    'element_type' => 'select',                                 // CHANGED.
+                    'help_component' => 'format_multitopic', // CHANGED.
+                    'element_type' => 'select', // CHANGED.
                     // REMOVED: Changed type.
                     // ADDED.
                     'element_attributes' => [[
@@ -1223,7 +1174,6 @@ class format_multitopic extends core_courseformat\base {
         } else {
             return null;
         }
-
     }
     // END INCLUDED.
 
@@ -1241,7 +1191,6 @@ class format_multitopic extends core_courseformat\base {
         } else {
             return null;
         }
-
     }
     // END INCLUDED.
 
@@ -1282,12 +1231,13 @@ class format_multitopic extends core_courseformat\base {
         // but there is some available info text which explains the reason & should display,
         // OR it is hidden but the course has a setting to display hidden sections as unavilable.
         return (!$parent || ($parent->section == 0) || $parent->uservisible)
-            && ($sectionextra->parentvisiblesan || has_capability(
-                        'moodle/course:viewhiddensections',
-                        context_course::instance($course->id),
-                        $section->modinfo->userid
-                    )
+            && (
+                $sectionextra->parentvisiblesan || has_capability(
+                    'moodle/course:viewhiddensections',
+                    context_course::instance($course->id),
+                    $section->modinfo->userid
                 )
+            )
             && (
                 ($section->section == 0) || $section->uservisible
                 || ($section->visible || !$hidesections)
@@ -1308,10 +1258,12 @@ class format_multitopic extends core_courseformat\base {
         $parentid = $sectionextra->parentid;
         if (isset($parentid)) {
             $parent = $section->modinfo->get_section_info_by_id($parentid);
-            if (!(
-                ($parent->section == 0)
-                || $parent->uservisible && ($parent->available || $sectionextra->levelsan >= 2)
-            )) {
+            if (
+                !(
+                    ($parent->section == 0)
+                    || $parent->uservisible && ($parent->available || $sectionextra->levelsan >= 2)
+                )
+            ) {
                 $available = false;
                 if (!$parent->uservisible) {
                     $availableinfo = '';
@@ -1347,8 +1299,13 @@ class format_multitopic extends core_courseformat\base {
      * @param null|lang_string|string $editlabel
      * @return \core\output\inplace_editable
      */
-    public function inplace_editable_render_section_name($section, $linkifneeded = true,
-            $editable = null, $edithint = null, $editlabel = null): \core\output\inplace_editable {
+    public function inplace_editable_render_section_name(
+        $section,
+        $linkifneeded = true,
+        $editable = null,
+        $edithint = null,
+        $editlabel = null
+    ): \core\output\inplace_editable {
         if (empty($edithint)) {
             $edithint = new lang_string('editsectionname');                     // CHANGED.
         }
@@ -1363,8 +1320,10 @@ class format_multitopic extends core_courseformat\base {
         require_once($CFG->dirroot . '/course/lib.php');
 
         if ($editable === null) {
-            $editable = !empty($USER->editing) && has_capability('moodle/course:update',
-                    context_course::instance($section->course));
+            $editable = !empty($USER->editing) && has_capability(
+                'moodle/course:update',
+                context_course::instance($section->course)
+            );
         }
 
         $displayvalue = $title = get_section_name($section->course, $section);
@@ -1388,8 +1347,16 @@ class format_multitopic extends core_courseformat\base {
             $editlabel = new lang_string('newsectionname', '', $title);
         }
 
-        return new \core\output\inplace_editable('format_' . $this->format, $itemtype, $section->id, $editable,
-            $displayvalue, $section->name, $edithint, $editlabel);
+        return new \core\output\inplace_editable(
+            'format_' . $this->format,
+            $itemtype,
+            $section->id,
+            $editable,
+            $displayvalue,
+            $section->name,
+            $edithint,
+            $editlabel
+        );
         // END INCLUDED.
     }
 
@@ -1475,7 +1442,9 @@ function format_multitopic_inplace_editable(string $itemtype, int $itemid, $newv
     if ($itemtype === 'sectionname' || $itemtype === 'sectionnamenl') {
         $section = $DB->get_record_sql(
             'SELECT s.* FROM {course_sections} s JOIN {course} c ON s.course = c.id WHERE s.id = ? AND c.format = ?',
-            [$itemid, 'multitopic'], MUST_EXIST);                               // CHANGED.
+            [$itemid, 'multitopic'],
+            MUST_EXIST
+        );                                                                      // CHANGED.
         return course_get_format($section->course)->inplace_editable_update_section_name($section, $itemtype, $newvalue);
     }
 }

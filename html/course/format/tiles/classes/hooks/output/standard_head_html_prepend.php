@@ -36,7 +36,6 @@ class standard_head_html_prepend {
             // This is called on every page so check that we are in a tiles course first.
             return;
         }
-        $debug = "Could not prepare format_tiles head data";
         try {
             if (method_exists('format_tiles\local\dynamic_styles', 'get_tiles_dynamic_css')) {
                 // The method get_tiles_dynamic_css() will check that we are on a page that really needs it.
@@ -44,11 +43,30 @@ class standard_head_html_prepend {
                 if ($dynamiccss) {
                     $hook->add_html("<style id=\"format-tiles-dynamic-css\">$dynamiccss</style>");
                 }
-            } else {
-                debugging("$debug: class not found", DEBUG_DEVELOPER);
             }
         } catch (\Exception $e) {
             debugging("Could not prepare format_tiles head data: " . $e->getMessage(), DEBUG_DEVELOPER);
+        }
+
+        try {
+            // If user is requesting course/view.php?section=xx, redirect to course/section.php.
+            $sectionparam = optional_param('section', 0, PARAM_INT);
+            if ($sectionparam && $PAGE->url->compare(new \moodle_url('/course/view.php'), URL_MATCH_BASE)) {
+                $modinfo = get_fast_modinfo($PAGE->course);
+                $section = $modinfo->get_section_info($sectionparam);
+                if ($section && $section->uservisible) {
+                    redirect(
+                        new \moodle_url('/course/section.php', ['id' => $section->id])
+                    );
+                } else {
+                    debugging("Section number $sectionparam not available", DEBUG_DEVELOPER);
+                    redirect(
+                        new \moodle_url('/course/view.php', ['id' => $PAGE->course->id])
+                    );
+                }
+            }
+        } catch (\Exception $e) {
+            debugging("$debug: " . $e->getMessage(), DEBUG_DEVELOPER);
         }
     }
 }

@@ -25,17 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventxapipost'] = 'Post xAPI記述';
+$string['eventxapipost'] = 'Post xAPIステートメント';
 $string['privacy:metadata:component'] = 'フランケンシュタイルのコンポーネント名です。';
 $string['privacy:metadata:itemid'] = '状態のアイテムIDです。';
 $string['privacy:metadata:registration'] = 'xAPI登録UUIDです。';
 $string['privacy:metadata:statedata'] = '状態データを含むJSONオブジェクトです。';
-$string['privacy:metadata:stateid'] = 'xAPI状態IDです。';
+$string['privacy:metadata:stateid'] = 'xAPIステートIDです。';
 $string['privacy:metadata:timecreated'] = '選択された状態要素の作成日時です。';
 $string['privacy:metadata:timemodified'] = '状態の最終更新日時です。';
 $string['privacy:metadata:userid'] = '状態に属するユーザのIDです。';
-$string['privacy:metadata:xapi_states'] = '保存済みxAPI状態です。';
-$string['privacy:xapistate'] = 'xAPI状態';
-$string['xapicleanup'] = '保存済みxAPI状態のクリーンアップ';
-$string['xapicleanupperiod'] = '保存済みxAPI状態をクリーンアップする';
-$string['xapicleanupperiod_help'] = '選択した期間に更新されていない保存済みxAPIを削除します。';
+$string['privacy:metadata:xapi_states'] = '保存済みxAPIステートです。';
+$string['privacy:xapistate'] = 'xAPIステート';
+$string['xapicleanup'] = '保存済みxAPIステートのクリーンアップ';
+$string['xapicleanupperiod'] = 'xAPIステートをクリーンアップする';
+$string['xapicleanupperiod_help'] = '選択した期間に未更新のすべての保存済みxAPIを削除します。';

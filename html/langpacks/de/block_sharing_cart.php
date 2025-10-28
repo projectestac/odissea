@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anonymize_user_data'] = 'Möchten Sie die Nutzerdaten anonymisieren?';
 $string['atleast_one_course_module_must_be_included'] = 'Mindestens ein Kursmodul muss enthalten sein. Bitte wählen Sie mindestens ein Kursmodul aus, das enthalten sein soll.';
-$string['backup'] = 'Sicherung';
 $string['backup_failed'] = 'Die Sicherung ist fehlgeschlagen. Sie können den Artikel aus dem Zwischenspeicher löschen und es erneut versuchen.';
 $string['backup_item'] = 'Element sichern';
 $string['backup_settings'] = 'Backup-Einstellungen';

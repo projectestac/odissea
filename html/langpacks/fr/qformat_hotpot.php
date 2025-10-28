@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'Format XML Hot Potatoes';
+$string['hotpot_help'] = 'Il s\'agit d\'un format de fichier permettant d\'importer les questions des fichiers XML de Hot Potatoes, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx), JQuiz (jqz), dans la banque de questions de Moodle.';
 $string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'Format XML Hot Potatoes';
+$string['pluginname_help'] = 'Il s\'agit d\'un format de fichier permettant d\'importer les questions des fichiers XML de Hot Potatoes, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx), JQuiz (jqz), dans la banque de questions de Moodle.';
 $string['pluginname_link'] = 'qformat/hotpot';
+$string['requiremodhotpot'] = 'Le plugin d\'importation de questions Hot Potatoes ne peut pas être installé car le module d\'activité HotPot est manquant. Veuillez télécharger le module d\'activité HotPot, le placer dans {$a}/mod/hotpot, et recharger cette page.';

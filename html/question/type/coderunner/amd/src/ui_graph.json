@@ -1,0 +1,54 @@
+{
+    "name": "ui_graph",
+    "parameters": {
+        "fontsize": {
+            "type": "int",
+            "default": 20
+        },
+        "helpmenutext": {
+            "type": "string",
+            "default": ""
+        },
+        "isdirected": {
+            "type": "boolean",
+            "default": true
+        },
+        "isfsm": {
+            "type": "boolean",
+            "default": true
+        },
+        "lockedgelabels": {
+            "type": "boolean", 
+            "default": false
+        },
+        "lockedgepositions": {
+            "type": "boolean",
+            "default": false
+        },
+        "lockedgeset": {
+            "type": "boolean",
+            "default": false
+        },
+        "locknodelabels": {
+            "type": "boolean",
+            "default": false
+        },
+        "locknodepositions": {
+            "type": "boolean",
+            "default": false
+        },
+        "locknodeset": {
+            "type": "boolean",
+            "default": false
+        },
+        "noderadius": {
+            "type": "int",
+            "default": 26
+        },
+
+        "textoffset": {
+            "type": "int",
+            "default": 5
+        }
+    }
+}

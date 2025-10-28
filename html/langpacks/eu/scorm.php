@@ -449,14 +449,14 @@ $string['versionwarning'] = 'Manifestuaren bertsioa 1.3 baino lehenagokoa da. Ko
 $string['viewallreports'] = 'Ikusi {$a} saiakeren txostenak';
 $string['viewalluserreports'] = 'Ikusi {$a} erabiltzaileen txostenak';
 $string['whatgrade'] = 'Saiakeren kalifikazioa';
-$string['whatgrade_help'] = 'Saiakera anizkoitzak onartzen badira, aukera honek kalifikazio liburuan gordeko den puntuazioa zehazten du: altuena, batez bestekoa, amaitutako lehen saiakerarena edo amaitutako azken saiakerarena. Amaitutako azken saiakeran ez da kontuan hartuko \'Gainditu gabe\' egoeran dauden saiakerak.
+$string['whatgrade_help'] = 'Hainbat saiakera baimentzen badira, aukera honek kalifikazio liburuan gordeko den puntuazioa zehazten du: altuena, batez bestekoa, amaitutako lehen saiakerarena edo amaitutako azken saiakerarena. Amaitutako azken saiakeran ez da kontuan hartuko \'Gainditu gabe\' egoeran dauden saiakerak.
 
 Saiakera anizkoitzei buruzko oharrak:
 
 * Saiakera berria hasteko, edukiaren egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretarako sarbidea aukera anizkoitzak onartu nahi badituzu.
 * SCORM pakete batzuk barne logika bat jarraitzen dute saiakera anizkoitzei dagokienez, gehienek ez dute ezer berezirik egiten arlo honetan. Beraz, ikaslea saiakera batean berriro sartzen bada, SCORM edukiak ez badu kasu hau modu berezi batean tratatzen, gerta liteke aurreko saiakeraren balioak berridaztea, nahiz eta saiakeraren egoera \'osatua\' edo \'gainditua\' izan.
 * Aukera anizkoitzak kudeatzeko aukera gehigarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
-$string['whatgradedesc'] = 'Kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den, saiakera anizkoitzak gaituz gero.';
+$string['whatgradedesc'] = 'Hainbat saiakera baimenduz gero, kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den.';
 $string['width'] = 'Zabalera';
 $string['window'] = 'Leihoa';
 $string['youmustselectastatus'] = 'Derrigortu beharreko egoera aukeratu behar duzu';

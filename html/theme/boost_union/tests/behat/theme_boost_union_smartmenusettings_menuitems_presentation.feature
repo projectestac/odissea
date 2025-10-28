@@ -59,7 +59,7 @@ Feature: Configuring the theme_boost_union plugin on the "Smart menus" page, app
     Then the "class" attribute of "//div[@class='primary-navigation']//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "static-item-resources"
     And the "class" attribute of "//div[contains(@class, 'carousel-item')]//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "static-item-resources"
     And the "class" attribute of "//nav[contains(@class, 'menubar')]//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "static-item-resources"
-    And I change viewport size to "740x900"
+    And I change viewport size to "mobile"
     And the "class" attribute of "//div[@class='bottom-navigation']//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "static-item-resources"
     And I change viewport size to "large"
     And I click on ".action-edit" "css_element" in the "Resources" "table_row"
@@ -72,7 +72,7 @@ Feature: Configuring the theme_boost_union plugin on the "Smart menus" page, app
     And the "class" attribute of "//div[contains(@id, 'usermenu-carousel')]//div[contains(@class, 'carousel-item')]//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "course-resource-links"
     And the "class" attribute of "//nav[contains(@class, 'menubar')]//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should not contain "static-item-resources"
     And the "class" attribute of "//nav[contains(@class, 'menubar')]//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "course-resource-links"
-    And I change viewport size to "740x900"
+    And I change viewport size to "mobile"
     And the "class" attribute of "//div[@class='bottom-navigation']//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should not contain "static-item-resources"
     And the "class" attribute of "//div[@class='bottom-navigation']//a[contains(normalize-space(.), 'Resources')]" "xpath_element" should contain "course-resource-links"
 
@@ -169,31 +169,110 @@ Feature: Configuring the theme_boost_union plugin on the "Smart menus" page, app
     And "Demo item 02" "text" should appear after "Demo item 03" "text"
     And "Demo item 01" "text" should appear after "Demo item 02" "text"
 
+  # The following "Smartmenus: Menu items: Presentation - Display the menu items in different viewports" scenarios look like they
+  # could be combined into a single scenario outline, but they are not because with the scenario outline approach, the test
+  # would attempt to open menus that were hidden due to having no items.
+
   @javascript
-  Scenario Outline: Smartmenus: Menu items: Presentation - Display the menu items in different viewports
+  Scenario: Smartmenus: Menu items: Presentation - Display the menu items in different viewports - hide the menu items on mobile devices
     When I log in as "admin"
     And I set "Quick links" smart menu items with the following fields to these values:
       | Title          | Resources          |
       | Menu item type | Static             |
       | Menu item URL  | https://moodle.org |
-      | desktop        | <hidedesktop>      |
-      | tablet         | <hidetablet>       |
-      | mobile         | <hidemobile>       |
-    Then I <desktopshouldornot> see smart menu "Quick links" item "Resources" in location "Menu, Main, User"
-    And I change viewport size to "800x980"
-    Then I <tabletshouldornot> see smart menu "Quick links" item "Resources" in location "User, Menu"
+      | desktop        | 0                  |
+      | tablet         | 0                  |
+      | mobile         | 1                  |
+    Then I should see smart menu "Quick links" item "Resources" in location "Menu, Main, User"
+    And I change viewport size to "tablet"
+    Then I should see smart menu "Quick links" item "Resources" in location "User, Menu"
     And I click on "More" "link" in the ".primary-navigation" "css_element"
-    Then I <tabletshouldornot> see smart menu "Quick links" item "Resources" in location "Main"
+    Then I should see smart menu "Quick links" item "Resources" in location "Main"
     And I change viewport size to "mobile"
-    Then I <mobileshouldornot> see smart menu "Quick links" item "Resources" in location "Menu, User"
-    And I <mobileshouldornot> see smart menu "Quick links" item "Resources" in location "Bottom"
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Bottom bar smart menu" should not be visible
 
-    Examples:
-      | hidedesktop | hidetablet | hidemobile | desktopshouldornot | tabletshouldornot | mobileshouldornot |
-      | 0           | 0          | 1          | should             | should            | should not        |
-      | 0           | 1          | 1          | should             | should not        | should not        |
-      | 1           | 0          | 0          | should not         | should            | should            |
-      | 1           | 0          | 1          | should not         | should            | should not        |
+  @javascript
+  Scenario: Smartmenus: Menu items: Presentation - Display the menu items in different viewports - hide the menu items on tablet and mobile devices
+    When I log in as "admin"
+    And I set "Quick links" smart menu items with the following fields to these values:
+      | Title          | Resources          |
+      | Menu item type | Static             |
+      | Menu item URL  | https://moodle.org |
+      | desktop        | 0                  |
+      | tablet         | 1                  |
+      | mobile         | 1                  |
+    Then I should see smart menu "Quick links" item "Resources" in location "Menu, Main, User"
+    And I change viewport size to "tablet"
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And I click on "More" "link" in the ".primary-navigation" "css_element"
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Main menu smart menu" should not be visible
+    And I change viewport size to "mobile"
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Bottom bar smart menu" should not be visible
+
+  @javascript
+  Scenario: Smartmenus: Menu items: Presentation - Display the menu items in different viewports - hide the menu items on desktop devices
+    When I log in as "admin"
+    And I set "Quick links" smart menu items with the following fields to these values:
+      | Title          | Resources          |
+      | Menu item type | Static             |
+      | Menu item URL  | https://moodle.org |
+      | desktop        | 1                  |
+      | tablet         | 0                  |
+      | mobile         | 0                  |
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Main menu smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And I change viewport size to "tablet"
+    Then I should see smart menu "Quick links" item "Resources" in location "User, Menu"
+    And I click on "More" "link" in the ".primary-navigation" "css_element"
+    Then I should see smart menu "Quick links" item "Resources" in location "Main"
+    And I change viewport size to "mobile"
+    Then I should see smart menu "Quick links" item "Resources" in location "Menu, User"
+    And I should see smart menu "Quick links" item "Resources" in location "Bottom"
+
+  @javascript
+  Scenario: Smartmenus: Menu items: Presentation - Display the menu items in different viewports - hide the menu items on desktop and mobile devices
+    When I log in as "admin"
+    And I set "Quick links" smart menu items with the following fields to these values:
+      | Title          | Resources          |
+      | Menu item type | Static             |
+      | Menu item URL  | https://moodle.org |
+      | desktop        | 1                  |
+      | tablet         | 0                  |
+      | mobile         | 1                  |
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Main menu smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And I change viewport size to "tablet"
+    Then I should see smart menu "Quick links" item "Resources" in location "User, Menu"
+    And I click on "More" "link" in the ".primary-navigation" "css_element"
+    Then I should see smart menu "Quick links" item "Resources" in location "Main"
+    And I change viewport size to "mobile"
+    Then "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Menu bar smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > User menu smart menu" should not be visible
+    And "Resources" "theme_boost_union > Smart menu item" in the "Quick links" "theme_boost_union > Bottom bar smart menu" should not be visible
+
+  @javascript
+  Scenario: Smartmenus: Menu items: Presentation - Select an existing icon from the icon autocomplete list
+    When I log in as "admin"
+    And I set "Quick links" smart menu items with the following fields to these values:
+      | Title              | Resources           |
+      | Menu item type     | Heading             |
+    And I should see "Resources" in the "smartmenus_items" "table"
+    And I click on ".action-edit" "css_element" in the "Resources" "table_row"
+    And I click on ".form-autocomplete-downarrow" "css_element" in the "#fitem_id_menuicon" "css_element"
+    And I set the field "Icon" to "fa-folder"
+    And I should see "path_folder" in the "#fitem_id_menuicon .form-autocomplete-selection" "css_element"
+
+  # Unfortunately, this can't be tested with Behat as Behat would throw an
+  # 'Unable to find 'nonexistingicon' in the list of options, and unable to create a new option (InvalidArgumentException)'
+  # exception when trying to select an unexisting icon.
+  # Scenario: Smartmenus: Menu items: Presentation - Select an unexisting icon from the icon autocomplete list
 
   @javascript
   Scenario Outline: Smartmenus: Menu items: Presentation - Display the menu items title with icon
@@ -204,27 +283,40 @@ Feature: Configuring the theme_boost_union plugin on the "Smart menus" page, app
       | Title presentation | <presentationtitle> |
     And I should see "Resources" in the "smartmenus_items" "table"
     And I click on ".action-edit" "css_element" in the "Resources" "table_row"
-    And I click on "input[name='iconsearch']" "css_element"
-    And I click on ".fa-info-circle" "css_element" in the ".fontawesome-picker .popover-body " "css_element"
+    And I click on ".form-autocomplete-downarrow" "css_element" in the "#fitem_id_menuicon" "css_element"
+    And I should see "<iconname>" in the "#fitem_id_menuicon .form-autocomplete-suggestions [data-value='<iconvalue>'] small" "css_element"
+    And I should see "<iconbadge>" in the "#fitem_id_menuicon .form-autocomplete-suggestions [data-value='<iconvalue>'] span.badge" "css_element"
+    And the "class" attribute of "#fitem_id_menuicon .form-autocomplete-suggestions [data-value='<iconvalue>'] i.fa" "css_element" should contain "<faicon>"
+    And I click on "<iconname>" item in the autocomplete list
+    And I press the escape key
+    And I click on "Save changes" "button"
+    And I click on ".action-edit" "css_element" in the "Resources" "table_row"
+    # Open the menu item entry again to check the style of the auto-selected value.
+    And I should see "<iconname>" in the "#fitem_id_menuicon .form-autocomplete-selection [data-value='<iconvalue>'] small" "css_element"
+    And I should see "<iconbadge>" in the "#fitem_id_menuicon .form-autocomplete-selection [data-value='<iconvalue>'] span.badge" "css_element"
+    And the "class" attribute of "#fitem_id_menuicon .form-autocomplete-selection [data-value='<iconvalue>'] i.fa" "css_element" should contain "<faicon>"
     And I click on "Save changes" "button"
     And I <desktopshouldornot> see smart menu "Quick links" item "Resources" in location "Main, Menu, User"
-    Then ".fa-info-circle" "css_element" should exist in the ".primary-navigation .dropdown-item.menu-item-heading" "css_element"
-    And ".fa-info-circle" "css_element" should exist in the ".boost-union-menubar .dropdown-item" "css_element"
-    And ".fa-info-circle" "css_element" should exist in the "#usermenu-carousel .carousel-item.submenu .dropdown-item" "css_element"
+    Then ".<faicon>" "css_element" should exist in the ".primary-navigation .dropdown-item.menu-item-heading" "css_element"
+    And ".<faicon>" "css_element" should exist in the ".boost-union-menubar .dropdown-item" "css_element"
+    And ".<faicon>" "css_element" should exist in the "#usermenu-carousel .carousel-item.submenu .dropdown-item" "css_element"
     And I change viewport size to "mobile"
     And I <mobiletitleshould> see smart menu "Quick links" item "Resources" in location "Menu, User"
     And I click on "More" "button" in the ".bottom-navigation" "css_element"
     And I click on "Quick links" "link" in the "#theme_boost-drawers-primary" "css_element"
     And I <mobiletitleshould> see "Resources" in the "#theme_boost-drawers-primary" "css_element"
-    Then ".fa-info-circle" "css_element" should exist in the ".primary-navigation .dropdown-item.menu-item-heading" "css_element"
-    And ".fa-info-circle" "css_element" should exist in the ".boost-union-menubar .dropdown-item" "css_element"
-    And ".fa-info-circle" "css_element" should exist in the "#usermenu-carousel .carousel-item.submenu .dropdown-item" "css_element"
+    Then ".<faicon>" "css_element" should exist in the ".primary-navigation .dropdown-item.menu-item-heading" "css_element"
+    And ".<faicon>" "css_element" should exist in the ".boost-union-menubar .dropdown-item" "css_element"
+    And ".<faicon>" "css_element" should exist in the "#usermenu-carousel .carousel-item.submenu .dropdown-item" "css_element"
 
     Examples:
-      | presentationtitle                                      | desktopshouldornot | mobiletitleshould |
-      | Show text and icon as title                            | should             | should            |
-      | Hide title text and show only icon (on all devices)    | should not         | should not        |
-      | Hide title text and show only icon (on mobile devices) | should             | should not        |
+      | presentationtitle                                      | iconname          | iconvalue                        | iconbadge         | faicon         | desktopshouldornot | mobiletitleshould |
+      | Show text and icon as title                            | fa-circle-info    | theme_boost_union:fa-circle-info | FontAwesome Solid | fa-circle-info | should             | should            |
+      | Show text and icon as title                            | core:i/circleinfo | core:i/circleinfo                | Moodle core       | fa-circle-info | should             | should            |
+      | Hide title text and show only icon (on all devices)    | fa-circle-info    | theme_boost_union:fa-circle-info | FontAwesome Solid | fa-circle-info | should not         | should not        |
+      | Hide title text and show only icon (on all devices)    | core:i/circleinfo | core:i/circleinfo                | Moodle core       | fa-circle-info | should not         | should not        |
+      | Hide title text and show only icon (on mobile devices) | fa-circle-info    | theme_boost_union:fa-circle-info | FontAwesome Solid | fa-circle-info | should             | should not        |
+      | Hide title text and show only icon (on mobile devices) | core:i/circleinfo | core:i/circleinfo                | Moodle core       | fa-circle-info | should             | should not        |
 
   @javascript
   Scenario: Smartmenus: Menu items: Presentation - Display the tooltip on hover over the menu items
@@ -333,24 +425,6 @@ Feature: Configuring the theme_boost_union plugin on the "Smart menus" page, app
     And I am on site homepage
     Then I should see smart menu "Quick links" item "Dolor sit amet" in location "Main, Menu, User, Bottom"
     And I should not see smart menu "Quick links" item "Lorem ipsum" in location "Main, Menu, User, Bottom"
-
-  @javascript
-  Scenario: Smartmenus: Menu items: Presentation - Use a divider as static menu item
-    When I log in as "admin"
-    And I navigate to smart menu "Quick links" items
-    And I click on "Add menu item" "button"
-    And I set the following fields to these values:
-      | Menu item type | Heading |
-      | Title          | ###     |
-    And I click on "Save changes" "button"
-    # Divider in main navigation.
-    And ".dropdown-divider" "css_element" should exist in the ".primary-navigation" "css_element"
-    # Divider in user menu.
-    And ".dropdown-divider" "css_element" should exist in the "#usermenu-carousel" "css_element"
-    # Divider in bottom menu.
-    And ".dropdown-divider" "css_element" should exist in the ".bottom-navigation" "css_element"
-    # Divider in menubar.
-    And ".dropdown-divider" "css_element" should exist in the "nav.menubar" "css_element"
 
   @javascript
   Scenario Outline: Smartmenus: Menu items: Presentation - Hide empty menus

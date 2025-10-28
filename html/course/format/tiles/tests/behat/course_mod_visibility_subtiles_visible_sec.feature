@@ -79,6 +79,6 @@ Feature: Teacher can hide course modules when subtiles being used in a visible s
     And I should not see "Test page NV"
     And I should not see "Test forum NV"
     And I should not see "Test URL NV"
-
+    And I wait "1" seconds
     And I click on close button for tile "1"
     And I log out tiles

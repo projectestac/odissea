@@ -111,7 +111,7 @@ $string['cannotimportgrade'] = 'Ocorreu um erro na importação de notas';
 $string['cannotinsertgrade'] = 'Não é possível inserir notas sem o ID da disciplina!';
 $string['cannotinsertrate'] = 'Não foi possível inserir uma nova avaliação ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'Não foi possível inserir o novo registo com o ID {$a}';
-$string['cannotmailconfirm'] = 'Ocorreu um erro no envio do e-mail de confirmação da mudança de senha';
+$string['cannotmailconfirm'] = 'Ocorreu um erro no envio do e-mail de confirmação da alteração de senha';
 $string['cannotmanualctrack'] = 'A atividade não prevê acompanhamento da conclusão manual';
 $string['cannotmapfield'] = 'Foi detetada colisão entre correspondências - dois campos correspondem ao mesmo item de avaliação {$a}';
 $string['cannotmarktopic'] = 'Não é possível marcar esta secção para esta disciplina';

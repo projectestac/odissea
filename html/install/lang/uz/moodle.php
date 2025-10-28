@@ -21,7 +21,7 @@
  * needed during the very first steps of installation. This file was
  * generated automatically by export-installer.php (which is part of AMOS
  * {@link https://moodledev.io/general/projects/api/amos}) using the
- * list of strings defined in /install/stringnames.txt.
+ * list of strings defined in install/stringnames.txt file.
  *
  * @package   installer
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -30,6 +30,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['language'] = 'Til';
+$string['moodlelogo'] = 'Moodle logotipi';
 $string['next'] = 'Keyingi';
 $string['previous'] = 'Oldingi';
 $string['reload'] = 'Qayta yuklash';

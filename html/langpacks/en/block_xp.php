@@ -100,6 +100,7 @@ $string['basepointsrelativedesc'] = 'The number of points to start with.';
 $string['basexp'] = 'Algorithm base';
 $string['blockappearance'] = 'Block appearance';
 $string['blockappearancemovedtopluginsettings'] = 'The block appearance settings were moved to the plugin\'s settings page.';
+$string['cachedef_block_count'] = 'Block instances count';
 $string['cachedef_filters'] = 'Level filters';
 $string['cachedef_metadata'] = 'Metadata';
 $string['cachedef_ruleevent_eventslist'] = 'List of some events';
@@ -143,6 +144,7 @@ $string['configtitle'] = 'Title';
 $string['configtitle_help'] = 'The title of the block.';
 $string['congratulationsyouleveledup'] = 'Congratulations!';
 $string['coolthanks'] = 'Cool, thanks!';
+$string['copiedexcl'] = 'Copied!';
 $string['coursea'] = 'Course "{$a}"';
 $string['courselog'] = 'Log';
 $string['courselogintro'] = 'The log displays the actions observed, and how many points they awarded.';
@@ -205,8 +207,10 @@ Drops can be used to cleverly award points when certain type of content is consu
 [More info](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'Drops are code snippets directly placed in content that award points when encountered by a user.';
 $string['editcondition'] = 'Edit condition';
+$string['editingdefaultsettingsincoursemodenotice'] = '**Attention!** You are not modifying the currently active settings, instead you are editing the default values. To change a course\'s settings, follow the "Settings" link from the XP block itself.';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**Attention!** You are not modifying the currently active settings, instead you are editing the default values. As Level Up XP is used sitewide, your intention is most likely to change the sitewide settings. [Navigate here]({$a->url}) to change those settings, or follow the "Settings" link from the XP block itself.';
 $string['editinstructions'] = 'Edit information';
+$string['embedleaderboard'] = 'Embed leaderboard';
 $string['enablecheatguard'] = 'Enable cheat guard';
 $string['enablecheatguard_help'] = 'The cheat guard offers a simple inexpensive mechanism for preventing students to abuse the system using obvious techniques, such as refreshing the same page endlessly, or repeating the same action over and over again.
 
@@ -444,6 +448,7 @@ $string['pluginavailabilityxpdesc'] = 'This plugin lets instructors restrict acc
 $string['pluginenrolxpdesc'] = 'This plugin enables automatic enrolment into courses based on a student\'s level in another course.';
 $string['pluginname'] = 'Level Up XP';
 $string['pluginshortcodesdesc'] = 'This plugin lets instructors customise their material by including XP related elements (points, level, leaderboard, …) in the content, as well as hiding or showing content based on a student\'s level.';
+$string['pluginshortcodesrequiredtousefeature'] = 'The plugin [Shortcodes](https://docs.levelup.plus/xp/docs/getting-started/installation/recommended-plugins) must be installed and enabled to use this feature.';
 $string['pluginsoutofsync'] = '__XP plugins incompatibility!__
 
 There are compatibility issues between Level Up XP and Level Up XP+. In the future, Level Up XP+ will automatically disable itself if it is not compatible. To prevent this, please contact your site administrator. [Read more]({$a->url})';
@@ -514,6 +519,7 @@ Importantly, when using _Level Up XP_ sitewide, deleting them will make them dis
 
 Do you really want to delete the points and logs of this user?';
 $string['reallyresetallcourselevelstodefaults'] = 'Are you sure that you want to reset the levels in ALL courses to the default levels? This action is not reversible.';
+$string['reallyresetallcoursessettingstodefaults'] = 'Are you sure that you want to reset ALL courses to the default settings? This action is not reversible.';
 $string['reallyresetallcoursestodefaults'] = 'Are you sure that you want to reset the rules in ALL courses to the default rules? This action is not reversible.';
 $string['reallyresetallcoursevisualstodefaults'] = 'Are you sure that you want to appearance of the levels in ALL courses to the default appearance? This action is not reversible.';
 $string['reallyresetcourselevelstodefaults'] = 'Are you sure that you want to reset the levels to the default levels? This action is not reversible.';
@@ -531,10 +537,12 @@ $string['removefilter'] = 'Remove filter';
 $string['reportisempty'] = 'The report is empty, student have yet to earn points.';
 $string['reportisemptyenrolstudents'] = 'The report is empty, have students been enrolled in this course?';
 $string['requires'] = 'Requires';
+$string['resetallcoursessettingstodefaults'] = 'Follow this link to [reset all courses to the default settings]({$a->url}). If you have made any changes, they must be saved before. Note that this will override the settings of all courses and is not reversible. This does not affect the default levels, appearance and rules, to reset those please see their corresponding admin pages.';
 $string['resetallcoursestodefaults'] = 'Reset all courses to defaults';
 $string['resetallcoursestodefaultsintro'] = 'Click the button below to reset all courses to the above defaults.';
 $string['resetcoursedata'] = 'Reset course data';
 $string['resetcourserulestodefaults'] = 'Reset course rules to defaults';
+$string['resetcourses'] = 'Reset courses';
 $string['resetgroupdata'] = 'Reset group data';
 $string['resetladderparticiptionofeveryone'] = 'Reset the participation status of everyone';
 $string['resetlevelstodefaults'] = 'Reset levels to defaults';
@@ -695,6 +703,9 @@ The styling of the points will depend on whether an arbitrary value is displayed
 [xppoints 123 plain]
 ```';
 $string['shortcode:xpprogressbar'] = 'The current user\'s progress bar towards the next level.';
+$string['shortcodeinactiveleaderboarddisabled'] = 'The leaderboard is currently disabled, the shortcode will be inactive. You can enable the leaderboard in its settings.';
+$string['shortcodexpladderembedintro'] = 'With the following shortcode, the leaderboard can be embedded anywhere on this site. More options and information can be found in the [documentation](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
+$string['shortcodexpteamladderembedintro'] = 'With the following shortcode, the leaderboard can be embedded anywhere on this site. More options and information can be found in the [documentation](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
 $string['sitewide'] = 'Sitewide';
 $string['somefeaturesrequireotherplugins'] = 'Some features require additional plugins to be installed.';
 $string['someoneelse'] = 'Someone else';

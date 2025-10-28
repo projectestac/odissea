@@ -236,11 +236,10 @@ define(["jquery", "core/templates", "core/ajax", "core/str", "core/notification"
          * @param {int} sectionId
          * @param {int} section
          * @param {int} allowPhotoTiles whether to render a button for the photo tile form - true or false).
-         * @param {string} documentationurl
          * @param {number} maxNumberIcons
          */
         var launchIconPicker = function (pageType, courseId, sectionId, section,
-                                         allowPhotoTiles, documentationurl, maxNumberIcons) {
+                                         allowPhotoTiles, maxNumberIcons) {
             // Launch icon picker can be a tile icon (if editing course) or a button (if on a form).
             var populatePhotoLibrary = function(photosHTML, modalRoot, modal) {
                 var photoLibrary = $("#iconpickerphotos");
@@ -294,8 +293,7 @@ define(["jquery", "core/templates", "core/ajax", "core/str", "core/notification"
                         sectionnumber: section,
                         showicons: true, // Always include this, but we can hide it when using photos.
                         tilenumbers: Array.from({length: maxNumberIcons + 1}, (e, i)=> i).filter((e) => e > 0),
-                        wwwroot: config.wwwroot,
-                        documentationurl: documentationurl
+                        wwwroot: config.wwwroot
                     }).done(function (iconsHTML) {
                         require(["core/modal_factory"], function (modalFact) {
                             modalFact.create({
@@ -399,7 +397,7 @@ define(["jquery", "core/templates", "core/ajax", "core/str", "core/notification"
         };
 
         return {
-            init: function (courseId, pageType, allowPhotoTiles, documentationurl, maxNumberIcons) {
+            init: function (courseId, pageType, allowPhotoTiles, maxNumberIcons) {
                 $(document).ready(function () {
                     var stringKey = allowPhotoTiles ? "picknewiconphoto" : "picknewicon";
                     str.get_string(stringKey, "format_tiles").done(function (pickAnIcon) {
@@ -422,7 +420,6 @@ define(["jquery", "core/templates", "core/ajax", "core/str", "core/notification"
                             clickedIcon.data('true-sectionid'),
                             clickedIcon.data('section'),
                             allowPhotoTiles,
-                            documentationurl,
                             maxNumberIcons
                         );
                     });

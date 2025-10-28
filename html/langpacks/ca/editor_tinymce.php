@@ -78,7 +78,7 @@ $string['advanced:link_delta_width'] = '';
 $string['advanced:link_desc'] = 'Insereix/edita enllaç';
 $string['advanced:more_colors'] = 'Més colors...';
 $string['advanced:newdocument'] = 'Segur que voleu esborrar tot el contingut?';
-$string['advanced:newdocument_desc'] = 'Nou document';
+$string['advanced:newdocument_desc'] = 'Document nou';
 $string['advanced:numlist_desc'] = 'Insereix/elimina una llista numerada';
 $string['advanced:outdent_desc'] = 'Redueix el sagnat';
 $string['advanced:paragraph'] = 'Paràgraf';
@@ -279,7 +279,7 @@ $string['autosave:restore_content'] = 'Restaura el contingut desat automàticame
 $string['autosave:unload_msg'] = 'Els canvis que has fet es perdran si surts d\'aquesta pàgina.';
 $string['autosave:warning_message'] = 'Si restaureu el document desat, perdreu tot el contingut que teniu ara a l\'editor.
 
-Esteu segurs de voler restaurar el contingut desat ?';
+Confirmeu que voleu restaurar el contingut desat?';
 $string['availablebuttons'] = 'Botons disponibles';
 $string['colors:000000'] = 'Negre';
 $string['colors:000080'] = 'Blau marí';
@@ -472,7 +472,7 @@ $string['insertdatetime:months_short'] = 'Gen,Feb,Mar,Abr,Mai,Jun,Jul,Ago,Set,Oc
 $string['insertdatetime:time_fmt'] = '%H:%M:%S';
 $string['layer:absolute_desc'] = 'Canvia el posicionament absolut';
 $string['layer:backward_desc'] = 'Desplaça endarrere';
-$string['layer:content'] = 'Nova capa...';
+$string['layer:content'] = 'Capa nova...';
 $string['layer:forward_desc'] = 'Desplaça endavant';
 $string['layer:insertlayer_desc'] = 'Insereix capa nova';
 $string['media:delta_height'] = '';

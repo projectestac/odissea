@@ -10,7 +10,7 @@
     /* stylelint-disable-next-line declaration-no-important */
     background-color: inherit !important;
 }
-.format-tiles .embed_cm_modal .modal-header .close {
+.format-tiles .embed_cm_modal .modal-header .btn-close {
     color: #fff;
 }
 .format-tiles #page .course-content ul li.section.main {
@@ -20,7 +20,7 @@
 .format-tiles li.section .sectionname {
     background-color: inherit;
 }
-.format-tiles .embed_cm_modal .modal-header .close {
+.format-tiles .embed_cm_modal .modal-header .btn-close {
     /* stylelint-disable-next-line declaration-no-important */
     color: #fff !important;
 }

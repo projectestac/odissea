@@ -45,9 +45,8 @@ class updatesession extends \moodleform {
         $modcontext    = $this->_customdata['modcontext'];
         $sessionid     = $this->_customdata['sessionid'];
 
-        if (!$sess = $DB->get_record('attendance_sessions', ['id' => $sessionid] )) {
-            error('No such session in this course');
-        }
+        $sess = $DB->get_record('attendance_sessions', ['id' => $sessionid], '*', MUST_EXIST);
+
         $attendancesubnet = $DB->get_field('attendance', 'subnet', ['id' => $sess->attendanceid]);
         $defopts = ['maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => $modcontext];
         $sess = file_prepare_standard_editor($sess, 'description', $defopts, $modcontext, 'mod_attendance', 'session', $sess->id);

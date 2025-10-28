@@ -251,7 +251,7 @@ $string['unknown'] = '不明';
 $string['unknownerror'] = 'ネゴシエーション中に不明なエラーが発生しました。';
 $string['usercannotchangepassword'] = 'あなたはリモートユーザのため、ここでパスワードを変更できません。';
 $string['userchangepasswordlink'] = '<br />あなたのパスワードを<a href="{$a->wwwroot}/login/change_password.php">{$a->description}</a>プロバイダで変更することができます。';
-$string['usernotfullysetup'] = 'あなたのアカウントは完全ではありません。<a href="{$a}">あなたのプロバイダに戻って</a>、そこであなたのプロファイルが完全かどうか確認してください。設定を反映させるためにはあなたは一旦ログアウトして再度ログインする必要があります。';
+$string['usernotfullysetup'] = 'あなたのアカウントは完全ではありません。<a href="{$a}">あなたのプロバイダに戻って</a>、そこであなたのプロファイルが完全かどうかご確認ください。設定を反映させるためにはあなたは一旦ログアウトして再度ログインする必要があります。';
 $string['usersareonline'] = '警告: 現在、このサーバから {$a} 名のユーザがあなたのサイトにログインしています。';
 $string['validated_by'] = '次のネットワークで認証されました: <code>{$a}</code>';
 $string['verifyhostandpeer'] = 'ホストおよびピアを確認する';

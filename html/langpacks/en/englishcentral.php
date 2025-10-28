@@ -226,7 +226,15 @@ $string['missedwordsheading'] = 'Missed Words';
 $string['missedwordsreport'] = 'Missed Words';
 $string['missingconfig'] = 'Sorry, we cannot proceed because the following settings are not yet defined for the English Central activity module on this Moodle site:';
 $string['modulename'] = 'Poodll EnglishCentral';
-$string['modulename_help'] = 'Use the EnglishCentral module to allow your students to use EnglishCentral videos within Moodle Courses';
+$string['modulename_help'] = 'Give students vocabulary, listening and speaking practice with authentic English language videos. Features include:
+
+* Over 14,000 ready made video lessons
+
+* AI powered speech evaluation
+
+* Self directed vocabulary lesson
+
+* Audio chat with Mimi about the video lesson';
 $string['modulenameplural'] = 'Poodll EnglishCentral Activities';
 $string['myattempts'] = 'My Attempts';
 $string['myattemptssummary'] = 'Attempts Summary ({$a} attempts)';

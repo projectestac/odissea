@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = 'Derzeit liegt ein Problem beim AntiVirus-Scannen vor. Ihre Datei {$a->item} wurde nicht hochgeladen. Versuchen Sie es später noch einmal.';
+$string['antivirusfailed'] = 'Derzeit liegt ein Problem beim AntiVirus-Scannen vor. Ihre Datei {$a->item} wurde nicht hochgeladen. Versuchen Sie es später nochmal.';
 $string['clamfailed'] = 'ClamAV wurde nicht vollständig ausgeführt. Die Fehlermeldung lautet: {$a}. Die Ausgabe von ClamAV ist:';
 $string['clamfailureonupload'] = 'Bei einem ClamAV-Fehler';
 $string['configclamactlikevirus'] = 'Dateien wie Viren behandeln';
 $string['configclamdonothing'] = 'Dateien als in Ordnung behandeln';
-$string['configclamfailureonupload'] = 'Wenn "Dateien als OK behandeln" ausgewählt ist, werden die Dateien in das Zielverzeichnis verschoben. Wenn "Hochladen ablehnen, erneut versuchen" ausgewählt ist, werden Nutzer/innen aufgefordert, es später erneut zu versuchen.
+$string['configclamfailureonupload'] = 'Wenn "Dateien als OK behandeln" ausgewählt ist, werden die Dateien in das Zielverzeichnis verschoben. Wenn "Hochladen ablehnen, erneut versuchen" ausgewählt ist, werden Nutzer/innen aufgefordert, es später nochmal zu versuchen.
 <br />Wenn "Dateien wie Viren behandeln" ausgewählt ist, werden Dateien in den Quarantänebereich verschoben oder gelöscht.
-<br />Warnung: Wenn mit dieser Option aus irgendeinem Grund die clam nicht ausgeführt werden kann (z.B. aufgrund eines ungültigen pathtoclam), werden ALLE hochgeladenen Dateien in den angegebenen Quarantänebereich verschoben oder gelöscht.';
-$string['configclamtryagain'] = 'Hochladen abgelehnt. Versuchen Sie es noch einmal.';
+<br />Warnung: Wenn mit dieser Option aus irgendeinem Grund clam nicht ausgeführt werden kann (z.B. aufgrund eines ungültigen pathtoclam), werden ALLE hochgeladenen Dateien in den angegebenen Quarantänebereich verschoben oder gelöscht.';
+$string['configclamtryagain'] = 'Hochladen abgelehnt. Versuchen Sie es nochmal.';
 $string['errorcantopensocket'] = 'Die Verbindung zum Unix Domain Socket führte zu einem Fehler: {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV reagiert nicht. Prüfen Sie den Ausführungsstatus des Deamons.';
 $string['errornounixsocketssupported'] = 'Die Verbindung über Unix Domain Sockets wird auf diesem System nicht unterstützt. Verwenden Sie stattdessen die Option \'Befehlszeile\'.';

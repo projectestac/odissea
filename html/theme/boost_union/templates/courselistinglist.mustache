@@ -30,6 +30,7 @@
                 "fullname": "course 3",
                 "hasprogress": true,
                 "progress": 10,
+                "progressstyleasbar": false,
                 "coursecategory": "Category 1",
                 "visible": true
             }
@@ -53,7 +54,7 @@
                         <div class="coursecontacts mx-3 d-flex flex-wrap">
                             {{#contacts}}
                                 {{#canviewuserdetails}}<a href="{{config.wwwroot}}/user/profile.php?id={{{id}}}" tabindex="-1">{{/canviewuserdetails}}
-                                    <div class="contact mr-2 mb-2">
+                                    <div class="contact me-2 mb-2">
                                         <img src="{{{userpicture}}}" class="rounded-circle shadow-sm" alt="{{{contactname}}}" data-toggle="tooltip" title="{{{contactname}}}" />
                                     </div>
                                 {{#canviewuserdetails}}</a>{{/canviewuserdetails}}
@@ -100,14 +101,19 @@
                 <div class="d-flex flex-wrap mt-auto pt-3 mb-0">
                     {{#showcourseprogress}}
                         {{#hasprogress}}
-                            <div class="text-muted muted d-flex flex-wrap mt-auto">
-                                {{> block_myoverview/progress-bar}}
+                            <div class="text-muted muted d-flex flex-wrap mt-auto flex-fill">
+                                {{#progressstyleasbar}}
+                                    {{> theme_boost_union/progress-bar}}
+                                {{/progressstyleasbar}}
+                                {{^progressstyleasbar}}
+                                    {{> block_myoverview/progress-bar}}
+                                {{/progressstyleasbar}}
                             </div>
                         {{/hasprogress}}
                     {{/showcourseprogress}}
                     {{#showcourseenrolicons}}
                         {{#hasenrolicons}}
-                            <div class="menu border-0 ml-auto">
+                            <div class="menu border-0 ms-auto">
                                 <div class="enrolmenticons d-flex">
                                     {{#enrolmenticons}}
                                         <div class="enrolmenticon">

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'クライアントID';
-$string['noauthtoken'] = 'Googleから認証トークンが受信されませんでした。あなたのGoogleアカウントにMoodleのアクセスを許可しているかどうか確認してください。';
+$string['noauthtoken'] = 'Googleから認証トークンが受信されませんでした。あなたのGoogleアカウントにMoodleのアクセスを許可しているかどうかご確認ください。';
 $string['nooauthcredentials'] = 'OAuth認証情報が必要です。';
 $string['nooauthcredentials_help'] = 'Google Driveポートフォリオプラグインを使用するにはあなたはポートフォリオ設定でOAuth認証情報を設定する必要があります。';
 $string['nosessiontoken'] = 'セッショントークンが存在しません。Googleへのエクスポートを中止します。';

@@ -40,6 +40,7 @@ $string['errorwhiledownload'] = 'Произошла ошибка при скач
 $string['file'] = 'Файл';
 $string['groups'] = 'Группы (Курсы)';
 $string['myfiles'] = 'Мой OneDrive';
+$string['notconfigured'] = '<p class="error">Чтобы использовать этот плагин, необходимо сначала настроить <a href="{$a}/admin/settings.php?section=local_o365">плагины Microsoft 365</a></p>';
 $string['office365:view'] = 'Просматривать хранилище Microsoft 365';
 $string['onedrivegroup'] = 'Отключить папку «Мой OneDrive» в средстве выбора файлов';
 $string['pluginname'] = 'Microsoft 365';

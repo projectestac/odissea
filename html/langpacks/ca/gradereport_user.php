@@ -27,7 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allusersnum'] = 'Tots els usuaris  ({$a})';
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe d\'usuari de qualificacions';
+$string['gotonextreport'] = 'Següent informe d\'usuari';
+$string['gotopreviousreport'] = 'Anterior informe d\'usuari';
 $string['pluginname'] = 'Informe d\'usuari';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Veure l\'informe com a l\'usuari actual o com un altre usuari en els informes del butlletí de qualificacions';
 $string['tablesummary'] = 'La taula està ordenada com una llista d\'elements incloent-hi categories o notes. Quan els elements pertanyen a una categoria s\'indica.';
-$string['user:view'] = 'Visualitzar l\'informe de qualificacions propi';
+$string['user:view'] = 'Mostra l\'informe d\'usuari';
+$string['userreport_user'] = 'Informe d\'usuari';
+$string['userreportdesc'] = 'Els informes d\'usuari inclouen les seves qualificacions, retroaccions i el total del curs.';

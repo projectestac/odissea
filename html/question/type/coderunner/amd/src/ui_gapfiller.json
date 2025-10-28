@@ -1,0 +1,17 @@
+{
+    "name": "ui_gapfiller",
+    "parameters": {
+        "ui_source": {
+            "type": "string",
+            "default": "globalextra"
+        },
+        "delimiters": {
+            "type": "string[]",
+            "default": ["{[", "]}"]
+        },
+        "sync_interval_secs": {
+            "type": "int",
+            "default": 3
+        }
+    }
+}

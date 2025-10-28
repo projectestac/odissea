@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ranking'] = 'Classificació';
 $string['yes'] = 'Sí';

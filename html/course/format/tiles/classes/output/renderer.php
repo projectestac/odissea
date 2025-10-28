@@ -126,7 +126,7 @@ class renderer extends section_renderer {
     private function display_multiple_section_page(bool $displaysection, bool $isediting): bool {
         global $SESSION;
         // We display the multi section page if the user is not requesting a specific single section.
-        // We also display it if user is requesting a specific section (URL &section=xx) with JS enabled.
+        // We also display it if user is requesting a specific section (URL section.php?id=xx) with JS enabled.
         // We know they have JS if $SESSION->format_tiles_jssuccessfullyused is set.
         // In that case we show them the multi section page and use JS to open the section.
         if (optional_param('canceljssession', false, PARAM_BOOL)) {
@@ -135,13 +135,8 @@ class renderer extends section_renderer {
         }
 
         if (!$displaysection) {
-            // If the URL does not request a specific section page (&section=xx) we always show multiple secs.
+            // If the URL does not request a specific section page (section.php?id=xx) we always show multiple secs.
             return true;
-        }
-
-        if (optional_param('singlesec', 0, PARAM_INT)) {
-            // Singlesec param is appended to inplace editable links by format_tiles\inplace_editable_render_section_name().
-            return false;
         }
 
         // Otherwise, even if URL requests single, we may show multiple in certain situations.
@@ -175,6 +170,8 @@ class renderer extends section_renderer {
         $usecore = !$data['useSubtiles'] || $this->page->user_is_editing();
         if ($usecore) {
             $data = $parentdata;
+            $data->contentcollapsed = true;
+            $data->isdelegatedsection = true;
             $template = 'format_tiles/local/content/delegatedsection';
         }
 

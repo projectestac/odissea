@@ -36,7 +36,6 @@ use core_courseformat\output\local\content\section\header as header_base;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class header extends header_base {
-
     /** @var \format_multitopic\section_info_extra Multitopic-specific section information */
     protected $fmtsectionextra;
 

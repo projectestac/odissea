@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clidriverlist'] = '移行に利用できるデータベースドライバ';
-$string['cliheading'] = 'データベース移行 - 移行中、誰もサーバにアクセスしていないことを確認してください!';
+$string['cliheading'] = 'データベース移行 - 移行中、誰もサーバにアクセスしていないことをご確認ください!';
 $string['climigrationnotice'] = 'データベース移行処理中です。移行完了後、サーバ管理者が設定を更新および $CFG->dataroot/climaintenance.htmlファイルを削除するまでお待ちください。';
 $string['convertinglogdisplay'] = '移行ログ表示動作';
 $string['dbexport'] = 'データベースエクスポート';

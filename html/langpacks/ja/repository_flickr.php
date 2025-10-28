@@ -29,7 +29,7 @@ $string['apikey'] = 'APIキー';
 $string['callbackurl'] = 'コールバックURL';
 $string['callbackurltext'] = '<ol>
 <li>再度、<a href="http://www.flickr.com/services/api/keys/">Flickr APIキー</a>にアクセスしてください。</li>
-<li>このFlickrキーにコールバックURL <strong>{$a}</strong> を設定したかどうか確認してください。</li>
+<li>このFlickrキーにコールバックURL <strong>{$a}</strong> を設定したかどうかご確認ください。</li>
 </ol>';
 $string['callbackwarning'] = '<ol>
 <li>あなたのMoodleサイトに<a href="http://www.flickr.com/services/api/keys/">Flickr APIキーおよびSecret</a>を取得してください。</li>

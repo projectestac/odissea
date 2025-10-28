@@ -126,6 +126,10 @@ Nota: Aquest nombre és sempre il·limitat per a les col·leccions d’instructo
 $string['mediagallery'] = 'Col·lecció multimèdia';
 $string['mediagalleryname'] = 'Nom de la col·lecció multimèdia';
 $string['mediagalleryname_help'] = 'El nom que voleu donar a la vostra col·lecció multimèdia.';
+$string['mediasize'] = 'Mida del multimèdia';
+$string['mediasizelg'] = 'Gran';
+$string['mediasizemd'] = 'Mitjana';
+$string['mediasizesm'] = 'Petita';
 $string['mediatype'] = 'Tipus de multimèdia';
 $string['medium'] = 'Mitjà';
 $string['medium_help'] = 'El mitjà que s’ha utilitzat per crear el treball (p. ex.: pintura, fotografia, so, etc.).';
@@ -146,9 +150,11 @@ $string['moralrights'] = 'Drets morals';
 $string['moralrights_help'] = 'Voleu declarar els vostres drets morals?
 
 En seleccionar que sí, doneu el vostre consentiment perquè, en potència, aquest element sigui utilitzat com a exemple de treball.';
-$string['noitemsadded'] = 'No s’ha afegit cap element a aquesta galeria.';
+$string['noitemsadded'] = 'No s\'ha afegit cap element a aquesta galeria.';
+$string['noitemsfound'] = 'No s\'ha trobat cap element.';
 $string['originalauthor'] = 'Autor original';
 $string['originalauthor_help'] = 'L’autor original de l’element.';
+$string['privacy:metadata:preference:mediasize'] = 'La mida de visualització que la persona usuària prefereix per veure els elements multimèdia.';
 $string['productiondate'] = 'Data de producció';
 $string['productiondate_help'] = 'La data en què es va produir el treball original.';
 $string['publisher'] = 'Editor';

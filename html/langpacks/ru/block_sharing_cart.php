@@ -25,5 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backup'] = 'Копировать в общую корзину';
 $string['pluginname'] = 'Общая корзина';

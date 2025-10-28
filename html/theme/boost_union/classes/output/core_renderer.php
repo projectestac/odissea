@@ -23,14 +23,16 @@
  */
 
 namespace theme_boost_union\output;
+
 use context_course;
 use context_system;
-use core_userfeedback;
-use html_writer;
 use moodle_url;
+use stdClass;
 use core\di;
 use core\hook\manager as hook_manager;
 use core\hook\output\before_standard_footer_html_generation;
+use core\output\html_writer;
+use core_block\output\block_contents;
 
 /**
  * Extending the core_renderer interface.
@@ -40,11 +42,10 @@ use core\hook\output\before_standard_footer_html_generation;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class core_renderer extends \theme_boost\output\core_renderer {
-
     /**
      * Returns the moodle_url for the favicon.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * It checks if the favicon is overridden in a flavour and, if yes, it serves this favicon.
      * If there isn't a favicon in any flavour set, it serves the general favicon.
@@ -83,9 +84,15 @@ class core_renderer extends \theme_boost\output\core_renderer {
                     $hasflavourfavicon = true;
 
                     // Compose the URL to the flavour's favicon.
-                    $flavourfaviconurl = moodle_url::make_pluginfile_url(
-                            context_system::instance()->id, 'theme_boost_union', 'flavours_look_favicon', $flavour->id,
-                            '/'.theme_get_revision(), '/'.$flavour->look_favicon);
+                    $flavourfaviconurl = \core\url::make_pluginfile_url(
+                        context_system::instance()->id,
+                        'theme_boost_union',
+                        'flavours_look_favicon',
+                        $flavour->id,
+                        '/64x64' .
+                        '/' . theme_get_revision(),
+                        '/' . $flavour->look_favicon
+                    );
 
                     // Return the URL.
                     return $flavourfaviconurl;
@@ -108,14 +115,20 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
 
         // Use $CFG->themerev to prevent browser caching when the file changes.
-        return moodle_url::make_pluginfile_url(context_system::instance()->id, 'theme_boost_union', 'favicon', '64x64/',
-                theme_get_revision(), $logo);
+        return moodle_url::make_pluginfile_url(
+            context_system::instance()->id,
+            'theme_boost_union',
+            'favicon',
+            '64x64/',
+            theme_get_revision(),
+            $logo
+        );
     }
 
     /**
      * Return the site's logo URL, if any.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/renderer_base.php
      *
      * It checks if the logo is overridden in a flavour and, if yes, it serves this logo.
      * If there isn't a logo in any flavour set, it serves the general logo.
@@ -154,9 +167,14 @@ class core_renderer extends \theme_boost\output\core_renderer {
                     $hasflavourlogo = true;
 
                     // Compose the URL to the flavour's logo.
-                    $flavourlogourl = moodle_url::make_pluginfile_url(
-                            context_system::instance()->id, 'theme_boost_union', 'flavours_look_logo', $flavour->id,
-                            '/'.theme_get_revision(), '/'.$flavour->look_logo);
+                    $flavourlogourl = \core\url::make_pluginfile_url(
+                        context_system::instance()->id,
+                        'theme_boost_union',
+                        'flavours_look_logo',
+                        $flavour->id,
+                        '/' . theme_get_revision(),
+                        '/' . $flavour->look_logo
+                    );
 
                     // Return the URL.
                     return $flavourlogourl;
@@ -194,14 +212,20 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
 
         // Use $CFG->themerev to prevent browser caching when the file changes.
-        return moodle_url::make_pluginfile_url(context_system::instance()->id, 'theme_boost_union', 'logo', $filepath,
-                theme_get_revision(), $logo);
+        return moodle_url::make_pluginfile_url(
+            context_system::instance()->id,
+            'theme_boost_union',
+            'logo',
+            $filepath,
+            theme_get_revision(),
+            $logo
+        );
     }
 
     /**
      * Return the site's compact logo URL, if any.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/renderer_base.php
      *
      * It checks if the logo is overridden in a flavour and, if yes, it serves this logo.
      * If there isn't a logo in any flavour set, it serves the general compact logo.
@@ -255,13 +279,13 @@ class core_renderer extends \theme_boost\output\core_renderer {
                     }
 
                     // Compose the URL to the flavour's compact logo.
-                    $flavourlogourl = moodle_url::make_pluginfile_url(
+                    $flavourlogourl = \core\url::make_pluginfile_url(
                         context_system::instance()->id,
                         'theme_boost_union',
                         'flavours_look_logocompact',
-                        $flavour->id.'/'.$flavourfilepath,
+                        $flavour->id . '/' . $flavourfilepath,
                         theme_get_revision(),
-                        '/'.$flavour->look_logocompact
+                        '/' . $flavour->look_logocompact
                     );
 
                     // Return the URL.
@@ -297,14 +321,20 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
 
         // Use $CFG->themerev to prevent browser caching when the file changes.
-        return moodle_url::make_pluginfile_url(context_system::instance()->id, 'theme_boost_union', 'logocompact', $filepath,
-                theme_get_revision(), $logo);
+        return moodle_url::make_pluginfile_url(
+            context_system::instance()->id,
+            'theme_boost_union',
+            'logocompact',
+            $filepath,
+            theme_get_revision(),
+            $logo
+        );
     }
 
     /**
      * Returns HTML attributes to use within the body tag. This includes an ID and classes.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @since Moodle 2.5.1 2.6
      * @param string|array $additionalclasses Any additional classes to give the body tag,
@@ -347,7 +377,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         // However, theme designers might want to use it.
         $flavour = theme_boost_union_get_flavour_which_applies();
         if ($flavour != null) {
-            $additionalclasses[] = 'flavour'.'-'.$flavour->id;
+            $additionalclasses[] = 'flavour' . '-' . $flavour->id;
         }
 
         // If the admin decided to change the breakpoints of the footer button,
@@ -374,23 +404,24 @@ class core_renderer extends \theme_boost\output\core_renderer {
         // If this is the login page and the page has the accessibility button, add a class to the body attributes.
         // This is currently just needed to make sure in SCSS that the footnote is not covered by the accessibility button.
         if ($this->page->pagelayout == 'login') {
-
             // If the accessibility button is enabled.
             $enableaccessibilitysupportsetting = get_config('theme_boost_union', 'enableaccessibilitysupport');
             $enableaccessibilitysupportfooterbuttonsetting =
                     get_config('theme_boost_union', 'enableaccessibilitysupportfooterbutton');
-            if (isset($enableaccessibilitysupportsetting) &&
+            if (
+                isset($enableaccessibilitysupportsetting) &&
                     $enableaccessibilitysupportsetting == THEME_BOOST_UNION_SETTING_SELECT_YES &&
                     isset($enableaccessibilitysupportfooterbuttonsetting) &&
-                    $enableaccessibilitysupportfooterbuttonsetting == THEME_BOOST_UNION_SETTING_SELECT_YES) {
-
+                    $enableaccessibilitysupportfooterbuttonsetting == THEME_BOOST_UNION_SETTING_SELECT_YES
+            ) {
                 // If user login is either not required or if the user is logged in.
                 $allowaccessibilitysupportwithoutloginsetting =
                         get_config('theme_boost_union', 'allowaccessibilitysupportwithoutlogin');
-                if (!(isset($allowaccessibilitysupportwithoutloginsetting) &&
+                if (
+                    !(isset($allowaccessibilitysupportwithoutloginsetting) &&
                         $allowaccessibilitysupportwithoutloginsetting != THEME_BOOST_UNION_SETTING_SELECT_YES) ||
-                        (isloggedin() && !isguestuser())) {
-
+                        (isloggedin() && !isguestuser())
+                ) {
                     $additionalclasses[] = 'theme_boost-union-accessibilitybutton';
                 }
             }
@@ -402,7 +433,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
     /**
      * Wrapper for header elements.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @return string HTML to display the main header.
      */
@@ -416,19 +447,21 @@ class core_renderer extends \theme_boost\output\core_renderer {
         } else if ($homepage == HOMEPAGE_SITE) {
             $homepagetype = 'site-index';
         }
-        if ($this->page->include_region_main_settings_in_header_actions() &&
-                !$this->page->blocks->is_block_present('settings')) {
+        if (
+            $this->page->include_region_main_settings_in_header_actions() &&
+                !$this->page->blocks->is_block_present('settings')
+        ) {
             // Only include the region main settings if the page has requested it and it doesn't already have
             // the settings block on it. The region main settings are included in the settings block and
             // duplicating the content causes behat failures.
             $this->page->add_header_action(html_writer::div(
-                    $this->region_main_settings_menu(),
-                    'd-print-none',
-                    ['id' => 'region-main-settings-menu']
+                $this->region_main_settings_menu(),
+                'd-print-none',
+                ['id' => 'region-main-settings-menu']
             ));
         }
 
-        $header = new \stdClass();
+        $header = new stdClass();
         $header->settingsmenu = $this->context_header_settings_menu();
         $header->contextheader = $this->context_header();
         $header->hasnavbar = empty($this->page->layout_options['nonavbar']);
@@ -438,8 +471,10 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $header->headeractions = $this->page->get_header_actions();
 
         // Add the course header image for rendering.
-        if ($this->page->pagelayout == 'course' && (get_config('theme_boost_union', 'courseheaderimageenabled')
-                        == THEME_BOOST_UNION_SETTING_SELECT_YES)) {
+        if (
+            $this->page->pagelayout == 'course' && (get_config('theme_boost_union', 'courseheaderimageenabled')
+                        == THEME_BOOST_UNION_SETTING_SELECT_YES)
+        ) {
             // If course header images are activated, we get the course header image url
             // (which might be the fallback image depending on the course settings and theme settings).
             $header->courseheaderimageurl = theme_boost_union_get_course_header_image_url();
@@ -449,7 +484,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
             $header->courseheaderimageposition = get_config('theme_boost_union', 'courseheaderimageposition');
             // Additionally, get the template context attributes for the course header image layout.
             $courseheaderimagelayout = get_config('theme_boost_union', 'courseheaderimagelayout');
-            switch($courseheaderimagelayout) {
+            switch ($courseheaderimagelayout) {
                 case THEME_BOOST_UNION_SETTING_COURSEIMAGELAYOUT_HEADINGABOVE:
                     $header->courseheaderimagelayoutheadingabove = true;
                     $header->courseheaderimagelayoutstackedclass = '';
@@ -466,7 +501,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
 
         if (!empty($pagetype) && !empty($homepagetype) && $pagetype == $homepagetype) {
-            $header->welcomemessage = \core_user::welcome_message();
+            $header->welcomemessage = \core\user::welcome_message();
         }
         return $this->render_from_template('core/full_header', $header);
     }
@@ -486,13 +521,13 @@ class core_renderer extends \theme_boost\output\core_renderer {
     /**
      * Prints a nice side block with an optional header.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @param block_contents $bc HTML for the content
      * @param string $region the region the block is appearing in.
      * @return string the HTML to be output.
      */
-    public function block(\block_contents $bc, $region) {
+    public function block(block_contents $bc, $region) {
         global $CFG;
 
         // Require own locallib.php.
@@ -500,23 +535,24 @@ class core_renderer extends \theme_boost\output\core_renderer {
 
         $bc = clone($bc); // Avoid messing up the object passed in.
         if (empty($bc->blockinstanceid) || !strip_tags($bc->title)) {
-            $bc->collapsible = \block_contents::NOT_HIDEABLE;
+            $bc->collapsible = block_contents::NOT_HIDEABLE;
         }
 
         $id = !empty($bc->attributes['id']) ? $bc->attributes['id'] : uniqid('block-');
-        $context = new \stdClass();
+        $context = new stdClass();
         $context->skipid = $bc->skipid;
         $context->blockinstanceid = $bc->blockinstanceid ?: uniqid('fakeid-');
         $context->dockable = $bc->dockable;
         $context->id = $id;
-        $context->hidden = $bc->collapsible == \block_contents::HIDDEN;
+        $context->hidden = $bc->collapsible == block_contents::HIDDEN;
         $context->skiptitle = strip_tags($bc->title);
         $context->showskiplink = !empty($context->skiptitle);
         $context->arialabel = $bc->arialabel;
         $context->ariarole = !empty($bc->attributes['role']) ? $bc->attributes['role'] : '';
         $context->class = $bc->attributes['class'];
         $context->type = $bc->attributes['data-block'];
-        $context->title = $bc->title;
+        $context->title = (string) $bc->title;
+        $context->showtitle = $context->title !== '';
         $context->content = $bc->content;
         $context->annotation = $bc->annotation;
         $context->footer = $bc->footer;
@@ -526,7 +562,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $regions = theme_boost_union_get_additional_regions();
         $regioncapname = array_search($region, $regions);
         if (!empty($regioncapname) && $context->hascontrols) {
-            $context->hascontrols = has_capability('theme/boost_union:editregion'.$regioncapname, $this->page->context);
+            $context->hascontrols = has_capability('theme/boost_union:editregion' . $regioncapname, $this->page->context);
         }
 
         if ($context->hascontrols) {
@@ -539,7 +575,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
     /**
      * Renders the login form.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @param \core_auth\output\login $form The renderable.
      * @return string
@@ -555,8 +591,11 @@ class core_renderer extends \theme_boost\output\core_renderer {
             $url = $url->out(false);
         }
         $context->logourl = $url;
-        $context->sitename = format_string($SITE->fullname, true,
-            ['context' => context_course::instance(SITEID), "escape" => false]);
+        $context->sitename = format_string(
+            $SITE->fullname,
+            true,
+            ['context' => context_course::instance(SITEID), "escape" => false]
+        );
 
         // Check if the local login form is enabled.
         $loginlocalloginsetting = get_config('theme_boost_union', 'loginlocalloginenable');
@@ -591,7 +630,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * Content that should be output in the footer area
      * of the page. Designed to be called in theme layout.php files.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @return string HTML fragment.
      */
@@ -614,11 +653,6 @@ class core_renderer extends \theme_boost\output\core_renderer {
             return '';
         }
 
-        // Ensure that the callback exists prior to cache purge.
-        // This is a critical page path.
-        // TODO MDL-81134 Remove after LTS+1.
-        require_once($CFG->libdir.'/classes/hook/output/before_standard_footer_html_generation.php');
-
         // Process the hooks as defined by Moodle core.
         // If Boost Union is configured to suppress a particular footer element, the hook has been disabled by
         // theme_boost_union_manipulate_books().
@@ -634,7 +668,8 @@ class core_renderer extends \theme_boost\output\core_renderer {
         foreach ($pluginswithfunction as $plugintype => $plugins) {
             foreach ($plugins as $pluginname => $function) {
                 // If the given plugin's output is suppressed by Boost Union's settings.
-                $suppresssetting = get_config('theme_boost_union', 'footersuppressstandardfooter_'.$plugintype.'_'.$pluginname);
+                $suppresssetting = get_config('theme_boost_union', 'footersuppressstandardfooter_' . $plugintype . '_' .
+                        $pluginname);
                 if (isset($suppresssetting) && $suppresssetting == THEME_BOOST_UNION_SETTING_SELECT_YES) {
                     // Skip the plugin.
                     continue;
@@ -669,7 +704,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * The standard tags (typically script tags that are not needed earlier) that
      * should be output after everything else. Designed to be called in theme layout.php files.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * It is based on the standard_end_of_body_html() function but was split into two parts
      * (for the additionalhtmlfooter and the unique endtoken) to be requested individually in footer.mustache
@@ -689,7 +724,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * The standard tags (typically script tags that are not needed earlier) that
      * should be output after everything else. Designed to be called in theme layout.php files.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * It is based on the standard_end_of_body_html() function but was split into two parts
      * (for the additionalhtmlfooter and the unique endtoken) to be requested individually in footer.mustache
@@ -712,7 +747,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
 
         $output = '';
         if ($this->page->pagelayout !== 'embedded' && !empty($CFG->additionalhtmlfooter)) {
-            $output .= "\n".$CFG->additionalhtmlfooter;
+            $output .= "\n" . $CFG->additionalhtmlfooter;
         }
         return $output;
     }
@@ -746,7 +781,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $footersuppresslogininfosetting = get_config('theme_boost_union', 'footersuppresslogininfo');
         if (isset($footersuppresslogininfosetting) && $footersuppresslogininfosetting == THEME_BOOST_UNION_SETTING_SELECT_YES) {
             if (isset($SESSION->justloggedin) && !empty($CFG->displayloginfailures)) {
-                require_once($CFG->dirroot.'/user/lib.php');
+                require_once($CFG->dirroot . '/user/lib.php');
                 user_count_login_failures($USER, true);
             }
         }
@@ -759,7 +794,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * Returns a string containing a link to the user documentation.
      * Also contains an icon by default. Shown to teachers and admin only.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @param string $path The page link after doc root and language, no leading slash.
      * @param string $text The text to be displayed for the link
@@ -773,7 +808,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         // Set the icon only if the setting is not set to suppress the footer icons.
         $footericonsetting = get_config('theme_boost_union', 'footersuppressicons');
         if (!isset($footericonsetting) || $footericonsetting == THEME_BOOST_UNION_SETTING_SELECT_NO) {
-            $icon = $this->pix_icon('book', '', 'moodle', ['class' => 'iconhelp icon-pre']);
+            $icon = $this->pix_icon('book', '', 'moodle');
 
             // Otherwise.
         } else {
@@ -784,8 +819,12 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $newwindowicon = '';
         if (!empty($CFG->doctonewwindow) || $forcepopup) {
             $attributes['target'] = '_blank';
-            $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle',
-                ['class' => 'fa fa-externallink fa-fw']);
+            $newwindowicon = $this->pix_icon(
+                'i/externallink',
+                get_string('opensinnewwindow'),
+                'moodle',
+                ['class' => 'fa fa-externallink fa-fw']
+            );
         }
 
         return html_writer::tag('a', $icon . $text . $newwindowicon, $attributes);
@@ -794,16 +833,18 @@ class core_renderer extends \theme_boost\output\core_renderer {
     /**
      * Returns the services and support link for the help pop-up.
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @return string
      */
     public function services_support_link(): string {
         global $CFG;
 
-        if (during_initial_install() ||
+        if (
+            during_initial_install() ||
             (isset($CFG->showservicesandsupportcontent) && $CFG->showservicesandsupportcontent == false) ||
-            !is_siteadmin()) {
+            !is_siteadmin()
+        ) {
             return '';
         }
 
@@ -817,7 +858,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
             $liferingicon = null;
         }
 
-        $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle', ['class' => 'ml-1']);
+        $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle', ['class' => 'ms-1']);
         $link = !empty($CFG->servicespage)
             ? $CFG->servicespage
             : 'https://moodle.com/help/?utm_source=CTA-banner&utm_medium=platform&utm_campaign=name~Moodle4+cat~lms+mp~no';
@@ -829,7 +870,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
     /**
      * Returns the HTML for the site support email link
      *
-     * This renderer function is copied and modified from /lib/outputrenderers.php
+     * This renderer function is copied and modified from /lib/classes/output/core_renderer.php
      *
      * @param array $customattribs Array of custom attributes for the support email anchor tag.
      * @param bool $embed Set to true if you want to embed the link in other inline content.
@@ -840,9 +881,11 @@ class core_renderer extends \theme_boost\output\core_renderer {
 
         // Do not provide a link to contact site support if it is unavailable to this user. This would be where the site has
         // disabled support, or limited it to authenticated users and the current user is a guest or not logged in.
-        if (!isset($CFG->supportavailability) ||
+        if (
+            !isset($CFG->supportavailability) ||
                 $CFG->supportavailability == CONTACT_SUPPORT_DISABLED ||
-                ($CFG->supportavailability == CONTACT_SUPPORT_AUTHENTICATED && (!isloggedin() || isguestuser()))) {
+                ($CFG->supportavailability == CONTACT_SUPPORT_AUTHENTICATED && (!isloggedin() || isguestuser()))
+        ) {
             return '';
         }
 
@@ -851,7 +894,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         // Set the icon only if the setting is not set to suppress the footer icons.
         $footericonsetting = get_config('theme_boost_union', 'footersuppressicons');
         if (!isset($footericonsetting) || $footericonsetting == THEME_BOOST_UNION_SETTING_SELECT_NO) {
-            $icon = $this->pix_icon('book', '', 'moodle', ['class' => 'iconhelp icon-pre']);
+            $icon = $this->pix_icon('book', '', 'moodle');
 
             // Otherwise.
         } else {
@@ -871,7 +914,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
 
         if (!empty($CFG->supportpage)) {
             $attributes = ['href' => $CFG->supportpage, 'target' => 'blank'];
-            $content .= $this->pix_icon('i/externallink', '', 'moodle', ['class' => 'ml-1']);
+            $content .= $this->pix_icon('i/externallink', '', 'moodle', ['class' => 'ms-1']);
         } else {
             $attributes = ['href' => $CFG->wwwroot . '/user/contactsitesupport.php'];
         }

@@ -33,7 +33,7 @@
 }}
 {{#url}}
     {{#uservisible}}
-        <div class="activity-icon activityiconcontainer smaller {{purpose}} courseicon align-self-start mr-2 {{formattilesclass}}"
+        <div class="activity-icon activityiconcontainer smaller {{purpose}} courseicon align-self-start me-2 {{formattilesclass}}"
             {{#showtooltip}}data-toggle="tooltip" title="{{{pluginname}}}" data-placement="top"{{/showtooltip}}
         >
             <img src="{{{icon}}}" class="activityicon {{iconclass}}"
@@ -42,7 +42,7 @@
         </div>
     {{/uservisible}}
     {{^uservisible}}
-        <div class="activity-icon activityiconcontainer smaller {{purpose}} courseicon align-self-start mr-2">
+        <div class="activity-icon activityiconcontainer smaller {{purpose}} courseicon align-self-start me-2">
             <img src="{{{icon}}}" class="activityicon {{iconclass}}"
                  alt="{{#ismoodle40}}{{{modname}}}{{/ismoodle40}}{{^ismoodle40}}{{#cleanstr}} activityicon, moodle, {{{pluginname}}} {{/cleanstr}}{{/ismoodle40}}"
             >

@@ -22,10 +22,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+// Needed for progress bar output when sorting by percentage.
+define('NO_OUTPUT_BUFFERING', true);
+
 // Include required files.
 require_once(dirname(__FILE__) . '/../../config.php');
-require_once($CFG->dirroot.'/notes/lib.php');
-require_once($CFG->libdir.'/tablelib.php');
+require_once($CFG->dirroot . '/notes/lib.php');
+require_once($CFG->libdir . '/tablelib.php');
 
 use block_completion_progress\completion_progress;
 
@@ -75,9 +78,12 @@ $PAGE->set_url(
 );
 $PAGE->set_context($context);
 $title = get_string('overview', 'block_completion_progress');
-$PAGE->set_title($title);
-$PAGE->set_heading($title);
-$PAGE->navbar->add($title);
+$PAGE->set_title("$course->shortname: $title");
+$PAGE->set_heading($course->fullname);
+$PAGE->navbar->add(
+    $title,
+    new moodle_url('/blocks/completion_progress/overview.php', ['instanceid' => $id, 'courseid' => $courseid])
+);
 $PAGE->set_pagelayout('report');
 
 $cachevalue = debugging() ? -1 : (int)get_config('block_completion_progress', 'cachevalue');
@@ -147,6 +153,9 @@ $table->is_downloading($download, 'completion_progress-' . $COURSE->shortname);
 $table->setup();
 
 if ($download) {
+    if (array_key_exists('progress', $table->get_sort_columns())) {
+        $progress->compute_overview_percentages(null);
+    }
     $table->query_db($perpage);
     $table->start_output();
     $table->build_table();
@@ -169,19 +178,47 @@ if (!$progress->has_activities()) {
     die();
 }
 
+if (array_key_exists('progress', $table->get_sort_columns())) {
+    core_php_time_limit::raise(0);
+    $computeprogress = new progress_bar('', 500, true);
+    $strcomputeprogress = get_string('computeprogress', 'block_completion_progress');
+    $progress->compute_overview_percentages(fn($pct) => $computeprogress->update_full($pct, $strcomputeprogress));
+    // Delete the progress bar from the page.
+    echo html_writer::script(
+        js_writer::function_call(
+            '(function(id){document.getElementById(id).remove();})',
+            [$computeprogress->get_id()]
+        )
+    );
+}
+
 echo $output->container_start('progressoverviewmenus');
 if ($groupoptions) {
-    echo $output->single_select($PAGE->url, 'group', $groupoptions, $group,
-        ['' => 'choosedots'], null, ['label' => s(get_string('groupsgroupings', 'group'))]);
+    echo $output->single_select(
+        $PAGE->url,
+        'group',
+        $groupoptions,
+        $group,
+        ['' => 'choosedots'],
+        null,
+        ['label' => s(get_string('groupsgroupings', 'group'))]
+    );
 }
 if ($roleoptions) {
-    echo $output->single_select($PAGE->url, 'role', $roleoptions, $role,
-        ['' => 'choosedots'], null, ['label' => get_string('role')]);
+    echo $output->single_select(
+        $PAGE->url,
+        'role',
+        $roleoptions,
+        $role,
+        ['' => 'choosedots'],
+        null,
+        ['label' => get_string('role')]
+    );
 }
 echo $output->container_end();
 
 // Form for messaging selected participants.
-$formattributes = ['action' => $CFG->wwwroot.'/user/action_redir.php', 'method' => 'post', 'id' => 'participantsform'];
+$formattributes = ['action' => $CFG->wwwroot . '/user/action_redir.php', 'method' => 'post', 'id' => 'participantsform'];
 $formattributes['data-course-id'] = $course->id;
 $formattributes['data-table-unique-id'] = 'block-completion_progress-overview-' . $course->id;
 echo html_writer::start_tag('form', $formattributes);
@@ -209,12 +246,24 @@ if ($table->totalrows > $perpage || $perpage == SHOW_ALL_PAGE_SIZE) {
     $perpageurl = new moodle_url($PAGE->url, ['page' => 0]);
     if ($perpage < SHOW_ALL_PAGE_SIZE) {
         $perpageurl->param('perpage', SHOW_ALL_PAGE_SIZE);
-        echo $output->container(html_writer::link($perpageurl,
-            get_string('showall', '', $table->totalrows)), [], 'showall');
+        echo $output->container(
+            html_writer::link(
+                $perpageurl,
+                get_string('showall', '', $table->totalrows)
+            ),
+            [],
+            'showall'
+        );
     } else {
         $perpageurl->param('perpage', DEFAULT_PAGE_SIZE);
-        echo $output->container(html_writer::link($perpageurl,
-            get_string('showperpage', '', DEFAULT_PAGE_SIZE)), [], 'showall');
+        echo $output->container(
+            html_writer::link(
+                $perpageurl,
+                get_string('showperpage', '', DEFAULT_PAGE_SIZE)
+            ),
+            [],
+            'showall'
+        );
     }
 }
 
@@ -232,9 +281,9 @@ if ($bulkoperations) {
     echo html_writer::tag('label', get_string("withselectedusers"), ['for' => 'formactionid']);
     echo html_writer::select($displaylist, 'formaction', '', ['' => 'choosedots'], ['id' => 'formactionid']);
 
-    echo '<input type="hidden" name="id" value="'.$course->id.'" />';
+    echo '<input type="hidden" name="id" value="' . $course->id . '" />';
     echo '<noscript style="display:inline">';
-    echo '<div><input type="submit" value="'.get_string('ok').'" /></div>';
+    echo '<div><input type="submit" value="' . get_string('ok') . '" /></div>';
     echo '</noscript>';
     echo '</div>';
 
@@ -249,9 +298,11 @@ echo html_writer::end_tag('form');
 echo $table->download_buttons();
 
 // Organise access to JS for progress bars.
-$PAGE->requires->js_call_amd('block_completion_progress/progressbar', 'init', [
-    'instances' => [$block->id],
-]);
+$PAGE->requires->js_call_amd(
+    'block_completion_progress/progressbar',
+    'init',
+    ['instances' => [$block->id]]
+);
 
 echo $output->container_end();
 echo $output->footer();

@@ -27,7 +27,6 @@ namespace format_multitopic;
  * Multitopic-specific section information
  */
 class section_info_extra {
-
     /** @var \section_info Base section info */
     public $sectionbase;
 
@@ -97,5 +96,4 @@ class section_info_extra {
         $this->id = $sectionbase->id;
         $this->section = $sectionbase->section;
     }
-
 }

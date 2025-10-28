@@ -573,23 +573,30 @@ Other
 - Fix issue 223 custom certificate monologo
 - Fix issue 226 stop page modal when pop up set
 
-4.4.0.27 (2024100942)
-=====================
+4.5.0.0 (2024101150)
+====================
+- Previous prep work for Moodle 4.5 (e.g. on subsections / delegated sections in 4.4.0.22 & 23) can now be used
+- Bootstrap 5 change class names e.g. ml-1 => ms-1 - see https://moodledev.io/docs/4.5/guides/bs5migration
 - Reserve space for right scroll bar on tiles main screen
     (avoid layout change in Chrome when tiles open/close and scrollbar appears/disappears)
 - Mobile sub-tile layout adjustment
+
+4.5.0.1 (2024101250)
+====================
+- Improve sub-sections expanded state handling (e.g. when persist when content is reloaded)
+- Add behat test for sub-sections
+
+4.5.0.2 (2024102550)
+====================
 - Fix missing section link in breadcrumb in activity
 - Fix new number picker button titles
 - Remove jquery from behat tests
 - Remove redundant local icons for resource subtiles in Moodle 4.3+
 - Improve appearance of bigbluebutton and Turnitin icons on sub-tiles
 
-4.4.0.28 (2024111540)
+4.5.0.3 (2024120950)
 =====================
 - High contrast mode available (shown if activated by user preference)
-
-4.4.0.29 (2024120940)
-=====================
 - Simplify $displaysection
 - Improve scroll bar access when tile open (overlay in centre section only, exposing left and right drawers to user)
 - Include "General" heading (for section zero) at top of course index
@@ -597,13 +604,23 @@ Other
 - Remove debug message
 - Allow null displaysection on js init
 
-
-4.4.0.30 (2024121240)
-=====================
+4.5.0.4 (2024121250)
+====================
 - Adjust tests
 
-4.4.0.31 (2025041640)
-=====================
+4.5.0.5 (2024121251)
+====================
+- Fix JS build file course.min.js
+
+4.5.0.6 (2024121252)
+====================
+- Add missing change to version.php
+
+4.5.0.7 (2025041650)
+====================
+- Simplify legacy checks for excess sections (detail now redundant)
+- Add setting to include sub-section progress data within on-tile progress indicator
+- Adjust tests
 - Make user pref controls more obvious if on/off (use same switch as edit mode)
 - Improve JS section load content error report notification
 - Remove registration form and contact links
@@ -613,24 +630,93 @@ Other
 - Fix issue 252 section zero heading
 - Remove any queued adhoc tasks for deleted code
 
-4.4.0.32 (2025052740)
+4.5.0.8 (2025052050)
+====================
+- Improve monologo icon check
+- Remove redundant language strings
+
+4.5.0.9 (2025052750)
 =====================
 - Issue 270 - add admin setting to prevent user collapsing section zero
 - Issue 239 - fix "Show section zero at top of all sections" Setting Not Working
-
-4.4.0.33 (2025052741)
-=====================
 - Issue 263 - use iframe for PDF modal instead of object
+
+4.5.0.10 (2025052751)
+=====================
+- Issue 268 add missing cachedef string
+
+4.5.0.11 (2025052752)
+=====================
 - Edit admin settings strings re animated navigation
 
-4.4.0.34 (2025052742)
-=====================
-- Remove duplicate lines in version.php (incorrect previous merge)
-
-4.4.0.35 (2025052743)
+4.5.0.12 (2025052753)
 =====================
 - Remove format.js deprecated since 4.0 - see https://tracker.moodle.org/browse/MDL-74778.
 
-4.4.0.36 (2025052744)
+4.5.0.13 (2025052754)
 =====================
 - Remove redundant behat test steps
+
+4.5.0.14 (2025052755)
+=====================
+- Fix issue when clicking sub-section headings in course index
+
+4.5.0.15 (2025060252)
+=====================
+- Introduce cache for tiles format options
+
+4.5.0.16 (2025060253)
+=====================
+- Issue 272 - fix nav arrows in subsection accessed from course index when animated navigation is off
+- Use section.php page to show single section when animated navigation is off
+
+4.5.0.17 (2025060254)
+=====================
+- More adaptation to use section.php for single section when animated nav is off.
+    - Move sec zero and arrows to top
+    - Tidy appearance
+
+4.5.0.18 (2025060255)
+=====================
+On section.php:
+    - Fix section zero reduced width
+    - Fix animated nav toggle colour
+    - Respect setting to show section 0 course wide
+
+4.5.0.19 (2025060256)
+=====================
+- Adjust modal cm JS for section.php
+
+4.5.0.20 (2025060257)
+=====================
+- If user is editing, ignore setting to show sec zero at top of every section.php page
+- If user requests course/view.php?section=xx, redirect to course/section.php
+- Improve modal JS on section.php page
+
+4.5.0.21 (2025060258)
+=====================
+- Issue 274 remove tooltip for activity summary
+- Issue 277 fix progress count error where no subsection data
+- Issue 276 remove subsection icon in edit mode
+- Simplify legacy excess sections check
+
+4.5.0.22 (2025060259)
+=====================
+- Fix missing activity description in modal for non-subtile activities
+
+4.5.0.23 (2025070350)
+=====================
+- Issue 280 button icon colour darker to match core (accessibility)
+- Remove docs links
+
+4.5.0.24 (2025070351)
+=====================
+- Issue 289 fix page not scrolling when open tile
+
+4.5.0.25 (2025070352)
+=====================
+- Avoid deprecation warning
+
+4.5.0.26 (2025070353)
+=====================
+- Issue 291 and 292 fix malfunctioning modal iframe URL for file activities

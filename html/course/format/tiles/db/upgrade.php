@@ -159,13 +159,6 @@ function xmldb_format_tiles_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2019052100, 'format', 'tiles');
     }
 
-    if ($oldversion < 2020080629) {
-        if (strpos(get_config('format_tiles', 'documentationurl'), 'evolutioncode.uk') !== false) {
-            set_config('documentationurl', 'https://evolutioncode.uk/tiles/docs/', 'format_tiles');
-        }
-        upgrade_plugin_savepoint(true, 2020080629, 'format', 'tiles');
-    }
-
     if ($oldversion < 2024020200) {
 
         // New way of storing tile images, using a new format_tiles_tile_options table instead of core course_format_options.

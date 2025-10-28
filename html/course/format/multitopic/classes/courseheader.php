@@ -72,9 +72,10 @@ class courseheader implements \renderable {
             $filename = $file->get_filename();
             $filenameextpos = strrpos($filename, '.');
             if ($filenameextpos) {
-                $url = \moodle_url::make_file_url('/pluginfile.php' ,
-                        '/' . $file->get_contextid() . '/course/overviewfiles' .
-                        $file->get_filepath() . $filename);
+                $url = \moodle_url::make_file_url(
+                    '/pluginfile.php',
+                    '/' . $file->get_contextid() . '/course/overviewfiles' . $file->get_filepath() . $filename
+                );
                 $this->imageurl = $url;
                 $this->imagename = substr($filename, 0, $filenameextpos);
                 $this->authorwithurl = $file->get_author();
@@ -82,7 +83,6 @@ class courseheader implements \renderable {
                 break;
             }
         }
-
     }
 
     /**
@@ -113,5 +113,4 @@ class courseheader implements \renderable {
 
         return $o;
     }
-
 }

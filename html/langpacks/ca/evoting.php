@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addChoice'] = 'Afegeix una opció de resposta';
 $string['addquestion'] = 'Afegeix una pregunta';
+$string['checkbox_multiple_answer'] = 'Possibilitat de triar respostes múltiples';
 $string['choice'] = 'Opcions de resposta';
 $string['choicenotvalid'] = 'L\'opció de resposta no és vàlida';
 $string['confirmDelete'] = 'N\'esteu segur?';

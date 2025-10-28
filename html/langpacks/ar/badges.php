@@ -302,6 +302,9 @@ $string['error:cannotact'] = 'لا يمكن تفعيل الشارة.';
 $string['error:cannotawardbadge'] = 'لا يمكن منح شارة للمستخدم.';
 $string['error:cannotdeletecriterion'] = 'لا يمكن حذف هذا المعيار.';
 $string['error:cannotrevokebadge'] = 'لا يمكن إبطال شارة من مستخدم.';
+$string['error:cannotsendtobackpack'] = '<strong>تتعذر إضافة الشارة إلى حقيبة الظهر</strong><br />
+مزود خدمة حقيبة الظهر لديك يرسل هذه الرسالة: \'{$a}\'.<br /><br />
+يمكنك محاولة تنزيل الشارة ثم إضافتها يدويًا إلى حقيبة ظهرك، أو إعادة المحاولة لاحقًا.';
 $string['error:clone'] = 'لا يمكن استنساخ الشارة.';
 $string['error:connectionunknownreason'] = 'كان الاتصال غير ناجح ولكن لم يتم تقديم سبب.';
 $string['error:duplicatename'] = 'شارة بهذا الاسم موجودة بالفعل في النظام.';
@@ -410,7 +413,7 @@ $string['makeprivate'] = 'اجعلها شخصية';
 $string['makepublic'] = 'اجعلها عامة';
 $string['managebackpacks'] = 'إدارة حقائب الظهر';
 $string['managebadges'] = 'إدارة الشارات';
-$string['message'] = 'نص الرسالة';
+$string['message'] = 'متن الرسالة';
 $string['messagebody'] = '<p>لقد تم منحك شارة "٪badgename٪"!</p>
 <p>يمكن معرفة المزيد من المعلومات عن هذه الشارة من صفحة معلومات الشارة ٪badgelink٪.</p>
 <p>يمكنك إدارة الشارة وتنزيلها من صفحة {$a}.</p>';

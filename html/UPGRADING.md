@@ -6,15 +6,76 @@ More detailed information on key changes can be found in the [Developer update n
 
 The format of this change log follows the advice given at [Keep a CHANGELOG](https://keepachangelog.com).
 
-## 4.5.5+
+## 4.5.7
 
 ### core
+
+#### Added
+
+- The Behat `::execute()` method now accepts an array-style callable in addition to the string `classname::method` format.
+
+  The following formats are now accepted:
+
+  ```php
+  // String format:
+  $this->execute('behat_general::i_click_on', [...]);
+
+  // Array format:
+  $this->execute([behat_general::class,' i_click_on'], [...]);
+  ```
+
+  For more information see [MDL-86231](https://tracker.moodle.org/browse/MDL-86231)
+- The `\externallib_advanced_testcase` has been replaced by `\core_external\tests\externallib_testcase` and is now autoloadable.
+
+  For more information see [MDL-86283](https://tracker.moodle.org/browse/MDL-86283)
+
+### core_badges
+
+#### Added
+
+- A number of new static methods have been added to `core_badges\backpack_api` to support the new Canvas Credentials backpack provider. These methods allow you to retrieve lists of providers and regions, check if Canvas Credentials fields should be displayed, and get a region URL or API URL based on a given region ID. The new methods include `get_providers`, `get_regions`, `display_canvas_credentials_fields`, `get_region_url`, `get_region_api_url`, `get_regionid_from_url`, and `is_canvas_credentials_region`.
+
+  For more information see [MDL-86174](https://tracker.moodle.org/browse/MDL-86174)
+
+### core_grades
+
+#### Added
+
+- New 'is_gradable()' function has been created to return whether the item has any gradeitem that is GRADE_TYPE_VALUE or GRADE_TYPE_SCALE.
+
+  For more information see [MDL-85837](https://tracker.moodle.org/browse/MDL-85837)
+
+### core_message
+
+#### Added
+
+- The `contexturl` property to `\core\message\message` instances can now contain `\core\url` values in addition to plain strings
+
+  For more information see [MDL-83080](https://tracker.moodle.org/browse/MDL-83080)
+
+## 4.5.6
+
+### core
+
+#### Added
+
+- Add a new method has_valid_group in \core\report_helper that will return true or false depending if the user has a valid group. This is mainly false in case the user is not in any group in SEPARATEGROUPS. Used in report_log and report_loglive
+
+  For more information see [MDL-84464](https://tracker.moodle.org/browse/MDL-84464)
 
 #### Changed
 
 - The `\core\attribute\deprecated` attribute constructor `$replacement` parameter now defaults to null, and can be omitted
 
   For more information see [MDL-84531](https://tracker.moodle.org/browse/MDL-84531)
+- Added a new `\core\deprecation::emit_deprecation()` method which should be used in places where a deprecation is known to occur. This method will throw debugging if no deprecation notice was found, for example:
+  ```php
+  public function deprecated_method(): void {
+      \core\deprecation::emit_deprecation([self::class, __FUNCTION__]);
+  }
+  ```
+
+  For more information see [MDL-85897](https://tracker.moodle.org/browse/MDL-85897)
 
 ### core_message
 

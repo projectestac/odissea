@@ -80,6 +80,7 @@ class notification_helper {
             context: \context_module::instance($quizobj->get_cm()->id),
             withcapability: 'mod/quiz:attempt',
             userfields: 'u.id, u.firstname, u.suspended, u.auth',
+            onlyactive: true,
         );
 
         // Filter a list of users who meet the availability conditions.
@@ -153,8 +154,10 @@ class notification_helper {
 
         $stringparams = [
             'firstname' => $user->firstname,
-            'quizname' => $quiz->name,
-            'coursename' => $quizobj->get_course()->fullname,
+            'quizname' => format_string($quiz->name,
+                options: ['context' => $quizobj->get_context(), 'escape' => false]),
+            'coursename' => format_string($quizobj->get_course()->fullname,
+                options: ['context' => \context_course::instance($quizobj->get_course()->id), 'escape' => false]),
             'timeopen' => userdate($user->timeopen),
             'timeclose' => !empty($user->timeclose) ? userdate($user->timeclose) : get_string('statusna'),
             'url' => $url,
@@ -164,7 +167,7 @@ class notification_helper {
             'user' => \core_user::get_user($user->id),
             'url' => $url->out(false),
             'subject' => get_string('quizopendatesoonsubject', 'mod_quiz', $stringparams),
-            'quizname' => $quiz->name,
+            'quizname' => $stringparams['quizname'],
             'html' => get_string('quizopendatesoonhtml', 'mod_quiz', $stringparams),
         ];
 

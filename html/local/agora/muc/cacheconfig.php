@@ -852,6 +852,35 @@ global $CFG;
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
+    'core/routes' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'canuselocalstore' => true,
+      'component' => 'core',
+      'area' => 'routes',
+    ),
+    'core/ai_policy' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'datasource' => 'core_ai\\cache\\policy',
+      'canuselocalstore' => true,
+      'component' => 'core',
+      'area' => 'ai_policy',
+    ),
+    'core/ai_ratelimit' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'core',
+      'area' => 'ai_ratelimit',
+    ),
     'core/navigation_cache' => 
     array (
       'mode' => 2,
@@ -895,6 +924,18 @@ global $CFG;
       'area' => 'items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+    ),
+    'qtype_coderunner/coderunner_grading_cache' => 
+    array (
+      'mode' => 1,
+      'maxsize' => 50000000,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'canuselocalstore' => true,
+      'requiredataguarantee' => true,
+      'ttl' => 1209600,
+      'component' => 'qtype_coderunner',
+      'area' => 'coderunner_grading_cache',
     ),
     'qtype_wq/images' => 
     array (
@@ -1092,7 +1133,7 @@ global $CFG;
     array (
       'mode' => 1,
       'simplekeys' => true,
-      'simpledata' => false,
+      'simpledata' => true,
       'staticacceleration' => true,
       'staticaccelerationsize' => 30,
       'invalidationevents' => 
@@ -1108,11 +1149,33 @@ global $CFG;
     array (
       'mode' => 1,
       'simplekeys' => true,
-      'simpledata' => false,
+      'simpledata' => true,
       'staticacceleration' => true,
       'staticaccelerationsize' => 30,
       'component' => 'format_tiles',
       'area' => 'videocmids',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'format_tiles/formatoptionelementids' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 30,
+      'component' => 'format_tiles',
+      'area' => 'formatoptionelementids',
+    ),
+    'format_tiles/formatoptions' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 30,
+      'component' => 'format_tiles',
+      'area' => 'formatoptions',
     ),
     'repository_googledocs/folder' => 
     array (
@@ -1264,6 +1327,8 @@ global $CFG;
       ),
       'component' => 'theme_boost_union',
       'area' => 'flavours',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'theme_boost_union/touchiconsios' => 
     array (
@@ -1273,6 +1338,8 @@ global $CFG;
       'staticacceleration' => true,
       'component' => 'theme_boost_union',
       'area' => 'touchiconsios',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'theme_boost_union/smartmenus' => 
     array (
@@ -1282,6 +1349,8 @@ global $CFG;
       'overrideclass' => '\\theme_boost_union\\cache\\loader',
       'component' => 'theme_boost_union',
       'area' => 'smartmenus',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'theme_boost_union/smartmenu_items' => 
     array (
@@ -1291,6 +1360,8 @@ global $CFG;
       'overrideclass' => '\\theme_boost_union\\cache\\loader',
       'component' => 'theme_boost_union',
       'area' => 'smartmenu_items',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'theme_boost_union/hookoverrides' => 
     array (
@@ -1301,6 +1372,8 @@ global $CFG;
       'staticacceleration' => false,
       'component' => 'theme_boost_union',
       'area' => 'hookoverrides',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'quizaccess_seb/quizsettings' => 
     array (

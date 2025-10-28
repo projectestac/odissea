@@ -57,9 +57,10 @@ class tile_photo {
 
     /**
      * The filename relating to this tile_photo object.
+     * Empty string when uninitialised, null if initialised but genuinely null.
      * @var string
      */
-    private $filename;
+    private $filename = '';
 
     /**
      * The file object to which this tile_photo object relates.
@@ -85,8 +86,6 @@ class tile_photo {
                 DEBUG_DEVELOPER
             );
         }
-        // Init filename.
-        $this->get_filename();
     }
 
     /**
@@ -94,7 +93,8 @@ class tile_photo {
      * @return string|null
      */
     public function get_filename() {
-        if (!isset($this->filename) || !$this->filename) {
+        if ($this->filename === '') {
+            // Empty string when uninitialised, null if initialised but genuinely null.
             $this->filename = $this->courseid
                 ? format_option::get($this->courseid, $this->tilesoptiontype, $this->get_element_id()) : null;
         }
@@ -165,7 +165,7 @@ class tile_photo {
      */
     public function get_file() {
         if (!isset($this->file)) {
-            $this->file = self::get_file_from_ids($this->context->id, $this->get_element_id(), $this->filename);
+            $this->file = self::get_file_from_ids($this->context->id, $this->get_element_id(), $this->get_filename());
         }
         return $this->file;
     }

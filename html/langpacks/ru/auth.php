@@ -112,7 +112,7 @@ $string['forcechangepassword_help'] = 'Заставить пользовател
 $string['forcechangepasswordfirst_help'] = 'Заставить пользователей сменить пароль при первом входе в Moodle.';
 $string['forgottenpassword'] = 'Если вы введете здесь URL веб-страницы, она будет использоваться для восстановления забытого пароля сайта. Эта настройка предназначена для сайтов, где управление паролями осуществляется вне Moodle. Для использования стандартной процедуры восстановления пароля оставьте это поле пустым.';
 $string['forgottenpasswordurl'] = 'Страница восстановления пароля';
-$string['getrecaptchaapi'] = 'Для использования reCAPTCHA Вам нужно получить ключ API с сайта <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
+$string['getrecaptchaapi'] = 'Для использования reCAPTCHA Вам нужно получить ключ API с сайта <a href=\'https://www.google.com/recaptcha/admin\'> https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Кнопка гостевого входа';
 $string['incorrectpleasetryagain'] = 'Неправильно. Пожалуйста, попробуйте еще раз.';
 $string['infilefield'] = 'Необходимое поле в файле';

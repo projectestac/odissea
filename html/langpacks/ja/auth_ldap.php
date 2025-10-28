@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ldap_ad_create_req'] = 'Active Directoryに新しいアカウントを作成できません。アカウントを作成するためのすべての必要条件 (LDAPSコネクション、必要な権限を持ったユーザのバインド等) に合致しているか確認してください。';
+$string['auth_ldap_ad_create_req'] = 'Active Directoryに新しいアカウントを作成できません。アカウントを作成するためのすべての必要条件 (LDAPSコネクション、必要な権限を持ったユーザのバインド等) に合致しているかご確認ください。';
 $string['auth_ldap_attrcreators'] = 'メンバが属性の作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_attrcreators_key'] = '属性作成者';
 $string['auth_ldap_auth_user_create_key'] = '外部にユーザを作成する';
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'メンバ属性';
 $string['auth_ldap_no_mbstring'] = 'Active Directoryにアカウントを作成するにはmbstring拡張モジュールが必要です。';
 $string['auth_ldap_noconnect'] = 'LDAPモジュールがサーバに接続できません: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAPモジュールがすべてのサーバに接続できません: {$a}';
-$string['auth_ldap_noextension'] = '警告: PHP LDAPモジュールがインストールされていないようです。あなたがこの認証プラグインを使用したい場合、インストールおよび有効にされているか確認してください。';
+$string['auth_ldap_noextension'] = '警告: PHP LDAPモジュールがインストールされていないようです。あなたがこの認証プラグインを使用したい場合、インストールおよび有効にされているかご確認ください。';
 $string['auth_ldap_objectclass'] = '任意: ldap_user_typeのname/searchユーザで使用されるオブジェクトクラスをオーバーライドします。通常、この設定を変更する必要はありません。';
 $string['auth_ldap_objectclass_key'] = 'オブジェクトクラス';
 $string['auth_ldap_opt_deref'] = '検索時、エイリアスをどのように扱うか次の値から選択してください: 「No」 (LDAP_DEREF_NEVER) または 「Yes」 (LDAP_DEREF_ALWAYS)';
@@ -144,7 +144,7 @@ $string['ntlmsso_failed'] = '自動ログインに失敗しました、通常の
 $string['ntlmsso_isdisabled'] = 'NTLM SSOは無効にされています。';
 $string['ntlmsso_unknowntype'] = '不明なntlmssoタイプです!';
 $string['pagedresultsnotsupp'] = 'LDAPページ化結果はサポートされていません (あなたのPHPバージョンがサポートしていない、MoodleがLDAPプロトコルバージョン2を使用するよう設定されている、またはページサポートを利用できるか確認するためにMoodleがLDAPサーバに接続できません)。';
-$string['pagesize'] = 'この値があなたのLDAPサーバ結果設定サイズ制限 (1回のクエリで返すことのできる最大エントリ数) より小さいことを確認してください。';
+$string['pagesize'] = 'この値があなたのLDAPサーバ結果設定サイズ制限 (1回のクエリで返すことのできる最大エントリ数) より小さいことをご確認ください。';
 $string['pagesize_key'] = 'ページサイズ';
 $string['pluginname'] = 'LDAPサーバ';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';

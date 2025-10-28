@@ -278,7 +278,7 @@ $string['defaultissuername_desc'] = 'Nom de l\'autoritat que l\'expedeix.';
 $string['defaultissuerpassword'] = 'Contrasenya de l\'emissor de la insígnia';
 $string['defaultissuerpassword_help'] = 'Es requereix un compte al lloc de la motxilla amb l\'adreça de correu electrònic tal com s\'especifica a la configuració de l\'adreça de correu electrònic de l\'emissor de la insígnia a Administració del lloc / Insígnies / Configuració de les insígnies. La contrasenya del compte s\'ha d\'introduir aquí.';
 $string['delbadge'] = 'Voleu suprimir la insígnia \'{$a}\'  i eliminar les insígnies ja emeses?';
-$string['delconfirm'] = 'Esteu segur que voleu suprimir la insígnia \'{$a}\' i eliminar les insígnies ja emeses?';
+$string['delconfirm'] = 'Confirmeu que voleu suprimir la insígnia «{$a}» i eliminar les insígnies ja emeses?';
 $string['delcritconfirm'] = 'Confirmeu que voleu suprimir aquest criteri?';
 $string['deletehelp'] = '<p>Suprimir completament una insígnia vol dir que tots els seus registres d\'informació i criteris s\'eliminaran de forma permanent. Els usuaris que hagin guanyat aquesta insígnia ja no hi tindran accés, i no es visualitzarà a les seves pàgines de perfil. </p>
 <p>
@@ -507,13 +507,13 @@ $string['requiredcohort'] = 'S\'ha d\'afegir almenys una cohort al criteri de la
 $string['requiredcompetency'] = 'S\'ha d\'afegir almenys una competència al criteri de competència.';
 $string['requiredcourse'] = 'Heu d\'afegir almenys un curs al criteri de configuració del curs';
 $string['reviewbadge'] = 'Canvis en l\'accés a la insígnia';
-$string['reviewconfirm'] = '<p> Això farà la vostra insígnia visible per als usuaris i els permet començar a guanyar-la. </p>
+$string['reviewconfirm'] = '<p> Això farà la vostra insígnia visible per als usuaris i els permetrà començar a guanyar-la. </p>
 
 <p> És possible que alguns usuaris ja compleixin amb els criteris d\'aquesta insígnia i l\'obtinguin immediatament després que s\'activi. </p>
 
-<p> Una vegada que una insígnia ha estat aconseguida serà <strong> bloquejada </strong> - Certs ajustos incloent els criteris i les opcions de caducitat ja no podran ser canviats </p>
+<p> Una vegada que una insígnia ha estat aconseguida serà <strong> bloquejada </strong>. Alguns paràmetres determinats, inclosos els criteris i les opcions de caducitat, ja no es podran canviar.</p>
 
-<p> Esteu segur que voleu habilitar l\'accés a la insígnia «{$a}»? </p>';
+<p> Confirmeu que voleu habilitar l\'accés a la insígnia «{$a}»? </p>';
 $string['revoke'] = 'Revoca la insígnia';
 $string['save'] = 'Desa';
 $string['searchname'] = 'Cerca per nom';

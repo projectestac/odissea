@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessibility:rate:choice'] = 'Ligne {$a->rowposition}, {$a->choicetitle} : Colonne {$a->colposition}, {$a->choiceanswer}.';
 $string['action'] = 'Action';
 $string['activityoverview'] = 'Il reste des questionnaires auxquels vous n’avez pas encore répondu.';
 $string['additionalinfo'] = 'Info supplémentaire';
@@ -140,8 +141,8 @@ $string['displaymethod'] = 'La méthode d’affichage n’est pas définie pour 
 $string['download'] = 'Exporter les réponses en format texte/CSV';
 $string['downloadpdf'] = 'Télécharger le PDF';
 $string['downloadtextformat'] = 'Télécharger';
-$string['downloadtextformat_help'] = 'Cette fonction vous permet d’enregistrer toutes les réponses d’un questionnaire dans un format de fichier sélectionnable et pris en charge.
-Vous pouvez choisir d’inclure des éléments de données supplémentaires dans l’exportation, ainsi que d’envoyer automatiquement le fichier aux utilisateurs sélectionnés.';
+$string['downloadtextformat_help'] = 'Cette fonction vous permet de télécharger les réponses au questionnaire dans le format de fichier de votre choix.
+ Le fichier peut ensuite être ouvert dans un tableur (par exemple MS Excel ou Open Office Calc) ou dans un logiciel statistique pour un traitement ultérieur.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Type de rapport';
 $string['dropdown'] = 'Liste déroulante';
@@ -208,7 +209,8 @@ $string['feedbacknotes'] = 'Notes de feedback';
 $string['feedbacknotes_help'] = 'Le texte entré ici sera affiché à la fin du rapport de feedback.';
 $string['feedbackoptions'] = 'Options de feedback';
 $string['feedbackoptions_help'] = 'Les options de feedback sont disponibles si votre questionnaire contient les types de questions et les paramètres de question suivants :
-Boutons radio; Liste déroulante; Oui/Non; ou Taux (barème normal ou Osgood). Ces questions doivent être définies comme obligatoires, leur champ « Nom de la question » ne doit PAS être vide et les choix de réponses possibles doivent contenir une valeur.';
+Boutons radio; Liste déroulante; Oui/Non; ou Taux (barème normal ou Osgood). Ces questions doivent être définies comme obligatoires, leur champ « Nom de la question » ne doit PAS être vide et les choix de réponses possibles doivent contenir une valeur.
+Les questions relatives aux curseurs ne doivent PAS utiliser une valeur négative pour la plage minimale du curseur.';
 $string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Cette question fait partie de la section de feedback [{$a}]';
 $string['feedbackremovesection'] = 'Retirer cette question supprimera définitivement la section du feedback [{$a}]';
@@ -265,6 +267,8 @@ $string['kindofratescale_help'] = 'Cliquez droit sur le lien « Plus d’aide 
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Dernier répondant';
 $string['leftlabel'] = 'Étiquette de gauche';
+$string['leftpart'] = '{$a->min} est {$a->leftlabel}';
+$string['leftpartdefault'] = '{$a->min} est la plage minimale du curseur';
 $string['length'] = 'Longueur';
 $string['managequestions'] = 'Gérer les questions';
 $string['managequestions_help'] = 'Dans la section « Gérer les questions » de la page « Éditer les questions » vous pouvez effectuer toutes les opérations utiles sur les questions déjà créées.';
@@ -285,6 +289,10 @@ $string['maxtextlength_help'] = 'Pour la question de type Texte court, définiss
 Valeurs par défaut : 20 caractères pour la longueur de la boîte [Longueur de la boîte de texte] et 25 caractères pour le texte effectivement saisi par le répondant [Longueur texte max.].';
 $string['messageprovider:message'] = 'Rappel de réponse au questionnaire';
 $string['messageprovider:notification'] = 'Envoi du questionnaire';
+$string['middlepart'] = ', {$a->centreval} est {$a->middlelabel}';
+$string['middlepartdefault'] = ', {$a->centreval} est la moyenne';
+$string['middlepartwithtwovalues'] = ', {$a->centreval1} et {$a->centreval2} sont {$a->middlelabel}';
+$string['middlepartwithtwovaluesdefault'] = ', {$a->centreval1} et {$a->centreval2} sont des moyennes.';
 $string['minforcedresponses'] = 'Min. cases à cocher';
 $string['minforcedresponses_help'] = 'Utilisez ces paramètres si vous voulez forcer les étudiants à cocher un minimum de **Min. cases à cocher** ou un maximum de **Max. cases à cocher**.
 Pour les forcer à cocher un nombre exact de cases, tapez la même valeur pour **Min.** et **Max**. Si vous voulez uniquement forcer un minimum ou un maximum de cases cochées, laissez l’autre valeur à zéro. Ex. pour avoir un minimum de 2 cases cochées sur un total de 5, tapez **Min.** = 2 et laissez **Max.** à 0.
@@ -321,6 +329,7 @@ $string['noduplicates'] = 'Choix uniques';
 $string['noduplicateschoiceserror'] = 'Vous devez entrer au moins 2 « réponses possibles » pour l’option « Choix uniques » !';
 $string['non_respondents'] = 'Inscrits au cours qui n’ont pas encore soumis leurs réponses à ce questionnaire';
 $string['noneinuse'] = 'Ce questionnaire ne contient aucune question.';
+$string['nopermissions'] = 'Désolé, mais vous n\'êtes pas autorisé à consulter cette page ou à effectuer cette action.';
 $string['nopublicsurveys'] = 'Pas de questionnaire public.';
 $string['noresponsedata'] = 'Il n’y a pas de réponse pour cette question.';
 $string['noresponses'] = 'Pas de réponse';
@@ -335,7 +344,7 @@ $string['notemplatesurveys'] = 'Pas de modèle de questionnaire.';
 $string['notenoughscaleitems'] = 'Vous devez entrer au minimum 2 items sur cette échelle.';
 $string['notificationfull'] = 'Soumission complète';
 $string['notifications'] = 'Envoyer les notifications de remises';
-$string['notifications_help'] = 'Notifier les rôles ayant la capacité « mod/questionnaire:submissionnotification » lorsqu’un envoi est faite.';
+$string['notifications_help'] = 'Notifier les rôles ayant la capacité « mod/questionnaire:submissionnotification » lorsqu’un envoi est fait.';
 $string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notificationsimple'] = 'Notification seulement';
 $string['notopen'] = 'Ce questionnaire ne sera pas disponible avant le {$a}.';
@@ -537,6 +546,8 @@ $string['resume_link'] = 'mod/questionnaire/mod#Save.2FResume_answers';
 $string['resumesurvey'] = 'Poursuivre le questionnaire';
 $string['return'] = 'Retour';
 $string['rightlabel'] = 'Étiquette de droite';
+$string['rightpart'] = 'et {$a->max} est {$a->rightlabel}';
+$string['rightpartdefault'] = 'et {$a->max} est la plage maximale du curseur';
 $string['save'] = 'Sauvegarder';
 $string['save_and_exit'] = 'Sauvegarder et quitter';
 $string['saveasnew'] = 'Enregistrer comme nouvelle question';
@@ -617,6 +628,7 @@ $string['total'] = 'Total';
 $string['totalofnumbers'] = 'Total des nombres saisis';
 $string['totalresponses'] = 'Total des réponses à la question';
 $string['type'] = 'Type de question';
+$string['unanswered'] = 'Sans réponse';
 $string['undefinedquestiontype'] = 'Type de question inconnu !';
 $string['unknown'] = 'Inconnu';
 $string['unknownaction'] = 'Action inconnue…';
@@ -636,6 +648,7 @@ $string['viewindividualresponse_help'] = 'Cliquez sur les noms des répondants d
 $string['viewresponses'] = 'Toutes les réponses ({$a})';
 $string['viewyourresponses'] = 'Voir votre(vos) réponse(s)';
 $string['warning'] = 'ATTENTION ! Erreur rencontrée.';
+$string['where'] = 'où';
 $string['wronganswers'] = 'Il y a une erreur dans vos réponses (voir ci-dessous)';
 $string['wrongdateformat'] = 'Le format de la date entrée <strong>{$a}</strong> ne correspond pas au format montré dans l’exemple.';
 $string['wrongdaterange'] = 'ERREUR ! L’année doit se situer entre 1902 et 2037.';

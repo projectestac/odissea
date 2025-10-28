@@ -63,6 +63,7 @@ $string['invalidquestionid'] = 'No s\'ha trobat la pregunta puntuable amb l\'ID 
 $string['noquestionsfound'] = 'No s\'han trobat preguntes qualificades manualment';
 $string['nothingfound'] = 'No hi ha res a mostrar';
 $string['options'] = 'Opcions';
+$string['orderattemptsby'] = 'Ordena els intents per';
 $string['pluginname'] = 'Qualificació manual';
 $string['qno'] = 'P #';
 $string['questionname'] = 'Nom de la pregunta';

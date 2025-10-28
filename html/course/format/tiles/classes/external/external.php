@@ -641,10 +641,7 @@ class external extends external_api {
         if ($completionenabled) {
             foreach ($sections as $section) {
                 if (isset($modinfo->sections[$section['sectionnum']])) {
-                    $completionthistile = $templateable->section_progress(
-                        $modinfo->sections[$section['sectionnum']],
-                        $modinfo->cms
-                    );
+                    $completionthistile = $templateable->section_progress($section['sectionnum']);
                 } else {
                     $completionthistile = ['completed' => 0, 'outof' => 0];
                 }

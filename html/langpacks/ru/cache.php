@@ -88,6 +88,7 @@ $string['cachedef_postprocessedcss'] = 'Сообщение, обработанн
 $string['cachedef_presignup'] = 'Данные предварительной регистрации для конкретного незарегистрированного пользователя';
 $string['cachedef_questiondata'] = 'Данные банка вопросов';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Рекомендации по содержанию курса';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Разрешены отчеты пользователя в зависимости от аудитории';
 $string['cachedef_repositories'] = 'Данные отдельных экземпляров хранилищ файлов';
 $string['cachedef_roledefs'] = 'Определения ролей';
 $string['cachedef_string'] = 'Строки языкового пакета';

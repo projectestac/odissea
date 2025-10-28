@@ -32,7 +32,7 @@ define(["jquery", "core/notification", "core/str", "core/templates"],
     function ($, Notification, str, Templates) {
         "use strict";
         return {
-            init: function (pageType, courseDefaultIcon, courseId, allowphototiles, documentationUrl) {
+            init: function (pageType, courseDefaultIcon, courseId, allowphototiles, activitydocsurl) {
                 $(document).ready(function () {
                     const useSubTilesCheckBox = $("input#id_courseusesubtiles");
                     const useSubTilesSecZeroCheckBox = $("input#id_usesubtilesseczero");
@@ -64,12 +64,13 @@ define(["jquery", "core/notification", "core/str", "core/templates"],
                                 enableCompBox.val("1");
                                 str.get_strings([
                                     {key: "completion", component: "completion"},
-                                    {key: "completionswitchhelp", component: "format_tiles"}
+                                    {
+                                        key: "completionswitchhelp",
+                                        component: "format_tiles",
+                                        param: `<a href="${activitydocsurl}" target="_blank">${activitydocsurl}</a>`
+                                    }
                                 ]).done(function (s) {
-                                    Notification.alert(
-                                        s[0],
-                                        s[1]
-                                    );
+                                    Notification.alert(s[0], s[1]);
                                 });
                             }
                         }
@@ -154,14 +155,14 @@ define(["jquery", "core/notification", "core/str", "core/templates"],
                             // We can hide the original select box now as users will use the button instead.
                             selectBox.hide();
                             require(["format_tiles/edit_icon_picker"], function(iconPicker) {
-                                iconPicker.init(courseId, pageType, false, documentationUrl);
+                                iconPicker.init(courseId, pageType, false);
                             });
                         });
                     }
 
-                    // Add a row to the page with link to plugin documentation.
+                    // Add a row to the page with link to plugin developer string.
                     Templates
-                        .render("format_tiles/edit_form_helptext", {documentationurl: documentationUrl + 'teachers'})
+                        .render("format_tiles/edit_form_helptext")
                         .done(function (html) {
                             $(html).appendTo($("#id_courseformathdr .fcontainer"));
                         });

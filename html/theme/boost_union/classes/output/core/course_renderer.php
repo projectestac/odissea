@@ -50,10 +50,12 @@ class course_renderer extends \core_course_renderer {
         if ($detailsmodalchecked == null) {
             $courselistingpresentation = get_config('theme_boost_union', 'courselistingpresentation');
             $courselistinghowpopup = get_config('theme_boost_union', 'courselistinghowpopup');
-            if (isset($courselistingpresentation) &&
+            if (
+                isset($courselistingpresentation) &&
                     $courselistingpresentation != THEME_BOOST_UNION_SETTING_COURSELISTPRES_NOCHANGE &&
                     isset($courselistinghowpopup) &&
-                    $courselistinghowpopup == THEME_BOOST_UNION_SETTING_SELECT_YES) {
+                    $courselistinghowpopup == THEME_BOOST_UNION_SETTING_SELECT_YES
+            ) {
                 $page->requires->js_call_amd('theme_boost_union/courselistingdetailsmodal', 'init');
             }
             $detailsmodalchecked = true;
@@ -87,9 +89,11 @@ class course_renderer extends \core_course_renderer {
     protected function coursecat_courses(coursecat_helper $chelper, $courses, $totalcount = null) {
         // If the course listing should remain unchanged.
         $courselistingpresentation = get_config('theme_boost_union', 'courselistingpresentation');
-        if (!isset($courselistingpresentation) ||
+        if (
+            !isset($courselistingpresentation) ||
                 $courselistingpresentation == THEME_BOOST_UNION_SETTING_COURSELISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to present the default view.
             return parent::coursecat_courses($chelper, $courses, $totalcount);
         }
@@ -117,11 +121,17 @@ class course_renderer extends \core_course_renderer {
                 // The option paginationurl was specified, display pagingbar.
                 $perpage = $chelper->get_courses_display_option('limit', $CFG->coursesperpage);
                 $page = $chelper->get_courses_display_option('offset') / $perpage;
-                $pagingbar = $this->paging_bar($totalcount, $page, $perpage,
-                    $paginationurl->out(false, ['perpage' => $perpage]));
+                $pagingbar = $this->paging_bar(
+                    $totalcount,
+                    $page,
+                    $perpage,
+                    $paginationurl->out(false, ['perpage' => $perpage])
+                );
                 if ($paginationallowall) {
-                    $pagingbar .= html_writer::tag('div', html_writer::link($paginationurl->out(false, ['perpage' => 'all']),
-                        get_string('showall', '', $totalcount)), ['class' => 'paging paging-showall']);
+                    $pagingbar .= html_writer::tag('div', html_writer::link(
+                        $paginationurl->out(false, ['perpage' => 'all']),
+                        get_string('showall', '', $totalcount)
+                    ), ['class' => 'paging paging-showall']);
                 }
             } else if ($viewmoreurl = $chelper->get_courses_display_option('viewmoreurl')) {
                 // The option for 'View more' link was specified, display more link.
@@ -134,9 +144,14 @@ class course_renderer extends \core_course_renderer {
             }
         } else if (($totalcount > $CFG->coursesperpage) && $paginationurl && $paginationallowall) {
             // There are more than one page of results and we are in 'view all' mode, suggest to go back to paginated view mode.
-            $pagingbar = html_writer::tag('div',
-                html_writer::link($paginationurl->out(false, ['perpage' => $CFG->coursesperpage]),
-                    get_string('showperpage', '', $CFG->coursesperpage)), ['class' => 'paging paging-showperpage']);
+            $pagingbar = html_writer::tag(
+                'div',
+                html_writer::link(
+                    $paginationurl->out(false, ['perpage' => $CFG->coursesperpage]),
+                    get_string('showperpage', '', $CFG->coursesperpage)
+                ),
+                ['class' => 'paging paging-showperpage']
+            );
         }
 
         // Display list of courses.
@@ -149,8 +164,10 @@ class course_renderer extends \core_course_renderer {
 
         // Check if we should show the category sticky headers.
         $categorylistingpresentation = get_config('theme_boost_union', 'categorylistingpresentation');
-        if (isset($categorylistingpresentation) && $categorylistingpresentation == THEME_BOOST_UNION_SETTING_CATLISTPRES_BOXLIST &&
-                $chelper->get_show_courses() <= self::COURSECAT_SHOW_COURSES_COLLAPSED) {
+        if (
+            isset($categorylistingpresentation) && $categorylistingpresentation == THEME_BOOST_UNION_SETTING_CATLISTPRES_BOXLIST &&
+                $chelper->get_show_courses() <= self::COURSECAT_SHOW_COURSES_COLLAPSED
+        ) {
             $showstickyheaders = true;
         } else {
             $showstickyheaders = false;
@@ -162,8 +179,9 @@ class course_renderer extends \core_course_renderer {
             // And add the theme_boost_union-courselisting-wrapper and theme_boost_union-courselisting
             // classes to be used in the CSS.
             $content .= html_writer::start_tag('div', ['class' => 'theme_boost_union-courselisting-wrapper']);
-            $content .= html_writer::start_tag('div',
-                    [
+            $content .= html_writer::start_tag(
+                'div',
+                [
                         'class' => 'row no-gutters theme_boost_union-courselisting theme_boost_union-courselisting-card',
                         'role' => 'list',
                     ]
@@ -198,12 +216,17 @@ class course_renderer extends \core_course_renderer {
 
                     // Show the category heading as sticky header, if necessary.
                     if ($showstickyheaders == true) {
-                        $content .= html_writer::start_tag('div',
-                                ['class' =>
-                                        'theme_boost_union-stickycategory bg-white rounded-bottom mb-3 pt-3 mx-1 px-0 sticky-top']);
+                        $content .= html_writer::start_tag(
+                            'div',
+                            ['class' =>
+                            'theme_boost_union-stickycategory bg-white rounded-bottom mb-3 pt-3 mx-1 px-0 sticky-top']
+                        );
                         $content .= html_writer::start_tag('div', ['class' => 'border rounded px-3 pt-3 pb-2 bg-light']);
-                        $content .= html_writer::tag('h6', format_string($cat->name, true,
-                            ['context' => \context_course::instance($course->id)]));
+                        $content .= html_writer::tag('h6', format_string(
+                            $cat->name,
+                            true,
+                            ['context' => \context_course::instance($course->id)]
+                        ));
                         $content .= html_writer::end_div();
                         $content .= html_writer::end_div();
                     }
@@ -212,11 +235,12 @@ class course_renderer extends \core_course_renderer {
                     // Use the same wrapper classes as in /course/templates/coursecards.mustache.
                     // Set the row-cols-lg class depending on the coursecardscolumncount setting.
                     if ($showstickyheaders == true || $cardgridstarted == false) {
-                        $content .= html_writer::start_tag('div',
-                                ['class' =>
-                                        'card-grid row no-gutters row-cols-1 row-cols-sm-'.$maxcolssm.' row-cols-lg-'.$maxcolslg,
-                                  'role' => 'list',
-                                ]
+                        $content .= html_writer::start_tag(
+                            'div',
+                            ['class' =>
+                                'card-grid row no-gutters row-cols-1 row-cols-sm-' . $maxcolssm . ' row-cols-lg-' . $maxcolslg,
+                                'role' => 'list',
+                            ]
                         );
                         $cardgridstarted = true;
                     }
@@ -245,8 +269,9 @@ class course_renderer extends \core_course_renderer {
             // And add the theme_boost_union-courselisting-wrapper and theme_boost_union-courselisting
             // classes to be used in the CSS.
             $content .= html_writer::start_tag('div', ['class' => 'theme_boost_union-courselisting-wrapper']);
-            $content .= html_writer::start_tag('div',
-                    [
+            $content .= html_writer::start_tag(
+                'div',
+                [
                         'class' => 'theme_boost_union-courselisting theme_boost_union-courselisting-list',
                         'role' => 'list',
                     ]
@@ -275,12 +300,17 @@ class course_renderer extends \core_course_renderer {
                         // Start the category list.
                         $content .= html_writer::start_div('row no-gutters categorylist');
 
-                        $content .= html_writer::start_tag('div',
-                                ['class' =>
-                                        'theme_boost_union-stickycategory col-12 bg-white rounded-bottom mb-3 pt-3 sticky-top']);
+                        $content .= html_writer::start_tag(
+                            'div',
+                            ['class' =>
+                            'theme_boost_union-stickycategory col-12 bg-white rounded-bottom mb-3 pt-3 sticky-top']
+                        );
                         $content .= html_writer::start_tag('div', ['class' => 'border rounded px-3 pt-3 pb-2 bg-light']);
-                        $content .= html_writer::tag('h6', format_string($cat->name, true,
-                            ['context' => \context_course::instance($course->id)]));
+                        $content .= html_writer::tag('h6', format_string(
+                            $cat->name,
+                            true,
+                            ['context' => \context_course::instance($course->id)]
+                        ));
                         $content .= html_writer::end_div();
                         $content .= html_writer::end_div();
                     }
@@ -332,9 +362,11 @@ class course_renderer extends \core_course_renderer {
     protected function coursecat_coursebox(coursecat_helper $chelper, $course, $additionalclasses = '') {
         // If the course listing should remain unchanged.
         $courselistingpresentation = get_config('theme_boost_union', 'courselistingpresentation');
-        if (!isset($courselistingpresentation) ||
+        if (
+            !isset($courselistingpresentation) ||
                 $courselistingpresentation == THEME_BOOST_UNION_SETTING_COURSELISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to present the default view.
             return parent::coursecat_coursebox($chelper, $course, $additionalclasses);
         }
@@ -371,9 +403,11 @@ class course_renderer extends \core_course_renderer {
     protected function coursecat_coursebox_content(coursecat_helper $chelper, $course) {
         // If the course listing should remain unchanged.
         $courselistingpresentation = get_config('theme_boost_union', 'courselistingpresentation');
-        if (!isset($courselistingpresentation) ||
+        if (
+            !isset($courselistingpresentation) ||
                 $courselistingpresentation == THEME_BOOST_UNION_SETTING_COURSELISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to compose the default view.
             return parent::coursecat_coursebox_content($chelper, $course);
         }
@@ -434,7 +468,7 @@ class course_renderer extends \core_course_renderer {
             }
 
             // Enable course fields, if configured.
-            if (get_config('theme_boost_union', 'courselistinghowfields') == THEME_BOOST_UNION_SETTING_SELECT_YES) {
+            if (get_config('theme_boost_union', 'courselistingshowfields') == THEME_BOOST_UNION_SETTING_SELECT_YES) {
                 $skeleton['showcoursefields'] = true;
             } else {
                 $skeleton['showcoursefields'] = false;
@@ -479,7 +513,7 @@ class course_renderer extends \core_course_renderer {
         $templatedata['id'] = $course->id;
         $templatedata['visible'] = $course->visible;
         $templatedata['fullname'] = $chelper->get_course_formatted_name($course);
-        $templatedata['viewurl'] = new moodle_url('/course/view.php', ['id' => $course->id]);
+        $templatedata['viewurl'] = new \core\url('/course/view.php', ['id' => $course->id]);
 
         // Amend course image, if enabled.
         if ($templatedata['showcourseimage']) {
@@ -527,6 +561,16 @@ class course_renderer extends \core_course_renderer {
             $courseprogress = $courseutil->get_progress();
             $templatedata['progress'] = (int) $courseprogress;
             $templatedata['hasprogress'] = ($courseprogress !== null);
+
+            // If progress should be shown as progress bar.
+            $courseprogressstyle = get_config('theme_boost_union', 'courselistingprogressstyle');
+            if ($courseprogressstyle == THEME_BOOST_UNION_SETTING_COURSEPROGRESSSTYLE_BAR) {
+                $templatedata['progressstyleasbar'] = true;
+
+                // Otherwise.
+            } else {
+                $templatedata['progressstyleasbar'] = false;
+            }
         }
 
         // Enable detailsbar, if necessary.
@@ -591,9 +635,11 @@ class course_renderer extends \core_course_renderer {
     protected function coursecat_category(coursecat_helper $chelper, $coursecat, $depth) {
         // If the category listing should remain unchanged.
         $categorylistingpresentation = get_config('theme_boost_union', 'categorylistingpresentation');
-        if (!isset($categorylistingpresentation) ||
+        if (
+            !isset($categorylistingpresentation) ||
                 $categorylistingpresentation == THEME_BOOST_UNION_SETTING_CATLISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to compose the default view.
             return parent::coursecat_category($chelper, $coursecat, $depth);
         }
@@ -645,7 +691,7 @@ class course_renderer extends \core_course_renderer {
         if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_COUNT
                 && ($coursescount = $coursecat->get_courses_count())) {
             $categoryname .= html_writer::tag('span', $coursescount,
-                    array('title' => get_string('numberofcourses'), 'class' => 'numberofcourse badge badge-pill badge-secondary ml-2'));
+                    array('title' => get_string('numberofcourses'), 'class' => 'numberofcourse badge badge-pill badge-secondary ms-2'));
         }
         $content .= html_writer::start_tag('div', array('class' => 'info'));
 
@@ -676,9 +722,11 @@ class course_renderer extends \core_course_renderer {
     protected function coursecat_tree(coursecat_helper $chelper, $coursecat) {
         // If the category listing should remain unchanged.
         $categorylistingpresentation = get_config('theme_boost_union', 'categorylistingpresentation');
-        if (!isset($categorylistingpresentation) ||
+        if (
+            !isset($categorylistingpresentation) ||
                 $categorylistingpresentation == THEME_BOOST_UNION_SETTING_CATLISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to compose the default view.
             return parent::coursecat_tree($chelper, $coursecat);
         }
@@ -751,9 +799,11 @@ class course_renderer extends \core_course_renderer {
 
         // If the category listing should remain unchanged.
         $categorylistingpresentation = get_config('theme_boost_union', 'categorylistingpresentation');
-        if (!isset($categorylistingpresentation) ||
+        if (
+            !isset($categorylistingpresentation) ||
                 $categorylistingpresentation == THEME_BOOST_UNION_SETTING_CATLISTPRES_NOCHANGE ||
-                $this->page_has_boostunion_modification() == false) {
+                $this->page_has_boostunion_modification() == false
+        ) {
             // Call the parent function to compose the default view.
             return parent::course_category($category);
         }
@@ -850,7 +900,7 @@ class course_renderer extends \core_course_renderer {
         // It is slightly fragile as we rely just on the URL of the script and do not know if it will be called
         // by some other code which must not be modified in the future.
         // But it should hopyfully be ok for now.
-        if ($this->page->url->compare(new moodle_url('/course/category.ajax.php'), URL_MATCH_BASE)) {
+        if ($this->page->url->compare(new \core\url('/course/category.ajax.php'), URL_MATCH_BASE)) {
             // Allow modification.
             return true;
         }
@@ -871,7 +921,7 @@ class course_renderer extends \core_course_renderer {
         // Iterate over these pages.
         foreach ($pageswithboostunionmodification as $page) {
             // Check if user is on one of the other allowed pages.
-            if ($this->page->url->compare(new moodle_url($page), URL_MATCH_BASE)) {
+            if ($this->page->url->compare(new \core\url($page), URL_MATCH_BASE)) {
                 // Allow modification.
                 return true;
             }

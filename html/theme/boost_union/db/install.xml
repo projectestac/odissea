@@ -86,6 +86,8 @@
         <FIELD NAME="daterange" TYPE="char" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="customfields" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="listsort" TYPE="int" LENGTH="9" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="displayhiddencourses" TYPE="int" LENGTH="9" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="hiddencoursesort" TYPE="int" LENGTH="9" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="displayfield" TYPE="int" LENGTH="9" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="textcount" TYPE="int" LENGTH="9" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="mode" TYPE="int" LENGTH="9" NOTNULL="true" SEQUENCE="false"/>
@@ -111,6 +113,18 @@
         <FIELD NAME="visible" TYPE="int" LENGTH="9" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="18" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="byadmin" TYPE="int" LENGTH="9" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="theme_boost_union_snippets" COMMENT="CSS Snippets">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="source" TYPE="char" LENGTH="255" NOTNULL="false" DEFAULT="theme_boost_union" SEQUENCE="false"/>
+        <FIELD NAME="enabled" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="sortorder" TYPE="int" LENGTH="18" NOTNULL="false" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>

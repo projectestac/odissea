@@ -49,6 +49,7 @@ $string['categoryupdated'] = 'S\'ha actualitzat la categoria';
 $string['close'] = 'Tanca';
 $string['compliant'] = 'Compatible';
 $string['contactdataprotectionofficer'] = 'Contacta amb el delegat de privacitat';
+$string['contactdataprotectionofficer_desc'] = 'Si està activat, els usuaris poden contactar amb el responsable de privadesa i fer una sol·licitud de dades a través d\'un enllaç a la seva pàgina del perfil.';
 $string['contextlevelname10'] = 'Lloc';
 $string['contextlevelname30'] = 'Usuaris';
 $string['contextlevelname40'] = 'Categories de curs';
@@ -94,6 +95,9 @@ $string['gdpr_art_9_2_j_name'] = 'Interès públic o recerca científica/històr
 $string['lawfulbases_help'] = 'Escolliu com a mínim una opció que servirà de base legal per processar dades personals. Per a més detalls sobre aquestes bases legals, llegiu <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">l\'article 6.1 de la GDPR</a>';
 $string['message'] = 'Missatge';
 $string['messagelabel'] = 'Missatge:';
+$string['messageprovider:contactdataprotectionofficer'] = 'Sol·licituds de dades';
+$string['messageprovider:datarequestprocessingresults'] = 'Resultats del processament de sol·licituds de dades';
+$string['messageprovider:notifyexceptions'] = 'Notificacions d\'excepcions de sol·licituds de dades';
 $string['newrequest'] = 'Sol·licitud nova';
 $string['noactivitiestoload'] = 'Sense activitats';
 $string['noexpiredcontexts'] = 'Aquest nivell de context no té dades amb el període de retenció expirat.';

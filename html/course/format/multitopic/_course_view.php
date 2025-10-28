@@ -31,7 +31,6 @@
     require_once($CFG->libdir . '/completionlib.php');
 
 if (true) {                                                                     // ADDED: To pass indentation style check.
-
     $id = optional_param('id', 0, PARAM_INT);
     $name = optional_param('name', '', PARAM_TEXT);
     $edit = optional_param('edit', -1, PARAM_BOOL);
@@ -127,8 +126,10 @@ if (true) {                                                                     
 
     // Switchrole - sanity check in cost-order...
     $resetuserallowedediting = false;
-    if ($switchrole > 0 && confirm_sesskey() &&
-        has_capability('moodle/role:switchroles', $context)) {
+    if (
+        $switchrole > 0 && confirm_sesskey() &&
+        has_capability('moodle/role:switchroles', $context)
+    ) {
         // Is this role assignable in this context?
         // Inquiring minds want to know...
         $aroles = get_switchable_roles($context);
@@ -256,10 +257,12 @@ if (true) {                                                                     
             // END CHANGED.
         }
 
-        if (!empty($section) && !empty($dest) &&
-                has_capability('moodle/course:movesections', $context) &&
-                (has_capability('moodle/course:update', $context) || !isset($dest->level)) &&
-                confirm_sesskey()) {                                            // CHANGED: Use $dest, check capability for level.
+        if (
+            !empty($section) && !empty($dest) &&
+            has_capability('moodle/course:movesections', $context) &&
+            (has_capability('moodle/course:update', $context) || !isset($dest->level)) &&
+            confirm_sesskey()
+        ) {                                                                     // CHANGED: Use $dest, check capability for level.
                                                                                 // TODO: Is this the correct capability?
             $destsection = $dest;                                               // CHANGED: Use section info with ID instead of num.
             try {                                                               // CHANGED: Use try/catch instead of return false.
@@ -300,8 +303,13 @@ if (true) {                                                                     
     if ($section && $section->section > 0 && course_format_uses_sections($course->format)) { // CHANGED: Dereference section num.
         $sectionname = get_string('sectionname', "format_$course->format");
         $sectiontitle = get_section_name($course, $section);
-        $PAGE->set_title(get_string('coursesectiontitle', 'moodle',
-            ['course' => $course->fullname, 'sectiontitle' => $sectiontitle, 'sectionname' => $sectionname]));
+        $PAGE->set_title(
+            get_string(
+                'coursesectiontitle',
+                'moodle',
+                ['course' => $course->fullname, 'sectiontitle' => $sectiontitle, 'sectionname' => $sectionname]
+            )
+        );
     } else {
         $PAGE->set_title(get_string('coursetitle', 'moodle', ['course' => $course->fullname]));
     }
@@ -310,7 +318,6 @@ if (true) {                                                                     
     echo $OUTPUT->header();
 
     if ($USER->editing == 1) {
-
         // MDL-65321 The backup libraries are quite heavy, only require the bare minimum.
         require_once($CFG->dirroot . '/backup/util/helper/async_helper.class.php');
 
@@ -365,5 +372,4 @@ if (true) {                                                                     
     }
 
     echo $OUTPUT->footer();
-
 }

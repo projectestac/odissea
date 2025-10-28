@@ -65,6 +65,7 @@ $addons = [
             ['incorrectpasswordshort', 'attendance'],
             ['attendancesuccess', 'attendance'],
             ['setallstatuses', 'attendance'],
+            ['nousers', 'attendance'],
         ],
     ],
 ];

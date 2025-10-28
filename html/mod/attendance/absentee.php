@@ -89,8 +89,10 @@ $extrafields = [];
 if (!empty($CFG->showuseridentity) && has_capability('moodle/site:viewuseridentity', $context)) {
     $extrafields = explode(',', $CFG->showuseridentity);
     foreach ($extrafields as $field) {
-        $columns[] = $field;
-        $headers[] = get_string($field);
+        if (strpos($field, 'profile_field') !== 0) {
+            $columns[] = $field;
+            $headers[] = get_string($field);
+        }
     }
 }
 $columns = array_merge($columns, ['numtakensessions', 'percent', 'timesent']);

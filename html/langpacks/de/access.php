@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['access'] = 'Barrierefreiheit';
 $string['accesshelp'] = 'Hilfe zur Barrierefreiheit';
 $string['accesskey'] = 'Zugriffsschlüssel, {$a}';
-$string['accessstatement'] = 'Aussagen zur Barrierefreiheit';
+$string['accessstatement'] = 'Erklärung zur Barrierefreiheit';
 $string['activitynext'] = 'Nächste Aktivität';
 $string['activityprev'] = 'Vorherige Aktivität';
 $string['breadcrumb'] = 'Navigationsleiste';

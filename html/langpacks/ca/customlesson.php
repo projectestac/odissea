@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attempts'] = 'Intents';
 $string['attemptsdeleted'] = 'Intents eliminats';
+$string['averagetime'] = 'Mitjana de temps';
 $string['completed'] = 'Completat';
 $string['completederror'] = 'Completa la lliçó';
 $string['completethefollowingconditions'] = 'Heu de completar la següent condició en la lliçó <b>{$a}</b> abans de poder continuar.';

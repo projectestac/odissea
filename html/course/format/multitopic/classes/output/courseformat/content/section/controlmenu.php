@@ -39,7 +39,6 @@ use core_courseformat\output\local\content\section\controlmenu as controlmenu_ba
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class controlmenu extends controlmenu_base {
-
     /** @var \format_multitopic\section_info_extra Multitopic-specific section information */
     protected $fmtsectionextra;
 
@@ -79,10 +78,11 @@ class controlmenu extends controlmenu_base {
         $parentcontrols = parent::section_control_items();
 
         $movecontrols = [];
-        if ($section->section
-                && has_capability('moodle/course:movesections', $coursecontext, $user)
-                && has_capability('moodle/course:sectionvisibility', $coursecontext, $user)) {
-
+        if (
+            $section->section
+            && has_capability('moodle/course:movesections', $coursecontext, $user)
+            && has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
+        ) {
             // INCLUDED funct section_control_items if (!$sectionreturn) .
             if ($onsectionpage) {                                               // CHANGED.
                 if (has_capability('moodle/course:update', $coursecontext, $user)) {
@@ -100,7 +100,7 @@ class controlmenu extends controlmenu_base {
                             'icon' => 'i/up',
                             'name' => $strmovelevelup,
                             'pixattr' => ['class' => ''],
-                            'attr' => ['class' => 'icon fmtmovelevelup'],       // CHANGED.
+                            'attr' => ['class' => 'icon fmtmovelevelup'], // CHANGED.
                         ];
                     }
 
@@ -118,7 +118,7 @@ class controlmenu extends controlmenu_base {
                             'icon' => 'i/down',
                             'name' => $strmoveleveldown,
                             'pixattr' => ['class' => ''],
-                            'attr' => ['class' => 'icon fmtmoveleveldown'],     // CHANGED.
+                            'attr' => ['class' => 'icon fmtmoveleveldown'], // CHANGED.
                         ];
                     }
                 }
@@ -157,9 +157,7 @@ class controlmenu extends controlmenu_base {
                     ];
                 }
                 // END CHANGED.
-
             } else { // END INCLUDED.
-
                 // Move sections left and right.
 
                 $url = clone($baseurl);
@@ -215,8 +213,10 @@ class controlmenu extends controlmenu_base {
                 }
 
                 $url = clone($baseurl);
-                if ($sectionextra->prevupid != $sectionextra->parentid
-                        && !array_key_exists('moveup', $parentcontrols)) { // Add a arrow to move section up.
+                if (
+                    $sectionextra->prevupid != $sectionextra->parentid
+                    && !array_key_exists('moveup', $parentcontrols)
+                ) { // Add a arrow to move section up.
                     $url->param('sectionid', $section->id);
                     $url->param('destnextupid', $sectionextra->prevupid);
                     $strmoveup = get_string('moveup');
@@ -230,8 +230,10 @@ class controlmenu extends controlmenu_base {
                 }
 
                 $url = clone($baseurl);
-                if ($sectionextra->nextupid != $sectionextra->nextpageid
-                        && !array_key_exists('movedown', $parentcontrols)) { // Add a arrow to move section down.
+                if (
+                    $sectionextra->nextupid != $sectionextra->nextpageid
+                    && !array_key_exists('movedown', $parentcontrols)
+                ) { // Add a arrow to move section down.
                     $url->param('sectionid', $section->id);
                     $url->param('destprevupid', $sectionextra->nextupid);
                     $strmovedown = get_string('movedown');
@@ -243,9 +245,7 @@ class controlmenu extends controlmenu_base {
                         'attr' => ['class' => 'icon movedown whilenostate'],
                     ];
                 }
-
             }
-
         }
         $addedmovecontrols = false;
 
@@ -270,8 +270,10 @@ class controlmenu extends controlmenu_base {
         }
 
         if (array_key_exists('edit', $merged)) {
-            $url = new \moodle_url('/course/format/multitopic/_course_editsection.php',
-                    ['id' => $section->id]);                                    // CHANGED.
+            $url = new \moodle_url(
+                '/course/format/multitopic/_course_editsection.php',
+                ['id' => $section->id]
+            );                                                                  // CHANGED.
             if (is_object($merged['edit'])) {
                 $merged['edit']->url = $url;
             } else {
@@ -305,7 +307,7 @@ class controlmenu extends controlmenu_base {
                                     get_string('showfromothers', 'format_' . $course->format)
                                     : get_string('show');                       // CHANGED.
             if ($section->visible) { // Show the hide/show eye.
-                $url->param('hideid',  $section->id);                           // CHANGED.
+                $url->param('hideid', $section->id);                            // CHANGED.
                 if (is_object($merged[$linkname])) {
                     $merged[$linkname]->url = $url;
                     $merged[$linkname]->text = $strhidefromothers;
@@ -326,7 +328,7 @@ class controlmenu extends controlmenu_base {
             } else if (!$sectionextra->parentvisiblesan) {
                 unset($merged[$linkname]);
             } else {
-                $url->param('showid',  $section->id);                           // CHANGED.
+                $url->param('showid', $section->id);                            // CHANGED.
                 if (is_object($merged[$linkname])) {
                     $merged[$linkname]->url = $url;
                     $merged[$linkname]->text = $strshowfromothers;
@@ -348,17 +350,21 @@ class controlmenu extends controlmenu_base {
         }
 
         if (array_key_exists('movesection', $merged)) {
-            if (!has_capability('moodle/course:movesections', $coursecontext, $user)
-                    || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
-                    || $onsectionpage || !$usecomponents || $CFG->version < 2023042400) {
+            if (
+                !has_capability('moodle/course:movesections', $coursecontext, $user)
+                || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
+                || $onsectionpage || !$usecomponents || $CFG->version < 2023042400
+            ) {
                 unset($merged['movesection']);
             }
         }
 
         if (array_key_exists('moveup', $merged)) {
-            if (!has_capability('moodle/course:movesections', $coursecontext, $user)
-                    || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
-                    || $onsectionpage || $sectionextra->prevupid == $sectionextra->parentid) {
+            if (
+                !has_capability('moodle/course:movesections', $coursecontext, $user)
+                || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
+                || $onsectionpage || $sectionextra->prevupid == $sectionextra->parentid
+            ) {
                 unset($merged['moveup']);
             } else {
                 $url = clone($baseurl);
@@ -373,9 +379,11 @@ class controlmenu extends controlmenu_base {
         }
 
         if (array_key_exists('movedown', $merged)) {
-            if (!has_capability('moodle/course:movesections', $coursecontext, $user)
-                    || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
-                    || $onsectionpage || $sectionextra->nextupid == $sectionextra->nextpageid) {
+            if (
+                !has_capability('moodle/course:movesections', $coursecontext, $user)
+                || !has_capability('moodle/course:sectionvisibility', $coursecontext, $user)
+                || $onsectionpage || $sectionextra->nextupid == $sectionextra->nextpageid
+            ) {
                 unset($merged['movedown']);
             } else {
                 $url = clone($baseurl);

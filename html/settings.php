@@ -136,7 +136,8 @@ $CFG->customusermenuitems = 'profile,moodle|/user/profile.php
 messages,message|/message/index.php
 grades,grades|/grade/report/mygrades.php
 badges,badges|/badges/mybadges.php
-calendar,core_calendar|/calendar/view.php?view=month';
+calendar,core_calendar|/calendar/view.php?view=month
+reports,core_reportbuilder|/reportbuilder/index.php';
 
 $CFG->forced_plugin_settings = [
     'block_configurable_reports' => [

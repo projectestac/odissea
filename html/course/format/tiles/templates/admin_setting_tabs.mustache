@@ -20,7 +20,6 @@
 
     Example context (json):
     {
-        "documentationurl": "http://evolutioncode.uk",
         "sesskey": "abcde13455",
         "tabs": [
          {
@@ -40,11 +39,7 @@
         ]
     }
 }}
-<div id="docsbuttons" class="text-right">
-    {{#documentationurl}}
-        <a class="btn btn-primary" href="{{documentationurl}}" target="_blank">{{#str}}documentation, format_tiles{{/str}}</a>
-    {{/documentationurl}}
-</div>
+<div class="text-end">{{#str}}developedby, format_tiles, David Watson{{/str}}</div>
 
 <ul class="nav nav-tabs" role="tablist">
     {{#tabs}}

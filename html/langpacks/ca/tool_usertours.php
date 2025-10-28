@@ -246,7 +246,12 @@ $string['tour_activityinfo_course_teacher_content'] = 'Els paràmetres nous de c
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: informació de l\'activitat';
 $string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour_final_step_title'] = 'Final de la visita guiada';
-$string['tour_gradebook_filter_title'] = 'Filtra per nom';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordeneu les columnes i trieu quines es mostraran. Al mode d’edició, utilitzeu aquesta drecera per accedir a tasques freqüents relacionades amb la visualització i l’edició dels elements de qualificació.';
+$string['tour_gradebook_action_title'] = 'Enllaços ràpids a accions';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtreu els estudiants per les inicials del nom o el cognom.';
+$string['tour_gradebook_filter_title'] = 'Filtreu per nom';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Utilitzeu el quadre de cerca per trobar estudiants determinats ràpidament';
+$string['tour_gradebook_search_title'] = 'Cerqueu estudiants de manera fàcil';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Envia notícies importants aquí.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Hi ha res que vulgueu contar a tothom?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Afegeix contingut nou o edita\'n l\'existent.';

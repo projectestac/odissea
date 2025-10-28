@@ -262,51 +262,48 @@ class format_tiles extends core_courseformat\base {
         return ['sectiontitles' => $titles, 'action' => 'move'];
     }
 
+    // We no longer (since Moodle 4.5) override get_view_url() here.
+    // MDL-79986 introduced new /course/section.php page whereas tiles had used course/view.php?section=xx.
+    // We used to avoid the new URL in breadcrumb if using JS nav (e.g. on activity page breadcrumb when viewing Quiz).
+    // However now we use it.
+
     /**
-     * The URL to use for the specified course (with section)
+     * Course-specific information to be output on any course page (usually above navigation bar)
      *
-     * Please note that course view page /course/view.php?id=COURSEID is hardcoded in many
-     * places in core and contributed modules. If course format wants to change the location
-     * of the view script, it is not enough to change just this function. Do not forget
-     * to add proper redirection.
+     * Example of usage:
+     * define
+     * class format_FORMATNAME_XXX implements renderable {}
      *
-     * @param int|stdClass $section Section object from database or just field course_sections.section
-     *     if null the course view page is returned
-     * @param array $options options for view URL. At the moment core uses:
-     *     'navigation' (bool) if true and section not empty, the function returns section page; otherwise, it returns course page.
-     *     'sr' (int) used by course formats to specify to which section to return
-     *     'expanded' (bool) if true the section will be shown expanded, true by default
-     * @return null|moodle_url
+     * create format renderer in course/format/FORMATNAME/renderer.php, define rendering function:
+     * class format_FORMATNAME_renderer extends plugin_renderer_base {
+     *     protected function render_format_FORMATNAME_XXX(format_FORMATNAME_XXX $xxx) {
+     *         return html_writer::tag('div', 'This is my header/footer');
+     *     }
+     * }
+     *
+     * Return instance of format_FORMATNAME_XXX in this function, the appropriate method from
+     * plugin renderer will be called
+     *
+     * @return null|\renderable null for no output or object with data for plugin renderer
      */
-    public function get_view_url($section, $options = []) {
+    public function course_header() {
+        // If we are not using JS nav, we call this to inject nav arrows and possibly section zero at top of page.
         global $PAGE;
-        if (array_key_exists('sr', $options)) {
-            $sectionno = $options['sr'];
-        } else if (is_object($section)) {
-            $sectionno = $section->section;
-        } else {
-            $sectionno = $section;
+        $sectionnumber = $this->get_sectionnum();
+        if (!$sectionnumber) {
+            // No output needed in this case.
+            return null;
+        }
+        if (\format_tiles\local\util::using_js_nav()) {
+            // No output needed in this case.
+            return null;
         }
 
-        // MDL-79986 introduced new /course/section.php page.
-        // We want to avoid this in breadcrumb if using JS nav (e.g. on activity page breadcrumb when viewing Quiz).
-        // However if we are already on section page (e.g. editing) we return core URL, otherwise we get no breadcrumb at all.
-        $alreadyonsectionpage = $PAGE->pagelayout == 'course'
-            && in_array($PAGE->pagetype, ['section-view-tiles', 'course-view-section-tiles'])
-            && $PAGE->url->compare(new moodle_url('/course/section.php'), URL_MATCH_BASE);
-        if ($alreadyonsectionpage) {
-            return \core_courseformat\base::get_view_url($section, $options);
-        } else if (\format_tiles\local\util::using_js_nav()) {
-            if ((!empty($options['navigation']) || array_key_exists('sr', $options)) && $sectionno !== null) {
-                // Display section on course view page, not separate section.php page.
-                $sectioninfo = $this->get_section($sectionno);
-                return new moodle_url(
-                    '/course/view.php',
-                    ['id' => $sectioninfo->course, 'section' => $sectioninfo->sectionnum]
-                );
-            }
-        }
-        return \core_courseformat\base::get_view_url($section, $options);
+        $renderer = $PAGE->get_renderer('format_tiles');
+        $format = course_get_format($PAGE->course->id);
+        $course = $format->get_course();
+        // Effect of this is to get data from the below then render using template of same name.
+        return new \format_tiles\output\course_header_content($course, false, 0, $renderer);
     }
 
     /**
@@ -561,7 +558,7 @@ class format_tiles extends core_courseformat\base {
                 'courseDefaultIcon' => $this->get_format_options()['defaulttileicon'],
                 'courseId' => $COURSE->id,
                 get_config('format_tiles', 'allowphototiles'),
-                get_config('format_tiles', 'documentationurl'),
+                'activitydocsurl' => get_docs_url('Activity_completion_settings'),
             ];
             $PAGE->requires->js_call_amd('format_tiles/edit_form_helper', 'init', $jsparams);
         } else {
@@ -893,23 +890,19 @@ class format_tiles extends core_courseformat\base {
         }
         if ($page->state <= $page::STATE_BEFORE_HEADER) {
             // On a single section page in non JS mode, if not using sub-tiles, do not remove core limited page width.
-            if ($page->pagetype == 'course-view') {
-                if ((optional_param('section', 0, PARAM_INT)
-                        || optional_param('singlesec', 0, PARAM_INT))
-                    && !\format_tiles\local\util::using_js_nav()) {
-                    $courseusessubtiles = get_config('format_tiles', 'allowsubtilesview')
-                        && ($page->course->id ?? null)
-                        && $DB->get_field(
-                            'course_format_options', 'value',
-                            ['courseid' => $page->course->id, 'format' => 'tiles', 'sectionid' => 0, 'name' => 'courseusesubtiles']
-                        ) == "1";
-                    if (!$courseusessubtiles) {
-                        $page->add_body_class("format-tiles-single-sec");
-                    }
+            if ($page->pagetype == 'course-section' && !\format_tiles\local\util::using_js_nav()) {
+                $courseusessubtiles = get_config('format_tiles', 'allowsubtilesview')
+                    && ($page->course->id ?? null)
+                    && $DB->get_field(
+                        'course_format_options', 'value',
+                        ['courseid' => $page->course->id, 'format' => 'tiles', 'sectionid' => 0, 'name' => 'courseusesubtiles']
+                    ) == "1";
+                if (!$courseusessubtiles) {
+                    $page->add_body_class("format-tiles-single-sec");
                 }
-                if (\format_tiles\local\util::using_high_contrast()) {
-                    $page->add_body_class("format-tiles-high-contrast");
-                }
+            }
+            if (\format_tiles\local\util::using_high_contrast()) {
+                $page->add_body_class("format-tiles-high-contrast");
             }
         }
     }

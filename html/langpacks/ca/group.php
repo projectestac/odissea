@@ -165,7 +165,7 @@ $string['namingscheme'] = 'Esquema de noms';
 $string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir per crear grups amb noms que contenen lletres. Per exemple, Grup @ generarà grups anomentats Grup A, Grup B, Grup C, ...<br/>
 <br/>
 El símbol del coixinet (#) es pot fer servir per crear grups amb noms que contenen números. Per exemple, Grup # generarà grups anomenats Grup 1, Grup 2, Grup 3, ...';
-$string['newgrouping'] = 'Nou agrupament';
+$string['newgrouping'] = 'Agrupament nou';
 $string['newpicture'] = 'Imatge nova';
 $string['newpicture_help'] = 'Seleccioneu una imatge en format JPG o PNG. La imatge es retallarà com un quadre i es redimensionarà a 100x100 píxels.';
 $string['noallocation'] = 'Sense ubicació';

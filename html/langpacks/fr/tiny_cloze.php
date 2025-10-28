@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cloze:use'] = 'Utiliser l\'éditeur de questions à trous dans TinyMCE';
 $string['cloze:viewplugin'] = 'Aide à l’édition d’une question Cloze';
 $string['customgrade'] = 'Personnalisé';
 $string['err_custom_rate'] = 'Valeur non valide pour le taux personnalisé.';

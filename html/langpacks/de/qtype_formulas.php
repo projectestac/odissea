@@ -65,7 +65,7 @@ $string['caretwarning'] = 'Achtung: In Musterantworten steht ^ für XOR, außer 
 $string['checkvarshdr'] = 'Instanziierung von Variablen prüfen';
 $string['choiceno'] = 'Nein';
 $string['choiceyes'] = 'Ja';
-$string['commonsiunit'] = 'SI-Einheit';
+$string['commonsiunit'] = 'SI-Einheiten';
 $string['correctansweris'] = 'Eine mögliche Antwort ist: {$a}';
 $string['correctfeedback'] = 'Für jede richtige Antwort gilt';
 $string['correctfeedback_help'] = 'Dieses Feedback wird den Schülerinnen und Schülern gezeigt, die in diesem Teil die Höchstpunktzahl erreicht haben. Es kann globale und lokale Variablen enthalten, die durch ihre entsprechenden Werte ersetzt werden.';
@@ -85,6 +85,24 @@ $string['defaultcorrectness'] = 'Standard-Bewertungskriterien';
 $string['defaultcorrectness_desc'] = 'Standard-Bewertungskriterien für neue Teilfragen';
 $string['defaultunitpenalty'] = 'Standardabzug für Einheiten';
 $string['defaultunitpenalty_desc'] = 'Standardabzug für eine falsche Einheit (0-1)';
+$string['defaultwidth_algebraic_formula'] = 'Antworttyp "Algebraische Formel"';
+$string['defaultwidth_algebraic_formula_desc'] = 'Standardbreite für Eingabefelder für den Antworttyp "Algebraische Formel"';
+$string['defaultwidth_number'] = 'Antworttyp "Zahl"';
+$string['defaultwidth_number_desc'] = 'Standardbreite für Eingabefelder für den Antworttyp "Zahl"';
+$string['defaultwidth_number_unit'] = 'Kombiniertes Feld für Zahl und Einheit';
+$string['defaultwidth_number_unit_desc'] = 'Standardbreite für kombinierte Eingabefelder für Zahl und Einheit';
+$string['defaultwidth_numeric'] = 'Antworttyp "Numerisch"';
+$string['defaultwidth_numeric_desc'] = 'Standardbreite für Eingabefelder für den Antworttyp "Numerisch"';
+$string['defaultwidth_numeric_unit'] = 'Kombiniertes Feld für numerische Antwort und Einheit';
+$string['defaultwidth_numeric_unit_desc'] = 'Standardbreite für kombinierte Eingabefelder für numerische Antwort und Einheit';
+$string['defaultwidth_numerical_formula'] = 'Antworttyp "Numerische Formel"';
+$string['defaultwidth_numerical_formula_desc'] = 'Standardbreite für Eingabefelder für den Antworttyp "Numerische Formel"';
+$string['defaultwidth_numerical_formula_unit'] = 'Kombiniertes Feld für numerische Formel und Einheit';
+$string['defaultwidth_numerical_formula_unit_desc'] = 'Standardbreite für kombinierte Eingabefelder für numerische Formel und Einheit';
+$string['defaultwidth_unit'] = 'Separate Einheit';
+$string['defaultwidth_unit_desc'] = 'Standardbreite für separates Eingabefeld für Einheiten';
+$string['defaultwidthunit'] = 'Längeneinheit';
+$string['defaultwidthunit_desc'] = 'Längeneinheit für die unten festzulegenden Breiten. Die Einheiten "em" oder "rem" entsprechend ungefähr der Breite einer Ziffer.';
 $string['error_algebraic_relerr'] = 'Der relative Fehler (_relerr) kann bei Antworten des Typs algebraische Formel nicht verwendet werden.';
 $string['error_algebraic_var'] = 'Syntaxfehler bei der Definition einer algebraischen Variablen.';
 $string['error_algvar_numbers'] = 'Algebraische Variablen können nur mit einer Liste von Zahlen initialisiert werden.';
@@ -334,9 +352,9 @@ $string['questiontext_help'] = 'Neben dem normalen Fragetext können Sie hier au
 
 Globale Variablen werden durch ihre Werte ersetzt und Platzhalter werden durch Antworten ersetzt.
 
-Ein einfaches Beispiel mit Variablen <tt> A, B, C </tt> und Platzhaltern <tt> #1, #2, #3 </tt> ist:
+Ein einfaches Beispiel mit Variablen <tt>A, B, C</tt> und Platzhaltern <tt>#1, #2, #3</tt> ist:
 
-<pre class="prettyprint">What is the result of {A} + {B}?<br>{#1}<br>What is the result of {A} - {B}?<br>{#2}<br>What is the result of {C} / {B}?<br>{#3}</pre>';
+<pre class="prettyprint">Was ist das Resultat von {A} + {B}?<br>{#1}<br>Was ist das Resultat von {A} - {B}?<br>{#2}<br>Was ist das Resultat von {C} / {B}?<br>{#3}</pre>';
 $string['relerror'] = 'Relativer Fehler';
 $string['renew'] = 'Update';
 $string['response_right'] = 'Richtig';
@@ -347,6 +365,13 @@ $string['ruleid'] = 'Grundlegende Umrechnungsregeln';
 $string['ruleid_help'] = 'Dieser Fragetyp verfügt über ein integriertes System zur Umrechnung von Einheiten und über grundlegende Umrechnungsregeln.
 
 Die grundlegenden Regeln sind die "Üblichen SI-Einheiten", die Standardeinheiten umrechnen, wie z. B. die Längeneinheiten km, m, cm und mm. Diese Option hat keine Auswirkung, wenn keine Einheit verwendet wurde.';
+$string['settingallowdecimalcomma'] = 'Komma';
+$string['settingallowdecimalcomma_desc'] = 'Antworten mit Komma als Dezimaltrennzeichen erlauben.<br>Wenn die Einstellung aktiviert ist, werden Zahlen entsprechend der lokalen Formatierung angezeigt.';
+$string['settinglenientimport'] = 'Lockere Prüfung bei Importen';
+$string['settinglenientimport_desc'] = 'Beim Import einer Frage nicht prüfen, ob die angegebene Musterantwort volle Punktzahl erreichen würde.<br>Hinweis: Diese Einstellung sollte nur vorübergehend aktiviert werden.';
+$string['settings_heading_general'] = 'Allgemeine Einstellungen';
+$string['settings_heading_width'] = 'Standardbreiten';
+$string['settings_heading_width_desc'] = 'Standardbreite für Antwortfelder der verschiedenen Antworttypen. Bei leeren Feldern wird die Einstellung gemäss Stylesheet des Plugins verwendet. Bitte vorsichtig verwenden: Bei zu kleinen Feldern kann die Eingabe der Antwort für Schüler schwierig werden. Beachten Sie, dass das Ausrufezeichen-Symbol bei ungültigen Antworten auch noch ungefähr 12 Pixel Breite benötigt.';
 $string['settingusepopup'] = 'Tooltips verwenden';
 $string['settingusepopup_desc'] = 'Richtigen Antwort und des Feedbacks in einem Tooltipp anzeigen';
 $string['subqoptions'] = 'Einstellungen der Einheit';
@@ -355,9 +380,9 @@ $string['subqtext_help'] = 'Hier können die Texte für den Frageteil und die An
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
 
-Das  <tt> {_0}, {_1}, {_2} </tt> sind verschiedene Input-Felder für Variablen und <tt> {_u} </tt> ist das Input-Feld für die Einheit.
+Das  <tt>{_0}, {_1}, {_2}</tt> sind verschiedene Input-Felder für Variablen und <tt>{_u}</tt> ist das Input-Feld für die Einheit.
 
-Alle fehlenden Felder werden automatisch an das Ende des Textes des Teils angehängt. Ein Sonderfall ist, wenn <tt> {_0}, {_u} </tt> nacheinander angegeben werden und es nur ein Antwortfeld und eine Einheit gibt, d. h. <tt> {_0}{_u} </tt>, dann werden sie zu einem einzigen langen Eingabeantwortfeld für Antwort und Einheit zusammengefasst.';
+Alle fehlenden Felder werden automatisch an das Ende des Textes des Teils angehängt. Ein Sonderfall ist, wenn <tt>{_0}, {_u}</tt> nacheinander angegeben werden und es nur ein Antwortfeld und eine Einheit gibt, d. h. <tt>{_0}{_u}</tt>, dann werden sie zu einem einzigen langen Eingabeantwortfeld für Antwort und Einheit zusammengefasst.';
 $string['uniquecorrectansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['unit'] = 'Einheit';
 $string['unitpenalty'] = 'Abzug für falsche Einheit (0-1)*';

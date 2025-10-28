@@ -350,9 +350,6 @@ function attendance_grade_item_update($attendance, $grades=null) {
     if (!isset($attendance->courseid)) {
         $attendance->courseid = $attendance->course;
     }
-    if (!$DB->get_record('course', ['id' => $attendance->course])) {
-        error("Course is misconfigured");
-    }
 
     if (!empty($attendance->cmidnumber)) {
         $params = ['itemname' => $attendance->name, 'idnumber' => $attendance->cmidnumber];

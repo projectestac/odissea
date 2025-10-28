@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clientrequiresseb'] = 'Aquest qüestionari s\'ha configurat per emprar el Navegador d\'examen segur amb la configuració del client.';
 $string['filemanager_sebconfigfile'] = 'Carrega el fitxer de configuració del Navegador d\'examen segur';
 $string['filemanager_sebconfigfile_help'] = 'Carregueu el vostre propi fitxer de configuració del Navegador d\'examen segur per a aquest qüestionari.';
+$string['httplinkbutton'] = 'Baixa la configuració';
 $string['seb'] = 'Navegador d\'examen segur';
+$string['seb:manage_seb_allowcapturecamera'] = 'Canvia el paràmetre del qüestionari del Navegador d\'examen segur: Permet l\'accés del navegador a la càmera';
+$string['seb:manage_seb_allowcapturemicrophone'] = 'Canvia el paràmetre del qüestionari del Navegador d\'examen segur: Permet l\'accés del navegador al micròfon';
 $string['seb_activateurlfiltering'] = 'Habilita el filtratge d\'URL';
 $string['seb_activateurlfiltering_help'] = 'Si s\'habilita, els URL es filtraran quan es carreguin les pàgines web. El conjunt de filtres s\'ha de definir a sota.';
+$string['seb_allowcapturecamera'] = 'Permet l\'accés del navegador a la càmera';
+$string['seb_allowcapturemicrophone'] = 'Permet l\'accés del navegador al micròfon';
 $string['seb_allowedbrowserexamkeys'] = 'Claus de l\'examen permeses per al navegador';
 $string['seb_allowedbrowserexamkeys_help'] = 'En aquest camp podeu introduir les claus de l\'examen permeses per al navegador per a les versions del Navegador d\'examen segur que tenen permís per accedir a aquest qüestionari. Si no se n\'introdueix cap, aleshores no es comproven les claus de l\'examen permeses per al navegador.';
 $string['seb_allowreloadinexam'] = 'Habilita l\'actualització de la pàgina durant l\'examen';
@@ -89,3 +95,7 @@ $string['seb_use_template'] = 'Sí. Utilitza una plantilla existent';
 $string['seb_use_upload'] = 'Sí. Carrega la meva pròpia configuració';
 $string['seb_userconfirmquit'] = 'Demana a l\'usuari que confirmi que vol sortir';
 $string['seb_userconfirmquit_help'] = 'Si s\'activa, quan es detecta un enllaç de sortida els usuaris han de confirmar que volen sortir del Navegador d\'examen segur.';
+$string['sebdownloadbutton'] = 'Baixa el Navegador d\'examen segur';
+$string['seblinkbutton'] = 'Executa el Navegador d\'examen segur';
+$string['sebrequired'] = 'El qüestionari s\'ha configurat de tal manera que l\'estudiant només pot intentar respondre\'l fent servir el Navegador d\'examen segur.';
+$string['settingsfrozen'] = 'A causa del fet que hi ha almenys un intent del qüestionari, la configuració del Navegador d\'examen segur ja no es pot actualitzar.';

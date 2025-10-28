@@ -4,6 +4,38 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 25.10.22
+---------------------------------------------------------------------------------------
+- Updated langpacks
+- choicegroup: Updated module
+- Coderunner behaviour: Added submodule
+- Coderunner question type: Added submodule
+- completion_progress: Updated block
+- multitopic: Updated course format
+- tiny_fontcolor: Updated editor plugin
+- tiny_cloze: Updated editor plugin
+- Wiris: Updated all components
+- xtecboost: Updated logo for Departament d'Educació
+
+
+Changes 25.10.07
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.11
+- Updated langpacks
+- Course search: Added filtering to param in course search to prevent abuse
+- settings: Added option for reports to user menu
+- webservices: Fixed enable and disable of protocols
+
+
+Changes 25.07.21
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.4.9+
+- Updated langpacks
+- boost_union: Allow access only to xtecadmin
+- journal: Rolled back a few comments to fix error in module
+- xtecboost: favicon: Added support for setting in core_admin | favicon
+
+
 Changes 25.07.07
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.4.9+

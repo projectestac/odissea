@@ -1109,8 +1109,10 @@ function attendance_get_users_to_notify($courseids = [], $orderby = '', $allforn
     if (!empty($CFG->showuseridentity)) {
         $extrafields = explode(',', $CFG->showuseridentity);
         foreach ($extrafields as $field) {
-            $unames .= $field . ', ';
-            $unames2 .= 'u.' . $field . ', ';
+            if (strpos($field, 'profile_field') !== 0) {
+                $unames .= $field . ', ';
+                $unames2 .= 'u.' . $field . ', ';
+            }
         }
     }
 

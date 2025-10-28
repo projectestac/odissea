@@ -33,6 +33,6 @@ $string['confirmdatasaved'] = '私のモバイルデバイスに未保存の作�
 $string['mobileapp'] = 'モバイルアプリ';
 $string['offlineattemptserror'] = '時間制限が設定されている場合、ネットワークアドレスを必要とする場合、または遅延フィードバック (CBMあり、なし) 以外の問題動作を使用している場合、またはシーケンシャルナビゲーションを使用している場合、小テストをオフラインでは受験できません。';
 $string['offlinedatamessage'] = 'あなたはこの受験にモバイルデバイスを使用して取り組みました。データはこのサイトに {$a} 前に保存されました。';
-$string['pleaseconfirm'] = '未保存の作業がないことを確認してください。';
+$string['pleaseconfirm'] = '未保存の作業がないことをご確認ください。';
 $string['pluginname'] = 'オフライン受験アクセスルール';
 $string['privacy:metadata'] = 'オフライン受験小テストアクセスルールプラグインはいかなる個人データも保存しません。';

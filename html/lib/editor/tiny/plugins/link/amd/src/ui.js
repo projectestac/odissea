@@ -74,6 +74,18 @@ const displayDialogue = async(editor) => {
         }
     });
 
+    // Add keyboard event listener to handle Enter and Space keys on submit button
+    root.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            const submitAction = e.target.closest(Selectors.actions.submit);
+            if (submitAction) {
+                e.preventDefault();
+                setLink(currentForm, editor);
+                modal.destroy();
+            }
+        }
+    });
+
     const linkTitle = root.querySelector(Selectors.elements.urlText);
     const linkUrl = root.querySelector(Selectors.elements.urlEntry);
     linkTitle.addEventListener('change', () => {
@@ -103,7 +115,7 @@ const getTemplateContext = (editor) => {
         elementid: editor.id,
         showfilepicker: getPermissions(editor).filepicker &&
             (typeof getFilePicker(editor, 'link') !== 'undefined'),
-        isupdating: Object.keys(data).length > 0,
+        isupdating: !!data.url,
     }, data);
 };
 

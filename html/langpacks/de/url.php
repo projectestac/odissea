@@ -38,11 +38,13 @@ $string['createurl'] = 'Link/URL anlegen';
 $string['displayoptions'] = 'Mögliche Anzeigeoptionen';
 $string['displayselect'] = 'Anzeigen';
 $string['displayselect_help'] = 'Die Darstellung des verlinkten Inhalts hängt von verschiedenen Faktoren ab:
+
 * gewählte Einstellung
 * Dateityp, auf den verlinkt wird
 * Browser der Person, der die Seite aufruft
 
 Folgende Darstellungsoptionen sind möglich:
+
 * Automatisch - Die beste Anzeigeoption für die URL wird automatisch ausgewählt
 * Eingebettet - Die URL wird innerhalb der Seite unterhalb der Navigationsleiste angezeigt, zusammen mit der Beschreibung und allen Blöcken
 * Öffnen - Die URL wird alleine im Browserfenster angezeigt
@@ -73,10 +75,10 @@ Hinweis: Verlinkungen und URLs können mit dem Texteditor auch in jede andere Re
 $string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'Links/URLs';
 $string['name'] = 'Name';
-$string['name_help'] = 'Dieser Linktext soll die URL prägnant beschreiben.
+$string['name_help'] = 'Dieser Linktext soll die URL beschreiben.
 Geben Sie einen aussagekräftigen Text.
 
-Vermeiden Sie in der Beschreibung die Verwendung des Wortes "Link". Dadurch können Screenreader die Links besser ankündigen (z.B. "Moodle.org, Link"), ohne das Wort "Link" noch einmal im Namensfeld zu haben.';
+Vermeiden Sie in der Beschreibung die Verwendung des Wortes "Link". Dadurch können Screenreader die Links besser ankündigen (z.B. "Moodle.org, Link"), ohne das Wort "Link" nochmal im Namensfeld zu haben.';
 $string['page-mod-url-x'] = 'Jede URL-Seite';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL-Variablen';

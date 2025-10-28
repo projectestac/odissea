@@ -52,7 +52,7 @@ require_capability('mod/attendance:takeattendances', $context);
 $pageparams->init($course->id);
 
 $PAGE->set_context($context);
-$url = new moodle_url('/mod/attendance/import/marksessions.php');
+$url = new moodle_url('/mod/attendance/import/marksessions.php', ['id' => $id, 'sessionid' => $pageparams->sessionid]);
 $PAGE->set_url($url);
 $PAGE->set_title($course->shortname. ": ".$att->name);
 $PAGE->set_heading($course->fullname);

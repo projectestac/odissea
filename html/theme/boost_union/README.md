@@ -1,7 +1,7 @@
 moodle-theme_boost_union
 ========================
 
-[![Moodle Plugin CI](https://github.com/moodle-an-hochschulen/moodle-theme_boost_union/actions/workflows/moodle-plugin-ci.yml/badge.svg?branch=MOODLE_404_STABLE)](https://github.com/moodle-an-hochschulen/moodle-theme_boost_union/actions?query=workflow%3A%22Moodle+Plugin+CI%22+branch%3AMOODLE_404_STABLE)
+[![Moodle Plugin CI](https://github.com/moodle-an-hochschulen/moodle-theme_boost_union/actions/workflows/moodle-plugin-ci.yml/badge.svg?branch=MOODLE_405_STABLE)](https://github.com/moodle-an-hochschulen/moodle-theme_boost_union/actions?query=workflow%3A%22Moodle+Plugin+CI%22+branch%3AMOODLE_405_STABLE)
 
 Theme Boost Union is an enhanced child theme of Boost which is intended, on the one hand, to make Boost simply more configurable and, on the other hand, to provide helpful additional features for the daily Moodle operation of admins, teachers and students.
 
@@ -9,7 +9,7 @@ Theme Boost Union is an enhanced child theme of Boost which is intended, on the 
 Requirements
 ------------
 
-This theme requires Moodle 4.4+
+This theme requires Moodle 4.5+
 
 
 Motivation for this theme
@@ -164,6 +164,16 @@ With these settings, you can override the activity icon background color which i
 
 With this setting, you can modify the icons for activities and resources which are used by Moodle on the course pages and in the activity chooser. You can upload custom icons for all or only some activity modules installed in this Moodle instance.
 
+#### Tab "Calendar Branding"
+
+##### Calendar event types
+
+With these settings, you can override the main colors and border colors of individual calendar entry types.
+
+##### General calendar branding
+
+With these settings, you can set additional colors for the calendar views.
+
 #### Tab "Login page"
 
 ##### Login page background images
@@ -227,7 +237,7 @@ With this setting, you can enable a side entrance local login page. It is enable
 
 ###### Show course images
 
-With this setting, you can control whether the course image is visible inside the course overview block or not. It is possible to choose a different setting for Card view, Summary view, and List view. 
+With this setting, you can control whether the course image is visible inside the course overview block or not. It is possible to choose a different setting for Card view, Summary view, and List view.
 
 ###### Show course completion progress
 
@@ -374,6 +384,10 @@ With this setting, you can show the logged-in user's full name at the top of the
 With this setting, you can add a 'Set preferred language' setting to the language menu within the user menu. Understandably, this setting is only processed if the language menu is enabled at all.
 
 ##### Navbar
+
+###### Display "Log in" link as button
+
+With this setting, you can have the "Log in" link in the top of the page shown as button. This can help your users to recognize the fact they they are not logged in already.
 
 ###### Show starred courses popover in the navbar
 
@@ -611,7 +625,7 @@ In this tab, you can enable and configure multiple slides to be shown on site ho
 
 In this tab there are the following settings:
 
-##### Course related hints
+##### Course related hints for teachers
 
 ###### Show hint for switched role
 
@@ -625,13 +639,19 @@ With this setting a hint will not only appear in the course header but also in f
 
 With this setting a hint will appear in the course header as long as the visibility of the course is hidden.
 
-###### Show hint for guest access
-
-With this setting a hint will appear in the course header when a user is accessing it with the guest access feature.
-
 ###### Show hint for self enrolment without enrolment key
 
 With this setting a hint will appear in the course header if the course is visible and an enrolment without enrolment key is currently possible.
+
+###### Show hint for guest enrolment
+
+With this setting a hint will appear in the course header if the course is visible and guest enrolment is currently possible.
+
+##### Course related hints for students
+
+###### Show hint for guest access
+
+With this setting a hint will appear in the course header when a user is accessing it with the guest access feature.
 
 #### Tab "Administration"
 
@@ -646,6 +666,10 @@ By default, on the course management page, Moodle requires you to either open th
 ### Settings page "Flavours"
 
 Boost Union's flavours offer a possibility to override particular Moodle look & feel settings in particular contexts. On this page, you can create and manage flavours.
+
+### Settings page "CSS Snippets"
+
+Boost Union's CSS snippets offer a possibility to add small (or slightly larger) amounts of CSS to the Moodle site. This can be particularly handy for fixing small visual glitches in Moodle core or for adding eye candy to your Moodle site.
 
 ### Settings page "Smart menus"
 
@@ -664,6 +688,10 @@ This capability is used to control who is able to configure the theme as non-adm
 ### theme/boost_union:viewhintcourseselfenrol
 
 This capability is used to control who is able to see a hint for unrestricted self enrolment in a visible course (if this feature was enabled in the theme settings). By default, it is assigned to teachers, non-editing teachers and managers.
+
+### theme/boost_union:viewhintcourseguestenrol
+
+This capability is used to control who is able to see a hint for guest access in a visible course (if this feature was enabled in the theme settings). By default, it is assigned to teachers, non-editing teachers and managers.
 
 ### theme/boost_union:viewhintinhiddencourse
 
@@ -704,6 +732,21 @@ In addition to our mission to provide admin settings for each and every feature 
   As an alternative to the markexternallinks and markmailtolinks settings which automatically mark these kind of links, you can also add the .externallink and .mailtolink class to a ```<a>``` HTML tag to manually mark any link as an external / as a mailto link.
 * Themerev as SCSS variable:
   During a custom SCSS design project, you might come into the situation that you have to link to an uploaded image or other asset which is served by Moodle's pluginfile.php script. Unfortunately, these URLs contain a theme revision parameter. To be able to use these URLs properly in custom SCSS and to avoid breaking Moodle's caching features, Boost Union provides the $themerev SCSS variable to be used in your custom SCSS.
+
+
+CLI tools
+---------
+
+This plugin provides the following CLI tools:
+
+### cli/repopulate_scss_snippets.php
+
+Normally, the built-in SCSS snippets are re-populated if the Boost Union version is raised. This is triggered in db/upgrade.php.
+This is perfectly fine as long as admins to not want to fiddle with the list of buit-in snippets manually.
+
+To ease such admin tasks as well as the crafting of SCSS Snippet PRs,
+this CLI script can be run and will re-populate the list of built-in SCSS snippets based on the list of snippets
+which exist on disk in the theme/boost_union/snippets/builtin directory.
 
 
 Exceptions to our main design principle
@@ -802,8 +845,10 @@ Having said that, here's the order how all the SCSS code is added to the SCSS st
    * Adds the Boost Union Post SCSS from disk\
      (which is located on `/theme/boost_union/scss/boost_union/post.scss`)
      This file holds all the Boost Union specific SCSS code which can be added to the stack without being dependent on specific configurations like configured colors or sizes.
-   * Add the Boost Union external SCSS\
+   * Adds the Boost Union external SCSS\
      (which is set on `/admin/settings.php?section=theme_boost_union_look#theme_boost_union_look_scss`)
+   * Adds the Boost Union SCSS snippets\
+     (which are enabled on `/theme/boost_union/snippets/overview.php`)
 
 5. `theme_boost` > `get_extra_scss()`:
    * Adds the Boost Union Post SCSS from the theme settings\
@@ -928,6 +973,7 @@ Moodle an Hochschulen e.V. would like to thank these main contributors (in alpha
 * bdecent GmbH, Stefan Scholz: Code, Ideating, Funding
 * Bern University of Applied Sciences (BFH), Luca Bösch: Code, Peer Review, Ideating
 * Carinthia University of Applied Sciences, Mario Wehr: Code
+* Catalyst IT Australia, Brendan Heywood: Code
 * Catalyst IT Europe, Mark Johnson: Code
 * Catalyst IT Europe, Simon Thornett: Code
 * ELAN e.V., Farbod Zamani: Code
@@ -951,8 +997,10 @@ Moodle an Hochschulen e.V. would like to thank these main contributors (in alpha
 * RWTH Aachen, Tim Schröder: Code
 * Solent University, Mark Sharp: Code
 * ssystems GmbH, Alexander Bias: Code, Peer Review, Ideating, Funding
+* ssystems GmbH, Sangyul Cha: Code
 * Technische Universität Berlin, Lars Bonczek: Code
 * University of Bayreuth, Nikolai Jahreis: Code
+* University of California, San Francisco, Stefan Topfstedt: Code
 * University of Graz, André Menrath: Code
 * University of Lübeck, Christian Wolters: Code, Peer Review, Ideating
 * Zurich University of Applied Sciences (ZHAW): Code, Funding, Ideating

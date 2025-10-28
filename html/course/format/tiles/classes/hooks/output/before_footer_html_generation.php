@@ -55,10 +55,11 @@ class before_footer_html_generation {
                     $modviewpageneedsjs = (bool)($matches[1] ?? null);
                 }
             }
-
-            if (($oncourseviewpage && !$editing) || $modviewpageneedsjs) {
+            $onsectionviewpage = $PAGE->pagetype == 'course-view-section';
+            if (($oncourseviewpage && !$editing) || $modviewpageneedsjs || $onsectionviewpage) {
                 // Course module modals.
                 $launchmodalcmid = null;
+                $usingjsnav = \format_tiles\local\util::using_js_nav();
                 if (!empty($allowedmodals['resources'] || !empty($allowedmodals['modules']))) {
                     // If we are on course/view.php, get details.
                     $launchmodalcmid = ($oncourseviewpage && !$editing) ? optional_param('cmid', null, PARAM_INT) : null;
@@ -74,7 +75,7 @@ class before_footer_html_generation {
                 }
                 $PAGE->requires->js_call_amd(
                     'format_tiles/course_mod_modal', 'init',
-                [$PAGE->course->id, false, $PAGE->pagetype, $launchmodalcmid, \format_tiles\local\util::using_js_nav()]
+                [$PAGE->course->id, false, $PAGE->pagetype, $launchmodalcmid, $usingjsnav]
                 );
             }
 

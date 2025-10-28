@@ -707,6 +707,7 @@ $string['fullnamedisplayprivate'] = 'Formato do nome completo - privado';
 $string['gdrequired'] = 'A extensão GD é agora exigida pelo Moodle para conversão de imagens.';
 $string['generalsettings'] = 'Configurações gerais';
 $string['geoipfile'] = 'Base de dados GeoLite2 City MaxMind';
+$string['geopluginapikey'] = 'Chave API do GeoPlugin';
 $string['getremoteaddrconf'] = 'Origem do endereço IP';
 $string['globalsearch'] = 'Pesquisa global';
 $string['globalsearchmanage'] = 'Gerir pesquisa global';

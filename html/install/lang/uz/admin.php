@@ -21,7 +21,7 @@
  * needed during the very first steps of installation. This file was
  * generated automatically by export-installer.php (which is part of AMOS
  * {@link https://moodledev.io/general/projects/api/amos}) using the
- * list of strings defined in /install/stringnames.txt.
+ * list of strings defined in install/stringnames.txt file.
  *
  * @package   installer
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -29,6 +29,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cliincorrectvalueretry'] = 'Noto\'g\'ri qiymat, iltimos qayta urinib ko\'ring';
+$string['clianswerno'] = 'n';
+$string['cliansweryes'] = 'y';
+$string['cliincorrectvalueerror'] = 'Xato, “{$a->option}” uchun noto‘g‘ri “{$a->value}” qiymati';
+$string['cliincorrectvalueretry'] = 'Noto‘g‘ri qiymat, iltimos qayta urinib ko‘ring';
 $string['clitypevalue'] = 'qiymatni kiritish';
 $string['clitypevaluedefault'] = 'qiymatni kiriting, ({$a}) odatiy qiymatni ishlatish uchun Enter tumgasini bosing';
+$string['cliunknowoption'] = 'Noma\'lum parametrlar:
+ {$a}
+Iltimos, -- help parametridan foydalaning';
+$string['cliyesnoprompt'] = 'y tugmasini bosing (ha degani) yoki n tugmasini bosing (yo‘q degani)';
+$string['environmentrequireinstall'] = 'o‘rnatilishi va yoqilishi shart.';
+$string['environmentrequireversion'] = '{$a->needed} versiyasi talab etiladi, sizda esa hozirda {$a->current} ishlatilmoqda';
+$string['upgradekeyset'] = 'Yangilash kaliti (o‘rnatmaslik uchun bo‘sh qoldiring)';

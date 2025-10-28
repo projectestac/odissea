@@ -47,7 +47,7 @@ $string['stepsdefinitionscomponent'] = 'Область';
 $string['stepsdefinitionscontains'] = 'Содержит';
 $string['stepsdefinitionsfilters'] = 'Определения шагов';
 $string['stepsdefinitionstype'] = 'Тип';
-$string['theninfo'] = 'Затем. Проверки на соответствие ожидаемым результатам';
+$string['theninfo'] = 'Затем. Проверки на соответствие ожидаемым показателям';
 $string['unknownexceptioninfo'] = 'Возникла ошибка в работе Selenium или браузера. Пожалуйста, убедитесь, что используется последняя версия Selenium.
 Ошибка:';
 $string['viewsteps'] = 'Фильтр';

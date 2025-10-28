@@ -246,7 +246,7 @@ $string['glossary:comment'] = 'Crear comentaris';
 $string['glossary:export'] = 'Exporta les entrades';
 $string['glossary:exportentry'] = 'Exporta una única entrada';
 $string['glossary:exportownentry'] = 'Exporta una única entrada pròpia';
-$string['glossary:import'] = 'Importar entrades';
+$string['glossary:import'] = 'Importa entrades';
 $string['glossary:managecategories'] = 'Gestionar categories';
 $string['glossary:managecomments'] = 'Gestionar comentaris';
 $string['glossary:manageentries'] = 'Gestionar entrades';
@@ -303,13 +303,13 @@ Els glossaris tenen molts usos, com ara:
 $string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glossaris';
 $string['newentries'] = 'Entrades noves del glossari';
-$string['newglossary'] = 'Nou glossari';
+$string['newglossary'] = 'Glossari nou';
 $string['newglossarycreated'] = 'S\'ha creat un nou glossari.';
 $string['newglossaryentries'] = 'Noves entrades del glossari:';
 $string['nocomment'] = 'No s\'ha trobat cap comentari';
 $string['nocomments'] = '(No s\'han trobat comentaris referents a aquesta entrada)';
 $string['noconceptfound'] = 'No s\'ha trobat cap concepte ni definició.';
-$string['noentries'] = 'No s\'han trobat entrades en aquesta secció';
+$string['noentries'] = 'No s\'ha trobat cap entrada en aquesta secció';
 $string['noentry'] = 'No s\'ha trobat cap entrada.';
 $string['nopermissiontodelcomment'] = 'No podeu suprimir els comentaris d\'altres persones';
 $string['nopermissiontodelinglossary'] = 'No podeu comentar en aquest glossari';
@@ -322,6 +322,7 @@ $string['page-mod-glossary-edit'] = 'Afegeix  glossari / edita pàgina d\'entrad
 $string['page-mod-glossary-view'] = 'Mostra la pàgina d\'edició del glossari';
 $string['page-mod-glossary-x'] = 'Qualsevol pàgina del modul glossari';
 $string['pendingapproval'] = 'Pendent d\'aprovació';
+$string['pendingapprovalcount'] = 'En espera d\'aprovació ({$a})';
 $string['pluginadministration'] = 'Gestió del glossari';
 $string['pluginname'] = 'Glossari';
 $string['popupformat'] = 'Format emergent';
@@ -362,7 +363,7 @@ $string['rsstype_help'] = '<p>Aquesta opció us permet habilitar alimentacions R
 </ul>';
 $string['search:activity'] = 'Glossari: informació de l\'activitat';
 $string['search:entry'] = 'Glossari - Entrades';
-$string['searchindefinition'] = 'Cerca en tot el text';
+$string['searchindefinition'] = 'Cerca a tot el text';
 $string['secondaryglossary'] = 'Glossari secundari';
 $string['showall'] = 'Mostra l\'enllaç «Tot»';
 $string['showall_help'] = '<p>Podeu personalitzar l\'estil de navegació d\'un glossari. Sempre es pot navegar i cercar, però podeu definir tres opcions més:</p>
@@ -380,7 +381,7 @@ $string['showalphabet_help'] = '<p>Podeu personalitzar l\'estil de navegació d\
 <p><b>MOSTRA ALFABET</b> Habilita o inhabilita la navegació per les lletres de l\'alfabet.</p>
 
 <p><b>MOSTRA TOT</b> Habilita o inhabilita la navegació de totes les entrades a l\'hora.</p>';
-$string['showspecial'] = 'Mostra l\'enllaç \'Especial\'';
+$string['showspecial'] = 'Mostra l\'enllaç «Especial»';
 $string['showspecial_help'] = '<p>Podeu personalitzar l\'estil de navegació d\'un glossari. Sempre es pot navegar i cercar, però podeu definir tres opcions més:</p>
 
 <p><b>MOSTRA ESPECIAL</b> Habilita o inhabilita la navegació de caràcters especials com ara @, #, etc.</p>

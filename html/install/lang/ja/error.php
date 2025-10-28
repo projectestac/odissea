@@ -21,7 +21,7 @@
  * needed during the very first steps of installation. This file was
  * generated automatically by export-installer.php (which is part of AMOS
  * {@link https://moodledev.io/general/projects/api/amos}) using the
- * list of strings defined in /install/stringnames.txt.
+ * list of strings defined in install/stringnames.txt file.
  *
  * @package   installer
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -45,7 +45,7 @@ $string['dmlexceptiononinstall'] = '<p>データベースエラーが発生し�
 $string['downloadedfilecheckfailed'] = 'ダウンロードファイルのチェックに失敗しました。';
 $string['invalidmd5'] = 'チェック変数が正しくありません - 再度お試しください。';
 $string['missingrequiredfield'] = 'いくつかの必須入力フィールドが入力されていません。';
-$string['remotedownloaderror'] = '<p>あなたのサーバへのコンポーネントのダウンロードに失敗しました。プロキシ設定を確認してください。PHP cURL拡張モジュールの使用を強くお勧めします。</p>
+$string['remotedownloaderror'] = '<p>あなたのサーバへのコンポーネントのダウンロードに失敗しました。プロキシ設定をご確認ください。PHP cURL拡張モジュールの使用を強くお勧めします。</p>
 <p><a href="{$a->url}">{$a->url}</a>ファイルを手動でダウンロードした後、あなたのサーバの「{$a->dest}」にコピーおよび展開してください。</p>';
 $string['wrongdestpath'] = '宛先パスが正しくありません。';
 $string['wrongsourcebase'] = 'ソースURLベースが正しくありません。';

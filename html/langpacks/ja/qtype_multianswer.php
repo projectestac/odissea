@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmquestionsaveasedited'] = '私は問題を編集済みとして保存することを承認します。';
-$string['confirmsave'] = '{$a} を確認して保存する';
+$string['confirmquestionsaveasedited'] = '私は問題を編集したとおりに保存することを承認します。';
+$string['confirmsave'] = '{$a} を確認してから保存してください';
 $string['correctanswer'] = '正解';
 $string['correctanswerandfeedback'] = '正解およびフィードバック';
 $string['corruptedquestion'] = 'この問題は破損しているため、あなたのシステムに存在しないサブ問題が含まれています';
@@ -61,12 +61,12 @@ $string['questioninquiz'] = '<ul>
 </ul>';
 $string['questionnotfound'] = '問題部分 #{$a} の問題が見つかりません。';
 $string['questionsadded'] = '問題追加';
-$string['questionsaveasedited'] = '問題を編集済みとして保存する';
+$string['questionsaveasedited'] = '問題を編集したとおりに保存する';
 $string['questionsless'] = 'データベースに保存されている穴埋め問題より {$a} 問少ない ';
 $string['questionsmissing'] = '問題テキストには少なくとも1つの埋め込まれた答えが必要です。';
 $string['questionsmore'] = 'データベースに保存されている穴埋め問題より {$a} 問多い';
 $string['questiontypechanged'] = '問題タイプが変更されました。';
-$string['questiontypechangedcomment'] = '少なくとも1つの問題タイプが変更されました。<br /> 問題を追加、削除または移動しましたか?<br />確認してください。';
+$string['questiontypechangedcomment'] = '少なくとも1つの問題タイプが変更されました。<br /> 問題を追加、削除または移動しましたか?<br />ご確認ください。';
 $string['questionusedinquiz'] = 'この問題は {$a->nb_of_quiz} の小テストで使用されています。合計受験数: {$a->nb_of_attempts}';
 $string['regradeissuenumsubquestionschanged'] = '問題の埋め込みサブ問題数が変わりました。';
 $string['storedqtype'] = '保存された問題タイプ {$a}';

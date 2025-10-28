@@ -76,8 +76,8 @@ export default class extends DndSectionItem {
      * @returns {boolean}
      */
     validateDropData(dropdata) {
-        // We accept a section that fits
         if (dropdata?.type === 'section') {
+            // We accept sections that fit inside this one.
             const sectionzeroid = this.course.sectionlist[0];
             const origin = this.reactive.get("section", dropdata.id);
             const targettablevel = this.fullregion.className.match(/\btab_level_(\d+)\b/)[1];

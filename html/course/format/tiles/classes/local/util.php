@@ -280,7 +280,6 @@ class util {
                 'courseId' => $course->id,
                 'pageType' => $PAGE->pagetype,
                 'allowPhotoTiles' => get_config('format_tiles', 'allowphototiles'),
-                'documentationurl' => get_config('format_tiles', 'documentationurl'),
                 'maxnumbericons' => self::get_icon_picker_max_number_icons(),
             ];
             $PAGE->requires->js_call_amd('format_tiles/edit_icon_picker', 'init', $editparams);
@@ -385,7 +384,8 @@ class util {
         }
         // The core method will return true for both icon and monologo, but we want to check for monlogo only.
         $pattern = '/monologo\.(svg|png)$/i';
-        if (!preg_match($pattern, $svgmonologolocation) && !preg_match($pattern, $pngmonologolocation)) {
+        if ((!$svgmonologolocation || !preg_match($pattern, $svgmonologolocation))
+            && (!$pngmonologolocation || !preg_match($pattern, $pngmonologolocation))) {
             return false;
         }
         return true;

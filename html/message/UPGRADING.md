@@ -1,6 +1,14 @@
 # core_message (subsystem) Upgrade notes
 
-## 4.5.5+
+## 4.5.7
+
+### Added
+
+- The `contexturl` property to `\core\message\message` instances can now contain `\core\url` values in addition to plain strings
+
+  For more information see [MDL-83080](https://tracker.moodle.org/browse/MDL-83080)
+
+## 4.5.6
 
 ### Added
 

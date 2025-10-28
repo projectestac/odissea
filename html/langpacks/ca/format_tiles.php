@@ -202,6 +202,7 @@ $string['sectionnumber'] = 'Secció / Número de secció';
 $string['setbackgroundphoto'] = 'Estableix la foto o icona';
 $string['showoverallprogress'] = 'Mostra l\'indicador general del progrés';
 $string['showoverallprogress_desc'] = 'Mostra l\'indicador «Progrés general %» a la part superior dreta del curs (el valor que s\'hi mostra representa l\'agregació del % complet de cada mosaic, basat en la compleció d\'activitats, no en la compleció del curs)';
+$string['showseczerocoursewide'] = 'Mostra la secció zero al capdamunt de totes les seccions';
 $string['tileicon'] = 'Icona o fotografia per mostrar només en aquest mosaic';
 $string['tileicon_help'] = 'L\'element que se seleccioni aquí substituirà, només per a aquest mosaic, qualsevol icona de mosaic que s\'hagi establert al nivell del curs.';
 $string['tileicons'] = 'Icones del mosaic';

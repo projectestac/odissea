@@ -53,9 +53,12 @@ class course {
             // If this is a valid image.
             if ($file->is_valid_image()) {
                 // Compose the URL.
-                $url = \moodle_url::make_file_url('/pluginfile.php',
+                $url = \core\url::make_file_url(
+                    '/pluginfile.php',
                     '/' . $file->get_contextid() . '/' . $file->get_component() . '/' .
-                    $file->get_filearea() . $file->get_filepath() . $file->get_filename(), !$file->is_valid_image());
+                    $file->get_filearea() . $file->get_filepath() . $file->get_filename(),
+                    !$file->is_valid_image()
+                );
 
                 // And return it.
                 return $url->out();
@@ -132,7 +135,8 @@ class course {
         // If there is a summary.
         if ($this->course->has_summary()) {
             // Get and return the summary.
-            return $chelper->get_course_formatted_summary($this->course,
+            return $chelper->get_course_formatted_summary(
+                $this->course,
                 ['overflowdiv' => true, 'noclean' => true, 'para' => false]
             );
         }
@@ -153,8 +157,58 @@ class course {
             // Get the course handler.
             $handler = \core_course\customfield\course_handler::create();
 
-            // Get and return the custom fields.
-            return $handler->display_custom_fields_data($this->course->get_custom_fields());
+            // Get the selected fields from the settings.
+            $selectedfields = get_config('theme_boost_union', 'courselistingselectfields');
+
+            // If specific fields are selected, filter the fields.
+            if (!empty($selectedfields)) {
+                $selectedfields = explode(',', $selectedfields);
+                $allfields = $this->course->get_custom_fields();
+                $filteredfields = [];
+
+                // Only keep selected fields.
+                foreach ($allfields as $key => $field) {
+                    if (in_array($field->get_field()->get('id'), $selectedfields)) {
+                        $filteredfields[$key] = $field;
+                    }
+                }
+
+                // Get and return the filtered custom fields.
+                if (!empty($filteredfields)) {
+                    // Get the field styling from the settings.
+                    $stylefields = get_config('theme_boost_union', 'courselistingstylefields');
+
+                    // If the style is set to badge, render the fields as Bootstrap badges.
+                    // We avoid the effort to create a custom renderer for this small change.
+                    if ($stylefields === THEME_BOOST_UNION_SETTING_SHOWAS_BADGE) {
+                        $badges = '';
+                        foreach ($filteredfields as $field) {
+                            // Get field names and value.
+                            $fieldname = $field->get_field()->get('name');
+                            $fieldshortname = $field->get_field()->get('shortname');
+                            $fieldtype = $field->get_field()->get('type');
+                            $fieldvalue = $field->export_value();
+
+                            // Only render if there's a value.
+                            if (!empty($fieldvalue)) {
+                                $badges .= \html_writer::start_span('customfieldbadge customfield_' . $fieldtype . ' me-2');
+                                $badges .= \html_writer::span($fieldname . ': ', 'customfieldname visually-hidden');
+                                $badges .= \html_writer::span($fieldvalue, 'customfieldvalue badge bg-info');
+                                $badges .= \html_writer::end_span();
+                            }
+                        }
+                        return $badges;
+
+                        // Otherwise, if we should output plain text.
+                    } else {
+                        // Use the standard renderer for custom fields.
+                        return $handler->display_custom_fields_data($filteredfields);
+                    }
+                }
+            }
+
+            // If no fields are selected or the filtered fields are empty, return nothing.
+            return '';
         }
 
         // Fallback.

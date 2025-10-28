@@ -47,11 +47,13 @@ function format_multitopic_set_section_visible(int $courseid, $section, int $vis
     // We will recurse if setting visibility to hidden, because hidden sections should not contain visible sections.
     $recurse = ($visibility == 0);
     // END ADDED.
-    for ($subsectionextra = $sectionextra; /* ... */
+    for (
+        $subsectionextra = $sectionextra; /* ... */
         $subsectionextra && ($subsectionextra->id == $section->id
                             || $recurse && $subsectionextra->levelsan > $sectionextra->levelsan); /* ... */
         $subsectionextra = array_key_exists($subsectionextra->nextanyid, $sectionsextra) ?
-            $sectionsextra[$subsectionextra->nextanyid] : null) {
+            $sectionsextra[$subsectionextra->nextanyid] : null
+    ) {
         // CHANGED LINES ABOVE: Recurse, if necessary.
         $subsection = $subsectionextra->sectionbase;
         course_update_section($courseid, $subsection, ['visible' => $visibility]); // CHANGED: $section -> $subsection .
@@ -60,14 +62,16 @@ function format_multitopic_set_section_visible(int $courseid, $section, int $vis
         $modules = !empty($subsection->sequence) ? explode(',', $subsection->sequence) : [];
         // CHANGED LINE ABOVE: $section -> $subsection.
         if (!empty($modules)) {
-            list($insql, $params) = $DB->get_in_or_equal($modules);
+            [$insql, $params] = $DB->get_in_or_equal($modules);
             $select = 'id ' . $insql . ' AND visible = ?';
             array_push($params, $visibility);
             if (!$visibility) {
                 $select .= ' AND visibleold = 1';
             }
-            $resourcestotoggle = array_merge($resourcestotoggle,
-                                            $DB->get_fieldset_select('course_modules', 'id', $select, $params));
+            $resourcestotoggle = array_merge(
+                $resourcestotoggle,
+                $DB->get_fieldset_select('course_modules', 'id', $select, $params)
+            );
             // CHANGED LINE ABOVE: Merge results.
         }
     }
@@ -117,6 +121,10 @@ function format_multitopic_course_create_section(\stdClass $courseorid, \stdClas
     }
     $cw->timemodified = time();
     $cw->id = $DB->insert_record("course_sections", $cw);
+    $DB->insert_record(
+        "course_format_options",
+        ['courseid' => $cw->course, 'format' => 'multitopic', 'sectionid' => $cw->id, 'name' => 'level', 'value' => 0]
+    );
 
     // Now move it to the specified position.
     if (true) {                                                                 // CHANGED: We've already checked the parent exists.
@@ -124,8 +132,10 @@ function format_multitopic_course_create_section(\stdClass $courseorid, \stdClas
         rebuild_course_cache($courseid, true);                                  // ADDED.
         format_multitopic_move_section_to($course, $cw, $section);              // CHANGED: Use section info instead of position.
         // END CHANGED.
-        $cw->section = (int)$DB->get_field_sql('SELECT section from {course_sections} WHERE course = ? AND id = ?',
-                                                [$courseid, $cw->id]);          // CHANGED.
+        $cw->section = (int)$DB->get_field_sql(
+            'SELECT section from {course_sections} WHERE course = ? AND id = ?',
+            [$courseid, $cw->id]
+        );                                                                      // CHANGED.
         $cw->parentid = $section->parentid;                                     // ADDED.
         $cw->levelsan = $section->level ?? FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC; // ADDED.
     }
@@ -205,8 +215,10 @@ function format_multitopic_move_section_to(\stdClass $course, $origins, \stdClas
             $updates['visible'] = $movedsection->visible;
         }
         // Set page-level sections to untimed.
-        if ($movedsection->level < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
-                && $sectionsextra[$id]->sectionbase->periodduration != '0 day') {
+        if (
+            $movedsection->level < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
+            && $sectionsextra[$id]->sectionbase->periodduration != '0 day'
+        ) {
             $updates['periodduration'] = '0 day';
         }
         // Apply section updates.
@@ -292,7 +304,6 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
     $originextraarray = [];
     $originlevel = null;
     foreach ($origins as $origin) {
-
         // Locate origin section in sections array.
         if (!($originextra = array_key_exists($origin->id, $sectionsextra) ? $sectionsextra[$origin->id] : null)) {
             throw new \moodle_exception('sectionnotexist');
@@ -312,14 +323,15 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
         }
 
         // Extract origin sections.
-        for ($originsubkey = $originextra->id; /* ... */
+        for (
+            $originsubkey = $originextra->id; /* ... */
             $originsubkey == $originextra->id
                 || $originsubkey && $sectionsextra[$originsubkey]->levelsan > $originextra->levelsan; /* ... */
-            $originsubkey = $originextraarray[$originsubkey]->nextanyid) {
+            $originsubkey = $originextraarray[$originsubkey]->nextanyid
+        ) {
             $originextraarray[$originsubkey] = $sectionsextra[$originsubkey];
             unset($sectionsextra[$originsubkey]);
         }
-
     }
 
     // Find target position and extract remaining sections.
@@ -347,10 +359,12 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
                 // The moved section can not have the specified section as its previous.
                 throw new \moodle_exception('cannotcreateorfindstructs');
             }
-        } else if (isset($parentextra)
-                        && ($sectionextra->levelsan < $target->level || $sectionextra->levelsan <= $parentextra->levelsan)
-                    || isset($prevextra) && ($sectionextra->levelsan <= $target->level)
-                    || isset($target->nextupid) && $sectionextra->id == $target->nextupid) {
+        } else if (
+            isset($parentextra)
+                && ($sectionextra->levelsan < $target->level || $sectionextra->levelsan <= $parentextra->levelsan)
+            || isset($prevextra) && ($sectionextra->levelsan <= $target->level)
+            || isset($target->nextupid) && $sectionextra->id == $target->nextupid
+        ) {
             // Reached the last position in a specified parent in which the moved section would be a (direct) child,
             // or the appropriate position after a specified previous section,
             // or the position before a specified next section.
@@ -379,7 +393,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
     $parentvisible = true;
     if (true) {
         foreach ($sectionsextra as $id => $sectionextra) {
-            $sections[$id] = new \stdClass;
+            $sections[$id] = new \stdClass();
             $sections[$id]->id = $id;
             $sections[$id]->visible = $sectionextra->visiblesan;
             $sections[$id]->level = max($sectionextra->levelsan, 0);
@@ -392,7 +406,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
     // Append moved sections.
     $levelchange = $target->level - $originlevel;
     foreach ($originextraarray as $id => $sectionextra) {
-        $sections[$id] = new \stdClass;
+        $sections[$id] = new \stdClass();
         $sections[$id]->id = $id;
         $sections[$id]->visible = $sectionextra->visiblesan && $parentvisible;
         $sections[$id]->level = ($sectionextra->levelsan >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
@@ -404,7 +418,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
     // Append rest of array.
     if (true) {                                                                 // CHANGED: Don't need to check for empty array?
         foreach ($appendextraarray as $id => $sectionextra) {
-            $sections[$id] = new \stdClass;
+            $sections[$id] = new \stdClass();
             $sections[$id]->id = $id;
             $sections[$id]->visible = $sectionextra->visiblesan;
             $sections[$id]->level = max($sectionextra->levelsan, 0);
@@ -413,7 +427,7 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
 
     // Append ignored sections.
     foreach ($ignoredsections as $id => $sectionextra) {
-        $sections[$id] = new \stdClass;
+        $sections[$id] = new \stdClass();
         $sections[$id]->id = $id;
         $sections[$id]->visible = $sectionextra->sectionbase->visible;
     }
@@ -426,7 +440,6 @@ function format_multitopic_reorder_sections(array $sectionsextra, $origins, \std
     }
 
     return $sections;
-
 }
 
 
@@ -457,17 +470,24 @@ function format_multitopic_image_attribution($imagename, $authorwithurl, $licenc
     if ($licencehtml && $licence->source) {
         $licencehtml = \html_writer::tag('a', $licencehtml, ['href' => $licence->source, 'target' => '_blank']);
     }
-    $o .= \html_writer::tag('span', get_string('image', 'format_multitopic') . ": {$imagename}"
-                            . (($authorhtml || $licencehtml) ? ',' : ''),
-                            ['style' => 'white-space: nowrap;']) . ' ';
+    $o .= \html_writer::tag(
+        'span',
+        get_string('image', 'format_multitopic') . ": {$imagename}" . (($authorhtml || $licencehtml) ? ',' : ''),
+        ['style' => 'white-space: nowrap;']
+    ) . ' ';
     if ($authorhtml) {
-        $o .= \html_writer::tag('span', get_string('image_by', 'format_multitopic') . " {$authorhtml}"
-                                . ($licencehtml ? ',' : ''),
-                                ['style' => 'white-space: nowrap;']) . ' ';
+        $o .= \html_writer::tag(
+            'span',
+            get_string('image_by', 'format_multitopic') . " {$authorhtml}" . ($licencehtml ? ',' : ''),
+            ['style' => 'white-space: nowrap;']
+        ) . ' ';
     }
     if ($licencehtml) {
-        $o .= \html_writer::tag('span', get_string('image_licence', 'format_multitopic') . " {$licencehtml}",
-                                ['style' => 'white-space: nowrap;']);
+        $o .= \html_writer::tag(
+            'span',
+            get_string('image_licence', 'format_multitopic') . " {$licencehtml}",
+            ['style' => 'white-space: nowrap;']
+        );
     }
     return $o;
 }
@@ -485,7 +505,7 @@ function format_multitopic_duration_as_days($duration) {
     $matchok = preg_match('/^([0-9]+) (day|week|month|year)(s)?$/', $duration ?? '', $matches);
     if ($matchok) {
         $match1 = (int)$matches[1];
-        switch($matches[2]) {
+        switch ($matches[2]) {
             case 'day':
                 $days = $match1 * 1;
                 break;
@@ -551,5 +571,4 @@ function format_multitopic_week_date($date) {
     $result->N = $dow;                                  // Day of week (number).
     $result->D = $down;                                 // Day of week (name).
     return $result;
-
 }

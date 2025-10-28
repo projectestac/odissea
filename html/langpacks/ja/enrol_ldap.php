@@ -103,7 +103,7 @@ $string['objectclass_key'] = 'オブジェクトクラス';
 $string['ok'] = 'OK!';
 $string['opt_deref'] = 'グループメンバシップに識別名が含まれている場合、検索時にどのようにエイリアスが処理されるか指定してください。次の値を選択してください: NO = LDAP_DEREF_NEVERまたはYes = LDAP_DEREF_ALWAYS';
 $string['opt_deref_key'] = 'エイリアスの修飾参照';
-$string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないようです。あなたがこの登録プラグインを使用したい場合、当該モジュールがインストールおよび有効化されていることを確認してください。';
+$string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないようです。あなたがこの登録プラグインを使用したい場合、当該モジュールがインストールおよび有効化されていることをご確認ください。';
 $string['pluginname'] = 'LDAP登録';
 $string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロールするためLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバシップエントリを持つことを前提とします。</p>
 <p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む複数のメンバシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>

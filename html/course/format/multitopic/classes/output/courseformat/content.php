@@ -39,7 +39,6 @@ use renderer_base;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class content extends content_base {
-
     /**
      * Export this data so it can be used as the context for a mustache template (core/inplace_editable).
      *
@@ -51,29 +50,32 @@ class content extends content_base {
         global $PAGE;
         global $USER;                               // INCLUDED from course/format/classes/output/local/content/section/cmlist.php .
 
+        $format = $this->format;
+
         $sectionsextra = $this->format->fmt_get_sections_extra();
         $displaysectionextra = $sectionsextra[$this->format->get_sectionid()];
         if (!empty($displaysectionextra->sectionbase->component)) {
             $data = parent::export_for_template($output);
             $data->displayonesection = true;
+            $data->originalsinglesectionid = $format->originalsinglesectionid;
             return $data;
         }
 
         $PAGE->requires->js_call_amd('format_multitopic/courseformat/courseeditor/mutations', 'init');
-
-        $format = $this->format;
 
         // ADDED.
         $course = $format->get_course();
         $maxsections = $format->get_max_sections();
         $canaddmore = $maxsections > $format->get_last_section_number();
         $activesectionids = [];
-        for ($activesectionextra = $displaysectionextra; /* ... */
-                $activesectionextra; /* ... */
-                $activesectionextra = (($activesectionextra->parentid
-                    && ($activesectionextra->levelsan > FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1
-                        || $activesectionextra->parentid != $format->fmtrootsectionid))
-                    ? $sectionsextra[$activesectionextra->parentid] : null)) {
+        for (
+            $activesectionextra = $displaysectionextra; /* ... */
+            $activesectionextra; /* ... */
+            $activesectionextra = (($activesectionextra->parentid
+                && ($activesectionextra->levelsan > FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1
+                    || $activesectionextra->parentid != $format->fmtrootsectionid))
+                ? $sectionsextra[$activesectionextra->parentid] : null)
+        ) {
             $activesectionids[$activesectionextra->id] = true;
         }
         $sectionpreferencesarray = $format->get_sections_preferences();
@@ -97,10 +99,12 @@ class content extends content_base {
 
         // INCLUDED from course/format/classes/output/section_renderer.php print_single_section_page() .
         // Can we view the section in question?
-        if (!(
-            ($sectioninfo = $displaysectionextra->sectionbase)
-            && ($sectioninfo->section == 0 || $sectioninfo->uservisible && $format->is_section_visible($sectioninfo))
-        )) {
+        if (
+            !(
+                ($sectioninfo = $displaysectionextra->sectionbase)
+                && ($sectioninfo->section == 0 || $sectioninfo->uservisible && $format->is_section_visible($sectioninfo))
+            )
+        ) {
             // This section doesn't exist or is not available for the user.
             // We actually already check this in course/view.php but just in case exit from this function as well.
             throw new \moodle_exception(
@@ -119,10 +123,16 @@ class content extends content_base {
         $tabs = [];
         $inactivetabs = [];
 
-        $tabln = array_fill(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
-                            FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT - 1, null);
-        $sectionextraatlevel = array_fill(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
-                                     FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT, null);
+        $tabln = array_fill(
+            FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1,
+            FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT - 1,
+            null
+        );
+        $sectionextraatlevel = array_fill(
+            FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
+            FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT,
+            null
+        );
 
         foreach ($sectionsextra as $thissectionextra) {
             $thissection = $thissectionextra->sectionbase;
@@ -136,9 +146,10 @@ class content extends content_base {
             }
 
             // Make and add tabs for visible pages.
-            if ($thissectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
-                && $format->is_section_visible($thissection)) {
-
+            if (
+                $thissectionextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC
+                && $format->is_section_visible($thissection)
+            ) {
                 $sectionname = get_section_name($course, $thissection);
 
                 $url = course_get_url($course, $thissection);
@@ -146,15 +157,18 @@ class content extends content_base {
                 // REMOVED: marker.
 
                 // Include main tab, and index tabs for pages with sub-pages.
-                for ($level = max(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1, $thissectionextra->levelsan); /* ... */
-                     $level <= $thissectionextra->pagedepthdirect
+                for (
+                    $level = max(FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1, $thissectionextra->levelsan); /* ... */
+                    $level <= $thissectionextra->pagedepthdirect
                                 + ($format->show_editor()
                                     && $thissectionextra->pagedepthdirect < FORMAT_MULTITOPIC_SECTION_LEVEL_PAGE_USE ?
                                         1 : 0); /* ... */
-                     $level++) {
-
+                     $level++
+                ) {
                     // Make tab.
-                    $newtab = new \tabobject("tab_id_{$thissection->id}_l{$level}", $url,
+                    $newtab = new \tabobject(
+                        "tab_id_{$thissection->id}_l{$level}",
+                        $url,
                         \html_writer::tag('div', $sectionname, ['class' =>
                             'tab_content'
                             . ($thissectionextra->currentnestedlevel >= $level ? ' marker' : '')
@@ -162,7 +176,8 @@ class content extends content_base {
                                || $level > $thissectionextra->pagedepthdirect ? ' dimmed' : ''),
                             'data-itemid' => $thissection->id,
                         ]),
-                        $sectionname);
+                        $sectionname
+                    );
                     $newtab->level = $level - FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT;
 
                     if ($thissection->id == $displaysectionextra->id) {
@@ -176,28 +191,30 @@ class content extends content_base {
                         $tabln[$level - 1]->subtree[] = $newtab;
                     }
                     $tabln[$level] = $newtab;
-
                 }
 
                 // Disable tabs for hidden sections.
                 if (!(($thissection->section == 0) || $thissection->uservisible)) {
                     $inactivetabs[] = "tab_id_{$thissection->id}_l{$thissectionextra->levelsan}";
                 }
-
             }
 
             // Include "add" sub-tabs if editing.
-            if ($thissectionextra->nextanyid == $thissectionextra->nextpageid
-                && $format->show_editor()) {
-
+            if (
+                $thissectionextra->nextanyid == $thissectionextra->nextpageid
+                && $format->show_editor()
+            ) {
                 // Include "add" sub-tabs for each level of page finished.
                 $nextsectionlevel = $thissectionextra->nextpageid ?
                                     $sectionsextra[$thissectionextra->nextpageid]->levelsan : FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT;
-                for ($level = min($sectionextraatlevel[FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - 1]->pagedepthdirect + 1,
-                                    FORMAT_MULTITOPIC_SECTION_LEVEL_PAGE_USE); /* ... */
-                        $level >= $nextsectionlevel + 1; /* ... */
-                        $level--) {
-
+                for (
+                    $level = min(
+                        $sectionextraatlevel[FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC - 1]->pagedepthdirect + 1,
+                        FORMAT_MULTITOPIC_SECTION_LEVEL_PAGE_USE
+                    ); /* ... */
+                    $level >= $nextsectionlevel + 1; /* ... */
+                    $level--
+                ) {
                     $parent = $sectionextraatlevel[$level - 1]->sectionbase;
                     if (!(($parent->section == 0) || $parent->uservisible && $format->is_section_visible($parent))) {
                         continue;
@@ -219,10 +236,12 @@ class content extends content_base {
                     $url = new \moodle_url('/course/format/multitopic/_course_changenumsections.php', $params);
                     $attrs = !$canaddmore ? ['class' => 'dimmed_text cantadd'] : null;
                     $icon = $output->pix_icon('t/switch_plus', $straddsection, 'moodle', $attrs);
-                    $newtab = new \tabobject("tab_id_{$sectionextraatlevel[$level - 1]->id}_l{($level - 1)}_add",
+                    $newtab = new \tabobject(
+                        "tab_id_{$sectionextraatlevel[$level - 1]->id}_l{($level - 1)}_add",
                         $url,
                         $icon,
-                        s($straddsection));
+                        s($straddsection)
+                    );
 
                     // Add "add" tab.
                     if ($level <= FORMAT_MULTITOPIC_SECTION_LEVEL_ROOT + 1) {
@@ -231,17 +250,18 @@ class content extends content_base {
                         $tabln[$level - 1]->subtree[] = $newtab;
                     }
                     $tabln[$level] = null;
-
                 }
-
             }
-
         }
 
         // Display tabs.
-        $tabseft = (new \tabtree($tabs,
-            "tab_id_{$displaysectionextra->id}_l{$displaysectionextra->pagedepthdirect}",
-            $inactivetabs))->export_for_template($output);
+        $tabseft = (
+            new \tabtree(
+                $tabs,
+                "tab_id_{$displaysectionextra->id}_l{$displaysectionextra->pagedepthdirect}",
+                $inactivetabs
+            )
+        )->export_for_template($output);
         foreach ($tabseft->tabs as $tabeft) {
             if (preg_match('/^tab_id_(\d+)_l(\d+)$/', $tabeft->id, $matches)) {
                 $tabeft->sectionid = $matches[1];
@@ -268,7 +288,7 @@ class content extends content_base {
 
         $data = (object)[
             'title' => $format->page_title(), // This method should be in the course_format class.
-            'tabs' => $tabseft,                                                 // ADDED.
+            'tabs' => $tabseft, // ADDED.
             'initialsection' => $initialsection,
             'sections' => $sectionseft,
             'format' => $format->get_format(),
@@ -291,8 +311,10 @@ class content extends content_base {
         $data->numsections = $addsection->export_for_template($output);
 
         // Allow next and back navigation between pages.
-        $sectionnav = new \format_multitopic\output\courseformat\content\sectionnavigation($format,
-                                                                                            $displaysectionextra->sectionbase);
+        $sectionnav = new \format_multitopic\output\courseformat\content\sectionnavigation(
+            $format,
+            $displaysectionextra->sectionbase
+        );
         $data->sectionnavigation = $sectionnav->export_for_template($output);
 
         if ($CFG->version >= 2023021000 && $format->show_editor()) {
@@ -324,8 +346,12 @@ class content extends content_base {
             // The course/view.php check the section existence but the output can be called
             // from other parts so we need to check it.
             if (!$thissection) {
-                throw new \moodle_exception('unknowncoursesection', 'error', course_get_url($course),
-                    format_string($course->fullname));
+                throw new \moodle_exception(
+                    'unknowncoursesection',
+                    'error',
+                    course_get_url($course),
+                    format_string($course->fullname)
+                );
             }
 
             $section = new $this->sectionclass($format, $thissection);
@@ -373,5 +399,4 @@ class content extends content_base {
         }
         return $sectionstodisplay;
     }
-
 }

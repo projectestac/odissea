@@ -390,8 +390,8 @@ $string['tilestyle'] = 'Kachelstil';
 $string['tilestyle_desc'] = 'Stil 1 = Fotokacheln zeigen den Titel oben auf der Kachel.
 Stil 2 = Der Titel ist unten.';
 $string['togglecompletion'] = 'Klicken Sie zum Umschalten des Abschlussstatus';
-$string['togglecompletioncomplete'] = 'Nur abgeschlossene Aktivitäten zeigen';
-$string['togglecompletionincomplete'] = 'Nur unabgeschlossene Aktivitäten zeigen';
+$string['togglecompletioncomplete'] = 'Klicken Sie hier, um den Abschlussstatus umzuschalten (abgeschlossen)';
+$string['togglecompletionincomplete'] = 'Klicken Sie hier, um den Abschlussstatus umzuschalten (unvollständig)';
 $string['tootall'] = 'zu klein für die Kachel';
 $string['toowide'] = 'zu groß für die Kachel';
 $string['transparenttitleadjustments'] = 'Einstellungen für die Titeltransparenz';

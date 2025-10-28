@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Ενέργεια';
+$string['actionsmenu'] = 'Μενού ενεργειών';
 $string['add'] = 'Προσθήκη καταχώρησης';
 $string['addcomment'] = 'Προσθήκη σχολίου';
 $string['addentries'] = 'Προσθήκη καταχωρήσεων';
@@ -113,6 +114,7 @@ $string['data:viewrating'] = 'Εμφάνιση συνολικής αξιολόγ
 $string['data:writeentry'] = 'Εγγραφή καταχωρήσεων';
 $string['date'] = 'Ημερομηνία';
 $string['dateentered'] = 'Η ημερομηνία καταχωρήθηκε';
+$string['datemodified'] = 'Τελευταία επεξεργασία:';
 $string['defaultfielddelimiter'] = '(το κόμμα είναι ο προεπιλεγμένος χαρακτήρας)';
 $string['defaultfieldenclosure'] = '(το προεπιλεγμένο είναι κανένα)';
 $string['defaultsortfield'] = 'Προεπιλεγμένο πεδίο ταξινόμησης';
@@ -377,6 +379,7 @@ $string['selectedrequired'] = 'Απαιτούνται όλα τα επιλεγμ
 $string['selectexportoptions'] = 'Ορισμός επιλογών εξαγωγής';
 $string['selectfields'] = 'Επιλογή πεδίων';
 $string['showall'] = 'Εμφάνιση όλων των καταχωρήσεων';
+$string['showmore'] = 'Δείτε περισσότερα';
 $string['single'] = 'Ατομική προβολή';
 $string['singletemplate'] = 'Ατομική φόρμα';
 $string['singleview'] = 'Μονή προβολή';

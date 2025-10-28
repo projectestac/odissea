@@ -150,6 +150,7 @@ $string['privacy:privatefilespath'] = 'Ιδιωτικά αρχεία';
 $string['privacy:profileimagespath'] = 'Εικόνες προφίλ';
 $string['privacy:sessionpath'] = 'Δεδομένα συνόδου';
 $string['selectfiltertype'] = 'Επιλογή';
+$string['supportmessagesent'] = 'Το μήνυμά σας έχει σταλεί.';
 $string['target:upcomingactivitiesdue'] = 'Δραστηριότητες που λήγουν προσεχώς';
 $string['target:upcomingactivitiesdue_help'] = 'Αυτός ο στόχος δημιουργεί υπενθυμίσεις για δραστηριότητες που λήγουν προσεχώς.';
 $string['target:upcomingactivitiesdueinfo'] = 'Όλες οι ενοράσεις για επερχόμενες «δραστηριότητες που οφείλονται» παρατίθενται εδώ. Αυτοί οι μαθητές έχουν λάβει αυτές τις ενοράσεις άμεσα.';

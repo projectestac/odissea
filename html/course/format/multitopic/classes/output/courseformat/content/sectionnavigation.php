@@ -38,7 +38,6 @@ use stdClass;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class sectionnavigation extends sectionnavigation_base {
-
     /** @var \section_info the course displayed section */
     protected $section;
 

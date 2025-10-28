@@ -39,3 +39,4 @@ $string['name'] = 'Nom';
 $string['progress'] = 'Progrés';
 $string['student'] = 'Estudiant';
 $string['title:incompleted'] = 'No completada';
+$string['updatealluserreport'] = 'Actualitza tots els informes d\'usuari';

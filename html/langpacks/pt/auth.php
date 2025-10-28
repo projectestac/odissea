@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alte
 $string['auth_loginpasswordtoggle'] = 'Alternar visibilidade da senha';
 $string['auth_loginpasswordtoggle_desc'] = 'Adicionar um ícone ao campo de senha na página de autenticação que permite aos utilizadores mostrar ou ocultar a senha inserida.';
 $string['auth_loginrecaptcha'] = 'Ativar reCAPTCHA na autenticação';
-$string['auth_loginrecaptcha_desc'] = 'Adicione um elemento de formulário de confirmação visual/áudio à página de autenticação. Reduz o risco de tentativas de autenticação fraudulentas. Para mais detalhes, visite <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['auth_loginrecaptcha_desc'] = 'Adicionar um elemento de formulário de confirmação visual/áudio à página de autenticação. Reduz o risco de tentativas de autenticação fraudulentas. Para mais detalhes, visite <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
 $string['auth_notconfigured'] = 'O método de autenticação {$a} não está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Esgotou o número de tentativas disponíveis para atualizar o seu e-mail. O seu pedido de atualização foi cancelado.';

@@ -25,15 +25,15 @@
  */
 
 // Require config.
-require(__DIR__.'/../../../config.php');
+require(__DIR__ . '/../../../config.php');
 
 // Require plugin libraries.
-require_once($CFG->dirroot.'/theme/boost_union/lib.php');
-require_once($CFG->dirroot.'/theme/boost_union/locallib.php');
-require_once($CFG->dirroot.'/theme/boost_union/flavours/flavourslib.php');
+require_once($CFG->dirroot . '/theme/boost_union/lib.php');
+require_once($CFG->dirroot . '/theme/boost_union/locallib.php');
+require_once($CFG->dirroot . '/theme/boost_union/flavours/flavourslib.php');
 
 // Require admin library.
-require_once($CFG->libdir.'/adminlib.php');
+require_once($CFG->libdir . '/adminlib.php');
 
 // Get parameters.
 $action = optional_param('action', null, PARAM_TEXT);
@@ -47,7 +47,7 @@ admin_externalpage_setup('theme_boost_union_flavours');
 
 // Prepare the page (to make sure that all necessary information is already set even if we just handle the actions as a start).
 $PAGE->set_context($context);
-$PAGE->set_url(new moodle_url('/theme/boost_union/flavours/overview.php'));
+$PAGE->set_url(new core\url('/theme/boost_union/flavours/overview.php'));
 $PAGE->set_cacheable(false);
 
 // Process actions.
@@ -65,15 +65,23 @@ if ($action !== null && confirm_sesskey()) {
             $currentflavour = $DB->get_record('theme_boost_union_flavours', ['id' => $flavourid]);
             $prevflavour = $DB->get_record('theme_boost_union_flavours', ['sort' => $currentflavour->sort - 1]);
             if ($prevflavour) {
-                $DB->set_field('theme_boost_union_flavours', 'sort', $prevflavour->sort,
-                        ['id' => $currentflavour->id]);
-                $DB->set_field('theme_boost_union_flavours', 'sort', $currentflavour->sort,
-                        ['id' => $prevflavour->id]);
+                $DB->set_field(
+                    'theme_boost_union_flavours',
+                    'sort',
+                    $prevflavour->sort,
+                    ['id' => $currentflavour->id]
+                );
+                $DB->set_field(
+                    'theme_boost_union_flavours',
+                    'sort',
+                    $currentflavour->sort,
+                    ['id' => $prevflavour->id]
+                );
 
                 // Purge the flavours cache as the users might get other flavours which apply after the sorting.
-                // We would have preferred using cache_helper::purge_by_definition, but this just purges the session cache
+                // We would have preferred using \core_cache\helper::purge_by_definition, but this just purges the session cache
                 // of the current user and not for all users.
-                cache_helper::purge_by_event('theme_boost_union_flavours_resorted');
+                \core_cache\helper::purge_by_event('theme_boost_union_flavours_resorted');
             }
             break;
         case 'down':
@@ -81,15 +89,23 @@ if ($action !== null && confirm_sesskey()) {
             $currentflavour = $DB->get_record('theme_boost_union_flavours', ['id' => $flavourid]);
             $nextflavour = $DB->get_record('theme_boost_union_flavours', ['sort' => $currentflavour->sort + 1]);
             if ($nextflavour) {
-                $DB->set_field('theme_boost_union_flavours', 'sort', $nextflavour->sort,
-                        ['id' => $currentflavour->id]);
-                $DB->set_field('theme_boost_union_flavours', 'sort', $currentflavour->sort,
-                        ['id' => $nextflavour->id]);
+                $DB->set_field(
+                    'theme_boost_union_flavours',
+                    'sort',
+                    $nextflavour->sort,
+                    ['id' => $currentflavour->id]
+                );
+                $DB->set_field(
+                    'theme_boost_union_flavours',
+                    'sort',
+                    $currentflavour->sort,
+                    ['id' => $nextflavour->id]
+                );
 
                 // Purge the flavours cache as the users might get other flavours which apply after the sorting.
-                // We would have preferred using cache_helper::purge_by_definition, but this just purges the session cache
+                // We would have preferred using \core_cache\helper::purge_by_definition, but this just purges the session cache
                 // of the current user and not for all users.
-                cache_helper::purge_by_event('theme_boost_union_flavours_resorted');
+                \core_cache\helper::purge_by_event('theme_boost_union_flavours_resorted');
             }
             break;
     }
@@ -113,9 +129,14 @@ $table->define_baseurl($PAGE->url);
 echo $OUTPUT->header();
 echo \theme_boost_union\admin_settingspage_tabs_with_tertiary::get_tertiary_navigation_for_externalpage();
 
+// Show alert if Boost Union is not the active theme.
+echo theme_boost_union_is_not_active_alert();
+
 // Show flavours intro.
 $intro = new \core\output\notification(
-        get_string('flavoursoverview_desc', 'theme_boost_union'), \core\output\notification::NOTIFY_INFO);
+    get_string('flavoursoverview_desc', 'theme_boost_union'),
+    \core\output\notification::NOTIFY_INFO
+);
 $intro->set_show_closebutton(false);
 $intro->set_extra_classes(['mb-5', 'alert-dark']);
 echo $OUTPUT->render($intro);
@@ -123,8 +144,10 @@ echo $OUTPUT->render($intro);
 // Prepare 'Create flavours' button.
 $createbutton = $OUTPUT->box_start();
 $createbutton .= $OUTPUT->single_button(
-        new \moodle_url('/theme/boost_union/flavours/edit.php', ['action' => 'create', 'sesskey' => sesskey()]),
-        get_string('flavourscreateflavour', 'theme_boost_union'), 'get');
+    new \core\url('/theme/boost_union/flavours/edit.php', ['action' => 'create', 'sesskey' => sesskey()]),
+    get_string('flavourscreateflavour', 'theme_boost_union'),
+    'get'
+);
 $createbutton .= $OUTPUT->box_end();
 
 // If there aren't any flavours yet.

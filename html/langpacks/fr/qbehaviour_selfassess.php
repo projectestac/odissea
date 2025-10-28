@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comment'] = 'Commentaires dans votre évaluation (facultatif)';
+$string['pluginname'] = 'Auto-évaluation';
+$string['privacy:metadata'] = 'Le plugin de comportement des questions d\'auto-évaluation ne stocke aucune donnée personnelle. Toutes les données sont stockées par le système de questions principal.';
 $string['rated'] = 'Classé {$a} étoiles';
 $string['rateyourself'] = 'Évaluez votre réponse';
+$string['rateyourself_help'] = 'Compte tenu des conseils fournis dans les commentaires, comment évalueriez-vous la réponse que vous avez donnée à cette question ?';
 $string['saveandfeedback'] = 'Enregistrer';
+$string['selfassessment'] = 'Auto-évaluation : {$a}';
+$string['selfcommented'] = 'Commenté : {$a->comment}';

@@ -223,7 +223,7 @@ define(["jquery", "core/templates", "core/config", "core/ajax", "core/str", "cor
                         const currentTarget = $(e.currentTarget);
                         const section = currentTarget.closest('li.section');
                         currentTarget.replaceWith(
-                            '<span class="completionspinner spinner-grow spinner-grow-sm text-secondary mt-2 mr-2"'
+                            '<span class="completionspinner spinner-grow spinner-grow-sm text-secondary mt-2 me-2"'
                             + ' role="status"><span class="sr-only">' + loadingString + '</span></span>'
                         );
                         const cmId = parseInt(currentTarget.data('cmid'));

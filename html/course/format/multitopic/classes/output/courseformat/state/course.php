@@ -32,7 +32,6 @@ require_once(__DIR__ . '/../../../../lib.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class course extends base_course {
-
     /** @var course_format the course format class */
     protected $format;
 

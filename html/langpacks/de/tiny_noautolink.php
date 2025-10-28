@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buttontitle'] = 'Kein Auto-Link';
-$string['errorinvalidurl'] = 'Der ausgewählte Inhalt ist keine URL. Versuchen Sie es bitte noch einmal.';
+$string['errorinvalidurl'] = 'Der ausgewählte Inhalt ist keine URL. Versuchen Sie es bitte nochmal.';
 $string['helplinktext'] = 'Hilfe für \'Kein Auto-Link\'';
 $string['infoaddsuccess'] = 'Auto-Link-Schutz hinzugefügt.';
-$string['infoemptyselection'] = 'Markieren Sie einen Text und versuchen Sie es noch einmal.';
+$string['infoemptyselection'] = 'Markieren Sie einen Text und versuchen Sie es nochmal.';
 $string['inforemovesuccess'] = 'Auto-Link-Schutz entfernt.';
 $string['pluginname'] = 'Kein Auto-Link';
 $string['privacy:metadata'] = 'Das Plugin \'Tiny - Kein Auto-Link\' speichert keine personenbezogenen Daten.';

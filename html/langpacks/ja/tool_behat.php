@@ -47,11 +47,11 @@ $string['stepsdefinitionscontains'] = '含む';
 $string['stepsdefinitionsfilters'] = 'ステップ定義';
 $string['stepsdefinitionstype'] = 'タイプ';
 $string['theninfo'] = 'Then - アウトカムが期待された結果であることを確認する';
-$string['unknownexceptioninfo'] = 'Seleniumまたはブラウザに問題が発生しました。あなたが最新バージョンのSeleniumを使用していることを確認してください。エラー:';
+$string['unknownexceptioninfo'] = 'Seleniumまたはブラウザに問題が発生しました。あなたが最新バージョンのSeleniumを使用していることをご確認ください。エラー:';
 $string['viewsteps'] = 'フィルタ';
 $string['warndirrootconfigfound'] = '{$a} で設定ファイルが見つかりました。このファイルは自動的に更新されていないため 最新ではなくなります。私たちはこのファイルの削除をお勧めします。';
 $string['wheninfo'] = 'When - イベントを発生させるアクション';
-$string['wrongbehatsetup'] = 'behatセットアップに問題が生じたため、ステップ定義を一覧表示できませんでした: <b>{$a->errormsg}</b><br /><br />確認してください:<ul>
+$string['wrongbehatsetup'] = 'behatセットアップに問題が生じたため、ステップ定義を一覧表示できませんでした: <b>{$a->errormsg}</b><br /><br />ご確認ください:<ul>
 <li>config.php内で「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」に「$CFG->dataroot」「$CFG->prefix」および「$CFG->wwwroot」とは異なる値が設定されている。</li>
 <li>あなたのMoodleディレクトリから「{$a->behatinit}」を実行した。</li>
 <li>ベンダにより依存関係がインストールされ {$a->behatcommand} ファイルに実行権限が与えられている。</li></ul>';

@@ -46,4 +46,4 @@ $string['privacy:metadata:textpurpose'] = 'Übermittelter Text für diesen Versu
 $string['privacy:path'] = 'Abgabetext';
 $string['wordlimit'] = 'Wortbegrenzung';
 $string['wordlimit_help'] = 'Wenn Online-Texteingabe aktiviert wurde, legen Sie hier die Höchstzahl der Wörter fest, die eine Lösung enthalten darf.';
-$string['wordlimitexceeded'] = 'Die maximale Anzahl von Wörtern für diese Aufgabenlösung ist {$a->limit}. Ihre Antwort hat aber {$a->count} Wörter. Verkürzen Sie Ihren Text und speichern Sie ihn erneut.';
+$string['wordlimitexceeded'] = 'Die maximale Anzahl von Wörtern für diese Aufgabenlösung ist {$a->limit}. Ihre Antwort hat aber {$a->count} Wörter. Verkürzen Sie Ihren Text und speichern Sie ihn nochmal.';

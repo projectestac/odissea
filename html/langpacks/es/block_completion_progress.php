@@ -83,7 +83,6 @@ $string['not_all_expected_set'] = 'No todas las actividades con finalización ti
 $string['now_indicator'] = 'AHORA';
 $string['overview'] = 'Vista general de estudiantes';
 $string['pluginname'] = 'Estado de Finalización';
-$string['privacy:metadata'] = 'El Bloque Progreso de Finalización solamente muestra datos de finalización existentes.';
 $string['progress'] = 'Progreso';
 $string['progressbar'] = 'Estado de Finalización';
 $string['selectitem'] = 'Seleccionar \'{$a}\'';

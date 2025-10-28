@@ -27,4 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['onesession'] = 'Bloqueja les connexions simultànies';
 $string['onesession_help'] = 'Si s\'activa, els usuaris poden continuar amb l\'intent del qüestionari únicament a la mateixa sessió del navegador. Es bloquejarà qualsevol intent d\'obrir el mateix intent del qüestionari utilitzant un altre ordinador, dispositiu o navegador. Això pot ser útil per assegurar-se que ningú ajuda l\'estudiant obrint el mateix intent del qüestionari en un altre ordinador.';
+$string['pluginname'] = 'Bloqueja la regla d\'accés al qüestionari de les sessions simultànies';
 $string['studentinfo'] = 'Atenció! Està prohibit canviar de dispositiu mentre feu un intent de respondre el qüestionari. Tingueu en compte que, després de començar l\'intent de respondre el qüestionari, es blocarà qualsevol connexió amb aquest qüestionari feta amb altres ordinadors, dispositius i navegadors. No tanqueu la finestra del navegador fins que acabeu l\'intent de respondre el qüestionari; altrament, no podreu completar-lo.';
+$string['unlockthisattempt'] = 'Permet que l\'estudiant continuï aquest intent utilitzant un dispositiu diferent';
+$string['unlockthisattempt_header'] = 'Desbloqueja aquest intent';

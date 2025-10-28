@@ -775,7 +775,7 @@ Dans la plupart des logiciels de courriel, cette adresse devrait apparaître com
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a} : confirmation du changement de mot de passe';
-$string['emailpasswordconfirmmaybesent'] = '<p>Si vous avez fourni un nom d’utilisateur correct ou une adresse de courriel unique, un message vous a été envoyé par courriel.</p> <p>Ce message contient de simples instructions pour confirmer et terminer la modification du mot de passe. Si vous n’arrivez toujours pas à vous connecter, veuillez contacter l’administrateur du site.</p>';
+$string['emailpasswordconfirmmaybesent'] = '<p>Si vous avez fourni un nom d’utilisateur correct ou une adresse de courriel unique, un message vous a été envoyé par courriel.</p> <p>Ce message contient des instructions simples pour confirmer et terminer la modification du mot de passe. Si vous n’arrivez toujours pas à vous connecter, veuillez contacter l’administrateur du site.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p>Le compte utilisateur indiqué n’a pas d’adresse de courriel.</p>
 <p>Veuillez contacter l’administrateur du site.</p>';
 $string['emailpasswordconfirmnotsent'] = '<p>Les informations fournies ne correspondent pas à un compte utilisateur existant.</p>
@@ -1951,7 +1951,7 @@ $string['searchgroups'] = 'Rechercher des groupes';
 $string['searchitems'] = 'Rechercher des éléments';
 $string['searchoptions'] = 'Options de recherche';
 $string['searchresults'] = 'Résultats de la recherche';
-$string['searchusers'] = 'Rechercher des utilisateurs';
+$string['searchusers'] = 'Chercher utilisateur';
 $string['sec'] = 's';
 $string['seconds'] = 'secondes';
 $string['secondsleft'] = '{$a} s';

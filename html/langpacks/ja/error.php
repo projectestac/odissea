@@ -186,7 +186,7 @@ $string['categorytoolong'] = 'カテゴリ名が長すぎます。';
 $string['commentmisconf'] = 'コメントIDの設定が正しくありません。';
 $string['componentisuptodate'] = 'コンポーネントは最新です。';
 $string['confirmationnotenabled'] = 'このサイトではユーザ確認は有効にされていません。';
-$string['confirmsesskeybad'] = '申し訳ございません、このアクションの実行に関してあなたのセッションキーでは確認できませんでした。このセキュリティ機能はあなたのユーザ名で重要な機能が不測または悪意により実行されることを防いでいます。本当にこの機能を実行したいか確認してください。';
+$string['confirmsesskeybad'] = '申し訳ございません、このアクションの実行に関してあなたのセッションキーでは確認できませんでした。このセキュリティ機能はあなたのユーザ名で重要な機能が不測または悪意により実行されることを防いでいます。本当にこの機能を実行したいかご確認ください。';
 $string['contenttypenotfound'] = '「 {$a} 」コンテンツバンクタイプが存在しないか認識されませんでした。';
 $string['contentvisibilitynotfound'] = '値「 {$a} 」のコンテンツ可視性は存在しないか認識できません。';
 $string['couldnotassignrole'] = 'あなたへのロール割り当て中に深刻ですが不明なエラーが発生しました。';
@@ -202,8 +202,8 @@ $string['coursemisconf'] = 'コース設定が正しくありません。';
 $string['courserequestdisabled'] = '申し訳ございません、コースリクエストは管理者により無効にされています。';
 $string['csvcolumnduplicates'] = '重複するカラムが検出されました。';
 $string['csvemptyfile'] = 'CSVファイルが空です。';
-$string['csvfewcolumns'] = 'カラムが不足しています。セパレータ設定を確認してください。';
-$string['csvfileerror'] = 'CSVファイルのフォーマットに問題があります。ヘッディング数およびカラム数が合致するか確認してください。また、セパレータおよびファイルエンコーディングが正しいか確認してください: {$a}';
+$string['csvfewcolumns'] = 'カラムが不足しています。セパレータ設定をご確認ください。';
+$string['csvfileerror'] = 'CSVファイルのフォーマットに問題があります。ヘッディング数およびカラム数が合致するかご確認ください。また、セパレータおよびファイルエンコーディングが正しいかご確認ください: {$a}';
 $string['csvinvalidcols'] = '<b>無効なCSVファイル:</b> 最初の行には「ヘッダフィールド」を含み、ファイルタイプは<br />「カンマ区切りの拡張フィールド」<br />または<br />「CAVV結果コード (Cardholder Authentication Verification Value) を含むカンマ区切りの拡張フィールド」にする必要があります。';
 $string['csvinvalidcolsnum'] = '無効なCSVファイル - それぞれの行には49または70フィールドを含む必要があります。';
 $string['csvloaderror'] = 'CSVファイルの読み込み中にエラーが発生しました: {$a}';
@@ -211,9 +211,9 @@ $string['csvnodata'] = '無効なCSVファイル - CSVファイルにはヘッ�
 $string['csvweirdcolumns'] = '無効なCSVファイルフォーマット - カラム数が一定ではありません!';
 $string['dbconnectionfailed'] = '<p>エラー: データベースの接続に失敗しました。</p>
 <p>データベースがオーバーロードしているか、正常に動作していない可能性があります。</p>
-<p>サイト管理者はconfig.phpでデータベース詳細が正しく設定されているか確認してください。</p>';
+<p>サイト管理者はconfig.phpでデータベース詳細が正しく設定されているかご確認ください。</p>';
 $string['dbdriverproblem'] = '<p>エラー: データベースドライバに問題が見つかりました。</p>
-<p>サイト管理者はサーバ設定を確認してください。</p><p>{$a}</p>';
+<p>サイト管理者はサーバ設定をご確認ください。</p><p>{$a}</p>';
 $string['dbsessionbroken'] = '深刻なデータベースセッション問題が検出されました。<br /><br />サイト管理者にご連絡ください。';
 $string['dbsessionhandlerproblem'] = 'データベースセッションのセットアップに失敗しました。サイト管理者にご連絡ください。';
 $string['dbsessionmysqlpacketsize'] = '深刻なデータベースセッション問題が検出されました。サイト管理者にご連絡ください。多くの場合、この問題はMySQL設定「max_allowed_packet」の設定値が小さいことに起因しています。';
@@ -526,7 +526,7 @@ $string['redissessionhandlerproblem'] = 'Redisセッションのセットアッ�
 $string['refoundto'] = '払戻し可能額: {$a}';
 $string['refoundtoorigi'] = '元の金額まで払戻し: {$a}';
 $string['registrationdisabled'] = 'このサイトでは登録が無効にされています。';
-$string['remotedownloaderror'] = '<p>あなたのサーバへのコンポーネントのダウンロードに失敗しました。プロキシ設定を確認してください。PHP cURL拡張モジュールの使用を強くお勧めします。</p>
+$string['remotedownloaderror'] = '<p>あなたのサーバへのコンポーネントのダウンロードに失敗しました。プロキシ設定をご確認ください。PHP cURL拡張モジュールの使用を強くお勧めします。</p>
 <p><a href="{$a->url}">{$a->url}</a>ファイルを手動でダウンロードした後、あなたのサーバの「{$a->dest}」にコピーおよび展開してください。</p>';
 $string['remotedownloadnotallowed'] = 'あなたのサーバにコンポーネントをダウンロードできません (allow_url_fopenが無効です)。<br /><br /><a href="{$a->url}">{$a->url}</a>ファイルを手動でダウンロードした後、あなたのサーバの「 {$a->dest} 」にコピーおよび展開してください。';
 $string['reportnotavailable'] = 'このタイプのレポートはサイトコースでのみ利用できます。';
@@ -534,7 +534,7 @@ $string['requirecorrectaccess'] = '無効なURLまたはポートです。';
 $string['requireloginerror'] = 'コースまたは活動にアクセスできません。';
 $string['restore_path_element_missingmethod'] = 'リストアメソッド {$a} がありません。開発者により定義される必要があります。';
 $string['restore_path_element_noobject'] = 'リストアオブジェクト {$a} はオブジェクトではありません。';
-$string['restorechecksumfailed'] = 'あなたのセッションに保存されているリストア情報に問題が生じました。あなたのPHPメモリ/DBパッケージサイズ制限を確認してください。リストアを停止しました。';
+$string['restorechecksumfailed'] = 'あなたのセッションに保存されているリストア情報に問題が生じました。あなたのPHPメモリ/DBパッケージサイズ制限をご確認ください。リストアを停止しました。';
 $string['restrictedcontextexception'] = '申し訳ございません、外部関数の実行はコンテクストの制限に違反します。';
 $string['restricteduser'] = '申し訳ございません、あなたのアカウント「 {$a} 」ではこの処理の実行を制限されています。';
 $string['reverseproxyabused'] = 'リバースプロキシが有効にされているため、サーバに直接アクセスできません。<br />サーバ管理者にご連絡ください。';
@@ -564,11 +564,11 @@ $string['sitepolicynotagreed'] = 'サイトポリシーに同意されていま�
 $string['socksnotsupported'] = 'PHP4ではSOCKS5プロキシはサポートされていません。';
 $string['spellcheckernotconf'] = 'スペルチェッカが設定されていません。';
 $string['sslonlyaccess'] = '申し訳ございません、セキュリティ上の理由からhttpsアクセスのみ許可されています。';
-$string['statscatchupmode'] = '現在、統計はキャッチアップモードです。今までのところ {$a->daysdone} 日分が処理され、{$a->dayspending} 日分が未処理です。すぐに確認してください!';
+$string['statscatchupmode'] = '現在、統計はキャッチアップモードです。今までのところ {$a->daysdone} 日分が処理され、{$a->dayspending} 日分が未処理です。すぐにご確認ください!';
 $string['statsdisable'] = '統計が有効にされていません。';
 $string['statsnodata'] = 'このコースおよび期間の組み合わせで利用可能なデータはありません。';
-$string['storedfilecannotcreatefile'] = 'ローカルファイルプールのファイルを作成できません。datarootディレクトリのパーミッションおよび利用可能なディスクスペースを確認してください。';
-$string['storedfilecannotcreatefiledirs'] = 'ローカルファイルプールのファイルを作成できません。datarootのパーミッションを確認してください。';
+$string['storedfilecannotcreatefile'] = 'ローカルファイルプールのファイルを作成できません。datarootディレクトリのパーミッションおよび利用可能なディスクスペースをご確認ください。';
+$string['storedfilecannotcreatefiledirs'] = 'ローカルファイルプールのファイルを作成できません。datarootのパーミッションをご確認ください。';
 $string['storedfilecannotread'] = 'ファイルを読み込めません。ファイルが存在しないかパーミッションに問題があります。';
 $string['storedfilecannotreadfile'] = 'ファイル「 {$a} 」を読めません。ファイルが存在しないかパーミッションに問題があります。';
 $string['storedfilenotcreated'] = 'ファイル「  {$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename} 」を作成できません。';

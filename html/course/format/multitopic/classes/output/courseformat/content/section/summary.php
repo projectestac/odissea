@@ -39,7 +39,6 @@ use core_courseformat\output\local\content\section\summary as summary_base;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class summary extends summary_base {
-
     /**
      * @var \section_info the course section class
      * Redeclaration deprecated since 5.0, see MDL-72526.
@@ -87,8 +86,10 @@ class summary extends summary_base {
             $filename = $file->get_filename();
             $filenameextpos = strrpos($filename, '.');
             if ((substr($filename, 0, 4) == 'goi_') && $filenameextpos) {
-                $imageurl = \moodle_url::make_file_url('/pluginfile.php' ,
-                                    "/{$file->get_contextid()}/course/section/{$section->id}{$file->get_filepath()}{$filename}");
+                $imageurl = \moodle_url::make_file_url(
+                    '/pluginfile.php',
+                    "/{$file->get_contextid()}/course/section/{$section->id}{$file->get_filepath()}{$filename}"
+                );
                 $imagename = substr($filename, 4, $filenameextpos - 4);
                 $authorwithurl = $file->get_author();
                 $licencecode = $file->get_license();
@@ -109,13 +110,18 @@ class summary extends summary_base {
         }
         // END ADDED.
 
-        $summarytext = $o . file_rewrite_pluginfile_urls($section->summary, 'pluginfile.php',
-            $context->id, 'course', 'section', $section->id);
+        $summarytext = $o . file_rewrite_pluginfile_urls(
+            $section->summary,
+            'pluginfile.php',
+            $context->id,
+            'course',
+            'section',
+            $section->id
+        );
 
         $options = new \stdClass();
         $options->noclean = true;
         $options->overflowdiv = true;
         return format_text($summarytext, $section->summaryformat, $options);
     }
-
 }

@@ -348,7 +348,13 @@ class mod_feedback_complete_form extends moodleform {
 
         // Add red asterisks on required fields.
         if ($item->required) {
-            $required = $OUTPUT->pix_icon('req', get_string('requiredelement', 'form'), 'moodle', ['class' => 'ms-2']);
+            $requiredlabel = get_string('requiredelement', 'form');
+            $pixparams = [
+                'class' => 'ms-2',
+                'title' => $requiredlabel,
+            ];
+            $required = $OUTPUT->pix_icon('req', '', 'moodle', $pixparams)
+                . \core\output\html_writer::span("($requiredlabel)", 'sr-only');
             $element->setLabel($element->getLabel() . $required);
             $this->hasrequired = true;
         }
@@ -472,14 +478,10 @@ class mod_feedback_complete_form extends moodleform {
         foreach ($actions as $action) {
             $menu->add($action);
         }
-        $editmenu = $OUTPUT->render($menu);
-        $draghandle = $OUTPUT->render_from_template('core/drag_handle',
-                ['movetitle' => get_string('move_item', 'mod_feedback')]);
-
-        $name = html_writer::div($draghandle, 'itemhandle', ['data-drag-type' => 'move']) .
-                html_writer::div($element->getLabel(), 'itemname', ['data-region' => 'item-title']) .
-                html_writer::div($editmenu, 'itemactions');
-        $element->setLabel(html_writer::div($name, 'itemtitle d-flex'));
+        $menudata = $menu->export_for_template($OUTPUT);
+        $element->setLabel(html_writer::span($element->getLabel(), '', [
+            'data-item-actions-menu' => json_encode($menudata),
+        ]));
     }
 
     /**

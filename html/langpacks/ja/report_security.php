@@ -45,8 +45,8 @@ $string['check_crawlers_error'] = 'サーチエンジンによるゲストアク
 $string['check_crawlers_info'] = 'サーチエンジンはゲストとして入ることができます。';
 $string['check_crawlers_name'] = 'Googleに公開する';
 $string['check_crawlers_ok'] = 'サーチエンジンによるアクセスは有効にされていません。';
-$string['check_defaultuserrole_details'] = '<p>すべてのログインユーザにはデフォルトユーザロールのケイパビリティが付与されます。このロールに危険なケイパビリティが許可されていないことを確認してください。デフォルトユーザロールでサポートされるレガシータイプは「認証済みユーザ」のみです。コース表示ケイパビリティは有効にすべきではありません。</p>
-<p>自動データ削除リクエスト承認 (tool_dataprivacy | automaticdatadeletionapproval) オプションが有効されていることを確認してください。ユーザは大量データ削除の可能性のある削除を要求できます。</p>';
+$string['check_defaultuserrole_details'] = '<p>すべてのログインユーザにはデフォルトユーザロールのケイパビリティが付与されます。このロールに危険なケイパビリティが許可されていないことをご確認ください。デフォルトユーザロールでサポートされるレガシータイプは「認証済みユーザ」のみです。コース表示ケイパビリティは有効にすべきではありません。</p>
+<p>自動データ削除リクエスト承認 (tool_dataprivacy | automaticdatadeletionapproval) オプションが有効されていることをご確認ください。ユーザは大量データ削除の可能性のある削除を要求できます。</p>';
 $string['check_defaultuserrole_error'] = 'デフォルトユーザロール「 {$a} 」は正しくない定義です!';
 $string['check_defaultuserrole_name'] = 'すべてのユーザのデフォルトロール';
 $string['check_defaultuserrole_notset'] = 'デフォルトロールが設定されていません。';
@@ -67,13 +67,13 @@ $string['check_embed_details'] = '<p>無制限のオブジェクト埋め込み�
 $string['check_embed_error'] = '無制限のオブジェクト埋め込みが許可されています - これは大部分のサーバで非常に危険な設定です。';
 $string['check_embed_name'] = 'EMBEDおよびOBJECTを許可する';
 $string['check_embed_ok'] = '無制限のオブジェクト埋め込みは許可されていません。';
-$string['check_frontpagerole_details'] = '<p>すべての登録ユーザのサイトホーム活動にはデフォルトのサイトホームロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
+$string['check_frontpagerole_details'] = '<p>すべての登録ユーザのサイトホーム活動にはデフォルトのサイトホームロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されているかどうかご確認ください。</p>
 <p>この目的のため、特別なロールを作成してレガシタイプのロールは使用しないことをお勧めします。</p>';
 $string['check_frontpagerole_error'] = '正しくないサイトホームロール「 {$a} 」の割り当てが検出されました!';
 $string['check_frontpagerole_name'] = 'サイトホームロール';
 $string['check_frontpagerole_notset'] = 'サイトホームロールが設定されていません。';
 $string['check_frontpagerole_ok'] = 'サイトホームロール定義はOKです。';
-$string['check_guestrole_details'] = '<p>ゲストロールはゲストに使用され、ログインユーザおよび一時的なゲストコースアクセスには使用されません。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
+$string['check_guestrole_details'] = '<p>ゲストロールはゲストに使用され、ログインユーザおよび一時的なゲストコースアクセスには使用されません。このロールにリスクのあるケイパビリティが許可されているかどうかご確認ください。</p>
 <p>ゲストロールでサポートされているレガシタイプのロールは「ゲスト」のみです</p>';
 $string['check_guestrole_error'] = 'ゲストロール「 {$a} 」の定義は正しくありません!';
 $string['check_guestrole_name'] = 'ゲストロール';
@@ -99,16 +99,16 @@ $string['check_publicpaths_generic'] = '{$a} ファイルは公開しないで�
 $string['check_publicpaths_name'] = 'すべての公開およびプライベートパスをチェックする';
 $string['check_publicpaths_ok'] = 'すべての内部パスは外部からアクセスできません。';
 $string['check_publicpaths_warning'] = '内部パスの一部に外部からアクセスできます。';
-$string['check_riskadmin_detailsok'] = '<p>次のシステム管理者一覧を確認してください:</p>{$a}';
-$string['check_riskadmin_detailswarning'] = '<p>次のシステム管理者一覧を確認してください。:</p>{$a->admins}
+$string['check_riskadmin_detailsok'] = '<p>次のシステム管理者一覧をご確認ください:</p>{$a}';
+$string['check_riskadmin_detailswarning'] = '<p>次のシステム管理者一覧をご確認ください。:</p>{$a->admins}
 <p>システムコンテクストのみへの管理者ロール割り当てをお勧めします。次のユーザはサポートされない管理者ロールが他のコンテクストで割り当てられています:</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = '管理者';
 $string['check_riskadmin_ok'] = '{$a} 名のサーバ管理者が登録されています。';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) ロール割り当てをレビューする</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} 名のサーバ管理者および {$a->unsupcount} 名のサポートされない管理者ロールの割り当てが見つかりました。';
-$string['check_riskbackup_details_overriddenroles'] = '<p>これらのアクティブなオーバーライドはバックアップ内にユーザデータを含むことができる能力をユーザに与えます。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
-$string['check_riskbackup_details_systemroles'] = '<p>現在、以下のシステムロールはバックアップ内にユーザデータを含むことをユーザに許可しています。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>上記のロールまたはローカルオーバーライドのため以下のユーザアカウントは現在コースに登録しているユーザの個人情報を含むバックアップを作成できるパーミッションを持っています。これらのユーザが (a)信用されて (b)強度の高いパスワードで守られていることを確認してください:</p> {$a}';
+$string['check_riskbackup_details_overriddenroles'] = '<p>これらのアクティブなオーバーライドはバックアップ内にユーザデータを含むことができる能力をユーザに与えます。このパーミッションが本当に必要かどうかご確認ください。</p> {$a}';
+$string['check_riskbackup_details_systemroles'] = '<p>現在、以下のシステムロールはバックアップ内にユーザデータを含むことをユーザに許可しています。このパーミッションが本当に必要かどうかご確認ください。</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>上記のロールまたはローカルオーバーライドのため以下のユーザアカウントは現在コースに登録しているユーザの個人情報を含むバックアップを作成できるパーミッションを持っています。これらのユーザが (a)信用されて (b)強度の高いパスワードで守られていることをご確認ください:</p> {$a}';
 $string['check_riskbackup_detailsok'] = 'ユーザデータのバックアップを明確に許可しているロールはありません。しかし、「doanything」ケイパビリティを持った管理者はまだユーザデータをバックアップできることに留意してください。';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->contextname} 内の {$a->name}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
@@ -117,7 +117,7 @@ $string['check_riskbackup_ok'] = 'ユーザデータのバックアップを明�
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->contextname} 内の {$a->fullname} ({$a->email})</a>';
 $string['check_riskbackup_warning'] = 'ユーザデータをバックアップできる {$a->rolecount} 件のロール、{$a->overridecount} 件のオーバーライドおよび {$a->usercount} 名のユーザが見つかりました。';
 $string['check_riskxss_details'] = '<p>RISK_XSSは信頼されるユーザのみ使用できるすべての危険なケイパビリティを意味します。</p>
-<p>以下のユーザ一覧を閲覧した後、このサーバにおいてあなたがこれらのユーザを完全に信頼できることを確認してください:</p><p>{$a}</p>';
+<p>以下のユーザ一覧を閲覧した後、このサーバにおいてあなたがこれらのユーザを完全に信頼できることをご確認ください:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'XSS信頼ユーザ';
 $string['check_riskxss_warning'] = 'RISK_XSS - {$a} 名の信頼できるユーザが見つかりました。';
 $string['check_unsecuredataroot_details'] = '<p>datarootディレクトリはウェブからアクセスできないようにしてください。ウェブからアクセスできないディレクトリを使用する最良の方法はパブリックウェブディレクトリ外のディレクトリを使用することです。</p>

@@ -55,15 +55,6 @@ switch ($action) {
     case 'resetcolours':
         $o = reset_colours($settingsurl, $pageurl);
         break;
-    case 'deleteemptysections':
-        schedule_delete_empty_sections();
-        break;
-    case 'reordersections':
-        resolve_section_misnumbering();
-        break;
-    case 'canceldeleteemptysections':
-        cancel_delete_empty_sections();
-        break;
     case 'listproblemcourses':
         $o = list_problem_courses();
         break;
@@ -167,43 +158,6 @@ function reset_colours($settingsurl, $pageurl) {
     return '';
 }
 
-/**
- * Allow site admin to schedule a deletion of empty sections from courses (from admintools.php).
- * @throws coding_exception
- * @throws dml_exception
- * @throws moodle_exception
- * @package format_tiles
- */
-function schedule_delete_empty_sections() {
-    require_sesskey();
-    $courseid = required_param('courseid', PARAM_INT);
-    $course = get_course($courseid);
-    course_section_manager::schedule_empty_sec_deletion($course->id);
-    redirect(
-        course_section_manager::get_list_problem_courses_url(),
-        get_string('scheduleddeleteemptysections', 'format_tiles'),
-        null,
-        core\output\notification::NOTIFY_SUCCESS
-    );
-}
-
-/**
- * Allow site admin to cancel scheduled deletion
- * @throws coding_exception
- * @throws moodle_exception
- * @see schedule_delete_empty_sections()
- * @package format_tiles
- */
-function cancel_delete_empty_sections() {
-    $courseid = required_param('courseid', PARAM_INT);
-    course_section_manager::cancel_empty_sec_deletion($courseid);
-    redirect(
-        course_section_manager::get_list_problem_courses_url(),
-        get_string('cancelled'),
-        null,
-        core\output\notification::NOTIFY_SUCCESS
-    );
-}
 
 /**
  * Get a HTML table of problem courses (too many / badly numbered sections) for display to admin.
@@ -215,11 +169,6 @@ function cancel_delete_empty_sections() {
  */
 function list_problem_courses() {
     global $DB;
-
-    $maxsections = course_section_manager::get_max_sections();
-
-    // Find the courses which have section numbers we would not expect (too high).
-    $problemcourses = course_section_manager::get_problem_courses($maxsections);
 
     $o = html_writer::tag(
         'h2',
@@ -235,7 +184,7 @@ function list_problem_courses() {
                 AND cfo.name IN('tilephoto', 'tileicon')"
     );
 
-    $legacyoptionshtml = !$countlegacyoptions ? '' :
+    $o .= !$countlegacyoptions ? get_string('noproblemsfound', 'format_tiles') :
         html_writer::div(
             html_writer::link(
                 new moodle_url('/course/format/tiles/editor/migratecoursedata.php'),
@@ -244,71 +193,5 @@ function list_problem_courses() {
             ),
         'm-3'
         );
-
-    $o .= $legacyoptionshtml;
-
-    // Now the original problem courses code.
-    if (count($problemcourses)) {
-        $displaycourses = [];
-        foreach ($problemcourses as $problemcourse) {
-            $courseurl = new moodle_url(
-                '/course/view.php',
-                ['id' => $problemcourse->id, 'edit' => 'on', 'sesskey' => sesskey()]
-            );
-            $displaycourse = new \stdClass();
-            $displaycourse->link = html_writer::link(
-                $courseurl,
-                $problemcourse->fullname,
-                ['target' => '_blank']
-            );
-            $displaycourse->count_sections = $problemcourse->count_sections;
-            $displaycourse->max_section_number = $problemcourse->max_section_number;
-            if ($problemcourse->count_sections > $maxsections) {
-                $displaycourse->action = course_section_manager::get_schedule_button($problemcourse->id);
-            } else {
-                $url = new moodle_url(
-                    '/course/format/tiles/editor/admintools.php',
-                    ['action' => 'reordersections', 'courseid' => $problemcourse->id, 'sesskey' => sesskey()]
-                );
-                $displaycourse->action = html_writer::link(
-                    $url,
-                    get_string('fixproblems', 'format_tiles'),
-                    ['target' => '_blank', 'class' => 'btn btn-secondary ml-2']
-                );
-            }
-            $displaycourses[] = $displaycourse;
-        }
-        $table = new html_table();
-        $table->caption = get_string('problemcourses', 'format_tiles');
-        $table->head = [
-            get_string('course'),
-            get_string('numberofsections', 'format_tiles'),
-            get_string('highestsectionnum', 'format_tiles'),
-            get_string('action'),
-        ];
-        $table->data = $displaycourses;
-
-        $o .= html_writer::div(get_string('problemcoursesintro', 'format_tiles'));
-        $o .= html_writer::div(get_string('maxcoursesectionsallowed', 'format_tiles', $maxsections));
-        $o .= html_writer::table($table);
-    } else {
-        $o .= html_writer::div(
-            get_string('noproblemsfound', 'format_tiles'),
-            'alert alert-success'
-        );
-    }
     return $o;
-}
-
-/**
- * Allow site admin to fix a section with mis-numbering.
- * @throws coding_exception
- * @throws moodle_exception
- * @package format_tiles
- */
-function resolve_section_misnumbering() {
-    $courseid = required_param('courseid', PARAM_INT);
-    require_sesskey();
-    course_section_manager::resolve_section_misnumbering($courseid);
-    redirect(course_section_manager::get_list_problem_courses_url());
 }

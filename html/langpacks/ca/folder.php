@@ -58,7 +58,7 @@ Una carpeta pot utilitzar-se
 * Per oferir un espai compartit de càrrega de fitxers per als professors en la pàgina del curs (en aquest cas, s\'ha de mantenir la carpeta oculta a fi que només els professors la puguin veure)';
 $string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Carpetes';
-$string['newfoldercontent'] = 'Nou contingut de carpeta';
+$string['newfoldercontent'] = 'Contingut nou de carpeta';
 $string['noautocompletioninline'] = 'La compleció automàtica de la visualització de l\'activitat no és pot seleccionar al mateix temps que l\'opció «Mostra en línia»';
 $string['page-mod-folder-view'] = 'Pàgina principal del mòdul de fitxers';
 $string['page-mod-folder-x'] = 'Qualsevol pàgina del mòdul de fitxers';
@@ -68,5 +68,5 @@ $string['privacy:metadata'] = 'El connector de recurs de carpeta no emmagatzema 
 $string['search:activity'] = 'Carpeta';
 $string['showdownloadfolder'] = 'Mostra el botó de descàrrega de carpeta';
 $string['showdownloadfolder_help'] = 'Si s\'estableix a «Sí», es mostrarà un botó que permetrà de descarregar el contingut de la carpeta en un fitxer comprimit.';
-$string['showexpanded'] = 'Mostra les subcarpetes expandides.';
+$string['showexpanded'] = 'Mostra les subcarpetes expandides';
 $string['showexpanded_help'] = 'Si s\'estableix a «Sí», es mostraran per defecte les subcarpetes expandides. En cas contrari les subcarpetes es mostraran col·lapsades.';

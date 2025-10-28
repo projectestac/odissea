@@ -172,7 +172,7 @@ $string['confirmcancelquestion'] = 'Segur que voleu cancel·lar?
 Qualsevol informació que hàgiu introduït es perdrà.';
 $string['confirmcancelrestore'] = 'Cancel·la la restauració';
 $string['confirmcancelyes'] = 'Cancel·la la còpia de seguretat';
-$string['confirmnewcoursecontinue'] = 'Nou advertiment de curs';
+$string['confirmnewcoursecontinue'] = 'Advertiment nou de curs';
 $string['confirmnewcoursecontinuequestion'] = 'Durant el procés de restauració del curs, es crearà un curs temporal (amagat). Per cancel·lar el procés de restauració, feu clic a «Cancel·la». No tanqueu el navegador mentre es fa la restauració.';
 $string['copiesinprogress'] = 'Aquest curs té còpies en progrés. <a href="{$a}">Mostra les còpies en progrés.</a>';
 $string['copycoursedesc'] = 'Es duplicarà el curs i es posarà en la categoria de curs seleccionada.';

@@ -82,7 +82,7 @@ Feature: Teacher can hide course modules when subtiles being used and this is re
     And I should not see "Test page NV"
     And I should not see "Test forum NV"
     And I should not see "Test URL NV"
-
+    And I wait "1" seconds
     And "#closesectionbtn-1" "css_element" should not be visible
     And I wait "1" seconds
     And I log out tiles

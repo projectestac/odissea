@@ -50,6 +50,18 @@ class mod_attendance_view_page_params extends mod_attendance_page_with_filter_co
     /** @var string */
     public $sesscourses;
 
+    /** @var mixed */
+    public $grouptype;
+
+    /** @var mixed */
+    public $group;
+
+    /** @var int */
+    public $sessionid;
+
+    /** @var int */
+    public $sort;
+
     /**
      * mod_attendance_view_page_params constructor.
      */

@@ -79,7 +79,7 @@ No hi ha respostes «correctes» o «incorrectes»; ens interessa sols la vostra
 $string['attlsm1'] = 'Actituds cap al pensament i l’aprenentatge';
 $string['attlsm2'] = 'Aprenentatge col·laboratiu';
 $string['attlsm3'] = 'Aprenentatge individualitzat';
-$string['attlsmintro'] = 'En discussió...';
+$string['attlsmintro'] = 'En debat...';
 $string['attlsname'] = 'ATTLS (versió de 20 elements)';
 $string['cannotfindanswer'] = 'Encara no hi ha respostes per aquesta enquesta.';
 $string['cannotfindquestion'] = 'La pregunta no existeix';

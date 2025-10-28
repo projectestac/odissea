@@ -21,7 +21,7 @@
  * needed during the very first steps of installation. This file was
  * generated automatically by export-installer.php (which is part of AMOS
  * {@link https://moodledev.io/general/projects/api/amos}) using the
- * list of strings defined in /install/stringnames.txt.
+ * list of strings defined in install/stringnames.txt file.
  *
  * @package   installer
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -41,4 +41,4 @@ Hilfe wird über die Option --help angezeigt.';
 $string['cliyesnoprompt'] = 'y (yes=ja) oder n (no=nein) eingeben';
 $string['environmentrequireinstall'] = 'muss installiert und aktiviert sein';
 $string['environmentrequireversion'] = 'notwendig: {$a->needed} - installiert: {$a->current}';
-$string['upgradekeyset'] = 'Aktualisierungsschlüssel (leer, um keinen zu setzen)';
+$string['upgradekeyset'] = 'Aktualisierungskennwort (leer, um keins zu setzen)';

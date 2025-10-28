@@ -299,6 +299,9 @@ $string['error:cannotact'] = 'Impossible d’activer le badge.';
 $string['error:cannotawardbadge'] = 'Impossible de délivrer le badge à un utilisateur.';
 $string['error:cannotdeletecriterion'] = 'Ce critère ne peut pas être supprimé.';
 $string['error:cannotrevokebadge'] = 'Impossible de révoquer le badge pour un utilisateur';
+$string['error:cannotsendtobackpack'] = '<strong>Impossible d’ajouter le badge au sac à badges</strong><br />
+Votre fournisseur de sac à badges envoie ce message : « {$a} ».<br /><br />
+Vous pouvez essayer de télécharger le badge et de l’ajouter manuellement à votre sac à badges, ou ré-essayer plus tard.';
 $string['error:clone'] = 'Impossible de dupliquer le badge.';
 $string['error:connectionunknownreason'] = 'La connexion a échoué sans qu’aucune raison ne soit donnée.';
 $string['error:duplicatename'] = 'Un badge de ce nom existe déjà dans le système.';

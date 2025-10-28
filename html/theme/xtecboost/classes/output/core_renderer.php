@@ -17,18 +17,34 @@
 namespace theme_xtecboost\output;
 
 use cache;
+use context_system;
 use get_string;
+use moodle_url;
 use single_select;
 
 defined('MOODLE_INTERNAL') || die;
 
 class core_renderer extends \theme_boost\output\core_renderer {
 
-    public function favicon() {
+    /**
+     * @throws \moodle_exception
+     * @throws \dml_exception
+     */
+    public function favicon() : \moodle_url {
+
         global $CFG;
-        // TODO: Use theme/image.php instead of a direct path!
-        $type = theme_xtecboost_get_xtec_type('_');
-        return $CFG->wwwroot . '/theme/' . $this->page->theme->name . '/pix/favicon' . $type . '.ico';
+
+        $logo = get_config('core_admin', 'favicon');
+
+        if (empty($logo)) {
+            $type = theme_xtecboost_get_xtec_type('_');
+            return new \moodle_url($CFG->wwwroot . '/theme/' . $this->page->theme->name . '/pix/favicon' . $type . '.ico');
+        }
+
+        // Use $CFG->themerev to prevent browser caching when the file changes.
+        return moodle_url::make_pluginfile_url(context_system::instance()->id, 'core_admin', 'favicon', '64x64/',
+            theme_get_revision(), $logo);
+
     }
 
     public function social_icons() {
@@ -132,24 +148,24 @@ class core_renderer extends \theme_boost\output\core_renderer {
      */
     public function footer_logos(): string {
         $xtec_type = theme_xtecboost_get_xtec_type();
-        $logos = '<a href="https://educacio.gencat.cat/ca/inici/" class="brand ensenyament"><img src="' . $this->image_url('departament', 'theme') . '" alt="Departament d\'Educació" title="" /></a>';
+        $logos = '<a href="https://educacio.gencat.cat/ca/inici/" class="brand educacio"><img src="' . $this->image_url('logo_defp_transparent', 'theme') . '" alt="Departament d\'Educació i Formació Professional" title="" /></a>';
         $logos .= '<a href="https://xtec.gencat.cat/ca/inici" class="brand xtec"><img src="' . $this->image_url('xtec', 'theme') . '" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>';
 
         if ($xtec_type === 'alexandria') {
             $href = 'https://alexandria.xtec.cat/';
-            $logos .= '<a href="' . $href . '" target="_blank" class="agora_footer"><img src="' . $this->image_url('logo_main_alexandria', 'theme') . '" alt="Alexandria" title="" /></a>';
+            $logos .= '<a href="' . $href . '" target="_blank" class="brand alexandria"><img src="' . $this->image_url('logo_main_alexandria', 'theme') . '" alt="Alexandria" title="" /></a>';
         } elseif ($xtec_type === 'odissea') {
             $href = 'https://odissea.xtec.cat/';
-            $logos .= '<a href="' . $href . '" target="_blank" class="agora_footer"><img src="' . $this->image_url('logo_main_odissea', 'theme') . '" alt="Odissea" title="" /></a>';
+            $logos .= '<a href="' . $href . '" target="_blank" class="brand odissea"><img src="' . $this->image_url('logo_main_odissea', 'theme') . '" alt="Odissea" title="" /></a>';
         } elseif ($xtec_type === 'eoi') {
             $href = 'https://agora-eoi.xtec.cat/';
-            $logos .= '<a href="' . $href . '" target="_blank" class="agora_footer"><img src="' . $this->image_url('logo_main_eoi', 'theme') . '" alt="Àgora-EOI" title="" /></a>';
+            $logos .= '<a href="' . $href . '" target="_blank" class="brand eoi"><img src="' . $this->image_url('logo_main_eoi', 'theme') . '" alt="Àgora-EOI" title="" /></a>';
         } elseif ($xtec_type === 'eix') {
             $href = 'https://educaciodigital.cat/';
-            $logos .= '<a href="' . $href . '" target="_blank" class="agora_footer"><img src="' . $this->image_url('logo_main_eix', 'theme') . '" alt="Eix" title="" /></a>';
+            $logos .= '<a href="' . $href . '" target="_blank" class="brand eix"><img src="' . $this->image_url('logo_main_eix', 'theme') . '" alt="Eix" title="" /></a>';
         }
 
-        $logos .= '<a href="https://moodle.org" target="_blank" class="moodle_footer" title="Moodle"><img src="' . $this->image_url('moodlelogo') . '" alt="' . get_string('moodlelogo') . '"/></a>';
+        $logos .= '<a href="https://moodle.org" target="_blank" class="brand moodle" title="Moodle"><img src="' . $this->image_url('moodlelogo') . '" alt="' . get_string('moodlelogo') . '"/></a>';
 
         return $logos;
     }

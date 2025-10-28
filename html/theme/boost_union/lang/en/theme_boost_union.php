@@ -33,6 +33,7 @@ $string['pluginname'] = 'Boost Union';
 $string['choosereadme'] = 'Theme Boost Union is an enhanced child theme of Boost which is intended, on the one hand, to make Boost simply more configurable and, on the other hand, to provide helpful additional features for the daily Moodle operation of admins, teachers and students. Boost Union is maintained by Moodle an Hochschulen e.V., in cooperation with ssystems GmbH, together with bdecent GmbH and lern.link GmbH';
 $string['configtitle'] = 'Boost Union';
 $string['githubissueslink'] = '<a href="https://github.com/moodle-an-hochschulen/moodle-theme_boost_union/issues">Github issues</a>';
+$string['warningboostunioninactive'] = 'Boost Union (or a child theme of Boost Union) is currently <em>not</em> the active theme. Settings on these pages will not have any effect if you do not <a href="{$a->url}">make Boost Union the active theme</a> or allow Boost Union to be used as category / course / user / cohort theme.';
 
 // General select options.
 $string['never'] = 'Never';
@@ -40,6 +41,8 @@ $string['always'] = 'Always';
 $string['auto'] = 'Automatically';
 $string['nochange'] = 'No change';
 $string['forguestsonly'] = 'Only for guests and non-logged-in users';
+$string['showastext'] = 'Show as text';
+$string['showasbadge'] = 'Show as badge';
 
 // Settings: General strings.
 $string['dontchange'] = 'Do not change anything';
@@ -57,6 +60,7 @@ $string['settingsoverview_content_desc'] = 'Settings for the global content of y
 $string['settingsoverview_functionality_desc'] = 'Settings for additional useful global or course-related functionality on your Moodle site are located here.';
 $string['settingsoverview_accessibility_desc'] = 'Settings for accessibility-related functionality on your Moodle site are located here.';
 $string['settingsoverview_flavours_desc'] = 'With flavours, you can diversify the look of your Moodle site between cohorts and / or course categories.';
+$string['settingsoverview_snippets_desc'] = 'With SCSS snippets, you can enable additional eye candy or visual fixes on your Moodle site.';
 $string['settingsoverview_smartmenus_desc'] = 'With smart menus, you can extend the navigation items of your Moodle site in the main menu and the user menus well as introduce a bottom menu or a top menu.';
 $string['settingsoverview_all'] = 'All settings on one page';
 $string['settingsoverview_all_desc'] = 'Here, you can open the standard Moodle category settings page for Boost Union that shows all settings on one page. But beware, it is really packed.';
@@ -261,6 +265,29 @@ $string['modiconversion'] = 'Icon version';
 $string['modicongtmoodle4'] = 'Moodle 4 icon';
 $string['modiconltmoodle311'] = 'Moodle 3 legacy icon';
 
+// Settings: Calendar branding tab.
+$string['calendarbrandingtab'] = 'Calendar branding';
+// Placeholders: Calendar event types.
+$string['calendareventtypecategory'] = 'Category';
+$string['calendareventtypecourse'] = 'Course';
+$string['calendareventtypegroup'] = 'Group';
+$string['calendareventtypeother'] = 'Other';
+$string['calendareventtypesite'] = 'Site';
+$string['calendareventtypeuser'] = 'User';
+// ... Section: Event types.
+$string['calendareventcolorsheading'] = 'Calendar event type: {$a}';
+// ... ... Setting: Main color of the calendar event.
+$string['calendareventcolormainsetting'] = 'Main color of the calendar event type "{$a}"';
+$string['calendareventcolormainsetting_desc'] = 'The main color of the calendar event type "{$a}" which is used for icons and backgrounds.';
+// ... ... Setting: Border color of the calendar event.
+$string['calendareventcolorbordersetting'] = 'Border color of the calendar event type "{$a}"';
+$string['calendareventcolorbordersetting_desc'] = 'The color of the calendar event type "{$a}" which is used for borders.';
+// ... Section: General calendar branding.
+$string['calendarbrandingheading'] = 'General calendar branding';
+// ... ... Setting: Calendar icon colors.
+$string['calendariconscolorsetting'] = 'Calendar icon colors';
+$string['calendariconscolorsetting_desc'] = 'The color of some icons which are used in the calendar views. The default color is blue, but this might clash with the calendar branding colors which you might set above.';
+
 // Settings: Login page tab.
 $string['loginpagetab'] = 'Login page';
 // ... Section: Login page background images.
@@ -292,6 +319,7 @@ $string['loginformtransparencysetting'] = 'Login form transparency';
 $string['loginformtransparencysetting_desc'] = 'With this setting, you can make the login form slightly transparent to let the background image shine through even more.';
 // ... Section: Login providers.
 $string['loginprovidersheading'] = 'Login providers';
+$string['loginprovidersheading_desc'] = 'Please note: Boost Union has its own login providers settings and does not use the \'{$a->settingname}\' setting from <a href="{$a->url}">Moodle core\'s authentication setting</a>.';
 // ... ... Setting: Local login form.
 $string['loginlocalloginenablesetting'] = 'Local login';
 $string['loginlocalloginenablesetting_desc'] = 'With this setting, you control if the local login form is shown on the login page or not. By default, the local login form is shown and users can login into the site as normal. If you disable this setting, the local login form is hidden. This allows you to just provide login buttons for external identity providers like OAuth2 or OIDC.';
@@ -360,12 +388,24 @@ $string['courselistinghowcategory_desc'] = 'With this setting, you control if th
 // ... ... Setting: Show course completion progress in the course listing.
 $string['courselistinghowprogress'] = 'Show course completion progress in the course listing';
 $string['courselistinghowprogress_desc'] = 'With this setting, you control if the course completion progress are shown in the course listing or not.';
+// ... ... Setting: Course completion progress style.
+$string['courseistingprogressstyle'] = 'Course completion progress style';
+$string['courseistingprogressstyle_desc'] = 'With this setting, you control how the course completion progress is displayed. You can choose between a simple percentage text or a progress bar.';
+$string['courseistingprogressstyle_percentage'] = 'Percentage text';
+$string['courseistingprogressstyle_bar'] = 'Progress bar';
 // ... ... Setting: Show course enrolment icons in the course listing.
 $string['courselistinghowenrolicons'] = 'Show course enrolment icons in the course listing';
 $string['courselistinghowenrolicons_desc'] = 'With this setting, you control if the course enrolment icons are shown in the course listing or not.';
 // ... ... Setting: Show course fields in the course listing.
-$string['courselistinghowfields'] = 'Show course fields in the course listing';
-$string['courselistinghowfields_desc'] = 'With this setting, you control if the custom course fields are shown in the course listing or not.';
+$string['courselistingshowfields'] = 'Show course fields in the course listing';
+$string['courselistingshowfields_desc'] = 'With this setting, you control if the custom course fields are shown in the course listing or not.';
+// ... ... Setting: Select course fields to be shown in the course listing.
+$string['courselistingselectfields'] = 'Select course fields to be shown in the course listing';
+$string['courselistingselectfields_desc'] = 'With this setting, you can select which specific custom course fields are shown in the course listing. If none are selected, no fields will be shown.';
+$string['courselistingselectfields_nofield'] = 'With this setting, you can select which specific custom course fields are shown in the course listing. There isn\'t any usable custom course field yet. Please go the <a href="{$a->url}">{$a->linktitle}</a> and create a custom course field first.';
+// ... ... Setting: Style course fields in the course listing.
+$string['courselistingstylefields'] = 'Style course fields in the course listing';
+$string['courselistingstylefields_desc'] = 'With this setting, you can control how the custom course fields are displayed in the course listing. You can choose between showing them as text (showing the field value together with the field name as label) or as badge (showing just the field value).';
 // ... ... Setting: Show goto button in the course listing.
 $string['courselistinghowgoto'] = 'Show goto button in the course listing';
 $string['courselistinghowgoto_desc'] = 'With this setting, you control if a \'Go to course\' button is shown in the course listing or not. If this setting is disabled, the user is still able to go to the course by clicking on the course title or course image.';
@@ -576,6 +616,9 @@ $string['addpreferredlangsetting_desc'] = 'With this setting, you can add a \'Se
 $string['setpreferredlanglink'] = 'Set preferred language';
 // ... Section: Navbar heading.
 $string['navbarheading'] = 'Navbar';
+// Setting: Display login link as button.
+$string['loginlinkbuttonenabled'] = 'Display "Log in" link as button';
+$string['loginlinkbuttonenabled_desc'] = 'With this setting, you can have the "Log in" link in the top of the page shown as button. This can help your users to recognize the fact they they are not logged in already.';
 // ... ... Setting: Show starred courses popover in the navbar.
 $string['shownavbarstarredcoursessetting'] = 'Show starred courses popover in the navbar';
 $string['shownavbarstarredcoursessetting_desc'] = 'With this setting, you can show a popover menu with links to starred courses next to the messages and notifications menus.';
@@ -1097,8 +1140,8 @@ $string['configtitlefunctionality'] = 'Functionality';
 
 // Settings: Courses tab.
 $string['coursestab'] = 'Courses';
-// ... Section: Course related hints.
-$string['courserelatedhintsheading'] = 'Course related hints';
+// ... Section: Course related hints for teachers.
+$string['courserelatedhintsforteachersheading'] = 'Course related hints for teachers';
 // ... ... Setting: Show hint for switched role setting.
 $string['showswitchedroleincoursesetting'] = 'Show hint for switched role';
 $string['showswitchedroleincoursesetting_desc'] = 'With this setting a hint will appear in the course header if the user has switched the role in the course. By default, this information is only displayed right near the user\'s avatar in the user menu. By enabling this option, you can show this information - together with a link to switch back - within the course page as well.';
@@ -1112,11 +1155,6 @@ $string['showhintcoursehiddensettingslink'] = 'You can change the visibility in 
 $string['showhintforumnotificationssetting'] = 'Show hint for forum notifications in hidden courses';
 $string['showhintforumnotificationssetting_desc'] = 'With this setting a hint will not only appear in the course header but also in forums as long as the visibility of the course is hidden. This is to clarify that notifications within a forum are not send to students and to help the teachers understand this circumstance.';
 $string['showhintforumnotifications'] = 'This course is currently <strong>hidden</strong>. This means that <strong>students will not be notified</strong> online or by email of any messages you post in this forum.';
-// ... ... Setting: Show hint for guest access.
-$string['showhintcoursguestaccesssetting'] = 'Show hint for guest access';
-$string['showhintcourseguestaccesssetting_desc'] = 'With this setting a hint will appear in the course header when a user is accessing it with the guest access feature. If the course provides an active self enrolment, a link to that page is also presented to the user.';
-$string['showhintcourseguestaccessgeneral'] = 'You are currently viewing this course as <strong>{$a->role}</strong>.';
-$string['showhintcourseguestaccesslink'] = 'To have full access to the course, you can <a href="{$a->url}">self enrol into this course</a>.';
 // ... ... Setting: Show hint for unrestricted self enrolment.
 $string['showhintcourseselfenrolsetting'] = 'Show hint for self enrolment without enrolment key';
 $string['showhintcourseselfenrolsetting_desc'] = 'With this setting a hint will appear in the course header if the course is visible and an enrolment without enrolment key is currently possible.';
@@ -1129,6 +1167,27 @@ $string['showhintcourseselfenrolsince'] = 'The <strong>{$a->name}</strong> enrol
 $string['showhintcourseselfenrolfromuntil'] = 'The <strong>{$a->name}</strong> enrolment instance allows unrestricted self enrolment from {$a->from} until {$a->until}.';
 $string['showhintcourseselfenrolsinceuntil'] = 'The <strong>{$a->name}</strong> enrolment instance allows unrestricted self enrolment until {$a->until}.';
 $string['showhintcourseselfenrolinstancecallforaction'] = 'If you don\'t want any Moodle user to have access to this course freely, please restrict the self enrolment settings.';
+// ... ... Setting: Show hint for guest enrolment.
+$string['showhintcourseguestenrolsetting'] = 'Show hint for guest enrolment';
+$string['showhintcourseguestenrolsetting_desc'] = 'With this setting a hint will appear in the course header if the course is visible and guest enrolment is currently possible.';
+$string['showhintcourseguestenrolsetting_note'] = 'Note: If you want to enhance the hint with a link to the course of any kind, you have the {&dollar;a->courseid} placeholder available which can be used in the language customization.';
+$string['showhintcourseguestenrolsetting_withoutpassword'] = 'Yes, but only if no guest access password is set';
+$string['showhintcourseguestenrolsetting_always'] = 'Yes, even if a guest access password is set';
+$string['showhintcourseguestenrolhint'] = 'This course is currently visible to everyone and <strong>guest access without a guest password</strong> is possible.';
+$string['showhintcourseguestenrolhintalways'] = 'This course is currently visible to everyone and guest access with a password is possible.';
+$string['showhintcourseguestenrolauthonly'] = 'All logged-in Moodle users can access the content of this course freely without enrolling into the course.';
+$string['showhintcourseguestenrolauthonlyalways'] = 'All logged-in Moodle users can access the content of this course without enrolling into the course if they know the guest access password.';
+$string['showhintcourseguestenroleveryone'] = 'All Moodle users and even users without a Moodle account can access the content of this course freely without enrolling into the course.';
+$string['showhintcourseguestenroleveryonealways'] = 'All Moodle users and even users without a Moodle account can access the content of this course without enrolling into the course if they know the guest access password.';
+$string['showhintcourseguestenrolcallforaction'] = 'If you don\'t want to grant free access to this course, please disable guest access or set a guest password in the <a href="{$a->url}">course settings</a>.';
+$string['showhintcourseguestenrolcallforactionalways'] = 'If you don\'t want to grant guest access to this course, please disable guest access in the <a href="{$a->url}">course settings</a>.';
+// ... Section: Course related hints for students.
+$string['courserelatedhintsforstudentsheading'] = 'Course related hints for students';
+// ... ... Setting: Show hint for guest access.
+$string['showhintcoursguestaccesssetting'] = 'Show hint for guest access';
+$string['showhintcourseguestaccesssetting_desc'] = 'With this setting a hint will appear in the course header when a user is accessing it with the guest access feature. If the course provides an active self enrolment, a link to that page is also presented to the user.';
+$string['showhintcourseguestaccessgeneral'] = 'You are currently viewing this course as <strong>{$a->role}</strong>.';
+$string['showhintcourseguestaccesslink'] = 'To have full access to the course, you can <a href="{$a->url}">self enrol into this course</a>.';
 
 // Settings: Accessibility page.
 $string['configtitleaccessibility'] = 'Accessibility';
@@ -1302,6 +1361,63 @@ $string['flavourspreviewblindtext'] = 'Lorem ipsum dolor sit amet, consectetur a
 $string['flavourstitle'] = 'Title';
 $string['flavourstitle_help'] = 'The flavour\'s title is just used internally to allow you to document a particular flavour in the list of flavours.';
 
+// Settings: SCSS snippets page.
+$string['configtitlesnippets'] = 'SCSS snippets';
+
+// Settings: Overview tab.
+$string['snippetsshowthecode'] = 'Show the SCSS code';
+$string['snippetscreator'] = 'Creator';
+$string['snippetsdescription'] = 'Description';
+$string['snippetsdetails'] = 'Details';
+$string['snippetsdetailspreview'] = 'Preview';
+$string['snippetsdisable'] = 'Disable';
+$string['snippetsenable'] = 'Enable';
+$string['snippetsgoal'] = 'Goal';
+$string['snippetsgoalaccessibility'] = 'Accessibility';
+$string['snippetsgoalbugfix'] = 'Bugfix';
+$string['snippetsgoaldevsonly'] = 'For developers only';
+$string['snippetsgoaleaseofuse'] = 'Ease of use';
+$string['snippetsgoaleyecandy'] = 'Eye candy';
+$string['snippetsnothingtodisplay'] = 'There aren\'t any SCSS snippets which can be used. Please go to the settings tab and enable the built-in SCSS snippets or upload your own SCSS snippets.';
+$string['snippetsoverview'] = 'Overview';
+$string['snippetsoverview_desc'] = 'Boost Union\'s SCSS snippets offer a possibility to add small (or slightly larger) amounts of SCSS to the Moodle site. This can be particularly handy for fixing small visual glitches in Moodle core or for adding eye candy to your Moodle site.';
+$string['snippetsoverview_notes'] = 'To allow you to use SCSS snippets, please read these basic intructions:';
+$string['snippetsoverview_notes1'] = 'SCSS snippets can come from multiple sources. You enable and configure each source on the \'Settings\' tab. As soon as you have enabled at least one source, you will see the snippets list here.';
+$string['snippetsoverview_notes2'] = 'SCSS snippets are added to the SCSS stack one after another. Thus, the order of the snippets on this page is key.';
+$string['snippetsoverview_notes3'] = 'After each change which you make on this page, the theme cache is purged. This is necessary to make sure that the compiled SCSS code which is shipped to the browser is up-to-date and might take some seconds.';
+$string['snippetsscope'] = 'Scope';
+$string['snippetsscopecourse'] = 'Course';
+$string['snippetsscopedashboard'] = 'Dashboard';
+$string['snippetsscopesitehome'] = 'Site home';
+$string['snippetsscopeglobal'] = 'Global';
+$string['snippetsshowdetails'] = 'Show details';
+$string['snippetssnippets'] = 'SCSS snippets';
+$string['snippetssource'] = 'Source';
+$string['snippetssourcetheme_boost_union'] = 'Boost Union built-in';
+$string['snippetssourceuploaded'] = 'Upload';
+$string['snippetstestedon'] = 'Tested on';
+$string['snippetstitle'] = 'Title';
+$string['snippetstrackerissue'] = 'Tracker issue';
+$string['snippetsusagenote'] = 'Usage note';
+
+// Settings: Settings tab.
+$string['snippetssettings'] = 'Settings';
+// ... Section: Built-in snippets.
+$string['snippetsbuiltinsnippetsheading'] = 'Built-in snippets';
+// ... ... Setting: Enable built-in snippets.
+$string['enablebuiltinsnippets'] = 'Enable built-in snippets';
+$string['enablebuiltinsnippets_desc'] = 'With this setting, you can enable or disable the built-in SCSS snippets which are shipped with the Boost Union codebase. If you disable this setting, all built-in SCSS snippets are ignored and never added to the SCSS stack.';
+// ... Section: Uploaded snippets.
+$string['snippetsuploadedsnippetsheading'] = 'Uploaded snippets';
+$string['snippetsuploadedsnippetsheading_desc'] = 'In addition to the built-in SCSS snippets which are officially maintained by the Boost Union team, there is the <a href="{$a}" target="_blank">SCSS snippets repository on Github</a> which is meant as a community hub for Boost Union SCSS snippets. Please find the instructions for using community SCSS snippets as well as the boilerplate to create your own local SCSS snippets in that repository.';
+// ... ... Setting: Enable uploaded snippets.
+$string['enableuploadedsnippets'] = 'Enable uploaded snippets';
+$string['enableuploadedsnippets_desc'] = 'With this setting, you can enable or disable uploading of SCSS snippets here within the Boost Union settings. If you disable this setting, uploading SCSS snippets is not possible and all previously uploaded SCSS snippets are ignored and never added to the SCSS stack.';
+// ... ... Setting: Upload snippets.
+$string['uploadedsnippets'] = 'Upload snippets';
+$string['uploadedsnippets_desc'] = 'You can either upload individual SCSS snippet files or a ZIP archive containing multiple SCSS snippet files – the ZIP file will be automatically extracted and the contained SCSS snippets will then be avaiable in this file area as individual files.';
+$string['uploadedsnippets_note'] = 'You can find the structure and syntax of Boost Union SCSS snippets in our <a href="{$a->url}" target="_blank">SCSS snippets repository</a>. There, you also find instructions how to use existing community snippets and contribute snippets to the community.';
+
 // Settings: Smart menus page.
 $string['smartmenus'] = 'Smart menus';
 $string['error:smartmenusmenuitemnotfound'] = 'Smart menu item not found';
@@ -1386,6 +1502,12 @@ $string['smartmenusmenuitemcssclass'] = 'CSS class';
 $string['smartmenusmenuitemcssclass_help'] = 'Enter a CSS class for the menu item. This can be used to apply custom styling to the menu item.';
 $string['smartmenusmenuitemdeleteconfirm'] = 'Are you sure you want to delete this menu item from the smart menu?';
 $string['smartmenusmenuitemdeletesuccess'] = 'Smart menu item deleted successfully';
+$string['smartmenusmenuitemdisplayallcourses'] = 'Show hidden courses';
+$string['smartmenusmenuitemhidehiddencourses'] = 'Hide hidden courses';
+$string['smartmenusmenuitemhiddencoursessorting_help'] = 'Choose how hidden courses should be sorted in the course list of the dynamic courses menu items.';
+$string['smartmenusmenuitemhiddencoursessorting'] = 'Hidden courses sorting';
+$string['smartmenusmenuitemhiddencoursesortingend'] = 'Show hidden courses at the end of the course list';
+$string['smartmenusmenuitemhiddencoursesortingtogether'] = 'Sort hidden and visible courses together';
 $string['smartmenusmenuitemlistsort'] = 'Course list sorting';
 $string['smartmenusmenuitemlistsort_help'] = 'The course list will be sorted by the selected criteria and sort order. Choose between fullname, shortname, course ID and course ID number as criteria in combination with ascending and descending sort order.';
 $string['smartmenusmenuitemlistsortfullnameasc'] = 'Course fullname ascending';
@@ -1405,12 +1527,21 @@ $string['smartmenusmenuitemdisplayoptions_help'] = 'Choose how you want the menu
 $string['smartmenusmenuitemdisplayoptionshidetitle'] = 'Hide title text and show only icon (on all devices)';
 $string['smartmenusmenuitemdisplayoptionshidetitlemobile'] = 'Hide title text and show only icon (on mobile devices)';
 $string['smartmenusmenuitemdisplayoptionsshowtitleicon'] = 'Show text and icon as title';
+$string['smartmenusmenuitemdisplayonlyvisiblecourses'] = 'Hidden courses display';
+$string['smartmenusmenuitemdisplayonlyvisiblecourses_help'] = 'If enabled, the course list will not show hidden courses in any smart menu, even for administrators and users that have the capability moodle/course:viewhiddencourses in the course';
 $string['smartmenusmenuitemduplicate'] = 'Duplicate menu item';
 $string['smartmenusmenuitemduplicatesuccess'] = 'Menu item duplicated successfully';
 $string['smartmenusmenuitemedit'] = 'Edit menu item';
 $string['smartmenusmenuitemeditsuccess'] = 'Smart menu item updated successfully';
 $string['smartmenusmenuitemicon'] = 'Icon';
-$string['smartmenusmenuitemicon_help'] = 'The icon to display next to the menu item title.';
+$string['smartmenusmenuitemicon_help'] = 'The icon to display next to the menu item title.<br /><br />You can either select an icon from the Moodle core icon library, or use a FontAwesome icon. This is an important difference:<ul><li>Moodle core icons:<br />Moodle core defines its icons as "pix icons" and maps FontAwesome icons to these pix icons. The particular FontAwesome icon which is mapped is not guaranteed to be stable forever and might change in future Moodle core versions. Additionally, there are Moodle core pix icons which come with an additional Bootstrap color added to the icon.</li><li>FontAwesome icons:<br />FontAwesome icons are used as-is and their presentation will remain stable in future Moodle releases. It may just happen that the FontAwesome glyph may change if Moodle core upgrades to a future FontAwesome release.</li></ul>If you are in doubt and do not need to stick to a particular Moodle core pix icon, you should prefer to use a FontAwesome icon here.';
+$string['smartmenusmenuitemicon_placeholder'] = 'Pick icon';
+$string['smartmenusmenuitemicon_noicon'] = 'No icon selected';
+$string['smartmenusmenuitemicon_sourcecore'] = 'Moodle core';
+$string['smartmenusmenuitemicon_sourcefablank'] = 'FontAwesome Blank icon';
+$string['smartmenusmenuitemicon_sourcefasolid'] = 'FontAwesome Solid';
+$string['smartmenusmenuitemicon_sourcefabrand'] = 'FontAwesome Brands';
+$string['smartmenusmenuitemicon_ajaxtoomanyicons'] = 'Too many icons ({$a}) to display. Please narrow your search.';
 $string['smartmenusmenuitemlinktarget'] = 'Link target';
 $string['smartmenusmenuitemlinktarget_help'] = 'The target for the link of the menu item. The menu item link will open in this target when clicked (i.e. in the same window or in a new tab).';
 $string['smartmenusmenuitemlinktargetnewtab'] = 'New tab';
@@ -1437,14 +1568,15 @@ $string['smartmenusmenuitemtextpositionbelowimage'] = 'Below image';
 $string['smartmenusmenuitemtextpositionoverlaybottom'] = 'Bottom overlay';
 $string['smartmenusmenuitemtextpositionoverlaytop'] = 'Top overlay';
 $string['smartmenusmenuitemtitle'] = 'Title';
-$string['smartmenusmenuitemtitle_help'] = 'The title of the menu. This will be used as the label of this menu item. If you want to display a separator in the menu, choose Heading as type and use hash signs (###) as title.';
+$string['smartmenusmenuitemtitle_help'] = 'The title of the menu. This will be used as the label of this menu item.';
 $string['smartmenusmenuitemtooltip'] = 'Tooltip';
 $string['smartmenusmenuitemtooltip_help'] = 'The tooltip which will be displayed when the user hovers over the menu item.';
 $string['smartmenusmenuitemtype'] = 'Menu item type';
-$string['smartmenusmenuitemtype_help'] = '<p>Select the type of menu item you want to create, choosing between static, heading, moodle documentation and dynamic courses.</p><ul><li>Static: A static menu item is simply a link to a fixed URL that does not change.</li><li>Heading: A heading menu item is used to group related menu items together under a common heading. It does not have a link and is not clickable.</li><li>Moodle documentation: A moodle documenation menu item is used to link to the corresponding MoodleDocs article, similar to the MoodleDocs link which is located in the Moodle footer (questionmark icon).</li><li>Dynamic courses: A dynamic courses menu item is used to display a list of courses based on certain criteria, such as course category, course enrolment role, course completion status or date range. The content displayed in a dynamic courses menu item will update automatically as the criteria changes.</li></ul>';
+$string['smartmenusmenuitemtype_help'] = '<p>Select the type of menu item you want to create, choosing between static, heading, moodle documentation, dynamic courses, and divider.</p><ul><li>Static: A static menu item is simply a link to a fixed URL that does not change.</li><li>Heading: A heading menu item is used to group related menu items together under a common heading. It does not have a link and is not clickable.</li><li>Separator: A dividerenu item displays a horizontal line in the menu to visually separate groups of menu items.</li><li>Moodle documentation: A moodle documenation menu item is used to link to the corresponding MoodleDocs article, similar to the MoodleDocs link which is located in the Moodle footer (questionmark icon).</li><li>Dynamic courses: A dynamic courses menu item is used to display a list of courses based on certain criteria, such as course category, course enrolment role, course completion status or date range. The content displayed in a dynamic courses menu item will update automatically as the criteria changes.</li></ul>';
 $string['smartmenusmenuitemtypedocs'] = 'Moodle documentation';
 $string['smartmenusmenuitemtypedynamiccourses'] = 'Dynamic courses';
 $string['smartmenusmenuitemtypeheading'] = 'Heading';
+$string['smartmenusmenuitemtypedivider'] = 'Divider';
 $string['smartmenusmenuitemtypestatic'] = 'Static';
 $string['smartmenusmenuitemurl'] = 'Menu item URL';
 $string['smartmenusmenuitemurl_help'] = 'The static URL for the menu item. This is the link that will be followed when the menu item is clicked.';
@@ -1495,6 +1627,7 @@ $string['privacy:metadata'] = 'The Boost Union theme does not store any personal
 
 // Capabilities.
 $string['boost_union:configure'] = 'To be able to configure the theme as non-admin';
+$string['boost_union:viewhintcourseguestenrol'] = 'To be able to see a hint for guest enrolment in a visible course.';
 $string['boost_union:viewhintcourseselfenrol'] = 'To be able to see a hint for unrestricted self enrolment in a visible course.';
 $string['boost_union:viewhintinhiddencourse'] = 'To be able to see a hint in a hidden course.';
 $string['boost_union:viewregionheader'] = 'To be able to see the Header block region';
@@ -1530,6 +1663,7 @@ $string['cachedef_smartmenus'] = 'Smart menus';
 $string['cachedef_smartmenu_items'] = 'Smart menu items';
 $string['cachedef_touchiconsios'] = 'Touch icon files for iOS';
 $string['cachedef_hookoverrides'] = 'Hook overrides';
+$string['cachedef_fontawesomeicons'] = 'FontAwesome icon map';
 
 // Scheduled tasks.
 $string['task_purgecache'] = 'Purge theme cache';
@@ -1540,3 +1674,6 @@ $string['upgradenotice_2022080922_logo'] = 'logo';
 $string['upgradenotice_2022080922_logocompact'] = 'compact logo';
 $string['upgradenotice_2022080922_copied'] = 'The existing <strong>{$a}</strong> from the Moodle core settings has been copied to the Boost Union {$a} setting during this upgrade. Please double-check the result.';
 $string['upgradenotice_2022080922_notcopied'] = 'The <strong>{$a}</strong> setting within Boost Union is empty now. If you want to use a {$a} within Boost Union from now on, just upload it into the Boost Union {$a} setting later.';
+$string['upgradenotice_2025041410'] = 'The setting "Show hint for guest access" has been updated to support more options. Your existing configuration (which was set to "Yes") has been migrated to the new option "Yes, but only if no guest access password is set".';
+$string['upgradenotice_2025041413'] = 'The setting "courselistinghowfields" has been renamed to "courselistingshowfields" to fix a typo. Your existing configuration has been migrated to the new setting name.';
+$string['upgradenotice_2025041416'] = 'Smart menu dividers are now available as a dedicated menu item type. Existing dividers (created using heading type with hash signs) have been automatically converted to the new divider type.';

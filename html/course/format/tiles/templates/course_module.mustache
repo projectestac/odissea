@@ -102,7 +102,7 @@
         <li class="activity subtile spacer" aria-hidden="true"></li>
         <li class="activity subtile spacer" aria-hidden="true"></li>
     {{/hasSpacersBefore}}
-    <li class="activity{{^is_label}} subtile{{/is_label}} {{#is_label}}fullwidth{{/is_label}} {{modname}} modtype_{{modname}} {{#modresourceicon}} resourcetype_{{modresourceicon}}{{/modresourceicon}}{{^clickable}} unclickable {{/clickable}}{{#clickable}} cursorpointer{{/clickable}} {{#photourl}} hasphoto{{/photourl}} purpose_{{purpose}} {{extraclasses}}"
+    <li class="activity{{^is_label}} subtile{{/is_label}} {{#is_label}}fullwidth{{/is_label}} {{modname}} modtype_{{modname}} {{#modresourceicon}} resourcetype_{{modresourceicon}}{{/modresourceicon}}{{^clickable}} unclickable {{/clickable}}{{#clickable}} cursorpointer{{/clickable}}{{#photourl}} hasphoto{{/photourl}}{{#purpose}} purpose_{{purpose}}{{/purpose}} {{extraclasses}}"
         id="module-{{cmid}}" data-modtype="{{modname}}{{#modresourceicon}}_{{{modresourceicon}}}{{/modresourceicon}}"
         data-cmid="{{cmid}}" data-completion="{{completion}}"
         data-modinstance="{{modinstance}}" data-contextid="{{modcontextid}}"

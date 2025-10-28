@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['comma'] = 'Coma';
 $string['commaandspace'] = 'Coma i espai';
-$string['newline'] = 'Nova línia';
+$string['newline'] = 'Línia nova';
 $string['options'] = 'Opcions';
 $string['optionsdefault'] = 'Valors per defecte';
 $string['optionsseparator'] = 'Separador d\'opcions';

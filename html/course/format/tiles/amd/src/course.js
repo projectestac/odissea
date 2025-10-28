@@ -40,6 +40,11 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
         let resizeTimeout;
         var enableCompletion;
         var reorgSectionsDisabledUntil = 0;
+        /**
+         * If the user has previously expanded a sub-section, its ID will be in expandedSubSectionIds.
+         * @type {{}}
+         */
+        var expandedSubSectionIds = {};
 
          // Keep a record of which tile is currently open.
         var openTile = 0;
@@ -198,7 +203,44 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
          */
         var setCourseContentHTML = function (contentArea, html, js) {
             if (html) {
-                contentArea.html(html);
+                // If section content is reloaded following a completion change, server does not know if sub-sections were expanded.
+                // We keep a local record of sub-sections which were expanded.
+                // When we get HTML from server, we adjust it to re-expand any subsections which were expanded before displaying.
+                const newHtml = $(html);
+                const subSections = newHtml.find('li.modtype_subsection');
+                subSections.each((i) => {
+                    const subSection = $(subSections[i]);
+                    if (subSection.find('.course-content-item-content.collapse').length) {
+                        const subSectionId = subSection.find('a[data-toggle="collapse"]').data('subSectionId');
+                        // If the user has previously expanded the section, its ID will be in expandedSubSectionIds.
+                        const shouldBeExpanded = expandedSubSectionIds[subSectionId] !== undefined;
+                        if (shouldBeExpanded) {
+                            // We are manipulating the new HTML before it's added to the DOM so cannot use .collapse('show').
+                            subSection.find('a[data-toggle="collapse"]')
+                                .removeClass('collapsed').attr('aria-expanded', true);
+                            subSection.find('.course-content-item-content')
+                                .addClass('show').addClass('collapse').removeClass('collapsing');
+                        }
+                    }
+                });
+
+                contentArea.html(newHtml.html());
+
+                // In the new content area, check for any expand or collapse of sub-sections.
+                // Keep a local record of which are expanded.
+                contentArea.find('li.modtype_subsection a[data-toggle="collapse"]').on(Event.CLICK, (e) => {
+                    const clickedButton = $(e.currentTarget);
+                    const subSectionId = clickedButton.data('subSectionId');
+                    const subSectionContent = $('#coursecontentcollapse' + subSectionId);
+                    const isCollapsed = subSectionContent && subSectionContent.length && !subSectionContent.hasClass('show');
+                    if (isCollapsed && expandedSubSectionIds[subSectionId] === undefined) {
+                        // Sub-section is being expanded - record that fact locally.
+                        expandedSubSectionIds[subSectionId] = true;
+                    } else if (!isCollapsed && expandedSubSectionIds[subSectionId] !== undefined) {
+                        delete expandedSubSectionIds[subSectionId];
+                    }
+                });
+
                 $(Selector.TILE_LOADING_ICON).fadeOut(300, function () {
                     $(Selector.TILE_LOADING_ICON).html("");
                 });
@@ -351,7 +393,7 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
          * @param {number} sectionNumber to expand
          */
         var expandSection = function (contentArea, sectionNumber) {
-            const tile = $("#tile-" + sectionNumber);
+            const tile = document.getElementById('tile-' + sectionNumber);
 
             /**
              * Need to adjust the height of the overlay to ensure it covers full height of expanded section.
@@ -376,17 +418,7 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
             var expandAndScroll = function () {
                 // Scroll to the top of content bearing section
                 // We have to wait until possible reOrg and slide down totally before calling this, else co-ords are wrong.
-                var scrollTo = tile.offset().top;
-                const MIN_SCROLL = 10;
-                if (Math.abs(scrollTo) > MIN_SCROLL) {
-                    if (scrollTo === $(window).scrollTop) {
-                        // Scroll by at least one pixel otherwise z-index on selected tile is not changed.
-                        // Until mouse moves.
-                        scrollTo += 1;
-                    }
-                    document.getElementById('page').scrollBy({top: scrollTo, left: 0, behavior: 'smooth'});
-                }
-
+                tile.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 // For users with screen readers, move focus to the first item within the tile.
                 // Short timeout for this to allow for animation to finish.
                 setTimeout(() => {
@@ -423,7 +455,7 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
             contentArea.addClass(ClassNames.STATE_VISIBLE);
             setOverlayHeight();
             overlay.fadeIn(300);
-            tile.addClass(ClassNames.SELECTED);
+            tile.classList.add(ClassNames.SELECTED);
             $(Selector.BODY).addClass(ClassNames.HAS_OPEN_TILE);
             contentArea.slideDown(350, function () {
                 // Wait until we have finished sliding down before we work out where the top is for scroll.
@@ -622,7 +654,26 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                             if (sectionNumber === 0) {
                                 cancelTileSelections(0);
                             } else {
-                                populateAndExpandSection(courseContextId, sec.data('id'), sectionNumber);
+                                const subSectionParent = sec.parent().closest('.courseindex-section');
+                                if (subSectionParent && subSectionParent.length) {
+                                    // A subsection has been clicked - need to expand parent, then the subsection.
+                                    populateAndExpandSection(
+                                        courseContextId, subSectionParent.data('id'), subSectionParent.data('number')
+                                    );
+                                    // Need to wait for parent section content before we can expand subsection.
+                                    // Not ideal to use a timeout - temporary approach pending wider refactor.
+                                    setTimeout(() => {
+                                        const subSectionContent = $('#coursecontentcollapse' + sec.data('id'));
+                                        const needsExpanding = subSectionContent && subSectionContent.length
+                                            && !subSectionContent.hasClass('show');
+                                        if (needsExpanding) {
+                                            subSectionContent.collapse('show');
+                                            expandedSubSectionIds[sec.data('id')] = true;
+                                        }
+                                    }, 1000);
+                                } else {
+                                    populateAndExpandSection(courseContextId, sec.data('id'), sectionNumber);
+                                }
                             }
                         }
                     }
@@ -919,7 +970,7 @@ define(["jquery", "core/templates", "core/ajax", "format_tiles/browser_storage",
                     const buttonHideSecZero = $(Selector.HIDE_SEC0_BTN);
                     if (buttonHideSecZero.length) {
                         setSectionZeroFromUserPref();
-                        pageContent.on(Event.CLICK, Selector.HIDE_SEC0_BTN, function (e) {
+                        $('#page').on(Event.CLICK, Selector.HIDE_SEC0_BTN, function (e) {
                             if (sectionZero.css(CSS.DISPLAY) === "none") {
                                 // Sec zero is collapsed so expand it on user click.
                                 sectionZero.slideDown(250);

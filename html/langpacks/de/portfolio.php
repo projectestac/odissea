@@ -64,7 +64,7 @@ $string['exportcomplete'] = 'Portfolio-Export beendet!';
 $string['exportedpreviously'] = 'Vorherige Exporte';
 $string['exportexceptionnoexporter'] = 'Eine portfolio_export_exception wurde in einer aktiven Session ohne Exportobjekt erstellt.';
 $string['exportexpired'] = 'Zeitbegrenzung beim Portfolio-Export überschritten';
-$string['exportexpireddesc'] = 'Sie haben versucht, den Export von Daten zu wiederholen oder einen leeren Export zu starten. Versuchen Sie bitte, zu den Originaldaten zurückzugehen, und beginnen Sie noch einmal. Dieser Fehler kann auftreten, wenn Sie nach einem beendeten Export auf den Zurück-Button klicken oder eine falsche URL gespeichert wurde.';
+$string['exportexpireddesc'] = 'Sie haben versucht, den Export von Daten zu wiederholen oder einen leeren Export zu starten. Versuchen Sie bitte, zu den Originaldaten zurückzugehen, und beginnen Sie nochmal. Dieser Fehler kann auftreten, wenn Sie nach einem beendeten Export auf den Zurück-Button klicken oder eine falsche URL gespeichert wurde.';
 $string['exporting'] = 'In ein Portfolio exportieren';
 $string['exportingcontentfrom'] = 'Inhalte aus {$a} exportieren';
 $string['exportingcontentto'] = 'Inhalt exportieren nach {$a}';
@@ -171,7 +171,7 @@ $string['noclassbeforeformats'] = 'Die Callbackklasse muss gesetzt werden bevor 
 $string['nocommonformats'] = 'Kein gemeinsames Format zwischen den verfügbaren Portfolioplugins und der abfragenden Stelle {$a->location} (Abfrager unterstützt {$a->formats})';
 $string['noinstanceyet'] = 'Sie haben noch nichts ausgewählt';
 $string['nologs'] = 'Es gibt keine Logs zum Anzeigen!';
-$string['nomultipleexports'] = 'Das Portfolio ({$a->plugin}) unterstützt keinen gleichzeitigen mehrfachen Export. Bitte beenden Sie den <a href="{$a->link}">laufenden Export</a> und probieren Sie es nochmal.';
+$string['nomultipleexports'] = 'Das Portfolio ({$a->plugin}) unterstützt keinen gleichzeitigen mehrfachen Export. Beenden Sie bitte den <a href="{$a->link}">laufenden Export</a> und probieren Sie es nochmal.';
 $string['nonprimative'] = 'Ein Nicht-Grundwert wurde als Callback-Argument für portfolio_add_button eingefügt. Die Ausführung wurde abgebrochen. Der Schlüssel ist {$a->key} und der Wert ist {$a->value}';
 $string['nopermissions'] = 'Entschuldigung, aber Sie besitzen nicht die nötigen Rechte, um Dateien aus diesem Bereich zu exportieren';
 $string['notexportable'] = 'Entschuldigung, aber der Datentyp, den Sie gerade versuchen zu exportieren, lässt dies nicht zu';

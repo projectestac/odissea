@@ -30,8 +30,8 @@ use renderer_base;
 defined('MOODLE_INTERNAL') || die();
 
 require_once('HTML/QuickForm/input.php');
-require_once($CFG->dirroot.'/lib/form/templatable_form_element.php');
-require_once($CFG->dirroot.'/lib/form/text.php');
+require_once($CFG->dirroot . '/lib/form/templatable_form_element.php');
+require_once($CFG->dirroot . '/lib/form/text.php');
 
 /**
  * Form element for color picker
@@ -40,8 +40,7 @@ require_once($CFG->dirroot.'/lib/form/text.php');
  * @copyright 2023 bdecent GmbH <https://bdecent.de>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class colorpicker extends MoodleQuickForm_text implements \templatable {
-
+class colorpicker extends MoodleQuickForm_text implements \core\output\templatable {
     use \templatable_form_element {
         export_for_template as export_for_template_base;
     }
@@ -53,7 +52,7 @@ class colorpicker extends MoodleQuickForm_text implements \templatable {
      * @param string $elementlabel (optional) Text field label.
      * @param string $attributes (optional) Either a typical HTML attribute string or an associative array.
      */
-    public function __construct($elementname=null, $elementlabel=null, $attributes=null) {
+    public function __construct($elementname = null, $elementlabel = null, $attributes = null) {
         parent::__construct($elementname, $elementlabel, $attributes);
         $this->setType('text');
 
@@ -62,7 +61,7 @@ class colorpicker extends MoodleQuickForm_text implements \templatable {
         if (empty($class)) {
             $class = '';
         }
-        $this->updateAttributes(['class' => $class.' theme_boost_union-form-colour-picker ']);
+        $this->updateAttributes(['class' => $class . ' theme_boost_union-form-colour-picker ']);
     }
 
     /**
@@ -78,7 +77,7 @@ class colorpicker extends MoodleQuickForm_text implements \templatable {
         $context = $this->export_for_template_base($output);
 
         // Build loading icon.
-        $icon = new \pix_icon('i/loading', get_string('loading', 'admin'), 'moodle', ['class' => 'loadingicon']);
+        $icon = new \core\output\pix_icon('i/loading', get_string('loading', 'admin'), 'moodle', ['class' => 'loadingicon']);
         $icondata = $icon->export_for_template($output);
         $iconoutput = $output->render_from_template('core/pix_icon', $icondata);
 

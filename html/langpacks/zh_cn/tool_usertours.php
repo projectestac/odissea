@@ -219,7 +219,7 @@ $string['tour3_title_dashboard'] = '您的控制面板';
 $string['tour3_title_displayoptions'] = '显示选项';
 $string['tour3_title_overview'] = '课程概览';
 $string['tour3_title_recentcourses'] = '最近访问的课程';
-$string['tour3_title_starring'] = '标星和隐藏课程';
+$string['tour3_title_starring'] = '收藏和隐藏课程';
 $string['tour3_title_timeline'] = '时间线板块';
 $string['tour4_content_groupconvo'] = '如果您是启用了群组消息的群组成员，您会在这里看到群组对话。
 
@@ -231,7 +231,7 @@ $string['tour4_content_icon'] = '你可以使用这个图标从任何页面访�
 点击图标，打开信息传递抽屉并继续浏览。';
 $string['tour4_content_messaging'] = '新的消息传递功能包括课程内的群组消息传递，以及更好地控制谁可以向您发送消息。';
 $string['tour4_content_settings'] = '您可以通过齿轮图标访问您的消息设置。新的隐私设置允许您限制谁可以给您发消息。';
-$string['tour4_content_starred'] = '您可以选择给特定的对话标星，使它们更容易被找到。';
+$string['tour4_content_starred'] = '您可收藏特定对话，以便快速找到。';
 $string['tour4_title_groupconvo'] = '群组消息';
 $string['tour4_title_icon'] = '消息传递';
 $string['tour4_title_messaging'] = '新的消息传递接口';

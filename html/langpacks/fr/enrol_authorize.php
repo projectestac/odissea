@@ -114,7 +114,7 @@ $string['cancelled'] = 'Annulé';
 $string['capture'] = 'Saisie';
 $string['capturedpendingsettle'] = 'Saisi / En attente de règlement';
 $string['capturedsettled'] = 'Saisi / Réglé';
-$string['captureyes'] = 'Les données de la carte de crédit vont être saisies et l’étudiant sera inscrit au cours. Voulez-vous continuer ?';
+$string['captureyes'] = 'Les données de la carte de crédit vont être saisies et l’étudiant sera inscrit au cours. Voulez-vous vraiment continuer ?';
 $string['cccity'] = 'Ville';
 $string['ccexpire'] = 'Date d’échéance';
 $string['ccexpired'] = 'La carte de crédit est échue';
@@ -154,7 +154,7 @@ $string['expireyear'] = 'Année d’échéance';
 $string['firstnameoncard'] = 'Prénom sur la carte';
 $string['haveauthcode'] = 'J’ai déjà un code d’autorisation';
 $string['howmuch'] = 'Combien ?';
-$string['httpsrequired'] = 'Votre requête ne peut pas être traitée. Les réglages du site n’ont pas pu être configurés correctement.<br /><br />Veuillez NE PAS taper votre numéro de carte de  crédit, à moins que vous ne voyez un cadenas au bas de la fenêtre ou dans la barre d’adresse de votre navigateur. Ce cadenas indique que toutes les données transmises entre votre ordinateur et le serveur sont chiffrées, et que les informations échangées entre ces deux ordinateurs sont protégées et ne peuvent pas être interceptées sur Internet.';
+$string['httpsrequired'] = 'Votre requête ne peut pas être traitée. Les réglages du site n’ont pas pu être configurés correctement.<br /><br />Veuillez NE PAS taper votre numéro de carte de crédit, à moins que vous ne voyez un cadenas au bas de la fenêtre ou dans la barre d’adresse de votre navigateur. Ce cadenas indique que toutes les données transmises entre votre ordinateur et le serveur sont chiffrées, et que les informations échangées entre ces deux ordinateurs sont protégées et ne peuvent pas être interceptées sur Internet.';
 $string['invalidaba'] = 'Numéro ABA non valide';
 $string['invalidaccnum'] = 'Numéro de compte non valide';
 $string['invalidacctype'] = 'Type de compte non valide';
@@ -258,7 +258,7 @@ $string['settled'] = 'Réglé';
 $string['settlementdate'] = 'Date de règlement';
 $string['shopper'] = 'Client';
 $string['status'] = 'Permettre les inscriptions Authorize.Net';
-$string['subvoidyes'] = 'La transaction remboursée {$a->transid} sera annulée et votre compte sera ainsi crédité de {$a->amount}. Voulez-vous continuer ?';
+$string['subvoidyes'] = 'La transaction remboursée {$a->transid} sera annulée et votre compte sera ainsi crédité de {$a->amount}. Voulez-vous vraiment continuer ?';
 $string['tested'] = 'Testé';
 $string['testmode'] = '[MODE TEST]';
 $string['testwarning'] = 'Les opérations de saisie/annulation/crédit semblent fonctionner correctement en mode test. Aucun enregistrement n’a cependant été mis à jour ni inséré dans la base de données.';
@@ -272,7 +272,7 @@ $string['usingecheckmethod'] = 'S’inscrire par <a href="{$a->url}"><strong>eCh
 $string['verifyaccount'] = 'Vérifier votre compte marchand Authorize.Net';
 $string['verifyaccountresult'] = '<b>Résultat de la vérification :</b> {$a}';
 $string['void'] = 'Nul';
-$string['voidyes'] = 'La transaction sera annulée. Voulez-vous continuer ?';
+$string['voidyes'] = 'La transaction sera annulée. Voulez-vous vraiment continuer ?';
 $string['welcometocoursesemail'] = 'Bonjour,
 
 Nous vous remercions de votre paiement. Vous vous êtes inscrits aux cours suivants

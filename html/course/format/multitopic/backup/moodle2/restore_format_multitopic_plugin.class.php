@@ -36,7 +36,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_format_multitopic_plugin extends restore_format_plugin {
-
     /**
      * Creates a dummy path element in order to be able to execute code after restore.
      *
@@ -54,7 +53,6 @@ class restore_format_multitopic_plugin extends restore_format_plugin {
      * @return void
      */
     public function process_dummy_course() {
-
     }
 
     /**
@@ -89,6 +87,5 @@ class restore_format_multitopic_plugin extends restore_format_plugin {
              )",
             [$this->step->get_task()->get_courseid()]
         );
-
     }
 }

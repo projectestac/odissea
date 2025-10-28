@@ -23,6 +23,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use theme_boost_union\snippets;
+
 /**
  * Function to upgrade theme_boost_union
  * @param int $oldversion the version we are upgrading from
@@ -34,7 +36,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     $dbman = $DB->get_manager();
 
     if ($oldversion < 2022080916) {
-
         // Define table theme_boost_union_flavours to be created.
         $table = new xmldb_table('theme_boost_union_flavours');
 
@@ -68,9 +69,8 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2022080922) {
-
         // Start composing the notification to inform the admin.
-        $message = html_writer::tag('p', get_string('upgradenotice_2022080922', 'theme_boost_union'));
+        $message = \core\output\html_writer::tag('p', get_string('upgradenotice_2022080922', 'theme_boost_union'));
 
         // Handle the logo and compact logo (which have got now new settings in Boost Union).
         foreach (['logo', 'logocompact'] as $setting) {
@@ -104,7 +104,7 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
                     $newfile = $fs->create_file_from_storedfile($filerecord, $file);
 
                     // Set the theme config to the file name.
-                    set_config($setting, '/'.$newfile->get_filename(), 'theme_boost_union');
+                    set_config($setting, '/' . $newfile->get_filename(), 'theme_boost_union');
 
                     // Remember the logo copying status.
                     $logocopied = true;
@@ -114,14 +114,20 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
             // If the logo has been copied.
             if ($logocopied == true) {
                 // Add the corresponding note to the notification.
-                $message .= html_writer::tag('p', get_string('upgradenotice_2022080922_copied', 'theme_boost_union',
-                        get_string('upgradenotice_2022080922_'.$setting, 'theme_boost_union')));
+                $message .= \core\output\html_writer::tag('p', get_string(
+                    'upgradenotice_2022080922_copied',
+                    'theme_boost_union',
+                    get_string('upgradenotice_2022080922_' . $setting, 'theme_boost_union')
+                ));
 
                 // Otherwise, if no logo was copied.
             } else {
                 // Add the corresponding note to the notification.
-                $message .= html_writer::tag('p', get_string('upgradenotice_2022080922_notcopied', 'theme_boost_union',
-                        get_string('upgradenotice_2022080922_'.$setting, 'theme_boost_union')));
+                $message .= \core\output\html_writer::tag('p', get_string(
+                    'upgradenotice_2022080922_notcopied',
+                    'theme_boost_union',
+                    get_string('upgradenotice_2022080922_' . $setting, 'theme_boost_union')
+                ));
             }
         }
 
@@ -137,7 +143,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2023010517) {
-
         // Define table theme_boost_union_menus to be created.
         $table = new xmldb_table('theme_boost_union_menus');
 
@@ -225,7 +230,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2023010519) {
-
         // Define table theme_boost_union_menus to be altered.
         $table = new xmldb_table('theme_boost_union_menus');
 
@@ -240,7 +244,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2023010521) {
-
         // Remove the THEME_BOOST_UNION_SETTING_COURSEBREADCRUMBS_DONTCHANGE option from the categorybreadcrumbs setting
         // and replace it with THEME_BOOST_UNION_SETTING_SELECT_NO if necessary.
         $oldconfig = get_config('theme_boost_union', 'categorybreadcrumbs');
@@ -279,7 +282,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2023102009) {
-
         // Changing precision of field description_format on table theme_boost_union_flavours to (2).
         $table = new xmldb_table('theme_boost_union_flavours');
         $field = new xmldb_field('description_format', XMLDB_TYPE_INTEGER, '2', null, null, null, null, 'description');
@@ -292,7 +294,6 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
     }
 
     if ($oldversion < 2023102021) {
-
         // Remove the preset setting from Boost Union.
         unset_config('preset', 'theme_boost_union');
 
@@ -324,8 +325,7 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2023102027, 'theme', 'boost_union');
     }
 
-    if ($oldversion < 2024060105) {
-
+    if ($oldversion < 2024100702) {
         // Define field byadmin to be added to theme_boost_union_menus.
         $table = new xmldb_table('theme_boost_union_menus');
         $field = new xmldb_field('byadmin', XMLDB_TYPE_INTEGER, '9', null, XMLDB_NOTNULL, null, '0', 'visible');
@@ -345,11 +345,10 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
         }
 
         // Boost_union savepoint reached.
-        upgrade_plugin_savepoint(true, 2024060105, 'theme', 'boost_union');
+        upgrade_plugin_savepoint(true, 2024100702, 'theme', 'boost_union');
     }
 
-    if ($oldversion < 2024060109) {
-
+    if ($oldversion < 2024100706) {
         // Define table theme_boost_union_flavours to be altered.
         $table = new xmldb_table('theme_boost_union_flavours');
 
@@ -402,17 +401,24 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
         }
 
         // Boost_union savepoint reached.
-        upgrade_plugin_savepoint(true, 2024060109, 'theme', 'boost_union');
+        upgrade_plugin_savepoint(true, 2024100706, 'theme', 'boost_union');
     }
 
-    if ($oldversion < 2024060110) {
-
+    if ($oldversion < 2024100707) {
         // Define table theme_boost_union_flavours to be altered.
         $table = new xmldb_table('theme_boost_union_flavours');
 
         // Define field look_backgroundimagepos to be added to theme_boost_union_flavours.
-        $field = new xmldb_field('look_backgroundimagepos', XMLDB_TYPE_CHAR, '32', null, null, null, null,
-                'look_backgroundimage');
+        $field = new xmldb_field(
+            'look_backgroundimagepos',
+            XMLDB_TYPE_CHAR,
+            '32',
+            null,
+            null,
+            null,
+            null,
+            'look_backgroundimage'
+        );
 
         // Conditionally launch add field look_backgroundimagepos.
         if (!$dbman->field_exists($table, $field)) {
@@ -484,11 +490,10 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
         }
 
         // Boost_union savepoint reached.
-        upgrade_plugin_savepoint(true, 2024060110, 'theme', 'boost_union');
+        upgrade_plugin_savepoint(true, 2024100707, 'theme', 'boost_union');
     }
 
-    if ($oldversion < 2024060112) {
-
+    if ($oldversion < 2024100709) {
         // Define table theme_boost_union_menuitems to be altered.
         $table = new xmldb_table('theme_boost_union_menuitems');
 
@@ -501,21 +506,154 @@ function xmldb_theme_boost_union_upgrade($oldversion) {
         }
 
         // Boost_union savepoint reached.
-        upgrade_plugin_savepoint(true, 2024060112, 'theme', 'boost_union');
+        upgrade_plugin_savepoint(true, 2024100709, 'theme', 'boost_union');
     }
 
-    if ($oldversion < 2024060115) {
-
+    if ($oldversion < 2024100712) {
         // Set the smart menu item mode to inline for all menu items which are not of the dynamic courses type.
         // This is necessary as the smart menu item mode setting has been removed from these menu item types and the
         // smart menu item form only saves the inline mode as default since then.
         $DB->execute('UPDATE {theme_boost_union_menuitems}
-                      SET mode = '.\theme_boost_union\smartmenu_item::MODE_INLINE.'
-                      WHERE type != '.\theme_boost_union\smartmenu_item::TYPEDYNAMIC);
+                      SET mode = ' . \theme_boost_union\smartmenu_item::MODE_INLINE . '
+                      WHERE type != ' . \theme_boost_union\smartmenu_item::TYPEDYNAMIC);
 
         // Boost_union savepoint reached.
-        upgrade_plugin_savepoint(true, 2024060115, 'theme', 'boost_union');
+        upgrade_plugin_savepoint(true, 2024100712, 'theme', 'boost_union');
     }
+
+    if ($oldversion < 2024100716) {
+        // Remove the activitypurposesubsection setting from Boost Union.
+        unset_config('activitypurposesubsection', 'theme_boost_union');
+
+        // Boost_union savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100716, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100736) {
+        // Define table theme_boost_union_menus to be altered.
+        $table = new xmldb_table('theme_boost_union_menuitems');
+
+        // Define field display hidden courses to be added to theme_boost_union_menuitems.
+        $field = new xmldb_field('displayhiddencourses', XMLDB_TYPE_INTEGER, '9', null, null, null, null, 'listsort');
+
+        // Conditionally launch add field listsort.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Define field hiddencoursesort to be added to theme_boost_union_menuitems.
+        $field = new xmldb_field('hiddencoursesort', XMLDB_TYPE_INTEGER, '9', null, null, null, null, 'displayhiddencourses');
+
+        // Conditionally launch add field listsort.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Boost_union savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100736, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100739) {
+        // Get the current showhintcourseguestenrol setting.
+        $oldsetting = get_config('theme_boost_union', 'showhintcourseguestenrol');
+
+        // If the setting was set to THEME_BOOST_UNION_SETTING_SELECT_YES.
+        if ($oldsetting === THEME_BOOST_UNION_SETTING_SELECT_YES) {
+            // Update it to THEME_BOOST_UNION_SETTING_GUESTACCESSHINT_WITHOUTPASSWORD.
+            set_config('showhintcourseguestenrol', THEME_BOOST_UNION_SETTING_GUESTACCESSHINT_WITHOUTPASSWORD, 'theme_boost_union');
+
+            // Show an upgrade notice about this change.
+            $message = get_string('upgradenotice_2025041410', 'theme_boost_union');
+            echo $OUTPUT->notification($message, 'info');
+        }
+
+        // Boost_union savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100739, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100742) {
+        // Get the current courselistinghowfields setting.
+        $oldsetting = get_config('theme_boost_union', 'courselistinghowfields');
+
+        // If the old setting exists, migrate it to the new setting name.
+        if ($oldsetting !== false) {
+            // Set the new config.
+            set_config('courselistingshowfields', $oldsetting, 'theme_boost_union');
+
+            // Delete the old config.
+            unset_config('courselistinghowfields', 'theme_boost_union');
+
+            // Show an upgrade notice about this change.
+            $message = get_string('upgradenotice_2025041413', 'theme_boost_union');
+            echo $OUTPUT->notification($message, 'info');
+        }
+
+        // Boost_union savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100742, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100744) {
+        // Define table theme_boost_union_snippets to be created.
+        $table = new xmldb_table('theme_boost_union_snippets');
+
+        // Adding fields to table theme_boost_union_snippets.
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('name', XMLDB_TYPE_CHAR, '255', null, null, null, null);
+        $table->add_field('sortorder', XMLDB_TYPE_INTEGER, '18', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('source', XMLDB_TYPE_CHAR, '255', null, null, null, 'theme_boost_union');
+        $table->add_field('enabled', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
+
+        // Adding keys to table theme_boost_union_snippets.
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+
+        // Conditionally launch create table for theme_boost_union_snippets.
+        if (!$dbman->table_exists($table)) {
+            $dbman->create_table($table);
+        }
+
+        // Boost_union savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100744, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100745) {
+        // Convert existing hash-based dividers to real dividers.
+        // These were created by using TYPEHEADING with a title of "###".
+        $dividers = $DB->get_records_sql(
+            "SELECT * FROM {theme_boost_union_menuitems}
+                WHERE type = :type AND title LIKE :title",
+            ['type' => \theme_boost_union\smartmenu_item::TYPEHEADING, 'title' => '###%']
+        );
+
+        // Update each divider to use the new divider type.
+        foreach ($dividers as $divider) {
+            $divider->type = \theme_boost_union\smartmenu_item::TYPEDIVIDER;
+            $divider->title = ''; // Empty title to clear the existing hashes in the title.
+            $DB->update_record('theme_boost_union_menuitems', $divider);
+        }
+
+        // Show an upgrade notice about this change.
+        $message = get_string('upgradenotice_2025041416', 'theme_boost_union');
+        echo $OUTPUT->notification($message, 'info');
+
+        // Savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100745, 'theme', 'boost_union');
+    }
+
+    if ($oldversion < 2024100747) {
+        // The old smart menu item icon picker stored the value '0' for no icon.
+        // We need to update these to an empty string to match the new icon picker behavior.
+        // Find all menu items where menuicon is '0' and update them to have an empty string.
+        $DB->execute("UPDATE {theme_boost_union_menuitems}
+                SET menuicon = ''
+                WHERE menuicon = '0'");
+
+        // Savepoint reached.
+        upgrade_plugin_savepoint(true, 2024100747, 'theme', 'boost_union');
+    }
+
+    // Load the builtin SCSS snippets into the database.
+    // This is done with every plugin update, regardless of the plugin version.
+    snippets::add_builtin_snippets();
 
     return true;
 }

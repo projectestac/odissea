@@ -49,9 +49,11 @@ class coursecontentheaderfooter implements \renderable {
         // Based on lib/outputrenderers.php function activity_navigation .
 
         // First we should check if we want to add navigation.
-        if (($page->pagelayout == 'incourse' || $page->pagelayout == 'frametop')
-                && $page->context->contextlevel == CONTEXT_MODULE
-                && !$page->cm->is_stealth()) {
+        if (
+            ($page->pagelayout == 'incourse' || $page->pagelayout == 'frametop')
+            && $page->context->contextlevel == CONTEXT_MODULE
+            && !$page->cm->is_stealth()
+        ) {
             $course = $page->cm->get_course();
             $section = new \stdClass();
             $section->id = $page->cm->section;
@@ -76,8 +78,11 @@ class coursecontentheaderfooter implements \renderable {
         if ($this->sectionurl) {
             $strback = get_string_manager()->string_exists('back_to_course', 'format_multitopic') ?
                         get_string('back_to_course', 'format_multitopic') : get_string('back');
-            $o .= \html_writer::tag('a', $OUTPUT->pix_icon('t/left', '') . ' ' . $strback,
-                                    ['href' => $this->sectionurl]);
+            $o .= \html_writer::tag(
+                'a',
+                $OUTPUT->pix_icon('t/left', '') . ' ' . $strback,
+                ['href' => $this->sectionurl]
+            );
             // TODO: Use up arrow, to match Book exit link?
         }
 
@@ -92,5 +97,4 @@ class coursecontentheaderfooter implements \renderable {
 
         return $o;
     }
-
 }

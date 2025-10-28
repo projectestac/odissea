@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backup'] = 'Copiar a la Bolsa de Recursos';
 $string['copy_section'] = 'Copiar sección';
 $string['pluginname'] = 'Bolsa de Recursos';
 $string['sharing_cart:addinstance'] = 'Añadir un nuevo bloque Bolsa de Recursos';

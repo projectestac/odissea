@@ -98,7 +98,7 @@ $string['loadmore'] = 'تحميل المزيد';
 $string['loggedin'] = 'متواجد';
 $string['loggedoff'] = 'غير متصل';
 $string['managemessageoutputs'] = 'التفضيلات الافتراضية للإشعارات';
-$string['message'] = 'الرسالة';
+$string['message'] = 'مراسلة';
 $string['messagecontactrequest'] = '{$a->user} يلتمس إضافته كجهة اتصال. قم بزيارة صفحة <a href="{$a->url}">طلبات الاتصال</a> للاستجابة لهذا الطلب';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: طلب اتصال من {$a->user}';
 $string['messagecontentaudio'] = 'صوت';

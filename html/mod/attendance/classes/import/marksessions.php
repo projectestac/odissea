@@ -137,7 +137,7 @@ class marksessions {
      * @param string $encoding The encoding of the csv file.
      * @param string $delimiter The specified delimiter for the file.
      * @param string $importid The id of the csv import.
-     * @param array $mappingdata The mapping data from the import form.
+     * @param stdClass $mappingdata The mapping data from the import form.
      * @param bool $useprogressbar Whether progress bar should be displayed, to avoid html output on CLI.
      */
     public function __construct($att, $text = null, $encoding = null, $delimiter = null, $importid = 0,

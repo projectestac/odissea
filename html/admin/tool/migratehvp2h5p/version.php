@@ -25,16 +25,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tool_migratehvp2h5p';
-$plugin->release = '0.1.6';
-$plugin->version = 2024011100;
-$plugin->requires = 2020041700;
+$plugin->release = '0.1.7';
+$plugin->version = 2025012000;
+$plugin->requires = 2023042400;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [
 
     // XTEC ************ ELIMINAT - Removed dependencies in tool_migratehvp2h5p
     // 2021.09.20 @aginard
     /*
-    'mod_h5pactivity' => 2020041401,
+    'mod_h5pactivity' => 2023042402,
     'mod_hvp' => 2020020500,
     */
     // ************ FI

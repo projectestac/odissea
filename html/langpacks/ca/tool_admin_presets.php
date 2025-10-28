@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actionimport'] = 'Importa la preconfiguració';
 $string['author'] = 'Autor/a';
 $string['import'] = 'Importa';
 $string['pluginname'] = 'Configuracions d\'administració predefinides del lloc.';

@@ -419,28 +419,23 @@ class restore_format_tiles_plugin extends restore_format_plugin {
             return;
         }
         foreach ($backupinfo->sections as $section) {
+            $isrealsection = ($section->modname ?? null) !== 'subsection';
+            if (!$isrealsection) {
+                // We are not counting subsections.
+                continue;
+            }
+
             // Is the section included or has the user excluded it (unchecked box)?  Ignore if excluded.
             $sectionid = $section->sectionid;
             $included = $this->get_setting_value('section_' . $sectionid . '_included');
             if ($included) {
-                $sectionnum = is_numeric($section->title) ? (int)$section->title : false;
-                if (($sectionnum && $sectionnum > $maxallowed + 1) || $totalincluded > $maxallowed) {
-                    // Allowing this section would mean we had some secs with sec numbers too high - disallow.
-                    $a = new stdClass();
-                    $a->sectionnum = $sectionnum;
-                    $a->maxallowed = $maxallowed;
-                    \core\notification::error(get_string('restoreincorrectsections', 'format_tiles', $a));
-                    throw new moodle_exception('restoreincorrectsections', 'format_tiles', '', $a);
-                } else {
-                    $totalincluded++;
-                    if ($totalincluded > $maxallowed + 1) {
-                        // Allowing this section would mean we have too many secs - disallow.
-                        $a = new stdClass();
-                        $a->numsections = $totalincluded;
-                        $a->maxallowed = $maxallowed;
-                        \core\notification::error(get_string('restoretoomanysections', 'format_tiles', $a));
-                        throw new moodle_exception('restoretoomanysections', 'format_tiles', '', $a);
-                    }
+                $totalincluded++;
+                if ($totalincluded > ($maxallowed + 1) * 5) {
+                    // Allowing this section would mean we have too many secs - disallow.
+                    // Legacy check, included in 2020 to protect against issue 45 and should be very unlikely to happen now.
+                    // Check can probably be removed soon.
+                    \core\notification::error(get_string('restoretoomanysections', 'format_tiles', $maxallowed));
+                    throw new moodle_exception('restoretoomanysections', 'format_tiles', '', $maxallowed);
                 }
             }
         }
@@ -455,7 +450,7 @@ class restore_format_tiles_plugin extends restore_format_plugin {
      * @throws moodle_exception
      */
     private function check_destination_course_section_count() {
-        global $DB, $SESSION;
+        global $SESSION;
         $maxallowed = \format_tiles\local\course_section_manager::get_max_sections();
         $courseid = $this->step->get_task()->get_courseid();
         $sessionvar = 'restore_dest_check_' . $courseid;
@@ -464,28 +459,15 @@ class restore_format_tiles_plugin extends restore_format_plugin {
             return true;
         }
 
-        $maxsection = $DB->get_field('course_sections', 'MAX(section)',  ['course' => $courseid]);
-
-        if ($maxsection && $maxsection > $maxallowed + 1) {
-
-            // If user is admin, when we throw error, we offer them a button to delete excess sections.
-            $isadmin = has_capability('moodle/site:config', \context_system::instance());
-            if ($isadmin) {
-                $admintoolsurl = \format_tiles\local\course_section_manager::get_list_problem_courses_url();
-                $admintoolsbutton = \html_writer::link(
-                    $admintoolsurl,
-                    get_string('checkforproblemcourses', 'format_tiles'),
-                    ['class' => 'btn btn-secondary ml-2']
-                );
-            } else {
-                $admintoolsurl = '';
-                $admintoolsbutton = '';
-            }
+        // If we are importing into a course we want to check it doesn't have too many sections already.
+        // This is a legacy check which was included in 2020 to protect against issue 45 and should be very unlikely to happen now.
+        // Check can probably be removed soon.
+        if (\format_tiles\local\course_section_manager::course_section_count_exceeds($courseid, $maxallowed * 5)) {
             $a = new stdClass();
-            $a->sectionnum = $maxsection;
+            $a->sectionnum = \format_tiles\local\course_section_manager::get_max_non_subsection_number($courseid);
             $a->maxallowed = $maxallowed;
-            \core\notification::error(get_string('restoreincorrectsections', 'format_tiles', $a) . $admintoolsbutton);
-            throw new moodle_exception('restorefailed', 'format_tiles', $admintoolsurl, $a);
+            \core\notification::error(get_string('restoreincorrectsections', 'format_tiles', $a));
+            throw new moodle_exception('restorefailed', 'format_tiles', '', $a);
         }
 
         if (!defined('BEHAT_SITE_RUNNING')) {

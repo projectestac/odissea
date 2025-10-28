@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidframework'] = 'Marc de competències no vàlid';
 $string['selectframework'] = 'Tria un marc de competències';
 $string['studentid'] = 'ID de l\'estudiant';
+$string['userreportpdf'] = 'Informe d\'usuari en PDF';

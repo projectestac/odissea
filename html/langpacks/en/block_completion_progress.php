@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['completed_colour'] = '#73A839';
+$string['completed_colour'] = '#6A9C35';
 $string['completed_colour_descr'] = 'HTML Colour code for elements that have been completed';
 $string['completed_colour_title'] = 'Completed colour';
 $string['completion_not_enabled'] = 'Completion tracking is not enabled on this site.';
@@ -34,6 +34,7 @@ $string['completion_progress:addinstance'] = 'Add a new Completion Progress bloc
 $string['completion_progress:myaddinstance'] = 'Add a Completion Progress block to My home page';
 $string['completion_progress:overview'] = 'View course overview of Completion Progress for all students';
 $string['completion_progress:showbar'] = 'Show the bar in the Completion Progress block';
+$string['computeprogress'] = 'Calculating progress percentages';
 $string['config_activitiesincluded'] = 'Activities included';
 $string['config_activitycompletion'] = 'All activities with completion set';
 $string['config_default_title'] = 'Completion Progress';
@@ -82,10 +83,16 @@ $string['notCompleted_colour_title'] = 'Not-completed colour';
 $string['not_all_expected_set'] = 'Not all activities with completion have an "{$a}" date set.';
 $string['now_indicator'] = 'NOW';
 $string['overview'] = 'Overview of students';
+$string['overviewcachetime'] = 'Time to cache computed percentages';
 $string['pluginname'] = 'Completion Progress';
-$string['privacy:metadata'] = 'The Completion Progress block only displays existing completion data.';
+$string['privacy:metadata:block_completion_progress:blockinstanceid'] = 'The Completion Progress block instance identifier the percentage relates to.';
+$string['privacy:metadata:block_completion_progress:percentage'] = 'The percentage of completion.';
+$string['privacy:metadata:block_completion_progress:tableexplanation'] = 'The Completion Progress block caches completion percentages for sorting of the Overview table.';
+$string['privacy:metadata:block_completion_progress:timemodified'] = 'The time at which the percentage was calculated.';
+$string['privacy:metadata:block_completion_progress:userid'] = 'The user identifier to whom the percentage relates.';
 $string['progress'] = 'Progress';
 $string['progressbar'] = 'Completion Progress';
+$string['progresscachetime'] = 'Calculated {$a} ago';
 $string['selectitem'] = 'Select \'{$a}\'';
 $string['shortname'] = 'Short course name';
 $string['showallinfo'] = 'Show all info';

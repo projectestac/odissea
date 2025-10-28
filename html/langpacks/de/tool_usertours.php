@@ -177,7 +177,7 @@ Alternativ kann eine Sprachtext-ID im Format identifier,component eingegeben wer
 $string['tour1_content_addingblocks'] = 'Denken Sie bei der Verwendung von Blöcken daran, dass Blöcke in der Moodle-App nicht angezeigt werden. Ihre Website sollte auch ohne Blöcke problemlos funktionieren.';
 $string['tour1_content_blockregion'] = 'Es gibt weiterhin einen Blockbereich. Wir empfehlen, die Navigations- und Einstellungsblöcke zu entfernen, weil deren Funktionalität an anderer Stelle im Design Boost zu finden ist.';
 $string['tour1_content_customisation'] = 'Um das Erscheinungsbild Ihrer Website und der Startseite anzupassen, verwenden Sie bitte den Schalter rechts oben im Kopfbereich. Versuchen Sie jetzt, das Bearbeiten einzuschalten.';
-$string['tour1_content_end'] = 'Dies ist das Ende Ihrer Nutzertour. Sie wird nicht noch einmal angezeigt, außer Sie klicken auf den Link in der Fußzeile. Als Administrator/in können Sie solche Touren auch selbst erstellen.';
+$string['tour1_content_end'] = 'Dies ist das Ende Ihrer Nutzertour. Sie wird nicht nochmal angezeigt, außer Sie klicken auf den Link in der Fußzeile. Als Administrator/in können Sie solche Touren auch selbst erstellen.';
 $string['tour1_content_navigation'] = 'Die Hauptnavigation findet nun über diese Navigationsleiste statt. Die Inhalte aktualisieren sich abhängig davon, an welcher Stelle Sie auf der Website sind. Nutzen Sie die Taste oben links, um die Navigationsleiste ein- oder auszublenden.';
 $string['tour1_content_welcome'] = 'Willkommen beim Design \'Boost\'. Falls Sie bereits eine frühere Version verwendet haben, werden Sie möglicherweise Dinge finden, die jetzt ein bisschen anders aussehen.';
 $string['tour1_title_addingblocks'] = 'Blöcke hinzufügen';

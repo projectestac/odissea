@@ -61,15 +61,18 @@ if ($cm->modname === 'resource') {
         require_once("$CFG->dirroot/mod/resource/lib.php");
         foreach ($files as $file) {
             if (in_array($file->get_mimetype(), $allowedmimetypes) && $file->get_filesize() > 0 && $file->get_filename() !== '.') {
+                // This was changed once to address issue 212 (Safari <object> tags).
+                // Later, the modal switched to using <iframe>, so this was changed back to address issue 291.
                 require_once("$CFG->dirroot/lib/filelib.php");
                 resource_view($modobject, $course, $cm, $context);
-                // We cannot just redirect to pluginfile.php as Safari will not follow that within an <object> tag.
-                // So instead we use file_pluginfile() which will still delegate serving the file to resource_pluginfile().
-                // Capability/login was already checked above but resource_pluginfile() will also check it.
-                $relativepath = "/$context->id/mod_resource/content/$modobject->revision"
-                    . $file->get_filepath() . $file->get_filename();
-                file_pluginfile($relativepath, $forcedownload);
-                die();
+                $url = new moodle_url(
+                    "/pluginfile.php/$context->id/mod_resource/content/$modobject->revision"
+                    . $file->get_filepath() . rawurlencode($file->get_filename())
+                );
+                if ($forcedownload) {
+                    $url->param('forcedownload', 1);
+                }
+                redirect($url);
             }
         }
     }

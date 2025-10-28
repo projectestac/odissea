@@ -56,8 +56,10 @@ if ($deletesection) {
     $cancelurl = course_get_url($course, $sectioninfo);                         // CHANGED: Ignore $sectionreturn.
     if (course_can_delete_section($course, $sectioninfo)) {
         $confirm = optional_param('confirm', false, PARAM_BOOL) && confirm_sesskey();
-        if (!$confirm && optional_param('sesskey', null, PARAM_RAW) !== null &&
-                empty($sectioninfo->summary) && empty($sectioninfo->sequence) && confirm_sesskey()) {
+        if (
+            !$confirm && optional_param('sesskey', null, PARAM_RAW) !== null &&
+            empty($sectioninfo->summary) && empty($sectioninfo->sequence) && confirm_sesskey()
+        ) {
             // Do not ask for confirmation if section is empty and sesskey is already provided.
             $confirm = true;
         }
@@ -90,8 +92,11 @@ if ($deletesection) {
             // CHANGED LINE ABOVE: Custom script.
             $formcontinue = new \single_button($deleteurl, get_string('delete'));
             $formcancel = new \single_button($cancelurl, get_string('cancel'), 'get');
-            echo $OUTPUT->confirm(get_string('confirmdeletesection', '',
-                get_section_name($course, $sectioninfo)), $formcontinue, $formcancel);
+            echo $OUTPUT->confirm(
+                get_string('confirmdeletesection', '', get_section_name($course, $sectioninfo)),
+                $formcontinue,
+                $formcancel
+            );
             echo $OUTPUT->box_end();
             echo $OUTPUT->footer();
             exit;
@@ -148,8 +153,10 @@ if ($mform->is_cancelled()) {
     if (isset($data->level) && ($data->level != $sectioninfoextra->levelsan) && ($sectioninfo->section > 0)) {
         // If the level was changed, update the section info properties relevant to generating the URL.
         // This is a hack to avoid recalculating section properties.  TODO: Remove?
-        if (($sectioninfoextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)
-            && ($data->level >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)) {
+        if (
+            ($sectioninfoextra->levelsan < FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)
+            && ($data->level >= FORMAT_MULTITOPIC_SECTION_LEVEL_TOPIC)
+        ) {
             // If the section was changed to Topic level, the former previous page will be the new parent page.
             $sectioninfoextra->parentid = $sectioninfoextra->prevpageid;
         }

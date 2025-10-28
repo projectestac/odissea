@@ -30,7 +30,7 @@ $string['connectionsettings'] = '接続設定';
 $string['errorcreatingschema'] = 'Solrスキーマ作成エラー: {$a}';
 $string['errorsolr'] = 'Solr検索エンジンがエラーを報告しました: {$a}';
 $string['errorvalidatingschema'] = 'Solrスキーマの妥当性確認にエラーが発生しました。フィールド {$a->fieldname} が存在しません。必須フィールドをセットアップするには<a href="{$a->setupurl}">このリンクにアクセス</a>してください。';
-$string['extensionerror'] = 'Apache Solr PHP拡張モジュールがインストールされていません。ドキュメンテーションを確認してください。';
+$string['extensionerror'] = 'Apache Solr PHP拡張モジュールがインストールされていません。ドキュメンテーションをご確認ください。';
 $string['fileindexing'] = 'ファイルインデックス化を有効にする';
 $string['fileindexing_help'] = 'あなたのSolrインストールがサポートする場合、この機能ではインデックス化のためにMoodleがファイルを送信できるようにします。すべてのファイルを追加するためこのオプションを有効にした後、あなたはすべてのサイトコンテンツを再インデックス化する必要があります。';
 $string['fileindexsettings'] = 'ファイルインデックス化設定';

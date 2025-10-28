@@ -261,4 +261,4 @@ $string['validationmsglevel_info'] = 'D\'acord';
 $string['validationmsglevel_warning'] = 'Avís';
 $string['version'] = 'Versió';
 $string['versiondb'] = 'Versió actual';
-$string['versiondisk'] = 'Nova versió';
+$string['versiondisk'] = 'Versió nova';

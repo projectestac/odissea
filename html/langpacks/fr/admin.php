@@ -714,6 +714,8 @@ $string['fullnamedisplayprivate'] = 'Format d’affichage des noms complets – 
 $string['gdrequired'] = 'L’extension GD est désormais requise par Moodle pour modifier les images.';
 $string['generalsettings'] = 'Réglages généraux';
 $string['geoipfile'] = 'Base de données MaxMind GeoLite2 City';
+$string['geopluginapikey'] = 'Clef API GeoPlugin';
+$string['geopluginapikey_desc'] = 'La clef API utilisée pour accéder au service GeoPlugin. Obtenez votre propre clef sur la <a href="https://www.geoplugin.com/" target="_blank">page GeoPlugin</a>.';
 $string['getremoteaddrconf'] = 'Source de l’adresse IP enregistrée';
 $string['globalsearch'] = 'Recherche globale';
 $string['globalsearchmanage'] = 'Gérer la recherche globale';
@@ -1303,7 +1305,7 @@ $string['settingmaxinputvars'] = 'La valeur recommandée pour le réglage PHP ma
 $string['settingmaxinputvarsrequired'] = 'Le réglage PHP max_input_vars doit être au mininum 5000.';
 $string['settingmemorylimit'] = 'Mémoire insuffisante détectée. Veuillez fixer une limite de mémoire plus élevée dans la configuration de PHP.';
 $string['settingsafemode'] = 'Moodle n’est pas totalement compatible avec le <em>safe mode</em>. Veuillez demander à l’administrateur du serveur de le désactiver. Le fonctionnement de Moodle avec le <em>safe mode</em> actif n’est pas pris en charge. Vous rencontrerez vraisemblablement des problèmes si vous essayez.';
-$string['settingzendexceptionignoreargs'] = 'Il est fortement recommandé d\'activer le réglage PHP zend.exception_ignore_args comme mesure de précaution en matière de sécurité.';
+$string['settingzendexceptionignoreargs'] = 'Il est fortement recommandé d’activer le réglage PHP zend.exception_ignore_args comme mesure de précaution en matière de sécurité.';
 $string['setupsearchengine'] = 'Configurer le moteur de recherche';
 $string['showcommentscount'] = 'Afficher le nombre des commentaires';
 $string['showdetails'] = 'Afficher les informations';

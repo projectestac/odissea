@@ -37,7 +37,6 @@ use core_courseformat\base as course_format;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class section extends section_base {
-
     // ADDED.
     /** @var \format_multitopic\section_info_extra the section info */
     protected $fmtsectionextra;
@@ -213,5 +212,4 @@ class section extends section_base {
 
         return true;
     }
-
 }

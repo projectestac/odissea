@@ -53,10 +53,10 @@ $string['allresults'] = 'Mostrar todos los resultados';
 $string['allstudents'] = 'Mostrar todos los estudiantes';
 $string['alwaysavailable'] = 'Siempre disponible';
 $string['analysis'] = 'Análisis de artículo';
-$string['answerform'] = 'Formulario de respuestas';
-$string['answerformforgroup'] = 'Formulario de respuesta para grupo {$a}';
+$string['answerform'] = 'Hoja de respuestas';
+$string['answerformforgroup'] = 'Hoja de respuesta para grupo {$a}';
 $string['answerforms'] = 'Formas de respuestas';
-$string['answerpdfxy'] = 'Formulario de respuestas  ({$a}->maxquestions questions / {$a}->maxanswers options)';
+$string['answerpdfxy'] = 'Hoja de respuestas  ({$a}->maxquestions questions / {$a}->maxanswers options)';
 $string['areyousureremoveselected'] = '¿Está seguro que desea eliminar todas las preguntas?';
 $string['attemptexists'] = 'Existe tentativa';
 $string['attemptsexist'] = 'Ya no puede Agregar o quitar preguntas.';
@@ -103,8 +103,8 @@ $string['configonlylocalcategories'] = 'No se permiten categorías de preguntas 
 $string['configpapergray'] = 'Valor de blanco del papel, que es usado para la evaluación de las hojas de respuesta.';
 $string['configshuffleanswers'] = 'Barajar respuestas';
 $string['configshufflequestions'] = 'Si habilita esta opción, el orden de las preguntas en los cuestionarios offline de los grupos será mezclado aleatoriamente cada vez que usted genere una vista previa en la pestaña "Crear formularios".';
-$string['configshufflewithin'] = 'Si habilita esta opción, las opciones que componen las preguntas individuales serán barajadas aleatoriamente cuando los formularios de pregunta y de respuesta son creados.';
-$string['configuseridentification'] = 'Una fórmula que describe la identificación del usuario. Esta fórmula se usa para asignar formularios de respuesta a usuarios en el sistema. La parte izquierda de la ecuación define el número de dígitos (sólo números enteros, hasta 10 dígitos). La parte derecha de la ecuación debe denotar un campo en la tabla de usuario de Moodle (ej., ID, nº ID, teléfono).
+$string['configshufflewithin'] = 'Si habilita esta opción, las opciones que componen las preguntas individuales serán barajadas aleatoriamente cuando las hojas de preguntas y de respuestas se crean.';
+$string['configuseridentification'] = 'Una fórmula que describe la identificación del usuario. Esta fórmula se usa para asignar hojas de respuesta a usuarios en el sistema. La parte izquierda de la ecuación define el número de dígitos (sólo números enteros, hasta 10 dígitos). La parte derecha de la ecuación debe denotar un campo en la tabla de usuario de Moodle (ej., id, idnumber, phone1).
 Además, la ecuación puede considerar prefijo y sufijo que se añada a los dígitos marcados (ej. "a[7]=username" or "b[5]cd=username"). Estas concatenaciones de cadenas y números denotan el valor del campo usado en la tabla del usuario que se usa para la identificación.';
 $string['confirmremovequestion'] = '¿Seguro que quieres eliminar esta pregunta de tipo {$a}?';
 $string['copy'] = 'Copiar';
@@ -187,8 +187,8 @@ $string['displayoptions'] = 'Opciones de visualización';
 $string['documentschanged'] = 'Se modificaron una o más preguntas del cuestionario offline desde la creación de los documentos.<br>Los resultados futuros se recalificarán automáticamente durante la evaluación a la versión actual de las preguntas seleccionadas. En los documentos, se sigue mostrando la versión original de las preguntas.';
 $string['documentschangedwithresults'] = 'Se modificaron una o más preguntas del cuestionario offline desde la creación de los documentos. Los resultados existentes se recalificaron automáticamente a la versión actual de las preguntas seleccionadas. En los documentos, se sigue mostrando la versión original de las preguntas.';
 $string['done'] = 'hecho';
-$string['downloadallzip'] = 'Descargar todos los ficheros en ZIP';
-$string['downloadpartpdf'] = 'Descargar el fichero PDF para la lista \'{$a}\\';
+$string['downloadallzip'] = 'Descargar todos estos ficheros en ZIP';
+$string['downloadpartpdf'] = 'Descargar el fichero PDF para la lista "{$a}"';
 $string['downloadpdfs'] = 'Formularios';
 $string['downloadresultsas'] = 'Descargar resultados como:';
 $string['dragtoafter'] = 'Después de {$a}';
@@ -224,8 +224,8 @@ $string['eventattemptpreviewstarted'] = 'intento de previsualización de cuestio
 $string['eventattemptreviewed'] = 'Resultados del cuestionario online revisados';
 $string['eventattemptsummaryviewed'] = 'Resumen de intento de cuestionario offline visto';
 $string['eventattemptviewed'] = 'Intento de cuestionario online visto';
-$string['eventdocscreated'] = 'Formularios de preguntas y de respuestas para el cuestionario offline creados';
-$string['eventdocsdeleted'] = 'Formularios de preguntas y de respuestas para el cuestionario offline borrados';
+$string['eventdocscreated'] = 'Hojas de preguntas y de respuestas para el cuestionario offline creados';
+$string['eventdocsdeleted'] = 'Hojas de preguntas y de respuestas para el cuestionario offline borrados';
 $string['eventeditpageviewed'] = 'Página de edición de cuestionario offline vista';
 $string['eventofflinequizattemptsubmitted'] = 'Intento de cuestionario offline enviado';
 $string['eventoverridecreated'] = 'Sobreescritura de cuestionario offline creada';
@@ -240,7 +240,7 @@ $string['excelformat'] = 'Hoja de cálculo Excel (XLSX)';
 $string['experimentalevaluation'] = 'Evaluación experimental de las hojas de respuesta';
 $string['experimentalevaluation_help'] = 'Evaluación experimental de las hojas de respuesta';
 $string['fileformat'] = 'Formato para las hojas de pregunta';
-$string['fileformat_help'] = 'Elija si quiere las hojas de preguntas en formato PDF, DOCX o TEX. Las hojas de los formularios de respuesta y los formularios de corrección son generados siempre en PDF.';
+$string['fileformat_help'] = 'Elija si quiere las hojas de preguntas en formato PDF, DOCX o TEX. Las hojas de respuesta y de corrección se generan siempre en PDF.';
 $string['fileprefixanswer'] = 'answer_form';
 $string['fileprefixcorrection'] = 'correction_form';
 $string['fileprefixform'] = 'question_form';
@@ -263,15 +263,15 @@ $string['fontfamilyzapfdingbats'] = 'ZapfDingbats';
 $string['fontsize'] = 'Tamaño de letra';
 $string['forautoanalysis'] = 'Para análisis automático';
 $string['formforcorrection'] = 'Formulario de correción para el grupo {$a}';
-$string['formforgroup'] = 'Formulario de preguntas para el grupo {$a}';
-$string['formforgroupdocx'] = 'Formulario de preguntas para el grupo {$a} (DOCX)';
-$string['formforgrouplatex'] = 'Formulario de preguntas para el grupo {$a} (LATEX)';
+$string['formforgroup'] = 'Hoja de preguntas para el grupo {$a}';
+$string['formforgroupdocx'] = 'Hoja de preguntas para el grupo {$a} (DOCX)';
+$string['formforgrouplatex'] = 'Hoja de preguntas para el grupo {$a} (LATEX)';
 $string['forms'] = 'Formularios';
 $string['formsexist'] = 'Formularios ya creados.';
 $string['formsexistx'] = 'Los formularios se han creado (<a href="{$a}">Descargar formularios</a>)';
 $string['formsheetsettings'] = 'Ajustes de formulario';
 $string['formspreview'] = 'Vista previa';
-$string['formwarning'] = 'No hay formulario de respuesta definido. Por favor, contacte con su administrador.';
+$string['formwarning'] = 'No hay hoja de respuestas definida. Por favor, contacte con su administrador.';
 $string['fromquestionbank'] = 'desde el banco de preguntas';
 $string['functiondisabledbysecuremode'] = 'Esta funcionalidad esta desactivadas actualmente';
 $string['generalfeedback'] = 'Realimentación general';
@@ -310,7 +310,7 @@ $string['importerror21'] = 'No se pudo interpretar';
 $string['importerror22'] = 'Marcaciones dudosas';
 $string['importerror23'] = 'El usuario no está en la lista';
 $string['importerror24'] = 'Lista no detectada';
-$string['importforms'] = 'Evaluar formularios de respuesta';
+$string['importforms'] = 'Subir hojas de respuesta';
 $string['importfromto'] = 'Evaluando {$a->from} a {$a->to} de {$a->total}.';
 $string['importisfinished'] = 'La evaluación del cuestionario offline {$a} ha finalizado.';
 $string['importlinkresults'] = 'Enlace a los resultados: {$a}';
@@ -333,9 +333,9 @@ $string['infoshort'] = 'i';
 $string['insecuremarkings'] = 'Las marcas dudosas necesitan correciones manuales';
 $string['insecuremarkingsforquestion'] = 'Las marcas poco claras necesitan correciones manuales';
 $string['insertnumber'] = 'Por favor, escriba el número de identificación correcto marcado con el cuadro azul.';
-$string['instruction1'] = 'Este formulario de respuesta será escaneado automáticamente. Por favor, no lo doble o manche. Utilice bolígrafo negro o azul para marcar los campos:';
-$string['instruction2'] = '¡Sólo las marcas claras pueden ser interpretadas correctamente! Si quiere que se corrija una marca, rellene completamente la casilla con color. Este campo será interpretado como una casilla vacía:';
-$string['instruction3'] = 'Las casillas corregidas no pueden ser marcadas de nuevo. Por favor, no escriba nada fuera de las casillas.';
+$string['instruction1'] = 'Esta hoja de respuestas se escaneará automáticamente. Por favor, no la dobles ni la manches. Utiliza bolígrafo negro o azul para marcar los campos:';
+$string['instruction2'] = '¡Sólo se pueden interpretar correctamente las marcas correctas! Si quieres corregir una marca, rellena completamente la casilla. Este campo se interpretará como una casilla vacía:';
+$string['instruction3'] = 'Las casillas corregidas no pueden marcarse de nuevo. Por favor, no escribas nada fuera de las casillas.';
 $string['introduction'] = 'Introducción';
 $string['invalidformula'] = 'Fórmula para identificación de usuario no válida. La fórmula debe tener el formato <prefix>[<#digits>]<suffix>=<db-field&>.';
 $string['invalidnumberofdigits'] = 'Número inválido de cifras. Sólo se permiten de 1 a 9 cífras.';
@@ -356,7 +356,7 @@ $string['linktoscannedform'] = 'Ver formulario escaneado';
 $string['listnotdetected'] = '¡No se ha podido detectar el código de barras para la lista!';
 $string['logdeleted'] = 'Entrada del registro {$a} borrada.';
 $string['logourl'] = 'URL del logo';
-$string['logourldesc'] = 'URL de un archivo de imagen para que se muestra en la esquina superior derecha de los formularios de respuesta. <b>http://www.yoursite.tld/mylogo.png</b> o <b>../path/to/your/logo.png</b>. El tamaño máximo es de 520x140 píxeles. Los formularios de respuesta no pueden evaluarse si la imagen supera el tamaño máximo.';
+$string['logourldesc'] = 'URL de un archivo de imagen para que se muestre en la esquina superior derecha de las hojas de respuesta. <b>http://www.yoursite.tld/mylogo.png</b> o <b>../path/to/your/logo.png</b>. El tamaño máximo es de 520x140 píxeles. Las hojas de respuesta no pueden evaluarse si la imagen supera el tamaño máximo.';
 $string['lowertrigger'] = 'Segundo límite inferior';
 $string['lowertriggerzero'] = 'El segundo límite inferior es cero';
 $string['lowerwarning'] = 'Primer límite inferior';
@@ -413,7 +413,7 @@ $string['notxtfile'] = '';
 $string['notyetgraded'] = 'No calificado aún';
 $string['nozipfile'] = 'No es un archivo ZIP';
 $string['numattempts'] = 'Número de resultados importados:  {$a}';
-$string['numattemptsqueue'] = '{$a} formulario de respuestas añadido a la cola. Se le enviará un correo electrónico cuando los datos sean procesados.';
+$string['numattemptsqueue'] = '{$a} hojas de respuestas añadidas a la cola. Se le enviará un correo electrónico cuando los datos se hayan procesado.';
 $string['numattemptsverify'] = 'Formularios escaneados esperando para corrección: {$a}';
 $string['numberformat'] = '¡El valor debe ser un número con {$a} cifras!';
 $string['numbergroups'] = 'Número de grupos';
@@ -444,7 +444,7 @@ $string['offlinequizopens'] = 'El cuestionario offline se abre';
 $string['offlinequizsettings'] = 'Ajustes sin conexión';
 $string['offlinequizwillopen'] = 'El cuestionario offline se abre el {$a}';
 $string['oneclickenrol'] = 'Matriculación en click 1';
-$string['oneclickenroldesc'] = 'Si se activa esta opción los profesores tienen la posibilidad de matricular usuarios con un clic mientras están corrigiendo los formularios de respuestas (error "El usuario no está en el curso").';
+$string['oneclickenroldesc'] = 'Si se activa esta opción los profesores tienen la posibilidad de matricular usuarios con un clic mientras están corrigiendo las hojas de respuestas (error "El usuario no está en el curso").';
 $string['oneclickrole'] = 'Rol para matriculación en click 1';
 $string['oneclickroledesc'] = 'Elija el rol usado para matriculación en un clic. Sólo pueden seleccionarse roles con el arquetipo "Estudiante".';
 $string['onlylocalcategories'] = 'Sólo categorías locales de preguntas';
@@ -480,7 +480,7 @@ $string['participants'] = 'Participantes';
 $string['participants_help'] = '<p>Las listas de participantes están diseñadas para grandes cuestionarios offline con muchos participantes.
 Ayudan al profesor a comprobar qué estudiantes participan en el cuestionario y si todos los resultados fueron importados correctamente.
 Puede añadir usuarios a diferentes listas. Cada lista puede contener, por ejemplo, los participantes en una habitación determinada. Los participantes pueden ser miembros de un grupo especial. Una herramienta de registro de grupos puede ser usada para crear estos grupos.
-Las listas de participantes pueden ser descargadas como documentos PDF, impresas y marcadas con cruces igual que los formularios de respuesta. Después pueden ser cargados y los estudiantes marcados se guardan como presentes en la base de datos.
+Las listas de participantes pueden ser descargadas como documentos PDF, impresas y marcadas con cruces igual que las hojas de respuesta. Después pueden cargarse y los estudiantes marcados se guardan como presentes en la base de datos.
 Por favor, evite manchas en el código de barras ya que estos son usados para identificar a los estudiantes.</p>';
 $string['participantsinlists'] = 'Participantes';
 $string['participantslist'] = 'Lista de participantes';
@@ -495,12 +495,12 @@ $string['partuncheckedwithoutresult'] = '{$a} participantes desmarcados sin resu
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} participantes desmarcados con resultado</a>';
 $string['pdfdeletedforgroup'] = 'Formulario para el grupo {$a} eliminado';
 $string['pdffont'] = 'Fuente del formulario';
-$string['pdffont_help'] = 'Aquí puede seleccionar una fuente para todos sus formularios PDF: hojas de respuestas, formularios de corrección, formularios de asistencia. Así como formularios de preguntas, si elige un formato PDF para ello. La elección también dependerá de qué caracteres use en sus formularios. Con formato DOCX y LATEX las hojas de preguntas no están afectadas por esto.';
+$string['pdffont_help'] = 'Aquí puede seleccionar una fuente para todos sus formularios PDF: hojas de respuestas, hojas de corrección, formularios de asistencia. Así como hojas de preguntas, si elige un formato PDF para ello. La elección también dependerá de qué caracteres use en sus formularios. Con formato DOCX y LATEX las hojas de preguntas no están afectadas por esto.';
 $string['pdfintro'] = 'Información adicional';
-$string['pdfintro_help'] = 'Esta información será impresa en la primera página de la hoja de preguntas y debería contener información general sobre como rellenar el formulario de respuesta.';
-$string['pdfintrotext'] = '<b>¿Cómo debo marcar correctamente?</b><br /> Este formulario de respuesta será escaneado automáticamente. Por favor, no lo doble o manche. Use un bolígrafo negro o azul para marcar los campos. Si quiere corregir una marca, rellene completamente la casilla con color. Esta casilla será interpretada como una casilla vacía.';
+$string['pdfintro_help'] = 'Esta información se imprimirá en la primera página de la hoja de preguntas y debería contener información general sobre cómo rellenar la hoja de respuestas.';
+$string['pdfintrotext'] = '<b>¿Cómo debo marcar correctamente?</b><br /> Esta hoja de respuestas se escaneará automáticamente. Por favor, no la dobles ni la manches. Usa un bolígrafo negro o azul para marcar los campos. Si quieres corregir una marca, rellena completamente la casilla. Esta casilla se interpretará como una casilla vacía.';
 $string['pdfintrotoolarge'] = 'La introducción es demasiado larga (max. 2000 caracteres).';
-$string['pdfscreated'] = 'Los formularios PDF han sido creados';
+$string['pdfscreated'] = 'Se han creado los formularios PDF';
 $string['pdfsdeletedforgroup'] = 'Formularios para el grupo {$a} eliminados';
 $string['pearlywhite'] = 'Blanco perlado';
 $string['pluginadministration'] = 'Administración del cuestionario offline';
@@ -532,7 +532,7 @@ $string['privacy:metadata:offlinequiz:name'] = 'La columna "nombre" guarda el no
 $string['privacy:metadata:offlinequiz:numgroups'] = 'La cantidad de grupos que tiene este cuestionario.';
 $string['privacy:metadata:offlinequiz:papergray'] = 'El valor blanco de este cuestionario offline.';
 $string['privacy:metadata:offlinequiz:pdfintro'] = 'La información adicional que se inserta al principio de las hojas de preguntas.';
-$string['privacy:metadata:offlinequiz:printstudycodefield'] = 'Una opción de imprimir el código de estudio en el formulario de preguntas. 1 para sí. Si no, 0.';
+$string['privacy:metadata:offlinequiz:printstudycodefield'] = 'Una opción de imprimir el código de estudio en la hoja de preguntas. 1 para sí. Si no, 0.';
 $string['privacy:metadata:offlinequiz:review'] = 'Esta columna guarda información sobre cómo se hace la revisión.';
 $string['privacy:metadata:offlinequiz:showgrades'] = 'Guarda si la cantidad de puntos a obtener en la pregunta deberían imprimirse en la hoja de preguntas.';
 $string['privacy:metadata:offlinequiz:showquestioninfo'] = 'Guarda si la información sobre las preguntas debería mostrarse. 0 para no, 1 para información sobre tipo de pregunta, 2 para información sobre la cantidad de respuestas correctas.';
@@ -635,7 +635,7 @@ $string['questionanalysis'] = 'Análisis de preguntas';
 $string['questionanalysistitle'] = 'Tabla de análisis de preguntas';
 $string['questionandansweranalysis'] = 'Análisis de preguntas y respuestas';
 $string['questionbankcontents'] = 'Contenidos del banco de preguntas';
-$string['questionforms'] = 'Formularios de pregunta';
+$string['questionforms'] = 'Hojas de preguntas';
 $string['questioninfoanswers'] = 'Número de respuestas correctas';
 $string['questioninfocorrectanswer'] = 'respuesta correcta';
 $string['questioninfocorrectanswers'] = 'respuestas correctas';
@@ -644,7 +644,10 @@ $string['questioninfoqtype'] = 'Tipo de pregunta';
 $string['questionname'] = 'Nombre de la pregunta';
 $string['questionpage'] = 'Página';
 $string['questionsheet'] = 'Hoja de preguntas';
-$string['questionsheetlatextemplate'] = '\\documentclass[12pt,a4paper]{article}
+$string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
+\\documentclass[11pt,a4paper]{article}
+\\usepackage[utf8x]{inputenc}
+\\usepackage[T1]{fontenc}
 \\textwidth 16truecm
 \\textheight 23truecm
 \\setlength{\\oddsidemargin}{0cm}
@@ -652,21 +655,18 @@ $string['questionsheetlatextemplate'] = '\\documentclass[12pt,a4paper]{article}
 \\setlength{\\topmargin}{-1cm}
 \\usepackage{amsmath} % for \\implies etc
 \\usepackage{amsfonts} % for \\mathbb etc
-\\usepackage{graphicx} % for including pictures
-\\renewcommand{\\familydefault}{\\sfdefault} % Font
-\\newcommand{\\lsim}{\\mbox{\\raisebox{-.3em}{$\\stackrel{<}{\\sim}$}}} % less or approximately equal
-\\newcommand{\\subs}{\\mbox{\\raisebox{-.5em}{$\\stackrel{\\subset}{\\neq}$}}}
-\\newcommand{\\sei}{\\mbox{\\raisebox{.0em}{$\\stackrel{!}{=}$}}}
+\\usepackage[colorlinks=true,urlcolor=dunkelrot,linkcolor=black]{hyperref} % For using hyperlinks
+\\usepackage{ifthen}
+\\usepackage{enumitem}
+\\usepackage{xcolor}
+\\usepackage{ulem}
 \\parindent 0pt % no indent on the beginning of a section
-\\usepackage{esvect} % long vector arrows, e.g. \\vv{AB}
-\\usepackage[colorlinks=true,urlcolor=dunkelrot,linkcolor=black]{hyperref} % For using of Hyperlinks
 \\renewcommand\\UrlFont{\\sf}
-\\usepackage{ulem} %  \\sout{horizontal cross out} \\xout{diagonal strike out}
-\\newcommand{\\abs}[1]{\\left\\lvert#1\\right\\rvert}
-\\usepackage{scrpage2} % For Header and Footer
-\\pagestyle{scrheadings}
-\\clearscrheadfoot
-\\ifoot{[Gruppe \\Group]}
+\\usepackage{lastpage}
+\\usepackage{fancyhdr}
+\\pagestyle{fancy}
+\\chead{\\sc \\TestTitle, Group \\Group}
+\\cfoot{Seite \\thepage/\\pageref{LastPage}}
 \\makeatletter %%% disable pagebreaks between answers
 \\@beginparpenalty=10000
 \\@itempenalty=10000
@@ -676,23 +676,49 @@ $string['questionsheetlatextemplate'] = '\\documentclass[12pt,a4paper]{article}
 % \\newcommand{\\answerIs}[1]{[#1]} %%%Enable showing the right answer
 %%%
 
+
+% ===========================================================================================================
+%%% Course data:
+\\newcommand{\\Group}{{$a->groupname}}
+\\newcommand{\\Title}{{$a->activityname}}
+%%% Or use {{$a->coursename} as course name instead
+\\newcommand{\\Date}
+
+\\newcommand{\\TestTitle}{%
+\\begin{center}
+{\\bf \\Large Question sheet}\\\\[3mm]
+\\fbox{
+\\begin{tabular}{rl}
+\\rule{0pt}{25pt} Name: & $\\underline{\\hspace*{8cm}}$ \\rule{20pt}{0pt}\\\\[5mm]
+ID number: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]
+\\ifthenelse{\\equal{true}{{$a->printstudycodefield}}}{\\rule{10pt}{0pt} Study code: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]}{}
+\\rule[-20pt]{0pt}{20pt} Signature: & $\\underline{\\hspace*{8cm}}$
+\\end{tabular}}
+\\end{center}
+}
+
+\\InputIfFileExists{offline_test_extras.tex}{}{} % Input extra user definitions
+
 \\begin{document}
 
 
 % ===========================================================================================================
-%%% Data of the Course
-\\begin{center}{\\LARGE {$a->coursename}}\\end{center}
-\\begin{center}{Written Exam {$a->date}}\\end{center}
-%%%
-\\def\\Group{{$a->groupname}}
-\\begin{center}{\\Large Group \\Group}\\end{center}
-
-{\\bf Name:}\\\\
-{\\bf Matriculation number:}\\\\
-{\\bf Signature:}\\
+\\TestTitle
 
 % ===========================================================================================================
+
+
 \\bigskip
+% ===========================================================================================================
+
+{$a->pdfintrotext}
+
+% ===========================================================================================================
+
+\\newpage
+
+% ===========================================================================================================
+
 
 {$a->latexforquestions}
 
@@ -776,9 +802,9 @@ Las casillas indican:
 
 **Respuestas correctas**: Se muestran las respuestas correctas e incorrectas. Esta opción solo está disponible si se configura "El intento".
 
-**Formulario escaneado**: Se muestran los formularios de respuestas escaneados. Las casillas marcadas están marcadas con cuadrados verdes.
+**Formulario escaneado**: Se muestran las hojas de respuestas escaneadas. Las casillas marcadas están marcadas con cuadrados verdes.
 
-**Formulario escaneado con calificaciones**: Se muestran los formularios de respuestas escaneados. Las casillas marcadas están marcadas con cuadrados verdes. Se resaltan las calificaciones incorrectas y las calificaciones faltantes. Además, una tabla muestra la calificación máxima y la calificación obtenida para cada pregunta.';
+**Formulario escaneado con calificaciones**: Se muestran las hojas de respuestas escaneados. Las casillas marcadas están marcadas con cuadrados verdes. Se resaltan las calificaciones incorrectas y las calificaciones faltantes. Además, una tabla muestra la calificación máxima y la calificación obtenida para cada pregunta.';
 $string['reviewoptionsheading'] = 'Opciones de revisión';
 $string['rimport'] = 'Subir';
 $string['rotate'] = 'Rotar';
@@ -875,7 +901,7 @@ $string['totalpointsx'] = 'Total calificaciones: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total de {$a} preguntas en la categoría.';
 $string['trigger'] = 'límite inferior/superior';
 $string['tutorial'] = 'Tutorial para cuestionarios offline';
-$string['tutorial:feedback:1:1'] = 'En el formulario de respuesta no se muestran las preguntas; solo contiene las casillas para marcar las respuestas.';
+$string['tutorial:feedback:1:1'] = 'En la hoja de respuesta no se muestran las preguntas; solo contiene las casillas para marcar las respuestas.';
 $string['tutorial:feedback:1:2'] = 'El diseño de la hoja de preguntas que entregará el profesor no tiene por qué ser exactamente igual al de la captura de pantalla. Sólo sirve para ver el enunciado de las preguntas y no se escanea después del examen.';
 $string['tutorial:feedback:2:1'] = 'Esta cruz es demasiado pálida. Es posible que no se escanee correctamente.';
 $string['tutorial:feedback:2:2'] = 'Una cruz de anchura de línea normal siempre se interpretará correctamente.';
@@ -891,9 +917,9 @@ $string['tutorial:feedback:4:1'] = 'Ha completado con éxito este tutorial.';
 $string['tutorial:feedback:correct'] = '¡Correcto!';
 $string['tutorial:feedback:wrong'] = '¡Mal!';
 $string['tutorial:generatedusernumberwarning'] = 'Este es un número de identificación ficticio para esta simulación, ya que su perfil no tiene ninguno. Consulte con su profesor.';
-$string['tutorial:header:1'] = '1. Hojas de preguntas y formularios de respuestas';
+$string['tutorial:header:1'] = '1. Hojas de preguntas y hojas de respuestas';
 $string['tutorial:header:2'] = '2. Cruces y correcciones';
-$string['tutorial:header:3'] = '3. El formulario de respuestas';
+$string['tutorial:header:3'] = 'La hoja de respuestas';
 $string['tutorial:header:4'] = '4. Marcar el número de identificación';
 $string['tutorial:header:5'] = '5. Finalmente...';
 $string['tutorial:introduction:1'] = 'En el examen tendrás dos hojas: una con las preguntas y otra con casillas para marcar tus respuestas. Las preguntas están numeradas igual que las casillas del formulario de respuestas. Cada respuesta se marca con una letra. Después del examen, un ordenador escaneará e interpretará el formulario de respuestas.';
@@ -902,8 +928,8 @@ $string['tutorial:introduction:2:2'] = 'Utilice un bolígrafo negro o azul para 
 $string['tutorial:introduction:3:1'] = 'El formulario de respuestas contiene un bloque para su nombre (A), un bloque para su número de identificación (B) y un bloque para las respuestas (C). Rellene primero las casillas correspondientes a su nombre, firma y número de identificación. Tenga en cuenta que la máquina no intentará interpretar su letra después del examen. Estas casillas son sólo a efectos de documentación.';
 $string['tutorial:introduction:3:2'] = 'Marque cuidadosamente las casillas correspondientes a su número de identificación, ya que el ordenador necesitará estas marcas para identificar sus resultados. Los errores en la casilla con su número de matrícula pueden provocar retrasos e interpretaciones erróneas.';
 $string['tutorial:introduction:4'] = 'Al final de este tutorial le ofrecemos una pequeña prueba para que aprenda a rellenar correctamente las casillas de su número de identificación. Debajo de la casilla de su número de identificación hay una matriz de casillas. Cada columna representa un dígito de su número de matrícula. Las filas marcan los números escritos a la izquierda y a la derecha. Haga clic en las casillas para marcarlas. Vuelva a hacer clic para borrar la marca. Si quiere empezar de nuevo, por favor <a href="javascript: document.location.reload()">recargue la página</a>.';
-$string['tutorial:introduction:5'] = 'Tenga en cuenta que los formularios de respuesta serán interpretados por un ordenador. Esta máquina no puede leer nada de lo que usted escriba al lado de las casillas. Para el programa informático, todo lo que hay fuera de las casillas no es más que una mancha que impide a la máquina interpretar correctamente el formulario. Te perjudicas a ti mismo si no colocas las marcas correctamente.';
-$string['tutorial:option:1:1'] = 'Un formulario de respuesta';
+$string['tutorial:introduction:5'] = 'Ten en cuenta que las hojas de respuesta serán interpretadas por un ordenador. Esta máquina no puede leer nada de lo que escribas al lado de las casillas. Para el programa informático, todo lo que hay fuera de las casillas no es más que una mancha que impide a la máquina interpretar correctamente el formulario. Te perjudicas a ti mismo si no colocas las marcas correctamente.';
+$string['tutorial:option:1:1'] = 'Una hoja de respuestas';
 $string['tutorial:option:1:2'] = 'Una hoja de preguntas';
 $string['tutorial:option:3:1'] = 'El sistema lee su nombre mediante un software de reconocimiento óptico de caracteres.';
 $string['tutorial:option:3:2'] = 'Su firma se escanea con un programa informático utilizado para las huellas dactilares en las investigaciones penales.';
@@ -911,7 +937,7 @@ $string['tutorial:option:3:3'] = 'Sólo se interpretan las cruces de las casilla
 $string['tutorial:option:3:4'] = 'El sistema lee su número de identificación mediante un programa de reconocimiento óptico de caracteres.';
 $string['tutorial:question:1'] = 'Esta imagen muestra:';
 $string['tutorial:question:2'] = '¿Qué marca se interpretará con seguridad como una cruz?';
-$string['tutorial:question:3'] = '¿Cómo asigna el ordenador el formulario de respuesta a la persona adecuada?';
+$string['tutorial:question:3'] = '¿Cómo asigna el ordenador la hoja de respuestas a la persona adecuada?';
 $string['tutorial:question:4'] = 'Número de identificación';
 $string['tutorial:question:5'] = '¡Buena suerte!';
 $string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; ¿Cuántos documentos offlinequiz se le entregarán durante un examen?';
